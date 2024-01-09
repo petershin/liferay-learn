@@ -12,12 +12,12 @@ visibility:
 ## 사이트 및 페이지 분석
 
 * [사이트 대시보드](https://learn.liferay.com/web/guest/w/analytics-cloud/touchpoints/sites-dashboard)
-* [페이지 분석](https://learn.liferay.com/web/guest/w/analytics-cloud/touchpoints/pages/pages)
+* [페이지](https://learn.liferay.com/web/guest/w/analytics-cloud/touchpoints/pages/pages)
 
 ## 자산 분석
 
 * [자산](https://learn.liferay.com/web/guest/w/analytics-cloud/touchpoints/assets/assets)
-* [콘텐츠 성능 도구](https://learn.liferay.com/w/dxp/content-authoring-and-management/page-performance-and-accessibility/analyze-content-metrics-using-content-performance-tool)
+* [콘텐츠 성능 도구를 사용하여 콘텐츠 지표 분석](https://learn.liferay.com/w/dxp/content-authoring-and-management/page-performance-and-accessibility/analyze-content-metrics-using-content-performance-tool)
 
 ## 트래픽 및 경로 분석
 
@@ -25,6 +25,6 @@ visibility:
 
 ## 컨텐츠 대시보드
 
-* [컨텐츠 대시보드](https://learn.liferay.com/w/dxp/content-authoring-and-management/content-dashboard/about-the-content-dashboard)
+* [콘텐츠 대시보드 정보](https://learn.liferay.com/w/dxp/content-authoring-and-management/content-dashboard/about-the-content-dashboard)
 
 다음: [세분화 및 개인화](./segmentation-and-personalization.md).

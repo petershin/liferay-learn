@@ -165,4 +165,4 @@
 
 ## 관련 개념
 
-* [선택 목록 API 기본 사항](https://learn.liferay.com/en/w/dxp/building-applications/objects/picklists/picklists-api-basics) 
+* [선택 목록 API 기본 사항](https://learn.liferay.com/ko/w/dxp/building-applications/objects/picklists/picklists-api-basics)

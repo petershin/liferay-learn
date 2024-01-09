@@ -12,7 +12,7 @@
 
 ## 컬렉션 제공자로 카테고리 선택
 
-카테고리 생성 및 이를 제품에 할당하는 방법에 대한 자세한 내용은 [새 제품 카테고리 생성](https://learn.liferay.com/w/commerce/product-management/creating-and-managing-products/products/creating-a-new-product-category) 및 [제품 카테고리로 카탈로그 구성](https://learn.liferay.com/w/commerce/product-management/creating-and-managing-products/products/organizing-your-catalog-with-product-categories) 을 참조하십시오.
+카테고리 생성 및 이를 제품에 할당하는 방법에 대한 자세한 내용은 [새 제품 범주 만들기](https://learn.liferay.com/w/commerce/product-management/creating-and-managing-products/products/creating-a-new-product-category) 및 [제품 범주로 카탈로그 구성](https://learn.liferay.com/w/commerce/product-management/creating-and-managing-products/products/organizing-your-catalog-with-product-categories) 을 참조하십시오.
 
 카테고리를 생성하고 제품에 할당한 후에는
 

@@ -21,7 +21,7 @@
 
 ### 모듈 소스 코드의 변경 사항
 
-**ExtRepository.java**[`modules/apps/document-library/document-library-repository-external-api/src/main/java/com/liferay/document/library/repository/external/ExtRepository.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/document-library/document-library-repository-external-api/src/main/java/com/liferay/document/library/repository/external/ExtRepository.java)
+**ExtRepository.java** [`modules/apps/document-library/document-library-repository-external-api/src/main/java/com/liferay/document/library/repository/external/ExtRepository.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/document-library/document-library-repository-external-api/src/main/java/com/liferay/document/library/repository/external/ExtRepository.java)
 
 -   **날짜** : 2023년 9월 29일
 -   **티켓** : [LPS-197315](https://liferay.atlassian.net/browse/LPS-197315)
@@ -36,14 +36,14 @@
 -   **변경 사항** : Liferay 차트 모듈의 taglib가 제거되었습니다.
 -   **이유** : 이러한 taglib는 더 이상 Liferay에서 사용되지 않으며 Liferay는 soy에 대한 지원을 제거했습니다.
 
-**CommerceShipmentItemLocalService.java**[`모듈/앱/상거래/상거래-api/src/main/java/com/liferay/commerce/service/CommerceShipmentItemLocalService.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/service/CommerceShipmentItemLocalService.java)
+**CommerceShipmentItemLocalService.java** [`모듈/앱/상거래/상거래-api/src/main/java/com/liferay/commerce/service/CommerceShipmentItemLocalService.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/service/CommerceShipmentItemLocalService.java)
 
 -   **날짜** : 2023년 10월 6일
 -   **티켓** : [COMMERCE-12534](https://liferay.atlassian.net/browse/COMMERCE-12534)
 -   **변경된 사항** : `getCommerceShipmentOrderItemsQuantity` 메소드는 `int` 값 대신 `BigDecimal`을 반환합니다.
 -   **이유** : 새로운 측정 단위 기능에는 'BigDecimal' 값이 필요합니다.
 
-**CommerceShipmentItemService.java**[모듈/앱/상거래/Commerce-api/src/main/java/com/liferay/commerce/service/CommerceShipmentItemService.java](https://github.com/liferay/liferay-portal/blob/master/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/service/CommerceShipmentItemService.java)
+**CommerceShipmentItemService.java** [모듈/앱/상거래/Commerce-api/src/main/java/com/liferay/commerce/service/CommerceShipmentItemService.java](https://github.com/liferay/liferay-portal/blob/master/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/service/CommerceShipmentItemService.java)
 
 -   **날짜** : 2023년 10월 6일
 -   **티켓** : [COMMERCE-12534](https://liferay.atlassian.net/browse/COMMERCE-12534)
@@ -74,77 +74,77 @@
 -   **변경사항** : `ModelSearchDefinitionContributor` 클래스가 제거되었습니다.
 -   **이유** : 검색 등록자 부트스트래핑 스타일이 변경되었으며 이 클래스는 더 이상 사용되지 않습니다.
 
-**AccountRoleLocalService.java**[`modules/apps/account/account-api/src/main/java/com/liferay/account/service/AccountRoleLocalService.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/account/account-api/src/main/java/com/liferay/account/service/AccountRoleLocalService.java)
+**AccountRoleLocalService.java** [`modules/apps/account/account-api/src/main/java/com/liferay/account/service/AccountRoleLocalService.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/account/account-api/src/main/java/com/liferay/account/service/AccountRoleLocalService.java)
 
 -   **날짜** : 2023년 10월 17일
 -   **티켓** : [LPS-173628](https://liferay.atlassian.net/browse/LPS-173628)
 -   **변경사항** : 'checkCompanyAccountRoles' 메서드가 제거되었습니다.
 -   **이유** : `AddDefaultAccountRolesPortalInstanceLifecycleListener` 및 `AddDefaultAccountRolesPortletPermissionsPortalInstanceLifecycleListener` 클래스는 대신 기본 계정 역할을 초기화하고 확인합니다.
 
-**CommerceCheckoutStepHttpHelper.java**[`모듈/앱/상거래/상거래-api/src/main/java/com/liferay/commerce/checkout/helper/CommerceCheckoutStepHttpHelper.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/checkout/helper/CommerceCheckoutStepHttpHelper.java)
+**CommerceCheckoutStepHttpHelper.java** [`모듈/앱/상거래/상거래-api/src/main/java/com/liferay/commerce/checkout/helper/CommerceCheckoutStepHttpHelper.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/checkout/helper/CommerceCheckoutStepHttpHelper.java)
 
 -   **날짜** : 2023년 10월 25일
 -   **티켓** : [COMMERCE-12230](https://liferay.atlassian.net/browse/COMMERCE-12230)
 -   **변경 사항** : 이제 'isActiveShippingMethodCommerceCheckoutStep' 메서드가 추가 'CommerceOrder' 값을 사용합니다.
 -   **이유** : 결제 성능을 돕기 위해 'CommerceOrder' 값이 매개변수로 전달됩니다.
 
-**PaymentProcessCheckoutStepDisplayContext.java**[`modules/apps/commerce/Commerce-checkout-web/src/main/java/com/liferay/commerce/checkout/web/internal/display/context/PaymentProcessCheckoutStepDisplayContext.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/commerce/commerce-checkout-web/src/main/java/com/liferay/commerce/checkout/web/internal/display/context/PaymentProcessCheckoutStepDisplayContext.java)
+**PaymentProcessCheckoutStepDisplayContext.java** [`modules/apps/commerce/Commerce-checkout-web/src/main/java/com/liferay/commerce/checkout/web/internal/display/context/PaymentProcessCheckoutStepDisplayContext.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/commerce/commerce-checkout-web/src/main/java/com/liferay/commerce/checkout/web/internal/display/context/PaymentProcessCheckoutStepDisplayContext.java)
 
 -   **날짜** : 2023년 10월 25일
 -   **티켓** : [COMMERCE-12230](https://liferay.atlassian.net/browse/COMMERCE-12230)
 -   **변경된 사항** : `PaymentProcessCheckoutStepDisplayContext` 메서드는 추가 `CommerceOrder` 값을 사용합니다.
 -   **이유** : 결제 성능을 돕기 위해 'CommerceOrder' 값이 매개변수로 전달됩니다.
 
-**AssetEntryItemSelectorCriterion.java**[`모듈/앱/item-selector/item-selector-criteria-api/src/main/java/com/liferay/item/selector/criteria/asset/criterion/AssetEntryItemSelectorCriterion.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/item-selector/item-selector-criteria-api/src/main/java/com/liferay/item/selector/criteria/asset/criterion/AssetEntryItemSelectorCriterion.java)
+**AssetEntryItemSelectorCriterion.java** [`모듈/앱/item-selector/item-selector-criteria-api/src/main/java/com/liferay/item/selector/criteria/asset/criterion/AssetEntryItemSelectorCriterion.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/item-selector/item-selector-criteria-api/src/main/java/com/liferay/item/selector/criteria/asset/criterion/AssetEntryItemSelectorCriterion.java)
 
 -   **날짜** : 2023년 10월 30일
 -   **티켓** : [LPS-197840](https://liferay.atlassian.net/browse/LPS-197840)
 -   **변경 사항** : 'scopeGroupType' 메서드가 제거되었습니다.
 -   **이유** : 'scopeGroupType' 메서드는 더 이상 사용되지 않습니다.
 
-**BasePreviewBackgroundTaskExecutor.java**[`modules/apps/document-library/document-library-preview-api/src/main/java/com/liferay/document/library/preview/Background/task/BasePreviewBackgroundTaskExecutor.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/document-library/document-library-preview-api/src/main/java/com/liferay/document/library/preview/background/task/BasePreviewBackgroundTaskExecutor.java)
+**BasePreviewBackgroundTaskExecutor.java** [`modules/apps/document-library/document-library-preview-api/src/main/java/com/liferay/document/library/preview/Background/task/BasePreviewBackgroundTaskExecutor.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/document-library/document-library-preview-api/src/main/java/com/liferay/document/library/preview/background/task/BasePreviewBackgroundTaskExecutor.java)
 
 -   **날짜** : 2023년 10월 31일
 -   **티켓** : [LPS-195032](https://liferay.atlassian.net/browse/LPS-195032)
 -   **변경된 사항** : 클래스는 `DLFileEntryConfiguration`에 직접 액세스하는 대신 새로운 `DLFileEntryConfigurationProvider`에 액세스합니다.
 -   **이유** : `DLFileEntryConfigurationProvider` 클래스가 추가되었습니다.
 
-**ExtendedObjectClassDefinition.java**[`modules/apps/static/portal-configuration/portal-configuration-metatype-api/src/main/java/com/liferay/portal/configuration/metatype/annotations/ExtendedObjectClassDefinition.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/static/portal-configuration/portal-configuration-metatype-api/src/main/java/com/liferay/portal/configuration/metatype/annotations/ExtendedObjectClassDefinition.java)
+**ExtendedObjectClassDefinition.java** [`modules/apps/static/portal-configuration/portal-configuration-metatype-api/src/main/java/com/liferay/portal/configuration/metatype/annotations/ExtendedObjectClassDefinition.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/static/portal-configuration/portal-configuration-metatype-api/src/main/java/com/liferay/portal/configuration/metatype/annotations/ExtendedObjectClassDefinition.java)
 
 -   **날짜** : 2023년 10월 31일
 -   **티켓** : [LPS-195032](https://liferay.atlassian.net/browse/LPS-195032)
 -   **변경 사항** : 클래스에는 새로운 정적 메소드 `getScope(String)`가 있습니다.
 -   **이유** : 새로운 방법을 사용하면 문자열 범위 값을 사용하여 'Scope' 개체를 검색할 수 있습니다.
 
-**DLFileEntryConfiguration.java**[`modules/apps/document-library/document-library-api/src/main/java/com/liferay/document/library/configuration/DLFileEntryConfiguration.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/document-library/document-library-api/src/main/java/com/liferay/document/library/configuration/DLFileEntryConfiguration.java)
+**DLFileEntryConfiguration.java** [`modules/apps/document-library/document-library-api/src/main/java/com/liferay/document/library/configuration/DLFileEntryConfiguration.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/document-library/document-library-api/src/main/java/com/liferay/document/library/configuration/DLFileEntryConfiguration.java)
 
 -   **날짜** : 2023년 10월 31일
 -   **티켓** : [LPS-195032](https://liferay.atlassian.net/browse/LPS-195032)
 -   **변경 사항** : 클래스는 'maxNumberOfPages'라는 새로운 속성을 사용합니다. 이는 이전에는 `PDFPreviewConfiguration`의 일부였습니다.
 -   **이유** : `PDFPreviewConfiguration`은 더 이상 사용되지 않습니다.
 
-**DLFileEntryConfigurationProvider.java**[`modules/apps/document-library/document-library-api/src/main/java/com/liferay/document/library/configuration/DLFileEntryConfigurationProvider.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/document-library/document-library-api/src/main/java/com/liferay/document/library/configuration/DLFileEntryConfigurationProvider.java)
+**DLFileEntryConfigurationProvider.java** [`modules/apps/document-library/document-library-api/src/main/java/com/liferay/document/library/configuration/DLFileEntryConfigurationProvider.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/document-library/document-library-api/src/main/java/com/liferay/document/library/configuration/DLFileEntryConfigurationProvider.java)
 
 -   **날짜** : 2023년 10월 31일
 -   **티켓** : [LPS-195032](https://liferay.atlassian.net/browse/LPS-195032)
 -   **변경된 사항** : 이 클래스는 `DLFileEntryConfiguration`에 대한 새로운 구성 공급자입니다.
 -   **이유** : 이 구성 공급자는 `DLFileEntryConfiguration`에 대한 여러 구성 수준(시스템, 인스턴스 및 사이트)에 더 쉽게 액세스할 수 있도록 합니다.
 
-**DLFileEntryConfigurationConstants.java**[`modules/apps/document-library/document-library-api/src/main/java/com/liferay/document/library/constants/DLFileEntryConfigurationConstants.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/document-library/document-library-api/src/main/java/com/liferay/document/library/constants/DLFileEntryConfigurationConstants.java)
+**DLFileEntryConfigurationConstants.java** [`modules/apps/document-library/document-library-api/src/main/java/com/liferay/document/library/constants/DLFileEntryConfigurationConstants.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/document-library/document-library-api/src/main/java/com/liferay/document/library/constants/DLFileEntryConfigurationConstants.java)
 
 -   **날짜** : 2023년 10월 31일
 -   **티켓** : [LPS-195032](https://liferay.atlassian.net/browse/LPS-195032)
 -   **변경사항** : 새로 추가된 클래스입니다.
 -   **이유** : 이 클래스는 `DLFileEntryConfiguration` 속성을 처리하기 위한 공통 값을 정의합니다.
 
-**DLFileEntryConfigurationException.java**[`modules/apps/document-library/document-library-api/src/main/java/com/liferay/document/library/Exception/DLFileEntryConfigurationException.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/document-library/document-library-api/src/main/java/com/liferay/document/library/exception/DLFileEntryConfigurationException.java)
+**DLFileEntryConfigurationException.java** [`modules/apps/document-library/document-library-api/src/main/java/com/liferay/document/library/Exception/DLFileEntryConfigurationException.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/document-library/document-library-api/src/main/java/com/liferay/document/library/exception/DLFileEntryConfigurationException.java)
 
 -   **날짜** : 2023년 10월 31일
 -   **티켓** : [LPS-195032](https://liferay.atlassian.net/browse/LPS-195032)
 -   **변경된 사항** : 이것은 새로운 유형의 예외입니다.
 -   **이유** : 이제 'DLFileEntryConfiguration' 속성에 잘못된 값이 설정된 경우 이 예외가 사용됩니다.
 
-**CPContentHelper.java**[`모듈/앱/상거래/Commerce-product-content-api/src/main/java/com/liferay/commerce/product/content/helper/CPContentHelper.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/commerce/commerce-product-content-api/src/main/java/com/liferay/commerce/product/content/helper/CPContentHelper.java)
+**CPContentHelper.java** [`모듈/앱/상거래/Commerce-product-content-api/src/main/java/com/liferay/commerce/product/content/helper/CPContentHelper.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/commerce/commerce-product-content-api/src/main/java/com/liferay/commerce/product/content/helper/CPContentHelper.java)
 
 -   **날짜** : 2023년 11월 4일
 -   **티켓** : [COMMERCE-12579](https://liferay.atlassian.net/browse/COMMERCE-12579)
@@ -153,14 +153,14 @@
 
 ### `portal-impl` 클래스의 변경 사항
 
-**UserImpl.java**[`portal-impl/src/com/liferay/portal/model/impl/UserImpl.java`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/com/liferay/portal/model/impl/UserImpl.java)
+**UserImpl.java** [`portal-impl/src/com/liferay/portal/model/impl/UserImpl.java`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/com/liferay/portal/model/impl/UserImpl.java)
 
 -   **날짜** : 2023년 10월 4일
 -   **티켓** : [LPS-196035](https://liferay.atlassian.net/browse/LPS-196035)
 -   **변경된 사항** : WebDAV 클라이언트는 Digest Auth를 통해 인증하려면 사용자의 화면 이름, 이메일 주소 또는 일반 비밀번호 대신 'userId'를 사용해야 합니다.
 -   **이유** : 이제 WebDAV에서는 각 사용자가 액세스를 위해 별도의 비밀번호를 생성해야 하며, 사용자는 자신의 계정 설정을 변경하기 위한 조치를 취해야 합니다. 예상치 못한 WebDAV 액세스 거부를 방지하기 위해 'userId'를 사용하여 보완하도록 사용자 경험이 단순화되었습니다.
 
-**portal.properties**[`portal-impl/src/portal.properties`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/portal.properties)
+**portal.properties** [`portal-impl/src/portal.properties`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/portal.properties)
 
 -   **날짜** : 2023년 10월 8일
 -   **티켓** : [LPS-189621](https://liferay.atlassian.net/browse/LPS-189621)
@@ -175,21 +175,21 @@
 -   **변경사항** : `OpenIdUtil` 클래스가 제거되었습니다. 대신 `OpenIdConnect`를 사용하세요.
 -   **이유** : OpenID는 더 이상 사용되지 않으며 Liferay는 더 이상 내부적으로 사용하지 않습니다.
 
-**PersistedModelLocalServiceRegistryUtil.java**[`portal-impl/src/com/liferay/portal/service/PersistedModelLocalServiceRegistryUtil.java`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/com/liferay/portal/service/PersistedModelLocalServiceRegistryUtil.java)
+**PersistedModelLocalServiceRegistryUtil.java** [`portal-impl/src/com/liferay/portal/service/PersistedModelLocalServiceRegistryUtil.java`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/com/liferay/portal/service/PersistedModelLocalServiceRegistryUtil.java)
 
 -   **날짜** : 2023년 10월 20일
 -   **티켓** : [LPS-199563](https://liferay.atlassian.net/browse/LPS-199563)
 -   **변경 사항** : 'PersistedModelLocalServiceRegistryUtil' 클래스가 'portal-kernel'에서 `portal-impl`로 리팩터링되었습니다. 계속 사용하려면 빌드 종속성에 `portal-impl`을 추가하세요.
 -   **이유** : 코드 구조를 단순화하기 위해 클래스가 'portal-impl'로 이동되었습니다.
 
-**HttpAuthManagerUtil.java**[`portal-impl/src/com/liferay/portal/security/auth/http.HttpAuthManagerUtil.java`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/com/liferay/portal/security/auth/http/HttpAuthManagerUtil.java)
+**HttpAuthManagerUtil.java** [`portal-impl/src/com/liferay/portal/security/auth/http.HttpAuthManagerUtil.java`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/com/liferay/portal/security/auth/http/HttpAuthManagerUtil.java)
 
 -   **날짜** : 2023년 10월 21일
 -   **티켓** : [LPS-197376](https://liferay.atlassian.net/browse/LPS-197376)
 -   **변경 사항** : `HttpAuthManagerUtil` 클래스가 `portal-kernel`에서 `portal-impl`로 리팩터링되었습니다. 계속 사용하려면 빌드 종속성에 `portal-impl`을 추가하세요.
 -   **이유** : 코드 구조를 단순화하기 위해 클래스가 'portal-impl'로 이동되었습니다.
 
-**ImageToolUtil.java**[`portal-impl/src/com/liferay/portal/image/ImageToolUtil.java`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/com/liferay/portal/image/ImageToolUtil.java) \*\*
+**ImageToolUtil.java** [`portal-impl/src/com/liferay/portal/image/ImageToolUtil.java`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/com/liferay/portal/image/ImageToolUtil.java) \*\*
 
 -   **날짜** : 2023년 10월 21일
 -   **티켓** : [LPS-198319](https://liferay.atlassian.net/browse/LPS-198319)
@@ -204,56 +204,56 @@
 -   **변경 사항** : `DLPreviewableProcessor` 클래스가 `portal-kernel`에서 `portal-impl`로 리팩터링되었습니다. 계속 사용하려면 빌드 종속성에 `portal-impl`을 추가하세요.
 -   **이유** : 코드 구조를 단순화하기 위해 클래스가 'portal-impl'로 이동되었습니다.
 
-**RoleMembershipPolicyFactoryUtil.java**[`portal-kernel/src/com/liferay/portal/kernel/security.membershippolicy.RoleMembershipPolicyFactoryUtil.java`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/com/liferay/portal/security/membershippolicy/RoleMembershipPolicyFactoryUtil.java)
+**RoleMembershipPolicyFactoryUtil.java** [`portal-kernel/src/com/liferay/portal/kernel/security.membershippolicy.RoleMembershipPolicyFactoryUtil.java`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/com/liferay/portal/security/membershippolicy/RoleMembershipPolicyFactoryUtil.java)
 
 -   **날짜** : 2023년 10월 23일
 -   **티켓** : [LPS-199389](https://liferay.atlassian.net/browse/LPS-199389)
 -   **변경 사항** : `RoleMembershipPolicyFactoryUtil` 클래스가 `portal-kernel`에서 `portal-impl`로 리팩터링되었습니다. 계속 사용하려면 빌드 종속성에 `portal-impl`을 추가하세요.
 -   **이유** : 코드 구조를 단순화하기 위해 클래스가 'portal-impl'로 이동되었습니다.
 
-**RoleMembershipPolicyUtil.java**[`https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/com/liferay/portal/security/membershippolicy/RoleMembershipPolicyUtil.java`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/com/liferay/portal/security/membershippolicy/RoleMembershipPolicyUtil.java)
+**RoleMembershipPolicyUtil.java** [`https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/com/liferay/portal/security/membershippolicy/RoleMembershipPolicyUtil.java`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/com/liferay/portal/security/membershippolicy/RoleMembershipPolicyUtil.java)
 
 -   **날짜** : 2023년 10월 23일
 -   **티켓** : [LPS-199389](https://liferay.atlassian.net/browse/LPS-199389)
 -   **변경 사항** : `RoleMembershipPolicyUtil` 클래스가 `portal-kernel`에서 `portal-impl`으로 리팩터링되었습니다. 계속 사용하려면 빌드 종속성에 `portal-impl`을 추가하세요.
 -   **이유** : 코드 구조를 단순화하기 위해 클래스가 'portal-impl'로 이동되었습니다.
 
-**AuthenticatedSessionManagerUtil.java**[`portal-impl/src/com/liferay/portal/security/auth/session/AuthenticatedSessionManagerUtil.java`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/com/liferay/portal/security/auth/session/AuthenticatedSessionManagerUtil.java)
+**AuthenticatedSessionManagerUtil.java** [`portal-impl/src/com/liferay/portal/security/auth/session/AuthenticatedSessionManagerUtil.java`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/com/liferay/portal/security/auth/session/AuthenticatedSessionManagerUtil.java)
 
 -   **날짜** : 2023년 10월 23일
 -   **티켓** : [LPS-199165](https://liferay.atlassian.net/browse/LPS-199165)
 -   **변경 사항** : `AuthenticatedSessionManagerUtil` 클래스가 `portal-kernel`에서 `portal-impl`로 리팩터링되었습니다. 계속 사용하려면 빌드 종속성에 `portal-impl`을 추가하세요.
 -   **이유** : 코드 구조를 단순화하기 위해 클래스가 'portal-impl'로 이동되었습니다.
 
-**Success.java**[`portal-impl/src/com/liferay/portal/xmlrpc/Success.java`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/com/liferay/portal/xmlrpc/Success.java)
+**Success.java** [`portal-impl/src/com/liferay/portal/xmlrpc/Success.java`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/com/liferay/portal/xmlrpc/Success.java)
 
 -   **날짜** : 2023년 10월 23일
 -   **티켓** : [LPS-199164](https://liferay.atlassian.net/browse/LPS-199164)
 -   **변경 사항** : `Success` 클래스가 `portal-kernel`에서 `portal-impl`로 리팩터링되었습니다. 계속 사용하려면 빌드 종속성에 `portal-impl`을 추가하세요.
 -   **이유** : 코드 구조를 단순화하기 위해 클래스가 'portal-impl'로 이동되었습니다.
 
-**Fault.java**[`portal-impl/src/com/liferay/portal/xmlrpc/Fault.java`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/com/liferay/portal/xmlrpc/Fault.java)
+**Fault.java** [`portal-impl/src/com/liferay/portal/xmlrpc/Fault.java`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/com/liferay/portal/xmlrpc/Fault.java)
 
 -   **날짜** : 2023년 10월 23일
 -   **티켓** : [LPS-199164](https://liferay.atlassian.net/browse/LPS-199164)
 -   **변경 사항** : `Fault` 클래스가 `portal-kernel`에서 `portal-impl`로 리팩터링되었습니다. 계속 사용하려면 빌드 종속성에 `portal-impl`을 추가하세요.
 -   **이유** : 코드 구조를 단순화하기 위해 클래스가 'portal-impl'로 이동되었습니다.
 
-**XmlRpcUtil.java**[`portal-impl/src/com/liferay/portal/xmlrpc/XmlRpcUtil.java`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/com/liferay/portal/xmlrpc/XmlRpcUtil.java)
+**XmlRpcUtil.java** [`portal-impl/src/com/liferay/portal/xmlrpc/XmlRpcUtil.java`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/com/liferay/portal/xmlrpc/XmlRpcUtil.java)
 
 -   **날짜** : 2023년 10월 23일
 -   **티켓** : [LPS-199164](https://liferay.atlassian.net/browse/LPS-199164)
 -   **변경 사항** : `XmlRpcUtil` 클래스가 `portal-kernel`에서 `portal-impl`로 리팩터링되었습니다. 계속 사용하려면 빌드 종속성에 `portal-impl`을 추가하세요.
 -   **이유** : 코드 구조를 단순화하기 위해 클래스가 'portal-impl'로 이동되었습니다.
 
-**StartupHelperUtil.java**[`portal-impl/src/com/liferay/portal/events/StartupHelperUtil.java`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/com/liferay/portal/events/StartupHelperUtil.java)
+**StartupHelperUtil.java** [`portal-impl/src/com/liferay/portal/events/StartupHelperUtil.java`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/com/liferay/portal/events/StartupHelperUtil.java)
 
 -   **날짜** : 2023년 11월 2일
 -   **티켓** : [LPS-200501](https://liferay.atlassian.net/browse/LPS-200501)
 -   **변경사항** : `isStartupFinished` 및 `setStartupFinished(boolean)` 메소드가 제거되었습니다.
 -   **이유** : 플래그가 시작 상태를 정확하게 반영하지 않으므로 잘못된 사용을 방지하기 위해 메서드가 제거되었습니다.
 
-**ModelAdapterUtil.java**[`portal-impl/src/com/liferay/portal/model/adapter/ModelAdapterUtil.java`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/com/liferay/portal/model/adapter/util/ModelAdapterUtil.java)
+**ModelAdapterUtil.java** [`portal-impl/src/com/liferay/portal/model/adapter/ModelAdapterUtil.java`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/com/liferay/portal/model/adapter/util/ModelAdapterUtil.java)
 
 -   **날짜** : 2023년 11월 3일
 -   **티켓** : [LPS-199825](https://liferay.atlassian.net/browse/LPS-199825)
@@ -358,14 +358,14 @@
 -   **변경사항** : `AuthenticatedSessionManager` 클래스가 제거되었습니다. 대신 `AuthenticatedSessionManagerUtil`을 사용하세요.
 -   **이유** : 클래스가 더 이상 사용되지 않습니다.
 
-**TemplateManagerUtil.java**[`portal-kernel/src/com/liferay/portal/kernel/template/TemplateManagerUtil.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/template/TemplateManagerUtil.java)
+**TemplateManagerUtil.java** [`portal-kernel/src/com/liferay/portal/kernel/template/TemplateManagerUtil.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/template/TemplateManagerUtil.java)
 
 -   **날짜** : 2023년 10월 26일
 -   **티켓** : [LPS-200072](https://liferay.atlassian.net/browse/LPS-200072)
 -   **변경사항** : `destroy` 및 `getTemplateManagers` 메소드가 제거되었습니다.
 -   **이유** 이 방법은 더 이상 사용되지 않습니다.
 
-**TemplateManager.java**[`portal-kernel/src/com/liferay/portal/kernel/template/TemplateManager.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/template/TemplateManager.java)
+**TemplateManager.java** [`portal-kernel/src/com/liferay/portal/kernel/template/TemplateManager.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/template/TemplateManager.java)
 
 -   **날짜** : 2023년 10월 26일
 -   **티켓** : [LPS-200072](https://liferay.atlassian.net/browse/LPS-200072)
@@ -388,7 +388,7 @@
 -   **변경 사항** : `FacetImpl`의 로직을 위해 `AssetEntriesFacet` 클래스가 제거되었습니다.
 -   **이유** : 클래스가 더 이상 사용되지 않습니다.
 
-**AuditMessageFactory.java**[`portal-kernel/src/com/liferay/portal/kernel/audit/AuditMessageFactory.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/audit/AuditMessageFactory.java)
+**AuditMessageFactory.java** [`portal-kernel/src/com/liferay/portal/kernel/audit/AuditMessageFactory.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/audit/AuditMessageFactory.java)
 
 -   **날짜** : 2023년 11월 7일
 -   **티켓** : [LPS-201086](https://liferay.atlassian.net/browse/LPS-201086)
@@ -403,7 +403,7 @@
 -   **변경 사항** : `AuditMessageFactoryUtil` 클래스가 제거되었습니다. 로직이 `AuditMessageFactory`로 리팩터링되었습니다.
 -   **이유** : 로직이 클래스 간에 불필요하게 분할되었으므로 이제 코드 구조를 단순화하기 위해 'AuditMessageFactory' 클래스로 결합되었습니다.
 
-**PortletToolbar.java**[`portal-kernel/src/com/liferay/portal/kernel/portlet/toolbar/PortletToolbar.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/portlet/toolbar/PortletToolbar.java)
+**PortletToolbar.java** [`portal-kernel/src/com/liferay/portal/kernel/portlet/toolbar/PortletToolbar.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/portlet/toolbar/PortletToolbar.java)
 
 -   **날짜** : 2023년 11월 21일
 -   **티켓** : [LPS-200453](https://liferay.atlassian.net/browse/LPS-200453)
@@ -439,21 +439,21 @@
 
 ### 모듈 소스 코드의 변경 사항
 
-**SolrClientManager.java**[`모듈/앱/portal-search-solr8/portal-search-solr8-impl/src/main/java/com/liferay/portal/search/solr8/internal/connection/SolrClientManager. 자바`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/portal-search-solr8/portal-search-solr8-impl/src/main/java/com/liferay/portal/search/solr8/internal/connection/SolrClientManager.java)
+**SolrClientManager.java** [`모듈/앱/portal-search-solr8/portal-search-solr8-impl/src/main/java/com/liferay/portal/search/solr8/internal/connection/SolrClientManager. 자바`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/portal-search-solr8/portal-search-solr8-impl/src/main/java/com/liferay/portal/search/solr8/internal/connection/SolrClientManager.java)
 
 -   **날짜** : 2023년 7월 4일
 -   **티켓** : [LPS-180691](https://liferay.atlassian.net/browse/LPS-180691)
 -   **변경사항** : 'SolrClientManager' 클래스의 확장 지점이 제거되었습니다.
 -   **이유** : Liferay는 더 이상 이 클래스 확장을 지원하지 않습니다.
 
-**SolrClientFactory.java**[`모듈/apps/portal-search-solr8/portal-search-solr8-impl/src/main/java/com/liferay/portal/search/solr8/internal/connection/SolrClientFactory. 자바`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/portal-search-solr8/portal-search-solr8-impl/src/main/java/com/liferay/portal/search/solr8/internal/connection/SolrClientFactory.java)
+**SolrClientFactory.java** [`모듈/apps/portal-search-solr8/portal-search-solr8-impl/src/main/java/com/liferay/portal/search/solr8/internal/connection/SolrClientFactory. 자바`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/portal-search-solr8/portal-search-solr8-impl/src/main/java/com/liferay/portal/search/solr8/internal/connection/SolrClientFactory.java)
 
 -   **날짜** : 2023년 7월 4일
 -   **티켓** : [LPS-180691](https://liferay.atlassian.net/browse/LPS-180691)
 -   **변경사항** : 'CLOUD' 및 'REPLICATED' 확장 지점이 제거되었습니다.
 -   **이유** : Liferay는 더 이상 이러한 확장 포인트를 지원하지 않습니다.
 
-**HttpClientFactory.java**[`모듈/apps/portal-search-solr8/portal-search-solr8-impl/src/main/java/com/liferay/portal/search/solr8/internal/http/HttpClientFactory. 자바`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/portal-search-solr8/portal-search-solr8-impl/src/main/java/com/liferay/portal/search/solr8/internal/http/HttpClientFactory.java)
+**HttpClientFactory.java** [`모듈/apps/portal-search-solr8/portal-search-solr8-impl/src/main/java/com/liferay/portal/search/solr8/internal/http/HttpClientFactory. 자바`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/portal-search-solr8/portal-search-solr8-impl/src/main/java/com/liferay/portal/search/solr8/internal/http/HttpClientFactory.java)
 
 -   **날짜** : 2023년 7월 4일
 -   **티켓** : [LPS-180691](https://liferay.atlassian.net/browse/LPS-180691)
@@ -470,28 +470,28 @@
 -   **변경사항** : `MessagingHotDeployListener` 클래스가 제거되었습니다. 함께 제공되는 'liferay/hot_deploy' 메시지 버스 대상도 제거됩니다. 대신 'HotDeployListener'를 등록하여 핫 배포 이벤트를 수신하세요.
 -   **이유** : 제거된 메시지 버스 대상은 더 이상 사용되지 않습니다.
 
-**HookHotDeployListener.java**[`portal-impl/src/com/liferay/portal/deploy/hot/HookHotDeployListener.java`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/com/liferay/portal/deploy/hot/HookHotDeployListener.java)
+**HookHotDeployListener.java** [`portal-impl/src/com/liferay/portal/deploy/hot/HookHotDeployListener.java`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/com/liferay/portal/deploy/hot/HookHotDeployListener.java)
 
 -   **날짜** : 2023년 8월 17일
 -   **티켓** : [LPS-193926](https://liferay.atlassian.net/browse/LPS-193926)
 -   **변경 사항** : `HookHotDeployListener` 클래스는 더 이상 후크를 통한 [`DLProcessor`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/document/library/kernel/processor/DLProcessor.java) 배포를 지원하지 않습니다. 대신 `DLProcessor`를 OSGi 구현으로 변환하세요.
 -   **이유** : 이는 `DLProcessorRegistryImpl`과 `HookHotDeployListener` 사이에 `DLProcessor` 구현을 등록하는 중복된 논리를 방지합니다.
 
-**portal.properties**[`portal-impl/src/portal.properties`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/portal.properties)
+**portal.properties** [`portal-impl/src/portal.properties`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/portal.properties)
 
 -   **날짜** : 2023년 9월 4일
 -   **티켓** : [LPS-194379](https://liferay.atlassian.net/browse/LPS-194379)
 -   **변경사항** : 포털 속성 `discussion.subscribe`가 제거되었습니다. 대신 UI의 인스턴스 설정에서 동일한 구성을 설정하세요.
 -   **이유** : 인스턴스 설정은 Liferay가 실행되는 동안 인스턴스별로 구체적으로 설정할 수 있으므로 인스턴스 설정으로 구성하는 것이 더 유연합니다.
 
-**HookHotDeployListener.java**[`portal-impl/src/com/liferay/portal/deploy/hot/HookHotDeployListener.java`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/com/liferay/portal/deploy/hot/HookHotDeployListener.java)
+**HookHotDeployListener.java** [`portal-impl/src/com/liferay/portal/deploy/hot/HookHotDeployListener.java`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/com/liferay/portal/deploy/hot/HookHotDeployListener.java)
 
 -   **날짜** : 2023년 9월 4일
 -   **티켓** : [LPS-194350](https://liferay.atlassian.net/browse/LPS-194350)
 -   **변경 사항** : 'HookHotDeployListener' 클래스는 더 이상 후크를 통한 외부 저장소 배포를 지원하지 않습니다. 대신, 자체 외부 저장소 구현을 OSGi 서비스로 변환하십시오.
 -   **이유** : OSGi 서비스는 후크를 통해 외부 저장소를 배포하는 것보다 더 많은 기능을 지원합니다.
 
-**portal.properties**[`portal-impl/src/portal.properties`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/portal.properties)
+**portal.properties** [`portal-impl/src/portal.properties`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/portal.properties)
 
 -   **날짜** : 2023년 9월 13일
 -   **티켓** : [LPS-195006](https://liferay.atlassian.net/browse/LPS-195006)
@@ -500,7 +500,7 @@
 
 ### `portal-kernel` 클래스의 변경 사항
 
-**Document.java**[`portal-kernel/src/com/liferay/portal/kernel/search/Document.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/search/Document.java)
+**Document.java** [`portal-kernel/src/com/liferay/portal/kernel/search/Document.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/search/Document.java)
 
 -   **날짜** : 2023년 7월 7일
 -   **티켓** : [LPS-188914](https://liferay.atlassian.net/browse/LPS-188914)
@@ -515,21 +515,21 @@
 -   **변경사항** : `BaseModelPermissionChecker` 인터페이스가 제거되었습니다. 대신 [`ModelResourcePermission`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/security/permission/resource/ModelResourcePermission.java) 구현하세요.
 -   **이유** : 인터페이스는 7.1에서 더 이상 사용되지 않으며 더 이상 사용되지 않습니다.
 
-**SchedulerEngine.java**[`portal-kernel/src/com/liferay/portal/kernel/scheduler/SchedulerEngine.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/scheduler/SchedulerEngine.java)
+**SchedulerEngine.java** [`portal-kernel/src/com/liferay/portal/kernel/scheduler/SchedulerEngine.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/scheduler/SchedulerEngine.java)
 
 -   **날짜** : 2023년 8월 24일
 -   **티켓** : [LPS-194314](https://liferay.atlassian.net/browse/LPS-194314)
 -   **변경사항** : `unschedule` 방법이 제거되었습니다. 대신 `delete` 메소드를 호출하세요.
 -   **이유** : 예약되지 않은 작업을 동시에 삭제해야 하기 때문에 이 방법은 필요하지 않습니다.
 
-**SchedulerEngineHelper.java**[`portal-kernel/src/com/liferay/portal/kernel/scheduler/SchedulerEngineHelper.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/scheduler/SchedulerEngineHelper.java)
+**SchedulerEngineHelper.java** [`portal-kernel/src/com/liferay/portal/kernel/scheduler/SchedulerEngineHelper.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/scheduler/SchedulerEngineHelper.java)
 
 -   **날짜** : 2023년 8월 24일
 -   **티켓** : [LPS-194314](https://liferay.atlassian.net/browse/LPS-194314)
 -   **변경사항** : `unschedule` 방법이 제거되었습니다. 대신 `delete` 메소드를 호출하세요.
 -   **이유** : 예약되지 않은 작업을 동시에 삭제해야 하기 때문에 이 방법은 필요하지 않습니다.
 
-**SchedulerEngineHelperUtil.java**[`portal-kernel/src/com/liferay/portal/kernel/scheduler/SchedulerEngineHelperUtil.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/scheduler/SchedulerEngineHelperUtil.java)
+**SchedulerEngineHelperUtil.java** [`portal-kernel/src/com/liferay/portal/kernel/scheduler/SchedulerEngineHelperUtil.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/scheduler/SchedulerEngineHelperUtil.java)
 
 -   **날짜** : 2023년 8월 24일
 -   **티켓** : [LPS-194314](https://liferay.atlassian.net/browse/LPS-194314)
@@ -552,14 +552,14 @@
 -   **변경사항** : `MessageBusEventListener` 인터페이스가 제거되었습니다. 'MessageListener' 등록 및 등록 취소 이벤트 수신이 더 이상 지원되지 않습니다.
 -   **이유** : 이 리스너는 더 이상 사용되지 않습니다.
 
-**Destination.java**[`portal-kernel/src/com/liferay/portal/kernel/messaging/Destination.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/messaging/Destination.java)
+**Destination.java** [`portal-kernel/src/com/liferay/portal/kernel/messaging/Destination.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/messaging/Destination.java)
 
 -   **날짜** : 2023년 9월 1일
 -   **티켓** : [LPS-194337](https://liferay.atlassian.net/browse/LPS-194337)
 -   **변경 사항** : `copyMessageListeners`, `getMessageListenerCount`, `isRegistered`, `register`, `unregister` 메소드가 제거되었습니다. 제공된 대상 이름과 연관된 메시지 수신기를 가져오기 위해 [`MessageListenerRegistry`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/messaging/MessageListenerRegistry.java) 인터페이스가 추가되었습니다. `destination.name` 속성을 사용하여 `MessageListener`를 OSGi 서비스로 등록하여 코드를 업데이트하세요.
 -   **이유** : 이 변경으로 인해 메시지 버스 코드 구조가 단순화되었습니다.
 
-**TriggerConfiguration.java**[`portal-kernel/src/com/liferay/portal/kernel/scheduler/TriggerConfiguration.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/scheduler/TriggerConfiguration.java)
+**TriggerConfiguration.java** [`portal-kernel/src/com/liferay/portal/kernel/scheduler/TriggerConfiguration.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/scheduler/TriggerConfiguration.java)
 
 -   **날짜** : 2023년 9월 11일
 -   **티켓** : [LPS-190994](https://liferay.atlassian.net/browse/LPS-190994)

@@ -49,5 +49,5 @@
 
 ## 관련 개념
 
-* [가상 인스턴스 이해](https://learn.liferay.com/en/w/dxp/system-administration/configuring-liferay/virtual-instances/understanding-virtual-instances)
-* [가상 인스턴스 추가](https://learn.liferay.com/en/w/dxp/system-administration/configuring-liferay/virtual-instances/adding-a-virtual-instance)
+* [가상 인스턴스 이해](https://learn.liferay.com/ko/w/dxp/system-administration/configuring-liferay/virtual-instances/understanding-virtual-instances)
+* [가상 인스턴스 추가](https://learn.liferay.com/ko/w/dxp/system-administration/configuring-liferay/virtual-instances/adding-a-virtual-instance)

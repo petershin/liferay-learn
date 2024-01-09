@@ -15,8 +15,7 @@ Liferay Analytics Cloud는 작업 공간의 각 속성에 대한 사이트 대�
 * [인수](#acquisitions) 
 * [요일별, 시간별 방문객](#visitors-by-day-and-time) 
 * [검색어 및 관심분야](#search-terms-and-interests) 
-* [사이트
-별 세션](#sessions-by-location) 개
+* [위치별 세션](#sessions-by-location)
 * [세션 기술](#session-technology) 
 * [코호트 분석](#cohort-analysis) 
 

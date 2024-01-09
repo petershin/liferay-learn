@@ -77,8 +77,8 @@
 
 ## 관련 주제
 
-* [객체 생성](./creating-and-managing-objects/creating-objects.md) 
-* [개체 전체 표시](./displaying-object-entries.md) 
-* [컬렉션 및 컬렉션 페이지 정보](../../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md) 
-* [컬렉션 제공자](../../site-building/displaying-content/collections-and-collection-pages/collection-providers.md) 
-* [개체 관계 정의](./creating-and-managing-objects/relationships/defining-object-relationships.md) 
+* [객체 생성](./creating-and-managing-objects/creating-objects.md)
+* [개체 전체 표시](./displaying-object-entries.md)
+* [컬렉션 및 컬렉션 페이지 정보](../../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md)
+* [컬렉션 제공자](../../site-building/displaying-content/collections-and-collection-pages/collection-providers.md)
+* [개체 관계 정의](./creating-and-managing-objects/relationships/defining-object-relationships.md)

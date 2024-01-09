@@ -17,7 +17,7 @@ visibility:
 
 ## 세분화 및 개인화
 
-[세분화 및 개인화](https://learn.liferay.com/web/guest/w/dxp/site-building/personalizing-site-experience) 통해 사용자 청중을 세분화하고 각 세그먼트에 맞게 디지털 경험을 맞춤화하여 보다 매력적이고 관련성 높은 경험을 만들 수 있습니다. 이는 고객 만족도, 충성도 및 비즈니스 수익 증가로 이어집니다. 여기서 논의할 핵심 사항은 다음과 같습니다.
+[사이트 경험 개인화](https://learn.liferay.com/web/guest/w/dxp/site-building/personalizing-site-experience) 통해 사용자 청중을 세분화하고 각 세그먼트에 맞게 디지털 경험을 맞춤화하여 보다 매력적이고 관련성 높은 경험을 만들 수 있습니다. 이는 고객 만족도, 충성도 및 비즈니스 수익 증가로 이어집니다. 여기서 논의할 핵심 사항은 다음과 같습니다.
 
 * 이 주제는 일반적으로 많은 관심을 불러일으킵니다.
 * 항상 관련 예시를 제공하세요.
@@ -75,7 +75,7 @@ Liferay는 정적 정보와 행동 정보를 모두 사용하여 청중을 분�
 
 **역할 및 권한**
 
-Liferay는 정교하고 세분화된 [권한](https://learn.liferay.com/web/guest/w/dxp/users-and-permissions/roles-and-permissions) 설정을 제공하므로 사용자가 콘텐츠나 페이지를 볼 수 있는 적절한 권한이 없으면 콘텐츠 기사나 페이지가 사용자에게 표시되지 않을 수 있습니다. 예를 들어 내부 문서는 직원 포털 내의 HR 담당자만 액세스할 수 있습니다.
+Liferay는 정교하고 세분화된 [역할 및 권한](https://learn.liferay.com/web/guest/w/dxp/users-and-permissions/roles-and-permissions) 설정을 제공하므로 사용자가 콘텐츠나 페이지를 볼 수 있는 적절한 권한이 없으면 콘텐츠 기사나 페이지가 사용자에게 표시되지 않을 수 있습니다. 예를 들어 내부 문서는 직원 포털 내의 HR 담당자만 액세스할 수 있습니다.
 
 Liferay를 개인화하기 위해 역할 및 권한을 사용할 수 있는 가능성에 대해 이야기할 때 모범 사례는 필요할 때만 액세스를 제한하고 세분화 및 경험을 사용하여 안내 보기를 제공하면서도 사용자가 찾을 수 있도록 허용하는 것임을 언급하는 것이 중요합니다. 다른 방식으로 다른 콘텐츠. 자세한 내용은 [인증](../liferay-authentication.md) 모듈을 참조하세요.
 
@@ -87,8 +87,8 @@ Liferay를 개인화하기 위해 역할 및 권한을 사용할 수 있는 가�
 
 **카탈로그 및 가격 개인화**
 
-또한 카탈로그와 가격을 개인화할 수 있습니다. 회사가 특정 고객을 위해 맞춤형 제품을 판매하는 경우 제품에 대한 가시성을 [고객으로](https://learn.liferay.com/en/w/commerce/product-management/creating-and-managing-products/products/configuring-product-visibility-using-account-groups) 할 수 있습니다. 또는 특정 유형의 고객에게만 판매되는 일부 제품(예: 골드 고객에게만 판매하는 일부 프리미엄 서비스)이 있을 수도 있습니다.
+또한 카탈로그와 가격을 개인화할 수 있습니다. 회사가 특정 고객을 위해 맞춤형 제품을 판매하는 경우 제품에 대한 가시성을 [계정 그룹을 사용하여 제품 가시성 구성](https://learn.liferay.com/ko/w/commerce/product-management/creating-and-managing-products/products/configuring-product-visibility-using-account-groups) 할 수 있습니다. 또는 특정 유형의 고객에게만 판매되는 일부 제품(예: 골드 고객에게만 판매하는 일부 프리미엄 서비스)이 있을 수도 있습니다.
 
 Liferay를 사용하면 간단한 구성을 사용하여 제품 목록을 쉽게 개인화할 수 있습니다. [가격표 생성](https://learn.liferay.com/commerce/latest/ko/pricing/creating-a-price-list.html) 과 [프로모션 생성](https://learn.liferay.com/commerce/latest/ko/pricing/promoting-products/creating-a-promotion.html) 고객 또는 고객 그룹별로 구성할 수 있습니다. 이는 Liferay를 통해 조직은 고객이 맞춤형 제품, 가격, 프로모션 및 할인만 볼 수 있음을 확신할 수 있음을 의미합니다.
 
-다음: [콘텐츠 관리 및 분석](./content-management-analytics.md) .
+다음: [콘텐츠 관리 및 분석](./content-management-analytics.md).

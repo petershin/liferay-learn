@@ -72,5 +72,5 @@ Liferay의 OAuth2 도구를 사용하여 타사 애플리케이션에 데이터 
 
 ## 관련 개념
 
-* [OAuth2 사용](https://learn.liferay.com/w/dxp/headless-delivery/using-oauth2)
+* [OAuth 2.0 사용](https://learn.liferay.com/w/dxp/headless-delivery/using-oauth2)
 * [OAuth2 애플리케이션 생성](https://learn.liferay.com/w/dxp/headless-delivery/using-oauth2/creating-oauth2-applications)

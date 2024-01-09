@@ -29,8 +29,8 @@ visibility:
 1. 주요 대상 솔루션 및 예시 고객
 
 ```{note}
-* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/web/guest/d/l0-1-introduction-to-liferay) 을 확인하세요.
-* 라이브 워크숍에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/documents/d/guest/l0-1-introduction-to-liferay-pdf) 을 다운로드하세요.
+* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/c/portal/login?p_l_id=3026&redirect=%2Fweb%2Fguest%2Fd%2Fl0-1-introduction-to-liferay) 을 확인하세요.
+* 라이브 워크숍에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/c/portal/login?redirect=%2Fdocuments%2Fd%2Fguest%2Fl0-1-introduction-to-liferay-pdf) 을 다운로드하세요.
 ```
 
 ## 생명가오리 기원

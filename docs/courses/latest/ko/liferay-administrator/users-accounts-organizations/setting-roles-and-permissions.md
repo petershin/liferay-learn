@@ -78,6 +78,6 @@ Clarity Vision Solutions의 직원은 업무에 따라 다른 권한이 필요�
 
 ## 관련 개념
 
-* [역할 및 권한 이해](https://learn.liferay.com/en/w/dxp/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions)
+* [역할 및 권한 이해](https://learn.liferay.com/ko/w/dxp/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions)
 * [사용자를 역할에 할당](https://learn.liferay.com/ko/w/dxp/users-and-permissions/roles-and-permissions/designing-users-to-roles)
 * [역할 생성 및 관리](https://learn.liferay.com/ko/w/dxp/users-and-permissions/roles-and-permissions/creating-and-managing-roles)

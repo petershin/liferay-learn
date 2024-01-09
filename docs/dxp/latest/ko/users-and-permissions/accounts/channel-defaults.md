@@ -7,7 +7,7 @@ toc:
 
 {bdg-secondary}`사용 가능한 Liferay 7.4 U49+/GA49+`
 
-비즈니스 계정을 만든 후 [채널](https://learn.liferay.com/web/guest/w/commerce/store-management/channels/introduction-to-channels) 기본값을 설정할 수 있습니다. 이를 통해 주문을 생성하는 데 걸리는 시간을 줄이고 계정 관리자가 특정 계정에 대한 상거래 행동을 맞춤화할 수 있도록 지원하여 고객 경험을 개선할 수 있습니다. 다음 채널 기본값을 설정할 수 있습니다.
+비즈니스 계정을 만든 후 [채널 소개](https://learn.liferay.com/web/guest/w/commerce/store-management/channels/introduction-to-channels) 기본값을 설정할 수 있습니다. 이를 통해 주문을 생성하는 데 걸리는 시간을 줄이고 계정 관리자가 특정 계정에 대한 상거래 행동을 맞춤화할 수 있도록 지원하여 고객 경험을 개선할 수 있습니다. 다음 채널 기본값을 설정할 수 있습니다.
 
 * 표로 만드는 주소
 * 발송 주소

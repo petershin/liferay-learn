@@ -12,7 +12,7 @@ Liferay Cloud 백업 서비스는 환경 데이터베이스의 백업과 Liferay
 
 {bdg-secondary}`CLI 도구 버전 3.12.0+, 백업 서비스 버전 5.9.0+, Liferay 서비스 버전 5.3.0+ 필요`
 
-[CLI 도구](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool) 사용하여 데이터베이스와 문서 라이브러리 볼륨을 모두 포함하는 백업을 직접 다운로드할 수 있습니다.
+[명령줄 도구](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool) 사용하여 데이터베이스와 문서 라이브러리 볼륨을 모두 포함하는 백업을 직접 다운로드할 수 있습니다.
 
 특정 백업의 ID를 사용하여 이 명령을 실행하면 해당 데이터베이스와 문서 라이브러리를 동시에 다운로드할 수 있습니다.
 

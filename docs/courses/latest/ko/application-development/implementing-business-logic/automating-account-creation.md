@@ -1,6 +1,6 @@
 # 계정 생성 자동화
 
-온보딩 흐름을 완료하기 위해 Delectable Bonsai는 관리자가 승인된 애플리케이션에 대한 비즈니스 계정을 쉽게 만들 수 있도록 하려고 합니다. 각 계정의 이름은 애플리케이션의 `businessName` 따라 지정되어야 하며 신청자는 계정 관리자 역할이 있는 계정에 자동으로 할당되어야 합니다. 여기서는 개체 작업 [클라이언트 확장](https://learn.liferay.com/web/guest/w/dxp/building-applications/client-extensions) 을 사용하여 이를 달성합니다.
+온보딩 흐름을 완료하기 위해 Delectable Bonsai는 관리자가 승인된 애플리케이션에 대한 비즈니스 계정을 쉽게 만들 수 있도록 하려고 합니다. 각 계정의 이름은 애플리케이션의 `businessName` 따라 지정되어야 하며 신청자는 계정 관리자 역할이 있는 계정에 자동으로 할당되어야 합니다. 여기서는 개체 작업 [원격 앱](https://learn.liferay.com/web/guest/w/dxp/building-applications/client-extensions) 을 사용하여 이를 달성합니다.
 
 ![배포자 응용 프로그램 개체에 계정 설정 작업을 추가합니다.](./automating-account-creation/images/01.png)
 

@@ -86,5 +86,5 @@ Liferay 7.4 U21+ 및 GA21+의 경우 항목 선택기를 사용하여 자산 라
 
 ## 관련 주제
 
-* [자산 라이브러리 개요](./asset-libraries-overview.md) 
-* [자산 라이브러리 생성 및 관리](./creating-and-managing-asset-libraries.md) 
+* [자산 라이브러리 개요](./asset-libraries-overview.md)
+* [자산 라이브러리 생성 및 관리](./creating-and-managing-asset-libraries.md)

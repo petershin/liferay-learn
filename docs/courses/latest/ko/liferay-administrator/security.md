@@ -24,7 +24,7 @@ Liferay의 철학은 "기본적으로 안전하다"입니다. 이는 기본 설�
 
 구성할 마지막 기능은 HTML 또는 CSS만 허용되는 사이트에 JavaScript 코드를 삽입하려는 사용자로부터 설치를 보호하기 위한 [AntiSamy](https://owasp.org/www-project-antisamy) 살균제입니다.
 
-이 주제에서는 Liferay의 다양한 보안 기능을 둘러볼 수 있습니다. 자세히 알아보려면 Liferay Learn에서 [보안 문서](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay) 를 검토하세요.
+이 주제에서는 Liferay의 다양한 보안 기능을 둘러볼 수 있습니다. 자세히 알아보려면 Liferay Learn에서 [라이프레이 확보](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay) 를 검토하세요.
 
 준비가 된?
 

@@ -21,8 +21,8 @@ visibility:
 이 지식은 판매자가 기회 또는 RFI/RFQ를 성공적으로 예측하고 사전 자격을 갖추는 데 도움이 됩니다.
 
 ```{note}
-* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/web/guest/d/l0-3-ideal-customer-profile) 을 확인하세요.
-* 라이브 워크숍에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/documents/d/guest/l0-3-ideal-customer-profile-pdf) 을 다운로드하세요.
+* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/c/portal/login?p_l_id=3026&redirect=%2Fweb%2Fguest%2Fd%2Fl0-3-ideal-customer-profile) 을 확인하세요.
+* 라이브 워크숍에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/c/portal/login?redirect=%2Fdocuments%2Fd%2Fguest%2Fl0-3-ideal-customer-profile-pdf) 을 다운로드하세요.
 ```
 
 ## 매도 vs. 떠나기

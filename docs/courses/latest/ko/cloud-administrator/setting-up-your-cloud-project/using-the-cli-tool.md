@@ -1,6 +1,6 @@
 # CLI 도구 사용
 
-이제 Delectable Bonsai 사이트가 Liferay Experience Cloud에서 실행되고 있으므로 Kyle은 개발 팀이 만든 클라이언트 확장 [배포를 시작할 준비가](https://learn.liferay.com/w/dxp/building-applications/client-extensions) . 시작하려면 [명령줄 도구](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool) 을 설치해야 합니다.
+이제 Delectable Bonsai 사이트가 Liferay Experience Cloud에서 실행되고 있으므로 Kyle은 개발 팀이 만든 클라이언트 확장 [원격 앱](https://learn.liferay.com/w/dxp/building-applications/client-extensions) . 시작하려면 [명령줄 도구](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool) 을 설치해야 합니다.
 
 여기에서는 CLI 도구를 설치하고 이를 사용하여 Cloud Console에 로그인합니다.
 
@@ -38,4 +38,4 @@ Windows 환경을 사용하시는 경우 대신 [Windows 설치 프로그램](ht
 
 ## 관련 개념
 
-* [Liferay Cloud 명령줄 도구](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool)
+* [명령줄 도구](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool)

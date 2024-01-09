@@ -165,7 +165,7 @@
 * [<a name="two">2</a>] 이러한 속성의 배수를 사용할 수 있습니다. 그 결과 값의 배열이 생성됩니다.
 * [<a name="three">3</a>] 이 유형은 OSGi 서비스로 등록됩니다.
 * [<a name="four">4</a>] [https://xmlns.jcp.org/xml/ns/portlet/portlet-app_3_0.xsd](https://xmlns.jcp.org/xml/ns/portlet/portlet-app_3_0.xsd)
-* [<a name="five">5</a>] [`liferay-portlet-app_ [version].dtd`](https://learn.liferay.com/reference/latest/en/dxp/definitions/index.html)
+* [<a name="five">5</a>] [`liferay-portlet-app_ [version].dtd`](https://resources.learn.liferay.com/reference/latest/en/dxp/definitions/index.html)
 * [<a name="six">6</a>] 다음은 여러 개의 `javax.portlet.dependency` 속성을 사용하는 예입니다.
 
     **낡은:**

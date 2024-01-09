@@ -83,7 +83,7 @@
 
 ## 관련 주제
 
-* [객체 통합 이해](../understanding-object-integrations.md) 
-* [개체 개요](../../objects.md) 
-* [객체 생성](../creating-and-managing-objects/creating-objects.md) 
-* [계정별 객체 데이터 접근 제한](../creating-and-managing-objects/using-system-objects-with-custom-objects/restricting-access-to-object-data-by-account.md) 
+* [객체 통합 이해](../understanding-object-integrations.md)
+* [개체 개요](../../objects.md)
+* [객체 생성](../creating-and-managing-objects/creating-objects.md)
+* [계정별 객체 데이터 접근 제한](../creating-and-managing-objects/using-system-objects-with-custom-objects/restricting-access-to-object-data-by-account.md)

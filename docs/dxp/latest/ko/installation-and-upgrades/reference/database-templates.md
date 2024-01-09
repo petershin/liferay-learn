@@ -66,4 +66,4 @@ jdbc.default.password=
 -e LIFERAY_JDBC_PERIOD_DEFAULT_PERIOD_PASSWORD= \
 ```
 
-더 많은 데이터베이스 템플릿은 [기본 포털 속성](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#JDBC) 을 참조하십시오.
+더 많은 데이터베이스 템플릿은 [기본 포털 속성](https://resources.learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) 을 참조하십시오.

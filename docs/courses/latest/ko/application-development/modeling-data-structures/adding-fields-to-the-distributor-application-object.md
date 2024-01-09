@@ -83,5 +83,5 @@
 
 ## 관련 개념
 
-* [분야](https://learn.liferay.com/en/w/dxp/building-applications/objects/creating-and-managing-objects/fields)
+* [분야](https://learn.liferay.com/ko/w/dxp/building-applications/objects/creating-and-managing-objects/fields)
 * [객체에 필드 추가](https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/fields/adding-fields-to-objects)

@@ -33,8 +33,8 @@ visibility:
 완료되면 잠재 고객에게 무한한 가능성을 불러일으키는 Liferay 플랫폼 제공 솔루션의 몇 가지 예를 발견하게 될 것입니다. 귀하는 구매자가 현재 필요한 것뿐 아니라 미래를 위해 필요한 것에 대한 그림을 그리는 데 도움을 줄 수 있습니다.
 
 ```{note}
-* 이 모듈의 라이브 워크숍에서 [녹화](https://learn.liferay.com/web/guest/d/sa1-1-liferay-tailored-solution-highlights) 를 시청하세요.
-* 라이브 워크숍에 사용된 프레젠테이션의 [PDF](https://learn.liferay.com/documents/d/guest/sa1-1-liferay-tailored-solution-highlights-pdf) 를 다운로드하세요.
+* 이 모듈의 라이브 워크숍에서 [녹화](https://learn.liferay.com/c/portal/login?p_l_id=3026&redirect=%2Fweb%2Fguest%2Fd%2Fsa1-1-liferay-tailored-solution-highlights) 를 시청하세요.
+* 라이브 워크숍에 사용된 프레젠테이션의 [PDF](https://learn.liferay.com/c/portal/login?redirect=%2Fdocuments%2Fd%2Fguest%2Fsa1-1-liferay-tailored-solution-highlights-pdf) 를 다운로드하세요.
 ```
 
 ## 수평적 솔루션
@@ -54,21 +54,21 @@ Liferay의 수평적 포털 레거시는 여러 산업 분야에 걸쳐 많은 �
 
 Liferay의 업계 최고의 디지털 경험 플랫폼(DXP)에는 즉시 사용 가능한 다양한 기능이 포함되어 있습니다. 최신 릴리스 Liferay DXP 7.4에는 핵심 DXP, 디지털 상거래 및 분석 기능이 포함되어 있습니다. 높은 수준의 핵심 기능은 다음과 같습니다.
 
-* [디자인 시스템 및 경험 관리](https://learn.liferay.com/w/dxp/building-applications/tooling/liferay-workspace)
-* [콘텐츠 및 자산 관리](https://learn.liferay.com/w/dxp/content-authoring-and-management)
-* [로우코드/노코드 애플리케이션 구축](https://learn.liferay.com/w/dxp/building-applications/objects)
-* [데이터 모델링 및 프로세스 자동화](https://learn.liferay.com/w/dxp/process-automation)
-* [Commerce](https://learn.liferay.com/w/commerce/index)
-* [Analytics](https://learn.liferay.com/web/guest/w/analytics-cloud/index) 및 [Optimization](https://learn.liferay.com/w/dxp/content-authoring-and-management/content) -계기반)
-* [세분화 및 개인화](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience)
-* [Search](https://learn.liferay.com/w/dxp/using-search) 및 [Navigation](https://learn.liferay.com/w/dxp/site-building/site-navigation)
-* [헤드리스 API 및 다중 채널](https://learn.liferay.com/w/dxp/headless-delivery)
-* [협업 및 지식 공유](https://learn.liferay.com/w/dxp/collaboration-and-social)
-* [ID 관리 및 액세스 제어](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay)
+* [Liferay Workspace](https://learn.liferay.com/w/dxp/building-applications/tooling/liferay-workspace)
+* [콘텐츠 제작 및 관리](https://learn.liferay.com/w/dxp/content-authoring-and-management)
+* [개체](https://learn.liferay.com/w/dxp/building-applications/objects)
+* [프로세스 자동화](https://learn.liferay.com/w/dxp/process-automation)
+* [커머스](https://learn.liferay.com/w/commerce/index)
+* [애널리틱 클라우드](https://learn.liferay.com/web/guest/w/analytics-cloud/index) 및 [Optimization](https://learn.liferay.com/w/dxp/content-authoring-and-management/content) -계기반)
+* [사이트 경험 개인화](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience)
+* [검색 사용](https://learn.liferay.com/w/dxp/using-search) 및 [사이트 내비게이션](https://learn.liferay.com/w/dxp/site-building/site-navigation)
+* [헤드리스 배송](https://learn.liferay.com/w/dxp/headless-delivery)
+* [협업 및 소셜](https://learn.liferay.com/w/dxp/collaboration-and-social)
+* [라이프레이 확보](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay)
 * 통합 및 상호 운용성
-* [개발자 도구](https://learn.liferay.com/w/dxp/building-applications/tooling/liferay-workspace)
+* [Liferay Workspace](https://learn.liferay.com/w/dxp/building-applications/tooling/liferay-workspace)
 * 플랫폼 서비스
-* [클라우드 및 인프라](https://learn.liferay.com/w/dxp/building-applications/tooling/liferay-workspace)
+* [Liferay Workspace](https://learn.liferay.com/w/dxp/building-applications/tooling/liferay-workspace)
 
 앞서 언급한 모든 수평적 솔루션은 이러한 기능을 활용합니다. 이러한 OOTB 기능은 Liferay를 DXP 공간에서 강력한 플레이어로 만듭니다.
 

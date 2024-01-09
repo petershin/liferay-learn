@@ -100,7 +100,7 @@ UAT 환경의 서비스가 다시 시작되고, 백업되면 예제 모듈이 Li
 
 다음으로 새 위젯을 테스트하여 제대로 작동하는지 확인하세요.
 
-1. 기본 [관리자](https://learn.liferay.com/web/guest/w/dxp/getting-started/introduction-to-the-admin-account) 로 로그인합니다.
+1. 기본 [관리자 계정 소개](https://learn.liferay.com/web/guest/w/dxp/getting-started/introduction-to-the-admin-account) 로 로그인합니다.
 
 1. 페이지 상단의 편집 아이콘( ![edit icon](../../images/icon-edit.png) )을 클릭하면 위젯 목록에 접근할 수 있습니다.
 
@@ -136,7 +136,7 @@ Kyle은 빌드를 프로덕션으로 승격시키기 전에 관리자인 Marcus�
 
 ## 관련 개념
 
-* [Liferay Cloud 배포 워크플로우](https://learn.liferay.com/w/liferay-cloud/build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow)
+* [Liferay 클라우드 배포 워크플로 개요](https://learn.liferay.com/w/liferay-cloud/build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow)
 * [Liferay 서비스에 배포](https://learn.liferay.com/w/liferay-cloud/using-the-liferay-dxp-service/deploying-to-the-liferay-service)
-* [Liferay Cloud 콘솔을 통해 변경 사항 배포](https://learn.liferay.com/w/liferay-cloud/build-and-deploy/deploying-changes-via-the-liferay-cloud-console)
-* [Liferay Cloud 서비스에 로그인](https://learn.liferay.com/w/liferay-cloud/getting-started/logging-into-your-liferay-cloud-services)
+* [Liferay 클라우드 콘솔을 통한 변경 사항 배포](https://learn.liferay.com/w/liferay-cloud/build-and-deploy/deploying-changes-via-the-liferay-cloud-console)
+* [Liferay 클라우드 서비스에 로그인](https://learn.liferay.com/w/liferay-cloud/getting-started/logging-into-your-liferay-cloud-services)

@@ -19,8 +19,8 @@ visibility:
 * 페이지는 Liferay의 모든 정보가 사이트 사용자에게 표시되는 기본 방법을 제공합니다.
 
 ```{note}
-* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/web/guest/d/se1-4-experience-management) 을 확인하세요.
-* 라이브 워크숍에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/documents/d/guest/se1-4-experience-management-pdf) 을 다운로드하세요.
+* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/c/portal/login?p_l_id=3026&redirect=%2Fweb%2Fguest%2Fd%2Fse1-4-experience-management) 을 확인하세요.
+* 라이브 워크숍에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/c/portal/login?redirect=%2Fdocuments%2Fd%2Fguest%2Fse1-4-experience-management-pdf) 을 다운로드하세요.
 ```
 
 ## 배경
@@ -85,7 +85,7 @@ visibility:
 
 ![사용자는 모든 페이지를 지원되는 언어로 번역할 수 있습니다.](./experience-management/images/06.png)
 
-Liferay 애플리케이션을 다른 언어로 현지화해야 하는 경우 상단 표시줄의 아이콘에서 직접 [페이지 번역](https://learn.liferay.com/web/guest/w/dxp/content-authoring-and-management/translating-pages-and-content/translating-content-pages) 을 얼마나 쉽게 추가할 수 있는지 보여주세요. 또한 ML 기반 자동 번역 서비스를 사용하여 페이지 콘텐츠를 자동 번역할 [있는 전용 도구가 있다는 점을 언급](https://learn.liferay.com/web/guest/w/dxp/content-authoring-and-management/translating-pages-and-content/using-third-parties-for-translation) .
+Liferay 애플리케이션을 다른 언어로 현지화해야 하는 경우 상단 표시줄의 아이콘에서 직접 [콘텐츠 페이지 번역](https://learn.liferay.com/web/guest/w/dxp/content-authoring-and-management/translating-pages-and-content/translating-content-pages) 을 얼마나 쉽게 추가할 수 있는지 보여주세요. 또한 ML 기반 자동 번역 서비스를 사용하여 페이지 콘텐츠를 자동 번역할 [제3자를 번역에 사용](https://learn.liferay.com/web/guest/w/dxp/content-authoring-and-management/translating-pages-and-content/using-third-parties-for-translation) .
 
 마지막으로 게시 버튼을 클릭하여 페이지 변경 사항을 공개합니다.
 
@@ -99,8 +99,8 @@ Liferay 애플리케이션을 다른 언어로 현지화해야 하는 경우 상
 
 데모의 이 시점에서 다루어야 할 몇 가지 유용한 주제는 다음과 같습니다.
 
-* [출판물](https://learn.liferay.com/web/guest/w/dxp/site-building/publishing-tools/publications) 워크플로
-* [페이지 템플릿](https://learn.liferay.com/w/dxp/site-building/creating-pages/adding-pages/creating-a-page-template)
+* [퍼블리싱](https://learn.liferay.com/web/guest/w/dxp/site-building/publishing-tools/publications) 워크플로
+* [페이지 템플릿 만들기](https://learn.liferay.com/w/dxp/site-building/creating-pages/adding-pages/creating-a-page-template)
 * 보고 느끼다
 
 **출판 작업 흐름**

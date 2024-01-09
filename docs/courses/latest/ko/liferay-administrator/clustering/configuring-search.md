@@ -34,4 +34,4 @@ Liferay는 Elasticsearch를 사용하여 콘텐츠를 검색하고 색인화합�
 ## 관련 개념
 
 * [Elasticsearch 시작하기](https://learn.liferay.com/w/dxp/using-search/installing-and-upgrading-a-search-engine/elasticsearch/getting-started-with-elasticsearch)
-* [엘라스틱서치 설치](https://learn.liferay.com/w/dxp/using-search/installing-and-upgrading-a-search-engine/elasticsearch/installing-elasticsearch)
+* [Elasticsearch 설치](https://learn.liferay.com/w/dxp/using-search/installing-and-upgrading-a-search-engine/elasticsearch/installing-elasticsearch)

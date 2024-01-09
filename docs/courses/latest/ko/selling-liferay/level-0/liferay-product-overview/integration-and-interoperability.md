@@ -22,6 +22,6 @@ visibility:
 ## 커넥터 및 구성요소
 
 * [뮬소프트](https://learn.liferay.com/w/commerce/add-ons-and-connectors/mulesoft)
-* [작업 스케줄러](https://learn.liferay.com/w/dxp/building-applications/core-frameworks/job-scheduler-framework)
+* [작업 스케줄러 프레임워크](https://learn.liferay.com/w/dxp/building-applications/core-frameworks/job-scheduler-framework)
 
 다음: [개발자 도구](./developer-tooling.md).

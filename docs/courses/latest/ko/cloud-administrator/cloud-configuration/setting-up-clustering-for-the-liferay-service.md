@@ -115,7 +115,7 @@ Liferay 서비스는 클러스터링이 활성화되고 `스케일` 변수가 �
 ## 관련 개념
 
 * [Liferay Cloud에서 클러스터링 설정](https://learn.liferay.com/w/liferay-cloud/using-the-liferay-dxp-service/setting-up-clustering-in-liferay-cloud)
-* [Liferay 서비스 구성](https://learn.liferay.com/w/liferay-cloud/using-the-liferay-dxp-service/configuring-the-liferay-dxp-service)
-* [Liferay Cloud 콘솔을 통해 변경 사항 배포](https://learn.liferay.com/w/liferay-cloud/build-and-deploy/deploying-changes-via-the-liferay-cloud-console)
-* [CLI 도구를 통해 변경 사항 배포](https://learn.liferay.com/w/liferay-cloud/build-and-deploy/deploying-changes-via-the-cli-tool)
-* [Liferay 서비스 환경 변수](https://learn.liferay.com/w/liferay-cloud/using-the-liferay-dxp-service/liferay-service-environment-variables)
+* [Liferay DXP 서비스 구성](https://learn.liferay.com/w/liferay-cloud/using-the-liferay-dxp-service/configuring-the-liferay-dxp-service)
+* [Liferay 클라우드 콘솔을 통한 변경 사항 배포](https://learn.liferay.com/w/liferay-cloud/build-and-deploy/deploying-changes-via-the-liferay-cloud-console)
+* [CLI 도구를 통한 변경 사항 배포](https://learn.liferay.com/w/liferay-cloud/build-and-deploy/deploying-changes-via-the-cli-tool)
+* [라이프레이 서비스 환경 변수](https://learn.liferay.com/w/liferay-cloud/using-the-liferay-dxp-service/liferay-service-environment-variables)

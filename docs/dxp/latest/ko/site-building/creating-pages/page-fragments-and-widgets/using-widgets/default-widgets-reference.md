@@ -54,7 +54,7 @@ Liferay는 기본적으로 다양한 위젯을 제공하므로 솔루션 구축�
 
 ## 커머스
 
-사용 가능한 상거래 위젯 목록은 [상거래 위젯 참조](https://learn.liferay.com/w/commerce/creating-store-content/liferay-commerce-widgets/widget-reference) 를 참조하세요.
+사용 가능한 상거래 위젯 목록은 [위젯 참조](https://learn.liferay.com/w/commerce/creating-store-content/liferay-commerce-widgets/widget-reference) 를 참조하세요.
 
 ## 지역 사회
 

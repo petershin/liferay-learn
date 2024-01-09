@@ -33,7 +33,7 @@ visibility:
 
 데모에 사용할 수 있는 시간이 제한되어 있더라도 시간이 전혀 걸리지 않고 Liferay에서 비즈니스 애플리케이션을 얼마나 빨리 구축할 수 있는지 보여주는 매우 설득력 있는 방법을 제공하므로 이 단계를 완료하는 것은 여전히 가치가 있습니다.
 
-객체용 디스플레이 페이지 생성에 대한 자세한 내용은 [here](https://learn.liferay.com/web/guest/w/dxp/building-applications/objects/displaying-object-entries#creating-display-page-templates-) 에서 확인할 수 있습니다. 객체용).
+객체용 디스플레이 페이지 생성에 대한 자세한 내용은 [개체 항목 표시](https://learn.liferay.com/web/guest/w/dxp/building-applications/objects/displaying-object-entries#creating-display-page-templates-) 에서 확인할 수 있습니다. 객체용).
 
 ## 선택적 데모 단계
 
@@ -43,6 +43,6 @@ visibility:
 
 하지만 여기서는 조심하세요. 개체의 시연 가치 중 대부분은 개발자가 아닌 사용자도 사용할 수 있는 사용 편의성, 끌어서 놓기 기능입니다. 데모가 처음부터 개체를 생성하는 단계로 진행될수록 대화는 더욱 기술적으로 진행될 가능성이 높습니다. 청중이 혼합된 경우 몇 분만 제작 단계에 대해 이야기하고 좀 더 기술적인 청중이 세부 사항을 알아볼 수 있도록 후속 데모를 예약하십시오.
 
-객체 생성에 대한 문서는 [here](https://learn.liferay.com/web/guest/w/dxp/building-applications/objects/creating-and-managing-objects/creating-objects) 에서 확인할 수 있습니다.
+객체 생성에 대한 문서는 [객체 생성](https://learn.liferay.com/web/guest/w/dxp/building-applications/objects/creating-and-managing-objects/creating-objects) 에서 확인할 수 있습니다.
 
 다음으로, 학습 목적으로 [Liferay 객체를 생성](./creating-objects.md)하는 방법과 더 자세한 기술 데모를 알아보세요.

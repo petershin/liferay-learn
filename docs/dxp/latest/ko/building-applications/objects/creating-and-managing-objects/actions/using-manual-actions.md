@@ -4,9 +4,9 @@
 
 개체 작업에 독립 실행형 트리거를 사용하면 작업이 자동이 아닌 수동이 됩니다. 다음 방법을 사용하여 이러한 작업을 트리거합니다.
 
-* [객체의 UI](#trigger-actions-via-the-object-entry-ui) 
-* [전용 작업 API](#trigger-actions-via-apis) 
-* [페이지의 버튼](#trigger-actions-via-pages) 
+* [객체의 UI](#trigger-actions-via-the-object-entry-ui)
+* [전용 작업 API](#trigger-actions-via-apis)
+* [페이지의 버튼](#trigger-actions-via-pages)
 
 이 예에서는 알림을 보내기 위한 독립형 작업을 만듭니다.
 
@@ -46,7 +46,7 @@ Liferay는 게시된 개체 정의에 대한 REST API를 자동으로 생성합�
 
 ## 페이지를 통해 작업 트리거
 
-페이지의 버튼에 독립 실행형 작업을 매핑할 수 있습니다( [콘텐츠 페이지](#mapping-buttons-to-object-actions-in-content-pages) 또는 [표시 페이지 템플릿](#mapping-buttons-to-object-actions-in-display-page-templates) ).
+페이지의 버튼에 독립 실행형 작업을 매핑할 수 있습니다( [콘텐츠 페이지](#mapping-buttons-to-object-actions-in-content-pages) 또는 [표시 페이지 템플릿](#mapping-buttons-to-object-actions-in-display-page-templates)).
 
 Liferay의 기본 버튼 조각이 사용 사례를 만족하지 않는 경우 `data-lfr-editable-id="action"` 및 `data-lfr-editable 속성을 추가하여 작업을 사용자 정의 버튼에 매핑할 수 있습니다. -type="action"`을 HTML 태그에 추가합니다. 조각에 속성을 추가하는 방법에 대해 자세히 알아보려면 [조각별 태그 및 속성 참조](../../../../site-building/developer-guide/reference/fragments/fragment-specific-tags-reference.md) 참조하세요.
 
@@ -61,7 +61,7 @@ Liferay의 기본 버튼 조각이 사용 사례를 만족하지 않는 경우 `
 
 ### 콘텐츠 페이지의 개체 작업에 버튼 매핑
 
-1. [페이지 만들기](../../../../site-building/creating-pages.md) .
+1. [페이지 만들기](../../../../site-building/creating-pages.md).
 
 1. 레이아웃에 **버튼** 조각을 추가하세요. 콘텐츠 페이지를 편집하는 방법을 알아보려면 [콘텐츠 페이지에 요소 추가](../../../../site-building/creating-pages/using-content-pages/adding-elements-to-content-pages.md) 참조하세요.
 
@@ -88,7 +88,7 @@ Liferay의 기본 버튼 조각이 사용 사례를 만족하지 않는 경우 `
 1. 선택적으로 성공 및 오류 상호 작용을 설정합니다. 자세한 내용은 [성공 및 오류 상호 작용 관리](#managing-success-and-error-interactions) 참조하세요.
 
 ```{tip}
-작업에 매핑된 구성 요소가 있는 컬렉션 표시 조각이나 양식 조각을 사용할 수 있습니다. 자세한 내용은 [컬렉션](../../../../site-building/displaying-content/collections-and-collection-pages/displaying-collections.md) 및 [표시 조각을 사용하여 양식 작성](../../using-fragments-to-build-forms.md) 참조하세요.
+작업에 매핑된 구성 요소가 있는 컬렉션 표시 조각이나 양식 조각을 사용할 수 있습니다. 자세한 내용은 [컬렉션](../../../../site-building/displaying-content/collections-and-collection-pages/displaying-collections.md) 및 [표시 조각을 사용하여 양식 작성](../../using-fragments-to-build-forms.md)참조하세요.
 ```
 
 이제 버튼을 클릭하면 선택한 작업이 실행됩니다.

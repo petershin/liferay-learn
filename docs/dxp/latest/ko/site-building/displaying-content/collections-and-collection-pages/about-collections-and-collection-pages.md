@@ -78,6 +78,6 @@ Liferay 세그먼트를 컬렉션과 연결하여 [세그먼트 구성](../../..
 
 ## 관련 정보
 
-* [컬렉션 만들기](./creating-collections.md) 
-* [컬렉션 표시](./displaying-collections.md) 
-* [컬렉션 개인화](../../../site-building/personalizing-site-experience/experience-personalization/personalizing-collections.md) 
+* [컬렉션 만들기](./creating-collections.md)
+* [컬렉션 표시](./displaying-collections.md)
+* [컬렉션 개인화](../../../site-building/personalizing-site-experience/experience-personalization/personalizing-collections.md)

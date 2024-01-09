@@ -17,7 +17,7 @@ Liferay DXP는 다음과 같은 기본 조직 역할을 제공합니다.
 이 역할은 조직 내에서 기본 권한을 부여하며 모든 구성원에게 자동으로 할당됩니다. 조직에 연결된 사이트가 있는 경우 이 역할은 사용자에게 기본 사이트 구성원 자격도 부여합니다.
 
 ```{note}
-하위 조직의 구성원은 상위 조직의 암시적 구성원입니다. 이는 예를 들어 하위 조직의 구성원이 상위 조직의 페이지에 액세스할 수 있음을 의미합니다. 이 동작은 'Organizations' [portal-ext.properties의 섹션](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Organizations) 파일에서 사용자 지정할 수 있습니다. 여기서 조직에 특정한 속성이 나열됩니다.
+하위 조직의 구성원은 상위 조직의 암시적 구성원입니다. 이는 예를 들어 하위 조직의 구성원이 상위 조직의 페이지에 액세스할 수 있음을 의미합니다. 이 동작은 'Organizations' [portal-ext.properties의 섹션](https://resources.learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) 파일에서 사용자 지정할 수 있습니다. 여기서 조직에 특정한 속성이 나열됩니다.
 ```
 
 ### 조직 관리자

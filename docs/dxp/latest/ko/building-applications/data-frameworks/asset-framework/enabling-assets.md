@@ -110,7 +110,7 @@ Liferay의 다양한 애플리케이션(예: 블로그, 문서 및 미디어, �
 :lines: 64-73
 ```
 
-[`AssetEntryLocalServiceImpl` 클래스](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-impl/com/liferay/portlet/asset/service/impl/AssetEntryLocalServiceImpl.html#updateEntry-long-long-java.util.Date-java.util.Date-java.lang.String-long-java.lang.String-long-long:A-java.lang.String:A-boolean-boolean-java.util.Date-java.util.Date-java.util.Date-java.util.Date-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-int-int-java.lang.Double-) 에 대한 Javadoc을 확인하면 메소드가 오버로드된 것을 볼 수 있습니다. 자산 항목의 제목을 설정할 수 있도록 `title` 매개변수를 사용하는 `updateEntry()` 버전을 사용합니다.
+[`AssetEntryLocalServiceImpl` 클래스](https://resources.learn.liferay.com/reference/latest/en/dxp/javadocs/portal-impl/com/liferay/portlet/asset/service/impl/AssetEntryLocalServiceImpl.html) 에 대한 Javadoc을 확인하면 메소드가 오버로드된 것을 볼 수 있습니다. 자산 항목의 제목을 설정할 수 있도록 `title` 매개변수를 사용하는 `updateEntry()` 버전을 사용합니다.
 
 변경 후 Service Builder를 다시 실행하십시오.
 

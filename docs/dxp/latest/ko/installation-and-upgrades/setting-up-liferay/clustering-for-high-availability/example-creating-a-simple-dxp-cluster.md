@@ -280,7 +280,7 @@ DXP 클러스터 노드는 다음 URL에서 사용할 수 있습니다.
 | LIFERAY_WEB_PERIOD_SERVER_PERIOD_DISPLAY_PERIOD_NODE=\\<br>참                                                                                                                                                                                                | 서버 주소와 웹 서버 포트를 표시합니다.                      |
 | LIFERAY_DL_PERIOD_STORE_PERIOD_IMPL=\\<br>com.liferay.portal.store.db.DBStore                                                                                                                                                                                                                         | 파일 저장소(문서 라이브러리 저장소) 클래스 |
 
-자세한 내용은 Env/ [포털 속성](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) 정의를 참조하세요.
+자세한 내용은 Env/ [포털 속성](https://resources.learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) 정의를 참조하세요.
 
 ## 관련 주제
 

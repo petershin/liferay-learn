@@ -32,8 +32,8 @@ visibility:
 그러나 우리에게 특히 적합한 솔루션과 산업이 있으며, 우리는 성공 가능성이 가장 높은 솔루션과 산업에 맞는 새로운 비즈니스 기회에 집중하고 싶습니다.
 
 ```{note}
-* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/web/guest/d/l0-5a-what-challenges-do-we-solve-overview) 을 확인하세요.
-* 라이브 워크숍에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/documents/d/guest/l0-5a-what-challenges-do-we-solve-overview-pdf) 을 다운로드하세요.
+* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/c/portal/login?p_l_id=3026&redirect=%2Fweb%2Fguest%2Fd%2Fl0-5a-what-challenges-do-we-solve-overview) 을 확인하세요.
+* 라이브 워크숍에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/c/portal/login?redirect=%2Fdocuments%2Fd%2Fguest%2Fl0-5a-what-challenges-do-we-solve-overview-pdf) 을 다운로드하세요.
 ```
 
 ## 솔루션의 정의

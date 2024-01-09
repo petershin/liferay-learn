@@ -32,7 +32,7 @@ Liferay DXP의 콘텐츠 관리 시스템(CMS)은 다양한 유형의 콘텐츠(
 
 ## 사용자 경험 개인화
 
-Liferay DXP의 [개인화 및 세분화](./personalizing-site-experience.md) 프레임워크를 사용하면 사용자의 관심과 요구에 응답하고 이를 충족하는 사이트 경험을 구축할 수 있습니다. 자신이 속한 조직이나 사이트에서의 역할과 같은 특정 기준을 기반으로 사용자 [를 생성](./personalizing-site-experience/experience-personalization/content-page-personalization.md) 다음 이를 사용하여 사용자 인구통계에 대한 개인화된 페이지 레이아웃과 [사용자 세그먼트 생성](./personalizing-site-experience/segmentation/creating-and-managing-user-segments.md) 표시하거나 [통합할 수 있습니다. Analytics Cloud](https://learn.liferay.com/analytics-cloud/latest/en/connecting-data-sources/connecting-liferay-dxp-to-analytics-cloud.html) 사용하면 세그먼트 내 사용자의 행동을 분석하여 사이트와 상호 작용하는 방식을 확인할 수 있습니다. 사용자의 행동에 따라 콘텐츠를 추천할 [있습니다](./personalizing-site-experience/experience-personalization/understanding-content-recommendations.md) .
+Liferay DXP의 [개인화 및 세분화](./personalizing-site-experience.md) 프레임워크를 사용하면 사용자의 관심과 요구에 응답하고 이를 충족하는 사이트 경험을 구축할 수 있습니다. 자신이 속한 조직이나 사이트에서의 역할과 같은 특정 기준을 기반으로 사용자 [를 생성](./personalizing-site-experience/experience-personalization/content-page-personalization.md) 다음 이를 사용하여 사용자 인구통계에 대한 개인화된 페이지 레이아웃과 [사용자 세그먼트 생성](./personalizing-site-experience/segmentation/creating-and-managing-user-segments.md) 표시하거나 [Liferay DXP를 Analytics Cloud에 연결](https://learn.liferay.com/ko/w/analytics-cloud/getting-started/connecting-liferay-dxp-to-analytics-cloud) 사용하면 세그먼트 내 사용자의 행동을 분석하여 사이트와 상호 작용하는 방식을 확인할 수 있습니다. 사용자의 행동에 따라 콘텐츠를 추천할 [있습니다](./personalizing-site-experience/experience-personalization/understanding-content-recommendations.md) .
 
 <!-- Screenshot -->
 

@@ -127,7 +127,7 @@ SaaS가 불가능할 수 있는 몇 가지 시나리오가 있습니다.
 
 이러한 경우 PaaS - Liferay Experience Cloud 자체 관리가 옵션일 수 있으며, 일반적으로 Liferay의 클라우드가 옵션이 아닌 경우 DXP 자체 호스팅을 사용할 수 있습니다.
 
-그리고 [판매 결정 흐름](https://learn.liferay.com/documents/d/guest/new-customer-new-project-sales-decision-flow) 을 사용하여 이 단계를 도울 수도 있다는 점을 기억하세요.
+그리고 [판매 결정 흐름](https://learn.liferay.com/c/portal/login?redirect=%2Fdocuments%2Fd%2Fguest%2Fnew-customer-new-project-sales-decision-flow) 을 사용하여 이 단계를 도울 수도 있다는 점을 기억하세요.
 
 ![The Liferay New Customer and New Project Sales Decision Flow provides guidance on which deployment model is most appropriate for a new opportunity.](./liferay-pricing/images/02.png)
 

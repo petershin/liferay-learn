@@ -50,7 +50,7 @@
 
 ## 컨트롤러에서 항목 선택기 기준 설정
 
-'F5D5Portlet.java' 클래스를 엽니다. MVC 포틀릿에서 포틀릿 클래스는 컨트롤러 클래스(MVC의 C)입니다. 다음 두 가지 작업을 수행해야 합니다.
+`F5D5Portlet.java` 클래스를 엽니다. MVC 포틀릿에서 포틀릿 클래스는 컨트롤러 클래스(MVC의 C)입니다. 다음 두 가지 작업을 수행해야 합니다.
 
 - 선택기에 필요한 기준을 정의합니다(예: 어떤 엔터티를 선택합니까?)
 - 해당 기준에 대한 URL을 만듭니다.
@@ -122,7 +122,7 @@ UUID를 사용할 수 없는 경우 기본 키가 반환됩니다.
    :lines: 50-51
    ```
 
-   'view\.jsp' 파일은 프런트엔드 코드가 정의된 곳입니다. Java 클래스의 `render` 메소드에 있는 `renderRequest` 객체가 JSP 파일에 전달됩니다. 컨트롤러(포틀릿 클래스)와 보기(JSP) 모두에서 URL을 식별하려면 상수를 사용하십시오.
+   `view.jsp` 파일은 프런트엔드 코드가 정의된 곳입니다. Java 클래스의 `render` 메소드에 있는 `renderRequest` 객체가 JSP 파일에 전달됩니다. 컨트롤러(포틀릿 클래스)와 보기(JSP) 모두에서 URL을 식별하려면 상수를 사용하십시오.
 
 1. 마지막으로, 코드가 실행된 후 렌더링 프로세스를 계속하려면 `MVCPortlet`의 `render` 메서드를 호출하세요.
 
@@ -132,7 +132,7 @@ UUID를 사용할 수 없는 경우 기본 키가 반환됩니다.
    :lines: 53
    ```
 
-컨트롤러 코드입니다. 이제 실행은 'view\.jsp' 파일에 구현된 뷰 계층(MVC의 V)으로 전달됩니다.
+컨트롤러 코드입니다. 이제 실행은 `view.jsp` 파일에 구현된 뷰 계층(MVC의 V)으로 전달됩니다.
 
 ## 보기에서 항목 선택기 사용
 
@@ -147,7 +147,7 @@ UUID를 사용할 수 없는 경우 기본 키가 반환됩니다.
    :lines: 11-14
    ```
 
-   'clay:button' 태그는 ID가 'selectRoleButton'이고 위젯에 Select 라벨이 표시된 버튼을 만듭니다. 이 버튼은 문자열 `<portlet:namespace />selectRoleButton`으로 식별할 수 있습니다.
+   `clay:button` 태그는 ID가 `selectRoleButton`이고 위젯에 Select 라벨이 표시된 버튼을 만듭니다. 이 버튼은 문자열 `<portlet:namespace />selectRoleButton`으로 식별할 수 있습니다.
 
 1. 항목 선택기를 여는 JavaScript를 삽입하려면 `<script>` 태그를 사용하세요.
 
@@ -158,16 +158,16 @@ UUID를 사용할 수 없는 경우 기본 키가 반환됩니다.
 
 이 JavaScript 조각은 먼저 식별자(`portlet:namespace />selectRoleButton`)를 통해 선택 버튼을 검색합니다. 그런 다음 클릭 시 항목 선택기 대화 상자를 생성하는 이벤트 리스너를 추가합니다.
 
-'Liferay.Util.openSelectionModal' 메서드는 대화 상자를 생성합니다.
+`Liferay.Util.openSelectionModal` 메서드는 대화 상자를 생성합니다.
 
-'onSelect' 필드는 클릭 시 값을 처리하는 함수를 정의해야 합니다. 사용자가 이 함수 내에서 선택할 때 대화 상자의 동작을 정의합니다. 이 구현에서는 선택한 값이 포함된 경고 상자를 표시합니다.
+`onSelect` 필드는 클릭 시 값을 처리하는 함수를 정의해야 합니다. 사용자가 이 함수 내에서 선택할 때 대화 상자의 동작을 정의합니다. 이 구현에서는 선택한 값이 포함된 경고 상자를 표시합니다.
 
-'selectEventName' 필드의 값은 Java 코드의 'RequestBackedPortletURLFactory'와 함께 사용한 문자열과 일치해야 합니다(이 예에서는 'selectRole'). 또한 컨트롤러가 항목을 저장한 요청에서 항목 선택기 URL을 검색해야 합니다. 이를 식별하기 위해 동일한 상수를 사용하고 이를 `url` 필드에 제공해야 합니다.
+`selectEventName` 필드의 값은 Java 코드의 `RequestBackedPortletURLFactory`와 함께 사용한 문자열과 일치해야 합니다(이 예에서는 `selectRole`). 또한 컨트롤러가 항목을 저장한 요청에서 항목 선택기 URL을 검색해야 합니다. 이를 식별하기 위해 동일한 상수를 사용하고 이를 `url` 필드에 제공해야 합니다.
 
 !!! 팁
 항목 선택기가 여러 항목 선택을 지원하도록 하려면 `openSelectionModal` 호출에 `multiple: true`를 추가하여 다중 선택을 활성화할 수 있습니다.
 
-'이벤트'에 저장된 아이템 선택을 사용하세요. 결과에 포함된 데이터 유형과 정보는 Java 코드에서 사용한 반환 유형 클래스에 따라 다릅니다. 이 예제에서는 `UUIDItemSelectorReturnType`을 사용하므로 데이터는 하나 이상의 선택된 항목의 UUID가 포함된 문자열 값입니다.
+`이벤트`에 저장된 아이템 선택을 사용하세요. 결과에 포함된 데이터 유형과 정보는 Java 코드에서 사용한 반환 유형 클래스에 따라 다릅니다. 이 예제에서는 `UUIDItemSelectorReturnType`을 사용하므로 데이터는 하나 이상의 선택된 항목의 UUID가 포함된 문자열 값입니다.
 
 선택 기능 내에서 값을 사용하려는 방법을 구현합니다. 이 예에서는 간단한 JavaScript 경고를 보여줍니다.
 
@@ -177,7 +177,7 @@ UUID를 사용할 수 없는 경우 기본 키가 반환됩니다.
 
 항목 선택기를 사용할 때 선택한 값을 양식에 삽입하려고 합니다. 이를 수행하는 방법은 다음과 같습니다.
 
-1. 'view.jsp'를 엽니다.
+1. `view.jsp`를 엽니다.
 
 1. `<clay:button>` 태그를 찾으세요. 다음과 같은 형식으로 둘러쌉니다.
 
@@ -185,13 +185,13 @@ UUID를 사용할 수 없는 경우 기본 키가 반환됩니다.
    <form name="<portlet:namespace/>form">
       <input name="role" />
       <clay:button
-         id='<%= liferayPortletResponse.getNamespace() + "selectRoleButton" %>'
+         id=`<%= liferayPortletResponse.getNamespace() + "selectRoleButton" %>`
          label="Select"
       />
    </form>
    ```
 
-   이제 '역할'이라는 입력 필드가 하나 있는 양식이 생겼습니다.
+   이제 `역할`이라는 입력 필드가 하나 있는 양식이 생겼습니다.
 
 1. JavaScript 경고까지 아래로 스크롤합니다. JavaScript 경고를 Liferay의 프런트 엔드 `setFormValues` 메서드 호출로 바꿉니다.
 

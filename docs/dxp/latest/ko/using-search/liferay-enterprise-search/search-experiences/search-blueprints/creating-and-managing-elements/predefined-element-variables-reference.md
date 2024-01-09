@@ -61,7 +61,7 @@
 | 날씨 지도 열기 날씨 설명 | 텍스트: 날씨에 대한 설명(예: "맑은 하늘") | `${openweathermap.weather_description}` |
 | 날씨 지도 열기 날씨 ID | 숫자: [날씨 설명에 해당하는 ID](https://openweathermap.or
 
-**\*** [Liferay Commerce](https://learn.liferay.com/w/commerce/installation-and-upgrades/activating-liferay-commerce-enterprise) 활성화하여 Commerce 관련 변수에 액세스합니다.
+**\*** [Liferay Commerce Enterprise 활성화](https://learn.liferay.com/w/commerce/installation-and-upgrades/activating-liferay-commerce-enterprise) 활성화하여 Commerce 관련 변수에 액세스합니다.
 
 **\*** 먼저 각 서비스를 활성화하여 ipstack 및 OpenWeatherMap 변수에 액세스합니다. 시스템 또는 인스턴스 설정 &rarr; 플랫폼 &rarr; 검색 경험을 방문하십시오. 사용 확인란을 클릭하고 구성 중인 서비스에 대한 구성을 저장합니다. OpenWeatherMap 서비스는 활성화된 ipstack 서비스에 따라 달라집니다. ipstack 서비스를 사용하는 예는 [개인화 검색 경험](../personalizing-the-search-experience.md) 참조하십시오.
 

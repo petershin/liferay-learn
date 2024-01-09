@@ -13,8 +13,8 @@ visibility:
 - 배포 전략은 일반적으로 데모나 초기 단계 영업 회의에서 논의되지 않지만, 이러한 세션에서 배운 정보는 하나의 배포 접근 방식 또는 다른 접근 방식에 대한 기회를 안내하는 데 도움이 됩니다.
 
 ```{note}
-* 이 모듈의 라이브 워크숍에서 [녹화](https://learn.liferay.com/web/guest/d/se1-8-deployment-strategies) 를 확인하세요.
-* 라이브 워크숍에 사용된 프레젠테이션의 [PDF](https://learn.liferay.com/documents/d/guest/se1-8-deployment-strategies-pdf) 를 다운로드하세요.
+* 이 모듈의 라이브 워크숍에서 [녹화](https://learn.liferay.com/c/portal/login?p_l_id=3026&redirect=%2Fweb%2Fguest%2Fd%2Fse1-8-deployment-strategies) 를 확인하세요.
+* 라이브 워크숍에 사용된 프레젠테이션의 [PDF](https://learn.liferay.com/c/portal/login?redirect=%2Fdocuments%2Fd%2Fguest%2Fse1-8-deployment-strategies-pdf) 를 다운로드하세요.
 ```
 
 ## SaaS, PaaS 또는 셀프 호스팅?
@@ -41,7 +41,7 @@ visibility:
 
 ### 맞춤형 솔루션 구축
 
-가장 최근 변경 사항 중 하나는 [클라이언트 확장](https://learn.liferay.com/w/dxp/building-applications/client-extensions) 이라고 알려져 있지만 Liferay DXP를 확장하는 선호되는 방법입니다.
+가장 최근 변경 사항 중 하나는 [원격 앱](https://learn.liferay.com/w/dxp/building-applications/client-extensions) 이라고 알려져 있지만 Liferay DXP를 확장하는 선호되는 방법입니다.
 
 거의 모든 고객은 고유한 기능이 필요하며 새로운 접근 방식은 모든 사용자 정의 코드가 Liferay의 코어 외부에서 실행되는 느슨하게 결합된 모델을 제공합니다.
 

@@ -73,5 +73,5 @@ Liferay Cloud는 변경 사항을 감지하고 배포할 수 있는 CI에 새 �
 ## 관련 개념
 
 * [Liferay 서비스에 배포](https://learn.liferay.com/w/liferay-cloud/using-the-liferay-dxp-service/deploying-to-the-liferay-service)
-* [Liferay 인스턴스를 새로운 부 버전으로 업데이트](https://learn.liferay.com/w/liferay-cloud/using-the-liferay-dxp-service/updating-your-dxp-instance-to-a-new-minor-version)
+* [DXP 인스턴스를 새 마이너 버전으로 업데이트](https://learn.liferay.com/w/liferay-cloud/using-the-liferay-dxp-service/updating-your-dxp-instance-to-a-new-minor-version)
 * [Liferay DXP 인스턴스 업그레이드](https://learn.liferay.com/w/liferay-cloud/using-the-liferay-dxp-service/upgrading-your-liferay-dxp-instance)

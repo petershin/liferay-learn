@@ -32,8 +32,8 @@ visibility:
 5. 이 프로세스 중에 사용할 수 있는 판매 준비 자산 및 메시지는 무엇입니까?
 
 ```{note}
-* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/web/guest/d/sa1-5-sales-funnel-and-best-practices-for-opportunity-progress) 을 확인하세요.
-* 라이브에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/documents/d/guest/sa1-5-sales-funnel-and-best-practices-for-opportunity-progress-pdf) 을 다운로드하세요. 작업장.
+* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/c/portal/login?p_l_id=3026&redirect=%2Fweb%2Fguest%2Fd%2Fsa1-5-sales-funnel-and-best-practices-for-opportunity-progress) 을 확인하세요.
+* 라이브에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/c/portal/login?redirect=%2Fdocuments%2Fd%2Fguest%2Fsa1-5-sales-funnel-and-best-practices-for-opportunity-progress-pdf) 을 다운로드하세요. 작업장.
 ```
 
 ## 주요 계약을 추진하는 데는 비용이 많이 듭니다

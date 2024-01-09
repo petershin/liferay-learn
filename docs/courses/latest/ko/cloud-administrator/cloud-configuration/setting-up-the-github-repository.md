@@ -89,5 +89,5 @@ CI 서비스가 다시 시작되면 개인 저장소에 대한 푸시 또는 풀
 
 * [GitHub 리포지토리 구성](https://learn.liferay.com/w/liferay-cloud/getting-started/configuring-your-github-repository)
 * [명령줄 도구](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool)
-* [Bitbucket 저장소 구성](https://learn.liferay.com/w/liferay-cloud/getting-started/configuring-your-bitbucket-repository)
-* [GitLab 저장소 구성](https://learn.liferay.com/w/liferay-cloud/getting-started/configuring-your-gitlab-repository)
+* [Bitbucket 리포지토리 구성하기](https://learn.liferay.com/w/liferay-cloud/getting-started/configuring-your-bitbucket-repository)
+* [GitLab 리포지토리 구성하기](https://learn.liferay.com/w/liferay-cloud/getting-started/configuring-your-gitlab-repository)

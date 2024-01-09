@@ -38,7 +38,7 @@
 http://localhost:8080/web/guest/search?q=test&start=2
 ```
 
-**페이지 매김 델타:** 결과 페이지당 표시할 결과 수를 설정합니다. `search.container.page.default.delta`를 사용자 정의하지 않은 경우 기본값은 **20** 입니다. [property](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Search%20Container) 를 `portal-ext.properties` 파일에 추가하세요.
+**페이지 매김 델타:** 결과 페이지당 표시할 결과 수를 설정합니다. `search.container.page.default.delta`를 사용자 정의하지 않은 경우 기본값은 **20** 입니다. [property](https://resources.learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) 를 `portal-ext.properties` 파일에 추가하세요.
 
 **페이지 매김 델타 매개변수 이름:** 페이지 매김 델타 값(기본값은 `delta`)을 저장하는 URL 매개변수의 이름을 설정합니다. 이 매개변수는 사용자가 번호를 변경하면 브라우저에 표시됩니다. 사용자가 페이지당 10개의 결과를 선택하고 **test** 를 검색하면 검색 페이지가 다음 URL로 다시 로드됩니다.
 

@@ -10,7 +10,7 @@
 
 여기에서는 Liferay의 [`create_custom_element.sh`](https://raw.githubusercontent.com/liferay/liferay-portal/master/tools/create_custom_element.sh) 스크립트를 사용하여 기본 원격 애플리케이션을 생성합니다. 애플리케이션이 생성된 후 해당 코드를 컴파일하고 `.js` 및 `.css` 파일을 호스팅합니다. 호스팅되면 각 파일의 URL을 복사하여 이를 사용하여 맞춤 요소를 만듭니다. 마지막으로 애플리케이션을 사이트 페이지에 위젯으로 배포할 수 있습니다.
 
-![Use the create **custom** element.sh script to create a simple React application.](./creating-a-basic-custom-element/images/01.png)
+![Use the create_custom_element.sh script to create a simple React application.](./creating-a-basic-custom-element/images/01.png)
 
 ```{note}
 사용자 정의 요소 클라이언트 확장은 구축, 패키지 또는 호스팅 방법에 관계없이 모든 기술을 사용할 수 있습니다. 이 튜토리얼에서는 React를 사용하는 샘플 사용자 정의 요소 애플리케이션만 제공합니다.
@@ -30,7 +30,7 @@ curl -Ls https://github.com/liferay/liferay-portal/raw/master/tools/create_custo
 
 이는 사용자 정의 HTML 요소 이름(`h5v7-custom-element`)과 원하는 JavaScript 프레임워크(`react`)라는 두 가지 인수를 사용하여 스크립트를 호출합니다.
 
-실행이 완료되면 스크립트는 'h5v7-custom-element'라는 폴더에 다음 요소가 포함된 새 React 애플리케이션을 자동으로 생성합니다.
+실행이 완료되면 스크립트는 `h5v7-custom-element`라는 폴더에 다음 요소가 포함된 새 React 애플리케이션을 자동으로 생성합니다.
 
 ```bash
 h5v7-custom-element
@@ -79,7 +79,7 @@ h5v7-custom-element
 
 ### React 경로 이해
 
-생성된 코드에는 'hello-world'(기본값), 'hello-foo', 'hello-bar'라는 세 가지 경로가 포함되어 있습니다. 경로는 애플리케이션을 실행할 때 사용할 수 있는 대체 코드 세트입니다. 기본 예는 [사용자 정의 요소와 함께 경로 사용](./using-routes-with-custom-elements.md) 참조하세요.
+생성된 코드에는 `hello-world`(기본값), `hello-foo`, `hello-bar`라는 세 가지 경로가 포함되어 있습니다. 경로는 애플리케이션을 실행할 때 사용할 수 있는 대체 코드 세트입니다. 기본 예는 [사용자 정의 요소와 함께 경로 사용](./using-routes-with-custom-elements.md) 참조하세요.
 
 ## React 애플리케이션 구축
 
@@ -148,7 +148,7 @@ gzip 이후 파일 크기:
 
 ## Liferay에 애플리케이션 등록
 
-1. **전역 메뉴**(![전역 메뉴](../../../../images/icon-applications-menu.png))를 열고 **응용 프로그램** 탭을 클릭한 후 \ **원격 앱으로 이동합니다. \** .
+1. **글로벌 메뉴**(![글로벌 메뉴](../../../../images/icon-applications-menu.png))를 열고 **애플리케이션** 탭을 클릭한 다음 **원격 앱**으로 이동합니다.
 
 1. **추가**(![추가 버튼](../../../../images/icon-add.png))를 클릭합니다.
 

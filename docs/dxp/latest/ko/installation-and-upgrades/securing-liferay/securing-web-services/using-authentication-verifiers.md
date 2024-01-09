@@ -63,7 +63,7 @@
 
 Liferay가 모듈성을 수용함에 따라 이 익스텐더는 모듈이 `TunnelServlet`의 일부가 될 수 있도록 작성되었습니다. `TunnelServlet` 및 `TunnelingServletAuthVerifier` 을 모듈 서블릿 컨텍스트에 매핑합니다. 매니페스트에 `Http-Tunnel` 이 있는 모듈은 Tunnel Servlet을 사용할 수 있으며 `/o/_module_/api/liferay/do`을 통해 API를 노출할 수 있습니다.
 
-터널링이 허용된 클라이언트 IP 주소를 설정하여 구성합니다. 자세한 내용은 [속성 설명서](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#HTTP%20Tunneling) 및 [원격 준비](../../../site-building/publishing-tools/staging/configuring-remote-live-staging.md)을 참조하십시오.
+터널링이 허용된 클라이언트 IP 주소를 설정하여 구성합니다. 자세한 내용은 [속성 설명서](https://resources.learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) 및 [원격 준비](../../../site-building/publishing-tools/staging/configuring-remote-live-staging.md)을 참조하십시오.
 
 이는 원격 API를 내보내는 권장 방법이 아닙니다. JAX-RS 또는 Liferay JSON 웹 서비스 기술을 사용하여 원격 서비스를 노출하는 것이 훨씬 좋습니다.
 
@@ -95,7 +95,7 @@ LibreOffice/OpenOffice에 연결된 경우 Office 프로세스는 Liferay Portal
 
 신뢰할 수 있는 원격 클라이언트는 포털 속성 `tunneling.servlet.shared.secret`에 저장된 공유 비밀을 사용하여 인증합니다. 기본값은 비어 있으며 모든 액세스를 금지합니다.
 
-기본 구성이 기본적으로 활성화되어 있어도 액세스는 localhost로만 제한됩니다. 터널링이 허용된 클라이언트 IP 주소를 설정하여 구성합니다. 자세한 내용은 [속성 설명서](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#HTTP%20Tunneling) 및 [원격 준비](../../../site-building/publishing-tools/staging/configuring-remote-live-staging.md)을 참조하십시오.
+기본 구성이 기본적으로 활성화되어 있어도 액세스는 localhost로만 제한됩니다. 터널링이 허용된 클라이언트 IP 주소를 설정하여 구성합니다. 자세한 내용은 [속성 설명서](https://resources.learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) 및 [원격 준비](../../../site-building/publishing-tools/staging/configuring-remote-live-staging.md)을 참조하십시오.
 
 ## 관련 항목
 

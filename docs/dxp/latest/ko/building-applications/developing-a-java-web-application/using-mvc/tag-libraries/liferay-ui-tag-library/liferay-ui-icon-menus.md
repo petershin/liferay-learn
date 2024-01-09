@@ -29,7 +29,7 @@ JSP 구성 예:
 </liferay-ui:icon-menu>
 ```
 
-아이콘이 제대로 렌더링되려면 `url` 속성이 필요합니다. 속성의 전체 목록은 [아이콘 메뉴 taglibdocs](https://learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/liferay-ui/icon-menu.html) 을 참조하십시오.
+아이콘이 제대로 렌더링되려면 `url` 속성이 필요합니다. 속성의 전체 목록은 [아이콘 메뉴 taglibdocs](https://resources.learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/liferay-ui/icon-menu.html) 을 참조하십시오.
 
 ## 관련 항목
 

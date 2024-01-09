@@ -14,7 +14,7 @@ Clarity Vision Solutions는 차고에서 프레임을 판매하던 시절부터 
 
 1. 그런 다음 **글로벌 메뉴**(![글로벌 메뉴](../../../images/icon-applications-menu.png)) &rarr; **제어판** &rarr; **인스턴스 설정** 으로 이동합니다. 보안 섹션에서 **Multi-Factor Authentication** 을 클릭하세요.
 
-1. **활성화** 상자를 선택하고 **저장** 을 클릭하세요. [다단계 인증 활성화](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/multi-factor-authentication/using-multi-factor-authentication#enabling-multi) 를 참조하세요. -factor-authentication) 구성 옵션에 대해 자세히 알아보세요.
+1. **활성화** 상자를 선택하고 **저장** 을 클릭하세요. [다단계 인증 사용](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/multi-factor-authentication/using-multi-factor-authentication#enabling-multi) 를 참조하세요. -factor-authentication) 구성 옵션에 대해 자세히 알아보세요.
 
 시스템에서 자신이 잠기는 것을 방지하기 위해 진행하기 전에 FakeSMTP를 통해 이메일을 성공적으로 수신할 수 있는지 확인하십시오.
 

@@ -125,7 +125,7 @@ DXP 번들을 패치하는 경우 아래의 기본 패치 단계를 계속하십
     ./patching-tool.sh info
     ```
 
-    인덱스 업데이트가 있는 경우 [`database.indexes.update.on.startup`](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Database) Portal 속성을 [`portal-ext.properties` 파일](../../reference/portal-properties.md)에서 `true` 로 설정합니다.
+    인덱스 업데이트가 있는 경우 [`database.indexes.update.on.startup`](https://resources.learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) Portal 속성을 [`portal-ext.properties` 파일](../../reference/portal-properties.md)에서 `true` 로 설정합니다.
 
     ```properties
     database.indexes.update.on.startup=true

@@ -110,6 +110,6 @@ Knowledge Base Display의 탐색 메뉴와 표시 옵션은 전체 페이지 위
 
 ## 관련 주제
 
-* [기술 자료 문서 작성](./creating-knowledge-base-articles.md) 
-* [지식 베이스 관리](./managing-the-knowledge-base.md) 
-* [기타 지식 베이스 위젯](./other-knowledge-base-widgets.md) 
+* [기술 자료 문서 작성](./creating-knowledge-base-articles.md)
+* [지식 베이스 관리](./managing-the-knowledge-base.md)
+* [기타 지식 베이스 위젯](./other-knowledge-base-widgets.md)

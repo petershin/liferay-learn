@@ -36,5 +36,5 @@ SKU 재고가 특정 임계값 아래로 떨어지면 재고 부족 조치가 �
 
 ## 관련 주제
 
-* [제품 인벤토리 구성 참조](./product-inventory-configuration-reference-guide.md) 
-* [맞춤형 재고 부족 조치 구현](../developer-guide/managing-inventory/implementing-a-custom-low-stock-activity.md) 
+* [제품 인벤토리 구성 참조](./product-inventory-configuration-reference-guide.md)
+* [맞춤형 재고 부족 조치 구현](../developer-guide/managing-inventory/implementing-a-custom-low-stock-activity.md)

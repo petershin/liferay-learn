@@ -33,15 +33,15 @@ Font Awesome, Glyphicon 및 사용자 정의 Liferay 아이콘용 아이콘 글�
 
 ##### liferay-ui:icon 사용의 경우
 
-`<liferay-ui:icon iconCssClass="icon-user">을 `\<liferay-ui:icon icon="user" markupView="lexicon" />로 교체
+`<liferay-ui:icon iconCssClass="icon-user">`를 `<liferay-ui:icon icon="user" markupView="lexicon" />`로 바꿉니다.
 
 ##### JavaScript로 생성된 아이콘의 경우
 
-FontAwesome 아이콘 html을 수동으로 생성하는 경우 `Liferay.Util.getLexiconIconTpl('user')` API를 사용할 수 있습니다. 예를 들어, 이전 호출은 사용자 svg 아이콘에 대한 html 코드를 반환합니다.
+FontAwesome 아이콘 html을 수동으로 생성하는 경우 `Liferay.Util.getLexiconIconTpl(`user`)` API를 사용할 수 있습니다. 예를 들어, 이전 호출은 사용자 svg 아이콘에 대한 html 코드를 반환합니다.
 
 ##### JSP 내 직접 HTML의 경우
 
-jsp에서 아이콘을 직접 사용하는 개발자는 위에서 설명한 대로 'liferay-ui:icon' 태그를 사용하거나 대신 svg 기반 아이콘을 생성하기 위해 'clay:icon' 태그를 사용할 수 있습니다.
+jsp에서 아이콘을 직접 사용하는 개발자는 위에서 설명한 대로 `liferay-ui:icon` 태그를 사용하거나 대신 svg 기반 아이콘을 생성하기 위해 `clay:icon` 태그를 사용할 수 있습니다.
 
 ##### 비제어 코드의 경우
 
@@ -86,7 +86,7 @@ jsp에서 아이콘을 직접 사용하는 개발자는 위에서 설명한 대�
 
 #### 무엇이 바뀌었나요?
 
-'AssetCategory'의 왼쪽 및 오른쪽 카테고리 ID가 제거되고 단일 트리 경로로 대체되었습니다.
+`AssetCategory`의 왼쪽 및 오른쪽 카테고리 ID가 제거되고 단일 트리 경로로 대체되었습니다.
 
 #### 누가 영향을 받나요?
 
@@ -136,7 +136,7 @@ else {
 
 `AssetCategoryLocalService#rebuildTree(long, boolean)`에 대한 호출은 불필요할 수 있습니다. 이 방법은 현재 대체된 내부 계층 트리 구현을 유지하는 데 주로 사용되었습니다.
 
-'rebuildTree' 메서드 호출이 여전히 필요한지 확인하려면 기존 코드를 재평가하는 것이 좋습니다.
+`rebuildTree` 메서드 호출이 여전히 필요한지 확인하려면 기존 코드를 재평가하는 것이 좋습니다.
 
 ##### AssetCategoryUtil 및 AssetEntryQuery의 경우
 
@@ -145,7 +145,7 @@ else {
 - 기존 코드를 재평가하세요.
 - 기존 서비스 API가 동일한 목표를 달성할 수 있는지 탐색
 
-##### G **P** N_V와 관련된 파인더 메소드의 경우
+##### G_P_N_V와 관련된 파인더 메소드의 경우
 
 `G_P_N_V`로 끝나는 `AssetCategory` 찾기 메서드를 사용하는 경우 대신 `P_N_V`로 끝나는 메서드를 사용하세요.
 
@@ -232,7 +232,7 @@ Java 클래스 `com.liferay.asset.taglib.servlet.taglib.soy.AssetTagsSelectorTag
 
 #### 무엇이 바뀌었나요?
 
-Auto Deployer('liferay-home/deploy 폴더'를 통해)를 사용하여 EXT 플러그인 배포에 대한 지원이 제거되었습니다. 배포 폴더에 복사된 EXT 플러그인은 더 이상 인식되지 않습니다.
+Auto Deployer(`liferay-home/deploy 폴더`를 통해)를 사용하여 EXT 플러그인 배포에 대한 지원이 제거되었습니다. 배포 폴더에 복사된 EXT 플러그인은 더 이상 인식되지 않습니다.
 
 #### 누가 영향을 받나요?
 
@@ -284,7 +284,7 @@ Auto Deployer('liferay-home/deploy 폴더'를 통해)를 사용하여 EXT 플러
 
 #### 무엇이 바뀌었나요?
 
-'SingleVMPoolUtil' 및 'MultiVMPoolUtil' 클래스가 제거되었습니다.
+`SingleVMPoolUtil` 및 `MultiVMPoolUtil` 클래스가 제거되었습니다.
 
 #### 누가 영향을 받나요?
 
@@ -292,11 +292,11 @@ Auto Deployer('liferay-home/deploy 폴더'를 통해)를 사용하여 EXT 플러
 
 #### 내 코드를 어떻게 업데이트해야 합니까?
 
-'SingleVMPoolUtil' 또는 'MultiVMPoolUtil' 대신 'PortalCacheHelperUtil'을 사용하세요. 예를 들어 [SQLQueryTableNamesUtil](https://github.com/liferay/liferay-portal/blob/7.3.x/portal-impl/src/com/liferay/portal/dao/orm/hibernate/SQLQueryTableNamesUtil.java#L113-L116) 참조하세요.
+`SingleVMPoolUtil` 또는 `MultiVMPoolUtil` 대신 `PortalCacheHelperUtil`을 사용하세요. 예를 들어 [SQLQueryTableNamesUtil](https://github.com/liferay/liferay-portal/blob/7.3.x/portal-impl/src/com/liferay/portal/dao/orm/hibernate/SQLQueryTableNamesUtil.java#L113-L116) 참조하세요.
 
 #### 왜 이렇게 변경되었나요?
 
-'SingleVMPoolUtil' 및 'MultiVMPoolUtil' 클래스는 원래 [LPS-84138](https://issues.liferay.com/browse/LPS-84138) 에서 더 이상 사용되지 않습니다. 해당 클래스는 더 이상 사용되지 않습니다.
+`SingleVMPoolUtil` 및 `MultiVMPoolUtil` 클래스는 원래 [LPS-84138](https://issues.liferay.com/browse/LPS-84138) 에서 더 이상 사용되지 않습니다. 해당 클래스는 더 이상 사용되지 않습니다.
 
 ---------------------------------------
 
@@ -334,7 +334,7 @@ Auto Deployer('liferay-home/deploy 폴더'를 통해)를 사용하여 EXT 플러
 
 #### 무엇이 바뀌었나요?
 
-'liferay-frontend:cards-treeview' 태그가 제거되었습니다.
+`liferay-frontend:cards-treeview` 태그가 제거되었습니다.
 
 #### 누가 영향을 받나요?
 
@@ -357,7 +357,7 @@ Auto Deployer('liferay-home/deploy 폴더'를 통해)를 사용하여 EXT 플러
 
 #### 무엇이 바뀌었나요?
 
-'liferay-frontend:contextual-sidebar' 태그가 제거되었습니다.
+`liferay-frontend:contextual-sidebar` 태그가 제거되었습니다.
 
 #### 누가 영향을 받나요?
 
@@ -420,7 +420,7 @@ Auto Deployer('liferay-home/deploy 폴더'를 통해)를 사용하여 EXT 플러
 
 ##### 제어판 테마
 
-사용자 정의 제어판 테마를 사용하는 개발자는 'portlet.ftl'의 포틀릿 섹션 위에 있는 '@liferay.control_menu' 매크로에 대한 호출(있는 경우)을 이동해야 합니다.
+사용자 정의 제어판 테마를 사용하는 개발자는 `portlet.ftl`의 포틀릿 섹션 위에 있는 `@liferay.control_menu` 매크로에 대한 호출(있는 경우)을 이동해야 합니다.
 
 **전에:**
 
@@ -448,7 +448,7 @@ Auto Deployer('liferay-home/deploy 폴더'를 통해)를 사용하여 EXT 플러
 
 ##### 맞춤형 스티커 바
 
-'ControlMenuEntry' API를 사용하여 포함된 사용자 정의 고정 막대가 있는 개발자는 컨트롤 메뉴에 새로 포함된 확장 포인트를 사용하여 구성 요소를 삽입할 수 있습니다.
+`ControlMenuEntry` API를 사용하여 포함된 사용자 정의 고정 막대가 있는 개발자는 컨트롤 메뉴에 새로 포함된 확장 포인트를 사용하여 구성 요소를 삽입할 수 있습니다.
 
 메뉴를 삽입하는 코드를 `DynamicInclude` 구성 요소로 이동하고 적절한 사이트
 에 등록합니다.
@@ -470,7 +470,7 @@ Auto Deployer('liferay-home/deploy 폴더'를 통해)를 사용하여 EXT 플러
 
 #### 무엇이 바뀌었나요?
 
-이전에는 `jQuery`가 기본적으로 모든 페이지에 포함되었으며 전역 `window.$` 및 범위가 지정된 `AUI.$` 변수를 통해 사용할 수 있었습니다. 이 변경 후에는 'jQuery'가 더 이상 기본적으로 포함되지 않으며 해당 변수는 '정의되지 않음'입니다.
+이전에는 `jQuery`가 기본적으로 모든 페이지에 포함되었으며 전역 `window.$` 및 범위가 지정된 `AUI.$` 변수를 통해 사용할 수 있었습니다. 이 변경 후에는 `jQuery`가 더 이상 기본적으로 포함되지 않으며 해당 변수는 `정의되지 않음`입니다.
 
 #### 누가 영향을 받나요?
 
@@ -480,7 +480,7 @@ Auto Deployer('liferay-home/deploy 폴더'를 통해)를 사용하여 EXT 플러
 
 타사 라이브러리를 추가하여 코드에서 사용할 고유한 JQuery 버전을 제공하는 전략을 사용하세요.
 
-또한 임시 조치로 **시스템 설정** &rarr; **제3자** &rarr; **jQuery** 에서 'jQuery 활성화' 속성을 'true'로 설정하여 이전 동작을 되돌릴 수 있습니다.
+또한 임시 조치로 **시스템 설정** &rarr; **제3자** &rarr; **jQuery** 에서 `jQuery 활성화` 속성을 `true`로 설정하여 이전 동작을 되돌릴 수 있습니다.
 
 #### 왜 이렇게 변경되었나요?
 
@@ -495,7 +495,7 @@ Auto Deployer('liferay-home/deploy 폴더'를 통해)를 사용하여 EXT 플러
 
 #### 무엇이 바뀌었나요?
 
-'layout.parallel.render' 접두사가 있는 속성이 제거되었습니다. 이는 AJAX 렌더링이 활성화된 경우에만 병렬 렌더링이 지원된다는 의미입니다.
+`layout.parallel.render` 접두사가 있는 속성이 제거되었습니다. 이는 AJAX 렌더링이 활성화된 경우에만 병렬 렌더링이 지원된다는 의미입니다.
 
 #### 누가 영향을 받나요?
 
@@ -503,7 +503,7 @@ Auto Deployer('liferay-home/deploy 폴더'를 통해)를 사용하여 EXT 플러
 
 #### 내 코드를 어떻게 업데이트해야 합니까?
 
-속성 파일에서 'layout.parallel.render' 접두사가 붙은 속성을 모두 제거하세요.
+속성 파일에서 `layout.parallel.render` 접두사가 붙은 속성을 모두 제거하세요.
 
 #### 왜 이렇게 변경되었나요?
 
@@ -518,7 +518,7 @@ Auto Deployer('liferay-home/deploy 폴더'를 통해)를 사용하여 EXT 플러
 
 #### 무엇이 바뀌었나요?
 
-Headless Delivery API에서 ContentField 스키마 내부의 속성 이름 'value'가 'contentFieldValue'로 변경되었습니다.
+Headless Delivery API에서 ContentField 스키마 내부의 속성 이름 `value`가 `contentFieldValue`로 변경되었습니다.
 
 #### 누가 영향을 받나요?
 
@@ -530,7 +530,7 @@ REST 클라이언트에서 속성 이름을 `contentFieldValue`로 변경합니�
 
 #### 왜 이렇게 변경되었나요?
 
-이 변경으로 Headless API의 '{schemaName}+Value'라는 모든 값 속성 이름과의 일관성이 복원되었습니다.
+이 변경으로 Headless API의 `{schemaName}+Value`라는 모든 값 속성 이름과의 일관성이 복원되었습니다.
 
 ---------------------------------------
 
@@ -541,7 +541,7 @@ REST 클라이언트에서 속성 이름을 `contentFieldValue`로 변경합니�
 
 ### 무엇이 바뀌었나요?
 
-`liferay-editor-image-uploader` AUI 플러그인이 제거되었습니다. 해당 코드는 Alloy Editor 및 CKEditor에서 사용되는 'addimages' CKEditor 플러그인에 병합되었습니다.
+`liferay-editor-image-uploader` AUI 플러그인이 제거되었습니다. 해당 코드는 Alloy Editor 및 CKEditor에서 사용되는 `addimages` CKEditor 플러그인에 병합되었습니다.
 
 ### 영향을 받는 사람
 
@@ -666,7 +666,7 @@ Simple Editor를 사용하도록 Liferay Portal을 구성한 경우 이러한 �
 	<c:if test="<%= themeDisplay.isSignedIn()%>">
 		Liferay.Poller.init({
 			encryptedUserId:
-				'<%= Encryptor.encrypt(company.getKeyObj(), String.valueOf(themeDisplay.getUserId()))%>',
+				`<%= Encryptor.encrypt(company.getKeyObj(), String.valueOf(themeDisplay.getUserId()))%>`,
 		});
 	</c:if>
 </aui:script>
@@ -685,7 +685,7 @@ Simple Editor를 사용하도록 Liferay Portal을 구성한 경우 이러한 �
 
 #### 무엇이 바뀌었나요?
 
-이제 'ContentTransformerListener'는 기본적으로 비활성화됩니다.
+이제 `ContentTransformerListener`는 기본적으로 비활성화됩니다.
 
 #### 누가 영향을 받나요?
 
@@ -693,7 +693,7 @@ Simple Editor를 사용하도록 Liferay Portal을 구성한 경우 이러한 �
 
 #### 내 코드를 어떻게 업데이트해야 합니까?
 
-코드를 업데이트할 필요가 없습니다. 그래도 'ContentTransformerListener'를 사용하려면 시스템 설정에서 **Content & Data** &rarr; **Web Content** &rarr; **Virtual Instance Scope** &rarr; **Web Content** 아래의 **Enable ContentTransformerListener** 속성을 통해 이를 활성화할 수 있습니다.
+코드를 업데이트할 필요가 없습니다. 그래도 `ContentTransformerListener`를 사용하려면 시스템 설정에서 **Content & Data** &rarr; **Web Content** &rarr; **Virtual Instance Scope** &rarr; **Web Content** 아래의 **Enable ContentTransformerListener** 속성을 통해 이를 활성화할 수 있습니다.
 
 #### 왜 이렇게 변경되었나요?
 
@@ -894,7 +894,7 @@ Lexicon 아이콘의 경로가 `themeDisplay.getPathThemeImages()+ "/lexicon/ico
 
 ### 영향을 받는 사람
 
-이는 Lexicon 아이콘 경로를 직접 사용하는 사용자 정의 솔루션에 영향을 미칩니다. '어휘' 경로에 아이콘을 작성하기 위한 Gradle 작업이 제거됩니다.
+이는 Lexicon 아이콘 경로를 직접 사용하는 사용자 정의 솔루션에 영향을 미칩니다. `어휘` 경로에 아이콘을 작성하기 위한 Gradle 작업이 제거됩니다.
 
 ### 내 코드를 어떻게 업데이트해야 합니까?
 
@@ -970,9 +970,9 @@ Lexicon 아이콘의 경로가 `themeDisplay.getPathThemeImages()+ "/lexicon/ico
 
 포털 속성 변경 사항은 다음과 같습니다.
 
-'buffered.increment.enabled' 포털 속성이 제거되었습니다. 이제 조회수 페이지의 `enabled` 속성을 사용하여 조회수를 전역적으로 활성화 및 비활성화할 수 있습니다.
+`buffered.increment.enabled` 포털 속성이 제거되었습니다. 이제 조회수 페이지의 `enabled` 속성을 사용하여 조회수를 전역적으로 활성화 및 비활성화할 수 있습니다.
 
-예를 들어 7.3에서 `view.count.enabled[SomeEntity]=false`를 설정하거나 7.2에서 `buffered.increment.enabled[SomeEntity]=false`를 설정하여 특정 엔터티에 대한 보기 수 동작을 비활성화하는 작업이 더 이상 포털 속성에서 수행되지 않습니다. , 그러나 이제 조회 수 페이지의 '비활성화된 클래스 이름' 값 목록에 엔터티 클래스 이름을 추가하면 됩니다.
+예를 들어 7.3에서 `view.count.enabled[SomeEntity]=false`를 설정하거나 7.2에서 `buffered.increment.enabled[SomeEntity]=false`를 설정하여 특정 엔터티에 대한 보기 수 동작을 비활성화하는 작업이 더 이상 포털 속성에서 수행되지 않습니다. , 그러나 이제 조회 수 페이지의 `비활성화된 클래스 이름` 값 목록에 엔터티 클래스 이름을 추가하면 됩니다.
 
 #### 누가 영향을 받나요?
 
@@ -986,7 +986,7 @@ Lexicon 아이콘의 경로가 `themeDisplay.getPathThemeImages()+ "/lexicon/ico
 
 시스템 설정에서 또는 구성 파일을 사용하여 조회수 동작을 구성합니다.
 
-**시스템 설정** &rarr; **인프라** &rarr; **보기 수** 에서 'enabled'를 'false'로 설정하여 보기 횟수를 전역적으로 비활성화하거나 'enabled'를 'true'로 설정하여 전역적으로 보기 횟수를 활성화하고 특정 엔터티에 대한 보기 횟수를 비활성화합니다. 'Disabled Class Name' 값 목록에 엔터티 클래스 이름을 추가합니다.
+**시스템 설정** &rarr; **인프라** &rarr; **보기 수** 에서 `enabled`를 `false`로 설정하여 보기 횟수를 전역적으로 비활성화하거나 `enabled`를 `true`로 설정하여 전역적으로 보기 횟수를 활성화하고 특정 엔터티에 대한 보기 횟수를 비활성화합니다. `Disabled Class Name` 값 목록에 엔터티 클래스 이름을 추가합니다.
 
 구성 파일을 사용하려면 시스템 설정에서 보기 수를 구성하고 설정을 저장한 후 `com.liferay.view.count.configuration.ViewCountConfiguration.config` 파일로 내보냅니다. 그런 다음 `[Liferay Home]/osgi/configs` 폴더에 파일을 배치하여 구성을 배포합니다.
 

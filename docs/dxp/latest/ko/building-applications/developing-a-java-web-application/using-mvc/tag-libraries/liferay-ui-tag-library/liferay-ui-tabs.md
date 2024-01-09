@@ -35,7 +35,7 @@
 
 ![탭은 구성 옵션을 동일한 UI 내의 개별 섹션으로 구성하는 유용한 방법입니다.](./liferay-ui-tabs/images/01.png)
 
-위의 예에서는 탭의 사용 가능한 속성 중 일부를 사용합니다. 속성의 전체 목록은 [Tabs taglibdocs](https://learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/liferay-ui/tabs.html) 을 참조하십시오.
+위의 예에서는 탭의 사용 가능한 속성 중 일부를 사용합니다. 속성의 전체 목록은 [Tabs taglibdocs](https://resources.learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/liferay-ui/tabs.html) 을 참조하십시오.
 
 ## 관련 항목
 

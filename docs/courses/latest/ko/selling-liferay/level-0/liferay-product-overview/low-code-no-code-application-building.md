@@ -11,18 +11,18 @@ Liferay의 로우 코드 및 노코드 도구를 사용하면 개발자가 아�
 
 ## 개체
 
-* [개체 개요](https://learn.liferay.com/w/dxp/building-applications/objects) 
-* [튜토리얼](https://learn.liferay.com/w/dxp/building-applications/objects) 
+* [개체](https://learn.liferay.com/w/dxp/building-applications/objects)
+* [개체](https://learn.liferay.com/w/dxp/building-applications/objects)
 
 ## 양식
 
-* [개체와 함께 양식 사용](https://learn.liferay.com/w/dxp/building-applications/objects/using-forms-with-objects) 
-* [조각을 사용하여 양식 작성](https://learn.liferay.com/w/dxp/building-applications/objects/using-fragments-to-build-forms) 
-* [양식 소개](https://learn.liferay.com/w/dxp/process-automation/forms/introduction-to-forms) 
+* [개체와 함께 양식 사용](https://learn.liferay.com/w/dxp/building-applications/objects/using-forms-with-objects)
+* [조각을 사용하여 양식 작성](https://learn.liferay.com/w/dxp/building-applications/objects/using-fragments-to-build-forms)
+* [양식 소개](https://learn.liferay.com/w/dxp/process-automation/forms/introduction-to-forms)
 
 ## 페이지
 
-* [사이트 외관](https://learn.liferay.com/w/dxp/site-building/site-appearance/site-appearance) 
-* [스타일 북](https://learn.liferay.com/w/dxp/site-building/site-appearance/style-books/using-a-style-book-to-standardize-site-appearance) 
+* [현장 모습](https://learn.liferay.com/w/dxp/site-building/site-appearance/site-appearance)
+* [스타일 북을 사용하여 사이트 모양 표준화](https://learn.liferay.com/w/dxp/site-building/site-appearance/style-books/using-a-style-book-to-standardize-site-appearance)
 
-다음: [데이터 모델링 및 프로세스 관리](./data-modeling-and-process-management.md) .
+다음: [데이터 모델링 및 프로세스 관리](./data-modeling-and-process-management.md).

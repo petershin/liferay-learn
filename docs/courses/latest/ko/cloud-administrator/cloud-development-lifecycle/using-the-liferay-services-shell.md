@@ -31,14 +31,14 @@
 1. 기본 사용자로 MySQL 클라이언트에 로그인하려면 쉘에 `mysql` 입력하십시오.
 
     ```{note}
-    기본 데이터베이스 사용자로 로그인하면 데이터베이스에 대한 읽기 전용 액세스가 제공됩니다. 데이터를 조작해야 하는 경우 [데이터베이스 서비스 자격 증명으로](https://learn.liferay.com/w/liferay-cloud/using-the-liferay-dxp-service/using-the-mysql-client#) 로그인하세요. 읽기 및 쓰기 권한으로 로그인).
+    기본 데이터베이스 사용자로 로그인하면 데이터베이스에 대한 읽기 전용 액세스가 제공됩니다. 데이터를 조작해야 하는 경우 [MySQL 클라이언트 사용](https://learn.liferay.com/w/liferay-cloud/using-the-liferay-dxp-service/using-the-mysql-client#) 로그인하세요. 읽기 및 쓰기 권한으로 로그인).
     ```
 
 1. `표시 테이블을 입력하십시오.` 스크롤할 수 있는 모든 기존 테이블 목록을 표시합니다.
 
     ![Liferay 데이터베이스의 모든 테이블을 보려면 show tables MySQL 명령을 사용하십시오.](./using-the-liferay-services-shell/images/02.png)
 
-1. 모든 사이트에 걸쳐 [개의 어휘](https://learn.liferay.com/w/dxp/content-authoring-and-management/tags-and-categories/organizing-content-with-categories-and-tags) 목록을 보려면 다른 쿼리를 실행해 보세요.
+1. 모든 사이트에 걸쳐 [범주 및 태그로 콘텐츠 구성](https://learn.liferay.com/w/dxp/content-authoring-and-management/tags-and-categories/organizing-content-with-categories-and-tags) 목록을 보려면 다른 쿼리를 실행해 보세요.
 
     ```sql
     select vocabularyId, name, groupId from AssetVocabulary;
@@ -58,5 +58,5 @@
 
 ## 관련 개념
 
-* [쉘 액세스](https://learn.liferay.com/web/guest/w/liferay-cloud/troubleshooting/shell-access)
+* [셸 액세스](https://learn.liferay.com/web/guest/w/liferay-cloud/troubleshooting/shell-access)
 * [MySQL 클라이언트 사용](https://learn.liferay.com/web/guest/w/liferay-cloud/using-the-liferay-dxp-service/using-the-mysql-client)

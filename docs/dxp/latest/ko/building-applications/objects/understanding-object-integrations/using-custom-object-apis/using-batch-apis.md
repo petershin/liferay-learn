@@ -191,13 +191,13 @@ GET 메소드는 데모 목적으로 포함되었습니다. Liferay 인스턴스
    ./Ables_DELETE_Batch.sh {first-entry-id} {second-entry-id} {third-entry-id}
    ```
 
-1. 'Ables_GET_FromCompany'를 실행하여 항목이 삭제되었는지 확인하세요.
+1. `Ables_GET_FromCompany`를 실행하여 항목이 삭제되었는지 확인하세요.
 
    ```bash
    ./Ables_GET_FromCompany.sh
    ```
 
-   이전 단계에서 항목을 삭제했으므로 'NOT FOUND' 항목 오류가 반환됩니다.
+   이전 단계에서 항목을 삭제했으므로 `NOT FOUND` 항목 오류가 반환됩니다.
 
 ## 샘플 cURL 스크립트 검사
 

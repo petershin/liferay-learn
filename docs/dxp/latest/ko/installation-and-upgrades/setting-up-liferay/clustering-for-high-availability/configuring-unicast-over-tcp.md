@@ -70,7 +70,7 @@
         port_range="1"/>
     ```
 
-1. 클러스터 링크를 활성화하고 각 클러스터 링크 채널에 대한 TCP XML 파일을 가리키도록 각 노드의 [`portal-ext.properties` 파일](../../reference/portal-properties.md) 에서 [클러스터 링크 속성](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Cluster%20Link) 을 수정합니다.
+1. 클러스터 링크를 활성화하고 각 클러스터 링크 채널에 대한 TCP XML 파일을 가리키도록 각 노드의 [`portal-ext.properties` 파일](../../reference/portal-properties.md) 에서 [클러스터 링크 속성](https://resources.learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) 을 수정합니다.
 
     ```properties
     cluster.link.enabled=true
@@ -142,7 +142,7 @@ JGroups는 Rackspace Ping, BPing, File Ping 등을 포함하여 클러스터 구
     * `tcp-control.xml`
     * `tcp-transport.xml`
 
-1. 클러스터 링크를 활성화하고 각 클러스터 링크 채널에 대한 TCP XML 파일을 가리키도록 노드의 [`portal-ext.properties` 파일](../../reference/portal-properties.md) 에서 [클러스터 링크 속성](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Cluster%20Link) 을 수정합니다.
+1. 클러스터 링크를 활성화하고 각 클러스터 링크 채널에 대한 TCP XML 파일을 가리키도록 노드의 [`portal-ext.properties` 파일](../../reference/portal-properties.md) 에서 [클러스터 링크 속성](https://resources.learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) 을 수정합니다.
 
     ```properties
     cluster.link.enabled=true

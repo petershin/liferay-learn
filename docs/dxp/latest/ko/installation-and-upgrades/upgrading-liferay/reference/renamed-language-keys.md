@@ -4,7 +4,7 @@ Liferay DXP/Portal 7.4에서는 모듈 언어 키가 `Portal-언어-lang`이라�
 
 소스 사이트:
 
-[`liferay-[dxp|portal]/modules/apps/portal-language/portal-language-lang`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-language/portal-language-lang)
+[`liferay- [dxp|portal]/modules/apps/portal-language/portal-language-lang`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-language/portal-language-lang)
 
 Liferay의 모듈은 [`Portal-Language-Lang`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-language/portal-language-lang/src/main/resources/content) 언어 키를 사용합니다. 대부분의 키 이름은 유지되지만 많은 키가 모듈별 값을 수용하는 여러 개의 새 키로 리팩터링되었습니다.
 

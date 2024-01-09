@@ -15,7 +15,7 @@ Liferay DXP를 사용하면 대규모 디지털 경험을 개인화하고 최적
 
 ## 개인화
 
-* [개인화 경험](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience/experience-personalization)
+* [경험 개인화](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience/experience-personalization)
 
 ## A/B 테스트
 
@@ -23,6 +23,6 @@ Liferay DXP를 사용하면 대규모 디지털 경험을 개인화하고 최적
 
 ## 권장 사항
 
-* [콘텐츠 추천](https://learn.liferay.com/web/guest/w/dxp/site-building/personalizing-site-experience/experience-personalization/understanding-content-recommendations)
+* [콘텐츠 추천 이해](https://learn.liferay.com/web/guest/w/dxp/site-building/personalizing-site-experience/experience-personalization/understanding-content-recommendations)
 
 다음: [검색 및 탐색](./search-and-navigation.md).

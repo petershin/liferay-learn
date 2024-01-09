@@ -30,5 +30,5 @@ Delectable Bonsai 프로젝트가 제공되었지만 Marcus와 그의 직원에�
 
 ## 관련 개념
 
-* [설정 이메일 확인](https://learn.liferay.com/w/liferay-cloud/getting-started/initial-setup-overview#check-setup-emails)
-* [Liferay Cloud 콘솔에 액세스](https://learn.liferay.com/w/liferay-cloud/getting-started/initial-setup-overview#access-the-liferay-cloud-console)
+* [초기 설정 개요](https://learn.liferay.com/w/liferay-cloud/getting-started/initial-setup-overview#check-setup-emails)
+* [초기 설정 개요](https://learn.liferay.com/w/liferay-cloud/getting-started/initial-setup-overview#access-the-liferay-cloud-console)

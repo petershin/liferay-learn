@@ -17,15 +17,15 @@ Cloud Console을 설정하고 사용하여 LXC에 변경사항을 배포하는 �
 
 각 개발 또는 프로덕션 환경에는 다음이 모두 클라우드 네트워크에 별도의 서비스로 포함됩니다.
 
-* 귀하의 [Liferay 인스턴스](https://learn.liferay.com/w/liferay-cloud/using-the-liferay-dxp-service)
-* [Nginx 웹 서버](https://learn.liferay.com/w/liferay-cloud/platform-services/web-server-service)
-* [Elasticsearch 인스턴스](https://learn.liferay.com/w/liferay-cloud/platform-services/search-service)
-* A [MySQL 데이터베이스](https://learn.liferay.com/w/liferay-cloud/platform-services/database-service/database-service)
-* [수동 또는 자동 백업을 위한 서비스](https://learn.liferay.com/w/liferay-cloud/platform-services/backup-service/backup-service-overview)
+* 귀하의 [Liferay DXP 서비스 사용](https://learn.liferay.com/w/liferay-cloud/using-the-liferay-dxp-service)
+* [웹 서버 서비스(Nginx)](https://learn.liferay.com/w/liferay-cloud/platform-services/web-server-service)
+* [검색 서비스(Elasticsearch)](https://learn.liferay.com/w/liferay-cloud/platform-services/search-service)
+* A [데이터베이스 서비스(MySQL)](https://learn.liferay.com/w/liferay-cloud/platform-services/database-service/database-service)
+* [백업 서비스 개요](https://learn.liferay.com/w/liferay-cloud/platform-services/backup-service/backup-service-overview)
 
 ![각 환경에는 이러한 서비스가 별도의 클라우드 네트워크에서 관리됩니다.](./cloud-configuration/images/01.png)
 
-또한 다른 환경을 위해 생성하거나 배포한 모든 빌드를 제어하는 별도의 `인프라` 환경에 [CI 서비스](https://learn.liferay.com/w/liferay-cloud/platform-services/continuous-integration) 이 있습니다.
+또한 다른 환경을 위해 생성하거나 배포한 모든 빌드를 제어하는 별도의 `인프라` 환경에 [지속적인 통합](https://learn.liferay.com/w/liferay-cloud/platform-services/continuous-integration) 이 있습니다.
 
 LXC-SM 프로젝트에 대한 귀하의 책임에 대한 자세한 내용은 [여기](https://help.liferay.com/hc/ko/articles/360059798531-DXP-Cloud-Shared-Activities) 참조하세요.
 

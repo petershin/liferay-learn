@@ -3,7 +3,7 @@
 {bdg-secondary}`liferay DXP 7.4 U84+/GA84+`
 
 ```{important}
-주문 분할은 현재 릴리스 기능 플래그 뒤에 있습니다. 자세한 내용은 [릴리스 기능 플래그](https://learn.liferay.com/web/guest/w/dxp/system-administration/configuring-liferay/feature-flags#release-feature-flags) 을 읽어보세요.
+주문 분할은 현재 릴리스 기능 플래그 뒤에 있습니다. 자세한 내용은 [베타 기능 및 기능 플래그](https://learn.liferay.com/web/guest/w/dxp/system-administration/configuring-liferay/feature-flags#release-feature-flags) 을 읽어보세요.
 ```
 
 주문에 여러 제품 라인이 있거나 여러 공급자가 처리하는 제품이 있는 경우도 있습니다. 이러한 경우 주문을 독립적으로 처리된 하위 주문으로 분할할 수 있습니다.
@@ -114,4 +114,4 @@
 
 ## 관련 주제
 
-* [공급업체](../suppliers.md) 
+* [공급업체](../suppliers.md)

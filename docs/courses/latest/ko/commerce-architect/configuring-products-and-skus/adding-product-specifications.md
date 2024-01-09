@@ -89,4 +89,4 @@ Clarity의 카테고리 관리자인 Damian Dunne으로 로그인하세요. Dami
 
 ## 관련 주제
 
-* [사양](https://learn.liferay.com/web/guest/w/commerce/product-management/creating-and-managing-products/products/specifications) 
+* [명세서](https://learn.liferay.com/web/guest/w/commerce/product-management/creating-and-managing-products/products/specifications)

@@ -1,6 +1,6 @@
 # LDAP에 연결 중
 
-시스템 수준이나 인스턴스 수준에서 LDAP 서버를 구성할 수 있습니다. LXC-SM을 사용하거나 자체 호스팅하는 경우 [구성 범위](https://learn.liferay.com/w/dxp/system-administration/configuring-liferay/understanding-configuration-scope) 를 기반으로 선택할 수 있습니다. 귀하의 필요에 따라. 시스템 범위에서 구성할 때 각 인스턴스 ID를 지정해야 합니다. LXC를 사용하는 경우 인스턴스 범위에서 LDAP를 구성해야 합니다. [LDAP 디렉터리에 연결](https://learn.liferay.com/w/dxp/users-and-permissions/connecting-to-a-user-directory/connecting-to-an-ldap-directory) 을 참조하세요.
+시스템 수준이나 인스턴스 수준에서 LDAP 서버를 구성할 수 있습니다. LXC-SM을 사용하거나 자체 호스팅하는 경우 [구성 범위 이해](https://learn.liferay.com/w/dxp/system-administration/configuring-liferay/understanding-configuration-scope) 를 기반으로 선택할 수 있습니다. 귀하의 필요에 따라. 시스템 범위에서 구성할 때 각 인스턴스 ID를 지정해야 합니다. LXC를 사용하는 경우 인스턴스 범위에서 LDAP를 구성해야 합니다. [LDAP 디렉토리에 연결](https://learn.liferay.com/w/dxp/users-and-permissions/connecting-to-a-user-directory/connecting-to-an-ldap-directory) 을 참조하세요.
 
 Clarity Vision Solutions는 방금 인수한 회사에서 사용자 데이터를 가져와야 합니다.
 
@@ -97,4 +97,4 @@ Clarity Vision Solutions의 Liferay 인스턴스는 이제 Fabulous Frames의 LD
 
 ## 관련 개념
 
-- [LDAP 디렉터리에 연결](https://learn.liferay.com/w/dxp/users-and-permissions/connecting-to-a-user-directory/connecting-to-an-ldap-directory)
+- [LDAP 디렉토리에 연결](https://learn.liferay.com/w/dxp/users-and-permissions/connecting-to-a-user-directory/connecting-to-an-ldap-directory)

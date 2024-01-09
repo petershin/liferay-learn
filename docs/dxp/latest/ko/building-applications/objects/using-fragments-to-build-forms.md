@@ -86,10 +86,10 @@ Liferay에는 콘텐츠 페이지에 개체 양식을 작성하기 위한 양식
 
 ## 관련 주제
 
-[양식 구성요소](../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/default-fragments-reference.md#form-components) 
+[양식 구성요소](../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/default-fragments-reference.md#form-components)
 
-[조각 구성](../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments.md) 
+[조각 구성](../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments.md)
 
-[양식 조각 옵션](../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/general-settings-reference.md#form-fragment-options) 
+[양식 조각 옵션](../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/general-settings-reference.md#form-fragment-options)
 
-[양식 조각 만들기](../../site-building/developer-guide/developing-page-fragments/creating-form-fragments.md) 
+[양식 조각 만들기](../../site-building/developer-guide/developing-page-fragments/creating-form-fragments.md)

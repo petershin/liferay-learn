@@ -78,7 +78,7 @@ module.framework.web.generator.generated.wabs.store=true
 module.framework.web.generator.generated.wabs.store.dir=${module.framework.base.dir}/wabs
 ```
 
-이러한 속성은 생성된 WAB를 설치의 `osgi/wabs/` 폴더에 저장하도록 WAB 생성기에 지시합니다. 생성된 WAB는 위의 예제 WAB 구조와 동일한 구조를 갖습니다. [모듈 프레임워크 웹 애플리케이션 번들](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Module%20Framework%20Web%20Application%20Bundles) 속성 섹션에서 자세한 내용을 설명합니다.
+이러한 속성은 생성된 WAB를 설치의 `osgi/wabs/` 폴더에 저장하도록 WAB 생성기에 지시합니다. 생성된 WAB는 위의 예제 WAB 구조와 동일한 구조를 갖습니다. [모듈 프레임워크 웹 애플리케이션 번들](https://resources.learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) 속성 섹션에서 자세한 내용을 설명합니다.
 
 엄청난! WAR 플러그인을 WAB로 배포할 수 있으며 WAB 사본을 저장하여 검사하는 방법을 알고 있습니다!
 

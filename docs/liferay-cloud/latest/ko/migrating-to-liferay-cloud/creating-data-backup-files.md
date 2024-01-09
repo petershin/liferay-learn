@@ -63,7 +63,7 @@ mysqldump -u##### -p##### --databases --add-drop-database lportal > database.sql
 문서 라이브러리가 파일 시스템 저장소가 아닌 파일 스토리지 방법(예: Amazon S3Store 또는 DBStore)을 사용하는 경우 계속하기 전에 파일 시스템 저장소로 마이그레이션해야 합니다. 단순 파일 시스템 저장소 또는 고급 파일 시스템 저장소를 사용할 수 있습니다.
 
 ```{important}
-[Advanced File System Store](https://learn.liferay.com/dxp/latest/en/system-administration/file-storage/configuring-file-storage.html) 는 더 쉽게 대규모로 확장되는 폴더 구조를 사용합니다. 데이터 세트. 장기적으로 문서 라이브러리에 더 많은 파일을 수용하려면 고급 파일 시스템 저장소로 마이그레이션하는 것이 좋으며 모든 프로덕션 환경에서 **필수**입니다.
+[파일 스토리지](https://learn.liferay.com/ko/w/dxp/system-administration/file-storage) 는 더 쉽게 대규모로 확장되는 폴더 구조를 사용합니다. 데이터 세트. 장기적으로 문서 라이브러리에 더 많은 파일을 수용하려면 고급 파일 시스템 저장소로 마이그레이션하는 것이 좋으며 모든 프로덕션 환경에서 **필수**입니다.
 ```
 
 문서 라이브러리를 마이그레이션하는 방법에 대한 단계는 [파일 저장소 마이그레이션](https://learn.liferay.com/dxp/latest/ko/system-administration/file-storage/file-store-migration.html) 참조하십시오.

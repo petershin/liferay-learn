@@ -51,6 +51,6 @@ You can use the batch client extension to help migrate object definitions betwee
 
 ## 관련 주제
 
-* [객체 생성](./creating-objects.md) 
-* [개체 활성화 및 비활성화](./activating-and-deactivating-objects.md) 
-* [데이터 마이그레이션 센터](../../../headless-delivery/consuming-apis/data-migration-center.md) 
+* [객체 생성](./creating-objects.md)
+* [개체 활성화 및 비활성화](./activating-and-deactivating-objects.md)
+* [데이터 마이그레이션 센터](../../../headless-delivery/consuming-apis/data-migration-center.md)

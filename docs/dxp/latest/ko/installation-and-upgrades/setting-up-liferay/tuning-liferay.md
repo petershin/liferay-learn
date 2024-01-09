@@ -101,7 +101,7 @@ CPU 기반 로드를 테스트하거나 CPU 용량이 우려되는 경우 사용
 
 연결 수가 데이터베이스 연결 제한을 초과하는 경우 카운터 데이터 소스의 풀 크기를 줄이십시오. 카운터 데이터베이스 트랜잭션은 작고 빠르며 중첩되지 않으므로 카운터 연결 풀은 줄이기에 좋은 후보입니다. 카운터 데이터 소스에 대한 자세한 내용은 [클러스터 노드용 데이터베이스 구성](./clustering-for-high-availability/database-configuration-for-cluster-nodes.md)을 참조하십시오.
 
-Liferay는 연결 풀링에 HikariCP를 사용합니다. 데이터베이스 연결은 [JDBC 섹션](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#JDBC) 아래의 [문맥 재산](../reference/portal-properties.md) 로 구성됩니다.
+Liferay는 연결 풀링에 HikariCP를 사용합니다. 데이터베이스 연결은 [JDBC 섹션](https://resources.learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) 아래의 [문맥 재산](../reference/portal-properties.md) 로 구성됩니다.
 
 ```properties
 jdbc.default.connectionTimeout=30000

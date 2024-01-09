@@ -104,7 +104,7 @@ Clarity는 B2C 고객에게 PayPal로 결제할 수 있는 옵션을 제공합�
 
 B2B 채널의 경우 결제 방법, 배송 방법을 구성하고 사이트 유형이 B2B로 설정되어 있는지 확인합니다.
 
-1. 세부 정보 섹션에서 상거래 사이트 유형을 **B2B** 로 설정합니다. [사이트 유형](https://learn.liferay.com/web/guest/w/commerce/starting-a-store/sites-and-site-types#site-types) 이 B2B인 경우, 사이트는 비즈니스 계정이어야 합니다.
+1. 세부 정보 섹션에서 상거래 사이트 유형을 **B2B** 로 설정합니다. [사이트 및 사이트 유형](https://learn.liferay.com/web/guest/w/commerce/starting-a-store/sites-and-site-types#site-types) 이 B2B인 경우, 사이트는 비즈니스 계정이어야 합니다.
 
 1. **유형** 탭을 선택하고 **사이트 선택** 을 클릭하세요.
 
@@ -167,5 +167,5 @@ Clarity는 B2B 고객에게 우편환으로 결제할 수 있는 옵션을 제�
 
 ## 관련 주제
 
-* [사이트 유형](https://learn.liferay.com/web/guest/w/commerce/starting-a-store/sites-and-site-types#site-types)
-* [Accelerators](https://learn.liferay.com/web/guest/w/commerce/starting-a-store/accelerators)
+* [사이트 및 사이트 유형](https://learn.liferay.com/web/guest/w/commerce/starting-a-store/sites-and-site-types#site-types)
+* [가속기](https://learn.liferay.com/web/guest/w/commerce/starting-a-store/accelerators)

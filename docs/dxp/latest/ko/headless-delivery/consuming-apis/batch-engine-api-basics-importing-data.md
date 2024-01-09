@@ -29,7 +29,7 @@ Liferay의 헤드리스 배치 엔진은 데이터 가져오기 및 내보내기
    ./ImportTask_POST_ToInstance.sh com.liferay.headless.admin.user.dto.v1_0.Account
    ```
 
-   JSON 응답은 새로운 가져오기 작업 생성을 보여줍니다. 작업의 'id'를 참고하세요.
+   JSON 응답은 새로운 가져오기 작업 생성을 보여줍니다. 작업의 `id`를 참고하세요.
 
    ```json
    {
@@ -48,7 +48,7 @@ Liferay의 헤드리스 배치 엔진은 데이터 가져오기 및 내보내기
    }
    ```
 
-1. 현재 'executeStatus'는 'INITIAL'입니다. 배치 엔진에 작업이 제출되었음을 나타냅니다. 데이터를 확인하려면 'COMPLETED'가 될 때까지 기다려야 합니다. 명령줄에서 `ImportTask_GET_ById.sh` 스크립트를 실행하고 `1234`를 가져오기 작업의 ID로 바꿉니다.
+1. 현재 `executeStatus`는 `INITIAL`입니다. 배치 엔진에 작업이 제출되었음을 나타냅니다. 데이터를 확인하려면 `COMPLETED`가 될 때까지 기다려야 합니다. 명령줄에서 `ImportTask_GET_ById.sh` 스크립트를 실행하고 `1234`를 가져오기 작업의 ID로 바꿉니다.
 
    ```bash
    ./ImportTask_GET_ById.sh 1234
@@ -84,7 +84,7 @@ Liferay의 헤드리스 배치 엔진은 데이터 가져오기 및 내보내기
    javac -classpath .:* *.java
    ```
 
-1. `ImportTask_POST_ToInstance` 클래스를 실행합니다. 'able'을 클래스의 정규화된 이름으로 바꾸고, 'baker'를 가져오려는 JSON 데이터로 바꾸세요.
+1. `ImportTask_POST_ToInstance` 클래스를 실행합니다. `able`을 클래스의 정규화된 이름으로 바꾸고, `baker`를 가져오려는 JSON 데이터로 바꾸세요.
 
    ```bash
    java -classpath .:* -DclassName=able -Ddata=baker ImportTask_POST_ToInstance
@@ -96,9 +96,9 @@ Liferay의 헤드리스 배치 엔진은 데이터 가져오기 및 내보내기
    java -classpath .:* -DclassName=com.liferay.headless.admin.user.dto.v1_0.Account -Ddata="[{\"name\": \"Able\", \"type\": \"business\"}, {\"name\": \"Baker\", \"type\": \"guest\"}]" ImportTask_POST_ToInstance
    ```
 
-   JSON 응답에서 가져오기 작업의 'id'를 확인하세요.
+   JSON 응답에서 가져오기 작업의 `id`를 확인하세요.
 
-1. `ImportTask_GET_ById` 클래스를 실행합니다. '1234'를 가져오기 작업의 ID로 바꿉니다. `executeStatus`에 `COMPLETED`가 표시되면 위 단계에 표시된 대로 데이터를 확인할 수 있습니다.
+1. `ImportTask_GET_ById` 클래스를 실행합니다. `1234`를 가져오기 작업의 ID로 바꿉니다. `executeStatus`에 `COMPLETED`가 표시되면 위 단계에 표시된 대로 데이터를 확인할 수 있습니다.
 
    ```bash
    java -cp .:* -DimportTaskId=1234 ImportTask_GET_ById
@@ -143,7 +143,7 @@ Liferay의 헤드리스 배치 엔진은 데이터 가져오기 및 내보내기
 | 라인(약어)                                                      | 묘사                                                            |
 | :----------------------------------------------------------------------------- | :------------------------------------------------------------ |
 | `ImportTaskResource.Builder builder = ...`                                     | `ImportTaskResource` 서비스 인스턴스를 생성하기 위한 `Builder`를 가져옵니다.      |
-| `ImportTaskResource importTaskResource = builder.authentication(...).build();` | 기본 인증을 지정하고 'ImportTaskResource' 서비스 인스턴스를 생성합니다.             |
+| `ImportTaskResource importTaskResource = builder.authentication(...).build();` | 기본 인증을 지정하고 `ImportTaskResource` 서비스 인스턴스를 생성합니다.             |
 | `importTaskResource.postImportTask(...);`                                      | `importTaskResource.postImportTask` 메소드를 호출하고 게시할 데이터를 전달합니다. |
 
 프로젝트에는 `com.liferay.headless.batch.engine.client.jar` 파일이 종속성으로 포함되어 있습니다. 설치된 API 탐색기의 `/o/api`에서 모든 REST 애플리케이션에 대한 클라이언트 JAR 종속성 정보를 찾을 수 있습니다.
@@ -162,7 +162,7 @@ Liferay의 헤드리스 배치 엔진은 데이터 가져오기 및 내보내기
 
 ## ImportTask 상태 가져오기
 
-다음 cURL 또는 Java 명령을 실행하여 가져오기 작업의 상태를 가져올 수 있습니다. '1234'를 가져오기 작업의 ID로 바꿉니다.
+다음 cURL 또는 Java 명령을 실행하여 가져오기 작업의 상태를 가져올 수 있습니다. `1234`를 가져오기 작업의 ID로 바꿉니다.
 
 ### ImportTask_GET_ById.sh
 
@@ -180,7 +180,7 @@ Liferay의 헤드리스 배치 엔진은 데이터 가져오기 및 내보내기
 
 ### ImportTask_GET_ById.java
 
-`ImportTask_GET_ById` 클래스를 실행합니다. '1234'를 가져오기 작업의 ID로 바꿉니다.
+`ImportTask_GET_ById` 클래스를 실행합니다. `1234`를 가져오기 작업의 ID로 바꿉니다.
 
 명령:
 
@@ -198,7 +198,7 @@ java -classpath .:* -DimportTaskId=1234 ImportTask_GET_ById
 
 ## 사이트로 데이터 가져오기
 
-다음 cURL 또는 Java 명령을 실행하여 사이트로 데이터를 가져올 수 있습니다. 이 예에서는 블로그 게시물을 사이트로 가져옵니다. [REST 서비스 사용](https://learn.liferay.com/dxp/latest/ko/headless-delivery/consuming-apis/consuming-rest-services.html#identify-the-site-containing-the-data) 찾아 '1234'를 바꾸세요. 다른 엔터티를 사용하는 경우 cURL 스크립트에서 가져올 데이터와 정규화된 클래스 이름 매개변수도 업데이트해야 합니다.
+다음 cURL 또는 Java 명령을 실행하여 사이트로 데이터를 가져올 수 있습니다. 이 예에서는 블로그 게시물을 사이트로 가져옵니다. [REST 서비스 사용](https://learn.liferay.com/dxp/latest/ko/headless-delivery/consuming-apis/consuming-rest-services.html#identify-the-site-containing-the-data) 찾아 `1234`를 바꾸세요. 다른 엔터티를 사용하는 경우 cURL 스크립트에서 가져올 데이터와 정규화된 클래스 이름 매개변수도 업데이트해야 합니다.
 
 ### ImportTask_POST_ToSite.sh
 
@@ -216,7 +216,7 @@ java -classpath .:* -DimportTaskId=1234 ImportTask_GET_ById
 
 ### ImportTask_POST_ToSite.java
 
-`ImportTask_POST_ToSite` 클래스를 실행합니다. '1234'를 사이트 ID로 바꾸고, 'able'을 클래스의 정규화된 이름으로, 'baker'를 가져오려는 JSON 데이터로 바꾸세요.
+`ImportTask_POST_ToSite` 클래스를 실행합니다. `1234`를 사이트 ID로 바꾸고, `able`을 클래스의 정규화된 이름으로, `baker`를 가져오려는 JSON 데이터로 바꾸세요.
 
 명령:
 
@@ -260,7 +260,7 @@ JSON 응답은 새로 생성된 가져오기 작업의 정보를 표시합니다
 
 ### ImportTask_PUT_ById.java
 
-`ImportTask_PUT_ById` 클래스를 실행합니다. 'able'을 클래스의 정규화된 이름으로 바꾸고, 'baker'를 JSON 데이터로 바꿔서 거기에 있는 내용을 덮어씁니다. 데이터에는 덮어쓰려는 엔터티의 ID가 포함되어 있어야 합니다.
+`ImportTask_PUT_ById` 클래스를 실행합니다. `able`을 클래스의 정규화된 이름으로 바꾸고, `baker`를 JSON 데이터로 바꿔서 거기에 있는 내용을 덮어씁니다. 데이터에는 덮어쓰려는 엔터티의 ID가 포함되어 있어야 합니다.
 
 명령:
 
@@ -268,7 +268,7 @@ JSON 응답은 새로 생성된 가져오기 작업의 정보를 표시합니다
 java -classpath .:* -DclassName=able -Ddata=baker ImportTask_PUT_ById
 ```
 
-예를 들어 기존 '계정' 데이터를 덮어쓰려면 '1234' 및 '5678'을 기존 계정의 ID로 바꾸세요.
+예를 들어 기존 `계정` 데이터를 덮어쓰려면 `1234` 및 `5678`을 기존 계정의 ID로 바꾸세요.
 
 ```bash
 java -classpath .:* -DclassName=com.liferay.headless.admin.user.dto.v1_0.Account -Ddata="[{\"id\" :1234, \"name\": \"Bar\", \"type\": \"business\"}, {\"id\": 5678, \"name\": \"Goo\", \"type\": \"guest\"}]" ImportTask_PUT_ById
@@ -302,7 +302,7 @@ java -classpath .:* -DclassName=com.liferay.headless.admin.user.dto.v1_0.Account
 
 ### ImportTask_DELETE_ById.java
 
-`ImportTask_DELETE_ById` 클래스를 실행합니다. 'able'을 클래스의 정규화된 이름으로 바꾸고, 'baker'를 JSON 데이터로 바꿔서 거기에 있는 내용을 덮어씁니다. 데이터에는 삭제하려는 엔터티의 ID가 포함되어 있어야 합니다.
+`ImportTask_DELETE_ById` 클래스를 실행합니다. `able`을 클래스의 정규화된 이름으로 바꾸고, `baker`를 JSON 데이터로 바꿔서 거기에 있는 내용을 덮어씁니다. 데이터에는 삭제하려는 엔터티의 ID가 포함되어 있어야 합니다.
 
 명령:
 
@@ -310,7 +310,7 @@ java -classpath .:* -DclassName=com.liferay.headless.admin.user.dto.v1_0.Account
 java -classpath .:* -DclassName=able -Ddata=baker ImportTask_DELETE_ById
 ```
 
-예를 들어 '계정' 데이터를 삭제하려면 '1234' 및 '5678'을 기존 계정의 ID로 바꾸세요.
+예를 들어 `계정` 데이터를 삭제하려면 `1234` 및 `5678`을 기존 계정의 ID로 바꾸세요.
 
 ```bash
 java -classpath .:* -DclassName=com.liferay.headless.admin.user.dto.v1_0.Account -Ddata="[{\"id\": 1234}, {\"id\": 5678}]" ImportTask_DELETE_ById
@@ -326,7 +326,7 @@ java -classpath .:* -DclassName=com.liferay.headless.admin.user.dto.v1_0.Account
 
 ## 가져온 데이터의 콘텐츠 가져오기
 
-다음 cURL 및 Java 명령을 사용하여 가져온 데이터를 검색할 수 있습니다. '1234'를 가져오기 작업의 ID로 바꿉니다. 그런 다음 현재 디렉터리에 '.zip' 파일로 다운로드됩니다.
+다음 cURL 및 Java 명령을 사용하여 가져온 데이터를 검색할 수 있습니다. `1234`를 가져오기 작업의 ID로 바꿉니다. 그런 다음 현재 디렉터리에 `.zip` 파일로 다운로드됩니다.
 
 ### ImportTaskContent_GET_ById.sh
 

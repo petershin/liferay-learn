@@ -12,8 +12,8 @@ DXP를 시작하기 전에 기본 가상 인스턴스의 지역화를 구성하�
 
 | **포털 속성** | **묘사** |
 |:--------------------------- |:-------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `company.default.locale`    | [`locales`](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Languages%20and%20Time%20Zones) 포털 속성에 정의된 사용 가능한 로캘로 설정합니다.      |
-| `company.default.time.zone` | [`time.zones`](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Languages%20and%20Time%20Zones) 포털 속성에 정의된 표준 시간대 중 하나로 설정합니다. |
+| `company.default.locale`    | [`locales`](https://resources.learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) 포털 속성에 정의된 사용 가능한 로캘로 설정합니다.      |
+| `company.default.time.zone` | [`time.zones`](https://resources.learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) 포털 속성에 정의된 표준 시간대 중 하나로 설정합니다. |
 
 예를 들어
 

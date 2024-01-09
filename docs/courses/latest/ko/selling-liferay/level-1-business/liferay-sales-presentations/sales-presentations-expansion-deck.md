@@ -12,8 +12,8 @@ visibility:
 * 추가 산업 및 수평적 솔루션 데크가 곧 출시될 예정입니다.
 
 ```{note}
-* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/web/guest/d/sa1-4-liferay-sales-presentations-and-how-to-master-them) 을 확인하세요.
-* 라이브에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/documents/d/guest/sa1-4-liferay-sales-presentations-and-how-to-master-them-pdf) 을 다운로드하세요. 작업장.
+* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/c/portal/login?p_l_id=3026&redirect=%2Fweb%2Fguest%2Fd%2Fsa1-4-liferay-sales-presentations-and-how-to-master-them) 을 확인하세요.
+* 라이브에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/c/portal/login?redirect=%2Fdocuments%2Fd%2Fguest%2Fsa1-4-liferay-sales-presentations-and-how-to-master-them-pdf) 을 다운로드하세요. 작업장.
 ```
 
 ## 시나리오 2: 위젯 제조업체

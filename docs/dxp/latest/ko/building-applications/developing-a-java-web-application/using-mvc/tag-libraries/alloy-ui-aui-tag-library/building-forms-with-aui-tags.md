@@ -1,6 +1,6 @@
 # AUI 태그로 양식 작성
 
-[AUI 태그 라이브러리](https://learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/aui/tld-frame.html) 은 애플리케이션용 양식을 작성하는 데 필요한 모든 구성 요소를 제공합니다. AUI 태그는 사용자 지정 네임스페이스, 현지화 및 유효성 검사와 같은 표준 양식 요소에 많은 이점을 제공합니다. 사용자에게 원하는 경험을 만들 수 있는 여러 특성을 제공합니다.
+[AUI 태그 라이브러리](https://resources.learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/aui/tld-frame.html) 은 애플리케이션용 양식을 작성하는 데 필요한 모든 구성 요소를 제공합니다. AUI 태그는 사용자 지정 네임스페이스, 현지화 및 유효성 검사와 같은 표준 양식 요소에 많은 이점을 제공합니다. 사용자에게 원하는 경험을 만들 수 있는 여러 특성을 제공합니다.
 
 AUI 태그를 사용하여 양식을 작성하려면 다음 단계를 따르십시오.
 
@@ -11,18 +11,18 @@ AUI 태그를 사용하여 양식을 작성하려면 다음 단계를 따르십�
     ```
 
 1. 아래 표시된 태그를 사용하여 양식을 작성하십시오. 각 태그는 사용 가능한 속성을 나열하는 해당 taglibdoc에 연결됩니다.
-    * [`<aui:input>`](https://learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/aui/input.html)
-    * [`<aui:button>`](https://learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/aui/button.html)
-    * [`<aui:button-row>`](https://learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/aui/button-row.html)
-    * [`<aui:container>`](https://learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/aui/container.html)
-    * [`<aui:col>`](https://learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/aui/col.html)
-    * [`<aui:row>`](https://learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/aui/row.html)
-    * [`<aui:field-wrapper>`](https://learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/aui/field-wrapper.html)
-    * [`<aui:fieldset>`](https://learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/aui/fieldset.html)
-    * [`<aui:fieldset-group>`](https://learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/aui/fieldset-group.html)
-    * [`<aui:form>`](https://learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/aui/form.html)
-    * [`<aui:select>`](https://learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/aui/select.html)
-    * [`<aui:option>`](https://learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/aui/option.html)
+    * [`<aui:input>`](https://resources.learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/aui/input.html)
+    * [`<aui:button>`](https://resources.learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/aui/button.html)
+    * [`<aui:button-row>`](https://resources.learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/aui/button-row.html)
+    * [`<aui:container>`](https://resources.learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/aui/container.html)
+    * [`<aui:col>`](https://resources.learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/aui/col.html)
+    * [`<aui:row>`](https://resources.learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/aui/row.html)
+    * [`<aui:field-wrapper>`](https://resources.learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/aui/field-wrapper.html)
+    * [`<aui:fieldset>`](https://resources.learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/aui/fieldset.html)
+    * [`<aui:fieldset-group>`](https://resources.learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/aui/fieldset-group.html)
+    * [`<aui:form>`](https://resources.learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/aui/form.html)
+    * [`<aui:select>`](https://resources.learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/aui/select.html)
+    * [`<aui:option>`](https://resources.learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/aui/option.html)
 
     예제 양식은 다음과 같습니다.
 

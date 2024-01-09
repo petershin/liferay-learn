@@ -2,7 +2,7 @@
 
 콘텐츠 페이지에서 A/B 테스트를 실행하기 전에 다음 요구 사항이 충족되는지 확인해야 합니다.
 
-- Liferay DXP는 Analytics Cloud에 연결됩니다. 이 연결을 설정하는 방법에 대한 자세한 내용은 [Liferay DXP 사이트를 Analytics Cloud](https://learn.liferay.com/analytics-cloud/latest/en/connecting-data-sources/connecting-liferay-dxp-to-analytics-cloud.html) 에 연결을 참조하십시오.
+- Liferay DXP는 Analytics Cloud에 연결됩니다. 이 연결을 설정하는 방법에 대한 자세한 내용은 [Liferay DXP를 Analytics Cloud에 연결](https://learn.liferay.com/ko/w/analytics-cloud/getting-started/connecting-liferay-dxp-to-analytics-cloud) 에 연결을 참조하십시오.
 
 - 귀하의 페이지는 [Content Page](../../creating-pages/understanding-pages/understanding-pages.md)입니다. 위젯 페이지는 다른 세그먼트에 대한 경험을 지원하지 않습니다.
 - 테스트하려는 콘텐츠 페이지가 게시됩니다.

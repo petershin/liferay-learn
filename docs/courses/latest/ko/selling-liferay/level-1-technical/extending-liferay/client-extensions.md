@@ -13,8 +13,8 @@ visibility:
 * Liferay의 코어에서 사용자 정의 코드를 분리하면 더 빠르고 쉬운 업그레이드가 보장되고 개발자가 익숙한 언어와 프레임워크를 사용할 수 있습니다.
 
 ```{note}
-* 이 모듈의 라이브 워크숍에서 [녹화](https://learn.liferay.com/web/guest/d/se1-7-extending-liferay) 를 시청하세요.
-* 라이브 워크숍에 사용된 프레젠테이션의 [PDF](https://learn.liferay.com/documents/d/guest/se1-7-extending-liferay-pdf) 를 다운로드하세요.
+* 이 모듈의 라이브 워크숍에서 [녹화](https://learn.liferay.com/c/portal/login?p_l_id=3026&redirect=%2Fweb%2Fguest%2Fd%2Fse1-7-extending-liferay) 를 시청하세요.
+* 라이브 워크숍에 사용된 프레젠테이션의 [PDF](https://learn.liferay.com/c/portal/login?redirect=%2Fdocuments%2Fd%2Fguest%2Fse1-7-extending-liferay-pdf) 를 다운로드하세요.
 ```
 
 ## Liferay 확장 - 클라이언트 확장(코드)
@@ -71,9 +71,9 @@ Liferay의 유연한 특성으로 인해 고객을 위해 구축된 애플리케
 
 ## 추가 정보
 
-* [Fragments](https://learn.liferay.com/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments) , [Publication](https://learn.liferay.com/w/dxp/site-building/publishing-tools/publications) , [Themes](https://learn.liferay.com/w/dxp/site-building/site-appearance/themes) 및 [StyleBooks](https://learn.liferay.com/web/guest/w/dxp/site-building/site-appearance/style-books)
-* [Forms](https://learn.liferay.com/w/analytics-cloud/touchpoints/assets/forms) , [Workflow](https://learn.liferay.com/w/dxp/process-automation/workflow) , [Collections](https://learn.liferay.com/w/dxp/content-authoring-and-management/collections-and-collection-pages) , [Objects](https://learn.liferay.com/w/dxp/building-applications/objects)
-* [오픈 오피스](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/devops/enabling-openoffice-libreoffice-integration) , [O365](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/devops/enabling-document-creation-and-editing-with-microsoft-office-365) , [Google 드라이브](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/devops/google-drive-integration) , [실시간 채팅](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience/enabling-automated-live-chat-systems/getting-a-chat-provider-account-id/livechat) , [DocuSign](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/uploading-and-managing/enabling-docusign-digital-signatures) , [Talend](https://learn.liferay.com/w/dxp/system-administration/data-integration/liferay-talend-components-overview) , [Mulesoft](https://learn.liferay.com/web/guest/w/commerce/add-ons-and-connectors/mulesoft) , [SAP 커넥터](https://marketplace.liferay.com/p/sap-business-objects-connector) , [Headless](https://learn.liferay.com/w/dxp/headless-delivery)
-* [클라이언트 확장](https://learn.liferay.com/w/dxp/building-applications/client-extensions)
+* [조각 사용](https://learn.liferay.com/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments) , [퍼블리싱](https://learn.liferay.com/w/dxp/site-building/publishing-tools/publications) , [주제](https://learn.liferay.com/w/dxp/site-building/site-appearance/themes) 및 [스타일 북](https://learn.liferay.com/web/guest/w/dxp/site-building/site-appearance/style-books)
+* [양식](https://learn.liferay.com/w/analytics-cloud/touchpoints/assets/forms) , [워크플로우](https://learn.liferay.com/w/dxp/process-automation/workflow) , [컬렉션 및 컬렉션 페이지](https://learn.liferay.com/w/dxp/content-authoring-and-management/collections-and-collection-pages) , [개체](https://learn.liferay.com/w/dxp/building-applications/objects)
+* [OpenOffice / LibreOffice 통합 활성화](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/devops/enabling-openoffice-libreoffice-integration) , [Microsoft Office 365로 문서 생성 및 편집 활성화](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/devops/enabling-document-creation-and-editing-with-microsoft-office-365) , [Google 드라이브 통합](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/devops/google-drive-integration) , [LiveChat](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience/enabling-automated-live-chat-systems/getting-a-chat-provider-account-id/livechat) , [DocuSign 디지털 서명 활성화](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/uploading-and-managing/enabling-docusign-digital-signatures) , [Liferay Talend 구성 요소 개요](https://learn.liferay.com/w/dxp/system-administration/data-integration/liferay-talend-components-overview) , [뮬소프트](https://learn.liferay.com/web/guest/w/commerce/add-ons-and-connectors/mulesoft) , [SAP 커넥터](https://marketplace.liferay.com/p/sap-business-objects-connector) , [헤드리스 배송](https://learn.liferay.com/w/dxp/headless-delivery)
+* [원격 앱](https://learn.liferay.com/w/dxp/building-applications/client-extensions)
 
 축하합니다. 이 모듈이 끝났습니다. 다음으로 Liferay의 [배포 전략](../deployment-strategies.md)에 대해 알아보세요.

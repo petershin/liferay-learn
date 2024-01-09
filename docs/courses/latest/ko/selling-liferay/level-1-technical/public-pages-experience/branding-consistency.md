@@ -12,8 +12,8 @@ visibility:
 * 사용 용이성, 개발자 의존성 지원 부족으로 출시 시간 단축 및 확장성
 
 ```{note}
-* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/web/guest/d/se1-2-public-pages-experience) 을 확인하세요.
-* 라이브 워크숍에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/documents/d/guest/se1-2-public-pages-experience-pdf) 을 다운로드하세요.
+* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/c/portal/login?p_l_id=3026&redirect=%2Fweb%2Fguest%2Fd%2Fse1-2-public-pages-experience) 을 확인하세요.
+* 라이브 워크숍에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/c/portal/login?redirect=%2Fdocuments%2Fd%2Fguest%2Fse1-2-public-pages-experience-pdf) 을 다운로드하세요.
 ```
 
 ## 스타일 및 테마 - 브랜딩 및 일관성

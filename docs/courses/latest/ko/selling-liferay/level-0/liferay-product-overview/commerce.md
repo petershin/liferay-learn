@@ -11,32 +11,32 @@ visibility:
 
 ## 제품 카탈로그
 
-* [제품사양](https://learn.liferay.com/w/commerce/product-management/creating-and-managing-products/products/specifications) 
-* [쇼핑별 다이어그램](https://learn.liferay.com/w/commerce/product-management/creating-and-managing-products/product-types/shop-by-diagram) 
-* [제품 이미지](https://learn.liferay.com/w/commerce/product-management/creating-and-managing-products/products/product-images) 
-* [프로모션](https://learn.liferay.com/w/commerce/pricing/promoting-products/introduction-to-promotions) 및 [할인](https://learn.liferay.com/w/commerce/pricing/promoting-products/introduction-to-discounts) 
-* [구독](https://learn.liferay.com/w/commerce/order-management/subscriptions) 
-* [ERP/PIM 통합](https://learn.liferay.com/w/commerce/add-ons-and-connectors) 
+* [명세서](https://learn.liferay.com/w/commerce/product-management/creating-and-managing-products/products/specifications)
+* [다이어그램으로 쇼핑하기](https://learn.liferay.com/w/commerce/product-management/creating-and-managing-products/product-types/shop-by-diagram)
+* [제품 이미지](https://learn.liferay.com/w/commerce/product-management/creating-and-managing-products/products/product-images)
+* [프로모션 소개](https://learn.liferay.com/w/commerce/pricing/promoting-products/introduction-to-promotions) 및 [할인 소개](https://learn.liferay.com/w/commerce/pricing/promoting-products/introduction-to-discounts)
+* [구독](https://learn.liferay.com/w/commerce/order-management/subscriptions)
+* [애드온 및 커넥터](https://learn.liferay.com/w/commerce/add-ons-and-connectors)
 
 ## 재고 관리
 
-* [창고 전체의 재고 관리](https://learn.liferay.com/web/guest/w/commerce/inventory-management/using-the-inventory-management-system) 
-* [가용성 추정치](https://learn.liferay.com/web/guest/w/commerce/inventory-management/availability-estimates) 
-* [재고 부족 조치](https://learn.liferay.com/web/guest/w/commerce/inventory-management/low-stock-action) 
+* [재고 관리 시스템 사용](https://learn.liferay.com/web/guest/w/commerce/inventory-management/using-the-inventory-management-system)
+* [커머스 주소](https://learn.liferay.com/web/guest/w/commerce/inventory-management/availability-estimates)
+* [재고 부족 조치](https://learn.liferay.com/web/guest/w/commerce/inventory-management/low-stock-action)
 
 ## 거래
 
-* [결제 프로세스](https://learn.liferay.com/w/commerce/creating-store-content/commerce-storefront-pages/checkout) 
-* [비회원 체크아웃](https://learn.liferay.com/w/commerce/store-management/guest-checkout/guest-checkout-overview) 
-* [승인 워크플로](https://learn.liferay.com/w/commerce/order-management/order-workflows/approving-or-rejecting-orders-in-order-workflows) 
-* [결제 게이트웨이 통합](https://learn.liferay.com/w/commerce/store-management/configuring-payment-methods) 
+* [점검](https://learn.liferay.com/w/commerce/creating-store-content/commerce-storefront-pages/checkout)
+* [비회원 결제 개요](https://learn.liferay.com/w/commerce/store-management/guest-checkout/guest-checkout-overview)
+* [주문 워크플로우에서 주문 승인 또는 거부](https://learn.liferay.com/w/commerce/order-management/order-workflows/approving-or-rejecting-orders-in-order-workflows)
+* [결제 수단 구성](https://learn.liferay.com/w/commerce/store-management/configuring-payment-methods)
 
 ## 다단계 판매
 
-* [구매자, 판매자, 계정, 사용자 역할 지원](https://learn.liferay.com/w/commerce/users-and-accounts) 
+* [사용자 및 계정](https://learn.liferay.com/w/commerce/users-and-accounts)
 
  <!--* [Dashboards](https://learn.liferay.com/w/analytics-cloud/commerce/commerce-dashboard) -->
 
 * 예측
 
-다음: [분석 및 최적화](./analytics-and-optimization.md) .
+다음: [분석 및 최적화](./analytics-and-optimization.md).

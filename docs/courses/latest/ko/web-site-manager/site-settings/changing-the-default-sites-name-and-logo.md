@@ -6,7 +6,7 @@ Liferay 인스턴스는 "Liferay"(친숙한 URL로 `/guest` 사용)라는 기본
 
 ## 사이트 로고 변경
 
-Kyle Klein, [인스턴스 관리자](https://learn.liferay.com/w/courses/liferay-administrator/users-accounts-organizations/managing-users#create-an-administrator) 로 로그인하면 인스턴스 설정을 변경할 수 있습니다.
+Kyle Klein, [사용자 관리](https://learn.liferay.com/w/courses/liferay-administrator/users-accounts-organizations/managing-users#create-an-administrator) 로 로그인하면 인스턴스 설정을 변경할 수 있습니다.
 
 1. Liferay 인스턴스에 액세스하고 Kyle Klein으로 로그인하십시오.
 
@@ -64,4 +64,4 @@ Kyle Klein, [인스턴스 관리자](https://learn.liferay.com/w/courses/liferay
 
 ## 관련 개념
 
-* [인스턴스 구성](https://learn.liferay.com/w/dxp/system-administration/configuring-liferay/virtual-instances/instance-configuration)
+* [인스턴스 설정](https://learn.liferay.com/w/dxp/system-administration/configuring-liferay/virtual-instances/instance-configuration)

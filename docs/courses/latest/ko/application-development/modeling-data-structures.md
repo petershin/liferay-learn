@@ -24,11 +24,11 @@ toc:
 
 ## 데이터 엔터티 식별
 
-애플리케이션의 데이터 엔터티를 나타내는 [객체 정의](https://learn.liferay.com/en/w/dxp/building-applications/objects) 를 생성할 수 있습니다. 보험 청구, 지원 티켓, 상거래 제품 등 무엇이든 될 수 있습니다. 사용자 정의 개체를 게시하면 Liferay는 데이터 항목을 저장하기 위한 데이터베이스 테이블을 만듭니다. 또한 CRUD 작업을 수행하기 위한 헤드리스 API를 생성하고 기본 프런트엔드를 제공합니다. Liferay 개체를 사용하면 조직의 특정 요구 사항을 지원할 수 있는 강력하고 유연한 솔루션 기반을 구축할 수 있습니다.
+애플리케이션의 데이터 엔터티를 나타내는 [개체](https://learn.liferay.com/ko/w/dxp/building-applications/objects) 를 생성할 수 있습니다. 보험 청구, 지원 티켓, 상거래 제품 등 무엇이든 될 수 있습니다. 사용자 정의 개체를 게시하면 Liferay는 데이터 항목을 저장하기 위한 데이터베이스 테이블을 만듭니다. 또한 CRUD 작업을 수행하기 위한 헤드리스 API를 생성하고 기본 프런트엔드를 제공합니다. Liferay 개체를 사용하면 조직의 특정 요구 사항을 지원할 수 있는 강력하고 유연한 솔루션 기반을 구축할 수 있습니다.
 
 ## 속성 추가
 
-속성은 텍스트 및 숫자 값과 같은 애플리케이션에 대한 특정 유형의 정보를 저장하는 데이터베이스 열을 나타냅니다. 데이터 모델의 속성을 정의하려면 사용자 입력을 수신하기 위해 객체 정의에 [필드](https://learn.liferay.com/en/w/dxp/building-applications/objects/creating-and-managing-objects/fields) 추가해야 합니다. 또한 선택 목록 [선택 목록](https://learn.liferay.com/en/w/dxp/building-applications/objects/picklists) 만들고 이를 개체와 함께 사용하여 사용자에게 미리 정의된 단일 선택 및 다중 선택 필드를 제공할 수 있습니다.
+속성은 텍스트 및 숫자 값과 같은 애플리케이션에 대한 특정 유형의 정보를 저장하는 데이터베이스 열을 나타냅니다. 데이터 모델의 속성을 정의하려면 사용자 입력을 수신하기 위해 객체 정의에 [분야](https://learn.liferay.com/ko/w/dxp/building-applications/objects/creating-and-managing-objects/fields) 추가해야 합니다. 또한 선택 목록 [선택목록](https://learn.liferay.com/ko/w/dxp/building-applications/objects/picklists) 만들고 이를 개체와 함께 사용하여 사용자에게 미리 정의된 단일 선택 및 다중 선택 필드를 제공할 수 있습니다.
 
 ## 관계 정의
 

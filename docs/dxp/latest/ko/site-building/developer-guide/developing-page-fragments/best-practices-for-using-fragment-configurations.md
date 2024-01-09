@@ -9,7 +9,7 @@
 
 악성 코드는 [텍스트 필드 구성](../reference/fragments/fragment-configuration-types-reference.md#text-configuration) 에 삽입되어 다른 프래그먼트 사용자에게 큰 피해를 줄 수 있습니다. XSS(교차 사이트 스크립팅) 공격으로부터 보호하려면 조각 텍스트 값을 이스케이프 처리해야 합니다.
 
-일반적인 경우 HTML `escape()` 메서드를 사용할 수 있습니다. 자세한 내용은 [`HtmlUtil`](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/util/HtmlUtil.html) 클래스를 참조하십시오.
+일반적인 경우 HTML `escape()` 메서드를 사용할 수 있습니다. 자세한 내용은 [`HtmlUtil`](https://resources.learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/util/HtmlUtil.html) 클래스를 참조하십시오.
 
 ```html
 <div class="fragment_38816">

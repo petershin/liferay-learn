@@ -36,13 +36,13 @@ visibility:
 
 최신 인트라넷을 위한 Liferay의 주요 기능을 논의할 때 Liferay의 포털 유산과 통합 리소스 세트에 대한 보안 액세스를 제공하는 능력을 강조하십시오. 그러나 추가 기능을 강조하여 Liferay 인트라넷 솔루션의 **_** 을 강조하세요.
 
-* [디자인 시스템 & 경험 관리](https://learn.liferay.com/w/dxp/site-building)
-* [콘텐츠 & 자산관리](https://learn.liferay.com/w/dxp/content-authoring-and-management)
-* [로우코드/노코드 애플리케이션 구축](https://learn.liferay.com/w/dxp/building-applications/objects)
-* [협업 & 지식공유](https://learn.liferay.com/w/dxp/collaboration-and-social)
-* [데이터 모델링 & 프로세스 자동화](https://learn.liferay.com/w/dxp/process-automation)
-* [세분화 & 개인화](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience)
-* [검색](https://learn.liferay.com/w/dxp/using-search) & [탐색](https://learn.liferay.com/w/dxp/site-building/site-navigation)
+* [사이트 구축](https://learn.liferay.com/w/dxp/site-building)
+* [콘텐츠 제작 및 관리](https://learn.liferay.com/w/dxp/content-authoring-and-management)
+* [개체](https://learn.liferay.com/w/dxp/building-applications/objects)
+* [협업 및 소셜](https://learn.liferay.com/w/dxp/collaboration-and-social)
+* [프로세스 자동화](https://learn.liferay.com/w/dxp/process-automation)
+* [사이트 경험 개인화](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience)
+* [검색 사용](https://learn.liferay.com/w/dxp/using-search) & [사이트 내비게이션](https://learn.liferay.com/w/dxp/site-building/site-navigation)
 * 통합 & 상호 운용성
 
 ## 다음

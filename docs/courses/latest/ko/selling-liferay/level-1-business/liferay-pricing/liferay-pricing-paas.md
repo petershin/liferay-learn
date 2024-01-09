@@ -22,8 +22,8 @@ visibility:
 Liferay의 PaaS 제품을 통해 Liferay는 모든 기능이 포함된 DXP를 제공하고 DXP 7.4부터 상거래 및 분석 기능도 포함합니다. Liferay는 인프라 및 플랫폼 서비스도 제공하고 관리하지만 업그레이드, 업데이트, 패치, 보안 핫픽스, 소프트웨어 문제 해결 및 애플리케이션 제공과 같은 대부분의 기타 활동에 대한 책임은 여전히 고객에게 있습니다.
 
 ```{note}
-* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/web/guest/d/sa1-2b-liferay-pricing-paas) 을 확인하세요.
-* 라이브 워크숍에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/documents/d/guest/sa1-2b-liferay-pricing-paas-pdf) 을 다운로드하세요.
+* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/c/portal/login?p_l_id=3026&redirect=%2Fweb%2Fguest%2Fd%2Fsa1-2b-liferay-pricing-paas) 을 확인하세요.
+* 라이브 워크숍에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/c/portal/login?redirect=%2Fdocuments%2Fd%2Fguest%2Fsa1-2b-liferay-pricing-paas-pdf) 을 다운로드하세요.
 ```
 
 ## Liferay Experience Cloud SM 가격 요약

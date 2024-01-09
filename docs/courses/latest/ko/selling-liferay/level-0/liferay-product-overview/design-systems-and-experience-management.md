@@ -11,35 +11,35 @@ visibility:
 
 ## 사이트 디자인 및 구성 경험
 
-* [Stylebooks](https://learn.liferay.com/w/dxp/site-building/site-appearance/style-books)
-* [마스터 페이지](https://learn.liferay.com/w/dxp/site-building/creating-pages/defining-headers-and-footers/master-page-templates)
-* [Fragments](https://learn.liferay.com/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments)
-* [Widgets](https://learn.liferay.com/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-widgets)
+* [스타일 북](https://learn.liferay.com/w/dxp/site-building/site-appearance/style-books)
+* [마스터 페이지 템플릿](https://learn.liferay.com/w/dxp/site-building/creating-pages/defining-headers-and-footers/master-page-templates)
+* [조각 사용](https://learn.liferay.com/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments)
+* [위젯 사용](https://learn.liferay.com/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-widgets)
 
 ## 다중 사이트 관리
 
-* [Sites](https://learn.liferay.com/w/dxp/site-building/sites)
-* [Pages](https://learn.liferay.com/w/dxp/site-building/creating-pages)
-* [Navigation](https://learn.liferay.com/w/dxp/site-building/site-navigation)
-* [Personalization](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience)
-* [A/B 테스팅](https://learn.liferay.com/w/dxp/site-building/optimizing-sites/ab-testing/ab-testing)
-* [Publishing](https://learn.liferay.com/w/dxp/site-building/publishing-tools)
+* [사이트](https://learn.liferay.com/w/dxp/site-building/sites)
+* [페이지 만들기](https://learn.liferay.com/w/dxp/site-building/creating-pages)
+* [사이트 내비게이션](https://learn.liferay.com/w/dxp/site-building/site-navigation)
+* [사이트 경험 개인화](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience)
+* [A/B 테스트](https://learn.liferay.com/w/dxp/site-building/optimizing-sites/ab-testing/ab-testing)
+* [게시 도구](https://learn.liferay.com/w/dxp/site-building/publishing-tools)
 
 ## 검색 엔진 최적화
 
-* [Ranking](https://learn.liferay.com/w/dxp/using-search/liferay-enterprise-search/learning-to-rank)
+* [Learning to Rank](https://learn.liferay.com/w/dxp/using-search/liferay-enterprise-search/learning-to-rank)
 * [친숙한 URL](https://learn.liferay.com/w/dxp/site-building/site-settings/managing-site-urls/configuring-your-sites-friend-url)
-* [OpenGraph](https://learn.liferay.com/w/dxp/site-building/site-settings/configuring-open-graph)
+* [오픈 그래프 구성](https://learn.liferay.com/w/dxp/site-building/site-settings/configuring-open-graph)
 
 ## 지역화
 
-* [Site](https://learn.liferay.com/w/dxp/site-building/site-settings/site-localization)
-* [Page](https://learn.liferay.com/w/dxp/content-authoring-and-management/translating-pages-and-content)
-* [콘텐츠 현지화](https://learn.liferay.com/w/dxp/content-authoring-and-management/translating-pages-and-content/translating-web-content)
+* [사이트 현지화](https://learn.liferay.com/w/dxp/site-building/site-settings/site-localization)
+* [페이지 및 콘텐츠 번역](https://learn.liferay.com/w/dxp/content-authoring-and-management/translating-pages-and-content)
+* [웹 콘텐츠 번역](https://learn.liferay.com/w/dxp/content-authoring-and-management/translating-pages-and-content/translating-web-content)
 
 ## 접근성
 
-* [PageSpeed Insights 권장 사항](https://learn.liferay.com/web/guest/w/dxp/content-authoring-and-management/page-performance-and-accessibility/analyze-seo-and-accessibility-on-pages)
-* [일반 접근성 초점](https://learn.liferay.com/w/dxp/site-building/optimizing-sites#page-performance-and-accessibility)
+* [페이지의 SEO 및 접근성 분석](https://learn.liferay.com/web/guest/w/dxp/content-authoring-and-management/page-performance-and-accessibility/analyze-seo-and-accessibility-on-pages)
+* [사이트 최적화](https://learn.liferay.com/w/dxp/site-building/optimizing-sites#page-performance-and-accessibility)
 
 다음: [콘텐츠 및 자산 관리](./content-and-asset-management.md)

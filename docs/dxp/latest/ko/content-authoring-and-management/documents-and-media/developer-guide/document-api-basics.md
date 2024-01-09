@@ -428,7 +428,7 @@ java -classpath .:* -DdocumentId=1234 Document_DELETE_ById
 
 ## 관련 주제
 
-* [문서 및 미디어](../../documents-and-media.md) 
-* [REST 서비스 사용](../../../headless-delivery/consuming-apis/consuming-rest-services.md) 
-* [API 헤더 참조](../../../headless-delivery/consuming-apis/api-headers-reference.md) 
-* [GraphQL API 사용](../../../headless-delivery/consuming-apis/consuming-graphql-apis.md) 
+* [문서 및 미디어](../../documents-and-media.md)
+* [REST 서비스 사용](../../../headless-delivery/consuming-apis/consuming-rest-services.md)
+* [API 헤더 참조](../../../headless-delivery/consuming-apis/api-headers-reference.md)
+* [GraphQL API 사용](../../../headless-delivery/consuming-apis/consuming-graphql-apis.md)

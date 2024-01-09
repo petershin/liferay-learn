@@ -11,21 +11,21 @@ visibility:
 
 ## 개체
 
-* [개체 개요](https://learn.liferay.com/w/dxp/building-applications/objects) 
-* [튜토리얼](https://learn.liferay.com/w/dxp/building-applications/objects) 
+* [개체](https://learn.liferay.com/w/dxp/building-applications/objects)
+* [개체](https://learn.liferay.com/w/dxp/building-applications/objects)
 
 ## 양식
 
-* [개체와 함께 양식 사용](https://learn.liferay.com/w/dxp/building-applications/objects/using-forms-with-objects) 
-* [조각을 사용하여 양식 작성](https://learn.liferay.com/w/dxp/building-applications/objects/using-fragments-to-build-forms) 
-* [양식 소개](https://learn.liferay.com/w/dxp/process-automation/forms/introduction-to-forms) 
+* [개체와 함께 양식 사용](https://learn.liferay.com/w/dxp/building-applications/objects/using-forms-with-objects)
+* [조각을 사용하여 양식 작성](https://learn.liferay.com/w/dxp/building-applications/objects/using-fragments-to-build-forms)
+* [양식 소개](https://learn.liferay.com/w/dxp/process-automation/forms/introduction-to-forms)
 
 ## 워크플로우
 
-* [워크플로 사용](https://learn.liferay.com/w/dxp/process-automation/workflow/using-workflows) 
+* [워크플로 사용](https://learn.liferay.com/w/dxp/process-automation/workflow/using-workflows)
 
 ## 워크플로 지표
 
-* [워크플로 측정항목 사용](https://learn.liferay.com/w/dxp/process-automation/workflow/using-workflows/using-workflow-metrics) 
+* [워크플로 지표 사용](https://learn.liferay.com/w/dxp/process-automation/workflow/using-workflows/using-workflow-metrics)
 
-다음: [상업](./commerce.md) .
+다음: [상업](./commerce.md).

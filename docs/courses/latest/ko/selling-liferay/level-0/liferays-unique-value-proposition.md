@@ -24,8 +24,8 @@ visibility:
 경쟁업체가 동일한 가치를 제공한다고 주장하는 반면, Liferay만이 고객에게 더 많은 가치를 제공하기 위해 경쟁업체와 차별화되는 특성과 특징의 고유한 조합을 보유하고 있습니다.
 
 ```{note}
-* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/web/guest/d/l0-4-liferays-unique-value-proposition) 을 확인하세요.
-* 라이브 워크숍에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/documents/d/guest/l0-4-liferays-unique-value-proposition-pdf) 을 다운로드하세요.
+* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/c/portal/login?p_l_id=3026&redirect=%2Fweb%2Fguest%2Fd%2Fl0-4-liferays-unique-value-proposition) 을 확인하세요.
+* 라이브 워크숍에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/c/portal/login?redirect=%2Fdocuments%2Fd%2Fguest%2Fl0-4-liferays-unique-value-proposition-pdf) 을 다운로드하세요.
 ```
 
 ## 가치 제안이란 무엇입니까?

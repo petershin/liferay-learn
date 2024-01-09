@@ -37,6 +37,6 @@
 
 ## 관련 주제
 
-* [스플라인 차트](./spline-chart.md) 
-* [단계 차트](./step-chart.md) 
-* [예측 차트](./predictive-chart.md) 
+* [스플라인 차트](./spline-chart.md)
+* [단계 차트](./step-chart.md)
+* [예측 차트](./predictive-chart.md)

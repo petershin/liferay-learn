@@ -46,8 +46,8 @@ Liferay DXP 셀프 호스팅을 통해 Liferay는 DXP 소프트웨어 자체만 
 * 자체 데이터 센터에서.
 
 ```{note}
-* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/web/guest/d/sa1-2c-liferay-pricing-self-hosted) 을 확인하세요.
-* 라이브 워크숍에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/documents/d/guest/sa1-2c-liferay-pricing-self-hosted-pdf) 을 다운로드하세요.
+* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/c/portal/login?p_l_id=3026&redirect=%2Fweb%2Fguest%2Fd%2Fsa1-2c-liferay-pricing-self-hosted) 을 확인하세요.
+* 라이브 워크숍에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/c/portal/login?redirect=%2Fdocuments%2Fd%2Fguest%2Fsa1-2c-liferay-pricing-self-hosted-pdf) 을 다운로드하세요.
 ```
 
 ## Liferay DXP 자체 호스팅 가격 모델 - 요약

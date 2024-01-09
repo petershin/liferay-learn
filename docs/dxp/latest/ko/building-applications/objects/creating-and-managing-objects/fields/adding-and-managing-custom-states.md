@@ -70,6 +70,6 @@
 
 ## 관련 주제
 
-* [선택 목록](../../picklists.md) 
-* [필드](../fields.md) 
-* [개체에 필드 추가](../fields/adding-fields-to-objects.md) 
+* [선택 목록](../../picklists.md)
+* [필드](../fields.md)
+* [개체에 필드 추가](../fields/adding-fields-to-objects.md)

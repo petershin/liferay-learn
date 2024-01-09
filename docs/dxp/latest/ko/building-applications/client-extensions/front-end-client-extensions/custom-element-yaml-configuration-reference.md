@@ -44,6 +44,6 @@ able-custom-element:
 
 ## 관련 주제
 
-* [프런트엔드 클라이언트 확장](../front-end-client-extensions.md) 
-* [클라이언트 확장 작업](../working-with-client-extensions.md) 
-* [IFrame YAML 구성 참조](./iframe-yaml-configuration-reference.md) 
+* [프런트엔드 클라이언트 확장](../front-end-client-extensions.md)
+* [클라이언트 확장 작업](../working-with-client-extensions.md)
+* [IFrame YAML 구성 참조](./iframe-yaml-configuration-reference.md)

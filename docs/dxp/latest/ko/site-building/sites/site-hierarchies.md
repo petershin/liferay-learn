@@ -13,7 +13,7 @@
 * 위젯 템플릿
 * 데이터 정의(동적 데이터 목록)
 
-관련 구성 가능한 속성 목록은 Liferay의 `portal.properties` 파일의 [사이트 관리자 포틀릿](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Sites%20Admin%20Portlet) 섹션을 참조하세요. 예를 들어 `Sites.content.sharing.with.children.enabled` 속성을 사용하면 사이트와 하위 사이트 간의 콘텐츠 공유를 비활성화/활성화할 수 있으며, 사이트 관리자가 사이트별로 구성할 수 있습니다.
+관련 구성 가능한 속성 목록은 Liferay의 `portal.properties` 파일의 [사이트 관리자 포틀릿](https://resources.learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) 섹션을 참조하세요. 예를 들어 `Sites.content.sharing.with.children.enabled` 속성을 사용하면 사이트와 하위 사이트 간의 콘텐츠 공유를 비활성화/활성화할 수 있으며, 사이트 관리자가 사이트별로 구성할 수 있습니다.
 
 ## 사이트 계층 구조 역할 및 권한
 

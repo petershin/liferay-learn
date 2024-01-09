@@ -40,10 +40,10 @@ building-a-responsive-site/using-the-simulation-panel.md
 :gutter: 3 3 3 3
 
 :::{grid-item-card} 그리드 조각으로 반응형 레이아웃 구축
-:link: ./building-a-반응형-사이트/건물-반응형-레이아웃-with-the-grid-fragment.md
+:link: ./building-a-responsive-site/building-responsive-layouts-with-the-grid-fragment.md
 :::
 
 :::{grid-item-card} 시뮬레이션 패널 사용
-:link: ./building-a-반응형-사이트/using-the-simulation-panel.md
+:link: ./building-a-responsive-site/using-the-simulation-panel.md
 :::
 ::::

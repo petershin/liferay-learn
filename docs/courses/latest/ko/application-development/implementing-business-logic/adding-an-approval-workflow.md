@@ -1,6 +1,6 @@
 # 승인 워크플로 추가
 
-Delectable Bonsai는 'applicationState' 필드를 추가한 후 애플리케이션에 대한 변경 사항을 검토하고 승인하기 위한 워크플로를 구현하려고 합니다. 현재 애플리케이션에 대한 모든 업데이트는 선택한 상태에 관계없이 자동으로 승인됩니다. Delectable Bonsai는 추가 비즈니스 로직을 '승인' 및 '거부' 상태와 연결하므로 워크플로는 'applicationState' 필드를 확인하고 이러한 값 중 하나가 선택된 경우 관리자 검토를 요구해야 합니다. 여기에서는 Liferay [클라이언트 확장](https://learn.liferay.com/web/guest/w/dxp/building-applications/client-extensions) 을 사용하여 이 워크플로 프로세스를 배포하고 설정합니다.
+Delectable Bonsai는 'applicationState' 필드를 추가한 후 애플리케이션에 대한 변경 사항을 검토하고 승인하기 위한 워크플로를 구현하려고 합니다. 현재 애플리케이션에 대한 모든 업데이트는 선택한 상태에 관계없이 자동으로 승인됩니다. Delectable Bonsai는 추가 비즈니스 로직을 '승인' 및 '거부' 상태와 연결하므로 워크플로는 'applicationState' 필드를 확인하고 이러한 값 중 하나가 선택된 경우 관리자 검토를 요구해야 합니다. 여기에서는 Liferay [원격 앱](https://learn.liferay.com/web/guest/w/dxp/building-applications/client-extensions) 을 사용하여 이 워크플로 프로세스를 배포하고 설정합니다.
 
 ## 클라이언트 확장 배포
 
@@ -196,7 +196,7 @@ Delectable Bonsai는 'applicationState' 필드를 추가한 후 애플리케이�
 
 ## 관련 개념
 
-* [워크플로 디자이너](https://learn.liferay.com/web/guest/w/dxp/process-automation/workflow/designing-and-managing-workflows/workflow-designer/workflow-designer-overview)
+* [워크플로 디자이너 개요](https://learn.liferay.com/web/guest/w/dxp/process-automation/workflow/designing-and-managing-workflows/workflow-designer/workflow-designer-overview)
 * [개체에 대한 워크플로 활성화](https://learn.liferay.com/web/guest/w/dxp/building-applications/objects/enabling-workflows-for-objects)
 * [마이크로서비스 클라이언트 확장](https://learn.liferay.com/web/guest/w/dxp/building-applications/client-extensions/microservice-client-extensions)
 * [배치 클라이언트 확장](https://learn.liferay.com/web/guest/w/dxp/building-applications/client-extensions/batch-client-extensions)

@@ -64,6 +64,6 @@ easy-object-action-1:
 
 ## 관련 주제
 
-* [마이크로서비스 클라이언트 확장](../microservice-client-extensions.md) 
-* [클라이언트 확장 작업](../working-with-client-extensions.md) 
-* [워크플로 작업 YAML 구성 참조](./workflow-action-yaml-configuration-reference.md) 
+* [마이크로서비스 클라이언트 확장](../microservice-client-extensions.md)
+* [클라이언트 확장 작업](../working-with-client-extensions.md)
+* [워크플로 작업 YAML 구성 참조](./workflow-action-yaml-configuration-reference.md)

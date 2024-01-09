@@ -29,7 +29,7 @@ Liferay DXP의 몇 가지 빠른 예는 다음과 같습니다.
 
 ![Liferay Forms are built using a no-code user interface.](./low-code-no-code/images/01.png)
 
-[Forms](https://learn.liferay.com/w/dxp/process-automation/forms) 은 필수 사용자 데이터를 수집하는 강력한 기능을 제공합니다. 예를 들어 고객 피드백이나 채용 지원서 등이 있습니다.
+[양식](https://learn.liferay.com/w/dxp/process-automation/forms) 은 필수 사용자 데이터를 수집하는 강력한 기능을 제공합니다. 예를 들어 고객 피드백이나 채용 지원서 등이 있습니다.
 
 Forms 애플리케이션은 이전 사용자 입력을 기반으로 양식 필드를 동적으로 변경하는 규칙을 사용하여 설문 조사와 같은 간단한 양식을 복잡한 다중 페이지 애플리케이션으로 만드는 데 사용할 수 있습니다.
 
@@ -37,7 +37,7 @@ Forms 애플리케이션은 이전 사용자 입력을 기반으로 양식 필�
 
 ![Liferay's visual workflow designer allows administrators to implement content approval workflows using a drag-and-drop user interface.](./low-code-no-code/images/02.png)
 
-[Workflows](https://learn.liferay.com/w/dxp/process-automation/workflow) 을 사용하면 관리자가 블로그, 웹 콘텐츠, 위키 등의 콘텐츠를 게시하기 전에 검토하고 승인할 수 있습니다.
+[워크플로우](https://learn.liferay.com/w/dxp/process-automation/workflow) 을 사용하면 관리자가 블로그, 웹 콘텐츠, 위키 등의 콘텐츠를 게시하기 전에 검토하고 승인할 수 있습니다.
 
 워크플로 프로세스는 검토자 및 승인자로서 사용자, 그룹 및 역할과 통합될 수도 있습니다.
 
@@ -45,7 +45,7 @@ Forms 애플리케이션은 이전 사용자 입력을 기반으로 양식 필�
 
 ![Collections provide a simple way to create sets of assets which can be easily displayed to end users on pages.](./low-code-no-code/images/03.png)
 
-[Collections](https://learn.liferay.com/w/dxp/content-authoring-and-management/collections-and-collection-pages) 은 정보를 그룹화하고 필터링하는 데 사용할 수 있는 콘텐츠 항목 및 기타 자산 세트입니다.
+[컬렉션 및 컬렉션 페이지](https://learn.liferay.com/w/dxp/content-authoring-and-management/collections-and-collection-pages) 은 정보를 그룹화하고 필터링하는 데 사용할 수 있는 콘텐츠 항목 및 기타 자산 세트입니다.
 
 예를 들어, 컬렉션의 일반적인 사용 사례는 제품 웹 페이지에 새로운 고객 성공 사례가 게시될 때 자동으로 표시하는 섹션을 포함하는 것입니다.
 
@@ -53,7 +53,7 @@ Forms 애플리케이션은 이전 사용자 입력을 기반으로 양식 필�
 
 ![Objects allow business applications to be created without writing any code.](./low-code-no-code/images/04.png)
 
-[Objects](https://learn.liferay.com/w/dxp/building-applications/objects) 은 코드를 작성하거나 모듈을 배포하지 않고도 비즈니스 애플리케이션을 만드는 데 사용할 수 있는 새로운 기능입니다.
+[개체](https://learn.liferay.com/w/dxp/building-applications/objects) 은 코드를 작성하거나 모듈을 배포하지 않고도 비즈니스 애플리케이션을 만드는 데 사용할 수 있는 새로운 기능입니다.
 
 여기서 주의할 점:
 
@@ -81,7 +81,7 @@ Liferay는 고객이 외부 시스템, 서비스 또는 애플리케이션과 �
 
 ### 오픈오피스와 리브레오피스
 
-[OpenOffice 및 LibreOffice](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/devops/enabling-openoffice-libreoffice-integration) Liferay와의 통합을 통해 사용자는 다음을 수행할 수 있습니다. Liferay의 내장 문서 뷰어 및 편집기를 사용하여 포털 내에서 직접 사무실 문서를 보고 편집할 수 있습니다. 이는 문서를 다운로드하고 로컬로 편집한 다음 포털에 다시 업로드할 필요 없이 Liferay 포털 내에서 문서를 공동 작업하는 데 유용할 수 있습니다.
+[OpenOffice / LibreOffice 통합 활성화](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/devops/enabling-openoffice-libreoffice-integration) Liferay와의 통합을 통해 사용자는 다음을 수행할 수 있습니다. Liferay의 내장 문서 뷰어 및 편집기를 사용하여 포털 내에서 직접 사무실 문서를 보고 편집할 수 있습니다. 이는 문서를 다운로드하고 로컬로 편집한 다음 포털에 다시 업로드할 필요 없이 Liferay 포털 내에서 문서를 공동 작업하는 데 유용할 수 있습니다.
 
 ### 마이크로소프트 오피스 365
 
@@ -103,13 +103,13 @@ Liferay는 두 가지 방법으로 Google Drive와 통합될 수도 있습니다
 
 ### 라이브 채팅 및 챗봇
 
-Liferay DXP는 다양한 [라이브 채팅](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience/enabling-automated-live-chat-systems) 플랫폼에 대한 포괄적인 지원을 제공합니다. 이 통합을 활성화하면 Liferay 인스턴스의 사이트에 채팅 창이 추가되고 사용자를 위한 향상된 지원 및 사이트 경험을 제공하는 데 사용할 수 있습니다.
+Liferay DXP는 다양한 [자동화된 라이브 채팅 시스템 활성화](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience/enabling-automated-live-chat-systems) 플랫폼에 대한 포괄적인 지원을 제공합니다. 이 통합을 활성화하면 Liferay 인스턴스의 사이트에 채팅 창이 추가되고 사용자를 위한 향상된 지원 및 사이트 경험을 제공하는 데 사용할 수 있습니다.
 
 Liferay는 또한 Zendesk 또는 Hubspot과 같은 챗봇 서비스와 통합되어 자동화된 채팅 기능을 제공합니다. 이는 정규 업무 시간 외에 사용자에게 지원을 제공하거나 간단한 쿼리를 처리하는 데 유용할 수 있습니다.
 
 ### 다큐사인
 
-[DocuSign](https://learn.liferay.com/web/guest/w/dxp/content-authoring-and-management/documents-and-media/uploading-and-managing/enabling-docusign-digital-signatures) 디지털 서명 Liferay 문서와도 통합될 수 있습니다.
+[DocuSign 디지털 서명 활성화](https://learn.liferay.com/web/guest/w/dxp/content-authoring-and-management/documents-and-media/uploading-and-managing/enabling-docusign-digital-signatures) 디지털 서명 Liferay 문서와도 통합될 수 있습니다.
 
 DocuSign은 전자적으로 서명할 문서를 관리하는 서비스입니다. 이 통합을 통해 문서의 서명을 관리하고 수집할 수 있습니다.
 
@@ -119,7 +119,7 @@ Liferay는 [Talend]과 같은 ETL(Exchange-Transform-Load) 도구와 통합할 �
 
 ### 엔터프라이즈 서비스 버스
 
-Liferay는 ESB(Enterprise Service Bus)와 같은 아키텍처와 통합할 수도 있습니다. [MuleSoft](https://learn.liferay.com/w/commerce/add-ons-and-connectors/mulesoft) 은 Liferay 커넥터도 포함하는 잘 알려진 ESB입니다. Liferay의 일반적인 사용 사례는 고객이 Liferay와 ERP 또는 CRM 시스템과 같은 다른 애플리케이션 간의 워크플로를 자동화하는 것입니다.
+Liferay는 ESB(Enterprise Service Bus)와 같은 아키텍처와 통합할 수도 있습니다. [뮬소프트](https://learn.liferay.com/w/commerce/add-ons-and-connectors/mulesoft) 은 Liferay 커넥터도 포함하는 잘 알려진 ESB입니다. Liferay의 일반적인 사용 사례는 고객이 Liferay와 ERP 또는 CRM 시스템과 같은 다른 애플리케이션 간의 워크플로를 자동화하는 것입니다.
 
 ### ERP
 
@@ -129,7 +129,7 @@ Liferay는 SAP와 같은 ERP 플랫폼과의 통합을 허용합니다. SAP의 L
 
 ### 헤드리스 API
 
-Liferay [헤드리스 통합](https://learn.liferay.com/w/dxp/headless-delivery/using-liferay-as-a-headless-platform) 은 개발자에게 Liferay의 백엔드를 통합하는 유연하고 효율적인 방법을 제공합니다. 최신 REST API를 사용하여 자체 애플리케이션으로 기능을 제공합니다.
+Liferay [라이프 레이를 헤드리스 플랫폼으로 사용](https://learn.liferay.com/w/dxp/headless-delivery/using-liferay-as-a-headless-platform) 은 개발자에게 Liferay의 백엔드를 통합하는 유연하고 효율적인 방법을 제공합니다. 최신 REST API를 사용하여 자체 애플리케이션으로 기능을 제공합니다.
 
 * 이 접근 방식을 통해 개발자는 사용자 경험을 더욱 효과적으로 제어할 수 있으며 애플리케이션 출시 기간을 단축할 수 있습니다.
 

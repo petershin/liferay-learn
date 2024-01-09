@@ -4,10 +4,10 @@
 
 Liferay Commerce 사용을 시작하려면:
 
-1. 최신 Liferay Commerce 'LPKG'를 다운로드하세요.
-   * 기업 가입자는 [도움말 센터](https://customer.liferay.com/downloads?p_p_id=com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_productAssetCategoryId=118190997&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_fileTypeAssetCategoryId=118191001) 에서 최신 'LPKG'를 다운로드할 수 있습니다.
+1. 최신 Liferay Commerce `LPKG`를 다운로드하세요.
+   * 기업 가입자는 [도움말 센터](https://customer.liferay.com/downloads?p_p_id=com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_productAssetCategoryId=118190997&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_fileTypeAssetCategoryId=118191001) 에서 최신 `LPKG`를 다운로드할 수 있습니다.
      * 가입자에게는 Liferay Commerce의 주문 번호나 활성화 키도 필요합니다. [프록시 서버를 통해 Marketplace 앱 활성화](https://help.liferay.com/hc/ko/articles/360018427391) 을 참조하십시오.
-   * 최신 오픈 소스 'LPKG'는 [Liferay Commerce 커뮤니티](https://www.liferay.com/downloads-community) 다운로드할 수 있습니다.
+   * 최신 오픈 소스 `LPKG`는 [Liferay Commerce 커뮤니티](https://www.liferay.com/downloads-community) 다운로드할 수 있습니다.
 
 1. `${liferay.home}/deploy` 폴더에 `LPKG`를 배포합니다.
 

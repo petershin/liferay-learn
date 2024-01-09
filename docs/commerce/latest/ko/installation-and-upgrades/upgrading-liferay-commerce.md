@@ -110,7 +110,7 @@ Fix Pack은 본질적으로 누적되며 이전에 릴리스된 모든 Fix Pack�
    * Commerce Enterprise는 [도움말 센터](https://customer.liferay.com/downloads?p_p_id=com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_productAssetCategoryId=118190997&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_fileTypeAssetCategoryId=118191001) 에서 이용 가능합니다.
    * Commerce Community는 [Liferay Commerce Community 다운로드 페이지에서 이용 가능합니다](https://www.liferay.com/downloads-community) 
 
-1. ` [Liferay Home]/deploy` 폴더에 `LPKG`를 배포합니다. Liferay DXP에 애플리케이션을 배포하는 방법에 대한 자세한 내용은 [앱 설치](https://learn.liferay.com/dxp/latest/en/system-administration/installing-and-managing-apps/installing-apps/installing-apps.html) .
+1. ` [Liferay Home]/deploy` 폴더에 `LPKG`를 배포합니다. Liferay DXP에 애플리케이션을 배포하는 방법에 대한 자세한 내용은 [앱 설치](https://learn.liferay.com/dxp/latest/ko/system-administration/installing-and-managing-apps/installing-apps/installing-apps.html) .
 
 1. 아래에 표시된 것과 유사한 메시지가 응용 프로그램 서버 콘솔에 나타나는지 확인하십시오.
 
@@ -130,7 +130,7 @@ Fix Pack은 본질적으로 누적되며 이전에 릴리스된 모든 Fix Pack�
 
 ### 오래된 데이터 지우기 및 업그레이드 프로세스 확인
 
-1. ` [Liferay Home]/osgi/state` 폴더를 삭제합니다. OSGi 폴더에 대한 자세한 내용은 [앱 설치](https://learn.liferay.com/dxp/latest/en/system-administration/installing-and-managing-apps/installing-apps/installing-apps.html) .
+1. ` [Liferay Home]/osgi/state` 폴더를 삭제합니다. OSGi 폴더에 대한 자세한 내용은 [앱 설치](https://learn.liferay.com/dxp/latest/ko/system-administration/installing-and-managing-apps/installing-apps/installing-apps.html) .
 
 1. 애플리케이션 서버를 시작하십시오.
 
@@ -179,5 +179,5 @@ Liferay Commerce 인스턴스가 업그레이드되었습니다.
 
 ## 관련 주제
 
-* [앱 설치](https://learn.liferay.com/dxp/latest/en/system-administration/installing-and-managing-apps/installing-apps/installing-apps.html)
+* [앱 설치](https://learn.liferay.com/dxp/latest/ko/system-administration/installing-and-managing-apps/installing-apps/installing-apps.html)
 * [Liferay Commerce Fix 전달 방법](../get-help/commerce-enterprise-support/liferay-commerce-fix-delivery-method.md)

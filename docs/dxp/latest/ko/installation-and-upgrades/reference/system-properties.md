@@ -4,7 +4,7 @@ Liferay DXP/Portal은 애플리케이션 서버의 JVM에서 실행됩니다. �
 
 응용 프로그램 서버의 규정된 스크립트는 시스템 속성을 추가/수정하기에 가장 안전한 장소입니다. 시스템 속성을 중앙 집중화하는 데 사용할 수 있습니다. 모든 속성을 JVM 인수로 전달하면 애플리케이션 서버 시작 시 모든 속성을 설정하여 타이밍 문제가 제거됩니다. 애플리케이션 서버, DXP 및 기타 모든 웹 애플리케이션은 속성을 즉시 사용할 수 있습니다.
 
-그러나 DXP는 필요한 속성을 설정하는 데 편의를 위해 [`portal-impl.jar/system.properties`](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/system.properties.html) 파일을 사용합니다. `system.properties` 파일은 `system-ext.properties` 파일을 사용하여 확장하거나 재정의할 수 있습니다. 시스템 특성 파일은 애플리케이션 서버 시작 후 포털 애플리케이션 클래스 로더에 의해 로드됩니다. 다음은 DXP가 시스템 속성을 사용하여 구성하는 몇 가지 기능입니다.
+그러나 DXP는 필요한 속성을 설정하는 데 편의를 위해 [`portal-impl.jar/system.properties`](https://resources.learn.liferay.com/reference/latest/en/dxp/propertiesdoc/system.properties.html) 파일을 사용합니다. `system.properties` 파일은 `system-ext.properties` 파일을 사용하여 확장하거나 재정의할 수 있습니다. 시스템 특성 파일은 애플리케이션 서버 시작 후 포털 애플리케이션 클래스 로더에 의해 로드됩니다. 다음은 DXP가 시스템 속성을 사용하여 구성하는 몇 가지 기능입니다.
 
 * 파일 인코딩
 * 벌채 반출

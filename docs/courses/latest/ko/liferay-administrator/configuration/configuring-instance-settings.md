@@ -20,4 +20,4 @@ Liferay 인스턴스는 동일한 설치를 공유하지만 다른 도메인 이
 
 ## 관련 개념
 
-* [인스턴스 구성](https://learn.liferay.com/en/w/dxp/system-administration/configuring-liferay/virtual-instances/instance-configuration)
+* [인스턴스 설정](https://learn.liferay.com/ko/w/dxp/system-administration/configuring-liferay/virtual-instances/instance-configuration)

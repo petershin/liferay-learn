@@ -1,6 +1,6 @@
 # 사용자 관리
 
-LDAP에서 사용자를 가져오거나 Liferay 내에서 사용자를 생성하는 경우 사용 가능한 도구를 사용하여 사용자를 관리하세요. 자세한 내용은 [사용자 생성 및 관리](https://learn.liferay.com/en/w/dxp/users-and-permissions/users/adding-and-managing-users) 를 참조하세요.
+LDAP에서 사용자를 가져오거나 Liferay 내에서 사용자를 생성하는 경우 사용 가능한 도구를 사용하여 사용자를 관리하세요. 자세한 내용은 [사용자 추가 및 관리](https://learn.liferay.com/ko/w/dxp/users-and-permissions/users/adding-and-managing-users) 를 참조하세요.
 
 ## 관리자 만들기
 
@@ -69,6 +69,6 @@ LDAP에서 사용자를 가져오거나 Liferay 내에서 사용자를 생성하
 
 ## 관련 개념
 
-* [사용자 이해](https://learn.liferay.com/en/w/dxp/users-and-permissions/users/understanding-users)
-* [사용자 추가 및 관리](https://learn.liferay.com/en/w/dxp/users-and-permissions/users/adding-and-managing-users)
-* [조직에 사용자 추가](https://learn.liferay.com/en/w/dxp/users-and-permissions/organizations/adding-users-to-organizations)
+* [사용자 이해](https://learn.liferay.com/ko/w/dxp/users-and-permissions/users/understanding-users)
+* [사용자 추가 및 관리](https://learn.liferay.com/ko/w/dxp/users-and-permissions/users/adding-and-managing-users)
+* [조직에 사용자 추가](https://learn.liferay.com/ko/w/dxp/users-and-permissions/organizations/adding-users-to-organizations)

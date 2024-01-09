@@ -74,5 +74,5 @@ Groovy 스크립트 작업은 Groovy 스크립트를 실행합니다. 제공된 
 
 ## 관련 주제
 
-* [객체 생성](../creating-objects.md) 
-* [개체 작업 정의](./defining-object-actions.md) 
+* [객체 생성](../creating-objects.md)
+* [개체 작업 정의](./defining-object-actions.md)

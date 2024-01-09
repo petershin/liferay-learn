@@ -115,7 +115,7 @@ private static final int _MAX_ITEM_QUANTITY = 10;
    :lines: 62-84
 ```
 
-고객 장바구니에 있는 항목에 대해 호출되므로 이 메서드에 동일한 유효성 검사 논리를 추가합니다. 여기서 가장 큰 차이점은 'CommerceOrderItem' 개체에서 정보를 얻는다는 것입니다. `CommerceOrderItem`과 함께 사용할 수 있는 더 많은 방법을 찾으려면 [CommerceOrderItem](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/model/CommerceOrderItem.java) 및 [CommerceOrderItemModel](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/model/CommerceOrderItemModel.java) 을 참조하세요.
+고객 장바구니에 있는 항목에 대해 호출되므로 이 메서드에 동일한 유효성 검사 논리를 추가합니다. 여기서 가장 큰 차이점은 `CommerceOrderItem` 개체에서 정보를 얻는다는 것입니다. `CommerceOrderItem`과 함께 사용할 수 있는 더 많은 방법을 찾으려면 [CommerceOrderItem](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/model/CommerceOrderItem.java) 및 [CommerceOrderItemModel](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/model/CommerceOrderItemModel.java) 을 참조하세요.
 
 ### `Language.properties`에 언어 키가 추가되었습니다.
 

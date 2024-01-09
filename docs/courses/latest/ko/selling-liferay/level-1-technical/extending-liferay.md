@@ -28,8 +28,8 @@ Liferay DXP는 모든 기능을 갖춘 디지털 경험 플랫폼이며 고객�
 이 모듈에서는 고객 요구 사항을 충족하기 위해 Liferay를 확장, 구성 및 사용자 정의하는 데 사용할 수 있는 주요 접근 방식을 간략하게 설명합니다.
 
 ```{note}
-* 이 모듈의 라이브 워크숍에서 [녹화](https://learn.liferay.com/web/guest/d/se1-7-extending-liferay) 를 시청하세요.
-* 라이브 워크숍에 사용된 프레젠테이션의 [PDF](https://learn.liferay.com/documents/d/guest/se1-7-extending-liferay-pdf) 를 다운로드하세요.
+* 이 모듈의 라이브 워크숍에서 [녹화](https://learn.liferay.com/c/portal/login?p_l_id=3026&redirect=%2Fweb%2Fguest%2Fd%2Fse1-7-extending-liferay) 를 시청하세요.
+* 라이브 워크숍에 사용된 프레젠테이션의 [PDF](https://learn.liferay.com/c/portal/login?redirect=%2Fdocuments%2Fd%2Fguest%2Fse1-7-extending-liferay-pdf) 를 다운로드하세요.
 ```
 
 ## 일부 전통적인 사용자 정의
@@ -65,7 +65,7 @@ Liferay DXP를 확장하는 한 가지 방법은 기본적으로 제공되는 �
 
 ### 단편
 
-[Fragments](https://learn.liferay.com/web/guest/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments) 은 사용할 수 있는 빌딩 블록 중 하나입니다. Liferay DXP에서 풍부한 페이지를 생성합니다. 조각은 콘텐츠 작성자 및 페이지 작성자가 사용하도록 고안되었습니다.
+[조각 사용](https://learn.liferay.com/web/guest/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments) 은 사용할 수 있는 빌딩 블록 중 하나입니다. Liferay DXP에서 풍부한 페이지를 생성합니다. 조각은 콘텐츠 작성자 및 페이지 작성자가 사용하도록 고안되었습니다.
 
 ![Liferay's page builder provides page creators with a wide range of fragments which are used to construct individual pages.](./extending-liferay/images/02.png)
 
@@ -83,19 +83,19 @@ Liferay의 드래그 앤 드롭 인터페이스 덕분에 페이지에 조각을
 
 ![Publications enables content creators to prepare changes and publish them on a schedule.](./extending-liferay/images/04.png)
 
-[publications](https://learn.liferay.com/w/dxp/site-building/publishing-tools/publications) 기능을 사용하면 콘텐츠 제작자가 변경 사항을 준비하고 일정에 따라 게시할 수 있습니다. 이는 일반적인 정기 게시 프로세스를 지원할 수 있으며 특별한 변경(예: 이미지 업데이트, 새 페이지 추가 등이 포함된 계절 프로모션)에도 사용될 수 있습니다.
+[퍼블리싱](https://learn.liferay.com/w/dxp/site-building/publishing-tools/publications) 기능을 사용하면 콘텐츠 제작자가 변경 사항을 준비하고 일정에 따라 게시할 수 있습니다. 이는 일반적인 정기 게시 프로세스를 지원할 수 있으며 특별한 변경(예: 이미지 업데이트, 새 페이지 추가 등이 포함된 계절 프로모션)에도 사용될 수 있습니다.
 
 고객은 출판물을 생성하고 출판하기 전에 필요한 사용자를 초대하여 변경하도록 할 수 있습니다.
 
 ### 주제
 
-[Themes](https://learn.liferay.com/en/w/dxp/site-building/site-appearance/themes/introduction-to-themes) 은 Liferay 사이트의 모양과 느낌을 사용자 정의하는 유연한 방법을 제공합니다. 테마를 사용하려면 DXP에 코드를 배포해야 하므로 Liferay Experience Cloud SaaS 고객에게는 지원되지 않습니다.
+[테마 소개](https://learn.liferay.com/ko/w/dxp/site-building/site-appearance/themes/introduction-to-themes) 은 Liferay 사이트의 모양과 느낌을 사용자 정의하는 유연한 방법을 제공합니다. 테마를 사용하려면 DXP에 코드를 배포해야 하므로 Liferay Experience Cloud SaaS 고객에게는 지원되지 않습니다.
 
 ### 스타일북
 
 ![Stylebooks are sets of visual standards which apply to a site, such as colors, fonts, and spacing.](./extending-liferay/images/05.png)
 
-[스타일 북](https://learn.liferay.com/en/w/dxp/site-building/site-appearance/style-books/using-a-style-book-to-standardize-site-appearance) 은 색상, 글꼴, 간격 등 사이트에 적용되는 시각적 표준 세트입니다. 이를 통해 각 페이지에서 일관된 경험을 유지하면서 모든 페이지의 레이아웃을 독립적으로 디자인할 수 있습니다.
+[스타일 북을 사용하여 사이트 모양 표준화](https://learn.liferay.com/ko/w/dxp/site-building/site-appearance/style-books/using-a-style-book-to-standardize-site-appearance) 은 색상, 글꼴, 간격 등 사이트에 적용되는 시각적 표준 세트입니다. 이를 통해 각 페이지에서 일관된 경험을 유지하면서 모든 페이지의 레이아웃을 독립적으로 디자인할 수 있습니다.
 
 ### 템플렛
 
@@ -110,8 +110,8 @@ Liferay의 드래그 앤 드롭 인터페이스 덕분에 페이지에 조각을
 또한보십시오:
 
 * [웹 콘텐츠 템플릿](https://learn.liferay.com/web/guest/w/dxp/content-authoring-and-management/web-content/web-content-templates)
-* [정보 템플릿](https://learn.liferay.com/w/dxp/site-building/displaying-content/using-information-templates)
-* [위젯 템플릿](https://learn.liferay.com/w/dxp/site-building/displaying-content/additional-content-display-options/styling-widgets-with-widget-templates)
+* [정보 템플릿 사용](https://learn.liferay.com/w/dxp/site-building/displaying-content/using-information-templates)
+* [위젯 템플릿으로 위젯 스타일 지정](https://learn.liferay.com/w/dxp/site-building/displaying-content/additional-content-display-options/styling-widgets-with-widget-templates)
 
 ## Liferay 확장 * 구성
 

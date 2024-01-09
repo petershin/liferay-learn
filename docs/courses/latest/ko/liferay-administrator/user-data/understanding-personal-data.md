@@ -1,6 +1,6 @@
 # 개인 데이터 이해
 
-고객은 다양한 방식으로 사이트와 상호 작용합니다. 게시판 응답이나 양식 제출과 같은 일부 상호 작용은 시스템에 개인 데이터를 남깁니다. EU의 GDPR과 같은 규정을 준수해야 하는 경우 Liferay는 해당 데이터를 관리하여 규정을 준수할 수 있는 도구를 제공합니다. 사이트에서 생성될 수 있는 다양한 유형의 개인 데이터에 대해 알아보려면 [사용자 데이터 관리](https://learn.liferay.com/w/dxp/users-and-permissions/managing-user-data) 참조하세요.
+고객은 다양한 방식으로 사이트와 상호 작용합니다. 게시판 응답이나 양식 제출과 같은 일부 상호 작용은 시스템에 개인 데이터를 남깁니다. EU의 GDPR과 같은 규정을 준수해야 하는 경우 Liferay는 해당 데이터를 관리하여 규정을 준수할 수 있는 도구를 제공합니다. 사이트에서 생성될 수 있는 다양한 유형의 개인 데이터에 대해 알아보려면 [사용자 데이터 관리(GDPR)](https://learn.liferay.com/w/dxp/users-and-permissions/managing-user-data) 참조하세요.
 
 이 단계와 다음 단계에서는 Liferay의 사용자 데이터 도구를 사용하여 사용자를 비활성화하거나 삭제하고 사용자 데이터를 익명화하거나 삭제합니다.
 
@@ -77,4 +77,4 @@
 
 ## 관련 개념
 
-* [사용자 데이터 관리](https://learn.liferay.com/w/dxp/users-and-permissions/managing-user-data)
+* [사용자 데이터 관리(GDPR)](https://learn.liferay.com/w/dxp/users-and-permissions/managing-user-data)

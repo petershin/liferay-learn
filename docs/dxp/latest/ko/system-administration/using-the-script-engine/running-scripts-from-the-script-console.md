@@ -32,7 +32,7 @@
 
     ![스크립트 콘솔의 샘플 Groovy 스크립트는 사용자 수를 스크립트 콘솔 출력에 인쇄합니다.](./running-scripts-from-the-script-console/images/01.png)
 
-Groovy 샘플은 Liferay 서비스 유틸리티 [`UserLocalServiceUtil`](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/service/UserLocalServiceUtil.html) 을 호출하여 사용자 수를 가져옵니다. 그런 다음 `out` (내장 `PrintWriter`)을 사용하여 스크립트 콘솔에 카운트를 기록합니다.
+Groovy 샘플은 Liferay 서비스 유틸리티 [`UserLocalServiceUtil`](https://resources.learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/service/UserLocalServiceUtil.html) 을 호출하여 사용자 수를 가져옵니다. 그런 다음 `out` (내장 `PrintWriter`)을 사용하여 스크립트 콘솔에 카운트를 기록합니다.
 
 ```{note}
 *out.println* 대신 *System.out.println*을 사용하면 스크립트 콘솔이 아닌 Liferay의 로그 파일에 출력이 인쇄됩니다.

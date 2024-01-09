@@ -13,8 +13,8 @@ visibility:
 * 마스터 페이지는 사용자가 머리글, 바닥글, 탐색 메뉴 등 모든 페이지에 공통 요소를 정의할 수 있는 페이지 템플릿입니다.
 
 ```{note}
-* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/web/guest/d/se1-5-basics-of-styling-in-liferay) 을 확인하세요.
-* 라이브 워크숍에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/documents/d/guest/se1-5-basics-of-styling-in-liferay-pdf) 을 다운로드하세요.
+* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/c/portal/login?p_l_id=3026&redirect=%2Fweb%2Fguest%2Fd%2Fse1-5-basics-of-styling-in-liferay) 을 확인하세요.
+* 라이브 워크숍에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/c/portal/login?redirect=%2Fdocuments%2Fd%2Fguest%2Fse1-5-basics-of-styling-in-liferay-pdf) 을 다운로드하세요.
 ```
 
 ## 사이트 로고 및 파비콘

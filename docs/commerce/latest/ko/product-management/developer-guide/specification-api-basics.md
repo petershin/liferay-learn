@@ -80,7 +80,7 @@ LiferAy가 실행되면
 | `-u "test@liferay.com:learn"`                                                   | 기본 인증 자격 증명을 입력합니다.           |
 
 ```{note}
-여기서는 데모용으로 기본 인증이 사용됩니다. 프로덕션의 경우 [OAuth2](https://learn.liferay.com/en/w/dxp/headless-delivery/using-oauth2) 을 통해 사용자를 인증해야 합니다. OAuth2를 사용하는 샘플 React 애플리케이션은 [OAuth2를 사용하여 사용자 인증하기](https://learn.liferay.com/en/w/dxp/headless-delivery/using-oauth2/using-oauth2-to-authorize-users) 를 참조하세요.
+여기서는 데모용으로 기본 인증이 사용됩니다. 프로덕션의 경우 [OAuth 2.0 사용](https://learn.liferay.com/ko/w/dxp/headless-delivery/using-oauth2) 을 통해 사용자를 인증해야 합니다. OAuth2를 사용하는 샘플 React 애플리케이션은 [OAuth2를 사용하여 사용자 인증](https://learn.liferay.com/ko/w/dxp/headless-delivery/using-oauth2/using-oauth2-to-authorize-users) 를 참조하세요.
 ```
 
 다른 cURL 명령은 유사한 JSON 인수를 사용합니다.

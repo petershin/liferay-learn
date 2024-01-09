@@ -15,7 +15,7 @@
 1. **저장** 클릭하세요.
 
 ```{warning}
-이 기능을 비활성화해야 하는 경우 [blacklist](https://learn.liferay.com/web/guest/w/dxp/system-administration/installing-and-managing-apps/managing-apps/blacklisting-osgi-components.md) 구성 요소입니다. 간격에 0이나 음수를 입력하지 마십시오.
+이 기능을 비활성화해야 하는 경우 [OSGi 구성요소 블랙리스트 작성](https://learn.liferay.com/web/guest/w/dxp/system-administration/installing-and-managing-apps/managing-apps/blacklisting-osgi-components.md) 구성 요소입니다. 간격에 0이나 음수를 입력하지 마십시오.
 ```
 
 ## 관련 주제

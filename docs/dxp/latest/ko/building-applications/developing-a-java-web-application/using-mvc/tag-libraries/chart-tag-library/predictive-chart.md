@@ -84,6 +84,6 @@
 
 ## 관련 주제
 
-* [꺾은선형 차트](./line-chart.md) 
-* [조합 차트](./combination-chart.md) 
-* [지리도 차트](./geomap-chart.md) 
+* [꺾은선형 차트](./line-chart.md)
+* [조합 차트](./combination-chart.md)
+* [지리도 차트](./geomap-chart.md)

@@ -16,6 +16,6 @@ Liferay의 헤드리스 API
 * 다중 채널이며 모바일 앱, 키오스크 및 기타 시나리오에 사용할 수 있습니다.
 * 기존의 기존 REST 및 JSON API 칭찬
 
-* [Liferay를 헤드리스 플랫폼으로 사용](https://learn.liferay.com/w/dxp/headless-delivery/using-liferay-as-a-headless-platform)
+* [라이프 레이를 헤드리스 플랫폼으로 사용](https://learn.liferay.com/w/dxp/headless-delivery/using-liferay-as-a-headless-platform)
 
 다음: [협업 및 지식 공유](./collaboration-and-knowledge-sharing.md).

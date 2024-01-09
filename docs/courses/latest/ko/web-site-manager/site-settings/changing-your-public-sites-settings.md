@@ -103,5 +103,5 @@ Clarity 사이트에는 배너와 동의 패널을 적절하게 구성하기 위
 ## 관련 개념
 
 * [DXP 탐색](https://learn.liferay.com/web/guest/w/dxp/getting-started/navigating-dxp)
-* [사이트 설정 참고](https://learn.liferay.com/web/guest/w/dxp/site-building/site-settings/site-settings-ui-reference)
+* [사이트 설정 UI 참조](https://learn.liferay.com/web/guest/w/dxp/site-building/site-settings/site-settings-ui-reference)
 * [역할 및 권한 이해](https://learn.liferay.com/web/guest/w/dxp/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions)

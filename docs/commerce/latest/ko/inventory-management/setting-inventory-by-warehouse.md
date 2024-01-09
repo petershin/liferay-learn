@@ -104,5 +104,5 @@
 
 ## 관련 주제
 
-* [상업 창고 설치](./setting-up-warehouses.md) 
-* [재고관리 참고가이드](./inventory-management-reference-guide.md) 
+* [상업 창고 설치](./setting-up-warehouses.md)
+* [재고관리 참고가이드](./inventory-management-reference-guide.md)

@@ -59,7 +59,7 @@ Liferay DXP의 모델 클래스는 [서비스 빌더](../../building-application
 
 이 규칙의 예외는 핵심 모델입니다. `User`과 같은 핵심 클래스에 대한 모델 리스너를 생성하려는 경우 Liferay DXP 소스 코드의 [`Portal-kernel`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel) 폴더에서 해당 인터페이스를 찾을 수 있습니다.
 
-생성할 모델 리스너는 Message Boards 메시지용입니다. 메시지가 삭제되면 보고서 로그에 인쇄하는 메시지를 트리거합니다. 가능한 이벤트 목록은 [BaseModelListener](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/model/BaseModelListener.html) 에 대한 Javadoc을 참조하십시오.
+생성할 모델 리스너는 Message Boards 메시지용입니다. 메시지가 삭제되면 보고서 로그에 인쇄하는 메시지를 트리거합니다. 가능한 이벤트 목록은 [BaseModelListener](https://resources.learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/model/BaseModelListener.html) 에 대한 Javadoc을 참조하십시오.
 
 ## 모델 리스너 동작
 
@@ -160,6 +160,6 @@ Liferay DXP의 모델 클래스는 [서비스 빌더](../../building-application
 
 ## 관련 항목
 
-[모델 리스너 Javadoc](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/model/BaseModelListener.html)
+[모델 리스너 Javadoc](https://resources.learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/model/BaseModelListener.html)
 
 [서비스 빌더](../../building-applications/data-frameworks/service-builder.md)

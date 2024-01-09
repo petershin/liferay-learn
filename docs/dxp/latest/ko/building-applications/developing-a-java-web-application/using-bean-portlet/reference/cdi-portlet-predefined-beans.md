@@ -2,7 +2,7 @@
 
 Liferay DXP는 [JSR 362](https://jcp.org/en/jsr/detail?id=362) 에 지정된 대로 Portlet Predefined Beans라는 CDI용 삽입 가능한 포틀릿 아티팩트를 제공합니다.  사전 정의된 Bean에는 두 가지 유형이 있습니다.
 
-* 포틀릿 요청 범위 Bean( [`@PortletRequestScoped`](https://learn.liferay.com/reference/latest/en/portlet-api/javax/portlet/annotations/PortletRequestScoped.html)
+* 포틀릿 요청 범위 Bean( [`@PortletRequestScoped`](https://resources.learn.liferay.com/reference/latest/en/portlet-api/javax/portlet/annotations/PortletRequestScoped.html)
 
 * 종속 범위 콩( [`@Dependent` 범위](https://docs.oracle.com/javaee/7/api/javax/enterprise/context/Dependent.html) )
 

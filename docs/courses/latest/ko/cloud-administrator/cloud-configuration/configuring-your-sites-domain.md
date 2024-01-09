@@ -65,5 +65,5 @@
 ## 관련 개념
 
 * [맞춤 도메인](https://learn.liferay.com/w/liferay-cloud/infrastructure-and-operations/networking/custom-domains)
-* [사용자 정의 SSL 인증서](https://learn.liferay.com/w/liferay-cloud/infrastructure-and-operations/networking/load-balancer#custom-ssl)
-* [VPN 통합](https://learn.liferay.com/w/liferay-cloud/infrastructure-and-operations/networking/vpn-integration-overview)
+* [로드 밸런서](https://learn.liferay.com/w/liferay-cloud/infrastructure-and-operations/networking/load-balancer#custom-ssl)
+* [VPN 통합 개요](https://learn.liferay.com/w/liferay-cloud/infrastructure-and-operations/networking/vpn-integration-overview)

@@ -123,4 +123,4 @@
 
 ## 관련 개념
 
-* [클러스터된 설치 유지 관리](https://learn.liferay.com/en/w/dxp/installation-and-upgrades/maintaining-a-liferay-installation/maintaining-clustered-installations)
+* [클러스터된 설치 유지](https://learn.liferay.com/ko/w/dxp/installation-and-upgrades/maintaining-a-liferay-installation/maintaining-clustered-installations)

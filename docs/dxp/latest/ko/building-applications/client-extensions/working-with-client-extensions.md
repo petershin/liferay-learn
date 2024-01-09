@@ -30,7 +30,7 @@
 
    클라이언트 확장 프로젝트(`client-extensions/` 디렉토리에 있음)를 자신의 작업공간에 복사하거나 샘플 작업공간을 직접 사용할 수 있습니다.
 
-1. Liferay Experience Cloud(LXC)를 사용하는 경우 [`lcp` CLI 도구](https://learn.liferay.com/en/w/liferay-cloud/reference/command-line-tool) 이 있어야 합니다.
+1. Liferay Experience Cloud(LXC)를 사용하는 경우 [명령줄 도구](https://learn.liferay.com/ko/w/liferay-cloud/reference/command-line-tool) 이 있어야 합니다.
 
 ## 클라이언트 확장 프로젝트
 

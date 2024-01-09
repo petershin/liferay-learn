@@ -92,5 +92,5 @@
 
 ## 관련 개념
 
-* [관계 REST API](https://learn.liferay.com/en/w/dxp/building-applications/objects/understanding-object-integrations/using-custom-object-apis#relationship-rest-apis) 
-* [관계 REST API 사용](https://learn.liferay.com/en/w/dxp/building-applications/objects/understanding-object-integrations/using-custom-object-apis/using-relationship-rest-apis) 
+* [사용자 정의 개체 API 사용](https://learn.liferay.com/ko/w/dxp/building-applications/objects/understanding-object-integrations/using-custom-object-apis#relationship-rest-apis)
+* [관계 REST API 사용](https://learn.liferay.com/ko/w/dxp/building-applications/objects/understanding-object-integrations/using-custom-object-apis/using-relationship-rest-apis)

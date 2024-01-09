@@ -6,16 +6,16 @@
 
 사이트 데이터를 이해하려면 다음 단계를 따르세요.
 
-* [사이트 대시보드](../touchpoints/sites-dashboard.md) 
+* [사이트 대시보드](../touchpoints/sites-dashboard.md)
 * [개별 페이지](../touchpoints/pages/pages.md) 및 [경로](../touchpoints/pages/paths.md) 
-* [자산](../touchpoints/assets.md) 
-* [이벤트 분석](../touchpoints/events/events-analysis.md) 
+* [자산](../touchpoints/assets.md)
+* [이벤트 분석](../touchpoints/events/events-analysis.md)
 
 청중을 이해하려면:
 
-* [개인 대시보드](../people/individuals/individuals-dashboard.md) 
-* [개인 프로필](../people/individuals/individual-profiles.md) 
-* [세그먼트](../people/segments/segments.md) 
+* [개인 대시보드](../people/individuals/individuals-dashboard.md)
+* [개인 프로필](../people/individuals/individual-profiles.md)
+* [세그먼트](../people/segments/segments.md)
 
 ```{note}
 세그먼트를 기반으로 분석 데이터를 탐색하려면 먼저 [세그먼트 생성](../people/segments/creating-segments.md) 수행해야 합니다. 이는 귀하가 선택한 속성을 기반으로 함께 집계된 개인 그룹입니다.
@@ -23,7 +23,7 @@
 
 사이트 콘텐츠 최적화:
 
-* [A/B 테스트](../optimization/a-b-testing.md) 
+* [A/B 테스트](../optimization/a-b-testing.md)
 
 ## 작업공간에 다른 사람 초대하기
 

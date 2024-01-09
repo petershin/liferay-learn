@@ -32,8 +32,8 @@ Liferay DXP 시연은 판매 프로세스의 필수 부분은 아니지만 일�
 각 섹션에는 주요 질문에 대한 일련의 가능한 답변이 제공됩니다. 올바른 답변을 선택하는 것은 어렵지 않지만 잘못된 답변은 영업 엔지니어가 데모가 잠재 고객에게 가치가 있는지 확인하기 위해 보다 효과적으로 작업하는 데 도움이 됩니다.
 
 ```{note}
-* 이 모듈의 라이브 워크숍에서 [녹화](https://learn.liferay.com/web/guest/d/se1-5-basics-of-styling-in-liferay) 를 시청하세요.
-* 라이브 워크숍에 사용된 프레젠테이션의 [PDF](https://learn.liferay.com/documents/d/guest/se1-5-basics-of-styling-in-liferay-pdf) 를 다운로드하세요.
+* 이 모듈의 라이브 워크숍에서 [녹화](https://learn.liferay.com/c/portal/login?p_l_id=3026&redirect=%2Fweb%2Fguest%2Fd%2Fse1-5-basics-of-styling-in-liferay) 를 시청하세요.
+* 라이브 워크숍에 사용된 프레젠테이션의 [PDF](https://learn.liferay.com/c/portal/login?redirect=%2Fdocuments%2Fd%2Fguest%2Fse1-5-basics-of-styling-in-liferay-pdf) 를 다운로드하세요.
 ```
 
 ## 데모는 왜 끝나나요?

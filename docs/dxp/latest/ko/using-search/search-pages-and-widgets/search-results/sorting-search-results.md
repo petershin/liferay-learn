@@ -98,7 +98,7 @@
 },
 ```
 
-접미사가 `_sortable`이고 올바른 정렬 유형(`키워드`)이 있는 해당 필드가 있습니다. 정렬 가능한 필드는 [포털 속성](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Lucene%20Search) 통해 도착했습니다.
+접미사가 `_sortable`이고 올바른 정렬 유형(`키워드`)이 있는 해당 필드가 있습니다. 정렬 가능한 필드는 [포털 속성](https://resources.learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) 통해 도착했습니다.
 
 ```properties
 index.sortable.text.fields=firstName,jobTitle,lastName,name,screenName,title

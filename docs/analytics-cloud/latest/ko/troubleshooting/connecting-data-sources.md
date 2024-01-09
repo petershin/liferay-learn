@@ -87,7 +87,7 @@ Liferay DXP 설치는 다음 수정팩 최소 요구 사항을 충족해야 합�
 
 1. [Liferay DXP 데이터 소스를 추가하는 단계를 따르세요](../getting-started/connecting-liferay-dxp-to-analytics-cloud.md).
 
-1. 오류가 지속되면 DXP 인스턴스에서 JSON 웹 서비스가 활성화되어 있는지 확인하세요. 기본적으로 활성화되어 있습니다. [포털 속성](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#JSON) 설정 json.web.service.enabled=false(예: [문맥 재산](https://learn.liferay.com/dxp/latest/ko/installation-and-upgrades/reference/portal-properties.html) 에서 설정)를 사용하여 비활성화한 경우 해당 설정을 삭제하거나 속성 값을 true로 설정하세요.
+1. 오류가 지속되면 DXP 인스턴스에서 JSON 웹 서비스가 활성화되어 있는지 확인하세요. 기본적으로 활성화되어 있습니다. [포털 속성](https://resources.learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) 설정 json.web.service.enabled=false(예: [문맥 재산](https://learn.liferay.com/dxp/latest/ko/installation-and-upgrades/reference/portal-properties.html) 에서 설정)를 사용하여 비활성화한 경우 해당 설정을 삭제하거나 속성 값을 true로 설정하세요.
 
 ## 로그인한 사용자가 익명으로 표시됨
 

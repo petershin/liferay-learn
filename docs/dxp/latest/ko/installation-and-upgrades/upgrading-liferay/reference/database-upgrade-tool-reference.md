@@ -128,14 +128,14 @@ server.detector.server.id=tomcat
 
 #### 포털-업그레이드-데이터베이스.properties 구성하기
 
-다음 정보를 지정하여 업그레이드할 데이터베이스를 구성합니다. 이러한 속성은 `portal-ext.properties` 파일에서 사용하는 [JDBC 포털 속성](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#JDBC) 에 해당합니다.
+다음 정보를 지정하여 업그레이드할 데이터베이스를 구성합니다. 이러한 속성은 `portal-ext.properties` 파일에서 사용하는 [JDBC 포털 속성](https://resources.learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) 에 해당합니다.
 
 * `jdbc.default.driverClassName`
 * `jdbc.default.url`
 * `jdbc.default.username`
 * `jdbc.default.password`
 
-이러한 값에 대한 참조는 최신 [포털 속성 참조](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) 를 참조하세요.
+이러한 값에 대한 참조는 최신 [포털 속성 참조](https://resources.learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) 를 참조하세요.
 
 #### 포털-업그레이드-ext.properties 구성하기
 

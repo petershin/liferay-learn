@@ -107,6 +107,6 @@ optimizing-sites/building-a-responsive-site.md
 ::: -->
 
 :::{grid-item-card} 그리드 조각으로 반응형 레이아웃 구축
-:link: ./optimizing-sites/building-a-반응형-사이트/building-Response-layouts-with-the-grid-fragment.md
+:link: ./optimizing-sites/building-a-responsive-site/building-responsive-layouts-with-the-grid-fragment.md
 :::
 ::::

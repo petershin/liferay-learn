@@ -1,6 +1,6 @@
 # 배포자 애플리케이션에 사용자 정의 레이아웃 및 보기 추가
 
-50개가 넘는 필드가 있는 배포자 응용 프로그램의 현재 사용자 인터페이스는 더 이상 항목을 생성하고 표시하는 데 사용할 수 없습니다. 기본 [레이아웃](https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/layouts) 과 [뷰](https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/views) 에는 모든 개체 필드가 포함되어 알파벳순으로 표시되기 때문입니다. 레이아웃은 개체 항목을 생성하고 편집하기 위한 UI를 제공하고, 보기는 기존 항목을 보고 관리하기 위한 UI를 제공합니다.
+50개가 넘는 필드가 있는 배포자 응용 프로그램의 현재 사용자 인터페이스는 더 이상 항목을 생성하고 표시하는 데 사용할 수 없습니다. 기본 [배치](https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/layouts) 과 [전망](https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/views) 에는 모든 개체 필드가 포함되어 알파벳순으로 표시되기 때문입니다. 레이아웃은 개체 항목을 생성하고 편집하기 위한 UI를 제공하고, 보기는 기존 항목을 보고 관리하기 위한 UI를 제공합니다.
 
 데이터 구조 모델링을 진행하기 전에 cURL 스크립트를 사용하여 배포자 애플리케이션에 대한 사용자 정의 레이아웃과 보기를 만듭니다.
 
@@ -82,5 +82,5 @@ Distributor Application 개체에서 항목 만들기를 연습하여 개체가 
 
 ## 관련 개념
 
-* [레이아웃](https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/layouts) 
-* [견해](https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/views) 
+* [배치](https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/layouts)
+* [전망](https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/views)

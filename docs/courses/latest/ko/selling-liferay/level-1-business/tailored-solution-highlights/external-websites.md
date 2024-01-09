@@ -11,14 +11,14 @@ visibility:
 
 외부 웹사이트를 강화하기 위해 강조해야 할 가장 중요한 기능 중 일부는 다음과 같습니다.
 
-* [디자인 시스템 및 경험 관리](https://learn.liferay.com/w/dxp/site-building)
-* [콘텐츠 및 자산 관리](https://learn.liferay.com/w/dxp/content-authoring-and-management)
-* [로우코드/노코드 애플리케이션 구축](https://learn.liferay.com/w/dxp/building-applications/objects)
-* [세분화 및 개인화](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience)
-* [분석](https://learn.liferay.com/w/analytics-cloud/index) 및 [최적화](https://learn.liferay.com/w/dxp/site-building/optimizing-sites)
-* [데이터 모델링 및 프로세스 자동화](https://learn.liferay.com/w/dxp/process-automation)
-* [검색](https://learn.liferay.com/w/dxp/using-search) 및 [탐색](https://learn.liferay.com/w/dxp/site-building/site-navigation)
-* [헤드리스 API 및 다중 채널](https://learn.liferay.com/w/dxp/headless-delivery)
+* [사이트 구축](https://learn.liferay.com/w/dxp/site-building)
+* [콘텐츠 제작 및 관리](https://learn.liferay.com/w/dxp/content-authoring-and-management)
+* [개체](https://learn.liferay.com/w/dxp/building-applications/objects)
+* [사이트 경험 개인화](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience)
+* [애널리틱 클라우드](https://learn.liferay.com/w/analytics-cloud/index) 및 [사이트 최적화](https://learn.liferay.com/w/dxp/site-building/optimizing-sites)
+* [프로세스 자동화](https://learn.liferay.com/w/dxp/process-automation)
+* [검색 사용](https://learn.liferay.com/w/dxp/using-search) 및 [사이트 내비게이션](https://learn.liferay.com/w/dxp/site-building/site-navigation)
+* [헤드리스 배송](https://learn.liferay.com/w/dxp/headless-delivery)
 
 이 중 두 가지 주요 기능 세트는 다음과 같습니다.
 

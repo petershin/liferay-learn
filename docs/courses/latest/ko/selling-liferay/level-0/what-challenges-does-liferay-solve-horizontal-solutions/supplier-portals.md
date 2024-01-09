@@ -28,15 +28,15 @@ visibility:
 
 공급업체 포털을 구현하면 많은 문제를 해결할 수 있지만 모든 기회가 동일한 문제를 해결할 수 있는 것은 아닙니다. 그러나 다음 기능을 강조하면 공급업체 포털로서 Liferay DXP의 힘을 알 수 있습니다.
 
-* [세분화 & 개인화](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience)
-* [신원 관리 & 접근 제어](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay)
-* [로우코드/노코드 애플리케이션 구축](https://learn.liferay.com/w/dxp/building-applications/objects)
-* [데이터 모델링 & 프로세스 자동화](https://learn.liferay.com/w/dxp/process-automation)
-* [커머스 ](https://learn.liferay.com/w/commerce/index)
-* [디자인 시스템 & 경험 관리](https://learn.liferay.com/w/dxp/site-building)
+* [사이트 경험 개인화](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience)
+* [라이프레이 확보](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay)
+* [개체](https://learn.liferay.com/w/dxp/building-applications/objects)
+* [프로세스 자동화](https://learn.liferay.com/w/dxp/process-automation)
+* [커머스](https://learn.liferay.com/w/commerce/index)
+* [사이트 구축](https://learn.liferay.com/w/dxp/site-building)
 * 통합 & 상호 운용성
-* [검색](https://learn.liferay.com/w/dxp/using-search) & [탐색](https://learn.liferay.com/w/dxp/site-building/site-navigation)
-* [헤드리스 API & 다중 채널](https://learn.liferay.com/w/dxp/headless-delivery)
-* [협업 & 지식공유](https://learn.liferay.com/w/dxp/collaboration-and-social)
+* [검색 사용](https://learn.liferay.com/w/dxp/using-search) & [사이트 내비게이션](https://learn.liferay.com/w/dxp/site-building/site-navigation)
+* [헤드리스 배송](https://learn.liferay.com/w/dxp/headless-delivery)
+* [협업 및 소셜](https://learn.liferay.com/w/dxp/collaboration-and-social)
 
 다음: [파트너 포털](./partner-portals.md). 

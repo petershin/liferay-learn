@@ -71,7 +71,7 @@
 
 ## 관련 주제
 
-* [제품 변형에 대한 SKU 생성](../product-management/creating-and-managing-products/products/creating-skus-for-product-variants.md) 
-* [재고 부족 조치](./low-stock-action.md) 
-* [상업 창고 설치](./setting-up-warehouses.md) 
-* [창고 참조 가이드](./warehouse-reference-guide.md) 
+* [제품 변형에 대한 SKU 생성](../product-management/creating-and-managing-products/products/creating-skus-for-product-variants.md)
+* [재고 부족 조치](./low-stock-action.md)
+* [상업 창고 설치](./setting-up-warehouses.md)
+* [창고 참조 가이드](./warehouse-reference-guide.md)

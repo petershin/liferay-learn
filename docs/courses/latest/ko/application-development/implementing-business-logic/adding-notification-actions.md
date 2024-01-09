@@ -137,4 +137,4 @@ Delectable Bonsai는 새로운 애플리케이션에 대한 가시성을 향상�
 ## 관련 개념
 
 * [개체 작업 정의](https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/actions/defining-object-actions)
-* [알림 작업](https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/actions/understanding-action-types#notification)
+* [작업 유형 이해](https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/actions/understanding-action-types#notification)

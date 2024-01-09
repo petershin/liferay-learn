@@ -1,7 +1,7 @@
 # 샘플 API 애플리케이션 구축
 
 {bdg-secondary}Liferay DXP 2023.Q4+/Portal 7.4 GA96+
-{bdg-link-primary}`[베타 기능](../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
+{bdg-link-primary}` [베타 기능](../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags) `
 
 ```{important}
 API 빌더는 현재 Liferay 객체만 지원하는 베타 기능입니다.

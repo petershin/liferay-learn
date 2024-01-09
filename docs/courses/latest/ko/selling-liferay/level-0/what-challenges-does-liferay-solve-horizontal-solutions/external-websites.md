@@ -33,13 +33,13 @@ Liferay DXP를 사용하여 외부 웹사이트를 구축하는 많은 이유 �
 
 외부 웹사이트를 강화하는 Liferay DXP의 능력을 평가할 때 강조해야 할 가장 중요한 기능 중 일부는 다음과 같습니다.
 
-* [디자인 시스템 & 경험 관리](https://learn.liferay.com/w/dxp/site-building)
-* [콘텐츠 & 자산관리](https://learn.liferay.com/w/dxp/content-authoring-and-management)
-* [로우코드/노코드 애플리케이션 구축](https://learn.liferay.com/w/dxp/building-applications/objects)
-* [세분화 & 개인화](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience)
-* [분석](https://learn.liferay.com/w/analytics-cloud/index) & [최적화](https://learn.liferay.com/w/dxp/site-building/optimizing-sites)
-* [데이터 모델링 & 프로세스 자동화](https://learn.liferay.com/w/dxp/process-automation)
-* [검색](https://learn.liferay.com/w/dxp/using-search) & [탐색](https://learn.liferay.com/w/dxp/site-building/site-navigation)
-* [헤드리스 API & 다중 채널](https://learn.liferay.com/w/dxp/headless-delivery)
+* [사이트 구축](https://learn.liferay.com/w/dxp/site-building)
+* [콘텐츠 제작 및 관리](https://learn.liferay.com/w/dxp/content-authoring-and-management)
+* [개체](https://learn.liferay.com/w/dxp/building-applications/objects)
+* [사이트 경험 개인화](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience)
+* [애널리틱 클라우드](https://learn.liferay.com/w/analytics-cloud/index) & [사이트 최적화](https://learn.liferay.com/w/dxp/site-building/optimizing-sites)
+* [프로세스 자동화](https://learn.liferay.com/w/dxp/process-automation)
+* [검색 사용](https://learn.liferay.com/w/dxp/using-search) & [사이트 내비게이션](https://learn.liferay.com/w/dxp/site-building/site-navigation)
+* [헤드리스 배송](https://learn.liferay.com/w/dxp/headless-delivery)
 
 다음: [공급업체 포털](./supplier-portals.md). 

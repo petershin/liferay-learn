@@ -89,6 +89,6 @@ Liferay의 [Custom Fields](../../../system-administration/configuring-liferay/ad
 
 ## 관련 주제
 
-* [개체에 필드 추가](./fields/adding-fields-to-objects.md) 
-* [개체 관계 정의](./relationships/defining-object-relationships.md) 
-* [개체 작업 정의](./actions/defining-object-actions.md) 
+* [개체에 필드 추가](./fields/adding-fields-to-objects.md)
+* [개체 관계 정의](./relationships/defining-object-relationships.md)
+* [개체 작업 정의](./actions/defining-object-actions.md)

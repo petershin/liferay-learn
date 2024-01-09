@@ -1,6 +1,6 @@
 # 개인 데이터 관리 및 삭제
 
-Liferay는 개인 사용자 데이터를 관리하고 삭제하기 위한 사용자 데이터 도구를 제공합니다. 이러한 도구는 GDPR 요구 사항을 충족하는 데 도움이 될 수 있지만 규정 준수를 보장하지는 않습니다. 자세한 내용은 [사용자 데이터 관리](https://learn.liferay.com/w/dxp/users-and-permissions/managing-user-data) 참조하세요.
+Liferay는 개인 사용자 데이터를 관리하고 삭제하기 위한 사용자 데이터 도구를 제공합니다. 이러한 도구는 GDPR 요구 사항을 충족하는 데 도움이 될 수 있지만 규정 준수를 보장하지는 않습니다. 자세한 내용은 [사용자 데이터 관리(GDPR)](https://learn.liferay.com/w/dxp/users-and-permissions/managing-user-data) 참조하세요.
 
 ## 개인 데이터 내보내기
 
@@ -60,8 +60,8 @@ Liferay는 개인 사용자 데이터를 관리하고 삭제하기 위한 사용
 
 ## 관련 개념
 
-* [사용자 데이터 내보내기](https://learn.liferay.com/en/w/dxp/users-and-permissions/managing-user-data/exporting-user-data)
+* [사용자 데이터 내보내기](https://learn.liferay.com/ko/w/dxp/users-and-permissions/managing-user-data/exporting-user-data)
 
-* [사용자 데이터 삭제](https://learn.liferay.com/en/w/dxp/users-and-permissions/managing-user-data/sanitizing-user-data)
+* [사용자 데이터 삭제](https://learn.liferay.com/ko/w/dxp/users-and-permissions/managing-user-data/sanitizing-user-data)
 
-* [익명 사용자 구성](https://learn.liferay.com/en/w/dxp/users-and-permissions/managing-user-data/configuring-the-anonymous-user)
+* [익명 사용자 구성](https://learn.liferay.com/ko/w/dxp/users-and-permissions/managing-user-data/configuring-the-anonymous-user)

@@ -100,9 +100,9 @@ DXP와 Commerce 활성화 키는 모두 동일한 '라이선스 유형'(예: '�
 프로덕션 라이센스에는 검증을 위해 일치하는 호스트 이름, IP 주소 또는 MAC 주소도 필요합니다.
 ```
 
-* [상거래 활성화 키 얻기](#obtaining-commerce-activation-keys) 
-* [상거래 활성화 키 배포](#deploying-commerce-activation-keys) 
-* [만료된 Commerce Enterprise 라이센스 업데이트](#updating-an-expired-commerce-enterprise-license) 
+* [상거래 활성화 키 얻기](#obtaining-commerce-activation-keys)
+* [상거래 활성화 키 배포](#deploying-commerce-activation-keys)
+* [만료된 Commerce Enterprise 라이센스 업데이트](#updating-an-expired-commerce-enterprise-license)
 
 ### 상거래 활성화 키 얻기
 
@@ -128,7 +128,7 @@ XML 파일을 DXP 인스턴스의 [Liferay Home](https://learn.liferay.com/dxp/l
 
 #### Docker 컨테이너에 배포
 
-XML 파일을 컨테이너의 `/opt/liferay/deploy` 폴더에 복사합니다. 활성화 키를 처리하는 동안 Liferay는 이 파일을 `opt/liferay/osgi/modules` 폴더에 재배치하고 `opt/liferay/data/license` 폴더에 라이센스 파일(`.li`)을 생성합니다. Docker 컨테이너에 파일을 배포하는 방법에 대한 자세한 내용은 [컨테이너에 파일 제공](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/installing-liferay/using-liferay-docker-images/providing-files-to-the-container.html?highlight=opt) 참조하세요.
+XML 파일을 컨테이너의 `/opt/liferay/deploy` 폴더에 복사합니다. 활성화 키를 처리하는 동안 Liferay는 이 파일을 `opt/liferay/osgi/modules` 폴더에 재배치하고 `opt/liferay/data/license` 폴더에 라이센스 파일(`.li`)을 생성합니다. Docker 컨테이너에 파일을 배포하는 방법에 대한 자세한 내용은 [컨테이너에 파일 제공](https://learn.liferay.com/dxp/latest/ko/installation-and-upgrades/installing-liferay/using-liferay-docker-images/providing-files-to-the-container.html?highlight=opt) 참조하세요.
 
 #### Liferay Cloud에 배포
 

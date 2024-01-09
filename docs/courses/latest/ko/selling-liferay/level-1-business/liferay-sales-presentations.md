@@ -26,8 +26,8 @@ visibility:
 포함된 정보는 계정 담당자 및 고객 성공 관리자에게 가장 유용해야 합니다. 이를 통해 적절하고 가장 영향력 있는 영업 홍보를 준비하고 전달할 수 있습니다.
 
 ```{note}
-* 이 모듈의 라이브 워크숍에서 [녹화](https://learn.liferay.com/web/guest/d/sa1-4-liferay-sales-presentations-and-how-to-master-them) 보기 .
-* 에 사용된 프레젠테이션의 [PDF](https://learn.liferay.com/documents/d/guest/sa1-4-liferay-sales-presentations-and-how-to-master-them-pdf) 를 다운로드하세요. 라이브 워크숍.
+* 이 모듈의 라이브 워크숍에서 [녹화](https://learn.liferay.com/c/portal/login?p_l_id=3026&redirect=%2Fweb%2Fguest%2Fd%2Fsa1-4-liferay-sales-presentations-and-how-to-master-them) 보기 .
+* 에 사용된 프레젠테이션의 [PDF](https://learn.liferay.com/c/portal/login?redirect=%2Fdocuments%2Fd%2Fguest%2Fsa1-4-liferay-sales-presentations-and-how-to-master-them-pdf) 를 다운로드하세요. 라이브 워크숍.
 ```
 
 ## 기존 영업 덱의 과제

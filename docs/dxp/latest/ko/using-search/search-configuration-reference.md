@@ -265,7 +265,7 @@ Liferay Enterprise Search 구독을 통해 사용할 수 있는 Liferay Enterpri
 
 ### 문맥 재산
 
-포털 속성도 시스템 범위에 속합니다. [Lucene Search](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Lucene%20Search) 포털 속성은 낮은 수준의 검색 동작을 구성합니다. 속성과 해당 설명을 검토하고 검색 요구 사항에 적용되는지 확인합니다.
+포털 속성도 시스템 범위에 속합니다. [Lucene Search](https://resources.learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) 포털 속성은 낮은 수준의 검색 동작을 구성합니다. 속성과 해당 설명을 검토하고 검색 요구 사항에 적용되는지 확인합니다.
 
 ## 관련 내용
 

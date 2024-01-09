@@ -12,8 +12,8 @@ visibility:
 * 추가 힌트와 팁은 영업 엔지니어가 더욱 효과적으로 데모를 제공할 수 있도록 준비하는 데 도움이 될 수 있습니다.
 
 ```{note}
-* 이 모듈의 라이브 워크숍에서 [녹화](https://learn.liferay.com/web/guest/d/se1-5-basics-of-styling-in-liferay) 를 시청하세요.
-* 라이브 워크숍에 사용된 프레젠테이션의 [PDF](https://learn.liferay.com/documents/d/guest/se1-5-basics-of-styling-in-liferay-pdf) 를 다운로드하세요.
+* 이 모듈의 라이브 워크숍에서 [녹화](https://learn.liferay.com/c/portal/login?p_l_id=3026&redirect=%2Fweb%2Fguest%2Fd%2Fse1-5-basics-of-styling-in-liferay) 를 시청하세요.
+* 라이브 워크숍에 사용된 프레젠테이션의 [PDF](https://learn.liferay.com/c/portal/login?redirect=%2Fdocuments%2Fd%2Fguest%2Fse1-5-basics-of-styling-in-liferay-pdf) 를 다운로드하세요.
 ```
 
 ## 데모 제공 준비

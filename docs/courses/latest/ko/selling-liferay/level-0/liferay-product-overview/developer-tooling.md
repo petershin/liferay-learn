@@ -13,6 +13,6 @@ Liferay는 표준 빌드 스크립팅, 경량 CLI 유틸리티 및 Eclipse 기�
 
 ## 블레이드 CLI
 
-* [블레이드 CLI를 사용하여 프로젝트 생성](https://learn.liferay.com/w/dxp/building-applications/tooling/blade-cli/generating-projects-with-blade-cli)
+* [Blade CLI로 프로젝트 생성](https://learn.liferay.com/w/dxp/building-applications/tooling/blade-cli/generating-projects-with-blade-cli)
 
 다음: [플랫폼 서비스](./platform-services.md).

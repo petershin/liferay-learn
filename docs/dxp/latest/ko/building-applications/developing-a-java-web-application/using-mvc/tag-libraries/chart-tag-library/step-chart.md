@@ -46,6 +46,6 @@
 
 ## 관련 주제
 
-* [꺾은선형 차트](./line-chart.md) 
-* [스플라인 차트](./spline-chart.md) 
-* [분산형 차트](./scatter-chart.md) 
+* [꺾은선형 차트](./line-chart.md)
+* [스플라인 차트](./spline-chart.md)
+* [분산형 차트](./scatter-chart.md)

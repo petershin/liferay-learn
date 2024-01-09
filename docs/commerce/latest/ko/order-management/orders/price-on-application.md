@@ -3,7 +3,7 @@
 {bdg-secondary}`liferay DXP 7.4 U84+/GA84+`
 
 ```{important}
-애플리케이션 가격은 현재 릴리스 기능 플래그 뒤에 있습니다. 자세한 내용은 [릴리스 기능 플래그](https://learn.liferay.com/web/guest/w/dxp/system-administration/configuring-liferay/feature-flags#release-feature-flags) 을 읽어보세요.
+애플리케이션 가격은 현재 릴리스 기능 플래그 뒤에 있습니다. 자세한 내용은 [베타 기능 및 기능 플래그](https://learn.liferay.com/web/guest/w/dxp/system-administration/configuring-liferay/feature-flags#release-feature-flags) 을 읽어보세요.
 ```
 
 카탈로그에 비싸거나 복잡한 제품이 있는 경우 고객이 도움 없이 해당 제품을 구매하는 것을 원하지 않을 수 있습니다. 구매하기 전에 지원 직원의 도움과 개입을 원하는 경우 해당 제품의 가격을 숨기고 고객에게 견적을 요청하도록 요구할 수 있습니다. 이것을 **신청 가격** 이라고 합니다. 고객은 선택적으로 일반 제품이나 장바구니에 대한 견적을 요청할 수 있습니다. 일부 고객은 자율적으로 주문하고 다른 고객은 견적을 요청하도록 계정이나 계정 그룹에 이를 선택적으로 적용할 수도 있습니다.
@@ -124,5 +124,5 @@ SKU의 가격이 기본 가격표에 적용되는 시나리오를 생각해 보�
 ![Click on Quote Processed to process the quote.](./price-on-application/images/06.png)
 
 ```{note}
-이미지: “ [CIFA 세척 배치 플랜트](https://www.cifa.com/en/batching-plants/recycling/cifa-wash) ”
+이미지: “[CIFA 세척 배치 플랜트](https://www.cifa.com/en/batching-plants/recycling/cifa-wash)”
 ```

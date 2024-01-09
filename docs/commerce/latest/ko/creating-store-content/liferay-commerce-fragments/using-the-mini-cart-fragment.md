@@ -73,8 +73,8 @@ SKUs may reach end-of-life (EOL) and be marked as discontinued. Discontinued SKU
 
 ## 관련 주제
 
-[카탈로그](../commerce-storefront-pages/catalog.md) 
+[카탈로그](../commerce-storefront-pages/catalog.md)
 
-[대기 중인 주문](../commerce-storefront-pages/pending-orders.md) 
+[대기 중인 주문](../commerce-storefront-pages/pending-orders.md)
 
-[결제](../commerce-storefront-pages/checkout.md) 
+[결제](../commerce-storefront-pages/checkout.md)

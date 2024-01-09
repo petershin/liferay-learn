@@ -22,7 +22,7 @@ Liferay 조직은 실제 조직 계층을 반영하는 분산 사용자 및 사�
 조직 관리자는 위임된 관리자 **명** 명입니다. 이것은 그들이 귀하의 어깨에서 관리 부담을 덜어주기 위해 귀하가 정의한 귀하의 포털의 일부를 얻는다는 것을 의미합니다. 조직 관리자는 다음 작업을 수행할 수 있습니다.
 
 * 조직 및 하위 조직의 모든 사용자를 관리합니다.
-* 선택적으로 사용자를 조직에 할당합니다(`조직` [포털-ext.properties의 섹션](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html# 참조) 조직)).
+* 선택적으로 사용자를 조직에 할당합니다(`조직` [포털-ext.properties의 섹션](https://resources.learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) 조직)).
 * 사이트 관리자처럼 조직의 사이트를 관리합니다.
 
 조직 관리자는 기본적으로 제어판에 액세스할 수 없습니다. 대신 **내 조직** 링크를 클릭하여 관리하는 모든 조직에 액세스할 수 있습니다.

@@ -412,6 +412,6 @@ futureDates(fieldName, startsFrom, responseDate, years, 0, endsOn, responseDate,
 
 ## 관련 주제
 
-* [객체 생성](../creating-objects.md) 
-* [개체에 필드 추가](../fields/adding-fields-to-objects.md) 
-* [필드 유효성 검사 추가](../validations/adding-field-validations.md) 
+* [객체 생성](../creating-objects.md)
+* [개체에 필드 추가](../fields/adding-fields-to-objects.md)
+* [필드 유효성 검사 추가](../validations/adding-field-validations.md)

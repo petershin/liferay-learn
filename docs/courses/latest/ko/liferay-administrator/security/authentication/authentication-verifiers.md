@@ -24,4 +24,4 @@ Clarity Vision Solutions는 사용하지 않을 특정 기능을 잠그고 싶�
 
 ## 관련 개념
 
-[인증 검증 도구 사용](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/securing-web-services/using-authentication-verifiers)
+[인증 확인자 사용](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/securing-web-services/using-authentication-verifiers)

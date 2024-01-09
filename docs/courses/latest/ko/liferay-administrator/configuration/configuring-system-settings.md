@@ -2,7 +2,7 @@
 
 {bdg-secondary}`LXC-SM 또는 자체 호스팅`
 
-시스템 설정은 인스턴스, 사이트 또는 위젯 전체에 적용됩니다. 여기에서 지정한 설정은 전체 환경에 적용됩니다. 이들 중 일부는 낮은 범위에서 변경할 수 없으며(예: 바이러스 백신 구성) 일부는 낮은 범위에서 재정의할 수 있는 기본값이 됩니다. 자세한 내용은 [시스템 설정](https://learn.liferay.com/en/w/dxp/system-administration/configuring-liferay/system-settings) 을 참조하세요.
+시스템 설정은 인스턴스, 사이트 또는 위젯 전체에 적용됩니다. 여기에서 지정한 설정은 전체 환경에 적용됩니다. 이들 중 일부는 낮은 범위에서 변경할 수 없으며(예: 바이러스 백신 구성) 일부는 낮은 범위에서 재정의할 수 있는 기본값이 됩니다. 자세한 내용은 [시스템 설정](https://learn.liferay.com/ko/w/dxp/system-administration/configuring-liferay/system-settings) 을 참조하세요.
 
 ### LXC의 시스템 설정
 
@@ -36,5 +36,5 @@ Liferay 환경에서 사용하려는 플랫폼에 ClamAV를 설치하고 실행�
 
 ## 관련 개념
 
-* [시스템 설정](https://learn.liferay.com/en/w/dxp/system-administration/configuring-liferay/system-settings)
-* [업로드된 파일에 대한 바이러스 백신 검사 활성화](https://learn.liferay.com/en/w/dxp/system-administration/file-storage/enabling-antivirus-scanning-for-uploaded-files)
+* [시스템 설정](https://learn.liferay.com/ko/w/dxp/system-administration/configuring-liferay/system-settings)
+* [업로드된 파일에 대한 바이러스 백신 검사 활성화](https://learn.liferay.com/ko/w/dxp/system-administration/file-storage/enabling-antivirus-scanning-for-uploaded-files)

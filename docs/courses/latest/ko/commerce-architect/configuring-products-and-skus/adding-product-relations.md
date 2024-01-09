@@ -26,4 +26,4 @@
 
 ## 관련 주제
 
-* [관련 상품, 상향 판매, 교차 판매](https://learn.liferay.com/web/guest/w/commerce/product-management/creating-and-managing-products/products/related-products-up-sells-and-cross-sells) 
+* [관련 제품, 상향 판매 및 교차 판매](https://learn.liferay.com/web/guest/w/commerce/product-management/creating-and-managing-products/products/related-products-up-sells-and-cross-sells) 

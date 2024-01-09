@@ -32,8 +32,8 @@ visibility:
 이는 개발 작업을 수행하지 않고도 데모 스타일을 가장 빠르게 사용자 정의하기 위해 수행할 수 있는 작업이지만 Liferay가 스타일링을 위해 제공하는 유일한 기능은 아닙니다. 이후 모듈에서는 이러한 기능과 고급 기능을 자세히 다룰 것입니다.
 
 ```{note}
-* 이 모듈의 라이브 워크숍에서 [녹화](https://learn.liferay.com/web/guest/d/se1-5-basics-of-styling-in-liferay) 를 시청하세요.
-* 라이브 워크숍에 사용된 프레젠테이션의 [PDF](https://learn.liferay.com/documents/d/guest/se1-5-basics-of-styling-in-liferay-pdf) 를 다운로드하세요.
+* 이 모듈의 라이브 워크숍에서 [녹화](https://learn.liferay.com/c/portal/login?p_l_id=3026&redirect=%2Fweb%2Fguest%2Fd%2Fse1-5-basics-of-styling-in-liferay) 를 시청하세요.
+* 라이브 워크숍에 사용된 프레젠테이션의 [PDF](https://learn.liferay.com/c/portal/login?redirect=%2Fdocuments%2Fd%2Fguest%2Fse1-5-basics-of-styling-in-liferay-pdf) 를 다운로드하세요.
 ```
 
 ## 스타일 북이란 무엇입니까?

@@ -37,7 +37,7 @@
 이제 환율 자동 업데이트가 활성화되어 2시간마다 환율이 업데이트됩니다.
 
 ```{warning}
-이 기능을 비활성화해야 하는 경우 [blacklist](https://learn.liferay.com/web/guest/w/dxp/system-administration/installing-and-managing-apps/managing-apps/blacklisting-osgi-components.md) 구성 요소입니다. 간격에 0이나 음수를 입력하지 마십시오.
+이 기능을 비활성화해야 하는 경우 [OSGi 구성요소 블랙리스트 작성](https://learn.liferay.com/web/guest/w/dxp/system-administration/installing-and-managing-apps/managing-apps/blacklisting-osgi-components.md) 구성 요소입니다. 간격에 0이나 음수를 입력하지 마십시오.
 ```
 
 ## 수동으로 환율 설정

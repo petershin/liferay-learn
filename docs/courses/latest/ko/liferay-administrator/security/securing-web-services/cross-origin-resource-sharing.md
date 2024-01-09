@@ -2,7 +2,7 @@
 
 다른 도메인의 서버가 Liferay 웹 서비스에 액세스하려고 하면 CORS(교차 원본 리소스 공유) 정책에 따라 각 요청이 허용되거나 거부됩니다. 자세한 내용은 [CORS 설정](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/securing-web-services/setting-up-cors) 을 참조하세요.
 
-Clarity Vision Solutions는 사용자가 프로필 필드를 맞춤 설정할 수 있도록 [Liferay 개체](https://learn.liferay.com/w/dxp/building-applications/objects) 를 생성하도록 선택할 수 있습니다. 로컬에서 실행되는 React 애플리케이션에 대한 예를 보려면 아래 단계를 따르세요.
+Clarity Vision Solutions는 사용자가 프로필 필드를 맞춤 설정할 수 있도록 [개체](https://learn.liferay.com/w/dxp/building-applications/objects) 를 생성하도록 선택할 수 있습니다. 로컬에서 실행되는 React 애플리케이션에 대한 예를 보려면 아래 단계를 따르세요.
 
 1. Liferay 개체를 만듭니다.
 

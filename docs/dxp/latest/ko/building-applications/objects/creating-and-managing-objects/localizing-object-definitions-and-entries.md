@@ -40,5 +40,5 @@ Liferay 객체는 지역화 프레임워크와 통합되어 정의 레이블에 
 
 ## 관련 주제
 
-* [객체 생성](./creating-objects.md) 
-* [객체 통합 이해](../understanding-object-integrations.md) 
+* [객체 생성](./creating-objects.md)
+* [객체 통합 이해](../understanding-object-integrations.md)

@@ -129,7 +129,7 @@ REST API를 사용하여 프로그래밍 방식으로 웹 콘텐츠 구조를 �
 REST API를 사용하여 프로그래밍 방식으로 웹 콘텐츠 템플릿을 생성할 수 없습니다.
 ```
 
-구조의 '이미지' 필드를 포함하는 웹 콘텐츠 템플릿을 만듭니다.
+구조의 `이미지` 필드를 포함하는 웹 콘텐츠 템플릿을 만듭니다.
 
 1. 사이트 메뉴(![사이트 메뉴](../../../images/icon-menu.png))를 열고 **콘텐츠 및 데이터** &rarr; **웹 콘텐츠** 로 이동합니다.
 
@@ -153,7 +153,7 @@ REST API를 사용하여 프로그래밍 방식으로 웹 콘텐츠 템플릿을
 
 1. **저장** 을 클릭하세요.
 
-구조의 '이미지' 필드 없이 두 번째 웹 콘텐츠 템플릿을 만듭니다.
+구조의 `이미지` 필드 없이 두 번째 웹 콘텐츠 템플릿을 만듭니다.
 
 1. 템플릿 탭에서 **작업** 버튼(![작업](../../../images/icon-actions.png))을 클릭하고 **복사** 를 선택합니다.
 
@@ -161,7 +161,7 @@ REST API를 사용하여 프로그래밍 방식으로 웹 콘텐츠 템플릿을
 
 1. 템플릿 이름을 **Goo** 로 업데이트하고 **복사** 를 클릭하세요.
 
-   ![Update the Template's name to "Goo".](./advanced-web-content-api/images/09.png)
+   ![Update the Template`s name to "Goo".](./advanced-web-content-api/images/09.png)
 
 1. 템플릿 탭에서 새 **Goo** 템플릿을 클릭하세요.
 
@@ -189,7 +189,7 @@ REST API를 사용하여 프로그래밍 방식으로 웹 콘텐츠 템플릿을
 | :------ | :------- |
 | $1      | `siteId` |
 
-이 코드는 웹 콘텐츠 구조 `id`(`"id" : 43563`) 및 `name`(`"name" : "Foo"`)을 식별할 수 있는 스크립트의 JSON 출력을 보여줍니다. 'contentStructureFields' 섹션에서는 구조 필드를 설명합니다. 이 구조에는 'TextReference', 'ImageReference', 'DateReference' 및 'SingleSelectionReference'라는 네 가지 필드가 포함되어 있습니다.
+이 코드는 웹 콘텐츠 구조 `id`(`"id" : 43563`) 및 `name`(`"name" : "Foo"`)을 식별할 수 있는 스크립트의 JSON 출력을 보여줍니다. `contentStructureFields` 섹션에서는 구조 필드를 설명합니다. 이 구조에는 `TextReference`, `ImageReference`, `DateReference` 및 `SingleSelectionReference`라는 네 가지 필드가 포함되어 있습니다.
 
 ```json
 {
@@ -278,7 +278,7 @@ REST API를 사용하여 프로그래밍 방식으로 웹 콘텐츠 템플릿을
 
 ## 이미지 ID 가져오기
 
-[에](#adding-the-images-to-liferay-dxp) 한 이미지의 ID를 얻으려면 `Documents_GET_FromSite.sh` 스크립트를 사용하세요. 이 스크립트는 'GET' HTTP 메서드와 [Site Id](#identify-the-site-id) 매개변수와 함께 'Document' 서비스를 사용합니다.
+[에](#adding-the-images-to-liferay-dxp) 한 이미지의 ID를 얻으려면 `Documents_GET_FromSite.sh` 스크립트를 사용하세요. 이 스크립트는 `GET` HTTP 메서드와 [Site Id](#identify-the-site-id) 매개변수와 함께 `Document` 서비스를 사용합니다.
 
 | 방법 | 서비스        | 엔드포인트                        |
 | :- | :--------- | :--------------------------- |
@@ -294,7 +294,7 @@ REST API를 사용하여 프로그래밍 방식으로 웹 콘텐츠 템플릿을
 
 ## 웹 콘텐츠 템플릿 받기
 
-사이트의 모든 템플릿을 얻으려면 `ContentTemplates_GET_FromSite` 스크립트를 사용하세요. 이 스크립트는 'GET' HTTP 메소드 및 [Site Id](#identify-the-site-id) 매개변수와 함께 'ContentTemplate' 서비스를 사용합니다.
+사이트의 모든 템플릿을 얻으려면 `ContentTemplates_GET_FromSite` 스크립트를 사용하세요. 이 스크립트는 `GET` HTTP 메소드 및 [Site Id](#identify-the-site-id) 매개변수와 함께 `ContentTemplate` 서비스를 사용합니다.
 
 | 방법 | 서비스               | 엔드포인트                                |
 | :- | :---------------- | :----------------------------------- |
@@ -311,9 +311,9 @@ REST API를 사용하여 프로그래밍 방식으로 웹 콘텐츠 템플릿을
 다음은 스크립트의 JSON 출력입니다. 다음 정보를 확인하세요.
 
 - 이 JSON 출력에는 `"name": "Foo"` 및 `"name": "Goo"`라는 두 가지 템플릿이 있습니다.
-- 'contentStructureId' 필드는 템플릿에 연결된 웹 콘텐츠 구조를 나타냅니다.
+- `contentStructureId` 필드는 템플릿에 연결된 웹 콘텐츠 구조를 나타냅니다.
 - `templateScript`에는 `programmingLanguage`에 지정된 언어로 된 스크립트가 포함되어 있습니다. 이 예에서는 FreeMarker가 언어입니다.
-- `Foo` 템플릿의 `templateScript` 필드에는 `<#if (ImageReference.getData())></#if>`에서 참조되는 이미지 필드가 포함됩니다. 'Goo' 템플릿의 'templateScript' 필드에는 이 참조가 포함되어 있지 않습니다.
+- `Foo` 템플릿의 `templateScript` 필드에는 `<#if (ImageReference.getData())></#if>`에서 참조되는 이미지 필드가 포함됩니다. `Goo` 템플릿의 `templateScript` 필드에는 이 참조가 포함되어 있지 않습니다.
 
 ```json
 {
@@ -430,7 +430,7 @@ Liferay DXP에서 새 웹 콘텐츠 기사를 찾으려면 **사이트 메뉴**(
   - `TextReference`의 텍스트 문자열입니다.
   - `ImageReference`의 이미지.
   - `DateReference`의 날짜 정보입니다.
-  - 'SingleSelectionReference'의 라디오 버튼 컨트롤입니다.
+  - `SingleSelectionReference`의 라디오 버튼 컨트롤입니다.
 
 ```json
 {
@@ -537,7 +537,7 @@ Note: PATCH option information will be included in a follow-up (see LPS-137932).
 웹 콘텐츠 기사는 특정 템플릿에 연결되지 않습니다. 템플릿은 웹 콘텐츠가 렌더링되는 방식을 정의하며 동일한 웹 콘텐츠에 대해 서로 다른 템플릿을 사용할 수 있습니다. 자세한 내용은 [웹 콘텐츠 구조 이해](../web-content-structures/understanding-web-content-structures.md) 참조하세요.
 
 ```{tip}
-웹 콘텐츠 기사는 특정 템플릿에 연결되어 있지 않기 때문에 새 기사를 'POST'할 때 템플릿을 지정할 수 없습니다(HTTP 'POST' 메서드는 템플릿을 설명하는 'renderedContents' 섹션을 무시합니다.)
+웹 콘텐츠 기사는 특정 템플릿에 연결되어 있지 않기 때문에 새 기사를 `POST`할 때 템플릿을 지정할 수 없습니다(HTTP `POST` 메서드는 템플릿을 설명하는 `renderedContents` 섹션을 무시합니다.)
 ```
 
 `./StructuredContentRendered_GET_ById.sh` 스크립트는 선택한 웹 콘텐츠 및 템플릿을 사용하여 웹 콘텐츠를 렌더링합니다. 이 스크립트는 `StructuredContent` 서비스에서 `GET` HTTP 메서드를 사용합니다.
@@ -575,7 +575,7 @@ cURL 스크립트 매개변수:
 
 ## 웹 콘텐츠 기사를 넣어
 
-원본 웹 콘텐츠 정보를 대체하려면 'StructuredContent' 서비스와 함께 'PUT' HTTP 메서드를 사용하세요. `StructuredContent_PUT_ById` 스크립트는 웹 콘텐츠 및 구조 식별자를 사용하여 기사 이름을 `Baker`로 바꾸고 기사 콘텐츠를 `Bar`에서 `Goo`로 바꿉니다.
+원본 웹 콘텐츠 정보를 대체하려면 `StructuredContent` 서비스와 함께 `PUT` HTTP 메서드를 사용하세요. `StructuredContent_PUT_ById` 스크립트는 웹 콘텐츠 및 구조 식별자를 사용하여 기사 이름을 `Baker`로 바꾸고 기사 콘텐츠를 `Bar`에서 `Goo`로 바꿉니다.
 
 | 방법 | 서비스                 | 엔드포인트                                             |
 | :- | :------------------ | :------------------------------------------------ |

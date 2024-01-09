@@ -1,6 +1,6 @@
 # 스크립트에서 Liferay 서비스 호출
 
-많은 스크립팅 시나리오에는 Liferay 서비스를 호출해야 합니다. [Liferay `*ServiceUtil` 클래스](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/) 은 [스크립트 콘솔](./running-scripts-from-the-script-console.md)에서 Liferay 서비스를 호출하는 가장 빠르고 편리한 방법입니다. Java를 사용하는 것과 동일한 방식으로 Groovy를 사용하여 Liferay 서비스를 호출합니다. Groovy의 구문은 간결하고 우아한 스크립트 작성을 용이하게 합니다.
+많은 스크립팅 시나리오에는 Liferay 서비스를 호출해야 합니다. [Liferay `*ServiceUtil` 클래스](https://resources.learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/) 은 [스크립트 콘솔](./running-scripts-from-the-script-console.md)에서 Liferay 서비스를 호출하는 가장 빠르고 편리한 방법입니다. Java를 사용하는 것과 동일한 방식으로 Groovy를 사용하여 Liferay 서비스를 호출합니다. Groovy의 구문은 간결하고 우아한 스크립트 작성을 용이하게 합니다.
 
 Java 코드와 `UserLocalServiceUtil` 을 사용하여 사용자 목록을 검색하고 사용자 이름을 Liferay의 로그에 인쇄하는 Groovy 코드를 비교하여 시연합니다.
 

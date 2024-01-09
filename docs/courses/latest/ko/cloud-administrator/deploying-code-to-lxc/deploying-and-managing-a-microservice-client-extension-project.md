@@ -43,7 +43,7 @@ unzip com.liferay.sample.workspace-latest.zip
 
 샘플 Spring Boot 프로젝트 폴더에서 LXC 인스턴스에 프로젝트를 빌드하고 배포합니다.
 
-1. 이 명령을 실행하여 배포 가능한 [LUFFA](https://learn.liferay.com/w/dxp/building-applications/client-extensions/packaging-client-extensions) 에 프로젝트를 빌드합니다.
+1. 이 명령을 실행하여 배포 가능한 [클라이언트 확장 패키징](https://learn.liferay.com/w/dxp/building-applications/client-extensions/packaging-client-extensions) 에 프로젝트를 빌드합니다.
 
    ```bash
    ../../gradlew clean build
@@ -67,9 +67,9 @@ unzip com.liferay.sample.workspace-latest.zip
 
 ## 객체 데이터 추가
 
-[Liferay 개체](https://learn.liferay.com/w/dxp/building-applications/objects) 은 클라이언트 확장을 사용하여 Liferay에서 데이터를 유지하고 조작하는 이상적인 방법입니다.
+[개체](https://learn.liferay.com/w/dxp/building-applications/objects) 은 클라이언트 확장을 사용하여 Liferay에서 데이터를 유지하고 조작하는 이상적인 방법입니다.
 
-배포한 프로젝트에서 [개체 작업 클라이언트 확장](https://learn.liferay.com/w/dxp/building-applications/client-extensions/microservice-client-extensions#object-action-client-extensions) 중 하나를 호출하는 [작업](https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/actions) 을 사용하여 개체 정의를 만듭니다.
+배포한 프로젝트에서 [마이크로서비스 클라이언트 확장](https://learn.liferay.com/w/dxp/building-applications/client-extensions/microservice-client-extensions#object-action-client-extensions) 중 하나를 호출하는 [액션](https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/actions) 을 사용하여 개체 정의를 만듭니다.
 
 ### 객체 정의 생성
 

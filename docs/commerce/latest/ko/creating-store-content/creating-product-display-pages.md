@@ -4,7 +4,7 @@ Liferay Commerce를 사용하면 개별 매장 제품을 사이트 페이지와 
 
 제품에 대한 표시 페이지를 설정하려면 다음 단계를 따르십시오.
 
-1. 스토어에서 새 사이트 페이지를 만들고 원하는 다른 페이지 요소와 함께 **Product Details** 위젯을 여기에 추가합니다. 자세한 내용은 [콘텐츠 페이지 작성](https://learn.liferay.com/dxp/latest/en/site-building/creating-pages/building_and_managing_content_pages.html) 을 참조하십시오. 이 페이지는 연결된 제품을 표시하는 데 사용되는 레이아웃을 결정합니다.
+1. 스토어에서 새 사이트 페이지를 만들고 원하는 다른 페이지 요소와 함께 **Product Details** 위젯을 여기에 추가합니다. 자세한 내용은 [콘텐츠 페이지 사용](https://learn.liferay.com/ko/w/dxp/site-building/creating-pages/using-content-pages) 을 참조하십시오. 이 페이지는 연결된 제품을 표시하는 데 사용되는 레이아웃을 결정합니다.
 
 1. **글로벌 메뉴**(![Global Menu](../images/icon-applications-menu.png))을 열고 **커머스** 탭을 클릭한 후 **매장 관리** &rarr; **채널** 로 이동합니다.
 

@@ -12,7 +12,7 @@
 
 사용자에게 콘텐츠 추천을 제공하려면 Analytics Cloud를 Liferay DXP 인스턴스에 연결해야 합니다.
 
-Analytics Cloud를 Liferay DXP에 연결하고 사이트의 콘텐츠를 동기화하는 방법을 알아보려면 [Liferay DXP를 Analytics Cloud에 연결](https://learn.liferay.com/analytics-cloud/latest/en/connecting-data-sources/connecting-liferay-dxp-to-analytics-cloud.html) 을 참조하십시오.
+Analytics Cloud를 Liferay DXP에 연결하고 사이트의 콘텐츠를 동기화하는 방법을 알아보려면 [Liferay DXP를 Analytics Cloud에 연결](https://learn.liferay.com/ko/w/analytics-cloud/getting-started/connecting-liferay-dxp-to-analytics-cloud) 을 참조하십시오.
 
 ![Connecting Liferay DXP to Analytics Cloud](./configuring-content-recommendations/images/02.png)
 
@@ -49,6 +49,7 @@ Analytics Cloud를 Liferay DXP에 연결하고 사이트의 콘텐츠를 동기�
 ```{note}
 컬렉션은 Liferay DXP 7.2에서 콘텐츠 세트로 명명됩니다.
 ```
+
 ### 컬렉션 표시 조각 또는 컬렉션 페이지를 사용하여 컬렉션 표시
 
 > liferay DXP 7.3+
@@ -69,6 +70,6 @@ Analytics Cloud를 Liferay DXP에 연결하고 사이트의 콘텐츠를 동기�
 ## 관련 정보
 
 - [콘텐츠 추천 이해하기](./understanding-content-recommendations.md)
-- [Liferay DXP를 Analytics Cloud에 연결하기](https://learn.liferay.com/analytics-cloud/latest/en/connecting-data-sources/connecting-liferay-dxp-to-analytics-cloud.html)
+- [Liferay DXP를 Analytics Cloud에 연결](https://learn.liferay.com/ko/w/analytics-cloud/getting-started/connecting-liferay-dxp-to-analytics-cloud)
 - [컬렉션 만들기](../../../site-building/displaying-content/collections-and-collection-pages/creating-collections.md#creating-a-dynamic-collection)
 - [표시 페이지 템플릿 생성 및 관리](../../displaying-content/using-display-page-templates/creating-and-managing-display-page-templates.md)

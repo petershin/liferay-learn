@@ -86,9 +86,9 @@ Liferay 컨테이너 시작 및 작동에 대한 자세한 내용은 [Liferay Do
 
 각 [Portal Property](../../reference/portal-properties.md)에 대해 **Env** 변수가 있습니다. Env 변수는 Liferay Docker 컨테이너의 포털 속성을 재정의하는 [Docker 환경 변수](https://docs.docker.com/engine/reference/commandline/run/#set-environment-variables--e---env---env-file) 입니다.
 
-1. [Portal Properties](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) 온라인 설명에서 재정의하려는 속성을 찾으십시오.
+1. [Portal Properties](https://resources.learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) 온라인 설명에서 재정의하려는 속성을 찾으십시오.
 
-1. 속성 설명 바로 아래에 표시된 `Env` 변수 이름을 복사합니다. 예를 들어 다음은 [`jdbc.default.jndi.name`](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#JDBC) Portal 속성에 대한 Env 변수입니다.
+1. 속성 설명 바로 아래에 표시된 `Env` 변수 이름을 복사합니다. 예를 들어 다음은 [`jdbc.default.jndi.name`](https://resources.learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) Portal 속성에 대한 Env 변수입니다.
 
     ```properties
     Env: LIFERAY_JDBC_PERIOD_DEFAULT_PERIOD_JNDI_PERIOD_NAME
@@ -193,7 +193,7 @@ LIFERAY_TERMS_PERIOD_OF_PERIOD_USE_PERIOD_REQUIRED=false
     ```
 
 
-사용 조건 요구 사항은 포털 속성을 기반으로 합니다. [기본 포털 속성 설정](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) ( `LIFERAY_TERMS_PERIOD_OF_PERIOD_USE_PERIOD_REQUIRED`검색)에는 사용 약관이 필요합니다. 
+사용 조건 요구 사항은 포털 속성을 기반으로 합니다. [기본 포털 속성 설정](https://resources.learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) ( `LIFERAY_TERMS_PERIOD_OF_PERIOD_USE_PERIOD_REQUIRED`검색)에는 사용 약관이 필요합니다. 
 
     ```properties
     terms.of.use.required=true
@@ -210,7 +210,7 @@ LIFERAY_TERMS_PERIOD_OF_PERIOD_USE_PERIOD_REQUIRED=false
 
 ## 시스템 특성
 
-[시스템 속성](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/system.properties.html) 은 `system-ext.properties` 파일을 사용하여 재정의할 수 있습니다. 이 예에서는 [bind mount](./providing-files-to-the-container.md)을 사용합니다.
+[시스템 속성](https://resources.learn.liferay.com/reference/latest/en/dxp/propertiesdoc/system.properties.html) 은 `system-ext.properties` 파일을 사용하여 재정의할 수 있습니다. 이 예에서는 [bind mount](./providing-files-to-the-container.md)을 사용합니다.
 
 1. 호스트 폴더와 하위 폴더를 생성하여 경로 `[host folder]/files/tomcat/webapps/ROOT/WEB-INF/classes`을 생성합니다. 
 

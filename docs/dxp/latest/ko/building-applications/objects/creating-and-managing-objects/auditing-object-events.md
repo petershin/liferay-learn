@@ -58,5 +58,5 @@ REST API를 사용하여 항목 기록을 보려면 해당 항목에 대한 '보
 
 ## 관련 주제
 
-* [개체](../../objects.md) 
-* [객체 생성 및 관리](../creating-and-managing-objects.md) 
+* [개체](../../objects.md)
+* [객체 생성 및 관리](../creating-and-managing-objects.md)

@@ -1,6 +1,6 @@
 # 서버 관리 및 이메일
 
-서버 관리 콘솔에서 Liferay 인스턴스를 관리하고 모니터링할 수 있습니다. 예를 들어 현재 시스템 또는 포털 속성을 보거나 로깅 및 로그 수준을 구성할 수 있습니다. 여기에서는 전체 시스템에 대한 이메일 서버를 구성할 수도 있습니다. 자세한 내용은 [서버 관리 패널 사용](https://learn.liferay.com/en/w/dxp/system-administration/using-the-server-administration-panel) 을 참조하세요.
+서버 관리 콘솔에서 Liferay 인스턴스를 관리하고 모니터링할 수 있습니다. 예를 들어 현재 시스템 또는 포털 속성을 보거나 로깅 및 로그 수준을 구성할 수 있습니다. 여기에서는 전체 시스템에 대한 이메일 서버를 구성할 수도 있습니다. 자세한 내용은 [서버 관리 패널 사용](https://learn.liferay.com/ko/w/dxp/system-administration/using-the-server-administration-panel) 을 참조하세요.
 
 이메일 알림(예: 사용자 등록, 비밀번호 관리 등)에 사용되는 메일 서버를 구성합니다. Clarity Vision Solutions용 메일 서버를 구성하려면 아래 단계를 따르세요.
 
@@ -71,10 +71,10 @@
 
     ![Liferay has sent a welcome email.](./server-administration-and-email/images/02.png)
 
-이제 Liferay 환경이 메일 서버로 구성되었습니다. 메일을 추가로 사용자 정의하여 각 인스턴스에 대해 다양한 이메일 발신자와 메시지를 구성할 수 있습니다. 자세한 내용은 [인스턴스 이메일 설정](https://learn.liferay.com/en/w/dxp/system-administration/configuring-liferay/virtual-instances/email-settings) 을 참조하세요.
+이제 Liferay 환경이 메일 서버로 구성되었습니다. 메일을 추가로 사용자 정의하여 각 인스턴스에 대해 다양한 이메일 발신자와 메시지를 구성할 수 있습니다. 자세한 내용은 [이메일 설정](https://learn.liferay.com/ko/w/dxp/system-administration/configuring-liferay/virtual-instances/email-settings) 을 참조하세요.
 
 ## 관련 개념
 
-* [서버 관리 패널 사용](https://learn.liferay.com/en/w/dxp/system-administration/using-the-server-administration-panel)
-* [메일 구성](https://learn.liferay.com/en/w/dxp/installation-and-upgrades/setting-up-liferay/configuring-mail)
-* [이메일 설정](https://learn.liferay.com/en/w/dxp/system-administration/configuring-liferay/virtual-instances/email-settings)
+* [서버 관리 패널 사용](https://learn.liferay.com/ko/w/dxp/system-administration/using-the-server-administration-panel)
+* [메일 구성](https://learn.liferay.com/ko/w/dxp/installation-and-upgrades/setting-up-liferay/configuring-mail)
+* [이메일 설정](https://learn.liferay.com/ko/w/dxp/system-administration/configuring-liferay/virtual-instances/email-settings)

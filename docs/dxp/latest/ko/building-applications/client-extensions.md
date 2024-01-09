@@ -34,10 +34,10 @@ toc:
 
 클라이언트 확장의 분류는 다음과 같습니다.
 
-* [배치 클라이언트 확장](#batch-client-extensions) 
-* [구성 클라이언트 확장](#configuration-client-extensions) 
-* [프런트엔드 클라이언트 확장](#front-end-client-extensions) 
-* [마이크로서비스 클라이언트 확장](#microservice-client-extensions) 
+* [배치 클라이언트 확장](#batch-client-extensions)
+* [구성 클라이언트 확장](#configuration-client-extensions)
+* [프런트엔드 클라이언트 확장](#front-end-client-extensions)
+* [마이크로서비스 클라이언트 확장](#microservice-client-extensions)
 
 ### 배치 클라이언트 확장
 
@@ -69,5 +69,5 @@ toc:
 
 ## 관련 주제
 
-* [클라이언트 확장 작업](./client-extensions/working-with-client-extensions.md) 
-* [liferay 작업공간](./tooling/liferay-workspace/what-is-liferay-workspace.md) 
+* [클라이언트 확장 작업](./client-extensions/working-with-client-extensions.md)
+* [liferay 작업공간](./tooling/liferay-workspace/what-is-liferay-workspace.md)

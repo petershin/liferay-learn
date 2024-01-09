@@ -22,8 +22,8 @@ visibility:
 * 포털과 커머스의 연계?
 
 ```{note}
-* 이 모듈의 라이브 워크숍에서 [녹화](https://learn.liferay.com/web/guest/d/l0-3-ideal-customer-profile) 를 확인하세요.
-* 라이브 워크숍에 사용된 프레젠테이션의 [PDF](https://learn.liferay.com/documents/d/guest/l0-3-ideal-customer-profile-pdf) 를 다운로드하세요.
+* 이 모듈의 라이브 워크숍에서 [녹화](https://learn.liferay.com/c/portal/login?p_l_id=3026&redirect=%2Fweb%2Fguest%2Fd%2Fl0-3-ideal-customer-profile) 를 확인하세요.
+* 라이브 워크숍에 사용된 프레젠테이션의 [PDF](https://learn.liferay.com/c/portal/login?redirect=%2Fdocuments%2Fd%2Fguest%2Fl0-3-ideal-customer-profile-pdf) 를 다운로드하세요.
 ```
 
 ## 사용 사례

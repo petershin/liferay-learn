@@ -13,16 +13,16 @@ visibility:
 
 Liferay의 고급 기능 중 일부는 대부분의 고객 포털 솔루션에 통합될 가능성이 높습니다.
 
-* [세분화 및 개인화](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience)
-* [ID 관리 및 액세스 제어](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay)
-* [로우코드/노코드 애플리케이션 구축](https://learn.liferay.com/w/dxp/building-applications/objects)
-* [데이터 모델링 및 프로세스 자동화](https://learn.liferay.com/w/dxp/process-automation)
-* [커머스 ](https://learn.liferay.com/w/commerce/index)
-* [디자인 시스템 및 경험 관리](https://learn.liferay.com/w/dxp/site-building)
+* [사이트 경험 개인화](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience)
+* [라이프레이 확보](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay)
+* [개체](https://learn.liferay.com/w/dxp/building-applications/objects)
+* [프로세스 자동화](https://learn.liferay.com/w/dxp/process-automation)
+* [커머스](https://learn.liferay.com/w/commerce/index)
+* [사이트 구축](https://learn.liferay.com/w/dxp/site-building)
 * 통합 및 상호 운용성
-* [검색](https://learn.liferay.com/w/dxp/using-search) 및 [탐색](https://learn.liferay.com/w/dxp/site-building/site-navigation)
-* [헤드리스 API 및 다중 채널](https://learn.liferay.com/w/dxp/headless-delivery)
-* [협업 및 지식 공유](https://learn.liferay.com/w/dxp/collaboration-and-social)
+* [검색 사용](https://learn.liferay.com/w/dxp/using-search) 및 [사이트 내비게이션](https://learn.liferay.com/w/dxp/site-building/site-navigation)
+* [헤드리스 배송](https://learn.liferay.com/w/dxp/headless-delivery)
+* [협업 및 소셜](https://learn.liferay.com/w/dxp/collaboration-and-social)
 
 두 가지는 특히 고객 포털과 관련이 있습니다.
 

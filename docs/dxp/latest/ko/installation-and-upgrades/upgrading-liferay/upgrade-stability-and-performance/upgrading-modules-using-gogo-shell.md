@@ -134,7 +134,7 @@ The following service(s) are missing:
 
 ## 확인 프로세스 실행
 
-일부 모듈에는 확인 프로세스가 있습니다. 이를 통해 업그레이드가 성공적으로 실행되었는지 확인할 수 있습니다. Liferay DXP를 업그레이드한 후 코어의 프로세스가 자동으로 실행되는지 확인합니다. [`verify.*` 포털 속성](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Verify) 을 구성하고 서버를 다시 시작하여 실행할 수도 있습니다.
+일부 모듈에는 확인 프로세스가 있습니다. 이를 통해 업그레이드가 성공적으로 실행되었는지 확인할 수 있습니다. Liferay DXP를 업그레이드한 후 코어의 프로세스가 자동으로 실행되는지 확인합니다. [`verify.*` 포털 속성](https://resources.learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) 을 구성하고 서버를 다시 시작하여 실행할 수도 있습니다.
 
 사용 가능한 확인 프로세스를 확인하려면 Gogo 셸 명령 `verify:list`을 입력합니다. 확인 프로세스를 실행하려면 `verify:execute [verify_qualified_name]`를 입력하십시오.
 

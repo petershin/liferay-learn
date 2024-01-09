@@ -28,5 +28,5 @@ Adaptive Media를 사용하여 애니메이션 GIF를 최적화하려면 DXP가 
 
 ## 관련 주제
 
-* [적응형 미디어 사용하기](../publishing-and-sharing/using-adaptive-media.md) 
-* [사이트 콘텐츠에 적응된 이미지 사용하기](../publishing-and-sharing/using-adaptive-media/using-adapted-images-in-site-content.md) 
+* [적응형 미디어 사용하기](../publishing-and-sharing/using-adaptive-media.md)
+* [사이트 콘텐츠에 적응된 이미지 사용하기](../publishing-and-sharing/using-adaptive-media/using-adapted-images-in-site-content.md)

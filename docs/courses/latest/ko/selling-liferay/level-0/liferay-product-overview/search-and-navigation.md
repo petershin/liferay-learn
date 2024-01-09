@@ -11,22 +11,22 @@ Liferay DXP를 사용하면 고객에게 맞춤화된 동적 탐색, 카테고�
 
 ## 사이트 검색
 
-* [검색 개요](https://learn.liferay.com/w/dxp/using-search/getting-started/search-overview) 
-* [콘텐츠 검색 중](https://learn.liferay.com/w/dxp/using-search/getting-started/searching-for-content) 
+* [검색 개요](https://learn.liferay.com/w/dxp/using-search/getting-started/search-overview)
+* [콘텐츠 검색 중](https://learn.liferay.com/w/dxp/using-search/getting-started/searching-for-content)
 
 ## 사용자 정의 검색 및 검색 청사진
 
-* [검색 관리 및 튜닝](https://learn.liferay.com/w/dxp/using-search/search-administration-and-tuning) 
-* [청사진 검색](https://learn.liferay.com/w/dxp/using-search/liferay-enterprise-search/search-experiences/search-blueprints) 
+* [검색 관리 및 조정](https://learn.liferay.com/w/dxp/using-search/search-administration-and-tuning)
+* [블루프린트 검색](https://learn.liferay.com/w/dxp/using-search/liferay-enterprise-search/search-experiences/search-blueprints)
 
 ## 기본 탐색
 
-* [사이트 탐색](https://learn.liferay.com/w/dxp/site-building/site-navigation) 
-* [사이트 탐색 관리](https://learn.liferay.com/w/dxp/site-building/site-navigation) 
+* [사이트 내비게이션](https://learn.liferay.com/w/dxp/site-building/site-navigation)
+* [사이트 내비게이션](https://learn.liferay.com/w/dxp/site-building/site-navigation)
 
 ## 향상된 탐색
 
-* [탐색 메뉴](https://learn.liferay.com/w/dxp/site-building/site-navigation/using-the-navigation-menus-application) 
-* [메뉴 표시 구성](https://learn.liferay.com/w/dxp/site-building/site-navigation/configuring-menu-displays) 
+* [탐색 메뉴 애플리케이션 사용](https://learn.liferay.com/w/dxp/site-building/site-navigation/using-the-navigation-menus-application)
+* [메뉴 표시 구성](https://learn.liferay.com/w/dxp/site-building/site-navigation/configuring-menu-displays)
 
-다음: [헤드리스 API 및 다중 채널](./headless-apis-and-multichannel.md) .
+다음: [헤드리스 API 및 다중 채널](./headless-apis-and-multichannel.md).

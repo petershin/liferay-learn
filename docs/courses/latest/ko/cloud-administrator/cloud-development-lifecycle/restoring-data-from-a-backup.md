@@ -46,7 +46,7 @@ UAT Liferay 인스턴스에서 기본 홈 페이지를 삭제하여 재해를 �
 
 1. 페이지 상단의 **사이트 방문** 을 클릭하여 UAT Liferay 인스턴스에 액세스합니다. 이전에 로그인한 세션이 만료된 경우, [프로젝트의 자격 증명 사용](./deploying-and-promoting-to-production.md#accessing-your-uat-environment) 을 통해 인증하세요.
 
-1. [기본 관리자](https://learn.liferay.com/web/guest/w/dxp/getting-started/introduction-to-the-admin-account) 로 로그인하십시오.
+1. [관리자 계정 소개](https://learn.liferay.com/web/guest/w/dxp/getting-started/introduction-to-the-admin-account) 로 로그인하십시오.
 
 1. 화면 왼쪽 탐색 메뉴에서 **사이트 빌더** &rarr; **페이지** 클릭하세요.
 
@@ -82,6 +82,6 @@ UAT Liferay 인스턴스에서 기본 홈 페이지를 삭제하여 재해를 �
 
 ## 관련 개념
 
-* [백업 서비스](https://learn.liferay.com/web/guest/w/liferay-cloud/platform-services/backup-service/backup-service-overview)
+* [백업 서비스 개요](https://learn.liferay.com/web/guest/w/liferay-cloud/platform-services/backup-service/backup-service-overview)
 * [백업에서 데이터 복원](https://learn.liferay.com/web/guest/w/liferay-cloud/platform-services/backup-service/restoring-data-from-a-backup)
-* [Liferay Cloud 서비스에 로그인](https://learn.liferay.com/w/liferay-cloud/getting-started/logging-into-your-liferay-cloud-services)
+* [Liferay 클라우드 서비스에 로그인](https://learn.liferay.com/w/liferay-cloud/getting-started/logging-into-your-liferay-cloud-services)

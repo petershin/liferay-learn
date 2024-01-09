@@ -12,13 +12,13 @@
 
 ![읽기-작성기 데이터베이스 상호 작용](./database-configuration-for-cluster-nodes/images/01.png)
 
-별도의 읽기 및 읽기-쓰기 [데이터 소스](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#JDBC) 에 대한 연결은 다음 섹션에 설명된 대로 JDBC 또는 JNDI [포털 속성](../../reference/portal-properties.md) (예: [`Portal-ext.properties` 파일](../../reference/portal-properties.md))을 사용하여 구성됩니다. 데이터 소스는 읽기/쓰기 데이터베이스 인스턴스가 읽기 데이터베이스 인스턴스에 복제되는 별도의 DXP 데이터베이스 인스턴스를 사용해야 합니다.
+별도의 읽기 및 읽기-쓰기 [데이터 소스](https://resources.learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) 에 대한 연결은 다음 섹션에 설명된 대로 JDBC 또는 JNDI [포털 속성](../../reference/portal-properties.md) (예: [`Portal-ext.properties` 파일](../../reference/portal-properties.md))을 사용하여 구성됩니다. 데이터 소스는 읽기/쓰기 데이터베이스 인스턴스가 읽기 데이터베이스 인스턴스에 복제되는 별도의 DXP 데이터베이스 인스턴스를 사용해야 합니다.
 
 ### JDBC
 
 [JDBC](../../installing-liferay/configuring-a-database.md)을 사용하여 별도의 읽기 및 쓰기 데이터 소스에 직접 연결하도록 `Portal-ext.properties` 파일을 편집하려면 다음 단계를 따르세요.
 
-1. 읽기 및 쓰기 데이터 소스를 분리하도록 JDBC 연결을 구성합니다. 자세한 내용은 [JDBC 속성 참조](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#JDBC) 참조하세요. 예는 다음과 같습니다. 
+1. 읽기 및 쓰기 데이터 소스를 분리하도록 JDBC 연결을 구성합니다. 자세한 내용은 [JDBC 속성 참조](https://resources.learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) 참조하세요. 예는 다음과 같습니다. 
 
     ```properties
     jdbc.read.driverClassName=[place your driver name here]
@@ -56,7 +56,7 @@
     jdbc.write.registerMbeans=true
     ```
 
-1. **(이 단계는 DXP 7.4 U69 이하에만 필요합니다)** 쓰기 데이터 소스(접두사가 ``인 데이터 소스)를 사용하여 [카운터](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Counter) 데이터 소스를 생성하도록 DXP를 구성합니다. 별도의 데이터 소스는 항상 카운터 전용입니다. 
+1. **(이 단계는 DXP 7.4 U69 이하에만 필요합니다)** 쓰기 데이터 소스(접두사가 ``인 데이터 소스)를 사용하여 [카운터](https://resources.learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) 데이터 소스를 생성하도록 DXP를 구성합니다. 별도의 데이터 소스는 항상 카운터 전용입니다. 
 
     ```properties
     counter.jdbc.prefix=jdbc.write.
@@ -64,7 +64,7 @@
 
 1. 선택적으로 데이터 연결의 유효성을 검사하여 잘못된 연결이 정상적으로 처리되는지 확인합니다.
 
-1. **(이 단계는 DXP 7.3 U22, DXP 7.4 U65 이하에만 필요합니다.)** 기본값을 복사하여 읽기-작성기 데이터베이스 구성을 활성화합니다 [`spring.infrastructure.configs` 포털 속성](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Spring) 를 `Portal-ext.properties에` 파일을 만들고 여기에 다음 Spring 구성 파일 경로를 추가합니다.
+1. **(이 단계는 DXP 7.3 U22, DXP 7.4 U65 이하에만 필요합니다.)** 기본값을 복사하여 읽기-작성기 데이터베이스 구성을 활성화합니다 [`spring.infrastructure.configs` 포털 속성](https://resources.learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) 를 `Portal-ext.properties에` 파일을 만들고 여기에 다음 Spring 구성 파일 경로를 추가합니다.
 
    `spring.infrastructure.configs`에 추가 : 
 
@@ -72,7 +72,7 @@
     META-INF/dynamic-data-source-infrastructure-spring.xml
     ```
 
-자세한 내용은 [Spring 구성 포털 속성](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Spring) 을 참조하세요.
+자세한 내용은 [Spring 구성 포털 속성](https://resources.learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) 을 참조하세요.
 
 ### JNDI
 
@@ -110,7 +110,7 @@ JNDI를 사용하여 앱 서버의 읽기 및 쓰기 데이터 소스에 연결�
     jdbc.write.registerMbeans=true
     ```
 
-1. **(이 단계는 DXP 7.4 U69 이하에서만 필요합니다.)** 쓰기 데이터 원본(접두사가 `jdbc.write.`인 데이터 원본)을 사용하여 [카운터](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Counter) 데이터 원본을 만들도록 DXP를 구성합니다. 카운터 전용 데이터 소스는 항상 별도의 데이터 소스입니다.
+1. **(이 단계는 DXP 7.4 U69 이하에서만 필요합니다.)** 쓰기 데이터 원본(접두사가 `jdbc.write.`인 데이터 원본)을 사용하여 [카운터](https://resources.learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) 데이터 원본을 만들도록 DXP를 구성합니다. 카운터 전용 데이터 소스는 항상 별도의 데이터 소스입니다.
 
     ```properties
     counter.jdbc.prefix=jdbc.write.
@@ -118,7 +118,7 @@ JNDI를 사용하여 앱 서버의 읽기 및 쓰기 데이터 소스에 연결�
 
 1. 선택적으로 데이터 연결의 유효성을 검사하여 잘못된 연결이 정상적으로 처리되는지 확인합니다.
 
-1. **(이 단계는 DXP 7.4 U65 이하 또는 DXP 7.3 U22 이하에서만 필요합니다.)** 기본 [`spring.infrastructure.configs` 포털 속성](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Spring) 을 `portal-ext.properties` 파일에 복사하고 다음 Spring 구성 파일 경로를 추가하여 읽기-쓰기 데이터베이스 구성을 사용하도록 설정합니다.
+1. **(이 단계는 DXP 7.4 U65 이하 또는 DXP 7.3 U22 이하에서만 필요합니다.)** 기본 [`spring.infrastructure.configs` 포털 속성](https://resources.learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) 을 `portal-ext.properties` 파일에 복사하고 다음 Spring 구성 파일 경로를 추가하여 읽기-쓰기 데이터베이스 구성을 사용하도록 설정합니다.
    
    `spring.infrastructure.configs`에 추가: 
 
@@ -126,7 +126,7 @@ JNDI를 사용하여 앱 서버의 읽기 및 쓰기 데이터 소스에 연결�
     META-INF/dynamic-data-source-infrastructure-spring.xml
     ```
 
-자세한 내용은 [Spring 구성 포털 속성](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Spring) 을 참조하세요.
+자세한 내용은 [Spring 구성 포털 속성](https://resources.learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) 을 참조하세요.
 
 DXP는 다음에 시작할 때 읽기 데이터 소스, 쓰기 데이터 소스 및 카운터 데이터 소스를 사용합니다.
 

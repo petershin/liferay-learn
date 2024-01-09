@@ -16,7 +16,7 @@ Marcus가 자신의 이메일 주소로 초대장을 보내 Kyle Klein을 팀에
 
    ![팀 페이지를 통해 팀원의 이메일 주소로 초대장을 보냅니다.](./adding-team-members-to-the-project/images/01.png)
 
-1. 해당 역할 [에 대한 역할 드롭다운 메뉴](https://learn.liferay.com/w/liferay-cloud/manage-and-optimize/environment-teams-and-roles#understanding-team-roles) 기여자 ** 선택합니다.
+1. 해당 역할 [환경 팀 및 역할](https://learn.liferay.com/w/liferay-cloud/manage-and-optimize/environment-teams-and-roles#understanding-team-roles) 기여자 ** 선택합니다.
 
 1. **초대장 보내기** 클릭하세요.
 
@@ -32,4 +32,4 @@ Liferay Cloud는 프로젝트에 참여하기 위해 제공된 이메일 주소�
 
 ## 관련 개념
 
-* [환경팀 및 역할](https://learn.liferay.com/w/liferay-cloud/manage-and-optimize/environment-teams-and-roles)
+* [환경 팀 및 역할](https://learn.liferay.com/w/liferay-cloud/manage-and-optimize/environment-teams-and-roles)

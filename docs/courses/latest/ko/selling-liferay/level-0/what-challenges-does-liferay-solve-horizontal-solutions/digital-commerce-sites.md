@@ -36,15 +36,15 @@ Liferay DXP를 디지털 상거래 사이트의 기반으로 사용하면 잠재
 
 Liferay DXP 기반 디지털 상거래 사이트에 대해 잠재 고객과 이야기할 때 특히 중점을 두는 부분은 다음과 같습니다.
 
-* [커머스 ](https://learn.liferay.com/w/commerce/index)
-* [헤드리스 API & 다중 채널](https://learn.liferay.com/w/dxp/headless-delivery)
-* [로우코드/노코드 애플리케이션 구축](https://learn.liferay.com/w/dxp/building-applications/objects)
-* [데이터 모델링 & 프로세스 자동화](https://learn.liferay.com/w/dxp/process-automation)
-* [콘텐츠 & 자산관리 ](https://learn.liferay.com/w/dxp/content-authoring-and-management)
-* [분석](https://learn.liferay.com/w/analytics-cloud/index) & [최적화](https://learn.liferay.com/w/dxp/site-building/optimizing-sites)
-* [세분화 & 개인화](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience)
-* [검색](https://learn.liferay.com/w/dxp/using-search) & [탐색](https://learn.liferay.com/w/dxp/site-building/site-navigation)
+* [커머스](https://learn.liferay.com/w/commerce/index)
+* [헤드리스 배송](https://learn.liferay.com/w/dxp/headless-delivery)
+* [개체](https://learn.liferay.com/w/dxp/building-applications/objects)
+* [프로세스 자동화](https://learn.liferay.com/w/dxp/process-automation)
+* [콘텐츠 제작 및 관리](https://learn.liferay.com/w/dxp/content-authoring-and-management)
+* [애널리틱 클라우드](https://learn.liferay.com/w/analytics-cloud/index) & [사이트 최적화](https://learn.liferay.com/w/dxp/site-building/optimizing-sites)
+* [사이트 경험 개인화](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience)
+* [검색 사용](https://learn.liferay.com/w/dxp/using-search) & [사이트 내비게이션](https://learn.liferay.com/w/dxp/site-building/site-navigation)
 * 통합 & 상호 운용성
-* [디자인 시스템 & 경험 관리](https://learn.liferay.com/w/dxp/site-building)
+* [사이트 구축](https://learn.liferay.com/w/dxp/site-building)
 
 다음: [외부 웹사이트](./external-websites.md). 

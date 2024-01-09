@@ -30,7 +30,7 @@ Liferay 객체는 데이터의 컨테이너로 생각할 수 있습니다. 다�
     3. **개체 이름** : 개체의 정의 이름을 결정하며 개체가 게시된 후에는 변경할 수 없습니다.
 4. **저장** 클릭하세요.
 
-저장하고 나면 구성이나 데이터 요소 없이 빈 개체 초안이 생성됩니다. 개체 초안은 시스템 개체와 함께 개체 관리 UI에서 볼 수 있습니다. 생성 프로세스를 완료하려면 개체 초안을 [편집](https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/creating-objects?p_l_back_url=%2Fsearch%3Fq%3DObjects&highlight=Objects#editing-object-drafts) 한 다음 Liferay 인스턴스에 [게시](https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/creating-objects?p_l_back_url=%2Fsearch%3Fq%3DObjects&highlight=Objects#publishing-object-drafts) 해야 합니다.
+저장하고 나면 구성이나 데이터 요소 없이 빈 개체 초안이 생성됩니다. 개체 초안은 시스템 개체와 함께 개체 관리 UI에서 볼 수 있습니다. 생성 프로세스를 완료하려면 개체 초안을 [객체 생성](https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/creating-objects?p_l_back_url=%2Fsearch%3Fq%3DObjects&highlight=Objects#editing-object-drafts) 한 다음 Liferay 인스턴스에 [객체 생성](https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/creating-objects?p_l_back_url=%2Fsearch%3Fq%3DObjects&highlight=Objects#publishing-object-drafts) 해야 합니다.
 
 ## 객체 편집 및 게시
 
@@ -48,7 +48,7 @@ Liferay 객체는 데이터의 컨테이너로 생각할 수 있습니다. 다�
 1. 개체의 페이지 위젯을 표시합니다. 활성화된 동안 사이트 페이지에 개체의 위젯을 추가할 수 있습니다. [사이트에 개체 위젯 배포](https://learn.liferay.com/w/dxp/building-applications/objects/deploying-object-widgets-to-sites) 참조하십시오.
 1. 저장을 클릭합니다.
 
-구성 및 편집이 완료되면 객체를 [할 수 있습니다](https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/creating-objects) .
+구성 및 편집이 완료되면 객체를 [객체 생성](https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/creating-objects) .
 
 Liferay는 Liferay UI를 통해 개발자가 즉시 사용할 수 있는 객체에 대한 상당한 양의 요소를 생성하기 때문에 이 단계는 실제로 많은 마법이 일어나는 곳입니다. 게시 프로세스에는 다음 작업이 포함됩니다.
 
@@ -77,7 +77,7 @@ Liferay는 Liferay UI를 통해 개발자가 즉시 사용할 수 있는 객체�
 
 Liferay 객체는 Forms 애플리케이션과 통합되므로 사용자 입력을 수신하고 객체 항목을 생성하도록 양식을 설계할 수 있습니다. 이렇게 하려면 먼저 새 양식을 추가하고 개체의 저장소 유형을 사용하도록 구성합니다. 그런 다음 원하는 개체를 선택하고 양식을 디자인한 다음 해당 필드를 선택한 개체의 필드에 매핑합니다. \
 
-자세한 내용은 [객체와 함께 양식 사용](https://learn.liferay.com/w/dxp/building-applications/objects/using-forms-with-objects#using-forms-with-objects) 참조하십시오.
+자세한 내용은 [개체와 함께 양식 사용](https://learn.liferay.com/w/dxp/building-applications/objects/using-forms-with-objects#using-forms-with-objects) 참조하십시오.
 
 ## 헤드리스 객체
 

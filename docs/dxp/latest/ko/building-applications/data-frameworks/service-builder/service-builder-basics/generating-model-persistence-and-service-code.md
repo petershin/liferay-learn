@@ -120,7 +120,7 @@ y7g4-service
 | `이름` | 인스턴스의 이름(문자열). |
 | `설명` | 인스턴스의 설명(문자열). |
 
-`service.xml` 요소에 대한 자세한 내용은 [Liferay Service Builder DTD](https://learn.liferay.com/reference/latest/en/dxp/definitions/liferay-service-builder_7_4_0.dtd.html) 를 참조하세요.
+`service.xml` 요소에 대한 자세한 내용은 [Liferay Service Builder DTD](https://resources.learn.liferay.com/reference/latest/en/dxp/definitions/liferay-service-builder_7_4_0.dtd.html) 를 참조하세요.
 
 ## 지속성 코드 생성
 

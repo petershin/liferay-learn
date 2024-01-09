@@ -29,6 +29,6 @@ visibility:
 이 모듈을 마치면 Liferay DXP의 모든 주요 기능 영역에 대한 높은 수준의 보기를 갖게 됩니다. 이 수업은 Liferay DXP의 [디자인 시스템 및 경험 관리](./liferay-product-overview/design-systems-and-experience-management.md) 기능을 검토하는 것으로 시작됩니다.
 
 ```{note}
-* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/web/guest/d/l0-2b-liferay-overview) 을 확인하세요.
-* 라이브 워크숍에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/documents/d/guest/l0-2b-liferay-overview-pdf) 을 다운로드하세요.
+* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/c/portal/login?p_l_id=3026&redirect=%2Fweb%2Fguest%2Fd%2Fl0-2b-liferay-overview) 을 확인하세요.
+* 라이브 워크숍에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/c/portal/login?redirect=%2Fdocuments%2Fd%2Fguest%2Fl0-2b-liferay-overview-pdf) 을 다운로드하세요.
 ```

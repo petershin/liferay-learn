@@ -71,7 +71,7 @@ Liferay UI taglib는 언어 플래그 아이콘도 표시합니다. 언어 플�
 
 ![앱에서 Font Awesome 아이콘을 사용할 수 있습니다.](./liferay-ui-icons/images/05.png)
 
-위의 예에서는 아이콘의 사용 가능한 속성 중 일부를 사용합니다. 전체 목록은 [Icon taglibdocs](https://learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/liferay-ui/icon.html) 참조하세요. 
+위의 예에서는 아이콘의 사용 가능한 속성 중 일부를 사용합니다. 전체 목록은 [Icon taglibdocs](https://resources.learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/liferay-ui/icon.html) 참조하세요. 
 
 ## 관련 주제
 

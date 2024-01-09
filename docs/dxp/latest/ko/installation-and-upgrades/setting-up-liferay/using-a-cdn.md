@@ -36,7 +36,7 @@ CDN은 다음 요구 사항을 충족해야 합니다.
 
 다음은 CDN을 구성하는 두 가지 방법입니다.
 
-1. [포털 속성](../reference/portal-properties.md) 파일에서 [Content Delivery Network 속성](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Content%20Delivery%20Network) 을 설정합니다.
+1. [포털 속성](../reference/portal-properties.md) 파일에서 [Content Delivery Network 속성](https://resources.learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) 을 설정합니다.
 
 1. 제어판 사용
 

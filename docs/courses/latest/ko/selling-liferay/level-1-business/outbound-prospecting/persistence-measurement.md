@@ -40,7 +40,7 @@ visibility:
 
 매월 말에는 이러한 전환에 대해 달성한 실적을 분석하여 개선이 필요한 영역을 찾아낼 수 있습니다. 이 아웃바운드 생산성 도구를 사용하면 잠재 고객 발굴에 얼마나 많은 시간을 할당해야 하는지 이해할 수 있을 뿐만 아니라 잠재 고객 발굴이 얼마나 효과적인지 측정하여 결과적으로 개선이 가능합니다.
 
-도구의 동적 버전은 [여기](https://learn.liferay.com/documents/d/guest/sdr-productivity-tool) 에서 다운로드할 수 있습니다.
+도구의 동적 버전은 [여기](https://learn.liferay.com/c/portal/login?redirect=%2Fdocuments%2Fd%2Fguest%2Fsdr-productivity-tool) 에서 다운로드할 수 있습니다.
 
 ## 최종 결과
 

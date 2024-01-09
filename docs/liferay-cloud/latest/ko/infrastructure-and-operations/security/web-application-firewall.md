@@ -9,7 +9,7 @@ Liferay Cloud에는 [개인 네트워크](../networking/private-network.md) , �
 ![Figure 1: The Web Application Firewall protects against common attacks.](./web-application-firewall/images/01.png)
 
 ```{note}
- [공유 클러스터 구독에서는 사용자 정의 방화벽 규칙을 사용할 수 없습니다.](../../reference/platform-limitations.md#security).
+ [공유 클러스터 구독에서는 사용자 정의 방화벽 규칙을 사용할 수 없습니다.](../../reference/platform-limitations.md#security) .
 ```
 
 ## ModSecurity 활성화
@@ -25,7 +25,7 @@ ModSecurity는 기본적으로 비활성화되어 있습니다. 이를 활성화
 - **DetectionOnly** : ModSecurity를 활성화합니다. 규칙은 처리되지만 방해가 되는 작업(차단, 거부, 삭제, 허용, 프록시 또는 리디렉션)은 실행되지 않습니다.
 
 ```{tip}
-`LCP_WEBSERVER_MODSECURITY` 환경 변수는 ModSecurity의 자체 [`SecRuleEngine` 지시문과 동일합니다](https://github.com/SpiderLabs/ModSecurity/wiki/Reference-Manual-%28v3.x%29#SecRuleEngine).
+`LCP_WEBSERVER_MODSECURITY` 환경 변수는 ModSecurity의 자체 [`SecRuleEngine` 지시문과 동일합니다](https://github.com/SpiderLabs/ModSecurity/wiki/Reference-Manual-%28v3.x%29#SecRuleEngine) .
 ```
 
 ModSecurity를 활성화하려면 `LCP_WEBSERVER_MODSECURITY` 값을 `On` 또는 `DetectionOnly`로 설정한 다음 [변경 사항 배포](../../build-and-deploy/deploying-changes-via-the-cli-tool.md).

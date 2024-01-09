@@ -115,7 +115,7 @@ assemble:
 그러면 클라이언트 확장이 빌드되고 zip이 Liferay의 `deploy/` 폴더에 배포됩니다.
 
 ```{note}
-클라이언트 확장을 Liferay Experience Cloud에 배포하려면 Liferay Cloud [명령줄 도구를 사용하여](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool) [`lcp 배포`](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool#deploying-to-your-liferay-cloud-environment) 실행합니다.
+클라이언트 확장을 Liferay Experience Cloud에 배포하려면 Liferay Cloud [명령줄 도구](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool) [명령줄 도구](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool#deploying-to-your-liferay-cloud-environment) 실행합니다.
 ```
 
 ```{tip}
@@ -156,6 +156,6 @@ STARTED liferay-sample-theme-spritemap-1_1.0.0
 
 테마 스프라이트 맵 클라이언트 확장을 성공적으로 사용했습니다. 다음으로 다른 클라이언트 확장 유형을 배포해 보세요.
 
-* [CSS 클라이언트 확장 사용하기](./using-a-css-client-extension.md) 
-* [JS 클라이언트 확장 사용하기](./using-a-javascript-client-extension.md) 
-* [테마 Favicon 클라이언트 확장 사용하기](./using-a-theme-favicon-client-extension.md) 
+* [CSS 클라이언트 확장 사용하기](./using-a-css-client-extension.md)
+* [JS 클라이언트 확장 사용하기](./using-a-javascript-client-extension.md)
+* [테마 Favicon 클라이언트 확장 사용하기](./using-a-theme-favicon-client-extension.md)

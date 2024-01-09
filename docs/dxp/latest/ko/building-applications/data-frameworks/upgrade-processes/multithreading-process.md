@@ -145,4 +145,4 @@
 
 1. 예외는 `null`로 설정됩니다.
 
-`processConcurrently()` 메서드에는 두 가지 다른 서명이 있습니다. 이 튜토리얼 예제에서 볼 수 있듯이 하나의 서명은 SQL 쿼리를 소스로 전달합니다. 다른 서명은 배열을 소스로 전달합니다. 자세한 내용은 [BaseDBProcess javadocs](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/dao/db/BaseDBProcess.html#processConcurrently-java.lang.String-com.liferay.petra.function.UnsafeFunction-com.liferay.petra.function.UnsafeConsumer-java.lang.String-) 을 참조하세요.
+`processConcurrently()` 메서드에는 두 가지 다른 서명이 있습니다. 이 튜토리얼 예제에서 볼 수 있듯이 하나의 서명은 SQL 쿼리를 소스로 전달합니다. 다른 서명은 배열을 소스로 전달합니다. 자세한 내용은 [BaseDBProcess javadocs](https://resources.learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/dao/db/BaseDBProcess.html) 을 참조하세요.

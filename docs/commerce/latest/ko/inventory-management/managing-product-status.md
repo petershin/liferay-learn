@@ -104,8 +104,8 @@
 
 ## 관련 주제
 
-* [채널을 사용하여 제품 가시성 구성](../store-management/channels/configuring-product-visibility-using-channels.md) 
-* [간단한 제품 만들기](../product-management/creating-and-managing-products/product-types/creating-a-simple-product.md) 
-* [그룹상품 만들기](../product-management/creating-and-managing-products/product-types/creating-a-grouped-product.md) 
-* [가상상품 생성](../product-management/creating-and-managing-products/product-types/creating-a-virtual-product.md) 
-* [재고 부족 조치](./low-stock-action.md) 
+* [채널을 사용하여 제품 가시성 구성](../store-management/channels/configuring-product-visibility-using-channels.md)
+* [간단한 제품 만들기](../product-management/creating-and-managing-products/product-types/creating-a-simple-product.md)
+* [그룹상품 만들기](../product-management/creating-and-managing-products/product-types/creating-a-grouped-product.md)
+* [가상상품 생성](../product-management/creating-and-managing-products/product-types/creating-a-virtual-product.md)
+* [재고 부족 조치](./low-stock-action.md)

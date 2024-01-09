@@ -29,15 +29,15 @@ visibility:
 
 파트너 포털의 주요 기능은 공급업체 포털에서 강조하는 기능과 유사합니다.
 
-* [세분화 & 개인화](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience)
-* [신원 관리 & 접근 제어](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay)
-* [로우코드/노코드 애플리케이션 구축](https://learn.liferay.com/w/dxp/building-applications/objects)
-* [데이터 모델링 & 프로세스 자동화](https://learn.liferay.com/w/dxp/process-automation)
-* [커머스 ](https://learn.liferay.com/w/commerce/index)
-* [디자인 시스템 & 경험 관리](https://learn.liferay.com/w/dxp/site-building)
+* [사이트 경험 개인화](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience)
+* [라이프레이 확보](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay)
+* [개체](https://learn.liferay.com/w/dxp/building-applications/objects)
+* [프로세스 자동화](https://learn.liferay.com/w/dxp/process-automation)
+* [커머스](https://learn.liferay.com/w/commerce/index)
+* [사이트 구축](https://learn.liferay.com/w/dxp/site-building)
 * 통합 & 상호 운용성
-* [검색](https://learn.liferay.com/w/dxp/using-search) & [탐색](https://learn.liferay.com/w/dxp/site-building/site-navigation)
-* [헤드리스 API & 다중 채널](https://learn.liferay.com/w/dxp/headless-delivery)
-* [협업 & 지식공유](https://learn.liferay.com/w/dxp/collaboration-and-social)
+* [검색 사용](https://learn.liferay.com/w/dxp/using-search) & [사이트 내비게이션](https://learn.liferay.com/w/dxp/site-building/site-navigation)
+* [헤드리스 배송](https://learn.liferay.com/w/dxp/headless-delivery)
+* [협업 및 소셜](https://learn.liferay.com/w/dxp/collaboration-and-social)
 
 다음: [최신 인트라넷](./modern-intranets.md). 

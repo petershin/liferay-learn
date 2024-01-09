@@ -4,7 +4,7 @@
 
 ## 표준 포틀릿 `@PortletApplication` 주석
 
-표준 포틀릿은 [`@PortletApplication`](https://learn.liferay.com/reference/latest/en/portlet-api/javax/portlet/annotations/PortletApplication.html) 주석만 지정하면 됩니다.
+표준 포틀릿은 [`@PortletApplication`](https://resources.learn.liferay.com/reference/latest/en/portlet-api/javax/portlet/annotations/PortletApplication.html) 주석만 지정하면 됩니다.
 
 ```java
 @PortletApplication(version="3.0") // 3.0은 이 주석 속성의 기본값입니다.

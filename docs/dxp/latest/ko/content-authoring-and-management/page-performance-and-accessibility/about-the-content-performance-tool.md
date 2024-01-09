@@ -12,7 +12,7 @@
 
 다음 조건이 충족되면 콘텐츠 성능 도구에 액세스할 수 있습니다.
 
-- Liferay DXP 인스턴스에 활성 [Liferay Analytics Cloud에 대한 연결](https://learn.liferay.com/analytics-cloud/latest/en/connecting-data-sources/connecting-liferay-dxp-to-analytics- cloud.html) 사이트가 동기화됩니다.
+- Liferay DXP 인스턴스에 활성 [Liferay DXP를 Analytics Cloud에 연결](https://learn.liferay.com/ko/w/analytics-cloud/getting-started/connecting-liferay-dxp-to-analytics-cloud) 사이트가 동기화됩니다.
 - 페이지 또는 콘텐츠에 대한 편집 권한이 있습니다.
 - 콘텐츠가 콘텐츠 페이지, 위젯 페이지에 있거나 [디스플레이 페이지 템플릿](../../site-building/displaying-content/using-display-page-templates/publishing-content-with -디스플레이 페이지.md).
 

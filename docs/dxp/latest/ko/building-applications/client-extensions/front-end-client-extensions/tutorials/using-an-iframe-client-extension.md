@@ -50,7 +50,7 @@ liferay-sample-iframe-1-counter-app:
 ## IFrame 클라이언트 확장 배포
 
 ```{note}
-클라이언트 확장을 Liferay Experience Cloud에 배포하려면 Liferay Cloud [명령줄 도구를 사용하여](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool) [`lcp 배포`](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool#deploying-to-your-liferay-cloud-environment) 실행합니다.
+클라이언트 확장을 Liferay Experience Cloud에 배포하려면 Liferay Cloud [명령줄 도구](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool) [명령줄 도구](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool#deploying-to-your-liferay-cloud-environment) 실행합니다.
 ```
 
 ```{include} /_snippets/run-liferay-portal.md
@@ -92,6 +92,6 @@ IFrame은 페이지에 위젯으로 추가됩니다.
 
 ## 관련 주제
 
-* [프런트엔드 클라이언트 확장](../../front-end-client-extensions.md) 
-* [사용자 정의 요소 및 IFrame 클라이언트 확장 이해](../understanding-custom-element-and-iframe-client-extensions.md) 
-* [클라이언트 확장 UI 참조](../client-extensions-ui-reference.md) 
+* [프런트엔드 클라이언트 확장](../../front-end-client-extensions.md)
+* [사용자 정의 요소 및 IFrame 클라이언트 확장 이해](../understanding-custom-element-and-iframe-client-extensions.md)
+* [클라이언트 확장 UI 참조](../client-extensions-ui-reference.md)

@@ -22,7 +22,7 @@
 
 개인화 노력에 특히 유용한 몇 가지 요소가 있습니다.
 
-**부스트 근접성:**는 문서에서 [지오포인트](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/geo-point.html) 필드로 표시된 것처럼 [ipstack](https://ipstack.com) 서비스를 사용하여 검색 결과를 사용자 위치에 더 가깝게 부스트합니다. 아래 예시](#건물-청사진-개인화-검색-결과)는 서비스를 설정하고 근접성 향상 요소를 사용하는 방법을 보여줍니다.
+**부스트 근접성:** [ipstack](https://ipstack.com) 서비스를 사용하여 문서의 [geopoint](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/geo-point.html) 필드에 표시된 대로 사용자 위치에 더 가까운 검색 결과를 제공합니다. [아래 예](#building-a-blueprint-to-personalize-search-results) 에서는 서비스를 설정하고 Boost Proximity Element를 사용하는 방법을 보여줍니다.
 
 **현재 언어에 대한 콘텐츠 부스트:** 현재 세션의 언어와 일치하는 `defaultLanguageId` 필드로 검색 결과를 부스트합니다.
 

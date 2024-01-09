@@ -27,8 +27,8 @@ Liferay [이 직면한](../level-0/main-competitors-faced-by-liferay.md) 주요 
 또한, 경쟁자에 대한 추가 정보가 있는 사람은 누구나 역할을 수행하고 해당 정보를 제공하여 배틀카드를 더욱 향상시킬 수 있습니다. 중요한 정보가 누락된 경우 피드백을 제공해 주세요.
 
 ```{note}
-* 이 모듈의 라이브 워크숍에서 [녹화](https://learn.liferay.com/web/guest/d/sa1-6-competitive-intelligence-battle-cards) 를 시청하세요.
-* 라이브 워크숍에 사용된 프레젠테이션의 [PDF](https://learn.liferay.com/documents/d/guest/sa1-6-competitive-intelligence-battle-cards-pdf) 를 다운로드하세요.
+* 이 모듈의 라이브 워크숍에서 [녹화](https://learn.liferay.com/c/portal/login?p_l_id=3026&redirect=%2Fweb%2Fguest%2Fd%2Fsa1-6-competitive-intelligence-battle-cards) 를 시청하세요.
+* 라이브 워크숍에 사용된 프레젠테이션의 [PDF](https://learn.liferay.com/c/portal/login?redirect=%2Fdocuments%2Fd%2Fguest%2Fsa1-6-competitive-intelligence-battle-cards-pdf) 를 다운로드하세요.
 * Liferay 직원 - [배틀카드](https://sales.liferay.com/group/library/competitive-intel) 를 확인하세요.
 <!-- * Liferay Partners  - View the [Battlecards](https://partner.liferay.com/marketing/marketing-resources/research-analysis/competitive-analysis) . -->
 ```

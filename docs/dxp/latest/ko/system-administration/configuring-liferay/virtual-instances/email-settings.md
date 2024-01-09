@@ -36,7 +36,7 @@
 
 ## 이메일 발송자
 
-이메일 발신자는 이메일 알림을 위한 가상 인스턴스의 관리 이름과 이메일 주소를 지정합니다. `[$FROM_NAME$]` 및 `[$FROM_ADDRESS$]` 변수를 사용하여 알림 템플릿에 이러한 값을 포함할 수 있습니다. [포털 속성](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Admin%20Portlet) 의 기본값은 `admin.email.from.name` 및 `admin.email.from.address`입니다. 이 이름과 이메일 주소는 가상 인스턴스에서 보낸 모든 이메일 메시지의 **From** 필드에 나타납니다.
+이메일 발신자는 이메일 알림을 위한 가상 인스턴스의 관리 이름과 이메일 주소를 지정합니다. `[$FROM_NAME$]` 및 `[$FROM_ADDRESS$]` 변수를 사용하여 알림 템플릿에 이러한 값을 포함할 수 있습니다. [포털 속성](https://resources.learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) 의 기본값은 `admin.email.from.name` 및 `admin.email.from.address`입니다. 이 이름과 이메일 주소는 가상 인스턴스에서 보낸 모든 이메일 메시지의 **From** 필드에 나타납니다.
 
 ![시스템 이메일의 보낸 사람 이름과 주소를 구성합니다.](./email-settings/images/02.png)
 

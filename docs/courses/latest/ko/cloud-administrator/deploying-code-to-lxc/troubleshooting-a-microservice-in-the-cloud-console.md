@@ -1,6 +1,6 @@
 # Cloud Console에서 마이크로서비스 문제 해결
 
-이전에는 피드백 항목이 Liferay에 제출될 때 기록하기 위해 [개체 작업 클라이언트 확장](https://learn.liferay.com/w/dxp/building-applications/client-extensions/microservice-client-extensions#object-action-client-extensions) 을 사용하여 테스트했습니다. 이제 Kyle은 총 항목 수를 기록하기 위해 Spring Boot 애플리케이션에 간단한 카운터 변수를 추가하려고 합니다.
+이전에는 피드백 항목이 Liferay에 제출될 때 기록하기 위해 [마이크로서비스 클라이언트 확장](https://learn.liferay.com/w/dxp/building-applications/client-extensions/microservice-client-extensions#object-action-client-extensions) 을 사용하여 테스트했습니다. 이제 Kyle은 총 항목 수를 기록하기 위해 Spring Boot 애플리케이션에 간단한 카운터 변수를 추가하려고 합니다.
 
 여기에서는 [이전에 배포한](./deploying-and-managing-a-microservice-client-extension-project.md) 샘플 클라이언트 확장 프로젝트를 수정하고 문제가 발생하면 Cloud Console에서 문제를 해결합니다.
 
@@ -165,9 +165,9 @@ printenv | grep "EXISTING"
 
 ## 관련 개념
 
-* [개체 작업 클라이언트 확장](https://learn.liferay.com/w/dxp/building-applications/client-extensions/microservice-client-extensions#object-action-client-extensions)
+* [마이크로서비스 클라이언트 확장](https://learn.liferay.com/w/dxp/building-applications/client-extensions/microservice-client-extensions#object-action-client-extensions)
 * [Liferay 클라우드 서비스 로그 읽기](https://learn.liferay.com/w/liferay-cloud/troubleshooting/reading-liferay-cloud-service-logs)
-* [쉘 액세스](https://learn.liferay.com/w/liferay-cloud/troubleshooting/shell-access)
+* [셸 액세스](https://learn.liferay.com/w/liferay-cloud/troubleshooting/shell-access)
 * [문제 해결 서비스](https://learn.liferay.com/w/liferay-cloud/troubleshooting/troubleshooting-services)
 * [자가 치유](https://learn.liferay.com/w/liferay-cloud/troubleshooting/self-healing)
 * [환경 변수 정의](https://learn.liferay.com/w/liferay-cloud/reference/defining-environment-variables#defining-environment-variables-via-the-liferay-cloud-console)

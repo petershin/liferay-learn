@@ -46,6 +46,6 @@
 
 ## 관련 주제
 
-* [꺾은선형 차트](./line-chart.md) 
-* [단계 차트](./step-chart.md) 
-* [분산형 차트](./scatter-chart.md) 
+* [꺾은선형 차트](./line-chart.md)
+* [단계 차트](./step-chart.md)
+* [분산형 차트](./scatter-chart.md)

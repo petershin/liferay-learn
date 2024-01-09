@@ -40,4 +40,4 @@ Adaptive Media에는 두 가지 선택적 모듈이 더 포함되어 있습니�
 
 **Liferay Adaptive Media Image Content Transformer 이전 버전과의 호환성:** Adaptive Media 설치 전에 생성된 콘텐츠가 해당 콘텐츠를 수동으로 편집할 필요 없이 적응된 이미지를 사용할 수 있도록 보장합니다. 시작 시와 사용자가 콘텐츠를 볼 때 이미지를 변환하므로 성능에 부정적인 영향을 미칠 수 있습니다. 따라서 프로덕션에서 이 모듈을 사용하기 전에 몇 가지 성능 테스트를 실행하는 것이 좋습니다. 이전 콘텐츠가 없거나, 성능 문제가 있거나, 이전 콘텐츠에 조정된 이미지가 필요하지 않은 경우 이 모듈을 비활성화할 수 있습니다.
 
-**Liferay 적응형 미디어 문서 라이브러리 썸네일:** 문서 및 미디어의 썸네일에 적응된 이미지를 사용할 수 있습니다. 이 작업을 수행하려면 먼저 원본 축소판을 적합한 이미지로 [해야 합니다](../publishing-and-sharing/using-adaptive-media/migrating-documents-and-media-thumbnails.md) .
+**Liferay 적응형 미디어 문서 라이브러리 썸네일:** 문서 및 미디어의 썸네일에 적응된 이미지를 사용할 수 있습니다. 이 작업을 수행하려면 먼저 원본 축소판을 적합한 이미지로 [해야 합니다](../publishing-and-sharing/using-adaptive-media/migrating-documents-and-media-thumbnails.md).

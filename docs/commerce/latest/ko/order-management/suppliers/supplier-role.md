@@ -12,7 +12,7 @@
 
 1. 공급자 계정을 선택하고 **사용자** 를 클릭합니다.
 
-1. **추가** 를 클릭하고 **사용자 할당** 을 선택합니다. [**사용자 초대**](https://learn.liferay.com/web/guest/w/commerce/users-and-accounts/account-management/inviting-users-to-an-account) 옵션을 사용하여 사용자를 초대할 수도 있습니다.
+1. **추가** 를 클릭하고 **사용자 할당** 을 선택합니다. [계정에 사용자 초대](https://learn.liferay.com/web/guest/w/commerce/users-and-accounts/account-management/inviting-users-to-an-account) 옵션을 사용하여 사용자를 초대할 수도 있습니다.
 
 1. 사용자를 선택하고 **할당** 을 클릭하세요.
 
@@ -26,6 +26,6 @@
 
 ## 관련 주제
 
-* [공급업체](../../users-and-accounts/roles-and-permissions/commerce-roles-reference.md#supplier) 
-* [계정 공급자](../../users-and-accounts/roles-and-permissions/commerce-roles-reference.md#account-supplier) 
-* [공급업체 계정](./supplier-account.md) 
+* [공급업체](../../users-and-accounts/roles-and-permissions/commerce-roles-reference.md#supplier)
+* [계정 공급자](../../users-and-accounts/roles-and-permissions/commerce-roles-reference.md#account-supplier)
+* [공급업체 계정](./supplier-account.md)

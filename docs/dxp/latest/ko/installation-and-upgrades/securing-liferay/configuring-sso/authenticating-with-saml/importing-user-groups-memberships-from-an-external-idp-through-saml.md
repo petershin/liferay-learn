@@ -107,7 +107,7 @@ Liferay 인스턴스로 이동하기 전 마지막 단계는 SAML 메타데이�
 
 1. **인증서 생성** 클릭합니다.
 
-1. 새 창에서 **okta-saml** **Common Name** 으로 입력하고 **learn****Key Password** 로 입력합니다.
+1. 새 창에서 **okta-saml** **Common Name** 으로 입력하고 **learn** **Key Password** 로 입력합니다.
 
 1. **저장** 클릭합니다.
 

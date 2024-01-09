@@ -16,8 +16,8 @@ visibility:
 * 상향식 성장을 지원하는 자유/취미 플랜 제안
 
 ```{note}
-* 이 모듈의 라이브 워크숍에서 [녹화](https://learn.liferay.com/web/guest/d/sa1-2a-liferay-pricing-saas) 를 확인하세요.
-* 라이브 워크숍에 사용된 프레젠테이션의 [PDF](https://learn.liferay.com/documents/d/guest/sa1-2a-liferay-pricing-saas-pdf) 를 다운로드하세요.
+* 이 모듈의 라이브 워크숍에서 [녹화](https://learn.liferay.com/c/portal/login?p_l_id=3026&redirect=%2Fweb%2Fguest%2Fd%2Fsa1-2a-liferay-pricing-saas) 를 확인하세요.
+* 라이브 워크숍에 사용된 프레젠테이션의 [PDF](https://learn.liferay.com/c/portal/login?redirect=%2Fdocuments%2Fd%2Fguest%2Fsa1-2a-liferay-pricing-saas-pdf) 를 다운로드하세요.
 ```
 
 ## 2023년 가격 수정

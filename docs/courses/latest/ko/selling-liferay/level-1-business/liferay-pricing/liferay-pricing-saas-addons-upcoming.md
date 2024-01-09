@@ -60,7 +60,7 @@ Project Workspace 개념은 Liferay Experience Cloud SaaS를 위한 새로운 �
 
 ### 전용 리소스
 
-Liferay Experience Cloud SaaS는 각 Liferay 고객이 Liferay 인스턴스를 다른 고객과 공유하는 다중 테넌트 환경입니다.  기술적인 측면에서 각 고객은 프로덕션, UAT 및 개발 환경을 위해 Liferay “ [가상 인스턴스](https://learn.liferay.com/web/guest/w/dxp/system-administration/configuring-liferay/virtual-instances/understanding-virtual-instances) ”을 얻습니다.
+Liferay Experience Cloud SaaS는 각 Liferay 고객이 Liferay 인스턴스를 다른 고객과 공유하는 다중 테넌트 환경입니다.  기술적인 측면에서 각 고객은 프로덕션, UAT 및 개발 환경을 위해 Liferay “ [가상 인스턴스 이해](https://learn.liferay.com/web/guest/w/dxp/system-administration/configuring-liferay/virtual-instances/understanding-virtual-instances) ”을 얻습니다.
 
 고객이 자신의 설치를 분리해야 하거나 원하는 경우 전용 Liferay 인스턴스 및 데이터베이스를 제공하는 전용 리소스를 구입할 수 있습니다.
 

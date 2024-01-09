@@ -1,6 +1,6 @@
 # 인스턴스 설정 YAML 구성 참조
 
-인스턴스 설정 클라이언트 확장을 사용하여 [다양한 Liferay 구성을 구성할 수 있습니다](#currently-supported-instance-settings-pids). 각 구성은 PID(영구 ID)로 참조됩니다.
+인스턴스 설정 클라이언트 확장을 사용하여 [다양한 Liferay 구성을 구성할 수 있습니다](#currently-supported-instance-settings-pids) . 각 구성은 PID(영구 ID)로 참조됩니다.
 
 인스턴스 설정 클라이언트 확장을 정의하려면 `client-extension.yaml` 파일을 사용하세요.
 

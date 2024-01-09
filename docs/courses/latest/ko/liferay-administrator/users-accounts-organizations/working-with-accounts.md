@@ -1,6 +1,6 @@
 # 계정 작업
 
-Liferay의 계정은 B2C(즉, 기업 대 소비자) 컨텍스트에서 개별 고객을 나타낼 수 있습니다. 또는 여러 사용자가 있는 B2B(즉, B2B) 컨텍스트를 나타낼 수도 있습니다. 자세한 내용은 [Accounts](https://learn.liferay.com/en/w/dxp/users-and-permissions/accounts) 을 참조하세요.
+Liferay의 계정은 B2C(즉, 기업 대 소비자) 컨텍스트에서 개별 고객을 나타낼 수 있습니다. 또는 여러 사용자가 있는 B2B(즉, B2B) 컨텍스트를 나타낼 수도 있습니다. 자세한 내용은 [계정](https://learn.liferay.com/ko/w/dxp/users-and-permissions/accounts) 을 참조하세요.
 
 Opportune Optics는 전국에서 안경 매장을 운영하고 있습니다. 각 매장은 Clarity Vision Solutions에서 안경을 구매합니다. 아래 예는 시장 중 하나를 설정 및 설명하고 계정 사용자를 할당하는 방법을 보여줍니다.
 
@@ -121,8 +121,8 @@ Noah Norman에게 주문 관리자 역할을 할당합니다. 이러한 방식�
 
 ## 관련 개념
 
-* [Accounts](https://learn.liferay.com/en/w/dxp/users-and-permissions/accounts)
-* [계정 사용자](https://learn.liferay.com/en/w/dxp/users-and-permissions/accounts/account-users)
-* [계정 그룹](https://learn.liferay.com/en/w/dxp/users-and-permissions/accounts/account-groups)
-* [계정 역할](https://learn.liferay.com/en/w/dxp/users-and-permissions/accounts/account-roles)
-* [상거래 역할 참조](https://learn.liferay.com/en/w/commerce/users-and-accounts/roles-and-permissions/commerce-roles-reference)
+* [계정](https://learn.liferay.com/ko/w/dxp/users-and-permissions/accounts)
+* [계정 사용자](https://learn.liferay.com/ko/w/dxp/users-and-permissions/accounts/account-users)
+* [계정 그룹](https://learn.liferay.com/ko/w/dxp/users-and-permissions/accounts/account-groups)
+* [계정 역할](https://learn.liferay.com/ko/w/dxp/users-and-permissions/accounts/account-roles)
+* [상거래 역할 참조](https://learn.liferay.com/ko/w/commerce/users-and-accounts/roles-and-permissions/commerce-roles-reference)

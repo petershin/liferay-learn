@@ -4,9 +4,9 @@
 
 콘텐츠 페이지 편집기를 사용하면 콘텐츠 페이지에 [를](./adding-elements-to-content-pages.md) 하고 구성할 수 있습니다. 콘텐츠 페이지 편집기를 열려면 콘텐츠 페이지로 이동하여 **편집**(![아이콘 편집](../../../images/icon-edit.png))을 클릭하세요. 그러면 콘텐츠 페이지 작성을 위한 도구와 구성 요소가 포함된 편집 도구 모음과 사이드바가 표시됩니다.
 
-* [편집 도구 모음](#editing-toolbar) 
+* [편집 도구 모음](#editing-toolbar)
 
-* [사이드바 편집](#editing-sidebar) 
+* [사이드바 편집](#editing-sidebar)
 
 ![Click the Edit button to access the editing toolbar and sidebar.](./content-page-editor-ui-reference/images/01.png)
 

@@ -16,13 +16,13 @@ visibility:
 * Liferay의 분석 기능을 통해 관리자와 마케팅 담당자는 Liferay 사이트의 성능을 이해하고 개선할 수 있습니다.
 
 ```{note}
-* 이 모듈의 라이브 워크숍에서 [녹화](https://learn.liferay.com/web/guest/d/se1-4-experience-management) 를 확인하세요.
-* 라이브 워크숍에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/documents/d/guest/se1-4-experience-management-pdf) 를 다운로드하세요.
+* 이 모듈의 라이브 워크숍에서 [녹화](https://learn.liferay.com/c/portal/login?p_l_id=3026&redirect=%2Fweb%2Fguest%2Fd%2Fse1-4-experience-management) 를 확인하세요.
+* 라이브 워크숍에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/c/portal/login?redirect=%2Fdocuments%2Fd%2Fguest%2Fse1-4-experience-management-pdf) 를 다운로드하세요.
 ```
 
 ## 만족한 관리
 
-Liferay는 기술적인 지식이 없는 사용자도 콘텐츠를 생성, 관리 및 구성할 수 있는 강력한 콘텐츠 관리 시스템(CMS)을 제공합니다. Liferay는 [웹 콘텐츠](https://learn.liferay.com/w/dxp/content-authoring-and-management/web-content) , [문서 및 미디어](https:// learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media) , 컬렉션, [Blogs](https://learn.liferay.com/w/dxp/content-authoring-and-management) /블로그) 등이 있습니다.
+Liferay는 기술적인 지식이 없는 사용자도 콘텐츠를 생성, 관리 및 구성할 수 있는 강력한 콘텐츠 관리 시스템(CMS)을 제공합니다. Liferay는 [웹 콘텐츠](https://learn.liferay.com/w/dxp/content-authoring-and-management/web-content) , [문서 및 미디어](hhttps://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media) , 컬렉션, [콘텐츠 제작 및 관리](https://learn.liferay.com/w/dxp/content-authoring-and-management/blogs) 등이 있습니다.
 
 데모 중에는 다음과 같은 다양한 이점이 강조될 수 있습니다.
 
@@ -30,7 +30,7 @@ Liferay는 기술적인 지식이 없는 사용자도 콘텐츠를 생성, 관�
 1. 사용자는 한 사이트에 저장하고 여러 사이트에서 공유할 수 있는 문서, 이미지, 비디오 및 기타 요소와 같은 재사용 가능한 구성 요소를 사용하여 콘텐츠를 만드는 시간과 노력을 절약할 수 있습니다.
 1. 사용자는 사이트의 디지털 자산을 신속하게 구성, 검색 또는 미리 볼 수 있습니다.
    1. 콘텐츠는 폴더와 하위 폴더로 구성될 수 있습니다.
-   1. [카테고리 및 태그](https://learn.liferay.com/w/dxp/content-authoring-and-management/tags-and-categories) 를 할당하면 최종 사용자가 올바른 콘텐츠를 쉽게 찾을 수 있습니다. 그리고 적합한 제품이나 서비스를 비교하거나 선택하세요.
+   1. [태그 및 카테고리](https://learn.liferay.com/w/dxp/content-authoring-and-management/tags-and-categories) 를 할당하면 최종 사용자가 올바른 콘텐츠를 쉽게 찾을 수 있습니다. 그리고 적합한 제품이나 서비스를 비교하거나 선택하세요.
 
 ### 데모를 위한 팁
 
@@ -39,11 +39,11 @@ Liferay는 기술적인 지식이 없는 사용자도 콘텐츠를 생성, 관�
 * **번역** . 잠재 고객에게 현지화가 중요한 경우 콘텐츠를 수동 또는 자동으로 번역하는 방법을 보여주세요.
 * **컨텐츠 게시** . Liferay에는 예약 게시, 자동 만료 등을 지원하는 콘텐츠 게시 기능이 포함되어 있다는 점을 언급하세요.
 * **네이티브 프레임워크와 통합** . 모든 콘텐츠(웹 콘텐츠, 블로그, 문서 등)가 권한 프레임워크, 검색 엔진, 워크플로우 엔진과 같은 핵심 Liferay 기능과 통합됩니다.
-* **Office 365 및 Google 드라이브 통합** . 잠재 고객이 문서 관리에 관심이 있는 경우 Liferay DXP와 [Office 365](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media) 가 제공하는 기본 통합을 언급하세요. /devops/enabling-document-creation-and-editing-with-microsoft-office-365) 및 [Google 드라이브](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents) -and-media/devops/google-drive-integration). 이러한 통합을 통해 사용자는 언급된 모든 DXP 기능을 활용하는 이점과 함께 Liferay 내부에 익숙한 도구를 사용하여 문서를 작성할 수 있습니다.
+* **Office 365 및 Google 드라이브 통합** . 잠재 고객이 문서 관리에 관심이 있는 경우 Liferay DXP와 [문서 및 미디어](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/devops/enabling-document-creation-and-editing-with-microsoft-office-365) 및 [Google 드라이브](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/devops/google-drive-integration). 이러한 통합을 통해 사용자는 언급된 모든 DXP 기능을 활용하는 이점과 함께 Liferay 내부에 익숙한 도구를 사용하여 문서를 작성할 수 있습니다.
 
 ## 해석학
 
-Liferay의 [분석 기능](https://learn.liferay.com/w/analytics-cloud/getting-started/viewing-the-analytics-dashboard) 은 고객이 사용자가 콘텐츠와 상호 작용하는 방식을 이해하는 데 도움이 될 수 있습니다. 보다 관련성이 높고 맞춤화된 경험을 제공하는 데 도움이 되는 중요한 도구입니다. Liferay Analytics Cloud는 조직이 개선 영역을 식별하는 분석을 통해 디지털 경험 결과를 최적화하는 데 도움을 줍니다.
+Liferay의 [Analytics 대시보드 보기](https://learn.liferay.com/w/analytics-cloud/getting-started/viewing-the-analytics-dashboard) 은 고객이 사용자가 콘텐츠와 상호 작용하는 방식을 이해하는 데 도움이 될 수 있습니다. 보다 관련성이 높고 맞춤화된 경험을 제공하는 데 도움이 되는 중요한 도구입니다. Liferay Analytics Cloud는 조직이 개선 영역을 식별하는 분석을 통해 디지털 경험 결과를 최적화하는 데 도움을 줍니다.
 
 ![Liferay's analytics capabilities are accessed via the Analytics Cloud console.](./content-management-analytics/images/01.png)
 
@@ -51,7 +51,7 @@ Analytics를 시연하려면 의미 있는 결과를 제공할 만큼 환경에 
 
 Liferay의 분석 기능을 시연하거나 이에 대해 이야기할 때마다 Google Analytics와 같은 다른 도구와 비교하여 솔루션 사용의 주요 이점을 강조하십시오.
 
-Liferay Analytics는 고객에게 원활한 경험을 제공하도록 설계되었으며 기본적으로 Liferay DXP와 통합되었습니다. 고객이 사이트의 모든 페이지에 자바스크립트 코드를 수동으로 추가할 필요가 없습니다. Liferay UI를 통해 easy [configuration](https://learn.liferay.com/w/analytics-cloud/getting-started/connecting-liferay-dxp-to-analytics-cloud) 으로 분석 추적이 활성화됩니다. 또한 고객은 Analytics 콘솔에 액세스할 필요 없이 DXP에서 직접 페이지 성능을 볼 수 있습니다.
+Liferay Analytics는 고객에게 원활한 경험을 제공하도록 설계되었으며 기본적으로 Liferay DXP와 통합되었습니다. 고객이 사이트의 모든 페이지에 자바스크립트 코드를 수동으로 추가할 필요가 없습니다. Liferay UI를 통해 easy [Liferay DXP를 Analytics Cloud에 연결](https://learn.liferay.com/w/analytics-cloud/getting-started/connecting-liferay-dxp-to-analytics-cloud) 으로 분석 추적이 활성화됩니다. 또한 고객은 Analytics 콘솔에 액세스할 필요 없이 DXP에서 직접 페이지 성능을 볼 수 있습니다.
 
 사이트 페이지에서 사용자 정의 이벤트를 트리거하여 작성해야 하는 보고서 및 자산 분석이 기본적으로 제공됩니다. 예를 들어 문서 다운로드, 양식 및 포기율, 쿼리 검색, 사용자가 보여준 관심 분야 등에 대한 분석이 있습니다.
 

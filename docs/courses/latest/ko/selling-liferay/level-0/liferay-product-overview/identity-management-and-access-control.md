@@ -11,19 +11,19 @@ visibility:
 
 ## 신원 관리
 
-* [기본 사용자 관리](https://learn.liferay.com/w/dxp/users-and-permissions/users)
-* [SAML](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/configuring-sso/authenticating-with-saml) , OIDC, [LDAP](https://learn.liferay.com/w/dxp/users-and-permissions/connecting-to-a-user-directory/connecting-to-an-ldap-directory) 등 [외부 IdM](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/configuring-sso) 과 통합
+* [사용자](https://learn.liferay.com/w/dxp/users-and-permissions/users)
+* [SAML로 인증](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/configuring-sso/authenticating-with-saml) , OIDC, [LDAP 디렉토리에 연결](https://learn.liferay.com/w/dxp/users-and-permissions/connecting-to-a-user-directory/connecting-to-an-ldap-directory) 등 [싱글 사인온 구성](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/configuring-sso) 과 통합
 
 ## 액세스 제어
 
-* [세부적인 역할 및 권한 모델](https://learn.liferay.com/w/dxp/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions)
+* [역할 및 권한 이해](https://learn.liferay.com/w/dxp/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions)
 
 ## 다단계 인증(MFA)
 
-* [OTP, 시간 기반 OTP 및 FIDO 2 장치 지원](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/multi-factor-authentication)
+* [다단계 인증](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/multi-factor-authentication)
 
 ## 개인정보 관리
 
-* [데이터 이동성에 대한 GDPR 권한 및 잊혀질 권리가 지원됩니다](https://learn.liferay.com/w/dxp/users-and-permissions/managing-user-data)
+* [사용자 데이터 관리(GDPR)](https://learn.liferay.com/w/dxp/users-and-permissions/managing-user-data)
 
 다음: [통합 및 상호 운용성](./integration-and-interoperability.md).

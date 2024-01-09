@@ -35,9 +35,8 @@ See [Using Display Page Templates](../using-display-page-templates.md) to learn 
 
 1. Once you've added page elements, you can [map](../../creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#mapping-settings) them to content structure fields (e.g., title, description) by double-clicking on an editable field. Mapped fields are outlined in purple.
 
-   ```{tip}
-   You can use mapped fields when configuring SEO and Open Graph settings for a display page template. See [Configuring SEO and Open Graph](./configuring-seo-and-open-graph.md) for more information.
-   ```
+   !!! tip
+       You can use mapped fields when configuring SEO and Open Graph settings for a display page template. See [Configuring SEO and Open Graph](./configuring-seo-and-open-graph.md) for more information.
 
    ![Map page elements to structure fields.](./creating-and-managing-display-page-templates/images/02.png)
 
@@ -72,9 +71,8 @@ To set a friendly URL for your display page template,
 
 ### Mapping Links to Different Display Page Templates
 
-```{important}
-This feature is currently behind a release feature flag. Read [Release Feature Flags](../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information.
-```
+!!! important
+    This feature is currently behind a release feature flag. Read [Release Feature Flags](../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information.
 
 If a content type (e.g., custom object, web content article, or blogs entry) more than one display page template, you can map links to any available template for that content type.
 

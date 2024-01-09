@@ -62,7 +62,7 @@ If Liferay's out-of-the-box button fragment doesn't satisfy your use case, you c
 Here is an example of an action-ready custom button:
 
 ```html
-<button class="btn btn-${configuration.buttonSize} btn-${configuration.buttonType}" 
+<button class="btn btn-${configuration.buttonSize} btn-${configuration.buttonType}"
         data-lfr-editable-id="action" data-lfr-editable-type="action">
     Go Somewhere
 </button>
@@ -78,7 +78,7 @@ Here is an example of an action-ready custom button:
 
 1. Click on the button a second time. An action menu opens on the right.
 
-1. Under the Mapping tab, click on the *Item* field or the *Select Item* icon (![Select Item](../../../../images/icon-add-app.png)) beside the field. 
+1. Under the Mapping tab, click on the *Item* field or the *Select Item* icon (![Select Item](../../../../images/icon-add-app.png)) beside the field.
 
 1. Select your object from the list at the top.
 
@@ -96,9 +96,8 @@ Here is an example of an action-ready custom button:
 
 1. Optionally, set the Success and Error interactions. See [Managing Success and Error Interactions](#managing-success-and-error-interactions) for more information.
 
-```{tip}
-You can use collection display fragments or form fragments with components mapped to actions. See [Displaying Collections](../../../../site-building/displaying-content/collections-and-collection-pages/displaying-collections.md) and [Using Fragments to Build Forms](../../using-fragments-to-build-forms.md) for more information.
-```
+!!! tip
+    You can use collection display fragments or form fragments with components mapped to actions. See [Displaying Collections](../../../../site-building/displaying-content/collections-and-collection-pages/displaying-collections.md) and [Using Fragments to Build Forms](../../using-fragments-to-build-forms.md) for more information.
 
 The button now executes the selected action when clicked.
 
@@ -108,7 +107,7 @@ The button now executes the selected action when clicked.
 
    This makes your object the default source when mapping the button or the action.
 
-   ![Chose your object as the content type when creating a display page template.](./using-manual-actions/images/06.png)
+   ![Choose your object as the content type when creating a display page template.](./using-manual-actions/images/06.png)
 
 1. Add a *Button* fragment to your layout.
 
@@ -118,11 +117,10 @@ The button now executes the selected action when clicked.
 
 1. Click on the button a second time.
 
-   An action menu opens on the right. Under the Mapping and Action tabs, your object is already set as a default source. 
+   An action menu opens on the right. Under the Mapping and Action tabs, your object is already set as a default source.
 
-   ```{note}
-   If you need to choose specific content, click on the *Source* field, select *Specific Content*, and choose the specific *Item*.
-   ```
+   !!! note
+       If you need to choose specific content, click on the *Source* field, select *Specific Content*, and choose the specific *Item*.
 
 1. Select the *Field* to be mapped to the button label.
 
@@ -134,17 +132,17 @@ The button now executes the selected action when clicked.
 
 ### Managing Success and Error Interactions
 
-When a user clicks on a component mapped to an action, you can choose what happens when that action succeeds or fails. 
+When a user clicks on a component mapped to an action, you can choose what happens when that action succeeds or fails.
 
 There are four options available for both outcomes:
 
 1. **None**: Nothing happens after the action is performed.
 
-1. **Show Notification**: Notifies the user. You can write your custom success/error message, preview the notification, and configure the page to reload after the action is triggered. 
+1. **Show Notification**: Notify the user. You can write your custom success/error message, preview the notification, and configure the page to reload after the action is triggered.
 
-1. **Go to Page**: Navigates to a Success/Error Page in your site.
+1. **Go to Page**: Navigate to a Success/Error Page in your site.
 
-1. **Go to External URL**: Navigates to an external URL.
+1. **Go to External URL**: Navigate to an external URL.
 
 ![You can choose what happens after an action is performed when the user clicks on a button or fragment mapped to an action: nothing, the user receives a notification, the user is redirected to a page, or the user is redirected to an external URL.](./using-manual-actions/images/07.png)
 
@@ -158,6 +156,6 @@ Liferay automatically generates permissions for managing which roles can trigger
 
 ## Related Topics
 
-* [Defining Object Actions](./defining-object-actions.md)
-* [Understanding Action Types](./understanding-action-types.md)
-* [Headless Framework Integration](../../understanding-object-integrations/using-custom-object-apis.md)
+- [Defining Object Actions](./defining-object-actions.md)
+- [Understanding Action Types](./understanding-action-types.md)
+- [Headless Framework Integration](../../understanding-object-integrations/using-custom-object-apis.md)

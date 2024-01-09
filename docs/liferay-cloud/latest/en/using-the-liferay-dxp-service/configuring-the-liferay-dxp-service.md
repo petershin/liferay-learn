@@ -88,6 +88,16 @@ Two tomcat folders exist in the Liferay container in Liferay Cloud: a generic `t
 Keep in mind when overriding the default Tomcat configuration that the Liferay service in Liferay Cloud exists in a closed network on the Cloud platform. Some network configurations that can be changed in an on-premises Liferay installation cannot be changed from the default values in a Cloud environment, or it may cause issues in your environment.
 ```
 
+## Key Deployment Directories Reference
+
+| **File Type**             | **Path**                      | **Description**                                                                                                                                                                             |
+| :------------------------ | :---------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Deployed files to Liferay | liferay/configs/deploy/       | Any files deployed directly to Liferay, including [themes, modules](./deploying-to-the-liferay-service.md#deploying-themes-portlets-and-osgi-modules), and [licenses](#deploying-licenses). |
+| OSGi configurations       | liferay/configs/osgi/configs/ | Any `.cfg` or `.config` [OSGi configuration files](#osgi-configurations).                                                                                                                   |
+| Hotfixes                  | liferay/configs/patching/     | [Hotfix `.zip` files](./deploying-to-the-liferay-service.md#deploying-hotfixes) (one at a time).                                                                                            |
+| Custom shell scripts      | liferay/configs/scripts/      | Scripts here automatically run when the service starts.                                                                                                                                     |
+| Other overrides           | liferay/configs/              | Any other configurations that belong your Liferay instance's Liferay Home folder.                                                                                                           |
+
 ## Environment Variables
 
 The Liferay service in Liferay Cloud uses [environment variables](../reference/defining-environment-variables.md) (or [secrets](../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md)) in place of some configurations that are done differently with an on-premises instance, such as JVM memory settings or database connection settings. Environment variables can also be used to [override or replace portal properties](./liferay-service-environment-variables.md#overriding-portal-properties).

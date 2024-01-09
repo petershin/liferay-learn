@@ -47,6 +47,14 @@ You can use scripts for more extensive customizations. However, use caution when
 
 To deploy a license to the search service, you must create the path `search/configs/{ENV}/license/` and put your license file there.
 
+## Key Deployment Directories Reference
+
+| **File Type**                | **Path**                | **Description**                                                                  |
+| :--------------------------- | :---------------------- | :------------------------------------------------------------------------------- |
+| Elasticsearch configurations | search/configs/config/  | The `elasticsearch.yml` file with your [search configurations](#configurations). |
+| Custom shell scripts         | search/configs/scripts/ | [Scripts](#scripts) here automatically run when the service starts.              |
+| Elasticsearch licenses       | search/configs/license/ | Elasticsearch license files.                                                     |
+
 ## Environment Variables Reference
 
 All environment variables and other forms of configuration for Elasticsearch are in the [official Elasticsearch documentation](https://www.elastic.co/guide/index.html).

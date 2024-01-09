@@ -192,6 +192,12 @@ The following `backup/LCP.json` example creates backups every 12 hours (i.e., 00
 },
 ```
 
+## Key Deployment Directories
+
+| **File Type** | **Path**                | **Description**                                                          |
+| :------------ | :---------------------- | :----------------------------------------------------------------------- |
+| SQL Scripts   | backup/configs/scripts/ | Any `.sql` scripts here automatically execute after each backup restore. |
+
 ## Environment Variables Reference
 
 | Name                                            | Default Value              | Description                                                                                                                                                                                                                                                                    |

@@ -42,6 +42,27 @@ You can define these environment variables in your web server service to adjust 
 
 * `LCP_LOGROTATE_FILE_COUNT`: Defines the maximum number of rotated log files to keep in the container.
 
+## Scripts
+
+You can use scripts for more extensive customizations, but you must use caution when doing so. This is the most powerful way to customize the web server service and can cause undesired side effects.
+
+Any `.sh` files found in the `configs/{ENV}/scripts/` folder are run prior to starting your service. For example, you can place a script in this directory structure to remove all log files:
+
+    webserver
+    ├── configs
+    │   └── common
+    │       └── scripts
+    │           └── remove-log-files.sh
+    └── LCP.json
+
+## Key Deployment Directories
+
+| **File Type**             | **Path**                   | **Description**                                                     |
+| :------------------------ | :------------------------- | :------------------------------------------------------------------ |
+| Web server configurations | webserver/configs/confid./ | [Configuration files, including `nginx.conf`.](#configuration)      |
+| Static content            | webserver/configs/public/  | Static content served to your site.                                 |
+| Custom scripts            | webserver/configs/scripts/ | [Scripts](#scripts) here automatically run when the service starts. |
+
 ## Environment Variables
 
 These environment variables are available for the web server service:
@@ -62,16 +83,3 @@ These environment variables are available for the web server service:
 The [Ingress Load Balancer](../infrastructure-and-operations/networking/load-balancer.md) is also configured via the web server service. Environment variables can be added to this service to configure the load balancer and custom domains. See [the Load Balancer environment variables reference](../infrastructure-and-operations/networking/load-balancer.md#environment-variables-reference) for more information.
 
 All environment variables and other forms of configuration for Nginx are in the [official Nginx documentation](https://docs.nginx.com/). You can set such configurations in the `configs/{ENV}/` directory, and environment variables in the service's `LCP.json` file.
-
-## Scripts
-
-You can use scripts for more extensive customizations, but you must use caution when doing so. This is the most powerful way to customize the web server service and can cause undesired side effects.
-
-Any `.sh` files found in the `configs/{ENV}/scripts/` folder are run prior to starting your service. For example, you can place a script in this directory structure to remove all log files:
-
-    webserver
-    ├── configs
-    │   └── common
-    │       └── scripts
-    │           └── remove-log-files.sh
-    └── LCP.json

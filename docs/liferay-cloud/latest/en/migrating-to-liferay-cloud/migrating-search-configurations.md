@@ -25,10 +25,10 @@ If you need help with migrating to Elasticsearch, please contact [Liferay Cloud 
 Skip this step if you do not have any specific Elasticsearch configurations or scripts to organize.
 ```
 
-In the project repository you [cloned previously](./matching-dxp-versions.md#clone-the-liferay-cloud-repository), navigate to the `search/configs/{ENV}/` folders (which correspond to your Liferay Cloud environments), and put all of your Elasticsearch configuration files and shell scripts into the appropriate environment folders, following this pattern: 
+In the project repository you [cloned previously](./matching-dxp-versions.md#clone-the-liferay-cloud-repository), navigate to the `search/configs/[ENV]/` folders (which correspond to your Liferay Cloud environments), and put all of your Elasticsearch configuration files and shell scripts into the appropriate environment folders, following this pattern: 
 
-* Put Elasticsearch configuration files into `search/configs/{ENV}/config/`
-* Put all custom shell scripts into `search/configs/{ENV}/scripts/`
+* Put Elasticsearch configuration files into `search/configs/[ENV]/config/`
+* Put all custom shell scripts into `search/configs/[ENV]/scripts/`
 
 All custom shell scripts in the appropriate folder run each time the `search` service is redeployed.
 

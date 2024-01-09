@@ -81,7 +81,7 @@ Clustering Liferay DXP in Liferay Cloud is a very simplified process compared to
 
 ## Running Scripts
 
-Any `.sh` files found in the `configs/{ENV}/scripts` folder are automatically run prior to starting the service. Scripts may be used for more extensive customizations. However, use caution when doing so. This is the most powerful way to customize Liferay DXP and it can cause undesired side effects.
+Any `.sh` files found in the `configs/[ENV]/scripts` folder are automatically run prior to starting the service. Scripts may be used for more extensive customizations. However, use caution when doing so. This is the most powerful way to customize Liferay DXP and it can cause undesired side effects.
 
 For example, to include a script that removes all log files, place it in the following directory structure within the project's Git repository:
 

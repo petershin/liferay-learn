@@ -41,7 +41,7 @@ To enable ModSecurity, set the value of `LCP_WEBSERVER_MODSECURITY` to `On` or `
 
 ## Changing ModSecurity's Configuration
 
-The default ModSecurity settings are recommended. To override the default configuration, create a `modsecurity.conf` file in your project repository's `webserver/configs/{ENV}/modsec/` directory. You must provide all necessary configurations, because it completely overrides Liferay Cloud's default `modsecurity.conf`.
+The default ModSecurity settings are recommended. To override the default configuration, create a `modsecurity.conf` file in your project repository's `webserver/configs/[ENV]/modsec/` directory. You must provide all necessary configurations, because it completely overrides Liferay Cloud's default `modsecurity.conf`.
 
 Copy [this example of recommended settings](https://github.com/SpiderLabs/ModSecurity/blob/v3/master/modsecurity.conf-recommended) as a starting point for your own `modsecurity.conf` file. If you use this file, replace the line `SecRuleEngine DetectionOnly` with this line:
 
@@ -61,9 +61,9 @@ The OWASP Foundation's ModSecurity Core Rule Set (CRS) is recommended for use wi
 
 To add the OWASP CRS to ModSecurity,
 
-1. Unzip the downloaded archive into the repository folder `webserver/configs/{ENV}/modsec/rules/`.
+1. Unzip the downloaded archive into the repository folder `webserver/configs/[ENV]/modsec/rules/`.
 
-1. Move `crs-setup.conf.example` to the `webserver/configs/{ENV}/modsec/` folder.
+1. Move `crs-setup.conf.example` to the `webserver/configs/[ENV]/modsec/` folder.
 
 1. Rename `crs-setup.conf.example` to `crs-setup.conf`.
 

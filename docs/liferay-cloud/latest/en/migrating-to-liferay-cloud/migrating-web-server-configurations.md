@@ -25,11 +25,11 @@ Next, move your Nginx configurations into your repository, where you can deploy 
 Skip this step if you do not have any specific Nginx configurations to organize.
 ```
 
-In the project repository you [cloned previously](./matching-dxp-versions.md#clone-the-liferay-cloud-repository), navigate to the `webserver/configs/{ENV}/` folders (which correspond to your Liferay Cloud environments), and put all of your Nginx configuration files into the appropriate environment folders, following this pattern: 
+In the project repository you [cloned previously](./matching-dxp-versions.md#clone-the-liferay-cloud-repository), navigate to the `webserver/configs/[ENV]/` folders (which correspond to your Liferay Cloud environments), and put all of your Nginx configuration files into the appropriate environment folders, following this pattern: 
 
-* Put Nginx configuration (`.conf`) files into `webserver/configs/{ENV}/conf.d/`
-* Put overrides for the `var/www/html/` directory into `webserver/configs/{ENV}/public/`
-* Put any other overrides (for the `/etc/nginx/` directory) into `webserver/configs/{ENV}/`
+* Put Nginx configuration (`.conf`) files into `webserver/configs/[ENV]/conf.d/`
+* Put overrides for the `var/www/html/` directory into `webserver/configs/[ENV]/public/`
+* Put any other overrides (for the `/etc/nginx/` directory) into `webserver/configs/[ENV]/`
 
 ```{tip}
 Any files put into the `webserver/configs/common/` folder applies to all environments when deployed.
@@ -47,9 +47,9 @@ To see what an Nginx configuration file looks like, see the example configuratio
 Skip this step if you do not have these custom shell scripts or static content for your web server.
 ```
 
-In your Liferay Cloud project repository, put all of your custom shell scripts into each appropriate `webserver/configs/{ENV}/scripts/` environment folder.
+In your Liferay Cloud project repository, put all of your custom shell scripts into each appropriate `webserver/configs/[ENV]/scripts/` environment folder.
 
-Put all of your static content into each appropriate `webserver/configs/{ENV}/public/` environment folder.
+Put all of your static content into each appropriate `webserver/configs/[ENV]/public/` environment folder.
 
 Once you have all of your custom content organized into your repository, you are ready to deploy the changes to your Liferay Cloud environments.
 

@@ -26,7 +26,7 @@ With the exception of the `common/` directory, changes added to an environment-s
 
 [Portal properties](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/reference/portal-properties.html) are properties saved in a `portal-ext.properties` file. They are used to configure your Liferay DXP environment.
 
-For an on-premises Liferay DXP instance, this file belongs inside of `$LIFERAY_HOME`. When using Liferay Cloud, place portal properties file into the appropriate `configs/{ENV}/` folder(s) for them to be copied into `$LIFERAY_HOME` for the Liferay DXP instance on deployment.
+For an on-premises Liferay DXP instance, this file belongs inside of `$LIFERAY_HOME`. When using Liferay Cloud, place portal properties file into the appropriate `configs/[ENV]/` folder(s) for them to be copied into `$LIFERAY_HOME` for the Liferay DXP instance on deployment.
 
 For example, the properties in a dev environment will result from the property files in the `configs/common` directory and the properties in the `configs/dev` directory. If any files have the same name, the file in the environment specific directory will overwrite the file from the `common` directory.
 
@@ -74,11 +74,11 @@ Portal properties may also be defined as environment variables. See [the environ
 
 OSGi configurations (`.cfg` or `.config` files) are used to configure OSGi components in Liferay DXP.
 
-These configuration files belong in the `osgi/configs/` folder inside of `$LIFERAY_HOME`. When using Liferay Cloud, place these files into the appropriate `configs/{ENV}/osgi/` folder(s) for them to be copied into `/osgi/configs` for the Liferay DXP instance on deployment.
+These configuration files belong in the `osgi/configs/` folder inside of `$LIFERAY_HOME`. When using Liferay Cloud, place these files into the appropriate `configs/[ENV]/osgi/` folder(s) for them to be copied into `/osgi/configs` for the Liferay DXP instance on deployment.
 
 ## Tomcat Configurations
 
-Configure your Liferay service's Tomcat server by deploying files in the appropriate environment's `liferay/configs/{ENV}` folder to override the configuration files. For example, you can override the `{TOMCAT HOME}/conf/web.xml` file in your Liferay container's file system by placing the customized file in the appropriate `liferay/configs/{ENV}/tomcat/conf/` folder in your repository and deploying the changes.
+Configure your Liferay service's Tomcat server by deploying files in the appropriate environment's `liferay/configs/[ENV]` folder to override the configuration files. For example, you can override the `{TOMCAT HOME}/conf/web.xml` file in your Liferay container's file system by placing the customized file in the appropriate `liferay/configs/[ENV]/tomcat/conf/` folder in your repository and deploying the changes.
 
 ```{note}
 Two tomcat folders exist in the Liferay container in Liferay Cloud: a generic `tomcat` folder, and a versioned folder (`tomcat-x.x.x`). The `tomcat` folder has a symbolic link to the versioned `tomcat-x.x.x` folder, so overriding a file in the generic `tomcat` folder ensures the new file reflects in both folders.
@@ -90,13 +90,13 @@ Keep in mind when overriding the default Tomcat configuration that the Liferay s
 
 ## Key Deployment Directories Reference
 
-| **File Type**             | **Path**                      | **Description**                                                                                                                                                                             |
-| :------------------------ | :---------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Deployed files to Liferay | liferay/configs/deploy/       | Any files deployed directly to Liferay, including [themes, modules](./deploying-to-the-liferay-service.md#deploying-themes-portlets-and-osgi-modules), and [licenses](#deploying-licenses). |
-| OSGi configurations       | liferay/configs/osgi/configs/ | Any `.cfg` or `.config` [OSGi configuration files](#osgi-configurations).                                                                                                                   |
-| Hotfixes                  | liferay/configs/patching/     | [Hotfix `.zip` files](./deploying-to-the-liferay-service.md#deploying-hotfixes) (one at a time).                                                                                            |
-| Custom shell scripts      | liferay/configs/scripts/      | Scripts here automatically run when the service starts.                                                                                                                                     |
-| Other overrides           | liferay/configs/              | Any other configurations that belong your Liferay instance's Liferay Home folder.                                                                                                           |
+| **File Type**             | **Path**                            | **Description**                                                                                                                                                                             |
+| :------------------------ | :---------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Deployed files to Liferay | liferay/configs/[ENV]/deploy/       | Any files deployed directly to Liferay, including [themes, modules](./deploying-to-the-liferay-service.md#deploying-themes-portlets-and-osgi-modules), and [licenses](#deploying-licenses). |
+| OSGi configurations       | liferay/configs/[ENV]/osgi/configs/ | Any `.cfg` or `.config` [OSGi configuration files](#osgi-configurations).                                                                                                                   |
+| Hotfixes                  | liferay/configs/[ENV]/patching/     | [Hotfix `.zip` files](./deploying-to-the-liferay-service.md#deploying-hotfixes) (one at a time).                                                                                            |
+| Custom shell scripts      | liferay/configs/[ENV]/scripts/      | Scripts here automatically run when the service starts.                                                                                                                                     |
+| Other overrides           | liferay/configs/[ENV]/              | Any other configurations that belong your Liferay instance's Liferay Home folder.                                                                                                           |
 
 ## Environment Variables
 

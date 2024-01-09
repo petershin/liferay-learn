@@ -19,7 +19,7 @@ The web server service uses an [Nginx](https://docs.nginx.com/) server to manage
 :language: nginx
 ```
 
-The `nginx.conf` file belongs in the `webserver/configs/{ENV}/conf.d/` directory in your project repository.
+The `nginx.conf` file belongs in the `webserver/configs/[ENV]/conf.d/` directory in your project repository.
 
 ## Search Service Configuration (elasticsearch.yml)
 
@@ -30,4 +30,4 @@ The search service uses an [Elasticsearch](https://www.elastic.co/guide/index.ht
 :language: yaml
 ```
 
-The `elasticsearch.yml` file belongs in the `search/configs/{ENV}/config/` directory in your project repository.
+The `elasticsearch.yml` file belongs in the `search/configs/[ENV]/config/` directory in your project repository.

@@ -74,7 +74,7 @@ The following formats are supported for SQL scripts:
 
 Note that scripts are run in alphanumerical order when they are executed. SQL scripts must also reference the exact database to run on (for example, with `USE lportal;` or `lportal.User_`).
 
-Place SQL scripts into the appropriate, environment-specific `backup/configs/{ENV}/scripts/` folder.
+Place SQL scripts into the appropriate, environment-specific `backup/configs/[ENV]/scripts/` folder.
 
 ### Performing the Data Restore
 

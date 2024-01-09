@@ -46,7 +46,7 @@ This deploys the customized service instead of a default version.
 
 ## Deploying Themes, Portlets, and OSGi Modules
 
-To install themes, portlets, or OSGi modules, include a WAR or JAR file into a `configs/{ENV}/deploy/` folder in your Liferay DXP service directory.
+To install themes, portlets, or OSGi modules, include a WAR or JAR file into a `configs/[ENV]/deploy/` folder in your Liferay DXP service directory.
 
 For example, to deploy a custom JAR file to your development environment (using the `dev/` environment folder), your Liferay DXP service directory could look like this:
 
@@ -63,7 +63,7 @@ liferay
           └── portal-ext.properties
 ```
 
-Once deployed, any files within the `configs/{ENV}/deploy/` directory are copied to the `$LIFERAY_HOME/deploy/` folder in your Liferay service's container.
+Once deployed, any files within the `configs/[ENV]/deploy/` directory are copied to the `$LIFERAY_HOME/deploy/` folder in your Liferay service's container.
 
 ```{note}
 Certain files and configurations are forced to be present when an image is deployed, and they may override your added files. Look for the message `DXPCloud Liferay Overrides` in your service's logs to identify when your files are overridden.
@@ -83,7 +83,7 @@ Once deployed, the deployable `.jar` or `.war` files are copied to the `$LIFERAY
 
 ## Deploying Hotfixes
 
-To apply a hotfix, add the hotfix ZIP file to a `configs/{ENV}/patching/` folder within the Liferay DXP service directory. When you deploy this change, the hotfix is applied to the Liferay DXP instance.
+To apply a hotfix, add the hotfix ZIP file to a `configs/[ENV]/patching/` folder within the Liferay DXP service directory. When you deploy this change, the hotfix is applied to the Liferay DXP instance.
 
 ```{note}
 See [Updating Your DXP Instance to a New Minor Version](./updating-your-dxp-instance-to-a-new-minor-version.md) to update to a new minor version of Liferay DXP instead (such as a new [service pack](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier/understanding-patch-types-for-dxp-7-3-and-earlier.html#service-packs)).
@@ -109,7 +109,7 @@ Note that the hotfix must be re-applied each time the server starts up. For this
 
 You can also install hotfixes as part of the CI build process instead of directly committing them to your Git repository. This approach is ideal for large hotfixes so you can avoid keeping large files in your repository.
 
-Add a hotfix to the `LCP_CI_LIFERAY_DXP_HOTFIXES_{ENV}` environment variable (either through the `Environment Variables` tab in the Liferay Cloud console, or in the `ci` service's `LCP.json` file) for the CI service to apply it automatically during the build process. If you need multiple bug fixes, ask support to package them into a single hotfix.
+Add a hotfix to the `LCP_CI_LIFERAY_DXP_HOTFIXES_[ENV]` environment variable (either through the `Environment Variables` tab in the Liferay Cloud console, or in the `ci` service's `LCP.json` file) for the CI service to apply it automatically during the build process. If you need multiple bug fixes, ask support to package them into a single hotfix.
 
 ```{note}
 If you add this environment variable to the `LCP.json` for your `ci` service, you must deploy the `ci` service to your **infra environment** to complete the update.
@@ -130,7 +130,7 @@ This environment variable is only available if you have upgraded to at least ver
 
 ## Deploying Licenses
 
-You can add your own license by putting it into a `configs/{ENV}/deploy/` folder within the Liferay DXP service directory.
+You can add your own license by putting it into a `configs/[ENV]/deploy/` folder within the Liferay DXP service directory.
 
 For example, you can add licenses to your development environment with a structure like this in your Liferay DXP service directory:
 

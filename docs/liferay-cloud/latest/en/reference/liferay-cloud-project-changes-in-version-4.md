@@ -43,22 +43,22 @@ The following table summarizes the new organization of your `liferay` service co
 
 | **Files** | **Location in 3.x** | **Location in 4.x** |
 | :--- | :--- | :--- |
-| Files for deployment | lcp/liferay/deploy/{ENV}/ | liferay/configs/{ENV}/deploy/ |
-| OSGi configuration files (.cfg or .config) | lcp/liferay/config/{ENV}/ | liferay/configs/{ENV}/osgi/configs/ |
-| Other configuration overrides | lcp/liferay/config/{ENV}/ | liferay/configs/{ENV}/ |
-| Custom shell scripts | lcp/liferay/script/{ENV}/ | liferay/configs/{ENV}/scripts/ |
-| Hotfixes and patching tools | lcp/liferay/hotfix/{ENV}/ | liferay/configs/{ENV}/patching/ |
-| Licenses | lcp/liferay/license/{ENV}/ | lcp/configs/{ENV}/deploy/ |
+| Files for deployment | lcp/liferay/deploy/[ENV]/ | liferay/configs/[ENV]/deploy/ |
+| OSGi configuration files (.cfg or .config) | lcp/liferay/config/[ENV]/ | liferay/configs/[ENV]/osgi/configs/ |
+| Other configuration overrides | lcp/liferay/config/[ENV]/ | liferay/configs/[ENV]/ |
+| Custom shell scripts | lcp/liferay/script/[ENV]/ | liferay/configs/[ENV]/scripts/ |
+| Hotfixes and patching tools | lcp/liferay/hotfix/[ENV]/ | liferay/configs/[ENV]/patching/ |
+| Licenses | lcp/liferay/license/[ENV]/ | lcp/configs/[ENV]/deploy/ |
 
 ```{note}
-Files within the `configs/{ENV}/` directory are copied as overrides into the `LIFERAY_HOME` directory in the Liferay container in Liferay Cloud.
+Files within the `configs/[ENV]/` directory are copied as overrides into the `LIFERAY_HOME` directory in the Liferay container in Liferay Cloud.
 ```
 
 Instead of directly committing hotfixes to the repository, a new CI service environment variable is now available to automatically add when deploying the Liferay service. See [Installing Hotfixes with an Environment Variable](#installing-hotfixes-with-an-environment-variable) for more information.
 
 ### Custom Script Execution
 
-Scripts placed in `liferay/configs/{ENV}/scripts/` will now be run as the `liferay` user, rather than as a root user. If a script must be run as root, then the script must be added to the `Jenkinsfile` instead.
+Scripts placed in `liferay/configs/[ENV]/scripts/` will now be run as the `liferay` user, rather than as a root user. If a script must be run as root, then the script must be added to the `Jenkinsfile` instead.
 
 ## Search Service Changes
 
@@ -66,12 +66,12 @@ All configurations within the `search` service now belong in an environment-spec
 
 | **Files** | **Location in 3.x** | **Location in 4.x** |
 | :--- | :--- | :--- |
-| Elasticsearch configurations | lcp/search/config/{ENV}/ | search/configs/{ENV}/config/ |
-| Custom shell scripts | lcp/search/script/{ENV}/ | search/configs/{ENV}/scripts/ |
-| Elasticsearch license (.json) files | lcp/search/license/{ENV}/ | search/configs/{ENV}/license/ |
+| Elasticsearch configurations | lcp/search/config/[ENV]/ | search/configs/[ENV]/config/ |
+| Custom shell scripts | lcp/search/script/[ENV]/ | search/configs/[ENV]/scripts/ |
+| Elasticsearch license (.json) files | lcp/search/license/[ENV]/ | search/configs/[ENV]/license/ |
 
 ```{note}
-Files in `search/configs/{ENV}/` are copied as overrides into `usr/shared/elasticsearch/` in the Search container in Liferay Cloud. For example, configurations in `search/configs/{ENV}/config/`, such as `elasticsearch.yml`, are copied into `usr/shared/elasticsearch/config/` and override existing defaults.
+Files in `search/configs/[ENV]/` are copied as overrides into `usr/shared/elasticsearch/` in the Search container in Liferay Cloud. For example, configurations in `search/configs/[ENV]/config/`, such as `elasticsearch.yml`, are copied into `usr/shared/elasticsearch/config/` and override existing defaults.
 ```
 
 ### Elasticsearch Plugins
@@ -92,7 +92,7 @@ Multiple `Jenkinsfile` extension points are now available in the `ci` folder to 
 
 ### Installing Hotfixes with an Environment Variable
 
-Instead of directly committing large hotfixes to your Git repository, a new environment variable has been added that allows you to install a hotfix through the CI build process. Add the hotfix's name (with the `.zip` extension omitted) to the `LCP_CI_LIFERAY_DXP_HOTFIXES_{ENV}` environment variable (either through the `Environment Variables` tab in the Liferay Cloud console, or in the `ci` service's `LCP.json` file) for the CI service to automatically apply them during the build process.
+Instead of directly committing large hotfixes to your Git repository, a new environment variable has been added that allows you to install a hotfix through the CI build process. Add the hotfix's name (with the `.zip` extension omitted) to the `LCP_CI_LIFERAY_DXP_HOTFIXES_[ENV]` environment variable (either through the `Environment Variables` tab in the Liferay Cloud console, or in the `ci` service's `LCP.json` file) for the CI service to automatically apply them during the build process.
 
 The following example defines hotfixes using the `LCP.json` file:
 
@@ -111,17 +111,17 @@ See the following table for the new organization of your `webserver` service con
 
 | **File** | **Location in 3.x** | **Location in 4.x** |
 | :--- | :--- | :--- |
-| Webserver configurations | lcp/webserver/config/{ENV}/ | webserver/configs/{ENV}/conf.d/ |
-| Custom scripts | lcp/webserver/script/{ENV}/ | webserver/configs/{ENV}/scripts/ |
-| Static content | lcp/webserver/deploy/{ENV}/ | webserver/configs/{ENV}/public/ |
+| Webserver configurations | lcp/webserver/config/[ENV]/ | webserver/configs/[ENV]/conf.d/ |
+| Custom scripts | lcp/webserver/script/[ENV]/ | webserver/configs/[ENV]/scripts/ |
+| Static content | lcp/webserver/deploy/[ENV]/ | webserver/configs/[ENV]/public/ |
 
 ```{note}
-Files in `/webserver/configs/{ENV}/` are copied as overrides into `/etc/nginx/` in the webserver container in Liferay Cloud. Files in `/webserver/configs/{ENV}/public/` are copied as overrides into `var/www/html/`.
+Files in `/webserver/configs/[ENV]/` are copied as overrides into `/etc/nginx/` in the webserver container in Liferay Cloud. Files in `/webserver/configs/[ENV]/public/` are copied as overrides into `var/www/html/`.
 ```
 
 ### Webserver Configuration Overrides
 
-You can customize the root location for the `webserver` service by adding a `liferay.conf` file into `webserver/configs/{ENV}/conf.d/`. This will override the default `liferay.conf` available in the `webserver` service image's container. Access the shell in the Liferay Cloud Console to see the default `liferay.conf` file as a reference when customizing the root location.
+You can customize the root location for the `webserver` service by adding a `liferay.conf` file into `webserver/configs/[ENV]/conf.d/`. This will override the default `liferay.conf` available in the `webserver` service image's container. Access the shell in the Liferay Cloud Console to see the default `liferay.conf` file as a reference when customizing the root location.
 
 ```{warning}
 Do not customize the root location using a file name other than `liferay.conf`, so that this file specifically overrides the default `liferay.conf`. Otherwise, both files may exist together in the container and two root locations may be found, causing an error.
@@ -129,13 +129,13 @@ Do not customize the root location using a file name other than `liferay.conf`, 
 Other file names are instead used to define additional locations for your webserver.
 ```
 
-You can also override the default NGINX configuration by adding an `nginx.conf` file into `webserver/configs/{ENV}/`. You can use this to further define the webserver's behavior. See the [official NGINX documentation](https://docs.nginx.com/nginx/admin-guide/basic-functionality/managing-configuration-files/) for more information.
+You can also override the default NGINX configuration by adding an `nginx.conf` file into `webserver/configs/[ENV]/`. You can use this to further define the webserver's behavior. See the [official NGINX documentation](https://docs.nginx.com/nginx/admin-guide/basic-functionality/managing-configuration-files/) for more information.
 
 ### Configuring the Public Directory
 
-If you wish to add custom static content, then place these files in `webserver/configs/{ENV}/public/`. Liferay Cloud will look for this public folder and copy all files inside of it to `/var/www/html`.
+If you wish to add custom static content, then place these files in `webserver/configs/[ENV]/public/`. Liferay Cloud will look for this public folder and copy all files inside of it to `/var/www/html`.
 
-You will need to add additional locations within your `conf.d` folder to configure the public folder. For example, to add a `.html` file (such as `index.html`) to a new `webserver/configs/{ENV}/public/static` folder, add a unique `.conf` configuration file to `webserver/configs/{ENV}/conf.d` with the following content:
+You will need to add additional locations within your `conf.d` folder to configure the public folder. For example, to add a `.html` file (such as `index.html`) to a new `webserver/configs/[ENV]/public/static` folder, add a unique `.conf` configuration file to `webserver/configs/[ENV]/conf.d` with the following content:
 
 ```apacheconf
 location /static/ {
@@ -149,7 +149,7 @@ All configurations within the `backup` service now belong in an environment-spec
 
 | **File** | **Location in 3.x** | **Location in 4.x** |
 | :--- | :--- | :--- |
-| Custom SQL scripts | lcp/backup/script/{ENV}/ | backup/configs/{ENV}/scripts/ |
+| Custom SQL scripts | lcp/backup/script/[ENV]/ | backup/configs/[ENV]/scripts/ |
 
 All `.sql` scripts deployed to the `backup` service are executed automatically after a backup restore process completes, and the environment that is being restored to executes the scripts from its own `backup` service. You can also compress large `.sql` files, or multiple `.sql` files, in `.tgz`, `.gz`, or `.zip` format and place them in this directory.
 

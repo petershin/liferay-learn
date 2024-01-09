@@ -17,7 +17,7 @@ First, organize the Liferay configuration files from your on-premises installati
 Liferay-specific code belongs in the `liferay` folder, which is organized like a [Liferay DXP workspace](https://learn.liferay.com/dxp/latest/en/developing-applications/tooling/liferay_workspace.html).
 ```
 
-In the Liferay Cloud project repository you [cloned previously](./matching-dxp-versions.md#clone-the-liferay-cloud-repository), navigate to the `liferay/configs/{ENV}/` folders (which correspond to your Liferay Cloud environments),
+In the Liferay Cloud project repository you [cloned previously](./matching-dxp-versions.md#clone-the-liferay-cloud-repository), navigate to the `liferay/configs/[ENV]/` folders (which correspond to your Liferay Cloud environments),
 and put all of your Liferay [portal property](../using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.md#portal-properties) files (e.g., `portal-ext.properties`) into each appropriate environment folder.
 
 Put [OSGi configuration](../using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.md#osgi-configurations) files (e.g., `.cfg` or `.config` files) into a subfolder in the appropriate environment folders called `osgi/`.
@@ -32,19 +32,19 @@ When the changes are deployed, any portal property files put into the `liferay/c
 
 ## Organize OSGi Modules
 
-If you have custom OSGi modules used for your on-premises Liferay installation, then put all [OSGi module source code](https://learn.liferay.com/dxp/latest/en/liferay-internals/extending-liferay/overriding-osgi-services.html) into the appropriate environment's `liferay/modules/{ENV}/` folder (with the same workspace folder structure).
+If you have custom OSGi modules used for your on-premises Liferay installation, then put all [OSGi module source code](https://learn.liferay.com/dxp/latest/en/liferay-internals/extending-liferay/overriding-osgi-services.html) into the appropriate environment's `liferay/modules/[ENV]/` folder (with the same workspace folder structure).
 
 When the changes are deployed, custom module code is automatically compiled and then deployed to the `liferay` service container's `$LIFERAY_HOME/deploy/` folder.
 
 ## Organize Custom Themes
 
-Next, put the source code for all of your [custom themes](https://learn.liferay.com/dxp/latest/en/site-building/site-appearance/themes/theme-development/getting-started/setting-up-an-environment-and-creating-a-theme.html) into the appropriate environment's `liferay/themes/{ENV}/` folder.
+Next, put the source code for all of your [custom themes](https://learn.liferay.com/dxp/latest/en/site-building/site-appearance/themes/theme-development/getting-started/setting-up-an-environment-and-creating-a-theme.html) into the appropriate environment's `liferay/themes/[ENV]/` folder.
 
 When the changes are deployed, custom themes are automatically build and deployed to the `liferay` service container's `$LIFERAY_HOME/deploy/` folder.
 
 ## Organize WAR Files
 
-Next, put all of your Liferay installation's [WAR files](https://learn.liferay.com/dxp/latest/en/building-applications/reference/deploying-wars-wab-generator.html) into the appropriate environment's `liferay/wars/{ENV}/` folder.
+Next, put all of your Liferay installation's [WAR files](https://learn.liferay.com/dxp/latest/en/building-applications/reference/deploying-wars-wab-generator.html) into the appropriate environment's `liferay/wars/[ENV]/` folder.
 
 When the changes are deployed, WAR files are automatically deployed to the `$LIFERAY_HOME/deploy/` folder within the `liferay` service's container in the appropriate environment(s).
 

@@ -134,7 +134,7 @@ Once you have a script to use, you must deploy it and run it from the `liferay` 
 
 First, save your chosen script into a directory that you can deploy to your Liferay instance's `$LIFERAY_HOME` folder.
 
-1. Create a new folder for manual scripts in your project repository's Liferay configurations, such as `liferay/configs/{ENV}/diagnostics/`. Creating the folder in the appropriate `liferay/configs/{ENV}/` directory ensures that the folder contents appear in your Liferay instance's `$LIFERAY_HOME` once it is deployed.
+1. Create a new folder for manual scripts in your project repository's Liferay configurations, such as `liferay/configs/[ENV]/diagnostics/`. Creating the folder in the appropriate `liferay/configs/[ENV]/` directory ensures that the folder contents appear in your Liferay instance's `$LIFERAY_HOME` once it is deployed.
 
     ```bash
     cd liferay/configs/common/
@@ -144,7 +144,7 @@ First, save your chosen script into a directory that you can deploy to your Life
     mkdir diagnostics/
     ```
 
-1. Create a `generate_thread_dumps.sh` or `generate_heap_dump.sh` file in your project repository's Liferay configurations, in a new folder for manual scripts (such as `liferay/configs/{ENV}/diagnostics/`).
+1. Create a `generate_thread_dumps.sh` or `generate_heap_dump.sh` file in your project repository's Liferay configurations, in a new folder for manual scripts (such as `liferay/configs/[ENV]/diagnostics/`).
 
     ```bash
     touch my_script_name.sh
@@ -154,7 +154,7 @@ First, save your chosen script into a directory that you can deploy to your Life
 
 ### Deploy and Run the Script
 
-Once you have the script saved into a subfolder in `liferay/configs/{ENV}/`, you must deploy the script and run it from the shell on the Liferay Cloud console.
+Once you have the script saved into a subfolder in `liferay/configs/[ENV]/`, you must deploy the script and run it from the shell on the Liferay Cloud console.
 
 1. Follow the steps outlined in [Overview of the Liferay Cloud Deployment Workflow](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md) to deploy the script to the appropriate environment.
 

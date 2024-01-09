@@ -15,7 +15,7 @@ See the [Search service limitations](../reference/platform-limitations.md#search
 
 ## Configurations
 
-Although Liferay Cloud's services are fine-tuned to work well by default, you may need to configure Elasticsearch further. To do so, you can include any YML file inside the appropriate `configs/{ENV}/config/` folder. When you deploy your changes, the file is automatically injected into your service and overwrites the default configuration. Here's an example folder structure of such a file inside the correct folder:
+Although Liferay Cloud's services are fine-tuned to work well by default, you may need to configure Elasticsearch further. To do so, you can include any YML file inside the appropriate `configs/[ENV]/config/` folder. When you deploy your changes, the file is automatically injected into your service and overwrites the default configuration. Here's an example folder structure of such a file inside the correct folder:
 
     search
     ├── configs
@@ -34,7 +34,7 @@ The search service's `LCP.json` file contains this value by default: `"podManage
 
 ## Scripts
 
-You can use scripts for more extensive customizations. However, use caution when doing so. This is the most powerful way to customize the search service and can cause undesired side effects. Any `.sh` files found in a `scripts/configs/{ENV}/scripts/` folder are run prior to starting your service. For example, to include a script that removes all log files, you could place it in this directory structure:
+You can use scripts for more extensive customizations. However, use caution when doing so. This is the most powerful way to customize the search service and can cause undesired side effects. Any `.sh` files found in a `scripts/configs/[ENV]/scripts/` folder are run prior to starting your service. For example, to include a script that removes all log files, you could place it in this directory structure:
 
     search
     ├── configs
@@ -43,22 +43,18 @@ You can use scripts for more extensive customizations. However, use caution when
     │           └── elasticsearch.yml
     └── LCP.json
 
-## Deploying a License to the Search Service
-
-To deploy a license to the search service, you must create the path `search/configs/{ENV}/license/` and put your license file there.
-
 ## Key Deployment Directories Reference
 
-| **File Type**                | **Path**                | **Description**                                                                  |
-| :--------------------------- | :---------------------- | :------------------------------------------------------------------------------- |
-| Elasticsearch configurations | search/configs/config/  | The `elasticsearch.yml` file with your [search configurations](#configurations). |
-| Custom shell scripts         | search/configs/scripts/ | [Scripts](#scripts) here automatically run when the service starts.              |
-| Elasticsearch licenses       | search/configs/license/ | Elasticsearch license files.                                                     |
+| **File Type**                | **Path**                      | **Description**                                                                  |
+| :--------------------------- | :---------------------------- | :------------------------------------------------------------------------------- |
+| Elasticsearch configurations | search/configs/[ENV]/config/  | The `elasticsearch.yml` file with your [search configurations](#configurations). |
+| Custom shell scripts         | search/configs/[ENV]/scripts/ | [Scripts](#scripts) here automatically run when the service starts.              |
+| Elasticsearch licenses       | search/configs/[ENV]/license/ | Elasticsearch license files.                                                     |
 
 ## Environment Variables Reference
 
 All environment variables and other forms of configuration for Elasticsearch are in the [official Elasticsearch documentation](https://www.elastic.co/guide/index.html).
-You can set such configurations and environment variables in the `configs/{ENV}/config/` directory and `LCP.json`, respectively. Examples include:
+You can set such configurations and environment variables in the `configs/[ENV]/config/` directory and `LCP.json`, respectively. Examples include:
 
 | Name | Value | Description |
 | :--- | :--- | :--- |

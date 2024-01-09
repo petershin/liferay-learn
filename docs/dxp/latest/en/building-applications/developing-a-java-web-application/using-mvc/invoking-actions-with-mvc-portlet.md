@@ -19,17 +19,17 @@ Then, follow these steps to deploy the portlet and trigger its actions:
 1. Download and unzip the example.
 
    ```bash
-   curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/developing-a-java-web-application/using-mvc/liferay-u8t2.zip -O
+   curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/developing-a-java-web-application/using-mvc/liferay-t9u3.zip -O
    ```
 
    ```bash
-   unzip liferay-u8t2.zip
+   unzip liferay-t9u3.zip
    ```
 
 1. Build and deploy the example.
 
     ```bash
-    cd liferay-u8t2
+    cd liferay-t9u3
     ```
 
     ```bash
@@ -43,12 +43,12 @@ Then, follow these steps to deploy the portlet and trigger its actions:
 1. Confirm the deployment in the Docker container console.
 
     ```bash
-    STARTED com.acme.u8t2.web_1.0.0
+    STARTED com.acme.t9u3.web_1.0.0
     ```
 
-1. Add the *U8T2 Portlet* widget from the *Samples* category to a widget page. The U8T2 Portlet appears.
+1. Add the *T9U3 Portlet* widget from the *Samples* category to a widget page. The T9U3 Portlet appears.
 
-   ![You've added the U8T2 Portlet to a page.](./invoking-actions-with-mvc-portlet/images/01.png)
+   ![You've added the T9U3 Portlet to a page.](./invoking-actions-with-mvc-portlet/images/01.png)
 
    The portlet has three links:
 
@@ -61,33 +61,33 @@ Then, follow these steps to deploy the portlet and trigger its actions:
 1. Click *Do Something*. The portlet logs the `doSomething` method's invocation.
 
     ```bash
-    [U8T2Portlet:28] Invoke #doSomething(ActionRequest, ActionResponse)
+    [T9U3Portlet:28] Invoke #doSomething(ActionRequest, ActionResponse)
     ```
 
 1. Click *Do Something Else*. The portlet logs the `doSomethingElse` method's invocation.
 
     ```bash
-    [U8T2Portlet:36] Invoke #doSomethingElse(ActionRequest, ActionResponse)
+    [T9U3Portlet:36] Invoke #doSomethingElse(ActionRequest, ActionResponse)
     ```
 
 1. Click *Do Something More*. The portlet logs the `doSomethingMore` method's invocation.
 
     ```bash
-    [U8T2Portlet:45] Invoke #doSomethingMore(ActionRequest, ActionResponse)
+    [T9U3Portlet:45] Invoke #doSomethingMore(ActionRequest, ActionResponse)
     ```
 
 These actions are trivial, but they demonstrate different ways to map UI components to portlet action-handling methods. Next you'll learn how they work.
 
 ## Examine the Portlet's Action-Handling Methods
 
-The `U8T2Portlet` class is a standard [`MVCPortlet`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/portlet/bridges/mvc/MVCPortlet.java) that has three action-handling methods.
+The `T9U3Portlet` class is a standard [`MVCPortlet`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/portlet/bridges/mvc/MVCPortlet.java) that has three action-handling methods.
 
-```{literalinclude} ./invoking-actions-with-mvc-portlet/resources/liferay-u8t2.zip/u8t2-web/src/main/java/com/acme/u8t2/web/internal/portlet/U8T2Portlet.java
+```{literalinclude} ./invoking-actions-with-mvc-portlet/resources/liferay-t9u3.zip/t9u3-web/src/main/java/com/acme/t9u3/web/internal/portlet/T9U3Portlet.java
 :language: java
 :lines: 14-53
 ```
 
-The [`@Component`](https://osgi.org/javadoc/r6/residential/org/osgi/service/component/annotations/Component.html) annotation marks the class as an OSGi Declarative Services Component that provides the [`Portlet`](https://docs.liferay.com/portlet-api/3.0/javadocs/javax/portlet/Portlet.html) service. The properties make the portlet available in the *Sample* widget category, name the portlet *U8T2 Portlet*, and set the portlet's default view template to `/view.jsp`.
+The [`@Component`](https://osgi.org/javadoc/r6/residential/org/osgi/service/component/annotations/Component.html) annotation marks the class as an OSGi Declarative Services Component that provides the [`Portlet`](https://docs.liferay.com/portlet-api/3.0/javadocs/javax/portlet/Portlet.html) service. The properties make the portlet available in the *Sample* widget category, name the portlet *T9U3 Portlet*, and set the portlet's default view template to `/view.jsp`.
 
 Each method takes an [`ActionRequest`](https://docs.liferay.com/portlet-api/3.0/javadocs/javax/portlet/ActionRequest.html) and [`ActionResponse`](https://docs.liferay.com/portlet-api/3.0/javadocs/javax/portlet/ActionResponse.html) parameter. The `ActionRequest` provides the method information and the `ActionResponse` provides a means for the method to pass along information. Each example method identifies itself with a log message. 
 
@@ -97,7 +97,7 @@ The JSP (discussed next) maps to the example methods using portlet action URLs. 
 
 The `view.jsp` binds UI components to the portlet's action-handling methods using portlet action URLs. Here's the `view.jsp` code:
 
-```{literalinclude} ./invoking-actions-with-mvc-portlet/resources/liferay-u8t2.zip/u8t2-web/src/main/resources/META-INF/resources/view.jsp
+```{literalinclude} ./invoking-actions-with-mvc-portlet/resources/liferay-t9u3.zip/t9u3-web/src/main/resources/META-INF/resources/view.jsp
 :language: javascript
 ```
 
@@ -107,14 +107,14 @@ The first line makes the Portlet 2.0 tag library available via the `portlet` pre
 
 The `view.jsp` declares the following portlet action URL.
 
-```{literalinclude} ./invoking-actions-with-mvc-portlet/resources/liferay-u8t2.zip/u8t2-web/src/main/resources/META-INF/resources/view.jsp
+```{literalinclude} ./invoking-actions-with-mvc-portlet/resources/liferay-t9u3.zip/t9u3-web/src/main/resources/META-INF/resources/view.jsp
 :language: javascript
 :lines: 3
 ```
 
 A `portlet:actionURL`'s `name` attribute maps to the `doSomething` portlet method. The `var` attribute assigns the portlet action URL to an arbitrary variable. This JSP binds the action URL to a hyperlink labeled `Do Something` by referencing the `actionURL` variable.
 
-```{literalinclude} ./invoking-actions-with-mvc-portlet/resources/liferay-u8t2.zip/u8t2-web/src/main/resources/META-INF/resources/view.jsp
+```{literalinclude} ./invoking-actions-with-mvc-portlet/resources/liferay-t9u3.zip/t9u3-web/src/main/resources/META-INF/resources/view.jsp
 :dedent: 1
 :language: javascript
 :lines: 8
@@ -126,7 +126,7 @@ Clicking this link invokes the portlet's `doSomething` method. You can bind the 
 
 The JSP declares another action URL directly in an anchor component.
 
-```{literalinclude} ./invoking-actions-with-mvc-portlet/resources/liferay-u8t2.zip/u8t2-web/src/main/resources/META-INF/resources/view.jsp
+```{literalinclude} ./invoking-actions-with-mvc-portlet/resources/liferay-t9u3.zip/t9u3-web/src/main/resources/META-INF/resources/view.jsp
 :dedent: 1
 :language: javascript
 :lines: 12
@@ -140,7 +140,7 @@ In the last anchor, the JSP declares an action URL that maps to an action-proces
 
 JSP action URL:
 
-```{literalinclude} ./invoking-actions-with-mvc-portlet/resources/liferay-u8t2.zip/u8t2-web/src/main/resources/META-INF/resources/view.jsp
+```{literalinclude} ./invoking-actions-with-mvc-portlet/resources/liferay-t9u3.zip/t9u3-web/src/main/resources/META-INF/resources/view.jsp
 :dedent: 1
 :language: javascript
 :lines: 16
@@ -148,7 +148,7 @@ JSP action URL:
 
 Portlet method:
 
-```{literalinclude} ./invoking-actions-with-mvc-portlet/resources/liferay-u8t2.zip/u8t2-web/src/main/java/com/acme/u8t2/web/internal/portlet/U8T2Portlet.java
+```{literalinclude} ./invoking-actions-with-mvc-portlet/resources/liferay-t9u3.zip/t9u3-web/src/main/java/com/acme/t9u3/web/internal/portlet/T9U3Portlet.java
 :dedent: 1
 :language: java
 :lines: 41-49

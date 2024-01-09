@@ -24,13 +24,11 @@ Although Liferay Cloud's services are fine-tuned to work well by default, you ma
     │           └── elasticsearch.yml
     └── LCP.json
 
-```{important}
-You must use the `elasticsearch.yml` configuration file to configure Elasticsearch. Configuring Elasticsearch through the UI will be overwritten on each deployment.
-```
+!!! important
+    You must use the `elasticsearch.yml` configuration file to configure Elasticsearch. Configuring Elasticsearch through the UI will be overwritten on each deployment.
 
-```{warning}
-The search service's `LCP.json` file contains this value by default: `"podManagementPolicy": "Parallel"`. Removing this value from the `LCP.json` can cause the search service to fail to start when there are multiple clustered instances, because Elasticsearch nodes must connect to each other to start up successfully.
-```
+!!! warning
+    The search service's `LCP.json` file contains this value by default: `"podManagementPolicy": "Parallel"`. Removing this value from the `LCP.json` can cause the search service to fail to start when there are multiple clustered instances, because Elasticsearch nodes must connect to each other to start up successfully.
 
 ## Scripts
 
@@ -50,6 +48,9 @@ You can use scripts for more extensive customizations. However, use caution when
 | Elasticsearch configurations | search/configs/[ENV]/config/  | The `elasticsearch.yml` file with your [search configurations](#configurations). |
 | Custom shell scripts         | search/configs/[ENV]/scripts/ | [Scripts](#scripts) here automatically run when the service starts.              |
 | Elasticsearch licenses       | search/configs/[ENV]/license/ | Elasticsearch license files.                                                     |
+
+!!! note
+    The Liferay Cloud Support team normally manages your Elasticsearch licenses for you. However, you can deploy your own Elasticsearch licenses if needed for testing.
 
 ## Environment Variables Reference
 

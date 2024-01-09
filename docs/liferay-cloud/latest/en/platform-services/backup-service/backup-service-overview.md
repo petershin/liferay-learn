@@ -22,9 +22,8 @@ See the [Backup service limitations](../../reference/platform-limitations.md#bac
 
 From the Backups page in any environment, you can view backup service information and retained backups, create manual backups, and more.
 
-```{note}
-The Backups page is only available in production environments for backup service versions older than 4.3.5.
-```
+!!! note
+   The Backups page is only available in production environments for backup service versions older than 4.3.5.
 
 Follow these steps to access the Backups page:
 
@@ -38,9 +37,8 @@ From here, you can perform the following tasks:
 - **View Backup History**: You can view the full list of retained backups in the chosen environment. Each entry shows the backup's name, size, type (`Auto`, `Manual`, or `Uploaded`), and time of creation. A red backup icon indicates a backup has failed. Beside it is a _Backup failed_ message and a link to contact Support.
 - **Create Manual Backups**: You can manually create a backup of the chosen environment. See [Creating a Manual Backup](#creating-a-manual-backup) for more information.
 
-```{note}
-Backup timestamps are displayed automatically based on your browser location, while backup schedules are based on the UTC±00 time zone.
-```
+!!! note
+   Backup timestamps are displayed automatically based on your browser location, while backup schedules are based on the UTC±00 time zone.
 
 From the Backups page, environment administrators also have access to the Actions button (⋮) and can download retained backups or restore environments.
 
@@ -60,9 +58,8 @@ Once started, the backup service icon indicates a backup is in progress, and a m
 
 ![The backup service icon and a message at the top of the screen indicate a backup is in progress.](./backup-service-overview/images/05.png)
 
-```{warning}
-Backups created while data is actively changing on your Liferay instance risk creating inconsistent data. To ensure a completely consistent backup, coordinate with your database administrator to freeze updates while you perform a manual backup.
-```
+!!! warning
+   Backups created while data is actively changing on your Liferay instance risk creating inconsistent data. To ensure a completely consistent backup, coordinate with your database administrator to freeze updates while you perform a manual backup.
 
 Clicking _View logs_ redirects you to the Logs page, where you can view the backup stages in real-time. You can also view backup logs in the _Logs_ tab of the backup service's page.
 
@@ -74,9 +71,8 @@ You can configure the backup service to meet your project's needs via the Lifera
 
 See [Environment Variables Reference](#environment-variables-reference) for a list of variables you can use to configure the backup service.
 
-```{important}
-Whenever the backup service is reconfigured, the backup service will restart and may stop receiving requests for some minutes or behave differently depending on the configuration.
-```
+!!! important
+   Whenever the backup service is reconfigured, the backup service will restart and may stop receiving requests for some minutes or behave differently depending on the configuration.
 
 ### Configuring the Backup Service via the Liferay Cloud Console
 
@@ -124,9 +120,8 @@ See [Configuration via LCP.json](../../reference/configuration-via-lcp-json.md) 
 
 Determining how frequently backups are created and removed can help protect your data and optimize storage. _Only production environments can have scheduled backups._
 
-```{warning}
-Creating backups while data is actively changing on your Liferay instance risks data inconsistency. Configure your backup schedule to kick off during times with reduced activity to mitigate the risk of data inconsistency. To ensure a completely consistent backup, coordinate with your database administrator to freeze updates while you perform a [manual backup](./backup-service-overview.md#creating-a-manual-backup), and set it to run at *different times* from the cleanup schedule (`LCP_BACKUP_CLEANUP_SCHEDULE`).
-```
+!!! warning
+   Creating backups while data is actively changing on your Liferay instance risks data inconsistency. Configure your backup schedule to kick off during times with reduced activity to mitigate the risk of data inconsistency. To ensure a completely consistent backup, coordinate with your database administrator to freeze updates while you perform a [manual backup](./backup-service-overview.md#creating-a-manual-backup), and set it to run at *different times* from the cleanup schedule (`LCP_BACKUP_CLEANUP_SCHEDULE`).
 
 There are two ways to configure an automated backup schedule:
 
@@ -139,9 +134,8 @@ There are two ways to configure an automated backup schedule:
 
     ![Click the Configuration tab to access the backup schedule configuration.](./backup-service-overview/images/07.png)
 
-    ```{note}
-    If this environment has no backups, clicking the *Set up a regular backup* link on the Backup service page also takes you to the Configuration tab.
-    ```
+   !!! note
+      If this environment has no backups, clicking the *Set up a regular backup* link on the Backup service page also takes you to the Configuration tab.
 
 1. Choose the desired backup frequency from available options in the Create Backups drop-down menu. You have these options:
 
@@ -163,23 +157,21 @@ The backup service restarts, and the changes are applied when the service has fu
 
 ### Configuring the Schedule Using Environment Variables
 
-Use the following variables per environment to customize when backups are created and removed:
+Use these variables per environment to customize when backups are created and removed:
 
 - **Automated Backups**: Add the `LCP_BACKUP_CREATE_SCHEDULE` variable with a [cron scheduling](https://crontab.guru/) value to set the frequency of automated backups.
 - **Automated Cleanups**: Add the `LCP_BACKUP_CLEANUP_SCHEDULE` variable with a [cron scheduling](https://crontab.guru/) value to set the frequency of automated backup cleanups.
 - **Retention Period**: Add the `LCP_BACKUP_RETENTION_PERIOD` variable with a numerical value (between 1-30) to set the number of days backups are retained before being removed by automated cleanups.
 
-```{note}
-Both standard and non-standard [cron scheduling syntax](https://crontab.guru/) are based on the UTC±00 time zone. When using non-standard cron syntax, automated backups and cleanups run at the start of the specified value. For example, `@daily` runs backups every day at 00:00 UTC.
-```
+!!! note
+   Both standard and non-standard [cron scheduling syntax](https://crontab.guru/) are based on the UTC±00 time zone. When using non-standard cron syntax, automated backups and cleanups run at the start of the specified value. For example, `@daily` runs backups every day at 00:00 UTC.
 
 You can use these environment variables by [setting them via the Liferay Cloud console](../../reference/defining-environment-variables.md#defining-environment-variables-via-the-liferay-cloud-console) (in the Backup service), or by [setting them in your project repository's `backup/LCP.json` file](../../reference/defining-environment-variables.md#defining-environment-variables-via-lcp-json) and deploying the Backup service to your environment.
 
-```{warning}
-If you set the environment variables via the Liferay Cloud console but later deploy the Backup service from your repository with a different configuration in `backup/LCP.json`, the configuration from your repository overwrites the environment variables set in the console.
-```
+!!! warning
+   If you set the environment variables via the Liferay Cloud console but later deploy the Backup service from your repository with a different configuration in `backup/LCP.json`, the configuration from your repository overwrites the environment variables set in the console.
 
-The following `backup/LCP.json` example creates backups every 12 hours (i.e., 00:00 and 12:00 UTC) and performs monthly cleanups that remove backups over 30 days old:
+This `backup/LCP.json` example creates backups every 12 hours (i.e., 00:00 and 12:00 UTC) and performs monthly cleanups that remove backups over 30 days old:
 
 ```json
 "env": {

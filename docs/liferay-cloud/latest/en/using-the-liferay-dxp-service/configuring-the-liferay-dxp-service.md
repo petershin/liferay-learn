@@ -66,9 +66,8 @@ liferay
 
 The `portal-ext.properties` and `portal-all.properties` files are shared across all environments. You can add any shared properties there and add environment specific properties in each respective `portal-env.properties` file. For more information, see [Portal Property Priority](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/reference/portal-properties.html#portal-property-priority).
 
-```{note}
-Portal properties may also be defined as environment variables. See [the environment variables reference](./liferay-service-environment-variables.md#environment-variables-reference) for more information.
-```
+!!! note
+   Portal properties may also be defined as environment variables. See [the environment variables reference](./liferay-service-environment-variables.md#environment-variables-reference) for more information.
 
 ## OSGi Configurations
 
@@ -80,13 +79,11 @@ These configuration files belong in the `osgi/configs/` folder inside of `$LIFER
 
 Configure your Liferay service's Tomcat server by deploying files in the appropriate environment's `liferay/configs/[ENV]` folder to override the configuration files. For example, you can override the `{TOMCAT HOME}/conf/web.xml` file in your Liferay container's file system by placing the customized file in the appropriate `liferay/configs/[ENV]/tomcat/conf/` folder in your repository and deploying the changes.
 
-```{note}
-Two tomcat folders exist in the Liferay container in Liferay Cloud: a generic `tomcat` folder, and a versioned folder (`tomcat-x.x.x`). The `tomcat` folder has a symbolic link to the versioned `tomcat-x.x.x` folder, so overriding a file in the generic `tomcat` folder ensures the new file reflects in both folders.
-```
+!!! note
+   Two tomcat folders exist in the Liferay container in Liferay Cloud: a generic `tomcat` folder, and a versioned folder (`tomcat-x.x.x`). The `tomcat` folder has a symbolic link to the versioned `tomcat-x.x.x` folder, so overriding a file in the generic `tomcat` folder ensures the new file reflects in both folders.
 
-```{warning}
-Keep in mind when overriding the default Tomcat configuration that the Liferay service in Liferay Cloud exists in a closed network on the Cloud platform. Some network configurations that can be changed in an on-premises Liferay installation cannot be changed from the default values in a Cloud environment, or it may cause issues in your environment.
-```
+!!! warning
+   Keep in mind when overriding the default Tomcat configuration that the Liferay service in Liferay Cloud exists in a closed network on the Cloud platform. Some network configurations that can be changed in an on-premises Liferay installation cannot be changed from the default values in a Cloud environment, or it may cause issues in your environment.
 
 ## Key Deployment Directories Reference
 
@@ -94,9 +91,9 @@ Keep in mind when overriding the default Tomcat configuration that the Liferay s
 | :------------------------ | :---------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Deployed files to Liferay | liferay/configs/[ENV]/deploy/       | Any files deployed directly to Liferay, including [themes, modules](./deploying-to-the-liferay-service.md#deploying-themes-portlets-and-osgi-modules), and [licenses](#deploying-licenses). |
 | OSGi configurations       | liferay/configs/[ENV]/osgi/configs/ | Any `.cfg` or `.config` [OSGi configuration files](#osgi-configurations).                                                                                                                   |
-| Hotfixes                  | liferay/configs/[ENV]/patching/     | [Hotfix `.zip` files](./deploying-to-the-liferay-service.md#deploying-hotfixes) (one at a time).                                                                                            |
+| Hotfixes                  | liferay/configs/[ENV]/patching/     | A [hotfix `.zip` file](./deploying-to-the-liferay-service.md#deploying-hotfixes). You can only deploy one hotfix to an environment at a time.                                               |
 | Custom shell scripts      | liferay/configs/[ENV]/scripts/      | Scripts here automatically run when the service starts.                                                                                                                                     |
-| Other overrides           | liferay/configs/[ENV]/              | Any other configurations that belong your Liferay instance's Liferay Home folder.                                                                                                           |
+| Other overrides           | liferay/configs/[ENV]/              | Any other configurations that belong your Liferay instance's Liferay Home folder. If they belong in a subdirectory of Liferay Home, place them in the same subdirectory of this folder.     |
 
 ## Environment Variables
 

@@ -59,7 +59,7 @@ Any `.sh` files found in the `configs/[ENV]/scripts/` folder are run prior to st
 
 | **File Type**             | **Path**                         | **Description**                                                     |
 | :------------------------ | :------------------------------- | :------------------------------------------------------------------ |
-| Web server configurations | webserver/configs/[ENV]/confid./ | [Configuration files, including `nginx.conf`.](#configuration)      |
+| Web server configurations | webserver/configs/[ENV]/conf.d/  | [Configuration files, including `nginx.conf`.](#configuration)      |
 | Static content            | webserver/configs/[ENV]/public/  | Static content served to your site.                                 |
 | Custom scripts            | webserver/configs/[ENV]/scripts/ | [Scripts](#scripts) here automatically run when the service starts. |
 

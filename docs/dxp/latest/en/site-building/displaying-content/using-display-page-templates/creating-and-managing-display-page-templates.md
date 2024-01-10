@@ -48,7 +48,7 @@ You can now use the template to [display your content](./publishing-content-with
 
 ### Setting a Friendly URL for the Display Page Template
 
-{bdg-secondary}`Liferay 2023.Q4+/GA106+`
+{bdg-secondary}`Liferay 2023.Q4+/GA102+`
 
 You can set a friendly URL for your display page template. The friendly URL is used when the display page template is not marked as default or when it is manually selected for use.
 
@@ -125,7 +125,7 @@ If you assign your content to a new display page template, make sure the content
 
 ## Duplicating a Display Page Template
 
-{bdg-secondary}`Liferay 7.4 2023.Q4+/GA107+ `
+{bdg-secondary}`Liferay 7.4 2023.Q4+/GA102+`
 
 You can duplicate a published display page template. The copy is linked to the original content type, and its mappings are the same as the original page.
 
@@ -144,11 +144,11 @@ To create a copy of your display page template,
 ![Use the actions menu to make a copy of your published display page template.](./creating-and-managing-display-page-templates/images/08.png)
 
 !!! important
-    You can only make a copy of display page templates if they were published at some point. Even if the template is modified and not re-published (it becomes a draft), you can copy the last published version of the display page template.
+    You can only make a copy of display page templates if they were published at some point. Even if the published template becomes a draft again, you can copy the last published version of the display page template.
 
 ## Changing the Content Type of Display Page Templates
 
-{bdg-secondary}`Liferay 7.4 2023.Q4+/GA107+ `
+{bdg-secondary}`Liferay 7.4 2023.Q4+/GA102+`
 
 !!! warning
     Changing the content type/subtype of a display page template may cause some of its elements to lose their previous mapping.
@@ -181,7 +181,7 @@ Assign to Default assigns the asset to the default display page template, while 
 
 The picture below shows the Display Page settings for a web content article with the Display Page Template assigned to it (1), after using the Assign to Default option (2), and after using the Unassign option (3).
 
-![The display page settings for a web content article in three different moments.](./creating-and-managing-display-page-templates/images/11.png)
+![The display page settings for a web content article with a display page template assigned to it, after using the Assign to Default option, and after using the Unassign option.](./creating-and-managing-display-page-templates/images/11.png)
 
 ## Related Topics
 

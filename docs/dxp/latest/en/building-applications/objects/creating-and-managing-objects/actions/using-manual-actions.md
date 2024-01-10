@@ -144,7 +144,7 @@ There are four options available for both outcomes and an extra success interact
 
 1. **Go to External URL**: Navigate to an external URL.
 
-1. **Go to Entry Display Page** (only for Success Interactions): When mapped to a specific object entry with an action in place, you can select this option as a success interaction. It redirects the user to a display page template.
+1. **Go to Entry Display Page** (Success Interactions only): When mapped to a specific object entry with an action in place, you can select this option as a success interaction. It redirects the user to a display page template.
 
 ![Go to Entry Display Page is an extra Success Interaction option that can be used to redirect the user to a display page template.](./using-manual-actions/images/07.png)
 

@@ -66,5 +66,5 @@
 
 * [새 계정 만들기](../users-and-accounts/account-management/creating-a-new-account.md)
 * [새 계정 그룹 생성](../users-and-accounts/account-management/creating-a-new-account-group.md)
-* [가격 목록에 제품 추가](./adding-products-to-a-price-list.md) 
+* [가격 목록에 제품 추가](./adding-products-to-a-price-list.md)
 * [가격 등급 사용](./using-price-tiers.md)

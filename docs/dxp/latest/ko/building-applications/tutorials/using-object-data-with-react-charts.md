@@ -21,7 +21,7 @@
 
 1. `/o/c/*` 값으로 **URL 패턴** 을 추가하고 **저장** 을 클릭하세요. 이를 통해 모든 객체 API에 대해 CORS가 활성화됩니다.
 
-   ![Add the /o/c/\* URL Pattern for Object APIs.](./using-object-data-with-react-charts/images/03.png)
+   ![Add the /o/c/* URL Pattern for Object APIs.](./using-object-data-with-react-charts/images/03.png)
 
 ## React 차트용 객체 생성
 

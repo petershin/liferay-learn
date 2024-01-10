@@ -9,7 +9,7 @@
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-그런 다음 다음 단계에 따라 `/o/c/*`` URL 패턴을***기본 포털 CORS 구성** 에 추가하세요.
+그런 다음 다음 단계에 따라 `/o/c/*` URL 패턴을 **기본 포털 CORS 구성** 에 추가하세요.
 
 1. **전역 메뉴**(![전역 메뉴](../../../images/icon-applications-menu.png))를 열고 **제어판** 탭을 클릭한 다음 **시스템 설정** &rarr; 으로 이동합니다. **보안 도구** .
 

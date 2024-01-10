@@ -20,7 +20,7 @@
    unzip liferay-t7z2.zip
    ```
 
-   이 .zip 파일에는 'object-admin' REST API를 사용하여 배포자 애플리케이션 개체에 레이아웃과 보기를 추가하는 셸 스크립트가 포함되어 있습니다.
+   이 .zip 파일에는 `object-admin` REST API를 사용하여 배포자 애플리케이션 개체에 레이아웃과 보기를 추가하는 셸 스크립트가 포함되어 있습니다.
 
 1. `liferay-t7z2/curl`로 이동합니다.
 
@@ -78,7 +78,7 @@ Distributor Application 개체에서 항목 만들기를 연습하여 개체가 
 
 이제 Delectable Bonsai에는 평가 메모를 저장하고 이를 특정 응용 프로그램과 연결하는 방법이 필요합니다. 이를 위해 애플리케이션 평가 정의를 설정하고 개체 관계를 구현합니다.
 
-다음: [애플리케이션 평가 개체 설정](./setting-up-the-application-evaluation-object.md) 
+다음: [애플리케이션 평가 개체 설정](./setting-up-the-application-evaluation-object.md)
 
 ## 관련 개념
 

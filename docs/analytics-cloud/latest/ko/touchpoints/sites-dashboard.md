@@ -10,14 +10,14 @@ Liferay Analytics Cloud는 작업 공간의 각 속성에 대한 사이트 대�
 
 대시보드에는 다음 데이터 패널이 포함되어 있습니다.
 
-* [현장 활동](#site-activities) 
-* [인기 페이지](#top-pages) 
-* [인수](#acquisitions) 
-* [요일별, 시간별 방문객](#visitors-by-day-and-time) 
-* [검색어 및 관심분야](#search-terms-and-interests) 
+* [현장 활동](#site-activities)
+* [인기 페이지](#top-pages)
+* [인수](#acquisitions)
+* [요일별, 시간별 방문객](#visitors-by-day-and-time)
+* [검색어 및 관심분야](#search-terms-and-interests)
 * [위치별 세션](#sessions-by-location)
-* [세션 기술](#session-technology) 
-* [코호트 분석](#cohort-analysis) 
+* [세션 기술](#session-technology)
+* [코호트 분석](#cohort-analysis)
 
 이 대시보드 보기를 PDF 파일로 다운로드하려면 **보고서 다운로드** 를 클릭하세요. 자세한 내용은 [보고서 다운로드](../reference/downloading-reports.md) 참조하세요.
 

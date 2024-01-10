@@ -48,7 +48,7 @@ Liferay는 게시된 개체 정의에 대한 REST API를 자동으로 생성합�
 
 페이지의 버튼에 독립 실행형 작업을 매핑할 수 있습니다( [콘텐츠 페이지](#mapping-buttons-to-object-actions-in-content-pages) 또는 [표시 페이지 템플릿](#mapping-buttons-to-object-actions-in-display-page-templates)).
 
-Liferay의 기본 버튼 조각이 사용 사례를 만족하지 않는 경우 `data-lfr-editable-id="action"` 및 `data-lfr-editable 속성을 추가하여 작업을 사용자 정의 버튼에 매핑할 수 있습니다. -type="action"`을 HTML 태그에 추가합니다. 조각에 속성을 추가하는 방법에 대해 자세히 알아보려면 [조각별 태그 및 속성 참조](../../../../site-building/developer-guide/reference/fragments/fragment-specific-tags-reference.md) 참조하세요.
+Liferay의 기본 버튼 조각이 사용 사례를 만족시키지 못하는 경우, 해당 HTML 태그에 `data-lfr-editable-id="action"` 및 `data-lfr-editable-type="action"` 속성을 추가하여 사용자 정의 버튼에 액션을 매핑할 수 있습니다. 조각에 속성을 추가하는 방법에 대해 자세히 알아보려면 [조각별 태그 및 속성 참조](../../../../site-building/developer-guide/reference/fragments/fragment-specific-tags-reference.md)를 참조하세요.
 
 다음은 작업 가능한 맞춤 버튼의 예입니다.
 

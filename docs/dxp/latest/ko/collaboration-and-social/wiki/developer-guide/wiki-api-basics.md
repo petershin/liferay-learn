@@ -41,7 +41,7 @@ javac -classpath .:* *.java
 
 프로젝트에는 `com.liferay.headless.delivery.client.jar` 파일이 종속성으로 포함되어 있습니다. 설치된 API 탐색기의 `/o/api`에서 모든 REST 애플리케이션에 대한 클라이언트 JAR 종속성 정보를 찾을 수 있습니다.
 
-제공된 코드에는 'WikiNode' 및 'WikiPage' 서비스용 API가 포함되어 있습니다. 포함된 모든 샘플 API 목록은 [Tutorial Code Reference](#tutorial-code-reference) 참조하세요.
+제공된 코드에는 `WikiNode` 및 `WikiPage` 서비스용 API가 포함되어 있습니다. 포함된 모든 샘플 API 목록은 [Tutorial Code Reference](#tutorial-code-reference) 참조하세요.
 
 ```{important}
 제공된 코드는 데모 목적으로 기본 인증을 사용합니다. 프로덕션의 경우 [OAuth2](../../../headless-delivery/using-oauth2.md) 로 사용자를 승인해야 합니다.
@@ -79,7 +79,7 @@ javac -classpath .:* *.java
    java -classpath .:* -DsiteId={site-id} WikiNode_POST_ToSite
    ```
 
-   터미널에는 새로 생성된 Wiki 노드에 대한 전체 스키마가 표시됩니다. 제공된 API 호출은 새 노드에 대한 '설명' 및 '이름' 필드만 정의합니다.
+   터미널에는 새로 생성된 Wiki 노드에 대한 전체 스키마가 표시됩니다. 제공된 API 호출은 새 노드에 대한 `설명` 및 `이름` 필드만 정의합니다.
 
 1. 다음 GET, PUT 및 DELETE 메서드와 함께 사용할 노드 ID를 복사합니다.
 
@@ -399,7 +399,7 @@ cURL 명령이나 Java 클래스를 사용하여 `WikiPage` API를 호출할 수
 | 위키페이지 | `DELETE` | `/v1.0/wiki-pages/[wikiPageId]`                  | 지정된 페이지를 삭제하고 작업이 성공하면 204를 반환합니다.                                               |
 
 ```{important}
-Wiki 페이지에 POST 및 PUT 메서드를 사용하는 경우 'headline' 및 'encodingFormat' 필드를 모두 정의해야 합니다. 'headline' 필드는 페이지의 기본 제목을 설정하고, 'encodingFormat' 필드는 페이지의 미디어 형식(예: HTML, BBCode 등)을 결정합니다.
+Wiki 페이지에 POST 및 PUT 메서드를 사용하는 경우 `headline` 및 `encodingFormat` 필드를 모두 정의해야 합니다. `headline` 필드는 페이지의 기본 제목을 설정하고, `encodingFormat` 필드는 페이지의 미디어 형식(예: HTML, BBCode 등)을 결정합니다.
 ```
 ## 샘플 cURL 스크립트 검사
 

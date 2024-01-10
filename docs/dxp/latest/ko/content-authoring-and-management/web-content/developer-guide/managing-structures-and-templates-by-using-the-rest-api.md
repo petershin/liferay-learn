@@ -58,7 +58,7 @@
 REST API를 사용하여 프로그래밍 방식으로 구조 또는 템플릿을 생성할 수 없습니다.
 ```
 
-구조를 생성하려면 [구조 생성](../web-content-structures/creating-structures.md) 을 읽어보세요. 템플릿을 생성하려면 [웹 콘텐츠 템플릿 생성](../web-content-templates/creating-web-content-templates.md) 읽고 샘플 구조를 기반으로 템플릿을 생성하십시오. 이 튜토리얼에서는 단일 텍스트 필드가 있는 기본 구조를 사용하여 'ContentStructure' 서비스를 보여줍니다.
+구조를 생성하려면 [구조 생성](../web-content-structures/creating-structures.md) 을 읽어보세요. 템플릿을 생성하려면 [웹 콘텐츠 템플릿 생성](../web-content-templates/creating-web-content-templates.md) 읽고 샘플 구조를 기반으로 템플릿을 생성하십시오. 이 튜토리얼에서는 단일 텍스트 필드가 있는 기본 구조를 사용하여 `ContentStructure` 서비스를 보여줍니다.
 
 ![Basic sample Structure using a single Text field.](./managing-structures-and-templates-by-using-the-rest-api/images/02.png)
 
@@ -74,7 +74,7 @@ REST API를 사용하여 프로그래밍 방식으로 구조 또는 템플릿을
 
 ## 사용할 서비스 식별
 
-Liferay DXP Headless Delivery API의 'StructuredContent' 서비스를 사용하여 웹 콘텐츠를 관리하세요. 이 서비스와 다양한 HTTP 메서드를 모두 식별하려면 Liferay API Explorer를 사용하세요. 자세한 내용은 [REST 서비스 사용](../../../headless-delivery/consuming-apis/consuming-rest-services.md) 참조하세요.
+Liferay DXP Headless Delivery API의 `StructuredContent` 서비스를 사용하여 웹 콘텐츠를 관리하세요. 이 서비스와 다양한 HTTP 메서드를 모두 식별하려면 Liferay API Explorer를 사용하세요. 자세한 내용은 [REST 서비스 사용](../../../headless-delivery/consuming-apis/consuming-rest-services.md) 참조하세요.
 
 ## 사이트 구조 가져오기
 
@@ -94,7 +94,7 @@ Liferay DXP Headless Delivery API의 'StructuredContent' 서비스를 사용하�
 | :------ | :------- |
 | $1      | `siteId` |
 
-다음 코드는 스크립트에서 생성된 JSON 출력을 보여줍니다. 스크립트는 사이트의 모든 구조를 반환합니다. 이 예에서는 'id'와 'name'으로 식별되는 단일 구조를 볼 수 있습니다.
+다음 코드는 스크립트에서 생성된 JSON 출력을 보여줍니다. 스크립트는 사이트의 모든 구조를 반환합니다. 이 예에서는 `id`와 `name`으로 식별되는 단일 구조를 볼 수 있습니다.
 
 ```json
    {
@@ -183,7 +183,7 @@ Liferay DXP Headless Delivery API의 'StructuredContent' 서비스를 사용하�
 
 ## 사이트 템플릿 가져오기
 
-`ContentTemplates_GET_FromSite.sh` cURL 스크립트는 기존 사이트 템플릿을 나열합니다. 이 스크립트는 사이트 ID를 유일한 매개변수로 사용하여 'GET' HTTP 메서드와 함께 'ContentTemplate' 서비스를 사용합니다.
+`ContentTemplates_GET_FromSite.sh` cURL 스크립트는 기존 사이트 템플릿을 나열합니다. 이 스크립트는 사이트 ID를 유일한 매개변수로 사용하여 `GET` HTTP 메서드와 함께 `ContentTemplate` 서비스를 사용합니다.
 
 테이블
 
@@ -201,7 +201,7 @@ cURL 스크립트 매개변수:
 | :------ | :------- |
 | $1      | `siteId` |
 
-다음은 스크립트에서 생성된 부분 JSON 출력입니다. 스크립트는 사이트의 모든 템플릿을 반환합니다. 이 예에서는 'id'와 'name'으로 식별되는 단일 템플릿을 볼 수 있습니다. 'contentStructureId'는 관련 구조 ID에 해당하고 'templateScript'는 템플릿을 설명하는 FreeMarker 템플릿 언어에 해당합니다.
+다음은 스크립트에서 생성된 부분 JSON 출력입니다. 스크립트는 사이트의 모든 템플릿을 반환합니다. 이 예에서는 `id`와 `name`으로 식별되는 단일 템플릿을 볼 수 있습니다. `contentStructureId`는 관련 구조 ID에 해당하고 `templateScript`는 템플릿을 설명하는 FreeMarker 템플릿 언어에 해당합니다.
 
 ```json
 {
@@ -288,7 +288,7 @@ JSON 출력에는 `items` 섹션 아래의 권한이 포함됩니다. 이 예에
 
 ## 구조 권한 교체
 
-원래 구조 권한을 대체하려면 `ContentStructure` 서비스와 함께 `PUT` HTTP 메서드를 사용하세요. 이 스크립트 예는 구조화된 콘텐츠 식별자 'id'를 사용하여 고급 사용자 역할에 대한 'DELETE' 및 'VIEW' 권한을 포함합니다.
+원래 구조 권한을 대체하려면 `ContentStructure` 서비스와 함께 `PUT` HTTP 메서드를 사용하세요. 이 스크립트 예는 구조화된 콘텐츠 식별자 `id`를 사용하여 고급 사용자 역할에 대한 `DELETE` 및 `VIEW` 권한을 포함합니다.
 
 | 방법 | 서비스                | 엔드포인트                                                       |
 | :- | :----------------- | :---------------------------------------------------------- |

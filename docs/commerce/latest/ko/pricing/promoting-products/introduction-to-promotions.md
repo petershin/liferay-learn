@@ -40,6 +40,6 @@ Liferay DXP 7.4 U42/GA42 이전에는 프로모션 가격을 세일 가격이라
 
 ## 관련 주제
 
-* [프로모션 생성](./creating-a-promotion.md) 
-* [프로모션 베이스 목록 사용하기](./using-the-promotion-base-list.md) 
-* [프로모션 참조](./promotions-reference.md) 
+* [프로모션 생성](./creating-a-promotion.md)
+* [프로모션 베이스 목록 사용하기](./using-the-promotion-base-list.md)
+* [프로모션 참조](./promotions-reference.md)

@@ -4,11 +4,11 @@ DXP 설치를 실행한 후에는 예상치 못한 이벤트를 고려한 포괄
 
 Liferay DXP의 백업 계획을 고려할 때 다음 영역을 백업하는 것이 좋습니다.
 
-* [Liferay 홈 디렉토리](#liferay-home) 
-* [애플리케이션 서버](#application-server) 
-* [데이터베이스](#database) 
-* [검색 색인](#search-indexes) 
-* [소스 코드](#source-code) 
+* [Liferay 홈 디렉토리](#liferay-home)
+* [애플리케이션 서버](#application-server)
+* [데이터베이스](#database)
+* [검색 색인](#search-indexes)
+* [소스 코드](#source-code)
 
 ```{note}
 Liferay Cloud는 문서 라이브러리 및 Liferay DXP 데이터베이스의 백업 생성 및 관리 프로세스를 자동화하고 단순화합니다. Liferay Cloud는 Git 기반 DevOps 파이프라인을 사용하기 때문에 Liferay의 모든 구성도 자동으로 백업됩니다. 자세한 내용은 [백업 서비스 개요](https://learn.liferay.com/liferay-cloud/latest/ko/platform-services/backup-service/backup-service-overview.html) 을 참조하세요.

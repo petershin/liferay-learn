@@ -125,7 +125,7 @@
 
 다음 cURL 또는 Java 명령을 실행하여 조직을 나열할 수 있습니다.
 
-### OrganizationsGET_FromInstance.sh
+### Organizations_GET_FromInstance.sh
 
 명령:
 

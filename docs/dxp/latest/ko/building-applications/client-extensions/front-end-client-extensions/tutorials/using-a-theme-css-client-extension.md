@@ -155,7 +155,7 @@ STARTED liferay-sample-theme-css-1_1.0.0
 
 Liferay에서 테마 CSS 클라이언트 확장을 성공적으로 사용했습니다. 다음으로 다른 클라이언트 확장 유형을 배포해 보세요.
 
-* [CSS 클라이언트 확장 사용하기](./using-a-css-client-extension.md) 
-* [JS 클라이언트 확장 사용하기](./using-a-javascript-client-extension.md) 
-* [테마 Favicon 클라이언트 확장 사용하기](./using-a-theme-favicon-client-extension.md) 
-* [테마 스프라이트 맵 클라이언트 확장 사용하기](./using-a-theme-spritemap-client-extension.md) 
+* [CSS 클라이언트 확장 사용하기](./using-a-css-client-extension.md)
+* [JS 클라이언트 확장 사용하기](./using-a-javascript-client-extension.md)
+* [테마 Favicon 클라이언트 확장 사용하기](./using-a-theme-favicon-client-extension.md)
+* [테마 스프라이트 맵 클라이언트 확장 사용하기](./using-a-theme-spritemap-client-extension.md)

@@ -284,5 +284,5 @@ unzip liferay-g4m3.zip
 
 ## 관련 주제
 
-* [개체 이벤트 감사](../../creating-and-managing-objects/auditing-object-events.md) 
-* [NestedFields를 사용하여 관련 항목 쿼리](./using-nestedfields-to-query-related-entries.md) 
+* [개체 이벤트 감사](../../creating-and-managing-objects/auditing-object-events.md)
+* [NestedFields를 사용하여 관련 항목 쿼리](./using-nestedfields-to-query-related-entries.md)

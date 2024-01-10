@@ -377,7 +377,7 @@ com.liferay.portal.kernel.servlet.filters.invoker
 
 포틀릿 애플리케이션 WAR 파일을 배포할 때 [WAB 생성기](../../../reference/deploying-wars-wab-generator.md)는 지정된 OSGi 메타데이터를 결과 웹 애플리케이션 번들(WAB)에 추가합니다. Liferay의 런타임 프레임워크에 배포됩니다.
 
-[`liferay-plugin-package- [버전].dtd` 파일](https://resources.learn.liferay.com/reference/latest/en/dxp/definitions/index.html) 은 `liferay-plugin-package.properties` 파일.
+[`liferay-plugin-package-[version].dtd` 파일](https://resources.learn.liferay.com/reference/latest/en/dxp/definitions/index.html) 은 `liferay-plugin-package.properties` 파일.
 
 ## 관련 주제
 

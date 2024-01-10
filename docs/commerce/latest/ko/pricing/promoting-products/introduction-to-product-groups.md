@@ -120,7 +120,7 @@
 
 ## 관련 주제
 
-* [할인 소개](./introduction-to-discounts.md) 
-* [가격 소개](../introduction-to-pricing.md) 
-* [가격표 생성](../creating-a-price-list.md) 
-* [가격 목록에 제품 추가](../adding-products-to-a-price-list.md) 
+* [할인 소개](./introduction-to-discounts.md)
+* [가격 소개](../introduction-to-pricing.md)
+* [가격표 생성](../creating-a-price-list.md)
+* [가격 목록에 제품 추가](../adding-products-to-a-price-list.md)

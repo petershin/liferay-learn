@@ -83,7 +83,7 @@ javac -classpath .:* *.java
    java -classpath .:* -DsiteId={site-id} MessageBoardSection_POST_ToSite
    ```
 
-   터미널에는 새로 생성된 섹션에 대한 전체 스키마가 표시됩니다. 제공된 API 호출은 새 섹션에 대한 '설명' 및 '이름' 필드만 정의합니다.
+   터미널에는 새로 생성된 섹션에 대한 전체 스키마가 표시됩니다. 제공된 API 호출은 새 섹션에 대한 `설명` 및 `이름` 필드만 정의합니다.
 
 1. 다음 GET, PATCH, PUT 및 DELETE 메소드와 함께 사용할 섹션 ID를 복사하십시오.
 
@@ -126,7 +126,7 @@ javac -classpath .:* *.java
    java -classpath .:* -DmessageBoardSectionId={message-board-section-id} MessageBoardSection_PATCH_ById
    ```
 
-   그러면 '설명' 필드가 'Bar'로 업데이트됩니다.
+   그러면 `설명` 필드가 `Bar`로 업데이트됩니다.
 
 1. 해당 매개변수에 동일한 섹션 ID를 사용하여 `MessageBoardSection_PUT_ById`를 실행합니다. 그러면 지정된 섹션의 세부정보가 API 호출에 제공된 세부정보로 대체됩니다.
 
@@ -142,7 +142,7 @@ javac -classpath .:* *.java
    java -classpath .:* -DmessageBoardSectionId={message-board-section-id} MessageBoardSection_PUT_ById
    ```
 
-   그러면 'name' 필드가 'Baker Section'으로 업데이트되고 'description' 필드가 'Goo'로 업데이트됩니다.
+   그러면 `name` 필드가 `Baker Section`으로 업데이트되고 `description` 필드가 `Goo`로 업데이트됩니다.
 
 1. 해당 매개변수에 대한 사이트 ID를 사용하여 `MessageBoardThread_POST_ToSite`를 실행합니다. 그러면 사이트에 대한 새 메시지 보드 스레드가 생성됩니다.
 

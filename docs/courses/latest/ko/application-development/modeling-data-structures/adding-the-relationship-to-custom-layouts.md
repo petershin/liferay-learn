@@ -70,4 +70,4 @@
 
 이제 객체 항목 관련을 연습할 수 있습니다!
 
-다음: [개체 항목 관련](./relating-object-entries.md) 
+다음: [개체 항목 관련](./relating-object-entries.md)

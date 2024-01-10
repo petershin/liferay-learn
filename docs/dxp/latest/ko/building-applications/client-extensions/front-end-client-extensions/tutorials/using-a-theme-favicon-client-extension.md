@@ -37,7 +37,7 @@ liferay-sample-theme-favicon:
     url: favicon.ico
 ```
 
-클라이언트 확장에는 'liferay-sample-theme-favicon' ID가 있으며 추가할 유형 및 파비콘 파일을 포함하여 테마 파비콘 클라이언트 확장에 대한 주요 구성이 포함되어 있습니다. 사용 가능한 속성에 대한 자세한 내용은 [Theme Favicon YAML 구성 참조](../theme-favicon-yaml-configuration-reference.md) 참조하세요.
+클라이언트 확장에는 `liferay-sample-theme-favicon` ID가 있으며 추가할 유형 및 파비콘 파일을 포함하여 테마 파비콘 클라이언트 확장에 대한 주요 구성이 포함되어 있습니다. 사용 가능한 속성에 대한 자세한 내용은 [Theme Favicon YAML 구성 참조](../theme-favicon-yaml-configuration-reference.md) 참조하세요.
 
 여기에는 `assemble` YAML 블록도 포함되어 있습니다.
 
@@ -67,7 +67,7 @@ Liferay가 시작되면 샘플 작업 공간의 클라이언트 확장 폴더에
 ```
 
 ```{tip}
-작업 공간에 모든 클라이언트 확장을 동시에 배포하려면 'client-extensions/' 폴더에서 명령을 실행하세요.
+작업 공간에 모든 클라이언트 확장을 동시에 배포하려면 `client-extensions/` 폴더에서 명령을 실행하세요.
 ```
 
 Liferay 인스턴스 콘솔에서 배포를 확인합니다.

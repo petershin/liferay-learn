@@ -104,7 +104,7 @@ Liferay 개체를 사용하면 기존 DXP 프레임워크를 사용하여 사이
 
 ## 관련 주제
 
-* [객체 생성](./creating-and-managing-objects/creating-objects.md) 
-* [컬렉션 공급자를 사용하여 개체 항목 표시](./displaying-object-entries-with-collection-providers.md) 
-* [컬렉션 및 컬렉션 페이지 정보](../../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md) 
-* [표시 페이지 템플릿 사용](../../site-building/displaying-content/using-display-page-templates.md) 
+* [객체 생성](./creating-and-managing-objects/creating-objects.md)
+* [컬렉션 공급자를 사용하여 개체 항목 표시](./displaying-object-entries-with-collection-providers.md)
+* [컬렉션 및 컬렉션 페이지 정보](../../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md)
+* [표시 페이지 템플릿 사용](../../site-building/displaying-content/using-display-page-templates.md)

@@ -117,6 +117,7 @@
 ```{note}
 여기서는 데모 목적으로 기본 인증이 사용됩니다. 프로덕션의 경우 [OAuth2](../../../headless-delivery/using-oauth2.md) 을 통해 사용자에게 권한을 부여해야 합니다. OAuth2를 사용하는 샘플 React 애플리케이션은 [OAuth2를 사용하여 사용자 인증](../../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md) 참조하세요.
 ```
+
 다른 cURL 명령은 유사한 JSON 인수를 사용합니다.
 
 ## Java 클래스 검사
@@ -142,6 +143,7 @@
 ```{note}
 `main` 메소드의 주석은 클래스 실행을 보여줍니다.
 ```
+
 다른 예제 Java 클래스는 이와 유사하지만 다른 메소드를 호출합니다.
 
 ```{important}
@@ -333,11 +335,11 @@ java -classpath .:* -DobjectDefinitionId=1234 ObjectDefinition_DELETE_ById
 
 | 파일                                                  | 묘사                       |
 | :-------------------------------------------------- | :----------------------- |
-| `ObjectField_DELETE_ById.[java\\|sh]`               | ID별로 개체 필드를 삭제합니다.       |
-| `ObjectField_GET_ById.[java\\|sh]`                  | ID별로 특정 개체 필드를 가져옵니다.    |
-| `ObjectField_PATCH_ById.[java\\|sh]`                | 특정 객체 필드를 ID별로 패치합니다.    |
-| `ObjectField_POST_ToObjectDefinition.[java\\|sh]`   | 개체 필드를 개체 정의에 게시합니다.     |
-| `ObjectField_PUT_ById.[java\\|sh]`                  | 특정 개체 필드를 ID로 바꿉니다.      |
-| `ObjectFields_GET_FromObjectDefinition.[java\\|sh]` | 개체 정의에서 개체 필드 목록을 가져옵니다. |
+| `ObjectField_DELETE_ById.[java\|sh]`               | ID별로 개체 필드를 삭제합니다.       |
+| `ObjectField_GET_ById.[java\|sh]`                  | ID별로 특정 개체 필드를 가져옵니다.    |
+| `ObjectField_PATCH_ById.[java\|sh]`                | 특정 객체 필드를 ID별로 패치합니다.    |
+| `ObjectField_POST_ToObjectDefinition.[java\|sh]`   | 개체 필드를 개체 정의에 게시합니다.     |
+| `ObjectField_PUT_ById.[java\|sh]`                  | 특정 개체 필드를 ID로 바꿉니다.      |
+| `ObjectFields_GET_FromObjectDefinition.[java\|sh]` | 개체 정의에서 개체 필드 목록을 가져옵니다. |
 
 [API Explorer](../../../headless-delivery/consuming-apis/consuming-rest-services.md) 은 객체에 대한 모든 서비스와 스키마를 표시하고 각 서비스를 시험해 볼 수 있는 인터페이스를 가지고 있습니다.

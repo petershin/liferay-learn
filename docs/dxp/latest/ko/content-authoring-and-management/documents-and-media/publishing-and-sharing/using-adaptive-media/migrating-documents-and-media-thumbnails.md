@@ -59,5 +59,5 @@ DXP는 적응형 미디어를 사용하여 문서 및 미디어의 이미지에 
 
 ## 관련 주제
 
-* [이미지 해상도 관리](./managing-image-resolutions.md) 
-* [적응형 미디어 구성 참조](./adaptive-media-configuration-reference.md) 
+* [이미지 해상도 관리](./managing-image-resolutions.md)
+* [적응형 미디어 구성 참조](./adaptive-media-configuration-reference.md)

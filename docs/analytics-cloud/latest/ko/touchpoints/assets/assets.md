@@ -9,11 +9,11 @@
 
 이러한 자산에 대한 지표는 현재 Analytics Cloud에 보고됩니다.
 
-* [블로그](./blogs.md) 
-* [문서 및 미디어](./documents-and-media.md) 
-* [양식](./forms.md) 
-* [웹 콘텐츠](./tracking-custom-assets.md) 
-* [사용자 정의](./tracking-custom-assets.md) 
+* [블로그](./blogs.md)
+* [문서 및 미디어](./documents-and-media.md)
+* [양식](./forms.md)
+* [웹 콘텐츠](./tracking-custom-assets.md)
+* [사용자 정의](./tracking-custom-assets.md)
 
 각 자산 유형에 대한 CSV 보고서도 다운로드할 수 있습니다. 자세한 내용은 [보고서 다운로드](../reference/downloading-reports.md) 참조하세요.
 

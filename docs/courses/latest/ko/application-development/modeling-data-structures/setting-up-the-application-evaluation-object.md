@@ -81,4 +81,4 @@
 
 이제 배포자 응용 프로그램과 응용 프로그램 평가 개체 간의 관계를 정의하여 해당 항목을 연결할 수 있습니다.
 
-다음: [개체 정의 간의 관계 추가](./adding-a-relationship-between-the-object-definitions.md) 
+다음: [개체 정의 간의 관계 추가](./adding-a-relationship-between-the-object-definitions.md)

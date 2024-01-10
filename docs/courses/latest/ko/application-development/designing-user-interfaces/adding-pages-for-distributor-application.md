@@ -1,6 +1,6 @@
 # 대리점 신청 페이지 추가
 
-페이지는 Liferay 사이트의 기본 구성 요소입니다. Delectable Bonsai의 디자인 팀은 배포자 응용 프로그램 개체와 함께 사용할 세 개의 자리 표시자 페이지를 만들고 내보냈습니다. Here you'll import these pages as a LAR file: <!--TASK: If you've completed the [Site Design]() course, then you've already added these pages to your site. 그렇지 않은 경우 LAR 파일로 다운로드하여 가져올 수 있습니다. -->
+페이지는 Liferay 사이트의 기본 구성 요소입니다. Delectable Bonsai의 디자인 팀은 배포자 응용 프로그램 개체와 함께 사용할 세 개의 자리 표시자 페이지를 만들고 내보냈습니다. Here you'll import these pages as a LAR file: <!--TASK: If you've completed the [Site Design]() course, then you've already added these pages to your site. Otherwise, you can download and import them as a LAR file. -->
 
 1. 이 연습을 위해 LAR 파일을 다운로드하세요.
 
@@ -32,4 +32,4 @@
 
 현재는 비어 있습니다. 처음부터 시작하는 대신 제공된 조각 구성을 가져와 애플리케이션 생성, 보기 및 관리에 필요한 조각 또는 위젯을 추가합니다.
 
-다음: [배포자 애플리케이션 페이지에 대한 조각 가져오기](./importing-fragments-for-the-distributor-application-pages.md) 
+다음: [배포자 애플리케이션 페이지에 대한 조각 가져오기](./importing-fragments-for-the-distributor-application-pages.md)

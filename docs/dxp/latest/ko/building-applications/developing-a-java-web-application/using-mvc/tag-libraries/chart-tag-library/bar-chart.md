@@ -23,7 +23,7 @@
    %>
    ```
 
-1. `view.jsp`에 `<chart>taglib를 추가하고 `_barChartConfig`를 `config\` 속성 값으로 전달합니다.
+1. `view.jsp`에 `<chart>taglib를 추가하고 `_barChartConfig`를 `config` 속성 값으로 전달합니다.
 
    ```jsp
    <chart:bar
@@ -37,6 +37,6 @@
 
 ## 관련 주제
 
-* [꺾은선형 차트](./line-chart.md) 
-* [도넛 차트](./donut-chart.md) 
-* [조합 차트](./combination-chart.md) 
+* [꺾은선형 차트](./line-chart.md)
+* [도넛 차트](./donut-chart.md)
+* [조합 차트](./combination-chart.md)

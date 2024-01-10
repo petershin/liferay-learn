@@ -97,7 +97,7 @@ Here are the steps for upgrading with a Docker image:
 
     The parameter `-e LIFERAY_UPGRADE_PERIOD_DATABASE_PERIOD_AUTO_PERIOD_RUN=true` triggers the database upgrade to run automatically at startup. 
     
-    Optionally, the [upgrade report](../reference/upgrade-report.md) can be enabled with the parameter `-e LIFERAY_UPGRADE_PERIOD_REPORT_PERIOD_ENABLED=true` and the [upgrade log context](../reference/upgrade-log-context.md) can be enabled with the parameter `LIFERAY_UPGRADE_PERIOD_LOG_PERIOD_CONTEXT_PERIOD_ENABLED=true`. 
+    Optionally, the [upgrade report](../reference/upgrade-report.md) can be enabled with the parameter `-e LIFERAY_UPGRADE_PERIOD_REPORT_PERIOD_ENABLED=true` and the [upgrade log context](../reference/upgrade-log-context.md) can be enabled with the parameter `LIFERAY_UPGRADE_PERIOD_LOG_PERIOD_CONTEXT_PERIOD_ENABLED=true`. Use the parameter `LIFERAY_UPGRADE_PERIOD_REPORT_PERIOD_DIR={your_directory}` to define an output directory for the upgrade report. If none is set, `Liferay_Home/reports` is the default report directory.
 
 2. In the console or log, confirm successful database upgrade and server startup. Upgrade messages report starting and completing each upgrade process. A message like this one indicates server startup completion:
 

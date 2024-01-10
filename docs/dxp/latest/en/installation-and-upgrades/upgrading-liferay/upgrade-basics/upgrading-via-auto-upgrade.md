@@ -29,13 +29,13 @@ You can upgrade your database automatically by enabling *auto upgrade* via the p
 
 1. Open the file and set `upgrade.database.auto.run=true`.
 
-1. (Optional) Set `upgrade.report.enabled=true` to enable [upgrade reporting](../reference/upgrade-report.md).
+2. (Optional) Set `upgrade.report.enabled=true` to enable [upgrade reporting](../reference/upgrade-report.md). Further, define an output directory for the upgrade report by setting the `upgrade.report.dir={your_directory}` portal property. If none is set, `Liferay_Home/reports` is the default report directory.
 
-1. (Optional) Set `upgrade.log.context.enabled=true` to enable [upgrade log context](../reference/upgrade-log-context.md).
+3. (Optional) Set `upgrade.log.context.enabled=true` to enable [upgrade log context](../reference/upgrade-log-context.md).
 
-1. Save the property file, and [restart Liferay](../../installing-liferay/running-liferay-for-the-first-time.md#restart-the-server).
+4. Save the property file, and [restart Liferay](../../installing-liferay/running-liferay-for-the-first-time.md#restart-the-server).
 
-1. As Liferay restarts, the database is updated automatically, and progress appears in your console log. If you enabled upgrade reporting, the report is in the `Liferay_Home/reports` folder after completion.
+5. As Liferay restarts, the database is updated automatically, and progress appears in your console log. If you enabled upgrade reporting, the report is available in the output directory.
 
 ```{note}
 Make sure to remove the `upgrade.database.auto.run` property or set the value to `false` to continue using Liferay after the upgrade.

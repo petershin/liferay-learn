@@ -35,7 +35,7 @@ cd liferay-home
 echo "upgrade.report.enabled=\"true\"" << tools/portal-tools-db-upgrade-client/portal-upgrade-ext.properties
 ```
 
-The upgrade report is generated in this `/tools/portal-tools-db-upgrade-client/reports` folder.
+Optionally, define an output directory for the upgrade report by setting the `upgrade.report.dir={your_directory}` property. If none is set, the report is generated in the `/tools/portal-tools-db-upgrade-client/reports` folder.
 
 ## Upgrade Report at Startup with Portal Properties
 
@@ -46,7 +46,7 @@ upgrade.database.auto.run=true
 upgrade.report.enabled=true
 ```
 
-The upgrade report is generated in the `{liferay-home}/reports` folder. 
+Optionally, define an output directory for the upgrade report by setting the `upgrade.report.dir={your_directory}` property. If none is set, the report is generated in the `{liferay-home}/reports` folder. 
 
 ## Additional Information
 

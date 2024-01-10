@@ -28,6 +28,9 @@ You can use [display page templates](../../site-building/displaying-content/usin
 
 Each blog entry has a friendly URL that is set automatically or manually during entry creation. If you change the friendly URL after creation, Liferay stores the previous value in the entry's friendly URL history. As long as the old URL remains in the history, Liferay redirects users to the latest version of the blog entry and you cannot use it for other blog entries in the same site. To reuse an old value for a new entry, first remove it from the entry's friendly URL history.
 
+!!! note
+    By default friendly URL redirects are temporary (302), but you can set them to permanent (301) if needed. See [Configuring Friendly URL Redirects](../../site-building/site-settings/managing-site-urls/configuring-friendly-url-redirects.md) for more information.
+
 To manage an entry's friendly URL history, 
 
 1. Open the *Site Menu* ( ![Site Menu](../../images/icon-product-menu.png) ), expand *Content & Data*, and go to *Blogs*.

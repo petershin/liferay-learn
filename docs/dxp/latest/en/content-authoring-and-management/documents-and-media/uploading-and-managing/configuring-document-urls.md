@@ -43,11 +43,10 @@ Once saved, you can access the file at the designated URL (e.g., `http://[server
 
 ## Friendly URL History
 
-When you change a file's friendly URL, Liferay automatically retains a history of the previous URLs. You can continue to use these saved URLs to access the latest version of the file. If desired, you can remove old friendly URL entries.
+When you change a file's friendly URL, Liferay automatically stores its previous values. As long as old URLs remain in the file's history, you can use them to access the latest version of the file and cannot use them for other files in the same site. To reuse an old URL for another file, you must first remove it from the file's friendly URL history.
 
-```{note}
-While saved in the friendly URL history, old file URLs cannot be used for other files in the same site. To reuse the URL for another file, you must first remove it from the file's friendly URL history.
-```
+!!! note
+    By default friendly URL redirects are temporary (302), but you can set them to permanent (301) if needed. See [Configuring Friendly URL Redirects](../../site-building/site-settings/managing-site-urls/configuring-friendly-url-redirects.md) for more information.
 
 Follow these steps to view and manage retained URLs for a file:
 

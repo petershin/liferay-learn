@@ -29,6 +29,8 @@ To access the application, open the *Site Menu* (![Site Menu](../../../images/ic
 
 ![Go to the Redirection page in the Site Menu.](./setting-up-redirects-and-404-tracking/images/01.png)
 
+Liferay automatically sets up redirects for pages, blog entries, and documents with a friendly URL history. See [Configuring Friendly URL Redirects](./configuring-friendly-url-redirects.md) for more information.
+
 ## Defining Redirects
 
 You can define two kinds of redirects:

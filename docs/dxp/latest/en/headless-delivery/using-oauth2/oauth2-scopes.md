@@ -8,7 +8,7 @@ taxonomy-category-names:
 - Liferay PaaS
 - Liferay SaaS
 ---
-# OAuth 2 Scopes
+# OAuth 2.0 Scopes
 
 In OAuth 2.0, applications are granted access to limited subsets of user data. These are called *scopes* (not to be confused with Liferay scopes). They are created in two ways:
 
@@ -20,7 +20,7 @@ In OAuth 2.0, applications are granted access to limited subsets of user data. T
 
 The most common way to create a scope is to create a [Service Access Policy](../../installation-and-upgrades/securing-liferay/securing-web-services/setting-service-access-policies.md) prefixed with the name `OAUTH2_`. This naming convention causes the policy to appear in the OAuth application configuration screen as a scope.
 
-For example, say the application needs access to a user's profile information to retrieve the email address. To grant the application access to this, go to *Control Panel* &rarr; *Configuration* &rarr; *Service Access Policy*, and create the policy pictured below.
+For example, say the application needs access to a user's profile information to retrieve the email address. To grant the application access to this, go to *Control Panel* &rarr; *Security* &rarr; *Service Access Policy*, and create the policy pictured below.
 
 ![A Service Access Policy defines a scope for OAuth 2.0 applications.](./oauth2-scopes/images/01.png)
 
@@ -30,11 +30,14 @@ Note that the policy is not a default policy, and that it grants access only to 
 http://[host]:[port]/api/jsonws/
 ```
 
-Once you create a policy and name it with the `OAUTH2_` prefix, it appears in the *Scopes* tab in OAuth2 Administration.
+Go to *Control Panel* &rarr; *Security* &rarr; *OAuth2 Administration*. Click on Fragment Renderer. Once you create a policy and name it with the `OAUTH2_` prefix, it appears in the *Scopes* tab.
 
 ![Scopes named with the proper prefix appear in the Scopes tab of your application configuration.](./oauth2-scopes/images/02.png)
 
-Now you can select it and save your application.
+Now you can select it under `PORTAL SERVICES` and save your application.
+
+!!! note "The scope appears duplicated"
+   Your screen will show another scope called "read your personal user data". This is one of the many out-of-the-box scopes that comes with Liferay.
 
 ## Creating the Authorization Page
 

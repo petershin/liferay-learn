@@ -10,6 +10,9 @@ When you perform upgrades, it is important to know the changes made and any issu
 * Execution date and time
 * Total execution time of the upgrade
 * Initial, expected, and final DXP/Portal schema versions and build numbers
+* Type of upgrade that has taken place (i.e. No upgrade, Major, Minor, or Micro)
+* The upgrade status (i.e. Success, Failure, or Unresolved)
+* Result of the release manager OSGi check command. This lists any pending upgrades that have not been applied.
 * Database vendor and version
 * Upgrade-related Portal property settings
 * Document Library Store and `rootDir` configuration settings
@@ -18,6 +21,10 @@ When you perform upgrades, it is important to know the changes made and any issu
 * 20 longest-running upgrade processes
 * Errors and each type's frequency
 * Warnings and each type's frequency
+
+```{note}
+The upgrade status returns combined results for 1. Core Upgrades, 2. Module Upgrades, 3. Verify Process Exceptions, and 4. Unsatisfied Components. A `Success` is when all four have passed. A `Failure` is when 1, 2, or 3 has failed. And `Unresolved` is when 4 has failed.
+```
 
 The upgrade report is available through the [upgrade tool](../upgrade-basics/using-the-database-upgrade-tool.md) or at startup with a portal property.
 

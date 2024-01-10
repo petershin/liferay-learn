@@ -9,18 +9,10 @@ toc:
   - ./managing-site-urls/configuring-your-sites-friendly-url.md
   - ./managing-site-urls/configuring-virtual-hosts-site-urls.md
   - ./managing-site-urls/setting-up-redirects-and-404-tracking.md
+  - ./managing-site-urls/configuring-friendly-url-redirects.md
 uuid: e4e2e951-db91-4d5e-982c-049b5e03be42
 ---
 # Managing Site URLs
-
-```{toctree}
-:maxdepth: 3
-
-managing-site-urls/configuring-your-sites-friendly-url.md
-managing-site-urls/configuring-virtual-hosts-site-urls.md
-managing-site-urls/setting-up-redirects-and-404-tracking.md
-
-```
 
 Liferay DXP provides multiple out-of-the-box features for configuring and managing site URLs.
 
@@ -61,5 +53,9 @@ Use the Redirection tool to track and manage Site requests leading to 404 errors
 
 :::{grid-item-card} Setting Up Redirects and 404 Tracking
 :link: ./managing-site-urls/setting-up-redirects-and-404-tracking.md
+:::
+
+:::{grid-item-card} Configuring Friendly URL Redirects
+:link: ./managing-site-urls/configuring-friendly-url-redirects.md
 :::
 ::::

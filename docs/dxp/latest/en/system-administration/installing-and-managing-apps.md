@@ -4,6 +4,11 @@ toc:
   - ./installing-and-managing-apps/installing-apps.md
   - ./installing-and-managing-apps/managing-apps.md
 uuid: 9fecc8e8-63d9-4dfc-b766-2a514fb32a19
+taxonomy-category-names:
+- Platform
+- DXP Configuration
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Installing and Managing Apps
 

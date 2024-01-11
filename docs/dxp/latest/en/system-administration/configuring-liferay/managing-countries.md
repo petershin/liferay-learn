@@ -1,5 +1,10 @@
 ---
 uuid: 55e01e6d-f43c-44f1-b4fb-0c2e592455c6
+taxonomy-category-names:
+- Platform
+- DXP Configuration
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Managing Countries
 

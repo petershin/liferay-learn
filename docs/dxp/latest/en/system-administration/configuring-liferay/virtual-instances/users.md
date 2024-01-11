@@ -1,5 +1,10 @@
 ---
 uuid: 1211fd15-fd39-419a-9409-c4b2f9ac0e5e
+taxonomy-category-names:
+- Platform
+- DXP Configuration
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 #  Users
 

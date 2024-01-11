@@ -1,5 +1,10 @@
 ---
 uuid: 6d60e7cc-9027-4ff5-9ee1-7fe2b33dbbd0
+taxonomy-category-names:
+- Platform
+- DXP Configuration
+- Content Management System
+- Liferay Self-Hosted
 ---
 # Google Cloud Storage
 

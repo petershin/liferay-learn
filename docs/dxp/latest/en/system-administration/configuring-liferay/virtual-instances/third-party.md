@@ -1,5 +1,10 @@
 ---
 uuid: e09e6426-cf53-4f80-9b94-11cfb1c5849f
+taxonomy-category-names:
+- Platform
+- DXP Configuration
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 #  Third Party
 

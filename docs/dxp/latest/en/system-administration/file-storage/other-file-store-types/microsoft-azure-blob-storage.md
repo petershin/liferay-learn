@@ -1,5 +1,10 @@
 ---
 uuid: 2e374c77-a095-4dcd-b6bd-5fd04c057df6
+taxonomy-category-names:
+- Platform
+- DXP Configuration
+- Content Management System
+- Liferay Self-Hosted
 ---
 # Microsoft Azure Blob Storage Service
 

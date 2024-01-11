@@ -1,5 +1,10 @@
 ---
 uuid: 08bd5570-7c04-424b-97aa-de1bcedd5d3c
+taxonomy-category-names:
+- Platform
+- DXP Configuration
+- Content Management System
+- Liferay Self-Hosted
 ---
 # IBM Cloud Object Storage
 

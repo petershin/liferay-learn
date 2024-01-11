@@ -1,5 +1,10 @@
 ---
 uuid: 6abef168-1381-46ae-b190-a9ff7c096d2d
+taxonomy-category-names:
+- Platform
+- DXP Configuration
+- Content Management System
+- Liferay Self-Hosted
 ---
 # Amazon Simple Storage Service
 

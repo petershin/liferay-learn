@@ -1,5 +1,10 @@
 ---
 uuid: 96e2eee9-a25b-4ca1-b210-dff9c28569d4
+taxonomy-category-names:
+- Platform
+- DXP Configuration
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Email Settings
 

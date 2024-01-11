@@ -1,5 +1,10 @@
 ---
 uuid: f4428aae-08c7-4597-a237-c30ba4275e6f
+taxonomy-category-names:
+- Development and Tooling
+- Developer Tools
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Invoking Liferay Services From Scripts
 

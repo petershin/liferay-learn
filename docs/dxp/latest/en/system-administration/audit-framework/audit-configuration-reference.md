@@ -1,5 +1,10 @@
 ---
 uuid: 6e752560-67f3-4b5c-90a1-34ab371fa499
+taxonomy-category-names:
+- Security
+- Identity Management and Authentication
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Audit Configuration Reference
 

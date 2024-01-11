@@ -12,6 +12,11 @@ toc:
   - ./virtual-instances/third-party.md
   - ./virtual-instances/redirect-urls.md
 uuid: 30c545cd-892f-4b63-8120-d611f16d6689
+taxonomy-category-names:
+- Platform
+- DXP Configuration
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Virtual Instances
 

@@ -1,5 +1,10 @@
 ---
 uuid: dc8ee310-4205-482c-822e-478894958c14
+taxonomy-category-names:
+- Development and Tooling
+- Developer Tools
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Script Examples
 

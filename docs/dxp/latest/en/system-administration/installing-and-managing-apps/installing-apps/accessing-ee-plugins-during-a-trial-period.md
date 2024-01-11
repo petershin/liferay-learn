@@ -1,5 +1,10 @@
 ---
 uuid: 9dfe31fc-21aa-4a5a-b9ff-8038c9e928d9
+taxonomy-category-names:
+- Platform
+- DXP Configuration
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Accessing EE Plugins During a Trial Period
 

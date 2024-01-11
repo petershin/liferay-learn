@@ -1,5 +1,10 @@
 ---
 uuid: 7624c5b4-f26a-48bd-a496-fedabde8452e
+taxonomy-category-names:
+- Platform
+- DXP Configuration
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Adding Custom Fields
 

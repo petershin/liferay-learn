@@ -6,6 +6,11 @@ toc:
   - ./using-glowroot-with-liferay/liferay-performance-use-cases-with-glowroot.md
   - ./using-glowroot-with-liferay/developing-glowroot-plugins.md
 uuid: 699aecdd-490f-4386-9a95-1168eff8f1c0
+taxonomy-category-names:
+- Content Management System
+- Content Performance
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 
 # Using Glowroot with Liferay

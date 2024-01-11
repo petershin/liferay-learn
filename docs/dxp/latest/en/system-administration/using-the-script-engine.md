@@ -4,6 +4,11 @@ toc:
   - ./using-the-script-engine/running-scripts-from-the-script-console.md
   - ./using-the-script-engine/script-examples.md
 uuid: 756d2941-d124-4471-b89c-a4ff6d38a5ff
+taxonomy-category-names:
+- Development and Tooling
+- Developer Tools
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Using the Script Engine
 

@@ -1,5 +1,10 @@
 ---
 uuid: b02f1f57-5603-4ceb-a3fd-d54160238504
+taxonomy-category-names:
+- Platform
+- DXP Configuration
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Renewing Apps
 

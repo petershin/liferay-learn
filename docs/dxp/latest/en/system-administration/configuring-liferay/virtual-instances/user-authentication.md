@@ -1,5 +1,10 @@
 ---
 uuid: 8d985b23-4e66-4697-86b4-c56a5ee3656d
+taxonomy-category-names:
+- Security
+- Identity Management and Authentication
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 #  User Authentication
 

@@ -1,5 +1,10 @@
 ---
 uuid: 66b6adc7-587c-4fac-a62e-9a0f87f869f1
+taxonomy-category-names:
+- Platform
+- DXP Configuration
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Configuring External Services
 

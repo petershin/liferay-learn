@@ -1,5 +1,11 @@
 ---
 uuid: 3520c731-c420-4e54-8f98-1a3869176676
+taxonomy-category-names:
+- Platform
+- DXP Configuration
+- Content Management System
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # DBStore
 

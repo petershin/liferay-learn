@@ -1,5 +1,11 @@
 ---
 uuid: e2f8a404-253c-4e37-b851-8d347abbd608
+taxonomy-category-names:
+- Platform
+- DXP Configuration
+- Content Management System
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Enabling Antivirus Scanning for Uploaded Files
 

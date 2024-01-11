@@ -1,5 +1,10 @@
 ---
 uuid: fd3a9ef8-8e66-4f1d-84fa-2d8b7bfb31bf
+taxonomy-category-names:
+- Platform
+- DXP Configuration
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Configuring Logging
 

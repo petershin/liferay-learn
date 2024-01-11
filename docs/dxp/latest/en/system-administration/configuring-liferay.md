@@ -11,6 +11,13 @@ toc:
   - ./configuring-liferay/security-settings.md
   - ./configuring-liferay/common-tasks.md
 uuid: b96b3adf-189d-448c-82ff-7f55887c817e
+taxonomy-category-names:
+- Platform
+- DXP Configuration
+- Security
+- User, Organization, and Account Management
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Configuring Liferay
 

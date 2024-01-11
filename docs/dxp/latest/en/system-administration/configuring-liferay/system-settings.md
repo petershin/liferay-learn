@@ -1,5 +1,10 @@
 ---
 uuid: c2959d8f-59f6-4bc1-aa81-56481a7db23b
+taxonomy-category-names:
+- Platform
+- DXP Configuration
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # System Settings
 

@@ -1,5 +1,10 @@
 ---
 uuid: a377dc50-ffcb-4414-993c-e6652bda455a
+taxonomy-category-names:
+- Platform
+- DXP Configuration
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Downloading Apps
 

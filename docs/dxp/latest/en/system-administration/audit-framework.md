@@ -3,6 +3,11 @@ toc:
   - ./audit-framework/searching-and-exporting-audit-events.md
   - ./audit-framework/audit-configuration-reference.md
 uuid: 9ee712e1-cd41-423f-8365-f1118a356519
+taxonomy-category-names:
+- Security
+- Identity Management and Authentication
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Audit Framework
 

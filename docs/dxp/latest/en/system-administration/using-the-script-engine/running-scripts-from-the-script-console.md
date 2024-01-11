@@ -1,5 +1,10 @@
 ---
 uuid: 70975d5e-ed43-4541-a72a-698234c05b5a
+taxonomy-category-names:
+- Development and Tooling
+- Developer Tools
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Running Scripts From the Script Console
 

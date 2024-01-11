@@ -1,5 +1,10 @@
 ---
 uuid: 27134ffc-6d69-4466-bdd2-1688321591dc
+taxonomy-category-names:
+- Platform
+- DXP Configuration
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Understanding Virtual Instances
 

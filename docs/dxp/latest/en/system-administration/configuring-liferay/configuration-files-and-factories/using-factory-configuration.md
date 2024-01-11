@@ -1,5 +1,11 @@
 ---
 uuid: 78742a71-a87c-49a6-9d9b-f27d1425fb54
+taxonomy-category-names:
+- Platform
+- DXP Configuration
+- Content Management System
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Using Factory Configuration
 

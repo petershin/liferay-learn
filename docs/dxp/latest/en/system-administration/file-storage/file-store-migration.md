@@ -1,5 +1,11 @@
 ---
 uuid: 80c79219-9a0c-456c-9977-9c70b80550e4
+taxonomy-category-names:
+- Platform
+- DXP Configuration
+- Content Management System
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # File Store Migration
 

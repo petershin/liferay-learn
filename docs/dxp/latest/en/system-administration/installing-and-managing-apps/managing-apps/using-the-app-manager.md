@@ -1,5 +1,10 @@
 ---
 uuid: e31f4484-117a-455f-81c5-a6d0fe780bcb
+taxonomy-category-names:
+- Platform
+- DXP Configuration
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Using the App Manager
 

@@ -1,5 +1,11 @@
 ---
 uuid: f1a2934c-dd74-4a1f-b578-d52c3c2bfbc8
+taxonomy-category-names:
+- Platform
+- DXP Configuration
+- Content Management System
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Simple File System Store
 

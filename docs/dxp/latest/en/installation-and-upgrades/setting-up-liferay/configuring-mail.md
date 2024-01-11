@@ -4,6 +4,11 @@ toc:
   - ./configuring-mail/alternative-email-configuration-methods.md
   - ./configuring-mail/configuring-office-365-with-oauth.md
 uuid: 072db382-871c-474e-bdf9-ddf2a541ba30
+taxonomy-category-names:
+- Platform
+- DXP Configuration
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Configuring Mail
 

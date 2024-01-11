@@ -1,5 +1,10 @@
 ---
 uuid: a55dfe92-804f-441e-8244-26a342ee33f9
+taxonomy-category-names:
+- Platform
+- DXP Configuration
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Adding a Virtual Instance
 

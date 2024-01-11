@@ -1,5 +1,10 @@
 ---
 uuid: 98851b77-68b0-43e7-b45c-c0bbb4b8b4a8
+taxonomy-category-names:
+- Platform
+- DXP Configuration
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Blacklisting Apps
 

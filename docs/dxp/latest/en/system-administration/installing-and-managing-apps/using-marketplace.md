@@ -1,5 +1,10 @@
 ---
 uuid: 4c738c97-2353-451e-bef7-f3c9361e1b4a
+taxonomy-category-names:
+- Platform
+- DXP Configuration
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Using Marketplace
 

@@ -1,5 +1,10 @@
 ---
 uuid: e4a8777d-6a83-482b-9287-2e2f946ebcb1
+taxonomy-category-names:
+- Platform
+- DXP Configuration
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Configuring a Shutdown Event
 

@@ -3,6 +3,11 @@ toc:
   - ./installing-apps/downloading-apps.md
   - ./installing-apps/accessing-ee-plugins-during-a-trial-period.md
 uuid: 8fe95d6b-ad0c-4a87-a5c6-5801d239ddab
+taxonomy-category-names:
+- Platform
+- DXP Configuration
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Installing Apps
 

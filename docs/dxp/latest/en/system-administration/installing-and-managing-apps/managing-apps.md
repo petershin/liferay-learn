@@ -6,6 +6,11 @@ toc:
   - ./managing-apps/blacklisting-osgi-components.md
   - ./managing-apps/renewing-apps.md
 uuid: c5f5b653-9b1c-4634-8e7a-70db2af97cca
+taxonomy-category-names:
+- Platform
+- DXP Configuration
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Managing Apps
 

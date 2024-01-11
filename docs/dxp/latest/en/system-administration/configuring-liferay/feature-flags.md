@@ -1,5 +1,10 @@
 ---
 uuid: ad6474da-2b03-4a47-ac04-d8be427ed0f3
+taxonomy-category-names:
+- Platform
+- DXP Configuration
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Beta Features and Feature Flags
 

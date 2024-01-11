@@ -1,5 +1,10 @@
 ---
 uuid: 25a60020-a4cc-419b-a7f6-6a29d84c5f9f
+taxonomy-category-names:
+- Platform
+- DXP Configuration
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Configuring Portlets, Themes,  and Layout Templates
 

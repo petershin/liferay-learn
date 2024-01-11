@@ -1,5 +1,10 @@
 ---
 uuid: efb7e684-d539-4e93-b6c8-6d64b4f53fd7
+taxonomy-category-names:
+- Platform
+- DXP Configuration
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Localization
 

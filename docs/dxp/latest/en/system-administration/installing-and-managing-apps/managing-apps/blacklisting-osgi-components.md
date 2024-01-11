@@ -1,5 +1,10 @@
 ---
 uuid: dc4b8d4e-4fe6-4564-a262-50e737599648
+taxonomy-category-names:
+- Platform
+- DXP Configuration
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Blacklisting OSGi Components
 

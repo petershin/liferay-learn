@@ -1,5 +1,10 @@
 ---
 uuid: d9c2bf46-3dc8-45df-a382-31243afd00fc
+taxonomy-category-names:
+- Integration
+- Data Integration
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Installing Liferay Talend Components
 

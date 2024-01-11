@@ -1,5 +1,10 @@
 ---
 uuid: aeb570f9-a273-4db9-a225-6f06ec47d435
+taxonomy-category-names:
+- Platform
+- DXP Configuration
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Managing System Resources
 

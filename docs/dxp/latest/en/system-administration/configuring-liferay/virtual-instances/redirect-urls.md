@@ -1,5 +1,10 @@
 ---
 uuid: c446e0b5-61c8-46a1-a961-3436e30a14a4
+taxonomy-category-names:
+- Platform
+- DXP Configuration
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Redirect URLs
 

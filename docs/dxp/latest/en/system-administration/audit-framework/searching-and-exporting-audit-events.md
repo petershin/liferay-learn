@@ -1,5 +1,10 @@
 ---
 uuid: 422cbd8d-9f12-4d77-8c70-b3e59af5f8fa
+taxonomy-category-names:
+- Security
+- Identity Management and Authentication
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Searching and Exporting Audit Events
 

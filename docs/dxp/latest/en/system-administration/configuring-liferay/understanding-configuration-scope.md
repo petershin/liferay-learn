@@ -1,5 +1,11 @@
 ---
 uuid: 3ce2c2d2-33b4-4fcd-aa03-ca36796b733e
+taxonomy-category-names:
+- Platform
+- DXP Configuration
+- Liferay Self-Hosted
+- Liferay SaaS
+- Liferay PaaS
 ---
 # Understanding Configuration Scope
 

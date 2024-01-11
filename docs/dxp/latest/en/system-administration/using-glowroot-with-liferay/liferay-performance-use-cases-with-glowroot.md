@@ -1,5 +1,10 @@
 ---
 uuid: f62e6011-c743-4c1d-829d-f9c724cdc394
+taxonomy-category-names:
+- Content Management System
+- Content Performance
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 
 # Liferay Performance Use Cases with Glowroot

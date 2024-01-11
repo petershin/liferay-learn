@@ -1,5 +1,10 @@
 ---
 uuid: f91c3832-fbd1-4bec-b437-c56e880f8ee0
+taxonomy-category-names:
+- Platform
+- DXP Configuration
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Common Tasks
 

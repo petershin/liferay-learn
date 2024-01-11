@@ -1,5 +1,11 @@
 ---
 uuid: 31826e0e-7cb4-4fe1-a2e1-2b8cbba20584
+taxonomy-category-names:
+- Security
+- User, Organization, and Account Management
+- Liferay Self Hosted
+- Liferay SaaS
+- Liferay PaaS
 ---
 # Adding Custom Fields to Users
 

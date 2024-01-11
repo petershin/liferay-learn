@@ -1,5 +1,10 @@
 ---
 uuid: f0969089-1b37-4dd6-952e-e6a98f2502da
+taxonomy-category-names:
+- Development and Tooling
+- Data Frameworks
+- Liferay Self Hosted
+- Liferay PaaS
 ---
 # User Groups API Basics
 

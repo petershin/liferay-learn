@@ -7,6 +7,12 @@ toc:
   - ./organizations/organization-sites.md
   - ./organizations/adding-a-new-organization-type.md
 uuid: df9deaa0-6c5c-4e14-b5e0-e8f7be03a21e
+taxonomy-category-names:
+- Security
+- User, Organization, and Account Management
+- Liferay Self Hosted
+- Liferay SaaS
+- Liferay PaaS
 ---
 # Organizations
 

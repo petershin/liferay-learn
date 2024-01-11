@@ -1,5 +1,11 @@
 ---
 uuid: 1154e55c-8ca4-471a-b20c-04230bba01ab
+taxonomy-category-names:
+- Security
+- User, Organization, and Account Management
+- Liferay Self Hosted
+- Liferay SaaS
+- Liferay PaaS
 ---
 # Using Workflow with Accounts
 

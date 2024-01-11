@@ -1,5 +1,11 @@
 ---
 uuid: a718baa0-5df4-414c-aab6-7411e9d75967
+taxonomy-category-names:
+- Security
+- Personal Data Management
+- Liferay Self Hosted
+- Liferay SaaS
+- Liferay PaaS
 ---
 # Sanitizing User Data
 

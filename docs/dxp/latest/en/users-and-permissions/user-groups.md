@@ -4,6 +4,12 @@ toc:
   - ./user-groups/managing-site-membership-and-permissions-with-user-groups.md
   - ./user-groups/user-group-sites.md
 uuid: 05b4ba7c-f676-49f4-9518-23c1b68f244f
+taxonomy-category-names:
+- Security
+- User, Organization, and Account Management
+- Liferay Self Hosted
+- Liferay SaaS
+- Liferay PaaS
 ---
 # User Groups
 

@@ -1,5 +1,11 @@
 ---
 uuid: 8a69237f-c976-4650-ba2e-b1ec5811d8b0
+taxonomy-category-names:
+- Security
+- User, Organization, and Account Management
+- Liferay Self Hosted
+- Liferay SaaS
+- Liferay PaaS
 ---
 # Account Management Widget
 

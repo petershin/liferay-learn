@@ -3,6 +3,12 @@ toc:
   - ./channel-defaults/setting-channel-defaults.md
   - ./channel-defaults/channel-defaults-permissions-reference.md
 uuid: eeecd784-2cf2-4b02-9c11-52ef261b18ac
+taxonomy-category-names:
+- Security
+- User, Organization, and Account Management
+- Liferay Self Hosted
+- Liferay SaaS
+- Liferay PaaS
 ---
 # Channel Defaults
 

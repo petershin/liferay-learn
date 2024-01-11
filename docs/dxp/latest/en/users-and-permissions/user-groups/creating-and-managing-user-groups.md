@@ -1,5 +1,11 @@
 ---
 uuid: 603b8689-b908-4c3b-9e2e-b767aebaf5c1
+taxonomy-category-names:
+- Security
+- User, Organization, and Account Management
+- Liferay Self Hosted
+- Liferay SaaS
+- Liferay PaaS
 ---
 # Creating and Managing User Groups
 

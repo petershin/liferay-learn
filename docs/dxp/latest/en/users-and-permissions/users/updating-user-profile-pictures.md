@@ -1,5 +1,11 @@
 ---
 uuid: 2a8e22cc-86d5-4d2b-8e80-8d8791f1b947
+taxonomy-category-names:
+- Security
+- User, Organization, and Account Management
+- Liferay Self Hosted
+- Liferay SaaS
+- Liferay PaaS
 ---
 # Updating User Profile Pictures
 

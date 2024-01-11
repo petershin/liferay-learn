@@ -1,5 +1,11 @@
 ---
 uuid: 1027ea78-102b-444b-8a99-cc54d7290a8a
+taxonomy-category-names:
+- Security
+- User, Organization, and Account Management
+- Liferay Self Hosted
+- Liferay SaaS
+- Liferay PaaS
 ---
 # Assigning Roles to User Segments
 

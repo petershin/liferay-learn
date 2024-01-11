@@ -4,6 +4,12 @@ toc:
   - ./managing-user-data/sanitizing-user-data.md
   - ./managing-user-data/configuring-the-anonymous-user.md
 uuid: 2ab639a3-b972-4418-9fa5-db5958090d7a
+taxonomy-category-names:
+- Security
+- Personal Data Management
+- Liferay Self Hosted
+- Liferay SaaS
+- Liferay PaaS
 ---
 # Managing User Data (GDPR)
 

@@ -1,5 +1,11 @@
 ---
 uuid: 43821e95-9e8e-4698-9e5d-57be3ee8a0e5
+taxonomy-category-names:
+- Security
+- Personal Data Management
+- Liferay Self Hosted
+- Liferay SaaS
+- Liferay PaaS
 ---
 # Configuring the Anonymous User
 

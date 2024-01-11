@@ -1,5 +1,10 @@
 ---
 uuid: 4786aac9-a74c-452f-b7ca-6865b073417e
+taxonomy-category-names:
+- Development and Tooling
+- Data Frameworks
+- Liferay Self Hosted
+- Liferay PaaS
 ---
 # Adding the UAD Framework
 

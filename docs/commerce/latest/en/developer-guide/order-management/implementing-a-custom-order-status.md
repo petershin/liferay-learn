@@ -55,9 +55,8 @@ You can add a custom order status to alter the out-of-the-box order flow. Below,
     ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
     ```
 
-    ```{note}
-    This command is the same as copying the deployed jars to `/opt/liferay/osgi/modules` on the Docker container.
-    ```
+    !!! note
+        This command is the same as copying the deployed jars to `/opt/liferay/osgi/modules` on the Docker container.
 
 1. Confirm the deployment in the Docker container console.
 
@@ -87,13 +86,12 @@ You can add a custom order status to alter the out-of-the-box order flow. Below,
 
 The example implementation is implemented in 3 steps. First, you must annotate the class for OSGi registration. Next, review the [`CommerceOrderStatus`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/order/status/CommerceOrderStatus.java) interface. Finally, finish the implementation of the custom `CommerceOrderStatus`.
 
-* [Annotate the class for OSGi Registration](#annotate-the-class-for-osgi-registration)
-* [Review the `CommerceOrderStatus` interface](#review-the-commerceorderstatus-interface)
-* [Complete the Order Status](#complete-the-order-status)
+- [Annotate the class for OSGi Registration](#annotate-the-class-for-osgi-registration)
+- [Review the `CommerceOrderStatus` interface](#review-the-commerceorderstatus-interface)
+- [Complete the Order Status](#complete-the-order-status)
 
-```{important}
-Depending on the stage where you place the new status in the order lifecycle, you must tweak the next stage for correct order processing. Since this example places the new status between the Pending and Processing statuses, you must override the existing Processing status so it checks for the new status in its logic. 
-```
+!!! important
+    Depending on the stage where you place the new status in the order lifecycle, you must tweak the next stage for correct order processing. Since this example places the new status between the Pending and Processing statuses, you must override the existing Processing status so it checks for the new status in its logic.
 
 ### Annotate the class for OSGi Registration
 
@@ -104,9 +102,8 @@ Depending on the stage where you place the new status in the order lifecycle, yo
 
 It is important to provide a distinct key for the order status so that Liferay Commerce can distinguish the new status from others in the order status registry. Specifying key that is already in use overrides the existing associated status. The priority of the order status determines its order in the order lifecycle. In this case, the Pending status has a priority of 30 and the processing status has a priority of 50. To place the status between the two, the priority must be between those two numbers, in this case 40.
 
-```{note}
-For this example implementation, a random integer is set as the key and 40 as the priority, but you can use variables for better readability within the code. See example [here](https://gist.github.com/aswinrajeevofficial/5d09d76ae11a1dc78c7d1fc388ae0306#file-m4v7schedulingcommerceorderstatus-java).
-```
+!!! note
+    For this example implementation, a random integer is set as the key and 40 as the priority, but you can use variables for better readability within the code. See example [here](https://gist.github.com/aswinrajeevofficial/5d09d76ae11a1dc78c7d1fc388ae0306#file-m4v7schedulingcommerceorderstatus-java).
 
 ### Review the CommerceOrderStatus interface
 
@@ -152,20 +149,20 @@ There are two more methods in the interface. The first one `public boolean isVal
 
 ### Complete the Order Status
 
-The order status implementation consists of implementing the methods for the Scheduling status and also tweaking the existing business logic present in the Processing status. 
+The order status implementation consists of implementing the methods for the Scheduling status and also tweaking the existing business logic present in the Processing status.
 
-* [Implement the `isTransitionCriteriaMet` method](#implement-the-istransitioncriteriamet-method)
-* [Implement the `doTransition` method](#implement-the-dotransition-method)
-* [Implement the `isComplete` method](#implement-the-iscomplete-method)
-* [Override the existing _Processing_ status](#override-the-existing-processing-status)
-* [Tweak the Processing status business logic](#tweak-the-processing-status-business-logic)
+- [Implement the `isTransitionCriteriaMet` method](#implement-the-istransitioncriteriamet-method)
+- [Implement the `doTransition` method](#implement-the-dotransition-method)
+- [Implement the `isComplete` method](#implement-the-iscomplete-method)
+- [Override the existing _Processing_ status](#override-the-existing-processing-status)
+- [Tweak the Processing status business logic](#tweak-the-processing-status-business-logic)
 
 #### Implement the isTransitionCriteriaMet method
 
 ```{literalinclude} ./implementing-a-custom-order-status/resources/liferay-m4v7.zip/m4v7-impl/src/main/java/com/acme/m4v7/internal/commerce/order/status/M4V7SchedulingCommerceOrderStatus.java
     :dedent: 1
     :language: java
-    :lines: 64-75
+    :lines: 65-76
 ```
 
 For the order to transition into the _Scheduling_ order status, it must be in the _Pending_ status. This is checked using the `getOrderStatus()` method on the `commerceOrder` object. The method returns `true` if the order is pending, and `false` otherwise.
@@ -175,7 +172,7 @@ For the order to transition into the _Scheduling_ order status, it must be in th
 ```{literalinclude} ./implementing-a-custom-order-status/resources/liferay-m4v7.zip/m4v7-impl/src/main/java/com/acme/m4v7/internal/commerce/order/status/M4V7SchedulingCommerceOrderStatus.java
     :dedent: 1
     :language: java
-    :lines: 26-33
+    :lines: 26-34
 ```
 
 Once the transition criteria for the order is met, it sets the order status as *Scheduling* using the unique key. Then it calls the `updateCommerceOrder()` method from `_commerceOrderService`, passing in the `commerceOrder` object to update the new status.
@@ -185,7 +182,7 @@ Once the transition criteria for the order is met, it sets the order status as *
 ```{literalinclude} ./implementing-a-custom-order-status/resources/liferay-m4v7.zip/m4v7-impl/src/main/java/com/acme/m4v7/internal/commerce/order/status/M4V7SchedulingCommerceOrderStatus.java
     :dedent: 1
     :language: java
-    :lines: 50-62
+    :lines: 51-63
 ```
 
 To complete the Scheduling stage, the Custom Field must be set to _Confirmed_. This custom attribute is retrieved through an `ExpandoBridge` using the key `m4v7Scheduling`. As it is a drop-down, the return value is present inside a String array and it's the first value. If the value is _Confirmed_, the method returns `true`, and if the array is empty it returns `false`.
@@ -204,7 +201,7 @@ The existing Processing status must be overridden to tweak the logic present ins
 ```{literalinclude} ./implementing-a-custom-order-status/resources/liferay-m4v7.zip/m4v7-impl/src/main/java/com/acme/m4v7/internal/commerce/order/status/M4V7ProcessingCommerceOrderStatus.java
     :dedent: 1
     :language: java
-    :lines: 53-73
+    :lines: 54-74
 ```
 
 Since the original Processing status checks for the Pending status in its methods, you must tweak them slightly to check for the newly added status. This is done using the unique key of the new status.
@@ -215,4 +212,4 @@ Congratulations! You now know the basics for implementing the `CommerceOrderStat
 
 ## Related Topics
 
-* [Commerce Order Engine Overview](./commerce-order-engine-overview.md)
+- [Commerce Order Engine Overview](./commerce-order-engine-overview.md)

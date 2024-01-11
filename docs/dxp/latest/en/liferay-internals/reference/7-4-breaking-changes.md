@@ -605,6 +605,30 @@ Here is a list of changes that break or significantly alter existing functionali
 -   **What Changed**: These methods are removed: `copyMessageListeners`, `getMessageListenerCount`, `isRegistered`, `register`, `unregister`. The [`MessageListenerRegistry`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/messaging/MessageListenerRegistry.java) interface is added to get message listeners associated with a provided destination name. Update your code by registering a `MessageListener` as an OSGi service, using the `destination.name` property.
 -   **Reason**: This change simplifies the message bus code structure.
 
+**ConfigurationProvider.java**
+`portal-kernel/src/com/liferay/portal/kernel/module/configuration/ConfigurationProvider.java`
+
+-  **Date**: Sep. 5, 2023
+-  **Ticket**: [LPS-188270](https://liferay.atlassian.net/browse/LPS-188270)
+-  **What Changed**: The `ConfigurationProvider` class is moved into the `portal-configuration-module-configuration-api` module. Add `portal-configuration-module-configuration-api` as a build dependency to continue using the class.
+-  **Reason**: The `ConfigurationProvider` class is only used for modules.
+
+**ConfigurationProviderUtil.java**
+`portal-kernel/src/com/liferay/portal/kernel/module/configuration/ConfigurationProviderUtil.java`
+
+-  **Date**: Sep. 5, 2023
+-  **Ticket**: [LPS-188270](https://liferay.atlassian.net/browse/LPS-188270)
+-  **What Changed**: The `ConfigurationProviderUtil` class is moved into the `portal-configuration-module-configuration-api` module. Add `portal-configuration-module-configuration-api` as a build dependency to continue using the class.
+-  **Reason**: This class is being moved to ensure that the `ConfigurationProvider` class is always available to it.
+
+**PortletDisplay.java**
+[`portal-kernel/src/com/liferay/portal/kernel/theme/PortletDisplay.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/theme/PortletDisplay.java)
+
+-  **Date**: Sep. 5, 2023
+-  **Ticket**: [LPS-188270](https://liferay.atlassian.net/browse/LPS-188270)
+-  **What Changed**: The `getPortletInstanceConfiguration(Class<T>)` method is removed. Use the `ConfigurationProviderUtil.getPortletInstanceConfiguration(Class<T>, ThemeDisplay)` method or reference the `ConfigurationProvider` class for the same method instead.
+-  **Reason**: The `getPortletInstanceConfiguration` method should be handled in `ConfigurationProvider`.
+
 **TriggerConfiguration.java**
 [`portal-kernel/src/com/liferay/portal/kernel/scheduler/TriggerConfiguration.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/scheduler/TriggerConfiguration.java)
 

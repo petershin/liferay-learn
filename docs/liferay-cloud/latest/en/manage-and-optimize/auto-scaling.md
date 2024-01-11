@@ -52,11 +52,26 @@ Follow these steps to enable or disable auto-scaling in the Liferay Cloud Consol
 
 1. Navigate to the production environment.
 1. Navigate to *Services* &rarr; *Liferay* &rarr; *Scale*.
-1. If auto-scaling is disabled, click *Enable Auto Scaling* to enable it. If auto-scaling is already enabled, click *Disable Auto Scaling* to disable it.
+1. Toggle the switch to disable or enable
 
-With auto-scaling enabled, Liferay Cloud monitors your service and scales it automatically according to predefined thresholds.
+With auto-scaling enabled, Liferay Cloud monitors your service and scales it automatically according to the threshold you define.
 
-![Figure 1: Enable or disable auto-scaling from your service's Scale tab.](./auto-scaling/images/01.png)
+![Enable or disable auto-scaling from your service's Scale tab.](./auto-scaling/images/01.png)
+
+### Setting the Maximum Number of Instances
+
+By default, auto-scaling can increase the number of instances for the `liferay` service up to 10. However, you can override this default to use more instances if necessary. You must override the default in two places to allow services to use more than the default 10 instances.
+
+1. Set the `LCP_HAPROXY_SERVER_TEMPLATE_BACKEND_NUM` [environment variable](../reference/defining-environment-variables.md) in your [web server service](../platform-services/web-server-service.md) to the highest value needed. The `liferay` service may not scale beyond the maximum number of instances defined in `LCP_HAPROXY_SERVER_TEMPLATE_BACKEND_NUM` (10 by default).
+
+1. On the Liferay service's *Scale* tab, update the number in *Max number of additional instances* to the desired value.
+
+    !!! note
+        This field sets the additional number of instances that auto-scaling can create, adding to the base number of instances. It does not set the total number it can create at maximum.
+
+1. Click *Update*.
+
+Once you have updated both of these configurations, auto-scaling increases your `liferay` service's instances up to your newly defined maximum as needed.
 
 ## Specifying Target Average Utilization
 
@@ -77,24 +92,6 @@ Specify the target average utilization in the `autoscale` property of the servic
 ```
 
 If the `autoscale` property isn't set, the target average utilization defaults to 80 for both CPU and memory utilization.
-
-## Setting the Maximum Number of Instances
-
-By default, auto-scaling can increase the number of instances for the `liferay` service up to 10. However, you can override this default to use more instances if necessary. You must override the default in two places to allow services to use more than the default 10 instances:
-
-1. Set the `LCP_HAPROXY_SERVER_TEMPLATE_BACKEND_NUM` [environment variable](../reference/defining-environment-variables.md) in your [web server service](../platform-services/web-server-service.md) to the highest value needed. The `liferay` service may not scale beyond the maximum number of instances defined in `LCP_HAPROXY_SERVER_TEMPLATE_BACKEND_NUM` (10 by default).
-
-1. Within the `liferay` service's `LCP.json` file, specify the desired maximum instances if it needs more than the default 10. Set the `maxInstances` field within the [`autoscale` object](#specifying-target-average-utilization):
-
-    ```json
-    "autoscale": {
-        "cpu": 80,
-        "memory": 80,
-        "maxInstances": 15
-    }
-    ```
-
-Once you have updated both of these configurations, auto-scaling increases your `liferay` service's instances up to your newly defined maximum as needed.
 
 ## Auto-scaling and DXP Activation Keys
 

@@ -27,6 +27,10 @@ Once your A/B test is running, Analytics Cloud offers these reports to keep you 
 * [Variant Report](#variant-report)
 * [Test Sessions](#test-sessions)
 
+```{important}
+A/B testing is not supported if [staging](https://learn.liferay.com/w/dxp/site-building/publishing-tools/staging.md) is enabled in your Liferay instance.
+```
+
 ## Summary
 
 The Summary panel provides an overview of test details, including completion percentage, running time (in days), and total visitor sessions.

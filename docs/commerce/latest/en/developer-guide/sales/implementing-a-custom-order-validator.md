@@ -45,9 +45,8 @@ Then, follow these steps:
    ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
    ```
 
-   ```{note}
-   This command is the same as copying the deployed jars to `/opt/liferay/osgi/modules` on the Docker container.
-   ```
+   !!! note
+      This command is the same as copying the deployed jars to `/opt/liferay/osgi/modules` on the Docker container.
 
 1. Confirm the deployment in the Docker container console.
 
@@ -69,7 +68,7 @@ Creating an Order Validator consists of three main steps. First, you annotate th
 
 ```{literalinclude} ./implementing-a-custom-order-validator/resources/liferay-n9b2.zip/n9b2-impl/src/main/java/com/acme/n9b2/internal/commerce/order/N9B2CommerceOrderValidator.java
    :language: java
-   :lines: 19-26
+   :lines: 20-26
 ```
 
 It is important to provide a distinct key for the order validator so that Liferay can distinguish the new order validator from others in the [order validator registry](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-service/src/main/java/com/liferay/commerce/internal/order/CommerceOrderValidatorRegistryImpl.java). Reusing a key that is already in use overrides the existing associated validator.
@@ -103,7 +102,7 @@ This is the second validation method where you can add custom validation logic. 
 ```{literalinclude} ./implementing-a-custom-order-validator/resources/liferay-n9b2.zip/n9b2-impl/src/main/java/com/acme/n9b2/internal/commerce/order/N9B2CommerceOrderValidator.java
    :dedent: 1
    :language: java
-   :lines: 33-60
+   :lines: 34-61
 ```
 
 ```java
@@ -114,16 +113,15 @@ private static final int _MAX_ITEM_QUANTITY = 10;
 
 The main validation in the example checks if both the price (stored as a `BigDecimal`) is more than $100, and the quantity is greater than ten. This price information is available from the `CPInstance`, which contains information about the customer order. To find more methods you can use with a `CPInstance`, see [CPInstance](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-product-api/src/main/java/com/liferay/commerce/product/model/CPInstance.java) and [CPInstanceModel](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-product-api/src/main/java/com/liferay/commerce/product/model/CPInstanceModel.java).
 
-```{note}
-It is best practice to include a localized message explaining why the validation failed for the main validation checks.
-```
+!!! note
+   It is best practice to include a localized message explaining why the validation failed for the main validation checks.
 
 ### Validation Logic for Proceeding to Checkout
 
 ```{literalinclude} ./implementing-a-custom-order-validator/resources/liferay-n9b2.zip/n9b2-impl/src/main/java/com/acme/n9b2/internal/commerce/order/N9B2CommerceOrderValidator.java
    :dedent: 1
    :language: java
-   :lines: 62-84
+   :lines: 63-83
 ```
 
 Add the same validation logic to this method, since it's called for the items in the customer's cart. The main difference here is that you get the information from a `CommerceOrderItem` object; see [CommerceOrderItem](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/model/CommerceOrderItem.java) and [CommerceOrderItemModel](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/model/CommerceOrderItemModel.java) to find more methods you can use with a `CommerceOrderItem`.
@@ -141,11 +139,11 @@ See [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360
 
 ## Modifying the Custom Order Validator
 
-If you wish to change what your order validator does, you can edit your java file. Make the validator reject orders worth over $200 by changing the value of `_MAX_ITEM_PRICE`. Redeploy your custom order validator to send these changes to Liferay.
+To change what your order validator does, edit your java file. Make the validator reject orders worth over $200 by changing the value of `_MAX_ITEM_PRICE`. Redeploy your custom order validator to send these changes to Liferay.
 
-Back in your browser, try adding 10 items worth between $100 and $200. You can add these items to your cart because your validator no longer rejects orders over $100.
+In your browser, try adding 10 items worth between $100 and $200. You can add these items to your cart because your validator no longer rejects orders over $100.
 
-Now, try adding 10 items worth over $200. If you cannot add these items to your cart, your validator is working!
+Try adding 10 items worth over $200. If you cannot add these items to your cart, your validator is working!
 
 ## Conclusion
 
@@ -153,5 +151,5 @@ Congratulations! You now know the basics for implementing the `CommerceOrderVali
 
 ## Related Topics
 
-* [Creating a Simple Product](../../product-management/creating-and-managing-products/product-types/creating-a-simple-product.md)
-* [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application)
+- [Creating a Simple Product](../../product-management/creating-and-managing-products/product-types/creating-a-simple-product.md)
+- [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application)

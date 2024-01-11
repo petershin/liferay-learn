@@ -116,9 +116,8 @@ Here are the command's arguments:
 | `-d "{\"fieldType\": \"select\", \"key\": \"foo\", \"name\": {\"en_US\": \"Foo\"}}"` | Enter the data to post.                                  |
 | `-u "test@liferay.com:learn"`                                                        | Enter basic authentication credentials.                  |
 
-```{note}
-Basic authentication is used here for demonstration purposes. For production, you should authorize users via [OAuth2](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2.html). See [Using OAuth2 to Authorize Users](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2/using-oauth2-to-authorize-users.html) for a sample React application using OAuth2.
-```
+!!! note
+   Basic authentication is used here for demonstration purposes. For production, you should authorize users via [OAuth2](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2.html). See [Using OAuth2 to Authorize Users](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2/using-oauth2-to-authorize-users.html) for a sample React application using OAuth2.
 
 The other cURL commands use similar JSON arguments.
 
@@ -142,15 +141,13 @@ This class invokes the REST service using only three lines of code:
 
 The project includes the `com.liferay.headless.commerce.admin.catalog.client.jar` file as a dependency. You can find client JAR dependency information for all REST applications in the API Explorer in your installation at `/o/api` (e.g., <http://localhost:8080/o/api>).
 
-```{note}
-The `main` method's comment demonstrates running the class.
-```
+!!! note
+   The `main` method's comment demonstrates running the class.
 
 The remaining example Java classes call different `OptionResource` methods.
 
-```{important}
-See [OptionResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/headless/headless-commerce/headless-commerce-admin-catalog-client/src/main/java/com/liferay/headless/commerce/admin/catalog/client/resource/v1_0/OptionResource.java) for service details.
-```
+!!! important
+   See [OptionResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/headless/headless-commerce/headless-commerce-admin-catalog-client/src/main/java/com/liferay/headless/commerce/admin/catalog/client/resource/v1_0/OptionResource.java) for service details.
 
 Below are examples of calling other `Option` REST services using cURL and Java.
 
@@ -185,7 +182,7 @@ Code:
 ```{literalinclude} ./option-api-basics/resources/liferay-d3g5.zip/java/Options_GET_FromInstance.java
    :dedent: 1
    :language: java
-   :lines: 11-22
+   :lines: 8-18
 ```
 
 The instance's `Option` objects are formatted in JSON.
@@ -194,9 +191,9 @@ The instance's `Option` objects are formatted in JSON.
 
 This API also accepts parameters to filter, paginate, search, and sort the options. See the [`getOptionsPage`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/headless/headless-commerce/headless-commerce-admin-catalog-client/src/main/java/com/liferay/headless/commerce/admin/catalog/client/resource/v1_0/OptionResource.java#L43-#L46) method for more information. You can use the following `Option` fields in your queries to filter, search, and sort the results:
 
-* fieldType
-* key
-* name
+- fieldType
+- key
+- name
 
 | Filter Query            | Description                      |
 | :---------------------- | :------------------------------- |
@@ -319,3 +316,8 @@ Code:
 ```
 
 The [API Explorer](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services.html) shows the `Option` services and schemas and has an interface to test each service.
+
+## Related Topics
+
+- [Using Product Options](../../product-management/creating-and-managing-products/products/using-product-options.md)
+- [Consuming REST Services](https://learn.liferay.com/web/guest/w/dxp/headless-delivery/consuming-apis/consuming-rest-services)

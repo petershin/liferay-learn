@@ -10,7 +10,7 @@ taxonomy-category-names:
 ---
 # Implementing a Custom Notification Type
 
-You can configure Liferay Commerce to send email notifications for a variety of event triggers in your store. When there's no out-of-the-box notification trigger that fits your needs, you can implement your own. 
+You can configure Liferay Commerce to send email notifications for a variety of event triggers in your store. When there's no out-of-the-box notification trigger that fits your needs, you can implement your own.
 
 To add a new notification type, you must implement the `CommerceNotificationType` interface. See [Sending Emails](../../store-management/sending-emails.md) to learn how to set up a Notification Template and view the OOTB types available.
 
@@ -33,7 +33,7 @@ Then, follow these steps:
 
     ```bash
     curl https://learn.liferay.com/commerce/latest/en/developer-guide/order-management/liferay-g2f3.zip
-    
+
     unzip liferay-g2f3.zip
     ```
 
@@ -43,9 +43,8 @@ Then, follow these steps:
     ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
     ```
 
-    ```{note}
-    This command is the same as copying the deployed jars to `/opt/liferay/osgi/modules` on the Docker container.
-    ```
+    !!! note
+        This command is the same as copying the deployed jars to `/opt/liferay/osgi/modules` on the Docker container.
 
 1. Confirm the deployment in the Docker container console.
 
@@ -69,7 +68,7 @@ Then, follow these steps:
 
 3. Open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)), click on *Commerce* &rarr; *Channels*, and select *Notification Templates*.
 
-4. Create a new template using the *Add* button (![Add icon](../../images/icon-add.png)): 
+4. Create a new template using the *Add* button (![Add icon](../../images/icon-add.png)):
 
     **Name:** Testing G2F3 Shipment Created
 
@@ -102,15 +101,14 @@ Then, follow these steps:
 
 7. Log in as a buyer and place a new order in the store.
 
-8. Log out and log back in as an administrator, open the *Global Menu*, and click on *Commerce* &rarr; *Orders*. 
+8. Log out and log back in as an administrator, open the *Global Menu*, and click on *Commerce* &rarr; *Orders*.
 
 9. Select the Order and click on *Accept Order*. Then click on *Create Shipment*.
 
 10. Check your inbox for the received notification.
 
-```{important}
-You can use a fake SMTP server like MockMock (https://github.com/tweakers/MockMock) to test these notifications in your local development environment. Add the following line in your `portal-ext.properties` file: `mail.send.blacklist=noreply@liferay.com, noreply@domain.invalid, test@domain.invalid`. Run the jar using `java -jar MockMock.jar` and check `localhost:8282` for the received emails.
-```
+!!! important
+You can use a fake SMTP server like [MockMock](https://github.com/tweakers/MockMock) to test these notifications in your local development environment. Add the following line in your `portal-ext.properties` file: `mail.send.blacklist=noreply@liferay.com, noreply@domain.invalid, test@domain.invalid`. Run the jar using `java -jar MockMock.jar` and check `localhost:8282` for the received emails.
 
 ## How the Custom Notification Type Works
 
@@ -118,12 +116,12 @@ This example consists of 7 main steps. First, you must annotate the class for OS
 
 After that, create a `ModelListener` for the `CommerceShipment` class. Next, review the `CommerceDefinitionTermContributor` interface. Finally, implement term contributors to resolve the wildcards for the new notification.
 
-* [Annotate the class for OSGi Registration](#annotate-the-class-for-osgi-registration)
-* [Review the CommerceNotificationType interface](#review-the-commercenotificationtype-interface)
-* [Complete the Notification Type](#complete-the-notification-type)
-* [Create a ModelListener for CommerceShipment](#create-a-modellistener-for-commerceshipment)
-* [Review the CommerceDefinitionTermContributor interface](#review-the-commercedefinitiontermcontributor-interface)
-* [Complete the Term Contributors](#complete-the-term-contributors)
+- [Annotate the class for OSGi Registration](#annotate-the-class-for-osgi-registration)
+- [Review the CommerceNotificationType interface](#review-the-commercenotificationtype-interface)
+- [Complete the Notification Type](#complete-the-notification-type)
+- [Create a ModelListener for CommerceShipment](#create-a-modellistener-for-commerceshipment)
+- [Review the CommerceDefinitionTermContributor interface](#review-the-commercedefinitiontermcontributor-interface)
+- [Complete the Term Contributors](#complete-the-term-contributors)
 
 ### Annotate the class for OSGi Registration
 
@@ -207,7 +205,7 @@ Term contributors resolve the wildcards present in the To, Subject, and Body fie
 ```{literalinclude} ./implementing-a-custom-notification-type/resources/liferay-g2f3.zip/g2f3-impl/src/main/java/com/acme/g2f3/internal/commerce/order/term/contributor/G2F3CommerceShipmentCommerceDefinitionTermContributor.java
     :dedent: 1
     :language: java
-    :lines: 33-76
+    :lines: 32-71
 ```
 
 Before resolving the wildcard, there are checks to verify whether the object is null or of type `CommerceShipment`. Then, if the term contains the wildcard, the wildcard gets replaced with the shipment creator's name, shipping address, or the shipment ID. For the shipment creator's name, the name of the account from the shipment is returned. The shipping address is returned as a concatenated string of the street address, city, and zip. The shipment ID is returned from the shipment object directly.
@@ -217,7 +215,7 @@ Before resolving the wildcard, there are checks to verify whether the object is 
 ```{literalinclude} ./implementing-a-custom-notification-type/resources/liferay-g2f3.zip/g2f3-impl/src/main/java/com/acme/g2f3/internal/commerce/order/term/contributor/G2F3CommerceShipmentRecipientCommerceDefinitionTermContributor.java
     :dedent: 1
     :language: java
-    :lines: 32-63
+    :lines: 31-58
 ```
 
 Before resolving the wildcard, there are checks to verify whether the object is null or of type `CommerceShipment`. Then, if the term contains the wildcard, the wildcard gets replaced with the user ID of the account. When a notification is sent, it uses this ID to find the user's email.
@@ -229,7 +227,7 @@ The `getLabel` method returns the name of the terms as it appears in the UI. You
 ```{literalinclude} ./implementing-a-custom-notification-type/resources/liferay-g2f3.zip/g2f3-impl/src/main/java/com/acme/g2f3/internal/commerce/order/term/contributor/G2F3CommerceShipmentCommerceDefinitionTermContributor.java
     :dedent: 1
     :language: java
-    :lines: 78-82
+    :lines: 73-76
 ```
 
 This method returns all the term contributors available for the Notification type. You can use language keys to do this or directly return a hard coded string that displays the term in the UI.
@@ -237,9 +235,14 @@ This method returns all the term contributors available for the Notification typ
 ```{literalinclude} ./implementing-a-custom-notification-type/resources/liferay-g2f3.zip/g2f3-impl/src/main/java/com/acme/g2f3/internal/commerce/order/term/contributor/G2F3CommerceShipmentCommerceDefinitionTermContributor.java
     :dedent: 1
     :language: java
-    :lines: 84-87
+    :lines: 78-81
 ```
 
 ## Conclusion
 
 Congratulations! You now know the basics for implementing the `CommerceNotificationType` interface. You also know the basics of how notifications work and the use of a `MessageListener` to send your own notification type.
+
+## Related Topics
+
+- [Sending Emails](../../store-management/sending-emails.md)
+- [Configuring Mail](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/setting-up-liferay/configuring-mail.html)

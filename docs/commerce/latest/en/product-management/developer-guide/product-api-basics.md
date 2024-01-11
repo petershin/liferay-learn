@@ -138,9 +138,8 @@ Here are the command's arguments:
 | `-d "{\"active\": true, \"catalogId\": \"${1}\", \"name\": {\"en_US\": \"Foo\"}, \"productType\": \"simple\"}"` | The data to post                 |
 | `-u "test@liferay.com:learn"`                                                                                   | Basic authentication credentials                    |
 
-```{note}
-Basic authentication is used here for demonstration purposes. For production, you should authorize users via [OAuth2](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2.html). See [Using OAuth2 to Authorize Users](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2/using-oauth2-to-authorize-users.html) for a sample React application that utilizes OAuth2.
-```
+!!! note
+   Basic authentication is used here for demonstration purposes. For production, you should authorize users via [OAuth2](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2.html). See [Using OAuth2 to Authorize Users](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2/using-oauth2-to-authorize-users.html) for a sample React application that utilizes OAuth2.
 
 The other cURL commands use similar JSON arguments.
 
@@ -164,15 +163,13 @@ This class invokes the REST service using only three lines of code:
 
 Note that the project includes the `com.liferay.headless.commerce.admin.catalog.client.jar` file as a dependency. You can find client JAR dependency information for all REST applications in the API explorer in your installation at `/o/api`.
 
-```{note}
-The `main` method's comment demonstrates running the class.
-```
+!!! note
+   The `main` method's comment demonstrates running the class.
 
 The other example Java classes are similar to this one, but call different `ProductResource` methods.
 
-```{important}
-See [ProductResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/headless/headless-commerce/headless-commerce-admin-catalog-client/src/main/java/com/liferay/headless/commerce/admin/catalog/client/resource/v1_0/ProductResource.java) for service details.
-```
+!!! important
+   See [ProductResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/headless/headless-commerce/headless-commerce-admin-catalog-client/src/main/java/com/liferay/headless/commerce/admin/catalog/client/resource/v1_0/ProductResource.java) for service details.
 
 Below are examples of calling other `Product` REST services using cURL and Java.
 
@@ -207,22 +204,22 @@ Code:
 ```{literalinclude} ./product-api-basics/resources/liferay-z8v2.zip/java/Products_GET_FromInstance.java
    :dedent: 1
    :language: java
-   :lines: 11-21
+   :lines: 11-22
 ```
 
 The `Product` objects of your Liferay instance are listed in JSON.
 
 This API also accepts parameters to filter, paginate, search, and sort the products. See the [`getProductsPage`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/commerce/headless/headless-commerce/headless-commerce-admin-catalog-client/src/main/java/com/liferay/headless/commerce/admin/catalog/client/resource/v1_0/ProductResource.java#L43-L46) method for more information. You can use the following Product fields in your queries to filter, search, and sort the results.
 
-* categoryIds
-* channelId
-* statusCode
-* customFields
-* createDate
-* modifiedDate
-* catalogId
-* name
-* productType
+- categoryIds
+- channelId
+- statusCode
+- customFields
+- createDate
+- modifiedDate
+- catalogId
+- name
+- productType
 
 | Filter Query                       | Description                              |
 | :--------------------------------- | :--------------------------------------- |
@@ -242,9 +239,8 @@ Read [API Query Parameters](https://learn.liferay.com/dxp/latest/en/headless-del
 
 Get a specific product with the following cURL or Java command. Replace `1234` with the product's ID.
 
-```{tip}
-Use ``Products_GET_FromInstance.[java|sh]`` to get a list of all products, and note the `productId` of the product you want specifically.
-```
+!!! tip
+   Use ``Products_GET_FromInstance.[java|sh]`` to get a list of all products, and note the `productId` of the product you want specifically.
 
 ### Product_GET_ById.sh
 
@@ -347,3 +343,7 @@ Code:
 ```
 
 The [API Explorer](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services.html) lists all of the `Product` services and schemas and has an interface to try out each service.
+
+## Related Topics
+
+-[Consuming REST Services](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services)

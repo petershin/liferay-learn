@@ -9,107 +9,95 @@ uuid: 496aabce-cd8b-4877-8319-e41aa125c812
 ---
 # Creating and Managing Asset Libraries
 
-> Available: Liferay DXP/Portal 7.3+
+{bdg-secondary}`Liferay 7.3+`
 
-You can manage Asset Libraries via the Asset Libraries link in the *Applications* tab of the Global Menu. Here, you can create and configure as many Libraries as needed and determine how each Library is connected to your Sites.
+You can create and manage libraries for your assets via the Asset Libraries application. To access this application, open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), go to the *Applications* tab, and click *Asset Libraries*.
 
-![Create and manage Asset Libraries via the Asset Libraries Page in the Applications tab of the Global Menu.](./creating-and-managing-asset-libraries/images/01.png)
+![Create and manage asset libraries via the Asset Libraries application.](./creating-and-managing-asset-libraries/images/01.png)
 
 ## Creating an Asset Library
 
-1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), and go to *Content* &rarr; *Asset Libraries* in the Applications tab.
+1. In the Asset Library application, click *Add* (![Add button](../../images/icon-add.png)).
 
-1. Click the *Add* button ( ![Add button](../../images/icon-add.png) ) and enter a *Name* for your new Asset Library.
+1. Enter a *Name* for your new library.
 
 1. Click *Save*.
 
-This creates a new Asset Library with a unique ID and redirects you to its configuration page.
-
-You can configure your Library now or accept the default settings and start adding content to the Library.
+You can now configure the asset library now or accept the default settings and begin adding content to it.
 
 ## Configuring Asset Libraries
 
-Once you've created an Asset Library, you can configure it at any time by clicking on its *Actions* button ( ![Actions button](../../images/icon-actions.png) ) and selecting *Edit*. Configuration options are organized into three sections: *General*, *Sites*, and *Languages*.
+When you create an asset library, Liferay directs you to its configuration page. Afterwards, you can configure a library by clicking its *Actions* button (![Actions button](../../images/icon-actions.png)) and selecting *Edit*. Configuration options appear in three sections: *General*, *Sites*, and *Languages*.
 
-You can also access a Library's settings via its dashboard page. Simply click on the *name* of the desired Asset Library, and then click on *Asset Library Settings*.
+You can also access these options from the library's dashboard page by clicking *Asset Library Settings*.
 
 ### General Settings
 
-Here you can configure an Asset Library's basic information.
+Here you can configure an asset library's basic information.
 
-**Details**: View a Library's unique ID, and configure its name or description.
+**Details**: View a library's unique ID and configure its name or description.
 
-**Applications**: Activate or deactivate a Library's supported applications (i.e., Documents and Media, Collections, Translation Processes, Web Content). Activated applications can be accessed and used to create and manage digital assets, while inactive applications are not exposed to users. Deactivating an application does not delete the application's content or remove it from connected Sites.
+**Applications**: Activate or deactivate supported applications for the library (i.e., Documents and Media, Collections, Translation Processes, Web Content). This determines if you can use the application in the library. Deactivating an application does not delete the application's assets or remove them from connected sites.
 
-**Sharing**: Enable or disable sharing for assets. When enabled, Asset Library members can share its assets with other users.
+**Sharing**: Enable or disable sharing for assets. When enabled, asset library members can share its assets with other users.
 
 **Asset Auto Tagging**: Enable or disable [auto tagging](../tags-and-categories/auto-tagging/auto-tagging-assets.md). When enabled, assets are automatically tagged using the providers configured at the instance level.
 
-**Documents and Media**: Enable or disable HTTP directory browsing for this library. By default, this setting is disabled. When enabled, users with view permission for an Asset Library can view files and folders in its document library in their browser (e.g., `http://localhost:8080/documents/asset-library-{assetLibraryId}`).
+**Documents and Media**: Enable or disable HTTP directory browsing for this library. By default, this setting is disabled. When enabled, users with view permission for an asset library can view files and folders in its document library in their browser (e.g., `http://localhost:8080/documents/asset-library-{assetLibraryId}`). Also set a max file size for uploaded assets. This value cannot exceed the maximum upload request size set at the instance or system levels. Setting the value to 0 sets no limit for uploaded files. <!--TASK: determine release version for badge.-->
 
-**Recycle Bin**: Enable or disable Recycle Bin for a Library, and set the maximum age for recycled assets. By default, the maximum age is set to 43200 minutes (i.e., 30 days).
+**Recycle Bin**: Enable or disable Recycle Bin for a library, and set the maximum age for recycled assets. By default, the maximum age is set to 43200 minutes (i.e., 30 days).
 
 ### Sites
 
-Here you can connect or disconnect individual Sites to an Asset Library, as well as configure how they're related via the connected Site's *Actions* button ( ![Actions button](../../images/icon-actions.png) ).
+Here you can connect the asset library to Liferay sites and configure their relationship.
 
-![Connect Sites to an Asset Library and configure their connection.](./creating-and-managing-asset-libraries/images/02.png)
+![Connect sites to an asset library and configure their connection.](./creating-and-managing-asset-libraries/images/02.png)
 
-**Add**: Connect a new Site to the selected Library.
+**Add**: Connect a new site to the selected library.
 
-**Make Searchable/Unsearchable**: Determine whether the Library's assets appear in search queries for the selected Site. By default, all connections are searchable.
+**Make Searchable/Unsearchable**: Determine whether the library's assets appear in search queries for the selected site. By default, all connections are searchable.
 
-**Make Web Content Structures Available**: By default, this feature is disabled. When enabled, you can use the Library's Web Content structures and templates in connected Sites.
+**Make Web Content Structures Available**: By default, this feature is disabled. When enabled, you can use the library's web content structures and templates in connected sites. If you later disable this feature, web content using the library's structures and templates in a site is no longer available.
 
-   ```{important}
-   If you later disable this feature, Web Content using the Library's structures and templates in a Site is no longer available.
-   ```
-
-**Disconnect**: Disconnect the selected Site from the Library. When disconnected, the Library's assets are no longer accessible from the Site.
-
-   ```{important}
-   You cannot disconnect a Library from a Site while *Make Web Content Structures Available* is enabled. This is to avoid breaking Site content that uses the Library's structures and templates.
-   ```
+**Disconnect**: Disconnect the selected site from the library. When disconnected, the library's assets are no longer accessible from the site. You cannot disconnect a library from a site while *Make Web Content Structures Available* is enabled. This is to avoid breaking site content that uses the library's structures and templates.
 
 ### Languages
 
-Here you can choose the active language for an Asset Library, whether it's the default or not. You can determine your Library's default language, along with each language's relative priority. If you define a custom language, you can edit the list to determine which languages are available in the Library.
+Here you can choose whether to use your instance's default language configuration for the library or define your own. If you choose a custom configuration, click *Edit* to determine which languages are available in the library. Then you can drag and drop languages to set their relative priority.
 
-![Use your instance's default language options for an Asset Library, or define your own](./creating-and-managing-asset-libraries/images/03.png)
+![Use your instance's default language options for an asset library, or define your own](./creating-and-managing-asset-libraries/images/03.png)
 
-Use the *Drag* icon ( ![Drag icon](../../images/icon-drag.png) ) to adjust a language's relative priority, or click on a language's *Actions* button ( ![Actions button](../../images/icon-actions.png) ) and select *Move Up* or *Move Down*.
+To set a custom default language, click the desired language's *Actions* button (![Actions button](../../images/icon-actions.png)) and select *Make Default*.
 
 ## Managing Asset Library Memberships
 
-You can view and manage User memberships for an Asset Library by going to its dashboard Page and clicking on *Memberships*. From here, you can click the *Add* button (![Add button](../../images/icon-add.png)) to add new Users, Organizations, and User Groups to the selected Library. You can also Assign Roles or Remove Memberships for each existing member by clicking on its *Actions* button ( ![Actions button](../../images/icon-actions.png) ).
+You can view and manage user memberships for an asset library by going to its dashboard page and clicking *Memberships*. From here, you can click *Add* (![Add button](../../images/icon-add.png)) to add new users, organizations, and user groups to the selected library. You can also assign roles or remove memberships for each existing member by clicking its *Actions* button (![Actions button](../../images/icon-actions.png)).
 
-![View an manage Asset Library memberships.](./creating-and-managing-asset-libraries/images/04.png)
+![View an manage asset library memberships.](./creating-and-managing-asset-libraries/images/04.png)
 
-By default, Asset Libraries include the five following Roles:
+By default, asset libraries include these roles:
 
-* **Asset Library Member**: Grants basic permissions and is automatically assigned to Users who belong to an Asset Library.
+* **Asset Library Member**: Grants basic permissions and is automatically assigned to users who belong to an asset library.
 
-* **Asset Library Connected Site Member**: Automatically assigned to members of a connected Site.
+* **Asset Library Connected Site Member**: Automatically assigned to members of a connected site.
 
 * **Asset Library Content Reviewer**: Grants permissions necessary for reviewing content in a workflow.
 
-* **Asset Library Administrator**: Grants permission to manage most aspects of an Asset Library, including content, memberships, and settings. However, it does not grant permission to modify or assign the Owner or Administrator Roles to other members.
+* **Asset Library Administrator**: Grants permission to manage most aspects of an asset library, including content, memberships, and settings. However, it does not grant permission to modify or assign the Owner or Administrator roles to other members.
 
-* **Asset Library Owner**: Grants control over all aspects of an Asset Library and is automatically assigned to the Library's creator.
+* **Asset Library Owner**: Grants control over all aspects of an asset library and is automatically assigned to the library's creator.
 
-```{note}
-By default, the Asset Library Member's permissions are more restricted than those of its Site counterpart. This means you'll need to manually grant access to applications, update/delete permissions for content, and more if you want Members to be responsible for managing content.
-```
+!!! note
+    By default, the asset library member's permissions are more restricted than those of its site counterpart. This means you'll need to manually grant access to applications, update/delete permissions for content, and more if you want members to be responsible for managing content.
 
-Creating or customizing an Asset Library Role is the same process as for other kinds of Roles. See [Roles and Permissions](../../users-and-permissions/roles-and-permissions.md) for how to create, customize, manage, and assign Roles.
+Creating or customizing an asset library role is the same process as for other kinds of roles. See [Roles and Permissions](../../users-and-permissions/roles-and-permissions.md) for how to create, customize, manage, and assign roles.
 
 ## Deleting an Asset Library
 
-To remove an Asset Library and its contents from your instance, click its *Actions* button ( ![Actions button](../../images/icon-actions.png) ) and select *Delete*. You are then prompted to confirm the deletion. Once deleted, all contained assets are removed from your database and are no longer available to previously connected Sites.
+To remove an asset library and its contents from your instance, click its *Actions* button (![Actions button](../../images/icon-actions.png)) and select *Delete*. You are then prompted to confirm the deletion. Once deleted, all contained assets are removed from your database and are no longer available to previously connected sites.
 
-```{warning}
-Asset Library deletion cannot be undone. Ensure you're removing the correct Asset Library and that you've backed up any assets you want to keep.
-```
+!!! warning
+    Deleting asset libraries cannot be undone. Ensure you're removing the correct library and have backed up any assets you want to keep.
 
 ## Related Topics
 

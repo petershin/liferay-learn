@@ -45,6 +45,9 @@ Knowledge Base provides tools for creating and managing a repository of articles
 
 1. Click *Publish* to submit the article for publication or *Save as Draft* to work on it later.
 
+   !!! note
+       With the LPS-188058 [release feature flag](../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) enabled, you can schedule articles for publishing at a specific date and time.
+
 Once saved, the article appears in the Folders and Articles section. If you've enabled workflow for Knowledge Base, the article must go through the approval process before being published.
 
 ## Importing Markdown Files

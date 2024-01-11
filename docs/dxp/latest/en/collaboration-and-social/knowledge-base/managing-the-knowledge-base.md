@@ -47,7 +47,10 @@ For 7.4 U71/GA71 and earlier versions, Knowledge Base articles include a priorit
 
 **Permissions** (![Permissions](../../images/icon-permissions.png)): Assign resource permissions to different roles.
 
-**Delete** (![Delete](../../images/icon-app-trash.png)): Immediately delete the folder and its contents.
+**Delete** (![Delete](../../images/icon-app-trash.png)): Immediately delete the folder and its contents. 
+
+!!! note 
+    Enable the LPS-188058 [release feature flag](../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) to add recycle bin support for knowledge base folders and articles. While enabled, deleting folders moves them and their contents to the Recycle Bin.
 
 Additionally, you can click *Info* (![Info Button](../../images/icon-information.png)) to toggle the information panel for the current folder.
 
@@ -71,9 +74,26 @@ Additionally, you can click *Info* (![Info Button](../../images/icon-information
 
 **Permissions** (![Permissions](../../images/icon-permissions.png)): Manage permissions for the article.
 
-**Delete** (![Delete](../../images/icon-app-trash.png)): Immediately delete the article along with its child articles.
+**Delete** (![Delete](../../images/icon-app-trash.png)): Immediately delete the article along with its child articles. 
+
+!!! note 
+    Enable the LPS-188058 [release feature flag](../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) to add recycle bin support for knowledge base folders and articles. While enabled, deleting an article moves it and its child articles to the Recycle Bin.
 
 While viewing an article, you can also click *Info* (![Info Button](../../images/icon-information.png)) to view article details and versions.
+
+## Scheduling Articles for Publishing 
+
+{bdg-link-primary}`[Release Feature](../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags)`
+
+When creating or editing an article, you can schedule it for publishing at a specific date and time. While scheduled, the article is only visible in the Knowledge Base application and does not appear in site pages. 
+
+![Click Schedule Publication to set a specific date and time for publishing.](./managing-the-knowledge-base/images/06.png)
+
+If you edit a scheduled article and click *Save*, the article is saved as a draft. Alternatively, when if you click *Edit Schedule* you can choose whether to publish the article immediately or schedule it for publishing at a future date and time.
+
+![When editing a scheduled article, you can click Save or Edit Schedule.](./managing-the-knowledge-base/images/07.png)
+
+To use this feature, enable the LPS-188058 release feature flag.
 
 ## Setting Review and Expiration Dates for Articles
 
@@ -81,7 +101,7 @@ Sometimes Knowledge Base articles are only valid for a period of time. For these
 
 By default, articles are set never to expire or require review, but you can change this while creating or editing an article.
 
-![Set review and expiration dates for articles.](./managing-the-knowledge-base/images/06.png)
+![Set review and expiration dates for articles.](./managing-the-knowledge-base/images/08.png)
 
 The default value is one year in the future, but you can select the desired date and hour. Users receive notifications for the article based on system mail and notification settings.
 
@@ -95,7 +115,7 @@ Reaching the review date does not affect the article. It only reminds users to r
 
 1. Under Content and Data, click *Knowledge Base*.
 
-   ![Set the check interval and when to notify users of articles expiring soon. ](./managing-the-knowledge-base/images/07.png)
+   ![Set the check interval and when to notify users of articles expiring soon. ](./managing-the-knowledge-base/images/09.png)
 
 1. In the Service tab under System Scope, enter a check interval. This value determines the number of minutes between checks. By default, the value is 15 minutes.
 
@@ -109,7 +129,7 @@ Reaching the review date does not affect the article. It only reminds users to r
 
 1. Determine the content of review and expiration emails.
 
-   ![Configure review and expiration emails.](./managing-the-knowledge-base/images/08.png)
+   ![Configure review and expiration emails.](./managing-the-knowledge-base/images/10.png)
 
 1. Click *Save*.
 
@@ -117,11 +137,11 @@ Reaching the review date does not affect the article. It only reminds users to r
 
 When viewing an article's history, you can view version details, compare content, and revert to an earlier version.
 
-![View, compare, and revert article versions.](./managing-the-knowledge-base/images/09.png)
+![View, compare, and revert article versions.](./managing-the-knowledge-base/images/11.png)
 
 To compare version content, select two articles and click *Compare Versions*.
 
-![Compare changes between two versions of an article.](./managing-the-knowledge-base/images/10.png)
+![Compare changes between two versions of an article.](./managing-the-knowledge-base/images/12.png)
 
 This highlights all additions, deletions, and formatting changes between versions.
 

@@ -45,7 +45,7 @@
 			"name": "Deployment Approach",
 			"taxonomyCategories": [
 				{
-					"name": "Liferay Self Hosted"
+					"name": "Liferay Self-Hosted"
 				},
 				{
 					"name": "Liferay SaaS"
@@ -99,6 +99,12 @@
 				},
 				{
 					"name": "Cloud Platform Administration"
+				},
+				{
+					"name": "Collections"
+				},
+				{
+					"name": "Collection Pages"
 				},
 				{
 					"name": "Content Configurations"

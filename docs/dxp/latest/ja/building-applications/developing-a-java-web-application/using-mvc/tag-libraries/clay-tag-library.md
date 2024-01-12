@@ -43,6 +43,7 @@ AUI taglibは、@product-ver@で廃止予定になりました。 将来の互�
 ```jsp
 <%@ taglib prefix="clay" uri="http://liferay.com/tld/clay" %>
 ```
+
 Liferay Clay taglibは、FreeMarkerテーマテンプレートおよびWebコンテンツテンプレートのマクロを介して使用することもできます。 次の構文に従います。
 
 ```

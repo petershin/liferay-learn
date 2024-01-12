@@ -44,6 +44,7 @@ To use the Clay taglib in your apps, add this declaration to your JSP:
 ```jsp
 <%@ taglib prefix="clay" uri="http://liferay.com/tld/clay" %>
 ```
+
 The Liferay Clay taglib is also available via a macro for your FreeMarker theme templates and web content templates. Follow this syntax:
 
 ```

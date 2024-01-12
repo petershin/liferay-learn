@@ -3,7 +3,7 @@ uuid: a5817034-132b-4ded-93b6-b082022eb2ce
 ---
 # Adding a Template to Display an Event
 
-You should have a web content template for each new type of structure you add, as they define how to order and arrange each field in the structure. Otherwise, the default template is applied, and your content is presented in a generic way.
+You should have a web content template for each new type of structure you add, as they define how to order and arrange each field in the structure. 
 
 Here, you'll use HTML and [FreeMarker tags](https://freemarker.apache.org/docs/dgui.html) to format the fields for an Event article.
 

@@ -105,9 +105,8 @@ Liferay가 실행되면,
 | `-d "{\"fieldType\": \"select\", \"key\": \"foo\", \"name\": {\"en_US\": \"Foo\"}}"` | 게시할 데이터를 입력합니다.               |
 | `-u "test@liferay.com:learn"`                                                                      | 기본 인증 자격 증명을 입력합니다.           |
 
-```{note}
-여기서는 데모용으로 기본 인증이 사용됩니다. 프로덕션의 경우 [OAuth 2.0 사용](https://learn.liferay.com/dxp/latest/ko/headless-delivery/using-oauth2.html) 을 통해 사용자를 인증해야 합니다. 샘플 React 애플리케이션은 [OAuth2를 사용하여 사용자 인증](https://learn.liferay.com/dxp/latest/ko/headless-delivery/using-oauth2/using-oauth2-to-authorize-users.html) 를 참조하세요. OAuth2를 사용합니다.
-```
+!!! note
+   여기서는 데모용으로 기본 인증이 사용됩니다. 프로덕션의 경우 [OAuth 2.0 사용](https://learn.liferay.com/dxp/latest/ko/headless-delivery/using-oauth2.html) 을 통해 사용자를 인증해야 합니다. 샘플 React 애플리케이션은 [OAuth2를 사용하여 사용자 인증](https://learn.liferay.com/dxp/latest/ko/headless-delivery/using-oauth2/using-oauth2-to-authorize-users.html) 를 참조하세요. OAuth2를 사용합니다.
 
 다른 cURL 명령은 유사한 JSON 인수를 사용합니다.
 
@@ -131,15 +130,13 @@ Liferay가 실행되면,
 
 프로젝트는 `com.liferay.headless.commerce.admin.catalog.client.jar` 파일을 종속성으로 포함합니다. `/o/api` (예: <http://localhost:8080/o/api>)에 설치된 API 탐색기에서 모든 REST 애플리케이션에 대한 클라이언트 JAR 종속성 정보를 찾을 수 있습니다.
 
-```{note}
-`main` 메서드의 주석은 클래스 실행을 보여줍니다.
-```
+!!! note
+   `main` 메서드의 주석은 클래스 실행을 보여줍니다.
 
 나머지 예제 Java 클래스는 서로 다른 `OptionResource` 메서드를 호출합니다.
 
-```{important}
-[OptionResource]$LIFERAY_LEARN_PORTAL_GIT_TAG$/com/liferay/headless/commerce/admin/catalog/client/resource/v1_0/OptionResource.java)를 참조하십시오.
-```
+!!! important
+   [OptionResource]$LIFERAY_LEARN_PORTAL_GIT_TAG$/com/liferay/headless/commerce/admin/catalog/client/resource/v1_0/OptionResource.java)를 참조하십시오.
 
 다음은 cURL과 Java를 사용하여 다른 `옵션` REST 서비스를 호출하는 예입니다.
 
@@ -174,7 +171,7 @@ java -classpath .:* Options_GET_FromInstance
 ```{literalinclude} ./option-api-basics/resources/liferay-d3g5.zip/java/Options_GET_FromInstance.java
    :dedent: 1
    :language: java
-   :lines: 11-22
+   :lines: 8-18
 ```
 
 인스턴스의 `옵션` 객체는 JSON 형식입니다.
@@ -183,9 +180,9 @@ java -classpath .:* Options_GET_FromInstance
 
 이 API는 옵션을 필터링, 페이지 매기기, 검색 및 정렬하기 위한 매개변수도 허용합니다. 자세한 내용은 [`getOptionsPage`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/headless/headless-commerce/headless-commerce-admin-catalog-client/src/main/java/com/liferay/headless/commerce/admin/catalog/client/resource/v1_0/OptionResource.java#L43-#L46) 메서드를 참조하십시오. 쿼리에서 다음 `옵션` 필드를 사용하여 결과를 필터링, 검색 및 정렬할 수 있습니다.
 
-* 필드 유형
-* 열쇠
-* 이름
+- 필드 유형
+- 열쇠
+- 이름
 
 | 필터 쿼리                   | 묘사                    |
 |:----------------------- |:--------------------- |
@@ -203,9 +200,8 @@ java -classpath .:* Options_GET_FromInstance
 
 cURL 또는 Java `get` 명령을 사용하여 특정 옵션을 가져옵니다. `1234` 옵션의 ID로 바꿉니다.
 
-```{tip}
-`Options_GET_FromInstance.[java|sh]`를 사용하여 모든 옵션 목록을 가져오고 구체적으로 원하는 옵션의 `id`를 기록해 둡니다.
-```
+!!! tip
+   `Options_GET_FromInstance.[java|sh]`를 사용하여 모든 옵션 목록을 가져오고 구체적으로 원하는 옵션의 `id`를 기록해 둡니다.
 
 ### Option_GET_ById.sh
 

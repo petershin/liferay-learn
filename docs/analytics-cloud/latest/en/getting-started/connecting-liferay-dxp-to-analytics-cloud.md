@@ -1,5 +1,11 @@
 ---
 uuid: c44fbb5a-5155-4b25-b97e-b574fb16f3d6
+taxonomy-category-names:
+- Cloud
+- Analytics Cloud Administration
+- Liferay Self-Hosted
+- Liferay SaaS
+- Liferay PaaS
 ---
 # Connecting Liferay DXP to Analytics Cloud
 

@@ -25,7 +25,7 @@ By default, Liferay requests all [stored fields](https://www.elastic.co/guide/en
 },
 ```
 
-Usually, returning all stored fields is innocuous, but in rare cases an overly large response can result in ERROR messages indicating that the returned content is too long for the configured buffer limit.
+Usually, returning all stored fields is innocuous. In rare cases an overly large response can result in ERROR messages indicating that the returned content is too long for the configured buffer limit.
 
 To reduce the response size of searches and improve performance generally, you can filter the stored fields. For this you must [create a Search Blueprint](./creating-and-managing-search-blueprints.md) with JSON like the following in the [Advanced Configuration](search-blueprints-configuration-reference.md#advanced-configuration) field:
 
@@ -48,15 +48,15 @@ The Search Results widget requires certain fields in the response for generating
 
 ![Web Content result summaries show several fields.](./filtering-by-stored-fields-to-limit-the-response-size/images/01.png)
 
-Your use case determines the fields you should return in the response.
+Your use case determines the stored fields you should return in the response.
 
 Fields available for display in the Search Results summaries are defined by the Search Results widget's display logic ([`SearchResultsSummaryDisplayBuilder`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-search/portal-search-web/src/main/java/com/liferay/portal/search/web/internal/result/display/context/builder/SearchResultSummaryDisplayContextBuilder.java) and [`SearchResultsSummaryDisplayContext`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-search/portal-search-web/src/main/java/com/liferay/portal/search/web/internal/result/display/context/SearchResultSummaryDisplayContext.java)).
 
 ## Excluding the Source Field
 
-The `_source` field contains the stored document body that was passed to the index request. This field is not itself indexed, but is stored and returned by the search response for each document. Unless you are encountering errors from a too large search response, do not exclude the `_source` field, as it's used to support certain search functionality and removing it can cause unintended side effects. <!-- get clarity on this -->
+The `_source` field contains the original document body that was passed to the index request. This field is not itself indexed, but is stored and returned by the search response for each document. If you are encountering errors from a too large search response, you can exclude the `_source` field.
 
-To reduce the response size of searches and improve performance generally, you can exclude the source field from the response. For this you must set `fetchSource` to `false` in the [Advanced Configuration](search-blueprints-configuration-reference.md#advanced-configuration) of a blueprint:
+To exclude the source field, you must set `fetchSource` to `false` in the [Advanced Configuration](search-blueprints-configuration-reference.md#advanced-configuration) of a blueprint:
 
 ```json
 {

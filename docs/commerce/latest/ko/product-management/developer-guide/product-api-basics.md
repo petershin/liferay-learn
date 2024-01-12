@@ -128,9 +128,8 @@
 | `-d "{\"active\": true, \"catalogId\": \"${1}\", \"name\": {\"en_US\": \"Foo\"}, \"productType\": \"simple\"}"` | 게시할 데이터                 |
 | `-u "test@liferay.com:learn"`                                                                                                   | 기본 인증 자격 증명             |
 
-```{note}
-여기서는 데모용으로 기본 인증이 사용됩니다. 프로덕션의 경우 [OAuth 2.0 사용](https://learn.liferay.com/dxp/latest/ko/headless-delivery/using-oauth2.html) 을 통해 사용자를 인증해야 합니다. 샘플 React 애플리케이션은 [OAuth2를 사용하여 사용자 인증](https://learn.liferay.com/dxp/latest/ko/headless-delivery/using-oauth2/using-oauth2-to-authorize-users.html) 를 참조하세요. OAuth2를 활용합니다.
-```
+!!! note
+   여기서는 데모용으로 기본 인증이 사용됩니다. 프로덕션의 경우 [OAuth 2.0 사용](https://learn.liferay.com/dxp/latest/ko/headless-delivery/using-oauth2.html) 을 통해 사용자를 인증해야 합니다. 샘플 React 애플리케이션은 [OAuth2를 사용하여 사용자 인증](https://learn.liferay.com/dxp/latest/ko/headless-delivery/using-oauth2/using-oauth2-to-authorize-users.html) 를 참조하세요. OAuth2를 활용합니다.
 
 다른 cURL 명령은 유사한 JSON 인수를 사용합니다.
 
@@ -154,15 +153,13 @@
 
 프로젝트에는 `com.liferay.headless.commerce.admin.catalog.client.jar` 파일이 종속성으로 포함되어 있습니다. `/o/api`에 설치된 API 탐색기에서 모든 REST 애플리케이션에 대한 클라이언트 JAR 종속성 정보를 찾을 수 있습니다.
 
-```{note}
-`main` 메서드의 주석은 클래스 실행을 보여줍니다.
-```
+!!! note
+   `main` 메서드의 주석은 클래스 실행을 보여줍니다.
 
 다른 예제 Java 클래스는 이 클래스와 유사하지만 다른 `ProductResource` 메서드를 호출합니다.
 
-```{important}
-[ProductResource]$LIFERAY_LEARN_PORTAL_GIT_TAG$/com/liferay/headless/commerce/admin/catalog/client/resource/v1_0/ProductResource.java)를 참조하십시오.
-```
+!!! important
+   [ProductResource]($LIFERAY_LEARN_PORTAL_GIT_TAG$/com/liferay/headless/commerce/admin/catalog/client/resource/v1_0/ProductResource.java)를 참조하십시오.
 
 다음은 cURL과 Java를 사용하여 다른 `개 제품` REST 서비스를 호출하는 예입니다.
 
@@ -197,22 +194,22 @@ java -classpath .:* Products_GET_FromInstance
 ```{literalinclude} ./product-api-basics/resources/liferay-z8v2.zip/java/Products_GET_FromInstance.java
    :dedent: 1
    :language: java
-   :lines: 11-21
+   :lines: 11-22
 ```
 
 Liferay 인스턴스의 `Product` 개체가 JSON에 나열됩니다.
 
 이 API는 또한 제품을 필터링, 페이지 매김, 검색 및 정렬하기 위한 매개변수를 허용합니다. 자세한 내용은 [`getProductsPage`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/commerce/headless/headless-commerce/headless-commerce-admin-catalog-client/src/main/java/com/liferay/headless/commerce/admin/catalog/client/resource/v1_0/ProductResource.java#L43-L46) 방법을 참조하십시오. 쿼리에서 다음 제품 필드를 사용하여 결과를 필터링, 검색 및 정렬할 수 있습니다.
 
-* 카테고리 ID
-* 채널 ID
-* 상태 코드
-* customFields
-* 생성일
-* 수정 날짜
-* 카탈로그 ID
-* 이름
-* 상품 유형
+- 카테고리 ID
+- 채널 ID
+- 상태 코드
+- customFields
+- 생성일
+- 수정 날짜
+- 카탈로그 ID
+- 이름
+- 상품 유형
 
 | 필터 쿼리                              | 묘사                                 |
 |:---------------------------------- |:---------------------------------- |
@@ -232,9 +229,8 @@ Liferay 인스턴스의 `Product` 개체가 JSON에 나열됩니다.
 
 다음 cURL 또는 Java 명령을 사용하여 특정 제품을 가져옵니다. `1234` 을 제품 ID로 바꿉니다.
 
-```{tip}
-``Products_GET_FromInstance.[java|sh]``를 사용하여 모든 제품 목록을 가져오고 구체적으로 원하는 제품의 `productId`를 기록해 둡니다.
-```
+!!! tip
+   ``Products_GET_FromInstance.[java|sh]``를 사용하여 모든 제품 목록을 가져오고 구체적으로 원하는 제품의 `productId`를 기록해 둡니다.
 
 ### Product_GET_ById.sh
 

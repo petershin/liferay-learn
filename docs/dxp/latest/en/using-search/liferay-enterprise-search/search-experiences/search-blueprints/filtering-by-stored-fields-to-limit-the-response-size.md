@@ -54,7 +54,7 @@ Fields available for display in the Search Results summaries are defined by the 
 
 ## Excluding the Source Field
 
-The `_source` field contains the original document body that was passed to the index request. This field is not itself indexed, but is stored and returned by the search response for each document. If you are encountering errors from a too large search response, you can exclude the `_source` field.
+The `_source` field contains the original document body that was passed to the index request. This field is not itself indexed, but is stored and returned in the search response for each document. If you are encountering errors from a too large search response, you can exclude the `_source` field.
 
 To exclude the source field, you must set `fetchSource` to `false` in the [Advanced Configuration](search-blueprints-configuration-reference.md#advanced-configuration) of a blueprint:
 
@@ -70,7 +70,7 @@ As demonstrated in the following example, you can exclude the source field and l
 
 ## Example: Limiting the Fields Returned in the Search Response
 
-Although uncommon, if you have a system with lots of translated content, your search response could become too large, resulting in errors from Elasticsearch. One workaround is to disable unneeded locales in Liferay, to avoid returning more translated fields than necessary. Another approach is trimming the response with a search blueprint, as described here:
+Although uncommon, searching in a system with lots of translated content can produce a search response that's too large. One workaround is to disable unneeded locales in Liferay, to avoid returning more translated fields than necessary. Another approach is trimming the response with a search blueprint, as described here:
 
 1. First add a web content article. Open the Site menu (![Site menu](../../../../images/icon-menu.png)) and go to *Content & Data* &rarr; *Web Content*.
 

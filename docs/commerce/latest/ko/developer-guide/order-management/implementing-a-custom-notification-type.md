@@ -33,9 +33,8 @@
     ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
     ```
 
-    ```{note}
-    이 명령은 배포된 jar를 Docker 컨테이너의 `/opt/liferay/osgi/modules`에 복사하는 것과 동일합니다.
-    ```
+    !!! note
+        이 명령은 배포된 jar를 Docker 컨테이너의 `/opt/liferay/osgi/modules`에 복사하는 것과 동일합니다.
 
 1. Docker 컨테이너 콘솔에서 배포를 확인합니다.
 
@@ -53,13 +52,12 @@
     | g2f3-선적-id-정의-기간                           | 배송 ID            |
     | g2f3-배송-작성자-이메일-정의-기간                      | 배송을 생성한 사용자의 이메일 |
 
-    ```{important}
-    Liferay DXP 7.4 U4+ 또는 Liferay Portal 7.4 GA8+용 언어 재정의 도구에서 언어 키를 추가할 수 있습니다. 이전 버전의 경우 빌드 및 배포하기 전에 `/src/main/resources/content/` 아래에 `Language.properties` 파일을 키와 함께 추가해야 합니다.
-    ```
+    !!! important
+        Liferay DXP 7.4 U4+ 또는 Liferay Portal 7.4 GA8+용 언어 재정의 도구에서 언어 키를 추가할 수 있습니다. 이전 버전의 경우 빌드 및 배포하기 전에 `/src/main/resources/content/` 아래에 `Language.properties` 파일을 키와 함께 추가해야 합니다.
 
 3. **글로벌 메뉴**(![응용 프로그램 메뉴 아이콘](../../images/icon-applications-menu.png))를 열고 **상거래** &rarr; **채널** 을 클릭한 다음 **알림 템플릿** 을 선택합니다.
 
-4. **추가** 버튼을 사용하여 새 템플릿을 만듭니다(![추가 아이콘](../../images/icon-add.png)): 
+4. **추가** 버튼을 사용하여 새 템플릿을 만듭니다(![추가 아이콘](../../images/icon-add.png)):
 
     **이름:** 생성된 G2F3 배송 테스트
 
@@ -92,15 +90,14 @@
 
 7. 구매자로 로그인하고 상점에서 새로 주문하십시오.
 
-8. 로그아웃했다가 관리자로 다시 로그인하고 **Global Menu** 를 열고 **Commerce** &rarr; **Orders** 를 클릭합니다. 
+8. 로그아웃했다가 관리자로 다시 로그인하고 **Global Menu** 를 열고 **Commerce** &rarr; **Orders** 를 클릭합니다.
 
 9. 주문을 선택하고 **주문 수락** 을 클릭합니다. 그런 다음 **발송물 생성** 을 클릭합니다.
 
 10. 수신된 알림에 대한 받은 편지함을 확인하십시오.
 
-```{important}
-MockMock(https://github.com/tweakers/MockMock)과 같은 가짜 SMTP 서버를 사용하여 로컬 개발 환경에서 이러한 알림을 테스트할 수 있습니다. `portal-ext.properties` 파일에 `mail.send.blacklist=noreply@liferay.com, noreply@domain.invalid, test@domain.invalid` 행을 추가하십시오. `java -jar MockMock.jar`를 사용하여 jar를 실행하고 수신된 이메일에 대해 `localhost:8282`를 확인하십시오.
-```
+!!! important
+    MockMock(https://github.com/tweakers/MockMock)과 같은 가짜 SMTP 서버를 사용하여 로컬 개발 환경에서 이러한 알림을 테스트할 수 있습니다. `portal-ext.properties` 파일에 `mail.send.blacklist=noreply@liferay.com, noreply@domain.invalid, test@domain.invalid` 행을 추가하십시오. `java -jar MockMock.jar`를 사용하여 jar를 실행하고 수신된 이메일에 대해 `localhost:8282`를 확인하십시오.
 
 ## 사용자 지정 알림 유형의 작동 방식
 
@@ -108,12 +105,12 @@ MockMock(https://github.com/tweakers/MockMock)과 같은 가짜 SMTP 서버를 �
 
 그런 다음 `CommerceShipment` 클래스에 대해 `ModelListener` 생성합니다. 다음으로 `CommerceDefinitionTermContributor` 인터페이스를 검토합니다. 마지막으로 용어 기여자를 구현하여 새 알림에 대한 와일드카드를 확인합니다.
 
-* [OSGi 등록을 위해 클래스에 주석 달기](#annotate-the-class-for-osgi-registration)
-* [CommerceNotificationType 인터페이스 검토](#review-the-commercenotificationtype-interface)
-* [통지 유형을 작성하십시오](#complete-the-notification-type)
-* [CommerceShipment용 ModelListener 생성](#create-a-modellistener-for-commerceshipment)
-* [CommerceDefinitionTermContributor 인터페이스 검토](#review-the-commercedefinitiontermcontributor-interface)
-* [기고자 기간을 완료하십시오.](#complete-the-term-contributors)
+- [OSGi 등록을 위해 클래스에 주석 달기](#annotate-the-class-for-osgi-registration)
+- [CommerceNotificationType 인터페이스 검토](#review-the-commercenotificationtype-interface)
+- [통지 유형을 작성하십시오](#complete-the-notification-type)
+- [CommerceShipment용 ModelListener 생성](#create-a-modellistener-for-commerceshipment)
+- [CommerceDefinitionTermContributor 인터페이스 검토](#review-the-commercedefinitiontermcontributor-interface)
+- [기고자 기간을 완료하십시오.](#complete-the-term-contributors)
 
 ### OSGi 등록을 위해 클래스에 주석 달기
 
@@ -197,7 +194,7 @@ public List<String> getTerms();
 ```{literalinclude} ./implementing-a-custom-notification-type/resources/liferay-g2f3.zip/g2f3-impl/src/main/java/com/acme/g2f3/internal/commerce/order/term/contributor/G2F3CommerceShipmentCommerceDefinitionTermContributor.java
     :dedent: 1
     :language: java
-    :lines: 33-76
+    :lines: 32-71
 ```
 
 와일드카드를 확인하기 전에 개체가 null인지 또는 `CommerceShipment`유형인지 확인하는 검사가 있습니다. 그런 다음 용어에 와일드카드가 포함된 경우 와일드카드는 배송 작성자의 이름, 배송 주소 또는 배송 ID로 대체됩니다. 배송 작성자 이름의 경우 배송의 계정 이름이 반환됩니다. 배송 주소는 거리 주소, 도시 및 우편번호가 연결된 문자열로 반환됩니다. 배송 ID는 배송 개체에서 직접 반환됩니다.
@@ -207,7 +204,7 @@ public List<String> getTerms();
 ```{literalinclude} ./implementing-a-custom-notification-type/resources/liferay-g2f3.zip/g2f3-impl/src/main/java/com/acme/g2f3/internal/commerce/order/term/contributor/G2F3CommerceShipmentRecipientCommerceDefinitionTermContributor.java
     :dedent: 1
     :language: java
-    :lines: 32-63
+    :lines: 31-58
 ```
 
 와일드카드를 확인하기 전에 개체가 null인지 또는 `CommerceShipment`유형인지 확인하는 검사가 있습니다. 그런 다음 용어에 와일드카드가 포함된 경우 와일드카드는 계정의 사용자 ID로 대체됩니다. 알림이 전송되면 이 ID를 사용하여 사용자의 이메일을 찾습니다.
@@ -219,7 +216,7 @@ public List<String> getTerms();
 ```{literalinclude} ./implementing-a-custom-notification-type/resources/liferay-g2f3.zip/g2f3-impl/src/main/java/com/acme/g2f3/internal/commerce/order/term/contributor/G2F3CommerceShipmentCommerceDefinitionTermContributor.java
     :dedent: 1
     :language: java
-    :lines: 78-82
+    :lines: 73-76
 ```
 
 이 메서드는 알림 유형에 사용할 수 있는 모든 용어 기여자를 반환합니다. 이를 위해 언어 키를 사용하거나 UI에 용어를 표시하는 하드 코딩된 문자열을 직접 반환할 수 있습니다.
@@ -227,7 +224,7 @@ public List<String> getTerms();
 ```{literalinclude} ./implementing-a-custom-notification-type/resources/liferay-g2f3.zip/g2f3-impl/src/main/java/com/acme/g2f3/internal/commerce/order/term/contributor/G2F3CommerceShipmentCommerceDefinitionTermContributor.java
     :dedent: 1
     :language: java
-    :lines: 84-87
+    :lines: 78-81
 ```
 
 ## 결론

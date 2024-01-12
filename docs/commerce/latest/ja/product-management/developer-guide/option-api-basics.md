@@ -9,7 +9,7 @@
 
 Liferay が起動したら
 
-1. Option API Basics](./liferay-d3g5.zip)をダウンロードして解凍します。
+1. [Option API Basics](./liferay-d3g5.zip)をダウンロードして解凍します。
 
    ```bash
    curl https://learn.liferay.com/commmerce/latest/en/product-management/developer-guide/liferay-d3g5.zip -O
@@ -131,15 +131,13 @@ Liferay が起動したら
 
 このプロジェクトには、依存関係として `com.liferay.headless.commerce.admin.catalog.client.jar` ファイルが含まれています。 すべてのRESTアプリケーションのクライアント JAR 依存情報は、インストール先のAPIエクスプローラーで `/o/api` (例: <http://localhost:8080/o/api>) から確認できます。
 
-```{note}
-`main`メソッドのコメントでは、クラスの実行を実演しています。
-```
+!!! note
+   `main`メソッドのコメントでは、クラスの実行を実演しています。
 
 残りの例のJavaクラスは、異なる `OptionResource` のメソッドを呼び出します。
 
-```{important}
-サービスの詳細は [OptionResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/headless-commerce/headless-commerce-admin-catalog-client/src/main/java/com/liferay/headless/commerce/admin/catalog/client/resource/v1_0/OptionResource.java) を参照してください。
-```
+!!! important
+   サービスの詳細は [OptionResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/headless-commerce/headless-commerce-admin-catalog-client/src/main/java/com/liferay/headless/commerce/admin/catalog/client/resource/v1_0/OptionResource.java) を参照してください。
 
 以下は、cURLとJavaを使用して他の `Option` RESTサービスを呼び出す例です。
 
@@ -174,7 +172,7 @@ java -classpath .:* Options_GET_FromInstance
 ```{literalinclude} ./option-api-basics/resources/liferay-d3g5.zip/java/Options_GET_FromInstance.java
    :dedent: 1
    :language: java
-   :lines: 11-22
+   :lines: 8-18
 ```
 
 インスタンスの`Option`オブジェクトはJSONでフォーマットされています。
@@ -183,9 +181,9 @@ java -classpath .:* Options_GET_FromInstance
 
 このAPIでは、オプションの絞り込み、ページ分割、検索、並べ替えを行うためのパラメーターも許可します。 詳しくは、 [`getOptionsPage`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/headless/headless-commerce/headless-commerce-admin-catalog-client/src/main/java/com/liferay/headless/commerce/admin/catalog/client/resource/v1_0/OptionResource.java#L43-#L46) メソッドをご覧ください。 クエリでは、以下の`Option`フィールドを使用して、結果の絞り込み、検索、および並べ替えを行うことができます。
 
-* fieldType
-* key
-* name
+- fieldType
+- key
+- name
 
 | フィルタークエリ                | 説明                        |
 |:----------------------- |:------------------------- |
@@ -203,9 +201,8 @@ java -classpath .:* Options_GET_FromInstance
 
 cURLまたはJava `get`コマンドで特定のオプションを取得します。 `1234`をオプションのIDに置き換えます。
 
-```{tip}
+!!! tip
 `Options_GET_FromInstance.[java|sh]`を使用して、すべてのオプションのリストを取得し、特に欲しいオプションの `id` をメモします。
-```
 
 ### Option_GET_ById.sh
 

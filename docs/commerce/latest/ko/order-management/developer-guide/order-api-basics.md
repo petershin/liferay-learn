@@ -207,15 +207,13 @@ Liferay가 실행되면,
 
 프로젝트에는 `com.liferay.headless.commerce.admin.order.client.jar` 파일이 종속성으로 포함되어 있습니다. `/o/api` (예: <http://localhost:8080/o/api>)에 설치된 API 탐색기에서 모든 REST 애플리케이션에 대한 클라이언트 JAR 종속성 정보를 찾을 수 있습니다.
 
-```{note}
-`main` 메서드의 주석은 클래스 실행을 보여줍니다.
-```
+!!! note
+   `main` 메서드의 주석은 클래스 실행을 보여줍니다.
 
 다른 예제 Java 클래스는 서로 다른 `OrderResource` 메서드를 호출합니다.
 
-```{important}
-[OrderResource]$LIFERAY_LEARN_PORTAL_GIT_TAG$/com/liferay/headless/commerce/admin/order/client/resource/v1_0/OrderResource.java)를 참조하십시오.
-```
+!!! important
+   [OrderResource]($LIFERAY_LEARN_PORTAL_GIT_TAG$/com/liferay/headless/commerce/admin/order/client/resource/v1_0/OrderResource.java)를 참조하십시오.
 
 다음은 cURL 및 Java를 사용하여 다른 `Order` REST 서비스를 호출하는 예입니다.
 
@@ -259,13 +257,13 @@ java -classpath .:* Orders_GET_FromInstance
 
 이 API에서 반환된 주문은 필터링, 페이지 매기기, 검색 및 정렬이 가능합니다. 자세한 내용은 [`getOrdersPage`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/headless/headless-commerce/headless-commerce-admin-order-client/src/main/java/com/liferay/headless/commerce/admin/order/client/resource/v1_0/OrderResource.java#L43-L46) 메서드를 참조하십시오. 다음 `개의 주문` 필드를 사용하여 결과를 필터링, 검색 및 정렬합니다.
 
-* 계정 ID
-* 채널 ID
-* 주문 상태
-* 주문 아이디
-* 생성일
-* 수정 날짜
-* 주문일
+- 계정 ID
+- 채널 ID
+- 주문 상태
+- 주문 아이디
+- 생성일
+- 수정 날짜
+- 주문일
 
 | 필터 쿼리                                           | 묘사                                                                                     |
 |:----------------------------------------------- |:-------------------------------------------------------------------------------------- |
@@ -299,9 +297,8 @@ java -classpath .:* Orders_GET_FromInstance
 
 cURL 및 Java `get` 명령을 사용하여 특정 주문을 가져옵니다. `1234` 주문 ID로 바꿉니다.
 
-```{tip}
-`Orders_GET_FromInstance.[java|sh]`를 사용하여 모든 주문 목록을 가져오고 구체적으로 원하는 주문의 `id`를 기록해 둡니다.
-```
+!!! tip
+   `Orders_GET_FromInstance.[java|sh]`를 사용하여 모든 주문 목록을 가져오고 구체적으로 원하는 주문의 `id`를 기록해 둡니다.
 
 ### Order_GET_ById.sh
 
@@ -366,7 +363,7 @@ java -classpath .:* -DorderId=1234 Order_PATCH_ById
 ```{literalinclude} ./order-api-basics/resources/liferay-w6c8.zip/java/Order_PATCH_ById.java
    :dedent: 1
    :language: java
-   :lines: 11-29
+   :lines: 9-23
 ```
 
 ## 주문 삭제

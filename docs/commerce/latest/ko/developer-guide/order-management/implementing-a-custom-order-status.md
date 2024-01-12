@@ -46,9 +46,8 @@ Liferay 주문 엔진에는 1) 공개, 2) 진행 중, 3) 보류 중, 4) 처리 �
     ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
     ```
 
-    ```{note}
-    이 명령은 배포된 jar를 Docker 컨테이너의 `/opt/liferay/osgi/modules`에 복사하는 것과 동일합니다.
-    ```
+    !!! note
+        이 명령은 배포된 jar를 Docker 컨테이너의 `/opt/liferay/osgi/modules`에 복사하는 것과 동일합니다.
 
 1. Docker 컨테이너 콘솔에서 배포를 확인합니다.
 
@@ -78,13 +77,12 @@ Liferay 주문 엔진에는 1) 공개, 2) 진행 중, 3) 보류 중, 4) 처리 �
 
 예제 구현은 3단계로 구현됩니다. 먼저 OSGi 등록을 위해 클래스에 주석을 달아야 합니다. 다음으로 [`CommerceOrderStatus`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/order/status/CommerceOrderStatus.java) 인터페이스를 검토합니다. 마지막으로 사용자 지정 `CommerceOrderStatus`구현을 완료합니다.
 
-* [OSGi 등록을 위해 클래스에 주석 달기](#annotate-the-class-for-osgi-registration)
-* [`CommerceOrderStatus` 인터페이스 검토](#review-the-commerceorderstatus-interface)
-* [주문 상태 완료](#complete-the-order-status)
+- [OSGi 등록을 위해 클래스에 주석 달기](#annotate-the-class-for-osgi-registration)
+- [`CommerceOrderStatus` 인터페이스 검토](#review-the-commerceorderstatus-interface)
+- [주문 상태 완료](#complete-the-order-status)
 
-```{important}
-주문 수명 주기에서 새 상태를 배치하는 단계에 따라 올바른 주문 처리를 위해 다음 단계를 조정해야 합니다. 이 예에서는 보류 중 및 처리 중 상태 사이에 새 상태를 배치하므로 논리에서 새 상태를 확인하도록 기존 처리 중 상태를 재정의해야 합니다. 
-```
+!!! important
+    주문 수명 주기에서 새 상태를 배치하는 단계에 따라 올바른 주문 처리를 위해 다음 단계를 조정해야 합니다. 이 예에서는 보류 중 및 처리 중 상태 사이에 새 상태를 배치하므로 논리에서 새 상태를 확인하도록 기존 처리 중 상태를 재정의해야 합니다.
 
 ### OSGi 등록을 위해 클래스에 주석 달기
 
@@ -95,9 +93,8 @@ Liferay 주문 엔진에는 1) 공개, 2) 진행 중, 3) 보류 중, 4) 처리 �
 
 Liferay Commerce가 주문 상태 레지스트리에서 새 상태를 다른 상태와 구별할 수 있도록 주문 상태에 대한 고유 키를 제공하는 것이 중요합니다. 이미 사용 중인 키를 지정하면 기존의 연결된 상태가 재정의됩니다. 주문 상태의 우선 순위에 따라 주문 수명 주기에서 주문이 결정됩니다. 이 경우 보류 상태의 우선 순위는 30이고 처리 상태의 우선 순위는 50입니다. 둘 사이에 상태를 배치하려면 우선 순위가 두 숫자 사이에 있어야 합니다(이 경우 40).
 
-```{note}
-이 예제 구현의 경우 임의의 정수가 키로 설정되고 40이 우선 순위로 설정되지만 코드 내에서 더 나은 가독성을 위해 변수를 사용할 수 있습니다. 예제 [here](https://gist.github.com/aswinrajeevofficial/5d09d76ae11a1dc78c7d1fc388ae0306#file-m4v7schedulingcommerceorderstatus-java) 을 참조하십시오.
-```
+!!! note
+    이 예제 구현의 경우 임의의 정수가 키로 설정되고 40이 우선 순위로 설정되지만 코드 내에서 더 나은 가독성을 위해 변수를 사용할 수 있습니다. 예제 [here](https://gist.github.com/aswinrajeevofficial/5d09d76ae11a1dc78c7d1fc388ae0306#file-m4v7schedulingcommerceorderstatus-java) 을 참조하십시오.
 
 ### CommerceOrderStatus 인터페이스 검토
 
@@ -145,18 +142,18 @@ public boolean isComplete(CommerceOrder commerceOrder);
 
 주문 상태 구현은 예약 상태에 대한 메서드 구현과 처리 상태에 있는 기존 비즈니스 논리 조정으로 구성됩니다.
 
-* [`isTransitionCriteriaMet` 메서드 구현](#implement-the-istransitioncriteriamet-method)
-* [`doTransition` 메서드 구현](#implement-the-dotransition-method)
-* [`isComplete` 메소드 구현](#implement-the-iscomplete-method)
-* [기존 **처리** 상태 재정의](#override-the-existing-processing-status)
-* [처리 상태 비즈니스 로직 조정](#tweak-the-processing-status-business-logic)
+- [`isTransitionCriteriaMet` 메서드 구현](#implement-the-istransitioncriteriamet-method)
+- [`doTransition` 메서드 구현](#implement-the-dotransition-method)
+- [`isComplete` 메소드 구현](#implement-the-iscomplete-method)
+- [기존 **처리** 상태 재정의](#override-the-existing-processing-status)
+- [처리 상태 비즈니스 로직 조정](#tweak-the-processing-status-business-logic)
 
 #### isTransitionCriteriaMet 메소드 구현
 
 ```{literalinclude} ./implementing-a-custom-order-status/resources/liferay-m4v7.zip/m4v7-impl/src/main/java/com/acme/m4v7/internal/commerce/order/status/M4V7SchedulingCommerceOrderStatus.java
     :dedent: 1
     :language: java
-    :lines: 64-75
+    :lines: 65-76
 ```
 
 주문이 **예약** 주문 상태로 전환되려면 **보류** 상태여야 합니다. 이것은 `commerceOrder` 개체에서 `getOrderStatus()` 메서드를 사용하여 확인합니다. 이 메서드는 주문이 보류 중이면 `참` 을 반환하고 그렇지 않으면 `거짓` 을 반환합니다.
@@ -166,7 +163,7 @@ public boolean isComplete(CommerceOrder commerceOrder);
 ```{literalinclude} ./implementing-a-custom-order-status/resources/liferay-m4v7.zip/m4v7-impl/src/main/java/com/acme/m4v7/internal/commerce/order/status/M4V7SchedulingCommerceOrderStatus.java
     :dedent: 1
     :language: java
-    :lines: 26-33
+    :lines: 26-34
 ```
 
 주문에 대한 전환 기준이 충족되면 고유 키를 사용하여 주문 상태를 **Scheduling** 로 설정합니다. 그런 다음 `_commerceOrderService`에서 `updateCommerceOrder()` 메서드를 호출하고 `commerceOrder` 개체를 전달하여 새 상태를 업데이트합니다.
@@ -176,7 +173,7 @@ public boolean isComplete(CommerceOrder commerceOrder);
 ```{literalinclude} ./implementing-a-custom-order-status/resources/liferay-m4v7.zip/m4v7-impl/src/main/java/com/acme/m4v7/internal/commerce/order/status/M4V7SchedulingCommerceOrderStatus.java
     :dedent: 1
     :language: java
-    :lines: 50-62
+    :lines: 51-63
 ```
 
 Scheduling 단계를 완료하려면 Custom Field를 **Confirmed** 로 설정해야 합니다. 이 사용자 정의 속성은 `m4v7Scheduling`키를 사용하여 `ExpandoBridge` 을 통해 검색됩니다. 드롭다운이므로 반환 값은 String 배열 안에 있으며 첫 번째 값입니다. 값이 **Confirmed** 이면 메서드는 `true`을 반환하고 배열이 비어 있으면 `false`를 반환합니다.
@@ -195,7 +192,7 @@ Scheduling 단계를 완료하려면 Custom Field를 **Confirmed** 로 설정해
 ```{literalinclude} ./implementing-a-custom-order-status/resources/liferay-m4v7.zip/m4v7-impl/src/main/java/com/acme/m4v7/internal/commerce/order/status/M4V7ProcessingCommerceOrderStatus.java
     :dedent: 1
     :language: java
-    :lines: 53-73
+    :lines: 54-74
 ```
 
 원래 처리 상태는 메서드에서 보류 상태를 확인하므로 새로 추가된 상태를 확인하려면 약간 조정해야 합니다. 이것은 새 상태의 고유 키를 사용하여 수행됩니다.
@@ -206,4 +203,4 @@ Scheduling 단계를 완료하려면 Custom Field를 **Confirmed** 로 설정해
 
 ## 관련 주제
 
-* [상거래 주문 엔진 개요](./commerce-order-engine-overview.md)
+- [상거래 주문 엔진 개요](./commerce-order-engine-overview.md)

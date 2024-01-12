@@ -33,9 +33,8 @@ Liferay Commerceは、ストアの様々なイベントトリガーに対して�
     ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
     ```
 
-    ```{note}
-    このコマンドは、デプロイされたjarをDockerコンテナの`/opt/liferay/osgi/modules`にコピーするのと同じです。
-    ```
+    !!! note
+        このコマンドは、デプロイされたjarをDockerコンテナの`/opt/liferay/osgi/modules`にコピーするのと同じです。
 
 1. Dockerコンテナコンソールでデプロイを確認します。
 
@@ -53,13 +52,12 @@ Liferay Commerceは、ストアの様々なイベントトリガーに対して�
     | g2f3-shipment-id-definition-term            | 出荷ID            |
     | g2f3-shipment-creator-email-definition-term | 出荷を作成したユーザーのメール |
 
-    ```{important}
-    Liferay DXP 7.4 U4以降、またはLiferay Portal 7.4 GA8以降の言語オーバーライド ツールで言語キーを追加することができます。 以前のバージョンでは、ビルドとデプロイの前に、 `/src/main/resources/content/` の下に `Language.properties` ファイルを追加し、キーを指定する必要があります。
-    ```
+    !!! important
+        Liferay DXP 7.4 U4以降、またはLiferay Portal 7.4 GA8以降の言語オーバーライド ツールで言語キーを追加することができます。 以前のバージョンでは、ビルドとデプロイの前に、 `/src/main/resources/content/` の下に `Language.properties` ファイルを追加し、キーを指定する必要があります。
 
 3. **グローバルメニュー**(![Applications Menu icon](../../images/icon-applications-menu.png)) を開き、 ［**コマース**］ &rarr; ［**チャネル**］ をクリックし、 ［**通知テンプレート**］ を選択します。
 
-4. **追加** ボタン (![Add icon](../../images/icon-add.png)) を使用して、新しいテンプレートを作成します。 
+4. **追加** ボタン (![Add icon](../../images/icon-add.png)) を使用して、新しいテンプレートを作成します。
 
     **名前:** 作成されたG2F3出荷テスト
 
@@ -92,15 +90,14 @@ Liferay Commerceは、ストアの様々なイベントトリガーに対して�
 
 7. 購入者としてログインし、ストアで新しく注文をします。
 
-8. 管理者としてログアウトしてログインし直し、 **グローバルメニュー** を開いて、 ［**コマース**］ &rarr; ［**注文**］ をクリックします。 
+8. 管理者としてログアウトしてログインし直し、 **グローバルメニュー** を開いて、 ［**コマース**］ &rarr; ［**注文**］ をクリックします。
 
 9. 注文を選択し、 ［**受注**］ をクリックします。 次に、 ［**出荷を作成**］ をクリックします。
 
 10. 受信通知を受信トレイで確認してください。
 
-```{important}
-[MockMock](https://github.com/tweakers/MockMock) などの偽のSMTPサーバを使って、ローカル開発環境下でこれらの通知をテストすることができます。 `Portal-ext.properties` ファイルに以下の行を追加します。`mail.send.blacklist=noreply@liferay.com, noreply@domain.invalid, test@domain.invalid`. `java -jar MockMock.jar`でjarを実行し、受信したメールを `localhost:8282` でチェックします。
-```
+!!! important
+    [MockMock](https://github.com/tweakers/MockMock) などの偽のSMTPサーバを使って、ローカル開発環境下でこれらの通知をテストすることができます。 `Portal-ext.properties` ファイルに以下の行を追加します。`mail.send.blacklist=noreply@liferay.com, noreply@domain.invalid, test@domain.invalid`. `java -jar MockMock.jar`でjarを実行し、受信したメールを `localhost:8282` でチェックします。
 
 ## カスタム通知タイプの仕組み
 
@@ -108,12 +105,12 @@ Liferay Commerceは、ストアの様々なイベントトリガーに対して�
 
 その後、`ModelListener`を`CommerceShipment`クラスに対して作成します。 次に、`CommerceDefinitionTermContributor`インターフェイスを確認します。 最後に、新しい通知のワイルドカードを解決するために、用語コントリビューターを実装します。
 
-* [OSGi登録用にクラスに注釈を付ける](#annotate-the-class-for-osgi-registration)
-* [CommerceNotificationTypeインターフェースの確認](#review-the-commercenotificationtype-interface)
-* [通知タイプの完了](#complete-the-notification-type)
-* [CommerceShipmentのModelListenerを作成します。](#create-a-modellistener-for-commerceshipment)
-* [CommerceDefinitionTermContributorインターフェースの確認](#review-the-commercedefinitiontermcontributor-interface)
-* [用語コントリビューターを完成する](#complete-the-term-contributors)
+- [OSGi登録用にクラスに注釈を付ける](#annotate-the-class-for-osgi-registration)
+- [CommerceNotificationTypeインターフェースの確認](#review-the-commercenotificationtype-interface)
+- [通知タイプの完了](#complete-the-notification-type)
+- [CommerceShipmentのModelListenerを作成します。](#create-a-modellistener-for-commerceshipment)
+- [CommerceDefinitionTermContributorインターフェースの確認](#review-the-commercedefinitiontermcontributor-interface)
+- [用語コントリビューターを完成する](#complete-the-term-contributors)
 
 ### OSGi登録用にクラスに注釈を付ける
 
@@ -197,7 +194,7 @@ public List<String> getTerms();
 ```{literalinclude} ./implementing-a-custom-notification-type/resources/liferay-g2f3.zip/g2f3-impl/src/main/java/com/acme/g2f3/internal/commerce/order/term/contributor/G2F3CommerceShipmentCommerceDefinitionTermContributor.java
     :dedent: 1
     :language: java
-    :lines: 33-76
+    :lines: 32-71
 ```
 
 ワイルドカードを解決する前に、オブジェクトがヌルであるか、または`CommerceShipment`型であるかを確認するためのチェックがあります。 そして、その用語にワイルドカードが含まれている場合、ワイルドカードは出荷者の名前、配送先住所、または出荷IDに置き換えられます。 出荷者の名前には、出荷のアカウントの名前が返されます。 配送先住所は、住所(丁目、番地など)、市町村、郵便番号を連結した文字列として返されます。 出荷IDは、出荷オブジェクトから直接返されます。
@@ -207,7 +204,7 @@ public List<String> getTerms();
 ```{literalinclude} ./implementing-a-custom-notification-type/resources/liferay-g2f3.zip/g2f3-impl/src/main/java/com/acme/g2f3/internal/commerce/order/term/contributor/G2F3CommerceShipmentRecipientCommerceDefinitionTermContributor.java
     :dedent: 1
     :language: java
-    :lines: 32-63
+    :lines: 31-58
 ```
 
 ワイルドカードを解決する前に、オブジェクトがヌルであるか、または`CommerceShipment`型であるかを確認するためのチェックがあります。 そして、その用語にワイルドカードが含まれている場合、ワイルドカードはアカウントのユーザーIDに置き換えられます。 通知が送信されるとき、このIDを使ってユーザーのメールを探します。
@@ -219,7 +216,7 @@ public List<String> getTerms();
 ```{literalinclude} ./implementing-a-custom-notification-type/resources/liferay-g2f3.zip/g2f3-impl/src/main/java/com/acme/g2f3/internal/commerce/order/term/contributor/G2F3CommerceShipmentCommerceDefinitionTermContributor.java
     :dedent: 1
     :language: java
-    :lines: 78-82
+    :lines: 73-76
 ```
 
 このメソッドは、通知タイプで利用可能なすべての用語コントリビュータを返します。 言語キーを使ってこれを行うか、UIに用語を表示するハードコードされた文字列を直接返すことができます。
@@ -227,7 +224,7 @@ public List<String> getTerms();
 ```{literalinclude} ./implementing-a-custom-notification-type/resources/liferay-g2f3.zip/g2f3-impl/src/main/java/com/acme/g2f3/internal/commerce/order/term/contributor/G2F3CommerceShipmentCommerceDefinitionTermContributor.java
     :dedent: 1
     :language: java
-    :lines: 84-87
+    :lines: 78-81
 ```
 
 ## まとめ

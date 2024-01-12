@@ -20,22 +20,22 @@ Liferayの実行後、
    ```
 
 1. 注文の作成には、アカウントID、チャネルID、使用通貨の [ISO 4217通貨コード](https://en.wikipedia.org/wiki/ISO_4217) （例：USD）の3つのパラメータが必要です。
-   
+
    アカウントIDを取得するには、 **グローバルメニュー**(![Applications Menu icon](../../images/icon-applications-menu.png)) を開き、 **コントロールパネル** &rarr; **アカウント** にアクセスします。 アカウントを探し、そのIDをコピーする。 または、アカウントを選択し、 **アカウントID** をコピーします。
-   
+
    ![アカウントIDをコピーする。](./order-api-basics/images/01.png)
-   
+
    チャンネル ID を取得するには、 **Global Menu**(![Applications Menu icon](../../images/icon-applications-menu.png)) を開き、 **Commerce** &rarr; **Channels** を選択します。 注文を追加するチャンネルを選択し、そのIDをコピーします。
-   
+
    ![チャンネルIDをコピーする。](./order-api-basics/images/02.png)
-   
-   1 cURL スクリプトを使用して、チャネルに新しい注文を追加します。 コマンドラインで、`curl`フォルダに移動します。 `Order_POST_ToChannel.sh` スクリプトを、アカウントID、チャンネルID、通貨コードに適切な値を指定して実行します。 
+
+   1 cURL スクリプトを使用して、チャネルに新しい注文を追加します。 コマンドラインで、`curl`フォルダに移動します。 `Order_POST_ToChannel.sh` スクリプトを、アカウントID、チャンネルID、通貨コードに適切な値を指定して実行します。
 
    ```bash
    ./Order_POST_ToChannel.sh 1234 5678 USD
    ```
 
-JSONレスポンスは、そのアカウントとチャネルに新しい注文が追加されたことを示します。 
+JSONレスポンスは、そのアカウントとチャネルに新しい注文が追加されたことを示します。
 
    ```bash
    {
@@ -148,16 +148,16 @@ JSONレスポンスは、そのアカウントとチャネルに新しい注文�
    ```
 
 1 **Global Menu**(![Applications Menu icon](../../images/icon-applications-menu.png)) &rarr; **Commerce** &rarr; **Orders** に移動します。 新しいオーダーが表示されます。
-  
+
   ![新規注文が追加されたことを確認する。](./order-api-basics/images/03.png)
 
-1 または、Javaクライアントを使用してRESTサービスを呼び出します。 `java` フォルダに移動し、ソースファイルをコンパイルします。 
+1 または、Javaクライアントを使用してRESTサービスを呼び出します。 `java` フォルダに移動し、ソースファイルをコンパイルします。
 
    ```bash
    javac -classpath .:* *.java
    ```
 
-1 `Order_POST_ToChannel` クラスを実行し、 `accountId`, `channelId`, `currenyCode` を適切な値に置き換えてください。 
+1 `Order_POST_ToChannel` クラスを実行し、 `accountId`, `channelId`, `currenyCode` を適切な値に置き換えてください。
 
    ```bash
    java -classpath .:* -DaccountId=1234 -DchannelId=5678 -DcurrencyCode=Foo Order_POST_ToChannel
@@ -181,9 +181,8 @@ JSONレスポンスは、そのアカウントとチャネルに新しい注文�
 | `-d "{\"accountId\": ${1}, \"channelId\": ${2}, \"currencyCode\": \"${3}\"}"` | 投稿するデータを入力します。                     |
 | `-u "test@liferay.com:learn"`                                                         | 基本認証の認証情報を入力します。                   |
 
-```{note}
-ここでは、デモのために基本的な認証を使用しています。 本番環境では、 [OAuth 2.0を使用する](https://learn.liferay.com/dxp/latest/ja/headless-delivery/using-oauth2.html) 経由でユーザーを認証する必要があります。 OAuth2を使ったReactアプリケーションのサンプルは、 [OAuth2によるユーザーの認証](https://learn.liferay.com/dxp/latest/ja/headless-delivery/using-oauth2/using-oauth2-to-authorize-users.html) をご覧ください。
-```
+!!! note
+   ここでは、デモのために基本的な認証を使用しています。 本番環境では、 [OAuth 2.0を使用する](https://learn.liferay.com/dxp/latest/ja/headless-delivery/using-oauth2.html) 経由でユーザーを認証する必要があります。 OAuth2を使ったReactアプリケーションのサンプルは、 [OAuth2によるユーザーの認証](https://learn.liferay.com/dxp/latest/ja/headless-delivery/using-oauth2/using-oauth2-to-authorize-users.html) をご覧ください。
 
 他のcURLコマンドも同様のJSON引数を使用します。
 
@@ -208,15 +207,13 @@ JSONレスポンスは、そのアカウントとチャネルに新しい注文�
 
 プロジェクトには、依存関係として`com.liferay.headless.commerce.admin.order.client.jar`ファイルが含まれていることに注意してください。 すべての REST アプリケーションのクライアント JAR の依存情報は、インストール先の API Explorer で `/o/api` (例: <http://localhost:8080/o/api>) に見つけることができます。
 
-```{note}
-`main`メソッドのコメントでは、クラスの実行を実演しています。
-```
+!!! note
+   `main`メソッドのコメントでは、クラスの実行を実演しています。
 
 他の例のJavaクラスは、異なる `OrderResource` メソッドを呼び出します。
 
-```{important}
-サービスの詳細は [OrderResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/headless-commerce/headless-commerce-admin-order-client/src/main/java/com/liferay/headless/commerce/admin/order/client/resource/v1_0/OrderResource.java) を参照ください。
-```
+!!! important
+   サービスの詳細は [OrderResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/headless-commerce/headless-commerce-admin-order-client/src/main/java/com/liferay/headless/commerce/admin/order/client/resource/v1_0/OrderResource.java) を参照ください。
 
 以下は、cURL と Java を使用して、他の `注文` REST サービスを呼び出す例です。
 
@@ -260,13 +257,13 @@ java -classpath .:* Orders_GET_FromInstance
 
 このAPIから返される注文は、フィルタリング、ページ分割、検索、ソートすることができます。 詳しくは、 [`getOrdersPage`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/headless/headless-commerce/headless-commerce-admin-order-client/src/main/java/com/liferay/headless/commerce/admin/order/client/resource/v1_0/OrderResource.java#L43-L46) メソッドをご覧ください。 次の `順序` フィールドを使用して、結果をフィルタリング、検索、並べ替えします。
 
-* アカウントID
-* channelId
-* 注文状況
-* オーダーId
-* createDate
-* modifiedDate
-* 注文日
+- アカウントID
+- channelId
+- 注文状況
+- オーダーId
+- createDate
+- modifiedDate
+- 注文日
 
 | フィルタークエリ                                        | 説明                                                                                          |
 |:----------------------------------------------- |:------------------------------------------------------------------------------------------- |
@@ -303,9 +300,8 @@ java -classpath .:* Orders_GET_FromInstance
 
 cURL と Java `get` コマンドで特定のオーダーを取得します。 `1234` を注文のIDに置き換えてください。
 
-```{tip}
-`Orders_GET_FromInstance.[java|sh]` を使用して、すべてのオーダーのリストを取得し、特に必要なオーダーの `id` をメモしてください。
-```
+!!! tip
+   `Orders_GET_FromInstance.[java|sh]` を使用して、すべてのオーダーのリストを取得し、特に必要なオーダーの `id` をメモしてください。
 
 ### Order_GET_ById.sh
 
@@ -370,7 +366,7 @@ java -classpath .:* -DorderId=1234 Order_PATCH_ById
 ```{literalinclude} ./order-api-basics/resources/liferay-w6c8.zip/java/Order_PATCH_ById.java
    :dedent: 1
    :language: java
-   :lines: 11-29
+   :lines: 9-23
 ```
 
 ## 注文を削除する

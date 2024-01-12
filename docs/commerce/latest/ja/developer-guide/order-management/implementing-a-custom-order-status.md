@@ -46,9 +46,8 @@ Order Engineは、各注文ステータスに対してチェックを実行し�
     ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
     ```
 
-    ```{note}
-    このコマンドは、デプロイされたjarをDockerコンテナの`/opt/liferay/osgi/modules`にコピーするのと同じです。
-    ```
+    !!! note
+        このコマンドは、デプロイされたjarをDockerコンテナの`/opt/liferay/osgi/modules`にコピーするのと同じです。
 
 1. Dockerコンテナコンソールでデプロイを確認します。
 
@@ -78,13 +77,12 @@ Order Engineは、各注文ステータスに対してチェックを実行し�
 
 実装例は3つのステップで実装されます。 最初に、OSGi登録用にクラスに注釈を付ける必要があります。 次に、 [`CommerceOrderStatus`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/order/status/CommerceOrderStatus.java) インターフェイスを確認します。 最後に、カスタムの`CommerceOrderStatus`の実装を終了します。
 
-* [OSGi登録用にクラスに注釈を付ける](#annotate-the-class-for-osgi-registration)
-* [`CommerceOrderStatus`インターフェイスを確認する](#review-the-commerceorderstatus-interface)
-* [注文ステータスを完了する](#complete-the-order-status)
+- [OSGi登録用にクラスに注釈を付ける](#annotate-the-class-for-osgi-registration)
+- [`CommerceOrderStatus`インターフェイスを確認する](#review-the-commerceorderstatus-interface)
+- [注文ステータスを完了する](#complete-the-order-status)
 
-```{important}
-注文ライフサイクルで新しいステータスを配置する段階に応じて、正しい注文処理のために次の段階を微調整する必要があります。 この例では、新しいステータスをPendingステータスとProcessingステータスの間に配置するため、既存のProcessingステータスをオーバーライドして、ロジックで新しいステータスをチェックする必要があります。 
-```
+!!! important
+    注文ライフサイクルで新しいステータスを配置する段階に応じて、正しい注文処理のために次の段階を微調整する必要があります。 この例では、新しいステータスをPendingステータスとProcessingステータスの間に配置するため、既存のProcessingステータスをオーバーライドして、ロジックで新しいステータスをチェックする必要があります。
 
 ### OSGi登録用にクラスに注釈を付ける
 
@@ -95,9 +93,8 @@ Order Engineは、各注文ステータスに対してチェックを実行し�
 
 Liferay Commerceが注文ステータスレジストリ内の他のステータスと新しいステータスを区別できるように、注文ステータスに個別のキーを提供することが重要です。 すでに使用されているキーを指定すると、既存の関連付けられているステータスが上書きされます。 注文ステータスの優先度によって、注文ライフサイクルでの注文が決まります。 この場合、Pendingステータスの優先度は30で、Processingステータスの優先度は50です。 2つの間にステータスを配置するには、優先度がこれら2つの数値の間にある必要があります（この場合は40）。
 
-```{note}
-この実装例では、ランダムな整数がキーとして設定され、40が優先度として設定されていますが、コード内で読みやすくするために変数を使用できます。  [here](https://gist.github.com/aswinrajeevofficial/5d09d76ae11a1dc78c7d1fc388ae0306#file-m4v7schedulingcommerceorderstatus-java) の例を参照してください。
-```
+!!! note
+    この実装例では、ランダムな整数がキーとして設定され、40が優先度として設定されていますが、コード内で読みやすくするために変数を使用できます。  [here](https://gist.github.com/aswinrajeevofficial/5d09d76ae11a1dc78c7d1fc388ae0306#file-m4v7schedulingcommerceorderstatus-java) の例を参照してください。
 
 ### CommerceOrderStatusインターフェイスを確認する
 
@@ -145,18 +142,18 @@ public boolean isComplete(CommerceOrder commerceOrder);
 
 注文ステータスの実装は、Schedulingステータスのメソッドの実装と、Processingステータスに存在する既存のビジネスロジックの微調整で構成されます。
 
-* [`isTransitionCriteriaMet`メソッドを実装する](#implement-the-istransitioncriteriamet-method)
-* [`doTransition`メソッドを実装する](#implement-the-dotransition-method)
-* [`isComplete`メソッドを実装する](#implement-the-iscomplete-method)
-* [既存の **Processing** ステータスをオーバーライドする](#override-the-existing-processing-status)
-* [Processingステータスのビジネスロジックを微調整する](#tweak-the-processing-status-business-logic)
+- [`isTransitionCriteriaMet`メソッドを実装する](#implement-the-istransitioncriteriamet-method)
+- [`doTransition`メソッドを実装する](#implement-the-dotransition-method)
+- [`isComplete`メソッドを実装する](#implement-the-iscomplete-method)
+- [既存の **Processing** ステータスをオーバーライドする](#override-the-existing-processing-status)
+- [Processingステータスのビジネスロジックを微調整する](#tweak-the-processing-status-business-logic)
 
 #### isTransitionCriteriaMetメソッドを実装する
 
 ```{literalinclude} ./implementing-a-custom-order-status/resources/liferay-m4v7.zip/m4v7-impl/src/main/java/com/acme/m4v7/internal/commerce/order/status/M4V7SchedulingCommerceOrderStatus.java
     :dedent: 1
     :language: java
-    :lines: 64-75
+    :lines: 65-76
 ```
 
 注文を **Scheduling** 注文ステータスに移行するには、注文が **Pending** ステータスである必要があります。 これは、`commerceOrder`オブジェクトの`getOrderStatus()`メソッドを使用してチェックされます。  このメソッドは、注文が保留中の場合は`true`を返し、それ以外の場合は`false`を返します。
@@ -166,7 +163,7 @@ public boolean isComplete(CommerceOrder commerceOrder);
 ```{literalinclude} ./implementing-a-custom-order-status/resources/liferay-m4v7.zip/m4v7-impl/src/main/java/com/acme/m4v7/internal/commerce/order/status/M4V7SchedulingCommerceOrderStatus.java
     :dedent: 1
     :language: java
-    :lines: 26-33
+    :lines: 26-34
 ```
 
 注文の移行基準が満たされると、一意のキーを使用して注文ステータスが **Scheduling** として設定されます。 次に、`_commerceOrderService`から`updateCommerceOrder()`メソッドを呼び出し、`commerceOrder`オブジェクトを渡して新しいステータスを更新します。
@@ -176,7 +173,7 @@ public boolean isComplete(CommerceOrder commerceOrder);
 ```{literalinclude} ./implementing-a-custom-order-status/resources/liferay-m4v7.zip/m4v7-impl/src/main/java/com/acme/m4v7/internal/commerce/order/status/M4V7SchedulingCommerceOrderStatus.java
     :dedent: 1
     :language: java
-    :lines: 50-62
+    :lines: 51-63
 ```
 
 Schedulingステージを完了するには、カスタムフィールドを ［**Confirmed**］ に設定する必要があります。 このカスタム属性は、キー`m4v7Scheduling`を使用して`ExpandoBridge`を介して取得されます。 これはドロップダウンであるため、戻り値はString配列内にあり、最初の値です。 値が ［**Confirmed**］ の場合、メソッドは`true`を返し、配列が空の場合は`false`を返します。
@@ -195,7 +192,7 @@ Schedulingステージを完了するには、カスタムフィールドを ［
 ```{literalinclude} ./implementing-a-custom-order-status/resources/liferay-m4v7.zip/m4v7-impl/src/main/java/com/acme/m4v7/internal/commerce/order/status/M4V7ProcessingCommerceOrderStatus.java
     :dedent: 1
     :language: java
-    :lines: 53-73
+    :lines: 54-74
 ```
 
 元のProcessingステータスはそのメソッドでPendingステータスをチェックするため、新しく追加されたステータスをチェックするには、それらを少し微調整する必要があります。 これは、新しいステータスの一意のキーを使用して行われます。
@@ -206,4 +203,4 @@ Schedulingステージを完了するには、カスタムフィールドを ［
 
 ## 関連トピック
 
-* [commerce注文エンジンの概要 (近日公開！)](./commerce-order-engine-overview.md)
+- [commerce注文エンジンの概要 (近日公開！)](./commerce-order-engine-overview.md)

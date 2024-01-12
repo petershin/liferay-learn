@@ -128,9 +128,8 @@
 | `-d "{\"active\": true, \"catalogId\": \"${1}\", \"name\": {\"en_US\": \"Foo\"}, \"productType\": \"simple\"}"` | 投稿するデータ                         |
 | `-u "test@liferay.com:learn"`                                                                                                   | 基本的な認証情報                        |
 
-```{note}
-ここでは、デモのためにベーシック認証を使用しています。 本番環境では、 [OAuth 2.0を使用する](https://learn.liferay.com/dxp/latest/ja/headless-delivery/using-oauth2.html) 経由でユーザーを認可する必要があります。 OAuth2を活用したReactアプリケーションのサンプルは、 [OAuth2によるユーザーの認証](https://learn.liferay.com/dxp/latest/ja/headless-delivery/using-oauth2/using-oauth2-to-authorize-users.html) をご覧ください。
-```
+!!! note
+   ここでは、デモのためにベーシック認証を使用しています。 本番環境では、 [OAuth 2.0を使用する](https://learn.liferay.com/dxp/latest/ja/headless-delivery/using-oauth2.html) 経由でユーザーを認可する必要があります。 OAuth2を活用したReactアプリケーションのサンプルは、 [OAuth2によるユーザーの認証](https://learn.liferay.com/dxp/latest/ja/headless-delivery/using-oauth2/using-oauth2-to-authorize-users.html) をご覧ください。
 
 他のcURLコマンドも同様のJSON引数を使用します。
 
@@ -154,15 +153,13 @@
 
 プロジェクトには、依存関係として`com.liferay.headless.commerce.admin.catalog.client.jar`ファイルが含まれていることに注意してください。 すべてのRESTアプリケーションのクライアントJAR依存関係情報は、`/o/api`でインストール先のAPIエクスプローラーで確認できます。
 
-```{note}
-`main`メソッドのコメントでは、クラスの実行を実演しています。
-```
+!!! note
+   `main`メソッドのコメントでは、クラスの実行を実演しています。
 
 他の例のJavaクラスは、これと似ていますが、異なる `ProductResource` メソッドを呼び出します。
 
-```{important}
-サービスの詳細は [ProductResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/headless-commerce/headless-commerce-admin-catalog-client/src/main/java/com/liferay/headless/commerce/admin/catalog/client/resource/v1_0/ProductResource.java) を参照ください。
-```
+!!! important
+   サービスの詳細は [ProductResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/headless-commerce/headless-commerce-admin-catalog-client/src/main/java/com/liferay/headless/commerce/admin/catalog/client/resource/v1_0/ProductResource.java) を参照ください。
 
 以下は、cURL と Java を使用して、他の `Product` REST サービスを呼び出す例です。
 
@@ -197,22 +194,22 @@ java -classpath .:* Products_GET_FromInstance
 ```{literalinclude} ./product-api-basics/resources/liferay-z8v2.zip/java/Products_GET_FromInstance.java
    :dedent: 1
    :language: java
-   :lines: 11-21
+   :lines: 11-22
 ```
 
 Liferay インスタンスの `Product` オブジェクトが JSON でリストアップされます。
 
 このAPIでは、商品のフィルタリング、ページ送り、検索、ソートを行うためのパラメータも受け付ける。 詳しくは、 [`getProductsPage`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/commerce/headless/headless-commerce/headless-commerce-admin-catalog-client/src/main/java/com/liferay/headless/commerce/admin/catalog/client/resource/v1_0/ProductResource.java#L43-L46) メソッドをご覧ください。 クエリでは、以下のProductフィールドを使用して、結果のフィルタリング、検索、並べ替えを行うことができます。
 
-* categoryIds
-* channelId
-* statusCode
-* customFields
-* createDate
-* modifiedDate
-* catalogId
-* name
-* productType
+- categoryIds
+- channelId
+- statusCode
+- customFields
+- createDate
+- modifiedDate
+- catalogId
+- name
+- productType
 
 | フィルタークエリ                            | 説明                             |
 |:----------------------------------- |:------------------------------ |

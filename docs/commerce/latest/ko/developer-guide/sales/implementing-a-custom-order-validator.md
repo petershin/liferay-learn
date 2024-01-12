@@ -6,9 +6,9 @@
 
 주문 유효성 검사기에는 장바구니에 제품을 추가하고 새로운 결제 단계를 진행하기 위한 유효성 검사 논리가 있습니다. 세 부분이 있습니다:
 
-1. [장바구니에 제품을 추가하기 위한 검증 논리입니다.](#validation-logic-for-adding-a-product-to-cart) 
-1. [결제 진행을 위한 검증 로직.](#validation-logic-for-proceeding-to-checkout) 
-1. [`Language.properties`에 언어 키가 추가되었습니다.](#language-keys-added-to-languageproperties) 
+1. [장바구니에 제품을 추가하기 위한 검증 논리입니다.](#validation-logic-for-adding-a-product-to-cart)
+1. [결제 진행을 위한 검증 로직.](#validation-logic-for-proceeding-to-checkout)
+1. [`Language.properties`에 언어 키가 추가되었습니다.](#language-keys-added-to-languageproperties)
 
 두 개의 `validate` 메소드는 주문 유효성 검사기에 대한 사용자 정의 유효성 검사 논리를 정의하는 곳입니다. 이 예에서는 특정 가격을 초과하는 항목이 10개 이상인 주문을 거부하는 논리를 추가합니다.
 
@@ -31,13 +31,13 @@
 
 1. 예제를 빌드하고 배포합니다.
 
-   ```bash
-   ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
-   ```
+    ```bash
+    ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
+    ```
 
-   ```{note}
-   이 명령은 배포된 jar를 Docker 컨테이너의 `/opt/liferay/osgi/modules`에 복사하는 것과 동일합니다.
-   ```
+    !!! note
+        이 명령은 배포된 jar를 Docker 컨테이너의 `/opt/liferay/osgi/modules`에 복사하는 것과 동일합니다.
+
 1. Docker 컨테이너 콘솔에서 배포를 확인합니다.
 
    ```bash
@@ -57,8 +57,8 @@ Order Validator 생성은 세 가지 주요 단계로 구성됩니다. 먼저 OS
 ## OSGi 등록을 위해 클래스에 주석 달기
 
 ```{literalinclude} ./implementing-a-custom-order-validator/resources/liferay-n9b2.zip/n9b2-impl/src/main/java/com/acme/n9b2/internal/commerce/order/N9B2CommerceOrderValidator.java
-   :language: java
-   :lines: 19-26
+    :language: java
+    :lines: 20-26
 ```
 
 Liferay가 [주문 검증인 레지스트리](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-service/src/main/java/com/liferay/commerce/internal/order/CommerceOrderValidatorRegistryImpl.java) 에서 새로운 주문 검증인을 다른 주문 검증인과 구별할 수 있도록 주문 검증인에 대한 고유 키를 제공하는 것이 중요합니다. 이미 사용 중인 키를 재사용하면 기존에 연결된 유효성 검사기가 재정의됩니다.
@@ -90,9 +90,9 @@ public CommerceOrderValidatorResult validate(Locale locale, CommerceOrderItem co
 ### 장바구니에 제품을 추가하기 위한 검증 로직
 
 ```{literalinclude} ./implementing-a-custom-order-validator/resources/liferay-n9b2.zip/n9b2-impl/src/main/java/com/acme/n9b2/internal/commerce/order/N9B2CommerceOrderValidator.java
-   :dedent: 1
-   :language: java
-   :lines: 33-60
+    :dedent: 1
+    :language: java
+    :lines: 34-61
 ```
 
 ```java
@@ -103,16 +103,15 @@ private static final int _MAX_ITEM_QUANTITY = 10;
 
 예제의 주요 검증에서는 가격(`BigDecimal`로 저장됨)이 $100를 초과하고 수량이 10보다 큰지 확인합니다. 이 가격 정보는 고객 주문에 대한 정보가 포함된 'CPInstance'에서 확인할 수 있습니다. `CPInstance`와 함께 사용할 수 있는 더 많은 메서드를 찾으려면 [CPInstance](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-product-api/src/main/java/com/liferay/commerce/product/model/CPInstance.java) 및 [CPInstanceModel](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-product-api/src/main/java/com/liferay/commerce/product/model/CPInstanceModel.java) 을 참조하세요.
 
-```{note}
-기본 유효성 검사에 대한 유효성 검사가 실패한 이유를 설명하는 현지화된 메시지를 포함하는 것이 가장 좋습니다.
-```
+!!! note
+    기본 유효성 검사에 대한 유효성 검사가 실패한 이유를 설명하는 현지화된 메시지를 포함하는 것이 가장 좋습니다.
 
 ### 결제 진행을 위한 검증 로직
 
 ```{literalinclude} ./implementing-a-custom-order-validator/resources/liferay-n9b2.zip/n9b2-impl/src/main/java/com/acme/n9b2/internal/commerce/order/N9B2CommerceOrderValidator.java
-   :dedent: 1
-   :language: java
-   :lines: 62-84
+    :dedent: 1
+    :language: java
+    :lines: 62-84
 ```
 
 고객 장바구니에 있는 항목에 대해 호출되므로 이 메서드에 동일한 유효성 검사 논리를 추가합니다. 여기서 가장 큰 차이점은 `CommerceOrderItem` 개체에서 정보를 얻는다는 것입니다. `CommerceOrderItem`과 함께 사용할 수 있는 더 많은 방법을 찾으려면 [CommerceOrderItem](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/model/CommerceOrderItem.java) 및 [CommerceOrderItemModel](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/model/CommerceOrderItemModel.java) 을 참조하세요.
@@ -142,5 +141,5 @@ this-expensive-item-has-a-maximum-quantity-of-x=This expensive item has a maximu
 
 ## 관련 주제
 
-* [간단한 제품 만들기](../../product-management/creating-and-managing-products/product-types/creating-a-simple-product.md)
-* [애플리케이션 현지화](https://help.liferay.com/hc/ko/articles/360018168251-Localizing-Your-Application)
+- [간단한 제품 만들기](../../product-management/creating-and-managing-products/product-types/creating-a-simple-product.md)
+- [애플리케이션 현지화](https://help.liferay.com/hc/ko/articles/360018168251-Localizing-Your-Application)

@@ -152,7 +152,7 @@ _External Reference:_ See the Elasticsearch [Function Score Query](https://www.e
 
 Using a Function Score Query's Field Value Factor, boost results with longer content field data in the user's current language.
 
-The `context.language_id` parameter is used to get the `content_{context.language_id}_length_sortable` field's value, a numeric field. Using a function (the natural logarithm by default) with the numeric field value, a modification to the score of the document is calculated.
+The `${context.language_id}` parameter is used to get the `content_${context.language_id}_length_sortable` field's value, a numeric field. Using a function (the natural logarithm by default) with the numeric field value, a modification to the score of the document is calculated.
 
 ![Boost results with longer content.](./search-blueprints-elements-reference/images/08.png)
 

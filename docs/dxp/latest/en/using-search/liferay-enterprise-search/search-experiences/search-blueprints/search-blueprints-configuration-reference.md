@@ -58,8 +58,8 @@ To add a Highlight to a Blueprint,
    ```json
    {
       "fields": {
-         "content${context.language_id}": {},
-         "title${context.language_id}": {}
+         "content_${context.language_id}": {},
+         "title_${context.language_id}": {}
       },
       "fragment_size": 100,
       "number_of_fragments": 10,

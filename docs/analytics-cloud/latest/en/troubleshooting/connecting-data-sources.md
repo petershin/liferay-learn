@@ -100,6 +100,7 @@ When [Syncing Contacts](../getting-started/connecting-liferay-dxp-to-analytics-c
 
 Liferay DXP's batch engine is used for syncing users. Increase the batch size if syncing a very large number of users. In Liferay DXP, navigate to _Global Menu_ &rarr; _Instance Settings_ &rarr; _Batch Engine_. Set the _Export Batch Size_ and _Import Batch Size_ to `1000`.
 
+<<<<<<< HEAD
 ![Increase batch size in Liferay DXP.](./connecting-data-sources/images/03.png)
 
 ## Enabling Localized URLs for Site Pages

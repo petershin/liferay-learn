@@ -1,5 +1,11 @@
 ---
 uuid: 3afaa1ac-3e99-4730-9db8-a573f89594f7
+taxonomy-category-names:
+- Development and Tooling
+- Java Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Geomap Charts
 

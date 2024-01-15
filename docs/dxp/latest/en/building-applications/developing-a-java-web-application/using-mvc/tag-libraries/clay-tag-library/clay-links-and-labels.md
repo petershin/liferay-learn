@@ -1,5 +1,11 @@
 ---
 uuid: be0bd2e9-fb25-4210-b5a4-16563713ae7a
+taxonomy-category-names:
+- Development and Tooling
+- Java Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Clay Labels and Links
 

@@ -1,5 +1,11 @@
 ---
 uuid: 7a80a00f-a02e-4ab8-b33c-0e90452ddb4a
+taxonomy-category-names:
+- Development and Tooling
+- Java Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # PortletMVC4Spring Annotations
 

@@ -1,5 +1,11 @@
 ---
 uuid: 68a2bccb-1648-4004-a654-fb0b72b40c0b
+taxonomy-category-names:
+- Development and Tooling
+- Java Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Using Liferay Util Dynamic Include
 

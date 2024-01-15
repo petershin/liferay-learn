@@ -1,5 +1,11 @@
 ---
 uuid: 863eae7c-f289-40bd-938d-6bfd3047ee69
+taxonomy-category-names:
+- Development and Tooling
+- Java Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Liferay Faces Bridge
 

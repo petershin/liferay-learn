@@ -1,5 +1,11 @@
 ---
 uuid: c5777677-4c19-4a00-92fe-522f2c7be23a
+taxonomy-category-names:
+- Development and Tooling
+- Java Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Clay Dropdown Menus and Action Menus
 

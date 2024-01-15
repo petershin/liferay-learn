@@ -5,6 +5,12 @@ toc:
   - ./reference/liferay-faces-alloy.md
   - ./reference/liferay-faces-portal.md
 uuid: 627eb74a-e436-46dc-86d3-01bc5322c2eb
+taxonomy-category-names:
+- Development and Tooling
+- Java Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Reference
 

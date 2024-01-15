@@ -2,6 +2,12 @@
 toc:
   - ./using-spring/reference.md
 uuid: 19342ee0-03fb-4d17-8361-46468c828672
+taxonomy-category-names:
+- Development and Tooling
+- Java Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Using Spring
 

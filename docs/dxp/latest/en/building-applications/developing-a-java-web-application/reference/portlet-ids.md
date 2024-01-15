@@ -1,5 +1,11 @@
 ---
 uuid: 3e980d49-875d-4e8c-8339-e7545fa300ee
+taxonomy-category-names:
+- Development and Tooling
+- Java Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Portlet IDs
 

@@ -1,5 +1,11 @@
 ---
 uuid: 505e9719-a1db-4793-aad3-00031f72cd42
+taxonomy-category-names:
+- Development and Tooling
+- Java Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Scatter Charts
 

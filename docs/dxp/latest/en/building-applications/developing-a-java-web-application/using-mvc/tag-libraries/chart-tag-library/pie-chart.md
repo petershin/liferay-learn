@@ -1,5 +1,11 @@
 ---
 uuid: 185f9bf9-9727-478b-8429-c7cc145fb5c4
+taxonomy-category-names:
+- Development and Tooling
+- Java Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Pie Charts
 

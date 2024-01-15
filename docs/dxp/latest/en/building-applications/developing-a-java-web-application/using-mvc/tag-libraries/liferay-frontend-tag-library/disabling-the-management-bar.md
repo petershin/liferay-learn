@@ -1,5 +1,11 @@
 ---
 uuid: 0d9f3586-afcf-4f31-a85a-9382965f9405
+taxonomy-category-names:
+- Development and Tooling
+- Java Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Disabling All or Portions of the Management Bar
 

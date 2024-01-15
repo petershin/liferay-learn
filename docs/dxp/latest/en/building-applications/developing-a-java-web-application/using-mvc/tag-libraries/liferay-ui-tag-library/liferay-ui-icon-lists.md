@@ -1,5 +1,11 @@
 ---
 uuid: 19408d83-8bf3-49e0-80dd-473d93a50972
+taxonomy-category-names:
+- Development and Tooling
+- Java Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Liferay UI Icon Lists
 

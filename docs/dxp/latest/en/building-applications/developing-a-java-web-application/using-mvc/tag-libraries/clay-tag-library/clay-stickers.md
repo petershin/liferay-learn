@@ -1,5 +1,11 @@
 ---
 uuid: d66ecb33-bb56-4acd-bc05-465cbc8e4179
+taxonomy-category-names:
+- Development and Tooling
+- Java Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Clay Stickers
 

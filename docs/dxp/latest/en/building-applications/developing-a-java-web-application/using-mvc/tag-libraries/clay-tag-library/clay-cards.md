@@ -1,5 +1,11 @@
 ---
 uuid: 75a9490e-50eb-4876-a45c-db1f92219846
+taxonomy-category-names:
+- Development and Tooling
+- Java Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Clay Cards
 

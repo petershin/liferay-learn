@@ -1,5 +1,11 @@
 ---
 uuid: 9c9044f6-6452-4dc1-a9e5-78c82b054f1f
+taxonomy-category-names:
+- Development and Tooling
+- Java Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Clay Icons
 

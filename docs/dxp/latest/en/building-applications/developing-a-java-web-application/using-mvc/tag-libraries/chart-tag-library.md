@@ -13,6 +13,12 @@ toc:
   - ./chart-tag-library/step-chart.md
   - ./chart-tag-library/refreshing-charts-to-reflect-real-time-data.md
 uuid: efabd69b-b067-4234-8a01-64b2b48dbc3f
+taxonomy-category-names:
+- Development and Tooling
+- Java Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Chart Tag Library 
 

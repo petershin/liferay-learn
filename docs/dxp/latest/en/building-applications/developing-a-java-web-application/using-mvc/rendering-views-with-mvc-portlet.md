@@ -1,5 +1,11 @@
 ---
 uuid: 1cf70b36-f1d5-450f-a37a-501d5ea112a9
+taxonomy-category-names:
+- Development and Tooling
+- Java Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Rendering Views with MVC Portlet
 

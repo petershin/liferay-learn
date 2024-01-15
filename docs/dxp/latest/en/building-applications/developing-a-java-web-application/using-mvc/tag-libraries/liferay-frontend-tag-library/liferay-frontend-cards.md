@@ -1,5 +1,11 @@
 ---
 uuid: 56c3d63d-4412-4639-8966-7204940f65b5
+taxonomy-category-names:
+- Development and Tooling
+- Java Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Liferay Front-end Cards
 

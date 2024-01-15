@@ -1,5 +1,11 @@
 ---
 uuid: db19b696-e7eb-4139-b1dc-c0a6ec227508
+taxonomy-category-names:
+- Development and Tooling
+- Java Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Liferay Faces Portal
 

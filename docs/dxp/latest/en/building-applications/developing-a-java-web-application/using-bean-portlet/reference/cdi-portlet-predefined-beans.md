@@ -1,5 +1,11 @@
 ---
 uuid: 56490db7-0eaf-4c1d-8f77-793270e916e2
+taxonomy-category-names:
+- Development and Tooling
+- Java Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # CDI Portlet Predefined Beans
 

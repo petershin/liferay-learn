@@ -1,5 +1,11 @@
 ---
 uuid: ab6ec89f-7268-490d-8293-271ea453179d
+taxonomy-category-names:
+- Development and Tooling
+- Java Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # MVC Action Command
 

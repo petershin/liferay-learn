@@ -1,5 +1,11 @@
 ---
 uuid: 670a21c8-0d74-4320-be35-3f6b066dbfa5
+taxonomy-category-names:
+- Development and Tooling
+- Java Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Clay Form Elements
 

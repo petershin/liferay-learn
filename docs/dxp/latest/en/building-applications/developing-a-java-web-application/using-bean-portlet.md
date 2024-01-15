@@ -2,6 +2,12 @@
 toc:
   - ./using-bean-portlet/reference.md
 uuid: 6cec1865-dfc5-42fc-928b-8a21c6c3a69d
+taxonomy-category-names:
+- Development and Tooling
+- Java Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Using Bean Portlet
 

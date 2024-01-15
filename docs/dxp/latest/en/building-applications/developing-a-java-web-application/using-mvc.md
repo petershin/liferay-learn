@@ -11,6 +11,12 @@ toc:
   - ./using-mvc/sharing-localized-messages.md
   - ./using-mvc/tag-libraries.md
 uuid: b28851ff-575f-4169-832d-9a5154490a47
+taxonomy-category-names:
+- Development and Tooling
+- Java Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Using MVC
 

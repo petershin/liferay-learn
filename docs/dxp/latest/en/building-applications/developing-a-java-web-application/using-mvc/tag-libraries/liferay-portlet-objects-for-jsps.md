@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Development and Tooling
+- Java Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: a40a0ce9-6ae0-4caf-a30d-484d79bffccb
 ---
 # Liferay Portlet Objects For JSPs

@@ -1,5 +1,11 @@
 ---
 uuid: e6e8ec72-27f5-435f-b1b1-afcb8e7d5412
+taxonomy-category-names:
+- Development and Tooling
+- Java Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # MVC Resource Command
 

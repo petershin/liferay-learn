@@ -1,5 +1,11 @@
 ---
 uuid: 4e9635e0-da20-405e-bdd2-bac46e420006
+taxonomy-category-names:
+- Development and Tooling
+- Java Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Refreshing Charts to Reflect Real Time Data
 

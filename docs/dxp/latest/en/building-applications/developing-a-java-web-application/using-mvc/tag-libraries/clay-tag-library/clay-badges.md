@@ -1,5 +1,11 @@
 ---
 uuid: df175a66-7f33-40e4-9e81-ffe60649e0db
+taxonomy-category-names:
+- Development and Tooling
+- Java Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Clay Badges
 

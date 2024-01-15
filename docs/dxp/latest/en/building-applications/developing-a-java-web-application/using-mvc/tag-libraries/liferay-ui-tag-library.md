@@ -6,6 +6,12 @@ toc:
   - ./liferay-ui-tag-library/liferay-ui-tabs.md
   - ./liferay-ui-tag-library/liferay-ui-icon-help.md
 uuid: 5e3db580-1995-4ca9-9b00-f4f1cc103b49
+taxonomy-category-names:
+- Development and Tooling
+- Java Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Liferay UI Tag Library
 

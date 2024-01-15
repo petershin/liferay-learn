@@ -2,6 +2,12 @@
 toc:
   - ./alloy-ui-aui-tag-library/building-forms-with-aui-tags.md
 uuid: fedf30cd-6c18-41c6-b8e0-22c995933b7e
+taxonomy-category-names:
+- Development and Tooling
+- Java Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Alloy UI (AUI) Tag Library 
 

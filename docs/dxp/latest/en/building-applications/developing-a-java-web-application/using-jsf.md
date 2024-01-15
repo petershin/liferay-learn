@@ -2,6 +2,12 @@
 toc:
   - ./using-jsf/reference.md
 uuid: 25a38d54-4ab8-4d5c-a9fc-4dc5b07d88a8
+taxonomy-category-names:
+- Development and Tooling
+- Java Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Using JSF
 

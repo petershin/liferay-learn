@@ -1,5 +1,11 @@
 ---
 uuid: 012a0e1d-613e-4c2a-9412-572a69030d8e
+taxonomy-category-names:
+- Development and Tooling
+- Java Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Clay Buttons
 

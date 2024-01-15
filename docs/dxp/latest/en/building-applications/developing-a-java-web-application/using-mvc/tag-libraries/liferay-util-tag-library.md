@@ -11,6 +11,12 @@ toc:
   - ./liferay-util-tag-library/liferay-util-param.md
   - ./liferay-util-tag-library/liferay-util-whitespace-remover.md
 uuid: 01493007-d513-4971-914d-756c012e139e
+taxonomy-category-names:
+- Development and Tooling
+- Java Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Liferay Util Tag Library
 

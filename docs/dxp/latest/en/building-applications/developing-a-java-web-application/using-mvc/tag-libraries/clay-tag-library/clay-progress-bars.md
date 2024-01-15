@@ -1,5 +1,11 @@
 ---
 uuid: 055adb41-ee9d-4321-96e6-848c11f26e2f
+taxonomy-category-names:
+- Development and Tooling
+- Java Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Clay Progress Bars
 

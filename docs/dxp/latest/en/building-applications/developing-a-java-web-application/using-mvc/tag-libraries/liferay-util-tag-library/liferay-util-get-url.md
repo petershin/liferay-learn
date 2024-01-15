@@ -1,5 +1,11 @@
 ---
 uuid: 0a9fce93-544f-4ed2-b18f-28cc83f602df
+taxonomy-category-names:
+- Development and Tooling
+- Java Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Using Liferay Util Get URL
 

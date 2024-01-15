@@ -7,6 +7,12 @@ toc:
   - ./liferay-frontend-tag-library/including-actions-in-the-management-bar.md
   - ./liferay-frontend-tag-library/disabling-the-management-bar.md
 uuid: b077083c-6519-4399-9ba9-e770e28b0ce2
+taxonomy-category-names:
+- Development and Tooling
+- Java Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Liferay Frontend Tag Library
 

@@ -1,5 +1,11 @@
 ---
 uuid: 8a5e8c61-c8ea-487e-8915-76250452165d
+taxonomy-category-names:
+- Development and Tooling
+- Java Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Using Liferay Util Whitespace Remover
 

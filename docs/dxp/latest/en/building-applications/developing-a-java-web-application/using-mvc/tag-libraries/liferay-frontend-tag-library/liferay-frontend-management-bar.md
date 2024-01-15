@@ -1,5 +1,11 @@
 ---
 uuid: 6bba97de-2acf-4832-8ce6-d9762c669846
+taxonomy-category-names:
+- Development and Tooling
+- Java Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Liferay Front-end Management Bar
 

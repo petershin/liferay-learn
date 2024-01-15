@@ -1,5 +1,11 @@
 ---
 uuid: a972fb77-595a-41c9-a027-f6ac5b9708ff
+taxonomy-category-names:
+- Development and Tooling
+- Java Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Sharing Localized Messages
 

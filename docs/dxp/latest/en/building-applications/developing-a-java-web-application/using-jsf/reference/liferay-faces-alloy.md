@@ -1,5 +1,11 @@
 ---
 uuid: fab040c9-9f5b-4d50-993f-b796ecf72a20
+taxonomy-category-names:
+- Development and Tooling
+- Java Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Liferay Faces Alloy
 

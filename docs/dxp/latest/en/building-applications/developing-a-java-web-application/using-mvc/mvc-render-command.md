@@ -1,5 +1,11 @@
 ---
 uuid: db948885-2616-4756-8f8a-bdb6c4982f95
+taxonomy-category-names:
+- Development and Tooling
+- Java Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # MVC Render Command
 

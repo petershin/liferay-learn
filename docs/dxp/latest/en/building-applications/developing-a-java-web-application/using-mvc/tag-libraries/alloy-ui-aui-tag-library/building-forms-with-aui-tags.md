@@ -1,5 +1,11 @@
 ---
 uuid: 889296d9-b14d-4532-9394-9af402a4e7db
+taxonomy-category-names:
+- Development and Tooling
+- Java Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Building Forms with AUI Tags
 

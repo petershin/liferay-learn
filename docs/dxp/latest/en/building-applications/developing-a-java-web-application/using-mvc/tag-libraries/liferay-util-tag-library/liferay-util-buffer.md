@@ -1,5 +1,11 @@
 ---
 uuid: 7c2a9226-d83e-4727-bf52-72974c1645f9
+taxonomy-category-names:
+- Development and Tooling
+- Java Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Using Liferay Util Buffer
 

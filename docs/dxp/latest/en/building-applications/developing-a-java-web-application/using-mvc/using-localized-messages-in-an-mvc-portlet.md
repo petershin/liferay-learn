@@ -1,5 +1,11 @@
 ---
 uuid: 6988987b-e241-4f0f-9313-d188108b30a9
+taxonomy-category-names:
+- Development and Tooling
+- Java Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Using Localized Messages in an MVC Portlet
 

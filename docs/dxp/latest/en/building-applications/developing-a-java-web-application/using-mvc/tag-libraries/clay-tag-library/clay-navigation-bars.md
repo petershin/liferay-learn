@@ -1,5 +1,11 @@
 ---
 uuid: a12bf6d3-19e0-43bf-89af-f0aa614040be
+taxonomy-category-names:
+- Development and Tooling
+- Java Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Clay Navigation Bars
 

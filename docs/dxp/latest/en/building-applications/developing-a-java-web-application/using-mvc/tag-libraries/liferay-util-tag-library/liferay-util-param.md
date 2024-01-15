@@ -1,5 +1,11 @@
 ---
 uuid: ae040dc4-fc1c-4c4c-9a80-ca3d3b80828f
+taxonomy-category-names:
+- Development and Tooling
+- Java Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Using Liferay Util Param
 

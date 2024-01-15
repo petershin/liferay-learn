@@ -1,5 +1,11 @@
 ---
 uuid: ac9d4543-911c-416a-aebb-141bff48c560
+taxonomy-category-names:
+- Development and Tooling
+- Java Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Invoking Actions with MVC Portlet
 

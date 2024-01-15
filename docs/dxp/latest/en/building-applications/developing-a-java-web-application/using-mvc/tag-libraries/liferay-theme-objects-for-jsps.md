@@ -1,5 +1,11 @@
 ---
 uuid: e07529bb-90f1-4981-9d70-25f01c7257a5
+taxonomy-category-names:
+- Development and Tooling
+- Java Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Liferay Theme Objects For JSPs
 

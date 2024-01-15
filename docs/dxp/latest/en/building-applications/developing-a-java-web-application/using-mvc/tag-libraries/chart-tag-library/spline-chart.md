@@ -1,5 +1,11 @@
 ---
 uuid: 4a2a8986-19bd-436e-8109-5351037d1cae
+taxonomy-category-names:
+- Development and Tooling
+- Java Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Spline Charts
 

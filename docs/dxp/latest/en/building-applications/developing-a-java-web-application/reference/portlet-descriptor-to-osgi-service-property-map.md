@@ -1,5 +1,11 @@
 ---
 uuid: 7aa868e1-a76c-4582-a829-b320f433e5b8
+taxonomy-category-names:
+- Development and Tooling
+- Java Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Portlet Descriptor to OSGi Service Property Map
 

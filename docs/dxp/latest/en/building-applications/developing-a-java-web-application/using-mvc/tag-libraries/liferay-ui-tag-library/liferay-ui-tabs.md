@@ -1,5 +1,11 @@
 ---
 uuid: 28f0a880-33b1-48fe-bb1c-044574fa513e
+taxonomy-category-names:
+- Development and Tooling
+- Java Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Liferay UI Tabs
 

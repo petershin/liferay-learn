@@ -1,5 +1,11 @@
 ---
 uuid: b4b9a8dd-d8ed-4daa-8121-04179acda003
+taxonomy-category-names:
+- Development and Tooling
+- Java Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Liferay Faces Version Scheme
 

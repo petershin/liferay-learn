@@ -1,5 +1,11 @@
 ---
 uuid: e63f1fb0-18dc-4e03-b118-429883b0cbec
+taxonomy-category-names:
+- Development and Tooling
+- Objects
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Encrypted Fields
 

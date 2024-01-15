@@ -7,6 +7,12 @@ toc:
   - ./using-custom-object-apis/using-nestedfields-to-audit-entry-history.md
   - ./using-custom-object-apis/using-aggregation-terms-with-rest-apis.md
 uuid: 8db76b2e-6b09-488e-9e76-82d23b028cca
+taxonomy-category-names:
+- Integration
+- Objects
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Using Custom Object APIs
 

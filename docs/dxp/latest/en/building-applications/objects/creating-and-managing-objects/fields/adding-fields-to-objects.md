@@ -1,5 +1,11 @@
 ---
 uuid: c41d47fa-26bc-460b-b688-d1e3b7bcd123
+taxonomy-category-names:
+- Development and Tooling
+- Objects
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Adding Fields to Objects
 

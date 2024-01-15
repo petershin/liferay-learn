@@ -1,5 +1,11 @@
 ---
 uuid: 0397412a-9f89-464c-9bba-f732178c228a
+taxonomy-category-names:
+- Development and Tooling
+- Objects
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Adding and Managing Custom States
 

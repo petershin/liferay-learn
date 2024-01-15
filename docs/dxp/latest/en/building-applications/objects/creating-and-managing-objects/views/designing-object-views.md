@@ -1,5 +1,11 @@
 ---
 uuid: dc9c4147-24f9-4adb-9fc6-ac89d3dadb86
+taxonomy-category-names:
+- Development and Tooling
+- Objects
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Designing Object Views
 

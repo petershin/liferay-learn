@@ -4,6 +4,12 @@ toc:
   - ./actions/understanding-action-types.md
   - ./actions/using-manual-actions.md
 uuid: 22678165-9c15-45ec-9f59-73eb9e2769b8
+taxonomy-category-names:
+- Development and Tooling
+- Objects
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Actions
 

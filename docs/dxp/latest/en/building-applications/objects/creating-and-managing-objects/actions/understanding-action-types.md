@@ -1,5 +1,11 @@
 ---
 uuid: 4eea6cd8-f95c-428d-9b9f-ee2292b0e675
+taxonomy-category-names:
+- Development and Tooling
+- Objects
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Understanding Action Types
 

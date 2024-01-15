@@ -1,5 +1,11 @@
 ---
 uuid: 5febb86a-2b56-454d-ae87-81757e82fa00
+taxonomy-category-names:
+- Integration
+- Objects
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Using nestedFields to Query Related Entries
 

@@ -1,5 +1,11 @@
 ---
 uuid: a4cb2ac1-d3b7-4956-b2ea-c4cc0d30eb1a
+taxonomy-category-names:
+- Development and Tooling
+- Objects
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Auditing Object Events
 

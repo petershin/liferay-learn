@@ -1,5 +1,11 @@
 ---
 uuid: 1b15f720-c5bd-4b3e-81cc-5dce130a4156
+taxonomy-category-names:
+- Platform
+- Forms
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Using Forms with Objects
 

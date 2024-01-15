@@ -3,6 +3,12 @@ toc:
   - ./layouts/designing-object-layouts.md
   - ./layouts/adding-categorization-to-fields-tabs.md
 uuid: 58e2dabf-bba1-4ca3-86bc-ac41df5e31e9
+taxonomy-category-names:
+- Development and Tooling
+- Objects
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Layouts
 

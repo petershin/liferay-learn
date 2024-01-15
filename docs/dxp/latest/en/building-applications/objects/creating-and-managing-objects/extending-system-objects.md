@@ -1,5 +1,11 @@
 ---
 uuid: 52556bc8-a31b-4331-bcd7-317428006384
+taxonomy-category-names:
+- Development and Tooling
+- Objects
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Extending System Objects
 

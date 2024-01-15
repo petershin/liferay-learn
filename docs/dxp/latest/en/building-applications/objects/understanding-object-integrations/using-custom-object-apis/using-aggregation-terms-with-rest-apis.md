@@ -1,5 +1,11 @@
 ---
 uuid: 59b5e079-6791-4f93-813d-899983cfaadb
+taxonomy-category-names:
+- Integration
+- Objects
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Using Aggregation Terms with REST APIs
 

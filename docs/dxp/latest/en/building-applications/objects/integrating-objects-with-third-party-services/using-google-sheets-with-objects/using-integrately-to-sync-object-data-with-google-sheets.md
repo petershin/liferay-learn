@@ -1,5 +1,11 @@
 ---
 uuid: c5fc43c9-42d0-4381-9d92-34fa93b25bcf
+taxonomy-category-names:
+- Integration
+- Objects
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Using Integrately to Sync Object Data with Google Sheets
 

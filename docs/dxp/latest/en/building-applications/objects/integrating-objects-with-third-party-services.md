@@ -4,6 +4,12 @@ toc:
   - >-
     ./integrating-objects-with-third-party-services/using-google-sheets-with-objects.md
 uuid: 0a5eb7f9-331f-4a4a-919b-b6f383c1bda0
+taxonomy-category-names:
+- Development and Tooling
+- Objects
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Integrating Objects with Third Party Services
 

@@ -1,5 +1,11 @@
 ---
 uuid: 7ec3ffc3-f645-4ee8-86bd-ab6f8697dc3d
+taxonomy-category-names:
+- Development and Tooling
+- Objects
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Aggregation Fields
 

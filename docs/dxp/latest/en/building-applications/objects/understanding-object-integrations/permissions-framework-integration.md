@@ -1,5 +1,11 @@
 ---
 uuid: 17dfab4d-3c5f-4001-8a65-38a34170aa61
+taxonomy-category-names:
+- Integration
+- Objects
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Permissions Framework Integration
 

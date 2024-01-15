@@ -1,5 +1,11 @@
 ---
 uuid: 9a926622-7d5f-4502-8793-582402314d72
+taxonomy-category-names:
+- Development and Tooling
+- Objects
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Text Fields
 

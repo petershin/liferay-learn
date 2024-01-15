@@ -1,5 +1,11 @@
 ---
 uuid: 0b20f635-3b4f-40ff-8974-e6c72f408be9
+taxonomy-category-names:
+- Development and Tooling
+- Objects
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Organizing Objects with Folders
 

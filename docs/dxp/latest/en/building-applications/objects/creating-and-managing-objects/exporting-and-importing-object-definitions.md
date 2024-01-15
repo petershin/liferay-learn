@@ -1,5 +1,11 @@
 ---
 uuid: 50529940-7894-40c7-b819-25f3f2a83930
+taxonomy-category-names:
+- Development and Tooling
+- Objects
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Exporting and Importing Object Definitions
 

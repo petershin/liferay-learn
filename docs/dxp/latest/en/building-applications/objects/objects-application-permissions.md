@@ -1,5 +1,11 @@
 ---
 uuid: 0a1454d8-6845-4d3e-9186-9fb06e2b21e1
+taxonomy-category-names:
+- Development and Tooling
+- Objects
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Objects Application Permissions
 

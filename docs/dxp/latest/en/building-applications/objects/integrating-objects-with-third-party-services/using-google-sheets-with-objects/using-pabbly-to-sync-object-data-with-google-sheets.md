@@ -1,5 +1,11 @@
 ---
 uuid: 59a4900d-9ed9-4881-b147-797be3ee9542
+taxonomy-category-names:
+- Integration
+- Objects
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Using Pabbly to Sync Object Data with Google Sheets
 

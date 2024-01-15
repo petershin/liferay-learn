@@ -1,5 +1,11 @@
 ---
 uuid: 7f5e0f7f-3c70-4429-a0e9-1d47f90d214e
+taxonomy-category-names:
+- Sites
+- Fragments
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Using Fragments to Build Forms
 

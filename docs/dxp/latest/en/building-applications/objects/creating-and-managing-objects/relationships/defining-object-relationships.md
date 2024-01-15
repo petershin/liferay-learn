@@ -1,5 +1,11 @@
 ---
 uuid: a9b635be-f464-4e24-b726-6b8f24fd40c3
+taxonomy-category-names:
+- Development and Tooling
+- Objects
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Defining Object Relationships
 

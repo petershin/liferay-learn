@@ -1,5 +1,11 @@
 ---
 uuid: cdc62d39-936c-4e58-aff8-cddcc9eff4e5
+taxonomy-category-names:
+- Integration
+- Objects
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Using Automate.io to Sync Object Data with Google Sheets
 

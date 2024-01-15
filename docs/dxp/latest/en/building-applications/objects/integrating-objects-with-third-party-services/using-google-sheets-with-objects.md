@@ -19,6 +19,12 @@ toc:
   - >-
     ./using-google-sheets-with-objects/using-zapier-to-sync-object-data-with-google-sheets.md
 uuid: 88bc27ef-5ac3-4886-a458-83f84967d58b
+taxonomy-category-names:
+- Integration
+- Objects
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Using Google Sheets with Objects
 

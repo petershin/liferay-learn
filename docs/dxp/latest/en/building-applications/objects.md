@@ -12,6 +12,12 @@ toc:
   - ./objects/objects-application-permissions.md
   - ./objects/integrating-objects-with-third-party-services.md
 uuid: 58767c90-dc9b-4aad-b650-b6beb9dcce77
+taxonomy-category-names:
+- Development and Tooling
+- Objects
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Objects
 

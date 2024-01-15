@@ -1,5 +1,11 @@
 ---
 uuid: fa76f937-085e-40aa-9f9f-faf9f7c363eb
+taxonomy-category-names:
+- Development and Tooling
+- Objects
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Renaming Table Columns
 

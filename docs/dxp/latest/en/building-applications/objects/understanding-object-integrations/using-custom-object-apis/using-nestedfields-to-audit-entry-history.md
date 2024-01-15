@@ -1,5 +1,11 @@
 ---
 uuid: 902fc6f9-716c-4d56-8aeb-752a222ee882
+taxonomy-category-names:
+- Integration
+- Objects
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Using nestedFields to Audit Entry History
 

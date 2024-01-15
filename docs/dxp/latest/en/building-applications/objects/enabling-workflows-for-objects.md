@@ -1,5 +1,10 @@
 ---
 uuid: ca5013e4-22f9-4579-a747-9608f04748ec
+taxonomy-category-names:
+- Platform
+- Workflow
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Enabling Workflow for Objects
 

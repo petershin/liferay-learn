@@ -1,5 +1,11 @@
 ---
 uuid: 5ac040c5-195f-48d2-812e-0e024637d1c5
+taxonomy-category-names:
+- Development and Tooling
+- Objects
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Deleting Objects
 

@@ -1,5 +1,11 @@
 ---
 uuid: 41e54e73-83b4-4a39-b91a-f7b6c4e22234
+taxonomy-category-names:
+- Development and Tooling
+- Objects
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Formula Fields
 

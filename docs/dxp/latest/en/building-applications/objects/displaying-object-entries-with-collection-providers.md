@@ -1,5 +1,11 @@
 ---
 uuid: 3bf64181-9407-4b88-8950-c426e1a05fa4
+taxonomy-category-names:
+- Development and Tooling
+- Objects
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Displaying Object Entries with Collection Providers
 

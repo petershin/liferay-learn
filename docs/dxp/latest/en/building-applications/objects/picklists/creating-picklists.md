@@ -1,5 +1,11 @@
 ---
 uuid: 648d34f3-b6f8-4569-93a2-92ce758dc3b4
+taxonomy-category-names:
+- Platform
+- Picklists
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Creating Picklists
 

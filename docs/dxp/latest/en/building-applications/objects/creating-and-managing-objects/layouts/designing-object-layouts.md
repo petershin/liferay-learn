@@ -1,5 +1,11 @@
 ---
 uuid: 5a11638f-6897-4900-ab14-4a38a25cff46
+taxonomy-category-names:
+- Development and Tooling
+- Objects
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Designing Object Layouts
 

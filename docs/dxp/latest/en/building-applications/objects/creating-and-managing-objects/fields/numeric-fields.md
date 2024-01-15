@@ -1,5 +1,11 @@
 ---
 uuid: 16c05c85-a0c2-4929-9d81-608dba15a19a
+taxonomy-category-names:
+- Development and Tooling
+- Objects
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Numeric Fields
 

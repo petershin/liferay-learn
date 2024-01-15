@@ -3,6 +3,12 @@ toc:
   - ./validations/adding-field-validations.md
   - ./validations/expression-builder-validations-reference.md
 uuid: a14c4f38-68e2-411b-beb0-25890f0eac6b
+taxonomy-category-names:
+- Development and Tooling
+- Objects
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Validations
 

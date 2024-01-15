@@ -1,5 +1,11 @@
 ---
 uuid: 2ef89ecc-8c75-43e3-86c1-420d6bbc3a25
+taxonomy-category-names:
+- Development and Tooling
+- Objects
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Expression Builder Validations Reference
 

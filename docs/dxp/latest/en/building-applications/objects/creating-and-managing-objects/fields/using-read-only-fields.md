@@ -1,5 +1,11 @@
 ---
 uuid: a50d28b9-ca13-4227-8480-d968dc8fc470
+taxonomy-category-names:
+- Development and Tooling
+- Objects
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Using Read-Only Fields
 

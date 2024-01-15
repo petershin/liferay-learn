@@ -1,5 +1,11 @@
 ---
 uuid: 6b1067a0-7fae-4b4b-9e1a-497dd002b824
+taxonomy-category-names:
+- Development and Tooling
+- Objects
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Restricting Access to Object Data by Account
 

@@ -1,5 +1,11 @@
 ---
 uuid: 52fd1b70-d0cb-409e-99ec-fbd60bbf0a0f
+taxonomy-category-names:
+- Development and Tooling
+- Objects
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Managing Objects with Headless APIs
 

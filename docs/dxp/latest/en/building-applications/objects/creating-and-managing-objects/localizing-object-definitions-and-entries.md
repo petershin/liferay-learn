@@ -1,5 +1,11 @@
 ---
 uuid: 81425f88-d568-492f-8142-852335ac7374
+taxonomy-category-names:
+- Development and Tooling
+- Objects
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Localizing Object Definitions and Entries
 

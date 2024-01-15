@@ -3,6 +3,12 @@ toc:
   - ./relationships/defining-object-relationships.md
   - ./relationships/removing-relationships.md
 uuid: 6372ef7a-ba8d-48fa-a392-cb1a177bfb6d
+taxonomy-category-names:
+- Development and Tooling
+- Objects
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Relationships
 

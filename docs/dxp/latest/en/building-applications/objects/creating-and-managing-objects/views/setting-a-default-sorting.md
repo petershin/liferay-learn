@@ -1,5 +1,11 @@
 ---
 uuid: 5113dd1c-ff37-4164-9bd5-a8fbbdd0a853
+taxonomy-category-names:
+- Development and Tooling
+- Objects
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Setting a Default Sorting
 

@@ -1,5 +1,11 @@
 ---
 uuid: bf481358-5a1a-45af-ab98-a03bddd3044a
+taxonomy-category-names:
+- Sites
+- Fragments
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Displaying Object Entries
 

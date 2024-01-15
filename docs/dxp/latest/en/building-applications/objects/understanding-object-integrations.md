@@ -4,6 +4,12 @@ toc:
   - ./understanding-object-integrations/using-custom-object-apis.md
   - ./understanding-object-integrations/assets-framework-integration.md
 uuid: d5bab8bf-972f-49d9-98f1-f77e13ca3428
+taxonomy-category-names:
+- Development and Tooling
+- Objects
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Understanding Object Integrations
 

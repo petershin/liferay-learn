@@ -1,5 +1,11 @@
 ---
 uuid: 196c7b9c-e63b-4072-a33f-71cb75361fc2
+taxonomy-category-names:
+- Development and Tooling
+- Objects
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Defining Object Actions
 

@@ -1,5 +1,11 @@
 ---
 uuid: 4554a488-5db0-4353-b9d0-a9af05b41200
+taxonomy-category-names:
+- Development and Tooling
+- Objects
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Adding Field Validations
 

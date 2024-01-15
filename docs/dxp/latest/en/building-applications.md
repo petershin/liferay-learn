@@ -12,6 +12,12 @@ toc:
   - ./building-applications/reference.md
   - ./building-applications/reference/app-builder.md
 uuid: c7a717b4-ea54-4ca6-a16a-51f3e0f47d24
+taxonomy-category-names:
+- Development and Tooling
+- Developer Tools
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Building Applications
 

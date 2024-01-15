@@ -5,6 +5,12 @@ toc:
   - ./picklists/managing-picklist-permissions.md
   - ./picklists/picklists-api-basics.md
 uuid: 15762235-5051-4cbf-82ad-ddd513651f27
+taxonomy-category-names:
+- Platform
+- Picklists
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Picklists
 

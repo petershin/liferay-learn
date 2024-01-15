@@ -2,6 +2,12 @@
 toc:
   - ./managing-data-from-external-systems/using-objects-with-salesforce.md
 uuid: f1b85ce0-bfb0-4abd-bf57-534edda1d5f0
+taxonomy-category-names:
+- Development and Tooling
+- Objects
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Managing Data from External Systems
 

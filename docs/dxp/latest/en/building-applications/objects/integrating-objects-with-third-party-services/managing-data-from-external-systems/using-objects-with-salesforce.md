@@ -1,5 +1,11 @@
 ---
 uuid: 6ab10d7b-f529-42d5-9fdf-71e88b41f4f5
+taxonomy-category-names:
+- Development and Tooling
+- Objects
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Using Objects with Salesforce
 

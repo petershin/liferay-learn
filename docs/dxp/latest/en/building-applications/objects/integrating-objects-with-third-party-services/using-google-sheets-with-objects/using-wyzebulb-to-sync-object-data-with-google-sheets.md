@@ -1,5 +1,11 @@
 ---
 uuid: 7fad70a6-d75c-4284-84f3-6447aadb2049
+taxonomy-category-names:
+- Integration
+- Objects
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Using Wyzebulb to Sync Object Data with Google Sheets
 

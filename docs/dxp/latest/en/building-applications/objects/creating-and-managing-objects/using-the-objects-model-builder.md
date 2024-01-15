@@ -1,5 +1,11 @@
 ---
 uuid: 755f1298-6046-44b1-83ce-5683121b40fe
+taxonomy-category-names:
+- Development and Tooling
+- Objects
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Using the Objects Model Builder
 

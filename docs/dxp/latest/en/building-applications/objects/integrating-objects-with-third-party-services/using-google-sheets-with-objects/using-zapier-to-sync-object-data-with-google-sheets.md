@@ -1,5 +1,11 @@
 ---
 uuid: 18145a4a-781e-4d15-93de-17683b8b2bad
+taxonomy-category-names:
+- Integration
+- Objects
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Using Zapier to Sync Object Data with Google Sheets
 

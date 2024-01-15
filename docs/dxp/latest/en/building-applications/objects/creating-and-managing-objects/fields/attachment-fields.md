@@ -1,5 +1,11 @@
 ---
 uuid: 2fa3dbf3-29fb-47bc-82c0-81dde1b08003
+taxonomy-category-names:
+- Development and Tooling
+- Objects
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Attachment Fields
 

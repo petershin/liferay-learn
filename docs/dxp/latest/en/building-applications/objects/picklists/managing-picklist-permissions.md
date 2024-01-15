@@ -1,5 +1,11 @@
 ---
 uuid: cbb2da02-f99f-4ae9-a7a6-67b75a555e86
+taxonomy-category-names:
+- Platform
+- Picklists
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Managing Picklist Permissions
 

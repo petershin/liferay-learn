@@ -9,6 +9,12 @@ toc:
   - ./fields/formula-fields.md
   - ./fields/picklist-fields.md
 uuid: 4ba9b571-6b88-4ab0-940a-b406a95caa75
+taxonomy-category-names:
+- Development and Tooling
+- Objects
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Fields
 

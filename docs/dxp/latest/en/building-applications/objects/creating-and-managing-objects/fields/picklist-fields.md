@@ -1,5 +1,11 @@
 ---
 uuid: 0e3e6564-94b9-40d9-b041-a17f28877d0b
+taxonomy-category-names:
+- Development and Tooling
+- Picklist
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Picklist Fields
 

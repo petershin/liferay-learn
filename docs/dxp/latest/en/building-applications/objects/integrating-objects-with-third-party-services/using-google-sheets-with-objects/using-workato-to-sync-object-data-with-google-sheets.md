@@ -1,5 +1,11 @@
 ---
 uuid: 603ac83d-0fce-4a94-bc45-e3d1712e640c
+taxonomy-category-names:
+- Integration
+- Objects
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Using Workato to Sync Object Data with Google Sheets
 

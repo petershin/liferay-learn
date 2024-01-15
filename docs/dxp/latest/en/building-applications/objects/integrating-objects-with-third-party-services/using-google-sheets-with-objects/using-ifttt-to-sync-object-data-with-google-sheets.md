@@ -1,5 +1,11 @@
 ---
 uuid: 2103c41d-cd3d-453e-82c1-41d9b89f61a6
+taxonomy-category-names:
+- Integration
+- Objects
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Using IFTTT to Sync Object Data with Google Sheets
 

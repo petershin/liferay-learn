@@ -1,5 +1,11 @@
 ---
 uuid: cf990294-69dd-461c-b88d-f1b4ba1401a3
+taxonomy-category-names:
+- Development and Tooling
+- Objects
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Accessing Accounts Data from Custom Objects
 

@@ -19,6 +19,12 @@ toc:
   - ./creating-and-managing-objects/deleting-objects.md
   - ./creating-and-managing-objects/managing-objects-with-headless-apis.md
 uuid: d42bd20c-4087-4203-9aee-d254c5bc2346
+taxonomy-category-names:
+- Development and Tooling
+- Objects
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Creating and Managing Objects
 

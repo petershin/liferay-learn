@@ -1,5 +1,11 @@
 ---
 uuid: a86d41a7-27d7-48a2-8ef2-5969338ddb94
+taxonomy-category-names:
+- Development and Tooling
+- Objects
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Adding Filters to Views
 

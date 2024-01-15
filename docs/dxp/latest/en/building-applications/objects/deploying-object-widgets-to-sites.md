@@ -1,5 +1,11 @@
 ---
 uuid: 0c8f393f-6e5a-40ca-9de6-00c833d3dbe6
+taxonomy-category-names:
+- Development and Tooling
+- Objects
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Deploying Object Widgets to Sites
 

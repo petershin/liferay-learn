@@ -1,5 +1,11 @@
 ---
 uuid: 7cbe4379-3bba-400e-8295-2b60e29e6f84
+taxonomy-category-names:
+- Integration
+- Objects
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 
 # Object API Basics

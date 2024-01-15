@@ -5,6 +5,12 @@ toc:
   - ./views/setting-a-default-sorting.md
   - ./views/adding-filters-to-views.md
 uuid: c6bcae5f-e1d4-4c1a-873f-96c671c0b72d
+taxonomy-category-names:
+- Development and Tooling
+- Objects
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Views
 

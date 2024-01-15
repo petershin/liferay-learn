@@ -1,5 +1,12 @@
 ---
 uuid: 9f2acbd9-e1a8-4c62-8786-9cc7ab738f46
+
+taxonomy-category-names:
+- Integration
+- Objects
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Using Batch APIs
 

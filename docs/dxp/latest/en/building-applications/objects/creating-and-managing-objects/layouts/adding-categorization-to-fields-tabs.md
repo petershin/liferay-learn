@@ -1,5 +1,11 @@
 ---
 uuid: 4d712f4d-f49f-4132-bf0d-0bc60a5d279d
+taxonomy-category-names:
+- Development and Tooling
+- Objects
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Adding Categorization to Fields Tabs
 

@@ -1,5 +1,11 @@
 ---
 uuid: d4c25858-b99c-46e9-a459-91b75af678f3
+taxonomy-category-names:
+- Integration
+- Objects
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Using Relationship REST APIs
 

@@ -1,5 +1,11 @@
 ---
 uuid: 003032c7-9743-4369-81ce-e1d203016944
+taxonomy-category-names:
+- Integration
+- Objects
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Using Make to Sync Object Data with Google Sheets
 

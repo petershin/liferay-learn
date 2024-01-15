@@ -1,5 +1,11 @@
 ---
 uuid: 173b877c-0cd6-491d-9af3-25b8b494422f
+taxonomy-category-names:
+- Development and Tooling
+- Objects
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Activating and Deactivating Objects
 

@@ -37,9 +37,8 @@ Then, follow these steps:
     ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
     ```
 
-    ```{note}
-    This command is the same as copying the compiled module JAR to `/opt/liferay/osgi/modules` on the Docker container.
-    ```
+    !!! note
+        This command is the same as copying the compiled module JAR to `/opt/liferay/osgi/modules` on the Docker container.
 
 1. Confirm the deployment in the Liferay Docker container console.
 
@@ -55,7 +54,7 @@ After Documents and Media completes generating the PDF file preview, it sends a 
 [liferay/document_library_pdf_processor-2][W3A4MessageListener:22] Received message payload [Ljava.lang.Object;@6df886c1 at destination liferay/document_library_pdf_processor
 ```
 
-Here's how it works. 
+Here's how it works.
 
 ## Determine the Destination
 
@@ -69,7 +68,7 @@ Search Liferay's `*DestinationNames` classes in the [source code](https://github
 
 ## Implement the `MessageListener` Interface
 
-In the class where you want to receive messages, implement the [`MessageListener`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/MessageListener.java) interface. 
+In the class where you want to receive messages, implement the [`MessageListener`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/MessageListener.java) interface.
 
 ```{literalinclude} ./listening-for-messages/resources/liferay-w3a4.zip/w3a4-impl/src/main/java/com/acme/w3a4/internal/messaging/W3A4MessageListener.java
    :language: java
@@ -79,8 +78,9 @@ In the class where you want to receive messages, implement the [`MessageListener
 Override the `receive` method with logic for processing messages. Here's the example `receive` method implementation:
 
 ```{literalinclude} ./listening-for-messages/resources/liferay-w3a4.zip/w3a4-impl/src/main/java/com/acme/w3a4/internal/messaging/W3A4MessageListener.java
+   :dedent: 1
    :language: java
-   :lines: 17-27
+   :lines: 17-26
 ```
 
 The above implementation logs the message payload and destination name. See the [`Message`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/MessageListener.java) class for details on its other methods.
@@ -102,4 +102,4 @@ When you deploy your project, the OSGi Runtime registers your `MessageListener` 
 
 ## Related Topics
 
-* [Message Bus](../message-bus.md)
+- [Message Bus](../message-bus.md)

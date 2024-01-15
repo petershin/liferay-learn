@@ -33,9 +33,8 @@ Then, follow these steps:
     ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
     ```
 
-    ```{note}
-    This command is the same as copying the deployed jars to `/opt/liferay/osgi/modules` on the Docker container.
-    ```
+    !!! note
+        This command is the same as copying the deployed jars to `/opt/liferay/osgi/modules` on the Docker container.
 
 1. Confirm the deployment in the Liferay Docker container console.
 
@@ -76,9 +75,8 @@ The interface has three configurable attributes: font color, font family, and fo
 
 `Meta.OCD` registers this class as a configuration with a specific ID.
 
-```{important}
-Note that the ID must be the fully qualified class name (FQCN) of the configuration interface.
-```
+!!! important
+    Note that the ID must be the fully qualified class name (FQCN) of the configuration interface.
 
 `Meta.AD` specifies [optional metadata](http://bnd.bndtools.org/chapters/210-metatype.html) about the attribute such as a default value or whether the attribute is a required field. Note that if an attribute value is required but a default is not set, an administrator must set a value in settings for the application to work properly.
 
@@ -95,7 +93,7 @@ Next, see how the configuration is read by the MVC Portlet.
 1. To access the configuration, the `render()` method utilizes a `ConfigurationProvider`. The Configuration Provider API provides methods to retrieve a configuration at different levels of scope. The sample project's configuration is instance scoped and uses the `getCompanyConfiguration()` method to retrieve the configuration.
 
     ```{literalinclude} ./scoping-configurations/resources/liferay-n2f3.zip/n2f3-web/src/main/java/com/acme/n2f3/web/internal/portlet/N2F3Portlet.java
-    :dedent: 1
+    :dedent: 2
     :language: java
     :lines: 37-43
     ```
@@ -141,9 +139,8 @@ Now the font family attribute is a dropdown selection.
 
 ## ConfigurationBeanDeclaration with Previous Versions of Liferay
 
-```{important}
-For Liferay DXP 7.4 U51+ and Liferay Portal 7.4 GA51+, a `ConfigurationBeanDeclaration` class is not required. The configration interface is registered with the Configuration Provider API automatically.
-```
+!!! important
+    For Liferay DXP 7.4 U51+ and Liferay Portal 7.4 GA51+, a `ConfigurationBeanDeclaration` class is not required. The configration interface is registered with the Configuration Provider API automatically.
 
 On Liferay versions before 7.4 Update/GA 51, the configuration class must be registered with a `ConfigurationBeanDeclaration` to use it with the Configuration Provider API. The `ConfigurationBeanDeclaration` class has one method that returns the configuration interface class. This helps the system keep track of configuration changes as they happen. For example, for the N2F3 portlet, create a class like this:
 
@@ -162,8 +159,8 @@ public class N2F3WebConfigurationBeanDeclaration
 
 In this example, place the class in the `com.acme.n2f3.web.internal.settings.definition` package.
 
-## Further Customization
+## Related Topics
 
-* [Categorizing a Configuration](./categorizing-a-configuration.md)
-* [Scoping Configurations](./scoping-configurations)
-* [Field Options Provider](./field-options-provider.md)
+- [Categorizing a Configuration](./categorizing-a-configuration.md)
+- [Scoping Configurations](./scoping-configurations)
+- [Field Options Provider](./field-options-provider.md)

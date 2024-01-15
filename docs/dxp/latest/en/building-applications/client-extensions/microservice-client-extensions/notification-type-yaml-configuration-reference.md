@@ -1,5 +1,10 @@
 ---
 uuid: 35e09fb2-fd22-49b3-b901-bd96c6c1a887
+taxonomy-category-names:
+- Development and Tooling
+- Client Extensions
+- Liferay Self-Hosted
+- Liferay SaaS
 ---
 # Notification Type YAML Configuration Reference
 

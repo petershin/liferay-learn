@@ -7,6 +7,11 @@ toc:
   - ./client-extensions/configuration-client-extensions.md
   - ./client-extensions/batch-client-extensions.md
 uuid: 33141e0f-9fc0-4bcb-ae34-536c157e0198
+taxonomy-category-names:
+- Development and Tooling
+- Client Extensions
+- Liferay Self-Hosted
+- Liferay SaaS
 ---
 # Client Extensions
 

@@ -1,5 +1,10 @@
 ---
 uuid: 7ba1005d-5491-43f8-9067-5e63b241fe63
+taxonomy-category-names:
+- Development and Tooling
+- Client Extensions
+- Liferay Self-Hosted
+- Liferay SaaS
 ---
 # Using a Microservice Client Extension
 

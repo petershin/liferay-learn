@@ -6,6 +6,11 @@ toc:
   - ./microservice-client-extensions/workflow-action-yaml-configuration-reference.md
   - ./microservice-client-extensions/notification-type-yaml-configuration-reference.md
 uuid: c35ace6c-9e29-4e9e-be37-b4799a8b21d5
+taxonomy-category-names:
+- Development and Tooling
+- Client Extensions
+- Liferay Self-Hosted
+- Liferay SaaS
 ---
 # Microservice Client Extensions
 

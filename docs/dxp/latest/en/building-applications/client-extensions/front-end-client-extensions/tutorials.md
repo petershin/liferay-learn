@@ -9,6 +9,11 @@ toc:
   - ./tutorials/using-routes-with-custom-elements.md
   - ./tutorials/using-an-iframe-client-extension.md
 uuid: 8e6f2308-09b7-437f-8e69-34307388b844
+taxonomy-category-names:
+- Development and Tooling
+- Frontend Client Extensions
+- Liferay Self-Hosted
+- Liferay SaaS
 ---
 
 # Tutorials

@@ -1,5 +1,10 @@
 ---
 uuid: 51abbad2-5447-4e53-accb-e62dbe327762
+taxonomy-category-names:
+- Development and Tooling
+- Frontend Client Extensions
+- Liferay Self-Hosted
+- Liferay SaaS
 ---
 # Theme CSS YAML Configuration Reference
 

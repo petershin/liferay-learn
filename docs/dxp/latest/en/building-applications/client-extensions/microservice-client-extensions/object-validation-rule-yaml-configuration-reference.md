@@ -1,5 +1,10 @@
 ---
 uuid: c4a0fc7c-99d6-441f-b0aa-20e65a44c4d3
+taxonomy-category-names:
+- Development and Tooling
+- Client Extensions
+- Liferay Self-Hosted
+- Liferay SaaS
 ---
 # Object Validation Rule YAML Configuration Reference
 

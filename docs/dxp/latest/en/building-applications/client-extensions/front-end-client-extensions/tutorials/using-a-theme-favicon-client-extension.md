@@ -1,5 +1,10 @@
 ---
 uuid: 75c87280-d934-43a4-b1e1-59d7a3b054ed
+taxonomy-category-names:
+- Development and Tooling
+- Frontend Client Extensions
+- Liferay Self-Hosted
+- Liferay SaaS
 ---
 # Using a Theme Favicon Client Extension
 

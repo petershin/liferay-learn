@@ -1,5 +1,10 @@
 ---
 uuid: e26e34b4-ca1b-490b-b911-4ef92ad123ea
+taxonomy-category-names:
+- Development and Tooling
+- Frontend Client Extensions
+- Liferay Self-Hosted
+- Liferay SaaS
 ---
 # Using a JavaScript Client Extension
 

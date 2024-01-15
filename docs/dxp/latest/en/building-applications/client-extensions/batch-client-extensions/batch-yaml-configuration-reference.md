@@ -1,5 +1,10 @@
 ---
 uuid: a92f8a77-b22a-44be-88c0-fff9e1284347
+taxonomy-category-names:
+- Development and Tooling
+- Client Extensions
+- Liferay Self-Hosted
+- Liferay SaaS
 ---
 # Batch YAML Configuration Reference
 

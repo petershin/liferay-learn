@@ -1,5 +1,10 @@
 ---
 uuid: 01f46794-2cd4-4ffc-94d3-e244880f2b6f
+taxonomy-category-names:
+- Development and Tooling
+- Client Extensions
+- Liferay Self-Hosted
+- Liferay SaaS
 ---
 # Working with Client Extensions
 

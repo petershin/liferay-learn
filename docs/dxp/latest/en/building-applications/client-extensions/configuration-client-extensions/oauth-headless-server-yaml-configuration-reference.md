@@ -1,5 +1,10 @@
 ---
 uuid: 57ce5bc2-3e8a-4c7a-b379-bbcc42ae6784
+taxonomy-category-names:
+- Development and Tooling
+- Client Extensions
+- Liferay Self-Hosted
+- Liferay SaaS
 ---
 # OAuth Headless Server YAML Configuration Reference
 

@@ -2,6 +2,11 @@
 toc:
   - ./batch-client-extensions/batch-yaml-configuration-reference.md
 uuid: 601bd5b5-8b5b-4ac6-9030-776439ff9aa7
+taxonomy-category-names:
+- Development and Tooling
+- Client Extensions
+- Liferay Self-Hosted
+- Liferay SaaS
 ---
 # Batch Client Extensions
 

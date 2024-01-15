@@ -1,5 +1,10 @@
 ---
 uuid: 147a9736-cb25-486e-8aa2-86547cf5852b
+taxonomy-category-names:
+- Development and Tooling
+- Frontend Client Extensions
+- Liferay Self-Hosted
+- Liferay SaaS
 ---
 # Theme Favicon YAML Configuration Reference
 

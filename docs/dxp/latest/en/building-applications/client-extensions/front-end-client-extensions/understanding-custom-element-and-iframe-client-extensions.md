@@ -1,5 +1,10 @@
 ---
 uuid: 0431a9b6-857c-42b4-a5e8-8fc7aba71321
+taxonomy-category-names:
+- Development and Tooling
+- Frontend Client Extensions
+- Liferay Self-Hosted
+- Liferay SaaS
 ---
 # Understanding Custom Element and IFrame Client Extensions
 

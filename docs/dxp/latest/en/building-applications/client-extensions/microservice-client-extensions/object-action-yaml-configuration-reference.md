@@ -1,5 +1,10 @@
 ---
 uuid: 9557c412-c225-497b-88dc-659fdc6b1864
+taxonomy-category-names:
+- Development and Tooling
+- Client Extensions
+- Liferay Self-Hosted
+- Liferay SaaS
 ---
 # Object Action YAML Configuration Reference
 

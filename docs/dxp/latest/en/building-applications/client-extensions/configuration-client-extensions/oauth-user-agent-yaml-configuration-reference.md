@@ -1,5 +1,10 @@
 ---
 uuid: 4801c0d5-123d-471e-a8c6-d080342488c8
+taxonomy-category-names:
+- Development and Tooling
+- Client Extensions
+- Liferay Self-Hosted
+- Liferay SaaS
 ---
 # OAuth User Agent YAML Configuration Reference
 

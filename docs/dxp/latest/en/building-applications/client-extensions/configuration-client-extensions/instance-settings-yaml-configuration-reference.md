@@ -1,5 +1,10 @@
 ---
 uuid: f27a4e4f-e69f-4847-9d25-214829d7c15f
+taxonomy-category-names:
+- Development and Tooling
+- Client Extensions
+- Liferay Self-Hosted
+- Liferay SaaS
 ---
 # Instance Settings YAML Configuration Reference
 

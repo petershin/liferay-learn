@@ -1,5 +1,10 @@
 ---
 uuid: d20aeabb-1523-486a-9848-f72f8b25d9cb
+taxonomy-category-names:
+- Development and Tooling
+- Client Extensions
+- Liferay Self-Hosted
+- Liferay SaaS
 ---
 # Workflow Action YAML Configuration Reference
 

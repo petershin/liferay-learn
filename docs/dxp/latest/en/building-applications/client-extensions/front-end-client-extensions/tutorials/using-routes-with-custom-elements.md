@@ -1,5 +1,10 @@
 ---
 uuid: 16455895-2b77-463c-bc0c-ed767b740b02
+taxonomy-category-names:
+- Development and Tooling
+- Frontend Client Extensions
+- Liferay Self-Hosted
+- Liferay SaaS
 ---
 # Using Routes with Custom Elements
 

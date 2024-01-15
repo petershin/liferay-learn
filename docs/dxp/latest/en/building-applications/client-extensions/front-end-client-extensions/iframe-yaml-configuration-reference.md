@@ -1,5 +1,10 @@
 ---
 uuid: d5930388-d026-4c77-bcc1-dd9d4b985869
+taxonomy-category-names:
+- Development and Tooling
+- Frontend Client Extensions
+- Liferay Self-Hosted
+- Liferay SaaS
 ---
 # IFrame YAML Configuration Reference
 

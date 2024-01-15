@@ -1,5 +1,10 @@
 ---
 uuid: e1442843-69dc-4818-8ee2-fe64cbb075ef
+taxonomy-category-names:
+- Development and Tooling
+- Frontend Client Extensions
+- Liferay Self-Hosted
+- Liferay SaaS
 ---
 # Custom Element YAML Configuration Reference
 

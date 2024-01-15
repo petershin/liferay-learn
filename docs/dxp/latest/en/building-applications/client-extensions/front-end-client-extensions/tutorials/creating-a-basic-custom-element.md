@@ -1,5 +1,10 @@
 ---
 uuid: fdced878-aea0-40b8-9959-828e9787d373
+taxonomy-category-names:
+- Development and Tooling
+- Frontend Client Extensions
+- Liferay Self-Hosted
+- Liferay SaaS
 ---
 # Creating a Basic Custom Element
 

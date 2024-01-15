@@ -11,6 +11,11 @@ toc:
   - ./front-end-client-extensions/understanding-custom-element-and-iframe-client-extensions.md
   - ./front-end-client-extensions/client-extensions-ui-reference.md
 uuid: fcdeefe5-64f7-451c-8981-41e1a04290d6
+taxonomy-category-names:
+- Development and Tooling
+- Frontend Client Extensions
+- Liferay Self-Hosted
+- Liferay SaaS
 ---
 # Front-End Client Extensions
 

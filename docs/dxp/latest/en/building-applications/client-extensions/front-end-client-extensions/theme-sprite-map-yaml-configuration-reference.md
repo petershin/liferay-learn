@@ -1,5 +1,10 @@
 ---
 uuid: 03821b5e-c0a1-4dc8-a900-eb1e36c1ead5
+taxonomy-category-names:
+- Development and Tooling
+- Frontend Client Extensions
+- Liferay Self-Hosted
+- Liferay SaaS
 ---
 # Theme Sprite Map YAML Configuration Reference
 

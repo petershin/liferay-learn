@@ -1,5 +1,10 @@
 ---
 uuid: 7036db73-227b-4df6-8287-1d60ff0ef71f
+taxonomy-category-names:
+- Development and Tooling
+- Frontend Client Extensions
+- Liferay Self-Hosted
+- Liferay SaaS
 ---
 # Client Extensions UI Reference
 

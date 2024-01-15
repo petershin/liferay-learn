@@ -1,5 +1,11 @@
 ---
 uuid: 1108d1e5-8dc4-419f-bba3-c034dfc8e109
+taxonomy-category-names:
+- Development and Tooling
+- Core Frameworks
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Automatically Generating Translations
 

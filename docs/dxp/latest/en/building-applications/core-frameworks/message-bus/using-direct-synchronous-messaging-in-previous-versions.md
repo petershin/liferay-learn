@@ -1,5 +1,11 @@
 ---
 uuid: 692ed11e-986f-4d53-963a-3142a0a683de
+taxonomy-category-names:
+- Development and Tooling
+- Core Frameworks
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Using Direct Synchronous Messaging in Previous Versions
 

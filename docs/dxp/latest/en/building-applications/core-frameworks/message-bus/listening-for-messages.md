@@ -1,5 +1,11 @@
 ---
 uuid: 3f2dc65f-de85-45dc-8f66-97c548ffe966
+taxonomy-category-names:
+- Development and Tooling
+- Core Frameworks
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Listening for Messages
 

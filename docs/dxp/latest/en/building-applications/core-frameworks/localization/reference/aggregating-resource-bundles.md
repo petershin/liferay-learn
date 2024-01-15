@@ -1,5 +1,11 @@
 ---
 uuid: f5191198-3483-40bb-aac1-27b05522db38
+taxonomy-category-names:
+- Development and Tooling
+- Core Frameworks
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Aggregating Resource Bundles
 

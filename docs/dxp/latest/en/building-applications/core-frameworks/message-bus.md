@@ -7,6 +7,12 @@ toc:
   - ./message-bus/listening-for-registration-events.md
   - ./message-bus/tuning-messaging-performance.md
 uuid: 057c9607-a1e7-4f8c-8442-e22eef0138a5
+taxonomy-category-names:
+- Development and Tooling
+- Core Frameworks
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Message Bus
 

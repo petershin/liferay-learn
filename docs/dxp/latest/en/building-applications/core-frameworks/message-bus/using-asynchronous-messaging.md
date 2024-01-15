@@ -1,5 +1,11 @@
 ---
 uuid: b4190d14-da78-4536-9fe7-e6e73dc53b9d
+taxonomy-category-names:
+- Development and Tooling
+- Core Frameworks
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Using Asynchronous Messaging
 

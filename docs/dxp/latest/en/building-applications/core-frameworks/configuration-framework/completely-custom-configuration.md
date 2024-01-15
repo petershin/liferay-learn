@@ -1,5 +1,11 @@
 ---
 uuid: fc5b7f3d-4051-493f-9950-1fd90a270997
+taxonomy-category-names:
+- Development and Tooling
+- Core Frameworks
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Completely Custom Configuration
 

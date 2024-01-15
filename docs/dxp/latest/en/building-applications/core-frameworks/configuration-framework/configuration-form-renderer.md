@@ -1,5 +1,11 @@
 ---
 uuid: 9685856c-4889-4921-8815-505d9d7096ae
+taxonomy-category-names:
+- Development and Tooling
+- Core Frameworks
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Configuration Form Renderer
 

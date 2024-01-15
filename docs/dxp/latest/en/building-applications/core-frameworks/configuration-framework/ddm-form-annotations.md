@@ -1,5 +1,11 @@
 ---
 uuid: ca673055-df2d-4633-a70a-fb55c6fff2b7
+taxonomy-category-names:
+- Development and Tooling
+- Core Frameworks
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # DDM Form Annotations
 

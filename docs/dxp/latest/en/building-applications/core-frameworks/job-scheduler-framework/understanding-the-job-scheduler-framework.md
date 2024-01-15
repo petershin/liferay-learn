@@ -1,5 +1,11 @@
 ---
 uuid: b3d03520-8ea9-4eb3-bb02-b868d05f08cf
+taxonomy-category-names:
+- Integration
+- Data Integration
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Understanding the Job Scheduler Framework
 

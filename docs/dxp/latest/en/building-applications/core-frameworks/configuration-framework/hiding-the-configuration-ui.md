@@ -1,5 +1,11 @@
 ---
 uuid: ea95d607-f1bc-41a3-8b75-fd3a7948d971
+taxonomy-category-names:
+- Development and Tooling
+- Core Frameworks
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Hiding the Configuration UI
 

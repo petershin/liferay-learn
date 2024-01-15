@@ -1,5 +1,11 @@
 ---
 uuid: 17c3bbf3-f921-4d12-9144-d811c31a2a83
+taxonomy-category-names:
+- Integration
+- Data Integration
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Creating a New Job Scheduler Task Executor
 

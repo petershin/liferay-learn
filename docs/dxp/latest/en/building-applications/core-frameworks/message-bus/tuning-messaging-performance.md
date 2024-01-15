@@ -1,5 +1,11 @@
 ---
 uuid: 955491f3-1692-420e-9f3e-c9d1b44aefa6
+taxonomy-category-names:
+- Development and Tooling
+- Core Frameworks
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Tuning Messaging Performance
 

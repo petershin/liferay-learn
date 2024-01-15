@@ -1,5 +1,11 @@
 ---
 uuid: 334acff2-757a-42bf-9d77-b4e4c076c961
+taxonomy-category-names:
+- Development and Tooling
+- Core Frameworks
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Portlet Level Configuration
 

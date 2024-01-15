@@ -1,5 +1,11 @@
 ---
 uuid: a572a158-c2f6-4816-a7ab-71e7e838c1c6
+taxonomy-category-names:
+- Integration
+- Data Integration
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Job Scheduler UI Reference
 

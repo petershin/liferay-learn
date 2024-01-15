@@ -1,5 +1,11 @@
 ---
 uuid: e1ab00dc-e1b1-411f-98fc-5f25cc6d9d1d
+taxonomy-category-names:
+- Development and Tooling
+- Core Frameworks
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Listening for Registration Events
 

@@ -1,5 +1,11 @@
 ---
 uuid: 18e152d9-6956-4ca1-a343-f0b541947eb0
+taxonomy-category-names:
+- Development and Tooling
+- Core Frameworks
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Adding A Language
 

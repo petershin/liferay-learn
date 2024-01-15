@@ -1,5 +1,11 @@
 ---
 uuid: c397de6c-7c21-4848-ba18-9630e5f0ac06
+taxonomy-category-names:
+- Development and Tooling
+- Core Frameworks
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Configuration Model Listener Reference
 

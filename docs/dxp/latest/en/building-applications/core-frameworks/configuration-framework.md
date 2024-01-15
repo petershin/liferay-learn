@@ -11,6 +11,12 @@ toc:
   - ./configuration-framework/completely-custom-configuration.md
   - ./configuration-framework/configuration-model-listener-reference.md
 uuid: 51528863-e2d6-4ca8-9c87-77de6fa1e79d
+taxonomy-category-names:
+- Development and Tooling
+- Core Frameworks
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Configuration Framework
 

@@ -1,5 +1,11 @@
 ---
 uuid: a0ed43be-a68b-4d44-b0cf-533ebedb1d39
+taxonomy-category-names:
+- Development and Tooling
+- Core Frameworks
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Scoping Configurations
 

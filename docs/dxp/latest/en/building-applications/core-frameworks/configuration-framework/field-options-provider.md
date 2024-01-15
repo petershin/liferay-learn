@@ -1,5 +1,11 @@
 ---
 uuid: d1805133-04db-40d4-9015-db658865487e
+taxonomy-category-names:
+- Development and Tooling
+- Core Frameworks
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Field Options Provider
 

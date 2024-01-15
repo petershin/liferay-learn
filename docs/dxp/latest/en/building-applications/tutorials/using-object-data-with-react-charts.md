@@ -1,5 +1,11 @@
 ---
 uuid: 47e8890e-1dde-4c95-bb3a-56eb09f18b1a
+taxonomy-category-names:
+- Development and Tooling
+- Objects
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Using Object Data with React Charts
 

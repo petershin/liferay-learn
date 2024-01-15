@@ -1,5 +1,10 @@
 ---
 uuid: 81a1b13c-c5c4-4f62-a50c-8462ea8b38e3
+taxonomy-category-names:
+- Development and Tooling
+- Client Extensions
+- Liferay Self-Hosted
+- Liferay SaaS
 ---
 # Defining a Custom Data Schema
 

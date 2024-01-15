@@ -1,5 +1,11 @@
 ---
 uuid: 859fbb23-6865-49ab-93a3-8ef9b6362ec5
+taxonomy-category-names:
+- Development and Tooling
+- Objects
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Building a Time Off Requester
 

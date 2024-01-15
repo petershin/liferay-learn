@@ -4,6 +4,11 @@ toc:
   - ./tutorials/building-a-time-off-requester.md
   - ./tutorials/using-object-data-with-react-charts.md
 uuid: 8a02cea6-7ad8-477c-96c6-acb74887a886
+taxonomy-category-names:
+- Development and Tooling
+- Client Extensions
+- Liferay Self-Hosted
+- Liferay SaaS
 ---
 # Tutorials
 

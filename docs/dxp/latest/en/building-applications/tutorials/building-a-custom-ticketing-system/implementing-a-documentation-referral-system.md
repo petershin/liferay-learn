@@ -1,5 +1,10 @@
 ---
 uuid: 75d5181a-ccd8-4087-9769-0bf1161392dd
+taxonomy-category-names:
+- Development and Tooling
+- Client Extensions
+- Liferay Self-Hosted
+- Liferay SaaS
 ---
 # Implementing a Documentation Referral System
 

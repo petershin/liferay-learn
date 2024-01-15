@@ -1,5 +1,10 @@
 ---
 uuid: daad9c54-8f8e-4f60-80bf-cf4ad60d2084
+taxonomy-category-names:
+- Development and Tooling
+- Client Extensions
+- Liferay Self-Hosted
+- Liferay SaaS
 ---
 # Ticket Management with Cron Jobs
 

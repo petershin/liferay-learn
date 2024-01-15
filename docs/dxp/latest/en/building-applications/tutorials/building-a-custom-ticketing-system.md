@@ -6,6 +6,11 @@ toc:
   - ./building-a-custom-ticketing-system/implementing-a-documentation-referral-system.md
   - ./building-a-custom-ticketing-system/ticket-management-with-cron-jobs.md
 uuid: e0218ddf-a7b1-4cc2-8f5d-ccc930d0704c
+taxonomy-category-names:
+- Development and Tooling
+- Client Extensions
+- Liferay Self-Hosted
+- Liferay SaaS
 ---
 # Building a Custom Ticketing System
 

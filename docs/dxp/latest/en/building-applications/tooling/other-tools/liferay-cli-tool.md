@@ -1,5 +1,11 @@
 ---
 uuid: fcbb7849-0fc9-472f-98f9-b2d1d416b299
+taxonomy-category-names:
+- Development and Tooling
+- Developer Tools
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Liferay CLI Tool
 

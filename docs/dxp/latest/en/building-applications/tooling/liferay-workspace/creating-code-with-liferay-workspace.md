@@ -1,5 +1,11 @@
 ---
 uuid: ff12f679-5b33-4023-bdaa-1254cd74e415
+taxonomy-category-names:
+- Development and Tooling
+- Developer Tools
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Creating Code with Liferay Workspace
 

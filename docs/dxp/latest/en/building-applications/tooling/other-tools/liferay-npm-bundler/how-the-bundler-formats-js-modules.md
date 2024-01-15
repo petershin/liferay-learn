@@ -1,5 +1,11 @@
 ---
 uuid: 65cb6b45-7e7f-4def-b51b-a06c0b5a3c3f
+taxonomy-category-names:
+- Development and Tooling
+- Developer Tools
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # How JavaScript Modules are Formatted for AMD
 

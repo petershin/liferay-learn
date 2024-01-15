@@ -1,5 +1,11 @@
 ---
 uuid: 162231c1-b834-4c59-a0f0-a66f97ae056e
+taxonomy-category-names:
+- Development and Tooling
+- Developer Tools
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Default Bundler Loaders
 

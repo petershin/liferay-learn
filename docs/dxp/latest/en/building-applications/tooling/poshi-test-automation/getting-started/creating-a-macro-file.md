@@ -1,5 +1,11 @@
 ---
 uuid: d4f43453-4767-433b-a20f-2454a73e4e43
+taxonomy-category-names:
+- Development and Tooling
+- Developer Tools
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Creating a Macro File
 

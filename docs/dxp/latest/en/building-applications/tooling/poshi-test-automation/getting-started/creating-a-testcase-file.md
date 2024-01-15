@@ -1,5 +1,11 @@
 ---
 uuid: 66b3c1f2-9230-4d6f-aa6f-b0e6f82979d8
+taxonomy-category-names:
+- Development and Tooling
+- Developer Tools
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Creating the Testcase File
 

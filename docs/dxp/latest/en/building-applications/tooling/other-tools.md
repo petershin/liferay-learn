@@ -3,6 +3,12 @@ toc:
   - ./other-tools/liferay-cli-tool.md
   - ./other-tools/liferay-npm-bundler.md
 uuid: 16f8e0dc-c246-42bd-8dfc-04e9804b9a6f
+taxonomy-category-names:
+- Development and Tooling
+- Developer Tools
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Other Tools
 

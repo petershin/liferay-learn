@@ -1,5 +1,11 @@
 ---
 uuid: 6b9e26cb-24a4-47b4-9452-5cc593d736ef
+taxonomy-category-names:
+- Development and Tooling
+- Developer Tools
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # How the Bundler Publishes npm Packages
 

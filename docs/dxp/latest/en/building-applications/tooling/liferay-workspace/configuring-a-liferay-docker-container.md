@@ -1,5 +1,11 @@
 ---
 uuid: 5c7a4ac5-4515-4b0a-b70e-ebb942b49545
+taxonomy-category-names:
+- Development and Tooling
+- Developer Tools
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Configuring a Liferay Docker Container
 

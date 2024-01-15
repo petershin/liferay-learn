@@ -1,5 +1,11 @@
 ---
 uuid: 24616d87-1004-4c15-a8f6-2a5b2f25c1c4
+taxonomy-category-names:
+- Development and Tooling
+- Developer Tools
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Migrating a liferay-npm-bundler Project from 1.x to 2.x
 

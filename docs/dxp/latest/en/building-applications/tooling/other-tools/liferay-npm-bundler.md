@@ -14,6 +14,12 @@ toc:
     ./liferay-npm-bundler/the-structure-of-osgi-bundles-containing-npm-packages.md
   - ./liferay-npm-bundler/bundler-migration-guide.md
 uuid: d5fcf6b5-73b4-47d1-8164-f0cc600167a3
+taxonomy-category-names:
+- Development and Tooling
+- Developer Tools
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Liferay npm Bundler
 

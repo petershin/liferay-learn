@@ -1,5 +1,11 @@
 ---
 uuid: b9ffc0aa-aaf4-4019-92dc-e573a01af389
+taxonomy-category-names:
+- Development and Tooling
+- Developer Tools
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Migrating an Angular Project to Use Liferay npm Bundler 2.x
 

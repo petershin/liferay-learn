@@ -11,6 +11,12 @@ myst:
   html_meta:
     documentation-type: user-guide
 uuid: e089bd08-a0c4-4b74-b0fa-5e533cdfb7c3
+taxonomy-category-names:
+- Development and Tooling
+- Developer Tools
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 
 # Getting Started

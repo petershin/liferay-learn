@@ -1,5 +1,11 @@
 ---
 uuid: 37e008ee-79b5-418a-a8d3-ba57e4663389
+taxonomy-category-names:
+- Development and Tooling
+- Developer Tools
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # OSGi Bundles and npm Package Structure
 

@@ -1,5 +1,11 @@
 ---
 uuid: ed5d9ac8-33ab-479d-b091-8ee0d7328832
+taxonomy-category-names:
+- Development and Tooling
+- Developer Tools
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Developer Tools Overview
 

@@ -1,5 +1,11 @@
 ---
 uuid: 6582b43b-bf32-44d5-84dc-d06d677bd5a3
+taxonomy-category-names:
+- Development and Tooling
+- Developer Tools
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Running a Test
 

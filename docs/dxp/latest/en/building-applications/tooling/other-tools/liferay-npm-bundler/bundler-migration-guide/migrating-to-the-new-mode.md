@@ -1,5 +1,11 @@
 ---
 uuid: 67aa8f06-901d-407a-ab74-6eea33f6a228
+taxonomy-category-names:
+- Development and Tooling
+- Developer Tools
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Migrating Your Project to Use liferay-npm-bundler's New Mode
 

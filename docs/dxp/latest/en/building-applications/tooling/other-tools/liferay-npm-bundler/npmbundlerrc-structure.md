@@ -1,5 +1,11 @@
 ---
 uuid: 9c342e62-79cc-4b56-9bac-e1cc3e4aba35
+taxonomy-category-names:
+- Development and Tooling
+- Developer Tools
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Understanding the npmbundlerrc Structure
 

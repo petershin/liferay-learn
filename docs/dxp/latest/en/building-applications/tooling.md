@@ -7,6 +7,12 @@ toc:
   - ./tooling/other-tools.md
   - ./tooling/reference.md
 uuid: 61624733-2570-4d8a-873b-d66a51539bf0
+taxonomy-category-names:
+- Development and Tooling
+- Developer Tools
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Tooling
 

@@ -1,5 +1,11 @@
 ---
 uuid: bfc38e22-1ab2-41c4-b853-3b2606a185cf
+taxonomy-category-names:
+- Development and Tooling
+- Developer Tools
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Understanding the Liferay npm Bundler Loader
 

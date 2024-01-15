@@ -1,5 +1,11 @@
 ---
 uuid: 76092f1f-0ab1-4a37-8eb7-6cba62db0477
+taxonomy-category-names:
+- Development and Tooling
+- Developer Tools
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Using Variables
 

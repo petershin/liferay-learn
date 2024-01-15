@@ -1,5 +1,11 @@
 ---
 uuid: aad6a3dd-a85c-4c81-8612-eeeebf94a387
+taxonomy-category-names:
+- Development and Tooling
+- Developer Tools
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Generating Projects with Blade CLI
 

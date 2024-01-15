@@ -1,5 +1,11 @@
 ---
 uuid: 93d457e7-711c-48dd-bf1b-cb4b07c3a84a
+taxonomy-category-names:
+- Development and Tooling
+- Developer Tools
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Migrating a Plain JavaScript, Billboard JS, JQuery, Metal JS, React, or Vue JS Project to Use Liferay npm Bundler 2.x
 

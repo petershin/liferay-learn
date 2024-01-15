@@ -1,5 +1,11 @@
 ---
 uuid: 3a9bf74d-b5e1-4a88-a483-bf77bcdaa8b0
+taxonomy-category-names:
+- Development and Tooling
+- Developer Tools
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Troubleshooting Blade CLI
 

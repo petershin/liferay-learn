@@ -1,5 +1,11 @@
 ---
 uuid: 042cc0b5-fa06-4cac-8a46-a6c31a1fcd96
+taxonomy-category-names:
+- Development and Tooling
+- Developer Tools
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Macros
 

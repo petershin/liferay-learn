@@ -1,5 +1,11 @@
 ---
 uuid: 97065f32-200b-43a4-a29d-5408a8416e47
+taxonomy-category-names:
+- Development and Tooling
+- Developer Tools
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Poshi Advantages
 

@@ -1,5 +1,11 @@
 ---
 uuid: 48c598d5-1f05-4078-8c65-f0ce19d6349d
+taxonomy-category-names:
+- Development and Tooling
+- Developer Tools
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Using the Bootstrap 3 Compatibility Layer in Liferay 7.4
 

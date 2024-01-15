@@ -6,6 +6,12 @@ myst:
   html_meta:
     documentation-type: user-guide
 uuid: 1e57c9cf-7fc2-4157-b013-ff645bc0d31e
+taxonomy-category-names:
+- Development and Tooling
+- Developer Tools
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 
 # Poshi Resources

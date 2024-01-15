@@ -1,5 +1,11 @@
 ---
 uuid: 881bca68-c899-4652-a8b7-a0cf8bc3d4f2
+taxonomy-category-names:
+- Development and Tooling
+- Developer Tools
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # How AMD Loader Configuration is Exported
 

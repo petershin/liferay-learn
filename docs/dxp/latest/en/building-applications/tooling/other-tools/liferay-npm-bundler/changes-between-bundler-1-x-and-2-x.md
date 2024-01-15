@@ -1,5 +1,11 @@
 ---
 uuid: d3f64d45-b095-4f4d-84c5-098dbb8e2e5b
+taxonomy-category-names:
+- Development and Tooling
+- Developer Tools
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Changes Between Bundler 1.x and 2.x
 

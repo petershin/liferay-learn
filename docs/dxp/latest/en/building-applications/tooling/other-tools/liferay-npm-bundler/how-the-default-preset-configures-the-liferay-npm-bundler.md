@@ -1,5 +1,11 @@
 ---
 uuid: b22b0dbf-3874-430d-8d21-1630821c57b3
+taxonomy-category-names:
+- Development and Tooling
+- Developer Tools
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Understanding Bundler Configuration Presets
 

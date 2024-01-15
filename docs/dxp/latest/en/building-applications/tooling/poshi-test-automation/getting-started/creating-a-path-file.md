@@ -1,5 +1,11 @@
 ---
 uuid: 7674a634-411c-4e00-99ea-0eaa927bc2cc
+taxonomy-category-names:
+- Development and Tooling
+- Developer Tools
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Creating A Path File
 

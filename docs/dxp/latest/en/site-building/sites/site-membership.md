@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Site Administration
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 toc:
   - ./site-membership/adding-members-to-sites.md
   - ./site-membership/inviting-members-to-your-site.md

@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Widgets
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 toc:
    - ./using-widgets/default-widgets-reference.md
    - ./using-widgets/configuring-widgets.md

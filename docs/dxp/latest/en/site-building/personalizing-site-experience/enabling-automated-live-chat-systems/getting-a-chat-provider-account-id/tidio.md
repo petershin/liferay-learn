@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Personalization
+- Live Chat
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: f43802af-9346-4b4d-9807-5a486fd25851
 ---
 # Tidio

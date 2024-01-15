@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Platform
+- Staging
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: fa9b419d-3b2f-45c7-b641-b6fcbaf0f946
 ---
 # Managing Data and Content Types in Staging

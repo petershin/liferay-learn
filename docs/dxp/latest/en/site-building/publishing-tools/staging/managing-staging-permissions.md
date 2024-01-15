@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Platform
+- Staging
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 5733b2c8-4f29-4cd8-8307-7737aed1786d
 ---
 # Managing Staging Permissions

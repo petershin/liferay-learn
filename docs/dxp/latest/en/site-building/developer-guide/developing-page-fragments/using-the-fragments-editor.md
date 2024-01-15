@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Fragments
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 394bfac1-4f63-4799-bb0e-46e9c988512f
 ---
 # Using the Fragments Editor

@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Fragments
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 toc:
   - ./developing-page-fragments/developing-fragments-intro.md
   - ./developing-page-fragments/using-the-fragments-editor.md

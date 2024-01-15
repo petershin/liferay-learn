@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Content Pages
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 26a907e5-c7ed-4110-813f-779eacd72917
 ---
 # Managing Content in Content Pages

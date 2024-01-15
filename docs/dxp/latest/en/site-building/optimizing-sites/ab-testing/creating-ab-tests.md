@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Personalization
+- A/B Testing
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 7ce3c63d-0836-4f8d-845b-5b0a832273fb
 ---
 # Creating A/B Tests

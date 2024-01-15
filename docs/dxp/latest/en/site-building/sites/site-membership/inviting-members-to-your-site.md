@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- User Invitations
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 25943f05-707d-4b45-ba84-2f55d60d8a79
 ---
 # Inviting Members to Your Site

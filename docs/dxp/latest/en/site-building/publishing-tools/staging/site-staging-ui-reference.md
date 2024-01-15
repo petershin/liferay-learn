@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Platform
+- Staging
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 1c97241d-4b80-4c13-b7b5-ab2f3fe8fac5
 ---
 # Site Staging UI Reference

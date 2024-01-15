@@ -1,4 +1,11 @@
 ---
+taxonomy-category-names:
+- Sites
+- Widgets
+- Fragments
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 toc:
    - ./page-fragments-and-widgets/using-fragments.md
    - ./page-fragments-and-widgets/using-widgets.md

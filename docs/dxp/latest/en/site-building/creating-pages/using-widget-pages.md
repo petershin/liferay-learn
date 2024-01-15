@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Widget Pages
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 toc:
    - ./using-widget-pages/adding-widgets-to-a-page.md
    - ./using-widget-pages/converting-widget-pages-to-content-pages.md

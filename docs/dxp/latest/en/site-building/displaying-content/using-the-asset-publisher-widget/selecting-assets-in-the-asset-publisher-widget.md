@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Widgets
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 8aba958f-0074-4664-bacd-fb45d164632e
 ---
 # Selecting Assets in the Asset Publisher Widget

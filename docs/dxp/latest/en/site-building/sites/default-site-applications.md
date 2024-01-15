@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Site Administration
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 9ea6fa61-0863-4b79-9508-5bf127cdb023
 ---
 # Default Site Applications

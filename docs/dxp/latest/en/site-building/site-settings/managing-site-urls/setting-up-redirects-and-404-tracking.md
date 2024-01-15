@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- SEO
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 toc:
   - ./setting-up-redirects-and-404-tracking/using-alias-redirects.md
   - ./setting-up-redirects-and-404-tracking/using-pattern-redirects.md

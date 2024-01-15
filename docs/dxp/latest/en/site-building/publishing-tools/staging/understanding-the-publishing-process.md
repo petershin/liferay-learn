@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Platform
+- Staging
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 3572cd09-2cb0-4688-953d-7a6958b5e756
 ---
 # Understanding the Publishing Process

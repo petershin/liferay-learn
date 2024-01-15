@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Platform
+- Publications
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 32c58f12-9408-4ccd-bd8f-5c100c0e99e6
 ---
 # Reverting Changes

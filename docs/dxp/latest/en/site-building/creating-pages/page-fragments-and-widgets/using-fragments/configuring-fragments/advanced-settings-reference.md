@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Fragments
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 8dab7deb-e689-434a-8e1b-fcd86ccf396f
 ---
 # Advanced Settings Reference

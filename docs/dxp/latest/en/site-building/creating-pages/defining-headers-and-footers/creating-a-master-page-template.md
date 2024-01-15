@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Master Page Templates
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: da11494c-c781-41b6-8b91-4e4d117851c3
 ---
 # Creating a Master Page Template

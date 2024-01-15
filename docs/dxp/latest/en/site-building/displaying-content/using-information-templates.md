@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Information Templates
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: f8e95a71-2583-4bc4-8774-233c960c325d
 ---
 # Using Information Templates

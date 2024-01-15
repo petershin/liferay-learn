@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Widget Pages
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 73b29e35-51d6-4fd0-822a-62a1fa316430
 ---
 # Adding Widgets to a Page

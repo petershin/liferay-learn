@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Personalization
+- Static and Dynamic User Segments
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 toc:
   - ./personalizing-site-experience/segmentation.md
   - ./personalizing-site-experience/experience-personalization.md

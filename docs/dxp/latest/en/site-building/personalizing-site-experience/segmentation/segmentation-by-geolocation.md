@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Personalization
+- Static and Dynamic User Segments
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: db94b834-100e-44a6-8d45-0f1ab870f547
 ---
 # Segmentation By Geolocation

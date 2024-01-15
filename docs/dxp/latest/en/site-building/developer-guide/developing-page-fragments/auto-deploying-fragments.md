@@ -1,4 +1,9 @@
 ---
+taxonomy-category-names:
+- Sites
+- Fragments
+- Liferay Self-Hosted
+- Liferay PaaS
 uuid: f3bb512e-5954-47b2-bf3d-bccaee642919
 ---
 # Auto-Deploying Fragments

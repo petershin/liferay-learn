@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- SEO
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 0c27b5b6-ea92-423e-8bbe-bd15918cc1e1
 ---
 # Configuring Virtual Hosts Site URLs

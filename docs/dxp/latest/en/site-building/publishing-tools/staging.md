@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Platform
+- Staging
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 toc:
   - ./staging/understanding-the-publishing-process.md
   - ./staging/configuring-local-live-staging.md

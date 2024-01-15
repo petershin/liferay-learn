@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Content Management System
+- Content Configurations
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 79a0f05d-fdc2-4a0a-a705-1dc631124a89
 ---
 # Managing Content Sharing Across Sites

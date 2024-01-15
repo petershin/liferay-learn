@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Personalization
+- Live Chat
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 9825aba1-35cd-43a8-a8ea-893a99e20fe3
 ---
 # Chatwoot

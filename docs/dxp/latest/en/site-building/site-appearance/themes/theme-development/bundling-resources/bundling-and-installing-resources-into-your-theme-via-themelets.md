@@ -1,4 +1,9 @@
 ---
+taxonomy-category-names:
+- Sites
+- Themes
+- Liferay Self-Hosted
+- Liferay PaaS
 uuid: caa4e7b7-d76f-4bb4-8198-843afc7fd6ce
 ---
 # Bundling and Installing Resources into Your Theme via Themelets

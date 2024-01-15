@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Fragments
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 1ec379d2-11e2-4123-8b53-2a6a2919fe21
 ---
 # Setting the Order of Elements in a Fragment

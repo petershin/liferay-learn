@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Site Administration
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 96446801-dfc7-4c57-a007-4e6ea5c98c7b
 ---
 # Site Hierarchies

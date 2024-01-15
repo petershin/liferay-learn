@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Platform
+- Publications
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: b1426540-9d0f-4387-b7fa-3dc44336cb94
 ---
 # Resolving Conflicts

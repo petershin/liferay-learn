@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Site Administration
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 33c781c1-c24e-44fe-8efc-90c0327abc3f
 ---
 # Adding a Site

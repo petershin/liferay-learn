@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Fragments
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: b033d85b-20dd-49ae-a1fb-9b651afe621a
 ---
 # Styles Reference

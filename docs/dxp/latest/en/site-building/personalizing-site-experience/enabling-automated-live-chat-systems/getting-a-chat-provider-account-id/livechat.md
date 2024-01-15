@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Personalization
+- Live Chat
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 6f73f42b-df65-41a7-8d09-70e64a3a133f
 ---
 # LiveChat

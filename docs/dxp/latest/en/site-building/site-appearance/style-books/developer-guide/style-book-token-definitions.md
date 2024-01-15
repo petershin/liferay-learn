@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Style Books
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 28fd229f-2eb5-4c12-bc0b-cc33b2a0e859
 ---
 

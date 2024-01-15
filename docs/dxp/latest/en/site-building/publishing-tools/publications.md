@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Platform
+- Publications
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 toc:
   - ./publications/enabling-publications.md
   - ./publications/creating-and-managing-publications.md

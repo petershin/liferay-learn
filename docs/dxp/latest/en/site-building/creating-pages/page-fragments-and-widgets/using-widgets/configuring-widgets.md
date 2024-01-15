@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Widgets
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 toc:
    - ./configuring-widgets/exporting-importing-widget-data.md
    - ./configuring-widgets/communication-between-widgets.md

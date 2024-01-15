@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Pages and Composition
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 71e441a1-8c7c-468f-a758-b4e1cb9d185d
 ---
 # Configuring Locked Pages

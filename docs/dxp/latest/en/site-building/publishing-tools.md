@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Platform
+- Publishing Tools
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 toc:
   - ./publishing-tools/comparing-publishing-tools.md
   - ./publishing-tools/publications.md

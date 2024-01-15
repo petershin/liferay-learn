@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Personalization
+- Live Chat
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 8622edb3-0879-46e4-a8f8-7a8d340d9af7
 ---
 # Crisp

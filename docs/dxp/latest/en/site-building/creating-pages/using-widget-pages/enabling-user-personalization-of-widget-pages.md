@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Widget Pages
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 61ceeffc-f4d1-4ed7-b6da-b6ed011dd710
 ---
 # Enabling User Personalization of Widget Pages

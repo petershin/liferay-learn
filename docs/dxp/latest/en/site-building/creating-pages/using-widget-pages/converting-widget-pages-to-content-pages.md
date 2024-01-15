@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Widget Pages
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 7da80e15-5bb6-4751-ad80-fa8465581172
 ---
 # Converting Widget Pages to Content Pages

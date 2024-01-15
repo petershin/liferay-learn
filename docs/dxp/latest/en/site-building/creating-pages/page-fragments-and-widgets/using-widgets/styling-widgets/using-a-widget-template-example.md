@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Widgets
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 0c693fc3-55b5-4767-9a9c-e13529a85aae
 ---
 # Using a Widget Template Example

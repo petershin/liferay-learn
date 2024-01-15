@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Personalization
+- Static and Dynamic User Segments
+- Upgrade
+- Liferay Self-Hosted
+- Liferay PaaS
 toc:
   - >-
     ./migration-from-audience-targeting/migrating-to-segmentation-and-personalization.md

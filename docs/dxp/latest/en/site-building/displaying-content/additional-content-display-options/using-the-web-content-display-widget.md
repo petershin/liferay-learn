@@ -1,4 +1,11 @@
 ---
+taxonomy-category-names:
+- Sites
+- Widgets
+- Web Content and Structures
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: a0ed0240-bce1-4e6c-97b9-bf75491b83e9
 ---
 # Using the Web Content Display Widget

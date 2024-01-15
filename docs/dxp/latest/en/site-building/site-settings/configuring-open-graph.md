@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- SEO
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: c85f3045-c786-448a-aef9-2388660b7397
 ---
 # Configuring Open Graph

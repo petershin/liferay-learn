@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Content Pages
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: d09834c8-8e44-4e27-8ee6-99e5edf91350
 ---
 # Using Widgets on a Content Page

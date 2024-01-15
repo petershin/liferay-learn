@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Style Books
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 toc:
   - ./style-books/using-a-style-book-to-standardize-site-appearance.md
   - ./style-books/exporting-and-importing-style-books.md

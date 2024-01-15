@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Digital Asset Management
+- Documents and Media
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 0fe8df51-9ca7-448a-af84-924d788e79ac
 ---
 # Securing Site Documents Content

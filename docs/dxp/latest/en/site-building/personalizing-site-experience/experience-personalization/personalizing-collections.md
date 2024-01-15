@@ -1,4 +1,11 @@
 ---
+taxonomy-category-names:
+- Personalization
+- Experience Personalization
+- Collections
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 5f12dd5f-aceb-4923-b761-bcb2906d8b9a
 ---
 # Personalizing Collections

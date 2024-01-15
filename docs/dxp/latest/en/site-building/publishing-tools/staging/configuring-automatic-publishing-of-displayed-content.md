@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Platform
+- Staging
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 26a24696-81e4-4f4b-9735-e36eb34de9cd
 ---
 # Configuring Automatic Publishing of Displayed Content

@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Personalization
+- Live Chat
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 toc:
   - ./enabling-automated-live-chat-systems/getting-a-chat-provider-account-id.md
 uuid: eaf9a214-8e50-4e0e-a818-e96a21098e2e

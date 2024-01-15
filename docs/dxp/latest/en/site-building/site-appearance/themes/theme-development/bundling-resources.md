@@ -1,4 +1,9 @@
 ---
+taxonomy-category-names:
+- Sites
+- Themes
+- Liferay Self-Hosted
+- Liferay PaaS
 toc:
   - ./bundling-resources/bundling-a-thumbnail-preview-into-your-theme.md
   - >-

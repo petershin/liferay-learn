@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- SEO
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 86f08f77-e511-4054-86eb-13cf4b3dd3ba
 ---
 # Using Pattern Redirects

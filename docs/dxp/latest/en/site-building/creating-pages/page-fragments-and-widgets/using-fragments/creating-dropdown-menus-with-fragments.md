@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Fragments
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 83f18292-8fdd-4d16-9f4d-0d065e4b0aca
 ---
 # Creating Dropdown Menus with Fragments

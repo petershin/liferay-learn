@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Localization
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: ce0a8b5e-a09a-49bf-98c5-47ff980b6a7c
 ---
 # Site Localization

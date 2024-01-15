@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Page Templates
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 22635fa9-bca6-427c-8e6d-ab9f22b5c4c7
 ---
 # Creating a Page Template

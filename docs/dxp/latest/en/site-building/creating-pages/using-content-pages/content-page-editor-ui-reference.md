@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Content Pages
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 7546c519-0350-4811-9577-635d4d1cddec
 ---
 # Content Page Editor UI Reference

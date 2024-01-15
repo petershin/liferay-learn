@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Platform
+- Publications
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 50898f75-135c-4b46-ae9d-b32ce3c80351
 ---
 # Using Publication Templates

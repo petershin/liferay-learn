@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Pages and Composition
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 toc:
   - ./displaying-content/displaying-content-intro.md
   - ./displaying-content/using-collections.md

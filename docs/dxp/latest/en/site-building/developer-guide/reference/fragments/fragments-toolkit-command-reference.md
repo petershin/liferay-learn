@@ -1,4 +1,9 @@
 ---
+taxonomy-category-names:
+- Sites
+- Fragments
+- Liferay Self-Hosted
+- Liferay PaaS
 uuid: afe56739-fa42-4145-a09a-24c56a0b9ec8
 ---
 # Fragments Toolkit Command Reference

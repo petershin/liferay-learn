@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Display Page Templates
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 toc:
     - ./using-display-page-templates.md
     - >-

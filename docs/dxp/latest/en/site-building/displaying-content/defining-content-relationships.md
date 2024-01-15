@@ -1,4 +1,11 @@
 ---
+taxonomy-category-names:
+- Sites
+- Widgets
+- Web Content and Structures
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: ee58e0f2-05fb-46aa-b058-90e7b7dcf21c
 ---
 # Defining Content Relationships

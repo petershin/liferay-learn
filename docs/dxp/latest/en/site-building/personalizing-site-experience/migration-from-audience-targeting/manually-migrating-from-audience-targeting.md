@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Personalization
+- Static and Dynamic User Segments
+- Upgrade
+- Liferay Self-Hosted
+- Liferay PaaS
 uuid: 28ec84a2-e8ed-4564-84eb-d8289a5c1139
 ---
 # Manually Migrating from Audience Targeting

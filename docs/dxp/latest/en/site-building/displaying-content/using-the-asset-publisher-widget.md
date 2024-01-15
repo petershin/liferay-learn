@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Widgets
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 toc:
   - >-
     ./using-the-asset-publisher-widget/displaying-assets-using-the-asset-publisher-widget.md

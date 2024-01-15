@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Personalization
+- Experience Personalization
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 toc:
   - ./experience-personalization/content-page-personalization.md
   - ./experience-personalization/creating-and-managing-experiences.md

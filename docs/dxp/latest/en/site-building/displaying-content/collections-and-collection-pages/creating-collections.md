@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Collections
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 651a3ecc-7ffe-48af-903e-29e46036c510
 ---
 # Creating Collections

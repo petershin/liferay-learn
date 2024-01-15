@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Pages and Composition
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: aaa9de0f-6a67-46ae-8d09-1ea9139b8465
 ---
 # Configuring Your Page's Friendly URL

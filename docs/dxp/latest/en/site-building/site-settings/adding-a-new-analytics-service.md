@@ -1,4 +1,11 @@
 ---
+taxonomy-category-names:
+- Sites
+- Site Administration
+- Analytics Cloud Administration
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 69f3fd6d-cc4a-4e49-a547-a629debd09dd
 ---
 # Adding a New Analytics Service

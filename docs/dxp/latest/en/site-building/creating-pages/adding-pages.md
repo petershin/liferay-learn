@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Pages and Composition
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 toc:
   - ./adding-pages/adding-a-page-to-a-site.md
   - ./adding-pages/creating-a-page-template.md

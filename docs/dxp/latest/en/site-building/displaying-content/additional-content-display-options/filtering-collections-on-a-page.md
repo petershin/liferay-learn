@@ -1,4 +1,11 @@
 ---
+taxonomy-category-names:
+- Sites
+- Collections
+- Fragments
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: aacb0f64-befc-459b-8164-2632904cd071
 ---
 # Filtering Collections on a Page

@@ -1,4 +1,9 @@
 ---
+taxonomy-category-names:
+- Sites
+- Themes
+- Liferay Self-Hosted
+- Liferay PaaS
 uuid: 6e7086c0-033f-489e-815a-471dac938005
 ---
 # Setting Up an Environment and Creating a Theme

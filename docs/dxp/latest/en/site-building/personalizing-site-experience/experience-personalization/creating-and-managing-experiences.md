@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Personalization
+- Experience Personalization
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: cd5b1418-5edb-4225-93dc-7a6b3cca6341
 ---
 # Creating and Managing Experiences

@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Fragments
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 5d8d254a-1f19-450c-9b59-2c0b677888ae
 ---
 # Configuring Fragment Visibility

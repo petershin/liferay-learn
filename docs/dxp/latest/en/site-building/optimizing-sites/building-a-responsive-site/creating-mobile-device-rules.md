@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Accessibility
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: c38833db-0ea1-4875-9554-ae470fb66f0f
 ---
 # Creating Mobile Device Rules

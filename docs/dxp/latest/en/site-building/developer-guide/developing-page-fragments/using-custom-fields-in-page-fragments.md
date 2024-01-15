@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Fragments
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 122b1300-ebfc-4bb7-adea-b334e0dfd221
 ---
 # Using Custom Fields in Page Fragments

@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Accessibility
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 4ce30a4a-1d13-4b1d-a48e-dad2594a31ba
 ---
 # Using the Simulation Panel

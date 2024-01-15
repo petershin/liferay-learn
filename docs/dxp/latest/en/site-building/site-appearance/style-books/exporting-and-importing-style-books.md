@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Style Books
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 616640a4-732c-4cf3-b735-c66ffe1a15c1
 ---
 # Exporting and Importing Style Books

@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Platform
+- Publications
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 065ba9d2-8610-4dc8-b8d8-0f68dadda5d5
 ---
 # Creating and Managing Publications

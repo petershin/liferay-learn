@@ -1,4 +1,11 @@
 ---
+taxonomy-category-names:
+- Platform
+- Staging
+- Asset Libraries
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 1c613c9c-ccac-4e1c-8ca5-e9d7657c7e9a
 ---
 # Using Staging in Asset Libraries

@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Page Templates
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: b2f71d60-7c6b-4be7-94fd-d8ea048c6dbf
 ---
 # Exporting and Importing Page Templates

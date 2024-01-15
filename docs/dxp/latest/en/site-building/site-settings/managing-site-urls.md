@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- SEO
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 toc:
   - ./managing-site-urls/configuring-your-sites-friendly-url.md
   - ./managing-site-urls/configuring-virtual-hosts-site-urls.md

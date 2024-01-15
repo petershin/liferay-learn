@@ -1,4 +1,9 @@
 ---
+taxonomy-category-names:
+- Sites
+- Themes
+- Liferay Self-Hosted
+- Liferay PaaS
 uuid: 0fb8fded-821e-40da-aa4b-d551f9eea563
 ---
 # Upgrading a Theme

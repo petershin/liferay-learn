@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Social Tools and User Engagement
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 919ea794-c5a8-486d-b1df-f91d13bc8e1a
 ---
 # Using Page Comments

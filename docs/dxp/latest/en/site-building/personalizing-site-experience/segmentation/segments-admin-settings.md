@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Personalization
+- Static and Dynamic User Segments
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: adfd0b75-2a15-4b64-8d27-ea2746d25357
 ---
 # Segments Admin Settings

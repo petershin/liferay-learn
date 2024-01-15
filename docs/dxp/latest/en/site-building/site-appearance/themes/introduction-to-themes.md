@@ -1,4 +1,9 @@
 ---
+taxonomy-category-names:
+- Sites
+- Themes
+- Liferay Self-Hosted
+- Liferay PaaS
 uuid: 522406ee-cb1d-4784-897f-8d5e40f991c8
 ---
 # Introduction to Themes

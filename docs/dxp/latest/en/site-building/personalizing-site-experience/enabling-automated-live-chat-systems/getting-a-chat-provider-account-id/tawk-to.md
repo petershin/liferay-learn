@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Personalization
+- Live Chat
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 4d289ff9-f053-432d-a371-bc59425ed03e
 ---
 # Tawk.to

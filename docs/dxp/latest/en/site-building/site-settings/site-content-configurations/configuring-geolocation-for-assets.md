@@ -1,4 +1,11 @@
 ---
+taxonomy-category-names:
+- Content Management System
+- Content Configurations
+- Localization
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 5870418b-597c-4930-9bf5-b92373c9b811
 ---
 # Configuring Geolocation for Assets

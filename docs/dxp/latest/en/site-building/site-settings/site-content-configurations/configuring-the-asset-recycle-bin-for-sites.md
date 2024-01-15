@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Content Management System
+- Content Configurations
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 1f79bd0e-9ebd-4f66-9044-334c220a9be7
 ---
 # Configuring the Asset Recycle Bin for Sites

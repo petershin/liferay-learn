@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Personalization
+- Static and Dynamic User Segments
+- Upgrade
+- Liferay Self-Hosted
+- Liferay PaaS
 uuid: 6dc6b34a-ae3a-4b67-9d83-a11424b9fda2
 ---
 # Migrating to Segmentation and Personalization

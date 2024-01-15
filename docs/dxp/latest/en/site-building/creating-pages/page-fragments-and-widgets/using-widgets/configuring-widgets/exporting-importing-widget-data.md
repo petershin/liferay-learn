@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Widgets
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 78bd1ead-9c98-45bb-b4b1-1aeef4eb8d89
 ---
 # Exporting/Importing Widget Data

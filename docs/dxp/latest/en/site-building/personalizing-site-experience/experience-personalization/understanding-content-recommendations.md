@@ -1,4 +1,11 @@
 ---
+taxonomy-category-names:
+- Personalization
+- User Interests and Content Recommendations
+- Analytics Cloud Administration
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: a065fcab-d416-4c48-8603-8b4d82d83db9
 ---
 # Understanding Content Recommendations

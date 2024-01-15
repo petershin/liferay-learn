@@ -1,4 +1,11 @@
 ---
+taxonomy-category-names:
+- Personalization
+- Experience Personalization
+- Content Pages
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: b66e7700-fcc7-4ce5-9d78-3277c88ab557
 ---
 # Content Page Personalization

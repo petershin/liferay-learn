@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Site Administration
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 044fab43-2666-4c99-ae59-e5c60fdc7516
 ---
 # Site Settings UI Reference

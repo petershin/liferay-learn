@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Widgets
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 87abd88b-e917-4702-9da3-b517bdbffcad
 ---
 # Configuring Widget Look and Feel

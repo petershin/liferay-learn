@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Widgets
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 toc:
   - ./styling-widgets/configuring-widget-look-and-feel.md
   - ./styling-widgets/creating-a-widget-template.md

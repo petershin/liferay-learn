@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Widgets
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: b9eead1c-5b9a-4c1c-8fdf-7e69598ccb13
 ---
 # Setting Widget Permissions

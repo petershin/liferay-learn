@@ -1,4 +1,11 @@
 ---
+taxonomy-category-names:
+- Platform
+- Publications
+- Workflow
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 49935b09-39cf-4f23-b8e0-aad6cc621a44
 ---
 # Using Workflow with Publications

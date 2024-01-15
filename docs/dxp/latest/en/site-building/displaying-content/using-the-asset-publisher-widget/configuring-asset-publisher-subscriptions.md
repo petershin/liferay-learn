@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Widgets
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: bb97bf36-80c8-4194-a570-3af8075cc697
 ---
 # Configuring Asset Publisher Subscriptions

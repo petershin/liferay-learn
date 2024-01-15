@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Site Administration
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: e253af5f-e55d-45f1-a5a9-577d5e8b8443
 ---
 # Exporting/Importing Site Pages and Content

@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Personalization
+- A/B Testing
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 toc:
   - ./ab-testing/ab-testing.md
   - ./ab-testing/verifying-ab-test-requirements.md

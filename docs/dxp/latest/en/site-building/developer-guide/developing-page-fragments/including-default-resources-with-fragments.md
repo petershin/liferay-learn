@@ -1,4 +1,9 @@
 ---
+taxonomy-category-names:
+- Sites
+- Fragments
+- Liferay Self-Hosted
+- Liferay PaaS
 uuid: ea5a94dc-2b89-487d-bc51-6a6eaa6f2938
 ---
 # Including Default Resources in Fragments

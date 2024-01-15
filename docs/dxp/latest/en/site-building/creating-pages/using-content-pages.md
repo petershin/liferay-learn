@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Content Pages
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 toc:
   - ./using-content-pages/adding-elements-to-content-pages.md
   - ./using-content-pages/managing-content-in-content-pages.md

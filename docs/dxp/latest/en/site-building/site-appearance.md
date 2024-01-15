@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Site Appearance and Design
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 toc:
   - ./site-appearance/site-appearance.md
   - ./creating-pages/defining-headers-and-footers/master-page-templates.md

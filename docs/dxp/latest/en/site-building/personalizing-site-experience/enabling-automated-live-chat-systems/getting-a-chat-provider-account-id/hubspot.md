@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Personalization
+- Live Chat
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 11528b7a-fea8-47e1-b45c-a7e5306d70d6
 ---
 # Hubspot

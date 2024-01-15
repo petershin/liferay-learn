@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Fragments
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 toc:
   - ./fragments/fragments-toolkit-command-reference.md
   - ./fragments/page-fragment-editor-interface-reference.md

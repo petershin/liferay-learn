@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Fragments
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 0602f11c-7650-4bc4-9071-79c6d8162689
 ---
 # Applying Styles to Fragments

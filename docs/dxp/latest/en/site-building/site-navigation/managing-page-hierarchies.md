@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Site Navigation
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 548cc2b3-ef37-46e1-a9d3-eebdafd1921c
 ---
 # Managing Page Hierarchies

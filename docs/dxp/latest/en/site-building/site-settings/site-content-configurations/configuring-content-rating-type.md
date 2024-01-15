@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Social Tools and User Engagement
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: f317a968-ef20-4832-b0e5-983f13339582
 ---
 # Configuring Content Rating Type

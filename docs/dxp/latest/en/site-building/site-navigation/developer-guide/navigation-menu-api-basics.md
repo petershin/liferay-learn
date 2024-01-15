@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Site Navigation
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 880fcb38-3db4-406a-a02d-7bfdff98f043
 ---
 # Navigation Menu API Basics

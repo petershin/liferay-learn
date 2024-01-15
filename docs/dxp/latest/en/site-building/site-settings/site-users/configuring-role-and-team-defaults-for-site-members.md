@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Site Administration
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 84769714-2ab1-41d9-90b6-c550f4d00ab1
 ---
 # Configuring Role and Team Defaults for Site Members

@@ -1,4 +1,11 @@
 ---
+taxonomy-category-names:
+- Sites
+- Display Page Templates
+- SEO
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 7a0e16df-8768-499c-aa23-f033f973ee70
 ---
 # Configuring SEO and Open Graph

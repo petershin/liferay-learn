@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Widgets
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 3615f3c0-721f-4ba5-abf8-f1d19826a20a
 ---
 # Sharing Widgets with Other Sites

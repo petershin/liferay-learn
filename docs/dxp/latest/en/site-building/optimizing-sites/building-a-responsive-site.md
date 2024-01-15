@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Accessibility
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 toc:
   - ./building-a-responsive-site/building-responsive-layouts-with-the-grid-fragment.md
   - ./building-a-responsive-site/using-the-simulation-panel.md

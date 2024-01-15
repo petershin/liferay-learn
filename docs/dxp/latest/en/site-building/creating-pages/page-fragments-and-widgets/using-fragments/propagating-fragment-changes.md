@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Fragments
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: b55c944a-3f81-4047-8166-7e87357dcc8f
 ---
 # Propagating Fragment Changes

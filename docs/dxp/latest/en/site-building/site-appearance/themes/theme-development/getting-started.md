@@ -1,4 +1,9 @@
 ---
+taxonomy-category-names:
+- Sites
+- Themes
+- Liferay Self-Hosted
+- Liferay PaaS
 toc:
   - ./getting-started/setting-up-an-environment-and-creating-a-theme.md
 uuid: ec5e1564-a946-47fb-bda7-cf2fc3917cf8

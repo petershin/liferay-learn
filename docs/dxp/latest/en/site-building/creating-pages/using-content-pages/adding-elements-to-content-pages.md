@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Content Pages
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 9aab8116-9767-4d13-be15-d5457771e6e3
 ---
 # Adding Elements to Content Pages

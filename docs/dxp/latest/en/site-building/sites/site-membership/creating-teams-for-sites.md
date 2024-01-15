@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Site Administration
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 76d9acad-74ab-4f1e-bde1-80b1d6979344
 ---
 # Creating Teams for Sites

@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Personalization
+- A/B Testing
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 7d675204-2a69-4cb9-b315-cfaad4ad9c4f
 ---
 # Verifying A/B Test Requirements

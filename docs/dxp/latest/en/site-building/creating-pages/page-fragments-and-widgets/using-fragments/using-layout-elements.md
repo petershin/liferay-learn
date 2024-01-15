@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Fragments
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: ea588e15-3ace-4843-a66b-8d3f61f86f27
 ---
 # Using Layout Elements

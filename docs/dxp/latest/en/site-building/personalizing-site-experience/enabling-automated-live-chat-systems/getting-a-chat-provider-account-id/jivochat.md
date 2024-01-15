@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Personalization
+- Live Chat
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 59092568-23c3-4d0c-9ebf-3dd9189edddc
 ---
 # JivoChat

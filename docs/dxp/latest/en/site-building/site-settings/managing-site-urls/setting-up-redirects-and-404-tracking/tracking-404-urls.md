@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- SEO
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: e2a9ffa0-7bbb-4457-b2ab-73c520c79bc9
 ---
 # Tracking 404 URLs

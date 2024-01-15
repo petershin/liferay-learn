@@ -1,4 +1,9 @@
 ---
+taxonomy-category-names:
+- Sites
+- Themes
+- Liferay Self-Hosted
+- Liferay PaaS
 toc:
   - ./theme-development/getting-started.md
   - ./theme-development/working-with-templates.md

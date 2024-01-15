@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- SEO
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: b65d9176-d694-4e53-8c3d-973fd6942ae8
 ---
 # Configuring Your Site's Friendly URL

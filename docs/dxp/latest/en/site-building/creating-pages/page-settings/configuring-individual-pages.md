@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Pages and Composition
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: f271b7fd-93dd-4692-acce-35d1d8ed2973
 ---
 # Configuring Individual Pages

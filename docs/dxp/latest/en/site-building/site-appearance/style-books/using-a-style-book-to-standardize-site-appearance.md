@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Style Books
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 88364ec4-ce77-4e8b-aa8d-fb5b6bd526c3
 ---
 # Using a Style Book to Standardize Site Appearance

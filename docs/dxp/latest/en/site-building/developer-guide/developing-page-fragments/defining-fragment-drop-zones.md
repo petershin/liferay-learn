@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Fragments
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: ac5e5ddc-ee51-48a5-86ac-ac47e6a0ea0e
 ---
 # Defining Fragment Drop Zones

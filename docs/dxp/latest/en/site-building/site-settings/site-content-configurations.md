@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Content Management System
+- Content Configurations
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 toc:
   - ./site-content-configurations/configuring-the-asset-recycle-bin-for-sites.md
   - ./site-content-configurations/configuring-content-rating-type.md

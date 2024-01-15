@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Pages and Composition
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 1079119c-21f5-48e6-aebb-4a6dfc8262ea
 ---
 # Adding a Page to a Site

@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Fragments
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 5db29a70-07cb-44a5-be7d-a8c06ae94401
 ---
 # Fragment Configuration Types Reference

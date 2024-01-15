@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- SEO
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 90e51a81-18ae-42b7-aa08-e802b6618597
 ---
 # Configuring Hreflang Meta Data

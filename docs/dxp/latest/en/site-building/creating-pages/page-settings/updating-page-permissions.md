@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Pages and Composition
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 8b9099c6-0666-4218-acc1-2a72b40ae63a
 ---
 # Updating Page Permissions

@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Master Page Templates
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 toc:
   - ./defining-headers-and-footers/master-page-templates.md
   - ./defining-headers-and-footers/creating-a-master-page-template.md

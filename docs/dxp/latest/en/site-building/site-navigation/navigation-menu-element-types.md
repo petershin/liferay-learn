@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Site Navigation
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 6a18b45c-ab65-4f88-ba22-8af68c3158d8
 ---
 # Navigation Menu Element Types

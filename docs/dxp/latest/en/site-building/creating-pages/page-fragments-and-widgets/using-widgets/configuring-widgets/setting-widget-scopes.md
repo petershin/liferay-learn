@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Widgets
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: b9aa51ac-0913-4b11-9169-01464403ec4c
 ---
 # Setting Widget Scopes

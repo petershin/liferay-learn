@@ -1,4 +1,11 @@
 ---
+taxonomy-category-names:
+- Platform
+- Staging
+- Widgets
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 221b8182-7251-4a9a-ac11-2c4a6ca93d20
 ---
 # Publishing Single Assets and Widgets

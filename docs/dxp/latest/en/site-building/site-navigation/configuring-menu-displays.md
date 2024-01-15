@@ -1,4 +1,12 @@
 ---
+taxonomy-category-names:
+- Sites
+- Site Navigation
+- Fragments
+- Widgets
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: e7769e8b-2afa-411c-bb53-413bddea507e
 ---
 # Configuring Menu Displays

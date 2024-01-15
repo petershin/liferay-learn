@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Site Navigation
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 toc:
   - ./site-navigation/managing-page-hierarchies.md
   - ./site-navigation/using-the-navigation-menus-application.md

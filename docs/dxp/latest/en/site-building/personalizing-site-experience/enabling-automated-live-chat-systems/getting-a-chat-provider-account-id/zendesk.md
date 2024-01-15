@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Personalization
+- Live Chat
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 5a4dd1b6-be3e-415e-ba58-68388d33a2fd
 ---
 # Zendesk

@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Platform
+- Publishing Tools
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 3f178831-336f-42d9-9d64-cc360c7b1211
 ---
 # Comparing Publishing Tools

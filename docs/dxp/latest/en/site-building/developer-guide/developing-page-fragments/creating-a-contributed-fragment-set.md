@@ -1,4 +1,9 @@
 ---
+taxonomy-category-names:
+- Sites
+- Fragments
+- Liferay Self-Hosted
+- Liferay PaaS
 uuid: 1e8a26fa-4f14-4dec-ab42-c4b5e2121e6c
 ---
 # Creating a Contributed Fragment Set

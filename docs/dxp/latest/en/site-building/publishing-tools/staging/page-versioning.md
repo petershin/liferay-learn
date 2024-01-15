@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Platform
+- Staging
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 1fe6f487-899f-4d93-b472-9e37f9597409
 ---
 # Page Versioning

@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Display Page Templates
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 4e9f73a1-0cdf-450d-b659-3bc01546d755
 ---
 # Publishing Content With Display Pages

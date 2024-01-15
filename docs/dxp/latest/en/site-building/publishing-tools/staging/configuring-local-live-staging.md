@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Platform
+- Staging
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 5e770ae2-ffb6-4d25-9be2-00770fed680d
 ---
 # Configuring Local Live Staging

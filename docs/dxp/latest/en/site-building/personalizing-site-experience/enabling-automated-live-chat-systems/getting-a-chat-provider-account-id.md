@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Personalization
+- Live Chat
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 toc:
   - ./getting-a-chat-provider-account-id/chatwoot.md
   - ./getting-a-chat-provider-account-id/crisp.md

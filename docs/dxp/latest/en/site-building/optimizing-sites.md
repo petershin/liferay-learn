@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Site Administration
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 toc:
   - ./optimizing-sites/ab-testing.md
   - ./optimizing-sites/building-a-responsive-site.md

@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Fragments
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: e6e7bd72-a79e-420a-be70-04c947330763
 ---
 # Saving Fragment Compositions

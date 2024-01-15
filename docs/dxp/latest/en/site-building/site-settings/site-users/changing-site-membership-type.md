@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Site Administration
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: f96d3598-f85e-4a03-a5fc-5f56e1c0a52d
 ---
 # Changing Site Membership Type

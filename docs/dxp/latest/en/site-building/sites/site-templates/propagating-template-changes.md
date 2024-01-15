@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Site Administration
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 90b72e72-7d53-4a6c-b39c-e50b46174004
 ---
 # Propagating Template Changes

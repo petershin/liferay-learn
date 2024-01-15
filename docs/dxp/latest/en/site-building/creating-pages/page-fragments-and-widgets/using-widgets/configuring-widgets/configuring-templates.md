@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Widgets
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 751d6c2f-cfdb-4517-b506-4e3fe453be0c
 ---
 # Configuring Templates

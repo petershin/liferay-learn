@@ -1,4 +1,11 @@
 ---
+taxonomy-category-names:
+- Sites
+- Site Navigation
+- Widgets
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: badfa636-ff2c-49b2-9cea-2038e148b86a
 ---
 

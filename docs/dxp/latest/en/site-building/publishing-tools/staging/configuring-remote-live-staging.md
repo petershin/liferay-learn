@@ -1,4 +1,9 @@
 ---
+taxonomy-category-names:
+- Platform
+- Staging
+- Liferay Self-Hosted
+- Liferay PaaS
 uuid: faa4a458-c7c6-4b61-a08f-37cb58873c58
 ---
 # Configuring Remote Live Staging

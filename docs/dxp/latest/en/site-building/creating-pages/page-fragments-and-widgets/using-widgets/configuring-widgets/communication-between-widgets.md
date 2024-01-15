@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Widgets
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 0a9b9626-48a2-44e9-b120-0b1d55516f62
 ---
 # Communication Between Widgets

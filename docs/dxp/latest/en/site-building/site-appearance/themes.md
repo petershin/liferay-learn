@@ -1,4 +1,9 @@
 ---
+taxonomy-category-names:
+- Sites
+- Themes
+- Liferay Self-Hosted
+- Liferay PaaS
 toc:
   - ./themes/introduction-to-themes.md
   - ./themes/upgrading-a-theme.md

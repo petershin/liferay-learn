@@ -1,4 +1,9 @@
 ---
+taxonomy-category-names:
+- Sites
+- Themes
+- Liferay Self-Hosted
+- Liferay PaaS
 uuid: 2bc3ef4b-8aa0-4b28-95fa-be0c5c4d11ba
 ---
 # Embedding Widgets via Templates

@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Widgets
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 011f7d87-9c5a-40d0-bd92-a300dc8174a4
 ---
 # Using the Iframe Widget

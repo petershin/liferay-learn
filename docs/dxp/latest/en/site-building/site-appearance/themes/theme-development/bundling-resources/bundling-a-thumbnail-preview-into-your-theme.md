@@ -1,4 +1,9 @@
 ---
+taxonomy-category-names:
+- Sites
+- Themes
+- Liferay Self-Hosted
+- Liferay PaaS
 uuid: 53353ff8-f4c9-49e0-afe9-b5c1132a8109
 ---
 # Bundling a Thumbnail Preview into Your Theme

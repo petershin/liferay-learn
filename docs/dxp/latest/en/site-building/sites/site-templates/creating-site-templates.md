@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Site Administration
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: dcb71149-fcc2-4d97-bd48-bedc5599bd7b
 ---
 # Creating Site Templates

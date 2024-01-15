@@ -33,9 +33,8 @@ Then, follow these steps:
     ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
     ```
 
-    ```{note}
-    This command is the same as copying the deployed jars to /opt/liferay/osgi/modules on the Docker container.
-    ```
+    !!! note
+        This command is the same as copying the deployed jars to /opt/liferay/osgi/modules on the Docker container.
 
 1. Confirm the deployment in the Liferay Docker container console.
 
@@ -45,11 +44,11 @@ Then, follow these steps:
 
 1. Verify that the example module is working. Open your browser to `https://localhost:8080`.
 
-1. Navigate to *Control Panel* &rarr; *Configuration* &rarr; *System Settings* &rarr; *Third Party*. Click *U2G5 Configuration*. 
+1. Navigate to *Control Panel* &rarr; *Configuration* &rarr; *System Settings* &rarr; *Third Party*. Click *U2G5 Configuration*.
 
    ![Navigate to U2G5 configuration in system settings.](./completely-custom-configuration/images/01.png)
 
-   Note that this view is delivered by a custom JSP file. 
+   Note that this view is delivered by a custom JSP file.
 
 ## Create the Configuration Interface
 
@@ -57,14 +56,13 @@ Define the configurable attributes in the configuration interface. The sample pr
 
 ```{literalinclude} ./completely-custom-configuration/resources/liferay-u2g5.zip/u2g5-web/src/main/java/com/acme/u2g5/web/internal/configuration/U2G5WebConfiguration.java
 :language: java
-:lines: 7-24
+:lines: 7-26
 ```
 
-Note that under the `@ExtendedObjectClassDefinition` annotation, `generateUI` is set to `false`. This excludes the configuration UI from being auto-generated. 
+Note that under the `@ExtendedObjectClassDefinition` annotation, `generateUI` is set to `false`. This excludes the configuration UI from being auto-generated.
 
-```{note}
-A `ConfigurationBeanDeclaration` is required for Liferay versions before DXP 7.4 U51 or Portal 7.4 GA51. See [ConfigurationBeanDeclaration with Previous Versions of Liferay](./setting-and-accessing-configurations.md#configurationbeandeclaration-with-previous-versions-of-liferay).
-```
+!!! note
+    A `ConfigurationBeanDeclaration` is required for Liferay versions before DXP 7.4 U51 or Portal 7.4 GA51. See [ConfigurationBeanDeclaration with Previous Versions of Liferay](./setting-and-accessing-configurations.md#configurationbeandeclaration-with-previous-versions-of-liferay).
 
 ## Implement the Configuration Screen
 
@@ -74,12 +72,12 @@ A `ConfigurationBeanDeclaration` is required for Liferay versions before DXP 7.4
     @Component(service = ConfigurationScreen.class)
     ```
 
-1. Set the category key, the configuration entry's key, and its localized name. In the sample project, the category key is set to `third-party` in System Settings. The string value for the configuration's name is set by the language key in the bundle's `Language.properties` file. 
+1. Set the category key, the configuration entry's key, and its localized name. In the sample project, the category key is set to `third-party` in System Settings. The string value for the configuration's name is set by the language key in the bundle's `Language.properties` file.
 
     ```{literalinclude} ./completely-custom-configuration/resources/liferay-u2g5.zip/u2g5-web/src/main/java/com/acme/u2g5/web/internal/configuration/admin/display/U2G5ConfigurationScreen.java
     :dedent: 1
     :language: java
-    :lines: 24-40
+    :lines: 25-40
     ```
 
 1. For this example, the configuration scope is set to `system`. To learn more, see [Scoping Configurations](./scoping-configurations.md).
@@ -90,7 +88,7 @@ A `ConfigurationBeanDeclaration` is required for Liferay versions before DXP 7.4
     :lines: 42-45
     ```
 
-1. The `render()` method uses `ConfigurationProvider` to get the configuration. The servlet context provides access to the request dispatcher, which allows the custom JSP to read the configuration. 
+1. The `render()` method uses `ConfigurationProvider` to get the configuration. The servlet context provides access to the request dispatcher, which allows the custom JSP to read the configuration.
 
     ```{literalinclude} ./completely-custom-configuration/resources/liferay-u2g5.zip/u2g5-web/src/main/java/com/acme/u2g5/web/internal/configuration/admin/display/U2G5ConfigurationScreen.java
     :dedent: 1
@@ -98,19 +96,19 @@ A `ConfigurationBeanDeclaration` is required for Liferay versions before DXP 7.4
     :lines: 47-67
     ```
 
-1. Make sure to use the `@Reference` annotation to define the module's symbolic name. 
+1. Make sure to use the `@Reference` annotation to define the module's symbolic name.
 
-    ```java
-    @Reference(
-    	target = "(osgi.web.symbolicname=com.acme.u2g5.web)"
-    )
+    ```{literalinclude} ./completely-custom-configuration/resources/liferay-u2g5.zip/u2g5-web/src/main/java/com/acme/u2g5/web/internal/configuration/admin/display/U2G5ConfigurationScreen.java
+    :dedent: 1
+    :language: java
+    :lines: 72-74
     ```
 
 ## Add the Web-ContextPath
 
 Specify your bundle's `Web-ContextPath` in the `bnd.bnd` file. For example, the sample project has `Web-ContextPath: /u2g5-web` in the Bnd file. This is what registers the `ServletContext` object in the Configuration Screen file. Note that a servlet context is created automatically for portlets, but since this sample doesn't have a portlet, you must add this line to the Bnd file.
 
-## Create a Custom JSP 
+## Create a Custom JSP
 
 1. Import the configuration interface to the JSP.
 
@@ -129,3 +127,8 @@ Specify your bundle's `Web-ContextPath` in the `bnd.bnd` file. For example, the 
 1. The attributes `fontColor()`, `fontFamily()`, `fontSize()` can now be used in the JSP.
 
 This sample project demonstrates a basic example of how to use `ConfigurationScreen` to read and display configuration values in a custom JSP. In your application, write your own code and create a completely custom configuration UI to meet your needs.
+
+## Related Topics
+
+- [Setting and Accessing Configurations](./setting-and-accessing-configurations.md)
+- [Scoping Configurations](./scoping-configurations.md)

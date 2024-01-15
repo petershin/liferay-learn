@@ -10,19 +10,17 @@ taxonomy-category-names:
 
 {bdg-secondary}`Liferay 7.4+`
 
-Custom element client extensions use Liferay's front-end infrastructure to register external applications with the Liferay platform and render them as widgets. For applications that include multiple routes (e.g., [React Router](https://reactrouter.com/), you can define remote application properties to determine which routes are used for a widget at runtime. These properties can be set for an application via the Remote Apps menu in Liferay or the widget's configuration options once deployed.
+Custom element client extensions use Liferay's front-end infrastructure to register external applications with the Liferay platform and render them as widgets. For applications that include multiple routes (e.g., [React Router](https://reactrouter.com/)), you can define remote application properties to determine which routes are used for a widget at runtime. These properties can be set for an application via the Remote Apps menu in Liferay or the widget's configuration options once deployed.
 
-```{warning}
-Deploying Custom elements or IFrames like other types of client extensions is a **beta feature** in Liferay 7.4. This tutorial deploys custom element remote applications differently, and it is still the recommended approach until a future update.
-```
+!!! warning
+   Deploying Custom elements or IFrames like other types of client extensions is a **beta feature** in Liferay 7.4. This tutorial deploys custom element remote applications differently, and it is still the recommended approach until a future update.
 
 In this tutorial, you'll create a basic React application using Liferay's `create_custom_element.sh` script, which generates a sample app with three routes: `hello-world`, `hello-foo`, `hello-bar`. After compiling the application and hosting its `.js` and `.css` files, you'll register the application with Liferay and deploy it as a page widget. Finally, you'll configure it to use each of the alternative routes.
 
 ![Create a basic custom element remote appliaction with alternate routes and use the route property to configure which is rendered.](./using-routes-with-custom-elements/images/01.png)
 
-```{note}
-Custom element client extensions can use any technology, regardless of how it's built, packaged, or hosted. This tutorial only offers a sample custom element application with basic routing.
-```
+!!! note
+   Custom element client extensions can use any technology, regardless of how it's built, packaged, or hosted. This tutorial only offers a sample custom element application with basic routing.
 
 Running `create_custom_element.sh` requires the latest versions of [Node.JS](https://nodejs.org/), [NPM](https://www.npmjs.com/), and [YARN](https://classic.yarnpkg.com/). Before proceeding, ensure these tools are installed.
 
@@ -111,9 +109,8 @@ Running `create_custom_element.sh` requires the latest versions of [Node.JS](htt
 
 This adds the files to the Liferay Document Library and assigns them unique WebDAV URLs, which you'll use to create the remote application.
 
-```{tip}
-This tutorial hosts the application’s static resources in Liferay’s Document Library for demonstration purposes. In a production environment, you should host the application’s files on a server optimized for hosting static resources.
-```
+!!! tip
+   This tutorial hosts the application’s static resources in Liferay’s Document Library for demonstration purposes. In a production environment, you should host the application’s files on a server optimized for hosting static resources.
 
 To view each file's URL, click the *Info* icon (![Info Icon](../../../../images/icon-information.png)) and select one of the files at a time. Copy each file's *WebDAV URL* and save them for use in the next step.
 
@@ -121,8 +118,8 @@ To view each file's URL, click the *Info* icon (![Info Icon](../../../../images/
 
 For example,
 
-* `http://localhost:8080/webdav/guest/document_library/main.114dde4a.js`
-* `http://localhost:8080/webdav/guest/document_library/main.9877909d.css`
+- `http://localhost:8080/webdav/guest/document_library/main.114dde4a.js`
+- `http://localhost:8080/webdav/guest/document_library/main.9877909d.css`
 
 ## Registering and Deploying the Application
 
@@ -132,15 +129,15 @@ For example,
 
 1. Enter these values:
 
-   | Field | Value |
-   | :--- | :--- |
-   | Name | J1V3-Custom-Element |
-   | Type | Custom Element |
-   | HTML Element Name | `j1v3-custom-element` |
-   | URL | WebDAV URL for the `.js` file |
-   | CSS URL | WebDAV URL for the `.css` file |
-   | Instanceable | &#10004; |
-   | Portlet Category Name | Remote Apps |
+   | Field                 | Value                          |
+   | :-------------------- | :----------------------------- |
+   | Name                  | J1V3-Custom-Element            |
+   | Type                  | Custom Element                 |
+   | HTML Element Name     | `j1v3-custom-element`          |
+   | URL                   | WebDAV URL for the `.js` file  |
+   | CSS URL               | WebDAV URL for the `.css` file |
+   | Instanceable          | &#10004;                       |
+   | Portlet Category Name | Remote Apps                    |
 
 1. Click *Save*.
 
@@ -194,7 +191,7 @@ The auto-generated app includes three routes: `hello-world`, `hello-foo`, `hello
 
 ```{literalinclude} ./using-routes-with-custom-elements/resources/liferay-j1v3.zip/j1v3-custom-element/src/index.js
     :language: js
-    :lines: 1-34
+    :lines: 1-63
 ```
 
 This `index.js` file creates the `WebComponent` class, which extends the `HTMLElement` interface. This class implements the interface's [`connectedCallback()`](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements#using_the_lifecycle_callbacks) function, which calls [`ReactDOM.render`](https://reactjs.org/docs/react-dom.html#render) with `App` as a parameter. When `App` is called, it checks for any defined `"route"` attribute and compares that value with the available routes. If it matches either `hello-foo` or `hello-bar`, it returns and renders the corresponding route. Otherwise, it returns and renders `hello-world`.
@@ -217,27 +214,27 @@ routes
 ### HelloWorld.js
 
 ```{literalinclude} ./using-routes-with-custom-elements/resources/liferay-j1v3.zip/j1v3-custom-element/src/routes/hello-world/pages/HelloWorld.js
-    :language: js
-    :lines: 1-9
+   :language: js
+   :lines: 8-14
 ```
 
 ### HelloFoo.js
 
 ```{literalinclude} ./using-routes-with-custom-elements/resources/liferay-j1v3.zip/j1v3-custom-element/src/routes/hello-foo/pages/HelloFoo.js
-    :language: js
-    :lines: 1-9
+   :language: js
+   :lines: 8-12
 ```
 
 ### HelloBar.js
 
 ```{literalinclude} ./using-routes-with-custom-elements/resources/liferay-j1v3.zip/j1v3-custom-element/src/routes/hello-bar/pages/HelloBar.js
-    :language: js
-    :lines: 1-9
+   :language: js
+   :lines: 8-12
 ```
 
 ## Related Topics
 
-* [Front-end Client Extensions](../../front-end-client-extensions.md)
-* [Understanding Custom Element and IFrame Client Extensions](../understanding-custom-element-and-iframe-client-extensions.md)
-* [Creating a Basic Custom Element](./creating-a-basic-custom-element.md)
-* [Remote Applications UI Reference](../client-extensions-ui-reference.md)
+- [Front-end Client Extensions](../../front-end-client-extensions.md)
+- [Understanding Custom Element and IFrame Client Extensions](../understanding-custom-element-and-iframe-client-extensions.md)
+- [Creating a Basic Custom Element](./creating-a-basic-custom-element.md)
+- [Remote Applications UI Reference](../client-extensions-ui-reference.md)

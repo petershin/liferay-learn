@@ -12,11 +12,11 @@ Message Bus's asynchronous option provides "fire and forget" behavior; send a me
 
 An asynchronous message is sent to a *serial* or *parallel* destination.
 
-* For *serial* destinations, the Message Bus queues messages and delegates one worker thread per message. The thread processes message listeners sequentially.
+- For *serial* destinations, the Message Bus queues messages and delegates one worker thread per message. The thread processes message listeners sequentially.
 
-* For *parallel* destinations, the Message Bus queues messages and delegates one worker thread per message per message listener. The threads process message listeners simultaneously.
+- For *parallel* destinations, the Message Bus queues messages and delegates one worker thread per message per message listener. The threads process message listeners simultaneously.
 
-Start with sending a message to a serial destination where another class (a message listener) is listening. 
+Start with sending a message to a serial destination where another class (a message listener) is listening.
 
 ## Send a Message
 
@@ -37,51 +37,50 @@ Then, start with sending a message in an example project.
 
 1. Build and deploy the destination module `n8k5-able-impl`.
 
-    ```bash
-    cd liferay-n8k5/n8k5-able-impl
-    ```
+   ```bash
+   cd liferay-n8k5/n8k5-able-impl
+   ```
 
-    ```bash
-    ../gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
-    ```
+   ```bash
+   ../gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
+   ```
 
-    ```{note}
-    This command is the same as copying the module JAR to `/opt/liferay/osgi/modules` on the Docker container.
-    ```
+   !!! note
+      This command is the same as copying the module JAR to `/opt/liferay/osgi/modules` on the Docker container.
 
-    The Docker container console shows that the module started.
+   The Docker container console shows that the module started.
 
-    ```bash
-    STARTED com.acme.n8k5.able.impl_1.0.0
-    ```
+   ```bash
+   STARTED com.acme.n8k5.able.impl_1.0.0
+   ```
 
 1. Build and deploy the listener module `n8k5-charlie-impl`.
 
-    ```bash
-    cd ../n8k5-charlie-impl
-    ```
+   ```bash
+   cd ../n8k5-charlie-impl
+   ```
 
-    ```bash
-    ../gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
-    ```
+   ```bash
+   ../gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
+   ```
 
-    The Docker container console shows that the module started.
+   The Docker container console shows that the module started.
 
-    ```bash
-    STARTED com.acme.n8k5.charlie.impl_1.0.0
-    ```
+   ```bash
+   STARTED com.acme.n8k5.charlie.impl_1.0.0
+   ```
 
 1. Build and deploy the sender module `n8k5-baker-impl`.
 
-    ```bash
-    cd ../n8k5-baker-impl
-    ```
+   ```bash
+   cd ../n8k5-baker-impl
+   ```
 
-    ```bash
-    ../gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
-    ```
+   ```bash
+   ../gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
+   ```
 
-    In the Docker container console, confirm `N8K5Baker` sent a message, `N8K5CharlieMessageListener` received a message, and the `n8k5-baker-impl` module started.
+   In the Docker container console, confirm `N8K5Baker` sent a message, `N8K5CharlieMessageListener` received a message, and the `n8k5-baker-impl` module started.
 
    ```bash
    INFO  [pipe-start 2025][N8K5Baker:24] Sent message to acme/n8k5_able
@@ -93,15 +92,15 @@ Then, start with sending a message in an example project.
 
 ## Project Overview
 
-The example's three modules each have one class. Each class represents one of the messaging components: destination, sender, listener: 
+The example's three modules each have one class. Each class represents one of the messaging components: destination, sender, listener:
 
 Example Classes:
 
-| Class | Description |
-| :---- | :---------- |
+| Class                                             | Description                                                                                 |
+| :------------------------------------------------ | :------------------------------------------------------------------------------------------ |
 | `N8K5AbleMessagingConfigurator` in n8k5-able-impl | Creates a message destination named `acme/n8k5_able` and registers it with the Message Bus. |
-| `N8K5Baker` in n8k5-baker-impl | Sends a message to the `acme/n8k5_able` destination. |
-| `N8K5CharlieMessageListener` in n8k5-charlie-impl | Listens for messages sent to the `acme/n8k5_able` destination. |
+| `N8K5Baker` in n8k5-baker-impl                    | Sends a message to the `acme/n8k5_able` destination.                                        |
+| `N8K5CharlieMessageListener` in n8k5-charlie-impl | Listens for messages sent to the `acme/n8k5_able` destination.                              |
 
 Here's how they interact:
 
@@ -120,7 +119,7 @@ The `n8k5-able-impl` module's `N8K5AbleMessagingConfigurator` class creates and 
 :lines: 15-42
 ```
 
-Any class can create and configure a destination, but a [`Component`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Component.html) can have injected dependencies, like the `DestinationFactory`. The `_destinationFactory` field's [`@Reference`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Reference.html) annotation signals Liferay's OSGi framework to inject a `DestinationFactory` instance. 
+Any class can create and configure a destination, but a [`Component`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Component.html) can have injected dependencies, like the `DestinationFactory`. The `_destinationFactory` field's [`@Reference`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Reference.html) annotation signals Liferay's OSGi framework to inject a `DestinationFactory` instance.
 
 In the `_activate` method, `N8K5AbleMessagingConfigurator` uses the [`DestinationFactory`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationFactory.java) and a [`DestinationConfiguration`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationConfiguration.java) to create a *serial* destination named `acme/n8k5_able`. Then it uses the OSGi Framework `BundleContext` to register a service for the `Destination`. When `N8K5AbleMessagingConfigurator` deactivates, the `_deactivate` method unregisters the service.
 
@@ -129,27 +128,27 @@ In the `_activate` method, `N8K5AbleMessagingConfigurator` uses the [`Destinatio
 The `N8K5Baker` class below sends a message with the payload `"N8K5Baker#_activate"` to the destination named `acme/n8k5_able`.
 
 ```{literalinclude} ./using-asynchronous-messaging/resources/liferay-n8k5.zip/n8k5-baker-impl/src/main/java/com/acme/n8k5/baker/internal/N8K5Baker.java
+:dedent: 1
 :language: java
-:lines: 12-23
+:lines: 13-23
 ```
 
 As a Component, `N8K5Baker` uses the `@Reference` annotation to inject a `MessageBus` instance.
 
-On component activation, `N8K5Baker` creates and sends a message via its activation method `_activate()`. It constructs a [`Message`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/Message.java) instance and adds a payload to it. A payload is one of several things you can populate in a `Message`. 
+On component activation, `N8K5Baker` creates and sends a message via its activation method `_activate()`. It constructs a [`Message`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/Message.java) instance and adds a payload to it. A payload is one of several things you can populate in a `Message`.
 
 Here are the main message-populating methods:
 
-| Method | Description |
-| :----- | :---------- |
-| `setPayload(Object)` | Adds your `Message`'s main content. |
+| Method                               | Description                                     |
+| :----------------------------------- | :---------------------------------------------- |
+| `setPayload(Object)`                 | Adds your `Message`'s main content.             |
 | `setResponseDestinationName(String)` | Refers to a `Destination` to receive responses. |
-| `setValues(Map<String,Object>)` | Provides additional data from a `Map`. |
+| `setValues(Map<String,Object>)`      | Provides additional data from a `Map`.          |
 
 `N8K5Baker` sends the message to a [`Destination`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/Destination.java) named `acme/n8k5_able` by calling [`MessageBus`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/MessageBus.java)'s `sendMessage(String, Message)` method. The `MessageBus` starts a new thread and sends the `Message` to [`MessageListener`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/MessageListener.java) instances registered to the `acme/n8k5_able` `Destination`. `N8K5Baker`'s thread continues.
 
-```{note}
-If you want receive responses to a `Message`, set a response destination on the `Message` and register a class, such as `N8K5Baker`, as a `MessageListener` to that destination. See [Listening for Messages](./listening-for-messages.md) for details.
-```
+!!! note
+   If you want receive responses to a `Message`, set a response destination on the `Message` and register a class, such as `N8K5Baker`, as a `MessageListener` to that destination. See [Listening for Messages](./listening-for-messages.md) for details.
 
 ## Add Response Handling
 
@@ -294,15 +293,13 @@ INFO  [acme/n8k5_baker-2][N8K5Baker:30] Received message payload N8K5CharlieMess
 
 `N8K5CharlieMessageListener` receives `N8K5Baker`'s message and then sends a response message to the response destination. `N8K5Baker` receives the response message and prints the message payload.
 
-```{note}
-If you want the classes to exchange messages again, you can restart the modules (OSGi bundles) in the [Gogo Shell](../../../liferay-internals/fundamentals/using-the-gogo-shell.md). List the bundles (`lb`) to get the bundle IDs, stop the bundles (`stop <id>`), and restart the bundles (`start <id>`).
-```
+!!! note
+   If you want the classes to exchange messages again, you can restart the modules (OSGi bundles) in the [Gogo Shell](../../../liferay-internals/fundamentals/using-the-gogo-shell.md). List the bundles (`lb`) to get the bundle IDs, stop the bundles (`stop <id>`), and restart the bundles (`start <id>`).
 
-```{note}
-In classes that aren't OSGi Components, you can send messages using [MessageBusUtil](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/MessageBusUtil.java) and `Destination`, `DestinationConfiguration`, `Message`, and `MessageListener` instances.
-   
-You can register `Destination` services as demonstrated, except you must get the `BundleContext` a different way (for example, by making these calls: `Bundle bundle = FrameworkUtil.getBundle(YourClass.class); BundleContext bundleContext = bundle.getBundleContext()`).
-```
+!!! note
+   In classes that aren't OSGi Components, you can send messages using [MessageBusUtil](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/MessageBusUtil.java) and `Destination`, `DestinationConfiguration`, `Message`, and `MessageListener` instances.
+
+   You can register `Destination` services as demonstrated, except you must get the `BundleContext` a different way (for example, by making these calls: `Bundle bundle = FrameworkUtil.getBundle(YourClass.class); BundleContext bundleContext = bundle.getBundleContext()`).
 
 Congratulations! You've exchanged messages asynchronously between two classes.
 
@@ -314,6 +311,6 @@ If you want to explore synchronous messaging using *default* and *direct* modes,
 
 ## Related Topics
 
-* [Message Bus](../message-bus.md)
-* [Listening for Messages](./listening-for-messages.md)
-* [Listening for Registration Events](./listening-for-registration-events.md)
+- [Message Bus](../message-bus.md)
+- [Listening for Messages](./listening-for-messages.md)
+- [Listening for Registration Events](./listening-for-registration-events.md)

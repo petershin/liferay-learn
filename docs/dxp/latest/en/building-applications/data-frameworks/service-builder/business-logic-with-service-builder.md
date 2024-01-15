@@ -33,9 +33,8 @@ Then, follow these steps:
     ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
     ```
 
-    ```{note}
-    This command is the same as copying the deployed jars to /opt/liferay/osgi/modules on the Docker container.
-    ```
+    !!! note
+        This command is the same as copying the deployed jars to /opt/liferay/osgi/modules on the Docker container.
 
 1. Confirm the deployment in the Liferay Docker container console.
 
@@ -66,6 +65,7 @@ Extend the local service by adding methods that can add, update, and delete `E4G
 1. Declare an `add*` method with parameters for creating an entity.
 
 ```{literalinclude} ./business-logic-with-service-builder/resources/liferay-e4g5.zip/e4g5-service/src/main/java/com/acme/e4g5/service/impl/E4G5EntryLocalServiceImpl.java
+:dedent: 1
 :language: java
 :lines: 34-44
 ```
@@ -81,8 +81,9 @@ Extend the local service by adding methods that can add, update, and delete `E4G
 1. Declare an `update*` method with parameters for updating an entity. The sample receives `name` and `description` attributes, along with `e4g5EntryId`.
 
 ```{literalinclude} ./business-logic-with-service-builder/resources/liferay-e4g5.zip/e4g5-service/src/main/java/com/acme/e4g5/service/impl/E4G5EntryLocalServiceImpl.java
+:dedent: 1
 :language: java
-:lines: 54-65
+:lines: 55-66
 ```
 
 1. Use the `*Persistence` class's `findByPrimaryKey()` method to retrieve the entity instance by entry ID.
@@ -96,8 +97,9 @@ Extend the local service by adding methods that can add, update, and delete `E4G
 1. Declare a `delete*` method that receives the entity's entry ID.
 
 ```{literalinclude} ./business-logic-with-service-builder/resources/liferay-e4g5.zip/e4g5-service/src/main/java/com/acme/e4g5/service/impl/E4G5EntryLocalServiceImpl.java
+:dedent: 1
 :language: java
-:lines: 46-52
+:lines: 46-53
 ```
 
 1. Invoke the `*Persistence` class's `delete()` method, passing in the entity object.
@@ -106,13 +108,14 @@ After implementing your `add*`, `update*`, and `delete*` methods, run Service Bu
 
 ## Integrate the Back-end
 
-Now implement the service methods you created into your web module with [portlet actions](../../developing-a-java-web-application/using-mvc/invoking-actions-with-mvc-portlet.md). 
+Now implement the service methods you created into your web module with [portlet actions](../../developing-a-java-web-application/using-mvc/invoking-actions-with-mvc-portlet.md).
 
 ### Portlet Actions
 
 You can use an [MVC Portlet](../../developing-a-java-web-application/using-mvc.md) for your web module. The sample project's Portlet has entry actions for `add`, `update`, and `delete`.
 
 ```{literalinclude} ./business-logic-with-service-builder/resources/liferay-e4g5.zip/e4g5-web/src/main/java/com/acme/e4g5/web/internal/portlet/E4G5Portlet.java
+:dedent: 1
 :language: java
 :lines: 26-51
 ```
@@ -123,7 +126,7 @@ The `addE4G5Entry()` method receives a name and description and calls the servic
 
 ### Map the Actions in the JSP
 
-Now map the action methods you created into your JSP. 
+Now map the action methods you created into your JSP.
 
 ```{literalinclude} ./business-logic-with-service-builder/resources/liferay-e4g5.zip/e4g5-web/src/main/resources/META-INF/resources/view.jsp
 :language: jsp
@@ -131,3 +134,8 @@ Now map the action methods you created into your JSP.
 ```
 
 The JSP binds actions to UI components using the tag library's `portlet:actionURL` tag. Note that the `portlet:actionURL`'s `name` attribute must match each of the action methods created in the portlet. The `var` attribute assigns the portlet action URL to an arbitrary variable. The `<aui:form>` renders text fields for user input. On submitting the form, its values are passed along with the `ActionRequest` to the portlet method.
+
+## Related Topics
+
+- [Generating Model, Persistence, and Service Code](./service-builder-basics/generating-model-persistence-and-service-code.md)
+- [Using MVC](../../developing-a-java-web-application/using-mvc.md)

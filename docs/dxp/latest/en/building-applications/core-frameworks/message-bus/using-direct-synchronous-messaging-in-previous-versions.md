@@ -8,9 +8,8 @@ taxonomy-category-names:
 ---
 # Using Direct Synchronous Messaging in Previous Versions
 
-```{important}
-Synchronous messaging was removed and is no longer supported for Liferay DXP 7.4 U49/Liferay Portal 7.4 GA49 and above.
-```
+!!! important
+    Synchronous messaging was removed and is no longer supported for Liferay DXP 7.4 U49/Liferay Portal 7.4 GA49 and above.
 
 Direct synchronous messaging is the easiest way to block processing until all listeners receive a message. You call the `SynchronousMessageSender`'s `send(String, Message)` method and pass in a destination name and message instance. The `SynchronousMessageSender` uses the current thread to process message reception directly in each of the destination's registered message listeners. When listener processing completes, execution continues in the class that called the `send(String, Message)` method. This example demonstrates using direct synchronous messaging.
 
@@ -48,9 +47,8 @@ Then, follow these steps:
     ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
     ```
 
-    ```{note}
-    This command is the same as copying the module JARs to `/opt/liferay/osgi/modules` on the Docker container.
-    ```
+    !!! note
+        This command is the same as copying the module JARs to `/opt/liferay/osgi/modules` on the Docker container.
 
 1. The Docker container console shows that the modules started.
 
@@ -100,7 +98,7 @@ Here's the event flow:
 1. The current thread processes message reception for each listener (i.e., `X6N5CharlieMessageListener` and `X6N5DogMessageListener`) in succession. The listeners log the message payload and set a response on the message. The response from the latest listener processed supersedes previous responses.
 1. Processing returns to `X6N5BakerOSGiCommands`, where it logs the message response.
 
-Now you can examine each class, starting with the destination configurator 
+Now you can examine each class, starting with the destination configurator.
 
 ## Examine the Destination Configurator
 
@@ -113,7 +111,7 @@ The `x6n5-able-impl` module's `X6N5AbleMessagingConfigurator` class creates and 
 
 This configurator is a [`Component`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Component.html) class. It uses the [`@Reference`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Reference.html) annotation to inject a `DestinationFactory` instance.
 
-The `_activate(BundleContext)` method uses the [`DestinationFactory`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationFactory.java) and a [`DestinationConfiguration`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationConfiguration.java) to create a *synchronous* destination named `acme/x6n5_able`. Synchronous destinations are optimized for synchronous messaging. Lastly, the method registers the [`Destination`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/Destination.java) in an OSGi service using the `BundleContext`. 
+The `_activate(BundleContext)` method uses the [`DestinationFactory`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationFactory.java) and a [`DestinationConfiguration`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationConfiguration.java) to create a *synchronous* destination named `acme/x6n5_able`. Synchronous destinations are optimized for synchronous messaging. Lastly, the method registers the [`Destination`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/Destination.java) in an OSGi service using the `BundleContext`.
 
 When `X6N5AbleMessagingConfigurator` deactivates, its `_deactivate()` method unregisters the destination service.
 
@@ -123,14 +121,13 @@ The `x6n5-baker-impl` module's `X6N5BakerOSGiCommands` class provides an OSGi Co
 
 ```{literalinclude} ./using-direct-synchronous-messaging/resources/liferay-x6n5.zip/x6n5-baker-impl/src/main/java/com/acme/x6n5/baker/internal/osgi/commands/X6N5BakerOSGiCommands.java
    :language: java
-   :lines: 12-37
+   :lines: 10-30
 ```
 
-`X6N5BakerOSGiCommands` is a service `Component` of its own class type. It uses a `@Reference` annotation to inject a `SynchronousMessageSender` that's set to *direct* mode (specified by the annotation's `target = "(mode=DIRECT)"` attribute). 
+`X6N5BakerOSGiCommands` is a service `Component` of its own class type. It uses a `@Reference` annotation to inject a `SynchronousMessageSender` that's set to *direct* mode (specified by the annotation's `target = "(mode=DIRECT)"` attribute).
 
-```{note}
-In *direct* mode, the `SynchronousMessageSender` `send` method blocks the calling class until the current thread delivers the message to all listeners.
-```
+!!! note
+    In *direct* mode, the `SynchronousMessageSender` `send` method blocks the calling class until the current thread delivers the message to all listeners.
 
 `X6N5BakerOSGiCommands`'s `@Component` properties define a Gogo shell command function called `sendMessage` and in the `x6n5` scope. The command and maps to the `sendMessage(String)` method and takes an input `String`.
 
@@ -138,20 +135,20 @@ The `sendMessage(String)` method creates a [`Message`](https://github.com/lifera
 
 ## Examine the Listeners
 
-The `x6n5-charlie-impl` module's `X6N5CharlieMessageListener` class and `x6n5-dog-impl` module's `X6N5DogMessageListener` class listen for messages sent to the `acme/x6n5_able` [`Destination`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/Destination.java). They register the same way [Listening for Messages](./listening-for-messages.md) demonstrates. 
+The `x6n5-charlie-impl` module's `X6N5CharlieMessageListener` class and `x6n5-dog-impl` module's `X6N5DogMessageListener` class listen for messages sent to the `acme/x6n5_able` [`Destination`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/Destination.java). They register the same way [Listening for Messages](./listening-for-messages.md) demonstrates.
 
 `X6N5CharlieMessageListener` class:
 
 ```{literalinclude} ./using-direct-synchronous-messaging/resources/liferay-x6n5.zip/x6n5-charlie-impl/src/main/java/com/acme/x6n5/charlie/internal/messaging/X6N5CharlieMessageListener.java
    :language: java
-   :lines: 10-28
+   :lines: 8-21
 ```
 
 `X6N5DogMessageListener` class:
 
 ```{literalinclude} ./using-direct-synchronous-messaging/resources/liferay-x6n5.zip/x6n5-dog-impl/src/main/java/com/acme/x6n5/dog/internal/messaging/X6N5DogMessageListener.java
    :language: java
-   :lines: 10-28
+   :lines: 8-22
 ```
 
 Each listener's `receive(Message)` method logs the message payload and then sets the message response to its own class name.
@@ -166,7 +163,7 @@ If you want to continue processing immediately after sending a message, see [Usi
 
 ## Related Topics
 
-* [Message Bus](../message-bus.md)
-* [Listening for Messages](./listening-for-messages.md)
-* [Using Asynchronous Messaging](./using-asynchronous-messaging.md)
-* [Listening for Registration Events](./listening-for-registration-events.md)
+- [Message Bus](../message-bus.md)
+- [Listening for Messages](./listening-for-messages.md)
+- [Using Asynchronous Messaging](./using-asynchronous-messaging.md)
+- [Listening for Registration Events](./listening-for-registration-events.md)

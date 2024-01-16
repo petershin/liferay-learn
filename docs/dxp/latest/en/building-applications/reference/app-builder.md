@@ -5,6 +5,10 @@ toc:
   - ./app-builder/creating-the-role-change-request-object.md
   - ./app-builder/creating-the-role-change-request-app.md
 uuid: f36da885-6c54-454e-8380-ef4fc63247ef
+taxonomy-category-names:
+- Development and Tooling
+- Reference
+- Liferay Self-Hosted
 ---
 # App Builder
 

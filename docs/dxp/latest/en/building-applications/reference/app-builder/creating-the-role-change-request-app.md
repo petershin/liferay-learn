@@ -1,5 +1,9 @@
 ---
 uuid: ea364c1e-281c-4cbe-a4b3-d75858f3a4de
+taxonomy-category-names:
+- Development and Tooling
+- Reference
+- Liferay Self-Hosted
 ---
 # Creating the Role Change Request App
 

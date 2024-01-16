@@ -1,5 +1,9 @@
 ---
 uuid: 006b0310-6569-4a27-ae00-16eff89bde5a
+taxonomy-category-names:
+- Development and Tooling
+- Reference
+- Liferay Self-Hosted
 ---
 # Creating a Workflow Powered Application
 

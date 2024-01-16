@@ -1,5 +1,9 @@
 ---
 uuid: 9531d450-4715-4d54-90e6-2e8e52b8c452
+taxonomy-category-names:
+- Development and Tooling
+- Reference
+- Liferay Self-Hosted
 ---
 # Creating a Standard Application
 

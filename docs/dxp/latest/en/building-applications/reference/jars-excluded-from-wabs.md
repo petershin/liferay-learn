@@ -1,5 +1,10 @@
 ---
 uuid: 14f0669a-d9fc-4bd3-9e96-eccd6d302489
+taxonomy-category-names:
+- Development and Tooling
+- Reference
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # JARs Excluded from WABs
 

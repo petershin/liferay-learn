@@ -1,5 +1,10 @@
 ---
 uuid: 50b81649-004c-4a44-aab7-3378907b3136
+taxonomy-category-names:
+- Development and Tooling
+- Reference
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Deploying WARs (WAB Generator)
 

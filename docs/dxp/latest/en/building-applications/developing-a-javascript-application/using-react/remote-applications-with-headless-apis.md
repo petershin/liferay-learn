@@ -1,5 +1,11 @@
 ---
 uuid: 522fc1b1-ab1d-4126-b828-98e1e1e805bd
+taxonomy-category-names:
+- Development and Tooling
+- Javascript Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Remote Applications with Headless APIs
 

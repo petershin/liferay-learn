@@ -1,5 +1,10 @@
 ---
 uuid: d66ef78a-2134-40c5-b9bd-d944b315fc07
+taxonomy-category-names:
+- Development and Tooling
+- Javascript Development
+- Liferay Self-Hosted
+- Liferay SaaS
 ---
 # React Component Utilities Reference
 

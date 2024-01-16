@@ -87,17 +87,16 @@ The `TaxonomyVocabulary_POST_ToSite.sh` script calls the REST service with a cUR
 
 Here are the command's arguments:
 
-| Arguments | Description |
-| :--- | :--- |
-| `-H "Content-Type: application/json"` | Indicates that the request body format is JSON. |
-| `-X POST` | The HTTP method to invoke at the specified endpoint |
-| `"http://localhost:8080/o/headless-admin-taxonomy/v1.0/sites/${1}/taxonomy-vocabularies"` | The REST service endpoint |
-| `-d "{\"description\": \"Foo\", \"name\": \"Able\"}"` | The data you are requesting to post |
-| `-u "test@liferay.com:learn"` | Basic authentication credentials |
+| Arguments                                                                                 | Description                                         |
+| :---------------------------------------------------------------------------------------- | :-------------------------------------------------- |
+| `-H "Content-Type: application/json"`                                                     | Indicates that the request body format is JSON.     |
+| `-X POST`                                                                                 | The HTTP method to invoke at the specified endpoint |
+| `"http://localhost:8080/o/headless-admin-taxonomy/v1.0/sites/${1}/taxonomy-vocabularies"` | The REST service endpoint                           |
+| `-d "{\"description\": \"Foo\", \"name\": \"Able\"}"`                                     | The data you are requesting to post                 |
+| `-u "test@liferay.com:learn"`                                                             | Basic authentication credentials                    |
 
-```{note}
-Basic authentication is used here for demonstration purposes. For production, you should authorize users via [OAuth2](../../../headless-delivery/using-oauth2.md). See [Using OAuth2 to Authorize Users](../../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md) for a sample React application that uses OAuth2.
-```
+!!! note
+   Basic authentication is used here for demonstration purposes. For production, you should authorize users via [OAuth2](../../../headless-delivery/using-oauth2.md). See [Using OAuth2 to Authorize Users](../../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md) for a sample React application that uses OAuth2.
 
 The other cURL commands use similar JSON arguments.
 
@@ -108,28 +107,26 @@ The `TaxonomyVocabulary_POST_ToSite.java` class adds a vocabulary by calling the
 ```{literalinclude} ./categories-and-vocabulary-api-basics/resources/liferay-f5w3.zip/java/TaxonomyVocabulary_POST_ToSite.java
    :dedent: 1
    :language: java
-   :lines: 9-26
+   :lines: 9-29
 ```
 
 This class invokes the REST service using only three lines of code:
 
-| Line (abbreviated) | Description |
-| :----------------- | :---------- |
-| `TaxonomyVocabularyResource.Builder builder = ...` | Gets a `Builder` for generating a `TaxonomyVocabularyResource` service instance. |
-| `TaxonomyVocabularyResource taxonomyVocabularyResource = builder.authentication(...).build();` | Specifies basic authentication and generates a `TaxonomyVocabularyResource` service instance. |
+| Line (abbreviated)                                                                                    | Description |
+| :---------------------------------------------------------------------------------------------------- | :---------- |
+| `TaxonomyVocabularyResource.Builder builder = ...`                                                    | Gets a `Builder` for generating a `TaxonomyVocabularyResource` service instance. |
+| `TaxonomyVocabularyResource taxonomyVocabularyResource = builder.authentication(...).build();`        | Specifies basic authentication and generates a `TaxonomyVocabularyResource` service instance. |
 | `TaxonomyVocabulary taxonomyVocabulary = taxonomyVocabularyResource.postSiteTaxonomyVocabulary(...);` | Calls the `postSiteTaxonomyVocabulary` method and passes the data to post. |
 
 Note that the project includes the `com.liferay.headless.admin.taxonomy.client.jar` file as a dependency. You can find client JAR dependency information for all REST applications in the API explorer in your installation at `/o/api`.
 
-```{note}
-The `main` method's comment demonstrates running the class.
-```
+!!! note
+   The `main` method's comment demonstrates running the class.
 
 The other example Java classes are similar to this one, but call different `TaxonomyVocabularyResource` methods.
 
-```{important}
-See [TaxonomyVocabularyResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-taxonomy/headless-admin-taxonomy-client/src/main/java/com/liferay/headless/admin/taxonomy/client/resource/v1_0/TaxonomyVocabularyResource.java) for service details.
-```
+!!! important
+   See [TaxonomyVocabularyResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-taxonomy/headless-admin-taxonomy-client/src/main/java/com/liferay/headless/admin/taxonomy/client/resource/v1_0/TaxonomyVocabularyResource.java) for service details.
 
 Below are examples of calling other `TaxonomyVocabulary` REST services using cURL and Java.
 
@@ -164,7 +161,7 @@ Code:
 ```{literalinclude} ./categories-and-vocabulary-api-basics/resources/liferay-f5w3.zip/java/TaxonomyVocabularies_GET_FromSite.java
    :dedent: 1
    :language: java
-   :lines: 11-23
+   :lines: 11-26
 ```
 
 The Site's `TaxonomyVocabulary` objects are listed in JSON.
@@ -173,9 +170,8 @@ The Site's `TaxonomyVocabulary` objects are listed in JSON.
 
 Get a specific vocabulary with the following cURL or Java command. Replace `1234` with the vocabulary's ID.
 
-```{tip}
-Use `TaxonomyVocabularies_GET_FromSite.[java|sh]` to get `Vocabulary` IDs.
-```
+!!! tip
+   Use `TaxonomyVocabularies_GET_FromSite.[java|sh]` to get `Vocabulary` IDs.
 
 ### TaxonomyVocabulary_GET_ById.sh
 
@@ -240,7 +236,7 @@ Code:
 ```{literalinclude} ./categories-and-vocabulary-api-basics/resources/liferay-f5w3.zip/java/TaxonomyVocabulary_PATCH_ById.java
    :dedent: 1
    :language: java
-   :lines: 9-25
+   :lines: 9-29
 ```
 
 In this example the description is changed from Foo to Bar.
@@ -310,20 +306,25 @@ Code:
 ```{literalinclude} ./categories-and-vocabulary-api-basics/resources/liferay-f5w3.zip/java/TaxonomyVocabulary_DELETE_ById.java
    :dedent: 1
    :language: java
-   :lines: 8-17
+   :lines: 8-19
 ```
 
 ## Taxonomy Category Services
 
 The cURL commands and Java classes for taxonomy categories work similarly to taxonomy vocabularies. Note that some services require the taxonomy vocabulary ID.
 
-| Files | Description |
-| :---- | :---------- |
+| Files                                                      | Description                                 |
+| :--------------------------------------------------------- | :------------------------------------------ |
 | `TaxonomyCategories_GET_FromTaxonomyVocabulary.[java\|sh]` | Get a list of categories from a vocabulary. |
-| `TaxonomyCategory_DELETE_ById.[java\|sh]` | Delete a category. |
-| `TaxonomyCategory_GET_ById[java\|sh]` | Get a specific category by ID. |
-| `TaxonomyCategory_PATCH_ById.[java\|sh]` | Patch a category. |
-| `TaxonomyCategory_POST_ToTaxonomyVocabulary.[java\|sh]` | Post a category to a vocabulary.  |
-| `TaxonomyCategory_PUT_ById.[java\|sh]` | Put a category. |
+| `TaxonomyCategory_DELETE_ById.[java\|sh]`                  | Delete a category.                          |
+| `TaxonomyCategory_GET_ById[java\|sh]`                      | Get a specific category by ID.              |
+| `TaxonomyCategory_PATCH_ById.[java\|sh]`                   | Patch a category.                           |
+| `TaxonomyCategory_POST_ToTaxonomyVocabulary.[java\|sh]`    | Post a category to a vocabulary.            |
+| `TaxonomyCategory_PUT_ById.[java\|sh]`                     | Put a category.                             |
 
 The [API Explorer](../../../headless-delivery/consuming-apis/consuming-rest-services.md) lists all of the `TaxonomyVocabulary` and `TaxonomyCategory` services and schemas and has an interface to try out each service.
+
+## Related Topics
+
+- [OAuth2](../../../headless-delivery/using-oauth2.md)
+- [API Explorer](../../../headless-delivery/consuming-apis/consuming-rest-services.md)

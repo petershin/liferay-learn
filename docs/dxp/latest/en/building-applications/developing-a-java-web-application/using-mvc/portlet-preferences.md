@@ -35,9 +35,8 @@ Then, follow these steps:
     ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
     ```
 
-    ```{note}
-    This command is the same as copying the deployed jars to /opt/liferay/osgi/modules on the Docker container.
-    ```
+    !!! note
+        This command is the same as copying the deployed jars to /opt/liferay/osgi/modules on the Docker container.
 
 1. Confirm the deployment in the Liferay Docker container console.
 
@@ -59,26 +58,26 @@ Here's how the preferences work.
 
 ## Create the Configuration JSP
 
-The user interface for portlet preferences is provided by the `configuration.jsp` file. 
+The user interface for portlet preferences is provided by the `configuration.jsp` file.
 
 ```{literalinclude} ./portlet-preferences/resources/liferay-p1z2.zip/p1z2-web/src/main/resources/META-INF/resources/configuration.jsp
 :language: jsp
 :lines: 8-30
 ```
 
-The JSP file uses `<liferay-portlet:actionURL />` and `<liferay-portlet:renderURL />` tags to construct URLs in the variables `configurationActionURL` and `configurationRenderURL`. 
+The JSP file uses `<liferay-portlet:actionURL />` and `<liferay-portlet:renderURL />` tags to construct URLs in the variables `configurationActionURL` and `configurationRenderURL`.
 
 When someone submits the form, the `configurationActionURL` is invoked, which triggers the application's `processAction` method with the `color` variable included as a request parameter.
 
-A URL parameter named `cmd` is supplied indicating the purpose of the request. The value of the `cmd` parameter is `update`. 
+A URL parameter named `cmd` is supplied indicating the purpose of the request. The value of the `cmd` parameter is `update`.
 
 ## Create the Configuration Action
 
-Create a custom configuration action class to be able to access the portlet's preferences. 
+Create a custom configuration action class to be able to access the portlet's preferences.
 
 ```{literalinclude} ./portlet-preferences/resources/liferay-p1z2.zip/p1z2-web/src/main/java/com/acme/p1z2/web/internal/portlet/action/P1Z2ConfigurationAction.java
 :language: java
-:lines: 14-34
+:lines: 13-32
 ```
 
 In the `@Component` annotation, specify the portlet the action class applies to with a `property` tag.
@@ -96,7 +95,7 @@ Add some logic to the `view.jsp` file to access the portlet's preference.
 
 The JSP file checks for the selected portlet preference and returns the value. If no value has yet been saved, `blue` is returned as the default value.
 
-Note that the `<portlet:defineObjects />` tag makes `portletPreferences` available, which you use to retrieve the `color` preference in the JSP. 
+Note that the `<portlet:defineObjects />` tag makes `portletPreferences` available, which you use to retrieve the `color` preference in the JSP.
 
 ## Add the Portlet's Path Parameters
 
@@ -107,6 +106,6 @@ In the portlet's `@Component` annotation, add the view template and configuratio
 :lines: 9-18
 ```
 
-## Related Information
+## Related Topics
 
-* [Portlet Level Configuration](../../core-frameworks/configuration-framework/portlet-level-configuration.md)
+- [Portlet Level Configuration](../../core-frameworks/configuration-framework/portlet-level-configuration.md)

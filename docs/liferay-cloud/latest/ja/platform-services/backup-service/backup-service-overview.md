@@ -116,7 +116,7 @@ Liferay Cloudコンソールまたはバックアップサービスの`LCP.json`
 
 ## 自動バックアップとクリーンアップのスケジューリング
 
-バックアップの作成と削除の頻度を決定することは、データの保護とストレージの最適化に役立ちます。 **本番環境のみスケジュールバックアップが可能です。**
+バックアップの作成と削除の頻度を決定することは、データの保護とストレージの最適化に役立ちます。
 
 ```{warning}
 Liferayインスタンスでデータがアクティブに変更されている間にバックアップを作成すると、データの不整合が発生する危険性があります。 データの不整合のリスクを軽減するために、アクティビティが減少している時間帯にキックオフするようにバックアップスケジュールを設定します。 完全に一貫性のあるバックアップを確保するには、 [手動バックアップ](./backup-service-overview.md#creating-a-manual-backup) を実行している間、更新をフリーズするようにデータベース管理者と調整し、クリーンアップスケジュール (`LCP_BACKUP_CLEANUP_SCHEDULE`) とは *異なる時間* に実行するように設定します。
@@ -124,8 +124,8 @@ Liferayインスタンスでデータがアクティブに変更されている�
 
 自動バックアップのスケジュールを設定するには、2つの方法があります。
 
-* [コンソール経由](#configuring-the-schedule-via-the-console) 
-* [環境変数の使用](#configuring-the-schedule-using-environment-variables) 
+* [コンソール経由](#configuring-the-schedule-via-the-console)
+* [環境変数の使用](#configuring-the-schedule-using-environment-variables)
 
 ### コンソールでスケジュールを設定する
 

@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Content Management System
+- Web Content and Structures
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 1fad3ffb-9d93-4a8b-baad-20382b53a17d
 ---
 # Generating Text Content Using AI

@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Digital Asset Management
+- Documents and Media
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: a266c23a-5c23-4de6-a818-21e83f79cb1e
 ---
 # Configuring Document URLs

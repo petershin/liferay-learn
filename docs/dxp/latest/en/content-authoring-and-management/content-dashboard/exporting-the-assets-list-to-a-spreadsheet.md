@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Content Management System
+- Content Dashboard
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 1553a9b8-a964-40db-abd2-ee882863bfd9
 ---
 # Exporting Assets List To a Spreadsheet

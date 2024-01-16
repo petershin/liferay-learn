@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Digital Asset Management
+- Documents and Media
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 toc:
   - ./publishing-and-sharing/publishing-documents.md
   - ./publishing-and-sharing/using-adaptive-media.md

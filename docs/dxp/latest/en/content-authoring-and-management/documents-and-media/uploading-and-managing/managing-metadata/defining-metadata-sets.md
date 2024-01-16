@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Digital Asset Management
+- Documents and Media
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 665d0c03-9f34-426c-a2b1-4146546397e3
 ---
 # Defining Metadata Sets

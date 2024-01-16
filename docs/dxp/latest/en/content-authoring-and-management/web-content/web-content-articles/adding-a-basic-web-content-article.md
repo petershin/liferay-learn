@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Content Management System
+- Web Content and Structures
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 89efcf46-c68b-42f1-b33e-f41ba46002f2
 ---
 # Adding a Basic Web Content Article

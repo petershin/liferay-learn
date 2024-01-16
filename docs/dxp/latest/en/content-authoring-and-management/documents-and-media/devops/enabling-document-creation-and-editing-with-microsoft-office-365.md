@@ -1,4 +1,12 @@
 ---
+taxonomy-category-names:
+- Digital Asset Management
+- Documents and Media
+- DXP Configuration
+- Data Integration
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 571fd02d-3c00-4ecb-93fe-b3f5666f3418
 ---
 # Enabling Document Creation and Editing with Microsoft Office 365

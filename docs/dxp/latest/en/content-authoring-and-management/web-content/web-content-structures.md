@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Content Management System
+- Web Content and Structures
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 toc:
   - ./web-content-structures/understanding-web-content-structures.md
   - ./web-content-structures/creating-structures.md

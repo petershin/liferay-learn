@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Digital Asset Management
+- Documents and Media
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 949e8979-f069-4304-81d1-708d8b741e3d
 ---
 # Using Adapted Images in Site Content

@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Content Management System
+- Content Dashboard
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 72fe94c3-4995-4477-82af-756b80871f32
 ---
 # Content Dashboard Interface

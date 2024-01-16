@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Content Management System
+- Web Content and Structures
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: d7dd0107-4961-4ce5-b2d0-812e81269edb
 ---
 # Using Expiration and Review Dates in Web Content

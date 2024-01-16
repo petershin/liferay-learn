@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Digital Asset Management
+- Documents and Media
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: a8ef069b-22d0-4e72-b60e-7bed3ac32346
 ---
 # Embedding Videos Into Liferay Assets and Pages

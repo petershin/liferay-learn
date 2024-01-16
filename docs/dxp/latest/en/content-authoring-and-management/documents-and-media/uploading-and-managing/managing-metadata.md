@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Digital Asset Management
+- Documents and Media
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 toc:
   - ./managing-metadata/defining-document-types.md
   - ./managing-metadata/defining-metadata-sets.md

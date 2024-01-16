@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Digital Asset Management
+- Documents and Media
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 toc:
   - ./developer-guide/document-api-basics.md
   - ./developer-guide/adaptive-media-modules-reference.md

@@ -1,4 +1,11 @@
 ---
+taxonomy-category-names:
+- Content Management System
+- Web Content and Structures
+- API Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: ad9381e2-7fcf-4448-8028-59ed858e80c0
 ---
 # Managing Structures and Templates by Using the REST API

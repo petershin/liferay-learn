@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Content Management System
+- Web Content and Structures
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 toc:
   - ./web-content-templates/creating-web-content-templates.md
   - ./web-content-templates/embedding-widgets-in-templates.md

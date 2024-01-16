@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Digital Asset Management
+- Documents and Media
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: aa109d64-1aae-4b1e-a0f9-f71442424b41
 ---
 # Adaptive Media Configuration Reference

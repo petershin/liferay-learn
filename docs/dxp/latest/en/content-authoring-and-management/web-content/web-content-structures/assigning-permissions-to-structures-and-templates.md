@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Content Management System
+- Web Content and Structures
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 54b92a15-9854-49d9-bef3-ff6e74f53c9b
 ---
 # Assigning Permissions to Web Content Structures and Templates

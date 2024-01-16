@@ -1,4 +1,11 @@
 ---
+taxonomy-category-names:
+- Content Management System
+- Content Translations
+- Workflow
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 7b2c7380-a5c5-4cbe-82c9-8ed132a95694
 ---
 # Enabling Workflows for Translations

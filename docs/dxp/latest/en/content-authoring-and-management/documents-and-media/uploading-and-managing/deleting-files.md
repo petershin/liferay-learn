@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Digital Asset Management
+- Documents and Media
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: eaf4ad1a-53ef-47a1-aaad-049fd486675d
 ---
 # Deleting Files

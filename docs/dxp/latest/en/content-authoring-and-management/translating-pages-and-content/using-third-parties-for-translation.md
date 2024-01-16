@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Content Management System
+- Content Translations
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 1b4947c4-5862-41d9-87ff-4e8bb5c8837a
 ---
 # Using Third Parties for Translation

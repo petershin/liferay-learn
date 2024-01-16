@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Digital Asset Management
+- Documents and Media
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 32fcc00c-b05e-47f5-ac3e-e7631817c4f3
 ---
 # Migrating Documents and Media Thumbnails to Adaptive Media

@@ -1,4 +1,11 @@
 ---
+taxonomy-category-names:
+- Content Management System
+- Categories and Tags
+- API Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 7b76cd72-98a7-4a03-b248-e06112eb6c04
 ---
 # Tags API Basics

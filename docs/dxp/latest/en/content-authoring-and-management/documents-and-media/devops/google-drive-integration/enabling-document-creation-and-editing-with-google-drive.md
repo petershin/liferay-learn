@@ -1,4 +1,12 @@
 ---
+taxonomy-category-names:
+- Digital Asset Management
+- Documents and Media
+- DXP Configuration
+- Data Integration
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 1db3c97d-8112-4575-8420-20d641a3eedf
 ---
 # Enabling Document Creation and Editing with Google Drive

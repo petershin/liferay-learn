@@ -1,4 +1,11 @@
 ---
+taxonomy-category-names:
+- Content Management System
+- Web Content and Structures
+- Fragments
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 209ff36f-8908-444d-be4b-1d293af9c4ee
 ---
 # Mapping Web Content Templates to Fragments

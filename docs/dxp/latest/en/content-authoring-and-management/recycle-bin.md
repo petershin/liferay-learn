@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Content Management System
+- Content Configurations
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 toc:
   - ./recycle-bin/recycle-bin-overview.md
   - ./recycle-bin/configuring-the-recycle-bin.md

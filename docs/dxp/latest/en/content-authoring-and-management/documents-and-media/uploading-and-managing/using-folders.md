@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Digital Asset Management
+- Documents and Media
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 4e440ea1-b447-4c5f-90e6-09a3ce0bbfcd
 ---
 # Using Folders

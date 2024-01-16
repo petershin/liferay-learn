@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Content Management System
+- Web Content and Structures
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: ce4f21a1-f104-4587-aaff-2d7af1b10139
 ---
 # Creating Structures

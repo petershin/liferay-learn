@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Digital Asset Management
+- Documents and Media
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 2246ec82-1b99-4c94-a3ba-8a73f1c9ab46
 ---
 # Managing Image Resolutions

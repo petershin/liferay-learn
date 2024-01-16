@@ -1,4 +1,11 @@
 ---
+taxonomy-category-names:
+- Content Management System
+- Web Content and Structures
+- API Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 toc:
   - ./developer-guide/web-content-api-basics.md
   - ./developer-guide/advanced-web-content-api.md

@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Content Management System
+- Categories and Tags
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 toc:
   - ./tags-and-categories/organizing-content-with-categories-and-tags.md
   - ./tags-and-categories/tagging-content-and-managing-tags.md

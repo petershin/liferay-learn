@@ -1,4 +1,11 @@
 ---
+taxonomy-category-names:
+- Digital Asset Management
+- Documents and Media
+- DXP Configuration
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: c40b20e9-c296-4beb-9f33-62bb0ef39b9f
 ---
 # Configuring Caching for Documents and Media

@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Content Management System
+- Content Performance
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 1c7ea087-074c-4b44-933b-fb49cb364c0a
 ---
 # About the Page Audit Tool

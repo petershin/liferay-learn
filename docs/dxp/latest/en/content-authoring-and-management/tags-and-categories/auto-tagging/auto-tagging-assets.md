@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Content Management System
+- Categories and Tags
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 665b7f45-4148-469f-8f93-571c38d4f168
 ---
 # Auto Tagging Assets

@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Content Management System
+- Categories and Tags
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 toc:
   - ./auto-tagging/configuring-asset-auto-tagging.md
   - ./auto-tagging/auto-tagging-assets.md

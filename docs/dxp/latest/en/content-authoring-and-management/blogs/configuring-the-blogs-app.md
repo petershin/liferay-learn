@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Content Management System
+- Blogs
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 2f337fd8-24fc-4150-b6d8-d417cecd9044
 ---
 # Configuring the Blogs App

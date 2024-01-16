@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Digital Asset Management
+- Documents and Media
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 8387ea84-8b44-4087-91db-deab5debc60c
 ---
 # Managing Document Changes with Checkout

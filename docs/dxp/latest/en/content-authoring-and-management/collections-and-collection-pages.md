@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Collections
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 toc:
   - ../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md
   - ../site-building/displaying-content/collections-and-collection-pages/creating-collections.md

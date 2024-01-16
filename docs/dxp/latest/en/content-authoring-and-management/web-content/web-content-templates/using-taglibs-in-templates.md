@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Content Management System
+- Web Content and Structures
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: eccdd0ca-296f-46eb-a737-fe3100650be6
 ---
 # Using Taglibs in Templates

@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Content Management System
+- Blogs
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 toc:
   - ./blogs/getting-started-with-blogs.md
   - ./blogs/adding-blog-entries.md

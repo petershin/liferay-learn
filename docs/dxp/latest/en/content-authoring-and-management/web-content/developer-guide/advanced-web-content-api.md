@@ -1,4 +1,11 @@
 ---
+taxonomy-category-names:
+- Content Management System
+- Web Content and Structures
+- API Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 0e4115ae-4688-439d-a40f-e9399f0f167d
 ---
 # Advanced Web Content API

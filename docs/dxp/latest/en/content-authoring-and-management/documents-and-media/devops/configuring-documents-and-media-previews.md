@@ -1,4 +1,11 @@
 ---
+taxonomy-category-names:
+- Digital Asset Management
+- Documents and Media
+- DXP Configuration
+- Data Integration
+- Liferay Self-Hosted
+- Liferay PaaS
 uuid: e1c9c81a-e2a8-492a-b61e-f3eb7b4c6d52
 ---
 # Configuring Documents and Media Previews

@@ -1,4 +1,12 @@
 ---
+taxonomy-category-names:
+- Digital Asset Management
+- Documents and Media
+- DXP Configuration
+- Data Integration
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 toc:
   - ./devops/configuring-documents-and-media-previews.md
   - >-

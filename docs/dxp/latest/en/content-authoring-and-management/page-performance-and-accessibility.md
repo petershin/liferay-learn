@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Content Management System
+- Content Performance
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 toc:
   - ./page-performance-and-accessibility/about-the-content-performance-tool.md
   - ./page-performance-and-accessibility/analyze-content-metrics-using-content-performance-tool.md

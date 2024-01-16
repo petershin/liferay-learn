@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Content Management System
+- Content Configurations
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 989c86ff-35da-4569-900a-aa77fa559b39
 ---
 # Recycle Bin Overview

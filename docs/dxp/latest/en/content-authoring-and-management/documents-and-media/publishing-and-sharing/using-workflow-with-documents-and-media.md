@@ -1,4 +1,11 @@
 ---
+taxonomy-category-names:
+- Digital Asset Management
+- Documents and Media
+- Workflow
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: a164df22-46f5-4b1f-9ec5-ed18c3466897
 ---
 # Using Workflow with Documents and Media

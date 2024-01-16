@@ -1,4 +1,9 @@
 ---
+taxonomy-category-names:
+- Content Management System
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 toc:
   - ./content-authoring-and-management/asset-libraries.md
   - ./content-authoring-and-management/blogs.md

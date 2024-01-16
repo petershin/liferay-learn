@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Content Management System
+- Content Dashboard
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 toc:
   - ./content-dashboard/about-the-content-dashboard.md
   - ./content-dashboard/content-dashboard-interface.md

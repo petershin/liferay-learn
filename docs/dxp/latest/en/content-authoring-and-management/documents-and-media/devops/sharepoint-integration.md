@@ -1,4 +1,11 @@
 ---
+taxonomy-category-names:
+- Digital Asset Management
+- Documents and Media
+- DXP Configuration
+- Data Integration
+- Liferay Self-Hosted
+- Liferay PaaS
 toc:
   - ./sharepoint-integration/enabling-liferays-rest-connector-to-sharepoint.md
   - >-

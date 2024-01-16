@@ -1,4 +1,11 @@
 ---
+taxonomy-category-names:
+- Digital Asset Management
+- Documents and Media
+- DXP Configuration
+- Data Integration
+- Liferay Self-Hosted
+- Liferay PaaS
 uuid: 1c2204f6-6176-4b25-96f7-357d793a489a
 ---
 # Enabling FFmpeg for Audio and Video Previews

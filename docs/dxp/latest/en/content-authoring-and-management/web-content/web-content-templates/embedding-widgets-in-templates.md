@@ -1,4 +1,11 @@
 ---
+taxonomy-category-names:
+- Content Management System
+- Web Content and Structures
+- Widgets
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 639e26cd-ceb4-4590-a380-56777ab455a1
 ---
 # Embedding Widgets in Templates

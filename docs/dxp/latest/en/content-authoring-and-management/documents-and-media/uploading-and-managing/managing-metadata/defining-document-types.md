@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Digital Asset Management
+- Documents and Media
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 4e674e72-10be-403f-a38d-3fb01d5bd7d3
 ---
 # Defining Document Types

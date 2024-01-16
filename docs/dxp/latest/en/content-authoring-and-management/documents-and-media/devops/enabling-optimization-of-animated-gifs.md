@@ -1,4 +1,11 @@
 ---
+taxonomy-category-names:
+- Digital Asset Management
+- Documents and Media
+- DXP Configuration
+- Data Integration
+- Liferay Self-Hosted
+- Liferay PaaS
 uuid: d94161ac-2456-4c2c-814b-1211ff270f94
 ---
 # Enabling Optimization of Animated GIFs

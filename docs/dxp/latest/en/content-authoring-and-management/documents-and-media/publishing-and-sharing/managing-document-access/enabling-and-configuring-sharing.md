@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Digital Asset Management
+- Documents and Media
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 1209e284-6e69-4465-a67e-6a41e36249be
 ---
 # Enabling and Configuring Sharing

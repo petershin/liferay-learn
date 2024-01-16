@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Digital Asset Management
+- Documents and Media
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 toc:
   - ./videos/creating-external-video-shortcuts.md
   - ./videos/embedding-videos-into-liferay-assets-and-pages.md

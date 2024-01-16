@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Digital Asset Management
+- Documents and Media
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 33131427-55cb-4704-8c01-9f72c5c674fa
 ---
 # Linking to Files on Google Drive

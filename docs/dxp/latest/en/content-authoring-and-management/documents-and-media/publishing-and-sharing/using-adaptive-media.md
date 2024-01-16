@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Digital Asset Management
+- Documents and Media
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 toc:
   - ./using-adaptive-media/adding-image-resolutions.md
   - ./using-adaptive-media/managing-image-resolutions.md

@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Digital Asset Management
+- Documents and Media
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 14155784-a114-48f6-b28a-6efc9bf094c4
 ---
 # Creating and Editing Documents with Microsoft Office 365

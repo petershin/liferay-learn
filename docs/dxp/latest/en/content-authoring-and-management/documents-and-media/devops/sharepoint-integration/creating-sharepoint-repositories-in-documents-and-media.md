@@ -1,4 +1,11 @@
 ---
+taxonomy-category-names:
+- Digital Asset Management
+- Documents and Media
+- DXP Configuration
+- Data Integration
+- Liferay Self-Hosted
+- Liferay PaaS
 uuid: 29ca8a76-5840-4706-8e2d-48a5e0c9d576
 ---
 # Creating SharePoint Repositories in Documents and Media

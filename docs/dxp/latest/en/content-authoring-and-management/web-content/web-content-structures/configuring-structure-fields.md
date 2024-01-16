@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Content Management System
+- Web Content and Structures
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 0d83f307-076c-4253-ad57-71ae68865a93
 ---
 # Configuring Structure Fields

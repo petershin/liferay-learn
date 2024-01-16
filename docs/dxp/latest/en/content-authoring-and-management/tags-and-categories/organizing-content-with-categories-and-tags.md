@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Content Management System
+- Categories and Tags
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: fee5ac12-a246-455e-8776-ded55393ba20
 ---
 # Organizing Content with Categories and Tags

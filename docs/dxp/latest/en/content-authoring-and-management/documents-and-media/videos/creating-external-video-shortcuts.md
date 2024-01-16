@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Digital Asset Management
+- Documents and Media
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: cb91de54-1b09-4b55-88db-7e69a9e98822
 ---
 # Creating External Video Shortcuts

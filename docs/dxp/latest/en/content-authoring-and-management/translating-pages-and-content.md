@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Content Management System
+- Content Translations
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 toc:
   - ./translating-pages-and-content/translating-content-pages.md
   - ./translating-pages-and-content/translating-web-content.md

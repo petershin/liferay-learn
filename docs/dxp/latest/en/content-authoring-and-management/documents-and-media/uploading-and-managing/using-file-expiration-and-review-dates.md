@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Digital Asset Management
+- Documents and Media
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: e1939cff-f7e7-4ecd-bce2-6234a8ae0696
 ---
 # Using File Expiration and Review Dates

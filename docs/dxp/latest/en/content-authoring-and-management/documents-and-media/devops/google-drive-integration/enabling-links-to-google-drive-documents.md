@@ -1,4 +1,12 @@
 ---
+taxonomy-category-names:
+- Digital Asset Management
+- Documents and Media
+- DXP Configuration
+- Data Integration
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: be520f97-0b53-4a85-af0f-20585e0920b7
 ---
 # Enabling Links to Google Drive Documents

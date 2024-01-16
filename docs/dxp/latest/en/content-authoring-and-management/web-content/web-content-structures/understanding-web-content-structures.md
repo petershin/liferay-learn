@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Content Management System
+- Web Content and Structures
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: b0e28948-2c6e-4024-8d51-0b19da27dc41
 ---
 # Understanding Web Content Structures

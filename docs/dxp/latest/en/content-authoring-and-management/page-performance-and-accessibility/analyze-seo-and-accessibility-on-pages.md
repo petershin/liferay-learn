@@ -1,4 +1,12 @@
 ---
+taxonomy-category-names:
+- Content Management System
+- Content Performance
+- SEO
+- Accessibility
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 976ee872-ee10-4266-bd21-c9e2af7caa8e
 ---
 # Analyze SEO and Accessibility on Pages

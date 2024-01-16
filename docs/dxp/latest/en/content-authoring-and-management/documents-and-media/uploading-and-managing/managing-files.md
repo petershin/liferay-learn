@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Digital Asset Management
+- Documents and Media
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 7630fcb9-2bb3-43a5-bfbe-7f41c9f35a3f
 ---
 # Managing Files

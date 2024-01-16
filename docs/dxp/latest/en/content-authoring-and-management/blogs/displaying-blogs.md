@@ -1,4 +1,12 @@
 ---
+taxonomy-category-names:
+- Content Management System
+- Blogs
+- Display Page Templates
+- Widgets
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 7f36774b-50b3-439e-8651-f43fe33d6113
 ---
 # Displaying Blogs

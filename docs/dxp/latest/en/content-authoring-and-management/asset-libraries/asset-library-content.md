@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Digital Asset Management
+- Asset Libraries
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 10493643-7970-49b1-89a8-2363bc7a390a
 ---
 # Asset Library Content

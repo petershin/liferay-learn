@@ -1,4 +1,11 @@
 ---
+taxonomy-category-names:
+- Digital Asset Management
+- Documents and Media
+- Widgets
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: c938bebd-e338-4173-9be3-cf1d6dc90f17
 ---
 # Publishing Documents

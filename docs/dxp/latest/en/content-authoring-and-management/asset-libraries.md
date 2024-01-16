@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Digital Asset Management
+- Asset Libraries
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 toc:
   - ./asset-libraries/asset-libraries-overview.md
   - ./asset-libraries/creating-and-managing-asset-libraries.md

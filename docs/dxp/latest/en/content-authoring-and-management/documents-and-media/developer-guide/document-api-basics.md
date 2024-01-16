@@ -1,4 +1,11 @@
 ---
+taxonomy-category-names:
+- Digital Asset Management
+- Documents and Media
+- API Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 87084148-5102-4d8d-b55c-9efa57a7a2b4
 ---
 # Document API Basics

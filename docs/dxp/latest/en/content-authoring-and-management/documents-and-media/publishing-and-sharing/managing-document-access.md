@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Digital Asset Management
+- Documents and Media
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 toc:
   - ./managing-document-access/sharing-documents-with-other-users.md
   - ./managing-document-access/enabling-and-configuring-sharing.md

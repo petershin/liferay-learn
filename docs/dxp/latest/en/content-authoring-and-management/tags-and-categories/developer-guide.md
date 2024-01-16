@@ -1,4 +1,11 @@
 ---
+taxonomy-category-names:
+- Content Management System
+- Categories and Tags
+- API Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 toc:
   - ./developer-guide/categories-and-vocabulary-api-basics.md
   - ./developer-guide/tags-api-basics.md

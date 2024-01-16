@@ -1,4 +1,12 @@
 ---
+taxonomy-category-names:
+- Digital Asset Management
+- Documents and Media
+- DXP Configuration
+- Data Integration
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: a9386598-fc8a-4ffc-ac4e-46deaf6ecdfe
 ---
 # Setting Storage Quotas for Documents and Media

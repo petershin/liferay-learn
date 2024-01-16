@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Digital Asset Management
+- Documents and Media
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 96523e51-1fed-4796-9e53-d593ac3a4fdd
 ---
 # Permissions and Documents

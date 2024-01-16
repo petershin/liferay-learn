@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Content Management System
+- Content Performance
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: e6b5ad05-44cf-43de-9b3c-d082683a47e0
 ---
 # About the Content Performance Tool

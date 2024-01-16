@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Content Management System
+- Blogs
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 857b463d-fe27-4a03-bca1-22a5b8a76bd7
 ---
 # Managing Blog Entries

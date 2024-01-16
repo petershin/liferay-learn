@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Content Management System
+- Web Content and Structures
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: f69fd720-0df2-4a33-8aeb-ebaa3e0bcfdf
 ---
 # What's New with Web Content Structures in 7.4?

@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Content Management System
+- Web Content and Structures
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: c423446a-0ecb-4cf4-b455-93be58860e71
 ---
 # Filtering and Sorting Web Content Articles

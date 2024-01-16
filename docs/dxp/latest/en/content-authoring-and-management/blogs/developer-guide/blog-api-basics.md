@@ -1,4 +1,11 @@
 ---
+taxonomy-category-names:
+- Content Management System
+- Blogs
+- API Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: e4700cd7-9a0b-43df-b750-22d86f7bf3a7
 ---
 # Blog API Basics

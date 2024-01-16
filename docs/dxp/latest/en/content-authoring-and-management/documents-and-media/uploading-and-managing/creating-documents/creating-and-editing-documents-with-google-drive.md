@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Digital Asset Management
+- Documents and Media
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: af979474-02fa-4010-b25e-48a570d2ee06
 ---
 # Creating and Editing Documents with Google Drive

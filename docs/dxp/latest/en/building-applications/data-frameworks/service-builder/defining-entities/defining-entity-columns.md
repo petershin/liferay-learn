@@ -1,5 +1,10 @@
 ---
 uuid: 60e756cb-8c09-4781-9ed4-34720ab6c046
+taxonomy-category-names:
+- Development and Tooling
+- Data Frameworks
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Defining Entity Columns
 

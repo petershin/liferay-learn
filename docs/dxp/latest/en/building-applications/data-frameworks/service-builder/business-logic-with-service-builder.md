@@ -1,5 +1,10 @@
 ---
 uuid: 22d7912d-44f5-4662-9781-37e6ff94e7af
+taxonomy-category-names:
+- Development and Tooling
+- Data Frameworks
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Business Logic with Service Builder
 

@@ -1,5 +1,10 @@
 ---
 uuid: aedfff98-59cf-4d1b-a773-74df3db8842f
+taxonomy-category-names:
+- Development and Tooling
+- Data Frameworks
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Sorting Entity Instances
 

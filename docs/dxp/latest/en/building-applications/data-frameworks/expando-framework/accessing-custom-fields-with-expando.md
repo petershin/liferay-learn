@@ -1,5 +1,11 @@
 ---
 uuid: 90b245d4-3148-4285-82b3-7add016b3089
+taxonomy-category-names:
+- Development and Tooling
+- Data Frameworks
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Accessing Custom Fields With Expandos
 

@@ -1,5 +1,11 @@
 ---
 uuid: bd156517-f9c8-423e-929b-2beeb4d90d3c
+taxonomy-category-names:
+- Development and Tooling
+- Data Frameworks
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 
 # Generating Model, Persistence, and Service Code

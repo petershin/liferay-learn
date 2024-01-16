@@ -1,5 +1,11 @@
 ---
 uuid: 580c1f2e-e0bf-4618-834e-9969a2e37c73
+taxonomy-category-names:
+- Development and Tooling
+- Data Frameworks
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Multithreading Process
 

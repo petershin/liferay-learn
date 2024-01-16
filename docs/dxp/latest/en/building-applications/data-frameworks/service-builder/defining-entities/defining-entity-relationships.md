@@ -1,5 +1,10 @@
 ---
 uuid: 1e9eb25c-6a52-4a6e-af8d-46cca514e7d2
+taxonomy-category-names:
+- Development and Tooling
+- Data Frameworks
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Defining Entity Relationships
 

@@ -1,5 +1,10 @@
 ---
 uuid: 269282da-7ca5-4497-a2ea-c87312f51dca
+taxonomy-category-names:
+- Development and Tooling
+- Data Frameworks
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Adding Model Hints
 

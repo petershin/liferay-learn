@@ -1,5 +1,11 @@
 ---
 uuid: 0b2eff48-8918-4c7c-acbb-70da473ed8a5
+taxonomy-category-names:
+- Development and Tooling
+- Data Frameworks
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Invoking a Service Locally
 

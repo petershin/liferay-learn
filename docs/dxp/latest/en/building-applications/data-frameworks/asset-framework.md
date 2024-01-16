@@ -2,6 +2,12 @@
 toc:
   - ./asset-framework/enabling-assets.md
 uuid: f905ecfc-8570-43f9-b00d-891be0948e09
+taxonomy-category-names:
+- Development and Tooling
+- Data Frameworks
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Asset Framework
 

@@ -1,5 +1,10 @@
 ---
 uuid: c4270633-fe9a-4998-8e5b-56ab635206bf
+taxonomy-category-names:
+- Development and Tooling
+- Data Frameworks
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Modifying Database Fields in Development
 

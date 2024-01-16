@@ -1,5 +1,10 @@
 ---
 uuid: 92b925e3-498f-4d02-be44-40d5252f30e1
+taxonomy-category-names:
+- Development and Tooling
+- Data Frameworks
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Upgrading Your Database Tables
 

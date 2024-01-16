@@ -1,5 +1,11 @@
 ---
 uuid: 0bf8520a-45b6-4c15-bae8-7893fd7dbc39
+taxonomy-category-names:
+- Development and Tooling
+- Data Frameworks
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Enabling Assets
 

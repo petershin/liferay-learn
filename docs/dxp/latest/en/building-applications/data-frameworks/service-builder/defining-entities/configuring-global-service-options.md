@@ -1,5 +1,10 @@
 ---
 uuid: 4073b2f5-ecb6-44d9-80e1-5e4cabf8ce91
+taxonomy-category-names:
+- Development and Tooling
+- Data Frameworks
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 
 # Configuring Global Service Options

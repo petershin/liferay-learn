@@ -1,5 +1,10 @@
 ---
 uuid: c4959577-5cab-4945-a4f5-6a98b89eae41
+taxonomy-category-names:
+- Development and Tooling
+- Data Frameworks
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Defining Entity Finder Methods
 

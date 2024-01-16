@@ -8,6 +8,11 @@ toc:
   - ./defining-entities/defining-entity-finder-methods.md
   - ./defining-entities/adding-model-hints.md
 uuid: 1dfdaf8e-4022-4376-a028-8fe2d1feaef1
+taxonomy-category-names:
+- Development and Tooling
+- Data Frameworks
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Defining Entities
 

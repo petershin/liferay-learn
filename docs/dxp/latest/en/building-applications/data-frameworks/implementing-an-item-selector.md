@@ -1,5 +1,11 @@
 ---
 uuid: 1cb72f4e-3406-4a9f-9583-33ab4dd7b17d
+taxonomy-category-names:
+- Development and Tooling
+- Data Frameworks
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 
 # Implementing an Item Selector

@@ -8,6 +8,12 @@ toc:
   - ./data-frameworks/service-builder.md
   - ./data-frameworks/upgrade-processes.md
 uuid: 6104b0cc-edd7-4bca-afeb-b8531753b279
+taxonomy-category-names:
+- Development and Tooling
+- Data Frameworks
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Data Frameworks
 

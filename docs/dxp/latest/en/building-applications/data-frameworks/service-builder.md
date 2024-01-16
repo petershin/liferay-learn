@@ -4,6 +4,11 @@ toc:
   - ./service-builder/defining-entities.md
   - ./service-builder/business-logic-with-service-builder.md
 uuid: 0609b966-a96b-4b65-a17b-da745de8cb9c
+taxonomy-category-names:
+- Development and Tooling
+- Data Frameworks
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Service Builder
 

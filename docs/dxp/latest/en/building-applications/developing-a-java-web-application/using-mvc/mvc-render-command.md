@@ -89,9 +89,8 @@ The [`@Component`](https://osgi.org/javadoc/r6/residential/org/osgi/service/comp
 
 The portlet renders `/a4p1/able.jsp` by default.
 
-```{note}
-`MVCRenderCommand`s bind to a portlet by the portlet's name (e.g., the portlet component `javax.portlet.name` property value).
-```
+!!! note
+    `MVCRenderCommand`s bind to a portlet by the portlet's name (e.g., the portlet component `javax.portlet.name` property value).
 
 The portlet's MVC Render Command classes are next.
 
@@ -106,19 +105,17 @@ MVC Render Command classes can implement [`MVCRenderCommand`](https://github.com
 
 `A4P1AbleMVCRenderCommand` is a [`Component`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Component.html) that provides an `MVCRenderCommand` service. The component properties apply the `A4P1AbleMVCRenderCommand` to the portlet named `com_acme_a4p1_web_internal_portlet_A4P1Portlet` and map `A4P1AbleMVCRenderCommand` to the MVC command name `/a4p1/able`.
 
-```{note}
-You can associate an `MVCRenderCommand` component with multiple portlets by declaring separate `javax.portlet.name` properties for each portlet:
+!!! note
+    You can associate an `MVCRenderCommand` component with multiple portlets by declaring separate `javax.portlet.name` properties for each portlet:
 
-      
-      @Component(
-         property = {
-            "javax.portlet.name=com_acme_a4p1_web_internal_portlet_A4P1Portlet",
-            "javax.portlet.name=com_acme_a4p1_web_internal_portlet_A4P2Portlet",
-            "mvc.command.name=/a4p1/download"
-         },
-         service = MVCRenderCommand.class
-      )
-```
+        @Component(
+            property = {
+                "javax.portlet.name=com_acme_a4p1_web_internal_portlet_A4P1Portlet",
+                "javax.portlet.name=com_acme_a4p1_web_internal_portlet_A4P2Portlet",
+                "mvc.command.name=/a4p1/download"
+            },
+            service = MVCRenderCommand.class
+        )
 
 When the portlet receives a request parameter that specifies the MVC command name `/a4p1/able`, `A4P1AbleMVCRenderCommand`'s `render` method executes. This `render` method logs a message that identifies itself and then returns the path of the view to render.
 
@@ -142,21 +139,21 @@ The hyperlink `<a href="<%= bakerURL %>">Go to Baker</a>` binds the render URL t
 
 `baker.jsp` is similar to `able.jsp` except its portlet render URL `mvcRenderCommandName` parameter value is `/a4p1/able`. Each JSP's `portlet:renderURL` tag maps to an MVC Render Command by assigning the MVC Render Command's `mvc.command.name` property value to the tag's `mvcRenderCommandName` portlet parameter.
 
-| `able.jsp` Portlet Render URL Parameter | `A4P1BakerMVCRenderCommand` Component Property |
-| :--- | :--- |
-| `<portlet:param name="mvcRenderCommandName" value="/a4p1/baker" />` | `mvc.command.name=/a4p1/baker` |
+| `able.jsp` Portlet Render URL Parameter                             | `A4P1BakerMVCRenderCommand` Component Property |
+| :------------------------------------------------------------------ | :--------------------------------------------- |
+| `<portlet:param name="mvcRenderCommandName" value="/a4p1/baker" />` | `mvc.command.name=/a4p1/baker`                 |
 
-| `baker.jsp` Portlet Render URL Parameter | `A4P1AbleMVCRenderCommand` Component Property |
-| :--- | :--- |
-| `<portlet:param name="mvcRenderCommandName" value="/a4p1/able" />` | `mvc.command.name=/a4p1/able` |
+| `baker.jsp` Portlet Render URL Parameter                           | `A4P1AbleMVCRenderCommand` Component Property |
+| :----------------------------------------------------------------- | :-------------------------------------------- |
+| `<portlet:param name="mvcRenderCommandName" value="/a4p1/able" />` | `mvc.command.name=/a4p1/able`                 |
 
 ## What's Next
 
-Now you know how to implement render logic in MVC Render Command classes. Next, you can act on resources such as files using [MVC Resource Command](./mvc-resource-command.md) classes. 
+Now you know how to implement render logic in MVC Render Command classes. Next, you can act on resources such as files using [MVC Resource Command](./mvc-resource-command.md) classes.
 
 ## Related Topics
 
-* [MVC Resource Command](./mvc-resource-command.md)
-* [MVC Action Command](./mvc-action-command.md)
-* [Using Localized Messages in an MVC Portlet](./using-localized-messages-in-an-mvc-portlet.md)
-* [Portlets](../reference/portlets.md)
+- [MVC Resource Command](./mvc-resource-command.md)
+- [MVC Action Command](./mvc-action-command.md)
+- [Using Localized Messages in an MVC Portlet](./using-localized-messages-in-an-mvc-portlet.md)
+- [Portlets](../reference/portlets.md)

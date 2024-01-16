@@ -41,9 +41,8 @@ Then, follow these steps:
     ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
     ```
 
-    ```{note}
-    This command is the same as copying module JARs to `/opt/liferay/osgi/modules` on the Docker container.
-    ```
+    !!! note
+        This command is the same as copying module JARs to `/opt/liferay/osgi/modules` on the Docker container.
 
 1. Confirm the deployment in the Docker container console.
 
@@ -84,9 +83,8 @@ The [`@Component`](https://osgi.org/javadoc/r6/residential/org/osgi/service/comp
 :lines: 14
 ```
 
-```{note}
-`MVCResourceCommand`s bind to a portlet by the portlet's name (e.g., the portlet component `javax.portlet.name` property value).
-```
+!!! note
+    `MVCResourceCommand`s bind to a portlet by the portlet's name (e.g., the portlet component `javax.portlet.name` property value).
 
 The portlet's MVC Resource Command class is next.
 
@@ -99,20 +97,19 @@ MVC Resource Command classes can implement [`MVCResourceCommand`](https://github
 :lines: 16-47
 ```
 
-`P8V5DownloadMVCResourceCommand` is a [`Component`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Component.html) that provides the `MVCResourceCommand` service. The component properties apply the `P8V5DownloadMVCResourceCommand` to the portlet named `com_acme_p8v5_web_internal_portlet_P8V5Portlet` and map `P8V5DownloadMVCResourceCommand` to the MVC command name `/p8v5/download`. The name you specify here must match the name declared in the portlet. 
+`P8V5DownloadMVCResourceCommand` is a [`Component`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Component.html) that provides the `MVCResourceCommand` service. The component properties apply the `P8V5DownloadMVCResourceCommand` to the portlet named `com_acme_p8v5_web_internal_portlet_P8V5Portlet` and map `P8V5DownloadMVCResourceCommand` to the MVC command name `/p8v5/download`. The name you specify here must match the name declared in the portlet.
 
-```{note}
-You can associate an `MVCResourceCommand` component with multiple portlets by declaring separate `javax.portlet.name` properties for each portlet:
+!!! note
+    You can associate an `MVCResourceCommand` component with multiple portlets by declaring separate `javax.portlet.name` properties for each portlet:
 
-      @Component(
-         property = {
-            "javax.portlet.name=com_acme_p8v5_web_internal_portlet_P8V5Portlet",
-            "javax.portlet.name=com_acme_p8v5_web_internal_portlet_P8V6Portlet",
-            "mvc.command.name=/p8v5/download"
-         },
-         service = MVCResourceCommand.class
-      )
-```
+        @Component(
+            property = {
+                "javax.portlet.name=com_acme_p8v5_web_internal_portlet_P8V5Portlet",
+                "javax.portlet.name=com_acme_p8v5_web_internal_portlet_P8V6Portlet",
+                "mvc.command.name=/p8v5/download"
+            },
+            service = MVCResourceCommand.class
+        )
 
 The example `serveResource` method creates a simple text file and sends it to the user via [`PortletResponseUtil`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/portlet/PortletResponseUtil.java). The method returns `true` if an error occurs or `false` otherwise.
 
@@ -128,9 +125,9 @@ The portlet's `view.jsp` file renders a link for invoking the MVC Resource Comma
 
 The first line makes the Portlet 2.0 tag library available via the `portlet` prefix. This JSP binds an action to a UI component using the tag library's `portlet:resourceURL` tag. The tag's `id` attribute uses the MVC Resource Command's `mvc.command.name` property value. The following table shows the correlation:
 
-| `view.jsp` Portlet Resource URL | `P8V5DownloadMVCResourceCommand` Component Property |
-| :--- | :--- |
-| `<a href="<portlet:resourceURL id="/p8v5/download" />">Download</a>` | `mvc.command.name=/p8v5/download` |
+| `view.jsp` Portlet Resource URL                                      | `P8V5DownloadMVCResourceCommand` Component Property |
+| :------------------------------------------------------------------- | :-------------------------------------------------- |
+| `<a href="<portlet:resourceURL id="/p8v5/download" />">Download</a>` | `mvc.command.name=/p8v5/download`                   |
 
 Clicking the view's *Download* link invokes `P8V5DownloadMVCResourceCommand`'s `serveResource` method.
 
@@ -140,6 +137,6 @@ Now you know how to use MVC Resource Commands. If you want to localize your port
 
 ## Related Topics
 
-* [Using MVC](../using-mvc.md)
-* [MVC Render Command](./mvc-render-command.md)
-* [MVC Action Command](./mvc-action-command.md)
+- [Using MVC](../using-mvc.md)
+- [MVC Render Command](./mvc-render-command.md)
+- [MVC Action Command](./mvc-action-command.md)

@@ -32,7 +32,7 @@ When a project is created using the [Service Builder template](../../../tooling/
 ```
 
 ```{note}
-Prior to Liferay DXP/Portal 7.2, Spring was the sole dependency injector. The services were Spring beans. Liferay's Spring bean framework accommodates Spring beans referencing each other: for example, Spring bean A has a Spring bean B field and vice versa. When Spring is the dependency injector, the base services Service Builder generates include local service and persistence fields of all the `service.xml`'s entities. This causes circular references. Since OSGi Declarative Services doesn't accommodate circular references, Service Builder does not create these fields in the base classes when DS is the dependency injector. For more details, see [Understanding Service Builder Generated Classes](../service-builder-basics/understanding-service-builder-generated-classes.md).
+Prior to Liferay DXP/Portal 7.2, Spring was the sole dependency injector. The services were Spring beans. Liferay's Spring bean framework accommodates Spring beans referencing each other: for example, Spring bean A has a Spring bean B field and vice versa. When Spring is the dependency injector, the base services Service Builder generates include local service and persistence fields of all the `service.xml`'s entities. This causes circular references. Since OSGi Declarative Services doesn't accommodate circular references, Service Builder does not create these fields in the base classes when DS is the dependency injector. For more details, see [Understanding and Extending Generated Classes](../service-builder-basics/understanding-and-extending-generated-classes.md).
 ```
 
 ## Package Path
@@ -44,7 +44,7 @@ The package path specifies the package where the service and persistence classes
         package-path="com.acme.guestbook">
 ```
 
-The package path above ensures that the `*-api` module's service classes are generated in the `com.acme.guestbook` package. The persistence classes are generated in a package of the same name in the `*-service` module. For more details on the generated classes, see [Understanding Service Builder Generated Classes](../service-builder-basics/understanding-service-builder-generated-classes.md). 
+The package path above ensures that the `*-api` module's service classes are generated in the `com.acme.guestbook` package. The persistence classes are generated in a package of the same name in the `*-service` module. For more details on the generated classes, see [Understanding and Extending Generated Classes](../service-builder-basics/understanding-and-extending-generated-classes.md). 
 
 ## Multiversion Concurrency Control (MVCC)
 

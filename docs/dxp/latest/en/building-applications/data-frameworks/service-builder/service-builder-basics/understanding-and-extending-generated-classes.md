@@ -17,7 +17,7 @@ unzip liferay-w9b7.zip
 
 Examine the `w9b7-service/service.xml` file:
 
-```{literalinclude} ./understanding-service-builder-generated-classes/resources/liferay-w9b7.zip/w9b7-service/service.xml
+```{literalinclude} ./understanding-and-extending-generated-classes/resources/liferay-w9b7.zip/w9b7-service/service.xml
 :language: xml
 ```
 

@@ -199,7 +199,7 @@ liferay-y7g4
             └── service.properties // Tracks the service build version
 ```
 
-モデル、永続性、およびサービス実装クラスは、Javaパッケージパス`com.acme.y7g4`に対して生成されました。 クラスについては、[Understanding Service Builder Generated Classes](./understanding-service-builder-generated-classes.md)をご覧ください。
+モデル、永続性、およびサービス実装クラスは、Javaパッケージパス`com.acme.y7g4`に対して生成されました。 クラスについては、[Understanding and Extending Generated Classes](./understanding-and-extending-generated-classes.md)をご覧ください。
 
 SQLスクリプトと永続性構成が`resources/META-INF`フォルダに生成されました。
 
@@ -437,7 +437,7 @@ STARTED com.acme.y7g4.api_1.0.0 [1422]
 
 ## 次のステップ
 
-モデルを定義し、その永続コードとサービスコードを生成する方法がわかったので、生成されたサービスクラスを調べる必要があります。 [生成されたクラスの理解と拡張](./understanding-service-builder-generated-classes.md)に進んでください。
+モデルを定義し、その永続コードとサービスコードを生成する方法がわかったので、生成されたサービスクラスを調べる必要があります。 [生成されたクラスの理解と拡張](./understanding-and-extending-generated-classes.md)に進んでください。
 
 ## 関連トピック
 

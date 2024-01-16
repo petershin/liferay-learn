@@ -206,7 +206,7 @@ liferay-y7g4
             └── service.properties // Tracks the service build version
 ```
 
-모델, 지속성 및 서비스 구현 클래스는 Java 패키지 경로 `com.acme.y7g4`에 생성되었습니다. [Service Builder 생성 클래스 이해](./understanding-service-builder-generated-classes.md)에서 클래스에 대해 알아보십시오.
+모델, 지속성 및 서비스 구현 클래스는 Java 패키지 경로 `com.acme.y7g4`에 생성되었습니다. [Service Builder 생성 클래스 이해](./understanding-and-extending-generated-classes.md)에서 클래스에 대해 알아보십시오.
 
 SQL 스크립트 및 지속성 구성은 `resources/META-INF` 폴더에 생성되었습니다.
 
@@ -444,7 +444,7 @@ STARTED com.acme.y7g4.api_1.0.0 [1422]
 
 ## 다음
 
-이제 모델을 정의하고 이에 대한 지속성 코드 및 서비스 코드를 생성하는 방법을 알았으므로 생성된 서비스 클래스를 검사해야 합니다. [생성된 클래스 이해 및 확장](./understanding-service-builder-generated-classes.md)에서 계속하십시오.
+이제 모델을 정의하고 이에 대한 지속성 코드 및 서비스 코드를 생성하는 방법을 알았으므로 생성된 서비스 클래스를 검사해야 합니다. [생성된 클래스 이해 및 확장](./understanding-and-extending-generated-classes.md)에서 계속하십시오.
 
 ## 관련 항목
 

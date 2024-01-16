@@ -14,7 +14,7 @@ unzip liferay-w9b7.zip
 
 `w9b7-service/service.xml` 파일을 검사합니다.
 
-```{literalinclude} ./understanding-service-builder-generated-classes/resources/liferay-w9b7.zip/w9b7-service/service.xml
+```{literalinclude} ./understanding-and-extending-generated-classes/resources/liferay-w9b7.zip/w9b7-service/service.xml
 :language: xml
 ```
 

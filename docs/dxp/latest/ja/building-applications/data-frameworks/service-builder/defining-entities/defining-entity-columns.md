@@ -2,7 +2,7 @@
 
 エンティティの列はその属性を表します。 これらの属性は、テーブルフィールドをJavaオブジェクトフィールドにマップします。
 
-ここでは、[Understanding Service Builder Generated Classes](../service-builder-basics/understanding-service-builder-generated-classes.md)にあるサンプルプロジェクトを検討し、列の詳細を学習します。
+ここでは、[Understanding and Extending Generated Classes](../service-builder-basics/understanding-and-extending-generated-classes.md)にあるサンプルプロジェクトを検討し、列の詳細を学習します。
 
 サンプルをダウンロードして解凍することから始めます。
 
@@ -16,7 +16,7 @@
 
 `w9b7-service/service.xml`ファイルを調べます：
 
-```{literalinclude} ../service-builder-basics/understanding-service-builder-generated-classes/resources/liferay-w9b7.zip/w9b7-service/service.xml
+```{literalinclude} ../service-builder-basics/understanding-and-extending-generated-classes/resources/liferay-w9b7.zip/w9b7-service/service.xml
 :language: xml
 ```
 
@@ -26,10 +26,10 @@
 <column name="w9b7EntryId" primary="true" type="long" />
 ```
 
-Service Builderを実行すると、オブジェクトリレーショナルマッピングを処理するHibernate構成が生成されます。 Service Builderは、`service.xml`ファイルに追加する列ごとにデータベースフィールドを作成します。 各列に指定されたJavaタイプに適したデータベースフィールド型をマップし、Liferayがサポートするすべてのデータベースにわたってマッピングを行います。  Service Builderは、これらの属性のモデルクラスにgetter/setterメソッドも生成します。 列の`primary`（つまりプライマリーキー）属性が`true`に設定されている場合、その列はエンティティのプライマリーキーになります。 これは、 [生成されたクラスの理解と拡張](../service-builder-basics/understanding-service-builder-generated-classes.md) にあるW9B7アプリケーションの場合です。 `primary`属性をtrueに設定して複数の列を定義する場合、列を組み合わせることでエンティティの複合プライマリーキーが構成されます。
+Service Builderを実行すると、オブジェクトリレーショナルマッピングを処理するHibernate構成が生成されます。 Service Builderは、`service.xml`ファイルに追加する列ごとにデータベースフィールドを作成します。 各列に指定されたJavaタイプに適したデータベースフィールド型をマップし、Liferayがサポートするすべてのデータベースにわたってマッピングを行います。  Service Builderは、これらの属性のモデルクラスにgetter/setterメソッドも生成します。 列の`primary`（つまりプライマリーキー）属性が`true`に設定されている場合、その列はエンティティのプライマリーキーになります。 これは、 [生成されたクラスの理解と拡張](../service-builder-basics/understanding-and-extending-generated-classes.md) にあるW9B7アプリケーションの場合です。 `primary`属性をtrueに設定して複数の列を定義する場合、列を組み合わせることでエンティティの複合プライマリーキーが構成されます。
 
 ```{note}
-[Implementing an Add Method](../service-builder-basics/understanding-service-builder-generated-classes.md#adding-a-local-service-method) では、エンティティインスタンスの一意のプライマリーキーを生成する方法を示しています。
+[Implementing an Add Method](../service-builder-basics/understanding-and-extending-generated-classes.md#adding-a-local-service-method) では、エンティティインスタンスの一意のプライマリーキーを生成する方法を示しています。
 ```
 
 ## エンティティの列を作成する

@@ -29,7 +29,7 @@
 ```
 
 ```{note}
-Liferay DXP/Portal 7.2 이전에는 Spring이 유일한 종속성 인젝터였습니다. 서비스는 Spring Bean이었습니다. Liferay의 Spring bean 프레임워크는 서로 참조하는 Spring bean을 수용합니다. 예를 들어 Spring bean A에는 Spring bean B 필드가 있고 그 반대도 마찬가지입니다. Spring이 종속성 인젝터인 경우 Service Builder가 생성하는 기본 서비스에는 모든 `service.xml` 엔티티의 로컬 서비스 및 지속성 필드가 포함됩니다. 이로 인해 순환 참조가 발생합니다. OSGi Declarative Services는 순환 참조를 수용하지 않으므로 서비스 작성기는 DS가 종속성 주입기일 때 기본 클래스에 이러한 필드를 생성하지 않습니다. 자세한 내용은 [Service Builder 생성 클래스 이해](../service-builder-basics/understanding-service-builder-generated-classes.md)를 참조하십시오.
+Liferay DXP/Portal 7.2 이전에는 Spring이 유일한 종속성 인젝터였습니다. 서비스는 Spring Bean이었습니다. Liferay의 Spring bean 프레임워크는 서로 참조하는 Spring bean을 수용합니다. 예를 들어 Spring bean A에는 Spring bean B 필드가 있고 그 반대도 마찬가지입니다. Spring이 종속성 인젝터인 경우 Service Builder가 생성하는 기본 서비스에는 모든 `service.xml` 엔티티의 로컬 서비스 및 지속성 필드가 포함됩니다. 이로 인해 순환 참조가 발생합니다. OSGi Declarative Services는 순환 참조를 수용하지 않으므로 서비스 작성기는 DS가 종속성 주입기일 때 기본 클래스에 이러한 필드를 생성하지 않습니다. 자세한 내용은 [Service Builder 생성 클래스 이해](../service-builder-basics/understanding-and-extending-generated-classes.md)를 참조하십시오.
 ```
 
 ## 패키지 경로
@@ -41,7 +41,7 @@ Liferay DXP/Portal 7.2 이전에는 Spring이 유일한 종속성 인젝터였�
         package-path="com.acme.guestbook">
 ```
 
-위의 패키지 경로는 `*-api` 모듈의 서비스 클래스가 `com.acme.guestbook` 패키지에 생성되도록 합니다. 지속성 클래스는 `*-service` 모듈에서 동일한 이름의 패키지에 생성됩니다. 생성된 클래스에 대한 자세한 내용은 [Service Builder 생성 클래스 이해](../service-builder-basics/understanding-service-builder-generated-classes.md)을 참조하십시오.
+위의 패키지 경로는 `*-api` 모듈의 서비스 클래스가 `com.acme.guestbook` 패키지에 생성되도록 합니다. 지속성 클래스는 `*-service` 모듈에서 동일한 이름의 패키지에 생성됩니다. 생성된 클래스에 대한 자세한 내용은 [Service Builder 생성 클래스 이해](../service-builder-basics/understanding-and-extending-generated-classes.md)을 참조하십시오.
 
 ## 다중 버전 동시성 제어(MVCC)
 

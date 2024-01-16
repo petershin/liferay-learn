@@ -2,7 +2,7 @@
 
 엔터티의 열은 속성을 나타냅니다. 이러한 속성은 테이블 필드를 Java 객체 필드에 매핑합니다.
 
-여기에서는 열에 대한 자세한 내용을 알아보기 위해 [서비스 빌더 생성 클래스 이해](../service-builder-basics/understanding-service-builder-generated-classes.md) 의 샘플 프로젝트를 검토합니다.
+여기에서는 열에 대한 자세한 내용을 알아보기 위해 [서비스 빌더 생성 클래스 이해](../service-builder-basics/understanding-and-extending-generated-classes.md) 의 샘플 프로젝트를 검토합니다.
 
 예제를 다운로드하고 압축 해제하여 시작하십시오.
 
@@ -16,7 +16,7 @@
 
 `w9b7-service/service.xml` 파일을 검사합니다.
 
-```{literalinclude} ../service-builder-basics/understanding-service-builder-generated-classes/resources/liferay-w9b7.zip/w9b7-service/service.xml
+```{literalinclude} ../service-builder-basics/understanding-and-extending-generated-classes/resources/liferay-w9b7.zip/w9b7-service/service.xml
 :language: xml
 ```
 
@@ -26,10 +26,10 @@
 <column name="w9b7EntryId" primary="true" type="long" />
 ```
 
-Service Builder가 실행될 때 개체 관계형 매핑을 처리하는 Hibernate 구성을 생성합니다. Service Builder는 `service.xml` 파일에 추가하는 각 열에 대한 데이터베이스 필드를 생성합니다. 각 열에 대해 지정된 Java 유형에 적합한 데이터베이스 필드 유형을 매핑하고 Liferay가 지원하는 모든 데이터베이스에서 이 작업을 수행합니다.  Service Builder는 또한 이러한 특성에 대한 모델 클래스에서 getter/setter 메서드를 생성합니다. 열의 `기본` (즉, 기본 키) 속성이 `true`으로 설정되면 해당 열이 엔티티의 기본 키가 됩니다. 이것은 [생성 클래스 이해 및 확장](../service-builder-basics/understanding-service-builder-generated-classes.md)에 있는 W9B7 애플리케이션의 경우입니다. `기본` 속성이 true로 설정된 여러 열을 정의하는 경우 열 조합이 엔터티에 대한 복합 기본 키를 구성합니다.
+Service Builder가 실행될 때 개체 관계형 매핑을 처리하는 Hibernate 구성을 생성합니다. Service Builder는 `service.xml` 파일에 추가하는 각 열에 대한 데이터베이스 필드를 생성합니다. 각 열에 대해 지정된 Java 유형에 적합한 데이터베이스 필드 유형을 매핑하고 Liferay가 지원하는 모든 데이터베이스에서 이 작업을 수행합니다.  Service Builder는 또한 이러한 특성에 대한 모델 클래스에서 getter/setter 메서드를 생성합니다. 열의 `기본` (즉, 기본 키) 속성이 `true`으로 설정되면 해당 열이 엔티티의 기본 키가 됩니다. 이것은 [생성 클래스 이해 및 확장](../service-builder-basics/understanding-and-extending-generated-classes.md)에 있는 W9B7 애플리케이션의 경우입니다. `기본` 속성이 true로 설정된 여러 열을 정의하는 경우 열 조합이 엔터티에 대한 복합 기본 키를 구성합니다.
 
 ```{note}
-[추가 메서드 구현](../service-builder-basics/understanding-service-builder-generated-classes.md#adding-a-local-service-method) 은 엔터티 인스턴스에 대해 고유한 기본 키를 생성하는 방법을 보여줍니다.
+[추가 메서드 구현](../service-builder-basics/understanding-and-extending-generated-classes.md#adding-a-local-service-method) 은 엔터티 인스턴스에 대해 고유한 기본 키를 생성하는 방법을 보여줍니다.
 ```
 
 ## 엔터티 열 만들기

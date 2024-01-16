@@ -205,7 +205,7 @@ liferay-y7g4
             └── service.properties // Tracks the service build version
 ```
 
-The model, persistence, and service implementation classes were generated to the Java package path `com.acme.y7g4`. Learn about the classes at [Understanding Service Builder Generated Classes](./understanding-service-builder-generated-classes.md).
+The model, persistence, and service implementation classes were generated to the Java package path `com.acme.y7g4`. Learn about the classes at [Understanding and Extending Generated Classes](./understanding-and-extending-generated-classes.md).
 
 SQL scripts and the persistence configuration were generated to the `resources/META-INF` folder.
 
@@ -443,7 +443,7 @@ Here's what the script did:
 
 ## What's Next
 
-Now that you know how to define a model and generate persistence code and service code for it, you should examine the generated service classes. Continue with [Understanding and Extending Generated Classes](./understanding-service-builder-generated-classes.md).
+Now that you know how to define a model and generate persistence code and service code for it, you should examine the generated service classes. Continue with [Understanding and Extending Generated Classes](./understanding-and-extending-generated-classes.md).
 
 ## Related Topics
 

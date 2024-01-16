@@ -1,5 +1,14 @@
 ---
 uuid: 551f4c6e-7cc4-4b94-b46f-681f15d265a0
+- Personalization
+- A/B Testing
+- User Interests and Content Recommendations
+- Static and Dynamic User Segments
+- Cloud
+- Analytics Cloud Administration
+- Liferay Self-Hosted
+- Liferay SaaS
+- Liferay PaaS
 ---
 # A/B Testing
 

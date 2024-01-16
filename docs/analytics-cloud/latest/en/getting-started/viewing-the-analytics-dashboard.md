@@ -4,10 +4,14 @@ taxonomy-category-names:
 - Sites
 - Site Analytics
 - Traffic and Path Analysis
+- Users and Account Analysis
+- Content Management System
+- Web Content and Structures
 - Blogs
-- Knowledge Base
-- Wiki
 - Asset Analytics
+- Digital Asset Management
+- Documents and Media
+- Platform
 - Forms
 - Personalization
 - A/B Testing

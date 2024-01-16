@@ -5,6 +5,21 @@ toc:
   - ./touchpoints/assets.md
   - ./touchpoints/events.md
 uuid: bcc57d13-682f-4e91-be8f-126b66328b61
+taxonomy-category-names:
+- Sites
+- Site Analytics
+- Traffic and Path Analysis
+- Content Management System
+- Web Content and Structures
+- Blogs
+- Asset Analytics
+- Digital Asset Management
+- Documents and Media
+- Platform
+- Forms
+- Liferay Self-Hosted
+- Liferay SaaS
+- Liferay PaaS
 ---
 # Touchpoints
 

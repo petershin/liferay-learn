@@ -1,5 +1,12 @@
 ---
 uuid: 4e116f5d-5b51-4c19-be7e-68530b3d7c0b
+- Content Management System
+- Asset Analytics
+- Cloud
+- Analytics Cloud Administration
+- Liferay Self-Hosted
+- Liferay SaaS
+- Liferay PaaS
 ---
 # Events Descriptions
 

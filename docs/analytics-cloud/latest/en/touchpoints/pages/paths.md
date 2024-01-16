@@ -1,5 +1,13 @@
 ---
 uuid: d05594ae-9ab2-442c-a894-cb28372fe1da
+- Sites
+- Site Analytics
+- Traffic and Path Analysis
+- Cloud
+- Analytics Cloud Administration
+- Liferay Self-Hosted
+- Liferay SaaS
+- Liferay PaaS
 ---
 # Paths
 

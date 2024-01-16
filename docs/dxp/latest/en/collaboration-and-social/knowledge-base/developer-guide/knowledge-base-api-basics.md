@@ -97,17 +97,16 @@ The `KnowledgeBaseArticle_POST_ToSite.sh` script calls the REST service with a c
 
 Here are the command's arguments:
 
-| Arguments | Description |
-| :--- | :--- |
-| `-H "Content-Type: application/json"` | Indicates that the request body format is JSON. |
-| `-X POST` | The HTTP method to invoke at the specified endpoint |
-| `"http://localhost:8080/o/headless-delivery/v1.0/sites/${1}/knowledge-base-articles"` | The REST service endpoint |
-| `-d "{\"articleBody\": \"Foo\", \"title\": \"Able\"}"` | The data you are requesting to post |
-| `-u "test@liferay.com:learn"` | Basic authentication credentials |
+| Arguments                                                                             | Description                                         |
+| :------------------------------------------------------------------------------------ | :-------------------------------------------------- |
+| `-H "Content-Type: application/json"`                                                 | Indicates that the request body format is JSON.     |
+| `-X POST`                                                                             | The HTTP method to invoke at the specified endpoint |
+| `"http://localhost:8080/o/headless-delivery/v1.0/sites/${1}/knowledge-base-articles"` | The REST service endpoint                           |
+| `-d "{\"articleBody\": \"Foo\", \"title\": \"Able\"}"`                                | The data you are requesting to post                 |
+| `-u "test@liferay.com:learn"`                                                         | Basic authentication credentials                    |
 
-```{note}
-Basic authentication is used for demonstration purposes. For production, you should authorize users via [OAuth2](../../../headless-delivery/using-oauth2.md). See [Using OAuth2 to Authorize Users](../../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md) for a sample React application that uses OAuth2.
-```
+!!! note
+   Basic authentication is used for demonstration purposes. For production, you should authorize users via [OAuth2](../../../headless-delivery/using-oauth2.md). See [Using OAuth2 to Authorize Users](../../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md) for a sample React application that uses OAuth2.
 
 The other cURL commands use similar JSON arguments.
 
@@ -123,23 +122,21 @@ The `KnowledgeBaseArticle_POST_ToSite.java` class adds a Knowledge Base article 
 
 This class invokes the REST service using only three lines of code:
 
-| Line (abbreviated) | Description |
-| :----------------- | :---------- |
+| Line (abbreviated)                                   | Description |
+| :--------------------------------------------------- | :---------- |
 | `KnowledgeBaseArticleResource.Builder builder = ...` | Gets a `Builder` for generating an `KnowledgeBaseArticleResource` service instance. |
 | `KnowledgeBaseArticleGroupResource knowledgeBaseArticleGroupResource = builder.authentication(...).build();` | Specifies basic authentication and generates a `KnowledgeBaseArticleResource` service instance. |
 | `KnowledgeBaseArticle knowledgeBaseArticle = knowledgeBaseArticleResource.postSiteKnowledgeBaseArticle(...);` | Calls the `knowledgeBaseArticleResource.postSiteKnowledgeBaseArticle` method and passes the data to post. |
 
 Note that the project includes the `com.liferay.headless.delivery.client.jar` file as a dependency. You can find client JAR dependency information for all REST applications in the API explorer in your installation at `/o/api`.
 
-```{note}
-The `main` method's comment demonstrates running the class.
-```
+!!! note
+   The `main` method's comment demonstrates running the class.
 
 The other example Java classes are similar to this one, but call different `KnowledgeBaseArticle` methods.
 
-```{important}
-See [KnowledgeBaseArticleResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-delivery/headless-delivery-client/src/main/java/com/liferay/headless/delivery/client/resource/v1_0/KnowledgeBaseArticleResource.java) for service details.
-```
+!!! important
+   See [KnowledgeBaseArticleResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-delivery/headless-delivery-client/src/main/java/com/liferay/headless/delivery/client/resource/v1_0/KnowledgeBaseArticleResource.java) for service details.
 
 Below are examples of calling other `KnowledgeBaseArticle` REST services using cURL and Java.
 
@@ -183,9 +180,8 @@ The Instance's `KnowledgeBaseArticles` objects appear in JSON.
 
 Get a specific Knowledge Base article by its ID with the following cURL or Java command.
 
-```{tip}
-Use ``KnowledgeBaseArticles_GET_FromSite.[java|sh]`` to get instance ``Knowledge Base Article`` IDs.
-```
+!!! tip
+   Use ``KnowledgeBaseArticles_GET_FromSite.[java|sh]`` to get instance ``Knowledge Base Article`` IDs.
 
 ### KnowledgeBaseArticle_GET_ById.sh
 
@@ -221,7 +217,7 @@ The `KnowledgeBaseArticle` fields appear in JSON.
 
 ## Patch a Knowledge Base Article
 
-Do a partial edit of an existing Knowledge Base article with the following cURL and Java commands. Replace `1234` with your Knowledge Base article's ID. Specify the field you want to modify and its new value. 
+Do a partial edit of an existing Knowledge Base article with the following cURL and Java commands. Replace `1234` with your Knowledge Base article's ID. Specify the field you want to modify and its new value.
 
 ### KnowledgeBaseArticle_PATCH_ById.sh
 
@@ -318,20 +314,27 @@ Code:
 ```{literalinclude} ./knowledge-base-api-basics/resources/liferay-t3x7.zip/java/KnowledgeBaseArticle_DELETE_ById.java
    :dedent: 1
    :language: java
-   :lines: 8-17
+   :lines: 8-19
 ```
 
 ## Knowledge Base Folder services
 
 The cURL commands and Java classes for Knowledge Base folders works in the same way as Knowledge Base articles.
 
-| Files | Description |
-| :---- | :---------- |
-| `KnowledgeBaseFolder_DELETE_ById.[java\|sh]` | Deletes a Knowledge Base folder by ID. |
-| `KnowledgeBaseFolder_GET_ById.[java\|sh]` | Get a specific Knowledge Base folder by ID. |
-| `KnowledgeBaseFolder_PATCH_ById.[java\|sh]` | Patch a Knowledge Base folder by ID. |
-| `KnowledgeBaseFolder_POST_ToSite.[java\|sh]` | Post a Knowledge Base folder to a site. |
-| `KnowledgeBaseFolder_PUT_ToSite.[java\|sh]` | Put a Knowledge Base folder by ID. |
+| Files                                          | Description                                       |
+| :--------------------------------------------- | :------------------------------------------------ |
+| `KnowledgeBaseFolder_DELETE_ById.[java\|sh]`   | Deletes a Knowledge Base folder by ID.            |
+| `KnowledgeBaseFolder_GET_ById.[java\|sh]`      | Get a specific Knowledge Base folder by ID.       |
+| `KnowledgeBaseFolder_PATCH_ById.[java\|sh]`    | Patch a Knowledge Base folder by ID.              |
+| `KnowledgeBaseFolder_POST_ToSite.[java\|sh]`   | Post a Knowledge Base folder to a site.           |
+| `KnowledgeBaseFolder_PUT_ToSite.[java\|sh]`    | Put a Knowledge Base folder by ID.                |
 | `KnowledgeBaseFolders_GET_FromSite.[java\|sh]` | Get a list of Knowledge Base folders from a site. |
 
 The [API Explorer](../../../headless-delivery/consuming-apis/consuming-rest-services.md) shows all of the `KnowledgeBaseArticle` and `KnowledgeBaseFolder` services and schemas and has an interface to try out each service.
+
+## Related Topics
+
+- [Create Knowledge Base Articles](../creating-knowledge-base-articles.md)
+- [Manage the Knowledge Base](../managing-the-knowledge-base.md)
+- [API Explorer](../../../headless-delivery/consuming-apis/consuming-rest-services.md)
+- [OAuth2](../../../headless-delivery/using-oauth2.md)

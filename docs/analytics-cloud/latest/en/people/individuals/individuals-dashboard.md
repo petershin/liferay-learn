@@ -1,5 +1,14 @@
 ---
 uuid: 37ef6012-3c3a-4c1e-9c6e-aee0a893784d
+- Sites
+- Users and Account Analysis
+- Personalization
+- User Interests and Content Recommendations
+- Cloud
+- Analytics Cloud Administration
+- Liferay Self-Hosted
+- Liferay SaaS
+- Liferay PaaS
 ---
 # Individuals Dashboard
 

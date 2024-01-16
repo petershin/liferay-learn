@@ -3,6 +3,17 @@ toc:
   - ./people/individuals.md
   - ./people/segments.md
 uuid: c9996921-e3b8-49a6-b5d7-37238284f7ad
+taxonomy-category-names:
+- Sites
+- Users and Account Analysis
+- Personalization
+- User Interests and Content Recommendations
+- Static and Dynamic User Segments
+- Cloud
+- Analytics Cloud Administration
+- Liferay Self-Hosted
+- Liferay SaaS
+- Liferay PaaS
 ---
 # People
 

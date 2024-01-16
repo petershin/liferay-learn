@@ -1,5 +1,12 @@
 ---
 uuid: 9438dbbf-0a67-4531-bff7-4ec226860725
+- Personalization
+- Static and Dynamic User Segments
+- Cloud
+- Analytics Cloud Administration
+- Liferay Self-Hosted
+- Liferay SaaS
+- Liferay PaaS
 ---
 # Segments
 

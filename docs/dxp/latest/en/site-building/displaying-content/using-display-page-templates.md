@@ -1,14 +1,15 @@
 ---
 toc:
-  - ./using-display-page-templates.md
-  - >-
-    ./using-display-page-templates/creating-and-managing-display-page-templates.md
-  - ./using-display-page-templates/publishing-content-with-display-pages.md
-  - ./using-display-page-templates/displaying-categories-using-display-pages.md
-  - ./using-display-page-templates/using-multiple-display-page-templates-to-create-multi-step-applications.md
-  - ./using-display-page-templates/configuring-seo-and-open-graph.md
+    - ./using-display-page-templates.md
+    - >-
+        ./using-display-page-templates/creating-and-managing-display-page-templates.md
+    - ./using-display-page-templates/publishing-content-with-display-pages.md
+    - ./using-display-page-templates/displaying-categories-using-display-pages.md
+    - ./using-display-page-templates/using-multiple-display-page-templates-to-create-multi-step-applications.md
+    - ./using-display-page-templates/configuring-seo-and-open-graph.md
 uuid: 978aa7cb-c3e3-4895-91bd-ff8a779cc230
 ---
+
 # Using Display Page Templates
 
 ```{toctree}
@@ -33,16 +34,16 @@ After designing the template, you can make it the default template for displayin
 
 Display page templates currently support the following content types:
 
-* [Blog Entries](../../content-authoring-and-management/blogs/getting-started-with-blogs.md)
-* [Categories](../../content-authoring-and-management/tags-and-categories/defining-categories-and-vocabularies-for-content.md) {bdg-secondary}`7.4+`
-* [Custom Objects](../../building-applications/objects/displaying-object-entries.md) {bdg-secondary}`7.4+`
-* [Documents](../../content-authoring-and-management/documents-and-media/publishing-and-sharing/publishing-documents.md)
-* [Web Content Articles](../../content-authoring-and-management/web-content/web-content-articles/adding-a-basic-web-content-article.md)
+-   [Blog Entries](../../content-authoring-and-management/blogs/getting-started-with-blogs.md)
+-   [Categories](../../content-authoring-and-management/tags-and-categories/defining-categories-and-vocabularies-for-content.md) {bdg-secondary}`7.4+`
+-   [Custom Objects](../../building-applications/objects/displaying-object-entries.md) {bdg-secondary}`7.4+`
+-   [Documents](../../content-authoring-and-management/documents-and-media/publishing-and-sharing/publishing-documents.md)
+-   [Web Content Articles](../../content-authoring-and-management/web-content/web-content-articles/adding-a-basic-web-content-article.md)
 
 !!! tip
-    Use display page templates for designing layouts that you want to reuse for multiple content items.
+Use display page templates for designing layouts that you want to reuse for multiple content items.
 
-These templates are ideal for displaying a list of elements in a consistent way, like business case studies, product or service options, job listings, web articles, and more. For example, on an insurance business website, you may want to list the available options. Individual web content articles describe each option. You want a landing page where site visitors can see the options and choose the desired one to see the corresponding insurance details from the articles.
+These templates are ideal for displaying a list of elements in a consistent way, like business case studies, product or service options, job listings, web articles, and more. For example, on an insurance business website, you may want to list the available options. Individual web content articles describe each option. You want a landing page where site visitors can choose an option to see the corresponding insurance details from the articles.
 
 ![You can apply the same layout to different content of the same type using a single display page template.](./using-display-page-templates/images/02.png)
 

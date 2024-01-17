@@ -135,13 +135,13 @@ There are two ways to configure an automated backup schedule:
 
 1. Choose the desired backup frequency from available options in the Create Backups drop-down menu:
 
-    - **Daily**: A backup is created every day; you can set the time it is created (in the UTC±00 time zone).
+    - **Daily**: A backup is created every day; you can set the time it is created (in the UTC±00 time zone). Daily backups are recommended for production environments.
 
     - **Weekly**: A backup is created every week; you can set the day of the week and what time it is created (in the UTC±00 time zone).
 
     - **Advanced**: You can set a [cron schedule](https://crontab.guru/) value for a more complex frequency.
 
-    - **Manually** No automatic backups are created. You must create all backups manually.
+    - **Not set** (manually): No automatic backups are created. You must create all backups manually. This is the default setting for non-production environments.
 
     ![If you choose to create a weekly schedule, you can then select the day of the week and time.](./backup-service-overview/images/08.png)
 

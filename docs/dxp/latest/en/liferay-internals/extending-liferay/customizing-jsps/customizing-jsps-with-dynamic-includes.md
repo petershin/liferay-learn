@@ -4,8 +4,8 @@ uuid: b0ba6d6d-3621-4074-8fe5-2d5e7067679a
 # Customizing JSPs with Dynamic Includes
 
 The
-[`liferay-util:dynamic-include` tag](https://learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/liferay-util/dynamic-include.html) 
-is a placeholder into which you can inject content---JavaScript code, HTML, 
+[`liferay-util:dynamic-include` tag](https://learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/liferay-util/dynamic-include.html)
+is a placeholder into which you can inject content---JavaScript code, HTML,
 and more. The example project demonstrates how to inject content with a dynamic include.
 
 ## Deploy the Example Project
@@ -31,9 +31,8 @@ Then, follow these steps:
    ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
    ```
 
-   ```{note}
-   This command is the same as copying the deployed jars to /opt/liferay/osgi/modules on the Docker container.
-   ```
+   !!! note
+      This command is the same as copying the deployed jars to /opt/liferay/osgi/modules on the Docker container.
 
 1. Confirm the deployment in the Liferay Docker container console.
 
@@ -68,11 +67,10 @@ Then, follow these steps:
 
 2. In the `register` method, specify the dynamic include tag to use. In the sample, the register method targets the dynamic include of Baker module's `view.jsp`.
 
-   ```java
-	@Override
-	public void register(DynamicIncludeRegistry dynamicIncludeRegistry) {
-		dynamicIncludeRegistry.register("com.acme.n3q9.baker.web#view.jsp");
-	}
+   ```{literalinclude} ./customizing-jsps-with-dynamic-includes/resources/liferay-n3q9.zip/n3q9-able-web/src/main/java/com/acme/n3q9/able/web/internal/servlet/taglib/N3Q9AbleDynamicInclude.java
+   :dedent: 1
+   :language: java
+   :lines: 27-30
    ```
 
 ## Insert the Dynamic Include
@@ -83,6 +81,10 @@ Add the `liferay-util:dynamic-include` tag where you want the dynamic include to
    :language: jsp
 ```
 
-Make sure the dynamic include `key` matches the target set in the `register()` method above. 
+Make sure the dynamic include `key` matches the target set in the `register()` method above.
 
 See [Using a JSP and MVC Portlet](../../../building-applications/developing-a-java-web-application/using-mvc/using-a-jsp-and-mvc-portlet.md) to learn more about JSPs and portlets.
+
+## Related Topics
+
+- [Using a JSP and MVC Portlet](../../../building-applications/developing-a-java-web-application/using-mvc/using-a-jsp-and-mvc-portlet.md)

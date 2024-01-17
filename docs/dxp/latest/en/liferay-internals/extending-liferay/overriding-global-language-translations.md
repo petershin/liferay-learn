@@ -5,9 +5,8 @@ uuid: 0e974ead-9e19-4ded-8b82-1e63c54fc2fc
 
 Liferay DXP/Portal implements headings, labels, and messages for the default locale and many other locales using language translations. You can override these translations for any of the locales using new language translation values in a module.
 
-```{note}
-The [Language Override tool](../../system-administration/configuring-liferay/changing-language-translations.md) is the recommended approach for overriding language translations. This tool is available in Liferay DXP 7.4 U4 (Update 4) and above or Liferay Portal 7.4 GA8 and above. Continue reading for the previous way.
-```
+!!! note
+    The [Language Override tool](../../system-administration/configuring-liferay/changing-language-translations.md) is the recommended approach for overriding language translations. This tool is available in Liferay DXP 7.4 U4 (Update 4) and above or Liferay Portal 7.4 GA8 and above. Continue reading for the previous way.
 
 ## Examining the Global Language Translations
 
@@ -15,17 +14,17 @@ The global language translations are in the source code and the [DXP/Portal bund
 
 In the source:
 
-* [`liferay-[dxp|portal]/portal-impl/src/content/Language[_xx_XX].properties`](https://github.com/liferay/liferay-portal/tree/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-impl/src/content)
-* [`liferay-[dxp|portal]/modules/apps/portal-language/portal-language-lang/src/main/resources/content/Language[_xx_XX].properties`](https://github.com/liferay/liferay-portal/tree/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-language/portal-language-lang/src/main/resources/content)
+- [`liferay-[dxp|portal]/portal-impl/src/content/Language[_xx_XX].properties`](https://github.com/liferay/liferay-portal/tree/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-impl/src/content)
+- [`liferay-[dxp|portal]/modules/apps/portal-language/portal-language-lang/src/main/resources/content/Language[_xx_XX].properties`](https://github.com/liferay/liferay-portal/tree/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-language/portal-language-lang/src/main/resources/content)
 
 In the bundle:
 
-* `portal-impl.jar#content/Language[_xx_XX].properties`
-* `Liferay Foundation - Liferay Portal Language - Impl.lpkg` &rarr; `com.liferay.portal.language.lang-[version].jar#content/Language[_xx_XX].properties`
+- `portal-impl.jar#content/Language[_xx_XX].properties`
+- `Liferay Foundation - Liferay Portal Language - Impl.lpkg` &rarr; `com.liferay.portal.language.lang-[version].jar#content/Language[_xx_XX].properties`
 
 Language translations for different languages and locales can be identified by the filename ending. For example, `Language_ja.properties` is for Japanese.
 
-These language translation files contain properties that you can override, like the language settings properties: 
+These language translation files contain properties that you can override, like the language settings properties:
 
 ```properties
 ...
@@ -39,6 +38,7 @@ lang.user.name.suffix.values=II,III,IV,Jr,Phd,Sr
 There are also many simple translations you can override for messages and labels.
 
 ```properties
+...
 category.admin=Admin
 category.alfresco=Alfresco
 category.christianity=Christianity
@@ -85,9 +85,8 @@ Then, follow these steps to deploy the example:
     ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
     ```
 
-    ```{note}
-    This command is the same as copying the deployed jars to `/opt/liferay/osgi/modules` on the Docker container.
-    ```
+    !!! note
+        This command is the same as copying the deployed jars to `/opt/liferay/osgi/modules` on the Docker container.
 
 1. Confirm the deployment in the Liferay Docker container console.
 
@@ -105,7 +104,7 @@ Then, follow these steps to deploy the example:
 
     ![A custom language translation is also used for Brazilian Portuguese and Japanese.](./overriding-global-language-translations/images/05.png)
 
-Now that you've seen the example, here's how it works. 
+Now that you've seen the example, here's how it works.
 
 ## Create a Language Properties File
 
@@ -115,9 +114,8 @@ Select the translations you want to override. The example module overrides the `
 :language: properties
 ```
 
-```{important}
-The values for the language translations you declare override the values for those existing translations. All other existing language translation settings are preserved.
-```
+!!! important
+    The values for the language translations you declare override the values for those existing translations. All other existing language translation settings are preserved.
 
 Once you've decided which translations to override, create a language properties file in your module's `src/main/resources/content` folder. Use the file name `Language.properties` to override the default locale's language translations. To override a specific locale's translations, use the language properties file naming convention:
 
@@ -135,9 +133,8 @@ In your module's `bnd.bnd` file, specify your language resource provider capabil
 :lines: 4-6
 ```
 
-```{note}
-The example omits a service ranking---it uses OSGi's default ranking `0`, which is higher than the default global resource bundle service ranking `-1`.
-```
+!!! note
+    The example omits a service ranking---it uses OSGi's default ranking `0`, which is higher than the default global resource bundle service ranking `-1`.
 
 Global language translation overrides are easiest to manage when they're in the same module.
 
@@ -158,9 +155,8 @@ Deploy the module to see your new language translation values.
 
 On Liferay DXP/Portal versions earlier than 7.4, overriding global language translations requires a [language properties file](#create-a-language-properties-file) and a `java.util.ResourceBundle` for each translation being customized. Learn more by deploying the following example and examining its code.
 
-```{note}
-Many of the language translations are in the global language translation files, but some may be located in specific application modules. The process of [overriding module language translation in earlier versions](./overriding-module-language-translations.md) is different from overriding the global translations.
-```
+!!! note
+    Many of the language translations are in the global language translation files, but some may be located in specific application modules. The process of [overriding module language translation in earlier versions](./overriding-module-language-translations.md) is different from overriding the global translations.
 
 ### Deploy the Example for Earlier Versions
 
@@ -219,9 +215,9 @@ Each locale you're overriding requires a class that extends `java.util.ResourceB
 :lines: 10-26
 ```
 
-The class's `_resourceBundle` field is assigned a `ResourceBundle`. The call to `ResourceBundle.getBundle` needs two parameters. The `content.Language_en_US` parameter is the language file's qualified name with respect to the module's `src/main/resources/content` folder. The second parameter is a `control` that sets the language syntax of the resource bundle. To use language syntax identical to Liferay's syntax, import Liferay's `com.liferay.portal.kernel.language.UTF8Control` class and set the second parameter to `UTF8Control.INSTANCE`. 
+The class's `_resourceBundle` field is assigned a `ResourceBundle`. The call to `ResourceBundle.getBundle` needs two parameters. The `content.Language_en_US` parameter is the language file's qualified name with respect to the module's `src/main/resources/content` folder. The second parameter is a `control` that sets the language syntax of the resource bundle. To use language syntax identical to Liferay's syntax, import Liferay's `com.liferay.portal.kernel.language.UTF8Control` class and set the second parameter to `UTF8Control.INSTANCE`.
 
-The class's `@Component` annotation declares it an OSGi `ResourceBundle` service component. Its `language.id` property designates it for the `en_US` locale. 
+The class's `@Component` annotation declares it an OSGi `ResourceBundle` service component. Its `language.id` property designates it for the `en_US` locale.
 
 ```{literalinclude} ./overriding-global-language-translations/resources/liferay-x8f3.zip/x8f3-impl/src/main/java/com/acme/x8f3/internal/language/X8F3EnglishResourceBundle.java
 :language: java
@@ -230,9 +226,9 @@ The class's `@Component` annotation declares it an OSGi `ResourceBundle` service
 
 The class overrides these methods:
 
-**`handleGetObject`:** Looks up the translation in the module's resource bundle (which is based on the module's language properties file) and returns the key's value as an `Object`. 
+**`handleGetObject`:** Looks up the translation in the module's resource bundle (which is based on the module's language properties file) and returns the key's value as an `Object`.
 
-**`getKeys`:** Returns an `Enumeration` of the resource bundle's keys. 
+**`getKeys`:** Returns an `Enumeration` of the resource bundle's keys.
 
 Your resource bundle service component redirects the default language translation to your module's language translation overrides.
 
@@ -255,11 +251,10 @@ Resource bundle assignment:
 
 Deploy your module to see your new language translation values.
 
-```{note}
-When you're ready to upgrade to DXP 7.4+, you can continue to use your language translation override module. Optionally, you can simplify the module by removing the `ResourceBundle` class and specifying the `Provide-Capability` header in your `bnd.bnd` file as demonstrated [above](#declare-the-override-in-the-bnd-file).
-```
+!!! note
+    When you're ready to upgrade to DXP 7.4+, you can continue to use your language translation override module. Optionally, you can simplify the module by removing the `ResourceBundle` class and specifying the `Provide-Capability` header in your `bnd.bnd` file as demonstrated [above](#declare-the-override-in-the-bnd-file).
 
-## Related Information
+## Related Topics
 
-* [Overriding Module Language Translations in Earlier Versions](./overriding-module-language-translations.md)
-* [Changing Language Translations](../../system-administration/configuring-liferay/changing-language-translations.md)
+- [Overriding Module Language Translations in Earlier Versions](./overriding-module-language-translations.md)
+- [Changing Language Translations](../../system-administration/configuring-liferay/changing-language-translations.md)

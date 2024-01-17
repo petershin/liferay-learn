@@ -89,7 +89,7 @@ When creating or editing an article, you can schedule it for publishing at a spe
 
 ![Click Schedule Publication to set a specific date and time for publishing.](./managing-the-knowledge-base/images/06.png)
 
-If you edit a scheduled article and click *Save*, the article is saved as a draft. Alternatively, when if you click *Edit Schedule* you can choose whether to publish the article immediately or schedule it for publishing at a future date and time.
+If you edit a scheduled article and click *Save*, Liferay saves the article as a draft and cancels the scheduled publication. Alternatively, if you click *Edit Schedule* you can choose whether to publish the article immediately or schedule it for publishing at a future date and time.
 
 ![When editing a scheduled article, you can click Save or Edit Schedule.](./managing-the-knowledge-base/images/07.png)
 

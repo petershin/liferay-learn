@@ -26,7 +26,6 @@ These are the configurable fragment types available to implement:
 - `navigationMenuSelector` (Available Liferay 7.4+)
 
 !!! note
-
     Configuration values inserted into the FreeMarker context honor the defined `datatype` value specified in the JSON file. For example, if the `dataType` is String, `configuration.[name-value]?is_string` is `true`.
 
 ## Text Configuration
@@ -119,18 +118,17 @@ This JSON configuration creates a checkbox you can implement for cases where a b
 
 The color picker JSON configuration creates a flexible color selector where any color can be selected. You can use any of these methods to select a color:
 
-* Click the color on the left side to open a color picker to choose a color.
+- Click the color on the left side to open a color picker to choose a color.
 
-* Enter a color's hex code into the text box.
+- Enter a color's hex code into the text box.
 
-* Click the *Value from Stylebook* button to open a menu of pre-defined colors to choose defined in your currently used [style book](../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md). This links the field's value to the selected token, until you press the button again to unlink it. Unlinking the token value converts the chosen color to its equivalent hex code value again.
+- Click the *Value from Stylebook* button to open a menu of pre-defined colors to choose defined in your currently used [style book](../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md). This links the field's value to the selected token, until you press the button again to unlink it. Unlinking the token value converts the chosen color to its equivalent hex code value again.
 
-* If the color picker has no default value defined, click the *Default* drop-down menu to select any color from your currently used style book. This works the same as the Value from Stylebook button when you select a value.
+- If the color picker has no default value defined, click the *Default* drop-down menu to select any color from your currently used style book. This works the same as the Value from Stylebook button when you select a value.
 
 ![The color picker configuration lets you directly input a color value, select one from a range, or select one from your style book.](./fragment-configuration-types-reference/images/04.png)
 
 !!! note
-
     If the theme you are using has no [token definitions for style books](../../../site-appearance/style-books/developer-guide/style-book-token-definitions.md), color picker configurations on the page are replaced with [color palette](#color-palette configuration) configurations.
 
 This JSON configuration creates a color picker field called `headingColor`:
@@ -165,9 +163,9 @@ The `colorPicker` type stores an object holding the chosen color value with the 
 
 When the fragment is rendered, the token `${configuration.OBJECT_NAME}` is replaced with the chosen color. The type of value that it becomes depends on how the color is chosen:
 
-* If you chose a color directly, it is replaced with the corresponding hex code value.
-* If you chose a color from the current style book, it's replaced with a CSS variable for the linked token (for example, `var(--danger)`).
-* If the current theme does not have any token definitions to use (so a [color palette](#color-palette-configuration) is used instead), it is replaced with a CSS color (for example, `rgb(255, 0, 0)`).
+- If you chose a color directly, it is replaced with the corresponding hex code value.
+- If you chose a color from the current style book, it's replaced with a CSS variable for the linked token (for example, `var(--danger)`).
+- If the current theme does not have any token definitions to use (so a [color palette](#color-palette-configuration) is used instead), it is replaced with a CSS color (for example, `rgb(255, 0, 0)`).
 
 ## Length Configuration
 
@@ -315,7 +313,6 @@ If you need access to specific portions of the content, you can also access the 
 ```
 
 !!! note
-
     Placing a fragment with an item selector configuration into a collection display widget automatically maps the collection item as the selected content.
 
 ## URL Configuration
@@ -415,7 +412,6 @@ This is useful when you want a fragment that has an embedded video by default. T
 ![With the video selector you can include external videos in fragments](./fragment-configuration-types-reference/images/07.png)
 
 !!! note
-
     The `videoSelector` type is compatible with the [external video](../../../creating-pages/page-fragments-and-widgets/using-fragments/default-fragments-reference.md#external-video) fragment, but not with the [video URL](../../../creating-pages/page-fragments-and-widgets/using-fragments/default-fragments-reference.md) fragment.
 
 ## Collection Selector
@@ -425,7 +421,6 @@ This is useful when you want a fragment that has an embedded video by default. T
 Using the `collectionSelector` configuration type, you can develop a fragment that includes a [collection](../../../displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md) or [collection provider](../../../displaying-content/collections-and-collection-pages/collection-providers.md). You can use the `collectionSelector` with both manual and dynamic collections.
 
 !!! note
-
     Developers can use collection providers to create specific collections with more advanced criteria. To learn more, read the information about [Creating an Information List Provider](https://help.liferay.com/hc/en-us/articles/360029067271-Creating-an-Information-List-Provider) in the [Info Framework](https://help.liferay.com/hc/en-us/articles/360029067251-Introduction-to-The-Info-Framework) developer documentation.
 
 The following JSON configuration shows how to use the `collectionSelector`:
@@ -495,7 +490,6 @@ Using this sample configuration, collections including both web content and blog
 ![A collection including web content and blog entries corresponds to the asset type.](./fragment-configuration-types-reference/images/09.png)
 
 !!! tip
-
     In addition to the `itemType`, you can specify the `itemSubtype` in the configuration. The `itemSubtype` corresponds to the asset `classPK`.
 
 ### Defining a Maximum Number of Returned Collection Items
@@ -592,7 +586,7 @@ These are the available variables for the navigation menu selector configuration
 | `rootLayoutLevel` | Defines the level in the hierarchy.                                                                         |
 | `rootLayoutType`  | Specifies how to interpret the root layout in relation to the current page (absolute, relative, or select). |
 
-To get a better look at the `navigationMenuSelector` type, download the [navigation-menu fragment](https://resources.learn.liferay.com/dxp/latest/en/site-building/developer-guide/reference/fragments/fragment-configuration-types-reference/liferay-r5q5.zip) and import it into a fragment set. See [Managing Fragments](../../../creating-pages/page-fragments-and-widgets/using-fragments/managing-fragments.md) to learn more about importing a fragment.
+To get a better look at the `navigationMenuSelector` type, download the [navigation-menu fragment](https://resources.learn.liferay.com/dxp/latest/en/site-building/developer-guide/reference/fragments/liferay-r5q5.zip) and import it into a fragment set. See [Managing Fragments](../../../creating-pages/page-fragments-and-widgets/using-fragments/managing-fragments.md) to learn more about importing a fragment.
 
 ## Related Topics
 

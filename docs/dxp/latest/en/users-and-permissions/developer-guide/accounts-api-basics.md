@@ -8,7 +8,7 @@ taxonomy-category-names:
 ---
 # Accounts API Basics
 
-> Available: Liferay DXP/Portal 7.4+
+{bdg-secondary}`Liferay DXP/Portal 7.4+`
 
 You can manage [Accounts](../accounts.md) from the Applications menu, but you can also use Liferay's REST APIs. Call these services to create and manage accounts.
 
@@ -58,15 +58,15 @@ Then, follow these steps:
 
 1. The REST service can also be called using the Java client. Navigate out of the `curl` folder and into the `java` folder. Compile the source files with the following command:
 
-    ```bash
-    javac -classpath .:* *.java
-    ```
+   ```bash
+   javac -classpath .:* *.java
+   ```
 
 1. Run the `Account_POST_ToInstance.java` class with the following command.
 
-    ```bash
-    java -classpath .:* Account_POST_ToInstance
-    ```
+   ```bash
+   java -classpath .:* Account_POST_ToInstance
+   ```
 
 ## Examine the cURL Command
 
@@ -78,17 +78,16 @@ The `Account_POST_ToInstance.sh` script calls the REST service with a cURL comma
 
 Here are the command's arguments:
 
-| Arguments | Description |
-| :--- | :--- |
-| `-H "Content-Type: application/json"` | Indicates that the request body format is JSON. |
-| `-X POST` | The HTTP method to invoke at the specified endpoint |
-| `"http://localhost:8080/o/headless-admin-user/v1.0/accounts"` | The REST service endpoint |
-| `-d "{\"description\": \"Foo\", \"name\": \"Able\"}"` | The data you are requesting to post |
-| `-u "test@liferay.com:learn"` | Basic authentication credentials |
+| Arguments                                                     | Description                                         |
+| :------------------------------------------------------------ | :-------------------------------------------------- |
+| `-H "Content-Type: application/json"`                         | Indicates that the request body format is JSON.     |
+| `-X POST`                                                     | The HTTP method to invoke at the specified endpoint |
+| `"http://localhost:8080/o/headless-admin-user/v1.0/accounts"` | The REST service endpoint                           |
+| `-d "{\"description\": \"Foo\", \"name\": \"Able\"}"`         | The data you are requesting to post                 |
+| `-u "test@liferay.com:learn"`                                 | Basic authentication credentials                    |
 
-```{note}
-Basic authentication is used here for demonstration purposes. For production, you should authorize users via [OAuth2](../../headless-delivery/using-oauth2.md). See [Using OAuth2 to Authorize Users](../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md) for a sample React application that uses OAuth2.
-```
+!!! note
+   Basic authentication is used here for demonstration purposes. For production, you should authorize users via [OAuth2](../../headless-delivery/using-oauth2.md). See [Using OAuth2 to Authorize Users](../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md) for a sample React application that uses OAuth2.
 
 The other cURL commands use similar JSON arguments.
 
@@ -104,23 +103,21 @@ The `Account_POST_ToInstance.java` class adds an account by calling the Account-
 
 This class invokes the REST service using only three lines of code:
 
-| Line (abbreviated) | Description |
-| :----------------- | :---------- |
-| `AccountResource.Builder builder = ...` | Gets a `Builder` for generating an `AccountResource` service instance. |
+| Line (abbreviated)                                                       | Description                                                                        |
+| :----------------------------------------------------------------------- | :--------------------------------------------------------------------------------- |
+| `AccountResource.Builder builder = ...`                                  | Gets a `Builder` for generating an `AccountResource` service instance.             |
 | `AccountResource accountResource = builder.authentication(...).build();` | Specifies basic authentication and generates a `AccountResource` service instance. |
-| `Account account = accountResource.postAccount(...);` | Calls the `accountResource.postAccount` method and passes the data to post. |
+| `Account account = accountResource.postAccount(...);`                    | Calls the `accountResource.postAccount` method and passes the data to post.        |
 
 Note that the project includes the `com.liferay.headless.admin.user.client.jar` file as a dependency. You can find client JAR dependency information for all REST applications in the API explorer in your installation at `/o/api`.
 
-```{note}
-The `main` method's comment demonstrates running the class.
-```
+!!! note
+   The `main` method's comment demonstrates running the class.
 
 The other example Java classes are similar to this one, but call different `AccountResource` methods.
 
-```{important}
-See [AccountResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-user/headless-admin-user-client/src/main/java/com/liferay/headless/admin/user/client/resource/v1_0/AccountResource.java) for service details.
-```
+!!! important
+   See [AccountResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-user/headless-admin-user-client/src/main/java/com/liferay/headless/admin/user/client/resource/v1_0/AccountResource.java) for service details.
 
 Below are examples of calling other `Account` REST services using cURL and Java.
 
@@ -164,9 +161,8 @@ The Instance's `Account` objects appear in JSON.
 
 Get a specific Account with the following cURL or Java command.
 
-```{tip}
-Use ``Accounts_GET_FromInstance.[java|sh]`` to get instance ``Account`` IDs.
-```
+!!! tip
+   Use ``Accounts_GET_FromInstance.[java|sh]`` to get instance ``Account`` IDs.
 
 ### Account_GET_ById.sh
 
@@ -265,7 +261,7 @@ Code:
 ```{literalinclude} ./accounts-api-basics/resources/liferay-t5p9.zip/java/Account_PUT_ById.java
    :dedent: 1
    :language: java
-   :lines: 9-25
+   :lines: 9-26
 ```
 
 ## Delete an Account
@@ -305,4 +301,10 @@ Code:
 The [API Explorer](../../headless-delivery/consuming-apis/consuming-rest-services.md) shows all of the `Account` services and schemas and has an interface to try out each service.
 
 !!! note
-    Create and get account postal addresses with [PostalAddress_POST_ToAccount](./postal-address-api-basics.md#add-postal-address-to-account) and [PostalAddresses_GET_FromAccount](./postal-address-api-basics.md#get-postal-addresses-from-account)
+   Create and get account postal addresses with [PostalAddress_POST_ToAccount](./postal-address-api-basics.md#add-postal-address-to-account) and [PostalAddresses_GET_FromAccount](./postal-address-api-basics.md#get-postal-addresses-from-account)
+
+## Related Topics
+
+- [Accounts](../accounts.md)
+- [OAuth2](../../headless-delivery/using-oauth2.md)
+- [API Explorer](../../headless-delivery/consuming-apis/consuming-rest-services.md)

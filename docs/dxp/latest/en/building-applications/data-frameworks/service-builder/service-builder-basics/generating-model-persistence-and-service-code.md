@@ -448,5 +448,5 @@ Now that you know how to define a model and generate persistence code and servic
 
 ## Related Topics
 
-* [Invoking a Service Locally](./invoking-a-service-locally.md)
-* [What is Liferay Workspace](../../../tooling/liferay-workspace/what-is-liferay-workspace.md)
+- [Invoking a Service Locally](./invoking-a-service-locally.md)
+- [What is Liferay Workspace](../../../tooling/liferay-workspace/what-is-liferay-workspace.md)

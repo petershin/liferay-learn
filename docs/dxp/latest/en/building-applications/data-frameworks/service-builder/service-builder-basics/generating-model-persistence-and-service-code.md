@@ -251,49 +251,49 @@ It's time to create the persistence layer and services by deploying the generate
 
 1. Start a MariaDB Docker container.
 
-    ```bash
-    dockertable and install the -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mariadb:10.2
-    ```
+   ```bash
+   dockertable and install the -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mariadb:10.2
+   ```
 
 1. [Create the DXP database](../../../../installation-and-upgrades/reference/database-configurations.md) from within the MariaDB Docker container.
 
-    Sign in to the database server.
+   Sign in to the database server.
 
-    ```bash
-    docker exec -it some-mariadb bash -c "/usr/bin/mysql -uroot -pmy-secret-pw"
-    ```
+   ```bash
+   docker exec -it some-mariadb bash -c "/usr/bin/mysql -uroot -pmy-secret-pw"
+   ```
 
-    Create a database for DXP.
+   Create a database for DXP.
 
-    ```sql
-    create database dxp_db character set utf8;
-    ```
+   ```sql
+   create database dxp_db character set utf8;
+   ```
 
-    End your database session.
+   End your database session.
 
-    ```bash
-    quit
-    ```
+   ```bash
+   quit
+   ```
 
 1. Get the MariaDB container IP address by invoking [Docker's `network inspect`](https://docs.docker.com/engine/reference/commandline/network_inspect/) command on the default network (`bridge`)
 
-    ```bash
-    docker network inspect bridge
-    ```
+   ```bash
+   docker network inspect bridge
+   ```
 
-Example output:
+   Example output:
 
-```json
-"Containers": {
-    "162f5350ee9ba7c47c1ba91f54a84543aeada7feb35eb8153743b13ef54cb491": {
-        "Name": "some-mariadb",
-        "EndpointID": "8e97e35fb118e2024a52f2ecbfd40b0a879eba8dc3bc5ffceea8bb117c10bebc",
-        "MacAddress": "02:42:ac:11:00:02",
-        "IPv4Address": "172.17.0.2/16",
-        "IPv6Address": ""
-    }
-}
-```
+   ```json
+   "Containers": {
+      "162f5350ee9ba7c47c1ba91f54a84543aeada7feb35eb8153743b13ef54cb491": {
+         "Name": "some-mariadb",
+         "EndpointID": "8e97e35fb118e2024a52f2ecbfd40b0a879eba8dc3bc5ffceea8bb117c10bebc",
+         "MacAddress": "02:42:ac:11:00:02",
+         "IPv4Address": "172.17.0.2/16",
+         "IPv6Address": ""
+      }
+   }
+   ```
 
 Use the first part of the `IPv4Address` value for the `some-mariadb` container. The IP address from the example is `172.17.0.2`.
 
@@ -335,61 +335,61 @@ Verify and validate the database table.
 
 1. Sign in to the database server.
 
-    ```bash
-    docker exec -it some-mariadb bash -c "/usr/bin/mysql -uroot -pmy-secret-pw"
-    ```
+   ```bash
+   docker exec -it some-mariadb bash -c "/usr/bin/mysql -uroot -pmy-secret-pw"
+   ```
 
 1. Connect to the database.
 
-    ```sql
-    connect dxp_db;
-    ```
+   ```sql
+   connect dxp_db;
+   ```
 
 1. List the database tables to verify the `Y7G4_Y7G4Entry` table.
 
-    ```sql
-    show tables;
-    ```
+   ```sql
+   show tables;
+   ```
 
-    Results:
+   Results:
 
-    ```
-    +--------------------------------+
-    | Tables_in_dxp_db               |
-    +--------------------------------++
-    | AMImageEntry                   |
-    | AccountEntry                   |
-    | AccountEntryOrganizationRel    |
-    | ...                            |
-    | Y7G4_Y7G4Entry                 |
-    +--------------------------------+
-    ```
+   ```
+   +--------------------------------+
+   | Tables_in_dxp_db               |
+   +--------------------------------++
+   | AMImageEntry                   |
+   | AccountEntry                   |
+   | AccountEntryOrganizationRel    |
+   | ...                            |
+   | Y7G4_Y7G4Entry                 |
+   +--------------------------------+
+   ```
 
 1. List the `Y7G4_Y7G4Entry` table columns.
 
-    ```sql
-    SHOW COLUMNS FROM Y7G4_Y7G4Entry;
-    ```
+   ```sql
+   SHOW COLUMNS FROM Y7G4_Y7G4Entry;
+   ```
 
-    Results:
+   Results:
 
-    ```
-    +-------------+-------------+------+-----+---------+-------+
-    | Field       | Type        | Null | Key | Default | Extra |
-    +-------------+-------------+------+-----+---------+-------+
-    | y7g4EntryId | bigint(20)  | NO   | PRI | NULL    |       |
-    | description | varchar(75) | YES  |     | NULL    |       |
-    | name        | varchar(75) | YES  |     | NULL    |       |
-    +-------------+-------------+------+-----+---------+-------+
-    ```
+   ```
+   +-------------+-------------+------+-----+---------+-------+
+   | Field       | Type        | Null | Key | Default | Extra |
+   +-------------+-------------+------+-----+---------+-------+
+   | y7g4EntryId | bigint(20)  | NO   | PRI | NULL    |       |
+   | description | varchar(75) | YES  |     | NULL    |       |
+   | name        | varchar(75) | YES  |     | NULL    |       |
+   +-------------+-------------+------+-----+---------+-------+
+   ```
 
-    Everything is in place.
+   Everything is in place.
 
 1. End your database session.
 
-    ```bash
-    quit
-    ```
+   ```bash
+   quit
+   ```
 
 ### Test the Services
 
@@ -399,40 +399,40 @@ Invoke the services to populate the database with `Y7G4Entry` data.
 
 1. Sign in using the default credentials:
 
-    **User Name:** `test@liferay.com`
+   **User Name:** `test@liferay.com`
 
-    **Password:** `test`
+   **Password:** `test`
 
 1. Navigate to the Script console at *Control Panel* &rarr; *Server Administration* &rarr; *Script*.
 
 1. Add an entry by executing the following script.
 
-    ```groovy
-    import com.acme.y7g4.service.Y7G4EntryLocalServiceUtil;
+   ```groovy
+   import com.acme.y7g4.service.Y7G4EntryLocalServiceUtil;
 
-    import com.liferay.portal.kernel.dao.orm.QueryUtil;
+   import com.liferay.portal.kernel.dao.orm.QueryUtil;
 
-    entry = Y7G4EntryLocalServiceUtil.createY7G4Entry(1234);
+   entry = Y7G4EntryLocalServiceUtil.createY7G4Entry(1234);
 
-    entry.setName("Mop floors");
-    entry.setDescription("Mop the kitchen and bathroom floors with soap and water.");
+   entry.setName("Mop floors");
+   entry.setDescription("Mop the kitchen and bathroom floors with soap and water.");
 
-    Y7G4EntryLocalServiceUtil.addY7G4Entry(entry);
+   Y7G4EntryLocalServiceUtil.addY7G4Entry(entry);
 
-    entries = Y7G4EntryLocalServiceUtil.getY7G4Entries(QueryUtil.ALL_POS, QueryUtil.ALL_POS);
+   entries = Y7G4EntryLocalServiceUtil.getY7G4Entries(QueryUtil.ALL_POS, QueryUtil.ALL_POS);
 
-    for (entry in entries){
-        out.println(entry);
-    }
-    ```
+   for (entry in entries){
+      out.println(entry);
+   }
+   ```
 
-    Output:
+   Output:
 
-    ```
-    {y7g4EntryId=1234, description=Mop the kitchen and bathroom floors with soap and water., name=Mop floors}
-    ```
+   ```
+   {y7g4EntryId=1234, description=Mop the kitchen and bathroom floors with soap and water., name=Mop floors}
+   ```
 
-    The newly added Y7G4Entry is printed in JSON format.
+   The newly added Y7G4Entry is printed in JSON format.
 
 Here's what the script did:
 

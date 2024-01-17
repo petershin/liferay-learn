@@ -9,13 +9,13 @@ Here you'll examine the sample project from [Understanding and Extending Generat
 
 Start by downloading and unzipping the example:
 
-   ```bash
-   curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/data-frameworks/service-builder/service-builder-basics/liferay-w9b7.zip -O
-   ```
+```bash
+curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/data-frameworks/service-builder/service-builder-basics/liferay-w9b7.zip -O
+```
 
-   ```bash
-   unzip liferay-w9b7.zip
-   ```
+```bash
+unzip liferay-w9b7.zip
+```
 
 Examine the `w9b7-service/service.xml` file:
 

@@ -19,8 +19,8 @@ unzip liferay-y7g4.zip
 
 The `liferay-y7g4` project has two modules:
 
-* `y7g4-api`
-* `y7g4-service`
+- `y7g4-api`
+- `y7g4-service`
 
 The API module (`-api`) provides the public interfaces and utilities. The service module (`-service`) provides the implementation.
 
@@ -49,7 +49,7 @@ The `build.gradle` file declares the module's dependency on DXP/Portal.
 
 ## Examine the Service Module
 
-The Service Module has a bnd metadata file, a Gradle build file, and a service definition file. 
+The Service Module has a bnd metadata file, a Gradle build file, and a service definition file.
 
 ```
 y7g4-service
@@ -65,11 +65,11 @@ Here's the `bnd.bnd` file:
 
 Once again, the `Bundle-` headers describe the module artifact. Service metadata and a directive follow.
 
-| Metadata | Description |
-| :------- | :---------- |
-| `Liferay-Require-SchemaVersion: 1.0.0` | Your application's data schema version. When you release application versions that have database schema changes, you'll increment the version. |
-| `Liferay-Service: true` | The module provides a Liferay Service. |
-| `-dsannotations-options: inherit` | OSGi service component classes inherit [OSGi Declarative Services](../../../../liferay-internals/fundamentals/apis-as-osgi-services.md) annotations from their class hierarchy. For example, extension classes can access all the services that ancestor fields reference via the `@Reference` annotation. |
+| Metadata                               | Description                                                                                                                                                                                                                                                                                                |
+|:---------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `Liferay-Require-SchemaVersion: 1.0.0` | Your application's data schema version. When you release application versions that have database schema changes, you'll increment the version.                                                                                                                                                             |
+| `Liferay-Service: true`                | The module provides a Liferay Service.                                                                                                                                                                                                                                                                     |
+| `-dsannotations-options: inherit`      | OSGi service component classes inherit [OSGi Declarative Services](../../../../liferay-internals/fundamentals/apis-as-osgi-services.md) annotations from their class hierarchy. For example, extension classes can access all the services that ancestor fields reference via the `@Reference` annotation. |
 
 Here's the `build.gradle` file:
 
@@ -94,10 +94,10 @@ This file defines a `Y7G4Entry` model that has an ID (the primary key), name, an
 
 The `service-builder` element attributes affect all model entities in the `service.xml` file.
 
-| `service-builder` attribute | Description |
-| :-------------------------- | :---------- |
-| `dependency-injector` | Declares the dependency injector type. Declarative Services (`ds`) is the default. |
-| `package-path` | Declares the leading package path for the generated classes. |
+| `service-builder` attribute       | Description                                                                                                                                  |
+|:----------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------|
+| `dependency-injector`             | Declares the dependency injector type. Declarative Services (`ds`) is the default.                                                           |
+| `package-path`                    | Declares the leading package path for the generated classes.                                                                                 |
 | `short-no-such-exception-enabled` | If set to `true`, use a truncated version of the entity name in `NoSuchY7G4EntryException` messages; otherwise use the complete entity name. |
 
 ### `namespace` Element
@@ -108,20 +108,20 @@ The global `namespace` element specifies the prefix for all the model entity dat
 
 `entity` elements define model database tables and service types.
 
-| `entity` attributes | Description |
-| :------------------ | :---------- |
-| `name` | The entity's name. Service Builder generates an entity table using the naming format `[namespace]_[name]` (for example, `Y7G4_Y7G4Entry`). |
-| `local-service` | If `true`, generate service classes to call from within the JVM. |
-| `remote-service` | If `true`, generate service classes, including web services classes, to call from outside of the JVM. |
+| `entity` attributes | Description                                                                                                                                |
+|:--------------------|:-------------------------------------------------------------------------------------------------------------------------------------------|
+| `name`              | The entity's name. Service Builder generates an entity table using the naming format `[namespace]_[name]` (for example, `Y7G4_Y7G4Entry`). |
+| `local-service`     | If `true`, generate service classes to call from within the JVM.                                                                           |
+| `remote-service`    | If `true`, generate service classes, including web services classes, to call from outside of the JVM.                                      |
 
 ### `column` Elements
 Each `column` element defines a column in the entity's table. Here are the `Y7G4Entry` entity column elements:
 
-| Column | Description |
-| :----- | :---------- |
+| Column        | Description                                             |
+|:--------------|:--------------------------------------------------------|
 | `y7g4EntryId` | the model instance's ID (long integer) and primary key. |
-| `name` | the instance's name (string). |
-| `description` | the instance's description (string). |
+| `name`        | the instance's name (string).                           |
+| `description` | the instance's description (string).                    |
 
 For more information on `service.xml` elements, see the [Liferay Service Builder DTD](https://learn.liferay.com/reference/latest/en/dxp/definitions/liferay-service-builder_7_4_0.dtd.html).
 
@@ -172,7 +172,7 @@ BUILD SUCCESSFUL in 3s
 1 actionable task: 1 executed
 ```
 
-Service Builder generates Java classes, database scripts, and configuration files for the model, persistence, and services. The file paths are relative to the `y7g4-service` module. 
+Service Builder generates Java classes, database scripts, and configuration files for the model, persistence, and services. The file paths are relative to the `y7g4-service` module.
 
 Here's an overview of the generated structure:
 
@@ -252,7 +252,7 @@ It's time to create the persistence layer and services by deploying the generate
 1. Start a MariaDB Docker container.
 
     ```bash
-    docker run --name some-mariadb -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mariadb:10.2
+    dockertable and install the -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mariadb:10.2
     ```
 
 1. [Create the DXP database](../../../../installation-and-upgrades/reference/database-configurations.md) from within the MariaDB Docker container.
@@ -275,7 +275,7 @@ It's time to create the persistence layer and services by deploying the generate
     quit
     ```
 
-1. Get the MariaDB container IP address by invoking Docker's `network inspect`](https://docs.docker.com/engine/reference/commandline/network_inspect/) command on the default network (`bridge`) 
+1. Get the MariaDB container IP address by invoking [Docker's `network inspect`](https://docs.docker.com/engine/reference/commandline/network_inspect/) command on the default network (`bridge`)
 
     ```bash
     docker network inspect bridge
@@ -283,7 +283,7 @@ It's time to create the persistence layer and services by deploying the generate
 
 Example output:
 
-```
+```json
 "Containers": {
     "162f5350ee9ba7c47c1ba91f54a84543aeada7feb35eb8153743b13ef54cb491": {
         "Name": "some-mariadb",
@@ -291,7 +291,8 @@ Example output:
         "MacAddress": "02:42:ac:11:00:02",
         "IPv4Address": "172.17.0.2/16",
         "IPv6Address": ""
-    },
+    }
+}
 ```
 
 Use the first part of the `IPv4Address` value for the `some-mariadb` container. The IP address from the example is `172.17.0.2`.
@@ -315,7 +316,7 @@ liferay/portal:7.4.2-ga3
 
 ### Deploy the Modules
 
-Deploy the modules to create the database table and to install the services.
+Deploy the modules to create the database table and install the services.
 
 ```bash
 ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)

@@ -17,13 +17,13 @@ BlogsEntryService _blogsEntryService;
 
 The above `_blogsEntryService` field accesses a [`BlogsEntryService`](https://docs.liferay.com/ce/apps/blogs/latest/javadocs/com/liferay/blogs/service/BlogsEntryService.html) OSGi service.
 
-All Declarative Services components (classes annotated with [`@Component`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Component.html)) can access OSGi services this way. The run time framework injects a component's `@Reference`-annotated fields with their service types. 
+All Declarative Services components (classes annotated with [`@Component`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Component.html)) can access OSGi services this way. The run time framework injects a component's `@Reference`-annotated fields with their service types.
 
 The following example demonstrates using an OSGi service called `Greeter`. Three modules demonstrate the *API-Provider-Consumer* pattern used in OSGi services.
 
-* The **API** module defines the `Greeter` service type.
-* The implementation module **provides** the `Greeter` service.
-* The example module **consumes** the `Greeter` service.
+- The **API** module defines the `Greeter` service type.
+- The implementation module **provides** the `Greeter` service.
+- The example module **consumes** the `Greeter` service.
 
 The example module class creates a Gogo Shell command that uses the `Greeter` service to return a personalized greeting. Consider this example to be a "Hello World" for OSGi services.
 
@@ -33,9 +33,8 @@ You can use OSGi services in any Java class.
 
 Liferay service Javadoc is available [here](https://learn.liferay.com/reference/latest/en/dxp.html).
 
-```{note}
-For instructions on how to create an OSGi service, please see [APIs as OSGi Services](./apis-as-osgi-services.md).
-```
+!!! note
+    For instructions on how to create an OSGi service, please see [APIs as OSGi Services](./apis-as-osgi-services.md).
 
 ## Deploy the Gogo Shell Command Example
 
@@ -90,29 +89,33 @@ The example module leverages the API and implementation modules to produce the c
 
 ## How to Use an OSGi Service
 
-* [Write Your Business Logic](#write-your-business-logic)
-* [Annotate External Service References](#annotate-external-service-references)
-* [Make Your Class a Component](#make-your-class-a-component)
+- [Write Your Business Logic](#write-your-business-logic)
+- [Annotate External Service References](#annotate-external-service-references)
+- [Make Your Class a Component](#make-your-class-a-component)
 
 ### Write Your Business Logic
 
-In your class, implement business logic using the OSGi service you need. 
+In your class, implement business logic using the OSGi service you need.
 
 1. Import the service.
 
-	```java
-	import com.acme.j1h1.Greeter;
-	```
+    ```{literalinclude} ./using-an-osgi-service/resources/liferay-j1h1.zip/j1h1-osgi-commands/src/main/java/com/acme/j1h1/internal/osgi/commands/J1H1OSGiCommands.java
+    :language: java
+    :lines: 3
+    ```
 
 1. Use the service.
 
-	```java
-	public void greet(String name) {
-	    _greeter.greet(name);
-	}
-
-	private Greeter _greeter;
-	```
+    ```{literalinclude} ./using-an-osgi-service/resources/liferay-j1h1.zip/j1h1-osgi-commands/src/main/java/com/acme/j1h1/internal/osgi/commands/J1H1OSGiCommands.java
+    :dedent: 1
+    :language: java
+    :lines: 14-16
+    ```
+    ```{literalinclude} ./using-an-osgi-service/resources/liferay-j1h1.zip/j1h1-osgi-commands/src/main/java/com/acme/j1h1/internal/osgi/commands/J1H1OSGiCommands.java
+    :dedent: 1
+    :language: java
+    :lines: 19
+    ```
 
 The method above invokes a `Greeter`'s `greet` method. `com.acme.j1h1.Greeter` is the OSGi service type that the implementation module registers. Your class must get a `Greeter` instance from the OSGi service registry.
 
@@ -159,7 +162,7 @@ Now that you're familiar with using OSGi services from neighboring projects, you
 
 ## Related Topics
 
-* [Importing Packages](./importing-packages.md)
-* [Exporting Packages](./exporting-packages.md)
-* [Semantic Versionings](./semantic-versioning.md)
-* [Configuring Dependencies](./configuring-dependencies.md)
+- [Importing Packages](./importing-packages.md)
+- [Exporting Packages](./exporting-packages.md)
+- [Semantic Versionings](./semantic-versioning.md)
+- [Configuring Dependencies](./configuring-dependencies.md)

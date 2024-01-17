@@ -59,6 +59,10 @@ Below are the metrics reported:
 
 **Unique Visitors:** The number of visitors contributing to the variant. A visitor randomly assigned a variant always sees the same variant until the end of the test. Besides knowing how much traffic is hitting a page, this metric also helps in determining configuration issues with the A/B test. For example, there could be too much traffic going to one variant (typically caused by a segment misconfiguration).
 
+```{important}
+A minimum of five events (i.e. visitor interactions) per day is required for test data to be reported. Test data is not reported for any day in which this threshold is not met.
+```
+
 ## Test Sessions
 
 The Test Sessions panel shows the number of sessions viewing your test impressions per day over time. This helps you validate that your audiences are being directed to your A/B test impressions. It also portrays how your test affects the traffic to your page compared to before the test began.

@@ -21,32 +21,32 @@ Then, follow these steps:
 
 1. Download and unzip [UAD Framework](./liferay-h6d2.zip).
 
-    ```bash
-    curl https://resources.learn.liferay.com/dxp/latest/en/users-and-permissions/developer-guide/liferay-h6d2.zip -O
-    ```
+   ```bash
+   curl https://resources.learn.liferay.com/dxp/latest/en/users-and-permissions/developer-guide/liferay-h6d2.zip -O
+   ```
 
-    ```bash
-    unzip liferay-h6d2.zip
-    ```
+   ```bash
+   unzip liferay-h6d2.zip
+   ```
 
 1. From the module root, build and deploy.
 
-    ```bash
-    ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
-    ```
+   ```bash
+   ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
+   ```
 
-    ```{note}
-       This command is the same as copying the deployed jars to /opt/liferay/osgi/modules on the Docker container.
-    ```
+   ```{note}
+      This command is the same as copying the deployed jars to /opt/liferay/osgi/modules on the Docker container.
+   ```
 
 1. Confirm the deployment in the Liferay Docker container console.
 
-    ```bash
-    STARTED com.acme.h6d2.api_1.0.0 [1433]
-    STARTED com.acme.h6d2.service_1.0.0 [1434]
-    STARTED com.acme.h6d2.uad_1.0.0 [1435]
-    STARTED com.acme.h6d2.web_1.0.0 [1436]
-    ```
+   ```bash
+   STARTED com.acme.h6d2.api_1.0.0 [1433]
+   STARTED com.acme.h6d2.service_1.0.0 [1434]
+   STARTED com.acme.h6d2.uad_1.0.0 [1435]
+   STARTED com.acme.h6d2.web_1.0.0 [1436]
+   ```
 
 1. Open your browser to `https://localhost:8080`.
 
@@ -58,7 +58,7 @@ Then, follow these steps:
 
 1. Log in as the new user and add some content on the H6D2 Portlet.
 
-1. Log back in as the administrator and navigate to *Control Panel* &rarr; *Users* &rarr; *Users and Organizations*. 
+1. Log back in as the administrator and navigate to *Control Panel* &rarr; *Users* &rarr; *Users and Organizations*.
 
 1. Click the new user's *Actions* icon (![Action](../../images/icon-actions.png)) &rarr; *Delete Personal Data*. Click *OK* to confirm deactivation of the user.
 
@@ -74,12 +74,13 @@ This tutorial assumes that you have a working application that you created using
 
 1. There are two `entity` parameters to enable UAD:
 
-   | `entity` attributes | Description |
-   | :------------------ | :---------- |
+   | `entity` attributes    | Description                                                       |
+   | :--------------------- | :---------------------------------------------------------------- |
    | `uad-application-name` | Specifies the name of the application the entity type belongs to. |
-   | `uad-package-path` | Specifies the package path for the generated UAD classes. |
+   | `uad-package-path`     | Specifies the package path for the generated UAD classes.         |
 
    ```{literalinclude} ./adding-the-uad-framework/resources/liferay-h6d2.zip/h6d2-service/service.xml
+   :dedent:
    :language: xml
    :lines: 6
    ```
@@ -109,6 +110,7 @@ This tutorial assumes that you have a working application that you created using
    * The `uad-nonanonymizable="true"` attribute indicates data that is not automatically anonymized but must be reviewed by an administrator.
 
    ```{literalinclude} ./adding-the-uad-framework/resources/liferay-h6d2.zip/h6d2-service/service.xml
+   :dedent: 2
    :language: xml
    :lines: 20
    ```
@@ -118,38 +120,38 @@ This tutorial assumes that you have a working application that you created using
 
 1. Create a `bnd.bnd` file for the module.
 
-    ```{literalinclude} ./adding-the-uad-framework/resources/liferay-h6d2.zip/h6d2-uad/bnd.bnd
-    ```
+   ```{literalinclude} ./adding-the-uad-framework/resources/liferay-h6d2.zip/h6d2-uad/bnd.bnd
+   ```
 
    Make sure to include the `-dsannotations-options: inherit` annotation. OSGi service component classes inherit [OSGi declarative services](../../liferay-internals/fundamentals/module-projects.md) annotations from their class hierarchy.
 
 1. Create a `build.gradle` file for the module.
 
-    ```{literalinclude} ./adding-the-uad-framework/resources/liferay-h6d2.zip/h6d2-uad/build.gradle
-    ```
+   ```{literalinclude} ./adding-the-uad-framework/resources/liferay-h6d2.zip/h6d2-uad/build.gradle
+   ```
 
    Make sure to add any dependencies you need, including any `-api` module of your project.
 
 2. Navigate back to the module's `-service` folder and run Service Builder to generate the UAD module.
 
-    ```bash
-    ../gradlew buildService
-    ```
+   ```bash
+   ../gradlew buildService
+   ```
 
-    Output:
+   Output:
 
-    ```
-    > Task :h6d2-service:buildService
-    Building H6D2Entry
-    Writing ../h6d2-uad/src/main/java/com/acme/h6d2/uad/anonymizer/BaseH6D2EntryUADAnonymizer.java
-    Writing ../h6d2-uad/src/main/java/com/acme/h6d2/uad/exporter/BaseH6D2EntryUADExporter.java
-    Writing ../h6d2-uad/src/main/java/com/acme/h6d2/uad/anonymizer/H6D2EntryUADAnonymizer.java
-    Writing ../h6d2-uad/src/main/java/com/acme/h6d2/uad/exporter/H6D2EntryUADExporter.java
-    Writing ../h6d2-uad/src/main/java/com/acme/h6d2/uad/display/BaseH6D2EntryUADDisplay.java
-    Writing ../h6d2-uad/src/main/java/com/acme/h6d2/uad/display/H6D2EntryUADDisplay.java
-    Writing src/main/resources/service.properties
-    Writing ../h6d2-uad/src/main/java/com/acme/h6d2/uad/constants/H6D2UADConstants.java
-    ```
+   ```
+   > Task :h6d2-service:buildService
+   Building H6D2Entry
+   Writing ../h6d2-uad/src/main/java/com/acme/h6d2/uad/anonymizer/BaseH6D2EntryUADAnonymizer.java
+   Writing ../h6d2-uad/src/main/java/com/acme/h6d2/uad/exporter/BaseH6D2EntryUADExporter.java
+   Writing ../h6d2-uad/src/main/java/com/acme/h6d2/uad/anonymizer/H6D2EntryUADAnonymizer.java
+   Writing ../h6d2-uad/src/main/java/com/acme/h6d2/uad/exporter/H6D2EntryUADExporter.java
+   Writing ../h6d2-uad/src/main/java/com/acme/h6d2/uad/display/BaseH6D2EntryUADDisplay.java
+   Writing ../h6d2-uad/src/main/java/com/acme/h6d2/uad/display/H6D2EntryUADDisplay.java
+   Writing src/main/resources/service.properties
+   Writing ../h6d2-uad/src/main/java/com/acme/h6d2/uad/constants/H6D2UADConstants.java
+   ```
 
 ## Modify the Portlet
 
@@ -160,7 +162,7 @@ When you pass the data fields specific to your application from the form, you mu
 :lines: 30-66
 ```
 
-The `H6D2 Portlet` has an `H6D2EntryLocalService` field called `_h6d2EntryLocalService` and an action-handling method called `addH6D2Entry`. The `addH6D2Entry` method calls `H6D2EntryLocalService`'s `addH6D2Entry` method, passing the data fields received from the `ActionRequest`. 
+The `H6D2 Portlet` has an `H6D2EntryLocalService` field called `_h6d2EntryLocalService` and an action-handling method called `addH6D2Entry`. The `addH6D2Entry` method calls `H6D2EntryLocalService`'s `addH6D2Entry` method, passing the data fields received from the `ActionRequest`.
 
 The portlet's `view.jsp` contains a form users can submit in an `ActionRequest` to `H6D2 Portlet`.
 
@@ -169,10 +171,10 @@ The portlet's `view.jsp` contains a form users can submit in an `ActionRequest` 
 :lines: 18-26
 ```
 
-Submitting the `ActionRequest` with the `actionURL` invokes the portlet's `addH6D2Entry` method. 
+Submitting the `ActionRequest` with the `actionURL` invokes the portlet's `addH6D2Entry` method.
 
 ## Related Topics
 
-* [Managing User Data](../managing-user-data.md)
-* [Service Builder](../../building-applications/data-frameworks/service-builder.md)
-* [Using MVC](../../building-applications/developing-a-java-web-application/using-mvc.md)
+- [Managing User Data](../managing-user-data.md)
+- [Service Builder](../../building-applications/data-frameworks/service-builder.md)
+- [Using MVC](../../building-applications/developing-a-java-web-application/using-mvc.md)

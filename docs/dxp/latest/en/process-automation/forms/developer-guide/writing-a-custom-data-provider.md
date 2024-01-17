@@ -12,9 +12,8 @@ Liferay Forms fields can be populated using a [Data Provider](../data-providers/
 
 If the REST Data Provider doesn't serve your purpose, use the `DDMDataProvider` extension point to create your own.
 
-```{note}
-The example Data Provider demonstrated here consumes XML data from the [GeoDataSource™ Location Search Web Service](https://www.geodatasource.com/web-service/location-search). The API key of a Liferay employee is hard-coded into this sample; please do not overuse the sample. Never use it in production environments.
-```
+!! note
+   The example Data Provider demonstrated here consumes XML data from the [GeoDataSource™ Location Search Web Service](https://www.geodatasource.com/web-service/location-search). The API key of a Liferay employee is hard-coded into this sample; please do not overuse the sample. Never use it in production environments.
 
 ## Deploy a Custom Data Provider
 
@@ -39,9 +38,8 @@ Then, follow these steps:
    ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
    ```
 
-   ```{tip}
-   This command is the same as copying the deployed jars to /opt/liferay/osgi/modules on the Docker container.
-   ```
+   !!! tip
+      This command is the same as copying the deployed jars to /opt/liferay/osgi/modules on the Docker container.
 
 1. Confirm the deployment of each module in the Liferay Docker container console.
 
@@ -55,7 +53,7 @@ To use the data provider in a form,
 
 1. Add an instance of the Data Provider:
 
-   1. In the Site Menu, go to Content and Data &rarr; Forms. 
+   1. In the Site Menu, go to Content and Data &rarr; Forms.
 
    1. Open the Data Providers tab and click the _Add_ button.
 
@@ -64,7 +62,7 @@ To use the data provider in a form,
    1. Configure it:
       - **Name:** Cites Near Diamond Bar, CA (USA)
       - **Description:** GeoDataSource Location Search--Fetch the cities within 20 km of Liferay headquarters.
-      - **Outputs** 
+      - **Outputs**
          - **Label:** City
          - **Path:** city
          - **Type:** List
@@ -75,7 +73,7 @@ To use the data provider in a form,
 
 1. Add a form that uses the Cities Near Diamond Bar data provider:
 
-   1. In the Site Menu, go to Content and Data &rarr; Forms. 
+   1. In the Site Menu, go to Content and Data &rarr; Forms.
 
    1. In the Forms tab, click the Add button.
 
@@ -93,7 +91,7 @@ To use the data provider in a form,
 
    ![The Data Provider returns a list of cities within 20 km of Liferay.](./writing-a-custom-data-provider/images/03.png)
 
-This is a nice example, but it hard-codes the URL for the data provider. If you allow the URL to be configurable, you can use this same data provider for other cities, or any other URL that serves XML. 
+This is a nice example, but it hard-codes the URL for the data provider. If you allow the URL to be configurable, you can use this same data provider for other cities, or any other URL that serves XML.
 
 ## Understanding the B4D8 DDM Data Provider
 
@@ -107,7 +105,7 @@ Implementing the interface's methods and providing two `@Component` settings is 
 
 ```{literalinclude} ./writing-a-custom-data-provider/resources/liferay-b4d8.zip/b4d8-impl/src/main/java/com/acme/b4d8/dynamic/data/mapping/data/provider/internal/B4D8DDMDataProvider.java
    :language: java
-   :lines: 38-41,43-46,65-66,67-68,70-71
+   :lines: 38-46,65-68,70-71,162
 ```
 
 The `getData` method does most of the work. It must return a `DDMDaProviderResponse` that the Forms framework understands. For the B4D8 data provider, these are the highlights:
@@ -120,9 +118,9 @@ The `getData` method does most of the work. It must return a `DDMDaProviderRespo
       :lines: 49-53
    ```
 
-1. The `_createDDMDataProviderResponse` method is called. This is where the construction of the response object happens. To call this method, give it two parameters: the data provider settings and the XML document returned from the remote API. The logic for both is in separate private utility methods. Importantly, `HttpUtil.URLtoString(url)` is the call that executes the URL to retrieve the XML. 
+1. The `_createDDMDataProviderResponse` method is called. This is where the construction of the response object happens. To call this method, give it two parameters: the data provider settings and the XML document returned from the remote API. The logic for both is in separate private utility methods. Importantly, `HttpUtil.URLtoString(url)` is the call that executes the URL to retrieve the XML.
 
-1. Now the pieces are in place to (based on the output parameter settings of the data provider instance) build the response conditionally. The logic involves 
+1. Now the pieces are in place to (based on the output parameter settings of the data provider instance) build the response conditionally. The logic involves
    - Begin building the response using a static inner `Builder` class's `newBuilder` method:
 
       ```{literalinclude} ./writing-a-custom-data-provider/resources/liferay-b4d8.zip/b4d8-impl/src/main/java/com/acme/b4d8/dynamic/data/mapping/data/provider/internal/B4D8DDMDataProvider.java
@@ -135,7 +133,7 @@ The `getData` method does most of the work. It must return a `DDMDaProviderRespo
 
    - For each output, get the XML nodes from the returned XML document, the output parameter ID, and the type of output data requested (in the example above you chose List).
 
-   - Check the output parameter type and call the response builder's `withOutput` method. Each call provides the output parameter ID and the content of the matching node (or nodes, if a list is requested). 
+   - Check the output parameter type and call the response builder's `withOutput` method. Each call provides the output parameter ID and the content of the matching node (or nodes, if a list is requested).
 
       ```{literalinclude} ./writing-a-custom-data-provider/resources/liferay-b4d8.zip/b4d8-impl/src/main/java/com/acme/b4d8/dynamic/data/mapping/data/provider/internal/B4D8DDMDataProvider.java
          :dedent: 2
@@ -166,9 +164,8 @@ The data provider settings class defines the settings that this data provider ne
       :lines: 26-28
    ```
 
-   ```{note}
-   In addition to the `outputParameters` field, an `inputParameters` field is also provided in [DDMDataProviderParameterSettings](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/dynamic-data-mapping/dynamic-data-mapping-api/src/main/java/com/liferay/dynamic/data/mapping/data/provider/DDMDataProviderParameterSettings.java).
-   ```
+   !!! note
+      In addition to the `outputParameters` field, an `inputParameters` field is also provided in [DDMDataProviderParameterSettings](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/dynamic-data-mapping/dynamic-data-mapping-api/src/main/java/com/liferay/dynamic/data/mapping/data/provider/DDMDataProviderParameterSettings.java).
 
 ![The data provider settings form is ready for work.](./writing-a-custom-data-provider/images/05.png)
 
@@ -188,7 +185,7 @@ Get a reference to the `B4D8DDMDataProviderSettingsProvider` and then call its `
 
 ## Add Data Provider Settings
 
-To add a Data Provider Setting, add an annotated field to the `DataProviderSettings` interface and update the `DataProvider` class to react to the setting's value. 
+To add a Data Provider Setting, add an annotated field to the `DataProviderSettings` interface and update the `DataProvider` class to react to the setting's value.
 
 ### Add a URL Field to the Settings
 
@@ -217,11 +214,11 @@ To add a Data Provider Setting, add an annotated field to the `DataProviderSetti
     )
     ```
 
-Now the settings are ready to be used in the `DataProvider` class. 
+Now the settings are ready to be used in the `DataProvider` class.
 
 ### Handle the Setting in the Data Provider's `getData` Method
 
-Now the `B4D8DDMDataProvider#getData` method must be updated: 
+Now the `B4D8DDMDataProvider#getData` method must be updated:
 
 - Remove the hard-coded String `url` variable.
 - Refactor the method to instantiate `B4D8DDMDataProviderSettings` earlier and retrieve the URL setting.
@@ -294,18 +291,18 @@ To use the updated data provider in a form,
 1. Add an instance of the Data Provider:
       - **Name:** Cites Near Recife, Pernambuco (Brazil)
       - **Description:** GeoDataSource Location Search--Fetch the cities within 20 km of Liferay's Brazil office.
-      - **URL:** 
+      - **URL:**
         ```
         https://api.geodatasource.com/cities?key=LAOOBDZVQ5Z9HHYC4OCXHTGZGQLENMNA&format=xml&lat=-8.0342896&lng=-34.9239708
         ```
-      - **Outputs** 
+      - **Outputs**
          - **Label:** City
          - **Path:** city
          - **Type:** List
 
 1. Add a form that uses the Cities Near Recife data provider:
 
-   1. In the Site Menu, go to Content and Data &rarr; Forms. 
+   1. In the Site Menu, go to Content and Data &rarr; Forms.
 
    1. In the Forms tab, click the Add button.
 
@@ -322,3 +319,8 @@ To use the updated data provider in a form,
    1. Publish the form and verify that the list is populated from the data provider:
 
    ![The Data Provider returns a list of cities within 20 km of Liferay, Brazil.](./writing-a-custom-data-provider/images/04.png)
+
+## Related Topics
+
+- [Data Provider](../data-providers/data-providers-overview.md)
+- [Using the REST Data Provider to Populate Form Options](../data-providers/using-the-rest-data-provider-to-populate-form-options.md)

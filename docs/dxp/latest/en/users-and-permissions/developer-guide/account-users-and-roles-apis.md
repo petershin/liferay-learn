@@ -90,7 +90,7 @@ Then, follow these steps:
        "twitter": "",
        "webUrls": []
      }
-   }    
+   }
    ```
 
 1. Navigate to *Global Menu* &rarr; *Applications* &rarr; *Accounts*. Click the account you created a User for. Click the *Users* tab and see the new User that was created.
@@ -99,9 +99,9 @@ Then, follow these steps:
 
 1. The REST service can also be called using the Java client. Navigate out of the `curl` folder and into the `java` folder. Compile the source files with the following command:
 
-    ```bash
-    javac -classpath .:* *.java
-    ```
+   ```bash
+   javac -classpath .:* *.java
+   ```
 
 2. Run the `AccountUser_POST_ToAccount.java` class with the following command. Replace `1234` with the account's ID.
 
@@ -119,17 +119,16 @@ The `AccountUser_POST_ToAccount.sh` script calls the REST service with a cURL co
 
 Here are the command's arguments:
 
-| Arguments | Description |
-| :--- | :--- |
-| `-H "Content-Type: application/json"` | Indicates that the request body format is JSON. |
-| `-X POST` | The HTTP method to invoke at the specified endpoint |
-| `"http://localhost:8080/o/headless-admin-user/v1.0/accounts/${1}/user-accounts"` | The REST service endpoint |
+| Arguments                                                                                                                    | Description |
+| :--------------------------------------------------------------------------------------------------------------------------- | :---------- |
+| `-H "Content-Type: application/json"`                                                                                        | Indicates that the request body format is JSON. |
+| `-X POST`                                                                                                                    | The HTTP method to invoke at the specified endpoint |
+| `"http://localhost:8080/o/headless-admin-user/v1.0/accounts/${1}/user-accounts"`                                             | The REST service endpoint |
 | `-d "{\"alternateName\": \"Dog\", \"emailAddress\": \"dog@liferay.com\", \"familyName\": \"Easy\", \"givenName\": \"Dog\"}"` | The data you are requesting to post |
-| `-u "test@liferay.com:learn"` | Basic authentication credentials |
+| `-u "test@liferay.com:learn"`                                                                                                | Basic authentication credentials |
 
-```{note}
-Basic authentication is used here for demonstration purposes. For production, you should authorize users via [OAuth2](../../headless-delivery/using-oauth2.md). See [Using OAuth2 to Authorize Users](../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md) for a sample React application that uses OAuth2.
-```
+!!! note
+   Basic authentication is used here for demonstration purposes. For production, you should authorize users via [OAuth2](../../headless-delivery/using-oauth2.md). See [Using OAuth2 to Authorize Users](../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md) for a sample React application that uses OAuth2.
 
 The other cURL commands use similar JSON arguments.
 
@@ -145,23 +144,21 @@ The `Account_POST_ToInstance.java` class adds an Account User by calling the rel
 
 This class invokes the REST service using only three lines of code:
 
-| Line (abbreviated) | Description |
-| :----------------- | :---------- |
-| `UserAccountResource.Builder builder = ...` | Gets a `Builder` for generating a `UserAccountResource` service instance. |
+| Line (abbreviated)                                                               | Description |
+| :------------------------------------------------------------------------------- | :---------- |
+| `UserAccountResource.Builder builder = ...`                                      | Gets a `Builder` for generating a `UserAccountResource` service instance. |
 | `UserAccountResource userAccountResource = builder.authentication(...).build();` | Specifies basic authentication and generates a `UserAccountResource` service instance. |
-| `UserAccount userAccount = userAccountResource.postAccountUserAccount(...);` | Calls the `userAccountResource.postAccountUserAccount` method and passes the data to post. |
+| `UserAccount userAccount = userAccountResource.postAccountUserAccount(...);`     | Calls the `userAccountResource.postAccountUserAccount` method and passes the data to post. |
 
 Note that the project includes the `com.liferay.headless.admin.user.client.jar` file as a dependency. You can find client JAR dependency information for all REST applications in the API explorer in your installation at `/o/api`.
 
-```{note}
-The `main` method's comment demonstrates running the class.
-```
+!!! note
+   The `main` method's comment demonstrates running the class.
 
 The other example Java classes are similar to this one, but call different methods.
 
-```{important}
-See [AccountResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-user/headless-admin-user-client/src/main/java/com/liferay/headless/admin/user/client/resource/v1_0/AccountResource.java) for service details.
-```
+!!! important
+   See [AccountResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-user/headless-admin-user-client/src/main/java/com/liferay/headless/admin/user/client/resource/v1_0/AccountResource.java) for service details.
 
 Below are examples of calling other related REST services using cURL and Java.
 
@@ -266,7 +263,7 @@ Code:
 ```{literalinclude} ./accounts-api-basics/resources/liferay-t5p9.zip/java/AccountRole_POST_UserAssociation.java
    :dedent: 1
    :language: java
-   :lines: 9-19
+   :lines: 8-19
 ```
 
 ## Get Account Roles from an Account
@@ -340,3 +337,9 @@ Code:
 ```
 
 The [API Explorer](../../headless-delivery/consuming-apis/consuming-rest-services.md) shows all of the `Account` services and schemas and has an interface to try out each service.
+
+## Related Topics
+
+- [Account Users](../accounts/account-users.md)
+- [Account Roles](../accounts/account-roles.md)
+- [API Explorer](../../headless-delivery/consuming-apis/consuming-rest-services.md)

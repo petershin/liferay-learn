@@ -56,9 +56,8 @@ Then, follow these steps:
    ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
    ```
 
-   ```{tip}
-   This command is the same as copying the deployed jars to `/opt/liferay/osgi/modules` on the Docker container.
-   ```
+   !!! tip
+      This command is the same as copying the deployed jars to `/opt/liferay/osgi/modules` on the Docker container.
 
 1. Confirm the deployment in the Liferay Docker container console.
 
@@ -66,9 +65,8 @@ Then, follow these steps:
    STARTED com.acme.e5c9.impl_1.0.0
    ```
 
-```{note}
-For convenience, the `activate` method of the `ActionExecutor` autoloaded a E5C9 Single Approver workflow definition. This code achieved the same thing as navigating to the Workflow Process Builder and uploading a workflow definition. See [Uploading a New Workflow Definition](../designing-and-managing-workflows/managing-workflows.md#uploading-a-new-workflow-definition).
-```
+!!! note
+   For convenience, the `activate` method of the `ActionExecutor` autoloaded a E5C9 Single Approver workflow definition. This code achieved the same thing as navigating to the Workflow Process Builder and uploading a workflow definition. See [Uploading a New Workflow Definition](../designing-and-managing-workflows/managing-workflows.md#uploading-a-new-workflow-definition).
 
 ## Test the Action Executor
 
@@ -105,7 +103,7 @@ In addition to the action executor, the project includes and autoloads a workflo
 ```{literalinclude} ./creating-an-action-executor/resources/liferay-e5c9.zip/e5c9-impl/src/main/java/com/acme/e5c9/internal/workflow/kaleo/runtime/scripting/internal/action/E5C9ActionExecutor.java
    :dedent: 4
    :language: java
-   :lines: 49-50
+   :lines: 50-51
 ```
 
 ### Implementing an ActionExecutor
@@ -115,7 +113,7 @@ The action executor class implements the `com.acme.e5c9.internal.workflow.kaleo.
 ```{literalinclude} ./creating-an-action-executor/resources/liferay-e5c9.zip/e5c9-impl/src/main/java/com/acme/e5c9/internal/workflow/kaleo/runtime/scripting/internal/action/E5C9ActionExecutor.java
    :dedent: 0
    :language: java
-   :lines: 31-35
+   :lines: 32-36
 ```
 
 The `execute` method does not return anything. Instead, logic is executed arbitrarily within the method and the workflow processing continues according to the XML definition. Often times the status of the workflow is updated within the action execution.
@@ -125,15 +123,15 @@ The `execute` method takes two parameters, a `KaleoAction` and an `ExecutionCont
 ```{literalinclude} ./creating-an-action-executor/resources/liferay-e5c9.zip/e5c9-impl/src/main/java/com/acme/e5c9/internal/workflow/kaleo/runtime/scripting/internal/action/E5C9ActionExecutor.java
    :dedent: 3
    :language: java
-   :lines: 43-44
+   :lines: 44-45
 ```
 
-The `workflowContext` is used to get the transition most recently executed, so that conditional logic can determine which status to set for the asset in the workflow. 
+The `workflowContext` is used to get the transition most recently executed, so that conditional logic can determine which status to set for the asset in the workflow.
 
 ```{literalinclude} ./creating-an-action-executor/resources/liferay-e5c9.zip/e5c9-impl/src/main/java/com/acme/e5c9/internal/workflow/kaleo/runtime/scripting/internal/action/E5C9ActionExecutor.java
    :dedent: 3
    :language: java
-   :lines: 46-59
+   :lines: 47-60
 ```
 
 ### Calling the ActionExecutor in the Workflow Definition
@@ -149,3 +147,8 @@ The E5C9 Single Approver workflow definition auto-loaded by the Acme E5C9 Implem
 The script tags are still necessary, but now they point the workflow framework to the action executor that holds the logic.
 
 You aren't limited to calling a single action executor in your workflow definition. For example, the `E5C9ActionExecutor` has logic to determine the transition before setting the workflow status. However, if the logic was more complex each action in the workflow could be backed by a separate `ActionExecutor` implementation, and these implementations can be reused in other workflow definitions.
+
+## Related Topics
+
+- [Using the Script Engine in Workflow](./using-the-script-engine-in-workflow.md)
+- [Reviewing Assets](../using-workflows/reviewing-assets.md)

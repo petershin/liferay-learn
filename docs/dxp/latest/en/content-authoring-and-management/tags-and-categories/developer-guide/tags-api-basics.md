@@ -61,41 +61,40 @@ Then, follow these steps:
 
 1. Go to the Tags application by navigating to *Administration Menu* &rarr; *Categorization* &rarr; *Tags*. See that a new tag has been added.
 
-    ![See that a new tag has been added.](./tags-api-basics/images/01.png)
+   ![See that a new tag has been added.](./tags-api-basics/images/01.png)
 
 1. The REST service can also be called using the Java client. Navigate out of the `curl` folder and into the `java` folder. Compile the source files with the following command:
 
-    ```bash
-    javac -classpath .:* *.java
-    ```
+   ```bash
+   javac -classpath .:* *.java
+   ```
 
 1. Run the `Keyword_POST_ToSite` class with the following command. Replace the `siteId` value with your Site's ID:
 
-    ```bash
-    java -classpath .:* -DsiteId=1234 Keyword_POST_ToSite
-    ```
+   ```bash
+   java -classpath .:* -DsiteId=1234 Keyword_POST_ToSite
+   ```
 
 ## Examine the cURL Command
 
 The `Keyword_POST_ToSite.sh` script calls the REST service with a cURL command.
 
 ```{literalinclude} ./tags-api-basics/resources/liferay-r7u9.zip/curl/Keyword_POST_ToSite.sh
-    :language: bash
+   :language: bash
 ```
 
 Here are the command's arguments:
 
-| Arguments | Description |
-| :--- | :--- |
-| `-H "Content-Type: application/json"` | Indicates that the request body format is JSON. |
-| `-X POST` | The HTTP method to invoke at the specified endpoint |
-| `"http://localhost:8080/o/headless-admin-taxonomy/v1.0/sites/${1}/keywords"` | The REST service endpoint |
-| `-d "{\"name\": \"Foo\"}"` | The data you are requesting to post |
-| `-u "test@liferay.com:learn"` | Basic authentication credentials |
+| Arguments                                                                    | Description                                         |
+| :--------------------------------------------------------------------------- | :-------------------------------------------------- |
+| `-H "Content-Type: application/json"`                                        | Indicates that the request body format is JSON.     |
+| `-X POST`                                                                    | The HTTP method to invoke at the specified endpoint |
+| `"http://localhost:8080/o/headless-admin-taxonomy/v1.0/sites/${1}/keywords"` | The REST service endpoint                           |
+| `-d "{\"name\": \"Foo\"}"`                                                   | The data you are requesting to post                 |
+| `-u "test@liferay.com:learn"`                                                | Basic authentication credentials                    |
 
-```{note}
-Basic authentication is used here for demonstration purposes. For production, you should authorize users via [OAuth2](../../../headless-delivery/using-oauth2.md). See [Using OAuth2 to Authorize Users](../../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md) for a sample React application that uses OAuth2.
-```
+!!! note
+   Basic authentication is used here for demonstration purposes. For production, you should authorize users via [OAuth2](../../../headless-delivery/using-oauth2.md). See [Using OAuth2 to Authorize Users](../../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md) for a sample React application that uses OAuth2.
 
 The other cURL commands use similar JSON arguments.
 
@@ -106,28 +105,26 @@ The `Keyword_POST_ToSite.java` class adds a tag by calling the keyword related s
 ```{literalinclude} ./tags-api-basics/resources/liferay-r7u9.zip/java/Keyword_POST_ToSite.java
    :dedent: 1
    :language: java
-   :lines: 9-26
+   :lines: 9-25
 ```
 
 This class invokes the REST service using only three lines of code:
 
-| Line (abbreviated) | Description |
-| :----------------- | :---------- |
-| `KeywordResource.Builder builder = ...` | Gets a `Builder` for generating a `KeywordResource` service instance. |
+| Line (abbreviated)                                                       | Description                                                                        |
+| :----------------------------------------------------------------------- | :--------------------------------------------------------------------------------- |
+| `KeywordResource.Builder builder = ...`                                  | Gets a `Builder` for generating a `KeywordResource` service instance.              |
 | `KeywordResource keywordResource = builder.authentication(...).build();` | Specifies basic authentication and generates a `KeywordResource` service instance. |
-| `Keyword keyword = keywordResource.postSiteKeyword(...);` | Calls the `keywordResource.postSiteKeyword` method and passes the data to post. |
+| `Keyword keyword = keywordResource.postSiteKeyword(...);`                | Calls the `keywordResource.postSiteKeyword` method and passes the data to post.    |
 
 Note that the project includes the `com.liferay.headless.admin.taxonomy.client.jar` file as a dependency. You can find client JAR dependency information for all REST applications in the API explorer in your installation at `/o/api`.
 
-```{note}
-The `main` method's comment demonstrates running the class.
-```
+!!! note
+   The `main` method's comment demonstrates running the class.
 
 The other example Java classes are similar to this one, but call different `KeywordResource` methods.
 
-```{important}
-See [KeywordResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-taxonomy/headless-admin-taxonomy-client/src/main/java/com/liferay/headless/admin/taxonomy/client/resource/v1_0/KeywordResource.java) for service details.
-```
+!!! important
+   See [KeywordResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-taxonomy/headless-admin-taxonomy-client/src/main/java/com/liferay/headless/admin/taxonomy/client/resource/v1_0/KeywordResource.java) for service details.
 
 Below are examples of calling other `Keyword` REST services using cURL and Java.
 
@@ -171,9 +168,8 @@ The Site's `Keyword` objects are listed in JSON.
 
 Get a specific tag with the following cURL or Java command. Replace `1234` with the tag's ID.
 
-```{tip}
-Use ``Keywords_GET_FromSite.[java|sh]`` to get site ``Keyword`` IDs.
-```
+!!! tip
+   Use ``Keywords_GET_FromSite.[java|sh]`` to get site ``Keyword`` IDs.
 
 ### Keyword_GET_ById.sh
 
@@ -276,3 +272,8 @@ Code:
 ```
 
 The [API Explorer](../../../headless-delivery/consuming-apis/consuming-rest-services.md) lists all of the `Keyword` services and schemas and has an interface to try out each service.
+
+## Related Topics
+
+- [OAuth2](../../../headless-delivery/using-oauth2.md)
+- [API Explorer](../../../headless-delivery/consuming-apis/consuming-rest-services.md)

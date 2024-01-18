@@ -40,7 +40,12 @@ To change the default policy,
 
 ### Policy Configuration Reference
 
-**Password Changes:** Allow or prevent password changes, and set a time limit on the validity of password reset links.
+**Password Changes:** Allow or prevent password changes, and set a time limit on the validity of password reset links. You will find the following customizable options:
+
+   * *Changeable*: If checked, the user can change their password.
+   * *Change Required*: If checked, a user is required to change their password when they first log in.
+   * *Minimum Age*: Determines how long a user must wait before change their password again.
+   * *Reset Ticket Max Age*: Determines how long a password reset link is valid.
 
 **Password Syntax Checking:** Require a certain syntax when choosing a password. You can disallow dictionary words, set a minimum length, and more in this section.
 

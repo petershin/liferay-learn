@@ -11,9 +11,7 @@ With *Site Templates*, you can create a prototype or boilerplate for not just a 
 
 1. *Consistency Across Sites and Standardized Content*. Define a consistent look and feel across multiple websites to ensure a uniform brand identity and user experience. You can also keep consistency by standardizing content (e.g., headers, footers, and navigation menus) across multiple sites.
 
-   ![Use standardized content to maintain a consistent look and feel across websites.](./site-templates/images/01.png)I sh
-
-   <!-- I should alter this screenshot. I talk about consistent look and feel but I used different font weights for titles in different pages... - Eric -->
+   ![Use standardized content to maintain a consistent look and feel across websites.](./site-templates/images/01.png)
 
 1. *Global Updates*. You can apply changes globally to all sites that use the same template. This simplifies maintenance and ensures the same updates are applied uniformly across all associated sites.
 
@@ -21,9 +19,9 @@ With *Site Templates*, you can create a prototype or boilerplate for not just a 
 
 Each template includes most standard site applications for adding pages, stylebooks, web content, and more. Sites created with a template inherit all of the template's data. And once you create a site using a template, you can change it in two ways: by making changes outside the template to customize that individual site, or by making changes to the template so those changes automatically propagate to connected sites.
 
-<!-- Here, you should talk about what's coming: the steps taken to create the site template, the concepts the student will learn (such as master page templates, compositions, etc.). Add a relevant screenshot showing the site template and its structure of pages. -Rich -->
-
 Here's what you'll do during this module:
+
+![The Career page in your site template uses the common elements applied to the master page. The design and](./site-templates/images/02.png)
 
 - Create a [site template](https://learn.liferay.com/web/guest/w/dxp/site-building/sites/site-templates), populate it with pages, and create other sites with it.
 
@@ -41,13 +39,9 @@ Here's what you'll do during this module:
 
    Collections are sets of content items you can use to group, filter, and display information. The items in this collection are web content articles, content created based on a specific structure that defines its available fields. The articles contain information about job postings (e.g. job title, location, and description).
 
-   Then, link the job posting page to a [display page template](https://learn.liferay.com/web/guest/w/dxp/site-building/displaying-content/using-display-page-templates/publishing-content-with-display-pages) where you can define structures to display more information about the job postings at a dedicated and friendly URL.
-
 - Create [navigation menus](https://learn.liferay.com/web/guest/w/dxp/site-building/site-navigation/using-the-navigation-menus-application) to determine which elements are included in a menu, and how they are organized. Then, configure the [menu display fragments](https://learn.liferay.com/web/guest/w/dxp/site-building/site-navigation/configuring-menu-displays) located in your master template so you can show your navigation menus in all pages through the template.
 
 - Last, [create a new site](https://learn.liferay.com/web/guest/w/dxp/site-building/sites/adding-a-site) using your site template. After that, you are free to add specific pages and other elements an intranet for Clarity employees called Glance and a B2B platform.
-
-![The Career page in your site template uses the common elements applied to the master page. The design and](./site-templates/images/02.png)
 
 Ready?
 

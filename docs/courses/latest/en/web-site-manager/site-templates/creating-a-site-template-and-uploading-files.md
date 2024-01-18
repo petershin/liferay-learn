@@ -54,7 +54,7 @@ For this exercise, use the Dialect theme with a style book designed for this the
 1. Download the [resources for this exercise](./liferay-h2a2.zip).
 
    ```bash
-   curl https://resources.learn.liferay.com/courses/latest/en/application-development/modeling-data-structures/liferay-h2a2.zip -O
+   curl https://resources.learn.liferay.com/courses/latest/en/web-site-manager/site-templates/liferay-h2a2.zip -O
    ```
 
 1. Unzip the file.

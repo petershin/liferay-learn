@@ -87,30 +87,59 @@ Preston Palmer is a publication administrator in the template, so log in with th
 
 ## Working on the 50th Anniversary Changes
 
-<!-- Consider a better name -->
+Next sign in as Olivia O'Neal, a publication editor as configured in the template. Then, 
 
-Sign in as Olivia O'Neal, then
+1. Open the publications bar and click _Select a Publication_. 
 
-<!-- Problem: currently when Kyle Klein creates a publication based on a template that's marked as the default and the default sandbox template,
-So far I see no evidence that inviting users via the publication template does anything. If my admin user creates a publication based on the template, the invited users cannot see the publication when they log in.
--->
+1. Click _50th Anniversary_.
 
+   ![Select the 50th Anniversary publication.](./enabling-publications/images/08.png)
 
+1. Open the site's master page, _Clarity MP_.
 
+1. In the header, delete the _J2B6 Announcement_. In its place add _K3C7 50th Anniversary Announcement_.
 
-Name, Default Template, Default Sandbox Template, 
+1. Publish the master page, then open the publications bar and click _Review Changes_. The new fragment being added to the master page is tracked.
 
-Publication Information: Publication Name, Publication Description
+   ![A new announcement fragment is being added in the publication.](./enabling-publications/images/09.png)
 
-From the UI: Info--You can use string template tokens to dynamically generate various snippets you can use in the publication's name and description. The available tokens are:
-${RANDOM_HASH}
-${TODAY_DATE}
-${CURRENT_USERNAME}
+1. Go to _Site Menu_ (![Site Menu](../../images/icon-product-menu.png)) &rarr; _Content & Data_ &rarr; _Web Content_.
 
+1. Click _Add_ (![](../../images/icon-add.png)) &rarr; _Event_ and specify
 
-   <!-- From the docs, I don't know what automatically created publications are 
-   **Default Template**: Manually created publications use this template by default, but you can select an alternative template during publication creation. When [Sandbox Only mode](./enabling-publications.md#how-to-enable-publications) is enabled, automatically created publications use the template if a Default Sandbox Template isn't set.
+   * Title: Clarity is Turning 50!
+   * Summary: Clarity is turning 50, so let's celebrate!
+   * Body: Check out our limited time only frames! Clarity turned 50, and we're excited to offer these frames while they last.
+   * Banner Image: <!-- We need one -->
 
-   **Default Sandbox Template**: Automatically created publications use this template when [Sandbox Only mode](./enabling-publications.md#how-to-enable-publications) is enabled. You can still create publications manually using an alternative template.
-   -->
+1. Go to _Site Menu_ (![Site Menu](../../images/icon-product-menu.png)) &rarr; _Site Builder_ &rarr; _Navigation Menus_ and click _Clarity Navigation Menu_.
 
+   <!-- Note, right now Olivia O'Neal can't get to Navigaiton Menus, need to make sure she has the right role -->
+
+1. Add an item to the More submenu for the event you just created by clicking _Add Child_ &rarr; _Web Content Article_ &rarr; Clarity is Turning 50!_.
+
+   ![Add the web content article to the navigation menu.](./enabling-publications/images/10.png)
+
+   <!-- Note, this is not in the publication apparently. Or at least I can't see it in Review Changes. But I also cannot see it in production. So perhaps because the web content article isn't there the menu item doesn't show--makes sense and it works to show it -->
+
+Now the content is ready for the 50th anniversary!
+
+<!-- We could have Rex Randle go in and comment on the change list? He's just a viewer so can't actually work on the publication -->
+
+## Publishing the 50th Anniversary Content
+
+Log in as Preston Palmer again. He's the publication administrator and the one who can publish the content.
+
+1. From the publications bar, click _50th Anniversary_ &rarr; _Review Changes_.
+
+   ![The 50th anniversary content is in place.](./enabling-publications/images/11.png)
+
+1. Click _Schedule_ and choose today's date, and a time 2-5 minutes in the future.
+
+   ![Schedule the publication for the perfect time.](./enabling-publications/images/12.png)
+
+1. Click _Schedule_ and wait until the time.
+
+1. Go to the home page and verify the content is updated:
+
+   ![Clarity's 50th anniversary event is live.](./enabling-publications/images/13.png)

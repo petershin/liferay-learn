@@ -5,7 +5,7 @@ uuid: f5ee36b8-e621-4c11-a21f-4d2fc3c98510
 
 *Master page templates* provide a way to define elements common to every page, so you can focus on that page's content, rather than its chrome. You can use the same master page template across an entire site or have unique templates for each page.
 
-In this exercise, you'll create a master page template called *Main* which in turn is used to create the site template's pages. 
+In this exercise, you'll create a master page template called *Main* which in turn is used to create the site template's pages.
 
 1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)) and select *Design* &rarr; *Page Templates*.
 
@@ -27,6 +27,8 @@ With the header and the footer in place, you can edit them.
 
 The header composition is almost complete. Add the missing logo to the image fragment:
 
+1. (If the Background for the Header doesn't show) Click the *Header container*. On the right, select the *Styles* tab. Under Background, click Change Image/Select Image. In the Assets folder, select `header-background.svg`.
+
 1. Click the *Image* fragment twice to select the image-square inside the Image fragment. On the right, select the *Image Source* tab.
 
    You can also select the image-square by using the Browser menu on the left (1).
@@ -40,6 +42,8 @@ Your custom header is ready.
 ![Edit the look and feel of the custom header.](./creating-the-master-page-template/images/05.gif)
 
 ## Editing the Look and Feel of the Custom Footer
+
+1. (If the Background for the Footer doesn't show) Click the *Footer container*. On the right, select the *Styles* tab. Under Background, click Change Image/Select Image. In the Assets folder, select `footer-background.svg`.
 
 Start by organizing the top grid. First, add the logo to the footer:
 
@@ -55,33 +59,27 @@ Second, alter the headings for the menu displays:
 
 1. In the second grid module, double-click the *Dialect Text* to edit it and change its text to `My Account`.
 
-   ![Add the heading for the menu display.](./creating-the-master-page-template/images/07.gif)
-
 1. Repeat the last step to add and alter the heading for the menu displays in the next two grids. Add `The Company` and `Help Center` headings to the other grids.
-
-   You can also duplicate the Dialect text component (using the Browser or the options menu that shows once you click the component), reposition the duplicates in the next modules, and change their text.
-
-   ![Instead of repeating the same steps, you can duplicate the component and place it wherever you want.](./creating-the-master-page-template/images/08.gif)
 
    The menu displays are going to be set later.
 
-Third, create a section where the user can subscribe to the company's mailing list: 
+Third, create a section where the user can subscribe to the company's mailing list:
 
 1. In the last grid module, change the Dialect Text to `Stay in Touch`.
 
 1. Change the Dialect text under it to `Receive updates, promotions, and more.`
 
-1. Change the Dialect button's text to `Subscribe`.
+1. Change the Dialect texts' content to `Subscribe`.
 
 Now, it's time to organize the bottom grid:
 
-1. Change the Dialect button's texts to `Privacy Policy`, `Terms of Use`, and `Site Map`.
+1. Change the Dialect text's contents to `Privacy Policy`, `Terms of Use`, and `Site Map`.
 
-   ![Add links to the footer's bottom grid.](./creating-the-master-page-template/images/09.gif)
+1. In the second module, change the Paragraph to `© 2024 Clarity, Inc. All Rights Reserved.`
 
-1. In the second module, change the Dialect text to `© 2024 Clarity, Inc. All Rights Reserved`
+   This is how the footer should look like once it's complete.
 
-   ![Add the All Rights reserved message.](./creating-the-master-page-template/images/10.gif)
+   ![Change the footer's contents.](./creating-the-master-page-template/images/07.png)
 
 Your custom footer is ready.
 

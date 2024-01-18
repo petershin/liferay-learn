@@ -27,17 +27,7 @@ The web content articles, structure, and template are imported. Now, create a co
 
 ![Create a collection to display on a page.](./creating-the-careers-page/images/01.png)
 
-Now, import the display page template.
-
-## Importing the Display Page Template
-
-1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)) and select *Design* &rarr; *Page Templates*.
-
-1. Select the *Display Page Templates* tab, click *Options* (![Options](../../images/icon-options.png)) and select *Import*.
-
-1. Select the `06-glance-careers-job-posting-display-page-template.zip` file (included in the zip file with the resources for this module) and click *Import*. After the import process is complete, click *Done*.
-
-The display page template is imported. You can use it to show more details about a job posting.
+Now, create and edit the Careers page.
 
 ## Create and Edit the Careers Page
 
@@ -61,21 +51,13 @@ The display page template is imported. You can use it to show more details about
 
 1. Double-click the second Dialect text component inside the collection item's container. Under the Mapping tab, change the field to `Location`.
 
-1. Double-click the Dialect button inside the collection item's container. Under the Link tab, change the link to `Mapped URL` and the field to `Job Posting DPT`.
-
-<!-- Maybe it should be named Job Posting Display Page Template -->
-
-   Once users click the button, the display page template appears. 
-
-   ![This is how the details about the job posting should look in the display page template.](./creating-the-careers-page/images/03.png)
-
-1. Change the Dialect button's text to `More`.
+1. Change the Button's text to `More`.
 
 1. Publish the page.
 
 This is how the Careers page should look once it's finished:
 
-![This is how the Careers page should look once it's edited.](./creating-the-careers-page/images/04.png)
+![This is how the Careers page should look once it's edited.](./creating-the-careers-page/images/03.png)
 
 Next: [create the menu navigation and use your site template to generate another site.](./creating-a-new-site.md)
 

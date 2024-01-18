@@ -1,4 +1,9 @@
 ---
+taxonomy-category-names:
+- Cloud
+- Cloud Platform Services
+- Cloud Platform Administration
+- Liferay PaaS
 uuid: fa9c0cd6-ff6b-4672-816a-9d93243dede3
 ---
 # Using the MySQL Client

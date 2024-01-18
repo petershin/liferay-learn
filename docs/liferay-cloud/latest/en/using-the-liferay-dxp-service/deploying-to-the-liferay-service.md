@@ -1,4 +1,9 @@
 ---
+taxonomy-category-names:
+- Cloud
+- Cloud Platform Services
+- Cloud Platform Builds and Deployments
+- Liferay PaaS
 uuid: 5cc0862d-ae06-4a61-ac47-953fd1e914c3
 ---
 # Deploying to the Liferay Service

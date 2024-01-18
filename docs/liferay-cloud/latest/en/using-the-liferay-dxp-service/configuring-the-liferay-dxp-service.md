@@ -1,4 +1,8 @@
 ---
+taxonomy-category-names:
+- Cloud
+- Cloud Platform Services
+- Liferay PaaS
 uuid: 002ecd02-b586-483f-bd07-a378f27d14fd
 ---
 # Configuring the Liferay DXP Service

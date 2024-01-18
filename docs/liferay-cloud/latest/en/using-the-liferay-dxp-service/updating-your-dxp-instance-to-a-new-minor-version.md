@@ -1,4 +1,8 @@
 ---
+taxonomy-category-names:
+- Cloud
+- Cloud Platform Services
+- Liferay PaaS
 uuid: b704f84a-8cc9-429a-acde-06e029072ab2
 ---
 # Updating Your DXP Instance to a New Minor Version

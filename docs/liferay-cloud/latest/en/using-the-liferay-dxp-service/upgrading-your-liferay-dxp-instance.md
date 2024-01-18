@@ -1,4 +1,8 @@
 ---
+taxonomy-category-names:
+- Cloud
+- Cloud Platform Services
+- Liferay PaaS
 uuid: c3d3cfc7-1cd9-4a07-91a3-4a2f6ed6ecb2
 ---
 # Upgrading Your Liferay DXP Instance

@@ -1,4 +1,8 @@
 ---
+taxonomy-category-names:
+- Cloud
+- Cloud Platform Services
+- Liferay PaaS
 uuid: 5ce6a26d-ef5c-4919-bf23-0567fadc595a
 ---
 # Setting Up Clustering in Liferay Cloud

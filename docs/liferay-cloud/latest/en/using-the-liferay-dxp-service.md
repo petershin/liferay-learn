@@ -8,6 +8,10 @@ toc:
   - ./using-the-liferay-dxp-service/setting-up-clustering-in-liferay-cloud.md
   - ./using-the-liferay-dxp-service/using-the-mysql-client.md
   - ./using-the-liferay-dxp-service/upgrading-your-liferay-dxp-instance.md
+taxonomy-category-names:
+- Cloud
+- Cloud Platform Services
+- Liferay PaaS
 uuid: 01625ffe-bb32-4fe9-bfde-9f3adbb3f2de
 ---
 # Using the Liferay DXP Service

@@ -1,4 +1,8 @@
 ---
+taxonomy-category-names:
+- Cloud
+- Cloud Platform Services
+- Liferay PaaS
 uuid: dab38c61-eaff-4cb3-8c40-0adf66c1c129
 ---
 # Liferay Service Environment Variables

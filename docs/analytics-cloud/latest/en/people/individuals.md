@@ -6,8 +6,6 @@ toc:
 uuid: 70d2cb2e-1f8e-48fb-83dd-a129d0fbd727
 - Sites
 - Users and Account Analysis
-- Cloud
-- Analytics Cloud Administration
 - Liferay Self-Hosted
 - Liferay SaaS
 - Liferay PaaS

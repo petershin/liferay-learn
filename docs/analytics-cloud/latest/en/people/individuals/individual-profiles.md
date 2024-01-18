@@ -4,8 +4,6 @@ uuid: de574698-98c8-4818-afcc-4e82e637a98f
 - Users and Account Analysis
 - Personalization
 - User Interests and Content Recommendations
-- Cloud
-- Analytics Cloud Administration
 - Liferay Self-Hosted
 - Liferay SaaS
 - Liferay PaaS

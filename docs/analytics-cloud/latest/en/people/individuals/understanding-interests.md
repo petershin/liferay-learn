@@ -2,8 +2,6 @@
 uuid: 8a736460-98bf-4349-958d-f51fc4854404
 - Personalization
 - User Interests and Content Recommendations
-- Cloud
-- Analytics Cloud Administration
 - Liferay Self-Hosted
 - Liferay SaaS
 - Liferay PaaS

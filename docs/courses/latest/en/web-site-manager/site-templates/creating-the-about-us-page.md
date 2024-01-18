@@ -11,8 +11,6 @@ Start by creating a page using the master page template from the last lesson.
 
 ## Creating a Page Using a Master Page Template
 
-<!-- This first lesson teaching how to deal with compositions is going to take longer, the others are just going to contain general directions instead of more specific ones. -->
-
 1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)) and select *Site Builder* &rarr; *Pages*.
 
 1. Click *Add* (![Add icon](../../images/icon-add.png)) &rarr; *Add Site Template Page* and select the Main template.
@@ -76,23 +74,21 @@ Edit the fourth row:
    We blend style with sustainability. We craft eco-friendly, innovative eyewear solutions. Our network of worldwide stores ensures quality and personalized service. Experience Clarity for exceptional vision and environmental responsibility.
    ```
 
-![The first rows of the About Us page are complete.](./creating-the-about-us-page/images/04.png)
-
 Last, edit the cards. They hold information about the main Clarity offices: an image (a picture of the office), a title (the name of the office), a paragraph (information about the office), and a link (to send the user to the office's page).
 
 1. Use the information and the instructions in the table below to fill in the cards:
 
-   | Office | Component | Content |
-   | :--- | :--- | :--- |
-   | New York | Image | `nyoffice` |
-   | New York | Title | New York Office |
-   | New York | Paragraph | 10019, NY. USA <br> Tel: +1-212-555-0139 <br> nyoffice@clarity.com |
-   | Recife | Image | `recifeoffice` |
-   | Recife | Title | Recife Office |
-   | Recife | Paragraph | Rua da Aurora, Recife. Brazil <br> Tel: +55 81 2020-5000 <br> recifeoffice@clarity.com |
-   | Tokyo | Image | `tokyooffice` |
-   | Tokyo | Title | Tokyo Office |
-   | Tokyo | Paragraph | Bunkyo, Tokyo 112-0001 <br> Tel: +81 75 429-7496 <br> tokyooffice@clarity.com |
+   | Office   | Component | Content                                                                                |
+   |:---------|:----------|:---------------------------------------------------------------------------------------|
+   | New York | Image     | `nyoffice`                                                                             |
+   | New York | Title     | New York Office                                                                        |
+   | New York | Paragraph | 10019, NY. USA <br> Tel: +1-212-555-0139 <br> nyoffice@clarity.com                     |
+   | Recife   | Image     | `recifeoffice`                                                                         |
+   | Recife   | Title     | Recife Office                                                                          |
+   | Recife   | Paragraph | Rua da Aurora, Recife. Brazil <br> Tel: +55 81 2020-5000 <br> recifeoffice@clarity.com |
+   | Tokyo    | Image     | `tokyooffice`                                                                          |
+   | Tokyo    | Title     | Tokyo Office                                                                           |
+   | Tokyo    | Paragraph | Bunkyo, Tokyo 112-0001 <br> Tel: +81 75 429-7496 <br> tokyooffice@clarity.com          |
 
 1. Add the image by double-clicking the image component and selecting the image as indicated in the table.
 
@@ -100,11 +96,9 @@ Last, edit the cards. They hold information about the main Clarity offices: an i
 
 1. Change the text of the link by double-clicking the link component. Change its content to `Visit the Office's Page`.
 
-   <!-- You are not going to create an individual page for each office in this exercise, but if you create one, you can link it here. -->
-
 Once the elements are in place, click *Publish* at the top right corner of the page. This is how the About Us Page should look when you are finished:
 
-![With the cards filled, the About Us page is complete.](./creating-the-about-us-page/images/05.png)
+![With the cards filled, the About Us page is complete.](./creating-the-about-us-page/images/04.png)
 
 Next: [create the Contact Us page.](./creating-the-contact-us-page.md)
 

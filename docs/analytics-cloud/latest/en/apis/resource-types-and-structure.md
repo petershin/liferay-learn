@@ -1,5 +1,11 @@
 ---
 uuid: 4a98f594-0570-4088-bb91-fab978358780
+taxonomy-category-names:
+- Cloud
+- Analytics Cloud Administration
+- Liferay Self-Hosted
+- Liferay SaaS
+- Liferay PaaS
 ---
 # Resource Types and Structure
 

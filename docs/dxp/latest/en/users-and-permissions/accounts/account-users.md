@@ -46,6 +46,10 @@ To set user passwords manually,
 
 1. Click *Save*.
 
+```{note}
+The password text field would not be visible if the [Default Password Policy](../roles-and-permissions/configuring-a-password-policy.md)'s Changeable option is deactivated.
+```
+
 ### Associating an Existing User to a Business Account
 
 1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and go to *Control Panel* &rarr; *Accounts*.

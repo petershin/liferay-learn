@@ -3,8 +3,6 @@ uuid: ea56f3d5-74f0-4eb3-84b5-0f4d9ef8d4fe
 taxonomy-category-names:
 - Platform
 - Forms
-- Cloud
-- Analytics Cloud Administration
 - Liferay Self-Hosted
 - Liferay SaaS
 - Liferay PaaS

@@ -2,15 +2,7 @@
 uuid: 40febe64-2fa2-4508-8321-10fe5462e0ac
 taxonomy-category-names:
 - Content Management System
-- Web Content and Structures
-- Blogs
 - Asset Analytics
-- Digital Asset Management
-- Documents and Media
-- Platform
-- Forms
-- Cloud
-- Analytics Cloud Administration
 - Liferay Self-Hosted
 - Liferay SaaS
 - Liferay PaaS

@@ -7,6 +7,12 @@ toc:
   - ./assets/documents-and-media.md
   - ./assets/tracking-custom-assets.md
 uuid: 5ec4ccb1-4c4e-415d-855e-5c458597f1c3
+taxonomy-category-names:
+- Content Management System
+- Asset Analytics
+- Liferay Self-Hosted
+- Liferay SaaS
+- Liferay PaaS
 ---
 # Assets
 

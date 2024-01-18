@@ -3,8 +3,6 @@ uuid: 5001f516-6581-4865-a1f8-b4ac590d3771
 taxonomy-category-names:
 - Content Management System
 - Blogs
-- Cloud
-- Analytics Cloud Administration
 - Liferay Self-Hosted
 - Liferay SaaS
 - Liferay PaaS

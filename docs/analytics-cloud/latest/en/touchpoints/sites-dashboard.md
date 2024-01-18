@@ -4,8 +4,6 @@ taxonomy-category-names:
 - Sites
 - Site Analytics
 - Traffic and Path Analysis
-- Cloud
-- Analytics Cloud Administration
 - Liferay Self-Hosted
 - Liferay SaaS
 - Liferay PaaS

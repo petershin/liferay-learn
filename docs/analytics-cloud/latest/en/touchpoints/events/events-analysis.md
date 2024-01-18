@@ -2,8 +2,6 @@
 uuid: 97e2fd3b-4de4-4333-8eaf-ca3343d4da94
 - Content Management System
 - Asset Analytics
-- Cloud
-- Analytics Cloud Administration
 - Liferay Self-Hosted
 - Liferay SaaS
 - Liferay PaaS

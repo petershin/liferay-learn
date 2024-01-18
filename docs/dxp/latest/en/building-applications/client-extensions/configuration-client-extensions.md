@@ -8,8 +8,8 @@ uuid: 654223de-17be-4786-a90d-775f986c0911
 # Configuration Client Extensions
 
 {bdg-primary}`Liferay Self-Hosted`
-{bdg-primary}`Liferay Experience Cloud (SaaS)`
-{bdg-warning}`Liferay Cloud: Self-Managed`
+{bdg-primary}`Liferay SaaS`
+{bdg-warning}`Liferay PaaS`
 
 {bdg-secondary}`Liferay 7.4`
 
@@ -17,7 +17,7 @@ Liferay instance configurations are deployable with client extensions. For examp
 
 ## Instance Settings Client Extensions
 
-{bdg-secondary}`Available Liferay DXP 7.4 (self-hosted)`   {bdg-secondary} `Available Liferay Experience Cloud (SaaS)`
+{bdg-secondary}`Available Liferay DXP 7.4 (self-hosted)`   {bdg-secondary} `Available Liferay SaaS`
 
 You can use an instance settings client extension to configure a wide variety of Liferay configurations. Each configuration is referenced by its PID (Persistent IDentity).
 

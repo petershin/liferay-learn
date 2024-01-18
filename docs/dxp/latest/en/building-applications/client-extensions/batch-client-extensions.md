@@ -6,8 +6,8 @@ uuid: 601bd5b5-8b5b-4ac6-9030-776439ff9aa7
 # Batch Client Extensions
 
 {bdg-primary}`Liferay Self-Hosted`
-{bdg-primary}`Liferay Experience Cloud (SaaS)`
-{bdg-warning}`Liferay Cloud: Self-Managed`
+{bdg-primary}`Liferay SaaS`
+{bdg-warning}`Liferay PaaS`
 
 {bdg-secondary}`Liferay 7.4`
 

@@ -6,7 +6,7 @@ toc:
 # 構成 クライアント拡張
 
 {bdg-primary}`Liferay Self-Hosted`
-{bdg-primary}`Liferay Experience Cloud (SaaS)`
+{bdg-primary}`Liferay SaaS`
 {bdg-warning}`Liferay Cloud： セルフマネージド`
 
 {bdg-secondary}`Liferay 7.4`
@@ -15,7 +15,7 @@ Liferay インスタンスコンフィギュレーションはクライアント
 
 ## インスタンス設定 クライアント拡張
 
-{bdg-secondary}`Available Liferay DXP 7.4 (self-hosted)` {bdg-secondary}`Available Liferay Experience Cloud (SaaS)`
+{bdg-secondary}`Available Liferay DXP 7.4 (self-hosted)` {bdg-secondary}`Available Liferay SaaS`
 
 インスタンス設定クライアントエクステンションを使用すると、さまざまな Liferay の設定を行うことができます。各構成は PID (Persistent IDentity) によって参照されます。
 

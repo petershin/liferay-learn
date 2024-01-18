@@ -11,8 +11,8 @@ uuid: 33141e0f-9fc0-4bcb-ae34-536c157e0198
 # Client Extensions
 
 {bdg-primary}`Liferay Self-Hosted`
-{bdg-primary}`Liferay Experience Cloud (SaaS)`
-{bdg-warning}`Liferay Cloud: Self-Managed`
+{bdg-primary}`Liferay SaaS`
+{bdg-warning}`Liferay PaaS`
 
 {bdg-secondary}`Liferay 7.4`
 

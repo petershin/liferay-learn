@@ -1,7 +1,7 @@
 # クライアント拡張との連携
 
 {bdg-primary}`Liferay Self-Hosted`
-{bdg-primary}`Liferay Experience Cloud (SaaS)`
+{bdg-primary}`Liferay SaaS`
 {bdg-warning}`Liferay Cloud： セルフマネージド`
 
 {bdg-secondary}`Liferay 7.4`

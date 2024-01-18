@@ -30,8 +30,8 @@ front-end-client-extensions/client-extensions-ui-reference.md
 ```
 
 {bdg-primary}`Liferay Self-Hosted`
-{bdg-primary}`Liferay Experience Cloud (SaaS)`
-{bdg-warning}`Liferay Cloud: Self-Managed`
+{bdg-primary}`Liferay SaaS`
+{bdg-warning}`Liferay PaaS`
 
 {bdg-secondary}`Liferay 7.4`
 

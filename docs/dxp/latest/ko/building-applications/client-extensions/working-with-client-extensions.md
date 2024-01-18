@@ -1,7 +1,7 @@
 # 클라이언트 확장 작업
 
 {bdg-primary}`Liferay 자체 호스팅`
-{bdg-primary}`Liferay Experience Cloud (SaaS)`
+{bdg-primary}`Liferay SaaS`
 {bdg-warning}`Liferay Cloud: 자체 관리`
 
 {bdg-secondary}`Liferay 7.4+`

@@ -1,5 +1,11 @@
 ---
 uuid: b7a70e09-bbdd-474e-a652-a748e83d1f56
+taxonomy-category-names:
+- Cloud
+- Analytics Cloud Administration
+- Liferay Self-Hosted
+- Liferay SaaS
+- Liferay PaaS
 ---
 # Definitions for Events
 

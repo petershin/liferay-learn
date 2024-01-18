@@ -1,5 +1,11 @@
 ---
 uuid: e357e639-06dd-492b-b1f0-31f0cff9eef3
+taxonomy-category-names:
+- Cloud
+- Analytics Cloud Administration
+- Liferay Self-Hosted
+- Liferay SaaS
+- Liferay PaaS
 ---
 # Managing API Access
 

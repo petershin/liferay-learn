@@ -1,5 +1,11 @@
 ---
 uuid: 6acc24e1-484c-451c-a981-8ea572fdca78
+taxonomy-category-names:
+- Cloud
+- Analytics Cloud Administration
+- Liferay Self-Hosted
+- Liferay SaaS
+- Liferay PaaS
 ---
 # Definitions for Event Attributes
 

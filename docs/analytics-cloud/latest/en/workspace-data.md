@@ -5,6 +5,12 @@ toc:
   - ./workspace-data/managing-data-sources.md
   - ./workspace-data/definitions.md
 uuid: 14e0ad86-52fc-403e-abd0-4b2a5f86a34e
+taxonomy-category-names:
+- Cloud
+- Analytics Cloud Administration
+- Liferay Self-Hosted
+- Liferay SaaS
+- Liferay PaaS
 ---
 # Workspace Data
 

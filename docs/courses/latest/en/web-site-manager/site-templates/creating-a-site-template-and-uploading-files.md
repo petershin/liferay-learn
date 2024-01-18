@@ -3,7 +3,7 @@ uuid: e22547b1-aef3-4f4c-8c8d-4a3e721ef393
 ---
 # Creating a Site Template and Uploading Files
 
-You'll create your site template in Clarity's internal virtual instance. If you're following along locally, this was created in the Liferay Administrator course and can be found at `http://glance.clarityvisionsolutions.com:8080`. If you haven't run through the Administrator course, follow the steps in [Configuring Virtual Instances](../../liferay-administrator/configuration/configuring-virtual-instances.md), and then come back here. 
+You'll create your site template in Clarity's internal virtual instance. If you're following along locally, this was created in the Liferay Administrator course and can be found at `http://glance.clarityvisionsolutions.com:8080`. If you haven't run through the Administrator course, follow the steps in [Configuring Virtual Instances](../../liferay-administrator/configuration/configuring-virtual-instances.md), and then come back here.
 
 ## Use the Virtual Instance
 
@@ -11,7 +11,7 @@ You'll create your site template in Clarity's internal virtual instance. If you'
 
 1. Log in as Kyle Klein, the instance's administrator.
 
-   If you just created the virtual instance, it has no user accounts. Create one for Kyle Klein so he can administer this instance as well. Follow the steps in [Create an Administrator](../../liferay-administrator/users-accounts-organizations/managing-users.md#create-an-administrator) to register Kyle and make him an administrator of this instance, and then come back here. 
+   If you just created the virtual instance, it has no user accounts. Create one for Kyle Klein so he can administer this instance as well. Follow the steps in [Create an Administrator](../../liferay-administrator/users-accounts-organizations/managing-users.md#create-an-administrator) to register Kyle and make him an administrator of this instance, and then come back here.
 
 ## Create a Site Template
 
@@ -25,23 +25,19 @@ Once in the virtual instance, you can create a site template to be used to creat
 
    | Field                                                                        | Information                                                                               |
    |:-----------------------------------------------------------------------------|:------------------------------------------------------------------------------------------|
-   | Name                                                                         | Glance and B2B Site Template                                                              |
-   | Description                                                                  | This site template is the base for the Glance intranet site and the B2B site for Clarity. |
+   | Name                                                                         | Glance and Clarity B2B Site Template                                                              |
+   | Description                                                                  | This site template is the base for the Glance intranet site and the Clarity B2B site. |
    | Active                                                                       | On                                                                                        |
    | Allow site administrators to modify pages associated with this site template | On                                                                                        |
    | Ready for Propagation                                                        | On                                                                                        |
 
    ![Create a site template and name it Glance and B2B Site Template.](./creating-a-site-template-and-uploading-files/images/02.png)
 
-<!-- Are there permissions to be given to users? -->
-
-<!-- Keep it simple for now; add permissions later. -Rich --> 
-
 1. Once you create the site template, click on its *Name*. The site template opens in a new tab. You can start editing the template now.
 
 ## Change the Site's Theme
 
-For this exercise, use the Dialect theme with a style book designed for this theme. 
+For this exercise, use the Dialect theme with a style book designed for this theme.
 
 1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)) and select *Site Builder* &rarr; *Pages* (1).
 

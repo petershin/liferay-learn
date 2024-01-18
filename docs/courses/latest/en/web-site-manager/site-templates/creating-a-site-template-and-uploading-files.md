@@ -35,20 +35,6 @@ Once in the virtual instance, you can create a site template to be used to creat
 
 1. Once you create the site template, click on its *Name*. The site template opens in a new tab. You can start editing the template now.
 
-## Change the Site's Theme
-
-For this exercise, use the Dialect theme with a style book designed for this theme.
-
-1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)) and select *Site Builder* &rarr; *Pages* (1).
-
-1. Click *Options* (![Options icon](../../images/icon-options.png)) and choose *Configuration*.
-
-1. Under Theme, click *Change Current Theme* and select Dialect.
-
-1. Save the alteration by scrolling to the end of the page and clicking *Save*.
-
-![Navigate to the Pages app and change the site's theme.](./creating-a-site-template-and-uploading-files/images/03.png)
-
 ## Import Resources
 
 1. Download the [resources for this exercise](./liferay-h2a2.zip).
@@ -65,20 +51,6 @@ For this exercise, use the Dialect theme with a style book designed for this the
 
    This .zip file includes elements that you'll use to create your site template (e.g. images, custom fragments, and custom compositions).
 
-## Import the Style Book
-
-1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)) and select *Design* &rarr; *Style Books* (1).
-
-1. Click *Options* (![Options icon](../../images/icon-options.png)) and choose *Import*.
-
-1. In the Import modal, click *Choose File*, select the `01-glance-style-book.zip` file, and click *Import*.
-
-   You can also drag and drop the file into the modal.
-
-1. In the Style Books app page, click *Actions* (![Actions icon](../../images/icon-actions.png)) in your Glance Style Book card and choose *Mark as Default*.
-
-The style book is now in place. Use it to standardize your site's appearance.
-
 ### Import Images
 
 1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)) and select *Content & Data* &rarr; *Documents and Media* (1).
@@ -87,31 +59,31 @@ The style book is now in place. Use it to standardize your site's appearance.
 
 1. In the Export/Import modal, select the *Import* tab.
 
-1. Click *Select File* and select the `02-glance-images.lar` file &rarr; click *Continue*.
+1. Click *Select File* and select the `01-glance-images.lar` file &rarr; click *Continue*.
 
    You can also drag and drop the file into the modal.
 
-   ![Import the documents and media .lar file.](./creating-a-site-template-and-uploading-files/images/04.png)
+   ![Import the documents and media .lar file.](./creating-a-site-template-and-uploading-files/images/03.png)
 
 1. Use the default configurations and click *Import*. Once the process is finished, close the modal.
 
 You can use the imported images throughout the site template now.
 
-### Import Fragments and Compositions
+### Import Compositions
 
 1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)) and select *Design* &rarr; *Fragments* (1).
 
 1. Next to Fragment Sets, Click *Actions* (![Actions icon](../../images/icon-actions.png)) &rarr; *Import* (2).
 
-   ![Import the custom fragments and compositions.](./creating-a-site-template-and-uploading-files/images/05.png)
+   ![Import the custom compositions.](./creating-a-site-template-and-uploading-files/images/04.png)
 
-1. Click *Select File* and select the `03-glance-custom-fragments-and-compositions.zip` file &rarr; *Import*.
+1. Click *Select File* and select the `02-glance-compositions.zip` file &rarr; *Import*.
 
 1. Once the process is finished, click *Done*.
 
-You can use the custom fragments and compositions throughout the site template now.
+You can use the custom compositions throughout the site template now.
 
-The rest of the files are used in future lessons.
+The rest of the files will be used in future lessons.
 
 Next, you'll [create the master page template.](./creating-the-master-page-template.md)
 

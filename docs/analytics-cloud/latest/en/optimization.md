@@ -7,9 +7,6 @@ taxonomy-category-names:
 - Personalization
 - A/B Testing
 - User Interests and Content Recommendations
-- Static and Dynamic User Segments
-- Cloud
-- Analytics Cloud Administration
 - Liferay Self-Hosted
 - Liferay SaaS
 - Liferay PaaS

@@ -1,11 +1,8 @@
 ---
 uuid: 78e4d165-d44a-404f-8dda-280be29f745a
 - Personalization
-- A/B Testing
 - User Interests and Content Recommendations
 - Static and Dynamic User Segments
-- Cloud
-- Analytics Cloud Administration
 - Liferay Self-Hosted
 - Liferay SaaS
 - Liferay PaaS

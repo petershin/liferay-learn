@@ -1,4 +1,8 @@
 ---
+taxonomy-category-names:
+- Cloud
+- Cloud Platform Administration
+- Liferay PaaS
 uuid: 8e0d0a35-6a6a-4655-a4fd-d1b44821b4f5
 ---
 # Configuring Your GitHub Repository

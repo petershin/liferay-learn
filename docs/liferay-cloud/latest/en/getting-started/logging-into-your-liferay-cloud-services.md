@@ -1,4 +1,8 @@
 ---
+taxonomy-category-names:
+- Cloud
+- Cloud Platform Administration
+- Liferay PaaS
 uuid: eac9c112-377f-4106-8800-041f96c3de1f
 ---
 # Logging into Your Liferay Cloud Services

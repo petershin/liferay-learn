@@ -1,4 +1,8 @@
 ---
+taxonomy-category-names:
+- Cloud
+- Cloud Platform Administration
+- Liferay PaaS
 toc:
   - ./getting-started/initial-setup-overview.md
   - ./getting-started/development-requirements.md

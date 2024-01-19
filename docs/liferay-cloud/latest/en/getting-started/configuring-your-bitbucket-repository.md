@@ -1,4 +1,8 @@
 ---
+taxonomy-category-names:
+- Cloud
+- Cloud Platform Administration
+- Liferay PaaS
 uuid: 4cc9c375-56da-4f38-83d3-7f0c9a58840c
 ---
 # Configuring Your Bitbucket Repository

@@ -1,4 +1,8 @@
 ---
+taxonomy-category-names:
+- Cloud
+- Cloud Platform Administration
+- Liferay PaaS
 uuid: 277bf5b8-1723-45f0-aa7e-b0141e2181d3
 ---
 # Development Requirements

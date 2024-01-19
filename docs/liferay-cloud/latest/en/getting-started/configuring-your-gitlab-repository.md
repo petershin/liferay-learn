@@ -1,4 +1,8 @@
 ---
+taxonomy-category-names:
+- Cloud
+- Cloud Platform Administration
+- Liferay PaaS
 uuid: 7490962d-e315-41bc-8a39-1f93ea03d69e
 ---
 # Configuring Your GitLab Repository

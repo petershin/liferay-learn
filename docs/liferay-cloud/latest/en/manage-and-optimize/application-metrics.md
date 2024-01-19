@@ -1,4 +1,9 @@
 ---
+taxonomy-category-names:
+- Cloud
+- Cloud Platform Administration
+- Cloud Platform Services
+- Liferay PaaS
 uuid: 79062d46-c0e5-4b76-9328-d41e94d115fd
 ---
 # Application Metrics

@@ -6,6 +6,10 @@ toc:
   - ./manage-and-optimize/quotas.md
   - ./manage-and-optimize/environment-teams-and-roles.md
   - ./manage-and-optimize/team-activities.md
+taxonomy-category-names:
+- Cloud
+- Cloud Platform Administration
+- Liferay PaaS
 uuid: 08eb56ca-0bb2-4383-8834-693c2a996cec
 ---
 # Manage and Optimize

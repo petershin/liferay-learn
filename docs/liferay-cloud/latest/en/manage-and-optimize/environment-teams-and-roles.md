@@ -1,4 +1,8 @@
 ---
+taxonomy-category-names:
+- Cloud
+- Cloud Platform Administration
+- Liferay PaaS
 uuid: 4a0b1b87-a50c-4d82-97ed-68f46190d9a5
 ---
 # Environment Teams and Roles

@@ -1,4 +1,8 @@
 ---
+taxonomy-category-names:
+- Cloud
+- Cloud Platform Administration
+- Liferay PaaS
 uuid: 0a8d12de-8c80-4954-bcc1-9f014120e043
 ---
 # Quotas

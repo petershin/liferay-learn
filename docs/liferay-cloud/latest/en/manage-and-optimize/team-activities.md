@@ -1,4 +1,8 @@
 ---
+taxonomy-category-names:
+- Cloud
+- Cloud Platform Administration
+- Liferay PaaS
 uuid: d6ffd6f9-4bcb-462b-8907-292a91843f90
 ---
 # Team Activities

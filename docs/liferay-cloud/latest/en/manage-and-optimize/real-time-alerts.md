@@ -1,4 +1,8 @@
 ---
+taxonomy-category-names:
+- Cloud
+- Cloud Platform Administration
+- Liferay PaaS
 uuid: c2b99308-d48e-44cc-88cb-fa619178b7b1
 ---
 # Real-Time Alerts

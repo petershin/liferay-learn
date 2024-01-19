@@ -1,4 +1,9 @@
 ---
+taxonomy-category-names:
+- Cloud
+- Cloud Platform Administration
+- Cloud Platform Services
+- Liferay PaaS
 uuid: f5e2b006-daf3-4775-9182-0d9455a63b38
 ---
 # Auto-scaling

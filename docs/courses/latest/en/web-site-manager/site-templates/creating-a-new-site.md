@@ -9,13 +9,36 @@ But, before you do that, fix the navigation menu in the footer used in the Main 
 
 ## Creating the Navigation Menu and Configuring the Menu Display
 
+Before we start, create some blank pages or populate them, if you prefer.
+
+Create the following pages: Profile, Manage Account, FAQ, Knowledge Base, and Resources. You'll use those pages to create your navigation menus.
+
+Now, let's create the navigation menus.
+
 1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)) and select *Site Builder* &rarr; *Navigation Menus*.
 
 1. Click *Add* (![Add icon](../../images/icon-add.png)) and name it `The Company Navigation`.
 
-1. Click *Add* and select *Page*. In the modal that opens, select the About Us, Contact Us, and Careers pages. Click *Select*.
+1. Click *Add* and select *Page*. In the modal that opens, select the pages you created during this module: About Us, Contact Us, and Careers. Click *Select*.
 
-Once the navigation menu is created, you can configure the menu display in the Main page template.
+Create the other navigation menus. One is called `My Account Navigation` and it contains the Profile and the Manage Account pages. The other is called `Help Center Navigation` and it contains the FAQ, Knowledge Base, and Resources pages.
+
+The next step is to create a primary navigation to use in the menu located in the header:
+
+1. Create a navigation menu and call it `Primary Navigation`.
+
+1. Click *Add* and, instead of selecting Page, select Submenu. Name it `My Account`. Add two more submenus and name them `The Company` and `Help Center`.
+
+1. Click *Actions* (![Actions icon](../../images/icon-actions.png)) beside My Account and select *Add Child* &rarr; Page. Select the Profile and the Manage Account pages.
+
+1. Repeat the process with the other submenus. Add the children pages as you created the other navigation menus.
+
+   The Company: About Us, Contact Us, and Careers.
+   Help Center: FAQ, Knowledge Base, and Resources.
+
+   ![Create a Primary navigation menu](./creating-a-new-site/images/01.gif)
+
+Once the navigation menus are created, you can configure the menu displays in the Main page template.
 
 1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)) and select *Design* &rarr; *Page Templates*.
 
@@ -23,19 +46,23 @@ Once the navigation menu is created, you can configure the menu display in the M
 
    You can also click *Actions* (![Action icon](../../images/icon-actions.png)) and select *Edit*.
 
-1. In the Menu Display under Company, click *Options* &rarr; *Configuration*
+1. In the Menu Display under My Account, click *Options* &rarr; *Configuration*
 
-1. Select *Choose Menu* and click *Select*. Choose Company Navigation.
+1. Select *Choose Menu* and click *Select*. Choose *My Account Navigation*.
 
 1. Under Display Template, choose *Pills Stacked* and click *Save*.
 
-The menu display shows the navigation menu with the About Us, Contact Us, and Careers pages.
+The menu display shows the navigation menu with the Profile and Manage Account pages.
 
-If you want, you can create and publish blank pages (or you can practice and populate them) and other navigation menus to set the menu displays under My Account and Help Center.
+Configure the navigation menus in the other menu displays just like in the video below:
 
-In this example, blank pages were created and added to the respective navigation menus.
+![Configure the Menu Displays in your master page.](./creating-a-new-site/images/02.gif)
 
-![Configure the Menu Display fragment](./creating-a-new-site/images/01.gif)
+Your menus should look like this once you are done:
+
+![The Main master page with the menu displays configured.](./creating-a-new-site/images/03.png)
+
+The next step is to create a site based on the template you have just finished.
 
 ## Creating a Site Based on the Template
 
@@ -43,7 +70,7 @@ In this example, blank pages were created and added to the respective navigation
 
 1. Click *Add* (![Add icon](../../images/icon-add.png)). Select the *Custom Site Templates* tab and click *Glance and B2B Site Template*. Name your new site `Glance` and click *Add*.
 
-   ![Create a new site based on the site template you created.](./creating-a-new-site/images/02.png)
+   ![Create a new site based on the site template you created.](./creating-a-new-site/images/04.png)
 
 1. Change the theme of your new site to the Dialect theme.
 

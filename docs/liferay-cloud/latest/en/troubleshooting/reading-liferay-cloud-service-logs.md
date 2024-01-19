@@ -1,6 +1,7 @@
 ---
 uuid: 214e29d5-25cf-4f48-84c6-6bb9853af7ae
 ---
+
 # Reading Liferay Cloud Service Logs
 
 Environment logs are crucial for diagnosing and resolving technical issues in a project. Liferay Cloud provides a variety of environment logs that users can access and download via the Liferay Cloud console or OS terminal.
@@ -9,11 +10,11 @@ Environment logs are crucial for diagnosing and resolving technical issues in a 
 
 Liferay Cloud provides three types of logs for environment services:
 
-* **Build Logs**: These logs list build information generated as the application boots up. Examples of build information include: when Docker images are pulled from the registry, when deploys are in progress, and when builds are successful.
+- **Build Logs**: These logs list build information generated as the application boots up. Examples of build information include: when Docker images are pulled from the registry, when deploys are in progress, and when builds are successful.
 
-* **Status Logs**: These logs list orchestration layer information from the Kubernetes cluster. Examples of status information include: when images are successfully pulled, when containers are created and started, and when readiness or liveness probes fail.
+- **Status Logs**: These logs list orchestration layer information from the Kubernetes cluster. Examples of status information include: when images are successfully pulled, when containers are created and started, and when readiness or liveness probes fail.
 
-* **Application Logs**: These logs list runtime information generated after the application is running and accessed by users.
+- **Application Logs**: These logs list runtime information generated after the application is running and accessed by users.
 
 ## Log Structure
 
@@ -25,21 +26,21 @@ Jun 29 10:07:46.585 build-214 [webserver-699bf65bfb-4w8pl] [WARNING] 179/170746 
 
 Logs always appear in this format when you download them or [view them from a terminal](#accessing-logs-via-the-terminal). However, if you access logs [via the console](#accessing-logs-via-the-liferay-cloud-console), the structure varies because the columns of information with each log message are customizable.
 
-Many logs in Liferay Cloud have a label (in this example, ``[WARNING]``) that indicates that this message came from Liferay Cloud infrastructure, and not directly from the service's output. Logs can also have labels that come from Liferay Cloud infrastructure but are related to the service, such as ``[LIFERAY]``. Logs that come directly from the service's output have no label.
+Many logs in Liferay Cloud have a label (in this example, `[WARNING]`) that indicates that this message came from Liferay Cloud infrastructure, and not directly from the service's output. Logs can also have labels that come from Liferay Cloud infrastructure but are related to the service, such as `[LIFERAY]`. Logs that come directly from the service's output have no label.
 
 Additionally, these components are always present in any log message in Liferay Cloud:
 
-* The **timestamp**: in this example, `Jun 29 10:07:46.585`.
+- The **timestamp**: in this example, `Jun 29 10:07:46.585`.
 
-* The **build ID**: in this example, `build-214`. This corresponds to the build that the currently deployed version of the service corresponds to. You can match this build ID to the list of builds shown in your project's *Builds* page.
+- The **build ID**: in this example, `build-214`. This corresponds to the build that the currently deployed version of the service corresponds to. You can match this build ID to the list of builds shown in your project's _Builds_ page.
 
-* The **instance ID**: in this example, `[webserver-699bf65bfb-4w8pl]`. This is used to identify which instance of a service a message is related to.
+- The **instance ID**: in this example, `[webserver-699bf65bfb-4w8pl]`. This is used to identify which instance of a service a message is related to.
 
 The instance ID associated with a log message corresponds to one of the instances of your service.
 
-From the Logs page, you can see (and filter by) all of the active instances of a service (such as `liferay`) by filtering to it and then clicking the *Instance* drop-down menu:
+From the Logs page, you can see (and filter by) all active instances of a service (such as `liferay`) by filtering to it and then clicking the Instance drop-down menu:
 
-![Click on the instances dropdown menu to see all of the instances.](./reading-liferay-cloud-service-logs/images/01.png)
+![Click on the instances drop-down menu to see all of the instances.](./reading-liferay-cloud-service-logs/images/01.png)
 
 The format of the instance ID depends on what deployment type (deployment or stateful set) the service is configured as. See [Understanding Deployment Types](../build-and-deploy/understanding-deployment-types.md) for more information.
 
@@ -53,11 +54,11 @@ Jun 29 10:07:57.102 build-214 [liferay-7485669bdd-7ktfl] [LIFERAY] Executing 010
 
 The instance ID for this message (in this example, `[liferay-7485669bdd-7ktfl]`) contains these components:
 
-* The **service name**: in this example, `liferay`.
+- The **service name**: in this example, `liferay`.
 
-* A randomly generated **version ID**: in this example, `7485669bdd`. This corresponds to the version of your service that has been deployed with possible changes. Note that new deployments, changes to environment variables, and even manually restarting the service all generate a new version ID (because a new change may have been made in the configuration).
+- A randomly generated **version ID**: in this example, `7485669bdd`. This corresponds to the version of your service that has been deployed with possible changes. Note that new deployments, changes to environment variables, and even manually restarting the service all generate a new version ID (because a new change may have been made in the configuration).
 
-* A randomly generated **container ID**: in this example, `7ktfl`. Whenever a new container is created (for example, after you deploy a new build and the service restarts), a new container ID is generated because a new container is created each time the service starts up. Note that any restart generates a new container ID, even when the version ID does not change (for example, when a [liveness or readiness probe failure](../troubleshooting/self-healing.md) triggers a restart).
+- A randomly generated **container ID**: in this example, `7ktfl`. Whenever a new container is created (for example, after you deploy a new build and the service restarts), a new container ID is generated because a new container is created each time the service starts up. Note that any restart generates a new container ID, even when the version ID does not change (for example, when a [liveness or readiness probe failure](../troubleshooting/self-healing.md) triggers a restart).
 
 ### Instance ID for Stateful Set Type Logs
 
@@ -69,9 +70,9 @@ Jun 29 07:44:44.676 build-214 [search-0] #  - Creating and Starting rollup jobs 
 
 These are the only components of the `instance ID` for stateful set type services:
 
-*  The **service name**: in this example, `search`.
+- The **service name**: in this example, `search`.
 
-* An iterating (non-random) **node ID**: in this example, `0`. This ID remains the same even after deploying new versions of the service.
+- An iterating (non-random) **node ID**: in this example, `0`. This ID remains the same even after deploying new versions of the service.
 
 The entire instance ID for stateful set type services always remains the same for each node of the service. This allows you to reliably use the same instance ID to identify the node in a cluster with the same [volume](../build-and-deploy/configuring-persistent-file-storage-volumes.md), even after the service has been redeployed.
 
@@ -81,11 +82,11 @@ Follow these steps to access environment service logs via the Liferay Cloud cons
 
 1. Navigate to a project environment.
 
-1. Click on *Logs* in the environment menu.
+1. Click on _Logs_ in the environment menu.
 
 View application, status, and build logs across all environment services or [filter results](#searching-and-filtering-logs) using the drop-down menus.
 
-To download logs, click the *Download Logs* button.
+To download logs, click the _Download Logs_ button.
 
 ![View environment logs form the Logs page.](./reading-liferay-cloud-service-logs/images/02.png)
 
@@ -103,7 +104,7 @@ To filter by a date range, use the date picker at the top-right corner. You cann
 
 ![Use the date picker to see logs from a specific date range.](./reading-liferay-cloud-service-logs/images/05.png)
 
-You can search the logs for a specific term or regular expression. Select *Term* or *Regex* from the drop-down menu, and then enter your search term or regular expression. Search suggestions appear based on previous searches. Regular expressions use the [RE2 syntax](https://github.com/google/re2/wiki/Syntax).
+You can search the logs for a specific term or regular expression. Select _Term_ or _Regex_ from the drop-down menu, and then enter your search term or regular expression. Search suggestions appear based on previous searches. Regular expressions use the [RE2 syntax](https://github.com/google/re2/wiki/Syntax).
 
 ![Use the search to find logs with specific terms or formats.](./reading-liferay-cloud-service-logs/images/06.png)
 
@@ -131,6 +132,6 @@ lcp log -p <environment-id> -s <service-id>
 
 ## Related Topics
 
-* [Shell Access](./shell-access.md)
-* [Disaster Recovery Overview](./disaster-recovery-overview.md)
-* [Configuring Cross-Region Disaster Recovery](./configuring-cross-region-disaster-recovery.md)
+- [Shell Access](./shell-access.md)
+- [Disaster Recovery Overview](./disaster-recovery-overview.md)
+- [Configuring Cross-Region Disaster Recovery](./configuring-cross-region-disaster-recovery.md)

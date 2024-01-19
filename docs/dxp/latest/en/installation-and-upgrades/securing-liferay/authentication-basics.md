@@ -3,6 +3,7 @@ uuid: f5ccd64e-f615-4141-bbb5-eff00cdcf1ca
 taxonomy-category-names:
 - Platform
 - DXP Configuration
+- Identity Management and Authentication
 - Liferay Self-Hosted
 - Liferay PaaS
 ---

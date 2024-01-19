@@ -52,7 +52,6 @@ Now all web content articles added in the site will go through a review process 
    The button used to say _Publish_, but it changes when workflow is enabled.
 
 The content is in the workflow, marked as _Pending_ in the administrative UI. It's also marked as _Approved_, because the first version of the article, before Rex's recent edits and before workflow was even enabled, is available and published on the FAQs display page. The pending status means that the latest version of the item is unavailable for publication on the display page.
-<!-- TMI? -->
 
 ![Because an approved version of the content is available, the Approved and Pending statuses are displayed for the FAQ.](./using-workflow-with-faqs/images/03.png)
 
@@ -151,3 +150,11 @@ Next, configure the folder to accept only FAQs and configure workflow for the fo
 1. Go to _Site Menu_ (![Site Menu](../../images/icon-product-menu.png)) then click _Configuration_ &rarr; _Workflow_. Disable the site level workflow configuration for web content articles.
 
 Now Clarity is using folder-based web content management, where each folder is configured to accept a certain type of content and use a certain workflow. 
+
+Next: [enable publications and create a publication template for Clarity's special events](./creating-a-publication-template-for-claritys-special-events.md).
+
+## Relevant Concepts
+
+* [Web Content](https://learn.liferay.com/w/dxp/process-automation/workflow/using-workflows/activating-workflow)
+* [Activating Workflow](https://learn.liferay.com/w/dxp/process-automation/workflow/using-workflows/activating-workflow)
+* [Reviewing Assets in a Workflow](https://learn.liferay.com/w/dxp/process-automation/workflow/using-workflows/reviewing-assets)

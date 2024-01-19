@@ -125,24 +125,10 @@ Olivia O'Neal is a publication editor as configured in the template, so she can 
 
 Now the content is ready for the 50th anniversary!
 
-## Workflow and Publications
-<!-- Creating and Reviewing Events in the Publication -->
+Next: [publish the content for the event](./publishing-the-50th-anniversary-content.md)
 
-Goal: show how to make the publication, but also send content within the publication through a review process. Show how Liferay handles these two publishing management scenarios (reviews versus content pushes to prod)
+## Relevant Concepts
 
-Whoever reviews content made or edited in a publication must haver access to the publication to complete their review.
-
-This might be a better article structure, maybe:
-
-Enabling and Creating Publications
-
-Working in Publications (include workflow)
-
-Publishing
-
-Add a workflow for events (use single approver again for speed, but maybe we should show how the instance admin can upload a custom definition?)
-
-Have Rex Randle create the new event within the workflow and the publication.
-
-Olivia approves the event
-
+* [Making and Publishing Changes](https://learn.liferay.com/w/dxp/site-building/publishing-tools/publications/making-and-publishing-changes)
+* [Using Workflow with Publications](https://learn.liferay.com/w/dxp/site-building/publishing-tools/publications/using-workflow-with-publications)
+* [Resolving Conflicts](https://learn.liferay.com/w/dxp/site-building/publishing-tools/publications/resolving-conflicts)

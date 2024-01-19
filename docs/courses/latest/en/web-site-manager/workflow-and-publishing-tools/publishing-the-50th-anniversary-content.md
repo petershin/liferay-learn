@@ -21,3 +21,13 @@ Log in as Preston Palmer again. He's the publication administrator and the one w
 
    ![Clarity's 50th anniversary event is live.](./publishing-the-50th-anniversary-content/images/03.png)
 
+Congratulations! You’ve finished this module on workflow and publishing tools. The 50th anniversary has been properly celebrated with some special content. It's time to begin thinking about Clarity's next site for their retail portal, called Glance.
+
+Module Five: [Site Templates](../site-templates.md).
+
+## Relevant Concepts
+
+* [Publications](https://learn.liferay.com/w/dxp/site-building/publishing-tools/publications)
+* [Publishing Tools](https://learn.liferay.com/w/dxp/site-building/publishing-tools)
+* [Workflow](https://learn.liferay.com/w/dxp/process-automation/workflow)
+

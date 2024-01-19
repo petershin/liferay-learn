@@ -8,33 +8,28 @@ uuid: 2784080b-e770-4715-b844-7fcca38e50b0
 ---
 # Workflow and Publishing Tools
 
-| User           | Job Title                  | Role                   | Function                                                                                       |
-|----------------|----------------------------|------------------------|------------------------------------------------------------------------------------------------|
-| Rex Randle     | Custom Advocacy Specialist | Content Creator        | Rex receives customer emails and turns them into FAQ entries.                                  |
-| Olivia O'Neal  | Content Manager            | Site Content Reviewer  | Olivia reviews Rex's FAQ submissions.                                                          |
-| Preston Palmer | Site Administrator         | Site Administrator     | Preston configures workflow at the site level.                                                 |
-| Kyle Klein     | IT Manager                 | Instance Administrator | Kyle manages workflows at the instance level (e.g., importing or creating workflow processes). |
-<!-- We'll need a Content Manager role for Rex and Olivia, to access and create Web Content Articles and all the site stuff, pages, fragments, etc. -->
+Now that Clarity's site is up and running and even has some content, you can discover some of Liferay's publishing tools, [workflow](https://learn.liferay.com/w/dxp/process-automation/workflow) and [publications](https://learn.liferay.com/w/dxp/site-building/publishing-tools/publications).
 
-Define workflow, explain the single approver, show a diagram view of it
+When finished, several Clarity users will have collaborated to create a push of approved content to the live site, in support of its 50th anniversary promotional event. Initially, the FAQs worked on by Rex Randle, Clarity's Customer Advocacy Specialist, will be configured to use the Single Approver workflow process, so that they can be reviewed by the Content Manager, Olivia O'Neal, before publication on the site. After this, the 50th anniversary content will be prepared and published to the live site in a publication process backed by a publications template.
 
-   Talk about how you can enable workflow at different scopes. Clarity just needs it at the site scope. However, it will apply to all structures, so maybe we don't want this. We could use folders perhaps? Is there a way to restrict a structure to a folder? We'd need that. You can also get the structure ID/key in the workflow and review only if it matches the FAQ key, but that's probably not good since it wouldn't work in LXC. Anyway, we should address it.
+## Workflow
 
-Define Publications
+Liferay includes a workflow engine. With it, users can configure review and approval processes for content such as blogs, web content, or wikis so users can collaborate to make content publishable. The Workflow application makes it possible to define any number of business processes/workflows, deploy them, and manage them through a user interface. Workflow processes can integrate with Users, Groups, and Roles as reviewers and approvers. After you defined your review process, you can select which types of content require a review process before publication.
 
-Give some information about how they interact
+![Workflow is used to ensure all content is reviewed and approved.](./workflow-and-publishing-tools/using-workflow-with-faqs/images/05.png)
 
-Let's Go!
+## Publications
 
-Clarity's public site is in place, with some content already added. However, there are blogs to be written, events to be created, and FAQs to add in the site. Clarity wants to protect its brand by ensuring only properly reviewed content is published in the site. Its blogs, for example, should be written by experts on the topic (Scientist Sam?), then reviewed by the marketing manager, (Molly Markets?), before publication.
+Use publications to develop, track, and publish changes across your instance. Liferay tracks which version of your content is displayed on your live sites, and users create separate publications to group their changes into publishable blocks. Publications are most useful for collaborating on important pushes of related content into your production environment all at once.
 
-In addition, the design team (is it the design team) wants to preview the site with all the new content before putting it in front of the public. Therefore, all approved content will be added to a _publication_, where it can be vetted by the design team, and then published all at once. Clarity wants to do this weekly.
+![You can schedule publication events or publish immediately.](./workflow-and-publishing-tools/publishing-the-50th-anniversary-content/images/02.png)
 
-Is there a way to stage stuff in a publication but let other stuff be approved as it's ready, like blogs? Maybe we'd do that.
+## Publications and Workflow
 
-Workflow reviewers, if working in a publication, need access not just to the content but also to the publication.
+Workflow is used for structured review processes, while publications are suited for preparing content for discrete content pushes. Workflow can be used inside a publication, and that's exactly what Clarity will do, by workflow enabling the event structure so that all new events are reviewed and approved. Once all the content (inside and outside the workflow) is in place, the publication process is used to push the content into the live site.
 
-If we're using Blogs here for workflow, when should we configure the Blog page. We create it in Creating Pages but leave it blank.
+![Workflow and publications can be used in tandem.](./workflow-and-publishing-tools/working-with-the-50th-anniversary-publication/images/05.png)
 
-Configure the Blogs Page
-Or we could do this for FAQ? Then we'll show the diff functionality
+Ready to explore Liferay's publishing tools?
+
+[Let's Go!](./workflow-and-publishing-tools/using-workflow-with-faqs.md)

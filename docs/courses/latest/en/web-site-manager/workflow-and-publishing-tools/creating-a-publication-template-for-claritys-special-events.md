@@ -70,3 +70,12 @@ You can jump right in and create the publication, but Clarity is likely to have 
 
 ![The publication template is ready for use.](./creating-a-publication-template-for-claritys-special-events/images/05.png)
 
+Clarity's special events template is in place.
+
+Next: [create the publication and make the necessary content edits](./working-with-the-50th-anniversary-publication.md).
+
+## Relevant Concepts
+
+* [Enabling Publications](https://learn.liferay.com/w/dxp/site-building/publishing-tools/publications/enabling-publications)
+* [Using Publication Templates](https://learn.liferay.com/w/dxp/site-building/publishing-tools/publications/using-publication-templates)
+* [Collaborating on Publications](https://learn.liferay.com/w/dxp/site-building/publishing-tools/publications/collaborating-on-publications)

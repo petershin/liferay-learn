@@ -1,5 +1,10 @@
 ---
 uuid: 451a029f-4b51-4f0b-ad9f-5cc5b61b1321
+- Cloud
+- Analytics Cloud Administration
+- Liferay Self-Hosted
+- Liferay SaaS
+- Liferay PaaS
 ---
 # Multi-Factor Authentication
 

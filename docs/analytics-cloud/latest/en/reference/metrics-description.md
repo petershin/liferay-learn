@@ -1,5 +1,11 @@
 ---
 uuid: 5dd686af-6ef7-43f3-960e-7630d26ded8a
+taxonomy-category-names:
+- Sites
+- Site Analytics
+- Liferay Self-Hosted
+- Liferay SaaS
+- Liferay PaaS
 ---
 # Metrics Description
 

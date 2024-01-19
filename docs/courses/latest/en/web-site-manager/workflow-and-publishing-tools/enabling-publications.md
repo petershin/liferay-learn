@@ -3,6 +3,10 @@ uuid: b820458c-bf9e-4242-b8f2-fad03afe1f75
 ---
 # Creating Publications for Clarity's Special Events
 
+Kyle Klein enables Publications, gives the users the right permissions (Content Manager Role), and then Preston Palmer creates the 50th Anniversary publication.
+
+Within the new publication, Rex Randle (must have the Content Manager role too, I guess) creates the new event (make sure it's under workflow, which currently is for FAQs). Olivia O'Neal approves the event, makes the change to the fragment on the master page, and adds the item to the navigation menu. 
+
 <!-- Duplicates the reference doc title, so make this more specific, like Creating Publications for Clarity's Special Events -->
 
 Clarity wants to celebrate its 50th anniversary with some special frames available only for a limited time. They must prepare content across the site to announce the event and show off the frames. This will result in a one-time content push for releasing the frames and marketing materials all at once. For this kind of dedicated content push, where multiple content creators can work together until the final version is ready, use [Publications](https://learn.liferay.com/en/w/dxp/site-building/publishing-tools/publications).
@@ -57,7 +61,7 @@ You can jump right in and create the publication, but Clarity is likely to have 
 
    - Administrator: Preston Palmer
    - Editor: Olivia O'Neal
-   - Viewer: Rex Randle
+   - Editor: Rex Randle
 
    ![Preston, Olivia, and Rex are default users in the publication template.](./enabling-publications/images/05.png)
 
@@ -124,7 +128,110 @@ Next sign in as Olivia O'Neal, a publication editor as configured in the templat
 
 Now the content is ready for the 50th anniversary!
 
-<!-- We could have Rex Randle go in and comment on the change list? He's just a viewer so can't actually work on the publication -->
+# Workflow and Publications
+<!-- Creating and Reviewing Events in the Publication -->
+
+Goal: show how to make the publication, but also send content within the publication through a review process. Show how Liferay handles these two publishing management scenarios (reviews versus content pushes to prod)
+
+Whoever reviews content made or edited in a publication must haver access to the publication to complete their review.
+
+This might be a better article structure, maybe:
+
+Enabling and Creating Publications
+
+Working in Publications (include workflow)
+
+Publishing
+
+Add a workflow for events (use single approver again for speed, but maybe we should show how the instance admin can upload a custom definition?)
+
+Have Rex Randle create the new event within the workflow and the publication.
+
+Olivia approves the event
+
+1. Log in as Preston Palmer, the site administrator.
+
+   **Email Address:** preston.palmer@liferay.com
+
+   **Password:** learn
+
+1. Open the _Site Menu_ (![Site Menu](../../images/icon-product-menu.png)) then click _Content & Data_ &rarr; _Web Content_.
+
+1. Add a web content folder for Clarity's events content.
+
+1. Move any existing events into the folder.
+
+1. Configure the folder to only allow events and to use the single approver workflow. See [the previous lesson](./using-workflow-with-faqs.md) for details if needed.
+
+   Now events are configured like FAQs were configured in the last lesson.
+
+   <!-- If these are all happening in the publication we should do this before we enable publications, when we do it for FAQs -->
+
+Sign out, then sign in with Rex Randle. Rex has web content creation permission due to his job, Customer Advocacy Specialist. H's also able to create the 50th anniversary event:
+
+1. Open the _Site Menu_ (![Site Menu](../../images/icon-product-menu.png)) then click _Content & Data_ &rarr; _Web Content_, and click the _Events_ folder.
+
+1. Click _New_ &rarr; _Event_ and specify
+
+   * Title: Clarity is Turning 50!
+   * Summary: Clarity is turning 50, so let's celebrate!
+   * Body: Check out our limited time only frames! Clarity turned 50, and we're excited to offer these frames while they last.
+   * Banner Image: <!-- We need one -->
+
+1. Click _Submit for Workflow_.
+
+1. Log in with Preston Palmer, the publication administrator. Open the _Review Changes_ screen from the publications bar, and click _Publish_.
+
+   ![The web content for the 50th anniversary event is pending in the workflow.](./enabling-publications/images/14.png)
+
+1. Click _Publish_.
+
+   ![The changes cannot be published until the workflow items are resolved.](./enabling-publications/images/15.png)
+
+   You cannot publish the changes until the items in the workflow are first reviewed.
+
+The content manager, Olivia O'Neal, must review Rex's new content within the publication.
+
+1. Log in as Olivia O'Neal.
+
+   **Email Address:** olivia.oneal@liferay.com
+
+   **Password:** learn
+
+   <!--Our custom navigation menu doesn't have my workflow tasks. We'll need to add it or some other way (personal page with link or that uses the regular personal menu? -->
+   <!-- Enhance the fragment: if the user has the permissions XXX, show the My Workflow Tasks link in the menu-->
+
+1. Go to the review screen for the publication, click the user avatar and select _My Workflow Tasks_.
+
+   ![Workflow reviewers use My Workflow Tasks to manage workflow items.](./enabling-publications/images/16.png)
+
+   All workflow tasks assigned directly to a user are listed in the My Workflow Task widget's Assigned to Me tab.
+
+1. Click _Assigned to My Roles_.
+
+   Workflow tasks that Olivia O'Neal can claim because she's part of a role defined in the workflow appear here. 
+
+1. Click the asset's _Actions_ button (![Actions](../../images/icon-actions.png)) and select _Assign to Me_.
+
+   ![Assign the content to Olivia O'Neal.](./using-workflow-with-faqs/images/04.png)
+
+1. Enter the comment _I'll take this one--Olivia_ in the Comment text field, then click _Done_.
+
+   Now the task appears in Assigned to Me.
+
+Once the task is assigned the content review proceeds:
+
+1. Click the name of the pending _Clarity is Turning 50!_ item in My Workflow Tasks. A preview appears, with the review status.
+
+1. Click _Preview_ (![Preview](../../images/icon-preview.png)) to see the event:
+
+   ![Preview the content before approving.](./enabling-publications/images/17.png)
+
+1. Click the back arrow, then click _Actions_ (![Actions](../../images/icon-actions.png)) and select _Approve_.
+
+1. Enter the comment _Looks good!_ and click _Done_.
+
+Since the submission is approved and there is only one reviewer in the Single Approver workflow, the task is moved to the Completed section of the Assigned to Me tab. The event can now be published with the other content in support of the 50th anniversary event.
 
 ## Publishing the 50th Anniversary Content
 
@@ -143,3 +250,7 @@ Log in as Preston Palmer again. He's the publication administrator and the one w
 1. Go to the home page and verify the content is updated:
 
    ![Clarity's 50th anniversary event is live.](./enabling-publications/images/13.png)
+
+<!-- So, how do you undo the publication's changes? Once it's live that's it, right? Maybe it's not that useful for time-boxed events after all? -->
+
+

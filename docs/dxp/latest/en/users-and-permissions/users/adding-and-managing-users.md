@@ -65,6 +65,9 @@ Removing users is a two-step process for several reasons:
 
 For these and more reasons, you must first *deactivate* a user before *deleting* them.
 
+!!! note
+    A user with the `Delete` permission can activate, deactivate, and delete users. Starting from Liferay DXP 2023.Q4+/Portal 7.4 GA98+, two new permissions, `Activate` and `Deactivate`, have been added to give more granular control over who can activate and deactivate other users.
+
 ### Deactivating Users
 
 Deactivating a user prevents the user from logging in, but preserves the user. You can toggle between active and inactive users in the users view. If all the users are active, this filtering option doesn't appear.

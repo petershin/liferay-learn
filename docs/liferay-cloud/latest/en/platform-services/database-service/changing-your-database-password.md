@@ -1,4 +1,9 @@
 ---
+taxonomy-category-names:
+- Cloud
+- Cloud Platform Services
+- Cloud Platform Administration
+- Liferay PaaS
 uuid: 792fe30d-65cb-4c3e-8ea6-a97cde3dc4cd
 ---
 # Changing Your Database Password

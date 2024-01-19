@@ -3,6 +3,10 @@ toc:
   - ./backup-service/backup-service-overview.md
   - ./backup-service/downloading-and-uploading-backups.md
   - ./backup-service/restoring-data-from-a-backup.md
+taxonomy-category-names:
+- Cloud
+- Cloud Platform Services
+- Liferay PaaS
 uuid: 310e496c-44fc-417e-b75b-fecc95a003f2
 ---
 # Backup Service

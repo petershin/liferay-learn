@@ -1,4 +1,8 @@
 ---
+taxonomy-category-names:
+- Cloud
+- Cloud Platform Services
+- Liferay PaaS
 uuid: 06ef4848-7a9b-4281-92e6-f145c80fd215
 ---
 # Downloading and Uploading Backups

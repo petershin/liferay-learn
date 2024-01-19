@@ -1,4 +1,8 @@
 ---
+taxonomy-category-names:
+- Cloud
+- Cloud Platform Services
+- Liferay PaaS
 uuid: 5390699e-f4c8-4e8c-a3ac-1347298fc209
 ---
 # Search Service (Elasticsearch)

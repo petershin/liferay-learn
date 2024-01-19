@@ -1,4 +1,8 @@
 ---
+taxonomy-category-names:
+- Cloud
+- Cloud Platform Services
+- Liferay PaaS
 uuid: b323c5f9-5ba1-4468-8b8c-5c16c36b3078
 ---
 # Restoring Data from a Backup

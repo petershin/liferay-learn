@@ -1,4 +1,8 @@
 ---
+taxonomy-category-names:
+- Cloud
+- Cloud Platform Services
+- Liferay PaaS
 uuid: f7f6cc00-f0b7-4f30-9599-96cd842e7d18
 ---
 # Database Service (MySQL)

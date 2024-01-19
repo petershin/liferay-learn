@@ -1,4 +1,8 @@
 ---
+taxonomy-category-names:
+- Cloud
+- Cloud Platform Services
+- Liferay PaaS
 uuid: 00bb067c-b489-4ebd-9ba2-767303b21401
 ---
 # Web Server Service (Nginx)

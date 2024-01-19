@@ -3,6 +3,13 @@ toc:
   - >-
     ./apis-with-rest-builder/producing-and-implementing-apis-with-rest-builder.md
 uuid: 1cd3cf62-1959-472f-a21f-ee5293e91c54
+taxonomy-category-names:
+- Platform
+- Multi-Channel Experiences (Headless Delivery)
+- API Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # APIs with REST Builder
 

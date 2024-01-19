@@ -1,5 +1,12 @@
 ---
 uuid: 17432a1c-b6fa-438a-b8bc-68be9d678ab9
+taxonomy-category-names:
+- Platform
+- Multi-Channel Experiences (Headless Delivery)
+- Identity Management and Authentication
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Using OAuth2 to Authorize Users
 

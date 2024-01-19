@@ -1,5 +1,12 @@
 ---
 uuid: 8f6bab5b-dfbf-4f29-a9a8-4e03f0873ecf
+taxonomy-category-names:
+- Platform
+- Multi-Channel Experiences (Headless Delivery)
+- API Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Making Unauthenticated Requests
 

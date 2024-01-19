@@ -10,6 +10,13 @@ toc:
   - ./consuming-apis/using-external-reference-codes.md
   - ./consuming-apis/api-headers-reference.md
 uuid: 31e2f6fc-5394-4d53-bc3d-d098eda6adb5
+taxonomy-category-names:
+- Platform
+- Multi-Channel Experiences (Headless Delivery)
+- API Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Consuming APIs
 

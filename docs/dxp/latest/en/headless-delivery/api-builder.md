@@ -1,5 +1,12 @@
 ---
 uuid: b93373b0-493b-4aa6-96f1-4809d4ea5567
+taxonomy-category-names:
+- Platform
+- Multi-Channel Experiences (Headless Delivery)
+- API Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # API Builder
 

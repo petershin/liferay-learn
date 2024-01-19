@@ -1,5 +1,11 @@
 ---
 uuid: edc2986a-e270-4064-ac4a-2b7109745b74
+taxonomy-category-names:
+- Platform
+- Multi-Channel Experiences (Headless Delivery)
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Data Migration Center
 

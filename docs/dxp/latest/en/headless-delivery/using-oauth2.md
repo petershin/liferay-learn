@@ -5,6 +5,13 @@ toc:
   - ./using-oauth2/oauth2-scopes.md
   - ./using-oauth2/using-oauth2-to-authorize-users.md
 uuid: 49b73bad-0882-42c4-a5b6-42b0f1dd6e74
+taxonomy-category-names:
+- Platform
+- Multi-Channel Experiences (Headless Delivery)
+- Identity Management and Authentication
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Using OAuth 2.0
 

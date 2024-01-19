@@ -1,5 +1,11 @@
 ---
 uuid: 9ad8032d-4264-4f26-8ac3-b09b3ee2ffad
+taxonomy-category-names:
+- Platform
+- Multi-Channel Experiences (Headless Delivery)
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Using Liferay as a Headless Platform
 

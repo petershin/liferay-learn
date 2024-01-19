@@ -1,5 +1,12 @@
 ---
 uuid: 6591c565-168f-4ba3-8a17-a2145f238291
+taxonomy-category-names:
+- Platform
+- Multi-Channel Experiences (Headless Delivery)
+- API Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Consuming GraphQL APIs
 

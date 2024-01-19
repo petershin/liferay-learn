@@ -1,5 +1,12 @@
 ---
 uuid: a183700b-eb36-4394-9874-f73dffb80096
+taxonomy-category-names:
+- Platform
+- Multi-Channel Experiences (Headless Delivery)
+- API Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # API Headers Reference
 

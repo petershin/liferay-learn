@@ -1,5 +1,12 @@
 ---
 uuid: 5f3757e3-af96-4486-bb2f-a5b7f56b62de
+taxonomy-category-names:
+- Platform
+- Multi-Channel Experiences (Headless Delivery)
+- API Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Batch Engine API Basics - Exporting Data
 

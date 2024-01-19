@@ -1,5 +1,12 @@
 ---
 uuid: e5376c2e-4ff3-4412-9977-c5e3499c9a12
+taxonomy-category-names:
+- Platform
+- Multi-Channel Experiences (Headless Delivery)
+- Identity Management and Authentication
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # OAuth 2 Scopes
 

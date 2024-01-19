@@ -1,5 +1,12 @@
 ---
 uuid: 6228294f-761c-4382-9c94-c2d7d0862446
+taxonomy-category-names:
+- Platform
+- Multi-Channel Experiences (Headless Delivery)
+- API Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Producing and Implementing APIs with REST Builder
 

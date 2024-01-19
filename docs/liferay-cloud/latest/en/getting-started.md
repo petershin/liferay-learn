@@ -1,8 +1,4 @@
 ---
-taxonomy-category-names:
-- Cloud
-- Cloud Platform Administration
-- Liferay PaaS
 toc:
   - ./getting-started/initial-setup-overview.md
   - ./getting-started/development-requirements.md
@@ -11,6 +7,10 @@ toc:
   - ./getting-started/configuring-your-gitlab-repository.md
   - ./getting-started/logging-into-your-liferay-cloud-services.md
   - ./getting-started/understanding-liferay-cloud-environments.md
+taxonomy-category-names:
+- Cloud
+- Cloud Platform Administration
+- Liferay PaaS
 uuid: 7197d494-7d76-48f5-ab9b-a8efa9441400
 ---
 # Getting Started

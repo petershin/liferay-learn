@@ -9,6 +9,10 @@ toc:
   - ./migrating-to-liferay-cloud.md
   - ./troubleshooting.md
   - ./reference.md
+taxonomy-category-names:
+- Cloud
+- Cloud Platform Administration
+- Liferay PaaS
 uuid: 7d1a4e73-0b50-465f-99dc-c531c3f3dd25
 ---
 # Liferay Cloud

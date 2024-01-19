@@ -11,9 +11,8 @@ taxonomy-category-names:
 
 Password policies enhance the security of your installation. You can use the default policy that ships with Liferay (modified or as is), or you can create your own policies. Policies can be assigned to users or organizations.
 
-```{note}
-The default password policy gets assigned to all new users. If you want to associate users with a custom password policy, you must assign them as members of that policy.
-```
+!!! note
+    The default password policy gets assigned to all new users. If you want to associate users with a custom password policy, you must assign them as members of that policy.
 
 ## Overview
 
@@ -29,7 +28,7 @@ To change the default policy,
 
 1. Navigate to *Control Panel* &rarr; *Security* &rarr; *Password Policies*.
 
-1. Click the *Actions* (![Actions](../../images/icon-actions.png)) button next to the *Default Password Policy* and click *Edit*.
+1. Click *Actions* (![Actions](../../images/icon-actions.png)) next to the *Default Password Policy* and click *Edit*.
 
    ![Click edit to make changes to the policy.](./configuring-a-password-policy/images/01.png)
 

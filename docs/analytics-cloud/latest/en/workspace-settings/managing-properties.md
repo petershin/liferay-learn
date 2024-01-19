@@ -1,5 +1,11 @@
 ---
 uuid: 27746b9f-4e37-4a0e-8b49-20c4f223442b
+taxonomy-category-names:
+- Cloud
+- Analytics Cloud Administration
+- Liferay Self-Hosted
+- Liferay SaaS
+- Liferay PaaS
 ---
 # Managing Properties
 

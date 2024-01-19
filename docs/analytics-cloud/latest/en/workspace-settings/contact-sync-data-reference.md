@@ -1,5 +1,11 @@
 ---
 uuid: d8c3adfd-711a-486b-b4c6-7d1a27a569d2
+taxonomy-category-names:
+- Cloud
+- Analytics Cloud Administration
+- Liferay Self-Hosted
+- Liferay SaaS
+- Liferay PaaS
 ---
 # Contact Sync Data Reference
 

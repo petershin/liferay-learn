@@ -13,9 +13,8 @@ taxonomy-category-names:
 
 Once you've created an account, you can associate existing users with it manually. Alternatively, you can create and associate users with an account simultaneously using the Account Users application. Here you can also manage all users associated with accounts.
 
-```{note}
-For Liferay 7.4 U20/GA20 and earlier versions, you can only create users for accounts via the Account Users application. You cannot associate users created in the Users and Organizations application with accounts.
-```
+!!! note
+    For Liferay 7.4 U20/GA20 and earlier versions, you can only create users for accounts via the Account Users application. You cannot associate users created in the Users and Organizations application with accounts.
 
 ## Adding Account Users
 
@@ -23,7 +22,7 @@ For Liferay 7.4 U20/GA20 and earlier versions, you can only create users for acc
 
 1. Click *Add* (![Add Button](../../images/icon-add.png)).
 
-1. Select an *account* to associate with user.
+1. Select an *account* to associate with a user.
 
 1. Fill in the necessary information for this new user.
 
@@ -81,9 +80,8 @@ You can invite users to an account by email. Liferay sends an automated invitati
 
 1. (Optional) Enter and select the account roles you want to assign to the user (e.g., Account Administrator, Buyer, Order Manager, etc.).
 
-   ```{tip}
-   Liferay applies selected roles to all emails in the invite entry. If desired, you can click *Add Entry* to create additional invite entries for assigning different roles to emails.
-   ```
+   !!! tip
+       Liferay applies selected roles to all emails in the invite entry. If desired, you can click *Add Entry* to create additional invite entries for assigning different roles to emails.
 
 1. Click *Invite*.
 
@@ -101,21 +99,21 @@ Liferay sends an invitation to the included email addresses. Each recipient can 
 
 The following options are available:
 
-| General Tab | Description |
-| :--- | :--- |
+| General Tab | Description                                     |
+| :---------- | :---------------------------------------------- |
 | Information | Edit or change the user's personal information. |
-| Accounts | View or modify the user's associated accounts. |
-| Password | Add or change the user's password. |
+| Accounts    | View or modify the user's associated accounts.  |
+| Password    | Add or change the user's password.              |
 
-| Contact Tab | Description |
-| :--- | :--- |
-| Addresses | Add or change the user's addresses. |
+| Contact Tab         | Description                                  |
+| :------------------ | :------------------------------------------- |
+| Addresses           | Add or change the user's addresses.          |
 | Contact Information | Add or change the user's contact information |
 
-| Preferences Tab | Description |
-| :--- | :--- |
-| Alert and Announcements Delivery | Change the user's notification settings. |
-| Display Settings | Change the user's time zone and greeting settings. |
+| Preferences Tab                  | Description                                        |
+| :------------------------------- | :------------------------------------------------- |
+| Alert and Announcements Delivery | Change the user's notification settings.           |
+| Display Settings                 | Change the user's time zone and greeting settings. |
 
 ## Deactivating and Deleting an Account User
 

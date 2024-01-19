@@ -7,7 +7,7 @@ toc:
 uuid: 15762235-5051-4cbf-82ad-ddd513651f27
 taxonomy-category-names:
 - Platform
-- Picklists
+- Objects
 - Liferay Self-Hosted
 - Liferay PaaS
 - Liferay SaaS

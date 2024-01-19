@@ -15,7 +15,7 @@ Core user management activities include adding, editing, and deleting users. The
 
 1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and go to *Control Panel* &rarr; *Users and Organizations*.
 
-1. In the *Users* tab, click the *New* button (![New](../../images/icon-new.png)).
+1. In the *Users* tab, click the *New* button.
 
    ![Add users from the Users and Organizations section of the control panel.](./adding-and-managing-users/images/01.png)
 

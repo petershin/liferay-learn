@@ -74,11 +74,11 @@ You can invite users to an account by email. Liferay sends an automated invitati
 
 1. Select the *account* you want to invite users to and go to the *Users* tab.
 
-1. Click *New* (![New Button](../../images/icon-new.png)) and select *Invite Users*.
+1. Click *New* and select *Invite Users*.
 
    !!! note
 
-       {bdg-secondary}`Liferay DXP 2023.Q4+/Portal 7.4 GA98+` A new permission called `Invite User` was added at the Account Entry level to separate a user's ability to invite users and assign them roles. A user with only the `Invite User` permission cannot view the *Assign Users* option after clicking the *New* (![New Button](../../images/icon-new.png)) button.
+       {bdg-secondary}`Liferay DXP 2023.Q4+/Portal 7.4 GA98+` A new permission called `Invite User` was added at the Account Entry level to separate a user's ability to invite users and assign them roles. A user with only the `Invite User` permission cannot view the *Assign Users* option after clicking the *New* button.
        A user with the `Manage Users` permission can view both the options.
 
 1. Enter the email address of the person you want to invite and press enter. If desired, you can add multiple addresses.

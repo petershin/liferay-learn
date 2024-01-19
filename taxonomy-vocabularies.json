@@ -98,7 +98,22 @@
 					"name": "Client Extensions"
 				},
 				{
+					"name": "Cloud Migration"
+				},
+				{
 					"name": "Cloud Platform Administration"
+				},
+				{
+					"name": "Cloud Platform Builds and Deployments"
+				},
+				{
+					"name": "Cloud Platform Networking"
+				},
+				{
+					"name": "Cloud Platform Security"
+				},
+				{
+					"name": "Cloud Platform Services"
 				},
 				{
 					"name": "Collections"

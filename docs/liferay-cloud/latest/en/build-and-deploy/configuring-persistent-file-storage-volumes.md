@@ -1,4 +1,8 @@
 ---
+taxonomy-category-names:
+- Cloud
+- Cloud Platform Builds and Deployments
+- Liferay PaaS
 uuid: 0800d6b6-65f3-403c-b9d0-2986f95239e8
 ---
 # Configuring Persistent File Storage Volumes

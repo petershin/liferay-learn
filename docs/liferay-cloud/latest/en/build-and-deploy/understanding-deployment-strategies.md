@@ -1,4 +1,8 @@
 ---
+taxonomy-category-names:
+- Cloud
+- Cloud Platform Builds and Deployments
+- Liferay PaaS
 uuid: 3a95e148-966a-4c7b-afc8-139791a1fca3
 ---
 # Understanding Deployment Strategies

@@ -1,4 +1,8 @@
 ---
+taxonomy-category-names:
+- Cloud
+- Cloud Platform Builds and Deployments
+- Liferay PaaS
 uuid: a7f057ee-86ce-4536-8963-8df663d6a550
 ---
 # Deploying Changes via the Liferay Cloud Console

@@ -1,4 +1,8 @@
 ---
+taxonomy-category-names:
+- Cloud
+- Cloud Platform Builds and Deployments
+- Liferay PaaS
 uuid: 7aa7bd7f-5fe7-4766-80ca-422d5d8230eb
 ---
 # Ignoring Files and Folders

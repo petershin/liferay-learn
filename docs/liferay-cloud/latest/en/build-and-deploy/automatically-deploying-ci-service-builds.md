@@ -1,4 +1,8 @@
 ---
+taxonomy-category-names:
+- Cloud
+- Cloud Platform Builds and Deployments
+- Liferay PaaS
 uuid: f4d0e616-3513-4e2d-bebe-ab55ebe28774
 ---
 # Automatically Deploying CI Service Builds

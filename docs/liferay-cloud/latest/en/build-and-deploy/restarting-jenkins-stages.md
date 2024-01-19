@@ -1,4 +1,8 @@
 ---
+taxonomy-category-names:
+- Cloud
+- Cloud Platform Builds and Deployments
+- Liferay PaaS
 uuid: 4c7b7f3d-e928-4e7f-8c98-6989f8def625
 ---
 # Restarting Jenkins Stages

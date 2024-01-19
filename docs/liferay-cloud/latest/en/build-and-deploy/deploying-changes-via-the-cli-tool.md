@@ -1,4 +1,8 @@
 ---
+taxonomy-category-names:
+- Cloud
+- Cloud Platform Builds and Deployments
+- Liferay PaaS
 uuid: 92d2c151-9db3-4b3e-a8f3-fd6ff298592a
 ---
 # Deploying Changes via the CLI Tool

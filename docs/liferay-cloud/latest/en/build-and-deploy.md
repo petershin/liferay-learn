@@ -9,6 +9,10 @@ toc:
   - ./build-and-deploy/restarting-jenkins-stages.md
   - ./build-and-deploy/configuring-persistent-file-storage-volumes.md
   - ./build-and-deploy/ignoring-files-and-folders.md
+taxonomy-category-names:
+- Cloud
+- Cloud Platform Builds and Deployments
+- Liferay PaaS
 uuid: c5b4bb64-ded0-44e0-8a99-55abac245118
 ---
 # Build and Deploy

@@ -1,4 +1,8 @@
 ---
+taxonomy-category-names:
+- Cloud
+- Cloud Platform Builds and Deployments
+- Liferay PaaS
 uuid: dc78712a-aba2-48cd-9566-a6f9182726c7
 ---
 # Overview of the Liferay Cloud Deployment Workflow

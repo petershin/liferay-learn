@@ -3,7 +3,7 @@ uuid: a36c0089-84d7-49a1-a928-5332fc1a970c
 taxonomy-category-names:
 - Security
 - User, Organization, and Account Management
-- Liferay Self Hosted
+- Liferay Self-Hosted
 - Liferay SaaS
 - Liferay PaaS
 ---

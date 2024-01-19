@@ -3,7 +3,7 @@ uuid: b3381541-1f04-4c33-9a38-a2ac20bfee5c
 taxonomy-category-names:
 - Development and Tooling
 - Data Frameworks
-- Liferay Self Hosted
+- Liferay Self-Hosted
 - Liferay PaaS
 ---
 

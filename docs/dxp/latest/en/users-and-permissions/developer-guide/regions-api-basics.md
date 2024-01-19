@@ -3,7 +3,7 @@ uuid: 2bc23521-81a7-40c4-b83a-4a6a10d9b1a5
 taxonomy-category-names:
 - Development and Tooling
 - Data Frameworks
-- Liferay Self Hosted
+- Liferay Self-Hosted
 - Liferay PaaS
 ---
 # Regions API Basics

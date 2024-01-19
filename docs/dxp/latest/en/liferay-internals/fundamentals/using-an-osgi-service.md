@@ -1,5 +1,10 @@
 ---
 uuid: 3117260b-5605-41b8-a18c-eab47c4373b4
+taxonomy-category-names:
+- Development and Tooling
+- Frameworks
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Using an OSGi Service
 

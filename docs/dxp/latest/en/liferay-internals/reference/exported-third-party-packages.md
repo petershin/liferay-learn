@@ -1,5 +1,11 @@
 ---
 uuid: ebb2d53e-32d9-4ee6-a8de-4e833e24ee29
+taxonomy-category-names:
+- Development and Tooling
+- Reference
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Exported Third Party Packages
 

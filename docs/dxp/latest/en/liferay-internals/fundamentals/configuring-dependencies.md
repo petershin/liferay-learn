@@ -6,6 +6,11 @@ toc:
     ./configuring-dependencies/resolving-third-party-library-package-dependencies.md
   - ./../../building-applications/reference/jars-excluded-from-wabs.md
 uuid: 345be6d8-c027-480c-b7cb-751f4d0ff8d2
+taxonomy-category-names:
+- Development and Tooling
+- Frameworks
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Configuring Dependencies
 

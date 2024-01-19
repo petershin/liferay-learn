@@ -1,5 +1,10 @@
 ---
 uuid: 6849209a-3a99-4ea4-92e6-eace728b8e5e
+taxonomy-category-names:
+- Development and Tooling
+- Frameworks
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Module Projects
 

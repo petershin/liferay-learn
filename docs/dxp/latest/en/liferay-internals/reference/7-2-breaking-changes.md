@@ -1,5 +1,11 @@
 ---
 uuid: 61562cc0-9592-4e24-8ea8-d29556cc1ff7
+taxonomy-category-names:
+- Development and Tooling
+- Reference
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # 7.2 Breaking Changes
 

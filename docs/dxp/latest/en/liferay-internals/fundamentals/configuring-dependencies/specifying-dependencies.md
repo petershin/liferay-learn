@@ -1,5 +1,10 @@
 ---
 uuid: 7478f975-5d9c-4a59-b7c6-d318a6b66df9
+taxonomy-category-names:
+- Development and Tooling
+- Frameworks
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Specifying Dependencies
 

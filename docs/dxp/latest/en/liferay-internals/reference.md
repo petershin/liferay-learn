@@ -6,6 +6,12 @@ toc:
   - ./reference/exported-third-party-packages.md
   - ./reference/portal-developer-properties.md
 uuid: 6606d862-645f-4dfa-923d-cc44c49e50be
+taxonomy-category-names:
+- Development and Tooling
+- Reference
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Reference
 

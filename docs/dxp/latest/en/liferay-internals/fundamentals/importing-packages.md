@@ -1,5 +1,10 @@
 ---
 uuid: 1788f599-55b3-411f-ab2f-cced07cc130a
+taxonomy-category-names:
+- Development and Tooling
+- Frameworks
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Importing Packages
 

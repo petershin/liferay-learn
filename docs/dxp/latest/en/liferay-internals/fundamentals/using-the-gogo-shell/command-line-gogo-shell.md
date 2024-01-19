@@ -1,5 +1,10 @@
 ---
 uuid: be96c5c8-da3a-4744-b632-91826069ac3f
+taxonomy-category-names:
+- Development and Tooling
+- Frameworks
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Command Line Gogo Shell
 

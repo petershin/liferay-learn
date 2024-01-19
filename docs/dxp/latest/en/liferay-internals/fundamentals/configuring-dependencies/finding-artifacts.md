@@ -1,5 +1,10 @@
 ---
 uuid: 6f30fd39-4b22-4b88-aeae-38b9b61c4627
+taxonomy-category-names:
+- Development and Tooling
+- Frameworks
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Finding Artifacts
 

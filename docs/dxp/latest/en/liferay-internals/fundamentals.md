@@ -9,6 +9,11 @@ toc:
   - ./fundamentals/configuring-dependencies.md
   - ./fundamentals/using-the-gogo-shell.md
 uuid: 1e42d71d-b924-4680-976c-80cb85414045
+taxonomy-category-names:
+- Development and Tooling
+- Frameworks
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Fundamentals
 

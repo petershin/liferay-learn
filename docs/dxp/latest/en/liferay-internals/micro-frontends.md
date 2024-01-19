@@ -1,5 +1,11 @@
 ---
 uuid: 0d063953-8c61-4731-a2d8-e42831e650b2
+taxonomy-category-names:
+- Development and Tooling
+- Frameworks
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 
 # Micro Front-Ends

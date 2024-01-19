@@ -1,5 +1,11 @@
 ---
 uuid: 66945681-9614-490d-aa97-e08f9c61501f
+taxonomy-category-names:
+- Development and Tooling
+- Reference
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Portal Developer Properties
 

@@ -7,6 +7,12 @@ toc:
   - ./architecture/bundle-classloading-flow.md
   - ./architecture/ui-architecture.md
 uuid: 22e59b20-bf0e-452f-8bd3-7e2f6581fa2c
+taxonomy-category-names:
+- Development and Tooling
+- Frameworks
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Architecture
 

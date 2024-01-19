@@ -1,5 +1,10 @@
 ---
 uuid: cf8996d2-c3bf-46f9-b752-76c524df2100
+taxonomy-category-names:
+- Development and Tooling
+- Frameworks
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Semantic Versioning
 

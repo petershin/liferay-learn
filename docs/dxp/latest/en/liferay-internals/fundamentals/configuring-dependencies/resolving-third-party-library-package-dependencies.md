@@ -1,5 +1,10 @@
 ---
 uuid: af1d4941-a445-4dfc-8ed4-6725bb064c62
+taxonomy-category-names:
+- Development and Tooling
+- Frameworks
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Resolving Third Party Library Package Dependencies
 

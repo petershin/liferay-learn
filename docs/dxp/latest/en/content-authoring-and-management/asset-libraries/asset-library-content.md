@@ -5,13 +5,13 @@ uuid: 10493643-7970-49b1-89a8-2363bc7a390a
 
 {bdg-secondary}`Liferay DXP/Portal 7.3+`
 
-Asset libraries provide a convenient way to share content across Liferay sites while streamlining content collaboration and reducing the risk of data duplication. To add, view, and manage an asset library's content, first navigate to the Library's menu page.
+*Asset libraries* provide a convenient way to share content across Liferay sites while streamlining content collaboration and reducing the risk of data duplication. To add, view, and manage an asset library's content, first navigate to the Library's menu page.
 
 1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), select the *Applications* tab, and click *Asset Libraries* under Content.
 
 1. Click the *name* of the desired asset library.
 
-Now, you can access the library's active applications to create and manage content. You can also enable staging, implement custom workflows, categorize content using tags and categories, create collections, and more.
+Now you can access the library's active applications to create and manage content. You can also enable staging, implement custom workflows, categorize content using tags and categories, create collections, and more.
 <!--TASK: document Collections and Workflow for Asset Libraries-->
 
 ![Click the desired asset library's name to access its menu page.](./asset-library-content/images/01.png)
@@ -37,7 +37,7 @@ From here, navigate to the *Asset Library* tab and select a connected asset libr
 
 ![Navigate to the asset library tab and select a connected library.](./asset-library-content/images/03.png)
 
-Alternatively, you can filter the item selector window to include content from *Everywhere*. This displays both site and available asset library content.
+Alternatively, you can filter the item selector window to include content from *Everywhere*. This displays both site content and asset library content.
 
 ![Filter content in the item selector to include content from everywhere.](./asset-library-content/images/04.png)
 

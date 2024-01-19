@@ -1,10 +1,9 @@
 ---
 toc:
 - ./workflow-and-publishing-tools/using-workflow-with-faqs.md
-- ./workflow-and-publishing-tools/enabling-publications.md
-- ./workflow-and-publishing-tools/creating-a-publication.md
-- ./workflow-and-publishing-tools/publishing-with-publications.md
-- ./workflow-and-publishing-tools/workflow-in-publications.md
+- ./workflow-and-publishing-tools/creating-a-publication-template-for-claritys-special-events.md
+- ./workflow-and-publishing-tools/working-with-the-50th-anniversary-publication.md
+- ./workflow-and-publishing-tools/publishing-the-50th-anniversary-content.md
 uuid: 2784080b-e770-4715-b844-7fcca38e50b0
 ---
 # Workflow and Publishing Tools
@@ -15,7 +14,7 @@ uuid: 2784080b-e770-4715-b844-7fcca38e50b0
 | Olivia O'Neal  | Content Manager            | Site Content Reviewer  | Olivia reviews Rex's FAQ submissions.                                                          |
 | Preston Palmer | Site Administrator         | Site Administrator     | Preston configures workflow at the site level.                                                 |
 | Kyle Klein     | IT Manager                 | Instance Administrator | Kyle manages workflows at the instance level (e.g., importing or creating workflow processes). |
-<!-- We'll need a role for Rex, like Site Content Creator or something. Just to access and create Web Content Articles -->
+<!-- We'll need a Content Manager role for Rex and Olivia, to access and create Web Content Articles and all the site stuff, pages, fragments, etc. -->
 
 Define workflow, explain the single approver, show a diagram view of it
 

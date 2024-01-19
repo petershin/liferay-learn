@@ -88,7 +88,29 @@ Since the submission is approved and there is only one reviewer in the Single Ap
 
 ## Updating the Master Page in the Publication
 
-Olivia O'Neal is a publication editor as configured in the template, so she can continue working in the publication.
+Olivia O'Neal is a publication editor as configured in the template, so she can continue working in the publication. First, a new announcement fragment is needed:
+
+1. Go to _Site Menu_ (![Site Menu](../../images/icon-product-menu.png)) &rarr; _Design_ &rarr; _Fragments_.
+
+1. Find _J2B6 Announcement_ and click _Actions_ (![Actions](../../images/icon-actions.png)) &rarr; _Make a Copy_.
+
+1. Find _J2B6 Announcement (Copy)_ and click _Actions_ (![Actions](../../images/icon-actions.png)) &rarr; _Rename_.
+
+1. Rename it to _50th Anniversary Announcement_.
+
+1. Edit the HTML:
+
+   * Replace the entire line that has the text "Save an average of $100 with vision insurance!" with this: 
+
+       ```html
+		<span data-lfr-editable-type="text" data-lfr-editable-id="text">Learn about our 50th Anniversary limited time only frames!</span>
+      ```
+
+   * In the next line, change the text "Learn How" to "Learn More".
+
+1. Click _Publish_.
+
+Next, the announcement fragment in the master page must be replaced with the new one:
 
 1. Open the publications bar and click _Select a Publication_. 
 

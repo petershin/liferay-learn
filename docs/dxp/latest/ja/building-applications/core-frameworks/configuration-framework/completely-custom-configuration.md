@@ -25,9 +25,8 @@
     ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
     ```
 
-    ```{note}
-    このコマンドは、デプロイされたjarをDockerコンテナの/opt/liferay/osgi/modulesにコピーするのと同じです。
-    ```
+    !!! note
+        このコマンドは、デプロイされたjarをDockerコンテナの/opt/liferay/osgi/modulesにコピーするのと同じです。
 
 1. Liferay Dockerコンテナコンソールでデプロイを確認します。
 
@@ -49,14 +48,13 @@
 
 ```{literalinclude} ./completely-custom-configuration/resources/liferay-u2g5.zip/u2g5-web/src/main/java/com/acme/u2g5/web/internal/configuration/U2G5WebConfiguration.java
 :language: java
-:lines: 7-24
+:lines: 7-26
 ```
 
 `@ExtendedObjectClassDefinition`アノテーションでは、`generateUI`が`false`に設定されていることに注意してください。 これにより、構成UIが自動生成されなくなります。
 
-```{note}
-DXP 7.4 U51またはPortal 7.4 GA51より前のLiferayバージョンでは、`ConfigurationBeanDeclaration`が必須です。 [Liferayの以前のバージョンでのConfigurationBeanDeclaration](./setting-and-accessing-configurations.md#configurationbeanandeclaration-with-previous-versions-of-liferay) を参照してください。
-```
+!!! note
+    DXP 7.4 U51またはPortal 7.4 GA51より前のLiferayバージョンでは、`ConfigurationBeanDeclaration`が必須です。 [Liferayの以前のバージョンでのConfigurationBeanDeclaration](./setting-and-accessing-configurations.md#configurationbeanandeclaration-with-previous-versions-of-liferay) を参照してください。
 
 ## 設定画面を実装する
 
@@ -71,7 +69,7 @@ DXP 7.4 U51またはPortal 7.4 GA51より前のLiferayバージョンでは、`C
     ```{literalinclude} ./completely-custom-configuration/resources/liferay-u2g5.zip/u2g5-web/src/main/java/com/acme/u2g5/web/internal/configuration/admin/display/U2G5ConfigurationScreen.java
     :dedent: 1
     :language: java
-    :lines: 24-40
+    :lines: 25-40
     ```
 
 1. この例では、構成スコープは `system`に設定されています。 詳細については、[スコープ設定](./scoping-configurations.md)を参照してください。
@@ -92,10 +90,10 @@ DXP 7.4 U51またはPortal 7.4 GA51より前のLiferayバージョンでは、`C
 
 1. 必ず`@Reference`アノテーションを使用して、モジュールのシンボリック名を定義してください。
 
-    ```java
-    @Reference(
-        target = "(osgi.web.symbolicname=com.acme.u2g5.web)"
-    )
+    ```{literalinclude} ./completely-custom-configuration/resources/liferay-u2g5.zip/u2g5-web/src/main/java/com/acme/u2g5/web/internal/configuration/admin/display/U2G5ConfigurationScreen.java
+    :dedent: 1
+    :language: java
+    :lines: 72-74
     ```
 
 ## Web-ContextPathを追加する

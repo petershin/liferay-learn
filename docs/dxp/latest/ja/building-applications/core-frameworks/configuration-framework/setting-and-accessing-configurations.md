@@ -11,42 +11,42 @@ Liferayの構成フレームワークを使用して、MVCポートレットの�
 
 1. [コンフィギュレーションの設定とアクセス](./liferay-n2f3.zip) をダウンロードして解凍する。
 
-   ```bash
-   curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/configuration-framework/liferay-n2f3.zip -O
-   ```
+    ```bash
+    curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/configuration-framework/liferay-n2f3.zip -O
+    ```
 
-   ```bash
-   unzip liferay-n2f3.zip
-   ```
+    ```bash
+    unzip liferay-n2f3.zip
+    ```
 
 1. モジュールのルートから、ビルドおよびデプロイします。
 
-   ```bash
-   ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
-   ```
-
-    ```{note}
-    このコマンドは Docker コンテナ上の `/opt/liferay/osgi/modules` にデプロイした jar をコピーするのと同じです。
+    ```bash
+    ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
     ```
+
+    !!! note
+        このコマンドは Docker コンテナ上の `/opt/liferay/osgi/modules` にデプロイした jar をコピーするのと同じです。
+
 1. Liferay Dockerコンテナコンソールでデプロイを確認します。
 
-   ```
-   STARTED com.acme.n2f3.web.0.0 [1650]
-   ```
+    ```
+    STARTED com.acme.n2f3.web.0.0 [1650]
+    ```
 
 1. サンプルのモジュールが機能していることを確認します。 ブラウザを`https://localhost:8080`に開く。
 
 1. N2F3ポートレットをページに追加します。 サンプルポートレットは、サンプルウィジェットの下にあります。
 
-   ![Add the N2F3 Portlet to a page.](./setting-and-accessing-configurations/images/01.png)
+    ![Add the N2F3 Portlet to a page.](./setting-and-accessing-configurations/images/01.png)
 
-   UIには、フォントの色、フォントファミリー、フォントサイズの3つの設定可能な属性とともにウェルカムメッセージが表示されます。
+    UIには、フォントの色、フォントファミリー、フォントサイズの3つの設定可能な属性とともにウェルカムメッセージが表示されます。
 
 1. 設定を変更するには、 **コントロールパネル** &rarr; **設定** &rarr; **システム設定** に移動します。 その他」の下にある「**category.n2f3**」をクリックする。
 
-   ![Click category.n2f3 under the Other category.](./setting-and-accessing-configurations/images/02.png)
+    ![Click category.n2f3 under the Other category.](./setting-and-accessing-configurations/images/02.png)
 
-   別のフォントの色、フォントファミリー、およびフォントサイズを入力してみてください。 更新*ボタンをクリックして、公開されたウィジェットのあるページに戻ってください。 属性が変更されたことを確認します。
+    別のフォントの色、フォントファミリー、およびフォントサイズを入力してみてください。 更新*ボタンをクリックして、公開されたウィジェットのあるページに戻ってください。 属性が変更されたことを確認します。
 
 構成フレームワークの仕組みは次のとおりです。
 
@@ -57,8 +57,8 @@ Liferayの構成フレームワークを使用して、MVCポートレットの�
 サンプルプロジェクトでは、`N2F3WebConfiguration.java`ファイルが設定インターフェースである。
 
 ```{literalinclude} ./scoping-configurations/resources/liferay-n2f3.zip/n2f3-web/src/main/java/com/acme/n2f3/web/internal/configuration/N2F3WebConfiguration.java
-:language: java
-:lines: 7-25
+    :language: java
+    :lines: 7-25
 ```
 
 この例のインターフェイスでは、スコープは`Scope.COMPANY`に設定されています。 詳しくは、 [スコープ設定](./scoping-configurations.md) を参照のこと。
@@ -67,9 +67,8 @@ Liferayの構成フレームワークを使用して、MVCポートレットの�
 
 `Meta.OCD`は、このクラスを特定のIDを持つコンフィギュレーションとして登録する。
 
-```{important}
-IDは構成インタフェースの完全修飾クラス名（FQCN）でなければならないことに注意。
-```
+!!! important
+    IDは構成インタフェースの完全修飾クラス名（FQCN）でなければならないことに注意。
 
 `Meta.AD`は、デフォルト値や属性が必須フィールドであるかどうかなど、属性に関する [オプションのメタデータ](http://bnd.bndtools.org/chapters/210-metatype.html) 。 属性値が必要であるがデフォルトが設定されていない場合、管理者はアプリケーションが正しく機能するように設定で値を設定する必要があることに注意してください。
 
@@ -79,17 +78,17 @@ IDは構成インタフェースの完全修飾クラス名（FQCN）でなけ�
 
 1. アノテーション `@Component` では、コンフィギュレーション・インターフェース・クラスを `configurationPid` で指定する：
 
-   ```java
-   configurationPid = "com.acme.n2f3.web.internal.configuration.N2F3WebConfiguration"
-   ```
+    ```java
+    configurationPid = "com.acme.n2f3.web.internal.configuration.N2F3WebConfiguration"
+    ```
 
 1. 設定にアクセスするために、`render()` メソッドは `ConfigurationProvider` を利用する。 構成プロバイダーAPIは、さまざまなレベルのスコープで構成を取得するためのメソッドを提供します。 サンプルプロジェクトのコンフィギュレーションはインスタンススコープ付きで、コンフィギュレーションを取得するには `getCompanyConfiguration()` メソッドを使用します。
 
-   ```{literalinclude} ./scoping-configurations/resources/liferay-n2f3.zip/n2f3-web/src/main/java/com/acme/n2f3/web/internal/portlet/N2F3Portlet.java
-   :dedent: 1
-   :language: java
-   :lines: 37-43
-   ```
+    ```{literalinclude} ./scoping-configurations/resources/liferay-n2f3.zip/n2f3-web/src/main/java/com/acme/n2f3/web/internal/portlet/N2F3Portlet.java
+        :dedent: 2
+        :language: java
+        :lines: 37-43
+    ```
 
    構成オブジェクトがリクエストオブジェクトに追加され、アプリケーションのJSPのリクエストから読み取ることができるようになりました。
 
@@ -97,17 +96,17 @@ IDは構成インタフェースの完全修飾クラス名（FQCN）でなけ�
 
 1. 次のimportステートメントは、構成インターフェイスをJSPに追加します。
 
-   ```markup
-   <%@ page import="com.acme.n2f3.web.internal.configuration.N2F3WebConfiguration" %>
-   ```
+    ```markup
+    <%@ page import="com.acme.n2f3.web.internal.configuration.N2F3WebConfiguration" %>
+    ```
 
 1. リクエストオブジェクトから構成オブジェクトが取得され、構成値が読み取られます。
 
-   ```markup
-   <%
-   N2F3WebConfiguration n2f3WebConfiguration = (N2F3WebConfiguration)request.getAttribute(N2F3WebConfiguration.class.getName());
-   %>
-   ```
+    ```markup
+    <%
+    N2F3WebConfiguration n2f3WebConfiguration = (N2F3WebConfiguration)request.getAttribute(N2F3WebConfiguration.class.getName());
+    %>
+    ```
 
 1. 属性 `fontColor()`、`fontFamily()`、`fontSize()` が JSP で使えるようになりました。
 
@@ -132,9 +131,8 @@ required = false)
 
 ## Liferayの以前のバージョンでのConfigurationBeanDeclaration
 
-```{important}
-Liferay DXP 7.4 U51+とLiferay Portal 7.4 GA51+では、`ConfigurationBeanDeclaration`クラスは必要ありません。 構成インターフェースは、構成プロバイダーAPIに自動的に登録されます。
-```
+!!! important
+    Liferay DXP 7.4 U51+とLiferay Portal 7.4 GA51+では、`ConfigurationBeanDeclaration`クラスは必要ありません。 構成インターフェースは、構成プロバイダーAPIに自動的に登録されます。
 
 Liferay 7.4 Update/GA 51 より前のバージョンでは、Configuration Provider API で使用するために、Configuration クラスを `ConfigurationBeanDeclaration` で登録する必要があります。 ConfigurationBeanDeclaration`クラスには、設定インターフェースクラスを返すメソッドが1つある。 これにより、システムは構成の変更が生じたときにそれを追跡できるようになります。 例えば、N2F3ポートレットの場合、以下のようなクラスを作成します。
 
@@ -155,6 +153,6 @@ public class N2F3WebConfigurationBeanDeclaration
 
 ## さらなるカスタマイゼーション
 
-* [コンフィギュレーションの分類](./categorizing-a-configuration.md)
-* [スコーピング・コンフィギュレーション](./scoping-configurations)
-* [フィールド・オプション プロバイダー](./field-options-provider.md)
+- [コンフィギュレーションの分類](./categorizing-a-configuration.md)
+- [スコーピング・コンフィギュレーション](./scoping-configurations)
+- [フィールド・オプション プロバイダー](./field-options-provider.md)

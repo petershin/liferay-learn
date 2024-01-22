@@ -29,51 +29,50 @@ Message Bus의 비동기식 옵션은 "실행 후 삭제" 동작을 제공합니
 
 1. 대상 모듈 `n8k5-able-impl`빌드하고 배포합니다.
 
-    ```bash
-    cd liferay-n8k5/n8k5-able-impl
-    ```
+   ```bash
+   cd liferay-n8k5/n8k5-able-impl
+   ```
 
-    ```bash
-    ../gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
-    ```
+   ```bash
+   ../gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
+   ```
 
-    ```{note}
-    이 명령은 모듈 JAR을 Docker 컨테이너의 `/opt/liferay/osgi/modules`에 복사하는 것과 동일합니다.
-    ```
+   !!! note
+      이 명령은 모듈 JAR을 Docker 컨테이너의 `/opt/liferay/osgi/modules`에 복사하는 것과 동일합니다.
 
-    Docker 컨테이너 콘솔에 모듈이 시작되었음을 표시합니다.
+   Docker 컨테이너 콘솔에 모듈이 시작되었음을 표시합니다.
 
-    ```bash
-    STARTED com.acme.n8k5.able.impl_1.0.0
-    ```
+   ```bash
+   STARTED com.acme.n8k5.able.impl_1.0.0
+   ```
 
 1. 수신기 모듈 `n8k5-charlie-impl`을 빌드하고 배포합니다.
 
-    ```bash
-    cd ../n8k5-charlie-impl
-    ```
+   ```bash
+   cd ../n8k5-charlie-impl
+   ```
 
-    ```bash
-    ../gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
-    ```
+   ```bash
+   ../gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
+   ```
 
-    Docker 컨테이너 콘솔에 모듈이 시작되었음을 표시합니다.
+   Docker 컨테이너 콘솔에 모듈이 시작되었음을 표시합니다.
 
-    ```bash
-    STARTED com.acme.n8k5.charlie.impl_1.0.0
-    ```
+   ```bash
+   STARTED com.acme.n8k5.charlie.impl_1.0.0
+   ```
 
 1. 송신기 모듈 `n8k5-baker-impl`을 빌드하고 배포합니다.
 
-    ```bash
-    cd ../n8k5-baker-impl
-    ```
+   ```bash
+   cd ../n8k5-baker-impl
+   ```
 
-    ```bash
-    ../gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
-    ```
+   ```bash
+   ../gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
+   ```
 
-    Docker 컨테이너 콘솔에서 `N8K5Baker`가 메시지를 보냈는지, `N8K5CharlieMessageListener`가 메시지를 받았는지, `n8k5-baker-impl` 모듈이 시작되었는지 확인합니다.
+   Docker 컨테이너 콘솔에서 `N8K5Baker`가 메시지를 보냈는지, `N8K5CharlieMessageListener`가 메시지를 받았는지, `n8k5-baker-impl` 모듈이 시작되었는지 확인합니다.
 
    ```bash
    INFO  [pipe-start 2025][N8K5Baker:24] Sent message to acme/n8k5_able
@@ -139,9 +138,8 @@ Message Bus의 비동기식 옵션은 "실행 후 삭제" 동작을 제공합니
 
 `N8K5Baker`는 [`MessageBus`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/MessageBus.java) 의 `sendMessage(String, Message)` 메서드를 호출하여 `acme/n8k5_able`이라는 이름의 [`Destination`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/Destination.java) 에 메시지를 보냅니다. `MessageBus`는 새 스레드를 시작하고 `Message`를 `acme/n8k5_able` `Destination`에 등록된 [`MessageListener`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/MessageListener.java) 인스턴스로 보냅니다. `N8K5Baker`의 스레드가 계속됩니다.
 
-```{note}
-`Message`에 대한 응답을 받으려면 `Message`에 응답 대상을 설정하고 해당 대상에 `N8K5Baker`와 같은 클래스를 `MessageListener`로 등록합니다. 자세한 내용은 [메시지 듣기](./listening-for-messages.md)를 참조하십시오.
-```
+!!! note
+   `Message`에 대한 응답을 받으려면 `Message`에 응답 대상을 설정하고 해당 대상에 `N8K5Baker`와 같은 클래스를 `MessageListener`로 등록합니다. 자세한 내용은 [메시지 듣기](./listening-for-messages.md)를 참조하십시오.
 
 ## 응답 처리 추가
 
@@ -286,15 +284,13 @@ INFO  [acme/n8k5_baker-2][N8K5Baker:30] Received message payload N8K5CharlieMess
 
 `N8K5CharlieMessageListener` `N8K5Baker`의 메시지를 수신한 후 응답 대상으로 응답 메시지를 보냅니다. `N8K5Baker` 응답 메시지를 수신하고 메시지 페이로드를 인쇄합니다.
 
-```{note}
-클래스 간에 메시지를 다시 교환하려면 [Gogo Shell](../../../liferay-internals/fundamentals/using-the-gogo-shell.md) 에서 모듈(OSGi 번들)을 다시 시작하면 됩니다. 번들을 나열(`lb`)하여 번들 ID를 가져오고, 번들을 중지하고(`stop <id>`), 번들을 다시 시작합니다(`start <id>`).
-```
+!!! note
+   클래스 간에 메시지를 다시 교환하려면 [Gogo Shell](../../../liferay-internals/fundamentals/using-the-gogo-shell.md) 에서 모듈(OSGi 번들)을 다시 시작하면 됩니다. 번들을 나열(`lb`)하여 번들 ID를 가져오고, 번들을 중지하고(`stop <id>`), 번들을 다시 시작합니다(`start <id>`).
 
-```{note}
-OSGi 구성 요소가 아닌 클래스에서는 [MessageBusUtil](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/MessageBusUtil.java) 및 `Destination`, `DestinationConfiguration`, `Message` 및 `MessageListener` 인스턴스를 사용하여 메시지를 보낼 수 있습니다.
+!!! note
+   OSGi 구성 요소가 아닌 클래스에서는 [MessageBusUtil](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/MessageBusUtil.java) 및 `Destination`, `DestinationConfiguration`, `Message` 및 `MessageListener` 인스턴스를 사용하여 메시지를 보낼 수 있습니다.
 
-다른 방법으로 `BundleContext`를 가져와야 한다는 점을 제외하면 설명된 대로 `Destination` 서비스를 등록할 수 있습니다(예: `Bundle bundle = FrameworkUtil.getBundle(YourClass.class); BundleContext bundleContext = bundle.getBundleContext( )`).
-```
+   다른 방법으로 `BundleContext`를 가져와야 한다는 점을 제외하면 설명된 대로 `Destination` 서비스를 등록할 수 있습니다(예: `Bundle bundle = FrameworkUtil.getBundle(YourClass.class); BundleContext bundleContext = bundle.getBundleContext( )`).
 
 축하해요! 두 클래스 간에 비동기식으로 메시지를 교환했습니다.
 
@@ -306,6 +302,6 @@ OSGi 구성 요소가 아닌 클래스에서는 [MessageBusUtil](https://github.
 
 ## 관련 항목
 
-* [메시지 버스](../message-bus.md)
-* [메시지 듣기](./listening-for-messages.md)
-* [등록 이벤트 수신](./listening-for-registration-events.md)
+- [메시지 버스](../message-bus.md)
+- [메시지 듣기](./listening-for-messages.md)
+- [등록 이벤트 수신](./listening-for-registration-events.md)

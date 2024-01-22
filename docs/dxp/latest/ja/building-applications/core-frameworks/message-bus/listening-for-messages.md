@@ -29,9 +29,8 @@
     ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
     ```
 
-    ```{note}
-    このコマンドは、コンパイルされたモジュールJARをDockerコンテナの `/opt/liferay/osgi/modules` にコピーするのと同じです。
-    ```
+    !!! note
+        このコマンドは、コンパイルされたモジュールJARをDockerコンテナの `/opt/liferay/osgi/modules` にコピーするのと同じです。
 
 1. Liferay Dockerコンテナコンソールでデプロイを確認します。
 
@@ -71,8 +70,9 @@ DestinationNames.DOCUMENT_LIBRARY_PDF_PROCESSOR
 `receive`メソッドをメッセージを処理するためのロジックでオーバーライドします。 以下に、`receive`メソッドの実装例を示します。
 
 ```{literalinclude} ./listening-for-messages/resources/liferay-w3a4.zip/w3a4-impl/src/main/java/com/acme/w3a4/internal/messaging/W3A4MessageListener.java
+   :dedent: 1
    :language: java
-   :lines: 17-27
+   :lines: 17-26
 ```
 
 上記の実装は、メッセージのペイロードと宛先名をログに記録します。 他のメソッドの詳細については、 [`Message`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/MessageListener.java) クラスを参照してください。
@@ -94,4 +94,4 @@ DestinationNames.DOCUMENT_LIBRARY_PDF_PROCESSOR
 
 ## 関連トピック
 
-* [メッセージバス](../message-bus.md)
+- [メッセージバス](../message-bus.md)

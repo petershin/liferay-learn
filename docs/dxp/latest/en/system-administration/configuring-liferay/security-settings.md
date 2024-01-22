@@ -5,7 +5,6 @@ uuid: efd59dab-34d8-4f89-8c51-f424413ce825
 taxonomy-category-names:
 - Security
 - DXP Configuration
-- Content Management System
 - Liferay Self-Hosted
 - Liferay PaaS
 ---

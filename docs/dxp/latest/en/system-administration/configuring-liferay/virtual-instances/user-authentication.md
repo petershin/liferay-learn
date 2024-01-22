@@ -5,8 +5,9 @@ taxonomy-category-names:
 - Identity Management and Authentication
 - Liferay Self-Hosted
 - Liferay PaaS
+- Liferay SaaS
 ---
-#  User Authentication
+# User Authentication
 
 The User Authentication settings define how Users can authenticate, the various authentication methods that are required for them, and the screen names and email addresses that are reserved and can't be registered by Users. 
 

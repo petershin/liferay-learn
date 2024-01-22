@@ -1,8 +1,7 @@
 ---
 uuid: e35bfaa4-fc3b-472d-9edc-161c135deb27
 taxonomy-category-names:
-- Content Management System
-- Content Performance
+- Development and Tooling
 - Liferay Self-Hosted
 - Liferay PaaS
 ---

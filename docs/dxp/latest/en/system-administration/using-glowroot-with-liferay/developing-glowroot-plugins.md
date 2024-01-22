@@ -1,5 +1,9 @@
 ---
 uuid: 0c05d38b-009b-4ecf-b240-0ca2b7c8eaca
+taxonomy-category-names:
+- Development and Tooling
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 
 # Developing Glowroot Plugins

@@ -18,6 +18,10 @@ Settings for Liferay DXP's services and applications are applied at one of four 
 
 **System Scope:** Configuration made for system scoped entries are the final value for the application in a system-wide fashion. They affect the whole system and are not overridden anywhere else.
 
+```{important}
+Configurations for the System Scope are not available on Liferay SaaS.
+```
+
 ![Some System Settings entries are system scoped.](./understanding-configuration-scope/images/01.png)
 
 **Virtual Instance Scope:** Configuration at the Virtual Instance level is overridden in Instance Settings.

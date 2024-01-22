@@ -5,8 +5,9 @@ taxonomy-category-names:
 - DXP Configuration
 - Liferay Self-Hosted
 - Liferay PaaS
+- Liferay SaaS
 ---
-#  Users
+# Users
 
 The Users configuration defines the look and feel of the Personal Menu, the default user associations, and the fields that are available when a new User creates an account. 
 

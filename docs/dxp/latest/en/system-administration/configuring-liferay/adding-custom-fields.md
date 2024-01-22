@@ -5,6 +5,7 @@ taxonomy-category-names:
 - DXP Configuration
 - Liferay Self-Hosted
 - Liferay PaaS
+- Liferay SaaS
 ---
 # Adding Custom Fields
 

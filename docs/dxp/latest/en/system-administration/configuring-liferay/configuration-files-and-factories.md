@@ -6,7 +6,6 @@ uuid: 8290874c-0ef6-4aa4-80b9-33d594745586
 taxonomy-category-names:
 - Platform
 - DXP Configuration
-- Content Management System
 - Liferay Self-Hosted
 - Liferay PaaS
 ---

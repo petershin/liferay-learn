@@ -2,6 +2,7 @@
 toc:
   - ./audit-framework/searching-and-exporting-audit-events.md
   - ./audit-framework/audit-configuration-reference.md
+  - ./audit-framework/audit-event-types-reference.md
 uuid: 9ee712e1-cd41-423f-8365-f1118a356519
 taxonomy-category-names:
 - Security
@@ -22,5 +23,9 @@ Liferay's audit framework shows activities relating to users, user groups, organ
 
 :::{grid-item-card} Audit Configuration Reference
 :link: ./audit-framework/audit-configuration-reference.md
+:::
+
+:::{grid-item-card} Audit Event Types Reference
+:link: ./audit-framework/audit-event-types-reference.md
 :::
 ::::

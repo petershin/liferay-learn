@@ -67,3 +67,4 @@ By default, Liferay's scheduled jobs don’t trigger audit events. To change it,
 ## Related Topics
 
 * [Searching and Exporting Audit Events](./searching-and-exporting-audit-events.md)
+* [Audit Event Types Reference](./audit-event-types-reference.md)

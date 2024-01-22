@@ -89,3 +89,4 @@ The export to CSV feature is currently behind a release feature flag. To use it,
 ## Related Topics
 
 * [Audit Configuration Reference](./audit-configuration-reference.md)
+* [Audit Event Types Reference](./audit-event-types-reference.md)

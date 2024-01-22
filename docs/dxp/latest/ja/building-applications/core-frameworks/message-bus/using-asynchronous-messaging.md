@@ -27,51 +27,50 @@
 
 1. 宛先モジュール`n8k5-able-impl`をビルドしてデプロイします。
 
-    ```bash
-    cd liferay-n8k5/n8k5-able-impl
-    ```
+   ```bash
+   cd liferay-n8k5/n8k5-able-impl
+   ```
 
-    ```bash
-    ../gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
-    ```
+   ```bash
+   ../gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
+   ```
 
-    ```{note}
-    このコマンドは、モジュールJARをDockerコンテナの`/opt/liferay/osgi/modules`にコピーするのと同じです。
-    ```
+   !!! note
+      このコマンドは、モジュールJARをDockerコンテナの`/opt/liferay/osgi/modules`にコピーするのと同じです。
 
-    Dockerコンテナ・コンソールに、モジュールが起動したことが表示される。
+   Dockerコンテナ・コンソールに、モジュールが起動したことが表示される。
 
-    ```bash
-    STARTED com.acme.n8k5.able.impl_1.0.0
-    ```
+   ```bash
+   STARTED com.acme.n8k5.able.impl_1.0.0
+   ```
 
 1. リスナーモジュール`n8k5-charlie-impl`をビルドしてデプロイします。
 
-    ```bash
-    cd ../n8k5-charlie-impl
-    ```
+   ```bash
+   cd ../n8k5-charlie-impl
+   ```
 
-    ```bash
-    ../gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
-    ```
+   ```bash
+   ../gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
+   ```
 
-    Dockerコンテナ・コンソールに、モジュールが起動したことが表示される。
+   Dockerコンテナ・コンソールに、モジュールが起動したことが表示される。
 
-    ```bash
-    STARTED com.acme.n8k5.charlie.impl_1.0.0
-    ```
+   ```bash
+   STARTED com.acme.n8k5.charlie.impl_1.0.0
+   ```
 
 1. 送信者モジュール`n8k5-baker-impl`をビルドしてデプロイします。
 
-    ```bash
-    cd ../n8k5-baker-impl
-    ```
+   ```bash
+   cd ../n8k5-baker-impl
+   ```
 
-    ```bash
-    ../gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
-    ```
+   ```bash
+   ../gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
+   ```
 
-    Docker コンテナコンソールで、`N8K5Baker` がメッセージを送信し、`N8K5CharlieMessageListener` がメッセージを受信し、`n8k5-baker-impl` モジュールが起動したことを確認する。
+   Docker コンテナコンソールで、`N8K5Baker` がメッセージを送信し、`N8K5CharlieMessageListener` がメッセージを受信し、`n8k5-baker-impl` モジュールが起動したことを確認する。
 
    ```bash
    INFO  [pipe-start 2025][N8K5Baker:24] Sent message to acme/n8k5_able
@@ -119,8 +118,9 @@
 以下の`N8K5Baker`クラスは、ペイロード`"N8K5Baker#_activate"`を含むメッセージを`acme/n8k5_able`という名前の宛先に送信します。
 
 ```{literalinclude} ./using-asynchronous-messaging/resources/liferay-n8k5.zip/n8k5-baker-impl/src/main/java/com/acme/n8k5/baker/internal/N8K5Baker.java
+:dedent: 1
 :language: java
-:lines: 12-23
+:lines: 13-23
 ```
 
 コンポーネントとして、`N8K5Baker`は`@Reference`アノテーションを使用して`MessageBus`インスタンスを挿入します。
@@ -137,9 +137,8 @@
 
 `N8K5Baker`は、 [`MessageBus`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/MessageBus.java) の`sendMessage(String, Message)`メソッドを呼び出して、`acme/n8k5_able`という名前の [`宛先`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/Destination.java) にメッセージを送信します。 `MessageBus`は新しいスレッドを開始し、`acme/n8k5_able` `Destination`に登録されている [`MessageListener`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/MessageListener.java) インスタンスに`メッセージ`を送信します。 `N8K5Baker`のスレッドが継続します。
 
-```{note}
-`Message`への応答を受信したい場合は、` Message`に応答先を設定し、 `N8K5Baker`などのクラスを` MessageListener`としてその宛先に登録します。 詳細については、[メッセージのリッスン](./listening-for-messages.md)を参照してください。
-```
+!!! note
+   `Message`への応答を受信したい場合は、` Message`に応答先を設定し、 `N8K5Baker`などのクラスを` MessageListener`としてその宛先に登録します。 詳細については、[メッセージのリッスン](./listening-for-messages.md)を参照してください。
 
 ## 応答処理の追加
 
@@ -284,15 +283,13 @@ INFO  [acme/n8k5_baker-2][N8K5Baker:30] Received message payload N8K5CharlieMess
 
 `N8K5CharlieMessageListener`は、`N8K5Baker`のメッセージを受信してから、応答メッセージを応答先に送信します。 `N8K5Baker`は応答メッセージを受信し、メッセージペイロードを出力します。
 
-```{note}
-クラスでメッセージを再度交換する場合は、[Gogo シェル](../../../liferay-internals/fundamentals/using-the-gogo-shell.md)でモジュール（OSGiバンドル）を再起動できます。  バンドルを一覧表示して（`lb`）バンドルIDを取得し、バンドルを停止して（`stop <id>`）、バンドルを再起動します（`start <id>`）。
-```
+!!! note
+   クラスでメッセージを再度交換する場合は、[Gogo シェル](../../../liferay-internals/fundamentals/using-the-gogo-shell.md)でモジュール（OSGiバンドル）を再起動できます。  バンドルを一覧表示して（`lb`）バンドルIDを取得し、バンドルを停止して（`stop <id>`）、バンドルを再起動します（`start <id>`）。
 
-```{note}
-OSGiコンポーネントではないクラスでは、 [MessageBusUtil](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/MessageBusUtil.java) と、`Destination`、`DestinationConfiguration`、`Message`、および`MessageListener`インスタンスを使用してメッセージを送信できます。
+!!! note
+   OSGiコンポーネントではないクラスでは、 [MessageBusUtil](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/MessageBusUtil.java) と、`Destination`、`DestinationConfiguration`、`Message`、および`MessageListener`インスタンスを使用してメッセージを送信できます。
 
-示されているように`Destination`サービスを登録できますが、`BundleContext`を別の方法で取得する必要があります（たとえば、`Bundle bundle = FrameworkUtil.getBundle(YourClass.class); BundleContext bundleContext = bundle.getBundleContext()`を呼び出しを行うことによって）。
-```
+   示されているように`Destination`サービスを登録できますが、`BundleContext`を別の方法で取得する必要があります（たとえば、`Bundle bundle = FrameworkUtil.getBundle(YourClass.class); BundleContext bundleContext = bundle.getBundleContext()`を呼び出しを行うことによって）。
 
 　 2つのクラス間で非同期的にメッセージを交換しました。
 
@@ -304,6 +301,6 @@ OSGiコンポーネントではないクラスでは、 [MessageBusUtil](https:/
 
 ## 関連トピック
 
-* [メッセージバス](../message-bus.md)
-* [メッセージのリッスン](./listening-for-messages.md)
-* [登録イベントをリッスンする](./listening-for-registration-events.md)
+- [メッセージバス](../message-bus.md)
+- [メッセージのリッスン](./listening-for-messages.md)
+- [登録イベントをリッスンする](./listening-for-registration-events.md)

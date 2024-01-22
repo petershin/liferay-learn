@@ -25,7 +25,7 @@ By default, Liferay requests all [stored fields](https://www.elastic.co/guide/en
 },
 ```
 
-Usually, returning all stored fields is innocuous. In rare cases an overly large response can result in ERROR messages indicating that the returned content is too long for the configured buffer limit.
+Usually, returning all stored fields is innocuous. In rare cases, an overly large response can result in ERROR messages indicating that the returned content is too long for the configured buffer limit.
 
 To reduce the response size of searches and improve performance generally, you can filter the stored fields. For this you must [create a Search Blueprint](./creating-and-managing-search-blueprints.md) with JSON like the following in the [Advanced Configuration](search-blueprints-configuration-reference.md#advanced-configuration) field:
 
@@ -46,7 +46,7 @@ This communicates that only the `userId` field should be returned in each docume
 
 The Search Results widget requires certain fields in the response for generating [result summaries](../../../search-pages-and-widgets/search-results/search-results-behavior.md#result-summaries). The summary fields are asset-specific, but many assets require at least the localized version of the title, content, and description fields. 
 
-![Web Content result summaries show several fields.](./filtering-by-stored-fields-to-limit-the-response-size/images/01.png)
+![Web Content result summaries show several fields.](./optimizing-search-response-size/images/01.png)
 
 Your use case determines the stored fields you should return in the response.
 
@@ -91,7 +91,7 @@ Although uncommon, searching in a system with lots of translated content can pro
 
 1. Expand the document preview for the web content you created and observe that the document contains many fields:
 
-   ![This web content article has many fields.](./filtering-by-stored-fields-to-limit-the-response-size/images/02.png)
+   ![This web content article has many fields.](./optimizing-search-response-size/images/02.png)
 
 1. Click _Configuration_.
 
@@ -116,14 +116,12 @@ Although uncommon, searching in a system with lots of translated content can pro
 
 1. Expand the document preview for the Test Test user and observe that the document contains only the fields you specified and a few added by Liferay's search framework:
 
-   ![After filtering, only Liferay's required fields and those you specified are returned in the response.](./filtering-by-stored-fields-to-limit-the-response-size/images/03.png)
+   ![After filtering, only Liferay's required fields and those you specified are returned in the response.](./optimizing-search-response-size/images/03.png)
 
 Excluding the source field and filtering the stored fields is rarely needed, but can be helpful if you're encountering search engine error messages about the response being too large.
-
 
 ## Related Topics
 
 - [Creating Blueprints](./creating-and-managing-search-blueprints.md)
 - [Search Blueprints Configuration Reference](./search-blueprints-configuration-reference.md)
 - [Troubleshooting Elasticsearch Installation](../../../installing-and-upgrading-a-search-engine/elasticsearch/troubleshooting-elasticsearch-installation.md)
-

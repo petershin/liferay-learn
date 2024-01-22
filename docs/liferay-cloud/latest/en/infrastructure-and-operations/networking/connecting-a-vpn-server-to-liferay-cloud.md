@@ -1,4 +1,9 @@
 ---
+taxonomy-category-names:
+- Cloud
+- Cloud Platform Administration
+- Cloud Platform Networking
+- Liferay PaaS
 uuid: 820c2c07-28b8-4a9c-9d09-a4225f8eda65
 ---
 # Connecting a VPN Server to Liferay Cloud

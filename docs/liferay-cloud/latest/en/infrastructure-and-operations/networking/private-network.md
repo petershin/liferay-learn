@@ -1,4 +1,9 @@
 ---
+taxonomy-category-names:
+- Cloud
+- Cloud Platform Administration
+- Cloud Platform Networking
+- Liferay PaaS
 uuid: eb7d2ded-21df-4d91-bdd2-b9d5abc18db1
 ---
 # Private Network

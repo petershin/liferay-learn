@@ -1,4 +1,9 @@
 ---
+taxonomy-category-names:
+- Cloud
+- Cloud Platform Administration
+- Cloud Platform Networking
+- Liferay PaaS
 uuid: 92fd5ebb-a898-4a13-8c28-f2316ecd5146
 ---
 # Custom Domains

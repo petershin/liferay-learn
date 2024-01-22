@@ -1,4 +1,9 @@
 ---
+taxonomy-category-names:
+- Cloud
+- Cloud Platform Administration
+- Cloud Platform Security
+- Liferay PaaS
 uuid: a2e1b165-0eab-4626-ba37-87109871a413
 ---
 # Authentication

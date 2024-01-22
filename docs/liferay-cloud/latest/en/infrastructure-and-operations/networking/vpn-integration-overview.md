@@ -1,4 +1,9 @@
 ---
+taxonomy-category-names:
+- Cloud
+- Cloud Platform Administration
+- Cloud Platform Networking
+- Liferay PaaS
 uuid: 0699fcf8-e695-4cad-af15-f136c02f4284
 ---
 # VPN Integration Overview

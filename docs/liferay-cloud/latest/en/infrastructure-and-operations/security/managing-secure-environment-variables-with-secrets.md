@@ -1,4 +1,9 @@
 ---
+taxonomy-category-names:
+- Cloud
+- Cloud Platform Administration
+- Cloud Platform Security
+- Liferay PaaS
 uuid: 4ad07a28-aaef-4c25-8909-4a7fb7970455
 ---
 # Managing Secure Environment Variables with Secrets

@@ -1,4 +1,9 @@
 ---
+taxonomy-category-names:
+- Cloud
+- Cloud Platform Administration
+- Cloud Platform Networking
+- Liferay PaaS
 uuid: 1263caa5-2cb7-4100-a801-0f9e13d3d153
 ---
 # Configuring a VPN Server

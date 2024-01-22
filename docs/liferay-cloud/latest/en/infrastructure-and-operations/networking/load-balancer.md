@@ -1,4 +1,9 @@
 ---
+taxonomy-category-names:
+- Cloud
+- Cloud Platform Administration
+- Cloud Platform Networking
+- Liferay PaaS
 uuid: 7f1f8167-714b-4e6f-a140-2af61f560a27
 ---
 # Load Balancer

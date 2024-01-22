@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Cloud
+- Cloud Platform Administration
+- Cloud Platform Security
+- Cloud Platform Networking
+- Liferay PaaS
 uuid: 4f659a0a-7b7b-4798-8c88-21222e42ab81
 ---
 # Web Application Firewall

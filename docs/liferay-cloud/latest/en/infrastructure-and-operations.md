@@ -2,6 +2,10 @@
 toc:
   - ./infrastructure-and-operations/networking.md
   - ./infrastructure-and-operations/security.md
+taxonomy-category-names:
+- Cloud
+- Cloud Platform Administration
+- Liferay PaaS
 uuid: f7275a7b-7e6d-454b-a2d6-658e54c2fce1
 ---
 # Infrastructure and Operations

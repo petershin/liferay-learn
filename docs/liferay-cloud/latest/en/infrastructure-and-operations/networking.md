@@ -6,6 +6,11 @@ toc:
   - ./networking/connecting-a-vpn-server-to-liferay-cloud.md
   - ./networking/custom-domains.md
   - ./networking/load-balancer.md
+taxonomy-category-names:
+- Cloud
+- Cloud Platform Administration
+- Cloud Platform Networking
+- Liferay PaaS
 uuid: b7876b94-de3c-4a47-9aef-a6276f068518
 ---
 # Networking

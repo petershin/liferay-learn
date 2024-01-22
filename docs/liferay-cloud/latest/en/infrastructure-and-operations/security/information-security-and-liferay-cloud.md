@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Cloud
+- Cloud Platform Administration
+- Cloud Platform Security
+- Liferay PaaS
+- Liferay SaaS
 uuid: 8195f470-74b8-4fc2-b073-b76d894b69de
 ---
 # Information Security and Liferay Cloud

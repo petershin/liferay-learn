@@ -1,4 +1,9 @@
 ---
+taxonomy-category-names:
+- Cloud
+- Cloud Platform Administration
+- Cloud Platform Security
+- Liferay PaaS
 uuid: d229293d-6125-4a3e-a1a0-c07d4cc406ad
 ---
 # Using SSO with Liferay Cloud

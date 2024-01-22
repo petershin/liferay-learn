@@ -4,17 +4,15 @@
 
 カスタム要素クライアント拡張は、Liferayのフロントエンドのインフラストラクチャーを使用して、外部のアプリケーションをLiferayプラットフォームに登録し、ウィジェットとしてレンダリングします。 複数のルーティングを含むアプリケーション（例： [React Router](https://reactrouter.com/) ）では、実行時にウィジェットに使用するルーティングを決定するために、リモートアプリケーションのプロパティを定義することができます。 これらのプロパティは、Liferayのリモートアプリケーションメニュー、またはデプロイ後のウィジェットの設定オプションからアプリケーションに設定することができます。
 
-```{warning}
-カスタム要素やIFrameを他のタイプのクライアント拡張のようにデプロイすることは、Liferay 7.4の**ベータ機能**です。 このチュートリアルでは、カスタム要素のリモートアプリケーションを異なる方法でデプロイしますが、将来のアップデートまでは、この方法が推奨されます。
-```
+!!! warning
+   カスタム要素やIFrameを他のタイプのクライアント拡張のようにデプロイすることは、Liferay 7.4の**ベータ機能**です。 このチュートリアルでは、カスタム要素のリモートアプリケーションを異なる方法でデプロイしますが、将来のアップデートまでは、この方法が推奨されます。
 
 このチュートリアルでは、Liferay の `create_custom_element.sh` スクリプトを使って基本的な React アプリケーションを作成します：`hello-world`、`hello-foo`、`hello-bar`です。 アプリケーションをコンパイルして`.js`と`.css` ファイルをホストした後、アプリケーションを Liferay に登録し、ページウィジェットとしてデプロイします。 最後に、それぞれの代替ルーティングを使用するように設定します。
 
 ![Create a basic custom element remote appliaction with alternate routes and use the route property to configure which is rendered.](./using-routes-with-custom-elements/images/01.png)
 
-```{note}
-カスタム要素クライアントの拡張は、構築、パッケージ化、ホスティングの方法に関係なく、あらゆるテクノロジーを使用できます。 このチュートリアルでは、基本ルーティングを使用したカスタム要素アプリケーションのサンプルのみを提供しています。
-```
+!!! note
+   カスタム要素クライアントの拡張は、構築、パッケージ化、ホスティングの方法に関係なく、あらゆるテクノロジーを使用できます。 このチュートリアルでは、基本ルーティングを使用したカスタム要素アプリケーションのサンプルのみを提供しています。
 
 `create_custom_element.sh` を実行するには、 [Node.JS](https://nodejs.org/) 、 [NPM](https://www.npmjs.com/) 、 [YARN](https://classic.yarnpkg.com/) の最新バージョンが必要です。 先に進む前に、これらのツールがインストールされていることを確認してください。
 
@@ -103,9 +101,8 @@
 
 これは Liferayドキュメントライブラリにファイルを追加し、固有の WebDAV URL を割り当て、リモートアプリケーションを作成するために使用します。
 
-```{tip}
-このチュートリアルでは、アプリケーションの静的リソースをデモ用にLiferayのドキュメントライブラリにホスティングします。 本番環境では、静的リソースをホストするために最適化されたサーバーでアプリケーションのファイルをホストする必要があります。
-```
+!!! tip
+   このチュートリアルでは、アプリケーションの静的リソースをデモ用にLiferayのドキュメントライブラリにホスティングします。 本番環境では、静的リソースをホストするために最適化されたサーバーでアプリケーションのファイルをホストする必要があります。
 
 各ファイルのURLを表示するには、 **情報** アイコン(![情報アイコン](../../../../images/icon-information.png))をクリックし、一度に1つのファイルを選択します。 各ファイルの **WebDAV URL** をコピーし、次のステップで使用するために保存する。
 
@@ -113,8 +110,8 @@
 
 例えば、
 
-* `http://localhost:8080/webdav/guest/document_library/main.114dde4a.js`
-* `http://localhost:8080/webdav/guest/document_library/main.9877909d.css`
+- `http://localhost:8080/webdav/guest/document_library/main.114dde4a.js`
+- `http://localhost:8080/webdav/guest/document_library/main.9877909d.css`
 
 ## アプリケーションの登録とデプロイ
 
@@ -186,7 +183,7 @@ J1V3-Custom-Elementはインスタンス化可能なので、1つのページに
 
 ```{literalinclude} ./using-routes-with-custom-elements/resources/liferay-j1v3.zip/j1v3-custom-element/src/index.js
     :language: js
-    :lines: 1-34
+    :lines: 1-63
 ```
 
 この `index.js` ファイルは `HTMLElement` インターフェースを継承した `WebComponent` クラスを作成する。 このクラスはインターフェースの [`connectedCallback()`](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements#using_the_lifecycle_callbacks) 関数を実装している。この関数は [`ReactDOM.render`](https://reactjs.org/docs/react-dom.html#render) を `App` をパラメータとして呼び出す。 `App` が呼ばれると、`"route"`属性が定義されているかどうかをチェックし、その値を利用可能なルートと比較します。 もし`hello-foo`または`hello-bar`のどちらかにマッチすれば、対応するルートを返してレンダリングする。 そうでなければ、`hello-world`をレンダリングする。
@@ -210,26 +207,26 @@ routes
 
 ```{literalinclude} ./using-routes-with-custom-elements/resources/liferay-j1v3.zip/j1v3-custom-element/src/routes/hello-world/pages/HelloWorld.js
     :language: js
-    :lines: 1-9
+    :lines: 8-14
 ```
 
 ### HelloFoo.js
 
 ```{literalinclude} ./using-routes-with-custom-elements/resources/liferay-j1v3.zip/j1v3-custom-element/src/routes/hello-foo/pages/HelloFoo.js
     :language: js
-    :lines: 1-9
+    :lines: 8-12
 ```
 
 ### HelloBar.js
 
 ```{literalinclude} ./using-routes-with-custom-elements/resources/liferay-j1v3.zip/j1v3-custom-element/src/routes/hello-bar/pages/HelloBar.js
     :language: js
-    :lines: 1-9
+    :lines: 8-12
 ```
 
 ## 関連トピック
 
-* [フロントエンド・クライアント拡張](../../front-end-client-extensions.md)
-* [カスタム要素とIFrameクライアント拡張機能を理解する](../understanding-custom-element-and-iframe-client-extensions.md) 
-* [基本的なカスタム要素の作成](./creating-a-basic-custom-element.md)
-* [リモートアプリケーションUIリファレンス](../client-extensions-ui-reference.md)
+- [フロントエンド・クライアント拡張](../../front-end-client-extensions.md)
+- [カスタム要素とIFrameクライアント拡張機能を理解する](../understanding-custom-element-and-iframe-client-extensions.md)
+- [基本的なカスタム要素の作成](./creating-a-basic-custom-element.md)
+- [リモートアプリケーションUIリファレンス](../client-extensions-ui-reference.md)

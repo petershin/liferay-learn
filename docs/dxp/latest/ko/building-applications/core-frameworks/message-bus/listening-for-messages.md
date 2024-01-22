@@ -29,9 +29,8 @@ DXP/Portal에 내장되어 있거나, 타사에서 정의했거나, 사용자가
     ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
     ```
 
-    ```{note}
-    이 명령은 컴파일된 모듈 JAR을 Docker 컨테이너의 `/opt/liferay/osgi/modules`에 복사하는 것과 동일합니다.
-    ```
+    !!! note
+        이 명령은 컴파일된 모듈 JAR을 Docker 컨테이너의 `/opt/liferay/osgi/modules`에 복사하는 것과 동일합니다.
 
 1. Liferay Docker 컨테이너 콘솔에서 배포를 확인합니다.
 
@@ -61,7 +60,7 @@ DestinationNames.DOCUMENT_LIBRARY_PDF_PROCESSOR
 
 ## `MessageListener` 인터페이스 구현
 
-메시지를 수신하려는 클래스에서 [`MessageListener`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/MessageListener.java) 인터페이스를 구현합니다. 
+메시지를 수신하려는 클래스에서 [`MessageListener`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/MessageListener.java) 인터페이스를 구현합니다.
 
 ```{literalinclude} ./listening-for-messages/resources/liferay-w3a4.zip/w3a4-impl/src/main/java/com/acme/w3a4/internal/messaging/W3A4MessageListener.java
    :language: java
@@ -71,8 +70,9 @@ DestinationNames.DOCUMENT_LIBRARY_PDF_PROCESSOR
 메시지 처리를 위한 논리로 `수신` 메서드를 재정의합니다. 다음은 `수신` 메서드 구현의 예입니다.
 
 ```{literalinclude} ./listening-for-messages/resources/liferay-w3a4.zip/w3a4-impl/src/main/java/com/acme/w3a4/internal/messaging/W3A4MessageListener.java
+   :dedent: 1
    :language: java
-   :lines: 17-27
+   :lines: 17-26
 ```
 
 위의 구현은 메시지 페이로드 및 대상 이름을 기록합니다. 다른 메서드에 대한 자세한 내용은 [`메시지`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/MessageListener.java) 클래스를 참조하십시오.
@@ -94,4 +94,4 @@ DestinationNames.DOCUMENT_LIBRARY_PDF_PROCESSOR
 
 ## 관련 항목
 
-* [메시지 버스](../message-bus.md)
+- [메시지 버스](../message-bus.md)

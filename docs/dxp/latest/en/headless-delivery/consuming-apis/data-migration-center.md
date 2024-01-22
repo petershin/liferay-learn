@@ -13,7 +13,7 @@ taxonomy-category-names:
 {bdg-link-primary}`[Beta Feature](../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
 
 ```{important}
-The data migration center is a beta feature that currently only supports the import and export of object definitions and object entries.
+The data migration center is a beta feature that currently only supports the import and export of object definitions, object entries, and API applications.
 ```
 
 The data migration center makes it easy for you to move your object definitions and object entries between Liferay installations. 

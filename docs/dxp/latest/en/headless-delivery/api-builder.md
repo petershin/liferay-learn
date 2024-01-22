@@ -39,6 +39,10 @@ To create a new API application, click _Add_ (![Add icon](../images/icon-add.png
 
 To edit or delete an application, click _Options_ (![Options icon](../images/icon-options.png)) and click _Edit_ or _Delete_. Note, an API application that has a draft status can be used only after it is published. Once published, the generated APIs have the same set of features as Liferay's out-of-the-box APIs (i.e. pagination, filtering, sorting, etc.)
 
+```{note}
+The API Builder is configured at an instance level scope. Create different API applications that are unique to each virtual instance. To re-create an API application in another instance, use the [data migration center](./consuming-apis/data-migration-center.md).
+```
+
 ## Understanding Schemas
 
 API schemas specify what entities are returned (or received) by your API. To manage schemas, click into one of your custom API applications and click the _Schemas_ tab. See a list of your custom schemas. The name, description, and last update are shown for each schema.

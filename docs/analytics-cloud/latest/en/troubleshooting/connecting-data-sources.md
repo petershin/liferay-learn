@@ -110,6 +110,6 @@ By default, Liferay DXP uses the same URL for a site page regardless of the chos
 
 1. Click _SEO_ in the left navigation. 
 
-  ![Select use localized URL under the canonical URL selection.](./connecting-data-sources/images/04.png)
+   ![Select use localized URL under the canonical URL selection.](./connecting-data-sources/images/04.png)
 
 1. Click the drop-down menu under canonical URL and select _Use Localized URL_. Click _Save_.

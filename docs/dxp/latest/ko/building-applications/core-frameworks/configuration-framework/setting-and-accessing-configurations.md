@@ -25,9 +25,8 @@ Liferay의 구성 프레임워크를 사용하여 MVC 포틀릿에 대한 설정
     ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
     ```
 
-    ```{note}
-    이 명령은 배포된 jar를 Docker 컨테이너의 `/opt/liferay/osgi/modules`에 복사하는 것과 동일합니다.
-    ```
+    !!! note
+        이 명령은 배포된 jar를 Docker 컨테이너의 `/opt/liferay/osgi/modules`에 복사하는 것과 동일합니다.
 
 1. Liferay Docker 컨테이너 콘솔에서 배포를 확인합니다.
 
@@ -59,7 +58,7 @@ Liferay의 구성 프레임워크를 사용하여 MVC 포틀릿에 대한 설정
 
 ```{literalinclude} ./scoping-configurations/resources/liferay-n2f3.zip/n2f3-web/src/main/java/com/acme/n2f3/web/internal/configuration/N2F3WebConfiguration.java
 :language: java
-:lines: 5-17
+:lines: 7-25
 ```
 
 이 예제 인터페이스의 경우 범위는 `Scope.COMPANY`로 설정됩니다. 자세한 내용은 [범위 지정 구성](./scoping-configurations.md) 참조하십시오.
@@ -68,9 +67,8 @@ Liferay의 구성 프레임워크를 사용하여 MVC 포틀릿에 대한 설정
 
 `Meta.OCD` 은 이 클래스를 특정 ID를 가진 구성으로 등록합니다.
 
-```{important}
-ID는 구성 인터페이스의 FQCN(정규화된 클래스 이름)이어야 합니다.
-```
+!!! important
+    ID는 구성 인터페이스의 FQCN(정규화된 클래스 이름)이어야 합니다.
 
 `Meta.AD` 기본값 또는 속성이 필수 필드인지 여부와 같은 속성에 대한 선택적 메타데이터 [](http://bnd.bndtools.org/chapters/210-metatype.html) 지정합니다. 속성 값이 필요하지만 기본값이 설정되지 않은 경우 관리자가 설정에서 값을 설정해야 애플리케이션이 제대로 작동합니다.
 
@@ -87,9 +85,9 @@ ID는 구성 인터페이스의 FQCN(정규화된 클래스 이름)이어야 합
 1. 구성에 액세스하기 위해 `render()` 메서드는 `ConfigurationProvider`을 활용합니다. 구성 공급자 API는 다양한 수준의 범위에서 구성을 검색하는 메서드를 제공합니다. 샘플 프로젝트의 구성은 인스턴스 범위이며 `getCompanyConfiguration()` 메서드를 사용하여 구성을 검색합니다.
 
     ```{literalinclude} ./scoping-configurations/resources/liferay-n2f3.zip/n2f3-web/src/main/java/com/acme/n2f3/web/internal/portlet/N2F3Portlet.java
-    :dedent: 1
+    :dedent: 2
     :language: java
-    :lines: 44-51
+    :lines: 37-43
     ```
 
     구성 개체가 요청 개체에 추가되었으며 이제 애플리케이션의 JSP 요청에서 읽을 수 있습니다.
@@ -133,9 +131,8 @@ required = false)
 
 ## 이전 버전의 Liferay를 사용한 ConfigurationBeanDeclaration
 
-```{important}
-Liferay DXP 7.4 U51+ 및 Liferay Portal 7.4 GA51+의 경우 'ConfigurationBeanDeclaration' 클래스가 필요하지 않습니다. 구성 인터페이스는 구성 공급자 API에 자동으로 등록됩니다.
-```
+!!! important
+    Liferay DXP 7.4 U51+ 및 Liferay Portal 7.4 GA51+의 경우 'ConfigurationBeanDeclaration' 클래스가 필요하지 않습니다. 구성 인터페이스는 구성 공급자 API에 자동으로 등록됩니다.
 
 7.4 업데이트/GA 51 이전의 Liferay 버전에서 구성 공급자 API와 함께 사용하려면 구성 클래스를 `ConfigurationBeanDeclaration` 로 등록해야 합니다. `ConfigurationBeanDeclaration` 클래스에는 구성 인터페이스 클래스를 반환하는 메서드가 하나 있습니다. 이렇게 하면 시스템이 구성 변경이 발생하는 즉시 이를 추적할 수 있습니다. 예를 들어 N2F3 포틀릿의 경우 다음과 같은 클래스를 만듭니다.
 
@@ -156,6 +153,6 @@ public class N2F3WebConfigurationBeanDeclaration
 
 ## 추가 사용자 정의
 
-* [구성 분류](./categorizing-a-configuration.md)
-* [범위 지정 구성](./scoping-configurations)
-* [필드 옵션 공급자](./field-options-provider.md)
+- [구성 분류](./categorizing-a-configuration.md)
+- [범위 지정 구성](./scoping-configurations)
+- [필드 옵션 공급자](./field-options-provider.md)

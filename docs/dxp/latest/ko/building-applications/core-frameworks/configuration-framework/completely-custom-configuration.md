@@ -25,9 +25,8 @@
     ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
     ```
 
-    ```{note}
-    이 명령은 배포된 jars를 Docker 컨테이너의 /opt/liferay/osgi/modules에 복사하는 것과 동일합니다.
-    ```
+    !!! note
+        이 명령은 배포된 jars를 Docker 컨테이너의 /opt/liferay/osgi/modules에 복사하는 것과 동일합니다.
 
 1. Liferay Docker 컨테이너 콘솔에서 배포를 확인합니다.
 
@@ -49,14 +48,13 @@
 
 ```{literalinclude} ./completely-custom-configuration/resources/liferay-u2g5.zip/u2g5-web/src/main/java/com/acme/u2g5/web/internal/configuration/U2G5WebConfiguration.java
 :language: java
-:lines: 7-24
+:lines: 7-26
 ```
 
 `@ExtendedObjectClassDefinition` 어노테이션에서 `generateUI` 는 `false`로 설정되어 있습니다. 이렇게 하면 구성 UI가 자동 생성되지 않습니다.
 
-```{note}
-DXP 7.4 U51 또는 Portal 7.4 GA51 이전 Liferay 버전에는 `ConfigurationBeanDeclaration`이 필요합니다. 이전 버전의 Liferay를 사용한 구성 빈 선언](./설정-및-액세스-구성.md#configurationbeandeclaration-with-previous-versions-of-liferay)을 참조하세요.
-```
+!!! note
+    DXP 7.4 U51 또는 Portal 7.4 GA51 이전 Liferay 버전에는 `ConfigurationBeanDeclaration`이 필요합니다. 이전 버전의 Liferay를 사용한 구성 빈 선언](./설정-및-액세스-구성.md#configurationbeandeclaration-with-previous-versions-of-liferay)을 참조하세요.
 
 ## 구성 화면 구현
 
@@ -71,7 +69,7 @@ DXP 7.4 U51 또는 Portal 7.4 GA51 이전 Liferay 버전에는 `ConfigurationBea
     ```{literalinclude} ./completely-custom-configuration/resources/liferay-u2g5.zip/u2g5-web/src/main/java/com/acme/u2g5/web/internal/configuration/admin/display/U2G5ConfigurationScreen.java
     :dedent: 1
     :language: java
-    :lines: 24-40
+    :lines: 25-40
     ```
 
 1. 이 예제에서는 구성 범위가 `system`으로 설정되어 있습니다. 자세한 내용은 [범위 지정 구성](./scoping-configurations.md)을 참조하세요.
@@ -92,10 +90,10 @@ DXP 7.4 U51 또는 Portal 7.4 GA51 이전 Liferay 버전에는 `ConfigurationBea
 
 1. `@Reference` 어노테이션을 사용하여 모듈의 심볼 이름을 정의해야 합니다.
 
-    ```java
-    @Reference(
-        target = "(osgi.web.symbolicname=com.acme.u2g5.web)"
-    )
+    ```{literalinclude} ./completely-custom-configuration/resources/liferay-u2g5.zip/u2g5-web/src/main/java/com/acme/u2g5/web/internal/configuration/admin/display/U2G5ConfigurationScreen.java
+    :dedent: 1
+    :language: java
+    :lines: 72-74
     ```
 
 ## 웹 컨텍스트 경로 추가

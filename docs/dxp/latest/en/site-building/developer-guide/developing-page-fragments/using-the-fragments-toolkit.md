@@ -404,9 +404,9 @@ Great! Now you know how to use the Fragments Toolkit to create and manage Fragme
 
 The Fragments Toolkit is deprecated as of Liferay 2024.Q1+/Portal 7.4 GA107+.
 
-If you need to develop and manage your fragments, there are some alternatives you can use instead:
+There are some alternatives you can use for developing fragments:
 
--  **Export/Import**: If you need to export/import fragments, you can use the [Export/Import](https://learn.liferay.com/web/guest/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments/managing-fragments#managing-fragment-sets) fragment option in your Fragments app to Export/Import fragments in .zip format.
+-  **Export/Import**: If you must export/import fragments, you can use the [Export/Import](https://learn.liferay.com/web/guest/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments/managing-fragments#managing-fragment-sets) fragment option in your Fragments app to Export/Import fragments in .zip format.
 
    ![Export/Import fragments using the Export/Import options available in your Fragments app.](./using-the-fragments-toolkit/images/03.png)
 
@@ -414,7 +414,7 @@ If you need to develop and manage your fragments, there are some alternatives yo
 
    ![Create fragment sets and fragments in your global site to use them throughout the other created sites.](./using-the-fragments-toolkit/images/04.png)
 
--  **Create a Basic Custom Element**: If you need to develop and manage react components, you can create a basic [custom element](../../../building-applications/client-extensions/front-end-client-extensions/tutorials/creating-a-basic-custom-element.md), [host the application files in documents and media](../../../building-applications/client-extensions/front-end-client-extensions/tutorials/creating-a-basic-custom-element.md#hosting-the-application-files), and [register the application as a client extension](../../../building-applications/client-extensions/front-end-client-extensions/tutorials/creating-a-basic-custom-element.md#registering-the-application-with-liferay). This way, you transform your React component into a widget and you can use it in your pages.
+-  **Create a Basic Custom Element**: If you must develop and manage react components, you can create a basic [custom element](../../../building-applications/client-extensions/front-end-client-extensions/tutorials/creating-a-basic-custom-element.md), [host the application files in documents and media](../../../building-applications/client-extensions/front-end-client-extensions/tutorials/creating-a-basic-custom-element.md#hosting-the-application-files), and [register the application as a client extension](../../../building-applications/client-extensions/front-end-client-extensions/tutorials/creating-a-basic-custom-element.md#registering-the-application-with-liferay). This way, you transform your React component into a widget and you can use it in your pages.
 
 -  {bdg-secondary}`Available: Liferay DXP 2023.Q4+/Portal 7.4 GA105+` **Create a React Fragment**: Instantiate a React component in a fragment using static JS imports. See the example code below and its comments.
 
@@ -464,7 +464,7 @@ If you need to develop and manage your fragments, there are some alternatives yo
    ```
 
    !!! note
-       If you want to import a React component that is not included in Liferay's importMap, you can add it by creating an [importMap ClientExtension](https://github.com/liferay/liferay-portal/blob/master/workspaces/liferay-sample-workspace/client-extensions/liferay-sample-etc-frontend-3/client-extension.yaml#L16).
+       If you want to import a React component that is not included in Liferay's `importMap`, you can add it by creating an [importMap ClientExtension](https://github.com/liferay/liferay-portal/blob/master/workspaces/liferay-sample-workspace/client-extensions/liferay-sample-etc-frontend-3/client-extension.yaml#L16).
 
    While editing a page, fragments can be rendered multiple times when users interact with them (e.g. while changing the fragment configuration). To ensure the React component is remounted, add a condition to check the layout mode to the first cleanup process. See the example code below:
 
@@ -478,7 +478,7 @@ If you need to develop and manage your fragments, there are some alternatives yo
    ReactDOM.render(...)
    ```
 
--  **Use a bundler to build your fragments**: If you want to use JSX or multiple files, you need to bundle the files before importing them.
+-  **Use a bundler to build your fragments**: If you want to use JSX or multiple files, you must bundle the files before importing them.
 
    Pay attention that the default behavior of bundlers (e.g. [esbuild](https://esbuild.github.io/api/#external), [webpack](https://webpack.js.org/configuration/externals/), and [vite-plugin-externals](https://github.com/crcong/vite-plugin-externals)) is to merge all content in a single JS file (including React, ReactDOM, and all dependencies). So, you must use methods to select which libraries are not included in the final bundle as the import relies on [importMaps](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script/type/importmap).
 

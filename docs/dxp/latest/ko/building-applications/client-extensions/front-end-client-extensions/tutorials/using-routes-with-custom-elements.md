@@ -4,17 +4,15 @@
 
 사용자 정의 요소 클라이언트 확장은 Liferay의 프런트 엔드 인프라를 사용하여 Liferay 플랫폼에 외부 애플리케이션을 등록하고 이를 위젯으로 렌더링합니다. 여러 경로를 포함하는 애플리케이션의 경우(예: [React Router](https://reactrouter.com/) ) 원격 애플리케이션 속성을 정의하여 런타임 시 위젯에 사용되는 경로를 결정할 수 있습니다. 이러한 속성은 Liferay의 원격 앱 메뉴를 통해 또는 배포된 위젯의 구성 옵션을 통해 애플리케이션에 대해 설정할 수 있습니다.
 
-```{warning}
-다른 유형의 클라이언트 확장과 같은 사용자 정의 요소 또는 IFrame을 배포하는 것은 Liferay 7.4의 **베타 기능**입니다. 이 튜토리얼은 사용자 정의 요소 원격 애플리케이션을 다르게 배포하며 향후 업데이트까지 여전히 권장되는 접근 방식입니다.
-```
+!!! warning
+    다른 유형의 클라이언트 확장과 같은 사용자 정의 요소 또는 IFrame을 배포하는 것은 Liferay 7.4의 **베타 기능**입니다. 이 튜토리얼은 사용자 정의 요소 원격 애플리케이션을 다르게 배포하며 향후 업데이트까지 여전히 권장되는 접근 방식입니다.
 
 이 튜토리얼에서는 `hello-world`, `hello-foo`, `hello-bar`라는 세 가지 경로가 있는 샘플 앱을 생성하는 Liferay의 `create_custom_element.sh` 스크립트를 사용하여 기본 React 애플리케이션을 생성합니다. 애플리케이션을 컴파일하고 `.js` 및 `.css` 파일을 호스팅한 후 Liferay에 애플리케이션을 등록하고 페이지 위젯으로 배포합니다. 마지막으로 각 대체 경로를 사용하도록 구성합니다.
 
 ![Create a basic custom element remote appliaction with alternate routes and use the route property to configure which is rendered.](./using-routes-with-custom-elements/images/01.png)
 
-```{note}
-사용자 정의 요소 클라이언트 확장은 구축, 패키지 또는 호스팅 방법에 관계없이 모든 기술을 사용할 수 있습니다. 이 튜토리얼에서는 기본 라우팅이 포함된 샘플 사용자 정의 요소 애플리케이션만 제공합니다.
-```
+!!! note
+    사용자 정의 요소 클라이언트 확장은 구축, 패키지 또는 호스팅 방법에 관계없이 모든 기술을 사용할 수 있습니다. 이 튜토리얼에서는 기본 라우팅이 포함된 샘플 사용자 정의 요소 애플리케이션만 제공합니다.
 
 `create_custom_element.sh`를 실행하려면 [버전의 Node.JS](https://nodejs.org/) , [NPM](https://www.npmjs.com/) 및 [YARN](https://classic.yarnpkg.com/) 가 필요합니다. 계속하기 전에 이러한 도구가 설치되어 있는지 확인하십시오.
 
@@ -103,9 +101,8 @@
 
 그러면 Liferay 문서 라이브러리에 파일이 추가되고 원격 응용 프로그램을 만드는 데 사용할 고유한 WebDAV URL이 할당됩니다.
 
-```{tip}
-이 튜토리얼은 데모 목적으로 Liferay의 문서 라이브러리에 애플리케이션의 정적 리소스를 호스팅합니다. 프로덕션 환경에서는 정적 리소스 호스팅에 최적화된 서버에서 애플리케이션 파일을 호스팅해야 합니다.
-```
+!!! tip
+    이 튜토리얼은 데모 목적으로 Liferay의 문서 라이브러리에 애플리케이션의 정적 리소스를 호스팅합니다. 프로덕션 환경에서는 정적 리소스 호스팅에 최적화된 서버에서 애플리케이션 파일을 호스팅해야 합니다.
 
 각 파일의 URL을 보려면 **정보** 아이콘(![정보 아이콘](../../../../images/icon-information.png))을 클릭하고 한 번에 하나의 파일을 선택하세요. 각 파일의 **WebDAV URL** 을 복사하고 다음 단계에서 사용할 수 있도록 저장하세요.
 
@@ -113,8 +110,8 @@
 
 예를 들어,
 
-* `http://localhost:8080/webdav/guest/document_library/main.114dde4a.js`
-* `http://localhost:8080/webdav/guest/document_library/main.9877909d.css`
+- `http://localhost:8080/webdav/guest/document_library/main.114dde4a.js`
+- `http://localhost:8080/webdav/guest/document_library/main.9877909d.css`
 
 ## 애플리케이션 등록 및 배포
 
@@ -186,7 +183,7 @@ J1V3-Custom-Element는 인스턴스화 가능하므로 각각 자체적인 독�
 
 ```{literalinclude} ./using-routes-with-custom-elements/resources/liferay-j1v3.zip/j1v3-custom-element/src/index.js
     :language: js
-    :lines: 1-34
+    :lines: 1-63
 ```
 
 이 `index.js` 파일은 `HTMLElement` 인터페이스를 확장하는 `WebComponent` 클래스를 생성합니다. 이 클래스는 인터페이스의 [`connectedCallback()`](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements#using_the_lifecycle_callbacks) 함수를 구현합니다. 이 함수는 `App`을 매개변수로 사용하여 [`ReactDOM.render`](https://reactjs.org/docs/react-dom.html#render) 호출합니다. `App`이 호출되면 정의된 `"route"` 속성을 확인하고 해당 값을 사용 가능한 경로와 비교합니다. `hello-foo` 또는 `hello-bar`와 일치하면 해당 경로를 반환하고 렌더링합니다. 그렇지 않으면 `hello-world`를 반환하고 렌더링합니다.
@@ -210,26 +207,26 @@ routes
 
 ```{literalinclude} ./using-routes-with-custom-elements/resources/liferay-j1v3.zip/j1v3-custom-element/src/routes/hello-world/pages/HelloWorld.js
     :language: js
-    :lines: 1-9
+    :lines: 8-14
 ```
 
 ### HelloFoo.js
 
 ```{literalinclude} ./using-routes-with-custom-elements/resources/liferay-j1v3.zip/j1v3-custom-element/src/routes/hello-foo/pages/HelloFoo.js
     :language: js
-    :lines: 1-9
+    :lines: 8-12
 ```
 
 ### HelloBar.js
 
 ```{literalinclude} ./using-routes-with-custom-elements/resources/liferay-j1v3.zip/j1v3-custom-element/src/routes/hello-bar/pages/HelloBar.js
     :language: js
-    :lines: 1-9
+    :lines: 8-12
 ```
 
 ## 관련 주제
 
-* [프런트엔드 클라이언트 확장](../../front-end-client-extensions.md)
-* [사용자 정의 요소 및 IFrame 클라이언트 확장 이해](../understanding-custom-element-and-iframe-client-extensions.md)
-* [기본 맞춤 요소 만들기](./creating-a-basic-custom-element.md)
-* [원격 애플리케이션 UI 참조](../client-extensions-ui-reference.md)
+- [프런트엔드 클라이언트 확장](../../front-end-client-extensions.md)
+- [사용자 정의 요소 및 IFrame 클라이언트 확장 이해](../understanding-custom-element-and-iframe-client-extensions.md)
+- [기본 맞춤 요소 만들기](./creating-a-basic-custom-element.md)
+- [원격 애플리케이션 UI 참조](../client-extensions-ui-reference.md)

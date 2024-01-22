@@ -324,6 +324,52 @@ The `Goo` logic is similar, except in this case multiple `Goo`s are returned bec
 	}
 ```
 
+## Add a GraphQL Namespace
+
+Liferay supports namespace configuration for your GraphQL applications. You can use namespaces to group queries, mutations, and types for a given application. Specifying namespaces also allows you to use duplicate schemas in different applications. 
+
+!!! info ""
+    See [Consuming GraphQL APIs](../consuming-apis/consuming-graphql-apis.md) for more information on using GraphQL for Liferay applications.
+
+To add and use a GraphQL namespace, follow these steps:
+
+1. Open the `rest-config.yaml` file in your application's `impl` module.
+
+1. Add the `graphQLNamespace` field with the desired namespace name.
+
+    ```yaml
+    graphQLNamespace: "<namespace name>"
+    ```
+
+1. Add the namespace a level below the desired query or mutation objects.
+
+    ```graphql
+    query{
+        <namespace name> {
+            ...
+        }
+    }
+    ```
+
+1. Execute REST Builder to publish all designated queries and mutations in the namespace.
+
+You can also access namespaces in your GraphQL extensions with the `GraphQLContributor` interface. Implement the `getGraphQLNamespace` method to return the desired namespace name.
+
+```java
+public class MyGraphQLContributor implements GraphQLContributor {
+  ...
+  
+  @Override
+  public String getGraphQLNamespace() {
+    return "<namespace name>";
+  }
+  
+  ...
+}
+```
+
+Namespaces are disabled by default in GraphQL extensions.
+
 ## Conclusion
 
 Congratulations! You now know the basics of implementing a new API with REST Builder and have added a new API to DXP.

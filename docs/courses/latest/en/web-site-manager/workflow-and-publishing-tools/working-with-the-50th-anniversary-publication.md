@@ -128,7 +128,7 @@ Next, the announcement fragment in the master page must be replaced with the new
 
 1. Go to _Site Menu_ (![Site Menu](../../images/icon-product-menu.png)) &rarr; _Content & Data_ &rarr; _Web Content_.
 
-1. Click _Add_ (![](../../images/icon-add.png)) &rarr; _Event_ and specify
+1. Click _New_ &rarr; _Event_ and specify
 
    * Title: Clarity is Turning 50!
    * Summary: Clarity is turning 50, so let's celebrate!

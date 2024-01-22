@@ -38,7 +38,7 @@ You can jump right in and create the publication, but Clarity is likely to have 
 
 1. Click *Actions* (![Actions](../../images/icon-actions.png)) &rarr; *Templates*.
 
-1. Click *Add* (![Add](../../images/icon-add.png)) and enter:
+1. Click *New* and enter:
 
    **Template Name:** _Special Event_
 

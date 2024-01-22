@@ -113,7 +113,7 @@ First put all FAQs into a web content folder:
 
 1. Open the _Site Menu_ (![Site Menu](../../images/icon-product-menu.png)) then click _Content & Data_ &rarr; _Web Content_.
 
-1. Click _Add_ (![Add](../../images/icon-add.png)) &rarr; Folder.
+1. Click _New_ &rarr; _Folder_.
 
 1. Enter the name _FAQs_ and click _Save_.
 

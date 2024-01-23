@@ -13,29 +13,28 @@
 
 1. 예제를 다운로드하고 압축을 풉니다.
 
-    ```bash
-    curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/developing-a-java-web-application/using-mvc/liferay-p1z2.zip -O
-    ```
+   ```bash
+   curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/developing-a-java-web-application/using-mvc/liferay-p1z2.zip -O
+   ```
 
-    ```bash
-    unzip liferay-p1z2.zip
-    ```
+   ```bash
+   unzip liferay-p1z2.zip
+   ```
 
 1. 모듈 루트에서 빌드 및 배포합니다.
 
-    ```bash
-    ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
-    ```
+   ```bash
+   ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
+   ```
 
-    ```{note}
-    이 명령은 배포된 jar를 Docker 컨테이너의 /opt/liferay/osgi/modules에 복사하는 것과 동일합니다.
-    ```
+   !!! note
+      이 명령은 배포된 jar를 Docker 컨테이너의 /opt/liferay/osgi/modules에 복사하는 것과 동일합니다.
 
 1. Liferay Docker 컨테이너 콘솔에서 배포를 확인합니다.
 
-    ```bash
-    STARTED com.acme.p1z2.web_1.0.0 [2725]
-    ```
+   ```bash
+   STARTED com.acme.p1z2.web_1.0.0 [2725]
+   ```
 
 1. 예제 모듈이 작동하는지 확인하십시오. 브라우저를 `https://localhost:8080`로 엽니다.
 
@@ -43,7 +42,7 @@
 
 1. 포틀릿의 옵션 아이콘(![options icon](../../../images/icon-options.png))을 클릭하고 **구성** 클릭하십시오. 포틀릿의 기본 설정 창이 열립니다.
 
-    ![구성을 클릭하여 포틀릿의 기본 설정을 엽니다.](./portlet-preferences/images/01.png)
+   ![구성을 클릭하여 포틀릿의 기본 설정을 엽니다.](./portlet-preferences/images/01.png)
 
 1. 다른 색상을 선택하고 **저장** 클릭합니다. 기본 설정 메뉴를 닫으면 이제 포틀릿에 새 선택 항목이 표시됩니다.
 
@@ -70,7 +69,7 @@ JSP 파일은 `<liferay-portlet:actionURL />` 및 `<liferay-portlet:renderURL />
 
 ```{literalinclude} ./portlet-preferences/resources/liferay-p1z2.zip/p1z2-web/src/main/java/com/acme/p1z2/web/internal/portlet/action/P1Z2ConfigurationAction.java
 :language: java
-:lines: 14-34
+:lines: 13-32
 ```
 
 `@Component` 주석에서 `특성` 태그를 사용하여 조치 클래스가 적용되는 포틀렛을 지정하십시오.
@@ -101,4 +100,4 @@ JSP 파일은 선택된 포틀릿 환경 설정을 확인하고 값을 리턴합
 
 ## 관련 정보
 
-* [포틀릿 수준 구성](../../core-frameworks/configuration-framework/portlet-level-configuration.md)
+- [포틀릿 수준 구성](../../core-frameworks/configuration-framework/portlet-level-configuration.md)

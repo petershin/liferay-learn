@@ -1,5 +1,6 @@
 ---
 uuid: 551f4c6e-7cc4-4b94-b46f-681f15d265a0
+taxonomy-category-names:
 - Personalization
 - A/B Testing
 - Liferay Self-Hosted

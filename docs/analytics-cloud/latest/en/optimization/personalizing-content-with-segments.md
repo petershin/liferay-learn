@@ -1,5 +1,6 @@
 ---
 uuid: 78e4d165-d44a-404f-8dda-280be29f745a
+taxonomy-category-names:
 - Personalization
 - User Interests and Content Recommendations
 - Static and Dynamic User Segments

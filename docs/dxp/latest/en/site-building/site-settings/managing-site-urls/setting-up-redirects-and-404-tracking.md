@@ -1,16 +1,17 @@
 ---
 taxonomy-category-names:
-- Sites
-- SEO
-- Liferay Self-Hosted
-- Liferay PaaS
-- Liferay SaaS
+    - Sites
+    - SEO
+    - Liferay Self-Hosted
+    - Liferay PaaS
+    - Liferay SaaS
 toc:
-  - ./setting-up-redirects-and-404-tracking/using-alias-redirects.md
-  - ./setting-up-redirects-and-404-tracking/using-pattern-redirects.md
-  - ./setting-up-redirects-and-404-tracking/tracking-404-urls.md
+    - ./setting-up-redirects-and-404-tracking/using-alias-redirects.md
+    - ./setting-up-redirects-and-404-tracking/using-pattern-redirects.md
+    - ./setting-up-redirects-and-404-tracking/tracking-404-urls.md
 uuid: 19c713cc-87be-41e6-ba6d-fc23ee75ad82
 ---
+
 # Setting Up Redirects and 404 Tracking
 
 ```{toctree}
@@ -23,13 +24,13 @@ setting-up-redirects-and-404-tracking/tracking-404-urls.md
 
 {bdg-secondary}`7.4 U48+/GA48+`
 
-Maintaining URL integrity is important for any site. Liferay's *Redirection* tool provides a convenient and integrated way to manage HTTP redirects and track 404 errors for individual sites. Use it to avoid and fix broken links, improving both user experience and site SEO.
+Maintaining URL integrity is important for any site. Liferay's _Redirection_ tool provides a convenient and integrated way to manage HTTP redirects and track 404 errors for individual sites. Use it to avoid and fix broken links, improving both user experience and site SEO.
 
-To access the application, open the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)) and go to *Configuration* &rarr; *Redirection*.
+To access the application, open the _Site Menu_ (![Site Menu](../../../images/icon-product-menu.png)) and go to _Configuration_ &rarr; _Redirection_.
 
 ![Go to the Redirection page in the Site Menu.](./setting-up-redirects-and-404-tracking/images/01.png)
 
-Liferay automatically sets up redirects for pages, blog entries, and documents with a friendly URL history. See [Configuring Friendly URL Redirects](./configuring-friendly-url-redirects.md) for more information.
+Liferay automatically creates a friendly URL history for page, blog entry, and document URLs. See [Configuring Friendly URL Redirects](./configuring-friendly-url-redirects.md) for more information.
 
 ## Defining Redirects
 

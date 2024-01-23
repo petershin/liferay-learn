@@ -410,15 +410,11 @@ There are some alternatives you can use for developing fragments:
 
    ![Export/Import fragments using the Export/Import options available in your Fragments app.](./using-the-fragments-toolkit/images/03.png)
 
--  **Use the Global Site**: Alternatively, create your fragments in your global site and those fragments are available in other sites you create.
-
-   ![Create fragment sets and fragments in your global site to use them throughout the other created sites.](./using-the-fragments-toolkit/images/04.png)
-
--  **Create a Basic Custom Element**: If you must develop and manage react components, you can create a basic [custom element](../../../building-applications/client-extensions/front-end-client-extensions/tutorials/creating-a-basic-custom-element.md), [host the application files in documents and media](../../../building-applications/client-extensions/front-end-client-extensions/tutorials/creating-a-basic-custom-element.md#hosting-the-application-files), and [register the application as a client extension](../../../building-applications/client-extensions/front-end-client-extensions/tutorials/creating-a-basic-custom-element.md#registering-the-application-with-liferay). This way, you transform your React component into a widget and you can use it in your pages.
+-  **Create a Basic Custom Element**: If you must develop and manage react components, you can create a basic [custom element client extension](../../../building-applications/client-extensions/front-end-client-extensions/tutorials/creating-a-basic-custom-element.md). This way, you transform your React component into a widget and you can use it in your pages.
 
 -  {bdg-secondary}`Available: Liferay DXP 2023.Q4+/Portal 7.4 GA105+` **Create a React Fragment**: Instantiate a React component in a fragment using static JS imports. See the example code below and its comments.
 
-   ![Instantiate a React component in a fragment using static JS imports.](./using-the-fragments-toolkit/images/05.png)
+   ![Instantiate a React component in a fragment using static JS imports.](./using-the-fragments-toolkit/images/04.png)
 
    ```javascript
    // Import statements. Clay Components, React, and ReactDOM are already included in Liferay's importMap.

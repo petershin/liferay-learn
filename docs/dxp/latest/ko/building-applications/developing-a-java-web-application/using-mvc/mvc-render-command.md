@@ -23,41 +23,40 @@ MVC 렌더 명령은 렌더링할 페이지를 처리하는 클래스입니다. 
 
 1. 예제를 빌드하고 배포합니다.
 
-    ```bash
-    cd liferay-a4p1
-    ```
+   ```bash
+   cd liferay-a4p1
+   ```
 
-    ```bash
-    ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
-    ```
+   ```bash
+   ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
+   ```
 
-    ```{note}
-    이 명령은 모듈 JAR을 Docker 컨테이너의 `/opt/liferay/osgi/modules`에 복사하는 것과 동일합니다.
-    ```
+   !!! note
+      이 명령은 모듈 JAR을 Docker 컨테이너의 `/opt/liferay/osgi/modules`에 복사하는 것과 동일합니다.
 
 1. Docker 컨테이너 콘솔에서 배포를 확인합니다.
 
-    ```bash
-    STARTED com.acme.a4p1.web_1.0.0
-    ```
+   ```bash
+   STARTED com.acme.a4p1.web_1.0.0
+   ```
 
 1. **샘플** 카테고리의 **A4P1 포틀릿** 위젯을 위젯 페이지에 추가하십시오. A4P1 포틀릿이 나타납니다.
 
-    ![A4P1 포틀릿을 페이지에 추가했습니다.](./mvc-render-command/images/01.png)
+   ![A4P1 포틀릿을 페이지에 추가했습니다.](./mvc-render-command/images/01.png)
 
 1. **Go to Baker** 클릭하여 Baker 보기를 방문하는 MVC 렌더링 명령을 호출합니다. `A4P1BakerMVCRenderCommand` `렌더` 메소드 호출을 기록하고 Baker 뷰를 렌더링합니다.
 
-    ```bash
-    [A4P1BakerMVCRenderCommand:26] Invoking #render(RenderRequest, RenderResponse)
-    ```
+   ```bash
+   [A4P1BakerMVCRenderCommand:26] Invoking #render(RenderRequest, RenderResponse)
+   ```
 
-    ![Baker 뷰를 렌더링하고 있습니다.](./mvc-render-command/images/02.png)
+   ![Baker 뷰를 렌더링하고 있습니다.](./mvc-render-command/images/02.png)
 
 1. 다른 MVC 렌더링 명령을 호출하고 **Go to Able** 을 클릭하여 Able 보기를 다시 방문합니다. `A4P1AbleMVCRenderCommand` `render` 메소드 호출을 기록하고 Able 뷰를 다시 렌더링합니다.
 
-    ```bash
-    [A4P1AbleMVCRenderCommand:26] Invoking #render(RenderRequest, RenderResponse)
-    ```
+   ```bash
+   [A4P1AbleMVCRenderCommand:26] Invoking #render(RenderRequest, RenderResponse)
+   ```
 
 MVC 렌더 명령이 실제로 작동하는 것을 보았습니다. 이제 어떻게 작동하는지 알아보세요.
 
@@ -81,9 +80,8 @@ MVC 렌더 명령이 실제로 작동하는 것을 보았습니다. 이제 어�
 
 포틀릿은 기본적으로 `/a4p1/able.jsp` 렌더링합니다.
 
-```{note}
-`MVCRenderCommand`는 포틀릿 이름(예: 포틀릿 구성 요소 `javax.portlet.name` 속성 값)으로 포틀릿에 바인딩됩니다.
-```
+!!! note
+   `MVCRenderCommand`는 포틀릿 이름(예: 포틀릿 구성 요소 `javax.portlet.name` 속성 값)으로 포틀릿에 바인딩됩니다.
 
 다음은 포틀릿의 MVC Render Command 클래스입니다.
 
@@ -98,19 +96,17 @@ MVC 렌더 명령 클래스는 [`MVCRenderCommand`](https://github.com/liferay/l
 
 `A4P1AbleMVCRenderCommand` `MVCRenderCommand` 서비스를 제공하는 [`구성 요소`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Component.html) 입니다. 구성 요소 속성은 `A4P1AbleMVCRenderCommand` 을 `com_acme_a4p1_web_internal_portlet_A4P1Portlet` 포틀릿에 적용하고 `A4P1AbleMVCRenderCommand` MVC 명령 이름 `/a4p1/able`에 매핑합니다.
 
-```{note}
-각 포틀릿에 대해 별도의 `javax.portlet.name` 속성을 선언하여 `MVCRenderCommand` 구성 요소를 여러 포틀릿과 연결할 수 있습니다.
-
+!!! note
+   각 포틀릿에 대해 별도의 `javax.portlet.name` 속성을 선언하여 `MVCRenderCommand` 구성 요소를 여러 포틀릿과 연결할 수 있습니다.
 
       @Component(
-         property = {
-            "javax.portlet.name=com_acme_a4p1_web_internal_portlet_A4P1Portlet",
-            "javax.portlet .name=com_acme_a4p1_web_internal_portlet_A4P2Portlet",
-            "mvc.command.name=/a4p1/download"
-         },
-         서비스 = MVCRenderCommand.class
-)
-```
+          property = {
+              "javax.portlet.name=com_acme_a4p1_web_internal_portlet_A4P1Portlet",
+              "javax.portlet .name=com_acme_a4p1_web_internal_portlet_A4P2Portlet",
+              "mvc.command.name=/a4p1/download"
+          },
+          서비스 = MVCRenderCommand.class
+      )
 
 포틀릿이 MVC 명령 이름 `/a4p1/able`지정하는 요청 매개변수를 수신하면 `A4P1AbleMVCRenderCommand`의 `render` 메소드가 실행됩니다. 이 `render` 메서드는 자신을 식별하는 메시지를 기록한 다음 렌더링할 뷰의 경로를 반환합니다.
 
@@ -148,7 +144,7 @@ MVC 렌더 명령 클래스는 [`MVCRenderCommand`](https://github.com/liferay/l
 
 ## 관련 주제
 
-* [MVC 리소스 명령](./mvc-resource-command.md)
-* [MVC 작업 명령](./mvc-action-command.md)
-* [MVC 포틀릿에서 현지화된 메시지 사용](./using-localized-messages-in-an-mvc-portlet.md)
-* [포틀릿](../reference/portlets.md)
+- [MVC 리소스 명령](./mvc-resource-command.md)
+- [MVC 작업 명령](./mvc-action-command.md)
+- [MVC 포틀릿에서 현지화된 메시지 사용](./using-localized-messages-in-an-mvc-portlet.md)
+- [포틀릿](../reference/portlets.md)

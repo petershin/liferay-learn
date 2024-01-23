@@ -51,26 +51,26 @@ Liferay의 REST API는 Liferay DXP/Portal의 태그에 대한 서비스를 제�
 
 1. **관리 메뉴** &rarr; **분류** &rarr; **태그** 로 이동하여 태그 애플리케이션으로 이동합니다. 새 태그가 추가되었는지 확인합니다.
 
-    ![새 태그가 추가되었는지 확인합니다.](./tags-api-basics/images/01.png)
+   ![새 태그가 추가되었는지 확인합니다.](./tags-api-basics/images/01.png)
 
 1. REST 서비스는 Java 클라이언트를 사용하여 호출할 수도 있습니다. `curl` 폴더에서 `java` 폴더로 이동합니다. 다음 명령을 사용하여 소스 파일을 컴파일합니다.
 
-    ```bash
-    javac -classpath .:* *.java
-    ```
+   ```bash
+   javac -classpath .:* *.java
+   ```
 
 1. 다음 명령으로 `Keyword_POST_ToSite` 클래스를 실행합니다. `siteId` 값을 사이트 ID로 바꿉니다.
 
-    ```bash
-    java -classpath .:* -DsiteId=1234 Keyword_POST_ToSite
-    ```
+   ```bash
+   java -classpath .:* -DsiteId=1234 Keyword_POST_ToSite
+   ```
 
 ## cURL 명령 검사
 
 `Keyword_POST_ToSite.sh` 스크립트는 cURL 명령으로 REST 서비스를 호출합니다.
 
 ```{literalinclude} ./tags-api-basics/resources/liferay-r7u9.zip/curl/Keyword_POST_ToSite.sh
-    :language: bash
+   :language: bash
 ```
 
 명령의 인수는 다음과 같습니다.
@@ -83,9 +83,8 @@ Liferay의 REST API는 Liferay DXP/Portal의 태그에 대한 서비스를 제�
 | `-d "{\"name\": \"Foo\"}"`                                               | 게시를 요청하는 데이터            |
 | `-u "test@liferay.com:learn"`                                                | 기본 인증 자격 증명             |
 
-```{note}
-여기서는 데모용으로 기본 인증이 사용됩니다. 프로덕션의 경우 [OAuth2](../../../headless-delivery/using-oauth2.md)을 통해 사용자를 인증해야 합니다. OAuth2를 사용하는 샘플 React 애플리케이션은 [OAuth2를 사용하여 사용자 인증하기](../../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md)를 참조하세요.
-```
+!!! note
+   여기서는 데모용으로 기본 인증이 사용됩니다. 프로덕션의 경우 [OAuth2](../../../headless-delivery/using-oauth2.md)을 통해 사용자를 인증해야 합니다. OAuth2를 사용하는 샘플 React 애플리케이션은 [OAuth2를 사용하여 사용자 인증하기](../../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md)를 참조하세요.
 
 다른 cURL 명령은 유사한 JSON 인수를 사용합니다.
 
@@ -96,7 +95,7 @@ Liferay의 REST API는 Liferay DXP/Portal의 태그에 대한 서비스를 제�
 ```{literalinclude} ./tags-api-basics/resources/liferay-r7u9.zip/java/Keyword_POST_ToSite.java
    :dedent: 1
    :language: java
-   :lines: 9-26
+   :lines: 9-25
 ```
 
 이 클래스는 세 줄의 코드만 사용하여 REST 서비스를 호출합니다.
@@ -109,15 +108,13 @@ Liferay의 REST API는 Liferay DXP/Portal의 태그에 대한 서비스를 제�
 
 프로젝트에는 `com.liferay.headless.admin.taxonomy.client.jar` 파일이 종속성으로 포함되어 있습니다. `/o/api`에 설치된 API 탐색기에서 모든 REST 애플리케이션에 대한 클라이언트 JAR 종속성 정보를 찾을 수 있습니다.
 
-```{note}
-`main` 메서드의 주석은 클래스 실행을 보여줍니다.
-```
+!!! note
+   `main` 메서드의 주석은 클래스 실행을 보여줍니다.
 
 다른 예제 Java 클래스는 이것과 유사하지만 다른 `KeywordResource` 메소드를 호출합니다.
 
-```{important}
-서비스에 대한 자세한 내용은 [KeywordResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-taxonomy/headless-admin-taxonomy-client/src/main/java/com/liferay/headless/admin/taxonomy/client/resource/v1_0/KeywordResource.java) 를 참조하세요.
-```
+!!! important
+   서비스에 대한 자세한 내용은 [KeywordResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-taxonomy/headless-admin-taxonomy-client/src/main/java/com/liferay/headless/admin/taxonomy/client/resource/v1_0/KeywordResource.java) 를 참조하세요.
 
 다음은 cURL과 Java를 사용하여 다른 `Keyword` REST 서비스를 호출하는 예입니다.
 
@@ -161,9 +158,8 @@ java -classpath .:* -DsiteId=1234 Keywords_GET_FromSite
 
 다음 cURL 또는 Java 명령을 사용하여 특정 태그를 가져옵니다. `1234` 태그의 ID로 바꿉니다.
 
-```{tip}
-``Keywords_GET_FromSite.[java|sh]``를 사용하여 사이트 ``Keyword`` ID를 가져옵니다.
-```
+!!! tip
+   ``Keywords_GET_FromSite.[java|sh]``를 사용하여 사이트 ``Keyword`` ID를 가져옵니다.
 
 ### Keyword_GET_ById.sh
 

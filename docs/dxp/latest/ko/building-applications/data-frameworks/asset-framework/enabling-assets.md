@@ -25,9 +25,9 @@ Liferay의 다양한 애플리케이션(예: 블로그, 문서 및 미디어, �
    ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
    ```
 
-   ```{note}
-   이 명령은 배포된 jar를 Docker 컨테이너의 `/opt/liferay/osgi/modules`에 복사하는 것과 동일합니다.
-   ```
+    !!! note
+        이 명령은 배포된 jar를 Docker 컨테이너의 `/opt/liferay/osgi/modules`에 복사하는 것과 동일합니다.
+
 1. Liferay Docker 컨테이너 콘솔에서 배포를 확인합니다.
 
    ```bash
@@ -54,9 +54,8 @@ Liferay의 다양한 애플리케이션(예: 블로그, 문서 및 미디어, �
 
 `*ModelSearchConfigurator.java` - 애플리케이션 엔터티(예: `com.acme.s5e6.search.S5E6EntryModelSearchConfigurator.java` 클래스)에 대한 검색 프레임워크에 검색 서비스를 등록합니다.
 
-```{note}
-'ModelSearchConfigurator' 패턴은 Liferay 2023.Q4+ 및 GA/Update 100+에 적용됩니다. 이전 버전에서는 'SearchRegistrar'를 사용했습니다. 'SearchRegistrar'를 구현하려면  [Liferay 7.2 문서](https://help.liferay.com/hc/ko/articles/360032611231-Search-Service-Registration) 참조하세요.
-```
+!!! note
+    'ModelSearchConfigurator' 패턴은 Liferay 2023.Q4+ 및 GA/Update 100+에 적용됩니다. 이전 버전에서는 'SearchRegistrar'를 사용했습니다. 'SearchRegistrar'를 구현하려면  [Liferay 7.2 문서](https://help.liferay.com/hc/ko/articles/360032611231-Search-Service-Registration) 참조하세요.
 
 `*ModelIndexerWriterContributor.java` - 항목의 재인덱싱 및 일괄 재인덱싱 동작을 구성합니다(예: `com.acme.s5e6.search.S5E6EntryModelIndexerWriterContributor.java` 클래스).
 
@@ -105,9 +104,9 @@ Liferay의 다양한 애플리케이션(예: 블로그, 문서 및 미디어, �
 예제 프로젝트의 모습은 다음과 같습니다.
 
 ```{literalinclude} ./enabling-assets/resources/liferay-s5e6.zip/s5e6-service/src/main/java/com/acme/s5e6/service/impl/S5E6EntryLocalServiceImpl.java
-:dedent: 1
-:language: java
-:lines: 64-73
+    :dedent: 2
+    :language: java
+    :lines: 64-73
 ```
 
 [`AssetEntryLocalServiceImpl` 클래스](https://resources.learn.liferay.com/reference/latest/en/dxp/javadocs/portal-impl/com/liferay/portlet/asset/service/impl/AssetEntryLocalServiceImpl.html) 에 대한 Javadoc을 확인하면 메소드가 오버로드된 것을 볼 수 있습니다. 자산 항목의 제목을 설정할 수 있도록 `title` 매개변수를 사용하는 `updateEntry()` 버전을 사용합니다.
@@ -128,19 +127,19 @@ Liferay의 다양한 애플리케이션(예: 블로그, 문서 및 미디어, �
 
 1. 자산 렌더러 클래스의 생성자를 정의합니다.
 
-   ```java
+    ```java
    	public S5E6EntryAssetRenderer(S5E6Entry s5e6Entry) {
     	_s5e6Entry = s5e6Entry;
     }
-   ```
+    ```
 
 1. 다양한 getter 메서드를 사용하여 자산 렌더러를 자산에 연결합니다.
 
-   ```{literalinclude} ./enabling-assets/resources/liferay-s5e6.zip/s5e6-web/src/main/java/com/acme/s5e6/web/internal/asset/model/S5E6EntryAssetRenderer.java
-   :dedent: 1
-   :language: java
-   :lines: 20-72
-   ```
+    ```{literalinclude} ./enabling-assets/resources/liferay-s5e6.zip/s5e6-web/src/main/java/com/acme/s5e6/web/internal/asset/model/S5E6EntryAssetRenderer.java
+        :dedent: 1
+        :language: java
+        :lines: 20-72
+    ```
 
    이 예에서 `getTitle()` 메소드는 `name` 속성으로 설정되고 `getSummary()` 메소드는 애플리케이션의 `description` 속성으로 설정됩니다.
 
@@ -150,52 +149,52 @@ Liferay의 다양한 애플리케이션(예: 블로그, 문서 및 미디어, �
 
 1. 위와 동일한 폴더에 Liferay의 `BaseAssetRendererFactory` 클래스를 확장하는 `-AssetRendererFactory` 클래스를 만듭니다. 예를 들어,
 
-   ```java
-   public class S5E6EntryAssetRendererFactory extends BaseAssetRendererFactory<S5E6Entry> {
+    ```java
+    public class S5E6EntryAssetRendererFactory extends BaseAssetRendererFactory<S5E6Entry> {
 
-   }
-   ```
+    }
+    ```
 
 1. 클래스 선언 위에 `@Component` 주석을 만듭니다. 이 주석은 자산의 팩토리 인스턴스를 등록합니다. `service` 요소는 `AssetRenderFactory.class` 인터페이스를 가리켜야 합니다.
 
-   ```java
-   @Component(service = AssetRendererFactory.class)
-   ```
+    ```java
+    @Component(service = AssetRendererFactory.class)
+    ```
 
 1. 팩토리의 속성을 미리 설정하는 팩토리 클래스의 생성자를 만듭니다.
 
-   ```{literalinclude} ./enabling-assets/resources/liferay-s5e6.zip/s5e6-web/src/main/java/com/acme/s5e6/web/internal/asset/model/S5E6EntryAssetRendererFactory.java
-   :dedent: 1
-   :language: java
-   :lines: 24-29
-   ```
+    ```{literalinclude} ./enabling-assets/resources/liferay-s5e6.zip/s5e6-web/src/main/java/com/acme/s5e6/web/internal/asset/model/S5E6EntryAssetRendererFactory.java
+        :dedent: 1
+        :language: java
+        :lines: 24-29
+    ```
 
-   다른 자산이 귀하의 자산을 관련 자산으로 선택할 수 있도록 'setLinkable'을 'true'로 설정하세요. 검색 시 자산을 찾을 수 있도록 `setSearchable`을 `true`로 설정하세요.
+    다른 자산이 귀하의 자산을 관련 자산으로 선택할 수 있도록 'setLinkable'을 'true'로 설정하세요. 검색 시 자산을 찾을 수 있도록 `setSearchable`을 `true`로 설정하세요.
 
 1. 새로운 `S5E6AssetRenderer` 인스턴스를 생성하는 `getAssetRenderer` 메서드를 구현합니다.
 
-   ```{literalinclude} ./enabling-assets/resources/liferay-s5e6.zip/s5e6-web/src/main/java/com/acme/s5e6/web/internal/asset/model/S5E6EntryAssetRendererFactory.java
-   :dedent: 1
-   :language: java
-   :lines: 31-43
-   ```
+    ```{literalinclude} ./enabling-assets/resources/liferay-s5e6.zip/s5e6-web/src/main/java/com/acme/s5e6/web/internal/asset/model/S5E6EntryAssetRendererFactory.java
+        :dedent: 1
+        :language: java
+        :lines: 31-43
+    ```
 
 1. 모듈의 기호 이름을 정의하려면 `@Reference` 주석을 사용하세요.
 
-   ```java
-   @Reference(
-   	target = "(osgi.web.symbolicname=com.acme.s5e6.web)"
-   )
-   ```
+    ```java
+    @Reference(
+   	    target = "(osgi.web.symbolicname=com.acme.s5e6.web)"
+    )
+    ```
 
 ## 포틀릿 수정
 
 `S5E6Portlet`의 `addS5E6Entry` 메소드는 `S5E6Entry` 인스턴스 추가 요청을 처리합니다.
 
 ```{literalinclude} ./enabling-assets/resources/liferay-s5e6.zip/s5e6-web/src/main/java/com/acme/s5e6/web/internal/portlet/S5E6Portlet.java
-:dedent: 1
-:language: java
-:lines: 32-46
+    :dedent: 1
+    :language: java
+    :lines: 32-46
 ```
 
 `addS5E6Entry`는 포틀릿 작업 메서드이므로 `ActionRequest` 및 `ActionResponse` 매개변수를 사용합니다. 새 항목을 추가하기 위해 서비스를 호출하려면 요청에서 `제목`과 `설명`을 검색해야 합니다. 'serviceContext'도 요청에서 검색하여 서비스 호출의 인수로 전달해야 합니다.

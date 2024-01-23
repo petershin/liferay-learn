@@ -1,4 +1,8 @@
 ---
+taxonomy-category-names:
+- Cloud
+- Cloud Migration
+- Liferay PaaS
 uuid: ddb2c5da-3501-4616-a2bb-5126c89f91e0
 ---
 # Stage 1: Matching DXP Versions

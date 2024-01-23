@@ -9,6 +9,10 @@ toc:
   - ./migrating-to-liferay-cloud/migrating-search-configurations.md
   - ./migrating-to-liferay-cloud/connecting-the-vpn.md
   - ./migrating-to-liferay-cloud/next-steps-after-migration.md
+taxonomy-category-names:
+- Cloud
+- Cloud Migration
+- Liferay PaaS
 uuid: 479323c5-0bf4-4526-a004-f176953841cb
 ---
 # Migrating to Liferay Cloud

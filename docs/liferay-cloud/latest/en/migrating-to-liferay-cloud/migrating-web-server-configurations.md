@@ -1,4 +1,8 @@
 ---
+taxonomy-category-names:
+- Cloud
+- Cloud Migration
+- Liferay PaaS
 uuid: 0681da6b-9aa6-4143-a616-e2f23dbb9930
 ---
 # Stage 5: Migrating Web Server Configurations

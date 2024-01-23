@@ -1,4 +1,8 @@
 ---
+taxonomy-category-names:
+- Cloud
+- Cloud Migration
+- Liferay PaaS
 uuid: e9b5fd5d-8acd-41fe-83f0-472a585b76c6
 ---
 # Stage 8: Next Steps After Migration

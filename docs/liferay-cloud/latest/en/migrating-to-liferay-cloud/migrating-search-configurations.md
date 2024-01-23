@@ -1,4 +1,8 @@
 ---
+taxonomy-category-names:
+- Cloud
+- Cloud Migration
+- Liferay PaaS
 uuid: c1d63ad1-c9f2-4025-ba63-ef36731b6fc3
 ---
 # Stage 6: Migrating Search Configurations

@@ -1,4 +1,8 @@
 ---
+taxonomy-category-names:
+- Cloud
+- Cloud Migration
+- Liferay PaaS
 uuid: fe7aed42-f846-4664-804e-26a3cbb0ffed
 ---
 # Stage 4: Migrating DXP Configurations and Customizations

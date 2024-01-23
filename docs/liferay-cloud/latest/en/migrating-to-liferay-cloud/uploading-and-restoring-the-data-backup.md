@@ -1,4 +1,8 @@
 ---
+taxonomy-category-names:
+- Cloud
+- Cloud Migration
+- Liferay PaaS
 uuid: 80e4d534-5071-4f22-b00f-2a463d8e3e9b
 ---
 # Stage 3: Uploading and Restoring the Data Backup

@@ -1,4 +1,8 @@
 ---
+taxonomy-category-names:
+- Cloud
+- Cloud Migration
+- Liferay PaaS
 uuid: 2aa9f681-e540-4cbd-bc1e-e45d14243e25
 ---
 # Stage 7: Connecting the VPN

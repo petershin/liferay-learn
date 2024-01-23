@@ -1,4 +1,8 @@
 ---
+taxonomy-category-names:
+- Cloud
+- Cloud Migration
+- Liferay PaaS
 uuid: ee3a8169-8408-4c36-afbc-9976f0ef3866
 ---
 # Stage 2: Creating Data Backup Files

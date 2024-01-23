@@ -1,8 +1,7 @@
 # 旧バージョンでダイレクトシンクロナスメッセージを使用する場合
 
-```{important}
-同期メッセージは削除され、Liferay DXP 7.4 U49/Liferay Portal 7.4 GA49 以降ではサポートされなくなりました。
-```
+!!! important
+   同期メッセージは削除され、Liferay DXP 7.4 U49/Liferay Portal 7.4 GA49 以降ではサポートされなくなりました。
 
 ダイレクト同期メッセージングは、すべてのリスナーがメッセージを受信するまで処理をブロックする最も簡単な方法です。 `SynchronousMessageSender`の`send(String, Message)`メソッドを呼び出し、宛先名とメッセージインスタンスを渡します。 `SynchronousMessageSender`は、現在のスレッドを使用して、宛先に登録されている各メッセージリスナーで直接メッセージ受信を処理します。 リスナーの処理が完了すると、`send(String, Message)`メソッドを呼び出したクラスで実行が続行されます。 この例は、ダイレクト同期メッセージングの使用をデモしています。
 
@@ -22,36 +21,35 @@ docker run -it -m 8g -p 8080:8080 liferay/portal:7.4.3.48-ga48
 
 1. サンプルをダウンロードして解凍します。
 
-    ```bash
-    curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/message-bus/liferay-x6n5.zip -O
-    ```
+   ```bash
+   curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/message-bus/liferay-x6n5.zip -O
+   ```
 
-    ```bash
-    unzip liferay-x6n5.zip
-    ```
+   ```bash
+   unzip liferay-x6n5.zip
+   ```
 
 1. サンプルのプロジェクトモジュールをビルドしてデプロイします。
 
-    ```bash
-    cd liferay-x6n5
-    ```
+   ```bash
+   cd liferay-x6n5
+   ```
 
-    ```bash
-    ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
-    ```
+   ```bash
+   ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
+   ```
 
-    ```{note}
-    このコマンドは、モジュールJARをDockerコンテナの`/opt/liferay/osgi/modules`にコピーするのと同じです。
-    ```
+   !!! note
+      このコマンドは、モジュールJARをDockerコンテナの`/opt/liferay/osgi/modules`にコピーするのと同じです。
 
 1. Dockerコンテナコンソールに、モジュールが起動されたことが示されます。
 
-    ```bash
-    STARTED com.acme.x6n5.able.impl_1.0.0
-    STARTED com.acme.x6n5.baker.impl_1.0.0
-    STARTED com.acme.x6n5.charlie.impl_1.0.0
-    STARTED com.acme.x6n5.dog.impl_1.0.0
-    ```
+   ```bash
+   STARTED com.acme.x6n5.able.impl_1.0.0
+   STARTED com.acme.x6n5.baker.impl_1.0.0
+   STARTED com.acme.x6n5.charlie.impl_1.0.0
+   STARTED com.acme.x6n5.dog.impl_1.0.0
+   ```
 
 1. ブラウザで`http://localhost:8080`にあるLiferayインスタンスにアクセスし、認証情報を使用してサインインします。
 
@@ -59,17 +57,17 @@ docker run -it -m 8g -p 8080:8080 liferay/portal:7.4.3.48-ga48
 
 1. Gogoシェルコマンドフィールドに、`x6n5:sendMessage`と入力し、その後にメッセージを入力します。 例:
 
-    ```groovy
-    x6n5:sendMessage foo
-    ```
+   ```groovy
+   x6n5:sendMessage foo
+   ```
 
 1. 出力が次のようになっていることを確認します。
 
-    ```
+   ```
    INFO  [pipe-x6n5:sendMessage foo][X6N5DogMessageListener:21] Received message payload foo
    INFO  [pipe-x6n5:sendMessage foo][X6N5CharlieMessageListener:21] Received message payload foo
    INFO  [pipe-x6n5:sendMessage foo][X6N5BakerOSGiCommands:28] Response: X6N5CharlieMessageListener
-    ```
+   ```
 
 スレッドは、メッセージを送信するときにメッセージ送信者（つまり、`X6N5BakerOSGiCommands`）でブロックされます。  `X6N5CharlieMessageListener`および`X6N5DogMessageListener`でメッセージを処理した後、スレッドはメッセージ送信者で続行されます。
 
@@ -115,14 +113,13 @@ docker run -it -m 8g -p 8080:8080 liferay/portal:7.4.3.48-ga48
 
 ```{literalinclude} ./using-direct-synchronous-messaging/resources/liferay-x6n5.zip/x6n5-baker-impl/src/main/java/com/acme/x6n5/baker/internal/osgi/commands/X6N5BakerOSGiCommands.java
    :language: java
-   :lines: 12-37
+   :lines: 10-30
 ```
 
 `X6N5BakerOSGiCommands`は、独自のクラスタイプのサービス`Component`です。 これは、`@Reference`アノテーションを使用して、 **ダイレクト** モード（アノテーションの`target = "(mode=DIRECT)"`属性で指定）に設定された`SynchronousMessageSender`を挿入します。
 
-```{note}
-*ダイレクト*モードでは、`SynchronousMessageSender` `send`メソッドは、現在のスレッドがすべてのリスナーにメッセージを配信するまで、呼び出し元のクラスをブロックします。
-```
+!!! note
+   *ダイレクト*モードでは、`SynchronousMessageSender` `send`メソッドは、現在のスレッドがすべてのリスナーにメッセージを配信するまで、呼び出し元のクラスをブロックします。
 
 `X6N5BakerOSGiCommands`の`@Component`プロパティは、`sendMessage`と呼ばれるGogoシェルコマンド関数を`x6n5`スコープで定義します。 コマンドは`sendMessage(String)`メソッドにマッピングされ、入力`String`を受け取ります。
 
@@ -136,14 +133,14 @@ docker run -it -m 8g -p 8080:8080 liferay/portal:7.4.3.48-ga48
 
 ```{literalinclude} ./using-direct-synchronous-messaging/resources/liferay-x6n5.zip/x6n5-charlie-impl/src/main/java/com/acme/x6n5/charlie/internal/messaging/X6N5CharlieMessageListener.java
    :language: java
-   :lines: 10-28
+   :lines: 8-21
 ```
 
 `X6N5DogMessageListener`クラス：
 
 ```{literalinclude} ./using-direct-synchronous-messaging/resources/liferay-x6n5.zip/x6n5-dog-impl/src/main/java/com/acme/x6n5/dog/internal/messaging/X6N5DogMessageListener.java
    :language: java
-   :lines: 10-28
+   :lines: 8-22
 ```
 
 各リスナーの`receive(Message)`メソッドは、メッセージペイロードをログに記録してから、メッセージ応答を独自のクラス名に設定します。
@@ -158,7 +155,7 @@ docker run -it -m 8g -p 8080:8080 liferay/portal:7.4.3.48-ga48
 
 ## 関連トピック
 
-* [メッセージバス](../message-bus.md)
-* [メッセージのリッスン](./listening-for-messages.md)
-* [非同期メッセージングの使用](./using-asynchronous-messaging.md)
-* [登録イベントをリッスンする](./listening-for-registration-events.md)
+- [メッセージバス](../message-bus.md)
+- [メッセージのリッスン](./listening-for-messages.md)
+- [非同期メッセージングの使用](./using-asynchronous-messaging.md)
+- [登録イベントをリッスンする](./listening-for-registration-events.md)

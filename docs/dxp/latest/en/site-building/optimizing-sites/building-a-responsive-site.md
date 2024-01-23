@@ -1,13 +1,13 @@
 ---
+toc:
+  - ./building-a-responsive-site/building-responsive-layouts-with-the-grid-fragment.md
+  - ./building-a-responsive-site/using-the-simulation-panel.md
 taxonomy-category-names:
 - Sites
 - Accessibility
 - Liferay Self-Hosted
 - Liferay PaaS
 - Liferay SaaS
-toc:
-  - ./building-a-responsive-site/building-responsive-layouts-with-the-grid-fragment.md
-  - ./building-a-responsive-site/using-the-simulation-panel.md
 uuid: 60f0d6ab-cd15-4649-9af4-00afdcaaf0d1
 ---
 # Building a Responsive Site

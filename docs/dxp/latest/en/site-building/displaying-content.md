@@ -1,10 +1,4 @@
 ---
-taxonomy-category-names:
-- Sites
-- Pages and Composition
-- Liferay Self-Hosted
-- Liferay PaaS
-- Liferay SaaS
 toc:
   - ./displaying-content/displaying-content-intro.md
   - ./displaying-content/using-collections.md
@@ -13,6 +7,12 @@ toc:
   - ./displaying-content/using-display-page-templates.md
   - ./displaying-content/additional-content-display-options.md
   - ./displaying-content/using-information-templates.md
+taxonomy-category-names:
+- Sites
+- Pages and Composition
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: c3605866-6611-43cb-85f3-0f2853f6b5f4
 ---
 # Displaying Content

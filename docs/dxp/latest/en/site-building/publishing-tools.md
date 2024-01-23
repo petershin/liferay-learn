@@ -1,14 +1,14 @@
 ---
+toc:
+  - ./publishing-tools/comparing-publishing-tools.md
+  - ./publishing-tools/publications.md
+  - ./publishing-tools/staging.md
 taxonomy-category-names:
 - Platform
 - Publishing Tools
 - Liferay Self-Hosted
 - Liferay PaaS
 - Liferay SaaS
-toc:
-  - ./publishing-tools/comparing-publishing-tools.md
-  - ./publishing-tools/publications.md
-  - ./publishing-tools/staging.md
 uuid: af93e7f6-acd1-48ea-b172-95b10436de00
 ---
 # Publishing Tools

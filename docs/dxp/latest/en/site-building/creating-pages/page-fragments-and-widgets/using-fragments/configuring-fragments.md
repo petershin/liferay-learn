@@ -1,16 +1,16 @@
 ---
-taxonomy-category-names:
-- Sites
-- Fragments
-- Liferay Self-Hosted
-- Liferay PaaS
-- Liferay SaaS
 toc:
   - ./configuring-fragments/general-settings-reference.md
   - ./configuring-fragments/styles-reference.md
   - ./configuring-fragments/advanced-settings-reference.md
   - ./configuring-fragments/fragment-sub-elements-reference.md
   - ./configuring-fragments/localizing-fragment-configuration-fields.md
+taxonomy-category-names:
+- Sites
+- Fragments
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 3abcc783-379c-4520-81b3-6095bb482a3b
 ---
 # Configuring Fragments

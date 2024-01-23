@@ -1,10 +1,4 @@
 ---
-taxonomy-category-names:
-- Sites
-- Fragments
-- Liferay Self-Hosted
-- Liferay PaaS
-- Liferay SaaS
 toc:
   - ./using-fragments/default-fragments-reference.md
   - ./using-fragments/using-layout-elements.md
@@ -18,6 +12,12 @@ toc:
   - ./using-fragments/saving-fragment-compositions.md
   - ./using-fragments/managing-fragments.md
   - ./using-fragments/propagating-fragment-changes.md
+taxonomy-category-names:
+- Sites
+- Fragments
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 6daca74f-6058-429b-af62-1e1af9c71048
 ---
 # Using Fragments

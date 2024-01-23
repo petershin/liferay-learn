@@ -1,14 +1,14 @@
 ---
-taxonomy-category-names:
-    - Sites
-    - SEO
-    - Liferay Self-Hosted
-    - Liferay PaaS
-    - Liferay SaaS
 toc:
-    - ./setting-up-redirects-and-404-tracking/using-alias-redirects.md
-    - ./setting-up-redirects-and-404-tracking/using-pattern-redirects.md
-    - ./setting-up-redirects-and-404-tracking/tracking-404-urls.md
+  - ./setting-up-redirects-and-404-tracking/using-alias-redirects.md
+  - ./setting-up-redirects-and-404-tracking/using-pattern-redirects.md
+  - ./setting-up-redirects-and-404-tracking/tracking-404-urls.md
+taxonomy-category-names:
+- Sites
+- SEO
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 19c713cc-87be-41e6-ba6d-fc23ee75ad82
 ---
 

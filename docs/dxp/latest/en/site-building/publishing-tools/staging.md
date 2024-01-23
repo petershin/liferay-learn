@@ -1,10 +1,4 @@
 ---
-taxonomy-category-names:
-- Platform
-- Staging
-- Liferay Self-Hosted
-- Liferay PaaS
-- Liferay SaaS
 toc:
   - ./staging/understanding-the-publishing-process.md
   - ./staging/configuring-local-live-staging.md
@@ -17,6 +11,12 @@ toc:
   - ./staging/managing-staging-permissions.md
   - ./staging/using-staging-in-asset-libraries.md
   - ./staging/site-staging-ui-reference.md
+taxonomy-category-names:
+- Platform
+- Staging
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 60669ae7-b0b6-4239-8c0c-d38d93e15339
 ---
 # Staging

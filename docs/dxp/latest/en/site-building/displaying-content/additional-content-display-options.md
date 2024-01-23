@@ -1,10 +1,4 @@
 ---
-taxonomy-category-names:
-- Sites
-- Pages and Composition
-- Liferay Self-Hosted
-- Liferay PaaS
-- Liferay SaaS
 toc:
   - ./additional-content-display-options/using-the-web-content-display-widget.md
   - ./collections-and-collection-pages/displaying-collections.md
@@ -12,6 +6,12 @@ toc:
   - >-
     ./additional-content-display-options/styling-widgets-with-widget-templates.md
   - ./additional-content-display-options/using-the-iframe-widget.md
+taxonomy-category-names:
+- Sites
+- Pages and Composition
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: d59e556b-a5bb-435f-89b1-c28645ebdcaf
 ---
 # Additional Content Display Options

@@ -1,13 +1,13 @@
 ---
+toc:
+  - ./understanding-pages/understanding-pages.md
+  - ./understanding-pages/other-page-types.md
 taxonomy-category-names:
 - Sites
 - Pages and Composition
 - Liferay Self-Hosted
 - Liferay PaaS
 - Liferay SaaS
-toc:
-  - ./understanding-pages/understanding-pages.md
-  - ./understanding-pages/other-page-types.md
 uuid: e59d275d-b4e5-48f5-9847-d5baeb39e357
 ---
 # Understanding Pages

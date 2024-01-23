@@ -1,10 +1,4 @@
 ---
-taxonomy-category-names:
-- Sites
-- Widgets
-- Liferay Self-Hosted
-- Liferay PaaS
-- Liferay SaaS
 toc:
   - >-
     ./using-the-asset-publisher-widget/displaying-assets-using-the-asset-publisher-widget.md
@@ -14,6 +8,12 @@ toc:
     ./using-the-asset-publisher-widget/configuring-asset-publisher-display-settings.md
   - >-
     ./using-the-asset-publisher-widget/configuring-asset-publisher-subscriptions.md
+taxonomy-category-names:
+- Sites
+- Widgets
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: d38499d6-3744-4a02-b9ec-d9ce239048c9
 ---
 # Using the Asset Publisher Widget

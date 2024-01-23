@@ -1,10 +1,4 @@
 ---
-taxonomy-category-names:
-- Sites
-- Site Administration
-- Liferay Self-Hosted
-- Liferay PaaS
-- Liferay SaaS
 toc:
   - ./sites/adding-a-site.md
   - ./sites/site-templates.md
@@ -13,6 +7,12 @@ toc:
   - ./sites/personal-sites.md
   - ./sites/exporting-importing-site-pages-and-content.md
   - ./sites/default-site-applications.md
+taxonomy-category-names:
+- Sites
+- Site Administration
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 0a0ae4c3-008d-4a10-a8a8-03769e8bb589
 ---
 

@@ -1,10 +1,4 @@
 ---
-taxonomy-category-names:
-- Development and Tooling
-- Fragments
-- Liferay Self-Hosted
-- Liferay PaaS
-- Liferay SaaS
 toc:
   - ./developing-page-fragments/developing-fragments-intro.md
   - ./developing-page-fragments/using-the-fragments-editor.md
@@ -20,6 +14,12 @@ toc:
   - ./developing-page-fragments/including-default-resources-with-fragments.md
   - ./developing-page-fragments/setting-the-order-of-elements-in-a-fragment.md
   - ./developing-page-fragments/creating-form-fragments.md
+taxonomy-category-names:
+- Development and Tooling
+- Fragments
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: faecb735-7bbf-4469-a702-fdda8a1b1427
 ---
 # Developing Page Fragments

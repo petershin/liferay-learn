@@ -1,14 +1,14 @@
 ---
+toc:
+  - ./site-membership/adding-members-to-sites.md
+  - ./site-membership/inviting-members-to-your-site.md
+  - ./site-membership/creating-teams-for-sites.md
 taxonomy-category-names:
 - Sites
 - Site Administration
 - Liferay Self-Hosted
 - Liferay PaaS
 - Liferay SaaS
-toc:
-  - ./site-membership/adding-members-to-sites.md
-  - ./site-membership/inviting-members-to-your-site.md
-  - ./site-membership/creating-teams-for-sites.md
 uuid: 2b8ce2bf-6358-4e6f-941a-cb1c847515f8
 ---
 

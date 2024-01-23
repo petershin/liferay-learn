@@ -1,10 +1,4 @@
 ---
-taxonomy-category-names:
-- Sites
-- Site Administration
-- Liferay Self-Hosted
-- Liferay PaaS
-- Liferay SaaS
 toc:
   - ./site-settings/site-users.md
   - ./site-settings/managing-site-urls.md
@@ -14,6 +8,12 @@ toc:
   - ./site-settings/configuring-open-graph.md
   - ./site-settings/configuring-hreflang-meta-data.md
   - ./site-settings/site-settings-ui-reference.md
+taxonomy-category-names:
+- Sites
+- Site Administration
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: dbe928b5-d2e2-4db2-9369-f5fd818ab422
 ---
 # Site Settings

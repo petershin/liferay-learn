@@ -13,29 +13,28 @@
 
 1. サンプルをダウンロードし、解凍します。
 
-    ```bash
-    curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/developing-a-java-web-application/using-mvc/liferay-p1z2.zip -O
-    ```
+   ```bash
+   curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/developing-a-java-web-application/using-mvc/liferay-p1z2.zip -O
+   ```
 
-    ```bash
-    unzip liferay-p1z2.zip
-    ```
+   ```bash
+   unzip liferay-p1z2.zip
+   ```
 
 1. モジュールのルートから、ビルドおよびデプロイします。
 
-    ```bash
-    ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
-    ```
+   ```bash
+   ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
+   ```
 
-    ```{note}
-    このコマンドは、デプロイされたjarをDockerコンテナの/opt/liferay/osgi/modulesにコピーするのと同じです。
-    ```
+   !!! note
+      このコマンドは、デプロイされたjarをDockerコンテナの/opt/liferay/osgi/modulesにコピーするのと同じです。
 
 1. Liferay Dockerコンテナコンソールでデプロイを確認します。
 
-    ```bash
-    STARTED com.acme.p1z2.web_1.0.0 [2725]
-    ```
+   ```bash
+   STARTED com.acme.p1z2.web_1.0.0 [2725]
+   ```
 
 1. サンプルのモジュールが機能していることを確認します。 ブラウザで`https://localhost:8080`を開きます。
 
@@ -43,7 +42,7 @@
 
 1. ポートレットのオプションアイコン（![options icon](../../../images/icon-options.png)）をクリックし、 ［**設定**］ をクリックします。 ポートレットの設定ウィンドウが開きます。
 
-    ![構成をクリックして、ポートレットの設定を開きます](./portlet-preferences/images/01.png)
+   ![構成をクリックして、ポートレットの設定を開きます](./portlet-preferences/images/01.png)
 
 1. 別の色を選択し、 ［**保存**］ をクリックします。 設定メニューを閉じると、ポートレットに新しい選択が表示されます。
 
@@ -70,7 +69,7 @@ JSPファイルは、`<liferay-portlet:actionURL />`および`<liferay-portlet:r
 
 ```{literalinclude} ./portlet-preferences/resources/liferay-p1z2.zip/p1z2-web/src/main/java/com/acme/p1z2/web/internal/portlet/action/P1Z2ConfigurationAction.java
 :language: java
-:lines: 14-34
+:lines: 13-32
 ```
 
 `@Component`アノテーションで、アクションクラスが適用されるポートレットを`property`タグで指定します。
@@ -101,4 +100,4 @@ JSPファイルは、選択されたポートレット設定をチェックし�
 
 ## 関連情報
 
-* [ポートレットレベルの設定](../../core-frameworks/configuration-framework/portlet-level-configuration.md)
+- [ポートレットレベルの設定](../../core-frameworks/configuration-framework/portlet-level-configuration.md)

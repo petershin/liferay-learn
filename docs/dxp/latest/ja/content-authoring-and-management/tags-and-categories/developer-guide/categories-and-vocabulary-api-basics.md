@@ -98,7 +98,7 @@ LiferayのREST APIは、Liferayのカテゴリーとボキャブラリ機能の�
 ```{literalinclude} ./categories-and-vocabulary-api-basics/resources/liferay-f5w3.zip/java/TaxonomyVocabulary_POST_ToSite.java
    :dedent: 1
    :language: java
-   :lines: 9-26
+   :lines: 9-29
 ```
 
 このクラスは、次の3行のコードのみを使用してRESTサービスを呼び出します。
@@ -111,15 +111,13 @@ LiferayのREST APIは、Liferayのカテゴリーとボキャブラリ機能の�
 
 プロジェクトには、依存関係として`com.liferay.headless.admin.taxonomy.client.jar`ファイルが含まれていることに注意してください。 すべてのRESTアプリケーションのクライアントJAR依存関係情報は、`/o/api`でインストール先のAPIエクスプローラーで確認できます。
 
-```{note}
-`main`メソッドのコメントでは、クラスの実行を実演しています。
-```
+!!! note
+   `main`メソッドのコメントでは、クラスの実行を実演しています。
 
 他の例のJavaクラスはこれと類似していますが、異なる`TaxonomyVocabularyResource`メソッドを呼び出します。
 
-```{important}
-サービスの詳細は、 [TaxonomyVocabularyResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-taxonomy/headless-admin-taxonomy-client/src/main/java/com/liferay/headless/admin/taxonomy/client/resource/v1_0/TaxonomyVocabularyResource.java) を参照してください。
-```
+!!! important
+   サービスの詳細は、 [TaxonomyVocabularyResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-taxonomy/headless-admin-taxonomy-client/src/main/java/com/liferay/headless/admin/taxonomy/client/resource/v1_0/TaxonomyVocabularyResource.java) を参照してください。
 
 以下は、cURLとJavaを使って、他の`TaxonomyVocabulary` RESTサービスを呼び出す例です。
 
@@ -154,7 +152,7 @@ java -classpath .:* -DsiteId=1234 TaxonomyVocabularies_GET_FromSite
 ```{literalinclude} ./categories-and-vocabulary-api-basics/resources/liferay-f5w3.zip/java/TaxonomyVocabularies_GET_FromSite.java
    :dedent: 1
    :language: java
-   :lines: 11-23
+   :lines: 11-26
 ```
 
 サイトの`TaxonomyVocabulary`オブジェクトがJSONに一覧表示されます。
@@ -163,9 +161,8 @@ java -classpath .:* -DsiteId=1234 TaxonomyVocabularies_GET_FromSite
 
 次のcURLまたはJavaコマンドを使用して、特定のボキャブラリを取得します。 `1234`をボキャブラリのIDに置き換えてください。
 
-```{tip}
-`TaxonomyVocabularies_GET_FromSite.[java|sh]`を使用して`Vocabulary` IDを取得します。
-```
+!!! tip
+   `TaxonomyVocabularies_GET_FromSite.[java|sh]`を使用して`Vocabulary` IDを取得します。
 
 ### TaxonomyVocabulary_GET_ById.sh
 
@@ -230,7 +227,7 @@ java -classpath .:* -DtaxonomyVocabularyId=1234 TaxonomyVocabulary_PATCH_ById
 ```{literalinclude} ./categories-and-vocabulary-api-basics/resources/liferay-f5w3.zip/java/TaxonomyVocabulary_PATCH_ById.java
    :dedent: 1
    :language: java
-   :lines: 9-25
+   :lines: 9-29
 ```
 
 この例では、説明がFooからBarに変更されています。
@@ -300,7 +297,7 @@ java -classpath .:* -DtaxonomyVocabularyId=1234 TaxonomyVocabulary_DELETE_ById
 ```{literalinclude} ./categories-and-vocabulary-api-basics/resources/liferay-f5w3.zip/java/TaxonomyVocabulary_DELETE_ById.java
    :dedent: 1
    :language: java
-   :lines: 8-17
+   :lines: 8-19
 ```
 
 ## タクソノミーカテゴリーサービス

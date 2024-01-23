@@ -1,11 +1,12 @@
 ---
-uuid: 81304039-f329-43a0-bfe0-8666f6ae66d3
 taxonomy-category-names:
 - Content Management System
+- Asset Analytics
 - Web Content and Structures
 - Liferay Self-Hosted
 - Liferay SaaS
 - Liferay PaaS
+uuid: 81304039-f329-43a0-bfe0-8666f6ae66d3
 ---
 # Web Content
 

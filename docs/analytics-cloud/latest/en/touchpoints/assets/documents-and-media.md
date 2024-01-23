@@ -1,11 +1,12 @@
 ---
-uuid: 60a378a0-9189-420a-b25f-59842b2e20a9
 taxonomy-category-names:
 - Digital Asset Management
+- Asset Analytics
 - Documents and Media
 - Liferay Self-Hosted
 - Liferay SaaS
 - Liferay PaaS
+uuid: 60a378a0-9189-420a-b25f-59842b2e20a9
 ---
 # Documents and Media
 

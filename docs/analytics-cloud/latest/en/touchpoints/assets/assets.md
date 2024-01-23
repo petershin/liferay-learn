@@ -1,11 +1,11 @@
 ---
-uuid: 40febe64-2fa2-4508-8321-10fe5462e0ac
 taxonomy-category-names:
 - Content Management System
 - Asset Analytics
 - Liferay Self-Hosted
 - Liferay SaaS
 - Liferay PaaS
+uuid: 40febe64-2fa2-4508-8321-10fe5462e0ac
 ---
 # Assets
 

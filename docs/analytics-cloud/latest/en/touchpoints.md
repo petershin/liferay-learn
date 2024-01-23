@@ -4,7 +4,6 @@ toc:
   - ./touchpoints/pages.md
   - ./touchpoints/assets.md
   - ./touchpoints/events.md
-uuid: bcc57d13-682f-4e91-be8f-126b66328b61
 taxonomy-category-names:
 - Sites
 - Site Analytics
@@ -12,6 +11,7 @@ taxonomy-category-names:
 - Liferay Self-Hosted
 - Liferay SaaS
 - Liferay PaaS
+uuid: bcc57d13-682f-4e91-be8f-126b66328b61
 ---
 # Touchpoints
 

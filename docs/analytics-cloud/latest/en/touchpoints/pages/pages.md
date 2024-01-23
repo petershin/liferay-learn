@@ -1,11 +1,12 @@
 ---
-uuid: a2b63605-3b0a-4c85-bc9e-4d922cb5e803
+taxonomy-category-names:
 - Sites
 - Site Analytics
 - Traffic and Path Analysis
 - Liferay Self-Hosted
 - Liferay SaaS
 - Liferay PaaS
+uuid: a2b63605-3b0a-4c85-bc9e-4d922cb5e803
 ---
 # Pages
 

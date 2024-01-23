@@ -1,5 +1,4 @@
 ---
-uuid: 195deacf-e16c-4594-b075-082b9c8a25ef
 taxonomy-category-names:
 - Sites
 - Site Analytics
@@ -7,6 +6,7 @@ taxonomy-category-names:
 - Liferay Self-Hosted
 - Liferay SaaS
 - Liferay PaaS
+uuid: 195deacf-e16c-4594-b075-082b9c8a25ef
 ---
 # Sites Dashboard
 

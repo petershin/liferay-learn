@@ -1,10 +1,11 @@
 ---
-uuid: 97e2fd3b-4de4-4333-8eaf-ca3343d4da94
+taxonomy-category-names:
 - Content Management System
 - Asset Analytics
 - Liferay Self-Hosted
 - Liferay SaaS
 - Liferay PaaS
+uuid: 97e2fd3b-4de4-4333-8eaf-ca3343d4da94
 ---
 # Events Analysis
 

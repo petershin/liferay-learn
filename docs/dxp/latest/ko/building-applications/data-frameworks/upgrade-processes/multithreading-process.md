@@ -13,34 +13,33 @@
 
 1. [멀티스레딩 프로세스](./liferay-j7z3.zip) 다운로드하고 압축을 풉니다.
 
-   ```bash
-   curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/data-frameworks/upgrade-processes/liferay-j7z3.zip -O
-   ```
+    ```bash
+    curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/data-frameworks/upgrade-processes/liferay-j7z3.zip -O
+    ```
 
-   ```bash
-   unzip liferay-j7z3.zip
-   ```
+    ```bash
+    unzip liferay-j7z3.zip
+    ```
 
 1. '1.0.0' 디렉터리로 이동하여 빌드하고 배포합니다.
 
-   ```bash
-   cd 1.0.0
-   ```
+    ```bash
+    cd 1.0.0
+    ```
 
-   ```bash
-   ../gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
-   ```
+    ```bash
+    ../gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
+    ```
 
-   ```{note}
-   이 명령은 배포된 jar를 Docker 컨테이너의 /opt/liferay/osgi/modules에 복사하는 것과 동일합니다.
-   ```
+    !!! note
+        이 명령은 배포된 jar를 Docker 컨테이너의 /opt/liferay/osgi/modules에 복사하는 것과 동일합니다.
 
 1. Liferay Docker 컨테이너 콘솔에서 배포를 확인합니다.
 
-   ```bash
-   STARTED com.acme.j7z3.api_1.0.0 [1030]
-   STARTED com.acme.j7z3.service_1.0.0 [1031]
-   ```
+    ```bash
+    STARTED com.acme.j7z3.api_1.0.0 [1030]
+    STARTED com.acme.j7z3.service_1.0.0 [1031]
+    ```
 
 ## 앱에 항목 추가
 
@@ -48,40 +47,40 @@
 
 1. 다음 스크립트를 실행하여 일부 항목을 추가합니다.
 
-   ```groovy
-   import com.acme.j7z3.service.J7Z3EntryLocalServiceUtil;
+    ```groovy
+    import com.acme.j7z3.service.J7Z3EntryLocalServiceUtil;
 
-   import com.liferay.portal.kernel.dao.orm.QueryUtil;
+    import com.liferay.portal.kernel.dao.orm.QueryUtil;
 
-   entry1 = J7Z3EntryLocalServiceUtil.createJ7Z3Entry(1);
-   entry2 = J7Z3EntryLocalServiceUtil.createJ7Z3Entry(2);
-   entry3 = J7Z3EntryLocalServiceUtil.createJ7Z3Entry(3);
+    entry1 = J7Z3EntryLocalServiceUtil.createJ7Z3Entry(1);
+    entry2 = J7Z3EntryLocalServiceUtil.createJ7Z3Entry(2);
+    entry3 = J7Z3EntryLocalServiceUtil.createJ7Z3Entry(3);
 
-   entry1.setName("able");
-   entry2.setName("able");
-   entry3.setName("able");
+    entry1.setName("able");
+    entry2.setName("able");
+    entry3.setName("able");
 
-   J7Z3EntryLocalServiceUtil.addJ7Z3Entry(entry1);
-   J7Z3EntryLocalServiceUtil.addJ7Z3Entry(entry2);
-   J7Z3EntryLocalServiceUtil.addJ7Z3Entry(entry3);
+    J7Z3EntryLocalServiceUtil.addJ7Z3Entry(entry1);
+    J7Z3EntryLocalServiceUtil.addJ7Z3Entry(entry2);
+    J7Z3EntryLocalServiceUtil.addJ7Z3Entry(entry3);
 
-   ```
+    ```
 
-   이제 J7Z3_J7Z3Entry 테이블에는 세 개의 항목이 있습니다.
+    이제 J7Z3_J7Z3Entry 테이블에는 세 개의 항목이 있습니다.
 
-   ![The three entries can been verified in the database table.](./multithreading-process/images/01.png)
+    ![The three entries can been verified in the database table.](./multithreading-process/images/01.png)
 
 ## 업그레이드 실행
 
 1. '1.0.1' 디렉터리로 이동하여 빌드하고 배포합니다.
 
-   ```bash
-   cd ../1.0.1    
-   ```
+    ```bash
+    cd ../1.0.1
+    ```
 
-   ```bash
-   ../gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
-   ```
+    ```bash
+    ../gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
+    ```
 
 1. **Control Panel** &rarr; **Gogo Shell** 에서 Gogo 쉘 콘솔로 이동합니다.
 
@@ -89,20 +88,20 @@
 
 1. `upgrade:execute com.acme.j7z3.service` 명령을 입력하여 업그레이드를 실행합니다. 출력 창에 업그레이드가 완료되었음을 표시합니다.
 
-   ![Execute the upgrade and the output should display that the upgrade was completed.](./multithreading-process/images/02.png)
+    ![Execute the upgrade and the output should display that the upgrade was completed.](./multithreading-process/images/02.png)
 
 1. 이제 J7Z3_J7Z3Entry 테이블 항목이 업데이트되었습니다.
 
-   ![The updated entries can been verified in the database table.](./multithreading-process/images/03.png)
+    ![The updated entries can been verified in the database table.](./multithreading-process/images/03.png)
 
 ## 멀티스레딩 방법 구현
 
 애플리케이션의 'UpgradeProcess' 클래스에서 'processConcurrently()' 메서드를 재정의하세요.
 
 ```{literalinclude} ./multithreading-process/resources/liferay-j7z3.zip/1.0.1/j7z3-service/src/main/java/com/acme/j7z3/internal/upgrade/v1_0_1/J7Z3EntryUpgradeProcess.java
-:dedent: 1
-:language: java
-:lines: 26-48
+    :dedent: 1
+    :language: java
+    :lines: 26-48
 ```
 
 이 방법은 네 부분으로 구성됩니다.
@@ -119,29 +118,29 @@
 
 1. `select j7z3EntryId, name from J7Z3_J7Z3Entry` - SQL 문은 모든 항목을 쿼리합니다.
 
-1. ```java
-   resultSet -> new Object[] {
-    			resultSet.getLong("j7z3EntryId"), resultSet.getString("name")
-   ```
+1.  ```java
+    resultSet -> new Object[] {
+    	resultSet.getLong("j7z3EntryId"), resultSet.getString("name")
+    ```
    객체는 수집되어 `resultSet` 배열에 저장됩니다.
 
-1. ```java
-   columns -> {
-    long j7z3EntryId = (Long)columns[0];
+1.  ```java
+    columns -> {
+        long j7z3EntryId = (Long)columns[0];
 
-    try (PreparedStatement preparedStatement =
-    		connection.prepareStatement(
-    			"update J7Z3_J7Z3Entry set name = ? where " +
-    				"j7z3EntryId = ?")) {
+        try (PreparedStatement preparedStatement =
+            connection.prepareStatement(
+                "update J7Z3_J7Z3Entry set name = ? where " +
+                    "j7z3EntryId = ?")) {
 
-    		preparedStatement.setString(1, "baker");
-    		preparedStatement.setLong(2, j7z3EntryId);
+            preparedStatement.setString(1, "baker");
+            preparedStatement.setLong(2, j7z3EntryId);
 
-    		preparedStatement.executeUpdate();
-    		}
-    	}
-   ```
-   모든 `j7z3EntryId`에 대해 `name` 필드는 `baker`로 설정됩니다.
+            preparedStatement.executeUpdate();
+        }
+    }
+    ```
+    모든 `j7z3EntryId`에 대해 `name` 필드는 `baker`로 설정됩니다.
 
 1. 예외는 `null`로 설정됩니다.
 

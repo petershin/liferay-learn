@@ -22,7 +22,7 @@ Once Liferay is running,
 1. Download and unzip [Specification API Basics](./liferay-u9x9.zip).
 
    ```bash
-   curl https://learn.liferay.com/commmerce/latest/en/product-management/developer-guide/liferay-u9x9.zip -O
+   curl https://resources.learn.liferay.com/commmerce/latest/en/product-management/developer-guide/liferay-u9x9.zip -O
    ```
 
    ```bash

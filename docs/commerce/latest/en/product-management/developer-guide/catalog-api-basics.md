@@ -21,7 +21,7 @@ Once Liferay is running,
 1. Download and unzip [Catalog API Basics](./liferay-q2v8.zip).
 
    ```bash
-   curl https://learn.liferay.com/commmerce/latest/en/product-management/developer-guide/liferay-q2v8.zip -O
+   curl https://resources.learn.liferay.com/commmerce/latest/en/product-management/developer-guide/liferay-q2v8.zip -O
    ```
 
    ```bash

@@ -21,7 +21,7 @@ Then, follow these steps:
 1. Download and unzip the Acme Commerce Order Rule.
 
    ```bash
-   curl https://learn.liferay.com/commerce/latest/en/developer-guide/order-management/liferay-x9k1.zip
+   curl https://resources.learn.liferay.com/commerce/latest/en/developer-guide/order-management/liferay-x9k1.zip -O
 
    unzip liferay-x9k1.zip
    ```

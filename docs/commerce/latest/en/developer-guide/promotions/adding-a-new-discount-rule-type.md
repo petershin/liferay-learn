@@ -31,7 +31,7 @@ Then, follow these steps to deploy an example discount rule type on your Liferay
 1. Download and unzip the [Acme Commerce Discount Rule Type](./liferay-m6a8.zip).
 
     ```bash
-    curl https://learn.liferay.com/commerce/latest/en/developer-guide/promotions/liferay-m6a8.zip -O
+    curl https://resources.learn.liferay.com/commerce/latest/en/developer-guide/promotions/liferay-m6a8.zip -O
     ```
 
     ```bash

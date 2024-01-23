@@ -22,7 +22,7 @@ Once Liferay is running,
 1. Download and unzip [Warehouse API Basics](./liferay-v9s5.zip).
 
    ```bash
-   curl https://learn.liferay.com/commmerce/latest/en/inventory-management/developer-guide/liferay-v9s5.zip -O
+   curl https://resources.learn.liferay.com/commmerce/latest/en/inventory-management/developer-guide/liferay-v9s5.zip -O
    ```
 
    ```bash

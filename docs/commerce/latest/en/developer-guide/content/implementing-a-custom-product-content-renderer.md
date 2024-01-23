@@ -32,7 +32,7 @@ Then, follow these steps:
 1. Download and unzip the [Acme Commerce Product Content Renderer](./liferay-q4f7.zip).
 
     ```bash
-    curl https://learn.liferay.com/commerce/latest/en/developer-guide/content/liferay-q4f7.zip -O
+    curl https://resources.learn.liferay.com/commerce/latest/en/developer-guide/content/liferay-q4f7.zip -O
     ```
 
     ```bash

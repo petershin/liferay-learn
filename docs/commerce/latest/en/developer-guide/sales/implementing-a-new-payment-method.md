@@ -33,7 +33,7 @@ Then, follow these steps:
 1. Download and unzip the [Acme Commerce Payment Method](./liferay-b1c3.zip).
 
 	```bash
-	curl https://learn.liferay.com/commerce/latest/en/developer-guide/sales/liferay-b1c3.zip -O
+	curl https://resources.learn.liferay.com/commerce/latest/en/developer-guide/sales/liferay-b1c3.zip -O
 	```
 
 	```bash

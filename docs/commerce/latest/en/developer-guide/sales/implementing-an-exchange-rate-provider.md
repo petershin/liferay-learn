@@ -33,7 +33,7 @@ Then, follow these steps:
 1. Download and unzip the [Acme Commerce Exchange Rate Provider](./liferay-f2y1.zip).
 
     ```bash
-    curl https://learn.liferay.com/commerce/latest/en/developer-guide/sales/liferay-f2y1.zip -O
+    curl https://resources.learn.liferay.com/commerce/latest/en/developer-guide/sales/liferay-f2y1.zip -O
     ```
 
     ```bash

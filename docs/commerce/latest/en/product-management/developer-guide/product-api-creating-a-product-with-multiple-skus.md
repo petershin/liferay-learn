@@ -26,7 +26,7 @@ Then follow these steps:
 1. Download and unzip [Product API - Adding a Product with Multiple SKUs](./liferay-q8t5.zip).
 
    ```bash
-   curl https://learn.liferay.com/commmerce/latest/en/product-management/developer-guide/liferay-q8t5.zip -O
+   curl https://resources.learn.liferay.com/commmerce/latest/en/product-management/developer-guide/liferay-q8t5.zip -O
    ```
 
    ```bash

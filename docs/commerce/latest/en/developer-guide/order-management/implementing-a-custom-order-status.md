@@ -44,7 +44,7 @@ You can add a custom order status to alter the out-of-the-box order flow. Below,
 1. Download and unzip the Acme Commerce Order Status Method.
 
     ```bash
-    curl https://learn.liferay.com/commerce/latest/en/developer-guide/order-management/liferay-m4v7.zip
+    curl https://resources.learn.liferay.com/commerce/latest/en/developer-guide/order-management/liferay-m4v7.zip -O
 
     unzip liferay-m4v7.zip
     ```

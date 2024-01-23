@@ -22,7 +22,7 @@ Then follow these steps:
 1. Download and unzip [Product API Basics](./liferay-z8v2.zip).
 
    ```bash
-   curl https://learn.liferay.com/commmerce/latest/en/product-management/developer-guide/liferay-z8v2.zip -O
+   curl https://resources.learn.liferay.com/commmerce/latest/en/product-management/developer-guide/liferay-z8v2.zip -O
    ```
 
    ```bash

@@ -35,8 +35,8 @@ Then, follow these steps:
 1. Download and unzip the Acme Commerce Notification Type.
 
     ```bash
-    curl https://learn.liferay.com/commerce/latest/en/developer-guide/order-management/liferay-g2f3.zip
-
+    curl https://resources.learn.liferay.com/commerce/latest/en/developer-guide/order-management/liferay-g2f3.zip -O
+    
     unzip liferay-g2f3.zip
     ```
 

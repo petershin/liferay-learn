@@ -51,26 +51,26 @@ LiferayのREST APIは、Liferay DXP/ポータルのタグにサービスを提�
 
 1. ［**Administration Menu**］ &rarr; ［**カテゴリー設定**］ &rarr; ［**Tags**］ に移動して、タグアプリケーションに移動します。 新しいタグが追加されたことを確認してください。
 
-    ![新しいタグが追加されたことを確認してください。](./tags-api-basics/images/01.png)
+   ![新しいタグが追加されたことを確認してください。](./tags-api-basics/images/01.png)
 
 1. RESTサービスは、Javaクライアントを使って呼び出すこともできます。 `curl` フォルダから、 `java` フォルダに移動します。 以下のコマンドでソースファイルをコンパイルします。
 
-    ```bash
-    javac -classpath .:* *.java
-    ```
+   ```bash
+   javac -classpath .:* *.java
+   ```
 
 1. 以下のコマンドを使用して`Keyword_POST_ToSite`クラスを実行します。 `siteId`値をサイトのIDに置き換えます。
 
-    ```bash
-    java -classpath .:* -DsiteId=1234 Keyword_POST_ToSite
-    ```
+   ```bash
+   java -classpath .:* -DsiteId=1234 Keyword_POST_ToSite
+   ```
 
 ## cURLコマンドの検証
 
 `Keyword_POST_ToSite.sh`スクリプトは、cURLコマンドを使用してRESTサービスを呼び出します。
 
 ```{literalinclude} ./tags-api-basics/resources/liferay-r7u9.zip/curl/Keyword_POST_ToSite.sh
-    :language: bash
+   :language: bash
 ```
 
 コマンドの引数は次のとおりです。
@@ -83,9 +83,8 @@ LiferayのREST APIは、Liferay DXP/ポータルのタグにサービスを提�
 | `-d "{\"name\": \"Foo\"}"`                                               | お客様が掲載を希望するデータ                  |
 | `-u "test@liferay.com:learn"`                                                | 基本的な認証情報                        |
 
-```{note}
-ここでは、デモのために基本的な認証を使用しています。 本番環境の場合は、[OAuth2](../../../headless-delivery/using-oauth2.md)経由でユーザーを認証する必要があります。 OAuth2を使用したReactアプリケーションのサンプルは、[OAuth2によるユーザーの認証](../../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md)をご覧ください。
-```
+!!! note
+   ここでは、デモのために基本的な認証を使用しています。 本番環境の場合は、[OAuth2](../../../headless-delivery/using-oauth2.md)経由でユーザーを認証する必要があります。 OAuth2を使用したReactアプリケーションのサンプルは、[OAuth2によるユーザーの認証](../../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md)をご覧ください。
 
 他のcURLコマンドも同様のJSON引数を使用します。
 
@@ -96,7 +95,7 @@ LiferayのREST APIは、Liferay DXP/ポータルのタグにサービスを提�
 ```{literalinclude} ./tags-api-basics/resources/liferay-r7u9.zip/java/Keyword_POST_ToSite.java
    :dedent: 1
    :language: java
-   :lines: 9-26
+   :lines: 9-25
 ```
 
 このクラスは、次の3行のコードのみを使用してRESTサービスを呼び出します。
@@ -109,15 +108,13 @@ LiferayのREST APIは、Liferay DXP/ポータルのタグにサービスを提�
 
 プロジェクトには、依存関係として`com.liferay.headless.admin.taxonomy.client.jar`ファイルが含まれていることに注意してください。 すべてのRESTアプリケーションのクライアントJAR依存関係情報は、`/o/api`でインストール先のAPIエクスプローラーで確認できます。
 
-```{note}
-`main`メソッドのコメントでは、クラスの実行を実演しています。
-```
+!!! note
+   `main`メソッドのコメントでは、クラスの実行を実演しています。
 
 他の例のJavaクラスはこれと類似していますが、異なる`KeywordResource`メソッドを呼び出します。
 
-```{important}
-サービスの詳細は、 [KeywordResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-taxonomy/headless-admin-taxonomy-client/src/main/java/com/liferay/headless/admin/taxonomy/client/resource/v1_0/KeywordResource.java) を参照してください。
-```
+!!! important
+   サービスの詳細は、 [KeywordResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-taxonomy/headless-admin-taxonomy-client/src/main/java/com/liferay/headless/admin/taxonomy/client/resource/v1_0/KeywordResource.java) を参照してください。
 
 以下は、cURLとJavaを使って、他の`Keyword` RESTサービスを呼び出す例です。
 
@@ -161,9 +158,8 @@ java -classpath .:* -DsiteId=1234 Keywords_GET_FromSite
 
 次のcURLまたはJavaコマンドを使用して、特定のタグを取得します。 `1234`をタグのIDに置き換えてください。
 
-```{tip}
-``Keywords_GET_FromSite.[java|sh]``を使用して、サイトの``Keyword`` IDを取得します。
-```
+!!! tip
+   ``Keywords_GET_FromSite.[java|sh]``を使用して、サイトの``Keyword`` IDを取得します。
 
 ### Keyword_GET_ById.sh
 

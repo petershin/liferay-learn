@@ -3,7 +3,6 @@ taxonomy-category-names:
 - Content Management System
 - Content Translations
 - Web Content and Structures
-- Localization
 - Liferay Self-Hosted
 - Liferay PaaS
 - Liferay SaaS

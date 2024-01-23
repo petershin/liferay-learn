@@ -5,7 +5,6 @@ taxonomy-category-names:
 - Java Development
 - Liferay Self-Hosted
 - Liferay PaaS
-- Liferay SaaS
 uuid: dbd1936a-f1ce-4132-9aec-3752784c340b
 ---
 # Creating Video Shortcut Providers

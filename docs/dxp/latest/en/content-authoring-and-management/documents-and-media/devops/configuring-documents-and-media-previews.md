@@ -22,7 +22,7 @@ To use third-party services to generate previews, you must first install them on
 
 Liferay currently supports integration with these services:
 
-*  [LibreOffice](http://www.libreoffice.org) or [OpenOffice](http://www.openoffice.org): These programs can be used in server mode to generate thumbnails and previews for supported file types (`.pdf`, `.docx`, `.odt`, `.ppt`, `.odp`, etc.). You can also use them to convert documents and view them in your browser. See [Enabling OpenOffice/LibreOffice Integration](./enabling-openoffice-libreoffice-integration.md) to learn more.
+* [LibreOffice](http://www.libreoffice.org) or [OpenOffice](http://www.openoffice.org): These programs can be used in server mode to generate thumbnails and previews for supported file types (`.pdf`, `.docx`, `.odt`, `.ppt`, `.odp`, etc.). You can also use them to convert documents and view them in your browser. See [Enabling OpenOffice/LibreOffice Integration](./enabling-openoffice-libreoffice-integration.md) to learn more.
 
 * [ImageMagick](http://www.imagemagick.org) (also requires [Ghostscript](http://www.ghostscript.com)): These programs provide fast, high-quality previews and conversions for image files. See [Enabling ImageMagick and Ghostscript](../../../system-administration/using-the-server-administration-panel/configuring-external-services.md#enabling-imagemagick-and-ghostscript) for more information.
 

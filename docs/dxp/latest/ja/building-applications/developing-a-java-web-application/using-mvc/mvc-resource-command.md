@@ -25,37 +25,35 @@ MVCリソースコマンドを使用するサンプルポートレットをデ�
 
 1. サンプルをビルドしてデプロイします。
 
-    ```bash
-    cd liferay-p8v5
-    ```
+   ```bash
+   cd liferay-p8v5
+   ```
 
-    ```bash
-    ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
-    ```
+   ```bash
+   ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
+   ```
 
-    ```{note}
-    このコマンドは、モジュールJARをDockerコンテナの`/opt/liferay/osgi/modules`にコピーするのと同じです。
-    ```
-
+   !!! note
+   このコマンドは、モジュールJARをDockerコンテナの`/opt/liferay/osgi/modules`にコピーするのと同じです。
 1. Dockerコンテナコンソールでデプロイを確認します。
 
-    ```bash
-    STARTED com.acme.p8v5.web_1.0.0
-    ```
+   ```bash
+   STARTED com.acme.p8v5.web_1.0.0
+   ```
 
 1. ［**P8V5ポートレット**］ ウィジェットを ［**サンプル**］ カテゴリからウィジェットページに追加します。 P8V5ポートレットが表示されます。
 
-    ![P8V5ポートレットをページに追加しました。](./mvc-resource-command/images/01.png)
+   ![P8V5ポートレットをページに追加しました。](./mvc-resource-command/images/01.png)
 
-    リンクはMVCリソースコマンドを呼び出して、単純なテキストファイルをダウンロードします。
+   リンクはMVCリソースコマンドを呼び出して、単純なテキストファイルをダウンロードします。
 
 1. ［**Download**］ をクリックします。 `p8v5.txt`というファイルがマシンにダウンロードされます。
 
 1. `p8v5.txt`ファイルを開きます。 コンテンツは次のとおりです。
 
-    ```
-    Hello P8V5!
-    ```
+   ```
+   Hello P8V5!
+   ```
 
 MVCリソースコマンドを使用してファイルをダウンロードしました。 次に、それらがどのように機能するかを確認します。
 
@@ -76,9 +74,8 @@ MVCリソースコマンドを使用してファイルをダウンロードし�
 :lines: 14
 ```
 
-```{note}
-`MVCResourceCommand`は、ポートレットの名前（たとえば、ポートレットコンポーネントの` javax.portlet.name`プロパティ値）によってポートレットにバインドします。
-```
+!!! note
+   `MVCResourceCommand`は、ポートレットの名前（たとえば、ポートレットコンポーネントの` javax.portlet.name`プロパティ値）によってポートレットにバインドします。
 
 次に、ポートレットのMVCリソースコマンドクラスを調べます。
 
@@ -93,18 +90,17 @@ MVCリソースコマンドクラスは、 [`MVCResourceCommand`](https://github
 
 `P8V5DownloadMVCResourceCommand`は、`MVCResourceCommand`サービスを提供する [`Component`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Component.html) です。 コンポーネントプロパティは、`P8V5DownloadMVCResourceCommand`を`com_acme_p8v5_web_internal_portlet_P8V5Portlet`という名前のポートレットに適用し、`P8V5DownloadMVCResourceCommand`をMVCコマンド名`/p8v5/download`にマップします。 ここで指定する名前は、ポートレットで宣言されている名前と一致する必要があります。
 
-```{note}
-ポートレットごとに個別の `javax.portlet.name`プロパティを宣言することにより、`MVCResourceCommand`コンポーネントを複数のポートレットに関連付けることができます。 
+!!! note
+   ポートレットごとに個別の `javax.portlet.name`プロパティを宣言することにより、`MVCResourceCommand`コンポーネントを複数のポートレットに関連付けることができます。
 
       @Component(
-         property = {
-            "javax.portlet.name=com_acme_p8v5_web_internal_portlet_P8V5Portlet",
-            "javax.portlet.name=com_acme_p8v5_web_internal_portlet_P8V6Portlet",
-            "mvc.command.name=/p8v5/download"
-         },
-         service = MVCResourceCommand.class
+          property = {
+              "javax.portlet.name=com_acme_p8v5_web_internal_portlet_P8V5Portlet",
+              "javax.portlet.name=com_acme_p8v5_web_internal_portlet_P8V6Portlet",
+              "mvc.command.name=/p8v5/download"
+          },
+          service = MVCResourceCommand.class
       )
-```
 
 サンプルの`serveResource`メソッドは、単純なテキストファイルを作成し、 [`PortletResponseUtil`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/portlet/PortletResponseUtil.java) を介してユーザーに送信します。 このメソッドは、エラーが発生した場合は`true`を返し、それ以外の場合は`false`を返します。
 
@@ -132,6 +128,6 @@ MVCリソースコマンドクラスは、 [`MVCResourceCommand`](https://github
 
 ## 関連トピック
 
-* [MVCの使用](../using-mvc.md)
-* [MVCレンダーコマンド](./mvc-render-command.md)
-* [MVCアクションコマンド](./mvc-action-command.md)
+- [MVCの使用](../using-mvc.md)
+- [MVCレンダーコマンド](./mvc-render-command.md)
+- [MVCアクションコマンド](./mvc-action-command.md)

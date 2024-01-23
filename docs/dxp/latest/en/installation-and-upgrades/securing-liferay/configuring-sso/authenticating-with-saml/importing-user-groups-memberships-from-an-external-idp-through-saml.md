@@ -1,5 +1,12 @@
 ---
 uuid: faa31f3d-1d85-421c-a9c2-b1a262e4eb75
+taxonomy-category-names:
+- Platform
+- DXP Configuration
+- Identity Management and Authentication
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Importing User Groups' Memberships from an External IdP through SAML
 
@@ -7,7 +14,7 @@ uuid: faa31f3d-1d85-421c-a9c2-b1a262e4eb75
 This feature is currently behind a [dev feature flag](../../../../system-administration/configuring-liferay/feature-flags.md#dev-feature-flags). You must not use this in production. Use it only for testing purposes.
 ```
 
-You can import users' user group membership from external identity providers (IdPs). This requires only configuring the necessary fields when registering the IdP. The XML structure varies by IdP, so your first step is to find the multi-valued attributes for user groups from your IdP. 
+You can import users' user group membership from external identity providers (IdPs). This requires only configuring the necessary fields when registering the IdP. The XML structure varies by IdP, so your first step is to find the multi-valued attributes for user groups from your IdP.
 
 For example, uses Okta's structure for user groups looks like this:
 
@@ -26,7 +33,7 @@ For example, uses Okta's structure for user groups looks like this:
 </saml2:Attribute>
 ```
 
-Below is the configuration using this structure for importing user groups from an external IdP. 
+Below is the configuration using this structure for importing user groups from an external IdP.
 
 ## Creating a SAML 2.0 App on Okta
 

@@ -1,5 +1,9 @@
 ---
 uuid: 87ede542-aa28-453d-9229-0a53f3d77b38
+taxonomy-category-names:
+- DXP Self-Hosted Installation, Maintenance, and Administration
+- DXP Configuration
+- Liferay Self-Hosted
 ---
 # Running Scripts in Containers
 

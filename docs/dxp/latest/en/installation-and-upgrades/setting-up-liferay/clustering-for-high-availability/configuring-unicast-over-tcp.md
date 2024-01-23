@@ -1,5 +1,10 @@
 ---
 uuid: 8074907b-f5f4-481a-beb4-bd0f861654d9
+taxonomy-category-names:
+- Platform
+- DXP Configuration
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Configuring Unicast over TCP
 

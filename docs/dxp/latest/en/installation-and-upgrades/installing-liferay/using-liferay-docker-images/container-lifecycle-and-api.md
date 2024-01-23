@@ -1,5 +1,10 @@
 ---
 uuid: 9c32fff4-b91e-426f-b893-9948928cbab3
+taxonomy-category-names:
+- DXP Self-Hosted Installation, Maintenance, and Administration
+- DXP Configuration
+- API Development
+- Liferay Self-Hosted
 ---
 # Container Lifecycle and API
 

@@ -1,21 +1,28 @@
 ---
 uuid: fecd1346-1741-44bc-9b6e-9283b985e476
+taxonomy-category-names:
+- Platform
+- DXP Configuration
+- Identity Management and Authentication
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # SAML Settings
 
-Many of the same fields appear in both the Service Provider and the Identity Provider configurations. Here's a reference. 
+Many of the same fields appear in both the Service Provider and the Identity Provider configurations. Here's a reference.
 
-**Name:** Name the SP or IdP. This is just a descriptive name; it's not used in the configuration. 
+**Name:** Name the SP or IdP. This is just a descriptive name; it's not used in the configuration.
 
-**Entity ID:** The official name of this SP or IdP. When configuring connections, they must match this name. 
+**Entity ID:** The official name of this SP or IdP. When configuring connections, they must match this name.
 
-**Enabled:** Check this box to enable this SAML provider. 
+**Enabled:** Check this box to enable this SAML provider.
 
-**Clock Skew:** Set the tolerance for the time difference between the SP and the IdP in milliseconds. 
+**Clock Skew:** Set the tolerance for the time difference between the SP and the IdP in milliseconds.
 
 **Force Authn:** Check this box to have the Service Provider ask the Identity Provider to re-authenticate the user before verifying the user.
 
-**Unknown Users are Strangers:** Stranger behavior is defined in Control Panel -> Instance Settings -> Platform -> User Authentication -> General. 
+**Unknown Users are Strangers:** Stranger behavior is defined in Control Panel -> Instance Settings -> Platform -> User Authentication -> General.
 
 **Metadata:** Provide a URL to the Service Provider metadata XML file or manually upload the Service Provider metadata XML file. If you provide a URL, the XML file is retrieved and periodically polled for updates. The update interval can be configured in System Settings with the Runtime Metadata Refresh Interval (`saml.metadata.refresh.interval` if using a `config` file) property which specifies a number of seconds. If fetching the metadata XML file by URL fails, you can't enable the Service Provider connection. If the Identity Provider server cannot access the metadata via URL, you can upload the XML file manually. In this case, the metadata XML file is not updated automatically.
 

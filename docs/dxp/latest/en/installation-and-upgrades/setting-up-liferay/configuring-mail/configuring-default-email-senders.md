@@ -1,5 +1,11 @@
 ---
 uuid: 686de7ce-4bdf-420f-af40-065b8b2173e3
+taxonomy-category-names:
+- Platform
+- Email Notifications and Notification Templates
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Configuring Default Email Senders
 

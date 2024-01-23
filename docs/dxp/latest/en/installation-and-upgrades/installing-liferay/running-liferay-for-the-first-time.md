@@ -1,5 +1,9 @@
 ---
 uuid: 38b72371-1f59-4cf5-9fe8-8fc22539b8b3
+taxonomy-category-names:
+- DXP Self-Hosted Installation, Maintenance, and Administration
+- DXP Configuration
+- Liferay Self-Hosted
 ---
 # Running Liferay for the First Time
 

@@ -9,6 +9,9 @@ toc:
   - ./maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier.md
   - ./maintaining-a-liferay-installation/reference.md
 uuid: 3278d640-0c76-48fc-83c4-08476c90411a
+taxonomy-category-names:
+- DXP Self-Hosted Installation, Maintenance, and Administration
+- Liferay Self-Hosted
 ---
 # Maintaining a Liferay Installation
 

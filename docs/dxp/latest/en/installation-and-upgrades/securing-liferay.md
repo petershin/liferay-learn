@@ -6,6 +6,12 @@ toc:
   - ./securing-liferay/using-antisamy.md
   - ./securing-liferay/securing-web-services.md
 uuid: 8d84b144-9aba-4076-abc5-0043ac3ff72c
+taxonomy-category-names:
+- Platform
+- DXP Configuration
+- Identity Management and Authentication
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Securing Liferay
 

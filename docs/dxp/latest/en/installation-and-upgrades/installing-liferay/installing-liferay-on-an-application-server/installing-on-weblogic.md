@@ -1,5 +1,9 @@
 ---
 uuid: 5a7f2342-f13e-475d-ba7a-417b47b6adc2
+taxonomy-category-names:
+- DXP Self-Hosted Installation, Maintenance, and Administration
+- DXP Configuration
+- Liferay Self-Hosted
 ---
 # Installing on WebLogic
 

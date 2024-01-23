@@ -1,5 +1,12 @@
 ---
 uuid: fd568c50-034f-4866-a95a-e5edefbbc61c
+taxonomy-category-names:
+- Platform
+- DXP Configuration
+- Identity Management and Authentication
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # AntiSamy
 

@@ -4,6 +4,11 @@ toc:
   - ./securing-web-services/using-authentication-verifiers.md
   - ./securing-web-services/setting-up-cors.md
 uuid: 7bcf1f60-19c1-4765-9f32-938a05808317
+taxonomy-category-names:
+- Security
+- Service Access Policies
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Securing Web Services
 

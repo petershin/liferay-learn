@@ -1,5 +1,11 @@
 ---
 uuid: 0fe40c4e-6efe-429e-9052-86804150ac4d
+taxonomy-category-names:
+- Platform
+- Email Notifications and Notification Templates
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Alternative Email Configuration Methods
 

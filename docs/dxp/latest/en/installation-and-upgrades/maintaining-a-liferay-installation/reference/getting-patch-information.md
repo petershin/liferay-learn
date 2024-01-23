@@ -1,5 +1,10 @@
 ---
 uuid: 2a33f177-db70-42db-add8-66e659743c15
+taxonomy-category-names:
+- DXP Self-Hosted Installation, Maintenance, and Administration
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Getting Patch Information
 

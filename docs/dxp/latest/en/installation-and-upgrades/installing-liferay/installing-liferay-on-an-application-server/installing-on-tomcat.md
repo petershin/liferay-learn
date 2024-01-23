@@ -1,5 +1,9 @@
 ---
 uuid: 14f37389-738c-415b-840c-e405e65fe58a
+taxonomy-category-names:
+- DXP Self-Hosted Installation, Maintenance, and Administration
+- DXP Configuration
+- Liferay Self-Hosted
 ---
 # Installing on Tomcat
 

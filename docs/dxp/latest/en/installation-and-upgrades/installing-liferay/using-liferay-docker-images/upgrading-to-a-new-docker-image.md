@@ -1,5 +1,9 @@
 ---
 uuid: e936c7a0-cfb6-41c2-ad5c-ff687fa9bce8
+taxonomy-category-names:
+- DXP Self-Hosted Installation, Maintenance, and Administration
+- DXP Configuration
+- Liferay Self-Hosted
 ---
 # Upgrading to a New Docker Image
 

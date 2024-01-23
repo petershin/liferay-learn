@@ -6,6 +6,11 @@ toc:
   - ./reference/uninstalling-patches.md
   - ./reference/accessing-dxp-patch-code.md
 uuid: df104aab-da60-4bfc-adcc-886b6ac1ee9d
+taxonomy-category-names:
+- DXP Self-Hosted Installation, Maintenance, and Administration
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
  # Reference
 

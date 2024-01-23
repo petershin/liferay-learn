@@ -6,6 +6,10 @@ toc:
   - ./installing-liferay/using-liferay-docker-images.md
   - ./installing-liferay/installing-liferay-on-an-application-server.md
 uuid: 8a2fb4d4-cef3-4dee-9c4a-7f8aa819a695
+taxonomy-category-names:
+- DXP Self-Hosted Installation, Maintenance, and Administration
+- DXP Configuration
+- Liferay Self-Hosted
 ---
 # Installing Liferay
 

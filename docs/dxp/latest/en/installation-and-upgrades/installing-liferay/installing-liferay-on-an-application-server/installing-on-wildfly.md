@@ -1,5 +1,9 @@
 ---
 uuid: b9b38050-9b86-42e1-862b-11ddbeae8c04
+taxonomy-category-names:
+- DXP Self-Hosted Installation, Maintenance, and Administration
+- DXP Configuration
+- Liferay Self-Hosted
 ---
 # Installing on WildFly
 

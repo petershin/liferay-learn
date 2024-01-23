@@ -1,5 +1,9 @@
 ---
 uuid: d432521a-9946-4fef-919d-c7aa789c8982
+taxonomy-category-names:
+- DXP Self-Hosted Installation, Maintenance, and Administration
+- DXP Configuration
+- Liferay Self-Hosted
 ---
 # Installing Apps and Other Artifacts to Containers
 

@@ -1,5 +1,12 @@
 ---
 uuid: a41444d3-6932-44f5-823f-aa1ecaed6a08
+taxonomy-category-names:
+- Platform
+- DXP Configuration
+- Identity Management and Authentication
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Using Multi-Factor Authentication
 

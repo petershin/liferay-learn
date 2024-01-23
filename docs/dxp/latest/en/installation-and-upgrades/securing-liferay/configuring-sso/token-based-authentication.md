@@ -1,5 +1,12 @@
 ---
 uuid: 5c5f9eaa-753c-41ad-9fe7-afdd9b2bffd7
+taxonomy-category-names:
+- Platform
+- DXP Configuration
+- Identity Management and Authentication
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Token-based Single Sign On Authentication
 

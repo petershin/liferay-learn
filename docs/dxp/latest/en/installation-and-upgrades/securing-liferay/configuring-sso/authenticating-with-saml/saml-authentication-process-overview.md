@@ -1,5 +1,12 @@
 ---
 uuid: f257b84b-1b87-4714-8581-b85ce819ba8d
+taxonomy-category-names:
+- Platform
+- DXP Configuration
+- Identity Management and Authentication
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # SAML Authentication Process Overview
 

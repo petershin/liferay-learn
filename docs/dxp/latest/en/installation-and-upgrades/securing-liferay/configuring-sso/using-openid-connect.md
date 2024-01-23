@@ -1,5 +1,12 @@
 ---
 uuid: af832712-a9a1-46aa-ac8d-754cbd7656af
+taxonomy-category-names:
+- Platform
+- DXP Configuration
+- Identity Management and Authentication
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Using OpenID Connect
 

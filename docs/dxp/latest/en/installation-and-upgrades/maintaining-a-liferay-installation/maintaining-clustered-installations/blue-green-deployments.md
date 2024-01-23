@@ -1,5 +1,9 @@
 ---
 uuid: cef0cdea-8cec-4292-8311-1d85db1987d4
+taxonomy-category-names:
+- DXP Self-Hosted Installation, Maintenance, and Administration
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Blue-Green Deployments
 

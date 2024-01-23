@@ -1,5 +1,9 @@
 ---
 uuid: 7096601d-1346-4385-847b-eebba5fa3d2a
+taxonomy-category-names:
+- DXP Self-Hosted Installation, Maintenance, and Administration
+- DXP Configuration
+- Liferay Self-Hosted
 ---
 # Installing on JBoss EAP
 

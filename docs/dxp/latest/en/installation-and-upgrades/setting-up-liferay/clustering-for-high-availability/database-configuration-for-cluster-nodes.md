@@ -1,5 +1,10 @@
 ---
 uuid: f1547302-f5a0-4ae5-8c99-6f7d8dd1632e
+taxonomy-category-names:
+- Platform
+- DXP Configuration
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Database Configuration for Cluster Nodes
 

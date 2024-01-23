@@ -1,5 +1,10 @@
 ---
 uuid: 63fe3469-67c3-48da-86fe-b4fb8cdf50c2
+taxonomy-category-names:
+- Platform
+- DXP Configuration
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Configuring Cluster Link
 

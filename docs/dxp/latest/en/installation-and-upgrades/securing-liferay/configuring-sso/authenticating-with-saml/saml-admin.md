@@ -1,47 +1,54 @@
 ---
 uuid: 215707ed-204c-40f6-afb4-35001e424801
+taxonomy-category-names:
+- Platform
+- DXP Configuration
+- Identity Management and Authentication
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # SAML Admin
 
-The SAML Admin panel is the best place to configure your SAML instance. Use it instead of Instance Settings to streamline your SAML administration experience. 
+The SAML Admin panel is the best place to configure your SAML instance. Use it instead of Instance Settings to streamline your SAML administration experience.
 
-You can configure an Identity Provider (IdP), a Service Provider, and Service Provider connections using SAML Admin. To access it, click the _Global Menu_ (![Global Menu](../../../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _SAML Admin_. 
+You can configure an Identity Provider (IdP), a Service Provider, and Service Provider connections using SAML Admin. To access it, click the _Global Menu_ (![Global Menu](../../../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _SAML Admin_.
 
 ## General Tab
 
-The General tab shows options that apply to SAML regardless of its role: 
+The General tab shows options that apply to SAML regardless of its role:
 
-**Enabled:** Check this box to enable SAML authentication once you have everything configured. 
+**Enabled:** Check this box to enable SAML authentication once you have everything configured.
 
-**SAML Role:** Choose the SAML role, either Identity Provider or Service Provider. 
+**SAML Role:** Choose the SAML role, either Identity Provider or Service Provider.
 
-**Entity ID:** The unique identifier for this SAML entity (IdP or SP). It can be up to 1024 characters long. 
+**Entity ID:** The unique identifier for this SAML entity (IdP or SP). It can be up to 1024 characters long.
 
-The Certificate and Private Key section displays the key generated when you set up your key store here or in [system settings](./configuring-saml-at-the-system-level.md). Here, you can replace the certificate by generating a new certificate or importing one you created elsewhere, and you can also download the certificate to import elsewhere. 
+The Certificate and Private Key section displays the key generated when you set up your key store here or in [system settings](./configuring-saml-at-the-system-level.md). Here, you can replace the certificate by generating a new certificate or importing one you created elsewhere, and you can also download the certificate to import elsewhere.
 
-If you must replace the auto-generated certificate, it's easy: 
+If you must replace the auto-generated certificate, it's easy:
 
-1. Click _Replace Certificate_. 
+1. Click _Replace Certificate_.
 
-1. The Create Certificate tab is activated by default. Fill out the necessary fields for your key. 
+1. The Create Certificate tab is activated by default. Fill out the necessary fields for your key.
 
-1. When finished, click _Save_. 
+1. When finished, click _Save_.
 
-Your new key's details are now displayed. 
+Your new key's details are now displayed.
 
-If you've already generated a key, that key must be stored in a [PKCS #12](https://en.wikipedia.org/wiki/PKCS_12) archive to be imported into Liferay DXP: 
+If you've already generated a key, that key must be stored in a [PKCS #12](https://en.wikipedia.org/wiki/PKCS_12) archive to be imported into Liferay DXP:
 
-1. Click _Replace Certificate_. 
+1. Click _Replace Certificate_.
 
-1. Click the _Import Certificate_ tab. 
+1. Click the _Import Certificate_ tab.
 
-1. Type your key store's password and either drop the PKCS #12 key file into the upload area or use the file selector to choose it. 
+1. Type your key store's password and either drop the PKCS #12 key file into the upload area or use the file selector to choose it.
 
-Your key is now imported. 
+Your key is now imported.
 
 ## Service Provider
 
-1. Choose the _Service Provider_ role from the SAML Role field. 
+1. Choose the _Service Provider_ role from the SAML Role field.
 
 1. The Certificate and Private Key section is for creating a keystore for SAML. Click *Create Certificate* and enter the following information:
 

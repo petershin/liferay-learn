@@ -1,5 +1,10 @@
 ---
 uuid: e7861fdf-af3c-4417-8451-8943af4be312
+taxonomy-category-names:
+- Platform
+- DXP Configuration
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Tuning Liferay
 

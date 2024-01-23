@@ -1,5 +1,12 @@
 ---
 uuid: d3514308-54b6-4670-825f-35d510f05256
+taxonomy-category-names:
+- Platform
+- DXP Configuration
+- Identity Management and Authentication
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Authenticating with Kerberos
 

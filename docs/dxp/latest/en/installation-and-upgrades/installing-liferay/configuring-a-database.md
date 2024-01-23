@@ -1,5 +1,9 @@
 ---
 uuid: ac8b49c0-e770-46e4-9853-17552a0dd5d2
+taxonomy-category-names:
+- DXP Self-Hosted Installation, Maintenance, and Administration
+- DXP Configuration
+- Liferay Self-Hosted
 ---
 # Configuring a Database
 

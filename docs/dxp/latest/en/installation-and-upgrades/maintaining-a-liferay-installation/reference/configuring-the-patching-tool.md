@@ -1,5 +1,10 @@
 ---
 uuid: 4648b6f5-1af3-4f08-ad40-9fce06bf1d22
+taxonomy-category-names:
+- DXP Self-Hosted Installation, Maintenance, and Administration
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Configuring the Patching Tool
 

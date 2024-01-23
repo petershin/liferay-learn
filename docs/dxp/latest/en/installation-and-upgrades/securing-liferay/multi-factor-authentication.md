@@ -4,6 +4,13 @@ toc:
   - ./multi-factor-authentication/multi-factor-authentication-checkers.md
   - ./multi-factor-authentication/fast-identity-online-2.md
 uuid: 43faeea6-c18d-4c09-9928-534f43c2d852
+taxonomy-category-names:
+- Platform
+- DXP Configuration
+- Identity Management and Authentication
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Multi-Factor Authentication
 

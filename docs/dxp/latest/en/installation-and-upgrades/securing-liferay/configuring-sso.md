@@ -7,6 +7,13 @@ toc:
   - ./configuring-sso/authenticating-with-cas.md
   - ./configuring-sso/authenticating-with-kerberos.md
 uuid: ac3296b7-70b3-47db-b0fd-e57a1b1280fb
+taxonomy-category-names:
+- Platform
+- DXP Configuration
+- Identity Management and Authentication
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Configuring Single Sign-On
 

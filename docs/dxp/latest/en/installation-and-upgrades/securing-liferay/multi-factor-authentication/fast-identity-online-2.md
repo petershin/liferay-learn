@@ -1,5 +1,12 @@
 ---
 uuid: cc8123e1-6fc7-42fa-9244-40eda22d389c
+taxonomy-category-names:
+- Platform
+- DXP Configuration
+- Identity Management and Authentication
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Fast IDentity Online 2
 

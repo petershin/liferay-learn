@@ -1,5 +1,10 @@
 ---
 uuid: 46de0952-d1da-4d67-83c4-398c31f2eb34
+taxonomy-category-names:
+- Security
+- Service Access Policies
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Setting Up CORS
 

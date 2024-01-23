@@ -18,6 +18,12 @@ toc:
   - ./setting-up-liferay/tuning-liferay.md
   - ./setting-up-liferay/tuning-your-jvm.md
 uuid: f506ae5c-ac9e-4a52-9977-f345742f66d1
+taxonomy-category-names:
+- Platform
+- DXP Configuration
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Setting Up Liferay
 

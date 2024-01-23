@@ -1,5 +1,10 @@
 ---
 uuid: 483ba459-311b-4825-9fbd-b4e549c2823c
+taxonomy-category-names:
+- Security
+- Service Access Policies
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Setting Service Access Policies
 

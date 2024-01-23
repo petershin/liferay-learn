@@ -1,5 +1,10 @@
 ---
 uuid: 1cc142a8-cca9-4d6b-b035-e8a6498807b3
+taxonomy-category-names:
+- Platform
+- DXP Configuration
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Using a CDN
 

@@ -1,5 +1,10 @@
 ---
 uuid: 27d84d36-4247-4676-b017-68ea909b808c
+taxonomy-category-names:
+- Security
+- Service Access Policies
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Using Authentication Verifiers
 

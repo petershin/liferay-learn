@@ -4,6 +4,11 @@ toc:
   - ./advanced-patching-for-dxp-7-2/slimming-down-patched-installations.md
   - ./advanced-patching-for-dxp-7-2/custom-code-and-patch-compatibility.md
 uuid: 40108d03-0e78-494a-8d77-52b499d52f61
+taxonomy-category-names:
+- DXP Self-Hosted Installation, Maintenance, and Administration
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Advanced Patching for DXP 7.2
 

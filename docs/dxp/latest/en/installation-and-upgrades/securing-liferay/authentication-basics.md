@@ -6,6 +6,7 @@ taxonomy-category-names:
 - Identity Management and Authentication
 - Liferay Self-Hosted
 - Liferay PaaS
+- Liferay SaaS
 ---
 # Authentication Basics
 

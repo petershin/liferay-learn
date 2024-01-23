@@ -6,7 +6,7 @@ toc:
 uuid: 072db382-871c-474e-bdf9-ddf2a541ba30
 taxonomy-category-names:
 - Platform
-- DXP Configuration
+- Email Notifications and Notification Templates
 - Liferay Self-Hosted
 - Liferay PaaS
 - Liferay SaaS

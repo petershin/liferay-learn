@@ -1,5 +1,10 @@
 ---
 uuid: a047c502-cf80-4e98-811a-8858ae5c9bc6
+taxonomy-category-names:
+- DXP Self-Hosted Installation, Maintenance, and Administration
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Accessing DXP Patch Code
 

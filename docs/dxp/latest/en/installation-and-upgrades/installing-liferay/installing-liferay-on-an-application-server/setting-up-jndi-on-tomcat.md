@@ -1,5 +1,9 @@
 ---
 uuid: 75ebda3c-3714-4a2a-a07e-84ae00599ff9
+taxonomy-category-names:
+- DXP Self-Hosted Installation, Maintenance, and Administration
+- DXP Configuration
+- Liferay Self-Hosted
 ---
 # Setting Up JNDI on Tomcat
 

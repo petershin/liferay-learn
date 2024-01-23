@@ -1,5 +1,11 @@
 ---
 uuid: 49804344-72f6-4e92-aa84-5b99e2bfd982
+taxonomy-category-names:
+- Platform
+- Email Notifications and Notification Templates
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Configuring Microsoft Office 365 with OAuth
 

@@ -1,5 +1,9 @@
 ---
 uuid: cab559e7-b4f9-4046-83ce-f2a94a3a326b
+taxonomy-category-names:
+- DXP Self-Hosted Installation, Maintenance, and Administration
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Performing Rolling Restarts
 

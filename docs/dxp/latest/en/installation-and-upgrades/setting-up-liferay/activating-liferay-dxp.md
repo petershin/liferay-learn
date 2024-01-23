@@ -1,5 +1,9 @@
 ---
 uuid: b3193095-c153-4a56-964b-9ee100a85c97
+taxonomy-category-names:
+- DXP Self-Hosted Installation, Maintenance, and Administration
+- DXP Configuration
+- Liferay Self-Hosted
 ---
 # Activating Liferay DXP
 

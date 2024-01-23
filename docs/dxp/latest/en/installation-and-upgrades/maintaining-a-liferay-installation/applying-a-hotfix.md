@@ -1,5 +1,9 @@
 ---
 uuid: b0511389-8705-4aec-bc17-45037ffda907
+taxonomy-category-names:
+- DXP Self-Hosted Installation, Maintenance, and Administration
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Applying a Hotfix
 

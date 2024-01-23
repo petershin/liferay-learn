@@ -1,10 +1,17 @@
 ---
 uuid: cf2d204c-b0f6-44aa-ac1e-bd219d7c94e0
+taxonomy-category-names:
+- Platform
+- DXP Configuration
+- Identity Management and Authentication
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Using OpenAM
 
 ```{important}
-Liferay supports only OpenAM version 13. All other versions of OpenAM/OpenSSO are deprecated as of Liferay DXP 7.2. 
+Liferay supports only OpenAM version 13. All other versions of OpenAM/OpenSSO are deprecated as of Liferay DXP 7.2.
 ```
 
 OpenAM is an open source single sign-on solution from the codebase of Sun's System Access Manager product. You can use OpenAM to integrate Liferay DXP into an infrastructure that contains several different authentication schemes against different repositories of identities.

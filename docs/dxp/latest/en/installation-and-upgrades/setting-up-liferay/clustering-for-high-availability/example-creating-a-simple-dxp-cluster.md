@@ -1,5 +1,10 @@
 ---
 uuid: f1e685a5-2fbd-4b1c-8398-f7f3973d6171
+taxonomy-category-names:
+- Platform
+- DXP Configuration
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Example: Creating a Simple DXP Cluster
 

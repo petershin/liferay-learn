@@ -1,5 +1,10 @@
 ---
 uuid: fdc5de1c-d77b-40b7-b595-3904e8624afa
+taxonomy-category-names:
+- Platform
+- DXP Configuration
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Tuning Your JVM
 

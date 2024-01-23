@@ -7,6 +7,13 @@ toc:
   - ./authenticating-with-saml/configuring-saml-at-the-instance-level.md
   - ./authenticating-with-saml/saml-settings.md
 uuid: 30e4f185-5f4b-4e4f-81f7-48b5a59f7111
+taxonomy-category-names:
+- Platform
+- DXP Configuration
+- Identity Management and Authentication
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Authenticating with SAML
 

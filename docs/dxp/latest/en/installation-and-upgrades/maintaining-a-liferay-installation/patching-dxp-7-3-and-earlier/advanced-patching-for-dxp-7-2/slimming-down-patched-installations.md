@@ -1,5 +1,10 @@
 ---
 uuid: 43932285-5780-45e0-8e81-a7043de356df
+taxonomy-category-names:
+- DXP Self-Hosted Installation, Maintenance, and Administration
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Slimming Down Patched Installations
 

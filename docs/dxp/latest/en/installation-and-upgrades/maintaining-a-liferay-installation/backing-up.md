@@ -1,5 +1,8 @@
 ---
 uuid: bf88d1be-6f7e-4488-9afa-a0197ad45136
+taxonomy-category-names:
+- DXP Self-Hosted Installation, Maintenance, and Administration
+- Liferay Self-Hosted
 ---
 # Backing Up
 

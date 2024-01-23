@@ -37,9 +37,9 @@ For example, you may need to connect your Liferay Cloud services to directories 
 
     * **Communication Protocol**: UDP or TCP protocol for the connection.
 
-    * **Compression Mode** (OpenVPN only): Which compression algorithm to use for transmitted data (if any).
+    * **Compression Mode** (OpenVPN only): The compression algorithm to use for transmitted data (if any).
 
-    * **Authentication Method** (IPSec only): Whether to use EAP-MSCHAPv2, EAP-TLS, or a pre-shared key for authentication.
+    * **Authentication Method** (IPSec only): Choose EAP-MSCHAPv2, EAP-TLS, or a pre-shared key for authentication.
 
     * **Account Name**: The administrator's email address.
 
@@ -53,7 +53,7 @@ For example, you may need to connect your Liferay Cloud services to directories 
 
 1. If you're using OpenVPN and your VPN has static key enabled, add the static key.
 
-1. (Optional) Select an auto hash function used to generate an HMAC signature for data authenticity, and the encryption algorithm used. The default values are `SHA256` and `AES-256-CBC`, respectively.
+1. (Optional) Select an auto hash function used to generate an HMAC signature for data authenticity and the encryption algorithm used. The default values are `SHA256` and `AES-256-CBC`, respectively.
 
     ![Change the auto hash function and encryption cipher to the desired algorithms while you're setting up your VPN connection.](./connecting-a-vpn-server-to-liferay-cloud/images/03.png)
 
@@ -67,13 +67,12 @@ For example, you may need to connect your Liferay Cloud services to directories 
 
     ![Add one or more port forwarding routes before creating the VPN connection.](./connecting-a-vpn-server-to-liferay-cloud/images/04.png)
 
-    ```{tip}
-    Add more port forwarding routes by clicking the + icon on the right side. Remove added routes by clicking the Trash icon beside the existing route.
-    ```
+    !!! tip
+        Add more port forwarding routes by clicking the + icon on the right side. Remove added routes by clicking the Trash icon beside the existing route.
 
 1. Click *Create VPN*.
 
-The VPN configuration has been created. However, the VPN is not connected until you manually connect it from the VPN details page.
+The VPN configuration has been created. However, the VPN is not connected until you connect it manually from the VPN details page.
 
 ## Managing Your VPN Configuration
 
@@ -81,13 +80,12 @@ Once you have created your VPN configuration, you can view the status of the con
 
 ![The VPN details page displays the VPN status, configuration details, and VPN network activities.](./connecting-a-vpn-server-to-liferay-cloud/images/05.png)
 
-Navigate to your environment's _Settings_ page and then click on the configured VPN connection to get to the details page.
+Navigate to your environment's *Settings* page and then click on the configured VPN connection to get to the details page.
 
 ![Click on the configured VPN connection to see the VPN details page.](./connecting-a-vpn-server-to-liferay-cloud/images/06.png)
 
-```{note}
-The status of the VPN (connected or not connected) is visible both from the VPN details page, as well as the VPN section of the `Settings` page of your environment.
-```
+!!! note
+    The status of the VPN (connected or not connected) is visible both from the VPN details page, as well as the VPN section of the `Settings` page of your environment.
 
 ### Connecting and Disconnecting the VPN
 
@@ -97,9 +95,8 @@ The VPN details page indicates whether or not the VPN is already connected in th
 
 The VPN attempts to connect after clicking the button. If the connection fails, then the failed attempt displays in the _Related Activities_ section of the details page.
 
-```{tip}
-You can manually test the connectivity of your services to an IP address through your VPN by using the service's [shell](../../troubleshooting/shell-access.md) to run a command like the following: `curl -v [address]`.
-```
+!!! tip
+    You can test the connectivity of your services to an IP address manually through your VPN by using the service's [shell](../../troubleshooting/shell-access.md) to run a command like the following: `curl -v [address]`.
 
 While the connection is being established, the message "VPN connection attempt initiated" appears, and you cannot perform other management operations for your VPN until it completes. If you need to cancel the connection (for example, because an error is causing the connection to hang), then click "Cancel" on the pop-up.
 
@@ -107,9 +104,8 @@ While the connection is being established, the message "VPN connection attempt i
 
 To disconnect the VPN any time after the connection is established, click _Disconnect_ from the top-right Actions menu. This takes you to the _Disconnect VPN_ page.
 
-```{warning}
-Disconnecting the VPN will interrupt communications with any external services with Liferay Cloud.
-```
+!!! warning
+    Disconnecting the VPN will interrupt communications with any external services with Liferay Cloud.
 
 ![The Disconnect VPN page asks you to confirm the impact of disconnecting before proceeding.](./connecting-a-vpn-server-to-liferay-cloud/images/09.png)
 

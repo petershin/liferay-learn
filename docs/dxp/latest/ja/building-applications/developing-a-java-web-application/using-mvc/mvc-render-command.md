@@ -23,41 +23,40 @@ MVCレンダーコマンドは、レンダリングするページを処理す�
 
 1. サンプルをビルドしてデプロイします。
 
-    ```bash
-    cd liferay-a4p1
-    ```
+   ```bash
+   cd liferay-a4p1
+   ```
 
-    ```bash
-    ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
-    ```
+   ```bash
+   ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
+   ```
 
-    ```{note}
-    このコマンドは、モジュールJARをDockerコンテナの`/opt/liferay/osgi/modules`にコピーするのと同じです。
-    ```
+   !!! note
+      このコマンドは、モジュールJARをDockerコンテナの`/opt/liferay/osgi/modules`にコピーするのと同じです。
 
 1. Dockerコンテナコンソールでデプロイを確認します。
 
-    ```bash
-    STARTED com.acme.a4p1.web_1.0.0
-    ```
+   ```bash
+   STARTED com.acme.a4p1.web_1.0.0
+   ```
 
 1. ［**A4P1ポートレット**］ ウィジェットを ［**サンプル**］ カテゴリからウィジェットページに追加します。 A4P1ポートレットが表示されます。
 
-    ![A4P1ポートレットをページに追加しました。](./mvc-render-command/images/01.png)
+   ![A4P1ポートレットをページに追加しました。](./mvc-render-command/images/01.png)
 
 1. MVCレンダーコマンドを呼び出して、 ［**Go to Baker**］ をクリックしてBakerビューにアクセスします。 `A4P1BakerMVCRenderCommand`は、その`render`メソッドの呼び出しをログに記録し、Bakerビューをレンダリングします。
 
-    ```bash
-    [A4P1BakerMVCRenderCommand:26] Invoking #render(RenderRequest, RenderResponse)
-    ```
+   ```bash
+   [A4P1BakerMVCRenderCommand:26] Invoking #render(RenderRequest, RenderResponse)
+   ```
 
-    ![Bakerビューをレンダリングしています。](./mvc-render-command/images/02.png)
+   ![Bakerビューをレンダリングしています。](./mvc-render-command/images/02.png)
 
 1. 他のMVCレンダーコマンドを呼び出し、 ［**Go to Able**］ をクリックしてAbleビューに再度アクセスします。 `A4P1AbleMVCRenderCommand`は、その`render`メソッドの呼び出しをログに記録し、Ableビューを再度レンダリングします。
 
-    ```bash
-    [A4P1AbleMVCRenderCommand:26] Invoking #render(RenderRequest, RenderResponse)
-    ```
+   ```bash
+   [A4P1AbleMVCRenderCommand:26] Invoking #render(RenderRequest, RenderResponse)
+   ```
 
 MVCレンダーコマンドの動作を見てきました。 次に、それらがどのように機能するかを確認します。
 
@@ -81,9 +80,8 @@ MVCレンダーコマンドの動作を見てきました。 次に、それら�
 
 ポートレットはデフォルトで`/a4p1/able.jsp`をレンダリングします。
 
-```{note}
-`MVCRenderCommand`は、ポートレットの名前（たとえば、ポートレットコンポーネントの` javax.portlet.name`プロパティ値）によってポートレットにバインドします。
-```
+!!! note
+   `MVCRenderCommand`は、ポートレットの名前（たとえば、ポートレットコンポーネントの` javax.portlet.name`プロパティ値）によってポートレットにバインドします。
 
 次に、ポートレットのMVCレンダーコマンドクラスを調べます。
 
@@ -98,19 +96,18 @@ MVC Render Command クラスは [`MVCRenderCommand`](https://github.com/liferay/
 
 `A4P1AbleMVCRenderCommand`は、`MVCRenderCommand`サービスを提供する [`Component`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Component.html) です。 コンポーネントプロパティは、`A4P1AbleMVCRenderCommand`を`com_acme_a4p1_web_internal_portlet_A4P1Portlet`という名前のポートレットに適用し、`A4P1AbleMVCRenderCommand`をMVCコマンド名`/a4p1/able`にマップします。
 
-```{note}
-ポートレットごとに個別の `javax.portlet.name`プロパティを宣言することにより、`MVCRenderCommand`コンポーネントを複数のポートレットに関連付けることができます。 
+!!! note
+   ポートレットごとに個別の `javax.portlet.name`プロパティを宣言することにより、`MVCRenderCommand`コンポーネントを複数のポートレットに関連付けることができます。
 
 
       @Component(
-         property = {
-            "javax.portlet.name=com_acme_a4p1_web_internal_portlet_A4P1Portlet",
-            "javax.portlet.name=com_acme_a4p1_web_internal_portlet_A4P2Portlet",
-            "mvc.command.name=/a4p1/download"
-         },
-         service = MVCRenderCommand.class
-      )        
-```
+          property = {
+              "javax.portlet.name=com_acme_a4p1_web_internal_portlet_A4P1Portlet",
+              "javax.portlet.name=com_acme_a4p1_web_internal_portlet_A4P2Portlet",
+              "mvc.command.name=/a4p1/download"
+          },
+          service = MVCRenderCommand.class
+      )
 
 ポートレットがMVCコマンド名`/a4p1/able`を指定するリクエストパラメータを受け取ると、`A4P1AbleMVCRenderCommand`の`render`メソッドが実行されます。 この`render`メソッドは、それ自体を識別するメッセージをログに記録し、レンダリングするビューのパスを返します。
 
@@ -148,7 +145,7 @@ MVC Render Command クラスは [`MVCRenderCommand`](https://github.com/liferay/
 
 ## 関連トピック
 
-* [MVCリソースコマンド](./mvc-resource-command.md)
-* [MVCアクションコマンド](./mvc-action-command.md)
-* [MVCポートレットでのローカライズされたメッセージの使用](./using-localized-messages-in-an-mvc-portlet.md)
-* [ポートレット](../reference/portlets.md)
+- [MVCリソースコマンド](./mvc-resource-command.md)
+- [MVCアクションコマンド](./mvc-action-command.md)
+- [MVCポートレットでのローカライズされたメッセージの使用](./using-localized-messages-in-an-mvc-portlet.md)
+- [ポートレット](../reference/portlets.md)

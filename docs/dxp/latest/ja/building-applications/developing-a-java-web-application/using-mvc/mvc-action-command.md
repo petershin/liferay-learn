@@ -25,23 +25,22 @@ MVCアクションコマンドを使用するサンプルポートレットを�
 
 1. サンプルをビルドしてデプロイします。
 
-    ```bash
-    cd liferay-l6y9
-    ```
+   ```bash
+   cd liferay-l6y9
+   ```
 
-    ```bash
-    ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
-    ```
+   ```bash
+   ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
+   ```
 
-    ```{note}
-    このコマンドは、モジュールJARをDockerコンテナの`/opt/liferay/osgi/modules`にコピーするのと同じです。
-    ```
+   !!! note
+      このコマンドは、モジュールJARをDockerコンテナの`/opt/liferay/osgi/modules`にコピーするのと同じです。
 
 1. Dockerコンテナコンソールでデプロイを確認します。
 
-    ```bash
-    STARTED com.acme.l6y9.web_1.0.0
-    ```
+   ```bash
+   STARTED com.acme.l6y9.web_1.0.0
+   ```
 
 1. ［**L6Y9 ポートレット**］ ウィジェットを ［**サンプル**］ カテゴリからウィジェットページに追加します。 L6Y9ポートレットが表示されます。
 
@@ -51,15 +50,15 @@ MVCアクションコマンドを使用するサンプルポートレットを�
 
 1. ［**Do L6Y9 Able**］ をクリックします。 `DoL6Y9AbleMVCActionCommand`は、その`doProcessAction`メソッドの呼び出しをログに記録します。
 
-    ```bash
-    [DoL6Y9AbleMVCActionCommand:26] Invoke #doProcessAction(ActionRequest, ActionResponse)
-    ```
+   ```bash
+   [DoL6Y9AbleMVCActionCommand:26] Invoke #doProcessAction(ActionRequest, ActionResponse)
+   ```
 
 1. ［**Do L6Y9 Baker**］ をクリックします。 `DoL6Y9BakerMVCActionCommand`は、その`doProcessAction`メソッドの呼び出しをログに記録します。
 
-    ```bash
-    [DoL6Y9BakerMVCActionCommand:26] Invoke #doProcessAction(ActionRequest, ActionResponse)
-    ```
+   ```bash
+   [DoL6Y9BakerMVCActionCommand:26] Invoke #doProcessAction(ActionRequest, ActionResponse)
+   ```
 
 MVCアクションコマンドの動作を見てきました。 次に、それらがどのように機能するかを確認します。
 
@@ -82,9 +81,8 @@ MVCアクションコマンドの動作を見てきました。 次に、それ�
 
 ポートレットはデフォルトで`/view.jsp`をレンダリングします。
 
-```{note}
-`MVCActionCommand`は、ポートレットの名前（たとえば、ポートレットコンポーネントの` javax.portlet.name`プロパティ値）によってポートレットにバインドします。
-```
+!!! note
+   `MVCActionCommand`は、ポートレットの名前（たとえば、ポートレットコンポーネントの` javax.portlet.name`プロパティ値）によってポートレットにバインドします。
 
 サンプルポートレットは、デフォルトで`view.jsp`をレンダリングします。 次に、JSPがMVCアクションコマンドクラスを呼び出す方法を確認します。
 
@@ -114,24 +112,22 @@ MVCアクションコマンドクラスは、 [`MVCActionCommand`](https://githu
 
 ```{literalinclude} ./mvc-action-command/resources/liferay-l6y9.zip/l6y9-web/src/main/java/com/acme/l6y9/web/internal/portlet/action/DoL6Y9AbleMVCActionCommand.java
 :language: java
-:lines: 13-34
+:lines: 13-35
 ```
 
 `DoL6Y9AbleMVCActionCommand`は、`MVCActionCommand`サービスを提供する [`Component`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Component.html) です。 `DoL6Y9AbleMVCActionCommand`のコンポーネントプロパティは、プロパティ`javax.portlet.name=com_acme_l6y9_web_internal_portlet_L6Y9Portlet`を持つポートレットにコンポーネントを適用し、コンポーネントを`/do_l6y9_able`という名前のMVCコマンドにマップします。 ユーザーがそのコマンド名にバインドされたアクションをトリガーすると、`DoL6Y9AbleMVCActionCommand`の`doProcessAction`メソッドが実行されます。 デモンストレーションの目的で、上記の`doProcessAction`メソッドは、それ自体を識別するメッセージをログに記録します。
 
-```{note}
-ポートレットごとに個別の `javax.portlet.name`プロパティを宣言することにより、`MVCActionCommand`コンポーネントを複数のポートレットに関連付けることができます。 
-
+!!! note
+   ポートレットごとに個別の `javax.portlet.name`プロパティを宣言することにより、`MVCActionCommand`コンポーネントを複数のポートレットに関連付けることができます。
 
       @Component(
-         property = {
-            "javax.portlet.name=com_acme_l6y9_web_internal_portlet_L6Y9Portlet",
-            "javax.portlet.name=com_acme_l6y9_web_internal_portlet_L6Y0Portlet",
-            "mvc.command.name=/l6y9/download"
-         },
-         service = MVCActionCommand.class
+          property = {
+              "javax.portlet.name=com_acme_l6y9_web_internal_portlet_L6Y9Portlet",
+              "javax.portlet.name=com_acme_l6y9_web_internal_portlet_L6Y0Portlet",
+              "mvc.command.name=/l6y9/download"
+          },
+          service = MVCActionCommand.class
       )
-```
 
 `DoL6Y9BakerMVCActionCommand`は`DoL6Y9AbleMVCActionCommand`に似ていますが、名前に`Able`または`able`ではなく`Baker`または`baker`が含まれている点が異なります。
 
@@ -143,6 +139,6 @@ MVCアクションコマンドの使用方法がわかったので、[MVC Render
 
 ## 関連トピック
 
-* [MVCの使用](../using-mvc.md)
-* [MVCレンダーコマンド](./mvc-render-command.md)
-* [MVCリソースコマンド](./mvc-resource-command.md)
+- [MVCの使用](../using-mvc.md)
+- [MVCレンダーコマンド](./mvc-render-command.md)
+- [MVCリソースコマンド](./mvc-resource-command.md)

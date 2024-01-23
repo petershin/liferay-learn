@@ -37,9 +37,9 @@ cURLスクリプトを使用して、ファイルを [ドキュメントとメ�
    ./Document_POST_ToSite.sh 1234
    ```
 
-    ```{note}
-    ユーザーとパスワードがそれぞれ `test@liferay.com` と `test` でない場合は、`Document_POST_ToSite.sh` スクリプトを実行する前にこれらの値を置き換えてください。
-    ```
+   !!! note
+      ユーザーとパスワードがそれぞれ `test@liferay.com` と `test` でない場合は、`Document_POST_ToSite.sh` スクリプトを実行する前にこれらの値を置き換えてください。
+
 スクリプトは、それ自体をサイトのドキュメントとメディアにアップロードします。
 
 ![The file uploaded to Documents and Media.](./document-api-basics/images/01.png)
@@ -77,9 +77,8 @@ cURLスクリプトを使用して、ファイルを [ドキュメントとメ�
    java -classpath .:* -DsiteId=1234 Document_POST_ToSite
    ```
 
-    ```{note}
-    ユーザーとパスワードがそれぞれ `test@liferay.com` と `test` でない場合は、実行する前に `Document_POST_ToSite.java` ファイルでこれらの値を置き換えて、クラスを再コンパイルしてください。
-    ```
+   !!! note
+      ユーザーとパスワードがそれぞれ `test@liferay.com` と `test` でない場合は、実行する前に `Document_POST_ToSite.java` ファイルでこれらの値を置き換えて、クラスを再コンパイルしてください。
 
 このクラスはソースファイル `Document_POST_ToSite.java` を Documents and Media にアップロードする。
 
@@ -105,9 +104,8 @@ cURLコマンドとJavaクラスの仕組みをご覧ください。
 | `"http://localhost:8080/o/headless-delivery/v1.0/sites/${1}/documents"` | RESTサービスエンドポイント。 あなたのサイトIDパラメータは、`${1}`を置き換える。                                  |
 | `-u "test@liferay.com:learn"`                                           | 基本認証の資格情報。                                                                      |
 
-```{note}
-ここでは、デモのために基本的な認証を使用しています。 本番環境では、 [OAuth 2.0](../../../headless-delivery/using-oauth2.md) を介してユーザーを認証する必要があります。 OAuth2 を使用する React アプリケーションのサンプルについては、 [OAuth2によるユーザーの認証](../../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md) を参照してください。
-```
+!!! note
+   ここでは、デモのために基本的な認証を使用しています。 本番環境では、 [OAuth 2.0](../../../headless-delivery/using-oauth2.md) を介してユーザーを認証する必要があります。 OAuth2 を使用する React アプリケーションのサンプルについては、 [OAuth2によるユーザーの認証](../../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md) を参照してください。
 
 `Document`と`DocumentFolder` RESTサービス用の他のcURLコマンドも同様の引数を使用する。
 
@@ -120,7 +118,7 @@ cURLコマンドとJavaクラスの仕組みをご覧ください。
 ```{literalinclude} ./document-api-basics/resources/liferay-g9i6.zip/java/Document_POST_ToSite.java
    :dedent: 1
    :language: java
-   :lines: 10-29
+   :lines: 13-29
 ```
 
 このクラスは、わずか3行のコードでRESTサービスを呼び出します。
@@ -138,9 +136,9 @@ cURLコマンドとJavaクラスの仕組みをご覧ください。
 ```
 他のJavaクラスの例もこれと似ているが、異なる `DocumentResource` メソッドを呼び出している。
 
-```{important}
-サービスの詳細については、 [DocumentResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-delivery/headless-delivery-client/src/main/java/com/liferay/headless/delivery/client/resource/v1_0/DocumentResource.java) を参照のこと。
-```
+!!! important
+   サービスの詳細については、 [DocumentResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-delivery/headless-delivery-client/src/main/java/com/liferay/headless/delivery/client/resource/v1_0/DocumentResource.java) を参照のこと。
+
 以下は、cURLとJavaを使って他の`Document` RESTサービスを呼び出す例である。
 
 ## サイトドキュメントを取得する
@@ -183,9 +181,9 @@ java -classpath .:* -DsiteId=1234 Documents_GET_FromSite
 
 以下のcURLまたはJavaコマンドを実行することで、`Document`のフィールドを取得することができる。 `1234`を`ドキュメント`のIDに置き換える。
 
-```{tip}
-サイトの `Document` ID を取得するには `Documents_GET_FromSite.[java|sh]` を使用する。
-```
+!!! tip
+   サイトの `Document` ID を取得するには `Documents_GET_FromSite.[java|sh]` を使用する。
+
 ### Document_GET_ById.sh
 
 コマンド：
@@ -364,9 +362,8 @@ java -classpath .:* -DdocumentId=1234 Document_PUT_ById
 
 上記のcURLコマンドとJavaクラスは、`Document`のインスタンスを全く新しいものに置き換えるもので、それぞれ "Document_PUT_ById.sh "と "Document_PUT_ById.java "という新しいタイトルを持ち、"Goo. "という説明を持つ。
 
-```{warning}
-現在の `Document` のタイトルを使用したいのでなければ、置換する `Document` に必要な `title` の値を指定してください。
-```
+!!! warning
+   現在の `Document` のタイトルを使用したいのでなければ、置換する `Document` に必要な `title` の値を指定してください。
 
 ![The cURL command replaced the document.](./document-api-basics/images/04.png)
 
@@ -425,7 +422,7 @@ java -classpath .:* -DdocumentId=1234 Document_DELETE_ById
 
 ## 関連トピック
 
-* [ドキュメントとメディア](../../documents-and-media.md)
-* [RESTサービスの消費](../../../headless-delivery/consuming-apis/consuming-rest-services.md)
-* [APIヘッダリファレンス](../../../headless-delivery/consuming-apis/api-headers-reference.md)
-* [GraphQL APIを消費する](../../../headless-delivery/consuming-apis/consuming-graphql-apis.md)
+- [ドキュメントとメディア](../../documents-and-media.md)
+- [RESTサービスの消費](../../../headless-delivery/consuming-apis/consuming-rest-services.md)
+- [APIヘッダリファレンス](../../../headless-delivery/consuming-apis/api-headers-reference.md)
+- [GraphQL APIを消費する](../../../headless-delivery/consuming-apis/consuming-graphql-apis.md)

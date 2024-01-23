@@ -1,16 +1,16 @@
 ---
-taxonomy-category-names:
-- Digital Asset Management
-- Documents and Media
-- Liferay Self-Hosted
-- Liferay PaaS
-- Liferay SaaS
 toc:
   - ./using-adaptive-media/adding-image-resolutions.md
   - ./using-adaptive-media/managing-image-resolutions.md
   - ./using-adaptive-media/using-adapted-images-in-site-content.md
   - ./using-adaptive-media/migrating-documents-and-media-thumbnails.md
   - ./using-adaptive-media/adaptive-media-configuration-reference.md
+taxonomy-category-names:
+- Digital Asset Management
+- Documents and Media
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: bd2ce0e7-dc9c-40c0-b323-d0a3ca2440d0
 ---
 # Using Adaptive Media

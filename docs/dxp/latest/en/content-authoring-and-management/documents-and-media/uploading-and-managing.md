@@ -1,10 +1,4 @@
 ---
-taxonomy-category-names:
-- Digital Asset Management
-- Documents and Media
-- Liferay Self-Hosted
-- Liferay PaaS
-- Liferay SaaS
 toc:
   - ./uploading-and-managing/uploading-files.md
   - ./uploading-and-managing/using-folders.md
@@ -17,6 +11,12 @@ toc:
   - ./uploading-and-managing/enabling-docusign-digital-signatures.md
   - ./uploading-and-managing/creating-documents.md
   - ./uploading-and-managing/managing-metadata.md
+taxonomy-category-names:
+- Digital Asset Management
+- Documents and Media
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: b5b19386-5db0-4478-bf64-af9308f5be08
 ---
 # Uploading and Managing

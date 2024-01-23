@@ -1,10 +1,4 @@
 ---
-taxonomy-category-names:
-- Content Management System
-- Categories and Tags
-- Liferay Self-Hosted
-- Liferay PaaS
-- Liferay SaaS
 toc:
   - ./tags-and-categories/organizing-content-with-categories-and-tags.md
   - ./tags-and-categories/tagging-content-and-managing-tags.md
@@ -13,6 +7,12 @@ toc:
   - ./tags-and-categories/session-property-vocabularies.md
   - ./tags-and-categories/auto-tagging.md
   - ./tags-and-categories/developer-guide.md
+taxonomy-category-names:
+- Content Management System
+- Categories and Tags
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 509393a0-2d94-43ec-a20a-29cfa5805243
 ---
 # Tags and Categories

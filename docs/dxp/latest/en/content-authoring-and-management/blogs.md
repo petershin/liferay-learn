@@ -1,10 +1,4 @@
 ---
-taxonomy-category-names:
-- Content Management System
-- Blogs
-- Liferay Self-Hosted
-- Liferay PaaS
-- Liferay SaaS
 toc:
   - ./blogs/getting-started-with-blogs.md
   - ./blogs/adding-blog-entries.md
@@ -16,6 +10,12 @@ toc:
   - ./blogs/blog-entry-editor-reference.md
   - ./blogs/blog-permissions-reference.md
   - ./blogs/developer-guide.md
+taxonomy-category-names:
+- Content Management System
+- Blogs
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 03603adf-5b0c-434c-8f47-2b99fef1b6e9
 ---
 # Blogs

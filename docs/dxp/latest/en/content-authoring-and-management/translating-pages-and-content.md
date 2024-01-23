@@ -1,16 +1,16 @@
 ---
-taxonomy-category-names:
-- Content Management System
-- Content Translations
-- Liferay Self-Hosted
-- Liferay PaaS
-- Liferay SaaS
 toc:
   - ./translating-pages-and-content/translating-content-pages.md
   - ./translating-pages-and-content/translating-web-content.md
   - ./translating-pages-and-content/using-third-parties-for-translation.md
   - ./translating-pages-and-content/enabling-workflows-for-translations.md
   - ./translating-pages-and-content/managing-translation-permissions.md
+taxonomy-category-names:
+- Content Management System
+- Content Translations
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 498da2e9-36d6-4a74-b1a2-a0c521965508
 ---
 # Translating Pages and Content

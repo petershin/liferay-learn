@@ -1,10 +1,4 @@
 ---
-taxonomy-category-names:
-- Sites
-- Collections
-- Liferay Self-Hosted
-- Liferay PaaS
-- Liferay SaaS
 toc:
   - ../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md
   - ../site-building/displaying-content/collections-and-collection-pages/creating-collections.md
@@ -13,6 +7,12 @@ toc:
   - ../site-building/displaying-content/collections-and-collection-pages/collection-providers.md
   - >-
     ../site-building/personalizing-site-experience/experience-personalization/personalizing-collections.md
+taxonomy-category-names:
+- Sites
+- Collections
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 39de6f65-632b-4eb8-b880-55827658f587
 ---
 # Collections and Collection Pages

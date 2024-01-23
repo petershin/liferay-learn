@@ -1,12 +1,4 @@
 ---
-taxonomy-category-names:
-- Digital Asset Management
-- Documents and Media
-- DXP Configuration
-- Data Integration
-- Liferay Self-Hosted
-- Liferay PaaS
-- Liferay SaaS
 toc:
   - ./devops/configuring-documents-and-media-previews.md
   - >-
@@ -19,6 +11,14 @@ toc:
   - ./devops/enabling-document-creation-and-editing-with-microsoft-office-365.md
   - ./devops/google-drive-integration.md
   - ./devops/sharepoint-integration.md
+taxonomy-category-names:
+- Digital Asset Management
+- Documents and Media
+- DXP Configuration
+- Data Integration
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 44e5072d-9d76-42a5-a0f0-2687960348fb
 ---
 # DevOps

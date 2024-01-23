@@ -1,5 +1,6 @@
 ---
 uuid: 37ef6012-3c3a-4c1e-9c6e-aee0a893784d
+taxonomy-category-names:
 - Sites
 - Users and Account Analysis
 - Personalization

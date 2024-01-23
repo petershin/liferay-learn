@@ -1,5 +1,6 @@
 ---
 uuid: 8a736460-98bf-4349-958d-f51fc4854404
+taxonomy-category-names:
 - Personalization
 - User Interests and Content Recommendations
 - Liferay Self-Hosted

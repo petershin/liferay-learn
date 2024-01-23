@@ -1,5 +1,6 @@
 ---
 uuid: 9438dbbf-0a67-4531-bff7-4ec226860725
+taxonomy-category-names:
 - Personalization
 - Static and Dynamic User Segments
 - Liferay Self-Hosted

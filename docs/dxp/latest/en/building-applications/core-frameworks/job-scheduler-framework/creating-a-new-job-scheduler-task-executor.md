@@ -5,7 +5,6 @@ taxonomy-category-names:
 - Data Integration
 - Liferay Self-Hosted
 - Liferay PaaS
-- Liferay SaaS
 ---
 # Creating a New Job Scheduler Task Executor
 

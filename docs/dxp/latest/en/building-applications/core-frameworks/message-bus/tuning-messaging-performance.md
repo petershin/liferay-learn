@@ -5,7 +5,6 @@ taxonomy-category-names:
 - Core Frameworks
 - Liferay Self-Hosted
 - Liferay PaaS
-- Liferay SaaS
 ---
 # Tuning Messaging Performance
 
@@ -13,19 +12,19 @@ Messaging performance is tuned at the destinations. Performance depends on the d
 
 Here are the three destination types:
 
-**Parallel Destination** 
+**Parallel Destination**
 * Messages sent here are queued.
 * Worker threads from a thread pool deliver messages to registered message listeners, one worker thread per message per message listener. Threads simultaneously deliver the same message to a destination's message listeners.
 
-**Serial Destination** 
+**Serial Destination**
 * Messages sent here are queued.
 * Worker threads from a thread pool deliver messages to registered message listeners, one worker thread per message.
 
-**Synchronous Destination** 
+**Synchronous Destination**
 * Messages sent here are directly delivered to message listeners.
 * The thread sending the message also delivers the message to all message listeners.
 
-You can send messages in different ways using the applicable destination types. 
+You can send messages in different ways using the applicable destination types.
 
 **Destination Type Compatibility**
 

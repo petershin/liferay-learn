@@ -5,7 +5,6 @@ taxonomy-category-names:
 - Data Frameworks
 - Liferay Self-Hosted
 - Liferay PaaS
-- Liferay SaaS
 ---
 # Invoking a Service Locally
 

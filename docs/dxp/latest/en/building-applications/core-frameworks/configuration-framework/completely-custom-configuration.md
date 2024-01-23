@@ -5,11 +5,10 @@ taxonomy-category-names:
 - Core Frameworks
 - Liferay Self-Hosted
 - Liferay PaaS
-- Liferay SaaS
 ---
 # Completely Custom Configuration
 
-A configuration UI is generated automatically when you [create a configuration interface](./setting-and-accessing-configurations.md#creating-the-configuration-interface). But in some cases you want a completely custom UI for your configuration. For example, you plan to handle the configuration programmatically instead of using Liferay's Configuration Admin. Or maybe you want the flexibility of creating a completely custom UI. Here's how to do it. 
+A configuration UI is generated automatically when you [create a configuration interface](./setting-and-accessing-configurations.md#creating-the-configuration-interface). But in some cases you want a completely custom UI for your configuration. For example, you plan to handle the configuration programmatically instead of using Liferay's Configuration Admin. Or maybe you want the flexibility of creating a completely custom UI. Here's how to do it.
 
 ## See the Example Project
 

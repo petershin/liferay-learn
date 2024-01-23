@@ -5,7 +5,6 @@ taxonomy-category-names:
 - Java Development
 - Liferay Self-Hosted
 - Liferay PaaS
-- Liferay SaaS
 ---
 # Clay Dropdown Menus and Action Menus
 
@@ -21,9 +20,9 @@ Basic dropdown menu:
 	label="Default"
 />
 ```
- 
+
 ![Clay taglibs provide everything you need to add dropdown menus to your app.](./clay-dropdown-and-action-menus/images/01.png)
- 
+
 The dropdown menu's items are defined in its Java class--`dropdownDisplayContext` in this case. Menu items are `NavigationItem` objects. You can disable menu  items with the `setDisabled(true)` method and make a menu item active with the `setActive(true)` method. The `href` attribute is set with the `setHref()` method, and labels are defined with the `setLabel()` method. Here's an example implementation of the `dropdownDisplayContext` class:
 
 ```java

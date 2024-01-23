@@ -5,7 +5,6 @@ taxonomy-category-names:
 - Java Development
 - Liferay Self-Hosted
 - Liferay PaaS
-- Liferay SaaS
 ---
 # Using Liferay Util Dynamic Include
 
@@ -26,7 +25,7 @@ The example configuration below uses the `<liferay-util:dynamic-include>` tag to
 ```
 
 Now you know how to use the `<liferay-util:dynamic-include>` tag to add extension points to your app.
-    
+
 ## Related Topics
 
 * [Dynamic Includes](https://help.liferay.com/hc/en-us/articles/360018165711-Dynamic-Includes)

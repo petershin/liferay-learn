@@ -5,11 +5,10 @@ taxonomy-category-names:
 - Java Development
 - Liferay Self-Hosted
 - Liferay PaaS
-- Liferay SaaS
 ---
 # Including Actions in the Management Bar
 
-While an actions menu is typically included with each search container result, you can also include these actions in the management bar. This keeps everything organized within the same UI. This update adds a checkbox next to each search container result, as well as adds one in the management bar itself to select all results. The actions are displayed when a checkbox is checked---individual or select all---and hidden from view otherwise. 
+While an actions menu is typically included with each search container result, you can also include these actions in the management bar. This keeps everything organized within the same UI. This update adds a checkbox next to each search container result, as well as adds one in the management bar itself to select all results. The actions are displayed when a checkbox is checked---individual or select all---and hidden from view otherwise.
 
 ![You can select individual results or all results at once.](./including-actions-in-the-management-bar/images/01.png)
 

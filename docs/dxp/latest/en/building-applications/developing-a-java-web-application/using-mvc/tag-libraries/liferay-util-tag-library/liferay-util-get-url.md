@@ -5,7 +5,6 @@ taxonomy-category-names:
 - Java Development
 - Liferay Self-Hosted
 - Liferay PaaS
-- Liferay SaaS
 ---
 # Using Liferay Util Get URL
 
@@ -33,7 +32,7 @@ Here is an example that uses the `var` attribute:
 
 ![You can use the Liferay Util Get URL tag to scrape URLs.](./liferay-util-get-url/images/01.png)
 
-Now you know how to use the `<liferay-util:get-url>` tag to scrape URLs. 
+Now you know how to use the `<liferay-util:get-url>` tag to scrape URLs.
 
 ## Related Topics
 

@@ -5,7 +5,6 @@ taxonomy-category-names:
 - Java Development
 - Liferay Self-Hosted
 - Liferay PaaS
-- Liferay SaaS
 ---
 # Using Liferay Util HTML Bottom
 
@@ -24,7 +23,7 @@ The example configuration below uses the `<liferay-util:html-bottom>` tag to inc
 </liferay-util:html-bottom>
 ```
 
-Now you know how to use the `<liferay-util:html-bottom>` tag to include additional resources in the bottom of the page's HTML tag. 
+Now you know how to use the `<liferay-util:html-bottom>` tag to include additional resources in the bottom of the page's HTML tag.
 
 ## Related Topics
 

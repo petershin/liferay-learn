@@ -5,13 +5,12 @@ taxonomy-category-names:
 - Java Development
 - Liferay Self-Hosted
 - Liferay PaaS
-- Liferay SaaS
 ---
 # Portlet Descriptor to OSGi Service Property Map
 
 Here's a map of portlet XML descriptor values to OSGi service properties for publishing OSGi Portlets. The properties centralize and simplify portlet configuration. They are typically represented as key-value pairs or, more generally, as a Map-like object.
 
-The property keys essentially flatten the XML descriptors but resemble the descriptor names. 
+The property keys essentially flatten the XML descriptors but resemble the descriptor names.
 
 The mappings are organized by descriptor type:
 

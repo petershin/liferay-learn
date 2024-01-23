@@ -5,7 +5,6 @@ taxonomy-category-names:
 - Core Frameworks
 - Liferay Self-Hosted
 - Liferay PaaS
-- Liferay SaaS
 ---
 # Field Options Provider
 

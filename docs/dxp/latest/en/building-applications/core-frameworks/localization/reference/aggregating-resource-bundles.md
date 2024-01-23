@@ -5,7 +5,6 @@ taxonomy-category-names:
 - Core Frameworks
 - Liferay Self-Hosted
 - Liferay PaaS
-- Liferay SaaS
 ---
 # Aggregating Resource Bundles
 
@@ -13,7 +12,7 @@ When working with a module that shares localized messages, the bnd header must s
 
 1. Open the `bnd.bnd` file.
 
-1. Add the `-liferay-aggregate-resource-bundles:` bnd instruction and assign it the bundle symbolic names of modules whose resource bundles you want to aggregate with the current module: 
+1. Add the `-liferay-aggregate-resource-bundles:` bnd instruction and assign it the bundle symbolic names of modules whose resource bundles you want to aggregate with the current module:
 
     ```properties
     -liferay-aggregate-resource-bundles: \

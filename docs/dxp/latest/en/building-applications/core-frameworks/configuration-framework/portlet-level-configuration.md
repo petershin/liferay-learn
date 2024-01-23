@@ -5,13 +5,12 @@ taxonomy-category-names:
 - Core Frameworks
 - Liferay Self-Hosted
 - Liferay PaaS
-- Liferay SaaS
 ---
 # Portlet Level Configuration
 
-With the configuration framework, you can set your [application's configuration for different levels of scope](./scoping-configurations.md). Where Instance and Site-scoped configurations use `ConfigurationProvider`, portlet scoped configurations use `PortletDisplay` as shown in the example below. 
+With the configuration framework, you can set your [application's configuration for different levels of scope](./scoping-configurations.md). Where Instance and Site-scoped configurations use `ConfigurationProvider`, portlet scoped configurations use `PortletDisplay` as shown in the example below.
 
-The configuration framework can be used in conjunction with portlet preferences so that an app can have both a configuration UI in system settings as well a preference UI in the portlet's setup tab. 
+The configuration framework can be used in conjunction with portlet preferences so that an app can have both a configuration UI in system settings as well a preference UI in the portlet's setup tab.
 
 Note, an application's configuration is overridden if portlet preferences are implemented and set by a user. See [Portlet Preferences](../../developing-a-java-web-application/using-mvc/portlet-preferences.md) to learn more.
 

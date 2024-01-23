@@ -5,15 +5,14 @@ taxonomy-category-names:
 - Java Development
 - Liferay Self-Hosted
 - Liferay PaaS
-- Liferay SaaS
 ---
 # Liferay Faces Bridge
 
 Liferay Faces Bridge enables you to deploy JSF web apps as portlets without writing portlet-specific code. It also contains innovative features that make it possible to leverage the power of JSF 2.x inside a portlet application.
 
-Liferay Faces Bridge is distributed in a `.jar` file. You can add Liferay Faces Bridge as a dependency to your portlet projects, in order to deploy your JSF web applications as portlets within JSR 286 (Portlet 2.0) compliant portlet containers, like Liferay Portal 5.2, 6.0, 6.1, 6.2, and 7.0. 
+Liferay Faces Bridge is distributed in a `.jar` file. You can add Liferay Faces Bridge as a dependency to your portlet projects, in order to deploy your JSF web applications as portlets within JSR 286 (Portlet 2.0) compliant portlet containers, like Liferay Portal 5.2, 6.0, 6.1, 6.2, and 7.0.
 
-Liferay Faces Bridge project home page can be found [here](https://community.liferay.com/-/faces). 
+Liferay Faces Bridge project home page can be found [here](https://community.liferay.com/-/faces).
 
 To fully understand Liferay Faces Bridge, you must first understand the portlet bridge standard. Because the Portlet 1.0 and JSF 1.0 specs were being created at essentially the same time, the Expert Group (EG) for the JSF specification constructed the JSF framework to be compliant with portlets. For example, the [ExternalContext.getRequest()](https://javaee.github.io/javaee-spec/javadocs/javax/faces/context/ExternalContext.html#getRequest--) method returns an `Object` instead of an [javax.servlet.http.HttpServletRequest](https://javaee.github.io/javaee-spec/javadocs/javax/servlet/http/HttpServletRequest.html). When this method is used in a portal, the `Object` can be cast to a [javax.portlet.PortletRequest](http://portals.apache.org/pluto/portlet-2.0-apidocs/javax/portlet/PortletRequest.html). Despite the EG's consciousness of portlet compatibility within the design of JSF, the gap between the portlet and JSF lifecycles had to be bridged. 
 

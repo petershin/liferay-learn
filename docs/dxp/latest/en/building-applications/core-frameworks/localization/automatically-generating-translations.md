@@ -5,13 +5,12 @@ taxonomy-category-names:
 - Core Frameworks
 - Liferay Self-Hosted
 - Liferay PaaS
-- Liferay SaaS
 ---
 # Automatically Generating Translations
 
 Liferay DXP supports 50 languages out-of-the-box. Each locale has its own [language properties file](https://github.com/liferay/liferay-portal/tree/master/modules/apps/portal-language/portal-language-lang/src/main/resources/content) containing keys for its language.
 
-When you create an application with custom language keys, it's tedious and difficult to translate them for all these different languages. Fortunately, you can use Liferay's Language Builder tool to generate translations automatically. Language Builder generates translations using Microsoft's Translator API. 
+When you create an application with custom language keys, it's tedious and difficult to translate them for all these different languages. Fortunately, you can use Liferay's Language Builder tool to generate translations automatically. Language Builder generates translations using Microsoft's Translator API.
 
 ```{note}
 The accuracy and correctness of machine translation can vary from language to language. It is up to you on how to make use of these generated translations.

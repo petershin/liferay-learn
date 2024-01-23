@@ -5,7 +5,6 @@ taxonomy-category-names:
 - Java Development
 - Liferay Self-Hosted
 - Liferay PaaS
-- Liferay SaaS
 ---
 # Portlets
 
@@ -15,7 +14,7 @@ Many portlets can be placed on a single page by users (if they have permission) 
 
 ![You can place multiple portlets on a single page.](./portlets/images/01.png)
 
-## Portlet Phases 
+## Portlet Phases
 
 Portlets handle requests in multiple phases. This makes portlets much more flexible than servlets. Each portlet phase executes a different operation:
 
@@ -33,13 +32,13 @@ Portlets handle requests in multiple phases. This makes portlets much more flexi
 
 Portlets also differ from servlets by having distinct modes and window states. Mode names distinguish the portlet's current function, though most modern applications use View Mode only.
 
-**View mode:** The portlet's default mode, where its main functionality is implemented. 
+**View mode:** The portlet's default mode, where its main functionality is implemented.
 
-**Edit mode:** The portlet's configuration mode. For example, a weather portlet might use Edit mode to define the location for a weather report. 
+**Edit mode:** The portlet's configuration mode. For example, a weather portlet might use Edit mode to define the location for a weather report.
 
 **Help mode:** A mode for displaying help information or documentation.
 
-Portlet window states control the amount of space a portlet takes on a page. Window states mimic a traditional desktop environments' window behavior: 
+Portlet window states control the amount of space a portlet takes on a page. Window states mimic a traditional desktop environments' window behavior:
 
 **Normal:** The portlet can be on a page that contains other portlets. This is the default window state.
 

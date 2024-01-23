@@ -10,7 +10,6 @@ taxonomy-category-names:
 - Data Integration
 - Liferay Self-Hosted
 - Liferay PaaS
-- Liferay SaaS
 ---
 # Job Scheduler Framework
 

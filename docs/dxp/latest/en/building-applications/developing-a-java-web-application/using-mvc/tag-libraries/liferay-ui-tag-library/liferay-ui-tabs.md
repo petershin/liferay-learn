@@ -5,11 +5,10 @@ taxonomy-category-names:
 - Java Development
 - Liferay Self-Hosted
 - Liferay PaaS
-- Liferay SaaS
 ---
 # Liferay UI Tabs
 
-Tabs create dividers that organize content into individual sections. Content can be embedded or included from another JSP. 
+Tabs create dividers that organize content into individual sections. Content can be embedded or included from another JSP.
 
 To add tabs to your app, use the `<liferay-ui:tabs>` tag and specify each tab's name as a comma-separated list for the `names` attribute. For example, three tabs named `tab1`, `tab2`, and `tab3`, look like this in the JSP:
 

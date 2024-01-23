@@ -20,7 +20,7 @@ service-builder/defining-entities.md
 service-builder/business-logic-with-service-builder.md
 ```
 
-An application without reliable business logic or persistence isn't much of an application at all. Unfortunately, writing your own persistence code often takes a great deal of time. Service Builder is an object-relational mapping tool that can generate your model, persistence, and service layers from a single `xml` file. Once generated, the code is completely customizable: you can write your own persistence code along with custom SQL if necessary. Regardless of how you produce your persistence code, you can then use Service Builder to implement your app's business logic. 
+An application without reliable business logic or persistence isn't much of an application at all. Unfortunately, writing your own persistence code often takes a great deal of time. Service Builder is an object-relational mapping tool that can generate your model, persistence, and service layers from a single `xml` file. Once generated, the code is completely customizable: you can write your own persistence code along with custom SQL if necessary. Regardless of how you produce your persistence code, you can then use Service Builder to implement your app's business logic.
 
 Here, you'll learn how to use Service Builder to
 
@@ -28,11 +28,11 @@ Here, you'll learn how to use Service Builder to
 
 * Implement your business logic
 
-When you configure your model and its relationships in your `service.xml` file and run Service Builder, it generates these layers of code: 
+When you configure your model and its relationships in your `service.xml` file and run Service Builder, it generates these layers of code:
 
-* **Model layer:** defines objects to represent your project's entities. 
+* **Model layer:** defines objects to represent your project's entities.
 
-* **Persistence layer:** saves entities to and retrieves entities from the database. 
+* **Persistence layer:** saves entities to and retrieves entities from the database.
 
 * **Service layer:** a blank layer ready for you to create your API and business logic. 
 

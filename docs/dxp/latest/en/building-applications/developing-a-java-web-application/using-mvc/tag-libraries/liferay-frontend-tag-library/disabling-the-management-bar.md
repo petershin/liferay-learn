@@ -5,11 +5,10 @@ taxonomy-category-names:
 - Java Development
 - Liferay Self-Hosted
 - Liferay PaaS
-- Liferay SaaS
 ---
 # Disabling All or Portions of the Management Bar
 
-When there are no search results to display, you should disable all the Management Bar's buttons, except the sidenav toggler button. 
+When there are no search results to display, you should disable all the Management Bar's buttons, except the sidenav toggler button.
 
 You can disable the Management Bar by adding the `disabled` attribute to the `liferay-frontend:management-bar` tag:
 

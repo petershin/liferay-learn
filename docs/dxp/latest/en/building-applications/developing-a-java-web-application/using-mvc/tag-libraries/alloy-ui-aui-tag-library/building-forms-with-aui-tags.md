@@ -5,11 +5,10 @@ taxonomy-category-names:
 - Java Development
 - Liferay Self-Hosted
 - Liferay PaaS
-- Liferay SaaS
 ---
 # Building Forms with AUI Tags
 
-The [AUI tag library](https://learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/aui/tld-frame.html) provides all the components you need to build forms for your applications. AUI tags provide many benefits to standard form elements, such as custom namespacing, localization, and even validation. They provide multiple attributes that let you create the experience you want for your users. 
+The [AUI tag library](https://learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/aui/tld-frame.html) provides all the components you need to build forms for your applications. AUI tags provide many benefits to standard form elements, such as custom namespacing, localization, and even validation. They provide multiple attributes that let you create the experience you want for your users.
 
 Follow these steps to build a form using AUI tags:
 

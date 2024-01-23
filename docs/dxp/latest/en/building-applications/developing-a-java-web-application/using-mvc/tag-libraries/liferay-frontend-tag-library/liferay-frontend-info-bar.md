@@ -5,15 +5,14 @@ taxonomy-category-names:
 - Java Development
 - Liferay Self-Hosted
 - Liferay PaaS
-- Liferay SaaS
 ---
 # Liferay Front-end Info Bar
 
-An info bar provides a button that toggles the visibility of additional sidebar information. This is perfect for providing more detailed metadata for a search result, such as the file size, type, URL, etc. 
+An info bar provides a button that toggles the visibility of additional sidebar information. This is perfect for providing more detailed metadata for a search result, such as the file size, type, URL, etc.
 
 ![The info bar tags create a sidebar panel toggler that reveals additional info.](./liferay-frontend-info-bar-intro/images/01.png)
 
-The configuration has two key parts: the info bar---and buttons---and the sidebar panel. 
+The configuration has two key parts: the info bar---and buttons---and the sidebar panel.
 
 Info bar:
 
@@ -28,7 +27,7 @@ Info bar:
 </liferay-frontend:info-bar>
 ```
 
-The `<liferay-frontend:info-bar-sidenav-toggler-button>` tag uses [Clay Icons](../clay-tag-library/clay-icons.md) for the `icon` attribute. 
+The `<liferay-frontend:info-bar-sidenav-toggler-button>` tag uses [Clay Icons](../clay-tag-library/clay-icons.md) for the `icon` attribute.
 
 Sidebar panel:
 

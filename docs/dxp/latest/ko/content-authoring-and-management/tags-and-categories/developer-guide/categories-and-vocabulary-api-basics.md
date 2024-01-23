@@ -85,9 +85,8 @@ Liferay의 REST API는 Liferay의 범주 및 어휘 기능에 대한 서비스�
 | `-d "{\"description\": \"Foo\", \"name\": \"Able\"}"`                             | 게시를 요청하는 데이터            |
 | `-u "test@liferay.com:learn"`                                                             | 기본 인증 자격 증명             |
 
-```{note}
-여기서는 데모용으로 기본 인증이 사용됩니다. 프로덕션의 경우 [OAuth2](../../../headless-delivery/using-oauth2.md)을 통해 사용자를 인증해야 합니다. OAuth2를 사용하는 샘플 React 애플리케이션은 [OAuth2를 사용하여 사용자 인증하기](../../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md)를 참조하세요.
-```
+!!! note
+   여기서는 데모용으로 기본 인증이 사용됩니다. 프로덕션의 경우 [OAuth2](../../../headless-delivery/using-oauth2.md)을 통해 사용자를 인증해야 합니다. OAuth2를 사용하는 샘플 React 애플리케이션은 [OAuth2를 사용하여 사용자 인증하기](../../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md)를 참조하세요.
 
 다른 cURL 명령은 유사한 JSON 인수를 사용합니다.
 
@@ -98,7 +97,7 @@ Liferay의 REST API는 Liferay의 범주 및 어휘 기능에 대한 서비스�
 ```{literalinclude} ./categories-and-vocabulary-api-basics/resources/liferay-f5w3.zip/java/TaxonomyVocabulary_POST_ToSite.java
    :dedent: 1
    :language: java
-   :lines: 9-26
+   :lines: 9-29
 ```
 
 이 클래스는 세 줄의 코드만 사용하여 REST 서비스를 호출합니다.
@@ -111,15 +110,13 @@ Liferay의 REST API는 Liferay의 범주 및 어휘 기능에 대한 서비스�
 
 프로젝트에는 `com.liferay.headless.admin.taxonomy.client.jar` 파일이 종속성으로 포함되어 있습니다. `/o/api`에 설치된 API 탐색기에서 모든 REST 애플리케이션에 대한 클라이언트 JAR 종속성 정보를 찾을 수 있습니다.
 
-```{note}
-`main` 메서드의 주석은 클래스 실행을 보여줍니다.
-```
+!!! note
+   `main` 메서드의 주석은 클래스 실행을 보여줍니다.
 
 다른 예제 Java 클래스는 이 클래스와 유사하지만 다른 `TaxonomyVocabularyResource` 메서드를 호출합니다.
 
-```{important}
-서비스 상세 내용은 [TaxonomyVocabularyResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-taxonomy/headless-admin-taxonomy-client/src/main/java/com/liferay/headless/admin/taxonomy/client/resource/v1_0/TaxonomyVocabularyResource.java) 참조하시기 바랍니다.
-```
+!!! important
+   서비스 상세 내용은 [TaxonomyVocabularyResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-taxonomy/headless-admin-taxonomy-client/src/main/java/com/liferay/headless/admin/taxonomy/client/resource/v1_0/TaxonomyVocabularyResource.java) 참조하시기 바랍니다.
 
 다음은 cURL 및 Java를 사용하여 다른 `TaxonomyVocabulary` REST 서비스를 호출하는 예입니다.
 
@@ -154,7 +151,7 @@ java -classpath .:* -DsiteId=1234 TaxonomyVocabularies_GET_FromSite
 ```{literalinclude} ./categories-and-vocabulary-api-basics/resources/liferay-f5w3.zip/java/TaxonomyVocabularies_GET_FromSite.java
    :dedent: 1
    :language: java
-   :lines: 11-23
+   :lines: 11-26
 ```
 
 사이트의 `TaxonomyVocabulary` 개체는 JSON으로 나열됩니다.
@@ -163,9 +160,8 @@ java -classpath .:* -DsiteId=1234 TaxonomyVocabularies_GET_FromSite
 
 다음 cURL 또는 Java 명령을 사용하여 특정 어휘를 가져옵니다. `1234` 어휘의 ID로 바꿉니다.
 
-```{tip}
-`TaxonomyVocabularies_GET_FromSite.[java|sh]`를 사용하여 `Vocabulary` ID를 가져옵니다.
-```
+!!! tip
+   `TaxonomyVocabularies_GET_FromSite.[java|sh]`를 사용하여 `Vocabulary` ID를 가져옵니다.
 
 ### TaxonomyVocabulary_GET_ById.sh
 
@@ -230,7 +226,7 @@ java -classpath .:* -DtaxonomyVocabularyId=1234 TaxonomyVocabulary_PATCH_ById
 ```{literalinclude} ./categories-and-vocabulary-api-basics/resources/liferay-f5w3.zip/java/TaxonomyVocabulary_PATCH_ById.java
    :dedent: 1
    :language: java
-   :lines: 9-25
+   :lines: 9-29
 ```
 
 이 예에서는 설명이 Foo에서 Bar로 변경되었습니다.
@@ -300,7 +296,7 @@ java -classpath .:* -DtaxonomyVocabularyId=1234 TaxonomyVocabulary_DELETE_ById
 ```{literalinclude} ./categories-and-vocabulary-api-basics/resources/liferay-f5w3.zip/java/TaxonomyVocabulary_DELETE_ById.java
    :dedent: 1
    :language: java
-   :lines: 8-17
+   :lines: 8-19
 ```
 
 ## 분류 범주 서비스

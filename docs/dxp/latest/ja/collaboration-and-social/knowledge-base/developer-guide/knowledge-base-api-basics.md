@@ -83,7 +83,7 @@
 `KnowledgeBaseArticle_POST_ToSite.sh`スクリプトは、cURLコマンドを使用してRESTサービスを呼び出します。
 
 ```{literalinclude} ./knowledge-base-api-basics/resources/liferay-t3x7.zip/curl/KnowledgeBaseArticle_POST_ToSite.sh
-    :language: bash
+   :language: bash
 ```
 
 コマンドの引数は次のとおりです。
@@ -96,9 +96,8 @@
 | `-d "{\"articleBody\": \"Foo\", \"title\": \"Able\"}"`                        | お客様が掲載を希望するデータ                  |
 | `-u "test@liferay.com:learn"`                                                         | 基本的な認証情報                        |
 
-```{note}
-デモのために基本認証を使用しています。 本番環境の場合は、[OAuth2](../../../headless-delivery/using-oauth2.md)経由でユーザーを認証する必要があります。 OAuth2を使用したReactアプリケーションのサンプルは、[OAuth2によるユーザーの認証](../../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md)をご覧ください。
-```
+!!! note
+   デモのために基本認証を使用しています。 本番環境の場合は、[OAuth2](../../../headless-delivery/using-oauth2.md)経由でユーザーを認証する必要があります。 OAuth2を使用したReactアプリケーションのサンプルは、[OAuth2によるユーザーの認証](../../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md)をご覧ください。
 
 他のcURLコマンドも同様のJSON引数を使用します。
 
@@ -122,15 +121,13 @@
 
 プロジェクトには、依存関係として`com.liferay.headless.delivery.client.jar`ファイルが含まれていることに注意してください。 すべてのRESTアプリケーションのクライアントJAR依存関係情報は、`/o/api`でインストール先のAPIエクスプローラーで確認できます。
 
-```{note}
-`main`メソッドのコメントでは、クラスの実行を実演しています。
-```
+!!! note
+   `main`メソッドのコメントでは、クラスの実行を実演しています。
 
 他の例のJavaクラスはこれと類似していますが、異なる`KnowledgeBaseArticle`メソッドを呼び出します。
 
-```{important}
-サービスの詳細は、 [KnowledgeBaseArticleResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-delivery/headless-delivery-client/src/main/java/com/liferay/headless/delivery/client/resource/v1_0/KnowledgeBaseArticleResource.java) を参照してください。
-```
+!!! important
+   サービスの詳細は、 [KnowledgeBaseArticleResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-delivery/headless-delivery-client/src/main/java/com/liferay/headless/delivery/client/resource/v1_0/KnowledgeBaseArticleResource.java) を参照してください。
 
 以下は、cURLとJavaを使って、他の`KnowledgeBaseArticle`RESTサービスを呼び出す例です。
 
@@ -174,9 +171,8 @@ java -classpath .:* -DsiteId=1234 KnowledgeBaseArticles_GET_FromSite
 
 以下のcURLまたはJavaコマンドを使用し、特定のナレッジベースの記事をIDで取得します。
 
-```{tip}
-``KnowledgeBaseArticles_GET_FromSite.[java|sh]``を使用して、インスタンス``Knowledge Base Article`` IDを取得します。
-```
+!!! tip
+   ``KnowledgeBaseArticles_GET_FromSite.[java|sh]``を使用して、インスタンス``Knowledge Base Article`` IDを取得します。
 
 ### KnowledgeBaseArticle_GET_ById.sh
 
@@ -309,7 +305,7 @@ java -classpath .:* -DknowledgeBaseArticleId=1234 KnowledgeBaseArticle_DELETE_By
 ```{literalinclude} ./knowledge-base-api-basics/resources/liferay-t3x7.zip/java/KnowledgeBaseArticle_DELETE_ById.java
    :dedent: 1
    :language: java
-   :lines: 8-17
+   :lines: 8-19
 ```
 
 ## ナレッジベースフォルダサービス

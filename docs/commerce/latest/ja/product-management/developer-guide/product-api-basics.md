@@ -12,7 +12,7 @@
 1. [Product API Basics](./liferay-z8v2.zip) をダウンロードし、解凍してください。
 
    ```bash
-   curl https://learn.liferay.com/commmerce/latest/en/product-management/developer-guide/liferay-z8v2.zip -O
+   curl https://resources.learn.liferay.com/commerce/latest/en/product-management/developer-guide/liferay-z8v2.zip -O
    ```
 
    ```bash

@@ -22,7 +22,7 @@
 1. Acme Commerce 알림 유형을 다운로드하고 압축을 풉니다.
 
     ```bash
-    curl https://learn.liferay.com/commerce/latest/en/developer-guide/order-management/liferay-g2f3.zip
+    curl https://resources.learn.liferay.com/commerce/latest/en/developer-guide/order-management/liferay-g2f3.zip
 
     unzip liferay-g2f3.zip
     ```

@@ -12,7 +12,7 @@ Liferay가 실행되면,
 1. [옵션 API 기본 사항](./liferay-d3g5.zip) 을 다운로드하고 압축을 풉니다.
 
    ```bash
-   curl https://learn.liferay.com/commmerce/latest/en/product-management/developer-guide/liferay-d3g5.zip -O
+   curl https://resources.learn.liferay.com/commerce/latest/en/product-management/developer-guide/liferay-d3g5.zip -O
    ```
 
    ```bash

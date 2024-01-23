@@ -23,7 +23,7 @@
 1.  [Acme Commerce Product Content Renderer](./liferay-q4f7.zip) をダウンロードし、解凍してください。
 
     ```bash
-    curl https://learn.liferay.com/commerce/latest/ja/developer-guide/content/liferay-q4f7.zip -O
+    curl https://resources.learn.liferay.com/commerce/latest/ja/developer-guide/content/liferay-q4f7.zip -O
     ```
 
     ```bash

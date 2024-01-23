@@ -16,7 +16,7 @@
 1. [제품 API - 여러 SKU가 있는 제품 추가](./liferay-q8t5.zip) 를 다운로드하고 압축을 풉니다.
 
    ```bash
-   curl https://learn.liferay.com/commmerce/latest/en/product-management/developer-guide/liferay-q8t5.zip -O
+   curl https://resources.learn.liferay.com/commerce/latest/en/product-management/developer-guide/liferay-q8t5.zip -O
    ```
 
    ```bash

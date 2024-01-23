@@ -12,7 +12,7 @@ Liferayの実行後、
 1. [注文APIの基本](./liferay-w6c8.zip) をダウンロードし、解凍します。
 
    ```bash
-   curl https://learn.liferay.com/commmerce/latest/en/order-management/developer-guide/liferay-w6c8.zip -O
+   curl https://resources.learn.liferay.com/commerce/latest/en/order-management/developer-guide/liferay-w6c8.zip -O
    ```
 
    ```bash

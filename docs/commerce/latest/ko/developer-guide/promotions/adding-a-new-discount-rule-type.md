@@ -22,7 +22,7 @@
 1. [Acme Commerce 할인 규칙 유형](./liferay-m6a8.zip) 을 다운로드하고 압축을 풉니다.
 
     ```bash
-    curl https://learn.liferay.com/commerce/latest/en/developer-guide/promotions/liferay-m6a8.zip -O
+    curl https://resources.learn.liferay.com/commerce/latest/en/developer-guide/promotions/liferay-m6a8.zip -O
     ```
 
     ```bash

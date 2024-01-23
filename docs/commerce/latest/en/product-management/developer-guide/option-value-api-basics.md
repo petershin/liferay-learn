@@ -23,7 +23,7 @@ Once Liferay is running,
 1. Download and unzip [Option Value API Basics](./liferay-c7w9.zip).
 
    ```bash
-   curl https://resources.learn.liferay.com/commmerce/latest/en/product-management/developer-guide/liferay-c7w9.zip -O
+   curl https://resources.learn.liferay.com/commerce/latest/en/product-management/developer-guide/liferay-c7w9.zip -O
    ```
 
    ```bash

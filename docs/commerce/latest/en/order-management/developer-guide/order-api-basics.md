@@ -22,7 +22,7 @@ Once Liferay is running,
 1. Download and unzip [Order API Basics](./liferay-w6c8.zip).
 
    ```bash
-   curl https://resources.learn.liferay.com/commmerce/latest/en/order-management/developer-guide/liferay-w6c8.zip -O
+   curl https://resources.learn.liferay.com/commerce/latest/en/order-management/developer-guide/liferay-w6c8.zip -O
    ```
 
    ```bash

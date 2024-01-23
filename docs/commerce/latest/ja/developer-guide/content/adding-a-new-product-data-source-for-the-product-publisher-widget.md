@@ -24,7 +24,7 @@
 1. [Acme Commerce Product Data Source](./liferay-m5x7.zip) をダウンロードし、解凍してください。
 
     ```bash
-    curl https://learn.liferay.com/commerce/latest/ja/developer-guide/content/liferay-m5x7.zip -O
+    curl https://resources.learn.liferay.com/commerce/latest/ja/developer-guide/content/liferay-m5x7.zip -O
     ```
 
     ```bash

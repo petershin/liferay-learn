@@ -24,7 +24,7 @@
 1. [Acme Commerce 결제 단계](./liferay-n8n6.zip) 를 다운로드하고 압축을 풉니다.
 
     ```bash
-    curl https://learn.liferay.com/commerce/latest/en/developer-guide/sales/liferay-n8n6.zip -O
+    curl https://resources.learn.liferay.com/commerce/latest/en/developer-guide/sales/liferay-n8n6.zip -O
     ```
 
     ```bash

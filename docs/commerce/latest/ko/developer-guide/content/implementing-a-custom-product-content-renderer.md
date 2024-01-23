@@ -24,7 +24,7 @@
 1. [Acme Commerce 제품 콘텐츠 렌더러](./liferay-q4f7.zip) 를 다운로드하고 압축을 풉니다.
 
     ```bash
-    curl https://learn.liferay.com/commerce/latest/en/developer-guide/content/liferay-q4f7.zip -O
+    curl https://resources.learn.liferay.com/commerce/latest/en/developer-guide/content/liferay-q4f7.zip -O
     ```
 
     ```bash

@@ -22,7 +22,7 @@ Liferay Commerceは、ストアの様々なイベントトリガーに対して�
 1. アクメ商会通知型をダウンロードし、解凍します。
 
     ```bash
-    curl https://learn.liferay.com/commerce/latest/en/developer-guide/order-management/liferay-g2f3.zip
+    curl https://resources.learn.liferay.com/commerce/latest/en/developer-guide/order-management/liferay-g2f3.zip
 
     unzip liferay-g2f3.zip
     ```

@@ -12,7 +12,7 @@ Liferayが起動したら。
 1. [割引API基礎編](./liferay-r6f7.zip) をダウンロードし、解凍してください。
 
    ```bash
-   curl https://learn.liferay.com/commmerce/latest/en/pricing/developer-guide/liferay-r6f7.zip -O
+   curl https://resources.learn.liferay.com/commerce/latest/en/pricing/developer-guide/liferay-r6f7.zip -O
    ```
 
    ```bash

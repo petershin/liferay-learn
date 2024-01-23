@@ -22,7 +22,7 @@
 1. [Acme Commerce Order Validator](./liferay-n9b2.zip) 을 다운로드하고 압축을 풉니다.
 
    ```bash
-   curl https://learn.liferay.com/commerce/latest/en/developer-guide/sales/liferay-n9b2.zip -O
+   curl https://resources.learn.liferay.com/commerce/latest/en/developer-guide/sales/liferay-n9b2.zip -O
    ```
 
    ```bash

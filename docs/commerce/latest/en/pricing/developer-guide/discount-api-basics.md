@@ -23,7 +23,7 @@ Once Liferay is running,
 1. Download and unzip [Discount API Basics](./liferay-r6f7.zip).
 
    ```bash
-   curl https://resources.learn.liferay.com/commmerce/latest/en/pricing/developer-guide/liferay-r6f7.zip -O
+   curl https://resources.learn.liferay.com/commerce/latest/en/pricing/developer-guide/liferay-r6f7.zip -O
    ```
 
    ```bash

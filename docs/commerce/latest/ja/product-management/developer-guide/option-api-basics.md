@@ -12,7 +12,7 @@ Liferay が起動したら
 1. [Option API Basics](./liferay-d3g5.zip)をダウンロードして解凍します。
 
    ```bash
-   curl https://learn.liferay.com/commmerce/latest/en/product-management/developer-guide/liferay-d3g5.zip -O
+   curl https://resources.learn.liferay.com/commerce/latest/en/product-management/developer-guide/liferay-d3g5.zip -O
    ```
 
    ```bash

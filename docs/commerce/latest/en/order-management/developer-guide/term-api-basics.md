@@ -22,7 +22,7 @@ Once Liferay is running,
 1. Download and unzip [Term API Basics](./liferay-a9v8.zip).
 
    ```bash
-   curl https://resources.learn.liferay.com/commmerce/latest/en/order-management/developer-guide/liferay-a9v8.zip -O
+   curl https://resources.learn.liferay.com/commerce/latest/en/order-management/developer-guide/liferay-a9v8.zip -O
    ```
 
    ```bash

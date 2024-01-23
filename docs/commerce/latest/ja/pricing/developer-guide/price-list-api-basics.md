@@ -12,7 +12,7 @@ Liferayの実行後、
 1. Download and unzip [Price List API Basics](./liferay-c2v4.zip) .
 
    ```bash
-   curl https://learn.liferay.com/commmerce/latest/en/pricing/developer-guide/liferay-c2v4.zip -O
+   curl https://resources.learn.liferay.com/commerce/latest/en/pricing/developer-guide/liferay-c2v4.zip -O
    ```
 
    ```bash

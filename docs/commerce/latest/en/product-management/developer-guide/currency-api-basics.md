@@ -25,7 +25,7 @@ Once Liferay is running,
 1. Download and unzip [Currency API Basics](./liferay-e6w7.zip).
 
    ```bash
-   curl https://resources.learn.liferay.com/commmerce/latest/en/product-management/developer-guide/liferay-e6w7.zip -O
+   curl https://resources.learn.liferay.com/commerce/latest/en/product-management/developer-guide/liferay-e6w7.zip -O
    ```
 
    ```bash

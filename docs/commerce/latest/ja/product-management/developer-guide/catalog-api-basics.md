@@ -12,7 +12,7 @@ Liferayが起動したら。
 1. Catalog API Basics](./liferay-q2v8.zip)をダウンロードし、解凍する。
 
    ```bash
-   curl https://learn.liferay.com/commmerce/latest/en/product-management/developer-guide/liferay-q2v8.zip -O
+   curl https://resources.learn.liferay.com/commerce/latest/en/product-management/developer-guide/liferay-q2v8.zip -O
    ```
 
    ```bash

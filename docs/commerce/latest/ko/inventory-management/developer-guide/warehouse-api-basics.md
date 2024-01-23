@@ -12,7 +12,7 @@ Liferay가 실행되면,
 1. [Warehouse API 기본 사항](./liferay-v9s5.zip) 을 다운로드하고 압축을 풉니다.
 
    ```bash
-   curl https://learn.liferay.com/commmerce/latest/en/inventory-management/developer-guide/liferay-v9s5.zip -O
+   curl https://resources.learn.liferay.com/commerce/latest/en/inventory-management/developer-guide/liferay-v9s5.zip -O
    ```
 
    ```bash

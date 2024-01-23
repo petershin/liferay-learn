@@ -12,7 +12,7 @@ Liferayでは、特定の条件を満たした注文に対して注文ルール�
 1. Acme Commerce Order Ruleをダウンロードし、解凍します。
 
    ```bash
-   curl https://learn.liferay.com/commerce/latest/en/developer-guide/order-management/liferay-x9k1.zip
+   curl https://resources.learn.liferay.com/commerce/latest/en/developer-guide/order-management/liferay-x9k1.zip
 
    unzip liferay-x9k1.zip
    ```

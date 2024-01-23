@@ -35,7 +35,7 @@ Order Engineは、各注文ステータスに対してチェックを実行し�
 1. Acme Commerce Order Status Methodをダウンロードして解凍します。
 
     ```bash
-    curl https://learn.liferay.com/commerce/latest/en/developer-guide/order-management/liferay-m4v7.zip
+    curl https://resources.learn.liferay.com/commerce/latest/en/developer-guide/order-management/liferay-m4v7.zip
 
     unzip liferay-m4v7.zip
     ```

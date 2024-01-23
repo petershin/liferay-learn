@@ -12,7 +12,7 @@
 1. [제품 API 기본 사항](./liferay-z8v2.zip) 을 다운로드하고 압축을 풉니다.
 
    ```bash
-   curl https://learn.liferay.com/commmerce/latest/en/product-management/developer-guide/liferay-z8v2.zip -O
+   curl https://resources.learn.liferay.com/commerce/latest/en/product-management/developer-guide/liferay-z8v2.zip -O
    ```
 
    ```bash

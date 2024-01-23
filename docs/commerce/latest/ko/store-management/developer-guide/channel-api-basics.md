@@ -12,7 +12,7 @@ LiferAy가 실행되면
 1. [채널 API 기본 사항](./liferay-a2t5.zip) 을 다운로드하여 압축을 풉니다.
 
    ```bash
-   curl https://learn.liferay.com/commmerce/latest/en/store-management/developer-guide/liferay-a2t5.zip -O
+   curl https://resources.learn.liferay.com/commerce/latest/en/store-management/developer-guide/liferay-a2t5.zip -O
    ```
 
    ```bash

@@ -24,7 +24,7 @@
 1. [Acme Commerce 낮은 재고 활동](./liferay-j1e4.zip) 을 다운로드하고 압축을 풉니다.
 
     ```bash
-    curl https://learn.liferay.com/commerce/latest/en/developer-guide/managing-inventory/liferay-j1e4.zip -O
+    curl https://resources.learn.liferay.com/commerce/latest/en/developer-guide/managing-inventory/liferay-j1e4.zip -O
     ```
 
     ```bash

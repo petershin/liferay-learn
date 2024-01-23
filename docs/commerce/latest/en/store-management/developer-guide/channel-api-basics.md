@@ -22,7 +22,7 @@ Once Liferay is running,
 1. Download and unzip [Channel API Basics](./liferay-a2t5.zip).
 
    ```bash
-   curl https://resources.learn.liferay.com/commmerce/latest/en/store-management/developer-guide/liferay-a2t5.zip -O
+   curl https://resources.learn.liferay.com/commerce/latest/en/store-management/developer-guide/liferay-a2t5.zip -O
    ```
 
    ```bash

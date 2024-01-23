@@ -12,7 +12,7 @@
 1. Acme Commerce 주문 규칙을 다운로드하고 압축을 풉니다.
 
    ```bash
-   curl https://learn.liferay.com/commerce/latest/en/developer-guide/order-management/liferay-x9k1.zip
+   curl https://resources.learn.liferay.com/commerce/latest/en/developer-guide/order-management/liferay-x9k1.zip
 
    unzip liferay-x9k1.zip
    ```

@@ -12,7 +12,7 @@ Liferayが起動したら。
 1. Term API Basics](./liferay-a9v8.zip)をダウンロードし、解凍してください。
 
    ```bash
-   curl https://learn.liferay.com/commmerce/latest/en/order-management/developer-guide/liferay-a9v8.zip -O
+   curl https://resources.learn.liferay.com/commerce/latest/en/order-management/developer-guide/liferay-a9v8.zip -O
    ```
 
    ```bash

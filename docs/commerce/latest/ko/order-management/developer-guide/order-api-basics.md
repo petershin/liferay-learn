@@ -12,7 +12,7 @@ Liferay가 실행되면,
 1. [주문 API 기본 사항](./liferay-w6c8.zip) 을 다운로드하고 압축을 풉니다.
 
    ```bash
-   curl https://learn.liferay.com/commmerce/latest/en/order-management/developer-guide/liferay-w6c8.zip -O
+   curl https://resources.learn.liferay.com/commerce/latest/en/order-management/developer-guide/liferay-w6c8.zip -O
    ```
 
    ```bash

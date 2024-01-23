@@ -12,7 +12,7 @@ Liferayが起動したら、
 1. [Channel API Basics](./liferay-a2t5.zip) をダウンロードし、解凍してください。
 
    ```bash
-   curl https://learn.liferay.com/commmerce/latest/en/store-management/developer-guide/liferay-a2t5.zip -O
+   curl https://resources.learn.liferay.com/commerce/latest/en/store-management/developer-guide/liferay-a2t5.zip -O
    ```
 
    ```bash

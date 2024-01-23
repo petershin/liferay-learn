@@ -25,12 +25,12 @@ When viewing all assets, assets in a specific folder, assets resulting from a we
 - [Order by](#order-by)
 - {bdg-secondary}`Liferay 7.4 2024.Q1+` [Filter Search Results](#filter-search-results)
 
-You can combine (single or multiple) filters and order your results for an enhanced experience. For example, if you select the "Product Advertisement Blog Post" [highlighted structure](#filter-by-highlighted-web-content-structures), the [Mine](#filter-by-navigation), [Draft](#filter-by-status), [order by Title](#order-by), and the [Ascending order](#order-by) filters, you obtain a list of your articles that use the "Product Advertisement Blog Post" web content structure, are in Draft status, and are ordered by title in ascending alphabetical order.
+You can combine (single or multiple) filters and order your results for an enhanced experience. For example, if you select the `Product Advertisement Blog Post` [highlighted structure](#filter-by-highlighted-web-content-structures), the [Mine](#filter-by-navigation), [Draft](#filter-by-status), [order by Title](#order-by), and the [Ascending order](#order-by) filters, you obtain a list of your articles that use the `Product Advertisement Blog Post` web content structure, are in Draft status, and are ordered by title in ascending alphabetical order.
 
 !!! note
     (**Breaking Change**) All filtering options apply exclusively to the current folder. Web content articles located elsewhere are not included in the filtered results.
 
-    Also, if you initiate a new search, the filters reset, and the search extends to all assets in the folder.
+    If you initiate a new search, the filters reset, and the search extends to all assets in the folder.
 
 <!-- folder or highlighted structure. Add this information once the feature is not under a feature flag anymore. -->
 
@@ -51,7 +51,7 @@ You can select web content structures and see only web content articles that bel
 
    ![In the Configuration menu, select the structures you want to  highlight](./filtering-and-sorting-web-content-articles/images/02.png)
 
-1. In the modal that opens, select the structures you want to highlight and click *Add*.
+1. Select the structures you want to highlight and click *Add*.
 
 With the highlighted structures selected, a menu appears on the left with the Content Library option and the selected structures under the Highlighted Structures section.
 
@@ -63,13 +63,13 @@ The Content Library option shows all web content articles and their folder hiera
 
 When you filter by navigation, you filter the web content articles you have permission to view in the selected folder.
 
-{bdg-secondary}`Liferay 7.4 2024.Q1+` You can apply a single filter or multiple filters. Also, when selecting categories/tags, you can select multiple categories/tags.
+{bdg-secondary}`Liferay 7.4 2024.Q1+` You can apply a single filter or multiple filters. You can also select multiple categories/tags.
 <!-- add the highlighted structure here in addition to the folder -->
 
 | Filter Option                                    | Description                                                                                                                      |
 |:-------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------|
 | All                                              | All web content articles and folders.                                                                                            |
-| Mine                                             | Web content articles authored by the logged-on user.                                                                             |
+| Mine                                             | Web content articles authored by the logged-in user.                                                                             |
 | Recent                                           | Web content articles that have been modified recently. The [order by](#order-by) option is unavailable with this filter.         |
 | Structures                                       | Filters web content articles based on [web content structure](../web-content-structures.md).                                     |
 | {bdg-secondary}`Liferay 7.4 2023.Q4+` Categories | Filters web content articles based on [category](../../tags-and-categories/defining-categories-and-vocabularies-for-content.md). |
@@ -83,14 +83,14 @@ When you filter by status, you filter the web content articles you have permissi
 |:--------------------------------------------------------------|:-----------------------------------------------------------------|
 | Any                                                           | All web content articles, regardless of publication status.      |
 | Draft                                                         | All web content articles that have been saved but not published. |
-| {bdg-secondary}`Liferay 7.4 2023.Q4+/Portal GA108+` Approved  | All web content articles that have the Approved status.          |
-| {bdg-secondary}`Liferay 7.4 2023.Q4+/Portal GA108+` Expired   | All web content articles that have the Expired status.           |
-| {bdg-secondary}`Liferay 7.4 2023.Q4+/Portal GA108+` Scheduled | All web content articles that have the Scheduled status.         |
+| {bdg-secondary}`Liferay 7.4 2023.Q4+/Portal GA108+` Approved  | All web content articles with Approved status.          |
+| {bdg-secondary}`Liferay 7.4 2023.Q4+/Portal GA108+` Expired   | All web content articles with Expired status.           |
+| {bdg-secondary}`Liferay 7.4 2023.Q4+/Portal GA108+` Scheduled | All web content articles with Scheduled status.         |
 
 With the Approved, Expired, and Scheduled filters, you can select the [*Versions* filter](#filter-by-type) to see all article's versions with the selected status.
 
 !!! note
-    (**Breaking Change**) Previous to Liferay 7.4 2024.Q1+/Portal GA108, the Approved, Expired, and Scheduled filters were called With Approved/Expired/Scheduled Versions and returned any web content with at least one version in the selected status.
+    (**Breaking Change**) Prior to Liferay 7.4 2024.Q1+/Portal GA108, the Approved, Expired, and Scheduled filters were called With Approved/Expired/Scheduled Versions and returned any web content with at least one version in the selected status.
 
 ## Filter by Type
 

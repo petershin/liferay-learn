@@ -11,31 +11,30 @@
 
 1. [Business Logic with Service Builder](./liferay-e4g5.zip) をダウンロードして解凍します。
 
-    ```bash
-    curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/data-frameworks/service-builder/liferay-e4g5.zip -O
-    ```
+   ```bash
+   curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/data-frameworks/service-builder/liferay-e4g5.zip -O
+   ```
 
-    ```bash
-    unzip liferay-e4g5.zip
-    ```
+   ```bash
+   unzip liferay-e4g5.zip
+   ```
 
 1. モジュールのルートから、ビルドおよびデプロイします。
 
-    ```bash
-    ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
-    ```
+   ```bash
+   ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
+   ```
 
-    ```{note}
-    このコマンドは、デプロイされたjarをDockerコンテナの/opt/liferay/osgi/modulesにコピーするのと同じです。
-    ```
+   !!! note
+      このコマンドは、デプロイされたjarをDockerコンテナの/opt/liferay/osgi/modulesにコピーするのと同じです。
 
 1. Liferay Dockerコンテナコンソールでデプロイを確認します。
 
-    ```bash
-    STARTED com.acme.e4g5.api_1.0.0 [1034]
-    STARTED com.acme.e4g5.service_1.0.0 [1035]
-    STARTED com.acme.e4g5.web_1.0.0 [1036]
-    ```
+   ```bash
+   STARTED com.acme.e4g5.api_1.0.0 [1034]
+   STARTED com.acme.e4g5.service_1.0.0 [1035]
+   STARTED com.acme.e4g5.web_1.0.0 [1036]
+   ```
 
 1. サンプルのモジュールが機能していることを確認します。 ブラウザで`https://localhost:8080`を開きます。
 
@@ -58,6 +57,7 @@
 1. エンティティを作成するためのパラメータを持つ`add*`メソッドを宣言します。
 
 ```{literalinclude} ./business-logic-with-service-builder/resources/liferay-e4g5.zip/e4g5-service/src/main/java/com/acme/e4g5/service/impl/E4G5EntryLocalServiceImpl.java
+:dedent: 1
 :language: java
 :lines: 34-44
 ```
@@ -73,8 +73,9 @@
 1. エンティティを更新するためのパラメータを持つ`update*`メソッドを宣言します。 このサンプルでは、`e4g5EntryId`とともに、`name`と`description`属性を受け取ります。
 
 ```{literalinclude} ./business-logic-with-service-builder/resources/liferay-e4g5.zip/e4g5-service/src/main/java/com/acme/e4g5/service/impl/E4G5EntryLocalServiceImpl.java
+:dedent: 1
 :language: java
-:lines: 54-65
+:lines: 55-66
 ```
 
 1. `*Persistence`クラスの`findByPrimaryKey()`メソッドを使用して、エントリーIDによるエンティティインスタンスを取得します。
@@ -88,8 +89,9 @@
 1. エンティティのエントリIDを受け取る`delete*`メソッドを宣言します。
 
 ```{literalinclude} ./business-logic-with-service-builder/resources/liferay-e4g5.zip/e4g5-service/src/main/java/com/acme/e4g5/service/impl/E4G5EntryLocalServiceImpl.java
+:dedent: 1
 :language: java
-:lines: 46-52
+:lines: 46-53
 ```
 
 1. `*Persistence` クラスの `delete()` メソッドを呼び出し、エンティティオブジェクトを渡します。
@@ -105,6 +107,7 @@
 Webモジュールには、[MVC Portlet](../../developing-a-java-web-application/using-mvc.md)を使用することができます。 サンプルプロジェクトのポートレットは、 `add`, `update`, `delete`のエントリアクションを持ちます。
 
 ```{literalinclude} ./business-logic-with-service-builder/resources/liferay-e4g5.zip/e4g5-web/src/main/java/com/acme/e4g5/web/internal/portlet/E4G5Portlet.java
+:dedent: 1
 :language: java
 :lines: 26-51
 ```

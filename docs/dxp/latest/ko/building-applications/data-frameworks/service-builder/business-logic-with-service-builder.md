@@ -11,31 +11,30 @@ Service Builder를 사용하여 모델, 지속성 및 서비스 코드 [생성�
 
 1. [Service Builder가 포함된 비즈니스 로직](./liferay-e4g5.zip) 을 다운로드하고 압축을 풉니다.
 
-    ```bash
-    curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/data-frameworks/service-builder/liferay-e4g5.zip -O
-    ```
+   ```bash
+   curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/data-frameworks/service-builder/liferay-e4g5.zip -O
+   ```
 
-    ```bash
-    unzip liferay-e4g5.zip
-    ```
+   ```bash
+   unzip liferay-e4g5.zip
+   ```
 
 1. 모듈 루트에서 빌드 및 배포합니다.
 
-    ```bash
-    ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
-    ```
+   ```bash
+   ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
+   ```
 
-    ```{note}
-    이 명령은 배포된 jar를 Docker 컨테이너의 /opt/liferay/osgi/modules에 복사하는 것과 동일합니다.
-    ```
+   !!! note
+      이 명령은 배포된 jar를 Docker 컨테이너의 /opt/liferay/osgi/modules에 복사하는 것과 동일합니다.
 
 1. Liferay Docker 컨테이너 콘솔에서 배포를 확인합니다.
 
-    ```bash
-    STARTED com.acme.e4g5.api_1.0.0 [1034]
-    STARTED com.acme.e4g5.service_1.0.0 [1035]
-    STARTED com.acme.e4g5.web_1.0.0 [1036]
-    ```
+   ```bash
+   STARTED com.acme.e4g5.api_1.0.0 [1034]
+   STARTED com.acme.e4g5.service_1.0.0 [1035]
+   STARTED com.acme.e4g5.web_1.0.0 [1036]
+   ```
 
 1. 예제 모듈이 작동하는지 확인하십시오. 브라우저에서 `https://localhost:8080`로 엽니다.
 
@@ -58,6 +57,7 @@ Service Builder를 사용하여 모델, 지속성 및 서비스 코드 [생성�
 1. 엔터티 생성을 위한 매개 변수가 있는 `add*` 메서드를 선언합니다.
 
 ```{literalinclude} ./business-logic-with-service-builder/resources/liferay-e4g5.zip/e4g5-service/src/main/java/com/acme/e4g5/service/impl/E4G5EntryLocalServiceImpl.java
+:dedent: 1
 :language: java
 :lines: 34-44
 ```
@@ -73,8 +73,9 @@ Service Builder를 사용하여 모델, 지속성 및 서비스 코드 [생성�
 1. 엔터티를 업데이트하기 위한 매개변수를 사용하여 `update*` 메서드를 선언합니다. 샘플은 `e4g5EntryId`와 함께 `이름` 및 `설명` 속성을 수신합니다.
 
 ```{literalinclude} ./business-logic-with-service-builder/resources/liferay-e4g5.zip/e4g5-service/src/main/java/com/acme/e4g5/service/impl/E4G5EntryLocalServiceImpl.java
+:dedent: 1
 :language: java
-:lines: 54-65
+:lines: 55-66
 ```
 
 1. `*Persistence` 클래스의 `findByPrimaryKey()` 메서드를 사용하여 항목 ID로 엔터티 인스턴스를 검색합니다.
@@ -88,6 +89,7 @@ Service Builder를 사용하여 모델, 지속성 및 서비스 코드 [생성�
 1. 엔터티의 항목 ID를 받는 `delete*` 메서드를 선언합니다.
 
 ```{literalinclude} ./business-logic-with-service-builder/resources/liferay-e4g5.zip/e4g5-service/src/main/java/com/acme/e4g5/service/impl/E4G5EntryLocalServiceImpl.java
+:dedent: 1
 :language: java
 :lines: 46-52
 ```
@@ -105,6 +107,7 @@ Service Builder를 사용하여 모델, 지속성 및 서비스 코드 [생성�
 웹 모듈에 [MVC 포틀릿](../../developing-a-java-web-application/using-mvc.md) 을 사용할 수 있습니다. 샘플 프로젝트의 포틀릿에는 `add`, `update`및 `delete`에 대한 진입 작업이 있습니다.
 
 ```{literalinclude} ./business-logic-with-service-builder/resources/liferay-e4g5.zip/e4g5-web/src/main/java/com/acme/e4g5/web/internal/portlet/E4G5Portlet.java
+:dedent: 1
 :language: java
 :lines: 26-51
 ```

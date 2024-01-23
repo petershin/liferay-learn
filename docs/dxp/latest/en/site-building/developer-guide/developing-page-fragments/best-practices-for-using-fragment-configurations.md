@@ -1,6 +1,6 @@
 ---
 taxonomy-category-names:
-- Sites
+- Development and Tooling
 - Fragments
 - Liferay Self-Hosted
 - Liferay PaaS

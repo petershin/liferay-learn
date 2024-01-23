@@ -2,6 +2,7 @@
 taxonomy-category-names:
 - Sites
 - Style Books
+- Site Appearance and Design
 - Liferay Self-Hosted
 - Liferay PaaS
 - Liferay SaaS

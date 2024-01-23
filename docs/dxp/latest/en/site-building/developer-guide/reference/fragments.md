@@ -1,6 +1,6 @@
 ---
 taxonomy-category-names:
-- Sites
+- Development and Tooling
 - Fragments
 - Liferay Self-Hosted
 - Liferay PaaS
@@ -12,7 +12,7 @@ toc:
   - ./fragments/fragment-specific-tags-reference.md
 uuid: 7bf1f44a-2c72-41ac-a597-bcb8e012d81f
 ---
-# Fragments Reference
+# Developing Fragments Reference
 
 ```{toctree}
 :maxdepth: 3

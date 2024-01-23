@@ -1,13 +1,13 @@
 ---
+toc:
+  - ./themes/introduction-to-themes.md
+  - ./themes/upgrading-a-theme.md
+  - ./themes/theme-development.md
 taxonomy-category-names:
 - Sites
 - Themes
 - Liferay Self-Hosted
 - Liferay PaaS
-toc:
-  - ./themes/introduction-to-themes.md
-  - ./themes/upgrading-a-theme.md
-  - ./themes/theme-development.md
 uuid: 1788d12e-c0ca-4300-83af-d39431639940
 ---
 # Themes

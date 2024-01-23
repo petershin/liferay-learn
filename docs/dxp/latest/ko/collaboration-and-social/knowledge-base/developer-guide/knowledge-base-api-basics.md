@@ -96,9 +96,8 @@
 | `-d "{\"articleBody\": \"Foo\", \"title\": \"Able\"}"`                        | 게시를 요청하는 데이터            |
 | `-u "test@liferay.com:learn"`                                                         | 기본 인증 자격 증명             |
 
-```{note}
-기본 인증은 데모용으로 사용됩니다. 프로덕션의 경우 [OAuth2](../../../headless-delivery/using-oauth2.md)을 통해 사용자를 인증해야 합니다. OAuth2를 사용하는 샘플 React 애플리케이션은 [OAuth2를 사용하여 사용자 인증하기](../../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md)를 참조하세요.
-```
+!!! note
+   기본 인증은 데모용으로 사용됩니다. 프로덕션의 경우 [OAuth2](../../../headless-delivery/using-oauth2.md)을 통해 사용자를 인증해야 합니다. OAuth2를 사용하는 샘플 React 애플리케이션은 [OAuth2를 사용하여 사용자 인증하기](../../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md)를 참조하세요.
 
 다른 cURL 명령은 유사한 JSON 인수를 사용합니다.
 
@@ -122,15 +121,13 @@
 
 프로젝트에는 `com.liferay.headless.delivery.client.jar` 파일이 종속 항목으로 포함되어 있습니다. `/o/api`에 설치된 API 탐색기에서 모든 REST 애플리케이션에 대한 클라이언트 JAR 종속성 정보를 찾을 수 있습니다.
 
-```{note}
-`main` 메서드의 주석은 클래스 실행을 보여줍니다.
-```
+!!! note
+   `main` 메서드의 주석은 클래스 실행을 보여줍니다.
 
 다른 예제 Java 클래스는 이 클래스와 유사하지만 다른 `KnowledgeBaseArticle` 메서드를 호출합니다.
 
-```{important}
-[KnowledgeBaseArticleResource]$LIFERAY_LEARN_PORTAL_GIT_TAG$/delivery/client/resource/v1_0/KnowledgeBaseArticleResource.java)를 참조하십시오.
-```
+!!! important
+   [KnowledgeBaseArticleResource]$LIFERAY_LEARN_PORTAL_GIT_TAG$/delivery/client/resource/v1_0/KnowledgeBaseArticleResource.java)를 참조하십시오.
 
 다음은 cURL 및 Java를 사용하여 다른 `KnowledgeBaseArticle` REST 서비스를 호출하는 예입니다.
 
@@ -174,9 +171,8 @@ java -classpath .:* -DsiteId=1234 KnowledgeBaseArticles_GET_FromSite
 
 다음 cURL 또는 Java 명령을 사용하여 해당 ID로 특정 기술 자료 문서를 가져옵니다.
 
-```{tip}
-``KnowledgeBaseArticles_GET_FromSite.[java|sh]``를 사용하여 인스턴스 ``Knowledge Base Article`` ID를 가져옵니다.
-```
+!!! tip
+   ``KnowledgeBaseArticles_GET_FromSite.[java|sh]``를 사용하여 인스턴스 ``Knowledge Base Article`` ID를 가져옵니다.
 
 ### KnowledgeBaseArticle_GET_ById.sh
 
@@ -309,7 +305,7 @@ java -classpath .:* -DknowledgeBaseArticleId=1234 KnowledgeBaseArticle_DELETE_By
 ```{literalinclude} ./knowledge-base-api-basics/resources/liferay-t3x7.zip/java/KnowledgeBaseArticle_DELETE_ById.java
    :dedent: 1
    :language: java
-   :lines: 8-17
+   :lines: 8-19
 ```
 
 ## 기술 자료 폴더 서비스

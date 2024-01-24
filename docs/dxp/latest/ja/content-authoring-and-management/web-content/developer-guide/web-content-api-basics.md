@@ -2,9 +2,8 @@
 
 Liferay DXP RESTサービスを使用すると、サイトで構造化コンテンツを作成・管理することができます。 構造化コンテンツとは、Webコンテンツストラクチャーを使用する[Webコンテンツ](../web-content-articles/adding-a-basic-web-content-article.md) です。 ストラクチャーは、Webコンテンツの記事に含まれる作成者、概要、内容などの情報を定義します。 ストラクチャーにより、必要な情報がコンテンツにすべて含まれるようになります。 詳細については、 [Webコンテンツストラクチャーを理解する](../web-content-structures/understanding-web-content-structures.md)をご覧ください。
 
-```{note}
-構造化コンテンツをレンダリングするために、[Webコンテンツテンプレート](../web-content-templates/creating-web-content-templates.md)でストラクチャーを使用できますが、構造化コンテンツの作成にテンプレートは必要ありません。
-```
+!!! note
+   構造化コンテンツをレンダリングするために、[Webコンテンツテンプレート](../web-content-templates/creating-web-content-templates.md)でストラクチャーを使用できますが、構造化コンテンツの作成にテンプレートは必要ありません。
 
 ストラクチャーや構造化コンテンツのcURLとJavaのサンプルについては以下を参照してください。 構造化コンテンツの管理に関するより詳細な例については、 [WebコンテンツAPIの詳細設定](./advanced-web-content-api.md)を参照してください。 Liferay DXPでのREST APIの使用については、 [RESTサービスの使用](../../../headless-delivery/consuming-apis/consuming-rest-services.md)をご覧ください。
 
@@ -17,17 +16,16 @@ Liferay DXP RESTサービスを使用すると、サイトで構造化コンテ�
 
 1. [Web Content API Basics](./liferay-r4h9.zip) ファイルをダウンロードし、解凍します：
 
-    ```bash
-    curl https://resources.learn.liferay.com/dxp/latest/en/content-authoring-and-management/web-content/developer-guide/liferay-r4h9.zip -O
-    ```
-
-    ```bash
-    unzip liferay-r4h9.zip
-    ```
-
-   ```{note}
-   これらのスクリプトは基本認証を使用し、テスト用に設計されています。 本番のLiferay DXP環境では、基本認証を使用しないでください。
+   ```bash
+   curl https://resources.learn.liferay.com/dxp/latest/en/content-authoring-and-management/web-content/developer-guide/liferay-r4h9.zip -O
    ```
+
+   ```bash
+   unzip liferay-r4h9.zip
+   ```
+
+   !!! note
+      これらのスクリプトは基本認証を使用し、テスト用に設計されています。 本番のLiferay DXP環境では、基本認証を使用しないでください。
 
 1. 以下の手順で環境をセットアップします。
 
@@ -52,9 +50,8 @@ Webコンテンツの管理には、Liferay DXP Headless Delivery API で下記�
 
 Webコンテンツを作成するには、Webコンテンツストラクチャーが必要です。 ユーザーインターフェースでストラクチャーを宣言せずにWebコンテンツを作成した場合、Liferay DXPでは、デフォルトの基本Webコンテンツストラクチャーを使用します。
 
-```{note}
-基本Webコンテンツストラクチャーは、Liferay DXPのユーザーインターフェースには表示されません。
-```
+!!! note
+   基本Webコンテンツストラクチャーは、Liferay DXPのユーザーインターフェースには表示されません。
 
 これらの例では、単一のテキストフィールドとデフォルトの基本Webコンテンツストラクチャーを持つ基本Webコンテンツ記事を使用しています。 以下の手順で、Webコンテンツを作成します。
 
@@ -181,15 +178,13 @@ JSON出力で以下の情報を確認します。
 
 プロジェクトには、依存関係として`com.liferay.headless.delivery.client.jar`ファイルが含まれていることに注意してください。 すべてのRESTアプリケーションのクライアントJAR依存関係情報は、`/o/api`でインストール先のAPIエクスプローラーで確認できます。
 
-```{note}
-`main`メソッドのコメントでは、クラスの実行を実演しています。
-```
+!!! note
+   `main`メソッドのコメントでは、クラスの実行を実演しています。
 
 他の例のJavaクラスはこれと類似していますが、異なる`StructuredContentResource`メソッドを呼び出します。
 
-```{important}
-サービスの詳細は、 [StructuredContentResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-delivery/headless-delivery-client/src/main/java/com/liferay/headless/delivery/client/resource/v1_0/StructuredContentResource.java) を参照してください。
-```
+!!! important
+   サービスの詳細は、 [StructuredContentResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-delivery/headless-delivery-client/src/main/java/com/liferay/headless/delivery/client/resource/v1_0/StructuredContentResource.java) を参照してください。
 
 以下は、cURLとJavaを使って、他のRESTサービスを呼び出す例です。
 
@@ -233,9 +228,8 @@ java -classpath .:* -DstructuredContentId=1234 StructuredContent_GET_ById
 
 次のcURLまたはJavaコマンドを実行すると、サイトのコンテンツストラクチャーを取得できます。 `1234`をサイトのIDに置き換えてください。
 
-```{note}
-デフォルトの基本Webコンテンツストラクチャーは、このエンドポイントを使用すると表示されません。
-```
+!!! note
+   デフォルトの基本Webコンテンツストラクチャーは、このエンドポイントを使用すると表示されません。
 
 ### ContentStructures_GET_FromSite.sh
 
@@ -255,7 +249,7 @@ java -classpath .:* -DstructuredContentId=1234 StructuredContent_GET_ById
 
 コマンド：
 
-```bash 
+```bash
 java -classpath .:* -DsiteId=1234 ContentStructures_GET_FromSite
 ```
 
@@ -453,7 +447,7 @@ java -classpath .:* -DcontentStructureId=1234 -DsiteId=5678 StructuredContent_PO
 
 コマンド：
 
-```bash 
+```bash
 java -classpath .:* -DcontentStructureId=1234 -DstructuredContentId=5678 StructuredContent_PATCH_ById
 ```
 
@@ -496,16 +490,15 @@ java -classpath .:* -DcontentStructureId=1234 -DstructuredContentId=5678 Structu
 ```{literalinclude} ./web-content-api-basics/resources/liferay-r4h9.zip/java/StructuredContent_PUT_ById.java
    :dedent: 1
    :language: java
-   :lines: 9-26
+   :lines: 11-45
 ```
 
 ## Webコンテンツ記事の削除
 
 `StructuredContent`サービスで`DELETE`メソッドを使用して、Webコンテンツ記事を削除します。 `StructuredContent_DELETE_ById.java|sh]` スクリプトサンプルでは、Webコンテンツ`id`を使用してWebコンテンツを削除しています。
 
-```{important}
-REST APIを使用してWebコンテンツを削除すると、[Liferay DXPゴミ箱](../../content-authoring-and-management/recycle-bin/recycle-bin-overview.md) を使用せずに、永久に削除されます。
-```
+!!! important
+   REST APIを使用してWebコンテンツを削除すると、[Liferay DXPゴミ箱](../../content-authoring-and-management/recycle-bin/recycle-bin-overview.md) を使用せずに、永久に削除されます。
 
 ### StructuredContent_DELETE_ById.sh
 
@@ -525,7 +518,7 @@ REST APIを使用してWebコンテンツを削除すると、[Liferay DXPゴミ
 
 コマンド
 
-```bash 
+```bash
 java -classpath .:* -DstructuredContentId=1234 StructuredContent_DELETE_ById
 ```
 
@@ -551,9 +544,8 @@ java -classpath .:* -DstructuredContentId=1234 StructuredContent_DELETE_ById
 | `StructuredContentFolder_DELETE_ById.[java\|sh]`              | Webコンテンツフォルダーを削除します。            |
 | `StructuredContent_POST_ToStructuredContentFolder.[java\|sh]` | Webコンテンツ記事をフォルダーに投稿します。         |
 
-```{important}
-REST APIを使用してWebコンテンツフォルダーを削除すると、フォルダとそのコンテンツは [Liferay DXPゴミ箱](../../content-authoring-and-management/recycle-bin/recycle-bin-overview.md) を使わずに永久に削除されます。
-```
+!!! important
+   REST APIを使用してWebコンテンツフォルダーを削除すると、フォルダとそのコンテンツは [Liferay DXPゴミ箱](../../content-authoring-and-management/recycle-bin/recycle-bin-overview.md) を使わずに永久に削除されます。
 
 ## 関連情報
 

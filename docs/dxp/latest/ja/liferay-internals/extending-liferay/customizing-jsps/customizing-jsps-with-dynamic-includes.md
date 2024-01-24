@@ -25,9 +25,8 @@
    ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
    ```
 
-   ```{note}
-   このコマンドは、デプロイされたjarをDockerコンテナの/opt/liferay/osgi/modulesにコピーするのと同じです。
-   ```
+   !!! note
+      このコマンドは、デプロイされたjarをDockerコンテナの/opt/liferay/osgi/modulesにコピーするのと同じです。
 
 1. Liferay Dockerコンテナコンソールでデプロイを確認します。
 
@@ -55,18 +54,17 @@
 1. `include`メソッドで、カスタムコンテンツを追加します。 サンプルプロジェクトでは、シンプルな`PrintWriter`のサンプルを使用しています。
 
    ```{literalinclude} ./customizing-jsps-with-dynamic-includes/resources/liferay-n3q9.zip/n3q9-able-web/src/main/java/com/acme/n3q9/able/web/internal/servlet/taglib/N3Q9AbleDynamicInclude.java
-   :dedent: 1
-   :language: java
-   :lines: 16-25
+      :dedent: 1
+      :language: java
+      :lines: 16-25
    ```
 
 2. `register`メソッドで、使用するdynamic includeタグを指定します。 サンプルでは、registerメソッドは、Bakerモジュールの `view.jsp`のdynamic includeを対象としています。
 
-   ```java
-    @Override
-    public void register(DynamicIncludeRegistry dynamicIncludeRegistry) {
-        dynamicIncludeRegistry.register("com.acme.n3q9.baker.web#view.jsp");
-    }
+   ```{literalinclude} ./customizing-jsps-with-dynamic-includes/resources/liferay-n3q9.zip/n3q9-able-web/src/main/java/com/acme/n3q9/able/web/internal/servlet/taglib/N3Q9AbleDynamicInclude.java
+      :dedent: 1
+      :language: java
+      :lines: 27-30
    ```
 
 ## Dynamic Includeを挿入する

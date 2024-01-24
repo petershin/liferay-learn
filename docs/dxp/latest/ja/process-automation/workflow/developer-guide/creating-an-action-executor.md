@@ -48,9 +48,8 @@ Groovyアクションロジックをワークフロー定義の `<script>` 要�
    ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
    ```
 
-   ```{tip}
-   このコマンドは、デプロイされたjarをDockerコンテナの`/opt/liferay/osgi/modules`にコピーするのと同じです。
-   ```
+   !!! tip
+      このコマンドは、デプロイされたjarをDockerコンテナの`/opt/liferay/osgi/modules`にコピーするのと同じです。
 
 1. Liferay Dockerコンテナコンソールでデプロイを確認します。
 
@@ -58,9 +57,8 @@ Groovyアクションロジックをワークフロー定義の `<script>` 要�
    STARTED com.acme.e5c9.impl_1.0.0
    ```
 
-```{note}
-便宜上、`ActionExecutor` の `activate` メソッドは E5C9 Single Approver ワークフロー定義をオートロードする。 このコードは、ワークフロープロセスビルダーに移動し、ワークフロー定義をアップロードするのと同じことを実現します。 [新しいワークフロー定義のアップロード](../designing-and-managing-workflows/managing-workflows.md#uploading-a-new-workflow-definition) を参照してください。
-```
+!!! note
+   便宜上、`ActionExecutor` の `activate` メソッドは E5C9 Single Approver ワークフロー定義をオートロードする。 このコードは、ワークフロープロセスビルダーに移動し、ワークフロー定義をアップロードするのと同じことを実現します。 [新しいワークフロー定義のアップロード](../designing-and-managing-workflows/managing-workflows.md#uploading-a-new-workflow-definition) を参照してください。
 
 ## アクションエグゼキュータをテストする
 
@@ -94,9 +92,10 @@ Acme E5C9実装プロジェクトでは、唯一の承認者定義のワーク�
 
 これは、デフォルトのシング ルアプルーバーと同じロジックを持つが、ワークフロー定義に直接 Groovy スクリプトを記述する代わ りに、アクションエグゼキュータークラスのロジックを使用する。
 
-````{literalinclude} ./creating-an-action-executor/resources/liferay-e5c9.zip/e5c9-impl/src/main/java/com/acme/e5c9/internal/workflow/kaleo/runtime/scripting/internal/action/E5C9ActionExecutor.java">   :dedent: 4
+```{literalinclude} ./creating-an-action-executor/resources/liferay-e5c9.zip/e5c9-impl/src/main/java/com/acme/e5c9/internal/workflow/kaleo/runtime/scripting/internal/action/E5C9ActionExecutor.java
+   :dedent: 4
    :language: java
-   :lines: 49-50
+   :lines: 50-51
 ```
 
 ### ActionExecutorの実装
@@ -106,7 +105,7 @@ Acme E5C9実装プロジェクトでは、唯一の承認者定義のワーク�
 ```{literalinclude} ./creating-an-action-executor/resources/liferay-e5c9.zip/e5c9-impl/src/main/java/com/acme/e5c9/internal/workflow/kaleo/runtime/scripting/internal/action/E5C9ActionExecutor.java
    :dedent: 0
    :language: java
-   :lines: 31-35
+   :lines: 32-36
 ```
 
 `execute` メソッドは何も返しません。 その代わり、メソッド内で任意にロジックが実行され、XMLの定義に従ってワークフローの処理が継続されます。 アクションの実行中に、ワークフローのステータスが更新されることがよくあります。
@@ -116,7 +115,7 @@ Acme E5C9実装プロジェクトでは、唯一の承認者定義のワーク�
 ```{literalinclude} ./creating-an-action-executor/resources/liferay-e5c9.zip/e5c9-impl/src/main/java/com/acme/e5c9/internal/workflow/kaleo/runtime/scripting/internal/action/E5C9ActionExecutor.java
    :dedent: 3
    :language: java
-   :lines: 43-44
+   :lines: 44-45
 ```
 
 `workflowContext` は、直近に実行されたトランジションを取得するために使用され、条件付きロジックがワークフロー内のアセットに設定するステータスを決定できるようになります。
@@ -124,7 +123,7 @@ Acme E5C9実装プロジェクトでは、唯一の承認者定義のワーク�
 ```{literalinclude} ./creating-an-action-executor/resources/liferay-e5c9.zip/e5c9-impl/src/main/java/com/acme/e5c9/internal/workflow/kaleo/runtime/scripting/internal/action/E5C9ActionExecutor.java
    :dedent: 3
    :language: java
-   :lines: 46-59
+   :lines: 47-60
 ```
 
 ### ワークフロー定義内でのActionExecutorの呼び出し

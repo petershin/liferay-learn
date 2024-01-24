@@ -82,7 +82,7 @@
        "twitter": "",
        "webUrls": []
      }
-   }    
+   }
    ```
 
 1. **글로벌 메뉴** &rarr; **애플리케이션** &rarr; **계정** 으로 이동합니다. 사용자를 만든 계정을 클릭합니다. **사용자** 탭을 클릭하고 생성된 새 사용자를 확인합니다.
@@ -91,9 +91,9 @@
 
 1. REST 서비스는 Java 클라이언트를 사용하여 호출할 수도 있습니다. `curl` 폴더에서 `java` 폴더로 이동합니다. 다음 명령으로 소스 파일을 컴파일합니다:
 
-    ```bash
-    javac -classpath .:* *.java
-    ```
+   ```bash
+   javac -classpath .:* *.java
+   ```
 
 2. 다음 명령으로 `AccountUser_POST_ToAccount.java` 클래스를 실행합니다. `1234` 을 계정 ID로 바꿉니다.
 
@@ -106,7 +106,7 @@
 `AccountUser_POST_ToAccount.sh` 스크립트는 cURL 명령으로 REST 서비스를 호출합니다.
 
 ```{literalinclude} ./accounts-api-basics/resources/liferay-t5p9.zip/curl/AccountUser_POST_ToAccount.sh
-    :language: bash
+   :language: bash
 ```
 
 명령의 인수는 다음과 같습니다:
@@ -119,9 +119,8 @@
 | `-d "{\"alternateName\": \"Dog\", \"emailAddress\": \"dog@liferay.com\", \"familyName\": \"Easy\", \"givenName\": \"Dog\"}"` | 게시를 요청하는 데이터                 |
 | `-u "test@liferay.com:learn"`                                                                                                                | 기본 인증 자격 증명                  |
 
-```{note}
-여기서는 데모 목적으로 기본 인증이 사용됩니다. 프로덕션의 경우 [OAuth2](../../헤드리스-딜리버리/using-oauth2.md)를 통해 사용자에게 권한을 부여해야 합니다. OAuth2를 사용하는 샘플 React 애플리케이션은 [OAuth2를 사용하여 사용자에게 권한 부여하기](../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md)를 참조하세요.
-```
+!!! note
+   여기서는 데모 목적으로 기본 인증이 사용됩니다. 프로덕션의 경우 [OAuth2](../../헤드리스-딜리버리/using-oauth2.md)를 통해 사용자에게 권한을 부여해야 합니다. OAuth2를 사용하는 샘플 React 애플리케이션은 [OAuth2를 사용하여 사용자에게 권한 부여하기](../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md)를 참조하세요.
 
 다른 cURL 명령은 유사한 JSON 인수를 사용합니다.
 
@@ -145,15 +144,13 @@
 
 이 프로젝트에는 종속성으로 `com.liferay.headless.admin.user.client.jar` 파일이 포함되어 있습니다. 설치되어 있는 API 탐색기( `/o/api`)에서 모든 REST 애플리케이션에 대한 클라이언트 JAR 종속성 정보를 찾을 수 있습니다.
 
-```{note}
-main` 메서드의 주석은 클래스를 실행하는 것을 보여줍니다.
-```
+!!! note
+   `main` 메서드의 주석은 클래스를 실행하는 것을 보여줍니다.
 
 다른 예제 Java 클래스는 이 클래스와 유사하지만 다른 메서드를 호출합니다.
 
-```{important}
-서비스 세부 정보는 [AccountResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-user/headless-admin-user-client/src/main/java/com/liferay/headless/admin/user/client/resource/v1_0/AccountResource.java) 를 참조하세요.
-```
+!!! important
+   서비스 세부 정보는 [AccountResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-user/headless-admin-user-client/src/main/java/com/liferay/headless/admin/user/client/resource/v1_0/AccountResource.java) 를 참조하세요.
 
 다음은 cURL 및 Java를 사용하여 다른 관련 REST 서비스를 호출하는 예제입니다.
 
@@ -258,7 +255,7 @@ java -classpath .:* -DaccountId=1234 -DaccountRoleId=5678 -DuserAccountId=9012 A
 ```{literalinclude} ./accounts-api-basics/resources/liferay-t5p9.zip/java/AccountRole_POST_UserAssociation.java
    :dedent: 1
    :language: java
-   :lines: 9-19
+   :lines: 8-19
 ```
 
 ## 계정에서 계정 역할 가져오기

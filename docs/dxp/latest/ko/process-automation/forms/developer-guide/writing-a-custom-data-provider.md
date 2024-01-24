@@ -4,9 +4,8 @@ Liferay Forms 필드는 [데이터 공급자](../data-providers/data-providers-o
 
 REST 데이터 공급자가 목적에 맞지 않는 경우 `DDMDataProvider` 확장점을 사용하여 고유한 확장 지점을 만드십시오.
 
-```{note}
-여기에서 시연한 예제 데이터 공급자는 [GeoDataSource™ 사이트 검색 웹 서비스](https://www.geodatasource.com/web-service/location-search) 에서 XML 데이터를 사용합니다. Liferay 직원의 API 키는 이 샘플에 하드 코딩되어 있습니다. 샘플을 남용하지 마십시오. 프로덕션 환경에서는 절대 사용하지 마십시오.
-```
+!!! note
+   여기에서 시연한 예제 데이터 공급자는 [GeoDataSource™ 사이트 검색 웹 서비스](https://www.geodatasource.com/web-service/location-search) 에서 XML 데이터를 사용합니다. Liferay 직원의 API 키는 이 샘플에 하드 코딩되어 있습니다. 샘플을 남용하지 마십시오. 프로덕션 환경에서는 절대 사용하지 마십시오.
 
 ## 사용자 지정 데이터 공급자 배포
 
@@ -31,9 +30,8 @@ REST 데이터 공급자가 목적에 맞지 않는 경우 `DDMDataProvider` 확
    ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
    ```
 
-   ```{tip}
-   이 명령은 배포된 jar를 Docker 컨테이너의 /opt/liferay/osgi/modules에 복사하는 것과 동일합니다.
-   ```
+   !!! tip
+      이 명령은 배포된 jar를 Docker 컨테이너의 /opt/liferay/osgi/modules에 복사하는 것과 동일합니다.
 
 1. Liferay Docker 컨테이너 콘솔에서 각 모듈의 배포를 확인합니다.
 
@@ -99,7 +97,7 @@ REST 데이터 공급자가 목적에 맞지 않는 경우 `DDMDataProvider` 확
 
 ```{literalinclude} ./writing-a-custom-data-provider/resources/liferay-b4d8.zip/b4d8-impl/src/main/java/com/acme/b4d8/dynamic/data/mapping/data/provider/internal/B4D8DDMDataProvider.java
    :language: java
-   :lines: 38-41,43-46,65-66,67-68,70-71
+   :lines: 38-46,65-68,70-71,162
 ```
 
 `getData` 메소드가 대부분의 작업을 수행합니다. Forms 프레임워크가 이해하는 `DDMDaProviderResponse` 을 반환해야 합니다. B4D8 데이터 공급자의 주요 사항은 다음과 같습니다.
@@ -158,9 +156,8 @@ REST 데이터 공급자가 목적에 맞지 않는 경우 `DDMDataProvider` 확
       :lines: 26-28
    ```
 
-   ```{note}
-   [DDMDataProviderParameterSettings]에서는 `outputParameters` 필드 외에도 `inputParameters` 필드도 제공됩니다(https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/dynamic-data-mapping/ dynamic-data-mapping-api/src/main/java/com/liferay/dynamic/data/mapping/data/provider/DDMDataProviderParameterSettings.java).
-   ```
+   !!! note
+      [DDMDataProviderParameterSettings]에서는 `outputParameters` 필드 외에도 `inputParameters` 필드도 제공됩니다(https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/dynamic-data-mapping/ dynamic-data-mapping-api/src/main/java/com/liferay/dynamic/data/mapping/data/provider/DDMDataProviderParameterSettings.java).
 
 ![데이터 공급자 설정 양식이 작동할 준비가 되었습니다.](./writing-a-custom-data-provider/images/05.png)
 
@@ -186,28 +183,28 @@ REST 데이터 공급자가 목적에 맞지 않는 경우 `DDMDataProvider` 확
 
 1. 먼저 새 `URL` 필드를 `DataProviderSettings`에 추가합니다. 클래스 본문에 주석이 달린 다음 메서드를 추가합니다.
 
-    ```java
-    @DDMFormField(
-        label = "%url", required = true,
-        validationErrorMessage = "%please-enter-a-valid-url",
-        validationExpression = "isURL(url)"
-    )
-    public String url();
-    ```
+   ```java
+   @DDMFormField(
+       label = "%url", required = true,
+       validationErrorMessage = "%please-enter-a-valid-url",
+       validationExpression = "isURL(url)"
+   )
+   public String url();
+   ```
 
-    다음 가져오기가 필요합니다.
+   다음 가져오기가 필요합니다.
 
-    ```java
-    import com.liferay.dynamic.data.mapping.annotations.DDMFormField;
-    ```
+   ```java
+   import com.liferay.dynamic.data.mapping.annotations.DDMFormField;
+   ```
 
 1. 양식 레이아웃을 생성하는 클래스 수준 주석에서 `@DDMFormLayoutColumn` 다음으로 바꿉니다.
 
-    ```java
-    @DDMFormLayoutColumn(
-        size = 12, value = {"url", "outputParameters"}
-    )
-    ```
+   ```java
+   @DDMFormLayoutColumn(
+       size = 12, value = {"url", "outputParameters"}
+   )
+   ```
 
 이제 `DataProvider` 클래스에서 설정을 사용할 준비가 되었습니다.
 
@@ -223,27 +220,27 @@ REST 데이터 공급자가 목적에 맞지 않는 경우 `DDMDataProvider` 확
 
 1. 유효한 URL을 얻으려면 이제 사용자 입력이 허용됩니다.
 
-    `키` 변수를 정의하는 줄을 제거하십시오. 이제 URL 설정 필드에서 구성할 수 있습니다.
+   `키` 변수를 정의하는 줄을 제거하십시오. 이제 URL 설정 필드에서 구성할 수 있습니다.
 
-    ```java
-    String key = "LAOOBDZVQ5Z9HHYC4OCXHTGZGQLENMNA";
-    ```
+   ```java
+   String key = "LAOOBDZVQ5Z9HHYC4OCXHTGZGQLENMNA";
+   ```
 
 1. URL을 정의하는 `문자열` 변수를 데이터 공급자 설정 필드로 채워진 `Http.Options` 으로 바꿉니다.
 
-    ```java
-    Http.Options options = new Http.Options();
+   ```java
+   Http.Options options = new Http.Options();
 
-    options.setLocation(b4d8DDMDataProviderSettings.url());
-    ```
+   options.setLocation(b4d8DDMDataProviderSettings.url());
+   ```
 
 1. `_createdDDMDataProviderResponse`에 대한 return 문의 호출에서 `url` 대신 새로운 `옵션` 을 사용합니다. 기존 return 문을 바꿉니다.
 
-    ```java
-    return _createDDMDataProviderResponse(
-        b4d8DDMDataProviderSettings,
-        _toDocument(HttpUtil.URLtoString(options)));
-    ```
+   ```java
+   return _createDDMDataProviderResponse(
+       b4d8DDMDataProviderSettings,
+       _toDocument(HttpUtil.URLtoString(options)));
+   ```
 
 위의 단계는 메서드의 리팩토링을 생략합니다. 이러한 단계를 컴파일하고 테스트하려면 `getData` 메서드에서 전체 `try` 블록을 덮어씁니다.
 

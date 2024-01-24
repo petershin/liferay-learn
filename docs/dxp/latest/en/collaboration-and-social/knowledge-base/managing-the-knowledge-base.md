@@ -50,7 +50,7 @@ For 7.4 U71/GA71 and earlier versions, Knowledge Base articles include a priorit
 **Delete** (![Delete](../../images/icon-app-trash.png)): Immediately delete the folder and its contents. 
 
 !!! note 
-    Enable the LPS-188058 [release feature flag](../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) to add recycle bin support for knowledge base folders and articles. While enabled, deleting folders moves them and their contents to the Recycle Bin.
+    Enable the LPS-188058 [release feature flag](../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) to add recycle bin support for Knowledge Base folders and articles. While enabled, deleting folders moves them and their contents to the Recycle Bin.
 
 Additionally, you can click *Info* (![Info Button](../../images/icon-information.png)) to toggle the information panel for the current folder.
 
@@ -77,7 +77,7 @@ Additionally, you can click *Info* (![Info Button](../../images/icon-information
 **Delete** (![Delete](../../images/icon-app-trash.png)): Immediately delete the article along with its child articles. 
 
 !!! note 
-    Enable the LPS-188058 [release feature flag](../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) to add recycle bin support for knowledge base folders and articles. While enabled, deleting an article moves it and its child articles to the Recycle Bin.
+    Enable the LPS-188058 [release feature flag](../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) to add recycle bin support for Knowledge Base folders and articles. While enabled, deleting an article moves it and its child articles to the Recycle Bin.
 
 While viewing an article, you can also click *Info* (![Info Button](../../images/icon-information.png)) to view article details and versions.
 
@@ -85,11 +85,11 @@ While viewing an article, you can also click *Info* (![Info Button](../../images
 
 {bdg-link-primary}`[Release Feature](../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags)`
 
-When creating or editing an article, you can schedule it for publishing at a specific date and time. While scheduled, the article is only visible in the Knowledge Base application and does not appear in site pages. 
+When creating or editing an article, you can schedule it for publishing at a specific date and time. While scheduled, the article only appears in the Knowledge Base application and does not appear in site pages. 
 
 ![Click Schedule Publication to set a specific date and time for publishing.](./managing-the-knowledge-base/images/06.png)
 
-If you edit a scheduled article and click *Save*, Liferay saves the article as a draft and cancels the scheduled publication. Alternatively, if you click *Edit Schedule* you can choose whether to publish the article immediately or schedule it for publishing at a future date and time.
+If you edit a scheduled article and click *Save*, Liferay saves the article as a draft and cancels the scheduled publication. Alternatively, if you click *Edit Schedule*, you can choose whether to publish the article immediately or schedule it for publishing at a future date and time.
 
 ![When editing a scheduled article, you can click Save or Edit Schedule.](./managing-the-knowledge-base/images/07.png)
 

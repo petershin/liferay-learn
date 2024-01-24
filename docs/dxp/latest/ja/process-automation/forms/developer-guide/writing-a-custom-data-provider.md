@@ -4,10 +4,8 @@ Liferay Formsのフィールドは、 [データプロバイダー](../data-prov
 
 RESTデータプロバイダーが目的に合わない場合は、`DDMDataProvider`拡張ポイントを使用して、独自のデータプロバイダーを作成します。
 
-```{note}
-このデータプロバイダーの例では、 [GeoDataSource™ Location Search Web Service](https://www.geodatasource.com/web-service/location-search) からXMLデータを消費します。 このサンプルには、Liferay社員のAPIキーがハードコードされています。
-サンプルを使いすぎないようにしてください。 本番環境では絶対に使用しないでください。
-```
+!!! note
+   このデータプロバイダーの例では、 [GeoDataSource™ Location Search Web Service](https://www.geodatasource.com/web-service/location-search) からXMLデータを消費します。 このサンプルには、Liferay社員のAPIキーがハードコードされています。 サンプルを使いすぎないようにしてください。 本番環境では絶対に使用しないでください。
 
 ## カスタムデータプロバイダーをデプロイする
 
@@ -32,9 +30,8 @@ RESTデータプロバイダーが目的に合わない場合は、`DDMDataProvi
    ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
    ```
 
-   ```{tip}
-   このコマンドは、デプロイされたjarをDockerコンテナの/opt/liferay/osgi/modulesにコピーするのと同じです。
-   ```
+   !!! tip
+      このコマンドは、デプロイされたjarをDockerコンテナの/opt/liferay/osgi/modulesにコピーするのと同じです。
 
 1. LiferayのDockerコンテナコンソールで各モジュールのデプロイを確認します。
 
@@ -100,7 +97,7 @@ RESTデータプロバイダーが目的に合わない場合は、`DDMDataProvi
 
 ```{literalinclude} ./writing-a-custom-data-provider/resources/liferay-b4d8.zip/b4d8-impl/src/main/java/com/acme/b4d8/dynamic/data/mapping/data/provider/internal/B4D8DDMDataProvider.java
    :language: java
-   :lines: 38-41,43-46,65-66,67-68,70-71
+   :lines: 38-46,65-68,70-71,162
 ```
 
 `getData` メソッドがほとんどの作業を行います。 これは、Formsフレームワークが理解できる `DDMDaProviderResponse` を返さなければなりません。 B4D8のデータプロバイダーとしては、下記のような特徴があります。
@@ -159,9 +156,8 @@ RESTデータプロバイダーが目的に合わない場合は、`DDMDataProvi
       :lines: 26-28
    ```
 
-   ```{note}
-   `outputParameters` フィールドに加えて、 `inputParameters` フィールドも [DDMDataProviderParameterSettings](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/dynamic-data-mapping/dynamic-data-mapping-api/src/main/java/com/liferay/dynamic/data/mapping/data/provider/DDMDataProviderParameterSettings.java) で提供されます。
-   ```
+   !!! note
+      `outputParameters` フィールドに加えて、 `inputParameters` フィールドも [DDMDataProviderParameterSettings](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/dynamic-data-mapping/dynamic-data-mapping-api/src/main/java/com/liferay/dynamic/data/mapping/data/provider/DDMDataProviderParameterSettings.java) で提供されます。
 
 ![データプロバイダー設定フォームは、作業の準備ができています。](./writing-a-custom-data-provider/images/05.png)
 
@@ -187,28 +183,28 @@ RESTデータプロバイダーが目的に合わない場合は、`DDMDataProvi
 
 1. まず、 `URL` フィールドを `DataProviderSettings` に追加します。 クラス本体に、このアノテーション付きのメソッドを追加します。
 
-    ```java
-    @DDMFormField(
-        label = "%url", required = true,
-        validationErrorMessage = "%please-enter-a-valid-url",
-        validationExpression = "isURL(url)"
-    )
-    public String url();
-    ```
+   ```java
+   @DDMFormField(
+       label = "%url", required = true,
+       validationErrorMessage = "%please-enter-a-valid-url",
+       validationExpression = "isURL(url)"
+   )
+   public String url();
+   ```
 
-    それにはこのインポートが必要です。
+   それにはこのインポートが必要です。
 
-    ```java
-    import com.liferay.dynamic.data.mapping.annotations.DDMFormField;
-    ```
+   ```java
+   import com.liferay.dynamic.data.mapping.annotations.DDMFormField;
+   ```
 
 1. フォームのレイアウトを作成するクラスレベルのアノテーションでは、 `@DDMFormLayoutColumn` を次のように置き換えます。
 
-    ```java
-    @DDMFormLayoutColumn(
-        size = 12, value = {"url", "outputParameters"}
-    )
-    ```
+   ```java
+   @DDMFormLayoutColumn(
+       size = 12, value = {"url", "outputParameters"}
+   )
+   ```
 
 これで、 `DataProvider` クラスで使用するための設定が整いました。
 
@@ -224,27 +220,27 @@ RESTデータプロバイダーが目的に合わない場合は、`DDMDataProvi
 
 1. ユーザー入力が可能になったことで、有効なURLを得ることができるようになりました。
 
-    `key` 変数を定義している行を削除しました---これは現在、URL設定フィールドで設定できます。
+   `key` 変数を定義している行を削除しました---これは現在、URL設定フィールドで設定できます。
 
-    ```java
-    String key = "LAOOBDZVQ5Z9HHYC4OCXHTGZGQLENMNA";
-    ```
+   ```java
+   String key = "LAOOBDZVQ5Z9HHYC4OCXHTGZGQLENMNA";
+   ```
 
 1. URLを定義している `文字列` 変数を、データプロバイダーの設定フィールドで入力された `Http.Options` で置き換えます。
 
-    ```java
-    Http.Options options = new Http.Options();
+   ```java
+   Http.Options options = new Http.Options();
 
-    options.setLocation(b4d8DDMDataProviderSettings.url());
-    ```
+   options.setLocation(b4d8DDMDataProviderSettings.url());
+   ```
 
 1. 新しい `オプション` を、 `url` の代わりに使用して、return文の `_createdDDMDataProviderResponse` の呼び出しに使用します。 既存のreturn文を置き換える。
 
-    ```java
-    return _createDDMDataProviderResponse(
-        b4d8DDMDataProviderSettings,
-        _toDocument(HttpUtil.URLtoString(options)));
-    ```
+   ```java
+   return _createDDMDataProviderResponse(
+       b4d8DDMDataProviderSettings,
+       _toDocument(HttpUtil.URLtoString(options)));
+   ```
 
 上記の手順では、メソッドのリファクタリングを省略しています。 これらの手順をコンパイルしてテストするには、 `try` ブロック全体を `getData` メソッドで上書きします。
 

@@ -1,6 +1,7 @@
 ---
 uuid: bd156517-f9c8-423e-929b-2beeb4d90d3c
 ---
+
 # Generating Model, Persistence, and Service Code
 
 Service Builder makes it easy to define models and generate model, persistence, and service code for them. You'll experience this by defining a model called `Y7G4Entry` and generating code using Service Builder. Then you'll deploy your code to DXP and invoke a service that uses the code.
@@ -19,8 +20,8 @@ unzip liferay-y7g4.zip
 
 The `liferay-y7g4` project has two modules:
 
-- `y7g4-api`
-- `y7g4-service`
+-   `y7g4-api`
+-   `y7g4-service`
 
 The API module (`-api`) provides the public interfaces and utilities. The service module (`-service`) provides the implementation.
 
@@ -37,6 +38,7 @@ y7g4-api
 Here's the `bnd.bnd` file:
 
 ```{literalinclude} ./generating-model-persistence-and-service-code/resources/liferay-y7g4.zip/y7g4-api/bnd.bnd
+
 ```
 
 The `Bundle-` headers describe the module artifact. The `Export-Package` header specifies the API packages to publish. See [Module Projects](../../../../liferay-internals/fundamentals/module-projects.md) for details on bnd metadata and how it's used.
@@ -61,12 +63,13 @@ y7g4-service
 Here's the `bnd.bnd` file:
 
 ```{literalinclude} ./generating-model-persistence-and-service-code/resources/liferay-y7g4.zip/y7g4-service/bnd.bnd
+
 ```
 
 Once again, the `Bundle-` headers describe the module artifact. Service metadata and a directive follow.
 
 | Metadata                               | Description                                                                                                                                                                                                                                                                                                |
-|:---------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| :------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `Liferay-Require-SchemaVersion: 1.0.0` | Your application's data schema version. When you release application versions that have database schema changes, you'll increment the version.                                                                                                                                                             |
 | `Liferay-Service: true`                | The module provides a Liferay Service.                                                                                                                                                                                                                                                                     |
 | `-dsannotations-options: inherit`      | OSGi service component classes inherit [OSGi Declarative Services](../../../../liferay-internals/fundamentals/apis-as-osgi-services.md) annotations from their class hierarchy. For example, extension classes can access all the services that ancestor fields reference via the `@Reference` annotation. |
@@ -86,6 +89,7 @@ The `service.xml` file defines the `Y7G4Entry` model entity. Service Builder gen
 Here's the `service.xml` file:
 
 ```{literalinclude} ./generating-model-persistence-and-service-code/resources/liferay-y7g4.zip/y7g4-service/service.xml
+
 ```
 
 This file defines a `Y7G4Entry` model that has an ID (the primary key), name, and description.
@@ -95,7 +99,7 @@ This file defines a `Y7G4Entry` model that has an ID (the primary key), name, an
 The `service-builder` element attributes affect all model entities in the `service.xml` file.
 
 | `service-builder` attribute       | Description                                                                                                                                  |
-|:----------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------|
+| :-------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------- |
 | `dependency-injector`             | Declares the dependency injector type. Declarative Services (`ds`) is the default.                                                           |
 | `package-path`                    | Declares the leading package path for the generated classes.                                                                                 |
 | `short-no-such-exception-enabled` | If set to `true`, use a truncated version of the entity name in `NoSuchY7G4EntryException` messages; otherwise use the complete entity name. |
@@ -109,16 +113,17 @@ The global `namespace` element specifies the prefix for all the model entity dat
 `entity` elements define model database tables and service types.
 
 | `entity` attributes | Description                                                                                                                                |
-|:--------------------|:-------------------------------------------------------------------------------------------------------------------------------------------|
+| :------------------ | :----------------------------------------------------------------------------------------------------------------------------------------- |
 | `name`              | The entity's name. Service Builder generates an entity table using the naming format `[namespace]_[name]` (for example, `Y7G4_Y7G4Entry`). |
 | `local-service`     | If `true`, generate service classes to call from within the JVM.                                                                           |
 | `remote-service`    | If `true`, generate service classes, including web services classes, to call from outside of the JVM.                                      |
 
 ### `column` Elements
+
 Each `column` element defines a column in the entity's table. Here are the `Y7G4Entry` entity column elements:
 
 | Column        | Description                                             |
-|:--------------|:--------------------------------------------------------|
+| :------------ | :------------------------------------------------------ |
 | `y7g4EntryId` | the model instance's ID (long integer) and primary key. |
 | `name`        | the instance's name (string).                           |
 | `description` | the instance's description (string).                    |
@@ -176,7 +181,7 @@ Service Builder generates Java classes, database scripts, and configuration file
 
 Here's an overview of the generated structure:
 
-```
+````
 liferay-y7g4
 ├── y7g4-api
 │   └── src
@@ -203,7 +208,6 @@ liferay-y7g4
             │       ├── sequences.sql
             │       └── tables.sql
             └── service.properties // Tracks the service build version
-```
 
 The model, persistence, and service implementation classes were generated to the Java package path `com.acme.y7g4`. Learn about the classes at [Understanding and Extending Generated Classes](./understanding-and-extending-generated-classes.md).
 
@@ -225,7 +229,7 @@ The `module-hbm.xml` file specifies the Hibernate object relational map.
         <property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="name" type="com.liferay.portal.dao.orm.hibernate.StringType" />
     </class>
 </hibernate-mapping>
-```
+````
 
 The `module-hbm.xml` file maps `Y7G4EntryImpl` objects to the `Y7G4_Y7G4Entry` table. For more information on mapping with Hibernate, visit [Hibernate](https://hibernate.org).
 
@@ -251,49 +255,49 @@ It's time to create the persistence layer and services by deploying the generate
 
 1. Start a MariaDB Docker container.
 
-   ```bash
-   dockertable and install the -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mariadb:10.2
-   ```
+    ```bash
+    dockertable and install the -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mariadb:10.2
+    ```
 
 1. [Create the DXP database](../../../../installation-and-upgrades/reference/database-configurations.md) from within the MariaDB Docker container.
 
-   Sign in to the database server.
+    Sign in to the database server.
 
-   ```bash
-   docker exec -it some-mariadb bash -c "/usr/bin/mysql -uroot -pmy-secret-pw"
-   ```
+    ```bash
+    docker exec -it some-mariadb bash -c "/usr/bin/mysql -uroot -pmy-secret-pw"
+    ```
 
-   Create a database for DXP.
+    Create a database for DXP.
 
-   ```sql
-   create database dxp_db character set utf8;
-   ```
+    ```sql
+    create database dxp_db character set utf8;
+    ```
 
-   End your database session.
+    End your database session.
 
-   ```bash
-   quit
-   ```
+    ```bash
+    quit
+    ```
 
 1. Get the MariaDB container IP address by invoking [Docker's `network inspect`](https://docs.docker.com/engine/reference/commandline/network_inspect/) command on the default network (`bridge`)
 
-   ```bash
-   docker network inspect bridge
-   ```
+    ```bash
+    docker network inspect bridge
+    ```
 
-   Example output:
+    Example output:
 
-   ```json
-   "Containers": {
-      "162f5350ee9ba7c47c1ba91f54a84543aeada7feb35eb8153743b13ef54cb491": {
-         "Name": "some-mariadb",
-         "EndpointID": "8e97e35fb118e2024a52f2ecbfd40b0a879eba8dc3bc5ffceea8bb117c10bebc",
-         "MacAddress": "02:42:ac:11:00:02",
-         "IPv4Address": "172.17.0.2/16",
-         "IPv6Address": ""
-      }
-   }
-   ```
+    ```json
+    "Containers": {
+       "162f5350ee9ba7c47c1ba91f54a84543aeada7feb35eb8153743b13ef54cb491": {
+          "Name": "some-mariadb",
+          "EndpointID": "8e97e35fb118e2024a52f2ecbfd40b0a879eba8dc3bc5ffceea8bb117c10bebc",
+          "MacAddress": "02:42:ac:11:00:02",
+          "IPv4Address": "172.17.0.2/16",
+          "IPv6Address": ""
+       }
+    }
+    ```
 
 Use the first part of the `IPv4Address` value for the `some-mariadb` container. The IP address from the example is `172.17.0.2`.
 
@@ -335,61 +339,61 @@ Verify and validate the database table.
 
 1. Sign in to the database server.
 
-   ```bash
-   docker exec -it some-mariadb bash -c "/usr/bin/mysql -uroot -pmy-secret-pw"
-   ```
+    ```bash
+    docker exec -it some-mariadb bash -c "/usr/bin/mysql -uroot -pmy-secret-pw"
+    ```
 
 1. Connect to the database.
 
-   ```sql
-   connect dxp_db;
-   ```
+    ```sql
+    connect dxp_db;
+    ```
 
 1. List the database tables to verify the `Y7G4_Y7G4Entry` table.
 
-   ```sql
-   show tables;
-   ```
+    ```sql
+    show tables;
+    ```
 
-   Results:
+    Results:
 
-   ```
-   +--------------------------------+
-   | Tables_in_dxp_db               |
-   +--------------------------------++
-   | AMImageEntry                   |
-   | AccountEntry                   |
-   | AccountEntryOrganizationRel    |
-   | ...                            |
-   | Y7G4_Y7G4Entry                 |
-   +--------------------------------+
-   ```
+    ```
+    +--------------------------------+
+    | Tables_in_dxp_db               |
+    +--------------------------------++
+    | AMImageEntry                   |
+    | AccountEntry                   |
+    | AccountEntryOrganizationRel    |
+    | ...                            |
+    | Y7G4_Y7G4Entry                 |
+    +--------------------------------+
+    ```
 
 1. List the `Y7G4_Y7G4Entry` table columns.
 
-   ```sql
-   SHOW COLUMNS FROM Y7G4_Y7G4Entry;
-   ```
+    ```sql
+    SHOW COLUMNS FROM Y7G4_Y7G4Entry;
+    ```
 
-   Results:
+    Results:
 
-   ```
-   +-------------+-------------+------+-----+---------+-------+
-   | Field       | Type        | Null | Key | Default | Extra |
-   +-------------+-------------+------+-----+---------+-------+
-   | y7g4EntryId | bigint(20)  | NO   | PRI | NULL    |       |
-   | description | varchar(75) | YES  |     | NULL    |       |
-   | name        | varchar(75) | YES  |     | NULL    |       |
-   +-------------+-------------+------+-----+---------+-------+
-   ```
+    ```
+    +-------------+-------------+------+-----+---------+-------+
+    | Field       | Type        | Null | Key | Default | Extra |
+    +-------------+-------------+------+-----+---------+-------+
+    | y7g4EntryId | bigint(20)  | NO   | PRI | NULL    |       |
+    | description | varchar(75) | YES  |     | NULL    |       |
+    | name        | varchar(75) | YES  |     | NULL    |       |
+    +-------------+-------------+------+-----+---------+-------+
+    ```
 
-   Everything is in place.
+    Everything is in place.
 
 1. End your database session.
 
-   ```bash
-   quit
-   ```
+    ```bash
+    quit
+    ```
 
 ### Test the Services
 
@@ -399,40 +403,40 @@ Invoke the services to populate the database with `Y7G4Entry` data.
 
 1. Sign in using the default credentials:
 
-   **User Name:** `test@liferay.com`
+    **User Name:** `test@liferay.com`
 
-   **Password:** `test`
+    **Password:** `test`
 
-1. Navigate to the Script console at *Control Panel* &rarr; *Server Administration* &rarr; *Script*.
+1. Navigate to the Script console at _Control Panel_ &rarr; _Server Administration_ &rarr; _Script_.
 
 1. Add an entry by executing the following script.
 
-   ```groovy
-   import com.acme.y7g4.service.Y7G4EntryLocalServiceUtil;
+    ```groovy
+    import com.acme.y7g4.service.Y7G4EntryLocalServiceUtil;
 
-   import com.liferay.portal.kernel.dao.orm.QueryUtil;
+    import com.liferay.portal.kernel.dao.orm.QueryUtil;
 
-   entry = Y7G4EntryLocalServiceUtil.createY7G4Entry(1234);
+    entry = Y7G4EntryLocalServiceUtil.createY7G4Entry(1234);
 
-   entry.setName("Mop floors");
-   entry.setDescription("Mop the kitchen and bathroom floors with soap and water.");
+    entry.setName("Mop floors");
+    entry.setDescription("Mop the kitchen and bathroom floors with soap and water.");
 
-   Y7G4EntryLocalServiceUtil.addY7G4Entry(entry);
+    Y7G4EntryLocalServiceUtil.addY7G4Entry(entry);
 
-   entries = Y7G4EntryLocalServiceUtil.getY7G4Entries(QueryUtil.ALL_POS, QueryUtil.ALL_POS);
+    entries = Y7G4EntryLocalServiceUtil.getY7G4Entries(QueryUtil.ALL_POS, QueryUtil.ALL_POS);
 
-   for (entry in entries){
-      out.println(entry);
-   }
-   ```
+    for (entry in entries){
+       out.println(entry);
+    }
+    ```
 
-   Output:
+    Output:
 
-   ```
-   {y7g4EntryId=1234, description=Mop the kitchen and bathroom floors with soap and water., name=Mop floors}
-   ```
+    ```
+    {y7g4EntryId=1234, description=Mop the kitchen and bathroom floors with soap and water., name=Mop floors}
+    ```
 
-   The newly added Y7G4Entry is printed in JSON format.
+    The newly added Y7G4Entry is printed in JSON format.
 
 Here's what the script did:
 
@@ -448,5 +452,5 @@ Now that you know how to define a model and generate persistence code and servic
 
 ## Related Topics
 
-- [Invoking a Service Locally](./invoking-a-service-locally.md)
-- [What is Liferay Workspace](../../../tooling/liferay-workspace/what-is-liferay-workspace.md)
+-   [Invoking a Service Locally](./invoking-a-service-locally.md)
+-   [What is Liferay Workspace](../../../tooling/liferay-workspace/what-is-liferay-workspace.md)

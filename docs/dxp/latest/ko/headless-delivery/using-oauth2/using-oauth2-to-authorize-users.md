@@ -13,17 +13,17 @@ OAuth 2.0 인증 프로토콜을 사용하여 Liferay의 헤드리스 REST API�
 
 1. 애플리케이션에 이름을 지정합니다(예: foo). 웹사이트 URL을 `http://localhost:3000`으로 설정하고 콜백 URI를 `http://localhost:3000/grant-type-authorization-code`로 설정합니다. **저장** 을 클릭합니다.
 
-    ![새 OAuth2 애플리케이션을 생성하려면 양식을 작성하세요.](./using-oauth2-to-authorize-users/images/01.png)
+   ![새 OAuth2 애플리케이션을 생성하려면 양식을 작성하세요.](./using-oauth2-to-authorize-users/images/01.png)
 
 1. 클라이언트 ID와 클라이언트 암호를 클립보드에 복사합니다. Client Secret을 얻으려면 **편집** 을 클릭하십시오. 팝업 창에서 값을 복사합니다.
 
-    이 값은 나중에 샘플 React 앱에서 필요합니다.
+   이 값은 나중에 샘플 React 앱에서 필요합니다.
 
 1. 페이지 상단의 **Scopes** 탭을 클릭합니다. 아래로 스크롤하여 **LIFERAY.HEADLESS.ADMIN.USER** 를 클릭한 다음 **대신 데이터 읽기** 확인란을 선택합니다.
 
-    ![LIFERAY.HEADLESS.ADMIN.USER에 대한 읽기 권한 활성화.](./using-oauth2-to-authorize-users/images/02.png)
+   ![LIFERAY.HEADLESS.ADMIN.USER에 대한 읽기 권한 활성화.](./using-oauth2-to-authorize-users/images/02.png)
 
-    **저장** 을 클릭합니다. 이제 OAuth2 애플리케이션에 관리 사용자 API 카테고리에 대한 읽기 권한이 있습니다.
+   **저장** 을 클릭합니다. 이제 OAuth2 애플리케이션에 관리 사용자 API 카테고리에 대한 읽기 권한이 있습니다.
 
 1. 다음으로 **전역 메뉴**(![전역 메뉴](../../images/icon-applications-menu.png))를 열고 **제어판** 탭을 클릭한 다음 **시스템 설정** 으로 이동합니다. ~ **보안 도구** .
 
@@ -97,9 +97,8 @@ OAuth 2.0 인증 프로토콜을 사용하여 Liferay의 헤드리스 REST API�
 
 암호 흐름 인증에서 React 앱은 요청에서 직접 사용자 이름과 암호를 전달합니다.
 
-```{warning}
-암호 흐름에서 사용자 이름과 암호는 애플리케이션에 직접 노출됩니다. 따라서 사용자는 애플리케이션을 신뢰해야 합니다. API 요청에 사용자 이름과 비밀번호를 전달하는 것도 위험합니다. 암호 흐름을 사용하는 것은 권장되지 않습니다.
-```
+!!! warning
+   암호 흐름에서 사용자 이름과 암호는 애플리케이션에 직접 노출됩니다. 따라서 사용자는 애플리케이션을 신뢰해야 합니다. API 요청에 사용자 이름과 비밀번호를 전달하는 것도 위험합니다. 암호 흐름을 사용하는 것은 권장되지 않습니다.
 
 1. <http://localhost:3000>에서 실행 중인 React 앱을 연 다음 페이지 상단에서 **Password Flow** 클릭합니다.
 
@@ -127,7 +126,7 @@ src
 │   ├── Users.js
 ├── routes
 │   ├── grant-type-authorization-code
-│   |   ├── AuthorizeCode.js
+│   |   ├── AuthorizationCode.js
 │   ├── grant-type-client-credentials
 │   |   ├── ClientCredentials.js
 │   ├── grant-type-password
@@ -140,18 +139,19 @@ src
 
 ### 권한 부여 유형
 
-`grant-type-authorization-code` 흐름의 `AuthorizeCode.js` 파일은 세 가지 구성 요소(`Authorize.js`, `Token.js`및 `Users.js`)를 모두 사용합니다.
+`grant-type-authorization-code` 흐름의 `AuthorizationCode.js` 파일은 세 가지 구성 요소(`Authorize.js`, `Token.js`및 `Users.js`)를 모두 사용합니다.
 
 ```{literalinclude} ./using-oauth2-to-authorize-users/resources/liferay-c2b6-overlay/src/routes/grant-type-authorization-code/AuthorizationCode.js
-:language: javascript
-:lines: 16-35
+   :dedent: 3
+   :language: javascript
+   :lines: 16-35
 ```
 
 코드에서 `Authorize.js` 구성 요소가 첫 번째 단계를 처리합니다. **승인** 버튼을 클릭하면 승인 요청이 이루어집니다.
 
 ```{literalinclude} ./using-oauth2-to-authorize-users/resources/liferay-c2b6-overlay/src/components/Authorize.js
-:language: javascript
-:lines: 3-67
+   :language: javascript
+   :lines: 3-67
 ```
 
 리디렉션과 함께 일회성 인증 코드가 URL의 앱으로 다시 전달됩니다(예: `http://localhost:3000/grant-type-authorization-code?code={code}`).
@@ -159,8 +159,8 @@ src
 `Token.js` 구성 요소가 다음 단계를 처리합니다. **Get Token** 클릭하면 `Requests.js` 파일에서 `getAuthToken` 함수가 호출됩니다.
 
 ```{literalinclude} ./using-oauth2-to-authorize-users/resources/liferay-c2b6-overlay/src/components/Token.js
-:language: javascript
-:lines: 3-98
+   :language: javascript
+   :lines: 3-98
 ```
 
 `Token.js` 구성요소에서 매개변수 `client_id`, `client_secret`, `code`, `grant_type`및 `redirect_uri` 이 이 API 요청에서 전송됩니다. 매개변수가 유효하면 Liferay는 액세스 토큰이 포함된 JSON 응답을 반환합니다.
@@ -169,10 +169,10 @@ src
 
 ```json
 {
-    "access_token": "2fda85abec524112dae612d35e9f9abd71650d364dee47c645b7574c6bffe91",
-    "token_type": "Bearer",
-    "expires_in": 600,
-    "scope": "Liferay.Headless.Admin.User.everything.read"
+  "access_token": "2fda85abec524112dae612d35e9f9abd71650d364dee47c645b7574c6bffe91",
+  "token_type": "Bearer",
+  "expires_in": 600,
+  "scope": "Liferay.Headless.Admin.User.everything.read"
 }
 ```
 
@@ -185,8 +185,8 @@ src
 `grant-type-client-credentials` 흐름의 `ClientCredentials.js` 파일은 두 가지 구성 요소(예: `Token.js` 및 `Users.js`)를 사용합니다.
 
 ```{literalinclude} ./using-oauth2-to-authorize-users/resources/liferay-c2b6-overlay/src/routes/grant-type-client-credentials/ClientCredentials.js
-:language: javascript
-:lines: 6-31
+   :language: javascript
+   :lines: 6-31
 ```
 
 `Token.js` 구성요소에서 매개변수 `client_id`, `client_secret`및 `grant_type` 이 API 요청으로 전송됩니다. 매개변수가 유효하면 Liferay는 액세스 토큰이 포함된 JSON 응답을 반환합니다.
@@ -200,8 +200,8 @@ src
 `grant-type-password` 흐름의 `Password.js` 파일은 두 가지 구성 요소(예: `Token.js` 및 `Users.js`)를 사용합니다.
 
 ```{literalinclude} ./using-oauth2-to-authorize-users/resources/liferay-c2b6-overlay/src/routes/grant-type-password/Password.js
-:language: javascript
-:lines: 6-31
+   :language: javascript
+   :lines: 6-31
 ```
 
 `Token.js` 구성요소에서 매개변수 `client_id`, `client_secret`, `grant_type`, `password`및 `username` 은 API 요청의 매개변수로 전송됩니다. 매개변수가 유효하면 Liferay 서버는 액세스 토큰이 포함된 JSON 응답을 반환합니다.
@@ -212,7 +212,7 @@ src
 
 ## 관련 항목
 
-* [OAuth 2.0 사용](../using-oauth2.md)
-* [OAuth2 애플리케이션 생성](./creating-oauth2-applications.md)
-* [OAuth2로 계정 액세스 권한 부여](./authorizing-account-access-with-oauth2.md)
-* [OAuth 2 범위](./oauth2-scopes.md)
+- [OAuth 2.0 사용](../using-oauth2.md)
+- [OAuth2 애플리케이션 생성](./creating-oauth2-applications.md)
+- [OAuth2로 계정 액세스 권한 부여](./authorizing-account-access-with-oauth2.md)
+- [OAuth 2 범위](./oauth2-scopes.md)

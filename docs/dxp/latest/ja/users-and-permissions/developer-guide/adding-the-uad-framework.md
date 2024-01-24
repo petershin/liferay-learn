@@ -13,32 +13,31 @@ Liferayのユーザー関連データ（UAD）管理ツールで[ユーザーデ
 
 1. [UAD Framework](./liferay-h6d2.zip) をダウンロードして解凍します。
 
-    ```bash
-    curl https://resources.learn.liferay.com/dxp/latest/en/users-and-permissions/developer-guide/liferay-h6d2.zip -O
-    ```
+   ```bash
+   curl https://resources.learn.liferay.com/dxp/latest/en/users-and-permissions/developer-guide/liferay-h6d2.zip -O
+   ```
 
-    ```bash
-    unzip liferay-h6d2.zip
-    ```
+   ```bash
+   unzip liferay-h6d2.zip
+   ```
 
 1. モジュールのルートから、ビルドおよびデプロイします。
 
-    ```bash
-    ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
-    ```
+   ```bash
+   ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
+   ```
 
-    ```{note}
-       このコマンドは、デプロイされたjarをDockerコンテナの/opt/liferay/osgi/modulesにコピーするのと同じです。
-    ```
+   !!! note
+      このコマンドは、デプロイされたjarをDockerコンテナの/opt/liferay/osgi/modulesにコピーするのと同じです。
 
 1. Liferay Dockerコンテナコンソールでデプロイを確認します。
 
-    ```bash
-    STARTED com.acme.h6d2.api_1.0.0 [1433]
-    STARTED com.acme.h6d2.service_1.0.0 [1434]
-    STARTED com.acme.h6d2.uad_1.0.0 [1435]
-    STARTED com.acme.h6d2.web_1.0.0 [1436]
-    ```
+   ```bash
+   STARTED com.acme.h6d2.api_1.0.0 [1433]
+   STARTED com.acme.h6d2.service_1.0.0 [1434]
+   STARTED com.acme.h6d2.uad_1.0.0 [1435]
+   STARTED com.acme.h6d2.web_1.0.0 [1436]
+   ```
 
 1. ブラウザで`https://localhost:8080`を開きます。
 
@@ -72,8 +71,8 @@ Liferayのユーザー関連データ（UAD）管理ツールで[ユーザーデ
    | `uad-package-path`     | 生成されたUADクラスのパッケージパスを指定します。       |
 
    ```{literalinclude} ./adding-the-uad-framework/resources/liferay-h6d2.zip/h6d2-service/service.xml
-   :language: xml
-   :lines: 6
+      :language: xml
+      :lines: 6
    ```
 
 1. 以下のデータフィールドがまだ定義されていない場合は、追加してください。
@@ -96,13 +95,14 @@ Liferayのユーザー関連データ（UAD）管理ツールで[ユーザーデ
 
 1. 次に、匿名化するデータフィールドを指定します。 これは、2つの属性を用いて行われます。
 
-   * `uad-anonymize-field-name=[fieldName]` 属性は、UAD自動匿名化処理で匿名ユーザーの値で置換されるフィールドを表します。 例えば、 `uad-anonymize-field-name=fullName` と設定すると、そのフィールドの値が匿名ユーザーのフルネームに置換されます。 匿名ユーザーの詳細については、 [匿名ユーザーの構成](../managing-user-data/configuring-the-anonymous-user.md) を参照してください。
+   - `uad-anonymize-field-name=[fieldName]` 属性は、UAD自動匿名化処理で匿名ユーザーの値で置換されるフィールドを表します。 例えば、 `uad-anonymize-field-name=fullName` と設定すると、そのフィールドの値が匿名ユーザーのフルネームに置換されます。 匿名ユーザーの詳細については、 [匿名ユーザーの構成](../managing-user-data/configuring-the-anonymous-user.md) を参照してください。
 
-   * `uad-nonanonymizable="true"` 属性は、自動的に匿名化されないが管理者によるレビューが必要なデータを示します。
+   - `uad-nonanonymizable="true"` 属性は、自動的に匿名化されないが管理者によるレビューが必要なデータを示します。
 
    ```{literalinclude} ./adding-the-uad-framework/resources/liferay-h6d2.zip/h6d2-service/service.xml
-   :language: xml
-   :lines: 20
+      :dedent: 1
+      :language: xml
+      :lines: 20
    ```
 ## UADモジュールを生成する
 
@@ -110,46 +110,47 @@ Liferayのユーザー関連データ（UAD）管理ツールで[ユーザーデ
 
 1. モジュール用の `bnd.bnd` ファイルを作成します。
 
-    ```{literalinclude} ./adding-the-uad-framework/resources/liferay-h6d2.zip/h6d2-uad/bnd.bnd
-    ```
+   ```{literalinclude} ./adding-the-uad-framework/resources/liferay-h6d2.zip/h6d2-uad/bnd.bnd
+   ```
 
    必ず `-dsannotations-options: inherit` アノテーションを含めてください。OSGiサービスコンポーネントクラスはクラス階層から[OSGi declarative services](../../liferay-internals/fundamentals/module-projects.md)アノテーションを継承します。
 
 1. モジュール用の `build.gradle` ファイルを作成します。
 
-    ```{literalinclude} ./adding-the-uad-framework/resources/liferay-h6d2.zip/h6d2-uad/build.gradle
-    ```
+   ```{literalinclude} ./adding-the-uad-framework/resources/liferay-h6d2.zip/h6d2-uad/build.gradle
+   ```
 
    プロジェクトの `-api` モジュールを含め、必要な依存関係を追加することを確認してください。
 
 2. モジュールの `-service` フォルダに戻り、Service Builder を実行して UAD モジュールを生成してください。
 
-    ```bash
-    ../gradlew buildService
-    ```
+   ```bash
+   ../gradlew buildService
+   ```
 
-    出力:
+   出力:
 
-    ```
-    > Task :h6d2-service:buildService
-    Building H6D2Entry
-    Writing ../h6d2-uad/src/main/java/com/acme/h6d2/uad/anonymizer/BaseH6D2EntryUADAnonymizer.java
-    Writing ../h6d2-uad/src/main/java/com/acme/h6d2/uad/exporter/BaseH6D2EntryUADExporter.java
-    Writing ../h6d2-uad/src/main/java/com/acme/h6d2/uad/anonymizer/H6D2EntryUADAnonymizer.java
-    Writing ../h6d2-uad/src/main/java/com/acme/h6d2/uad/exporter/H6D2EntryUADExporter.java
-    Writing ../h6d2-uad/src/main/java/com/acme/h6d2/uad/display/BaseH6D2EntryUADDisplay.java
-    Writing ../h6d2-uad/src/main/java/com/acme/h6d2/uad/display/H6D2EntryUADDisplay.java
-    Writing src/main/resources/service.properties
-    Writing ../h6d2-uad/src/main/java/com/acme/h6d2/uad/constants/H6D2UADConstants.java
-    ```
+   ```
+   > Task :h6d2-service:buildService
+   Building H6D2Entry
+   Writing ../h6d2-uad/src/main/java/com/acme/h6d2/uad/anonymizer/BaseH6D2EntryUADAnonymizer.java
+   Writing ../h6d2-uad/src/main/java/com/acme/h6d2/uad/exporter/BaseH6D2EntryUADExporter.java
+   Writing ../h6d2-uad/src/main/java/com/acme/h6d2/uad/anonymizer/H6D2EntryUADAnonymizer.java
+   Writing ../h6d2-uad/src/main/java/com/acme/h6d2/uad/exporter/H6D2EntryUADExporter.java
+   Writing ../h6d2-uad/src/main/java/com/acme/h6d2/uad/display/BaseH6D2EntryUADDisplay.java
+   Writing ../h6d2-uad/src/main/java/com/acme/h6d2/uad/display/H6D2EntryUADDisplay.java
+   Writing src/main/resources/service.properties
+   Writing ../h6d2-uad/src/main/java/com/acme/h6d2/uad/constants/H6D2UADConstants.java
+   ```
 
 ## ポートレットを変更する
 
 フォームからアプリケーション固有のデータフィールドを渡す場合、 `service.xml` ファイルで追加したユーザー関連のデータフィールドも渡す必要があります。
 
 ```{literalinclude} ./adding-the-uad-framework/resources/liferay-h6d2.zip/h6d2-web/src/main/java/com/acme/h6d2/web/internal/portlet/H6D2Portlet.java
-:language: java
-:lines: 30-66
+   :dedent: 2
+   :language: java
+   :lines: 30-66
 ```
 
 `H6D2 Portlet`には`_h6d2EntryLocalService`と呼ばれる`H6D2EntryLocalService` フィールドと`addH6D2Entry`と呼ばれるアクション処理メソッドがあります。 `addH6D2Entry`メソッドは `H6D2EntryLocalService`の`addH6D2Entry`メソッドを呼び、 `ActionRequest`から受け取ったデータフィールドを渡しています。
@@ -157,14 +158,14 @@ Liferayのユーザー関連データ（UAD）管理ツールで[ユーザーデ
 ポートレットの `view.jsp` には、ユーザーが `ActionRequest` から `H6D2 Portlet`に送信できるフォームが含まれています。
 
 ```{literalinclude} ./adding-the-uad-framework/resources/liferay-h6d2.zip/h6d2-web/src/main/resources/META-INF/resources/view.jsp
-:language: jsp
-:lines: 18-26
+   :language: jsp
+   :lines: 18-26
 ```
 
 `ActionRequest` を `actionURL` と共に送信すると、ポートレットの `addH6D2Entry` メソッドを呼び出せるようになります。
 
 ## 関連トピック
 
-* [ユーザーデータの管理](../managing-user-data.md)
-* [サービスビルダー](../../building-applications/data-frameworks/service-builder.md)
-* [MVCの使用](../../building-applications/developing-a-java-web-application/using-mvc.md)
+- [ユーザーデータの管理](../managing-user-data.md)
+- [サービスビルダー](../../building-applications/data-frameworks/service-builder.md)
+- [MVCの使用](../../building-applications/developing-a-java-web-application/using-mvc.md)

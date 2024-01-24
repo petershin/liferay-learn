@@ -17,17 +17,16 @@ Liferay DXP REST 서비스를 사용하여 사이트에서 구조화된 콘텐�
 
 1. [Web Content API Basics](./liferay-r4h9.zip) 파일을 다운로드하고 압축을 풉니다.
 
-    ```bash
-    curl https://resources.learn.liferay.com/dxp/latest/en/content-authoring-and-management/web-content/developer-guide/liferay-r4h9.zip -O
-    ```
-
-    ```bash
-    unzip liferay-r4h9.zip
-    ```
-
-   ```{note}
-   이러한 스크립트는 기본 인증을 사용하며 테스트용으로 설계되었습니다. 프로덕션 Liferay DXP 환경에서 기본 인증을 사용하지 마십시오.
+   ```bash
+   curl https://resources.learn.liferay.com/dxp/latest/en/content-authoring-and-management/web-content/developer-guide/liferay-r4h9.zip -O
    ```
+
+   ```bash
+   unzip liferay-r4h9.zip
+   ```
+
+   !!! note
+      이러한 스크립트는 기본 인증을 사용하며 테스트용으로 설계되었습니다. 프로덕션 Liferay DXP 환경에서 기본 인증을 사용하지 마십시오.
 
 1. 환경을 설정하려면 다음 단계를 완료하십시오.
 
@@ -52,9 +51,8 @@ Liferay DXP Headless Delivery API에서 다음 서비스를 사용하여 웹 콘
 
 웹 콘텐츠를 생성하려면 웹 콘텐츠 구조가 필요합니다. 구조를 선언하지 않고 사용자 인터페이스에서 웹 콘텐츠를 생성하면 Liferay DXP는 기본 기본 웹 콘텐츠 구조를 사용합니다.
 
-```{note}
-기본 웹 콘텐츠 구조는 Liferay DXP 사용자 인터페이스에 표시되지 않습니다.
-```
+!!! note
+   기본 웹 콘텐츠 구조는 Liferay DXP 사용자 인터페이스에 표시되지 않습니다.
 
 이러한 예에서는 단일 텍스트 필드와 기본 기본 웹 콘텐츠 구조가 있는 기본 웹 콘텐츠 기사를 사용합니다. 다음 단계를 사용하여 웹 콘텐츠를 만듭니다.
 
@@ -187,9 +185,8 @@ JSON 출력에서 다음 정보를 검토하십시오.
 
 다른 예제 Java 클래스는 이 클래스와 비슷하지만 다른 `StructuredContentResource` 메서드를 호출합니다.
 
-```{important}
-[StructuredContentResource]$LIFERAY_LEARN_PORTAL_GIT_TAG$/delivery/client/resource/v1_0/StructuredContentResource.java)를 참조하세요.
-```
+!!! important
+   [StructuredContentResource]$LIFERAY_LEARN_PORTAL_GIT_TAG$/delivery/client/resource/v1_0/StructuredContentResource.java)를 참조하세요.
 
 다음은 cURL 및 Java를 사용하여 다른 REST 서비스를 호출하는 예입니다.
 
@@ -233,9 +230,8 @@ java -classpath .:* -DstructuredContentId=1234 StructuredContent_GET_ById
 
 다음 cURL 또는 Java 명령을 실행하여 사이트의 콘텐츠 구조를 검색할 수 있습니다. `1234` 사이트 ID로 바꿉니다.
 
-```{note}
-기본 기본 웹 콘텐츠 구조는 이 끝점을 사용하여 볼 수 없습니다.
-```
+!!! note
+   기본 기본 웹 콘텐츠 구조는 이 끝점을 사용하여 볼 수 없습니다.
 
 ### ContentStructures_GET_FromSite.sh
 
@@ -255,7 +251,7 @@ java -classpath .:* -DstructuredContentId=1234 StructuredContent_GET_ById
 
 명령:
 
-```bash 
+```bash
 java -classpath .:* -DsiteId=1234 ContentStructures_GET_FromSite
 ```
 
@@ -453,7 +449,7 @@ java -classpath .:* -DcontentStructureId=1234 -DsiteId=5678 StructuredContent_PO
 
 명령:
 
-```bash 
+```bash
 java -classpath .:* -DcontentStructureId=1234 -DstructuredContentId=5678 StructuredContent_PATCH_ById
 ```
 
@@ -496,16 +492,15 @@ java -classpath .:* -DcontentStructureId=1234 -DstructuredContentId=5678 Structu
 ```{literalinclude} ./web-content-api-basics/resources/liferay-r4h9.zip/java/StructuredContent_PUT_ById.java
    :dedent: 1
    :language: java
-   :lines: 9-26
+   :lines: 11-45
 ```
 
 ## 웹 콘텐츠 기사 삭제
 
 `DELETE` 메서드를 `StructuredContent` 서비스와 함께 사용하여 웹 콘텐츠 기사를 삭제합니다. `StructuredContent_DELETE_ById.[java|sh]` 스크립트 예제는 웹 콘텐츠 `id` 을 사용하여 웹 콘텐츠를 삭제합니다.
 
-```{important}
-REST API를 사용하여 웹 콘텐츠를 삭제하면 [Liferay DXP 휴지통](../../../content-authoring-and-management/recycle-bin/recycle-bin-overview.md)을 사용하지 않고 영구 삭제됩니다.
-```
+!!! important
+   REST API를 사용하여 웹 콘텐츠를 삭제하면 [Liferay DXP 휴지통](../../../content-authoring-and-management/recycle-bin/recycle-bin-overview.md)을 사용하지 않고 영구 삭제됩니다.
 
 ### StructuredContent_DELETE_ById.sh
 
@@ -525,7 +520,7 @@ REST API를 사용하여 웹 콘텐츠를 삭제하면 [Liferay DXP 휴지통](.
 
 명령
 
-```bash 
+```bash
 java -classpath .:* -DstructuredContentId=1234 StructuredContent_DELETE_ById
 ```
 
@@ -551,12 +546,11 @@ java -classpath .:* -DstructuredContentId=1234 StructuredContent_DELETE_ById
 | `StructuredContentFolder_DELETE_ById.[java\|sh]`              | 웹 콘텐츠 폴더를 삭제합니다.         |
 | `StructuredContent_POST_ToStructuredContentFolder.[java\|sh]` | 웹 콘텐츠 기사를 폴더에 게시합니다.     |
 
-```{important}
-REST API를 사용하여 웹 콘텐츠 폴더를 삭제하면 [Liferay DXP 휴지통](../../../content-authoring-and-management/recycle-bin/recycle-bin-overview.md).
-```
+!!! important
+   REST API를 사용하여 웹 콘텐츠 폴더를 삭제하면 [Liferay DXP 휴지통](../../../content-authoring-and-management/recycle-bin/recycle-bin-overview.md).
 
 ## 관련 정보
 
-* [고급 웹 콘텐츠 API](./advanced-web-content-api.md)
-* [REST 서비스 사용](../../../headless-delivery/consuming-apis/consuming-rest-services.md)
-* [웹 콘텐츠 구조 이해](../web-content-structures/understanding-web-content-structures.md)
+- [고급 웹 콘텐츠 API](./advanced-web-content-api.md)
+- [REST 서비스 사용](../../../headless-delivery/consuming-apis/consuming-rest-services.md)
+- [웹 콘텐츠 구조 이해](../web-content-structures/understanding-web-content-structures.md)

@@ -82,7 +82,7 @@
        "twitter": "",
        "webUrls": []
      }
-   }    
+   }
    ```
 
 1. **グローバルメニュー** &rarr; ［**アプリケーション**］ &rarr; ［**Accounts**］ に移動します。 ユーザーを作成したアカウントをクリックします。 ［**Users**］ タブをクリックすると、作成された新しいユーザーが表示されます。
@@ -91,9 +91,9 @@
 
 1. RESTサービスは、Javaクライアントを使って呼び出すこともできます。 `curl` フォルダから、 `java` フォルダに移動します。 以下のコマンドでソースファイルをコンパイルします。
 
-    ```bash
-    javac -classpath .:* *.java
-    ```
+   ```bash
+   javac -classpath .:* *.java
+   ```
 
 2. `AccountUser_POST_ToAccount.java` クラスを以下のコマンドで実行します。 `1234` をアカウントのIDに置き換えてください。
 
@@ -106,7 +106,7 @@
 `AccountUser_POST_ToAccount.sh` スクリプトは、cURLコマンドでRESTサービスを呼び出します。
 
 ```{literalinclude} ./accounts-api-basics/resources/liferay-t5p9.zip/curl/AccountUser_POST_ToAccount.sh
-    :language: bash
+   :language: bash
 ```
 
 コマンドの引数は次のとおりです。
@@ -119,9 +119,8 @@
 | `-d "{\"alternateName\": \"Dog\", \"emailAddress\": \"dog@liferay.com\", \"familyName\": \"Easy\", \"givenName\": \"Dog\"}"` | お客様が掲載を希望するデータ                  |
 | `-u "test@liferay.com:learn"`                                                                                                                | 基本的な認証情報                        |
 
-```{note}
-ここでは、デモのために基本的な認証を使用しています。 本番環境では、 [OAuth2](../../headless-delivery/using-oauth2.md) を使ってユーザーを認証する必要があります。 OAuth2を利用したReactアプリケーションのサンプルは、[OAuth2を利用したユーザー認証](../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md) をご参照ください。
-```
+!!! note
+   ここでは、デモのために基本的な認証を使用しています。 本番環境では、 [OAuth2](../../headless-delivery/using-oauth2.md) を使ってユーザーを認証する必要があります。 OAuth2を利用したReactアプリケーションのサンプルは、[OAuth2を利用したユーザー認証](../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md) をご参照ください。
 
 他のcURLコマンドも同様のJSON引数を使用します。
 
@@ -145,15 +144,13 @@
 
 プロジェクトには、依存関係として`com.liferay.headless.admin.user.client.jar`ファイルが含まれていることに注意してください。 すべてのRESTアプリケーションのクライアントJAR依存関係情報は、`/o/api`でインストール先のAPIエクスプローラーで確認できます。
 
-```{note}
-`main`メソッドのコメントでは、クラスの実行を実演しています。
-```
+!!! note
+   `main`メソッドのコメントでは、クラスの実行を実演しています。
 
 他のJavaクラスの例は、このクラスと似ていますが、異なるメソッドを呼び出しています。
 
-```{important}
-サービスの詳細は、 [AccountResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-user/headless-admin-user-client/src/main/java/com/liferay/headless/admin/user/client/resource/v1_0/AccountResource.java) を参照してください。
-```
+!!! important
+   サービスの詳細は、 [AccountResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-user/headless-admin-user-client/src/main/java/com/liferay/headless/admin/user/client/resource/v1_0/AccountResource.java) を参照してください。
 
 以下は、cURLとJavaを使って、関連する他のRESTサービスを呼び出す例です。
 
@@ -258,7 +255,7 @@ java -classpath .:* -DaccountId=1234 -DaccountRoleId=5678 -DuserAccountId=9012 A
 ```{literalinclude} ./accounts-api-basics/resources/liferay-t5p9.zip/java/AccountRole_POST_UserAssociation.java
    :dedent: 1
    :language: java
-   :lines: 9-19
+   :lines: 8-19
 ```
 
 ## アカウントからのアカウントロールの取得

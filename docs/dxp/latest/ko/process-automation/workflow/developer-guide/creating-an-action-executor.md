@@ -48,9 +48,8 @@ Groovy 작업 논리를 워크플로 정의 `<script>` 요소에 직접 작성�
    ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
    ```
 
-   ```{tip}
-   이 명령은 배포된 jar를 Docker 컨테이너의 `/opt/liferay/osgi/modules`에 복사하는 것과 동일합니다.
-   ```
+   !!! tip
+      이 명령은 배포된 jar를 Docker 컨테이너의 `/opt/liferay/osgi/modules`에 복사하는 것과 동일합니다.
 
 1. Liferay Docker 컨테이너 콘솔에서 배포를 확인합니다.
 
@@ -58,9 +57,8 @@ Groovy 작업 논리를 워크플로 정의 `<script>` 요소에 직접 작성�
    STARTED com.acme.e5c9.impl_1.0.0
    ```
 
-```{note}
-편의를 위해 'ActionExecutor'의 'activate' 메서드는 E5C9 단일 승인자 워크플로 정의를 자동 로드했습니다. 이 코드는 Workflow Process Builder로 이동하여 워크플로 정의를 업로드하는 것과 동일한 작업을 수행했습니다. [새 워크플로 정의 업로드](../designing-and-managing-workflows/managing-workflows.md#uploading-a-new-workflow-definition) 를 참조하십시오.
-```
+!!! note
+   편의를 위해 'ActionExecutor'의 'activate' 메서드는 E5C9 단일 승인자 워크플로 정의를 자동 로드했습니다. 이 코드는 Workflow Process Builder로 이동하여 워크플로 정의를 업로드하는 것과 동일한 작업을 수행했습니다. [새 워크플로 정의 업로드](../designing-and-managing-workflows/managing-workflows.md#uploading-a-new-workflow-definition) 를 참조하십시오.
 
 ## 액션 실행자 테스트
 
@@ -97,7 +95,7 @@ Acme E5C9 구현 프로젝트는 단일 승인자 정의 워크플로우 스크�
 ```{literalinclude} ./creating-an-action-executor/resources/liferay-e5c9.zip/e5c9-impl/src/main/java/com/acme/e5c9/internal/workflow/kaleo/runtime/scripting/internal/action/E5C9ActionExecutor.java
    :dedent: 4
    :language: java
-   :lines: 49-50
+   :lines: 50-51
 ```
 
 ### ActionExecutor 구현
@@ -107,7 +105,7 @@ Acme E5C9 구현 프로젝트는 단일 승인자 정의 워크플로우 스크�
 ```{literalinclude} ./creating-an-action-executor/resources/liferay-e5c9.zip/e5c9-impl/src/main/java/com/acme/e5c9/internal/workflow/kaleo/runtime/scripting/internal/action/E5C9ActionExecutor.java
    :dedent: 0
    :language: java
-   :lines: 31-35
+   :lines: 32-36
 ```
 
 `실행` 메서드는 아무 것도 반환하지 않습니다. 대신 메서드 내에서 논리가 임의로 실행되고 XML 정의에 따라 워크플로 처리가 계속됩니다. 작업 실행 내에서 워크플로 상태가 업데이트되는 경우가 많습니다.
@@ -117,7 +115,7 @@ Acme E5C9 구현 프로젝트는 단일 승인자 정의 워크플로우 스크�
 ```{literalinclude} ./creating-an-action-executor/resources/liferay-e5c9.zip/e5c9-impl/src/main/java/com/acme/e5c9/internal/workflow/kaleo/runtime/scripting/internal/action/E5C9ActionExecutor.java
    :dedent: 3
    :language: java
-   :lines: 43-44
+   :lines: 44-45
 ```
 
 `workflowContext` 가장 최근에 실행된 전환을 가져오는 데 사용되므로 조건 논리가 워크플로의 자산에 대해 설정할 상태를 결정할 수 있습니다.
@@ -125,7 +123,7 @@ Acme E5C9 구현 프로젝트는 단일 승인자 정의 워크플로우 스크�
 ```{literalinclude} ./creating-an-action-executor/resources/liferay-e5c9.zip/e5c9-impl/src/main/java/com/acme/e5c9/internal/workflow/kaleo/runtime/scripting/internal/action/E5C9ActionExecutor.java
    :dedent: 3
    :language: java
-   :lines: 46-59
+   :lines: 47-60
 ```
 
 ### 워크플로 정의에서 ActionExecutor 호출

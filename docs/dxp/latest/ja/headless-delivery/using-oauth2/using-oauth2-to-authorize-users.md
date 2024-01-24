@@ -9,7 +9,7 @@ OAuth 2.0の認証プロトコルを使用してLiferayのヘッドレスREST AP
 
 1. グローバルメニュー(![グローバルメニュー](../../images/icon-applications-menu.png))を開き、 **コントロールパネル** &rarr; **セキュリティ** &rarr; **OAuth 2 管理** に移動します。
 
-1. Add* ( [Add Icon](../../images/icon-add.png) ) をクリックして、新しい OAuth2 アプリケーションを作成します。
+1. *Add* ( ![Add Icon](../../images/icon-add.png) ) をクリックして、新しい OAuth2 アプリケーションを作成します。
 
 1. アプリケーションに名前を付ける（例：foo）。ウェブサイトのURLを `http://localhost:3000` に、コールバックURIを `http://localhost:3000/grant-type-authorization-code` に設定する。 **Save** をクリックします。
 
@@ -33,7 +33,7 @@ OAuth 2.0の認証プロトコルを使用してLiferayのヘッドレスREST AP
 
 ## サンプルReactアプリのデプロイ
 
-1. OAuth2 React App](./liferay-c2b6.zip) をダウンロードして解凍します。
+1. [OAuth2 React App](./liferay-c2b6.zip) をダウンロードして解凍します。
 
    ```bash
    curl https://resources.learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2/liferay-c2b6.zip -O
@@ -97,9 +97,8 @@ OAuth 2.0の認証プロトコルを使用してLiferayのヘッドレスREST AP
 
 パスワードフローの認証では、Reactアプリはユーザー名とパスワードをリクエストで直接渡します。
 
-```{warning}
-パスワードフローでは、ユーザー名とパスワードはアプリケーションに直接公開されます。 そのため、ユーザーはアプリケーションを信頼する必要があります。 APIリクエストでユーザー名とパスワードを渡すこともリスクを伴います。 パスワードフローを使用することは推奨されません。
-```
+!!! warning
+   パスワードフローでは、ユーザー名とパスワードはアプリケーションに直接公開されます。 そのため、ユーザーはアプリケーションを信頼する必要があります。 APIリクエストでユーザー名とパスワードを渡すこともリスクを伴います。 パスワードフローを使用することは推奨されません。
 
 1. <http://localhost:3000>で実行中のReactアプリを開き、ページ上部の ［**Password Flow**］ をクリックします。
 
@@ -127,7 +126,7 @@ src
 │   ├── Users.js
 ├── routes
 │   ├── grant-type-authorization-code
-│   |   ├── AuthorizeCode.js
+│   |   ├── AuthorizationCode.js
 │   ├── grant-type-client-credentials
 │   |   ├── ClientCredentials.js
 │   ├── grant-type-password
@@ -140,18 +139,19 @@ src
 
 ### 認証許可タイプ
 
-`grant-type-authorization-code` フローの `AuthorizeCode.js` ファイルは、3つのコンポーネント（`Authorize.js`、 `Token.js`、 `Users.js`）をすべて使用する。
+`grant-type-authorization-code` フローの `AuthorizationCode.js` ファイルは、3つのコンポーネント（`Authorize.js`、 `Token.js`、 `Users.js`）をすべて使用する。
 
 ```{literalinclude} ./using-oauth2-to-authorize-users/resources/liferay-c2b6-overlay/src/routes/grant-type-authorization-code/AuthorizationCode.js
-:language: javascript
-:lines: 16-35
+   :dedent: 3
+   :language: javascript
+   :lines: 16-35
 ```
 
 コードでは、 `Authorize.js` コンポーネントが最初のステップを処理する。 ［**Authorize**］ ボタンをクリックすると、認証要求が行われます。
 
 ```{literalinclude} ./using-oauth2-to-authorize-users/resources/liferay-c2b6-overlay/src/components/Authorize.js
-:language: javascript
-:lines: 3-67
+   :language: javascript
+   :lines: 3-67
 ```
 
 リダイレクトと同時に、ワンタイム認証コードがURL内でアプリに引き渡されます（例： `http://localhost:3000/grant-type-authorization-code?code={code}`）。
@@ -159,8 +159,8 @@ src
 `Token.js` コンポーネントが次のステップを処理する。 ［**Get Token**］ をクリックすると、 `Requests.js` ファイル内の `getAuthToken` 関数が呼び出されます。
 
 ```{literalinclude} ./using-oauth2-to-authorize-users/resources/liferay-c2b6-overlay/src/components/Token.js
-:language: javascript
-:lines: 3-98
+   :language: javascript
+   :lines: 3-98
 ```
 
 `Token.js` コンポーネントでは、パラメータ `client_id`、 `client_secret`、 `code`、 `grant_type`、 `redirect_uri` がこのAPIリクエストで送信される。 パラメータが有効であれば、Liferayはアクセストークンを含むJSONレスポンスを返します。
@@ -169,10 +169,10 @@ src
 
 ```json
 {
-    "access_token": "2fda85abec524112dae612d35e9f9abd71650d364dee47c645b7574c6bffe91",
-    "token_type": "Bearer",
-    "expires_in": 600,
-    "scope": "Liferay.Headless.Admin.User.everything.read"
+  "access_token": "2fda85abec524112dae612d35e9f9abd71650d364dee47c645b7574c6bffe91",
+  "token_type": "Bearer",
+  "expires_in": 600,
+  "scope": "Liferay.Headless.Admin.User.everything.read"
 }
 ```
 
@@ -185,8 +185,8 @@ src
 `grant-type-client-credentials` フローの `ClientCredentials.js` ファイルは、2つのコンポーネント（すなわち `Token.js` と `Users.js`）を使用する。
 
 ```{literalinclude} ./using-oauth2-to-authorize-users/resources/liferay-c2b6-overlay/src/routes/grant-type-client-credentials/ClientCredentials.js
-:language: javascript
-:lines: 6-31
+   :language: javascript
+   :lines: 6-31
 ```
 
 `Token.js` コンポーネントでは、パラメータ `client_id`、 `client_secret`、 `grant_type` がAPIリクエストで送信される。 パラメータが有効であれば、Liferayはアクセストークンを含むJSONレスポンスを返します。
@@ -200,8 +200,8 @@ src
 `grant-type-password` フローの `Password.js` ファイルは、2つのコンポーネント（すなわち、 `Token.js` と `Users.js`）を使用している。
 
 ```{literalinclude} ./using-oauth2-to-authorize-users/resources/liferay-c2b6-overlay/src/routes/grant-type-password/Password.js
-:language: javascript
-:lines: 6-31
+   :language: javascript
+   :lines: 6-31
 ```
 
 `Token.js` コンポーネントでは、パラメータ `client_id`, `client_secret`, `grant_type`, `password`, `username` がAPIリクエストのパラメータとして送信される。 パラメータが有効であれば、Liferayサーバーはアクセストークンを含むJSONレスポンスを返します。
@@ -212,7 +212,7 @@ src
 
 ## 関連トピック
 
-* [OAuth 2.0の使用](../using-oauth2.md)
-* [OAuth2アプリケーションの作成](./creating-oauth2-applications.md)
-* [OAuth2によるアカウントアクセスの承認](./authorizing-account-access-with-oauth2.md)
-* [OAuth 2のスコープ](./oauth2-scopes.md)
+- [OAuth 2.0の使用](../using-oauth2.md)
+- [OAuth2アプリケーションの作成](./creating-oauth2-applications.md)
+- [OAuth2によるアカウントアクセスの承認](./authorizing-account-access-with-oauth2.md)
+- [OAuth 2のスコープ](./oauth2-scopes.md)

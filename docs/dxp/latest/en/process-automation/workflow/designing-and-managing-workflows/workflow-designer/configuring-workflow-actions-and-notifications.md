@@ -9,11 +9,9 @@ Using the workflow designer, users can configure Workflow Actions and notificati
 
 Actions are very adaptable and you can specify when the Action occurs: before entering the node, after exiting a node, or once a task node is assigned. For example, when a reviewer rejects a Web Content article, a Workflow Action sets the asset's status as _Pending_ and automatically reassigns the article to the original author.
 
-![You can add an Action to a Task node.](./configuring-workflow-actions-and-notifications/images/01.png)
-
 Workflow Notifications are sent to tell task assignees that the workflow needs attention or to update asset creators on the status of the process. They can be sent for tasks or any other type of node in the workflow.
 
-![You can add an Notification to a Task node.](./configuring-workflow-actions-and-notifications/images/02.png)
+![You can add actions and notifications to task nodes.](./configuring-workflow-actions-and-notifications/images/07.png)
 
 However, not every node requires a Workflow Action or a notification. Generally, Start and End nodes do not have actions or notifications, unless you want to notify the original author that the review process has begun or ended.
 

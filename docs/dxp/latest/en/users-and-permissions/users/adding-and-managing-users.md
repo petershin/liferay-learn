@@ -15,23 +15,22 @@ Core user management activities include adding, editing, and deleting users. The
 
 1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and go to *Control Panel* &rarr; *Users and Organizations*.
 
-1. In the *Users* tab, click the *New* button.
+1. In the Users tab, click the *New* button.
 
    ![Add users from the Users and Organizations section of the control panel.](./adding-and-managing-users/images/01.png)
 
-1. Fill out the add user form and click *Save*. At a minimum, provide a screen name, first name, last name, and email address for the user.
+1. Fill out the Add User form and click *Save*. At a minimum, provide a screen name, first name, last name, and email address for the user.
 
-    ```{note}
-    Screen names and email addresses are not interchangeable. A screen name cannot contain an `@` symbol because it is used in the URL to a user's pages.
+    !!! note
+        Screen names and email addresses are not interchangeable. A screen name cannot contain an `@` symbol because it is used in the URL to a user's pages.
 
-    The add user functionality is split over several independent forms. Save the first form to create the User, and then you'll see a success message saying `Success. Your request completed successfully.`
-    ```
+        The add user functionality is split over several independent forms. Save the first form to create the user, and then you'll see a success message saying `Success. Your request completed successfully.`
 
 You can add additional information after creating the user.
 
 ### Setting Passwords for New Users
 
-When you create a user, Liferay DXP generates their password. If a [mail server was set up](../../installation-and-upgrades/setting-up-liferay/configuring-mail.md), Liferay DXP sends an email message with the user's new password.
+When you create users, Liferay generates their passwords. If a [mail server was set up](../../installation-and-upgrades/setting-up-liferay/configuring-mail.md), Liferay sends an email message with the users' new passwords.
 
 If you haven't set up a mail server, click the *Password* item from the general menu and manually set a password for your new user. Enter the new password twice.
 
@@ -41,7 +40,7 @@ If you haven't set up a mail server, click the *Password* item from the general 
 
 1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and go to *Control Panel* &rarr; *Users and Organizations*.
 
-1. Click the *Actions* button (![Actions](../../images/icon-actions.png)) next to a user.
+1. Click *Actions* (![Actions](../../images/icon-actions.png)) next to a user.
 
    The following options are available:
 
@@ -80,7 +79,7 @@ To deactivate a user,
 
 1. Select *Deactivate*.
 
-The user is now deactivated and can no longer log in. Users can be reactivated by finding them in the users table (be sure you're filtering the table results by deactivated users), clicking the *Actions* (![Actions](../../images/icon-actions.png)) button, and selecting *Activate*. There's no confirmation window for activation: they're automatically restored to their former status after activation.
+The user is now deactivated and can no longer log in. Users can be reactivated by finding them in the users table (be sure you're filtering the table results by deactivated users), clicking *Actions* (![Actions](../../images/icon-actions.png)), and selecting *Activate*. There's no confirmation window for activation: users are automatically restored to their former status after activation.
 
 ### Deleting Users
 
@@ -102,7 +101,7 @@ You can impersonate users to view the system as the user would see it. This help
 
 1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and go to *Control Panel* &rarr; *Users and Organizations*. 
 
-1. Locate the user to impersonate and click the *Actions* (![Actions](../../images/icon-actions.png)) button next to the user.
+1. Locate the user to impersonate and click *Actions* (![Actions](../../images/icon-actions.png)) next to the user.
 
 1. Click *Impersonate User*.
 
@@ -110,7 +109,7 @@ This opens another browser window logged in as that user.
 
 ## Resetting a User Password
 
-The add user functionality includes a *Require Password Reset* check box at the bottom of the password form. The default password policy prevents administrators from de-selecting this option. You can, however, modify the default password policy to make this box usable.
+The Add User functionality includes a *Require Password Reset* check box at the bottom of the password form. The default password policy prevents administrators from de-selecting this option. You can, however, modify the default password policy to make this box usable.
 
 1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and go to *Control Panel* &rarr; *Password Policies*.
 

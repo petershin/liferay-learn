@@ -181,7 +181,7 @@ Service Builder generates Java classes, database scripts, and configuration file
 
 Here's an overview of the generated structure:
 
-````
+```
 liferay-y7g4
 ├── y7g4-api
 │   └── src
@@ -208,6 +208,7 @@ liferay-y7g4
             │       ├── sequences.sql
             │       └── tables.sql
             └── service.properties // Tracks the service build version
+```
 
 The model, persistence, and service implementation classes were generated to the Java package path `com.acme.y7g4`. Learn about the classes at [Understanding and Extending Generated Classes](./understanding-and-extending-generated-classes.md).
 
@@ -229,7 +230,7 @@ The `module-hbm.xml` file specifies the Hibernate object relational map.
         <property access="com.liferay.portal.dao.orm.hibernate.LiferayPropertyAccessor" name="name" type="com.liferay.portal.dao.orm.hibernate.StringType" />
     </class>
 </hibernate-mapping>
-````
+```
 
 The `module-hbm.xml` file maps `Y7G4EntryImpl` objects to the `Y7G4_Y7G4Entry` table. For more information on mapping with Hibernate, visit [Hibernate](https://hibernate.org).
 

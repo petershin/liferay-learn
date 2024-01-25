@@ -51,7 +51,7 @@ Now, create and edit the Careers page.
 
 1. Double-click the second Dialect text component inside the collection item's container. Under the Mapping tab, change the field to `Location`.
 
-1. Change the Button's text to `More`.
+1. Change the button's text to `More`.
 
 1. Publish the page.
 

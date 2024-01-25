@@ -9,7 +9,7 @@ The Contact Us page has a form users should fill out if they want to contact the
 
 1. Navigate back to `http://glance.clarityvisionsolutions.com:8080/`.
 
-   You have to import the object definition outside of the site template.
+   You must import the object definition outside of the site template.
 
 1. Open the Global Menu (![Global Menu](../../images/icon-applications-menu.png)), select the Control Panel tab, and click *Object* under Objects.
 
@@ -19,7 +19,7 @@ The Contact Us page has a form users should fill out if they want to contact the
 
    The object definition has four fields (Name, Email Address, Phone, and Comment) and it appears under Object in the Control Panel tab of your Product Menu.
 
-1. Navigate back to your site template by opening the *Global Menu*, navigating to the Control Panel tab, clicking *Site Templates*, and clicking on the name of your site template.
+1. Navigate back to your site template by opening the *Global Menu*, navigating to the *Control Panel* tab, clicking *Site Templates*, and clicking on the name of your site template.
 
 Next, create the Contact Us page and add a form container fragment to it.
 

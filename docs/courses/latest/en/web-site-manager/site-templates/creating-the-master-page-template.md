@@ -37,7 +37,7 @@ The header composition is almost complete. Add the background image and the miss
 
 1. Under Image, click the + icon, open the *Master Page Assets* folder and select the `glance-white-logo.svg` image.
 
-   The menu displays are going to be set later. Ignore the warning for now.
+   The menu displays are set later. Ignore the warning for now.
 
 Your custom header is ready.
 
@@ -49,13 +49,13 @@ Add a background image, the logo, and organize the texts in your footer.
 
 1. To add the background image, click the *Footer container*. On the right, select the *Styles* tab. Under Background, click Change Image/Select Image. In the Master Page Assets folder, select `footer-background.svg`.
 
-Now, let's organize the top grid. First, add the logo to the footer:
+Now you'll organize the top grid. First, add the logo to the footer:
 
 1. In the first grid module, double-click the *Image* fragment (this selects the image-square inside the Image fragment). On the right, select the *Image Source* tab.
 
 1. Under Image, click the + icon, open the *Master Page Assets* folder, and select the `glance-white-logo.svg` image.
 
-   You can also click the `image-square` component twice to open the modal where you select the image (or click the Image fragment three times).
+   You can also click the `image-square` component twice to select the image (or click the Image fragment three times).
 
    ![Use the media you imported to complete your footer.](./creating-the-master-page-template/images/04.png)
 
@@ -73,15 +73,15 @@ Third, create a section where the user can subscribe to the company's mailing li
 
 1. Change the Sub-title heading under it to `Receive updates, promotions, and more.`
 
-1. Change the Button's content to `Subscribe`.
+1. Change the button's content to `Subscribe`.
 
 Now, it's time to organize the bottom grid:
 
-1. Change the Heading's contents to `Privacy Policy`, `Terms of Use`, and `Site Map`.
+1. Change the heading's contents to `Privacy Policy`, `Terms of Use`, and `Site Map`.
 
 1. In the second module, change the Paragraph to `© 2024 Clarity, Inc. All Rights Reserved.`
 
-   This is how the footer should look like once it's complete.
+   This is how the footer should look once it's complete.
 
    ![Change the footer's contents.](./creating-the-master-page-template/images/05.png)
 

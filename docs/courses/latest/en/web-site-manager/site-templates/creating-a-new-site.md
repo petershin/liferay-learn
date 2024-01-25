@@ -9,29 +9,25 @@ But, before you do that, fix the navigation menu in the footer used in the Main 
 
 ## Creating the Navigation Menu and Configuring the Menu Display
 
-Before we start, create some blank pages or populate them, if you prefer.
-
 Create the following pages: Profile, Manage Account, FAQ, Knowledge Base, and Resources. You'll use those pages to create your navigation menus.
-
-Now, let's create the navigation menus.
 
 1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)) and select *Site Builder* &rarr; *Navigation Menus*.
 
 1. Click *Add* (![Add icon](../../images/icon-add.png)) and name it `The Company Navigation`.
 
-1. Click *Add* and select *Page*. In the modal that opens, select the pages you created during this module: About Us, Contact Us, and Careers. Click *Select*.
+1. Click *Add* and select *Page*. Select the pages you created during this module: About Us, Contact Us, and Careers. Click *Select*.
 
-Create the other navigation menus. One is called `My Account Navigation` and it contains the Profile and the Manage Account pages. The other is called `Help Center Navigation` and it contains the FAQ, Knowledge Base, and Resources pages.
+Create the other navigation menus. One is called `My Account Navigation`, and it contains the Profile and the Manage Account pages. The other is called `Help Center Navigation` and it contains the FAQ, Knowledge Base, and Resources pages.
 
-The next step is to create a primary navigation to use in the menu located in the header:
+Next, you'll create a primary navigation to use in the menu located in the header:
 
 1. Create a navigation menu and call it `Primary Navigation`.
 
-1. Click *Add* and, instead of selecting Page, select Submenu. Name it `My Account`. Add two more submenus and name them `The Company` and `Help Center`.
+1. Click *Add* and select *Submenu*. Name it `My Account`. Add two more submenus and name them `The Company` and `Help Center`.
 
-1. Click *Actions* (![Actions icon](../../images/icon-actions.png)) beside My Account and select *Add Child* &rarr; Page. Select the Profile and the Manage Account pages.
+1. Click *Actions* (![Actions icon](../../images/icon-actions.png)) beside My Account and select *Add Child* &rarr; Page. Select the *Profile* and the *Manage Account* pages.
 
-1. Repeat the process with the other submenus. Add the children pages as you created the other navigation menus.
+1. Repeat the process with the other submenus. Add the child pages as you created the other navigation menus.
 
    The Company: About Us, Contact Us, and Careers.
    Help Center: FAQ, Knowledge Base, and Resources.
@@ -58,11 +54,11 @@ Configure the navigation menus in the other menu displays just like in the video
 
 ![Configure the Menu Displays in your master page.](./creating-a-new-site/images/02.gif)
 
-Your menus should look like this once you are done:
+Your menus should look like this when finished: 
 
-![The Main master page with the menu displays configured.](./creating-a-new-site/images/03.png)
+![The Main master page has all menu displays configured.](./creating-a-new-site/images/03.png)
 
-The next step is to create a site based on the template you have just finished.
+Next, you'll create a site based on the template you just created.
 
 ## Creating a Site Based on the Template
 
@@ -74,7 +70,7 @@ The next step is to create a site based on the template you have just finished.
 
 1. Change the theme of your new site to the Dialect theme.
 
-1. (If you have problems with the menu in the header) Edit the Main master page, start configuring the Menu Display and select the appropriate Menu.
+1. If you have problems with the menu in the header, edit the Main master page, start configuring the Menu Display and select the appropriate Menu.
 
 Your new site is generated and you can use all the resources created within the Site Template or create new elements for your site! Repeat the same process and create the Clarity B2B site as well.
 

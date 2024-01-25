@@ -116,9 +116,8 @@ Specify the properties Liferay needs to connect with Elasticsearch, then run the
    docker run -it --memory 9g --name liferay --publish 8080:8080 --volume $(pwd)/dxp:/mnt/liferay [$LIFERAY_LEARN_PORTAL_DOCKER_IMAGE$]
    ```
 
-   ```{tip}
-   The above command assumes the `elasticsearch` container's IPv4 address is `172.17.0.2`. If it isn't, replace it with the correct value.
-   ```
+   !!! tip
+       The above command assumes the `elasticsearch` container's IPv4 address is `172.17.0.2`. If it isn't, replace it with the correct value.
 
 1. **Checkpoint:** Verify that the Elasticsearch connection is active in Control Panel &rarr; Configuration &rarr; Search.
 

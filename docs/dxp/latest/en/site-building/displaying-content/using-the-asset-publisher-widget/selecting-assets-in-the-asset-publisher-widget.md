@@ -47,15 +47,15 @@ You can use different options to select the assets in the Asset Publisher dialog
 
 Select this option to choose from your previously saved collections or collection providers. To learn more about collections, read [About Collections and Collection Pages](../../../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md).
 
- 1. Under Select Collection, click *Select*.
+1. Under Select Collection, click *Select*.
 
- 1. Select either the *Collections* or *Collections Providers* tab
+1. Select either the *Collections* or *Collections Providers* tab
 
- 1. Choose one of your existing collections or collection providers.
+1. Choose one of your existing collections or collection providers.
 
- 1. Click *Save*.
+1. Click *Save*.
 
- ![Click Select and choose from your saved collections.](selecting-assets-in-the-asset-publisher-widget/images/03.png)
+![Click Select and choose from your saved collections.](selecting-assets-in-the-asset-publisher-widget/images/03.png)
 
 ```{note}
 Developers can use collection providers to create specific collections with more advanced criteria. To learn more, read the information about [Creating an Information List Provider](https://help.liferay.com/hc/en-us/articles/360029067271-Creating-an-Information-List-Provider) in the [Info Framework](https://help.liferay.com/hc/en-us/articles/360029067251-Introduction-to-The-Info-Framework) developer documentation.
@@ -65,15 +65,26 @@ Developers can use collection providers to create specific collections with more
 
 Using the Dynamic asset selection, you can include assets in the Asset Publisher widget automatically, based on different criteria.
 
-  1. In the Source section, use the Asset Type drop-down menu to select your assets. Select a specific asset type or *Select More Than One* to choose from different types.
+1. In the Scope section, choose to display assets from an individual site or other sites.
 
-  1. In the Scope section, choose to display assets from an individual site or other sites.
+1. In the Source section, use the Asset Type drop-down menu to select your assets. Select a specific asset type or *Select More Than One* to choose from different types.
 
-  1. In the Filter section, define the rules for the assets in your Asset Publisher widget. You can define rules based on [categories](../../../content-authoring-and-management/tags-and-categories/defining-categories-and-vocabularies-for-content.md), [tags](../../../content-authoring-and-management/tags-and-categories/tagging-content-and-managing-tags.md), or keywords.
+   With some options (e.g. Web Content Article and Document) you may need to select a subtype (e.g. Web Content Article Structures and Document Type). You can also choose any subtype or select more than one subtype.
 
-  1. Include a Custom User Attribute if you have defined one.
+1. In the Filter section, define the rules for the assets in your Asset Publisher widget. You can define rules based on [categories](../../../content-authoring-and-management/tags-and-categories/defining-categories-and-vocabularies-for-content.md), [tags](../../../content-authoring-and-management/tags-and-categories/tagging-content-and-managing-tags.md), or keywords.
 
-  1. In the Ordering section, choose the presentation order of assets in the Asset Publisher widget.
+   You can filter items that Contain or Do Not Contain All or Any of the following Categories, Keywords, or Tags and specify the categories, keywords, or tags.
+
+1. Include a Custom User Attribute if you have defined one.
+
+   The assets are only displayed if they match the included custom user profile attributes.
+
+1. In the Ordering section, choose the presentation order of assets in the Asset Publisher widget.
+
+   Select a primary and a secondary field to order the assets by. You can also choose to order the assets in ascending or descending order.
+
+   !!! warning
+       When selecting web content articles as the asset type and ordering by a transatable web content structure field, all assets' field values should be localized when other languages are applied to the site. Only translated assets are ordered when another language is applied.
 
 ![Define the options for the dynamic asset collection, including Source, Scope, Filter, Custom User Attribute, and Ordering.](selecting-assets-in-the-asset-publisher-widget/images/04.png)
 
@@ -81,19 +92,19 @@ Using the Dynamic asset selection, you can include assets in the Asset Publisher
 
 Here you can set parameters and manually filter specific assets:
 
- 1. In the Scope section, choose to display assets from an individual site or other sites.
+1. In the Scope section, choose to display assets from an individual site or other sites.
 
- 1. In the Asset Entries section, use the Select button to filter for specific types of assets.
+1. In the Asset Entries section, use the Select button to filter for specific types of assets.
 
- 1. For the type of asset you select, check the assets you want to include.
+1. For the type of asset you select, check the assets you want to include.
 
- 1. Click *Add*.
+1. Click *Add*.
 
- ![Here is an example of filtering for basic web content and manually selecting items](selecting-assets-in-the-asset-publisher-widget/images/05.png)
+![Here is an example of filtering for basic web content and manually selecting items](selecting-assets-in-the-asset-publisher-widget/images/05.png)
 
- ```{note}
- A new collection is created based on your selection.
- ```
+```{note}
+A new collection is created based on your selection.
+```
 
 ## Related Topics
 

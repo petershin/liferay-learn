@@ -1,6 +1,6 @@
 ---
 toc:
-  - ./site-templates/setting-up-the-environment.md
+  - ./site-templates/creating-a-site-template-and-uploading-files.md
 uuid: 61acac6f-ca72-4aae-ae13-4cef75a634a1
 ---
 # Site Templates

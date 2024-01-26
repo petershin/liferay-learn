@@ -3,7 +3,7 @@ uuid: 2b57d2ab-0644-431a-980e-0698ce7dbf9a
 ---
 # Working in the 50th Anniversary Publication
 
-The publication template is in place for Clarity's special events. Here, the publication administrator will create the publication, and the publication editors will begin working on its content.
+The publication template is in place for Clarity's special events. Now the publication administrator will create the publication, enabling the publication editors to begin working on its content.
 
 Preston Palmer is a publication administrator in the template, so log in with this user to create the 50th anniversary event's publication:
 
@@ -15,7 +15,7 @@ Preston Palmer is a publication administrator in the template, so log in with th
 
 1. Click _Create_.
 
-   Preston is automatically working in the new publication after it's created.
+   Preston is working in the new publication automatically after it's created.
 
    ![The site is ready for editing in the selected publication.](./working-with-the-50th-anniversary-publication/images/02.png)
 
@@ -23,7 +23,7 @@ Preston Palmer is a publication administrator in the template, so log in with th
 
 1. Sign in with Rex Randle. Rex has web content creation permission due to his job, Customer Advocacy Specialist.
 
-   **Email Address:** olivia.oneal@liferay.com
+   **Email Address:** rex.randle@liferay.com
 
    **Password:** learn
 
@@ -33,7 +33,7 @@ Preston Palmer is a publication administrator in the template, so log in with th
 
    * Title: Clarity is Turning 50!
    * Summary: Clarity is turning 50, so let's celebrate!
-   * Body: Check out our limited time only frames! Clarity turned 50, and we're excited to offer these frames while they last.
+   * Body: Check out our limited-time only frames! Clarity turned 50, and we're excited to offer these frames while they last.
    * Banner Image: <!-- We need one -->
 
 1. Click _Submit for Workflow_.
@@ -56,11 +56,11 @@ The content manager, Olivia O'Neal, must first review Rex's new content within t
 
    **Password:** learn
 
-1. Go to the review screen for the publication, click the user avatar and select _My Workflow Tasks_.
+1. Go to the review screen for the publication, click the user avatar, and select _My Workflow Tasks_.
 
    ![Workflow reviewers use My Workflow Tasks to manage workflow items.](./working-with-the-50th-anniversary-publication/images/05.png)
 
-   All workflow tasks assigned directly to a user are listed in the My Workflow Task widget's Assigned to Me tab.
+   All workflow tasks assigned directly to a user appear in the My Workflow Task widget's Assigned to Me tab.
 
 1. Click _Assigned to My Roles_.
 
@@ -103,10 +103,10 @@ Olivia O'Neal is a publication editor as configured in the template, so she can 
    * Replace the entire line that has the text "Save an average of $100 with vision insurance!" with this: 
 
        ```html
-		<span data-lfr-editable-type="text" data-lfr-editable-id="text">Learn about our 50th Anniversary limited time only frames!</span>
+         <span data-lfr-editable-type="text" data-lfr-editable-id="text">Learn about our 50th Anniversary limited time only frames!</span>
       ```
 
-   * In the next line, change the text "Learn How" to "Learn More".
+   * On the next line, change the text `Learn How` to `Learn More`.
 
 1. Click _Publish_.
 
@@ -132,7 +132,7 @@ Next, the announcement fragment in the master page must be replaced with the new
 
    * Title: Clarity is Turning 50!
    * Summary: Clarity is turning 50, so let's celebrate!
-   * Body: Check out our limited time only frames! Clarity turned 50, and we're excited to offer these frames while they last.
+   * Body: Check out our limited-time only frames! Clarity turned 50, and we're excited to offer these frames while they last.
    * Banner Image: <!-- We need one -->
 
 1. Go to _Site Menu_ (![Site Menu](../../images/icon-product-menu.png)) &rarr; _Site Builder_ &rarr; _Navigation Menus_ and click _Clarity Navigation Menu_.

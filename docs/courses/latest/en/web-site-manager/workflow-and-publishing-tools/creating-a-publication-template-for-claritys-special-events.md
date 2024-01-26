@@ -3,11 +3,11 @@ uuid: b820458c-bf9e-4242-b8f2-fad03afe1f75
 ---
 # Creating a Publication Template for Clarity's Special Events
 
+Clarity wants to celebrate its 50th anniversary with some special frames available only for a limited time. They must prepare content across the site to announce the event and show off the frames. This will result in a one-time content push for releasing the frames and marketing materials all at once. For this kind of dedicated content push, where multiple content creators can work together until the final version is ready, use [Publications](https://learn.liferay.com/en/w/dxp/site-building/publishing-tools/publications).
+
 Kyle Klein enables Publications, gives the users the right permissions (Content Manager Role), and then Preston Palmer creates the 50th Anniversary publication.
 
-Within the new publication, Rex Randle (must have the Content Manager role too, I guess) creates the new event (make sure it's under workflow, which currently is for FAQs). Olivia O'Neal approves the event, makes the change to the fragment on the master page, and adds the item to the navigation menu. 
-
-Clarity wants to celebrate its 50th anniversary with some special frames available only for a limited time. They must prepare content across the site to announce the event and show off the frames. This will result in a one-time content push for releasing the frames and marketing materials all at once. For this kind of dedicated content push, where multiple content creators can work together until the final version is ready, use [Publications](https://learn.liferay.com/en/w/dxp/site-building/publishing-tools/publications).
+Within the new publication, Rex Randle creates the new event (make sure it's under workflow, which currently is for FAQs). Olivia O'Neal approves the event, makes the change to the fragment on the master page, and adds the item to the navigation menu. 
 
 To enable publications in Liferay, 
 
@@ -23,7 +23,7 @@ To enable publications in Liferay,
 
    ![Enable publications with the toggle switch.](./creating-a-publication-template-for-claritys-special-events/images/01.png)
 
-   - Do not enable _Sandbox Only_. The publication users can select the publication to work on manually when they log in.
+   - Do not enable *Sandbox Only*. Publication users can select the publication to work on manually when they log in.
    - Do not enable *Allow Unapproved Changes*. In this scenario users must not publish unapproved changes to production.
 
 1. Click *Save* to save your configuration. You're redirected to the Publications application page, and the publications bar appears:
@@ -38,21 +38,21 @@ You can jump right in and create the publication, but Clarity is likely to have 
 
 1. Click *Actions* (![Actions](../../images/icon-actions.png)) &rarr; *Templates*.
 
-1. Click *New* and enter:
+1. Click *New* and enter
 
-   **Template Name:** _Special Event_
+   **Template Name:** *Special Event*
 
-   **Description:** _Create content in preparation for a special event_
+   **Description:** *Create content in preparation for a special event*
 
-1. Click _Default Template_ to set this template as the default for new publications.
+1. Click *Default Template* to set this template as the default for new publications.
 
-1. Expand _Publication Information_ and enter the Publication Name: _REPLACE THIS: ${CURRENT_USERNAME}, ${TODAY_DATE}_.
+1. Expand *Publication Information* and enter the Publication Name: *REPLACE THIS: ${CURRENT_USERNAME}, ${TODAY_DATE}*.
 
    See [Using Publication Templates](https://learn.liferay.com/en/w/dxp/site-building/publishing-tools/publications/using-publication-templates) for more information.
 
    ![Enter a name and description to use for publications created with the template.](./creating-a-publication-template-for-claritys-special-events/images/03.png)
 
-1. Expand _Publication Collaborators_ and click _Add Users_.
+1. Expand *Publication Collaborators* and click *Add Users*.
 
 1. In the Invite Users dialog, search for and add users to these publication roles:
 
@@ -64,9 +64,9 @@ You can jump right in and create the publication, but Clarity is likely to have 
 
    Importantly, publications roles only grant permission for viewing or managing the publication itself, and do not grant page and content editing permission. These permissions must be given explicitly. See [Assigning Roles to Publication Collaborators](https://learn.liferay.com/w/dxp/site-building/publishing-tools/publications/publications-permissions#assigning-roles-to-publication-collaborators) to see the permissions these roles provide their users.
 
-1. Click _Save_ and confirm that you'd like to invite these users.
+1. Click *Save* and confirm that you'd like to invite these users.
 
-1. Click _Create_ to finish adding the publication template.
+1. Click *Create* to finish adding the publication template.
 
 ![The publication template is ready for use.](./creating-a-publication-template-for-claritys-special-events/images/05.png)
 
@@ -76,6 +76,6 @@ Next: [create the publication and make the necessary content edits](./working-wi
 
 ## Relevant Concepts
 
-* [Enabling Publications](https://learn.liferay.com/w/dxp/site-building/publishing-tools/publications/enabling-publications)
-* [Using Publication Templates](https://learn.liferay.com/w/dxp/site-building/publishing-tools/publications/using-publication-templates)
-* [Collaborating on Publications](https://learn.liferay.com/w/dxp/site-building/publishing-tools/publications/collaborating-on-publications)
+- [Enabling Publications](https://learn.liferay.com/w/dxp/site-building/publishing-tools/publications/enabling-publications)
+- [Using Publication Templates](https://learn.liferay.com/w/dxp/site-building/publishing-tools/publications/using-publication-templates)
+- [Collaborating on Publications](https://learn.liferay.com/w/dxp/site-building/publishing-tools/publications/collaborating-on-publications)

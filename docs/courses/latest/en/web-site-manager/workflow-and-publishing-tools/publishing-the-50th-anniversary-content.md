@@ -11,7 +11,7 @@ Log in as Preston Palmer again. He's the publication administrator and the one w
 
    ![The 50th anniversary content is in place.](./publishing-the-50th-anniversary-content/images/01.png)
 
-1. Click _Schedule_ and choose today's date, and a time 2-5 minutes in the future.
+1. Click _Schedule_ and choose today's date and a time 2-5 minutes in the future.
 
    ![Schedule the publication for the perfect time.](./publishing-the-50th-anniversary-content/images/02.png)
 
@@ -21,7 +21,7 @@ Log in as Preston Palmer again. He's the publication administrator and the one w
 
    ![Clarity's 50th anniversary event is live.](./publishing-the-50th-anniversary-content/images/03.png)
 
-Congratulations! You’ve finished this module on workflow and publishing tools. The 50th anniversary has been properly celebrated with some special content. It's time to begin thinking about Clarity's next site for their retail portal, called Glance.
+Congratulations! You've finished this module on workflow and publishing tools. The 50th anniversary has been properly celebrated with some special content. It's time to begin thinking about Clarity's next site for their retail portal, called Glance.
 
 Module Five: [Site Templates](../site-templates.md).
 

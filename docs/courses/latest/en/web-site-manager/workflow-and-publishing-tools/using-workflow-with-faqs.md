@@ -3,7 +3,7 @@ uuid: 4d2bce66-7c41-423a-9cf8-9a01817e53eb
 ---
 # Approving FAQs with Workflow
 
-Clarity's initial site is in place and the first pieces of [content were added](../creating-content.md) by the content manager directly. It's time for other users to begin creating content for Clarity. To aid this effort, review processes are required to ensure the quality and consistency of published content. Liferay's workflow processes allow just such reviews. Clarity wants its customer advocacy specialist, Rex Randle, to turn common customer questions into FAQ entries, published after review and approval by the content manager, Olivia O'Neal. Preston Palmer, the site administrator, can manage workflows in the site to set this up.
+Clarity's initial site is in place and the first pieces of [content were added](../creating-content.md) by the content manager directly. It's time for other users to begin creating content for Clarity. To aid this effort, review processes are required to ensure the quality and consistency of published content. You'll use Liferay's workflow processes for these reviews. Clarity wants its customer advocacy specialist, Rex Randle, to turn common customer questions into FAQ entries, published after review and approval by the content manager, Olivia O'Neal. Preston Palmer, the site administrator, can manage workflows in the site to set this up.
 <!-- Too much info, some can be extracted to the introduction, and probably presented as a table -->
 
 1. Log in as Preston Palmer, the site administrator.
@@ -20,22 +20,23 @@ Clarity's initial site is in place and the first pieces of [content were added](
 
    ![Use the single approver workflow with web content articles.](./using-workflow-with-faqs/images/01.png)
 
-Now all web content articles added in the site will go through a review process as defined by the Single Approver workflow definition. Create a new FAQ to see how it works:
+Now all web content articles added in the site go through a review process as defined by the Single Approver workflow definition. Create a new FAQ to see how it works:
 
-1. Log in as Rex Randle, the custom advocacy specialist who fields customer questions at the `hello@claritvisionsolutions.com` email address (visible in the footer of the site).
+1. Log in as Rex Randle, the custom advocacy specialist who fields customer questions at the `hello@clarityvisionsolutions.com` email address (visible in the footer of the site).
 
    **Email Address:** rex.randle@liferay.com
 
    **Password:** learn
 
-1. Open the _Site Menu_ (![Site Menu](../../images/icon-product-menu.png)) then click _Content & Data_ &rarr; _Web Content_.
+1. Open the _Site Menu_ (![Site Menu](../../images/icon-product-menu.png)); then click _Content & Data_ &rarr; _Web Content_.
 
-1. Click the _Clarity Site FAQs_ article to open it for editing, and scroll to the last field group:
+1. Click the _Clarity Site FAQs_ article to open it for editing and scroll to the last field group.
 
 1. Click _Add FAQ_ (![Add](../../images/icon-add.png)) on the last field group:
 
    ![Add a new field group to the FAQ to add a new questions and answer.](./using-workflow-with-faqs/images/02.png)
-1. In the newly appearing FAQ, enter this question:
+
+1. In the FAQ, enter this question:
 
    ```
    Can I order just a single lens?
@@ -47,11 +48,11 @@ Now all web content articles added in the site will go through a review process 
    Not right now, but stay tuned. We plan to offer monocles in the future, and at that point we will also sell single lenses.
    ```
 
-1. Click *Submit for Workflow* at the top of the page.
+1. Click _Submit for Workflow_ at the top of the page.
 
    The button used to say _Publish_, but it changes when workflow is enabled.
 
-The content is in the workflow, marked as _Pending_ in the administrative UI. It's also marked as _Approved_, because the first version of the article, before Rex's recent edits and before workflow was even enabled, is available and published on the FAQs display page. The pending status means that the latest version of the item is unavailable for publication on the display page.
+The content is in the workflow, marked as _Pending_ in the administrative UI. It's also marked as _Approved_, because the first version of the article, before Rex's recent edits and before workflow was enabled, is available and published on the FAQs display page. The pending status means that the latest version of the item is unavailable for publication on the display page.
 
 ![Because an approved version of the content is available, the Approved and Pending statuses are displayed for the FAQ.](./using-workflow-with-faqs/images/03.png)
 
@@ -63,9 +64,9 @@ The content manager, Olivia O'Neal, must review Rex's new content.
 
    **Password:** learn
 
-1. Open the _Site Menu_ (![Site Menu](../../images/icon-product-menu.png)) then click _Content & Data_ &rarr; _Web Content_.
+1. Open the _Site Menu_ (![Site Menu](../../images/icon-product-menu.png)); then click _Content & Data_ &rarr; _Web Content_.
 
-1. In the page header, click the user avatar to to open Olivia's personal menu, and select _My Workflow Tasks_.
+1. In the page header, click the user avatar to to open Olivia's personal menu and select _My Workflow Tasks_.
 
    All workflow tasks assigned directly to a user are listed in the My Workflow Task widget's Assigned to Me tab.
 
@@ -81,7 +82,7 @@ The content manager, Olivia O'Neal, must review Rex's new content.
 
    Now the task appears in Assigned to Me, and the content review proceeds.
 
-1. Click the name of the pending _Clarity Site FAQs_ item in My Workflow Tasks. A preview of the FAQ appears, with the review status. The preview barely shows anything, so Olivia needs to look at it more closely:
+1. Click the name of the pending _Clarity Site FAQs_ item in My Workflow Tasks. A preview of the FAQ appears, with the review status. The preview barely shows anything, so Olivia must look at it more closely:
 
    ![The preview page is useful but too much content is clipped.](./using-workflow-with-faqs/images/05.png)
 
@@ -99,7 +100,7 @@ Since the submission is approved and there is only one reviewer in the Single Ap
 
 ![The added FAQ is published on the Clarity Site FAQs display page.](./using-workflow-with-faqs/images/07.png)
 
-This simple setup works, but the same workflow is used for all Clarity's web content articles. In reality, Clarity wants to allow FAQs to use one workflow and events to use another. To accomplish this, some changes are needed:
+This simple setup works, but the same workflow is used for all Clarity's web content articles. In reality, Clarity wants FAQs to use one workflow and events to use another. To accomplish this, some changes are needed:
 
 1. Move the Clarity Site FAQs article into a web content folder.
 
@@ -117,7 +118,7 @@ First put all FAQs into a web content folder:
 
 1. Enter the name _FAQs_ and click _Save_.
 
-1. Go back to the root folder, and check the box for _Clarity Site FAQs_.
+1. Go back to the root folder and check the box for _Clarity Site FAQs_.
 
 1. Click _Move_ (![Move](../../images/icon-move-folder.png)), then _Select_.
 
@@ -145,11 +146,11 @@ Next, configure the folder to accept only FAQs and configure workflow for the fo
 
    The FAQs folder uses the Single Approver workflow and only allows content with the FAQs structure.
 
-1. Repeat the procedure to put events into a folder named Events, and configure the folder to use the Single Approver workflow.
+1. Repeat the procedure to put events into a folder named Events and configure the folder to use the Single Approver workflow.
 
 1. Go to _Site Menu_ (![Site Menu](../../images/icon-product-menu.png)) then click _Configuration_ &rarr; _Workflow_. Disable the site level workflow configuration for web content articles.
 
-Now Clarity is using folder-based web content management, where each folder is configured to accept a certain type of content and use a certain workflow. 
+Now Clarity uses folder-based web content management, where each folder is configured to accept a certain type of content and use a certain workflow. 
 
 Next: [enable publications and create a publication template for Clarity's special events](./creating-a-publication-template-for-claritys-special-events.md).
 

@@ -47,9 +47,14 @@ These are the remaining settings for the Display Settings section:
 | Setting | Description |
 | :--- | :--- |
 | Abstract Length | Select the number of characters to display for abstracts. The default is `200`. Note this option is only available for the Abstracts display template. |
-| Asset Link Behavior | The default value is View On New Page, which displays the asset in the application that it belongs to. For example, a blog entry is displayed in Blogs where it was created. The Show Full Content value displays the full asset in the current Asset Publisher. |
+| Asset Link Behavior | The default value is View On New Page, which looks for a page where the asset is being displayed (e.g. Content Display widget, Display Page Template, or an Asset Publisher which manually selects the asset). The Show Full Content value displays the full asset in the current Asset Publisher. |
 | Number of Items to Display | The maximum number of assets that can be displayed. If pagination is enabled, this number represents the maximum number of assets that can be displayed per page. If no value is given, the default value is `20`. It is recommended to set the number of assets below `200` to improve performance.|
 | Pagination Type | The type of UI to display for pagination. Three options are available: *None* displays no pagination controls; *Simple* adds Previous and Next buttons for browsing through pages of assets; *Regular* adds more options and information including First and Last buttons, a drop-down selector for pages, the number of items per page, and the total number of results (assets displayed) |
+
+!!! note
+    When there are two Asset Publishers on the same page, one configured with the Dynamic Asset Selection and the View on New Page configuration, and the other with the Manual Asset Selection, clicking on the dynamic Asset Publisher directs users to the manual Asset Publisher, where the asset is being displayed. As a result, users are redirected to the same page.
+
+    However, when there is only one dynamic Asset Publisher with the View on New Page configuration and the asset is not being displayed anywhere, the Asset Link Behavior changes to "Show Full Content", which displays the full asset in the Asset Publisher widget itself.
 
 ![Several display settings are available for the Asset Publisher.](./configuring-asset-publisher-display-settings/images/01.png)
 

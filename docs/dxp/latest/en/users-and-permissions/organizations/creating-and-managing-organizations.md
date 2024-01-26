@@ -54,3 +54,9 @@ Organization Administrators can't make these Role assignments and can't manage t
 **Delete:** Removes this Organization. Make sure the Organization has no Users in it first. You'll be prompted for confirmation that you want to delete the Organization. If there are Users in the Organization or if there are sub-Organizations, you must remove the Users and delete the sub-Organizations before deleting the parent Organization.
 
 If you click the Organization name you can view both a list of Users who are members of this Organization and a list of all the sub-Organizations of this Organization.
+
+## Viewing Organizations
+
+{bdg-secondary}`Liferay DXP 2023.Q4+/Portal 7.4 GA102+`
+
+You can view the hierarchical structure of organizations by going into the *Organization Chart* tab. This displays all the currently available organizations. See [Using the new Organization Management Chart Widget](https://learn.liferay.com/w/commerce/creating-store-content/liferay-commerce-widgets/using-the-new-organization-management-chart-widget) for more information.

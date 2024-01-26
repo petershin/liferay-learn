@@ -9,7 +9,7 @@ taxonomy-category-names:
 ---
 # Adding Fields to Objects
 
-{bdg-secondary}`Liferay 7.4 2023.Q4+/GA107+`
+{bdg-secondary}`Liferay 7.4 2023.Q4+/GA102+`
 
 Fields are data definitions that represent database columns and store different [types of values](#field-types-ui-reference). By default, all objects include these system fields: Author, Create Date, External Reference Code, ID, Modified Date, and Status. But you can add new fields at any time.
 

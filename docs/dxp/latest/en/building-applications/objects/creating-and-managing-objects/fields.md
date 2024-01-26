@@ -18,7 +18,7 @@ taxonomy-category-names:
 ---
 # Fields
 
-{bdg-secondary}`Liferay 7.4 2023.Q4+/GA107+`
+{bdg-secondary}`Liferay 7.4 2023.Q4+/GA102+`
 
 Object fields are data definitions that represent database columns and store different types of values. All objects include default system fields, but you can [add custom fields](./fields/adding-fields-to-objects.md) to both draft and published objects.
 

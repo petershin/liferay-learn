@@ -9,7 +9,7 @@ taxonomy-category-names:
 ---
 # Formula Fields
 
-{bdg-secondary}`Liferay 7.4 2023.Q4+/GA107+`
+{bdg-secondary}`Liferay 7.4 2023.Q4+/GA102+`
 
 Formula fields store read-only values calculated using numeric fields in the object definition. Example use cases include calculating an employee's available PTO hours after subtracting their pending requests, calculating an agent's commission based on an order's total, and more.
 

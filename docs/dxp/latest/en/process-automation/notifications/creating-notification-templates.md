@@ -3,7 +3,7 @@ uuid: 23945a81-3dac-4a80-a0e3-a05b113bba7e
 ---
 # Creating Notification Templates
 
-{bdg-secondary}`Liferay 7.4 2023.Q4+/GA107+`
+{bdg-secondary}`Liferay 7.4 2023.Q4+/GA102+`
 
 With Notification Templates, you can design automated email and user notifications for Liferay services. Each template identifies a sender, recipients, and message content. While designing the template, you can search supported entities and add field references that insert their data dynamically into emails.
 

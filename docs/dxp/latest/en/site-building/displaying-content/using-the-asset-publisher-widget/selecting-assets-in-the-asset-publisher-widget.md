@@ -11,15 +11,15 @@ uuid: 8aba958f-0074-4664-bacd-fb45d164632e
 
 You can configure the Asset Publisher widget to select assets dynamically based on specific criteria, or manually, specifying exactly what assets to display. You can also display assets from [collections](../../../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md).
 
-```{note}
-On Liferay 7.2 and below, collections are referred to as [content sets](../../../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md#liferay-dxp-7-2).
-```
+!!! note
+    On Liferay 7.2 and below, collections are referred to as [content sets](../../../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md#liferay-dxp-7-2).
+
 
 1. Create a [new page](../../creating-pages/adding-pages/adding-a-page-to-a-site.md) or [edit an existing one](../../creating-pages/using-content-pages/adding-elements-to-content-pages.md)
 
-1. Click *Add* ( ![Add widget icon](../../../images/icon-add-widget.png) ) to open the Fragments and Widgets panel.
+1. While editing the page, look at the Fragments and Widgets tab on the left of the page editor and search for the *Asset Publisher* widget.
 
-1. Under the Content Display category in the Widgets tab, drag the *Asset Publisher* widget to a place on the page.
+1. Drag and drop the *Asset Publisher* widget into the editing area.
 
 1. Click *Actions* (![Actions icon.](../../../images/icon-actions.png)) at the top-right corner of the Asset Publisher widget.
 
@@ -27,25 +27,27 @@ On Liferay 7.2 and below, collections are referred to as [content sets](../../..
 
 1. Select *Configuration* to display the Configuration dialog.
 
-   Under Asset Selection, select how you want to filter your assets. For a description of these options, see [Asset Selection Options](#asset-selection-options).
+   Under [Asset Selection](#asset-selection-options), select the assets you want to show in your widget.
+
+   Under [Display Settings](./configuring-asset-publisher-display-settings.md), configure how to display your content.
+
+   Under [Subscriptions](./configuring-asset-publisher-subscriptions.md), configure email subscriptions and RSS feed subscriptions.
 
    ![The configuration window has different Asset Selection options under the Setup tab.](selecting-assets-in-the-asset-publisher-widget/images/02.png)
-
-1. Optionally, when [Dynamic](#dynamic) and [Manual](#manual) Asset Selection options are selected, a new collection can be created by clicking *Create a collection from this configuration*. This saves the configuration as a new [collection](../../../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md).
 
 1. Once you select your assets and configure the widget, click *Save*.
 
 ## Asset Selection Options
 
-You can use different options to select the assets in the Asset Publisher dialog's Asset Selection section:
+Assets are selected for display in the Asset Publisher widget using one of these selection methods:
 
-- [Collection](#collection)
-- [Dynamic](#dynamic)
-- [Manual](#manual)
+-  [Collection](#collection)
+-  [Dynamic](#dynamic)
+-  [Manual](#manual)
 
 ### Collection
 
-Select this option to choose from your previously saved collections or collection providers. To learn more about collections, read [About Collections and Collection Pages](../../../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md).
+Select this option to choose from your previously saved collections or collection providers. To learn more about collections, see [About Collections and Collection Pages](../../../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md).
 
 1. Under Select Collection, click *Select*.
 
@@ -57,13 +59,14 @@ Select this option to choose from your previously saved collections or collectio
 
 ![Click Select and choose from your saved collections.](selecting-assets-in-the-asset-publisher-widget/images/03.png)
 
-```{note}
+!!! note
 Developers can use collection providers to create specific collections with more advanced criteria. To learn more, read the information about [Creating an Information List Provider](https://help.liferay.com/hc/en-us/articles/360029067271-Creating-an-Information-List-Provider) in the [Info Framework](https://help.liferay.com/hc/en-us/articles/360029067251-Introduction-to-The-Info-Framework) developer documentation.
-```
 
 ### Dynamic
 
 Using the Dynamic asset selection, you can include assets in the Asset Publisher widget automatically, based on different criteria.
+
+![Define the options for the dynamic asset collection, including Source, Scope, Filter, Custom User Attribute, and Ordering.](selecting-assets-in-the-asset-publisher-widget/images/04.png)
 
 1. In the Scope section, choose to display assets from an individual site or other sites.
 
@@ -84,9 +87,9 @@ Using the Dynamic asset selection, you can include assets in the Asset Publisher
    Select a primary and a secondary field to order the assets by. You can also choose to order the assets in ascending or descending order.
 
    !!! warning
-       When selecting web content articles as the asset type and ordering by a transatable web content structure field, all assets' field values should be localized when other languages are applied to the site. Only translated assets are ordered when another language is applied.
+       When selecting web content articles as the asset type and ordering by a localized web content structure field, all assets' field values should be localized when other languages are applied to the site. Only translated assets are ordered when another language is applied.
 
-![Define the options for the dynamic asset collection, including Source, Scope, Filter, Custom User Attribute, and Ordering.](selecting-assets-in-the-asset-publisher-widget/images/04.png)
+1. (Optional) Click *Create a collection from this configuration*, enter a title, and click *Save* to save the configuration as a new [collection](../../../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md).
 
 ### Manual
 
@@ -100,11 +103,9 @@ Here you can set parameters and manually filter specific assets:
 
 1. Click *Add*.
 
-![Here is an example of filtering for basic web content and manually selecting items](selecting-assets-in-the-asset-publisher-widget/images/05.png)
+   ![Here is an example of filtering for basic web content and manually selecting items](selecting-assets-in-the-asset-publisher-widget/images/05.png)
 
-```{note}
-A new collection is created based on your selection.
-```
+1. (Optional) Click *Create a collection from this configuration*, enter a title, and click *Save* to save the configuration as a new [collection](../../../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md).
 
 ## Related Topics
 

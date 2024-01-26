@@ -45,7 +45,7 @@ When editing different sites in the same publication, keep in mind that all trac
 
 {bdg-link-primary}`[Release Feature](../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags)`
 
-{bdg-secondary}`Liferay 7.4 2023.Q3+/GA98+`
+{bdg-secondary}`Liferay 7.4 2023.Q3+/GA92+`
 
 If you navigate to an application that does not support Publications, Liferay indicates that changes in the application cannot be saved to a publication.
 
@@ -91,7 +91,7 @@ During review, you can select a change to view more details and access additiona
 
 {bdg-link-primary}`[Release Feature](../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags)`
 
-{bdg-secondary}`Liferay 7.4 2023.Q3+/GA98+`
+{bdg-secondary}`Liferay 7.4 2023.Q3+/GA92+`
 
 If a publication includes edits to a page, you can preview those changes alongside the original version of the page.
 
@@ -109,7 +109,7 @@ Once selected, you can view each page version individually or select Split View 
 
 {bdg-link-primary}`[Beta Feature](../../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
 
-{bdg-secondary}`Liferay 7.4 2023.Q3+/GA98+`
+{bdg-secondary}`Liferay 7.4 2023.Q3+/GA92+`
 
 While reviewing changes, you can move them to different publications. This provides greater flexibility when managing content:
 

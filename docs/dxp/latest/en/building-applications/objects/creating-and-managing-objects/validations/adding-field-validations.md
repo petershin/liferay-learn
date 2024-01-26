@@ -9,7 +9,7 @@ taxonomy-category-names:
 ---
 # Adding Field Validations
 
-{bdg-secondary}`Liferay 7.4 2023.Q3+/GA98+`
+{bdg-secondary}`Liferay 7.4 2023.Q3+/GA92+`
 
 Validations set rules for determining valid field entries. Each validation has its own trigger, conditions, and error message, which you can set via the Objects UI. You can define validations using [Groovy scripts](#using-groovy-validations) or [Liferay expressions](#using-expression-builder-validations).
 

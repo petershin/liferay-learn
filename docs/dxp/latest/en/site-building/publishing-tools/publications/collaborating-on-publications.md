@@ -81,7 +81,7 @@ Follow these steps to remove a collaborator from a publication.
 
 {bdg-link-primary}`[Beta Feature](../../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
 
-{bdg-secondary}`Liferay 7.4 2023.Q3+/GA98+`
+{bdg-secondary}`Liferay 7.4 2023.Q3+/GA92+`
 
 If you need to share publication changes with people who are not site users, you can enable link sharing for the publication.  
 

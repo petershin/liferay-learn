@@ -8,7 +8,7 @@ taxonomy-category-names:
 uuid: 71e441a1-8c7c-468f-a758-b4e1cb9d185d
 ---
 # Configuring Locked Pages
-{bdg-secondary}`Liferay DXP 2023.Q3+/Portal 7.4 GA98+`
+{bdg-secondary}`Liferay DXP 2023.Q3+/Portal 7.4 GA92+`
 
 <!-- The feature flag had been removed, but the commit was reverted: https://github.com/liferay/liferay-portal/commit/6313e4d18f4610d6c45009b33932d666113adfd7 - Eric -->
 

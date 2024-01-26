@@ -47,7 +47,7 @@ Once saved, a blank object draft is created without any configurations or data e
 
 ## Editing Object Drafts
 
-{bdg-secondary}`Liferay 7.4 2023.Q3+/GA98+`
+{bdg-secondary}`Liferay 7.4 2023.Q3+/GA92+`
 
 Before publishing an object, you can add elements and configure its settings. This includes adding fields, defining validations, setting a scope for its data, and more.
 

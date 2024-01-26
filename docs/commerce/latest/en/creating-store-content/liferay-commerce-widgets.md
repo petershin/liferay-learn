@@ -3,24 +3,32 @@ toc:
   - ./liferay-commerce-widgets/using-the-mini-cart-widget.md
   - ./liferay-commerce-widgets/using-the-price-range-facet-widget.md
   - ./liferay-commerce-widgets/using-the-product-downloads-widget.md
+  - ./liferay-commerce-widgets/using-the-new-organization-management-chart-widget.md
   - ./liferay-commerce-widgets/widget-reference.md
 uuid: fc52ae47-dee4-483f-a354-d6d7c8052630
 ---
 # Liferay Commerce Widgets
 
-```{toctree}
-:maxdepth: 3
+::::{grid} 2
+:gutter: 3 3 3 3
 
-liferay-commerce-widgets/using-the-mini-cart-widget.md
-liferay-commerce-widgets/using-the-price-range-facet-widget.md
-liferay-commerce-widgets/using-the-product-downloads-widget.md
-liferay-commerce-widgets/widget-reference.md
-```
+:::{grid-item-card}  Using the Mini Cart Widget
+:link: ./liferay-commerce-widgets/using-the-mini-cart-widget.md
+:::
 
-```{raw} html
-:file: ../landingpage_template.html
-```
+:::{grid-item-card}  Using the Price Range Facet Widget
+:link: /liferay-commerce-widgets/using-the-price-range-facet-widget.md
+:::
 
-```{raw} html
-:file: liferay-commerce-widgets/landing.html
-```
+:::{grid-item-card}  Using the Product Downloads Widget
+:link: ./liferay-commerce-widgets/using-the-product-downloads-widget.md
+:::
+
+:::{grid-item-card} Using the New Organization Management Chart Widget
+:link: ./liferay-commerce-widgets/using-the-new-organization-management-chart-widget.md
+:::
+
+:::{grid-item-card}  Widget Reference
+:link: ./liferay-commerce-widgets/widget-reference.md
+:::
+::::

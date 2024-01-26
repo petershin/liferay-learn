@@ -12,13 +12,12 @@ With Liferay Cloud, you can connect custom domains to environment services with 
 
 To do this, first register your custom domain with your environment's Load Balancer IP address. Then add the domain to the desired service via the Liferay Cloud console or the service's LCP.json file.
 
-```{warning}
-Changes or additions to custom domains can take up to 60 minutes to propagate.
-```
+!!! warning
+    Changes or additions to custom domains can take several hours to propagate.
 
-* [Registering a Custom Domain with an Environment IP](#registering-a-custom-domain-with-an-environment-ip)
-* [Adding a Custom Domain to a Liferay Cloud Service](#adding-a-custom-domain-to-a-liferay-cloud-service)
-* [Verifying the Status of a Custom Domain](#verifying-the-status-of-a-custom-domain)
+-   [Registering a Custom Domain with an Environment IP](#registering-a-custom-domain-with-an-environment-ip)
+-   [Adding a Custom Domain to a Liferay Cloud Service](#adding-a-custom-domain-to-a-liferay-cloud-service)
+-   [Verifying the Status of a Custom Domain](#verifying-the-status-of-a-custom-domain)
 
 ## Registering a Custom Domain with an Environment IP
 
@@ -44,9 +43,8 @@ When ready, the domain is reachable from any device and returns the standard `de
 
 Once a domain is ready, you can add it to your environment's services via the Liferay Cloud console or `LCP.json` files.
 
-```{important}
-A maximum of 50 custom domains can be added to an environment's services.
-```
+!!! important
+    A maximum of 50 custom domains can be added to an environment's services.
 
 Follow these steps to add custom domains to environment services via the Liferay Cloud console:
 
@@ -62,9 +60,8 @@ Follow these steps to add custom domains to environment services via the Liferay
 
 1. Click *Update Custom Domains* to finalize the addition.
 
-```{note}
-Adding custom domains via the Liferay Cloud console automatically uses a certificate provided by [Let's Encrypt](https://letsencrypt.org/) for all of them. If you want to use [custom SSL certificates](./load-balancer.md#custom-ssl) for your custom domains, then you must add them via the web server's `LCP.json` file instead.
-```
+!!! note
+    Adding custom domains via the Liferay Cloud console automatically uses a certificate provided by [Let's Encrypt](https://letsencrypt.org/) for all of them. If you want to use [custom SSL certificates](./load-balancer.md#custom-ssl) for your custom domains, then you must add them via the web server's `LCP.json` file instead.
 
 ### Adding a Custom Domain via LCP.json
 
@@ -72,44 +69,41 @@ Alternatively, you can replace the domains that an environment's service uses by
 
 ```json
 {
-    "id": "webserver",
-    "environments":
+  "id": "webserver",
+  "environments":
+  {
+    "uat":
     {
-        "uat":
-        {
-            "loadBalancer":
-            {
-                "customDomains": ["acme.com", "www.acme.com"]
-            }
-        }
-    } 
+      "loadBalancer":
+      {
+        "customDomains": ["acme.com", "www.acme.com"]
+      }
+    }
+  }
 }
 ```
 
-```{important}
-You must define a specific environment for each added custom domain, and you cannot use the same custom domain for multiple environments (except for [Disaster Recovery environments](../../troubleshooting/configuring-cross-region-disaster-recovery.md) in different regions). This is necessary for Liferay Cloud to properly generate certificates and route Users to the correct domain.
-```
+!!! important
+    You must define a specific environment for each added custom domain, and you cannot use the same custom domain for multiple environments (except for [Disaster Recovery environments](../../troubleshooting/configuring-cross-region-disaster-recovery.md) in different regions). This is necessary for Liferay Cloud to properly generate certificates and route users to the correct domain.
 
 Once a custom domain is added to your service and your changes are deployed, Liferay Cloud handles the routing.
 
-```{note}
-The number of custom domains can be capped by the quotas set during the provisioning process. Liferay Cloud restricts its own load balancer to 50 custom domains.
-```
+!!! note
+    The number of custom domains can be capped by the quotas set during the provisioning process. Liferay Cloud restricts its own load balancer to 50 custom domains.
 
 ## Verifying the Status of a Custom Domain
 
 You can verify the status of your custom domain in two ways:
 
-* Open a browser and enter the custom domain. When the endpoint is ready, it no longer returns a `default backend - 404` error or security warnings.
-* Check the status of the service's domain via the Liferay Cloud console by navigating to the environment's *Network* page.
+-  Open a browser and enter the custom domain. When the endpoint is ready, it no longer returns a `default backend - 404` error or security warnings.
+-  Check the status of the service's domain via the Liferay Cloud console by navigating to the environment's *Network* page.
 
 ![Figure 4: View all your endpoints and custom domains on the Network page.](./custom-domains/images/04.png)
 
 It may take some time to be able to verify a custom domain after configuration due to backend processes. Backend processes that impact the time for a custom domain to be verifiable include: adding a route to Liferay Cloud's load balancer, requesting an SSL server certificate through [Let's Encrypt](https://letsencrypt.org/), receiving a challenge from Let's Encrypt, and updating the load balancer with the certificate once it passes the challenge.
 
-```{important}
-If a user attempts to reach the domain during the challenge process, the browser displays security warnings that can be safely ignored.
-```
+!!! important
+    If a user attempts to reach the domain during the challenge process, the browser displays security warnings that can be safely ignored.
 
 Once backend processes are complete, Liferay Cloud's load balancer is updated with the SSL server certificate, and the service is reachable and secure.
 
@@ -117,5 +111,5 @@ See [Load Balancer](./load-balancer.md) to learn more about SSL certificates in 
 
 ## Related Topics
 
-* [Load Balancer](./load-balancer.md)
-* [Configuration Via LCP.json](../../reference/configuration-via-lcp-json.md)
+-  [Load Balancer](./load-balancer.md)
+-  [Configuration Via LCP.json](../../reference/configuration-via-lcp-json.md)

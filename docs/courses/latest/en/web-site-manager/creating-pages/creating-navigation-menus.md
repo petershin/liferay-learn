@@ -114,6 +114,6 @@ Next: Clarity's design team has requested a [re-design of the Home page](./desig
 
 ## Relevant Concepts
 
-* [Managing Site Navigation](https://learn.liferay.com/en/w/dxp/site-building/site-navigation/managing-site-navigation)
+* [Managing Page Hierarchies](https://learn.liferay.com/en/w/dxp/site-building/site-navigation/managing-page-hierarchies)
 * [Configuring Menu Displays](https://learn.liferay.com/en/w/dxp/site-building/site-navigation/configuring-menu-displays)
 * [Using the Navigation Menus Application](https://learn.liferay.com/en/w/dxp/site-building/site-navigation/using-the-navigation-menus-application)

@@ -13,13 +13,13 @@ When using an Asset Publisher widget, you can configure several display settings
 
 1. Create a [new page](../../creating-pages/adding-pages/adding-a-page-to-a-site.md) or [edit an existing one](../../creating-pages/using-content-pages/adding-elements-to-content-pages.md)
 
-1. Click *Add* ( ![Add widget icon](../../../images/icon-add-widget.png) ) to open the Fragments and Widgets panel.
+1. While editing the page, look at the Fragments and Widgets tab on the left of the page editor and search for the *Asset Publisher* widget.
 
-1. Under the Content Display category in the Widgets tab, drag the *Asset Publisher* widget to a place on the page.
+1. Drag and drop the *Asset Publisher* widget into the editing area.
 
 1. [Select your assets](./selecting-assets-in-the-asset-publisher-widget.md).
 
-1. Hover over the Asset Publisher and click *Options* ( ![Options icon](../../../images/icon-app-options.png) ) in the widget's menu &rarr; *Configuration*.
+1. Hover over the Asset Publisher and click *Options* (![Options icon](../../../images/icon-app-options.png)) in the widget's menu &rarr; *Configuration*.
 
 1. Follow the [Asset Publisher Display Configuration Reference](#asset-publisher-display-configuration-reference) and configure your widget.
 
@@ -52,7 +52,7 @@ These are the remaining settings for the Display Settings section:
 | Pagination Type | The type of UI to display for pagination. Three options are available: *None* displays no pagination controls; *Simple* adds Previous and Next buttons for browsing through pages of assets; *Regular* adds more options and information including First and Last buttons, a drop-down selector for pages, the number of items per page, and the total number of results (assets displayed) |
 
 !!! note
-    When there are two Asset Publishers on the same page, one configured with the Dynamic Asset Selection and the View on New Page configuration, and the other with the Manual Asset Selection, clicking on the dynamic Asset Publisher directs users to the manual Asset Publisher, where the asset is being displayed. As a result, users are redirected to the same page.
+    When two Asset Publishers are in the same page, one configured with the Dynamic Asset Selection and the View on New Page configuration, and the other with the Manual Asset Selection, clicking on the dynamic Asset Publisher directs users to the manual Asset Publisher, where the asset is being displayed. As a result, users are redirected to the same page.
 
     However, when there is only one dynamic Asset Publisher with the View on New Page configuration and the asset is not being displayed anywhere, the Asset Link Behavior changes to "Show Full Content", which displays the full asset in the Asset Publisher widget itself.
 
@@ -60,9 +60,7 @@ These are the remaining settings for the Display Settings section:
 
 ### Set and Enable Options
 
-Many of these, such as printing, flags, ratings, comments, comment ratings, and social bookmarks work the same way they do in other applications.
-
-These are the available Set and Enable options:
+Many of these options, such as printing, flags, ratings, comments, comment ratings, and social bookmarks work the same way they do in other applications.
 
 | Setting | Description |
 | :--- | :--- |
@@ -78,9 +76,9 @@ These are the available Set and Enable options:
 
 ![There are several options that you can enable.](./configuring-asset-publisher-display-settings/images/02.png)
 
-```{tip}
-An alternate way to add flags, comments, and ratings to a page is through the Page Flags, Page Comments, and Page Ratings applications. Add the applications in the appropriate location near the asset that should have feedback.
-```
+!!! tip
+    An alternate way to add flags, comments, and ratings to a page is through the Page Flags, Page Comments, and Page Ratings applications. Add the applications in the appropriate location near the asset that should have feedback.
+
 ### Metadata
 
 This section specifies what metadata to display with the asset entry. Move metadata from the Available box to the Current box to include it.

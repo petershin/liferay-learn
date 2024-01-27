@@ -1,4 +1,9 @@
 ---
+taxonomy-category-names:
+- Development and Tooling
+- Data Frameworks
+- Liferay Self-Hosted
+- Liferay PaaS
 uuid: 8eee6c96-e82a-48c6-9c5d-3d6effe116fc
 ---
 # Understanding and Extending Generated Classes

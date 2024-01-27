@@ -1,19 +1,19 @@
 # 関連REST APIの利用
 
-{bdg-secondary}`Liferay 7.4 U70+/GA70+`.
+{bdg-secondary}`liferay 7.4 U70+/GA70+`.
 
 カスタムオブジェクトやシステムオブジェクトに関連を追加すると、Liferayはそれらの関連にアクセスするためのRESTエンドポイントを生成します。 エントリーの関連付けや関連付けの解除、エントリーの関連エントリーを返すことができます。 これらのエンドポイントは、1対多の関連では親オブジェクトに、多対多の関連では両方のオブジェクトに追加されます。
 
-続行するには、新しいLiferay 7.4インスタンスを [セットアップ](#setting-up-a-liferay-instance) し、提供されたチュートリアルコードを [準備](#preparing-the-sample-code) します。 その後、スクリプトを実行してオブジェクトエントリーを作成し、互いの関連を管理します。
+先に進むには、 [セットアップ](#setting-up-a-liferay-instance) 新しい Liferay 7.4 インスタンスをセットアップし、 [準備](#preparing-the-sample-code) 提供されたチュートリアルコードを準備します。 その後、スクリプトを実行してオブジェクトエントリーを作成し、互いの関連を管理します。
 
 ## Liferayインスタンスのセットアップ
 
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-次に、 [作成](../../creating-and-managing-objects/creating-objects.md) 関連する3つのカスタム・オブジェクトを作成する：
+次に、 [](../../creating-and-managing-objects/creating-objects.md) 関連する3つのカスタム・オブジェクトを作成する：
 
-1. **グローバルメニュー**(![グローバルメニュー](../../../../images/icon-applications-menu.png))を開き、 ［**コントロールパネル**］タブで［ **オブジェクト**］ をクリックします。
+1. _グローバルメニュー_ (![グローバルメニュー](../../../../images/icon-applications-menu.png))を開き、*［コントロールパネル］*タブで*［オブジェクト］*をクリックします。
 
 1. 3つのオブジェクトドラフトを作成します。
 
@@ -95,13 +95,13 @@ unzip liferay-f9m2.zip
 
 REST APIを使用して、オブジェクトのエントリーを追加し、その関連を管理します。
 
-1. liferay-f9m2`プロジェクトの`curl` フォルダに移動します。
+1. `liferay-f9m2`プロジェクトの`curl` フォルダに移動します。
 
    ```bash
    cd liferay-f9m2/curl
    ```
 
-1. `POST`コマンドを実行して、各オブジェクトに3つのエントリーを作成する。 これらのエントリーは、`[objectname]-[number]` という命名パターン（例：`able-one`）に従った、定義済みの外部参照コード（ERC）を持っている。
+1. `POST`コマンドを実行して、各オブジェクトに3つのエントリーを作成する。 これらのエントリーは、`[objectname]-[number]`の命名パターン（例：`able-one`）に従った定義済みの外部参照コード（ERC）を持つ。
 
    ```bash
    ./Able_POST_Batch.sh
@@ -155,7 +155,7 @@ REST APIを使用して、オブジェクトのエントリーを追加し、そ
    }
    ```
 
-1. `able-one`の ID と`baker-three`の ID を指定して`Able_DELETE_AbleToBaker_ById` を実行する。
+1. `      able-one`の ID と`baker-three`の ID を指定して`Able_DELETE_AbleToBaker_ById` を実行する。
 
    ```bash
    ./Able_DELETE_AbleToBaker_ById.sh {able-entry-id} {baker-entry-id}
@@ -222,7 +222,7 @@ REST APIを使用して、オブジェクトのエントリーを追加し、そ
    }
    ```
 
-1. `Charlie_GET_AbleToCharlie_ById`に `charlie-one` のIDを指定して実行する。
+1. `Charlie_GET_AbleToCharlie_ById`に`charlie-one`のIDを指定して実行する。
 
    ```bash
    ./Charlie_GET_AbleToCharlie_ById.sh {charlie-entry-id}
@@ -300,7 +300,7 @@ REST APIを使用して、オブジェクトのエントリーを追加し、そ
     ./Able_GET_ById.sh {able-entry-id}
     ```
 
-    このコマンドは `nestedFields` パラメータを使用して、関連する全てのベーカーとチャーリーのエントリーを返す。
+    このコマンドは `nestedFields` パラメータを使用して、関連するすべてのベーカーとチャーリーのエントリーを返す。
 
     ```json
     {
@@ -347,7 +347,7 @@ REST APIを使用して、オブジェクトのエントリーを追加し、そ
     }
     ```
 
-    `nestedFields`パラメータの詳細については、 [`nestedFields` を使って関連するエントリーを検索する](./using-nestedfields-to-query-related-entries.md) を参照のこと。
+    `nestedFields`パラメータの詳細については、 [Using nestedFields to Query Related Entries](./using-nestedfields-to-query-related-entries.md) を参照のこと。
 
 ## コードを調べる
 
@@ -377,6 +377,6 @@ REST APIを使用して、オブジェクトのエントリーを追加し、そ
 
 ## 関連トピック
 
-* [ヘッドレス・フレームワークの統合](../../understanding-object-integrations/using-custom-object-apis.md) 
-* [REST APIでネストされたフィールドを使う](./using-nestedfields-to-query-related-entries.md) 
-* [オブジェクトの関係の定義](../../creating-and-managing-objects/relationships/defining-object-relationships.md) 
+* [ヘッドレス・フレームワークの統合](../../understanding-object-integrations/using-custom-object-apis.md)
+* [REST APIでネストされたフィールドを使う](./using-nestedfields-to-query-related-entries.md)
+* [オブジェクトの関係の定義](../../creating-and-managing-objects/relationships/defining-object-relationships.md)

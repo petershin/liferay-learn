@@ -1,13 +1,13 @@
-# `nestedFields`を使って入力履歴を監査する
+# nestedFieldsを使った入力履歴の監査
 
-{bdg-secondary}`Liferay 7.4 U72+/GA72+`.
+{bdg-secondary}`liferay 7.4 U72+/GA72+`.
 
-オブジェクト定義に[enable entry history](../../creating-and-managing-objects/auditing-object-events.md#enabling-entry-history)を設定すると、REST APIで `nestedFields` パラメータを使用してエントリーイベントを監査できるようになる。nestedFields=auditEvents`をGETリクエストのパスに追加する（例：`http://localhost:8080/o/c/tickets/?nestedFields=auditEvents`）。
+[オブジェクト定義でエントリー履歴](../../creating-and-managing-objects/auditing-object-events.md#enabling-entry-history) を有効にすると、REST API で `nestedFields` パラメータを使用してエントリーイベントを監査できます。 GETリクエストのパスに`nestedFields=auditEvents`を追加する（例：`http://localhost:8080/o/c/tickets/?nestedFields=auditEvents`）。
 
-始めるには、 [セットアップ](#setting-up-a-liferay-instance) 新しい Liferay 7.4 インスタンスをセットアップし、 [用意する](#preparing-the-sample-code) 提供されたチュートリアルコードを準備します。 次に、 [スクリプトを実行する。](#using-the-sample-code) でエントリーを作成し、更新し、`nestedFields` パラメーターを使って変更点を問い合わせる。
+始めるには、 [セットアップ](#setting-up-a-liferay-instance) 新しい Liferay 7.4 インスタンスをセットアップし、 [](#preparing-the-sample-code) 提供されたチュートリアルコードを準備します。 次に、 [スクリプトを実行する。](#using-the-sample-code) でエントリーを作成し、更新し、`nestedFields` パラメーターを使って変更点を問い合わせる。
 
 ```{important}
-REST APIを使用してエントリーの履歴を表示するには、そのエントリーの `View` と `Object Entry History` の両方のパーミッションが必要です。 [権限設定フレームワークの統合](../permissions-framework-integration.md) を参照。
+REST APIを使用してエントリーの履歴を表示するには、そのエントリーの `View` と `Object Entry History` の両方のパーミッションが必要です。 [Permissions Framework Integration](../permissions-framework-integration.md) を参照のこと。
 ```
 
 ## Liferayインスタンスのセットアップ
@@ -19,19 +19,19 @@ REST APIを使用してエントリーの履歴を表示するには、そのエ
 
 ### 永続的監査メッセージ・プロセッサの有効化
 
-1. グローバルメニュー( [グローバルメニュー](../../../../images/icon-applications-menu.png) )を開きます。 &rarr; **コントロールパネル** タブ、 &rarr; **システム設定** .
+1. グローバルメニュー(![グローバルメニュー](../../../../images/icon-applications-menu.png))を開きます。 &rarr; _コントロールパネル_タブ、 &rarr; _システム設定_.
 
-1. [Security]で[**Audit**]をクリックし、[**Persistent Message Audit Message Processor**]タブに進みます。
+1. [Security]で[Audit]をクリックし、[Persistent Message Audit Message Processor]タブに進みます。
 
-1. **有効** をチェックする。
+1. *有効*をチェックする。
 
-1. ［**Save**］をクリックします。
+1. ［_保存_］をクリックします。
 
    ![Go to the Persistent Message Audit Message Processor tab and check Enabled.](./using-nestedfields-to-audit-entry-history/images/01.png)
 
 ### オブジェクト定義の作成
 
-1. **グローバルメニュー**(![グローバルメニュー](../../../../images/icon-applications-menu.png))を開き、 ［**コントロールパネル**］タブで［ **オブジェクト**］ をクリックします。
+1. _グローバルメニュー_ (![グローバルメニュー](../../../../images/icon-applications-menu.png))を開き、*［コントロールパネル］_タブで_［オブジェクト］*をクリックします。
 
 1. [Create](../../creating-and-managing-objects/creating-objects.md#creating-object-drafts) オブジェクトドラフト。
 
@@ -47,7 +47,7 @@ REST APIを使用してエントリーの履歴を表示するには、そのエ
    | :----- | :----- | :------- | :------- |
    | `Name` | `name` | テキストボックス | &#10004; |
 
-1. Detailsタブで、 **Enable Entry History** を切り替える。
+1. Detailsタブで、_Enable Entry History_を切り替える。
 
 1. [Publish](../../creating-and-managing-objects/creating-objects.md#publishing-object-drafts) オブジェクト。
 
@@ -180,13 +180,13 @@ unzip liferay-g4m3.zip
    }
    ```
 
-   auditEvents`配列はこれらの要素を含む：
+   `auditEvents`配列はこれらの要素を含む：
 
    * `auditFieldChanges`：更新されたフィールドの新旧の値。
    * `dateCreated`：イベントの日時。
    * `eventType`：イベントタイプ (`ADD`、`UPDATE`、`DELETE` など)。
 
-1. `Ables_GET_FromCompany`を実行する。
+1. `Ables_GET_FromCompany` を実行する。
 
    ```bash
    ./Ables_GET_FromCompany.sh able-one
@@ -284,5 +284,5 @@ unzip liferay-g4m3.zip
 
 ## 関連トピック
 
-* [オブジェクト定義イベントの監査](../../creating-and-managing-objects/auditing-object-events.md)
-* [`nestedFields` を使って関連するエントリーをクエリーする](./using-nestedfields-to-query-related-entries.md)
+* [オブジェクト・イベントの監査](../../creating-and-managing-objects/auditing-object-events.md)
+* [UnestedFields を使った関連エントリーのクエリー](./using-nestedfields-to-query-related-entries.md)

@@ -16,9 +16,9 @@ picklists/managing-picklist-permissions.md
 picklists/picklists-api-basics.md
 ```
 
-{bdg-secondary}`Liferay 7.4+`
+{bdg-secondary}`liferay 7.4+`
 
-Liferay の **picklists** はあらかじめ定義された文字列のリストで、名前とキーのペアで構成され、任意の数の項目を含むことができます。リストが[作成](./picklists/creating-picklists.md)されると、それを使ってオブジェクト定義に単一選択フィールドや複数選択フィールドを追加することができます。これらのフィールドは、[表示されるエントリーをフィルタリングする](./displaying-object-entries.md)、[カスタムエントリー状態を定義する](./creating-and-managing-objects/fields/adding-and-managing-custom-states.md)などに使用できます。ピックリストを使用して状態を定義する場合、[validation](./creating-and-managing-objects/validations/adding-field-validations.md)、[actions](./creating-and-managing-objects/actions/defining-object-actions.md)、[workflow processes](./enabling-workflow-for-objects.md)を使用して、各状態に対して複雑なビジネスロジックを実装できます。
+Liferay _picklists_は、名前とキーのペアで構成され、任意の数の項目を含むことができる文字列値の定義済みリストです。 リストが [](./picklists/creating-picklists.md) に作成されると、それを使ってオブジェクト定義に単一選択フィールドまたは複数選択フィールドを追加することができます。 これらのフィールドを使用して、 [表示されたエントリーをフィルターする](./displaying-object-entries.md) 、 [カスタム・エントリー状態を定義する](./creating-and-managing-objects/fields/adding-and-managing-custom-states.md) などができます。 ピックリストを使用してステートを定義する場合、 [バリデーション](./creating-and-managing-objects/validations/adding-field-validations.md) 、 [アクション](./creating-and-managing-objects/actions/defining-object-actions.md) 、 [ワークフロープロセス](./enabling-workflows-for-objects.md) を使用して、各ステートに複雑なビジネスロジックを実装できます。
 
 ::::{grid} 2
 :gutter: 3 3 3 3

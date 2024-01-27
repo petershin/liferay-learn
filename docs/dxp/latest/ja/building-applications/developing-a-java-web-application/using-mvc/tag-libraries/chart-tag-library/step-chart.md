@@ -1,52 +1,51 @@
 # ステップグラフ
 
-ステップグラフには、複数のデータセットが含まれています。 ステップグラフでは、データのポイント間に段差があり、階段に似ています。 各データ系列（`addColumns()`メソッドで作成）は、IDと値のセットを受け取る [`MultiValueColumn`オブジェクト](https://docs.liferay.com/ce/apps/frontend-taglib/latest/javadocs/com/liferay/frontend/taglib/chart/model/MultiValueColumn.html) の新しいインスタンスで定義されます。 次の手順に従って、ステップグラフを使用するようにポートレットを構成します。
+ステップグラフには、複数のデータセットが含まれています。 ステップグラフでは、データのポイント間に段差があり、階段に似ています。 各データシリーズ（`addColumns()`メソッドで作成される）は、 [`MultiValueColumn` オブジェクトの新しいインスタンスで定義される](https://resources.learn.liferay.com/reference/latest/en/dxp/javadocs/modules/apps/frontend-taglib/com.liferay.frontend.taglib.chart/com/liferay/frontend/taglib/chart/model/MultiValueColumn.html) 、IDと値のセットを取る。 次の手順に従って、ステップグラフを使用するようにポートレットを構成します。
 
-1. Chart taglibを`StepChartConfig`クラスと`MultiValueColumn`クラスとともにバンドルの`init.jsp`ファイルにインポートします。
+1. StepChartConfig`と`MultiValueColumn`クラスと一緒に chart taglib をバンドルの`init.jsp` ファイルにインポートする：
 
-    ```jsp
-    <%@ taglib prefix="chart" uri="http://liferay.com/tld/chart" %>
-    <%@ page import="com.liferay.frontend.taglib.chart.model.point.step.StepChartConfig" %>
-    <%@ page import="com.liferay.frontend.taglib.chart.model.MultiValueColumn" %>
-    ```
+   ```jsp
+   <%@ taglib prefix="chart" uri="http://liferay.com/tld/chart" %>
+   <%@ page import="com.liferay.frontend.taglib.chart.model.point.step.StepChartConfig" %>
+   <%@ page import="com.liferay.frontend.taglib.chart.model.MultiValueColumn" %>
+   ```
 
-1. 次のJavaスクリプトレットを`view.jsp`の先頭に追加します。
+1. 以下のJavaスクリプトレットを`view.jsp`の先頭に追加する：
 
-    ```java
-    <%
-    StepChartConfig _stepChartConfig = new StepChartConfig();
+   ```java
+   <%
+   StepChartConfig _stepChartConfig = new StepChartConfig();
 
-    _stepChartConfig.addColumns(
-      new MultiValueColumn("data1", 100, 20, 30),
-      new MultiValueColumn("data2", 20, 70, 100));
-    }
-    %>
-    ```
+   _stepChartConfig.addColumns(
+     new MultiValueColumn("data1", 100, 20, 30),
+     new MultiValueColumn("data2", 20, 70, 100));
+   %>
+   ```
 
-1. `<chart>` taglibを`view.jsp`に追加し、`config`属性の値として`_stepChartConfig`を渡します。
+1. `<chart>`taglib を`view.jsp` に追加し、`_stepChartConfig`を`config` 属性の値として渡す：
 
-    ```jsp
-    <chart:step
-      config="<%= _stepChartConfig %>"
-    />
-    ```
+   ```jsp
+   <chart:step
+     config="<%= _stepChartConfig %>"
+   />
+   ```
 
-![ステップグラフでは、データのポイント間に段差があり、階段に似ています。](./step-chart/images/01.png)
+![A step chart steps between the points of data, resembling steps.](./step-chart/images/01.png)
 
 必要に応じて、エリアステップグラフを使用することもできます。 エリアステップグラフは、ステップグラフでカバーされるエリアを強調表示します。
 
 ```jsp
-<chart:area-step 
-  config="<%= _stepChartConfig %>" 
+<chart:area-step
+  config="<%= _stepChartConfig %>"
 />
 ```
 
-![エリアステップグラフは、ステップグラフでカバーされるエリアを強調表示します。](./step-chart/images/02.png)
+![An area step chart highlights the area covered by a step graph.](./step-chart/images/02.png)
 
 これで、アプリのステップグラフを作成する方法がわかりました。
 
 ## 関連トピック
 
-* [折れ線グラフ](./line-chart.md)
+* [ラインチャート](./line-chart.md)
+* [スプラインチャート](./spline-chart.md)
 * [散布図](./scatter-chart.md)
-* [スプライングラフ](./spline-chart.md)

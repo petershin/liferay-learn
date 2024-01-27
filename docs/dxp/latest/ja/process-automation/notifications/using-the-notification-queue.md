@@ -1,44 +1,44 @@
-# 通知キューを使う
+# 通知キューの使用
 
-{bdg-secondary}`利用可能 Liferay 7.4 U75+/GA75+`
+{bdg-secondary}`Liferay 7.4 U75+/GA75+`
 
-Liferayは、Objectアクションによってトリガーされたメール通知を確認するためのNotification Queueアプリケーションを提供します。 通知の状態を確認し、必要に応じて再送信することができます。
+Liferayは、ObjectアクションによってトリガーされたEメール通知を確認するためのNotification Queueアプリケーションを提供します。 通知のステータスを確認し、必要に応じて再送信することができます。
 
-![通知キューアプリケーションでメール通知を確認する。](./using-the-notification-queue/images/01.png)
+![Review email notifications in the Notification Queue application.](./using-the-notification-queue/images/01.png)
 
-アプリケーションでは、各通知について、以下の内容を記載しています：
+申請書には、各通知について以下の詳細が記載されている：
 
-| 列     | Description                                                                                                                                           |
-|:----- |:----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 件名    | 通知の件名は、 [通知テンプレート](./creating-notification-templates.md)に設定されています。                                                                                    |
+| 列     | 説明                                                                                                                                                               |
+| :---- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 件名    | 通知の件名は、 [通知テンプレート](./creating-notification-templates.md) で設定される。                                                                                       |
 | トリガー元 | [通知アクションのトリガーを担当するオブジェクト](../../building-applications/objects/creating-and-managing-objects/actions/defining-object-actions.md#notification-actions) 。 |
-| 送信者   | 通知の送信者。これは [通知テンプレート](./creating-notification-templates.md)で設定されています。                                                                                 |
-| 宛先    | 通知の宛先は、通知テンプレート [で設定されている](./creating-notification-templates.md)。                                                                                     |
-| ステータス | 送信済み（**Sent**）か、送信中（**Unsent**）かの通知状態を示すものです。                                                                                                             |
+| 送信者   | 通知の送信者は、 [通知テンプレート](./creating-notification-templates.md) で設定される。                                                                                      |
+| 終了    | 通知の受信者は、 [通知テンプレート](./creating-notification-templates.md) で設定される。                                                                                      |
+| ステータス | 通知ステータスを示し、送信済み（_Sent_）か送信中（_Unsent_）かを示します。                                                                                                                     |
 
-**アクション** ボタン（![Actions Button](../../images/icon-actions.png)）をクリックすると、そのエントリーの **削除** または **通知を再送** することができます。
+エントリーの_アクション_ボタン(![アクションボタン](../../images/icon-actions.png))をクリックすると、そのエントリーの_削除_または_通知の再送_ができます。
 
-![エントリーを削除したり、通知を再送信したりする。](./using-the-notification-queue/images/02.png)
+![Delete entries or resend notifications.](./using-the-notification-queue/images/02.png)
 
-## 通知キューをクリアする
+## 通知キューのクリア
 
-デフォルトでは、Liferay は `43200` 分（つまり、30 日）ごとに通知キューをクリアします。 これは、ステータスに関係なく、キューにあるすべての通知を削除します。
+デフォルトでは、Liferayは`43200`分(つまり30日)ごとに通知キューをクリアします。 これは、ステータスに関係なく、キュー内のすべての通知を削除する。
 
-削除間隔を設定する、
+削除間隔を設定するには
 
-1. **グローバルメニュー**( ![Global Menu](../../images/icon-applications-menu.png) ) を開き、 **コントロールパネル** タブを開き、 **システム設定** をクリックします。
+1. ![グローバルメニュー](../../images/icon-applications-menu.png) を開き、[コントロールパネル] タブを開き、[システム設定] をクリックします。
 
-1. プラットフォーム」の下にある「**通知**」 をクリックします。
+1. プラットフォーム]で[通知]をクリックします。
 
-1. 通知キュー］で、削除操作の間隔を何分とするかを入力します。
+1. Notification Queue（通知キュー）で、削除操作の間隔を分単位で入力します。
 
-   間隔は、 `15` 分以上である必要があります。
+   間隔は15分以上でなければならない。
 
-   ![通知キュー］で、削除操作の間隔を何分とするかを入力します。](./using-the-notification-queue/images/03.png)
+   ![Under Notification Queue, enter the number of minutes between deletion operations.](./using-the-notification-queue/images/03.png)
 
-1. ［**Save**］ をクリックします。
+1. ［_保存_］をクリックします。
 
 ## 関連トピック
 
 * [通知テンプレートの作成](./creating-notification-templates.md)
-* [個人通知の設定](./configuring-personal-notifications.md)
+* [パーソナル通知の設定](./configuring-personal-notifications.md)

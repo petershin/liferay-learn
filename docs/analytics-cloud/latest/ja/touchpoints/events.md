@@ -1,7 +1,8 @@
 ---
 toc:
-- ./events/tracking-events.md
-- ./events/events-analysis.md
+  - ./events/tracking-events.md
+  - ./events/events-analysis.md
+  - ./events/events-descriptions.md
 ---
 # イベント
 
@@ -10,7 +11,9 @@ toc:
 
 events/tracking-events.md
 events/events-analysis.md
+events/events-description.md
 ```
 
-- [イベントの分析](./events/events-analysis.md)
-- [イベントの追跡](./events/tracking-events.md)
+- [イベント分析](./events/events-analysis.md) 
+- [イベントのトラッキング](./events/tracking-events.md) 
+- [イベント詳細](./events/events-descriptions.md) 

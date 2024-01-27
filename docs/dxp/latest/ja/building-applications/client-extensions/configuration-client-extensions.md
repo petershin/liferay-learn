@@ -1,25 +1,22 @@
 ---
 toc:
+  - ./configuration-client-extensions/instance-settings-yaml-configuration-reference.md
   - ./configuration-client-extensions/oauth-user-agent-yaml-configuration-reference.md
   - ./configuration-client-extensions/oauth-headless-server-yaml-configuration-reference.md
 ---
-# 構成 クライアント拡張
+# クライアント拡張の設定
 
-{bdg-primary}`Liferay Self-Hosted`
-{bdg-primary}`Liferay SaaS`
-{bdg-warning}`Liferay Cloud： セルフマネージド`
+{bdg-secondary}`liferay DXP 7.4 (self-hosted)`   {bdg-secondary}`Liferay Experience Cloud (SaaS)`   {bdg-unsupported}`Liferay Cloud：セルフマネージド`
 
-{bdg-secondary}`Liferay 7.4`
+Liferayのインスタンス設定は、クライアント拡張でデプロイ可能です。 例えば、OAuth2認証プロファイルを設定クライアント拡張としてデプロイし、認証を必要とする他のクライアント拡張を有効にできます。
 
-Liferay インスタンスコンフィギュレーションはクライアント拡張と一緒にデプロイできます。例えば、OAuth2認証プロファイルをクライアント拡張設定としてデプロイし、認証を必要とする他のクライアント拡張設定を有効にすることができます。
+## インスタンス設定 クライアント拡張機能
 
-## インスタンス設定 クライアント拡張
+{bdg-secondary}`利用可能な Liferay DXP 7.4 (セルフホスト)`  {bdg-secondary}`利用可能な Liferay Experience Cloud (SaaS)`
 
-{bdg-secondary}`Available Liferay DXP 7.4 (self-hosted)` {bdg-secondary}`Available Liferay SaaS`
+インスタンス設定クライアントエクステンションを使って、Liferayの様々な設定を行うことができます。 各コンフィギュレーションはPID（Persistent IDentity）によって参照される。
 
-インスタンス設定クライアントエクステンションを使用すると、さまざまな Liferay の設定を行うことができます。各構成は PID (Persistent IDentity) によって参照されます。
-
-インスタンス設定クライアント拡張は `client-extension.yaml` ファイルで指定します：
+`client-extension.yaml`ファイルにインスタンス設定のクライアント拡張子を指定する：
 
 ```yaml
 type: instanceSettings
@@ -27,7 +24,7 @@ type: instanceSettings
 
 ## OAuthヘッドレスサーバークライアント拡張
 
-クライアントエクステンションを使用すると、`Headless Server` クライアントプロファイルをあらかじめ設定した Liferay OAuth2 アプリケーションを構成することができます。この種の認証プロファイルは、特定のユーザーによって認可されていない API 呼び出しに必要です。
+クライアントエクステンションを使って、`Headless Server` クライアントプロファイルで事前に設定された Liferay OAuth2 アプリケーションを設定することができます。 この種の認証プロファイルは、特定のユーザーによって認証されていないAPI呼び出しに必要です。
 
 `client-extension.yaml`ファイルにOAuthヘッドレスサーバークライアントの拡張子を指定します：
 
@@ -37,7 +34,7 @@ type: oAuthApplicationHeadlessServer
 
 ### `oAuthApplicationHeadlessServer`の特別な動作
 
-OAuthヘッドレスサーバクライアントの拡張は、Liferayが **ルート** として提供するメタデータに依存します（ [Context-Sensitive Information](working-with-client-extensions.md#context-sensitive-information) を参照してください）。 このクライアントエクステンションでデプロイされた実行可能ワークロードは、実行する前にこのルートを待たなければならない。
+OAuthヘッドレスサーバクライアントの拡張は、Liferayが_ルート_として提供するメタデータに依存します（ [Context-Sensitive Information](working-with-client-extensions.md#context-sensitive-information) を参照してください）。 このクライアントエクステンションでデプロイされた実行可能ワークロードは、実行する前にこのルートを待たなければならない。
 
 以下は、`oAuthApplicationHeadlessServer` クライアント拡張がプロジェクトで定義されている場合に、環境変数 `LIFERAY_ROUTES_CLIENT_EXTENSION` で定義されるルートの例である：
 
@@ -65,7 +62,7 @@ OAuthヘッドレスサーバクライアントの拡張は、Liferayが **ル�
 
 ## OAuthユーザーエージェントクライアント拡張
 
-クライアントエクステンションを使用すると、`User Agent Application` クライアントプロファイルをあらかじめ設定した Liferay OAuth2 アプリケーションを構成することができます。このような認証プロファイルは、特定のユーザーによって許可されたAPIコール（例えば、他の[microservice-client-extensions](./microservice-client-extensions.md)を使ってLiferay APIにRESTコールをする場合など）に必要です。
+クライアントエクステンションを使用して、`User Agent Application` クライアントプロファイルで事前に設定された Liferay OAuth2 アプリケーションを設定することができます。 この種の認証プロファイルは、特定のユーザーによって認証されたAPI呼び出し（例えば、他の [マイクロサービスクライアント拡張](./microservice-client-extensions.md) を使用してLiferay APIにREST呼び出しを行うなど）に必要です。
 
 `client-extension.yaml`ファイルにOAuthユーザーエージェントクライアント拡張子を指定します：
 
@@ -75,7 +72,7 @@ type: oAuthApplicationUserAgent
 
 ### `oAuthApplicationUserAgent` の特別な動作
 
-OAuth ヘッドレスユーザエージェントクライアントの拡張は、Liferay が **ルート** として提供するメタデータに依存します（ [Context-Sensitive Information](working-with-client-extensions.md#context-sensitive-information) を参照してください）。 このクライアントエクステンションでデプロイされた実行可能ワークロードは、実行する前にこのルートを待たなければならない。
+OAuth ヘッドレスユーザエージェントクライアントの拡張は、Liferay が _ルート_ として提供するメタデータに依存します（ [Context-Sensitive Information](working-with-client-extensions.md#context-sensitive-information) を参照してください）。 このクライアントエクステンションでデプロイされた実行可能ワークロードは、実行する前にこのルートを待たなければならない。
 
 以下は、`oAuthApplicationUserAgent` クライアント拡張がプロジェクトで定義されている場合に、環境変数 `LIFERAY_ROUTES_CLIENT_EXTENSION` で定義されるルートの例である：
 
@@ -104,4 +101,4 @@ OAuth ヘッドレスユーザエージェントクライアントの拡張は�
 ## 関連トピック
 
 * [クライアント拡張機能の紹介](../client-extensions.md) 
-* [`client-extension.yaml` でクライアント拡張機能を設定する。](./working-with-client-extensions.md#configuring-client-extensions-in-client-extension-yaml)
+* [`client-extension.yaml`でクライアント拡張機能を設定する](./working-with-client-extensions.md#configuring-client-extensions-in-client-extension-yaml)

@@ -15,6 +15,8 @@
 * [ウェブコンテンツ](./tracking-custom-assets.md)
 * [カスタム](./tracking-custom-assets.md)
 
+各資産タイプのCSVレポートもダウンロードできます。 詳しくは [ダウンロードレポート](../reference/downloading-reports.md)をご覧ください。
+
 ![Each Asset has its own table.](assets/images/01.png)
 
 個々のアセットをクリックすると、そのアセットの分析データを示す概要ページが表示されます。 ［既知の訪問者］タブをクリックすると、アセットを操作した既知の訪問者のリストが表示されます。

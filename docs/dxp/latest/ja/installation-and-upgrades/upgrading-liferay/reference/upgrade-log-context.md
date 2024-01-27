@@ -1,32 +1,32 @@
 # アップグレードログコンテキスト
 
-{bdg-secondary}`利用可能な Liferay DXP 7.4 U72 / Liferay Portal 7.4 GA72`
+{bdg-secondary}`Liferay DXP 7.4 U72 / Liferay Portal 7.4 GA72`
 
 アップグレードログコンテキストを有効にして、コンソールログにアップグレード関連プロセスの識別子を表示します。 可能な識別子は以下の通り：
 
-   * `{upgrade.component=portal}`: ポータル関連のアップグレード処理用
+   * `{upgrade.component=portal}`: ポータルに関連するアップグレード処理用
    * `{upgrade.component=framework}`: アップグレードフレームワークのロジックに関連する処理用
-   * `{upgrade.component=<bundleSymbolicName>}.`モジュールに関するアップグレード処理
+   * `{upgrade.component=<bundleSymbolicName>}`: モジュール関連のアップグレード処理用
 
-ログは、 [アップグレードツール（](../upgrade-basics/using-the-database-upgrade-tool.md) ）を通じて、またはポータルのプロパティを使って起動時に有効にすることができます。
+ログは、 [アップグレードツール](../upgrade-basics/using-the-database-upgrade-tool.md) ）を通じて、またはポータルのプロパティを使って起動時に有効にすることができます。
 
-アップグレードツールを使う場合は、 `/tools/portal-tools-db-upgrade-client/portal-upgrade-ext.properties` ファイルで、 `upgrade.log.context.enabled=true` を設定します。
+アップグレードツールを使用している場合は、`/tools/portal-tools-db-upgrade-client/portal-upgrade-ext.properties`ファイルで `upgrade.log.context.enabled=true` を設定してください。
 
-起動時にアップグレードを有効にする場合は、 `{Liferay-Home}/portal-ext.properties` ファイルで、 `upgrade.log.context.enabled=true` を設定してください。
+起動時にアップグレードを有効にする場合は、`{Liferay-Home}/portal-ext.properties`ファイルで`upgrade.log.context.enabled=true` を設定してください。
 
-次に、 [`portal-impl/src/META-INF/portal-log4j.xml`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/META-INF/portal-log4j.xml) ファイルを `bundles/tomcat/webapps/ROOT/WEB-INF/META-INF` にコピーし、ファイル名を `portal-log4j-ext.xml`に変更する。 次に、アペンダーの定義を見つけます。
+次に、 [`portal-impl/src/META-INF/portal-log4j.xml`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/META-INF/portal-log4j.xml) ファイルを `bundles/tomcat/webapps/ROOT/WEB-INF/META-INF` にコピーし、ファイル名を `portal-log4j-ext.xml` に変更する。 次に、アペンダーの定義を見つけます。
 
 ```
 <Appender name="CONSOLE" type="Console">
-    <Layout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} %-5p [%t][%c{1}:%L] %m%n" type="PatternLayout" />
+	<Layout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} %-5p [%t][%c{1}:%L] %m%n" type="PatternLayout" />
 </Appender>
 ```
 
-スレッドコンテキスト情報を出力するようにLog4jに指示する `%X`を含むように定義を変更します。
+スレッドコンテキスト情報を表示するようにLog4jに指示する`%X`を含むように定義を変更してください：
 
 ```
 <Appender name="CONSOLE" type="Console">
-    <Layout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} %-5p [%t][%c{1}:%L] %m %X%n" type="PatternLayout" />
+	<Layout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} %-5p [%t][%c{1}:%L] %m %X%n" type="PatternLayout" />
 </Appender>
 ```
 
@@ -48,16 +48,16 @@
 
 ## アップグレードレポートとともに有効にする
 
-[アップグレードレポート](./upgrade-report.md) がアップグレードログコンテキストとともに有効になっている場合、アップグレードレポートの内容もコンソールログに出力されます。 なお、このレポートは `upgrade_report.info` ファイルとは若干異なる形式で表示されます。
+[アップグレードレポート](./upgrade-report.md) がアップグレードログコンテキストとともに有効になっている場合、アップグレードレポートの内容もコンソールログに出力されます。 このレポートは、`upgrade_report.info`ファイルとは若干異なるフォーマットで表示されます。
 
 | アップグレード・レポート・キー                                 | 説明                                                              |
-|:----------------------------------------------- |:--------------------------------------------------------------- |
+| :---------------------------------------------- | :-------------------------------------------------------------- |
 | `upgrade.report.database.version`               | データベースのベンダーとバージョン.                                              |
 | `upgrade.report.document.library.storage.size`  | ドキュメントライブラリのサイズ。                                                |
 | `upgrade.report.errors`                         | アップグレードプロセス中にキャプチャされたエラーが配列されます。 同じエラーの発生元、クラス、発生回数でグループ化。      |
 | `upgrade.report.execution.date`                 | レポートが作成された日時。                                                   |
 | `upgrade.report.execution.time`                 | アップグレードが完了するまでの合計時間（秒）。                                         |
-| `upgrade.report.longest.upgrade.processes`      | 最も長い20のアップグレードプロセスを配列し、各プロセスの名前と所要時間を示す。                        |
+| `upgrade.report.longest.upgrade.processes`      | 最も長い20のアップグレードプロセスを配列し、それぞれのプロセス名と所要時間を示す。                      |
 | `upgrade.report.portal.expected.build.number`   | アップグレード実行後に予想される最終ビルド番号。                                        |
 | `upgrade.report.portal.expected.schema.version` | アップグレード実行後に予想されるスキーマのバージョン。                                     |
 | `upgrade.report.portal.final.build.number`      | アップグレード実行後の実際の最終ビルド番号。                                          |
@@ -77,4 +77,7 @@
 
 ## 関連トピック
 
-[アップグレードデータベースツールの使用](../upgrade-basics/using-the-database-upgrade-tool.md) [アップグレードレポート](./upgrade-report.md) [データベースアップグレードツールリファレンス](./database-upgrade-tool-reference.md) [MBeansによるアップグレードの監視](./monitoring-upgrades-with-mbeans.md)
+[アップグレードデータベースツールの使用](../upgrade-basics/using-the-database-upgrade-tool.md)
+[アップグレードレポート](./upgrade-report.md)
+[データベースアップグレードツールリファレンス](./database-upgrade-tool-reference.md)
+[MBeansによるアップグレードの監視](./monitoring-upgrades-with-mbeans.md)

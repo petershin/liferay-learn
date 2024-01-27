@@ -1,11 +1,11 @@
 # テーマスプライトマップクライアント拡張機能の使用
 
-{bdg-secondary}`利用可能な Liferay 7.4`
+{bdg-secondary}`liferay 7.4+`
 
-テーマスプライトマップクライアント拡張機能を使えば、ページ上のアイコンに使われるデフォルトの [Clay](https://clayui.com/docs/components/icon.html) スプライトマップを上書きすることができます。 [サンプルワークスペース](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace) から、クライアント拡張を構築し、デプロイします。
+テーマスプライトマップクライアント拡張機能を使えば、ページ上のアイコンに使われるデフォルトの [Clay](https://clayui.com/docs/components/icon.html) スプライトマップを上書きすることができます。 [サンプル・ワークスペース](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace) を使用して、クライアント・エクステンションのビルドとデプロイを開始します。
 
 ```{note}
-SVGスプライトマップは、いくつかのアイコンがグループ化された画像であり、それぞれ固有のIDを持つ。 SVGを読み込み、IDで個々のアイコンを参照することができる。 これにより、スプライト・マップを一度ダウンロードしてキャッシュすれば、すべてのサイト・アイコンを表示できるため、パフォーマンスが若干向上する。
+SVGスプライトマップは、いくつかのアイコンがグループ化された画像で、それぞれ固有のIDを持つ。 SVGを読み込み、IDで個々のアイコンを参照することができる。 これにより、スプライト・マップを一度ダウンロードしてキャッシュすれば、すべてのサイト・アイコンを表示できるため、パフォーマンスが若干向上する。
 ```
 
 ## 前提条件
@@ -15,13 +15,13 @@ SVGスプライトマップは、いくつかのアイコンがグループ化�
 1. Java（JDK8またはJDK11）をインストールします。
 
     ```{note}
-    対応するJDK、データベース、環境については、 [互換性マトリックス](https://help.liferay.com/hc/ja/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) を確認してください。 推奨されるJVMの設定については、[JVM設定](../../../../installation-and-upgrades/reference/jvm-configuration.md)を参照してください。 
+    サポートされているJDK、データベース、環境については、 [互換性マトリックス](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) を確認してください。 推奨されるJVM設定については、 [JVM Configuration](../../../../installation-and-upgrades/reference/jvm-configuration.md) を参照のこと。
     ```
 
 1. サンプルワークスペースをダウンロードし、解凍します。
 
    ```bash
-   curl -o com.liferay.sample.workspace-latest.zip https://repository.liferay.com/nexus/service/local/artifact/maven/content\?r\=liferay-public-releases\&g\=com.liferay.workspace\&a\=com.liferay.sample.workspace\&\v\=LATEST\&p\=zip 
+   curl -o com.liferay.sample.workspace-latest.zip https://repository.liferay.com/nexus/service/local/artifact/maven/content\?r\=liferay-public-releases\&g\=com.liferay.workspace\&a\=com.liferay.sample.workspace\&\v\=LATEST\&p\=zip
    ```
 
    ```bash
@@ -32,7 +32,7 @@ SVGスプライトマップは、いくつかのアイコンがグループ化�
 
 ## テーマ・スプライト・マップ・プロジェクトを検証する
 
-テーマのスプライトマップクライアント拡張はサンプルワークスペースの `client-extensions/liferay-sample-theme-spritemap-1/` フォルダにあります。 `client-extension.yaml` ファイルに定義されています。
+テーマのスプライトマップクライアント拡張はサンプルワークスペースの `client-extensions/liferay-sample-theme-spritemap-1/` フォルダにあります。 これは `client-extension.yaml` ファイルで定義されている：
 
 ```yaml
 liferay-sample-theme-spritemap-1:
@@ -41,9 +41,9 @@ liferay-sample-theme-spritemap-1:
     url: spritemap.svg
 ```
 
-クライアント拡張機能のIDは `liferay-sample-theme-spritemap-1` で、追加するスプライトマップファイルの種類など、テーマのスプライトマップクライアント拡張機能の主な設定が含まれています。 利用可能なプロパティの詳細については、 [テーマのスプライトマップYAML設定リファレンス](../theme-sprite-map-yaml-configuration-reference.md) 。
+クライアント拡張モジュールの ID は `liferay-sample-theme-spritemap-1` で、追加するスプライトマップファイルの種類など、テーマのスプライトマップクライアント拡張モジュールの主な設定を含んでいます。 利用可能なプロパティの詳細については、 [Theme Sprite Map YAML Configuration Reference](../theme-sprite-map-yaml-configuration-reference.md) 。
 
-また、以下の`assemble` YAMLブロックも含まれています。
+また、`assemble` YAML ブロックも含まれます：
 
 ```yaml
 assemble:
@@ -51,37 +51,37 @@ assemble:
       into: static
 ```
 
-これは、 `assets/` フォルダ内のすべてを、ビルドされたクライアント拡張`.zip` ファイルに静的リソースとして含めることを指定します。 テーマのスプライトマップクライアント拡張のSVGスプライトマップは、Liferayの静的リソースとして使用されます。
+これは、`assets/` フォルダにあるすべてのものが、ビルドされたクライアントの拡張子 `.zip` ファイルに静的リソースとして含まれるように指定します。 テーマのスプライトマップクライアント拡張のSVGスプライトマップは、Liferayの静的リソースとして使用されます。
 
 ```{important}
-サンプルプロジェクトの `assets/spritemap.svg` は Liferay で使われている [Clay icons](https://clayui.com/docs/components/icon.html) スプライトマップのコピーです。 Liferayで使われているすべてのアイコンはサンプルのスプライトマップに存在するので、UIに変更はありません。 
+サンプルプロジェクトの `assets/spritemap.svg` は Liferay で使われている [Clay icons](https://clayui.com/docs/components/icon.html) のスプライトマップのコピーです。 Liferayで使われているすべてのアイコンはサンプルのスプライトマップに存在するので、UIに変更はありません。
 
-スプライトマップクライアント拡張は、選択されたページのスプライトマップ全体を置き換えるので、アイコンの欠落を避けるために、必要なすべてのアイコンと対応するIDを用意してください。 
+スプライトマップクライアント拡張は、選択されたページのスプライトマップ全体を置き換えるので、アイコンの欠落を避けるために、必要なすべてのアイコンと対応するIDを用意してください。
 ```
 
 ## スプライトマップの修正
 
 特定のアイコンを変更するには、そのアイコンのIDを見つけなければならない。 これを見つけるには、HTML要素を検査すればよい。
 
-![ナビバーには9つのアイコンがある。](./using-a-theme-spritemap-client-extension/images/01.png)
+![The navbar contains nine icons.](./using-a-theme-spritemap-client-extension/images/01.png)
 
-以下は、トップ・ナビバーで使用されているアイコンのIDです。
+以下は、トップ・ナビバーで使用されているアイコンのIDである。
 
-| 数字 | アイコン                                                                  | ID                  |
-|:-- |:--------------------------------------------------------------------- |:------------------- |
-| 1  | ![編集アイコン](../../../../images/icon-edit-pencil.png)                    | 鉛筆                  |
-| 2  | ![歯車のアイコン](../../../../images/icon-cog.png)                           | 枘                   |
-| 3  | ![シミュレーションアイコン](../../../../images/icon-simulation.png)               | シミュレーション・メニュー・クローズド |
-| 4  | ![分析アイコン](../../../../images/icon-analytics.png)                      | Analytics           |
-| 5  | ![ABテストのアイコン](../../../../images/icon-ab-testing.png)                 | 試験                  |
-| 6  | ![情報アイコン](./using-a-theme-spritemap-client-extension/images/02.png)   | インフォサークル            |
-| 7  | ![グローバルメニューアイコン](../../../../images/icon-applications-menu.png)       | グリッド                |
-| 8  | ![検索アイコン](./using-a-theme-spritemap-client-extension/images/03.png)   | 検索                  |
-| 9  | ![ユーザーアイコン](./using-a-theme-spritemap-client-extension/images/04.png) | ユーザー                |
+| 数字 | アイコン                                                                          | ID                  |
+| :- | :---------------------------------------------------------------------------- | :------------------ |
+| 1  | ![Edit icon](../../../../images/icon-edit-pencil.png)                         | 鉛筆                  |
+| 2  | ![Cog icon](../../../../images/icon-cog.png)                                  | 枘                   |
+| 3  | ![Simulation icon](../../../../images/icon-simulation.png)                    | シミュレーション・メニュー・クローズド |
+| 4  | ![Analytics icon](../../../../images/icon-analytics.png)                      | Analytics           |
+| 5  | ![AB Testing icon](../../../../images/icon-ab-testing.png)                    | テスト                 |
+| 6  | ![Information icon](./using-a-theme-spritemap-client-extension/images/02.png) | インフォサークル            |
+| 7  | ![Global Menu icon](../../../../images/icon-applications-menu.png)            | グリッド                |
+| 8  | ![Search icon](./using-a-theme-spritemap-client-extension/images/03.png)      | 検索                  |
+| 9  | ![User icon](./using-a-theme-spritemap-client-extension/images/04.png)        | ユーザー                |
 
 鉛筆のアイコンを魚に交換する、
 
-1. `assets/spritemap.svg`内の `pencil` の ID に対応する `<symbol>` タグを探します。 これを表示するには、SVGファイルをテキストエディタで開く必要がある。
+1. `Assets/spritemap.svg`内の`pencil`の ID に対応する`<symbol>\` タグを見つける。 これを表示するには、SVGファイルをテキストエディタで開く必要があります。
 
    ```html
    <symbol id="pencil" viewBox="0 0 512 512">
@@ -90,7 +90,7 @@ assemble:
    </symbol>
    ```
 
-2. これをカスタムアイコンに置き換え、同じID（`pencil`）を与える。 魚のアイコンには、以下の `シンボル` を使用してください。
+1. これをカスタムアイコンに置き換え、同じID（`pencil`）を与える。 魚のアイコンには以下の`symbol`を使用する。
 
    ```html
    <symbol id="pencil" viewBox="0 26 100 48">
@@ -112,14 +112,14 @@ assemble:
 ../../gradlew clean deploy -Ddeploy.docker.container.id=$(docker ps -lq)
 ```
 
-これにより、クライアント拡張が構築され、Liferayの`deploy/`フォルダにzipをデプロイします。
+これでクライアント拡張機能がビルドされ、Liferay の `deploy/` フォルダに zip がデプロイされます。
 
 ```{note}
-クライアント拡張をLiferay Experience Cloudにデプロイするには、Liferay Cloud [コマンドラインツール](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool) を使って [`lcp deploy`](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool#deploying-to-your-liferay-cloud-environment) を実行します。
+クライアント拡張を Liferay Experience Cloud にデプロイするには、Liferay Cloud [Command-Line Tool](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool) を使用して [`lcp deploy`](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool#deploying-to-your-liferay-cloud-environment) を実行します。
 ```
 
 ```{tip}
-ワークスペース内のすべてのクライアント拡張を同時にデプロイするには、`client-extensions/`フォルダからコマンドを実行します。
+ワークスペース内のすべてのクライアントエクステンションを同時にデプロイするには、`client-extensions/` フォルダからコマンドを実行します。
 ```
 
 Liferayインスタンスのコンソールでデプロイメントを確認します。
@@ -131,31 +131,31 @@ STARTED liferay-sample-theme-spritemap-1_1.0.0
 ## 新しいスプライトマップをページで使用する
 
 ```{note}
-テーマスプライトマップクライアント拡張は現在 [release feature flag](../../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) の後ろにあります。 機能フラグを使用する前に、有効にする必要があります。
+テーマスプライトマップクライアント拡張機能は、現在 [リリース機能フラグ](../../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) の後ろにあります。 機能フラグを使用する前に、有効にする必要があります。
 ```
 
 配置したクライアント拡張機能を使用するようにページを設定します：
 
-1. ページに移動し、上部にある **Edit**(![Edit icon](../../../../images/icon-edit-pencil.png)) をクリックします。
+1. ページに移動し、上部の_Edit_（！[編集アイコン](../../../../images/icon-edit-pencil.png)）をクリックします。
 
-1. サイドバーの「ページデザインオプション」メニュー（![Page Design Options icon](../../../../images/icon-format.png)）に移動し、メニュー上部の「**設定**」（![Configuration icon](../../../../images/icon-cog3.png)）をクリックします。
+1. サイドバーで、ページデザインオプションメニュー（![ページデザインオプションアイコン](../../../../images/icon-format.png)）に移動し、メニュー上部の_Configuration_（![設定アイコン](../../../../../images/icon-cog3.png)）をクリックします。
 
-1. Theme Sprite Map Client Extensionセクションで、 **Add**(![Add](../../../../images/icon-duplicate.png)) をクリックします。
+1. Theme Sprite Map Client Extensionセクションで、_Add_(![Add](../../../../images/icon-duplicate.png))をクリックします。
 
-1. **Liferay Sample Theme Spritemap 1** .
+1. 新しく配置したスプライトマップ、_Liferay Sample Theme Spritemap 1_を選択します。
 
-   ![Liferay Sample Theme Spritemap 1 client extensionを選択し、Saveをクリックします。](./using-a-theme-spritemap-client-extension/images/05.gif)
+   ![Select the Liferay Sample Theme Spritemap 1 client extension and click Save.](./using-a-theme-spritemap-client-extension/images/05.gif)
 
-1. 下にスクロールして、 ［**保存**］ をクリックします。
+1. 下にスクロールして「保存」をクリックする。
 
-1. ページに戻ります。 ナビバーでは、編集機能の鉛筆 (![Edit icon](../../../../images/icon-edit-pencil.png)) の代わりに魚のアイコンが追加されました。
+1. ページに戻ります。 ナビバーでは、魚のアイコンが鉛筆（！[編集アイコン](../../../../images/icon-edit-pencil.png)）に代わり、編集機能を提供します。
 
-![スプライトマップの新しいアイコンがナビバーに表示されます。](./using-a-theme-spritemap-client-extension/images/06.png)
+![The new icon from the sprite map appears on the navbar.](./using-a-theme-spritemap-client-extension/images/06.png)
 
 ## 次のステップ
 
 あなたはテーマスプライトマップクライアント拡張機能を使うことに成功しました。 次は他のクライアント拡張タイプのデプロイメントを試してみましょう。
 
-* [CSSクライアント拡張の使用](./using-a-css-client-extension.md)
-* [JSクライアント拡張の使用](./using-a-javascript-client-extension.md)
-* [テーマのお気に入りアイコンクライアント拡張の使用](./using-a-theme-favicon-client-extension.md)
+* [CSSクライアント拡張機能を使う](./using-a-css-client-extension.md)
+* [JSクライアント・エクステンションの使用](./using-a-javascript-client-extension.md)
+* [テーマファビコンクライアント拡張機能を使う](./using-a-theme-favicon-client-extension.md)

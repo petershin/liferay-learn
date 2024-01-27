@@ -1,52 +1,52 @@
 # アセットライブラリコンテンツ
 
-{bdg-secondary}`Available for Liferay DXP/Portal 7.3+`
+{bdg-secondary}`liferay DXP/Portal 7.3+`.
 
 アセットライブラリは、コンテンツコラボレーションを合理化し、データ重複のリスクを軽減しながら、Liferayサイト間でコンテンツを共有するための便利な方法を提供します。 アセットライブラリのコンテンツを追加、表示、および管理するには、最初にライブラリのメニューページに移動します。
 
-1. **グローバルメニュー**（![Global Menu](../../images/icon-applications-menu.png)）を開き、 ［**アプリケーション**］ タブをクリックして、 ［**Asset Libraries**］ をクリックします。
+1. グローバルメニュー(![グローバルメニュー](../../images/icon-applications-menu.png))を開き、アプリケーション(_Applications_)タブをクリックし、アセットライブラリ(_Asset Libraries_)をクリックします。
 
-1. 目的のアセットライブラリの **名前** をクリックします。
+1. 目的のアセット・ライブラリの _名前_ をクリックします。
 
 ここから、ライブラリのアクティブなアプリケーションにアクセスして、コンテンツを作成および管理できます。 また、ステージングを有効にしたり、カスタムワークフローを実装したり、タグとカテゴリを使用してコンテンツを分類したり、コレクションを作成したりすることもできます。 <!--TASK: document Collections and Workflow for Asset Libraries-->
 
-![目的のアセットライブラリの名前をクリックして、そのメニューページにアクセスします。](./asset-library-content/images/01.png)
+![Click on the desired Asset Library's name to access its menu page.](./asset-library-content/images/01.png)
 
-## コンテンツを作成する
+## コンテンツの作成
 
 アセットライブラリにコンテンツを作成するには、最初にライブラリのメニューページに移動し、目的のアプリケーションをクリックします。 ここから、コンテンツを作成することは、サイトでコンテンツを作成することと基本的に同じです。 唯一の違いは、そのスコープとデフォルトのテーマ設定です。
 
-各タイプのコンテンツの作成の詳細は、 [コンテンツの作成と管理](../../content-authoring-and-management.html) を参照してください。
+[コンテンツのオーサリングと管理](../../content-authoring-and-management.html) 各タイプのコンテンツの作成に関する詳細については、記事を参照してください。
 
 ```{note}
-ライブラリのメニューページには、アクティブなアプリケーションのみが表示されます。 アプリケーションを有効にしたり無効にしたりするには、 [Configuring Asset Libraries](./creating-and-managing-asset-libraries.md#configuring-asset-libraries) を参照してください。
+ライブラリのメニューページには、アクティブなアプリケーションのみが表示されます。 アプリケーションをアクティブまたは非アクティブにするには、 [アセットライブラリの設定](./creating-and-managing-asset-libraries.md#configuring-asset-libraries) を参照してください。
 ```
 
 ## サイトでコンテンツを使用する
 
-アセットライブラリーにコンテンツを追加すると、 [接続済みサイト](./creating-and-managing-asset-libraries.md#sites) からアクセスでき、表示ページテンプレート、フラグメント、ウィジェットなどを使ってコンテンツを表示することができます。
+アセットライブラリにコンテンツを追加すると、 [に接続された Sites](./creating-and-managing-asset-libraries.md#sites) からアクセスし、表示ページテンプレート、フラグメント、ウィジェットなどを使用してコンテンツを表示できます。
 
 ```{note}
-Liferay 7.4 U21+とGA21+では、アイテムセレクターを使用して、アセットライブラリーのWebコンテンツ、ドキュメントとメディア、ブログを閲覧できます。
+Liferay 7.4 U21+とGA21+では、アイテムセレクタを使ってアセットライブラリ内のウェブコンテンツ、ドキュメントとメディア、ブログをブラウズできます。
 ```
 
-サイト内でアイテムセレクターを使用すると、接続済みアセットライブラリのコンテンツを閲覧できます。 これを行うには、アイテムセレクターウィンドウを開き、パンくずリストを使用して、 ［**Site and Libraries**］ に移動します。
+サイト内でアイテムセレクターを使用すると、接続済みアセットライブラリのコンテンツを閲覧できます。 これを行うには、アイテムセレクタウィンドウを開き、パンくずを使用して_サイトとライブラリ_に移動します。
 
-![パンくずリストを使用して、サイトとライブラリに移動します。](./asset-library-content/images/02.png)
+![Use the breadcrumb to navigate to Sites and Libraries](./asset-library-content/images/02.png)
 
-ここから、 ［**Asset Library**］ タブをクリックし、接続済みアセットライブラリを選択できます。 選択すると、そのコンテンツを閲覧し、目的のアセットを選択できます。
+ここから_Asset Library_タブをクリックし、接続されているAsset Libraryを選択することができます。 選択すると、そのコンテンツを閲覧し、目的のアセットを選択できます。
 
-![［アセットライブラリー］タブをクリックし、接続されているライブラリーを選択します。](./asset-library-content/images/03.png)
+![Click to the Asset Library tab and select a connected library.](./asset-library-content/images/03.png)
 
-また、 ［**Everywhere**］ のコンテンツを含むようにアイテムセレクターウィンドウをフィルタリングすることもできます。 サイトと利用可能なアセットライブラリの両方のコンテンツが表示されます。
+また、アイテム選択ウィンドウをフィルタリングして、_Everywhere_のコンテンツを含めることもできます。 サイトと利用可能なアセットライブラリの両方のコンテンツが表示されます。
 
-![アイテムセレクターでコンテンツをフィルタリングして、［すべての場所］からのコンテンツを含めます。](./asset-library-content/images/04.png)
+![Filter content in the Item Selector to include content from Everywhere.](./asset-library-content/images/04.png)
 
 ［Asset Publisher］ウィジェットを使用してコンテンツを公開する場合は、特定のアセットライブラリのコンテンツを含めるように範囲を設定する必要があります。 次に、使用するコンテンツを選択します。
 
-![特定のアセットライブラリのコンテンツを含めるようにアセットパブリッシャーの範囲を設定します。](./asset-library-content/images/05.png)
+![Set the Asset Publisher's scope to include content from a specific Asset Library.](./asset-library-content/images/05.png)
 
-サイトでのコンテンツの使用の詳細は、 [コンテンツの表示](../../site-building/displaying_content.html) を参照してください。
+サイトでのコンテンツ使用に関する詳細は、 [コンテンツの表示](../../site-building/displaying_content.html) ドキュメントを参照してください。
 
 ```{note}
 サイトとは異なり、表示ページテンプレートはアセットライブラリで定義できません。 代わりに、アセットライブラリのコンテンツは、各コンテンツタイプに対する各サイトのデフォルト表示ページテンプレートを使用して、表示されます。
@@ -54,37 +54,37 @@ Liferay 7.4 U21+とGA21+では、アイテムセレクターを使用して、�
 
 ## コンテンツのステージング
 
-アセットライブラリは、[ローカル現行環境](../../site-building/publishing-tools/staging/configuring-local-live-staging.md)と[リモート本番環境](../../site-building/publishing-tools/staging/configuring-remote-live-staging.md)ステージングの両方をサポートしています。 これにより、Webコンテンツまたはドキュメントとメディアアプリケーションでアセットを追加、削除、および編集するための作業環境が提供され、変更を本番環境に反映させることができます。 ステージコンテンツオプションは、アセットライブラリで有効になっているアプリケーションに限定されます。 有効にすると、ライブラリをステージングが有効なサイトに接続できます。
+Asset Librariesは、 [Local Live](../../site-building/publishing-tools/staging/configuring-local-live-staging.md) と [Remote Live](../../site-building/publishing-tools/staging/configuring-remote-live-staging.md) Stagingの両方をサポートしています。 これにより、Webコンテンツまたはドキュメントとメディアアプリケーションでアセットを追加、削除、および編集するための作業環境が提供され、変更を本番環境に反映させることができます。 ステージコンテンツオプションは、アセットライブラリで有効になっているアプリケーションに限定されます。 有効にすると、ライブラリをステージングが有効なサイトに接続できます。
 
-詳細は、[Using Staging with Asset Libraries](../../site-building/publishing-tools/staging/using-staging-in-asset-libraries.md)を参照してください。
+詳しくは [Using Staging with Asset Libraries](../../site-building/publishing-tools/staging/using-staging-in-asset-libraries.md) を参照してください。
 
 ## コンテンツの分類
 
-タグおよびカテゴリーアプリケーションは、すべてのアセットライブラリで有効になっています。 それらにアクセスするには、ライブラリのメニューページに移動し、［カテゴリー設定］の下の ［**タグ**］ または ［**カテゴリー**］ をクリックします。 アセットライブラリで作成されたタグは、そのライブラリにスコープされ、そのコンテキストでのみ表示および適用できます。 ただし、アセットライブラリで定義されたボキャブラリとカテゴリーは、すべての接続済みサイトですぐに利用できます。
+タグおよびカテゴリーアプリケーションは、すべてのアセットライブラリで有効になっています。 これらにアクセスするには、ライブラリーのメニューページに移動し、カテゴリー分類の下にある_タグ_または_カテゴリー_をクリックします。 アセットライブラリで作成されたタグは、そのライブラリにスコープされ、そのコンテキストでのみ表示および適用できます。 ただし、アセットライブラリで定義されたボキャブラリとカテゴリーは、すべての接続済みサイトですぐに利用できます。
 
 ```{note}
 アセットライブラリで作成された場合、接続されたサイトでボキャブラリとカテゴリーを編集または削除することはできません。 それらは、それらが作成されたアセットライブラリでのみ変更できます。 
 ```
 
-これらのアプリケーションの使用の詳細は、 [Tags and Categories](../tags_and_categories.html) のドキュメンテーションを参照してください。
+これらのアプリケーションの使い方の詳細については、 [タグとカテゴリー](../tags_and_categories.html) ドキュメントを参照してください。
 
 ## コンテンツのエクスポートとインポート
 
-アセットライブラリのコンテンツをLARファイルとしてエクスポートおよびインポートできます。 ライブラリの新しいエクスポート/インポートプロセスを開始するには、そのダッシュボードに移動し、ページの下部にある ［**エクスポート**］ または ［**インポート**］ をクリックします。 **追加** ボタン（![Add button](../../images/icon-add.png)）をクリックして、新規プロセスを開始します。
+アセットライブラリのコンテンツをLARファイルとしてエクスポートおよびインポートできます。 ライブラリの新しいエクスポート/インポート処理を開始するには、そのライブラリのダッシュボードに移動し、ページの下部にある_エクスポート_または_インポート_をクリックします。 次に、_追加_ボタン(![追加ボタン](../../images/icon-add.png))をクリックして、新しいプロセスを開始する。
 
-ライブラリコンテンツのエクスポートとインポートのプロセスは、サイトアセットのプロセスと同じです。 また、アプリケーションバーの **アクション** ボタン ( ![Actions button](../../images/icon-actions.png) ) をクリックし、 **エクスポートテンプレート** を選択すると、カスタムエクスポートテンプレートを作成し、使用することができます。 詳しくは、 [サイトページとコンテンツのエクスポート/インポート](../../site-building/sites/exporting-importing-site-pages-and-content.md) を参照してください。
+ライブラリコンテンツのエクスポートとインポートのプロセスは、サイトアセットのプロセスと同じです。 また、アプリケーション・バーの_Actions_ボタン(![Actions button](../../images/icon-actions.png) )をクリックし、_Export Templates_を選択することで、カスタム・エクスポート・テンプレートを作成して使用することもできます。 詳しくは、 [サイトページとコンテンツのエクスポート/インポート](../../site-building/sites/exporting-importing-site-pages-and-content.md) を参照してください。
 
 ## コンテンツの削除
 
-アセットライブラリは、[Recycle Bin](../recycle-bin/configuring-the-recycle-bin.md)アプリケーションをサポートしています。 有効にすると、ライブラリから削除されたコンテンツはすべて、ゴミ箱に一時的に保存されます。 デフォルトでは、リサイクルされたコンテンツは43200分（つまり30日間）保持されますが、この期間は各アセットライブラリの設定で調整できます。 割り当てられた時間を超えてゴミ箱に入っているリサイクルコンテンツは、インスタンスから自動的に削除されます。
+アセットライブラリは、 [ごみ箱](../recycle-bin/configuring-the-recycle-bin.md) アプリケーションをサポートしています。 有効にすると、ライブラリから削除されたコンテンツはすべて、ゴミ箱に一時的に保存されます。 デフォルトでは、リサイクルされたコンテンツは43200分（つまり30日間）保持されますが、この期間は各アセットライブラリの設定で調整できます。 割り当てられた時間を超えてゴミ箱に入っているリサイクルコンテンツは、インスタンスから自動的に削除されます。
 
-または、アセットの **アクション** ボタン（![Actions button](../../images/icon-actions.png)）を使用して、リサイクルコンテンツを手動で削除したり、アセットライブラリに復元することもできます。
+または、アセットの _アクション_ ボタン (![アクションボタン](../../images/icon-actions.png) ) を使って、リサイクルされたコンテンツを手動で削除したり、アセットライブラリに復元することもできます。
 
-![リサイクルされたコンテンツを手動で削除するか、アセットライブラリに復元します。](./asset-library-content/images/06.png)
+![Manually delete recycled content or restore it to your Asset Library.](./asset-library-content/images/06.png)
 
-詳細は、[ゴミ箱の概要](../recycle-bin/recycle-bin-overview.md)を参照してください。
+詳細は [ごみ箱の概要](../recycle-bin/recycle-bin-overview.md) を参照。
 
 ## 関連トピック
 
-* [アセットライブラリの概要](./asset-libraries-overview.md)
-* [アセットライブラリの作成と管理](./creating-and-managing-asset-libraries.md)
+* [資産ライブラリの概要](./asset-libraries-overview.md)
+* [資産ライブラリの作成と管理](./creating-and-managing-asset-libraries.md)

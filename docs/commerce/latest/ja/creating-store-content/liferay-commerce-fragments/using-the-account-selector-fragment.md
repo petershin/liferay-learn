@@ -1,36 +1,36 @@
-# アカウントセレクターフラグメントの使用
+# アカウント・セレクタ・フラグメントの使用
 
-{bdg-secondary}`利用可能 Liferay DXP 7.4 U72+/GA72+`
+{bdg-secondary}`liferay DXP 7.4 U72+/GA72+`
 
-Account Selectorフラグメントは、ユーザーが商品を閲覧したり注文を作成したりする際に、アカウントを簡単に切り替えることができるようにするものです。
+アカウントセレクターフラグメントは、ユーザーが商品を閲覧したり注文を作成したりする際に、アカウントを簡単に切り替える方法を提供します。
 
 ```{tip}
-このフラグメントは、 [カタログ](../commerce-storefront-pages/catalog.md) , [open cart](../commerce-storefront-pages/pending-orders.md), および [チェックアウト](../commerce-storefront-pages/checkout.md) ページで最も有効に機能します。
+このフラグメントは、 [カタログ](../commerce-storefront-pages/catalog.md) 、 [オープンカート](../commerce-storefront-pages/pending-orders.md) 、 [チェックアウト](../commerce-storefront-pages/checkout.md) のページがあるときに最適に機能する。
 ```
 
 ## アカウントセレクターフラグメントをページに追加する
 
-1. 目的のコンテンツページまたはテンプレートに移動し、 **Edit**(![Edit icon](../../images/icon-edit-pencil.png)) をクリックします。
+1. 目的のコンテンツページまたはテンプレートに移動し、_Edit_（！[編集アイコン](../../images/icon-edit-pencil.png)）をクリックします。
 
-1. フラグメントとウィジェットのサイドバー（！ [ウィジェット追加アイコン](../../images/icon-add-widget.png) ）で、 **account selector** を検索します。
+1. フラグメントとウィジェットのサイドバー（[ウィジェット・アイコンを追加](../../images/icon-add-widget.png)）で、_account selector_を検索する。
 
-   ![フラグメントとウィジェット」サイドバーで「Account Selector」フラグメントを検索します。](./using-the-account-selector-fragment/images/01.png)
+   ![Search for the Account Selector fragment in the Fragments and Widgets sidebar.](./using-the-account-selector-fragment/images/01.png)
 
-1. フラグメントをページ上にドラッグ＆ドロップします。 この断片を [アカウント管理ウィジェット](https://learn.liferay.com/dxp/latest/ja/users-and-permissions/accounts/account-management-widget.html) と間違えないようにしてください。
+1. フラグメントをページにドラッグ＆ドロップする。 この断片を [アカウント管理ウィジェット](https://learn.liferay.com/dxp/latest/en/users-and-permissions/accounts/account-management-widget.html) と間違えないでください。
 
-1. ［**Publish**］ をクリックします。
+1. _Publish_をクリックする。
 
-   ![アカウントアイコンをクリックすると、アカウントセレクタが表示されます。](./using-the-account-selector-fragment/images/02.png)
+   ![Click the account icon to open the account selector.](./using-the-account-selector-fragment/images/02.png)
 
 アカウントセレクターは、ユーザーが選択したアカウントが存在する場合、即座に表示します。
 
-## アカウントセレクター詳細
+## アカウントセレクターの詳細
 
-アカウントセレクタのフラグメントをページに追加した後、アカウントアイコンをクリックすると、そのページを開くことができます。 ここでは、管理権限のあるアカウントにアクセスすることができます。 また、アカウントセレクターから、 **Create New Order** ボタンをクリックすることで、新しい注文を作成することができます。 これが正しく機能するためには、 [オープンカートページ](../commerce-storefront-pages/pending-orders.md)を用意する必要があります。
+アカウントセレクタをページに追加した後、アカウントアイコンをクリックして開くことができます。 ここでは、管理権限のあるアカウントにアクセスできます。 また、_Create New Order（新規注文の作成）ボタンをクリックして、アカウントセレクタから新規注文を作成することもできます。 これを正しく動作させるには、 [Open Carts ページ](../commerce-storefront-pages/pending-orders.md) が必要です。
 
-有効な注文がある場合、アカウントセレクタフラグメントは、アカウント名のすぐ下に注文番号とそのステータスを表示します。 アクティブなワークフローがある場合、 **Draft** のステータスで注文が作成されます。
+有効な注文がある場合、アカウント・セレクタは注文番号とステータスをアカウント名のすぐ下に表示します。 アクティブなワークフローがある場合、注文は_Draft_ステータスで作成される。
 
-![アカウントセレクターを開いて、新しい注文を作成したり、アカウントを切り替えたりすることができます。](./using-the-account-selector-fragment/images/03.gif)
+![Open the account selector to create a new order or switch between accounts.](./using-the-account-selector-fragment/images/03.gif)
 
 ## 関連トピック
 

@@ -2,11 +2,12 @@
 
 オブジェクトを公開すると、Liferayは自動的にそのためのREST APIを生成します。 これには、POST、PUT、DELETEの一括操作のためのバッチAPIが含まれます。 ここでは、cURLコマンドを使用して、カスタムオブジェクトのこれらのバッチAPIを呼び出します。
 
-先に進む前に、新しい Liferay DXP/Portal 7.4インスタンスを [セットアップ](#setting-up-a-liferay-instance) し、提供されたチュートリアルコードを [準備](#preparing-the-sample-code) します。
+先に進む前に、 [セットアップ](#setting-up-a-liferay-instance) 新しい Liferay DXP/Portal 7.4 インスタンスをセットアップし、 [準備](#preparing-the-sample-code) 提供されたチュートリアルコードを準備します。
 
 ```{tip}
 Site Objects と Company Objects の両方に生成される API の完全なリストについては、 [Object's Headless Framework Integration](../using-custom-object-apis.md) を参照してください。 カスタムオブジェクトAPIは、LiferayAPIエクスプローラーを通して`[server]:[port]/o/api` （例：`localhost:8080/o/api`）で表示およびテストできます。 これらは、*［RESTアプリケーション］*の下に表示されます。
 ```
+
 ## Liferayインスタンスのセットアップ
 
 ```{include} /_snippets/run-liferay-portal.md
@@ -14,7 +15,7 @@ Site Objects と Company Objects の両方に生成される API の完全なリ
 
 [次に、以下の手順に従って、](../../creating-and-managing-objects/creating-objects.md) このチュートリアルの基本的なオブジェクトを作成します：
 
-1. **グローバルメニュー**(![グローバルメニュー](../../../../images/icon-applications-menu.png))を開き、 ［**コントロールパネル**］タブで［ **オブジェクト**］ をクリックします。
+1. _グローバルメニュー_ (![グローバルメニュー](../../../../images/icon-applications-menu.png))を開き、*［コントロールパネル］_タブで_［オブジェクト］*をクリックします。
 
 1. *追加*ボタン(![追加ボタン](../../../../images/icon-add.png))をクリックし、以下の値を入力する：
 
@@ -24,19 +25,19 @@ Site Objects と Company Objects の両方に生成される API の完全なリ
    | 複数形のラベル | `Ables` |
    | 名前      | `Able`  |
 
-1. 新しい **オブジェクト** ドラフトを選択し、 **フィールド** タブに移動し、単一のテキスト **フィールド** を追加します：
+1. 新しい_オブジェクト_ドラフトを選択し、_フィールド_タブに移動し、単一のテキスト_フィールド_を追加します：
 
    | ラベル | 項目名 | 種類       | 必須       |
    | :-- | :-- | :------- | :------- |
-   | 名前  | 名前  | テキストボックス | &#10004; |
+   | 名前  | 名前  | テキストボックス | &#10004 |
 
-1. ［**詳細**］タブに移動し、［** 公開**］ をクリックします。
+1. *［詳細］*タブに移動し、*［公開］*をクリックします。
 
    ```{important}
    このチュートリアルでは、上記の値を使用する必要があります。
    ```
 
-[オブジェクトの公開](../../creating-and-managing-objects/creating-objects.md#publishing-object-drafts) は、データの受信と保存のための新規アプリケーションを作成し、有効にします。 ヘッドレスAPIを介してアクセスできるようになりました。
+[オブジェクトの発行](../../creating-and-managing-objects/creating-objects.md#publishing-object-drafts) データの受信と保存のための新しいアプリケーションを作成し、アクティブにします。 ヘッドレスAPIを介してアクセスできるようになりました。
 
 ## サンプルコードを準備する
 
@@ -221,5 +222,5 @@ GETメソッドは、デモのために含まれています。 これは、Life
 ## 関連トピック
 
 * [オブジェクトAPIの基礎](./object-api-basics.md) 
-* [`nestedFields` を使った関連エントリーのクエリー](./using-nestedfields-to-query-related-entries.md) 
-* [REST APIでの集計用語の使用](./using-aggregation-terms-with-rest-apis.md) 
+* [nestedFields を使用した関連エントリーのクエリー](./using-nestedfields-to-query-related-entries.md)
+* [REST APIでの集計用語の使用](./using-aggregation-terms-with-rest-apis.md)

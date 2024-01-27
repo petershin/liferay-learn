@@ -1,86 +1,88 @@
 # 情報テンプレートの使用
 
-{bdg-secondary}`7.4以降で利用可能`
+{bdg-secondary}`7.4+で利用可能`
 
-Information Templatesを使用すると、Info Frameworkを実装するあらゆるアイテムタイプに対して、 [FreeMarker](https://freemarker.apache.org/) のテンプレートを作成することができます。 対応するアイテムタイプは、Webコンテンツ、ドキュメント、アセット、ブログ、カテゴリー、オブジェクトです。 一度作成したフラグメントフィールドをテンプレートにマッピングすることで、コンテンツページやディスプレイページでのアイテムの描画方法を決定することができます。 これにより、あなたのサイトに一貫したスタイルを導入することができます。
+情報テンプレートを使用すると、情報フレームワークを実装しているあらゆるアイテムタイプの [FreeMarker](https://freemarker.apache.org/) テンプレートを作成できます。 サポートされているアイテムタイプには、ウェブコンテンツ、ドキュメント、アセット、ブログ、カテゴリー、オブジェクトがあります。 一度作成すると、フラグメントフィールドをテンプレートにマッピングして、コンテンツページと表示ページでアイテムがどのようにレンダリングされるかを決定できます。 これは、あなたのサイトに一貫したスタイルを導入するのに役立ちます。
 
 ```{important}
-情報テンプレートはフラグメントでのみ利用可能で、ウィジェットでは利用できません。 ウィジェットで表示されるWebコンテンツのFreeMarkerテンプレートをデザインしたい場合は、[Webコンテンツテンプレート](../../content-authoring-and-management/web-content/web-content-templates/creating-web-content-templates.md) を使用してください。
+情報テンプレートはフラグメントでのみ利用可能で、ウィジェットでは利用できません。 ウィジェットに表示されるウェブコンテンツ用のFreeMarkerテンプレートをデザインしたい場合は、 [ウェブコンテンツテンプレート](../../content-authoring-and-management/web-content/web-content-templates/creating-web-content-templates.md) をご利用ください。
 ```
 
 ## 情報テンプレートの作成
 
-以下の手順で、インフォテンプレートを作成します：
+以下の手順に従って、情報テンプレートを作成してください：
 
-1. **サイトメニュー**(![Site Menu](../../images/icon-product-menu.png)）を開き、 ［**デザイン**］ &rarr; ［**Templates**］ &rarr; ［**Information Templates**］ に移動します。
+1. ![サイトメニュー](../../images/icon-product-menu.png))を開き、_デザイン_ &rarr; _テンプレート_ &rarr; _情報テンプレート_に移動します。
 
-1. **追加** ボタン(![Add Button](../../images/icon-add.png)）をクリックします。
+1. *追加*ボタンをクリックする (![追加ボタン](../../images/icon-add.png))
 
-1. **名称** を入力し、 **アイテムタイプ** を選択し、(該当する場合）**アイテムサブタイプ** を選択します。
+1. *名前*を入力し、_アイテムのタイプ_を選択し、(該当する場合)_アイテムのサブタイプ_を選択します。
 
-   ![名前を入力し、アイテムタイプ、アイテムサブタイプを選択します。](./using-information-templates/images/01.png)
+   ![Enter a name and select an Item Type and Item Subtype.](./using-information-templates/images/01.png)
 
-1. ［**Save**］ をクリックします。 これにより、テンプレートデザインページにリダイレクトされます。
+1. ［_保存_］をクリックします。 これにより、テンプレートデザインページにリダイレクトされます。
 
-1. (オプション） [](#importing-and-exporting-scripts) 既存のFreeMarkerスクリプトを `.ftl` ファイルからインポートします。
+1. (オプション) [インポート](#importing-and-exporting-scripts) `.ftl` ファイルから既存の FreeMarker スクリプトをインポートします。
 
-1. FreeMarkerを使用してテンプレートをデザインします。
+1. FreeMarkerを使ってテンプレートをデザインします。
 
-   エディターで `${` と入力すると、オートコンプリート機能を利用することができます。
+   エディターで`${`と入力するとオートコンプリート機能が使える。
 
-   **Elements** サイドパネル(![Elements](../../images/icon-list-ul.png))では、選択したアイテムタイプの構造から利用可能なフィールドに素早くアクセスすることができます。
+   *Elements*サイドパネル(![Elements](../../images/icon-list-ul.png))では、選択したアイテムタイプの構造から利用可能なフィールドに素早くアクセスすることができます。
 
-   ![FreeMarkerとElementsのサイドパネルで利用可能なフィールドを使用してテンプレートを設計します。](./using-information-templates/images/02.png)
+   ![Design your template using FreeMarker and available fields in the Elements side panel.](./using-information-templates/images/02.png)
 
    ```{note}
-   要素」サイドパネルには、テンプレートに基づくフィールド(例：Journal Article Templates、Info Templates）は含まれません。 これは、無限ループを防ぐためです。
+   要素」サイドパネルには、テンプレートに基づくフィールドは含まれていません（例：ジャーナル記事テンプレート、情報テンプレート）。 これは無限ループを防ぐためである。
    ```
 
-1. (オプション）プロパティサイドパネル(![Properties](../../images/icon-cog3.png)）で、テンプレートに **説明文** または **画像** を追加します。
+1. (オプション) Propertiesサイドパネルでテンプレートに_description_または_image_を追加します(![Properties](../../images/icon-cog3.png))。
 
-1. 完了したら、 ［**Save**］ をクリックします。
+1. 終了したら、_保存_をクリックします。
 
-作成された情報テンプレートは、コンテンツ表示フラグメントや、テキストやリッチテキストなどのマッピング可能な[サブ要素](../creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md)を持つその他のフラグメントで使用することができます。 選択すると、コンテントページと表示ページテンプレートで項目がどのようにレンダリングされるかが決定されます。
+一度作成された情報テンプレートは、コンテンツ表示フラグメントや、テキストやリッチテキストなど、マッピング可能な [サブ要素](../creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md) を持つその他のフラグメントで使用することができます。 選択すると、コンテントページと表示ページテンプレートで項目がどのようにレンダリングされるかが決定されます。
+
+Liferay の [Headless](../../headless-delivery/using-liferay-as-a-headless-platform.md) API サービスは `restClient` オブジェクトを通してテンプレートエディタで利用できます。 使い方の詳細は [テンプレートエディターでヘッドレスAPIを呼び出す](../creating-pages/page-fragments-and-widgets/using-widgets/styling-widgets/creating-a-widget-template.md#calling-headless-apis-in-the-template-editor) を参照してください。
 
 ## スクリプトのインポートとエクスポート
 
-情報テンプレート編集時に、FreeMarkerスクリプトをインポート/エクスポートして、他のコンテキストで再利用することが可能です：
+情報テンプレートを編集する際、FreeMarkerスクリプトをインポートおよびエクスポートして、他のコンテキストで再利用することができます：
 
-1. **サイトメニュー**(![Site Menu](../../images/icon-product-menu.png)）を開き、 ［**デザイン**］ &rarr; ［**Templates**］ &rarr; ［**Information Templates**］ に移動します。
+1. ![サイトメニュー](../../images/icon-product-menu.png))を開き、_デザイン_ &rarr; _テンプレート_ &rarr; _情報テンプレート_に移動します。
 
-1. 目的の情報テンプレートを選択します。
+1. 必要な情報テンプレートを選択します。
 
-1. アプリケーションバーの **アクション** ボタン ![Actions Button](../../images/icon-actions.png) をクリックし、 **スクリプトのエクスポート** または **スクリプトのインポート** を選択します。
+1. アプリケーションバーの_Actions_ボタン(../../images/icon-actions.png)をクリックし、_Export Script_または_Import Script_を選択します。
 
-   ![Export ScriptまたはImport Scriptを選択します。](./using-information-templates/images/03.png)
+   ![Select Export Script or Import Script.](./using-information-templates/images/03.png)
 
-エクスポートの際、現在のFreeMarkerスクリプトは、 `script.ftl` ファイルとして保存されます。
+エクスポートすると、現在の FreeMarker スクリプトは `script.ftl` ファイルとして保存されます。
 
-インポート時には、選択したファイルがテンプレートの現在のFreeMarkerスクリプトに置き換わります。
+インポートする際、選択したファイルはテンプレートの現在のFreeMarkerスクリプトを置き換えます。
 
-## インフォテンプレートの管理
+## 情報テンプレートの管理
 
-テンプレート」アプリケーションでは、既存のすべての「情報テンプレート」を表示および管理できます。 既存の各テンプレートは、そのタイプ(例：ウェブコンテンツ記事）とサブタイプ(例：基本ウェブコンテンツ）が一覧表示されます。 テンプレートの「**アクション**」 ボタン(![Actions Button](../../images/icon-actions.png))をクリックすると、以下のオプションにアクセスすることができます：
+テンプレート」アプリケーションでは、既存のすべての情報テンプレートを表示および管理できます。 それぞれの既存のテンプレートは、そのタイプ（例えば、ウェブコンテンツ記事）とサブタイプ（例えば、基本ウェブコンテンツ）と共にリストされます。 テンプレートの_Actions_ボタン(![Actions Button](../../images/icon-actions.png)) をクリックすると、以下のオプションにアクセスできます：
 
-| 操作    | Description                     |
-|:----- |:------------------------------- |
-| 編集    | テンプレートを編集する。                    |
-| コピー   | 選択したテンプレートの内容で、新しいテンプレートを作成します。 |
-| 権限の設定 | テンプレートの基本的な権限を管理します。            |
-| 削除    | テンプレートを削除する。                    |
+| 操作    | 説明                            |
+| :---- | :---------------------------- |
+| 編集する  | テンプレートを編集する。                  |
+| コピー   | 選択したテンプレートの内容で新しいテンプレートを作成する。 |
+| 権限の設定 | テンプレートの基本的な権限を管理します。          |
+| 削除    | テンプレートを削除する。                  |
 
-![管理オプションにアクセスするには、「アクション」ボタンをクリックします。](./using-information-templates/images/04.png)
+![Click the Actions button to access management options.](./using-information-templates/images/04.png)
 
-また、 [export](#exporting-templates) をエクスポート、 [import](#importing-templates) をインポートし、LAR ファイルとしてサイトや環境間で情報テンプレートを共有することができます。 これを行うには、アプリケーションバーの **アクション** ボタンをクリックし、 **エクスポート/インポート** を選択します。
+また、 [](#exporting-templates) をエクスポートしたり、 [](#importing-templates) Info Templates を LAR ファイルとしてインポートして、サイトや環境間で共有することもできます。 これを行うには、アプリケーションバーの_Actions_ボタンをクリックし、_Export/Import_を選択します。
 
-![テンプレートをLARファイルとしてエクスポート、インポートすることができます。](./using-information-templates/images/05.png)
+![Export and Import templates as LAR files.](./using-information-templates/images/05.png)
 
 ```{note}
-デフォルトでは、Info TemplateのエクスポートにはWidget Templatesが含まれます。 ただし、どのテンプレートを LAR ファイルに含めるかは設定可能です。
+デフォルトでは、情報テンプレートのエクスポートにはウィジェットテンプレートが含まれます。 ただし、どのテンプレートをLARファイルに含めるかは設定できます。
 ```
 
 ## 関連トピック
 
 * [ウィジェットテンプレートの作成](../creating-pages/page-fragments-and-widgets/using-widgets/styling-widgets/creating-a-widget-template.md)
-* [Webコンテンツテンプレートの作成](../../content-authoring-and-management/web-content/web-content-templates/creating-web-content-templates.md)
-* [Webコンテンツテンプレートのフラグメントへのマッピング](../../content-authoring-and-management/web-content/web-content-templates/mapping-web-content-templates-to-fragments.md)
+* [ウェブ・コンテンツ・テンプレートの作成](../../content-authoring-and-management/web-content/web-content-templates/creating-web-content-templates.md)
+* [ウェブコンテンツのテンプレートをフラグメントにマッピングする](../../content-authoring-and-management/web-content/web-content-templates/mapping-web-content-templates-to-fragments.md)

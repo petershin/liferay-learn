@@ -1,15 +1,15 @@
 # アセットの有効化
 
-Liferayの多くのアプリケーション（ブログ、ドキュメントとメディア、掲示板など）は、すぐに使用可能なアセットです。 [アセットパブリッシャーウィジェット](../../../site-building/displaying-content/using-the-asset-publisher-widget/displaying-assets-using-the-asset-publisher-widget.md)でアセットを公開したり、 [アセットライブラリ](../../../content-authoring-and-management/asset-libraries/asset-libraries-overview.md)を作成することも可能です。 [サービスビルダー](../service-builder.md)を使用すると、カスタムアプリケーションをアセット対応にすることができます。 その方法は、以下のサンプルプロジェクトをご覧ください。
+Liferayの多くのアプリケーション（例：ブログ、ドキュメントとメディア、メッセージボードなど） はすぐにアセットに対応する。 [Asset Publisher ウィジェット](../../../site-building/displaying-content/using-the-asset-publisher-widget/displaying-assets-using-the-asset-publisher-widget.md) を使ってアセットを公開したり、 [Asset Libraries](../../../content-authoring-and-management/asset-libraries/asset-libraries-overview.md) を作成することもできます。 [Service Builder](../service-builder.md) を使用すれば、カスタムアプリケーションを資産化することができます。 その方法は、以下のサンプルプロジェクトをご覧ください。
 
 ## サンプルコードを取得する
 
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-次に、以下の手順を実行します。
+次に、以下の手順に従います。
 
-1. [Enabling Assets](./liferay-s5e6.zip) をダウンロードして解凍します。
+1. [Enabling Assets](./liferay-s5e6.zip) をダウンロードして解凍する。
 
    ```bash
    curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/data-frameworks/asset-framework/liferay-s5e6.zip -O
@@ -26,9 +26,8 @@ Liferayの多くのアプリケーション（ブログ、ドキュメントと�
    ```
 
    ```{note}
-   このコマンドは、デプロイされたjarをDockerコンテナの`/opt/liferay/osgi/modules`にコピーするのと同じです。
+   このコマンドは Docker コンテナ上の `/opt/liferay/osgi/modules` にデプロイした jar をコピーするのと同じです。
    ```
-
 1. Liferay Dockerコンテナコンソールでデプロイを確認します。
 
    ```bash
@@ -37,29 +36,32 @@ Liferayの多くのアプリケーション（ブログ、ドキュメントと�
    STARTED com.acme.s5e6.web_1.0.0 [1435]
    ```
 
-1. ブラウザで`https://localhost:8080`を開きます。
+1. ブラウザを`https://localhost:8080`に開く。
 
 1. S5E6ポートレットをページに追加します。 サンプルポートレットは、サンプルウィジェットの下にあります。
 
 1. また、同じページにアセットパブリッシャーウィジェットを追加します。 ウィジェットは、コンテンツ管理の下にあります。
 
-1. S5E6 Portletでエントリーを追加し（例： `s5e6_name1` and `s5e6_description1`） `［Submit］`をクリックして下さい。
+1. S5E6ポートレットのエントリを追加し（例：`s5e6_name1`と`s5e6_description1`）、`Submit`をクリックします。
 
 1. S5E6ポートレットはアセットに対応しているため、追加された項目は自動的にアセットパブリッシャーウィジェットに表示されます。
 
-   ![追加されたエントリは、アセットパブリッシャーウィジェットに自動的に表示されます。](./enabling-assets/images/01.png)
+   ![The added entry appears automatically in the Asset Publisher widget](./enabling-assets/images/01.png)
 
 ## 検索が有効になる前提条件
 
 このチュートリアルでは、すでに検索が有効になっているサービスビルダーアプリケーションがあることを前提に説明します。 アプリケーションには最低限必要です。
 
-`*SearchRegistrar.java` - アプリケーションのエンティティの検索フレームワークに検索サービスを登録します(例: `com.acme.s5e6.search.S5E6SearchRegistrar.java` クラス)。
+`*ModelSearchConfigurator.java` - アプリケーションのエンティティの検索フレームワークに検索サービスを登録する（例：`com.acme.s5e6.search.S5E6EntryModelSearchConfigurator.java`クラス）。
 
-`*ModelIndexerWriterContributor.java` - エントリーの再インデックス付けとバッチ再インデックス付けの動作を設定します (例: `com.acme.s5e6.search.S5E6EntryModelIndexerWriterContributor.java` クラス)。
+```{note}
+ModelSearchConfigurator` パターンは Liferay 2023.Q4+ と GA/Update 100+ に適用されます。 以前のバージョンでは `SearchRegistrar` を使用していた。 [Liferay 7.2 documentation](https://help.liferay.com/hc/en-us/articles/360032611231-Search-Service-Registration) を参照して `SearchRegistrar` を実装してください。
+```
+`*ModelIndexerWriterContributor.java` - エントリーの再インデックス付けとバッチ再インデックス付けの動作を設定する (例: `com.acme.s5e6.search.S5E6EntryModelIndexerWriterContributor.java` クラス)。
 
-`*ModelSummaryContributor.java` - エントリーの結果サマリーを構築します (例: `com.acme.s5e6.search.S5E6EntryModelSummaryContributor.java` クラス)。
+`*ModelSummaryContributor.java` - エントリーの結果サマリーを構築する（例：`com.acme.s5e6.search.S5E6EntryModelSummaryContributor.java`クラス）。
 
-検索を有効にする方法については、検索の使用の [開発者ガイド](../../../using-search/developer-guide.md)を参照してください。
+検索の有効化については、 [Developer Guide](../../../using-search/developer-guide.md) の Using Search を参照してください。
 
 ## サービスモデルの定義の変更
 
@@ -83,13 +85,13 @@ Liferayの多くのアプリケーション（ブログ、ドキュメントと�
 
    アセットフレームワークは、アプリケーションのデータを追跡するために、これらのフィールドを必要とします。
 
-1. `</entity>`タグを閉じる直前に、アセットエントリーエンティティリファレンスを追加します。 後で、新しいアプリケーションのエントリーが追加されたとき、対応するエントリーがLiferayの`AssetEntry`テーブルに追加されるように変更します。
+1. `</entity>`タグを閉じる直前に、アセット・エントリー・エンティティの参照を追加する。 後で、新しいアプリケーションエントリが追加されたときに、対応するエントリが Liferay の `AssetEntry` テーブルに追加されるように変更します。
 
    ```xml
    <reference entity="AssetEntry" package-path="com.liferay.portlet.asset" />
    ```
 
-3. サービスビルダーを再実行します。
+1. サービスビルダーを再実行します。
 
    ```bash
    ./gradlew s5e6-service:buildService
@@ -97,8 +99,7 @@ Liferayの多くのアプリケーション（ブログ、ドキュメントと�
 
 ## サービスレイヤーの更新
 
-カスタムエンティティをLiferayアセットとして追加するには、プロジェクトの `assetEntryLocalService`の `updateEntry()` メソッドを `-LocalServiceImpl` Javaクラスで呼び出す必要があります。 `assetEntryLocalService.updateEntry()` を呼び出すと、 `AssetEntry`テーブルに新しい行（アプリケーションのエントリに対応）が追加されます。 `updateEntry()`メソッドは、アセットエントリーが存在するかどうかを確認し、適切な処理を行うため、アセットエントリーの追加と更新の両方が可能です。
-
+カスタムエンティティを Liferay のアセットとして追加するには、プロジェクトの `-LocalServiceImpl` Java クラスで `assetEntryLocalService` の `updateEntry()` メソッドを呼び出す必要があります。 assetEntryLocalService.updateEntry()`を呼び出すと、`AssetEntry` テーブルに（アプリケーションのエントリに対応する）新しい行が追加される。 updateEntry()`メソッドは、アセットエントリが存在するかどうかをチェックし、適切な処理を行うため、アセットエントリの追加と更新の両方を行います。
 
 サンプルプロジェクトでは、次のようになります。
 
@@ -108,15 +109,15 @@ Liferayの多くのアプリケーション（ブログ、ドキュメントと�
 :lines: 64-73
 ```
 
-[`AssetEntryLocalServiceImpl`クラス](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-impl/com/liferay/portlet/asset/service/impl/AssetEntryLocalServiceImpl.html#updateEntry-long-long-java.util.Date-java.util.Date-java.lang.String-long-java.lang.String-long-long:A-java.lang.String:A-boolean-boolean-java.util.Date-java.util.Date-java.util.Date-java.util.Date-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-int-int-java.lang.Double-) のJavadocsを確認すると、このメソッドはオーバーロードされていることが分かります。 `updateEntry()`のバージョンで、`title`パラメータを受け取り、アセットエントリーのタイトルを設定できるようにします。
+[`AssetEntryLocalServiceImpl` クラスの Javadocs](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-impl/com/liferay/portlet/asset/service/impl/AssetEntryLocalServiceImpl.html#updateEntry-long-long-java.util.Date-java.util.Date-java.lang.String-long-java.lang.String-long-long:A-java.lang.String:A-boolean-boolean-java.util.Date-java.util.Date-java.util.Date-java.util.Date-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-int-int-java.lang.Double-) をチェックすると、このメソッドがオーバーロードされていることがわかる。 アセットエントリーのタイトルを設定できるように、`updateEntry()` の `title` パラメータを取るバージョンを使用します。
 
 変更後、サービスビルダーを再実行します。
 
 ## アセットレンダラの作成
 
-アセットとはエンティティの表示版なので、 `title`, `description`, `summary`といったフィールドが含まれます。 Liferayはこれらのフィールドを使用して、アセットを表示します。 アセットレンダラは、これらのフィールドを介してエンティティをアセットに変換します。
+アセットはエンティティの表示バージョンなので、`title`、`description`、`summary`などのフィールドを含む。 Liferayはこれらのフィールドを使用して、アセットを表示します。 アセットレンダラは、これらのフィールドを介してエンティティをアセットに変換します。
 
-1. アプリケーションで、Liferayの`BaseJSPAssetRenderer`クラスを拡張する`-AssetRender`クラスを作成します。 例:
+1. アプリケーションで、Liferay の `BaseJSPAssetRenderer` クラスを継承した `-AssetRender` クラスを作成します。 例えば、
 
    ```java
    public class S5E6EntryAssetRenderer extends BaseJSPAssetRenderer<S5E6Entry> {
@@ -124,15 +125,15 @@ Liferayの多くのアプリケーション（ブログ、ドキュメントと�
    }
    ```
 
-2. アセットレンダラクラスのコンストラクタを定義します。
+1. アセットレンダラクラスのコンストラクタを定義します。
 
    ```java
-    public S5E6EntryAssetRenderer(S5E6Entry s5e6Entry) {
-        _s5e6Entry = s5e6Entry;
+   	public S5E6EntryAssetRenderer(S5E6Entry s5e6Entry) {
+    	_s5e6Entry = s5e6Entry;
     }
    ```
 
-3. 異なるゲッターメソッドを使用して、アセットレンダラをアセットに接続します。
+1. 異なるゲッターメソッドを使用して、アセットレンダラをアセットに接続します。
 
    ```{literalinclude} ./enabling-assets/resources/liferay-s5e6.zip/s5e6-web/src/main/java/com/acme/s5e6/web/internal/asset/model/S5E6EntryAssetRenderer.java
    :dedent: 1
@@ -140,13 +141,13 @@ Liferayの多くのアプリケーション（ブログ、ドキュメントと�
    :lines: 20-72
    ```
 
-   この例では、`getTitle()`メソッドに`name`属性、`getSummary()`メソッドにアプリケーションの`description`属性が設定されていることに注意してください。
+   この例では、`getTitle()` メソッドにはアプリケーションの `name` 属性が、`getSummary()` メソッドにはアプリケーションの `description` 属性が設定されていることに注意してください。
 
 ## アセットレンダラファクトリーの作成
 
 アセットレンダラを作成したら、各アセットインスタンスにアセットレンダラを生成するファクトリークラスを作成する必要があります。
 
-1. 上記と同じフォルダに、Liferayの`BaseAssetRendererFactory`クラスを拡張する`-AssetRendererFactory`クラスを作成します。 例:
+1. 上記と同じフォルダに、Liferay の `BaseAssetRendererFactory` クラスを継承した `-AssetRendererFactory` クラスを作成します。 例えば、
 
    ```java
    public class S5E6EntryAssetRendererFactory extends BaseAssetRendererFactory<S5E6Entry> {
@@ -154,7 +155,7 @@ Liferayの多くのアプリケーション（ブログ、ドキュメントと�
    }
    ```
 
-1. クラス宣言の上に`@Component`アノテーションを作成します。 このアノテーションは、アセットのファクトリーインスタンスを登録します。 `service`要素は、`AssetRenderFactory.class`インターフェイスを指す必要があります。
+1. クラス宣言の上に `@Component` アノテーションを作成する。 このアノテーションは、アセットのファクトリーインスタンスを登録します。 service`要素は`AssetRenderFactory.class\` インターフェースを指すべきである。
 
    ```java
    @Component(service = AssetRendererFactory.class)
@@ -168,9 +169,9 @@ Liferayの多くのアプリケーション（ブログ、ドキュメントと�
    :lines: 24-29
    ```
 
-   `setLinkable`を`true`に設定して、他のアセットはアセットを関連アセットとして選択できるようにします。 `setSearchable`を`true`に設定すると、検索時にアセットを見つけることができるようになります。
+   他のアセットがあなたのアセットを関連アセットとして選択できるように `setLinkable` を `true` に設定します。 setSearchable`を`true\` に設定して、検索時にアセットが見つかるようにします。
 
-1. `getAssetRenderer`メソッドを実装し、新しい `S5E6AssetRenderer`インスタンスを構築します。
+1. 新しい `S5E6AssetRenderer` インスタンスを作成する `getAssetRenderer` メソッドを実装します。
 
    ```{literalinclude} ./enabling-assets/resources/liferay-s5e6.zip/s5e6-web/src/main/java/com/acme/s5e6/web/internal/asset/model/S5E6EntryAssetRendererFactory.java
    :dedent: 1
@@ -178,17 +179,17 @@ Liferayの多くのアプリケーション（ブログ、ドキュメントと�
    :lines: 31-43
    ```
 
-1. 必ず`@Reference`アノテーションを使用して、モジュールのシンボル名を定義してください。
+1. 必ず `@Reference` アノテーションを使ってモジュールのシンボル名を定義してください。
 
    ```java
    @Reference(
-    target = "(osgi.web.symbolicname=com.acme.s5e6.web)"
+   	target = "(osgi.web.symbolicname=com.acme.s5e6.web)"
    )
    ```
 
 ## ポートレットを変更する
 
-`S5E6Portlet`の`addS5E6Entry`メソッドは、`S5E6Entry`インスタンスを追加する要求を処理します。
+S5E6Portlet`の`addS5E6Entry`メソッドは`S5E6Entry\` インスタンスを追加するリクエストを処理する。
 
 ```{literalinclude} ./enabling-assets/resources/liferay-s5e6.zip/s5e6-web/src/main/java/com/acme/s5e6/web/internal/portlet/S5E6Portlet.java
 :dedent: 1
@@ -196,12 +197,13 @@ Liferayの多くのアプリケーション（ブログ、ドキュメントと�
 :lines: 32-46
 ```
 
-`addS5E6Entry`は、ポートレットのアクションメソッドなので、 `ActionRequest`と`ActionResponse`のパラメータを受け取ります。 新しいエントリーを追加するサービス呼び出しを行うには、 `title`と`description`をリクエストから取得する必要があります。 `serviceContext`もリクエストから取得し、サービス呼び出しの引数として渡す必要があります。
+addS5E6Entry`はポートレットのアクションメソッドなので、`ActionRequest`と`ActionResponse`パラメータを受け取ります。 新しいエントリーを追加するサービスコールを行うには、リクエストから`title`と`description` を取得しなければならない。 serviceContext`もリクエストから取得して、サービス呼び出しの引数として渡さなければならない。
 
-ポートレットの`view.jsp`には、ポートレットの`actionURL`メソッドを呼び出す`addS5E6Entry`フォームが含まれています。
+ポートレットの `view.jsp` には、ポートレットの `addS5E6Entry` メソッドを呼び出す `actionURL` フォームが含まれています。
 
 ```{literalinclude} ./enabling-assets/resources/liferay-s5e6.zip/s5e6-web/src/main/resources/META-INF/resources/view.jsp
 :language: jsp
 :lines: 18-28
 ```
+
 ポートレットはアセットが有効です。 アプリケーションのエントリーを検索し、アセットとして表示することができるようになりました。

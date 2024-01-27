@@ -4,29 +4,24 @@ Liferayにはサイトの外観をカスタマイズする方法がたくさん�
 
 ## サイトのファビコンを変更する
 
-新しいLiferay インスタンスを起動し、以下を実行します。
-
-```bash
-docker run -it -m 8g -p 8080:8080 liferay/portal:latest
+```{include} /_snippets/run-liferay-portal.md
 ```
-
-http://localhost:8080 から Liferay にサインインします。 電子メールアドレス`test@liferay.com`とパスワード`test`を使用する。 プロンプトが表示されたら、パスワードを `learn` に変更する。
 
 次に、以下の手順に従います。
 
-1. **サイトメニュー**(![サイトメニュー](../images/icon-product-menu.png))を開き、 **サイトビルダー** &rarr; **ページ** に移動します。
+1. *サイトメニュー* (![サイトメニュー](../images/icon-product-menu.png))を開き、_サイトビルダー_ &rarr; _ページ_ に移動します。
 
-1. アプリケーションバーの **Actions**(![アクションボタン](../images/icon-actions.png))をクリックし、 **Configuration** を選択します。
+1. アプリケーションバーの_Actions_ (![アクションボタン](../images/icon-actions.png))をクリックし、_Configuration_を選択します。
 
    ![Open the Pages application, click Actions in the Application Bar, and select Configuration.](./changing-your-sites-appearance/images/01.png)
 
-1. ファビコン]で、 **ファビコンを選択**（ [ファビコンを選択ボタン](../images/icon-switch.png) ）をクリックします。
+1. ファビコン]で、_ファビコンを選択_（[ファビコンを選択ボタン](../images/icon-switch.png)）をクリックします。
 
    ![Click the Select Favicon button.](./changing-your-sites-appearance/images/02.png)
 
 1. 画像を選択またはアップロードします。
 
-1. ［**保存**］をクリックします。
+1. ［_保存_］をクリックします。
 
 サイトでは、選択した画像がお気に入りのアイコンとして使用されます。
 
@@ -52,23 +47,20 @@ http://localhost:8080 から Liferay にサインインします。 電子メー
    docker cp liferay-5b2v-theme.war [docker-container-id]:[path-to-deploy-folder]
    ```
 
-```{note}
-`[docker-container-id]`を置き換えるには、`docker ps`でliferay/portal:latestのIDを検索する。 `[path-to-deploy-folder]` は `opt/liferay/deploy` です。
-```
+!!! note
+    `[docker-container-id]` を置き換えるには、`docker ps` を使って liferay/portal コンテナの ID を調べます。 path-to-deploy-folder]`は`opt/liferay/deploy` です。
 
 これでサンプルテーマがDXPインスタンスにロードされます。 コンソールで以下のメッセージを確認し、テーマが正常にデプロイされたことを確認してください：
 
 ```
-2020-03-11 17:06:35.601 INFO  [fileinstall-/opt/liferay/osgi/war][BundleStartStopLogger:39] STARTED liferay-5b2v-theme_1.0.0 [1112]
+2023-12-21 16:01:20.836 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:68] STARTED liferay-5b2v-theme_1.0.0 [1617]
 ```
 
 ### サイトのテーマを変更する
 
-1. ブラウザで`https://localhost:8080`を開き、 [管理者としてログインする](./introduction-to-the-admin-account.md) 。
+1. *サイトメニュー* (![サイトメニュー](../images/icon-product-menu.png))を開き、_サイトビルダー_ &rarr; _ページ_ に移動します。
 
-1. **サイトメニュー**(![サイトメニュー](../images/icon-product-menu.png))を開き、 **サイトビルダー** &rarr; **ページ** に移動します。
-
-1. アプリケーションバーの **Actions**(![アクションボタン](../images/icon-actions.png))をクリックし、 **Configuration** を選択します。
+1. アプリケーションバーの_Actions_ (![アクションボタン](../images/icon-actions.png))をクリックし、_Configuration_を選択します。
 
    ![Open the Pages screen, click Actions in the Application Bar, and select Configuration.](./changing-your-sites-appearance/images/01.png)
 
@@ -76,9 +68,9 @@ http://localhost:8080 から Liferay にサインインします。 電子メー
 
    ![Click Change Current Theme to select a new theme.](./changing-your-sites-appearance/images/03.png)
 
-1. サンプルテーマを選択してください： **Acme Sample Blue Theme** を選択してください。
+1. サンプルテーマを選択してください：_Acme Sample Blue Theme_を選択してください。
 
-1. ［**保存**］をクリックします。
+1. ［_保存_］をクリックします。
 
 ホームページに移動し、背景色が青になったことを確認する。
 
@@ -86,11 +78,11 @@ http://localhost:8080 から Liferay にサインインします。 電子メー
 
 ## 次のステップ
 
-さらに、 [スタイルブック](../site-building/site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md) を使ってデザイン要素をさらにカスタマイズしたり、 [マスターページテンプレート](../site-building/creating-pages/defining-headers-and-footers/master-page-templates.md) を使ってコンテンツページのヘッダーやフッターをデザインすることができます。 サイトのルック＆フィールのカスタマイズの完全な概要については、 [サイトの外観](../site-building/site-appearance/site-appearance.md) をご覧ください。
+さらに、 [スタイルブック](../site-building/site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md) を使ってデザイン要素をさらにカスタマイズしたり、 [マスターページテンプレート](../site-building/creating-pages/defining-headers-and-footers/master-page-templates.md) を使ってコンテンツページのヘッダーやフッターをデザインすることもできます。 サイトのルック＆フィールのカスタマイズの完全な概要については、 [Site Appearance](../site-building/site-appearance/site-appearance.md) をご覧ください。
 
-[Liferay Marketplace](../system-administration/installing-and-managing-apps/using-marketplace.md) には、プロフェッショナルなルックアンドフィールを素早く実現するためのテーマが多数用意されています。
+[Liferay Marketplace](../system-administration/installing-and-managing-apps/using-marketplace.md) には、プロフェッショナルなルック＆フィールを素早く実現できるテーマが多数用意されています。
 
-また、 [独自のテーマを作成する方法](../site-building/site-appearance/themes/introduction-to-themes.md) も紹介されています。
+また、 [独自のテーマを作成する方法を学ぶこともできます](../site-building/site-appearance/themes/introduction-to-themes.md) 。
 
 <!-- ## Changing Your Site's Logo
 

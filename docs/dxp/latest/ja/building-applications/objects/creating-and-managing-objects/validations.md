@@ -12,20 +12,18 @@ validations/adding-field-validations.md
 validations/expression-builder-validations-reference.md
 ```
 
-{bdg-secondary}`Liferay 7.4+`
+{bdg-secondary}`liferay 7.4+`
 
-オブジェクトのバリデーションは有効なフィールド入力を決定するルールを設定し、[Groovy scripts](./validations/adding-field-validations.md#using-groovy-validations) または [Liferay expressions](./validations/adding-field-validations.md#using-expression-builder-validations) を使用して定義します。バリデーションがトリガーされると、定義された条件に従ってフィールドの入力が有効かどうかをチェックし、無効な入力に対してはエラーメッセージを表示します。
+オブジェクトのバリデーションは、有効なフィールド入力を決定するためのルールを設定し、 [Groovyスクリプト](./validations/adding-field-validations.md#using-groovy-validations) または [Liferay式](./validations/adding-field-validations.md#using-expression-builder-validations) を使用して定義されます。 バリデーションがトリガーされると、定義された条件に従ってフィールド入力が有効かどうかをチェックし、無効な入力に対してはエラーメッセージを表示します。
 
-![オブジェクト定義にフィールドバリデーションを追加する](./validations/images/01.png)
+![Add field validations to object definitions.](./validations/images/01.png)
 
-すぐに使えるバリデーションがニーズに合わない場合は、`objectValidationRule` クライアント拡張機能を使ってカスタムバリデーションを作成できます。詳しくは [マイクロサービスのクライアント拡張](../../client-extensions/microservice-client-extensions.md) を参照してください。
-
-![オブジェクト定義にフィールド検証を追加します。](./validations/images/01.png)
+すぐに使えるバリデーションがニーズに合わない場合は、`objectValidationRule` クライアントエクステンションを使ってカスタムバリデーションを作成することができます。 詳細は [Microservice Client Extensions](../../client-extensions/microservice-client-extensions.md) を参照。
 
 ::::{grid} 2
 :gutter: 3 3 3 3
 
-:::{grid-item-card} カスタムバリデーションの追加
+:::{grid-item-card} フィールド検証の追加
 :link: ./validations/adding-field-validations.md
 :::
 

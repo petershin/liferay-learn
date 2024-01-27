@@ -1,8 +1,8 @@
 # JavaScriptクライアント拡張の使用
 
-{bdg-secondary}`利用可能な Liferay 7.4`
+{bdg-secondary}`liferay 7.4+`
 
-JavaScript（JS）クライアント拡張を使い、Liferayのコードへの依存やテーマの開発を気にすることなく、Liferayの任意のページ上で独自のJavaScriptを実行できます。 ここでは、JavaScriptのクライアント拡張（ [サンプルワークスペース](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace) ）から始めます。
+JavaScript（JS）クライアント拡張を使い、Liferayのコードへの依存やテーマの開発を気にすることなく、Liferayの任意のページ上で独自のJavaScriptを実行できます。 ここでは、JavaScriptクライアント・エクステンション（ [サンプル・ワークスペース](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace) ）から始めます。
 
 ## 前提条件
 
@@ -11,7 +11,7 @@ JavaScript（JS）クライアント拡張を使い、Liferayのコードへの�
 1. Java（JDK8またはJDK11）をインストールします。
 
    ```{note}
-   対応するJDK、データベース、環境については、 [互換性マトリックス](https://help.liferay.com/hc/ja/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) を確認してください。 推奨されるJVMの設定については、[JVM設定](../../../../installation-and-upgrades/reference/jvm-configuration.md)を参照してください。
+   サポートされているJDK、データベース、環境については、 [互換性マトリックス](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) を確認してください。 推奨されるJVM設定については、 [JVM Configuration](../../../../installation-and-upgrades/reference/jvm-configuration.md) を参照のこと。
    ```
 
 1. サンプルワークスペースをダウンロードし、解凍します。
@@ -28,7 +28,7 @@ JavaScript（JS）クライアント拡張を使い、Liferayのコードへの�
 
 ## クライアント拡張の検討
 
-JS クライアント拡張はワークスペースの `client-extensions/liferay-sample-global-js/` フォルダにあります。 `client-extension.yaml` ファイルに定義されています。
+JS クライアント拡張はワークスペースの `client-extensions/liferay-sample-global-js/` フォルダにあります。 これは `client-extension.yaml` ファイルで定義されている：
 
 ```yaml
 liferay-sample-global-js:
@@ -37,9 +37,9 @@ liferay-sample-global-js:
     url: global.js
 ```
 
-クライアントエクステンションのIDは `liferay-sample-global-js` で、 `タイプ` や追加するJavaScriptファイルなど、JSクライアントエクステンションの主要な設定が含まれています。 プロパティの詳細については、 [JavaScript YAML設定リファレンス](../javascript-yaml-configuration-reference.md) を参照してください。
+クライアントエクステンションは `liferay-sample-global-js` という ID を持ち、`type` や追加する JavaScript ファイルなど、JS クライアントエクステンションの主要な設定を含んでいます。 プロパティの詳細については、 [JavaScript YAML configuration reference](../javascript-yaml-configuration-reference.md) を参照してください。
 
-また、`assemble`ブロックが含まれています。
+`assemble`ブロックも含まれている：
 
 ```yaml
 assemble:
@@ -47,9 +47,9 @@ assemble:
       into: static
 ```
 
-これは、 `assets/` フォルダ内のすべてを、ビルドされたクライアント拡張`.zip` ファイルに静的リソースとして含めることを指定します。 JSクライアント拡張のJavaScriptコードは、Liferayの静的リソースとして使用されます。
+これは、`assets/` フォルダにあるすべてのものが、ビルドされたクライアントの拡張子 `.zip` ファイルに静的リソースとして含まれるように指定します。 JSクライアント拡張のJavaScriptコードは、Liferayの静的リソースとして使用されます。
 
-`assets/global.js`ファイルには、下記のコードが含まれています：
+`assets/global.js`ファイルには次のようなコードがある：
 
 ```js
 window.alert('Sample Global JS deployed.');
@@ -62,18 +62,20 @@ window.alert('Sample Global JS deployed.');
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
+Liferayが起動したら、サンプルのワークスペースにあるクライアントエクステンションのフォルダからこのコマンドを実行します：
+
 ```bash
 ../../gradlew clean deploy -Ddeploy.docker.container.id=$(docker ps -lq)
 ```
 
-これにより、クライアント拡張が構築され、Liferayの`deploy/`フォルダにzipをデプロイします。
+これでクライアント拡張機能がビルドされ、Liferay の `deploy/` フォルダに zip がデプロイされます。
 
 ```{note}
-クライアント拡張をLiferay Experience Cloudにデプロイするには、Liferay Cloudの [コマンドラインツール](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool) を使って [`lcp deploy`](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool#deploying-to-your-liferay-cloud-environment) を実行します。
+クライアント拡張を Liferay Experience Cloud にデプロイするには、Liferay Cloud [Command-Line Tool](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool) を使用して [`lcp deploy`](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool#deploying-to-your-liferay-cloud-environment) を実行します。
 ```
 
 ```{tip}
-ワークスペース内のすべてのクライアント拡張を同時にデプロイするには、`client-extensions/`フォルダからコマンドを実行します。
+ワークスペース内のすべてのクライアントエクステンションを同時にデプロイするには、`client-extensions/` フォルダからコマンドを実行します。
 ```
 
 Liferayインスタンスのコンソールでデプロイメントを確認します。
@@ -88,32 +90,31 @@ STARTED sample-global-js_1.0.0
 
 デプロイされたクライアント拡張を使用するために、Liferayのページを設定します。
 
-1. インスタンスのページで、上部にある **編集** アイコン![Edit icon](../../../../images/icon-edit-pencil.png)をクリックします。
+1. インスタンス内のページで、上部の_編集_アイコン！[編集アイコン](../../../../images/icon-edit-pencil.png)をクリックします。
 
-1. サイドバーで［Page Design **Options**］メニュー（![Page Design Options icon](../../../../images/icon-format.png)）を開き、メニュー上部の **設定** アイコン（![Configuration icon](../../../../images/icon-cog3.png)）をクリックします。
+1. サイドバーで、ページデザイン_オプション_メニュー（![ページデザインオプションアイコン](../../../../images/icon-format.png)）に移動し、メニュー上部の_設定_アイコン（![設定アイコン](../../../../../images/icon-cog3.png)）をクリックします。
 
-   ![［Page Design Options］メニューの歯車アイコンをクリックすると、このクライアント拡張の設定にアクセスできます。](./using-a-javascript-client-extension/images/01.png)
+   ![Click the cog wheel icon in the Page Design Options menu to access this client extension's configurations.](./using-a-javascript-client-extension/images/01.png)
 
-1. ［**詳細設定**］ タブをクリックし、ページ下部の **JavaScript** セクションを展開すると、 ［**JavaScript Client Extensions**］ 設定セクションがあります。
+1. _Advanced_タブをクリックし、ページ下部の*JavaScript*セクションを展開して、_JavaScript Client Extensions_設定セクションを見つけます。
 
-1. ［**Add JavaScript Client Extensions**］ をクリックして、新しいクライアント拡張をページの先頭またはページ下に追加します。
+1. *JavaScriptクライアント拡張機能の追加*をクリックして、新しいクライアント拡張機能をページ先頭またはページ下に追加します。
 
-   ![JavaScriptクライアント拡張を追加します。 ページ先頭への追加もしくはページ下部への追加に応じて、リストに表示されます。](./using-a-javascript-client-extension/images/02.png)
+   ![JavaScriptクライアント拡張機能を追加する。 ページヘッドに追加したか、ページボトムに追加したかに応じて、リストに表示されます](./using-a-javascript-client-extension/images/02.png)
 
-1. ［**Save**］ をクリックします。
+1. ［_保存_］をクリックします。
 
 1. オプションで、編集モード以外のページでJavaScriptが実行されるように、ページを公開することもできます。
 
 これで、クライアント拡張が設定され、有効になりました。 設定したページでは、クライアント拡張のメッセージを含むアラートウィンドウがポップアップ表示されます。
 
-![この例のクライアント拡張は、ページが読み込まれたときに警告メッセージのポップアップを作成します。](./using-a-javascript-client-extension/images/03.png)
+![This example client extension creates an alert message pop-up when the page is loaded.](./using-a-javascript-client-extension/images/03.png)
 
 ```{tip}
 アラートウィンドウが表示されない場合は、ページを更新してブラウザのキャッシュをクリアしてください（ほとんどのブラウザでは、`CTRL + SHIFT + R` ）。 クライアント拡張を変更して再デプロイした場合、変更を確認するには、ページから削除し、再追加する必要があるかもしれません。
 ```
-
 ## 次のステップ
 
 LiferayでJSクライアント拡張を使用できるようになりました。 次は他のクライアント拡張タイプのデプロイメントを試してみましょう。
 
-* [CSSクライアント拡張の使用](./using-a-css-client-extension.md)
+* [CSSクライアント拡張機能を使う](./using-a-css-client-extension.md)

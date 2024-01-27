@@ -1,6 +1,6 @@
 ---
 toc:
-- ./enabling-automated-live-chat-systems/getting-a-chat-provider-account-id.md
+  - ./enabling-automated-live-chat-systems/getting-a-chat-provider-account-id.md
 ---
 # 自動ライブチャットシステムの有効化
 
@@ -10,43 +10,43 @@ toc:
 enabling-automated-live-chat-systems/getting-a-chat-provider-account-id.md
 ```
 
-{bdg-secondary}`Liferay 7.4以降で利用可能`
+{bdg-secondary}`liferay 7.4+`
 
 Liferayは現在、多数のライブサポートチャットプラットフォームとの統合を提供しています。 この統合を有効にすると、Liferayインスタンスのサイトにチャットウィンドウが追加され、ユーザーのサポートとサイトエクスペリエンスを向上させるために使用できます。
 
 ## Click To Chatの有効化
 
-Click To Chatを有効にするには、 ［**Instance Settings**］ に移動します。
+Click To Chat を有効にするには、[インスタンス設定]に進みます。
 
-1. ［**グローバルメニュー**］(![icon](../../images/icon-applications-menu.png)) &rarr; ［**コントロールパネル**］ &rarr; ［**Instance Settings**］ に移動します。
+1. *グローバル・メニュー* (![icon](../../images/icon-applications-menu.png)) に移動します。 &rarr; _コントロールパネル_ &rarr; _インスタンス設定_.
 
-    ![コントロールパネルの［Instance Settings］に移動します。](./enabling-automated-live-chat-systems/images/02.png)
+   ![Go to Instance Settings under Control Panel.](./enabling-automated-live-chat-systems/images/02.png)
 
-1. ［**Content and Data**］ セクションで、 ［**Click To Chat**］ をクリックします。
+1. コンテンツとデータ」セクションで、「チャットをクリック」をクリックします。
 
-    ![［コンテンツとデータ］の下にClick To Chatのアイコンが表示されます。](./enabling-automated-live-chat-systems/images/03.png)
+   ![You can see Click To Chat's icon under Content and Data.](./enabling-automated-live-chat-systems/images/03.png)
 
-1. インスタンスでClick to Chatを有効にするには、 ［**Enable Click to Chat**］ トグルを切り替えます。
+1. インスタンスでClick to Chatを有効にするには、_Enable Click to Chat_ toggleを切り替えます。
 
-    ![スイッチをオンに切り替えてClick to Chatを有効にします。](./enabling-automated-live-chat-systems/images/04.png)
+   ![Toggle the switch on to enable Click to Chat.](./enabling-automated-live-chat-systems/images/04.png)
 
-1. 有効にしたら、[サイト設定](../site-settings.md)戦略を選択する必要があります。 サイト設定戦略は、特定の[Liferayインスタンス](../../system-administration/configuring-liferay/virtual-instances/understanding-virtual-instances.md)に存在するサイト間でClick to Chatを有効にする方法を決定します。
+1. 有効にしたら、 [サイト設定](../site-settings.md) 戦略を選択する必要があります。 Site Settings（サイト設定）ストラテジーは、特定の [Liferay インスタンス](../../system-administration/configuring-liferay/virtual-instances/understanding-virtual-instances.md) に存在するサイト全体で Click to Chat をどのように有効にするかを決定します。
 
-    ![サイト設定戦略オプションを選択します。](./enabling-automated-live-chat-systems/images/05.png)
+   ![Choose your Site Settings Strategy option.](./enabling-automated-live-chat-systems/images/05.png)
 
-   **Always Inherit** ：Click To Chatはインスタンス上のすべてのサイトで有効になり、サイト設定で行われた構成は無視されます。
+   **常に継承されます**：Click To Chatはインスタンス上のすべてのサイトで有効であり、サイト設定で行われた構成は無視されます。
 
-   **Always Override** ：サイト設定で構成されたClick to Chatの設定は、インスタンス設定で構成された設定よりも常に優先されます。
+   **常に優先**:されます：サイト設定] で設定された [クリックチャット] の設定は、[インスタンス設定] で設定された内容よりも常に優先されます。
 
-   **Inherit or Override** ：サイトのサイト設定で他に構成されていない限り、サイトはインスタンス設定から構成を継承します。
+   **継承または上書き**：継承または上書き**：サイトのサイト設定に別の設定がない限り、サイトはインスタンス設定から設定を継承します。
 
-1. チャットプロバイダーを選択し、チャットプロバイダーから提供された [アカウントIDまたはトークン](#getting-the-chat-provider-account-id-or-token) を入力します。
+1. チャットプロバイダを選択し、 [アカウント ID またはチャットプロバイダから付与されたトークン](#getting-the-chat-provider-account-id-or-token) を入力してください。
 
-    ![使用するチャットプロバイダーを選択します。 ](./enabling-automated-live-chat-systems/images/06.png)
+   ![使用するチャットプロバイダを選択します。](./enabling-automated-live-chat-systems/images/06.png)
 
-1. （オプション）［**Guest Users Allowed**］ トグルをクリックして、ゲストユーザー（認証されていないユーザー）がサイトのClick to Chat機能にアクセスできるようにするかどうかを構成します。
+1. (オプション) _Guest Users Allowed_ トグルをクリックして、ゲスト・ユーザー (認証されていないユーザー) がサイトの Click to Chat 機能にアクセスできるようにするかどうかを設定します。
 
-1. ［**保存**］ をクリックします。
+1. ［_保存_］をクリックします。
 
 Click To Chatとライブチャットプロバイダーとの統合が構成されました。
 
@@ -55,12 +55,12 @@ Click To Chatとライブチャットプロバイダーとの統合が構成さ�
 チャットプロバイダーのアカウントIDまたはトークンを取得する方法がわからない場合は、利用可能なチャットプロバイダーについて次の記事を参照してください。
 
 * [Chatwoot](./enabling-automated-live-chat-systems/getting-a-chat-provider-account-id/chatwoot.md)
-* [Crisp](./enabling-automated-live-chat-systems/getting-a-chat-provider-account-id/crisp.md)
-* [Hubspot](./enabling-automated-live-chat-systems/getting-a-chat-provider-account-id/hubspot.md)
-* [JivoChat](./enabling-automated-live-chat-systems/getting-a-chat-provider-account-id/jivochat.md)
+* [クリスプ](./enabling-automated-live-chat-systems/getting-a-chat-provider-account-id/crisp.md)
+* [ハブスポット](./enabling-automated-live-chat-systems/getting-a-chat-provider-account-id/hubspot.md)
+* [Jivochat](./enabling-automated-live-chat-systems/getting-a-chat-provider-account-id/jivochat.md)
 * [LiveChat](./enabling-automated-live-chat-systems/getting-a-chat-provider-account-id/livechat.md)
-* [Liveperson](./enabling-automated-live-chat-systems/getting-a-chat-provider-account-id/liveperson.md)
-* [Smartsupp](./enabling-automated-live-chat-systems/getting-a-chat-provider-account-id/smartsupp.md)
+* [LivePerson](./enabling-automated-live-chat-systems/getting-a-chat-provider-account-id/liveperson.md)
+* [スマートサップ](./enabling-automated-live-chat-systems/getting-a-chat-provider-account-id/smartsupp.md)
 * [Tawk.to](./enabling-automated-live-chat-systems/getting-a-chat-provider-account-id/tawk-to.md)
-* [Tidio](./enabling-automated-live-chat-systems/getting-a-chat-provider-account-id/tidio.md)
+* [ティディオ](./enabling-automated-live-chat-systems/getting-a-chat-provider-account-id/tidio.md)
 * [Zendesk](./enabling-automated-live-chat-systems/getting-a-chat-provider-account-id/zendesk.md)

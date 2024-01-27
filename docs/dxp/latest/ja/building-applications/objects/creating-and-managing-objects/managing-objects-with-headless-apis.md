@@ -1,8 +1,8 @@
 # ヘッドレスAPIでオブジェクトを管理する
 
-{bdg-secondary}`Liferay 7.4が利用可能です。`
+{bdg-secondary}`liferay 7.4+`
 
-[アプリケーションメニューから](../creating-and-managing-objects.md) オブジェクトを作成・管理できますが、Liferay の REST API を使うこともできます。 これらのサービスを呼び出して、オブジェクトを作成・管理する。 Liferayのコードベースでは、オブジェクトは **オブジェクト定義** と呼ばれています。 各オブジェクト定義は、さまざまなオブジェクト・フィールドで構成されている。
+[アプリケーションメニューから](../creating-and-managing-objects.md) オブジェクトを作成・管理できますが、Liferay の REST API を使うこともできます。 これらのサービスを呼び出して、オブジェクトを作成・管理する。 Liferayのコードベースでは、オブジェクトは_オブジェクト定義_と呼ばれています。 各オブジェクト定義は、さまざまなオブジェクト・フィールドで構成されている。
 
 ## オブジェクト定義とオブジェクト・フィールドの追加
 
@@ -21,7 +21,7 @@
    unzip liferay-r4g6.zip
    ```
 
-1. cURLスクリプトを使用して、新しいオブジェクト定義をインスタンスに追加します。 コマンドラインで `curl` フォルダに移動します。 ObjectDefinition_POST_ToInstance.sh`スクリプトを実行する。
+1. cURLスクリプトを使用して、新しいオブジェクト定義をインスタンスに追加します。 コマンドラインで `curl` フォルダに移動します。 `ObjectDefinition_POST_ToInstance.sh`スクリプトを実行する。
 
    ```bash
    ./ObjectDefinition_POST_ToInstance.sh
@@ -60,7 +60,7 @@
    "titleObjectFieldName" : "id"
    ```
 
-1. **Global Menu** &rarr; **Applications** &rarr; **Objects** に移動します。 新しいオブジェクトが追加されたことを確認する。
+1. *Global Menu* &rarr; _Applications_ &rarr; _Objects_ に移動します。 新しいオブジェクトが追加されたことを確認する。
 
    ![See that a new object definition has been added.](./managing-objects-with-headless-apis/images/01.png)
 
@@ -72,7 +72,7 @@
    ./ObjectField_POST_ToObjectDefinition.sh 1234
    ```
 
-1. Liferayで **Foo** オブジェクトをもう一度クリックします。 Fields_タブをクリックする。 新しいエイブル・フィールドが追加された。
+1. Liferayで_Foo_オブジェクトをもう一度クリックします。 Fields_タブをクリックする。 新しいエイブル・フィールドが追加された。
 
    ![See that a new object field has been added.](./managing-objects-with-headless-apis/images/02.png)
 
@@ -82,13 +82,13 @@
    javac -classpath .:* *.java
    ```
 
-1. ObjectDefinition_POST_ToInstance.java`クラスを実行する：
+1. `ObjectDefinition_POST_ToInstance.java`クラスを実行する：
 
    ```bash
    java -classpath .:* ObjectDefinition_POST_ToInstance
    ```
 
-1. **Foo**オブジェクトのID番号に注意。 次に `ObjectField_POST_ToObjectDefinition.java` クラスを実行する。 1234をあなたのオブジェクトのIDに置き換えてください。
+1. Foo_オブジェクトのID番号に注意。 次に `ObjectField_POST_ToObjectDefinition.java` クラスを実行する。 1234をあなたのオブジェクトのIDに置き換えてください。
 
    ```bash
    java -classpath .:* -DobjectDefinitionId=1234 ObjectField_POST_ToObjectDefinition
@@ -106,23 +106,23 @@
 
 ここでは、コマンドの引数を紹介します。
 
-| 引数                                                                                                                          | 説明                            |
-| :-------------------------------------------------------------------------------------------------------------------------- | :---------------------------- |
-| `-H "Content-Type: application/json"`                                                                                       | リクエストボディのフォーマットを JSON で定義します。 |
-| `-X POST`                                                                                                                   | 指定されたエンドポイントで起動するHTTPメソッド     |
-| `"http://localhost:8080/o/object-admin/v1.0/object-definitions"`                                                            | RESTサービスのエンドポイント              |
-| `-d "{"label": {"en_US": "Foo"}, "name": "Foo", "pluralLabel": {"en_US": "Foos"}, "scope": "company"}"` | お客様が掲載を希望するデータ                |
-| `-u "test@liferay.com:learn"`                                                                                               | 基本的な認証情報                      |
+| 引数                                                                                                                          | 説明                          |
+| :-------------------------------------------------------------------------------------------------------------------------- | :-------------------------- |
+| `-H "Content-Type: application/json"`                                                                                       | リクエストボディのフォーマットをJSONで定義します。 |
+| `-X POST`                                                                                                                   | 指定されたエンドポイントで起動するHTTPメソッド   |
+| `"http://localhost:8080/o/object-admin/v1.0/object-definitions"`                                                            | RESTサービスのエンドポイント            |
+| `-d "{"label": {"en_US": "Foo"}, "name": "Foo", "pluralLabel": {"en_US": "Foos"}, "scope": "company"}"` | お客様が掲載を希望するデータ              |
+| `-u "test@liferay.com:learn"`                                                                                               | 基本的な認証情報                    |
 
 ```{note}
-ここでは、デモのために基本的な認証を使用しています。 本番環境では、 [OAuth2](../../../headless-delivery/using-oauth2.md) を介してユーザーを認証する必要があります。 OAuth2 を使用する React アプリケーションのサンプルについては、 [OAuth2によるユーザーの認証](../../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md) を参照してください。
+ここでは、デモのために基本的な認証を使用しています。 本番環境では、 [OAuth2](../../../headless-delivery/using-oauth2.md) を介してユーザーを認証する必要があります。 OAuth2 を使用する React アプリケーションのサンプルについては、 [Using OAuth2 to Authorize Users](../../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md) を参照してください。
 ```
 
 他のcURLコマンドも同様のJSON引数を使用しています。
 
 ## Javaクラスを調べる
 
-`ObjectDefinition_POST_ToInstance.java` クラスは、関連するサービスを呼び出してオブジェクト定義を追加する。
+ObjectDefinition_POST_ToInstance.java` クラスは、関連するサービスを呼び出してオブジェクト定義を追加する。
 
 ```{literalinclude} ./managing-objects-with-headless-apis/resources/liferay-r4g6.zip/java/ObjectDefinition_POST_ToInstance.java
    :dedent: 1
@@ -141,7 +141,7 @@
 このプロジェクトには依存関係として `com.liferay.object.admin.rest.client.jar` ファイルが含まれていることに注意してください。 すべての REST アプリケーションのクライアント JAR 依存情報は、インストー ルの API エクスプローラーの `/o/api` にある。
 
 ```{note}
-main`メソッドのコメントは、クラスの実行を示している。
+`main`メソッドのコメントは、クラスの実行を示している。
 ```
 
 他のJavaクラスの例は、このクラスと似ていますが、異なるメソッドを呼び出しています。
@@ -195,7 +195,6 @@ java -classpath .:* ObjectDefinitions_GET_FromInstance
 ```{tip}
 インスタンスの ``ObjectDefinition`` ID を取得するには ``ObjectDefinitions_GET_FromInstance.[java|sh]`` を使用してください。
 ```
-
 ### ObjectDefinition_GET_ById.sh
 
 コマンド：
@@ -264,7 +263,7 @@ java -classpath .:* -DobjectDefinitionId=1234 ObjectDefinition_PATCH_ById
 
 ## オブジェクトの定義を置く
 
-以下のcURLとJavaコマンドで、既存のオブジェクト定義を完全に上書きする。 `1234`をオブジェクト定義のIDに置き換えてください。
+以下のcURLとJavaコマンドで、既存のオブジェクト定義を完全に上書きする。 1234`をオブジェクト定義のIDに置き換えてください。
 
 ### ObjectDefinition_PUT_ById.sh
 
@@ -336,11 +335,11 @@ java -classpath .:* -DobjectDefinitionId=1234 ObjectDefinition_DELETE_ById
 
 | ファイル                                                | 説明                                |
 | :-------------------------------------------------- | :-------------------------------- |
-| `ObjectField_DELETE_ById.[java\|sh]`               | ID によってオブジェクト・フィールドを削除する。         |
-| `ObjectField_GET_ById.[java\|sh]`                  | 特定のオブジェクト・フィールドを ID で取得します。       |
-| `ObjectField_PATCH_ById.[java\|sh]`                | ID によって特定のオブジェクト・フィールドをパッチする。     |
-| `ObjectField_POST_ToObjectDefinition.[java\|sh]`   | オブジェクト定義にオブジェクト・フィールドを投稿する。       |
-| `ObjectField_PUT_ById.[java\|sh]`                  | 特定のオブジェクト・フィールドをIDで置き換える。         |
-| `ObjectFields_GET_FromObjectDefinition.[java\|sh]` | オブジェクト定義からオブジェクト・フィールドのリストを取得します。 |
+| `ObjectField_DELETE_ById.[java|sh]`               | ID によってオブジェクト・フィールドを削除する。         |
+| `ObjectField_GET_ById.[java|sh]`                  | 特定のオブジェクト・フィールドを ID で取得します。       |
+| `ObjectField_PATCH_ById.[java|sh]`                | ID によって特定のオブジェクト・フィールドをパッチする。     |
+| `ObjectField_POST_ToObjectDefinition.[java|sh]`   | オブジェクト定義にオブジェクト・フィールドを投稿する。       |
+| `ObjectField_PUT_ById.[java|sh]`                  | 特定のオブジェクト・フィールドをIDで置き換える。         |
+| `ObjectFields_GET_FromObjectDefinition.[java|sh]` | オブジェクト定義からオブジェクト・フィールドのリストを取得します。 |
 
 [API Explorer](../../../headless-delivery/consuming-apis/consuming-rest-services.md) には、オブジェクトのすべてのサービスとスキーマが表示され、各サービスを試すためのインターフェイスが用意されている。

@@ -1,6 +1,6 @@
 # ユーザーアカウントAPIの基本
 
-コントロールパネルから [ユーザーの追加と管理](../users/adding-and-managing-users.md) ができますが、LiferayのREST APIを利用することもできます。 これらのサービスを呼び出して、ユーザーの追加、編集、削除を行うことができます。
+コントロールパネルから [ユーザーの追加と管理](../users/adding-and-managing-users.md) ができますが、Liferay の REST API を使うこともできます。 これらのサービスを呼び出して、ユーザーの追加、編集、削除を行うことができます。
 
 まず、新しいユーザーを追加します。
 
@@ -9,9 +9,9 @@
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-次に、以下の手順を実行します。
+次に、以下の手順に従います。
 
-1. [User Account API Basics](./liferay-y6q4.zip) をダウンロードし、解凍します。
+1. [User Account API Basics](./liferay-y6q4.zip) をダウンロードして解凍する。
 
    ```bash
    curl https://resources.learn.liferay.com/dxp/latest/en/users-and-permissions/developer-guide/liferay-y6q4.zip -O
@@ -21,7 +21,7 @@
    unzip liferay-y6q4.zip
    ```
 
-1. cURLスクリプトを使用して、Liferayインスタンスに新規ユーザーを追加します。 コマンドラインで、 `curl`フォルダに移動します。 `User_POST_ToInstance.sh`スクリプトを実行します。
+1. cURLスクリプトを使用して、Liferayインスタンスに新規ユーザーを追加します。 コマンドラインで `curl` フォルダに移動します。 `User_POST_ToInstance.sh`スクリプトを実行する。
 
    ```bash
    ./User_POST_ToInstance.sh
@@ -77,17 +77,17 @@
    }%
    ```
 
-   コントロールパネルで、新しく追加されたユーザーを確認します。 ユーザーの `id` の番号を後のコマンドのためにメモしておきます。
+   コントロールパネルで、新しく追加されたユーザーを確認します。 後のコマンドのために、ユーザーの `id` 番号を控えておくこと。
 
-   ![コントロールパネルに追加されたユーザーを参照してください。](./user-account-api-basics/images/01.png)
+   ![See the added User in Control Panel.](./user-account-api-basics/images/01.png)
 
-1. RESTサービスは、Javaクラスで呼び出すこともできます。 `curl` フォルダから、 `java` フォルダに移動します。 以下のコマンドでソースファイルをコンパイルします。
+1. RESTサービスは、Javaクラスで呼び出すこともできます。 `curl`フォルダから`java` フォルダに移動します。 以下のコマンドでソースファイルをコンパイルします。
 
    ```bash
    javac -classpath .:* *.java
    ```
 
-1. `User_POST_ToInstance` クラスを以下のコマンドで実行します。
+1. 以下のコマンドで `User_POST_ToInstance` クラスを実行する：
 
    ```bash
    java -classpath .:* User_POST_ToInstance
@@ -95,13 +95,13 @@
 
    コントロールパネルで、別のユーザーが追加されていることを確認します。
 
-   ![コントロールパネルに、もう一人のユーザーが追加されました。](user-account-api-basics/images/02.png)
+   ![In Control Panel, another User has been added.](user-account-api-basics/images/02.png)
 
 cURLコマンドとJavaクラスの仕組みをご覧ください。
 
 ## cURLコマンドの検証
 
-`User_POST_ToInstance.sh` スクリプトは、cURLコマンドでRESTサービスを呼び出します。
+`User_POST_ToInstance.sh`スクリプトは、cURLコマンドでRESTサービスを呼び出す。
 
 ```{literalinclude} ./user-account-api-basics/resources/liferay-y6q4.zip/curl/User_POST_ToInstance.sh
     :language: bash
@@ -109,23 +109,22 @@ cURLコマンドとJavaクラスの仕組みをご覧ください。
 
 ここでは、コマンドの引数を紹介します。
 
-| 引数                                                                                                                                             | 説明                              |
-|:---------------------------------------------------------------------------------------------------------------------------------------------- |:------------------------------- |
-| `-H "Content-Type: application/json"`                                                                                                          | リクエストボディのフォーマットがJSONであることを示します。 |
-| `-X POST`                                                                                                                                      | 指定されたエンドポイントで起動するHTTPメソッド       |
-| `"http://localhost:8080/o/headless-admin-user/v1.0/user-accounts"`                                                                             | RESTサービスのエンドポイント                |
+| 引数                                                                                                                             | 説明                              |
+| :----------------------------------------------------------------------------------------------------------------------------- | :------------------------------ |
+| `-H "Content-Type: application/json"`                                                                                          | リクエストボディのフォーマットがJSONであることを示します。 |
+| `-X POST`                                                                                                                      | 指定されたエンドポイントで起動するHTTPメソッド       |
+| `"http://localhost:8080/o/headless-admin-user/v1.0/user-accounts"`                                                             | RESTサービスのエンドポイント                |
 | `-d "{\"alternateName\": \"Able\", \"emailAddress\": \"able@liferay.com\", \"familyName\": \"Foo\", \"givenName\": \"Able\"}"` | お客様が掲載を希望するデータ                  |
-| `-u "test@liferay.com:learn"`                                                                                                                  | 基本的な認証情報                        |
+| `-u "test@liferay.com:learn"`                                                                                                  | 基本的な認証情報                        |
 
 ```{note}
-ここでは、デモのために基本的な認証を使用しています。 本番環境では、 [OAuth2](../../headless-delivery/using-oauth2.md) を使ってユーザーを認証する必要があります。 OAuth2を利用したReactアプリケーションのサンプルは、[OAuth2を利用したユーザー認証](../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md) をご参照ください。
+ここでは、デモのために基本的な認証を使用しています。 本番環境では、 [OAuth2](../../headless-delivery/using-oauth2.md) を介してユーザーを認証する必要があります。 OAuth2 を使用する React アプリケーションのサンプルについては、 [Using OAuth2 to Authorize Users](../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md) を参照してください。
 ```
-
 他のcURLコマンドも同様のJSON引数を使用しています。
 
 ## Javaクラスを調べる
 
-`User_POST_ToInstance.java` クラスは、ユーザー関連サービスを呼び出して、ユーザーを追加します。
+User_POST_ToInstance.java` クラスは、ユーザー関連サービスを呼び出してユーザーを追加する。
 
 ```{literalinclude} ./user-account-api-basics/resources/liferay-y6q4.zip/java/User_POST_ToInstance.java
    :dedent: 1
@@ -135,24 +134,22 @@ cURLコマンドとJavaクラスの仕組みをご覧ください。
 
 このクラスは、わずか3行のコードでRESTサービスを呼び出します。
 
-| 行（省略形）                                                                          | 説明                                                             |
-|:------------------------------------------------------------------------------- |:-------------------------------------------------------------- |
-| `UserAccountResource.Builder builder = ...`                                     | ` UserAccountResource `サービスインスタンスを生成するための`Builder`を取得します。      |
-| `UserAccountResource userAccountResource = builder.authentication(...).build()` | ベーシック認証を指定し、 `UserAccountResources` サービスインスタンスを生成します。          |
-| `UserAccount userAccount = userAccountResource.postUserAccount(...)`            | `userAccountResource.postUserAccount` メソッドを呼び出し、データをpostに渡します。 |
+| 行（省略形）                                                                          | 説明                                                          |
+| :------------------------------------------------------------------------------ | :---------------------------------------------------------- |
+| `UserAccountResource.Builder builder = ...`                                     | `UserAccountResource`サービスインスタンスを生成するための`Builder` を取得する。     |
+| `UserAccountResource userAccountResource = builder.authentication(...).build()` | 基本認証を指定し、`UserAccountResources` サービスインスタンスを生成する。            |
+| `UserAccount userAccount = userAccountResource.postUserAccount(...)`            | `userAccountResource.postUserAccount`メソッドを呼び出し、データをpostに渡す。 |
 
-プロジェクトには、依存関係として`com.liferay.headless.admin.user.client.jar`ファイルが含まれていることに注意してください。 すべてのRESTアプリケーションのクライアントJAR依存関係情報は、`/o/api`でインストール先のAPIエクスプローラーで確認できます。
+このプロジェクトには依存関係として `com.liferay.headless.admin.user.client.jar` ファイルが含まれていることに注意してください。 すべての REST アプリケーションのクライアント JAR 依存情報は、インストー ルの API エクスプローラーの `/o/api` にある。
 
 ```{note}
-`main`メソッドのコメントでは、クラスの実行を実演しています。
+main`メソッドのコメントは、クラスの実行を示している。
 ```
-
-他のJavaクラスの例はこれと似ていますが、異なる `UserAccountResource` メソッドを呼び出しています。
+他のJavaクラスの例もこれと似ているが、異なる `UserAccountResource` メソッドを呼び出している。
 
 ```{important}
-サービスの詳細は、 [UserAccountResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-user/headless-admin-user-client/src/main/java/com/liferay/headless/admin/user/client/resource/v1_0/AccountResource.java) を参照してください。
+サービスの詳細については、 [UserAccountResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-user/headless-admin-user-client/src/main/java/com/liferay/headless/admin/user/client/resource/v1_0/UserAccountResource.java) を参照のこと。
 ```
-
 以下は、cURLとJavaを使って、他のUser RESTサービスを呼び出す例です。
 
 ## インスタンスユーザーの取得
@@ -177,7 +174,7 @@ cURLコマンドとJavaクラスの仕組みをご覧ください。
 
 コマンド：
 
-```bash 
+```bash
 java -classpath .:* Users_GET_FromInstance
 ```
 
@@ -193,7 +190,7 @@ JSON レスポンスには、そのインスタンスのすべてのユーザー
 
 ## ユーザーの取得
 
-以下のcURLとJavaコマンドで特定のユーザーを取得します。 なお、 `1234` は、ユーザーのIDに置き換えてください。
+以下のcURLとJavaコマンドで特定のユーザーを取得します。 `1234`はあなたのユーザーIDに置き換えてください。
 
 ### User_GET_ById.sh
 
@@ -213,7 +210,7 @@ JSON レスポンスには、そのインスタンスのすべてのユーザー
 
 コマンド：
 
-```bash 
+```bash
 java -classpath .:* -DuserId=1234 User_GET_ById
 ```
 
@@ -229,7 +226,7 @@ java -classpath .:* -DuserId=1234 User_GET_ById
 
 ## ユーザーへのパッチ
 
-以下のcURLとJavaコマンドで、既存ユーザーの部分編集を行います。 なお、 `1234` は、ユーザーのIDに置き換えてください。
+以下のcURLとJavaコマンドで、既存ユーザーの部分編集を行います。 `1234`はあなたのユーザーIDに置き換えてください。
 
 ### User_PATCH_ById.sh
 
@@ -249,7 +246,7 @@ java -classpath .:* -DuserId=1234 User_GET_ById
 
 コマンド：
 
-```bash 
+```bash
 java -classpath .:* -DuserId=1234 User_PATCH_ById
 ```
 
@@ -265,7 +262,7 @@ java -classpath .:* -DuserId=1234 User_PATCH_ById
 
 ## ユーザーの配置
 
-以下のcURLとJavaコマンドで、既存ユーザーを完全に上書きします。 なお、 `1234` は、ユーザーのIDに置き換えてください。
+以下のcURLとJavaコマンドで、既存ユーザーを完全に上書きします。 `1234`はあなたのユーザーIDに置き換えてください。
 
 ### User_PUT_ById.sh
 
@@ -283,9 +280,9 @@ java -classpath .:* -DuserId=1234 User_PATCH_ById
 
 ### User_PUT_ById.java
 
-コマンド:
+コマンド：
 
-```bash 
+```bash
 java -classpath .:* -DuserId=1234 User_PUT_ById
 ```
 
@@ -299,21 +296,28 @@ java -classpath .:* -DuserId=1234 User_PUT_ById
 
 なお、この例では、以前のデータがAble GooとBaker Gooに置き換えられています。
 
-![これまでのユーザーデータは、パッチサービスに置き換えられています。](./user-account-api-basics/images/03.png)
+![The previous user data has been replaced with the Patch service.](./user-account-api-basics/images/03.png)
+
+!!! tip
+    `User_PATCH_ById.[java|sh]` または `User_PUT_ById.[java|sh]` を使用して、`status` フィールドを `Active` または `Inactive` に変更して、ユーザーをアクティブまたは非アクティブにすることができる。
+
+```
+ワークフローがアクティブなユーザーのステータスを変更するには、代わりに `headless-admin-workflow` API を使用する必要があります。使い方の詳細は [API Explorer](../../headless-delivery/consuming-apis/consuming-rest-services.md) を参照。
+```
 
 ## ユーザーの削除
 
-以下のcURLおよびJavaコマンドで既存ユーザーを削除します。 なお、 `1234` は、ユーザーのIDに置き換えてください。
+以下のcURLおよびJavaコマンドで既存ユーザーを削除します。 `1234`はあなたのユーザーIDに置き換えてください。
 
 ### User_DELETE_ById.sh
 
-コマンド:
+コマンド：
 
 ```bash
 ./User_DELETE_ById.sh 1234
 ```
 
-コード:
+コード：
 
 ```{literalinclude} ./user-account-api-basics/resources/liferay-y6q4.zip/curl/User_DELETE_ById.sh
    :language: bash
@@ -323,7 +327,7 @@ java -classpath .:* -DuserId=1234 User_PUT_ById
 
 コマンド：
 
-```bash 
+```bash
 java -classpath .:* -DuserId=1234 User_DELETE_ById
 ```
 
@@ -339,4 +343,7 @@ java -classpath .:* -DuserId=1234 User_DELETE_ById
 
 ## 関連トピック
 
-[APIエクスプローラー](../../headless-delivery/consuming-apis/consuming-rest-services.md) でユーザー関連のRESTサービスの一覧を確認できます。
+[API Explorer](../../headless-delivery/consuming-apis/consuming-rest-services.md)で、User関連のすべてのRESTサービスのリストを確認してください。
+
+!!! note
+    [PostalAddresses_GET_FromUser](./postal-address-api-basics.md#get-postal-addresses-from-user) でユーザーの郵便住所を取得する。

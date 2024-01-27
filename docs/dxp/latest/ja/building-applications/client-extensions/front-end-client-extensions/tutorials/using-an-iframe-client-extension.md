@@ -1,6 +1,6 @@
 # IFrameクライアント拡張機能の使用
 
-{bdg-secondary}`Liferay 7.4+が利用可能です。`
+{bdg-secondary}`liferay 7.4+`
 
 IFrameクライアント拡張はLiferayのフロントエンドインフラストラクチャを使い、外部アプリケーションを`<iframe>` HTML要素として登録します。 これらはウィジェットとしてLiferayのページに追加されます。 他のフロントエンドクライアント拡張とは異なり、IFrameは静的リソースを提供しない。
 
@@ -17,7 +17,7 @@ IFrameクライアント拡張は開発中であり、現在Liferay 7.4ではサ
 1. Java（JDK8またはJDK11）をインストールします。
 
    ```{note}
-   サポートされているJDK、データベース、環境については、 [互換性マトリックス](https://help.liferay.com/hc/ja/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) を確認してください。 推奨されるJVM設定については、 [JVM設定](../../../../installation-and-upgrades/reference/jvm-configuration.md) を参照のこと。
+   サポートされているJDK、データベース、環境については、 [互換性マトリックス](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) を確認してください。 推奨されるJVM設定については、 [JVM Configuration](../../../../installation-and-upgrades/reference/jvm-configuration.md) を参照のこと。
    ```
 
 1. サンプルワークスペースをダウンロードし、解凍します。
@@ -43,7 +43,7 @@ liferay-sample-iframe-1-counter-app:
     url: https://arnab-datta.github.io/counter-app
 ```
 
-このクライアント拡張は `liferay-sample-iframe-1` という ID を持ち、`name`, `type`, IFrame として取り込むアプリの URL など、IFrame クライアント拡張の主要な設定を含んでいます。 例の `url` で実行されている [Counter App](https://github.com/arnab-datta/counter-app) は、ショッピングカートに商品を追加することをシミュレートする基本的な React アプリです。 クライアントエクステンションをデプロイしたら、他のウィジェットと同じようにLiferayのページにアプリを追加できます。
+このクライアント拡張は `liferay-sample-iframe-1` という ID を持っており、`name`, `type`, IFrame として取り込むアプリの URL など、IFrame クライアント拡張の主要な設定を含んでいます。 サンプルの `url` で実行されている [Counter App](https://github.com/arnab-datta/counter-app) は、ショッピングカートに商品を追加することをシミュレートする基本的な React アプリです。 クライアントエクステンションをデプロイしたら、他のウィジェットと同じようにLiferayのページにアプリを追加できます。
 
 利用可能なプロパティの詳細については、 [IFrame YAML設定リファレンス](../iframe-yaml-configuration-reference.md) を参照してください。
 
@@ -80,9 +80,9 @@ STARTED liferay-sample-iframe-1_1.0.0 [1592]
 
 IFrameはウィジェットとしてページに追加される。
 
-1. ページ上部の **Edit**(![Edit](../../../../images/icon-edit-pencil.png)) をクリックします。
+1. ページ上部の_Edit_(![Edit](../../../../images/icon-edit-pencil.png))をクリックします。
 
-1. ウィジェットをページに追加する。 フラグメントとウィジェットのサイドバー（！ [フラグメントとウィジェット](../../../../images/icon-plus.png) ）で、 **Widgets** をクリックします。
+1. ウィジェットをページに追加する。 フラグメントとウィジェットのサイドバー（！[フラグメントとウィジェット](../../../../images/icon-plus.png)）で、_Widgets_をクリックします。
 
 1. Client Extensions &rarr; Counter Appウィジェットを見つけ、ページにドラッグします。 Publish_をクリックする。
 
@@ -92,6 +92,6 @@ IFrameはウィジェットとしてページに追加される。
 
 ## 関連トピック
 
-* [フロントエンド・クライアント拡張](../../front-end-client-extensions.md) 
-* [カスタム要素とIFrameクライアント拡張機能を理解する](../understanding-custom-element-and-iframe-client-extensions.md) 
-* [クライアント拡張 UI リファレンス](../client-extensions-ui-reference.md) 
+* [フロントエンド・クライアント拡張](../../front-end-client-extensions.md)
+* [カスタム要素とIFrameクライアント拡張機能を理解する](../understanding-custom-element-and-iframe-client-extensions.md)
+* [クライアント拡張 UI リファレンス](../client-extensions-ui-reference.md)

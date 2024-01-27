@@ -5,7 +5,7 @@ toc:
 ---
 # サプライヤー
 
-{bdg-secondary}`利用可能な Liferay DXP 7.4 U84+/GA84+`
+{bdg-secondary}`liferay DXP 7.4 U84+/GA84+`
 
 Liferayのすぐに使えるサプライヤーアカウントタイプを使えば、サプライヤーとその特定のニーズに応えることができます。 さらに、すぐに使えるサプライヤーの役割を使用して、サプライヤーが独自のカタログやチャネルを管理できるようにすることもできます。 これにより、サプライヤーを設定し、サイト内で複数のベンダーをサポートする労力が大幅に削減される。
 
@@ -20,7 +20,7 @@ Liferayのすぐに使えるサプライヤーアカウントタイプを使え�
 :link: ./suppliers/supplier-account.md
 :::
 
-:::{grid-item-card} サプライヤーの役割
+:::{grid-item-card} 販売業者ロール
 :link: ./suppliers/supplier-role.md
 :::
 ::::

@@ -1,63 +1,15 @@
 # リソースの種類とストラクチャー
 
-<a name="accounts" />
-
-## アカウント
-
-アカウントは、サイトと相互作用している企業や組織のことです。 会社の確定情報が記載されており、同じアカウントに所属している全てのユーザーの情報も記載されています。 アカウントリソースについては以下の通りです。
-
-```json
-{ 
-   "activeIndividualsCount":0,
-   "dateCreated":"2019-12-27T19:17:49.924Z",
-   "dateModified":"2019-12-27T19:17:49.924Z",
-   "id":"386700295379617992",
-   "individualsCount":5,
-   "properties":{ 
-      "shippingCity":"Jasminport",
-      "website":"https://www.gino-jacobs.org",
-      "accountName":"Lesch, Walsh and Stracke",
-      "shippingStreet":"51189 Gina Drive",
-      "accountType":"Customer",
-      "description":"Open-architected scalable archive",
-      "industry":"Semiconductors",
-      "billingState":"New York",
-      "shippingPostalCode":"53050-7467",
-      "yearStarted":1911,
-      "numberOfEmployees":65391,
-      "accountId":"1e3c7cf2-fde6-465f-8bb6-fa8ca86d80ce",
-      "ownership":"Private",
-      "phone":"1-842-175-3034",
-      "billingStreet":"51087 Vi Fields",
-      "billingPostalCode":"11427",
-      "shippingCountry":"Guinea-Bissau",
-      "billingCountry":"British Indian Ocean Territory (Chagos Archipelago)",
-      "shippingState":"Ohio",
-      "currencyIsoCode":"GBP",
-      "fax":"1-507-906-4658",
-      "annualRevenue":83200000,
-      "billingCity":"Bayerborough"
-   },
-   "_links":{ 
-      "self":{ 
-         "href":"http://192.168.108.90:9090/api/reports/accounts/386700295379617992"
-      }
-   }
-} 
-```
-
 **プロパティ**
 
-* `activeIndividualsCount` (数値)：アカウントに所属するアクティブユーザーの数。
-* `dateCreated` （日付）：アカウントがシステムで作成された日付。
-* `dateModified` （日付）：アカウントプロパティが最後に変更された日付。
-* `ID` （文字列）：アカウントのユニークな識別子です。
-* `individualsCount` (数値)：アカウントに所属するユーザー数、アクティブまたは非アクティブのユーザーがこのメトリックでカウントされます。
-* ` Properties `: アカウントの動的プロパティのキー／バリュー（文字列）マップで、例としては業界、ファックス、電話などがあります。
+* `activeIndividualsCount` (数値)：アカウントに属するアクティブな個人の数。
+* `dateCreated`（日付）：アカウントがシステムに作成された日付。
+* `dateModified`（日付）：アカウントのプロパティが最後に変更された日付。
+* `ID` (文字列)：アカウントの一意な識別子；
+* `individualsCount` (数値)：アカウントに属する個人の数。アクティブな個人、非アクティブな個人がこのメトリクスで考慮される。
+* `プロパティ`：アカウントの動的プロパティのキー/値 (文字列) マップ。
 
-<a name="individuals" />
-
-## ユーザー
+## 個人
 
 ユーザーはポータルにアクセスしたすべてのユーザーを表します。 ユーザーは既知でも匿名でも構いません。 既知のユーザーとは、連絡先の同期中にデータが濃縮された人のことです。 充実させた後、既知のユーザーは、メールや人口統計などの追加属性を持つようになります。 個々のリソースとそのプロパティについて、以下の通りです。
 
@@ -90,14 +42,12 @@
 
 **プロパティ**
 
-* `人口統計` キー/値 (文字列:) ユーザーの人口統計の動的なプロパティのマップ; 例としては、性別、生年月日、電子メールなどがあります。
-* `ID` (文字列)：ユーザーの一意の識別子。
-
-<a name="segments" />
+* `Demographics` Key/Value (String:) 個人のデモグラフィックのダイナミックプロパティのマップ。
+* `ID` (文字列)：個人の一意な識別子。
 
 ## セグメント
 
-セグメントとは、似たような特徴を持つユーザーのグループのことです。 セグメントは **静的** または **動的** のいずれかです。 静的セグメントは、選択されたユーザーの静的なグループです。 動的セグメントは、基準に基づいています（例えば、米国から閲覧しているすべてのユーザーをグループ化する）。 定義された基準は、Liferay Analytics Cloud UIの動的セグメントに含まれるユーザーを決定します。 セグメントのリソースについては以下の通りです：
+セグメントとは、似たような特徴を持つユーザーのグループのことです。 セグメントは_静的_か_動的_のどちらかになる。 静的セグメントは、選択されたユーザーの静的なグループです。 動的セグメントは、基準に基づいています（例えば、米国から閲覧しているすべてのユーザーをグループ化する）。 定義された基準は、Liferay Analytics Cloud UIの動的セグメントに含まれるユーザーを決定します。 セグメントのリソースについては以下の通りです：
 
 ```json
 { 
@@ -121,15 +71,13 @@
 
 **プロパティ**
 
-* `dateCreated` （日付）：セグメントがシステムで作成された日付。
-* `ID` （文字列）：セグメントのユニークな識別子。
-* `individualCount` (数値)：このメトリックは匿名または既知のユーザーの両方を考慮します。
-* `knownIndividualsCount` (数値)：セグメントに属する既知のユーザーの数。
-* `name` （文字列）：セグメントの名前。
-* `segmentType` （文字列）：セグメントが静的か動的か。
-* `includeAnonymousUsers` （ブール値）：セグメントに匿名ユーザーが含まれているかどうか。 falseの場合、individualCountとknownIndividualCountは常に等しくなります。
-
-<a name="pages" />
+* `dateCreated`（日付）：セグメントがシステムに作成された日付。
+* `ID` (文字列)：セグメントの一意な識別子。
+* `individualCount`（数値）：このメトリクスは匿名または既知の個人の両方を考慮する。
+* `unknownIndividualsCount` (数値)：セグメントに属する既知の個体の数。
+* `name` (文字列)：セグメントの名前；
+* `segmentType` (String)：セグメントが静的か動的か。
+* `includeAnonymousUsers`（ブール値）：セグメントに匿名ユーザーを含めるかどうか。 falseの場合、individualCountとknownIndividualCountは常に等しくなります。
 
 ## ページ
 
@@ -263,30 +211,26 @@
 
 **プロパティ**
 
-* `title` (文字列)：ページタイトル。
-* `metrics` （メトリック）：ページのメトリック値のリスト。各ページはタイトル、URLのペアで一意に識別されます。
-  * `Metric` （オブジェクト）：メトリック値を表すオブジェクト。メトリックプロパティについては、以下に説明されています：
+* `タイトル` (文字列)：ページのタイトル。
+* `metrics`（メトリック）：各ページはタイトルとURLのペアによって一意に識別される。
+  * `Metric`（オブジェクト）：メトリックのプロパティを以下に示す：
     * トレンド
-      * `パーセント` （数値）-以前と現在のメトリック値の相対的なバリエーション。
-      * `TrendClassfication` （文字列）、POSITIVE、NEUTRAL、NEGATIVEの値をとることができます。 この指標は、以前の値と比較して、どれだけパフォーマンスが向上しているかを考慮しています。
-    * `Value` （数値）：メトリック値。rangeKeyによって異なります。選択したrangeKeyが30の場合、値は過去30日間の集計データを表します。
-    * `previousValue` （数値）：前のメトリック値。 また、要求されたレンジキーにもよりますが、選択されたレンジキーが30の場合、前の値は今日-60日目から今日-30日目までのデータを集約します。
-* `url` （文字列）：ページのURL
-
-<a name="assets" />
+      * `パーセンテージ` (数値) * 前と現在の指標値の相対的な変動。
+      * trendClassfication`(文字列): POSITIVE、NEUTRAL、NEGATIVEのいずれかを指定する。 この指標は、以前の値と比較して、どれだけパフォーマンスが向上しているかを考慮しています。
+    * `Value` (Number): メトリック値。rangeKey に依存し、rangeKey が 30 の場合、value は過去 30 日間の集計データを表す。
+    * `previousValue` (数値): メトリックの前回値。 また、要求されたレンジキーにもよりますが、選択されたレンジキーが30の場合、前の値は今日-60日目から今日-30日目までのデータを集約します。
+* `url` (文字列)：ページの URL
 
 ## アセット
 
 アセット情報は、追跡されたアセットページでのインタラクションデータを集約したものです。 どのページURLにも複数のアセットを含めることができます。 アセットメトリクスは、ページレポートを補完するもので、ページのインタラクションをより詳細に見ることができます。 ブログ、ドキュメントとメディア、フォーム、そしてWebコンテンツの4つのアセットが用意されています。 これらの各アセットには、特定のエンドポイントがあります：
 
-* ブログ - [https://analytics.liferay.com/api/reports/blogs](https://analytics.liferay.com/api/reports/blogs)
-* ドキュメントとメディア - [https://analytics.liferay.com/api/reports/documents-and-media](https://analytics.liferay.com/api/reports/documents-and-media)
-* フォーム- [https://analytics.liferay.com/api/reports/forms](https://analytics.liferay.com/api/reports/forms)
-* Webコンテンツ- [https://analytics.liferay.com/api/reports/web-contents](https://analytics.liferay.com/api/reports/web-contents)
+* ブログ - [https://analytics.liferay.com/api/reports/blogs](https://analytics.liferay.com/api/reports/blogs) 
+* ドキュメントとメディア - [https://analytics.liferay.com/api/reports/documents-and-media](https://analytics.liferay.com/api/reports/documents-and-media) 
+* フォーム - [https://analytics.liferay.com/api/reports/forms](https://analytics.liferay.com/api/reports/forms) 
+* Webコンテンツ - [https://analytics.liferay.com/api/reports/web-contents](https://analytics.liferay.com/api/reports/web-contents) 
 
 各アセットには、それぞれのプロパティが含まれています。
-
-<a name="blogs" />
 
 ### ブログ
 
@@ -320,15 +264,13 @@
 
 **プロパティ**
 
-* `ID` （文字列）：ブログのユニークな識別子。
-* ` Title ` （文字列）：ブログに使用されるタイトル。
-* `Reading Time Metric` （Double）：ブログの閲覧に費やしたユーザーの平均時間。
-* `Clicks Metric` （Double）：ブログ上でユーザーがクリックした回数の合計。
-* `Views Metric` （Double）：ブログのユーザー閲覧数の合計。
-* `Ratings Metric` （Double）：その選択期間中のブログの平均評価（1〜5の範囲）。
-* `Comments Metric` （Double）：ブログに追加されたコメントの合計。
-
-<a name="documents-and-media" />
+* `ID` (文字列)：ブログの一意な識別子。
+* `タイトル` (String) ：ブログのタイトル。
+* `読書時間メトリクス` (Double)：ブログを読むのに費やしたユーザーの平均時間。
+* `Clicks Metric` (Double)：ブログに対するユーザーのクリック数の合計。
+* `Views Metric` (Double)：ブログのユーザー閲覧数の合計。
+* `評価メトリック` (Double)：選択期間中のブログの平均評価 (1-5の範囲)。
+* `コメントメトリック` (Double)：ブログに追加されたコメントの合計。
 
 ### ドキュメントとメディア
 
@@ -359,14 +301,12 @@
 
 **プロパティ**
 
-* `ID` （文字列）：ドキュメントまたはメディアのユニークな識別子。
-* `Title` （文字列）：ドキュメントまたはメディアに使用されるタイトル。
-* `Downloads Metric` （Double）：ドキュメントまたはメディアのユーザーダウンロード数の合計。
-* `Ratings Metric` （Double）：その選択期間中のドキュメントまたはメディアの平均評価（1〜5の範囲）。
-* `Comments Metric` （Double）：ドキュメントまたはメディアに追加されたコメントの合計。
-* `Previews Metric` （Double）：ドキュメントまたはメディアのユーザープレビュー数の合計。
-
-<a name="forms" />
+* `ID` (文字列)：ドキュメントまたはメディアの一意な識別子。
+* `タイトル` (String) ：ドキュメントまたはメディアのタイトル。
+* `Downloads Metric` (Double)：ドキュメントまたはメディアのユーザーダウンロード数の合計。
+* `評価メトリック` (Double)：選択期間中のドキュメントまたはメディアの平均評価 (1-5の範囲)。
+* `コメントメトリック` (Double)：ドキュメントやメディアに追加されたコメントの合計。
+* `プレビューメトリック` (Double)：ドキュメントやメディアに対するユーザーのプレビュー数の合計。
 
 ### フォーム
 
@@ -400,12 +340,12 @@
 
 **プロパティ**
 
-* `ID` （文字列）：フォームのユニークな識別子。
-* ` Title ` （文字列）：フォームに使用されるタイトル。
-* `Views Metric` （Double）：フォームのユーザー閲覧数の合計。
-* `Abandonments Metric` (Double)：フォームの放棄率（0～1の範囲）。
-* `Submissions Metric` （Double）：フォームの送信数の合計。
-* `Completion Time Metric` (Double)：フォームを完了するためのユーザーの平均時間。
+* `ID` (文字列)：フォームの一意な識別子。
+* `タイトル` (文字列)：フォームのタイトル。
+* `Views Metric` (Double)：フォームに対するユーザーの閲覧数の合計。
+* `放棄メトリック` (Double)：フォームの放棄率 (0-1 の範囲)。
+* `投稿数メトリクス` (Double)：フォームの投稿数の合計。
+* `完了時間メトリクス` (Double)：ユーザーがフォームを完了するまでの平均時間。
 
 また、ページのリンクに移動すると、フォームのページメトリクス情報を見ることができます。 ページおよびフォームフィールドごとにフォームメトリックが表示されます。
 
@@ -474,17 +414,15 @@
 
 **プロパティ**
 
-* `Form ID` （文字列）：フォームのユニークな識別子。
-* `Form Title` （文字列）：フォームに使用されるタイトル。
-* `Field Interactions Metric` (Double)：フォーム項目のユーザーインタラクションの合計。
-* `Field Interactions Duration Metric` (Double)：フォーム項目の平均インタラクション時間。
-* `Field Abandonments Metric` (Double)：このフィールドでフォームを放棄したユーザーの合計。
+* `フォームID` (文字列)：フォームの一意な識別子。
+* `フォームのタイトル` (String)：フォームのタイトル。
+* `Field Interactions Metric` (Double)：フォームフィールドのユーザーインタラクションの合計。
+* `Field Interactions Duration Metric` (Double)：フォームフィールドの平均インタラクション時間。
+* `Field Abandonments Metric` (Double)：このフィールドでユーザーがフォームを放棄した数の合計。
 * `Page Views Metric` (Double)：フォームページのユーザービューの合計。
 * `Page Abandonments Metric` (Double)：このページでユーザーがフォームを放棄した数の合計。
 
-<a name="web-content" />
-
-### Web コンテンツ
+### Webコンテンツ
 
 ```json
  {
@@ -505,6 +443,6 @@
 
 **プロパティ**
 
-* `ID` （文字列）：Webコンテンツのユニークな識別子。
-* ` Title ` （文字列）：Webコンテンツに使用されるタイトル。
-* `Views Metric` （Double）：Webコンテンツのユーザー閲覧数の合計。
+* `ID` (文字列)：ウェブコンテンツの一意な識別子。
+* `タイトル` (文字列)：ウェブコンテンツのタイトル。
+* `Views Metric` (Double)：ウェブコンテンツのユーザー閲覧数の合計。

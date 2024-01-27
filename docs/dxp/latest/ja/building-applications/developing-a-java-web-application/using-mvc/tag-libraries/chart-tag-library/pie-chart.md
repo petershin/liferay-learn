@@ -1,42 +1,41 @@
 # 円グラフ
 
-円グラフはパーセンテージベースです。 円グラフは、パーセンテージベースのデータを個々の円のスライスとしてモデル化します。 各データセットは、 [`SingleValueColumn`オブジェクト](https://docs.liferay.com/ce/apps/frontend-taglib/latest/javadocs/com/liferay/frontend/taglib/chart/model/SingleValueColumn.html) の新しいインスタンスとして定義する必要があります。 次の手順に従って、円グラフを使用するようにポートレットを構成します。
+円グラフはパーセンテージベースです。 円グラフは、パーセンテージベースのデータを個々の円のスライスとしてモデル化します。 各データセットは、 [`SingleValueColumn` オブジェクト](https://resources.learn.liferay.com/reference/latest/en/dxp/javadocs/modules/apps/frontend-taglib/com.liferay.frontend.taglib.chart/com/liferay/frontend/taglib/chart/model/SingleValueColumn.html) の新しいインスタンスとして定義されなければならない。 次の手順に従って、円グラフを使用するようにポートレットを構成します。
 
-1. Chart taglibを`PieChartConfig`クラスと`SingleValueColumn`クラスとともにバンドルの`init.jsp`ファイルにインポートします。
+1. チャートタグライブを `PieChartConfig` と `SingleValueColumn` クラスと共にバンドルの `init.jsp` ファイルにインポートする：
 
-    ```jsp
-    <%@ taglib prefix="chart" uri="http://liferay.com/tld/chart" %>
-    <%@ page import="com.liferay.frontend.taglib.chart.model.percentage.pie.PieChartConfig" %>
-    <%@ page import="com.liferay.frontend.taglib.chart.model.SingleValueColumn" %>
-    ```
+   ```jsp
+   <%@ taglib prefix="chart" uri="http://liferay.com/tld/chart" %>
+   <%@ page import="com.liferay.frontend.taglib.chart.model.percentage.pie.PieChartConfig" %>
+   <%@ page import="com.liferay.frontend.taglib.chart.model.SingleValueColumn" %>
+   ```
 
-1. 次のJavaスクリプトレットを`view.jsp`の先頭に追加します。
+1. 以下のJavaスクリプトレットを`view.jsp`の先頭に追加する：
 
-    ```java
-    <%
-    PieChartConfig _pieChartConfig = new PieChartConfig();
+   ```java
+   <%
+   PieChartConfig _pieChartConfig = new PieChartConfig();
 
-    _pieChartConfig.addColumn(
-      new SingleValueColumn("data1", 85.4)
-    );
+   _pieChartConfig.addColumn(
+     new SingleValueColumn("data1", 85.4)
+   );
+   %>
+   ```
 
-    %>
-    ```
+1. `<chart>`taglib を`view.jsp` に追加し、`_pieChartConfig`を`config` 属性の値として渡す：
 
-1. `<chart>` taglibを`view.jsp`に追加し、`config`属性の値として`_pieChartConfig`を渡します。
+   ```jsp
+   <chart:pie
+     config="<%= _pieChartConfig %>"
+   />
+   ```
 
-    ```jsp
-    <chart:pie
-      config="<%= _pieChartConfig %>"
-    />
-    ```
-
-![円グラフは、パーセンテージベースのデータを個々の円のスライスとしてモデル化します。](./pie-chart/images/01.png)
+![A pie chart models percentage-based data as individual slices of pie.](./pie-chart/images/01.png)
 
 これで、アプリの円グラフを作成する方法がわかりました。
 
 ## 関連トピック
 
-* [ドーナツグラフ](./donut-chart.md)
-* [円グラフ](./pie-chart.md)
-* [Using Clay Taglibs in Your Portlet](../clay-tag-library.md)
+* [ドーナツ・チャート](./donut-chart.md)
+* [ゲージチャート](./gauge-chart.md)
+* [スプラインチャート](./spline-chart.md)

@@ -1,6 +1,6 @@
 # エクスプレッションビルダー検証のリファレンス
 
-{bdg-secondary}`Liferay 7.4 U67+/GA67+`.
+{bdg-secondary}`Liferay 7.4 U67+/GA67+`
 
 カスタムオブジェクトでは、Liferayのエクスプレッションビルダーを使用してフィールドの検証を作成できます。 このツールには、定義済みのフィールド、演算子、関数を使用して複雑な検証ルールを迅速に定義するための統合エディターがあります。 利用可能な要素は、条件サイドパネルで閲覧できます。
 
@@ -30,7 +30,7 @@ condition([condition], [return-value])
 
 ### が以下を含む（テキストあり）
 
-テキストフィールドが特定のString値を含んでいるかどうかを確認し、ブール値を返します。 フィールドに値が **ない** 場合は `false` を返す。
+テキストフィールドが特定のString値を含んでいるかどうかを確認し、ブール値を返します。 フィールドに値が _ない_ 場合は `false` を返す。
 
 ```
 contains([textField], "[string]")
@@ -38,7 +38,7 @@ contains([textField], "[string]")
 
 ### 含まない（テキストあり）
 
-テキストフィールドに特定の文字列値が含まれていないかどうかを調べ、ブール値を返します。 フィールドに **値が** あれば、`false`を返す。
+テキストフィールドに特定の文字列値が含まれていないかどうかを調べ、ブール値を返します。 フィールドに_値が_あれば、`false`を返す。
 
 ```
 NOT(contains([textField], "[string]"))
@@ -108,7 +108,7 @@ Liferayでは、整数、長整数、小数、小数の精度フィールドに�
 
 ### 条件（数値あり）
 
-ユーザー入力が1つ以上の条件を満たすかどうかをチェックし、ブール値を返します。 この関数は`if`文のように動作する。 各式は少なくとも一つの `条件`（例えば `numericFieldName == 10`）を含み、`true` または `false` を返す。 同じ式に複数の条件を追加し、どの条件も満たさない場合に戻り値を決定することができる（例：`numericFieldName == 10, numericFieldName != 100, true, false`）。
+ユーザー入力が1つ以上の条件を満たすかどうかをチェックし、ブール値を返す。 この関数は`if`文のように動作する。 各式は少なくとも一つの `条件`（例えば `numericFieldName == 10`）を含み、`true` または `false` を返す。 同じ式に複数の条件を追加し、どの条件も満たさない場合に戻り値を決定することができる（例：`numericFieldName == 10, numericFieldName != 100, true, false`）。
 
 ```
 condition([condition], [return-value])
@@ -116,7 +116,7 @@ condition([condition], [return-value])
 
 ### が以下を含む（数値あり）
 
-数値フィールドが特定の数値を含んでいるかどうかを確認し、ブール値を返します。 フィールドに値が **ない** 場合は `false` を返す。
+数値フィールドが特定の数値を含んでいるかどうかを確認し、ブール値を返します。 フィールドに値が _ない_ 場合は `false` を返す。
 
 ```
 contains([numericField], [number])
@@ -124,7 +124,7 @@ contains([numericField], [number])
 
 ### 含まない（数値あり）
 
-数値フィールドが特定の数値を含んでいるかどうかを確認し、ブール値を返します。 フィールドに **値が** あれば、`false`を返す。
+数値フィールドが特定の数値を含んでいるかどうかを確認し、ブール値を返します。 フィールドに_値が_あれば、`false`を返す。
 
 ```
 NOT(contains([numericField], [number]))
@@ -132,7 +132,7 @@ NOT(contains([numericField], [number]))
 
 ### 小数である
 
-数値フィールドが小数であるかどうかを確認し、ブール値を返します。 フィールドが **10進数でない** 場合、`false`を返す。
+数値フィールドが小数であるかどうかを確認し、ブール値を返します。 フィールドが_10進数でない_場合、`false`を返す。
 
 ```
 isDecimal([numericField])
@@ -140,7 +140,7 @@ isDecimal([numericField])
 
 ### 整数である
 
-数値フィールドが整数であるかどうかを確認し、ブール値を返します。 フィールドが **整数でない** 場合、`false`を返す。
+数値フィールドが整数であるかどうかを確認し、ブール値を返します。 フィールドが_整数でない_場合、`false`を返す。
 
 ```
 isInteger([numericField])
@@ -164,7 +164,7 @@ isInteger([numericField])
 
 ### 以上
 
-数値フィールドが特定の数値より大きいかどうかを確認し、ブール値を返します。 もしフィールドが **大きくない** なら、`false`を返す。
+数値フィールドが特定の数値より大きいかどうかを確認し、ブール値を返します。 もしフィールドが_大きくない_なら、`false`を返す。
 
 ```
 [numericField] > [number]
@@ -180,7 +180,7 @@ isInteger([numericField])
 
 ### 以下
 
-数値フィールドが特定の数値以下かどうかを確認し、ブール値を返します。 もしフィールドが **小さくない** なら、`false`を返す。
+数値フィールドが特定の数値以下かどうかを確認し、ブール値を返します。 もしフィールドが_小さくない_なら、`false`を返す。
 
 ```
 [numericField] < [number]
@@ -280,7 +280,7 @@ pastDates(startDate, "2024-01-01")
 
 ### 範囲
 
-日付フィールドの値が過去の日付で始まり、未来の日付で終わるかどうかをチェックする。 もし日付が範囲内に **ない** 場合、`false`を返す。
+日付フィールドの値が過去の日付で始まり、未来の日付で終わるかどうかをチェックする。 *もし日付が範囲内に*なければ、`false`を返す。
 
 ```
 futureDates([dateField], [parameter])
@@ -315,7 +315,7 @@ pastDates(startDate, endDate)
 複数の数値フィールドをお互いに減算して式を作成します。
 
 ```
-[numericField] * [numericField]
+[numericField] - [numericField]
 ```
 
 ### で割った ( `/` )
@@ -338,7 +338,7 @@ pastDates(startDate, endDate)
 
 論理演算子は複数の要素で使用し、複数の要素から複雑な条件を集計します。 現在、エクスプレッションビルダーのバリデーションには `AND` 演算子と `OR` 演算子があります。
 
-* `AND`：従属関係を示す。
+* `AND`:従属関係を示す。
 
 * `OR`：独立した関係を示す。
 
@@ -414,5 +414,4 @@ futureDates(fieldName, startsFrom, responseDate, years, 0, endsOn, responseDate,
 
 * [オブジェクトの作成](../creating-objects.md)
 * [オブジェクトへのフィールドの追加](../fields/adding-fields-to-objects.md)
-* [カスタムバリデーションの追加](../validations/adding-field-validations.md)
-
+* [フィールド検証の追加](../validations/adding-field-validations.md)

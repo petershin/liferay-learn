@@ -1,8 +1,8 @@
 # テーマのお気に入りアイコンクライアント拡張の使用
 
-{bdg-secondary}`利用可能な Liferay 7.4`
+{bdg-secondary}`liferay 7.4+`
 
-テーマのお気に入りアイコンクライアント拡張を使えば、選択したページでテーマのお気に入りアイコンを上書きすることができます。 [サンプルワークスペース](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace) から、クライアント拡張を構築し、デプロイします。
+テーマのお気に入りアイコンクライアント拡張を使えば、選択したページでテーマのお気に入りアイコンを上書きすることができます。 [サンプル・ワークスペース](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace) を使用して、クライアント・エクステンションのビルドとデプロイを開始します。
 
 ## 前提条件
 
@@ -11,7 +11,7 @@
 1. Java（JDK8またはJDK11）をインストールします。
 
     ```{note}
-    対応するJDK、データベース、環境については、 [互換性マトリックス](https://help.liferay.com/hc/ja/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) を確認してください。 推奨されるJVMの設定については、[JVM設定](../../../../installation-and-upgrades/reference/jvm-configuration.md)を参照してください。
+    サポートされているJDK、データベース、環境については、 [互換性マトリックス](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) を確認してください。 推奨されるJVM設定については、 [JVM Configuration](../../../../installation-and-upgrades/reference/jvm-configuration.md) を参照のこと。
     ```
 
 1. サンプルワークスペースをダウンロードし、解凍します。
@@ -28,7 +28,7 @@
 
 ## クライアント拡張の検討
 
-テーマのお気に入りアイコンクライアント拡張は、サンプルワークスペースの `client-extensions/sample-global-css/` フォルダにあります。 `client-extension.yaml` ファイルに定義されています。
+テーマのファビコンクライアント拡張はサンプルワークスペースの `client-extensions/liferay-sample-theme-favicon/` フォルダにあります。 これは `client-extension.yaml` ファイルで定義されている：
 
 ```yaml
 liferay-sample-theme-favicon:
@@ -37,9 +37,9 @@ liferay-sample-theme-favicon:
     url: favicon.ico
 ```
 
-このクライアント拡張は、IDが `liferay-sample-theme-favicon`で、タイプや追加するお気に入りアイコンファイルなど、テーマのお気に入りアイコンクライアント拡張の主要な設定項目が含まれています。 利用可能なプロパティの詳細については、[テーマのお気に入りアイコンYAML設定リファレンス](../theme-favicon-yaml-configuration-reference.md)を参照してください。
+このクライアント拡張モジュールの ID は `liferay-sample-theme-favicon` で、追加するファビコンファイルの種類など、テーマのファビコンクライアント拡張モジュールの主要な設定を含みます。 利用可能なプロパティの詳細については、 [Theme Favicon YAML Configuration Reference](../theme-favicon-yaml-configuration-reference.md)。
 
-また、以下の`assemble` YAMLブロックも含まれています。
+また、`assemble` YAML ブロックも含まれます：
 
 ```yaml
 assemble:
@@ -47,7 +47,7 @@ assemble:
       into: static
 ```
 
-これは、 `assets/` フォルダ内のすべてを、ビルドされたクライアント拡張`.zip` ファイルに静的リソースとして含めることを指定します。 テーマのお気に入りアイコンクライアント拡張のお気に入りアイコンファイルは、Liferayの静的リソースとして使用されます。
+これは、`assets/` フォルダにあるすべてのものが、ビルドされたクライアントの拡張子 `.zip` ファイルに静的リソースとして含まれるように指定します。 テーマのお気に入りアイコンクライアント拡張のお気に入りアイコンファイルは、Liferayの静的リソースとして使用されます。
 
 ## Liferayにクライアント拡張をデプロイする
 
@@ -60,14 +60,14 @@ Liferayが起動したら、サンプルのワークスペースにあるクラ�
 ../../gradlew clean deploy -Ddeploy.docker.container.id=$(docker ps -lq)
 ```
 
-これにより、クライアント拡張が構築され、Liferayの`deploy/`フォルダにzipをデプロイします。
+これでクライアント拡張機能がビルドされ、Liferay の `deploy/` フォルダに zip がデプロイされます。
 
 ```{note}
-クライアント拡張をLiferay Experience Cloudにデプロイするには、Liferay Cloudの [コマンドラインツール](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool) を使って [`lcp deploy`](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool#deploying-to-your-liferay-cloud-environment) を実行します。
+クライアント拡張を Liferay Experience Cloud にデプロイするには、Liferay Cloud [Command-Line Tool](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool) を使用して [`lcp deploy`](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool#deploying-to-your-liferay-cloud-environment) を実行します。
 ```
 
 ```{tip}
-ワークスペース内のすべてのクライアント拡張を同時にデプロイするには、`client-extensions/`フォルダからコマンドを実行します。
+ワークスペース内のすべてのクライアントエクステンションを同時にデプロイするには、`client-extensions/` フォルダからコマンドを実行します。
 ```
 
 Liferayインスタンスのコンソールでデプロイメントを確認します。
@@ -79,27 +79,28 @@ STARTED liferay-sample-theme-favicon_1.0.0
 ## ページでクライアント拡張を使用する
 
 <!-- Should we suggest doing this to the pages of a Site Template? -->
+
 デプロイされたクライアント拡張を使用するために、Liferayのページを設定します。
 
-1. ページで、上部にある **編集**(![Edit icon](../../../../images/icon-edit-pencil.png)) をクリックします。
+1. ページ上部の_Edit_(![編集アイコン](../../../../images/icon-edit-pencil.png))をクリックします。
 
-1. サイドバーの［ページデザインオプション］メニュー（![Page Design Options icon](../../../../images/icon-format.png)）に移動し、メニュー上部の **設定**(![Configuration icon](../../../../images/icon-cog3.png)) をクリックします。
+1. サイドバーで、ページデザインオプションメニュー（![ページデザインオプションアイコン](../../../../images/icon-format.png)）に移動し、メニュー上部の_configuration_（![設定アイコン](../../../../../images/icon-cog3.png)）をクリックします。
 
-1. ［**ルック&フィール**］ タブの **お気に入りアイコン** セクションで、 ［**お気に入りアイコンの変更**］ をクリックします。
+1. ルック＆フィール」タブの「ファビコン」セクションで、「ファビコンの変更」をクリックします。
 
-1. ［**クライアント拡張**］ をクリックし、新しくデプロイしたお気に入りアイコン、 ［**サンプルテーマのお気に入りアイコン**］ を選択します。
+1. _Client Extensions_をクリックし、新しくデプロイされたファビコン、_Sample Theme Favicon_を選択します。
 
-   ![［サンプルテーマのお気に入りアイコン］クライアント拡張を選択し、［保存］をクリックします。](./using-a-theme-favicon-client-extension/images/01.gif)
+   ![Select the Sample Theme Favicon client extension and click Save.](./using-a-theme-favicon-client-extension/images/01.gif)
 
-1. 下にスクロールして、 ［**保存**］ をクリックします。
+1. 下にスクロールして「保存」をクリックする。
 
 1. ページに戻ります。 新しいお気に入りアイコンがブラウザのタブに表示されます。
 
-![新しいお気に入りアイコンがブラウザのタブに表示されます。](./using-a-theme-favicon-client-extension/images/02.png)
+![The new favicon appears on the browser tab.](./using-a-theme-favicon-client-extension/images/02.png)
 
 ## 次のステップ
 
 Liferayでテーマのお気に入りアイコンクライアント拡張を使用できるようになりました。 次は他のクライアント拡張タイプのデプロイメントを試してみましょう。
 
-* [CSSクライアント拡張の使用](./using-a-css-client-extension.md)
-* [JSクライアント拡張の使用](./using-a-javascript-client-extension.md)
+* [CSSクライアント拡張機能を使う](./using-a-css-client-extension.md)
+* [JSクライアント・エクステンションの使用](./using-a-javascript-client-extension.md)

@@ -1,8 +1,8 @@
 # CSSクライアント拡張の使用
 
-{bdg-secondary}`利用可能な Liferay 7.4`
+{bdg-secondary}`liferay 7.4+`
 
-CSSクライアント拡張は、ページに新しいCSSスタイリングを導入します。 ページ上に配置されたCSSクライアント・エクステンションは、テーマやスタイルブックの設定を含む、ページの既存のスタイルに追加されます。 クライアント拡張（ [サンプルワークスペース](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace) ）から始めます。
+CSSクライアント拡張は、ページに新しいCSSスタイリングを導入します。 ページ上に配置されたCSSクライアント・エクステンションは、テーマやスタイルブックの設定を含む、ページの既存のスタイルに追加されます。 クライアント・エクステンション（ [サンプル・ワークスペース](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace) ）から始めます。
 
 ## 前提条件
 
@@ -11,7 +11,7 @@ CSSクライアント拡張は、ページに新しいCSSスタイリングを�
 1. Java（JDK8またはJDK11）をインストールします。
 
    ```{note}
-   対応するJDK、データベース、環境については、 [互換性マトリックス](https://help.liferay.com/hc/ja/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) を確認してください。 推奨されるJVMの設定については、[JVM設定](../../../../installation-and-upgrades/reference/jvm-configuration.md)を参照してください。
+   サポートされているJDK、データベース、環境については、 [互換性マトリックス](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) を確認してください。 推奨されるJVM設定については、 [JVM Configuration](../../../../installation-and-upgrades/reference/jvm-configuration.md) を参照のこと。
    ```
 
 1. サンプルワークスペースをダウンロードし、解凍します。
@@ -28,7 +28,7 @@ CSSクライアント拡張は、ページに新しいCSSスタイリングを�
 
 ## クライアント拡張の検討と修正
 
-CSS クライアント拡張はサンプルワークスペースの `client-extensions/liferay-sample-global-css/` フォルダにあります。 `client-extension.yaml` ファイルに定義されています。
+CSS クライアント拡張はサンプルワークスペースの `client-extensions/liferay-sample-global-css/` フォルダにあります。 これは `client-extension.yaml` ファイルで定義されている：
 
 ```yaml
 liferay-sample-global-css:
@@ -37,9 +37,9 @@ liferay-sample-global-css:
     url: global.css
 ```
 
-クライアントエクステンションのIDは `liferay-sample-global-css` で、 `タイプ` や追加するCSSファイルなど、CSSクライアントエクステンションの主要な設定が含まれています。 利用可能なプロパティの詳細については、[CSS YAML設定リファレンス](../css-yaml-configuration-reference.md) を参照してください。
+クライアントエクステンションは `liferay-sample-global-css` という ID を持ち、`type` や追加する CSS ファイルなど、CSS クライアントエクステンションの主要な設定を含んでいます。 利用可能なプロパティの詳細については、 [CSS YAML configuration reference](../css-yaml-configuration-reference.md) 。
 
-また、`assemble`ブロックが含まれています。
+`assemble`ブロックも含まれている：
 
 ```yaml
 assemble:
@@ -47,9 +47,9 @@ assemble:
       into: static
 ```
 
-これは、 `assets/` フォルダ内のすべてを、ビルドされたクライアント拡張`.zip` ファイルに静的リソースとして含めることを指定します。 CSSクライアント拡張子のCSSファイルは、Liferayの静的リソースとして使用されます。
+これは、`assets/` フォルダにあるすべてのものが、ビルドされたクライアントの拡張子 `.zip` ファイルに静的リソースとして含まれるように指定します。 CSSクライアント拡張子のCSSファイルは、Liferayの静的リソースとして使用されます。
 
-`assets/global.css` ファイルにこのCSSが含まれています。
+`assets/global.css`ファイルにはこのCSSが含まれている：
 
 ```css
 .logo::after {
@@ -61,7 +61,7 @@ assemble:
 
 これは、クライアントエクステンションが有効になっているときに、ホームページのLiferayロゴの色を変更します。
 
-ボタンの背景色を変更するCSSを追加します。 `global.css`ファイルを開き、`.btn-primary`クラスの宣言を追加し、 `background-color`を指定します。
+ボタンの背景色を変更するCSSを追加します。 global.css`ファイルを開き、`.btn-primary`クラスの宣言を追加し、`background-color`を指定する：
 
 ```css
 .btn-primary {
@@ -82,14 +82,14 @@ Liferayが起動したら、サンプルのワークスペースにあるクラ�
 ../../gradlew clean deploy -Ddeploy.docker.container.id=$(docker ps -lq)
 ```
 
-これにより、クライアント拡張が構築され、Liferayの`deploy/`フォルダにzipをデプロイします。
+これでクライアント拡張機能がビルドされ、Liferay の `deploy/` フォルダに zip がデプロイされます。
 
 ```{note}
-クライアント拡張をLiferay Experience Cloudにデプロイするには、Liferay Cloud [コマンドラインツール](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool) を使って [`lcp deploy`](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool#deploying-to-your-liferay-cloud-environment) を実行します。
+クライアント拡張を Liferay Experience Cloud にデプロイするには、Liferay Cloud [Command-Line Tool](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool) を使用して [`lcp deploy`](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool#deploying-to-your-liferay-cloud-environment) を実行します。
 ```
 
 ```{tip}
-ワークスペース内のすべてのクライアント拡張を同時にデプロイするには、`client-extensions/`フォルダからコマンドを実行します。
+ワークスペース内のすべてのクライアントエクステンションを同時にデプロイするには、`client-extensions/` フォルダからコマンドを実行します。
 ```
 
 Liferayインスタンスのコンソールでデプロイメントを確認します。
@@ -104,23 +104,23 @@ STARTED sample-global-css_1.0.0
 
 デプロイされたクライアント拡張を使用するために、Liferayのページを設定します。
 
-1. 少なくとも1つのボタンがあるページで、上部にある **Edit**( ![Edit icon](../../../../images/icon-edit-pencil.png) ) をクリックします。
+1. 少なくとも1つのボタンがあるページで、上部の_編集_ ( ![編集アイコン](../../../../images/icon-edit-pencil.png))をクリックします。
 
-1. サイドバーの「ページデザインオプション」メニュー( ![Page Design Options icon](../../../../images/icon-format.png) )に移動し、メニュー上部の「**設定**」 アイコン(![Configuration icon](../../../../images/icon-cog3.png))をクリックします。
+1. サイドバーで、ページデザインオプションメニュー（！[ページデザインオプションアイコン](../../../../images/icon-format.png)）に移動し、メニューの一番上にある_設定_アイコン（！[設定アイコン](../../../../../images/icon-cog3.png)）をクリックします。
 
-   ![このクライアントエクステンションの設定にアクセスするには、ページデザインオプションメニューの設定アイコンをクリックします。](./using-a-css-client-extension/images/01.png)
+   ![Click the configuration icon in the Page Design Options menu to access this client extension's configurations.](./using-a-css-client-extension/images/01.png)
 
-1. ページ下部の［CSS Client Extensions］のセクションで、 ［**Add CSS Client Extensions**］ をクリックします。
+1. ページ下部のCSS Client Extensionsセクションで、_Add CSS Client Extensions_をクリックします。
 
-   ![リストからCSSクライアント拡張を追加します。](./using-a-css-client-extension/images/02.png)
+   ![Add the CSS client extension from the list.](./using-a-css-client-extension/images/02.png)
 
-1. ポップアップモーダルからCSSクライアント拡張を選択し、 ［**追加**］ をクリックします。
+1. ポップアップモーダルからCSSクライアント拡張機能を選択し、_追加_をクリックします。
 
-1. ［**保存**］ をクリックします。
+1. *保存*をクリックします。
 
 これで、クライアント拡張の設定は完了です。 ページエディタで、ボタンの背景色が、CSSで指定した色になりました。 編集モード以外でページにCSSが適用されるのを確認するには、ページを公開する必要があります。
 
-![クライアント拡張のglobal.cssファイルで背景色を変更すると、ページ上のすべてのボタンが変更されました。](./using-a-css-client-extension/images/03.png)
+![If you changed the background color in your client extension's global.css file, all buttons on the page were changed.](./using-a-css-client-extension/images/03.png)
 
 ```{tip}
 ページ上のボタンがまだデフォルトの背景色で表示されている場合は、ページを更新してブラウザのキャッシュをクリアしてください（ほとんどのブラウザで `CTRL + SHIFT + R` ）。 クライアント拡張を変更して再デプロイした場合、変更を確認するには、ページから削除し、再追加する必要があるかもしれません。
@@ -130,4 +130,4 @@ STARTED sample-global-css_1.0.0
 
 LiferayでCSSクライアント拡張を使用することに成功しました。 次は他のクライアント拡張タイプのデプロイメントを試してみましょう。
 
-* [JSクライアント拡張の使用](./using-a-javascript-client-extension.md)
+* [JSクライアント・エクステンションの使用](./using-a-javascript-client-extension.md)

@@ -13,8 +13,7 @@ toc:
   - ./creating-and-managing-objects/localizing-object-definitions-and-entries.md
   - ./creating-and-managing-objects/using-system-objects-with-custom-objects.md
   - ./creating-and-managing-objects/activating-and-deactivating-objects.md
-  - >-
-    ./creating-and-managing-objects/exporting-and-importing-object-definitions.md
+  - ./creating-and-managing-objects/exporting-and-importing-object-definitions.md
   - ./creating-and-managing-objects/auditing-object-events.md
   - ./creating-and-managing-objects/deleting-objects.md
   - ./creating-and-managing-objects/managing-objects-with-headless-apis.md
@@ -45,7 +44,7 @@ creating-and-managing-objects/managing-objects-with-headless-apis.md
 
 {bdg-secondary}`liferay 7.4+`
 
-Liferay Objectでは、コードを記述することなくビジネスニーズを満たすカスタムアプリケーションを [作成](./creating-and-managing-objects/creating-objects.md) するための便利なUIを提供します。 オブジェクトを使用して、システムオブジェクトとカスタムオブジェクトの両方を管理および拡張することもできます。 これには、 [フィールド](./creating-and-managing-objects/fields.md) 、 [リレーションシップ](./creating-and-managing-objects/relationships.md) 、 [アクション](./creating-and-managing-objects/actions.md) 、 [レイアウト](./creating-and-managing-objects/layouts.md) 、 [ビュー](./creating-and-managing-objects/views.md) 、 [バリデーション](./creating-and-managing-objects/validations.md) 、 [カスタムステータス](./creating-and-managing-objects/fields/adding-and-managing-custom-states.md) の追加が含まれます。 モデル・ビルダーGUIを使って複雑なオブジェクト構造を設計することもできます。 このグラフィカルなツールは、オブジェクトの定義をカードとして表示し、定義間の関係を視覚化します。 詳しくは [Using Objects Model Builder](./creating-and-managing-objects/using-the-objects-model-builder.md) を参照してください。
+Liferay Objectsは、 [、コードを書かずにビジネスニーズを満たす](./creating-and-managing-objects/creating-objects.md) カスタムアプリケーションを作成するための便利なUIを提供します。 オブジェクトを使用して、システムオブジェクトとカスタムオブジェクトの両方を管理および拡張することもできます。 これには、 [フィールド](./creating-and-managing-objects/fields.md) 、 [リレーション](./creating-and-managing-objects/relationships.md) 、 [アクション](./creating-and-managing-objects/actions.md) 、 [レイアウト](./creating-and-managing-objects/layouts.md) 、 [ビュー](./creating-and-managing-objects/views.md) 、 [バリデーション](./creating-and-managing-objects/validations.md) 、 [カスタムステート](./creating-and-managing-objects/fields/adding-and-managing-custom-states.md) の追加が含まれます。 モデル・ビルダーGUIを使って複雑なオブジェクト構造を設計することもできます。 このグラフィカルなツールは、オブジェクトの定義をカードとして表示し、定義間の関係を視覚化します。 詳しくは [Using Objects Model Builder](./creating-and-managing-objects/using-the-objects-model-builder.md) を参照してください。
 
 !!! note
     システムオブジェクトはオブジェクトフレームワークと統合されたデフォルトのLiferayアプリケーションで、カスタムオブジェクトはユーザーによって作成され公開された定義です。
@@ -66,7 +65,7 @@ Liferay Objectでは、コードを記述することなくビジネスニーズ
 :::
 
 :::{grid-item-card} フォルダによるオブジェクトの整理
-:link: ./creating-and-managing-objects/organizing-objects-with-folders.md
+:link: ./creating and-managing-objects/organizing-objects-with-folders.md
 :::
 
 :::{grid-item-card} 項目
@@ -94,7 +93,7 @@ Liferay Objectでは、コードを記述することなくビジネスニーズ
 :::
 
 :::{grid-item-card} オブジェクト定義とエントリのローカライズ
-:link: ./creating-and-managing-objects/localizing-object-definitions-and-entries.md
+:link: ./creating and-managing-objects/localizing-object-definitions-and-entries.md
 :::
 
 :::{grid-item-card} カスタム・オブジェクトでシステム・オブジェクトを使う
@@ -109,8 +108,8 @@ Liferay Objectでは、コードを記述することなくビジネスニーズ
 :link: ./creating-and-managing-objects/exporting-and-importing-object-definitions.md
 :::
 
-:::{grid-item-card} オブジェクト定義イベントの監査
-:link: ./creating and-managing-objects/auditing-object-events.md
+:::{grid-item-card} オブジェクト・イベントの監査
+:link: ./creating-and-managing-objects/auditing-object-events.md
 :::
 
 :::{grid-item-card} オブジェクトの削除

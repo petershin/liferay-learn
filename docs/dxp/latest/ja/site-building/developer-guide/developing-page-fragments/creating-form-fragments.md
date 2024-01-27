@@ -1,16 +1,16 @@
 # フォーム・フラグメントの作成
 
-{bdg-secondary}`Liferay 7.4 U45+/GA45+が利用可能です。`
+{bdg-secondary}`liferay 7.4 U45+/GA45+`.
 
 [フォームコンポーネントの断片](../../creating-pages/page-fragments-and-widgets/using-fragments/default-fragments-reference.md) は、コンテンツページでオブジェクトのフォームを構築するためのものです。 Liferayのフォームフラグメントがあなたのユースケースを満たさない場合は、フォームに必要なデザインと機能を実現するために独自のフォームフラグメントを作成してください。
 
 フォームの断片を作る
 
-1. サイトメニュー(![サイトメニュー](../../../images/icon-product-menu.png))を開き、 **デザイン** &rarr; **フラグメント** に移動します。
+1. サイトメニュー(![サイトメニュー](../../../images/icon-product-menu.png))を開き、_デザイン_ &rarr; _フラグメント_に移動します。
 
-1. **プラス**(![プラスボタン](../../../images/icon-plus.png))をクリックして、フォームのフラグメントを整理するためのフラグメントセットを作成します。
+1. *プラス* (![プラスボタン](../../../images/icon-plus.png))をクリックして、フォームのフラグメントを整理するためのフラグメントセットを作成します。
 
-1. **Add**(![Add Button](../../../images/icon-add.png)) をクリックし、 **Form Fragment** タイプを選択し、 **Next** をクリックします。
+1. *Add* (![Add Button](../../../images/icon-add.png)) をクリックし、_Form Fragment_ タイプを選択し、_Next_ をクリックします。
 
    ![Select the form fragment type and click Next.](./creating-form-fragments/images/01.png)
 
@@ -22,7 +22,7 @@
 
    ![Select the field types the fragment supports.](./creating-form-fragments/images/02.png)
 
-1. **追加** をクリックする。 これにより、ドラフトフラグメントが作成され、フラグメントの編集ページに移動します。
+1. *追加*をクリックする。 これにより、ドラフトフラグメントが作成され、フラグメントの編集ページに移動します。
 
 1. コードタブで、フラグメントのHTML、CSS、JavaScriptを追加します。
 
@@ -32,16 +32,15 @@
    サブミットボタンのテキストは、 [マッピング設定](../../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#mapping-settings) を使ってマッピングできます。
 
    リダイレクトのために [リンク設定](../../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#link-settings) を持つボタンを作成するには、`type="button"` をボタンの断片に追加します。
-
    ```
 
-1. (オプション）Configuration タブで、JSON を使用してフラグメントを構成し、オプションを追加します。 さまざまなフラグメント・コンフィギュレーション・タイプの詳細については、 [フラグメント設定タイプのリファレンス](../reference/fragments/fragment-configuration-types-reference.md) 。
+1. (オプション）Configuration タブで、JSON を使用してフラグメントを構成し、オプションを追加します。 さまざまなフラグメント・コンフィギュレーション・タイプの詳細については、 [Fragment Configuration Types Reference](../reference/fragments/fragment-configuration-types-reference.md) 。
 
    ![In the Configuration tab, use JSON to configure the fragment and add options to it](./creating-form-fragments/images/04.png)
 
-1. ［**公開**］ をクリックします。
+1. *［公開］*をクリックします。
 
-次に、フォーム・フラグメントを使ってコンテンツ・ページにフォームを作成します。 詳しくは [フラグメントでフォームを構築する](../../../building-applications/objects/using-fragments-to-build-forms.md) を参照してください。
+次に、フォーム・フラグメントを使ってコンテンツ・ページにフォームを作成します。 詳しくは [Using Fragments to Build Forms](../../../building-applications/objects/using-fragments-to-build-forms.md) を参照してください。
 
 フラグメントツールキットを使用する場合は、`yarn run add-fragment`を実行する際にフラグメントの種類を選択することができる。
 
@@ -97,7 +96,7 @@
 | `errorMessage` | `string`  | フォーム送信エラー。                                    |
 | `helpText`     | `string`  | フォームフィールドのUIヘルプメッセージ。 未定義の場合、このプロパティは空である。    |
 | `showHelpText` | `boolean` | ヘルプテキストの表示。                                   |
-| `attributes`   | `object`  | 特定の入力タイプ用にフラグメントに追加されるオプション。                  |
+| `attributes`   | `object`  | 特定の入力タイプのためにフラグメントに追加されるオプション。                |
 
 ### 入力 `file` の属性
 
@@ -115,9 +114,9 @@
 | `dataType` | `integer` or `decimal`  | 整数か10進数を選ぶ。                                |
 | `max`      | `number` or `undefined` | 最大許容数。                                     |
 | `min`      | `number` or `undefined` | 最少催行人数。                                    |
-| `step`     | `string` or `undefined` | HTML入力の "step"属性で使用できる文字列値で、許容される最大精度を示す。 |
+| `step`     | `string` or `undefined` | HTML入力の "step "属性で使用できる文字列値で、許容される最大精度を示す。 |
 
-### 関係`入力の属性
+### 入力 `number` の属性
 
 | プロパティ                        | 種類       | 説明                                                                                                  |
 | :--------------------------- | :------- | :-------------------------------------------------------------------------------------------------- |
@@ -133,6 +132,6 @@
 
 ## 関連トピック
 
-[ページ・フラグメントの開発](../developing-page-fragments.md) 
+[ページ・フラグメントの開発](../developing-page-fragments.md)
 
-[フラグメントを使ってフォームを構築する](../../../building-applications/objects/using-fragments-to-build-forms.md) 
+[フラグメントを使ってフォームを構築する](../../../building-applications/objects/using-fragments-to-build-forms.md)

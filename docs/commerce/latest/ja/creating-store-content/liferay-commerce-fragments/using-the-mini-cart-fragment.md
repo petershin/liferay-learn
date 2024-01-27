@@ -1,34 +1,34 @@
 # ミニカートフラグメントの使用
 
-{bdg-secondary}`利用可能 Liferay DXP 7.4 U69+/GA69+`
+{bdg-secondary}`liferay DXP 7.4 U69+/GA69+` 
 
-Mini Cartフラグメントは、カートの詳細な概要を提供します。 商品の数量を増やしたり減らしたり、商品を削除したり、チェックアウトのためにカートを送信したり、商品を検索して素早くカートに追加したりするために使用できます。
+ミニカートのフラグメントは、カートの詳細な概要を提供します。 商品数量の増減、商品の削除、チェックアウトのためのカート投入、商品の検索とカートへの迅速な追加が可能です。
 
-このフラグメントが正しく動作するためには、サイトに [カタログ](../commerce-storefront-pages/catalog.md)、 [オープンカート](../commerce-storefront-pages/pending-orders.md)、 [チェックアウト](../commerce-storefront-pages/checkout.md) のページがある必要があります。
+このフラグメントを正しく動作させるには、 [カタログ](../commerce-storefront-pages/catalog.md) 、 [オープンカート](../commerce-storefront-pages/pending-orders.md) 、 [チェックアウト](../commerce-storefront-pages/checkout.md) ページが必要です。
 
 ## ミニカートフラグメントをページに追加する
 
-1. 目的のコンテンツページまたはテンプレートに移動し、 **Edit**(![Edit icon](../../images/icon-edit-pencil.png)) をクリックします。
+1. 目的のコンテンツページまたはテンプレートに移動し、_Edit_（！[編集アイコン](../../images/icon-edit-pencil.png)）をクリックします。
 
-1. サイドバーの「フラグメントとウィジェット」（![Add Widget icon](../../images/icon-plus.png)）で、「**ミニカート**」（）を検索してください。
+1. フラグメントとウィジェットのサイドバー（[ウィジェットアイコンを追加](../../images/icon-plus.png)）で、_ミニカート_を検索します。
 
-   ![フラグメントとウィジェット」メニューから、「ミニカート」フラグメントを検索します。](./using-the-mini-cart-fragment/images/01.png)
+   ![Search for the Mini Cart fragment from the Fragments and Widgets menu.](./using-the-mini-cart-fragment/images/01.png)
 
-1. フラグメントをページ上にドラッグ＆ドロップします。 このフラグメントを [ミニカート](../liferay-commerce-widgets/using-the-mini-cart-widget.md) ウィジェットと間違えないでください。
+1. フラグメントをページにドラッグ＆ドロップする。 このフラグメントを [ミニカート](../liferay-commerce-widgets/using-the-mini-cart-widget.md) ウィジェットと間違えないでください。
 
-1. ［**Publish**］ をクリックします。
+1. Publish_をクリックする。
 
-   ![カートのアイコンをクリックすると、ミニカートが開きます。](./using-the-mini-cart-fragment/images/02.png)
+   ![Click the cart icon to open the Mini Cart.](./using-the-mini-cart-fragment/images/02.png)
 
 ## ミニカート詳細
 
 ミニカートのフラグメントをページに追加した後、
 
-1. **カートに入れる** をクリックすると、商品が表示されます。
+1. 商品の_カートに入れる_をクリックします。
 
-   ![商品の上で「カートに入れる」をクリックすると、ミニカートに追加されます。](./using-the-mini-cart-fragment/images/03.png)
+   ![Click Add to Cart on a product to add it to your Mini Cart.](./using-the-mini-cart-fragment/images/03.png)
 
-1. ミニカートのアイコン(![Mini Cart](../../images/icon-mini-cart.png))をクリックすると、これらの詳細が表示されます：
+1. ミニカートのアイコン(![ミニカート](../../images/icon-mini-cart.png))をクリックすると、これらの詳細が表示されます：
 
    * 製品名
    * SKU
@@ -39,31 +39,31 @@ Mini Cartフラグメントは、カートの詳細な概要を提供します�
    * 注文割引
    * 合計
 
-   ![Mini Cartフラグメントは、現在のカートの状態を詳細に説明します。](./using-the-mini-cart-fragment/images/04.png)
+   ![The Mini Cart fragment gives a detailed overview of the current cart status.](./using-the-mini-cart-fragment/images/04.png)
 
-ヘッダーエリアには、2つのボタンがあります：
+ヘッダーエリアには2つのボタンがある：
 
-**詳細を表示する** オープンカートのページに移動して、オープンオーダーの詳細を表示します。
+**詳細を見る：** オープンカートのページに移動し、オープンオーダーに関する詳細を表示します。
 
-**すべての商品を削除する** カートの中の商品を削除します。
+**すべての商品を削除する：** カートの商品を削除します。
 
-商品リストエリアには、カート内の全商品が数量と価格とともに表示されます。 ここでは、個々の商品の削除（![Delete](../../images/icon-delete.png)）または数量の調整を行うことができます。 変更すると、カートの概要欄が自動的に更新されます。 **Submit** をクリックしてチェックアウトを続けます。
+商品リストエリアには、カート内の全商品が数量と価格とともに表示されます。 ここでは、個々の製品の削除（[削除](../../images/icon-delete.png)）または数量を調整することができます。 変更を加えると、カートの概要セクションが自動的に更新されます。 チェックアウトを続行するには、_Submit_をクリックしてください。
 
 ## 商品を素早くカートに入れる
 
-フラグメントの検索バーを使って、素早くカートに商品を追加することができます。 製品名や既知のSKUで検索することができます。 カタログを検索する負担をなくすことで、オーダー作成時間を短縮することができます。
+フラグメント内の検索バーを使って、商品を素早くカートに入れることができる。 製品名または既知のSKUで検索します。 これにより、カタログを検索する負担がなくなり、注文を作成する時間を短縮することができる。
 
 ミニカートのフラグメントをページに追加した後、
 
-1. [アカウントセレクター](./using-the-account-selector-fragment.md)から新規注文を作成します。
+1. [アカウントセレクタ](./using-the-account-selector-fragment.md) から新規注文を作成する。
 
 1. ミニカートを開き、既知のSKUまたは製品を検索します。
 
-1. SKUを選択し、ミニカート(![Mini Cart](../../images/icon-mini-cart.png))アイコンをクリックします。
+1. SKUを選択し、ミニカート(![ミニカート](../../images/icon-mini-cart.png))アイコンをクリックします。
 
-これにより、SKUがカートに追加されます。 必要であれば、複数のSKUを一度に追加することもできます。
+これでSKUがカートに追加されます。 必要に応じて、一度に複数のSKUを追加することができます。
 
-![複数のSKUを一度に追加するには、各SKUを選択し、ミニカートのアイコンをクリックします。](./using-the-mini-cart-fragment/images/05.gif)
+![Add multiple SKUs at once by selecting each SKU and clicking on the Mini Cart icon.](./using-the-mini-cart-fragment/images/05.gif)
 
 <!-- Add this when ready
 
@@ -74,5 +74,7 @@ SKUs may reach end-of-life (EOL) and be marked as discontinued. Discontinued SKU
 ## 関連トピック
 
 [カタログ](../commerce-storefront-pages/catalog.md)
+
 [保留中の注文](../commerce-storefront-pages/pending-orders.md)
+
 [チェックアウト](../commerce-storefront-pages/checkout.md)

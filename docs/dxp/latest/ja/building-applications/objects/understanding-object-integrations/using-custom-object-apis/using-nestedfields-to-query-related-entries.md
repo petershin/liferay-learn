@@ -1,14 +1,14 @@
-# `nestedFields` を使って関連するエントリーを検索する
+# nestedFields を使用した関連エントリーのクエリー
 
-{bdg-secondary}`Liferay 7.4 U69+/GA69+`.
+{bdg-secondary}`liferay 7.4 U69+/GA69+`.
 
-`nestedFields` パラメータは、Liferay が一つの GET リクエストで複数のレベルの関連オブジェクトエントリを返すようにします。 `nestedFields=[firstObjectRelationship],[secondObjectRelationship]`. `nestedFields` パラメータに、クエリに含めるリレーションシップ名を、コンマで区切って渡す。 リレーションシップが複数のレベルにまたがる場合は、`nestedFieldsDepth` パラメータを必要な深さに設定する。 最大5レベルまで含めることができる（例：`nestedFieldsDepth=5`）。
+`nestedFields` パラメータは、Liferay が一つの GET リクエストで複数のレベルの関連オブジェクトエントリを返すようにします。 `nestedFields=[firstObjectRelationship],[secondObjectRelationship]` のように、クエリに含めるリレーションシップの名前を `nestedFields` パラメータに渡す。 リレーションシップが複数のレベルにまたがる場合は、`nestedFieldsDepth` パラメータを必要な深さに設定する。 最大5レベルまで含めることができる（例：`nestedFieldsDepth=5`）。
 
 ```{tip}
 `nestedFields` パラメータは、複数のリクエストを必要とするような関連するエントリを取得することで、リクエストを最適化します。 関連するエントリーのみを返すために、Liferay は専用の [リレーションシップ API](../using-custom-object-apis.md#relationship-rest-apis) を提供しています。 [Using Relationship REST API](./using-relationship-rest-apis.md) を参照してください。
 ```
 
-続行するには、新しいLiferay 7.4インスタンスを [セットアップ](#setting-up-a-liferay-instance) し、提供されたチュートリアルコードを [準備](#preparing-the-sample-code) します。 次に、 [スクリプトを実行する。](#creating-and-querying-related-object-entries) 関連するエントリーを作成し、`nestedFields` パラメーターを使ってクエリーする。
+先に進むには、 [セットアップ](#setting-up-a-liferay-instance) 新しい Liferay 7.4 インスタンスをセットアップし、 [準備](#preparing-the-sample-code) 提供されたチュートリアルコードを準備します。 次に、 [スクリプトを実行する。](#creating-and-querying-related-object-entries) 関連するエントリーを作成し、`nestedFields` パラメーターを使ってクエリーする。
 
 ## Liferayインスタンスのセットアップ
 
@@ -19,7 +19,7 @@
 
 ### 関連オブジェクト定義の作成
 
-1. **グローバルメニュー**(![グローバルメニュー](../../../../images/icon-applications-menu.png))を開き、 ［**コントロールパネル**］タブで［** オブジェクト**］ をクリックします。
+1. _グローバルメニュー_ (![グローバルメニュー](../../../../images/icon-applications-menu.png))を開き、*［コントロールパネル］_タブで_［オブジェクト］*をクリックします。
 
 1. [作成](../../creating-and-managing-objects/creating-objects.md) 3つのオブジェクトドラフトを作成する。
 
@@ -190,7 +190,7 @@ ZIPは、REST APIを使用してオブジェクトエントリを作成、関連
    ./Charlie_POST_ToCompany.sh [bakerId]
    ```
 
-   これは3つのCharlieエントリーを作成し、`bakerToCharlie`リレーションシップを使って指定されたBakerエントリーに関連付けます。
+   これは3つのCharlieエントリーを作成し、`bakerToCharlie`リレーションシップを使用して指定されたBakerエントリーに関連付けます。
 
    ```json
    {
@@ -439,6 +439,6 @@ ZIPは、REST APIを使用してオブジェクトエントリを作成、関連
 
 ## 関連トピック
 
-* [オブジェクトAPIの基礎](./object-api-basics.md) 
-* [バッチAPIの使用](./using-batch-apis.md) 
-* [REST APIでの集計用語の使用](./using-aggregation-terms-with-rest-apis.md) 
+* [オブジェクトAPIの基礎](./object-api-basics.md)
+* [バッチAPIの使用](./using-batch-apis.md)
+* [REST APIでの集計用語の使用](./using-aggregation-terms-with-rest-apis.md)

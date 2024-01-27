@@ -1,16 +1,16 @@
-# Webコンテンツ記事の絞り込みとソート
+# Filtering and Sorting Web Content Articles
 
-デフォルトでは、ウェブコンテンツアプリケーション（**サイトメニュー** &rarr; **コンテンツとデータ** &rarr; **ウェブコンテンツ**）には、アクセスできるすべてのウェブコンテンツ記事のリストが表示されます。 多くの項目を扱う場合、フィルタリングとソートオプションを使用すると、このコンテンツリストをすばやく見つけて確認することができます。
+デフォルトでは、ウェブコンテンツアプリケーション（_サイトメニュー_ &rarr; _コンテンツとデータ_ &rarr; _ウェブコンテンツ_）には、アクセスできるすべてのウェブコンテンツ記事のリストが表示されます。 多くの項目を扱う場合、フィルタリングとソートオプションを使用すると、このコンテンツリストをすばやく見つけて確認することができます。
 
 ![You can filter and sort the web content articles from the web content application.](./filtering-and-sorting-web-content-articles/images/01.png)
 
 すべてのアセット、特定のフォルダ内のアセット、またはウェブコンテンツ検索の結果のアセットを表示する場合、3つの異なるフィルタおよびソートオプションを使用できます：
 
-* [ナビゲーションで絞り込む](#filter-by-navigation) 
-* [ステータスによる絞り込み](#filter-by-status) 
-* [](#order-by) 。
+- [ナビゲーションで絞り込む](#filter-by-navigation) 
+- [ステータスによる絞り込み](#filter-by-status) 
+- [](#order-by) 。
 
-これらのフィルターと並べ替えオプションを組み合わせることができる。 例えば、 [**Mine** フィルタ](#filter-by-navigation) 、 [_Draft_](#filter-by-status) 、 [order by **Modified Date**](#order-by) 。
+これらのフィルターと並べ替えオプションを組み合わせることができる。 例えば、 [_Mine_ フィルタ](#filter-by-navigation) 、 [_Draft_](#filter-by-status) 、 [order by _Modified Date_](#order-by) 、 _Draft_ 、 order by _Modified Date_ 。
 
 ## ナビゲーションで絞り込む
 
@@ -22,8 +22,8 @@
 | 自分         | 現在ログインしているユーザーが作成した項目。                                                |
 | 履歴         | 最近変更された資産。 このフィルターでは、 [order by](#order-by) オプションは使用できません。 |
 | ストラクチャー    | ウェブコンテンツの構造に基づいてウェブコンテンツの記事をフィルタリングします。                               |
-
-![Using the structures filter, you can filter the web content articles based on a specific web content structure.](./filtering-and-sorting-web-content-articles/images/02.png)
+| カテゴリー      | カテゴリーに基づいてウェブコンテンツをフィルタリングする。                                         |
+| タグ         | 割り当てられたタグに基づいてWebコンテンツをフィルタリングします。                                    |
 
 ## ステータスで絞り込み
 
@@ -44,7 +44,7 @@
 | フィルターオプション | 説明                      |
 | :--------- | :---------------------- |
 | 公開開始日時     | 最後に表示された日付でアセットをソートします。 |
-| 編集日時       | 最終更新日順にアセットをソートします。     |
+| 編集日時       | アセットを最終更新日順にソートします。     |
 | タイトル       | 資産をアルファベット順に並べ替えます。     |
 
 ```{tip}
@@ -53,6 +53,6 @@
 
 ## 関連情報
 
-* [基本的なウェブコンテンツ記事の追加](./adding-a-basic-web-content-article.md)
-* [ウェブコンテンツの構造を理解する](../web-content-structures/understanding-web-content-structures.md)
-* [ウェブ・コンテンツ・テンプレートの作成](../web-content-templates/creating-web-content-templates.md)
+- [基本的なウェブコンテンツ記事の追加](./adding-a-basic-web-content-article.md)
+- [ウェブコンテンツの構造を理解する](../web-content-structures/understanding-web-content-structures.md)
+- [ウェブ・コンテンツ・テンプレートの作成](../web-content-templates/creating-web-content-templates.md)

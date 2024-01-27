@@ -1,6 +1,6 @@
 # 支払条件と配送条件
 
-{bdg-secondary}`利用可能な Liferay DXP 7.4 U16+/GA16+`
+{bdg-secondary}`liferay DXP 7.4 U16+/GA16+`.
 
 ## 支払条件
 
@@ -12,58 +12,58 @@
 * その他、売主・買主間で合意した条件
 
 ```{note}
-支払条件は、手形および請求書の支払条件と呼ばれることもあります。
+支払条件は、譲渡性預金および請求書支払条件とも呼ばれる。
 ```
 
 ### 支払条件の作成
 
-1. **グローバルメニュー**(![Applications Menu icon](../../images/icon-applications-menu.png)) を開き、 ［**commerce**］ &rarr; ［**Terms and Conditions**］ をクリックしてください。
+1. *グローバルメニュー* ([アプリケーションメニューアイコン](../../images/icon-applications-menu.png))を開き、_Commerce_ &rarr; _Terms and Conditions_をクリックします。
 
-    ![利用規約のメニュー項目は、注文管理セクションで利用できます。](./payment-and-delivery-terms/images/01.png)
+   ![The Terms and Conditions menu item is available under the Order Management section.](./payment-and-delivery-terms/images/01.png)
 
-1. **追加** ボタン (![Add icon](../../images/icon-add.png)) をクリックし、以下の情報を入力します。
+1. *Add* (![Add icon](../../images/icon-add.png)) をクリックし、以下の情報を入力する。
 
-   **名前：** 支払条件1
+   **名称：**支払条件1
 
-   **タイプ：** 支払条件
+   **タイプ:**支払条件
 
-   ［**Priority：**］ 0.0
+   **優先順位：** 0.0
 
-   ![支払条件の名前、タイプ、優先順位を入力します。](./payment-and-delivery-terms/images/02.png)
+   ![Enter a name, type and priority for the Payment Terms.](./payment-and-delivery-terms/images/02.png)
 
-1. ［**Submit**］ をクリックします 。
+1. *Submit*をクリックしてください。
 
-1. これにより、新しい支払条件が作成されます。 編集可能な説明テキストフィールドに買い手と合意した条件を追加し、 ［**有効**］ トグルを使用して有効にすることができます。
+1. これにより、新しい支払条件が作成されます。 編集可能な説明テキストフィールドにバイヤーと合意した条件を追加し、_Active_トグルを使用して有効にすることができます。
 
-   ![編集可能な説明テキストフィールドを使用して支払条件を追加し、有効トグルを使用してそれを有効にします。](./payment-and-delivery-terms/images/03.png)
+   ![Use the editable Description text field to add the Payment Terms and use the Active toggle to enable it.](./payment-and-delivery-terms/images/03.png)
 
-1. ［**公開**］ をクリックします。
+1. *［公開］*をクリックします。
 
 ### 支払と支払方法の関連付け
 
 チャンネルは複数の支払方法を持つことができ、それぞれに支払条件を関連付けることができます。 1つの支払方法に複数の支払条件がリンクされている場合、重要度によってどの支払方法が使用されるかが決定されます。
 
-1. **グローバルメニュー**(![Applications Menu icon](../../images/icon-applications-menu.png)) を開き、 ［**commerce**］ &rarr; ［**Channels**］ をクリックしてください。
+1. *グローバルメニュー* ([アプリケーションメニューアイコン](../../images/icon-applications-menu.png))を開き、_Commerce_ &rarr; _Channels_をクリックします。
 
-1. チャンネルを選択し、 ［**Payment Methods**］ までスクロールダウンしてください。
+1. チャンネルを選択し、_支払い方法_までスクロールダウンします。
 
-1. 目的の支払方法をクリックし、 ［**Eligibility**］ タブを開きます。
+1. ご希望のお支払い方法をクリックし、「資格」タブを開きます。
 
-   ![支払方法とリンクする支払条件を検索します。](./payment-and-delivery-terms/images/04.png)
+   ![Search for the Payment Terms to link to a Payment Method.](./payment-and-delivery-terms/images/04.png)
 
-1. **支払条件適合性** の下の **特定の支払条件** をクリックします。
+1. *支払条件適格性_の下にある_特定の支払条件*をクリックしてください。
 
-1. **支払条件の追加** で、支払条件を検索し、 ［**選択**］ をクリックします。
+1. *支払い条件の追加*で支払い条件を検索し、_選択_をクリックします。
 
-1. ［**Save**］ をクリックして支払条件をリンクさせ、設定ビューを閉じます。
+1. *保存* をクリックして支払条件をリンクし、設定ビューを閉じます。
 
-1. ［**保存**］ をクリックします。
+1. ［_保存_］をクリックします。
 
 ### 支払条件チェックアウト手順の有効化
 
 一つの支払方法に複数の支払条件がリンクされている場合、重要度の高いものが優先されます。 ユーザーがデフォルトの支払条件を変更する権限を持っていない場合、チェックアウト時に追加のステップが表示されません。
 
-![チェックアウト時に支払い条件を表示・変更するには、支払い条件を管理する権限が必要です。](./payment-and-delivery-terms/images/05.png)
+![You must have the permission to manage Payment Terms to be able to view and change them during checkout.](./payment-and-delivery-terms/images/05.png)
 
 ## 配送条件
 
@@ -76,64 +76,64 @@
 
 ### 配送条件の作成
 
-1. **グローバルメニュー**(![Applications Menu icon](../../images/icon-applications-menu.png)) を開き、 ［**commerce**］ &rarr; ［**Terms and Conditions**］ をクリックしてください。
+1. グローバルメニュー* ([アプリケーションメニューアイコン](../../images/icon-applications-menu.png))を開き、_Commerce_ &rarr; _Terms and Conditions_をクリックします。
 
-1. **追加** ボタン (![Add icon](../../images/icon-add.png)) をクリックし、以下の情報を入力します。
+1. *Add* (![Add icon](../../images/icon-add.png)) をクリックし、以下の情報を入力する。
 
-   ［**Name：**］［Delivery Terms 1］
+   **名称：** 配送条件1
 
-   ［**Type：**］［Delivery Terms］
+   **タイプ:** 配送条件
 
-   ［**Priority：**］ 0.0
+   **優先度：** 0.0
 
-   ![配送条件の名前、タイプ、優先順位を入力します。](./payment-and-delivery-terms/images/06.png)
+   ![Enter a name, type and priority for the Delivery Terms.](./payment-and-delivery-terms/images/06.png)
 
-1. ［**Submit**］ をクリックします 。
+1. *Submit*をクリックしてください。
 
-1. これにより、新しい配送条件が作成されます。 ［**Description**］ テキストエリアに買主と合意した条件を追加し、トグルで有効にすることができます。
+1. これにより、新しい配送条件が作成されます。 バイヤーと合意した条件を_Description_テキストエリアに追加し、トグルを使用して有効にすることができます。
 
-   ![編集可能な説明テキストフィールドを使用して配送条件を追加し、有効トグルを使用してそれを有効にします。](./payment-and-delivery-terms/images/07.png)
+   ![Use the editable Description text field to add the Delivery Terms and use the Active toggle to enable it.](./payment-and-delivery-terms/images/07.png)
 
-1. ［**Publish**］ をクリックします。
+1. *［公開］*をクリックします。
 
 ### 配送条件と配送方法の関連付け
 
 チャンネルは複数の配送方法を持つことができ、配送条件をそれぞれに関連付けることができます。 1つの配送方法に複数の配送条件がリンクされている場合、重要度によってどの配送方法が使用されるかが決定されます。
 
-1. **グローバルメニュー**(![Applications Menu icon](../../images/icon-applications-menu.png)) を開き、 ［**commerce**］ &rarr; ［**Channels**］ をクリックしてください。
+1. *グローバルメニュー* ([アプリケーションメニューアイコン](../../images/icon-applications-menu.png))を開き、_Commerce_ &rarr; _Channels_をクリックします。
 
-1. チャンネルを選択し、 ［**Shipping Methods**］ までスクロールダウンしてください。
+1. チャンネルを選択し、_配送方法_までスクロールダウンします。
 
-1. 目的の配送方法をクリックし、 ［**配送オプション**］ タブを開きます。
+1. ご希望の配送方法をクリックし、_配送オプション_タブを開きます。
 
-1. 目的の配送オプションをクリックし、 ［**Eligibility**］ タブを開きます。
+1. 適切な配送オプションを選択し、_Eligibility_タブを開きます。
 
-   ![配送オプションにリンクする配送条件を検索してください。](./payment-and-delivery-terms/images/08.png)
+   ![Search for the Delivery Terms to link to a Shipping Option.](./payment-and-delivery-terms/images/08.png)
 
-1. **配送条件適合性** の下の **特定の配送条件** をクリックします。
+1. *配送条件対象*の下にある*特定の配送条件*をクリックしてください。
 
-1. **配送条件の追加** で、配送条件を検索し、 ［**選択**］ をクリックします。
+1. *配送条件の追加*で配送条件を検索し、_選択_をクリックします。
 
-1. ［**Save**］ をクリックして配送条件をリンクさせ、設定ビューを閉じます。
+1. *保存* をクリックして配送条件をリンクし、設定ビューを閉じます。
 
-1. ［**保存**］ をクリックします。
+1. ［_保存_］をクリックします。
 
 ### 配送条件チェックアウト手順の有効化
 
 配送方法に複数の配送条件がリンクされている場合、重要度の高いものが優先されます。 ユーザーがデフォルトの配送条件を変更する権限を持っていない場合、チェックアウト時に追加の手順が表示されません。
 
-![チェックアウト時に配送条件を表示・変更するには、配送条件を管理する権限が必要です。](./payment-and-delivery-terms/images/09.png)
+![You must have the permission to manage Delivery Terms to be able to view and change them during checkout.](./payment-and-delivery-terms/images/09.png)
 
 ## 利用規約の適合性
 
 支払条件と配送条件の両方を、［Eligibility］タブを使用して特定の注文タイプにリンクさせることができます。
 
-1. 支払条件または配送条件の ［**Eligibility**］ タブをクリックします。
+1. 支払い条件または配送条件の_対象_タブをクリックします。
 
-1. **特定の注文タイプ** のラジオボタンをクリックします。
+1. [特定の注文タイプ]ラジオボタンをクリックします。
 
-   ![支払条件と配送条件を特定の注文タイプにリンクさせるには、［適格性］タブを使用します。](./payment-and-delivery-terms/images/10.png)
+   ![Use the eligibility tab to link the Payment and Delivery Terms to specific Order Types.](./payment-and-delivery-terms/images/10.png)
 
-1. 注文タイプを検索し、 ［**選択**］ をクリックします。
+1. 注文タイプを検索し、_選択_をクリックします。
 
-1. ［**公開**］ をクリックします。
+1. *［公開］*をクリックします。

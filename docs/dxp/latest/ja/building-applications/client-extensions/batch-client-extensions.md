@@ -4,11 +4,7 @@ toc:
 ---
 # バッチクライアント拡張機能
 
-{bdg-primary}`Liferay Self-Hosted`
-{bdg-primary}`Liferay SaaS`
-{bdg-warning}`Liferay Cloud： セルフマネージド`
-
-{bdg-secondary}`Liferay 7.4`
+{bdg-secondary}`liferay DXP 7.4 (self-hosted)`   {bdg-secondary}`Liferay Experience Cloud (SaaS)`   {bdg-unsupported}`Liferay Cloud：セルフマネージド`
 
 ```{toctree}
 :maxdepth: 3
@@ -44,6 +40,6 @@ type: batch
 
 ## 関連トピック
 
-* [クライアント拡張機能の紹介](../client-extensions.md) 
-* [`client-extension.yaml` でクライアント拡張機能を設定する。](./working-with-client-extensions.md#configuring-client-extensions-in-client-extension-yaml) 
-* [データ移行センター](../../headless-delivery/consuming-apis/data-migration-center.md) 
+* [クライアント拡張機能の紹介](../client-extensions.md)
+* [`client-extension.yaml`でクライアント拡張機能を設定する](./working-with-client-extensions.md#configuring-client-extensions-in-client-extension-yaml)
+* [データ移行センター](../../headless-delivery/consuming-apis/data-migration-center.md)

@@ -4,28 +4,28 @@
 
 ピックリストは、オブジェクト定義の単一選択フィールドまたは複数選択フィールドとして使用可能なテキスト値のリストを定義します。 デフォルトでは、単一選択フィールドはドロップダウンメニューとして表示され、複数選択フィールドはチェックボックスとして表示されます。
 
-静的または動的なデフォルト値を使用するように、単一のセレクトフィールドを構成することができます。 さらに、単一の選択フィールドを使用して、オブジェクトエントリのカスタム状態を定義し、 [バリデーション](../validations/adding-custom-validations.md)、 [アクション](../actions/defining-object-actions.md)、 [ワークフロープロセス](../../enabling-workflows-for-objects.md) をオブジェクト定義と統合して、複雑なビジネスロジックを実装することができます。
+静的または動的なデフォルト値を使用するように、単一のセレクト・フィールドを設定することができます。 さらに、単一の選択フィールドを使用して、オブジェクトエントリのカスタム状態を定義し、 [バリデーション](../validations/adding-field-validations.md) 、 [アクション](../actions/defining-object-actions.md) 、 [ワークフロープロセス](../../enabling-workflows-for-objects.md) をオブジェクト定義と統合して、複雑なビジネスロジックを実装することができます。
 
 ## デフォルト値の設定
 
 1. 目的のピックリストフィールドの編集を開始します。
 
-1. **詳細** タブを開き、 **デフォルト値を使用** を切り替える。
+1. Advanced "タブで "Use Default Value "を切り替えてください。
 
-   ![Use Default Valueを切り替えて、Input as ValueまたはExpression Builderのいずれかを選択します。](./picklist-fields/images/01.png)
+   ![Toggle Use Default Value and select either Input as Value or Expression Builder.](./picklist-fields/images/01.png)
 
 1. デフォルト値の設定方法を決定する。
 
-   **Input as Value** : ピックリストから値を選択。
+   _Input as Value_：ピックリストから値を選択します。
 
-   **Expression Builder** : 動的に値を設定する式を作成する。
+   *式ビルダー動的に値を設定する式を作成します。
 
-1. ［**Save**］ をクリックします。
+1. ［_保存_］をクリックします。
 
 これで、ユーザーがエントリーを作成すると、ピックリストフィールドのデフォルトは設定された値になります。
 
 ```{important}
-オブジェクトフィールドで使用されている一覧は削除できませんが、一覧のアイテムはいつでも編集・削除できます。
+オブジェクトフィールドで使用されているリストは削除できませんが、リスト項目はいつでも編集、削除できます。
 
 選択リストのアイテムを更新または削除すると、アイテム値を使用してすべてのオブジェクトエントリーが自動的に更新されます。
 ```
@@ -64,5 +64,5 @@
 
 ## 関連トピック
 
-* [候補リスト](../../picklists.md)
-* [カスタム状態の追加と管理](./adding-and-managing-custom-states.md)
+* [ピックリスト](../../picklists.md)
+* [カスタム・ステートの追加と管理](./adding-and-managing-custom-states.md)

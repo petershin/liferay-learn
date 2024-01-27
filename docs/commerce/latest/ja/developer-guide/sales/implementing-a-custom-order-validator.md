@@ -1,198 +1,147 @@
 # カスタム注文バリデーターの実装
 
-このチュートリアルでは、 [CommerceOrderValidator](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/order/CommerceOrderValidator.java) インターフェイスを実装して、カスタムオーダーバリデーターを追加する方法を示します。
+このチュートリアルでは、 [CommerceOrderValidator](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/order/CommerceOrderValidator.java) インターフェイスを実装してカスタムオーダーバリデータを追加する方法を説明します。
 
-注文バリデーターは、チェックアウトを行う際に顧客のカート内のアイテムを検証するクラスです。 Liferay Commerceでは、 [デフォルト](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-service/src/main/java/com/liferay/commerce/internal/order/DefaultCommerceOrderValidatorImpl.java) をはじめ、 [アイテムバージョン](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-service/src/main/java/com/liferay/commerce/internal/order/VersionCommerceOrderValidatorImpl.java) や [定期的なアイテム（サブスクリプション）](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-service/src/main/java/com/liferay/commerce/internal/order/SubscriptionCommerceOrderValidatorImpl.java) を確認するバリデーターなど複数の注文バリデーターをすぐに使うことができます。
+注文バリデータは、チェックアウトを進めるときに顧客のカート内の商品を検証するクラスです。 Liferay は、[デフォルト](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-service/src/main/java/com/liferay/commerce/internal/order/DefaultCommerceOrderValidatorImpl.java) を含む複数のすぐに使える注文バリデーターに加え、[アイテムのバージョン](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-service/src/main/java/com/liferay/commerce/internal/order/VersionCommerceOrderValidatorImpl.java) と [繰り返しのアイテム (サブスクリプション)](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-service/src/main/java/com/liferay/commerce/internal/order/SubscriptionCommerceOrderValidatorImpl.java) をチェックするためのバリデーターを提供します。
 
-## 概要
+オーダーバリデータには、商品をカートに追加するときと、新しいチェックアウトステップに進むときの両方のバリデーションロジックがあります。 3つのパートがある：
 
-1. [**サンプルをデプロイする**](#deploy-an-example)
-1. [**サンプルの説明**](#walk-through-the-example)
-1. [**追加情報**](#additional-information)
+1. [商品をカートに追加するためのバリデーションロジックです。](#validation-logic-for-adding-a-product-to-cart)
+1. [チェックアウトに進むためのバリデーションロジック。](#validation-logic-for-proceeding-to-checkout)
+1. [言語キーを `Language.properties` に追加した。](#language-keys-added-to-languageproperties)
 
-## サンプルをデプロイする
+2つの `validate` メソッドでは、オーダーバリデータのカスタム検証ロジックを定義します。 この例では、一定価格以上の商品が10個以上ある注文を拒否するロジックを追加しています。
 
-このセクションでは、注文バリデーターをLiferay Commerceのインスタンスで実行する例を示します。
+## サンプルオーダーバリデータをデプロイする
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
 次に、以下の手順に従います。
 
-1. [Acme Commerce Order Validator](./liferay-n9b2.zip) をダウンロードし、解凍してください。
+1. [Acme Commerce Order Validator](./liferay-n9b2.zip) をダウンロードして解凍します。
 
-    ```bash
-    curl https://learn.liferay.com/commerce/latest/ja/developer-guide/sales/liferay-n9b2.zip -O
-    ```
+   ```bash
+   curl https://learn.liferay.com/commerce/latest/en/developer-guide/sales/liferay-n9b2.zip -O
+   ```
 
-    ```bash
-    unzip liferay-n9b2.zip
-    ```
+   ```bash
+   unzip liferay-n9b2.zip
+   ```
 
 1. サンプルをビルドしてデプロイします。
 
-    ```bash
-    ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
-    ```
+   ```bash
+   ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
+   ```
 
-    ```{note}
-    このコマンドは、デプロイされたjarをDockerコンテナの `/opt/liferay/osgi/modules` にコピーするのと同じです。
-    ```
+   ```{note}
+   このコマンドは Docker コンテナ上の `/opt/liferay/osgi/modules` にデプロイした jar をコピーするのと同じです。
+   ```
 
 1. Dockerコンテナコンソールでデプロイを確認します。
 
-    ```bash
-    STARTED com.acme.n9b2.impl_1.0.0
-    ```
+   ```bash
+   STARTED com.acme.n9b2.impl_1.0.0
+   ```
 
-1. 失敗メッセージを表示して、サンプルの注文バリデーターが追加されたことを確認します。 ブラウザで`https://localhost:8080`を開き、100ドル以上の価格のアイテムが少なくとも1つあるカタログに移動します。 そのような商品がまだ存在しない場合は、自分で追加してください。詳細については、 [シンプル商品を作成する](../../product-management/creating-and-managing-products/product-types/creating-a-simple-product.md) を参照してください。
+1. 失敗メッセージを表示して、サンプルオーダーバリデータの追加を確認する。 ブラウザを`https://localhost:8080`に開き、100ドル以上の商品が少なくとも1点あるカタログに移動する。 そのような商品がまだ存在しない場合は、自分で追加してください。詳細については、 [Creating a Simple Product](../../product-management/creating-and-managing-products/product-types/creating-a-simple-product.md) を参照してください。
 
-    カタログからこの価格の商品を見つけて、［Add to Cart］をクリックします。 数量を11以上に増やし、矢印をクリックして続行します。 表示されるエラーメッセージは、カスタム注文バリデーターがアイテムの追加を正常に拒否したことを示しています。
+   カタログからこの価格の商品を探し、_カートに入れる_をクリックします。 数量を11以上に増やし、矢印をクリックして続行します。 表示されるエラーメッセージは、カスタム注文バリデーターがアイテムの追加を正常に拒否したことを示しています。
 
-    ![新しい注文検証エラーメッセージ](./implementing-a-custom-order-validator/images/01.png "新しい注文検証エラーメッセージ")
+   ![The custom order validator displays an error message.](./implementing-a-custom-order-validator/images/01.png)
 
-これで、`CommerceOrderValidator`を実装する新しい注文バリデーターを正常に構築およびデプロイできました。
+おめでとうございます。 `CommerceOrderValidator` を実装した新しいオーダーバリデータをビルドしてデプロイできました。
 
-さらに詳しく見ていきましょう。
+オーダーバリデータの作成は、主に3つのステップで構成される。 まず、OSGi登録のためにクラスにアノテーションを付ける。 次に、`CommerceOrderValidator` インターフェースを実装する。 最後に、`CommerceOrderValidator` の実装を作成する。
 
-## サンプルの説明
+## OSGi登録用のクラスに注釈を付ける
 
-このセクションでは、デプロイしたサンプルについて確認します。 最初に、OSGi登録用のクラスに注釈を付けます。 次に、`CommerceOrderValidator`インターフェイスを確認します。 最後に、`CommerceOrderValidator`の実装を完了します。
-
-### OSGi登録用のクラスに注釈を付ける
-
-```java
-@Component(
-    property = {
-    "commerce.order.validator.key=n9b2",
-    "commerce.order.validator.priority:Integer=9"
-    },
-    service = CommerceOrderValidator.class
-)
-public class N9B2CommerceOrderValidator implements CommerceOrderValidator {
+```{literalinclude} ./implementing-a-custom-order-validator/resources/liferay-n9b2.zip/n9b2-impl/src/main/java/com/acme/n9b2/internal/commerce/order/N9B2CommerceOrderValidator.java
+   :language: java
+   :lines: 19-26
 ```
 
-> Liferay Commerceが、 [注文バリデーターレジストリ](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-service/src/main/java/com/liferay/commerce/internal/order/CommerceOrderValidatorRegistryImpl.java) で新しい注文バリデーターを他のバリデーターと区別できるように、注文バリデーターに個別のキーを提供することが重要です。 すでに使用されているキーを再利用すると、既存の関連付けられているバリデーターが上書きされます。
-> 
-> `commerce.order.validator.priority`値は、他のバリデーターとの順序において、この注文バリデーターがいつ検証を実行するかを示します。 たとえば、 [デフォルトの注文バリデーター](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-service/src/main/java/com/liferay/commerce/internal/order/DefaultCommerceOrderValidatorImpl.java) の値は10です。 この注文バリデータに9の値を指定すると、デフォルトのバリデーターの直前に検証が実行されます。
+Liferay が新しいオーダーバリデータを [オーダーバリデータレジストリ](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-service/src/main/java/com/liferay/commerce/internal/order/CommerceOrderValidatorRegistryImpl.java) の他のものと区別できるように、 オーダーバリデータに個別のキーを指定することが重要です。 すでに使われているキーを再利用すると、関連する既存のバリデータが上書きされます。
 
-### `CommerceOrderValidator`インターフェイスを確認する
+`commerce.order.validator.priority`の値は、オーダーバリデータが他のバリデータと順番にバリデーションを行うタイミングを示します。 たとえば、 [デフォルトの注文バリデーター](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$］/modules/apps/commerce/commerce-service/src/main/java/com/liferay/commerce/internal/order/DefaultCommerceOrderValidatorImpl.java) の値は10です。 オーダーバリデータに 9 を指定すると、デフォルトバリデータの直前でバリデーションを行うようになります。
 
-次のメソッドを実装します。
+## `CommerceOrderValidator` インターフェイスのレビュー
+
+このインターフェイスでは、3つのメソッドを実装する必要がある：
 
 ```java
 public String getKey();
 ```
 
-> このメソッドは、注文バリデーターレジストリに注文バリデーター用の一意の識別情報を提供します。 このキーを使用して、レジストリからバリデーターを取得できます。 すでに使用されているキーを再利用すると、既存の関連付けられているバリデーターが上書きされます。
+このメソッドは、注文バリデーターレジストリに注文バリデーター用の一意の識別情報を提供します。 このキーはバリデータをレジストリから取得します。 すでに使われているキーを再利用すると、関連する既存のバリデータが上書きされます。
 
 ```java
 public CommerceOrderValidatorResult validate(Locale locale, CommerceOrder commerceOrder, CPInstance cpInstance, int quantity) throws PortalException;
 ```
 
-> これは、カスタム検証ロジックを追加する2つの検証メソッドの1つです。 このメソッドは、顧客がカートにアイテムを追加するたびに呼び出されます。 これは`CommerceOrderValidatorResult`を返し、booleanを使用して結果が検証に合格したかどうかを示します。 [CommerceOrderValidatorResult.java](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/order/CommerceOrderValidatorResult.java) を参照してください。
+これは2つのバリデーションメソッドのうちの1つで、カスタムのバリデーションロジックを追加します。 このメソッドは、顧客がカートにアイテムを追加するたびに呼び出されます。 これは `CommerceOrderValidatorResult` を返すことで行います。この `CommerceOrderValidatorResult` はブール値を使用して、結果がバリデーションに合格したかどうかを知らせます。 詳細は [CommerceOrderValidatorResult.java](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/order/CommerceOrderValidatorResult.java) を参照。
 
 ```java
 public CommerceOrderValidatorResult validate(Locale locale, CommerceOrderItem commerceOrderItem) throws PortalException;
 ```
-> これは、カスタム検証ロジックを追加できる2番目の検証方法です。 このメソッドは、顧客がチェックアウトの新しいステップに進むと、カートにすでにあるアイテムに対して呼び出されます。
 
-### 注文バリデーターを完了する
+これは2番目のバリデーションメソッドで、カスタムのバリデーションロジックを追加することができます。 このメソッドは、注文が `進行中` または `保留中` に遷移するたびに、すでにカートに入っているアイテムのために呼び出されます。
 
-注文バリデーターは、商品をカートに入れるときと、新しいチェックアウトのステップに進むときの両方の検証ロジックで構成されています。 以下を行います。
+### カートに商品を追加するためのバリデーション・ロジック
 
-* [商品をカートに追加するための検証ロジックを追加する。](#add-validation-logic-for-adding-a-product-to-cart)
-* [チェックアウトに進むための検証ロジックを追加する。](#add-validation-logic-for-proceeding-in-checkout)
-* [言語キーを `Language.properties`に追加する。](#add-the-language-keys-to-languageproperties)
-
-2つの`検証`メソッドでは、注文バリデーター用のカスタム検証ロジックを定義します。 この例では、特定の価格で商品が11個以上ある注文を拒否するロジックを追加します。
-
-#### 商品をカートに追加するための検証ロジックを追加する
+```{literalinclude} ./implementing-a-custom-order-validator/resources/liferay-n9b2.zip/n9b2-impl/src/main/java/com/acme/n9b2/internal/commerce/order/N9B2CommerceOrderValidator.java
+   :dedent: 1
+   :language: java
+   :lines: 33-60
+```
 
 ```java
-@Override
-public CommerceOrderValidatorResult validate(
-        Locale locale, CommerceOrder commerceOrder, CPInstance cpInstance,
-        int quantity)
-    throws PortalException {
-
-    if (cpInstance == null) {
-        return new CommerceOrderValidatorResult(false);
-    }
-
-    BigDecimal price = cpInstance.getPrice();
-
-    if ((price.doubleValue() > _MAX_ITEM_PRICE) &&
-        (quantity > _MAX_ITEM_QUANTITY)) {
-
-        ResourceBundle resourceBundle = ResourceBundleUtil.getBundle(
-            "content.Language", locale, getClass());
-
-        return new CommerceOrderValidatorResult(
-            false,
-            LanguageUtil.format(
-                resourceBundle,
-                "this-expensive-item-has-a-maximum-quantity-of-x",
-                Integer.valueOf(_MAX_ITEM_QUANTITY)));
-    }
-
-    return new CommerceOrderValidatorResult(true);
-}
-
 private static final double _MAX_ITEM_PRICE = 100.0;
 
 private static final int _MAX_ITEM_QUANTITY = 10;
 ```
 
-> この例の主な検証チェックは、価格（`BigDecimal`として保存されている）が100ドルを超えていて、数量が10を超えているかどうかをチェックすることです。 `CPInstance`から価格情報を取得します。これには、顧客が追加した注文に関する情報が含まれています。 `CPInstance`で使用できる他のメソッドについては、 [CPInstance](hhttps://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-product-api/src/main/java/com/liferay/commerce/product/model/CPInstance.java) と [CPInstanceModel](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-product-api/src/main/java/com/liferay/commerce/product/model/CPInstanceModel.java) を参照してください。
-> 
-> メインの検証チェックで検証が失敗した理由を説明するローカライズされたメッセージを含めることをお勧めします。
+この例の主な検証では、価格 (「BigDecimal」として保存) が $100 より大きいかどうか、および数量が 10 より大きいかどうかをチェックします。 この価格情報は、顧客の注文に関する情報が含まれる「CPInstance」から取得できます。 `CPInstance` で使用できるその他のメソッドについては、[CPInstance](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-product-api/src/main/java/com/liferay/commerce/product/model/CPInstance.java) および [CPInstanceModel](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-product-api/src/main/java/com/liferay/commerce/product/model/CPInstanceModel.java) を参照してください。
 
-#### チェックアウトに進むための検証ロジックを追加する
-
-```java
-@Override
-public CommerceOrderValidatorResult validate(
-        Locale locale, CommerceOrderItem commerceOrderItem)
-    throws PortalException {
-
-    BigDecimal price = commerceOrderItem.getUnitPrice();
-
-    if ((price.doubleValue() > _MAX_ITEM_PRICE) &&
-        (commerceOrderItem.getQuantity() > _MAX_ITEM_QUANTITY)) {
-
-        ResourceBundle resourceBundle = ResourceBundleUtil.getBundle(
-            "content.Language", locale, getClass());
-
-        return new CommerceOrderValidatorResult(
-            false,
-            LanguageUtil.format(
-                resourceBundle,
-                "expensive-items-have-a-maximum-order-quantity-of-x",
-                Integer.valueOf(_MAX_ITEM_QUANTITY)));
-    }
-
-    return new CommerceOrderValidatorResult(true);
-}
+```{note}
+主なバリデーションチェックには、なぜ失敗したかを説明するローカライズされたメッセージを含めるのがベストプラクティスです。
 ```
 
-> このメソッドは顧客のカート内のアイテムに対して呼び出されるため、同じ検証ロジックをこのメソッドに追加します。 この場合の主な違いは、`CommerceOrderItem`オブジェクトから情報を取得することです。`CommerceOrderItem`で使用できる他のメソッドについては、 [CommerceOrderItem](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/model/CommerceOrderItem.java) および [CommerceOrderItemModel](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/model/CommerceOrderItemModel.java) を参照してください。
+### チェックアウトに進むためのバリデーション・ロジック
 
-#### 言語キーを`Language.properties`に追加する
+```{literalinclude} ./implementing-a-custom-order-validator/resources/liferay-n9b2.zip/n9b2-impl/src/main/java/com/acme/n9b2/internal/commerce/order/N9B2CommerceOrderValidator.java
+   :dedent: 1
+   :language: java
+   :lines: 62-84
+```
 
-モジュール内の [Language.properties](https://github.com/liferay/liferay-learn/blob/master/docs/commerce/latest/en/developer-guide/sales/implementing-a-custom-order-validator/resources/liferay-n9b2.zip/n9b2-impl/src/main/resources/content/Language.properties) ファイルに言語キーとその値を追加します。
+このメソッドは顧客のカート内の商品に対して呼び出されるので、同じ検証ロジックをこのメソッドに追加します。 ここでの主な違いは、情報を `CommerceOrderItem` オブジェクトから取得することです。 `CommerceOrderItem` で使用できるその他のメソッドについては、[CommerceOrderItem](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/model/CommerceOrderItem.java) および [CommerceOrderItemModel](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/model/CommerceOrderItemModel.java) を参照してください。
+
+### `Language.properties`に言語キーが追加されました。
+
+言語キーとその値を、モジュール内の [Language.properties](https://github.com/liferay/liferay-learn/blob/master/docs/commerce/latest/en/developer-guide/sales/implementing-a-custom-order-validator/resources/liferay-n9b2.zip/n9b2-impl/src/main/resources/content/Language.properties) ファイルに追加します。 例えば、
 
 ```properties
 expensive-items-have-a-maximum-order-quantity-of-x=Expensive items have a maximum order quantity of {0}.
 this-expensive-item-has-a-maximum-quantity-of-x=This expensive item has a maximum order quantity of {0}.
 ```
 
-> 詳細は、 [アプリケーションのローカライズ](https://help.liferay.com/hc/ja/articles/360018168251-Localizing-Your-Application) を参照してください。
+詳細は、 [アプリケーションのローカライズ](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application) を参照してください。
 
-## まとめ
+## カスタムオーダーバリデータの変更
 
-　 `CommerceOrderValidator`インターフェイスを実装するための基本を理解し、Liferay Commerceに新しい注文バリデーターを追加しました。
+オーダーバリデータの動作を変更したい場合は、javaファイルを編集します。 MAX_ITEM_PRICE\` の値を変更して、$200 以上の注文を拒否するようにする。 カスタムオーダーバリデータを再デプロイして、これらの変更をLiferayに送信します。
+
+ブラウザに戻って、100ドルから200ドルの商品を10個追加してみる。 バリデータが100ドル以上の注文を拒否しなくなったので、これらの商品をカートに入れることができます。
+
+今度は、200ドル以上の商品を10個追加してみよう。 これらの商品をカートに追加できない場合は、バリデータが機能しています！
+
+## さいごに
+
+　 これで `CommerceOrderValidator` インターフェイスの実装の基本がわかり、 Liferay に新しい注文バリデータが追加されました。
 
 ## 関連トピック
 
-* [シンプル商品を作成する](../../product-management/creating-and-managing-products/product-types/creating-a-simple-product.md)
-* [アプリケーションのローカライズ](https://help.liferay.com/hc/ja/articles/360018168251-Localizing-Your-Application)
+* [シンプルな製品の作成](../../product-management/creating-and-managing-products/product-types/creating-a-simple-product.md)
+* [アプリケーションのローカライズ](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application)

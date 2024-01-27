@@ -1,6 +1,7 @@
 ---
 toc:
   - ./building-a-responsive-site/building-responsive-layouts-with-the-grid-fragment.md
+  - ./building-a-responsive-site/using-the-simulation-panel.md
 ---
 # レスポンシブサイトの構築
 
@@ -22,7 +23,7 @@ Liferayでは、すぐに使えるレスポンシブレイアウトを使用し�
 
 * テーマツールは、Web開発者が最適なモバイルパフォーマンスを確保するのに役立ちます。
 
-デフォルトのテーマを使用している場合、ページはすでにモバイルデバイスに合わせて調整されています。 また、すべてが意図したとおりに表示されるかどうかを確認するツールもある。 デバイス・シミュレーター (![Simulation](../../images/icon-simulation.png)) は、異なるデバイスでページがどのように見えるかを表示します。
+デフォルトのテーマを使用している場合、ページはすでにモバイルデバイスに合わせて調整されています。 また、すべてが意図したとおりに表示されるかどうかを確認するツールもある。 デバイス・シミュレーター(![Simulation](../../images/icon-simulation.png))は、異なるデバイス上でページがどのように見えるかを表示します。
 
 ```{tip}
 Liferay 7.2では、モバイルデバイスの検出時にサイトの動作を制御するモバイルデバイスルールを作成できます。 モバイル・デバイス・ルールの作成の詳細については、 [モバイル・デバイス・ルールの作成](./building-a-responsive-site/creating-mobile-device-rules.md) を参照してください。
@@ -32,17 +33,17 @@ Liferay 7.2では、モバイルデバイスの検出時にサイトの動作を
 :maxdepth: 3
 
 building-a-responsive-site/building-responsive-layouts-with-the-grid-fragment.md
+building-a-responsive-site/using-the-simulation-panel.md
 ```
 
 ::::{grid} 2
 :gutter: 3 3 3 3
 
-<!-- Eric is working on LRDOCS-11987, when he is finished, he will add the documentation link here
-:::{grid-item-card} Using the Simulation Panel
-:link: ./building-a-responsive-site/
-::: -->
-
-:::{grid-item-card} グリッドフラグメントを使ったレスポンシブレイアウトの構築
+:::{grid-item-card} グリッドフラグメントを使用したレスポンシブレイアウトの構築
 :link: ./building-a-responsive-site/building-responsive-layouts-with-the-grid-fragment.md
+:::
+
+:::{grid-item-card} シミュレーションパネルの使用
+:link: ./building-a-responsive-site/using-the-simulation-panel.md
 :::
 ::::

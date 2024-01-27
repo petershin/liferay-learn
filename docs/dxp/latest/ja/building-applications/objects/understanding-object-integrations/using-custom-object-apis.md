@@ -9,15 +9,15 @@ toc:
 ---
 # カスタムオブジェクトAPIの使用
 
-{bdg-secondary}`Liferay 7.4+`
+{bdg-secondary}`liferay 7.4+`
 
-カスタムオブジェクトの定義を公開すると、Liferayはオブジェクトとそのデータと連携するためのデフォルトの [REST APIs](../../../headless-delivery/consuming-apis/consuming-rest-services.md) を生成します。 これらのAPIは、オブジェクトのスコープ（会社やサイトなど）に応じて異なります。 定義にリレーションシップやスタンドアロンアクションが含まれている場合、Liferayはそれらを呼び出すためのエンドポイントも生成します。
+カスタムオブジェクトの定義をパブリッシュすると、Liferay はオブジェクトとそのデータをやり取りするためのデフォルトの [REST API](../../../headless-delivery/consuming-apis/consuming-rest-services.md) を生成します。 これらのAPIは、オブジェクトのスコープ（会社やサイトなど）に応じて異なります。 定義にリレーションシップやスタンドアロンアクションが含まれている場合、Liferayはそれらを呼び出すためのエンドポイントも生成します。
 
-これらのヘッドレスサービスのパスは `c/[pluralobjectlabel]` の命名パターンに従う（例：`/o/c/timeoffrequests`）。 `[server]:[port]/o/api` （例：`localhost:8080/o/api`）の Liferay API Explorer から利用可能なオブジェクト API を表示し、テストすることができます。 **RESTアプリケーション** をクリックすると、APIのドロップダウンリストが表示されます。
+これらのヘッドレスサービスのパスは、`c/[pluralobjectlabel]`の命名パターンに従う（例：`/o/c/timeoffrequests`）。 利用可能なオブジェクトAPIは、Liferay API Explorerの `[server]:[port]/o/api` (例えば、`localhost:8080/o/api`) から表示し、テストすることができます。 *RESTアプリケーション*をクリックすると、APIのドロップダウンリストが表示されます。
 
 ![Each object appears under REST Applications.](./using-custom-object-apis/images/01.png)
 
-オブジェクトが有効である間は、これらのAPIを使用して、基本的なCRUD操作、 [集計用語](./using-custom-object-apis/using-aggregation-terms-with-rest-apis.md) と [入れ子フィールド](./using-custom-object-apis/using-nestedfields-to-query-related-entries.md) を使用した複雑なクエリの実行、スタンドアロンアクションのトリガー、エントリーリレーションシップの管理などを実行できます。
+オブジェクトがアクティブな間は、これらのAPIを使用して、基本的なCRUD操作の実行、 [集約項](./using-custom-object-apis/using-aggregation-terms-with-rest-apis.md) と [ネストされたフィールド](./using-custom-object-apis/using-nestedfields-to-query-related-entries.md) を使用した複雑なクエリの実行、スタンドアロン・アクションのトリガー、エントリーのリレーションシップの管理などを行うことができます。
 
 ::::{grid} 2
 :gutter: 3 3 3 3
@@ -70,6 +70,7 @@ toc:
 ```{note}
 バッチ操作は、カンパニー・スコープのオブジェクトに対してのみ有効です。
 ```
+
 ## デフォルトのサイトスコープのREST API
 
 デフォルトのREST APIは、すべてのサイトに範囲指定されているオブジェクトで使用できます。 Javaのメソッドでは、`ObjectName`をオブジェクトの名前に置き換える。
@@ -88,13 +89,14 @@ toc:
 | PUT       | `/{entryId}`                                          | `putObjectName`                              | 指定されたエントリーの詳細をAPI呼び出しで提供されたものに置き換えます                      |
 
 ```{note}
-`scopeKey`には、希望するデータスコープの適切な識別子（サイトIDやユーザーロールなど）を使用する。
+scopeKey`には、希望するデータスコープの適切な識別子（サイトIDやユーザーロールなど）を使用する。
 ```
+
 ## リレーションシップREST API
 
-{bdg-secondary}`Liferay 7.4 U70+/GA70+`.
+{bdg-secondary}`liferay 7.4 U70+/GA70+`.
 
-オブジェクト間に1対多、多対多のリレーションシップを定義すると、Liferayはエントリーリレーションシップを照会、管理するためのエンドポイントを生成します。 これには、関連するオブジェクトのエントリーを返すためのGETエンドポイント、エントリーを関連付けるためのPUTエンドポイント、関連するエントリーの関連付けを解除するためのDELETEエンドポイントが含まれます。 [Using Relationship APIs](./using-custom-object-apis/using-relationship-rest-apis.md) をご参照ください。
+オブジェクト間に1対多、多対多のリレーションシップを定義すると、Liferayはエントリーリレーションシップを照会、管理するためのエンドポイントを生成します。 これには、関連するオブジェクトのエントリーを返すためのGETエンドポイント、エントリーを関連付けるためのPUTエンドポイント、関連するエントリーの関連付けを解除するためのDELETEエンドポイントが含まれます。 詳しくは [Using Relationship API](./using-custom-object-apis/using-relationship-rest-apis.md) を参照。
 
 HTTPエンドポイントでは、`relationshipName`をリレーションシップ名（例：`userToTicket`）に置き換える。 各リレーションシップAPIのJavaメソッドは、メソッド + 現在のオブジェクト + リレーションシップ名 + 関連オブジェクト（例：`getTicketUserToTicketUserPage`、`deleteTicketUserToTicketUser`）という命名パターンに従う。
 
@@ -108,13 +110,13 @@ HTTPエンドポイントでは、`relationshipName`をリレーションシッ�
 サイトにスコープされたオブジェクトの場合、ERCエンドポイントは `/scope/{scopeKey}` 接頭辞を含む（例えば、`/scope/{scopeKey}/by-external-reference-code/{erc}/relationshipName/{relatedERC}`）。 システムオブジェクトでは、外部参照コードのエンドポイントは利用できません。
 
 ```{tip}
-専用のリレーションシップAPIに加えて、`nestedFields`クエリパラメータをオブジェクトの他のGET APIと組み合わせて使用すると、エントリーとその関連エントリーを返すことができます。 このパラメータを使用する場合、出力に含めたいリレーションシップの名前を指定する必要があります（例：`nestedFields=ticketAssignee`など）。 [`nestedFields` を使って関連するエントリーを検索する](./using-custom-object-apis/using-nestedfields-to-query-related-entries.md) を参照してください。
+専用のリレーションシップAPIに加えて、`nestedFields`クエリパラメータをオブジェクトの他のGET APIと組み合わせて使用すると、エントリーとその関連エントリーを返すことができます。 このパラメータを使用する場合、出力に含めたいリレーションシップの名前を指定する必要があります（例：`nestedFields=ticketAssignee`など）。 [Using nestedFields to Query Related Entries](./using-custom-object-apis/using-nestedfields-to-query-related-entries.md) を参照してください。
 ```
 ## スタンドアロンアクションREST API
 
-{bdg-secondary}`Liferay 7.4 U60+/GA60+`.
+{bdg-secondary}`liferay 7.4 U60+/GA60+`.
 
-公開オブジェクトにスタンドアロンアクションを定義すると、Liferayはエントリーでアクションをトリガーするための2つのエンドポイントを生成します。 一つはエントリーのIDを使用し、もう一つはエントリーの外部参照コード（ERC）を使用します。 詳しくは、 [手動アクションの使用](../creating-and-managing-objects/actions/using-manual-actions.md) をご覧ください。
+公開オブジェクトにスタンドアロンアクションを定義すると、Liferayはエントリーでアクションをトリガーするための2つのエンドポイントを生成します。 一つはエントリーのIDを使用し、もう一つはエントリーの外部参照コード（ERC）を使用します。 詳しくは [Using Manual Actions](../creating-and-managing-objects/actions/using-manual-actions.md) を参照。
 
 | HTTP メソッド | HTTPエンドポイント                                                   | Javaメソッド                  |
 | :-------- | :------------------------------------------------------------ | :------------------------ |

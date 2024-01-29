@@ -1,4 +1,8 @@
 ---
+taxonomy-category-names:
+- Cloud
+- Cloud Platform Administration
+- Liferay PaaS
 uuid: 265b7264-198d-4640-8c2a-52681e2a7994
 ---
 # Troubleshooting Tools and Resources

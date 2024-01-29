@@ -1,4 +1,8 @@
 ---
+taxonomy-category-names:
+- Cloud
+- Cloud Platform Administration
+- Liferay PaaS
 uuid: f07a9783-3f56-478b-b4b4-570606f04f29
 ---
 # Shell Access

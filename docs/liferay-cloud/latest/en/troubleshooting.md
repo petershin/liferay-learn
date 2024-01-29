@@ -10,6 +10,10 @@ toc:
   - ./troubleshooting/support-access.md
   - ./troubleshooting/liferay-cloud-platform-status.md
   - ./troubleshooting/creating-thread-and-heap-dumps.md
+taxonomy-category-names:
+- Cloud
+- Cloud Platform Administration
+- Liferay PaaS
 uuid: 5f119685-91e2-497e-8164-f0d184b7a31e
 ---
 # Troubleshooting

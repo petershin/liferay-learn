@@ -1,4 +1,8 @@
 ---
+taxonomy-category-names:
+- Cloud
+- Cloud Platform Administration
+- Liferay PaaS
 uuid: 6a527df3-5d56-4647-85a2-278add6b72cb
 ---
 # Self-Healing

@@ -1,4 +1,8 @@
 ---
+taxonomy-category-names:
+- Cloud
+- Cloud Platform Administration
+- Liferay PaaS
 uuid: fc8a75dd-423c-4e3a-8304-62ddac02f19b
 ---
 # Configuring Cross-Region Disaster Recovery

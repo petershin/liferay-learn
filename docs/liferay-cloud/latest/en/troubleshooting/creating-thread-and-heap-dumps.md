@@ -1,4 +1,8 @@
 ---
+taxonomy-category-names:
+- Cloud
+- Cloud Platform Administration
+- Liferay PaaS
 uuid: 87fc3b35-c7e9-4adb-b7c3-4807b1c7215c
 ---
 # Creating Thread and Heap Dumps

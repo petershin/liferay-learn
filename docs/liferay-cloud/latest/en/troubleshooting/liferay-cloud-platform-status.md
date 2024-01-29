@@ -1,4 +1,9 @@
 ---
+taxonomy-category-names:
+- Cloud
+- Cloud Platform Administration
+- Liferay PaaS
+- Liferay SaaS
 uuid: 1b7118e9-a23d-4466-a018-d327bb1f7cc0
 ---
 # Liferay Cloud Platform Status

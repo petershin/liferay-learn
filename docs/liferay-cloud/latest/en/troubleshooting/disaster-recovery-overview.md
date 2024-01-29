@@ -1,4 +1,8 @@
 ---
+taxonomy-category-names:
+- Cloud
+- Cloud Platform Administration
+- Liferay PaaS
 uuid: cabb6551-8f9a-4e86-822a-92d53d49affc
 ---
 # Disaster Recovery Overview

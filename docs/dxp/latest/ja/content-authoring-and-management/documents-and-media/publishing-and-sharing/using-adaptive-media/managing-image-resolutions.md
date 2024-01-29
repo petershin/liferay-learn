@@ -34,13 +34,13 @@
 
 1. 希望する解像度の **Actions** ボタン( ![Actions Button](../../../../images/icon-actions.png) )をクリックします。
 
-1. **Disable** / **Enable** を選択する。
+1. **Disable**/**Enable** を選択する。
 
    ![Select Disable/Enable.](./managing-image-resolutions/images/04.png)
 
 無効になっている間は、アダプティブ・メディアは、適応された画像を生成するために解像度を使用しません。
 
-画像をアップロードし、後で解像度を再有効化する場合は、 [、手動で](#manually-generating-adapted-images) 対応画像を生成する必要があります。
+画像をアップロードし、後で解像度を再有効化する場合は、 [手動で生成する](#manually-generating-adapted-images) 対応画像を生成する必要があります。
 
 ## 画像解像度の削除
 

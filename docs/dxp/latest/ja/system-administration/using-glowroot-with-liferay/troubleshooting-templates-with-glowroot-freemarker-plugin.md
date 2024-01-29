@@ -6,7 +6,7 @@ Glowroot は、 [FreeMarker テンプレート](../../site-building/displaying-c
 
 ## FreeMarkerプラグインの設定
 
-1. Configuration **&rarr;** Plugins **に移動する。 Liferay FreeMarker Templates Plugin** をクリックします。
+1. **Configuration** &rarr; **Plugins** に移動する。 **Liferay FreeMarker Templates Plugin** をクリックします。
 
 1. インスツルメンテーションは `INFO`、`DEBUG`、`TRACE` レベルで設定できる。
 

@@ -18,11 +18,11 @@ Liferay DXPをAnalytics Cloudに接続するには、以下の前提条件があ
 
 1. Liferay DXPのインストールは、以下の最小バージョンのいずれかを満たす必要があります。
 
-   - 7.4（すべてのバージョン）
-   - 7.3 フィックスパック 1
-   - 7.2 フィックスパック 11
-   - 7.1 フィックスパック 22
-   - 7.0 フィックスパック 98
+   * 7.4（すべてのバージョン）
+   * 7.3 フィックスパック 1
+   * 7.2 フィックスパック 11
+   * 7.1 フィックスパック 22
+   * 7.0 フィックスパック 98
 
 1. 少なくとも1つのAnalytics Cloudワークスペースにアクセスする必要があります。 Analytics Cloudの有料ユーザーであれば、ログイン時に自分のワークスペースが表示されます。 わからない場合は、 [help.liferay.com](https://help.liferay.com/) からサポートにご連絡ください。
 
@@ -40,7 +40,7 @@ Liferay DXPをAnalytics Cloudに接続するには、以下の前提条件があ
 
 1. Liferay DXPインスタンスにログインします。
 
-1. [グローバルメニュー](../images/icon-applications-menu.png) を開き、[コントロールパネル] タブを開き、[インスタンス設定] をクリックします。
+1. ![グローバルメニュー](../images/icon-applications-menu.png) を開き、[コントロールパネル] タブを開き、[インスタンス設定] をクリックします。
 
 1. ［プラットフォーム］で［アナリティクス クラウド］をクリックします。
 
@@ -64,7 +64,7 @@ Liferay DXPをAnalytics Cloudに接続するには、以下の前提条件があ
 
    ![Select sites and channels to sync with Analytics Cloud.](./connecting-liferay-dxp-to-analytics-cloud/images/04.gif)
 
-1. 次へ」をクリックする。
+1. 「次へ」をクリックする。
 
 1. 同期させたい個人プロフィールとアカウントプロフィールを選択します。
 
@@ -76,7 +76,7 @@ Liferay DXPをAnalytics Cloudに接続するには、以下の前提条件があ
    Analytics Cloudは、個々の連絡先データを同期して管理するためのツールを提供します。 ただし、これらのツールは、プライバシー規制（GDPRなど）の遵守を保証するものではありません。 お客様は、お客様のサイトが個人データを保存し処理する場所で、プライバシー法を遵守するために必要な慣行および構成を慎重に決定する必要があります。
    ```
 
-1. 次へ」をクリックする。
+1. 「次へ」をクリックする。
 
 1. 各エンティティに必要な属性を選択します。 コマース・チャンネルを同期している場合、コマースエンティティの属性を選択することができます。
 
@@ -84,7 +84,7 @@ Liferay DXPをAnalytics Cloudに接続するには、以下の前提条件があ
 
     ![Select the attributes to sync for each of the entities.](./connecting-liferay-dxp-to-analytics-cloud/images/06.png)
 
-1. 終了」をクリックする。
+1. 「終了」をクリックする。
 
     以下のメッセージが表示されることを確認します。
 
@@ -110,7 +110,7 @@ Liferay DXPおよびAnalytics Cloudは、安全で暗号化されたトークン
 
 1. ![グローバルメニュー](../images/icon-applications-menu.png) を開き、[コントロールパネル] タブを開き、[インスタンス設定] をクリックします。
 
-1. プラットフォーム]で[**Analytics Cloud**]をクリックします。
+1. [プラットフォーム]で[**Analytics Cloud**]をクリックします。
 
 1. アナリティクス クラウドのトークンを貼り付け、 **Connect** をクリックします。
 
@@ -132,9 +132,9 @@ Liferay DXPおよびAnalytics Cloudは、安全で暗号化されたトークン
 
 1. Analytics Cloudで、 **Settings** &rarr; **Properties** に移動します。
 
-1. New Property_をクリックし、ラベルを入力する（例：Minium Site）。
+1. **New Property** をクリックし、ラベルを入力する（例：Minium Site）。
 
-1. DXPインスタンスで、 **グローバルメニュー**（ [グローバルメニュー](../images/icon-applications-menu.png) ）を開き、 **コントロールパネル** タブに移動し、 **インスタンス設定** をクリックします。
+1. DXPインスタンスで、 **グローバルメニュー**（ ![グローバルメニュー](../images/icon-applications-menu.png) ）を開き、 **コントロールパネル** タブに移動し、 **インスタンス設定** をクリックします。
 
 1. プラットフォーム]で[**Analytics Cloud**]をクリックします。
 
@@ -152,7 +152,7 @@ Liferay DXPおよびAnalytics Cloudは、安全で暗号化されたトークン
 
 ### 連絡先の同期
 
-1. DXPインスタンスで、 **グローバルメニュー**（ [グローバルメニュー](../images/icon-applications-menu.png) ）を開き、 **コントロールパネル** タブに移動し、 **インスタンス設定** をクリックします。
+1. DXPインスタンスで、 **グローバルメニュー**（ ![グローバルメニュー](../images/icon-applications-menu.png) ）を開き、 **コントロールパネル** タブに移動し、 **インスタンス設定** をクリックします。
 
 1. [プラットフォーム]で[**Analytics Cloud**]をクリックします。
 

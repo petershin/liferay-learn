@@ -145,7 +145,7 @@ Liferayのすぐに使えるボタンフラグメントがあなたのユース�
 
 Liferayは、どのロールがスタンドアロンアクションをトリガーできるかを管理するための権限を自動的に生成します。 各パーミッションは`action.[actionName]`の命名パターンに従います(例: `action.sendReminder`)。 オブジェクトのパーミッションの詳細については、 [権限設定フレームワークの統合](../../understanding-object-integrations/permissions-framework-integration.md) ]を参照してください。
 
-![Standalone permissions use the action. [actionName] naming pattern.](./using-manual-actions/images/08.png)
+![Standalone permissions use the action.[actionName] naming pattern.](./using-manual-actions/images/08.png)
 
 ## 関連トピック
 

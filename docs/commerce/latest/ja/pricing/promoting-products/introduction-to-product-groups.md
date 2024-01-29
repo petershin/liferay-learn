@@ -12,7 +12,7 @@
 
 ## 商品グループの作成
 
-1. [アプリケーションメニュー](../../images/icon-applications-menu.png) を開き、 **Commerce** &rarr; **Product Groups** に移動します。
+1. ![アプリケーションメニュー](../../images/icon-applications-menu.png) を開き、 **Commerce** &rarr; **Product Groups** に移動します。
 
 1. **Add**（ [Add](../../images/icon-add.png) ）をクリックし、商品グループの名前と説明を入力します。
 
@@ -74,7 +74,7 @@
 
 価格リストを商品グループにリンクさせるには、まず価格リストを作成し、作成した商品グループをターゲットとする価格修飾子を作成する必要があります。
 
-1. ![アプリケーションメニュー](../../images/icon-applications-menu.png) を開き、 &rarr; **Commerce** タブを開き、 ***_* Pricing** &rarr; **Price Lists** に進みます。
+1. ![アプリケーションメニュー](../../images/icon-applications-menu.png) を開き、 &rarr; **Commerce** タブを開き、 **Pricing** &rarr; **Price Lists** に進みます。
 
 1. **Add**(![Add](../../images/icon-add.png)) をクリックし、価格リストの名前、カタログ、通貨を入力します。
 

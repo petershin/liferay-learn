@@ -815,7 +815,7 @@ Simple Editorを使用するようにLiferay Portalを構成している場合�
 
 ***
 
-### ポータルのプロパティを "module.framework.properties.felix.fileinstall.\ **"から "module.framework.properties.file.install.\** "に変更しました。
+### ポータルのプロパティを "module.framework.properties.felix.fileinstall.\*"から "module.framework.properties.file.install.\*"に変更しました。
 
 * **日付:** 2020年7月13日
 * **JIRAチケット：** [LPS-115016](https://issues.liferay.com/browse/LPS-115016)

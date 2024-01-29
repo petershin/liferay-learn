@@ -6,7 +6,7 @@ Liferayでは、Webインターフェイスで利用可能なアクションと�
 
 クライアントがWeb APIを介してLiferay DXPに接続するには、3つの異なるアプローチがあります。
 * OpenAPIの仕様に準拠した [__Headless REST APIs__](#headless-rest-apis)
-* GraphQLの仕様に準拠した [ [__GraphQL API__](#graphql-api)
+* GraphQLの仕様に準拠した [__GraphQL API__](#graphql-api)
 * サービスビルダによって生成された、 [__Plain Web/REST Services__](#plain-webrest-services)
 
 ### ヘッドレスREST API

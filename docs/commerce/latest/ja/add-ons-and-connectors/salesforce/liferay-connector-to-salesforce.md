@@ -1,4 +1,4 @@
-# Liferay Connector to Salesforce
+# SalesforceへのLiferayコネクタ
 
 {bdg-primary}`サブスクリプション`
 

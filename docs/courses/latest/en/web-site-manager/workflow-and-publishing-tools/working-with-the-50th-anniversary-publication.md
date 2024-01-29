@@ -137,13 +137,9 @@ Next, the announcement fragment in the master page must be replaced with the new
 
 1. Go to _Site Menu_ (![Site Menu](../../images/icon-product-menu.png)) &rarr; _Site Builder_ &rarr; _Navigation Menus_ and click _Clarity Navigation Menu_.
 
-   <!-- Note, right now Olivia O'Neal can't get to Navigation Menus, need to make sure she has the right role -->
-
 1. Add an item to the More submenu for the event you just created by clicking _Add Child_ &rarr; _Web Content Article_ &rarr; Clarity is Turning 50!_.
 
    ![Add the web content article to the navigation menu.](./working-with-the-50th-anniversary-publication/images/09.png)
-
-   <!-- Note, this is not in the publication apparently. Or at least I can't see it in Review Changes. But I also cannot see it in production. So perhaps because the web content article isn't there the menu item doesn't show--makes sense and it works to show it -->
 
 Now the content is ready for the 50th anniversary!
 

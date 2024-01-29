@@ -12,6 +12,11 @@ toc:
   - ./liferay-internals.md
   - ./headless-delivery.md
   - ./installation-and-upgrades.md
+taxonomy-category-names:
+- Platform
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 74d5f80a-a8d4-4fea-b694-7775715608cc
 ---
 # DXP

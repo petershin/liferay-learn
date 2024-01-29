@@ -17,7 +17,7 @@ Using this feature, a service can automatically increase (upscale) the number of
 ```
 
 !!! note
-    Auto-scaling is only available for the Liferay DXP service in production environments. Once auto-scaling is enabled, each extra instance of the service will incur an hourly charge. For more information on how auto-scaling is charged, see [How Auto-scaling is Charged](https://help.liferay.com/hc/en-us/articles/360030843592-How-Auto-Scaling-is-charged-).
+    Auto-scaling is only available for the Liferay DXP service in production environments. Once auto-scaling is enabled, each extra instance of the service incurs an hourly charge. For more information on how auto-scaling is charged, see [How Auto-scaling is Charged](https://help.liferay.com/hc/en-us/articles/360030843592-How-Auto-Scaling-is-charged-).
 
 ## JVM Memory Configuration
 
@@ -25,7 +25,7 @@ For auto-scaling to work properly, it is important to set an appropriate memory 
 
 Set the `liferay` service's `LIFERAY_JVM_OPTS` environment variable to allocate memory using the `-Xms` and `-Xmx` flags. The `-Xms` flag sets the initial memory allocation when the service starts, while the `-Xmx` flag determines the maximum memory allocation for the JVM. For example, if you have a total of 16 GB provisioned and available for this service, you can set this configuration:
 
-```
+```bash
 -Xms4096m -Xmx12288m
 ```
 
@@ -58,14 +58,14 @@ With auto-scaling enabled, Liferay Cloud monitors your service and scales it aut
 
 ### Setting the Maximum Number of Additional Instances
 
-By default, auto-scaling can increase the number of instances for the `liferay` service up to 10. However, you can override this default to use more instances if necessary. You must override the default in two places to allow services to use more than the default 10 instances.
+By default, auto-scaling can increase the number of instances for the `liferay` service up to 10. You can, however, override this default to use more instances if necessary. You must make changes in two places to accomplish this. 
 
 1. Set the `LCP_HAPROXY_SERVER_TEMPLATE_BACKEND_NUM` [environment variable](../reference/defining-environment-variables.md) in your [web server service](../platform-services/web-server-service.md) to the highest *total* number needed. The `liferay` service may not scale beyond the maximum number of instances defined in `LCP_HAPROXY_SERVER_TEMPLATE_BACKEND_NUM` (10 by default).
 
 1. On the Liferay service's *Scale* tab, update the number in *Max number of additional instances* to the desired value.
 
-    !!! note
-        This field sets the additional number of instances that auto-scaling can create, adding to the base number of instances. It does not set the total number it can create at maximum.
+   !!! note
+       This field sets the additional number of instances that auto-scaling can create, adding to the base number of instances. It does not set the maximum total number it can create.
 
 1. Click *Update*.
 
@@ -92,4 +92,4 @@ If the `autoscale` property isn't set, the target average utilization defaults t
 
 ## Auto-scaling and DXP Activation Keys
 
-An activation key is typically required to be deployed and validated in order to use Liferay DXP on premises. On Liferay Cloud when auto-scaling is enabled, the Liferay Cloud team resolves any DXP Activation key issues and will add and remove activation keys as needed.
+An activation key is typically required to be deployed and validated to use self-hosted Liferay DXP. On Liferay Cloud when auto-scaling is enabled, the Liferay Cloud team resolves any DXP Activation key issues and adds and removes activation keys as needed.

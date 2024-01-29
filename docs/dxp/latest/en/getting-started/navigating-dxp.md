@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Platform
+- Site Navigation
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 5e95a054-5432-4645-aafe-b57d6d9c0220
 ---
 

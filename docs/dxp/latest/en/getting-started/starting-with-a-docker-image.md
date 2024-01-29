@@ -1,4 +1,8 @@
 ---
+taxonomy-category-names:
+- DXP Self-Hosted Installation, Maintenance, and Administration
+- Installation
+- Liferay Self-Hosted
 uuid: c1c04525-0b10-4388-b0a1-c3e7f633c303
 ---
 # Starting with a Docker Image

@@ -7,6 +7,11 @@ toc:
   - ./getting-started/creating-your-first-site.md
   - ./getting-started/changing-your-sites-appearance.md
   - ./getting-started/whats-new-73.md
+taxonomy-category-names:
+- Platform
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 myst:
   html_meta:
     documentation-type: user-guide

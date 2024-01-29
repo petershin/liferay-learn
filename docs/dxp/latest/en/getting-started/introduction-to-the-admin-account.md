@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Platform
+- User, Organization, and Account Management
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 5e55290c-97ec-4400-92ea-d9270143c7d8
 ---
 # Introduction to the Admin Account

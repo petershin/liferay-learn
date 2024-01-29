@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Sites
+- Site Appearance and Design
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 6169fc69-527b-4f9d-82d3-6e503510b928
 ---
 # Changing Your Site's Appearance

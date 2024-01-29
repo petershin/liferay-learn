@@ -1,4 +1,9 @@
 ---
+taxonomy-category-names:
+- Platform
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 76553d79-d3f4-43e1-bc3c-2bd87108b6ab
 ---
 # What's New in Liferay DXP 7.4

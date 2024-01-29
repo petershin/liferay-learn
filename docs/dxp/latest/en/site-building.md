@@ -1,10 +1,4 @@
 ---
-taxonomy-category-names:
-- Sites
-- Site Administration
-- Liferay Self-Hosted
-- Liferay PaaS
-- Liferay SaaS
 toc:
   - ./site-building/getting-started-with-site-building.md
   - ./site-building/sites.md
@@ -17,6 +11,12 @@ toc:
   - ./site-building/optimizing-sites.md
   - ./site-building/site-settings.md
   - ./site-building/developer-guide.md
+taxonomy-category-names:
+- Sites
+- Site Administration
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: cb9849f9-1e5e-4c9b-a1f4-81250c34ffea
 ---
 # Site Building

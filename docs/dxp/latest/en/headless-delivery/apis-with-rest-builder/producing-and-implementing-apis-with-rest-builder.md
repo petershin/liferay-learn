@@ -328,7 +328,7 @@ The `Goo` logic is similar, except in this case multiple `Goo`s are returned bec
 
 Liferay supports namespace configuration for your GraphQL applications. You can use namespaces to group queries, mutations, and types for a given application. Specifying namespaces also allows you to use duplicate schemas in different applications. 
 
-!!! info ""
+!!! info 
     See [Consuming GraphQL APIs](../consuming-apis/consuming-graphql-apis.md) for more information on using GraphQL for Liferay applications.
 
 To add and use a GraphQL namespace, follow these steps:

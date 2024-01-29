@@ -4,7 +4,6 @@ uuid: 4d2bce66-7c41-423a-9cf8-9a01817e53eb
 # Approving FAQs with Workflow
 
 Clarity's initial site is in place and the first pieces of [content were added](../creating-content.md) by the content manager directly. It's time for other users to begin creating content for Clarity. To aid this effort, review processes are required to ensure the quality and consistency of published content. You'll use Liferay's workflow processes for these reviews. Clarity wants its customer advocacy specialist, Rex Randle, to turn common customer questions into FAQ entries, published after review and approval by the content manager, Olivia O'Neal. Preston Palmer, the site administrator, can manage workflows in the site to set this up.
-<!-- Too much info, some can be extracted to the introduction, and probably presented as a table -->
 
 1. Log in as Preston Palmer, the site administrator.
 

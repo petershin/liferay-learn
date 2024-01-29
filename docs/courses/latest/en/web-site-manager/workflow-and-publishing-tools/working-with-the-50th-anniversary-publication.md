@@ -31,10 +31,10 @@ Preston Palmer is a publication administrator in the template, so log in with th
 
 1. Click _New_ &rarr; _Event_ and specify
 
-   * Title: Clarity is Turning 50!
-   * Summary: Clarity is turning 50, so let's celebrate!
-   * Body: Check out our limited-time only frames! Clarity turned 50, and we're excited to offer these frames while they last.
-   * Banner Image: <!-- We need one -->
+   * Title: _Clarity is Turning 50!_
+   * Summary: _Clarity is turning 50, so let's celebrate!_
+   * Body: _Check out our limited-time only frames! Clarity turned 50, and we're excited to offer these frames while they last._
+   * Banner Image: Select the _clarity-special-frames_ image.
 
 1. Click _Submit for Workflow_.
 
@@ -130,14 +130,14 @@ Next, the announcement fragment in the master page must be replaced with the new
 
 1. Click _New_ &rarr; _Event_ and specify
 
-   * Title: Clarity is Turning 50!
-   * Summary: Clarity is turning 50, so let's celebrate!
-   * Body: Check out our limited-time only frames! Clarity turned 50, and we're excited to offer these frames while they last.
-   * Banner Image: <!-- We need one -->
+   * Title: _Clarity is Turning 50!_
+   * Summary: _Clarity is turning 50, so let's celebrate!_
+   * Body: _Check out our limited-time only frames! Clarity turned 50, and we're excited to offer these frames while they last._
+   * Banner Image: Select the _clarity-special-frames_ image.
 
 1. Go to _Site Menu_ (![Site Menu](../../images/icon-product-menu.png)) &rarr; _Site Builder_ &rarr; _Navigation Menus_ and click _Clarity Navigation Menu_.
 
-   <!-- Note, right now Olivia O'Neal can't get to Navigaiton Menus, need to make sure she has the right role -->
+   <!-- Note, right now Olivia O'Neal can't get to Navigation Menus, need to make sure she has the right role -->
 
 1. Add an item to the More submenu for the event you just created by clicking _Add Child_ &rarr; _Web Content Article_ &rarr; Clarity is Turning 50!_.
 

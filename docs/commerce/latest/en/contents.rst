@@ -11,6 +11,7 @@ Contents
    product-management.md
    creating-store-content.md   
    pricing.md
+   payment-management.md
    users-and-accounts.md
    order-management.md
    inventory-management.md

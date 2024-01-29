@@ -12,7 +12,6 @@ taxonomy-category-names:
 {bdg-secondary}`Liferay 7.4 U49+/GA49+`
 
 Users with the necessary account management permissions can set channel defaults for business accounts.
-<!-- Link to Channel Defaults Permission Guide when published -->
 
 1. Open the *Global Menu* ( ![Global Menu](../../../images/icon-applications-menu.png) ) and navigate to *Control Panel* &rarr; *Accounts*.
 
@@ -22,6 +21,8 @@ Here you can set the following defaults.
 
 ```{note}
 If you set defaults for individual channels and all other channels, the individual defaults takes priority if eligible.
+
+{bdg-secondary}`Liferay DXP 2024.Q1+/Portal 7.4 GA112+` There are two new permissions to control user access to view and manage channel defaults. A user with the `Accounts > Account Entry: View Channel Defaults` permission can only view the defaults under the Channel Defaults tab. Users with the `Accounts > Account Entry: Manage Channel Defaults` permission can view and edit channel defaults. 
 ```
 
 ## Default Billing and Shipping Addresses

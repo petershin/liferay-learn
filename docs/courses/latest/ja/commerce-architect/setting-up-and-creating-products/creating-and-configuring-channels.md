@@ -132,7 +132,7 @@ B2Bチャネルでは、支払い方法、配送方法を設定し、サイト�
 
 1. ［**Save**］をクリックします。
 
-1. Shipping Options（配送オプション）ページに移動し、 **Add**（！[Add]（../../images/icon-add.png））をクリックします。
+1. Shipping Options（配送オプション）ページに移動し、 **Add**（![Add]（../../images/icon-add.png））をクリックします。
 
 1. 名前を **Standard Shipping** と入力し、 **Save** をクリックします。
 

@@ -11,16 +11,16 @@ visibility:
 
 サプライヤー・ポータルを導入することで、多くの課題を解決することができますが、各オポチュニティが抱える課題はそれぞれ異なります。  以下の機能は、Liferay DXPがサプライヤーポータルとしてどのように使用できるかを示しています：
 
-* [セグメンテーションとパーソナライゼーション](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience)
-* [ID管理とアクセス管理](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay)
-* [ローコード／ノーコード・アプリケーション構築](https://learn.liferay.com/w/dxp/building-applications/objects)
-* [データモデリングとプロセスオートメーション](https://learn.liferay.com/w/dxp/process-automation)
-* [コマース](https://learn.liferay.com/w/commerce/index)
-* [デザイン・システムとエクスペリエンス・マネジメント](https://learn.liferay.com/w/dxp/site-building)
+* [サイトエクスペリエンスのパーソナライズ](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience)
+* [Liferayの保護](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay)
+* [オブジェクト](https://learn.liferay.com/w/dxp/building-applications/objects)
+* [プロセスの自動化](https://learn.liferay.com/w/dxp/process-automation)
+* [Commerce](https://learn.liferay.com/w/commerce/index)
+* [サイトの構築](https://learn.liferay.com/w/dxp/site-building)
 * 統合と相互運用性
-* [検索](https://learn.liferay.com/w/dxp/using-search) と [ナビゲーション](https://learn.liferay.com/w/dxp/site-building/site-navigation)
-* [ヘッドレスAPIとマルチチャネル](https://learn.liferay.com/w/dxp/headless-delivery)
-* [コラボレーションと知識の共有](https://learn.liferay.com/w/dxp/collaboration-and-social)
+* [検索の利用](https://learn.liferay.com/w/dxp/using-search) と [サイトナビゲーション](https://learn.liferay.com/w/dxp/site-building/site-navigation)
+* [ヘッドレスデリバリー](https://learn.liferay.com/w/dxp/headless-delivery)
+* [コラボレーションとソーシャルメディア](https://learn.liferay.com/w/dxp/collaboration-and-social)
 
 サプライヤーポータル用にLiferay DXPを評価する場合、これらの機能を強調してください：
 

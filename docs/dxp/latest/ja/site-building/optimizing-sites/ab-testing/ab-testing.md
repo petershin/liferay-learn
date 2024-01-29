@@ -8,7 +8,7 @@ A/Bテストでは、さまざまなユーザーのバリエーションをテ�
 
 ![A/Bテストを使用して2つの異なるCTAボタンの効率を比較します](./ab-testing/images/01.png)
 
-A/Bテストを実行するには、Liferay DXPインスタンスを [Liferay Analytics Cloudに接続する](https://learn.liferay.com/analytics-cloud/latest/ja/connecting-data-sources/connecting-liferay-dxp-to-analytics-cloud.html) 必要があります。 プロセスは次のとおりです。
+A/Bテストを実行するには、Liferay DXPインスタンスを [Liferay DXPをAnalytics Cloudに接続する](https://learn.liferay.com/ja/w/analytics-cloud/getting-started/connecting-liferay-dxp-to-analytics-cloud) 必要があります。 プロセスは次のとおりです。
 
 * Liferay DXPでA/Bテストを作成します。
 * A/BテストはAnalytics Cloudと自動的に同期します。

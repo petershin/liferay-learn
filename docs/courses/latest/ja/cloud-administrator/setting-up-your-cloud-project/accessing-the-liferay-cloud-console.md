@@ -30,5 +30,5 @@
 
 ## 関連概念
 
-* [セットアップメールの確認](https://learn.liferay.com/w/liferay-cloud/getting-started/initial-setup-overview#check-setup-emails)
-* [Liferay Cloudコンソールへのアクセス](https://learn.liferay.com/w/liferay-cloud/getting-started/initial-setup-overview#access-the-liferay-cloud-console)
+* [初期設定の概要](https://learn.liferay.com/w/liferay-cloud/getting-started/initial-setup-overview#check-setup-emails)
+* [初期設定の概要](https://learn.liferay.com/w/liferay-cloud/getting-started/initial-setup-overview#access-the-liferay-cloud-console)

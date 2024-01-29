@@ -30,7 +30,7 @@ Groovy スクリプトアクションは、Liferay Experience Cloud Self-Managed
 
 ![Select a notification template.](./understanding-action-types/images/01.png)
 
-すぐに使える通知タイプがニーズに合わない場合は、クライアント拡張機能を使ってカスタム通知タイプを作成できます。 詳細は [Microservice Client Extensions](../../../client-extensions/microservice-client-extensions.md) を参照。
+すぐに使える通知タイプがニーズに合わない場合は、クライアント拡張機能を使ってカスタム通知タイプを作成できます。 詳細は [マイクロサービスのクライアント拡張](../../../client-extensions/microservice-client-extensions.md) を参照。
 
 ## オブジェクトエントリーを追加
 
@@ -40,7 +40,7 @@ Groovy スクリプトアクションは、Liferay Experience Cloud Self-Managed
 * 新規アカウントにデフォルトユーザーを自動的に追加する
 * カスタムチケットシステム内で、現在のチケットに子チケットを手動で追加する。
 
-有効なオブジェクトを選択する必要があります。 その後、エントリーのフィールドに規定値を設定できます。 これらの値を直接入力するか、_Code_ ( ![Code](../../../../images/icon-code.png) ) をクリックして、動的に値を設定する式を使用します。 オブジェクトに必須項目が含まれている場合、規定値を設定する必要があります。
+有効なオブジェクトを選択する必要があります。 その後、エントリーのフィールドに規定値を設定できます。 これらの値を直接入力するか、 **Code**( ![Code](../../../../images/icon-code.png) ) をクリックして、動的に値を設定する式を使用します。 オブジェクトに必須項目が含まれている場合、規定値を設定する必要があります。
 
 ![Select an active object and enter predefined values for the created entries.](./understanding-action-types/images/02.png)
 
@@ -52,7 +52,7 @@ Groovy スクリプトアクションは、Liferay Experience Cloud Self-Managed
 * ボタンをクリックすると、チケットの担当者を現在のユーザーに手動で更新する
 * ユーザーがお気に入り登録した後、エントリーのブール値フィールドを自動的に`true`に更新する。
 
-現在のエントリーで更新するフィールド（複数可）を選択し、新しい値を入力する必要があります。 これらの値を直接入力するか、_Code_ ( ![Code](../../../../images/icon-code.png) ) をクリックして、動的に値を設定する式を使用することができます。
+現在のエントリーで更新するフィールド（複数可）を選択し、新しい値を入力する必要があります。 これらの値を直接入力するか、 **Code**( ![Code](../../../../images/icon-code.png) ) をクリックして、動的に値を設定する式を使用することができます。
 
 ![Select the fields from the current object entry that you want to edit and enter default values.](./understanding-action-types/images/03.png)
 

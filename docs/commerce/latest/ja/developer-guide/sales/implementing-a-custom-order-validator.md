@@ -2,7 +2,7 @@
 
 このチュートリアルでは、 [CommerceOrderValidator](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/order/CommerceOrderValidator.java) インターフェイスを実装してカスタムオーダーバリデータを追加する方法を説明します。
 
-注文バリデータは、チェックアウトを進めるときに顧客のカート内の商品を検証するクラスです。 Liferay は、[デフォルト](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-service/src/main/java/com/liferay/commerce/internal/order/DefaultCommerceOrderValidatorImpl.java) を含む複数のすぐに使える注文バリデーターに加え、[アイテムのバージョン](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-service/src/main/java/com/liferay/commerce/internal/order/VersionCommerceOrderValidatorImpl.java) と [繰り返しのアイテム (サブスクリプション)](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-service/src/main/java/com/liferay/commerce/internal/order/SubscriptionCommerceOrderValidatorImpl.java) をチェックするためのバリデーターを提供します。
+注文バリデータは、チェックアウトを進めるときに顧客のカート内の商品を検証するクラスです。 Liferay は、 [デフォルト](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-service/src/main/java/com/liferay/commerce/internal/order/DefaultCommerceOrderValidatorImpl.java) を含む複数のすぐに使える注文バリデーターに加え、 [アイテムのバージョン](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-service/src/main/java/com/liferay/commerce/internal/order/VersionCommerceOrderValidatorImpl.java) と [繰り返しのアイテム (サブスクリプション)](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-service/src/main/java/com/liferay/commerce/internal/order/SubscriptionCommerceOrderValidatorImpl.java) をチェックするためのバリデーターを提供します。
 
 オーダーバリデータには、商品をカートに追加するときと、新しいチェックアウトステップに進むときの両方のバリデーションロジックがあります。 3つのパートがある：
 
@@ -45,9 +45,9 @@
    STARTED com.acme.n9b2.impl_1.0.0
    ```
 
-1. 失敗メッセージを表示して、サンプルオーダーバリデータの追加を確認する。 ブラウザを`https://localhost:8080`に開き、100ドル以上の商品が少なくとも1点あるカタログに移動する。 そのような商品がまだ存在しない場合は、自分で追加してください。詳細については、 [Creating a Simple Product](../../product-management/creating-and-managing-products/product-types/creating-a-simple-product.md) を参照してください。
+1. 失敗メッセージを表示して、サンプルオーダーバリデータの追加を確認する。 ブラウザを`https://localhost:8080`に開き、100ドル以上の商品が少なくとも1点あるカタログに移動する。 そのような商品がまだ存在しない場合は、自分で追加してください。詳細については、 [シンプル商品を作成する](../../product-management/creating-and-managing-products/product-types/creating-a-simple-product.md) を参照してください。
 
-   カタログからこの価格の商品を探し、_カートに入れる_をクリックします。 数量を11以上に増やし、矢印をクリックして続行します。 表示されるエラーメッセージは、カスタム注文バリデーターがアイテムの追加を正常に拒否したことを示しています。
+   カタログからこの価格の商品を探し、 **カートに入れる** をクリックします。 数量を11以上に増やし、矢印をクリックして続行します。 表示されるエラーメッセージは、カスタム注文バリデーターがアイテムの追加を正常に拒否したことを示しています。
 
    ![The custom order validator displays an error message.](./implementing-a-custom-order-validator/images/01.png)
 
@@ -64,7 +64,7 @@
 
 Liferay が新しいオーダーバリデータを [オーダーバリデータレジストリ](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-service/src/main/java/com/liferay/commerce/internal/order/CommerceOrderValidatorRegistryImpl.java) の他のものと区別できるように、 オーダーバリデータに個別のキーを指定することが重要です。 すでに使われているキーを再利用すると、関連する既存のバリデータが上書きされます。
 
-`commerce.order.validator.priority`の値は、オーダーバリデータが他のバリデータと順番にバリデーションを行うタイミングを示します。 たとえば、 [デフォルトの注文バリデーター](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$］/modules/apps/commerce/commerce-service/src/main/java/com/liferay/commerce/internal/order/DefaultCommerceOrderValidatorImpl.java) の値は10です。 オーダーバリデータに 9 を指定すると、デフォルトバリデータの直前でバリデーションを行うようになります。
+`commerce.order.validator.priority`の値は、オーダーバリデータが他のバリデータと順番にバリデーションを行うタイミングを示します。 たとえば、 [デフォルトの注文バリデーター](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-service/src/main/java/com/liferay/commerce/internal/order/CommerceOrderValidatorRegistryImpl.java) の値は10です。 オーダーバリデータに 9 を指定すると、デフォルトバリデータの直前でバリデーションを行うようになります。
 
 ## `CommerceOrderValidator` インターフェイスのレビュー
 
@@ -102,7 +102,7 @@ private static final double _MAX_ITEM_PRICE = 100.0;
 private static final int _MAX_ITEM_QUANTITY = 10;
 ```
 
-この例の主な検証では、価格 (「BigDecimal」として保存) が $100 より大きいかどうか、および数量が 10 より大きいかどうかをチェックします。 この価格情報は、顧客の注文に関する情報が含まれる「CPInstance」から取得できます。 `CPInstance` で使用できるその他のメソッドについては、[CPInstance](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-product-api/src/main/java/com/liferay/commerce/product/model/CPInstance.java) および [CPInstanceModel](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-product-api/src/main/java/com/liferay/commerce/product/model/CPInstanceModel.java) を参照してください。
+この例の主な検証では、価格 (「BigDecimal」として保存) が $100 より大きいかどうか、および数量が 10 より大きいかどうかをチェックします。 この価格情報は、顧客の注文に関する情報が含まれる「CPInstance」から取得できます。 `CPInstance` で使用できるその他のメソッドについては、 [CPInstance](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-product-api/src/main/java/com/liferay/commerce/product/model/CPInstance.java) および [CPInstanceModel](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-product-api/src/main/java/com/liferay/commerce/product/model/CPInstanceModel.java) を参照してください。
 
 ```{note}
 主なバリデーションチェックには、なぜ失敗したかを説明するローカライズされたメッセージを含めるのがベストプラクティスです。
@@ -116,7 +116,7 @@ private static final int _MAX_ITEM_QUANTITY = 10;
    :lines: 62-84
 ```
 
-このメソッドは顧客のカート内の商品に対して呼び出されるので、同じ検証ロジックをこのメソッドに追加します。 ここでの主な違いは、情報を `CommerceOrderItem` オブジェクトから取得することです。 `CommerceOrderItem` で使用できるその他のメソッドについては、[CommerceOrderItem](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/model/CommerceOrderItem.java) および [CommerceOrderItemModel](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/model/CommerceOrderItemModel.java) を参照してください。
+このメソッドは顧客のカート内の商品に対して呼び出されるので、同じ検証ロジックをこのメソッドに追加します。 ここでの主な違いは、情報を `CommerceOrderItem` オブジェクトから取得することです。 `CommerceOrderItem` で使用できるその他のメソッドについては、 [CommerceOrderItem](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/model/CommerceOrderItem.java) および [CommerceOrderItemModel](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/model/CommerceOrderItemModel.java) を参照してください。
 
 ### `Language.properties`に言語キーが追加されました。
 
@@ -127,11 +127,11 @@ expensive-items-have-a-maximum-order-quantity-of-x=Expensive items have a maximu
 this-expensive-item-has-a-maximum-quantity-of-x=This expensive item has a maximum order quantity of {0}.
 ```
 
-詳細は、 [アプリケーションのローカライズ](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application) を参照してください。
+詳細は、 [アプリケーションのローカライズ](https://help.liferay.com/hc/ja/articles/360018168251-Localizing-Your-Application) を参照してください。
 
 ## カスタムオーダーバリデータの変更
 
-オーダーバリデータの動作を変更したい場合は、javaファイルを編集します。 MAX_ITEM_PRICE\` の値を変更して、$200 以上の注文を拒否するようにする。 カスタムオーダーバリデータを再デプロイして、これらの変更をLiferayに送信します。
+オーダーバリデータの動作を変更したい場合は、javaファイルを編集します。 `_MAX_ITEM_PRICE` の値を変更して、$200 以上の注文を拒否するようにする。 カスタムオーダーバリデータを再デプロイして、これらの変更をLiferayに送信します。
 
 ブラウザに戻って、100ドルから200ドルの商品を10個追加してみる。 バリデータが100ドル以上の注文を拒否しなくなったので、これらの商品をカートに入れることができます。
 
@@ -144,4 +144,4 @@ this-expensive-item-has-a-maximum-quantity-of-x=This expensive item has a maximu
 ## 関連トピック
 
 * [シンプルな製品の作成](../../product-management/creating-and-managing-products/product-types/creating-a-simple-product.md)
-* [アプリケーションのローカライズ](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application)
+* [アプリケーションのローカライズ](https://help.liferay.com/hc/ja/articles/360018168251-Localizing-Your-Application)

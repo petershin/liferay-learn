@@ -24,8 +24,8 @@ visibility:
 競合他社が同じ価値を提供すると宣伝する中、Liferayだけがそのような競合他社とは一線を画す特徴や特性を独自に持ち合わせているため、お客様により大きな価値を提供できます。
 
 ```{note}
-* 本モジュールのライブワークショップの [録画](https://learn.liferay.com/web/guest/d/l0-4-liferays-unique-value-proposition) をご覧ください。
-* 上記ワークショップで使用されたプレゼンテーション資料はこちら [PDF](https://learn.liferay.com/documents/d/guest/l0-4-liferays-unique-value-proposition-pdf) からダウンロードしてください。
+* 本モジュールのライブワークショップの [録画](https://learn.liferay.com/ja/c/portal/login) をご覧ください。
+* 上記ワークショップで使用されたプレゼンテーション資料はこちら [PDF](https://learn.liferay.com/ja/c/portal/login) からダウンロードしてください。
 ```
 
 ## 「顧客に提供する価値」とは

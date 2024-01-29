@@ -16,8 +16,8 @@ visibility:
 * ボトムアップの成長を支えるフリー/ホビー・プランが提案される
 
 ```{note}
-* 本モジュールのライブワークショップの [録画](https://learn.liferay.com/web/guest/d/sa1-2a-liferay-pricing-saas) をご覧ください。
-* 上記ワークショップで使用されたプレゼンテーション資料はこちら [PDF](https://learn.liferay.com/documents/d/guest/sa1-2a-liferay-pricing-saas-pdf) からダウンロードしてください。
+* 本モジュールのライブワークショップの [録画](https://learn.liferay.com/ja/c/portal/login) をご覧ください。
+* 上記ワークショップで使用されたプレゼンテーション資料はこちら [PDF](https://learn.liferay.com/ja/c/portal/login) からダウンロードしてください。
 ```
 
 ## 2023年価格改定

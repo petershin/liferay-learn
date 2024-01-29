@@ -11,7 +11,7 @@ JavaScript（JS）クライアント拡張を使い、Liferayのコードへの�
 1. Java（JDK8またはJDK11）をインストールします。
 
    ```{note}
-   サポートされているJDK、データベース、環境については、 [互換性マトリックス](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) を確認してください。 推奨されるJVM設定については、 [JVM Configuration](../../../../installation-and-upgrades/reference/jvm-configuration.md) を参照のこと。
+   サポートされているJDK、データベース、環境については、 [互換性マトリックス](https://help.liferay.com/hc/ja/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) を確認してください。 推奨されるJVM設定については、 [JVM設定](../../../../installation-and-upgrades/reference/jvm-configuration.md) を参照のこと。
    ```
 
 1. サンプルワークスペースをダウンロードし、解凍します。
@@ -37,7 +37,7 @@ liferay-sample-global-js:
     url: global.js
 ```
 
-クライアントエクステンションは `liferay-sample-global-js` という ID を持ち、`type` や追加する JavaScript ファイルなど、JS クライアントエクステンションの主要な設定を含んでいます。 プロパティの詳細については、 [JavaScript YAML configuration reference](../javascript-yaml-configuration-reference.md) を参照してください。
+クライアントエクステンションは `liferay-sample-global-js` という ID を持ち、`type` や追加する JavaScript ファイルなど、JS クライアントエクステンションの主要な設定を含んでいます。 プロパティの詳細については、 [JavaScript YAML設定リファレンス](../javascript-yaml-configuration-reference.md) を参照してください。
 
 `assemble`ブロックも含まれている：
 
@@ -71,7 +71,7 @@ Liferayが起動したら、サンプルのワークスペースにあるクラ�
 これでクライアント拡張機能がビルドされ、Liferay の `deploy/` フォルダに zip がデプロイされます。
 
 ```{note}
-クライアント拡張を Liferay Experience Cloud にデプロイするには、Liferay Cloud [Command-Line Tool](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool) を使用して [`lcp deploy`](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool#deploying-to-your-liferay-cloud-environment) を実行します。
+クライアント拡張を Liferay Experience Cloud にデプロイするには、Liferay Cloud [コマンドラインツール](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool) を使用して [コマンドラインツール](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool#deploying-to-your-liferay-cloud-environment) を実行します。
 ```
 
 ```{tip}
@@ -90,19 +90,19 @@ STARTED sample-global-js_1.0.0
 
 デプロイされたクライアント拡張を使用するために、Liferayのページを設定します。
 
-1. インスタンス内のページで、上部の_編集_アイコン！[編集アイコン](../../../../images/icon-edit-pencil.png)をクリックします。
+1. インスタンス内のページで、上部の **編集** アイコン![編集アイコン](../../../../images/icon-edit-pencil.png)をクリックします。
 
-1. サイドバーで、ページデザイン_オプション_メニュー（![ページデザインオプションアイコン](../../../../images/icon-format.png)）に移動し、メニュー上部の_設定_アイコン（![設定アイコン](../../../../../images/icon-cog3.png)）をクリックします。
+1. サイドバーで、ページデザイン **オプション** メニュー（![ページデザインオプションアイコン](../../../../images/icon-format.png)）に移動し、メニュー上部の **設定** アイコン（![設定アイコン](../../../../images/icon-cog3.png)）をクリックします。
 
    ![Click the cog wheel icon in the Page Design Options menu to access this client extension's configurations.](./using-a-javascript-client-extension/images/01.png)
 
-1. _Advanced_タブをクリックし、ページ下部の*JavaScript*セクションを展開して、_JavaScript Client Extensions_設定セクションを見つけます。
+1. **Advanced** タブをクリックし、ページ下部の **JavaScript** セクションを展開して、 **JavaScript Client Extensions** 設定セクションを見つけます。
 
-1. *JavaScriptクライアント拡張機能の追加*をクリックして、新しいクライアント拡張機能をページ先頭またはページ下に追加します。
+1. **JavaScriptクライアント拡張機能の追加** をクリックして、新しいクライアント拡張機能をページ先頭またはページ下に追加します。
 
    ![JavaScriptクライアント拡張機能を追加する。 ページヘッドに追加したか、ページボトムに追加したかに応じて、リストに表示されます](./using-a-javascript-client-extension/images/02.png)
 
-1. ［_保存_］をクリックします。
+1. ［**保存**］をクリックします。
 
 1. オプションで、編集モード以外のページでJavaScriptが実行されるように、ページを公開することもできます。
 

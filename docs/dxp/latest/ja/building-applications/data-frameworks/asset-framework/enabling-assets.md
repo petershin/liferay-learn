@@ -1,6 +1,6 @@
 # アセットの有効化
 
-Liferayの多くのアプリケーション（例：ブログ、ドキュメントとメディア、メッセージボードなど） はすぐにアセットに対応する。 [Asset Publisher ウィジェット](../../../site-building/displaying-content/using-the-asset-publisher-widget/displaying-assets-using-the-asset-publisher-widget.md) を使ってアセットを公開したり、 [Asset Libraries](../../../content-authoring-and-management/asset-libraries/asset-libraries-overview.md) を作成することもできます。 [Service Builder](../service-builder.md) を使用すれば、カスタムアプリケーションを資産化することができます。 その方法は、以下のサンプルプロジェクトをご覧ください。
+Liferayの多くのアプリケーション（例：ブログ、ドキュメントとメディア、メッセージボードなど） はすぐにアセットに対応する。 [Asset Publisher ウィジェット](../../../site-building/displaying-content/using-the-asset-publisher-widget/displaying-assets-using-the-asset-publisher-widget.md) を使ってアセットを公開したり、 [Asset Libraries](../../../content-authoring-and-management/asset-libraries/asset-libraries-overview.md) を作成することもできます。 [サービスビルダー](../service-builder.md) を使用すれば、カスタムアプリケーションを資産化することができます。 その方法は、以下のサンプルプロジェクトをご覧ください。
 
 ## サンプルコードを取得する
 
@@ -55,13 +55,13 @@ Liferayの多くのアプリケーション（例：ブログ、ドキュメン�
 `*ModelSearchConfigurator.java` - アプリケーションのエンティティの検索フレームワークに検索サービスを登録する（例：`com.acme.s5e6.search.S5E6EntryModelSearchConfigurator.java`クラス）。
 
 ```{note}
-ModelSearchConfigurator` パターンは Liferay 2023.Q4+ と GA/Update 100+ に適用されます。 以前のバージョンでは `SearchRegistrar` を使用していた。 [Liferay 7.2 documentation](https://help.liferay.com/hc/en-us/articles/360032611231-Search-Service-Registration) を参照して `SearchRegistrar` を実装してください。
+ModelSearchConfigurator` パターンは Liferay 2023.Q4+ と GA/Update 100+ に適用されます。 以前のバージョンでは `SearchRegistrar` を使用していた。 [Liferay 7.2 documentation](https://help.liferay.com/hc/ja/articles/360032611231-Search-Service-Registration) を参照して `SearchRegistrar` を実装してください。
 ```
 `*ModelIndexerWriterContributor.java` - エントリーの再インデックス付けとバッチ再インデックス付けの動作を設定する (例: `com.acme.s5e6.search.S5E6EntryModelIndexerWriterContributor.java` クラス)。
 
 `*ModelSummaryContributor.java` - エントリーの結果サマリーを構築する（例：`com.acme.s5e6.search.S5E6EntryModelSummaryContributor.java`クラス）。
 
-検索の有効化については、 [Developer Guide](../../../using-search/developer-guide.md) の Using Search を参照してください。
+検索の有効化については、 [開発者ガイド](../../../using-search/developer-guide.md) の Using Search を参照してください。
 
 ## サービスモデルの定義の変更
 
@@ -109,7 +109,7 @@ ModelSearchConfigurator` パターンは Liferay 2023.Q4+ と GA/Update 100+ に
 :lines: 64-73
 ```
 
-[`AssetEntryLocalServiceImpl` クラスの Javadocs](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-impl/com/liferay/portlet/asset/service/impl/AssetEntryLocalServiceImpl.html#updateEntry-long-long-java.util.Date-java.util.Date-java.lang.String-long-java.lang.String-long-long:A-java.lang.String:A-boolean-boolean-java.util.Date-java.util.Date-java.util.Date-java.util.Date-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-int-int-java.lang.Double-) をチェックすると、このメソッドがオーバーロードされていることがわかる。 アセットエントリーのタイトルを設定できるように、`updateEntry()` の `title` パラメータを取るバージョンを使用します。
+[`AssetEntryLocalServiceImpl` クラスの Javadocs](https://resources.learn.liferay.com/reference/latest/en/dxp/javadocs/portal-impl/com/liferay/portlet/asset/service/impl/AssetEntryLocalServiceImpl.html) をチェックすると、このメソッドがオーバーロードされていることがわかる。 アセットエントリーのタイトルを設定できるように、`updateEntry()` の `title` パラメータを取るバージョンを使用します。
 
 変更後、サービスビルダーを再実行します。
 

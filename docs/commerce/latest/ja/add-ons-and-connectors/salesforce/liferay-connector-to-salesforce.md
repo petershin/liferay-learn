@@ -4,7 +4,7 @@
 
 {bdg-secondary}`Liferay DXP 7.4 U35+`.
 
-Liferay Connector to Salesforceは、 [Talend](https://help.talend.com/home) ジョブデザインとLiferayの [ジョブスケジューラ](https://learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/job-scheduler-framework/using-job-scheduler.html) を使用して、SalesforceからLiferay DXPにデータをインポートします。 [](https://marketplace.liferay.com/p/liferay-connector-to-salesforce) コネクタをダウンロードして `.lpkg` ファイルとして Liferay インスタンスにデプロイすることができます。 このファイルには、SalesforceのデータフィールドをLiferayのデータフィールドにマッピングするTalendジョブが含まれています。
+Liferay Connector to Salesforceは、 [Talend](https://help.talend.com/home) ジョブデザインとLiferayの [ジョブスケジューラーを使う](https://learn.liferay.com/dxp/latest/ja/building-applications/core-frameworks/job-scheduler-framework/using-job-scheduler.html) を使用して、SalesforceからLiferay DXPにデータをインポートします。 [](https://marketplace.liferay.com/p/liferay-connector-to-salesforce) コネクタをダウンロードして `.lpkg` ファイルとして Liferay インスタンスにデプロイすることができます。 このファイルには、SalesforceのデータフィールドをLiferayのデータフィールドにマッピングするTalendジョブが含まれています。
 
 デプロイされると、Liferayは自動的にTalendの各ジョブに対してディスパッチタスクを作成します。 その後、各タスクを手動で設定・実行したり、ディスパッチを使って特定の間隔で実行するようにスケジュールすることができます。
 
@@ -31,7 +31,7 @@ Liferayの製品カタログに相当するエンティティはSalesforceには
 
 1. [Liferay Marketplace](https://marketplace.liferay.com/p/liferay-connector-to-salesforce) からコネクタをダウンロードしてください。
 
-1. `.lpkg` ファイルを DXP インスタンスの [`${liferay.home}/deploy`](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/reference/liferay-home.html) フォルダにコピーします。
+1. `.lpkg` ファイルを DXP インスタンスの [Liferay Home](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/reference/liferay-home.html) フォルダにコピーします。
 
 1. これらのメッセージがアプリケーションサーバーのコンソールに表示されることを確認します。
 
@@ -42,7 +42,7 @@ Liferayの製品カタログに相当するエンティティはSalesforceには
 
 1. Liferay DXPインスタンスを再起動します。
 
-1. 再起動後、_Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) を開き、_Control Panel_ &rarr; _Job Scheduler_ に移動して、展開が正常に行われたことを確認します。
+1. 再起動後、 **Global Menu**(![Global Menu](../../images/icon-applications-menu.png)) を開き、 **Control Panel** &rarr; **Job Scheduler** に移動して、展開が正常に行われたことを確認します。
 
    成功すると、4つの新しいディスパッチタスクが表示されます。
 
@@ -117,7 +117,7 @@ Salesforceからのデータをフィルタリングして、新しく変更ま�
 
 | コンテキストパラメーター                | 説明                                                                                                                                                                                              | デフォルト値                                                                                                                                                                                  |
 | :-------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `channelId`                 | 注文をインポートするIDチャンネル                                                                                                                                                                               | UIからチャンネルIDをコピーします。 グローバル・メニュー([グローバル・メニュー](../../images/icon-applications-menu.png))を開き、_Commerce_ &rarr; _Channels_に進みます。 チャンネルを選択し、名前の横に表示されているIDをコピーしてください。 |
+| `channelId`                 | 注文をインポートするIDチャンネル                                                                                                                                                                               | UIからチャンネルIDをコピーします。 グローバル・メニュー( ![グローバル・メニュー](../../images/icon-applications-menu.png) )を開き、 **Commerce** &rarr; **Channels** に進みます。 チャンネルを選択し、名前の横に表示されているIDをコピーしてください。 |
 | `defaultCurrency`           | 注文のデフォルト通貨                                                                                                                                                                                      | `USD`                                                                                                                                                                                   |
 | `statusMapping_null`        | 注文ステータスのステータスマッピング。 この構文を使用する必要があります：`statusMapping_SalesforceStatusName=LiferayStatusCode（例：statusMapping_Activated=5）`」という構文を使用する必要があります。           | `5`                                                                                                                                                                                     |
 | `paymentStatusMapping_null` | 注文支払い状況のステータスマッピング。 この構文を使用する必要があります：`paymentStatusMapping_SalesforceStatusName=LiferayStatusCode（例：paymentStatusMapping_Payed=2）`」という構文を使用する必要があります。 | `2`                                                                                                                                                                                     |
@@ -128,7 +128,7 @@ Salesforceからのデータをフィルタリングして、新しく変更ま�
 
 ## ディスパッチタスクの実行
 
-一度設定したら、_今すぐ実行_をクリックして各タスクを手動で実行するか、自動的に実行するようにスケジュールすることができます。 詳細は [Using Job Scheduler](https://learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/job-scheduler-framework/using-job-scheduler.html) を参照。
+一度設定したら、 **今すぐ実行** をクリックして各タスクを手動で実行するか、自動的に実行するようにスケジュールすることができます。 詳細は [ジョブスケジューラーを使う](https://learn.liferay.com/dxp/latest/ja/building-applications/core-frameworks/job-scheduler-framework/using-job-scheduler.html) を参照。
 
 ```{important}
 これらのタスクを実行すると、リソースを大量に消費し、プラットフォームのパフォーマンスを低下させる可能性があります。 パフォーマンスへの影響を軽減するため、使用頻度の高い時間帯での実行は避けてください。
@@ -137,4 +137,4 @@ Salesforceからのデータをフィルタリングして、新しく変更ま�
 ## 関連トピック
 
 * [Liferay マーケットプレイス](https://marketplace.liferay.com/p/liferay-connector-to-salesforce)
-* [ジョブスケジューラの使用](https://learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/job-scheduler-framework/using-job-scheduler.html)
+* [ジョブスケジューラーを使う](https://learn.liferay.com/dxp/latest/ja/building-applications/core-frameworks/job-scheduler-framework/using-job-scheduler.html)

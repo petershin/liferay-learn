@@ -18,7 +18,7 @@ Liferay 7.4 U22+とGA22+では、新規インストール時にプライベー�
 | 閲覧にはログインとサイト会員登録が必要です |          | &#10004; |
 | 独自のURLパターン            | &#10004; | &#10004; |
 
-公開ページでは `[web-address]/`**web**`/[site-name]` のURLパターンを使用し、非公開ページでは `[web-address]/`**group**`/[site-name]` のURLパターンを使用します。
+公開ページでは `[web-address]/`**web**`/[site-name]` のURLパターンを使用し、非公開ページでは `[web-address]/` **group** `/[site-name]` のURLパターンを使用します。
 
 ## ページタイプ
 

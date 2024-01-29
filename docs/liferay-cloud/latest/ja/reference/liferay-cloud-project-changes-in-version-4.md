@@ -21,13 +21,13 @@ Liferay Cloud Stack バージョン 4 にアップグレードすると、各サ
 
 ## プロジェクト組織の変更
 
-リポジトリの最大の変更点は、各サービスのファイル（ `LCP.json` ファイルを含む）がリポジトリのルートにあるフォルダ（例： `liferay/` や `webserver/`）に移動されたことです。 これらのサービスは、再配置されたサービスフォルダに移動し、 [CLI ツール](./command-line-tool.md)を使用して、個別に展開することができます。 `lcp` フォルダーが削除され、これらのサービスのパスに含まれなくなりました。 これらのフォルダ自体は、 [Liferayワークスペースの構造](https://learn.liferay.com/dxp/latest/ja/developing-applications/tooling/liferay-workspace/what-is-liferay-workspace.html) に似せて再編成されています。
+リポジトリの最大の変更点は、各サービスのファイル（ `LCP.json` ファイルを含む）がリポジトリのルートにあるフォルダ（例： `liferay/` や `webserver/`）に移動されたことです。 これらのサービスは、再配置されたサービスフォルダに移動し、 [CLI ツール](./command-line-tool.md)を使用して、個別に展開することができます。 `lcp` フォルダーが削除され、これらのサービスのパスに含まれなくなりました。 これらのフォルダ自体は、 [Liferay Workspaceの概要](https://learn.liferay.com/ja/w/dxp/building-applications/tooling/liferay-workspace/what-is-liferay-workspace) に似せて再編成されています。
 
 リポジトリのルートにあった他のいくつかのファイル（ `gradle.properties`、 `build.gradle`、 `settings.gradle`を含む）も、 `liferay` サービスに移動されました。
 
 ## Liferayサービスの変更
 
-`liferay` サービスフォルダは [Liferay Workspace](https://learn.liferay.com/dxp/latest/ja/developing-applications/tooling/liferay-workspace/what-is-liferay-workspace.html) の機能構造に従っています。
+`liferay` サービスフォルダは [Liferay Workspaceの概要](https://learn.liferay.com/ja/w/dxp/building-applications/tooling/liferay-workspace/what-is-liferay-workspace) の機能構造に従っています。
 
 `liferay` サービス内のすべての設定は、プロジェクトの Liferay Cloud 環境に対応する環境固有の `configs` ディレクトリに所属するようになりました。 さらに、 `ライセンス` フォルダーが削除されました。 代わりに、 `デプロイ` フォルダーにライセンスを追加してください。
 

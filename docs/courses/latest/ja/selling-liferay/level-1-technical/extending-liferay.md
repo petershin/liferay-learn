@@ -28,8 +28,8 @@ Liferay DXPは、フル機能のデジタルエクスペリエンスプラット
 このモジュールでは、顧客のニーズを満たすためにLiferayを拡張、設定、カスタマイズするために使用できる主要なアプローチを概説します。
 
 ```{note}
-* 本モジュールのライブワークショップの [録画](https://learn.liferay.com/web/guest/d/se1-7-extending-liferay) をご覧ください。
-* 上記ワークショップで使用されたプレゼンテーション資料はこちら [PDF](https://learn.liferay.com/documents/d/guest/se1-7-extending-liferay-pdf) からダウンロードしてください。
+* 本モジュールのライブワークショップの [録画](https://learn.liferay.com/ja/c/portal/login) をご覧ください。
+* 上記ワークショップで使用されたプレゼンテーション資料はこちら [PDF](https://learn.liferay.com/ja/c/portal/login) からダウンロードしてください。
 ```
 
 ## 伝統的なカスタマイズ
@@ -65,11 +65,11 @@ Liferay DXPを拡張する1つの方法として、すぐに使える様々な�
 
 ### フラグメント
 
-[Fragments](https://learn.liferay.com/web/guest/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments) はLiferay DXPでリッチページを作成するために使用できるビルディングブロックの1つです。 フラグメントはコンテンツ作成者とページ作成者が使用することを目的としています。
+[フラグメントの使用](https://learn.liferay.com/web/guest/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments) はLiferay DXPでリッチページを作成するために使用できるビルディングブロックの1つです。 フラグメントはコンテンツ作成者とページ作成者が使用することを目的としています。
 
 ![Liferayのページビルダーは、個々のページを構築するために使用される幅広いフラグメントをページ作成者に提供します。](./extending-liferay/images/02.png)
 
-Liferayのドラッグアンドドロップインターフェースのおかげで、ページへのフラグメントの追加や、追加後の設定は、技術的な専門知識に関係なく、誰にでもできる簡単なプロセスです。 また、あらかじめ設定されたフラグメントのセットを、 [Fragment Compositions](https://learn.liferay.com/web/guest/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments/saving-fragment-compositions) として保存することもでき、これを他のページに追加することで、類似ページの作成プロセスを短縮することができる。
+Liferayのドラッグアンドドロップインターフェースのおかげで、ページへのフラグメントの追加や、追加後の設定は、技術的な専門知識に関係なく、誰にでもできる簡単なプロセスです。 また、あらかじめ設定されたフラグメントのセットを、 [フラグメント構成の保存](https://learn.liferay.com/web/guest/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments/saving-fragment-compositions) として保存することもでき、これを他のページに追加することで、類似ページの作成プロセスを短縮することができる。
 
 **ページフラグメントの開発**
 
@@ -77,25 +77,25 @@ Liferayのドラッグアンドドロップインターフェースのおかげ�
 
 これに加えて、開発者はUI内のエディターやCLIツールを使って、ゼロから新しいフラグメントを作成することができる。 開発者は、HTMLと、オプションでCSS、JavaScript、Freemarkerを組み合わせて、ほとんどすべての目的に対応する新しいフラグメントを構築する。
 
-参照： [ページ・フラグメントの開発](https://learn.liferay.com/web/guest/w/dxp/site-building/developer-guide/developing-page-fragments)
+参照： [ページフラグメントの開発](https://learn.liferay.com/web/guest/w/dxp/site-building/developer-guide/developing-page-fragments)
 
 ### 公開
 
 ![パブリケーションは、コンテンツ作成者が変更を準備し、スケジュールに従って公開することを可能にする。](./extending-liferay/images/04.png)
 
-[publications](https://learn.liferay.com/w/dxp/site-building/publishing-tools/publications) 機能により、コンテンツ作成者は変更を準備し、スケジュールに従って公開することができる。 これは、通常のパブリッシングプロセスをサポートするだけでなく、特別な変更（たとえば、画像の更新や新しいページの追加を伴う季節のプロモーションなど）にも使用できます。
+[公開](https://learn.liferay.com/w/dxp/site-building/publishing-tools/publications) 機能により、コンテンツ作成者は変更を準備し、スケジュールに従って公開することができる。 これは、通常のパブリッシングプロセスをサポートするだけでなく、特別な変更（たとえば、画像の更新や新しいページの追加を伴う季節のプロモーションなど）にも使用できます。
 
 お客様はパブリケーションを作成し、必要なユーザーを招待して、パブリッシュする前に変更を加えることができます。
 
 ### テーマ
 
-[テーマ](https://learn.liferay.com/en/w/dxp/site-building/site-appearance/themes/introduction-to-themes) は、Liferayサイトのルック＆フィールをカスタマイズする柔軟な方法を提供します。 テーマはDXPにコードを展開する必要があるため、Liferay Experience Cloud SaaSの顧客にはサポートされていません。
+[テーマの概要](https://learn.liferay.com/ja/w/dxp/site-building/site-appearance/themes/introduction-to-themes) は、Liferayサイトのルック＆フィールをカスタマイズする柔軟な方法を提供します。 テーマはDXPにコードを展開する必要があるため、Liferay Experience Cloud SaaSの顧客にはサポートされていません。
 
 ### スタイルブック
 
 ![スタイルブックは、色、フォント、スペーシングなど、サイトに適用されるビジュアル・スタンダードのセットです。](./extending-liferay/images/05.png)
 
-[スタイル・ブック](https://learn.liferay.com/en/w/dxp/site-building/site-appearance/style-books/using-a-style-book-to-standardize-site-appearance) は、色、フォント、スペーシングなど、サイトに適用されるビジュアル・スタンダードのセットです。 これにより、各ページで一貫した体験を維持しながら、各ページのレイアウトを独立してデザインすることができる。
+[スタイルブックを使用してサイトの外観を標準化する](https://learn.liferay.com/ja/w/dxp/site-building/site-appearance/style-books/using-a-style-book-to-standardize-site-appearance) は、色、フォント、スペーシングなど、サイトに適用されるビジュアル・スタンダードのセットです。 これにより、各ページで一貫した体験を維持しながら、各ページのレイアウトを独立してデザインすることができる。
 
 ### テンプレート
 
@@ -110,8 +110,8 @@ Liferayのドラッグアンドドロップインターフェースのおかげ�
 こちらも参照のこと：
 
 * [Webコンテンツテンプレート](https://learn.liferay.com/web/guest/w/dxp/content-authoring-and-management/web-content/web-content-templates)
-* [情報テンプレート](https://learn.liferay.com/w/dxp/site-building/displaying-content/using-information-templates)
-* [アプリケーションディスプレイテンプレート](https://learn.liferay.com/w/dxp/site-building/displaying-content/additional-content-display-options/styling-widgets-with-widget-templates)
+* [情報テンプレートの使用](https://learn.liferay.com/w/dxp/site-building/displaying-content/using-information-templates)
+* [ウィジェットテンプレートを使用したウィジェットのスタイル設定](https://learn.liferay.com/w/dxp/site-building/displaying-content/additional-content-display-options/styling-widgets-with-widget-templates)
 
 ## Liferay を拡張する - 設定
 
@@ -124,7 +124,7 @@ Liferayのドラッグアンドドロップインターフェースのおかげ�
 
 ### システム設定
 
-[System Settings](https://learn.liferay.com/w/dxp/system-administration/configuring-liferay/system-settings) 管理者は Liferay ポータルのグローバル設定を行うことができます。 サイト、メール、検索の設定など。
+[システム設定](https://learn.liferay.com/w/dxp/system-administration/configuring-liferay/system-settings) 管理者は Liferay ポータルのグローバル設定を行うことができます。 サイト、メール、検索の設定など。
 
 ```{note}
 Liferay Experience Cloud SaaS を使用して Liferay DXP をデプロイする場合、システム設定は使用できません。
@@ -136,7 +136,7 @@ Liferay Experience Cloud SaaS を使用して Liferay DXP をデプロイする�
 
 ### 仮想インスタンス
 
-[バーチャルインスタンス](https://learn.liferay.com/w/dxp/system-administration/configuring-liferay/virtual-instances) はLiferayのリソースを論理的に分離したもので、管理者は単一のLiferayインストール内に複数の独立したサイトを作成することができます。 各仮想インスタンスには、完全に個別のデータと設定があります。 それぞれはユニークなドメイン名でアクセスされ、どこから見ても、追加のインスタンスとインストールを共有する別のLiferayベースの実装です。
+[仮想インスタンス](https://learn.liferay.com/w/dxp/system-administration/configuring-liferay/virtual-instances) はLiferayのリソースを論理的に分離したもので、管理者は単一のLiferayインストール内に複数の独立したサイトを作成することができます。 各仮想インスタンスには、完全に個別のデータと設定があります。 それぞれはユニークなドメイン名でアクセスされ、どこから見ても、追加のインスタンスとインストールを共有する別のLiferayベースの実装です。
 
 ```{note}
 Liferay Experience Cloud SaaS を使用して Liferay DXP をデプロイする場合、お客様は仮想インスタンスを作成できません。 事実上、彼らの環境は、他の顧客と共有する共有クラスタ内の仮想インスタンスである。 この仮想インスタンス内に、選択したサブスクリプションプランで提供される上限まで、追加のサイトを作成できます。

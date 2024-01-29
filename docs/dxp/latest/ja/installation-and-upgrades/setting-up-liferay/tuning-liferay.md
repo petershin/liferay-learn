@@ -101,7 +101,7 @@ CPUベースの負荷をテストする場合、またはCPU容量が心配な�
 
 接続数がデータベース接続制限に違反している場合は、カウンターデータソースのプールサイズを縮小してください。 カウンターデータベースのトランザクション数は少なく、高速で、ネストされることはないため、カウンター接続プールは削減に適した候補となります。 カウンターデータソースの詳細は、 [クラスタノードのデータベース構成](./clustering-for-high-availability/database-configuration-for-cluster-nodes.md) を参照してください。
 
-Liferay はコネクションプーリングに HikariCP を使用しています。 データベース接続は、 [ポータルプロパティ](../reference/portal-properties.md) の [JDBC セクション](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#JDBC) で設定します。
+Liferay はコネクションプーリングに HikariCP を使用しています。 データベース接続は、 [ポータルプロパティ](../reference/portal-properties.md) の [JDBC セクション](https://resources.learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) で設定します。
 
 ```properties
 jdbc.default.connectionTimeout=30000

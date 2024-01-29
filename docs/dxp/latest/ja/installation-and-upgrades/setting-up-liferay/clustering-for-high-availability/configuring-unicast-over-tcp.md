@@ -70,7 +70,7 @@
         port_range="1"/>
     ```
 
-1. 各ノードの[`portal-ext.properties`ファイル](../../reference/portal-properties.md)の [クラスターリンクプロパティ](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Cluster%20Link) を変更して、クラスターリンクを有効にし、各クラスターリンクチャネルのTCP XMLファイルをポイントします。
+1. 各ノードの[`portal-ext.properties`ファイル](../../reference/portal-properties.md)の [クラスターリンクプロパティ](https://resources.learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) を変更して、クラスターリンクを有効にし、各クラスターリンクチャネルのTCP XMLファイルをポイントします。
 
     ```properties
     cluster.link.enabled=true
@@ -142,7 +142,7 @@ JGroupsは、Rackspace Ping、BPing、File Pingなど、クラスターメンバ
     * `tcp-control.xml`
     * `tcp-transport.xml`
 
-1. ノードの[`portal-ext.properties`ファイル](../../reference/portal-properties.md)の [クラスターリンクプロパティ](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Cluster%20Link) を変更して、クラスターリンクを有効にし、各クラスターリンクチャネルのTCP XMLファイルをポイントします。
+1. ノードの[`portal-ext.properties`ファイル](../../reference/portal-properties.md)の [クラスターリンクプロパティ](https://resources.learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) を変更して、クラスターリンクを有効にし、各クラスターリンクチャネルのTCP XMLファイルをポイントします。
 
     ```properties
     cluster.link.enabled=true

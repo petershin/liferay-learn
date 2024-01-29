@@ -54,4 +54,4 @@ Delectable Bonsaiは、各ビジネスチャンスの相対的な価値を評価
 
 ## 関連コンセプト
 
-* [候補リスト](https://learn.liferay.com/en/w/dxp/building-applications/objects/picklists)
+* [候補リスト](https://learn.liferay.com/ja/w/dxp/building-applications/objects/picklists)

@@ -32,25 +32,25 @@ visibility:
 
 以下のLiferay機能（概要）は、ほとんどの顧客ポータルソリューションに組み込まれる可能性があります。
 
-* [セグメンテーション & パーソナライゼーション](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience)
-* [ID管理 & アクセス管理](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay)
-* [ローコード／ノーコードによるアプリケーション構築](https://learn.liferay.com/w/dxp/building-applications/objects)
-* [データモデリング & プロセスオートメーション](https://learn.liferay.com/w/dxp/process-automation)
-* [コマース](https://learn.liferay.com/w/commerce/index)
-* [デザインシステム & エクスペリエンス管理](https://learn.liferay.com/w/dxp/site-building)
+* [サイトエクスペリエンスのパーソナライズ](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience)
+* [Liferayの保護](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay)
+* [オブジェクト](https://learn.liferay.com/w/dxp/building-applications/objects)
+* [プロセスの自動化](https://learn.liferay.com/w/dxp/process-automation)
+* [Commerce](https://learn.liferay.com/w/commerce/index)
+* [サイトの構築](https://learn.liferay.com/w/dxp/site-building)
 * 統合 & 相互運用性
-* [検索](https://learn.liferay.com/w/dxp/using-search) & [ナビゲーション](https://learn.liferay.com/w/dxp/site-building/site-navigation)
-* [Headless API & マルチチャネル](https://learn.liferay.com/w/dxp/headless-delivery)
-* [コラボレーション & ナレッジの共有](https://learn.liferay.com/w/dxp/collaboration-and-social)
+* [検索の利用](https://learn.liferay.com/w/dxp/using-search) & [サイトナビゲーション](https://learn.liferay.com/w/dxp/site-building/site-navigation)
+* [ヘッドレスデリバリー](https://learn.liferay.com/w/dxp/headless-delivery)
+* [コラボレーションとソーシャルメディア](https://learn.liferay.com/w/dxp/collaboration-and-social)
 
 Liferay DXPベースのカスタマーポータルについて見込み顧客に伝える際、特に重視すべき点は以下の通りです。
 
-* [ロール & アカウントベースのパーソナライゼーション](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience)
-* [アカウントセルフサービス](https://learn.liferay.com/w/commerce/users-and-accounts/account-management)
+* [サイトエクスペリエンスのパーソナライズ](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience)
+* [アカウント管理](https://learn.liferay.com/w/commerce/users-and-accounts/account-management)
 * セルフサービスでの注文
-* [受注 & 出荷管理](https://learn.liferay.com/w/commerce/order-management)
-* [文書管理](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media)
-* [ナレッジベース](https://learn.liferay.com/w/dxp/collaboration-and-social/knowledge-base)
+* [注文管理](https://learn.liferay.com/w/commerce/order-management)
+* [ドキュメントとメディア](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media)
+* [ナレッジベース（管理）](https://learn.liferay.com/w/dxp/collaboration-and-social/knowledge-base)
 * 統合プラットフォーム
 
 次：[デジタルコマースサイト](./digital-commerce-sites.md) 

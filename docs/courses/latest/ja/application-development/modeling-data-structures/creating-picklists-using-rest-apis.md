@@ -165,4 +165,4 @@
 
 ## 関連コンセプト
 
-* [ピックリストAPIの基本](https://learn.liferay.com/en/w/dxp/building-applications/objects/picklists/picklists-api-basics) 
+* [候補リストAPIの基本](https://learn.liferay.com/ja/w/dxp/building-applications/objects/picklists/picklists-api-basics)

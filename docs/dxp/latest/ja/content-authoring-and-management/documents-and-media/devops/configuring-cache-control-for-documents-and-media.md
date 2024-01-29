@@ -10,19 +10,19 @@
 
 以下の手順に従って、Liferayシステムまたはインスタンスにキキャッシュを設定します。
 
-1. ![グローバルメニュー](../../../images/icon-applications-menu.png))を開き、[コントロールパネル](_Control Panel_)タブに移動し、[システム設定](_System Settings_)または[インスタンス設定](_Instance Settings_)をクリックします。 コンフィギュレーションのスコープについては、 [Understanding Configuration Scope](../../../system-administration/configuring-liferay/understanding-configuration-scope.md) を参照してください。
+1. ![グローバルメニュー](../../../images/icon-applications-menu.png))を開き、 [コントロールパネル](**Control Panel**) タブに移動し、 [システム設定](**System Settings**) または [インスタンス設定](**Instance Settings**) をクリックします。 コンフィギュレーションのスコープについては、 [設定スコープについて](../../../system-administration/configuring-liferay/understanding-configuration-scope.md) を参照してください。
 
-1. *Documents and Media* &rarr; _Cache Control_にアクセスしてください。
+1. **Documents and Media** &rarr; **Cache Control** にアクセスしてください。
 
    ![Go to Cache Control under Documents and Media settings.](./configuring-cache-control-for-documents-and-media/images/01.png)
 
-1. *キャッシュ制御*ポリシーを選択します。
+1. **キャッシュ制御** ポリシーを選択します。
 
    * Private：ユーザーのブラウザによるキャッシュを許可
 
    * Public：CDNもしくはプロキシサーバーによるキャッシュを許可
 
-1. キャッシュされたドキュメントの_Max Age_を設定する。 この値は、応答が新規とみなされるまでの秒数を設定します。 設定された時間が経過すると、キャッシュされたドキュメントのバージョンは失効し、更新が必要になります。 値を`0`のままにすることは、値を指定しないことと同じである。
+1. キャッシュされたドキュメントの **Max Age** を設定する。 この値は、応答が新規とみなされるまでの秒数を設定します。 設定された時間が経過すると、キャッシュされたドキュメントのバージョンは失効し、更新が必要になります。 値を`0`のままにすることは、値を指定しないことと同じである。
 
 1. (オプション）キャッシュから除外するMIMEタイプのリストを入力する（例：`application/pdf`、`image/jpeg`、`video/mp4`）。
 
@@ -30,7 +30,7 @@
    頻繁に更新されるMIMEタイプがある場合は、そのタイプのキャッシュを無効にすることで、最新バージョンのファイルを確実にユーザーに表示することができます。
    ```
 
-1. ［_保存_］をクリックします。
+1. ［**保存**］をクリックします。
 
 ## 関連トピック
 

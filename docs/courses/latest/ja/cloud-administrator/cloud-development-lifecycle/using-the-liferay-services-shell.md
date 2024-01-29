@@ -31,14 +31,14 @@
 1. シェルに `mysql` と入力して、デフォルト・ユーザーでMySQLクライアントにログインする。
 
     ```{note}
-    デフォルトのデータベース・ユーザーでログインすると、データベースへの読み取り専用アクセス権が与えられます。 データを操作する必要がある場合は、 [データベース・サービスの資格情報で](https://learn.liferay.com/w/liferay-cloud/using-the-liferay-dxp-service/using-the-mysql-client#logging-in-with-read-and-write-privileges) ログインする。
+    デフォルトのデータベース・ユーザーでログインすると、データベースへの読み取り専用アクセス権が与えられます。 データを操作する必要がある場合は、 [MySQLクライアントの使用](https://learn.liferay.com/w/liferay-cloud/using-the-liferay-dxp-service/using-the-mysql-client#logging-in-with-read-and-write-privileges) ログインする。
     ```
 
 1. `show tables;` と入力すると、既存の全テーブルのリストが表示され、スクロールできる。
 
     ![Liferayデータベースのすべてのテーブルを見るにはshow tables MySQLコマンドを使います。](./using-the-liferay-services-shell/images/02.png)
 
-1. 別のクエリを実行して、全サイトの [語彙](https://learn.liferay.com/w/dxp/content-authoring-and-management/tags-and-categories/organizing-content-with-categories-and-tags) のリストを確認してください：
+1. 別のクエリを実行して、全サイトの [カテゴリとタグを使用したコンテンツの整理](https://learn.liferay.com/w/dxp/content-authoring-and-management/tags-and-categories/organizing-content-with-categories-and-tags) のリストを確認してください：
 
     ```sql
     select vocabularyId, name, groupId from AssetVocabulary;

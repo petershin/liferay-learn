@@ -97,7 +97,7 @@ Sortウィジェットの設定画面では、以下のことができます。
 },
 ```
 
-対応するフィールドには、 `_sortable`という接尾辞があり、ソートに適した型（`keyword`）があります。 ソート可能なフィールドは、 [ポータルのプロパティ](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Lucene%20Search) を通して得られたものです。
+対応するフィールドには、 `_sortable`という接尾辞があり、ソートに適した型（`keyword`）があります。 ソート可能なフィールドは、 [ポータルのプロパティ](https://resources.learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) を通して得られたものです。
 
 ```properties
 index.sortable.text.fields=firstName,jobTitle,lastName,name,screenName,title

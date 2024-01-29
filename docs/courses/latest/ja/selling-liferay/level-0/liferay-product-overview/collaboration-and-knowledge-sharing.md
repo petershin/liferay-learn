@@ -11,19 +11,19 @@ visibility:
 
 ## コラボレーション
 
-* [ブログ](https://learn.liferay.com/w/dxp/content-authoring-and-management/blogs/getting-started-with-blogs)
-* [ウィキ](https://learn.liferay.com/w/dxp/collaboration-and-social/wiki/getting-started-with-wikis)
-* [掲示板](https://learn.liferay.com/w/dxp/collaboration-and-social/message-boards/user-guide/getting-started-with-message-boards)
+* [ブログを始める](https://learn.liferay.com/w/dxp/content-authoring-and-management/blogs/getting-started-with-blogs)
+* [ウィキを使いこなすために](https://learn.liferay.com/w/dxp/collaboration-and-social/wiki/getting-started-with-wikis)
+* [掲示板の概要](https://learn.liferay.com/w/dxp/collaboration-and-social/message-boards/user-guide/getting-started-with-message-boards)
 
 ## ナレッジ共有
 
-* [ナレッジ・ベース](https://learn.liferay.com/w/dxp/collaboration-and-social/knowledge-base)
-* [ウェブコンテンツの構造](https://learn.liferay.com/w/dxp/content-authoring-and-management/web-content/web-content-structures/understanding-web-content-structures)
+* [ナレッジベース（管理）](https://learn.liferay.com/w/dxp/collaboration-and-social/knowledge-base)
+* [Webコンテンツストラクチャーを理解する](https://learn.liferay.com/w/dxp/content-authoring-and-management/web-content/web-content-structures/understanding-web-content-structures)
 
 ## ソーシャル
 
-* [格付け](https://learn.liferay.com/w/dxp/collaboration-and-social/social-tools/user-guide/using-the-ratings-system)
-* [コメント](https://learn.liferay.com/w/dxp/site-building/creating-pages/using-content-pages/using-page-comments)
-* [](https://learn.liferay.com/w/dxp/collaboration-and-social/notifications-and-requests/user-guide/mentioning-users)
+* [評価システムの使用](https://learn.liferay.com/w/dxp/collaboration-and-social/social-tools/user-guide/using-the-ratings-system)
+* [ページコメントの追加](https://learn.liferay.com/w/dxp/site-building/creating-pages/using-content-pages/using-page-comments)
+* [ユーザーにメンションする](https://learn.liferay.com/w/dxp/collaboration-and-social/notifications-and-requests/user-guide/mentioning-users)
 
 次へ [アイデンティティ管理とアクセス制御](./identity-management-and-access-control.md).

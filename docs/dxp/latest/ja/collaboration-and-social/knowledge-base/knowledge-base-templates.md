@@ -10,11 +10,11 @@
 
 1. [サイトメニュー](../../images/icon-menu.png) を開き、 **コンテンツとデータ** &rarr; **ナレッジベース** に移動します。
 
-1. **Templates**（！[Template]（../../images/icon-page-template.png））に移動し、 **Add**（！[Add Button]（../../images/icon-add.png））をクリックします。
+1. **Templates**（![Template]（../../images/icon-page-template.png））に移動し、 **Add**（![Add Button]（../../images/icon-add.png））をクリックします。
 
 1. テンプレートのタイトルを入力します。
 
-1. WYSIWYGエディタを使ってテンプレートをデザインしてください。 記事のHTMLソースを表示または編集するには、エディタで **ソース** ボタン（！[Source]（../../images/icon-code.png））をクリックします。 テンプレートの権限設定は、フォームの ［権限設定］ セクションで設定することもできます。
+1. WYSIWYGエディタを使ってテンプレートをデザインしてください。 記事のHTMLソースを表示または編集するには、エディタで **ソース** ボタン（![Source]（../../images/icon-code.png））をクリックします。 テンプレートの権限設定は、フォームの ［権限設定］ セクションで設定することもできます。
 
    ![Enter a title and content.](./knowledge-base-templates/images/02.png)
 

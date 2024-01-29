@@ -39,4 +39,4 @@
 
 [チャンネルのデフォルト設定](./setting-channel-defaults.md)
 
-[チャンネル入門](https://learn.liferay.com/web/guest/w/commerce/store-management/channels/introduction-to-channels)
+[チャネルについて](https://learn.liferay.com/web/guest/w/commerce/store-management/channels/introduction-to-channels)

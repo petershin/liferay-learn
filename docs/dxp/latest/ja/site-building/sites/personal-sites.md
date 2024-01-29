@@ -45,7 +45,7 @@ Liferay 7.4 U22+とGA22+では、ダッシュボードページを含むプラ�
 
 ## ポータルプロパティを使用した個人サイトのカスタマイズ
 
-個人サイトのデフォルトページをカスタマイズするために、 [`portal-ext.properties`](../../installation-and-upgrades/reference/portal-properties.md) に追加できるポータルプロパティがいくつかあります。 ページの名前、ページに表示されるアプリケーション、ページのテーマとレイアウトテンプレートなどをカスタマイズできます。 詳細については、`portal.properties`ファイルの [デフォルトユーザーの公開レイアウト](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Default%20User%20Public%20Layouts) セクションと [デフォルトユーザーの非公開レイアウト](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Default%20User%20Private%20Layouts) セクションを参照してください。 これらのプロパティの一部を以下の表に示します。
+個人サイトのデフォルトページをカスタマイズするために、 [`portal-ext.properties`](../../installation-and-upgrades/reference/portal-properties.md) に追加できるポータルプロパティがいくつかあります。 ページの名前、ページに表示されるアプリケーション、ページのテーマとレイアウトテンプレートなどをカスタマイズできます。 詳細については、`portal.properties`ファイルの [デフォルトユーザーの公開レイアウト](https://resources.learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) セクションと [デフォルトユーザーの非公開レイアウト](https://resources.learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) セクションを参照してください。 これらのプロパティの一部を以下の表に示します。
 
 | 機能                         | プロパティ                                           |
 |:-------------------------- |:----------------------------------------------- |

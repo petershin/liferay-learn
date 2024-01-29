@@ -37,7 +37,7 @@
    }
    ```
 
-1. *Global Menu* &rarr; *Control Panel* &rarr; *User Groups*に移動する。 新しいユーザーグループが追加されていることを確認してください。
+1. **Global Menu** &rarr; **Control Panel** &rarr; **User Groups** に移動する。 新しいユーザーグループが追加されていることを確認してください。
 
    ![新しいユーザーグループが追加されていることを確認してください。](./user-groups-api-basics/images/01.png)
 

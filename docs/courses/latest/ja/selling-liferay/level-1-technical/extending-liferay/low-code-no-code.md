@@ -45,7 +45,7 @@ Formsアプリケーションは、アンケートのような簡単なフォー
 
 ![コレクションは、ページ上でエンドユーザーに簡単に表示できるアセットのセットを作成する簡単な方法を提供します。](./low-code-no-code/images/03.png)
 
-[コレクション](https://learn.liferay.com/w/dxp/content-authoring-and-management/collections-and-collection-pages) は、情報のグループ化やフィルタリングに使用できる、コンテンツアイテムやその他のアセットのセットです。
+[コレクションとコレクションページ](https://learn.liferay.com/w/dxp/content-authoring-and-management/collections-and-collection-pages) は、情報のグループ化やフィルタリングに使用できる、コンテンツアイテムやその他のアセットのセットです。
 
 コレクションの典型的なユースケースは、例えば、製品ウェブページにセクションを設け、新しい顧客のサクセスストーリーが公開されると自動的に表示することです。
 
@@ -53,7 +53,7 @@ Formsアプリケーションは、アンケートのような簡単なフォー
 
 ![オブジェクトを使えば、コードを書かずにビジネス・アプリケーションを作成できる。](./low-code-no-code/images/04.png)
 
-[Objects](https://learn.liferay.com/w/dxp/building-applications/objects) は、コードを書いたりモジュールをデプロイすることなくビジネス・アプリケーションを作成できる新機能です。
+[オブジェクト](https://learn.liferay.com/w/dxp/building-applications/objects) は、コードを書いたりモジュールをデプロイすることなくビジネス・アプリケーションを作成できる新機能です。
 
 ここでの注意点
 
@@ -81,11 +81,11 @@ Liferayは、お客様が外部システム、サービス、またはアプリ�
 
 ### オープンオフィスとリブレオフィス
 
-[OpenOfficeとLibreOffice](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/devops/enabling-openoffice-libreoffice-integration) をLiferayと統合することで、ユーザーはLiferay内蔵のドキュメントビューアとエディタを使って、ポータル内で直接オフィスドキュメントを閲覧・編集することができます。 これは、Liferayポータル内でドキュメントを共同編集する際に、ドキュメントをダウンロードしてローカルで編集し、ポータルにアップロードし直す必要がなく便利です。
+[OpenOffice / LibreOffice統合の有効化](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/devops/enabling-openoffice-libreoffice-integration) をLiferayと統合することで、ユーザーはLiferay内蔵のドキュメントビューアとエディタを使って、ポータル内で直接オフィスドキュメントを閲覧・編集することができます。 これは、Liferayポータル内でドキュメントを共同編集する際に、ドキュメントをダウンロードしてローカルで編集し、ポータルにアップロードし直す必要がなく便利です。
 
 ### マイクロソフト・オフィス365
 
-[Microsoft Office 365](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/uploading-and-managing/creating-documents/creating-and-editing-documents-with-microsoft-office-365) OneDrive for Businessとの統合により、ユーザーはMicrosoft Office 365アプリケーションを使用して文書を作成・編集し、LiferayのDocuments and Mediaライブラリに保存することができます。
+[Microsoft Office 365を使用したドキュメントの作成と編集](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/uploading-and-managing/creating-documents/creating-and-editing-documents-with-microsoft-office-365) OneDrive for Businessとの統合により、ユーザーはMicrosoft Office 365アプリケーションを使用して文書を作成・編集し、LiferayのDocuments and Mediaライブラリに保存することができます。
 
 また、Office 365のExchange Onlineカレンダーと統合されていれば、ユーザーはLiferayポータル内で直接カレンダーを表示・管理できる。
 
@@ -103,23 +103,23 @@ Liferayは、2つの異なる方法でGoogle Driveと統合することもでき
 
 ### ライブチャット & チャットボット
 
-Liferay DXP は、多数の [ライブ チャット](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience/enabling-automated-live-chat-systems) プラットフォームを包括的にサポートします。 この統合を有効にすると、Liferayインスタンス上のサイトにチャットウィンドウが追加され、ユーザーのサポートやサイト体験の向上に利用できます。
+Liferay DXP は、多数の [自動ライブチャットシステムの有効化](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience/enabling-automated-live-chat-systems) プラットフォームを包括的にサポートします。 この統合を有効にすると、Liferayインスタンス上のサイトにチャットウィンドウが追加され、ユーザーのサポートやサイト体験の向上に利用できます。
 
 Liferayはまた、自動化されたチャット機能を提供するために、ZendeskやHubspotなどのチャットボットサービスと統合しています。 これは、通常の営業時間外にユーザーにサポートを提供する場合や、簡単な問い合わせに対応する場合に便利です。
 
 ### DocuSign
 
-[DocuSign](https://learn.liferay.com/web/guest/w/dxp/content-authoring-and-management/documents-and-media/uploading-and-managing/enabling-docusign-digital-signatures) 電子署名もLiferay文書と統合できる。
+[DocuSignデジタル署名の有効化](https://learn.liferay.com/web/guest/w/dxp/content-authoring-and-management/documents-and-media/uploading-and-managing/enabling-docusign-digital-signatures) 電子署名もLiferay文書と統合できる。
 
 DocuSignは、電子署名される文書を管理するサービスである。 この統合により、文書への署名の管理と収集が可能になる。
 
 ### ETLツール
 
-Liferayは、 [Talend](https://learn.liferay.com/web/guest/w/dxp/system-administration/data-integration/liferay-talend-components-overview) のようなETL（Exchange-Transform-Load）ツールと統合することができます。 LiferayのTalendコンポーネントのおかげで、顧客はLiferayとの間でデータをインポートおよびエクスポートできます。 例えば、ユーザーデータ、ウェブコンテンツ、商品などは、CRM、ERP、データベースなどの他のシステムからインポートしたり、他のシステムへエクスポートしたりすることができます。
+Liferayは、 [Liferay Talendコンポーネントの概要](https://learn.liferay.com/web/guest/w/dxp/system-administration/data-integration/liferay-talend-components-overview) のようなETL（Exchange-Transform-Load）ツールと統合することができます。 LiferayのTalendコンポーネントのおかげで、顧客はLiferayとの間でデータをインポートおよびエクスポートできます。 例えば、ユーザーデータ、ウェブコンテンツ、商品などは、CRM、ERP、データベースなどの他のシステムからインポートしたり、他のシステムへエクスポートしたりすることができます。
 
 ### エンタープライズ・サービス・バス
 
-Liferayはまた、エンタープライズサービスバス（ESB）のようなアーキテクチャと統合することができます。 [MuleSoft](https://learn.liferay.com/w/commerce/add-ons-and-connectors/mulesoft) は有名なESBで、Liferayコネクタもある。 Liferayの典型的なユースケースは、顧客がLiferayとERPやCRMシステムなどの他のアプリケーション間のワークフローを自動化することです。
+Liferayはまた、エンタープライズサービスバス（ESB）のようなアーキテクチャと統合することができます。 [ミュールソフト](https://learn.liferay.com/w/commerce/add-ons-and-connectors/mulesoft) は有名なESBで、Liferayコネクタもある。 Liferayの典型的なユースケースは、顧客がLiferayとERPやCRMシステムなどの他のアプリケーション間のワークフローを自動化することです。
 
 ### ERP
 
@@ -129,7 +129,7 @@ LiferayはSAPのようなERPプラットフォームとの統合を可能にす�
 
 ### Headless API
 
-Liferay [ヘッドレス統合](https://learn.liferay.com/w/dxp/headless-delivery/using-liferay-as-a-headless-platform) は、最新のREST APIを使用して、Liferayのバックエンド機能を独自のアプリケーションと統合する柔軟で効率的な方法を開発者に提供します。
+Liferay [ヘッドレスプラットフォームとしてのLiferayの使用](https://learn.liferay.com/w/dxp/headless-delivery/using-liferay-as-a-headless-platform) は、最新のREST APIを使用して、Liferayのバックエンド機能を独自のアプリケーションと統合する柔軟で効率的な方法を開発者に提供します。
 
 * このアプローチにより、開発者はユーザーエクスペリエンスをよりコントロールしやすくなり、アプリケーションの市場投入までの時間を短縮できる。
 

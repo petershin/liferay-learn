@@ -77,7 +77,7 @@ Commerce 3.0では、 **注文** および **サブスクリプション** は *
     ![コントロールパネル-システム設定](managing-subscriptions/images/10.png)
 
     次の使用可能な構成を確認します。
-      * **Renew Check Interval** - 更新チェックの頻度を決定します<!-- what does this really do? --> 。
+      * **Renew Check Interval** - 更新チェックの頻度を決定します <!-- what does this really do? --> 。
       * **Subscription Cancellation Allowed** - チェックした場合、ユーザーは購読をキャンセルすることができます。
       * **Subscription Suspension Allowed** - チェックした場合、ユーザーは購読を一時停止することができます。
 

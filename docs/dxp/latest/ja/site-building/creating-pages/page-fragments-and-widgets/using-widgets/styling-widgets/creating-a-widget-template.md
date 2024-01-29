@@ -10,13 +10,13 @@ Liferay DXP/Portal 7.4+では、ウィジェットテンプレートはFreeMarke
 
 1. ウィジェットテンプレートを作成する目的のサイトに移動します。
 
-1. サイトメニュー( ![サイトメニュー](../../../../../../images/icon-product-menu.png))を開き、_Design_ &rarr; _Templates_ &rarr; _Widget Templates_に移動します。
+1. サイトメニュー( ![サイトメニュー](../../../../../../images/icon-product-menu.png))を開き、 **Design** &rarr; **Templates** &rarr; **Widget Templates** に移動します。
 
    ```{note}
    グローバルサイトでは、ウィジェットテンプレートのサンプルを見ることができます。 これらのサンプルテンプレートは、すでにアプリに設定されているデフォルトのテンプレートとは異なります。
    ```
 
-1. _Add_ ( ![Add Button](../../../../../images/icon-add.png) ) をクリックし、作成するテンプレートのタイプを選択します。
+1. **Add**( ![Add Button](../../../../../images/icon-add.png) ) をクリックし、作成するテンプレートのタイプを選択します。
 
    ![Click on Design and Widget templates.](./creating-a-widget-template/images/01.png)
 
@@ -24,11 +24,11 @@ Liferay DXP/Portal 7.4+では、ウィジェットテンプレートはFreeMarke
 
 1. エディターでテンプレートをデザインします。
 
-   _Elements_サイドパネル( ![Elements](../../../../../images/icon-list-ul.png) )では、利用可能なウィジェット・フィールド、変数、ユーティリティから選択することができます。 すべてのウィジェットに共通する要素もあれば、選択したウィジェットタイプに特化した要素もあります。
+**Elements** サイドパネル( ![Elements](../../../../../images/icon-list-ul.png) )では、利用可能なウィジェット・フィールド、変数、ユーティリティから選択することができます。 すべてのウィジェットに共通する要素もあれば、選択したウィジェットタイプに特化した要素もあります。
 
    ![Design the template using field elements.](./creating-a-widget-template/images/02.png)
 
-1. (オプション) 詳細サイドパネル(![詳細](../../../../../../images/icon-cog3.png))で、テンプレートの_description_を入力し、_image_を選択します。
+1. (オプション) 詳細サイドパネル(![詳細](../../../../../../images/icon-cog3.png))で、テンプレートの **description** を入力し、 **image** を選択します。
 
 1. 保存」をクリックする。
 
@@ -83,12 +83,12 @@ APIのフィルタリングの詳細については、 [APIクエリパラメー
 
 ウィジェットテンプレートを保存した後、アクションボタン(![アクションボタン](../../../../../images/icon-actions.png))から管理できます。 これにはいくつかのオプションがあります。
 
-- _Edit_: ウィジェット・テンプレートのセットアップ・プロパティを修正する。
-- _パーミッション_: ウィジェットテンプレートのパーミッション_Update_, _Permissions_, _Delete_, _View_を管理します。
-- _Copy_: ウィジェット・テンプレートのコピーを作成します。
-- _Delete_: ウィジェットテンプレートを削除します。
+- **Edit** : ウィジェット・テンプレートのセットアップ・プロパティを修正する。
+- **パーミッション** : ウィジェットテンプレートのパーミッション **Update** , **Permissions** , **Delete** , **View** を管理します。
+- **Copy** : ウィジェット・テンプレートのコピーを作成します。
+- **Delete** : ウィジェットテンプレートを削除します。
 
-さらに、ウィジェットテンプレートは、静的URLとWebDAV URLを生成します。 これらの値は、テンプレートのXMLソースにアクセスします。 これらのURLは、メニューからウィジェット・テンプレートをクリックし、_Details_セクションを展開することで見つけることができます。 WebDAV URLにより、サイト管理者はリモートサーバー上のウィジェットテンプレートを追加、参照、編集、削除することができます。 WebDAV URL でできることの詳細については、 [WebDAV アクセス](../../../../../content-authoring-and-management/documents-and-media/publishing-and-sharing/accessing-documents-with-webdav.md) を参照してください。
+さらに、ウィジェットテンプレートは、静的URLとWebDAV URLを生成します。 これらの値は、テンプレートのXMLソースにアクセスします。 これらのURLは、メニューからウィジェット・テンプレートをクリックし、 **Details** セクションを展開することで見つけることができます。 WebDAV URLにより、サイト管理者はリモートサーバー上のウィジェットテンプレートを追加、参照、編集、削除することができます。 WebDAV URL でできることの詳細については、 [WebDAV アクセス](../../../../../content-authoring-and-management/documents-and-media/publishing-and-sharing/accessing-documents-with-webdav.md) を参照してください。
 
 ```{note}
 ウィジェットテンプレートにウィジェットを埋め込むことは可能ですが、他のウィジェットとの競合や予期せぬ動作（例：パンくずリストへのデータ集計ウィジェットの埋め込み）を引き起こす可能性があるため、推奨されません。 ウィジェットテンプレートにウィジェットを埋め込むしかない場合、他のウィジェットと干渉しないことを確認してください。
@@ -96,11 +96,11 @@ APIのフィルタリングの詳細については、 [APIクエリパラメー
 
 次に、新しいウィジェットテンプレートを使用するようにウィジェットを設定します。
 
-1. 修正したいウィジェットの_コンフィギュレーション_ページを開き、_表示設定_を開いてください。
+1. 修正したいウィジェットの **コンフィギュレーション** ページを開き、 **表示設定** を開いてください。
 
-1. _Display Template_の下で、ドロップダウンメニューからウィジェット・テンプレートを選択します。
+1. **Display Template** の下で、ドロップダウンメニューからウィジェット・テンプレートを選択します。
 
-また、アプリのサイト固有の表示テンプレートを管理することもできます。この場合は、_Display Template_ドロップダウンメニューの隣にある_Manage Display Templates for [SPECIFIC_SITE]_リンクをクリックします。 設定されたテンプレートのリストが表示され、新しいテンプレートを追加したり、既存のテンプレートを編集したりすることができます。
+また、アプリのサイト固有の表示テンプレートを管理することもできます。この場合は、 **Display Template** ドロップダウンメニューの隣にある **Manage Display Templates for [SPECIFIC** SITE]_リンクをクリックします。 設定されたテンプレートのリストが表示され、新しいテンプレートを追加したり、既存のテンプレートを編集したりすることができます。
 
 ![Click the Configuration menu of an app to edit and manage available widget templates.](./creating-a-widget-template/images/04.png)
 

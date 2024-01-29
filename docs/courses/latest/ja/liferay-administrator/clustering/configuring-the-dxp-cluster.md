@@ -1,6 +1,6 @@
 # DXPクラスタの設定
 
-2つのDockerコンテナを実行して、単純なクラスタ化環境を実証することができる。 詳しくは、 [Clustering for High Availability](https://learn.liferay.com/web/guest/w/dxp/installation-and-upgrades/setting-up-liferay/clustering-for-high-availability) を参照してください。
+2つのDockerコンテナを実行して、単純なクラスタ化環境を実証することができる。 詳しくは、 [高可用性のクラスタリング](https://learn.liferay.com/web/guest/w/dxp/installation-and-upgrades/setting-up-liferay/clustering-for-high-availability) を参照してください。
 
 ## 各ノードのElasticsearchの設定
 
@@ -123,4 +123,4 @@
 
 ## 関連コンセプト
 
-- [クラスター化されたインストールの維持](https://learn.liferay.com/en/w/dxp/installation-and-upgrades/maintaining-a-liferay-installation/maintaining-clustered-installations)
+- [クラスター化されたインストールの維持](https://learn.liferay.com/ja/w/dxp/installation-and-upgrades/maintaining-a-liferay-installation/maintaining-clustered-installations)

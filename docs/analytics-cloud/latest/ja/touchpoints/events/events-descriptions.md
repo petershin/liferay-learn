@@ -20,48 +20,48 @@
 
 ## ブログをクリック
 
-これは、ユーザーがブログアプリケーション内の要素をクリックした場合です。 詳しくは [Liferay Blogs](https://learn.liferay.com/w/dxp/content-authoring-and-management/blogs) をご覧ください。
+これは、ユーザーがブログアプリケーション内の要素をクリックした場合です。 詳しくは [ブログ](https://learn.liferay.com/w/dxp/content-authoring-and-management/blogs) をご覧ください。
 
 ## ブログ閲覧
 
-これは、ユーザーがブログのエントリーを閲覧した場合である。 詳しくは [Liferay Blogs](https://learn.liferay.com/w/dxp/content-authoring-and-management/blogs) をご覧ください。
+これは、ユーザーがブログのエントリーを閲覧した場合である。 詳しくは [ブログ](https://learn.liferay.com/w/dxp/content-authoring-and-management/blogs) をご覧ください。
 
 ## CTAがクリックされた
 
-これは、ユーザーがA/Bテストの要素をクリックした場合です。 詳しくは [Liferay A/Bテスト](https://learn.liferay.com/en/w/dxp/site-building/optimizing-sites/ab-testing/ab-testing) をご覧ください。
+これは、ユーザーがA/Bテストの要素をクリックした場合です。 詳しくは [A/Bテスト](https://learn.liferay.com/ja/w/dxp/site-building/optimizing-sites/ab-testing/ab-testing) をご覧ください。
 
 ## 資料ダウンロード
 
-これは、ユーザーが文書やメディアをダウンロードする場合である。 詳しくは [Liferay Documents and Media](https://learn.liferay.com/en/w/dxp/content-authoring-and-management/documents-and-media) をご覧ください。
+これは、ユーザーが文書やメディアをダウンロードする場合である。 詳しくは [ドキュメントとメディア](https://learn.liferay.com/ja/w/dxp/content-authoring-and-management/documents-and-media) をご覧ください。
 
 ## ドキュメントのプレビュー
 
-これは、ユーザーが文書やメディアをプレビューするときのことである。 詳しくは [Liferay Documents and Media](https://learn.liferay.com/en/w/dxp/content-authoring-and-management/documents-and-media) をご覧ください。
+これは、ユーザーが文書やメディアをプレビューするときのことである。 詳しくは [ドキュメントとメディア](https://learn.liferay.com/ja/w/dxp/content-authoring-and-management/documents-and-media) をご覧ください。
 
 ## フォーム提出
 
-これは、ユーザーがフォームを送信した場合です。 詳しくは [Liferay Forms](https://learn.liferay.com/en/w/dxp/process-automation/forms/introduction-to-forms) をご覧ください。
+これは、ユーザーがフォームを送信した場合です。 詳しくは [フォームの概要](https://learn.liferay.com/ja/w/dxp/process-automation/forms/introduction-to-forms) をご覧ください。
 
 ## 閲覧フォーム
 
-これは、ユーザーがフォームを閲覧するときのことである。 詳しくは [Liferay Forms](https://learn.liferay.com/en/w/dxp/process-automation/forms/introduction-to-forms) をご覧ください。
+これは、ユーザーがフォームを閲覧するときのことである。 詳しくは [フォームの概要](https://learn.liferay.com/ja/w/dxp/process-automation/forms/introduction-to-forms) をご覧ください。
 
 ## 到達したページの深さ
 
-これは、ユーザーがサイトページのコンテンツをスクロールするときのことである。 詳しくは [理解ページ](https://learn.liferay.com/en/w/dxp/site-building/creating-pages/understanding-pages/understanding-pages) を参照。
+これは、ユーザーがサイトページのコンテンツをスクロールするときのことである。 詳しくは [ページについて](https://learn.liferay.com/ja/w/dxp/site-building/creating-pages/understanding-pages/understanding-pages) を参照。
 
 ## ページを読む
 
-これは、ユーザーがサイトのページを読むタイミングである（ページ内容の長さと予想読書時間の仮定に基づいて計算される）。 詳しくは [理解ページ](https://learn.liferay.com/en/w/dxp/site-building/creating-pages/understanding-pages/understanding-pages) を参照。
+これは、ユーザーがサイトのページを読むタイミングである（ページ内容の長さと予想読書時間の仮定に基づいて計算される）。 詳しくは [ページについて](https://learn.liferay.com/ja/w/dxp/site-building/creating-pages/understanding-pages/understanding-pages) を参照。
 
 ## 閲覧ページ
 
-これは、ユーザーがサイトのページを閲覧するときのことである。 詳しくは [理解ページ](https://learn.liferay.com/en/w/dxp/site-building/creating-pages/understanding-pages/understanding-pages) を参照。
+これは、ユーザーがサイトのページを閲覧するときのことである。 詳しくは [ページについて](https://learn.liferay.com/ja/w/dxp/site-building/creating-pages/understanding-pages/understanding-pages) を参照。
 
 ## クリックされたウェブコンテンツ
 
-これは、ユーザーがウェブコンテンツの記事をクリックした場合です。 詳しくは [ウェブコンテンツ記事](https://learn.liferay.com/w/dxp/content-authoring-and-management/web-content/web-content-articles) をご覧ください。
+これは、ユーザーがウェブコンテンツの記事をクリックした場合です。 詳しくは [Webコンテンツの記事](https://learn.liferay.com/w/dxp/content-authoring-and-management/web-content/web-content-articles) をご覧ください。
 
 ## 閲覧されたウェブコンテンツ
 
-これは、ユーザーがウェブコンテンツの記事を閲覧する場合である。 詳しくは [ウェブコンテンツ記事](https://learn.liferay.com/w/dxp/content-authoring-and-management/web-content/web-content-articles) をご覧ください。
+これは、ユーザーがウェブコンテンツの記事を閲覧する場合である。 詳しくは [Webコンテンツの記事](https://learn.liferay.com/w/dxp/content-authoring-and-management/web-content/web-content-articles) をご覧ください。

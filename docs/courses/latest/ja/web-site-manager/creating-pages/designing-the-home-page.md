@@ -9,13 +9,13 @@
 1. 企業の独自性を際立たせる特徴のリスト
 1. お客様の声スライダー
 
-[フラグメント](https://learn.liferay.com/en/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments) HTML、JavaScript（必要な場合）、CSSの再利用可能なスニペットで、サイトページのルック＆フィールを構築するために使用できます。 組み込みのフラグメントとカスタムフラグメントの両方を組み合わせて、カスタムコードをほとんど使わずにページを構成します。
+[フラグメントの使用](https://learn.liferay.com/ja/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments) HTML、JavaScript（必要な場合）、CSSの再利用可能なスニペットで、サイトページのルック＆フィールを構築するために使用できます。 組み込みのフラグメントとカスタムフラグメントの両方を組み合わせて、カスタムコードをほとんど使わずにページを構成します。
 
 まず、クラリティの独自性を強調するフラグメント・コンポジションを加える：
 
 1. 編集モードでホームページを開く。
 
-1. _clarity-uniqueness-composition_をページに追加する。
+1. **clarity-uniqueness-composition** をページに追加する。
 
 1. ページを公開する。
 
@@ -27,9 +27,9 @@
 
 1. 編集モードでホームページを開く。
 
-1. _clarity-testimonials-composition_をページに追加する。
+1. **clarity-testimonials-composition** をページに追加する。
 
-1. 右側のフラグメント設定サイドバーで、各 _証言_ フィールドに引用符を付けます：
+1. 右側のフラグメント設定サイドバーで、各 **証言** フィールドに引用符を付けます：
 
    **最初の証言:**
 
@@ -53,7 +53,7 @@
 
 ![Customer Testimonials are displayed.](./designing-the-home-page/images/04.png)
 
-[「フラグメントとリソースのインポート」](./importing-fragments-and-resources) でインポートした_Testimonials Slider_というカスタムフラグメントで定義されています。
+[「フラグメントとリソースのインポート」](./importing-fragments-and-resources) でインポートした **Testimonials Slider** というカスタムフラグメントで定義されています。
 
 　 ページの作成に関するこのモジュールは終了しました。 クラリティのページが整い、ホームページも肉付けされた。 しかし、ほとんどのサイトページにはコンテンツがない。
 
@@ -61,6 +61,6 @@
 
 ## 関連コンセプト
 
-* [コンテンツページのコンテンツ管理](https://learn.liferay.com/en/w/dxp/site-building/creating-pages/using-content-pages/managing-content-in-content-pages)
-* [コンテンツページエディタUIリファレンス](https://learn.liferay.com/en/w/dxp/site-building/creating-pages/using-content-pages/content-page-editor-ui-reference)
-* [コンテンツページの使用](https://learn.liferay.com/en/w/dxp/site-building/creating-pages/using-content-pages)
+* [コンテントページのコンテンツの管理](https://learn.liferay.com/ja/w/dxp/site-building/creating-pages/using-content-pages/managing-content-in-content-pages)
+* [Content Page Editor UI Reference](https://learn.liferay.com/ja/w/dxp/site-building/creating-pages/using-content-pages/content-page-editor-ui-reference)
+* [コンテントページの使用](https://learn.liferay.com/ja/w/dxp/site-building/creating-pages/using-content-pages)

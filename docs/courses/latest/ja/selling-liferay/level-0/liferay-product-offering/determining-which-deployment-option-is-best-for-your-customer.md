@@ -8,9 +8,9 @@ visibility:
 前述のように、すべてのデプロイオプションが可能ですが、弊社の販売アプローチはSaaS第一です。 とはいえ、実際に何を意味するのか、これは常に顧客にとって正しい選択肢となるのかという疑問もあるかと思うので、ここではその疑問についてご説明していきます。
 
 ```{note}
-* 本モジュールのライブワークショップの [録画](https://learn.liferay.com/web/guest/d/l0-2a-liferay-offering) をご覧ください。
-* 上記ワークショップで使用されたプレゼンテーション資料はこちら [PDF](https://learn.liferay.com/documents/d/guest/l0-2a-liferay-offering-pdf) からダウンロードしてください。
-* 本モジュールで参照する資料はこちら [Sales Decision Flow](https://learn.liferay.com/documents/d/guest/new-customer-new-project-sales-decision-flow) からダウンロードしてください。
+* 本モジュールのライブワークショップの [録画](https://learn.liferay.com/ja/c/portal/login) をご覧ください。
+* 上記ワークショップで使用されたプレゼンテーション資料はこちら [PDF](https://learn.liferay.com/ja/c/portal/login) からダウンロードしてください。
+* 本モジュールで参照する資料はこちら [Sales Decision Flow](https://learn.liferay.com/ja/c/portal/login) からダウンロードしてください。
 ```
 
 ## ビジネス上の問題を解決する

@@ -21,7 +21,7 @@ visibility:
 
 ## コネクターとコンポーネント
 
-* [MuleSoft](https://learn.liferay.com/w/commerce/add-ons-and-connectors/mulesoft)
-* [ディスパッチ](https://learn.liferay.com/w/dxp/building-applications/core-frameworks/job-scheduler-framework)
+* [ミュールソフト](https://learn.liferay.com/w/commerce/add-ons-and-connectors/mulesoft)
+* [ジョブスケジューラフレームワーク](https://learn.liferay.com/w/dxp/building-applications/core-frameworks/job-scheduler-framework)
 
 次：[開発者向けツール](./developer-tooling.md)

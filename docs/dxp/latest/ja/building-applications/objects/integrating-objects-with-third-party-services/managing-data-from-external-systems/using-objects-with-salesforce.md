@@ -1,6 +1,6 @@
 # Salesforce でのオブジェクトの使用
 
-{bdg-link-primary}`[ベータ版特集](../../../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
+{bdg-link-primary}` [ベータ版特集](../../../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags) `
 
 Liferay では、 [カスタム Salesforce オブジェクト](https://help.salesforce.com/s/) と統合するオブジェクトを作成し、Salesforce を外部ストレージシステムとして使用できます。 一度統合されると、LiferayオブジェクトのデータはSalesforceにのみ保存され、ユーザーがどちらのコンテキストでエントリを追加、更新、削除しても、両方のシステムが自動的に更新されます。
 
@@ -27,21 +27,21 @@ Liferay オブジェクトを作成する前に、 [標準](https://help.salesfo
 
 以下の手順に従って、LiferayインスタンスをSalesforceに接続します：
 
-1. グローバルメニュー([グローバルメニュー](../../../../images/icon-applications-menu.png))を開き、[コントロールパネル(Control Panel)]タブに移動し、[インスタンス設定(Instance Settings)]をクリックします。
+1. グローバルメニュー(![グローバルメニュー](../../../../images/icon-applications-menu.png))を開き、[コントロールパネル(Control Panel)]タブに移動し、[インスタンス設定(Instance Settings)]をクリックします。
 
 1. サードパーティ]をクリックし、[Salesforce Integration]タブに移動します。
 
 1. [Liferay 接続アプリ](https://help.salesforce.com/s/articleView?id=sf.connected_app_overview.htm&type=5) の Salesforce ログイン情報と OAuth 認証情報を入力します。
 
-   *ログイン URL* には、`https://login.salesforce.com/` または Salesforce ドメインのログイン URL を使用できます。
+   **ログイン URL** には、`https://login.salesforce.com/` または Salesforce ドメインのログイン URL を使用できます。
 
    ![Enter your Salesforce login and connected app OAuth credentials.](./using-objects-with-salesforce/images/04.png)
 
-1. ［_保存_］をクリックします。
+1. ［**保存**］をクリックします。
 
 ## Salesforce Storage Type で Liferay オブジェクトを作成する
 
-Salesforceにデータを保存するためのLiferayオブジェクトの作成は、標準的なカスタムオブジェクトの作成と同じ標準的なプロセスに従います。 唯一の違いは、ドラフト作成時に _Salesforce_ ストレージタイプを選択する必要があることです。 これにより、Salesforce を外部ストレージとして使用するようにオブジェクトが構成されます。 [オブジェクトの作成](../../creating-and-managing-objects/creating-objects.md) を参照してください。
+Salesforceにデータを保存するためのLiferayオブジェクトの作成は、標準的なカスタムオブジェクトの作成と同じ標準的なプロセスに従います。 唯一の違いは、ドラフト作成時に **Salesforce** ストレージタイプを選択する必要があることです。 これにより、Salesforce を外部ストレージとして使用するようにオブジェクトが構成されます。 [オブジェクトの作成](../../creating-and-managing-objects/creating-objects.md) を参照してください。
 
 ![Select the Salesforce storage type.](./using-objects-with-salesforce/images/05.png)
 

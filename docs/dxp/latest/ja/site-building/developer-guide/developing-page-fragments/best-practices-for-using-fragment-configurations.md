@@ -9,7 +9,7 @@
 
 悪意のあるコードが [テキストフィールドの構成](../reference/fragments/fragment-configuration-types-reference.md#text-configuration) に挿入され、他のフラグメントユーザーに大混乱を引き起こす可能性があります。 クロスサイトスクリプティング（XSS）攻撃から守るために、フラグメントテキスト値をエスケープする必要があります。
 
-一般的なケースでは、HTML `escape()`メソッドを使用できます。 詳細は、 [`HtmlUtil`](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/util/HtmlUtil.html) クラスを参照してください。
+一般的なケースでは、HTML `escape()`メソッドを使用できます。 詳細は、 [`HtmlUtil`](https://resources.learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/util/HtmlUtil.html) クラスを参照してください。
 
 ```html
 <div class="fragment_38816">

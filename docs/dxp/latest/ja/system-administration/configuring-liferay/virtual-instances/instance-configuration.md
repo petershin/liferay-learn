@@ -60,7 +60,7 @@ default.logout.page.path=
 company.default.home.url=
 ```
 
-すべての仮想インスタンスは、プロパティファイルで指定された値を共有します。 インスタンス設定で行われた変更は、プロパティファイルで設定された値を上書きします。 詳細については、 [ポータルプロパティのドキュメント](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) を参照してください。
+すべての仮想インスタンスは、プロパティファイルで指定された値を共有します。 インスタンス設定で行われた変更は、プロパティファイルで設定された値を上書きします。 詳細については、 [ポータルプロパティのドキュメント](https://resources.learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) を参照してください。
 
 **追加情報：** 仮想インスタンスの所有者の正式名称、ID、会社タイプ、SICコード、証券シンボル、業界、および業界タイプを指定します。
 

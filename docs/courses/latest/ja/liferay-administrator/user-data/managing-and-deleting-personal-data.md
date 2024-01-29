@@ -1,6 +1,6 @@
 # 個人データの管理と削除
 
-Liferayは、個人ユーザーデータを管理および削除するためのユーザーデータツールを提供します。 これらのツールはGDPRの要件に役立ちますが、コンプライアンスを保証するものではありません。 詳しくは [ユーザーデータの管理](https://learn.liferay.com/w/dxp/users-and-permissions/managing-user-data) をご覧ください。
+Liferayは、個人ユーザーデータを管理および削除するためのユーザーデータツールを提供します。 これらのツールはGDPRの要件に役立ちますが、コンプライアンスを保証するものではありません。 詳しくは [ユーザーデータの管理（GDPR）](https://learn.liferay.com/w/dxp/users-and-permissions/managing-user-data) をご覧ください。
 
 ## 個人データのエクスポート
 
@@ -60,8 +60,8 @@ Liferayは、個人ユーザーデータを管理および削除するための�
 
 ## 関連コンセプト
 
-- [ユーザーデータのエクスポート](https://learn.liferay.com/en/w/dxp/users-and-permissions/managing-user-data/exporting-user-data)
+- [ユーザーデータのエクスポート](https://learn.liferay.com/ja/w/dxp/users-and-permissions/managing-user-data/exporting-user-data)
 
-- [ユーザーデータの無害化](https://learn.liferay.com/en/w/dxp/users-and-permissions/managing-user-data/sanitizing-user-data)
+- [ユーザーデータの無害化](https://learn.liferay.com/ja/w/dxp/users-and-permissions/managing-user-data/sanitizing-user-data)
 
-- [匿名ユーザーの設定](https://learn.liferay.com/en/w/dxp/users-and-permissions/managing-user-data/configuring-the-anonymous-user)
+- [匿名ユーザーの設定](https://learn.liferay.com/ja/w/dxp/users-and-permissions/managing-user-data/configuring-the-anonymous-user)

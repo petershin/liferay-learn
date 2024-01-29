@@ -232,7 +232,7 @@ Liferayのプロジェクトアーキタイプは、このすべての定型コ�
 
 `<role-mapper/>`要素は、ポートレットをデフォルトのLiferay DXPユーザーロールに関連付けます。
 
-[`liferay-portlet-app- [version].dtd`ファイル](https://learn.liferay.com/reference/latest/en/dxp/definitions/index.html) は、`liferay-portlet.xml`ファイルを定義します。
+[`liferay-portlet-app- [version].dtd`ファイル](https://resources.learn.liferay.com/reference/latest/en/dxp/definitions/index.html) は、`liferay-portlet.xml`ファイルを定義します。
 
 ## liferay-display.xml
 
@@ -249,7 +249,7 @@ Liferayのプロジェクトアーキタイプは、このすべての定型コ�
 </display>
 ```
 
-詳細については、[`liferay-display- [version].dtd`ファイル](https://learn.liferay.com/reference/latest/en/dxp/definitions/index.html) を参照してください。
+詳細については、[`liferay-display- [version].dtd`ファイル](https://resources.learn.liferay.com/reference/latest/en/dxp/definitions/index.html) を参照してください。
 
 次に、アプリケーションコンテキストを見てみましょう。
 
@@ -377,7 +377,7 @@ com.liferay.portal.kernel.servlet.filters.invoker
 
 ポートレットアプリケーションのWARファイルをデプロイすると、[WABジェネレータ](../../../reference/deploying-wars-wab-generator.md)は指定されたOSGiメタデータを、Liferayのランタイムフレームワークにデプロイされた結果として生じるWebアプリケーションバンドル（WAB）に追加します。
 
-[`liferay-plugin-package- [version].dtd`ファイル](https://learn.liferay.com/reference/latest/en/dxp/definitions/index.html) は、`liferay-plugin-package.properties`ファイルを記述します。
+[`liferay-plugin-package- [version].dtd`ファイル](https://resources.learn.liferay.com/reference/latest/en/dxp/definitions/index.html) は、`liferay-plugin-package.properties`ファイルを記述します。
 
 ## 関連トピック
 

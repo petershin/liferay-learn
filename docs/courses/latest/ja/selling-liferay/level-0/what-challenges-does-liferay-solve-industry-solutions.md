@@ -31,8 +31,8 @@ visibility:
 これらの業界は最も一般的な例ですが、Liferayの強みの1つは、ほぼすべての業界で使用できること、またその使用実績もあるということです。
 
 ```{note}
-* 本モジュールのライブワークショップの [録画](https://learn.liferay.com/web/guest/d/l0-5b-what-challenges-do-we-solve-industry-solutions) をご覧ください。
-* 上記ワークショップで使用されたプレゼンテーション資料はこちら [PDF](https://learn.liferay.com/documents/d/guest/l0-5b-what-challenges-do-we-solve-industry-solutions-pdf) からダウンロードしてください。
+* 本モジュールのライブワークショップの [録画](https://learn.liferay.com/ja/c/portal/login) をご覧ください。
+* 上記ワークショップで使用されたプレゼンテーション資料はこちら [PDF](https://learn.liferay.com/ja/c/portal/login) からダウンロードしてください。
 ```
 
 ## 業界別ソリューション

@@ -17,15 +17,15 @@ LXC で変更をデプロイするためにクラウド コンソールをセッ
 
 開発環境や本番環境には、クラウド・ネットワーク内の個別のサービスとして、これらすべてが含まれている：
 
-* あなたの [Liferay インスタンス](https://learn.liferay.com/w/liferay-cloud/using-the-liferay-dxp-service)
-* [Nginx ウェブサーバー](https://learn.liferay.com/w/liferay-cloud/platform-services/web-server-service)
-* [Elasticsearch インスタンス](https://learn.liferay.com/w/liferay-cloud/platform-services/search-service)
-* [MySQLデータベース](https://learn.liferay.com/w/liferay-cloud/platform-services/database-service/database-service)
-* [手動または自動バックアップのためのサービス](https://learn.liferay.com/w/liferay-cloud/platform-services/backup-service/backup-service-overview)
+* あなたの [Liferay DXPサービスの使用](https://learn.liferay.com/w/liferay-cloud/using-the-liferay-dxp-service)
+* [Webサーバーサービス（Nginx）](https://learn.liferay.com/w/liferay-cloud/platform-services/web-server-service)
+* [検索サービス（Elasticsearch）](https://learn.liferay.com/w/liferay-cloud/platform-services/search-service)
+* [データベースサービス(MySQL)](https://learn.liferay.com/w/liferay-cloud/platform-services/database-service/database-service)
+* [バックアップサービスの概要](https://learn.liferay.com/w/liferay-cloud/platform-services/backup-service/backup-service-overview)
 
 ![各環境では、これらのサービスは個別のクラウド・ネットワークで管理されている。](./cloud-configuration/images/01.png)
 
-また、別の `infra` 環境に [CI サービス](https://learn.liferay.com/w/liferay-cloud/platform-services/continuous-integration) があり、他の環境用に作成またはデプロイしたビルドを制御している。
+また、別の `infra` 環境に [継続的インテグレーション](https://learn.liferay.com/w/liferay-cloud/platform-services/continuous-integration) があり、他の環境用に作成またはデプロイしたビルドを制御している。
 
 LXC-SM プロジェクトにおけるあなたの責任については、 [こちら](https://help.liferay.com/hc/ja/articles/360059798531-DXP-Cloud-Shared-Activities) を参照してください。
 

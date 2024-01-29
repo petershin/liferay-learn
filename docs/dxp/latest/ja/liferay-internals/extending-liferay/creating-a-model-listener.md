@@ -59,7 +59,7 @@ Liferay DXPのモデルクラスは、 [サービスビルダー](../../building
 
 このルールの例外はコアモデルです。 `User`などのコアクラスのモデルリスナーを作成する場合、そのインターフェイスはLiferay DXPのソースコードの [`portal-kernel`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel) フォルダにあります。
 
-作成するモデルリスナーは、掲示板メッセージ用です。 メッセージが削除されると、レポートをログに出力するメッセージをトリガーします。 可能なイベントのリストについては、 [BaseModelListener](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/model/BaseModelListener.html) のJavadocを参照してください。
+作成するモデルリスナーは、掲示板メッセージ用です。 メッセージが削除されると、レポートをログに出力するメッセージをトリガーします。 可能なイベントのリストについては、 [BaseModelListener](https://resources.learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/model/BaseModelListener.html) のJavadocを参照してください。
 
 ## モデルリスナーの動作
 
@@ -160,6 +160,6 @@ Liferay DXPのモデルクラスは、 [サービスビルダー](../../building
 
 ## 関連トピック
 
-[ModelListener Javadoc](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/model/BaseModelListener.html)
+[ModelListener Javadoc](https://resources.learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/model/BaseModelListener.html)
 
 [サービスビルダー](../../building-applications/data-frameworks/service-builder.md)

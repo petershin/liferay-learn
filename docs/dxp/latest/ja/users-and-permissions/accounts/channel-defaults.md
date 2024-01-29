@@ -7,7 +7,7 @@ toc:
 
 {bdg-secondary}`Liferay 7.4 U49+/GA49+で利用可能`
 
-ビジネスアカウントを作成した後、 [チャンネル](https://learn.liferay.com/web/guest/w/commerce/store-management/channels/introduction-to-channels) のデフォルトを設定することができます。 これにより、注文作成にかかる時間を短縮することで顧客体験を向上させ、アカウントマネージャーが特定のアカウント向けにコマース行動を調整するのに役立ちます。 これらのチャンネルのデフォルトを設定することができます：
+ビジネスアカウントを作成した後、 [チャネルについて](https://learn.liferay.com/web/guest/w/commerce/store-management/channels/introduction-to-channels) のデフォルトを設定することができます。 これにより、注文作成にかかる時間を短縮することで顧客体験を向上させ、アカウントマネージャーが特定のアカウント向けにコマース行動を調整するのに役立ちます。 これらのチャンネルのデフォルトを設定することができます：
 
 * 請求先
 * 配送先

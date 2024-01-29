@@ -16,7 +16,7 @@ MarcusはDelectable Bonsaiプロジェクト全体でLiferay Cloudコンソー�
 
    ![チームページからチームメンバーのメールアドレスに招待状を送信します。](./adding-team-members-to-the-project/images/01.png)
 
-1. [該当する](https://learn.liferay.com/w/liferay-cloud/manage-and-optimize/environment-teams-and-roles#understanding-team-roles) 役割のドロップダウンメニューから、 **Contributor** を選択します。
+1. [環境のチームとロール](https://learn.liferay.com/w/liferay-cloud/manage-and-optimize/environment-teams-and-roles#understanding-team-roles) 役割のドロップダウンメニューから、 **Contributor** を選択します。
 
 1. **Send Invite** をクリックする。
 
@@ -25,7 +25,7 @@ Liferay Cloudは、提供されたメールアドレスにプロジェクトに�
 このプロセスを他の環境（UATなど）でも繰り返し、チームメンバーが適切な環境すべてにアクセスできるようにします。
 
 ```{note}
-チームメンバーには、それぞれの環境における役割にふさわしい役割を与えましょう。 例えば、開発者が `dev` 環境ですべてのタスクを処理することを期待されている場合、開発者は管理者ロールを持つべきです。 詳しくは [環境チームと役割](https://learn.liferay.com/w/liferay-cloud/manage-and-optimize/environment-teams-and-roles) を確認してください。
+チームメンバーには、それぞれの環境における役割にふさわしい役割を与えましょう。 例えば、開発者が `dev` 環境ですべてのタスクを処理することを期待されている場合、開発者は管理者ロールを持つべきです。 詳しくは [環境のチームとロール](https://learn.liferay.com/w/liferay-cloud/manage-and-optimize/environment-teams-and-roles) を確認してください。
 ```
 
 Next: [CLIツール](./using-the-cli-tool.md) をインストールし、変更をプッシュして環境にデプロイできるようにする。

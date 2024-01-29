@@ -38,7 +38,7 @@
 
 次に、サイトの主要メニューへのアクセスを制限します。 コントロールメニュー（画面上部のメニューバー）を無効にすると、左側のサイトメニューにもアクセスできなくなります。
 
-デフォルトでは、あなたのサイトに参加する新しいメンバーは、これらのパーミッションを持つ [ロールを持っていないため、これらのメニューにアクセスすることはできません](https://learn.liferay.com/web/guest/w/dxp/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions) 。 ただし、公開Clarityサイトはこの設定を使用して、メニューへのアクセスを許可するロールを慎重に選択する必要があります。
+デフォルトでは、あなたのサイトに参加する新しいメンバーは、これらのパーミッションを持つ [ロールと権限について](https://learn.liferay.com/web/guest/w/dxp/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions) 。 ただし、公開Clarityサイトはこの設定を使用して、メニューへのアクセスを許可するロールを慎重に選択する必要があります。
 
 1. サイト構成ページで、サイト・スコープの下にある **メニュー・アクセス** をクリックします。
 
@@ -103,5 +103,5 @@
 ## 関連コンセプト
 
 * [DXPのナビゲート](https://learn.liferay.com/web/guest/w/dxp/getting-started/navigating-dxp)
-* [サイト設定リファレンス](https://learn.liferay.com/web/guest/w/dxp/site-building/site-settings/site-settings-ui-reference)
+* [サイト設定UIリファレンス](https://learn.liferay.com/web/guest/w/dxp/site-building/site-settings/site-settings-ui-reference)
 * [ロールと権限について](https://learn.liferay.com/web/guest/w/dxp/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions)

@@ -1,6 +1,6 @@
 # アカウント作成の自動化
 
-オンボーディングフローを完成させるために、Delectable Bonsaiは、マネージャーが承認されたアプリケーションのビジネスアカウントを簡単に作成できるようにしたいと考えている。 各アカウントは、アプリケーションの名前（ `businessName` ）にちなんで命名され、申請者は、アカウント管理者の役割を持つアカウントに自動的に割り当てられる必要があります。 ここでは、オブジェクトアクション [クライアントエクステンション](https://learn.liferay.com/web/guest/w/dxp/building-applications/client-extensions) を使ってこれを実現する。
+オンボーディングフローを完成させるために、Delectable Bonsaiは、マネージャーが承認されたアプリケーションのビジネスアカウントを簡単に作成できるようにしたいと考えている。 各アカウントは、アプリケーションの名前（ `businessName` ）にちなんで命名され、申請者は、アカウント管理者の役割を持つアカウントに自動的に割り当てられる必要があります。 ここでは、オブジェクトアクション [クライアント拡張](https://learn.liferay.com/web/guest/w/dxp/building-applications/client-extensions) を使ってこれを実現する。
 
 ![Distributor ApplicationオブジェクトにSet Up Accountアクションを追加します。](./automating-account-creation/images/01.png)
 

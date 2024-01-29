@@ -11,13 +11,13 @@ visibility:
 
 ## オブジェクト
 
-* [オブジェクトの概要](https://learn.liferay.com/w/dxp/building-applications/objects)
-* [チュートリアル](https://learn.liferay.com/w/dxp/building-applications/objects)
+* [オブジェクト](https://learn.liferay.com/w/dxp/building-applications/objects)
+* [オブジェクト](https://learn.liferay.com/w/dxp/building-applications/objects)
 
 ## フォーム
 
-* [オブジェクトでのフォームの使用](https://learn.liferay.com/w/dxp/building-applications/objects/using-forms-with-objects)
-* [フラグメントの使用によるフォームの構築](https://learn.liferay.com/w/dxp/building-applications/objects/using-fragments-to-build-forms)
+* [オブジェクトでフォームを使用する](https://learn.liferay.com/w/dxp/building-applications/objects/using-forms-with-objects)
+* [フラグメントでフォームを構築する](https://learn.liferay.com/w/dxp/building-applications/objects/using-fragments-to-build-forms)
 * [フォームの概要](https://learn.liferay.com/w/dxp/process-automation/forms/introduction-to-forms)
 
 ## ワークフロー
@@ -26,6 +26,6 @@ visibility:
 
 ## ワークフロー統計情報
 
-* [ワークフロー統計情報の使用](https://learn.liferay.com/w/dxp/process-automation/workflow/using-workflows/using-workflow-metrics)
+* [ワークフローメトリクスの使用](https://learn.liferay.com/w/dxp/process-automation/workflow/using-workflows/using-workflow-metrics)
 
 次： [コマース](./commerce.md)

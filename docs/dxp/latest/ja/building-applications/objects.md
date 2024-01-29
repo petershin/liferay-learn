@@ -30,7 +30,7 @@ Liferay Objectを使用すると、コードを記述したりモジュールを
 
 オブジェクトを使用すると、オブジェクトフレームワークに登録されている [システムサービス](./objects/creating-and-managing-objects/extending-system-objects.md) を拡張して設定することもできます。 これには、カスタムリレーションシップやアクションの追加も含まれます。 <!--TASK: Add fields when ready.-->
 
-カスタムアプリケーションの構築を開始するには [オブジェクトの作成](./objects/creating-and-managing-objects/creating-objects.md) を参照し、オブジェクトがLiferayのコアフレームワークをどのように活用するかについて確認するには [Understanding Object Integrations](./objects/understanding-object-integrations.md) を参照してください。
+カスタムアプリケーションの構築を開始するには [オブジェクトの作成](./objects/creating-and-managing-objects/creating-objects.md) を参照し、オブジェクトがLiferayのコアフレームワークをどのように活用するかについて確認するには [オブジェクト統合を理解する](./objects/understanding-object-integrations.md) を参照してください。
 
 ```{raw} html
 :file: ../landingpage_template.html

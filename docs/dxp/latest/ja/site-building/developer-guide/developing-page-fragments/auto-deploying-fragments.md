@@ -47,7 +47,7 @@ Liferay DXP 7.4+では、フラグメントコレクションはLiferay UIでは
    INFO  [com.liferay.portal.kernel.deploy.auto.AutoDeployScanner][AutoDeployDir:263] Processing a2f8-fragments.zip
    ```
 
-1. フラグメントセットが利用可能であることを確認します。 サイトメニュー* (![サイトメニュー](../../../images/icon-product-menu.png))を開き、_デザイン_ &rarr; _フラグメント_に移動します。 セットがリストに表示されます。
+1. フラグメントセットが利用可能であることを確認します。 サイトメニュー (**![サイトメニュー](../../../images/icon-product-menu.png))を開き、***デザイン***&rarr;***フラグメント** に移動します。 セットがリストに表示されます。
 
 ```{note}
 インポートされたフラグメントに無効なルールがある場合、自動的にドラフトとして保存される。
@@ -116,7 +116,7 @@ Liferay DXP 7.4+では、フラグメントコレクションはLiferay UIでは
    docker cp a2f8-fragments.zip $(docker ps -lq):/opt/liferay/deploy
    ```
 
-1. 新しいフラグメントを確認します。 サイトメニュー(![サイトメニュー](../../../images/icon-product-menu.png))を開き、_デザイン_ &rarr; _フラグメント_に移動し、_A2F8セット_をクリックします。 A2F8ジャンボトロンフラグメントが含まれているはずです。
+1. 新しいフラグメントを確認します。 サイトメニュー(![サイトメニュー](../../../images/icon-product-menu.png))を開き、 **デザイン** &rarr; **フラグメント** に移動し、 **A2F8セット** をクリックします。 A2F8ジャンボトロンフラグメントが含まれているはずです。
 
    ![The new fragment is included in the auto-deployed Set.](./auto-deploying-fragments/images/02.png)
 

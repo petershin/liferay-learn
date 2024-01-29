@@ -57,7 +57,7 @@
 
 ## JSPファイルを調べる
 
-`<liferay-theme:defineObjects>`タグは、Liferay`User`オブジェクトにアクセスするためにJSPに含まれています。 多くのLiferayオブジェクトと同様に、`User`オブジェクトは`ExpandoBridge`サービスを継承しており、カスタムフィールドの値を作成(つまり`addAttribute()`)、設定(つまり`setAttribute()`)、取得(つまり`getAttribute()`)する方法が含まれています。 すべてのインターフェースのメソッドを見るには、 [ExpandoBridge javadocs](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/expando/kernel/model/ExpandoBridge.html) をご覧ください。
+`<liferay-theme:defineObjects>`タグは、Liferay`User`オブジェクトにアクセスするためにJSPに含まれています。 多くのLiferayオブジェクトと同様に、`User`オブジェクトは`ExpandoBridge`サービスを継承しており、カスタムフィールドの値を作成(つまり`addAttribute()`)、設定(つまり`setAttribute()`)、取得(つまり`getAttribute()`)する方法が含まれています。 すべてのインターフェースのメソッドを見るには、 [ExpandoBridge javadocs](https://resources.learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/expando/kernel/model/ExpandoBridge.html) をご覧ください。
 
 ```{literalinclude} ./accessing-custom-fields-with-expando/resources/liferay-f5a3.zip/f5a3-web/src/main/resources/META-INF/resources/view.jsp
 :language: jsp

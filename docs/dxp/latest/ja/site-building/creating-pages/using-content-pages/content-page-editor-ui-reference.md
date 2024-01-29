@@ -70,11 +70,11 @@
 - [フラグメントとウィジェット](../../../images/icon-plus.png) - [フラグメントとウィジェット](#fragments-and-widgets)
 
 - ![Browser](../../../images/icon-hierarchy.png)
-- [ブラウザ](#browser) (以前は**Selection**)
+- [ブラウザ](#browser) (以前は **Selection**)
 
 - ![ページデザインオプション](../../../images/icon-format.png) - [ページデザインオプション](#page-design-options)
 
-- ![ページコンテンツ](../../../images/icon-paperclip.png) - [ページコンテンツ](#page-content) (以前は**Contents**)
+- ![ページコンテンツ](../../../images/icon-paperclip.png) - [ページコンテンツ](#page-content) (以前は **Contents**)
 
 - ![Comments](../../../images/icon-message.png)
 - [コメント](#comments)

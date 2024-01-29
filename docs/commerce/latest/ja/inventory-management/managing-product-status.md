@@ -27,10 +27,10 @@
    ```
 1. ［**公開**］ をクリックします。
 
-一度有効期限に達した商品は、Liferayの次のチェック間隔まで有効なままです。 デフォルトでは15分間隔ですが、システム設定で設定することができます。 グローバルメニュー](../images/icon-applications-menu.png)を開き、[コントロールパネル] &rarr; **システム設定** に移動します。 そこで、 **カタログ** &rarr; **製品** に移動します。 チェック間隔 **の値を変更し、***保存** をクリックします。
+一度有効期限に達した商品は、Liferayの次のチェック間隔まで有効なままです。 デフォルトでは15分間隔ですが、システム設定で設定することができます。 ![グローバルメニュー](../images/icon-applications-menu.png)を開き、[コントロールパネル] &rarr; **システム設定** に移動します。 そこで、 **カタログ** &rarr; **製品** に移動します。 チェック間隔 **の値を変更し、** **保存** をクリックします。
 
 ```{warning}
-この機能を無効にする必要がある場合は、 [ブラックリスト](https://learn.liferay.com/web/guest/w/dxp/system-administration/installing-and-managing-apps/managing-apps/blacklisting-osgi-components.md) コンポーネント。 インターバルにゼロや負の数を入力しないでください。
+この機能を無効にする必要がある場合は、 [OSGiコンポーネントのブラックリスト登録](https://learn.liferay.com/web/guest/w/dxp/system-administration/installing-and-managing-apps/managing-apps/blacklisting-osgi-components.md) コンポーネント。 インターバルにゼロや負の数を入力しないでください。
 ```
 
 有効期限を過ぎると、その商品のSKUはストアのカタログに表示されなくなり、購入することができなくなります。 個々のSKUに代替品と一緒に有効期限を設定する方法については、 [代替製品](../pricing/promoting-products/replacement-products.md) をご覧ください。
@@ -45,7 +45,7 @@
 
 手動で商品を未公開にするには、次の手順に従います。
 
-1. グローバルメニュー (**![グローバルメニュー](../images/icon-applications-menu.png))を開き、***Commerce***&rarr;***Products** に移動します。
+1. **グローバルメニュー** (![グローバルメニュー](../images/icon-applications-menu.png))を開き、 **Commerce**&rarr; **Products** に移動します。
 
 1. 商品をクリックします。
 
@@ -81,7 +81,7 @@
 
 1. ［**公開**］ をクリックします。
 
-変更後、デフォルトのチェック間隔が15分であるため、カタログからの削除に時間がかかる場合があります。 これを変更するには、 **グローバルメニュー**( [グローバルメニュー](../images/icon-applications-menu.png) )を開き、 **コントロールパネル** &rarr; **システム設定** に移動します。 そこで、 **カタログ** &rarr; **製品** にアクセスしてください。 チェック間隔 **の値を変更し、***保存** をクリックします。
+変更後、デフォルトのチェック間隔が15分であるため、カタログからの削除に時間がかかる場合があります。 これを変更するには、 **グローバルメニュー**( [グローバルメニュー](../images/icon-applications-menu.png) )を開き、 **コントロールパネル** &rarr; **システム設定** に移動します。 そこで、 **カタログ** &rarr; **製品** にアクセスしてください。 チェック間隔 **の値を変更し、**保存** をクリックします。
 
 ![The product has a status of Expired after passing the expiration date.](./managing-product-status/images/06.png)
 
@@ -93,7 +93,7 @@
 
 1. 商品をクリックします。
 
-1. 下書きとして保存*をクリックする。
+1. **下書きとして保存**をクリックする。
 
 ドラフト状態にした後は、商品の検索やストアフロントでの表示はできません。
 

@@ -30,7 +30,7 @@ Liferayには、コンテンツページにオブジェクトフォームを構�
 
 1. (オプション）フラグメントを使ってレイアウトをデザインする。 詳しくは [Building Responsive Layouts with Fragments](../../site-building/optimizing-sites/building-a-responsive-site/building-responsive-layouts-with-the-grid-fragment.md) を参照してください。
 
-1. *フォームコンテナ*フラグメントをページに追加し、オブジェクトにマッピングする。
+1. **フォームコンテナ** フラグメントをページに追加し、オブジェクトにマッピングする。
 
    コンテナは、すべてのオブジェクトフィールドに対して、送信ボタンとフラグメントを自動的に生成します。 アルファベット順に並んでいる。 必須項目には適宜マークが付きます。
 

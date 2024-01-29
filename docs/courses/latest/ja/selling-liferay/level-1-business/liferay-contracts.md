@@ -18,8 +18,8 @@ visibility:
 最後に、非常に高いレベルで、契約アプローチにおけるEULA（エンドユーザーライセンス契約）の役割を取り上げている。
 
 ```{note}
-* 本モジュールのライブワークショップの [録画](https://learn.liferay.com/web/guest/d/sa1-7-contracts) をご覧ください。
-* 上記ワークショップで使用されたプレゼンテーション資料はこちら [PDF](https://learn.liferay.com/documents/d/guest/sa1-7-contracts-pdf) からダウンロードしてください。
+* 本モジュールのライブワークショップの [録画](https://learn.liferay.com/ja/c/portal/login) をご覧ください。
+* 上記ワークショップで使用されたプレゼンテーション資料はこちら [PDF](https://learn.liferay.com/ja/c/portal/login) からダウンロードしてください。
 ```
 
 ## ライフレイ・エンタープライズサービス契約

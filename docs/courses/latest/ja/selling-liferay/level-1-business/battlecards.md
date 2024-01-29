@@ -27,9 +27,9 @@ Liferay [が直面する主な競合](../level-0/main-competitors-faced-by-lifer
 さらに、ライバルに関する追加情報を持っている人なら誰でも、バトルカードをさらに充実させるために、その情報を提供することができる。 重要な情報が不足している場合は、フィードバックをお願いします。
 
 ```{note}
-* 本モジュールのライブワークショップの[録画](https://learn.liferay.com/web/guest/d/l0-2a-liferay-offering) をご覧ください。
-* 上記ワークショップで使用されたプレゼンテーション資料はこちら [PDF](https://learn.liferay.com/documents/d/guest/l0-2a-liferay-offering-pdf)からダウンロードしてください。
-* Liferay従業員は、[こちらのバトルカード](https://sales.liferay.com/group/library/competitive-intel)をご覧ください。
+* 本モジュールのライブワークショップの [録画](https://learn.liferay.com/ja/c/portal/login) をご覧ください。
+* 上記ワークショップで使用されたプレゼンテーション資料はこちら [PDF](https://learn.liferay.com/ja/c/portal/login) からダウンロードしてください。
+* Liferay従業員は、 [こちらのバトルカード](https://sales.liferay.com/group/library/competitive-intel) をご覧ください。
 <!-- * Liferayパートナーは、こちらの[バトルカード](https://partner.liferay.com/marketing/marketing-resources/research-analysis/competitive-analysis)をご覧ください。 -->
 ```
 

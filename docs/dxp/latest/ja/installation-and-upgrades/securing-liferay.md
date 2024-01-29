@@ -61,12 +61,12 @@ Liferay Web Services は、セキュリティと認可に対して多層的で�
 
 追加のセキュリティ機能を細かく調整したり、無効にしたりする方法はたくさんあります。
 
-* Liferay PortalのHTTPS [Webサーバー](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Web%20Server) アドレスを設定する。
-* ユーザーを [リダイレクト](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Redirect) できる許可されているサーバーのリストを構成する。
-* 任意のページからアクセスできる [ポートレット](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Portlet) のリストを構成する。
+* Liferay PortalのHTTPS [Webサーバー](https://resources.learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) アドレスを設定する。
+* ユーザーを [リダイレクト](https://resources.learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) できる許可されているサーバーのリストを構成する。
+* 任意のページからアクセスできる [ポートレット](https://resources.learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) のリストを構成する。
 * アップロードおよびダウンロードを許可するファイルタイプを設定する。
 
-これらの機能は、 [ポータルプロパティ](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) を使用して構成できます。
+これらの機能は、 [ポータルプロパティ](https://resources.learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) を使用して構成できます。
 
 ```{warning}
 Liferayポータルの理念は「デフォルトで安全」です。 セキュリティ固有のデフォルトまたはホワイトリストを変更する場合は、十分に注意してください。 このようなアクションは、セキュリティの設定ミスや安全でないデプロイにつながる可能性があります。

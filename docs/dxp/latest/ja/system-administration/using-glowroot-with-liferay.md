@@ -83,7 +83,7 @@ module.framework.properties.org.osgi.framework.bootdelegation=\
   weblogic.jndi.*
 ```
 
-デプロイ後、Glowrootの_Configuration_ &rarr; _Plugins_に移動し、プラグインを確認します。
+デプロイ後、Glowrootの **Configuration** &rarr; **Plugins** に移動し、プラグインを確認します。
 
 ## Glowroot によるアップグレードの監視
 

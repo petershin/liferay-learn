@@ -24,11 +24,11 @@ toc:
 
 ## データ・エンティティの特定
 
-アプリケーションのデータ・エンティティを表す [オブジェクト定義](https://learn.liferay.com/en/w/dxp/building-applications/objects) を作成できます。 保険金請求、サポートチケット、商材など、さまざまなものがある。 カスタムオブジェクトを公開すると、Liferayはデータエントリを格納するためのデータベーステーブルを作成します。 また、CRUD操作を実行するためのヘッドレスAPIを生成し、基本的なフロントエンドを提供する。 Liferayオブジェクトを使用することで、堅牢かつ柔軟なソリューション基盤を構築し、組織固有のニーズをサポートすることができます。
+アプリケーションのデータ・エンティティを表す [オブジェクト](https://learn.liferay.com/ja/w/dxp/building-applications/objects) を作成できます。 保険金請求、サポートチケット、商材など、さまざまなものがある。 カスタムオブジェクトを公開すると、Liferayはデータエントリを格納するためのデータベーステーブルを作成します。 また、CRUD操作を実行するためのヘッドレスAPIを生成し、基本的なフロントエンドを提供する。 Liferayオブジェクトを使用することで、堅牢かつ柔軟なソリューション基盤を構築し、組織固有のニーズをサポートすることができます。
 
 ## 属性の追加
 
-属性は、テキストや数値など、アプリケーションの特定のタイプの情報を格納するデータベースのカラムを表します。 データモデルの属性を定義するには、 [フィールド](https://learn.liferay.com/en/w/dxp/building-applications/objects/creating-and-managing-objects/fields) をユーザー入力を受け取るためのオブジェクト定義に追加します。 さらに、 [ピックリスト](https://learn.liferay.com/en/w/dxp/building-applications/objects/picklists) を作成し、オブジェクトと共に使用することで、ユーザーに定義済みの単一選択フィールドと複数選択フィールドを提供することができます。
+属性は、テキストや数値など、アプリケーションの特定のタイプの情報を格納するデータベースのカラムを表します。 データモデルの属性を定義するには、 [項目](https://learn.liferay.com/ja/w/dxp/building-applications/objects/creating-and-managing-objects/fields) をユーザー入力を受け取るためのオブジェクト定義に追加します。 さらに、 [候補リスト](https://learn.liferay.com/ja/w/dxp/building-applications/objects/picklists) を作成し、オブジェクトと共に使用することで、ユーザーに定義済みの単一選択フィールドと複数選択フィールドを提供することができます。
 
 ## 人間関係の定義
 

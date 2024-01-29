@@ -36,15 +36,15 @@ visibility:
 
 Liferay DXPベースのデジタルコマースサイトについて見込み顧客に話す際には、特に次の点に注意してください。
 
-* [コマース](https://learn.liferay.com/w/commerce/index)
-* [Headless API & マルチチャネル](https://learn.liferay.com/w/dxp/headless-delivery)
-* [ローコード／ノーコードによるアプリケーション構築](https://learn.liferay.com/w/dxp/building-applications/objects)
-* [データモデリング & プロセスオートメーション](https://learn.liferay.com/w/dxp/process-automation)
-* [コンテンツ & アセットの管理 ](https://learn.liferay.com/w/dxp/content-authoring-and-management)
-* [アナリティクス](https://learn.liferay.com/w/analytics-cloud/index) & [最適化](https://learn.liferay.com/w/dxp/site-building/optimizing-sites)
-* [セグメンテーション & パーソナライゼーション](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience)
-* [検索](https://learn.liferay.com/w/dxp/using-search) & [ナビゲーション](https://learn.liferay.com/w/dxp/site-building/site-navigation)
+* [Commerce](https://learn.liferay.com/w/commerce/index)
+* [ヘッドレスデリバリー](https://learn.liferay.com/w/dxp/headless-delivery)
+* [オブジェクト](https://learn.liferay.com/w/dxp/building-applications/objects)
+* [プロセスの自動化](https://learn.liferay.com/w/dxp/process-automation)
+* [コンテンツのオーサリングと管理](https://learn.liferay.com/w/dxp/content-authoring-and-management)
+* [Analytics Cloud](https://learn.liferay.com/w/analytics-cloud/index) & [サイトの最適化](https://learn.liferay.com/w/dxp/site-building/optimizing-sites)
+* [サイトエクスペリエンスのパーソナライズ](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience)
+* [検索の利用](https://learn.liferay.com/w/dxp/using-search) & [サイトナビゲーション](https://learn.liferay.com/w/dxp/site-building/site-navigation)
 * 統合 & 相互運用性
-* [デザインシステム & エクスペリエンス管理](https://learn.liferay.com/w/dxp/site-building)
+* [サイトの構築](https://learn.liferay.com/w/dxp/site-building)
 
 次：[外部Webサイト](./external-websites.md) 

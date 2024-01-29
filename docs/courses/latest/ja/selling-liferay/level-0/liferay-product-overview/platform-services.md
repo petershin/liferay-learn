@@ -16,12 +16,12 @@ Liferayのプラットフォームサービスでは、管理者が、Liferay実
 
 ## 仮想インスタンス、サイト、マルチテナンシー
 
-* [仮想インスタンスについて](https://learn.liferay.com/w/dxp/system-administration/configuring-liferay/virtual-instances/understanding-virtual-instances)
+* [仮想インスタンスを理解する](https://learn.liferay.com/w/dxp/system-administration/configuring-liferay/virtual-instances/understanding-virtual-instances)
 * [サイト設定](https://learn.liferay.com/w/dxp/site-building/site-settings)
 
 ## 国際化とローカライズ
 
 * [ページとコンテンツの翻訳](https://learn.liferay.com/w/dxp/content-authoring-and-management/translating-pages-and-content)
-* [初期インスタンスのローカライズ](https://learn.liferay.com/w/dxp/installation-and-upgrades/setting-up-liferay/initial-instance-localization)
+* [初期インスタンスのローカリゼーション](https://learn.liferay.com/w/dxp/installation-and-upgrades/setting-up-liferay/initial-instance-localization)
 
 次：[クラウドとインフラストラクチャー](./cloud-and-infrastructure.md)

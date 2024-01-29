@@ -237,9 +237,9 @@ DXPクラスターノードは、次のURLで入手できます。
 
 ### コンテンツを検索エンジンにインデックス付けする
 
-1._コントロールパネル_&rarr;_設定_&rarr;_検索_に移動します。
+1. **コントロールパネル** &rarr; **設定** &rarr; **検索** に移動します。
 
-1. Index Actionsタブで、_Reindex all search indexes_と_Reindex all spell check indexes_をクリックします。
+1. Index Actionsタブで、 **Reindex all search indexes** と **Reindex all spell check indexes** をクリックします。
 
 コンテンツは検索エンジンにインデックス付けされます。 詳しくは [検索の概要](../../../using-search/getting-started/search-overview.md) を参照。
 
@@ -247,7 +247,7 @@ DXPクラスターノードは、次のURLで入手できます。
 
 ノード間のデータ同期をテストします。
 
-1. クラスタノードの1つにコンテンツを追加します。 例えば、_New Stuff_という新しいウィジェットページを追加し、そこにLanguage Selectorウィジェットを追加します。
+1. クラスタノードの1つにコンテンツを追加します。 例えば、 **New Stuff** という新しいウィジェットページを追加し、そこにLanguage Selectorウィジェットを追加します。
 
 1. 他のクラスターノードのUIを更新します。
 
@@ -280,7 +280,7 @@ DXPサーバーコンテナの例では、これらの設定を使用します�
 | LIFERAY_WEB_PERIOD_SERVER_PERIOD_DISPLAY_PERIOD_NODE=\\<br>true                                                                                          | サーバーアドレスとウェブサーバーポートを表示します         |
 | LIFERAY_DL_PERIOD_STORE_PERIOD_IMPL=\\<br>com.liferay.portal.store.db.DBStore                                                                             | ファイルストア（ドキュメントライブラリストア）クラス        |
 
-詳細については、Env/ [Portal Property](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) 定義を参照のこと。
+詳細については、Env/ [Portal Property](https://resources.learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) 定義を参照のこと。
 
 ## 関連トピック
 

@@ -1,6 +1,6 @@
 # Liferayオブジェクトへの移行
 
-ダイナミック・データ・リストは非推奨であり、2024年末までに削除される予定である。 データの損失を防ぎ、同じ機能を実現するために、構造やデータをLiferay Objectsに移行してください。 [Objects](../../../building-applications/objects.md) は、コードを書いたりモジュールをデプロイすることなく、Liferay UIでアプリケーションを構築するためのローコード機能を提供します。 各アプリケーションはLiferayのコアフレームワーク（ヘッドレス、パーミッション、ワークフローなど）と完全に統合されており、UIまたは専用のREST APIからアクセスしてデータエントリーを作成・管理することができます。
+ダイナミック・データ・リストは非推奨であり、2024年末までに削除される予定である。 データの損失を防ぎ、同じ機能を実現するために、構造やデータをLiferay Objectsに移行してください。 [オブジェクト](../../../building-applications/objects.md) は、コードを書いたりモジュールをデプロイすることなく、Liferay UIでアプリケーションを構築するためのローコード機能を提供します。 各アプリケーションはLiferayのコアフレームワーク（ヘッドレス、パーミッション、ワークフローなど）と完全に統合されており、UIまたは専用のREST APIからアクセスしてデータエントリーを作成・管理することができます。
 
 ダイナミック・データ・リストを扱うには、データ定義を作成し、それを使ってデータ項目(`DDLRecords`)のリストを格納するフォーム(`DDLRecordSet`)を作成する。 オブジェクトの使用には、オブジェクト定義の作成、関連付け、公開が含まれます。 パブリッシュされると、アプリケーションにアクセスしてオブジェクト・エントリーを作成することができる。 DDLと比較して、Objectsはデータ構造をモデリングするためのはるかに堅牢で統合されたエクスペリエンスを提供し、カスタムビジネスロジックの実装やユーザーインターフェイスの設計のための追加ツールも含まれています。
 
@@ -10,28 +10,28 @@
 
 1. データリストのレコードをXMLまたはCSVファイルとしてエクスポートし、JSONファイルに変換します。
 
-1. [Data Migration Center](../../../headless-delivery/consuming-apis/data-migration-center.md) を使用して、JSON ファイルをオブジェクト定義にインポートします。
+1. [バッチテンプレートデザイナー](../../../headless-delivery/consuming-apis/data-migration-center.md) を使用して、JSON ファイルをオブジェクト定義にインポートします。
 
 !!! note
     Data Migration Center を使用するには、COMMERCE-8087 [beta feature flag](../../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags) を有効にする必要があります。
 
 ## ダイナミック・データ・リストのオブジェクト定義の作成
 
-1. _グローバルメニュー_ (![グローバルメニュー](../../../images/icon-applications-menu.png))を開き、*［コントロールパネル］*タブで*［オブジェクト］*をクリックします。
+1. **グローバルメニュー**(![グローバルメニュー](../../../images/icon-applications-menu.png))を開き、 ［**コントロールパネル**］ タブで ［**オブジェクト**］ をクリックします。
 
-1. 目的のオブジェクトフォルダに移動し、_追加_ボタン(![追加ボタン](../../../images/icon-add.png))をクリックします。
+1. 目的のオブジェクトフォルダに移動し、 **追加** ボタン(![追加ボタン](../../../images/icon-add.png))をクリックします。
 
 1. ドラフトにこれらの詳細を提供する。
 
-   **ラベルObjects admin およびサポートされているアプリケーションコンテキスト（ワークフロー、表示ページテンプレート、フォームなど）でオブジェクトを識別します。
+   **ラベル**: Objects admin およびサポートされているアプリケーションコンテキスト（ワークフロー、表示ページテンプレート、フォームなど）でオブジェクトを識別します。
 
-   **Plural Label**：UIにおけるオブジェクト・アプリケーションの表示名を決定します。
+   **Plural Label** ：UIにおけるオブジェクト・アプリケーションの表示名を決定します。
 
-   **オブジェクト名**：オブジェクトの `definition.name` を決定し、公開後に変更することはできません。
+   **オブジェクト名** ：オブジェクトの `definition.name` を決定し、公開後に変更することはできません。
 
    ![Enter a Label, Plural Label, and Name for the object draft.](./migrating-to-liferay-objects/images/01.png)
 
-1. ［_保存_］をクリックします。
+1. ［**保存**］をクリックします。
 
 一度作成すると、オブジェクトを編集して、そのスコープやプラットフォーム統合などを設定することができます。 詳しくは [Editing Object Drafts](../../../building-applications/objects/creating-and-managing-objects/creating-objects.md#editing-object-drafts) を参照してください。
 
@@ -39,7 +39,7 @@
 
 ### ピックリストの追加
 
-1. _グローバルメニュー_ (![グローバルメニュー](../../../images/icon-applications-menu.png))を開き、*［コントロールパネル］_タブで_［選択リスト］*をクリックします。
+1. **グローバルメニュー**(![グローバルメニュー](../../../images/icon-applications-menu.png))を開き、 ［**コントロールパネル**］タブで［**選択リスト**］ をクリックします。
 
 1. 追加* (![追加ボタン](../../../images/icon-add.png))をクリックします。
 
@@ -49,13 +49,13 @@
 
 1. ピックリストを編集する。
 
-1. Items]で、_Add_ (![Add Button](../../../images/icon-add.png)) をクリックします。
+1. [Items]で、 **Add**(![Add Button](../../../images/icon-add.png)) をクリックします。
 
 1. アイテムの名前とキーを入力します。
 
-   **名前**：アイテムの表示名を決定し、作成後にローカライズすることができます。
+   **名前** ：アイテムの表示名を決定し、作成後にローカライズすることができます。
 
-   **キーオブジェクトフィールドに格納されている項目の値を決定し、キャメルケースを使用する。
+   **キー** : オブジェクトフィールドに格納されている項目の値を決定し、キャメルケースを使用する。
 
    !!! important
    項目のキー値は、データ・リストの Select または Radio フィールドに設定されたオプション名と一致しなければならない。 SelectフィールドとRadioフィールドがキャメルケースを使用していない場合、オプション名をピックリストのアイテムキーと一致するように更新します。
@@ -74,15 +74,15 @@
 
 1. オブジェクト定義の編集を始める。
 
-1. *Fields*タブに移動し、_Add_ (![Add Button](../../../images/icon-add.png)) をクリックします。
+1. **Fields** タブに移動し、 **Add**(![Add Button](../../../images/icon-add.png)) をクリックします。
 
-1. ラベル_とフィールド名_を入力します。
+1. ラベル **とフィールド名** を入力します。
 
-   **ラベル**：この値はObjects UIでフィールドを識別し、フィールド作成後にローカライズすることができます。
+   **ラベル** ：この値はObjects UIでフィールドを識別し、フィールド作成後にローカライズすることができます。
 
-   **フィールド名**：この値はバックエンドでのフィールド名を決定し、キャメルケースを使用します。 フィールドが公開されると、この値は変更できません。
+   **フィールド名** ：この値はバックエンドでのフィールド名を決定し、キャメルケースを使用します。 フィールドが公開されると、この値は変更できません。
 
-1. フィールド_タイプ_を選択します。 どのフィールド・タイプが DDL フィールドと互換性があるかについては、 [Field Compatibility Reference](#field-compatibility-reference) を参照してください。
+1. フィールド **タイプ** を選択します。 どのフィールド・タイプが DDL フィールドと互換性があるかについては、 [Field Compatibility Reference](#field-compatibility-reference) を参照してください。
 
 1. フィールドが必須かどうかを判断する。
 
@@ -98,7 +98,7 @@
 
 ### オブジェクト定義の公開
 
-オブジェクト定義を構成し、データ・フィールドを追加したら、オブジェクトをパブリッシュして使用できるようにします。 これを行うには、オブジェクトの_Details_タブに行き、_Publish_をクリックします。 パブリッシュされると、オブジェクトのフォームやディスプレイをデザインできます。 管理インターフェイスを設計するには、 [レイアウト](../../../building-applications/objects/creating-and-managing-objects/layouts.md) および [ビュー](../../../building-applications/objects/creating-and-managing-objects/views.md) を参照。 オブジェクトとinfoフレームワークやページビルダーの機能の統合については、 [オブジェクトエントリーの表示](../../../building-applications/objects/displaying-object-entries.md) および [フォームを構築するためのフラグメントの使用](../../../building-applications/objects/using-fragments-to-build-forms.md) を参照してください。
+オブジェクト定義を構成し、データ・フィールドを追加したら、オブジェクトをパブリッシュして使用できるようにします。 これを行うには、オブジェクトの **Details** タブに行き、 **Publish** をクリックします。 パブリッシュされると、オブジェクトのフォームやディスプレイをデザインできます。 管理インターフェイスを設計するには、 [レイアウト](../../../building-applications/objects/creating-and-managing-objects/layouts.md) および [ビュー](../../../building-applications/objects/creating-and-managing-objects/views.md) を参照。 オブジェクトとinfoフレームワークやページビルダーの機能の統合については、 [オブジェクトエントリーの表示](../../../building-applications/objects/displaying-object-entries.md) および [フォームを構築するためのフラグメントの使用](../../../building-applications/objects/using-fragments-to-build-forms.md) を参照してください。
 
 次に、データ・リストのレコードをエクスポートし、カスタム・オブジェクト定義にインポートします。
 
@@ -106,12 +106,12 @@
 
 1. ![サイトメニュー](../../../images/icon-product-menu.png))を開き、[コンテンツとデータ]を展開し、[ダイナミック・データ・リスト]をクリックします。
 
-1. 必要なデータリストの_Actions_ボタン(![Actions Button](../../../images/icon-actions.png)) をクリックし、_Export_を選択します。
+1. 必要なデータリストの **Actions** ボタン(![Actions Button](../../../images/icon-actions.png)) をクリックし、 **Export** を選択します。
 
    !!! important
    入れ子のフィールド値はエクスポートされません。
 
-1. CSV_または_XML*を選択し、_OK_をクリックします。
+1. **CSV**または **XML**を選択し、**OK** をクリックします。
 
    ![Select a file extension type and click OK.](./migrating-to-liferay-objects/images/07.png)
 
@@ -121,27 +121,27 @@ JSONファイルの準備ができたら、カスタム・オブジェクト定�
 
 ## DDLエントリーのインポート
 
-1. グローバルメニュー(![グローバルメニュー](../../../images/icon-applications-menu.png))を開き、_アプリケーション_タブに移動し、_データ移行センター_をクリックします。
+1. グローバルメニュー(![グローバルメニュー](../../../images/icon-applications-menu.png))を開き、 **アプリケーション** タブに移動し、 **データ移行センター** をクリックします。
 
-1. Add* (![Add Button](../../../images/icon-add.png)) をクリックし、_Import File_ を選択します。
+1. **Add** (![Add Button](../../../images/icon-add.png)) をクリックし、**Import File** を選択します。
 
-1. インポートの _名前_ を入力します。
+1. インポートの **名前** を入力します。
 
-1. Entity Type（エンティティ・タイプ）では、_カスタム・オブジェクト_を選択します。
+1. Entity Type（エンティティ・タイプ）では、 **カスタム・オブジェクト** を選択します。
 
    ![Enter a name and select an Entity Type.](./migrating-to-liferay-objects/images/08.png)
 
-1. データリストのレコードを含む_JSONファイル_を選択します。
+1. データリストのレコードを含む **JSONファイル** を選択します。
 
    ![Select the JSON file with your data list records.](./migrating-to-liferay-objects/images/09.png)
 
-1. *ソース・ファイル・フィールド*をオブジェクト定義フィールドにマッピングする。
+1. **ソース・ファイル・フィールド** をオブジェクト定義フィールドにマッピングする。
 
    ![Map the source file fields to object definition fields.](./migrating-to-liferay-objects/images/10.png)
 
-1. ［_Next_］をクリックします。
+1. ［**Next**］をクリックします。
 
-1. レコードのフィールドマッピングを確認し、_Start Import_をクリックします。
+1. レコードのフィールドマッピングを確認し、 **Start Import** をクリックします。
 
    ![Review the mapping and click Start Import.](./migrating-to-liferay-objects/images/11.png)
 

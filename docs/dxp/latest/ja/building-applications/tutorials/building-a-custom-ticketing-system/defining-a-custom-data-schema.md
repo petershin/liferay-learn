@@ -14,7 +14,7 @@
 ./gradlew :client-extensions:liferay-ticket-batch-list-type-definition:deploy
 ```
 
-**コントロールパネル**&rarr;**Picklists**に移動します。 5つの新しいピックリストが作成されたことを確認してください。
+**コントロールパネル** &rarr; **Picklists** に移動します。 5つの新しいピックリストが作成されたことを確認してください。
 
 ![Five new picklists have been created.](./defining-a-custom-data-schema/images/01.png)
 
@@ -103,6 +103,6 @@ Liferay の **Control Panel** &rarr; **Tickets** に移動します。 新しい
 
 ## 関連コンセプト
 
-* [オブジェクトの作成と管理](../../../building-applications/objects/creating-and-managing-objects.md) 
-* [ピックリストの作成](../../../building-applications/objects/picklists/creating-picklists.md) 
-* [バッチクライアント拡張](../../../building-applications/client-extensions/batch-client-extensions.md) 
+* [オブジェクトの作成と管理](../../../building-applications/objects/creating-and-managing-objects.md)
+* [ピックリストの作成](../../../building-applications/objects/picklists/creating-picklists.md)
+* [バッチクライアント拡張](../../../building-applications/client-extensions/batch-client-extensions.md)

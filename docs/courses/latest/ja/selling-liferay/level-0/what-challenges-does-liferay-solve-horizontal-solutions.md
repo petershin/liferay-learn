@@ -33,7 +33,7 @@ visibility:
 
 ```{note}
 * 本モジュールのライブワークショップの [録画](https://learn.liferay.com/web/guest/d/l0-5a-what-challenges-do-we-solve-overview) をご覧ください。
-* 上記ワークショップで使用されたプレゼンテーション資料はこちら [PDF](https://learn.liferay.com/documents/d/guest/l0-5a-what-challenges-do-we-solve-overview-pdf) からダウンロードしてください。
+* 上記ワークショップで使用されたプレゼンテーション資料はこちら [PDF](https://learn.liferay.com/ja/c/portal/login) からダウンロードしてください。
 ```
 
 ## ソリューションの定義

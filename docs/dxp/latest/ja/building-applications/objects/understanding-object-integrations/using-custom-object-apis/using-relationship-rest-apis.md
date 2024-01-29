@@ -11,9 +11,9 @@
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-次に、 [](../../creating-and-managing-objects/creating-objects.md) 関連する3つのカスタム・オブジェクトを作成する：
+次に、関連する3つのカスタム・オブジェクトを[作成](../../creating-and-managing-objects/creating-objects.md)する：
 
-1. _グローバルメニュー_ (![グローバルメニュー](../../../../images/icon-applications-menu.png))を開き、*［コントロールパネル］*タブで*［オブジェクト］*をクリックします。
+1. **グローバルメニュー**(![グローバルメニュー](../../../../images/icon-applications-menu.png))を開き、 ［**コントロールパネル**］ タブで ［**オブジェクト**］ をクリックします。
 
 1. 3つのオブジェクトドラフトを作成します。
 
@@ -347,7 +347,7 @@ REST APIを使用して、オブジェクトのエントリーを追加し、そ
     }
     ```
 
-    `nestedFields`パラメータの詳細については、 [Using nestedFields to Query Related Entries](./using-nestedfields-to-query-related-entries.md) を参照のこと。
+    `nestedFields`パラメータの詳細については、 [nestedFields を使用した関連エントリーのクエリー](./using-nestedfields-to-query-related-entries.md) を参照のこと。
 
 ## コードを調べる
 

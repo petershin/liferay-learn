@@ -4,18 +4,18 @@
 
 通知テンプレートにより、Liferayサービスの自動化された電子メールやユーザー通知を設計できます。 各テンプレートは、送信者、受信者、メッセージの内容を特定します。 テンプレートをデザインする際に、サポートされているエンティティを検索し、そのデータをメールに動的に挿入するフィールド参照を追加できます。
 
-現在、通知テンプレートは [オブジェクトアクション](../../building-applications/objects/creating-and-managing-objects/actions/defining-object-actions.md) のみをサポートしています。 しかし、コマースチャネルには、チャネルイベントに対する通知テンプレート機能が組み込まれています。 詳しくは [ストアメール](https://learn.liferay.com/commerce/latest/en/store-management/sending-emails.html) をご覧ください。
+現在、通知テンプレートは [オブジェクトアクション](../../building-applications/objects/creating-and-managing-objects/actions/defining-object-actions.md) のみをサポートしています。 しかし、コマースチャネルには、チャネルイベントに対する通知テンプレート機能が組み込まれています。 詳しくは [メールを送信する](https://learn.liferay.com/commerce/latest/ja/store-management/sending-emails.html) をご覧ください。
 
 !!! important
     メール通知を使用するには、インスタンスに設定された [メールサーバー](../../installation-and-upgrades/setting-up-liferay/configuring-mail.md) が必要です。 一度構成されると、インスタンス・レベルで追加の [電子メール通知設定](../../system-administration/configuring-liferay/virtual-instances/email-settings.md) にアクセスできます。
 
-すぐに使える通知タイプがニーズに合わない場合は、クライアント拡張機能を使ってカスタム通知タイプを作成できます。 詳細は [Microservice Client Extensions](../../building-applications/client-extensions/microservice-client-extensions.md) を参照。
+すぐに使える通知タイプがニーズに合わない場合は、クライアント拡張機能を使ってカスタム通知タイプを作成できます。 詳細は [マイクロサービスのクライアント拡張](../../building-applications/client-extensions/microservice-client-extensions.md) を参照。
 
 ## メール通知テンプレートの追加
 
-1. グローバルメニュー](../../images/icon-applications-menu.png))を開き、[コントロールパネル](_Control Panel_)タブに移動し、[通知テンプレート](_Notification Templates_)をクリックします。
+1. **グローバル メニュー** (![グローバル メニュー](../../images/icon-applications-menu.png)) を開き、**Control Panel** タブに移動して、**Notification Templates** をクリックします。
 
-1. *追加* (![追加ボタン](../../images/icon-add.png))をクリックし、_Eメール_を選択します。
+1. **追加**(![追加ボタン](../../images/icon-add.png))をクリックし、 **Eメール** を選択します。
 
    ![Click the Add button and select Email.](./creating-notification-templates/images/01.png)
 
@@ -54,15 +54,15 @@
 
    ![Select attachment fields to include assets in email notifications.](./creating-notification-templates/images/06.png)
 
-1. ［_保存_］をクリックします。
+1. ［**保存**］をクリックします。
 
-作成後、オブジェクトアクションで通知テンプレートを使用できます。 詳しくは [Defining Object Actions](../../building-applications/objects/creating-and-managing-objects/actions/defining-object-actions.md) を参照してください。
+作成後、オブジェクトアクションで通知テンプレートを使用できます。 詳しくは [オブジェクトアクションの定義](../../building-applications/objects/creating-and-managing-objects/actions/defining-object-actions.md) を参照してください。
 
 ## ユーザー通知テンプレートの追加
 
-1. グローバルメニュー](../../images/icon-applications-menu.png))を開き、[コントロールパネル](_Control Panel_)タブに移動し、[通知テンプレート](_Notification Templates_)をクリックします。
+1. **グローバル メニュー** (![グローバル メニュー](../../images/icon-applications-menu.png)) を開き、**Control Panel** タブに移動して、**Notification Templates** をクリックします。
 
-1. *追加* (![ボタン追加](../../images/icon-add.png))をクリックし、_ユーザー通知_を選択します。
+1. **追加**(![ボタン追加](../../images/icon-add.png))をクリックし、 **ユーザー通知** を選択します。
 
    ![Click the Add Button and select User Notification.](./creating-notification-templates/images/07.png)
 
@@ -89,7 +89,7 @@
 
    ![Enter the notification's message in the Content section.](./creating-notification-templates/images/11.png)
 
-1. ［_保存_］をクリックします。
+1. ［**保存**］をクリックします。
 
 作成後、オブジェクトアクションで通知テンプレートを使用できます。 詳しくは [オブジェクト・アクションの定義](../../building-applications/objects/creating-and-managing-objects/actions/defining-object-actions.md) を参照してください。
 

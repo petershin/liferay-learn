@@ -11,7 +11,7 @@
 1. Java（JDK8またはJDK11）をインストールします。
 
     ```{note}
-    サポートされているJDK、データベース、環境については、 [互換性マトリックス](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) を確認してください。 推奨されるJVM設定については、 [JVM Configuration](../../../../installation-and-upgrades/reference/jvm-configuration.md) を参照のこと。
+    サポートされているJDK、データベース、環境については、 [互換性マトリックス](https://help.liferay.com/hc/ja/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) を確認してください。 推奨されるJVM設定については、 [JVM設定](../../../../installation-and-upgrades/reference/jvm-configuration.md) を参照のこと。
     ```
 
 1. サンプルワークスペースをダウンロードし、解凍します。
@@ -37,7 +37,7 @@ liferay-sample-theme-favicon:
     url: favicon.ico
 ```
 
-このクライアント拡張モジュールの ID は `liferay-sample-theme-favicon` で、追加するファビコンファイルの種類など、テーマのファビコンクライアント拡張モジュールの主要な設定を含みます。 利用可能なプロパティの詳細については、 [Theme Favicon YAML Configuration Reference](../theme-favicon-yaml-configuration-reference.md)。
+このクライアント拡張モジュールの ID は `liferay-sample-theme-favicon` で、追加するファビコンファイルの種類など、テーマのファビコンクライアント拡張モジュールの主要な設定を含みます。 利用可能なプロパティの詳細については、 [テーマファビコンYAML設定リファレンス](../theme-favicon-yaml-configuration-reference.md) 。
 
 また、`assemble` YAML ブロックも含まれます：
 
@@ -63,7 +63,7 @@ Liferayが起動したら、サンプルのワークスペースにあるクラ�
 これでクライアント拡張機能がビルドされ、Liferay の `deploy/` フォルダに zip がデプロイされます。
 
 ```{note}
-クライアント拡張を Liferay Experience Cloud にデプロイするには、Liferay Cloud [Command-Line Tool](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool) を使用して [`lcp deploy`](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool#deploying-to-your-liferay-cloud-environment) を実行します。
+クライアント拡張を Liferay Experience Cloud にデプロイするには、Liferay Cloud [コマンドラインツール](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool) を使用して [コマンドラインツール](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool#deploying-to-your-liferay-cloud-environment) を実行します。
 ```
 
 ```{tip}
@@ -82,13 +82,13 @@ STARTED liferay-sample-theme-favicon_1.0.0
 
 デプロイされたクライアント拡張を使用するために、Liferayのページを設定します。
 
-1. ページ上部の_Edit_(![編集アイコン](../../../../images/icon-edit-pencil.png))をクリックします。
+1. ページ上部の **Edit**(![編集アイコン](../../../../images/icon-edit-pencil.png))をクリックします。
 
-1. サイドバーで、ページデザインオプションメニュー（![ページデザインオプションアイコン](../../../../images/icon-format.png)）に移動し、メニュー上部の_configuration_（![設定アイコン](../../../../../images/icon-cog3.png)）をクリックします。
+1. サイドバーで、ページデザインオプションメニュー（![ページデザインオプションアイコン](../../../../images/icon-format.png)）に移動し、メニュー上部の **configuration**（![設定アイコン](../../../../images/icon-cog3.png)）をクリックします。
 
 1. ルック＆フィール」タブの「ファビコン」セクションで、「ファビコンの変更」をクリックします。
 
-1. _Client Extensions_をクリックし、新しくデプロイされたファビコン、_Sample Theme Favicon_を選択します。
+1. **Client Extensions** をクリックし、新しくデプロイされたファビコン、 **Sample Theme Favicon** を選択します。
 
    ![Select the Sample Theme Favicon client extension and click Save.](./using-a-theme-favicon-client-extension/images/01.gif)
 

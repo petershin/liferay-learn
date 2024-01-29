@@ -1,6 +1,6 @@
 # 承認ワークフローの追加
 
-`applicationState`フィールドを追加した後、Delectable Bonsaiはアプリケーションに加えられた変更をレビューし、承認するためのワークフローを実装したい。 現在、アプリケーションのすべての更新は、選択された状態に関係なく、自動的に承認される。 Delectable Bonsaiは`approved`と`denied`の状態に追加のビジネスロジックを関連付けるので、ワークフローは`applicationState`フィールドをチェックし、これらの値のいずれかが選択された場合、マネージャのレビューが必要です。 ここでは、Liferay [クライアントエクステンション](https://learn.liferay.com/web/guest/w/dxp/building-applications/client-extensions) を使って、このワークフロープロセスをデプロイし、セットアップします。
+`applicationState`フィールドを追加した後、Delectable Bonsaiはアプリケーションに加えられた変更をレビューし、承認するためのワークフローを実装したい。 現在、アプリケーションのすべての更新は、選択された状態に関係なく、自動的に承認される。 Delectable Bonsaiは`approved`と`denied`の状態に追加のビジネスロジックを関連付けるので、ワークフローは`applicationState`フィールドをチェックし、これらの値のいずれかが選択された場合、マネージャのレビューが必要です。 ここでは、Liferay [クライアント拡張](https://learn.liferay.com/web/guest/w/dxp/building-applications/client-extensions) を使って、このワークフロープロセスをデプロイし、セットアップします。
 
 ## クライアント拡張機能の展開
 
@@ -196,7 +196,7 @@
 
 ## 関連コンセプト
 
-* [ワークフローデザイナー](https://learn.liferay.com/web/guest/w/dxp/process-automation/workflow/designing-and-managing-workflows/workflow-designer/workflow-designer-overview) 
-* [オブジェクトのワークフローを有効にする](https://learn.liferay.com/web/guest/w/dxp/building-applications/objects/enabling-workflows-for-objects) 
-* [マイクロサービス・クライアント拡張](https://learn.liferay.com/web/guest/w/dxp/building-applications/client-extensions/microservice-client-extensions) 
-* [バッチクライアント拡張](https://learn.liferay.com/web/guest/w/dxp/building-applications/client-extensions/batch-client-extensions) 
+* [ワークフローデザイナーの概要](https://learn.liferay.com/web/guest/w/dxp/process-automation/workflow/designing-and-managing-workflows/workflow-designer/workflow-designer-overview)
+* [オブジェクトのワークフローを有効にする](https://learn.liferay.com/web/guest/w/dxp/building-applications/objects/enabling-workflows-for-objects)
+* [マイクロサービスのクライアント拡張](https://learn.liferay.com/web/guest/w/dxp/building-applications/client-extensions/microservice-client-extensions)
+* [バッチクライアント拡張機能](https://learn.liferay.com/web/guest/w/dxp/building-applications/client-extensions/batch-client-extensions)

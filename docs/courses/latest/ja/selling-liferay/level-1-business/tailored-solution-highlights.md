@@ -33,8 +33,8 @@ visibility:
 完成すれば、Liferayプラットフォームが提供するソリューションのいくつかの例を発見し、見込み客との無限の可能性を触発することができます。 買い手が今必要としているものだけでなく、将来のこともイメージできるようにするのだ。
 
 ```{note}
-* このモジュールのライブ・ワークショップの [録画](https://learn.liferay.com/web/guest/d/sa1-1-liferay-tailored-solution-highlights) をご覧ください。
-* ライブ・ワークショップで使用されたプレゼンテーションの [PDF](https://learn.liferay.com/documents/d/guest/sa1-1-liferay-tailored-solution-highlights-pdf) をダウンロードしてください。
+* このモジュールのライブ・ワークショップの [録画](https://learn.liferay.com/ja/c/portal/login) をご覧ください。
+* ライブ・ワークショップで使用されたプレゼンテーションの [PDF](https://learn.liferay.com/ja/c/portal/login) をダウンロードしてください。
 ```
 ## 水平ソリューション
 
@@ -53,21 +53,21 @@ Liferayの水平ポータルレガシーは、複数の業界にわたる多く�
 
 業界をリードするLiferayのデジタルエクスペリエンスプラットフォーム（DXP）には、すぐに利用できる機能が数多く含まれています。 最新リリースのLiferay DXP 7.4には、DXP、デジタルコマース、アナリティクスのコア機能が含まれています。 その高レベルの主要能力は以下の通りである。
 
-* [デザイン・システム＆エクスペリエンス・マネジメント](https://learn.liferay.com/w/dxp/building-applications/tooling/liferay-workspace) 
-* [コンテンツ＆資産管理](https://learn.liferay.com/w/dxp/content-authoring-and-management) 
-* [ローコード／ノーコード・アプリケーション構築](https://learn.liferay.com/w/dxp/building-applications/objects) 
-* [データモデリング＆プロセスオートメーション](https://learn.liferay.com/w/dxp/process-automation) 
-* [コマース](https://learn.liferay.com/w/commerce/index) 
-* [アナリティクス](https://learn.liferay.com/web/guest/w/analytics-cloud/index) & [最適化](https://learn.liferay.com/w/dxp/content-authoring-and-management/content-dashboard) 
-* [セグメンテーションとパーソナライゼーション](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience) 
-* [検索](https://learn.liferay.com/w/dxp/using-search) & [ナビゲーション](https://learn.liferay.com/w/dxp/site-building/site-navigation) 
-* [ヘッドレスAPIとマルチチャンネル](https://learn.liferay.com/w/dxp/headless-delivery) 
-* [コラボレーションと知識共有](https://learn.liferay.com/w/dxp/collaboration-and-social) 
-* [アイデンティティ管理とアクセス・コントロール](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay) 
+* [Liferay Workspace](https://learn.liferay.com/w/dxp/building-applications/tooling/liferay-workspace)
+* [コンテンツのオーサリングと管理](https://learn.liferay.com/w/dxp/content-authoring-and-management)
+* [オブジェクト](https://learn.liferay.com/w/dxp/building-applications/objects)
+* [プロセスの自動化](https://learn.liferay.com/w/dxp/process-automation)
+* [Commerce](https://learn.liferay.com/w/commerce/index) 
+* [Analytics Cloud](https://learn.liferay.com/web/guest/w/analytics-cloud/index) & [コンテンツダッシュボード](https://learn.liferay.com/w/dxp/content-authoring-and-management/content-dashboard)
+* [サイトエクスペリエンスのパーソナライズ](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience)
+* [検索の利用](https://learn.liferay.com/w/dxp/using-search) & [サイトナビゲーション](https://learn.liferay.com/w/dxp/site-building/site-navigation)
+* [ヘッドレスデリバリー](https://learn.liferay.com/w/dxp/headless-delivery)
+* [コラボレーションとソーシャルメディア](https://learn.liferay.com/w/dxp/collaboration-and-social) 
+* [Liferayの保護](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay)
 * 統合と相互運用性
-* [開発者ツール](https://learn.liferay.com/w/dxp/building-applications/tooling/liferay-workspace) 
+* [Liferay Workspace](https://learn.liferay.com/w/dxp/building-applications/tooling/liferay-workspace)
 * プラットフォームサービス
-* [クラウド＆インフラ](https://learn.liferay.com/w/dxp/building-applications/tooling/liferay-workspace) 
+* [Liferay Workspace](https://learn.liferay.com/w/dxp/building-applications/tooling/liferay-workspace)
 
 先に述べた水平方向のソリューションはすべて、これらの機能を活用している。 これらのOOTB機能により、LiferayはDXP分野における強力なプレーヤーとなっている。
 
@@ -82,7 +82,7 @@ Liferayの水平ポータルレガシーは、複数の業界にわたる多く�
 
 ひとつひとつ、各機能とその活用法を学んでいきます。
 
-まずは、 [カスタマーポータルから始めよう](./tailored-solution-highlights/customer-portals.md) .
+まずは、 [カスタマーポータルから始めよう](./tailored-solution-highlights/customer-portals.md).
 
 ::::{grid} 2
 :gutter: 3 3 3 3

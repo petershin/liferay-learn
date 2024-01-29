@@ -1,6 +1,6 @@
 # フラグメント設定タイプのリファレンス
 
-このリファレンスには、フラグメントに使用可能な構成タイプがリストされています。 フラグメントを設定可能にする方法については、 [Adding Configuration Options to Fragments](../../developing-page-fragments/adding-configuration-options-to-fragments.md) を参照してください。
+このリファレンスには、フラグメントに使用可能な構成タイプがリストされています。 フラグメントを設定可能にする方法については、 [フラグメントへの構成オプションの追加](../../developing-page-fragments/adding-configuration-options-to-fragments.md) を参照してください。
 
 以下は実装できる構成可能なフラグメントタイプです。
 
@@ -116,17 +116,15 @@ FreeMarkerのコンテキストに挿入される設定値は、JSONファイル
 
 * 色の16進コードをテキストボックスに入力します。
 
-* スタイルブックからの値*ボタンをクリックすると、現在使用している [スタイルブック](../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md) で定義されている、あらかじめ定義された色のメニューが開きます。 これにより、再度ボタンを押してリンクが解除されるまで、フィールドの値が選択されたトークンにリンクされます。 トークン値のリンクを解除すると、選択した色が再び同等の16進コード値に変換されます。
+* **スタイルブックからの値**ボタンをクリックすると、現在使用している [スタイルブック](../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md) で定義されている、あらかじめ定義された色のメニューが開きます。 これにより、再度ボタンを押してリンクが解除されるまで、フィールドの値が選択されたトークンにリンクされます。 トークン値のリンクを解除すると、選択した色が再び同等の16進コード値に変換されます。
 
-* カラーピッカーにデフォルト値が定義されていない場合は、_デフォルト_ドロップダウンメニューをクリックして、現在使用しているスタイルブックから任意の色を選択してください。 これは、値を選択する際の［スタイルブックの値］ボタンと同じように機能します。
+* カラーピッカーにデフォルト値が定義されていない場合は、 **デフォルト** ドロップダウンメニューをクリックして、現在使用しているスタイルブックから任意の色を選択してください。 これは、値を選択する際の［スタイルブックの値］ボタンと同じように機能します。
 
 ![The color picker configuration lets you directly input a color value, select one from a range, or select one from your style book.](./fragment-configuration-types-reference/images/04.png)
 
 !!! note
+    使用しているテーマにスタイルブック [に対する](../../../site-appearance/style-books/developer-guide/style-book-token-definitions.md) トークン定義がない場合、ページ上のカラーピッカー設定は [カラーパレット](#color-palette configuration) 設定に置き換えられます。
 
-```
-使用しているテーマにスタイルブック [に対する](../../../site-appearance/style-books/developer-guide/style-book-token-definitions.md) トークン定義がない場合、ページ上のカラーピッカー設定は [カラーパレット](#color-palette configuration) 設定に置き換えられます。
-```
 
 このJSON設定により、`headingColor`というカラーピッカーフィールドが作成される：
 
@@ -421,13 +419,11 @@ videoSelector`タイプは、 [external video](../../../creating-pages/page-frag
 
 {bdg-secondary}`liferay 7.3+`
 
-collectionSelector`構成タイプを使用すると、 [コレクション](../../../displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md) または [コレクションプロバイダ](../../../displaying-content/collections-and-collection-pages/collection-providers.md) を含むフラグメントを開発することができます。 コレクションセレクタは手動コレクションでも動的コレクションでも使用できます。
+`collectionSelector`構成タイプを使用すると、 [コレクション](../../../displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md) または [コレクションプロバイダ](../../../displaying-content/collections-and-collection-pages/collection-providers.md) を含むフラグメントを開発することができます。 コレクションセレクタは手動コレクションでも動的コレクションでも使用できます。
 
 !!! note
+    開発者は、コレクション・プロバイダを使用して、より高度な基準で特定のコレクションを作成できます。詳しくは、 [Info Framework](https://help.liferay.com/hc/en-us/articles/360029067251-Introduction-to-The-Info-Framework) 開発者ドキュメントの [Creating an Information List Provider](https://help.liferay.com/hc/en-us/articles/360029067271-Creating-an-Information-List-Provider) を参照してください。
 
-```
-開発者は、コレクション・プロバイダを使用して、より高度な基準で特定のコレクションを作成できます。詳しくは、 [Info Framework](https://help.liferay.com/hc/en-us/articles/360029067251-Introduction-to-The-Info-Framework) 開発者ドキュメントの [Creating an Information List Provider](https://help.liferay.com/hc/en-us/articles/360029067271-Creating-an-Information-List-Provider) を参照してください。
-```
 
 次の JSON 設定は `collectionSelector` の使い方を示している：
 
@@ -496,10 +492,7 @@ HTMLでこのコレクションを参照するには、JSONコンフィギュレ
 ![A collection including web content and blog entries corresponds to the asset type.](./fragment-configuration-types-reference/images/09.png)
 
 !!! tip
-
-```
-コンフィギュレーションでは `itemType` に加えて `itemSubtype` を指定することができます。itemSubtype` はアセット `classPK` に対応する。
-```
+    コンフィギュレーションでは `itemType` に加えて `itemSubtype` を指定することができます。itemSubtype` はアセット `classPK` に対応する。
 
 ### 返却されたコレクション項目の最大数の定義
 
@@ -599,7 +592,7 @@ HTMLでこのコレクションを参照するには、JSONコンフィギュレ
 
 ## 関連トピック
 
-- [フラグメントの開発](../../developing-page-fragments/developing-fragments-intro.md) 
-- [フラグメント特異的タグ 参照](./fragment-specific-tags-reference.md) 
-- [ページ・フラグメント・エディター・インターフェイス・リファレンス](./page-fragment-editor-interface-reference.md) 
-- [スタイルブックを使ってサイトの外観を標準化する](../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md) 
+- [フラグメントの開発](../../developing-page-fragments/developing-fragments-intro.md)
+- [フラグメント特異的タグ 参照](./fragment-specific-tags-reference.md)
+- [ページ・フラグメント・エディター・インターフェイス・リファレンス](./page-fragment-editor-interface-reference.md)
+- [スタイルブックを使ってサイトの外観を標準化する](../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md)

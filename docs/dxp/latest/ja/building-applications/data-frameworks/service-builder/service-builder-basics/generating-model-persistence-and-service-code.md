@@ -117,7 +117,7 @@ y7g4-service
 | `name` | インスタンスの名前（文字列）です。 |
 | `description` | インスタンスの説明 (文字列) です。 |
 
-`service.xml` 要素の詳細については、 [Liferayサービスビルダー DTD](https://learn.liferay.com/reference/latest/en/dxp/definitions/liferay-service-builder_7_4_0.dtd.html) を参照してください。
+`service.xml` 要素の詳細については、 [Liferayサービスビルダー DTD](https://resources.learn.liferay.com/reference/latest/en/dxp/definitions/liferay-service-builder_7_4_0.dtd.html) を参照してください。
 
 ## 永続化コードの生成
 

@@ -64,7 +64,7 @@
 | オープンウェザーマップ 風速                       | 数値：風速（km/h                                                                                                                                                      | `${openweathermap.wind_speed}`          |
 | ユーザーカスタムフィールド **\*\***               | ユーザーカスタムフィールドの値                                                                                                                                                 | `user.custom.field.[name]`              |
 
-**\*** [Liferay Commerceのアクティベート](https://learn.liferay.com/w/commerce/installation-and-upgrades/activating-liferay-commerce-enterprise) を起動し、Commerce 固有の変数にアクセスします。
+**\*** [Liferay Commerceエンタープライズの有効化](https://learn.liferay.com/w/commerce/installation-and-upgrades/activating-liferay-commerce-enterprise) を起動し、Commerce 固有の変数にアクセスします。
 
 **\*** ipstack と OpenWeatherMap の変数にアクセスするには、まず各サービスを有効にします。 システムまたはインスタンスの設定 &rarr; プラットフォーム &rarr; 検索エクスペリエンスにアクセスします。 有効］チェックボックスをクリックし、設定するサービスの設定を保存します。 OpenWeatherMap サービスは、ipstack サービスが有効であることに依存していることに注意してください。 ipstack サービスを使用した例については、 [Personalizing Search Experience](../personalizing-the-search-experience.md) をご参照ください。
 

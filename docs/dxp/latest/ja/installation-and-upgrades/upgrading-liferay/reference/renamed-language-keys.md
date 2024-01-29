@@ -85,7 +85,7 @@ Liferay のモジュールは [`portal-language-lang`](https://github.com/lifera
 | `mapping-description` | `mapping-description[oauth2]` | `oauth2-provider-scope-impl` |
 | `mapping` (保存済み) | `mapping[oauth2]` | `oauth2-provider-scope-impl` |
 | `maximum-file-size-small-image` | `maximum-file-size-of-small-image` | `journal-api` |
-| `maximum-number-of-tags-per-asset` | *置換はありません* | `asset-auto-tagger-web` |
+| `maximum-number-of-tags-per-asset` | **置換はありません** | `asset-auto-tagger-web` |
 | `maximum-number-of-tags-per-asset` | `maximum-number-of-tags` | `asset-auto-tagger-service` |
 | `monitoring-configuration-name` (保存済み) | `monitoring-configuration-name[elasticsearch]` | `portal-search-elasticsearch-monitoring-web` |
 | `no-account-selected` | `to-add-a-product-to-an-order,-first-select-an-account` | `commerce-lang` |
@@ -113,7 +113,7 @@ Liferay のモジュールは [`portal-language-lang`](https://github.com/lifera
 | `this-configuration-is-not-saved-yet` (保存済み) | `this-configuration-is-not-saved-yet.-the-values-shown-are-the-default` | `configuration-admin-web/` |
 | `timeout` (保存済み) | `timeout[socket-connection-so]` | `antivirus-clamd-scanner` |
 | `unable-to-validate-referenced-journal-article` | `unable-to-validate-referenced-web-content-article` | `journal-lang` |
-| `user-account-setup-failed` | *置換はありません* | `multi-factor-authentication-timebased-otp-web` |
+| `user-account-setup-failed` | **置換はありません** | `multi-factor-authentication-timebased-otp-web` |
 | `workflow-in-use-remove-assignement-to-x-x` | `workflow-is-in-use.-remove-its-assignment-to-x-x` | `portal-workflow-lang`,<br><br>`portal-workflow-kaleo-designer-lang` |
 | `workflow-in-use-remove-assignements-to-x-and-x-x` | `workflow-is-in-use.-remove-its-assignments-to-x-and-x-x` | `portal-workflow-lang`,<br><br>`portal-workflow-kaleo-designer-lang` |
 | `workflow-in-use-remove-assignements-to-x-x-and-x-more-x` | `workflow-is-in-use.-remove-its-assignment-to-x-x-and-x-more-x` | `portal-workflow-lang`,<br><br>`portal-workflow-kaleo-designer-lang` |

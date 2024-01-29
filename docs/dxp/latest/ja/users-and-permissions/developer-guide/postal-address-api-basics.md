@@ -21,7 +21,7 @@ Liferay の REST API を使用して郵便住所を管理します。
    unzip liferay-n8y7.zip
    ```
 
-1. アカウントのリストを取得するには、 [Accounts_GET_FromInstance](./accounts-api-basics.md#get-accounts-from-instance) を使用します。 住所を追加するアカウントのIDをメモしてください。 また、_Global Menu_ &rarr; _Control Panel_ &rarr; _Accounts_ に移動してアカウントのリストを見ることもできます。
+1. アカウントのリストを取得するには、 [Accounts_GET_FromInstance](./accounts-api-basics.md#get-accounts-from-instance) を使用します。 住所を追加するアカウントのIDをメモしてください。 また、 **Global Menu** &rarr; **Control Panel** &rarr; **Accounts** に移動してアカウントのリストを見ることもできます。
 
 1. cURLスクリプトを使用して、選択したアカウントに新しい住所を追加します。 コマンドラインで `curl` フォルダに移動します。 `PostalAddress_POST_ToAccount.sh`スクリプトを実行する。 `1234`をアカウントIDに置き換える。
 
@@ -47,7 +47,7 @@ Liferay の REST API を使用して郵便住所を管理します。
     }
    ```
 
-1. *Global Menu* &rarr; _Control Panel_ &rarr; _Accounts_ に移動します。 ステップ2で選択したアカウントを選択し、_Addresses_に移動します。 アカウントに新しい住所が追加されていることを確認してください。
+1. **Global Menu** &rarr; **Control Panel** &rarr; **Accounts** に移動します。 ステップ2で選択したアカウントを選択し、 **Addresses** に移動します。 アカウントに新しい住所が追加されていることを確認してください。
 
    ![See that a new postal address has been added.](./postal-address-api-basics/images/01.png)
 
@@ -57,7 +57,7 @@ Liferay の REST API を使用して郵便住所を管理します。
    javac -classpath .:* *.java
    ```
 
-1. PostalAddress_POST_ToAccount.java`クラスを実行する。 1234`をアカウントIDに置き換える。
+1. `PostalAddress_POST_ToAccount.java`クラスを実行する。 `1234`をアカウントIDに置き換える。
 
    ```bash
    java -classpath .:* -DaccountId=1234 PostalAddress_POST_ToAccount
@@ -82,13 +82,13 @@ Liferay の REST API を使用して郵便住所を管理します。
 | `-u "test@liferay.com:learn"`                                                                                                                                                                                                                                                                                                         | 基本的な認証情報                        |
 
 !!! note
-    ここでは、デモのためにBasic認証を使用している。 本番環境では、 [OAuth2](../../headless-delivery/using-oauth2.md) を介してユーザーを認証する必要があります。 OAuth2 を使用する React アプリケーションのサンプルについては、 [Using OAuth2 to Authorize Users](../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md) を参照してください。
+    ここでは、デモのためにBasic認証を使用している。 本番環境では、 [OAuth2](../../headless-delivery/using-oauth2.md) を介してユーザーを認証する必要があります。 OAuth2 を使用する React アプリケーションのサンプルについては、 [OAuth2によるユーザーの認証](../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md) を参照してください。
 
 他のcURLコマンドも同様のJSON引数を使用しています。
 
 ## Javaクラスを調べる
 
-PostalAddress_POST_ToAccount.java`クラスは、郵便住所関連サービスを呼び出して郵便住所を追加する。
+`PostalAddress_POST_ToAccount.java`クラスは、郵便住所関連サービスを呼び出して郵便住所を追加する。
 
 ```{literalinclude} ./postal-address-api-basics/resources/liferay-n8y7.zip/java/PostalAddress_POST_Account.java
    :dedent: 1

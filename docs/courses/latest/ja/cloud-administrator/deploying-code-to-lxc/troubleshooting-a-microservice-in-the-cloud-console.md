@@ -1,6 +1,6 @@
 # クラウドコンソールでのマイクロサービスのトラブルシューティング
 
-前回は、 [オブジェクトアクションクライアントエクステンション](https://learn.liferay.com/w/dxp/building-applications/client-extensions/microservice-client-extensions#object-action-client-extensions) を使って、Liferay でフィードバックエントリが送信されたときのログをテストしました。 さて、KyleはSpring Bootアプリケーションに単純なカウンター変数を追加して、エントリーの総数を記録したいと考えている。
+前回は、 [マイクロサービスのクライアント拡張](https://learn.liferay.com/w/dxp/building-applications/client-extensions/microservice-client-extensions#object-action-client-extensions) を使って、Liferay でフィードバックエントリが送信されたときのログをテストしました。 さて、KyleはSpring Bootアプリケーションに単純なカウンター変数を追加して、エントリーの総数を記録したいと考えている。
 
 ここでは、 [以前にデプロイしたサンプルクライアント拡張プロジェクト](./deploying-and-managing-a-microservice-client-extension-project.md)を修正し、クラウド コンソールで問題が発生した場合のトラブルシューティングを行い、問題を解決します。
 
@@ -165,8 +165,8 @@ printenv | grep "EXISTING"
 
 ## 関連コンセプト
 
-* [オブジェクトアクションのクライアント拡張](https://learn.liferay.com/w/dxp/building-applications/client-extensions/microservice-client-extensions#object-action-client-extensions)
-* [Liferayクラウドサービスのログを読む](https://learn.liferay.com/w/liferay-cloud/troubleshooting/reading-liferay-cloud-service-logs)
+* [マイクロサービスのクライアント拡張](https://learn.liferay.com/w/dxp/building-applications/client-extensions/microservice-client-extensions#object-action-client-extensions)
+* [Liferay Cloud Service Logsを読む](https://learn.liferay.com/w/liferay-cloud/troubleshooting/reading-liferay-cloud-service-logs)
 * [シェルアクセス](https://learn.liferay.com/w/liferay-cloud/troubleshooting/shell-access)
 * [トラブルシューティングサービス](https://learn.liferay.com/w/liferay-cloud/troubleshooting/troubleshooting-services)
 * [セルフヒーリング](https://learn.liferay.com/w/liferay-cloud/troubleshooting/self-healing)

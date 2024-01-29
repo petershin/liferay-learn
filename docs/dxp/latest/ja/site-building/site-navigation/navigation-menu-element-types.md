@@ -42,7 +42,7 @@ Liferay 7.4のバージョンU9+とGA13+から、複数のカテゴリーを一�
 
 [Vocabularies](../../content-authoring-and-management/tags-and-categories/defining-categories-and-vocabularies-for-content.md#defining-vocabularies) 全体をメニュー要素として追加することができます。 ボキャブラリーは動的に更新されるため、その中のカテゴリーとその階層に対するすべての変更がナビゲーション・メニュー自体に反映されます。 しかし、この方法では、含まれるカテゴリの階層を並べ替えたり変更したりすることはできません。カテゴリの異なる階層を作成したい場合は、 [、代わりに語彙](#categories) の外側にカテゴリを個別に追加してください。
 
-デフォルトでは、ボキャブラリーをメニュー要素として追加すると、そのメニューがページ上に表示されたときに、その要素がすべてのトップレベル・カテゴリーに置き換えられます。 ただし、ナビゲーション・メニューの編集中に語彙エレメントを選択する際、_Display Name as First Level_チェックボックスをチェックすることで、語彙自体を（クリックできないエレメントとして）メニューに表示させ、その下にトップレベルのカテゴリーを表示させることもできます。
+デフォルトでは、ボキャブラリーをメニュー要素として追加すると、そのメニューがページ上に表示されたときに、その要素がすべてのトップレベル・カテゴリーに置き換えられます。 ただし、ナビゲーション・メニューの編集中に語彙エレメントを選択する際、 **Display Name as First Level** チェックボックスをチェックすることで、語彙自体を（クリックできないエレメントとして）メニューに表示させ、その下にトップレベルのカテゴリーを表示させることもできます。
 
 ![Check Display Name as First Level to make the Vocabulary appear as an element in the Navigation Menu.](./navigation-menu-element-types/images/02.png)
 
@@ -50,15 +50,15 @@ Liferay 7.4のバージョンU9+とGA13+から、複数のカテゴリーを一�
 
 ## URL
 
-また、特定のコンテンツに関連付ける必要のない、カスタムURLのナビゲーションメニュー要素を追加することもできます。 ナビゲーションメニューに URL 要素を追加する場合、メニュー要素の表示名と、クリック時にその 要素が指す URL を入力する必要があります。 URLをユーザーのブラウザの別のタブで開きたい場合は、_新しいタブで開く_チェックボックスをオンにします。
+また、特定のコンテンツに関連付ける必要のない、カスタムURLのナビゲーションメニュー要素を追加することもできます。 ナビゲーションメニューに URL 要素を追加する場合、メニュー要素の表示名と、クリック時にその 要素が指す URL を入力する必要があります。 URLをユーザーのブラウザの別のタブで開きたい場合は、 **新しいタブで開く** チェックボックスをオンにします。
 
 ![To add a URL menu element, enter the name and the URL to point to.](./navigation-menu-element-types/images/03.png)
 
 ## Liferay Portal 7.4 GA4 およびそれ以前
 
-GA4より前のバージョンのLiferay Portal 7.4では、_Display Page_ Navigation Menu要素タイプもあります。
+GA4より前のバージョンのLiferay Portal 7.4では、 **Display Page** Navigation Menu要素タイプもあります。
 
-Liferay 7.4 GA5+ と U1+ では、Display Page タイプは Display Pages を使用するコンテンツタイプに置き換えられます: [blog entries](#blogs-entries) , [web content articles](#web-content-articles) , [documents](#documents) , and [Categories](#categories) .
+Liferay 7.4 GA5+とU1+では、表示ページタイプは表示ページを使用するコンテンツタイプに置き換えられます：[ブログエントリー](#blogs-entries)、[Webコンテンツの記事](#web-content-articles)、[ドキュメント](#documents)、[カテゴリ](#categories)。
 
 ## 関連トピック
 

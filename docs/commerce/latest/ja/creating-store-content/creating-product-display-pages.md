@@ -4,7 +4,7 @@ Liferay Commerceを使用すると、ストア製品を個別のサイトペー�
 
 以下の手順で、製品の表示ページを設定します。
 
-1. ストアで新しいサイトページを作成し、 ［**商品詳細**］ ウィジェットを他の必要なページ要素と一緒に追加します。 詳細は、 [コンテンツページの構築](https://learn.liferay.com/dxp/latest/ja/site-building/creating-pages/building_and_managing_content_pages.html) を参照してください。 このページで、リンクされた製品を表示する際のレイアウトを決定します。
+1. ストアで新しいサイトページを作成し、 ［**商品詳細**］ ウィジェットを他の必要なページ要素と一緒に追加します。 詳細は、 [コンテントページの使用](https://learn.liferay.com/ja/w/dxp/site-building/creating-pages/using-content-pages) を参照してください。 このページで、リンクされた製品を表示する際のレイアウトを決定します。
 
 1. ［**グローバルメニュー**］(![Global Menu](../images/icon-applications-menu.png))を開き、 ［**Commerce**］ タブをクリックし、 ［**店舗管理**］ &rarr; ［**Channels**］ へ移動します。
 

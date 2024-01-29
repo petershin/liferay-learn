@@ -11,18 +11,18 @@ Liferayのローコード／ノーコードツールにより、開発者でな�
 
 ## オブジェクト
 
-* [オブジェクトの概要](https://learn.liferay.com/w/dxp/building-applications/objects)
-* [チュートリアル](https://learn.liferay.com/w/dxp/building-applications/objects)
+* [オブジェクト](https://learn.liferay.com/w/dxp/building-applications/objects)
+* [オブジェクト](https://learn.liferay.com/w/dxp/building-applications/objects)
 
 ## フォーム
 
-* [オブジェクトでのフォームの使用](https://learn.liferay.com/w/dxp/building-applications/objects/using-forms-with-objects)
-* [フラグメントの使用によるフォームの構築](https://learn.liferay.com/w/dxp/building-applications/objects/using-fragments-to-build-forms)
+* [オブジェクトでフォームを使用する](https://learn.liferay.com/w/dxp/building-applications/objects/using-forms-with-objects)
+* [フラグメントでフォームを構築する](https://learn.liferay.com/w/dxp/building-applications/objects/using-fragments-to-build-forms)
 * [フォームの概要](https://learn.liferay.com/w/dxp/process-automation/forms/introduction-to-forms)
 
 ## ページ
 
 * [サイトの外観](https://learn.liferay.com/w/dxp/site-building/site-appearance/site-appearance)
-* [スタイルブック](https://learn.liferay.com/w/dxp/site-building/site-appearance/style-books/using-a-style-book-to-standardize-site-appearance)
+* [スタイルブックを使用してサイトの外観を標準化する](https://learn.liferay.com/w/dxp/site-building/site-appearance/style-books/using-a-style-book-to-standardize-site-appearance)
 
 次： [データモデリングとプロセス管理](./data-modeling-and-process-management.md)

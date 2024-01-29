@@ -1,6 +1,6 @@
 # アカウントとの連携
 
-Liferayのアカウントは、B2C（つまり企業対消費者）のコンテキストで個々の顧客を表すことができます。 あるいは、複数のユーザーがいるB2B（企業間取引）のコンテキストを表すこともできる。 詳しくは [Accounts](https://learn.liferay.com/en/w/dxp/users-and-permissions/accounts) を参照。
+Liferayのアカウントは、B2C（つまり企業対消費者）のコンテキストで個々の顧客を表すことができます。 あるいは、複数のユーザーがいるB2B（企業間取引）のコンテキストを表すこともできる。 詳しくは [アカウント](https://learn.liferay.com/ja/w/dxp/users-and-permissions/accounts) を参照。
 
 オポーチュン・オプティクスは全国に眼鏡店を展開している。 各店舗はクラリティ・ビジョン・ソリューションズから眼鏡を購入している。 以下の例では、ある市場のアカウントを設定し、アカウント・ユーザーを割り当てる方法を示しています。
 
@@ -62,7 +62,7 @@ Liferayのアカウントは、B2C（つまり企業対消費者）のコンテ�
 
 2. 次のウィンドウで、 **Assign User**(![Add icon](../../images/icon-add.png)) をクリックします。 ノア・ノーマンを選択し、 **Assign** をクリックする。
 
-   ノアの従業員がアカウントに注文を追加すると、ノアは注文を承認し管理することができる。 これらのロールの詳細については、 [Commerce Roles Reference](https://learn.liferay.com/en/w/commerce/users-and-accounts/roles-and-permissions/commerce-roles-reference) を参照してください。
+   ノアの従業員がアカウントに注文を追加すると、ノアは注文を承認し管理することができる。 これらのロールの詳細については、 [Commerceロールのリファレンス](https://learn.liferay.com/ja/w/commerce/users-and-accounts/roles-and-permissions/commerce-roles-reference) を参照してください。
 
 ## アカウント管理
 
@@ -121,8 +121,8 @@ Liferayのアカウントは、B2C（つまり企業対消費者）のコンテ�
 
 ## 関連コンセプト
 
-- [アカウント](https://learn.liferay.com/en/w/dxp/users-and-permissions/accounts)
-- [アカウントユーザー](https://learn.liferay.com/en/w/dxp/users-and-permissions/accounts/account-users)
-- [アカウントグループ](https://learn.liferay.com/en/w/dxp/users-and-permissions/accounts/account-groups)
-- [アカウントロール](https://learn.liferay.com/en/w/dxp/users-and-permissions/accounts/account-roles)
-- [Commerceロールのリファレンス](https://learn.liferay.com/en/w/commerce/users-and-accounts/roles-and-permissions/commerce-roles-reference)
+- [アカウント](https://learn.liferay.com/ja/w/dxp/users-and-permissions/accounts)
+- [アカウントユーザー](https://learn.liferay.com/ja/w/dxp/users-and-permissions/accounts/account-users)
+- [アカウントグループ](https://learn.liferay.com/ja/w/dxp/users-and-permissions/accounts/account-groups)
+- [アカウントロール](https://learn.liferay.com/ja/w/dxp/users-and-permissions/accounts/account-roles)
+- [Commerceロールのリファレンス](https://learn.liferay.com/ja/w/commerce/users-and-accounts/roles-and-permissions/commerce-roles-reference)

@@ -17,7 +17,7 @@ Liferay DXPでは、以下のデフォルトの組織ロールが用意されて
 このロールは、組織内での基本的な権限を与えるもので、すべてのメンバーに自動的に割り当てられます。 組織にサイトが併設されている場合、このロールはユーザーにサイトの基本メンバーシップを付与します。
 
 ```{note}
-子組織のメンバーは、親組織のメンバーとなります。 これは、例えば、子組織のメンバーは親組織のページにアクセスできることを意味します。 この動作は、`Organizations` [portal-ext.properties](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Organizations) ファイルのセクションでカスタマイズすることができ、Organizations に固有のプロパティがリストアップされます。
+子組織のメンバーは、親組織のメンバーとなります。 これは、例えば、子組織のメンバーは親組織のページにアクセスできることを意味します。 この動作は、`Organizations` [portal-ext.properties](https://resources.learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) ファイルのセクションでカスタマイズすることができ、Organizations に固有のプロパティがリストアップされます。
 ```
 
 ### 組織管理者

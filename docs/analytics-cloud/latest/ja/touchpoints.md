@@ -52,10 +52,10 @@ Analytics Cloudは、サイト全体の包括的なレポートを提供する [
 * その他のプリセット期間（昨日、過去28日間、過去180日間、昨年）
 * 期間を指定
 
-このサイトページデータのリストをCSVファイルとしてダウンロードするには、_Download Report_をクリックしてください。 詳しくは [ダウンロードレポート](./reference/downloading-reports.md) をご覧ください。
+このサイトページデータのリストをCSVファイルとしてダウンロードするには、 **Download Report** をクリックしてください。 詳しくは [ダウンロードレポート](./reference/downloading-reports.md) をご覧ください。
 
 ```{note}
-ページデータは正規化URLに基づいています。 [canonicalization](https://moz.com/learn/seo/canonicalization) または [DXPでカスタムcanonical URLを設定する方法](https://learn.liferay.com/dxp/latest/en/site-building/creating-pages/page-settings/configuring-individual-pages.html#seo) についてはこちらをご覧ください。
+ページデータは正規化URLに基づいています。 [canonicalization](https://moz.com/learn/seo/canonicalization) または [ページ単位での設定](https://learn.liferay.com/dxp/latest/ja/site-building/creating-pages/page-settings/configuring-individual-pages.html#seo) についてはこちらをご覧ください。
 ```
 
 単一ページの詳細なメトリックを表示するには、テーブル内のそのページをクリックします。 詳しくは [Page Analytics](./touchpoints/pages/pages.md) を参照。

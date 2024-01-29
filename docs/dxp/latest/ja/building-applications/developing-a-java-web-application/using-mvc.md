@@ -32,7 +32,7 @@ using-mvc/tag-libraries.md
 
 * 他の多くのJava MVCフレームワークとは対照的に、軽量です。
 * コードとの同期を維持する必要のある特別な構成ファイルはありません。
-* これは [`GenericPortlet`](https://learn.liferay.com/reference/latest/en/portlet-api/javax/portlet/GenericPortlet.html) の拡張です。
+* これは [`GenericPortlet`](https://resources.learn.liferay.com/reference/latest/en/portlet-api/javax/portlet/GenericPortlet.html) の拡張です。
 * LiferayのMVCポートレットフレームワークは、`init()`メソッドが呼び出されたときにいくつかの事前定義されたパラメーターのみを検索するため、大量の定型コードの記述を回避できます。
 * コントローラーは、MVCコマンドクラスに分類できます。各クラスは、特定の[ポートレットフェーズ](./reference/portlets.md)（レンダリング、アクション、およびリソース提供フェーズ）のコントローラーコードを処理します。
 * MVCコマンドクラスは複数のポートレットにサービスを提供できます。
@@ -67,9 +67,9 @@ Liferay DXPのアプリケーションは、複数の個別の[モジュール](
 
 大規模なアプリケーションでは、すべてのコントローラーロジックを保持している場合、 `-Portlet` クラスは巨大で扱いにくいものになります。 Liferayは、コントローラー機能を分割するMVCコマンドクラスを提供します。
 
-* ** [`MVCActionCommand`](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/portlet/bridges/mvc/MVCActionCommand.html) ：** `-ActionCommand` クラスを使用して、アクションURLによって呼び出される各ポートレットアクションを保持します。
-* ** [`MVCRenderCommand`](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/portlet/bridges/mvc/MVCRenderCommand.html) ：** `-RenderCommand` クラスを使用して、レンダリングURLに応答することにより、適切なJSPにディスパッチする `render` メソッドを保持します。
-* ** [`MVCResourceCommand`](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/portlet/bridges/mvc/MVCResourceCommand.html) ：** `-ResourceCommand` クラスを使用して、リソースURLに基づいてリソースを提供します。
+* ** [`MVCActionCommand`](https://resources.learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/portlet/bridges/mvc/MVCActionCommand.html) ：** `-ActionCommand` クラスを使用して、アクションURLによって呼び出される各ポートレットアクションを保持します。
+* ** [`MVCRenderCommand`](https://resources.learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/portlet/bridges/mvc/MVCRenderCommand.html) ：** `-RenderCommand` クラスを使用して、レンダリングURLに応答することにより、適切なJSPにディスパッチする `render` メソッドを保持します。
+* ** [`MVCResourceCommand`](https://resources.learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/portlet/bridges/mvc/MVCResourceCommand.html) ：** `-ResourceCommand` クラスを使用して、リソースURLに基づいてリソースを提供します。
 
 すべてをつなぎ合わせて適切に機能させるには、入り組んでいる構成ファイルが必要でしょうか。 いいえ、そうではありません。`-Portlet`クラスの`@Component`アノテーションですべて簡単に管理できます。
 
@@ -96,15 +96,15 @@ public class HelloWorldPortlet extends MVCPortlet {
 [Liferay DXPがその名前を使用して [ポートレットのID](./reference/portlet-descriptor-to-osgi-service-property-map.md#ten) を作成する方法を考慮して、ポートレット名を一意にします。
 ```
 
-コンポーネントを使用して公開している `Portlet.class` 実装の種類について、混乱が生じる可能性があります。 サービスレジストリは、これが [`javax.portlet.Portlet`](https://learn.liferay.com/reference/latest/en/portlet-api/javax/portlet/Portlet.html) インターフェイスであると想定しています。 たとえば、 `com.liferay.portal.kernel.model.Portlet`ではなく、それをインポートします。
+コンポーネントを使用して公開している `Portlet.class` 実装の種類について、混乱が生じる可能性があります。 サービスレジストリは、これが [`javax.portlet.Portlet`](https://resources.learn.liferay.com/reference/latest/en/portlet-api/javax/portlet/Portlet.html) インターフェイスであると想定しています。 たとえば、 `com.liferay.portal.kernel.model.Portlet`ではなく、それをインポートします。
 
 ```{note}
-[`liferay-portlet-app_ [version].dtd` ファイル](https://learn.liferay.com/reference/latest/en/dxp/definitions/index.html) は、ポートレットコンポーネントのプロパティとして指定できるすべてのLiferay固有の属性を定義します。 `javax.portlet.`で名前空間が設定されたプロパティは、 [`portlet.xml` descriptor](https://docs.liferay.com/portlet-api/3.0/portlet-app_3_0.xsd) の要素です。
+[`liferay-portlet-app_ [version].dtd` ファイル](https://resources.learn.liferay.com/reference/latest/en/dxp/definitions/index.html) は、ポートレットコンポーネントのプロパティとして指定できるすべてのLiferay固有の属性を定義します。 `javax.portlet.`で名前空間が設定されたプロパティは、 [`portlet.xml` descriptor](https://docs.liferay.com/portlet-api/3.0/portlet-app_3_0.xsd) の要素です。
 ```
 
 ## よりシンプルなMVCポートレット
 
-より単純なアプリケーションでは、MVCコマンドを使用しません。 ポートレットのレンダーURLは`mvcPath`パラメーターでJSPパスを指定し、 [`MVCPortlet`](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/portlet/bridges/mvc/MVCPortlet.html) メソッドは実装制御ロジックをオーバーライドします。 次のJSPコードには、JSPパス`/view_2.jsp`を指定するポートレットレンダーURLが含まれています。
+より単純なアプリケーションでは、MVCコマンドを使用しません。 ポートレットのレンダーURLは`mvcPath`パラメーターでJSPパスを指定し、 [`MVCPortlet`](https://resources.learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/portlet/bridges/mvc/MVCPortlet.html) メソッドは実装制御ロジックをオーバーライドします。 次のJSPコードには、JSPパス`/view_2.jsp`を指定するポートレットレンダーURLが含まれています。
 
 ```jsp
 <%@ taglib uri="http://java.sun.com/portlet_2_0" prefix="portlet" %>

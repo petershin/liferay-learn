@@ -16,7 +16,7 @@ visibility:
 
 ## 背景
 
-レベル0の前のモジュール、 [「Liferayはどのような課題を解決するのか-水平ソリューション」](https://learn.liferay.com/web/guest/w/courses/selling-liferay/level-0/what-challenges-does-liferay-solve-horizontal-solutions) では、Liferayが適している水平ソリューションのうち6つを詳しく検討しました：
+レベル0の前のモジュール、 [Liferayが解決する課題：水平ソリューション](https://learn.liferay.com/web/guest/w/courses/selling-liferay/level-0/what-challenges-does-liferay-solve-horizontal-solutions) では、Liferayが適している水平ソリューションのうち6つを詳しく検討しました：
 
 * カスタマーポータル
 * デジタルコマースサイト
@@ -34,8 +34,8 @@ visibility:
 このモジュールでは、デモそのものを紹介するのではなく、そのデモを補足する既存のリソースとしてサクセスストーリーを利用するためのガイドを提供する。
 
 ```{note}
-* このモジュールのライブ・ワークショップの [録画](https://learn.liferay.com/web/guest/d/se1-9-success-stories-analysis) をご覧ください。
-* ライブ・ワークショップで使用されたプレゼンテーションの [PDF](https://learn.liferay.com/documents/d/guest/se1-9-success-stories-analysis-pdf) をダウンロードしてください。
+* このモジュールのライブ・ワークショップの [録画](https://learn.liferay.com/ja/c/portal/login) をご覧ください。
+* ライブ・ワークショップで使用されたプレゼンテーションの [PDF](https://learn.liferay.com/ja/c/portal/login) をダウンロードしてください。
 ```
 ## 水平ソリューション
 

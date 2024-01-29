@@ -2,7 +2,7 @@
 
 {bdg-secondary}`liferay DXP 7.4 U10+ または Liferay Portal 7.4 GA14+`.
 
-アプリケーションをアップグレードすると、データベースのテーブルを変更する必要がある場合があります。 Liferayのアップグレードフレームワークは、これらの変更を簡単に行うことができます。 サンプルプロジェクトをデプロイして、このアップグレード処理を確認します。 以前のバージョンの Liferay については [Creating Upgrade Processes for Modules](https://help.liferay.com/hc/en-us/articles/360031165751-Creating-Upgrade-Processes-for-Modules) を参照してください。
+アプリケーションをアップグレードすると、データベースのテーブルを変更する必要がある場合があります。 Liferayのアップグレードフレームワークは、これらの変更を簡単に行うことができます。 サンプルプロジェクトをデプロイして、このアップグレード処理を確認します。 以前のバージョンの Liferay については [Creating Upgrade Processes for Modules](https://help.liferay.com/hc/ja/articles/360031165751-Creating-Upgrade-Processes-for-Modules) を参照してください。
 
 ## バージョン1.0.0をデプロイする
 
@@ -62,7 +62,7 @@
    ../gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
    ```
 
-1. Liferay にログインし、_Control Panel_ &rarr; _Gogo Shell_ から Gogo シェルコンソールに移動します。
+1. Liferay にログインし、 **Control Panel** &rarr; **Gogo Shell** から Gogo シェルコンソールに移動します。
 
 1. コマンド `upgrade:list com.acme.p5d2.service` を入力して、2.0.0 アップグレードが利用可能であることを確認します。
 
@@ -93,7 +93,7 @@
 
 ### UpgradeStepRegistratorクラスの作成
 
-UpgradeStepRegister`インターフェースを実装する`UpgradeStepRegistrator` クラスを作成する。
+`UpgradeStepRegister`インターフェースを実装する`UpgradeStepRegistrator` クラスを作成する。
 
 ```{literalinclude} ./upgrading-your-database-tables/resources/liferay-p5d2.zip/2.0.0/p5d2-service/src/main/java/com/acme/p5d2/internal/upgrade/P5D2EntryUpgrade.java
 :language: java
@@ -121,7 +121,7 @@ UpgradeStepRegister`インターフェースを実装する`UpgradeStepRegistrat
 | alterTableDropColumn | 列を削除します      |
 
 ```{warning}
-MariaDBでは、`alterTableDropColumn`は機能しません。 これは [既知のバグです](https://github.com/liferay-upgrades/liferay-portal/pull/263/commits/9a59708c40e19b209d99eeee2f7e68a815d5cd1b) 。 代わりに [以前のガイドライン](https://help.liferay.com/hc/en-us/articles/360031165751-Creating-Upgrade-Processes-for-Modules) 。
+MariaDBでは、`alterTableDropColumn`は機能しません。 これは [既知のバグです](https://github.com/liferay-upgrades/liferay-portal/pull/263/commits/9a59708c40e19b209d99eeee2f7e68a815d5cd1b) 。 代わりに [以前のガイドライン](https://help.liferay.com/hc/ja/articles/360031165751-Creating-Upgrade-Processes-for-Modules) 。
 ```
 
 変更後、サービスビルダーを再実行します。 これで、アップグレードの構築とデプロイの準備が整いました。

@@ -100,7 +100,7 @@ UAT環境のサービスが再起動し、バックアップされると、サ�
 
 次に、新しいウィジェットが正しく動作するかテストしてください。
 
-1. デフォルトの [管理者としてログインする](https://learn.liferay.com/web/guest/w/dxp/getting-started/introduction-to-the-admin-account) 。
+1. デフォルトの [管理者アカウントの概要](https://learn.liferay.com/web/guest/w/dxp/getting-started/introduction-to-the-admin-account) 。
 
 1. ページ上部の編集アイコン( ![edit icon](../../images/icon-edit.png) )をクリックすると、ウィジェットのリストにアクセスできます。
 
@@ -136,7 +136,7 @@ Next: [自動デプロイメント](./setting-up-automatic-deployment.md) を設
 
 ## 関連概念
 
-* [Liferay クラウド導入ワークフロー](https://learn.liferay.com/w/liferay-cloud/build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow)
+* [Liferay Cloud 導入ワークフローの概要](https://learn.liferay.com/w/liferay-cloud/build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow)
 * [Liferayサービスへのデプロイ](https://learn.liferay.com/w/liferay-cloud/using-the-liferay-dxp-service/deploying-to-the-liferay-service)
-* [Liferay Cloud Consoleを使った変更のデプロイメント](https://learn.liferay.com/w/liferay-cloud/build-and-deploy/deploying-changes-via-the-liferay-cloud-console)
+* [Liferay Cloud Consoleを使った変更のデプロイ](https://learn.liferay.com/w/liferay-cloud/build-and-deploy/deploying-changes-via-the-liferay-cloud-console)
 * [Liferay Cloudサービスへのログイン](https://learn.liferay.com/w/liferay-cloud/getting-started/logging-into-your-liferay-cloud-services)

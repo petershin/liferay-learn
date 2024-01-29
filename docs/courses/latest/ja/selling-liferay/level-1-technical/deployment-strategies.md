@@ -25,8 +25,8 @@ visibility:
 デプロイメント戦略はLiferayのデモには関係ないように思えるかもしれませんが、見込み客とそのニーズについてより深く知るとき、このトピックはしばしば出てきます。
 
 ```{note}
-* このモジュールのライブ・ワークショップの [録画](https://learn.liferay.com/web/guest/d/se1-8-deployment-strategies) をご覧ください。
-* ライブ・ワークショップで使用されたプレゼンテーションの [PDF](https://learn.liferay.com/documents/d/guest/se1-8-deployment-strategies-pdf) をダウンロードしてください。
+* このモジュールのライブ・ワークショップの [録画](https://learn.liferay.com/ja/c/portal/login) をご覧ください。
+* ライブ・ワークショップで使用されたプレゼンテーションの [PDF](https://learn.liferay.com/ja/c/portal/login) をダウンロードしてください。
 ```
 ## Liferayの製品
 

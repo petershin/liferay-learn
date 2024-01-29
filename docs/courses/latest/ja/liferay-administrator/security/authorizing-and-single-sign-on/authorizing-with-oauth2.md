@@ -72,5 +72,5 @@ LiferayのOAuth2ツールを使って、サードパーティのアプリケー�
 
 ## 関連コンセプト
 
-- [OAuth2の利用](https://learn.liferay.com/w/dxp/headless-delivery/using-oauth2)
+- [OAuth 2.0を使用する](https://learn.liferay.com/w/dxp/headless-delivery/using-oauth2)
 - [OAuth2アプリケーションの作成](https://learn.liferay.com/w/dxp/headless-delivery/using-oauth2/creating-oauth2-applications)

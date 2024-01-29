@@ -38,7 +38,7 @@
 http://localhost:8080/web/guest/search?q=test&start=2
 ```
 
-**１ページの表示数：** 結果ページごとに表示する結果の数を設定します。 デフォルトは **20** です。ただし、 `search.container.page.default.delta` [プロパティ](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Search%20Container) を `portal-ext.properties` ファイルでカスタマイズした場合はこの限りではありません。
+**１ページの表示数：** 結果ページごとに表示する結果の数を設定します。 デフォルトは **20** です。ただし、 `search.container.page.default.delta` [プロパティ](https://resources.learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) を `portal-ext.properties` ファイルでカスタマイズした場合はこの限りではありません。
 
 **ページ差分パラメータ名：** １ページの表示数値を格納するURLパラメータの名前を設定します（デフォルトでは`差分`）。 このパラメーターは、ユーザーが番号を変更した場合にブラウザーに表示されます。 ユーザーがページごとに10件の結果を選択し、 **test** を検索すると、ページの検索は次のURLでリロードされます。
 

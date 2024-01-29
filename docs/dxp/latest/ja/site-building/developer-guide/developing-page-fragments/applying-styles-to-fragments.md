@@ -1,6 +1,6 @@
 # フラグメントへのスタイル適用
 
-ページにフラグメントを追加すると、サイドバーメニューを使って、 [_スタイル_ 設定タブ](../../creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments.md#styles) を含む、フラグメントを設定することができます。
+ページにフラグメントを追加すると、サイドバーメニューを使って、 [**スタイル** 設定タブ](../../creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments.md#styles) を含む、フラグメントを設定することができます。
 
 ![The Styles tab in the sidebar menu allows you to configure the styles per fragment on a page.](./applying-styles-to-fragments/images/01.png)
 
@@ -10,7 +10,7 @@
 
 {bdg-secondary}`Liferay 7.4 U31+ and GA31+`
 
-スタイルの適用方法を変更するには、フラグメントのHTML設定を変更する必要があります。フラグメントに含まれる要素に `data-lfr-styles` 属性を追加すると、その要素に適用されるスタイルが特定の要素に適用されるようになります。*1つのフラグメントにつき、`data-lfr-styles` 属性は1つだけ使用できます。*
+スタイルの適用方法を変更するには、フラグメントのHTML設定を変更する必要があります。フラグメントに含まれる要素に `data-lfr-styles` 属性を追加すると、その要素に適用されるスタイルが特定の要素に適用されるようになります。 **1つのフラグメントにつき、`data-lfr-styles` 属性は1つだけ使用できます。**
 
 例えば、このHTMLでシンプルなカスタムフラグメントを構成し、スタイル変更を適用すると、フラグメント全体に適用されます（レンダリング時にHTMLを囲むために、外側に`<div>`タグを追加します）：
 
@@ -48,8 +48,8 @@
 
 `data-lfr-styles`属性は、フラグメントを編集する際にお好きな方法で追加することができます：
 
-* **Using the [Fragments Editor](./using-the-fragments-editor.md) in the UI**: エディターのHTMLウィンドウで変更を行う。
-* ** [Fragments Toolkit](./using-the-fragments-toolkit.md) **を使用する：フラグメントの`index.html`ファイルを変更する。
+* **Using the [Fragments Editor](./using-the-fragments-editor.md) in the UI** : エディターのHTMLウィンドウで変更を行う。
+* **[Fragments Toolkit](./using-the-fragments-toolkit.md)** を使用する：フラグメントの`index.html`ファイルを変更する。
 
 ## 関連トピック
 

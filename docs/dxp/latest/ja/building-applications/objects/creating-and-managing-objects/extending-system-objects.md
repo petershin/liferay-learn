@@ -67,7 +67,7 @@ Liferay の [Custom Fields](../../../system-administration/configuring-liferay/a
 | [オブジェクト・エントリーの追加](./actions/defining-object-actions.md#add-an-object-entry)    | &#10004;            |
 | [オブジェクト・エントリーの更新](./actions/defining-object-actions.md#update-an-object-entry) | &#10004;            |
 
-詳しくは [Defining Object Actions](./actions/defining-object-actions.md) を参照してください。
+詳しくは [オブジェクトアクションの定義](./actions/defining-object-actions.md) を参照してください。
 
 ## バリデーションの追加
 
@@ -75,7 +75,7 @@ Groovyおよびエクスプレッションビルダーの検証機能をシス�
 
 ## 追加設定オプション
 
-システム・オブジェクトを編集する際、_Details_ タブで以下の設定を行うこともできます。
+システム・オブジェクトを編集する際、 **Details** タブで以下の設定を行うこともできます。
 
 | 項目                | 説明                                   | システムオブジェクトでのサポートの有無 |
 | :---------------- | :----------------------------------- | ------------------- |

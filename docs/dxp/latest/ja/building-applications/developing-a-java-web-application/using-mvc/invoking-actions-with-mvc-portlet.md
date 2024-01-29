@@ -1,6 +1,6 @@
-# Invoking Actions with MVC Portlet
+# MVCポートレットを使用したアクションの呼び出し
 
-ポートレットの [_アクションフェーズ_](../reference/portlets.md#portlet-phases) は、状態の変更を適用します。 ポートレットのアクション処理メソッドを、 _ポートレット・アクションURL_ を使ってUIコンポーネントにバインドすることができます。 これらは `portlet:actionURL` JSPタグであり、ユーザーのリクエストをアクションを実行するポートレットメソッドにマップします。
+ポートレットの [**アクションフェーズ**](../reference/portlets.md#portlet-phases) は、状態の変更を適用します。 ポートレットのアクション処理メソッドを、 **ポートレット・アクションURL** を使ってUIコンポーネントにバインドすることができます。 これらは `portlet:actionURL` JSPタグであり、ユーザーのリクエストをアクションを実行するポートレットメソッドにマップします。
 
 ここでは、アクションURLを3つの異なる方法で使用するサンプルポートレットを呼び出して調べる方法を学習します。
 
@@ -43,25 +43,25 @@
    STARTED com.acme.t9u3.web_1.0.0
    ```
 
-1. *Samples_カテゴリの_T9U3 Portlet*ウィジェットをウィジェット・ページに追加します。 T9U3ポートレットが表示されます。
+1. **Samples** カテゴリの **T9U3 Portlet** ウィジェットをウィジェット・ページに追加します。 T9U3ポートレットが表示されます。
 
    ![You've added the T9U3 Portlet to a page.](./invoking-actions-with-mvc-portlet/images/01.png)
 
    ポートレットには3つのリンクがあります。
 
-   * *Do Something*
-   * *Do Something Else*
-   * *Do Something More*
+   * **Do Something**
+   * **Do Something Else**
+   * **Do Something More**
 
    各リンクをクリックすると、異なるアクション処理メソッドが呼び出されます。 学習の目的で、各メソッドはそれ自体を識別するメッセージをログに記録します。
 
-1. *Do Something*をクリックする。 ポートレットは `doSomething` メソッドの呼び出しをログに記録します。
+1. **Do Something** をクリックする。 ポートレットは `doSomething` メソッドの呼び出しをログに記録します。
 
    ```bash
    [T9U3Portlet:28] Invoke #doSomething(ActionRequest, ActionResponse)
    ```
 
-1. *Do Something Else*をクリックする。 ポートレットは `doSomethingElse` メソッドの呼び出しをログに記録します。
+1. **Do Something Else** をクリックする。 ポートレットは `doSomethingElse` メソッドの呼び出しをログに記録します。
 
    ```bash
    [T9U3Portlet:36] Invoke #doSomethingElse(ActionRequest, ActionResponse)
@@ -84,9 +84,9 @@
 :lines: 14-53
 ```
 
-[`@Component`](https://osgi.org/javadoc/r6/residential/org/osgi/service/component/annotations/Component.html) アノテーションは、 [`Portlet`](https://docs.liferay.com/portlet-api/3.0/javadocs/javax/portlet/Portlet.html) サービスを提供する OSGi Declarative Services Component としてクラスをマークします。 プロパティは、ポートレットを _Sample_ ウィジェット・カテゴリで利用可能にし、ポートレットに _T9U3 Portlet_ という名前を付け、ポートレットのデフォルト・ビュー・テンプレートを `/view.jsp` に設定します。
+[`@Component`](https://osgi.org/javadoc/r6/residential/org/osgi/service/component/annotations/Component.html) アノテーションは、 [`Portlet`](https://docs.liferay.com/portlet-api/3.0/javadocs/javax/portlet/Portlet.html) サービスを提供する OSGi Declarative Services Component としてクラスをマークします。 プロパティは、ポートレットを **Sample** ウィジェット・カテゴリで利用可能にし、ポートレットに **T9U3 Portlet** という名前を付け、ポートレットのデフォルト・ビュー・テンプレートを `/view.jsp` に設定します。
 
-各メソッドは [`ActionRequest`](https://docs.liferay.com/portlet-api/3.0/javadocs/javax/portlet/ActionRequest.html) と [`ActionResponse`](https://docs.liferay.com/portlet-api/3.0/javadocs/javax/portlet/ActionResponse.html) のパラメータを受け取る。 ActionRequest`はメソッドの情報を提供し、`ActionResponse`はメソッドが情報を渡す手段を提供する。 各サンプルメソッドは、ログメッセージで自身を識別します。
+各メソッドは [`ActionRequest`](https://docs.liferay.com/portlet-api/3.0/javadocs/javax/portlet/ActionRequest.html) と [`ActionResponse`](https://docs.liferay.com/portlet-api/3.0/javadocs/javax/portlet/ActionResponse.html) のパラメータを受け取る。 `ActionRequest`はメソッドの情報を提供し、`ActionResponse`はメソッドが情報を渡す手段を提供する。 各サンプルメソッドは、ログメッセージで自身を識別します。
 
 JSP（以下で説明）は、ポートレットアクションURLを使用してサンプルメソッドにマッピングします。 最初の2つのメソッドは、名前を除いて同じです。 最後のメソッドは、`@ProcessAction(name = "nameForTheDoSomethingMoreMethod")`アノテーションのおかげで際立っている。 ポートレットのアクションURLは、メソッド名の代わりに [`@ProcessAction`](https://docs.liferay.com/portlet-api/3.0/javadocs/javax/portlet/ProcessAction.html) アノテーション名を使ってメソッドにマッピングできます。 例えば `ProcessAction` という名前を使うことで、ポートレットのアクション URL を壊すことなく、メソッド名を変更したり、アノテーションを別のメソッドに割り当てることができます。 JSPのポートレットアクションURLを調べることで理解しやすくなります。
 
@@ -109,7 +109,7 @@ JSP（以下で説明）は、ポートレットアクションURLを使用し�
 :lines: 3
 ```
 
-portlet:actionURL`の`name`属性は`doSomething` ポートレットメソッドにマッピングされます。 var`属性はポートレットのアクションURLを任意の変数に代入します。 このJSPは`actionURL`変数を参照することで、`Do Something`と書かれたハイパーリンクにアクションのURLをバインドします。
+`portlet:actionURL`の`name`属性は`doSomething` ポートレットメソッドにマッピングされます。 `var`属性はポートレットのアクションURLを任意の変数に代入します。 このJSPは`actionURL`変数を参照することで、`Do Something`と書かれたハイパーリンクにアクションのURLをバインドします。
 
 ```{literalinclude} ./invoking-actions-with-mvc-portlet/resources/liferay-t9u3.zip/t9u3-web/src/main/resources/META-INF/resources/view.jsp
 :dedent: 1
@@ -162,4 +162,4 @@ JSPアクションURL：
 * [MVCActionCommand classes](./mvc-action-command.md)
 * [MVCRenderCommand](./mvc-render-command.md)
 * [MVCResourceCommand](./mvc-resource-command.md)
-* [Using Localized Messages in an MVC Portlet](./using-localized-messages-in-an-mvc-portlet.md)
+* [MVCポートレットでのローカライズされたメッセージの使用](./using-localized-messages-in-an-mvc-portlet.md)

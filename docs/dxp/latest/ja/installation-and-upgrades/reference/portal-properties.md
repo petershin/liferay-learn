@@ -1,6 +1,6 @@
 # ポータルプロパティ
 
-構成オプションは、サーバーの起動時に **ポータルプロパティ** 、プロパティファイルから読み取られた名前と値のペアのセット、およびDocker環境変数を使用して指定されます。 [デフォルト値](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) は`portal-impl.jar/portal.properties`ファイルで指定されています。
+構成オプションは、サーバーの起動時に **ポータルプロパティ** 、プロパティファイルから読み取られた名前と値のペアのセット、およびDocker環境変数を使用して指定されます。 [デフォルト値](https://resources.learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) は`portal-impl.jar/portal.properties`ファイルで指定されています。
 
 一部のプロパティはユーザーインターフェイス（UI）を介して変更できますが、その他のプロパティはプロパティファイルまたはDocker環境変数でのみ変更できます。 これには、データベースへの接続、 [Liferay Home](./liferay-home.md) フォルダの場所の宣言、 [ユーザー認証方法の変更](../securing-liferay/authentication-basics.md#configuring-authentication-type-using-properties) （メールアドレスではなくスクリーンネームで）などがあります。
 
@@ -54,7 +54,7 @@ jdbc.default.password=123456
 ### Liferay Homeの場所の設定
 
 一部のアプリケーションサーバー(WebLogicなど)では、DXP WARファイルをデプロイする前に
-Liferay Homeの場所をカスタマイズする必要があります。  [`liferay.home`](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Liferay%20Home) プロパティは場所を設定します。</p> 
+Liferay Homeの場所をカスタマイズする必要があります。  [`liferay.home`](https://resources.learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) プロパティは場所を設定します。</p> 
 
 
 
@@ -239,7 +239,7 @@ DXPデータベースに格納されているプロパティは、ポータル�
 
 ## 関連トピック
 
-* [ポータルプロパティ](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html)
+* [ポータルプロパティ](https://resources.learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html)
 * [ポータル開発者プロパティ](../../liferay-internals/reference/portal-developer-properties.md)
 * [コンテナの設定](../installing-liferay/using-liferay-docker-images/configuring-containers.md)
 * [システム設定](../../system-administration/configuring-liferay/system-settings.md)

@@ -19,8 +19,8 @@ visibility:
 * ページは、Liferayのあらゆる情報がサイトユーザーに表示される主な方法です。
 
 ```{note}
-* 本モジュールのライブワークショップの [録画](https://learn.liferay.com/web/guest/d/se1-4-experience-management) をご覧ください。
-* 上記ワークショップで使用されたプレゼンテーション資料はこちら [PDF](https://learn.liferay.com/documents/d/guest/se1-4-experience-management-pdf) からダウンロードしてください。
+* 本モジュールのライブワークショップの [録画](https://learn.liferay.com/ja/c/portal/login) をご覧ください。
+* 上記ワークショップで使用されたプレゼンテーション資料はこちら [PDF](https://learn.liferay.com/ja/c/portal/login) からダウンロードしてください。
 ```
 
 ## 背景
@@ -85,7 +85,7 @@ visibility:
 
 ![ユーザーはどのページでも、サポートされている言語のいずれかに翻訳することができます。](./experience-management/images/06.png)
 
-Liferayアプリケーションを他の言語にローカライズする必要性が重要な場合、トップバーのアイコンから [ページ翻訳](https://learn.liferay.com/web/guest/w/dxp/content-authoring-and-management/translating-pages-and-content/translating-content-pages) を簡単に直接追加できることを示します。 また、MLベースの自動翻訳サービスを利用して、 [ページコンテンツを自動翻訳する専用ツール](https://learn.liferay.com/web/guest/w/dxp/content-authoring-and-management/translating-pages-and-content/using-third-parties-for-translation) があることにも言及する。
+Liferayアプリケーションを他の言語にローカライズする必要性が重要な場合、トップバーのアイコンから [コンテントページの翻訳](https://learn.liferay.com/web/guest/w/dxp/content-authoring-and-management/translating-pages-and-content/translating-content-pages) を簡単に直接追加できることを示します。 また、MLベースの自動翻訳サービスを利用して、 [翻訳のための第三者機関の利用](https://learn.liferay.com/web/guest/w/dxp/content-authoring-and-management/translating-pages-and-content/using-third-parties-for-translation) があることにも言及する。
 
 最後にPublishボタンをクリックして、ページに加えた変更を公開します。
 
@@ -99,8 +99,8 @@ Liferayアプリケーションを他の言語にローカライズする必要�
 
 デモのこの時点で取り上げると便利なトピックがいくつかある：
 
-* [出版](https://learn.liferay.com/web/guest/w/dxp/site-building/publishing-tools/publications) ワークフロー
-* [ページテンプレート](https://learn.liferay.com/w/dxp/site-building/creating-pages/adding-pages/creating-a-page-template)
+* [公開](https://learn.liferay.com/web/guest/w/dxp/site-building/publishing-tools/publications) ワークフロー
+* [ページテンプレートの作成](https://learn.liferay.com/w/dxp/site-building/creating-pages/adding-pages/creating-a-page-template)
 * ルック＆フィール
 
 **出版ワークフロー**

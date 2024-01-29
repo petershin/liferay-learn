@@ -12,7 +12,7 @@ OAuth 2.0認証を使ってMicrosoftメールサービスとLiferayを接続し�
 
 1. [Microsoft Azure](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app) で新しいアプリケーションを作成する。
 
-1. [アプリケーションのクライアント・シークレットを追加する](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app#add-a-client-secret).
+1. [アプリケーションのクライアント・シークレットを追加する](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app#add-a-client-secret) .
 
    アプリケーションの`クライアントID`（別名`アプリケーションID`）、`クライア ントシークレット`、`テナントID`（別名`テナントID`）を控えておくこと。 `ディレクトリID`)。 これらの値は以下のステップで使用される。
 
@@ -20,11 +20,11 @@ OAuth 2.0認証を使ってMicrosoftメールサービスとLiferayを接続し�
 
 ## Liferayのメール設定
 
-1. グローバルメニュー([グローバルメニュー](../../../images/icon-applications-menu.png))に移動します。 &rarr; _コントロールパネル_ &rarr; _インスタンス設定_.
+1. グローバルメニュー( [グローバルメニュー](../../../images/icon-applications-menu.png) )に移動します。 &rarr; **コントロールパネル** &rarr; **インスタンス設定** .
 
 1. Eメール_をクリックする。
 
-1. 左のナビゲーションで、_メール設定_をクリックします。 以下のコンフィギュレーションを設定する。
+1. 左のナビゲーションで、 **メール設定** をクリックします。 以下のコンフィギュレーションを設定する。
 
    * POPサーバー通知を有効にする：チェック
    * 着信POPサーバー「outlook.office365.com」。
@@ -38,7 +38,7 @@ OAuth 2.0認証を使ってMicrosoftメールサービスとLiferayを接続し�
 
    保存」をクリックする。
 
-1. 左のナビゲーションで、_Outlook Auth Connector_をクリックします。 クライアントID、クライアントシークレット、テナントIDを各入力ボックスに貼り付けます。
+1. 左のナビゲーションで、 **Outlook Auth Connector** をクリックします。 クライアントID、クライアントシークレット、テナントIDを各入力ボックスに貼り付けます。
 
    ![Paste in the tenant ID, client ID, and client secret values into each input box.](./configuring-office-365-with-oauth/images/01.png)
 

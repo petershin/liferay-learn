@@ -96,13 +96,13 @@
 
 リスト内のコンテンツにカーソルを合わせると、これらのアクションにアクセスできます。
 
-**［**View**］( ![View](../../images/icon-preview.png) )：コンテンツの表示ページを表示します。
+* ［**View**］( ![View](../../images/icon-preview.png) )：コンテンツの表示ページを表示します。
 
-**［**Edit**］( ![Edit](../../images/icon-edit.png) )：コンテンツを編集モードで開きます。
+* ［**Edit**］( ![Edit](../../images/icon-edit.png) )：コンテンツを編集モードで開きます。
 
-**［**Info**］( ![Information](../../images/icon-information.png) )： [コンテンツ情報](#content-info-sidebar) サイドバーを開きます。
+* ［**Info**］( ![Information](../../images/icon-information.png) )： [コンテンツ情報](#content-info-sidebar) サイドバーを開きます。
 
-**［**View Metrics**］（![View Metrics](../../images/icon-analytics.png)）：[コンテンツパフォーマンスパネル](../page-performance-and-accessibility/about-the-content-performance-tool.md)を開きます。
+* ［**View Metrics**］（![View Metrics](../../images/icon-analytics.png)）：[コンテンツパフォーマンスパネル](../page-performance-and-accessibility/about-the-content-performance-tool.md)を開きます。
   
   ![アクションメニューまたは各コンテンツ行のアイコンから、コンテンツ情報サイドバーとコンテンツパフォーマンスパネルにアクセスします。](./content-dashboard-interface/images/06.png)
 

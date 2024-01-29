@@ -6,7 +6,7 @@ Glowroot は、 [FreeMarker テンプレート](../../site-building/displaying-c
 
 ## FreeMarkerプラグインの設定
 
-1. Configuration_ &rarr; _Plugins_に移動する。 Liferay FreeMarker Templates Plugin_ をクリックします。
+1. Configuration **&rarr;** Plugins **に移動する。 Liferay FreeMarker Templates Plugin** をクリックします。
 
 1. インスツルメンテーションは `INFO`、`DEBUG`、`TRACE` レベルで設定できる。
 
@@ -14,20 +14,20 @@ Glowroot は、 [FreeMarker テンプレート](../../site-building/displaying-c
 
 ## FreeMarkerテンプレートのトラブルシューティング
 
-1. _Transactions_タブに移動し、ドロップダウンメニューから_FreeMarker Templates_を選択します。 すべてのテンプレート・トランザクションのリストが表示される。
+1. **Transactions** タブに移動し、ドロップダウンメニューから **FreeMarker Templates** を選択します。 すべてのテンプレート・トランザクションのリストが表示される。
 
-1. 特定のトランザクションの詳細を見るには、トランザクションパネルの_Slow traces_タブをクリックする。
+1. 特定のトランザクションの詳細を見るには、トランザクションパネルの **Slow traces** タブをクリックする。
 
 1. データポイントをクリックすると、トランザクションの詳細が表示されます。 内訳のセクションにあるテンプレートの変換時間を参照。
 
    ![Click on the data point to see details about the transaction.](./troubleshooting-templates-with-glowroot-freemarker-plugin/images/01.png)
 
-1. さらに下にスクロールして、_Trace entries_をクリックする。 トレースが拡大され、フラグメントの変換の詳細が表示される。
+1. さらに下にスクロールして、 **Trace entries** をクリックする。 トレースが拡大され、フラグメントの変換の詳細が表示される。
 
    ![The trace is expanded to show details of the fragment transformation.](./troubleshooting-templates-with-glowroot-freemarker-plugin/images/02.png)
 
 テンプレート・トランザクションのエラーを検査する、
 
-1. _Errors_タブに移動し、ドロップダウンメニューから_FreeMarker Templates_を選択します。
+1. **Errors** タブに移動し、ドロップダウンメニューから **FreeMarker Templates** を選択します。
 
 1. 特定のエラーをクリックして検査する。

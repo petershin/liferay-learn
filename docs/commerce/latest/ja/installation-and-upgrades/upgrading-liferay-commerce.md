@@ -110,7 +110,7 @@ DXP 7.1/7.2の適切なフィックスパックを実行したら、以下の手
    * Commerceエンタープライズは [ヘルプセンター](https://customer.liferay.com/downloads?p_p_id=com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_productAssetCategoryId=118190997&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_fileTypeAssetCategoryId=118191001) から入手できます。
    * Commerce Communityは、 [Liferay Commerce Communityダウンロードページ](https://www.liferay.com/downloads-community) から入手できます。
 
-1. `LPKG`を` [Liferay Home]/deploy` フォルダにデプロイします。 Liferay DXP へのアプリケーションのデプロイについては、 [Installing Apps](https://learn.liferay.com/dxp/latest/en/system-administration/installing-and-managing-apps/installing-apps/installing-apps.html) .
+1. `LPKG`を` [Liferay Home]/deploy` フォルダにデプロイします。 Liferay DXP へのアプリケーションのデプロイについては、 [アプリのインストール](https://learn.liferay.com/dxp/latest/ja/system-administration/installing-and-managing-apps/installing-apps/installing-apps.html) .
 
 1. 以下に示すようなメッセージがアプリケーションサーバーコンソールに表示されることを確認します。
 
@@ -130,7 +130,7 @@ DXP 7.1/7.2の適切なフィックスパックを実行したら、以下の手
 
 ### 古いデータを消去し、アップグレードプロセスを確認する
 
-1. [Liferay Home]/osgi/state`フォルダを削除します。 OSGiフォルダについて詳しくは、 [アプリのインストール](https://learn.liferay.com/dxp/latest/en/system-administration/installing-and-managing-apps/installing-apps/installing-apps.html) を参照してください。
+1. [Liferay Home]/osgi/state`フォルダを削除します。 OSGiフォルダについて詳しくは、 [アプリのインストール](https://learn.liferay.com/dxp/latest/ja/system-administration/installing-and-managing-apps/installing-apps/installing-apps.html) を参照してください。
 
 1. アプリケーションサーバーを起動します。
 
@@ -179,5 +179,5 @@ Liferay Commerceインスタンスがアップグレードされました。
 
 ## 関連トピック
 
-* [アプリのインストール](https://learn.liferay.com/dxp/latest/en/system-administration/installing-and-managing-apps/installing-apps/installing-apps.html)
+* [アプリのインストール](https://learn.liferay.com/dxp/latest/ja/system-administration/installing-and-managing-apps/installing-apps/installing-apps.html)
 * [Liferay Commerceフィックスの提供方法](../get-help/commerce-enterprise-support/liferay-commerce-fix-delivery-method.md)

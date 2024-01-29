@@ -32,7 +32,7 @@ Enable _Import_]ボックスのチェックを外したままにしておくと�
 
 1. 既存のユーザーを変更する。 **Global Menu**(![Global Menu](../../images/icon-applications-menu.png)) &rarr; **Control Panel** &rarr; **Users and Organizations** に移動する。
 
-1. カイル・クラインを選択する。 このユーザーを作成する必要がある場合は、 [ユーザーの作成](https://learn.liferay.com/w/courses/liferay-administrator/users-accounts-organizations/managing-users#creating-users) を参照のこと。
+1. カイル・クラインを選択する。 このユーザーを作成する必要がある場合は、 [ユーザーを管理する](https://learn.liferay.com/w/courses/liferay-administrator/users-accounts-organizations/managing-users#creating-users) を参照のこと。
 
 1. 彼の個人情報を変更する。 例えば、彼の生年を1970年から1971年に変更する。 ［**保存**］ をクリックします。
 
@@ -50,6 +50,6 @@ Enable _Import_]ボックスのチェックを外したままにしておくと�
 
 ## 関連コンセプト
 
-- [ユーザーのインポートとエクスポートの設定](https://learn.liferay.com/en/w/dxp/users-and-permissions/connecting-to-a-user-directory/configuring-user-import-and-export)
+- [ユーザーのインポートとエクスポートを設定する](https://learn.liferay.com/ja/w/dxp/users-and-permissions/connecting-to-a-user-directory/configuring-user-import-and-export)
 
-- [LDAPリファレンス設定](https://learn.liferay.com/en/w/dxp/users-and-permissions/connecting-to-a-user-directory/ldap-configuration-reference)
+- [LDAP設定リファレンス](https://learn.liferay.com/ja/w/dxp/users-and-permissions/connecting-to-a-user-directory/ldap-configuration-reference)

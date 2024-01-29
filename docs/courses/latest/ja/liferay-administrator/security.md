@@ -24,7 +24,7 @@ Liferayの哲学は "デフォルトで安全 "だ。 つまり、デフォル�
 
 最後に設定する機能は、 [AntiSamy](https://owasp.org/www-project-antisamy) サニタイザーで、HTML または CSS だけが許可されている場所に JavaScript コードを注入しようとするユーザーからインストールを保護します。
 
-これらのトピックでは、Liferayのセキュリティ機能の多くを紹介します。 詳しくは、Liferay Learnの [セキュリティドキュメント](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay) をご覧ください。
+これらのトピックでは、Liferayのセキュリティ機能の多くを紹介します。 詳しくは、Liferay Learnの [Liferayの保護](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay) をご覧ください。
 
 準備完了?
 

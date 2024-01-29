@@ -1,6 +1,6 @@
 # LDAPへの接続
 
-LDAPサーバーは、システム・レベルまたはインスタンス・レベルで設定できます。 LXC-SMまたはセルフホスティングの場合は、ニーズに応じて [構成スコープ](https://learn.liferay.com/w/dxp/system-administration/configuring-liferay/understanding-configuration-scope) 。 システム・スコープで設定する場合は、各インスタンスIDを指定する必要があることに注意。 LXCを使用している場合は、インスタンス・スコープでLDAPを設定する必要がある。 [LDAPディレクトリへの接続](https://learn.liferay.com/w/dxp/users-and-permissions/connecting-to-a-user-directory/connecting-to-an-ldap-directory) を参照。
+LDAPサーバーは、システム・レベルまたはインスタンス・レベルで設定できます。 LXC-SMまたはセルフホスティングの場合は、ニーズに応じて [設定スコープについて](https://learn.liferay.com/w/dxp/system-administration/configuring-liferay/understanding-configuration-scope) 。 システム・スコープで設定する場合は、各インスタンスIDを指定する必要があることに注意。 LXCを使用している場合は、インスタンス・スコープでLDAPを設定する必要がある。 [LDAPディレクトリへの接続](https://learn.liferay.com/w/dxp/users-and-permissions/connecting-to-a-user-directory/connecting-to-an-ldap-directory) を参照。
 
 クラリティ・ビジョン・ソリューションズは、買収したばかりの会社からユーザーデータをインポートしなければなりません。
 

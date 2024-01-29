@@ -1,6 +1,6 @@
 # AUIタグを使ったフォームの構築
 
-[AUIタグライブラリ](https://learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/aui/tld-frame.html) は、アプリケーションのフォームを構築するために必要なすべてのコンポーネントを提供します。 AUIタグは、標準的なフォーム要素に、カスタムネームスペーシング、ローカライゼーション、さらには入力値の検証などの多くの利点を提供します。 複数の属性が用意されており、ユーザーが望む体験を実現することができます。
+[AUIタグライブラリ](https://resources.learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/aui/tld-frame.html) は、アプリケーションのフォームを構築するために必要なすべてのコンポーネントを提供します。 AUIタグは、標準的なフォーム要素に、カスタムネームスペーシング、ローカライゼーション、さらには入力値の検証などの多くの利点を提供します。 複数の属性が用意されており、ユーザーが望む体験を実現することができます。
 
 以下の手順で、AUIタグを使用してフォームを構築します。
 
@@ -11,18 +11,18 @@
     ```
 
 1. 以下のタグを使用してフォームを作成します。 各タグは、対応するtaglibdocにリンクしており、利用可能な属性が記載されています。
-    * [`<aui:input>`](https://learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/aui/input.html)
-    * [`<aui:button>`](https://learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/aui/button.html)
-    * [`<aui:button-row>`](https://learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/aui/button-row.html)
-    * [`<aui:container>`](https://learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/aui/container.html)
-    * [`<aui:col>`](https://learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/aui/col.html)
-    * [`<aui:row>`](https://learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/aui/row.html)
-    * [`<aui:field-wrapper>`](https://learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/aui/field-wrapper.html)
-    * [`<aui:fieldset>`](https://learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/aui/fieldset.html)
-    * [`<aui:fieldset-group>`](https://learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/aui/fieldset-group.html)
-    * [`<aui:form>`](https://learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/aui/form.html)
-    * [`<aui:select>`](https://learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/aui/select.html)
-    * [`<aui:option>`](https://learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/aui/option.html)
+    * [`<aui:input>`](https://resources.learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/aui/input.html)
+    * [`<aui:button>`](https://resources.learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/aui/button.html)
+    * [`<aui:button-row>`](https://resources.learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/aui/button-row.html)
+    * [`<aui:container>`](https://resources.learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/aui/container.html)
+    * [`<aui:col>`](https://resources.learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/aui/col.html)
+    * [`<aui:row>`](https://resources.learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/aui/row.html)
+    * [`<aui:field-wrapper>`](https://resources.learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/aui/field-wrapper.html)
+    * [`<aui:fieldset>`](https://resources.learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/aui/fieldset.html)
+    * [`<aui:fieldset-group>`](https://resources.learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/aui/fieldset-group.html)
+    * [`<aui:form>`](https://resources.learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/aui/form.html)
+    * [`<aui:select>`](https://resources.learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/aui/select.html)
+    * [`<aui:option>`](https://resources.learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/aui/option.html)
 
     以下にフォームの例を示します。
 

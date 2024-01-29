@@ -17,7 +17,7 @@ IFrameクライアント拡張は開発中であり、現在Liferay 7.4ではサ
 1. Java（JDK8またはJDK11）をインストールします。
 
    ```{note}
-   サポートされているJDK、データベース、環境については、 [互換性マトリックス](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) を確認してください。 推奨されるJVM設定については、 [JVM Configuration](../../../../installation-and-upgrades/reference/jvm-configuration.md) を参照のこと。
+   サポートされているJDK、データベース、環境については、 [互換性マトリックス](https://help.liferay.com/hc/ja/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) を確認してください。 推奨されるJVM設定については、 [JVM設定](../../../../installation-and-upgrades/reference/jvm-configuration.md) を参照のこと。
    ```
 
 1. サンプルワークスペースをダウンロードし、解凍します。
@@ -50,7 +50,7 @@ liferay-sample-iframe-1-counter-app:
 ## IFrameクライアント拡張機能の展開
 
 ```{note}
-クライアント拡張を Liferay Experience Cloud にデプロイするには、Liferay Cloud [Command-Line Tool](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool) を使用して [`lcp deploy`](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool#deploying-to-your-liferay-cloud-environment) を実行します。
+クライアント拡張を Liferay Experience Cloud にデプロイするには、Liferay Cloud [コマンドラインツール](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool) を使用して [コマンドラインツール](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool#deploying-to-your-liferay-cloud-environment) を実行します。
 ```
 
 ```{include} /_snippets/run-liferay-portal.md
@@ -80,9 +80,9 @@ STARTED liferay-sample-iframe-1_1.0.0 [1592]
 
 IFrameはウィジェットとしてページに追加される。
 
-1. ページ上部の_Edit_(![Edit](../../../../images/icon-edit-pencil.png))をクリックします。
+1. ページ上部の **Edit**(![Edit](../../../../images/icon-edit-pencil.png))をクリックします。
 
-1. ウィジェットをページに追加する。 フラグメントとウィジェットのサイドバー（！[フラグメントとウィジェット](../../../../images/icon-plus.png)）で、_Widgets_をクリックします。
+1. ウィジェットをページに追加する。 フラグメントとウィジェットのサイドバー（![フラグメントとウィジェット](../../../../images/icon-plus.png)）で、 **Widgets** をクリックします。
 
 1. Client Extensions &rarr; Counter Appウィジェットを見つけ、ページにドラッグします。 Publish_をクリックする。
 

@@ -50,7 +50,7 @@
    }
    ```
 
-1. *Global Menu* &rarr; _Control Panel_ &rarr; _User and Organizations_に移動します。 組織*」タブをクリックします。 新しい組織が追加されたことを確認する。
+1. **Global Menu** &rarr; **Control Panel** &rarr; **User and Organizations** に移動します。 **Organizations**タブをクリックします。 新しい組織が追加されたことを確認する。
 
    ![See that a new organization has been added.](./organizations-api-basics/images/01.png)
 
@@ -85,14 +85,14 @@
 | `-u "test@liferay.com:learn"`                                      | 基本的な認証情報                        |
 
 ```{note}
-ここでは、デモのために基本的な認証を使用しています。 本番環境では、 [OAuth2](../../headless-delivery/using-oauth2.md) を介してユーザーを認証する必要があります。 OAuth2 を使用する React アプリケーションのサンプルについては、 [Using OAuth2 to Authorize Users](../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md) を参照してください。
+ここでは、デモのために基本的な認証を使用しています。 本番環境では、 [OAuth2](../../headless-delivery/using-oauth2.md) を介してユーザーを認証する必要があります。 OAuth2 を使用する React アプリケーションのサンプルについては、 [OAuth2によるユーザーの認証](../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md) を参照してください。
 ```
 
 他のcURLコマンドも同様のJSON引数を使用しています。
 
 ## Javaクラスを調べる
 
-Organization_POST_ToInstance.java` クラスは、Organization 関連サービスを呼び出して組織を追加する。
+`Organization_POST_ToInstance.java` クラスは、Organization 関連サービスを呼び出して組織を追加する。
 
 ```{literalinclude} ./organizations-api-basics/resources/liferay-w2h3.zip/java/Organization_POST_ToInstance.java
    :dedent: 1
@@ -202,7 +202,7 @@ java -classpath .:* -DorganizationId=1234 Organization_GET_ById
 
 以下のcURLとJavaコマンドを使って、既存の組織を部分的に編集する。 `1234`をあなたの組織のIDに置き換えてください。
 
-### 組織_PATCH_ById.sh
+### Organization_PATCH_ById.sh
 
 コマンド：
 
@@ -216,7 +216,7 @@ java -classpath .:* -DorganizationId=1234 Organization_GET_ById
    :language: bash
 ```
 
-### 組織_PATCH_ById.java
+### Organization_PATCH_ById.java
 
 コマンド：
 
@@ -236,7 +236,7 @@ java -classpath .:* -DorganizationId=1234 Organization_PATCH_ById
 
 以下のcURLとJavaコマンドで、既存の組織を完全に上書きする。 `1234`をあなたの組織のIDに置き換えてください。
 
-### 組織_PUT_ById.sh
+### Organization_PUT_ById.sh
 
 コマンド：
 
@@ -250,7 +250,7 @@ java -classpath .:* -DorganizationId=1234 Organization_PATCH_ById
    :language: bash
 ```
 
-### 組織_PUT_ById.java
+### Organization_PUT_ById.java
 
 コマンド：
 
@@ -270,7 +270,7 @@ java -classpath .:* -DorganizationId=1234 Organization_PUT_ById
 
 以下のcURLコマンドとJavaコマンドを使用して、既存の組織を削除する。 `1234`をあなたの組織のIDに置き換えてください。
 
-### 組織_DELETE_ById.sh
+### Organization_DELETE_ById.sh
 
 コマンド：
 
@@ -284,7 +284,7 @@ java -classpath .:* -DorganizationId=1234 Organization_PUT_ById
    :language: bash
 ```
 
-### 組織_DELETE_ById.java
+### Organization_DELETE_ById.java
 
 コマンド
 
@@ -303,4 +303,4 @@ java -classpath .:* -DorganizationId=1234 Organization_DELETE_ById
 [API Explorer](../../headless-delivery/consuming-apis/consuming-rest-services.md) には、すべての `Organization` サービスとスキーマが表示され、各サービスを試すためのインターフェイスが用意されている。
 
 !!! note
-   [PostalAddresses_GET_FromOrganization で組織の郵便住所を取得](./postal-address-api-basics.md#get-postal-addresses-from-organization) 
+   [PostalAddresses_GET_FromOrganization で組織の郵便住所を取得](./postal-address-api-basics.md#get-postal-addresses-from-organization)

@@ -14,7 +14,7 @@ Liferayのバージョンをアップグレードする前に、すべてのア�
 
 ## 出版物の作成
 
-1. Publications **ドロップダウンメニューをクリックし、***Create New Publication** を選択します。
+1. **Publications**ドロップダウンメニューをクリックし、**Create New Publication** を選択します。
 
    ![Click Create New Publication in the Publications drop-down menu.](./creating-and-managing-publications/images/01.png)
 
@@ -82,7 +82,7 @@ Schedule **タブでは、あなたが閲覧する権限を持っているすべ
 
 ## パブリケーションの履歴の管理
 
-History **タブでは、他のユーザーによって発行されたものを含め、DXPインスタンスに対して発行されたすべてのパブリケーションのテーブルを表示できます。 デフォルトでは、出版物は** 出版日*順に並べられますが、名前順に並べることもできます。
+**History**タブでは、他のユーザーによって発行されたものを含め、DXPインスタンスに対して発行されたすべてのパブリケーションのテーブルを表示できます。 デフォルトでは、出版物は**出版日**順に並べられますが、名前順に並べることもできます。
 
 ![The History tab lists all previously published publications for your instance.](./creating-and-managing-publications/images/05.png)
 
@@ -94,6 +94,6 @@ History **タブでは、他のユーザーによって発行されたものを�
 
 ## 関連トピック
 
-* [出版物の概要](../publications.md) 
-* [出版を可能にする](./enabling-publications.md) 
-* [変更の作成と公開](./making-and-publishing-changes.md) 
+* [出版物の概要](../publications.md)
+* [出版を可能にする](./enabling-publications.md)
+* [変更の作成と公開](./making-and-publishing-changes.md)

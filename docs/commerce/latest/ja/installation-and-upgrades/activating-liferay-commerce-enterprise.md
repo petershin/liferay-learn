@@ -127,7 +127,7 @@ XML ファイルを DXP インスタンスの [Liferay Home](https://learn.lifer
 
 #### Dockerコンテナへのデプロイ
 
-XML ファイルをコンテナの `/opt/liferay/deploy` フォルダにコピーする。 アクティベーションキーを処理する間、Liferay はこのファイルを `opt/liferay/osgi/modules` フォルダに再配置し、ライセンスファイル (`.li`) を `opt/liferay/data/license` フォルダに生成します。 Dockerコンテナへのファイルのデプロイについては、 [Providing Files to a Container](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/installing-liferay/using-liferay-docker-images/providing-files-to-the-container.html?highlight=opt) を参照してください。
+XML ファイルをコンテナの `/opt/liferay/deploy` フォルダにコピーする。 アクティベーションキーを処理する間、Liferay はこのファイルを `opt/liferay/osgi/modules` フォルダに再配置し、ライセンスファイル (`.li`) を `opt/liferay/data/license` フォルダに生成します。 Dockerコンテナへのファイルのデプロイについては、 [コンテナへのファイルの提供](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/installing-liferay/using-liferay-docker-images/providing-files-to-the-container.html?highlight=opt) を参照してください。
 
 #### Liferay Cloudへのデプロイ
 

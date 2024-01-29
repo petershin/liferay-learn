@@ -15,13 +15,13 @@
 
 1. ［**Portal Cross-Origin Resource Sharing (CORS**)］ タブで、 ［**Default Portal CORS Configuration**］ をクリックしてください。
 
-1. ［**URL Pattern**］**に`/o/c/** `の値を追加し、**［保存］*をクリックします。 これにより、すべてのオブジェクトAPI に対してCORSが有効になります。
+1. ［**URL Pattern**］**に`/o/c/** `の値を追加し、［**保存**］をクリックします。 これにより、すべてのオブジェクトAPI に対してCORSが有効になります。
 
    ![Add the /o/c/* URL Pattern for Object APIs.](./remote-applications-with-headless-apis/images/01.png)
 
 ## CRUDアプリケーション用オブジェクトの作成
 
-1. **グローバルメニュー**(![グローバルメニュー](../../../images/icon-applications-menu.png))を開き、 ［**コントロールパネル**］**タブをクリックして、***［ オブジェクト**］ に移動します。
+1. **グローバルメニュー**(![グローバルメニュー](../../../images/icon-applications-menu.png))を開き、 ［**コントロールパネル**］**タブをクリックして、**［**オブジェクト**］ に移動します。
 
 1. **追加** ボタン(![追加ボタン](../../../images/icon-add.png))をクリックし、以下の値を入力する：
 
@@ -141,4 +141,4 @@
 ## 関連トピック
 
 [基本的なカスタム要素の作成](../../client-extensions/front-end-client-extensions/tutorials/creating-a-basic-custom-element.md)
-[ヘッドレスフレームワークの統合](../../objects/understanding-object-integrations/using-custom-object-apis.md) 
+[ヘッドレスフレームワークの統合](../../objects/understanding-object-integrations/using-custom-object-apis.md)

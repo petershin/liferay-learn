@@ -133,7 +133,7 @@ Liferay Objectsを使えば、コードを書いたりモジュールをデプ�
 
 1. **Objects** アプリケーションに移動し、 **Time Off Request** オブジェクトを選択します。
 
-1. **Layouts**タブをクリックし、**Add**ボタン( ![Add Button](../../images/icon-actions.png) )をクリックし、名前に **Request** を入力し、**Save** をクリックします。
+1. **Layouts** タブをクリックし、 **Add** ボタン( ![Add Button](../../images/icon-actions.png) )をクリックし、名前に **Request** を入力し、 **Save** をクリックします。
 
 1. 新しいレイアウトを選択し、 **Mark as Default** ボックスをチェックします。
 

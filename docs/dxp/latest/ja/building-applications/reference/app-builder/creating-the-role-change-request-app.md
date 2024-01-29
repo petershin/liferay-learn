@@ -84,7 +84,7 @@
 
 ![Each form of the app can be accessed via User Notification.](./creating-a-workflow-powered-application/images/03.png)
 
-または、アプリのテーブルビューからアプリのエントリーのワークフロープロセスを管理することもできます。 アプリのデフォルトビューはテーブルビューであるため、ロール変更リクエストなどのスタンドアロンアプリの場合は、専用リンクを使用してアプリに移動します。 エントリーのアクションボタン（！[Actions]（../../../images/icon-actions.png））をクリックします。
+または、アプリのテーブルビューからアプリのエントリーのワークフロープロセスを管理することもできます。 アプリのデフォルトビューはテーブルビューであるため、ロール変更リクエストなどのスタンドアロンアプリの場合は、専用リンクを使用してアプリに移動します。 エントリーのアクションボタン（![Actions]（../../../images/icon-actions.png））をクリックします。
 
 ![Each form of the app can be accessed via the record's Actions menu.](./creating-the-role-change-request-app/images/04.png)
 

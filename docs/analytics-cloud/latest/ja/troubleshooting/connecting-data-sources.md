@@ -88,7 +88,7 @@ Liferay DXPのインストールは、以下のフィックスパックの最小
 
 1. [Liferay DXPデータソースの追加](../getting-started/connecting-liferay-dxp-to-analytics-cloud.md) の手順に従ってください。
 
-1. エラーが続く場合は、DXPインスタンスでJSONウェブサービスが有効になっていることを確認してください。 デフォルトで有効になっています。 [ポータルプロパティ](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#JSON) でjson.web.service.enabled=falseを設定して無効にしていた場合（例えば、 [ポータルプロパティ](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/reference/portal-properties.html) で設定）、設定を削除するか、プロパティ値をtrueにしてください。
+1. エラーが続く場合は、DXPインスタンスでJSONウェブサービスが有効になっていることを確認してください。 デフォルトで有効になっています。 [ポータルプロパティ](https://resources.learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) でjson.web.service.enabled=falseを設定して無効にしていた場合（例えば、 [ポータルプロパティ](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/reference/portal-properties.html) で設定）、設定を削除するか、プロパティ値をtrueにしてください。
 
 ## ログインしているユーザーが匿名で表示される
 

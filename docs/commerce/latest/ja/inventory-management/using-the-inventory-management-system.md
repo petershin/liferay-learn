@@ -53,7 +53,7 @@ Commerce 2.0または2.1をお使いの場合、在庫管理オプションは�
 
 1. 倉庫の横にある **Actions**（！ [Actions Button](../images/icon-actions.png) ）をクリックし、 **Edit** を選択します。
 
-1. 安全在庫数量*フィールドに値を入力する。
+1. **安全在庫数量**フィールドに値を入力する。
 
    ![Set a safety stock quantity for the selected SKU.](./using-the-inventory-management-system/images/02.png)
 
@@ -87,9 +87,9 @@ Commerce 2.0または2.1をお使いの場合、在庫管理オプションは�
 
 1. 追加*( [追加ボタン](../images/icon-add.png) )をクリックし、数量、お届け先倉庫、お届け予定日を入力します。 例えば、
 
-   * **数量20
-   * **目的地アメリカ * 北東部
-   * **納品予定日2022年11月20日（これは将来の日付です）
+   * **数量**: 20
+   * **目的地**: アメリカ - 北東部
+   * **納品予定日**: 2022年11月20日（これは将来の日付です）
 
    ![Add incoming stock for the selected SKU.](./using-the-inventory-management-system/images/05.png)
 

@@ -1,6 +1,6 @@
 # マイクロサービスクライアント拡張プロジェクトの展開と管理
 
-Kyleは、 [マイクロサービスクライアントエクステンション](https://learn.liferay.com/w/dxp/building-applications/client-extensions/microservice-client-extensions#object-action-client-extensions) を使用して、ユーザーから提出されたフィードバックを追跡するためのカスタムアプリケーションの開発を始めたいと考えている。
+Kyleは、 [マイクロサービスのクライアント拡張](https://learn.liferay.com/w/dxp/building-applications/client-extensions/microservice-client-extensions#object-action-client-extensions) を使用して、ユーザーから提出されたフィードバックを追跡するためのカスタムアプリケーションの開発を始めたいと考えている。
 
 [Liferayのサンプルワークスペース](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace) から [Spring Boot](https://spring.io/projects/spring-boot) を使ってマイクロサービスクライアント拡張のサンプルを試すことから始めます。
 
@@ -43,13 +43,13 @@ unzip com.liferay.sample.workspace-latest.zip
 
 サンプルのSpring Bootプロジェクトのフォルダからプロジェクトをビルドし、LXCインスタンスにデプロイする。
 
-1. このコマンドを実行すると、プロジェクトがデプロイ可能な [LUFFA](https://learn.liferay.com/w/dxp/building-applications/client-extensions/packaging-client-extensions) にビルドされます：
+1. このコマンドを実行すると、プロジェクトがデプロイ可能な [クライアント拡張機能のパッケージ化](https://learn.liferay.com/w/dxp/building-applications/client-extensions/packaging-client-extensions) にビルドされます：
 
    ```bash
    ../../gradlew clean build
    ```
 
-   [ビルドはまず `bootJar` Gradleタスクを実行し（これは `client-extension.yaml` ファイル](https://learn.liferay.com/w/dxp/building-applications/client-extensions/working-with-client-extensions#assembling-client-extensions) で定義されているため）、デプロイに必要なすべてのコンポーネントを含むLUFFAを `dist/` フォルダに生成します。
+   [クライアント拡張との連携](https://learn.liferay.com/w/dxp/building-applications/client-extensions/working-with-client-extensions#assembling-client-extensions) で定義されているため）、デプロイに必要なすべてのコンポーネントを含むLUFFAを `dist/` フォルダに生成します。
 
 1. CLIツールを使用して、ビルドされたLUFFAをデプロイします：
 
@@ -67,9 +67,9 @@ unzip com.liferay.sample.workspace-latest.zip
 
 ## オブジェクトデータの追加
 
-[Liferay objects](https://learn.liferay.com/w/dxp/building-applications/objects) はLiferayのデータをクライアント拡張機能で永続化し、操作するための理想的な方法です。
+[オブジェクト](https://learn.liferay.com/w/dxp/building-applications/objects) はLiferayのデータをクライアント拡張機能で永続化し、操作するための理想的な方法です。
 
-デプロイしたプロジェクトの [オブジェクト・アクション・クライアント拡張](https://learn.liferay.com/w/dxp/building-applications/client-extensions/microservice-client-extensions#object-action-client-extensions) のいずれかを呼び出す [アクション](https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/actions) を持つオブジェクト定義を作成します。
+デプロイしたプロジェクトの [マイクロサービスのクライアント拡張](https://learn.liferay.com/w/dxp/building-applications/client-extensions/microservice-client-extensions#object-action-client-extensions) のいずれかを呼び出す [アクション](https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/actions) を持つオブジェクト定義を作成します。
 
 ### オブジェクト定義の作成
 

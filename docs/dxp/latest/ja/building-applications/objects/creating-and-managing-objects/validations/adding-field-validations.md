@@ -7,23 +7,23 @@
 ![Create validations for custom and system object fields.](./adding-field-validations/images/01.png)
 
 !!! note
-    既成のバリデーションではニーズに合わない場合は、`objectValidationRule` クライアント拡張機能を使用してカスタムバリデーションを作成することができます。 詳細は [Microservice Client Extensions](../../../client-extensions/microservice-client-extensions.md) を参照。
+    既成のバリデーションではニーズに合わない場合は、`objectValidationRule` クライアント拡張機能を使用してカスタムバリデーションを作成することができます。 詳細は [マイクロサービスのクライアント拡張](../../../client-extensions/microservice-client-extensions.md) を参照。
 
 バリデーションを追加するには
 
-1. グローバルメニュー( ![グローバルメニュー](../../../../images/icon-applications-menu.png))を開き、_コントロールパネル_タブを開き、_オブジェクト_をクリックします。
+1. グローバルメニュー( ![グローバルメニュー](../../../../images/icon-applications-menu.png))を開き、 **コントロールパネル** タブを開き、 **オブジェクト** をクリックします。
 
 1. オブジェクト定義の編集を開始します。
 
-1. Validations*タブに移動し、_Add_ ( ![Add Button](../../../../images/icon-add.png) ) をクリックします。
+1. **Validations** タブに移動し、**Add**( ![Add Button](../../../../images/icon-add.png) ) をクリックします。
 
-1. _ラベル_を入力し、検証タイプを選択します：_Groovy_または*Expression Builder*。
+1. **ラベル** を入力し、検証タイプを選択します： **Groovy** または **Expression Builder** 。
 
    オブジェクト検証ルールのクライアント拡張をインスタンスにデプロイしている場合、それらもオプションとして表示されます。
 
    ![Enter a label and select a validation type.](./adding-field-validations/images/02.png)
 
-1. ［_保存_］をクリックします。
+1. ［**保存**］をクリックします。
 
 1. バリデーションの編集を開始する。
 
@@ -31,11 +31,11 @@
 
    ![Activate the validation.](./adding-field-validations/images/03.png)
 
-1. 検証を実行するタイミングを決定する_トリガーイベント_を選択します。
+1. 検証を実行するタイミングを決定する **トリガーイベント** を選択します。
 
    各検証は、1つのトリガーイベントしか持つことができません。
 
-1. *条件*タブに移動し、バリデーションに条件を追加します。
+1. **条件** タブに移動し、バリデーションに条件を追加します。
 
    条件には、複雑なロジックを実行するための複数のフィールドや関数を含めることができます。
 
@@ -48,17 +48,17 @@
    !!! important
        Groovy スクリプトの検証は、Liferay Experience Cloud Self-Managed と Liferay DXP Self-Hosted でのみ利用できます。
 
-1. ローカライズ可能な_エラーメッセージ_を入力してください。 このメッセージは、バリデーションがトリガーされ、フィールド入力が定義された条件の1つ以上を満たさない場合に表示されます。
+1. ローカライズ可能な **エラーメッセージ** を入力してください。 このメッセージは、バリデーションがトリガーされ、フィールド入力が定義された条件の1つ以上を満たさない場合に表示されます。
 
 1. 出力検証タイプを選択して、エラーメッセージが表示される場所を決定する。
 
-    **完全検証（フォーム要約）**：フォームの上部にエラーメッセージを表示します。
+    **完全検証（フォーム要約**） ：フォームの上部にエラーメッセージを表示します。
 
-    **部分検証（インライン・フィールド）**：指定したフィールドの横にエラーメッセージを表示します。
+    **部分検証（インライン・フィールド**） ：指定したフィールドの横にエラーメッセージを表示します。
 
     ![Enter an error message and select an output validation type.](./adding-field-validations/images/05.png)
 
-1. ［_保存_］をクリックします。
+1. ［**保存**］をクリックします。
 
 有効化されている間、バリデーションはすべての新規オブジェクトエントリに対して実行され、 [レイアウト](../layouts.md) と [フォームコンテナ](../../using-fragments-to-build-forms.md) に表示されます。
 
@@ -72,11 +72,11 @@ Groovyのバリデーションは、 [Groovy Script](https://groovy-lang.org/) �
 
 ![Use the side panel to add field elements to your Groovy validations.](./adding-field-validations/images/07.png)
 
-Liferay は [GroovyShell クラス](https://docs.groovy-lang.org/latest/html/api/groovy/lang/GroovyShell.html) を使って、_Save_ をクリックしたときに Groovy スクリプトの構文が有効かどうかをチェックします。 スクリプトが無効な場合、Liferayはエラーメッセージを表示します。
+Liferay は [GroovyShell クラス](https://docs.groovy-lang.org/latest/html/api/groovy/lang/GroovyShell.html) を使って、 **Save** をクリックしたときに Groovy スクリプトの構文が有効かどうかをチェックします。 スクリプトが無効な場合、Liferayはエラーメッセージを表示します。
 
 ## エクスプレッションビルダー検証の使用
 
-エクスプレッションビルダーには、定義済みのフィールド、演算子、関数が用意されており、要素サイドパネルからアクセスすることができます。 要素をクリックすると、その要素が条件エディタに追加されます。 これらの関数は、ブール値を返します。 提供される演算子と関数の完全なリストについては、 [Expression Builder Validations Reference](./expression-builder-validations-reference.md) を参照してください。
+エクスプレッションビルダーには、定義済みのフィールド、演算子、関数が用意されており、要素サイドパネルからアクセスすることができます。 要素をクリックすると、その要素が条件エディタに追加されます。 これらの関数は、ブール値を返します。 提供される演算子と関数の完全なリストについては、 [エクスプレッションビルダー検証のリファレンス](./expression-builder-validations-reference.md) を参照してください。
 
 !!! important
     式ビルダーのバリデーションは、text、numeric、date、boolean フィールドタイプでのみ使用できます。
@@ -127,7 +127,7 @@ LiferayはSaveをクリックしたときに、式が有効な構文かどうか
 | 範囲         |           |          | &#10004; | 日付範囲が過去の日付で始まり、未来の日付で終わるかどうかを調べ、ブール値を返す。            |
 | 合計         |           | &#10004; |          | 複数の数値フィールドを足し合わせ、単一の数値を返します。                        |
 
-詳細と例については、 [Expression Builder Validations Reference](./expression-builder-validations-reference.md) を参照してください。
+詳細と例については、 [エクスプレッションビルダー検証のリファレンス](./expression-builder-validations-reference.md) を参照してください。
 
 ## 利用可能なフィールドのリファレンス
 

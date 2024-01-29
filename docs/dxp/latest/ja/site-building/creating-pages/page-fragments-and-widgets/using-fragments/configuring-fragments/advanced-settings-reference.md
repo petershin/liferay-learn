@@ -16,7 +16,7 @@ Liferayのデフォルトのフラグメントには、Collection Displayフラ�
 
    または、ページやテンプレート内の目的のフラグメントをクリックします。
 
-1. ページ要素サイドメニューの_詳細_タブをクリックします。
+1. ページ要素サイドメニューの **詳細** タブをクリックします。
 
 ![Access a fragment's advanced settings in the Page Elements side menu.](./advanced-settings-reference/images/01.png)
 
@@ -34,7 +34,7 @@ Liferayのデフォルトのフラグメントには、Collection Displayフラ�
 
 {bdg-secondary}`Available 7.4 U34+/GA34+`
 
-*カスタムCSS*テキストボックスを使用して、フラグメントにCSSを追加します。 デフォルトでは、このテキストボックスにはこのプレースホルダーが含まれています：
+**カスタムCSS** テキストボックスを使用して、フラグメントにCSSを追加します。 デフォルトでは、このテキストボックスにはこのプレースホルダーが含まれています：
 
 ```css
 .[$FRAGMENT_CLASS$] {
@@ -57,7 +57,7 @@ Liferayのデフォルトのフラグメントには、Collection Displayフラ�
 ページがレンダリングされるとき、`[$FRAGMENT_CLASS$]` はフラグメントのクラス名に置き換えられます（例：`lfr-layout-structure-item-01d752e4-32e3-ed4a-9cd6-fcaf483d0c34`）。
 
 ```{tip}
-*Expand*アイコン ( ![Expand](../../../../../../images/icon-expand.png) ) をクリックするとモーダルウィンドウが開き、フラグメントのCSSを編集する際に余裕ができます。
+*Expand*アイコン ( ![Expand](../../../../../images/icon-expand.png) ) をクリックするとモーダルウィンドウが開き、フラグメントのCSSを編集する際に余裕ができます。
 ```
 
 また、現在使用している [スタイルブック](../../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md) に由来する変数をカスタム CSS で使用することもできます。 この例では、スタイル・ブックの情報色（紺色と定義）を使用して、フラグメントの背景色を設定しています：
@@ -72,7 +72,7 @@ Liferayのデフォルトのフラグメントには、Collection Displayフラ�
 
 ### CSS クラス
 
-[Custom CSS](#custom-css) で使用するクラスを追加するには、_CSS Classes_ フィールドを使用します。 複数のクラスを追加する場合は、それぞれをスペース、コンマ、または改行で区切ってください。 これらのクラスは、同じページ上の他のフラグメントに使用することができます。 入力中に既存のクラスの候補が表示されます。
+[Custom CSS](#custom-css) で使用するクラスを追加するには、 **CSS Classes** フィールドを使用します。 複数のクラスを追加する場合は、それぞれをスペース、コンマ、または改行で区切ってください。 これらのクラスは、同じページ上の他のフラグメントに使用することができます。 入力中に既存のクラスの候補が表示されます。
 
 ![Entering custom CSS classes in this field makes them appear as suggestions in the advanced settings for other fragments on the same page.](./advanced-settings-reference/images/04.png)
 

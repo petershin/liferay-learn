@@ -1,6 +1,6 @@
 # Filtering and Sorting Web Content Articles
 
-デフォルトでは、ウェブコンテンツアプリケーション（_サイトメニュー_ &rarr; _コンテンツとデータ_ &rarr; _ウェブコンテンツ_）には、アクセスできるすべてのウェブコンテンツ記事のリストが表示されます。 多くの項目を扱う場合、フィルタリングとソートオプションを使用すると、このコンテンツリストをすばやく見つけて確認することができます。
+デフォルトでは、ウェブコンテンツアプリケーション（**サイトメニュー** &rarr; **コンテンツとデータ** &rarr; **ウェブコンテンツ**）には、アクセスできるすべてのウェブコンテンツ記事のリストが表示されます。 多くの項目を扱う場合、フィルタリングとソートオプションを使用すると、このコンテンツリストをすばやく見つけて確認することができます。
 
 ![You can filter and sort the web content articles from the web content application.](./filtering-and-sorting-web-content-articles/images/01.png)
 
@@ -8,9 +8,9 @@
 
 - [ナビゲーションで絞り込む](#filter-by-navigation) 
 - [ステータスによる絞り込み](#filter-by-status) 
-- [](#order-by) 。
+- [ソート順](#order-by)
 
-これらのフィルターと並べ替えオプションを組み合わせることができる。 例えば、 [_Mine_ フィルタ](#filter-by-navigation) 、 [_Draft_](#filter-by-status) 、 [order by _Modified Date_](#order-by) 、 _Draft_ 、 order by _Modified Date_ 。
+これらのフィルターと並べ替えオプションを組み合わせることができる。 例えば、 [**Mine** フィルタ](#filter-by-navigation) 、 [_Draft_](#filter-by-status) 、 [order by **Modified Date**](#order-by) 、 **Draft** 、 order by **Modified Date** 。
 
 ## ナビゲーションで絞り込む
 

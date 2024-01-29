@@ -2,17 +2,17 @@
 
 {bdg-secondary}`Liferay 7.4 U58+/GA58+`
 
-複数のビジネス・アカウント [accounts](../../../../users-and-permissions/accounts.md) があるシナリオでは、アカウント別にオブジェクト・エントリへのアクセスを制限したい場合があります。 これを行うには、カスタムオブジェクトがアカウントシステムオブジェクトとの有効な [関連](../relationships/defining-object-relationships.md) を持っている必要があり、入力データの制限にこの関連を使用するようにカスタムオブジェクトを構成する必要があります。 設定が完了すると、カスタムオブジェクトにエントリーを追加する人は、アカウントを選択する必要があります。 このアカウントがエントリーのオーナーになります。 [Account Restriction and User Roles](#account-restriction-and-user-roles) を参照して、ロールの種類がどのようにエントリへのアクセスを制御するか学んでください。
+複数のビジネス・アカウント [アカウント](../../../../users-and-permissions/accounts.md) があるシナリオでは、アカウント別にオブジェクト・エントリへのアクセスを制限したい場合があります。 これを行うには、カスタムオブジェクトがアカウントシステムオブジェクトとの有効な [関連](../relationships/defining-object-relationships.md) を持っている必要があり、入力データの制限にこの関連を使用するようにカスタムオブジェクトを構成する必要があります。 設定が完了すると、カスタムオブジェクトにエントリーを追加する人は、アカウントを選択する必要があります。 このアカウントがエントリーのオーナーになります。 [Account Restriction and User Roles](#account-restriction-and-user-roles) を参照して、ロールの種類がどのようにエントリへのアクセスを制御するか学んでください。
 
 ![Restrict access to custom object entries by account.](./restricting-access-to-object-data-by-account/images/01.png)
 
 ```{important}
-アカウント制限はドラフトオブジェクトに対してのみ設定できます。[公開](../creating-objects.md#publishing-object-drafts)後は、これらの設定を変更することはできません。
+アカウント制限はドラフトオブジェクトに対してのみ設定できます。 [公開](../creating-objects.md#publishing-object-drafts) 後は、これらの設定を変更することはできません。
 ```
 
 アカウント制限を設定するには、
 
-1. _グローバルメニュー_ (![グローバルメニュー](../../../../images/icon-applications-menu.png))を開き、*［コントロールパネル］*タブで*［オブジェクト］*をクリックします。
+1. **グローバルメニュー**(![グローバルメニュー](../../../../images/icon-applications-menu.png))を開き、 ［**コントロールパネル**］ タブで ［**オブジェクト**］ をクリックします。
 
 1. アカウントシステムオブジェクトの編集を開始します。
 
@@ -22,11 +22,11 @@
 
 1. オブジェクトページに戻り、目的のカスタムオブジェクトの編集を開始します。
 
-1. Details "タブで "_Account Restriction_"を有効にし、使用するアカウント関係を選択します。
+1. Details "タブで " **Account Restriction** "を有効にし、使用するアカウント関係を選択します。
 
    ![Toggle Account Restriction to active and select the account relationship you want to use.](./restricting-access-to-object-data-by-account/images/03.png)
 
-1. ［_保存_］をクリックします。
+1. ［**保存**］をクリックします。
 
 これにより、アカウント関連フィールドが必須となり、ユーザーはエントリーを作成する際にアカウントを選択する必要があります。 利用可能なアカウントオプションは、各ユーザーの 権限によって決定されます。 アカウント制限が有効になっている間のロール権限の構成については、 [アカウント制限とユーザロール](#account-restriction-and-user-roles) を参照してください。 エントリー作成後、選択されたアカウントはエントリーのオーナーとなり、変更することはできません。
 
@@ -42,11 +42,11 @@
 
 アカウント制限のためのロールを設定する場合、以下の点を考慮してください。
 
-* アカウント制限オブジェクトがロールUIに表示されるには、_ウィジェットの表示_を有効にし、パネルリンクを設定する必要があります。
+* アカウント制限オブジェクトがロールUIに表示されるには、 **ウィジェットの表示** を有効にし、パネルリンクを設定する必要があります。
 
-* 通常のロールは`Accounts > Account Entry：オブジェクトエントリを作成するには、` View` 権限が必要です。 これは、標準ロールがアカウントや組織と関連付けられていないためです。 この権限がないと、標準ロールを持つユーザーは、エントリーの作成時にアカウントを選択することができません。
+* 通常のロールには、オブジェクト エントリを作成するための「`Accounts > Account Entry: View`権限が必要です。 これは、通常のロールがアカウントまたは組織に関連付けられていないためです。 この権限がないと、通常の役割を持つユーザーはエントリの作成中にアカウントを選択できません。
 
-* 組織ロールがオブジェクト・エントリを作成するには、以下のパーミッションが必要です：ユーザーと組織 &rarr; 組織：Manage Accounts`と`Users and Organizations &rarr; Organization：サブ組織のアカウント管理`。 この権限がないと、組織ロールを持つユーザーは、エントリーの作成時にアカウントを選択することができません。
+* 組織ロールは、オブジェクトエントリーを作成するために次の権限を持っている必要があります：`Users and Organizations &rarr; Organization: Manage Accounts`および`Users and Organizations &rarr; Organization: Manage Suborganizations Accounts`。この権限がないと、組織ロールを持つユーザーは、エントリーの作成時にアカウントを選択することができません。
 
 * 組織およびアカウントロールのユーザがカスタムオブジェクトにアクセスするには、`Access in Control Panel` (company-scoped) または `Access in Site` (site-scoped) 権限を付与する別の通常ロールを持つ必要があります。 詳細については、 [Object Application Permissions](../../understanding-object-integrations/permissions-framework-integration.md#application-permissions) を参照のこと。
 

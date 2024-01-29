@@ -12,26 +12,26 @@ Liferayのコンテンツおよびアセット管理機能により、実務担�
 ## コンテンツ管理システム
 
 * [Webコンテンツ](https://learn.liferay.com/w/dxp/content-authoring-and-management/web-content)
-* [ストラクチャー](https://learn.liferay.com/w/dxp/content-authoring-and-management/web-content/web-content-structures)
-* [テンプレート](https://learn.liferay.com/w/dxp/content-authoring-and-management/web-content/web-content-templates)
+* [Webコンテンツストラクチャー](https://learn.liferay.com/w/dxp/content-authoring-and-management/web-content/web-content-structures)
+* [Webコンテンツテンプレート](https://learn.liferay.com/w/dxp/content-authoring-and-management/web-content/web-content-templates)
 * [ブログ](https://learn.liferay.com/w/dxp/content-authoring-and-management/blogs)
 
 ## ドキュメントとメディア
 
-* [ドキュメント、画像、動画の保存](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media)
-* [Google](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/devops/google-drive-integration) や [マイクロソフト](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/devops/sharepoint-integration) との統合
+* [ドキュメントとメディア](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media)
+* [Googleドライブ との連携](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/devops/google-drive-integration) や [SharePointとの連携](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/devops/sharepoint-integration) との統合
 
 ## アセットライブラリ
 
-* [複数のサイト（部門やプロジェクトのグループ）にわたるアセットの保存と管理](https://learn.liferay.com/w/dxp/content-authoring-and-management/asset-libraries/asset-libraries-overview)
+* [アセットライブラリの概要](https://learn.liferay.com/w/dxp/content-authoring-and-management/asset-libraries/asset-libraries-overview)
 
 ## タクソノミー
 
-* [構造化されたカテゴリー](https://learn.liferay.com/w/dxp/content-authoring-and-management/tags-and-categories/organizing-content-with-categories-and-tags)
-* [アドホックタグ](https://learn.liferay.com/w/dxp/content-authoring-and-management/tags-and-categories/tagging-content-and-managing-tags)
+* [カテゴリとタグを使用したコンテンツの整理](https://learn.liferay.com/w/dxp/content-authoring-and-management/tags-and-categories/organizing-content-with-categories-and-tags)
+* [コンテンツのタグ付けとタグの管理](https://learn.liferay.com/w/dxp/content-authoring-and-management/tags-and-categories/tagging-content-and-managing-tags)
 
 ## 構造化コンテンツ
 
-* [ユーザーとの対話にフォームを使う](https://learn.liferay.com/w/dxp/process-automation/forms/introduction-to-forms)
+* [フォームの概要](https://learn.liferay.com/w/dxp/process-automation/forms/introduction-to-forms)
 
 次：[ローコード／ノーコードによるアプリケーションの構築](./low-code-no-code-application-building.md)

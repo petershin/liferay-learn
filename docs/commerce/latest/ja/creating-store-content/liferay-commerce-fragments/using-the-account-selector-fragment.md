@@ -10,15 +10,15 @@
 
 ## アカウントセレクターフラグメントをページに追加する
 
-1. 目的のコンテンツページまたはテンプレートに移動し、_Edit_（！[編集アイコン](../../images/icon-edit-pencil.png)）をクリックします。
+1. 目的のコンテンツページまたはテンプレートに移動し、 **Edit**（![編集アイコン](../../images/icon-edit-pencil.png)）をクリックします。
 
-1. フラグメントとウィジェットのサイドバー（[ウィジェット・アイコンを追加](../../images/icon-add-widget.png)）で、_account selector_を検索する。
+1. フラグメントとウィジェットのサイドバー（ [ウィジェット・アイコンを追加](../../images/icon-add-widget.png) ）で、 **account selector** を検索する。
 
    ![Search for the Account Selector fragment in the Fragments and Widgets sidebar.](./using-the-account-selector-fragment/images/01.png)
 
-1. フラグメントをページにドラッグ＆ドロップする。 この断片を [アカウント管理ウィジェット](https://learn.liferay.com/dxp/latest/en/users-and-permissions/accounts/account-management-widget.html) と間違えないでください。
+1. フラグメントをページにドラッグ＆ドロップする。 この断片を [アカウント管理ウィジェット](https://learn.liferay.com/dxp/latest/ja/users-and-permissions/accounts/account-management-widget.html) と間違えないでください。
 
-1. _Publish_をクリックする。
+1. **Publish** をクリックする。
 
    ![Click the account icon to open the account selector.](./using-the-account-selector-fragment/images/02.png)
 
@@ -28,7 +28,7 @@
 
 アカウントセレクタをページに追加した後、アカウントアイコンをクリックして開くことができます。 ここでは、管理権限のあるアカウントにアクセスできます。 また、_Create New Order（新規注文の作成）ボタンをクリックして、アカウントセレクタから新規注文を作成することもできます。 これを正しく動作させるには、 [Open Carts ページ](../commerce-storefront-pages/pending-orders.md) が必要です。
 
-有効な注文がある場合、アカウント・セレクタは注文番号とステータスをアカウント名のすぐ下に表示します。 アクティブなワークフローがある場合、注文は_Draft_ステータスで作成される。
+有効な注文がある場合、アカウント・セレクタは注文番号とステータスをアカウント名のすぐ下に表示します。 アクティブなワークフローがある場合、注文は **Draft** ステータスで作成される。
 
 ![Open the account selector to create a new order or switch between accounts.](./using-the-account-selector-fragment/images/03.gif)
 

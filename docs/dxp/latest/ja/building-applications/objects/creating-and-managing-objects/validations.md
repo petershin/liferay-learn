@@ -18,7 +18,7 @@ validations/expression-builder-validations-reference.md
 
 ![Add field validations to object definitions.](./validations/images/01.png)
 
-すぐに使えるバリデーションがニーズに合わない場合は、`objectValidationRule` クライアントエクステンションを使ってカスタムバリデーションを作成することができます。 詳細は [Microservice Client Extensions](../../client-extensions/microservice-client-extensions.md) を参照。
+すぐに使えるバリデーションがニーズに合わない場合は、`objectValidationRule` クライアントエクステンションを使ってカスタムバリデーションを作成することができます。 詳細は [マイクロサービスのクライアント拡張](../../client-extensions/microservice-client-extensions.md) を参照。
 
 ::::{grid} 2
 :gutter: 3 3 3 3

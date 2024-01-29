@@ -24,4 +24,4 @@
 
 ## 関連コンセプト
 
-[認証ベリファイアの使用](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/securing-web-services/using-authentication-verifiers)
+[Authentication Verifierの使用](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/securing-web-services/using-authentication-verifiers)

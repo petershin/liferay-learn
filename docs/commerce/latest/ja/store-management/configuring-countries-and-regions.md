@@ -4,9 +4,9 @@ Liferayにはデフォルトで240以上の国が含まれていますが、必�
 
 ## 国を追加する
 
-1. *Global Menu* (![Global Menu](../images/icon-applications-menu.png)) を開き、 *Commerce* タブを開き、 *Countries*をクリックします。
+1. **Global Menu**(![Global Menu](../images/icon-applications-menu.png)) を開き、 **Commerce** タブを開き、 **Countries** をクリックします。
 
-1. *追加* （![Add Button](../images/icon-add.png)） をクリックします。
+1. **追加**（![Add Button](../images/icon-add.png)） をクリックします。
 
 1. 国について、これらの詳細を入力します。
 
@@ -24,17 +24,17 @@ Liferayにはデフォルトで240以上の国が含まれていますが、必�
 
    ![必要な情報を入力し、Liferayインスタンスに国を追加します。](./configuring-countries-and-regions/images/01.png)
 
-1. *［保存］* をクリックします。
+1. ［**保存**］ をクリックします。
 
 ## 地域の追加
 
 Liferayで国に詳細を追加することができます。 これを行うには
 
-1. *Global Menu* (![Global Menu](../images/icon-applications-menu.png)) を開き、 *Commerce* タブを開き、 *Countries*をクリックします。
+1. **Global Menu**(![Global Menu](../images/icon-applications-menu.png)) を開き、 **Commerce** タブを開き、 **Countries** をクリックします。
 
-1. 国の編集を開始し、 *Regions* タブに移動します。
+1. 国の編集を開始し、 **Regions** タブに移動します。
 
-1. *追加* ボタン (![Add Button](../images/icon-add.png)) をクリックします。
+1. **追加** ボタン (![Add Button](../images/icon-add.png)) をクリックします。
 
 1. これらの内容を入力してください。
 
@@ -48,9 +48,9 @@ Liferayで国に詳細を追加することができます。 これを行うに
 
    ![地域の名称、コード、位置を入力します。](./configuring-countries-and-regions/images/02.png)
 
-1. Toggle *Active*.
+1. Toggle **Active** .
 
-1. *［Save］* をクリックします。
+1. ［**Save**］ をクリックします。
 
 配送先住所の入力時に、地域が国名になるようにしました。
 
@@ -62,17 +62,17 @@ Liferayで国に詳細を追加することができます。 これを行うに
 
 一部の国を別のチャンネルで制限したい場合があります。 これを行うには
 
-1. *Global Menu* (![Global Menu](../images/icon-applications-menu.png)) を開き、 *Commerce* タブを開き、 *Countries*をクリックします。
+1. **Global Menu**(![Global Menu](../images/icon-applications-menu.png)) を開き、 **Commerce** タブを開き、 **Countries** をクリックします。
 
-1. 国を編集し、 *チャンネル* タブに移動します。
+1. 国を編集し、 **チャンネル** タブに移動します。
 
-1. トグル *フィルタチャンネルを有効にする*.
+1. トグル **フィルタチャンネルを有効にする** .
 
    ![Enable filter channelsを切り替えて、国を無効にしたいチャンネルを選択します。](./configuring-countries-and-regions/images/04.png)
 
 1. チェックアウトの際に、国が利用できないチャンネルを選択します。
 
-1. *［Save］* をクリックします。
+1. ［**Save**］ をクリックします。
 
 チェックアウト時に、選択したチャンネルの「国」ドロップダウンに国が表示されない。
 
@@ -80,16 +80,16 @@ Liferayで国に詳細を追加することができます。 これを行うに
 
 一部の店舗では、配送や請求のために国を無効にする必要がある場合があります。 これを行うには
 
-1. *Global Menu* (![Global Menu](../images/icon-applications-menu.png)) を開き、 *Commerce* タブを開き、 *Countries*をクリックします。
+1. **Global Menu**(![Global Menu](../images/icon-applications-menu.png)) を開き、 **Commerce** タブを開き、 **Countries** をクリックします。
 
 1. 国を編集する。
 
-1. *Billing Allowed* を切り替えて、課金に使用できないようにします。
+1. **Billing Allowed** を切り替えて、課金に使用できないようにします。
 
-1. *Shipping Allowed* を切り替えると、発送時に無効化されます。
+1. **Shipping Allowed** を切り替えると、発送時に無効化されます。
 
    ![Billing AllowedとShipping Allowedを切り替えます。](./configuring-countries-and-regions/images/05.png)
 
-1. *［Save］* をクリックします。
+1. ［**Save**］ をクリックします。
 
-その国は請求や発送に利用できなくなりました。 オプションとして国を完全に削除するには、 *Active* を切り替えて無効化します。
+その国は請求や発送に利用できなくなりました。 オプションとして国を完全に削除するには、 **Active** を切り替えて無効化します。

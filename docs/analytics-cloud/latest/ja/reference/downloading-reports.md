@@ -1,6 +1,6 @@
 # レポートのダウンロード
 
-Analytics Cloud ワークスペースに[チーム メンバーを招待する](../workspace-settings/managing-users.md#inviting-users) だけでなく、レポートをダウンロードしてチームと洞察を共有することもできます。
+Analytics Cloud ワークスペースに [チーム メンバーを招待する](../workspace-settings/managing-users.md#inviting-users) だけでなく、レポートをダウンロードしてチームと洞察を共有することもできます。
 
 これらのダッシュボードでは、ダウンロード可能なPDFレポートをご利用いただけます：
 

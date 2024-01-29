@@ -12,7 +12,7 @@ Liferay クラウドバックアップサービスは環境のデータベース
 
 {bdg-secondary}`CLIツールバージョン3.12.0+、バックアップサービスバージョン5.9.0+、Liferayサービスバージョン5.3.0+が必要です。`
 
-[CLI ツール](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool) を使用して、データベースとドキュメント・ライブラリ・ボリュームの両方を含むバックアップを直接ダウンロードすることができます。
+[コマンドラインツール](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool) を使用して、データベースとドキュメント・ライブラリ・ボリュームの両方を含むバックアップを直接ダウンロードすることができます。
 
 特定のバックアップのIDを使用してこのコマンドを実行し、そのデータベースとドキュメント・ライブラリを同時にダウンロードします：
 

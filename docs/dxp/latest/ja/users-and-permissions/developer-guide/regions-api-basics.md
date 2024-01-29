@@ -74,14 +74,14 @@ Liferay の REST API を使ってリージョンを作成・管理します。
 | `-u "test@liferay.com:learn"`                                                  | 基本的な認証情報                        |
 
 ```{note}
-ここでは、デモのために基本的な認証を使用しています。 本番環境では、 [OAuth2](../../headless-delivery/using-oauth2.md) を介してユーザーを認証する必要があります。 OAuth2 を使用する React アプリケーションのサンプルについては、 [Using OAuth2 to Authorize Users](../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md) を参照してください。
+ここでは、デモのために基本的な認証を使用しています。 本番環境では、 [OAuth2](../../headless-delivery/using-oauth2.md) を介してユーザーを認証する必要があります。 OAuth2 を使用する React アプリケーションのサンプルについては、 [OAuth2によるユーザーの認証](../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md) を参照してください。
 ```
 
 他のcURLコマンドも同様のJSON引数を使用しています。
 
 ## Javaクラスを調べる
 
-Region_POST_ToCountry.java`クラスは、Region関連サービスを呼び出して地域を追加する。
+`Region_POST_ToCountry.java`クラスは、Region関連サービスを呼び出して地域を追加する。
 
 ```{literalinclude} ./regions-api-basics/resources/liferay-r2p3.zip/java/Region_POST_ToCountry.java
    :dedent: 1

@@ -83,5 +83,5 @@
 
 ## 関連コンセプト
 
-* [フィールド](https://learn.liferay.com/en/w/dxp/building-applications/objects/creating-and-managing-objects/fields)
+* [項目](https://learn.liferay.com/ja/w/dxp/building-applications/objects/creating-and-managing-objects/fields)
 * [オブジェクトへのフィールドの追加](https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/fields/adding-fields-to-objects)

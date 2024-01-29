@@ -2,7 +2,7 @@
 
 {bdg-secondary}`Liferay 7.4 U15+ および GA15+`
 
-Liferayは、_コンテンツページ_を翻訳するための統合されたツールを提供しますので、グローバルユーザーのために魅力的でローカライズされたエクスペリエンスを作成することができます。 これらのツールを使って、コンテントページのエクスペリエンスを手動で翻訳したり、翻訳をXLIFFファイルとしてインポートしたりすることができます。
+Liferayは、 **コンテンツページ** を翻訳するための統合されたツールを提供しますので、グローバルユーザーのために魅力的でローカライズされたエクスペリエンスを作成することができます。 これらのツールを使って、コンテントページのエクスペリエンスを手動で翻訳したり、翻訳をXLIFFファイルとしてインポートしたりすることができます。
 
 ```{important}
 コンテントページを翻訳する場合、ユーザーはページの名前とインラインフラグメントテキスト（例：HTML、ヘッダーなど）のみを翻訳することができます。 ウィジェットやマッピングされたフラグメントフィールドを翻訳することはできません。
@@ -17,14 +17,14 @@ Liferayは、_コンテンツページ_を翻訳するための統合された�
 ## コンテントページの手動翻訳
 
 ```{note}
-コンテントページのエクスペリエンスを手動で翻訳するには、コンテントページの*表示*権限と*更新*権限、または1つ以上の言語に対する翻訳権限のいずれかをユーザーが持っている必要があります。 詳細は [Managing Translation Permissions](./managing-translation-permissions.md) を参照してください。
+コンテントページのエクスペリエンスを手動で翻訳するには、コンテントページの*表示*権限と*更新*権限、または1つ以上の言語に対する翻訳権限のいずれかをユーザーが持っている必要があります。 詳細は [翻訳の権限の管理](./managing-translation-permissions.md) を参照してください。
 ```
 
 次の手順に従い、コンテントページのエクスペリエンスを手動で翻訳します。
 
-1. *サイトメニュー* (![サイトメニュー](../../images/icon-product-menu.png))を開き、_サイトビルダー_を展開し、_ページ_に進みます。
+1. **サイトメニュー**(![サイトメニュー](../../images/icon-product-menu.png))を開き、 **サイトビルダー** を展開し、 **ページ** に進みます。
 
-1. 翻訳したいコンテンツページの_アクション_ボタン(![アクションボタン](../../images/icon-actions.png))をクリックし、_翻訳_を選択します。
+1. 翻訳したいコンテンツページの **アクション** ボタン(![アクションボタン](../../images/icon-actions.png))をクリックし、 **翻訳** を選択します。
 
    これにより、翻訳インターフェースにリダイレクトされ、コンテンツの元のテキストを翻訳と一緒に表示できます。
 
@@ -32,7 +32,7 @@ Liferayは、_コンテンツページ_を翻訳するための統合された�
 
    ![Selecting Translate redirects you to the translation interface.](./translating-content-pages/images/01.png)
 
-1. 翻訳したい*経験*と*言語*を選択してください。
+1. 翻訳したい **経験** と **言語** を選択してください。
 
    ページの更新権限を持つユーザーは、元のテキストを任意の言語に翻訳できます。
 
@@ -46,18 +46,18 @@ Liferayは、_コンテンツページ_を翻訳するための統合された�
 
 1. 利用可能なフィールドに翻訳を入力してください。
 
-1. *Publish*または*Save as Draft*をクリックします。
+1. **Publish** または **Save as Draft** をクリックします。
 
    翻訳を公開すると、コンテントページに翻訳が適用され、下書きとして保存されます。
 
    また、ワークフローが有効な場合、翻訳を公開すると、ページに適用され、下書きとして保存される前に、レビュープロセスが開始されます。
 
-   または、_下書きとして保存_をクリックして、後で翻訳を適用することもできます。
+   または、 **下書きとして保存** をクリックして、後で翻訳を適用することもできます。
 
 ## 翻訳のエクスポートとインポート
 
 ```{note}
-コンテンツを翻訳用にエクスポートしたり、XLIFFの翻訳をインポートするには、選択されたページに対して*表示*および*更新*する権限が必要です。 詳細は [Managing Translation Permissions](./managing-translation-permissions.md) を参照してください。
+コンテンツを翻訳用にエクスポートしたり、XLIFFの翻訳をインポートするには、選択されたページに対して*表示*および*更新*する権限が必要です。 詳細は [翻訳の権限の管理](./managing-translation-permissions.md) を参照してください。
 ```
 
 Liferayでは、翻訳用のコンテンツページエクスペリエンスを `.xliff` または `.xlf` ファイルとしてエクスポートすることができます。 これらのファイルを翻訳者に送り、`.zip`ファイルとしてまとめてインポートすることもできますし、`.xliff`ファイルや`.xlf`ファイルとして個別にインポートすることもできます。
@@ -70,13 +70,13 @@ Liferay は XLIFF 1.2 と 2.0 の両方のファイルをサポートしてい�
 
 次の手順を実行します：
 
-1. *サイトメニュー* (![サイトメニュー](../../images/icon-product-menu.png))を開き、_サイトビルダー_を展開し、_ページ_に進みます。
+1. **サイトメニュー**(![サイトメニュー](../../images/icon-product-menu.png))を開き、 **サイトビルダー** を展開し、 **ページ** に進みます。
 
-1. 翻訳したいコンテンツページの_アクション_ボタン(![アクションボタン](../../images/icon-actions.png))をクリックし、_翻訳のためにエクスポート_を選択します。 エクスポートの設定を行うためのモーダルウィンドウが表示されます。
+1. 翻訳したいコンテンツページの **アクション** ボタン(![アクションボタン](../../images/icon-actions.png))をクリックし、 **翻訳のためにエクスポート** を選択します。 エクスポートの設定を行うためのモーダルウィンドウが表示されます。
 
    ![Select Export for Translation.](./translating-content-pages/images/03.png)
 
-1. エクスポート形式を選択します：_XLIFF 1.2_または_XLIFF 2.0_。
+1. エクスポート形式を選択します： **XLIFF 1.2** または **XLIFF 2.0** 。
 
 1. コンテンツページの原語を選択します。
 
@@ -86,7 +86,7 @@ Liferay は XLIFF 1.2 と 2.0 の両方のファイルをサポートしてい�
 
    ![Configure the export.](./translating-content-pages/images/04.png)
 
-1. *エクスポート*をクリックします。
+1. **エクスポート** をクリックします。
 
 Liferayは、選択された各エクスペリエンスのXLIFFファイルを含むZIPアーカイブを生成します。 これらのファイルは、対応する翻訳ソフトウェアで使用することができます。
 
@@ -94,9 +94,9 @@ Liferayは、選択された各エクスペリエンスのXLIFFファイルを�
 
 次の手順を実行します：
 
-1. *サイトメニュー* (![サイトメニュー](../../images/icon-product-menu.png))を開き、_サイトビルダー_を展開し、_ページ_に進みます。
+1. **サイトメニュー**(![サイトメニュー](../../images/icon-product-menu.png))を開き、 **サイトビルダー** を展開し、 **ページ** に進みます。
 
-1. 翻訳されたコンテンツページの_Actions_ボタン(![Actions Button](../../images/icon-actions.png)) をクリックし、_Import Translation_を選択します。
+1. 翻訳されたコンテンツページの **Actions** ボタン(![Actions Button](../../images/icon-actions.png)) をクリックし、 **Import Translation** を選択します。
 
    ![Select Import Translation.](./translating-content-pages/images/05.png)
 
@@ -108,7 +108,7 @@ Liferayは、選択された各エクスペリエンスのXLIFFファイルを�
    Liferay は [Export for Translation](#exporting-pages-for-translation) アクションを使用して作成された XLIFF ファイルのインポートをサポートしていますが、他の方法で生成されたファイルのインポートが成功することは保証できません。
    ```
 
-1. *［公開］*をクリックします。
+1. ［**公開**］ をクリックします。
 
    正常なインポートが行われた場合、Liferayはインポートしたファイルとともに成功メッセージを表示します。 翻訳がコンテントページに適用され、ページが下書きとして保存されます。 ワークフローが有効な場合、翻訳がページに適用される前に承認される必要があります。
 
@@ -120,7 +120,7 @@ Liferayは、選択された各エクスペリエンスのXLIFFファイルを�
 
 ## サードパーティーのサービスを利用したコンテントページの翻訳
 
-[Google Cloud Translation](./using-third-parties-for-translation.md#enabling-google-cloud-translation) , [Amazon Translate](./using-third-parties-for-translation.md#enabling-amazon-translate) , [Microsoft Translator](./using-third-parties-for-translation.md#enabling-microsoft-translator) とLiferayの統合を有効にした場合、それらを使ってWebコンテンツを自動的に翻訳することができます。 詳しくは、 [Using Third Parties for Translation](./using-third-parties-for-translation.md) をご覧ください。
+[Google Cloud Translation](./using-third-parties-for-translation.md#enabling-google-cloud-translation) , [Amazon Translate](./using-third-parties-for-translation.md#enabling-amazon-translate) , [Microsoft Translator](./using-third-parties-for-translation.md#enabling-microsoft-translator) とLiferayの統合を有効にした場合、それらを使ってWebコンテンツを自動的に翻訳することができます。 詳しくは、 [翻訳のための第三者機関の利用](./using-third-parties-for-translation.md) をご覧ください。
 
 ## 関連トピック
 

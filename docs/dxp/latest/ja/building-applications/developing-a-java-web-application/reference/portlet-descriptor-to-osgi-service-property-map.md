@@ -166,7 +166,7 @@
 * [<a name="two">2</a>] これらのプロパティの複数を使用できます。 これにより、値の配列が生成されます。
 * [<a name="three">3</a>] このタイプはOSGiサービスとして登録されています。
 * [<a name="four">4</a>] [https://xmlns.jcp.org/xml/ns/portlet/portlet-app_3_0.xsd](https://xmlns.jcp.org/xml/ns/portlet/portlet-app_3_0.xsd)
-* [<a name="five">5</a>] [`liferay-portlet-app_ [version].dtd`](https://learn.liferay.com/reference/latest/en/dxp/definitions/index.html)
+* [<a name="five">5</a>] [`liferay-portlet-app_ [version].dtd`](https://resources.learn.liferay.com/reference/latest/en/dxp/definitions/index.html)
 * [<a name="six">6</a>] 複数の`javax.portlet.dependency`プロパティを使用した例を以下に示します。
 
     **旧:**

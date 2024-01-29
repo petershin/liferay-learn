@@ -20,13 +20,13 @@
 
 ユーザーのために [セグメント](../segmentation/creating-and-managing-user-segments.md) を作成したら、それらのセグメントに基づいてコレクションにパーソナライズされたバリエーションを追加できます。
 
-1. サイトメニュー( ![サイトメニュー](../../../images/icon-applications-menu.png))を開き、_サイトビルダー_ &rarr; _コレクション_ に移動します。
+1. サイトメニュー( ![サイトメニュー](../../../images/icon-applications-menu.png))を開き、 **サイトビルダー** &rarr; **コレクション** に移動します。
 
 1. [コレクション](../../../site-building/displaying-content/collections-and-collection-pages/creating-collections.md) を作成するか、既存のものを選択する。
 
-1. *Add Personalized Variation*をクリックします。
+1. **Add Personalized Variation** をクリックします。
 
-   すでにパーソナライズされたバリエーションがあり、他の利用可能なセグメントがある場合は、パーソナライズされたバリエーションの横にある_追加_（[追加アイコン](../../../images/icon-add-app.png)）をクリックして、新しいパーソナライズされたバリエーションを追加します。
+   すでにパーソナライズされたバリエーションがあり、他の利用可能なセグメントがある場合は、パーソナライズされたバリエーションの横にある **追加**（ [追加アイコン](../../../images/icon-add-app.png) ）をクリックして、新しいパーソナライズされたバリエーションを追加します。
 
 1. セグメントを選択し、それに応じてコレクションをカスタマイズします。
 
@@ -38,7 +38,7 @@
 
 ユーザーが複数のセグメントに属している場合、 [ユーザーが属しているすべてのセグメントからのコレクションエントリ](#combining-collection-entries-from-all-segments) を組み合わせたり、パーソナライズされたバリエーションに優先順位をつけたりして、どのパーソナライズされたバリエーションをユーザーに表示するかを決定することができます。
 
-コレクションを編集する際、パーソナライズされたバリエーションのソート可能なリストにアクセスし、その_Actions_ボタン( ![Actions button](../../../images/icon-actions.png) )をクリックして、_Prioritize_または_Deprioritize_を選択することで、バリエーションのランクを変更することができます。 また、バリエーションをドラッグ＆ドロップして優先順位を並べ替えることもできる。
+コレクションを編集する際、パーソナライズされたバリエーションのソート可能なリストにアクセスし、その **Actions** ボタン( ![Actions button](../../../images/icon-actions.png) )をクリックして、 **Prioritize** または **Deprioritize** を選択することで、バリエーションのランクを変更することができます。 また、バリエーションをドラッグ＆ドロップして優先順位を並べ替えることもできる。
 
 ```{note}
 優先順位は、リスト内の各項目の位置に応じて割り当てられる。 最優先されるのはリストの一番上のポジションだ。
@@ -50,15 +50,15 @@
 
 複数の [セグメント](../segmentation/creating-and-managing-user-segments.md) に属するユーザについては、デフォルトエントリまたは優先順位 [のパーソナライズされたバリエーション](#prioritizing-variations) のみを表示するのではなく、そのユーザが属するすべてのセグメントからコレクションエントリを組み合わせて表示することができます。
 
-1. *グローバルメニュー* ( ![アプリケーションメニューアイコン](../../../images/icon-applications-menu.png))を開き、_コントロールパネル_ タブ &rarr; _システム設定_ の下の設定を選択します。
+1. **グローバルメニュー**( ![アプリケーションメニューアイコン](../../../images/icon-applications-menu.png))を開き、 **コントロールパネル** タブ &rarr; **システム設定** の下の設定を選択します。
 
 1. コンテンツとデータ」で「資産*」を選択する。
 
-1. システム・スコープで、_コレクション_を選択します。
+1. システム・スコープで、 **コレクション** を選択します。
 
 1. ダイナミック・コレクションとマニュアル・コレクションの機能を有効にします。
 
-1. ［_保存_］をクリックします。
+1. ［**保存**］をクリックします。
 
 ![Enable the feature to combine assets from all segments in asset publisher for dynamic and manual collections.](./personalizing-collections/images/03.png)
 
@@ -80,25 +80,25 @@
 
 まずデフォルトのコンテンツセットを作成し、アセットパブリッシャーを使ってホームページに設定します。
 
-1. *Site Menu* ( ![Site Menu](../../../images/icon-applications-menu.png) ) を開き、_Content and Data_ &rarr; _Content Sets_ に移動します。
+1. **Site Menu**( ![Site Menu](../../../images/icon-applications-menu.png) ) を開き、 **Content and Data** &rarr; **Content Sets** に移動します。
 
-1. *追加* ( ![追加](../../../images/icon-add.png))をクリックし、_手動選択_を選択します。
+1. **追加**( ![追加](../../../images/icon-add.png))をクリックし、 **手動選択** を選択します。
 
 1. ホームページ・コンテンツ*と名付ける。
 
-1. 新しいコンテンツセットでは、アセットエントリーの横にある_選択_をクリックし、_基本ウェブコンテンツ_を選択します。
+1. 新しいコンテンツセットでは、アセットエントリーの横にある **選択** をクリックし、 **基本ウェブコンテンツ** を選択します。
 
    ![Click Select to add a new asset entry.](./personalizing-collections/images/05.png)
 
-1. 基本ウェブコンテンツの選択ページで、追加したいコンテンツを選択し、_追加_をクリックします。
+1. 基本ウェブコンテンツの選択ページで、追加したいコンテンツを選択し、 **追加** をクリックします。
 
 1. ホーム・ページに移動し、アセット・パブリッシャー・ウィジェットをページに追加します。
 
 1. アセット・パブリッシャの[設定]を開きます。
 
-1. Asset Selectionで_Content Set_を選択します。
+1. Asset Selectionで **Content Set** を選択します。
 
-1. Select Content Setで_Select_をクリックし、_Home Page Content_を選択し、_Save_をクリックします。
+1. Select Content Setで **Select** をクリックし、 **Home Page Content** を選択し、 **Save** をクリックします。
 
 これで、設定したコンテンツ・セットがホームページのAsset Publisherウィジェットに表示されるようになりました。 次に、パーソナライズ用のコンテンツセットを設定します。
 
@@ -112,9 +112,9 @@
 
    ![Create a new personalized variation.](./personalizing-collections/images/06.png)
 
-1. Asset Entriesの横にある_Select_をクリックし、_Basic Web Content_を選択します。
+1. Asset Entriesの横にある **Select** をクリックし、 **Basic Web Content** を選択します。
 
-1. エンジニアの読者に適した記事を選択し、_追加_をクリックします。
+1. エンジニアの読者に適した記事を選択し、 **追加** をクリックします。
 
 これで、アメリカのエンジニアセグメントのメンバーがこのコンテンツセットを表示するときはいつでも、デフォルトではなく、パーソナライズされたバージョンが表示されるようになりました。 シミュレーターを使ってテストしてみましょう。
 

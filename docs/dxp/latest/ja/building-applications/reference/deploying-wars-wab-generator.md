@@ -78,7 +78,7 @@ module.framework.web.generator.generated.wabs.store=true
 module.framework.web.generator.generated.wabs.store.dir=${module.framework.base.dir}/wabs
 ```
 
-これらのプロパティは、WABジェネレータに生成されたWABをインストールの`osgi/wabs/`フォルダに保存するように指示します。 生成されたWABは、上記のWABストラクチャーの例と同じ構造になっています。 [Module Framework Web Application Bundles](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Module%20Framework%20Web%20Application%20Bundles) のプロパティセクションで詳細を説明しています。
+これらのプロパティは、WABジェネレータに生成されたWABをインストールの`osgi/wabs/`フォルダに保存するように指示します。 生成されたWABは、上記のWABストラクチャーの例と同じ構造になっています。 [Module Framework Web Application Bundles](https://resources.learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) のプロパティセクションで詳細を説明しています。
 
 WARプラグインをWABとしてデプロイでき、WABのコピーを保存して調べる方法が分かりました。
 

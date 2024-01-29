@@ -11,7 +11,7 @@ CSSクライアント拡張は、ページに新しいCSSスタイリングを�
 1. Java（JDK8またはJDK11）をインストールします。
 
    ```{note}
-   サポートされているJDK、データベース、環境については、 [互換性マトリックス](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) を確認してください。 推奨されるJVM設定については、 [JVM Configuration](../../../../installation-and-upgrades/reference/jvm-configuration.md) を参照のこと。
+   サポートされているJDK、データベース、環境については、 [互換性マトリックス](https://help.liferay.com/hc/ja/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) を確認してください。 推奨されるJVM設定については、 [JVM設定](../../../../installation-and-upgrades/reference/jvm-configuration.md) を参照のこと。
    ```
 
 1. サンプルワークスペースをダウンロードし、解凍します。
@@ -37,7 +37,7 @@ liferay-sample-global-css:
     url: global.css
 ```
 
-クライアントエクステンションは `liferay-sample-global-css` という ID を持ち、`type` や追加する CSS ファイルなど、CSS クライアントエクステンションの主要な設定を含んでいます。 利用可能なプロパティの詳細については、 [CSS YAML configuration reference](../css-yaml-configuration-reference.md) 。
+クライアントエクステンションは `liferay-sample-global-css` という ID を持ち、`type` や追加する CSS ファイルなど、CSS クライアントエクステンションの主要な設定を含んでいます。 利用可能なプロパティの詳細については、 [CSS YAMLコンフィギュレーションリファレンス](../css-yaml-configuration-reference.md) 。
 
 `assemble`ブロックも含まれている：
 
@@ -61,7 +61,7 @@ assemble:
 
 これは、クライアントエクステンションが有効になっているときに、ホームページのLiferayロゴの色を変更します。
 
-ボタンの背景色を変更するCSSを追加します。 global.css`ファイルを開き、`.btn-primary`クラスの宣言を追加し、`background-color`を指定する：
+ボタンの背景色を変更するCSSを追加します。 `global.css`ファイルを開き、`.btn-primary`クラスの宣言を追加し、`background-color`を指定する：
 
 ```css
 .btn-primary {
@@ -85,7 +85,7 @@ Liferayが起動したら、サンプルのワークスペースにあるクラ�
 これでクライアント拡張機能がビルドされ、Liferay の `deploy/` フォルダに zip がデプロイされます。
 
 ```{note}
-クライアント拡張を Liferay Experience Cloud にデプロイするには、Liferay Cloud [Command-Line Tool](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool) を使用して [`lcp deploy`](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool#deploying-to-your-liferay-cloud-environment) を実行します。
+クライアント拡張を Liferay Experience Cloud にデプロイするには、Liferay Cloud [コマンドラインツール](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool) を使用して [コマンドラインツール](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool#deploying-to-your-liferay-cloud-environment) を実行します。
 ```
 
 ```{tip}
@@ -104,19 +104,19 @@ STARTED sample-global-css_1.0.0
 
 デプロイされたクライアント拡張を使用するために、Liferayのページを設定します。
 
-1. 少なくとも1つのボタンがあるページで、上部の_編集_ ( ![編集アイコン](../../../../images/icon-edit-pencil.png))をクリックします。
+1. 少なくとも1つのボタンがあるページで、上部の **編集**( ![編集アイコン](../../../../images/icon-edit-pencil.png))をクリックします。
 
-1. サイドバーで、ページデザインオプションメニュー（！[ページデザインオプションアイコン](../../../../images/icon-format.png)）に移動し、メニューの一番上にある_設定_アイコン（！[設定アイコン](../../../../../images/icon-cog3.png)）をクリックします。
+1. サイドバーで、ページデザインオプションメニュー（![ページデザインオプションアイコン](../../../../images/icon-format.png)）に移動し、メニューの一番上にある **設定** アイコン（![設定アイコン](../../../../../images/icon-cog3.png)）をクリックします。
 
    ![Click the configuration icon in the Page Design Options menu to access this client extension's configurations.](./using-a-css-client-extension/images/01.png)
 
-1. ページ下部のCSS Client Extensionsセクションで、_Add CSS Client Extensions_をクリックします。
+1. ページ下部のCSS Client Extensionsセクションで、 **Add CSS Client Extensions** をクリックします。
 
    ![Add the CSS client extension from the list.](./using-a-css-client-extension/images/02.png)
 
-1. ポップアップモーダルからCSSクライアント拡張機能を選択し、_追加_をクリックします。
+1. ポップアップモーダルからCSSクライアント拡張機能を選択し、 **追加** をクリックします。
 
-1. *保存*をクリックします。
+1. **保存** をクリックします。
 
 これで、クライアント拡張の設定は完了です。 ページエディタで、ボタンの背景色が、CSSで指定した色になりました。 編集モード以外でページにCSSが適用されるのを確認するには、ページを公開する必要があります。
 

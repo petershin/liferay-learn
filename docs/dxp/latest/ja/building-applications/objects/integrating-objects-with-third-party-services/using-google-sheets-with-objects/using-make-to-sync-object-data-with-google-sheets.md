@@ -141,4 +141,4 @@
 
 * [オブジェクトの概要](../../../objects.md)
 * [オブジェクトの作成と管理](../../creating-and-managing-objects.md)
-* [Understanding Object Integrations](../../understanding-object-integrations.md)
+* [オブジェクト統合を理解する](../../understanding-object-integrations.md)

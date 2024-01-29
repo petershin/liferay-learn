@@ -10,7 +10,7 @@
 
 ## ドキュメントのフレンドリURLの設定
 
-ファイルのフレンドリーURLは、 [ファイルアップロード中（](./uploading-files.md) ）、またはファイルを編集するときに手動で設定できます。
+ファイルのフレンドリーURLは、 [ファイルアップロード中](./uploading-files.md)、またはファイルを編集するときに手動で設定できます。
 
 ```{note}
 複数のファイルをアップロードする場合、各ファイルのフレンドリーURLはファイル名を使って自動的に生成されます。
@@ -18,17 +18,17 @@
 
 以下の手順で、ファイルのフレンドリURLを設定します。
 
-1. サイトメニュー](../../../images/icon-product-menu.png)を開き、[コンテンツとデータ]を展開し、[ドキュメントとメディア]に進みます。
+1. ![サイトメニュー](../../../images/icon-product-menu.png)を開き、[コンテンツとデータ]を展開し、[ドキュメントとメディア]に進みます。
 
 1. 目的のファイルのアップロードまたは編集を開始します。
 
-1. *フレンドリーURL*フィールドを編集する。
+1. **フレンドリーURL** フィールドを編集する。
 
    各URLの値は、サイトごとに一意である必要があります。 値がすでに使用されている場合、Liferayは自動的にURLの末尾に数値を追加することで競合を解決します（例：`my-file`、`my-file-1`、`my-file-2`）。
 
    ![When uploading or editing a file, you can change its friendly URL.](./configuring-document-urls/images/01.png)
 
-1. *［公開］*をクリックします。
+1. ［**公開**］ をクリックします。
 
 一旦保存されると、指定されたURL（例えば、`http://[server-address]/documents/d/[site-friendly-url]/[file-friendly-URL]`）でファイルにアクセスすることができます。
 
@@ -44,15 +44,15 @@
 
 1. ![サイトメニュー](../../../images/icon-product-menu.png)を開き、[コンテンツとデータ]を展開し、[ドキュメントとメディア]に進みます。
 
-1. 目的のファイルの_Actions_ボタン( ![Actions Button](../../../images/icon-actions.png) )をクリックし、_Edit_を選択します。
+1. 目的のファイルの **Actions** ボタン( ![Actions Button](../../../images/icon-actions.png) )をクリックし、 **Edit** を選択します。
 
-1. Friendly URLフィールドの_History_ボタン( ![History Button](../../../images/icon-history.png) )をクリックします。
+1. Friendly URLフィールドの **History** ボタン( ![History Button](../../../images/icon-history.png) )をクリックします。
 
    ![Click the History button for the Friendly URL field.](./configuring-document-urls/images/02.png)
 
-1. *復元*ボタン( ![復元ボタン](../../../images/icon-restore2.png))をクリックして、現在のフレンドリーURLを選択したURLに置き換えます。
+1. **復元** ボタン( ![復元ボタン](../../../images/icon-restore2.png))をクリックして、現在のフレンドリーURLを選択したURLに置き換えます。
 
-1. 選択したURLをファイルの履歴から削除するには、_Forget URL_ ボタン ( ![Forget URL Button](../../../images/icon-delete.png) ) をクリックします。 削除すると、そのURLではファイルにアクセスできなくなります。
+1. 選択したURLをファイルの履歴から削除するには、 **Forget URL** ボタン ( ![Forget URL Button](../../../images/icon-delete.png) ) をクリックします。 削除すると、そのURLではファイルにアクセスできなくなります。
 
    ![Click the Restore or Forget URL buttons.](./configuring-document-urls/images/03.png)
 
@@ -66,7 +66,7 @@ Liferay 7.4 U34/GA34から、表示ページテンプレートのフレームワ
 
 ## ドキュメントのバージョンURL
 
-すべてのファイルフレンドリURLは、ファイルの最新バージョンにつながります。 以前のバージョンのURLにアクセスしたい場合は、ファイルのバージョン履歴に移動し、目的のバージョンの_ダウンロード_ URLをコピーします。
+すべてのファイルフレンドリURLは、ファイルの最新バージョンにつながります。 以前のバージョンのURLにアクセスしたい場合は、ファイルのバージョン履歴に移動し、目的のバージョンの **ダウンロード** URLをコピーします。
 
 ![Copy the download URL for the desired version.](./configuring-document-urls/images/04.png)
 

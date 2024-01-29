@@ -4,7 +4,7 @@ toc:
 ---
 # 外部システムからのデータ管理
 
-{bdg-link-primary}`[ベータ版特集](../../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
+{bdg-link-primary}` [ベータ版特集](../../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags) `
 
 Liferay Objectsは、データ構造をモデリングし、Liferay DXPと統合されたビジネスロジックを実装するためのローコード機能を提供します。 このフレームワークを使用すると、カスタムワークフロー、バリデーション、通知などのユーザーエクスペリエンスを作成できます。
 
@@ -23,7 +23,7 @@ Liferay Objectsは、データ構造をモデリングし、Liferay DXPと統合
 
 * [インデックス](../../../using-search/search-administration-and-tuning/search-administration.md#index-actions) 
 
-これらの制限に加え、プロキシオブジェクトは標準オブジェクトと同じプラットフォーム統合を共有する。 詳細は [Understanding Object Integrations](../understanding-object-integrations.md) を参照してください。
+これらの制限に加え、プロキシオブジェクトは標準オブジェクトと同じプラットフォーム統合を共有する。 詳細は [オブジェクト統合を理解する](../understanding-object-integrations.md) を参照してください。
 ```
 
 ## Liferay でプロキシオブジェクトデータを扱う
@@ -36,7 +36,7 @@ Liferay Objectsは、データ構造をモデリングし、Liferay DXPと統合
 
 現在、Liferay にはプロキシオブジェクト用の Salesforce への [beta](../../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags) コネクタが含まれています。 これを使用すると、プロキシオブジェクトを [カスタム Salesforce オブジェクト](https://help.salesforce.com/s/) と統合し、Salesforce を外部ストレージシステムとして使用できます。
 
-この機能を使用するには、Proxy Object (LPS-135430) [機能フラグ](../../../system-administration/configuring-liferay/feature-flags.md) を有効にし、 [Using Objects with Salesforce](./managing-data-from-external-systems/using-objects-with-salesforce.md) を参照してください。
+この機能を使用するには、Proxy Object (LPS-135430) [機能フラグ](../../../system-administration/configuring-liferay/feature-flags.md) を有効にし、 [Salesforce でのオブジェクトの使用](./managing-data-from-external-systems/using-objects-with-salesforce.md) を参照してください。
 
 ## 関連トピック
 

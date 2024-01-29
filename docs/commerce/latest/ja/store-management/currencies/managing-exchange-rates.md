@@ -37,7 +37,7 @@
 為替レートの自動更新が有効になり、2時間ごとに為替レートが更新されます。
 
 ```{warning}
-この機能を無効にしたい場合は、 [blacklist](https://learn.liferay.com/web/guest/w/dxp/system-administration/installing-and-managing-apps/managing-apps/blacklisting-osgi-components.md) 。 インターバルにゼロや負の数を入力しないでください。
+この機能を無効にしたい場合は、 [OSGiコンポーネントのブラックリスト登録](https://learn.liferay.com/web/guest/w/dxp/system-administration/installing-and-managing-apps/managing-apps/blacklisting-osgi-components.md) 。 インターバルにゼロや負の数を入力しないでください。
 ```
 
 ## 為替レートの手動設定

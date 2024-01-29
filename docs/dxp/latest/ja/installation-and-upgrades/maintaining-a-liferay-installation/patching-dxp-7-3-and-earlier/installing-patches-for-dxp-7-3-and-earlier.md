@@ -125,7 +125,7 @@ DXPバンドルにパッチを適用する場合は、以下の基本的なパ�
     ./patching-tool.sh info
     ```
 
-    インデックスの更新がある場合は、[`portal-ext.properties` ファイル](../../reference/portal-properties.md)の [`database.indexes.update.on.startup`](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Database) Portal Propertyを `true` に設定します。
+    インデックスの更新がある場合は、[`portal-ext.properties` ファイル](../../reference/portal-properties.md)の [`database.indexes.update.on.startup`](https://resources.learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) Portal Propertyを `true` に設定します。
 
     ```properties
     database.indexes.update.on.startup=true

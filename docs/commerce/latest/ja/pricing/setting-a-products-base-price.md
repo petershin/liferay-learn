@@ -10,7 +10,7 @@ SKUを作成するとき、そのSKUには基本価格がありません。 SKU�
 
 1. 目的の商品をクリックします。
 
-1. **SKUs** タブに移動し、目的の*SKU*をクリックします。
+1. **SKUs** タブに移動し、目的の **SKU** をクリックします。
 
 1. **価格** タブを開きます。
 
@@ -28,9 +28,9 @@ SKUに [単位](../product-management/creating-and-managing-products/products/un
 
 1. 目的の商品をクリックします。
 
-1. **SKUs** タブに移動し、目的の*SKU*をクリックします。
+1. **SKUs** タブに移動し、目的の **SKU** をクリックします。
 
-1. **Details** タブで、 **Pricing** の下の*Base Price*フィールドに希望の値を入力する。
+1. **Details** タブで、 **Pricing** の下の **Base Price** フィールドに希望の値を入力する。
 
    オプションで、SKUの **プロモーション価格** と **原価** を設定することもできます。
 
@@ -59,7 +59,7 @@ SKUに [単位](../product-management/creating-and-managing-products/products/un
 1. **Details** タブのPricingセクションに以下を入力する：
 
    * **価格** : 34
-   * **プロモ価格(空欄のまま**) : (このフィールドを入力すると、上記の価格とプロモ価格の両方が商品ページに表示され、購入者はマークダウンを確認できます)
+   * **プロモ価格(空欄のまま)** : (このフィールドを入力すると、上記の価格とプロモ価格の両方が商品ページに表示され、購入者はマークダウンを確認できます)
    * **コスト** : 20
 
    ![Setting a product's base price in 2.1](./setting-a-products-base-price/images/01.png)

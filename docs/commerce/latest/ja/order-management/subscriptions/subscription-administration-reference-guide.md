@@ -61,7 +61,7 @@ Payment Subscriptionセクションでは、次の情報を追跡します。
 | モード          | これは、間隔がマークされた日付を指します。 ユーザーは、オプションとして月の正確な日または **月の最後の日** を選択することもできます。 |
 
 ```{warning}
-この機能を無効にしたい場合は、 [blacklist](https://learn.liferay.com/web/guest/w/dxp/system-administration/installing-and-managing-apps/managing-apps/blacklisting-osgi-components.md) 。 インターバルにゼロや負の数を入力しないでください。
+この機能を無効にしたい場合は、 [OSGiコンポーネントのブラックリスト登録](https://learn.liferay.com/web/guest/w/dxp/system-administration/installing-and-managing-apps/managing-apps/blacklisting-osgi-components.md) 。 インターバルにゼロや負の数を入力しないでください。
 ```
 
 ### 配送のサブスクリプション
@@ -79,7 +79,7 @@ Payment Subscriptionセクションでは、次の情報を追跡します。
 | モード          | これは、間隔がマークされた日付を指します。 ユーザーは、オプションとして月の正確な日または **月の最後の日** を選択することもできます。 |
 
 ```{warning}
-この機能を無効にしたい場合は、 [blacklist](https://learn.liferay.com/web/guest/w/dxp/system-administration/installing-and-managing-apps/managing-apps/blacklisting-osgi-components.md) 。 インターバルにゼロや負の数を入力しないでください。
+この機能を無効にしたい場合は、 [OSGiコンポーネントのブラックリスト登録](https://learn.liferay.com/web/guest/w/dxp/system-administration/installing-and-managing-apps/managing-apps/blacklisting-osgi-components.md) 。 インターバルにゼロや負の数を入力しないでください。
 ```
 
 ### 項目数

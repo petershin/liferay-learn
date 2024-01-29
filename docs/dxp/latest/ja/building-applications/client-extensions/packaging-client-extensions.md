@@ -3,7 +3,7 @@
 {bdg-secondary}`liferay Experience Cloud and Liferay DXP 7.4+ (self-hosted)` 
 {bdg-unsupported}`Liferay Cloud：セルフマネージド`
 
-クライアント拡張プロジェクトは _Liferay Universal File Format Archives_ (LUFFAs) と呼ばれる展開可能なアーカイブとしてビルドされ、拡張子は `.zip` です。 各LUFFAは、特定の構造を持ち、特定のコンポーネント・ファイルを定義します。プロジェクトによって提供されない場合は、自動的に生成されます。 Liferay ワークスペースは、クライアント拡張プロジェクトをビルドするときにパッケージ化します。 パッケージングがどのように機能するのかを理解することは、 [クライアント・エクステンションを組み立てる](./working-with-client-extensions.md#assembling-client-extensions) あるいは別のプロセスでLUFFAを作成する場合に重要である。
+クライアント拡張プロジェクトは **Liferay Universal File Format Archives**(LUFFAs) と呼ばれる展開可能なアーカイブとしてビルドされ、拡張子は `.zip` です。 各LUFFAは、特定の構造を持ち、特定のコンポーネント・ファイルを定義します。プロジェクトによって提供されない場合は、自動的に生成されます。 Liferay ワークスペースは、クライアント拡張プロジェクトをビルドするときにパッケージ化します。 パッケージングがどのように機能するのかを理解することは、 [クライアント・エクステンションを組み立てる](./working-with-client-extensions.md#assembling-client-extensions) あるいは別のプロセスでLUFFAを作成する場合に重要である。
 
 これがLUFFAの構造だ：
 
@@ -90,7 +90,7 @@ LUFFAを自分でパッケージングする場合、各クライアント拡張
 | :------------------------------------------------------------------------- | :------------ | :--- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [バッチ](#example-batch-client-extension-lcp-json)                 | &#10008;      | 仕事   | <ul><li>環境変数 `LIFERAY_BATCH_OAUTH_APP_ERC` には、バッチクライアント拡張の `oAuthApplicationHeadlessServer` プロパティの値を設定しなければならない。 これは補間によって提供することができる。</li><li>`cpu`、`memory`、`scale` には小さな値を指定できる。</li></ul>                                                                                    |
 | [コンフィギュレーション](#example-configuration-client-extension-lcp-json) | &#10008      | 仕事   | <ul><li>バッチ拡張よりもさらにメモリ消費量が少ない。</li><li>`cpu`、`memory`、`scale` には非常に小さな値を指定できる。</li></ul>                                                                                                                                                                                        |
-| [フロントエンド](#example-front-end-client-extension-lcp-json)         | &#10008      | デプロイ | <ul><li>`loadBalancer` プロパティを `targetPort` に `80` を指定して指定する必要がある。</li><li> [](https://learn.liferay.com/w/liferay-cloud/troubleshooting/self-healing) `livenessProbe` プロパティと `readinessProbe` プロパティを指定する必要がある。</li><li>`cpu`、`memory`、`scale` には小さな値を指定できる。</li></ul> |
+| [フロントエンド](#example-front-end-client-extension-lcp-json)         | &#10008      | デプロイ | <ul><li>`loadBalancer` プロパティを `targetPort` に `80` を指定して指定する必要がある。</li><li> [セルフヒーリング](https://learn.liferay.com/w/liferay-cloud/troubleshooting/self-healing) `livenessProbe` プロパティと `readinessProbe` プロパティを指定する必要がある。</li><li>`cpu`、`memory`、`scale` には小さな値を指定できる。</li></ul> |
 
 ### バッチクライアント拡張 LCP.json の例
 
@@ -147,7 +147,7 @@ LUFFAを自分でパッケージングする場合、各クライアント拡張
 }
 ```
 
-詳細は [Configuration via LCP.json](https://learn.liferay.com/w/liferay-cloud/reference/configuration-via-lcp-json) を参照。
+詳細は [LCP.jsonによるコンフィギュレーション](https://learn.liferay.com/w/liferay-cloud/reference/configuration-via-lcp-json) を参照。
 
 ## `static`
 

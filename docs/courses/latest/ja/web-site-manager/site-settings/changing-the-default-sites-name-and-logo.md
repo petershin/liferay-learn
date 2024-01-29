@@ -6,7 +6,7 @@
 
 ## サイトのロゴを変更する
 
-カイル・クライン（Kyle Klein）としてログインし、 [インスタンスの管理者](https://learn.liferay.com/w/courses/liferay-administrator/users-accounts-organizations/managing-users#create-an-administrator) 、インスタンスの設定を変更できるようにします。
+カイル・クライン（Kyle Klein）としてログインし、 [ユーザーを管理する](https://learn.liferay.com/w/courses/liferay-administrator/users-accounts-organizations/managing-users#create-an-administrator) 、インスタンスの設定を変更できるようにします。
 
 1. Liferayインスタンスにアクセスし、Kyle Kleinとしてログインします。
 
@@ -64,4 +64,4 @@
 
 ## 関連コンセプト
 
-* [インスタンス構成](https://learn.liferay.com/w/dxp/system-administration/configuring-liferay/virtual-instances/instance-configuration) 
+* [インスタンス設定](https://learn.liferay.com/w/dxp/system-administration/configuring-liferay/virtual-instances/instance-configuration) 

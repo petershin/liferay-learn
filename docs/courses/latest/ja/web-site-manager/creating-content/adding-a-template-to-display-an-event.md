@@ -8,31 +8,31 @@
 
 1. パブリックサイトの管理者であるPreston Palmerとしてログインしてください（まだの場合）。
 
-1. サイトメニューに移動する (![サイトメニュー](../../images/icon-product-menu.png)) &rarr; _Content & Data_ &rarr; _Webコンテンツ_.
+1. サイトメニューに移動する (![サイトメニュー](../../images/icon-product-menu.png)) &rarr; **Content & Data** &rarr; **Webコンテンツ** .
 
-1. *Structures*タブをクリックして、以前に作成した構造体を表示する。
+1. **Structures** タブをクリックして、以前に作成した構造体を表示する。
 
-1. イベント構造のアクションメニュー（[アクションアイコン](../../images/icon-actions.png)）で_テンプレートの管理_を選択します。
+1. イベント構造のアクションメニュー（ [アクションアイコン](../../images/icon-actions.png) ）で **テンプレートの管理** を選択します。
 
    ![Click Manage Templates to specifically add templates for this web content structure.](./adding-a-template-to-display-an-event/images/01.png)
 
-1. 新しいテンプレートを作成するには、_追加_ (![アイコンの追加](../../images/icon-add.png))をクリックします。
+1. 新しいテンプレートを作成するには、 **追加**(![アイコンの追加](../../images/icon-add.png))をクリックします。
 
    新しいテンプレートは、あなたがテンプレートを管理することを選択したため、イベント構造と自動的に関連付けられます。
 
 1. ページの一番上に、タイトルとして`Simple Event Format`と入力する。
 
-1. Propertiesメニュー（画面右側）の_Description_フィールドに次のように入力する： `A generic template to display an event.`.
+1. Propertiesメニュー（画面右側）の **Description** フィールドに次のように入力する： `A generic template to display an event.`.
 
 ## テンプレートのフィールドを設定する
 
 ここで、イベント記事のフィールドデータを表示する順番とフォーマットをアレンジする。
 
-1. *Elements*（[Elementsアイコン](../../images/icon-list-ul.png)）をクリックして、Elementsメニューを再度開きます。
+1. **Elements**（ [Elementsアイコン](../../images/icon-list-ul.png) ）をクリックして、Elementsメニューを再度開きます。
 
 1. テンプレート本文をクリックし、プレースホルダー・テキストを削除する。
 
-1. [要素]メニューで、[ジャーナル]の下のフィールドまでスクロールダウンし、_タイトル_をクリックします。
+1. [要素]メニューで、[ジャーナル]の下のフィールドまでスクロールダウンし、 **タイトル** をクリックします。
 
    これにより、タイトル値を使用するコードが自動的に追加される。
 
@@ -54,11 +54,11 @@
 
    ![HTML and FreeMarker tags are used together to format web content templates.](./adding-a-template-to-display-an-event/images/03.png)
 
-1. Enterキーを2回押して新しい行を2行追加し、「要素」メニューのフィールドリストから「_バナー画像_」をクリックする。
+1. Enterキーを2回押して新しい行を2行追加し、「要素」メニューのフィールドリストから「**バナー画像**」をクリックする。
 
 1. Enterを2回押して新しい行を2行追加し、HTMLタグ（`<hr>`）で区切られた行を追加する。
 
-1. Enterを2回押して新しい行を2行追加し、要素メニューのフィールドリストから_本文_をクリックする。
+1. Enterを2回押して新しい行を2行追加し、要素メニューのフィールドリストから **本文** をクリックする。
 
 ![The completed Event template displays the title, the summary, the banner image, and then the article body beneath a separator line.](./adding-a-template-to-display-an-event/images/04.png)
 
@@ -68,6 +68,6 @@
 
 ## 関連コンセプト
 
-- [ウェブ・コンテンツ・テンプレートの作成](https://learn.liferay.com/web/guest/w/dxp/content-authoring-and-management/web-content/web-content-templates/creating-web-content-templates)
+- [Webコンテンツテンプレートの作成](https://learn.liferay.com/web/guest/w/dxp/content-authoring-and-management/web-content/web-content-templates/creating-web-content-templates)
 
-- [ウェブコンテンツのテンプレートをフラグメントにマッピングする](https://learn.liferay.com/web/guest/w/dxp/content-authoring-and-management/web-content/web-content-templates/mapping-web-content-templates-to-fragments)
+- [Webコンテンツテンプレートのフラグメントへのマッピング](https://learn.liferay.com/web/guest/w/dxp/content-authoring-and-management/web-content/web-content-templates/mapping-web-content-templates-to-fragments)

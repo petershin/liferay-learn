@@ -1,6 +1,6 @@
 # SAMLによる認証
 
-SAMLで認証する場合、Liferayはサービスプロバイダ（SP）またはIDプロバイダ（IdP）の役割を果たすことができる。 詳細は、 [SAML による認証](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/configuring-sso/authenticating-with-saml) を参照のこと。
+SAMLで認証する場合、Liferayはサービスプロバイダ（SP）またはIDプロバイダ（IdP）の役割を果たすことができる。 詳細は、 [SAMLによる認証 (近日公開！)](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/configuring-sso/authenticating-with-saml) を参照のこと。
 
 クラリティ・ビジョン・ソリューションズは、ファビュラス・フレームを買収することで成長を遂げました。 他の企業を買収する可能性を検討する中で、ITチームは、SAMLを利用してユーザー資格情報の保存と管理を一元化することを決定した。 以下の手順で、実際に見てみよう。
 
@@ -112,6 +112,6 @@ SAMLで認証する場合、Liferayはサービスプロバイダ（SP）また�
 
 ## 関連コンセプト
 
-- [SAMLによる認証](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/configuring-sso/authenticating-with-saml)
-- [SAML Authentication Process Overview](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/configuring-sso/authenticating-with-saml/saml-authentication-process-overview)
+- [SAMLによる認証 (近日公開！)](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/configuring-sso/authenticating-with-saml)
+- [SAML Authentication Process Overview (近日公開！)](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/configuring-sso/authenticating-with-saml/saml-authentication-process-overview)
 - [SAML管理](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/configuring-sso/authenticating-with-saml/saml-admin)

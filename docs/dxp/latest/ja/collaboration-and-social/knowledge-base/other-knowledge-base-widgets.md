@@ -78,7 +78,7 @@ Knowledge Base 3.0.0では、Knowledge Base Searchウィジェットは廃止さ
 
 ウィジェットをページに追加した後、
 
-1. オプション ( [**オプションボタン](../../images/icon-options.png) )をクリックし、***設定** を選択します。
+1. オプション ( ![オプションボタン](../../images/icon-options.png) )をクリックし、**設定** を選択します。
 
    ![Choose the criteria to display for the search results.](./other-knowledge-base-widgets/images/06.png)
 

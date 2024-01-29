@@ -71,7 +71,7 @@ Liferay UI taglibは、言語フラグアイコンも公開します。 言語�
 
 ![アプリでFont Awesomeアイコンを使用できます。](./liferay-ui-icons/images/05.png)
 
-上記の例では、アイコンの使用可能な属性のいくつかを使用しています。 完全なリストについては、 [Icon taglibdocs](https://learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/liferay-ui/icon.html) を参照してください。
+上記の例では、アイコンの使用可能な属性のいくつかを使用しています。 完全なリストについては、 [Icon taglibdocs](https://resources.learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/liferay-ui/icon.html) を参照してください。
 
 ## 関連トピック
 

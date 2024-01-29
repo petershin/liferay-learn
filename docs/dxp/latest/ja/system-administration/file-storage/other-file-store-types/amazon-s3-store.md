@@ -40,10 +40,10 @@ Amazon S3にはSAXParserが必要です。 お使いの環境でSAXParserが利�
 
 1. [**S3 Store**] 画面で、ストアを設定します。
 
-    * **［Bucket Name］** ：バケットの名前。
+    * **［Bucket Name］ ** ：バケットの名前。
     * **［Access Key］** ：AWSアクセスキー。
     * **［Secret Key］** ：シークレットキー。
-    * **S3 Region** ： [地理的地域](https://docs.aws.amazon.com/general/latest/gr/s3.html) 。デフォルトは`us-east-1`です。
+    * ** S3 Region** ： [地理的地域](https://docs.aws.amazon.com/general/latest/gr/s3.html) 。デフォルトは`us-east-1`です。
 
     ![Amazon S3ストアの設定](./amazon-s3-store/images/01.png)
 

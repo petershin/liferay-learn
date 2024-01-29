@@ -11,16 +11,16 @@ visibility:
 
 Liferay DXPベースのデジタルコマースサイトについて見込み客と話をする際、特に重視すべき点は以下の通りです。
 
-* [コマース](https://learn.liferay.com/w/commerce/index)
-* [ヘッドレスAPIとマルチチャネル](https://learn.liferay.com/w/dxp/headless-delivery)
-* [ローコード／ノーコード・アプリケーション構築](https://learn.liferay.com/w/dxp/building-applications/objects)
-* [データモデリングとプロセスオートメーション](https://learn.liferay.com/w/dxp/process-automation)
-* [コンテンツと資産管理 ](https://learn.liferay.com/w/dxp/content-authoring-and-management)
-* [アナリティクス](https://learn.liferay.com/w/analytics-cloud/index) および [最適化](https://learn.liferay.com/w/dxp/site-building/optimizing-sites)
-* [セグメンテーションとパーソナライゼーション](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience)
-* [検索](https://learn.liferay.com/w/dxp/using-search) と [ナビゲーション](https://learn.liferay.com/w/dxp/site-building/site-navigation)
+* [Commerce](https://learn.liferay.com/w/commerce/index)
+* [ヘッドレスデリバリー](https://learn.liferay.com/w/dxp/headless-delivery)
+* [オブジェクト](https://learn.liferay.com/w/dxp/building-applications/objects)
+* [プロセスの自動化](https://learn.liferay.com/w/dxp/process-automation)
+* [コンテンツのオーサリングと管理](https://learn.liferay.com/w/dxp/content-authoring-and-management)
+* [Analytics Cloud](https://learn.liferay.com/w/analytics-cloud/index) および [サイトの最適化](https://learn.liferay.com/w/dxp/site-building/optimizing-sites)
+* [サイトエクスペリエンスのパーソナライズ](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience)
+* [検索の利用](https://learn.liferay.com/w/dxp/using-search) と [サイトナビゲーション](https://learn.liferay.com/w/dxp/site-building/site-navigation)
 * 統合と相互運用性
-* [デザイン・システムとエクスペリエンス・マネジメント](https://learn.liferay.com/w/dxp/site-building)
+* [サイトの構築](https://learn.liferay.com/w/dxp/site-building)
 
 上記のトピックのうち、以下の2つが最も重要である：
 

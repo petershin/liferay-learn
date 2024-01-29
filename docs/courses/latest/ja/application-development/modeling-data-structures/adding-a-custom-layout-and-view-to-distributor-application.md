@@ -1,6 +1,6 @@
 # ディストリビューター・アプリケーションにカスタムレイアウトとカスタムビューを追加する
 
-50以上のフィールドを持つ現在のディストリビューター・アプリケーションのユーザー・インターフェイスは、エントリーの作成と表示にはもはや実行不可能です。 これは、デフォルトの [レイアウト](https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/layouts) と [ビュー](https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/views) が、すべてのオブジェクト・フィールドを含み、アルファベット順に表示するためです。 レイアウトはオブジェクト・エントリーを作成・編集するためのUIを提供し、ビューは既存のエントリーを表示・管理するためのUIを提供する。
+50以上のフィールドを持つ現在のディストリビューター・アプリケーションのユーザー・インターフェイスは、エントリーの作成と表示にはもはや実行不可能です。 これは、デフォルトの [レイアウト](https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/layouts) と [閲覧数](https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/views) が、すべてのオブジェクト・フィールドを含み、アルファベット順に表示するためです。 レイアウトはオブジェクト・エントリーを作成・編集するためのUIを提供し、ビューは既存のエントリーを表示・管理するためのUIを提供する。
 
 データ構造のモデリングを進める前に、cURLスクリプトを使用してDistributor Application用のカスタムレイアウトとビューを作成します。
 
@@ -81,5 +81,5 @@
 
 ## 関連コンセプト
 
-* [レイアウト](https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/layouts) 
-* [ビュー](https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/views) 
+* [レイアウト](https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/layouts)
+* [閲覧数](https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/views)

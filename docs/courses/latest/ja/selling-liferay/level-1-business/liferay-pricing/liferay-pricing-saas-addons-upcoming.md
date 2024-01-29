@@ -45,7 +45,7 @@ Liferay DXP が電子メール・アドレスをどのように処理するか�
 プラン間を移動して利用可能なプロジェクト・ワークスペースを増やすだけでなく、各プランのワークスペースを追加購入することも可能です。
 
 ```{note}
-プロジェクト・ワークスペースのコンセプトは新しく、Liferay Experience Cloud SaaS専用です。 その他のユースケースでは、Liferay DXP [Virtual Instances](https://learn.liferay.com/web/guest/w/dxp/system-administration/configuring-liferay/virtual-instances) 機能を使用して同様の結果を得ることができます。  
+プロジェクト・ワークスペースのコンセプトは新しく、Liferay Experience Cloud SaaS専用です。 その他のユースケースでは、Liferay DXP [仮想インスタンス](https://learn.liferay.com/web/guest/w/dxp/system-administration/configuring-liferay/virtual-instances) 機能を使用して同様の結果を得ることができます。  
 ```
 
 ### 延長容量
@@ -60,7 +60,7 @@ Liferay DXP が電子メール・アドレスをどのように処理するか�
 
 ### 専用リソース
 
-Liferay Experience Cloud SaaSはマルチテナント環境で、各Liferay顧客は他の顧客とLiferayインスタンスを共有します。  技術的な用語で言えば、各顧客は本番環境、UAT環境、そしてもしあれば開発環境用にLiferay " [Virtual Instances](https://learn.liferay.com/web/guest/w/dxp/system-administration/configuring-liferay/virtual-instances/understanding-virtual-instances) " を手に入れることになります。
+Liferay Experience Cloud SaaSはマルチテナント環境で、各Liferay顧客は他の顧客とLiferayインスタンスを共有します。  技術的な用語で言えば、各顧客は本番環境、UAT環境、そしてもしあれば開発環境用にLiferay " [仮想インスタンスを理解する](https://learn.liferay.com/web/guest/w/dxp/system-administration/configuring-liferay/virtual-instances/understanding-virtual-instances) " を手に入れることになります。
 
 お客様が必要な場合、または自分自身からインストールを分離したい場合は、専用のLiferayインスタンスとデータベースを提供するDedicated Resourcesを購入することができます。
 

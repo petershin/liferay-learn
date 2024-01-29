@@ -18,8 +18,8 @@ visibility:
 * デモ・ディスカバリーは、オーディエンス、ペルソナ、要件、UX & ユーザー・ジャーニーのマッピング、テクノロジー・スタック、現行システム、サイジングの理解に重点を置く。
 
 ```{note}
-* 本モジュールのライブワークショップの [録画](https://learn.liferay.com/web/guest/d/se1-1-discovery-call) をご覧ください。
-* 上記ワークショップで使用されたプレゼンテーション資料はこちら [PDF](https://learn.liferay.com/documents/d/guest/se1-1-discovery-call-pdf) からダウンロードしてください。
+* 本モジュールのライブワークショップの [録画](https://learn.liferay.com/ja/c/portal/login) をご覧ください。
+* 上記ワークショップで使用されたプレゼンテーション資料はこちら [PDF](https://learn.liferay.com/ja/c/portal/login) からダウンロードしてください。
 ```
 
 ## 背景

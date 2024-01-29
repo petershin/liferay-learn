@@ -11,7 +11,7 @@ LiferayのHeadless Deliveryアプリケーションは、 [Wiki](../getting-star
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-開始したら、Site IDを取得します。 サイトIDを見つけるには、_サイトメニュー_ (![サイトメニュー](../../../images/icon-menu.png))を開き、_［Configuration］_ &rarr; _［Site Settings］_ &rarr; *［Site Configuration］*に移動します。
+開始したら、Site IDを取得します。 サイトIDを見つけるには、 **サイトメニュー**(![サイトメニュー](../../../images/icon-menu.png))を開き、 ［**Configuration**］ &rarr; ［**Site Settings**］ &rarr; ［**Site Configuration**］ に移動します。
 
 ![Find the Site ID under Site Configuration settings.](./wiki-api-basics/images/01.png)
 
@@ -110,6 +110,7 @@ javac -classpath .:* *.java
    ```{note}
    すべてのDXP/ポータルインスタンスには、 `Main`と呼ばれるデフォルトのWikiノードが付属しています。 このノードは、作成したノードとともに上記の出力に表示されます。
    ```
+
 1. Wiki ノード ID をパラメータとして `WikiNode_PUT_ById` を実行する。 これにより、指定されたWikiノードの詳細がAPI呼び出しで提供された詳細に置き換えられます。
 
    **cURLの場合**

@@ -1,6 +1,6 @@
 # 個人データの理解
 
-顧客はさまざまな方法であなたのサイトと交流する。 掲示板への返信やフォームの送信など、これらのやりとりの中には、お客様のシステム上に個人データを残すものもあります。 EUのGDPRのような規制に準拠しなければならない場合、Liferayはそのデータを管理するためのツールを提供するので、コンプライアンスを守ることができます。 サイト上で生成される可能性のあるあらゆる種類の個人データについては、 [ユーザーデータの管理](https://learn.liferay.com/w/dxp/users-and-permissions/managing-user-data) をご覧ください。
+顧客はさまざまな方法であなたのサイトと交流する。 掲示板への返信やフォームの送信など、これらのやりとりの中には、お客様のシステム上に個人データを残すものもあります。 EUのGDPRのような規制に準拠しなければならない場合、Liferayはそのデータを管理するためのツールを提供するので、コンプライアンスを守ることができます。 サイト上で生成される可能性のあるあらゆる種類の個人データについては、 [ユーザーデータの管理（GDPR）](https://learn.liferay.com/w/dxp/users-and-permissions/managing-user-data) をご覧ください。
 
 このステップと次のステップでは、Liferayのユーザーデータツールを使って、ユーザーを停止または削除し、ユーザーのデータを匿名化または削除します。
 
@@ -77,4 +77,4 @@
 
 ## 関連コンセプト
 
-- [ユーザーデータの管理](https://learn.liferay.com/w/dxp/users-and-permissions/managing-user-data)
+- [ユーザーデータの管理（GDPR）](https://learn.liferay.com/w/dxp/users-and-permissions/managing-user-data)

@@ -12,15 +12,15 @@
 
 以下の手順に従って、情報テンプレートを作成してください：
 
-1. ![サイトメニュー](../../images/icon-product-menu.png))を開き、_デザイン_ &rarr; _テンプレート_ &rarr; _情報テンプレート_に移動します。
+1. ![サイトメニュー](../../images/icon-product-menu.png))を開き、 **デザイン** &rarr; **テンプレート** &rarr; **情報テンプレート** に移動します。
 
-1. *追加*ボタンをクリックする (![追加ボタン](../../images/icon-add.png))
+1. **追加** ボタンをクリックする (![追加ボタン](../../images/icon-add.png))
 
-1. *名前*を入力し、_アイテムのタイプ_を選択し、(該当する場合)_アイテムのサブタイプ_を選択します。
+1. **名前** を入力し、 **アイテムのタイプ** を選択し、(該当する場合)**アイテムのサブタイプ** を選択します。
 
    ![Enter a name and select an Item Type and Item Subtype.](./using-information-templates/images/01.png)
 
-1. ［_保存_］をクリックします。 これにより、テンプレートデザインページにリダイレクトされます。
+1. ［**保存**］をクリックします。 これにより、テンプレートデザインページにリダイレクトされます。
 
 1. (オプション) [インポート](#importing-and-exporting-scripts) `.ftl` ファイルから既存の FreeMarker スクリプトをインポートします。
 
@@ -28,7 +28,7 @@
 
    エディターで`${`と入力するとオートコンプリート機能が使える。
 
-   *Elements*サイドパネル(![Elements](../../images/icon-list-ul.png))では、選択したアイテムタイプの構造から利用可能なフィールドに素早くアクセスすることができます。
+   **Elements** サイドパネル(![Elements](../../images/icon-list-ul.png))では、選択したアイテムタイプの構造から利用可能なフィールドに素早くアクセスすることができます。
 
    ![Design your template using FreeMarker and available fields in the Elements side panel.](./using-information-templates/images/02.png)
 
@@ -36,9 +36,9 @@
    要素」サイドパネルには、テンプレートに基づくフィールドは含まれていません（例：ジャーナル記事テンプレート、情報テンプレート）。 これは無限ループを防ぐためである。
    ```
 
-1. (オプション) Propertiesサイドパネルでテンプレートに_description_または_image_を追加します(![Properties](../../images/icon-cog3.png))。
+1. (オプション) Propertiesサイドパネルでテンプレートに **description** または **image** を追加します(![Properties](../../images/icon-cog3.png))。
 
-1. 終了したら、_保存_をクリックします。
+1. 終了したら、 **保存** をクリックします。
 
 一度作成された情報テンプレートは、コンテンツ表示フラグメントや、テキストやリッチテキストなど、マッピング可能な [サブ要素](../creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md) を持つその他のフラグメントで使用することができます。 選択すると、コンテントページと表示ページテンプレートで項目がどのようにレンダリングされるかが決定されます。
 
@@ -48,11 +48,11 @@ Liferay の [Headless](../../headless-delivery/using-liferay-as-a-headless-platf
 
 情報テンプレートを編集する際、FreeMarkerスクリプトをインポートおよびエクスポートして、他のコンテキストで再利用することができます：
 
-1. ![サイトメニュー](../../images/icon-product-menu.png))を開き、_デザイン_ &rarr; _テンプレート_ &rarr; _情報テンプレート_に移動します。
+1. ![サイトメニュー](../../images/icon-product-menu.png))を開き、 **デザイン** &rarr; **テンプレート** &rarr; **情報テンプレート** に移動します。
 
 1. 必要な情報テンプレートを選択します。
 
-1. アプリケーションバーの_Actions_ボタン(../../images/icon-actions.png)をクリックし、_Export Script_または_Import Script_を選択します。
+1. アプリケーションバーの **Actions** ボタン(../../images/icon-actions.png)をクリックし、 **Export Script** または **Import Script** を選択します。
 
    ![Select Export Script or Import Script.](./using-information-templates/images/03.png)
 
@@ -62,7 +62,7 @@ Liferay の [Headless](../../headless-delivery/using-liferay-as-a-headless-platf
 
 ## 情報テンプレートの管理
 
-テンプレート」アプリケーションでは、既存のすべての情報テンプレートを表示および管理できます。 それぞれの既存のテンプレートは、そのタイプ（例えば、ウェブコンテンツ記事）とサブタイプ（例えば、基本ウェブコンテンツ）と共にリストされます。 テンプレートの_Actions_ボタン(![Actions Button](../../images/icon-actions.png)) をクリックすると、以下のオプションにアクセスできます：
+テンプレート」アプリケーションでは、既存のすべての情報テンプレートを表示および管理できます。 それぞれの既存のテンプレートは、そのタイプ（例えば、ウェブコンテンツ記事）とサブタイプ（例えば、基本ウェブコンテンツ）と共にリストされます。 テンプレートの **Actions** ボタン(![Actions Button](../../images/icon-actions.png)) をクリックすると、以下のオプションにアクセスできます：
 
 | 操作    | 説明                            |
 | :---- | :---------------------------- |
@@ -73,7 +73,7 @@ Liferay の [Headless](../../headless-delivery/using-liferay-as-a-headless-platf
 
 ![Click the Actions button to access management options.](./using-information-templates/images/04.png)
 
-また、 [](#exporting-templates) をエクスポートしたり、 [](#importing-templates) Info Templates を LAR ファイルとしてインポートして、サイトや環境間で共有することもできます。 これを行うには、アプリケーションバーの_Actions_ボタンをクリックし、_Export/Import_を選択します。
+ここでは、情報テンプレートを LAR ファイルとして [エクスポート](#exporting-templates) および [インポート](#importing-templates) して、サイトと環境間で共有することもできます。 これを行うには、アプリケーション バーの **アクション** ボタンをクリックし、**エクスポート/インポート** を選択します。
 
 ![Export and Import templates as LAR files.](./using-information-templates/images/05.png)
 

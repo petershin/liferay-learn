@@ -1,6 +1,6 @@
 # サービス・アクセス・ポリシーについて
 
-サービスアクセスポリシーツールを使用して、どのウェブサービスがパブリックアクセスできるかを設定します。 デフォルト・ポリシーのリストを見ることができます。 新しいポリシーを追加するには、以下の手順に従ってください。 詳しくは [set service access policies](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/securing-web-services/setting-service-access-policies) を参照。
+サービスアクセスポリシーツールを使用して、どのウェブサービスがパブリックアクセスできるかを設定します。 デフォルト・ポリシーのリストを見ることができます。 新しいポリシーを追加するには、以下の手順に従ってください。 詳しくは [サービス・アクセス・ポリシーの設定](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/securing-web-services/setting-service-access-policies) を参照。
 
 デフォルトでは、LiferayのサービスアクセスポリシーはどのAPIにもパブリックアクセスを許可しないことに注意してください。
 

@@ -20,4 +20,4 @@ Liferayインスタンスは同じインストールを共有しますが、異�
 
 ## 関連コンセプト
 
-- [インスタンス設定](https://learn.liferay.com/en/w/dxp/system-administration/configuring-liferay/virtual-instances/instance-configuration)
+- [インスタンス設定](https://learn.liferay.com/ja/w/dxp/system-administration/configuring-liferay/virtual-instances/instance-configuration)

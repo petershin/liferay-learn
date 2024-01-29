@@ -2,7 +2,7 @@
 
 {bdg-secondary}`liferay DXP 2023.Q4+/Portal 7.4 GA98+`.
 
-企業には、在庫を維持し、販売するさまざまな方法がある。 これは一般に **_** Units of Measure **_**(UOM)として知られている。 よく使われる単位は以下の通り。
+企業には、在庫を維持し、販売するさまざまな方法がある。 これは一般に ***Units of Measure*** (UOM)として知られている。 よく使われる単位は以下の通り。
 
 * メートル／センチメートル／ミリメートル
 * トン／キログラム／グラム
@@ -22,7 +22,7 @@
 
 1. SKUタブを開き、SKUを選択する。
 
-1. **Units of Measure (UOM)**タブを選択し、**Add**(![Add button](../../../images/icon-add.png)) をクリックします。
+1. **Units of Measure (UOM)** タブを選択し、 **Add**(![Add button](../../../images/icon-add.png)) をクリックします。
 
    ![Enter the required details to create a new unit of measure.](./units-of-measure/images/01.png)
 

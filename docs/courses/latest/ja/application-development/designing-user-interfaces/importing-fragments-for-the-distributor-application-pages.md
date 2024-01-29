@@ -68,4 +68,4 @@
 ## 関連コンセプト
 
 * [オブジェクトエントリーの表示](https://learn.liferay.com/web/guest/w/dxp/building-applications/objects/displaying-object-entries) 
-* [フラグメントを使ってフォームを構築する](https://learn.liferay.com/web/guest/w/dxp/building-applications/objects/using-fragments-to-build-forms) 
+* [フラグメントでフォームを構築する](https://learn.liferay.com/web/guest/w/dxp/building-applications/objects/using-fragments-to-build-forms)

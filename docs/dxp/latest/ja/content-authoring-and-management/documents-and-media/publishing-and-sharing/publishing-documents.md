@@ -71,13 +71,13 @@ Liferayでは、ドキュメントやその他の種類のメディアファイ�
 
 ![［フィルターと並び替え］をクリックして、ファイルを整理およびソートするさまざまな方法を選択します。](publishing-documents-on-a-dxp-site/images/08.png)
 
-**リバース:** **リバース** アイコン(![Reverse icon](../../../images/icon-sort.png)）は、ソートの方向を反転します。
+**リバース:****リバース** アイコン(![Reverse icon](../../../images/icon-sort.png)）は、ソートの方向を反転します。
 
 **検索:** キーワードでメディアファイルを検索します。
 
-**情報:** **情報** アイコン(![Click on the information icon to display file info.](../../../images/icon-information.png)）は、フォルダ内のメディアファイルに関する詳細を提供します。
+**情報:****情報** アイコン(![Click on the information icon to display file info.](../../../images/icon-information.png)）は、フォルダ内のメディアファイルに関する詳細を提供します。
 
-**表示スタイル:** **表示スタイル** アイコン(![Click on the display style icon to choose your display option.](../../../images/icon-view-type-cards.png)）は、カード、リスト、およびテーブルビューの3つの表示タイプを切り替えます。
+**表示スタイル:****表示スタイル** アイコン(![Click on the display style icon to choose your display option.](../../../images/icon-view-type-cards.png)）は、カード、リスト、およびテーブルビューの3つの表示タイプを切り替えます。
 
 ![カード、リスト、またはテーブルビューから選択して、ファイルを表示します。](publishing-documents-on-a-dxp-site/images/09.png)
 
@@ -89,17 +89,17 @@ Liferayでは、ドキュメントやその他の種類のメディアファイ�
 
 **クリア:** 現在の選択をクリアします。
 
-**情報:** **情報** アイコン(![Information icon](../../../images/icon-information.png)）は、ファイルに関する詳細情報を示します。
+**情報:****情報** アイコン(![Information icon](../../../images/icon-information.png)）は、ファイルに関する詳細情報を示します。
 
-**ダウンロード:** **ダウンロード** アイコン(![Download icon](../../../images/icon-download.png)）はファイルをダウンロードします。
+**ダウンロード:****ダウンロード** アイコン(![Download icon](../../../images/icon-download.png)）はファイルをダウンロードします。
 
-**移動:** **移動** アイコン(![Move icon](../../../images/icon-move.png)）をクリックして、ファイルを別のフォルダに移動します。
+**移動:****移動** アイコン(![Move icon](../../../images/icon-move.png)）をクリックして、ファイルを別のフォルダに移動します。
 
-**タグを編集する** **Edit Tags** アイコン (![Edit icon](../../../images/icon-edit.png)) をクリックすると、ファイルの既存のタグを編集することができます。
+**タグを編集する****Edit Tags** アイコン (![Edit icon](../../../images/icon-edit.png)) をクリックすると、ファイルの既存のタグを編集することができます。
 
-**削除する：** **ゴミ箱** アイコン (![Trash icon](../../../images/icon-trash.png)) をクリックすると、ファイルが削除されます。
+**削除する：****ゴミ箱** アイコン (![Trash icon](../../../images/icon-trash.png)) をクリックすると、ファイルが削除されます。
 
-**アクション:** **アクション** アイコン(![Actions icon](../../../images/icon-actions.png)）には、 ［**チェックイン**］ および ［**チェックアウト**］ などのオプションがあります。 [Googleドライブ Integration](../devops/google-drive-integration/enabling-document-creation-and-editing-with-google-drive.md)、[Office 365 Integration](../devops/enabling-document-creation-and-editing-with-microsoft-office-365.md)、および[LibreOffice Integration](../devops/enabling-openoffice-libreoffice-integration.md)を参照してください。
+**アクション:****アクション** アイコン(![Actions icon](../../../images/icon-actions.png)）には、 ［**チェックイン**］ および ［**チェックアウト**］ などのオプションがあります。 [Googleドライブ Integration](../devops/google-drive-integration/enabling-document-creation-and-editing-with-google-drive.md)、[Office 365 Integration](../devops/enabling-document-creation-and-editing-with-microsoft-office-365.md)、および[LibreOffice Integration](../devops/enabling-openoffice-libreoffice-integration.md)を参照してください。
 
 ## ［アセットパブリッシャー］ウィジェットの使用
 

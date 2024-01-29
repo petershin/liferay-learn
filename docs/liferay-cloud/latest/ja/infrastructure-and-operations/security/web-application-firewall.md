@@ -18,11 +18,11 @@ ModSecurityはデフォルトで無効になっています。 これを有効�
 
 これらの値は `LCP_WEBSERVER_MODSECURITY` で使用できる：
 
-* **On**: ModSecurityを有効にする。 攻撃検知ルールが処理されます。
+* **On** : ModSecurityを有効にする。 攻撃検知ルールが処理されます。
 
-* **Off**：ModSecurityを無効にします。 ルールが処理されません。
+* **Off** ：ModSecurityを無効にします。 ルールが処理されません。
 
-* **DetectionOnly**：ModSecurityを有効にする。 ルールは処理されますが、破壊的なアクション（ブロック、拒否、ドロップ、許可、プロキシ、リダイレクト）は実行されません。
+* **DetectionOnly** ：ModSecurityを有効にする。 ルールは処理されますが、破壊的なアクション（ブロック、拒否、ドロップ、許可、プロキシ、リダイレクト）は実行されません。
 
 ```{tip}
 環境変数 `LCP_WEBSERVER_MODSECURITY` は ModSecurity の [`SecRuleEngine` ディレクティブ](https://github.com/SpiderLabs/ModSecurity/wiki/Reference-Manual-%28v3.x%29#SecRuleEngine) と同じです。
@@ -48,7 +48,7 @@ SecRuleEngine ${LCP_WEBSERVER_MODSECURITY}
 
 ### OWASP ModSecurity Core Rule Set
 
-OWASP Foundation の ModSecurity Core Rule Set (CRS) は Liferay Cloud での使用を推奨しています。OWASP CRSは[こちら](https://coreruleset.org/installation/)からダウンロードできます。
+OWASP Foundation の ModSecurity Core Rule Set (CRS) は Liferay Cloud での使用を推奨しています。OWASP CRSは [こちら](https://coreruleset.org/installation/) からダウンロードできます。
 
 ModSecurityにOWASP CRSを追加するには：
 

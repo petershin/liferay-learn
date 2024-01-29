@@ -86,9 +86,9 @@ Liferayコンテナの起動と運用の詳細については、 [Liferay Docker
 
 **ポータルプロパティ** ごとに [Env](../../reference/portal-properties.md)変数があります。 環境変数は、Liferay Dockerコンテナのポータルプロパティをオーバーライドする [Docker環境変数](https://docs.docker.com/engine/reference/commandline/run/#set-environment-variables--e---env---env-file) です。
 
-1. [ポータル プロパティ](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) のオンライン説明で、オーバーライドするプロパティを見つけます。
+1. [ポータル プロパティ](https://resources.learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) のオンライン説明で、オーバーライドするプロパティを見つけます。
 
-1. プロパティ説明のすぐ下に表示される `Env` 変数名をコピーします。 例えば、 [`jdbc.default.jndi.name`](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#JDBC) ポータルプロパティのEnv変数は次のとおりです。
+1. プロパティ説明のすぐ下に表示される `Env` 変数名をコピーします。 例えば、 [`jdbc.default.jndi.name`](https://resources.learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) ポータルプロパティのEnv変数は次のとおりです。
 
     ```properties
     Env: LIFERAY_JDBC_PERIOD_DEFAULT_PERIOD_JNDI_PERIOD_NAME
@@ -190,7 +190,7 @@ LIFERAY_TERMS_PERIOD_OF_PERIOD_USE_PERIOD_REQUIRED=false
     docker run -e LIFERAY_TERMS_PERIOD_OF_PERIOD_USE_PERIOD_REQUIRED -v $(pwd):/mnt/liferay ...
     ```
 
-    利用規約の要件は、ポータルプロパティに基づいています。 [デフォルトのポータルプロパティ設定](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) （`LIFERAY_TERMS_PERIOD_OF_PERIOD_USE_PERIOD_REQUIRED`の検索）には、利用規約が必要です。
+    利用規約の要件は、ポータルプロパティに基づいています。 [デフォルトのポータルプロパティ設定](https://resources.learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) （`LIFERAY_TERMS_PERIOD_OF_PERIOD_USE_PERIOD_REQUIRED`の検索）には、利用規約が必要です。
 
     ```properties
     terms.of.use.required=true
@@ -208,7 +208,7 @@ LIFERAY_TERMS_PERIOD_OF_PERIOD_USE_PERIOD_REQUIRED=false
 
 ## システムプロパティ
 
-[システムプロパティ](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/system.properties.html) は `system-ext.properties` ファイルを使用して上書きできます。 この例では、 [バインドマウント](./providing-files-to-the-container.md) を使用します。
+[システムプロパティ](https://resources.learn.liferay.com/reference/latest/en/dxp/propertiesdoc/system.properties.html) は `system-ext.properties` ファイルを使用して上書きできます。 この例では、 [バインドマウント](./providing-files-to-the-container.md) を使用します。
 
 1. `[host folder]/files/tomcat/webapps/ROOT/WEB-INF/classes` を作成します。
 

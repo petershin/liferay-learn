@@ -35,7 +35,7 @@
 
 ![タブは、構成オプションを同じUI内の個々のセクションに整理するための便利な方法です。](./liferay-ui-tabs/images/01.png)
 
-上記の例では、タブの使用可能な属性のいくつかを使用しています。 属性の完全なリストについては、 [Tabs taglibdocs](https://learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/liferay-ui/tabs.html) を参照してください。
+上記の例では、タブの使用可能な属性のいくつかを使用しています。 属性の完全なリストについては、 [Tabs taglibdocs](https://resources.learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/liferay-ui/tabs.html) を参照してください。
 
 ## 関連トピック
 

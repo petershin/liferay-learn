@@ -92,5 +92,5 @@
 
 ## 関連コンセプト
 
-* [リレーションシップ REST API](https://learn.liferay.com/en/w/dxp/building-applications/objects/understanding-object-integrations/using-custom-object-apis#relationship-rest-apis) 
-* [リレーションシップREST APIの使用](https://learn.liferay.com/en/w/dxp/building-applications/objects/understanding-object-integrations/using-custom-object-apis/using-relationship-rest-apis) 
+* [カスタムオブジェクトAPIの使用](https://learn.liferay.com/ja/w/dxp/building-applications/objects/understanding-object-integrations/using-custom-object-apis#relationship-rest-apis)
+* [関連REST APIの利用](https://learn.liferay.com/ja/w/dxp/building-applications/objects/understanding-object-integrations/using-custom-object-apis/using-relationship-rest-apis)

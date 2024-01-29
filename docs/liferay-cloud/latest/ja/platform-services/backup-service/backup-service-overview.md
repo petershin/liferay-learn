@@ -190,7 +190,7 @@ Liferay Cloudのコンソールで環境変数を設定し、後で`backup/LCP.j
 
 | 名前                                              | デフォルト値                                             | 説明                                                                                                                                                                                                |
 | :---------------------------------------------- | :------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `LCP_BACKUP_CLEANUP_SCHEDULE`                   | 0 1 * * * | この変数は、 [cron scheduling syntax](https://crontab.guru/) を使って、自動クリーンアップをスケジュールします。 クリーンアップでは、バックアップ保持期間を超えたバックアップをすべて削除します。 これは `LCP_BACKUP_CREATE_SCHEDULE` と競合してはならない。                  |
+| `LCP_BACKUP_CLEANUP_SCHEDULE`                   | 0 1 * *** | この変数は、 [cron scheduling syntax](https://crontab.guru/) を使って、自動クリーンアップをスケジュールします。 クリーンアップでは、バックアップ保持期間を超えたバックアップをすべて削除します。 これは `LCP_BACKUP_CREATE_SCHEDULE` と競合してはならない。                  |
 | `LCP_BACKUP_CREATE_SCHEDULE`                    | `[5-55][0-1] * * *` | この変数は、 [cron scheduling syntax](https://crontab.guru/) . これは `LCP_BACKUP_CLEANUP_SCHEDULE` と競合してはならない。 バックアップサービスのバージョン `3.2.1` 以降では、値が指定されない場合、ランダムなデフォルト値が作成される。                                                     |
 | `LCP_BACKUP_RESTORE_SCHEDULE`                   | 該当なし                                               | この変数は、 [cron scheduling syntax](https://crontab.guru/) を使って、自動復元をスケジュールします。 [ディザスタリカバリ環境](../../troubleshooting/configuring-cross-region-disaster-recovery.md) での使用を目的としています。 |
 | `LCP_BACKUP_RESTORE_STRATEGY`                   | `OVERWRITE`                                        | デフォルトでは、既存のインスタンスは直ちに停止されます。 既存のインスタンスを停止する前に新しいデータベースインスタンスとボリュームを起動するには、`PREPARE_AND_SWAP`ストラテジーを使用する。                                                                                          |
@@ -207,7 +207,7 @@ Liferay Cloudのコンソールで環境変数を設定し、後で`backup/LCP.j
 
 ## 関連トピック
 
-* [バックアップのダウンロードとアップロード](./downloading-and-uploading-backups.md) 
-* [バックアップからのデータ復元](./restoring-data-from-a-backup.md) 
-* [LCP.json による設定](../../reference/configuration-via-lcp-json.md) 
-* [データベースサービス (MySQL)](../database-service/database-service.md) 
+* [バックアップのダウンロードとアップロード](./downloading-and-uploading-backups.md)
+* [バックアップからのデータ復元](./restoring-data-from-a-backup.md)
+* [LCP.json による設定](../../reference/configuration-via-lcp-json.md)
+* [データベースサービス (MySQL)](../database-service/database-service.md)

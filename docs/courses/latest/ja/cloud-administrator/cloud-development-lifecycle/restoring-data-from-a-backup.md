@@ -46,7 +46,7 @@ UATのLiferayインスタンスからデフォルトのホームページを削�
 
 1. ページ上部の **Visit Site** をクリックし、UAT Liferay インスタンスにアクセスします。 以前にログインしてセッションの有効期限が切れている場合は、 [、プロジェクトの認証情報（](./deploying-and-promoting-to-production.md#accessing-your-uat-environment) ）を使用して認証します。
 
-1. [デフォルト管理者](https://learn.liferay.com/web/guest/w/dxp/getting-started/introduction-to-the-admin-account) としてログインする。
+1. [管理者アカウントの概要](https://learn.liferay.com/web/guest/w/dxp/getting-started/introduction-to-the-admin-account) としてログインする。
 
 1. 画面左側のナビゲーション・メニューで、 **Site Builder** &rarr; **Pages** をクリックします。
 
@@ -82,6 +82,6 @@ Next: [Liferay Cloud コンソールのシェル](./using-the-liferay-services-s
 
 ## 関連コンセプト
 
-* [バックアップサービス](https://learn.liferay.com/web/guest/w/liferay-cloud/platform-services/backup-service/backup-service-overview)
+* [バックアップサービスの概要](https://learn.liferay.com/web/guest/w/liferay-cloud/platform-services/backup-service/backup-service-overview)
 * [バックアップページからのデータの復元](https://learn.liferay.com/web/guest/w/liferay-cloud/platform-services/backup-service/restoring-data-from-a-backup)
 * [Liferay Cloudサービスへのログイン](https://learn.liferay.com/w/liferay-cloud/getting-started/logging-into-your-liferay-cloud-services)

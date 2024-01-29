@@ -15,7 +15,7 @@ You can use the batch client extension to help migrate object definitions betwee
 
 ## 定義のエクスポート
 
-1. **グローバルメニュー**(![グローバルメニュー](../../../images/icon-applications-menu.png))を開き、 ［**コントロールパネル**］タブで［ **オブジェクト**］ をクリックします。
+1. **グローバルメニュー**(![グローバルメニュー](../../../images/icon-applications-menu.png))を開き、 ［**コントロールパネル**］タブで［**オブジェクト**］ をクリックします。
 
 1. 目的のオブジェクトの **Actions** ボタン(![Action Button](../../../images/icon-actions.png)) をクリックし、 **Export as JSON** を選択します。
 
@@ -27,7 +27,7 @@ You can use the batch client extension to help migrate object definitions betwee
 
 ## 定義のインポート
 
-1. **グローバルメニュー**(![グローバルメニュー](../../../images/icon-applications-menu.png))を開き、 ［**コントロールパネル**］**タブで***［ オブジェクト**］ をクリックします。
+1. **グローバルメニュー**(![グローバルメニュー](../../../images/icon-applications-menu.png))を開き、 ［**コントロールパネル**］**タブで**［**オブジェクト**］ をクリックします。
 
 1. アプリケーションバーの **Actions** ボタン(![Actions Button](../../../images/icon-actions.png)) をクリックし、 **Import Object** を選択します。
 
@@ -44,7 +44,7 @@ You can use the batch client extension to help migrate object definitions betwee
 
    ![Enter a name and select the desired JSON file.](./exporting-and-importing-object-definitions/images/03.png)
 
-1. *インポート*をクリックします。
+1. **インポート** をクリックします。
 
 オブジェクト定義はバックグラウンドでインポートを開始し、数分かかることがあります。
 

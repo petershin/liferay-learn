@@ -10,19 +10,19 @@
 
 ![The footer menus are defined by the Navigation Menus application.](./creating-navigation-menus/images/06.png)
 
-ショップメニューは [Commerce Architect](../../commerce-architect.md) で設定されているため、今のところ空白です。
+ショップメニューは [コマース・アーキテクト](../../commerce-architect.md) で設定されているため、今のところ空白です。
 
 最初にナビゲーション・メニューを作る：
 
-1. *サイトメニュー* (![サイトメニュー](../../images/icon-product-menu.png))を開き、_Site Builder_ &rarr; _ナビゲーションメニュー_に進みます。
+1. **サイトメニュー**(![サイトメニュー](../../images/icon-product-menu.png))を開き、 **Site Builder** &rarr; **ナビゲーションメニュー** に進みます。
 
-1. *追加* (![追加ボタン](../../images/icon-add.png))をクリックします。
+1. **追加**(![追加ボタン](../../images/icon-add.png))をクリックします。
 
-1. 名前に_Clarity Navigation_と入力し、_Save_をクリックします。
+1. 名前に **Clarity Navigation** と入力し、 **Save** をクリックします。
 
-1. &rarr; _New_ _Page_ をクリックする。
+1. &rarr; **New****Page** をクリックする。
 
-1. Select PagesセレクタでClarity階層を展開し、_Shop_をクリックし、_Blog_をクリックします。
+1. Select PagesセレクタでClarity階層を展開し、 **Shop** をクリックし、 **Blog** をクリックします。
 
    ![Add the Shop and Blog pages to the navigation menu.](./creating-navigation-menus/images/02.png)
 
@@ -30,13 +30,13 @@
 
 主要なページは整った。 次に、残りのページへのリンクがある「More」というサブメニューが必要です。
 
-1. _追加_ &rarr; _サブメニュー_をクリックする。
+1. **追加** &rarr; **サブメニュー** をクリックする。
 
-1. _More_という名前を入力し、_Add_をクリックする。
+1. **More** という名前を入力し、 **Add** をクリックする。
 
-1. Moreアイテムの_Actions_メニュー(![Actions](../../images/icon-actions.png))を開きます。
+1. Moreアイテムの **Actions** メニュー(![Actions](../../images/icon-actions.png))を開きます。
 
-1. _子供の追加_ &rarr; _ページ_ をクリックする。
+1. **子供の追加** &rarr; **ページ** をクリックする。
 
 1. サブメニューに「会社概要」と「お問い合わせ」を追加する。
 
@@ -44,40 +44,40 @@
 
    メニューはすぐに使える。
 
-1. 表示したいページは所定の位置にある。 ナビゲーション・メニューが意図的に更新されない限り、新しいページがメニューに追加されないようにするには、_設定_ (![Cog](../../images/icon-cog3.png))をクリックします。
+1. 表示したいページは所定の位置にある。 ナビゲーション・メニューが意図的に更新されない限り、新しいページがメニューに追加されないようにするには、 **設定**(![Cog](../../images/icon-cog3.png))をクリックします。
 
-   ページ作成時に新しいページをメニューに追加する設定を無効にし、_Save_をクリックします。
+   ページ作成時に新しいページをメニューに追加する設定を無効にし、 **Save** をクリックします。
 
    ![Don't let users add pages to the menu during page creation.](./creating-navigation-menus/images/05.png)
 
 現在のナビゲーションを示すメニュー表示フラグメントがマスターページに追加される。 新しいナビゲーションメニューを使用するように設定します：
 
-1. サイトメニュー(![商品メニュー](../../images/icon-product-menu.png))を開き、_デザイン_ &rarr; _ページテンプレート_をクリックします。
+1. サイトメニュー(![商品メニュー](../../images/icon-product-menu.png))を開き、 **デザイン** &rarr; **ページテンプレート** をクリックします。
 
-1. テキスト_Clarity MP_をクリックすると、ページエディターに移動します。
+1. テキスト **Clarity MP** をクリックすると、ページエディターに移動します。
 
 1. 現在のナビゲーションが表示されているページ上のエリアをクリックします。 メニュー表示オプションの設定が右サイドバーに表示されます。
 
    ![Configure the menu display fragment's options.](./creating-navigation-menus/images/04.png)
 
-1. _Source_フィールドをクリックし、_Clarity Navigation_メニューを選択します。
+1. **Source** フィールドをクリックし、 **Clarity Navigation** メニューを選択します。
 
 1. このレベルを選択してください。
 
    階層構造の場合、ニーズに合えば、ウィジェットに表示する別のレベルを選択できる。 More_をクリックし、サブメニューが表示されていることを確認する。
 
-   Navigation Menusアプリケーションで定義されたこれらのサイトメニューに加えて、Contextual Menusをクリックすると、追加のダイナミックメニューオプションを見ることができます。 [メニュー表示の設定](https://learn.liferay.com/en/w/dxp/site-building/site-navigation/configuring-menu-displays) を参照してください。
+   Navigation Menusアプリケーションで定義されたこれらのサイトメニューに加えて、Contextual Menusをクリックすると、追加のダイナミックメニューオプションを見ることができます。 [メニュー表示を設定する](https://learn.liferay.com/ja/w/dxp/site-building/site-navigation/configuring-menu-displays) を参照してください。
 
    この練習の前に、Clarityはメニュー表示フラグメントのページ階層メニューから3つのページを隠していました：採用情報」、「サインイン」、「検索」です。 そのメニューはもう使われていないが、それらのページは新しいヘッダーナビゲーションメニューに明確に追加されたわけではないので、ナビゲーションの外に残り続けている。
 
-ヘッダーナビゲーションに加えて、Clarityにはフッター用のメニューが必要です：_Shop_、_Clarity_、_Resources_です。
+ヘッダーナビゲーションに加えて、Clarityにはフッター用のメニューが必要です： **Shop** 、 **Clarity** 、 **Resources** です。
 
-1. ヘッダーメニューの作成に使用したのと同じ基本的な手順に従って、_Clarity_メニューを作成し、_About Us_と_Careers_ページを追加します。
+1. ヘッダーメニューの作成に使用したのと同じ基本的な手順に従って、 **Clarity** メニューを作成し、 **About Us** と **Careers** ページを追加します。
 
 1. クラリティのメニューに外部URLを追加します：
 
-   **Name:** *Retail Customer Portal*
-   **URL:** *http://clarityb2b.com:8080*
+   **Name:** **Retail Customer Portal**
+   **URL:** **http://clarityb2b.com:8080**
 
    ![Navigation menus can link to external URLs.](./creating-navigation-menus/images/10.png)
 
@@ -93,7 +93,7 @@
 
 メニューができたので、フッターに追加する。
 
-1. サイトメニュー（![製品メニュー](../../images/icon-product-menu.png)）を開き、 &rarr; _ページテンプレート_をクリックして、クラリティMPマスターページを開きます。
+1. サイトメニュー（![製品メニュー](../../images/icon-product-menu.png)）を開き、 &rarr; **ページテンプレート** をクリックして、クラリティMPマスターページを開きます。
 
 1. ページエディターで、フッターの最初の3つのグリッド列、SHOP、CLARITY、RESOURCES見出しの下にメニュー表示ウィジェットを見つけてください。
 
@@ -112,5 +112,5 @@
 ## 関連コンセプト
 
 * [サイトナビゲーションの管理](https://learn.liferay.com/en/w/dxp/site-building/site-navigation/managing-site-navigation)
-* [メニュー表示の設定](https://learn.liferay.com/en/w/dxp/site-building/site-navigation/configuring-menu-displays)
-* [ナビゲーション・メニューを使う アプリケーション](https://learn.liferay.com/en/w/dxp/site-building/site-navigation/using-the-navigation-menus-application)
+* [メニュー表示を設定する](https://learn.liferay.com/ja/w/dxp/site-building/site-navigation/configuring-menu-displays)
+* [ナビゲーションメニューアプリケーションの使用](https://learn.liferay.com/ja/w/dxp/site-building/site-navigation/using-the-navigation-menus-application)

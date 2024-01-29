@@ -133,9 +133,9 @@ Liferayのすぐに使えるボタンフラグメントがあなたのユース�
 
 1. **通知を表示** ：ユーザーに通知します。 カスタム成功/エラーメッセージを書き、通知をプレビューし、アクションがトリガーされた後にページをリロードするように設定することができます。
 
-1. **ページに移動します**：サイト内の成功/エラーページに移動します。
+1. **ページに移動します** ：サイト内の成功/エラーページに移動します。
 
-1. **外部URLに移動します**：外部URLに移動します。
+1. **外部URLに移動します** ：外部URLに移動します。
 
 ![You can choose what happens after an action is performed when the user clicks on a button or fragment mapped to an action: nothing, the user receives a notification, the user is redirected to a page, or the user is redirected to an external URL.](./using-manual-actions/images/07.png)
 
@@ -145,7 +145,7 @@ Liferayのすぐに使えるボタンフラグメントがあなたのユース�
 
 Liferayは、どのロールがスタンドアロンアクションをトリガーできるかを管理するための権限を自動的に生成します。 各パーミッションは`action.[actionName]`の命名パターンに従います(例: `action.sendReminder`)。 オブジェクトのパーミッションの詳細については、 [権限設定フレームワークの統合](../../understanding-object-integrations/permissions-framework-integration.md) ]を参照してください。
 
-![Standalone permissions use the action.[actionName] naming pattern.](./using-manual-actions/images/08.png)
+![Standalone permissions use the action. [actionName] naming pattern.](./using-manual-actions/images/08.png)
 
 ## 関連トピック
 

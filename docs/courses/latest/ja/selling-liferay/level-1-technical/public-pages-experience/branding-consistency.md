@@ -12,7 +12,7 @@ visibility:
 * 使いやすさ、開発者に依存しないサポート、市場投入までの時間の短縮、拡張性
 
 ```{note}
-* 本モジュールのライブワークショップの [録画](https://learn.liferay.com/web/guest/d/se1-2-public-pages-experience) をご覧ください。
+* 本モジュールのライブワークショップの [録画](https://learn.liferay.com/c/portal/login?p_l_id=3026&redirect=%2Fweb%2Fguest%2Fd%2Fse1-2-public-pages-experience) をご覧ください。
 * 上記ワークショップで使用されたプレゼンテーション資料はこちら [PDF](https://learn.liferay.com/documents/d/guest/se1-2-public-pages-experience-pdf) からダウンロードしてください。
 ```
 

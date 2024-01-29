@@ -32,8 +32,8 @@ visibility:
 これらは、開発作業をすることなくデモのスタイリングを最も素早くカスタマイズするためにできることですが、Liferayのスタイリング機能はこれだけではありません。 後のモジュールでは、これらの機能やより高度な機能について詳しく説明する。
 
 ```{note}
-* このモジュールのライブ・ワークショップの [録画](https://learn.liferay.com/web/guest/d/se1-5-basics-of-styling-in-liferay) をご覧ください。
-* ライブ・ワークショップで使用されたプレゼンテーションの [PDF](https://learn.liferay.com/documents/d/guest/se1-5-basics-of-styling-in-liferay-pdf) をダウンロードしてください。
+* このモジュールのライブ・ワークショップの [録画](https://learn.liferay.com/ja/c/portal/login) をご覧ください。
+* ライブ・ワークショップで使用されたプレゼンテーションの [PDF](https://learn.liferay.com/ja/c/portal/login) をダウンロードしてください。
 ```
 ## スタイルブックとは何か？
 
@@ -84,7 +84,7 @@ Liferayでは、異なるデザイン要件を反映するために、いくつ�
 このモジュールのゴールは、構築済みのLiferayデモにスタイリングの変更を簡単に加えられるよう、十分な情報を提供することです。 ビジネスに特化したLiferayの初期のデモでは、スタイルブックの作成や編集を見せる必要は通常ありませんが、スタイルブックの使い始め方や、必要に応じて素早く簡単にデモを行う方法のガイドとして、以下のステップを使用することができます。
 
 ```{note}
-スタイル・ブックの作成と編集に関する完全なドキュメントは、 [こちら](https://learn.liferay.com/web/guest/w/dxp/site-building/site-appearance/style-books/using-a-style-book-to-standardize-site-appearance) にあります。
+スタイル・ブックの作成と編集に関する完全なドキュメントは、 [スタイルブックを使用してサイトの外観を標準化する](https://learn.liferay.com/web/guest/w/dxp/site-building/site-appearance/style-books/using-a-style-book-to-standardize-site-appearance) にあります。
 
 ```
 スタイルブックの簡単なデモは以下の通り：

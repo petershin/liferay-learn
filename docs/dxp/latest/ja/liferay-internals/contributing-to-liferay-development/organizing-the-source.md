@@ -90,7 +90,7 @@ com/liferay/blogs/web/internal/template/BlogsPortletDisplayTemplateHandler.java`
 ## アプリケーション表示テンプレートサンプル
 
 `/Users/jamie/Repos/liferay-portal/modules/apps/blogs/blogs-web/src/main/resources/
-com/liferay/blogs/web/template/dependencies/portlet_display_template_basic.ftl`
+com/liferay/blogs/web/template/dependencies/portlet_displaytemplate_basic.ftl`
 
 多くのアプリケーションには、基本的なアプリケーション表示テンプレートが付属しており、これを利用することで、より簡単に使い始めることができます。 例えば、blogsウィジェットには、ブログのエントリーをリストアップする基本的なテンプレートが付属しており、JSPの対応するものと類似しています。
 

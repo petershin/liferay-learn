@@ -1,6 +1,6 @@
 # デフォルトのフラグメントリファレンス
 
-Liferayはすぐに使える様々なフラグメントを提供するので、すぐにソリューションの構築を始めることができます。 利用可能なフラグメントを表示するには、コンテンツページまたはページテンプレートの編集を開始してください。 編集中に、編集サイドバーメニューの_フラグメントとウィジェット_タブ( ![フラグメントとウィジェット](../../../../images/icon-plus.png))を開きます。
+Liferayはすぐに使える様々なフラグメントを提供するので、すぐにソリューションの構築を始めることができます。 利用可能なフラグメントを表示するには、コンテンツページまたはページテンプレートの編集を開始してください。 編集中に、編集サイドバーメニューの **フラグメントとウィジェット** タブ( ![フラグメントとウィジェット](../../../../images/icon-plus.png))を開きます。
 
 フラグメントは、次のセットに編成されています。
 
@@ -27,12 +27,12 @@ Liferayはすぐに使える様々なフラグメントを提供するので、�
 
 {bdg-secondary}`For Liferay 7.3+`
 
-レイアウト要素は、ページやテンプレートのレイアウトをデザインするためのドロップゾーンを定義します。 デフォルトでは、Liferayには2つのレイアウト要素があります：_Container_と_Grid_です。
+レイアウト要素は、ページやテンプレートのレイアウトをデザインするためのドロップゾーンを定義します。 デフォルトでは、Liferayには2つのレイアウト要素があります： **Container** と **Grid** です。
 
 | フラグメント         | 説明                                                     |
 | :------------- | :----------------------------------------------------- |
-| コンテナ（以前は*パネル*） | 構成可能なドロップゾーンを追加します。                                    |
-| グリッド（以前は*行*）   | 複数のドロップゾーンモジュールを追加します。 これらのモジュールは、垂直または水平に構成および配置できます。 |
+| コンテナ（以前は **パネル**） | 構成可能なドロップゾーンを追加します。                                    |
+| グリッド（以前は **行**）   | 複数のドロップゾーンモジュールを追加します。 これらのモジュールは、垂直または水平に構成および配置できます。 |
 
 ## 基本コンポーネント
 
@@ -54,13 +54,13 @@ Liferayはすぐに使える様々なフラグメントを提供するので、�
 | ソーシャル                         | [、Facebook、Twitter、LinkedInのアイコンが付いた画像要素](./configuring-fragments/fragment-sub-elements-reference.md) 、各プラットフォームのページにリンクできます。                                                                                                                                               |
 | スペーサー                         | ページの断片の間に水平方向の空白を追加する。 その高さを設定できます。                                                                                                                                                                                                                                                    |
 | タブ                            | [、シンプルなテキスト要素](./configuring-fragments/fragment-sub-elements-reference.md) 、ウィジェットやその他のフラグメントを追加するための個別のドロップゾーンを備えた複数のタブを追加します。                                                                                                                                             |
-| ビデオのURL（以前は_ビデオ・フラグメント_）。     | YouTubeやDocuments and Mediaの動画をページやテンプレートに埋め込みます。 ビデオの自動再生、ループ、ミュート、コントロールの非表示を設定できます。 エンドユーザーからビデオコントロールを非表示にすることもできます。 詳しくは [動画の埋め込み](../../../../content-authoring-and-management/documents-and-media/videos/embedding-videos-into-liferay-assets-and-pages.md) をご覧ください。 |
+| ビデオのURL（以前は **ビデオ・フラグメント**）。     | YouTubeやDocuments and Mediaの動画をページやテンプレートに埋め込みます。 ビデオの自動再生、ループ、ミュート、コントロールの非表示を設定できます。 エンドユーザーからビデオコントロールを非表示にすることもできます。 詳しくは [動画の埋め込み](../../../../content-authoring-and-management/documents-and-media/videos/embedding-videos-into-liferay-assets-and-pages.md) をご覧ください。 |
 
 ## フォームコンポーネント
 
 {bdg-secondary}`For Liferay 7.4 U45+/GA45+`
 
-フォームコンポーネントのフラグメントを使用して、コンテンツページにフォームを作成します。 これらのフラグメントはカスタム・オブジェクトのみをサポートする。 これらを有効にしてアクセスするには、少なくとも1つの公開オブジェクトが必要です。 詳しくは [Using Fragments to Build Forms](../../../../building-applications/objects/using-fragments-to-build-forms.md) を参照してください。
+フォームコンポーネントのフラグメントを使用して、コンテンツページにフォームを作成します。 これらのフラグメントはカスタム・オブジェクトのみをサポートする。 これらを有効にしてアクセスするには、少なくとも1つの公開オブジェクトが必要です。 詳しくは [フラグメントでフォームを構築する](../../../../building-applications/objects/using-fragments-to-build-forms.md) を参照してください。
 
 | フラグメント     | 説明                                                                                                                                                                                                                                                            |
 | :--------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -103,17 +103,17 @@ Liferayはすぐに使える様々なフラグメントを提供するので、�
 
 {bdg-secondary}`liferay DXP 7.4 U72+/GA72+`.
 
-アカウントセレクターフラグメントを使用すると、商品の閲覧や注文の作成時にアカウントを簡単に切り替えることができます。 詳しくは [Using Account Selector Fragment](https://learn.liferay.com/w/commerce/creating-store-content/liferay-commerce-fragments/using-the-account-selector-fragment) を参照のこと。
+アカウントセレクターフラグメントを使用すると、商品の閲覧や注文の作成時にアカウントを簡単に切り替えることができます。 詳しくは [アカウント・セレクタ・フラグメントの使用](https://learn.liferay.com/w/commerce/creating-store-content/liferay-commerce-fragments/using-the-account-selector-fragment) を参照のこと。
 
 ## カート
 
 {bdg-secondary}`liferay DXP 7.4 U69+/GA69+`.
 
-ミニカートの断片を使用して、カートの詳細な概要を取得します。 商品の数量を調整したり、商品を削除したり、チェックアウトプロセスを開始したり、簡単に商品を検索してカートに追加したりすることができます。 詳しくは [Using Mini Cart Fragment](https://learn.liferay.com/w/commerce/creating-store-content/liferay-commerce-fragments/using-the-mini-cart-fragment) をご覧ください。
+ミニカートの断片を使用して、カートの詳細な概要を取得します。 商品の数量を調整したり、商品を削除したり、チェックアウトプロセスを開始したり、簡単に商品を検索してカートに追加したりすることができます。 詳しくは [ミニカートフラグメントの使用](https://learn.liferay.com/w/commerce/creating-store-content/liferay-commerce-fragments/using-the-mini-cart-fragment) をご覧ください。
 
 ## 主なコンテンツ
 
-フィーチャー・コンテンツ・フラグメントは、複数のコンポーネントから構成される複雑なページ要素です。 フラグメントのレイアウトをプレビューするには、Fragments and Widgetsパネルで_Card View_ ( ![Card View](../../../../images/icon-cards2.png) )に切り替えます。 Liferayには次のような特徴的なコンテンツフラグメントがあります。
+フィーチャー・コンテンツ・フラグメントは、複数のコンポーネントから構成される複雑なページ要素です。 フラグメントのレイアウトをプレビューするには、Fragments and Widgetsパネルで **Card View**( ![Card View](../../../../images/icon-cards2.png) )に切り替えます。 Liferayには次のような特徴的なコンテンツフラグメントがあります。
 
 ```{note}
 Liferay DXP/Portal 7.3では、各フラグメントの*Information*アイコン(![Information](../../../../images/icon-information.png))にカーソルを合わせるとレイアウトをプレビューできます。

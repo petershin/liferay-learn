@@ -1,10 +1,10 @@
 # サインインページの追加
 
-ユーザーは現在、ヘッダーのユーザーメニューにある_Sign In_をクリックしてClarityにログインできます。
+ユーザーは現在、ヘッダーのユーザーメニューにある **Sign In** をクリックしてClarityにログインできます。
 
-1. ログアウトする。 どのページでも、ユーザーアイコンをクリックし、ドロップダウンメニューから_Sign Out_を選択します。 現在、ログアウトリンクを制御するカスタムフラグメントはデフォルトの Liferay ログアウト URL を使用しています：`c/portal/logout`です。
+1. ログアウトする。 どのページでも、ユーザーアイコンをクリックし、ドロップダウンメニューから **Sign Out** を選択します。 現在、ログアウトリンクを制御するカスタムフラグメントはデフォルトの Liferay ログアウト URL を使用しています：`c/portal/logout`です。
 
-1. サインインページをテストする。 どのページでも、ユーザーアイコンと_Sign In_リンクをクリックしてください。 現在、サインインリンクを制御するカスタムフラグメントはデフォルトの Liferay ログイン URL を使用しています：`c/portal/login`を使用しています。 これは、デフォルトのSign Inウィジェットを起動したページで有効にします。 しかし、クラリティのマスターページが適用されている現状では醜い：
+1. サインインページをテストする。 どのページでも、ユーザーアイコンと **Sign In** リンクをクリックしてください。 現在、サインインリンクを制御するカスタムフラグメントはデフォルトの Liferay ログイン URL を使用しています：`c/portal/login`を使用しています。 これは、デフォルトのSign Inウィジェットを起動したページで有効にします。 しかし、クラリティのマスターページが適用されている現状では醜い：
 
    ![The default sign in widget clashes with the master page.](./adding-the-sign-in-page/images/07.png)
 
@@ -12,15 +12,15 @@
 
 1. 空白テンプレートを使用してサインインページを追加します。 Add_をクリックすると、コンテンツ・ページ・エディターがロードされます。
 
-1. ページ上部の管理バーにある_Options_メニュー(![Options](../../images/icon-options.png))を開き、_Configure_をクリックします。
+1. ページ上部の管理バーにある **Options** メニュー(![Options](../../images/icon-options.png))を開き、 **Configure** をクリックします。
 
    ![Configure the sign-in page.](./adding-the-sign-in-page/images/08.png)
 
-1. 一般ページ設定画面で、もう一度_Hidden from Menu Display_を有効にして、サインインページがメニュー表示ウィジェットのナビゲーションメニューに表示されないようにします。 フレンドリーURL、`/sign-in`をメモし、_Save_をクリックする。
+1. 一般ページ設定画面で、もう一度 **Hidden from Menu Display** を有効にして、サインインページがメニュー表示ウィジェットのナビゲーションメニューに表示されないようにします。 フレンドリーURL、`/sign-in`をメモし、 **Save** をクリックする。
 
-1. メニューから_Design_リンクをクリックし、テーマオプションを見てください。 これらは現在、ページ管理の設定によってすべてのページに設定されています（同様にオプションメニューからアクセスできます(![Options](../../images/icon-options.png)）。
+1. メニューから **Design** リンクをクリックし、テーマオプションを見てください。 これらは現在、ページ管理の設定によってすべてのページに設定されています（同様にオプションメニューからアクセスできます(![Options](../../images/icon-options.png)）。
 
-1. このページのカスタムテーマを定義する_をクリックして、継承されたテーマオプションを上書きします。 以下の設定のチェックを外してください：フッターの表示]と[ヘッダーの表示]。 検索バーを表示させたくないので、_Show Header Search_のチェックを外すこともできるが、ヘッダーを完全に非表示にすることでそれも達成できる。
+1. このページのカスタムテーマを定義する **をクリックして、継承されたテーマオプションを上書きします。 以下の設定のチェックを外してください：フッターの表示]と[ヘッダーの表示]。 検索バーを表示させたくないので、** Show Header Search_のチェックを外すこともできるが、ヘッダーを完全に非表示にすることでそれも達成できる。
 
 1. 下にスクロールして設定を保存します。
 
@@ -30,7 +30,7 @@
 
    ![The sign in page is in place.](./adding-the-sign-in-page/images/09.png)
 
-1. ここで、カスタムユーザーナビゲーションフラグメントを編集して、`/c/portal/login`の代わりに新しいサインインページを指すようにします。 サイトメニューへ* (![商品メニュー](../../images/icon-product-menu.png)) &rarr; _Design_ &rarr; _Fragments_.
+1. ここで、カスタムユーザーナビゲーションフラグメントを編集して、`/c/portal/login`の代わりに新しいサインインページを指すようにします。 サイトメニューへ (**![商品メニュー](../../images/icon-product-menu.png)) &rarr;***Design***&rarr;***Fragments** .
 
 1. `user-nav_Dropdown`フラグメントを開く。 HTMLペインで、ログインURLを設定する行を見つける：
 
@@ -51,13 +51,13 @@
        themeDisplay.getSiteGroup().getFriendlyURL() /]
     ```
 
-1. _Publish_をクリックする。
+1. **Publish** をクリックする。
 
-1. ページまたはマスターページで使用中のフラグメントに、新しいフラグメントコードを伝搬する。 フラグメントの_Actions_ (![Actions](../../images/icon-actions.png)) メニューを開き、_View Usages_をクリックします。
+1. ページまたはマスターページで使用中のフラグメントに、新しいフラグメントコードを伝搬する。 フラグメントの **Actions**(![Actions](../../images/icon-actions.png)) メニューを開き、 **View Usages** をクリックします。
 
-1. リストアップされた使用法をすべて選択し、_Propagate_(![Propagate](../../images/icon-propagate.png))をクリックします。 詳しくは [フラグメントの変更の伝播](https://learn.liferay.com/en/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments/propagating-fragment-changes) を参照のこと。
+1. リストアップされた使用法をすべて選択し、 **Propagate**(![Propagate](../../images/icon-propagate.png))をクリックします。 詳しくは [フラグメントの変更のプロパゲート](https://learn.liferay.com/ja/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments/propagating-fragment-changes) を参照のこと。
 
-1. どのページからでもログアウトし、_サインイン_をクリックしてください。 新しいページが表示されますので、そこでサインインしてください。
+1. どのページからでもログアウトし、 **サインイン** をクリックしてください。 新しいページが表示されますので、そこでサインインしてください。
 
     ![Sign in using the new page.](./adding-the-sign-in-page/images/10.png)
 
@@ -85,6 +85,6 @@
 
 ## 関連コンセプト
 
-* [サイトにページを追加する](https://learn.liferay.com/en/w/dxp/site-building/creating-pages/adding-pages/adding-a-page-to-a-site)
-* [検索ページでの作業](https://learn.liferay.com/en/w/dxp/using-search/search-pages-and-widgets/working-with-search-pages/search-pages)
-* [コンテンツの検索](https://learn.liferay.com/en/w/dxp/using-search/getting-started/searching-for-content)
+* [サイトにページを追加する](https://learn.liferay.com/ja/w/dxp/site-building/creating-pages/adding-pages/adding-a-page-to-a-site)
+* [ページの検索](https://learn.liferay.com/ja/w/dxp/using-search/search-pages-and-widgets/working-with-search-pages/search-pages)
+* [コンテンツの検索](https://learn.liferay.com/ja/w/dxp/using-search/getting-started/searching-for-content)

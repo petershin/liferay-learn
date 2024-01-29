@@ -43,8 +43,8 @@
 1. 製品（この例では **Premium Brake Fluid**）をクリックします。
 
 1. 次のフィールドに入力します。
-   * **価格**: 100
-   * **プロモ価格**: 95
+   * **価格** : 100
+   * **プロモ価格** : 95
 
      ![Adding a product to a price list](./adding-products-to-a-price-list/images/01.png)
 

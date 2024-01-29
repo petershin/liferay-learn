@@ -2,7 +2,7 @@
 
 {bdg-secondary}`liferay DXP/Portal 7.3+`.
 
-*Session Property Vocabulary*を使えば、 [セッションベースのセグメントプロパティ](../../site-building/personalizing-site-experience/segmentation/segments-editor-ui-reference.md#session-properties) を、定義済みの値を使って作成することができます。 このオプションは、新しいセグメントの作成中にセグメントエディタでプロパティの値を手動で入力したくない場合に役立ちます。代わりに、ユーザーが事前定義された値のリストからそれらを選択できるようにします。 セッションプロパティのボキャブラリは、セグメントを定義するタスクを容易にし、手動入力エラーを排除します。
+**Session Property Vocabulary** を使えば、 [セッションベースのセグメントプロパティ](../../site-building/personalizing-site-experience/segmentation/segments-editor-ui-reference.md#session-properties) を、定義済みの値を使って作成することができます。 このオプションは、新しいセグメントの作成中にセグメントエディタでプロパティの値を手動で入力したくない場合に役立ちます。代わりに、ユーザーが事前定義された値のリストからそれらを選択できるようにします。 セッションプロパティのボキャブラリは、セグメントを定義するタスクを容易にし、手動入力エラーを排除します。
 
 たとえば、マーケティングチームは、デバイスのブランド情報を使用して、Appleデバイス用の新しいアプリのプロモーションなど、さまざまなコンテンツをWebサイトの訪問者にターゲティングしたい場合があります。 マーケティングチームのプロセスを容易にするために、異なるデバイスブランドを含むセッションプロパティボ カブラリを作成し、このボカブラリを [ユーザセグメント](../../site-building/personalizing-site-experience/segmentation/creating-and-managing-user-segments.md) にリンクすることができます。 こうすることで、マーケティングチームが「デバイスブランド」 [セッションプロパティ](../../site-building/personalizing-site-experience/segmentation/segments-editor-ui-reference.md#session-properties) を使用してセグメントを作成する際、さまざまなデバイスブランドオプションを入力する必要がなくなります。 可能なオプションのリストが事前定義されました。
 
@@ -24,7 +24,7 @@
 
 ![The available options in the session-based Segment corresponds to the Categories in the global Vocabulary.](./session-property-vocabularies/images/02.png)
 
-新しいグローバルボキャブラリを作成することも、既存のボキャブラリを使用することもできます。 新しいボキャブラリーを作成したり、既存のボキャブラリーのカテゴリーを更新したりするには、 [Defining Categories and Vocabularies for Content](./defining-categories-and-vocabularies-for-content.md) を参照してください。 ボキャブラリーは、 [公開または内部可視性](./organizing-content-with-categories-and-tags.md#vocabulary-visibility) で使用できます。 セッションプロパティのボキャブラリは、グローバルボキャブラリでのみ機能します。
+新しいグローバルボキャブラリを作成することも、既存のボキャブラリを使用することもできます。 新しいボキャブラリーを作成したり、既存のボキャブラリーのカテゴリーを更新したりするには、 [コンテンツのカテゴリとボキャブラリの定義](./defining-categories-and-vocabularies-for-content.md) を参照してください。 ボキャブラリーは、 [公開または内部可視性](./organizing-content-with-categories-and-tags.md#vocabulary-visibility) で使用できます。 セッションプロパティのボキャブラリは、グローバルボキャブラリでのみ機能します。
 
 ```{note}
 グローバル・ボキャブラリーの作成と編集は、グローバル・サイトでのみ可能です。
@@ -36,15 +36,15 @@
 
 ![Configuring the Vocabulary to work with the Segment's Session Property.](./session-property-vocabularies/images/03.png)
 
-1. グローバルメニューをクリックし、_コントロールパネル_タブをクリックします。
+1. グローバルメニューをクリックし、 **コントロールパネル** タブをクリックします。
 
-1. Configurationセクションで、_System Settings_をクリックします。
+1. Configurationセクションで、 **System Settings** をクリックします。
 
-1. コンテンツとデータセクションで、_セグメント_をクリックします。
+1. コンテンツとデータセクションで、 **セグメント** をクリックします。
 
-1. *Session Property Vocabularies*をクリックします。
+1. **Session Property Vocabularies** をクリックします。
 
-1. *Add*をクリックして、新しいセッション・プロパティ・ヴォキャブラリを作成します。
+1. **Add** をクリックして、新しいセッション・プロパティ・ヴォキャブラリを作成します。
 
 1. ［Selection Property］ドロップダウンメニューでプロパティを選択します。
 
@@ -54,9 +54,9 @@
     別のセッションプロパティのボキャブラリに属するプロパティを選択することはできません。 これらのプロパティはグレー表示されており、使用できません。
     ```
 
-1. 語彙名のドロップダウンメニューから、_語彙_を選択します。
+1. 語彙名のドロップダウンメニューから、 **語彙** を選択します。
 
-1. ［_保存_］をクリックします。
+1. ［**保存**］をクリックします。
 
 ![Create a Session Property Vocabulary and save it.](./session-property-vocabularies/images/05.gif)
 

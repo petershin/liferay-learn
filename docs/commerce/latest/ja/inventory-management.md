@@ -53,13 +53,13 @@ SKUに単位が設定されている場合、在庫はそのSKUの単位で管�
 
 ## 在庫数低下時のアクション
 
-在庫数低下時のアクションは、商品の在庫が特定のしきい値に達したときにアクションを実行します。 [Low Stock Action](./inventory-management/low-stock-action.md) を読んで、在庫が最低閾値に達したときに実行されるアクションの設定方法を学びましょう。
+在庫数低下時のアクションは、商品の在庫が特定のしきい値に達したときにアクションを実行します。 [在庫数低下時のアクション](./inventory-management/low-stock-action.md) を読んで、在庫が最低閾値に達したときに実行されるアクションの設定方法を学びましょう。
 
 独自のカスタム・ローストック・アクションの作成に興味のある開発者は、 [カスタム・ローストック・アクティビティの実装](./developer-guide/managing-inventory/implementing-a-custom-low-stock-activity.md) をお読みください。
 
 ## 在庫数の見積もり
 
-在庫なしの商品に対して、在庫数の見積もりを設定することができます。 これにより、再び利用可能になったときにお客様に通知されます。 詳しくは [Availability Estimates](./inventory-management/availability-estimates.md)。
+在庫なしの商品に対して、在庫数の見積もりを設定することができます。 これにより、再び利用可能になったときにお客様に通知されます。 詳しくは [在庫数の見積もり](./inventory-management/availability-estimates.md) 。
 
 ::::{grid} 2
 :gutter: 3 3 3 3

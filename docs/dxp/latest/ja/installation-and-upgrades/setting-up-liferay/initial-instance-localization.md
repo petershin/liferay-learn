@@ -12,8 +12,8 @@ DXPを開始する前にデフォルトの仮想インスタンスのローカ�
 
 | **ポータルプロパティ** | **説明** |
 |:--------------------------- |:---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `company.default.locale`    | [`locales`](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Languages%20and%20Time%20Zones) ポータルプロパティに定義されている使用可能なロケールに設定します。    |
-| `company.default.time.zone` | [`time.zones`](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Languages%20and%20Time%20Zones) ポータルプロパティで定義されている任意のタイムゾーンに設定します。 |
+| `company.default.locale`    | [`locales`](https://resources.learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) ポータルプロパティに定義されている使用可能なロケールに設定します。    |
+| `company.default.time.zone` | [`time.zones`](https://resources.learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) ポータルプロパティで定義されている任意のタイムゾーンに設定します。 |
 
 例:
 

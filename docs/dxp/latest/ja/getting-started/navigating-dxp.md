@@ -1,21 +1,21 @@
 # DXPのナビゲート
 
-Liferay DXP のすぐに使えるナビゲーションは、3つの主要なエリアに分かれています： [サイトメニュー_](#site-menu) 、 [_パーソナルメニュー_](#personal-menu) 、 [_グローバルメニュー_](#global-menu) 。
+Liferay DXP のすぐに使えるナビゲーションは、3つの主要なエリアに分かれています： [**サイトメニュー**](#site-menu) 、[**パーソナルメニュー**](#personal-menu) 、[**グローバルメニュー**](#global-menu) 。
 
 ## サイトメニュー
 
-画面左側のDXP _サイトメニュー_には、現在表示されている特定のサイトを対象としたアクション、コンテンツ、設定が含まれています。 アプリケーションバーの_サイトメニュー_(![サイトメニュー](../images/icon-menu.png))をクリックすると、展開または非表示にすることができます。
+画面左側のDXP **サイトメニュー** には、現在表示されている特定のサイトを対象としたアクション、コンテンツ、設定が含まれています。 アプリケーションバーの **サイトメニュー**(![サイトメニュー](../images/icon-menu.png))をクリックすると、展開または非表示にすることができます。
 
 ![Expand the site menu so that all options are visible.](./navigating-dxp/images/01.png)
 
-サイトメニューは選択されたサイトを示す。 上記の例では、サイトは `Liferay DXP` です。 サイトメニューの_Compass_(![Compass](../images/icon-compass.png))をクリックすると、作業中のサイトを変更できます。
+サイトメニューは選択されたサイトを示す。 上記の例では、サイトは `Liferay DXP` です。 サイトメニューの **Compass**(![Compass](../images/icon-compass.png))をクリックすると、作業中のサイトを変更できます。
 
 これらは、サイト・メニューで行える一般的なサイト構築と管理作業である：
 
-- [ページの追加](../site-building/creating-pages/adding-pages/adding-a-page-to-a-site.md) 
-- [コンテンツの作成](../content-authoring-and-management.md) 
-- [サイト・メンバーシップの管理](../site-building/sites/site-membership/adding-members-to-sites.md) 
-- [サイトの動作と機能の設定と最適化](../site-building.html) 
+- [ページの追加](../site-building/creating-pages/adding-pages/adding-a-page-to-a-site.md)
+- [コンテンツの作成](../content-authoring-and-management.md)
+- [サイト・メンバーシップの管理](../site-building/sites/site-membership/adding-members-to-sites.md)
+- [サイトの動作と機能の設定と最適化](../site-building.html)
 
 ## アプリケーションバー
 
@@ -67,10 +67,10 @@ Liferay DXP のすぐに使えるナビゲーションは、3つの主要なエ�
 
 ## グローバルメニュー
 
-DXP _グローバルメニュー_には、 [アプリケーション](#applications-menu) 、 [コマース](#commerce-menu) 、 [コントロールパネル](#control-panel) メニューがあります。 画面右上の_Global Menu_（！[Global Menu](../images/icon-applications-menu.png)）をクリックしてアクセスします。
+DXP **グローバルメニュー** には、 [アプリケーション](#applications-menu) 、 [コマース](#commerce-menu) 、 [コントロールパネル](#control-panel) メニューがあります。 画面右上の **Global Menu**（![Global Menu](../images/icon-applications-menu.png)）をクリックしてアクセスします。
 
 !!! note
-    デフォルトでは、_Guest_または_User_ロールを持つユーザーはグローバルメニューにアクセスすることができません。
+    デフォルトでは、 **Guest** または **User** ロールを持つユーザーはグローバルメニューにアクセスすることができません。
 
 また、インターフェースの右側にあるグローバルメニューの「アプリケーション」、「コマース」、または「コントロールパネル」タブから、利用可能な他のサイトに移動することもできます。
 
@@ -94,12 +94,12 @@ Liferay 7.3 CE GA6およびLiferay DXP 7.3 GA1以降、Liferay Commerce 3.0はLi
 
 Liferay Commerceから管理できる機能をいくつか紹介します：
 
-- [新しいカタログの作成](https://learn.liferay.com/commerce/latest/en/product-management/catalogs/creating-a-new-catalog.html) 
-- [新しいチャンネルの作成](https://learn.liferay.com/commerce/latest/en/starting-a-store/channels/managing-channels.html) 
-- [在庫管理](https://learn.liferay.com/commerce/latest/en/inventory-management.html) 
-- [注文の処理](https://learn.liferay.com/commerce/latest/en/order-management/orders/processing-an-order.html) 
+- [新しいカタログを作成する](https://learn.liferay.com/commerce/latest/ja/product-management/catalogs/creating-a-new-catalog.html) 
+- [チャネルの管理](https://learn.liferay.com/ja/w/commerce/store-management/channels/managing-channels) 
+- [在庫管理](https://learn.liferay.com/commerce/latest/ja/inventory-management.html) 
+- [注文の処理](https://learn.liferay.com/commerce/latest/ja/order-management/orders/processing-an-order.html) 
 
-Liferay Commerce の詳細については、 [Introduction to Liferay Commerce](https://learn.liferay.com/commerce/latest/en/starting-a-store/introduction-to-liferay-commerce.html) を参照してください。
+Liferay Commerce の詳細については、 [Liferay Commerceの概要](https://learn.liferay.com/commerce/latest/ja/starting-a-store/introduction-to-liferay-commerce.html) を参照してください。
 
 ### コントロールパネル
 

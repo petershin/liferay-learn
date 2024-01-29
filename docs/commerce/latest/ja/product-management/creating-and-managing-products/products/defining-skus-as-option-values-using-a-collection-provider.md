@@ -12,7 +12,7 @@
 
 ## コレクション・プロバイダーとしてのカテゴリーの選択
 
-カテゴリの作成と商品への割り当ての詳細については、 [新しい商品カテゴリを作成する](https://learn.liferay.com/w/commerce/product-management/creating-and-managing-products/products/creating-a-new-product-category) および [商品カテゴリでカタログを整理する](https://learn.liferay.com/w/commerce/product-management/creating-and-managing-products/products/organizing-your-catalog-with-product-categories) を参照してください。
+カテゴリの作成と商品への割り当ての詳細については、 [新しい商品カテゴリの作成](https://learn.liferay.com/w/commerce/product-management/creating-and-managing-products/products/creating-a-new-product-category) および [商品カテゴリを使用してカタログを整理する](https://learn.liferay.com/w/commerce/product-management/creating-and-managing-products/products/organizing-your-catalog-with-product-categories) を参照してください。
 
 カテゴリーを作成し、商品に割り当てたら、
 

@@ -15,7 +15,7 @@ Site Object と Company Object の両方で生成される API の完全なリ�
 
 [次に、以下の手順に従って、](../../creating-and-managing-objects/creating-objects.md) このチュートリアルの基本的なオブジェクトを作成します：
 
-1. グローバルメニュー(![グローバルメニュー](../../../../images/icon-applications-menu.png))を開き、_コントロールパネル_タブを開き、_オブジェクト_をクリックします。
+1. グローバルメニュー(![グローバルメニュー](../../../../images/icon-applications-menu.png))を開き、 **コントロールパネル** タブを開き、 **オブジェクト** をクリックします。
 
 1. Add_ボタン(![Add Button](../../../../images/icon-add.png))をクリックし、以下の値を入力する：
 
@@ -25,7 +25,7 @@ Site Object と Company Object の両方で生成される API の完全なリ�
    | 複数形のラベル | `Ables` |
    | 名前      | `Able`  |
 
-1. 新しい_Object_ドラフトを選択し、_Fields_タブに行き、テキストフィールドを1つ追加する：
+1. 新しい **Object** ドラフトを選択し、 **Fields** タブに行き、テキストフィールドを1つ追加する：
 
    | ラベル | 項目名 | 種類       | 必須       |
    | :-- | :-- | :------- | :------- |
@@ -177,7 +177,7 @@ POST、PUT、または PATCH リクエストに `taxonomyCategoryIds` 配列を�
 ```
 
 !!! note
-    オブジェクトエントリーにカテゴリーを割り当てるには、既存のカテゴリー語彙が必要です。 詳しくは [Defining Categories and Vocabularies for Content](../../../../content-authoring-and-management/tags-and-categories/defining-categories-and-vocabularies-for-content.md) を参照。
+    オブジェクトエントリーにカテゴリーを割り当てるには、既存のカテゴリー語彙が必要です。 詳しくは [コンテンツのカテゴリとボキャブラリの定義](../../../../content-authoring-and-management/tags-and-categories/defining-categories-and-vocabularies-for-content.md) を参照。
 
 この配列には、割り当てられた各カテゴリの `taxonomyCategoryId` と `taxonomyCategoryName` が格納されています。
 

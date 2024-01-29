@@ -21,9 +21,9 @@ Liferayのヘッドレスバッチエンジンは、データのインポート�
    unzip liferay-g4j2.zip
    ```
 
-1. データをエクスポートするには、エクスポートするエンティティの完全修飾クラス名が必要です。 クラス名は、インストールされているAPI Explorerの `/o/api` から取得できる。 *スキーマ*セクションまでスクロールダウンし、エクスポートしたいエンティティの `x-class-name` フィールドをメモする。
+1. データをエクスポートするには、エクスポートするエンティティの完全修飾クラス名が必要です。 クラス名は、インストールされているAPI Explorerの `/o/api` から取得できる。 **スキーマ** セクションまでスクロールダウンし、エクスポートしたいエンティティの `x-class-name` フィールドをメモする。
 
-1. 以下のcURLスクリプトを使用して、Liferayインスタンスからアカウントをエクスポートします。 コマンドラインで `curl` フォルダに移動します。 `ExportTask_POST_ToInstance.sh`スクリプトを、完全修飾クラス名 *Account* と`json` をパラメータとして実行する。 json`パラメータはエクスポートされるデータのフォーマットを示す。 また、`jsont`、`jsonl`、`csv`形式もサポートしている。
+1. 以下のcURLスクリプトを使用して、Liferayインスタンスからアカウントをエクスポートします。 コマンドラインで `curl` フォルダに移動します。 `ExportTask_POST_ToInstance.sh`スクリプトを、完全修飾クラス名 **Account** と`json` をパラメータとして実行する。 json`パラメータはエクスポートされるデータのフォーマットを示す。 また、`jsont`、`jsonl`、`csv`形式もサポートしている。
 
    ```bash
    ./ExportTask_POST_ToInstance.sh com.liferay.headless.admin.user.dto.v1_0.Account json
@@ -286,5 +286,5 @@ java -classpath .:* -DexportTaskId=1234 ExportTaskContent_GET_ById
 
 ## 関連トピック
 
-* [バッチエンジン API の基本 - データのインポート](./batch-engine-api-basics-importing-data.md) 
-* [データ移行センター](./data-migration-center.md) 
+* [バッチエンジン API の基本 - データのインポート](./batch-engine-api-basics-importing-data.md)
+* [データ移行センター](./data-migration-center.md)

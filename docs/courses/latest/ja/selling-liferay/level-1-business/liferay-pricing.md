@@ -127,7 +127,7 @@ SaaSであることが不可能なシナリオも考えられる：
 
 このような場合、PaaSであるLiferay Experience Cloud Self-Managedが選択肢となり得ますし、Liferayのクラウド全般が選択肢とならない場合は、DXP Self-Hostedが利用できます。
 
-また、 [「セールス決定フロー」](https://learn.liferay.com/documents/d/guest/new-customer-new-project-sales-decision-flow) 、このステップに役立てることもできる。
+また、 [「セールス決定フロー」](https://learn.liferay.com/ja/c/portal/login) 、このステップに役立てることもできる。
 
 ![Liferay の新規顧客と新規プロジェクトの販売決定フローは、新規のオポチュニティにどの展開モデルが最も適しているかのガイダンスを提供します。](./liferay-pricing/images/02.png)
 

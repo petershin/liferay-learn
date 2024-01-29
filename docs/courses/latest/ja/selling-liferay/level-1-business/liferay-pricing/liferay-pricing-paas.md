@@ -22,8 +22,8 @@ visibility:
 LiferayのPaaSでは、DXPのすべての機能が含まれており、DXP 7.4ではコマースとアナリティクスの機能も含まれています。 Liferayはまた、インフラストラクチャーとプラットフォームサービスを提供し、管理しますが、アップグレード、アップデート、パッチ、セキュリティ・ホットフィックス、ソフトウェアのトラブルシューティング、アプリケーションの配信など、その他のほとんどの活動はお客様が責任を負うことになります。
 
 ```{note}
-* 本モジュールのライブワークショップの [録画](https://learn.liferay.com/web/guest/d/sa1-2b-liferay-pricing-paas) をご覧ください。
-* 上記ワークショップで使用されたプレゼンテーション資料はこちら [PDF](https://learn.liferay.com/documents/d/guest/sa1-2b-liferay-pricing-paas-pdf) からダウンロードしてください。
+* 本モジュールのライブワークショップの [録画](https://learn.liferay.com/ja/c/portal/login) をご覧ください。
+* 上記ワークショップで使用されたプレゼンテーション資料はこちら [PDF](https://learn.liferay.com/ja/c/portal/login) からダウンロードしてください。
 ```
 
 ## Liferay Experience Cloud SM 価格の概要

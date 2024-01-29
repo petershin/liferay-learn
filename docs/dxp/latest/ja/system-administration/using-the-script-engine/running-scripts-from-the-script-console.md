@@ -32,7 +32,7 @@
 
     ![スクリプトコンソールのサンプルのGroovyスクリプトは、ユーザー数をスクリプトコンソールの出力に出力します。](./running-scripts-from-the-script-console/images/01.png)
 
-Groovyのサンプルは、Liferayサービスユーティリティ [`UserLocalServiceUtil`](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/service/UserLocalServiceUtil.html) を呼び出して、ユーザー数を取得します。 次に、`out`（組み込みの`PrintWriter`）を使用して、スクリプトコンソールに数を書き込みます。
+Groovyのサンプルは、Liferayサービスユーティリティ [`UserLocalServiceUtil`](https://resources.learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/service/UserLocalServiceUtil.html) を呼び出して、ユーザー数を取得します。 次に、`out`（組み込みの`PrintWriter`）を使用して、スクリプトコンソールに数を書き込みます。
 
 ```{note}
 *out.println*ではなく*System.out.println*を使用すると、出力はスクリプトコンソールではなくLiferayのログファイルに出力されます。

@@ -23,7 +23,7 @@ BlogsEntryService _blogsEntryService;
 
 OSGiサービスは任意のJavaクラスで使用できます。
 
-LiferayサービスのJavadocは [こちら](https://learn.liferay.com/reference/latest/en/dxp.html) から入手できます。
+LiferayサービスのJavadocは [こちら](https://resources.learn.liferay.com/reference/latest/en/dxp.html) から入手できます。
 
 ```{note}
 OSGiサービスの作成方法については、 [OSGiサービスとしてのAPI](./apis-as-osgi-services.md) を参照してください。

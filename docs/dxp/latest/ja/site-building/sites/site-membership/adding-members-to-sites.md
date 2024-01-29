@@ -63,7 +63,7 @@
 
 ## マイサイトアプリケーションによるサイトへの参加
 
-マイサイト」アプリケーションは、ユーザーが所属するサイトを一覧表示します。 このアプリケーションは、デフォルトでUser Profile Menu [Dashboard pages](../personal-sites.md) に追加されます。 My Sitesアプリケーションをページに追加し、 **All Sites** タブにアクセスすると、利用可能なオープンサイトと制限付きサイトを表示できます。 サイトの **オプション** ボタン（！[Options](../../../images/icon-actions.png） ）を選択し、 **参加** をクリックすることにより、あなたがメンバーでないサイトへのアクセスを要求することができます。
+マイサイト」アプリケーションは、ユーザーが所属するサイトを一覧表示します。 このアプリケーションは、デフォルトでUser Profile Menu [Dashboard pages](../personal-sites.md) に追加されます。 My Sitesアプリケーションをページに追加し、 **All Sites** タブにアクセスすると、利用可能なオープンサイトと制限付きサイトを表示できます。 サイトの **オプション** ボタン（![Options](../../../images/icon-actions.png） ）を選択し、 **参加** をクリックすることにより、あなたがメンバーでないサイトへのアクセスを要求することができます。
 
 ![The My Sites Application displays the sites you're a member of and the ones you can join.](./adding-members-to-sites/images/05.png)
 

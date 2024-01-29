@@ -26,8 +26,8 @@ visibility:
 アカウント・エグゼクティブやカスタマー・サクセス・マネージャーに役立つ情報が満載です。 そうすることで、正しい、最もインパクトのあるセールストークを準備し、提供することができる。
 
 ```{note}
-* このモジュールのライブ・ワークショップの [録画](https://learn.liferay.com/web/guest/d/sa1-4-liferay-sales-presentations-and-how-to-master-them) をご覧ください。
-* ライブ・ワークショップで使用されたプレゼンテーションの [PDF](https://learn.liferay.com/documents/d/guest/sa1-4-liferay-sales-presentations-and-how-to-master-them-pdf) をダウンロードしてください。
+* このモジュールのライブ・ワークショップの [録画](https://learn.liferay.com/ja/c/portal/login) をご覧ください。
+* ライブ・ワークショップで使用されたプレゼンテーションの [PDF](https://learn.liferay.com/ja/c/portal/login) をダウンロードしてください。
 ```
 ## 古いセールス・デッキの課題
 

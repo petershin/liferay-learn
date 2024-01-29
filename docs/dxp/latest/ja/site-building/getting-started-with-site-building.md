@@ -32,7 +32,7 @@ Liferay DXPのコンテンツ管理システム（CMS）は、さまざまな種
 
 ## ユーザーエクスペリエンスのカスタマイズ
 
-Liferay DXPの [パーソナライゼーションとセグメンテーション](./personalizing-site-experience.md) フレームワークにより、ユーザーの興味やニーズに対応し、それを満たすサイト体験を構築することができます。 [所属する組織やサイト内での役割など、特定の基準に基づいてユーザーセグメント](./personalizing-site-experience/segmentation/creating-and-managing-user-segments.md) を作成し、それを使用して [パーソナライズされたページレイアウトやコンテンツ](./personalizing-site-experience/experience-personalization/content-page-personalization.md) をユーザー層に合わせて表示したり、 [Analytics Cloud](https://learn.liferay.com/analytics-cloud/latest/en/connecting-data-sources/connecting-liferay-dxp-to-analytics-cloud.html) と統合してセグメント内のユーザーの行動を分析し、サイトとのインタラクションを確認したりすることができます。 [ユーザーの行動に基づいてコンテンツを推奨](./personalizing-site-experience/experience-personalization/understanding-content-recommendations.md) することもできます。
+Liferay DXPの [パーソナライゼーションとセグメンテーション](./personalizing-site-experience.md) フレームワークにより、ユーザーの興味やニーズに対応し、それを満たすサイト体験を構築することができます。 [所属する組織やサイト内での役割など、特定の基準に基づいてユーザーセグメント](./personalizing-site-experience/segmentation/creating-and-managing-user-segments.md) を作成し、それを使用して [パーソナライズされたページレイアウトやコンテンツ](./personalizing-site-experience/experience-personalization/content-page-personalization.md) をユーザー層に合わせて表示したり、 [Liferay DXPをAnalytics Cloudに接続する](https://learn.liferay.com/ja/w/analytics-cloud/getting-started/connecting-liferay-dxp-to-analytics-cloud) と統合してセグメント内のユーザーの行動を分析し、サイトとのインタラクションを確認したりすることができます。 [ユーザーの行動に基づいてコンテンツを推奨](./personalizing-site-experience/experience-personalization/understanding-content-recommendations.md) することもできます。
 
 <!-- Screenshot -->
 

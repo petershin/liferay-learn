@@ -11,14 +11,14 @@ visibility:
 
 外部のウェブサイトに電力を供給する場合、最も重要な機能は以下の通りである。
 
-* [デザイン・システムとエクスペリエンス・マネジメント](https://learn.liferay.com/w/dxp/site-building)
-* [コンテンツと資産管理 ](https://learn.liferay.com/w/dxp/content-authoring-and-management)
-* [ローコード／ノーコード・アプリケーション構築](https://learn.liferay.com/w/dxp/building-applications/objects)
-* [セグメンテーションとパーソナライゼーション](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience)
-* [アナリティクス](https://learn.liferay.com/w/analytics-cloud/index) および [最適化](https://learn.liferay.com/w/dxp/site-building/optimizing-sites)
-* [データモデリングとプロセスオートメーション](https://learn.liferay.com/w/dxp/process-automation)
-* [検索](https://learn.liferay.com/w/dxp/using-search) と [ナビゲーション](https://learn.liferay.com/w/dxp/site-building/site-navigation)
-* [ヘッドレスAPIとマルチチャネル](https://learn.liferay.com/w/dxp/headless-delivery)
+* [サイトの構築](https://learn.liferay.com/w/dxp/site-building)
+* [コンテンツのオーサリングと管理](https://learn.liferay.com/w/dxp/content-authoring-and-management)
+* [オブジェクト](https://learn.liferay.com/w/dxp/building-applications/objects)
+* [サイトエクスペリエンスのパーソナライズ](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience)
+* [Analytics Cloud](https://learn.liferay.com/w/analytics-cloud/index) および [サイトの最適化](https://learn.liferay.com/w/dxp/site-building/optimizing-sites)
+* [プロセスの自動化](https://learn.liferay.com/w/dxp/process-automation)
+* [検索の利用](https://learn.liferay.com/w/dxp/using-search) と [サイトナビゲーション](https://learn.liferay.com/w/dxp/site-building/site-navigation)
+* [ヘッドレスデリバリー](https://learn.liferay.com/w/dxp/headless-delivery)
 
 このうち、重要な能力は次の2つである。
 

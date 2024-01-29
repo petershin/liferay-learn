@@ -8,7 +8,7 @@ toc:
 
 Liferay Experience Cloud (LXC) のインスタンスまたは LXC Self-Managed (LXC-SM) の環境がプロビジョニングされたら、最初のタスクはクラウド・コンソールにアクセスすることです。
 
-Liferay Experience Cloud Self-Managed (LXC-SM) では、クラウド・コンソールを使用して、 [Web サーバー](https://learn.liferay.com/w/liferay-cloud/platform-services/web-server-service) や [データベース](https://learn.liferay.com/w/liferay-cloud/platform-services/database-service/database-service) など、環境の各サービスを管理します。
+Liferay Experience Cloud Self-Managed (LXC-SM) では、クラウド・コンソールを使用して、 [Webサーバーサービス（Nginx）](https://learn.liferay.com/w/liferay-cloud/platform-services/web-server-service) や [データベースサービス(MySQL)](https://learn.liferay.com/w/liferay-cloud/platform-services/database-service/database-service) など、環境の各サービスを管理します。
 
 LXCでは、これらのサービスはあなたのために管理され、あなたは主にLiferayのすぐに使える機能を使って作業しますが、コンソールを使って独自の [クライアント拡張](https://learn.liferay.com/w/dxp/building-applications/client-extensions) を管理することもできます。
 
@@ -19,6 +19,6 @@ LXCでは、これらのサービスはあなたのために管理され、あ�
 - 他のチームメンバーをクラウドコンソールに招待する
 - コンピュータからアカウントにアクセスするためのコマンドラインインターフェイス（CLI）ツールをインストールして使用する。
 
-次に、Delectable BonsaiのITスタッフであるMarcusとKyleがクラウドコンソールにアクセスし、 [、クラウド・プロジェクトに変更をデプロイするために必要なツール](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool) 。
+次に、Delectable BonsaiのITスタッフであるMarcusとKyleがクラウドコンソールにアクセスし、 [コマンドラインツール](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool) 。
 
 [続きはこちら](./setting-up-your-cloud-project/accessing-the-liferay-cloud-console.md)

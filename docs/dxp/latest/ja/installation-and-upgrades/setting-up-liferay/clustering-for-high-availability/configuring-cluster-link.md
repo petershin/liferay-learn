@@ -1,6 +1,6 @@
 # クラスタリンクの構成
 
-Cluster Linkを有効にすると、分散キャッシュがアクティブになります。 キャッシュは、同時に実行されている複数のLiferay DXPノードに分散されます。 Cluster Linkは、 [Ehcache](http://www.ehcache.org) レプリケーションを使用します。 Ehcacheグローバル設定は [`portal.properties` ファイル](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Ehcache) にあります。
+Cluster Linkを有効にすると、分散キャッシュがアクティブになります。 キャッシュは、同時に実行されている複数のLiferay DXPノードに分散されます。 Cluster Linkは、 [Ehcache](http://www.ehcache.org) レプリケーションを使用します。 Ehcacheグローバル設定は [`portal.properties` ファイル](https://resources.learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) にあります。
 
 デフォルトでは、Liferayはノード間でキャッシュされたエンティティをコピーしません。 たとえば、エンティティが削除または変更された場合、クラスターリンクは他のノードに **削除** メッセージを送信して、ローカルキャッシュ内のこのエンティティを無効にします。 他のノードでそのエンティティを要求すると、キャッシュ **ミス** が発生し、エンティティはデータベースから取得されてローカルキャッシュに格納されます。 1つのノードのローカルキャッシュに追加されたエンティティは、他のノードのローカルキャッシュにはコピーされません。 エンティティがキャッシュされていないノードで新しいエンティティを取得しようとすると、キャッシュ **ミス** が発生します。 ミスにより、ノードがトリガーされてデータベースからエンティティが取得され、ローカルキャッシュに格納されます。
 
@@ -16,7 +16,7 @@ DXPのクラスタリングは、ネットワークとクラスタノードの�
 cluster.link.enabled=true
 ```
 
-[Cluster Linkポータルプロパティ](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Cluster%20Link) は、ニーズに合わせてオーバーライドできるデフォルト構成を提供します。
+[Cluster Linkポータルプロパティ](https://resources.learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) は、ニーズに合わせてオーバーライドできるデフォルト構成を提供します。
 
 デフォルトの多くは、実際のアドレスの代わりに `localhost`使用します。 ただし、一部の構成では、 `localhost` は、ホストの実際のアドレスではなく、内部ループバックネットワーク（`127.0.0.1` または `:: 1`）にバインドされています。 それでもこの設定が必要な場合は、DXPにこのプロパティを使用して実際のアドレスを自動検出させることができます。
 
@@ -41,7 +41,7 @@ Cluster Linkを有効にすると、DXPのデフォルトのクラスタリン�
 
 ### UDPを介したマルチキャストの使用
 
-DXPは、 [JGroupsからのチャネル](http://www.jgroups.org/manual4/index.html#_channel) のグループを２つ使用して、UDPを介したマルチキャストを実装します：コントロールグループとトランスポートグループです。 [チャネルのプロパティ](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Cluster%20Link) をカスタマイズする場合は、次のポータルプロパティを `portal-ext.properties`に追加することにより、カスタマイズできます。
+DXPは、 [JGroupsからのチャネル](http://www.jgroups.org/manual4/index.html#_channel) のグループを２つ使用して、UDPを介したマルチキャストを実装します：コントロールグループとトランスポートグループです。 [チャネルのプロパティ](https://resources.learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) をカスタマイズする場合は、次のポータルプロパティを `portal-ext.properties`に追加することにより、カスタマイズできます。
 
 ```properties
 cluster.link.channel.name.control=［your control channel name］
@@ -50,7 +50,7 @@ cluster.link.channel.properties.control=［your control channel properties］
 
 チャネルのプロパティについては、 [JGroups's documentation](http://www.jgroups.org/manual4/index.html#protlist) を参照してください。 デフォルトの構成では、そこで説明されている設定を持つ多くのプロパティが設定されます。
 
-マルチキャストは、ネットワーク上のすべてのデバイスにブロードキャストします。 同じネットワーク上のクラスター環境は、デフォルトで互いに通信します。 それらの間で送信されるメッセージと情報（たとえば、スケジュールされたタスク）は、意図しない結果につながる可能性があります。 ネットワーク上で論理的または物理的にそれらを分離するか、各クラスターの `portal-ext.properties` を構成して、 [マルチキャストグループアドレスとポート値の異なるセットを使用するようにして、そのようなクラスター環境を分離します](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Multicast) 。
+マルチキャストは、ネットワーク上のすべてのデバイスにブロードキャストします。 同じネットワーク上のクラスター環境は、デフォルトで互いに通信します。 それらの間で送信されるメッセージと情報（たとえば、スケジュールされたタスク）は、意図しない結果につながる可能性があります。 ネットワーク上で論理的または物理的にそれらを分離するか、各クラスターの `portal-ext.properties` を構成して、 [マルチキャストグループアドレスとポート値の異なるセットを使用するようにして、そのようなクラスター環境を分離します](https://resources.learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) 。
 
 JGroupsはデフォルトで `localhost` を使用してバインドアドレスを自動的に設定します。 ただし、一部の構成では、 `localhost` は、ホストの実際のアドレスではなく、内部ループバックネットワーク（`127.0.0.1` または `:: 1`）にバインドされています。 DXPの `cluster.link.autodetect.address` ポータルプロパティが接続可能なサーバーを指している限り、DXPはそのサーバーを使用してホストの実際のアドレスを自動的に検出します。 デフォルトの設定は次のとおりです。
 

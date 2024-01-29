@@ -1,6 +1,6 @@
 # 検索の設定
 
-LiferayはElasticsearchを使ってコンテンツを検索し、インデックスを作成します。 Liferayクラスタでは、Elasticsearchは各ノードからアクセス可能な別のサーバにインストールする必要があります。 以下の手順に従って、Elasticsearchを設定してください。 詳しくは [Elasticsearch](https://learn.liferay.com/w/dxp/using-search/installing-and-upgrading-a-search-engine/elasticsearch/getting-started-with-elasticsearch) をご覧ください。
+LiferayはElasticsearchを使ってコンテンツを検索し、インデックスを作成します。 Liferayクラスタでは、Elasticsearchは各ノードからアクセス可能な別のサーバにインストールする必要があります。 以下の手順に従って、Elasticsearchを設定してください。 詳しくは [Elasticsearchを開始する](https://learn.liferay.com/w/dxp/using-search/installing-and-upgrading-a-search-engine/elasticsearch/getting-started-with-elasticsearch) をご覧ください。
 
 ## Elasticsearchの実行
 

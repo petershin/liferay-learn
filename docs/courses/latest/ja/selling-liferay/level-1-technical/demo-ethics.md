@@ -32,8 +32,8 @@ Liferay DXPのデモンストレーションは、販売プロセスの必須で
 各セクションには、主な質問に対する可能性のある答えが並んでいる。 正しい答えを選ぶのは難しくないはずだが、間違った答えを選ぶことで、セールス・エンジニアはデモが見込み客にとって価値のあるものになるよう、より効果的に取り組むことができるはずだ。
 
 ```{note}
-* このモジュールのライブ・ワークショップの [録画](https://learn.liferay.com/web/guest/d/se1-10-demo-ethics) をご覧ください。
-* ライブ・ワークショップで使用されたプレゼンテーションの [PDF](https://learn.liferay.com/documents/d/guest/se1-10-demo-ethics-pdf) をダウンロードしてください。
+* このモジュールのライブ・ワークショップの [録画](https://learn.liferay.com/ja/c/portal/login) をご覧ください。
+* ライブ・ワークショップで使用されたプレゼンテーションの [PDF](https://learn.liferay.com/ja/c/portal/login) をダウンロードしてください。
 ```
 ## デモはなぜ行われるのか？
 

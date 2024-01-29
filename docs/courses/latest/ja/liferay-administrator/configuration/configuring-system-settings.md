@@ -2,7 +2,7 @@
 
 {bdg-secondary}`LXC-SM またはセルフホスト`
 
-システム設定は、インスタンス、サイト、またはウィジェットにまたがって適用されます。 ここで行った設定は、環境全体に適用されます。 これらの中には、下位のスコープでは変更できないもの（例えば、アンチウイルスの設定）や、下位のスコープで上書きできるデフォルトになるものがある。 詳しくは [システム設定](https://learn.liferay.com/en/w/dxp/system-administration/configuring-liferay/system-settings) をご覧ください。
+システム設定は、インスタンス、サイト、またはウィジェットにまたがって適用されます。 ここで行った設定は、環境全体に適用されます。 これらの中には、下位のスコープでは変更できないもの（例えば、アンチウイルスの設定）や、下位のスコープで上書きできるデフォルトになるものがある。 詳しくは [システム設定](https://learn.liferay.com/ja/w/dxp/system-administration/configuring-liferay/system-settings) をご覧ください。
 
 ### LXCのシステム設定
 
@@ -36,5 +36,5 @@ ClamAVドキュメント](https://docs.clamav.net/)に従って、Liferay環境�
 
 ## 関連コンセプト
 
-- [システム設定](https://learn.liferay.com/en/w/dxp/system-administration/configuring-liferay/system-settings)
-- [アップロードされたファイルのウイルス対策スキャンを有効にする](https://learn.liferay.com/en/w/dxp/system-administration/file-storage/enabling-antivirus-scanning-for-uploaded-files)
+- [システム設定](https://learn.liferay.com/ja/w/dxp/system-administration/configuring-liferay/system-settings)
+- [アップロードされたファイルのウイルス対策スキャンを有効にする](https://learn.liferay.com/ja/w/dxp/system-administration/file-storage/enabling-antivirus-scanning-for-uploaded-files)

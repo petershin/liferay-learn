@@ -20,11 +20,11 @@ Liferayオブジェクトはローカリゼーションフレームワークと�
 
 1. Objectsアプリケーションを開き、目的の定義の編集を始める。
 
-1. Detailsタブで、_Enable Entry Translation_を切り替える。
+1. Detailsタブで、 **Enable Entry Translation** を切り替える。
 
    ![Enable entry translation.](./localizing-object-definitions-and-entries/images/03.png)
 
-1. ［_保存_］をクリックします。
+1. ［**保存**］をクリックします。
 
 テキストフィールド、ロングテキストフィールド、リッチテキストフィールドを追加または設定する際に、そのフィールドがローカライズ可能かどうかを判断できるようになりました。
 

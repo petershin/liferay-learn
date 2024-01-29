@@ -1,6 +1,6 @@
 # 組織を作る
 
-Liferay を使用して、クラリティ・ビジョン・ソリューションズの組織階層をモデル化します。 詳しくは [組織を理解する](https://learn.liferay.com/en/w/dxp/users-and-permissions/organizations/understanding-organizations) を参照。
+Liferay を使用して、クラリティ・ビジョン・ソリューションズの組織階層をモデル化します。 詳しくは [組織について](https://learn.liferay.com/ja/w/dxp/users-and-permissions/organizations/understanding-organizations) を参照。
 
 ## 親子団体
 
@@ -61,7 +61,7 @@ ITマネージャーとITスタッフはどの組織にも属していない。 
 
 ## 組織サイト
 
-次に、社内ブログをホストするために、セールス & マーケティング部門用の組織サイトを作成する。 詳しくは [組織サイト](https://learn.liferay.com/en/w/dxp/users-and-permissions/organizations/organization-sites) を参照。
+次に、社内ブログをホストするために、セールス & マーケティング部門用の組織サイトを作成する。 詳しくは [組織サイト](https://learn.liferay.com/ja/w/dxp/users-and-permissions/organizations/organization-sites) を参照。
 
 1. 組織に戻り、 **Clarity Vision Solutions** 組織をクリックします。
 
@@ -93,11 +93,11 @@ ITマネージャーとITスタッフはどの組織にも属していない。 
    * ブログ・ウィジェットをページにドラッグして追加する。 ウィジェットはコラボレーションの中にある。
    * ［**Publish**］ をクリックします。
 
-1. 営業 & マーケティングの組織サイトには、営業 & マーケティングのブログ記事が掲載されたページがあり、子組織に所属する誰もが閲覧できるようになった。 ブログとブログ・エントリーについて詳しくは、 [Getting Started with Blogs](https://learn.liferay.com/en/w/dxp/content-authoring-and-management/blogs/getting-started-with-blogs) をご覧ください。
+1. 営業 & マーケティングの組織サイトには、営業 & マーケティングのブログ記事が掲載されたページがあり、子組織に所属する誰もが閲覧できるようになった。 ブログとブログ・エントリーについて詳しくは、 [ブログを始める](https://learn.liferay.com/ja/w/dxp/content-authoring-and-management/blogs/getting-started-with-blogs) をご覧ください。
 
 次に、 [LDAP](./connecting-to-ldap.md)に接続してユーザーをインポートする。
 
 ## 関連コンセプト
 
-- [組織について](https://learn.liferay.com/en/w/dxp/users-and-permissions/organizations/understanding-organizations)
-- [組織サイト](https://learn.liferay.com/en/w/dxp/users-and-permissions/organizations/organization-sites)
+- [組織について](https://learn.liferay.com/ja/w/dxp/users-and-permissions/organizations/understanding-organizations)
+- [組織サイト](https://learn.liferay.com/ja/w/dxp/users-and-permissions/organizations/organization-sites)

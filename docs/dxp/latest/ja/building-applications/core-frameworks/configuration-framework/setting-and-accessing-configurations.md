@@ -42,7 +42,7 @@ Liferayの構成フレームワークを使用して、MVCポートレットの�
 
    UIには、フォントの色、フォントファミリー、フォントサイズの3つの設定可能な属性とともにウェルカムメッセージが表示されます。
 
-1. 設定を変更するには、_コントロールパネル_ &rarr; _設定_ &rarr; _システム設定_ に移動します。 その他」の下にある「_category.n2f3_」をクリックする。
+1. 設定を変更するには、 **コントロールパネル** &rarr; **設定** &rarr; **システム設定** に移動します。 その他」の下にある「**category.n2f3**」をクリックする。
 
    ![Click category.n2f3 under the Other category.](./setting-and-accessing-configurations/images/02.png)
 
@@ -61,7 +61,7 @@ Liferayの構成フレームワークを使用して、MVCポートレットの�
 :lines: 7-25
 ```
 
-この例のインターフェイスでは、スコープは`Scope.COMPANY`に設定されています。 詳しくは、 [Scoping Configurations](./scoping-configurations.md) を参照のこと。
+この例のインターフェイスでは、スコープは`Scope.COMPANY`に設定されています。 詳しくは、 [スコープ設定](./scoping-configurations.md) を参照のこと。
 
 インターフェースには、フォントの色、フォントファミリー、フォントサイズの3つの設定可能な属性があります。 color と family は `string` 型、size は `int` 型であることに注意。
 

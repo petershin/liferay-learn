@@ -49,5 +49,5 @@
 
 ## 関連コンセプト
 
-- [仮想インスタンスについて](https://learn.liferay.com/en/w/dxp/system-administration/configuring-liferay/virtual-instances/understanding-virtual-instances)
-- [仮想インスタンスの追加](https://learn.liferay.com/en/w/dxp/system-administration/configuring-liferay/virtual-instances/adding-a-virtual-instance)
+- [仮想インスタンスを理解する](https://learn.liferay.com/ja/w/dxp/system-administration/configuring-liferay/virtual-instances/understanding-virtual-instances)
+- [仮想インスタンスの追加](https://learn.liferay.com/ja/w/dxp/system-administration/configuring-liferay/virtual-instances/adding-a-virtual-instance)

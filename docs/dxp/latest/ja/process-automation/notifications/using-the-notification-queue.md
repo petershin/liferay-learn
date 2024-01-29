@@ -14,9 +14,9 @@ Liferayは、ObjectアクションによってトリガーされたEメール通
 | トリガー元 | [通知アクションのトリガーを担当するオブジェクト](../../building-applications/objects/creating-and-managing-objects/actions/defining-object-actions.md#notification-actions) 。 |
 | 送信者   | 通知の送信者は、 [通知テンプレート](./creating-notification-templates.md) で設定される。                                                                                      |
 | 終了    | 通知の受信者は、 [通知テンプレート](./creating-notification-templates.md) で設定される。                                                                                      |
-| ステータス | 通知ステータスを示し、送信済み（_Sent_）か送信中（_Unsent_）かを示します。                                                                                                                     |
+| ステータス | 通知ステータスを示し、送信済み（**Sent**）か送信中（**Unsent**）かを示します。                                                                                                                     |
 
-エントリーの_アクション_ボタン(![アクションボタン](../../images/icon-actions.png))をクリックすると、そのエントリーの_削除_または_通知の再送_ができます。
+エントリーの **アクション** ボタン(![アクションボタン](../../images/icon-actions.png))をクリックすると、そのエントリーの **削除** または **通知の再送** ができます。
 
 ![Delete entries or resend notifications.](./using-the-notification-queue/images/02.png)
 
@@ -36,7 +36,7 @@ Liferayは、ObjectアクションによってトリガーされたEメール通
 
    ![Under Notification Queue, enter the number of minutes between deletion operations.](./using-the-notification-queue/images/03.png)
 
-1. ［_保存_］をクリックします。
+1. ［**保存**］をクリックします。
 
 ## 関連トピック
 

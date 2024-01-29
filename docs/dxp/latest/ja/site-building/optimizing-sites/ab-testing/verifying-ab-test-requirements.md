@@ -2,7 +2,7 @@
 
 コンテンツページでA/Bテストを実行する前に、次の要件が満たされていることを確認する必要があります。
 
-- Liferay DXPがAnalytics Cloudに接続されている。 この接続を設定する方法については、 [Liferay DXPをAnalytics Cloudに接続する](https://learn.liferay.com/analytics-cloud/latest/ja/connecting-data-sources/connecting-liferay-dxp-to-analytics-cloud.html) を参照してください。
+- Liferay DXPがAnalytics Cloudに接続されている。 この接続を設定する方法については、 [Liferay DXPをAnalytics Cloudに接続する](https://learn.liferay.com/ja/w/analytics-cloud/getting-started/connecting-liferay-dxp-to-analytics-cloud) を参照してください。
 
 - ページが[コンテントページ](../../creating-pages/understanding-pages/understanding-pages.md)である。 ウィジェットページは、異なるセグメントのエクスペリエンスをサポートしていません。
 - テストするコンテントページが公開されている。

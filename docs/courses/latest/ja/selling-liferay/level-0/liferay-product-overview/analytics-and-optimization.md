@@ -12,19 +12,19 @@ visibility:
 ## サイトとページのアナリティクス
 
 * [サイトダッシュボード](https://learn.liferay.com/web/guest/w/analytics-cloud/touchpoints/sites-dashboard)
-* [ページアナリティクス](https://learn.liferay.com/web/guest/w/analytics-cloud/touchpoints/pages/pages)
+* [ページ](https://learn.liferay.com/web/guest/w/analytics-cloud/touchpoints/pages/pages)
 
 ## アセットアナリティクス
 
 * [アセット](https://learn.liferay.com/web/guest/w/analytics-cloud/touchpoints/assets/assets)
-* [コンテンツパフォーマンスツール](https://learn.liferay.com/w/dxp/content-authoring-and-management/page-performance-and-accessibility/analyze-content-metrics-using-content-performance-tool)
+* [コンテンツパフォーマンスツールを使用したコンテンツメトリクスの分析](https://learn.liferay.com/w/dxp/content-authoring-and-management/page-performance-and-accessibility/analyze-content-metrics-using-content-performance-tool)
 
 ## 流入元とパスアナリティクス
 
-* [パス](https://learn.liferay.com/w/analytics-cloud/touchpoints/pages/paths?p_l_back_url=%2Fsearch%3Fq%3Dtraffic&highlight=traffic)
+* [Paths](https://learn.liferay.com/w/analytics-cloud/touchpoints/pages/paths?p_l_back_url=%2Fsearch%3Fq%3Dtraffic&highlight=traffic)
 
 ## コンテンツダッシュボード
 
-* [コンテンツダッシュボード](https://learn.liferay.com/w/dxp/content-authoring-and-management/content-dashboard/about-the-content-dashboard)
+* [コンテンツダッシュボードについて](https://learn.liferay.com/w/dxp/content-authoring-and-management/content-dashboard/about-the-content-dashboard)
 
 次：[セグメンテーションとパーソナライゼーション](./segmentation-and-personalization.md)

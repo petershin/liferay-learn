@@ -1,14 +1,14 @@
 # Webコンテンツ
 
-[ウェブコンテンツの記事](https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/web-content/web-content-articles/adding-a-basic-web-content-article.html) は、サイト訪問者に情報を提供するための重要な資産である。 Analytics Cloudでは、サイト ユーザーがどのようにコンテンツを利用しているかについて、重要な洞察を得ることができます。
+[基本Webコンテンツ記事の追加](https://learn.liferay.com/dxp/latest/ja/content-authoring-and-management/web-content/web-content-articles/adding-a-basic-web-content-article.html) は、サイト訪問者に情報を提供するための重要な資産である。 Analytics Cloudでは、サイト ユーザーがどのようにコンテンツを利用しているかについて、重要な洞察を得ることができます。
 
 ![Analytics data for web content can be viewed in a table format.](web-content/images/01.png)
 
-あなたのサイトのウェブコンテンツ記事のリストが、さまざまな指標とともに表示されます。 このデータをCSVファイルとしてダウンロードするには、_Download Report_をクリックする。 詳しくは [ダウンロードレポート](../../reference/downloading-reports.md) をご覧ください。
+あなたのサイトのウェブコンテンツ記事のリストが、さまざまな指標とともに表示されます。 このデータをCSVファイルとしてダウンロードするには、 **Download Report** をクリックする。 詳しくは [ダウンロードレポート](../../reference/downloading-reports.md) をご覧ください。
 
 ## 訪問者の行動
 
-資産の詳細の概要タブには、いくつかのデータが表示されます。 このダッシュボード・ビューをPDFファイルとしてダウンロードするには、_Download Report_をクリックしてください。 詳しくは [ダウンロードレポート](../../reference/downloading-reports.md) をご覧ください。
+資産の詳細の概要タブには、いくつかのデータが表示されます。 このダッシュボード・ビューをPDFファイルとしてダウンロードするには、 **Download Report** をクリックしてください。 詳しくは [ダウンロードレポート](../../reference/downloading-reports.md) をご覧ください。
 
 最初のチャートは、訪問者の行動と呼ばれ、1つの重要な指標を含んでいます：総ビュー。
 
@@ -34,7 +34,7 @@
 
 **Segmented Views：** 既知の個人のうち、1 つまたは複数の Analytics Cloud セグメントに属するか属さないかの割合を示すドーナツ チャート。 中央には、既知の個体数の合計が表示されています。 なお、このグラフの算出には、既知の個体のみが使用されている。
 
-**視聴者セグメント：**各セグメントを構成する既知の個人の割合を示す棒グラフ。 このチャートは、上位5つのセグメントごとにバーを表示し、残りのセグメントを最後のバーに集約している。 最後のバーのツールチップには、残りの各セグメントの値が表示される。
+**視聴者セグメント：** 各セグメントを構成する既知の個人の割合を示す棒グラフ。 このチャートは、上位5つのセグメントごとにバーを表示し、残りのセグメントを最後のバーに集約している。 最後のバーのツールチップには、残りの各セグメントの値が表示される。
 
 ![Charts help to identify unique visitors, logged in users, and users who fall into particular segments.](web-content/images/03.png)
 

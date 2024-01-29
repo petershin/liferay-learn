@@ -6,7 +6,7 @@ LiferayではデフォルトでAntiSamyサニタイザーが有効になって�
 
 ## AntiSamyの構成
 
-デフォルトでは、 [フラグメント](https://learn.liferay.com/web/guest/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments) および [ウェブコンテンツ](https://learn.liferay.com/web/guest/w/dxp/content-authoring-and-management/web-content) を除き、すべての JavaScript コードはサニタイズされ、実行されないようになっています。 これは、コンフィギュレーションにあるブラックリストとホワイトリストによって制御される。 以下の手順で、実際に見てみよう。
+デフォルトでは、 [フラグメントの使用](https://learn.liferay.com/web/guest/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments) および [Webコンテンツ](https://learn.liferay.com/web/guest/w/dxp/content-authoring-and-management/web-content) を除き、すべての JavaScript コードはサニタイズされ、実行されないようになっています。 これは、コンフィギュレーションにあるブラックリストとホワイトリストによって制御される。 以下の手順で、実際に見てみよう。
 
 1. 基本的なウェブコンテンツをサイトページに公開する。
 

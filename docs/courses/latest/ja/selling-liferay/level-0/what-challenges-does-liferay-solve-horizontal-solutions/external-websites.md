@@ -33,13 +33,13 @@ Liferay DXPで外部Webサイトを構築する理由には、次のようなも
 
 外部Webサイトを強化するLiferay DXPの機能を評価する場合、最も重要な機能として以下のものが挙げられます。
 
-* [デザインシステム & エクスペリエンス管理](https://learn.liferay.com/w/dxp/site-building)
-* [コンテンツ & アセットの管理](https://learn.liferay.com/w/dxp/content-authoring-and-management)
-* [ローコード／ノーコードによるアプリケーション構築](https://learn.liferay.com/w/dxp/building-applications/objects)
-* [セグメンテーション & パーソナライゼーション](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience)
-* [アナリティクス](https://learn.liferay.com/w/analytics-cloud/index) & [最適化](https://learn.liferay.com/w/dxp/site-building/optimizing-sites)
-* [データモデリング & プロセスオートメーション](https://learn.liferay.com/w/dxp/process-automation)
-* [検索](https://learn.liferay.com/w/dxp/using-search) & [ナビゲーション](https://learn.liferay.com/w/dxp/site-building/site-navigation)
-* [Headless API & マルチチャネル](https://learn.liferay.com/w/dxp/headless-delivery)
+* [サイトの構築](https://learn.liferay.com/w/dxp/site-building)
+* [コンテンツのオーサリングと管理](https://learn.liferay.com/w/dxp/content-authoring-and-management)
+* [オブジェクト](https://learn.liferay.com/w/dxp/building-applications/objects)
+* [サイトエクスペリエンスのパーソナライズ](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience)
+* [Analytics Cloud](https://learn.liferay.com/w/analytics-cloud/index) & [サイトの最適化](https://learn.liferay.com/w/dxp/site-building/optimizing-sites)
+* [プロセスの自動化](https://learn.liferay.com/w/dxp/process-automation)
+* [検索の利用](https://learn.liferay.com/w/dxp/using-search) & [サイトナビゲーション](https://learn.liferay.com/w/dxp/site-building/site-navigation)
+* [ヘッドレスデリバリー](https://learn.liferay.com/w/dxp/headless-delivery)
 
 次：[サプライヤーポータル](./supplier-portals.md) 

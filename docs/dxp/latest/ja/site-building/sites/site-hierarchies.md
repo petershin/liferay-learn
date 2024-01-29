@@ -13,7 +13,7 @@
 * アプリケーションディスプレイテンプレート
 * データ定義（動的データリスト）
 
-関連する設定可能なプロパティのリストについては、Liferayの`portal.properties`ファイルの [サイトの管理ポートレット](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Sites%20Admin%20Portlet) のセクションを参照してください。 例えば、 `Sites.content.sharing.with.children.enabled` プロパティは、サイトと子サイト間のコンテンツ共有を無効/有効にすることができ、サイト管理者はサイトごとに設定することができます。
+関連する設定可能なプロパティのリストについては、Liferayの`portal.properties`ファイルの [サイトの管理ポートレット](https://resources.learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) のセクションを参照してください。 例えば、 `Sites.content.sharing.with.children.enabled` プロパティは、サイトと子サイト間のコンテンツ共有を無効/有効にすることができ、サイト管理者はサイトごとに設定することができます。
 
 ## サイト階層のロールと権限設定
 

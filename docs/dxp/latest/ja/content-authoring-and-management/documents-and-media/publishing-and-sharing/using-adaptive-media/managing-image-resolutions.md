@@ -34,7 +34,7 @@
 
 1. 希望する解像度の **Actions** ボタン( ![Actions Button](../../../../images/icon-actions.png) )をクリックします。
 
-1. *Disable*/*Enable* を選択する。
+1. **Disable** / **Enable** を選択する。
 
    ![Select Disable/Enable.](./managing-image-resolutions/images/04.png)
 

@@ -103,7 +103,7 @@
 
 ## ディストリビューター・アプリケーション・オブジェクトの発行
 
-カスタムオブジェクトを公開すると、Liferayはデータエントリを保存するためのデータベーステーブルを作成します。 Publishはまた、オブジェクトをOSGiフレームワークに登録し、 [Liferayのコア機能](https://learn.liferay.com/w/dxp/building-applications/objects/understanding-object-integrations) （パーミッション、ワークフロー、ヘッドレスなど）と統合し、基本的なユーザーインターフェイスを提供します。
+カスタムオブジェクトを公開すると、Liferayはデータエントリを保存するためのデータベーステーブルを作成します。 Publishはまた、オブジェクトをOSGiフレームワークに登録し、 [オブジェクト統合を理解する](https://learn.liferay.com/w/dxp/building-applications/objects/understanding-object-integrations) （パーミッション、ワークフロー、ヘッドレスなど）と統合し、基本的なユーザーインターフェイスを提供します。
 
 1. オブジェクトのDetailsタブに移動する。
 
@@ -111,7 +111,7 @@
 
    ![In the Details tab, click Publish.](./determining-data-entities/images/07.png)
 
-これは、Distributor Applicationをアクティブにし、`applicantName`フィールドとデフォルトのシステムフィールドを持つデータベーステーブルを作成します。 パブリッシュ中に何が起こるかについては、 [Publishing Object Drafts](https://learn.liferay.com/en/w/dxp/building-applications/objects/creating-and-managing-objects/creating-objects#publishing-object-drafts) を参照してください。
+これは、Distributor Applicationをアクティブにし、`applicantName`フィールドとデフォルトのシステムフィールドを持つデータベーステーブルを作成します。 パブリッシュ中に何が起こるかについては、 [オブジェクトの作成](https://learn.liferay.com/ja/w/dxp/building-applications/objects/creating-and-managing-objects/creating-objects#publishing-object-drafts) を参照してください。
 
 ## ディストリビューター・アプリケーションの使用
 
@@ -135,7 +135,7 @@
 
 1. 先に進む前に、エントリーの作成、更新、削除を練習する。
 
-また、パブリッシング中にディストリビューター・アプリケーション用に生成されたREST APIを使用して、エントリーの作成、編集、クエリ、および削除を行うこともできます。 これらのAPIは `c/distributorapplications` パスで利用できる。 利用可能な API の完全なリストは [Headless Framework Integration](https://learn.liferay.com/en/w/dxp/building-applications/objects/understanding-object-integrations/using-custom-object-apis) を、入門チュートリアルは [Custom Object API Basics](https://learn.liferay.com/en/w/dxp/building-applications/objects/objects-tutorials/using-apis/object-api-basics) を参照してください。
+また、パブリッシング中にディストリビューター・アプリケーション用に生成されたREST APIを使用して、エントリーの作成、編集、クエリ、および削除を行うこともできます。 これらのAPIは `c/distributorapplications` パスで利用できる。 利用可能な API の完全なリストは [カスタムオブジェクトAPIの使用](https://learn.liferay.com/ja/w/dxp/building-applications/objects/understanding-object-integrations/using-custom-object-apis) を、入門チュートリアルは [Custom Object API Basics](https://learn.liferay.com/en/w/dxp/building-applications/objects/objects-tutorials/using-apis/object-api-basics) を参照してください。
 
 ![Liferay generates REST APIs for Distributor Application.](./determining-data-entities/images/10.png)
 
@@ -145,6 +145,6 @@
 
 ## 関連コンセプト
 
-* [オブジェクト](https://learn.liferay.com/en/w/dxp/building-applications/objects) 
-* [オブジェクトの作成](https://learn.liferay.com/en/w/dxp/building-applications/objects/creating-and-managing-objects/creating-objects) 
-* [Understanding Object Integrations](https://learn.liferay.com/w/dxp/building-applications/objects/understanding-object-integrations) 
+* [オブジェクト](https://learn.liferay.com/ja/w/dxp/building-applications/objects)
+* [オブジェクトの作成](https://learn.liferay.com/ja/w/dxp/building-applications/objects/creating-and-managing-objects/creating-objects)
+* [オブジェクト統合を理解する](https://learn.liferay.com/w/dxp/building-applications/objects/understanding-object-integrations)

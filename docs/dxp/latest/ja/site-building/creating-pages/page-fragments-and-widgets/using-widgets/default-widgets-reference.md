@@ -54,7 +54,7 @@ Liferayには、すぐに使用できるさまざまなウィジェットが用�
 
 ## コマース
 
-利用可能なコマースウィジェットの一覧は、 [コマースウィジェットリファレンス](https://learn.liferay.com/w/commerce/creating-store-content/liferay-commerce-widgets/widget-reference) をご覧ください。
+利用可能なコマースウィジェットの一覧は、 [ウィジェットリファレンス](https://learn.liferay.com/w/commerce/creating-store-content/liferay-commerce-widgets/widget-reference) をご覧ください。
 
 ## コミュニティ
 

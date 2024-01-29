@@ -45,7 +45,7 @@
 
 1. カテゴリー・アプリケーションで、新しいカテゴリーの **Actions**(![Actions](../../../images/icon-actions.png)) をクリックし、 **Edit** を選択します。
 
-1. 画像 **タブをクリックし、***追加**(![追加ボタン](../../../images/icon-add.png))をクリックして、カテゴリーに画像を追加します。
+1. **画像** タブをクリックし、**追加**(![追加ボタン](../../../images/icon-add.png))をクリックして、カテゴリーに画像を追加します。
 
 1. 詳細*タブをクリックし、このカテゴリの説明を追加します。
 
@@ -91,9 +91,9 @@ Liferay DXP 7.4から、表示ページテンプレートには、コンテン�
 
 1. マッピングタブで、 **ソース** ドロップダウンメニューをクリックし、 **特定のコンテンツ** を選択します。
 
-1. アイテム*をクリックし、マッピングしたいカテゴリーを選択します。
+1. **アイテム**をクリックし、マッピングしたいカテゴリーを選択します。
 
-1. フィールド 」**ドロップダウンメニューをクリックし、「名前**」を選択して、カテゴリー名をカードのタイトルにマッピングします。
+1. **フィールド**ドロップダウンメニューをクリックし、**名前**を選択して、カテゴリー名をカードのタイトルにマッピングします。
 
    ![Map the category fields in the display page template using a card fragment.](./displaying-categories-using-display-pages/images/04.png)
 
@@ -109,7 +109,7 @@ Liferay DXP 7.4から、表示ページテンプレートには、コンテン�
 
    ![Set the display page template as default using the Actions menu.](./displaying-categories-using-display-pages/images/05.png)
 
-1. サイト・メニュー (**![サイト・メニュー](../../../images/icon-product-menu.png))を開き、***Categorization***&rarr;***Categories** に移動し、 [ステップ1](#step-1-creating-and-editing-the-categories) のカテゴリーを持つ語彙を選択します。
+1. **サイト・メニュー** (![サイト・メニュー](../../../images/icon-product-menu.png))を開き、**Categorization**&rarr;**Categories** に移動し、 [ステップ1](#step-1-creating-and-editing-the-categories) のカテゴリーを持つ語彙を選択します。
 
 1. どのカテゴリーでも、 **Actions**(![Actions](../../../images/icon-actions.png)) をクリックし、 **View Display Page** を選択します。
 
@@ -121,8 +121,8 @@ Liferay DXP 7.4から、表示ページテンプレートには、コンテン�
 
 ## 関連トピック
 
-[表示ページテンプレートの作成と管理](./creating-and-managing-display-page-templates.md) 
+[表示ページテンプレートの作成と管理](./creating-and-managing-display-page-templates.md)
 
-[表示ページによるコンテンツの公開](./publishing-content-with-display-pages.md) 
+[表示ページによるコンテンツの公開](./publishing-content-with-display-pages.md)
 
 [コンテンツのカテゴリーとボキャブラリーを定義する](../../../content-authoring-and-management/tags-and-categories/defining-categories-and-vocabularies-for-content.md) 。

@@ -35,5 +35,5 @@
 
 ## 関連コンセプト
 
-* [人間関係](https://learn.liferay.com/en/w/dxp/building-applications/objects/creating-and-managing-objects/relationships) 
-* [リレーションシップ REST API](https://learn.liferay.com/en/w/dxp/building-applications/objects/understanding-object-integrations/using-custom-object-apis#relationship-rest-apis) 
+* [関連](https://learn.liferay.com/ja/w/dxp/building-applications/objects/creating-and-managing-objects/relationships)
+* [カスタムオブジェクトAPIの使用](https://learn.liferay.com/ja/w/dxp/building-applications/objects/understanding-object-integrations/using-custom-object-apis#relationship-rest-apis)

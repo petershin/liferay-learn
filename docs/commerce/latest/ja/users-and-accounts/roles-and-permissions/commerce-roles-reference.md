@@ -1,6 +1,6 @@
 # Commerceロールのリファレンス
 
-LiferayにはCommerce用の4つのロール[out-of-the-box](#out-of-the-box-roles)が含まれています: アカウント管理者、アカウントメンバー、バイヤー、オーダーマネージャーです。アカウント管理者、アカウントメンバー、バイヤー、注文管理者です。これらのロールを変更したり、あなたのユースケースに適したアカウントロールを作成することができます。[一般的なカスタムロール](#custom-roles)には、カタログマネージャー、在庫マネージャー、出荷マネージャー、インスタンスオーダーマネージャー、割引マネージャーなどがあります。
+LiferayにはCommerce用の4つのロール [out-of-the-box](#out-of-the-box-roles) が含まれています: アカウント管理者、アカウントメンバー、バイヤー、オーダーマネージャーです。アカウント管理者、アカウントメンバー、バイヤー、注文管理者です。これらのロールを変更したり、あなたのユースケースに適したアカウントロールを作成することができます。 [一般的なカスタムロール](#custom-roles) には、カタログマネージャー、在庫マネージャー、出荷マネージャー、インスタンスオーダーマネージャー、割引マネージャーなどがあります。
 
 ```{note}
 セールスエージェントロールは、Liferay 7.3.x以前のコマースバージョンですぐに利用できます。 Liferay DXP 7.4以上では、MiniumアクセラレータとSpeedwellアクセラレータでのみ利用可能です。 
@@ -10,7 +10,7 @@ LiferayにはCommerce用の4つのロール[out-of-the-box](#out-of-the-box-role
 
 以下の手順で、Commerceロールに関連する権限を表示および管理します：
 
-1. *グローバルメニュー* (![グローバルメニュー](../../images/icon-applications-menu.png))を開き、_コントロールパネル_ &rarr; _ユーザー_ &rarr; _ロール_ に移動します。
+1. **グローバルメニュー**(![グローバルメニュー](../../images/icon-applications-menu.png))を開き、 **コントロールパネル** &rarr; **ユーザー** &rarr; **ロール** に移動します。
 
    ![Click on Roles in the Control Panel.](./commerce-roles-reference/images/01.png)
 
@@ -25,7 +25,7 @@ LiferayにはCommerce用の4つのロール[out-of-the-box](#out-of-the-box-role
    Liferay 7.3以前のバージョンでは、アカウント管理者はサイトロールであり、アカウントメンバーロールはデフォルトロールではありません。 
    ```
 
-1. *権限の定義*タブをクリックします。
+1. **権限の定義** タブをクリックします。
 
    ここから、ロールに割り当てられたすべてのアプリケーションおよびリソースの権限の概要を確認できます。
 
@@ -35,7 +35,7 @@ LiferayにはCommerce用の4つのロール[out-of-the-box](#out-of-the-box-role
 
 ## すぐに使えるロール
 
-以下のロールは、DXPインスタンスですぐに使用できます。 これらはデフォルトのDXPロールに含まれており、必要に応じて変更することができます。 詳しくは [Defining Role Permissions](https://learn.liferay.com/dxp/latest/en/users-and-permissions/roles-and-permissions/defining-role-permissions.html) を参照のこと。
+以下のロールは、DXPインスタンスですぐに使用できます。 これらはデフォルトのDXPロールに含まれており、必要に応じて変更することができます。 詳しくは [ロール権限の定義](https://learn.liferay.com/dxp/latest/ja/users-and-permissions/roles-and-permissions/defining-role-permissions.html) を参照のこと。
 
 ### アカウント管理者
 
@@ -260,7 +260,7 @@ accountsパーミッションは、アカウント管理者がB2B設定でアカ
 
 ## カスタムロール
 
-以下のリストには、自身のCommerceインスタンス用に作成した方がいい一般的なカスタムロールが含まれています。 これらの役割は、他のDXPの役割と同じように作成できます。 詳細は [ロールの作成と管理](https://learn.liferay.com/dxp/latest/en/users-and-permissions/roles-and-permissions/creating-and-managing-roles.html) および [ロール権限の定義](https://learn.liferay.com/dxp/latest/en/users-and-permissions/roles-and-permissions/defining-role-permissions.html) を参照してください。
+以下のリストには、自身のCommerceインスタンス用に作成した方がいい一般的なカスタムロールが含まれています。 これらの役割は、他のDXPの役割と同じように作成できます。 詳細は [ロールの作成と管理](https://learn.liferay.com/dxp/latest/ja/users-and-permissions/roles-and-permissions/creating-and-managing-roles.html) および [ロール権限の定義](https://learn.liferay.com/dxp/latest/ja/users-and-permissions/roles-and-permissions/defining-role-permissions.html) を参照してください。
 
 ### カタログマネージャー
 
@@ -279,7 +279,7 @@ accountsパーミッションは、アカウント管理者がB2B設定でアカ
 
 上記の権限に加えて、ロールに管理させたい個々のカタログの表示権限と更新権限を割り当てる必要があります。
 
-これを行うには、_グローバルメニュー_ (![グローバルメニュー](../../images/icon-applications-menu.png))を開き、_コマース_タブをクリックし、_商品管理_ &rarr; _カタログ_に移動します。 次に、目的のカタログの_Actions_ボタン（！[Actions Button](../../images/icon-actions.png)）をクリックし、_Permissions_を選択します。 チェックボックスを使用して、ロールに_表示_および_更新_権限を割り当てます。
+これを行うには、 **グローバルメニュー**(![グローバルメニュー](../../images/icon-applications-menu.png))を開き、 **コマース** タブをクリックし、 **商品管理** &rarr; **カタログ** に移動します。 次に、目的のカタログの **Actions** ボタン（![Actions Button](../../images/icon-actions.png)）をクリックし、 **Permissions** を選択します。 チェックボックスを使用して、ロールに **表示** および **更新** 権限を割り当てます。
 
 ```{note}
 カタログ管理者にカタログ自体を変更することなく、カタログ内の商品を管理させたい場合は、`Catalogs: Access in Control Panel`と`Catalogs: View`権限を削除してください。
@@ -355,7 +355,7 @@ accountsパーミッションは、アカウント管理者がB2B設定でアカ
 
 ## 関連トピック
 
-* [役割と権限を理解する](https://learn.liferay.com/dxp/latest/en/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.html)
+* [ロールと権限について](https://learn.liferay.com/dxp/latest/ja/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.html)
 * [注文管理権限リファレンス](./order-management-permissions.md)
 * [インベントリ管理権限リファレンス](./inventory-management-permissions.md)
 * [プライシング・パーミッション リファレンス](./pricing-permissions.md)

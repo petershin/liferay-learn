@@ -1,6 +1,6 @@
 # ユーザーを管理する
 
-LDAPからユーザーを取り込むにせよ、Liferay内でユーザーを作成するにせよ、利用可能なツールを使ってユーザーを管理してください。 詳細については、 [Create and Manage Users](https://learn.liferay.com/en/w/dxp/users-and-permissions/users/adding-and-managing-users) を参照してください。
+LDAPからユーザーを取り込むにせよ、Liferay内でユーザーを作成するにせよ、利用可能なツールを使ってユーザーを管理してください。 詳細については、 [ユーザーの追加と管理](https://learn.liferay.com/ja/w/dxp/users-and-permissions/users/adding-and-managing-users) を参照してください。
 
 ## 管理者の作成
 
@@ -69,6 +69,6 @@ LDAPからユーザーを取り込むにせよ、Liferay内でユーザーを作
 
 ## 関連コンセプト
 
-- [ユーザーについて](https://learn.liferay.com/en/w/dxp/users-and-permissions/users/understanding-users)
-- [ユーザーの追加と管理](https://learn.liferay.com/en/w/dxp/users-and-permissions/users/adding-and-managing-users)
-- [組織へのユーザーの追加](https://learn.liferay.com/en/w/dxp/users-and-permissions/organizations/adding-users-to-organizations)
+- [ユーザーについて](https://learn.liferay.com/ja/w/dxp/users-and-permissions/users/understanding-users)
+- [ユーザーの追加と管理](https://learn.liferay.com/ja/w/dxp/users-and-permissions/users/adding-and-managing-users)
+- [組織へのユーザーの追加](https://learn.liferay.com/ja/w/dxp/users-and-permissions/organizations/adding-users-to-organizations)

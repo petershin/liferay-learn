@@ -40,15 +40,15 @@
 
 ## 商品グループと割引の関連付け
 
-1. アプリケーションメニュー &rarr; **Commerce** タブをクリックし、 **_** Pricing **&rarr;** Discounts_に進みます。
+1. アプリケーションメニュー &rarr; **Commerce** タブをクリックし、 ***_* Pricing** &rarr; **Discounts** に進みます。
 
 1. **Add**（ [Add](../../images/icon-add.png) ）をクリックし、以下の情報を入力する：
 
-    __Name__ :商品グループ割引の例
+    __Name__: 商品グループ割引の例
 
-    __Type__ :パーセント
+    __Type__: パーセント
 
-    __適用先__ ：製品グループ
+    __Apply To__: 製品グループ
 
    ![Enter details for a Discount.](./introduction-to-product-groups/images/03.png)
 
@@ -74,7 +74,7 @@
 
 価格リストを商品グループにリンクさせるには、まず価格リストを作成し、作成した商品グループをターゲットとする価格修飾子を作成する必要があります。
 
-1. [アプリケーションメニュー](../../images/icon-applications-menu.png) を開き、 &rarr; **Commerce** タブを開き、 **_** Pricing **&rarr;** Price Lists_に進みます。
+1. ![アプリケーションメニュー](../../images/icon-applications-menu.png) を開き、 &rarr; **Commerce** タブを開き、 ***_* Pricing** &rarr; **Price Lists** に進みます。
 
 1. **Add**(![Add](../../images/icon-add.png)) をクリックし、価格リストの名前、カタログ、通貨を入力します。
 

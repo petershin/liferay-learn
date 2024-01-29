@@ -6,11 +6,11 @@
 
 フォームの断片を作る
 
-1. サイトメニュー(![サイトメニュー](../../../images/icon-product-menu.png))を開き、_デザイン_ &rarr; _フラグメント_に移動します。
+1. サイトメニュー(![サイトメニュー](../../../images/icon-product-menu.png))を開き、 **デザイン** &rarr; **フラグメント** に移動します。
 
-1. *プラス* (![プラスボタン](../../../images/icon-plus.png))をクリックして、フォームのフラグメントを整理するためのフラグメントセットを作成します。
+1. **プラス**(![プラスボタン](../../../images/icon-plus.png))をクリックして、フォームのフラグメントを整理するためのフラグメントセットを作成します。
 
-1. *Add* (![Add Button](../../../images/icon-add.png)) をクリックし、_Form Fragment_ タイプを選択し、_Next_ をクリックします。
+1. **Add**(![Add Button](../../../images/icon-add.png)) をクリックし、 **Form Fragment** タイプを選択し、 **Next** をクリックします。
 
    ![Select the form fragment type and click Next.](./creating-form-fragments/images/01.png)
 
@@ -22,7 +22,7 @@
 
    ![Select the field types the fragment supports.](./creating-form-fragments/images/02.png)
 
-1. *追加*をクリックする。 これにより、ドラフトフラグメントが作成され、フラグメントの編集ページに移動します。
+1. **追加** をクリックする。 これにより、ドラフトフラグメントが作成され、フラグメントの編集ページに移動します。
 
 1. コードタブで、フラグメントのHTML、CSS、JavaScriptを追加します。
 
@@ -34,13 +34,13 @@
    リダイレクトのために [リンク設定](../../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#link-settings) を持つボタンを作成するには、`type="button"` をボタンの断片に追加します。
    ```
 
-1. (オプション）Configuration タブで、JSON を使用してフラグメントを構成し、オプションを追加します。 さまざまなフラグメント・コンフィギュレーション・タイプの詳細については、 [Fragment Configuration Types Reference](../reference/fragments/fragment-configuration-types-reference.md) 。
+1. (オプション）Configuration タブで、JSON を使用してフラグメントを構成し、オプションを追加します。 さまざまなフラグメント・コンフィギュレーション・タイプの詳細については、 [フラグメント設定タイプのリファレンス](../reference/fragments/fragment-configuration-types-reference.md) 。
 
    ![In the Configuration tab, use JSON to configure the fragment and add options to it](./creating-form-fragments/images/04.png)
 
-1. *［公開］*をクリックします。
+1. ［**公開**］ をクリックします。
 
-次に、フォーム・フラグメントを使ってコンテンツ・ページにフォームを作成します。 詳しくは [Using Fragments to Build Forms](../../../building-applications/objects/using-fragments-to-build-forms.md) を参照してください。
+次に、フォーム・フラグメントを使ってコンテンツ・ページにフォームを作成します。 詳しくは [フラグメントでフォームを構築する](../../../building-applications/objects/using-fragments-to-build-forms.md) を参照してください。
 
 フラグメントツールキットを使用する場合は、`yarn run add-fragment`を実行する際にフラグメントの種類を選択することができる。
 

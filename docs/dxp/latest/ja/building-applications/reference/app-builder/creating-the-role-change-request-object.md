@@ -8,7 +8,7 @@
 
 ここでは、バッキングオブジェクト、フォームビュー、およびテーブルビューを作成します。 ワークフロー対応アプリ自体を作成するには、 [ロール変更リクエストアプリの作成](./creating-the-role-change-request-app.md) を参照してください。
 
-アプリビルダーオブジェクト、フォームビュー、およびテーブルビューの作成の詳細な手順については、 [Creating a Standard Application](./creating-a-standard-application.md) を参照してください。 同じオブジェクトで、標準アプリまたはワークフロー対応アプリに対応できます。 違いは、アプリビルダーフレームワークの要素からアプリを作成する方法にあります。 オブジェクト、フォームビュー、およびテーブルビューは、Applications Menu (![Applications Menu](../../../images/icon-applications-menu.png)) の Objects エントリから作成できます。 &rarr; Applications &rarr; App Builder.
+アプリビルダーオブジェクト、フォームビュー、およびテーブルビューの作成の詳細な手順については、 [標準アプリケーションの作成](./creating-a-standard-application.md) を参照してください。 同じオブジェクトで、標準アプリまたはワークフロー対応アプリに対応できます。 違いは、アプリビルダーフレームワークの要素からアプリを作成する方法にあります。 オブジェクト、フォームビュー、およびテーブルビューは、Applications Menu (![Applications Menu](../../../images/icon-applications-menu.png)) の Objects エントリから作成できます。 &rarr; Applications &rarr; App Builder.
 
 ## **オブジェクト:** **Role Change Request** というオブジェクトを作成します。
 
@@ -48,7 +48,7 @@
 | ラジオボタン | 人事担当者：異動は承認されていますか？      | はい <br /> いいえ | &#10004; | NA        |
 | ラジオボタン | 異動には、従業員の福利厚生の再評価が必要ですか？ | はい <br /> いいえ | &#10004; | NA        |
 
-## **役割変更要求マスターリスト表を作成する。
+## **テーブル:** **役割変更要求マスターリスト**テーブルを作成する。
 
 | 列 1 | 列 2         | 列 3                     | 列 4                    | 列 5                 | 列 6           |
 | :-- | :---------- | :---------------------- | :--------------------- | :------------------ | :------------ |
@@ -56,7 +56,7 @@
 
 ## 関連情報
 
-* [アプリ・ビルダー概要](../app-builder.md) 
-* [標準アプリケーションの作成](./creating-a-standard-application.md) 
-* [ワークフロー](../../../process-automation/workflow/introduction-to-workflow.md) 
-* [役割と権限](../../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md) 
+* [アプリ・ビルダー概要](../app-builder.md)
+* [標準アプリケーションの作成](./creating-a-standard-application.md)
+* [ワークフロー](../../../process-automation/workflow/introduction-to-workflow.md)
+* [役割と権限](../../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md)

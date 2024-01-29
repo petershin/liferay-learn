@@ -36,7 +36,7 @@
 
 ## メール送信者
 
-メール送信者は、仮想インスタンスの管理者名とメール通知用のメールアドレスを指定します。 `[$FROM_NAME$]` および `[$FROM_ADDRESS$]` の変数を使用して、これらの値を通知テンプレートに含めることができます。 [ポータルプロパティ](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Admin%20Portlet) のデフォルトは、 `admin.email.from.name` と `admin.email.from.address`です。 この名前とメールアドレスは、仮想インスタンスによって送信されるすべてのメールメッセージの ［**From**］ フィールドに表示されます。
+メール送信者は、仮想インスタンスの管理者名とメール通知用のメールアドレスを指定します。 `[$FROM_NAME$]` および `[$FROM_ADDRESS$]` の変数を使用して、これらの値を通知テンプレートに含めることができます。 [ポータルプロパティ](https://resources.learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) のデフォルトは、 `admin.email.from.name` と `admin.email.from.address`です。 この名前とメールアドレスは、仮想インスタンスによって送信されるすべてのメールメッセージの ［**From**］ フィールドに表示されます。
 
 ![システムメールの送信元名と送信先アドレスを設定します。](./email-settings/images/02.png)
 

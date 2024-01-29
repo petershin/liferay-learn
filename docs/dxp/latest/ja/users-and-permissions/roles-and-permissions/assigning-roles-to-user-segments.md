@@ -15,17 +15,17 @@
 
 アナリティクス管理者、ポータル・コンテンツ・レビュアー、パワー・ユーザー、パブリケーション・ユーザー、および作成したその他の通常のロールは、グローバル・スコープで作成したユーザー・セグメントに割り当てることができます。 ユーザセグメントに通常のロールを割り当てるには
 
-1. *Product Menu* (![Product Menu](../../images/icon-product-menu.png)) を開き、_Control Panel_ &rarr; _Users_ &rarr; _Roles_ に移動します。
+1. **Product Menu**(![Product Menu](../../images/icon-product-menu.png)) を開き、 **Control Panel** &rarr; **Users** &rarr; **Roles** に移動します。
 
-1. 通常のロールの隣にある_Actions_(![Actions](../../images/icon-actions.png))をクリックし、_Edit_を選択します。
+1. 通常のロールの隣にある **Actions**(![Actions](../../images/icon-actions.png))をクリックし、 **Edit** を選択します。
 
    ![Edit a role to assign the user segment to it.](./assigning-roles-to-user-segments/images/01.png)
 
-1. *Assignees* &rarr; _Segments_タブを選択し、_Add_ (![Addボタン](../../images/icon-add.png))をクリックしてユーザーセグメントを選択します。
+1. **Assignees** &rarr; **Segments** タブを選択し、 **Add**(![Addボタン](../../images/icon-add.png))をクリックしてユーザーセグメントを選択します。
 
    ![Go to the Segments tab under Assignees to assign the role.](./assigning-roles-to-user-segments/images/02.png)
 
-1. 既存のユーザーセグメントの横にあるボックスにチェックを入れ、_Add_をクリックしてロールを割り当てます。 ユーザー・セグメントが存在しない場合は、_追加_（！[追加ボタン](../../images/icon-add.png)）をクリックして新しいユーザー・セグメントを作成します。
+1. 既存のユーザーセグメントの横にあるボックスにチェックを入れ、 **Add** をクリックしてロールを割り当てます。 ユーザー・セグメントが存在しない場合は、 **追加**（![追加ボタン](../../images/icon-add.png)）をクリックして新しいユーザー・セグメントを作成します。
 
    ![Check the box next to the user segment you want to assign the role to.](./assigning-roles-to-user-segments/images/03.png)
 
@@ -39,11 +39,11 @@
 
 [サイトの役割](./understanding-roles-and-permissions.md) セグメントに割り当てることができますが、2つの例外があります：サイト管理者とサイト所有者です。
 
-1. 商品メニュー(![商品メニュー](../../images/icon-product-menu.png))を開き、_People_ &rarr; _Segments_に移動します。
+1. 商品メニュー(![商品メニュー](../../images/icon-product-menu.png))を開き、 **People** &rarr; **Segments** に移動します。
 
-1. セグメントの_Actions_(![Actions](../../images/icon-actions.png))を開き、_Assign Site Roles_をクリックします。
+1. セグメントの **Actions**(![Actions](../../images/icon-actions.png))を開き、 **Assign Site Roles** をクリックします。
 
-1. セグメントにサイト・ロールを割り当て、_Add_をクリックします。
+1. セグメントにサイト・ロールを割り当て、 **Add** をクリックします。
 
    ![Site roles can be assigned to segments.](./assigning-roles-to-user-segments/images/05.png)
 

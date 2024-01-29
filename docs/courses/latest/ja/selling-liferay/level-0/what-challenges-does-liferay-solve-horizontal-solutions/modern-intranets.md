@@ -36,13 +36,13 @@ visibility:
 
 最新の社内ポータル向けのLiferayの主な機能を説明する際は、Liferayのポータル機能と統合された一連のリソースへの安全なアクセスを提供する機能について強調します。 一方で、以下の追加機能を強調して、Liferayの社内ポータルソリューションが **最新** であることを強調しましょう。
 
-* [デザインシステム & エクスペリエンス管理](https://learn.liferay.com/w/dxp/site-building)
-* [コンテンツ & アセットの管理](https://learn.liferay.com/w/dxp/content-authoring-and-management)
-* [ローコード／ノーコードによるアプリケーション構築](https://learn.liferay.com/w/dxp/building-applications/objects)
-* [コラボレーション & ナレッジの共有](https://learn.liferay.com/w/dxp/collaboration-and-social)
-* [データモデリング & プロセスオートメーション](https://learn.liferay.com/w/dxp/process-automation)
-* [セグメンテーション & パーソナライゼーション](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience)
-* [検索](https://learn.liferay.com/w/dxp/using-search) & [ナビゲーション](https://learn.liferay.com/w/dxp/site-building/site-navigation)
+* [サイトの構築](https://learn.liferay.com/w/dxp/site-building)
+* [コンテンツのオーサリングと管理](https://learn.liferay.com/w/dxp/content-authoring-and-management)
+* [オブジェクト](https://learn.liferay.com/w/dxp/building-applications/objects)
+* [コラボレーションとソーシャルメディア](https://learn.liferay.com/w/dxp/collaboration-and-social)
+* [プロセスの自動化](https://learn.liferay.com/w/dxp/process-automation)
+* [サイトエクスペリエンスのパーソナライズ](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience)
+* [検索の利用](https://learn.liferay.com/w/dxp/using-search) & [サイトナビゲーション](https://learn.liferay.com/w/dxp/site-building/site-navigation)
 * 統合 & 相互運用性
 
 ## 次のステップ

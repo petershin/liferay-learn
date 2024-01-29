@@ -23,6 +23,6 @@ Liferay DXPでは、顧客、パートナー、または従業員が関連する
 
 ## レコメンド
 
-* [コンテンツリコメンド](https://learn.liferay.com/web/guest/w/dxp/site-building/personalizing-site-experience/experience-personalization/understanding-content-recommendations)
+* [コンテンツ推薦を理解する](https://learn.liferay.com/web/guest/w/dxp/site-building/personalizing-site-experience/experience-personalization/understanding-content-recommendations)
 
 次：[検索とナビゲーション](./search-and-navigation.md)

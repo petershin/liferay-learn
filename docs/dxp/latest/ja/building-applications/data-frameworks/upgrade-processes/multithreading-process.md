@@ -44,7 +44,7 @@
 
 ## アプリにエントリーを追加する
 
-1. *コントロールパネル* &rarr; _サーバー管理_ &rarr; _スクリプト_ からスクリプトコンソールに移動します。
+1. **コントロールパネル** &rarr; **サーバー管理** &rarr; **スクリプト** からスクリプトコンソールに移動します。
 
 1. 以下のスクリプトを実行して、いくつかのエントリーを追加してください。
 
@@ -83,7 +83,7 @@
    ../gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
    ```
 
-1. *コントロールパネル* &rarr; _Gogo Shell_でGogoシェルコンソールに移動します。
+1. **コントロールパネル** &rarr; **Gogo Shell** でGogoシェルコンソールに移動します。
 
 1. コマンド `upgrade:list com.acme.j7z3.service` を入力して、1.0.1 アップグレードが利用可能であることを確認します。 1.0.1バージョンは、出力ウィンドウに登録されたアップグレードプロセスとして表示されます。
 
@@ -145,4 +145,4 @@
 
 1. 例外は `null` に設定される。
 
-`processConcurrently()`メソッドには2つの異なるシグネチャがある。 このチュートリアルの例に見られるように、1つのシグネチャはSQLクエリをソースとして渡します。 もう一つのシグネチャはソースとして配列を渡します。 詳しくは [BaseDBProcess javadocs](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/dao/db/BaseDBProcess.html#processConcurrently-java.lang.String-com.liferay.petra.function.UnsafeFunction-com.liferay.petra.function.UnsafeConsumer-java.lang.String-) を参照してください。
+`processConcurrently()`メソッドには2つの異なるシグネチャがある。 このチュートリアルの例に見られるように、1つのシグネチャはSQLクエリをソースとして渡します。 もう一つのシグネチャはソースとして配列を渡します。 詳しくは [BaseDBProcess javadocs](https://resources.learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/dao/db/BaseDBProcess.html) を参照してください。

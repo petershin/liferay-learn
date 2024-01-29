@@ -11,22 +11,22 @@ Liferay DXPにより、動的ナビゲーション、カテゴリー、検索結
 
 ## サイト検索
 
-* [検索概要](https://learn.liferay.com/w/dxp/using-search/getting-started/search-overview)
+* [検索機能の概要](https://learn.liferay.com/w/dxp/using-search/getting-started/search-overview)
 * [コンテンツの検索](https://learn.liferay.com/w/dxp/using-search/getting-started/searching-for-content)
 
 ## カスタム検索と検索ブループリント
 
-* [検索管理およびチューニング](https://learn.liferay.com/w/dxp/using-search/search-administration-and-tuning)
-* [ブループリントを検索する](https://learn.liferay.com/w/dxp/using-search/liferay-enterprise-search/search-experiences/search-blueprints)
+* [検索管理と調整](https://learn.liferay.com/w/dxp/using-search/search-administration-and-tuning)
+* [ブループリントの検索](https://learn.liferay.com/w/dxp/using-search/liferay-enterprise-search/search-experiences/search-blueprints)
 
 ## 基本ナビゲーション
 
 * [サイトナビゲーション](https://learn.liferay.com/w/dxp/site-building/site-navigation)
-* [サイトナビゲーションの管理](https://learn.liferay.com/w/dxp/site-building/site-navigation)
+* [サイトナビゲーション](https://learn.liferay.com/w/dxp/site-building/site-navigation)
 
 ## 強化されたナビゲーション
 
-* [ナビゲーション・メニュー](https://learn.liferay.com/w/dxp/site-building/site-navigation/using-the-navigation-menus-application)
-* [メニュー表示の設定](https://learn.liferay.com/w/dxp/site-building/site-navigation/configuring-menu-displays)
+* [ナビゲーションメニューアプリケーションの使用](https://learn.liferay.com/w/dxp/site-building/site-navigation/using-the-navigation-menus-application)
+* [メニュー表示を設定する](https://learn.liferay.com/w/dxp/site-building/site-navigation/configuring-menu-displays)
 
 次へ [ヘッドレスAPIとマルチチャンネル](./headless-apis-and-multichannel.md).

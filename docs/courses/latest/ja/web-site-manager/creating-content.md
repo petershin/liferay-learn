@@ -19,15 +19,15 @@ toc:
 
 これらの例から、サイトに掲載される可能性のあるコンテンツの種類を垣間見ることができる。 さまざまな組織が、それぞれのニーズや目標に合わせた追加的なコンテンツ・イニシアティブに取り組んでいる。
 
-幸いなことに、Liferayはコンテンツ作成プロセスを簡単かつ迅速にするツールを提供しています。 管理すべきコンテンツがたくさんある場合、コンテンツのフォーマットを強制するために_ウェブコンテンツ構造_を作成することができます。
+幸いなことに、Liferayはコンテンツ作成プロセスを簡単かつ迅速にするツールを提供しています。 管理すべきコンテンツがたくさんある場合、コンテンツのフォーマットを強制するために **ウェブコンテンツ構造** を作成することができます。
 
 ![Create a content structure to enforce a format for your content articles.](./creating-content/images/01.png)
 
-構造は、構造に関連付けられている_ウェブコンテンツテンプレート_を使用してレンダリングされます。
+構造は、構造に関連付けられている **ウェブコンテンツテンプレート** を使用してレンダリングされます。
 
 ![With a template, define how to render the structure you created on a page.](./creating-content/images/02.png)
 
-コンテンツ制作者は、この構造を使って_ウェブコンテンツの記事_を作成し、公開されるとテンプレートを使って表示される。 これらの要素は、コンテンツ全体の一貫性を保つのに役立つ。
+コンテンツ制作者は、この構造を使って **ウェブコンテンツの記事** を作成し、公開されるとテンプレートを使って表示される。 これらの要素は、コンテンツ全体の一貫性を保つのに役立つ。
 
 ![A web content article presents a list of frequently asked questions and their answers with a consistent format.](./creating-content/images/03.png)
 

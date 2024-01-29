@@ -12,7 +12,7 @@
 
 次の条件が満たされると、コンテンツパフォーマンスツールにアクセスできます。
 
-- Liferay DXPインスタンスに有効な [Liferay Analytics Cloudへの接続](https://learn.liferay.com/analytics-cloud/latest/ja/connecting-data-sources/connecting-liferay-dxp-to-analytics-cloud.html) があり、サイトが同期されている。
+- Liferay DXPインスタンスに有効な [Liferay DXPをAnalytics Cloudに接続する](https://learn.liferay.com/ja/w/analytics-cloud/getting-started/connecting-liferay-dxp-to-analytics-cloud) があり、サイトが同期されている。
 - ページまたはコンテンツの編集権限がある。
 - コンテンツがコンテントページ、ウィジェットページにあるか、または[表示ページテンプレート](../../site-building/displaying-content/using-display-page-templates/publishing-content-with-display-pages.md)に基づいている。
 

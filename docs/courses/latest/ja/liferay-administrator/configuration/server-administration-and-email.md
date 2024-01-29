@@ -1,6 +1,6 @@
 # サーバー管理と電子メール
 
-サーバー管理コンソールからLiferayインスタンスを管理・監視できます。 例えば、現在のシステムやポータルのプロパティを表示したり、ロギングやログレベルを設定したりできます。 ここで、システム全体のメールサーバーを設定することもできる。 詳しくは、 [Using Server Administration Panel](https://learn.liferay.com/en/w/dxp/system-administration/using-the-server-administration-panel) を参照してください。
+サーバー管理コンソールからLiferayインスタンスを管理・監視できます。 例えば、現在のシステムやポータルのプロパティを表示したり、ロギングやログレベルを設定したりできます。 ここで、システム全体のメールサーバーを設定することもできる。 詳しくは、 [サーバー管理パネルの使用](https://learn.liferay.com/ja/w/dxp/system-administration/using-the-server-administration-panel) を参照してください。
 
 電子メール通知（ユーザー登録、パスワード管理など）に使用するメールサーバーを設定します。 以下の手順に従って、クラリティ ビジョン ソリューションのメール サーバーを設定してください。
 
@@ -71,10 +71,10 @@
 
    ![Liferayからウェルカムメールが届きました。](./server-administration-and-email/images/02.png)
 
-これでLiferay環境にメールサーバーが設定されました。 さらにメールをカスタマイズして、インスタンスごとに異なるメール送信者とメッセージを設定することもできる。 詳しくは、 [Instance Email Settings](https://learn.liferay.com/en/w/dxp/system-administration/configuring-liferay/virtual-instances/email-settings) を参照してください。
+これでLiferay環境にメールサーバーが設定されました。 さらにメールをカスタマイズして、インスタンスごとに異なるメール送信者とメッセージを設定することもできる。 詳しくは、 [メール設定](https://learn.liferay.com/ja/w/dxp/system-administration/configuring-liferay/virtual-instances/email-settings) を参照してください。
 
 ## 関連コンセプト
 
-- [サーバー管理パネルの使用](https://learn.liferay.com/en/w/dxp/system-administration/using-the-server-administration-panel)
-- [メールの設定](https://learn.liferay.com/en/w/dxp/installation-and-upgrades/setting-up-liferay/configuring-mail)
-- [メール設定](https://learn.liferay.com/en/w/dxp/system-administration/configuring-liferay/virtual-instances/email-settings)
+- [サーバー管理パネルの使用](https://learn.liferay.com/ja/w/dxp/system-administration/using-the-server-administration-panel)
+- [メールの設定](https://learn.liferay.com/ja/w/dxp/installation-and-upgrades/setting-up-liferay/configuring-mail)
+- [メール設定](https://learn.liferay.com/ja/w/dxp/system-administration/configuring-liferay/virtual-instances/email-settings)

@@ -13,8 +13,8 @@ visibility:
 * 展開戦略は、一般的にデモや初期段階の販売会議では議論されないが、これらのセッションで学んだ情報は、機会を1つの展開アプローチまたは別のアプローチに導くのに役立つ。
 
 ```{note}
-* 本モジュールのライブワークショップの [録画](https://learn.liferay.com/web/guest/d/se1-8-deployment-strategies) をご覧ください。
-* 上記ワークショップで使用されたプレゼンテーション資料はこちら [PDF](https://learn.liferay.com/documents/d/guest/se1-8-deployment-strategies-pdf) からダウンロードしてください。
+* 本モジュールのライブワークショップの [録画](https://learn.liferay.com/c/portal/login?p_l_id=3026&redirect=%2Fweb%2Fguest%2Fd%2Fse1-8-deployment-strategies) をご覧ください。
+* 上記ワークショップで使用されたプレゼンテーション資料はこちら [PDF](https://learn.liferay.com/c/portal/login?redirect=%2Fdocuments%2Fd%2Fguest%2Fse1-8-deployment-strategies-pdf) からダウンロードしてください。
 ```
 
 ## SaaS、PaaS、それともセルフホスト？
@@ -41,7 +41,7 @@ visibility:
 
 ### カスタマイズされたソリューションの構築
 
-最も最近の変更の一つは、Liferay DXPを拡張する好ましい方法です - [Client Extensions](https://learn.liferay.com/w/dxp/building-applications/client-extensions) として知られているものですが。
+最も最近の変更の一つは、Liferay DXPを拡張する好ましい方法です - [クライアント拡張](https://learn.liferay.com/w/dxp/building-applications/client-extensions) として知られているものですが。
 
 ほとんどすべての顧客が、その顧客独自の機能を必要とします。新しいアプローチは、すべてのカスタムコードがLiferayのコアの外側で実行される疎結合モデルを提供します。
 

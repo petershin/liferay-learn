@@ -22,8 +22,8 @@ LiferayではDXPを以下のように定義しています。
 ![デジタルエクスペリエンスプラットフォームは、外部および内部のデジタルエクスペリエンスに必要なすべてのツールを提供します。](./what-is-a-digital-experience-platform/images/01.png)
 
 ```{note}
-* 本モジュールのライブワークショップの [録画](https://learn.liferay.com/web/guest/d/l0-1-introduction-to-liferay) をご覧ください。
-* 上記ワークショップで使用されたプレゼンテーション資料はこちら [PDF](https://learn.liferay.com/documents/d/guest/l0-1-introduction-to-liferay-pdf) からダウンロードしてください。
+* 本モジュールのライブワークショップの [録画](https://learn.liferay.com/ja/c/portal/login) をご覧ください。
+* 上記ワークショップで使用されたプレゼンテーション資料はこちら [PDF](https://learn.liferay.com/ja/c/portal/login) からダウンロードしてください。
 ```
 
 ## Liferayポータル製品

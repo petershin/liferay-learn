@@ -38,4 +38,4 @@ Windows環境の場合は、代わりに [Windowsインストーラー](https://
 
 ## 関連コンセプト
 
-* [Liferay Cloudコマンドラインツール](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool)
+* [コマンドラインツール](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool)

@@ -1009,7 +1009,7 @@ private AssetEntryLocalService _assetEntryLocalService;
 
 ---------------------------------------
 
-### module.framework.properties.felix.fileinstall.\*ポータルプロパティの名前をmodule.framework.properties.file.install.\* に変更
+### module.framework.properties.felix.fileinstall.\ **ポータルプロパティの名前をmodule.framework.properties.file.install.\** に変更
 
 - **日付：** 2020年8月8日
 - **JIRAチケット：** [LPS-115016](https://issues.liferay.com/browse/LPS-115016)

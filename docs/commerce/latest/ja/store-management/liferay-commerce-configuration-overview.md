@@ -4,7 +4,7 @@
 
 ![Global ApplicationメニューからCommerceにアクセスします。](./liferay-commerce-configuration-overview/images/01.png)
 
-*グローバルメニュー* (![Global Menu](../images/icon-applications-menu.png)) を開き、 *コマース* タブに移動します。 このタブには、次のアプリケーションが含まれています。
+**グローバルメニュー**(![Global Menu](../images/icon-applications-menu.png)) を開き、 **コマース** タブに移動します。 このタブには、次のアプリケーションが含まれています。
 
 ## 注文管理
 
@@ -47,11 +47,11 @@
 
 ## Liferay Commerce 2.1以前
 
-Liferay Commerce 2.1の設定は、Liferay*［商品メニュー］*のいくつかの場所に分かれています。 Commerce *Control Panel* ドロップダウンには、Liferay Commerce のインストールに *グローバルに* 適用される設定と構成が含まれています。 Commerce *Site Menu* ドロップダウンには、特定のストアサイトにスコープされるコンフィギュレーションと設定が含まれています。
+Liferay Commerce 2.1の設定は、Liferay ［**商品メニュー**］ のいくつかの場所に分かれています。 Commerce **Control Panel** ドロップダウンには、Liferay Commerce のインストールに **グローバルに** 適用される設定と構成が含まれています。 Commerce **Site Menu** ドロップダウンには、特定のストアサイトにスコープされるコンフィギュレーションと設定が含まれています。
 
 ### Commerceのコントロールパネル
 
-*コントロールパネル* &rarr; *コマース*に移動します。 以下の設定のいずれかを変更すると、すべてのサイトに適用されます。
+**コントロールパネル** &rarr; **コマース** に移動します。 以下の設定のいずれかを変更すると、すべてのサイトに適用されます。
 
 ![Commerceのグローバルメニューには、すべての設定項目が含まれています。](./liferay-commerce-configuration-overview/images/02.png)
 
@@ -77,7 +77,7 @@ Liferay Commerce 2.1の設定は、Liferay*［商品メニュー］*のいくつ
 
 次の設定は、選択したストアサイトに限定されます。 ここで行った変更は、同じLiferay Commerceインスタンスでホストされている他のストアには適用されません。
 
-*コントロールパネル* &rarr; *ストアサイト* &rarr; *コマース*に移動します。
+**コントロールパネル** &rarr; **ストアサイト** &rarr; **コマース** に移動します。
 
 ![Miniumサイトの設定は、左サイドメニューから行うことができます。](./liferay-commerce-configuration-overview/images/04.png)
 

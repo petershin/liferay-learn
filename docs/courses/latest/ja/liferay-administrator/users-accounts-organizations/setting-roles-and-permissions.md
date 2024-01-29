@@ -1,6 +1,6 @@
 # 役割と権限の設定
 
-Liferay では、ユーザーは割り当てられたロールに基づいてパーミッションを受け取ります。 詳しくは [Understanding Roles and Permissions](https://learn.liferay.com/en/w/dxp/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions) を参照してください。
+Liferay では、ユーザーは割り当てられたロールに基づいてパーミッションを受け取ります。 詳しくは [ロールと権限について](https://learn.liferay.com/ja/w/dxp/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions) を参照してください。
 
 ## ユーザーのロールへの割り当て
 
@@ -73,6 +73,6 @@ IT管理者に管理者の役割を与える。
 
 ## 関連コンセプト
 
-- [ロールと権限について](https://learn.liferay.com/en/w/dxp/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions)
-- [ユーザーのロールへの割り当て](https://learn.liferay.com/en/w/dxp/users-and-permissions/roles-and-permissions/assigning-users-to-roles)
-- [ロールの作成と管理](https://learn.liferay.com/en/w/dxp/users-and-permissions/roles-and-permissions/creating-and-managing-roles)
+- [ロールと権限について](https://learn.liferay.com/ja/w/dxp/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions)
+- [ユーザーのロールへの割り当て](https://learn.liferay.com/ja/w/dxp/users-and-permissions/roles-and-permissions/assigning-users-to-roles)
+- [ロールの作成と管理](https://learn.liferay.com/ja/w/dxp/users-and-permissions/roles-and-permissions/creating-and-managing-roles)

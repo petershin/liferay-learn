@@ -11,7 +11,7 @@ Liferay 7.4 2023.Q4+/GA102+ では、Objects UI にアクセスするには **Ob
 
 モデル・ビルダー・ビューにアクセスするには
 
-1. **グローバルメニュー**(![グローバルメニュー](../../../images/icon-applications-menu.png))を開き、 ［**コントロールパネル**］**タブで***［ オブジェクト**］ をクリックします。
+1. **グローバルメニュー**(![グローバルメニュー](../../../images/icon-applications-menu.png))を開き、 ［**コントロールパネル**］**タブで**［**オブジェクト**］ をクリックします。
 
 1. 目的の [オブジェクトフォルダ](./organizing-objects-with-folders.md) に移動し、 **View in Model Builder** をクリックします。
 
@@ -74,7 +74,7 @@ Liferay 7.4 2023.Q4+/GA102+ では、Objects UI にアクセスするには **Ob
 
 1. オブジェクト定義の **Add Field or Relationship** をクリックします。
 
-1. **リレーションシップの追加**を選択します。
+1. **リレーションシップの追加** を選択します。
 
    ![Select Add Relationship.](./using-the-objects-model-builder/images/07.png)
 

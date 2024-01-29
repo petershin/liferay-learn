@@ -11,19 +11,19 @@ visibility:
 
 ## ID管理
 
-* [ネイティブユーザー管理](https://learn.liferay.com/w/dxp/users-and-permissions/users)
-* [SAML](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/configuring-sso/authenticating-with-saml) 、OIDC、 [LDAP](https://learn.liferay.com/w/dxp/users-and-permissions/connecting-to-a-user-directory/connecting-to-an-ldap-directory) のような [外部IdM](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/configuring-sso) との統合
+* [ユーザー](https://learn.liferay.com/w/dxp/users-and-permissions/users)
+* [SAMLによる認証 (近日公開！)](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/configuring-sso/authenticating-with-saml) 、OIDC、 [LDAPディレクトリへの接続](https://learn.liferay.com/w/dxp/users-and-permissions/connecting-to-a-user-directory/connecting-to-an-ldap-directory) のような [シングルサインオンの設定](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/configuring-sso) との統合
 
 ## アクセス管理
 
-* [詳細な役割と権限モデル](https://learn.liferay.com/w/dxp/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions)
+* [ロールと権限について](https://learn.liferay.com/w/dxp/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions)
 
 ## 多要素認証（MFA）
 
-* [OTP、タイムベースOTP、FIDO 2デバイスのサポート](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/multi-factor-authentication)
+* [多要素認証](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/multi-factor-authentication)
 
 ## 個人データの管理
 
-* [GDPRの「データポータビリティの権利」と「忘れられる権利」に対応](https://learn.liferay.com/w/dxp/users-and-permissions/managing-user-data)
+* [ユーザーデータの管理（GDPR）](https://learn.liferay.com/w/dxp/users-and-permissions/managing-user-data)
 
 次：[統合と相互運用性](./integration-and-interoperability.md)

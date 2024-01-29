@@ -2,7 +2,7 @@
 
 {bdg-secondary}`liferay 7.4 2023.Q4+/GA102+`.
 
-Liferay ObjectsはLiferay UIに開発機能を提供します。Objects を使うことで、コードを書いたりモジュールを手動でデプロイすることなく、完全に統合された Liferay アプリケーションを構築することができます。このプロセスには、オブジェクトドラフトの[creating](#creating-object-drafts)、オブジェクトドラフトの[editing](#editing-object-drafts)、そして最後に新しいアプリケーションを作成するための[publishing](#publishing-object-drafts)が含まれます。
+Liferay ObjectsはLiferay UIに開発機能を提供します。Objects を使うことで、コードを書いたりモジュールを手動でデプロイすることなく、完全に統合された Liferay アプリケーションを構築することができます。このプロセスには、オブジェクトドラフトの [creating](#creating-object-drafts) 、オブジェクトドラフトの [editing](#editing-object-drafts) 、そして最後に新しいアプリケーションを作成するための [publishing](#publishing-object-drafts) が含まれます。
 
 ここでは、デフォルトのオブジェクト UI を使用してオブジェクト定義を作成する方法を学びますが、モデル・ビルダー GUI を使用してオブジェクト定義を作成、管理、拡張することもできます。 詳しくは [Using Objects Model Builder](./using-the-objects-model-builder.md) を参照してください。
 
@@ -13,24 +13,24 @@ Liferay ObjectsはLiferay UIに開発機能を提供します。Objects を使�
 
 オブジェクトドラフトは、オブジェクトアプリケーションを作成するために必要なデータを格納するアプリケーションテンプレートです。 ドラフト・オブジェクトを作成する、
 
-1. _グローバルメニュー_ (![グローバルメニュー](../../../images/icon-applications-menu.png))を開き、*［コントロールパネル］_タブで_［オブジェクト］*をクリックします。
+1. **グローバルメニュー**(![グローバルメニュー](../../../images/icon-applications-menu.png))を開き、 ［**コントロールパネル**］**タブで***［ オブジェクト**］ をクリックします。
 
    !!! note
-       Liferay 7.4 2023.Q4+/GA102+ では、Objects UI にアクセスするには _Object Folder > View_ 権限も必要です。 詳細は [Objects Application Permissions](../objects-application-permissions.md) を参照。
+       Liferay 7.4 2023.Q4+/GA102+ では、Objects UI にアクセスするには **Object Folder > View** 権限も必要です。 詳細は [オブジェクトアプリケーションの権限](../objects-application-permissions.md) を参照。
 
-1. 目的の [オブジェクトフォルダ](./organizing-objects-with-folders.md) に移動し、_追加_ ボタン (![追加ボタン](../../../images/icon-add.png))をクリックします。
+1. 目的の [オブジェクトフォルダ](./organizing-objects-with-folders.md) に移動し、 **追加** ボタン (![追加ボタン](../../../images/icon-add.png))をクリックします。
 
 1. ドラフトにこれらの詳細を提供する。
 
-   **ラベル**:Objects admin およびサポートされているアプリケーションコンテキスト（ワークフロー、表示ページテンプレート、フォームなど）でオブジェクトを識別します。
+   **ラベル** :Objects admin およびサポートされているアプリケーションコンテキスト（ワークフロー、表示ページテンプレート、フォームなど）でオブジェクトを識別します。
 
-   **Plural Label**：UIにおけるオブジェクト・アプリケーションの表示名を決定します。
+   **Plural Label** ：UIにおけるオブジェクト・アプリケーションの表示名を決定します。
 
-   **オブジェクト名**：オブジェクトの `definition.name` を決定し、公開後に変更することはできません。
+   **オブジェクト名** ：オブジェクトの `definition.name` を決定し、公開後に変更することはできません。
 
    ![Enter a Label, Plural Label, and Name for the object draft.](./creating-objects/images/01.png)
 
-1. ［_保存_］をクリックします。
+1. ［**保存**］をクリックします。
 
 保存されると、設定やデータ要素のない空白のオブジェクトドラフトが作成されます。 ドラフトは、オブジェクト管理でシステムオブジェクトと一緒に表示できます。 作成プロセスを終了するには、 [](#editing-object-drafts) ドラフトを編集し、 [](#publishing-object-drafts) Liferayインスタンスに公開する必要があります。
 
@@ -54,17 +54,17 @@ Liferay ObjectsはLiferay UIに開発機能を提供します。Objects を使�
 
    ![Object features and configuration options are organized into eight tabs.](./creating-objects/images/03.png)
 
-1. カスタムフィールドを追加するには、_フィールド_タブをクリックします。 各フィールドは、特定のタイプの値を格納するためのデータベースカラムを表します。 [オブジェクトへのフィールドの追加](./fields/adding-fields-to-objects.md) を参照。
+1. カスタムフィールドを追加するには、 **フィールド** タブをクリックします。 各フィールドは、特定のタイプの値を格納するためのデータベースカラムを表します。 [オブジェクトへのフィールドの追加](./fields/adding-fields-to-objects.md) を参照。
 
    デフォルトでは、すべてのオブジェクトに次のシステムフィールド、［Author］、［Create Date］、［External Reference Code］、［ID］、［Modified Date］および［Status］が含まれます。
 
    ![Add fields to the object from the Fields tab.](./creating-objects/images/04.png)
 
-1. (オプション) _関係_ タブをクリックして関係を追加します。 リレーションシップは、オブジェクト定義間の接続で、そのエントリーをリンクさせるために使用できます。 [オブジェクト関係の定義](./relationships/defining-object-relationships.md) を参照。
+1. (オプション)**関係** タブをクリックして関係を追加します。 リレーションシップは、オブジェクト定義間の接続で、そのエントリーをリンクさせるために使用できます。 [オブジェクト関係の定義](./relationships/defining-object-relationships.md) を参照。
 
    ![Add relationships to the object from the Relationships tab.](./creating-objects/images/05.png)
 
-1. (オプション) _Layouts_タブをクリックしてレイアウトを追加します。 オブジェクトレイアウトは、オブジェクトエントリーを作成したり表示したりする際に、フィールドや関連をどのように表示するかを決定します。 [Designing Object Layouts](./layouts/designing-object-layouts.md) を参照。
+1. (オプション)**Layouts** タブをクリックしてレイアウトを追加します。 オブジェクトレイアウトは、オブジェクトエントリーを作成したり表示したりする際に、フィールドや関連をどのように表示するかを決定します。 [オブジェクトレイアウトの設計](./layouts/designing-object-layouts.md) を参照。
 
    ```{note}
    カスタムレイアウトを追加せず、デフォルトとして設定した場合、オブジェクトはそのエントリーに自動生成されたレイアウトを使用します。 このレイアウトには、すべてのオブジェクトフィールドをアルファベット順に表示し、リレーションシップを表示しない単一のタブがあります。 リレーションシップを表示するには、専用のリレーションシップタブを使用してカスタムレイアウトを作成する必要があります。
@@ -98,11 +98,11 @@ Liferay ObjectsはLiferay UIに開発機能を提供します。Objects を使�
 
     ![Once a field is added to an object, you can select it as the Entry Title.](./creating-objects/images/12.png)
 
-1. オブジェクト_スコープ_を選択します。 これにより、オブジェクトのデータの保存方法が決まります。
+1. オブジェクト **スコープ** を選択します。 これにより、オブジェクトのデータの保存方法が決まります。
 
     **Company**（デフォルト）：Companyでスコープされた場合、オブジェクトのデータはLiferayインスタンスごとに保存されます。
 
-    **Site**：Siteによってスコープされた場合、オブジェクトのデータはSiteごとに保存されます。
+    **Site** ：Siteによってスコープされた場合、オブジェクトのデータはSiteごとに保存されます。
 
 1. パネルリンクを選択し、Liferayのどこに定義が表示されるかを決定します。
 
@@ -136,7 +136,7 @@ Liferay ObjectsはLiferay UIに開発機能を提供します。Objects を使�
 
     有効になっている間、Liferayはエントリーイベントの履歴を保持し、AuditアプリケーションまたはREST APIコールで見ることができます。 [オブジェクト・イベントの監査](./auditing-object-events.md) を参照。
 
-1. {bdg-link-primary}`[Beta Feature](../../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)` オブジェクトエントリーのドラフトモードを有効または無効にする。
+1. {bdg-link-primary}` [Beta Feature](../../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags) ` オブジェクトエントリーのドラフトモードを有効または無効にする。
 
     この機能を有効にすると、ユーザーはエントリーを下書きとして保存し、後で確定することができる。 下書きを保存しても、カスタムバリデーション、ワークフロープロセス、またはエントリー作成時にトリガーされるアクションはトリガーされません。
 
@@ -148,7 +148,7 @@ Liferay ObjectsはLiferay UIに開発機能を提供します。Objects を使�
 
     有効にすると、カスタムテキストフィールドの翻訳を有効にすることができます。 詳しくは [Object Definitions and Entriesのローカライズ](./localizing-object-definitions-and-entries.md) を参照してください。
 
-1. ［_保存_］をクリックします。
+1. ［**保存**］をクリックします。
 
 下書きの設定と編集が終わったら、 [](#publishing-object-drafts) を公開することができます。
 

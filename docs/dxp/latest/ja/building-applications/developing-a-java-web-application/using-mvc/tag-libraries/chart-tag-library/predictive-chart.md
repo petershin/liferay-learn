@@ -62,13 +62,13 @@
 
    予測グラフには、次のプロパティがあります。
 
-   \*\*axisXTickFormat:\*\*X軸の時間フォーマットを指定するオプションの文字列。 指定可能なフォーマットの詳細については、 [d3の時間フォーマットREADME](https://github.com/d3/d3-time-format/blob/master/README.md#locale_format) を参照してください。 この値は `setAxisXTickFormat()` メソッドで設定します。
+   **axisXTickFormat:** X軸の時間フォーマットを指定するオプションの文字列。 指定可能なフォーマットの詳細については、 [d3の時間フォーマットREADME](https://github.com/d3/d3-time-format/blob/master/README.md#locale_format) を参照してください。 この値は `setAxisXTickFormat()` メソッドで設定します。
 
-   \*\*予測日：\*\*予測／予測が表示される時点を表す文字列としての日付。 この値はJavaScriptでDateオブジェクトとして解析され、`setPredictionDate()`メソッドを使って設定される。
+   **予測日：**予測／予測が表示される時点を表す文字列としての日付。 この値はJavaScriptでDateオブジェクトとして解析され、`setPredictionDate()`メソッドを使って設定される。
 
-   \*\*チャートのX軸に表示されるデータのタイムライン。 この値は日付の配列として設定される（例：`2018-01-01`）。
+   **時系列:** チャートのX軸に表示されるデータの時系列。この値は日付の配列として設定されます（例：`2018-01-01`）。
 
-1. <chart>`taglib を`view\.jsp` に追加し、`_predictiveChartConfig`を`config\` 属性の値として渡す：
+1. `<chart>`taglib を`view.jsp` に追加し、`_predictiveChartConfig`を`config` 属性の値として渡す：
 
    ```jsp
    <chart:predictive

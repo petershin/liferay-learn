@@ -12,7 +12,7 @@
 
 ユーザーにコンテンツリコメンデーションを提供するには、Analytics CloudをLiferay DXPインスタンスに接続する必要があります。
 
-Analytics CloudをLiferay DXPに接続し、サイトのコンテンツを同期する方法については、 [Connecting Liferay DXP to Analytics Cloud](https://learn.liferay.com/analytics-cloud/latest/en/connecting-data-sources/connecting-liferay-dxp-to-analytics-cloud.html) を参照してください。
+Analytics CloudをLiferay DXPに接続し、サイトのコンテンツを同期する方法については、 [Liferay DXPをAnalytics Cloudに接続する](https://learn.liferay.com/ja/w/analytics-cloud/getting-started/connecting-liferay-dxp-to-analytics-cloud) を参照してください。
 
 ![Connecting Liferay DXP to Analytics Cloud](./configuring-content-recommendations/images/02.png)
 
@@ -70,6 +70,6 @@ Analytics CloudをLiferay DXPに接続し、サイトのコンテンツを同期
 ## 関連情報
 
 - [コンテンツ・レコメンデーションを理解する](./understanding-content-recommendations.md)
-- [Liferay DXPとAnalytics Cloudの接続](https://learn.liferay.com/analytics-cloud/latest/en/connecting-data-sources/connecting-liferay-dxp-to-analytics-cloud.html)
+- [Liferay DXPをAnalytics Cloudに接続する](https://learn.liferay.com/ja/w/analytics-cloud/getting-started/connecting-liferay-dxp-to-analytics-cloud)
 - [コレクションの作成](../../../site-building/displaying-content/collections-and-collection-pages/creating-collections.md#creating-a-dynamic-collection)
 - [表示ページテンプレートの作成と管理](../../displaying-content/using-display-page-templates/creating-and-managing-display-page-templates.md)

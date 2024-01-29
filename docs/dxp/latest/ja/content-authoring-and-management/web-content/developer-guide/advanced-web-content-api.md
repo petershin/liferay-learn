@@ -38,7 +38,7 @@ unzip liferay-m7b2.zip
 ここでは、画像を含むさまざまなコンテンツフィールドを含むWebコンテンツの記事を扱います。 サンプルのWebコンテンツ記事にこれらの画像を追加するには、次の手順に従います。
 
 1. サイトメニュー(![サイトメニュー](../../../images/icon-menu.png))を開き、 **コンテンツとデータ** &rarr; **ドキュメントとメディア** に移動します。
-1. **追加** ボタン（！[Add]（../../../images/icon-add.png））をクリックし、 **複数ファイルのアップロード** を選択します。
+1. **追加** ボタン（![Add]（../../../images/icon-add.png））をクリックし、 **複数ファイルのアップロード** を選択します。
 1. [サンプルプロジェクトフォルダ](https://resources.learn.liferay.com/dxp/latest/en/content-authoring-and-management/web-content/developer-guide/liferay-m7b2.zip) から `foo.png`、`bar.png`、`goo.png` の画像をドロップエリアにドラッグ＆ドロップします。
 1. ［**公開**］ をクリックします。
 
@@ -91,7 +91,7 @@ REST API を使用してプログラムで Web コンテンツ構造を作成す
 ```
 1. サイトメニュー(![サイトメニュー](../../../images/icon-menu.png))を開き、 **コンテンツ＆データ** &rarr; **ウェブコンテンツ** に移動します。
 
-1. **構造**タブを選択し、**追加** ボタン(![Add](../../../images/icon-add.png)) をクリックします。
+1. **構造** タブを選択し、 **追加** ボタン(![Add](../../../images/icon-add.png)) をクリックします。
 
 1. 以下の内容で、新しいWebコンテンツストラクチャーを作成します。
 

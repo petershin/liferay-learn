@@ -34,7 +34,7 @@ Liferayのバージョンをアップグレードした後、既存のパブリ�
 
 ### サポートされていないアプリケーションへの移動
 
-{bdg-link-primary}`[リリース特集](../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags)`
+{bdg-link-primary}` [リリース特集](../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) `
 
 {bdg-secondary}`Liferay 7.4 2023.Q3+/GA98`.
 
@@ -66,7 +66,7 @@ Liferayのバージョンをアップグレードした後、既存のパブリ�
 
 ![Open the Publications drop-down menu and select Review Changes.](./making-and-publishing-changes/images/04.png)
 
-また、Publicationsアプリケーションを使用して、出版物の変更履歴を確認することもできます。**進行中**タブに移動し、目的の出版物の**アクション** ボタン(![Actions button](../../../images/icon-actions.png))をクリックし、**変更をレビュー**を選択するだけです。
+また、Publicationsアプリケーションを使用して、出版物の変更履歴を確認することもできます。 **進行中** タブに移動し、目的の出版物の **アクション** ボタン(![Actions button](../../../images/icon-actions.png))をクリックし、 **変更をレビュー** を選択するだけです。
 
 変更を確認する場合、すべての追跡された変更がリストに表示され、ユーザー、サイト、タイトル、タイプ、ステータス、変更タイプ、最終更新日順に並べることができます。
 
@@ -80,7 +80,7 @@ Liferayのバージョンをアップグレードした後、既存のパブリ�
 
 ### ページへの変更をプレビューする
 
-{bdg-link-primary}`[リリース特集](../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags)`
+{bdg-link-primary}` [リリース特集](../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) `
 
 {bdg-secondary}`Liferay 7.4 2023.Q3+/GA98+`
 
@@ -98,7 +98,7 @@ Liferayのバージョンをアップグレードした後、既存のパブリ�
 
 ### 出版物間での変更の移動
 
-{bdg-link-primary}`[ベータ版特集](../../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
+{bdg-link-primary}` [ベータ版特集](../../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags) `
 
 {bdg-secondary}`Liferay 7.4 2023.Q3+/GA98+`
 

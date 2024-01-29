@@ -29,15 +29,15 @@ visibility:
 
 パートナーポータルの主要機能は、サプライヤーポータルで強調すべき機能と同様です。
 
-* [セグメンテーション & パーソナライゼーション](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience)
-* [ID管理 & アクセス管理](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay)
-* [ローコード／ノーコードによるアプリケーション構築](https://learn.liferay.com/w/dxp/building-applications/objects)
-* [データモデリング & プロセスオートメーション](https://learn.liferay.com/w/dxp/process-automation)
-* [コマース](https://learn.liferay.com/w/commerce/index)
-* [デザインシステム & エクスペリエンス管理](https://learn.liferay.com/w/dxp/site-building)
+* [サイトエクスペリエンスのパーソナライズ](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience)
+* [Liferayの保護](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay)
+* [オブジェクト](https://learn.liferay.com/w/dxp/building-applications/objects)
+* [プロセスの自動化](https://learn.liferay.com/w/dxp/process-automation)
+* [Commerce](https://learn.liferay.com/w/commerce/index)
+* [サイトの構築](https://learn.liferay.com/w/dxp/site-building)
 * 統合 & 相互運用性
-* [検索](https://learn.liferay.com/w/dxp/using-search) & [ナビゲーション](https://learn.liferay.com/w/dxp/site-building/site-navigation)
-* [Headless API & マルチチャネル](https://learn.liferay.com/w/dxp/headless-delivery)
-* [コラボレーション & ナレッジの共有](https://learn.liferay.com/w/dxp/collaboration-and-social)
+* [検索の利用](https://learn.liferay.com/w/dxp/using-search) & [サイトナビゲーション](https://learn.liferay.com/w/dxp/site-building/site-navigation)
+* [ヘッドレスデリバリー](https://learn.liferay.com/w/dxp/headless-delivery)
+* [コラボレーションとソーシャルメディア](https://learn.liferay.com/w/dxp/collaboration-and-social)
 
 次：[最新の社内ポータル](./modern-intranets.md) 

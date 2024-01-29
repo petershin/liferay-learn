@@ -8,11 +8,11 @@ FAQ用のテンプレートは、あなたが追加した各フィールドだ�
 
 1. パブリックサイトの管理者であるPreston Palmerとしてログインしてください（まだの場合）。
 
-1. サイトメニューに移動する (![サイトメニュー](../../images/icon-product-menu.png)) &rarr; _Content & Data_ &rarr; _Webコンテンツ_.
+1. サイトメニューに移動する (![サイトメニュー](../../images/icon-product-menu.png)) &rarr; **Content & Data** &rarr; **Webコンテンツ** .
 
-1. *Templates*タブを選択し、_Add_ (![Add icon](../../images/icon-add.png)) をクリックします。
+1. **Templates** タブを選択し、 **Add**(![Add icon](../../images/icon-add.png)) をクリックします。
 
-1. プロパティ]メニュー(![プロパティアイコン](../../images/icon-cog.png))(画面右側)で、[構造]フィールドの横にある*[構造の選択*]をクリックし、FAQの構造を選択します。
+1. プロパティ]メニュー(![プロパティアイコン](../../images/icon-cog.png))(画面右側)で、[構造]フィールドの横にある [**構造の選択**]をクリックし、FAQの構造を選択します。
 
    新しいテンプレートはFAQ構造と関連付けられる。 テンプレートを作成し、それを構造に関連付けるには、この別の方法か、前の練習で述べた方法を使います。
 
@@ -26,11 +26,11 @@ FAQ用のテンプレートは、あなたが追加した各フィールドだ�
 
 次に、FAQ記事のリストをフォーマットする。
 
-1. *Elements*（[Elementsアイコン](../../images/icon-list-ul.png)）をクリックして、Elementsメニューを再度開きます。
+1. **Elements**（ [Elementsアイコン](../../images/icon-list-ul.png) ）をクリックして、Elementsメニューを再度開きます。
 
 1. テンプレート本文をクリックし、プレースホルダー・テキストを削除する。
 
-1. ElementsメニューからJournalの下のフィールドまでスクロールダウンし、_Title_をクリックします。
+1. ElementsメニューからJournalの下のフィールドまでスクロールダウンし、 **Title** をクリックします。
 
    これにより、タイトル値を使用するコードが自動的に入力される。
 
@@ -42,7 +42,7 @@ FAQ用のテンプレートは、あなたが追加した各フィールドだ�
 
 1. Enter キーを 2 回押して改行を 2 行追加し、改行用の HTML タグ (`<br>`) を追加して、タイトルと FAQ のリストを区切ります。
 
-1. Enterキーを2回押して新しい行を2行追加し、「要素」メニューのフィールドリストから「_FAQ_」をクリックする。
+1. Enterキーを2回押して新しい行を2行追加し、「要素」メニューのフィールドリストから「**FAQ**」をクリックする。
 
    FAQグループは反復可能なフィールドであるため、これは表示されたコンテンツ内の各インスタンスを反復するFreeMarkerリストを追加します。
 
@@ -60,7 +60,7 @@ FAQ用のテンプレートは、あなたが追加した各フィールドだ�
    </#if>
    ```
 
-   これは、フィールドリストから_Question_フィールドと_Answer_フィールドの両方をクリックするのと似ていますが、`cur_FAQ`を使用して、繰り返し実行するたびに、リスト内の各特定の質問と回答を参照します。
+   これは、フィールドリストから **Question** フィールドと **Answer** フィールドの両方をクリックするのと似ていますが、`cur_FAQ`を使用して、繰り返し実行するたびに、リスト内の各特定の質問と回答を参照します。
 
 1. 次の例のように、行全体を質問フィールドのテキスト（`${cur_FAQ.QuestionText.getData()}`）で太字*のHTMLタグ（`<b>`）で囲みます：
 
@@ -72,7 +72,7 @@ FAQ用のテンプレートは、あなたが追加した各フィールドだ�
 
    ![The completed template iterates over each question and answer with new lines between each.](./adding-a-template-to-display-faqs/images/03.png)
 
-1. ［_保存_］をクリックします。
+1. ［**保存**］をクリックします。
 
 これで、FAQの記事を表示する場所であればどこでも、それぞれの質問と回答を表示するテンプレートができ、新しいタイプのウェブコンテンツの両方をサイトに適切に表示することができます。
 
@@ -84,11 +84,11 @@ FAQ用のテンプレートは、あなたが追加した各フィールドだ�
 
 Templates "ページにいる間に、ページの一番上に "Templates for Structure "と表示されていることを確認してください：よくある質問"
 
-1. Templatesページで、_Add_ (![Add icon](../../images/icon-add.png)) をクリックし、別の新しいテンプレートを作成します。
+1. Templatesページで、 **Add**(![Add icon](../../images/icon-add.png)) をクリックし、別の新しいテンプレートを作成します。
 
    !!! note
 
-      テンプレート」ページの上部には、「構造用テンプレート」と表示されています：新しいテンプレートを追加しても、FAQsテンプレートと関連付けられることを忘れないようにするためです。 もし（構造の_Manage Templates_をクリックせずに）普通にTemplatesタブにアクセスした場合、構造を作成するときに手動で構造を設定する必要があります。
+      テンプレート」ページの上部には、「構造用テンプレート」と表示されています：新しいテンプレートを追加しても、FAQsテンプレートと関連付けられることを忘れないようにするためです。 もし（構造の **Manage Templates** をクリックせずに）普通にTemplatesタブにアクセスした場合、構造を作成するときに手動で構造を設定する必要があります。
 
 1. テンプレートリソースをダウンロードし、解凍します：
 
@@ -100,17 +100,17 @@ Templates "ページにいる間に、ページの一番上に "Templates for St
    unzip liferay-c8m2.zip
    ```
 
-1. ページ上部で、_Actions_ (![Actions icon](../../images/icon-actions.png)) をクリックします。 &rarr; _Import Script_をクリックします。
+1. ページ上部で、 **Actions**(![Actions icon](../../images/icon-actions.png)) をクリックします。 &rarr; **Import Script** をクリックします。
 
    ![Click Import Script to import the FreeMarker template you downloaded.](./adding-a-template-to-display-faqs/images/05.png)
 
-1. ダウンロードしたFreeMarkerテンプレート（`faq-web-content-template.ftl`）をアップロードし、_開く_をクリックします。
+1. ダウンロードしたFreeMarkerテンプレート（`faq-web-content-template.ftl`）をアップロードし、 **開く** をクリックします。
 
-   テンプレートの本文は、新しいテンプレートのFreeMarkerコードで埋められます。 このテンプレートは、前に追加したテンプレートと同じテクニックを使用していますが、 [クレイコンポーネント](https://learn.liferay.com/web/guest/w/dxp/building-applications/developing-a-java-web-application/using-mvc/tag-libraries/clay-tag-library) と埋め込みボタンコンポーネントも含まれています。
+   テンプレートの本文は、新しいテンプレートのFreeMarkerコードで埋められます。 このテンプレートは、前に追加したテンプレートと同じテクニックを使用していますが、 [Clayタグライブラリ](https://learn.liferay.com/web/guest/w/dxp/building-applications/developing-a-java-web-application/using-mvc/tag-libraries/clay-tag-library) と埋め込みボタンコンポーネントも含まれています。
 
 1. 新しいテンプレートの名前として「折りたたみ可能なFAQ」を入力します。
 
-1. ［_保存_］をクリックします。
+1. ［**保存**］をクリックします。
 
 これで、デフォルトで回答が折りたたまれるテンプレートができ、見た目がすっきりしました。
 
@@ -120,6 +120,6 @@ Templates "ページにいる間に、ページの一番上に "Templates for St
 
 ## 関連コンセプト
 
-- [ウェブ・コンテンツ・テンプレートの作成](https://learn.liferay.com/web/guest/w/dxp/content-authoring-and-management/web-content/web-content-templates/creating-web-content-templates)
+- [Webコンテンツテンプレートの作成](https://learn.liferay.com/web/guest/w/dxp/content-authoring-and-management/web-content/web-content-templates/creating-web-content-templates)
 
-- [ウェブコンテンツのテンプレートをフラグメントにマッピングする](https://learn.liferay.com/web/guest/w/dxp/content-authoring-and-management/web-content/web-content-templates/mapping-web-content-templates-to-fragments)
+- [Webコンテンツテンプレートのフラグメントへのマッピング](https://learn.liferay.com/web/guest/w/dxp/content-authoring-and-management/web-content/web-content-templates/mapping-web-content-templates-to-fragments)

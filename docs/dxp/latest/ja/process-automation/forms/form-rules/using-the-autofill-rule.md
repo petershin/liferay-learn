@@ -9,9 +9,9 @@
 1. [地域フィルターを含む世界の国々をインポートするデータプロバイダー](../data-providers/using-the-rest-data-provider-to-populate-form-options.md#using-inputs-as-filters-for-the-rest-data-provider) を設定します。
 1. 次のフィールドを使用して[フォームを作成](../creating-and-managing-forms/creating-forms.md)します。
 
-    *［**Cash**］ または ［**All expenses paid trip**］ の2つのオプションがある ［**Rewards**］ という単一選択フィールド
-    *［**Region**］ という名前のテキストフィールド
-    * [restcountries.com](https://restcountries.com) データプロバイダーを使用する ［**Choose a Destination Country**］ という名前の［リストから選択］フィールド
+    * ［**Cash**］ または ［**All expenses paid trip**］ の2つのオプションがある ［**Rewards**］ という単一選択フィールド
+    * ［**Region**］ という名前のテキストフィールド
+    *  [restcountries.com](https://restcountries.com) データプロバイダーを使用する ［**Choose a Destination Country**］ という名前の［リストから選択］フィールド
 
 ## 自動入力ルールの設定
 

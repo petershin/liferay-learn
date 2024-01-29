@@ -6,21 +6,21 @@
 
 Accounts のワークフローを有効にする、
 
-1. ![グローバルメニュー](../../images/icon-applications-menu.png)を開き、[アプリケーション] タブ &rarr; _プロセスビルダー_ を開きます。
+1. ![グローバルメニュー](../../images/icon-applications-menu.png)を開き、[アプリケーション] タブ &rarr; **プロセスビルダー** を開きます。
 
-1. _Configurations_タブに移動し、Account Entryの*Edit*をクリックします。
+1. **Configurations** タブに移動し、Account Entryの **Edit** をクリックします。
 
-1. ドロップダウンメニューを使用して、_ワークフロー_を選択します。
+1. ドロップダウンメニューを使用して、 **ワークフロー** を選択します。
 
-   カスタム ワークフローの設計については、 [Workflow Designer Overview](../../process-automation/workflow/designing-and-managing-workflows/workflow-designer/workflow-designer-overview.md) を参照してください。
+   カスタム ワークフローの設計については、 [ワークフローデザイナーの概要](../../process-automation/workflow/designing-and-managing-workflows/workflow-designer/workflow-designer-overview.md) を参照してください。
 
    ![Use the drop-down menu to select a workflow.](./using-workflow-with-accounts/images/01.png)
 
-1. ［_保存_］をクリックします。
+1. ［**保存**］をクリックします。
 
 ワークフローがアクティブになった。 新規アカウントは、有効化される前に定められた承認プロセスを経なければなりません。
 
-[アカウントを作成](../accounts.md#creating-an-account)すると、ステータスが保留に設定され、レビュアーに通知されます。
+[アカウントを作成](../accounts.md#creating-an-account) すると、ステータスが保留に設定され、レビュアーに通知されます。
 
 ![Designated reviewers are notified of new accounts.](./using-workflow-with-accounts/images/02.png)
 

@@ -233,7 +233,7 @@ Liferay Enterprise Searchのサブスクリプションで利用可能なLiferay
 
 ### 検索管理
 
-**コントロールパネル**&rarr;**設定**&rarr;**検索** には、3つの管理用UIがある：Connections、Index Actions、Field Mappings です。
+**コントロールパネル** &rarr; **設定** &rarr; **検索** には、3つの管理用UIがある：Connections、Index Actions、Field Mappings です。
 
 詳しくは、専用の [検索管理とチューニング](./search-administration-and-tuning.md) のドキュメントをご覧ください。
 
@@ -264,7 +264,7 @@ Liferay Enterprise Searchのサブスクリプションで利用可能なLiferay
 
 ### ポータルプロパティ
 
-ポータルプロパティは、システムにも適用されます。 [Lucene検索](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Lucene%20Search) ポータルプロパティは、低レベルの検索動作を構成します。 プロパティとその説明を見て、自分の検索条件に当てはまるかどうかを判断します。
+ポータルプロパティは、システムにも適用されます。 [Lucene検索](https://resources.learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) ポータルプロパティは、低レベルの検索動作を構成します。 プロパティとその説明を見て、自分の検索条件に当てはまるかどうかを判断します。
 
 ## 関連する内容
 

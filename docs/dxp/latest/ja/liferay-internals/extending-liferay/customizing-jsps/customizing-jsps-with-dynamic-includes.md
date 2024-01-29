@@ -1,6 +1,6 @@
 # Dynamic Includesを用いたJSPのカスタマイズ
 
-[`liferay-util:dynamic-include`タグ](https://learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/liferay-util/dynamic-include.html) は、コンテンツを挿入できるプレースホルダーです（JavaScriptコード、HTMLなど）。 サンプルプロジェクトでは、dynamic includeでコンテンツを挿入する方法を示しています。
+[`liferay-util:dynamic-include`タグ](https://resources.learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/liferay-util/dynamic-include.html) は、コンテンツを挿入できるプレースホルダーです（JavaScriptコード、HTMLなど）。 サンプルプロジェクトでは、dynamic includeでコンテンツを挿入する方法を示しています。
 
 ## サンプルプロジェクトをデプロイする
 

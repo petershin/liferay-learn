@@ -4,23 +4,21 @@ uuid: 98265510-3c61-456b-8ce5-7e61b18b1e82
 
 # Bundling and Copying Files from an Existing Theme
 
-By using gulp's kickstart task, you can copy the files from a previously created theme into any theme you choose. This funcionality is useful in case you want to develop a theme based on a pre-existent one.
+By using gulp's `kickstart` task, you can copy the files from a previously created theme into any theme you choose. This functionality is useful in case you want to develop a theme based on an existing one.
 
-The process is different from extending a theme. While the kickstart task serves as a single inheritance method, theme extending applies the extended theme's `src` files dynamically on top of the base theme on every build.
+The process is different from extending a theme. While the `kickstart` task serves as a single inheritance method, theme extending applies the extended theme's `src` files dynamically on top of the base theme on every build.
 
-``` {warning}
-Using gulp's kickstart task can overwrite files with the same name. Backup your files as necessary.
-```
+!!! warning
+    Using gulp's `kickstart` task can overwrite files with the same name. Backup your files as necessary.
 
 ## Creating and Copying Themes
 
-```{note}
-In case you did not set up your enviroment to create a theme, see [Setting Up an Environment and Creating a Theme](../getting-started/setting-up-an-environment-and-creating-a-theme.md).
-```
+!!! note
+    In case you did not set up your environment to create a theme, see [Setting Up an Environment and Creating a Theme](../getting-started/setting-up-an-environment-and-creating-a-theme.md).
 
 Follow these steps to create multiple themes and copy the files from one into the other:
 
-1. Create two themes by [Running the Liferay Theme Generator](../getting-started/setting-up-an-environment-and-creating-a-theme.md#running-the-liferay-theme-generator). Label them as "Liferay Theme 1" and "Liferay Theme 2".
+1. Create two themes by [Running the Liferay Theme Generator](../getting-started/setting-up-an-environment-and-creating-a-theme.md#running-the-liferay-theme-generator). Label them as `Liferay Theme 1` and `Liferay Theme 2`.
 
 1. Navigate to Liferay Theme 1's root folder.
 
@@ -47,7 +45,7 @@ Follow these steps to create multiple themes and copy the files from one into th
 
 1. Run `npm link` to install Liferay Theme 1 globally, making it usable within other themes.
 
-1. Go to Liferay Theme 2's folder and run gulp's kickstart task.
+1. Go to Liferay Theme 2's folder and run gulp's `kickstart` task.
 
    ```bash
    cd liferay-theme2-theme/
@@ -58,6 +56,7 @@ Follow these steps to create multiple themes and copy the files from one into th
    ```
 
 1. You can choose to copy from globally installed themes or themes published on the npm registry. For this example, choose the first option.
+
    ```
    ? Where would you like to search? (Use arrow keys)
    ❯ Search globally installed npm modules
@@ -80,8 +79,6 @@ Follow these steps to create multiple themes and copy the files from one into th
 1. Open `src/css/_custom.scss` and check if it's similar to Liferay Theme 1's file.
 
 1. Run `gulp deploy` to build and deploy Liferay Theme 2. That way, you can use your newly configured theme in your running Liferay Portal instance.
-
-## Conclusion
 
 Now you know how to develop a theme based on an existing one by configuring and copying its files.
 

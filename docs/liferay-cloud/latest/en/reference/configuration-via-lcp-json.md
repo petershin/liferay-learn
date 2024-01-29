@@ -1,4 +1,9 @@
 ---
+taxonomy-category-names:
+- Cloud
+- Cloud Platform Administration
+- Reference
+- Liferay PaaS
 uuid: 06e5f4cf-f80e-4ba3-b0fb-df7058b8b4bb
 ---
 # Configuration via LCP.json

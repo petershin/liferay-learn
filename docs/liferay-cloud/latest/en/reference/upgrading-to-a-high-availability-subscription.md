@@ -1,4 +1,9 @@
 ---
+taxonomy-category-names:
+- Cloud
+- Cloud Platform Administration
+- Reference
+- Liferay PaaS
 uuid: 1ee2361d-9abc-4416-997e-16a80bdd9aa1
 ---
 # Upgrading to a High Availability Subscription

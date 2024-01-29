@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Cloud
+- Cloud Platform Administration
+- Reference
+- Liferay PaaS
+- Liferay SaaS
 uuid: e2f145ad-3da7-43cf-9ecb-cd5c6f8131ed
 ---
 # Platform Limitations

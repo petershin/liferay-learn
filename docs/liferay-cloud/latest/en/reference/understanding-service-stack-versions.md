@@ -1,4 +1,9 @@
 ---
+taxonomy-category-names:
+- Cloud
+- Cloud Platform Administration
+- Reference
+- Liferay PaaS
 uuid: 82bcaf14-42ec-400b-ad60-d5be361e2d20
 ---
 # Understanding Service Stack Versions

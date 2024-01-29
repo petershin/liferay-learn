@@ -1,4 +1,9 @@
 ---
+taxonomy-category-names:
+- Cloud
+- Cloud Platform Administration
+- Reference
+- Liferay PaaS
 uuid: d12d6ecd-c85d-4b73-ba13-101961c4555d
 ---
 # Example Configuration Files

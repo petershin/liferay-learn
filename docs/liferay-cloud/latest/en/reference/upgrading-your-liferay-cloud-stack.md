@@ -1,4 +1,9 @@
 ---
+taxonomy-category-names:
+- Cloud
+- Cloud Platform Administration
+- Reference
+- Liferay PaaS
 uuid: 6a301c61-93f6-4e6f-bba8-33437f602635
 ---
 # Upgrading Your Liferay Cloud Stack

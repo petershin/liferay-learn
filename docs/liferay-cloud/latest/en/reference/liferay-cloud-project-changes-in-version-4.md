@@ -1,4 +1,9 @@
 ---
+taxonomy-category-names:
+- Cloud
+- Cloud Platform Administration
+- Reference
+- Liferay PaaS
 uuid: dfcdf8e5-e176-4db6-9c11-8957f37d8dc2
 ---
 # Liferay Cloud Project Changes in Version 4

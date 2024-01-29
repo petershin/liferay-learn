@@ -1,4 +1,9 @@
 ---
+taxonomy-category-names:
+- Cloud
+- Cloud Platform Administration
+- Reference
+- Liferay PaaS
 uuid: 3aabb860-04ad-4a68-a64a-c4d90f68bbfa
 ---
 # Defining Environment Variables

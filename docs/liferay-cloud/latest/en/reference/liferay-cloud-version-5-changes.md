@@ -1,4 +1,9 @@
 ---
+taxonomy-category-names:
+- Cloud
+- Cloud Platform Administration
+- Reference
+- Liferay PaaS
 uuid: e56c7a54-cf20-4aab-b425-967b296ac03a
 ---
 # Liferay Cloud Version 5 Changes

@@ -27,7 +27,7 @@ You can now configure the asset library now or accept the default settings and b
 
 ## Configuring Asset Libraries
 
-When you create an asset library, Liferay directs you to its configuration page. Afterwards, you can configure a library by clicking its *Actions* button (![Actions button](../../images/icon-actions.png)) and selecting *Edit*. Configuration options appear in three sections: *General*, *Sites*, and *Languages*.
+When you create an asset library, Liferay directs you to its configuration page. Afterwards, you can configure a library by clicking its *Actions* (![Actions button](../../images/icon-actions.png)) and selecting *Edit*. Configuration options appear in three sections: *General*, *Sites*, and *Languages*.
 
 You can also access these options from the library's dashboard page by clicking *Asset Library Settings*.
 
@@ -43,7 +43,7 @@ Here you can configure an asset library's basic information.
 
 **Asset Auto Tagging**: Enable or disable [auto tagging](../tags-and-categories/auto-tagging/auto-tagging-assets.md). When enabled, assets are automatically tagged using the providers configured at the instance level.
 
-**Documents and Media**: Enable or disable HTTP directory browsing for this library. By default, this setting is disabled. When enabled, users with view permission for an asset library can view files and folders in its document library in their browser (e.g., `http://localhost:8080/documents/asset-library-{assetLibraryId}`). For Liferay 2024.Q1+/GA105+, also set a max file size for uploaded assets. This value cannot exceed the maximum upload request size set at the instance or system levels. Setting the value to 0 sets no limit for uploaded files.
+**Documents and Media**: Enable or disable HTTP directory browsing for this library. By default, this setting is disabled. When enabled, users with view permission for an asset library can view files and folders in its document library in their browsers (e.g., `http://localhost:8080/documents/asset-library-{assetLibraryId}`). For Liferay 2024.Q1+/GA105+, also set a max file size for uploaded assets. This value cannot exceed the maximum upload request size set at the instance or system levels. Setting the value to 0 sets no limit for uploaded files.
 
 **Recycle Bin**: Enable or disable Recycle Bin for a library, and set the maximum age for recycled assets. By default, the maximum age is set to 43200 minutes (i.e., 30 days).
 
@@ -67,11 +67,11 @@ Here you can choose whether to use your instance's default language configuratio
 
 ![Use your instance's default language options for an asset library, or define your own](./creating-and-managing-asset-libraries/images/03.png)
 
-To set a custom default language, click the desired language's *Actions* button (![Actions button](../../images/icon-actions.png)) and select *Make Default*.
+To set a custom default language, click the desired language's *Actions* (![Actions button](../../images/icon-actions.png)) and select *Make Default*.
 
 ## Managing Asset Library Memberships
 
-You can view and manage user memberships for an asset library by going to its dashboard page and clicking *Memberships*. From here, you can click *Add* (![Add button](../../images/icon-add.png)) to add new users, organizations, and user groups to the selected library. You can also assign roles or remove memberships for each existing member by clicking its *Actions* button (![Actions button](../../images/icon-actions.png)).
+You can view and manage user memberships for an asset library by going to its dashboard page and clicking *Memberships*. From here, you can click *Add* (![Add button](../../images/icon-add.png)) to add new users, organizations, and user groups to the selected library. You can also assign roles or remove memberships for each existing member by clicking its *Actions* (![Actions button](../../images/icon-actions.png)).
 
 ![View an manage asset library memberships.](./creating-and-managing-asset-libraries/images/04.png)
 
@@ -88,13 +88,13 @@ By default, asset libraries include these roles:
 * **Asset Library Owner**: Grants control over all aspects of an asset library and is automatically assigned to the library's creator.
 
 !!! note
-    By default, the asset library member's permissions are more restricted than those of its site counterpart. This means you'll need to manually grant access to applications, update/delete permissions for content, and more if you want members to be responsible for managing content.
+    By default, the asset library member's permissions are more restricted than those of its site counterpart. This means you must manually grant access to applications, update/delete permissions for content, and more if you want members to be responsible for managing content.
 
 Creating or customizing an asset library role is the same process as for other kinds of roles. See [Roles and Permissions](../../users-and-permissions/roles-and-permissions.md) for how to create, customize, manage, and assign roles.
 
 ## Deleting an Asset Library
 
-To remove an asset library and its contents from your instance, click its *Actions* button (![Actions button](../../images/icon-actions.png)) and select *Delete*. You are then prompted to confirm the deletion. Once deleted, all contained assets are removed from your database and are no longer available to previously connected sites.
+To remove an asset library and its contents from your instance, click its *Actions* (![Actions button](../../images/icon-actions.png)) and select *Delete*. You are then prompted to confirm the deletion. Once deleted, all contained assets are removed from your database and are no longer available to previously connected sites.
 
 !!! warning
     Deleting asset libraries cannot be undone. Ensure you're removing the correct library and have backed up any assets you want to keep.

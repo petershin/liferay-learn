@@ -14,7 +14,7 @@ uuid: 1678aa17-009f-4055-9780-643c54d67ae6
 
 {bdg-secondary}`Available 7.3+`
 
-Asset Libraries are virtual spaces where you can create and store reusable assets. You can create as many of these spaces as needed to group content for departments, teams, or even individual products and campaigns. Each library is created at the instance level and can be connected to multiple sites, so your users can develop and manage assets in each library instead of within individual sites. Supported applications include Web Content, Documents and Media, Collections, and Translation Processes.
+Asset Libraries are virtual spaces for storing reusable assets. You can create as many of these spaces as needed to group content for departments, teams, or even individual products and campaigns. Each library is created at the instance level and can be connected to multiple sites, so your users can develop and manage assets in each library instead of within individual sites. Supported applications include Web Content, Documents and Media, Collections, and Translation Processes.
 
 ![Asset Libraries are virtual spaces where you can create and store reusable assets for your DXP instance.](./asset-libraries/images/01.png)
 

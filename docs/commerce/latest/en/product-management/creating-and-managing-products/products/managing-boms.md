@@ -1,5 +1,12 @@
 ---
 uuid: 8976db69-45ce-47b6-b13f-90820a7599e4
+taxonomy-category-names:
+- Commerce
+- Products
+- Product Information
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Managing BOMs
 

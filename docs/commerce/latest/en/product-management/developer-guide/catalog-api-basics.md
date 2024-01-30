@@ -1,5 +1,11 @@
 ---
 uuid: 7436ab21-a451-4297-bdf9-1c14cf4a132f
+taxonomy-category-names:
+- Commerce
+- Catalogs
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Catalog API Basics
 

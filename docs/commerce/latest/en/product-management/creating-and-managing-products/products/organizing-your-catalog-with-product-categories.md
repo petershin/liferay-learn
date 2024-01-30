@@ -1,5 +1,13 @@
 ---
 uuid: 6fbdb7a7-ce62-47c9-9828-1d76476f0cac
+taxonomy-category-names:
+- Commerce
+- Products
+- Product Information
+- Catalog
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Organizing Your Catalog with Product Categories
 

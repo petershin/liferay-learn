@@ -1,5 +1,11 @@
 ---
 uuid: 382c27be-fa92-4ed8-b1a9-1939d5e504bf
+taxonomy-category-names:
+- Commerce
+- Catalogs
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Creating a New Catalog
 

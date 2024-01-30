@@ -1,12 +1,19 @@
 ---
 uuid: 2625023e-5f99-4caa-b510-b3b340985973
+taxonomy-category-names:
+- Commerce
+- Products
+- Product Information
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Product API - Creating a Product with Multiple SKUs
 
-You can create products with multiple active SKUs using the product API or from the Products application. To create such a product, you must first have an option template created using the [Option API](./option-api-basics.md) or through the Options application, and have values present for the option. You can add values from the Options application or use the [Option Value API](./option-value-api-basics.md). 
+You can create products with multiple active SKUs using the product API or from the Products application. To create such a product, you must first have an option template created using the [Option API](./option-api-basics.md) or through the Options application, and have values present for the option. You can add values from the Options application or use the [Option Value API](./option-value-api-basics.md).
 
 ```{note}
-You can also create an option template from the Options tab on a product. The values added here, however, are specific to the product and doesn't get added to the option template found under Global Menu (![Applications Menu icon](../../images/icon-applications-menu.png)) &rarr; Commerce &rarr; Options. 
+You can also create an option template from the Options tab on a product. The values added here, however, are specific to the product and doesn't get added to the option template found under Global Menu (![Applications Menu icon](../../images/icon-applications-menu.png)) &rarr; Commerce &rarr; Options.
 ```
 
 ## Adding a Product with Multiple SKUs

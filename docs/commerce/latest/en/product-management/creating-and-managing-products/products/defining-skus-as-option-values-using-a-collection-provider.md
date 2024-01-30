@@ -1,5 +1,12 @@
 ---
 uuid: 36f5e761-fae3-4504-8cd1-ecd93524aa1f
+taxonomy-category-names:
+- Commerce
+- Products
+- Product Information
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Defining SKUs as Option Values using a Collection Provider
 

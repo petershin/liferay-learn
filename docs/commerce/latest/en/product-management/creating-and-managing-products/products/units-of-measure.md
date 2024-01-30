@@ -1,5 +1,12 @@
 ---
 uuid: 86a0350d-04cd-467a-a01e-c916cacf6835
+taxonomy-category-names:
+- Commerce
+- Products
+- Product Information
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Units of Measure (UOM)
 

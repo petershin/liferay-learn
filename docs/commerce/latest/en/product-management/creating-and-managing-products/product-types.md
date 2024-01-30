@@ -6,6 +6,13 @@ toc:
   - ./product-types/virtual-product-reference.md
   - ./product-types/shop-by-diagram.md
 uuid: 02b25421-bafd-4e8c-8682-da6db42965a3
+taxonomy-category-names:
+- Commerce
+- Products
+- Product Information
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Product Types
 

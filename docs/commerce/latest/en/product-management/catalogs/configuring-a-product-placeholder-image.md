@@ -1,5 +1,11 @@
 ---
 uuid: cf41c5f8-33f0-469f-9af8-b63d4046eed4
+taxonomy-category-names:
+- Commerce
+- Catalogs
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Configuring a Product Placeholder Image
 

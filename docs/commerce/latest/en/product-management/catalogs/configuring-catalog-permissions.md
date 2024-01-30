@@ -1,5 +1,11 @@
 ---
 uuid: 7a25f911-e061-4a44-84e1-09bf79db288a
+taxonomy-category-names:
+- Commerce
+- Catalogs
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Configuring Catalog Permissions
 

@@ -1,12 +1,19 @@
 ---
 uuid: f6802b83-5cfc-4a6d-b694-9929f6e2699e
+taxonomy-category-names:
+- Commerce
+- Products
+- Product Information
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Shop by Diagram
 
 {bdg-primary}`Subscription`
 
 With Shop by Diagram you can easily find parts for larger equipment visually through diagrams. This can be an automotive spare part, electronic component, or spares of heavy machinery.
- 
+
 You can browse through an exploded view of the product, select the part and its quantity, and add it to your cart. With Shop by Diagram it's easy to find the right component when you don’t have the product name or model number.
 
 ```{note}

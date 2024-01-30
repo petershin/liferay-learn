@@ -1,5 +1,12 @@
 ---
 uuid: 6b2e1fd0-e4dd-49a6-9dda-439655ac47ae
+taxonomy-category-names:
+- Commerce
+- Products
+- Product Information
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Related Products, Up-Sells, and Cross-Sells
 

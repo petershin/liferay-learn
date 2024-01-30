@@ -1,5 +1,12 @@
 ---
 uuid: 37565173-62c1-4e72-8f2a-9cf503e85881
+taxonomy-category-names:
+- Commerce
+- Products
+- Product Information
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Creating Product Bundles
 

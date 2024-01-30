@@ -1,5 +1,12 @@
 ---
 uuid: b72b20b6-d0f9-45e8-8dff-478f938a0585
+taxonomy-category-names:
+- Commerce
+- Products
+- Product Information
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Enabling Subscriptions for a Product
 

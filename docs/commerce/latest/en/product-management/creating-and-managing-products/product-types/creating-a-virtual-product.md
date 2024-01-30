@@ -1,5 +1,12 @@
 ---
 uuid: afa7fd7a-5a8e-48ab-af8f-b8ef9a2664f1
+taxonomy-category-names:
+- Commerce
+- Products
+- Product Information
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Creating a Virtual Product
 

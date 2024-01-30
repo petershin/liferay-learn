@@ -1,5 +1,12 @@
 ---
 uuid: 85a8b274-c772-4589-9c2a-6779826e27f9
+taxonomy-category-names:
+- Commerce
+- Products
+- Product Information
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Overriding Product Level Information
 

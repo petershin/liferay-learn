@@ -1,5 +1,12 @@
 ---
 uuid: 0fba1f8c-2ddd-4ac2-907e-4789108f581b
+taxonomy-category-names:
+- Commerce
+- Products
+- Product Information
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Creating SKUs for Product Variants
 

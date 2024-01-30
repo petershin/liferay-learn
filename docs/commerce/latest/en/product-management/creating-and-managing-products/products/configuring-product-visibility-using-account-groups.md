@@ -1,5 +1,12 @@
 ---
 uuid: bf59d25e-877d-46d3-9ed3-77bf7019d145
+taxonomy-category-names:
+- Commerce
+- Products
+- Product Information
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Configuring Product Visibility Using Account Groups
 

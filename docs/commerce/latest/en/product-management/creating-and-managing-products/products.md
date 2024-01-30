@@ -18,6 +18,13 @@ toc:
   - ./products/configuring-product-visibility-using-account-groups.md
   - ./products/product-configuration-reference.md
 uuid: 4e6ed6d1-2c0b-4fb5-be90-0bd0ba3923f7
+taxonomy-category-names:
+- Commerce
+- Products
+- Product Information
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Products
 

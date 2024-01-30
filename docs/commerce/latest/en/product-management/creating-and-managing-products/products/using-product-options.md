@@ -1,5 +1,12 @@
 ---
 uuid: 0d1d7d64-69cf-423d-b2d3-d1f9dd71afe0
+taxonomy-category-names:
+- Commerce
+- Products
+- Product Information
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Using Product Options
 

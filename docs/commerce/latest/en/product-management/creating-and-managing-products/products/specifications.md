@@ -1,11 +1,18 @@
 ---
 uuid: f4edcb34-81e1-49ea-b947-b2d9ef9c07c8
+taxonomy-category-names:
+- Commerce
+- Products
+- Product Information
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Specifications
 
 A specification stores a single piece of Product information. This can be the Product’s dimensions, color, weight, capacity, or any other attribute. These details can help customers when comparing similar Products.
 
-Specification data is ordered into groups, labels, and values to make them easy to display and maintain. 
+Specification data is ordered into groups, labels, and values to make them easy to display and maintain.
 
 | Name | Description |
 | :--- | :--- |
@@ -15,7 +22,7 @@ Specification data is ordered into groups, labels, and values to make them easy 
 
 ```{note}
 Specifications defined at the SKU level override Specifications defined at the Product level. See [Overriding Product Level Information](./overriding-product-level-information.md) for more details.
-``` 
+```
 
 ## Specification Groups
 

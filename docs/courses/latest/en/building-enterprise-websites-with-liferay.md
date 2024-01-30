@@ -1,6 +1,6 @@
 ---
 toc:
-- ./building-enterprise-websites-with-liferay/module-1.md
+- ./building-enterprise-websites-with-liferay/module-1-getting-started-with-clarity.md
 - ./building-enterprise-websites-with-liferay/module-2.md
 - ./building-enterprise-websites-with-liferay/module-3.md
 - ./building-enterprise-websites-with-liferay/module-4.md

@@ -74,7 +74,7 @@ mkdir -p test-es-install/dxp/files/osgi/configs && mkdir -p test-es-install/elas
 
    This is for local testing only. You must understand and ensure the permissions are appropriate for your system. 
 
-1. Get the `elasticsearch` containers IPv4 address so it can be added to Liferay's `docker run` command:
+1. Get the `elasticsearch` container's IPv4 address so it can be added to Liferay's `docker run` command:
 
    ```bash
    docker network inspect bridge
@@ -84,7 +84,7 @@ mkdir -p test-es-install/dxp/files/osgi/configs && mkdir -p test-es-install/elas
 
 ## Install Liferay
 
-Specify the properties Liferay needs to connect with Elasticsearch, then run the Liferay container.
+Specify the properties Liferay needs to connect with Elasticsearch; then run the Liferay container.
 
 1. First populate the Elasticsearch 7 configuration file. Create the file `com.liferay.portal.search.elasticsearch7.configuration.ElasticsearchConfiguration.config`:
 

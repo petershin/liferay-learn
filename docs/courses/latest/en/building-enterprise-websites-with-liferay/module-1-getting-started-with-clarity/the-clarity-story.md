@@ -1,7 +1,7 @@
 ---
- uuid: ec384196-2ee5-449e-8d70-bd91df0f05f3
+uuid: ec384196-2ee5-449e-8d70-bd91df0f05f3
 ---
-# Clarity's Story
+# The Clarity Story
 
 Founded in 2010, Clarity has quickly grown into a global leader in optical technology and design. With over 500 employees and $300m+ in revenue, their precision lenses and stylish frames bring clarity and confidence to customers worldwide. However, their current technical infrastructure<!--w/c; architecture?--> has become overly complex and outdated, leading to inefficiencies, high maintenance costs, and limitations on potential growth.
 
@@ -32,4 +32,4 @@ Taken together, Clarity's fragmented technical infrastructure and ineffective ma
 
 With these needs in mind, let's explore how Liferay DXP can empower Clarity to overcome their obstacles and deliver the solutions they need.
 
-<!-- Up Next: [How Liferay Solves Clarity's Problems]() -->
+<!-- Up Next: [The Liferay Solution](./the-liferay-solution.md) -->

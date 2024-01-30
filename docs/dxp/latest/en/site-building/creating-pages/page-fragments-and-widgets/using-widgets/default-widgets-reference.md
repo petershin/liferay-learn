@@ -59,8 +59,8 @@ Collaboration widgets build sites and communities that foster collaboration and 
 | Form | Adds a [Form widget](../../../../process-automation/forms/sharing-forms-and-managing-submissions.md) that you can configure to display a specific form. |
 | Invite Members | Adds a [Invite Members widget](../../../../site-building/sites/site-membership.md) that you can use to invite users to join a site. |
 | Message Boards | Adds a [Message Boards widget](../../../../collaboration-and-social/message-boards/user-guide/getting-started-with-message-boards.md) that adds the Message Board application to a page. |
-| Questions | Adds a [Questions widget](../../../../collaboration-and-social/questions/using-the-questions-app.md) that displays messages from the Message Boards in question and answer format. |
-| Recent Bloggers | Adds a [Recent Bloggers widget](../../../../content-authoring-and-management/blogs/highlighting-recent-bloggers.md) that displays the most recent blog authors. |
+| Questions | Adds a [Questions widget](../../../../collaboration-and-social/questions-application/using-the-questions-app.md) that displays messages from the Message Boards in question and answer format. |
+z| Recent Bloggers | Adds a [Recent Bloggers widget](../../../../content-authoring-and-management/blogs/highlighting-recent-bloggers.md) that displays the most recent blog authors. |
 
 ## Commerce
 

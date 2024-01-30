@@ -49,7 +49,7 @@ Liferayには、すぐに使用できるさまざまなウィジェットが用�
 | フォーム            | 特定のフォームを表示するように設定できる [［フォーム］ウィジェット](../../../../process-automation/forms/sharing-forms-and-managing-submissions.md) を追加します。                        |
 | メンバーの招待         | ユーザーをサイトに招待するために使用できる [［メンバーの招待］ウィジェット](../../../../site-building/sites/site-membership.md) を追加します。                                                |
 | 掲示板             | ページに掲示板アプリケーションを追加する [［掲示板］ウィジェット](../../../../collaboration-and-social/message-boards/user-guide/getting-started-with-message-boards.md) を追加します。  |
-| Questions       | 掲示板からのメッセージを質問と回答の形式で表示する [［質問］ウィジェット](../../../../collaboration-and-social/questions/using-the-questions-app.md) を追加します。                          |
+| Questions       | 掲示板からのメッセージを質問と回答の形式で表示する [［質問］ウィジェット](../../../../collaboration-and-social/questions-application/using-the-questions-app.md) を追加します。                          |
 | 最近参加したブロガー      | 最新のブログ作成者を表示する [［最近参加したブロガー］ウィジェット](../../../../content-authoring-and-management/blogs/highlighting-recent-bloggers.md) を追加します。                    |
 
 ## コマース

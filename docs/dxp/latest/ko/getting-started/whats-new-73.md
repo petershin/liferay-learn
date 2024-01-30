@@ -128,7 +128,7 @@ Liferay DXP 7.3에서는 React를 활용하기 위해 페이지 편집기가 완
 
 ## 질문 앱
 
-제품을 지원하기 위해 사이트를 사용하는 경우 새로운 [질문 앱](../collaboration-and-social/questions/using-the-questions-app.md) 사용하면 사용자가 제품에 대한 질문에 대한 답변을 찾는 데 도움이 될 수 있습니다. Liferay의 GraphQL API 및 메시지 보드 인프라를 활용하는 질문 앱은 가장 가치 있는 정보에 대한 투표 및 표시를 통해 사용자에게 최고의 답변을 제공합니다.
+제품을 지원하기 위해 사이트를 사용하는 경우 새로운 [질문 앱](../collaboration-and-social/questions-application/using-the-questions-app.md) 사용하면 사용자가 제품에 대한 질문에 대한 답변을 찾는 데 도움이 될 수 있습니다. Liferay의 GraphQL API 및 메시지 보드 인프라를 활용하는 질문 앱은 가장 가치 있는 정보에 대한 투표 및 표시를 통해 사용자에게 최고의 답변을 제공합니다.
 
 ![Users can post a question and get answers quickly.](./whats-new-73/images/17.gif)
 

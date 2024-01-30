@@ -128,7 +128,7 @@ Liferay DXP 7.3では、 [閲覧に関して、サイトメンバーのみとす
 
 ## 質問アプリ
 
-サイトで製品をサポートしている場合、新機能である [質問アプリ](../collaboration-and-social/questions/using-the-questions-app.md) により、ユーザーが製品に関する質問の回答を検索できるようにします。 LiferayのGraphQL APIと掲示板のインフラストラクチャーを活用して、質問アプリは、回答への投票や最も役立つ回答をマーキングすることで、ユーザーにベストな回答を提供します。
+サイトで製品をサポートしている場合、新機能である [質問アプリ](../collaboration-and-social/questions-application/using-the-questions-app.md) により、ユーザーが製品に関する質問の回答を検索できるようにします。 LiferayのGraphQL APIと掲示板のインフラストラクチャーを活用して、質問アプリは、回答への投票や最も役立つ回答をマーキングすることで、ユーザーにベストな回答を提供します。
 
 ![Users can post a question and get answers quickly.](./whats-new-73/images/17.gif)
 

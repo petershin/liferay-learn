@@ -49,7 +49,7 @@ Liferay는 기본적으로 다양한 위젯을 제공하므로 솔루션 구축�
 | 양식              | 특정 양식을 표시하도록 구성할 수 있는 [양식 위젯](../../../../process-automation/forms/sharing-forms-and-managing-submissions.md)을 추가합니다.                                 |
 | 일원을 초대하십시오      | 사용자를 사이트에 가입하도록 초대하는 데 사용할 수 있는 [회원 초대 위젯](../../../../site-building/sites/site-membership.md)을 추가합니다.                                                |
 | 게시판             | 메시지를 추가하는 [메시지 보드 위젯](../../../../collaboration-and-social/message-boards/user-guide/getting-started-with-message-boards.md)을 추가합니다. 페이지에 게시판을 신청합니다. |
-| 질문              | 메시지 보드의 메시지를 질문 및 답변 형식으로 표시하는 [질문 위젯](../../../../collaboration-and-social/questions/using-the-questions-app.md)을 추가합니다.                             |
+| 질문              | 메시지 보드의 메시지를 질문 및 답변 형식으로 표시하는 [질문 위젯](../../../../collaboration-and-social/questions-application/using-the-questions-app.md)을 추가합니다.                             |
 | 최근Bloggers      | 가장 최근 블로그 작성자를 표시하는 [최근 블로거 위젯](../../../../content-authoring-and-management/blogs/highlighting-recent-bloggers.md)을 추가합니다.                           |
 
 ## 커머스

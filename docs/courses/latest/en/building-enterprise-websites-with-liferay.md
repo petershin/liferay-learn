@@ -52,13 +52,13 @@ To bridge the gap between theory and practice, this course will lead you through
 ![This course will lead you through building an enterprise marketing website for a fictional company, Clarity Vision Solutions.](./building-enterprise-websites-with-liferay/images/02.png) 
 <!--TASK: Update img once design is finalized.-->
 
-Up Next: [Getting Started with Clarity](./building-enterprise-websites-with-liferay/getting-started-with-clarity.md)
+Up Next: [Getting Started with Clarity](./building-enterprise-websites-with-liferay/module-1-getting-started-with-clarity.md)
 
 ::::{grid} 2
 :gutter: 3 3 3 3
 
 :::{grid-item-card}  Module 1: Getting Started with Clarity
-:link: ./building-enterprise-websites-with-liferay/module-1.md
+:link: ./building-enterprise-websites-with-liferay/module-1-getting-started-with-clarity.md
 
 Coming Soon in Q1 2024
 :::

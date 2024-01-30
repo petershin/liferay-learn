@@ -1,9 +1,6 @@
 ---
 toc:
-  - ./cloud-administrator.md
-  - ./liferay-administrator.md
-  - ./application-development.md
-  - ./commerce-architect.md
+  - ./building-enterprise-websites-with-liferay.md
   - ./selling-liferay.md
 ---
 # 과정

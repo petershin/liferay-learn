@@ -14,7 +14,6 @@ You can configure the Asset Publisher widget to select assets dynamically based 
 !!! note
     On Liferay 7.2 and below, collections are referred to as [content sets](../../../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md#liferay-dxp-7-2).
 
-
 1. Create a [new page](../../creating-pages/adding-pages/adding-a-page-to-a-site.md) or [edit an existing one](../../creating-pages/using-content-pages/adding-elements-to-content-pages.md)
 
 1. While editing the page, look at the Fragments and Widgets tab on the left of the page editor and search for the *Asset Publisher* widget.
@@ -41,9 +40,9 @@ You can configure the Asset Publisher widget to select assets dynamically based 
 
 Assets are selected for display in the Asset Publisher widget using one of these selection methods:
 
--  [Collection](#collection)
--  [Dynamic](#dynamic)
--  [Manual](#manual)
+- [Collection](#collection)
+- [Dynamic](#dynamic)
+- [Manual](#manual)
 
 ### Collection
 
@@ -60,7 +59,7 @@ Select this option to choose from your previously saved collections or collectio
 ![Click Select and choose from your saved collections.](selecting-assets-in-the-asset-publisher-widget/images/03.png)
 
 !!! note
-Developers can use collection providers to create specific collections with more advanced criteria. To learn more, read the information about [Creating an Information List Provider](https://help.liferay.com/hc/en-us/articles/360029067271-Creating-an-Information-List-Provider) in the [Info Framework](https://help.liferay.com/hc/en-us/articles/360029067251-Introduction-to-The-Info-Framework) developer documentation.
+    Developers can use collection providers to create specific collections with more advanced criteria. To learn more, read the information about [Creating an Information List Provider](https://help.liferay.com/hc/en-us/articles/360029067271-Creating-an-Information-List-Provider) in the [Info Framework](https://help.liferay.com/hc/en-us/articles/360029067251-Introduction-to-The-Info-Framework) developer documentation.
 
 ### Dynamic
 
@@ -76,11 +75,11 @@ Using the Dynamic asset selection, you can include assets in the Asset Publisher
 
 1. In the Filter section, define the rules for the assets in your Asset Publisher widget. You can define rules based on [categories](../../../content-authoring-and-management/tags-and-categories/defining-categories-and-vocabularies-for-content.md), [tags](../../../content-authoring-and-management/tags-and-categories/tagging-content-and-managing-tags.md), or keywords.
 
-   You can filter items that Contain or Do Not Contain All or Any of the following Categories, Keywords, or Tags and specify the categories, keywords, or tags.
+   You can choose filters for items such as Contain/Do Not Contain All or Any of the following Categories, Keywords, or Tags and, then specify the categories, keywords, or tags.
 
 1. Include a Custom User Attribute if you have defined one.
 
-   The assets are only displayed if they match the included custom user profile attributes.
+   The assets only appear if they match the included custom user profile attributes.
 
 1. In the Ordering section, choose the presentation order of assets in the Asset Publisher widget.
 

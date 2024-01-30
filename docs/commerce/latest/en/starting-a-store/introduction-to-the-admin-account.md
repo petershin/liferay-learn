@@ -1,5 +1,11 @@
 ---
 uuid: 27fc8cca-93df-4670-8300-34f00abf9177
+taxonomy-category-names:
+- Commerce
+- Storefronts
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Introduction to the Admin Account
 

@@ -1,5 +1,11 @@
 ---
 uuid: e7d45e6f-c7f9-4727-a8fb-fe098b12bdf9
+taxonomy-category-names:
+- Commerce
+- Storefronts
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Accelerators
 

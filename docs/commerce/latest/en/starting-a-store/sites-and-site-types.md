@@ -1,5 +1,11 @@
 ---
 uuid: ccd6fab7-17fd-409e-b9d9-0bb02fb239c2
+taxonomy-category-names:
+- Commerce
+- Storefronts
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Sites and Site Types
 

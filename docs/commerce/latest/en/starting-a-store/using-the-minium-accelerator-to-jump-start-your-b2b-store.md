@@ -1,5 +1,11 @@
 ---
 uuid: f502b0b3-6d73-4def-811a-8d8a5e1677f3
+taxonomy-category-names:
+- Commerce
+- Storefronts
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Using the Minium Accelerator to Jump-Start Your B2B Store
 

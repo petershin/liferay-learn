@@ -9,7 +9,7 @@ Here you can walk through a minimal Liferay-Elasticsearch setup on your local ma
 
 ## Create Local Folders for Bind Mounting to the Docker Containers
 
-Create a local folder structure that can be bind mounted to the Elasticsearch and Liferay containers' system folders for providing plugins and configuration files. Since Elasticsearch must write to the mounted folder, the `-m a+w` modifier is given to the following `mkdir` command. You must understand and apply the proper permissions applicable to your system:
+Create local folders that can be bind mounted to the Elasticsearch and Liferay containers' system folders for providing plugins and configuration files. Since Elasticsearch must write to the mounted folder, the `-m a+w` modifier is given to the following `mkdir` command. You must understand and apply the proper permissions applicable to your system:
 
 ```bash
 mkdir -p test-es-install/dxp/files/osgi/configs && mkdir -p test-es-install/elasticsearch -m a+w && cd test-es-install
@@ -38,7 +38,7 @@ mkdir -p test-es-install/dxp/files/osgi/configs && mkdir -p test-es-install/elas
    docker exec -it elasticsearch /bin/bash
    ```
 
-1. Once you're shelled into the container, execute
+1. Use `./bin/elasticsearch-keystore` to print the password to the command line:
 
    ```bash
    ./bin/elasticsearch-keystore show xpack.security.http.ssl.keystore.secure_password
@@ -110,17 +110,13 @@ Specify the properties Liferay needs to connect with Elasticsearch, then run the
 
    Save and exit the file.
 
-1. Now the security certificate files and the configuration file is in place. They've been added to folders on the host system that the Liferay Docker container will be able to read from (`test-es-install/dxp/files`). Start the Liferay container:
+1. Now the security certificate files and the configuration file are in place. They've been added to folders on the host system that the Liferay Docker container can read from (`test-es-install/dxp/files`). Start the Liferay container:
 
    ```bash
    docker run -it --memory 9g --name liferay --publish 8080:8080 --volume $(pwd)/dxp:/mnt/liferay [$LIFERAY_LEARN_PORTAL_DOCKER_IMAGE$]
    ```
 
    If you're using Liferay 7.3, replace the version in the command above.
-
-
-   !!! tip
-       The above command assumes the `elasticsearch` container's IPv4 address is `172.17.0.2`. If it isn't, replace it with the correct value.
 
 1. **Checkpoint:** Verify that the Elasticsearch connection is active in Control Panel &rarr; Configuration &rarr; Search.
 
@@ -145,8 +141,6 @@ To clean up all the items created for this exercise, first stop the containers, 
    ```
 
 This leaves you with just the Docker images you used to create the containers. If desired, you can remove those with the `docker image rm [image-name]` command.
-
-Now you can start all over!
 
 ## Related Topics
 

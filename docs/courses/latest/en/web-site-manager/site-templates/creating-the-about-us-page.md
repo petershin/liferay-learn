@@ -27,7 +27,7 @@ All pages have the same structure you set in the Master page: a header, the cont
 
 1. Drag and drop the *About Us Composition* into the editing area.
 
-   A whole structure is set and you can edit its elements. If you applied the Dialect theme and imported the style book correctly, the composition should look like this:
+   A whole structure is set and you can edit its elements. The composition should look like this:
 
    ![The About Us composition is set and now you can edit its elements to create your About Us page.](./creating-the-about-us-page/images/02.png)
 

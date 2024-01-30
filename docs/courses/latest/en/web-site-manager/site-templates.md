@@ -19,13 +19,11 @@ With *Site Templates*, you can create a prototype or boilerplate not just for a 
 
 Each template includes most standard site applications for adding pages, stylebooks, web content, and more. Sites created with a template inherit all of the template's data. And once you create a site using a template, you can change it in two ways: by making changes outside the template to customize that individual site, or by making changes to the template so those changes automatically propagate to connected sites.
 
-Here's what you'll learn: 
+Here's what you'll learn:
 
 ![The Career page in your site template uses the common elements applied to the master page. The design and](./site-templates/images/02.png)
 
 - You'll create a [site template](https://learn.liferay.com/web/guest/w/dxp/site-building/sites/site-templates), populate it with pages, and create other sites with it.
-
-- [You'll change your site's theme](https://learn.liferay.com/web/guest/w/dxp/getting-started/changing-your-sites-appearance) and apply a [style book](https://learn.liferay.com/web/guest/w/dxp/site-building/site-appearance/style-books/using-a-style-book-to-standardize-site-appearance) to your new theme. This customizes your site's appearance and applies a set of visual rules to provide a consistent design and experience across the site and its pages.
 
 - You'll create a [master page template](https://learn.liferay.com/web/guest/w/dxp/site-building/creating-pages/defining-headers-and-footers/master-page-templates) and use it to define elements common to every page (e.g. menus, header and footer) so you can maintain and manage them easily.
 
@@ -41,7 +39,9 @@ Here's what you'll learn:
 
 - You'll create [navigation menus](https://learn.liferay.com/web/guest/w/dxp/site-building/site-navigation/using-the-navigation-menus-application) to determine which elements are included in a menu, and how they are organized. Then, configure the [menu display fragments](https://learn.liferay.com/web/guest/w/dxp/site-building/site-navigation/configuring-menu-displays) located in your master template so you can show your navigation menus in all pages through the template.
 
-- Finally, you'll [create a new site](https://learn.liferay.com/web/guest/w/dxp/site-building/sites/adding-a-site) using your site template. After that, you are free to add specific pages and other elements an intranet for Clarity employees called Glance and a B2B platform.
+- You'll [create a new site](https://learn.liferay.com/web/guest/w/dxp/site-building/sites/adding-a-site) using your site template. After that, you are free to add specific pages and other elements an intranet for Clarity employees called Glance and a B2B platform.
+
+- Finally, learn more about [site propagation](https://learn.liferay.com/web/guest/w/dxp/site-building/sites/site-template-propagation) and keep the connected sites always up to date.
 
 Ready?
 

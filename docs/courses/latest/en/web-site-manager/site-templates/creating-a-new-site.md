@@ -68,24 +68,11 @@ Next, you'll create a site based on the template you just created.
 
    ![Create a new site based on the site template you created.](./creating-a-new-site/images/04.png)
 
-1. Change the theme of your new site to the Dialect theme.
-
 1. If you have problems with the menu in the header, edit the Main master page, start configuring the Menu Display and select the appropriate Menu.
 
-Your new site is generated and you can use all the resources created within the Site Template or create new elements for your site! Repeat the same process and create the Clarity B2B site as well.
+Your new site is generated and you can use all the resources created within the Site Template or create new elements for your site! Repeat the same process and create the Clarity B2B site as well. Try it!
 
-<!-- What's the B2B site's name? -Rich -->
-<!-- I asked the designer and she did not know . I don't think there is one. So I called it Clarity B2B just in case. - Eric -->
-
-Try it. Don't forget to apply the Dialect theme to your new site as by default it uses the Classic theme. This way you can maintain your standard site appearance.
-
-That's it. Congratulations, Liferay Learner! You have just completed this module.
-
-During these lessons, you have learned how to create a site template, change your site's theme, apply a style book to your site's theme, create a site template, create pages, use compositions, create forms mapped to object definitions, use collection displays, create navigation menus, configure menu displays, and create a new site based on a site template.
-
-Phew! That was a lot. Keep on practicing!
-
-Next, you'll learn how to modify the [Site Look and Feel.]()
+Next, learn how you can [make changes to the template’s pages and automatically propagate those changes to connected sites](./site-template-propagation.md).
 
 ## Relevant Concepts
 

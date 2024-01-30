@@ -91,8 +91,6 @@ Next, you'll [create the master page template.](./creating-the-master-page-templ
 
 - [Virtual Instances](https://learn.liferay.com/web/guest/w/dxp/system-administration/configuring-liferay/virtual-instances)
 - [Site Templates](https://learn.liferay.com/web/guest/w/dxp/site-building/sites/site-templates)
-- [Changing Your Site's Appearance](https://learn.liferay.com/web/guest/w/dxp/getting-started/changing-your-sites-appearance)
-- [Using a Style Book to Standardize Site Appearance](https://learn.liferay.com/web/guest/w/dxp/site-building/site-appearance/style-books/using-a-style-book-to-standardize-site-appearance)
 - [Documents and Media](https://learn.liferay.com/web/guest/w/dxp/content-authoring-and-management/documents-and-media)
 - [Using Fragments](https://learn.liferay.com/web/guest/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments)
 - [Saving Fragment Compositions](https://learn.liferay.com/web/guest/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments/saving-fragment-compositions)

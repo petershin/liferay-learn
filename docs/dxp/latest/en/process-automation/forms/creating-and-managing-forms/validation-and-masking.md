@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Platform
+- Forms
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 515ce7b8-bd3f-4267-af81-ae4b30265966
 ---
 # Validation and Masking

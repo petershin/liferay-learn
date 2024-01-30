@@ -60,7 +60,7 @@ A [Style Book](../site-building/site-appearance/style-books/using-a-style-book-t
 
 ### Asset Libraries
 
-You can now create [dedicated libraries](../content-authoring-and-management/asset-libraries/asset-libraries-overview.md) to organize and reuse your content. Asset libraries make it easier to reuse resources across different Sites. 
+You can now create [dedicated libraries](../content-authoring-and-management/asset-libraries.md) to organize and reuse your content. Asset libraries make it easier to reuse resources across different Sites. 
 
 Asset Libraries aren't limited to web content: you can share any asset type and connect them to the Sites where they're needed.While creating a page or writing a blog post, content authors can access the connected asset libraries and use images, documents or content stored in them. 
 

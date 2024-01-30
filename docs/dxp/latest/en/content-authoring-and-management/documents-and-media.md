@@ -44,7 +44,7 @@ Files added to Documents and Media can be displayed in applications that support
 If desired, you can [export](../site-building/sites/exporting-importing-site-pages-and-content.md) Documents and Media assets as Liferay Archive (`LAR`) files. These files can be used as backups or to import your assets into another Site or Asset Library.
 
 ```{tip}
-Documents and Media is available in all Sites and can be enabled in [Asset Libraries](./asset-libraries/asset-libraries-overview.md). Files uploaded to a Site are scoped to that Site and cannot be readily accessed by other Sites in your DXP instance. Files uploaded to an Asset Library are available globally and can be linked to multiple Sites for ready access.
+Documents and Media is available in all Sites and can be enabled in [Asset Libraries](./asset-libraries.md). Files uploaded to a Site are scoped to that Site and cannot be readily accessed by other Sites in your DXP instance. Files uploaded to an Asset Library are available globally and can be linked to multiple Sites for ready access.
 ```
 
 ```{raw} html

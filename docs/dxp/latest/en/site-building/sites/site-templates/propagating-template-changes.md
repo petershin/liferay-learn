@@ -19,7 +19,7 @@ By default, propagation is triggered for each connected site individually, when 
 
 Only changes to a template's pages and page elements are propagated to connected sites. This includes newly created pages as well as any changes to fragments and widgets in existing pages. Other application data is only copied at initial site creation; subsequent changes are not automatically propagated.
 
-For this reason, site templates are primarily intended for maintaining pages across multiple sites. If you must create and maintain web content and other assets across sites, use [asset libraries](../../../content-authoring-and-management/asset-libraries/asset-libraries-overview.md).
+For this reason, site templates are primarily intended for maintaining pages across multiple sites. If you must create and maintain web content and other assets across sites, use [asset libraries](../../../content-authoring-and-management/asset-libraries.md).
 
 ## Enabling and Disabling Propagation
 

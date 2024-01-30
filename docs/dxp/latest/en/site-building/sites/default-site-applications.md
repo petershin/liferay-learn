@@ -12,7 +12,7 @@ uuid: 9ea6fa61-0863-4b79-9508-5bf127cdb023
 All sites include the below core applications for building personalized digital experiences. You can access them via the *Product Menu* (![Product Menu](../../images/icon-product-menu.png)). The *Product Menu* can also include custom applications created with objects. See [Creating Objects](../../building-applications/objects/creating-and-managing-objects/creating-objects.md) for more information.
 
 ```{tip}
-When you use an application in a site, the application's data is restricted to the site and cannot be shared with other sites. However, you can use asset libraries to make some asset types available to multiple sites. See [Asset Libraries](../../content-authoring-and-management/asset-libraries/asset-libraries-overview.md) for more information.
+When you use an application in a site, the application's data is restricted to the site and cannot be shared with other sites. However, you can use asset libraries to make some asset types available to multiple sites. See [Asset Libraries](../../content-authoring-and-management/asset-libraries.md) for more information.
 ```
 
 ## Design

@@ -9,7 +9,7 @@ uuid: ef280e48-9b38-4f8d-8c33-e001c671a9c7
 ---
 # Documents and Media UI Reference
 
-The Documents and Media application is used to store, view, and manage files for your Liferay DXP instance. It's available in all sites and can be enabled for [asset libraries](../asset-libraries/asset-libraries-overview.md).
+The Documents and Media application is used to store, view, and manage files for your Liferay DXP instance. It's available in all sites and can be enabled for [asset libraries](../asset-libraries.md).
 
 To access documents and media in a site, open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)) and go to *Content & Data* &rarr; *Documents and Media*.
 

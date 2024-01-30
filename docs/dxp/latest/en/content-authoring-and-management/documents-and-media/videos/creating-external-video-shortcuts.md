@@ -18,7 +18,7 @@ Follow these steps to create an external video shortcut:
 1. Navigate to the Documents and Media application in a Site or Asset Library.
 
    ```{note}
-   Shortcuts created in a Site are scoped to that Site, while shortcuts created in an Asset Library can be shared across multiple Sites. See [Asset Libraries Overview](../../asset-libraries/asset-libraries-overview.md) for more information.
+   Shortcuts created in a Site are scoped to that Site, while shortcuts created in an Asset Library can be shared across multiple Sites. See [Asset Libraries Overview](../../asset-libraries.md) for more information.
    ```
 
 2. Click the *Add* button (![Add Button](../../../images/icon-add.png)), and select *External Video Shortcut*.

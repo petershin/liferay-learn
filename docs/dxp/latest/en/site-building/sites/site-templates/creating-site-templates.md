@@ -12,7 +12,7 @@ uuid: dcb71149-fcc2-4d97-bd48-bedc5599bd7b
 With site templates, you can design and configure templates for creating sites. Each template is built using the same tools as sites.
 
 ```{tip}
-Site templates are primarily intended for maintaining pages across multiple sites. If you must create and maintain web content and other assets across sites, use [asset libraries](../../../content-authoring-and-management/asset-libraries/asset-libraries-overview.md). Also, if automatic propagation is not necessary for your use case, you can [export and import](./exporting-importing-site-templates.md) site data to transfer it between environments.
+Site templates are primarily intended for maintaining pages across multiple sites. If you must create and maintain web content and other assets across sites, use [asset libraries](../../../content-authoring-and-management/asset-libraries.md). Also, if automatic propagation is not necessary for your use case, you can [export and import](./exporting-importing-site-templates.md) site data to transfer it between environments.
 ```
 
 Follow these steps to create a site template:

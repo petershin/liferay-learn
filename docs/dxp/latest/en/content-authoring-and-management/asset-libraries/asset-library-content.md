@@ -89,5 +89,5 @@ See [Recycle Bin Overview](../recycle-bin/recycle-bin-overview.md) for more info
 
 ## Related Topics
 
-* [Asset Libraries Overview](./asset-libraries-overview.md)
+* [Asset Libraries Overview](../asset-libraries.md)
 * [Creating and Managing Asset Libraries](./creating-and-managing-asset-libraries.md)

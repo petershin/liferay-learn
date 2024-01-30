@@ -27,7 +27,7 @@ By default, Liferay requests all [stored fields](https://www.elastic.co/guide/en
 
 Usually, returning all stored fields is innocuous. In rare cases, an overly large response can result in ERROR messages indicating that the returned content is too long for the configured buffer limit.
 
-To reduce the response size of searches and improve performance generally, you can filter the stored fields. For this you must [create a Search Blueprint](./creating-and-managing-search-blueprints.md) with JSON like the following in the [Advanced Configuration](search-blueprints-configuration-reference.md#advanced-configuration) field:
+To reduce the response size of searches and improve performance generally, you can filter the stored fields. For this you must [create a Search Blueprint](./creating-and-managing-search-blueprints.md) in the [Advanced Configuration](search-blueprints-configuration-reference.md#advanced-configuration) field with JSON like this:
 
 ```json
 {
@@ -40,7 +40,7 @@ To reduce the response size of searches and improve performance generally, you c
 This communicates that only the `userId` field should be returned in each document.
 
 !!! note
-   If you inspect the response or use the _View Results in Document Form_ setting in the Search Results widget, you can see that more fields are returned than those declared in `stored_fields`. Liferay's search framework automatically adds certain fields needed for Liferay to function properly, such as `entryClassName`, `entryClassPK`, and `companyId`.
+    If you inspect the response or use the View Results in Document Form setting in the Search Results widget, you can see that more fields are returned than those declared in `stored_fields`. Liferay's search framework automatically adds certain fields needed for Liferay to function properly, such as `entryClassName`, `entryClassPK`, and `companyId`.
 
 ### Returning Fields for Summaries in the Search Results Widget
 
@@ -54,7 +54,7 @@ Fields available for display in the Search Results summaries are defined by the 
 
 ## Excluding the Source Field
 
-The `_source` field contains the original document body that was passed to the index request. This field is not itself indexed, but is stored and returned in the search response for each document. If you are encountering errors from a too large search response, you can exclude the `_source` field.
+The `_source` field contains the original document body that was passed to the index request. This field is not itself indexed, but is stored and returned in the search response for each document. If you encounter errors from a too large search response, you can exclude the `_source` field.
 
 To exclude the source field, you must set `fetchSource` to `false` in the [Advanced Configuration](search-blueprints-configuration-reference.md#advanced-configuration) of a blueprint:
 
@@ -80,20 +80,19 @@ Although uncommon, searching in a system with lots of translated content can pro
    - **Description:** Web Content Article Description
    - **Content:** Web Content Article Content
 
-
 1. Open the Global Menu (![Global Menu](../../../../images/icon-applications-menu.png)) &rarr; Applications &rarr; Blueprints (Search Experiences).
 
-1. Click _Add_ (![Add](../../../../images/icon-add.png)).
+1. Click *Add* (![Add](../../../../images/icon-add.png)).
 
-1. Name the blueprint _Filter Stored Fields_.
+1. Name the blueprint *Filter Stored Fields*.
 
-1. Open the blueprint's [_Preview_](./creating-and-managing-search-blueprints.md#testing-a-blueprint-with-the-preview-sidebar) screen, and search for _web content_.
+1. Open the blueprint's [*Preview*](./creating-and-managing-search-blueprints.md#testing-a-blueprint-with-the-preview-sidebar) screen, and search for *web content*.
 
 1. Expand the document preview for the web content you created and observe that the document contains many fields:
 
    ![This web content article has many fields.](./optimizing-search-response-size/images/02.png)
 
-1. Click _Configuration_.
+1. Click *Configuration*.
 
 1. Replace the contents of the Advanced Configuration field with this:
 
@@ -112,7 +111,7 @@ Although uncommon, searching in a system with lots of translated content can pro
 
    This configuration specifies that only the content, description, and title fields of the current session language should be returned in the response.
 
-1. Open the blueprint's [_Preview_](./creating-and-managing-search-blueprints.md#testing-a-blueprint-with-the-preview-sidebar) screen, and search for _web content_ again.
+1. Open the blueprint's [*Preview*](./creating-and-managing-search-blueprints.md#testing-a-blueprint-with-the-preview-sidebar) screen, and search for *web content* again.
 
 1. Expand the document preview for the Test Test user and observe that the document contains only the fields you specified and a few added by Liferay's search framework:
 

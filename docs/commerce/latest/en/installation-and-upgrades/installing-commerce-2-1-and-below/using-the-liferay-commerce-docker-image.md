@@ -1,5 +1,10 @@
 ---
 uuid: 4a7a87dc-3a2f-400b-86da-01f120be5b60
+taxonomy-category-names:
+- DXP Self-Hosted Installation, Maintenance, and Administration
+- Commerce
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Using the Liferay Commerce Docker Image
 

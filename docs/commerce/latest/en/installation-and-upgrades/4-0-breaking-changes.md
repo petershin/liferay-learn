@@ -1,5 +1,10 @@
 ---
 uuid: 46c7dc12-df1b-47d3-9292-40f292b8f8be
+taxonomy-category-names:
+- DXP Self-Hosted Installation, Maintenance, and Administration
+- Commerce
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # 4.0 Breaking Changes
 

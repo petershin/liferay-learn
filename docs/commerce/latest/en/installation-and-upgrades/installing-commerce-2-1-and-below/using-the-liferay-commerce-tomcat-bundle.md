@@ -1,5 +1,10 @@
 ---
 uuid: 53090036-2e9b-4bae-b15e-81f05d63c611
+taxonomy-category-names:
+- DXP Self-Hosted Installation, Maintenance, and Administration
+- Commerce
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Using the Liferay Commerce Tomcat Bundle
 

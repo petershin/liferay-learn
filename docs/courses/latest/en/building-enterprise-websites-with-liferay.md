@@ -1,17 +1,17 @@
 ---
 toc:
-    - ./building-enterprise-websites/module-1.md
-    - ./building-enterprise-websites/module-2.md
-    - ./building-enterprise-websites/module-3.md
-    - ./building-enterprise-websites/module-4.md
-    - ./building-enterprise-websites/module-5.md
-    - ./building-enterprise-websites/module-6.md
-    - ./building-enterprise-websites/module-7.md
-    - ./building-enterprise-websites/module-8.md
-    - ./building-enterprise-websites/module-9.md
-    - ./building-enterprise-websites/module-10.md
-    - ./building-enterprise-websites/module-11.md
-    - ./building-enterprise-websites/module-12.md
+- ./building-enterprise-websites/module-1.md
+- ./building-enterprise-websites/module-2.md
+- ./building-enterprise-websites/module-3.md
+- ./building-enterprise-websites/module-4.md
+- ./building-enterprise-websites/module-5.md
+- ./building-enterprise-websites/module-6.md
+- ./building-enterprise-websites/module-7.md
+- ./building-enterprise-websites/module-8.md
+- ./building-enterprise-websites/module-9.md
+- ./building-enterprise-websites/module-10.md
+- ./building-enterprise-websites/module-11.md
+- ./building-enterprise-websites/module-12.md
 uuid: 28bfc1dd-8a55-4377-aa3a-e5fdd9da55fb
 ---
 # Building Enterprise Websites with Liferay
@@ -26,72 +26,72 @@ The material in this course prepares you to use Liferay the right way. While the
 :::{grid-item-card}  Module 1: Getting Started
 :link: ./building-enterprise-websites/module-1.md
 
-Coming Soon
+Coming Soon in Q1 2024
 :::
 
 :::{grid-item-card}  Module 2: Developer Setup
 :link: ./building-enterprise-websites/module-2.md
 
-Coming Soon
+Coming Soon in Q1 2024
 :::
 
 :::{grid-item-card}  Module 3: Installation & Upgrades
 :link: ./building-enterprise-websites/module-3.md
 
-Coming Soon
+Coming Soon in Q1 2024
 :::
 
 :::{grid-item-card}  Module 4: Identity Management & SSO
 :link: ./building-enterprise-websites/module-4.md
 
-Coming Soon
+Coming Soon in Q1 2024
 :::
 
 :::{grid-item-card}  Module 5: Users & Permissions
 :link: ./building-enterprise-websites/module-5.md
 
-Coming Soon
+Coming Soon in Q1 2024
 :::
 
 :::{grid-item-card}  Module 6: Site Building
 :link: ./building-enterprise-websites/module-6.md
 
-Coming Soon
+Coming Soon in Q1 2024
 :::
 
 :::{grid-item-card}  Module 7: Content Authoring & Management
 :link: ./building-enterprise-websites/module-7.md
 
-Coming Soon
+Coming Soon in Q1 2024
 :::
 
 :::{grid-item-card}  Module 8: Search
 :link: ./building-enterprise-websites/module-8.md
 
-Coming Soon
+Coming Soon in Q1 2024
 :::
 
 :::{grid-item-card}  Module 9: Building Applications
 :link: ./building-enterprise-websites/module-9.md
 
-Coming Soon
+Coming Soon in Q1 2024
 :::
 
 :::{grid-item-card}  Module 10: Headless Delivery
 :link: ./building-enterprise-websites/module-10.md
 
-Coming Soon
+Coming Soon in Q1 2024
 :::
 
 :::{grid-item-card}  Module 11: Performance Tuning
 :link: ./building-enterprise-websites/module-11.md
 
-Coming Soon
+Coming Soon in Q1 2024
 :::
 
 :::{grid-item-card}  Module 12: Troubleshooting
 :link: ./building-enterprise-websites/module-12.md
 
-Coming Soon
+Coming Soon in Q1 2024
 :::
 ::::

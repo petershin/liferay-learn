@@ -12,9 +12,6 @@ taxonomy-category-names:
 - Liferay Self-Hosted
 - Liferay PaaS
 - Liferay SaaS
-myst:
-  html_meta:
-    documentation-type: user-guide
 uuid: c96cc8c7-5d35-4e57-8f90-38c90df80816
 ---
 

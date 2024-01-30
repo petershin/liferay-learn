@@ -1,5 +1,10 @@
 ---
 uuid: 99380259-0083-47d6-87f1-3eebd553a6e3
+taxonomy-category-names:
+- Content Management System
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Collaboration and Social Overview
 

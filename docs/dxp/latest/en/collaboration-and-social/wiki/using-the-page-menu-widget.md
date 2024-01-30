@@ -1,5 +1,11 @@
 ---
 uuid: 3ab1a297-4c3c-44c1-a643-8902a0957257
+taxonomy-category-names:
+- Content Management System
+- Wiki
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Using the Page Menu Widget
 

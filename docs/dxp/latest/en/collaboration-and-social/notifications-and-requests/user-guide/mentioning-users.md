@@ -1,5 +1,11 @@
 ---
 uuid: 0532c178-21cd-48b9-8b50-6e16cca8ea39
+taxonomy-category-names:
+- Platform
+- Notifications and Notification Templates
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Mentioning Users
 

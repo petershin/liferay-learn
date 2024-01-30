@@ -10,6 +10,12 @@ toc:
   - ./knowledge-base/knowledge-base-system-settings.md
   - ./knowledge-base/developer-guide.md
 uuid: b10af048-9cf9-4b44-8858-2121bfad20ca
+taxonomy-category-names:
+- Content Management System
+- Knowledge Base
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Knowledge Base
 

@@ -1,5 +1,11 @@
 ---
 uuid: 8178cf07-89c7-4402-9749-26662c566c46
+taxonomy-category-names:
+- Content Management System
+- Wiki
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Creating a Node
 

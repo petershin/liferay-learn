@@ -11,6 +11,12 @@ toc:
   - ./wiki/wiki-widget-ui-reference.md
   - ./wiki/developer-guide.md
 uuid: 26f2006e-611d-476d-8df9-1f2b87625cb7
+taxonomy-category-names:
+- Content Management System
+- Wiki
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 
 # Wiki

@@ -1,5 +1,11 @@
 ---
 uuid: 827a4b70-33a5-46df-96d9-b9a56ba41bdd
+taxonomy-category-names:
+- Sites
+- Social Tools and User Engagement
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Using the Ratings System
 

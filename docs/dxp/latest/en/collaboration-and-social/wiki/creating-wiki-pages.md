@@ -1,5 +1,11 @@
 ---
 uuid: 5257b2ec-69e8-4192-89a7-6143a5a25922
+taxonomy-category-names:
+- Content Management System
+- Wiki
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Creating Wiki Pages
 

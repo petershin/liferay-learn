@@ -1,5 +1,11 @@
 ---
 uuid: 65704381-034b-4b0a-820b-27f8e2a0d321
+taxonomy-category-names:
+- Content Management System
+- Forums and Message Boards
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Subscribing to a Message Board
 

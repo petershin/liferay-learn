@@ -1,5 +1,11 @@
 ---
 uuid: 3b4fac54-c4f1-4bc3-9a8e-af19101daf0e
+taxonomy-category-names:
+- Content Management System
+- Knowledge Base
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Creating Knowledge Base Articles
 

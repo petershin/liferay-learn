@@ -9,6 +9,11 @@ toc:
   - ./collaboration-and-social/alerts-and-announcements.md
   - ./collaboration-and-social/knowledge-base.md
 uuid: 151b8654-fef8-4a23-9ce8-0348c5cd7c99
+taxonomy-category-names:
+- Content Management System
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Collaboration and Social
 

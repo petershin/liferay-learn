@@ -11,6 +11,12 @@ toc:
   - ./user-guide/message-boards-configuration-reference.md
   - ./user-guide/message-boards-permissions-reference.md
 uuid: e66fae70-ce6a-4170-990f-b6e87abfbe1f
+taxonomy-category-names:
+- Content Management System
+- Forums and Message Boards
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # User Guide
 

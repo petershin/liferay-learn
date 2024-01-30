@@ -1,5 +1,11 @@
 ---
 uuid: 24c2f691-1998-4f23-acc3-99ae1c1959c2
+taxonomy-category-names:
+- Content Management System
+- Knowledge Base
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Responding to Knowledge Base Feedback
 

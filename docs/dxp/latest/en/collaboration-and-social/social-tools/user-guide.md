@@ -4,6 +4,12 @@ toc:
   - ./user-guide/using-the-contacts-center-widget.md
   - ./user-guide/using-the-ratings-system.md
 uuid: a92818d1-e3b0-45d6-b05c-ce5193f07446
+taxonomy-category-names:
+- Sites
+- Social Tools and User Engagement
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # User Guide
 

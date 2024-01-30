@@ -1,5 +1,11 @@
 ---
 uuid: d33da32d-a914-438b-b5f9-55a1e28dbbb2
+taxonomy-category-names:
+- Sites
+- Social Tools and User Engagement
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Using the Activities Widget
 
@@ -7,7 +13,7 @@ The _Activities_ widget is used to track user activities on a site.
 
 ![Community Site Activities](./using-the-activities-widget/images/03.png)
 
-To begin using the _Activities widget:
+To begin using the _Activities_ widget:
 
 1. Navigate to the site page where it is to be deployed (for example, the _Community Site_'s _Social_ page).
 1. Click the _Add_ button.

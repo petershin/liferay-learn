@@ -1,5 +1,11 @@
 ---
 uuid: 5aad8656-6334-4204-84fb-9b86f995ea61
+taxonomy-category-names:
+- Content Management System
+- Knowledge Base
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Knowledge Base Display Widget
 

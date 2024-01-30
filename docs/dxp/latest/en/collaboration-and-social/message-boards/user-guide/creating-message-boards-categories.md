@@ -1,5 +1,11 @@
 ---
 uuid: d0473bf2-fcb4-49b0-a5f9-61dbe5108a82
+taxonomy-category-names:
+- Content Management System
+- Forums and Message Boards
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Creating Message Boards Categories
 

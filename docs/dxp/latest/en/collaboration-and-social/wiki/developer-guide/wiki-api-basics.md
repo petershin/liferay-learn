@@ -1,5 +1,11 @@
 ---
 uuid: 438fdca1-dbbf-46d4-8973-4edb3ac6ec6a
+taxonomy-category-names:
+- Content Management System
+- Wiki
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Wiki API Basics
 

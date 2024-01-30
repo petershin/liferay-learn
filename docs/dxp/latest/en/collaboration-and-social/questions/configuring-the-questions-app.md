@@ -1,5 +1,11 @@
 ---
 uuid: 42732290-c0a8-4101-b7a2-b39b69b5a661
+taxonomy-category-names:
+- Content Management System
+- Forums and Message Boards
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Configuring the Questions App
 

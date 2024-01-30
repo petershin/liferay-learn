@@ -1,5 +1,11 @@
 ---
 uuid: 0f0c5e1b-c558-4a96-ad52-a8cd437e4fdc
+taxonomy-category-names:
+- Sites
+- Alerts and Announcements
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Sending Alerts and Announcements
 
@@ -9,7 +15,7 @@ The Alerts widget is designed for displaying high-priority information (e.g. pla
 
 ![Example of an alert with the red important tag.](./sending-alerts-and-announcements/images/01.png)
 
-The Announcements widget can display all other information you might want to broadcast. Each announcement lacks the red tag. To separate important alerts from more mundane announcements, you can place the Alerts widget and Announcements widget on different pages. You can use either widget, however, to display any information you wish. 
+The Announcements widget can display all other information you might want to broadcast. Each announcement lacks the red tag. To separate important alerts from more mundane announcements, you can place the Alerts widget and Announcements widget on different pages. You can use either widget, however, to display any information you wish.
 
 Besides the red *Important* tag, they function the same. You can also scope your alerts and announcements to specific groups of Users.
 
@@ -31,11 +37,11 @@ These widgets have two tabs:
 
 1. Use the Title field to give the alert or announcement a title. Add additional text in the Content field.
 
-1. Set additional settings under the *Configuration* section below. 
+1. Set additional settings under the *Configuration* section below.
 
 1. Click *Save* when you’re done. Your alert/announcement now appears in the widget.
 
-**Distribution Scope:** The scope where the alert/announcement should appear. The default General scope sends the alert/announcements to everyone. Alternatively, you can select your Site or specific Roles. 
+**Distribution Scope:** The scope where the alert/announcement should appear. The default General scope sends the alert/announcements to everyone. Alternatively, you can select your Site or specific Roles.
 
 **URL:** A URL (optional) to include with the alert/announcement. For example, an announcement about a news story could include a link to the news article. The URL must be valid and begin with `http://` or `https://`.
 
@@ -74,7 +80,7 @@ You can also create Roles for Users to be able manage alerts and announcements:
 
 1. Click on the _Options_ icon (![Options icon](../../images/icon-options.png)) of the Role and click *Edit*.
 
-1. Click on the *Define Permissions* tab. 
+1. Click on the *Define Permissions* tab.
 
     Under Control Panel, click on *General Permissions*, select *Add General Announcements*. Click *Save*.
 

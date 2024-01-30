@@ -1,5 +1,11 @@
 ---
 uuid: fc02ffe8-2f66-4f62-a073-f22eccddb11e
+taxonomy-category-names:
+- Sites
+- Social Tools and User Engagement
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Using the Contacts Center Widget
 

@@ -2,6 +2,12 @@
 toc:
   - ./social-tools/user-guide.md
 uuid: 2bf5cd10-f1a1-41fc-bbab-8a80b653e8ac
+taxonomy-category-names:
+- Sites
+- Social Tools and User Engagement
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Social Tools
 

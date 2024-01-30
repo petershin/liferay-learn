@@ -1,15 +1,15 @@
 ---
 toc:
-- ./cloud-administrator.md
-- ./liferay-administrator.md
-- ./application-development.md
-- ./commerce-architect.md
+- ./building-enterprise-websites-with-liferay.md
 - ./selling-liferay.md
 uuid: 79dff06d-5aef-4fba-bf17-edbb16e2ed5a
 ---
 # Courses
 
-Welcome to Liferay Courses! These are practical guides that teach you how to build fantastic solutions with Liferay. Through hands-on practical examples, explanations, and references to our Official Documentation, learners are prepared to build their own solutions and to become a _Certified Liferay Expert_!
+Welcome to Liferay Courses! This set of practical guides will teach you how to build fantastic solutions with Liferay using hands-on examples, practical explanations, and references to our official documentation. Start your journey to become a _Certified Liferay Practitioner_!
+
+!!! important ""
+    We are bringing a new design and method to Liferay Courses in Q1 of 2024. Keep an eye on this page as we continue to evolve and develop course content to help you use Liferay to its full potential!
 
 ```{raw} html
 :file: landingpage_template.html

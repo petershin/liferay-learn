@@ -60,7 +60,7 @@ Up Next: [Getting Started with Clarity](./building-enterprise-websites-with-life
 :::{grid-item-card}  Module 1: Getting Started with Clarity
 :link: ./building-enterprise-websites-with-liferay/module-1-getting-started-with-clarity.md
 
-Coming Soon in Q1 2024
+Learn the story of Clarity Vision Solutions and how Liferay can help them overcome their obstacles and deliver the solutions they need. This module also details the website you'll be building for Clarity throughout the course.
 :::
 
 :::{grid-item-card}  Module 2: Developer Setup

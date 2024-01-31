@@ -70,7 +70,7 @@ Learn about Liferay Workspace and Client Extensions, two key features for buildi
 :::
 
 :::{grid-item-card}  Module 3: Installation & Upgrades
-:link: ./building-enterprise-websites-with-liferay/module-3-installation-and-upgrades.md
+:link: ./building-enterprise-websites-with-liferay/module-3-deploying-liferay.md
 
 Get up-and-running with Liferay and start building your business solutions.
 :::

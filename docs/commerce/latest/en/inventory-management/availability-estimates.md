@@ -1,5 +1,11 @@
 ---
 uuid: 2a2d3e75-7ee7-4d83-ab03-6af9ab18227b
+taxonomy-category-names:
+- Commerce
+- Inventory
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Availability Estimates
 

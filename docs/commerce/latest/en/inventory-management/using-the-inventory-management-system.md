@@ -1,5 +1,11 @@
 ---
 uuid: df1d2c24-ffa5-4676-9cec-d8a77d8ba3ea
+taxonomy-category-names:
+- Commerce
+- Inventory
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Using the Inventory Management System
 

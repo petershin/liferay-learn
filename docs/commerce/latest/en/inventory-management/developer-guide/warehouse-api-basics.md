@@ -1,5 +1,12 @@
 ---
 uuid: 021147ab-4848-499b-9ce7-d9930846c1c8
+taxonomy-category-names:
+- Commerce
+- Inventory
+- API Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Warehouse API Basics
 

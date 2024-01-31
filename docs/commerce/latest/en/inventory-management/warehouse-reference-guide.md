@@ -1,5 +1,11 @@
 ---
 uuid: a3fa7293-cbde-44fb-8a6f-aaa94b054309
+taxonomy-category-names:
+- Commerce
+- Inventory
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Warehouse Reference Guide
 

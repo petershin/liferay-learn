@@ -1,5 +1,12 @@
 ---
 uuid: 8261e382-868c-427a-9795-5b1e9028a46a
+taxonomy-category-names:
+- Commerce
+- Inventory
+- Products
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Product Inventory Configuration Reference Guide
 

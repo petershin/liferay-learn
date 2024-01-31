@@ -11,6 +11,12 @@ toc:
   - ./inventory-management/product-inventory-configuration-reference-guide.md
   - ./inventory-management/developer-guide.md
 uuid: 0af96bfe-53b9-4ae1-bd1f-a372afb783a2
+taxonomy-category-names:
+- Commerce
+- Inventory
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Inventory Management
 

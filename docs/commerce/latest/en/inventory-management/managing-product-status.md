@@ -1,5 +1,12 @@
 ---
 uuid: fcf788cc-51f4-4378-bdbc-dd49b749411c
+taxonomy-category-names:
+- Commerce
+- Inventory
+- Products
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Managing Product Status
 

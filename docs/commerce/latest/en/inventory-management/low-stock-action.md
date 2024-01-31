@@ -1,5 +1,11 @@
 ---
 uuid: ed5aa0f9-5de5-46a4-90ea-b66937d43880
+taxonomy-category-names:
+- Commerce
+- Inventory
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Low Stock Action
 

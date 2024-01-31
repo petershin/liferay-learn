@@ -9,7 +9,12 @@
 	},
 	{
 		"actionIds": [
-			"ADD_ARTICLE", "ADD_FOLDER", "ADD_TEMPLATE", "ADD_STRUCTURE", "UPDATE", "VIEW"
+			"ADD_ARTICLE",
+			"ADD_FOLDER",
+			"ADD_TEMPLATE",
+			"ADD_STRUCTURE",
+			"UPDATE",
+			"VIEW"
 		],
 		"resourceName": "com.liferay.journal",
 		"roleName": "Portal Content Manager",
@@ -17,7 +22,10 @@
 	},
 	{
 		"actionIds": [
-			"ADD_ARTICLE", "ADD_SUBFOLDER", "UPDATE", "VIEW"
+			"ADD_ARTICLE",
+			"ADD_SUBFOLDER",
+			"UPDATE",
+			"VIEW"
 		],
 		"resourceName": "com.liferay.journal.model.JournalFolder",
 		"roleName": "Portal Content Manager",
@@ -25,7 +33,8 @@
 	},
 	{
 		"actionIds": [
-			"UPDATE", "VIEW"
+			"UPDATE",
+			"VIEW"
 		],
 		"resourceName": "com.liferay.journal.model.JournalArticle",
 		"roleName": "Portal Content Manager",

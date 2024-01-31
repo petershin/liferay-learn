@@ -4,7 +4,9 @@ uuid: 5d382dfe-d85b-409d-a0b7-0ea2bfaad155
 
 # Installation & Upgrades
 
-Liferay allows you to build, host, and manage your platform in an environment that best suits your business needs. It enables a variety of different deployment options and installation approaches based on the offering purchased. Choose your offering to continue.
+Begin building solutions immediately with Liferay SaaS. The platform and infrastucture is managed for you so you can focus on your business needs. 
+
+Liferay PaaS and Liferay Self-Hosted are also available as alternative deployment options.
 
 ::::{grid} 2
 :gutter: 3 3 3 3
@@ -12,17 +14,17 @@ Liferay allows you to build, host, and manage your platform in an environment th
 :::{grid-item-card}  Liferay SaaS
 :link: ./module-3/liferay-saas.md
 
-Let Liferay handle your infrastructure and Liferay DXP application.
+All installation, maintenance, upgrades, etc. are handled by Liferay.
 :::
 
 :::{grid-item-card}  Liferay PaaS
 :link: ./module-3/liferay-paas.md
 
-Offload infrastructure management to focus on your application.
+Have Liferay manage your cloud infrastructure while you still having fine-tuned control over your database, file storage, backups, etc.
 :::
 
 :::{grid-item-card}  Liferay Self-Hosted
 :link: ./module-3/liferay-self-hosted.md
 
-Launch your solution in your own server or cloud.
+Have full control and ownership of all aspects of deployment and maintenance of Liferay.
 :::

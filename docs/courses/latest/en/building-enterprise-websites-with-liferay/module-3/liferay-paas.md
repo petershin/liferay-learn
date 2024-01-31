@@ -1,21 +1,20 @@
 ---
 uuid: d493be3e-7c8e-4d8f-9981-32f15d92be7b
 ---
-
 # Liferay PaaS
 
 At a high level:
 
-* Manage your Liferay instance, database, and other services from the Liferay cloud console.
-* Do upgrades on your database and file storage locally and upload them in the cloud console to upgrade versions.
+* Log in to the Liferay cloud console to manage your Liferay instance, database, and other services.
+* Do upgrades on your database and file storage locally and upload them in the cloud console to upgrade Liferay versions.
 
-Liferay provides you an environment, and your first task is to access the cloud console, which is a user interface where you interact with Liferay Cloud. You use the cloud console to manage each of your environment's services, including the [web server](https://learn.liferay.com/w/liferay-cloud/platform-services/web-server-service) and [database](https://learn.liferay.com/w/liferay-cloud/platform-services/database-service/database-service).
+The Liferay cloud console is the user interface to set up and configure your different services with the cloud infrastructure. Use the console to manage each of your environment's services, including the [web server](https://learn.liferay.com/w/liferay-cloud/platform-services/web-server-service) and [database](https://learn.liferay.com/w/liferay-cloud/platform-services/database-service/database-service).
 
 ## Initial Setup
 
-Once your project is provisioned, you should receive a Liferay Cloud onboarding email along with email invitations for each purchased Liferay Cloud environment. The link takes you to the [Liferay Cloud console](https://console.liferay.cloud/), and you must log in to accept the invitation. click *Sign up* and fill out the form to create an account.
+Once your account is provisioned, you should receive a Liferay Cloud onboarding email along with email invitations for each purchased Liferay Cloud environment. The link takes you to the [Liferay Cloud console](https://console.liferay.cloud/) for login.
 
-![Click the Accept Invite link in the invitation to gain access to the Liferay Cloud console](./liferay-paas/images/01.png)
+![Click the accept invite link in the invitation to gain access to the Liferay Cloud console](./liferay-paas/images/01.png)
 
 ```{note}
 If your invitation was for a single environment (such as `dev` or `uat`) instead of the whole project, only that environment appears in the list. Accept the invitation for all environments to make sure you have access to all of them.
@@ -23,7 +22,7 @@ If your invitation was for a single environment (such as `dev` or `uat`) instead
 
 ### Accessing Your Liferay Cloud Console
 
-Once you have signed in, the invitation is accepted and you have full access to the project. Logging into the console at any time (or going to [https://console.liferay.cloud/projects](https://console.liferay.cloud/projects)) shows a list of all the environments you can access.
+Upon sign in, the console [https://console.liferay.cloud/projects](https://console.liferay.cloud/projects) shows a list of all the environments you can access.
 
 ![Logging into the console shows you a list of all environments you can access.](./liferay-paas/images/02.png)
 

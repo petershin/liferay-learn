@@ -1,5 +1,13 @@
 ---
 uuid: c9dd54f1-6336-4066-be70-8054eeb54b32
+taxonomy-category-names:
+- Commerce
+- Add-ons and Connectors
+- Integration
+- Data Integration
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Designing Mule Flows
 

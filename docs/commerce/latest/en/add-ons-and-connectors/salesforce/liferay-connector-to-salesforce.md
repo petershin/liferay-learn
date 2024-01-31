@@ -1,5 +1,13 @@
 ---
 uuid: 2ea1982c-6ad1-4c7e-b3fa-5d35df475d84
+taxonomy-category-names:
+- Commerce
+- Add-ons and Connectors
+- Integration
+- Data Integration
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Liferay Connector to Salesforce
 

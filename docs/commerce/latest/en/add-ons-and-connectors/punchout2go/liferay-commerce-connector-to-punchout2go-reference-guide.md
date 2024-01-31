@@ -1,5 +1,13 @@
 ---
 uuid: 2bd5a44d-96d2-4b55-907f-6df7caff0c11
+taxonomy-category-names:
+- Commerce
+- Add-ons and Connectors
+- Integration
+- Data Integration
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Liferay Commerce Connector to PunchOut2Go Reference Guide
 

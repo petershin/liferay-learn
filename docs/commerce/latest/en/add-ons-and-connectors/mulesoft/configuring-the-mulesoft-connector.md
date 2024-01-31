@@ -1,5 +1,13 @@
 ---
 uuid: f509b90c-62b3-47a5-80f1-b938f281693c
+taxonomy-category-names:
+- Commerce
+- Add-ons and Connectors
+- Integration
+- Data Integration
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Configuring the MuleSoft Connector
 

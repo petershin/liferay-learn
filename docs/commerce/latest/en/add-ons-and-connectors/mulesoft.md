@@ -3,6 +3,14 @@ toc:
   - ./mulesoft/configuring-the-mulesoft-connector.md
   - ./mulesoft/designing-mule-flows.md
 uuid: 95cd6d1b-29ed-46f0-b93f-44690499b22e
+taxonomy-category-names:
+- Commerce
+- Add-ons and Connectors
+- Integration
+- Data Integration
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Mulesoft
 

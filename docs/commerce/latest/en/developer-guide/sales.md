@@ -6,6 +6,12 @@ toc:
   - ./sales/implementing-a-new-tax-engine.md
   - ./sales/implementing-an-exchange-rate-provider.md
 uuid: 9c529b30-39df-47b2-8219-cd624894cc3c
+taxonomy-category-names:
+- Commerce
+- Java Development
+- Payment
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Sales
 

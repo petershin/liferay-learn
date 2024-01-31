@@ -1,5 +1,11 @@
 ---
 uuid: 389a9113-3e8c-48a5-8f8a-892f83858f3a
+taxonomy-category-names:
+- Commerce
+- Java Development
+- Taxes
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Implementing a New Tax Engine
 

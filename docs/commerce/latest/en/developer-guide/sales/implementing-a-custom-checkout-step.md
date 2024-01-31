@@ -1,5 +1,12 @@
 ---
 uuid: dfc5950d-dd88-430a-9c9b-2c322e1953da
+taxonomy-category-names:
+- Commerce
+- Java Development
+- Payment
+- Order Processing
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Implementing a Custom Checkout Step
 

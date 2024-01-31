@@ -1,5 +1,11 @@
 ---
 uuid: 8b949a1f-5f7c-40f7-a041-a06c6a799055
+taxonomy-category-names:
+- Commerce
+- Java Development
+- Promotions and Discounts
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Adding a New Discount Rule Type
 

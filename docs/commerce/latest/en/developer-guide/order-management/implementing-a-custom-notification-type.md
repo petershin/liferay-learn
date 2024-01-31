@@ -1,5 +1,12 @@
 ---
 uuid: 147dfb06-9bea-43fd-a872-10039ca73c04
+taxonomy-category-names:
+- Commerce
+- Java Development
+- Orders and Fulfillment
+- Notifications and Notification Templates
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Implementing a Custom Notification Type
 

@@ -1,5 +1,11 @@
 ---
 uuid: 8dc5fcc1-b974-448d-ab57-1d232556b27a
+taxonomy-category-names:
+- Commerce
+- Java Development
+- Currencies
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Implementing a Custom Exchange Rate Provider
 

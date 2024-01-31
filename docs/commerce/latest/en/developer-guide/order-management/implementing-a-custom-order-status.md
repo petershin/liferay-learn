@@ -1,5 +1,11 @@
 ---
 uuid: f5f0bf88-833e-41e7-aca2-f53633deff36
+taxonomy-category-names:
+- Commerce
+- Java Development
+- Orders and Fulfillment
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Implementing a Custom Order Status
 

@@ -1,5 +1,11 @@
 ---
 uuid: 6bf6c000-6c5c-4832-a3df-8ed3e3de85d8
+taxonomy-category-names:
+- Commerce
+- Java Development
+- Payment
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Implementing a New Payment Method
 

@@ -1,5 +1,10 @@
 ---
 uuid: 3dcb176e-6a50-4150-97ad-e40f83663c8b
+taxonomy-category-names:
+- Commerce
+- Java Development
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Developer Guide
 

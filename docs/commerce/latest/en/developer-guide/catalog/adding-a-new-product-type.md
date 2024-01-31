@@ -1,5 +1,12 @@
 ---
 uuid: 4aec2cae-e708-4c1f-801a-40b5921548c9
+taxonomy-category-names:
+- Commerce
+- Java Development
+- Catalogs
+- Products
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Adding a New Product Type
 

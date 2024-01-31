@@ -1,5 +1,10 @@
 ---
 uuid: 53a0a394-0d8e-4fb4-873d-5525eca75a75
+taxonomy-category-names:
+- Commerce
+- Java Development
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Adding a New Product Data Source for the Product Publisher Widget
 

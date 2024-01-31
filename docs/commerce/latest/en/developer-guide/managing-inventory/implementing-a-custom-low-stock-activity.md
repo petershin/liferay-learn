@@ -1,5 +1,11 @@
 ---
 uuid: e5148e0b-fc9a-4587-b71c-9bfe09c383cf
+taxonomy-category-names:
+- Commerce
+- Java Development
+- Inventory
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Implementing a Custom Low Stock Activity
 

@@ -1,5 +1,10 @@
 ---
 uuid: c90cd50c-a74f-43f5-bd7e-b8eb7e296dba
+taxonomy-category-names:
+- Commerce
+- Java Development
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Implementing a Custom Product Content Renderer
 

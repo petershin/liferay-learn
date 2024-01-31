@@ -1,5 +1,12 @@
 ---
 uuid: df90bbcd-2089-484a-8118-ce44f5bb7910
+taxonomy-category-names:
+- Commerce
+- Java Development
+- Payment
+- Order Processing
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Implementing a Custom Order Validator
 

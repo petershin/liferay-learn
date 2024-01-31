@@ -1,5 +1,11 @@
 ---
 uuid: 802fd9ad-1042-4876-9987-0cf5ac1b30db
+taxonomy-category-names:
+- Commerce
+- Java Development
+- Orders and Fulfillment
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # Implementing a Custom Order Rule
 

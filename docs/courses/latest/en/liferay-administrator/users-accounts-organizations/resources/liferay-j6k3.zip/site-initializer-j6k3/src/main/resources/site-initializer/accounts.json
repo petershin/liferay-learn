@@ -1,16 +1,11 @@
 [
 	{
 		"externalReferenceCode": "CACCOUNT-001",
-		"name": "Delectable Bonsai User 001",
-		"type": "person"
+		"name": "Clarity Employees",
+		"type": "business"
 	},
 	{
 		"externalReferenceCode": "CACCOUNT-002",
-		"name": "Delectable Bonsai User 002",
-		"type": "person"
-	},
-	{
-		"externalReferenceCode": "CACCOUNT-003",
 		"name": "Marvelous Markets NYC",
 		"type": "business"
 	}

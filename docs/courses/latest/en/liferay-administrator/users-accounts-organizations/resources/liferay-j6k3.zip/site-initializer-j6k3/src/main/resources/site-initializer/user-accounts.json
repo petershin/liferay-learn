@@ -21,7 +21,7 @@
 	{
 		"accountBriefs": [
 			{
-				"externalReferenceCode": "CACCOUNT-002"
+				"externalReferenceCode": "CACCOUNT-001"
 			}
 		],
 		"alternateName": "Marcus",
@@ -39,7 +39,7 @@
 	{
 		"accountBriefs": [
 			{
-				"externalReferenceCode": "CACCOUNT-003"
+				"externalReferenceCode": "CACCOUNT-002"
 			}
 		],
 		"alternateName": "Lily",
@@ -60,7 +60,7 @@
 	{
 		"accountBriefs": [
 			{
-				"externalReferenceCode": "CACCOUNT-003",
+				"externalReferenceCode": "CACCOUNT-002",
 				"roleBriefs": [
 					"Order Manager"
 				]
@@ -81,7 +81,7 @@
 	{
 		"accountBriefs": [
 			{
-				"externalReferenceCode": "CACCOUNT-003"
+				"externalReferenceCode": "CACCOUNT-001"
 			}
 		],
 		"alternateName": "Preston",
@@ -99,7 +99,7 @@
 	{
 		"accountBriefs": [
 			{
-				"externalReferenceCode": "CACCOUNT-003"
+				"externalReferenceCode": "CACCOUNT-001"
 			}
 		],
 		"alternateName": "Rex",
@@ -117,7 +117,7 @@
 	{
 		"accountBriefs": [
 			{
-				"externalReferenceCode": "CACCOUNT-003"
+				"externalReferenceCode": "CACCOUNT-001"
 			}
 		],
 		"alternateName": "Olivia",

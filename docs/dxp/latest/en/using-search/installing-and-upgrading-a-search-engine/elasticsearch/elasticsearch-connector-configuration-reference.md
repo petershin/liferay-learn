@@ -1,4 +1,9 @@
 ---
+taxonomy-category-names:
+- Search
+- Search Engine Installation and Maintenance
+- Reference
+- Liferay Self-Hosted
 uuid: f2ee978a-5ef7-473c-b968-e16decbb98f2
 ---
 # Elasticsearch Connector Configuration Reference

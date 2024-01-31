@@ -1,4 +1,8 @@
 ---
+taxonomy-category-names:
+- Search
+- Liferay Enterprise Search
+- Liferay Self-Hosted
 uuid: 71a9d126-9f67-4785-837d-501f40c7295e
 ---
 # Learning to Rank

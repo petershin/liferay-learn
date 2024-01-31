@@ -1,4 +1,8 @@
 ---
+taxonomy-category-names:
+- Search
+- Search Engine Installation and Maintenance
+- Liferay Self-Hosted
 uuid: cfc79d71-ec49-4872-85ba-571fe881ed6e
 ---
 # Upgrading to Elasticsearch 8

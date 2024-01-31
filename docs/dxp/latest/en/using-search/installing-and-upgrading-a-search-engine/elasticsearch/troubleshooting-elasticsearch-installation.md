@@ -4,6 +4,10 @@ toc:
     ./troubleshooting-elasticsearch-installation/troubleshooting-the-elasticsearch-connection.md
   - >-
     ./troubleshooting-elasticsearch-installation/troubleshooting-elasticsearch-common-issues.md
+taxonomy-category-names:
+- Search
+- Search Engine Installation and Maintenance
+- Liferay Self-Hosted
 uuid: 91d8afef-b78a-4561-8080-213d8e1cf91a
 ---
 

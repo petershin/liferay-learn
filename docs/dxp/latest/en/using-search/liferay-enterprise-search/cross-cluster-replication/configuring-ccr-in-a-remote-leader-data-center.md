@@ -1,4 +1,8 @@
 ---
+taxonomy-category-names:
+- Search
+- Liferay Enterprise Search
+- Liferay Self-Hosted
 uuid: 22049b42-b6bb-44d8-bb85-c73b339aa9ed
 ---
 # Configuring CCR In a Remote Leader Data Center

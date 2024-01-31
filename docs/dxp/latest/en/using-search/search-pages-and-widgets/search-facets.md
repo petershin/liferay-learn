@@ -8,6 +8,12 @@ toc:
   - ./search-facets/user-facet.md
   - ./search-facets/modified-facet.md
   - ./search-facets/custom-facet.md
+taxonomy-category-names:
+- Search
+- Search Pages and Widgets
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 90708a47-17a2-49dd-8397-5a7cad01fe35
 ---
 # Search Facets

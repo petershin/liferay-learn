@@ -10,6 +10,13 @@ toc:
   - ./search-blueprints/search-blueprints-elements-reference.md
   - ./search-blueprints/creating-and-managing-elements.md
   - ./search-blueprints/optimizing-search-response-size.md
+taxonomy-category-names:
+- Search
+- Liferay Enterprise Search
+- Search Experiences and Blueprints
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 216dc540-09fa-468d-8b4f-a6bbdb866fc2
 ---
 # Search Blueprints

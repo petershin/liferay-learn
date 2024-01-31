@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Search
+- Search Administration and Tuning
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: bc048a82-8d6c-4a0a-9ad4-30cf9d74c0d0
 ---
 # Result Rankings

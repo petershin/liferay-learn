@@ -1,4 +1,11 @@
 ---
+taxonomy-category-names:
+- Search
+- Liferay Enterprise Search
+- Search Experiences and Blueprints
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: fedf1e88-d26f-4015-b97e-3dd10e9da657
 ---
 # Personalizing the Search Experience

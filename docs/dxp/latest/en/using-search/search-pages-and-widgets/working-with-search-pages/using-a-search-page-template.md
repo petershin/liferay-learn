@@ -1,4 +1,11 @@
 ---
+taxonomy-category-names:
+- Search
+- Search Pages and Widgets
+- Page Templates
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 83e9c65c-7747-47a5-90e7-551f0837906a
 ---
 # Using a Search Page Template

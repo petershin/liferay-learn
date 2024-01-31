@@ -1,4 +1,12 @@
 ---
+taxonomy-category-names:
+- Search
+- Liferay Enterprise Search
+- Search Experiences and Blueprints
+- Reference
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 0c38a48d-209a-428e-9d6c-72b0d8a52646
 ---
 # Search Blueprints Elements Reference

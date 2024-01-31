@@ -1,4 +1,9 @@
 ---
+taxonomy-category-names:
+- Search
+- Liferay Enterprise Search
+- Liferay Self-Hosted
+- Liferay PaaS
 uuid: 2689f0d8-3b60-4a4f-8263-f78337458711
 ---
 # Troubleshooting Cross-Cluster Replication

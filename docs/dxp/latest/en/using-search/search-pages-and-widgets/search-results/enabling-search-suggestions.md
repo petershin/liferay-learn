@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Search
+- Search Pages and Widgets
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 801605ca-3141-4ae8-a3e7-685dc76003dc
 ---
 # Enabling Search Suggestions

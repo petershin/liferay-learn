@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Search
+- Search Pages and Widgets
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: bfc953a5-54eb-4324-bce7-30c888cdf1e9
 ---
 # Custom Facet

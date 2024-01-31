@@ -1,4 +1,8 @@
 ---
+taxonomy-category-names:
+- Search
+- Search Engine Installation and Maintenance
+- Liferay Self-Hosted
 uuid: 35f429b3-aadb-4c7f-844f-e389410ea935
 ---
 # Backing Up Elasticsearch

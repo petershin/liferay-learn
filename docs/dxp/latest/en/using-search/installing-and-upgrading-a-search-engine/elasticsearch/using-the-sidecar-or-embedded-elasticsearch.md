@@ -1,4 +1,8 @@
 ---
+taxonomy-category-names:
+- Search
+- Search Engine Installation and Maintenance
+- Liferay Self-Hosted
 uuid: fd689e2a-cd82-4749-ac09-9df12cee519a
 ---
 # Using the Sidecar or Embedded Elasticsearch

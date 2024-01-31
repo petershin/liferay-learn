@@ -5,6 +5,12 @@ toc:
   - ./liferay-enterprise-search/learning-to-rank.md
   - ./liferay-enterprise-search/monitoring-elasticsearch.md
   - ./liferay-enterprise-search/search-experiences.md
+taxonomy-category-names:
+- Search
+- Liferay Enterprise Search
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 23aa16e5-08ba-4fb6-bd49-a9370017ba3c
 ---
 # Liferay Enterprise Search

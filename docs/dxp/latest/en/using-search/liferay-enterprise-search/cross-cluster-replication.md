@@ -9,6 +9,10 @@ toc:
     ./cross-cluster-replication/configuring-ccr-in-a-local-follower-data-center.md
   - ./cross-cluster-replication/ccr-basic-use-case-config-reference.md
   - ./cross-cluster-replication/troubleshooting-cross-cluster-replication.md
+taxonomy-category-names:
+- Search
+- Liferay Enterprise Search
+- Liferay Self-Hosted
 uuid: 063c4590-0cab-4181-9f34-555b4c14199b
 ---
 # Cross Cluster Replication

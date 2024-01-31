@@ -1,4 +1,9 @@
 ---
+taxonomy-category-names:
+- Search
+- Liferay Enterprise Search
+- Liferay Self-Hosted
+- Liferay PaaS
 uuid: 200d8582-24d6-4c35-a50b-ddb0b4b7c8b1
 ---
 # Monitoring Elasticsearch

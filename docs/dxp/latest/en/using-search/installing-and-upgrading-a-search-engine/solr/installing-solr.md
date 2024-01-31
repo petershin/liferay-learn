@@ -1,4 +1,8 @@
 ---
+taxonomy-category-names:
+- Search
+- Search Engine Installation and Maintenance
+- Liferay Self-Hosted
 uuid: ffbbefb9-eab8-46b8-80c6-4589698e76e8
 ---
 # Installing Solr

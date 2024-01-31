@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Search
+- Search Pages and Widgets
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 0e27e0a4-29ba-4665-aae5-bd41983bb687
 ---
 # Folder Facet

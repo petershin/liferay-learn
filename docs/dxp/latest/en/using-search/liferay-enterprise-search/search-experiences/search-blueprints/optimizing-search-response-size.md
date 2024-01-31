@@ -1,4 +1,11 @@
 ---
+taxonomy-category-names:
+- Search
+- Liferay Enterprise Search
+- Search Experiences and Blueprints
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 265c45d4-e918-4861-987c-9be309ef35bd
 ---
 # Optimizing Search Response Size

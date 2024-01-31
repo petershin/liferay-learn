@@ -2,6 +2,10 @@
 toc:
   - ./solr/solr-limitations.md
   - ./solr/installing-solr.md
+taxonomy-category-names:
+- Search
+- Search Engine Installation and Maintenance
+- Liferay Self-Hosted
 uuid: 6a6309ad-103c-40ae-b909-47beb96e5149
 ---
 # Solr

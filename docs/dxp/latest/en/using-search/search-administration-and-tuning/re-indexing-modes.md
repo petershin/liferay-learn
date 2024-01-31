@@ -1,4 +1,9 @@
 ---
+taxonomy-category-names:
+- Search
+- Search Administration and Tuning
+- Liferay Self-Hosted
+- Liferay PaaS
 uuid: 3d46420e-a962-45c7-bd72-ef0f209003e8
 ---
 # Re-Indexing Modes

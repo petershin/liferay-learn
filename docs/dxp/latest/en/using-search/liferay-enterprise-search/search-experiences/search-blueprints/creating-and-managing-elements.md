@@ -3,6 +3,13 @@ toc:
   - ./creating-and-managing-elements/creating-elements.md
   - ./creating-and-managing-elements/managing-elements.md
   - ./creating-and-managing-elements/predefined-element-variables-reference.md
+taxonomy-category-names:
+- Search
+- Liferay Enterprise Search
+- Search Experiences and Blueprints
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: ae0f4186-8c72-4319-a08a-fe80793f2f42
 ---
 # Creating and Managing Elements

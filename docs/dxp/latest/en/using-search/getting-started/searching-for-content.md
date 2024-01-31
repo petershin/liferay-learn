@@ -1,4 +1,9 @@
 ---
+taxonomy-category-names:
+- Search
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 97837f94-619a-4ac0-9b0c-bf9dca31e748
 ---
 # Searching for Content

@@ -1,4 +1,8 @@
 ---
+taxonomy-category-names:
+- Search
+- Liferay Enterprise Search
+- Liferay Self-Hosted
 uuid: 05eb7be9-f2fd-4fd4-9371-81350dade69d
 ---
 # Configuring CCR in a Local Follower Data Center

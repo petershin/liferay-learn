@@ -1,4 +1,9 @@
 ---
+taxonomy-category-names:
+- Search
+- Liferay Enterprise Search
+- Liferay Self-Hosted
+- Liferay PaaS
 uuid: d707078d-7914-4b2e-939f-6815445b80a6
 ---
 # Activating Liferay Enterprise Search

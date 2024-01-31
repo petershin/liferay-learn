@@ -1,4 +1,8 @@
 ---
+taxonomy-category-names:
+- Search
+- Search Engine Installation and Maintenance
+- Liferay Self-Hosted
 uuid: 1d1a8618-5531-4c24-837e-bfecea9c1263
 ---
 # Troubleshooting Elasticsearch: Common Issues

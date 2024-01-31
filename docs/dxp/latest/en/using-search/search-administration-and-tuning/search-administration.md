@@ -1,4 +1,9 @@
 ---
+taxonomy-category-names:
+- Search
+- Search Administration and Tuning
+- Liferay Self-Hosted
+- Liferay PaaS
 uuid: 160b7d94-be20-4dfe-ba58-3eb11a34c47b
 ---
 # Search Administration

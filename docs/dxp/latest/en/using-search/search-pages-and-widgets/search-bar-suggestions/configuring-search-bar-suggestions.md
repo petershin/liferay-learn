@@ -1,4 +1,11 @@
 ---
+taxonomy-category-names:
+- Search
+- Search Pages and Widgets
+- Search Experiences and Blueprints
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 9071aff1-f19f-4c53-a279-f19fd76847f1
 ---
 # Configuring Search Bar Suggestions

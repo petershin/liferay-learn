@@ -1,4 +1,11 @@
 ---
+taxonomy-category-names:
+- Search
+- Liferay Enterprise Search
+- Search Experiences and Blueprints
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 714a2db2-830e-40a8-8f49-5da57a629ef1
 ---
 # Creating a Search Blueprint for Semantic Search

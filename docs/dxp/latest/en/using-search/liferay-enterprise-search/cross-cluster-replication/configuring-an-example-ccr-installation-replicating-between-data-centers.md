@@ -1,4 +1,8 @@
 ---
+taxonomy-category-names:
+- Search
+- Liferay Enterprise Search
+- Liferay Self-Hosted
 uuid: 891409db-2dab-4236-b174-b8576e6a21c0
 ---
 # Configuring an Example CCR Installation: Replicating Between Data Centers

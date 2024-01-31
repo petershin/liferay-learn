@@ -1,4 +1,8 @@
 ---
+taxonomy-category-names:
+- Search
+- Search Engine Installation and Maintenance
+- Liferay Self-Hosted
 uuid: b84baa8b-d4d8-4a1d-8a5e-e45aea686204
 ---
 # Upgrading to Elasticsearch 7

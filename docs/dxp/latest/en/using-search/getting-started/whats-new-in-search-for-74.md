@@ -1,4 +1,9 @@
 ---
+taxonomy-category-names:
+- Search
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: c1d207df-f471-4cc9-82d8-1ab0e2b06d86
 ---
 # What's New in Search for 7.4?

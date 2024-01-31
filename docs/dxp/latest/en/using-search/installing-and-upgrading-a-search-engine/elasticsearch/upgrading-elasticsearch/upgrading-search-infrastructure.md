@@ -1,4 +1,8 @@
 ---
+taxonomy-category-names:
+- Search
+- Search Engine Installation and Maintenance
+- Liferay Self-Hosted
 uuid: 2256d5d4-29de-4f28-9236-26159c675d8a
 ---
 # Upgrading Search Infrastructure

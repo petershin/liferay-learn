@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Search
+- Reference
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 6d30909a-5198-437c-b3b5-1fc61cc705fc
 ---
 # Search Configuration Reference

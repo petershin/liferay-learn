@@ -1,4 +1,11 @@
 ---
+taxonomy-category-names:
+- Search
+- Search Administration and Tuning
+- Reference
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 1d5da6cd-cdeb-4c72-836e-63462e4a86ad
 ---
 # Elasticsearch Indexes Reference

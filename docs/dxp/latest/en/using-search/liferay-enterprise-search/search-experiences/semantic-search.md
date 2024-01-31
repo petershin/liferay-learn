@@ -2,6 +2,13 @@
 toc:
   - ./semantic-search/setting-up-a-text-embedding-provider.md
   - ./semantic-search/creating-a-search-blueprint-for-semantic-search.md
+taxonomy-category-names:
+- Search
+- Liferay Enterprise Search
+- Search Experiences and Blueprints
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: e305b83d-913c-497f-8760-6a9c0ecc87f3
 ---
 

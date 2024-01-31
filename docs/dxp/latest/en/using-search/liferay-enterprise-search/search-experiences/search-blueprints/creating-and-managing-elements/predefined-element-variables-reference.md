@@ -1,4 +1,12 @@
 ---
+taxonomy-category-names:
+- Search
+- Liferay Enterprise Search
+- Search Experiences and Blueprints
+- Reference
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 496a6651-e3f5-4ff2-8754-6362d84e366a
 ---
 # Predefined Element Variables Reference

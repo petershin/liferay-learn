@@ -10,6 +10,10 @@ toc:
   - ./elasticsearch/upgrading-elasticsearch.md
   - ./elasticsearch/elasticsearch-connector-configuration-reference.md
   - ./elasticsearch/advanced-configuration-of-the-liferay-elasticsearch-connector.md
+taxonomy-category-names:
+- Search
+- Search Engine Installation and Maintenance
+- Liferay Self-Hosted
 uuid: fc80c177-a89d-4dd5-8dac-b6fde330ad3f
 ---
 # Elasticsearch

@@ -1,4 +1,9 @@
 ---
+taxonomy-category-names:
+- Search
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 81b9af05-3797-4373-8172-b65d94290ea9
 ---
 # What's New in Search for 7.3?

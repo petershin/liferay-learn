@@ -1,4 +1,10 @@
 ---
+- Search
+- Search Pages and Widgets
+- Categories and Tags
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: a0d991e3-b1bc-4295-9ea9-ea975e420b46
 ---
 # Tag Facet

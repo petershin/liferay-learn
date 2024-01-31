@@ -1,4 +1,8 @@
 ---
+taxonomy-category-names:
+- Search
+- Search Engine Installation and Maintenance
+- Liferay Self-Hosted
 uuid: 7e005d45-04b4-4674-b3d0-807e4126f5ed
 ---
 # Installing a Search Engine

@@ -5,6 +5,12 @@ toc:
   - ./search-administration-and-tuning/elasticsearch-indexes-reference.md
   - ./search-administration-and-tuning/search-administration.md
   - ./search-administration-and-tuning/re-indexing-modes.md
+taxonomy-category-names:
+- Search
+- Search Administration and Tuning
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: c7d1b6cf-3532-4e80-9215-5c16a16ea495
 ---
 # Search Administration and Tuning

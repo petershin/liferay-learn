@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Search
+- Search Pages and Widgets
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 23655577-c85a-49c7-8a0c-3a6beb1803ce
 ---
 # Configuring the Search Results Widget

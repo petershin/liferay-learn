@@ -2,6 +2,13 @@
 toc:
   - ./search-bar-suggestions/configuring-search-bar-suggestions.md
   - ./search-bar-suggestions/search-bar-suggestions-blueprints.md
+taxonomy-category-names:
+- Search
+- Search Pages and Widgets
+- Search Experiences and Blueprints
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 46302b5c-b514-48b3-9d29-b3dcaaf8643a
 ---
 # Search Bar Suggestions

@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Search
+- API Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 5c79adbb-9deb-459b-9615-71e2941f5cd8
 ---
 # Search Headless API

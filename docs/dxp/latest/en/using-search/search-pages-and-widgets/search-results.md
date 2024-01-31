@@ -8,6 +8,12 @@ toc:
   - ./search-results/search-results-behavior.md
   - ./search-results/understanding-low-level-search-options.md
   - ./search-results/custom-filter-examples.md
+taxonomy-category-names:
+- Search
+- Search Pages and Widgets
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 3807715d-17cd-42ef-8143-32d7626d79a6
 ---
 # Search Results

@@ -1,4 +1,8 @@
 ---
+taxonomy-category-names:
+- Search
+- Search Engine Installation and Maintenance
+- Liferay Self-Hosted
 uuid: cbe0c574-b1eb-42ff-a018-99167277e9fe
 ---
 # Solr Limitations 

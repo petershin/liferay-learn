@@ -2,6 +2,13 @@
 toc:
   - ./search-experiences/search-blueprints.md
   - ./search-experiences/semantic-search.md
+taxonomy-category-names:
+- Search
+- Liferay Enterprise Search
+- Search Experiences and Blueprints
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 4955593b-f8dd-4b87-bffa-6cb10c97e9e2
 ---
 # Search Experiences

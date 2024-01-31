@@ -1,8 +1,8 @@
 ---
 toc:
+  - ./using-display-page-templates/publishing-content-with-display-pages.md
   - >-
     ./using-display-page-templates/creating-and-managing-display-page-templates.md
-  - ./using-display-page-templates/publishing-content-with-display-pages.md
   - ./using-display-page-templates/displaying-categories-using-display-pages.md
   - ./using-display-page-templates/using-multiple-display-page-templates-to-create-multi-step-applications.md
   - ./using-display-page-templates/configuring-seo-and-open-graph.md

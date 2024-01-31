@@ -68,3 +68,8 @@ During these lessons, you have learned how to create a site template, create pag
 Phew! That was a lot. Keep on practicing!
 
 Next, you'll learn how to modify the [Site Look and Feel.]()
+
+## Relevant Concepts
+
+- [Propagating Template Changes](https://learn.liferay.com/web/guest/w/dxp/site-building/sites/site-templates/propagating-template-changes)
+- [Configuring Site Template Propagation](https://learn.liferay.com/web/guest/w/dxp/site-building/sites/site-templates/configuring-site-template-propagation)

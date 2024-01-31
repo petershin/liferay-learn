@@ -2,23 +2,23 @@
 	{
 		"childOrganizations": [
 			{
-				"externalReferenceCode": "DBORG-002",
+				"externalReferenceCode": "CORG-002",
 				"name": "IT"
 			},
 			{
-				"externalReferenceCode": "DBORG-003",
+				"externalReferenceCode": "CORG-003",
 				"name": "Accounting"
 			},
 			{
-				"externalReferenceCode": "DBORG-004",
+				"externalReferenceCode": "CORG-004",
 				"name": "Sales & Marketing"
 			}
 		],
-			"externalReferenceCode": "DBORG-001",
-		"name": "Delectable Bonsai"
+		"externalReferenceCode": "CORG-001",
+		"name": "Clarity"
 	},
 	{
-		"externalReferenceCode": "DBORG-005",
+		"externalReferenceCode": "CORG-005",
 		"name": "Marvelous Markets"
 	}
 ]

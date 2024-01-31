@@ -2,12 +2,12 @@
 	{
 		"accountBriefs": [
 			{
-				"externalReferenceCode": "DBACCOUNT-001"
+				"externalReferenceCode": "CACCOUNT-001"
 			}
 		],
 		"alternateName": "Kyle",
-		"emailAddress": "kyle@delectablebonsai.com",
-		"externalReferenceCode": "DBUSER-001",
+		"emailAddress": "kyle@clarityvisionsolutions.com",
+		"externalReferenceCode": "CUSER-001",
 		"familyName": "Klein",
 		"givenName": "Kyle",
 		"jobTitle": "IT Staff",
@@ -20,12 +20,12 @@
 	{
 		"accountBriefs": [
 			{
-				"externalReferenceCode": "DBACCOUNT-002"
+				"externalReferenceCode": "CACCOUNT-002"
 			}
 		],
 		"alternateName": "Marcus",
-		"emailAddress": "marcus@delectablebonsai.com",
-		"externalReferenceCode": "DBUSER-002",
+		"emailAddress": "marcus@clarityvisionsolutions.com",
+		"externalReferenceCode": "CUSER-002",
 		"familyName": "Morgan",
 		"givenName": "Marcus",
 		"jobTitle": "IT Manager",
@@ -38,12 +38,12 @@
 	{
 		"accountBriefs": [
 			{
-				"externalReferenceCode": "DBACCOUNT-003"
+				"externalReferenceCode": "CACCOUNT-003"
 			}
 		],
 		"alternateName": "Lily",
-		"emailAddress": "lily@delectablebonsai.com",
-		"externalReferenceCode": "DBUSER-003",
+		"emailAddress": "lily@clarityvisionsolutions.com",
+		"externalReferenceCode": "CUSER-003",
 		"familyName": "Lewis",
 		"givenName": "Lily",
 		"jobTitle": "Account Manager",
@@ -59,7 +59,7 @@
 	{
 		"accountBriefs": [
 			{
-				"externalReferenceCode": "DBACCOUNT-003",
+				"externalReferenceCode": "CACCOUNT-003",
 				"roleBriefs": [
 					"Order Manager"
 				]
@@ -67,7 +67,7 @@
 		],
 		"alternateName": "Noah",
 		"emailAddress": "noah@marvelousmarkets.com",
-		"externalReferenceCode": "DBUSER-004",
+		"externalReferenceCode": "CUSER-004",
 		"familyName": "Norman",
 		"givenName": "Noah",
 		"jobTitle": "Store Manager",

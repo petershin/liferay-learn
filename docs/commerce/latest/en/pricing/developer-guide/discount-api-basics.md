@@ -1,5 +1,13 @@
 ---
 uuid: 95c867f0-ab22-4c29-b83e-5223033de597
+taxonomy-category-names:
+- Commerce
+- Pricing
+- Promotions and Discounts
+- API Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Discount API Basics
 

@@ -1,5 +1,11 @@
 ---
 uuid: 336b542a-dcd9-4ead-b413-06161d04efbc
+taxonomy-category-names:
+- Commerce
+- Pricing
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Using Gross and Net Price Types
 

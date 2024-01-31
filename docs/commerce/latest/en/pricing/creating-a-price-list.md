@@ -1,5 +1,11 @@
 ---
 uuid: e97f576f-2c3b-433a-bcda-2cdbffa0ad79
+taxonomy-category-names:
+- Commerce
+- Pricing
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Creating a Price List
 

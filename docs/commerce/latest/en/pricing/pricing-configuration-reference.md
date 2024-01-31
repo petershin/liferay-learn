@@ -1,5 +1,11 @@
 ---
 uuid: bf9620b2-1186-4911-ae84-94fc61108462
+taxonomy-category-names:
+- Commerce
+- Pricing
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Pricing Configuration Reference
 

@@ -1,5 +1,12 @@
 ---
 uuid: 69358ea2-9c07-4b02-bd45-dbd729effa3b
+taxonomy-category-names:
+- Commerce
+- Pricing
+- Promotions and Discounts
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Replacement Products
 

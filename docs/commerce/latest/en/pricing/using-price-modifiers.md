@@ -1,5 +1,11 @@
 ---
 uuid: 23fd9ec3-6981-429b-adf7-60f62aea992e
+taxonomy-category-names:
+- Commerce
+- Pricing
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Using Price Modifiers
 

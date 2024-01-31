@@ -1,5 +1,12 @@
 ---
 uuid: 42fbd9f9-009e-4d57-84d1-f84b8a1dd2c4
+taxonomy-category-names:
+- Commerce
+- Pricing
+- Promotions and Discounts
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Understanding Recommendation Types
 

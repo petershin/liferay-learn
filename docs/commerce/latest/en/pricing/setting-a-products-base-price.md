@@ -1,5 +1,11 @@
 ---
 uuid: 765551fb-f76c-4fe8-9b30-35e25a0e8fc8
+taxonomy-category-names:
+- Commerce
+- Pricing
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Setting a Product's Base Price
 

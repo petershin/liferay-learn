@@ -1,5 +1,12 @@
 ---
 uuid: b88a58c3-84bd-4d35-bcf5-ce7bb202cdf2
+taxonomy-category-names:
+- Commerce
+- Pricing
+- API Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Price List API Basics
 

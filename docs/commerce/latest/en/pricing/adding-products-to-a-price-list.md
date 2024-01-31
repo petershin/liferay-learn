@@ -1,5 +1,11 @@
 ---
 uuid: 4a13235b-413d-4b27-ad0b-3e1f3eda5a12
+taxonomy-category-names:
+- Commerce
+- Pricing
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Adding Products to a Price List
 

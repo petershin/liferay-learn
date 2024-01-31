@@ -3,6 +3,13 @@ toc:
   - ./product-recommendations/using-product-recommendations.md
   - ./product-recommendations/understanding-recommendation-types.md
 uuid: d483669d-426f-464f-9cc7-7329e66b3f99
+taxonomy-category-names:
+- Commerce
+- Pricing
+- Promotions and Discounts
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Product Recommendations
 

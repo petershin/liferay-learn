@@ -11,6 +11,13 @@ toc:
   - ./promoting-products/replacement-products.md
   - ./promoting-products/product-recommendations.md
 uuid: ff485d4f-412c-4e90-8e25-8da426dfa2d9
+taxonomy-category-names:
+- Commerce
+- Pricing
+- Promotions and Discounts
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Promoting Products
 

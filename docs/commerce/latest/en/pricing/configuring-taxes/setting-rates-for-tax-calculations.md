@@ -1,5 +1,12 @@
 ---
 uuid: 70d64dba-0479-4d06-a593-ba19ecd27eae
+taxonomy-category-names:
+- Commerce
+- Pricing
+- Taxes
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Setting Rates for Tax Calculations
 

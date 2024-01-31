@@ -2,6 +2,12 @@
 toc:
   - ./order-importer/using-order-importer.md
 uuid: 4597dfec-2861-4491-b333-33fd44494b0c
+taxonomy-category-names:
+- Commerce
+- Orders and Fulfillment
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Order Importer
 

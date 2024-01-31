@@ -1,5 +1,11 @@
 ---
 uuid: 55828537-580c-403d-9e16-e178230bb2f7
+taxonomy-category-names:
+- Commerce
+- Orders and Fulfillment
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Using the Minimum Order Amount Rule
 

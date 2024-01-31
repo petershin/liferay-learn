@@ -1,5 +1,12 @@
 ---
 uuid: 370f3ac0-72a0-4e7a-a731-36e094f220ac
+taxonomy-category-names:
+- Commerce
+- Orders and Fulfillment
+- Order Processing
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 
 # Order Splitting

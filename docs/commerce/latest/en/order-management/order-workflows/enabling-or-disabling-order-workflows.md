@@ -1,5 +1,12 @@
 ---
 uuid: 9c4e2327-3210-45b2-a20b-b7343443a03b
+taxonomy-category-names:
+- Commerce
+- Orders and Fulfillment
+- Order Workflows
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Enabling or Disabling Order Workflows
 

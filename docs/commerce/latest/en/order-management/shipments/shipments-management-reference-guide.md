@@ -1,5 +1,12 @@
 ---
 uuid: ed8260ed-492f-44a3-a97a-494b3bc10ddf
+taxonomy-category-names:
+- Commerce
+- Orders and Fulfillment
+- Shipments
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Shipments Management Reference Guide
 

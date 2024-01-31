@@ -1,5 +1,12 @@
 ---
 uuid: 8ab41411-16bc-4600-96bd-0808f9459d1f
+taxonomy-category-names:
+- Commerce
+- Orders and Fulfillment
+- Payment
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Payment and Delivery Terms
 

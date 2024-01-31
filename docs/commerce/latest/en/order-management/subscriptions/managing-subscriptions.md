@@ -1,5 +1,12 @@
 ---
 uuid: ca35aef2-9175-4567-a1b7-a37762d13bea
+taxonomy-category-names:
+- Commerce
+- Orders and Fulfillment
+- Subscription Management
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Managing Subscriptions
 

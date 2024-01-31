@@ -1,5 +1,11 @@
 ---
 uuid: f77b7956-57a1-4169-95e9-cb3070b91c57
+taxonomy-category-names:
+- Commerce
+- Orders and Fulfillment
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Using Order Types
 

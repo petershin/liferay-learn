@@ -2,6 +2,12 @@
 toc:
   - order-types/using-order-types.md
 uuid: 7555cc1b-54a3-4469-b889-48b74b0a890a
+taxonomy-category-names:
+- Commerce
+- Orders and Fulfillment
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 
 # Order Types

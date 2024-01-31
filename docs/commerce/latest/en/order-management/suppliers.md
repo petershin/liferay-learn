@@ -3,6 +3,12 @@ toc:
   - ./suppliers/supplier-account.md
   - ./suppliers/supplier-role.md
 uuid: 652129a3-a1fb-4904-88e3-1613dd1f3ebb
+taxonomy-category-names:
+- Commerce
+- Orders and Fulfillment
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 
 # Suppliers

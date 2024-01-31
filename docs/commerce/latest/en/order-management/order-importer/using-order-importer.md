@@ -1,5 +1,11 @@
 ---
 uuid: 2231e20c-7ceb-4f94-9d14-182576f0928f
+taxonomy-category-names:
+- Commerce
+- Orders and Fulfillment
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Using Order Importer
 

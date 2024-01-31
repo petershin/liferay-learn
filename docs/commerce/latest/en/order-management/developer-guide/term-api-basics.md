@@ -1,5 +1,12 @@
 ---
 uuid: 9f85d668-8ec3-40a3-b704-57a1ed65304b
+taxonomy-category-names:
+- Commerce
+- Orders and Fulfillment
+- API Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Term API Basics
 

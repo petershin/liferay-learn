@@ -1,5 +1,12 @@
 ---
 uuid: 1b0651a8-e5f5-40d6-abcf-ab36cd007243
+taxonomy-category-names:
+- Commerce
+- Orders and Fulfillment
+- Order Processing
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Processing an Order
 

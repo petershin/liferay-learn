@@ -1,5 +1,12 @@
 ---
 uuid: 10d9a3f9-79ee-42b1-9051-569123559108
+taxonomy-category-names:
+- Commerce
+- Orders and Fulfillment
+- Shipments
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Canceling a Shipment
 

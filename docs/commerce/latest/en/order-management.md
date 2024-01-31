@@ -11,6 +11,12 @@ toc:
   - ./order-management/order-importer.md
   - ./order-management/developer-guide.md
 uuid: a6a173d9-fe69-45c7-8a07-3f28abcfe41a
+taxonomy-category-names:
+- Commerce
+- Orders and Fulfillment
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Order Management
 

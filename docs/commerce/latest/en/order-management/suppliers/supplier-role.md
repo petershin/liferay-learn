@@ -1,5 +1,11 @@
 ---
 uuid: 875e48a1-3d8c-4fb9-b8b4-94646ab12888
+taxonomy-category-names:
+- Commerce
+- Orders and Fulfillment
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Supplier Role
 

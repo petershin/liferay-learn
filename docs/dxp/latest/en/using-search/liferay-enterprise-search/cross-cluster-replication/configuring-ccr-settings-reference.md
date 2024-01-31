@@ -1,4 +1,9 @@
 ---
+taxonomy-category-names:
+- Search
+- Liferay Enterprise Search
+- Reference
+- Liferay Self-Hosted
 uuid: a5a7dcd8-a7e1-4ffc-99df-d7ce752ba146
 ---
 # Configuring CCR: Settings Reference

@@ -13,6 +13,11 @@ toc:
   - '[Join the Community](https://liferay.dev/)'
   - '[Open a Ticket](https://liferay-support.zendesk.com/agent/)'
 uuid: 2b768856-67e1-4f03-aed8-164035966544
+taxonomy-category-names:
+- Commerce
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 
 # Get Help

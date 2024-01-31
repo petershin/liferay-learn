@@ -1,5 +1,10 @@
 ---
 uuid: 7884dc32-865a-4652-a98c-13a6bc55c05c
+taxonomy-category-names:
+- Commerce
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Liferay Commerce Fix Delivery Method
 

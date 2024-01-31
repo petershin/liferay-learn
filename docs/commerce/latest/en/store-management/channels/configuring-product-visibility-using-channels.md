@@ -1,5 +1,12 @@
 ---
 uuid: c87c6277-5ccb-48a9-acae-314e8d503925
+taxonomy-category-names:
+- Commerce
+- Storefronts
+- Channels
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Configuring Product Visibility Using Channels
 

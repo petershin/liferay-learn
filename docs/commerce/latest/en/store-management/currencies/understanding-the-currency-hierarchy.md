@@ -1,5 +1,12 @@
 ---
 uuid: 5be48c83-41dd-4328-9b25-ddb2fff80d82
+taxonomy-category-names:
+- Commerce
+- Storefronts
+- Currencies
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Understanding the Currency Hierarchy
 

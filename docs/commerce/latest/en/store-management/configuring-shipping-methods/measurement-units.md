@@ -1,5 +1,12 @@
 ---
 uuid: 363825b9-729e-4cae-bffa-f628b1e1cafa
+taxonomy-category-names:
+- Commerce
+- Storefronts
+- Shipping Methods
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Measurement Units
 

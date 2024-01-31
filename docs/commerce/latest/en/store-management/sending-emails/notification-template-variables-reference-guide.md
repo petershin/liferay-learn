@@ -1,5 +1,13 @@
 ---
 uuid: 3c74d619-bfc3-4747-88d1-a993b4ff48ac
+taxonomy-category-names:
+- Commerce
+- Storefronts
+- Platform
+- Notifications and Notification Templates
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Notification Template Variables Reference Guide
 

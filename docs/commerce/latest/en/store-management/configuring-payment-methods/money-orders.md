@@ -1,5 +1,12 @@
 ---
 uuid: 46f5ef38-ffbb-41ff-94e1-474a03efb2df
+taxonomy-category-names:
+- Commerce
+- Storefronts
+- Payment
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Money Orders
 

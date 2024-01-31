@@ -1,5 +1,12 @@
 ---
 uuid: ece95c64-ba3c-46ad-8343-5ebdeee906db
+taxonomy-category-names:
+- Commerce
+- Storefronts
+- Payment
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Managing Payment Methods
 

@@ -1,5 +1,12 @@
 ---
 uuid: acb33a41-7083-4874-8e8e-f6aa1d284b2c
+taxonomy-category-names:
+- Commerce
+- Storefronts
+- Payment
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Mercanet
 

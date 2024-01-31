@@ -1,5 +1,12 @@
 ---
 uuid: 53339b3a-4391-4aeb-b133-0e60220029e5
+taxonomy-category-names:
+- Commerce
+- Storefronts
+- Shipping Methods
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Using the Flat Rate Shipping Method
 

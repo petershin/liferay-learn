@@ -1,5 +1,13 @@
 ---
 uuid: 059e5180-3f37-422a-aa25-056f2778b270
+taxonomy-category-names:
+- Commerce
+- Storefronts
+- Platform
+- Notifications and Notification Templates
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Configuring the Commerce Notification Queue
 

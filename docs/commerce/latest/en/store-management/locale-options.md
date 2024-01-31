@@ -1,5 +1,12 @@
 ---
 uuid: 7da47fe2-45b8-43dd-a303-75d7c59cb919
+taxonomy-category-names:
+- Commerce
+- Storefronts
+- Localization
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Locale Options
 

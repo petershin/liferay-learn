@@ -1,5 +1,12 @@
 ---
 uuid: 4982da46-46d9-4f42-bcb0-fb6c6a695193
+taxonomy-category-names:
+- Commerce
+- Storefronts
+- Shipping Methods
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Applying Shipping Method Restrictions
 

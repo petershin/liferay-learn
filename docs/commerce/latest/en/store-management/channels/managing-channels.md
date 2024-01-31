@@ -1,5 +1,12 @@
 ---
 uuid: 7ee439f6-c180-41b5-ab95-45d3a74a0909
+taxonomy-category-names:
+- Commerce
+- Storefronts
+- Channels
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Managing Channels
 

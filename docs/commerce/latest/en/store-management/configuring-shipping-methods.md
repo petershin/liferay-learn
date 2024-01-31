@@ -7,6 +7,13 @@ toc:
   - ./configuring-shipping-methods/measurement-units.md
   - ./configuring-shipping-methods/shipping-method-reference.md
 uuid: 7ea82dcc-326a-460f-8276-a6dd36ebc75d
+taxonomy-category-names:
+- Commerce
+- Storefronts
+- Shipping Methods
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Configuring Shipping Methods
 

@@ -1,5 +1,12 @@
 ---
 uuid: 0b7c4188-63f9-4421-89ae-fe3a71c781d0
+taxonomy-category-names:
+- Commerce
+- Storefronts
+- API Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Channel API Basics
 

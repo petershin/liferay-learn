@@ -4,6 +4,14 @@ toc:
   - ./sending-emails/configuring-the-commerce-notification-queue.md
   - ./sending-emails/notification-template-variables-reference-guide.md
 uuid: 2c082931-7301-4909-937c-6deeaeed9367
+taxonomy-category-names:
+- Commerce
+- Storefronts
+- Platform
+- Notifications and Notification Templates
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Sending Emails
 

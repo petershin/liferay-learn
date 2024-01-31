@@ -1,5 +1,12 @@
 ---
 uuid: eb2494d4-7842-4ae5-a1b2-9da558f70883
+taxonomy-category-names:
+- Commerce
+- Storefronts
+- Order Processing
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Guest Checkout Overview
 

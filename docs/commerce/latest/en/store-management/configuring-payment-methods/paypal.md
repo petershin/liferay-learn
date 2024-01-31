@@ -1,5 +1,12 @@
 ---
 uuid: 20cb9df9-03c9-4d4c-9e47-9c92abef6d6a
+taxonomy-category-names:
+- Commerce
+- Storefronts
+- Payment
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # PayPal
 

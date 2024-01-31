@@ -1,5 +1,12 @@
 ---
 uuid: 0f7ea016-9380-4326-b8b7-c1a297d56d0a
+taxonomy-category-names:
+- Commerce
+- Storefronts
+- Payment
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Authorize.net
 

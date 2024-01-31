@@ -1,5 +1,12 @@
 ---
 uuid: 870af26f-34d4-4e72-8d86-8d392b0e257c
+taxonomy-category-names:
+- Commerce
+- Storefronts
+- Currencies
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Currencies Reference
 

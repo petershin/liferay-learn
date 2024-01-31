@@ -1,5 +1,12 @@
 ---
 uuid: 01bdecdc-95a9-4cb4-b242-211377a449a2
+taxonomy-category-names:
+- Commerce
+- Storefronts
+- Currencies
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Managing Exchange Rates
 

@@ -1,5 +1,6 @@
 [
 	{
+
 		"accountBriefs": [
 			{
 				"externalReferenceCode": "CACCOUNT-001"
@@ -74,6 +75,60 @@
 		"organizationBriefs": [
 			{
 				"name": "Marvelous Markets"
+			}
+		]
+	},
+	{
+		"accountBriefs": [
+			{
+				"externalReferenceCode": "CACCOUNT-003"
+			}
+		],
+		"alternateName": "Preston",
+		"emailAddress": "preston@clarityvisionsolutions.com",
+		"externalReferenceCode": "CUSER-005",
+		"familyName": "Palmer",
+		"givenName": "Preston",
+		"jobTitle": "IT Staff",
+		"organizationBriefs": [
+			{
+				"name": "IT"
+			}
+		]
+	},
+	{
+		"accountBriefs": [
+			{
+				"externalReferenceCode": "CACCOUNT-003"
+			}
+		],
+		"alternateName": "Rex",
+		"emailAddress": "rex@clarityvisionsolutions.com",
+		"externalReferenceCode": "CUSER-006",
+		"familyName": "Randle",
+		"givenName": "Rex",
+		"jobTitle": "Custom Advocacy Specialist",
+		"organizationBriefs": [
+			{
+				"name": "Sales & Marketing"
+			}
+		]
+	},
+	{
+		"accountBriefs": [
+			{
+				"externalReferenceCode": "CACCOUNT-003"
+			}
+		],
+		"alternateName": "Olivia",
+		"emailAddress": "olivia@clarityvisionsolutions.com",
+		"externalReferenceCode": "CUSER-007",
+		"familyName": "O'Neal",
+		"givenName": "Olivia",
+		"jobTitle": "Marketing Manager",
+		"organizationBriefs": [
+			{
+				"name": "Sales & Marketing"
 			}
 		]
 	}

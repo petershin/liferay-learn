@@ -10,5 +10,23 @@
 		"roles": [
 			"Administrator"
 		]
-	}
-]
+	},
+	{
+		"emailAddress": "preston@clarityvisionsolutions.com",
+		"roles": [
+			"Site Administrator"
+		]
+	},
+	{
+		"emailAddress": "olivia@clarityvisionsolutions.com",
+		"roles": [
+			"Portal Content Manager",
+			"Portal Content Reviewer"
+		]
+	},
+{
+		"emailAddress": "rex@clarityvisionsolutions.com",
+		"roles": [
+			"Portal Content Manager"
+		]
+	}]

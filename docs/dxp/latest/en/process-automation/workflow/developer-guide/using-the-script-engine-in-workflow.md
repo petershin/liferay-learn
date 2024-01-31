@@ -1,4 +1,9 @@
 ---
+taxonomy-category-names:
+- Platform
+- Workflow
+- Liferay Self-Hosted
+- Liferay PaaS
 uuid: 8be1370c-e992-44c5-bbf5-63c3016c54c7
 ---
 # Using the Script Engine in Workflow

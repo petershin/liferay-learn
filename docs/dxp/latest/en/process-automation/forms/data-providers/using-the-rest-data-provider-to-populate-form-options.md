@@ -1,4 +1,11 @@
 ---
+taxonomy-category-names:
+- Platform
+- Forms
+- API Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: ccb8e4fc-fb48-469d-8231-0319b68fee3c
 ---
 # Using the REST Data Provider to Populate Form Options

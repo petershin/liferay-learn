@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Platform
+- Forms
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 087b7e11-85d3-4ffb-885a-769537857403
 ---
 # Reusing Sets of Form Elements

@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Platform
+- Workflow
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: bdd9b477-1b21-4cd2-b570-82526be8310a
 ---
 # Activating Workflow

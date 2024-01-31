@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Platform
+- Forms
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: cb47d596-85f2-4170-823f-f08000578e7f
 ---
 # Creating Data Definitions

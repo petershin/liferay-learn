@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Platform
+- Workflow
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 09cad469-65b2-48fa-9bd2-ecb4d2bedbcf
 ---
 # Workflow Designer Overview

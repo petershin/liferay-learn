@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Platform
+- Forms
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: ddb716bb-9c60-42a2-8623-d616e1f36a76
 ---
 # Using the Show-Hide Rule

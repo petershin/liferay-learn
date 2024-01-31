@@ -1,4 +1,9 @@
 ---
+taxonomy-category-names:
+- Platform
+- Forms
+- Liferay Self-Hosted
+- Liferay PaaS
 uuid: ba706231-8ef6-48b1-9673-c6167e21157e
 ---
 # Writing a Custom Form Field Type

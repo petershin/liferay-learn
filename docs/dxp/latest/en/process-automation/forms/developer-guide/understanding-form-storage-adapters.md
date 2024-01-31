@@ -1,4 +1,9 @@
 ---
+taxonomy-category-names:
+- Platform
+- Forms
+- Liferay Self-Hosted
+- Liferay PaaS
 uuid: 36e2c2c9-6b4c-43cd-9ced-6ae3f500428c
 ---
 # Understanding Form Storage Adapters

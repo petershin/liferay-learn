@@ -1,4 +1,9 @@
 ---
+taxonomy-category-names:
+- Platform
+- Workflow
+- Liferay Self-Hosted
+- Liferay PaaS
 uuid: fa29b986-d19b-4a50-aac7-6bfcf0f205a3
 ---
 # Creating a Condition Evaluator

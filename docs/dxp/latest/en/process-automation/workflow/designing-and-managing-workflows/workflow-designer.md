@@ -8,6 +8,12 @@ toc:
   - ./workflow-designer/using-condition-nodes.md
   - ./workflow-designer/assigning-task-nodes.md
   - ./workflow-designer/workflow-transitions.md
+taxonomy-category-names:
+- Platform
+- Workflow
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: f83e7601-6d13-4bfa-b1b9-1a2d0eb8a88d
 ---
 # Workflow Designer

@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Platform
+- Workflow
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: e7464862-01ef-4ae1-82eb-152b40e026f6
 ---
 # Reviewing Assets

@@ -1,4 +1,9 @@
 ---
+taxonomy-category-names:
+- Platform
+- Workflow
+- Liferay Self-Hosted
+- Liferay PaaS
 uuid: 6a6d109f-e942-4a04-b4ed-89dad9bff938
 ---
 # Using Condition Nodes

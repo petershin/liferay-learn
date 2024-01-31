@@ -1,4 +1,11 @@
 ---
+taxonomy-category-names:
+- Platform
+- Forms
+- Objects
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 548428c2-6577-41e5-bae3-5ea41396262e
 ---
 # Migrating to Liferay Objects

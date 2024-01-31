@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Platform
+- Forms
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: f9af2dbb-d7e3-4fd7-9ec5-ed59e29923fd
 ---
 # Customizing Auto-Save Behavior

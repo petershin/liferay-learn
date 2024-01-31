@@ -1,4 +1,9 @@
 ---
+taxonomy-category-names:
+- Platform
+- Forms
+- Liferay Self-Hosted
+- Liferay PaaS
 uuid: 99d6e4ad-c817-483d-b895-7d16b71fa15e
 ---
 # Writing a Custom Data Provider

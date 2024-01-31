@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Platform
+- Forms
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: fe17d654-83a9-4091-b7d8-aa94645dba83
 ---
 # Using the Require Rule

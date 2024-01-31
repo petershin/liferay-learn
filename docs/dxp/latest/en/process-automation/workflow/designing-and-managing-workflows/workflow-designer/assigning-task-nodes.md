@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Platform
+- Workflow
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: a9354b98-4d80-476d-ba76-92d35155654b
 ---
 # Assigning Task Nodes

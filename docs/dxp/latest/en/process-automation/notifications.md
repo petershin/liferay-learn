@@ -3,6 +3,12 @@ toc:
   - ./notifications/configuring-personal-notifications.md
   - ./notifications/creating-notification-templates.md
   - ./notifications/using-the-notification-queue.md
+taxonomy-category-names:
+- Platform
+- Notifications and Notification Templates
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 40b42b3f-1d9b-4dd8-882d-a490ae43d603
 ---
 # Notifications

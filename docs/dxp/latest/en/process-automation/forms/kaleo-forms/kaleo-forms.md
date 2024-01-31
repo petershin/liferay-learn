@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Platform
+- Forms
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 8838df23-e03b-4ab6-8c41-8893d489771d
 ---
 # Kaleo Forms

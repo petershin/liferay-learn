@@ -1,4 +1,9 @@
 ---
+taxonomy-category-names:
+- Platform
+- Workflow
+- Liferay Self-Hosted
+- Liferay PaaS
 uuid: cf0952a4-8f95-4ad5-ba49-91ab9e84e9fe
 ---
 # Creating an Action Executor

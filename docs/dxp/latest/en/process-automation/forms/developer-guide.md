@@ -5,6 +5,12 @@ toc:
   - developer-guide/writing-a-custom-data-provider.md
   - developer-guide/writing-a-form-storage-adapter.md
   - developer-guide/developing-a-custom-form-field-for-liferay-7-2.md
+taxonomy-category-names:
+- Platform
+- Forms
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 7f39ba03-74e7-4424-a3c9-301f70cee793
 ---
 # Developer Guide

@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Platform
+- Workflow
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: cf8367f8-a297-4fe1-be3c-9ea3437f06f5
 ---
 # Crafting XML Workflow Definitions

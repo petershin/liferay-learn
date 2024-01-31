@@ -1,4 +1,9 @@
 ---
+taxonomy-category-names:
+- Platform
+- Workflow
+- Liferay Self-Hosted
+- Liferay PaaS
 uuid: bcb71505-2900-4446-9723-d8d0d2e73ef0
 ---
 # Working with Workflow Context

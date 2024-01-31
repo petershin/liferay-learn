@@ -1,4 +1,9 @@
 ---
+taxonomy-category-names:
+- Platform
+- Forms
+- Liferay Self-Hosted
+- Liferay PaaS
 uuid: e6870a35-63d8-4fad-bb7f-2f23fb686735
 ---
 # Developing a Custom Form Field for Liferay 7.2

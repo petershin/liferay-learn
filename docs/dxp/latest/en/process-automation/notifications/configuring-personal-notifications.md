@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Platform
+- Notifications and Notification Templates
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 7bb10ad4-6e30-4077-b993-e61aa41c51ec
 ---
 # Configuring Personal Notifications

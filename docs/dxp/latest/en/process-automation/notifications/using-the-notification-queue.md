@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Platform
+- Notifications and Notification Templates
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 355cd01a-1910-4066-8b7f-fff359cc14f5
 ---
 # Using the Notification Queue

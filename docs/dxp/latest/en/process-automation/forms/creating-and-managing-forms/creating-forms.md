@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Platform
+- Forms
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 9f7e56f6-8749-4533-b4b9-b53f37b9f711
 ---
 # Creating Forms

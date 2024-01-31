@@ -11,6 +11,12 @@ toc:
   - ./developer-guide/creating-an-action-executor.md
   - ./developer-guide/working-with-workflow-context.md
   - ./developer-guide/apis.md
+taxonomy-category-names:
+- Platform
+- Workflow
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 030c10fc-290f-4821-970a-275b6b0aeff3
 ---
 # Developer Guide

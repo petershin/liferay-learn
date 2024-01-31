@@ -1,4 +1,11 @@
 ---
+taxonomy-category-names:
+- Platform
+- Forms
+- Reference
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 688e2663-172f-4285-a138-e937991470ae
 ---
 # Forms Field Types Reference

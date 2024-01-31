@@ -1,4 +1,11 @@
 ---
+taxonomy-category-names:
+- Platform
+- Forms
+- Workflow
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 0c7c3a0f-b2e5-4ac6-b1c5-f017faf21df3
 ---
 # Using Forms with a Workflow

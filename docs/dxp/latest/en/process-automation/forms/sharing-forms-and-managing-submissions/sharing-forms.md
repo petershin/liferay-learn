@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Platform
+- Forms
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: ec0a2d6c-d5c3-4e03-b260-d770b343bad7
 ---
 # Sharing Forms

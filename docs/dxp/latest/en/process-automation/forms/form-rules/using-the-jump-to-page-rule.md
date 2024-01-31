@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Platform
+- Forms
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 4a3bae9e-336d-4fdb-9c22-59e3b3e546d2
 ---
 # Using the Jump to Page Rule

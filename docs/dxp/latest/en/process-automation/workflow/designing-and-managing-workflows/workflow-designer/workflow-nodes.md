@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Platform
+- Workflow
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 3056a005-50ba-48b3-97f3-a9269046aa02
 ---
 # Workflow Nodes

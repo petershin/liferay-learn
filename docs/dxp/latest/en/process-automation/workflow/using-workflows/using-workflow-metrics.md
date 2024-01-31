@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Platform
+- Workflow
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 53b3f608-7b98-458b-98d1-8cb73045f9e4
 ---
 # Using Workflow Metrics

@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Platform
+- Forms
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 1f2bb9d9-cace-4b58-9ba5-2b5c48762c92
 ---
 # Using Forms to Poll Users

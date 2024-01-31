@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Platform
+- Forms
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 7c97700f-226e-498c-973c-435c7d442d46
 ---
 # Using the Search Location Field

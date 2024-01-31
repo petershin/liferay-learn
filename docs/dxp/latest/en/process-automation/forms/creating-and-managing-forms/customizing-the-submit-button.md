@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Platform
+- Forms
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: f735c45a-65f1-438a-9285-dd93f39f8e34
 ---
 # Customizing the Submit Button

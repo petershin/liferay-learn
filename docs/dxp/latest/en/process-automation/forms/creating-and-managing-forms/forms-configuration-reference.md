@@ -1,4 +1,11 @@
 ---
+taxonomy-category-names:
+- Platform
+- Forms
+- Reference
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: bbfca008-42a3-4c93-af71-b520df343a4f
 ---
 # Forms Configuration Reference

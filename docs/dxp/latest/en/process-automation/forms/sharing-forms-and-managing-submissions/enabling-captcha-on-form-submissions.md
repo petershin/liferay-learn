@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Platform
+- Forms
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 916eefbc-9005-49f4-ac8e-3c3b4b4258dc
 ---
 # Enabling CAPTCHA on Form Submissions

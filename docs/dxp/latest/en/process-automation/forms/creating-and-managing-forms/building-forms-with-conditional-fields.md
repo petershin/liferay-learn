@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Platform
+- Forms
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 1814bbe7-8be8-4190-b5f3-31196e7d2843
 ---
 # Building Forms with Conditional Fields

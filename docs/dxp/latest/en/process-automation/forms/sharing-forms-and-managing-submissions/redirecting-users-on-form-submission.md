@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Platform
+- Forms
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: addc9a35-1b1c-4722-b36c-dc8771b803af
 ---
 # Redirecting Users on Form Submission

@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Platform
+- Forms
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 4c3b494d-4b0e-4b3c-beb5-849d5937a0fe
 ---
 # Using the Calculate Rule

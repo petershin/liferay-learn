@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Platform
+- Forms
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 4575efdd-8ae4-4af7-867b-9e8929b5b5c0
 ---
 # Using the Autofill Rule

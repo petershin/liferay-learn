@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Platform
+- Forms
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 8f3f7109-493b-40cb-9dfe-b2cde9b9f0f6
 ---
 # Using the Enable-Disable Rule

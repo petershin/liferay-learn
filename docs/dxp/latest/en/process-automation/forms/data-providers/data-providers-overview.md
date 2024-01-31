@@ -1,4 +1,11 @@
 ---
+taxonomy-category-names:
+- Platform
+- Forms
+- API Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 6af587c3-4589-432c-9dfb-d58226cc96e7
 ---
 # Data Providers Overview

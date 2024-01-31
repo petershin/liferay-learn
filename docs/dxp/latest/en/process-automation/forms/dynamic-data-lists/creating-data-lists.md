@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Platform
+- Forms
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: cc85a9ff-2123-49db-8109-92dccf29975f
 ---
 # Creating Data Lists

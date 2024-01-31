@@ -1,4 +1,11 @@
 ---
+taxonomy-category-names:
+- Platform
+- Forms
+- Reference
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 3309caf3-3f6f-4148-8b7e-21119f1b19a3
 ---
 # Validation Conditions Reference

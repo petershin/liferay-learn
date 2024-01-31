@@ -9,6 +9,12 @@ toc:
     ./sharing-forms-and-managing-submissions/enabling-captcha-on-form-submissions.md
   - >-
     ./sharing-forms-and-managing-submissions/redirecting-users-on-form-submission.md
+taxonomy-category-names:
+- Platform
+- Forms
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 6836d767-5102-4171-98b7-7a2dff247392
 ---
 # Sharing Forms and Managing Submissions

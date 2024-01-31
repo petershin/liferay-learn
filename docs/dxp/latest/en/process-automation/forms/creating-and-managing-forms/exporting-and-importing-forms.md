@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Platform
+- Forms
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 4dce9846-b0c7-445c-a91f-ca119a14f4e7
 ---
 # Exporting and Importing Forms

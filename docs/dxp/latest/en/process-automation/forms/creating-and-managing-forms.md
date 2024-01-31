@@ -16,6 +16,12 @@ toc:
   - ./creating-and-managing-forms/forms-configuration-reference.md
   - ./creating-and-managing-forms/validation-conditions-reference.md
   - ./creating-and-managing-forms/forms-permissions-reference.md
+taxonomy-category-names:
+- Platform
+- Forms
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 1b2b186d-36a9-4152-a3fc-240272641624
 ---
 # Creating and Managing Forms

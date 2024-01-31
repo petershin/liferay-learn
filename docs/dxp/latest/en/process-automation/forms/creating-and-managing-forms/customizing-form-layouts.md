@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Platform
+- Forms
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: c89e5cda-884a-47ca-bf05-b56a0aec1732
 ---
 # Customizing Form Layouts

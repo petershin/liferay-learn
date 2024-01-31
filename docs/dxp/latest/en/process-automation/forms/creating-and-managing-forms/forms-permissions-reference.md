@@ -1,4 +1,11 @@
 ---
+taxonomy-category-names:
+- Platform
+- Forms
+- Reference
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 6eaf7105-208e-4ae8-8063-676555925a89
 ---
 # Forms Permissions Reference

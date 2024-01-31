@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Platform
+- Forms
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 9e5ee650-0218-45f2-9ab8-597398a6e16d
 ---
 # Providing Help Text and Predefined Values

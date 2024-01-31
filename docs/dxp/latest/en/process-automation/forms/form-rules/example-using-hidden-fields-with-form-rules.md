@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+- Platform
+- Forms
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: 4508a099-3d2e-4f66-bbe7-c2485a8ff534
 ---
 # Example: Using Hidden Fields with Form Rules

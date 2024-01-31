@@ -3,6 +3,12 @@ toc:
   - ./designing-and-managing-workflows/building-workflows.md
   - ./designing-and-managing-workflows/managing-workflows.md
   - ./designing-and-managing-workflows/workflow-designer.md
+taxonomy-category-names:
+- Platform
+- Workflow
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 uuid: c65a26be-5063-4f82-8c78-6743222f9120
 ---
 # Designing and Managing Workflows

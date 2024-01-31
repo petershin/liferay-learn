@@ -1,5 +1,12 @@
 ---
 uuid: 8e51f1b3-37a7-492f-bd49-d174d33265e8
+taxonomy-category-names:
+- Commerce
+- Storefronts
+- Widgets
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Widget Reference
 

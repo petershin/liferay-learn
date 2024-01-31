@@ -1,5 +1,12 @@
 ---
 uuid: 8aba7021-76e6-4b64-bb06-0ad2ffb1ce5d
+taxonomy-category-names:
+- Commerce
+- Storefronts
+- Widgets
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Using the New Organization Management Chart Widget
 

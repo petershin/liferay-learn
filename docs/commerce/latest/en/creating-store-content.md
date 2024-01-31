@@ -12,6 +12,12 @@ toc:
   - ./creating-store-content/liferay-commerce-widgets.md
   - ./creating-store-content/liferay-commerce-fragments.md
 uuid: 57fa1243-f803-4529-8e17-6563feb72128
+taxonomy-category-names:
+- Commerce
+- Storefronts
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Creating Store Content
 

@@ -1,5 +1,11 @@
 ---
 uuid: 1b9deb22-6be0-4ca3-892f-837bafa06bd5
+taxonomy-category-names:
+- Commerce
+- Storefronts
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Creating Your Storefront
 

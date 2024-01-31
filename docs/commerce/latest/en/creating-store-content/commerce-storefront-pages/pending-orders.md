@@ -1,5 +1,11 @@
 ---
 uuid: 9b6dcbc5-90d0-4604-bbb1-cbca0c74d32c
+taxonomy-category-names:
+- Commerce
+- Storefronts
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Pending Orders
 

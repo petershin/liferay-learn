@@ -1,5 +1,12 @@
 ---
 uuid: 65b4cc84-7474-473a-a399-1fa6231051ed
+taxonomy-category-names:
+- Commerce
+- Storefronts
+- Fragments
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Using the Account Selector Fragment
 

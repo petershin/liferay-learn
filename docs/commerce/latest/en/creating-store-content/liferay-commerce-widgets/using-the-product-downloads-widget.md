@@ -1,5 +1,12 @@
 ---
 uuid: 859b9c22-352f-46af-a07b-7ab8e085c05d
+taxonomy-category-names:
+- Commerce
+- Storefronts
+- Widgets
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Using the Product Downloads Widget
 

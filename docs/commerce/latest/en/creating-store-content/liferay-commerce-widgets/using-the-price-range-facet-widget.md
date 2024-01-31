@@ -1,5 +1,12 @@
 ---
 uuid: fe9b88c4-d2b4-48e7-99e4-20249d110845
+taxonomy-category-names:
+- Commerce
+- Storefronts
+- Widgets
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Using the Price Range Facet Widget
 

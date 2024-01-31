@@ -1,5 +1,12 @@
 ---
 uuid: 940e6f69-6de5-43b9-a97b-d4f8d06ea38b
+taxonomy-category-names:
+- Commerce
+- Storefronts
+- Search
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Search
 

@@ -1,5 +1,12 @@
 ---
 uuid: 7db077d3-aec1-400b-8475-62390f01bd47
+taxonomy-category-names:
+- Commerce
+- Storefronts
+- Fragments
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Using the Mini Cart Fragment
 

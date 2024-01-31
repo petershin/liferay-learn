@@ -1,5 +1,12 @@
 ---
 uuid: 9080abb4-fd9f-4be0-94e0-a2cf87d67272
+taxonomy-category-names:
+- Commerce
+- Storefronts
+- Widgets
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Using the Mini Cart Widget
 

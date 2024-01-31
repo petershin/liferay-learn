@@ -1,5 +1,11 @@
 ---
 uuid: f8136c65-4eb7-48df-8755-0c3403f505ff
+taxonomy-category-names:
+- Commerce
+- Storefronts
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Using Wish Lists
 

@@ -11,6 +11,12 @@ toc:
   - ./commerce-storefront-pages/product-details.md
   - ./commerce-storefront-pages/search.md
 uuid: 31069a50-980a-427c-a689-085bf68e6b50
+taxonomy-category-names:
+- Commerce
+- Storefronts
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Commerce Storefront Pages
 

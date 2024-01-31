@@ -10,6 +10,12 @@ toc:
   - >-
     ./using-web-experience-management/enabling-commerce-products-as-related-assets.md
 uuid: be520836-d7bc-4826-aaee-38348617bfa4
+taxonomy-category-names:
+- Commerce
+- Storefronts
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Using Web Experience Management
 

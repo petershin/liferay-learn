@@ -1,5 +1,11 @@
 ---
 uuid: 72290da2-2b25-4aae-b83a-0e21520e2230
+taxonomy-category-names:
+- Commerce
+- Storefronts
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Creating Separate Catalog Pages for Individual Product Catalogs
 

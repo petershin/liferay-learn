@@ -1,5 +1,12 @@
 ---
 uuid: 3287d792-b6df-4de6-ae07-6813800f0993
+taxonomy-category-names:
+- Commerce
+- Storefronts
+- User, Organization, and Account Management
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Account Management
 
@@ -10,7 +17,7 @@ If using Minium Accelerator to create sample data, there is a site Navigation Me
 ![Minium Site Navigation](./account-management/images/01.png)
 
 ```{important}
-Starting from DXP 7.4, the Account Management Widget is a part of DXP. See [Account Management Widget](https://learn.liferay.com/dxp/latest/en/users-and-permissions/accounts/account-management-widget.html) for more information. 
+Starting from DXP 7.4, the Account Management Widget is a part of DXP. See [Account Management Widget](https://learn.liferay.com/dxp/latest/en/users-and-permissions/accounts/account-management-widget.html) for more information.
 ```
 
 Once deployed to the page, the _Account Management_ widget lists all the accounts.

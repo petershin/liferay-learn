@@ -1,5 +1,11 @@
 ---
 uuid: 5e259779-e841-4b52-a697-175b966437aa
+taxonomy-category-names:
+- Commerce
+- Storefronts
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Enabling Commerce Products as Related Assets
 

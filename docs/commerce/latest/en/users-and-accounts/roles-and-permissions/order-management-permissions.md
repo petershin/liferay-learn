@@ -1,5 +1,15 @@
 ---
 uuid: 49578273-d710-4230-9997-9e62279a3c5e
+taxonomy-category-names:
+- Commerce
+- Security
+- User, Organization, and Account Management
+- Order Processing
+- Subscription Management
+- Shipments
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Order Management Permissions
 

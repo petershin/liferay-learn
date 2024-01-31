@@ -8,6 +8,13 @@ toc:
   - ./roles-and-permissions/store-management-permissions.md
   - ./roles-and-permissions/settings-permissions.md
 uuid: 432b5916-84ef-41e7-8edf-03250e41e66c
+taxonomy-category-names:
+- Commerce
+- Security
+- User, Organization, and Account Management
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Roles and Permissions
 

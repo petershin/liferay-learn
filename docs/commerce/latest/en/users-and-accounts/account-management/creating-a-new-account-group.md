@@ -1,5 +1,12 @@
 ---
 uuid: 884de1a4-e25d-4a6b-ae88-d836e716a105
+taxonomy-category-names:
+- Commerce
+- Security
+- User, Organization, and Account Management
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Creating a New Account Group
 

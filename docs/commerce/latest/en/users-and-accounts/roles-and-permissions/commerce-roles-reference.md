@@ -1,5 +1,12 @@
 ---
 uuid: fc207835-2243-4f2b-858f-67cfff5a1b3f
+taxonomy-category-names:
+- Commerce
+- Security
+- User, Organization, and Account Management
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Commerce Roles Reference
 

@@ -1,5 +1,12 @@
 ---
 uuid: fa80109a-5094-4d8f-9072-5afe8ddd081d
+taxonomy-category-names:
+- Commerce
+- Security
+- User, Organization, and Account Management
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Creating a New Account
 

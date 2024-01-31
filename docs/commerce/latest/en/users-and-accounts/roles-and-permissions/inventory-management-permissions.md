@@ -1,5 +1,13 @@
 ---
 uuid: 34e47420-af8c-4c3d-9312-53a4e25a0737
+taxonomy-category-names:
+- Commerce
+- Security
+- User, Organization, and Account Management
+- Inventory
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Inventory Management Permissions
 

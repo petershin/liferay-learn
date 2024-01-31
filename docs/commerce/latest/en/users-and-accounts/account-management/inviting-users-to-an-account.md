@@ -1,5 +1,12 @@
 ---
 uuid: e98ca6e7-ffe6-49da-936c-6d1b5a83b552
+taxonomy-category-names:
+- Commerce
+- Security
+- User, Organization, and Account Management
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Inviting Users to an Account
 

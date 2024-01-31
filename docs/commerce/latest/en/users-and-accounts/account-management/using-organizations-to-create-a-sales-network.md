@@ -1,5 +1,12 @@
 ---
 uuid: 10a15339-46aa-4791-8c94-48218ba1d708
+taxonomy-category-names:
+- Commerce
+- Security
+- User, Organization, and Account Management
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Using Organizations to Create a Sales Network
 

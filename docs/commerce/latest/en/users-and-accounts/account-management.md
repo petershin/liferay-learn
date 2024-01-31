@@ -8,6 +8,13 @@ toc:
   - ./account-management/using-organizations-to-create-a-sales-network.md
   - ./account-management/adding-organizations-to-accounts.md
 uuid: 330f5754-723b-447f-af50-ba7e058e0add
+taxonomy-category-names:
+- Commerce
+- Security
+- User, Organization, and Account Management
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Account Management
 

@@ -1,5 +1,12 @@
 ---
 uuid: b8e8d8ce-6974-445c-98e8-8d28e59655bb
+taxonomy-category-names:
+- Commerce
+- Security
+- User, Organization, and Account Management
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Adding Organizations to Accounts
 

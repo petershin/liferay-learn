@@ -70,9 +70,9 @@ Learn about Liferay Workspace and Client Extensions, two key features for buildi
 :::
 
 :::{grid-item-card}  Module 3: Installation & Upgrades
-:link: ./building-enterprise-websites-with-liferay/module-3.md
+:link: ./building-enterprise-websites-with-liferay/module-3-installation-and-upgrades.md
 
-Coming Soon in Q1 2024
+Get up-and-running with Liferay and start building your business solutions.
 :::
 
 :::{grid-item-card}  Module 4: Identity Management & SSO

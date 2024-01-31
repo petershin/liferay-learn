@@ -12,19 +12,19 @@ Liferay PaaS and Liferay Self-Hosted are also available as alternative deploymen
 :gutter: 3 3 3 3
 
 :::{grid-item-card}  Liferay SaaS
-:link: ./module-3/liferay-saas.md
+:link: ./module-3-installation-and-upgrades/liferay-saas.md
 
 All installation, maintenance, upgrades, etc. are handled by Liferay.
 :::
 
 :::{grid-item-card}  Liferay PaaS
-:link: ./module-3/liferay-paas.md
+:link: ./module-3-installation-and-upgrades/liferay-paas.md
 
 Have Liferay manage your cloud infrastructure while you still having fine-tuned control over your database, file storage, backups, etc.
 :::
 
 :::{grid-item-card}  Liferay Self-Hosted
-:link: ./module-3/liferay-self-hosted.md
+:link: ./module-3-installation-and-upgrades/liferay-self-hosted.md
 
 Have full control and ownership of all aspects of deployment and maintenance of Liferay.
 :::

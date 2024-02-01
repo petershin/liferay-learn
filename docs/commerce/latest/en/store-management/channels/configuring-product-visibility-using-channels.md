@@ -10,68 +10,61 @@ taxonomy-category-names:
 ---
 # Configuring Product Visibility Using Channels
 
-By default, Products are visible across all channels, but visibility can be limited to specific channels.
+When you create a product, it is visible across all channels but you can limit visibility to specific channels.
 
-For the purpose of this example, we will consider a multi-brand scenario where the same products are shared across multiple brands. Here, each site has a different brand experience.
+Consider a multi-brand scenario where multiple brands share the same products. Here, each site has a different brand experience. 
 
-![Multiple products in the same catalog can be filtered to be sold on multiple channels.](./configuring-product-visibility-using-channels/images/01.png)
+![You can filter multiple products from the same catalog to sell them on different channels.](./configuring-product-visibility-using-channels/images/01.png)
 
-To learn more about the using Channels in Liferay Commerce, see: [Introduction to Channels](./introduction-to-channels.md).
+## Filtering Products By Channel
 
-## Prerequisites
+These instructions assume you have products in your catalog, and two or more channels.
 
-1. One or more sites have been created.
-1. Each site has an associated channel.
-1. Products have been added to a catalog.
+1. Open the _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) and navigate to _Commerce_ &rarr; _Products_.
+1. Select a product.
+1. Go to the _Visibility_ tab.
 
-## Configuring Product Filter Channels
+    ![Go to the Visibility tab to filter products by account groups or channels.](./configuring-product-visibility-using-channels/images/02.png)
 
-1. Click _Global Applications_ &rarr; _Commerce_ & _Products_.
-1. Click on a product.
-1. Click on the _Visibility_ tab.
+    You can filter a product by channels and account groups.
 
-    ![Product visibility in 2.1](./configuring-product-visibility-using-channels/images/03.png)
-
-1. Click the Add button.
-1. Click on the desired channel (for example, _Test Channel One_).
-1. Click _Add_.
+1. Activate the toggle for channels.
+1. Click _Add_ (![Add](../../images/icon-add.png)).
+1. Check the desired channel and click _Add_.
+1. Click _Publish_.
 
 The channel is now associated with the product.
 
 ## Commerce 2.1 and Below
 
-To configure a product to be available in a specific channel, follow these steps:
+1. Navigate to the _Control Panel_ &rarr; _Commerce_ &rarr; _Products_.
+1. Select a product.
+1. Go to the _Visibility_ tab.
 
-1. Navigate to the _Control Panel_ → _Commerce_ → _Products_.
-1. Click on a product.
-1. Click on the _Visibility_ tab.
+    ![Go to the Visibility tab to filter products by account groups or channels.](./configuring-product-visibility-using-channels/images/03.png)
 
-    ![Product visibility in 2.1](./configuring-product-visibility-using-channels/images/03.png)
-
-1. Click the Add button.
-1. Click on the desired channel (for example, _Test Channel One_).
+1. Click _Add_ (![Add](../../images/icon-add.png)).
+1. Click on the desired channel.
 1. Click _Add_.
 
 The channel is now associated with the product.
 
 ### Commerce 2.0 and Below
 
-To configure a product to be available in a specific channel, follow these steps:
-
-1. Navigate to the _Control Panel_ → _Commerce_ → _Products_.
-1. Click a product (_Torque Converters_ in this example).
+1. Navigate to _Control Panel_ &rarr; _Commerce_ &rarr; _Products_.
+1. Select a product.
 1. Click the _Configuration_ sub-tab.
-1. Click the _Channels_ sidebar option.
-1. Switch the _Enable filter channels_ toggle to _Yes_.
-1. Check the boxes for each Channel (in this case, the _NA Minium Store_) where the product should be visible.
+1. Select _Channels_ from the sidebar.
+1. Activate the _Enable filter channels_ toggle.
+1. Check the boxes for each channel (in this case, the _NA Minium Store_) where the product should be visible.
 
-    ![Product configuration](./configuring-product-visibility-using-channels/images/02.png)
+    ![Configure a product to appear in selected channels.](./configuring-product-visibility-using-channels/images/04.png)
 
 1. Click _Save_.
 
-The product will be visible only in the selected Channels.
+The product only appears in the selected channels.
 
 ## Related Topics
 
-* [Introduction to Channels](./introduction-to-channels.md)
+* [Channels](../channels.md)
 * [Managing Channels](./managing-channels.md)

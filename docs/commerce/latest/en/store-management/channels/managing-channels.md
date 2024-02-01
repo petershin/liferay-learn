@@ -10,51 +10,44 @@ taxonomy-category-names:
 ---
 # Managing Channels
 
-This article describes how to manage Channels in Liferay Commerce. To learn about the uses for Channels in Liferay Commerce, see: [Introduction to Channels](./introduction-to-channels.md) and the [Channels Reference Guide](./channels-reference-guide.md).
-
-By default, a channel is automatically created if using an accelerator (for example, Minium) to jump-start a store site.
+To display products and receive orders, a Liferay instance must have at least one channel. Accelerators like Minium already have a channel set up for you.
 
 ## Adding a New Channel
 
-1. Click _Global Applications_ &rarr; _Commerce_ &rarr; _Channels_.
-1. Click the (![Add icon](../../images/icon-add.png)) button.
-1. Enter a name for the new channel.
-1. Select a currency to associate with the channel.
+1. Open the _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) and navigate to _Commerce_ &rarr; _Channels_.
+1. Click _Add_ (![Add icon](../../images/icon-add.png)).
+1. Enter a name and choose a currency for the channel.
+1. Choose _Site_ from the _Type_ dropdown.
 
-    ![Navigate to Channels.](./managing-channels/images/01.png)
-
-1. In the _Type_ field, select _Site_.
-
-    ![Adding a Channel](./managing-channels/images/02.png)
+    ![Enter a name, currency and type for the channel.](./managing-channels/images/01.png)
 
 1. Click _Add_.
 
-The channel is now created. Products may now be configured to be filtered by this new channel. See [Configuring Product Visibility Using Channels](./configuring-product-visibility-using-channels.md) for more information.
+This creates a new channel. To start using it to sell products, you must link it to a Liferay site. If you want to use the channel for a supplier, you must link it to a [supplier account](../../order-management/suppliers/supplier-account.md).
 
-## Associating a Channel with a DXP Site
+## Linking a Channel to a Liferay Site
 
-A channel can be associated with a Liferay site or an external channel such as Amazon Marketplace. To associate a channel with a site on a DXP instance:
+To use a channel to sell products, you must link it to a Liferay site.
 
-1. Click on the desired channel (for example, _Everest_ from the steps above).
-1. Click the _Type_ tab.
+1. Open the _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) and navigate to _Commerce_ &rarr; _Channels_.
+1. Select the desired channel.
+1. Go to _Type_.
 
-    ![The Type tab is where users select a store site.](./managing-channels/images/03.png)
+    ![Choose a site to link to the channel.](./managing-channels/images/02.png)
 
 1. Click _Select Site_.
 1. Click _Choose_ next to the desired site.
+1. Click _Save_.
 
-    ![Select the desired store site.](./managing-channels/images/04.png)
-
-1. Click _Save_ when finished.
-
-The channel is now associated with that store site. Users can always select a different site later as long it is not already associated with another channel.
+You can link a different site to the channel later as long as the site is not linked to another channel. You can also configure products to appear only in this channel. See [Configuring Product Visibility Using Channels](./configuring-product-visibility-using-channels.md) for more information.
 
 ## Deleting a Channel
 
 Channels can be deleted, including those created by an site accelerator. Note that when deleting a channel, this does not delete the DXP site. To delete a channel:
 
-1. Navigate to the _Control Panel_ → _Commerce_ → _Channels_.
-1. Click the (![3-dot icon](../../images/icon-actions.png)) then _Delete_.
+1. Open the _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) and navigate to _Commerce_ &rarr; _Channels_.
+1. Navigate to the _Control Panel_ &rarr; _Commerce_ &rarr; _Channels_.
+1. Click _Actions_(![Actions](../../images/icon-actions.png)) and select _Delete_.
 
 The channel is now deleted.
 
@@ -64,19 +57,17 @@ The channel is now deleted.
 
 To add a new Channel, follow these steps:
 
-1. Navigate to the _Control Panel_ → _Commerce_ → _Channels_.
+1. Navigate to the _Control Panel_ &rarr; _Commerce_ &rarr; _Channels_.
 1. Click the (![Add icon](../../images/icon-add.png)) button.
 1. Enter a name for the new channel.
 1. Select a currency to associate with the channel.
 1. In the _Type_ field, select _Site_.
 
-    ![Adding a Channel](./managing-channels/images/02.png)
+    ![Adding a new channel.](./managing-channels/images/03.png)
 
 1. Click _Add_.
 
-The channel is now created. Products may now be configured to be filtered by this new channel. See [Configuring Product Visibility Using Channels](./configuring-product-visibility-using-channels.md) for more information.
-
-At this point, the channel is not yet been associated with any store site.
+You can link a different site to the channel later as long as the site is not linked to another channel. You can also configure products to appear only in this channel. 
 
 ### Commerce 2.0 and Below
 
@@ -84,7 +75,7 @@ At this point, the channel is not yet been associated with any store site.
 
 To add a new Channel, follow these steps:
 
-1. Navigate to the _Control Panel_ → _Commerce_ → _Channels_.
+1. Navigate to the _Control Panel_ &rarr; _Commerce_ &rarr; _Channels_.
 1. Click the (![Add icon](../../images/icon-add.png)) button.
 1. Enter a name for the new channel.
 1. In the _Type_ field, select _Site_.
@@ -92,12 +83,12 @@ To add a new Channel, follow these steps:
 1. Select a currency to associate with the channel.
 1. Click _Save_.
 
-    ![Adding a channel](./managing-channels/images/01.png)
+    ![Adding a new channel.](./managing-channels/images/04.png)
 
-The channel is created and associated with the selected site. Products may now be configured to be filtered by this new channel.
+You can link a different site to the channel later as long as the site is not linked to another channel. You can also configure products to appear only in this channel. 
 
 ## Related Topics
 
-* [Introduction to Channels](./introduction-to-channels.md)
+* [Channels](../channels.md)
 * [Configuring Product Visibility Using Channels](./configuring-product-visibility-using-channels.md)
 * [Channels Reference Guide](./channels-reference-guide.md)

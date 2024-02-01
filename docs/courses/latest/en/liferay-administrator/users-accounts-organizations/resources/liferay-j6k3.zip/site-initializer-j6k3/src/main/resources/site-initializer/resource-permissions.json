@@ -1,30 +1,23 @@
 [
 	{
 		"actionIds": [
-			"VIEW_SITE_ADMINISTRATION"
-		],
-		"resourceName": "com.liferay.portal.kernel.model.Group",
-		"roleName": "Portal Content Manager",
-		"scope": "1"
-	},
-	{
-		"actionIds": [
-			"ACCESS_IN_CONTROL_PANEL"
-		],
-		"resourceName": "com_liferay_journal_web_portlet_JournalPortlet",
-		"roleName": "Portal Content Manager",
-		"scope": "1"
-	},
-	{
-		"actionIds": [
 			"ADD_ARTICLE",
 			"ADD_FOLDER",
-			"ADD_TEMPLATE",
 			"ADD_STRUCTURE",
+			"ADD_TEMPLATE",
 			"UPDATE",
 			"VIEW"
 		],
 		"resourceName": "com.liferay.journal",
+		"roleName": "Portal Content Manager",
+		"scope": "1"
+	},
+	{
+		"actionIds": [
+			"UPDATE",
+			"VIEW"
+		],
+		"resourceName": "com.liferay.journal.model.JournalArticle",
 		"roleName": "Portal Content Manager",
 		"scope": "1"
 	},
@@ -41,10 +34,17 @@
 	},
 	{
 		"actionIds": [
-			"UPDATE",
-			"VIEW"
+			"ACCESS_IN_CONTROL_PANEL"
 		],
-		"resourceName": "com.liferay.journal.model.JournalArticle",
+		"resourceName": "com_liferay_journal_web_portlet_JournalPortlet",
+		"roleName": "Portal Content Manager",
+		"scope": "1"
+	},
+	{
+		"actionIds": [
+			"VIEW_SITE_ADMINISTRATION"
+		],
+		"resourceName": "com.liferay.portal.kernel.model.Group",
 		"roleName": "Portal Content Manager",
 		"scope": "1"
 	},

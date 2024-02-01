@@ -12,16 +12,16 @@
 		]
 	},
 	{
-		"emailAddress": "preston@clarityvisionsolutions.com",
-		"roles": [
-			"Site Administrator"
-		]
-	},
-	{
 		"emailAddress": "olivia@clarityvisionsolutions.com",
 		"roles": [
 			"Portal Content Manager",
 			"Portal Content Reviewer"
+		]
+	},
+	{
+		"emailAddress": "preston@clarityvisionsolutions.com",
+		"roles": [
+			"Site Administrator"
 		]
 	},
 	{

@@ -1,9 +1,8 @@
 ---
 toc:
-  - ./channels/introduction-to-channels.md
-  - ./channels/managing-channels.md
-  - ./channels/configuring-product-visibility-using-channels.md
-  - ./channels/channels-reference-guide.md
+ - ./channels/managing-channels.md
+ - ./channels/configuring-product-visibility-using-channels.md
+ - ./channels/channels-reference-guide.md
 uuid: 76dc2868-58bd-4ee2-aa27-36609a9f5b6e
 taxonomy-category-names:
 - Commerce
@@ -15,19 +14,41 @@ taxonomy-category-names:
 ---
 # Channels
 
-```{toctree}
-:maxdepth: 1
+Channels represent a place where you sell products. It can be a Liferay customer portal, a B2B marketplace, or even back office phone sales. By connecting sales channels to Liferay, sellers can manage product content, inventory, orders, and fulfillment across multiple channels in a single place.
 
-channels/introduction-to-channels.md
-channels/managing-channels.md
-channels/configuring-product-visibility-using-channels.md
-channels/channels-reference-guide.md
-```
+To display products and receive orders, a Liferay instance must have at least one channel.
 
-```{raw} html
-:file: ../landingpage_template.html
-```
+With multiple channels, you can create more than one Liferay site, each with a unique customer experience. You can also connect them to third party softwares or systems, or use a combination of both. You can configure products and discounts to be available in all channels or specific channels. Similarly, multiple configurations are available at the channel level. This includes:
 
-```{raw} html
-:file: channels/landing.html
-```
+* Category Display Pages
+* Notifications
+* Order Workflows
+* Order Fields
+* Payment Methods
+* Product Display Pages
+* Shipping Methods
+* Taxes
+* Countries
+* Warehouses
+
+::::{grid} 2
+:gutter: 3 3 3 3
+
+:::{grid-item-card}  Managing Channels
+:link: ./channels/managing-channels.md
+:::
+
+:::{grid-item-card}  Configuring Product Visibility Using Channels
+:link: ./channels/configuring-product-visibility-using-channels.md
+:::
+
+:::{grid-item-card}  Channels Reference Guide
+:link: ./channels/channels-reference-guide.md
+:::
+::::
+
+## Related Topics
+
+* [Managing Channels](./channels/managing-channels.md)
+* [Configuring Product Visibility Using Channels](./channels/configuring-product-visibility-using-channels.md)
+* [Channels Reference Guide](./channels/channels-reference-guide.md)

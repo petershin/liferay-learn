@@ -8,7 +8,7 @@ taxonomy-category-names:
 - Liferay PaaS
 - Liferay SaaS
 ---
-# OAuth 2.0 Scopes
+# OAuth 2 Scopes
 
 In OAuth 2.0, applications are granted access to limited subsets of user data. These are called *scopes* (not to be confused with Liferay scopes). You can create them in two ways:
 

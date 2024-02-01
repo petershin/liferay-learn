@@ -87,6 +87,12 @@ If users should not be able to reset their own passwords, you can configure this
 1. Uncheck *Allow users to request password reset links?*.
 1. Click *Save*.
 
+### Disabling the Password Section During Account Creation
+
+{bdg-secondary}`Liferay DXP 2023.Q4+/Portal 7.4 GA92+`
+
+If the [*Allow Custom Password at Account Creation*](../../system-administration/configuring-liferay/virtual-instances/users.md#fields) field is unchecked, the password fields are unavailable at the time of account creation from the Sign In widget. This also applies to users invited by email for account creation.
+
 ### Configuring CAPTCHA or reCAPTCHA
 
 Prevent bots from creating and logging into accounts by enabling CAPTCHA or reCAPTCHA:

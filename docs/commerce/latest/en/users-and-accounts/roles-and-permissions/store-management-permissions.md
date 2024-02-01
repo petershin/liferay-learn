@@ -90,7 +90,7 @@ Store Management applications are connected to the following resources:
 
 ## Related Topics
 
-* [Introduction to Channels](../../store-management/channels/introduction-to-channels.md)
+* [Channels](../../store-management/channels.md)
 * [Managing Channels](../../store-management/channels/managing-channels.md)
 * [Channels Reference Guide](../../store-management/channels/channels-reference-guide.md)
 * [Currencies Reference](../../store-management/currencies/currencies-reference.md)

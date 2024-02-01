@@ -48,4 +48,4 @@ When one or more shipping options are active for the channel, the highest priori
 
 [Setting Channel Defaults](./setting-channel-defaults.md)
 
-[Introduction to Channels](https://learn.liferay.com/web/guest/w/commerce/store-management/channels/introduction-to-channels)
+[Channels](https://learn.liferay.com/web/guest/w/commerce/store-management/channels)

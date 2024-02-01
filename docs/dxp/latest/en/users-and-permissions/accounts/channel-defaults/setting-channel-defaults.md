@@ -147,4 +147,4 @@ If you use [organizations](../../organizations/understanding-organizations.md), 
 
 * [Channel Defaults](../channel-defaults.md)
 * [Channel Defaults Permissions Reference](./channel-defaults-permissions-reference.md)
-* [Introduction to Channels](https://learn.liferay.com/web/guest/w/commerce/store-management/channels/introduction-to-channels)
+* [Channels](https://learn.liferay.com/web/guest/w/commerce/store-management/channels)

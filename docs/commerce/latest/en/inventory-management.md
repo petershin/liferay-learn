@@ -40,7 +40,7 @@ Warehouses represent physical locations where you can manage product inventory a
 
 See [Setting Up Commerce Warehouses](./inventory-management/setting-up-warehouses.md) and [Warehouse Reference Guide](./inventory-management/warehouse-reference-guide.md) for more information on managing warehouses.
 
-For a store to accept orders, the related channel must have a warehouse associated with it. Read [Introduction to Channels](./store-management/channels/introduction-to-channels.md) to understand how channels work.
+For a store to accept orders, the related channel must have a warehouse associated with it. Read [Channels](./store-management/channels.md) to understand how channels work.
 
 ## Setting Inventory by Warehouse
 

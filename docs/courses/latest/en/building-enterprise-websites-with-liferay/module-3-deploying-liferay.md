@@ -17,7 +17,7 @@ In this module you will learn:
 :::{grid-item-card}  Liferay Deployment Options
 :link: ./module-3-deploying-liferay/liferay-deployment-options.md
 
-Liferay offers three deployment options: Liferay SaaS, Liferay PaaS, and Liferay Self-Hosted.
+Understand the three deployment options: Liferay SaaS, Liferay PaaS, and Liferay Self-Hosted.
 :::
 
 :::{grid-item-card}  Liferay SaaS and Clarity

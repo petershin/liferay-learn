@@ -3,7 +3,7 @@ uuid: 7a9b787b-ebd4-49b4-8b63-1d590b9b57e6
 ---
 # Liferay SaaS and Clarity
 
-Clarity can choose from the three deployment options (i.e. Liferay SaaS, Liferay PaaS, and Liferay Self-Hosted). Some businesses may prefer to have exclusive control over their technology stack or to keep their data on-premises. Others may prefer to leverage SaaS tools to be able to focus on their core business. After a number of years of piecing together different systems and solutions, Clarity is ready to simplify their approach by choosing Liferay SaaS.
+Clarity can choose from the three deployment options previously mentioned. Some businesses may prefer to have exclusive control over their technology stack or to keep their data on-premises. Others may prefer to leverage SaaS tools to be able to focus on their core business. After a number of years of piecing together different systems and solutions, Clarity is ready to simplify their approach by choosing Liferay SaaS.
 
 At a high level:
 
@@ -32,3 +32,5 @@ Rapid growth has been great for Clarity's bottom line, but it has also meant sca
 * Performance scaling to handle peak loads
 * 99.80 percent uptime
 * 24/7 monitoring and on-going health checks
+
+Next: [Liferay SaaS Provisioning](./liferay-saas-provisioning.md)

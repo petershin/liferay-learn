@@ -1,7 +1,7 @@
 ---
 toc:
 - ./building-enterprise-websites-with-liferay/module-1-getting-started-with-clarity.md
-- ./building-enterprise-websites-with-liferay/module-2.md
+- ./building-enterprise-websites-with-liferay/module-2-developer-setup.md
 - ./building-enterprise-websites-with-liferay/module-3.md
 - ./building-enterprise-websites-with-liferay/module-4.md
 - ./building-enterprise-websites-with-liferay/module-5.md
@@ -64,9 +64,9 @@ Learn the story of Clarity Vision Solutions and how Liferay can help them overco
 :::
 
 :::{grid-item-card}  Module 2: Developer Setup
-:link: ./building-enterprise-websites-with-liferay/module-2.md
+:link: ./building-enterprise-websites-with-liferay/module-2-developer-setup.md
 
-Coming Soon in Q1 2024
+Learn about Liferay Workspace and Client Extensions, two key features for building applications with Liferay.
 :::
 
 :::{grid-item-card}  Module 3: Installation & Upgrades

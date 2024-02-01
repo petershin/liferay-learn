@@ -7,7 +7,7 @@ Liferay Workspace is an environment designed to handle the full development life
 
 <!-- IMAGE: Include diagram image representing Liferay Workspace's folders and scripts structure. -->
 
-### Prerequisites
+## Prerequisites
 
 Complete these prerequisites to install Liferay Workspace on your computer:
 
@@ -43,7 +43,7 @@ Complete these prerequisites to install Liferay Workspace on your computer:
    - [Eclipse](https://eclipseide.org/)
    - [Intellij IDEA](https://www.jetbrains.com/idea/download/)
 
-### Creating a Liferay Workspace
+## Creating a Liferay Workspace
 
 Follow these steps to generate your own Liferay Workspace:
 
@@ -74,7 +74,9 @@ If the command doesn't return any errors, the workspace has been successfully ge
 
 Next, we'll introduce you to Client Extensions and explain how they relate to Liferay Workspace.
 
-### Additional Resources
+Up Next: [Client Extensions](./client-extensions.md)
+
+## Additional Resources
 
 Follow these links to troubleshoot installation and learn more about the tools covered in this article:
 

@@ -3,7 +3,7 @@ uuid: 6bab07ab-da1a-4238-ac47-eb4183f4fdb9
 ---
 # Client Extensions
 
-Client Extensions are the primary way to customize and extend Liferay. You can deploy client extensions to any Liferay environment, whether it's Liferay SaaS, Liferay PaaS, or Liferay Self-Hosted. While other extensions like OSGi modules or themes modify or add functionality directly to Liferay, client extensions interface only with Liferay's APIs, which makes them more flexible and easier to deploy after version changes. 
+Client Extensions are the recommended way to customize and extend Liferay. You can deploy client extensions to any Liferay environment, whether it's Liferay SaaS, Liferay PaaS, or Liferay Self-Hosted. While other extensions like OSGi modules or themes modify or add functionality directly to Liferay, client extensions interface only with Liferay's APIs, which makes them more flexible and easier to deploy after version changes.
 
 <!--IMAGE: diagram of how Client Extensions interface with Liferay-->
 
@@ -19,7 +19,7 @@ There are four classifications of Liferay client extensions:
 
 1. **Microservice** client extensions provide API endpoints that can be triggered from within Liferay to run functions outside of Liferay.
 
-1.  **Configuration** client extensions provide specific configurations to change functionality within your Liferay instance. For example, you can use an OAuth user agent client extension to authenticate other client extensions.
+1. **Configuration** client extensions provide specific configurations to change functionality within your Liferay instance. For example, you can use an OAuth user agent client extension to authenticate other client extensions.
 
 ## Client Extension Projects
 
@@ -36,7 +36,10 @@ Client extensions can be grouped in a single project and deployed together as a 
 
 Client extension projects are built with Gradle and deployed with the Liferay Cloud CLI, which you installed in the previous section, [Liferay Workspace](./liferay-workspace.md).
 
+Congratulations! You've completed Module 2 - Developer Setup.
+
+[Back to Building Enterprise Websites with Liferay](../../building-enterprise-websites-with-liferay.md)
+
 ## Additional Resources
 
-[Follow this link to learn more about Client Extensions.](https://learn.liferay.com/web/guest/w/dxp/building-applications/client-extensions)
-
+[Client Extensions](https://learn.liferay.com/web/guest/w/dxp/building-applications/client-extensions)

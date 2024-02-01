@@ -11,11 +11,11 @@ taxonomy-category-names:
 
 {bdg-secondary}`Available 7.4+`
 
-Account Addresses are the billing or shipping addresses associated with a Business Account or a Person Account.
+Account addresses are the billing or shipping addresses associated with a Business account or a Person account.
 
 ## Adding an Account Address
 
-1. Open the Global Menu (![Global Menu](../../images/icon-applications-menu.png)). Navigate to *Control Panel* &rarr; *Accounts*.
+1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)). Navigate to *Control Panel* &rarr; *Accounts*.
 
 1. Select an account by clicking its name, or click _Options_ (![Options icon](../../images/icon-actions.png)) on the account and click _Edit_.
 
@@ -42,3 +42,17 @@ Account Addresses are the billing or shipping addresses associated with a Busine
    ![Click Set Default Address under Billing or Shipping.](./account-addresses/images/03.png)
 
 1. A new window opens. Select an address from the list and click *Save*. Your default address is now set for the account.
+
+## Address Eligibility
+
+{bdg-secondary}`Liferay DXP 2024.Q1+/Portal 7.4 GA112+`
+
+By default, an account's address is eligible for all channels. You can control address eligibility in the _Eligibility_ tab.
+
+1. Select _Specific Channels_.
+1. Search for a channel and click _Select_.
+1. Click _Save_.
+
+![Choose the eligible channels for the selected address.](./channels-reference-guide/images/04.png)
+
+If an address is only eligible for a specific channel, it can't be selected during checkout in ineligible channels. The address won't be available to select on all orders coming from ineligible channels for the selected account.

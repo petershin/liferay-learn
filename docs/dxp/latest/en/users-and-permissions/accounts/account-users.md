@@ -46,10 +46,6 @@ To set user passwords manually,
 
 1. Click *Save*.
 
-```{note}
-The password text field would not be visible if the [Default Password Policy](../roles-and-permissions/configuring-a-password-policy.md)'s Changeable option is deactivated.
-```
-
 ### Associating an Existing User to a Business Account
 
 1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and go to *Control Panel* &rarr; *Accounts*.
@@ -81,7 +77,7 @@ You can invite users to an account by email. Liferay sends an automated invitati
 1. Click *New* and select *Invite Users*.
 
    !!! note
-       {bdg-secondary}`Liferay DXP 2023.Q4+/Portal 7.4 GA98+` A new permission called `Invite User` was added at the Account Entry level to separate a user's ability to invite users and assign them roles. A user with only the `Invite User` permission cannot view the *Assign Users* option after clicking the *New* button.
+       {bdg-secondary}`Liferay DXP 2023.Q4+/Portal 7.4 GA92+` A new permission called `Invite User` was added at the Account Entry level to separate a user's ability to invite users and assign them roles. A user with only the `Invite User` permission cannot view the *Assign Users* option after clicking the *New* button.
        A user with the `Manage Users` permission can view both options.
 
 1. Enter the email address of the person you want to invite and press enter. If desired, you can add multiple addresses.

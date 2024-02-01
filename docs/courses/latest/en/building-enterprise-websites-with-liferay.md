@@ -69,10 +69,10 @@ Learn the story of Clarity Vision Solutions and how Liferay can help them overco
 Learn about Liferay Workspace and Client Extensions, two key features for building applications with Liferay.
 :::
 
-:::{grid-item-card}  Module 3: Installation & Upgrades
+:::{grid-item-card}  Module 3: Deploying Liferay
 :link: ./building-enterprise-websites-with-liferay/module-3-deploying-liferay.md
 
-Get up-and-running with Liferay and start building your business solutions.
+Learn about the different deployment options and start building with Liferay.
 :::
 
 :::{grid-item-card}  Module 4: Identity Management & SSO

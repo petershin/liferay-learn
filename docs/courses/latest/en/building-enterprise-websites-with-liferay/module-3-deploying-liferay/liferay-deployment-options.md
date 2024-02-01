@@ -3,7 +3,7 @@ uuid: 5a6706c2-05f9-4d7c-8b41-a8f69516694d
 ---
 # Liferay Deployment Options
 
-Liferay offers three different deployment options (i.e. Liferay SaaS, Liferay PaaS, and Liferay Self-Hosted). Clarity needs to understand these options and then choose the approach that best suits their needs.
+Liferay SaaS, Liferay PaaS, and Liferay Self-Hosted are available as different deployment options.
 
 At a high level:
 

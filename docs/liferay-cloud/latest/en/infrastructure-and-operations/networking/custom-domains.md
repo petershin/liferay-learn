@@ -10,28 +10,28 @@ uuid: 92fd5ebb-a898-4a13-8c28-f2316ecd5146
 
 With Liferay Cloud, you can connect custom domains to environment services with a DNS provider.
 
-To do this, first register your custom domain with your environment's Load Balancer IP address. Then add the domain to the desired service via the Liferay Cloud console or the service's LCP.json file.
+First, register your custom domain with your environment's Load Balancer IP address. Then add the domain to the desired service via the Liferay Cloud console or the service's LCP.json file.
 
 !!! warning
-    Changes or additions to custom domains can take several hours to propagate.
+    Changes or additions to custom domains can take one or more hours to propagate.
 
--   [Registering a Custom Domain with an Environment IP](#registering-a-custom-domain-with-an-environment-ip)
--   [Adding a Custom Domain to a Liferay Cloud Service](#adding-a-custom-domain-to-a-liferay-cloud-service)
--   [Verifying the Status of a Custom Domain](#verifying-the-status-of-a-custom-domain)
+- [Registering a Custom Domain with an Environment IP](#registering-a-custom-domain-with-an-environment-ip)
+- [Adding a Custom Domain to a Liferay Cloud Service](#adding-a-custom-domain-to-a-liferay-cloud-service)
+- [Verifying the Status of a Custom Domain](#verifying-the-status-of-a-custom-domain)
 
 ## Registering a Custom Domain with an Environment IP
 
-Each project environment has its own Ingress Load Balancer IP that can be used to connect custom domains to environment services.
+Each project environment has its own Ingress Load Balancer IP address that can be used to connect custom domains to environment services.
 
-This IP is listed in each environment's *Network* page, as well as in each service's dedicated page under *Custom Domains*.
+This IP appears each environment's *Network* page, as well as in each service's dedicated page under *Custom Domains*.
 
-![Figure 1: You can find the environment's Ingress Load Balancer IP in the environment's Network page.](./custom-domains/images/01.png)
+![You can find the environment's Ingress Load Balancer IP in the environment's Network page.](./custom-domains/images/01.png)
 
 Register a custom domain with the environment's dedicated IP as a type `A` record before adding the domain to an environment service. You can do this using the domain name registrar of your choice.
 
 The following example uses Cloudflare to create DNS records.
 
-![Figure 2: This example uses Cloudflare as a domain name registrar to create DNS records.](./custom-domains/images/02.png)
+![This example uses Cloudflare as a domain name registrar to create DNS records.](./custom-domains/images/02.png)
 
 DNS propagation can take up to 24-48 hours to take full effect, but in some cases takes only a few minutes.
 
@@ -56,7 +56,7 @@ Follow these steps to add custom domains to environment services via the Liferay
 
 1. Enter any custom domains registered with your environment into the *Domain Names* field.
 
-    ![Figure 3: Use the service's Custom Domains tab to add the domains.](./custom-domains/images/03.png)
+    ![Use the service's Custom Domains tab to add the domains.](./custom-domains/images/03.png)
 
 1. Click *Update Custom Domains* to finalize the addition.
 
@@ -95,10 +95,10 @@ Once a custom domain is added to your service and your changes are deployed, Lif
 
 You can verify the status of your custom domain in two ways:
 
--  Open a browser and enter the custom domain. When the endpoint is ready, it no longer returns a `default backend - 404` error or security warnings.
--  Check the status of the service's domain via the Liferay Cloud console by navigating to the environment's *Network* page.
+- Open a browser and enter the custom domain. When the endpoint is ready, it no longer returns a `default backend - 404` error or security warnings.
+- Check the status of the service's domain via the Liferay Cloud console by navigating to the environment's *Network* page.
 
-![Figure 4: View all your endpoints and custom domains on the Network page.](./custom-domains/images/04.png)
+![View all your endpoints and custom domains on the Network page.](./custom-domains/images/04.png)
 
 It may take some time to be able to verify a custom domain after configuration due to backend processes. Backend processes that impact the time for a custom domain to be verifiable include: adding a route to Liferay Cloud's load balancer, requesting an SSL server certificate through [Let's Encrypt](https://letsencrypt.org/), receiving a challenge from Let's Encrypt, and updating the load balancer with the certificate once it passes the challenge.
 
@@ -111,5 +111,5 @@ See [Load Balancer](./load-balancer.md) to learn more about SSL certificates in 
 
 ## Related Topics
 
--  [Load Balancer](./load-balancer.md)
--  [Configuration Via LCP.json](../../reference/configuration-via-lcp-json.md)
+- [Load Balancer](./load-balancer.md)
+- [Configuration Via LCP.json](../../reference/configuration-via-lcp-json.md)

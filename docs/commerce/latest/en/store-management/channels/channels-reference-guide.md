@@ -45,7 +45,7 @@ The orders section contains several settings to customize the ordering experienc
 * {bdg-secondary}`Liferay DXP 7.4 U84+/GA84+` Allow Request a Quote on a Fully Priced Cart - Enable it to allow buyers to request a quote on a cart that has no products [priced on application](../../order-management/orders/price-on-application.md).
 * Maximum Number of Open Orders per Account - Set the maximum number of open orders per account
 * Order Importer Date Format - Set the date format to use while importing orders. See [Order Importer](../../order-management/order-importer.md) for more information.
-* Print Order Template - Upload a file to use as template for 
+* Print Order Template - Upload a `.jrxml` file to use as a template for printing order details. You can download the [default order template](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-report-impl/src/main/resources/com/liferay/commerce/report/internal/exporter/dependencies/commerce_order.jrxml), make changes to it, and upload it to use as the new template.
 * Show Separate Order Items - Enable it to display each item added to the cart on a separate line instead of updating the quantity for the same item. 
 
 ![You can configure several settings to customize the ordering experience for end users.](./channels-reference-guide/images/03.png)

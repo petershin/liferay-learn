@@ -3,7 +3,7 @@ uuid: adcd285a-f232-4a58-b570-d51788ef8b9c
 ---
 # Refunds
 
-Liferay's new Payments application supports the creation of refunds for applicable payment methods. Once processed, the refund goes back to the original payment method. There are two main steps involved in refunding money. The first step is to create a refund on the required payment. The second step is to submit the refund after verifying all the necessary details. 
+Liferay's new Payments application supports the creation of refunds for online payments. Once processed, the refund goes back to the original payment method. There are two main steps involved in refunding money. The first step is to create a refund on the required payment. The second step is to submit the refund after verifying all the necessary details. 
 
 ## Creating and Submitting a Refund
 

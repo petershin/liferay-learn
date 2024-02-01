@@ -6,12 +6,6 @@ toc:
   - ./using-display-page-templates/displaying-categories-using-display-pages.md
   - ./using-display-page-templates/using-multiple-display-page-templates-to-create-multi-step-applications.md
   - ./using-display-page-templates/configuring-seo-and-open-graph.md
-  taxonomy-category-names:
-- Sites
-- Display Page Templates
-- Liferay Self-Hosted
-- Liferay PaaS
-- Liferay SaaS
 ---
 # 表示ページテンプレートの使用
 

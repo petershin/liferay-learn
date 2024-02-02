@@ -2,8 +2,13 @@
 uuid: 35a19aa0-6267-4ff5-9b59-54aef6569b75
 ---
 # Building Clarity on Liferay
+<!--TASK: Confirm that abstract works on learn-->
+!!! abstract
+    In this course you'll build an enterprise marketing website for Clarity following both business and IT personas.
 
 Throughout this course, we will build an enterprise marketing website for Clarity Vision Solutions. This site is designed to increase brand awareness, showcase their products, and convert visitors to customers.
+
+Here we'll review the site's designs and the personas we'll follow throughout our journey.
 
 ## Enterprise Website Designs
 

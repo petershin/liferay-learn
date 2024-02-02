@@ -18,7 +18,7 @@ First, add a fragment composition highlighting the uniqueness of Clarity:
 
 1. Open the Home page in editing mode.
 
-1. Add the _clarity-uniqueness-composition_ to the page.
+1. Add the _J2B6 Clarity Uniqueness_ composition to the page.
 
 1. Publish the page.
 

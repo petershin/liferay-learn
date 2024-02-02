@@ -15,7 +15,7 @@ In addition, navigation menus can add dynamic items to the footer. Clarity's foo
 
 The Shop menu is blank for now, as it's configured in [Commerce Architect](../../commerce-architect.md).
 
-First create the navigation menu:
+First create the header navigation menu:
 
 1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)) and go to _Site Builder_ &rarr; _Navigation Menus_.
 

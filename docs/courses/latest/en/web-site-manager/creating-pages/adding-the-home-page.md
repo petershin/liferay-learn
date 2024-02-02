@@ -59,6 +59,8 @@ Clarity needs its own home page. Page creation and management is the work of a s
 
 1. Open the _Styles_ menu in the right sidebar, and set the *Background Image* to `clarity-banner-image`.
 
+1. Set the text color for the Heading and Paragraph elements. Open each one's _Styles_ tab, click the color, and choose _Brand Color 4_.
+
 1. Change the text on the page by double clicking the element to edit:
 
    - **Heading:** _See Well, Look Good_

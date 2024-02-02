@@ -72,7 +72,7 @@ Next, you'll create a site based on the template you just created.
 
 Your new site is generated and you can use all the resources created within the Site Template or create new elements for your site! Repeat the same process and create the Clarity B2B site as well. Try it!
 
-Next, learn how you can [make changes to the template’s pages and automatically propagate those changes to connected sites](./site-template-propagation.md).
+Next: [make changes to the template’s pages and automatically propagate those changes to connected sites](./site-template-propagation.md).
 
 ## Relevant Concepts
 

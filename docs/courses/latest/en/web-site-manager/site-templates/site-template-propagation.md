@@ -5,11 +5,11 @@ uuid: 23fd683c-877a-4e51-b14b-2bf74a5de018
 
 Now that you have a site template and a site based on that template, you can make alterations to the site template and propagate those changes to the connected sites.
 
-Keep in mind that making changes to a page inherited from a template prevents the propagation of template changes to that page. So, you should keep the inherited pages unchanged and alter only pages created for that site specifically. If you do change them you can always revert the changes and reconnect the inherited page to its template.
+Remember: making changes to a page inherited from a template prevents the propagation of template changes to that page. Therefore, you should keep the inherited pages unchanged and alter only pages created for that site specifically. If you do change them, you can always revert the changes and reconnect the inherited page to its template.
 
 ## Making Alterations to the Site Template and Propagating Them
 
-When you created the Site Template, the Ready for Propagation option was on. This means that every change you make in your template is propagated automatically to the connected sites once a user visits the site after the template is updated.
+When you created the Site Template, the Ready for Propagation option was on. This means that every change you make in your template is propagated automatically to the connected sites. 
 
 See how it works by altering the address of the Tokyo Office in the About Us and Contact Us pages.
 
@@ -25,7 +25,7 @@ See how it works by altering the address of the Tokyo Office in the About Us and
 
 1. Publish the page.
 
-If you visit the About Us page in the Glance site (the connected site), you will see that the address is altered there as well.
+If you visit the About Us page in the Glance site (the connected site), you can see that the address is altered there.
 
 ## Disconnecting and Reconnecting Propagation in a Connected Page
 
@@ -33,13 +33,13 @@ Make an alteration to the About Us page in the Glance site to see what happens w
 
 1. In the About Us page in the Glance site, click *Edit* (![Edit icon](../../images/icon-edit.png)) at the top right corner of your page.
 
-1. Change the paragraph in the first row. Double-click the paragraph, select `Discovery the clarity of vision you deserve with Clarity.` and remove its bold formatting.
+1. Change the paragraph in the first row. Double-click the paragraph, select `Discover the clarity of vision you deserve with Clarity.` and remove its bold formatting.
 
    An icon appears next to the name of the page. It means that the propagation was disconnected for that page. Any changes you make to the template are not propagated to that page anymore.
 
    ![The information icon indicates that the propagation is disconnected for that page. Use the Reset Changes button to re-enable the propagation.](./site-template-propagation/images/01.png)
 
-1. To reconnect the propagation, click on the *Additional Information* icon (![Additional Information icon](../../images/icon-additional-information.png)) and click *Reset Changes*.
+1. To reconnect the propagation, click *Additional Information* (![Additional Information icon](../../images/icon-additional-information.png)) &rarr; *Reset Changes*.
 
    ![Click Reset Changes to reconnect propagation.](./site-template-propagation/images/02.png)
 
@@ -53,13 +53,13 @@ To disable propagation in a template page,
 
 1. Navigate back to your template and start editing the About Us page.
 
-1. Click on the *Propagation* icon (![](../../images/icon-propagation.png)) next to the name of the page and click *Disable Propagation*.
+1. Click on the *Propagation* icon (![Propagation icon](../../images/icon-propagation.png)) next to the name of the page and click *Disable Propagation*.
 
-   ![You can desable/enable propagation from your template page](./site-template-propagation/images/03.png)
+   ![You can disable/enable propagation from your template page](./site-template-propagation/images/03.png)
 
    You can now make alterations to the page and they are not propagated to connected pages.
 
-   Once you are done, click on the Propagation icon again and click *Ready for Propagation*. All the alterations are propagated to connected pages.
+   Once you are done, click *Propagation* (![Propagation icon](../../images/icon-propagation.png)) again and click *Ready for Propagation*. All the alterations are propagated to connected pages.
 
 That's it. Congratulations, Liferay Learner! You have just completed this module.
 
@@ -68,6 +68,8 @@ During these lessons, you have learned how to create a site template, create pag
 Phew! That was a lot. Keep on practicing!
 
 Next, you'll learn how to modify the [Site Look and Feel.]()
+
+<!-- The Site Look and Feel module was never completed before the handover. -Rich -->
 
 ## Relevant Concepts
 

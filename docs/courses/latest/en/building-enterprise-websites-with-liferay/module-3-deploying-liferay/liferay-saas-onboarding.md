@@ -9,7 +9,7 @@ After learning the benefits of Liferay DXP and the value of Liferay SaaS, Clarit
 
 <!-- Please use: https://docs.google.com/presentation/d/1QZ-uVKOJnyg8T2WmOqhxChBlaPww6H7C_CnuPNPzdEA/edit#slide=id.g2b413a43341_0_357 and go over in detail what people can expect -->
 
-Once your project is provisioned and your admin user on PRD and UAT is created, you'll receive password update emails for each environment. After setting your own password, you can add other admin users.
+Once your project is provisioned and your admin user on PRD and UAT is created, you'll receive a password update email for each Liferay DXP environment. After setting your own password, you can add other admin users.
 
 You will also receive two additional emails, generated from Liferay Cloud. These are for the PRD and UAT Extension environments, which are provided for deploying custom services (client extensions). Click *Accept Invite* to gain access to the Liferay Cloud console for each environment. Note that if this your first time using Liferay Cloud console, you'll need to create an account first.
 
@@ -17,19 +17,15 @@ You will also receive two additional emails, generated from Liferay Cloud. These
 
 ## The Basics
 
-<!-- Use: https://docs.google.com/presentation/d/1QZ-uVKOJnyg8T2WmOqhxChBlaPww6H7C_CnuPNPzdEA/edit#slide=id.g2b413a43341_0_555 speaker notes. It's not necessary however to talk about not having access to system scoped features -->
-
 Liferay DXP serves as the foudational element of Liferay SaaS, providing a robust infrastructure for a multi-tenant environment. Once you have logged in, you will be able to use almost all of the out-of-the-box features you are used to with Liferay DXP. To ensure the security and privacy of individual tenants, certain DXP features are not accessible.
 
 For a comprehensive breakdown of feature availability within Liferay SaaS, check [Liferay Experience Cloud Compatibility Matrix](https://help.liferay.com/hc/en-us/articles/17817489997325-Liferay-Experience-Cloud-Compatibility-Matrix).
 
 ## The Cloud Administration Console
 
-<!-- Use: https://docs.google.com/presentation/d/1QZ-uVKOJnyg8T2WmOqhxChBlaPww6H7C_CnuPNPzdEA/edit#slide=id.g2b413a43341_0_774 -->
+Clarity can log in to the Liferay cloud console to see real-time metrics of the cloud infrastructure and monitor activities of the environment.
 
-<!-- Clarity can log in to the Liferay cloud console to see real-time metrics of the cloud infrastructure and monitor activities of the environment. -->
-
-<!-- Blur the names or use the sample image in the presentation ![Login to the Liferay cloud console.](./liferay-saas-onboarding/images/02.png) -->
+![Login to the Liferay cloud console.](./liferay-saas-onboarding/images/02.png)
 
 The metrics and information available in the cloud console include:
 

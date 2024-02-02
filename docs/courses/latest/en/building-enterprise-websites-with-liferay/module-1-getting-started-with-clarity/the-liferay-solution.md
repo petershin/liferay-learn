@@ -6,11 +6,9 @@ uuid: 4e517f86-fc12-44c5-89a7-35c9835a91b8
 !!! abstract
     Liferay can centralize and simplify Clarity's IT infrastructure and empower business team members so they can deliver on their critical success factors.
 
-Liferay DXP provides ___.
+Liferay DXP provides a complete enterprise-grade platform for building integrated and engaging websites at scale. With it, Clarity can unify their complex technical infrastructure, integrate their systems, and empower non-technical team members. This can help reduce costs and improve time-to-market.
 
-<!-- Liferay DXP provides a complete enterprise-grade platform for building integrated and engaging websites at scale. With unify complex technical architecture/infrastructure and integrate with your systems...reducing costs and improving time-to-market. -->
-
-These are Liferay's core capabilities that can help ensure Clarity delivers on their critical success factors.
+Here we'll explore Liferay's core capabilities that can help Clarity deliver on their critical success factors.
 
 ## Content Management System (CMS)
 
@@ -68,10 +66,8 @@ Liferay offers a complete, enterprise-grade cloud infrastructure for optimizing 
 
 ## Conclusion
 
-These capabilities make it easier for Clarity to create and maintain effective solutions while reducing costs.
+Liferay DXP's core capabilities make it easier for Clarity to create and maintain effective solutions while reducing costs. When paired with Liferay's enterprise-grade cloud infrastructure, Clarity can centralize and simplify their systems to empower their teams.
 
-Liferay DXP with cloud infrastructure ...
+Now that you've learned about how Liferay can help Clarity deliver on their critical success factors and overcome their obstacles, let's explore the enterprise website you'll be building throughout this course. 
 
-With these core capabilities, Liferay can help Clarity deliver on their critical success factors and overcome their obstacles. 
-
-<!-- Up Next: [Building Clarity on Liferay](./building-clarity-on-liferay.md) -->
+Up Next: [Building Clarity on Liferay](./building-clarity-on-liferay.md)

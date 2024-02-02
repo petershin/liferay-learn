@@ -15,7 +15,7 @@ You will also receive two additional emails, generated from Liferay Cloud. These
 
 ## The Basics
 
-Once you have logged in to your Liferay DXP environment, you have access to almost all of the out-of-the-box features to create sites, pages, fragments, web content, products, and more. After login, Clarity can immediately start building with Liferay DXP. They can begin [navigating Liferay](https://learn.liferay.com/w/dxp/getting-started/navigating-dxp) and start building for their business.
+Once you have logged in to your Liferay DXP environment, you have access to almost all of the out-of-the-box features to create sites, pages, fragments, web content, products, and more. After login, Clarity can immediately start building with Liferay DXP. They can begin [navigating Liferay](https://learn.liferay.com/w/dxp/getting-started/navigating-dxp) and using it for their business.
 
 ![Login to Liferay and begin building.](./liferay-saas-onboarding/images/02.png)
 
@@ -33,7 +33,7 @@ The metrics and information available in the cloud console include:
 |:-----------|:--------------------------------------------------------------------------------|
 | Overview   | A dashboard view of your services, latest deployments, activities, and alerts.  |
 | Services   | Any custom services (i.e., client extensions) that are deployed.                |
-| Network    | Relevant specifications your extensions.                                        |
+| Network    | Relevant specifications of your extensions.                                        |
 | Activities | A list of any extension or user activities.                                     |
 | Logs       | Area to access logs for your extensions                                         |
 | Monitoring | CPU and memory metrics of your extensions.                                      |

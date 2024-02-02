@@ -57,7 +57,7 @@ Finally, let's evaluate Liferay SaaS.
 
 ## Liferay SaaS
 
-With Liferay SaaS, the cloud infrastructure and Liferay DXP application is deployed and managed for you. This is the fastest way to get started building solutions with Liferay. Clarity Vision Solutions will never have to worry about about whether their site is up and running. Instead they can immediately begin working with Liferay's out-of-the-box features.
+With Liferay SaaS, the cloud infrastructure and Liferay DXP application is deployed and managed for you. This is the fastest way to get started building solutions with Liferay. Clarity will never have to worry about about whether their site is up and running. Instead they can immediately begin working with Liferay's out-of-the-box features.
 
 With this deployment approach Liferay provides:
 

@@ -15,11 +15,11 @@ Because Clarity needs their own header and footer design, you'll create a master
 
    The content page editor appears. By default, the page has only one element: a drop zone. Clarity's header and footer should appear above and below the drop zone. 
 
-1. In the Fragments and Widgets (![Fragments and Widgets](./../../images/icon-add-widget.png)) menu on the sidebar, drag _clarity-header-comp_ above the drop zone, then drag _clarity-footer-comp_ below the drop zone.
+1. In the Fragments and Widgets (![Fragments and Widgets](./../../images/icon-add-widget.png)) menu on the sidebar, drag _J2B6 Header Composition_ above the drop zone, then drag _J2B6 Footer Composition_ below the drop zone.
 
    You imported these fragment compositions in the previous step, [Importing Fragments and Resources](./importing-fragments-and-resources.md).
 
-1. Map the image fragment in the header to a logo. Open the browser (![Browser](../../images/icon-hierarchy.png)), expand the Header Container element, and continue expanding elements until you get to the middle grid module's image fragment.
+1. Map the image fragment in the header to a logo. Open the browser (![Browser](../../images/icon-hierarchy.png)), expand the Header Container element, and continue expanding elements until you get to the first grid module's image fragment.
 
    ![Click the image fragment's inner element to set the source of the image.](./defining-the-pages-header-and-footer/images/04.png)
 
@@ -35,7 +35,7 @@ Because Clarity needs their own header and footer design, you'll create a master
 
 1. Click _Publish Master_.
 
-   The user menu is a custom fragment: `user-nav-fragment.zip`. It uses HTML and CSS to create a menu for logged in users. For logged out users, they see a user icon and the words SIGN IN, which they can click to access the sign in page.
+   The user menu is a custom fragment: J2B6 User Navigation Dropdown. It uses HTML and CSS to create a menu for logged in users. For logged out users, they see a user icon and the words SIGN IN, which they can click to access the sign in page.
 
    ![Logged in users see a menu with links to important pages.](./defining-the-pages-header-and-footer/images/03.png)
 

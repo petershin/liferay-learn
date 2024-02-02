@@ -13,6 +13,8 @@ In this module you will learn:
 * The distinctions between the three different Liferay deployment approaches: SaaS, PaaS, and Self-Hosted. Understand their strengths and why Liferay SaaS was the best choice for Clarity's business needs
 * The Liferay SaaS onboarding process and getting started with Liferay SaaS
 
+Up First: [Liferay Deployment Options](./module-3-deploying-liferay/liferay-deployment-options.md)
+
 ::::{grid} 2
 :gutter: 3 3 3 3
 

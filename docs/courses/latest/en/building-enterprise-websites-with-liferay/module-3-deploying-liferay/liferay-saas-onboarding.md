@@ -7,7 +7,7 @@ After learning the benefits of Liferay DXP and the value of Liferay SaaS, Clarit
 
 ## Invitations
 
-After signup, you will receive a welcome email for the production (`PRD`) Liferay environment and a welcome email for the test (`UAT`) Liferay environment. You will be asked to set a new password upon clicking on the link in the emails. Once you log in, you can create and invite other users.
+After sign up, you will receive a welcome email for the production (`PRD`) Liferay DXP environment and a welcome email for the test (`UAT`) environment. You will be asked to set a new password upon clicking on the link in the emails. Once logged in, you can begin creating and inviting other users.
 
 ![Email invitations to Liferay environments and Liferay Cloud console access.](./liferay-saas-onboarding/images/01.png)
 

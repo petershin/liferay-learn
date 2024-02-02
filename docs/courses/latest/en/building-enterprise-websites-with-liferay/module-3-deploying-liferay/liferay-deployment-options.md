@@ -26,7 +26,7 @@ With the self-hosted approach, Liferay provides just the Liferay DXP software. I
 * and of course...
 * Solution Development: the actual building of the enterprise Site that the Clarity company wants to build
 
-The biggest positive to this approach is that you have full control of your Liferay DXP deployment and you have every possible tool available to you for development and customization. Of course, this can backfire as some methods of customization can make future upgrades extremely challenging. If this is a deployment approach that you're interested in, there is a wealth of documentation and tutorials available for you to follow in order to correctly stand up a Liferay Self-Hosted deployments. See the documentation to learn more:
+The biggest positive to this approach is that you have full control of your Liferay DXP deployment and you have every tool available to you for development and customization. Of course, this can backfire as some methods of customization can make future upgrades extremely challenging. If this is a deployment approach that you're interested in, there is a wealth of documentation and tutorials available for you to follow in order to correctly stand up a Liferay Self-Hosted deployments. See the documentation to learn more:
 
 * [Installation and Upgrades](https://learn.liferay.com/w/dxp/installation-and-upgrades)
 * [Installing and Upgrading a Search Engine](https://learn.liferay.com/w/dxp/using-search/installing-and-upgrading-a-search-engine)
@@ -47,11 +47,11 @@ While Liferay Self-Hosted requires Clarity to fully manage their own infrastruct
 
 ![Liferay PaaS includes cloud-based infrastructure necessary for Liferay DXP.](./liferay-deployment-options/images/02.png)
 
-Furthermore, with Liferay PaaS, your site infrastructure includes features like, autoscaling, auto-failover, and load balancing. Configuration and monitoring is done through the Liferay Cloud Console and a connected GitHub repository using a configuration-as-code approach. Liferay PaaS also supports a variety of approaches for customization and development, but these approaches also carry the same upgrade-related risks that were mentioned before with Liferay Self-Hosted.
+Furthermore, with Liferay PaaS, Liferay's cloud infrastructure includes features like, autoscaling, auto-failover, and load balancing. Configuration and monitoring is done through the Liferay Cloud Console and a connected GitHub repository using a configuration-as-code approach. Liferay PaaS also supports a variety of approaches for customization and development, but these approaches also carry the same upgrade-related risks that were mentioned before with Liferay Self-Hosted.
 
 Learn more about the Liferay PaaS and working with its cloud infrastructure tools in the [Liferay Cloud documentation](https://learn.liferay.com/web/guest/w/liferay-cloud/index).
 
-While Liferay PaaS takes care of the cloud infrastructure and core platform updates, you'll still need to handle Liferay DXP upgrades, patch implementation, and security hotfix application.
+While Liferay PaaS takes care of the cloud infrastructure and core platform updates, you'll still need to handle Liferay DXP upgrades, patch implementation, and security hotfix application. All of this maintenance and management can still represent a hefty workload that Clarity is not interested in.
 
 Finally, let's evaluate Liferay SaaS.
 

@@ -5,6 +5,8 @@
 		],
 		"customCSS": ".[$FRAGMENT_CLASS$] {\n}",
 		"fragmentStyle": {
+			"backgroundColor": "colorBrandSecondaryLighten6",
+			"overflow": "hidden",
 			"paddingBottom": "5",
 			"paddingTop": "5"
 		},
@@ -79,10 +81,13 @@
 								{
 									"definition": {
 										"fragment": {
-											"key": "paragraph-(copy)",
+											"key": "j2b6-testimonials-slider-fragment",
 											"siteKey": "Guest"
 										},
 										"fragmentConfig": {
+											"firstTestimonial": "Placeholder 1",
+											"secondTestimonial": "Placeholder 2",
+											"thirdTestimonial": "Placeholder 3"
 										},
 										"fragmentFields": [
 										],
@@ -118,8 +123,6 @@
 							"pageElements": [
 								{
 									"definition": {
-										"fragmentStyle": {
-										},
 										"indexed": true,
 										"layout": {
 											"contentDisplay": "FlexColumn",
@@ -137,9 +140,26 @@
 													"imageSize": "w-100"
 												},
 												"fragmentFields": [
+													{
+														"id": "image-square",
+														"value": {
+															"fragmentImage": {
+																"description": {
+																	"value_i18n": {
+																		"en_US": ""
+																	}
+																},
+																"url": {
+																	"value_i18n": {
+																		"en_US": "/documents/d/guest/testimonials-image?imagePreview=1"
+																	}
+																}
+															},
+															"fragmentLink": {
+															}
+														}
+													}
 												],
-												"fragmentStyle": {
-												},
 												"indexed": true
 											},
 											"type": "Fragment"

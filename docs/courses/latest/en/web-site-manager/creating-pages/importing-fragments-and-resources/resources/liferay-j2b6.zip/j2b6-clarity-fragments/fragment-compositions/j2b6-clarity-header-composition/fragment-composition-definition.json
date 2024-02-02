@@ -24,6 +24,25 @@
 				"fragmentConfig": {
 				},
 				"fragmentFields": [
+					{
+						"id": "link",
+						"value": {
+							"fragmentLink": {
+								"value": {
+									"href": {
+										"value": "#"
+									}
+								}
+							}
+						}
+					},
+					{
+						"id": "text",
+						"value": {
+							"fragmentLink": {
+							}
+						}
+					}
 				],
 				"indexed": true
 			},
@@ -135,7 +154,6 @@
 																},
 																"url": {
 																	"value_i18n": {
-																		"en_US": "/documents/d/clarity-b2c/horizontal-color?imagePreview=1"
 																	}
 																}
 															},
@@ -231,8 +249,8 @@
 													"source": {
 														"parentSiteNavigationMenuItemId": "0",
 														"privateLayout": "false",
-														"siteNavigationMenuId": "62338",
-														"title": "Clarity Navigation",
+														"siteNavigationMenuId": "0",
+														"title": "Pages Hierarchy",
 														"type": "class com.liferay.site.navigation.item.selector.SiteNavigationMenuItemSelectorReturnType"
 													},
 													"sublevels": "-1"
@@ -325,7 +343,7 @@
 										{
 											"definition": {
 												"fragment": {
-													"key": "j2b6-user-nav-dropdown-fragment",
+													"key": "j2b6-user-navigation-dropdown-fragment",
 													"siteKey": "Guest"
 												},
 												"fragmentConfig": {

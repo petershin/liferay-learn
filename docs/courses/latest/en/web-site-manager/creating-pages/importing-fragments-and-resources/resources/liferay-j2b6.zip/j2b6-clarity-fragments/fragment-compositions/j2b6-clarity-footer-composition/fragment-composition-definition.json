@@ -53,7 +53,7 @@
 												},
 												"url": {
 													"value_i18n": {
-														"en_US": "/documents/d/clarity-b2c/horizontal-color?imagePreview=1"
+														"en_US": "/documents/d/guest/clarity_logo?imagePreview=1"
 													}
 												}
 											},
@@ -202,7 +202,7 @@
 												"expandedLevels": "auto",
 												"rootMenuItemLevel": "0",
 												"rootMenuItemType": "absolute",
-												"siteNavigationMenuId": "43527",
+												"siteNavigationMenuId": "0",
 												"siteNavigationMenuType": "-1"
 											},
 											"widgetName": "com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet"
@@ -297,7 +297,7 @@
 												"expandedLevels": "auto",
 												"rootMenuItemLevel": "0",
 												"rootMenuItemType": "absolute",
-												"siteNavigationMenuId": "54149",
+												"siteNavigationMenuId": "0",
 												"siteNavigationMenuType": "-1"
 											},
 											"widgetName": "com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet"
@@ -384,11 +384,11 @@
 											"widgetConfig": {
 												"displayDepth": "0",
 												"displayStyle": "ddmTemplate_NAVBAR-BLANK-FTL",
-												"displayStyleGroupId": "20120",
+												"displayStyleGroupId": "20121",
 												"expandedLevels": "auto",
 												"rootMenuItemLevel": "0",
 												"rootMenuItemType": "absolute",
-												"siteNavigationMenuId": "54150",
+												"siteNavigationMenuId": "0",
 												"siteNavigationMenuType": "-1"
 											},
 											"widgetName": "com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet"

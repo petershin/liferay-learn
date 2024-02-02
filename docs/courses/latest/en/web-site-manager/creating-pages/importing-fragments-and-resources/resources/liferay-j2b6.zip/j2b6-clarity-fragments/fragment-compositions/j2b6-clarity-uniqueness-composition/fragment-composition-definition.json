@@ -13,7 +13,7 @@
 			"paddingBottom": 4,
 			"paddingTop": 4
 		},
-		"name": "DB-Container"
+		"name": "Uniqueness Container"
 	},
 	"pageElements": [
 		{
@@ -96,6 +96,25 @@
 													"imageSize": "w-100"
 												},
 												"fragmentFields": [
+													{
+														"id": "image-square",
+														"value": {
+															"fragmentImage": {
+																"description": {
+																	"value_i18n": {
+																		"en_US": ""
+																	}
+																},
+																"url": {
+																	"value_i18n": {
+																		"en_US": "/documents/d/guest/clarity_uniqueness?imagePreview=1"
+																	}
+																}
+															},
+															"fragmentLink": {
+															}
+														}
+													}
 												],
 												"fragmentStyle": {
 													"width": "100%"
@@ -145,6 +164,10 @@
 									"pageElements": [
 										{
 											"definition": {
+												"cssClasses": [
+													"clarity-brand-heading"
+												],
+												"customCSS": ".[$FRAGMENT_CLASS$] {\npadding-left: 25px;\n}",
 												"fragment": {
 													"key": "BASIC_COMPONENT-heading"
 												},
@@ -152,6 +175,18 @@
 													"headingLevel": "h1"
 												},
 												"fragmentFields": [
+													{
+														"id": "element-text",
+														"value": {
+															"fragmentLink": {
+															},
+															"text": {
+																"value_i18n": {
+																	"en_US": "The Clarity Difference"
+																}
+															}
+														}
+													}
 												],
 												"indexed": true
 											},
@@ -159,14 +194,28 @@
 										},
 										{
 											"definition": {
-												"customCSS": ".[$FRAGMENT_CLASS$] {\n\n.db-list-item {\n  padding: 5% 5% 5% 5%;\n   list-style-image: url(\"http://localhost:8080/documents/d/guest/db-green-3w\");\nfont-size: 1.5rem;\n\n}\n}",
+												"customCSS": ".[$FRAGMENT_CLASS$] {\n    .clarity-brand-item {\n        padding: 5% 5% 5% 5%;\n    }\n}",
 												"fragment": {
 													"key": "BASIC_COMPONENT-html"
 												},
 												"fragmentConfig": {
 												},
 												"fragmentFields": [
+													{
+														"id": "element-html",
+														"value": {
+															"html": {
+																"value_i18n": {
+																	"en_US": "\n\t<ul class=\"clarity-brand-list\">\n    <li class=\"clarity-brand-item\">Literally unbreakable. Go ahead, try.</li>\n    <li class=\"clarity-brand-item\">Internationally sourced materials and labor.</li>\n    <li class=\"clarity-brand-item\">Clarity components save you money in the long run.</li>\n    <li class=\"clarity-brand-item\">Endless customizability.</li>\n</ul>\n"
+																}
+															}
+														}
+													}
 												],
+												"fragmentStyle": {
+													"fontSize": "1.125rem",
+													"fontWeight": "fontWeightNormal"
+												},
 												"indexed": true
 											},
 											"type": "Fragment"

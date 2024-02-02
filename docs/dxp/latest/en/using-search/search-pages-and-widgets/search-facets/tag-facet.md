@@ -1,4 +1,5 @@
 ---
+taxonomy-category-names:
 - Search
 - Search Pages and Widgets
 - Categories and Tags

@@ -65,9 +65,17 @@ Then, follow these steps:
     !!! important
         You can add language keys in the Language Override tool for Liferay DXP 7.4 U4+ or Liferay Portal 7.4 GA8+. For previous versions, you must add a `Language.properties` file under `/src/main/resources/content/` with the keys before building and deploying.
 
-1. Open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)), click on *Commerce* &rarr; *Channels*.
+1. Open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Channels*.
 
-1. Create a new channel called *G2F3 Channel* and set it's *Type* to *Site*. See [Introduction to Channels](../../store-management/channels/introduction-to-channels.md) for more infomation on channels.
+1. Click *Add* (![Add icon](../../images/icon-add.png)) to create a new channel and enter the following information:
+
+   **Name:** G2F3 Channel
+
+   **Currency:** USD
+
+   **Type:** Site 
+
+1. Click *Add*. See [Introduction to Channels](../../store-management/channels/introduction-to-channels.md) for more information on channels.
 
 1. Select *Notification Templates*.
 

@@ -1,15 +1,17 @@
 ---
+toc:
+- ./module-3-deploying-liferay/liferay-deployment-options.md
+- ./module-3-deploying-liferay/liferay-saas-onboarding.md
 uuid: 5d382dfe-d85b-409d-a0b7-0ea2bfaad155
 ---
-# Deploying Liferay
+# Module 3: Deploying Liferay
 
-Liferay offers three different deployment options (i.e. Liferay SaaS, Liferay PaaS, and Liferay Self-Hosted). Now that Clarity has selected Liferay, they need to understand the different options and choose the approach that best suits their situation. In the end, they choose Liferay SaaS for the ease of use and the ability to get up-and-running immediately.
+Liferay DXP is the enterprise-grade platform that has the capabilities that meet Clarity Vision Solutions' needs. Liferay DXP is available in three different deployment approaches, Liferay SaaS, Liferay PaaS, and Liferay Self-Hosted. As the decision maker for the Clarity organization, it is important for you to make an informed decision about which deployment approach will meet your business needs.
 
 In this module you will learn:
 
-* The ins and outs of the three different Liferay deployment approaches.
-* The reasons why Liferay SaaS is the right choice for Clarity.
-* The provisioning process to start using Liferay SaaS and its cloud console.
+* The distinctions between the three different Liferay deployment approaches: SaaS, PaaS, and Self-Hosted. Understand their strengths and why Liferay SaaS was the best choice for Clarity's business needs
+* The Liferay SaaS onboarding process and getting started with Liferay SaaS
 
 ::::{grid} 2
 :gutter: 3 3 3 3
@@ -20,14 +22,8 @@ In this module you will learn:
 Understand the three deployment options: Liferay SaaS, Liferay PaaS, and Liferay Self-Hosted.
 :::
 
-:::{grid-item-card}  Liferay SaaS and Clarity
-:link: ./module-3-deploying-liferay/liferay-saas-and-clarity.md
+:::{grid-item-card}  Liferay SaaS Onboarding
+:link: ./module-3-deploying-liferay/liferay-saas-onboarding.md
 
-See how Liferay SaaS is the best option for Clarity.
-:::
-
-:::{grid-item-card}  Liferay SaaS Provisioning
-:link: ./module-3-deploying-liferay/liferay-saas-provisioning.md
-
-Learn about Liferay SaaS provisioning and get a quick tour of the cloud console.
+Learn about Liferay SaaS onboarding process and getting started with Liferay SaaS.
 :::

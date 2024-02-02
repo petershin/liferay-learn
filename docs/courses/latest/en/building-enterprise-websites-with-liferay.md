@@ -2,7 +2,7 @@
 toc:
 - ./building-enterprise-websites-with-liferay/module-1-getting-started-with-clarity.md
 - ./building-enterprise-websites-with-liferay/module-2-developer-setup.md
-- ./building-enterprise-websites-with-liferay/module-3.md
+- ./building-enterprise-websites-with-liferay/module-3-deploying-liferay.md
 - ./building-enterprise-websites-with-liferay/module-4.md
 - ./building-enterprise-websites-with-liferay/module-5.md
 - ./building-enterprise-websites-with-liferay/module-6.md
@@ -72,7 +72,7 @@ Learn about Liferay Workspace and Client Extensions, two key features for buildi
 :::{grid-item-card}  Module 3: Deploying Liferay
 :link: ./building-enterprise-websites-with-liferay/module-3-deploying-liferay.md
 
-Learn about the different deployment options and start building with Liferay.
+Learn the different deployment options available for Liferay, why Liferay SaaS is the best for most situations, and get started with Liferay SaaS.
 :::
 
 :::{grid-item-card}  Module 4: Identity Management & SSO

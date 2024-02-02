@@ -14,7 +14,7 @@ These are Liferay's core capabilities that can help ensure Clarity delivers on t
 
 ## Content Management System (CMS)
 
-Liferay's user-friendly CMS empowers Clarity's business users to create, publish, and manage content, pages, and multimedia across different channels faster<!--ALT: to compose engaging digital experiences across all channels-->. With it, Clarity can streamline their content lifecycle management, improve website maintenance, and enable agile responses to market shifts. <!-- This intuitive interface avoids limitations associated with complex design interfaces, promoting agility and efficiency in website maintenance and content updates. This can help Clarity achieve widespread adoption of Liferay across their departments. -->
+Liferay's user-friendly CMS empowers Clarity's business users to create, publish, and manage content, pages, and multimedia across different channels faster. With it, Clarity can streamline their content lifecycle management, improve website maintenance, and enable agile responses to market shifts. By avoiding the obstacles of complex design interfaces, Clarity can better achieve widespread adoption of Liferay across their departments.
 
 <!--TASK: Insert img ![]() -->
 
@@ -32,19 +32,19 @@ Liferay provides Clarity with robust product management features for maintaining
 
 ## Personalization
 
-Clarity can deliver more personalized and relevant content to users by leveraging Liferay's enhanced segmentation, AI-generated recommendations, and A/B testing. By personalizing content and pages based on user attributes, behaviors, and preferences, Clarity can build deeper connections with their audiences. <!--ALT: This helps build deeper connections with audiences by ensuring the relevance of content and maximizing impact.-->
+Clarity can deliver more personalized and relevant content to users by leveraging Liferay's enhanced segmentation, AI-generated recommendations, and A/B testing. By personalizing content and pages based on user attributes, behaviors, and preferences, Clarity can build deeper connections with their audiences. 
 
 <!--TASK: Insert img ![]() -->
 
 ## Search
 
-Liferay's faceted and federated search capabilities can help Clarity's users find the information they need faster. Clarity can also prioritize search results based on relevance and ranking, using factors like keyword match, popularity, recency, and user behavior. <!--ALT: Save users time with personalized, integrated, and organized search results, streamlining information access across sites and empowering self-service.-->
+Liferay's faceted and federated search capabilities can help Clarity's users find the information they need faster. Clarity can also prioritize search results based on relevance and ranking, using factors like keyword match, popularity, recency, and user behavior.
 
 <!--TASK: Insert img ![]() -->
 
 ## Sites
 
-Clarity's business teams can use Liferay's visual page editor to compose and preview web pages without coding. With flexible features like reusable page fragments, style books, and versioning, Clarity's websites can maintain a cohesive brand identity while adapting and growing alongside their business. To better engage their global audiences, they can also localize experiences and use Liferay's native analytics tools for tracking and measuring content and page performance. Liferay's page audit tool can also help Clarity ensure their pages are optimized for search engine indexing, visibility, and accessibility. <!--ADD? "Clarity can also improve their SEO, maintaining URL integrity and customizing metadata and tags."-->
+Using Liferay's visual page editor, Clarity's business teams can compose and preview web pages without coding. Additionally, with flexible features like reusable page fragments, style books, and versioning, Clarity's websites can maintain a cohesive brand identity while adapting and growing alongside their business. To better engage their global audiences, they can also localize experiences and use Liferay's native analytics tools to track and measure content and page performance. Liferay's page audit tool can also help Clarity ensure their pages are optimized for search engine indexing, visibility, and accessibility. <!--ADD? "Clarity can also improve their SEO, maintaining URL integrity and customizing metadata and tags."-->
 
 <!--TASK: Insert img ![]() -->
 
@@ -56,11 +56,7 @@ Liferay can consolidate and unify Clarity's systems, applications, and data in a
 
 ## Security
 
-Liferay's secure by design strategy provides __, __, and __. This can help Clarity minimize vulnerabilities, reduce the risk of data breaches, and comply with global data protection regulations.
-
-<!-- By adhering to industry best practices and holding leading security certifications, guaranteeing data protection and peace of mind. -->
-<!-- With multi-factor authentication, Lightweight Directory Access Protocol (LDAP), data sanitation, and more... -->
-<!-- robust user identity management and granular access controls so Clarity can ensure that only the right users can access data and tools. -->
+With Liferay's robust user identity management, granular access controls, and more, Clarity can ensure that only the right users can access their data and tools. This can help Clarity minimize vulnerabilities, reduce the risk of data breaches, and comply with global data protection regulations. <!--ADD? multi-factor authentication, Lightweight Directory Access Protocol (LDAP), data sanitation-->
 
 <!--TASK: Insert img ![]() -->
 
@@ -68,11 +64,11 @@ Liferay's secure by design strategy provides __, __, and __. This can help Clari
 
 Liferay offers a complete, enterprise-grade cloud infrastructure for optimizing Liferay DXP environments. With it, Clarity can simplify their IT infrastructure and administration while ensuring consistent performance and uptime. <!--MENTION? accommodate increased traffic, data, and functionality at scale. --> Also, Liferay's cloud infrastructure is secure by design, adhering to industry best practices and holding leading security certifications.
 
-These capabilities make it easier for Clarity to create and maintain effective solutions while reducing costs.
-
 <!--TASK: Insert img ![]() -->
 
 ## Conclusion
+
+These capabilities make it easier for Clarity to create and maintain effective solutions while reducing costs.
 
 Liferay DXP with cloud infrastructure ...
 

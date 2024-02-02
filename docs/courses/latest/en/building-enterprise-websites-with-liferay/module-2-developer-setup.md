@@ -22,7 +22,7 @@ Learn how to set up Liferay Workspace as an environment for Liferay project deve
 :::
 
 :::{grid-item-card} Client Extensions
-:link: ./module-1-getting-started-with-clarity/the-liferay-solution.md
+:link: ./module-2-developer-setup/client-extensions.md
 
 Learn about Client Extensions and why you should use them.
 :::

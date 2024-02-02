@@ -35,7 +35,7 @@ Clarity needs a better sign in experience. Next you'll add a custom sign in page
 
 1. Now edit the custom user navigation fragment to point to the new sign-in page instead of `/c/portal/login`. Go to *Site Menu* (![Product Menu](../../images/icon-product-menu.png)) &rarr; *Design* &rarr; *Fragments*.
 
-1. Open the `user-nav_Dropdown` fragment. In the HTML pane, find the line setting the login URL:
+1. Open the _J2B6 User Navigation Dropdown_ fragment. In the HTML pane, find the line setting the login URL:
 
    ```html
    <a class="user-sign-in" href="/c/portal/login">
@@ -64,21 +64,7 @@ Clarity needs a better sign in experience. Next you'll add a custom sign in page
 
    ![Sign in using the new page.](./adding-the-sign-in-page/images/10.png)
 
-Don't be concerned with the gray background for now. The custom sign-in fragment's CSS styles the `form-box` class like this:
-
-```css
-.form-box {
-    align-items: flex-start;
-    background-color: var(--brand-color-2);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: var(--spacer-6) var(--spacer-7) var(--spacer-4);
-    width: 35%;
-}
-```
-
-Setting the background color to a brand color variable like this is a good practice, because it can be influenced later when styling the site. For now, the `brand-color-2` variable resolves to a gray that doesn't look right. Hard coding the color to fix it isn't a good solution, so leave it gray for now.
+   Don't be concerned with the gray background for now. Hard coding the color to fix it isn't a good solution, so leave it gray for now, and the design team can take care of it when they get to styling the site.
 
 Now Clarity's site structure is in place. The navigation menu, however, could use some enhancements. 
 

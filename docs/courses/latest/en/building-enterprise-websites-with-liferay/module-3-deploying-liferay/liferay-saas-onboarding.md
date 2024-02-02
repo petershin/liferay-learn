@@ -7,25 +7,25 @@ After learning the benefits of Liferay DXP and the value of Liferay SaaS, Clarit
 
 ## Invitations
 
-<!-- Please use: https://docs.google.com/presentation/d/1QZ-uVKOJnyg8T2WmOqhxChBlaPww6H7C_CnuPNPzdEA/edit#slide=id.g2b413a43341_0_357 and go over in detail what people can expect -->
+After signup, you will receive a welcome email for the production (`PRD`) Liferay environment and a welcome email for the test (`UAT`) Liferay environment. You will be asked to set a new password upon clicking on the link in the emails. Once you log in, you can create and invite other users.
 
-Once your project is provisioned and your admin user on PRD and UAT is created, you'll receive a password update email for each Liferay DXP environment. After setting your own password, you can add other admin users.
+![Email invitations to Liferay environments and Liferay Cloud console access.](./liferay-saas-onboarding/images/01.png)
 
-You will also receive two additional emails, generated from Liferay Cloud. These are for the PRD and UAT Extension environments, which are provided for deploying custom services (client extensions). Click *Accept Invite* to gain access to the Liferay Cloud console for each environment. Note that if this your first time using Liferay Cloud console, you'll need to create an account first.
-
-![Email invitations to password update and Liferay Cloud console access.](./liferay-saas-onboarding/images/01.png)
+You will also receive two additional emails, generated from Liferay Cloud. These are for the PRD and UAT Extension environments, which are provided for deploying customizations (client extensions). Click *Accept Invite* to gain access to the Liferay Cloud console for each environment. Note that if this is your first time using the Liferay cloud console, you'll need to create an account. From the console, you can invite other team members to your environment.
 
 ## The Basics
 
-Liferay DXP serves as the foudational element of Liferay SaaS, providing a robust infrastructure for a multi-tenant environment. Once you have logged in, you will be able to use almost all of the out-of-the-box features you are used to with Liferay DXP. To ensure the security and privacy of individual tenants, certain DXP features are not accessible.
+Once you have logged in to your Liferay DXP environment, you have access to almost all of the out-of-the-box features to create sites, pages, fragments, web content, products, and more. After login, Clarity can immediately start building with Liferay DXP. They can begin [navigating Liferay](https://learn.liferay.com/w/dxp/getting-started/navigating-dxp) and start building for their business.
 
-For a comprehensive breakdown of feature availability within Liferay SaaS, check [Liferay Experience Cloud Compatibility Matrix](https://help.liferay.com/hc/en-us/articles/17817489997325-Liferay-Experience-Cloud-Compatibility-Matrix).
+![Login to Liferay and begin building.](./liferay-saas-onboarding/images/02.png)
+
+Note, to ensure the security and privacy of individual tenants, certain DXP features are not accessible. For a comprehensive breakdown of feature availability within Liferay SaaS, check [Liferay Experience Cloud Compatibility Matrix](https://help.liferay.com/hc/en-us/articles/17817489997325-Liferay-Experience-Cloud-Compatibility-Matrix).
 
 ## The Cloud Administration Console
 
-Clarity can log in to the Liferay cloud console to see real-time metrics of the cloud infrastructure and monitor activities of the environment.
+The Liferay cloud console is both the place to deploy your client extensions, as well as the place to monitor your client extensions. Clarity can log in to the cloud console and monitor activities of any of their custom client extensions.
 
-![Login to the Liferay cloud console.](./liferay-saas-onboarding/images/02.png)
+![Login to the Liferay cloud console.](./liferay-saas-onboarding/images/03.png)
 
 The metrics and information available in the cloud console include:
 
@@ -33,12 +33,12 @@ The metrics and information available in the cloud console include:
 |:-----------|:--------------------------------------------------------------------------------|
 | Overview   | A dashboard view of your services, latest deployments, activities, and alerts.  |
 | Services   | Any custom services (i.e., client extensions) that are deployed.                |
-| Network    | Relevant specifications for the cloud infrastructure.                           |
-| Activities | A list of any environment, user, or service activities.                         |
-| Logs       | Area to access application logs.                                                |
-| Monitoring | Performance metrics of the application server.                                  |
+| Network    | Relevant specifications your extensions.                                        |
+| Activities | A list of any extension or user activities.                                     |
+| Logs       | Area to access logs for your extensions                                         |
+| Monitoring | CPU and memory metrics of your extensions.                                      |
 | Team       | List of current members who can access the console.                             |
-| Settings   | Relevant environment information.                                               |
+| Settings   | Relevant extension environment information.                                     |
 
 Congratulations! You've completed Module 3 - Deploying Liferay.
 

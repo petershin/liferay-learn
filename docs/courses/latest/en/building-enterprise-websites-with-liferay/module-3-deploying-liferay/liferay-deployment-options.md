@@ -3,7 +3,7 @@ uuid: 5a6706c2-05f9-4d7c-8b41-a8f69516694d
 ---
 # Liferay Deployment Options
 
-As the decision maker for Clarity one of the first important choices you must make is the deployment approach you will take with Liferay. The Liferay DXP platform is available in three different deployment approaches: Liferay SaaS, Liferay PaaS, and Liferay Self-Hosted. In this module, we will learn the distinctions between each of the deployment approaches.
+As the decision maker for Clarity, one of the first important choices you must make is the deployment approach you will take with Liferay. The Liferay DXP platform is available in three different deployment approaches: Liferay SaaS, Liferay PaaS, and Liferay Self-Hosted.
 
 ![The three Liferay deployment approaches, Liferay SaaS, Liferay PaaS, and Liferay Self-Hosted](./liferay-deployment-options/images/01.png)
 
@@ -17,16 +17,16 @@ Let's go into these distinctions in further detail.
 
 ## Liferay Self-Hosted
 
-With the self-hosted approach, Liferay provides just the Liferay DXP software. It is up to the customer to be responsible for everything else:
+With the self-hosted approach, Liferay provides just the Liferay DXP software. It is up to the customer to manage everything else:
 
 * Hardware and infrastructure: referring to the actual servers that the software is hosted on
 * Platform-related software and configuration: setup and configuration of a database, search engine, and more
 * Architecture: design and configuration of architecture for scaling, load balancing, backups, and failover situations
 * Preparation, management, and deployment of updates, patches, and security hotfixes for the entire stack
 * and of course...
-* Solution Development: the actual building of the Enterprise Site that the Clarity company wants to build
+* Solution Development: the actual building of the enterprise Site that the Clarity company wants to build
 
-The biggest positive to this approach is that you have full control of your Liferay DXP deployment and you have every possible tool available to you for development and customization. Of course, this can backfire as some methods of customization can make future upgrades extremely challenging. If this is a deployment approach that you're interested in, there is a wealth of documentation and tutorials available for you to follow in order to correctly stand up their Liferay Self-Hosted deployments. See the documentation to learn more:
+The biggest positive to this approach is that you have full control of your Liferay DXP deployment and you have every possible tool available to you for development and customization. Of course, this can backfire as some methods of customization can make future upgrades extremely challenging. If this is a deployment approach that you're interested in, there is a wealth of documentation and tutorials available for you to follow in order to correctly stand up a Liferay Self-Hosted deployments. See the documentation to learn more:
 
 * [Installation and Upgrades](https://learn.liferay.com/w/dxp/installation-and-upgrades)
 * [Installing and Upgrading a Search Engine](https://learn.liferay.com/w/dxp/using-search/installing-and-upgrading-a-search-engine)
@@ -37,7 +37,7 @@ With that said, all of this work might be more than what Clarity Vision Solution
 
 ## Liferay PaaS
 
-While Liferay Self-Hosted requires Clarity to fully manage their own infrastructure, Liferay PaaS provides cloud-based infrastructure and platform services to simplify the management and scalability of Liferay DXP! This includes:
+While Liferay Self-Hosted requires Clarity to fully manage their own infrastructure, Liferay PaaS provides cloud-based infrastructure and platform services to simplify the management and scalability of Liferay DXP. This includes:
 
 * Web Server
 * Backups
@@ -47,7 +47,7 @@ While Liferay Self-Hosted requires Clarity to fully manage their own infrastruct
 
 ![Liferay PaaS includes cloud-based infrastructure necessary for Liferay DXP.](./liferay-deployment-options/images/02.png)
 
-Furthermore, with Liferay PaaS your site infrastructure includes features like, Autoscaling, Auto-Failover, and Load Balancing. Configuration and monitoring is done through the Liferay Cloud Console and a connected GitHub repository using a configuration-as-code approach. Liferay PaaS also supports a variety of approaches for customization and development, but these approaches also carry the same upgrade-related risks that were mentioned before with Liferay Self-Hosted.
+Furthermore, with Liferay PaaS, your site infrastructure includes features like, autoscaling, auto-failover, and load balancing. Configuration and monitoring is done through the Liferay Cloud Console and a connected GitHub repository using a configuration-as-code approach. Liferay PaaS also supports a variety of approaches for customization and development, but these approaches also carry the same upgrade-related risks that were mentioned before with Liferay Self-Hosted.
 
 Learn more about the Liferay PaaS and working with its cloud infrastructure tools in the [Liferay Cloud documentation](https://learn.liferay.com/web/guest/w/liferay-cloud/index).
 
@@ -57,9 +57,9 @@ Finally, let's evaluate Liferay SaaS.
 
 ## Liferay SaaS
 
-<!-- @Makoto - please enhance this section of the article with content and diagram from https://docs.google.com/presentation/d/1QZ-uVKOJnyg8T2WmOqhxChBlaPww6H7C_CnuPNPzdEA/edit#slide=id.g2b413a43341_0_163 -->
+With Liferay SaaS, the cloud infrastructure and Liferay DXP application is deployed and managed for you. This is the fastest way to get started building solutions with Liferay. Clarity Vision Solutions will never have to worry about about whether their site is up and running. Instead they can immediately begin working with Liferay's out-of-the-box features.
 
-With Liferay SaaS, the cloud infrastructure and Liferay DXP application is functionally invisible to you and to Clarity Vision Solutions. With this deployment approach Liferay provides:
+With this deployment approach Liferay provides:
 
 * Product support
 * Application Uptime SLA
@@ -69,9 +69,13 @@ With Liferay SaaS, the cloud infrastructure and Liferay DXP application is funct
 * Regular Updates
 * Patches and Security hotfixes
 
-Notably, with Liferay SaaS, backups and upgrades are fully managed and done invisibly to you. There is no need to update your environment or patch previous releases. You can rest assured that your Liferay environment is always up-to-date with the latest releases.
+![Liferay SaaS is fully managed for you.](./liferay-deployment-options/images/03.png)
 
-The fastest way to get started building solutions with Liferay is Liferay SaaS. You can begin working with Liferay's out-of-the-box features immediately. Custom development and customizations are still available for Liferay SaaS through the use of Liferay Workspace and Client Extensions, both topics that are covered briefly in [Module 2](../module-2-developer-setup.md) and later applied in [Module 9](../module-9.md). 
+Liferay takes care of the full tech stack including the web server running Liferay, the database, search, and file storage. Each Liferay SaaS account comes with a production (`PRD`) Liferay environment as well as a test (`UAT`) Liferay environment. 
+
+Client extension environments are also provided for custom development and customizations. Custom development is done through the use of Liferay Workspace and Client Extensions, both topics that are covered briefly in [Module 2](../module-2-developer-setup.md) and later applied in [Module 9](../module-9.md). A VPN client is also available in these extension environments to enable client extensions to integrate to systems within your own data center.
+
+With Liferay SaaS, backups and upgrades are fully managed and done for you. There is no need to update your environment or patch previous releases. You can rest assured that your Liferay application is always up-to-date with the latest releases.
 
 With a tight deadline and a strong desire to manage costs, Clarity Vision Solutions has decided that Liferay SaaS is the deployment approach for them. Next we will step through the Liferay SaaS onboarding process.
 

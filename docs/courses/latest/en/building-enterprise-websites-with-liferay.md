@@ -72,11 +72,7 @@ Learn about Liferay Workspace and Client Extensions, two key features for buildi
 :::{grid-item-card}  Module 3: Deploying Liferay
 :link: ./building-enterprise-websites-with-liferay/module-3-deploying-liferay.md
 
-<<<<<<< HEAD
 Learn the different deployment options available for Liferay, why Liferay SaaS is the best for most situations, and get started with Liferay SaaS.
-=======
-Learn about the different deployment options and start building with Liferay.
->>>>>>> bd5bc3e93 (LRDOCS-12652 cleanup)
 :::
 
 :::{grid-item-card}  Module 4: Identity Management & SSO

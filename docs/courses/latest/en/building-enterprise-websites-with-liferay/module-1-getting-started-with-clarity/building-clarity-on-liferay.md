@@ -12,20 +12,21 @@ Here we'll review the site's designs and the personas we'll follow throughout ou
 
 ## Enterprise Website Designs
 
-<!-- IMPROVE TRANSITION -->
-Clarity's team of site developers has produced this site map for their initiative:
+Clarity's website development team has produced this site map for their initiative:
 
-![Clarity's team of developers have produced this site map for their initiative]()
+![Clarity's website development team has produced this site map for their initiative.](./building-clarity-on-liferay/images/01.png)
 
-Pages for __, __, and __. Build each of these pages.
+This provides a blueprint for Clarity's website. Each page plays a specific role, from showcasing innovative products (e.g., Products) to highlighting the company's core values (e.g., About Us).
 
-After __, Clarity's design team has produced these mockups for each page in Figma. Before moving on to the next module, take some time to look over these designs and get an idea of what you'll be building.
+To help us transform this blueprint into a vibrant and engaging online experience, Clarity's design team has produced these mockups for each page in Figma. Before moving on to the next module, take some time to look over these designs and get an idea of what you'll be building.
+
+![Review the figma design.](./building-clarity-on-liferay/images/02.png)
 
 <!-- TASK: Add EMBED -->
 
 ## Clarity Personas
 
-As we build this solution, we will follow these Clarity personas as they contribute in their various roles:
+While building this solution, we'll follow these Clarity personas as they contribute according to their various roles:
 
 ### IT Personas
 

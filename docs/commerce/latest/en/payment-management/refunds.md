@@ -17,11 +17,11 @@ Liferay's new Payments application supports the creation of refunds for online p
 
    ![Enter the refund amount and select the reason to submit the refund.](./refunds/images/02.png)
 
-1. Enter the refund amount in the *Amount* field and select a reason from the *Reason Dropdown*. See [Adding Reasons for Refunds](./adding-reasons-for-refunds.md) to learn more about creating refund reasons. 
+1. Enter the refund amount in the *Amount* field and select a reason from the *Reason* drop-down. See [Adding Reasons for Refunds](./adding-reasons-for-refunds.md) to learn more about creating refund reasons. 
 
 1. Click *Submit*. Alternatively, you can click *Save* to come back to it at a later stage. 
 
-After submitting the refund, the refund entry moves to the Refunded status. If it fails, it goes to the Failed status. See [Payments Reference](./payments-reference.md) to learn more about the payments and refunds lifecycle and the different statuses available. 
+After submitting the refund, the refund entry moves to the Refunded status. If it fails, it goes to the Failed status. See [Payments Reference](./payments-reference.md) to learn more about the payments and refunds life cycle and the different statuses available. 
 
 ![After submission, the refund moves to the Refunded status.](./refunds/images/03.png)
 
@@ -31,9 +31,9 @@ After submitting the refund, the refund entry moves to the Refunded status. If i
 
 1. There are two filters available: Type and Status.
 
-   1. Click *Type* to choose between payments, refunds, or both. Use the checkboxes to make your selection. You can also use the *Exclude* toggle to filter out the type you checked.
+   1. Click *Type* to choose between payments, refunds, or both. Use the checkboxes to make your selection. You can also use the Exclude toggle to filter out the type you checked.
 
-   1. Click *Status* to choose between different statuses. Read [Payments Reference](./payments-reference.md) to learn more about payment statuses. As with type, you can use the *Exclude* toggle to filter out the status you checked.
+   1. Click *Status* to choose between different statuses. Read [Payments Reference](./payments-reference.md) to learn more about payment statuses. As with type, you can use the Exclude toggle to filter out the status you checked.
 
    1. Click *Add Filter* to view results. Click the *Close* (![Close](../images/icon-times.png)) button to remove a particular filter or click *Reset Filters* to remove them all.
 

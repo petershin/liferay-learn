@@ -18,9 +18,9 @@ The Payments application displays the following information about each payment e
 
 ## Status Reference
 
-Each payment entry has a status that shows its current state in the payment lifecycle. 
+Each payment entry has a status that shows its current state in the payment life cycle. 
 
-![Each payment entry has a status that shows its current state in the payment lifecycle.](./payments-reference/images/01.png)
+![Each payment entry has a status that shows its current state in the payment life cycle.](./payments-reference/images/01.png)
 
 | Status     | Description                                                   |
 | :--------- | :------------------------------------------------------------ |

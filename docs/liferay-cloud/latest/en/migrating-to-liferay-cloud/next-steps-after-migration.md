@@ -37,7 +37,7 @@ Liferay Cloud supports Signle Sign-On Identity Providers that are compliant with
 
 Ensure that your environment on Liferay Cloud hosts your own custom domains as needed. Liferay Cloud integrates with your custom domains, allowing you to define certified domains for each environment.
 
-See [Custom Domains](../infrastructure-and-operations/networking/custom-domains.md) for more information.
+See [Custom Domains](..//configuring-the-cloud-network/custom-domains.md) for more information.
 
 ## Set Up a Disaster Recovery Environment
 

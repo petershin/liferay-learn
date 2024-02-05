@@ -30,7 +30,7 @@ Liferay Cloud integrates with project source code using Git. Built-in integratio
 
 ## VPN Server and Client
 
-Liferay Cloud environments can send and receive data through an encrypted tunnel using a customer's own VPN server. Liferay Cloud provides a client-to-site VPN service that enables connection from a supported VPN to its environments. OpenVPN and IPSec (IKEv2) protocols are supported for this connection. See the [VPN Integration Overview](../infrastructure-and-operations/networking/vpn-integration-overview.md) for more information.
+Liferay Cloud environments can send and receive data through an encrypted tunnel using a customer's own VPN server. Liferay Cloud provides a client-to-site VPN service that enables connection from a supported VPN to its environments. OpenVPN and IPSec (IKEv2) protocols are supported for this connection. See the [VPN Integration Overview](..//configuring-the-cloud-network/vpn-integration-overview.md) for more information.
 
 ## Docker Hub
 

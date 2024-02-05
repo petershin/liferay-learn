@@ -54,7 +54,7 @@ Nginxのアクセスログとエラーログ（デフォルトではNginxコン�
 | `LCP_WEBSERVER_LOG_FORMAT`                |             | Nginxログの形式をカスタマイズします。 [Nginx公式ドキュメント](https://docs.nginx.com/nginx/admin-guide/monitoring/logging/#setting-up-the-access-log) を参照してください。                                                                       |
 | `LCP_WEBSERVER_MODSECURITY`               | `Off`       | ModSecurityを有効または無効にします。 この値を `On` に設定するとルールが有効になって処理され、`DetectionOnly` に設定すると破壊的なアクションを実行せずにルールが処理される。 [Webアプリケーションファイアウォール](..//tuning-security-settings/web-application-firewall.md) を参照。 |
 
-[Ingress Load Balancer](../infrastructure-and-operations/networking/load-balancer.md) もウェブサーバーサービスで設定します。 このサービスに環境変数を追加して、ロードバランサーやカスタムドメインを設定することができます。 詳しくは [ロードバランサ環境変数リファレンス](../infrastructure-and-operations/networking/load-balancer.md#environment-variables-reference) を参照してください。
+[Ingress Load Balancer](..//configuring-the-cloud-network/load-balancer.md) もウェブサーバーサービスで設定します。 このサービスに環境変数を追加して、ロードバランサーやカスタムドメインを設定することができます。 詳しくは [ロードバランサ環境変数リファレンス](..//configuring-the-cloud-network/load-balancer.md#environment-variables-reference) を参照してください。
 
 Nginxのすべての環境変数とその他のコンフィギュレーションは、 [Nginx公式ドキュメント](https://docs.nginx.com/) にあります。 このような設定は `configs/{ENV}/` ディレクトリで、環境変数はサービスの `LCP.json` ファイルで設定できる。
 

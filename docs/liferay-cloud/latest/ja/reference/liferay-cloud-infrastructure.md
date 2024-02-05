@@ -22,7 +22,7 @@ Liferay Cloudは、Gitを使用したプロジェクトのソースコードと�
 
 ## VPNサーバーとクライアント
 
-Liferay Cloud環境では、お客様独自のVPNサーバーを利用した暗号化トンネルでデータの送受信が可能です。 Liferay Cloudは、対応するVPNからその環境に接続できるクライアント・サイト間VPNサービスを提供します。 この接続では、OpenVPNとIPSec（IKEv2）のプロトコルがサポートされています。 詳細は、 [VPNインテグレーションの概要](../infrastructure-and-operations/networking/vpn-integration-overview.md) を参照してください。
+Liferay Cloud環境では、お客様独自のVPNサーバーを利用した暗号化トンネルでデータの送受信が可能です。 Liferay Cloudは、対応するVPNからその環境に接続できるクライアント・サイト間VPNサービスを提供します。 この接続では、OpenVPNとIPSec（IKEv2）のプロトコルがサポートされています。 詳細は、 [VPNインテグレーションの概要](..//configuring-the-cloud-network/vpn-integration-overview.md) を参照してください。
 
 ## Docker Hub
 

@@ -15,7 +15,7 @@ VPN 서버를 구성할 필요가 없는 경우 [다음 단계](#next-steps) 로
 
 Liferay Cloud와 내부 네트워크 간에 보안 연결을 설정할 수 있도록 VPN 서버를 구성해야 합니다.
 
-`EAP-TLS` 또는 `EAP-MSCHAPV2` 인증 프로토콜을 사용하도록 VPN 연결을 구성할 수 있습니다. VPN 서버 구성에 대한 도움말은 [VPN 서버 구성](../infrastructure-and-operations/networking/configuring-a-vpn-server.md) 을 참조하십시오.
+`EAP-TLS` 또는 `EAP-MSCHAPV2` 인증 프로토콜을 사용하도록 VPN 연결을 구성할 수 있습니다. VPN 서버 구성에 대한 도움말은 [VPN 서버 구성](..//configuring-the-cloud-network/configuring-a-vpn-server.md) 을 참조하십시오.
 
 ## VPN 연결 생성 및 구성
 

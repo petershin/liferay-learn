@@ -7,13 +7,14 @@
    :maxdepth: 3
 
    getting-started.md
-   using-the-liferay-dxp-service.md
-   build-and-deploy.md
-   manage-and-optimize.md
    platform-services.md
-   infrastructure-and-operations.md
-   migrating-to-liferay-cloud.md
+   build-and-deploy.md
+   configuring-the-cloud-network.md
+   tuning-security-settings.md
+   using-the-liferay-dxp-service.md
+   manage-and-optimize.md
    troubleshooting.md
+   migrating-to-liferay-cloud.md
    reference.md
 
 

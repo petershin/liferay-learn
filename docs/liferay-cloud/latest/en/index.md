@@ -1,18 +1,20 @@
 ---
 toc:
   - ./getting-started.md
-  - ./using-the-liferay-dxp-service.md
-  - ./build-and-deploy.md
-  - ./manage-and-optimize.md
   - ./platform-services.md
-  - ./infrastructure-and-operations.md
-  - ./migrating-to-liferay-cloud.md
+  - ./build-and-deploy.md
+  - ./configuring-the-cloud-network.md
+  - ./tuning-security-settings.md
+  - ./using-the-liferay-dxp-service.md
+  - ./manage-and-optimize.md
   - ./troubleshooting.md
+  - ./migrating-to-liferay-cloud.md
   - ./reference.md
 taxonomy-category-names:
 - Cloud
 - Cloud Platform Administration
 - Liferay PaaS
+- Liferay SaaS
 uuid: 7d1a4e73-0b50-465f-99dc-c531c3f3dd25
 ---
 # Liferay Cloud

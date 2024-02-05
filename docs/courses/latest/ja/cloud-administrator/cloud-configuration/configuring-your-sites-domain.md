@@ -64,6 +64,6 @@ Next: [Liferayサービス](./setting-up-clustering-for-the-liferay-service.md) 
 
 ## 関連コンセプト
 
-* [カスタムドメイン](https://learn.liferay.com/w/liferay-cloud/infrastructure-and-operations/networking/custom-domains)
-* [ロードバランサー](https://learn.liferay.com/w/liferay-cloud/infrastructure-and-operations/networking/load-balancer#custom-ssl)
-* [VPNインテグレーションの概要](https://learn.liferay.com/w/liferay-cloud/infrastructure-and-operations/networking/vpn-integration-overview)
+* [カスタムドメイン](https://learn.liferay.com/w/liferay-cloud//configuring-the-cloud-network/custom-domains)
+* [ロードバランサー](https://learn.liferay.com/w/liferay-cloud//configuring-the-cloud-network/load-balancer#custom-ssl)
+* [VPNインテグレーションの概要](https://learn.liferay.com/w/liferay-cloud//configuring-the-cloud-network/vpn-integration-overview)

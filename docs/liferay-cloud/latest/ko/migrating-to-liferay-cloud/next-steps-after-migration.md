@@ -30,7 +30,7 @@ Liferay Cloud는 SAML 2.0을 준수하는 Signle Sign-On ID 공급자를 지원�
 
 Liferay Cloud의 환경이 필요에 따라 사용자 정의 도메인을 호스트하는지 확인하십시오. Liferay Cloud는 맞춤형 도메인과 통합되어 각 환경에 대해 인증된 도메인을 정의할 수 있습니다.
 
-자세한 내용은 [맞춤 도메인](../infrastructure-and-operations/networking/custom-domains.md) 을 참조하세요.
+자세한 내용은 [맞춤 도메인](..//configuring-the-cloud-network/custom-domains.md) 을 참조하세요.
 
 ## 재해 복구 환경 설정
 

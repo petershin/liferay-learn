@@ -30,7 +30,7 @@ Liferay Cloud は、SAML 2.0 に準拠した Signle Sign-On Identity Provider �
 
 Liferay Cloud上の環境では、必要に応じて独自のカスタムドメインをホストしていることを確認してください。 Liferay Cloudは、お客様のカスタムドメインと連携し、環境ごとに認証ドメインを定義することが可能です。
 
-詳しくは、 [カスタムドメイン](../infrastructure-and-operations/networking/custom-domains.md) をご覧ください。
+詳しくは、 [カスタムドメイン](..//configuring-the-cloud-network/custom-domains.md) をご覧ください。
 
 ## ディザスターリカバリー環境の構築
 

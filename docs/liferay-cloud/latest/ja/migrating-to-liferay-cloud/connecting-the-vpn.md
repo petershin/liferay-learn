@@ -15,7 +15,7 @@ VPNサーバーを設定する必要がない場合は、 [次のステップに
 
 Liferay Cloudと内部ネットワーク間で安全な接続を確立できるよう、VPNサーバーを設定する必要があります。
 
-`EAP-TLS` または `EAP-MSCHAPV2` 認証プロトコルを使用するように、VPN 接続を設定することができます。 VPNサーバーの設定については、 [VPNサーバーの設定](../infrastructure-and-operations/networking/configuring-a-vpn-server.md) を参照してください。
+`EAP-TLS` または `EAP-MSCHAPV2` 認証プロトコルを使用するように、VPN 接続を設定することができます。 VPNサーバーの設定については、 [VPNサーバーの設定](..//configuring-the-cloud-network/configuring-a-vpn-server.md) を参照してください。
 
 ## VPN接続の作成と設定
 

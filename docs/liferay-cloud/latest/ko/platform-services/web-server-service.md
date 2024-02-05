@@ -54,7 +54,7 @@ Nginx의 액세스 및 오류 로그(기본적으로 Nginx 컨테이너의 `/var
 | `LCP_WEBSERVER_LOG_FORMAT`                |             | Nginx 로깅 형식을 사용자 정의합니다. [공식 Nginx 문서를 참조하세요](https://docs.nginx.com/nginx/admin-guide/monitoring/logging/#setting-up-the-access-log) .                                                                        |
 | `LCP_WEBSERVER_MODSECURITY`               | `Off`       | ModSecurity를 활성화하거나 비활성화합니다. 규칙을 활성화하고 처리하려면 이 값을 'On'으로 설정하고, 중단 작업을 실행하지 않고 규칙을 처리하려면 'DetectionOnly'로 설정하세요. [웹 응용 프로그램 방화벽](..//tuning-security-settings/web-application-firewall.md) 참조하세요. |
 
-[Ingress Load Balancer](../infrastructure-and-operations/networking/load-balancer.md) 도 웹 서버 서비스를 통해 구성됩니다. 이 서비스에 환경 변수를 추가하여 로드 밸런서 및 사용자 지정 도메인을 구성할 수 있습니다. 자세한 내용은 [로드 밸런서 환경 변수 참조](../infrastructure-and-operations/networking/load-balancer.md#environment-variables-reference) 를 참조하세요.
+[Ingress Load Balancer](..//configuring-the-cloud-network/load-balancer.md) 도 웹 서버 서비스를 통해 구성됩니다. 이 서비스에 환경 변수를 추가하여 로드 밸런서 및 사용자 지정 도메인을 구성할 수 있습니다. 자세한 내용은 [로드 밸런서 환경 변수 참조](..//configuring-the-cloud-network/load-balancer.md#environment-variables-reference) 를 참조하세요.
 
 Nginx에 대한 모든 환경 변수 및 기타 구성 형태는 [공식 Nginx 문서](https://docs.nginx.com/) 에 있습니다. 이러한 구성은 `configs/{ENV}/` 디렉터리에서 설정하고 환경 변수는 서비스의 `LCP.json` 파일에서 설정할 수 있습니다.
 

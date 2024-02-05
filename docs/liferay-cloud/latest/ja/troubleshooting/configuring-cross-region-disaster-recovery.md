@@ -40,7 +40,7 @@ Liferay Cloud のシステム管理者は、DR 環境と本番環境の両方に
 
 1. ［**Connect VPN**］をクリックします。
 
-VPNへの接続の詳細は、 [VPN接続](../infrastructure-and-operations/networking/connecting-a-vpn-server-to-liferay-cloud.md)を参照してください。
+VPNへの接続の詳細は、 [VPN接続](..//configuring-the-cloud-network/connecting-a-vpn-server-to-liferay-cloud.md)を参照してください。
 
 ### 最新の安定したビルドを本番環境からDR環境にデプロイする
 
@@ -142,7 +142,7 @@ VPNへの接続の詳細は、 [VPN接続](../infrastructure-and-operations/netw
 
     ![DR環境のVPNステータスをチェックして、正しく接続されていることを確認します。](./configuring-cross-region-disaster-recovery/images/05.png)
 
-    適切なVPNが接続されていない場合は、接続を設定してください。 詳しくは、 [Liferay Cloud に VPN サーバーを接続する](../infrastructure-and-operations/networking/connecting-a-vpn-server-to-liferay-cloud.md) をご覧ください。
+    適切なVPNが接続されていない場合は、接続を設定してください。 詳しくは、 [Liferay Cloud に VPN サーバーを接続する](..//configuring-the-cloud-network/connecting-a-vpn-server-to-liferay-cloud.md) をご覧ください。
 
 1. DXPインスタンスにログインします（カスタムドメインはまだDR環境を指していないため、IPアドレスを使用します）。
 
@@ -164,7 +164,7 @@ DR環境でのWebサーバーサービスのカスタムドメインは、元の
 
 1. 本番環境で同じ設定に移動し、カスタムドメイン設定を削除します。
 
-1. DNSレコードを更新し、カスタムドメインをDR環境に追加します。 詳細は、 [カスタムドメイン](../infrastructure-and-operations/networking/custom-domains.md)を参照してください。
+1. DNSレコードを更新し、カスタムドメインをDR環境に追加します。 詳細は、 [カスタムドメイン](..//configuring-the-cloud-network/custom-domains.md)を参照してください。
 
 これにより、すべてのトラフィックがDR環境に送られます。
 
@@ -224,7 +224,7 @@ DR環境から通常の本番環境にデータを復元します。
 
 1. 本番環境の ［**設定**］ &rarr; ［**VPN**］ ページに移動して、VPNが本番環境に接続されていることを確認します。
 
-   適切なVPNが接続されていない場合は、接続を設定してください。 詳しくは、 [Liferay Cloud に VPN サーバーを接続する](../infrastructure-and-operations/networking/connecting-a-vpn-server-to-liferay-cloud.md) をご覧ください。
+   適切なVPNが接続されていない場合は、接続を設定してください。 詳しくは、 [Liferay Cloud に VPN サーバーを接続する](..//configuring-the-cloud-network/connecting-a-vpn-server-to-liferay-cloud.md) をご覧ください。
 
 1. DXPインスタンスにログインします（カスタムドメインはDR環境を指しているため、IPアドレスを使用します）。
 
@@ -252,7 +252,7 @@ DR環境から通常の本番環境にデータを復元します。
     カスタムドメインを削除すると、本番環境が再びトラフィックを受信するまで、ダウンタイムが発生します。
     ```
 
-1. DNSレコードを更新し、カスタムドメインを本番環境に戻します。 詳細は、 [カスタムドメイン](../infrastructure-and-operations/networking/custom-domains.md)を参照してください。
+1. DNSレコードを更新し、カスタムドメインを本番環境に戻します。 詳細は、 [カスタムドメイン](..//configuring-the-cloud-network/custom-domains.md)を参照してください。
 
 1. ［**カスタムドメインの更新**］ をクリックします。
 

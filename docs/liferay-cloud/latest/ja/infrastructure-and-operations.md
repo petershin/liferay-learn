@@ -1,6 +1,6 @@
 ---
 toc:
-- ./infrastructure-and-operations/networking.md
+- .//configuring-the-cloud-network.md
 - .//tuning-security-settings.md
 ---
 # インフラストラクチャーと運用
@@ -8,18 +8,18 @@ toc:
 ```{toctree}
 :maxdepth: 2
 
-infrastructure-and-operations/networking.md
+/configuring-the-cloud-network.md
 /tuning-security-settings.md
 ```
 
 ## ネットワーキング
 
-- [カスタムドメイン](./infrastructure-and-operations/networking/custom-domains.md)
-- [ロードバランサー](./infrastructure-and-operations/networking/load-balancer.md)
-- [プライベートネットワーク](./infrastructure-and-operations/networking/private-network.md)
-- [VPNインテグレーションの概要](./infrastructure-and-operations/networking/vpn-integration-overview.md)
-- [VPNサーバーの設定](./infrastructure-and-operations/networking/configuring-a-vpn-server.md)
-- [Liferay CloudにVPNサーバーを接続する](./infrastructure-and-operations/networking/connecting-a-vpn-server-to-liferay-cloud.md)
+- [カスタムドメイン](.//configuring-the-cloud-network/custom-domains.md)
+- [ロードバランサー](.//configuring-the-cloud-network/load-balancer.md)
+- [プライベートネットワーク](.//configuring-the-cloud-network/private-network.md)
+- [VPNインテグレーションの概要](.//configuring-the-cloud-network/vpn-integration-overview.md)
+- [VPNサーバーの設定](.//configuring-the-cloud-network/configuring-a-vpn-server.md)
+- [Liferay CloudにVPNサーバーを接続する](.//configuring-the-cloud-network/connecting-a-vpn-server-to-liferay-cloud.md)
 
 ## セキュリティ
 

@@ -3,6 +3,7 @@ uuid: a996ebe0-1f91-4867-a50d-dd81652cd9be
 ---
 # Creating Data Set Views
 {bdg-secondary}`Liferay DXP 2024.Q1 U112`
+{bdg-link-primary}`[Beta Feature](../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
 
 !!! important
    This feature is currently behind a [developer feature flag](../../system-administration/configuring-liferay/feature-flags.md#dev-feature-flags) (LPS-167253) and a [beta feature flag](../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags) (LPS-164563).
@@ -29,7 +30,7 @@ To create a data set view,
 
 ## Managing Data Set Views
 
-The Data Set View application is divided in tabs,
+The Data Set View application is divided into tabs,
 
 - In the Details tab, see and edit the name (1) and description (2) of your data set view. Click *Save* once the alterations are complete to save them.
 
@@ -39,7 +40,7 @@ The Data Set View application is divided in tabs,
 
 - In the [Fields tab](./data-set-view-fields.md), select which fields are displayed in your data set view and manage them.
 
-   You can also edit the field, add a friendly label, and localize it, choose a renderer for the field, and define the field as sortable or not sortable.
+   You can also edit the field, add a friendly label and localize it, choose a renderer for the field, and define the field as sortable or not sortable.
 
    ![In the Fields tab, you can manage the fields displayed in the data set view.](./creating-data-set-views/images/03.png)
 
@@ -47,13 +48,19 @@ The Data Set View application is divided in tabs,
 
    ![In the Filters tab, you can provide filters to your data set view.](./creating-data-set-views/images/04.png)
 
-- In the [Sorting tab](./data-set-view-sorting), you can set default sorting rules that are applied to the entries once the user vists the page.
+- In the Sorting tab, you can set default sorting rules that are applied to the entries once the user visits a page with a Data Set fragment.
 
-   ![In the Sorting tab, you can .](./creating-data-set-views/images/05.png)
+   You can sort entries using a specific field as criterion in ascending or descending order.
 
-- In the [Actions tab](./data-set-view-actions),
+   It is also possible to select multiple fields. In this scenario, the first field serves as the primary criterion for sorting the entries. If there are entries with the same value in the first field, the second field is used as the secondary criterion for sorting.
 
-   ![In the Actions tab, you can .](./creating-data-set-views/images/06.png)
+   ![In the Sorting tab, you can set default sorting rules that are applied to the entries once the user visits a page with a Data Set fragment.](./creating-data-set-views/images/05.png)
+
+- In the [Actions tab](./data-set-view-actions), you can create actions mapped to buttons that are performed once the user interacts with those buttons.
+
+   Link buttons or icons to different URLs and redirect users to them. It is also possible to show confirmation messages before executing the actions.
+
+   ![In the Actions tab, you can create actions mapped to buttons and link them to different URLs.](./creating-data-set-views/images/06.png)
 
 - In the Pagination tab,
 

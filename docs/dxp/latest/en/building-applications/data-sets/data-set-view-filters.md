@@ -3,6 +3,7 @@ uuid: 9c088b08-3ab6-4b1e-bb37-05e578657d51
 ---
 # Data Set View Filters
 {bdg-secondary}`Liferay DXP 2024.Q1 U112`
+{bdg-link-primary}`[Beta Feature](../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
 
 !!! important
    This feature is currently behind a [developer feature flag](../../system-administration/configuring-liferay/feature-flags.md#dev-feature-flags) (LPS-167253) and a [beta feature flag](../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags) (LPS-164563).
@@ -51,9 +52,9 @@ Use date-type fields to pre-filter the displayed entries.
 
 1. Select the Field by which you want to filter the entries.
 
-1. (Optional) Set From and To dates to pre-filter the entries.
+1. (Optional) Set From and To dates to pre-filter the entries and the filter will show entries within the specified range.
 
-   You can set just the one of the two dates.
+   You can set just one of the two dates.
 
 1. Click *Save*.
 
@@ -90,7 +91,7 @@ Use picklist options as parameters for the filter.
 
 1. Enter the translated text in the Name field.
 
-   The translated text saves automatically.
+   The translated text is saved automatically.
 
    The localization status label next to the flag changes to `Translated` to indicate that the localization was successful.
 
@@ -103,3 +104,5 @@ Use picklist options as parameters for the filter.
 
 - [Creating Data Set Views](./creating-data-set-views.md)
 - [Creating Data Sets](./creating-data-sets.md)
+- [Data Set View Fields](./data-set-view-fields.md)
+- [Data Set View Actions](./data-set-view-actions.md)

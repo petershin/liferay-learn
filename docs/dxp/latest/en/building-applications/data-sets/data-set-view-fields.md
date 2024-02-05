@@ -3,6 +3,7 @@ uuid: 8d92cb6f-d38f-4144-98ae-d69af473178b
 ---
 # Data Set View Fields
 {bdg-secondary}`Liferay DXP 2024.Q1 U112`
+{bdg-link-primary}`[Beta Feature](../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
 
 !!! important
    This feature is currently behind a [developer feature flag](../../system-administration/configuring-liferay/feature-flags.md#dev-feature-flags) (LPS-167253) and a [beta feature flag](../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags) (LPS-164563).
@@ -25,7 +26,7 @@ Use the data set manager to select which fields to display in your data set view
 
 1. In the modal that opens, select the fields to be displayed.
 
-   Select one or multiple fields. You can also select all fields at once by clicking the checkbox next to the search bar.
+   Select one or more fields. You can also select all fields at once by clicking the checkbox next to the search bar.
 
    Use the search bar to find specific fields. Leave the search bar empty to see all available fields.
 
@@ -53,7 +54,7 @@ To localize the label,
 
 1. Enter the translated text in the Label field (2).
 
-   The translated text saves automatically.
+   The translated text is saved automatically.
 
    The localization status label next to the flag changes to `Translated` to indicate that the localization was successful.
 
@@ -84,3 +85,5 @@ In the video below, the integer field initially allows sorting, enabling users t
 
 - [Creating Data Set Views](./creating-data-set-views.md)
 - [Creating Data Sets](./creating-data-sets.md)
+- [Data Set View Actions](./data-set-view-actions.md)
+- [Data Set View Filters](./data-set-view-filters.md)

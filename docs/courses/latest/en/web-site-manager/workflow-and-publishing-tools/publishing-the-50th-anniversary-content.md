@@ -5,7 +5,11 @@ uuid: 4a9d8519-bd43-44af-87ab-5a842ee93ee9
 
 Most of the real work is done. All that's left to do is publish the 50th anniversary content to the production environment.
 
-Log in as Preston Palmer again. He's the publication administrator and the one who can publish the content.
+1. Log in as Preston Palmer again. He's the publication administrator and the one who can publish the content.
+
+   **Email Address:** preston@clarityvisionsolutions.com
+
+   **Password:** learn
 
 1. From the publications bar, click _50th Anniversary_ &rarr; _Review Changes_.
 

@@ -7,7 +7,7 @@ Clarity's initial site is in place and the first pieces of [content were added](
 
 1. Log in as Preston Palmer, the site administrator.
 
-   **Email Address:** preston.palmer@liferay.com
+   **Email Address:** preston@clarityvisionsolutions.com
 
    **Password:** learn
 
@@ -23,7 +23,7 @@ Now all web content articles added in the site go through a review process as de
 
 1. Log in as Rex Randle, the custom advocacy specialist who fields customer questions at the `hello@clarityvisionsolutions.com` email address (visible in the footer of the site).
 
-   **Email Address:** rex.randle@liferay.com
+   **Email Address:** rex@clarityvisionsolutions.com
 
    **Password:** learn
 
@@ -59,7 +59,7 @@ The content manager, Olivia O'Neal, must review Rex's new content.
 
 1. Log in as Olivia O'Neal.
 
-   **Email Address:** olivia.oneal@liferay.com
+   **Email Address:** olivia@clarityvisionsolutions.com
 
    **Password:** learn
 
@@ -146,6 +146,10 @@ Next, configure the folder to accept only FAQs and configure workflow for the fo
    The FAQs folder uses the Single Approver workflow and only allows content with the FAQs structure.
 
 1. Repeat the procedure to put events into a folder named Events and configure the folder to use the Single Approver workflow.
+
+1. Sign out with Olivia O'Neal. 
+
+1. Sign in with Preston Palmer.
 
 1. Go to _Site Menu_ (![Site Menu](../../images/icon-product-menu.png)) then click _Configuration_ &rarr; _Workflow_. Disable the site level workflow configuration for web content articles.
 

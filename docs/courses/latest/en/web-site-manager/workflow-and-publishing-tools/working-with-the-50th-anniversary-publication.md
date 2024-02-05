@@ -5,7 +5,11 @@ uuid: 2b57d2ab-0644-431a-980e-0698ce7dbf9a
 
 The publication template is in place for Clarity's special events. Now the publication administrator will create the publication, enabling the publication editors to begin working on its content.
 
-Preston Palmer is a publication administrator in the template, so log in with this user to create the 50th anniversary event's publication:
+1. Log in with Preston Palmer, a publication administrator in the template and the site administrator:
+
+   **Email Address:** preston@clarityvisionsolutions.com
+
+   **Password:** learn
 
 1. In the publications bar, click _Create New Publication_.
 
@@ -23,7 +27,7 @@ Preston Palmer is a publication administrator in the template, so log in with th
 
 1. Sign in with Rex Randle. Rex has web content creation permission due to his job, Customer Advocacy Specialist.
 
-   **Email Address:** rex.randle@liferay.com
+   **Email Address:** rex@clarityvisionsolutions.com
 
    **Password:** learn
 
@@ -38,7 +42,7 @@ Preston Palmer is a publication administrator in the template, so log in with th
 
 1. Click _Submit for Workflow_.
 
-1. Let's see what this looks like in the ongoing publication. Log in with Preston Palmer, the publication administrator. Open the _Review Changes_ screen from the publications bar.
+1. Let's see what this looks like in the ongoing publication. Log in again with Preston Palmer, the publication administrator. Open the _Review Changes_ screen from the publications bar.
 
    ![The web content for the 50th anniversary event is pending in the workflow.](./working-with-the-50th-anniversary-publication/images/03.png)
 
@@ -52,9 +56,11 @@ The content manager, Olivia O'Neal, must first review Rex's new content within t
 
 1. Log in as Olivia O'Neal.
 
-   **Email Address:** olivia.oneal@liferay.com
+   **Email Address:** olivia@clarityvisionsolutions.com
 
    **Password:** learn
+
+1. If it's not already selected in the publications bar, select the 50th Anniversary publication. Open the publications bar and click _Select Publication_.
 
 1. Go to the review screen for the publication, click the user avatar, and select _My Workflow Tasks_.
 
@@ -98,7 +104,7 @@ Olivia O'Neal is a publication editor as configured in the template, so she can 
 
 1. Rename it to _50th Anniversary Announcement_.
 
-1. Edit the HTML:
+1. Click the fragment to open the editor. Edit the HTML:
 
    * Replace the entire line that has the text "Save an average of $100 with vision insurance!" with this: 
 
@@ -110,13 +116,7 @@ Olivia O'Neal is a publication editor as configured in the template, so she can 
 
 1. Click _Publish_.
 
-Next, the announcement fragment in the master page must be replaced with the new one:
-
-1. Open the publications bar and click _Select a Publication_. 
-
-1. Click _50th Anniversary_.
-
-   ![Select the 50th Anniversary publication.](./working-with-the-50th-anniversary-publication/images/07.png)
+Next, the announcement fragment in the master page must be replaced with the new one. Within the 50th Anniversary publication,
 
 1. Open the site's master page, _Clarity MP_.
 
@@ -137,7 +137,7 @@ Next, the announcement fragment in the master page must be replaced with the new
 
 1. Go to _Site Menu_ (![Site Menu](../../images/icon-product-menu.png)) &rarr; _Site Builder_ &rarr; _Navigation Menus_ and click _Clarity Navigation Menu_.
 
-1. Add an item to the More submenu for the event you just created by clicking _Add Child_ &rarr; _Web Content Article_ &rarr; Clarity is Turning 50!_.
+1. Add an item to the More submenu for the event you just created by clicking _Add Child_ &rarr; _Web Content Article_ &rarr; _Clarity is Turning 50!_.
 
    ![Add the web content article to the navigation menu.](./working-with-the-50th-anniversary-publication/images/09.png)
 

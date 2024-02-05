@@ -13,7 +13,7 @@ To enable publications in Liferay,
 
 1. Log in with the administrator Kyle Klein:
 
-   **Email Address:** kyle@liferay.com
+   **Email Address:** kyle@clarityvisionsolutions.com
 
    **Password:** learn
 
@@ -46,7 +46,7 @@ You can jump right in and create the publication, but Clarity is likely to have 
 
 1. Click *Default Template* to set this template as the default for new publications.
 
-1. Expand *Publication Information* and enter the Publication Name: *REPLACE THIS: ${CURRENT_USERNAME}, ${TODAY_DATE}*.
+1. Expand *Publication Information* and enter the Publication Name: `REPLACE THIS: ${CURRENT_USERNAME}, ${TODAY_DATE}`.
 
    See [Using Publication Templates](https://learn.liferay.com/en/w/dxp/site-building/publishing-tools/publications/using-publication-templates) for more information.
 

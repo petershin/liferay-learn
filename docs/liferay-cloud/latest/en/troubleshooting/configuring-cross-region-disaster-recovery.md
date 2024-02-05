@@ -77,7 +77,7 @@ Once you have the production environment's master token, set these [environment 
 
 * **LCP_BACKUP_RESTORE_SCHEDULE**: a [cron scheduling](https://crontab.guru/) value that defines the frequency of automated backups. See [Scheduling Automated Backups and Cleanups](../platform-services/backup-service/backup-service-overview.md#scheduling-automated-backups-and-cleanups) for more information.
 
-Set this value as a [secret](../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md) in your DR environment:
+Set this value as a [secret](..//tuning-security-settings/managing-secure-environment-variables-with-secrets.md) in your DR environment:
 
 * **LCP_EXTERNAL_PROJECT_MASTER_TOKEN**: your production environment's master token
 

@@ -5,7 +5,7 @@ Liferay Cloud는 주요 구성 요소 모음을 결합하여 강력하고 안정
 ![Liferay Cloud와 통합된 모든 주요 서비스 및 구성 요소가 여기에 연결되어 표시됩니다.](./liferay-cloud-infrastructure/images/01.png)
 
 ```{note}
-비공개 클러스터 구독에는 내장 [웹 애플리케이션 방화벽](../infrastructure-and-operations/security/web-application-firewall.md)도 포함됩니다. 그러나 [공유 클러스터에서는 사용할 수 없습니다](./platform-limitations.md#security) .
+비공개 클러스터 구독에는 내장 [웹 애플리케이션 방화벽](..//tuning-security-settings/web-application-firewall.md)도 포함됩니다. 그러나 [공유 클러스터에서는 사용할 수 없습니다](./platform-limitations.md#security) .
 ```
 
 다양한 구성 요소에 대한 설명은 다음 목록을 참조하십시오.

@@ -70,7 +70,7 @@ VPNへの接続の詳細は、 [VPN接続](../infrastructure-and-operations/netw
 
 * **LCP** BACKUP **RESTORE_SCHEDULE** : 自動バックアップの頻度を定義する [cronスケジュール](https://crontab.guru/) の値。 詳細については、 [Scheduling Automated Backups and Cleanups](../platform-services/backup-service/backup-service-overview.md#scheduling-automated-backups-and-cleanups) を参照してください。
 
-この値をDR環境の [シークレット](../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md) として設定します。
+この値をDR環境の [シークレット](..//tuning-security-settings/managing-secure-environment-variables-with-secrets.md) として設定します。
 
 * **LCP** EXTERNAL **PROJECT** MASTER **TOKEN** ：本番環境のマスタートークン
 

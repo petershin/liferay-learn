@@ -44,7 +44,7 @@ First, configure the `liferay` service to increase the number of instances your 
 
 The High Availability subscription also includes an add-on that allows you to use Dynatrace integration with the `liferay` service. To take advantage of this feature in your production environment(s), you must take additional steps to configure the `liferay` service.
 
-The Liferay Cloud team provides a `tenant` value to use for this configuration when you upgrade your subscription. Use this `tenant` value to complete the steps listed [here](../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md#integrating-dynatrace-with-production-environments).
+The Liferay Cloud team provides a `tenant` value to use for this configuration when you upgrade your subscription. Use this `tenant` value to complete the steps listed [here](..//tuning-security-settings/managing-secure-environment-variables-with-secrets.md#integrating-dynatrace-with-production-environments).
 
 ## Web Server Service Configuration
 

@@ -83,7 +83,7 @@ Liferay Cloud의 Liferay 컨테이너에는 일반 `tomcat` 폴더와 버전이 
 
 ## 환경 변수
 
-Liferay Cloud의 Liferay 서비스는 JVM 메모리 설정이나 데이터베이스 연결 설정과 같이 온프레미스 인스턴스에서 다르게 수행되는 일부 구성 대신 [환경 변수](../reference/defining-environment-variables.md) (또는 [비밀](../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md))를 사용합니다. 환경 변수를 사용하여 [포털 속성을 재정의하거나 대체할 수도 있습니다](./liferay-service-environment-variables.md#overriding-portal-properties) .
+Liferay Cloud의 Liferay 서비스는 JVM 메모리 설정이나 데이터베이스 연결 설정과 같이 온프레미스 인스턴스에서 다르게 수행되는 일부 구성 대신 [환경 변수](../reference/defining-environment-variables.md) (또는 [비밀](..//tuning-security-settings/managing-secure-environment-variables-with-secrets.md))를 사용합니다. 환경 변수를 사용하여 [포털 속성을 재정의하거나 대체할 수도 있습니다](./liferay-service-environment-variables.md#overriding-portal-properties) .
 
 자세한 내용은 [Liferay 서비스 환경 변수](./liferay-service-environment-variables.md) 를 참조하세요.
 

@@ -1,7 +1,7 @@
 ---
 toc:
 - ./infrastructure-and-operations/networking.md
-- ./infrastructure-and-operations/security.md
+- .//tuning-security-settings.md
 ---
 # インフラストラクチャーと運用
 
@@ -9,7 +9,7 @@ toc:
 :maxdepth: 2
 
 infrastructure-and-operations/networking.md
-infrastructure-and-operations/security.md
+/tuning-security-settings.md
 ```
 
 ## ネットワーキング
@@ -23,8 +23,8 @@ infrastructure-and-operations/security.md
 
 ## セキュリティ
 
-- [情報セキュリティとLiferay Cloud](./infrastructure-and-operations/security/information-security-and-liferay-cloud.md)
-- [認証](./infrastructure-and-operations/security/authentication.md)
-- [Liferay CloudでSSOを使用する](./infrastructure-and-operations/security/using-sso-with-liferay-cloud.md)
-- [Webアプリケーションファイアウォール](./infrastructure-and-operations/security/web-application-firewall.md)
-- [シークレットで安全な環境変数を管理](./infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md)
+- [情報セキュリティとLiferay Cloud](.//tuning-security-settings/information-security-and-liferay-cloud.md)
+- [認証](.//tuning-security-settings/authentication.md)
+- [Liferay CloudでSSOを使用する](.//tuning-security-settings/using-sso-with-liferay-cloud.md)
+- [Webアプリケーションファイアウォール](.//tuning-security-settings/web-application-firewall.md)
+- [シークレットで安全な環境変数を管理](.//tuning-security-settings/managing-secure-environment-variables-with-secrets.md)

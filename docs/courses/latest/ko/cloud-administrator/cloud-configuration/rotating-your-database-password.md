@@ -114,4 +114,4 @@ Delectable Bonsai의 데이터베이스 보안 정책은 최소한 90일마다 �
 * [데이터베이스 사용자 이름 변경](https://learn.liferay.com/web/guest/w/liferay-cloud/platform-services/database-service/changing-your-database-username)
 * [데이터베이스 서비스(MySQL)](https://learn.liferay.com/web/guest/w/liferay-cloud/platform-services/database-service/database-service)
 * [환경 변수 정의](https://learn.liferay.com/w/liferay-cloud/reference/defining-environment-variables)
-* [보안 비밀로 보안 환경 변수 관리](https://learn.liferay.com/w/liferay-cloud/infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets)
+* [보안 비밀로 보안 환경 변수 관리](https://learn.liferay.com/w/liferay-cloud//tuning-security-settings/managing-secure-environment-variables-with-secrets)

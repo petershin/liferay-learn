@@ -118,4 +118,4 @@ Next: walk through the process of [installing a hotfix](./installing-a-hotfix.md
 * [Changing Your Database Username](https://learn.liferay.com/web/guest/w/liferay-cloud/platform-services/database-service/changing-your-database-username)
 * [Database Service](https://learn.liferay.com/web/guest/w/liferay-cloud/platform-services/database-service/database-service)
 * [Defining Environment Variables](https://learn.liferay.com/w/liferay-cloud/reference/defining-environment-variables)
-* [Managing Secure Environment Variables with Secrets](https://learn.liferay.com/w/liferay-cloud/infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets)
+* [Managing Secure Environment Variables with Secrets](https://learn.liferay.com/w/liferay-cloud//tuning-security-settings/managing-secure-environment-variables-with-secrets)

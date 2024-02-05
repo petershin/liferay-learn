@@ -70,7 +70,7 @@ VPN 연결에 대한 자세한 내용은 [VPN 연결](../infrastructure-and-oper
 
 * **LCP_BACKUP_RESTORE_SCHEDULE**: 자동 백업 빈도를 정의하는 [cron 스케줄링](https://crontab.guru/) 값. 자세한 내용은 [자동 백업 및 정리 예약](../platform-services/backup-service/backup-service-overview.md#scheduling-automated-backups-and-cleanups) 을 참조하십시오.
 
-DR 환경에서 이 값을 [비밀](../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md) 로 설정합니다.
+DR 환경에서 이 값을 [비밀](..//tuning-security-settings/managing-secure-environment-variables-with-secrets.md) 로 설정합니다.
 
 * **LCP_EXTERNAL_PROJECT_MASTER_TOKEN**: 프로덕션 환경의 마스터 토큰
 

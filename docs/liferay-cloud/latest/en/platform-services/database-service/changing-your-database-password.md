@@ -28,7 +28,7 @@ Then, click _Backup Now_ on the _Backups_ page:
 
 ## Changing the Database Password
 
-The database password is changed directly using the [secrets](../../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md) feature within your chosen environment. However, for the database password secret, you must follow additional steps to ensure that your services update correctly with the new value.
+The database password is changed directly using the [secrets](../..//tuning-security-settings/managing-secure-environment-variables-with-secrets.md) feature within your chosen environment. However, for the database password secret, you must follow additional steps to ensure that your services update correctly with the new value.
 
 <!-- Mention required service versions, and link to possible section on the procedure for 3.x services -->
 
@@ -102,4 +102,4 @@ Your `database` service is now updated with a new password, and your other servi
 
 * [Database Service](./database-service.md)
 * [Changing Your Database Username](./changing-your-database-username.md)
-* [Managing Secure Environment Variables with Secrets](../../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md)
+* [Managing Secure Environment Variables with Secrets](../..//tuning-security-settings/managing-secure-environment-variables-with-secrets.md)

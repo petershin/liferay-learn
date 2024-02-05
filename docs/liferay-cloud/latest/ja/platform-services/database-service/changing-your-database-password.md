@@ -20,7 +20,7 @@
 
 ## データベースのパスワード変更
 
-データベースのパスワードは、選択した環境内の [secrets](../../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md) 機能を使って直接変更されます。 ただし、データベースのパスワードシークレットについては、サービスが新しい値で正しく更新されるように、追加の手順を踏む必要があります。
+データベースのパスワードは、選択した環境内の [secrets](../..//tuning-security-settings/managing-secure-environment-variables-with-secrets.md) 機能を使って直接変更されます。 ただし、データベースのパスワードシークレットについては、サービスが新しい値で正しく更新されるように、追加の手順を踏む必要があります。
 
 <!-- Mention required service versions, and link to possible section on the procedure for 3.x services -->
 
@@ -94,4 +94,4 @@
 
 * [データベースサービス](./database-service.md)
 * [データベースのユーザー名の変更](./changing-your-database-username.md)
-* [シークレットで安全な環境変数を管理](../../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md)
+* [シークレットで安全な環境変数を管理](../..//tuning-security-settings/managing-secure-environment-variables-with-secrets.md)

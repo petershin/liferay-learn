@@ -58,7 +58,7 @@ Liferay Cloudでは、 [Dynatraceの](https://www.dynatrace.com/) 高度なパ�
 
 1. `トークン` および `テナント` 値を生成します。
 
-1. Liferayサービスに、Dynatrace`token`値を[Secret](../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md)として追加します。
+1. Liferayサービスに、Dynatrace`token`値を[Secret](..//tuning-security-settings/managing-secure-environment-variables-with-secrets.md)として追加します。
 
 1. Liferayサービスの本番環境の`LCP.json`ファイルにDynatrace`テナント` Dynatrace環境変数を追加します。 以下に例を示します。
 

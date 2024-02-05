@@ -51,7 +51,7 @@ Liferayサービスを通じてMySQLクライアントを使用する前に、�
 mysql -u ${LCP_SECRET_DATABASE_USER} -p${LCP_SECRET_DATABASE_PASSWORD}
 ```
 
-データベース名、ユーザー名、パスワードは、 `データベース` サービスの [秘密](../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md#viewing-and-modifying-an-existing-secret) で確認することができます。
+データベース名、ユーザー名、パスワードは、 `データベース` サービスの [秘密](..//tuning-security-settings/managing-secure-environment-variables-with-secrets.md#viewing-and-modifying-an-existing-secret) で確認することができます。
 
 ### 読み取り専用データベースのパスワードの変更
 

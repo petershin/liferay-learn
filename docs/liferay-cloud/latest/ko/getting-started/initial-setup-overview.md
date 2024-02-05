@@ -56,7 +56,7 @@ Liferay Cloud를 시작하려면 모든 계정, 환경 및 서비스가 성공�
 
 Jenkins(CI) 웹 인터페이스에 로그인한 다음 Liferay DXP 인스턴스의 비생산 환경(예: **dev** 및 **uat**)에 로그인하여 액세스할 수 있습니다.
 
-로그인 자격 증명은 초기 온보딩 이메일에 제공되며 **인프라** 환경에서 [비밀](../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md) 로 나열됩니다.
+로그인 자격 증명은 초기 온보딩 이메일에 제공되며 **인프라** 환경에서 [비밀](..//tuning-security-settings/managing-secure-environment-variables-with-secrets.md) 로 나열됩니다.
 
 자세한 지침은 [Liferay 클라우드 서비스에 로그인](./logging-into-your-liferay-cloud-services.md) 참조하십시오.
 

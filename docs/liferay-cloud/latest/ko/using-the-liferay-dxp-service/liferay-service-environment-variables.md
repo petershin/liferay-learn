@@ -51,7 +51,7 @@ Liferay 서비스에서 환경 변수를 사용하여 일반적으로 포털 속
 
 ### 비밀
 
-이러한 변수는 대신 Liferay 서비스에 대해 [를 비밀](../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md) 로 정의해야 합니다:
+이러한 변수는 대신 Liferay 서비스에 대해 [를 비밀](..//tuning-security-settings/managing-secure-environment-variables-with-secrets.md) 로 정의해야 합니다:
 
 | 이름                                           | 기정값 | 묘사                                                                                       |
 |:-------------------------------------------- |:--- |:---------------------------------------------------------------------------------------- |

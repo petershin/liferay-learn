@@ -78,7 +78,7 @@ These environment variables are available for the web server service:
 | `LCP_LOGROTATE_FILE_SIZE` | `50M` | The maximum size an Nginx access or error log can reach before it forces [automatic log rotation](#automatic-log-rotation). |
 | `LCP_LOGROTATE_SCHEDULE` | `0 0 * * *` | A Cron schedule for when [automatic Nginx log rotation](#automatic-log-rotation) occurs. |
 | `LCP_WEBSERVER_LOG_FORMAT` |   | Customizes the format for Nginx logging. See the [official Nginx documentation](https://docs.nginx.com/nginx/admin-guide/monitoring/logging/#setting-up-the-access-log). |
-| `LCP_WEBSERVER_MODSECURITY` | `Off` | Enables or disables ModSecurity. Set this value to `On` to enable and process rules, or to `DetectionOnly` to process rules without executing any disruptive actions. See [Web Application Firewall](../infrastructure-and-operations/security/web-application-firewall.md). |
+| `LCP_WEBSERVER_MODSECURITY` | `Off` | Enables or disables ModSecurity. Set this value to `On` to enable and process rules, or to `DetectionOnly` to process rules without executing any disruptive actions. See [Web Application Firewall](..//tuning-security-settings/web-application-firewall.md). |
 
 The [Ingress Load Balancer](../infrastructure-and-operations/networking/load-balancer.md) is also configured via the web server service. Environment variables can be added to this service to configure the load balancer and custom domains. See [the Load Balancer environment variables reference](../infrastructure-and-operations/networking/load-balancer.md#environment-variables-reference) for more information.
 

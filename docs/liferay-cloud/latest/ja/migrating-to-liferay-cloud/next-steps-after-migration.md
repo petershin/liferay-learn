@@ -2,7 +2,7 @@
 
 　 このセクションの前の段階がすべて完了したなら、オンプレミスのLiferay DXPインストールをLiferay Cloudに移行することに成功したことになります!
 
-Liferay DXPがLiferay Cloud上で動作するようになったので、その機能を活用する準備が整いました。これには [自動バックアップ](../platform-services/backup-service/backup-service-overview.md)、 [内蔵の継続的インテグレーション](../platform-services/continuous-integration.md)、自動 [サービスログ](../troubleshooting/reading-liferay-cloud-service-logs.md)、そして内蔵 [セキュリティ機能](../infrastructure-and-operations/security/information-security-and-liferay-cloud.md)があります。
+Liferay DXPがLiferay Cloud上で動作するようになったので、その機能を活用する準備が整いました。これには [自動バックアップ](../platform-services/backup-service/backup-service-overview.md)、 [内蔵の継続的インテグレーション](../platform-services/continuous-integration.md)、自動 [サービスログ](../troubleshooting/reading-liferay-cloud-service-logs.md)、そして内蔵 [セキュリティ機能](..//tuning-security-settings/information-security-and-liferay-cloud.md)があります。
 
 しかし、Liferay Cloudの機能をフルに活用するためには、開始時にいくつかの追加手順があります。
 
@@ -24,7 +24,7 @@ Liferay Cloudの管理者として、必要に応じて他のメンバーを招�
 
 シングルサインオンは、Liferay CloudインスタンスでユーザーをLiferayに認証するために、お好みのIDプロバイダーを使用することができます。 これにより、サインオン・エクスペリエンスがよりスムーズになり、プロジェクトの他の部分とより統合された印象を与えることができます。
 
-Liferay Cloud は、SAML 2.0 に準拠した Signle Sign-On Identity Provider をサポートしています。 詳細については、 [Liferay CloudでSSOを使用する](../infrastructure-and-operations/security/using-sso-with-liferay-cloud.md) をご覧ください。
+Liferay Cloud は、SAML 2.0 に準拠した Signle Sign-On Identity Provider をサポートしています。 詳細については、 [Liferay CloudでSSOを使用する](..//tuning-security-settings/using-sso-with-liferay-cloud.md) をご覧ください。
 
 ## カスタムドメインの追加
 

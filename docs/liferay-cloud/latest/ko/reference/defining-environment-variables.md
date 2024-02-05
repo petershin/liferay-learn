@@ -81,10 +81,10 @@ Liferay Cloud 콘솔을 통해 서비스에 환경 변수를 추가하려면 다
 
 일반 환경 변수에는 특별한 보안 조치가 없습니다. Liferay Cloud 프로젝트에 액세스할 수 있는 모든 사용자는 서비스에 대한 변수 값도 볼 수 있습니다.
 
-민감한 변수 값(예: 로그인 자격 증명)을 저장하기 위해 비밀을 사용할 수 있습니다. 비밀은 백엔드에서 암호화되며 **Admin** 역할이 없는 사용자에게는 숨겨집니다. 일반 환경 변수는 값을 보호하기 위해 [참조 비밀](../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md#referencing-secrets-from-environment-variables) 을 사용할 수도 있습니다. 자세한 내용은 [비밀로 보안 환경 변수 관리](../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md) 을 참조하십시오.
+민감한 변수 값(예: 로그인 자격 증명)을 저장하기 위해 비밀을 사용할 수 있습니다. 비밀은 백엔드에서 암호화되며 **Admin** 역할이 없는 사용자에게는 숨겨집니다. 일반 환경 변수는 값을 보호하기 위해 [참조 비밀](..//tuning-security-settings/managing-secure-environment-variables-with-secrets.md#referencing-secrets-from-environment-variables) 을 사용할 수도 있습니다. 자세한 내용은 [비밀로 보안 환경 변수 관리](..//tuning-security-settings/managing-secure-environment-variables-with-secrets.md) 을 참조하십시오.
 
 ## 관련 주제
 
 * [LCP.json을 통한 구성](../reference/configuration-via-lcp-json.md)
-* [보안 비밀로 보안 환경 변수 관리](../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md)
+* [보안 비밀로 보안 환경 변수 관리](..//tuning-security-settings/managing-secure-environment-variables-with-secrets.md)
 * [Liferay 클라우드 배포 워크플로 개요](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md)

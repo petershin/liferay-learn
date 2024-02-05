@@ -36,7 +36,7 @@ Liferay Cloud 구독을 업그레이드하는 첫 번째 단계는 계정 관리
 
 고가용성 구독에는 `liferay` 서비스와 Dynatrace 통합을 사용할 수 있는 추가 기능도 포함되어 있습니다. 프로덕션 환경에서 이 기능을 활용하려면 `liferay` 서비스를 구성하는 추가 단계를 수행해야 합니다.
 
-Liferay Cloud 팀은 구독을 업그레이드할 때 이 구성에 사용할 `테넌트` 값을 제공합니다. 이 `테넌트` 값을 사용하여 여기에 나열된 단계 [를 완료하십시오](../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md#integrating-dynatrace-with-production-environments) .
+Liferay Cloud 팀은 구독을 업그레이드할 때 이 구성에 사용할 `테넌트` 값을 제공합니다. 이 `테넌트` 값을 사용하여 여기에 나열된 단계 [를 완료하십시오](..//tuning-security-settings/managing-secure-environment-variables-with-secrets.md#integrating-dynatrace-with-production-environments) .
 
 ## 웹 서버 서비스 구성
 

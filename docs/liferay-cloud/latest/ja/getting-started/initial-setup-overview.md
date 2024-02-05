@@ -56,7 +56,7 @@ Liferay Cloud のサブスクリプションに関連するメールアカウン
 
 Jenkins(CI）のWebインターフェースにログインし、Liferay DXPインスタンスの非本番環境(例： **dev** と **uat**）にアクセスできるようにログインしてください。
 
-ログイン認証情報は、最初のオンボーディングメールで提供され、お客様の **infra** 環境の [secrets](../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md) として記載されています。
+ログイン認証情報は、最初のオンボーディングメールで提供され、お客様の **infra** 環境の [secrets](..//tuning-security-settings/managing-secure-environment-variables-with-secrets.md) として記載されています。
 
 詳細な手順については、 [Liferay Cloudサービスにログインする](./logging-into-your-liferay-cloud-services.md) を参照してください。
 

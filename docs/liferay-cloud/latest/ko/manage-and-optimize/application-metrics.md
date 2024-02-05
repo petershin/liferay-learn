@@ -58,7 +58,7 @@ Dynatrace를 통합하려면 다음 단계를 따르십시오.
 
 1. Dynatrace 비밀 `토큰` 및 `테넌트` 값을 생성합니다.
 
-1. Dynatrace `토큰` 값을 Liferay 서비스에 대한 [비밀](../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md) 으로 추가합니다.
+1. Dynatrace `토큰` 값을 Liferay 서비스에 대한 [비밀](..//tuning-security-settings/managing-secure-environment-variables-with-secrets.md) 으로 추가합니다.
 
 1. Dynatrace `테넌트` Dynatrace 환경 변수를 Liferay 서비스 프로덕션 환경의 `LCP.json` 파일에 추가합니다. 예를 들어:
 

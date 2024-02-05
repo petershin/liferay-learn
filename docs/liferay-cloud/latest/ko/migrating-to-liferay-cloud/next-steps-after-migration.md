@@ -2,7 +2,7 @@
 
 축하합니다! 이 섹션의 이전 단계를 모두 완료했다면 온프레미스 Liferay DXP 설치를 Liferay Cloud로 성공적으로 마이그레이션한 것입니다!
 
-Liferay Cloud에서 실행 중인 Liferay DXP가 있으므로 [자동 백업](../platform-services/backup-service/backup-service-overview.md), [빌드된 -지속적인 통합](../platform-services/continuous-integration.md), 자동 [서비스 로깅](../troubleshooting/reading-liferay-cloud-service-logs.md) 및 내장된 [보안 기능](../infrastructure-and-operations/security/information-security-and-liferay-cloud.md).
+Liferay Cloud에서 실행 중인 Liferay DXP가 있으므로 [자동 백업](../platform-services/backup-service/backup-service-overview.md), [빌드된 -지속적인 통합](../platform-services/continuous-integration.md), 자동 [서비스 로깅](../troubleshooting/reading-liferay-cloud-service-logs.md) 및 내장된 [보안 기능](..//tuning-security-settings/information-security-and-liferay-cloud.md).
 
 그러나 Liferay Cloud의 기능을 최대한 활용하기 위해 시작하는 동안 수행할 수 있는 몇 가지 추가 단계가 있습니다.
 
@@ -24,7 +24,7 @@ Liferay Cloud의 관리자는 필요에 따라 다른 구성원을 초대하고 
 
 Single Sign-On을 사용하면 선호하는 ID 공급자를 사용하여 Liferay Cloud 인스턴스에서 Liferay에 대한 사용자를 인증할 수 있습니다. 이렇게 하면 사인온 경험이 더 매끄럽고 프로젝트의 나머지 부분과 더 통합되는 느낌을 받을 수 있습니다.
 
-Liferay Cloud는 SAML 2.0을 준수하는 Signle Sign-On ID 공급자를 지원합니다. 자세한 내용은 [Liferay Cloud](../infrastructure-and-operations/security/using-sso-with-liferay-cloud.md)에서 SSO 사용을 참조하십시오.
+Liferay Cloud는 SAML 2.0을 준수하는 Signle Sign-On ID 공급자를 지원합니다. 자세한 내용은 [Liferay Cloud](..//tuning-security-settings/using-sso-with-liferay-cloud.md)에서 SSO 사용을 참조하십시오.
 
 ## 사용자 지정 도메인 추가
 

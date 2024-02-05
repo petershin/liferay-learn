@@ -87,10 +87,10 @@ When you are finished editing the service's `LCP.json` file, save and deploy you
 
 Normal environment variables do not have special security measures. Any Users that can access your Liferay Cloud project can also see the variable values for your services.
 
-To store sensitive variable values (such as login credentials), you can use secrets. Secrets are encrypted in the backend and are hidden from Users without the *Admin* role. Regular environment variables may also [reference secrets](../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md#referencing-secrets-from-environment-variables) to secure their values. See [Managing Secure Environment Variables with Secrets](../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md) for more information.
+To store sensitive variable values (such as login credentials), you can use secrets. Secrets are encrypted in the backend and are hidden from Users without the *Admin* role. Regular environment variables may also [reference secrets](..//tuning-security-settings/managing-secure-environment-variables-with-secrets.md#referencing-secrets-from-environment-variables) to secure their values. See [Managing Secure Environment Variables with Secrets](..//tuning-security-settings/managing-secure-environment-variables-with-secrets.md) for more information.
 
 ## Related Topics
 
 * [Configuration via LCP.json](../reference/configuration-via-lcp-json.md)
-* [Managing Secure Environment Variables with Secrets](../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md)
+* [Managing Secure Environment Variables with Secrets](..//tuning-security-settings/managing-secure-environment-variables-with-secrets.md)
 * [Overview of the Liferay Cloud Deployment Workflow](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md)

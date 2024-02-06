@@ -44,4 +44,4 @@
 
 * [환경 팀 및 역할](./environment-teams-and-roles.md)
 * [Liferay 클라우드 배포 워크플로 개요](../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md)
-* [로그 관리](../troubleshooting/reading-liferay-cloud-service-logs.md)
+* [로그 관리](../support-and-troubleshooting/reading-liferay-cloud-service-logs.md)

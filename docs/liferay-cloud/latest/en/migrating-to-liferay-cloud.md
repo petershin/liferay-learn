@@ -78,7 +78,7 @@ Migrating to Liferay Cloud also involves moving your own custom code, modules, a
 
 Prepare your environment for the migration in advance to ensure the migration process starts smoothly.
 
-If you have not already done so, complete the tasks in the [Initial Setup Overview](./getting-started/initial-setup-overview.md) to ensure that your Liferay Cloud environment is up and running as expected. In case you run into problems during the migration, enable [Support Access](./troubleshooting/support-access.md); enabling Support Access gives Liferay Cloud Support staff more capacity to help if necessary by giving them access to your project's console, logs, and more.
+If you have not already done so, complete the tasks in the [Initial Setup Overview](./getting-started/initial-setup-overview.md) to ensure that your Liferay Cloud environment is up and running as expected. In case you run into problems during the migration, enable [Support Access](./support-and-troubleshooting/support-access.md); enabling Support Access gives Liferay Cloud Support staff more capacity to help if necessary by giving them access to your project's console, logs, and more.
 
 Set up your repository (using [GitHub](./getting-started/configuring-your-github-repository.md), [Bitbucket](./getting-started/configuring-your-bitbucket-repository.md), or [GitLab](./getting-started/configuring-your-gitlab-repository.md)) to confirm that you can make deployments. The migration requires deploying multiple changes throughout the process, so you must be able to deploy them to proceed with the migration.
 

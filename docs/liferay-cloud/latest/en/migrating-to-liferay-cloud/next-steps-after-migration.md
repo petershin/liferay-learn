@@ -9,7 +9,7 @@ uuid: e9b5fd5d-8acd-41fe-83f0-472a585b76c6
 
 Congratulations! If you have completed all of the previous stages in this section, then you have successfully migrated your on-premises Liferay DXP installation to Liferay Cloud!
 
-Now that you have Liferay DXP running on Liferay Cloud, you are ready to begin taking advantage of its features, including [automated backups](../platform-services/backup-service/backup-service-overview.md), [built-in continuous integration](../platform-services/continuous-integration.md), automatic [service logging](../troubleshooting/reading-liferay-cloud-service-logs.md), and built-in [security features](..//tuning-security-settings/information-security-and-liferay-cloud.md).
+Now that you have Liferay DXP running on Liferay Cloud, you are ready to begin taking advantage of its features, including [automated backups](../platform-services/backup-service/backup-service-overview.md), [built-in continuous integration](../platform-services/continuous-integration.md), automatic [service logging](../support-and-troubleshooting/reading-liferay-cloud-service-logs.md), and built-in [security features](..//tuning-security-settings/information-security-and-liferay-cloud.md).
 
 However, in order to take full advantage of Liferay Cloud's capabilities, there are some additional steps you can perform while getting started:
 
@@ -41,9 +41,9 @@ See [Custom Domains](..//configuring-the-cloud-network/custom-domains.md) for mo
 
 ## Set Up a Disaster Recovery Environment
 
-By default, Liferay Cloud mitigates downtime from service outages by providing [automatic disaster recovery](../troubleshooting/disaster-recovery-overview.md#automatic-disaster-recovery-strategy) within the same region. However, in the event of a disaster causing an outage in the area servicing your Liferay Cloud environments, you should also consider using a fall-back environment (or Disaster Recovery environment) to minimize downtime for Users on your production instance.
+By default, Liferay Cloud mitigates downtime from service outages by providing [automatic disaster recovery](../support-and-troubleshooting/disaster-recovery-overview.md#automatic-disaster-recovery-strategy) within the same region. However, in the event of a disaster causing an outage in the area servicing your Liferay Cloud environments, you should also consider using a fall-back environment (or Disaster Recovery environment) to minimize downtime for Users on your production instance.
 
-[Configure a Diaster Recovery environment](../troubleshooting/configuring-cross-region-disaster-recovery.md) to maintain the most robust possible protection from unplanned downtime. Learn more about automatic and cross-region Disaster Recovery [here](../troubleshooting/disaster-recovery-overview.md).
+[Configure a Diaster Recovery environment](../support-and-troubleshooting/configuring-cross-region-disaster-recovery.md) to maintain the most robust possible protection from unplanned downtime. Learn more about automatic and cross-region Disaster Recovery [here](../support-and-troubleshooting/disaster-recovery-overview.md).
 
 ```{important}
 To set up a Disaster Recovery environment, you must have purchased a separate environment for it as part of your subscription.
@@ -73,7 +73,7 @@ As you begin using Liferay in Liferay Cloud, familiarize yourself with the avail
 
 * For production environments, you can also use [Dynatrace integration](../manage-and-optimize/application-metrics.md#advanced-application-metrics-production-only) to use more advanced performance metrics. *Note that this requires a specific Dynatrace add-on to your Liferay Cloud subscription to use.*
 
-You should perform your own performance testing and optimization with your instance on Liferay Cloud, the same way as you would tune an on-premises instance. The service data, metrics, and [logging](../troubleshooting/reading-liferay-cloud-service-logs.md) available are all there to help you with your testing.
+You should perform your own performance testing and optimization with your instance on Liferay Cloud, the same way as you would tune an on-premises instance. The service data, metrics, and [logging](../support-and-troubleshooting/reading-liferay-cloud-service-logs.md) available are all there to help you with your testing.
 
 ## Get Started Developing on Liferay Cloud
 

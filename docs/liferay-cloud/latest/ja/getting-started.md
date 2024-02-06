@@ -78,7 +78,7 @@ Liferay Cloudは、セキュリティに配慮して設計されています。 
 
 ## アプリケーション開発ツール
 
-リアルタイムのビルドと [デプロイメントログ](./troubleshooting/reading-liferay-cloud-service-logs.md)を使用して、アプリケーションのデプロイメントとパフォーマンスを追跡します。 チームは、Webコンソールまたは端子を介して[シェルへのアクセス](./troubleshooting/shell-access.md) および/またはログをダウンロードすることで、スタックトレースとトラブルシューティングのバグを分析することができます。
+リアルタイムのビルドと [デプロイメントログ](./support-and-troubleshooting/reading-liferay-cloud-service-logs.md)を使用して、アプリケーションのデプロイメントとパフォーマンスを追跡します。 チームは、Webコンソールまたは端子を介して[シェルへのアクセス](./support-and-troubleshooting/shell-access.md) および/またはログをダウンロードすることで、スタックトレースとトラブルシューティングのバグを分析することができます。
 
 ![ビルドやデプロイのログをリアルタイムに取得することで、アプリケーションの問題解決に役立ちます。](./getting-started/images/06.png)
 

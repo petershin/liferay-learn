@@ -72,7 +72,7 @@ Liferay Cloud로 마이그레이션하려면 사용자 지정 코드, 모듈 및
 
 마이그레이션 프로세스가 원활하게 시작될 수 있도록 마이그레이션 환경을 미리 준비하세요.
 
-아직 완료하지 않았다면 [초기 설정 개요](./getting-started/initial-setup-overview.md) 에 있는 작업을 완료하여 Liferay 클라우드 환경이 예상대로 작동하는지 확인하세요. 마이그레이션 중에 문제가 발생하는 경우 [지원 액세스](./troubleshooting/support-access.md)지원 액세스를 활성화하면 프로젝트의 콘솔, 로그 등에 대한 액세스 권한을 부여하여 필요한 경우 Liferay Cloud 지원 담당자가 더 많은 도움을 줄 수 있습니다.
+아직 완료하지 않았다면 [초기 설정 개요](./getting-started/initial-setup-overview.md) 에 있는 작업을 완료하여 Liferay 클라우드 환경이 예상대로 작동하는지 확인하세요. 마이그레이션 중에 문제가 발생하는 경우 [지원 액세스](./support-and-troubleshooting/support-access.md)지원 액세스를 활성화하면 프로젝트의 콘솔, 로그 등에 대한 액세스 권한을 부여하여 필요한 경우 Liferay Cloud 지원 담당자가 더 많은 도움을 줄 수 있습니다.
 
 리포지토리를 설정하여( [GitHub](./getting-started/configuring-your-github-repository.md), [Bitbucket](./getting-started/configuring-your-bitbucket-repository.md), 또는 [GitLab](./getting-started/configuring-your-gitlab-repository.md)) 배포할 수 있는지 확인합니다. 마이그레이션을 진행하려면 프로세스 전반에 걸쳐 여러 변경 사항을 배포해야 하므로 마이그레이션을 진행하려면 이러한 변경 사항을 배포할 수 있어야 합니다.
 

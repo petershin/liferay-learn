@@ -51,4 +51,4 @@ You can also view all build and deployment activities from your project environm
 
 * [Environment Teams and Roles](./environment-teams-and-roles.md)
 * [Overview of the Liferay Cloud Deployment Workflow](../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md)
-* [Log Management](../troubleshooting/reading-liferay-cloud-service-logs.md)
+* [Log Management](../support-and-troubleshooting/reading-liferay-cloud-service-logs.md)

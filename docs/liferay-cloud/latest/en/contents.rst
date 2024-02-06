@@ -13,7 +13,7 @@ Contents
    tuning-security-settings.md
    customizing-liferay-dxp-in-the-cloud.md
    manage-and-optimize.md
-   troubleshooting.md
+   support-and-troubleshooting.md
    migrating-to-liferay-cloud.md
    reference.md
 

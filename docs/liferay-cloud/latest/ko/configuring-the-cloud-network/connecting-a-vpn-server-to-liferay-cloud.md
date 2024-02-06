@@ -77,7 +77,7 @@ VPN 세부 정보 페이지의 오른쪽 상단에는 VPN이 이미 연결되어
 VPN은 버튼을 클릭한 후 연결을 시도합니다. 연결이 실패하면 실패한 시도가 세부 정보 페이지의 **관련 활동** 섹션에 표시됩니다.
 
 ```{tip}
-다음과 같은 명령을 실행하기 위해 서비스의 [shell](../../troubleshooting/shell-access.md)을 사용하여 VPN을 통해 IP 주소에 대한 서비스 연결을 수동으로 테스트할 수 있습니다: `curl -v [address]` .
+다음과 같은 명령을 실행하기 위해 서비스의 [shell](../../support-and-troubleshooting/shell-access.md)을 사용하여 VPN을 통해 IP 주소에 대한 서비스 연결을 수동으로 테스트할 수 있습니다: `curl -v [address]` .
 ```
 
 연결이 설정되는 동안 "VPN 연결 시도가 시작되었습니다."라는 메시지가 나타나고 완료될 때까지 VPN에 대한 다른 관리 작업을 수행할 수 없습니다. 연결을 취소해야 하는 경우(예: 오류로 인해 연결이 중단됨) 팝업에서 "취소"를 클릭하십시오.
@@ -120,4 +120,4 @@ VPN이 삭제되어 더 이상 사용자 환경에서 사용할 수 없습니다
 
 * [VPN 통합 개요](./vpn-integration-overview.md)
 * [VPN 서버 구성](./configuring-a-vpn-server.md)
-* [셸 액세스](../../troubleshooting/shell-access.md)
+* [셸 액세스](../../support-and-troubleshooting/shell-access.md)

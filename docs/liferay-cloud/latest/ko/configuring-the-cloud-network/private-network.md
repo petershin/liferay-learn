@@ -15,7 +15,7 @@
 `외부`: 연결이 외부 연결에 사용 가능한지 여부. 기본값 `false` 은 내부 Liferay Cloud 연결에 대한 연결을 제한합니다.
 
 ```{tip}
-외부 연결에 대한 연결을 노출하는 경우 서비스의 셸을 사용하여 연결 문제를 해결해야 할 수 있습니다. 자세한 내용은 [쉘 액세스](../../troubleshooting/shell-access.md)를 참조하십시오.
+외부 연결에 대한 연결을 노출하는 경우 서비스의 셸을 사용하여 연결 문제를 해결해야 할 수 있습니다. 자세한 내용은 [쉘 액세스](../../support-and-troubleshooting/shell-access.md)를 참조하십시오.
 ```
 
 다음은 구성 예입니다.
@@ -51,4 +51,4 @@
 ## 관련 주제
 
 * [LCP JSON을 통한 구성](../../reference/configuration-via-lcp-json.md)
-* [셸 액세스](../../troubleshooting/shell-access.md)
+* [셸 액세스](../../support-and-troubleshooting/shell-access.md)

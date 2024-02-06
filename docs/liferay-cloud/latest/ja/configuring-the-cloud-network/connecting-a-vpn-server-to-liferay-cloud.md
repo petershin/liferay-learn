@@ -77,7 +77,7 @@ VPNの詳細ページでは、右上にVPNがすでに接続されているか�
 ボタンをクリックすると、VPNが接続を試みます。 接続に失敗した場合は、詳細ページの **関連アクティビティ** セクションに失敗した試みが表示されます。
 
 ```{tip}
-サービスの[shell](../../troubleshooting/shell-access.md)を使って、以下のようなコマンドを実行することで、VPNを介したIPアドレスへの接続性を手動でテストすることができます。`curl -v [address]`
+サービスの[shell](../../support-and-troubleshooting/shell-access.md)を使って、以下のようなコマンドを実行することで、VPNを介したIPアドレスへの接続性を手動でテストすることができます。`curl -v [address]`
 ```
 
 接続が確立されている間は、「VPN接続の試行が開始されました」というメッセージが表示され、完了するまではVPNの他の管理操作を行うことができません。 接続をキャンセルする必要がある場合（たとえば、エラーで接続が止まっているなど）、ポップアップで［Cancel］をクリックします。
@@ -120,4 +120,4 @@ VPNを切断したときの影響を確認するボックスにチェックを�
 
 * [VPNインテグレーションの概要](./vpn-integration-overview.md)
 * [VPNサーバーの設定](./configuring-a-vpn-server.md)
-* [シェルアクセス](../../troubleshooting/shell-access.md)
+* [シェルアクセス](../../support-and-troubleshooting/shell-access.md)

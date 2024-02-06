@@ -108,6 +108,7 @@ MVC Render Command classes can implement [`MVCRenderCommand`](https://github.com
 !!! note
     You can associate an `MVCRenderCommand` component with multiple portlets by declaring separate `javax.portlet.name` properties for each portlet:
 
+    ```java
         @Component(
             property = {
                 "javax.portlet.name=com_acme_a4p1_web_internal_portlet_A4P1Portlet",
@@ -116,6 +117,7 @@ MVC Render Command classes can implement [`MVCRenderCommand`](https://github.com
             },
             service = MVCRenderCommand.class
         )
+    ```
 
 When the portlet receives a request parameter that specifies the MVC command name `/a4p1/able`, `A4P1AbleMVCRenderCommand`'s `render` method executes. This `render` method logs a message that identifies itself and then returns the path of the view to render.
 

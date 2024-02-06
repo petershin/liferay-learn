@@ -102,14 +102,16 @@ MVC Resource Command classes can implement [`MVCResourceCommand`](https://github
 !!! note
     You can associate an `MVCResourceCommand` component with multiple portlets by declaring separate `javax.portlet.name` properties for each portlet:
 
-        @Component(
-            property = {
-                "javax.portlet.name=com_acme_p8v5_web_internal_portlet_P8V5Portlet",
-                "javax.portlet.name=com_acme_p8v5_web_internal_portlet_P8V6Portlet",
-                "mvc.command.name=/p8v5/download"
-            },
-            service = MVCResourceCommand.class
-        )
+    ```java
+    @Component(
+        property = {
+            "javax.portlet.name=com_acme_p8v5_web_internal_portlet_P8V5Portlet",
+            "javax.portlet.name=com_acme_p8v5_web_internal_portlet_P8V6Portlet",
+            "mvc.command.name=/p8v5/download"
+        },
+        service = MVCResourceCommand.class
+    )
+    ```
 
 The example `serveResource` method creates a simple text file and sends it to the user via [`PortletResponseUtil`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/portlet/PortletResponseUtil.java). The method returns `true` if an error occurs or `false` otherwise.
 

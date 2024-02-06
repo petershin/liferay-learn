@@ -43,7 +43,7 @@ If you're beginning this course and you haven't completed the exercises in [Life
    ![Users were added during site creation.](./initial-setup/images/01.png)
 
 !!! important
-   You created this site to run the site initializer's logic, in reality the instructions proceed assuming you're using the default site.
+   You created this site to run the site initializer's logic only. The instructions proceed assuming you're using the default site created by Liferay on startup.
 
 1. To add users to the site, you must enable manual membership management in the site. Go to Site Menu &rarr; Configuration &rarr; Site Settings, and open _Site Configuration_.
 
@@ -69,3 +69,5 @@ The users needed in this course are as follows:
 | Olivia O'Neal  | Content Manager            | Portal Content Reviewer<br>Portal Content Manager | Olivia reviews Rex's FAQ entries and manages content creation in the site.                                           |
 | Preston Palmer | IT Staff                   | Site Administrator                                | Preston configures the site, activating workflows, overseeing publications, etc.                                     |
 | Kyle Klein     | IT Manager                 | Instance Administrator                            | Kyle manages workflows at the instance level (e.g., importing or creating workflow processes).                       |
+
+Now that the users are in place, [get started by changing some instance settings to repurpose the site for Clarity](./changing-the-default-sites-name-and-logo.md).

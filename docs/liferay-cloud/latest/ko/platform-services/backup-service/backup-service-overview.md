@@ -89,7 +89,7 @@ Liferay Cloud Console을 통해 백업 서비스를 구성하려면 다음 단�
 
 1. **변경사항 저장** 을 클릭하세요.
 
-일반 환경 변수 외에도 Liferay Cloud 콘솔을 통해 **비밀** 변수를 설정할 수도 있습니다. 자세한 내용은 [비밀번호로 보안 환경 변수 관리](../../infrastructure-and-options/security/managing-secure-environment-variables-with-secrets.md)를 참조하세요.
+일반 환경 변수 외에도 Liferay Cloud 콘솔을 통해 **비밀** 변수를 설정할 수도 있습니다. 자세한 내용은 [비밀번호로 보안 환경 변수 관리](../../infrastructure-and-options/tuning-security-settings/managing-secure-environment-variables-with-secrets.md)를 참조하세요.
 
 ### 백업 `LCP.json` 파일을 통해 백업 서비스 구성
 

@@ -97,9 +97,9 @@ CDN 캐시를 너무 자주 지우면 서버 성능에 부정적인 영향을 �
 
 `LCP.json` 파일에 단일 SSL 인증서를 추가하려면:
 
-1. 인증서의 `키` 및 `crt` 값에 대해 선택한 환경에 [개의 비밀 변수](../security/managing-secure-environment-variables-with-secrets.md#adding-a-new-secret) 을 추가합니다.
+1. 인증서의 `키` 및 `crt` 값에 대해 선택한 환경에 [개의 비밀 변수](../tuning-security-settings/managing-secure-environment-variables-with-secrets.md#adding-a-new-secret) 을 추가합니다.
 
-1. 프로젝트 리포지토리의 `webserver/LCP.json` 파일에서 `loadbalancer` 객체 내부에 `ssl` 객체를 추가하고 추가한 비밀에 대한 키를 [참조하는 `키` 및 `crt` 값을 사용하여](../security/managing-secure-environment-variables-with-secrets.md#adding-secret-variables-via-lcp-json) :
+1. 프로젝트 리포지토리의 `webserver/LCP.json` 파일에서 `loadbalancer` 객체 내부에 `ssl` 객체를 추가하고 추가한 비밀에 대한 키를 [참조하는 `키` 및 `crt` 값을 사용하여](../tuning-security-settings/managing-secure-environment-variables-with-secrets.md#adding-secret-variables-via-lcp-json) :
 
 ```json
 {

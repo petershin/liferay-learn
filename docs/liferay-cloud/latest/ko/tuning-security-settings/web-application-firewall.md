@@ -4,7 +4,7 @@
 
 Liferay Cloud에는 [ModSecurity](https://github.com/SpiderLabs/ModSecurity) 이라는 웹 애플리케이션 방화벽이 포함되어 있습니다. 사전 정의된 사용자 정의 규칙 세트를 기준으로 웹 서버로 전송된 요청을 검사합니다. 이 단계는 XSS, SQL 주입 및 민감한 정보의 손실로 이어질 수 있는 기타 형태의 하이재킹 시도와 같은 일반적인 웹 애플리케이션 실시간 L7 공격을 방지합니다.
 
-Liferay Cloud에는 [개인 네트워크](../networking/private-network.md) , 공용 [로드 밸런서](../networking/load-balancer.md) ( [계층 7](https://www.nginx.com/resources/glossary/layer-7-load-balancing/) ) 및 [CDN](../networking/load-balancer.md#cdn) 포함한 추가 네트워크 보안 기능이 포함되어 있습니다.
+Liferay Cloud에는 [개인 네트워크](../configuring-the-cloud-networkprivate-network.md) , 공용 [로드 밸런서](../configuring-the-cloud-networkload-balancer.md) ( [계층 7](https://www.nginx.com/resources/glossary/layer-7-load-balancing/) ) 및 [CDN](../configuring-the-cloud-networkload-balancer.md#cdn) 포함한 추가 네트워크 보안 기능이 포함되어 있습니다.
 
 ![Figure 1: The Web Application Firewall protects against common attacks.](./web-application-firewall/images/01.png)
 
@@ -88,6 +88,6 @@ SecAuditLogFormat JSON
 
 ## 관련 주제
 
-* [사설망](../networking/private-network.md)
-* [로드밸런서](../networking/load-balancer.md)
-* [CDN](../networking/load-balancer.md#cdn)
+* [사설망](../configuring-the-cloud-networkprivate-network.md)
+* [로드밸런서](../configuring-the-cloud-networkload-balancer.md)
+* [CDN](../configuring-the-cloud-networkload-balancer.md#cdn)

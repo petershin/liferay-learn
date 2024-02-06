@@ -13,7 +13,7 @@ uuid: 4f659a0a-7b7b-4798-8c88-21222e42ab81
 
 Liferay Cloud includes a web application firewall called [ModSecurity](https://github.com/SpiderLabs/ModSecurity). It inspects requests sent to the web server against a predefined set of custom rules. This step prevents typical web application real time L7 attacks, like XSS, SQL Injection, and other forms of hijacking attempts that might lead to loss of sensitive information.
 
-Liferay Cloud includes additional network security features, including a [private network](../networking/private-network.md), public [load balancer](../networking/load-balancer.md) ([Layer 7](https://www.nginx.com/resources/glossary/layer-7-load-balancing/)), and [CDN](../networking/load-balancer.md#cdn).
+Liferay Cloud includes additional network security features, including a [private network](../configuring-the-cloud-networkprivate-network.md), public [load balancer](../configuring-the-cloud-networkload-balancer.md) ([Layer 7](https://www.nginx.com/resources/glossary/layer-7-load-balancing/)), and [CDN](../configuring-the-cloud-networkload-balancer.md#cdn).
 
 ![Figure 1: The Web Application Firewall protects against common attacks.](./web-application-firewall/images/01.png)
 
@@ -97,6 +97,6 @@ SecAuditLogFormat JSON
 
 ## Related Topics
 
-* [Private Network](../networking/private-network.md)
-* [Load Balancer](../networking/load-balancer.md)
-* [CDN](../networking/load-balancer.md#cdn)
+* [Private Network](../configuring-the-cloud-networkprivate-network.md)
+* [Load Balancer](../configuring-the-cloud-networkload-balancer.md)
+* [CDN](../configuring-the-cloud-networkload-balancer.md#cdn)

@@ -105,9 +105,9 @@ When creating custom certificates, note that Liferay Cloud only accepts keys and
 
 To add a single SSL certificate to the `LCP.json` file:
 
-1. Add [secret variables](../security/managing-secure-environment-variables-with-secrets.md#adding-a-new-secret) to your chosen environment for the certificate's `key` and `crt` values.
+1. Add [secret variables](../tuning-security-settings/managing-secure-environment-variables-with-secrets.md#adding-a-new-secret) to your chosen environment for the certificate's `key` and `crt` values.
 
-1. In your project repository's `webserver/LCP.json` file, add an `ssl` object inside of the `loadbalancer` object, with `key` and `crt` values that [reference the keys for the secrets you added](../security/managing-secure-environment-variables-with-secrets.md#adding-secret-variables-via-lcp-json):
+1. In your project repository's `webserver/LCP.json` file, add an `ssl` object inside of the `loadbalancer` object, with `key` and `crt` values that [reference the keys for the secrets you added](../tuning-security-settings/managing-secure-environment-variables-with-secrets.md#adding-secret-variables-via-lcp-json):
 
 ```json
 {

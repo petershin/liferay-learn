@@ -97,9 +97,9 @@ Liferay Cloud のインフラストラクチャで作成されたドメイン `.
 
 `LCP.json` ファイルに単一のSSL証明書を追加する場合。
 
-1. 証明書の `key` と `crt` の値について、 [secret 変数](../security/managing-secure-environment-variables-with-secrets.md#adding-a-new-secret) を選択した環境に追加します。
+1. 証明書の `key` と `crt` の値について、 [secret 変数](../tuning-security-settings/managing-secure-environment-variables-with-secrets.md#adding-a-new-secret) を選択した環境に追加します。
 
-1. プロジェクトリポジトリの `webserver/LCP.json` ファイルに、 `loadbalancer` オブジェクトの内部に `ssl` オブジェクトを追加し、 `key` と `crt` の値を追加します。 [追加した秘密のキーを参照します](../security/managing-secure-environment-variables-with-secrets.md#adding-secret-variables-via-lcp-json) :
+1. プロジェクトリポジトリの `webserver/LCP.json` ファイルに、 `loadbalancer` オブジェクトの内部に `ssl` オブジェクトを追加し、 `key` と `crt` の値を追加します。 [追加した秘密のキーを参照します](../tuning-security-settings/managing-secure-environment-variables-with-secrets.md#adding-secret-variables-via-lcp-json) :
 
 ```json
 {

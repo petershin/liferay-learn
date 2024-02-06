@@ -4,7 +4,7 @@
 
 Liferay Cloud には [ModSecurity](https://github.com/SpiderLabs/ModSecurity) という Web アプリケーションファイアウォールが含まれています。 Webサーバーに送信されたリクエストを、あらかじめ定義されたカスタムルールと照らし合わせて検査します。 このステップでは、XSS、SQLインジェクションなどの典型的なWebアプリケーションのリアルタイムL7攻撃や、機密情報の損失につながる可能性のあるその他の形式の乗っ取りを防止します。
 
-Liferay クラウドには、 [プライベートネットワーク](../networking/private-network.md) 、パブリック [ロードバランサー](../networking/load-balancer.md) ( [レイヤー7](https://www.nginx.com/resources/glossary/layer-7-load-balancing/) )、 [CDN](../networking/load-balancer.md#cdn) などのネットワークセキュリティ機能が追加されています。
+Liferay クラウドには、 [プライベートネットワーク](../configuring-the-cloud-networkprivate-network.md) 、パブリック [ロードバランサー](../configuring-the-cloud-networkload-balancer.md) ( [レイヤー7](https://www.nginx.com/resources/glossary/layer-7-load-balancing/) )、 [CDN](../configuring-the-cloud-networkload-balancer.md#cdn) などのネットワークセキュリティ機能が追加されています。
 
 ![Figure 1: The Web Application Firewall protects against common attacks.](./web-application-firewall/images/01.png)
 
@@ -88,6 +88,6 @@ SecAuditLogFormat JSON
 
 ## 関連トピック
 
-* [プライベート・ネットワーク](../networking/private-network.md)
-* [ロードバランサー](../networking/load-balancer.md)
-* [CDN](../networking/load-balancer.md#cdn)
+* [プライベート・ネットワーク](../configuring-the-cloud-networkprivate-network.md)
+* [ロードバランサー](../configuring-the-cloud-networkload-balancer.md)
+* [CDN](../configuring-the-cloud-networkload-balancer.md#cdn)

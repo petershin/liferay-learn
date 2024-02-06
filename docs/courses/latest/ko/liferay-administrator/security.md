@@ -1,9 +1,9 @@
 ---
 toc:
-  - ./security/authentication.md
-  - ./security/securing-web-services.md
-  - ./security/authorizing-and-single-sign-on.md
-  - ./security/managing-antisamy.md
+  - ./tuning-security-settings/authentication.md
+  - ./tuning-security-settings/securing-web-services.md
+  - ./tuning-security-settings/authorizing-and-single-sign-on.md
+  - ./tuning-security-settings/managing-antisamy.md
 ---
 # 보안
 
@@ -28,4 +28,4 @@ Liferay의 철학은 "기본적으로 안전하다"입니다. 이는 기본 설�
 
 준비가 된?
 
-[가자!](./security/authentication.md)
+[가자!](./tuning-security-settings/authentication.md)

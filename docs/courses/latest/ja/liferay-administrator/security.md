@@ -1,9 +1,9 @@
 ---
 toc:
-  - ./security/authentication.md
-  - ./security/securing-web-services.md
-  - ./security/authorizing-and-single-sign-on.md
-  - ./security/managing-antisamy.md
+  - ./tuning-security-settings/authentication.md
+  - ./tuning-security-settings/securing-web-services.md
+  - ./tuning-security-settings/authorizing-and-single-sign-on.md
+  - ./tuning-security-settings/managing-antisamy.md
 ---
 # セキュリティ
 
@@ -28,4 +28,4 @@ Liferayの哲学は "デフォルトで安全 "だ。 つまり、デフォル�
 
 準備完了?
 
-[次：顧客に最適なデプロイオプションを決定する](./security/authentication.md)
+[次：顧客に最適なデプロイオプションを決定する](./tuning-security-settings/authentication.md)

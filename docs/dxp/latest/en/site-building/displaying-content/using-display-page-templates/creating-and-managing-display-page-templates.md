@@ -54,8 +54,7 @@ You can set a friendly URL for your display page template. The friendly URL is u
 
 For example, when you link a button in a content page to a mapped URL, you can select an object connected to a display page template as the item and select the display page template as the field. In this case, the friendly URL is used for the selected display page template.
 
-![Set a friendly URL for your display page template](./creating-and-managing-display-page-templates/images/03.png)
-![The friendly URL is used when you select a display page template specifically from a list of links](./creating-and-managing-display-page-templates/images/04.png)
+![Set a friendly URL for your display page template. The friendly URL is used when you select a display page template specifically from a list of links.](./creating-and-managing-display-page-templates/images/03.png)
 
 To set a friendly URL for your display page template,
 
@@ -78,7 +77,7 @@ If a content type (e.g., custom object, web content article, or blogs entry) mor
 
 For example, you can create different display page templates for an object, each corresponding to a step in a mapped form (e.g., submission, editing, and approval). Then, you can choose which display page template to use for each stage, enabling the creation of multi-step forms.
 
-![Map links to different display page templates](./creating-and-managing-display-page-templates/images/05.png)
+![Map links to different display page templates](./creating-and-managing-display-page-templates/images/04.png)
 
 This gives you more freedom when dealing with objects and [forms mapped from objects](../../../building-applications/objects/using-fragments-to-build-forms.md) with multiple steps.
 
@@ -90,7 +89,7 @@ While editing, Liferay provides two ways to preview display page templates with 
 
 From the Application Menu, you can click the *Preview With* drop-down menu and choose a content item. If no item appears, click *Select Other Item* and browse for the desired content. This dynamically populates the template with content data according to your field mapping.
 
-![Choose the content you want to use to preview your display page template.](./creating-and-managing-display-page-templates/images/06.png)
+![Choose the content you want to use to preview your display page template.](./creating-and-managing-display-page-templates/images/05.png)
 
 Alternatively, from the display page template editor, click the *Options* menu(![Options menu](../../../images/icon-options.png)) button at the top right corner and choose *Preview in a New Tab*.
 
@@ -100,7 +99,7 @@ Alternatively, from the display page template editor, click the *Options* menu(!
 
 You can manage the different display page templates using the *Actions* menu (![Actions](../../../images/icon-actions.png)). From here, the *View Usages* option provides a list of content that uses a specific display page template other than the default template. This option is not available for default templates.
 
-![Managing your display page template using the Actions menu](./creating-and-managing-display-page-templates/images/07.png)
+![Managing your display page template using the Actions menu](./creating-and-managing-display-page-templates/images/06.png)
 
 Before you delete a display page template that is in use, you have two ways to unassign the display page template from the content:
 
@@ -181,7 +180,7 @@ The picture below shows the display page settings for a web content article with
 
 ## Related Topics
 
-* [Publishing Content with Display Pages](./publishing-content-with-display-pages.md)
-* [Configuring SEO and Open Graph](./configuring-seo-and-open-graph.md)
-* [Using Content Pages](./../../creating-pages/using-content-pages.md)
-* [Adding Elements to Content Pages](../../creating-pages/using-content-pages/adding-elements-to-content-pages.md)
+- [Publishing Content with Display Pages](./publishing-content-with-display-pages.md)
+- [Configuring SEO and Open Graph](./configuring-seo-and-open-graph.md)
+- [Using Content Pages](./../../creating-pages/using-content-pages.md)
+- [Adding Elements to Content Pages](../../creating-pages/using-content-pages/adding-elements-to-content-pages.md)

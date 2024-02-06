@@ -13,7 +13,7 @@ uuid: 23945a81-3dac-4a80-a0e3-a05b113bba7e
 
 With Notification Templates, you can design automated email and user notifications for Liferay services. Each template identifies a sender, recipients, and message content. While designing the template, you can search supported entities and add field references that insert their data dynamically into emails.
 
-Currently, notification templates only support [object actions](../../building-applications/objects/creating-and-managing-objects/actions/defining-object-actions.md). However, Commerce Channels include built-in notification template capabilities for channel events. See [Store Emails](https://learn.liferay.com/commerce/latest/en/store-management/sending-emails.html) for more information.
+Currently, notification templates only support [object actions](../../building-applications/objects/creating-and-managing-objects/actions/defining-object-actions.md). However, Commerce Channels include built-in notification template capabilities for channel events. See [Store Emails](https://learn.liferay.com/w/commerce/store-management/sending-emails) for more information.
 
 !!! important
     To use email notifications, your instance must have a configured [mail server](../../installation-and-upgrades/setting-up-liferay/configuring-mail.md). Once configured, you can access additional [email notification settings](../../system-administration/configuring-liferay/virtual-instances/email-settings.md) at the instance level.

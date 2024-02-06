@@ -36,7 +36,7 @@ Liferay DXPのマイナーバージョンのアップデートには、プロジ
 
 1. [Docker Hub](https://hub.docker.com/r/liferay/dxp/tags) で、アップデートするLiferayのバージョンのタグを見つけます。
 
-1. リポジトリで、 `liferay.workspace.docker.image.liferay` のプロパティの値を、 [`liferay/gradle.properties`](../using-the-liferay-dxp-service.md#choosing-a-version) の新しいバージョンのタグに変更します：
+1. リポジトリで、 `liferay.workspace.docker.image.liferay` のプロパティの値を、 [`liferay/gradle.properties`](../customizing-liferay-dxp-in-the-cloud.md#choosing-a-version) の新しいバージョンのタグに変更します：
 
     ```properties
     liferay.workspace.docker.image.liferay=liferay/dxp:7.3.10-ga1

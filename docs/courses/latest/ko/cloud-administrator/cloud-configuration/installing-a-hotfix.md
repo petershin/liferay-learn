@@ -1,6 +1,6 @@
 # 핫픽스 설치
 
-Liferay 인스턴스를 최신 상태로 유지하는 것은 Liferay Cloud 유지 관리의 중요한 부분입니다. [Liferay의 다음 버전](https://learn.liferay.com/w/liferay-cloud/using-the-liferay-dxp-service/updating-your-dxp) 에 문제가 나타나기 전에 문제를 패치해야 하는 경우 -instance-to-a-new-minor-version), 그러나 핫픽스를 배포할 수 있습니다. 핫픽스는 수정된 버전으로 업데이트할 준비가 될 때까지 이러한 문제를 해결하기 위해 Liferay 지원에서 제공하는 임시 솔루션입니다. 
+Liferay 인스턴스를 최신 상태로 유지하는 것은 Liferay Cloud 유지 관리의 중요한 부분입니다. [Liferay의 다음 버전](https://learn.liferay.com/w/liferay-cloud/customizing-liferay-dxp-in-the-cloud/updating-your-dxp) 에 문제가 나타나기 전에 문제를 패치해야 하는 경우 -instance-to-a-new-minor-version), 그러나 핫픽스를 배포할 수 있습니다. 핫픽스는 수정된 버전으로 업데이트할 준비가 될 때까지 이러한 문제를 해결하기 위해 Liferay 지원에서 제공하는 임시 솔루션입니다. 
 
 여기에서는 Kyle에게 핫픽스를 요청하고 설치하는 과정을 안내합니다. 그는 핫픽스를 프로덕션 환경에 배포하고 테스트할 수 있도록 이미 사이트 가동 중지 시간을 예약했습니다. 
 
@@ -72,6 +72,6 @@ Liferay Cloud는 변경 사항을 감지하고 배포할 수 있는 CI에 새 �
 
 ## 관련 개념
 
-* [Liferay 서비스에 배포](https://learn.liferay.com/w/liferay-cloud/using-the-liferay-dxp-service/deploying-to-the-liferay-service)
-* [DXP 인스턴스를 새 마이너 버전으로 업데이트](https://learn.liferay.com/w/liferay-cloud/using-the-liferay-dxp-service/updating-your-dxp-instance-to-a-new-minor-version)
-* [Liferay DXP 인스턴스 업그레이드](https://learn.liferay.com/w/liferay-cloud/using-the-liferay-dxp-service/upgrading-your-liferay-dxp-instance)
+* [Liferay 서비스에 배포](https://learn.liferay.com/w/liferay-cloud/customizing-liferay-dxp-in-the-cloud/deploying-to-the-liferay-service)
+* [DXP 인스턴스를 새 마이너 버전으로 업데이트](https://learn.liferay.com/w/liferay-cloud/customizing-liferay-dxp-in-the-cloud/updating-your-dxp-instance-to-a-new-minor-version)
+* [Liferay DXP 인스턴스 업그레이드](https://learn.liferay.com/w/liferay-cloud/customizing-liferay-dxp-in-the-cloud/upgrading-your-liferay-dxp-instance)

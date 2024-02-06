@@ -41,7 +41,7 @@ Liferay Cloudへの移行の主な段階を紹介します：
 
 ## なぜLiferay Cloudに移行する必要があるのでしょうか？
 
-Liferay Cloud に移行することで、 [クラスタリング](./getting-started.md#high-availability-scalability-and-performance) のようなすぐに導入できる機能で、 [高可用性とスケーラビリティ](./getting-started.md#high-availability-scalability-and-performance) を利用することができます。 クラスタリング](./using-the-liferay-dxp-service/setting-up-clustering-in-liferay-cloud.md)、[ロードバランシング](/configuring-the-cloud-network/load-balancer.md)、[オートスケーリング](./manage-and-optimize/auto-scaling.md)のようなすぐにデプロイできる機能がすぐに使えます。組み込みの [GitとJenkinsとの統合](./getting-started.md#accelerated-development-with-built-in-ci-cd) も開発プロセスを合理化します。これにより、本番インスタンスのデプロイと開発がより簡単になり、ニーズに対してより柔軟になり、ユーザーにとってより信頼性の高いものになります。
+Liferay Cloud に移行することで、 [クラスタリング](./getting-started.md#high-availability-scalability-and-performance) のようなすぐに導入できる機能で、 [高可用性とスケーラビリティ](./getting-started.md#high-availability-scalability-and-performance) を利用することができます。 クラスタリング](./customizing-liferay-dxp-in-the-cloud/setting-up-clustering-in-liferay-cloud.md)、[ロードバランシング](/configuring-the-cloud-network/load-balancer.md)、[オートスケーリング](./manage-and-optimize/auto-scaling.md)のようなすぐにデプロイできる機能がすぐに使えます。組み込みの [GitとJenkinsとの統合](./getting-started.md#accelerated-development-with-built-in-ci-cd) も開発プロセスを合理化します。これにより、本番インスタンスのデプロイと開発がより簡単になり、ニーズに対してより柔軟になり、ユーザーにとってより信頼性の高いものになります。
 
 ## 事前に準備するものは？
 

@@ -21,7 +21,7 @@ All workflows begin with making changes to your project's Git repository (i.e., 
 
 Configure a service's [LCP.json file](../reference/configuration-via-lcp-json.md), or make environment-specific and project-wide changes to a service via its `configs/` folder. To learn more about each service's configuration options, see their respective documentation:
 
-* [Liferay Service](../using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.md)
+* [Liferay Service](../customizing-liferay-dxp-in-the-cloud/configuring-the-liferay-dxp-service.md)
 * [Backup Service](../platform-services/backup-service/backup-service-overview.md)
 * [Continuous Integration Service (Jenkins)](../platform-services/continuous-integration.md)
 * [Database Service (MySQL)](../platform-services/database-service/database-service.md)
@@ -49,10 +49,10 @@ To do this, log in to the CLI tool in your terminal, and navigate to the folder 
 For the deployment to be successful, you must have permissions to deploy to the chosen environment. See [Deploying Changes via the CLI Tool](./deploying-changes-via-the-cli-tool.md) for a walk through of this deployment workflow.
 
 ```{important}
-While you can directly deploy backup, CI, database, search, and webserver services, you must first create a gradle build of the Liferay service before running the `lcp deploy` command. See [Deploying to the Liferay Service](../using-the-liferay-dxp-service/deploying-to-the-liferay-service.md#cli-tool-deployment) for more information.
+While you can directly deploy backup, CI, database, search, and webserver services, you must first create a gradle build of the Liferay service before running the `lcp deploy` command. See [Deploying to the Liferay Service](../customizing-liferay-dxp-in-the-cloud/deploying-to-the-liferay-service.md#cli-tool-deployment) for more information.
 ```
 
-When you deploy with the CLI tool, you can either deploy all services at once (by running the command from the root directory of your project), or deploy only a single service (by running the command from the directory containing the service's `LCP.json` file). The `liferay` service in particular [requires extra steps](../using-the-liferay-dxp-service/deploying-to-the-liferay-service.md#cli-tool-deployment) to deploy, so it can build and prepare the files from your project workspace.
+When you deploy with the CLI tool, you can either deploy all services at once (by running the command from the root directory of your project), or deploy only a single service (by running the command from the directory containing the service's `LCP.json` file). The `liferay` service in particular [requires extra steps](../customizing-liferay-dxp-in-the-cloud/deploying-to-the-liferay-service.md#cli-tool-deployment) to deploy, so it can build and prepare the files from your project workspace.
 
 ### Option 2: Deploying From the Liferay Cloud Console
 

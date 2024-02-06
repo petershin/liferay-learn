@@ -54,7 +54,7 @@ This server is configurable as one of Liferay Cloud's main services. See the [We
 
 [Liferay DXP](https://www.liferay.com/products/dxp) connects, orchestrates, and integrates data and services from a variety of applications to one central user interface platform. Liferay Cloud provides a quick and reliable implementation for a DXP instance in the cloud. The [Web Server service](#web-server) provides the entry point and gateway for all HTTP(S) traffic to DXP.
 
-By adding configurations and any custom modules to [your own project repository](#repository-integration), the Liferay service is highly customizable just like a normal DXP installation. See the [Introduction to the Liferay Service](../using-the-liferay-dxp-service.md) for more information.
+By adding configurations and any custom modules to [your own project repository](#repository-integration), the Liferay service is highly customizable just like a normal DXP installation. See the [Introduction to the Liferay Service](../customizing-liferay-dxp-in-the-cloud.md) for more information.
 
 ## Search
 

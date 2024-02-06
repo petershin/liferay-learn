@@ -17,7 +17,7 @@ LXC で変更をデプロイするためにクラウド コンソールをセッ
 
 開発環境や本番環境には、クラウド・ネットワーク内の個別のサービスとして、これらすべてが含まれている：
 
-* あなたの [Liferay DXPサービスの使用](https://learn.liferay.com/w/liferay-cloud/using-the-liferay-dxp-service)
+* あなたの [Liferay DXPサービスの使用](https://learn.liferay.com/w/liferay-cloud/customizing-liferay-dxp-in-the-cloud)
 * [Webサーバーサービス（Nginx）](https://learn.liferay.com/w/liferay-cloud/platform-services/web-server-service)
 * [検索サービス（Elasticsearch）](https://learn.liferay.com/w/liferay-cloud/platform-services/search-service)
 * [データベースサービス(MySQL)](https://learn.liferay.com/w/liferay-cloud/platform-services/database-service/database-service)

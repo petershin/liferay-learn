@@ -31,7 +31,7 @@
 1. 기본 사용자로 MySQL 클라이언트에 로그인하려면 쉘에 `mysql` 입력하십시오.
 
     ```{note}
-    기본 데이터베이스 사용자로 로그인하면 데이터베이스에 대한 읽기 전용 액세스가 제공됩니다. 데이터를 조작해야 하는 경우 [MySQL 클라이언트 사용](https://learn.liferay.com/w/liferay-cloud/using-the-liferay-dxp-service/using-the-mysql-client#) 로그인하세요. 읽기 및 쓰기 권한으로 로그인).
+    기본 데이터베이스 사용자로 로그인하면 데이터베이스에 대한 읽기 전용 액세스가 제공됩니다. 데이터를 조작해야 하는 경우 [MySQL 클라이언트 사용](https://learn.liferay.com/w/liferay-cloud/customizing-liferay-dxp-in-the-cloud/using-the-mysql-client#) 로그인하세요. 읽기 및 쓰기 권한으로 로그인).
     ```
 
 1. `표시 테이블을 입력하십시오.` 스크롤할 수 있는 모든 기존 테이블 목록을 표시합니다.
@@ -59,4 +59,4 @@
 ## 관련 개념
 
 * [셸 액세스](https://learn.liferay.com/web/guest/w/liferay-cloud/troubleshooting/shell-access)
-* [MySQL 클라이언트 사용](https://learn.liferay.com/web/guest/w/liferay-cloud/using-the-liferay-dxp-service/using-the-mysql-client)
+* [MySQL 클라이언트 사용](https://learn.liferay.com/web/guest/w/liferay-cloud/customizing-liferay-dxp-in-the-cloud/using-the-mysql-client)

@@ -14,7 +14,7 @@ Liferay Cloudは、高効率なCI/CD戦略を実現するための堅牢なフ�
 
 サービスの [LCP.json file](../reference/configuration-via-lcp-json.md)を構成、 または`configs/` フォルダを介してサービスへの環境固有およびプロジェクト全体の変更を行います。 各サービスの構成オプションの詳細については、それぞれのドキュメンテーションを参照してください：
 
-* [Liferayサービス](../using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.md)
+* [Liferayサービス](../customizing-liferay-dxp-in-the-cloud/configuring-the-liferay-dxp-service.md)
 * [バックアップサービス](../platform-services/backup-service/backup-service-overview.md)
 * [継続的インテグレーションサービス（Jenkins）](../platform-services/continuous-integration.md)
 * [データベースサービス(MySQL)](../platform-services/database-service/database-service.md)
@@ -42,10 +42,10 @@ CLIツールを使用するのが、ローカル変更をサービスにデプ�
 デプロイを成功させるには、選択した環境にデプロイする権限が必要です。 このデプロイのワークフローについては、 [Deploying Changes via CLI Tool](./deploying-changes-via-the-cli-tool.md)を参照してください。
 
 ```{important}
-バックアップ、CI、データベース、検索機能、Webサーバの各サービスを直接デプロイすることはできますが、 `lcp deploy` コマンドを実行する前に、まずLiferayサービスのgradleビルドを作成する必要があります。 詳細については、 [Deploying to the Liferay Service](../using-the-liferay-dxp-service/deploying-to-the-liferay-service.md#cli-tool-deployment) を参照してください。
+バックアップ、CI、データベース、検索機能、Webサーバの各サービスを直接デプロイすることはできますが、 `lcp deploy` コマンドを実行する前に、まずLiferayサービスのgradleビルドを作成する必要があります。 詳細については、 [Deploying to the Liferay Service](../customizing-liferay-dxp-in-the-cloud/deploying-to-the-liferay-service.md#cli-tool-deployment) を参照してください。
 ```
 
-CLIツールでデプロイする場合、すべてのサービスを一度にデプロイする（プロジェクトのルートディレクトリからコマンドを実行する）か、単一のサービスのみをデプロイする（サービスの `LCP.json`ファイルを含むディレクトリからコマンドを実行する）ことができます。 `liferay` サービスではデプロイするために [追加のステップ](../using-the-liferay-dxp-service/deploying-to-the-liferay-service.md#cli-tool-deployment) を必要とするため、プロジェクトワークスペースからファイルをビルドおよび準備できます。
+CLIツールでデプロイする場合、すべてのサービスを一度にデプロイする（プロジェクトのルートディレクトリからコマンドを実行する）か、単一のサービスのみをデプロイする（サービスの `LCP.json`ファイルを含むディレクトリからコマンドを実行する）ことができます。 `liferay` サービスではデプロイするために [追加のステップ](../customizing-liferay-dxp-in-the-cloud/deploying-to-the-liferay-service.md#cli-tool-deployment) を必要とするため、プロジェクトワークスペースからファイルをビルドおよび準備できます。
 
 ### オプション2：Liferay Cloud Consoleからのデプロイメント
 

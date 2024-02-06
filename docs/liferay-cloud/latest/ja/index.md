@@ -5,7 +5,7 @@ toc:
   - ./updating-services-in-liferay-paas.md
   - ./configuring-the-cloud-network.md
   - ./tuning-security-settings.md
-  - ./using-the-liferay-dxp-service.md
+  - ./customizing-liferay-dxp-in-the-cloud.md
   - ./manage-and-optimize.md
   - ./troubleshooting.md
   - ./migrating-to-liferay-cloud.md

@@ -151,7 +151,7 @@ Behind the scenes, XML licenses are copied to `$LIFERAY_HOME/deploy`, and AATF l
 
 ## Related Topics
 
-* [Using the Liferay DXP Service](../using-the-liferay-dxp-service.md)
+* [Customizing Liferay DXP in the Cloud](../customizing-liferay-dxp-in-the-cloud.md)
 * [Configuring the Liferay DXP Service](./configuring-the-liferay-dxp-service.md)
 * [Overview of the Liferay Cloud Deployment Workflow](../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md)
 * [CLI Tool](../reference/command-line-tool.md)

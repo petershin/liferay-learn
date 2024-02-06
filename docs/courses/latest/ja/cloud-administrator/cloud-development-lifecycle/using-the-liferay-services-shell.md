@@ -31,7 +31,7 @@
 1. シェルに `mysql` と入力して、デフォルト・ユーザーでMySQLクライアントにログインする。
 
     ```{note}
-    デフォルトのデータベース・ユーザーでログインすると、データベースへの読み取り専用アクセス権が与えられます。 データを操作する必要がある場合は、 [MySQLクライアントの使用](https://learn.liferay.com/w/liferay-cloud/using-the-liferay-dxp-service/using-the-mysql-client#logging-in-with-read-and-write-privileges) ログインする。
+    デフォルトのデータベース・ユーザーでログインすると、データベースへの読み取り専用アクセス権が与えられます。 データを操作する必要がある場合は、 [MySQLクライアントの使用](https://learn.liferay.com/w/liferay-cloud/customizing-liferay-dxp-in-the-cloud/using-the-mysql-client#logging-in-with-read-and-write-privileges) ログインする。
     ```
 
 1. `show tables;` と入力すると、既存の全テーブルのリストが表示され、スクロールできる。
@@ -59,4 +59,4 @@
 ## 関連概念
 
 * [シェルアクセス](https://learn.liferay.com/web/guest/w/liferay-cloud/troubleshooting/shell-access)
-* [MySQLクライアントの使用](https://learn.liferay.com/web/guest/w/liferay-cloud/using-the-liferay-dxp-service/using-the-mysql-client)
+* [MySQLクライアントの使用](https://learn.liferay.com/web/guest/w/liferay-cloud/customizing-liferay-dxp-in-the-cloud/using-the-mysql-client)

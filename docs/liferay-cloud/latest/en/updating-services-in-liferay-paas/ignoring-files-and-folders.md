@@ -48,5 +48,5 @@ If a file or folder has been deployed and administrators want to ignore it later
 
 ## Related Topics
 
-* [Using the Liferay DXP Service](../using-the-liferay-dxp-service.md)
-* [Configuring the Liferay Service](../using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.md)
+* [Customizing Liferay DXP in the Cloud](../customizing-liferay-dxp-in-the-cloud.md)
+* [Configuring the Liferay Service](../customizing-liferay-dxp-in-the-cloud/configuring-the-liferay-dxp-service.md)

@@ -47,7 +47,7 @@ Here are the main stages of migration to Liferay Cloud:
 
 ## Why Should I Migrate to Liferay Cloud?
 
-Migrating to Liferay Cloud allows you to take advantage of its [high availability and scalability](./getting-started.md#high-availability-scalability-and-performance) with quick-to-deploy features like [clustering](./using-the-liferay-dxp-service/setting-up-clustering-in-liferay-cloud.md), [load balancing](/configuring-the-cloud-network/load-balancer.md), and [auto-scaling](./manage-and-optimize/auto-scaling.md) out-of-the-box. Built-in [integration with Git and Jenkins](./getting-started.md#accelerated-development-with-built-in-ci-cd) also streamlines your development process. This makes your production instance easier to deploy and develop with, more flexible for your needs, and more reliable for your users.
+Migrating to Liferay Cloud allows you to take advantage of its [high availability and scalability](./getting-started.md#high-availability-scalability-and-performance) with quick-to-deploy features like [clustering](./customizing-liferay-dxp-in-the-cloud/setting-up-clustering-in-liferay-cloud.md), [load balancing](/configuring-the-cloud-network/load-balancer.md), and [auto-scaling](./manage-and-optimize/auto-scaling.md) out-of-the-box. Built-in [integration with Git and Jenkins](./getting-started.md#accelerated-development-with-built-in-ci-cd) also streamlines your development process. This makes your production instance easier to deploy and develop with, more flexible for your needs, and more reliable for your users.
 
 ## What Do I Need to Prepare in Advance?
 

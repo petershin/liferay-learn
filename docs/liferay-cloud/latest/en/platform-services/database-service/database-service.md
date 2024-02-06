@@ -54,4 +54,4 @@ Name                                   | Acceptable Values | Default Value |
 * [Changing Your Database Username](./changing-your-database-username.md)
 * [Changing Your Database Password](./changing-your-database-password.md)
 * [Database Service Limitations](../../reference/platform-limitations.md#database-service)
-* [Using the MySQL Client](../../using-the-liferay-dxp-service/using-the-mysql-client.md)
+* [Using the MySQL Client](../../customizing-liferay-dxp-in-the-cloud/using-the-mysql-client.md)

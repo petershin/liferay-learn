@@ -106,4 +106,4 @@
 * [Liferay Cloud 開発ワークフローの概要](./overview-of-the-liferay-cloud-deployment-workflow.md)
 * [CLIツールによる変更点のデプロイ](./deploying-changes-via-the-cli-tool.md)
 * [自動デプロイメントの設定](./automatically-deploying-ci-service-builds.md)
-* [Liferayサービスの設定　](../using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.md)
+* [Liferayサービスの設定　](../customizing-liferay-dxp-in-the-cloud/configuring-the-liferay-dxp-service.md)

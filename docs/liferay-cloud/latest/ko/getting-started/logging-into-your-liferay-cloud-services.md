@@ -52,6 +52,6 @@
 
 ## 관련 주제
 
-* [Liferay DXP 서비스 사용](../using-the-liferay-dxp-service.md)
+* [Liferay DXP 서비스 사용](../customizing-liferay-dxp-in-the-cloud.md)
 * [지속적인 통합](../platform-services/continuous-integration.md)
 * [웹 서버 서비스](../platform-services/web-server-service.md)

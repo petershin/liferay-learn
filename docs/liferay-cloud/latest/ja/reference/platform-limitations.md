@@ -47,7 +47,7 @@ Liferay Cloudの利用を計画する際には、これらの一般的な制限�
 
 ## Liferayサービス
 
-これらの制限は、各Liferay Cloud環境における [Liferayサービス](../using-the-liferay-dxp-service.md) に適用されます。
+これらの制限は、各Liferay Cloud環境における [Liferayサービス](../customizing-liferay-dxp-in-the-cloud.md) に適用されます。
 
 **リモートステージング** : [リモート本番環境ステージングの設定](https://learn.liferay.com/dxp/latest/ja/site-building/publishing-tools/staging/configuring-remote-live-staging.html) はLiferay Cloudでは利用できません。 ローカルステージングは引き続き利用可能で、サポートされています。
 

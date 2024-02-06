@@ -101,6 +101,6 @@ Dynatrace를 통합하려면 다음 단계를 따르십시오.
 
 ## 관련 주제
 
-* [Liferay DXP 서비스 사용](../using-the-liferay-dxp-service.md)
+* [Liferay DXP 서비스 사용](../customizing-liferay-dxp-in-the-cloud.md)
 * [실시간 알림](./real-time-alerts.md)
 * [할당량](./quotas.md)

@@ -1,6 +1,6 @@
 # ホットフィックスのインストール
 
-Liferayインスタンスを最新の状態に保つことは、Liferay Cloudのメンテナンスの重要な部分です。しかし、 [DXPインスタンスを新しいマイナーバージョンにアップデートする](https://learn.liferay.com/w/liferay-cloud/using-the-liferay-dxp-service/updating-your-dxp-instance-to-a-new-minor-version) に問題が現れる前にパッチを当てる必要がある場合は、Hotfixをデプロイすることができます。HotfixはLiferayサポートが提供する一時的な解決策で、修正バージョンにアップデートする準備が整うまでの間、これらの問題を修正します。
+Liferayインスタンスを最新の状態に保つことは、Liferay Cloudのメンテナンスの重要な部分です。しかし、 [DXPインスタンスを新しいマイナーバージョンにアップデートする](https://learn.liferay.com/w/liferay-cloud/customizing-liferay-dxp-in-the-cloud/updating-your-dxp-instance-to-a-new-minor-version) に問題が現れる前にパッチを当てる必要がある場合は、Hotfixをデプロイすることができます。HotfixはLiferayサポートが提供する一時的な解決策で、修正バージョンにアップデートする準備が整うまでの間、これらの問題を修正します。
 
 ここでは、カイルがHotfixのリクエストからインストールまでの手順を説明します。 彼はすでにサイトのダウンタイムを予定しており、本番環境でHotfixを導入してテストすることができる。 
 
@@ -72,6 +72,6 @@ Hotfixが正しく機能することを確認したら、予約したダウン�
 
 ## 関連コンセプト
 
-* [Liferayサービスへのデプロイ](https://learn.liferay.com/w/liferay-cloud/using-the-liferay-dxp-service/deploying-to-the-liferay-service)
-* [DXPインスタンスを新しいマイナーバージョンにアップデートする](https://learn.liferay.com/w/liferay-cloud/using-the-liferay-dxp-service/updating-your-dxp-instance-to-a-new-minor-version)
-* [Liferay DXPインスタンスのアップグレード](https://learn.liferay.com/w/liferay-cloud/using-the-liferay-dxp-service/upgrading-your-liferay-dxp-instance)
+* [Liferayサービスへのデプロイ](https://learn.liferay.com/w/liferay-cloud/customizing-liferay-dxp-in-the-cloud/deploying-to-the-liferay-service)
+* [DXPインスタンスを新しいマイナーバージョンにアップデートする](https://learn.liferay.com/w/liferay-cloud/customizing-liferay-dxp-in-the-cloud/updating-your-dxp-instance-to-a-new-minor-version)
+* [Liferay DXPインスタンスのアップグレード](https://learn.liferay.com/w/liferay-cloud/customizing-liferay-dxp-in-the-cloud/upgrading-your-liferay-dxp-instance)

@@ -47,7 +47,7 @@ Liferay Cloud 사용을 계획할 때 다음과 같은 일반적인 제한 사�
 
 ## 라이프레이 서비스
 
-이러한 제한 사항은 각 Liferay 클라우드 환경에서 [Liferay 서비스](../using-the-liferay-dxp-service.md) 에 적용됩니다.
+이러한 제한 사항은 각 Liferay 클라우드 환경에서 [Liferay 서비스](../customizing-liferay-dxp-in-the-cloud.md) 에 적용됩니다.
 
 **원격 스테이징** : [원격 라이브 스테이징 구성](https://learn.liferay.com/dxp/latest/ko/site-building/publishing-tools/staging/configuring-remote-live-staging.html) 은 Liferay Cloud에서 사용할 수 없습니다. 로컬 스테이징은 계속 사용할 수 있으며 지원됩니다.
 

@@ -106,4 +106,4 @@
 * [Liferay 클라우드 개발 워크플로 개요](./overview-of-the-liferay-cloud-deployment-workflow.md)
 * [CLI 도구를 통한 변경 사항 배포](./deploying-changes-via-the-cli-tool.md)
 * [자동 배포 설정](./automatically-deploying-ci-service-builds.md)
-* [Liferay 서비스 구성](../using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.md)
+* [Liferay 서비스 구성](../customizing-liferay-dxp-in-the-cloud/configuring-the-liferay-dxp-service.md)

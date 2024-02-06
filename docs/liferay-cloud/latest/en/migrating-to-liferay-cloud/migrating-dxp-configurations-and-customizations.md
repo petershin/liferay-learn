@@ -11,16 +11,16 @@ Now that your database and document library are applied to your Liferay Cloud en
 
 ## Organize Configuration Files
 
-First, organize the Liferay configuration files from your on-premises installation you want to migrate. This includes any [portal property files](../using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.md#portal-properties) you are using.
+First, organize the Liferay configuration files from your on-premises installation you want to migrate. This includes any [portal property files](../customizing-liferay-dxp-in-the-cloud/configuring-the-liferay-dxp-service.md#portal-properties) you are using.
 
 ```{tip}
 Liferay-specific code belongs in the `liferay` folder, which is organized like a [Liferay DXP workspace](https://learn.liferay.com/dxp/latest/en/developing-applications/tooling/liferay_workspace.html).
 ```
 
 In the Liferay Cloud project repository you [cloned previously](./matching-dxp-versions.md#clone-the-liferay-cloud-repository), navigate to the `liferay/configs/[ENV]/` folders (which correspond to your Liferay Cloud environments),
-and put all of your Liferay [portal property](../using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.md#portal-properties) files (e.g., `portal-ext.properties`) into each appropriate environment folder.
+and put all of your Liferay [portal property](../customizing-liferay-dxp-in-the-cloud/configuring-the-liferay-dxp-service.md#portal-properties) files (e.g., `portal-ext.properties`) into each appropriate environment folder.
 
-Put [OSGi configuration](../using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.md#osgi-configurations) files (e.g., `.cfg` or `.config` files) into a subfolder in the appropriate environment folders called `osgi/`.
+Put [OSGi configuration](../customizing-liferay-dxp-in-the-cloud/configuring-the-liferay-dxp-service.md#osgi-configurations) files (e.g., `.cfg` or `.config` files) into a subfolder in the appropriate environment folders called `osgi/`.
 
 For example, for a `dev` environment, put portal property files into `liferay/configs/dev`, and OSGi configuration files into `liferay/configs/dev/osgi/`.
 

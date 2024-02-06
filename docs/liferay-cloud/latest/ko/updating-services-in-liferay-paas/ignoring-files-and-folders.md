@@ -29,5 +29,5 @@ Liferay Cloud를 사용하면 구독자가 서비스를 배포하기 전에 무�
 
 ## 관련 주제
 
-* [Liferay DXP 서비스 사용](../using-the-liferay-dxp-service.md)
-* [Liferay 서비스 구성](../using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.md)
+* [Liferay DXP 서비스 사용](../customizing-liferay-dxp-in-the-cloud.md)
+* [Liferay 서비스 구성](../customizing-liferay-dxp-in-the-cloud/configuring-the-liferay-dxp-service.md)

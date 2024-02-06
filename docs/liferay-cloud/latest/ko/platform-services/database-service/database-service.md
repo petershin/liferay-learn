@@ -46,4 +46,4 @@ Google 문서에 명시된 바와 같이 일부 데이터베이스 플래그 설
 * [데이터베이스 사용자 이름 변경](./changing-your-database-username.md)
 * [데이터베이스 암호 변경](./changing-your-database-password.md)
 * [데이터베이스 서비스 제한 사항](../../reference/platform-limitations.md#database-service)
-* [MySQL 클라이언트 사용](../../using-the-liferay-dxp-service/using-the-mysql-client.md)
+* [MySQL 클라이언트 사용](../../customizing-liferay-dxp-in-the-cloud/using-the-mysql-client.md)

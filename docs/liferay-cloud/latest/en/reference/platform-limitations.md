@@ -56,7 +56,7 @@ These limitations apply to every service in a Liferay Cloud environment:
 
 ## Liferay Service
 
-These limitations apply to the [Liferay service](../using-the-liferay-dxp-service.md) in each Liferay Cloud environment:
+These limitations apply to the [Liferay service](../customizing-liferay-dxp-in-the-cloud.md) in each Liferay Cloud environment:
 
 **Remote Staging**: [Remote Staging](https://learn.liferay.com/dxp/latest/en/site-building/publishing-tools/staging/configuring-remote-live-staging.html) is not available with Liferay Cloud. Local Staging is still available and supported.
 

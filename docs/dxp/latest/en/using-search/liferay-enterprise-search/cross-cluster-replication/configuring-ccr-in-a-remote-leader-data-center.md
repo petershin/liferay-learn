@@ -11,7 +11,7 @@ uuid: 22049b42-b6bb-44d8-bb85-c73b339aa9ed
 
 This data center holds Liferay DXP cluster nodes with a read-write connection to a co-located Elasticsearch cluster.
 
-The example shown here consists of a single Liferay DXP node and a single Elasticsearch node. The example configurations can also be found in the [CCR configuration reference](./ccr-basic-use-case-config-reference.md), including the security configuration settings.
+The example shown here consists of a single Liferay DXP node and a single Elasticsearch node. The example configurations can also be found in the [CCR configuration reference](./configuring-ccr-settings-reference.md), including the security configuration settings.
 
 ## Configure the Remote Leader Elasticsearch Cluster
 

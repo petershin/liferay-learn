@@ -70,7 +70,7 @@ New configuration options appear when you enable the confirmation field:
 
 ![Confirmation fields are configurable.](./forms-field-types-reference/images/22.png)
 
-See [Validating Text and Numeric Field Entries](validating-text-and-numeric-field-entries.md) for information on ensuring the user enters information in a valid format.
+See [Validating Text and Numeric Field Entries](validation-and-masking.md) for information on ensuring the user enters information in a valid format.
 
 ### Field Name, Field ID, and Field Reference
 
@@ -92,7 +92,7 @@ Paragraph fields can be much more than plain text. Create rich content using the
 
 ### Text Field
 
-Users enter free-form text into these fields. For example, a Full Name field is a text field. By default, a text field keeps all input on a single line of text. To accommodate longer responses, choose the multi-line setting when configuring the text field [as in this example](./creating-forms.md). You can put limits on the text users can enter (e.g., numbers from 1-10, email addresses, etc.) by using the text field's [validation options](./validating-text-and-numeric-field-entries.md).
+Users enter free-form text into these fields. For example, a Full Name field is a text field. By default, a text field keeps all input on a single line of text. To accommodate longer responses, choose the multi-line setting when configuring the text field [as in this example](./creating-forms.md). You can put limits on the text users can enter (e.g., numbers from 1-10, email addresses, etc.) by using the text field's [validation options](./validation-and-masking.md).
 
 ![Multi-line text fields allow multiple lines of user input.](./forms-field-types-reference/images/03.png)
 
@@ -120,7 +120,7 @@ Users select a date using a date picker.
 
 ![A date picker offers  handy way to select a date.](./forms-field-types-reference/images/06.png)
 
-As of Liferay 7.4, the Advanced configuration of the Date Field includes Validation. You can put limits on the dates users can enter (e.g., numbers from 1-10, email addresses, etc.) by using the [validation options in the field's Advanced configuration](./validating-text-and-numeric-field-entries.md).
+As of Liferay 7.4, the Advanced configuration of the Date Field includes Validation. You can put limits on the dates users can enter (e.g., numbers from 1-10, email addresses, etc.) by using the [validation options in the field's Advanced configuration](./validation-and-masking.md).
 
 ![Enter validation rules for date fields.](./forms-field-types-reference/images/26.png)
 
@@ -153,9 +153,9 @@ Users enter numeric data (integers or decimals) into numeric fields. Non-numeric
 There are some interesting advanced field settings for numeric fields:
 
 - [**Require Confirmation**](#field-confirmation) ensures the user enters data correctly.
-- **[Validation](./validating-text-and-numeric-field-entries.md)** constrains the user input to your pre-configured requirements.
+- **[Validation](./validation-and-masking.md)** constrains the user input to your pre-configured requirements.
       ![Validate numeric input.](./forms-field-types-reference/images/25.png)
-- An **[Input Mask](./validating-text-and-numeric-field-entries.md#masking-numeric-fields)** allows you to display the correct format as the user enters numeric data. 
+- An **[Input Mask](./validation-and-masking.md#masking-numeric-fields)** allows you to display the correct format as the user enters numeric data. 
 
 ### Upload
 

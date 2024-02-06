@@ -11,7 +11,7 @@ uuid: 05eb7be9-f2fd-4fd4-9371-81350dade69d
 
 The local/follower data center holds Liferay DXP cluster nodes with a read-only connection to the co-located Elasticsearch cluster and a write-only connection to the remote/leader data center's Elasticsearch cluster.
 
-The example configurations are also provided in full in the [CCR configuration reference guide](./ccr-basic-use-case-config-reference.md).
+The example configurations are also provided in full in the [CCR configuration reference guide](./configuring-ccr-settings-reference.md).
 
 ## Configure the Follower Elasticsearch Cluster 
 

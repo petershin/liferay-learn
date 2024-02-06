@@ -100,7 +100,7 @@ The Search widgets now support [Widget Templates](../../site-building/displaying
 
 The Similar Results widget displays a collection of assets similar to the main asset on a page. The widget determines the main asset display using the URL and leverages Elasticsearch's [more like this query](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-mlt-query.html) to find additional assets. The main asset can be displayed using a display widget (like the Blogs widget) or the Asset Publisher.
 
-The first version of Similar Results supports Blogs, Message Boards, Documents, and Wikis. Support for additional asset types (both native and custom assets) is possible by implementing an [extension point](../developer-guide/writing-a-similar-results-contributor.md). The logic used to determine document similarity can be configured per Elasticsearch's More Like This [query parameters](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-mlt-query.html). 
+The first version of Similar Results supports Blogs, Message Boards, Documents, and Wikis. Support for additional asset types (both native and custom assets) is possible by implementing an [extension point](../developer-guide/contributing-custom-content-to-the-similar-results-widget.md). The logic used to determine document similarity can be configured per Elasticsearch's More Like This [query parameters](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-mlt-query.html). 
 
 See [Similar Results](../search-pages-and-widgets/similar-results.md) for details.
 

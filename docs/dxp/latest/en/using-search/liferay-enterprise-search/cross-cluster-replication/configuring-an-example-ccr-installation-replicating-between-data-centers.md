@@ -65,7 +65,7 @@ To encrypt communication (TLS/SSL) and enable user authentication between the Li
 
    Include the security settings on each connection. See [Securing Elasticsearch](../../installing-and-upgrading-a-search-engine/elasticsearch/securing-elasticsearch.md) for details. [Configuring CCR in a Local Follower Data Center](./configuring-ccr-in-a-local-follower-data-center.md) covers configuring security for the read-only CCR connection from the local DXP nodes.
 
-The example configurations are provided in full [here](./ccr-basic-use-case-config-reference.md).
+The example configurations are provided in full [here](./configuring-ccr-settings-reference.md).
 
 ## Install the Cross-Cluster Replication Module
 

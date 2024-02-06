@@ -5,7 +5,7 @@ toc:
   - ./collaboration-and-social/notifications-and-requests.md
   - ./collaboration-and-social/social-tools.md
   - ./collaboration-and-social/wiki.md
-  - ./collaboration-and-social/questions.md
+  - ./collaboration-and-social/questions-application.md
   - ./collaboration-and-social/alerts-and-announcements.md
   - ./collaboration-and-social/knowledge-base.md
 uuid: 151b8654-fef8-4a23-9ce8-0348c5cd7c99
@@ -25,7 +25,7 @@ collaboration-and-social/message-boards.md
 collaboration-and-social/notifications-and-requests.md
 collaboration-and-social/social-tools.md
 collaboration-and-social/wiki.md
-collaboration-and-social/questions.md
+collaboration-and-social/questions-application.md
 collaboration-and-social/alerts-and-announcements.md
 collaboration-and-social/knowledge-base.md
 ```

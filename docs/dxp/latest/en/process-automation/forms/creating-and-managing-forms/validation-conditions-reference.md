@@ -34,4 +34,4 @@ There are several out-of-the-box validation conditions that can be used to valid
 
 ## Related Topics
 
-* [Validating Text and Numeric Field Entries](./validating-text-and-numeric-field-entries.md)
+* [Validating Text and Numeric Field Entries](./validation-and-masking.md)

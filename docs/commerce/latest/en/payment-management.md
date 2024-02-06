@@ -20,7 +20,7 @@ Using Liferay's new payment management application you can view online payments 
 * Related ID
 * Status
 
-See [Payments Reference](./payments-reference.md) for more information on these fields. Only online payments appear on the Payments page. See [Refunds](./payment-management/refunds.md) to know more about creating refunds on these payments. 
+See [Payments Reference](./payment-management/payments-reference.md) for more information on these fields. Only online payments appear on the Payments page. See [Refunds](./payment-management/refunds.md) to know more about creating refunds on these payments. 
 
 !!! important
     This feature is currently behind a release feature flag. Read [Release Feature Flags](https://learn.liferay.com/web/guest/w/dxp/system-administration/configuring-liferay/feature-flags#release-feature-flags) for more information.

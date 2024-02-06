@@ -27,7 +27,7 @@ From the Backups page in any environment, you can view backup service informatio
 
 Follow these steps to access the Backups page:
 
-1. Click on _Backups_ in the menu on the left from any environment.
+1. Click _Backups_ in the menu on the left from any environment.
 
 ![View backup history, create manual backups, and more from the Backups page in any environment.](./backup-service-overview/images/02.png)
 

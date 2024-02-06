@@ -1,5 +1,6 @@
 ---
 toc:
+  - ./site-settings/initial-setup.md
   - ./site-settings/changing-the-default-sites-name-and-logo.md
   - ./site-settings/changing-your-public-sites-settings.md
 uuid: f77b9dc7-1187-41bb-9af4-a8f5912f532f
@@ -34,6 +35,6 @@ As you make these changes, you'll navigate with these menus:
 
 Once you're familiar with these menus, it's time to start changing your site's settings.
 
-The new public site replaces the Liferay home site that exists out-of-the-box, so some of the basic settings must be changed in your *instance settings*. The first step is to change those instance settings to repurpose the site for Clarity.
+The new public site replaces the Liferay home site that exists out-of-the-box, so some of the basic settings must be changed in your *instance settings*. The first step in this course is to change those instance settings to repurpose the site for Clarity, but even before that, you'll start Liferay and import some users.
 
-[Let's Go!](./site-settings/changing-the-default-sites-name-and-logo.md)
+[Let's Go!](./site-settings/initial-setup.md)

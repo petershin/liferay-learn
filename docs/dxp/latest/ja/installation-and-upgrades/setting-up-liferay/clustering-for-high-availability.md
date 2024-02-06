@@ -1,8 +1,7 @@
 ---
 toc:
   - ./clustering-for-high-availability/example-creating-a-simple-dxp-cluster.md
-  - >-
-    - ./clustering-for-high-availability/configuring-cluster-link.md
+  - ./clustering-for-high-availability/configuring-cluster-link.md
     - ./clustering-for-high-availability/configuring-unicast-over-tcp.md
 ---
 # 高可用性のクラスタリング

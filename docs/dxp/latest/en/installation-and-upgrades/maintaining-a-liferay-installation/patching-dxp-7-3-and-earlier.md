@@ -1,7 +1,6 @@
 ---
 toc:
-  - >-
-    ./patching-dxp-7-3-and-earlier/understanding-patch-types-for-dxp-7-3-and-earlier.md
+  - ./patching-dxp-7-3-and-earlier/understanding-patch-types-for-dxp-7-3-and-earlier.md
   - ./patching-dxp-7-3-and-earlier/installing-patches-for-dxp-7-3-and-earlier.md
   - ./patching-dxp-7-3-and-earlier/advanced-patching-for-dxp-7-2.md
 uuid: ec34b8db-e1df-4d7a-bfbc-55073a92c072

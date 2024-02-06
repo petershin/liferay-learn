@@ -1,9 +1,7 @@
 ---
 toc:
-  - >-
-    ./troubleshooting-elasticsearch-installation/troubleshooting-the-elasticsearch-connection.md
-  - >-
-    ./troubleshooting-elasticsearch-installation/troubleshooting-elasticsearch-common-issues.md
+  - ./troubleshooting-elasticsearch-installation/troubleshooting-the-elasticsearch-connection.md
+  - ./troubleshooting-elasticsearch-installation/troubleshooting-elasticsearch-common-issues.md
 ---
 # Elasticsearch 설치 문제 해결
 

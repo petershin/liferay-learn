@@ -1,8 +1,7 @@
 ---
 toc:
   - ./integrating-objects-with-third-party-services/managing-data-from-external-systems.md
-  - >-
-    ./integrating-objects-with-third-party-services/using-google-sheets-with-objects.md
+  - ./integrating-objects-with-third-party-services/using-google-sheets-with-objects.md
 ---
 # 오브젝트와 타사 서비스 통합
 

@@ -13,8 +13,7 @@ toc:
   - ./creating-and-managing-objects/localizing-object-definitions-and-entries.md
   - ./creating-and-managing-objects/using-system-objects-with-custom-objects.md
   - ./creating-and-managing-objects/activating-and-deactivating-objects.md
-  - >-
-    ./creating-and-managing-objects/exporting-and-importing-object-definitions.md
+  - ./creating-and-managing-objects/exporting-and-importing-object-definitions.md
   - ./creating-and-managing-objects/auditing-object-events.md
   - ./creating-and-managing-objects/deleting-objects.md
   - ./creating-and-managing-objects/managing-objects-with-headless-apis.md

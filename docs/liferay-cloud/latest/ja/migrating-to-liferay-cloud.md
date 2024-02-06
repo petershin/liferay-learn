@@ -3,8 +3,7 @@ toc:
   - ./migrating-to-liferay-cloud/matching-dxp-versions.md
   - ./migrating-to-liferay-cloud/creating-data-backup-files.md
   - ./migrating-to-liferay-cloud/uploading-and-restoring-the-data-backup.md
-  - >-
-    - ./migrating-to-liferay-cloud/migrating-web-server-configurations.md
+  - ./migrating-to-liferay-cloud/migrating-web-server-configurations.md
     - ./migrating-to-liferay-cloud/migrating-search-configurations.md
     - ./migrating-to-liferay-cloud/connecting-the-vpn.md
     - ./migrating-to-liferay-cloud/next-steps-after-migration.md

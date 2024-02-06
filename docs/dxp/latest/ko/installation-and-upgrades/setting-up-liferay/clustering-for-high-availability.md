@@ -1,8 +1,7 @@
 ---
 toc:
   - ./clustering-for-high-availability/example-creating-a-simple-dxp-cluster.md
-  - >-
-    - ./clustering-for-high-availability/configuring-cluster-link.md
+  - ./clustering-for-high-availability/configuring-cluster-link.md
     - ./clustering-for-high-availability/configuring-unicast-over-tcp.md
 ---
 # 고가용성을 위한 클러스터링

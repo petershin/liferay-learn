@@ -1,7 +1,6 @@
 ---
 toc:
-  - >-
-    ./google-drive-integration/enabling-document-creation-and-editing-with-google-drive.md
+  - ./google-drive-integration/enabling-document-creation-and-editing-with-google-drive.md
   - ./google-drive-integration/enabling-links-to-google-drive-documents.md
 taxonomy-category-names:
 - Digital Asset Management

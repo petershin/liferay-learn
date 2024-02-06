@@ -1,9 +1,7 @@
 ---
 toc:
-  - >-
-    ./../client-extensions/front-end-client-extensions/tutorials/creating-a-basic-custom-element.md
-  - >-
-    - ./using-react/remote-applications-with-headless-apis.md
+  - ./../client-extensions/front-end-client-extensions/tutorials/creating-a-basic-custom-element.md
+  - ./using-react/remote-applications-with-headless-apis.md
     - ./using-react/react-component-utilities-reference.md
 ---
 # Reactの使用

@@ -1,12 +1,9 @@
 ---
 toc:
   - ./cross-cluster-replication/cross-cluster-replication.md
-  - >-
-    ./cross-cluster-replication/configuring-an-example-ccr-installation-replicating-between-data-centers.md
-  - >-
-    ./cross-cluster-replication/configuring-ccr-in-a-remote-leader-data-center.md
-  - >-
-    - ./cross-cluster-replication/ccr-basic-use-case-config-reference.md
+  - ./cross-cluster-replication/configuring-an-example-ccr-installation-replicating-between-data-centers.md
+  - ./cross-cluster-replication/configuring-ccr-in-a-remote-leader-data-center.md
+  - ./cross-cluster-replication/ccr-basic-use-case-config-reference.md
     - ./cross-cluster-replication/troubleshooting-cross-cluster-replication.md
 ---
 # 클러스터 간 복제

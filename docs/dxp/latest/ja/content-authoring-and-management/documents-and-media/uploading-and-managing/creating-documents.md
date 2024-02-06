@@ -1,8 +1,7 @@
 ---
 toc:
   - ./creating-documents/creating-and-editing-documents-with-google-drive.md
-  - >-
-    ./creating-documents/creating-and-editing-documents-with-microsoft-office-365.md
+  - ./creating-documents/creating-and-editing-documents-with-microsoft-office-365.md
 ---
 # ドキュメントの作成
 

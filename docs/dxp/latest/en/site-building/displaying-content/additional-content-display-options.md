@@ -3,8 +3,7 @@ toc:
   - ./additional-content-display-options/using-the-web-content-display-widget.md
   - ./collections-and-collection-pages/displaying-collections.md
   - ./additional-content-display-options/filtering-collections-on-a-page.md
-  - >-
-    ./additional-content-display-options/styling-widgets-with-widget-templates.md
+  - ./additional-content-display-options/styling-widgets-with-widget-templates.md
   - ./additional-content-display-options/using-the-iframe-widget.md
 taxonomy-category-names:
 - Sites

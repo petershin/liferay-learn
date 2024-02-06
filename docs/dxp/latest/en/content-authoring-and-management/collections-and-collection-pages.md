@@ -2,11 +2,9 @@
 toc:
   - ../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md
   - ../site-building/displaying-content/collections-and-collection-pages/creating-collections.md
-  - >-
-    ../site-building/displaying-content/collections-and-collection-pages/displaying-collections.md
+  - ../site-building/displaying-content/collections-and-collection-pages/displaying-collections.md
   - ../site-building/displaying-content/collections-and-collection-pages/collection-providers.md
-  - >-
-    ../site-building/personalizing-site-experience/experience-personalization/personalizing-collections.md
+  - ../site-building/personalizing-site-experience/experience-personalization/personalizing-collections.md
 taxonomy-category-names:
 - Sites
 - Collections

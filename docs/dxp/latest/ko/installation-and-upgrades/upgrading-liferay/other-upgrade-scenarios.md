@@ -1,7 +1,6 @@
 ---
 toc:
-  - >-
-    - ./other-upgrade-scenarios/upgrading-a-sharded-environment.md
+  - ./other-upgrade-scenarios/upgrading-a-sharded-environment.md
 ---
 # 기타 업그레이드 시나리오
 

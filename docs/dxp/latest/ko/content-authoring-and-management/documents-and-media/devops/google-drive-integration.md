@@ -1,7 +1,6 @@
 ---
 toc:
-  - >-
-    - ./google-drive-integration/enabling-links-to-google-drive-documents.md
+  - ./google-drive-integration/enabling-links-to-google-drive-documents.md
 ---
 # Google 드라이브 통합
 

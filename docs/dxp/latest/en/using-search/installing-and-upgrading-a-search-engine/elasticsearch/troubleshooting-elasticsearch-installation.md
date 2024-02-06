@@ -1,9 +1,7 @@
 ---
 toc:
-  - >-
-    ./troubleshooting-elasticsearch-installation/troubleshooting-the-elasticsearch-connection.md
-  - >-
-    ./troubleshooting-elasticsearch-installation/troubleshooting-elasticsearch-common-issues.md
+  - ./troubleshooting-elasticsearch-installation/troubleshooting-the-elasticsearch-connection.md
+  - ./troubleshooting-elasticsearch-installation/troubleshooting-elasticsearch-common-issues.md
 taxonomy-category-names:
 - Search
 - Search Engine Installation and Maintenance

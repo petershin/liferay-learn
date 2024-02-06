@@ -1,13 +1,9 @@
 ---
 toc:
-  - >-
-    ./using-the-asset-publisher-widget/displaying-assets-using-the-asset-publisher-widget.md
-  - >-
-    ./using-the-asset-publisher-widget/selecting-assets-in-the-asset-publisher-widget.md
-  - >-
-    ./using-the-asset-publisher-widget/configuring-asset-publisher-display-settings.md
-  - >-
-    ./using-the-asset-publisher-widget/configuring-asset-publisher-subscriptions.md
+  - ./using-the-asset-publisher-widget/displaying-assets-using-the-asset-publisher-widget.md
+  - ./using-the-asset-publisher-widget/selecting-assets-in-the-asset-publisher-widget.md
+  - ./using-the-asset-publisher-widget/configuring-asset-publisher-display-settings.md
+  - ./using-the-asset-publisher-widget/configuring-asset-publisher-subscriptions.md
 taxonomy-category-names:
 - Sites
 - Widgets

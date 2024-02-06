@@ -2,8 +2,7 @@
 toc:
   - ./configuring-dependencies/finding-artifacts.md
   - ./configuring-dependencies/specifying-dependencies.md
-  - >-
-    - ./../../building-applications/reference/jars-excluded-from-wabs.md
+  - ./../../building-applications/reference/jars-excluded-from-wabs.md
 ---
 # 종속성 구성
 

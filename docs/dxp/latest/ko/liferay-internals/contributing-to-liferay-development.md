@@ -1,7 +1,6 @@
 ---
 toc:
-  - >-
-    - ./contributing-to-liferay-development/building-liferay-source.md
+  - ./contributing-to-liferay-development/building-liferay-source.md
     - ./contributing-to-liferay-development/organizing-the-source.md
 ---
 # 라이프 레이 개발에 기여

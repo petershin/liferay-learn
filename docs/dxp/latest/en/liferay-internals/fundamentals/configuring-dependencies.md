@@ -2,8 +2,7 @@
 toc:
   - ./configuring-dependencies/finding-artifacts.md
   - ./configuring-dependencies/specifying-dependencies.md
-  - >-
-    ./configuring-dependencies/resolving-third-party-library-package-dependencies.md
+  - ./configuring-dependencies/resolving-third-party-library-package-dependencies.md
   - ./../../building-applications/reference/jars-excluded-from-wabs.md
 uuid: 345be6d8-c027-480c-b7cb-751f4d0ff8d2
 taxonomy-category-names:

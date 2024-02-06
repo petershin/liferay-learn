@@ -4,8 +4,7 @@ toc:
   - ./web-content-structures/creating-structures.md
   - ./web-content-structures/configuring-structure-fields.md
   - ./web-content-structures/managing-structures.md
-  - >-
-    - ./web-content-structures/whats-new-with-web-content-structures-in-7-4.md
+  - ./web-content-structures/whats-new-with-web-content-structures-in-7-4.md
 ---
 # Webコンテンツストラクチャー
 

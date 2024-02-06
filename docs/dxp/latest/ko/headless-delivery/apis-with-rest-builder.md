@@ -1,7 +1,6 @@
 ---
 toc:
-  - >-
-    ./apis-with-rest-builder/producing-and-implementing-apis-with-rest-builder.md
+  - ./apis-with-rest-builder/producing-and-implementing-apis-with-rest-builder.md
 ---
 # REST 빌더를 사용한 API
 

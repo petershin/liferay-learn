@@ -1,8 +1,7 @@
 ---
 toc:
   - ./sharepoint-integration/enabling-liferays-rest-connector-to-sharepoint.md
-  - >-
-    ./sharepoint-integration/creating-sharepoint-repositories-in-documents-and-media.md
+  - ./sharepoint-integration/creating-sharepoint-repositories-in-documents-and-media.md
 taxonomy-category-names:
 - Digital Asset Management
 - Documents and Media

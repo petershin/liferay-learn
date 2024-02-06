@@ -7,10 +7,8 @@ toc:
   - ./liferay-npm-bundler/how-liferay-amd-loader-configuration-is-exported.md
   - ./liferay-npm-bundler/how-portal-publishes-npm-packages.md
   - ./liferay-npm-bundler/how-the-bundler-formats-js-modules.md
-  - >-
-    - ./liferay-npm-bundler/npmbundlerrc-structure.md
-  - >-
-    - ./liferay-npm-bundler/bundler-migration-guide.md
+  - ./liferay-npm-bundler/npmbundlerrc-structure.md
+  - ./liferay-npm-bundler/bundler-migration-guide.md
 ---
 # Liferay npm Bundler
 

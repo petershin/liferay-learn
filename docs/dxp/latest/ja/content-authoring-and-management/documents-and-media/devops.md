@@ -1,8 +1,7 @@
 ---
 toc:
   - ./devops/configuring-documents-and-media-previews.md
-  - >-
-    - ./devops/configuring-cache-control-for-documents-and-media.md
+  - ./devops/configuring-cache-control-for-documents-and-media.md
     - ./devops/setting-storage-quotas-for-documents-and-media.md
     - ./devops/enabling-optimization-of-animated-gifs.md
     - ./devops/enabling-ffmpeg-for-audio-and-video-previews.md

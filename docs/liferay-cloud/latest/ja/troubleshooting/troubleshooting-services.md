@@ -46,7 +46,7 @@ failureThreshold:3
 successThreshold:3
 ```
 
-プローブの構成値（`パス` または `ポート`の 値）がご使用の環境にあっていない場合、プロジェクトのリポジトリのサービスの`LCP.json` ファイルで正しい値に調整してください。 このファイルをサービスに対応するディレクトリ（例： `liferay/`）で見つけ、 [テスト環境に変更をデプロイします](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md)。
+プローブの構成値（`パス` または `ポート`の 値）がご使用の環境にあっていない場合、プロジェクトのリポジトリのサービスの`LCP.json` ファイルで正しい値に調整してください。 このファイルをサービスに対応するディレクトリ（例： `liferay/`）で見つけ、 [テスト環境に変更をデプロイします](../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md)。
 
 サービスの `LCP.json` ファイルにプローブの設定がまだない場合は、コンソールに表示されている設定をコピーして、変更を適用しながらJSON形式に変換することができます。 例えば、 `liferay` サービスの準備プローブと活性プローブの構成は次のようになります：
 

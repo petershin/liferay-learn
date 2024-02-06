@@ -44,7 +44,7 @@ VPNへの接続の詳細は、 [VPN接続](..//configuring-the-cloud-network/con
 
 ### 最新の安定したビルドを本番環境からDR環境にデプロイする
 
-次に、最新の安定したビルドを本番環境でDR環境にデプロイする必要があります。 [Liferay Cloud 導入ワークフローの概要](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md)で説明したのと同じ手順を実行します。
+次に、最新の安定したビルドを本番環境でDR環境にデプロイする必要があります。 [Liferay Cloud 導入ワークフローの概要](../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md)で説明したのと同じ手順を実行します。
 
 ### ディザスタリカバリへの自動バックアップリストアの設定
 

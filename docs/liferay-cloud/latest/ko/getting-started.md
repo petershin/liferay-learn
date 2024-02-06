@@ -92,5 +92,5 @@ Liferay Cloud는 IT 팀이 시간이 지남에 따라 사이트의 상태 및 �
 
 * [개발 요구 사항](./getting-started/development-requirements.md)
 * [Github 리포지토리 구성](./getting-started/configuring-your-github-repository.md)
-* [Liferay 클라우드 배포 워크플로 개요](./build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md)
-* [Liferay Cloud Console을 통해 변경 사항 배포](./build-and-deploy/deploying-changes-via-the-liferay-cloud-console.md)
+* [Liferay 클라우드 배포 워크플로 개요](./updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md)
+* [Liferay Cloud Console을 통해 변경 사항 배포](./updating-services-in-liferay-paas/deploying-changes-via-the-liferay-cloud-console.md)

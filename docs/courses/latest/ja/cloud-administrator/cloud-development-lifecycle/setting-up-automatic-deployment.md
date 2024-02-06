@@ -70,4 +70,4 @@ CIサービスは新しい設定で再起動する。 バックアップが完�
 
 # 関連コンセプト
 
-* [CIサービスのビルドを自動的にデプロイする](https://learn.liferay.com/w/liferay-cloud/build-and-deploy/automatically-deploying-ci-service-builds)
+* [CIサービスのビルドを自動的にデプロイする](https://learn.liferay.com/w/liferay-cloud/updating-services-in-liferay-paas/automatically-deploying-ci-service-builds)

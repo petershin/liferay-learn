@@ -116,6 +116,6 @@ Next: [Liferay サービスが必要になったときに、さらに多くの�
 
 * [Liferay Cloudのクラスタリングの設定](https://learn.liferay.com/w/liferay-cloud/using-the-liferay-dxp-service/setting-up-clustering-in-liferay-cloud)
 * [Liferay DXPサービスの設定](https://learn.liferay.com/w/liferay-cloud/using-the-liferay-dxp-service/configuring-the-liferay-dxp-service)
-* [Liferay Cloud Consoleを使った変更のデプロイ](https://learn.liferay.com/w/liferay-cloud/build-and-deploy/deploying-changes-via-the-liferay-cloud-console)
-* [CLIツールによる変更点のデプロイ](https://learn.liferay.com/w/liferay-cloud/build-and-deploy/deploying-changes-via-the-cli-tool)
+* [Liferay Cloud Consoleを使った変更のデプロイ](https://learn.liferay.com/w/liferay-cloud/updating-services-in-liferay-paas/deploying-changes-via-the-liferay-cloud-console)
+* [CLIツールによる変更点のデプロイ](https://learn.liferay.com/w/liferay-cloud/updating-services-in-liferay-paas/deploying-changes-via-the-cli-tool)
 * [Liferayサービス環境変数](https://learn.liferay.com/w/liferay-cloud/using-the-liferay-dxp-service/liferay-service-environment-variables)

@@ -77,7 +77,7 @@ Liferay Cloud チームは、サブスクリプションをアップグレード
 
 ## 変更内容を展開する
 
-すべてのサービスの設定が完了したら、 [新しい設定](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md#deploy) を本番環境とUAT環境に配備してください。 Liferay Cloud への変更のデプロイに慣れていない場合は、次の手順を例として確認することができます。
+すべてのサービスの設定が完了したら、 [新しい設定](../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md#deploy) を本番環境とUAT環境に配備してください。 Liferay Cloud への変更のデプロイに慣れていない場合は、次の手順を例として確認することができます。
 
 ### 変更した内容でJenkinsビルドを作成する
 

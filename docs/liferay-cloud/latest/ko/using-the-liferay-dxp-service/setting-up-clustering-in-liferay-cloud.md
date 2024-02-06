@@ -17,7 +17,7 @@ Liferay Cloud Console의 원하는 환경에서 시작하십시오. 그런 다�
 
 ## 클러스터링 스케일 설정
 
-클러스터링 환경의 노드 수는 Liferay 서비스의 `LCP.json` 파일( `liferay/` 폴더)에 있는 `scale` 속성에 의해 결정됩니다. Liferay 서비스를 처음으로 배포하거나 `LCP.json` 파일에 `scale` 속성이 아직 설정되지 않은 경우 먼저 값을 `1` 로 설정한 다음 [서비스를 배포해야 합니다.](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md#deploy) .
+클러스터링 환경의 노드 수는 Liferay 서비스의 `LCP.json` 파일( `liferay/` 폴더)에 있는 `scale` 속성에 의해 결정됩니다. Liferay 서비스를 처음으로 배포하거나 `LCP.json` 파일에 `scale` 속성이 아직 설정되지 않은 경우 먼저 값을 `1` 로 설정한 다음 [서비스를 배포해야 합니다.](../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md#deploy) .
 
 ```json
 {
@@ -52,7 +52,7 @@ Auto-scaling은 `LCP.json`의 `scale` 속성과 함께 작동합니다. 자동 �
 
 ## 배포 및 확인
 
-선택한 환경에 구성 변경 사항을 배포하여 클러스터링이 활성화되었는지 확인합니다. 자세한 내용은 [Liferay 클라우드 배포 워크플로 개요](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md) 을 참조하십시오.
+선택한 환경에 구성 변경 사항을 배포하여 클러스터링이 활성화되었는지 확인합니다. 자세한 내용은 [Liferay 클라우드 배포 워크플로 개요](../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md) 을 참조하십시오.
 
 클러스터링이 올바르게 작동하는지 확인하려면 `JGroupsReceiver` 클래스의 `Accepted View` 메시지에 대한 Liferay DXP 인스턴스의 로그를 확인하십시오.
 

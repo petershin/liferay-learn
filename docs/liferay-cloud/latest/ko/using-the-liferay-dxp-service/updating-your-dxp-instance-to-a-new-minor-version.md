@@ -70,7 +70,7 @@ Liferay DXP에 대한 부 버전 업데이트도 프로젝트 저장소를 변�
    }
    ```
 
-1. [변경](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md) 을 `liferay` 서비스에 배포합니다.
+1. [변경](../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md) 을 `liferay` 서비스에 배포합니다.
 
 1. [Docker Hub](https://hub.docker.com/r/liferay/dxp/tags) 에서 업데이트하려는 Liferay 버전의 태그를 찾으십시오.
 
@@ -80,7 +80,7 @@ Liferay DXP에 대한 부 버전 업데이트도 프로젝트 저장소를 변�
     liferay.workspace.docker.image.liferay=liferay/dxp:7.3.10-ga1
     ```
 
-1. `liferay/LCP.json`에서 [배포 전략](../build-and-deploy/understanding-deployment-strategies.md)을 `Recreate`로 설정합니다.
+1. `liferay/LCP.json`에서 [배포 전략](../updating-services-in-liferay-paas/understanding-deployment-strategies.md)을 `Recreate`로 설정합니다.
 
     ```json
     {
@@ -90,7 +90,7 @@ Liferay DXP에 대한 부 버전 업데이트도 프로젝트 저장소를 변�
     }
     ```
 
-1. [이러한 변경 사항을](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md) liferay `서비스에 배포`.
+1. [이러한 변경 사항을](../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md) liferay `서비스에 배포`.
 
     `liferay` 서비스의 Liferay DXP 설치는 시작할 때 새 버전으로 업데이트됩니다. 그러나 서비스에 대한 임시 변경 사항은 여전히 되돌려야 합니다.
 
@@ -104,7 +104,7 @@ Liferay DXP에 대한 부 버전 업데이트도 프로젝트 저장소를 변�
 
 1. `liferay/LCP.json` 의 배포 전략을 이전 값으로 재설정합니다(또는 버전 업데이트를 위해서만 추가된 경우 속성을 제거합니다).
 
-1. [변경 사항](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md) 을 한 번 더 배포합니다.
+1. [변경 사항](../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md) 을 한 번 더 배포합니다.
 
 1. DXP 7.3+ 버전의 경우 향후 새 수정팩 또는 서비스 팩으로 업그레이드할 때 모듈 업그레이드를 허용하지 않으려면 `LIFERAY_UPGRADE_PERIOD_DATABASE_PERIOD_AUTO_PERIOD_RUN` 환경 변수 [이전에 추가한 2 Liferay 서비스의 환경 변수 페이지에](#enabling-module-upgrades-for-dxp-73) 을 제거하십시오. .
 

@@ -59,7 +59,7 @@ Deploying custom additions to Liferay DXP involves adding the new module, licens
 
 With the exception of the `common/` directory, changes added to an environment-specific folder (e.g., `dev`, `uat`, `prod`) will _only_ be propagated when deploying to the corresponding environment. Changes added to a `common/` directory will _always_ be deployed, regardless of the target deployment environment. This applies to all subfolders within the `configs/` directory, for all services.
 
-Because the Liferay service provides many more means of customization compared to other services (such as adding hotfixes, building your module's source code), there are several more considerations to make when deploying the service. See [Deploying to the Liferay Service](./using-the-liferay-dxp-service/deploying-to-the-liferay-service.md) for more information. Additionally, see [Overview of the Deployment Workflow](./build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md) for more information on how the deployment workflow in general. For a tutorial on deploying to Liferay Cloud, see [Deploying Changes via the DCP Cloud Console](./build-and-deploy/deploying-changes-via-the-liferay-cloud-console.md).
+Because the Liferay service provides many more means of customization compared to other services (such as adding hotfixes, building your module's source code), there are several more considerations to make when deploying the service. See [Deploying to the Liferay Service](./using-the-liferay-dxp-service/deploying-to-the-liferay-service.md) for more information. Additionally, see [Overview of the Deployment Workflow](./updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md) for more information on how the deployment workflow in general. For a tutorial on deploying to Liferay Cloud, see [Deploying Changes via the DCP Cloud Console](./updating-services-in-liferay-paas/deploying-changes-via-the-liferay-cloud-console.md).
 
 ## Configuration
 
@@ -108,7 +108,7 @@ Liferay DXP has many powerful features to build, manage, and deploy content to t
 * [Deploying to the Liferay Service](./using-the-liferay-dxp-service/deploying-to-the-liferay-service.md)
 * [Logging Into Your Liferay Cloud Services](getting-started/logging-into-your-liferay-cloud-services.md)
 * [Configuring the Liferay DXP Service](./using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.md)
-* [Deploying Changes via the DCP Cloud Console](build-and-deploy/deploying-changes-via-the-liferay-cloud-console.md)
+* [Deploying Changes via the DCP Cloud Console](updating-services-in-liferay-paas/deploying-changes-via-the-liferay-cloud-console.md)
 
 ```{toctree}
 :maxdepth: 1

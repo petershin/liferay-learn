@@ -74,7 +74,7 @@ Liferay Cloud は、サービスの基盤として Docker イメージを使用�
     git commit -m "Add custom service"
     ```
 
-1. ブランチをプッシュし、Liferay Cloud で新しいビルドを開始し、デプロイします。 ビルドのデプロイについては、 [Liferay Cloud デプロイメントの概要](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow#deploy) にあるデプロイの情報を参照してください。
+1. ブランチをプッシュし、Liferay Cloud で新しいビルドを開始し、デプロイします。 ビルドのデプロイについては、 [Liferay Cloud デプロイメントの概要](../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow#deploy) にあるデプロイの情報を参照してください。
 
 CIで変更を加えて新しいビルドを起動したら、Liferay Cloudコンソールで **Builds** 画面に移動してビルドを確認することができます。 ［**サービス**］ の列にリストされているサービスには、他のサービスとの新しいサービスが含まれています。
 
@@ -84,4 +84,4 @@ CIで変更を加えて新しいビルドを起動したら、Liferay Cloudコ�
 
 ## 関連トピック
 
-* [Liferay Cloud 導入ワークフローの概要](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow)
+* [Liferay Cloud 導入ワークフローの概要](../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow)

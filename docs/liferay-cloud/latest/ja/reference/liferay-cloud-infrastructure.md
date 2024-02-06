@@ -64,7 +64,7 @@ MySQLデータベースは、Liferay Cloudの主要サービスの一つとし�
 
 Liferay Cloudは、プライベートネットワーク内で、ボリュームを必要とするあらゆるサービスの永続的なデータストレージとして使用します。 サービスの種類に応じて、ボリュームはそのサービス専用のSSDドライブに格納されるか、ネットワークファイルシステム（NFS）上でサービス間で共有されるかのいずれかになります。 ボリュームは、プライベートネットワークトラフィックを介してのみアクセス可能です。
 
-デフォルトでは、Web Server、Liferay DXP、Backupの各サービスはNFSでボリュームを保存し、SearchとCIの各サービスは専用のSSDディスクを使用しています。 詳細は、 [永続的なファイルストレージボリュームの設定](../build-and-deploy/configuring-persistent-file-storage-volumes.md) を参照してください。
+デフォルトでは、Web Server、Liferay DXP、Backupの各サービスはNFSでボリュームを保存し、SearchとCIの各サービスは専用のSSDディスクを使用しています。 詳細は、 [永続的なファイルストレージボリュームの設定](../updating-services-in-liferay-paas/configuring-persistent-file-storage-volumes.md) を参照してください。
 
 ## バックアップ
 

@@ -10,7 +10,7 @@ Liferay Experience Cloudは、LiferayのSaaSサービスで、強力なカスタ
 ![クライアント拡張のサンプルはLiferay Portalリポジトリで確認できます。](./cloud-and-infrastructure/images/01.png)
 
 * [はじめに](https://learn.liferay.com/w/liferay-cloud/getting-started)
-* [Liferay Cloud 導入ワークフローの概要](https://learn.liferay.com/w/liferay-cloud/build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow)
+* [Liferay Cloud 導入ワークフローの概要](https://learn.liferay.com/w/liferay-cloud/updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow)
 * [バックアップサービスの概要](https://learn.liferay.com/w/liferay-cloud/platform-services/backup-service/backup-service-overview)
 
 ## 次のステップ

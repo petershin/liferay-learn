@@ -75,7 +75,7 @@ Liferay Cloud 콘솔을 통해 서비스에 환경 변수를 추가하려면 다
 }
 ```
 
-서비스의 `LCP.json` 파일 편집을 마쳤으면 변경 사항을 저장하고 업데이트 환경 변수에 배포합니다. 자세한 내용은 [Liferay 클라우드 배포 워크플로 개요](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md) 을 참조하십시오.
+서비스의 `LCP.json` 파일 편집을 마쳤으면 변경 사항을 저장하고 업데이트 환경 변수에 배포합니다. 자세한 내용은 [Liferay 클라우드 배포 워크플로 개요](../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md) 을 참조하십시오.
 
 ## 비밀 환경 변수
 
@@ -87,4 +87,4 @@ Liferay Cloud 콘솔을 통해 서비스에 환경 변수를 추가하려면 다
 
 * [LCP.json을 통한 구성](../reference/configuration-via-lcp-json.md)
 * [보안 비밀로 보안 환경 변수 관리](..//tuning-security-settings/managing-secure-environment-variables-with-secrets.md)
-* [Liferay 클라우드 배포 워크플로 개요](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md)
+* [Liferay 클라우드 배포 워크플로 개요](../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md)

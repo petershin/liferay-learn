@@ -64,7 +64,7 @@ MySQL 데이터베이스는 Liferay Cloud의 주요 서비스 중 하나로 제�
 
 Liferay Cloud는 사설 네트워크 내에서 볼륨이 필요한 모든 서비스에 대한 영구 데이터 스토리지용 볼륨을 사용합니다. 서비스 유형에 따라 볼륨은 해당 서비스에 특정한 SSD 드라이브에 저장하거나 네트워크 파일 시스템(NFS)의 서비스 간에 공유할 수 있습니다. 볼륨은 개인 네트워크 트래픽을 통해서만 액세스할 수 있습니다.
 
-기본적으로 웹 서버, Liferay DXP 및 백업 서비스는 NFS를 사용하여 볼륨을 저장하고 검색 및 CI 서비스는 전용 SSD 디스크를 사용합니다. 자세한 내용은 [영구 파일 스토리지 볼륨 구성](../build-and-deploy/configuring-persistent-file-storage-volumes.md) 을 참조하십시오.
+기본적으로 웹 서버, Liferay DXP 및 백업 서비스는 NFS를 사용하여 볼륨을 저장하고 검색 및 CI 서비스는 전용 SSD 디스크를 사용합니다. 자세한 내용은 [영구 파일 스토리지 볼륨 구성](../updating-services-in-liferay-paas/configuring-persistent-file-storage-volumes.md) 을 참조하십시오.
 
 ## 백업
 

@@ -149,7 +149,7 @@ main
 
 `liferay/configs/{ENV}/`のサブフォルダに保存したら、スクリプトをデプロイし、Liferay Cloud コンソールのシェルから実行する必要があります。
 
-1. [Liferay Cloud デプロイメントワークフローの概要](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md) で説明されている手順に従って、スクリプトを適切な環境にデプロイしてください。
+1. [Liferay Cloud デプロイメントワークフローの概要](../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md) で説明されている手順に従って、スクリプトを適切な環境にデプロイしてください。
 
 1. Liferay Cloud コンソールで、適切な環境の `liferay` サービス ページに移動してください。
 

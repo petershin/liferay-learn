@@ -44,7 +44,7 @@ VPN 연결에 대한 자세한 내용은 [VPN 연결](..//configuring-the-cloud-
 
 ### 프로덕션에서 DR 환경으로 안정적인 최신 빌드 배포
 
-이제 프로덕션의 안정적인 최신 빌드를 DR 환경에 배포해야 합니다. [Liferay Cloud 배포 워크플로우 개요](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md)에 설명된 것과 동일한 단계를 따르십시오.
+이제 프로덕션의 안정적인 최신 빌드를 DR 환경에 배포해야 합니다. [Liferay Cloud 배포 워크플로우 개요](../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md)에 설명된 것과 동일한 단계를 따르십시오.
 
 ### 재해 복구로 자동 백업 복원 설정
 

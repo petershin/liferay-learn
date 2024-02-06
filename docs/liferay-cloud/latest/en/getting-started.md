@@ -97,5 +97,5 @@ Liferay Cloud delivers [application metrics](./manage-and-optimize/application-m
 
 * [Development Requirements](./getting-started/development-requirements.md)
 * [Configuring Your Github Repository](./getting-started/configuring-your-github-repository.md)
-* [Overview of the Liferay Cloud Deployment Workflow](./build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md)
-* [Deploying Changes via the Liferay Cloud Console](./build-and-deploy/deploying-changes-via-the-liferay-cloud-console.md)
+* [Overview of the Liferay Cloud Deployment Workflow](./updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md)
+* [Deploying Changes via the Liferay Cloud Console](./updating-services-in-liferay-paas/deploying-changes-via-the-liferay-cloud-console.md)

@@ -149,7 +149,7 @@ main
 
 스크립트를 `liferay/configs/{ENV}/`의 하위 폴더에 저장했으면 스크립트를 배포하고 Liferay Cloud 콘솔의 셸에서 실행해야 합니다.
 
-1. [Liferay Cloud 배포 워크플로 개요](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md) 에 설명된 단계에 따라 스크립트를 적절한 환경에 배포합니다.
+1. [Liferay Cloud 배포 워크플로 개요](../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md) 에 설명된 단계에 따라 스크립트를 적절한 환경에 배포합니다.
 
 1. Liferay Cloud 콘솔에서 적절한 환경의 `liferay` 서비스 페이지로 이동합니다.
 

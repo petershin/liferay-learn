@@ -70,4 +70,4 @@ UAT 환경에 배포된 새 커밋이 배포 목록에 나타납니다.
 
 # 관련 개념
 
-* [CI 서비스 빌드 자동 배포](https://learn.liferay.com/w/liferay-cloud/build-and-deploy/automatically-deploying-ci-service-builds)
+* [CI 서비스 빌드 자동 배포](https://learn.liferay.com/w/liferay-cloud/updating-services-in-liferay-paas/automatically-deploying-ci-service-builds)

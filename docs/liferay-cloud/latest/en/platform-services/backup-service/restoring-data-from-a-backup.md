@@ -24,7 +24,7 @@ Only users with the Admin role for the chosen environment can manually restore e
 The *Backups* page of each environment has a list of all recent backups taken (automatically and manually). Restoring a backup to an environment from this page restores the data used by each service, but it does *not* change the build or Docker image that each service is using.
 
 ```{warning}
-The `backup` service version of the backup you're restoring should match the target environment before the restore to ensure it completes successfully. The Liferay [fix pack level](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier.html) should also match to avoid causing errors with a mismatched database schema. If you restore a backup that requires a different build from what is currently deployed in the environment, then [deploy an appropriate build](../../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md) *before* beginning the restore.
+The `backup` service version of the backup you're restoring should match the target environment before the restore to ensure it completes successfully. The Liferay [fix pack level](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier.html) should also match to avoid causing errors with a mismatched database schema. If you restore a backup that requires a different build from what is currently deployed in the environment, then [deploy an appropriate build](../../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md) *before* beginning the restore.
 ```
 
 Follow these steps to restore an environment from a backup:
@@ -80,7 +80,7 @@ Place SQL scripts into the appropriate, environment-specific `backup/configs/[EN
 
 Once you have prepared your SQL script(s), follow these steps to apply your custom SQL script(s) with a data restore:
 
-1. [Deploy your backup service](../../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md) to include the custom SQL script(s) online.
+1. [Deploy your backup service](../../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md) to include the custom SQL script(s) online.
 
 1. Follow the instructions listed above for [Restoring an Environment from the Backups Page](#restoring-an-environment-from-the-backups-page)
 

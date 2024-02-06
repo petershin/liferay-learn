@@ -46,7 +46,7 @@ From the Logs page, you can see (and filter by) all active instances of a servic
 
 ![Click on the instances drop-down menu to see all of the instances.](./reading-liferay-cloud-service-logs/images/01.png)
 
-The format of the instance ID depends on what deployment type (deployment or stateful set) the service is configured as. See [Understanding Deployment Types](../build-and-deploy/understanding-deployment-types.md) for more information.
+The format of the instance ID depends on what deployment type (deployment or stateful set) the service is configured as. See [Understanding Deployment Types](../updating-services-in-liferay-paas/understanding-deployment-types.md) for more information.
 
 ### Instance ID for Deployment Type Logs
 
@@ -78,7 +78,7 @@ These are the only components of the `instance ID` for stateful set type service
 
 - An iterating (non-random) **node ID**: in this example, `0`. This ID remains the same even after deploying new versions of the service.
 
-The entire instance ID for stateful set type services always remains the same for each node of the service. This allows you to reliably use the same instance ID to identify the node in a cluster with the same [volume](../build-and-deploy/configuring-persistent-file-storage-volumes.md), even after the service has been redeployed.
+The entire instance ID for stateful set type services always remains the same for each node of the service. This allows you to reliably use the same instance ID to identify the node in a cluster with the same [volume](../updating-services-in-liferay-paas/configuring-persistent-file-storage-volumes.md), even after the service has been redeployed.
 
 ## Accessing Logs via the Liferay Cloud Console
 

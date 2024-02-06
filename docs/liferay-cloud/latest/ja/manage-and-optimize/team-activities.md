@@ -37,11 +37,11 @@
 ![図2：アクティビティページから拡張環境のアクティビティを表示。](./team-activities/images/02.png)
 
 ```{note}
-また、プロジェクト環境のすべてのビルドとデプロイメントのアクティビティは、［Builds］および［Deployments］ページで確認できます。 これらのページについては、[Liferay Cloud デプロイメントワークフローの概要](../build-and-deploy/overview-of-liferay-cloud-deployment-workflow.md) を参照してください。
+また、プロジェクト環境のすべてのビルドとデプロイメントのアクティビティは、［Builds］および［Deployments］ページで確認できます。 これらのページについては、[Liferay Cloud デプロイメントワークフローの概要](../updating-services-in-liferay-paas/overview-of-liferay-cloud-deployment-workflow.md) を参照してください。
 ```
 
 ## 関連トピック
 
 * [環境のチームとロール](./environment-teams-and-roles.md)
-* [Liferay Cloud 導入ワークフローの概要](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md)
+* [Liferay Cloud 導入ワークフローの概要](../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md)
 * [ログ管理](../troubleshooting/reading-liferay-cloud-service-logs.md)

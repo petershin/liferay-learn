@@ -37,11 +37,11 @@
 ![그림 2: 활동 페이지에서 확장된 환경 활동을 봅니다.](./team-activities/images/02.png)
 
 ```{note}
-또한 *빌드* 및 *배포* 페이지를 통해 프로젝트 환경의 모든 빌드 및 배포 활동을 볼 수 있습니다. 이러한 페이지에 대한 자세한 내용은 [Liferay 클라우드 배포 워크플로 개요](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md)를 참조하십시오.
+또한 *빌드* 및 *배포* 페이지를 통해 프로젝트 환경의 모든 빌드 및 배포 활동을 볼 수 있습니다. 이러한 페이지에 대한 자세한 내용은 [Liferay 클라우드 배포 워크플로 개요](../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md)를 참조하십시오.
 ```
 
 ## 관련 주제
 
 * [환경 팀 및 역할](./environment-teams-and-roles.md)
-* [Liferay 클라우드 배포 워크플로 개요](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md)
+* [Liferay 클라우드 배포 워크플로 개요](../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md)
 * [로그 관리](../troubleshooting/reading-liferay-cloud-service-logs.md)

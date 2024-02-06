@@ -166,15 +166,15 @@ Docker 이미지 이름 끝에 있는 숫자는 사용 중인 Liferay Cloud 스�
 
 로컬 리포지토리가 변경된 후 `ci` 서비스를 `infra` 환경에 배포합니다. 다른 환경보다 먼저 `infra` 환경에 배포하면 `ci` 서비스에 대한 변경 사항이 먼저 배포되어 추가 변경 사항이 올바르게 배포될 수 있습니다.
 
-`ci` 서비스만 배포하는 가장 빠른 방법은 [CLI 도구를 사용하는 것입니다](../build-and-deploy/deploying-changes-via-the-cli-tool.md). 프로젝트 리포지토리의 `ci/` 폴더로 이동하여 `lcp deploy` 명령을 실행합니다.
+`ci` 서비스만 배포하는 가장 빠른 방법은 [CLI 도구를 사용하는 것입니다](../updating-services-in-liferay-paas/deploying-changes-via-the-cli-tool.md). 프로젝트 리포지토리의 `ci/` 폴더로 이동하여 `lcp deploy` 명령을 실행합니다.
 
 ```bash
     lcp deploy --project=<project-name> --environment=infra
 ```
 
-또는 [개발 워크플로](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md) 을 따르고 Liferay Cloud 콘솔에서 빌드로 변경 사항을 배포할 수도 있습니다.
+또는 [개발 워크플로](../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md) 을 따르고 Liferay Cloud 콘솔에서 빌드로 변경 사항을 배포할 수도 있습니다.
 
-그런 다음 새 서비스 버전 [을 개발 환경에](../build-and-deploy/deploying-changes-via-the-liferay-cloud-console.md) 하거나 새 버전의 Liferay 클라우드 서비스에서 일부 새 기능을 탐색할 수 있습니다. 자세한 내용은 변경 사항에 대한 [설명](./liferay-cloud-project-changes-in-version-4.md) 을 참조하십시오.
+그런 다음 새 서비스 버전 [을 개발 환경에](../updating-services-in-liferay-paas/deploying-changes-via-the-liferay-cloud-console.md) 하거나 새 버전의 Liferay 클라우드 서비스에서 일부 새 기능을 탐색할 수 있습니다. 자세한 내용은 변경 사항에 대한 [설명](./liferay-cloud-project-changes-in-version-4.md) 을 참조하십시오.
 
 ## 관련 주제
 

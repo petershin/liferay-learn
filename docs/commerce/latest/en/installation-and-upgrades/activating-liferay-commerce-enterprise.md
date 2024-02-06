@@ -140,7 +140,7 @@ Copy your XML file to the container's `/opt/liferay/deploy` folder. While proces
 
 #### Deploying to Liferay Cloud
 
-Copy your key to the [`liferay/configs/{ENV}/deploy`](https://learn.liferay.com/liferay-cloud/latest/en/using-the-liferay-dxp-service/deploying-to-the-liferay-service.html#deploying-licenses) folder in your project's central Git repository, and commit your changes. Then, trigger a Jenkins build for your Liferay service, and deploy it to the desired project environment. See [Overview of the Liferay Cloud Deployment Workflow](https://learn.liferay.com/liferay-cloud/latest/en/build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.html) for more information about deploying files to an environment's Liferay service.
+Copy your key to the [`liferay/configs/{ENV}/deploy`](https://learn.liferay.com/liferay-cloud/latest/en/using-the-liferay-dxp-service/deploying-to-the-liferay-service.html#deploying-licenses) folder in your project's central Git repository, and commit your changes. Then, trigger a Jenkins build for your Liferay service, and deploy it to the desired project environment. See [Overview of the Liferay Cloud Deployment Workflow](https://learn.liferay.com/liferay-cloud/latest/en/updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.html) for more information about deploying files to an environment's Liferay service.
 
 ```{important}
 If you've purchased Commerce through a Liferay Cloud contract, then the Liferay Cloud team manages the activation key through the cloud infrastructure, and there is no need to manage the key yourself. However, if you are adding Commerce to an existing Liferay Cloud project, you must deploy the license manually. 

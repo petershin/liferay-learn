@@ -88,4 +88,4 @@ Next: [change the password for your database service](./rotating-your-database-p
 
 * [Auto-scaling](https://learn.liferay.com/w/liferay-cloud/manage-and-optimize/auto-scaling)
 * [Deploying to the Liferay Service](https://learn.liferay.com/w/liferay-cloud/using-the-liferay-dxp-service/deploying-to-the-liferay-service)
-* [Deploying Changes via the Liferay Cloud Console](https://learn.liferay.com/w/liferay-cloud/build-and-deploy/deploying-changes-via-the-liferay-cloud-console)
+* [Deploying Changes via the Liferay Cloud Console](https://learn.liferay.com/w/liferay-cloud/updating-services-in-liferay-paas/deploying-changes-via-the-liferay-cloud-console)

@@ -74,7 +74,7 @@ Liferay Cloud는 Docker 이미지를 서비스의 기반으로 사용합니다. 
     git commit -m "Add custom service"
     ```
 
-1. 지점을 확장하고 Liferay Cloud에서 새 빌드를 시작하여 배포하십시오. 빌드 배포에 대한 도움말은 [Liferay Cloud 배포 개요](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow#deploy) 에서 배포에 대한 정보를 참조하십시오.
+1. 지점을 확장하고 Liferay Cloud에서 새 빌드를 시작하여 배포하십시오. 빌드 배포에 대한 도움말은 [Liferay Cloud 배포 개요](../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow#deploy) 에서 배포에 대한 정보를 참조하십시오.
 
 변경 사항으로 CI에서 새 빌드를 트리거한 후에는 Liferay Cloud 콘솔에서 **빌드** 화면으로 이동하여 빌드를 볼 수 있습니다. **서비스** 열에 나열된 서비스에는 다른 서비스와 함께 새 서비스가 포함됩니다.
 
@@ -84,4 +84,4 @@ Liferay Cloud는 Docker 이미지를 서비스의 기반으로 사용합니다. 
 
 ## 관련 주제
 
-* [Liferay 클라우드 배포 워크플로 개요](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow)
+* [Liferay 클라우드 배포 워크플로 개요](../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow)

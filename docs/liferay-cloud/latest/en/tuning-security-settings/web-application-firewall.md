@@ -37,7 +37,7 @@ These values are allowed for `LCP_WEBSERVER_MODSECURITY`:
 The `LCP_WEBSERVER_MODSECURITY` environment variable is equivalent to ModSecurity's own [`SecRuleEngine` directive](https://github.com/SpiderLabs/ModSecurity/wiki/Reference-Manual-%28v3.x%29#SecRuleEngine).
 ```
 
-To enable ModSecurity, set the value of `LCP_WEBSERVER_MODSECURITY` to `On` or `DetectionOnly`, then [deploy the change](../../build-and-deploy/deploying-changes-via-the-cli-tool.md).
+To enable ModSecurity, set the value of `LCP_WEBSERVER_MODSECURITY` to `On` or `DetectionOnly`, then [deploy the change](../../updating-services-in-liferay-paas/deploying-changes-via-the-cli-tool.md).
 
 ## Changing ModSecurity's Configuration
 
@@ -73,7 +73,7 @@ To add the OWASP CRS to ModSecurity,
 /etc/nginx/modsec/rules/*.conf
 ```
 
-1. Commit the files to your repository and [deploy the changes](../../build-and-deploy/deploying-changes-via-the-cli-tool.md).
+1. Commit the files to your repository and [deploy the changes](../../updating-services-in-liferay-paas/deploying-changes-via-the-cli-tool.md).
 
 The rule set is interpreted once you [enable ModSecurity](#enabling-modsecurity).
 

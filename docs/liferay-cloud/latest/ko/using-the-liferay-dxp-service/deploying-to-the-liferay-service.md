@@ -3,7 +3,7 @@
 다른 서비스와 마찬가지로 사용자 지정 추가 항목을 배포하려면 Git 저장소의 적절한 사이트
 에 구성이나 파일을 추가해야 합니다. 그러나 Liferay 서비스 배포는 다른 서비스 배포와 약간 다릅니다.
 
-Liferay 서비스는 [Liferay 작업 공간이란 무엇입니까?](https://learn.liferay.com/dxp/latest/ko/building-applications/tooling/liferay-workspace/what-is-liferay-workspace.html) 활용하여 [배포 가능한 파일](#deploying-themes-portlets-and-osgi-modules) , [소스 코드](#building-and-deploying-source-code) 등을 추가할 수 있는 더 많은 옵션을 제공합니다. 이는 [CI 빌드](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md) 에 쉽게 포함되지만 [CLI 도구](../reference/command-line-tool.md) 을 사용하는 경우 Liferay 서비스를 위해 특별히 [추가 단계](#cli-tool-deployment) 필요합니다.
+Liferay 서비스는 [Liferay 작업 공간이란 무엇입니까?](https://learn.liferay.com/dxp/latest/ko/building-applications/tooling/liferay-workspace/what-is-liferay-workspace.html) 활용하여 [배포 가능한 파일](#deploying-themes-portlets-and-osgi-modules) , [소스 코드](#building-and-deploying-source-code) 등을 추가할 수 있는 더 많은 옵션을 제공합니다. 이는 [CI 빌드](../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md) 에 쉽게 포함되지만 [CLI 도구](../reference/command-line-tool.md) 을 사용하는 경우 Liferay 서비스를 위해 특별히 [추가 단계](#cli-tool-deployment) 필요합니다.
 
 ## Liferay DXP Docker 이미지 정의
 
@@ -146,5 +146,5 @@ liferay
 
 * [Liferay DXP 서비스 이용하기](../using-the-liferay-dxp-service.md)
 * [Liferay DXP 서비스 구성](./configuring-the-liferay-dxp-service.md)
-* [Liferay Cloud 배포 워크플로우 개요](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md)
+* [Liferay Cloud 배포 워크플로우 개요](../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md)
 * [CLI 도구](../reference/command-line-tool.md)

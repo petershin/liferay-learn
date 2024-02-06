@@ -72,6 +72,6 @@ Liferay Cloud에서 Liferay를 사용하기 시작할 때 애플리케이션 성
 
 이제 Liferay Cloud로 마이그레이션했고 이미 [사용자 지정](./migrating-dxp-configurations-and-customizations.md)을 배포했으므로 클라우드 환경에 변경 사항을 배포하여 개발을 계속할 수 있습니다. 아직 익숙하지 않은 경우 [명령줄 도구](../reference/command-line-tool.md) 에 익숙해지면 개발 작업을 수행하는 데 도움이 될 수 있습니다.
 
-[Liferay Cloud 콘솔을 통해](../build-and-deploy/deploying-changes-via-the-liferay-cloud-console.md) 서비스를 배포하는 것 외에도 [자동 배포](를 구성할 수도 있습니다. ./build-and-deploy/automatically-deploying-ci-service-builds.md)를 사용하여 개발 환경의 프로세스 속도를 높일 수 있습니다. 필요에 따라 CI 서비스에서 사용하는 [Jenkins 파이프라인을 사용자 지정](../platform-services/continuous-integration.md#extending-the-default-jenkinsfile) 할 수도 있습니다.
+[Liferay Cloud 콘솔을 통해](../updating-services-in-liferay-paas/deploying-changes-via-the-liferay-cloud-console.md) 서비스를 배포하는 것 외에도 [자동 배포](를 구성할 수도 있습니다. ./updating-services-in-liferay-paas/automatically-deploying-ci-service-builds.md)를 사용하여 개발 환경의 프로세스 속도를 높일 수 있습니다. 필요에 따라 CI 서비스에서 사용하는 [Jenkins 파이프라인을 사용자 지정](../platform-services/continuous-integration.md#extending-the-default-jenkinsfile) 할 수도 있습니다.
 
-Liferay 클라우드 배포 워크플로우 [여기](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md)에 대해 자세히 알아보십시오.
+Liferay 클라우드 배포 워크플로우 [여기](../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md)에 대해 자세히 알아보십시오.

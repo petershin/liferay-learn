@@ -77,7 +77,7 @@ Liferay Cloud 팀은 구독을 업그레이드할 때 이 구성에 사용할 `�
 
 ## 변경 사항 배포
 
-모든 서비스를 구성했으면 프로덕션 및 [환경에 새 구성을 배포](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md#deploy) . Liferay Cloud에 변경 사항을 배포하는 데 익숙하지 않은 경우 다음 단계를 예로 검토할 수 있습니다.
+모든 서비스를 구성했으면 프로덕션 및 [환경에 새 구성을 배포](../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md#deploy) . Liferay Cloud에 변경 사항을 배포하는 데 익숙하지 않은 경우 다음 단계를 예로 검토할 수 있습니다.
 
 ### 변경 사항으로 Jenkins 빌드 생성
 

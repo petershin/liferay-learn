@@ -28,7 +28,7 @@ ModSecurity는 기본적으로 비활성화되어 있습니다. 이를 활성화
 `LCP_WEBSERVER_MODSECURITY` 환경 변수는 ModSecurity의 자체 [`SecRuleEngine` 지시문과 동일합니다](https://github.com/SpiderLabs/ModSecurity/wiki/Reference-Manual-%28v3.x%29#SecRuleEngine) .
 ```
 
-ModSecurity를 활성화하려면 `LCP_WEBSERVER_MODSECURITY` 값을 `On` 또는 `DetectionOnly`로 설정한 다음 [변경 사항 배포](../../build-and-deploy/deploying-changes-via-the-cli-tool.md).
+ModSecurity를 활성화하려면 `LCP_WEBSERVER_MODSECURITY` 값을 `On` 또는 `DetectionOnly`로 설정한 다음 [변경 사항 배포](../../updating-services-in-liferay-paas/deploying-changes-via-the-cli-tool.md).
 
 ## ModSecurity 구성 변경
 
@@ -64,7 +64,7 @@ OWASP CRS를 ModSecurity에 추가하려면,
 /etc/nginx/modsec/rules/*.conf
 ```
 
-1. 파일을 저장소에 커밋하고 변경 사항을 [합니다](../../build-and-deploy/deploying-changes-via-the-cli-tool.md).
+1. 파일을 저장소에 커밋하고 변경 사항을 [합니다](../../updating-services-in-liferay-paas/deploying-changes-via-the-cli-tool.md).
 
 [를](#enabling-modsecurity) 하면 규칙 세트가 해석됩니다.
 

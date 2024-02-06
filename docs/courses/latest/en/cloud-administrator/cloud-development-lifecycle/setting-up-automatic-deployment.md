@@ -74,4 +74,4 @@ Next: [practice using a backup to revert changes from development](./restoring-d
 
 # Relevant Concepts
 
-* [Automatically Deploying CI Service Builds](https://learn.liferay.com/w/liferay-cloud/build-and-deploy/automatically-deploying-ci-service-builds)
+* [Automatically Deploying CI Service Builds](https://learn.liferay.com/w/liferay-cloud/updating-services-in-liferay-paas/automatically-deploying-ci-service-builds)

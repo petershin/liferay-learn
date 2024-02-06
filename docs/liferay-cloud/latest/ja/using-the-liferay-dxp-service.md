@@ -53,7 +53,7 @@ Liferay DXPへのカスタム追加の導入には、Gitリポジトリの適切
 
 `common/`ディレクトリを除き、特定の環境フォルダ（`dev`、`uat`、`prod`など）に追加された変更は、対応する環境にデプロイするときに **のみ** 伝播されます。 `common/`ディレクトリに追加された変更は、ターゲットのデプロイ環境に関係なく、 **常に** デプロイされます。 これは、すべてのサービスにおいて、 `configs/` ディレクトリ内のすべてのサブフォルダに適用されます。
 
-Liferayサービスは、他のサービスに比べて多くのカスタマイゼーション（ホットフィックスの追加、モジュールのソースコードの構築など）を提供しているため、サービスをデプロイする際には、いくつかの考慮すべき点があります。 詳しくは [Liferayサービスへのデプロイ](./using-the-liferay-dxp-service/deploying-to-the-liferay-service.md) を参照してください。 また、一般的なデプロイメントワークフローについては、 [Overview of Deployment Workflow](./build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md) を参照してください。 Liferay Cloudへのデプロイのチュートリアルについては、 [Deploying Changes via DCP Cloud Console](./build-and-deploy/deploying-changes-via-the-liferay-cloud-console.md)をご覧ください。
+Liferayサービスは、他のサービスに比べて多くのカスタマイゼーション（ホットフィックスの追加、モジュールのソースコードの構築など）を提供しているため、サービスをデプロイする際には、いくつかの考慮すべき点があります。 詳しくは [Liferayサービスへのデプロイ](./using-the-liferay-dxp-service/deploying-to-the-liferay-service.md) を参照してください。 また、一般的なデプロイメントワークフローについては、 [Overview of Deployment Workflow](./updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md) を参照してください。 Liferay Cloudへのデプロイのチュートリアルについては、 [Deploying Changes via DCP Cloud Console](./updating-services-in-liferay-paas/deploying-changes-via-the-liferay-cloud-console.md)をご覧ください。
 
 ## 設定
 
@@ -102,7 +102,7 @@ Liferay DXPには、コンテンツを構築、管理、Webにデプロイする
 * [Liferayサービスへのデプロイ](./using-the-liferay-dxp-service/deploying-to-the-liferay-service.md)
 * [Liferay Cloudサービスへのログイン](getting-started/logging-into-your-liferay-cloud-services.md)
 * [Liferay DXPサービスの設定](./using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.md)
-* [Liferay Cloudコンソールによる変更のデプロイ](build-and-deploy/deploying-changes-via-the-liferay-cloud-console.md)
+* [Liferay Cloudコンソールによる変更のデプロイ](updating-services-in-liferay-paas/deploying-changes-via-the-liferay-cloud-console.md)
 
 ```{toctree}
 :maxdepth: 1

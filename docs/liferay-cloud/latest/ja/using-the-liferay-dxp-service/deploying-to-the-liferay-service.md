@@ -2,7 +2,7 @@
 
 他のサービスと同様に、カスタム追加のデプロイには、設定やファイルをGitリポジトリの適切な場所に追加する必要があります。 しかし、Liferayサービスのデプロイは、他のサービスのデプロイとは若干異なります。
 
-Liferayサービスは、 [Liferay Workspaceの概要](https://learn.liferay.com/dxp/latest/ja/building-applications/tooling/liferay-workspace/what-is-liferay-workspace.html) を利用し、 [配置可能なファイル](#deploying-themes-portlets-and-osgi-modules) 、 [ソースコード](#building-and-deploying-source-code) などを追加するオプションを提供します。 これらは [CIビルド](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md) に簡単に含まれますが、 [CLIツール](../reference/command-line-tool.md) を使っている場合は、Liferayサービス専用の [追加ステップ](#cli-tool-deployment) がいくつか必要になります。
+Liferayサービスは、 [Liferay Workspaceの概要](https://learn.liferay.com/dxp/latest/ja/building-applications/tooling/liferay-workspace/what-is-liferay-workspace.html) を利用し、 [配置可能なファイル](#deploying-themes-portlets-and-osgi-modules) 、 [ソースコード](#building-and-deploying-source-code) などを追加するオプションを提供します。 これらは [CIビルド](../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md) に簡単に含まれますが、 [CLIツール](../reference/command-line-tool.md) を使っている場合は、Liferayサービス専用の [追加ステップ](#cli-tool-deployment) がいくつか必要になります。
 
 ## Liferay DXP Dockerイメージの定義
 
@@ -145,5 +145,5 @@ liferay
 
 * [Liferay DXP Service の使用](../using-the-liferay-dxp-service.md)
 * [Liferay DXPサービスの設定](./configuring-the-liferay-dxp-service.md)
-* [Liferay クラウド展開ワークフローの概要](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md)
+* [Liferay クラウド展開ワークフローの概要](../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md)
 * [CLIツール](../reference/command-line-tool.md)

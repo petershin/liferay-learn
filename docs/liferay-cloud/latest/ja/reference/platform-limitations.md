@@ -165,9 +165,9 @@ Liferay Cloudの利用を計画する際には、これらの一般的な制限�
 
 **Ephemeral Storage** ：ボリュームに保存されていないすべてのファイルに使用されます。 Ephemeral Storageは、ホストノードの内部ストレージに配置され、そのノード上で動作するすべてのコンテナ間で共有されます。 コンテナがホストノードの空き容量以上のスペースを要求した場合、そのコンテナは別のノードに移動されます。 ホストディスクの容量は250GBです。
 
-**サービス間でのデータの共有** ：StatefulSet [配布タイプ](../build-and-deploy/understanding-deployment-types.md) のサービスは、他のサービスとデータを共有できません。
+**サービス間でのデータの共有** ：StatefulSet [配布タイプ](../updating-services-in-liferay-paas/understanding-deployment-types.md) のサービスは、他のサービスとデータを共有できません。
 
-**StatefulSetストレージサイズ** ：[デプロイメントタイプ](../build-and-deploy/understanding-deployment-types.md)サービスのストレージを追加するには、サポートチケットを作成する必要があります。 StatefulSetサービスの保存サイズは、一度大きくすると縮小できません。
+**StatefulSetストレージサイズ** ：[デプロイメントタイプ](../updating-services-in-liferay-paas/understanding-deployment-types.md)サービスのストレージを追加するには、サポートチケットを作成する必要があります。 StatefulSetサービスの保存サイズは、一度大きくすると縮小できません。
 
 ## ネットワーク設定　
 

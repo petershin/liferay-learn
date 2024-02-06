@@ -84,4 +84,4 @@ GitHub 上のあなたのリポジトリは最大インスタンス数が更新�
 
 * [オートスケーリング](https://learn.liferay.com/w/liferay-cloud/manage-and-optimize/auto-scaling)
 * [Liferayサービスへのデプロイ](https://learn.liferay.com/w/liferay-cloud/using-the-liferay-dxp-service/deploying-to-the-liferay-service)
-* [Liferay Cloud Consoleを使った変更のデプロイ](https://learn.liferay.com/w/liferay-cloud/build-and-deploy/deploying-changes-via-the-liferay-cloud-console)
+* [Liferay Cloud Consoleを使った変更のデプロイ](https://learn.liferay.com/w/liferay-cloud/updating-services-in-liferay-paas/deploying-changes-via-the-liferay-cloud-console)

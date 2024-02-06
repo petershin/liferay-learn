@@ -75,7 +75,7 @@ Liferay Cloudのコンソールから、サービスの環境変数を追加・�
 }
 ```
 
-サービスの `LCP.json` ファイルの編集が完了したら、環境変数を更新するために変更内容を保存してデプロイします。 詳しくは、 [Liferay Cloud 導入ワークフローの概要](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md) をご覧ください。
+サービスの `LCP.json` ファイルの編集が完了したら、環境変数を更新するために変更内容を保存してデプロイします。 詳しくは、 [Liferay Cloud 導入ワークフローの概要](../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md) をご覧ください。
 
 ## 秘密の環境変数
 
@@ -87,4 +87,4 @@ Liferay Cloudのコンソールから、サービスの環境変数を追加・�
 
 * [LCP.jsonによるコンフィギュレーション](../reference/configuration-via-lcp-json.md)
 * [シークレットで安全な環境変数を管理](..//tuning-security-settings/managing-secure-environment-variables-with-secrets.md)
-* [Liferay Cloud 導入ワークフローの概要](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md)
+* [Liferay Cloud 導入ワークフローの概要](../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md)

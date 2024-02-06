@@ -61,7 +61,7 @@ mysql -u ${LCP_SECRET_DATABASE_USER} -p${LCP_SECRET_DATABASE_PASSWORD}
 MySQL クライアントをサポートするバージョンを使用してデータベースサービスをデプロイしている場合、デフォルトユーザーはすでにデフォルトパスワードで初期化されています。 このパスワードは後で変更できないので、環境変数 `LCP_DATABASE_READONLY_USER_PASSWORD` を追加できるのは、データベースサービスをデプロイする前（初めて、または上記より古いバージョンのイメージから更新する）のみです。 それ以外の場合は、デフォルトの生成されたパスワードを使用する必要があります。
 ```
 
-次に、適切なDockerイメージバージョン（またはそれ以降）に更新し、[サービスを再デプロイ](../build-and-deploy/deploying-changes-via-the-liferay-cloud-console.md)し、MySQLクライアントを使用できるようにします。
+次に、適切なDockerイメージバージョン（またはそれ以降）に更新し、[サービスを再デプロイ](../updating-services-in-liferay-paas/deploying-changes-via-the-liferay-cloud-console.md)し、MySQLクライアントを使用できるようにします。
 
 `LCP_DATABASE_READONLY_USER_PASSWORD`でデフォルトユーザーのパスワードを設定した場合、同じ環境変数を `liferay` サービスに追加します。 それ以外の場合は、この変数を追加しないでください。 これにより、サービスはデフォルトのパスワードを使用します。
 

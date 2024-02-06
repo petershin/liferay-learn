@@ -85,7 +85,7 @@ In order to ensure your `search` service's instances can connect to each other p
 
 ## Deploy the Changes
 
-Once you have configured all of your services, [deploy the new configurations](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md#deploy) to your production and UAT environments. If you are unfamiliar with deploying changes to Liferay Cloud, the following steps can be reviewed as an example.
+Once you have configured all of your services, [deploy the new configurations](../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md#deploy) to your production and UAT environments. If you are unfamiliar with deploying changes to Liferay Cloud, the following steps can be reviewed as an example.
 
 ### Create a Jenkins Build with Your Changes
 

@@ -43,7 +43,7 @@ The sample Spring Boot project uses an `application.properties` file to register
 
 Now the project is correctly configured for your LXC instance and ready to deploy.
 
-## Build and Deploy the Project
+## Updating Services in Liferay PaaS the Project
 
 Build and deploy the project to your LXC instance from the sample Spring Boot project's folder.
 

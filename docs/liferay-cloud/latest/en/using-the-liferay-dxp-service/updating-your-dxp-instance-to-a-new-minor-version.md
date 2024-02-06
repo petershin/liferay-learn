@@ -77,7 +77,7 @@ Follow these steps:
    }
    ```
 
-1. [Deploy the change](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md) to the `liferay` service.
+1. [Deploy the change](../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md) to the `liferay` service.
 
 1. Find the tag for the version of Liferay you are updating to on [Docker Hub](https://hub.docker.com/r/liferay/dxp/tags).
 
@@ -87,7 +87,7 @@ Follow these steps:
     liferay.workspace.docker.image.liferay=liferay/dxp:7.3.10-ga1
     ```
 
-1. Set the [deployment strategy](../build-and-deploy/understanding-deployment-strategies.md) to `Recreate` in `liferay/LCP.json`:
+1. Set the [deployment strategy](../updating-services-in-liferay-paas/understanding-deployment-strategies.md) to `Recreate` in `liferay/LCP.json`:
 
     ```json
     {
@@ -97,7 +97,7 @@ Follow these steps:
     }
     ```
 
-1. [Deploy these changes](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md) to the `liferay` service.
+1. [Deploy these changes](../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md) to the `liferay` service.
 
     The Liferay DXP installation on your `liferay` service updates to the new version as it starts up. However, you must still reverse the temporary changes made to your service.
 
@@ -111,7 +111,7 @@ Follow these steps:
 
 1. Reset the deployment strategy in `liferay/LCP.json` to its former value (or remove the property if it was only added for the version update).
 
-1. [Deploy the changes](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md) one more time.
+1. [Deploy the changes](../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md) one more time.
 
 1. For versions 7.3+ of DXP, if you do not intend to allow modules to upgrade when upgrading to new fix packs or service packs in the future, then remove the `LIFERAY_UPGRADE_PERIOD_DATABASE_PERIOD_AUTO_PERIOD_RUN` environment variable [you previously added](#enabling-module-upgrades-for-dxp-73) to the Liferay service's Environment Variables page.
 

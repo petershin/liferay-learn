@@ -34,7 +34,7 @@ Liferay Cloud の多くのログには、このメッセージがサービスの
 
 ![インスタンスのドロップダウンメニューをクリックすると、すべてのインスタンスが表示されます](./reading-liferay-cloud-service-logs/images/01.png)
 
-インスタンスIDの形式は、サービスがどのような配布タイプ（展デプロイまたはステートフルセット）として構成されているかによって異なります。 詳細は、 [デプロイタイプについて](../build-and-deploy/understanding-deployment-types.md) を参照してください。
+インスタンスIDの形式は、サービスがどのような配布タイプ（展デプロイまたはステートフルセット）として構成されているかによって異なります。 詳細は、 [デプロイタイプについて](../updating-services-in-liferay-paas/understanding-deployment-types.md) を参照してください。
 
 ### 配布タイプログのインスタンスID
 
@@ -66,7 +66,7 @@ Jun 29 07:44:44.676 build-214 [search-0] #  - Creating and Starting rollup jobs 
 
 * イテレート（非ランダム）**ノードID** ：この例では、 `0`。 このIDは、新しいバージョンのサービスをデプロイしても同じです。
 
-ステートフルセットタイプのサービスのインスタンスID全体は、サービスの各ノードで常に同じものが使用されます。 これにより、サービスが再びデプロイされた後でも、同じインスタンスIDを使用して、同じ [ボリューム](../build-and-deploy/configuring-persistent-file-storage-volumes.md)を持つクラスタ内のノードを確実に識別することができます。
+ステートフルセットタイプのサービスのインスタンスID全体は、サービスの各ノードで常に同じものが使用されます。 これにより、サービスが再びデプロイされた後でも、同じインスタンスIDを使用して、同じ [ボリューム](../updating-services-in-liferay-paas/configuring-persistent-file-storage-volumes.md)を持つクラスタ内のノードを確実に識別することができます。
 
 ## Liferay Cloud Consoleからログにアクセスする。
 

@@ -166,13 +166,13 @@ Dockerイメージ名の末尾にある数字は、使用しているLiferay Clo
 
 ローカルリポジトリが変更されたら、 `ci` サービスを `infra` 環境にデプロイします。 他のより先に`インフラ`環境にデプロイすることによって、`ci`サービスへの変更事項が最初にデプロイされることが保証されます。これにより、他の変更事項が正しくデプロイされます。
 
-`ci` サービスのみをデプロイするには、 [CLIツールを使用](../build-and-deploy/deploying-changes-via-the-cli-tool.md)するのが最も早い方法です。 プロジェクトリポジトリの `ci/` フォルダに移動し、 `lcp deploy` コマンドを実行します：
+`ci` サービスのみをデプロイするには、 [CLIツールを使用](../updating-services-in-liferay-paas/deploying-changes-via-the-cli-tool.md)するのが最も早い方法です。 プロジェクトリポジトリの `ci/` フォルダに移動し、 `lcp deploy` コマンドを実行します：
 
 ```bash
     lcp deploy --project=<project-name> --environment=infra
 ```
 
-あるいは、 [開発ワークフロー](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md) に従って、Liferay Cloud コンソールからビルドとして変更をデプロイすることもできます。
+あるいは、 [開発ワークフロー](../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md) に従って、Liferay Cloud コンソールからビルドとして変更をデプロイすることもできます。
 
 </a> その後、新しいサービスバージョン
 

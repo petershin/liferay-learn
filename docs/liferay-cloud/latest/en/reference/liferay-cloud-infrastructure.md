@@ -72,7 +72,7 @@ The MySQL database is offered as one of Liferay Cloud's main services, making it
 
 Liferay Cloud uses volumes for persistent data storage for any service that needs them, within its private network. Depending on the type of service, volumes can be either be stored with an SSD drive specific to that service, or shared between services on a network file system (NFS). Volumes are only accessible via private network traffic.
 
-By default, the Web Server, Liferay DXP, and Backup services store volumes using NFS, and the Search and CI services use dedicated SSD disks. See [Configuring Persistent File Storage Volumes](../build-and-deploy/configuring-persistent-file-storage-volumes.md) for more information.
+By default, the Web Server, Liferay DXP, and Backup services store volumes using NFS, and the Search and CI services use dedicated SSD disks. See [Configuring Persistent File Storage Volumes](../updating-services-in-liferay-paas/configuring-persistent-file-storage-volumes.md) for more information.
 
 ## Backups
 

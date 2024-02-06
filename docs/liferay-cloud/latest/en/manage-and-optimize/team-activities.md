@@ -44,11 +44,11 @@ This page lists all activities that have occurred on the Liferay Cloud instance.
 ![Figure 2: View extended environment activities from the Activities page.](./team-activities/images/02.png)
 
 ```{note}
-You can also view all build and deployment activities from your project environments via the *Builds* and *Deployments* pages. See [Overview of the Liferay Cloud Deployment Workflow](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md) for more information about these pages.
+You can also view all build and deployment activities from your project environments via the *Builds* and *Deployments* pages. See [Overview of the Liferay Cloud Deployment Workflow](../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md) for more information about these pages.
 ```
 
 ## Related Topics
 
 * [Environment Teams and Roles](./environment-teams-and-roles.md)
-* [Overview of the Liferay Cloud Deployment Workflow](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md)
+* [Overview of the Liferay Cloud Deployment Workflow](../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md)
 * [Log Management](../troubleshooting/reading-liferay-cloud-service-logs.md)

@@ -241,7 +241,7 @@ lcp deploy
 lcp deploy -r <remote-id>
 ```
 
-詳細については、 [CLIツールによる変更点のデプロイ](../build-and-deploy/deploying-changes-via-the-cli-tool.md) を参照してください。
+詳細については、 [CLIツールによる変更点のデプロイ](../updating-services-in-liferay-paas/deploying-changes-via-the-cli-tool.md) を参照してください。
 
 ## サービスのシェルへのアクセス
 
@@ -276,5 +276,5 @@ Windows 7および8の場合は、 ［**コントロールパネル**］ &rarr; 
 ## 関連トピック
 
 * [トラブルシューティングツールとリソース](../troubleshooting/troubleshooting-tools-and-resources.md)
-* [CLIツールによる変更点のデプロイ](../build-and-deploy/deploying-changes-via-the-cli-tool.md)
+* [CLIツールによる変更点のデプロイ](../updating-services-in-liferay-paas/deploying-changes-via-the-cli-tool.md)
 * [Liferay Cloudスタックのアップグレード](./upgrading-your-liferay-cloud-stack.md)

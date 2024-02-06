@@ -174,15 +174,15 @@ If you are defining your own Jenkinsfile within your `ci` service directory to o
 
 After your local repository has changed, deploy the `ci` service to the `infra` environment. Deploying to the `infra` environment before any others ensures that the changes to the `ci` service are deployed first, which allows further changes to deploy correctly.
 
-The quickest way to deploy only the `ci` service is to [use the CLI tool](../build-and-deploy/deploying-changes-via-the-cli-tool.md). Navigate to your project repository's `ci/` folder and run the `lcp deploy` command:
+The quickest way to deploy only the `ci` service is to [use the CLI tool](../updating-services-in-liferay-paas/deploying-changes-via-the-cli-tool.md). Navigate to your project repository's `ci/` folder and run the `lcp deploy` command:
 
 ```bash
     lcp deploy --project=<project-name> --environment=infra
 ```
 
-Alternatively, you can also follow the [development workflow](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md) and deploy the changes as a build from the Liferay Cloud console.
+Alternatively, you can also follow the [development workflow](../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md) and deploy the changes as a build from the Liferay Cloud console.
 
-You may then want to [deploy the new service versions](../build-and-deploy/deploying-changes-via-the-liferay-cloud-console.md) to a development environment, or explore some of the new functionality in the new versions of your Liferay Cloud services. See the [explanation of the changes](./liferay-cloud-project-changes-in-version-4.md) to learn more.
+You may then want to [deploy the new service versions](../updating-services-in-liferay-paas/deploying-changes-via-the-liferay-cloud-console.md) to a development environment, or explore some of the new functionality in the new versions of your Liferay Cloud services. See the [explanation of the changes](./liferay-cloud-project-changes-in-version-4.md) to learn more.
 
 ## Related Topics
 

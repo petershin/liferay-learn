@@ -61,7 +61,7 @@ mysql -u ${LCP_SECRET_DATABASE_USER} -p${LCP_SECRET_DATABASE_PASSWORD}
 MySQL 클라이언트를 지원하는 버전을 사용하여 데이터베이스 서비스를 이미 배포한 경우 기본 사용자는 이미 기본 암호로 초기화됩니다. 이 암호는 나중에 변경할 수 없으므로 데이터베이스 서비스를 배포하기 전에(처음으로 또는 위보다 이전 이미지 버전에서 업데이트) `LCP_DATABASE_READONLY_USER_PASSWORD` 환경 변수만 추가할 수 있습니다. 그렇지 않으면 생성된 기본 암호를 사용해야 합니다.
 ```
 
-그런 다음 적절한 Docker 이미지 버전(또는 최신 버전)으로 업데이트하고 MySQL 클라이언트를 사용할 수 있도록 서비스 [을 다시 배포](../build-and-deploy/deploying-changes-via-the-liferay-cloud-console.md).
+그런 다음 적절한 Docker 이미지 버전(또는 최신 버전)으로 업데이트하고 MySQL 클라이언트를 사용할 수 있도록 서비스 [을 다시 배포](../updating-services-in-liferay-paas/deploying-changes-via-the-liferay-cloud-console.md).
 
 기본 사용자의 암호를 `LCP_DATABASE_READONLY_USER_PASSWORD`로 설정한 경우 동일한 환경 변수를 `liferay` 서비스에 추가합니다. 그렇지 않으면 서비스가 기본 암호를 사용하도록 이 변수를 추가하지 마십시오.
 

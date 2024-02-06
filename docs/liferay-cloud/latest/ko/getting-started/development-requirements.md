@@ -29,5 +29,5 @@ Liferay Cloud에는 [Liferay Workspace](https://help.liferay.com/hc/ko/articles/
 * [Github 리포지토리 구성](../getting-started/configuring-your-github-repository.md)
 * [Bitbucket 리포지토리 구성](./configuring-your-bitbucket-repository.md)
 * [GitLab 리포지토리 구성](./configuring-your-gitlab-repository.md)
-* [Liferay 클라우드 배포 워크플로 개요](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md)
+* [Liferay 클라우드 배포 워크플로 개요](../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md)
 * [Liferay DXP 인스턴스에 로그인](../getting-started/logging-into-your-liferay-cloud-services.md)

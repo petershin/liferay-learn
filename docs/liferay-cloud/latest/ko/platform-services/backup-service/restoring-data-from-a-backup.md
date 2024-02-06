@@ -17,7 +17,7 @@
 각 환경의 **백업** 페이지에는 최근에 수행한 모든 백업(자동 및 수동)의 목록이 있습니다. 이 페이지에서 환경으로 백업을 복원하면 각 서비스에서 사용하는 데이터가 복원되지만 **각 서비스에서 사용 중인 빌드 또는 Docker 이미지가** 변경되지는 않습니다.
 
 ```{warning}
-복원하려는 백업의 '백업' 서비스 버전이 복원하기 전에 대상 환경과 일치해야 복원이 성공적으로 완료됩니다. 불일치 데이터베이스 스키마로 인한 오류를 방지하려면 Liferay [이전 DXP 버전 패치 적용](https://learn.liferay.com/dxp/latest/ko/installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier.html) 도 일치해야 합니다. 현재 환경에 배포된 것과 다른 빌드가 필요한 백업을 복원하는 경우, 복원을 시작하기 전에 [적절한 빌드를 배포](../../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md)하세요.
+복원하려는 백업의 '백업' 서비스 버전이 복원하기 전에 대상 환경과 일치해야 복원이 성공적으로 완료됩니다. 불일치 데이터베이스 스키마로 인한 오류를 방지하려면 Liferay [이전 DXP 버전 패치 적용](https://learn.liferay.com/dxp/latest/ko/installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier.html) 도 일치해야 합니다. 현재 환경에 배포된 것과 다른 빌드가 필요한 백업을 복원하는 경우, 복원을 시작하기 전에 [적절한 빌드를 배포](../../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md)하세요.
 ```
 
 백업에서 환경을 복원하려면 다음 단계를 따르세요:
@@ -73,7 +73,7 @@ SQL 스크립트를 적절한 환경별 `백업/컨피그/{ENV}/스크립트/` �
 
 SQL 스크립트를 준비했으면 다음 단계에 따라 데이터 복원과 함께 사용자 지정 SQL 스크립트를 적용합니다:
 
-1. [백업 서비스](../../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md) 를 배포하여 사용자 지정 SQL 스크립트를 온라인에 포함시킵니다.
+1. [백업 서비스](../../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md) 를 배포하여 사용자 지정 SQL 스크립트를 온라인에 포함시킵니다.
 
 1. 위에 나열된 지침을 따르세요. [백업 페이지에서 환경 복원하기](#restoring-an-environment-from-the-backups-page)
 

@@ -84,4 +84,4 @@ Liferay 서비스의 `LCP.json` 파일에서 `maxInstances` 속성을 통해 최
 
 * [자동 확장](https://learn.liferay.com/w/liferay-cloud/manage-and-optimize/auto-scaling)
 * [Liferay 서비스에 배포](https://learn.liferay.com/w/liferay-cloud/using-the-liferay-dxp-service/deploying-to-the-liferay-service)
-* [Liferay 클라우드 콘솔을 통한 변경 사항 배포](https://learn.liferay.com/w/liferay-cloud/build-and-deploy/deploying-changes-via-the-liferay-cloud-console)
+* [Liferay 클라우드 콘솔을 통한 변경 사항 배포](https://learn.liferay.com/w/liferay-cloud/updating-services-in-liferay-paas/deploying-changes-via-the-liferay-cloud-console)

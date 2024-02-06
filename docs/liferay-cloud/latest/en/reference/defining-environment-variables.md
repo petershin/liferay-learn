@@ -81,7 +81,7 @@ The following example creates an exception to the top level attribute, defining 
 }
 ```
 
-When you are finished editing the service's `LCP.json` file, save and deploy your changes to update environment variables. See [Overview of the Liferay Cloud Deployment Workflow](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md) for more information.
+When you are finished editing the service's `LCP.json` file, save and deploy your changes to update environment variables. See [Overview of the Liferay Cloud Deployment Workflow](../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md) for more information.
 
 ## Secret Environment Variables
 
@@ -93,4 +93,4 @@ To store sensitive variable values (such as login credentials), you can use secr
 
 * [Configuration via LCP.json](../reference/configuration-via-lcp-json.md)
 * [Managing Secure Environment Variables with Secrets](..//tuning-security-settings/managing-secure-environment-variables-with-secrets.md)
-* [Overview of the Liferay Cloud Deployment Workflow](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md)
+* [Overview of the Liferay Cloud Deployment Workflow](../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md)

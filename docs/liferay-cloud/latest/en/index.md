@@ -2,7 +2,7 @@
 toc:
   - ./getting-started.md
   - ./platform-services.md
-  - ./build-and-deploy.md
+  - ./updating-services-in-liferay-paas.md
   - ./configuring-the-cloud-network.md
   - ./tuning-security-settings.md
   - ./using-the-liferay-dxp-service.md

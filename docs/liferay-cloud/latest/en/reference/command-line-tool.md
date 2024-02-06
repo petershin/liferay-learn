@@ -250,7 +250,7 @@ Run the command with `-r` to specify a remote (by its ID) other than the default
 lcp deploy -r <remote-id>
 ```
 
-See [Deploying Changes via the CLI Tool](../build-and-deploy/deploying-changes-via-the-cli-tool.md) for more information.
+See [Deploying Changes via the CLI Tool](../updating-services-in-liferay-paas/deploying-changes-via-the-cli-tool.md) for more information.
 
 ## Accessing a Service's Shell
 
@@ -287,5 +287,5 @@ For Windows 7 and 8, go to *Control Panel* &rarr; *Add or Remove Programs*. In W
 ## Related Topics
 
 * [Troubleshooting Tools and Resources](../troubleshooting/troubleshooting-tools-and-resources.md)
-* [Deploying Changes Via the CLI Tool](../build-and-deploy/deploying-changes-via-the-cli-tool.md)
+* [Deploying Changes Via the CLI Tool](../updating-services-in-liferay-paas/deploying-changes-via-the-cli-tool.md)
 * [Upgrading Your Liferay Cloud Stack](./upgrading-your-liferay-cloud-stack.md)

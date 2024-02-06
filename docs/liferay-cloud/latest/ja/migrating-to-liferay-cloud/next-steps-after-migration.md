@@ -73,6 +73,6 @@ Liferay CloudでLiferayを使い始めるにあたり、アプリケーション
 Liferay Cloudに移行し、[カスタマイズ](./migrating-dxp-configurations-and-customizations.md)をデプロイ済みなので、変更をクラウド環境にデプロイして開発を続けることができます。まだの方は、[コマンドラインツール](../reference/command-line-tool.md)
 を習得することで、開発作業を行うことができます。
 
-[Liferay Cloudコンソールから](../build-and-deploy/deploying-changes-via-the-liferay-cloud-console.md)サービスをデプロイするだけでなく、[自動デプロイメント](../build-and-deploy/automatically-deploying-ci-service-builds.md)を設定して、開発環境のプロセスをスピードアップすることもできます。また、ニーズに合わせて、CIサービスが使用する [Jenkinsパイプラインをカスタマイズ](../platform-services/continuous-integration.md#extending-the-default-jenkinsfile) することができます。
+[Liferay Cloudコンソールから](../updating-services-in-liferay-paas/deploying-changes-via-the-liferay-cloud-console.md)サービスをデプロイするだけでなく、[自動デプロイメント](../updating-services-in-liferay-paas/automatically-deploying-ci-service-builds.md)を設定して、開発環境のプロセスをスピードアップすることもできます。また、ニーズに合わせて、CIサービスが使用する [Jenkinsパイプラインをカスタマイズ](../platform-services/continuous-integration.md#extending-the-default-jenkinsfile) することができます。
 
-Liferay Cloudのデプロイワークフローについて、詳しくは[こちら](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md)をご覧ください。
+Liferay Cloudのデプロイワークフローについて、詳しくは[こちら](../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md)をご覧ください。

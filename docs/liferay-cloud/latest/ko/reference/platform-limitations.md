@@ -165,9 +165,9 @@ Liferay Cloud 사용을 계획할 때 다음과 같은 일반적인 제한 사�
 
 **Ephemeral Storage** : Ephemeral Storage는 볼륨에 저장되지 않은 모든 파일에 사용됩니다. Ephemeral Storage는 호스트 노드의 내부 스토리지에 있으며 해당 노드에서 실행되는 모든 컨테이너 간에 공유됩니다. 컨테이너가 호스트 노드가 사용할 수 있는 것보다 더 많은 공간을 요청하면 컨테이너는 다른 노드로 이동됩니다. 호스트 디스크의 용량은 250GB입니다.
 
-**서비스 간 데이터 공유** : StatefulSet가 있는 서비스 [배포 유형](../build-and-deploy/understanding-deployment-types.md) 은 다른 서비스와 데이터를 공유할 수 없습니다.
+**서비스 간 데이터 공유** : StatefulSet가 있는 서비스 [배포 유형](../updating-services-in-liferay-paas/understanding-deployment-types.md) 은 다른 서비스와 데이터를 공유할 수 없습니다.
 
-**StatefulSet 저장소 크기** : StatefulSet [배포 유형](../build-and-deploy/understanding-deployment-types.md)으로 서비스용 저장소를 추가하려면 지원 티켓을 만들어야 합니다. StatefulSet 서비스의 스토리지 크기는 일단 늘리면 줄일 수 없습니다.
+**StatefulSet 저장소 크기** : StatefulSet [배포 유형](../updating-services-in-liferay-paas/understanding-deployment-types.md)으로 서비스용 저장소를 추가하려면 지원 티켓을 만들어야 합니다. StatefulSet 서비스의 스토리지 크기는 일단 늘리면 줄일 수 없습니다.
 
 ## 네트워크 구성
 

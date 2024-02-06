@@ -10,7 +10,7 @@ Liferay Experience Cloud는 강력한 사용자 정의 기능을 제공하는 �
 ![클라이언트 확장 예제는 Liferay Portal 저장소에서 검토할 수 있습니다.](./cloud-and-infrastructure/images/01.png)
 
 * [시작하기](https://learn.liferay.com/w/liferay-cloud/getting-started)
-* [Liferay 클라우드 배포 워크플로 개요](https://learn.liferay.com/w/liferay-cloud/build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow)
+* [Liferay 클라우드 배포 워크플로 개요](https://learn.liferay.com/w/liferay-cloud/updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow)
 * [백업 서비스 개요](https://learn.liferay.com/w/liferay-cloud/platform-services/backup-service/backup-service-overview)
 
 ## 다음

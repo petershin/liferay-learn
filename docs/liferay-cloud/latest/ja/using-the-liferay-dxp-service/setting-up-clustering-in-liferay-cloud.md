@@ -17,7 +17,7 @@ Liferay Cloud Console で目的の環境から起動します。 次に、 `［S
 
 ## クラスタリングスケールの設定
 
-クラスタリング環境のノード数は、Liferayサービスの `LCP.json` ファイル内（`liferay/`フォルダ内）の `スケール` プロパティによって決定されます。 Liferayサービスを初めてデプロイする場合、または `スケール` プロパティが `LCP.json` ファイルでまだ設定されていない場合は、最初に値を `1` 設定し、 [サービスをデプロイする](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md#deploy) 必要があります。
+クラスタリング環境のノード数は、Liferayサービスの `LCP.json` ファイル内（`liferay/`フォルダ内）の `スケール` プロパティによって決定されます。 Liferayサービスを初めてデプロイする場合、または `スケール` プロパティが `LCP.json` ファイルでまだ設定されていない場合は、最初に値を `1` 設定し、 [サービスをデプロイする](../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md#deploy) 必要があります。
 
 ```json
 {
@@ -52,7 +52,7 @@ Liferay DXPインスタンスのノード数を増やすと、プロジェクト
 
 ## デプロイと確認
 
-選択した環境に設定の変更をデプロイして、クラスタリングが有効になっていることを確認します。 詳しくは、 [Liferay Cloud 導入ワークフローの概要](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md) をご覧ください。
+選択した環境に設定の変更をデプロイして、クラスタリングが有効になっていることを確認します。 詳しくは、 [Liferay Cloud 導入ワークフローの概要](../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md) をご覧ください。
 
 クラスタリングが正しく機能しているかどうかを確認するには、Liferay DXPインスタンスのログで、 `JGroupsReceiver` クラスからの `Accepted View` メッセージを確認します。
 

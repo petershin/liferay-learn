@@ -46,7 +46,7 @@ failureThreshold: 3
 successThreshold: 3
 ```
 
-프로브 구성 값(예: `경로` 또는 `포트` 값)이 환경에 맞지 않으면 프로젝트 리포지토리에 있는 서비스의 `LCP.json` 파일에서 예상 값으로 조정합니다. 서비스에 해당하는 디렉토리(예: `liferay/`)에서 이 파일을 찾은 다음 [변경 사항을 테스트 환경에 배포합니다](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md).
+프로브 구성 값(예: `경로` 또는 `포트` 값)이 환경에 맞지 않으면 프로젝트 리포지토리에 있는 서비스의 `LCP.json` 파일에서 예상 값으로 조정합니다. 서비스에 해당하는 디렉토리(예: `liferay/`)에서 이 파일을 찾은 다음 [변경 사항을 테스트 환경에 배포합니다](../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md).
 
 서비스의 `LCP.json` 파일에 아직 프로브 구성이 없는 경우 콘솔에 표시된 구성을 복사하고 변경 사항을 적용하는 동안 JSON 형식으로 변환할 수 있습니다. 예를 들어 `liferay` 서비스에 대한 준비 및 활성 프로브 구성은 다음과 같습니다.
 

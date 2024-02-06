@@ -92,5 +92,5 @@ Liferay Cloud は、 [アプリケーションメトリクス](./manage-and-opti
 
 * [開発要件](./getting-started/development-requirements.md)
 * [Githubリポジトリの構成](./getting-started/configuring-your-github-repository.md)
-* [Liferay Cloud 導入ワークフローの概要](./build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md)
-* [Liferay Cloud Consoleを使った変更のデプロイメント](./build-and-deploy/deploying-changes-via-the-liferay-cloud-console.md)
+* [Liferay Cloud 導入ワークフローの概要](./updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md)
+* [Liferay Cloud Consoleを使った変更のデプロイメント](./updating-services-in-liferay-paas/deploying-changes-via-the-liferay-cloud-console.md)

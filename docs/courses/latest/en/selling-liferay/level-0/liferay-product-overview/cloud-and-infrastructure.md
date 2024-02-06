@@ -12,7 +12,7 @@ Liferay Experience Cloud is Liferay’s SaaS offering that empowers customers to
 ![Client extension examples are available to review in the Liferay Portal repository.](./cloud-and-infrastructure/images/01.png)
 
 * [Introduction to Liferay Cloud Infrastructure](https://learn.liferay.com/w/liferay-cloud/getting-started)
-* [Overview of the Liferay Cloud Deployment Workflow](https://learn.liferay.com/w/liferay-cloud/build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow)
+* [Overview of the Liferay Cloud Deployment Workflow](https://learn.liferay.com/w/liferay-cloud/updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow)
 * [Backup Service Overview](https://learn.liferay.com/w/liferay-cloud/platform-services/backup-service/backup-service-overview)
 
 ## What's Next

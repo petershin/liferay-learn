@@ -120,6 +120,6 @@ Next: [configure the Liferay service to auto-scale](./configuring-auto-scaling.m
 
 * [Setting Up Clustering in Liferay Cloud](https://learn.liferay.com/w/liferay-cloud/using-the-liferay-dxp-service/setting-up-clustering-in-liferay-cloud)
 * [Configuring the Liferay Service](https://learn.liferay.com/w/liferay-cloud/using-the-liferay-dxp-service/configuring-the-liferay-dxp-service)
-* [Deploying Changes via the Liferay Cloud Console](https://learn.liferay.com/w/liferay-cloud/build-and-deploy/deploying-changes-via-the-liferay-cloud-console)
-* [Deploying Changes via the CLI Tool](https://learn.liferay.com/w/liferay-cloud/build-and-deploy/deploying-changes-via-the-cli-tool)
+* [Deploying Changes via the Liferay Cloud Console](https://learn.liferay.com/w/liferay-cloud/updating-services-in-liferay-paas/deploying-changes-via-the-liferay-cloud-console)
+* [Deploying Changes via the CLI Tool](https://learn.liferay.com/w/liferay-cloud/updating-services-in-liferay-paas/deploying-changes-via-the-cli-tool)
 * [Liferay Service Environment Variables](https://learn.liferay.com/w/liferay-cloud/using-the-liferay-dxp-service/liferay-service-environment-variables)

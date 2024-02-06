@@ -51,7 +51,7 @@ For more information on connecting to a VPN, see [VPN Connection](..//configurin
 
 ### Deploy the Latest Stable Build from Production to the DR Environment
 
-Now you must deploy the latest stable build on Production to the DR environment. Follow the same steps outlined in [Overview of the Liferay Cloud Deployment Workflow](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md).
+Now you must deploy the latest stable build on Production to the DR environment. Follow the same steps outlined in [Overview of the Liferay Cloud Deployment Workflow](../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md).
 
 ### Set Up Automated Backup Restores to Disaster Recovery
 

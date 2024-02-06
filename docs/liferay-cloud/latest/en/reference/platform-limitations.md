@@ -174,9 +174,9 @@ These limitations apply to file storage for multiple services:
 
 **Ephemeral Storage**: Ephemeral Storage is used for all files not stored in volumes. Ephemeral Storage is located on the host node's internal storage, and it is shared between all containers running on that node. If a container requests more space than the host node has available, then the container is moved to another node. The hosts disks have a capacity of 250 GB.
 
-**Sharing Data Between Services**: Services with the StatefulSet [Deployment Type](../build-and-deploy/understanding-deployment-types.md) cannot share data with other services.
+**Sharing Data Between Services**: Services with the StatefulSet [Deployment Type](../updating-services-in-liferay-paas/understanding-deployment-types.md) cannot share data with other services.
 
-**StatefulSet Storage Size**: You must make a Support ticket to add storage for services with the StatefulSet [Deployment Type](../build-and-deploy/understanding-deployment-types.md). The storage size of StatefulSet services cannot be reduced once it is increased.
+**StatefulSet Storage Size**: You must make a Support ticket to add storage for services with the StatefulSet [Deployment Type](../updating-services-in-liferay-paas/understanding-deployment-types.md). The storage size of StatefulSet services cannot be reduced once it is increased.
 
 ## Network Configuration
 

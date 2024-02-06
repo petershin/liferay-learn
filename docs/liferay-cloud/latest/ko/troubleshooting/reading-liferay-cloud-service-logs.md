@@ -34,7 +34,7 @@ Liferay Cloud의 많은 로그에는 이 메시지가 서비스 출력에서 직
 
 ![모든 인스턴스를 보려면 인스턴스 드롭다운 메뉴를 클릭하십시오.](./reading-liferay-cloud-service-logs/images/01.png)
 
-인스턴스 ID의 형식은 서비스가 구성된 배포 유형(배포 또는 상태 저장 세트)에 따라 다릅니다. 자세한 내용은 [배포 유형 이해](../build-and-deploy/understanding-deployment-types.md) 참조하십시오.
+인스턴스 ID의 형식은 서비스가 구성된 배포 유형(배포 또는 상태 저장 세트)에 따라 다릅니다. 자세한 내용은 [배포 유형 이해](../updating-services-in-liferay-paas/understanding-deployment-types.md) 참조하십시오.
 
 ### 배포 유형 로그의 인스턴스 ID
 
@@ -66,7 +66,7 @@ Jun 29 07:44:44.676 build-214 [search-0] #  - Creating and Starting rollup jobs 
 
 * 반복(무작위)**노드 ID** : 이 예에서는 `0`입니다. 이 ID는 새 버전의 서비스를 배포한 후에도 동일하게 유지됩니다.
 
-상태 저장 세트 유형 서비스의 전체 인스턴스 ID는 서비스의 각 노드에서 항상 동일하게 유지됩니다. 이렇게 하면 서비스가 재배포된 후에도 동일한 인스턴스 ID를 안정적으로 사용하여 동일한 [볼륨](../build-and-deploy/configuring-persistent-file-storage-volumes.md)을 가진 클러스터의 노드를 식별할 수 있습니다.
+상태 저장 세트 유형 서비스의 전체 인스턴스 ID는 서비스의 각 노드에서 항상 동일하게 유지됩니다. 이렇게 하면 서비스가 재배포된 후에도 동일한 인스턴스 ID를 안정적으로 사용하여 동일한 [볼륨](../updating-services-in-liferay-paas/configuring-persistent-file-storage-volumes.md)을 가진 클러스터의 노드를 식별할 수 있습니다.
 
 ## Liferay Cloud Console을 통해 로그에 액세스
 

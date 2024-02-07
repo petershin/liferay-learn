@@ -14,6 +14,9 @@ You can configure Liferay Commerce to send email notifications for a variety of 
 
 To add a new notification type, you must implement the `CommerceNotificationType` interface. See [Sending Emails](../../store-management/sending-emails.md) to learn how to set up a Notification Template and view the OOTB types available.
 
+!!! warning
+    This tutorial uses the Minium Demo site initializer.
+
 ## Overview of a Notification Type
 
 Notifications are scoped to a Channel. You can create a new Notification Template under Channel settings, and it gets triggered based on the notification type.
@@ -73,7 +76,7 @@ Then, follow these steps:
 
    **Currency:** USD
 
-   **Type:** Site 
+   **Type:** Site
 
 1. Click *Add*. See [Introduction to Channels](../../store-management/channels/introduction-to-channels.md) for more information on channels.
 

@@ -16,7 +16,6 @@ import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
 
 @Component(
-	immediate = true,
 	property = "commerce.order.rule.entry.type.jsp.contributor.key=x9k1-minimum-quantity-order-rule",
 	service = COREntryTypeJSPContributor.class
 )

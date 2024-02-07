@@ -16,7 +16,6 @@ import java.util.Locale;
 import org.osgi.service.component.annotations.Component;
 
 @Component(
-	immediate = true,
 	property = {
 		"commerce.order.rule.entry.type.key=x9k1-minimum-quantity-order-rule",
 		"commerce.order.rule.entry.type.order:Integer=1"

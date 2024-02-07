@@ -12,7 +12,7 @@ import com.liferay.portal.kernel.model.ModelListener;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
 
-@Component(immediate = true, service = ModelListener.class)
+@Component(service = ModelListener.class)
 public class G2F3CommerceShipmentModelListener
 	extends BaseModelListener<CommerceShipment> {
 

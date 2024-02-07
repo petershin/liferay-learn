@@ -175,7 +175,7 @@ Once the endpoint is created, select the *Configuration* tab for additional sett
 
    The request body must contain all mandatory properties from the main object, and it can only contain properties from the main object.
 
-   If the schema is not selected, the API endpoint doesn't work, and it doesn't show in the API application explorer page.
+   If the schema is not selected, the API endpoint won't work, and it won't show in the API application explorer page.
 
    !!! warning
        You can use relationship-type properties in your schema to define relationships between entities. The created entities can be related to existing object entries through their ID.
@@ -189,6 +189,78 @@ Once the endpoint is created, select the *Configuration* tab for additional sett
    If you don't select a Response Body Schema, an empty response is returned when the API is executed successfully.
 
 Once the endpoint is created, you can see it on your API explorer page `http://localhost:8080/o/api`.
+
+### Creating an Endpoint Using the POST Method Through an API Call
+
+If you are creating the POST endpoint through API calls, keep these points in mind:
+
+- POST endpoints must have `singleElement` as their retrieve type. This ensures that only the information related to the posted entry is requested.
+
+- Although you are using `singleElement` as retrieve type, if you try to define a path parameter (e.g. `/api/users/{userId}` where `{userId}` is the path parameter) during the API call to create a POST endpoint, an error will occur.
+
+- If you try to create a POST endpoint without a Request Body Schema, the API endpoint won't work.
+
+Here's an example of a CURL command you can use to create a POST endpoint:
+
+```json
+curl -X 'POST' \
+  'http://localhost:8080/o/headless-builder/endpoints/' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -u 'test@liferay.com:learn' \
+  -d '{
+  "externalReferenceCode": "post-boss-endpoint-erc",
+  "description": "This is an endpoint to post a Boss entry",
+  "httpMethod": "post",
+  "name": "Post Boss",
+  "path": "/boss",
+  "r_apiApplicationToAPIEndpoints_c_apiApplicationERC": "companies-manager-erc",
+  "r_requestAPISchemaToAPIEndpoints_c_apiSchemaERC": "boss-schema-erc",
+  "r_responseAPISchemaToAPIEndpoints_c_apiSchemaERC": "boss-schema-erc",
+  "retrieveType": "singleElement",
+  "scope": "company"
+}'
+```
+
+Breaking it down:
+
+```json
+curl -X 'POST' \
+  'http://localhost:8080/o/headless-builder/endpoints/' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -u 'test@liferay.com:learn' \
+```
+
+This section of the command specifies the HTTP request method as POST, defines the URL to which the POST request is being sent (http://localhost:8080/o/headless-builder/endpoints/), sets the Accept and the Content-Type header for the request to JSON format, and includes basic authentication with the specified user and password (-u 'test@liferay.com:learn').
+
+```json
+  -d '{
+  "externalReferenceCode": "post-boss-endpoint-erc",
+  "description": "This is an endpoint to post a Boss entry",
+  "httpMethod": "post",
+  "name": "Post Boss",
+  "path": "/boss",
+  "r_apiApplicationToAPIEndpoints_c_apiApplicationERC": "company-manager-erc",
+  "r_requestAPISchemaToAPIEndpoints_c_apiSchemaERC": "boss-schema-erc",
+  "r_responseAPISchemaToAPIEndpoints_c_apiSchemaERC": "boss-schema-erc",
+  "retrieveType": "singleElement",
+  "scope": "company"
+}'
+```
+
+This section specifies the data sent in the request body. In this case, a JSON payload containing different properties:
+
+- `"externalReferenceCode"`: Defines the endpoint's external reference code (ERC).
+- `"description"`: Defines the endpoint's description.
+- `"httpMethod"`: Defines the endpoint's Method.
+- `"name"`: Define the endpoint's Name.
+- `"path"`: Defines the endpoint's Path.
+- `"r_apiApplicationToAPIEndpoints_c_apiApplicationERC"`: Points to an ERC to specify the API Application where the endpoint is added.
+- `"r_requestAPISchemaToAPIEndpoints_c_apiSchemaERC"`: Points to an ERC to specify the schema used for the endpoint's request body.
+- `"r_responseAPISchemaToAPIEndpoints_c_apiSchemaERC"`: Points to an ERC to specify the schema used for the endpoint's response body.
+- `"retrieveType"`: Defines the endpoint's Retrieve Type.
+- `"scope"`: Defines the endpoint's scope.
 
 ## Creating and Managing Schemas
 

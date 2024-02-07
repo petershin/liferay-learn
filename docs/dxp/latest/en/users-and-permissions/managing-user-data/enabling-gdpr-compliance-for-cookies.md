@@ -10,9 +10,13 @@ You can ensure GDPR compliance for you cookies using Liferay's configuration int
 
 1. To set your handling preference, check the *Enabled* checkbox. With the *Explicit Cookie Consent Mode* checked, no cookies are set until the user explicitly agrees to cookie usages. If unchecked, all cookies are set until the user opts out of them.
 
-1. Click *Update*. Two new options appear in the left menu: *Banner* and *Consent Panel*.
+1. Click *Update*.
 
-   ![Two new options appear in the left menu.](./enabling-gdpr-compliance-for-cookies/images/02.png)
+   ![The default cookie banner appears at the bottom of the page.](./enabling-gdpr-compliance-for-cookies/images/02.png)
+
+1. Two new options appear in the left menu: *Banner* and *Consent Panel*.
+
+   ![Two new options appear in the left menu.](./enabling-gdpr-compliance-for-cookies/images/03.png)
 
    !!! note
 
@@ -20,7 +24,7 @@ You can ensure GDPR compliance for you cookies using Liferay's configuration int
 
 1. Go to the *Banner* tab to find customizable options for the cookie banner.
 
-   ![Find customizable options for your cookie banner under the Banner tab.](./enabling-gdpr-compliance-for-cookies/images/03.png)
+   ![Find customizable options for your cookie banner under the Banner tab.](./enabling-gdpr-compliance-for-cookies/images/04.png)
 
    - **Content**: Add the information included in your cookie policy, like the types of cookies used, their purposes, how users can manage or disable cookies, and any other relevant information regarding data collection, tracking, and user privacy.
 
@@ -34,7 +38,7 @@ You can ensure GDPR compliance for you cookies using Liferay's configuration int
 
 1. Go to the *Consent Panel* tab to find customizable options for the consent panel.
 
-   ![Find customizable options for the consent panel under the Consent Panel tab.](./enabling-gdpr-compliance-for-cookies/images/04.png)
+   ![Find customizable options for the consent panel under the Consent Panel tab.](./enabling-gdpr-compliance-for-cookies/images/05.png)
 
    - **Title**: Add your a title to your consent panel.
 

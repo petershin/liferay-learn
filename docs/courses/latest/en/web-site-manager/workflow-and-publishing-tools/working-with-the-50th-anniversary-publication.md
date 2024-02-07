@@ -42,7 +42,7 @@ The publication template is in place for Clarity's special events. Now the publi
 
 1. Click _Submit for Workflow_.
 
-1. Let's see what this looks like in the ongoing publication. Log in again with Preston Palmer, the publication administrator. Open the _Review Changes_ screen from the publications bar.
+1. Check to see what this looks like in the ongoing publication. Log in again with Preston Palmer, the publication administrator. Open the _Review Changes_ screen from the publications bar.
 
    ![The web content for the 50th anniversary event is pending in the workflow.](./working-with-the-50th-anniversary-publication/images/03.png)
 

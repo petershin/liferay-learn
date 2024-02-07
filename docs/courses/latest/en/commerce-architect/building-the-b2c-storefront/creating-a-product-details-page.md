@@ -3,7 +3,7 @@ uuid: 22ee7926-f421-4b61-8e9a-c93d6bd41791
 ---
 # Creating a Product Details Page
 
-The product details page displays all the information about a selected product. So far, you added a featured products grid and also a catalog page, but you cannot select any of these products to view more details about them. 
+The product details page displays all the information about a selected product. So far, you've only added the shop page containing the product catalog, but you cannot select any of these products to view more details about them. 
 
 ## Creating a New Page
 
@@ -15,39 +15,23 @@ The product details page displays all the information about a selected product. 
 
 1. Enter the name as `Product Details` and click *Add*. This opens the new page in edit mode.
 
-## Applying the CSS Client Extension
-
-You must now configure the created page in Liferay to use your deployed client extension:
-
-1. Open the product details page and click *Edit* (![Edit](../../images/icon-edit.png)) at the top.
-
-1. In the sidebar, navigate to the *Page Design Options* menu (![Page Design Options icon](../../images/icon-format.png)) and click the *Configuration* (![Configuration](../../images/icon-format.png)) icon at the top of the menu.
-
-1. In the CSS Client Extensions section toward the bottom of the page, click *Add CSS Client Extensions*.
-
-1. Select your CSS client extension from the pop-up modal and click *Add*.
-
-1. Click *Save*.
-
 ## Customizing the Product Details Page
 
 1. Drag and drop a container on the page. Change the Container Width to *Fixed Width*.
 
-1. In the Advanced section, give it the CSS class `p-3`.
+1. Go to the *Styles* tab and in the Spacing settings, choose *Spacer 5* for the margin on the top of the element.
 
 1. Drag and drop the *Product Details* widget inside the fixed width container.
 
-1. Drag and drop a *Heading* fragment and a *Separator* fragment below the Product Details widget
+1. Drag and drop a Heading fragment below the Product Details widget.
 
 1. Set the header title to *Related Products*.
 
-1. Set the Heading Level to *H3*.
+1. Go to the *Styles* tab and in the Spacing settings, choose *Spacer 4* for the margin on the top and bottom of the element.
 
-1. In the Advanced section of the header fragment, add the `text-center`, `mb-1`, and `mt-5` CSS classes. 
+1. In the Text settings, set the text alignment to center.
 
-1. Click on the separator and go to the *Advanced* section. Add the `section-text-line` and `mb-5` CSS classes.
-
-1. Drag and drop the *Product Publisher* widget inside the fixed width container.
+1. Drag and drop the *Product Publisher* widget inside the fixed width container below the heading fragment.
 
 1. Click *Actions* (![Actions](../../images/icon-actions.png)) to customize the widget.
 

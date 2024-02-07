@@ -15,35 +15,19 @@ Before you can check out and submit an order, you must have a checkout page. Thi
 
 1. Enter the name as `Checkout` and click *Add*. This opens the new page in edit mode.
 
-## Applying the CSS Client Extension
-
-You must now configure the created page to use your deployed client extension:
-
-1. Open the Checkout page and click *Edit* (![Edit](../../images/icon-edit.png)) at the top.
-
-1. In the sidebar, navigate to the *Page Design Options* menu (![Page Design Options icon](../../images/icon-format.png)) and click the *Configuration* (![Configuration](../../images/icon-format.png)) icon at the top of the menu.
-
-1. In the CSS Client Extensions section toward the bottom of the page, click *Add CSS Client Extensions*.
-
-1. Select your CSS client extension from the pop-up modal and click *Add*.
-
-1. Click *Save*.
-
 ## Customizing the Checkout Page
-
-1. Open the Checkout page in edit mode.
 
 1. Drag and drop a container on the page. Change the Container Width to *Fixed Width*.
 
-1. In the Advanced section, give it the CSS class `p-3`.
+1. Go to the *Styles* tab and in the Spacing settings, choose *Spacer 5* for the margin on the top of the element.
 
-1. Drag and drop a *Heading* fragment and a *Separator* fragment below it.
+1. Drag and drop a Heading fragment inside the fixed width container.
 
-1. Set the header title to `Checkout` and the Heading Level to *H3*.
+1. Set the header title to *Checkout*.
 
-1. In the Advanced section of the header fragment, add the `text-center` and `mb-1` CSS classes. 
+1. Go to the *Styles* tab and in the Spacing settings, choose *Spacer 4* for the margin at the bottom of the element.
 
-1. Click on the separator fragment and go to the Advanced section. Add the `section-text-line` and `mb-5` CSS classes.
+1. In the Text settings, set the text alignment to center.
 
 1. Drag and drop the *Checkout* widget inside the fixed width container.
 
@@ -53,11 +37,11 @@ The checkout page is now ready to use.
 
 Next, you must add the coupon code widget to the Checkout page so that customers can enter discount codes during checkout. 
 
-1. Open the Checkout page in edit mode.
-
 1. Drag and drop a *Coupon Code* widget below the checkout title.
 
-1. In the Advanced section of the header fragment, add the `border`, `border-3`, `rounder`, `p-4`, `mb-5`, and `text-center` CSS classes.
+1. Go to the *Styles* tab and in the Spacing settings, choose *Spacer 4* for the padding on the top, left, right, and bottom of the element.
+
+1. Choose *Spacer 4* for the margin at the bottom of the element.
 
 1. Click *Publish*.
 
@@ -80,8 +64,6 @@ Once you have created the Orders page and Checkout page, you can add the mini ca
    The module for the logo and the nav links should be the same size as before. The search module is one size less to accommodate the mini cart fragment.
 
 1. Drag and drop the *Mini Cart* fragment inside the last module of the grid.
-
-1. In the Advanced section of the mini cart fragment, add the `mb-5` CSS class. 
 
 1. Click *Publish Master*.
 

@@ -82,7 +82,7 @@ In this section, we will review the example we deployed. First, we will annotate
 
 ```java
 @Component(
-    immediate = true, property = "commerce.exchange.provider.key=f2y1",
+    property = "commerce.exchange.provider.key=f2y1",
     service = ExchangeRateProvider.class
 )
 public class F2Y1ExchangeRateProvider implements ExchangeRateProvider {

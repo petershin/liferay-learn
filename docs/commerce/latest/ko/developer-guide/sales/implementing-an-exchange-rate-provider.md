@@ -73,7 +73,7 @@ Liferay Commerce 2.1 및 이전 버전에서는 *제어판* → *상거래* → 
 
 ```java
 @Component(
-    immediate = true, property = "commerce.exchange.provider.key=f2y1",
+    property = "commerce.exchange.provider.key=f2y1",
     service = ExchangeRateProvider.class
 )
 public class F2Y1ExchangeRateProvider implements ExchangeRateProvider {

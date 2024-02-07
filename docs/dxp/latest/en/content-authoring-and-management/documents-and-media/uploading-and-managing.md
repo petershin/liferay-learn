@@ -3,6 +3,7 @@ toc:
   - ./uploading-and-managing/uploading-files.md
   - ./uploading-and-managing/using-folders.md
   - ./uploading-and-managing/managing-files.md
+  - ./uploading-and-managing/copying-folders-and-documents.md
   - ./uploading-and-managing/deleting-files.md
   - ./uploading-and-managing/editing-images.md
   - ./uploading-and-managing/using-file-expiration-and-review-dates.md
@@ -27,6 +28,7 @@ uuid: b5b19386-5db0-4478-bf64-af9308f5be08
 uploading-and-managing/uploading-files.md
 uploading-and-managing/using-folders.md
 uploading-and-managing/managing-files.md
+uploading-and-managing/copying-folders-and-documents.md
 uploading-and-managing/deleting-files.md
 uploading-and-managing/editing-images.md
 uploading-and-managing/using-file-expiration-and-review-dates.md
@@ -40,6 +42,7 @@ uploading-and-managing/managing-metadata.md
 - [Uploading Files](./uploading-and-managing/uploading-files.md)
 - [Using Folders](./uploading-and-managing/using-folders.md)
 - [Managing Files](./uploading-and-managing/managing-files.md)
+- [Copying Folders and Documents](./uploading-and-managing/copying-folders-and-documents.md)
 - [Deleting Files](./uploading-and-managing/deleting-files.md)
 - [Editing Images](./uploading-and-managing/editing-images.md)
 - [Using File Expiration and Review Dates](./uploading-and-managing/using-file-expiration-and-review-dates.md)

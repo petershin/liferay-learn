@@ -42,9 +42,9 @@ To change the default policy,
 
 **Password Changes:** Allow or prevent password changes, control the expiry of passwords, and set a time limit on the validity of password reset links. You will find the following customizable options:
 
-* *Changeable* {bdg-secondary}`Liferay DXP 2023.Q4+/Portal 7.4 GA92+`: If checked, the user can change their password. If unchecked, the Password navigation tab won't be visible to the user via account settings and the Users and Organizations application.
-* *Change Required*: If checked, a user is required to change their password when they first log in.
-* *Minimum Age*: Determines how long a user must wait before changing their password again.
+* *Changeable* {bdg-secondary}`Liferay DXP 2023.Q4+/Portal 7.4 GA92+`: If checked, users can change their passwords. If unchecked, the Password navigation tab isn't visible to the user via Account Settings and the Users and Organizations application.
+* *Change Required*: If checked, users must change their passwords when they first log in.
+* *Minimum Age*: Determines how long users must wait before changing their passwords again.
 * *Reset Ticket Max Age*: Determines the validity of a password reset link.
 
 **Password Syntax Checking:** Require a certain syntax when choosing a password. You can disallow dictionary words, set a minimum length, and more in this section.

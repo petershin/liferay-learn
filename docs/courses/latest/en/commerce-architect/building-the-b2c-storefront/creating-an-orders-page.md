@@ -3,7 +3,7 @@ uuid: 310d20e4-3f8c-40ee-916e-366883cb627a
 ---
 # Creating an Orders Page
 
-The Orders page displays a customer's open orders or placed orders. You can select pending orders and continue to check out or delete them completely. You can select a placed order to view more details about the order. 
+The Orders page displays a customer's open orders and placed orders. You can select pending orders and continue to check out or delete them completely. You can select a placed order to view more details about a specific order. 
 
 ## Creating a New Page
 
@@ -15,45 +15,31 @@ The Orders page displays a customer's open orders or placed orders. You can sele
 
 1. Enter the name as `Orders` and click *Add*. This opens the new page in edit mode.
 
-## Applying the CSS Client Extension
-
-You must now configure the created page to use your deployed client extension:
-
-1. Open the Orders page and click *Edit* (![Edit](../../images/icon-edit.png)) at the top.
-
-1. In the sidebar, navigate to the *Page Design Options* menu (![Page Design Options icon](../../images/icon-format.png)) and click the *Configuration* (![Configuration](../../images/icon-format.png)) icon at the top of the menu.
-
-1. In the CSS Client Extensions section toward the bottom of the page, click *Add CSS Client Extensions*.
-
-1. Select your CSS client extension from the pop-up modal and click *Add*.
-
-1. Click *Save*.
-
 ## Customizing the Orders Page
 
 1. Drag and drop a container on the page. Change the Container Width to *Fixed Width*.
 
-1. In the Advanced section, give it the CSS class `p-3`.
+1. Go to the *Styles* tab and in the Spacing settings, choose *Spacer 5* for the margin on the top of the element.
 
-1. Drag and drop a heading fragment and a separator fragment below it.
+1. Drag and drop a heading fragment below it.
 
-1. Set the header title to `Placed Orders` and the Heading Level to *H3*.
+1. Set the header title to *Pending Orders*.
 
-1. In the Advanced section of the header fragment, add the `text-center` and `mb-1` CSS classes. 
+1. Go to the *Styles* tab and in the Spacing settings, choose *Spacer 4* for the margin at the bottom of the element.
 
-1. Click on the separator and go to the Advanced section. Add the `section-text-line` and `mb-5` CSS classes.
+1. In the Text settings, set the text alignment to center.
 
-1. Drag and drop the placed orders widget inside the fixed width container.
+1. Drag and drop the Open Carts widget inside the fixed width container below the heading fragment.
 
-1. Drag and drop a heading fragment and a separator fragment below the placed orders widget.
+1. Drag and drop another heading fragment below the open carts widget.
 
-1. Set the header title to `Pending Orders` and the Heading Level to *H3*.
+1. Set the header title to *Placed Orders*.
 
-1. In the Advanced section of the header fragment, add the `text-center`, `mb-1`, and `mt-5` CSS classes. 
+1. Go to the *Styles* tab and in the Spacing settings, choose *Spacer 4* for the margin on the top and bottom of the element.
 
-1. Click the separator and go to the Advanced section. Add the `section-text-line` and `mb-5` CSS classes.
+1. In the Text settings, set the text alignment to center.
 
-1. Drag and drop the open carts widget inside the fixed width container.
+1. Drag and drop the Placed Orders widget inside the fixed width container below the heading fragment.
 
 ![The orders page contains two sections displayed placed orders and pending orders.](./creating-an-orders-page/images/01.png)
 

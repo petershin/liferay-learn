@@ -1,7 +1,6 @@
 ---
 toc:
-  - ./building-the-b2c-storefront/creating-the-b2c-homepage.md
-  - ./building-the-b2c-storefront/creating-a-catalog-page.md
+  - ./building-the-b2c-storefront/creating-the-shop-page.md
   - ./building-the-b2c-storefront/creating-a-product-details-page.md
   - ./building-the-b2c-storefront/creating-an-orders-page.md
   - ./building-the-b2c-storefront/creating-a-checkout-page.md
@@ -10,26 +9,26 @@ uuid: 7a8e616c-8124-48fc-9376-da7114288c8e
 ---
 # Building the B2C Storefront
 
-Now that you've created and configured catalogs, channels, products, and warehouses, you’re all set to create and design the storefront. Preston Palmer, the site administrator, needs your help in building out the B2C storefront so Delectable Bonsai’s consumers can view products, place orders, redeem promotions, and more. 
+Now that you've created and configured catalogs, channels, products, and warehouses, you’re all set to create and design the storefront. Preston Palmer, the site administrator, needs your help in building out the B2C storefront so Clarity’s consumers can view products, place orders, redeem promotions, and more. 
 
-You’ll use the out-of-the-box fragments and widgets to build the site and use the page editor and a client extension to style the pages. 
+You’ll use the out-of-the-box fragments and widgets to build the site and use the page editor to style the content pages. 
 
-You’ll start by building the home page of the B2C store. Next, you’ll build a catalog page that displays all the available products with filters that lets you dial down on the exact product you want. 
+* A [content page](https://learn.liferay.com/en/w/dxp/site-building/creating-pages/using-content-pages) is one of the several available page types in Liferay. It's the default and the most used type. Content pages provide a convenient user interface for managing and editing page content and design. You'll design Clarity's pages through fragments and widgets added to content pages.
+* [Fragments](https://learn.liferay.com/en/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments) are reusable snippets of HTML, JavaScript (if necessary), and CSS. You can use them to add content and improve the look-and-feel of the pages. You'll use out-of-the-box fragments to build the Clarity site.
+* [Widgets](https://learn.liferay.com/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-widgets) are full-blown web applications that provide a way to create customized web experiences for users.
 
-Next, you’ll create a product details page that displays all the information about a selected product. 
+![The shop page is a combination of out-of-the-box widgets and fragments.](./building-the-b2c-storefront/images/01.png)
 
-After that, you’ll create the orders page that holds information about pending and placed orders. 
+## Shopping Experience
 
-Then, you’ll create a promotion to offer a temporary price reduction on certain products to customers. 
+You’ll start by building the shop page that displays all the available products with facets. The facets let you dial down on the exact product you want. These facets auto-populate data based on the product information you've added.
 
-Lastly, you’ll enable guest checkout and complete the purchase of one product utilizing all the features you’ve built. 
+Once your customer selects a product, they're directed to the product details page. This page contains all the relevant information about the product. From here, the customer can choose to go back to viewing other products or proceed to buying the selected one. To buy a product, they must add it to their cart. After adding it to their cart, they must checkout.
 
-<!-- This is good; it again, though, should be fleshed out with more details. What's a fragment and a widget? Offer a short linked description. Show the page editor. What's a client extension? Provide a definition with a link. What's the flow of the shopping experience you're building? Product -> Details -> Orders? How do promotions work? What's the difference between guest checkout and authenticated checkout? Do you still have access to the guest's information (address, email) without an account? How might we use that information later when marketing/advertising? 
+When they checkout, they're redirected to the [checkout page](https://learn.liferay.com/w/commerce/creating-store-content/commerce-storefront-pages/checkout). The checkout flow contains several steps. The customer can enter their billing and shipping addresses, choose a preferred shipping option, confirm their order details, and make the payment.
 
-Remember that your student readers may be completely new to this technology, and so need these things defined for them so they can understand concepts in context. 
-
--Rich -->
+After purchasing an item, they can view details about the order on the orders page. The orders page displays both [pending](https://learn.liferay.com/w/commerce/creating-store-content/commerce-storefront-pages/pending-orders) and [placed orders](https://learn.liferay.com/w/commerce/creating-store-content/commerce-storefront-pages/placed-orders). Pending orders are those that haven't been checked out yet. The store also has a guest checkout feature that lets users purchase products without creating an account. They only need to provide an email address and the shipping/billing addresses to ship the order to. 
 
 Ready? 
 
-[Let's Go!](./building-the-b2c-storefront/creating-the-b2c-homepage.md)
+[Let's Go!](./building-the-b2c-storefront/creating-the-shop-page.md)

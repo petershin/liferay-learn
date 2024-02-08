@@ -38,7 +38,7 @@ Install the three prerequisites for developing client extensions:
 
     You can copy the client extension projects (in the `client-extensions/` directory) into your own workspace or use the sample workspace directly.
 
-1. If you are using Liferay Experience Cloud (LXC), you must have the [`lcp` CLI tool](https://learn.liferay.com/en/w/liferay-cloud/reference/command-line-tool).
+1. If you are using Liferay SaaS, you must have the [`lcp` CLI tool](https://learn.liferay.com/en/w/liferay-cloud/reference/command-line-tool).
 
 ## Client Extension Projects
 
@@ -108,7 +108,7 @@ The `assemble` array has these properties:
 
 * `into`: Specify where in the resulting LUFFA to copy the matching resources.
 
-   Static resources for front-end client extensions must be copied into the `static/` directory. Liferay serves these as static resources in self-hosted instances, or from containers in LXC.
+   Static resources for front-end client extensions must be copied into the `static/` directory. Liferay serves these as static resources in self-hosted instances, or from containers in Liferay SaaS.
 
    JSON resources for batch client extensions must be copied into the `batch/` directory.
 
@@ -162,13 +162,13 @@ Client extensions are built into deployable `.zip` archives. Each client extensi
 
 Deploy client extensions by placing the `.zip` files in the correct location for your Liferay installation. The exact commands you'll use depend on how your Liferay instance is hosted.
 
-### Deploying to LXC
+### Deploying to Liferay SaaS
 
 ```{warning}
-This method does not allow you to deploy client extensions to self-managed instances (LXC-SM).
+This method does not allow you to deploy client extensions to Liferay PaaS.
 ```
 
-To deploy client extensions for LXC,
+To deploy client extensions for Liferay SaaS,
 
 1. Go to your workspace's `client-extensions/` folder and run
 
@@ -184,7 +184,7 @@ To deploy client extensions for LXC,
    lcp deploy --extension [extension-zip-file]
    ```
 
-   When prompted, select a project and the deployment environment. The zip files are uploaded to your LXC project once the command completes.
+   When prompted, select a project and the deployment environment. The zip files are uploaded to your Liferay SaaS project once the command completes.
 
 ### Deploying to a Self-Hosted Liferay Instance
 

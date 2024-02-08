@@ -31,7 +31,7 @@ Learn about the different ways to configure a single sign-on (SSO) service and a
 :::
 
 :::{grid-item-card}  Integrating Okta
-:link: ./module-4-identity-management-sso/integrating-okta-sso.md
+:link: ./module-4-identity-management-sso/integrating-okta-and-sso.md
 
 See how to implement Okta single sign-on service with Liferay.
 :::

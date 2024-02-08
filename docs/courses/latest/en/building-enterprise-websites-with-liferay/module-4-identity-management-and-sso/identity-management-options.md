@@ -3,7 +3,7 @@ uuid: 9bf15d62-c0a2-48af-9cb6-9197fca3b82c
 ---
 # Identity Management Options
 
-As you continue to set up Liferay, it is important to understand the features that are available in Liferay that serve as the gatekeepers. At a high-level, you want to allow authorized users into Liferay, while keeping unauthorized users out. You do this by using Liferay's different identity management tools. Once users are allowed in, they will also be associated with different roles and permissions, a topic that will be covered in the next module.
+As you continue to set up Liferay, it is important to understand the features available in Liferay that serve as gatekeepers. At a high-level, you want to allow authorized users into Liferay, while keeping unauthorized users out. You do this by using Liferay's different identity management tools. Once users are allowed in, they will also be associated with different roles and permissions, a topic that will be covered in the next module.
 
 ## Standard Username and Password
 
@@ -13,7 +13,7 @@ Customize your [password policy](https://learn.liferay.com/w/dxp/users-and-permi
 
 ## Multi-factor Authentication
 
-Increase login security for Liferay with the use of (MFA) multi-factor authentication. In addition to a password, with MFA, a user is required to provide Liferay with a separate verification. By default, Liferay offers different MFA options:
+Increase login security for Liferay with the use of multi-factor authentication (MFA). In addition to a password, with MFA, a user is required to provide Liferay with a separate verification. By default, Liferay offers different MFA options:
 
 * Email-based one-time password (OTP)
 * IP address checker
@@ -28,7 +28,8 @@ Liferay can be configured to send [email-based one-time passwords](https://learn
 
 ![Enable email-based one-time passwords.](./identity-management-options/images/01.png)
 
-Note, for this feature, Liferay must be [configured with your email service provider](https://learn.liferay.com/web/guest/w/dxp/installation-and-upgrades/setting-up-liferay/configuring-mail).
+!!! note
+   For this feature, Liferay must be [configured with your email service provider](https://learn.liferay.com/web/guest/w/dxp/installation-and-upgrades/setting-up-liferay/configuring-mail).
 
 ### IP Address Checker
 

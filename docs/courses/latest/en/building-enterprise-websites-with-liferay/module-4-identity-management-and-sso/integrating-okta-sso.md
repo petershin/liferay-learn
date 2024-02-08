@@ -6,39 +6,40 @@ uuid: ba75bce7-ccf4-4c5a-bffe-7c247434dac2
 
 Clarity wants to use Okta, a Security Assertion Markup Language (SAML) based authentication single sign-on service with Liferay. They appreciate the convenience of one login for not only Liferay, but the other services they need logins for. In addition to authentication, they are relying on Okta to serve as their identity provider (IdP) and sync all user identities with Liferay. Continue reading see the basic steps to set up your Liferay DXP instance as the Service Provider (SP), and Okta as the Identity Provider (IdP).
 
+!!! note
+    This tutorial requires you to have an existing Okta account to test with.
+
 ## Okta Configuration
 
-1. Log in to [Okta Dev](https://developer.okta.com/login/) and navigate to Admin > Add Application (Shortcuts in the right menu) > Create New App. 
+1. Log in to [Okta Dev](https://developer.okta.com/login/) and navigate to _Applications_ &rarr; _Add Application_ (Shortcuts in the right menu) &rarr; _Create App Integration_. 
 
-    *Note, this tutorial requires you to have an existing account with Okta to test with.
+2. Select SAML 2.0.
 
-1. Select SAML 2.0.
+3. Enter *liferaysaml* as the name and click next.
 
-1. Enter *liferaysaml* as the name and click next.
-
-1. Enter the following fields:
-    - Single sign-on URL: *http://localhost:8080/c/portal/saml/acs*
+4. Enter the following fields:
+    - Single sign-on URL: *http://[your_lifray_saas_environment]:8080/c/portal/saml/acs*
     - Audience URI (SP Entity ID): *samlspdemo*
     - Name ID format: *EmailAddress*
     - Application username: *Email*
 
     ![Configuring SAML Integration](./integrating-okta-sso/images/01.png)
 
-1. Select Attribute Statements
+5. Select Attribute Statements
     - `screenName (Unspecified) = user.firstName`
     - `firstName (Unspecified) = user.firstName`
     - `lastName (Unspecified) = user.lastName`
     - `emailAddress (Unspecified) = user.email`
 
-1. Click *Next*, check the second box on either you are a customer or partner > *Finish*.
+6. Click *Next*, check the second box on either you are a customer or partner > *Finish*.
 
-1. On the Sign On tab, confirm that Application username format is set to to Email.
+7. On the Sign On tab, confirm that Application username format is set to to Email.
 
-1. On the Sign On tab, under SAML Setup on the right side, click *View SAML Setup Instructions* button.
+8. On the Sign On tab, under SAML Setup on the right side, click *View SAML Setup Instructions* button.
 
-1. Under the Optional heading, select all the xml text and use it to create `oktametadata.xml`.
+9. Under the Optional heading, select all the xml text and use it to create `oktametadata.xml`.
 
-1. Navigate to Applications &rarr; Applications. Click on the down arrow for the *liferaysaml* application. Click on *Assign to Users*, click *Assign* for your users, then on *Save and Go Back*.
+10. Navigate to Applications &rarr; Applications. Click on the down arrow for the *liferaysaml* application. Click on *Assign to Users*, click *Assign* for your users, then on *Save and Go Back*.
 
 ## Liferay DXP Configuration
 
@@ -77,7 +78,7 @@ Clarity wants to use Okta, a Security Assertion Markup Language (SAML) based aut
 
 1. Go back to *General* tab and enable the Service Provider. Click *Save*.
 
-2. (Optionally) Add a `Sign In` widget to a temporary site page and publish it. In case the SSO is not working, this can provide a login workaround while testing.
+1. As a precaution, create a temporary site page and add a `Sign In` widget to it. In case testing the SSO fails, this can provide a login workaround.
 
 1. Open a new browser and click top right *Sign In* which will redirect user to Okta sign in page.
 
@@ -85,7 +86,7 @@ Clarity wants to use Okta, a Security Assertion Markup Language (SAML) based aut
 
 1. Fill in the user email and password.
 
-1. User will be redirected back to Liferay home page and automatically signed in.
+1. You will be redirected back to your Liferay home page and automatically signed in.
 
 Congratulations! You've completed Module 4 - Identity Management and SSO.
 

@@ -11,7 +11,7 @@ Along with single sign-on, Clarity is also looking for a solution to manage user
 
 OpenID Connect (OIDC) is an identity protocol that is used to authenticate users. Many (OIDC) services (e.g. Google, Okta) can be configured to work together with Liferay. 
 
-To use an OpenID Connect service, you simply add a connection to the provider. This configuration is available under _Instance Settings_ &rarr; _SSO_ in Liferay. 
+To use an OpenID Connect service, add a connection to the provider. This configuration is available under _Instance Settings_ &rarr; _SSO_ in Liferay. 
 
 ![Add an OpenID Connect connection under instance settings.](./configuring-sso-and-idp/images/01.png)
 
@@ -21,9 +21,9 @@ After adding the connection, the enabled checkbox under the `OpenID Connect` con
 
 ## SAML
 
-The Security Assertion Markup Language (SAML) protocol is another type of single sign-on standard that is supported by Liferay. Instead of managing separate usernames and passwords just for Liferay, a service that provides SAML authentication can provide one login for many services. Many popular SAML authentication services can be integrated with Liferay. See [authenticating with SAML] to learn more.
+The Security Assertion Markup Language (SAML) protocol is another type of single sign-on standard that is supported by Liferay. Instead of managing separate usernames and passwords just for Liferay, a service that provides SAML authentication can provide one login for many services. Many popular SAML authentication services can be integrated with Liferay. See [authenticating with SAML](https://learn.liferay.com/web/guest/w/dxp/installation-and-upgrades/securing-liferay/configuring-sso/authenticating-with-saml) to learn more.
 
-To use a SAML authentication service, you simply add a SAML identity provider (IdP) service to Liferay. This configuration is available under the _SAML Admin_ tool in Liferay.
+To use a SAML authentication service, add a SAML identity provider (IdP) service to Liferay. This configuration is available under the _SAML Admin_ tool in Liferay.
 
 ![Add a SAML IdP service in Liferay.](./configuring-sso-and-idp/images/02.png)
 
@@ -35,7 +35,7 @@ See the next lesson, [Integrating Okta SSO](./integrating-okta-sso.md) to see de
 
 Clarity has been using a Microsoft Active Directory for the past few years to manage user access to different on-premise systems. But with the benefits that come with single sign-on (SSO) and the move towards cloud-based systems, Clarity needs to consider the different options available.
 
-Liferay can support a traditional active directory if Clarity chooses to integrate their on-premise directory. To connect to an active directory, you simply add the server to the Liferay settings. This configuration is available under _Instance Settings_ &rarr; _LDAP_.
+Liferay can support a traditional active directory if Clarity chooses to integrate their on-premise directory. To connect to an active directory, add the server to the Liferay settings. This configuration is available under _Instance Settings_ &rarr; _LDAP_.
 
 ![Add an active directory server to Liferay.](./configuring-sso-and-idp/images/03.png)
 

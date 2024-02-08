@@ -1,5 +1,3 @@
-import com.liferay.headless.commerce.admin.inventory.client.dto.v1_0.Warehouse;
-import com.liferay.headless.commerce.admin.inventory.client.pagination.Page;
 import com.liferay.headless.commerce.admin.inventory.client.pagination.Pagination;
 import com.liferay.headless.commerce.admin.inventory.client.resource.v1_0.WarehouseResource;
 
@@ -15,10 +13,9 @@ public class Warehouses_GET_FromInstance {
 			"test@liferay.com", "learn"
 		).build();
 
-		Page<Warehouse> page = warehouseResource.getWarehousesPage(
-			null, Pagination.of(1, 2), null);
-
-		System.out.println(page);
+		System.out.println(
+			warehouseResource.getWarehousesPage(
+				null, Pagination.of(1, 2), null));
 	}
 
 }

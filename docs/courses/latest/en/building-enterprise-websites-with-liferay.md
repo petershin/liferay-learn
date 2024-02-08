@@ -3,7 +3,7 @@ toc:
 - ./building-enterprise-websites-with-liferay/module-1-getting-started-with-clarity.md
 - ./building-enterprise-websites-with-liferay/module-2-developer-setup.md
 - ./building-enterprise-websites-with-liferay/module-3-deploying-liferay.md
-- ./building-enterprise-websites-with-liferay/module-4-module-4-identity-managementand-sso.md
+- ./building-enterprise-websites-with-liferay/module-4-module-4-identity-management-and-sso.md
 - ./building-enterprise-websites-with-liferay/module-5.md
 - ./building-enterprise-websites-with-liferay/module-6.md
 - ./building-enterprise-websites-with-liferay/module-7.md
@@ -76,9 +76,9 @@ Learn the different deployment options available for Liferay, why Liferay SaaS i
 :::
 
 :::{grid-item-card}  Module 4: Identity Management & SSO
-:link: ./building-enterprise-websites-with-liferay/module-4.md
+:link: ./building-enterprise-websites-with-liferay/identity-management-and-sso.md
 
-Learn about identity management in Liferay so Clarity can provide secure login for its team members.
+Learn about both the different identity management features built into Liferay, as well as the services that can integrate with Liferay.
 :::
 
 :::{grid-item-card}  Module 5: Users & Permissions

@@ -2,13 +2,15 @@
 uuid: ba75bce7-ccf4-4c5a-bffe-7c247434dac2
 ---
 
-# Configuring Liferay DXP as SP and Okta as IdP
+# Integrating Okta SSO
 
-Clarity customers may use their SAML 2.0 compliant single sign-on Identity Providers to authenticate users with Liferay DXP. One of the most known identity management services is Okta, and you'll learn the basic steps to set up your Liferay DXP instance as your Service Provider (SP), and Okta as your Identity Provider (IdP).
+Clarity wants to use Okta, a Security Assertion Markup Language (SAML) based authentication single sign-on service with Liferay. They appreciate the convenience of one login for not only Liferay, but the other services they need logins for. In addition to authentication, they are relying on Okta to serve as their identity provider (IdP) and sync all user identities with Liferay. Continue reading see the basic steps to set up your Liferay DXP instance as the Service Provider (SP), and Okta as the Identity Provider (IdP).
 
-## Okta configuration
+## Okta Configuration
 
-1. Log in to [Okta Dev](https://developer.okta.com/login/) and navigate to Admin > Add Application (Shortcuts in the right menu) > Create New App.
+1. Log in to [Okta Dev](https://developer.okta.com/login/) and navigate to Admin > Add Application (Shortcuts in the right menu) > Create New App. 
+
+    *Note, this tutorial requires you to have an existing account with Okta to test with.
 
 1. Select SAML 2.0.
 
@@ -20,7 +22,7 @@ Clarity customers may use their SAML 2.0 compliant single sign-on Identity Provi
     - Name ID format: *EmailAddress*
     - Application username: *Email*
 
-    ![Configuring SAML Integration](./images/01.png)
+    ![Configuring SAML Integration](./integrating-okta-sso/images/01.png)
 
 1. Select Attribute Statements
     - `screenName (Unspecified) = user.firstName`
@@ -38,9 +40,9 @@ Clarity customers may use their SAML 2.0 compliant single sign-on Identity Provi
 
 1. Navigate to Applications &rarr; Applications. Click on the down arrow for the *liferaysaml* application. Click on *Assign to Users*, click *Assign* for your users, then on *Save and Go Back*.
 
-## Liferay DXP configuration
+## Liferay DXP Configuration
 
-1. Start a vanilla Liferay DXP bundle and navigate to Control Panel &rarr; Security &rarr; SAML Admin.
+1. Log in to Liferay and navigate to _Control Panel_ &rarr; _Security_ &rarr; _SAML Admin_.
 
 1. Set the SAML Role to *Service Provider*, and Entity ID to *samlspdemo*.
 
@@ -75,12 +77,16 @@ Clarity customers may use their SAML 2.0 compliant single sign-on Identity Provi
 
 1. Go back to *General* tab and enable the Service Provider. Click *Save*.
 
-1. Add Sign In portlet to home page (In case the SSO is not working, administrator can sign into portal bypassing SSO).
+2. (Optionally) Add a `Sign In` widget to a temporary site page and publish it. In case the SSO is not working, this can provide a login workaround while testing.
 
 1. Open a new browser and click top right *Sign In* which will redirect user to Okta sign in page.
 
-    ![Okta sign in page after user being redirected](./images/02.png)
+    ![Okta sign in page after user being redirected](./integrating-okta-sso/images/02.png)
 
 1. Fill in the user email and password.
 
 1. User will be redirected back to Liferay home page and automatically signed in.
+
+Congratulations! You've completed Module 4 - Identity Management and SSO.
+
+[Back to Building Enterprise Websites with Liferay](../../building-enterprise-websites-with-liferay.md)

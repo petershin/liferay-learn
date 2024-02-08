@@ -10,6 +10,8 @@ uuid: 46e00046-f0b0-4700-b73f-6d75d914800d
 ---
 # Collapsing Search Results
 
+{bdg-secondary}`Liferay DXP 2023.Q4+`
+
 You can collapse search results with an identical keyword field value. For example, an internal blog titled "Employee of the Month" could produce multiple identically titled search results. To collapse all secondary results into the best matching result, use the `collapse` configuration. See Elasticsearch's [Collapse Search Results](https://www.elastic.co/guide/en/elasticsearch/reference/current/collapse-search-results.html) for details on how the feature works.
 
 ![There are multiple blogs about the employee of the month.](./collapsing-results/images/01.png)

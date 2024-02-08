@@ -4,7 +4,7 @@ uuid: ba75bce7-ccf4-4c5a-bffe-7c247434dac2
 
 # Integrating Okta SSO
 
-Clarity wants to use Okta, a Security Assertion Markup Language (SAML) based authentication single sign-on service with Liferay. They appreciate the convenience of one login for not only Liferay, but the other services they need logins for. In addition to authentication, they are relying on Okta to serve as their identity provider (IdP) and sync all user identities with Liferay. Continue reading see the basic steps to set up your Liferay DXP instance as the Service Provider (SP), and Okta as the Identity Provider (IdP).
+Clarity wants to use Okta, a single sign-on (SSO) service provider that can be integrated with SAML applications as an identity provider (IdP). Clarity appreciates the convenience of having one login not only for Liferay, but for the other services they use. In addition to authentication, they can use Okta to serve as their IdP and sync all user identities with Liferay. Continue reading to see the basic steps to set up your Liferay DXP instance as the Service Provider (SP), and Okta as the Identity Provider (IdP).
 
 !!! note
     This tutorial requires you to have an existing Okta account to test with.
@@ -13,11 +13,11 @@ Clarity wants to use Okta, a Security Assertion Markup Language (SAML) based aut
 
 1. Log in to [Okta Dev](https://developer.okta.com/login/) and navigate to _Applications_ &rarr; _Add Application_ (Shortcuts in the right menu) &rarr; _Create App Integration_. 
 
-2. Select SAML 2.0.
+1. Select SAML 2.0.
 
-3. Enter *liferaysaml* as the name and click next.
+1. Enter *liferaysaml* as the name and click next.
 
-4. Enter the following fields:
+1. Enter the following fields:
     - Single sign-on URL: *http://[your_lifray_saas_environment]:8080/c/portal/saml/acs*
     - Audience URI (SP Entity ID): *samlspdemo*
     - Name ID format: *EmailAddress*
@@ -25,21 +25,21 @@ Clarity wants to use Okta, a Security Assertion Markup Language (SAML) based aut
 
     ![Configuring SAML Integration](./integrating-okta-sso/images/01.png)
 
-5. Select Attribute Statements
+1. Select Attribute Statements
     - `screenName (Unspecified) = user.firstName`
     - `firstName (Unspecified) = user.firstName`
     - `lastName (Unspecified) = user.lastName`
     - `emailAddress (Unspecified) = user.email`
 
-6. Click *Next*, check the second box on either you are a customer or partner > *Finish*.
+1. Click *Next*, check the second box on either you are a customer or partner > *Finish*.
 
-7. On the Sign On tab, confirm that Application username format is set to to Email.
+1. On the Sign On tab, confirm that Application username format is set to to Email.
 
-8. On the Sign On tab, under SAML Setup on the right side, click *View SAML Setup Instructions* button.
+1. On the Sign On tab, under SAML Setup on the right side, click *View SAML Setup Instructions* button.
 
-9. Under the Optional heading, select all the xml text and use it to create `oktametadata.xml`.
+1. Under the Optional heading, select all the xml text and use it to create `oktametadata.xml`.
 
-10. Navigate to Applications &rarr; Applications. Click on the down arrow for the *liferaysaml* application. Click on *Assign to Users*, click *Assign* for your users, then on *Save and Go Back*.
+1. Navigate to Applications &rarr; Applications. Click on the down arrow for the *liferaysaml* application. Click on *Assign to Users*, click *Assign* for your users, then on *Save and Go Back*.
 
 ## Liferay DXP Configuration
 

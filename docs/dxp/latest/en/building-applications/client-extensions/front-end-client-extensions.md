@@ -52,7 +52,6 @@ You can add JavaScript, CSS, or Theme CSS client extensions to layout sets (i.e.
 
 ## JavaScript Client Extensions
 
-
 JavaScript client extensions provide global JavaScript libraries and logic throughout your Liferay instance. When you deploy a JavaScript client extension and configure a page to use it, its JavaScript runs automatically each time you visit the page (in the page's header or footer).
 
 Specify a JavaScript client extension in your `client-extension.yaml` file:
@@ -65,7 +64,6 @@ See [Using a JavaScript Client Extension](./front-end-client-extensions/tutorial
 
 ## CSS Client Extensions
 
-
 CSS client extensions introduce new CSS styling to pages. A deployed CSS client extension on a page adds to the page's existing styling, including theme and style book settings.
 
 Specify a CSS client extension in your `client-extension.yaml` file :
@@ -77,7 +75,6 @@ type: globalCSS
 See [Using a CSS Client Extension](./front-end-client-extensions/tutorials/using-a-css-client-extension.md) to get started.
 
 ## Theme CSS Client Extensions
-
 
 While [CSS client extensions](#css-client-extensions) add styling to pages, theme CSS client extensions override styling on the page, including from the site's [theme](../../site-building/site-appearance/themes/introduction-to-themes.md). The client extension uses a `clay.css` file and a `main.css` file to replace the identically named files normally used in your site's theme.
 
@@ -115,7 +112,6 @@ type: themeSpritemap
 
 ## Custom Element Client Extensions
 
-
 > Previously named Custom Element Remote App
 
 Custom element client extensions use Liferay's front-end infrastructure to integrate external applications with the platform and render them as page widgets. They can integrate applications from any domain accessible outside of Liferay.
@@ -131,7 +127,6 @@ type: customElement
 See [Understanding Custom Element and IFrame Client Extensions](./front-end-client-extensions/understanding-custom-element-and-iframe-client-extensions.md) for more information.
 
 ## IFrame Client Extensions
-
 
 > Previously named IFrame Remote Apps
 

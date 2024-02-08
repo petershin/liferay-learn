@@ -42,7 +42,7 @@ Install the three prerequisites for developing client extensions:
 
 ## Client Extension Projects
 
-Client extension development follows a _workspace plus project_ model. Within a [Liferay workspace](../tooling/liferay-workspace.md), you implement a client extension project under `[workspace-root]/client-extensions`. The project's `client-extension.yaml` file defines its client extensions, and a build process results in a single set of outputs for each project. The built client extension project is a deployable `*.zip` archive called a Liferay Universal File Format Archive (LUFFA).
+Client extension development follows a *workspace plus project* model. Within a [Liferay workspace](../tooling/liferay-workspace.md), you implement a client extension project under `[workspace-root]/client-extensions`. The project's `client-extension.yaml` file defines its client extensions, and a build process results in a single set of outputs for each project. The built client extension project is a deployable `*.zip` archive called a Liferay Universal File Format Archive (LUFFA).
 
 ## Grouping Client Extensions in Projects
 
@@ -204,7 +204,7 @@ Then copy the archives from each project's `dist/` folder into the server's `[Li
 
 ## Context-Sensitive Information
 
-Client extensions are portable: you should never hard-code environment-specific details like domain name, network address, or Liferay's domains. Client extensions can find context-sensitive information about its context at runtime.
+Client extensions are portable: you should never hard-code environment-specific details like domain name, network address, or Liferay's domains. Client extensions can find context-sensitive information about their context at runtime.
 
 Every client extension workload is provided with a set of *routes* containing important context-sensitive metadata automatically. With this routes-based approach, application logic can retrieve context sensitive information uniformly, regardless of where it is invoked. You only need to point your client extension projects to it.
 

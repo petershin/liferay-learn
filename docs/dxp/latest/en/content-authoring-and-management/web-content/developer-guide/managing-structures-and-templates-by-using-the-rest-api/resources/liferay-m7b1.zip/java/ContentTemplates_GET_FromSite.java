@@ -1,5 +1,3 @@
-import com.liferay.headless.delivery.client.dto.v1_0.ContentTemplate;
-import com.liferay.headless.delivery.client.pagination.Page;
 import com.liferay.headless.delivery.client.pagination.Pagination;
 import com.liferay.headless.delivery.client.resource.v1_0.ContentTemplateResource;
 
@@ -17,12 +15,10 @@ public class ContentTemplates_GET_FromSite {
 				"test@liferay.com", "learn"
 			).build();
 
-		Page<ContentTemplate> page =
+		System.out.println(
 			contentTemplateResource.getSiteContentTemplatesPage(
 				Long.parseLong(System.getProperty("siteId")), null, null, null,
-				Pagination.of(1, 2), null);
-
-		System.out.println(page);
+				Pagination.of(1, 2), null));
 	}
 
 }

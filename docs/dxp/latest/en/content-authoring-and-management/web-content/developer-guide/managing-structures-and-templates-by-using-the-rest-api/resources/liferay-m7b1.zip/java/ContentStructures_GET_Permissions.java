@@ -1,5 +1,3 @@
-import com.liferay.headless.delivery.client.pagination.Page;
-import com.liferay.headless.delivery.client.permission.Permission;
 import com.liferay.headless.delivery.client.resource.v1_0.ContentStructureResource;
 
 public class ContentStructures_GET_Permissions {
@@ -16,11 +14,9 @@ public class ContentStructures_GET_Permissions {
 				"test@liferay.com", "learn"
 			).build();
 
-		Page<Permission> page =
+		System.out.println(
 			contentStructureResource.getContentStructurePermissionsPage(
-				Long.valueOf(System.getProperty("contentStructureId")), null);
-
-		System.out.println(page);
+				Long.valueOf(System.getProperty("contentStructureId")), null));
 	}
 
 }

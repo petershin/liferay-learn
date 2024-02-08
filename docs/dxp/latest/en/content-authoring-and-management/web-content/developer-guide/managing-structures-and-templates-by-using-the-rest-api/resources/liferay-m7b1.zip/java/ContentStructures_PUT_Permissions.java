@@ -1,4 +1,3 @@
-import com.liferay.headless.delivery.client.pagination.Page;
 import com.liferay.headless.delivery.client.permission.Permission;
 import com.liferay.headless.delivery.client.resource.v1_0.ContentStructureResource;
 
@@ -16,7 +15,7 @@ public class ContentStructures_PUT_Permissions {
 				"test@liferay.com", "learn"
 			).build();
 
-		Page<Permission> page =
+		System.out.println(
 			contentStructureResource.putContentStructurePermissionsPage(
 				Long.valueOf(System.getProperty("contentStructureId")),
 				new Permission[] {
@@ -30,9 +29,7 @@ public class ContentStructures_PUT_Permissions {
 							roleName = System.getProperty("roleName");
 						}
 					}
-				});
-
-		System.out.println(page);
+				}));
 	}
 
 }

@@ -10,6 +10,7 @@ toc:
   - ./search-blueprints/search-blueprints-elements-reference.md
   - ./search-blueprints/creating-and-managing-elements.md
   - ./search-blueprints/optimizing-search-response-size.md
+  - ./search-blueprints/collapsing-results.md
 taxonomy-category-names:
 - Search
 - Liferay Enterprise Search

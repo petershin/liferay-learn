@@ -17,11 +17,10 @@ public class ContentStructures_GET_FromSite {
 				"test@liferay.com", "learn"
 			).build();
 
-		long siteId = Long.parseLong(System.getProperty("siteId"));
-
 		Page<ContentStructure> page =
 			contentStructureResource.getSiteContentStructuresPage(
-				siteId, null, null, null, Pagination.of(1, 2), null);
+				Long.parseLong(System.getProperty("siteId")), null, null, null,
+				Pagination.of(1, 2), null);
 
 		System.out.println(page);
 	}

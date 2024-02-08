@@ -16,12 +16,9 @@ public class ContentStructures_GET_Permissions {
 				"test@liferay.com", "learn"
 			).build();
 
-		Long contentStructureId = Long.valueOf(
-			System.getProperty("contentStructureId"));
-
 		Page<Permission> page =
 			contentStructureResource.getContentStructurePermissionsPage(
-				contentStructureId, null);
+				Long.valueOf(System.getProperty("contentStructureId")), null);
 
 		System.out.println(page);
 	}

@@ -87,7 +87,7 @@ To create a new endpoint,
 
    Once the endpoint is created, you can configure it using the Configuration tab.
 
-   There are different configurations depending on the selected method. See [Creating an Endpoint Using the GET Method](#creating-an-endpoint-using-the-get-method) and [Creating an Endpoint Using the POST Method](#creating-an-endpoint-using-the-post-method) for more information.
+   There are different configurations depending on the selected method. See [Creating a GET Method Endpoint](#creating-a-get-method-endpoint) and [Creating a POST Method Endpoint](#creating-a-post-method-endpoint) for more information.
 
 To manage endpoints, use the Actions menu (![Actions menu](../images/icon-actions.png)) next to the endpoint and select an available option:
 
@@ -99,7 +99,7 @@ To manage endpoints, use the Actions menu (![Actions menu](../images/icon-action
 
 -  **Delete**: delete your endpoint.
 
-### Creating an Endpoint Using the GET Method
+### Creating a GET Method Endpoint
 
 The GET method requests and retrieves data from a specified source. Using the GET method you can retrieve information from a collection or a single element (i.e. you can retrieve a list of products, or you can retrieve information from a single product).
 
@@ -153,9 +153,11 @@ If you selected Single Element as your Retrieve Type,
 
 Once the endpoint is created, you can see it on your API explorer page `http://localhost:8080/o/api`.
 
-### Creating an Endpoint Using the POST Method
+### Creating a POST Method Endpoint
 
-The POST method is used to submit data to be processed to a specified source.
+In the API Builder, the POST method is used to create [object](../building-applications/objects/creating-and-managing-objects/creating-objects.md) entries.
+
+<!-- for now, at least. I'll have to change it once new features come out. - Eric -->
 
 To create an endpoint using the POST method,
 
@@ -190,7 +192,7 @@ Once the endpoint is created, select the *Configuration* tab for additional sett
 
 Once the endpoint is created, you can see it on your API explorer page `http://localhost:8080/o/api`.
 
-### Creating an Endpoint Using the POST Method Through an API Call
+### Creating a POST Method Endpoint Through an API Call
 
 If you are creating the POST endpoint through API calls, keep these points in mind:
 

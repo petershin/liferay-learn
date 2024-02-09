@@ -104,7 +104,7 @@
 
 **JavaScript 클라이언트 확장 및 사용자 정의 JavaScript:** 이 마스터 페이지 템플릿을 사용하는 페이지를 방문할 때 JavaScript가 실행되도록 [JavaScript 클라이언트 확장](../../../building-applications/client-extensions/front-end-client-extensions.md#javascript-client-extensions) 추가할 수 있습니다. 사용자 정의 JavaScript 코드도 추가할 수 있으며 페이지 하단에서 실행됩니다.
 
-![Use CSS and JavaScript editors to add custom code to the page](.//configuring-individual-pages/images/09.png)
+![Use CSS and JavaScript editors to add custom code to the page](./configuring-individual-pages/images/09.png)
 
 ```{tip}
 사이트 테마에서 JavaScript를 사용하는 경우 개별 페이지나 페이지 세트보다는 테마에 사용자 정의 JavaScript 코드를 추가하는 것이 가장 좋습니다. 이렇게 하면 사이트의 JavaScript 코드가 한 곳에 유지됩니다. 테마에서 JavaScript를 사용하지 않는 경우 사이트의 모든 JavaScript 코드를 여기에 배치하세요.

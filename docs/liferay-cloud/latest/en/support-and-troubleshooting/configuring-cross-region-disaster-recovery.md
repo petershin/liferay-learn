@@ -47,7 +47,7 @@ To ensure the two environments are connected,
 
 1. Click *Connect VPN*.
 
-For more information on connecting to a VPN, see [VPN Connection](..//configuring-the-cloud-network/connecting-a-vpn-server-to-liferay-cloud.md).
+For more information on connecting to a VPN, see [VPN Connection](../configuring-the-cloud-network/connecting-a-vpn-server-to-liferay-cloud.md).
 
 ### Deploy the Latest Stable Build from Production to the DR Environment
 
@@ -77,7 +77,7 @@ Once you have the production environment's master token, set these [environment 
 
 * **LCP_BACKUP_RESTORE_SCHEDULE**: a [cron scheduling](https://crontab.guru/) value that defines the frequency of automated backups. See [Scheduling Automated Backups and Cleanups](../platform-services/backup-service/backup-service-overview.md#scheduling-automated-backups-and-cleanups) for more information.
 
-Set this value as a [secret](..//tuning-security-settings/managing-secure-environment-variables-with-secrets.md) in your DR environment:
+Set this value as a [secret](../tuning-security-settings/managing-secure-environment-variables-with-secrets.md) in your DR environment:
 
 * **LCP_EXTERNAL_PROJECT_MASTER_TOKEN**: your production environment's master token
 
@@ -149,7 +149,7 @@ Next, follow these steps to ensure your DR environment is ready for incoming tra
 
     ![Check the VPN status for your DR environment to confirm that it is properly connected.](./configuring-cross-region-disaster-recovery/images/05.png)
 
-    If the appropriate VPN is not connected, set up the connection. See [Connecting a VPN Server to Liferay Cloud](..//configuring-the-cloud-network/connecting-a-vpn-server-to-liferay-cloud.md) for more information.
+    If the appropriate VPN is not connected, set up the connection. See [Connecting a VPN Server to Liferay Cloud](../configuring-the-cloud-network/connecting-a-vpn-server-to-liferay-cloud.md) for more information.
 
 1. Log onto your DXP instance (using the IP address, since the custom domain does not yet point to the DR environment).
 
@@ -171,7 +171,7 @@ The web server service's custom domain in the DR environment must match the orig
 
 1. Navigate to the same settings in the Production environment and remove the custom domain configuration.
 
-1. Update the DNS records and add the custom domain to the DR environment. For more information, see [Custom Domains](..//configuring-the-cloud-network/custom-domains.md).
+1. Update the DNS records and add the custom domain to the DR environment. For more information, see [Custom Domains](../configuring-the-cloud-network/custom-domains.md).
 
 This causes all traffic to go to the DR environment.
 
@@ -231,7 +231,7 @@ Follow these steps to ensure your production environment is ready for incoming t
 
 1. Verify that your VPN is connected to the production environment by navigating to the _Settings_ &rarr; _VPN_ page for your production environment.
 
-   If the appropriate VPN is not connected, set up the connection. See [Connecting a VPN Server to Liferay Cloud](..//configuring-the-cloud-network/connecting-a-vpn-server-to-liferay-cloud.md) for more information.
+   If the appropriate VPN is not connected, set up the connection. See [Connecting a VPN Server to Liferay Cloud](../configuring-the-cloud-network/connecting-a-vpn-server-to-liferay-cloud.md) for more information.
 
 1. Log onto your DXP instance (using the IP address, since the custom domain still points to the DR environment).
 
@@ -259,7 +259,7 @@ Because the webserver service redirected all traffic to the DR environment durin
     Removing the custom domain creates downtime until your Production environment is receiving traffic again.
     ```
 
-1. Update the DNS records and add the custom domain back to the Production environment. For more information, see [Custom Domains](..//configuring-the-cloud-network/custom-domains.md).
+1. Update the DNS records and add the custom domain back to the Production environment. For more information, see [Custom Domains](../configuring-the-cloud-network/custom-domains.md).
 
 1. Click _Update Custom Domain_.
 

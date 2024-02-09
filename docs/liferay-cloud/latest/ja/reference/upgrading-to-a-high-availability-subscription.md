@@ -36,7 +36,7 @@ Liferay Cloudサブスクリプションをアップグレードする最初の�
 
 High Availabilityサブスクリプションには、 `liferay` サービスとDynatraceの統合を使用できるアドオンも含まれています。 本番環境でこの機能を利用するには、 `liferay` サービスを設定するための追加手順が必要です。
 
-Liferay Cloud チームは、サブスクリプションをアップグレードする際に、この設定に使用する `テナント` 値を提供します。 この `テナント` の値を使用して、ここに記載されている [の手順を実行します](..//tuning-security-settings/managing-secure-environment-variables-with-secrets.md#integrating-dynatrace-with-production-environments) .
+Liferay Cloud チームは、サブスクリプションをアップグレードする際に、この設定に使用する `テナント` 値を提供します。 この `テナント` の値を使用して、ここに記載されている [の手順を実行します](../tuning-security-settings/managing-secure-environment-variables-with-secrets.md#integrating-dynatrace-with-production-environments) .
 
 ## Web Server サービスの構成
 

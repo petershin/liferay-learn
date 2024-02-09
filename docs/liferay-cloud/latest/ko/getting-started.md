@@ -56,7 +56,7 @@ Liferay Cloud는 보안을 염두에 두고 설계되었습니다. Liferay Cloud
 
 ## 고가용성, 확장성 및 성능
 
-[클러스터링](./customizing-liferay-dxp-in-the-cloud/setting-up-clustering-in-liferay-cloud.md) 및 [로드 밸런싱](.//configuring-the-cloud-network/load-balancer.md) 은 미션 크리티컬 사이트가 온라인 상태를 유지할 수 있도록 가용성이 높고 다운타임이 없는 배포를 제공합니다. Liferay Cloud는 다중 지역 아키텍처를 통해 데이터를 제공하여 고가용성을 보장합니다.
+[클러스터링](./customizing-liferay-dxp-in-the-cloud/setting-up-clustering-in-liferay-cloud.md) 및 [로드 밸런싱](./configuring-the-cloud-network/load-balancer.md) 은 미션 크리티컬 사이트가 온라인 상태를 유지할 수 있도록 가용성이 높고 다운타임이 없는 배포를 제공합니다. Liferay Cloud는 다중 지역 아키텍처를 통해 데이터를 제공하여 고가용성을 보장합니다.
 
 [자동 크기 조정](./manage-and-optimize/auto-scaling.md) 은 대역폭과 컴퓨팅 용량을 동적으로 추가하여 예상치 못한 트래픽 급증에도 안정적인 성능을 유지합니다. 마찬가지로 불필요한 리소스는 활동이 적은 기간 동안 축소될 수 있습니다. 팀은 인스턴스 사용에 대한 자동 알림 및 이메일 알림을 수신하므로 안심하고 리소스를 관리할 수 있습니다.
 

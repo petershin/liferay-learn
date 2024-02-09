@@ -51,7 +51,7 @@ Liferay 서비스를 통해 MySQL 클라이언트를 사용하려면 먼저 지�
 mysql -u ${LCP_SECRET_DATABASE_USER} -p${LCP_SECRET_DATABASE_PASSWORD}
 ```
 
-데이터베이스 이름, 사용자 이름 및 비밀번호는 `데이터베이스` 서비스의 [secrets](..//tuning-security-settings/managing-secure-environment-variables-with-secrets.md#viewing-and-modifying-an-existing-secret) 에서 찾을 수 있습니다.
+데이터베이스 이름, 사용자 이름 및 비밀번호는 `데이터베이스` 서비스의 [secrets](../tuning-security-settings/managing-secure-environment-variables-with-secrets.md#viewing-and-modifying-an-existing-secret) 에서 찾을 수 있습니다.
 
 ### 읽기 전용 데이터베이스 암호 변경
 

@@ -114,4 +114,4 @@ Delectable Bonsaiのデータベースセキュリティポリシーは、少な
 * [データベースのユーザー名の変更](https://learn.liferay.com/web/guest/w/liferay-cloud/platform-services/database-service/changing-your-database-username)
 * [データベースサービス(MySQL)](https://learn.liferay.com/web/guest/w/liferay-cloud/platform-services/database-service/database-service)
 * [環境変数の定義](https://learn.liferay.com/w/liferay-cloud/reference/defining-environment-variables)
-* [シークレットで安全な環境変数を管理](https://learn.liferay.com/w/liferay-cloud//tuning-security-settings/managing-secure-environment-variables-with-secrets)
+* [シークレットで安全な環境変数を管理](https://learn.liferay.com/w/liferay-cloud/tuning-security-settings/managing-secure-environment-variables-with-secrets)

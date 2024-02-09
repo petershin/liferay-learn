@@ -90,7 +90,7 @@ Liferay Cloudコンソールまたはバックアップサービスの`LCP.json`
 
 1. **Save Changes** をクリックしてください。
 
-通常の環境変数とは別に、Liferay Cloud コンソールから **Secret** 変数を設定することもできます。 詳しくは、 [シークレットで安全な環境変数を管理](../..//tuning-security-settings/managing-secure-environment-variables-with-secrets.md) をご覧ください。
+通常の環境変数とは別に、Liferay Cloud コンソールから **Secret** 変数を設定することもできます。 詳しくは、 [シークレットで安全な環境変数を管理](../../tuning-security-settings/managing-secure-environment-variables-with-secrets.md) をご覧ください。
 
 ### バックアップ `LCP.json` ファイルを使ったバックアップサービスの設定
 

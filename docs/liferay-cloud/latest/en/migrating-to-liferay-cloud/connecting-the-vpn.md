@@ -22,7 +22,7 @@ If you do not need to configure a VPN server, then you can skip to the [next ste
 
 You must configure your VPN server so that a secure connetion can be established between Liferay Cloud and an internal network.
 
-You can configure your VPN connection to use `EAP-TLS` or `EAP-MSCHAPV2` authentication protocols. See [Configuring a VPN Server](..//configuring-the-cloud-network/configuring-a-vpn-server.md) for help on configuring the VPN server.
+You can configure your VPN connection to use `EAP-TLS` or `EAP-MSCHAPV2` authentication protocols. See [Configuring a VPN Server](../configuring-the-cloud-network/configuring-a-vpn-server.md) for help on configuring the VPN server.
 
 ## Create and Configure the VPN Connection
 

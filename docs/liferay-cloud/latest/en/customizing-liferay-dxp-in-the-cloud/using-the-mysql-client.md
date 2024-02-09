@@ -57,7 +57,7 @@ However, if it is *critical* to be able to manipulate data in the database, you 
 mysql -u ${LCP_SECRET_DATABASE_USER} -p${LCP_SECRET_DATABASE_PASSWORD}
 ```
 
-You can find the database name, user name, and password in your `database` service's [secrets](..//tuning-security-settings/managing-secure-environment-variables-with-secrets.md#viewing-and-modifying-an-existing-secret).
+You can find the database name, user name, and password in your `database` service's [secrets](../tuning-security-settings/managing-secure-environment-variables-with-secrets.md#viewing-and-modifying-an-existing-secret).
 
 ### Changing the Read-Only Database Password
 

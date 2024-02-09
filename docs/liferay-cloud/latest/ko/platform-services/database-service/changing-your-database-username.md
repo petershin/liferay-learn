@@ -46,4 +46,4 @@ MySQL 사용자 이름은 `lcp-secret-database-user` secret으로 정의되며 �
 
 * [데이터베이스 서비스](./database-service.md)
 * [데이터베이스 비밀번호 변경](./changing-your-database-password.md)
-* [보안 비밀로 보안 환경 변수 관리](../..//tuning-security-settings/managing-secure-environment-variables-with-secrets.md)
+* [보안 비밀로 보안 환경 변수 관리](../../tuning-security-settings/managing-secure-environment-variables-with-secrets.md)

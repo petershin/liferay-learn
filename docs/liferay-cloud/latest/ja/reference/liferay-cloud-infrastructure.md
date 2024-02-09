@@ -5,7 +5,7 @@ Liferay Cloudは、堅牢で信頼性が高く、管理しやすいLiferay DXP�
 ![Liferay Cloudと統合された主要なサービスやコンポーネントは、ここにその接続先が表示されています。](./liferay-cloud-infrastructure/images/01.png)
 
 ```{note}
-プライベートクラスターサブスクリプションには、ビルトインの[Webアプリケーションファイアウォール](..//tuning-security-settings/web-application-firewall.md) も含まれています。 ただし、これは [共有クラスタでは利用できない](./platform-limitations.md#security) です。
+プライベートクラスターサブスクリプションには、ビルトインの[Webアプリケーションファイアウォール](../tuning-security-settings/web-application-firewall.md) も含まれています。 ただし、これは [共有クラスタでは利用できない](./platform-limitations.md#security) です。
 ```
 
 各コンポーネントの説明は以下のリストを参照してください。
@@ -22,7 +22,7 @@ Liferay Cloudは、Gitを使用したプロジェクトのソースコードと�
 
 ## VPNサーバーとクライアント
 
-Liferay Cloud環境では、お客様独自のVPNサーバーを利用した暗号化トンネルでデータの送受信が可能です。 Liferay Cloudは、対応するVPNからその環境に接続できるクライアント・サイト間VPNサービスを提供します。 この接続では、OpenVPNとIPSec（IKEv2）のプロトコルがサポートされています。 詳細は、 [VPNインテグレーションの概要](..//configuring-the-cloud-network/vpn-integration-overview.md) を参照してください。
+Liferay Cloud環境では、お客様独自のVPNサーバーを利用した暗号化トンネルでデータの送受信が可能です。 Liferay Cloudは、対応するVPNからその環境に接続できるクライアント・サイト間VPNサービスを提供します。 この接続では、OpenVPNとIPSec（IKEv2）のプロトコルがサポートされています。 詳細は、 [VPNインテグレーションの概要](../configuring-the-cloud-network/vpn-integration-overview.md) を参照してください。
 
 ## Docker Hub
 

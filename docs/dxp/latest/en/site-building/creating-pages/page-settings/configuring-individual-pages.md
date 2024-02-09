@@ -113,7 +113,7 @@ You can also access a CSS and JavaScript editors where you can add custom code t
 
 **JavaScript Client Extension and Custom JavaScript:** [JavaScript client extensions](../../../building-applications/client-extensions/front-end-client-extensions.md#javascript-client-extensions) can be added to have JavaScript run when the page using this master page template is visited. Custom JavaScript code can also be added and is executed at the bottom of the page.
 
-![Use CSS and JavaScript editors to add custom code to the page](.//configuring-individual-pages/images/09.png)
+![Use CSS and JavaScript editors to add custom code to the page](./configuring-individual-pages/images/09.png)
 
 ```{tip}
 If your site's theme uses JavaScript, it's best to add custom JavaScript code to the theme rather than an individual page or page set. This ensures your site's JavaScript code remains in one place. If your theme does not use JavaScript, place all of your site's JavaScript code here.

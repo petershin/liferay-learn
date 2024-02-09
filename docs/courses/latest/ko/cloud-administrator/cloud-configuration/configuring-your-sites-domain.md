@@ -64,6 +64,6 @@
 
 ## 관련 개념
 
-* [맞춤 도메인](https://learn.liferay.com/w/liferay-cloud//configuring-the-cloud-network/custom-domains)
-* [로드 밸런서](https://learn.liferay.com/w/liferay-cloud//configuring-the-cloud-network/load-balancer#custom-ssl)
-* [VPN 통합 개요](https://learn.liferay.com/w/liferay-cloud//configuring-the-cloud-network/vpn-integration-overview)
+* [맞춤 도메인](https://learn.liferay.com/w/liferay-cloud/configuring-the-cloud-network/custom-domains)
+* [로드 밸런서](https://learn.liferay.com/w/liferay-cloud/configuring-the-cloud-network/load-balancer#custom-ssl)
+* [VPN 통합 개요](https://learn.liferay.com/w/liferay-cloud/configuring-the-cloud-network/vpn-integration-overview)

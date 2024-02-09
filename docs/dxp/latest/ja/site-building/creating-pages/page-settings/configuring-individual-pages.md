@@ -104,7 +104,7 @@ nameフィールドを使用して、サイトナビゲーションに使用さ�
 
 **JavaScriptクライアント拡張とカスタムJavaScript:** [JavaScriptクライアント拡張](../../../building-applications/client-extensions/front-end-client-extensions.md#javascript-client-extensions) を追加することで、このマスターページテンプレートを使用したページが訪問されたときにJavaScriptを実行させることができます。 カスタムJavaScriptコードも追加でき、ページ下部で実行される。
 
-![Use CSS and JavaScript editors to add custom code to the page](.//configuring-individual-pages/images/09.png)
+![Use CSS and JavaScript editors to add custom code to the page](./configuring-individual-pages/images/09.png)
 
 ```{tip}
 あなたのサイトのテーマがJavaScriptを使用している場合、個々のページやページセットではなく、テーマにカスタムJavaScriptコードを追加するのが最善です。 これにより、あなたのサイトのJavaScriptコードが一箇所に留まるようになります。 あなたのテーマがJavaScriptを使用していない場合、あなたのサイトのすべてのJavaScriptコードをここに置きます。

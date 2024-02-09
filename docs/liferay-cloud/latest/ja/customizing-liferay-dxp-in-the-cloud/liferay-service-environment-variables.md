@@ -51,7 +51,7 @@ Liferayサービスへの追加については、 [環境変数の定義](../ref
 
 ### シークレット
 
-これらの変数は、代わりにLiferayサービスの[シークレットとして定義](..//tuning-security-settings/managing-secure-environment-variables-with-secrets.md)する必要があります。
+これらの変数は、代わりにLiferayサービスの[シークレットとして定義](../tuning-security-settings/managing-secure-environment-variables-with-secrets.md)する必要があります。
 
 | 名前                                           | デフォルト値 | 説明                                                                                                                                         |
 |:-------------------------------------------- |:------ |:------------------------------------------------------------------------------------------------------------------------------------------ |

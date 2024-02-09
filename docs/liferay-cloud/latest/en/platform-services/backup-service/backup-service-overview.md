@@ -90,7 +90,7 @@ See [Environment Variables Reference](#environment-variables-reference) for a li
 
 1. Click _Save Changes_.
 
-Apart from regular environment variables, you can also set _Secret_ variables via the Liferay Cloud console. See [Managing Secure Environment Variables with Secrets](../..//tuning-security-settings/managing-secure-environment-variables-with-secrets.md) for more information.
+Apart from regular environment variables, you can also set _Secret_ variables via the Liferay Cloud console. See [Managing Secure Environment Variables with Secrets](../../tuning-security-settings/managing-secure-environment-variables-with-secrets.md) for more information.
 
 ### Configuring the Backup Service via the Backup `LCP.json` File
 

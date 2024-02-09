@@ -56,7 +56,7 @@ Liferay Cloudは、セキュリティに配慮して設計されています。 
 
 ## 高可用性、スケーラビリティ、およびパフォーマンス
 
-[クラスタリング](./customizing-liferay-dxp-in-the-cloud/setting-up-clustering-in-liferay-cloud.md) と [ロードバランシング](.//configuring-the-cloud-network/load-balancer.md) 、可用性の高い、ダウンタイムのないデプロイを提供し、ミッションクリティカルなサイトがオンラインのままであることを保証します。 Liferay Cloudは、高可用性を確保するため、マルチリージョンアーキテクチャでデータを配信します。
+[クラスタリング](./customizing-liferay-dxp-in-the-cloud/setting-up-clustering-in-liferay-cloud.md) と [ロードバランシング](./configuring-the-cloud-network/load-balancer.md) 、可用性の高い、ダウンタイムのないデプロイを提供し、ミッションクリティカルなサイトがオンラインのままであることを保証します。 Liferay Cloudは、高可用性を確保するため、マルチリージョンアーキテクチャでデータを配信します。
 
 [オートスケーリング](./manage-and-optimize/auto-scaling.md) は、予期しないトラフィックスパイクによって安定したパフォーマンスを維持するために、帯域幅とコンピューティング容量が動的に追加されることを保証します。 同様に、アクティビティが少ない期間に、不要なリソースを縮小できます。 チームはインスタンスの使用状況に関する自動通知と電子メールアラートを受信するので、自信を持ってリソースを管理できます。
 

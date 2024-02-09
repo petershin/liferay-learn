@@ -58,7 +58,7 @@ Name                                  | Default Value | Description  |
 
 ### Secrets
 
-These variables must instead be [defined as Secrets](..//tuning-security-settings/managing-secure-environment-variables-with-secrets.md) for the Liferay service:
+These variables must instead be [defined as Secrets](../tuning-security-settings/managing-secure-environment-variables-with-secrets.md) for the Liferay service:
 
 Name                                  | Default Value | Description  |
 :--- | :--- | :--- |

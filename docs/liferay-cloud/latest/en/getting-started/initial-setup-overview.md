@@ -63,7 +63,7 @@ Using an alternative hosting service? See how to configure your [Bitbucket](./co
 
 Log into the Jenkins (CI) web interface, then log into your Liferay DXP instance's non-production environments (e.g., *dev* and *uat*) so you can access them.
 
-Login credentials are provided in the initial onboarding email, and listed as [secrets](..//tuning-security-settings/managing-secure-environment-variables-with-secrets.md) in your *infra* environment.
+Login credentials are provided in the initial onboarding email, and listed as [secrets](../tuning-security-settings/managing-secure-environment-variables-with-secrets.md) in your *infra* environment.
 
 See [Logging into Your Liferay Cloud Services](./logging-into-your-liferay-cloud-services.md) for detailed instructions.
 

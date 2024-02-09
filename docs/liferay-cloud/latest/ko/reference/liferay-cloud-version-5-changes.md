@@ -11,7 +11,7 @@ Liferay Cloud 버전 5에는 몇 가지 변경 사항과 새로운 기능이 포
 
 ModSecurity는 웹 서버 버전 5.xx와 함께 Liferay Cloud에서 사용할 수 있는 웹 애플리케이션 방화벽입니다. 사전 정의된 사용자 정의 규칙 세트에 대해 웹 서버로 전송된 요청을 실시간으로 검사합니다. 이 단계는 XSS 및 SQL 주입과 같은 일반적인 웹 애플리케이션 L7 공격을 방지합니다.
 
-자세한 내용은 [ModSecurity](..//tuning-security-settings/web-application-firewall.md) 활성화를 참조하십시오.
+자세한 내용은 [ModSecurity](../tuning-security-settings/web-application-firewall.md) 활성화를 참조하십시오.
 
 ## 향상된 지역 지속성
 

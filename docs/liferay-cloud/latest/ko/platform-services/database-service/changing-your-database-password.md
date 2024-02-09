@@ -20,7 +20,7 @@
 
 ## 데이터베이스 암호 변경
 
-데이터베이스 암호는 선택한 환경 내에서 [secrets](../..//tuning-security-settings/managing-secure-environment-variables-with-secrets.md) 기능을 사용하여 직접 변경됩니다. 그러나 데이터베이스 암호 시크릿의 경우 서비스가 새 값으로 올바르게 업데이트되도록 추가 단계를 따라야 합니다.
+데이터베이스 암호는 선택한 환경 내에서 [secrets](../../tuning-security-settings/managing-secure-environment-variables-with-secrets.md) 기능을 사용하여 직접 변경됩니다. 그러나 데이터베이스 암호 시크릿의 경우 서비스가 새 값으로 올바르게 업데이트되도록 추가 단계를 따라야 합니다.
 
 <!-- Mention required service versions, and link to possible section on the procedure for 3.x services -->
 
@@ -94,4 +94,4 @@
 
 * [데이터베이스 서비스](./database-service.md)
 * [데이터베이스 사용자 이름 변경](./changing-your-database-username.md)
-* [보안 비밀로 보안 환경 변수 관리](../..//tuning-security-settings/managing-secure-environment-variables-with-secrets.md)
+* [보안 비밀로 보안 환경 변수 관리](../../tuning-security-settings/managing-secure-environment-variables-with-secrets.md)

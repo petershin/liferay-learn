@@ -9,7 +9,7 @@ uuid: e9b5fd5d-8acd-41fe-83f0-472a585b76c6
 
 Congratulations! If you have completed all of the previous stages in this section, then you have successfully migrated your on-premises Liferay DXP installation to Liferay Cloud!
 
-Now that you have Liferay DXP running on Liferay Cloud, you are ready to begin taking advantage of its features, including [automated backups](../platform-services/backup-service/backup-service-overview.md), [built-in continuous integration](../platform-services/continuous-integration.md), automatic [service logging](../support-and-troubleshooting/reading-liferay-cloud-service-logs.md), and built-in [security features](..//tuning-security-settings/information-security-and-liferay-cloud.md).
+Now that you have Liferay DXP running on Liferay Cloud, you are ready to begin taking advantage of its features, including [automated backups](../platform-services/backup-service/backup-service-overview.md), [built-in continuous integration](../platform-services/continuous-integration.md), automatic [service logging](../support-and-troubleshooting/reading-liferay-cloud-service-logs.md), and built-in [security features](../tuning-security-settings/information-security-and-liferay-cloud.md).
 
 However, in order to take full advantage of Liferay Cloud's capabilities, there are some additional steps you can perform while getting started:
 
@@ -31,13 +31,13 @@ See [Environment Teams and Roles](../manage-and-optimize/environment-teams-and-r
 
 Single Sign-On allows you to use your preferred identity provider to authenticate Users to Liferay in your Liferay Cloud instance. This can help your sign-on experience feel smoother and more integrated with the rest of your project.
 
-Liferay Cloud supports Signle Sign-On Identity Providers that are compliant with SAML 2.0. For more information, see [Using SSO with Liferay Cloud](..//tuning-security-settings/using-sso-with-liferay-cloud.md).
+Liferay Cloud supports Signle Sign-On Identity Providers that are compliant with SAML 2.0. For more information, see [Using SSO with Liferay Cloud](../tuning-security-settings/using-sso-with-liferay-cloud.md).
 
 ## Add Custom Domains
 
 Ensure that your environment on Liferay Cloud hosts your own custom domains as needed. Liferay Cloud integrates with your custom domains, allowing you to define certified domains for each environment.
 
-See [Custom Domains](..//configuring-the-cloud-network/custom-domains.md) for more information.
+See [Custom Domains](../configuring-the-cloud-network/custom-domains.md) for more information.
 
 ## Set Up a Disaster Recovery Environment
 

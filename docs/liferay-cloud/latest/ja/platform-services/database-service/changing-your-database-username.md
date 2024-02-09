@@ -46,4 +46,4 @@ MySQLのユーザー名は `lcp-secret-database-user` のシークレットに�
 
 * [データベースサービス](./database-service.md)
 * [データベースパスワードの変更](./changing-your-database-password.md)
-* [シークレットで安全な環境変数を管理](../..//tuning-security-settings/managing-secure-environment-variables-with-secrets.md)
+* [シークレットで安全な環境変数を管理](../../tuning-security-settings/managing-secure-environment-variables-with-secrets.md)

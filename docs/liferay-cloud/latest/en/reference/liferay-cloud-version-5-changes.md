@@ -19,7 +19,7 @@ Liferay Cloud version 5 comes with several changes and new features:
 
 ModSecurity is a Web Application Firewall available in Liferay Cloud with web server version 5.x.x. It inspects requests sent to the web server in real time, against a predefined set of custom rules. This step prevents typical web application L7 attacks, like XSS and SQL injection.
 
-See [Enabling ModSecurity](..//tuning-security-settings/web-application-firewall.md) for more information.
+See [Enabling ModSecurity](../tuning-security-settings/web-application-firewall.md) for more information.
 
 ## Improved Regional Persistence
 

@@ -13,7 +13,7 @@ Liferay Cloud is a flexible platform that combines a collection of key component
 ![All of the key services and components integrated with Liferay Cloud are shown with their connections here.](./liferay-cloud-infrastructure/images/01.png)
 
 ```{note}
-Private cluster subscriptions also include a built-in [Web Application Firewall](..//tuning-security-settings/web-application-firewall.md). However, this is [not available with a shared cluster](./platform-limitations.md#security).
+Private cluster subscriptions also include a built-in [Web Application Firewall](../tuning-security-settings/web-application-firewall.md). However, this is [not available with a shared cluster](./platform-limitations.md#security).
 ```
 
 See the following list for a description of the various components.
@@ -30,7 +30,7 @@ Liferay Cloud integrates with project source code using Git. Built-in integratio
 
 ## VPN Server and Client
 
-Liferay Cloud environments can send and receive data through an encrypted tunnel using a customer's own VPN server. Liferay Cloud provides a client-to-site VPN service that enables connection from a supported VPN to its environments. OpenVPN and IPSec (IKEv2) protocols are supported for this connection. See the [VPN Integration Overview](..//configuring-the-cloud-network/vpn-integration-overview.md) for more information.
+Liferay Cloud environments can send and receive data through an encrypted tunnel using a customer's own VPN server. Liferay Cloud provides a client-to-site VPN service that enables connection from a supported VPN to its environments. OpenVPN and IPSec (IKEv2) protocols are supported for this connection. See the [VPN Integration Overview](../configuring-the-cloud-network/vpn-integration-overview.md) for more information.
 
 ## Docker Hub
 

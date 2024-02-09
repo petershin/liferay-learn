@@ -83,7 +83,7 @@ Tomcatのデフォルト設定を上書きする場合、Liferay CloudのLiferay
 
 ## 環境変数
 
-Liferay Cloud の Liferay サービスは、JVM メモリ設定やデータベース接続設定など、オンプレミスインスタンスとは異なる設定の代わりに [環境変数](../reference/defining-environment-variables.md) (または [secret](..//tuning-security-settings/managing-secure-environment-variables-with-secrets.md)) を使用します。環境変数は [ポータルのプロパティを上書きしたり置き換えたり](./liferay-service-environment-variables.md#overriding-portal-properties) するのにも使えます。
+Liferay Cloud の Liferay サービスは、JVM メモリ設定やデータベース接続設定など、オンプレミスインスタンスとは異なる設定の代わりに [環境変数](../reference/defining-environment-variables.md) (または [secret](../tuning-security-settings/managing-secure-environment-variables-with-secrets.md)) を使用します。環境変数は [ポータルのプロパティを上書きしたり置き換えたり](./liferay-service-environment-variables.md#overriding-portal-properties) するのにも使えます。
 
 詳しくは[Liferayサービス環境変数](./liferay-service-environment-variables.md)を参照してください。
 

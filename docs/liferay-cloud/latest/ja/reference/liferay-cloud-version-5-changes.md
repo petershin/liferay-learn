@@ -11,7 +11,7 @@ Liferay Cloud バージョン 5 は、いくつかの変更と新機能を備え
 
 ModSecurityは、Webサーバーのバージョンが5.x.xのLiferay Cloudで利用可能なWebアプリケーションファイアウォールです。 事前に定義されたカスタムルールに照らし合わせて、Webサーバーに送信されたリクエストをリアルタイムで検査します。 このステップでは、XSSやSQLインジェクションなどの典型的なWebアプリケーションのL7攻撃を防止します。
 
-詳しくは、 [Enabling ModSecurity](..//tuning-security-settings/web-application-firewall.md) をご覧ください。
+詳しくは、 [Enabling ModSecurity](../tuning-security-settings/web-application-firewall.md) をご覧ください。
 
 ## 地域持続性の向上
 

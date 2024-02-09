@@ -68,6 +68,6 @@ Next: [enable clustering for your Liferay service](./setting-up-clustering-for-t
 
 ## Relevant Concepts
 
-* [Custom Domains](https://learn.liferay.com/w/liferay-cloud//configuring-the-cloud-network/custom-domains)
-* [Custom SSL Certificates](https://learn.liferay.com/w/liferay-cloud//configuring-the-cloud-network/load-balancer#custom-ssl)
-* [VPN Integration](https://learn.liferay.com/w/liferay-cloud//configuring-the-cloud-network/vpn-integration-overview)
+* [Custom Domains](https://learn.liferay.com/w/liferay-cloud/configuring-the-cloud-network/custom-domains)
+* [Custom SSL Certificates](https://learn.liferay.com/w/liferay-cloud/configuring-the-cloud-network/load-balancer#custom-ssl)
+* [VPN Integration](https://learn.liferay.com/w/liferay-cloud/configuring-the-cloud-network/vpn-integration-overview)

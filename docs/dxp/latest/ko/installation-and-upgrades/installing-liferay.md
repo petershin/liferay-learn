@@ -31,7 +31,7 @@ Liferay Tomcat 번들은 모든 서버에 압축을 풀고 구성하고 실행�
 물론 온프레미스에서 지원되는 모든 애플리케이션 서버에 Liferay를 항상 설치할 수 있습니다. 
 
 ```{note}
-기업 가입자는 Liferay Cloud에서 [Liferay DXP 서비스 사용](https://learn.liferay.com/ko/w/liferay-cloud/customizing-liferay-dxp-in-the-cloud) 할 수 있습니다. Liferay Cloud는 인프라 비용(하드웨어, 전기 요금)을 줄이고, 더 많은 고객을 처리할 수 있도록 빠르게 확장하고, 시장 출시 시간을 단축하고, 사용하기 쉽습니다.
+기업 가입자는 Liferay Cloud에서 [Liferay DXP 서비스 사용](https://learn.liferay.com/ko/w/liferay-cloud/customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service) 할 수 있습니다. Liferay Cloud는 인프라 비용(하드웨어, 전기 요금)을 줄이고, 더 많은 고객을 처리할 수 있도록 빠르게 확장하고, 시장 출시 시간을 단축하고, 사용하기 쉽습니다.
 
 Liferay Cloud에 관심이 있으시면 Liferay Cloud [제품 정보](https://www.liferay.com/products/dxp-cloud) 를 참조하거나 Liferay 담당자에게 문의하십시오.
 ```

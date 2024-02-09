@@ -1,18 +1,18 @@
 ---
 toc:
-  - ./customizing-liferay-dxp-in-the-cloud/deploying-to-the-liferay-service.md
+  - ./customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/deploying-to-the-liferay-service.md
   - >-
-    - ./customizing-liferay-dxp-in-the-cloud/configuring-the-liferay-dxp-service.md
-    - ./customizing-liferay-dxp-in-the-cloud/liferay-service-environment-variables.md
-    - ./customizing-liferay-dxp-in-the-cloud/setting-up-clustering-in-liferay-cloud.md
-    - ./customizing-liferay-dxp-in-the-cloud/using-the-mysql-client.md
-    - ./customizing-liferay-dxp-in-the-cloud/upgrading-your-liferay-dxp-instance.md
+    - ./customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.md
+    - ./customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/liferay-service-environment-variables.md
+    - ./customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/setting-up-clustering-in-liferay-cloud.md
+    - ./customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/using-the-mysql-client.md
+    - ./customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/upgrading-your-liferay-dxp-instance.md
 ---
 # Liferay DXP 서비스 사용
 
 Liferay 서비스는 모든 프로젝트의 핵심입니다. 애플리케이션의 Liferay DXP 인스턴스를 실행하고 웹 서버, Elasticsearch, MySQL 데이터베이스와 같은 다른 서비스와 상호 작용합니다.
 
-![Liferay 서비스는 Liferay 클라우드에서 제공되는 여러 서비스 중 하나입니다.](./customizing-liferay-dxp-in-the-cloud/images/01.png)
+![Liferay 서비스는 Liferay 클라우드에서 제공되는 여러 서비스 중 하나입니다.](./customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/images/01.png)
 
 Liferay 클라우드의 Liferay 서비스는 온프레미스 인스턴스의 Liferay DXP와 동일한 방식으로 사용할 수 있습니다. 그러나 Liferay Cloud에서 인스턴스로 작업할 때 구성 및 개발 워크플로에도 몇 가지 차이점이 있습니다.
 
@@ -53,13 +53,13 @@ Liferay DXP에 사용자 지정 추가 사항을 배포하려면 새 모듈, 라
 
 `common/` 디렉터리를 제외한 환경별 폴더(예: `dev`, `uat`, `prod`)에 추가된 변경 사항은 해당 환경에 배포할 때 **만** 전파됩니다. `common/` 디렉터리에 추가된 변경 사항은 대상 배포 환경에 관계없이 **항상** 배포됩니다. 이는 모든 서비스에 대해 `configs/` 디렉터리 내의 모든 하위 폴더에 적용됩니다.
 
-Liferay 서비스는 다른 서비스에 비해 더 많은 사용자 지정 수단(예: 핫픽스 추가, 모듈의 소스 코드 빌드)을 제공하기 때문에 서비스를 배포할 때 고려해야 할 사항이 몇 가지 더 있습니다. 자세한 내용은 [Liferay 서비스에 배포하기](./customizing-liferay-dxp-in-the-cloud/deploying-to-the-liferay-service.md) 를 참조하세요. 또한 배포 워크플로 전반에 대한 자세한 내용은 [배포 워크플로 개요](./updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md) 를 참조하세요. Liferay Cloud에 배포하는 방법에 대한 튜토리얼은 [DCP 클라우드 콘솔을 통해 변경 사항 배포](./updating-services-in-liferay-paas/deploying-changes-via-the-liferay-cloud-console.md)을 참조하십시오.
+Liferay 서비스는 다른 서비스에 비해 더 많은 사용자 지정 수단(예: 핫픽스 추가, 모듈의 소스 코드 빌드)을 제공하기 때문에 서비스를 배포할 때 고려해야 할 사항이 몇 가지 더 있습니다. 자세한 내용은 [Liferay 서비스에 배포하기](./customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/deploying-to-the-liferay-service.md) 를 참조하세요. 또한 배포 워크플로 전반에 대한 자세한 내용은 [배포 워크플로 개요](./updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md) 를 참조하세요. Liferay Cloud에 배포하는 방법에 대한 튜토리얼은 [DCP 클라우드 콘솔을 통해 변경 사항 배포](./updating-services-in-liferay-paas/deploying-changes-via-the-liferay-cloud-console.md)을 참조하십시오.
 
 ## 설정
 
-`portal.properties` 변경 사항과 같이 Liferay 서비스에 구성을 적용하려면 해당 구성을 Git 리포지토리에 추가하고 변경 사항을 Git에 푸시해야 합니다. 이러한 구성 파일을 추가하는 방법에 대한 자세한 내용은 [Liferay DXP 서비스 구성](./customizing-liferay-dxp-in-the-cloud/configuring-the-liferay-dxp-service.md)을 참조하십시오.
+`portal.properties` 변경 사항과 같이 Liferay 서비스에 구성을 적용하려면 해당 구성을 Git 리포지토리에 추가하고 변경 사항을 Git에 푸시해야 합니다. 이러한 구성 파일을 추가하는 방법에 대한 자세한 내용은 [Liferay DXP 서비스 구성](./customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.md)을 참조하십시오.
 
-환경 변수는 Liferay 서비스를 구성하고 경우에 따라 포털 속성을 재정의하는 데에도 사용됩니다. 자세한 내용은 [Liferay 서비스 환경 변수](./customizing-liferay-dxp-in-the-cloud/liferay-service-environment-variables.md) 를 참조하세요.
+환경 변수는 Liferay 서비스를 구성하고 경우에 따라 포털 속성을 재정의하는 데에도 사용됩니다. 자세한 내용은 [Liferay 서비스 환경 변수](./customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/liferay-service-environment-variables.md) 를 참조하세요.
 
 ## 뜨거운 배치하십시요
 
@@ -71,7 +71,7 @@ Liferay 서비스는 다른 서비스에 비해 더 많은 사용자 지정 수�
 
 ## 클러스터링 사용
 
-Liferay Cloud에서 Liferay DXP를 클러스터링하는 것은 Liferay DXP에서 클러스터링하는 것에 비해 매우 간소화된 프로세스입니다. 클러스터링 지원은 Liferay Cloud에서 바로 사용할 수 있으며 활성화되어 있습니다. 클러스터링 동작 및 규모에 대한 추가 구성에는 몇 가지 추가 단계가 필요합니다. 자세한 내용은 [Liferay Cloud에서 클러스터링 설정](./customizing-liferay-dxp-in-the-cloud/setting-up-clustering-in-liferay-cloud.md) 을 참조하세요.
+Liferay Cloud에서 Liferay DXP를 클러스터링하는 것은 Liferay DXP에서 클러스터링하는 것에 비해 매우 간소화된 프로세스입니다. 클러스터링 지원은 Liferay Cloud에서 바로 사용할 수 있으며 활성화되어 있습니다. 클러스터링 동작 및 규모에 대한 추가 구성에는 몇 가지 추가 단계가 필요합니다. 자세한 내용은 [Liferay Cloud에서 클러스터링 설정](./customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/setting-up-clustering-in-liferay-cloud.md) 을 참조하세요.
 
 ## 스크립트 실행
 
@@ -99,21 +99,21 @@ Liferay DXP에는 웹에 콘텐츠를 빌드, 관리 및 배포할 수 있는 �
 
 ## 관련 주제
 
-* [Liferay 서비스에 배포](./customizing-liferay-dxp-in-the-cloud/deploying-to-the-liferay-service.md)
+* [Liferay 서비스에 배포](./customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/deploying-to-the-liferay-service.md)
 * [라이프레이 클라우드 서비스에 로그인하기](getting-started/logging-into-your-liferay-cloud-services.md)
-* [Liferay DXP 서비스 구성](./customizing-liferay-dxp-in-the-cloud/configuring-the-liferay-dxp-service.md)
+* [Liferay DXP 서비스 구성](./customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.md)
 * [DCP 클라우드 콘솔을 통한 변경 사항 배포](updating-services-in-liferay-paas/deploying-changes-via-the-liferay-cloud-console.md)
 
 ```{toctree}
 :maxdepth: 1
 
-customizing-liferay-dxp-in-the-cloud/deploying-to-the-liferay-service.md
-customizing-liferay-dxp-in-the-cloud/updating-your-dxp-instance-to-a-new-minor-version.md
-customizing-liferay-dxp-in-the-cloud/configuring-the-liferay-dxp-service.md
-customizing-liferay-dxp-in-the-cloud/liferay-service-environment-variables.md
-customizing-liferay-dxp-in-the-cloud/setting-up-clustering-in-liferay-cloud.md
-customizing-liferay-dxp-in-the-cloud/using-the-mysql-client.md
-customizing-liferay-dxp-in-the-cloud/upgrading-your-liferay-dxp-instance.md
+customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/deploying-to-the-liferay-service.md
+customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/updating-your-dxp-instance-to-a-new-minor-version.md
+customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.md
+customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/liferay-service-environment-variables.md
+customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/setting-up-clustering-in-liferay-cloud.md
+customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/using-the-mysql-client.md
+customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/upgrading-your-liferay-dxp-instance.md
 ```
 
 ```{raw} html
@@ -121,5 +121,5 @@ customizing-liferay-dxp-in-the-cloud/upgrading-your-liferay-dxp-instance.md
 ```
 
 ```{raw} html
-:file: customizing-liferay-dxp-in-the-cloud/landing.html
+:file: customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/landing.html
 ```

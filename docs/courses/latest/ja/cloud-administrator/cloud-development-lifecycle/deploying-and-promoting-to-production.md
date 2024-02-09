@@ -137,6 +137,6 @@ Next: [自動デプロイメント](./setting-up-automatic-deployment.md) を設
 ## 関連概念
 
 * [Liferay Cloud 導入ワークフローの概要](https://learn.liferay.com/w/liferay-cloud/updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow)
-* [Liferayサービスへのデプロイ](https://learn.liferay.com/w/liferay-cloud/customizing-liferay-dxp-in-the-cloud/deploying-to-the-liferay-service)
+* [Liferayサービスへのデプロイ](https://learn.liferay.com/w/liferay-cloud/customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/deploying-to-the-liferay-service)
 * [Liferay Cloud Consoleを使った変更のデプロイ](https://learn.liferay.com/w/liferay-cloud/updating-services-in-liferay-paas/deploying-changes-via-the-liferay-cloud-console)
 * [Liferay Cloudサービスへのログイン](https://learn.liferay.com/w/liferay-cloud/getting-started/logging-into-your-liferay-cloud-services)

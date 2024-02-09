@@ -59,6 +59,6 @@ You can follow similar steps to access the Jenkins CI web interface. Navigate to
 
 ## Related Topics
 
-* [Customizing Liferay DXP in the Cloud](../customizing-liferay-dxp-in-the-cloud.md)
+* [Customizing Liferay DXP in the Cloud](../customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service.md)
 * [Continuous Integration](../platform-services/continuous-integration.md)
 * [Web Server Service](../platform-services/web-server-service.md)

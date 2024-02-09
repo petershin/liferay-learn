@@ -52,6 +52,6 @@
 
 ## 関連トピック
 
-* [Liferay DXPサービスの使用](../customizing-liferay-dxp-in-the-cloud.md)
+* [Liferay DXPサービスの使用](../customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service.md)
 * [継続的インテグレーション](../platform-services/continuous-integration.md)
 * [Webサーバーサービス](../platform-services/web-server-service.md)

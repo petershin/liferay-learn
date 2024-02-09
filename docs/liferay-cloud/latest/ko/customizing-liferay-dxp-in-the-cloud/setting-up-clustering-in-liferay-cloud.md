@@ -70,5 +70,5 @@ Aug 26 09:42:22.779 build-90 [liferay-68b8f6b48d-hdj9t] [dxp] INFO  [Incoming-1,
 ## 관련 주제
 
 * [자동 크기 조정](../manage-and-optimize/auto-scaling.md)
-* [Liferay DXP 서비스 소개](../customizing-liferay-dxp-in-the-cloud.md)
+* [Liferay DXP 서비스 소개](../customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service.md)
 * [Liferay DXP 서비스 구성](./configuring-the-liferay-dxp-service.md)

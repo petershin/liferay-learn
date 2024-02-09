@@ -4,16 +4,16 @@
 
 ## 구성 파일 구성
 
-먼저 마이그레이션하려는 온프레미스 설치에서 Liferay 구성 파일을 구성합니다. 여기에는 사용 중인 [개의 포털 속성 파일](../customizing-liferay-dxp-in-the-cloud/configuring-the-liferay-dxp-service.md#portal-properties) 이 포함됩니다.
+먼저 마이그레이션하려는 온프레미스 설치에서 Liferay 구성 파일을 구성합니다. 여기에는 사용 중인 [개의 포털 속성 파일](../customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.md#portal-properties) 이 포함됩니다.
 
 ```{tip}
 Liferay 관련 코드는 [Liferay DXP 작업 영역](https://learn.liferay.com/dxp/latest/en/developing-applications/tooling/liferay_workspace.html) 과 같이 구성된 'liferay' 폴더에 속합니다.
 ```
 
 이전에 복제한 Liferay Cloud 프로젝트 리포지토리에서 [](./matching-dxp-versions.md#clone-the-liferay-cloud-repository) liferay/configs/ `/{ENV}폴더(Liferay Cloud 환경에 해당)로 이동하고` 모든 `
-포털 속성 <a href="../customizing-liferay-dxp-in-the-cloud/configuring-the-liferay-dxp-service.md#portal-properties">파일(예:</a> portal-ext.properties`) 각각의 적절한 환경 폴더에 넣습니다.
+포털 속성 <a href="../customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.md#portal-properties">파일(예:</a> portal-ext.properties`) 각각의 적절한 환경 폴더에 넣습니다.
 
-[OSGi 구성](../customizing-liferay-dxp-in-the-cloud/configuring-the-liferay-dxp-service.md#osgi-configurations) 파일(예: `.cfg` 또는 `.config` 파일)을 `osgi/`이라는 적절한 환경 폴더의 하위 폴더에 넣습니다.
+[OSGi 구성](../customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.md#osgi-configurations) 파일(예: `.cfg` 또는 `.config` 파일)을 `osgi/`이라는 적절한 환경 폴더의 하위 폴더에 넣습니다.
 
 예를 들어 `dev` 환경의 경우 포털 속성 파일을 `liferay/configs/dev`에 넣고 OSGi 구성 파일을 `liferay/configs/dev/osgi/`에 넣습니다.
 

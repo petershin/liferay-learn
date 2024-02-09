@@ -36,7 +36,7 @@ The Liferay Tomcat bundle is an archive you can extract onto any server, configu
 Of course, you can always install Liferay on any supported application server, on premises. 
 
 ```{note}
-Enterprise subscribers can [deploy Liferay DXP as a service](https://learn.liferay.com/en/w/liferay-cloud/customizing-liferay-dxp-in-the-cloud) on Liferay Cloud. Liferay Cloud reduces infrastructure costs (hardware, electricity bills), scales fast to handle more customers, provides a faster time to market, and is easy use.
+Enterprise subscribers can [deploy Liferay DXP as a service](https://learn.liferay.com/en/w/liferay-cloud/customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service) on Liferay Cloud. Liferay Cloud reduces infrastructure costs (hardware, electricity bills), scales fast to handle more customers, provides a faster time to market, and is easy use.
 
 If you're interested in Liferay Cloud, please see the Liferay Cloud [product information](https://www.liferay.com/products/dxp-cloud) or contact a Liferay representative.
 ```

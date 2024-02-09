@@ -101,6 +101,6 @@ Dynatraceの認証情報でログインすると、ログの軌跡を確認し�
 
 ## 関連トピック
 
-* [Liferay DXPサービスの使用](../customizing-liferay-dxp-in-the-cloud.md)
+* [Liferay DXPサービスの使用](../customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service.md)
 * [リアルタイムアラート](./real-time-alerts.md)
 * [割り当て](./quotas.md)

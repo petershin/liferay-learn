@@ -4,7 +4,7 @@ uuid: 7280dbef-d248-4e48-b3bb-6396f4f55b97
 
 # Installing a Hotfix
 
-Keeping your Liferay instance up-to-date is a critical part of maintenance in Liferay Cloud. If you have to patch an issue before it appears in the [next version of Liferay](https://learn.liferay.com/w/liferay-cloud/customizing-liferay-dxp-in-the-cloud/updating-your-dxp-instance-to-a-new-minor-version), however, you can deploy a hotfix. Hotfixes are a temporary solution provided by Liferay Support to fix these issues until you are ready to update to the fixed version.
+Keeping your Liferay instance up-to-date is a critical part of maintenance in Liferay Cloud. If you have to patch an issue before it appears in the [next version of Liferay](https://learn.liferay.com/w/liferay-cloud/customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/updating-your-dxp-instance-to-a-new-minor-version), however, you can deploy a hotfix. Hotfixes are a temporary solution provided by Liferay Support to fix these issues until you are ready to update to the fixed version.
 
 Here, you'll walk Kyle through the process of requesting and installing a hotfix. He has already scheduled downtime for the site so the hotfix can be deployed and tested in production. 
 
@@ -76,6 +76,6 @@ Next: [Cloud Development Life Cycle](../cloud-development-lifecycle.md).
 
 ## Relevant Concepts
 
-* [Deploying to the Liferay Service](https://learn.liferay.com/w/liferay-cloud/customizing-liferay-dxp-in-the-cloud/deploying-to-the-liferay-service)
-* [Updating Your Liferay Instance to a New Minor Version](https://learn.liferay.com/w/liferay-cloud/customizing-liferay-dxp-in-the-cloud/updating-your-dxp-instance-to-a-new-minor-version)
-* [Upgrading Your Liferay DXP Instance](https://learn.liferay.com/w/liferay-cloud/customizing-liferay-dxp-in-the-cloud/upgrading-your-liferay-dxp-instance)
+* [Deploying to the Liferay Service](https://learn.liferay.com/w/liferay-cloud/customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/deploying-to-the-liferay-service)
+* [Updating Your Liferay Instance to a New Minor Version](https://learn.liferay.com/w/liferay-cloud/customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/updating-your-dxp-instance-to-a-new-minor-version)
+* [Upgrading Your Liferay DXP Instance](https://learn.liferay.com/w/liferay-cloud/customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/upgrading-your-liferay-dxp-instance)

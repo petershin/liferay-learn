@@ -144,7 +144,7 @@ liferay
 
 ## 관련 주제
 
-* [Liferay DXP 서비스 이용하기](../customizing-liferay-dxp-in-the-cloud.md)
+* [Liferay DXP 서비스 이용하기](../customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service.md)
 * [Liferay DXP 서비스 구성](./configuring-the-liferay-dxp-service.md)
 * [Liferay Cloud 배포 워크플로우 개요](../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md)
 * [CLI 도구](../reference/command-line-tool.md)

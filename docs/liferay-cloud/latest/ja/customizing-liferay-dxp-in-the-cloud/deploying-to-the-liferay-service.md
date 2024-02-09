@@ -143,7 +143,7 @@ liferay
 
 ## 関連トピック
 
-* [Liferay DXP Service の使用](../customizing-liferay-dxp-in-the-cloud.md)
+* [Liferay DXP Service の使用](../customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service.md)
 * [Liferay DXPサービスの設定](./configuring-the-liferay-dxp-service.md)
 * [Liferay クラウド展開ワークフローの概要](../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md)
 * [CLIツール](../reference/command-line-tool.md)

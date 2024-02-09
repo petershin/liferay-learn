@@ -36,7 +36,7 @@ Liferay DXP에 대한 부 버전 업데이트도 프로젝트 저장소를 변�
 
 1. [Docker Hub](https://hub.docker.com/r/liferay/dxp/tags) 에서 업데이트하려는 Liferay 버전의 태그를 찾으십시오.
 
-1. 리포지토리에서 [`liferay/gradle.properties`](../customizing-liferay-dxp-in-the-cloud.md#choosing-a-version) 의 `liferay.workspace.docker.image.liferay` 속성 값을 새 버전의 태그로 변경합니다.
+1. 리포지토리에서 [`liferay/gradle.properties`](../customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service.md#choosing-a-version) 의 `liferay.workspace.docker.image.liferay` 속성 값을 새 버전의 태그로 변경합니다.
 
     ```properties
     liferay.workspace.docker.image.liferay=liferay/dxp:7.3.10-ga1

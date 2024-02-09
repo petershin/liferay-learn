@@ -89,7 +89,7 @@ Liferay Cloud의 Liferay 서비스는 JVM 메모리 설정이나 데이터베이
 
 ## 관련 주제
 
-* [Liferay DXP 서비스 사용](../customizing-liferay-dxp-in-the-cloud.md)
+* [Liferay DXP 서비스 사용](../customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service.md)
 * [Liferay Cloud에서 클러스터링 활성화하기](./setting-up-clustering-in-liferay-cloud.md)
 * [문맥 재산](https://learn.liferay.com/dxp/latest/ko/installation-and-upgrades/reference/portal-properties.html)
 * [라이프레이 서비스 환경 변수](./liferay-service-environment-variables.md)

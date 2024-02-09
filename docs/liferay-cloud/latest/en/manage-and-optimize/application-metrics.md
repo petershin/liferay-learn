@@ -97,6 +97,6 @@ Log in with your Dynatrace credentials to check log trails and create custom das
 
 ## Related Topics
 
-* [Customizing Liferay DXP in the Cloud](../customizing-liferay-dxp-in-the-cloud.md)
+* [Customizing Liferay DXP in the Cloud](../customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service.md)
 * [Real-Time Alerts](./real-time-alerts.md)
 * [Quotas](./quotas.md)

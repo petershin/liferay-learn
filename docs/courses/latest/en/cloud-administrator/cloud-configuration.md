@@ -19,7 +19,7 @@ The next two modules (Cloud Configuration and the [Cloud Development Lifecycle](
 
 Each of your development or production environments includes all of these as separate services in a Cloud network:
 
-* Your [Liferay instance](https://learn.liferay.com/w/liferay-cloud/customizing-liferay-dxp-in-the-cloud)
+* Your [Liferay instance](https://learn.liferay.com/w/liferay-cloud/customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service)
 * An [Nginx web server](https://learn.liferay.com/w/liferay-cloud/platform-services/web-server-service)
 * An [Elasticsearch instance](https://learn.liferay.com/w/liferay-cloud/platform-services/search-service)
 * A [MySQL database](https://learn.liferay.com/w/liferay-cloud/platform-services/database-service/database-service)

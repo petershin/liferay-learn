@@ -46,7 +46,7 @@ Liferay Cloud は、HTTP(S) のトラフィックを複数のインスタンス�
 
 [Liferay DXP](https://www.liferay.com/products/dxp) は、さまざまなアプリケーションからのデータやサービスを、1つの中央ユーザー・インターフェース・プラットフォームに接続し、編成し、統合しています。 Liferay Cloudは、クラウド上のDXPインスタンスに対して、迅速かつ信頼性の高い実装を提供します。 [Webサーバーサービス](#web-server) は、DXPへのすべてのHTTP(S)トラフィックのエントリーポイントとゲートウェイを提供します。
 
-設定や任意のカスタムモジュールを [独自のプロジェクトリポジトリ](#repository-integration) に追加することで、Liferayサービスは通常のDXPインストールと同様に高度なカスタマイズが可能です。詳しくは、 [Liferayサービスについて](../customizing-liferay-dxp-in-the-cloud.md)をご覧ください。
+設定や任意のカスタムモジュールを [独自のプロジェクトリポジトリ](#repository-integration) に追加することで、Liferayサービスは通常のDXPインストールと同様に高度なカスタマイズが可能です。詳しくは、 [Liferayサービスについて](../customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service.md)をご覧ください。
 
 ## 検索
 

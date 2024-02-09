@@ -46,7 +46,7 @@ Liferay Cloud는 HTTP(S) 트래픽을 여러 인스턴스에 분산합니다. [G
 
 [Liferay DXP](https://www.liferay.com/products/dxp) 은 다양한 애플리케이션의 데이터와 서비스를 하나의 중앙 사용자 인터페이스 플랫폼으로 연결, 오케스트레이션 및 통합합니다. Liferay Cloud는 클라우드에서 DXP 인스턴스에 대한 빠르고 안정적인 구현을 제공합니다. [웹 서버 서비스](#web-server) 은 DXP에 대한 모든 HTTP(S) 트래픽에 대한 진입점 및 게이트웨이를 제공합니다.
 
-자신의 프로젝트 저장소 [에 구성 및 사용자 정의 모듈을 추가함으로써](#repository-integration) 서비스는 일반 DXP 설치와 마찬가지로 고도로 사용자 정의할 수 있습니다. 자세한 내용은 [Liferay 서비스 소개](../customizing-liferay-dxp-in-the-cloud.md) 을 참조하십시오.
+자신의 프로젝트 저장소 [에 구성 및 사용자 정의 모듈을 추가함으로써](#repository-integration) 서비스는 일반 DXP 설치와 마찬가지로 고도로 사용자 정의할 수 있습니다. 자세한 내용은 [Liferay 서비스 소개](../customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service.md) 을 참조하십시오.
 
 ## 검색
 

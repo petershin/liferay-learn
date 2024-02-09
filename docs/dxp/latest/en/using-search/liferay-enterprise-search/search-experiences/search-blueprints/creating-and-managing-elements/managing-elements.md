@@ -12,6 +12,14 @@ uuid: 9c605bf4-a130-4723-93e3-04c2f725098b
 
 To create new Elements, click _Add_ (![Add](../../../../../images/icon-add.png)). See [Creating Elements](./creating-elements.md) for more details.
 
+As of Liferay DXP 2023.Q4+, the title and description fields are localizable. To provide translations, use one of these approaches:
+
+1. After the element is created, re-open the title and description modal, then select the language and begin translating.
+
+   ![You can translate the element title and description fields.](./creating-elements/images/05.png)
+
+1. Use the [Language Override](../../../../system-administration/configuring-liferay/changing-language-translations.md#adding-a-language-key-and-translation) application to provide a language key (e.g., `search-for-new-content`) and its translated values (e.g., _Search for New Content_ in the English translation).
+
 To delete existing custom Elements, select the Element(s) using the checkbox selector and click the Delete (![Delete](../../../../../images/icon-trash.png)) button.
 
 ![Custom Elements can be viuewed, copied, exported, or deleted.](./managing-elements/images/01.png)

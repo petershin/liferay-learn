@@ -117,7 +117,6 @@ You can have a more robust editing experience for building your Elements. From t
 
 Name the Element and click _Create_. The Element Source editor appears, with the Predefined Variables in the pane to the left of the editor. As you type in the JSON editor, auto-completion reveals the available properties. To further understand the available JSON properties, see [Understanding the Schema](#understanding-the-element-schema).
 
-
 ![Create Elements in the Element source editor.](./creating-elements/images/02.png)
 
 The UI configuration options are defined in a `uiConfiguration` property in the Element JSON. To preview the Element's configuration window in the Query Builder, click the _Preview_ link (next to the Cancel button).

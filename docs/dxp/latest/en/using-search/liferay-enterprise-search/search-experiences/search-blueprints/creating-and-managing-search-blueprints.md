@@ -24,8 +24,9 @@ To create Search Blueprints,
 
    As of Liferay DXP 2023.Q4+, the title and description fields are localizable. To provide translations, use one of these approaches:
 
-   1. From the blueprint's title and description modal, select the language flag and translate directly in the modal.
+   1. After the blueprint is created, re-open the title and description modal, select the language and begin translating.
 
+      ![You can translate the blueprint title and description.](./creating-and-managing-search-blueprints/images/16.png)
    1. Use the [Language Override](../../../../system-administration/configuring-liferay/changing-language-translations.md#adding-a-language-key-and-translation) application to provide a language key (e.g., `search-for-new-content`) and its translated values (e.g., _Search for New Content_ in the English translation).
 
 1. Depending on your Blueprint plan, next you'll use these menus to continue building the [Blueprint](./understanding-search-blueprints.md#what-is-a-blueprint):

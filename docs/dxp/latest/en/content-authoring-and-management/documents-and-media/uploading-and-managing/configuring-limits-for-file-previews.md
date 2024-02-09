@@ -1,7 +1,7 @@
 ---
 uuid: 91bdb111-e5f0-4ac1-a1cf-5e3dd020a7e6
 ---
-# Configuring File Preview Limits
+# Configuring Limits for File Previews
 {bdg-secondary}`Liferay DXP 2024.Q1 U112`
 
 You can preview certain documents (e.g. PDF or text files) in the Documents and Media application. In some cases, you might want to limit the number of pages a user can preview.
@@ -25,7 +25,7 @@ To configure the file preview and limit the number of previewed pages,
 
 1. Click *Documents and Media* under Content and Data.
 
-![Configure the file preview limits through system or instance settings.](./configuring-file-preview-limits/images/01.png)
+![Configure the file preview limits through system or instance settings.](./configuring-limits-for-file-previews/images/01.png)
 
 1. On the left menu, select *File Preview Limits* (1).
 
@@ -43,7 +43,7 @@ To configure the file preview and limit the number of previewed pages,
 
 Once the file preview limits are set, users will see a message, while previewing a document, indicating that the preview may not show all pages.
 
-![While previewing a file, users will see a message indicating that the preview may not show all pages.](./configuring-file-preview-limits/images/02.png)
+![While previewing a file, users will see a message indicating that the preview may not show all pages.](./configuring-limits-for-file-previews/images/02.png)
 
 ## Related Topics
 

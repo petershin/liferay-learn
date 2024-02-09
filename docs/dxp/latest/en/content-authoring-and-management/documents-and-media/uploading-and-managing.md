@@ -8,7 +8,7 @@ toc:
   - ./uploading-and-managing/editing-images.md
   - ./uploading-and-managing/using-file-expiration-and-review-dates.md
   - ./uploading-and-managing/configuring-document-urls.md
-  - ./uploading-and-managing/configuring-file-preview-limits.md
+  - ./uploading-and-managing/configuring-limits-for-file-previews.md
   - ./uploading-and-managing/linking-to-files-on-google-drive.md
   - ./uploading-and-managing/enabling-docusign-digital-signatures.md
   - ./uploading-and-managing/creating-documents.md
@@ -31,7 +31,7 @@ uuid: b5b19386-5db0-4478-bf64-af9308f5be08
 - [Editing Images](./uploading-and-managing/editing-images.md)
 - [Using File Expiration and Review Dates](./uploading-and-managing/using-file-expiration-and-review-dates.md)
 - [Configuring Document URLs](./uploading-and-managing/configuring-document-urls.md)
-- [Configuring File Preview Limits](./uploading-and-managing/configuring-file-preview-limits.md)
+- [Configuring File Preview Limits](./uploading-and-managing/configuring-limits-for-file-previews.md)
 - [Linking to Files on Google Drive](./uploading-and-managing/linking-to-files-on-google-drive.md)
 - [Enabling DocuSign Digital Signature](./uploading-and-managing/enabling-docusign-digital-signatures.md)
 

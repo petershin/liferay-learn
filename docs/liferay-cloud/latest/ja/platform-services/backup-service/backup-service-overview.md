@@ -58,7 +58,7 @@ Backups ページから手動で環境をバックアップするには、 **Bac
 
 ログを見る_をクリックすると、ログページにリダイレクトされ、バックアップのステージをリアルタイムで見ることができます。 バックアップサービスのページの **Logs** タブでバックアップログを見ることもできます。
 
-サービスログの閲覧については、 [ログ管理](../../support-and-troubleshooting/reading-liferay-cloud-service-logs.md) を参照してください。
+サービスログの閲覧については、 [ログ管理](../../support-and-troubleshooting/troubleshooting/reading-liferay-cloud-service-logs.md) を参照してください。
 
 ## バックアップサービスの設定
 
@@ -192,7 +192,7 @@ Liferay Cloudのコンソールで環境変数を設定し、後で`backup/LCP.j
 | :---------------------------------------------- | :------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `LCP_BACKUP_CLEANUP_SCHEDULE`                   | 0 1 * *** | この変数は、 [cron scheduling syntax](https://crontab.guru/) を使って、自動クリーンアップをスケジュールします。 クリーンアップでは、バックアップ保持期間を超えたバックアップをすべて削除します。 これは `LCP_BACKUP_CREATE_SCHEDULE` と競合してはならない。                  |
 | `LCP_BACKUP_CREATE_SCHEDULE`                    | `[5-55][0-1] * * *` | この変数は、 [cron scheduling syntax](https://crontab.guru/) . これは `LCP_BACKUP_CLEANUP_SCHEDULE` と競合してはならない。 バックアップサービスのバージョン `3.2.1` 以降では、値が指定されない場合、ランダムなデフォルト値が作成される。                                                     |
-| `LCP_BACKUP_RESTORE_SCHEDULE`                   | 該当なし                                               | この変数は、 [cron scheduling syntax](https://crontab.guru/) を使って、自動復元をスケジュールします。 [ディザスタリカバリ環境](../../support-and-troubleshooting/configuring-cross-region-disaster-recovery.md) での使用を目的としています。 |
+| `LCP_BACKUP_RESTORE_SCHEDULE`                   | 該当なし                                               | この変数は、 [cron scheduling syntax](https://crontab.guru/) を使って、自動復元をスケジュールします。 [ディザスタリカバリ環境](../../support-and-troubleshooting/troubleshooting/configuring-cross-region-disaster-recovery.md) での使用を目的としています。 |
 | `LCP_BACKUP_RESTORE_STRATEGY`                   | `OVERWRITE`                                        | デフォルトでは、既存のインスタンスは直ちに停止されます。 既存のインスタンスを停止する前に新しいデータベースインスタンスとボリュームを起動するには、`PREPARE_AND_SWAP`ストラテジーを使用する。                                                                                          |
 | `LCP_BACKUP_RETENTION_PERIOD`                   | `30`                                               | この変数は、スケジュールされたクリーンアップでどのバックアップを削除するかを決定します。 クリーンアップによって削除される前にバックアップを保持する日数を選択します。 最大保存期間は30日です。                                                                                                 |
 | `LCP_DATABASE_SERVICE`                          | `database`                                         | データベースサービスのID。                                                                                                                                                                                    |

@@ -275,6 +275,6 @@ Windows 7 및 8의 경우 **제어판** &rarr; **프로그램 추가/제거** �
 
 ## 관련 주제
 
-* [문제 해결 도구 및 리소스](../support-and-troubleshooting/troubleshooting-tools-and-resources.md)
+* [문제 해결 도구 및 리소스](../support-and-troubleshooting/troubleshooting/troubleshooting-tools-and-resources.md)
 * [CLI 도구를 통해 변경 사항 배포](../updating-services-in-liferay-paas/deploying-changes-via-the-cli-tool.md)
 * [Liferay Cloud 스택 업그레이드](./upgrading-your-liferay-cloud-stack.md)

@@ -62,7 +62,7 @@ The instance ID for this message (in this example, `[liferay-7485669bdd-7ktfl]`)
 
 - A randomly generated **version ID**: in this example, `7485669bdd`. This corresponds to the version of your service that has been deployed with possible changes. Note that new deployments, changes to environment variables, and even manually restarting the service all generate a new version ID (because a new change may have been made in the configuration).
 
-- A randomly generated **container ID**: in this example, `7ktfl`. Whenever a new container is created (for example, after you deploy a new build and the service restarts), a new container ID is generated because a new container is created each time the service starts up. Note that any restart generates a new container ID, even when the version ID does not change (for example, when a [liveness or readiness probe failure](../support-and-troubleshooting/self-healing.md) triggers a restart).
+- A randomly generated **container ID**: in this example, `7ktfl`. Whenever a new container is created (for example, after you deploy a new build and the service restarts), a new container ID is generated because a new container is created each time the service starts up. Note that any restart generates a new container ID, even when the version ID does not change (for example, when a [liveness or readiness probe failure](../support-and-troubleshooting/troubleshooting/self-healing.md) triggers a restart).
 
 ### Instance ID for Stateful Set Type Logs
 

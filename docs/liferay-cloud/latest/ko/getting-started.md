@@ -78,7 +78,7 @@ Liferay Cloud는 보안을 염두에 두고 설계되었습니다. Liferay Cloud
 
 ## 애플리케이션 개발 도구
 
-실시간 빌드 및 [배포 로그](./support-and-troubleshooting/reading-liferay-cloud-service-logs.md)로 애플리케이션 배포 및 성능을 추적합니다. 팀은 웹 [콘솔이나 터미널을 통해 에 액세스하거나 로그를](./support-and-troubleshooting/shell-access.md) 다운로드하여 스택 추적을 분석하고 버그를 수 있습니다. 다운로드
+실시간 빌드 및 [배포 로그](./support-and-troubleshooting/troubleshooting/reading-liferay-cloud-service-logs.md)로 애플리케이션 배포 및 성능을 추적합니다. 팀은 웹 [콘솔이나 터미널을 통해 에 액세스하거나 로그를](./support-and-troubleshooting/troubleshooting/shell-access.md) 다운로드하여 스택 추적을 분석하고 버그를 수 있습니다. 다운로드
 
 ![실시간 빌드 및 배포 로그는 애플리케이션의 문제를 해결하는 데 도움이 됩니다.](./getting-started/images/06.png)
 

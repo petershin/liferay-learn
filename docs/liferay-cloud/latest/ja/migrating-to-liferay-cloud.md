@@ -72,7 +72,7 @@ Liferay Cloudへの移行には、独自のカスタムコード、モジュー�
 
 移行プロセスをスムーズに開始できるように、事前に移行用の環境を準備しましょう。
 
-まだの場合は、 [初期設定の概要](./getting-started/initial-setup-overview.md) のタスクを完了し、Liferay Cloud 環境が期待通りに稼働していることを確認してください。 移行中に問題が発生した場合は、 [サポートアクセス](./support-and-troubleshooting/support-access.md) を有効にしてください。Support Accessを有効にすると、Liferay Cloudのサポートスタッフがプロジェクトのコンソールやログなどにアクセスできるようになり、必要に応じてサポートできるようになります。
+まだの場合は、 [初期設定の概要](./getting-started/initial-setup-overview.md) のタスクを完了し、Liferay Cloud 環境が期待通りに稼働していることを確認してください。 移行中に問題が発生した場合は、 [サポートアクセス](./support-and-troubleshooting/troubleshooting/support-access.md) を有効にしてください。Support Accessを有効にすると、Liferay Cloudのサポートスタッフがプロジェクトのコンソールやログなどにアクセスできるようになり、必要に応じてサポートできるようになります。
 
 リポジトリをセットアップし（ [GitHub](./getting-started/configuring-your-github-repository.md), [Bitbucket](./getting-started/configuring-your-bitbucket-repository.md), または [GitLab](./getting-started/configuring-your-gitlab-repository.md)を使用）、デプロイできることを確認します。 この移行では、プロセス全体を通じて複数の変更を展開する必要があるため、移行を進めるにはそれらを展開できなければならない。
 

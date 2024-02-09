@@ -79,7 +79,7 @@ Liferay Cloudのコンソールからカスタムドメインを追加すると�
 ```
 
 ```{important}
-追加したカスタムドメインごとに特定の環境を定義する必要があり、複数の環境で同じカスタムドメインを使用することはできません（異なる地域の[Disaster Recovery environments](../../support-and-troubleshooting/configuring-cross-region-disaster-recovery.md) は除きます）。 これは、Liferay Cloud が証明書を適切に生成し、ユーザーを正しいドメインにルーティングするために必要なものです。
+追加したカスタムドメインごとに特定の環境を定義する必要があり、複数の環境で同じカスタムドメインを使用することはできません（異なる地域の[Disaster Recovery environments](../../support-and-troubleshooting/troubleshooting/configuring-cross-region-disaster-recovery.md) は除きます）。 これは、Liferay Cloud が証明書を適切に生成し、ユーザーを正しいドメインにルーティングするために必要なものです。
 ```
 
 カスタムドメインがサービスに追加され、変更がデプロイされると、Liferay Cloudがルーティングを処理します。

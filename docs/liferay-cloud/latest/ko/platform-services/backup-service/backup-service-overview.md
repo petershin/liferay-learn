@@ -58,7 +58,7 @@ Liferay 인스턴스에서 데이터가 활발하게 변경되는 동안 생성�
 
 **로그 보기** 를 클릭하면 실시간으로 백업 단계를 볼 수 있는 로그 페이지로 리디렉션됩니다. 백업 서비스 페이지의 **로그** 탭에서 백업 로그를 볼 수도 있습니다.
 
-서비스 로그 보기에 대한 자세한 내용은 [로그 관리](../../support-and-troubleshooting/reading-liferay-cloud-service-logs.md)를 참조하세요.
+서비스 로그 보기에 대한 자세한 내용은 [로그 관리](../../support-and-troubleshooting/troubleshooting/reading-liferay-cloud-service-logs.md)를 참조하세요.
 
 ## 백업 서비스 구성
 
@@ -191,7 +191,7 @@ Liferay Cloud 콘솔을 통해 환경 변수를 설정했지만 나중에 `backu
 | :---------------------------------------------- | :------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `LCP_BACKUP_CLEANUP_SCHEDULE`                   | 0 1 * * * | 이 변수는 [cron 예약 구문](https://crontab.guru/) 을 사용하여 자동 정리를 예약합니다. 정리는 백업 보존 기간을 초과하는 모든 백업을 제거합니다. `LCP_BACKUP_CREATE_SCHEDULE`과 충돌해서는 안 됩니다.                       |
 | `LCP_BACKUP_CREATE_SCHEDULE`                    | `[5-55][0-1] * * *`        | 이 변수는 [cron 예약 구문](https://crontab.guru/) 을 사용하여 자동 백업을 예약합니다. `LCP_BACKUP_CLEANUP_SCHEDULE`과 충돌해서는 안 됩니다. 백업 서비스 '3.2.1' 버전 이상에서는 값을 지정하지 않으면 임의의 기본값이 생성됩니다.   |
-| `LCP_BACKUP_RESTORE_SCHEDULE`                   | N/A                        | 이 변수는 [cron 예약 구문](https://crontab.guru/) 을 사용하여 자동 복원을 예약합니다. [재해 복구 환경](../../support-and-troubleshooting/configuring-cross-region-disaster-recovery.md)과 함께 사용하기 위한 것입니다. |
+| `LCP_BACKUP_RESTORE_SCHEDULE`                   | N/A                        | 이 변수는 [cron 예약 구문](https://crontab.guru/) 을 사용하여 자동 복원을 예약합니다. [재해 복구 환경](../../support-and-troubleshooting/troubleshooting/configuring-cross-region-disaster-recovery.md)과 함께 사용하기 위한 것입니다. |
 | `LCP_BACKUP_RESTORE_STRATEGY`                   | `OVERWRITE`                | 기본적으로 기존 인스턴스는 즉시 중단됩니다. 기존 인스턴스를 종료하기 전에 새로운 데이터베이스 인스턴스와 볼륨을 시작하려면 'PREPARE_AND_SWAP' 전략을 사용하세요.                                                            |
 | `LCP_BACKUP_RETENTION_PERIOD`                   | `30`                       | 이 변수는 예약된 정리 중에 제거되는 백업을 결정합니다. 정리를 통해 제거되기 전에 백업이 보관되는 일수를 선택합니다. 최대 보존 기간은 30일입니다.                                                                            |
 | `LCP_DATABASE_SERVICE`                          | `database`                 | 데이터베이스 서비스의 ID입니다.                                                                                                                                              |

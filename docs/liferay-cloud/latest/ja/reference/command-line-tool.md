@@ -275,6 +275,6 @@ Windows 7および8の場合は、 ［**コントロールパネル**］ &rarr; 
 
 ## 関連トピック
 
-* [トラブルシューティングツールとリソース](../support-and-troubleshooting/troubleshooting-tools-and-resources.md)
+* [トラブルシューティングツールとリソース](../support-and-troubleshooting/troubleshooting/troubleshooting-tools-and-resources.md)
 * [CLIツールによる変更点のデプロイ](../updating-services-in-liferay-paas/deploying-changes-via-the-cli-tool.md)
 * [Liferay Cloudスタックのアップグレード](./upgrading-your-liferay-cloud-stack.md)

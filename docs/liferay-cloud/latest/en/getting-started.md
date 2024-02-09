@@ -83,7 +83,7 @@ These robust systems enable the creation of fault tolerant processes to meet org
 
 ## Application Development Tools
 
-Keep track of application deployments and performance with real-time build and [deployment logs](./support-and-troubleshooting/reading-liferay-cloud-service-logs.md). Teams can analyze stack traces and troubleshoot bugs by [accessing the shell](./support-and-troubleshooting/shell-access.md) via the web console or terminal, and/or by downloading the logs.
+Keep track of application deployments and performance with real-time build and [deployment logs](./support-and-troubleshooting/troubleshooting/reading-liferay-cloud-service-logs.md). Teams can analyze stack traces and troubleshoot bugs by [accessing the shell](./support-and-troubleshooting/troubleshooting/shell-access.md) via the web console or terminal, and/or by downloading the logs.
 
 ![Real-time build and deployment logs help you solve problems with your applications.](./getting-started/images/06.png)
 

@@ -23,7 +23,7 @@ For every connection configured in this private network, you must specify these 
 `external`: Whether your connection is available to external connections. The default value `false` restricts the connection to internal Liferay Cloud connections.
 
 ```{tip}
-If you expose a connection to external connections, then you may need to troubleshoot the connection using your service's shell. See [Shell Access](../../support-and-troubleshooting/shell-access.md) for more information.
+If you expose a connection to external connections, then you may need to troubleshoot the connection using your service's shell. See [Shell Access](../../support-and-troubleshooting/troubleshooting/shell-access.md) for more information.
 ```
 
 Here's an example configuration: 
@@ -59,4 +59,4 @@ Here's an example configuration:
 ## Related Topics
 
 * [Configuration via LCP JSON](../../reference/configuration-via-lcp-json.md)
-* [Shell Access](../../support-and-troubleshooting/shell-access.md)
+* [Shell Access](../../support-and-troubleshooting/troubleshooting/shell-access.md)

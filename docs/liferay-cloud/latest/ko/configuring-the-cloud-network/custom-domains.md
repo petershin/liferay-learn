@@ -79,7 +79,7 @@ Liferay Cloud 콘솔을 통해 사용자 지정 도메인을 추가하면 [Let's
 ```
 
 ```{important}
-추가된 각 사용자 지정 도메인에 대해 특정 환경을 정의해야 하며, 여러 환경에서 동일한 사용자 지정 도메인을 사용할 수 없습니다([재해 복구 환경](../../support-and-troubleshooting/configuring-cross-region-disaster-recovery.md) 다른 지역에서). 이는 Liferay Cloud가 인증서를 올바르게 생성하고 사용자를 올바른 도메인으로 라우팅하는 데 필요합니다.
+추가된 각 사용자 지정 도메인에 대해 특정 환경을 정의해야 하며, 여러 환경에서 동일한 사용자 지정 도메인을 사용할 수 없습니다([재해 복구 환경](../../support-and-troubleshooting/troubleshooting/configuring-cross-region-disaster-recovery.md) 다른 지역에서). 이는 Liferay Cloud가 인증서를 올바르게 생성하고 사용자를 올바른 도메인으로 라우팅하는 데 필요합니다.
 ```
 
 사용자 지정 도메인이 서비스에 추가되고 변경 사항이 배포되면 Liferay Cloud가 라우팅을 처리합니다.

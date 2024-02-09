@@ -44,4 +44,4 @@
 
 * [環境のチームとロール](./environment-teams-and-roles.md)
 * [Liferay Cloud 導入ワークフローの概要](../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md)
-* [ログ管理](../support-and-troubleshooting/reading-liferay-cloud-service-logs.md)
+* [ログ管理](../support-and-troubleshooting/troubleshooting/reading-liferay-cloud-service-logs.md)

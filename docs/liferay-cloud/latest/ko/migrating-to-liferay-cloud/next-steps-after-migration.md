@@ -2,7 +2,7 @@
 
 축하합니다! 이 섹션의 이전 단계를 모두 완료했다면 온프레미스 Liferay DXP 설치를 Liferay Cloud로 성공적으로 마이그레이션한 것입니다!
 
-Liferay Cloud에서 실행 중인 Liferay DXP가 있으므로 [자동 백업](../platform-services/backup-service/backup-service-overview.md), [빌드된 -지속적인 통합](../platform-services/continuous-integration.md), 자동 [서비스 로깅](../support-and-troubleshooting/reading-liferay-cloud-service-logs.md) 및 내장된 [보안 기능](../tuning-security-settings/information-security-and-liferay-cloud.md).
+Liferay Cloud에서 실행 중인 Liferay DXP가 있으므로 [자동 백업](../platform-services/backup-service/backup-service-overview.md), [빌드된 -지속적인 통합](../platform-services/continuous-integration.md), 자동 [서비스 로깅](../support-and-troubleshooting/troubleshooting/reading-liferay-cloud-service-logs.md) 및 내장된 [보안 기능](../tuning-security-settings/information-security-and-liferay-cloud.md).
 
 그러나 Liferay Cloud의 기능을 최대한 활용하기 위해 시작하는 동안 수행할 수 있는 몇 가지 추가 단계가 있습니다.
 
@@ -34,9 +34,9 @@ Liferay Cloud의 환경이 필요에 따라 사용자 정의 도메인을 호스
 
 ## 재해 복구 환경 설정
 
-기본적으로 Liferay Cloud는 동일한 지역 내에서 [자동 재해 복구](../support-and-troubleshooting/disaster-recovery-overview.md#automatic-disaster-recovery-strategy) 을 제공하여 서비스 중단으로 인한 가동 중지 시간을 완화합니다. 그러나 재해로 인해 Liferay 클라우드 환경을 서비스하는 영역에서 중단이 발생하는 경우 프로덕션 인스턴스에서 사용자의 가동 중지 시간을 최소화하기 위해 대체 환경(또는 재해 복구 환경)을 사용하는 것도 고려해야 합니다.
+기본적으로 Liferay Cloud는 동일한 지역 내에서 [자동 재해 복구](../support-and-troubleshooting/troubleshooting/disaster-recovery-overview.md#automatic-disaster-recovery-strategy) 을 제공하여 서비스 중단으로 인한 가동 중지 시간을 완화합니다. 그러나 재해로 인해 Liferay 클라우드 환경을 서비스하는 영역에서 중단이 발생하는 경우 프로덕션 인스턴스에서 사용자의 가동 중지 시간을 최소화하기 위해 대체 환경(또는 재해 복구 환경)을 사용하는 것도 고려해야 합니다.
 
-[재해 복구 환경을 구성](../support-and-troubleshooting/configuring-cross-region-disaster-recovery.md)하여 계획되지 않은 다운타임으로부터 가능한 가장 강력한 보호를 유지합니다. 자동 및 지역 간 재해 복구에 대해 자세히 알아보세요[여기](../support-and-troubleshooting/disaster-recovery-overview.md).
+[재해 복구 환경을 구성](../support-and-troubleshooting/troubleshooting/configuring-cross-region-disaster-recovery.md)하여 계획되지 않은 다운타임으로부터 가능한 가장 강력한 보호를 유지합니다. 자동 및 지역 간 재해 복구에 대해 자세히 알아보세요[여기](../support-and-troubleshooting/troubleshooting/disaster-recovery-overview.md).
 
 ```{important}
 재해 복구 환경을 설정하려면 구독의 일부로 별도의 환경을 구입해야 합니다.
@@ -66,7 +66,7 @@ Liferay Cloud에서 Liferay를 사용하기 시작할 때 애플리케이션 성
 
 * 프로덕션 환경의 경우 [Dynatrace 통합](../manage-and-optimize/application-metrics.md#advanced-application-metrics-production-only) 을 사용하여 고급 성능 지표를 사용할 수도 있습니다. **이를 사용하려면 Liferay Cloud 구독에 특정 Dynatrace 애드온이 필요합니다.**
 
-온프레미스 인스턴스를 조정하는 것과 같은 방식으로 Liferay Cloud의 인스턴스로 자체 성능 테스트 및 최적화를 수행해야 합니다. 서비스 데이터, 메트릭 및 사용 가능한 [로깅](../support-and-troubleshooting/reading-liferay-cloud-service-logs.md) 이 모두 테스트에 도움이 됩니다.
+온프레미스 인스턴스를 조정하는 것과 같은 방식으로 Liferay Cloud의 인스턴스로 자체 성능 테스트 및 최적화를 수행해야 합니다. 서비스 데이터, 메트릭 및 사용 가능한 [로깅](../support-and-troubleshooting/troubleshooting/reading-liferay-cloud-service-logs.md) 이 모두 테스트에 도움이 됩니다.
 
 ## Liferay Cloud에서 개발 시작하기
 

@@ -13,11 +13,11 @@ uuid: 203429af-623b-4ad7-b5b1-0ffd147c7e06
 
 Display page templates define structures for displaying content at a dedicated friendly URL. These templates currently support the following content types:
 
-* [Blog Entries](../../../content-authoring-and-management/blogs/getting-started-with-blogs.md)
-* [Categories](../../../content-authoring-and-management/tags-and-categories/defining-categories-and-vocabularies-for-content.md) {bdg-secondary}`Liferay DXP/Portal 7.4+`
-* [Custom Objects](../../../building-applications/objects/displaying-object-entries.md) {bdg-secondary}`Liferay DXP/Portal 7.4+`
-* [Documents](../../../content-authoring-and-management/documents-and-media/publishing-and-sharing/publishing-documents.md)
-* [Web Content Articles](../../../content-authoring-and-management/web-content/web-content-articles/adding-a-basic-web-content-article.md)
+- [Blog Entries](../../../content-authoring-and-management/blogs/getting-started-with-blogs.md)
+- [Categories](../../../content-authoring-and-management/tags-and-categories/defining-categories-and-vocabularies-for-content.md) {bdg-secondary}`Liferay DXP/Portal 7.4+`
+- [Custom Objects](../../../building-applications/objects/displaying-object-entries.md) {bdg-secondary}`Liferay DXP/Portal 7.4+`
+- [Documents](../../../content-authoring-and-management/documents-and-media/publishing-and-sharing/publishing-documents.md)
+- [Web Content Articles](../../../content-authoring-and-management/web-content/web-content-articles/adding-a-basic-web-content-article.md)
 
 See [Using Display Page Templates](../using-display-page-templates.md) to learn more.
 
@@ -103,8 +103,8 @@ You can manage the different display page templates using the *Actions* menu (![
 
 Before you delete a display page template that is in use, you have two ways to unassign the display page template from the content:
 
-* Assign to Default: Your content is unassigned from the current display page template and assigned to the default display page template for the content type and subtype (if applicable.)
-* Unassign: Your content is not assigned to any display page template.
+- Assign to Default: Your content is unassigned from the current display page template and assigned to the default display page template for the content type and subtype (if applicable.)
+- Unassign: Your content is not assigned to any display page template.
 
 Follow these steps to view your display page template usage and unassign your content:
 

@@ -63,7 +63,7 @@ To set a friendly URL for your display page template,
 
 1. Select *Configure*.
 
-   You can access the display page template configuration through the Page Templates app. Open the Page Templates app, in the Display Page Templates tab, click *Actions* (![Actions icon](../../../images/icon-actions.png)) for the display page template you want to configure, and choose *Configure*.
+   You can access the display page template configuration through the Page Templates app. Open the Page Templates app. In the Display Page Templates tab, click *Actions* (![Actions icon](../../../images/icon-actions.png)) for the display page template you want to configure and choose *Configure*.
 
 1. Under the General section, define your friendly URL.
 
@@ -129,22 +129,20 @@ If you assign your content to a new display page template, make sure the content
 
 You can duplicate a published display page template. The copy is linked to the original content type, and its mappings are the same as the original page.
 
-To create a copy of your display page template,
-
 1. Open the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)) (1) and navigate to *Design* &rarr; *Page Templates* (2).
 
-1. Select the *Display Page Templates* tab (3), click *Actions* (![Actions icon](../../../images/icon-actions.png))  for the display page template you want to alter, and choose *Make a Copy* (4).
+1. Select the *Display Page Templates* tab (3), click *Actions* (![Actions icon](../../../images/icon-actions.png)) for the display page template you want to alter, and choose *Make a Copy* (4).
 
-   If the display page template was never published, the "Make a Copy" option is disabled.
+   If the display page template was never published, the Make a Copy option is disabled.
 
 1. In the sub-menu, choose *Display Page* or *Display Page With Permissions*.
 
-   The copy is named "Original Name + Copy + Duplicate Number" and is created as a draft so the user can review it before publishing.
+   The copy is named `Original Name + Copy + Duplicate Number` and is created as a draft so the user can review it before publishing.
 
 ![Use the actions menu to make a copy of your published display page template.](./creating-and-managing-display-page-templates/images/08.png)
 
 !!! important
-    You can only make a copy of display page templates if they were published at some point. Even if the published template becomes a draft again, you can copy the last published version of the display page template.
+    You can only make a copy of display page templates if they were published at some point. If a published template becomes a draft again, you can copy the last published version of the display page template.
 
 ## Changing the Content Type of Display Page Templates
 
@@ -159,33 +157,31 @@ To change the content type linked to a display page template,
 
 1. Open the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)) (1) and navigate to *Design* &rarr; *Page Templates* (2).
 
-1. Select the *Display Page Templates* tab (3), click *Actions* (![Actions icon](../../../images/icon-actions.png))  for the display page template you want to alter, and choose *Change Content Type* (4).
+1. Select the *Display Page Templates* tab (3), click *Actions* (![Actions icon](../../../images/icon-actions.png)) for the display page template you want to alter, and choose *Change Content Type* (4).
 
    ![Change the content type linked to the display page template.](./creating-and-managing-display-page-templates/images/09.png)
 
-1. In the modal that opens, choose the new content type for your display page template, the new content type and its subtype, or just the new subtype and click *Save*.
+1. Choose the new content type for your display page template, the new content type and its subtype, or just the new subtype and click *Save*.
 
    If the content type has a subtype, you must select a subtype before saving the new content type.
 
 ### Changing the Content Type of Assigned Display Page Templates
 
-It is not possible to change the content type of a display page template if it's assigned to an asset (e.g. web content article).
+You cannot change the content type of a display page template if it's assigned to an asset (e.g. web content article).
 
-If you try changing the content type, a modal appears with a "Display Page In Use" message. You can click *View Display Page Usages* to see which assets are using the display page template.
-
-Then, you can select the assets, click *Actions* (![Actions icon](../../../images/icon-actions.png)), and select *Assign to Default* or *Unassign*.
+If you try changing the content type, a *Display Page In Use* message appears. You can click *View Display Page Usages* to see the assets using the display page template. You can then select assets, click *Actions* (![Actions icon](../../../images/icon-actions.png)), and select *Assign to Default* or *Unassign*.
 
 Assign to Default assigns the asset to the default display page template, while Unassign removes the display page template and assigns the asset to None instead.
 
 ![While viewing the display page usage, you can assign an asset to the default display page template or unassign the display page template.](./creating-and-managing-display-page-templates/images/10.png)
 
-The picture below shows the Display Page settings for a web content article with the Display Page Template assigned to it (1), after using the Assign to Default option (2), and after using the Unassign option (3).
+The picture below shows the display page settings for a web content article with the display page template assigned to it (1), after using the Assign to Default option (2) and after using the Unassign option (3).
 
 ![The display page settings for a web content article with a display page template assigned to it, after using the Assign to Default option, and after using the Unassign option.](./creating-and-managing-display-page-templates/images/11.png)
 
 ## Related Topics
 
-- [Publishing Content with Display Pages](./publishing-content-with-display-pages.md)
-- [Configuring SEO and Open Graph](./configuring-seo-and-open-graph.md)
-- [Using Content Pages](./../../creating-pages/using-content-pages.md)
-- [Adding Elements to Content Pages](../../creating-pages/using-content-pages/adding-elements-to-content-pages.md)
+* [Publishing Content with Display Pages](./publishing-content-with-display-pages.md)
+* [Configuring SEO and Open Graph](./configuring-seo-and-open-graph.md)
+* [Using Content Pages](./../../creating-pages/using-content-pages.md)
+* [Adding Elements to Content Pages](../../creating-pages/using-content-pages/adding-elements-to-content-pages.md)

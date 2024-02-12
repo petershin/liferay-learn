@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+  - Digital Asset Management
+  - Documents and Media
+  - Liferay Self-Hosted
+  - Liferay PaaS
+  - Liferay SaaS
 uuid: b538b1f3-7797-4185-8260-116135c69df4
 ---
 # Copying Folders and Documents

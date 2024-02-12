@@ -63,7 +63,7 @@ The first element on the shop page is a banner:
 
 1. Set the scope to *Everything* and click *Save*.
 
-1. Drag and drop the following widgets one below the other:
+1. Drag and drop the following widgets below the search bar one below the other:
 
    1. Category Facet
    2. Price Range Facet
@@ -109,6 +109,6 @@ The first element on the shop page is a banner:
 
 1. Click *Publish*.
 
-With that you have a catalog page displaying all the products in the catalog. There's also a search bar for products along with several functioning facets. 
+With that you have a catalog page displaying all the products in the catalog. There's also a search bar to search for products along with several functioning facets. 
 
 Next: [Creating a Catalog Page](./creating-a-catalog-page.md)

@@ -111,4 +111,4 @@ The first element on the shop page is a banner:
 
 With that you have a catalog page displaying all the products in the catalog. There's also a search bar to search for products along with several functioning facets. 
 
-Next: [Creating a Catalog Page](./creating-a-catalog-page.md)
+Next: [Creating a Product Details Page](./creating-a-product-details-page.md)

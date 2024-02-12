@@ -2,7 +2,7 @@
 uuid: 281e89fe-1a37-4223-a37e-6d1c7f5e478e
 ---
 
-# Users, Organizations and User Groups
+# Understanding Users, Organizations and User Groups
 
 Clarity values every one that access their website, and wants to ensure that the right users can access their data, tools, and relevant content. Every person who access Clarity's website is considered a user. Even unauthenticated users are considered users, they are called guest users.
 

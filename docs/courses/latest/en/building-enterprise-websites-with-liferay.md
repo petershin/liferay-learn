@@ -4,7 +4,7 @@ toc:
 - ./building-enterprise-websites-with-liferay/module-2-developer-setup.md
 - ./building-enterprise-websites-with-liferay/module-3-deploying-liferay.md
 - ./building-enterprise-websites-with-liferay/module-4-identity-management-and-sso.md
-- ./building-enterprise-websites-with-liferay/module-5.md
+- ./building-enterprise-websites-with-liferay/module-5-users-and-permissions.md
 - ./building-enterprise-websites-with-liferay/module-6-site-building.md
 - ./building-enterprise-websites-with-liferay/module-7.md
 - ./building-enterprise-websites-with-liferay/module-8-headless-delivery.md
@@ -82,7 +82,7 @@ Learn about both the different identity management features built into Liferay, 
 :::
 
 :::{grid-item-card}  Module 5: Users & Permissions
-:link: ./building-enterprise-websites-with-liferay/module-5.md
+:link: ./building-enterprise-websites-with-liferay/module-5-users-and-permissions.md
 
 Coming Soon
 :::

@@ -65,6 +65,8 @@ Once you have created the Orders page and Checkout page, you can add the mini ca
 
 1. Drag and drop the *Mini Cart* fragment inside the last module of the grid.
 
+1. Go to the *Styles* tab and in the Spacing settings, enter `3.5rem` for the margin at the bottom of the element.
+
 1. Click *Publish Master*.
 
 Next: [Creating a Discount and Enabling Guest Checkout](./creating-a-discount-and-enabling-guest-checkout.md)

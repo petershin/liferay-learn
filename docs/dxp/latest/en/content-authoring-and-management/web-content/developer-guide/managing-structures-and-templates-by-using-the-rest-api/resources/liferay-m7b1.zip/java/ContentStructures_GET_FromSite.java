@@ -17,7 +17,7 @@ public class ContentStructures_GET_FromSite {
 
 		System.out.println(
 			contentStructureResource.getSiteContentStructuresPage(
-				Long.parseLong(System.getProperty("siteId")), null, null, null,
+				Long.valueOf(System.getProperty("siteId")), null, null, null,
 				Pagination.of(1, 2), null));
 	}
 

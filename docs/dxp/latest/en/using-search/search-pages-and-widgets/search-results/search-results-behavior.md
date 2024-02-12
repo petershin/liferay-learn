@@ -140,3 +140,5 @@ Liferay 7.4 includes [Liferay Objects](../../../building-applications/objects.md
 For Liferay 7.4 U64+/GA64+, clicking an object entry in search results redirects to the entry's [display page](../../../building-applications/objects/displaying-object-entries.md#creating-display-page-templates-for-objects) to provide a detailed view of the result. If a display page template does not exist for the object, a default layout is used. Click the back arrow in the entry detail view to return to the search page.
 
 ![A default display page template is created if one doesn't already exist.](./search-results-behavior/images/14.png)
+
+For Liferay DXP 2024.Q1+/Liferay Portal 7.4 GA112+, the entries of account restricted objects appear in search results, if the search user has the `Accounts > Account Entry: View` permission in an account- or regular-scoped role.

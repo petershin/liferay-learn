@@ -151,6 +151,8 @@ The Type Facet and the Search Results widget support searching for Liferay Objec
 
 For Liferay 7.4 U64+/GA64+, clicking an object entry in search results redirects to the entry's [display page](../../building-applications/objects/displaying-object-entries.md#creating-display-page-templates-for-objects), if one exists.
 
+For Liferay DXP 2024.Q1+/Liferay Portal 7.4 GA112+, the entries of account restricted objects appear in search results, if the search user has the `Accounts > Account Entry: View` permission in an account- or regular-scoped role.
+
 ## Related Topics
 
 * [Understanding Search Results](../search-pages-and-widgets/search-results/search-results-behavior.md)

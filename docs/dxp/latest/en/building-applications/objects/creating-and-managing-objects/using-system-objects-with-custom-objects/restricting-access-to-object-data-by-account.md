@@ -11,13 +11,21 @@ taxonomy-category-names:
 
 {bdg-secondary}`Liferay 7.4 U58+/GA58+`
 
-In scenarios with multiple business [accounts](../../../../users-and-permissions/accounts.md), you may want to restrict access to object entries by account. To do this, your custom object must have an active [relationship](../relationships/defining-object-relationships.md) with the Account system object, and you must configure the custom object to use this relationship for restricting entry data. Once set up, anyone adding entries to the custom object must select an account. This account becomes the entry's owner. See [Account Restriction and User Roles](#account-restriction-and-user-roles) to learn how role types control access to entries.
+In scenarios with multiple business [accounts](../../../../users-and-permissions/accounts.md), you may want to restrict access to object entries by account. For example, consider an insurance scenario with these requirements:
+
+* Business account users must open claims without seeing claims made by other accounts.
+
+* Customer success managers (CSMs) must review claims made by the accounts they manage.
+
+* A claims manager must oversee all claims.
+
+To restrict object entries by account, your custom object must have an active [relationship](../relationships/defining-object-relationships.md) with the Account system object, and you must configure the custom object to use this relationship for restricting entry data. Once set up, anyone adding entries to the custom object must select an account. This account becomes the entry's owner. See [Account Restriction and User Roles](#account-restriction-and-user-roles) to learn how role types control access to entries.
 
 ![Restrict access to custom object entries by account.](./restricting-access-to-object-data-by-account/images/01.png)
 
-```{important}
-You can only configure account restriction for draft objects. After [publishing](../creating-objects.md#publishing-object-drafts), these settings cannot be changed.
-```
+!!! important
+   - You can only configure account restriction for draft objects. After [publishing](../creating-objects.md#publishing-object-drafts), these settings cannot be changed.
+   - For Liferay DXP 2024.Q1+/Liferay Portal 7.4 GA112+, the entries of account restricted objects appear in search results if the search user has the `Accounts > Account Entry: View` permission in an account- or regular-scoped role.
 
 To set up account restriction,
 
@@ -51,7 +59,7 @@ After restricting object data by account, entries appear according to the user's
 
 When setting up roles for account restriction, consider these factors:
 
-* Account restricted objects must have *Show Widget* enabled and a set panel link to appear in the Roles UI.
+* Account restricted objects must have *Show Widget* enabled and must set [panel link](../creating-objects.md) to appear in the Roles UI.
 
 * Regular roles must have the `Accounts > Account Entry: View` permission to create object entries. This is because regular roles are not associated with accounts or organizations. Without this permission, users with the regular role cannot select an account during entry creation.
 
@@ -59,13 +67,12 @@ When setting up roles for account restriction, consider these factors:
 
 * For organization and account role users to access a custom object, they must have a separate regular role granting the `Access in Control Panel` (company-scoped) or `Access in Site` permission (site-scoped). See [Object Application Permissions](../../understanding-object-integrations/permissions-framework-integration.md#application-permissions) for more information.
 
-```{important}
-Account and organization roles are only supported in objects with account restriction enabled.
+!!! important
+    Account and organization roles are only supported in objects with account restriction enabled.
 
-Account restriction does not support the default Account Member and Organization user roles. These roles do not automatically grant access to related object data.
+    Account restriction does not support the default Account Member and Organization user roles. These roles do not automatically grant access to related object data.
 
-When a user is a member of multiple accounts with different account roles and object permissions, these permissions apply to each account the user belongs to.
-```
+    When a user is a member of multiple accounts with different account roles and object permissions, these permissions apply to each account the user belongs to.
 
 ## Example Use Case: Insurance Claims
 
@@ -137,3 +144,4 @@ Grant users permission to create and manage object data for all accounts.
 * [Defining Object Relationships](../relationships/defining-object-relationships.md)
 * [Accessing Accounts Data from Custom Objects](./accessing-accounts-data-from-custom-objects.md)
 * [Understanding Roles and Permissions](../../../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md)
+* [Returning Objects in Search Results](../../../../using-search/search-pages-and-widgets/search-results/search-results-behavior.md#returning-objects-in-search-results)

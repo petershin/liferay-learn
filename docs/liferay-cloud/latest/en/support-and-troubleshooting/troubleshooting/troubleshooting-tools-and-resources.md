@@ -131,7 +131,7 @@ By default, Support Access is enabled in each project environment, though admini
 
 ![Environment administrators can enable or disable Support Access in the Settings page](./troubleshooting-tools-and-resources/images/07.png)
 
-See [Support Access](./support-access.md) for more information.
+See [Support Access](../liferay-cloud-support/support-access.md) for more information.
 
 ## Help Center
 
@@ -156,4 +156,4 @@ When submitting a ticket, please provide information regarding the build images 
 * [Liferay Cloud Support Overview](https://help.liferay.com/hc/en-us/articles/360030208451-DXP-Cloud-Support-Overview)
 * [Liferay Cloud Knowledge Base](https://help.liferay.com/hc/en-us/categories/360001132872)
 * [Liferay Cloud Announcements](https://help.liferay.com/hc/en-us/categories/360001192512)
-* [Support Access](./support-access.md)
+* [Support Access](../liferay-cloud-support/support-access.md)

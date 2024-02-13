@@ -25,9 +25,9 @@ The first element on the shop page is a banner:
 
 1. Choose the `catalog-hero.jpg` image from Documents and Media.
 
-1. Drag and drop a Heading fragment inside the container, followed by a Paragraph fragment below it.
+1. Drag and drop a *Heading* fragment inside the container, followed by a *Paragraph* fragment below it.
 
-1. Click the Heading fragment and set its content to :  `Styles to fit your look,or start a new one.`
+1. Click the *Heading* fragment and set its content to `Styles to fit your look,or start a new one.`
 
 1. From the right sidebar menu, click *Styles*.
 
@@ -35,7 +35,7 @@ The first element on the shop page is a banner:
 
    The value for each spacer setting is defined by the page's [Style Book](https://learn.liferay.com/en/w/dxp/site-building/site-appearance/style-books).
 
-1. Click the Paragraph fragment and set its content to :  `Shop our range of eyeglasses, lenses, and sunglasses to find the one that fits your needs.`
+1. Click the *Paragraph* fragment and set its content to `Shop our range of eyeglasses, lenses, and sunglasses to find the one that fits your needs.`
 
 1. From the right sidebar menu, click *Styles*.
 
@@ -57,13 +57,13 @@ The first element on the shop page is a banner:
 
 1. Inside the first module of the grid, drag and drop a Search Bar fragment from the left menu.
 
-1. Go to its Styles section from the right sidebar menu and set its Margin Top to `3.5rem`.
+1. Go to its *Styles* section from the right sidebar menu and set its *Margin Top* to `3.5rem`.
 
 1. Click *Actions* (![Actions](../../images/icon-actions.png)) on the fragment, and choose *Configuration*.
 
 1. Set the scope to *Everything* and click *Save*.
 
-1. Drag and drop the following widgets below the search bar one below the other:
+1. Drag and drop the following widgets below the search bar, one below the other:
 
    1. Category Facet
    2. Price Range Facet
@@ -77,7 +77,7 @@ The first element on the shop page is a banner:
 
 1. Click *Actions* (![Actions](../../images/icon-actions.png)) on the price range facet, and choose *Configuration*.
 
-1. In the *Ranges JSON Array* textarea, paste the following array:
+1. In the *Ranges JSON Array* text area, paste the following array:
 
    ```json
    [
@@ -91,7 +91,7 @@ The first element on the shop page is a banner:
 
 1. Click *Save*.
 
-1. Lastly, drag and drop a Search Options widget below the specification facet.
+1. Drag and drop a *Search Options* widget below the specification facet.
 
 1. Click *Actions* (![Actions](../../images/icon-actions.png)) and select *Configuration*. 
 
@@ -103,12 +103,12 @@ The first element on the shop page is a banner:
 
 ## Adding the Products
 
-1. From the left menu, drag and drop a Sort widget from the Commerce section to the second module of the grid.
+1. From the left menu, drag and drop a *Sort* widget from the Commerce section to the second module of the grid.
 
-1. Right below this, drag and drop the Search Results widget, again from the Commerce section.
+1. Directly below this, drag and drop the *Search Results* widget, again from the Commerce section.
 
 1. Click *Publish*.
 
-With that you have a catalog page displaying all the products in the catalog. There's also a search bar to search for products along with several functioning facets. 
+With that, you have a catalog page displaying all the products in the catalog. There's also a search bar to search for products along with several functioning facets. 
 
 Next: [Creating a Product Details Page](./creating-a-product-details-page.md)

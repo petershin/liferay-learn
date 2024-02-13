@@ -21,15 +21,15 @@ You’ll use the out-of-the-box fragments and widgets to build the site and use 
 
 ## Shopping Experience
 
-You’ll start by building the shop page that displays all the available products with facets. The facets let you dial down on the exact product you want. These facets auto-populate data based on the product information you've added.
+You’ll start by building the shop page that displays all the available products with facets. The facets auto-populate data based on the product information you've added, and they help customers choose the features they want.
 
-Once your customer selects a product, they're directed to the product details page. This page contains all the relevant information about the product. There's also a section below that displays related products relevant to the currently chosen product.
+When customers select a product, they're directed to the product details page. This page contains all the relevant information about the product. Below this appears related products relevant to the currently chosen product.
 
-From here, the customer can choose to go back to viewing other products or proceed to buying the selected one. To buy a product, they must add it to their cart. After adding it to their cart, they must checkout.
+From here, customers can choose to go back to viewing other products or proceed to buying the selected one. To buy a product, they must add it to their cart. After adding it to their cart, they must check out.
 
-When they checkout, they're redirected to the [checkout page](https://learn.liferay.com/w/commerce/creating-store-content/commerce-storefront-pages/checkout). The checkout flow contains several steps. The customer can enter their billing and shipping addresses, choose a preferred shipping option, confirm their order details, and make the payment.
+When they check out, they're redirected to the [checkout page](https://learn.liferay.com/w/commerce/creating-store-content/commerce-storefront-pages/checkout). The checkout flow contains several steps. Customers can enter their billing and shipping addresses, choose a preferred shipping option, confirm their order details, and make the payment.
 
-After purchasing an item, they can view details about the order on the orders page. The orders page displays both [pending](https://learn.liferay.com/w/commerce/creating-store-content/commerce-storefront-pages/pending-orders) and [placed orders](https://learn.liferay.com/w/commerce/creating-store-content/commerce-storefront-pages/placed-orders). Pending orders are those that haven't been checked out yet. The store also has a guest checkout feature that lets users purchase products without creating an account. They only need to provide an email address and the shipping/billing addresses to ship the order to. 
+After purchasing an item, they can view details about the order on the orders page. The orders page displays both [pending](https://learn.liferay.com/w/commerce/creating-store-content/commerce-storefront-pages/pending-orders) and [placed orders](https://learn.liferay.com/w/commerce/creating-store-content/commerce-storefront-pages/placed-orders). Pending orders haven't been checked out yet. The store also has a guest checkout feature that lets users purchase products without creating an account. They must only provide an email address and their shipping/billing addresses. 
 
 Ready? 
 

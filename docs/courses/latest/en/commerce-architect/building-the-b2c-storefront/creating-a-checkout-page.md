@@ -23,7 +23,7 @@ Before you can check out and submit an order, you must have a checkout page. Thi
 
 1. Drag and drop a Heading fragment inside the fixed width container.
 
-1. Set the header title to *Checkout*.
+1. Set the header title to *Check Out*.
 
 1. Go to the *Styles* tab and in the Spacing settings, choose *Spacer 4* for the margin at the bottom of the element.
 

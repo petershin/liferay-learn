@@ -13,14 +13,6 @@ taxonomy-category-names:
 ---
 # Actions
 
-```{toctree}
-:maxdepth: 3
-
-actions/defining-object-actions.md
-actions/understanding-action-types.md
-actions/using-manual-actions.md
-```
-
 Object actions define custom business logic that you can run manually or automatically for object entry events. Examples include delivering entry event data to a webhook URL, sending email notifications after entry updates, and executing custom Groovy scripts after entry creation.
 
 When using automatic triggers, Liferay listens for the event and executes the operation automatically according to predefined conditions. 

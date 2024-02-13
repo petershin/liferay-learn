@@ -7,15 +7,6 @@ toc:
 ---
 # LiferayでGlowrootを使う
 
-```{toctree}
-:maxdepth: 3
-
-using-glowroot-with-liferay/troubleshooting-jvm-issues-with-glowroot.md
-using-glowroot-with-liferay/troubleshooting-liferay-performance-issues-with-glowroot.md
-using-glowroot-with-liferay/troubleshooting-templates-with-glowroot-freemarker-plugin.md
-using-glowroot-with-liferay/liferay-performance-use-cases-with-glowroot.md
-```
-
 {bdg-secondary}`liferay DXP 2023.Q4+/Portal 7.4 GA100+`.
 
 Liferayは、オープンソースのJavaアプリケーション監視ツールである [Glowroot](https://glowroot.org/) をバンドルしています。 このツールは、システムに関する有用な統計情報（サーバーへのリクエスト、エラーなど）を表示します。 最小限のオーバーヘッドで。 Glowrootを使用して、問題のトラブルシューティングとパフォーマンス問題の分析を行います。

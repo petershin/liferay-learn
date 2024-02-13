@@ -9,17 +9,6 @@ toc:
 ---
 # Liferay Workspace
 
-```{toctree}
-:maxdepth: 3
-
-liferay-workspace/what-is-liferay-workspace.md
-liferay-workspace/creating-a-liferay-workspace.md
-liferay-workspace/creating-code-with-liferay-workspace.md
-liferay-workspace/configuring-a-liferay-docker-container.md
-liferay-workspace/creating-deployment-environments
-liferay-workspace/configuring-liferay-workspace.md
-```
-
 ::::{grid} 2
 :gutter: 3 3 3 3
 

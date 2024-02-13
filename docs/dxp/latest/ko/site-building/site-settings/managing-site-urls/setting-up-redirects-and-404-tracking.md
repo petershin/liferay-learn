@@ -6,14 +6,6 @@ toc:
 ---
 # 리디렉션 및 404 추적 설정
 
-```{toctree}
-:maxdepth: 3
-
-setting-up-redirects-and-404-tracking/using-alias-redirects.md
-setting-up-redirects-and-404-tracking/using-pattern-redirects.md
-setting-up-redirects-and-404-tracking/tracking-404-urls.md
-```
-
 {bdg-secondary}`7.4 U48+/GA48+`
 
 URL 무결성을 유지하는 것은 모든 사이트에서 중요합니다. Liferay의 **리디렉션** 도구는 HTTP 리디렉션을 관리하고 개별 사이트에 대한 404 오류를 추적하는 편리한 통합 방법을 제공합니다. 끊어진 링크를 피하고 수정하여 사용자 경험과 사이트 SEO를 모두 개선하는 데 사용하십시오.

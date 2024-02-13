@@ -12,14 +12,6 @@ taxonomy-category-names:
 ---
 # Advanced Patching for DXP 7.2
 
-```{toctree}
-:maxdepth: 3
-
-advanced-patching-for-dxp-7-2/using-slim-bundles.md
-advanced-patching-for-dxp-7-2/slimming-down-patched-installations.md
-advanced-patching-for-dxp-7-2/custom-code-and-patch-compatibility.md
-```
-
 Here are the DXP 7.2 advanced patching topics:
 
 * [Using Slim Bundles](./advanced-patching-for-dxp-7-2/using-slim-bundles.md) demonstrates conserving disk space by using DXP fix pack bundles that don't include Patch Files.

@@ -10,12 +10,6 @@ uuid: 6f9c920f-0c75-40ad-b96a-03ff5f3f2455
 ---
 # Working with Templates
 
-```{toctree}
-:maxdepth: 3
-
-working-with-templates/embedding-widgets-via-templates.md
-```
-
 ::::{grid} 2
 :gutter: 3 3 3 3
 

@@ -5,13 +5,6 @@ toc:
 ---
 # 시작하기
 
-```{toctree}
-:maxdepth: 3
-
-getting-started/connecting-liferay-dxp-to-analytics-cloud.md
-getting-started/viewing-the-analytics-dashboard.md
-```
-
 Liferay 애널리틱스 클라우드에 오신 것을 환영합니다! 분석 데이터 수집은 모든 비즈니스에서 매우 중요한 부분입니다. 시중에는 다양한 도구가 있지만 모두 높은 가치를 제공하는 것은 아닙니다. 많은 양의 데이터를 수집하는 것만으로는 충분하지 않으며, 이를 분석하여 유용한 인사이트를 발견할 수 있어야 합니다. 또한, 가치가 낮은 데이터는 고객이 누구인지 불완전하게 파악하거나 잘못된 영역에 마케팅 비용을 낭비할 수 있습니다.
 
 Liferay 애널리틱스 클라우드를 사용하여 누가 사이트를 방문하고 사이트 콘텐츠와 어떻게 상호 작용하는지 파악할 수 있습니다. 높은 가치는 Liferay Analytics Cloud와 Liferay DXP 간의 긴밀한 통합에서 비롯됩니다.

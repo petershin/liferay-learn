@@ -18,18 +18,6 @@ uuid: 0a0ae4c3-008d-4a10-a8a8-03769e8bb589
 
 # Sites
 
-```{toctree}
-:maxdepth: 4
-
-sites/adding-a-site.md
-sites/site-templates.md
-sites/site-hierarchies.md
-sites/site-membership.md
-sites/personal-sites.md
-sites/exporting-importing-site-pages-and-content.md
-sites/default-site-applications.md
-```
-
 Sites are customizable spaces for building personalized digital experiences. Each site includes [out-of-the-box applications](./sites/default-site-applications.md) for building custom solutions, such as portals, intranets, e-commerce storefronts, and more. When creating a site, you can create a blank site or use custom and default site templates to populate the site with predefined structures and content. If you're using [organizations](../users-and-permissions/organizations/understanding-organizations.md), you can also enable dedicated [organization sites](../users-and-permissions/organizations/organization-sites.md) to develop and manage sites that meet the needs of each organization.
 
 By default, Liferay also generates personal sites for authenticated users. Each user is the sole member of their personal site and can use it to display and manage their content. If you're using [user groups](../users-and-permissions/user-groups/creating-and-managing-user-groups.md), you can create [user group sites](../users-and-permissions/user-groups/user-group-sites.md) to add predefined pages to the personal site of every group member.

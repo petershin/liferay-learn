@@ -6,14 +6,6 @@ toc:
 ---
 # 상품 관리
 
-```{toctree}
-:maxdepth: 3
-
-product-management/catalogs.md
-product-management/creating-and-managing-products.md
-product-management/developer-guide.md
-```
-
 ```{raw} html
 :file: landingpage_template.html
 ```

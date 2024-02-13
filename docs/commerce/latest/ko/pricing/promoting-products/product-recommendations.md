@@ -7,13 +7,6 @@ toc:
 
 {bdg-primary}`구독`
 
-```{toctree}
-:maxdepth: 1
-
-product-recommendations/using-product-recommendations.md
-product-recommendations/understanding-recommendation-types.md
-```
-
 Liferay는 콘텐츠 및 사용자 기반 제품 추천을 모두 지원합니다. Liferay 인스턴스의 제품 및 주문 데이터를 사용하여 이를 표시할 수 있습니다.
 
 시작하려면 [제품 추천 사용](./product-recommendations/using-product-recommendations.md)을 참조하십시오.

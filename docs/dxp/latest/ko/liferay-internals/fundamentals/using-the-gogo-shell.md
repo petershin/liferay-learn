@@ -5,13 +5,6 @@ toc:
 ---
 # Gogo 셸 사용
 
-```{toctree}
-:maxdepth: 3
-
-using-the-gogo-shell/command-line-gogo-shell.md
-using-the-gogo-shell/gogo-shell-commands.md
-```
-
 Gogo 쉘은 모듈 프레임워크와 상호작용하는 방법을 제공합니다. 무엇보다도 다음을 수행할 수 있습니다.
 
 * 동적으로 번들(모듈) 설치/제거

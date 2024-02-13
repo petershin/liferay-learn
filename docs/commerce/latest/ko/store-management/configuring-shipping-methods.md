@@ -9,17 +9,6 @@ toc:
 ---
 # 배송 방법 구성
 
-```{toctree}
-:maxdepth: 1
-
-configuring-shipping-methods/using-the-fedex-shipping-method.md
-configuring-shipping-methods/using-the-flat-rate-shipping-method.md
-configuring-shipping-methods/using-the-variable-rate-shipping-method.md
-configuring-shipping-methods/applying-shipping-method-restrictions.md
-configuring-shipping-methods/measurement-units.md
-configuring-shipping-methods/shipping-method-reference.md
-```
-
 Liferay Commerce는 여러 배송 방법과 운송업체를 지원합니다. 배송 방법을 선택하기 전에 상점에서 사용할 [측정 단위](./configuring-shipping-methods/measurement-units.md) 을 확인하십시오.
 
 다음은 몇 가지 배송 방법입니다.

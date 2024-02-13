@@ -6,14 +6,6 @@ toc:
 ---
 # コンテンツダッシュボード
 
-```{toctree}
-:maxdepth: 3
-
-content-dashboard/about-the-content-dashboard.md
-content-dashboard/content-dashboard-interface.md
-content-dashboard/exporting-the-assets-list-to-a-spreadsheet.md
-```
-
 ```{note}
 この機能は、 [Elasticsearch](../using-search/installing-and-upgrading-a-search-engine/solr/solr-limitations.md) のみで機能します。
 ```

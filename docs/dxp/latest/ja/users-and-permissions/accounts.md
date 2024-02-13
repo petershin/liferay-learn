@@ -10,18 +10,6 @@ toc:
 ---
 # アカウント
 
-```{toctree}
-:maxdepth: 3
-
-accounts/account-users.md
-accounts/account-addresses.md
-accounts/account-groups.md
-accounts/account-roles.md
-accounts/account-management-widget.md
-accounts/using-workflow-with-accounts.md
-accounts/channel-defaults.md
-```
-
 {bdg-secondary}`7.4以降で利用可能`
 
 アカウントは、管理者が様々な商取引やビジネスのニーズに合わせてユーザーを整理・管理するための手段です。 [組織](./organizations.md) または [ユーザーグループ](./user-groups.md)とは異なり、アカウントは、商品やサービスの購入や既存の顧客の管理などのビジネス状況で発生する可能性のある対話を容易にするのに役立ちます。

@@ -12,13 +12,6 @@ uuid: e59d275d-b4e5-48f5-9847-d5baeb39e357
 ---
 # Understanding Pages
 
-```{toctree}
-:maxdepth: 3
-
-understanding-pages/understanding-pages.md
-understanding-pages/other-page-types.md
-```
-
 ::::{grid} 2
 :gutter: 3 3 3 3
 

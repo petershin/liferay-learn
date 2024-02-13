@@ -15,18 +15,6 @@ uuid: 7197d494-7d76-48f5-ab9b-a8efa9441400
 ---
 # Getting Started
 
-```{toctree}
-:maxdepth: 1
-
-getting-started/initial-setup-overview.md
-getting-started/development-requirements.md
-getting-started/configuring-your-github-repository.md
-getting-started/configuring-your-bitbucket-repository.md
-getting-started/configuring-your-gitlab-repository.md
-getting-started/logging-into-your-liferay-cloud-services.md
-getting-started/understanding-liferay-cloud-environments.md
-```
-
 Liferay Cloud is a secure and reliable enterprise cloud platform that provides the infrastructure and tooling necessary to simplify, secure, and deliver amazing applications on Liferay DXP.
 
 Worry less and build more with a platform that provides:

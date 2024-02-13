@@ -15,16 +15,6 @@ uuid: 3abcc783-379c-4520-81b3-6095bb482a3b
 ---
 # Configuring Fragments
 
-```{toctree}
-:maxdepth: 3
-
-configuring-fragments/general-settings-reference.md
-configuring-fragments/styles-reference.md
-configuring-fragments/advanced-settings-reference.md
-configuring-fragments/fragment-sub-elements-reference.md
-configuring-fragments/localizing-fragment-configuration-fields.md
-```
-
 You can configure fragments and their sub-elements. Available options can vary, though some are common to all. To view available configuration options, begin editing a page or template and open the *Browser* panel (![Browser](../../../../images/icon-hierarchy.png)) in the sidebar menu. Then click the fragment or sub-element to configure. Available configuration options appear in three tabs: General, Styles, and Advanced.
 
 ![Available configuration options are grouped into three tabs.](./configuring-fragments/images/01.png)

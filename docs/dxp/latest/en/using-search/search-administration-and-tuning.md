@@ -15,16 +15,6 @@ uuid: c7d1b6cf-3532-4e80-9215-5c16a16ea495
 ---
 # Search Administration and Tuning
 
-```{toctree}
-:maxdepth: 2
-
-search-administration-and-tuning/synonym-sets.md
-search-administration-and-tuning/result-rankings.md
-search-administration-and-tuning/elasticsearch-indexes-reference.md
-search-administration-and-tuning/search-administration.md
-search-administration-and-tuning/re-indexing-modes.md
-```
-
 - [Search Administration Panel Overview](./search-administration-and-tuning/search-administration.md)
 - [Re-Indexing Modes](./search-administration-and-tuning/re-indexing-modes.md)
 - Understanding Localized Search (Coming Soon)

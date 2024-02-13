@@ -13,10 +13,6 @@ uuid: 24beeca3-b18a-4f5b-b2bb-7a331387c0bc
 ---
 # Analytics Cloud
 
-```{toctree}
-:maxdepth: 4
-```
-
 ```{raw} html
 :file: landingpage_template.html
 ```

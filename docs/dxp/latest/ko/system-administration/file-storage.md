@@ -6,14 +6,6 @@ toc:
 ---
 # 파일 스토리지
 
-```{toctree}
-:maxdepth: 3
-
-file-storage/enabling-antivirus-scanning-for-uploaded-files.md
-file-storage/file-store-migration.md
-file-storage/other-file-store-types.md
-```
-
 Liferay DXP에 업로드된 모든 파일은 인스턴스의 지정된 파일 저장소에 저장됩니다. 여기에는 [문서 및 미디어](../content-authoring-and-management/documents-and-media.md)를 사용하여 업로드한 파일과 파일 첨부를 지원하는 애플리케이션(예: [메시지 보드](../collaboration-and-social/collaboration-and-social-overview.md))을 사용하여 업로드한 파일이 포함됩니다. 파일 저장소는 로컬 컴퓨터, 네트워크 탑재 파일 시스템, 데이터베이스 또는 클라우드에서 호스팅할 수 있습니다.
 
 ```{important}

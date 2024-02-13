@@ -4,12 +4,6 @@ toc:
 ---
 # 맞춤형 개발 업그레이드
 
-```{toctree}
-:maxdepth: 3
-
-upgrading-custom-development/upgrading-language-key-overrides.md
-```
-
 ```{note}
 이 구간은 공사 중입니다.
 ```

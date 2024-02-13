@@ -8,15 +8,6 @@ toc:
 ---
 # Reactの使用
 
-```{toctree}
-:maxdepth: 3
-
-../client-extensions/browser-based-client-extensions/tutorials/creating-a-basic-custom-element.md
-../client-extensions/browser-based-client-extensions/tutorials/using-routes-with-custom-elements.md
-using-react/remote-applications-with-headless-apis.md
-using-react/react-component-utilities-reference.md
-```
-
 LiferayとReactを使用して独自のソリューションを構築します。
 
 ::::{grid} 2

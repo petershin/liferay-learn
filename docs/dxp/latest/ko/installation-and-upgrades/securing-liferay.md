@@ -8,16 +8,6 @@ toc:
 ---
 # 라이프레이 확보
 
-```{toctree}
-:maxdepth: 3
-
-securing-liferay/authentication-basics.md
-securing-liferay/configuring-sso.md
-securing-liferay/multi-factor-authentication.md
-securing-liferay/using-antisamy.md
-securing-liferay/securing-web-services.md
-```
-
 Liferay DXP는 보안을 염두에 두고 제작되었습니다. 여기에는 [OWASP Top 10](https://www.owasp.org/index.php/Top_10_2013-Top_10) 및 [CWE/SANS Top 25](https://www.sans.org/top25-software-errors/) 에서 설명한 것과 같은 일반적인 보안 취약성 및 익스플로잇의 완화가 포함됩니다.
 
 호스팅 환경, 데이터베이스, 검색 공급자, 응용 프로그램 서버 및 Liferay DXP 자체에 대한 최상의 보안 사례를 따르는 것을 포함하되 이에 국한되지 않는 Liferay 설치 보안에는 여러 가지 측면이 있습니다.

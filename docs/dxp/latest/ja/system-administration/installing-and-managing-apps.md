@@ -6,14 +6,6 @@ toc:
 ---
 # アプリのインストールと管理
 
-```{toctree}
-:maxdepth: 3
-
-installing-and-managing-apps/using-marketplace.md
-installing-and-managing-apps/installing-apps.md
-installing-and-managing-apps/managing-apps.md
-```
-
 アプリを購入してインストールすることで、DXPインストールにあらゆる種類の機能を追加できます。 アプリは[Liferay マーケットプレイス](./installing-and-managing-apps/using-marketplace.md)で入手できます。また、インストール時にアプリを管理するのに役立つ[アプリケーションマネージャ](./installing-and-managing-apps/managing-apps/using-the-app-manager.md)などのツールも利用できます。
 
 ## Liferayマーケットプレイス

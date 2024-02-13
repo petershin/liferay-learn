@@ -17,20 +17,6 @@ taxonomy-category-names:
 ---
 # Using Liferay Docker Images
 
-```{toctree}
-:maxdepth: 3
-
-using-liferay-docker-images/container-lifecycle-and-api.md
-using-liferay-docker-images/configuring-containers.md
-using-liferay-docker-images/installing-apps-and-other-artifacts-to-containers.md
-using-liferay-docker-images/licensing-dxp-in-docker.md
-using-liferay-docker-images/patching-dxp-in-docker.md
-using-liferay-docker-images/running-scripts-in-containers.md
-using-liferay-docker-images/providing-files-to-the-container.md
-using-liferay-docker-images/upgrading-to-a-new-docker-image.md
-using-liferay-docker-images/docker-image-versions.md
-```
-
 Docker Hub hosts [Liferay DXP](https://hub.docker.com/r/liferay/dxp) and [Liferay Portal](https://hub.docker.com/r/liferay/portal) Docker images, bundled with Tomcat on Linux. The Liferay Docker Hub pages provide image details and tags for the different releases.
 
 * [Liferay DXP Images](https://hub.docker.com/r/liferay/dxp)

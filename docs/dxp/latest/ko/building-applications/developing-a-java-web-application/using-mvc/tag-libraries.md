@@ -10,19 +10,6 @@ toc:
 - ./tag-libraries/chart-tag-library.md
 ---
 # 태그 라이브러리
-
-```{toctree}
-:maxdepth: 3
-
-tag-libraries/liferay-theme-objects-for-jsps.md
-tag-libraries/liferay-portlet-objects-for-jsps.md
-tag-libraries/alloy-ui-aui-tag-library.md
-tag-libraries/clay-tag-library.md
-tag-libraries/liferay-ui-tag-library.md
-tag-libraries/liferay-frontend-tag-library.md
-tag-libraries/liferay-util-tag-library.md
-tag-libraries/chart-tag-library.md
-```
 앱, 테마 및 웹 콘텐츠에서 일반적으로 사용되는 UI 구성 요소를 만들기 위한 강력한 taglib 세트에 액세스할 수 있습니다. 이 섹션에서는 다음 taglib를 다룹니다.
 
 * AUI: 양식, 버튼 등과 같은 공통 UI 구성 요소를 생성합니다.

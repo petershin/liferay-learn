@@ -8,15 +8,6 @@ uuid: 67e60fbe-5272-44a6-b65e-a0a22e034bef
 ---
 # Upgrade Basics
 
-```{toctree}
-:maxdepth: 2
-
-upgrade-basics/upgrading-via-auto-upgrade.md
-upgrade-basics/upgrading-via-docker.md
-upgrade-basics/using-the-database-upgrade-tool.md
-upgrade-basics/post-upgrade-considerations.md
-```
-
 Liferay's tools and instructions facilitate upgrading DXP and Portal environments safely and quickly. Non-clustered environments that have small data sets, for example can be upgraded using a [Docker image](./upgrade-basics/upgrading-via-docker.md). DXP environments and Portal environments that are complex, have larger data sets, or have many customizations are upgraded using the [Database Upgrade Tool](./upgrade-basics/using-the-database-upgrade-tool.md). [Auto upgrade](./upgrade-basics/upgrading-via-auto-upgrade.md) can also be enabled during startup.
 
 ```{warning}

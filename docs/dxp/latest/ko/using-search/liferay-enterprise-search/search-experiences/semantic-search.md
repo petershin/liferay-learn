@@ -8,13 +8,6 @@ toc:
 {bdg-secondary}`7.4 U70+`
 {bdg-link-primary}`[베타 기능](../../../system-administration/configuring-liferay/feature-flags.md)`
 
-```{toctree}
-:maxdepth: 1
-
-./semantic-search/setting-up-a-text-embedding-provider.md
-./semantic-search/creating-a-search-blueprint-for-semantic-search.md
-```
-
 **의미론적** 검색은 검색된 문구 뒤에 숨은 의도를 평가합니다. 한편, **keyword** 검색은 검색된 구문을 색인화된 텍스트 필드와 일치시키며 의미에 따라 일치하는 항목을 생성할 수 없습니다.
 
 | 검색된 문구        | 색인화된 콘텐츠                               | 일치 유형           |

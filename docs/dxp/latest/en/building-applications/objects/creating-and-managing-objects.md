@@ -28,28 +28,6 @@ taxonomy-category-names:
 ---
 # Creating and Managing Objects
 
-```{toctree}
-:maxdepth: 3
-
-creating-and-managing-objects/creating-objects.md
-creating-and-managing-objects/extending-system-objects.md
-creating-and-managing-objects/using-the-objects-model-builder.md
-creating-and-managing-objects/organizing-objects-with-folders.md
-creating-and-managing-objects/fields.md
-creating-and-managing-objects/relationships.md
-creating-and-managing-objects/actions.md
-creating-and-managing-objects/layouts.md
-creating-and-managing-objects/views.md
-creating-and-managing-objects/validations.md
-creating-and-managing-objects/localizing-object-definitions-and-entries.md
-creating-and-managing-objects/using-system-objects-with-custom-objects.md
-creating-and-managing-objects/activating-and-deactivating-objects.md
-creating-and-managing-objects/exporting-and-importing-object-definitions.md
-creating-and-managing-objects/auditing-object-events.md
-creating-and-managing-objects/deleting-objects.md
-creating-and-managing-objects/managing-objects-with-headless-apis.md
-```
-
 {bdg-secondary}`Liferay 7.4+`
 
 Liferay Objects provides a convenient UI for [creating](./creating-and-managing-objects/creating-objects.md) custom applications that meet your business needs without writing code. You can also use Objects to manage and extend both system and custom objects. This includes adding [fields](./creating-and-managing-objects/fields.md), [relationships](./creating-and-managing-objects/relationships.md), [actions](./creating-and-managing-objects/actions.md), [layouts](./creating-and-managing-objects/layouts.md), [views](./creating-and-managing-objects/views.md), [validations](./creating-and-managing-objects/validations.md), and [custom states](./creating-and-managing-objects/fields/adding-and-managing-custom-states.md). You can also use the Model Builder GUI to design complex object structures. This graphical tool shows object definitions as cards and visualizes relationships between definitions. See [Using the Objects Model Builder](./creating-and-managing-objects/using-the-objects-model-builder.md) for more information.

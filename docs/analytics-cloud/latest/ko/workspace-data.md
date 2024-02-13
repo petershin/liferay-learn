@@ -7,15 +7,6 @@ toc:
 ---
 # 작업 공간 데이터
 
-```{toctree}
-:maxdepth: 3
-
-workspace-data/managing-api-access.md
-workspace-data/data-control-and-privacy.md
-workspace-data/managing-data-sources.md
-workspace-data/definitions.md
-```
-
 설정 보기에서 애널리틱스 클라우드와 동기화되는 데이터 소스를 관리합니다. UI 왼쪽 하단의 설정 링크를 클릭합니다.
 
 액세스 토큰을 생성하거나 해지하여 [API](./workspace-data/managing-api-access.md) 액세스를 관리합니다.

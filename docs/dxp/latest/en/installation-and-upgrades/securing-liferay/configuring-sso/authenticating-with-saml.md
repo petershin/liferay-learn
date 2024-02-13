@@ -17,17 +17,6 @@ taxonomy-category-names:
 ---
 # Authenticating with SAML
 
-```{toctree}
-:maxdepth: 3
-
-authenticating-with-saml/saml-authentication-process-overview.md
-authenticating-with-saml/configuring-saml-at-the-system-level.md
-authenticating-with-saml/saml-admin.md
-authenticating-with-saml/importing-user-groups-memberships-from-an-external-idp-through-saml.md
-authenticating-with-saml/configuring-saml-at-the-instance-level.md
-authenticating-with-saml/saml-settings.md
-```
-
 The SAML (Security Assertion Markup Language) adapter provides Single Sign On (SSO) and Single Log Off (SLO) in your deployment. SAML works by using Identity Providers (IdP) and Service Providers (SP):
 
 **Identity Provider:** A trusted system that provides single sign-on for users to access other websites.

@@ -4,11 +4,6 @@ toc:
 ---
 # 開発者ガイド
 
-```{toctree}
-:maxdepth: 1
-developer-guide/warehouse-api-basics.md
-```
-
 ::::{grid} 2
 :gutter: 3 3 3 3
 

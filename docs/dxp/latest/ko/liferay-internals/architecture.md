@@ -9,17 +9,6 @@ toc:
 ---
 # 아키텍처
 
-```{toctree}
-:maxdepth: 3
-
-architecture/liferay-classloader-hierarchy.md
-architecture/the-benefits-of-modularity.md
-architecture/osgi-and-modularity.md
-architecture/module-lifecycle.md
-architecture/bundle-classloading-flow.md
-architecture/ui-architecture.md
-```
-
 Liferay DXP/포탈 아키텍처는 세 부분으로 구성됩니다:
 
 1. **Core:** 부트스트랩 DXP 및 해당 [프레임워크](../building-applications/core-frameworks.md). 코어는 서비스, UI 구성 요소 및 사용자 지정을 관리하기 위한 런타임 환경을 제공합니다.

@@ -7,13 +7,6 @@ toc:
 ---
 # カスタム・オブジェクトでシステム・オブジェクトを使う
 
-```{toctree}
-:maxdepth: 3
-
-using-system-objects-with-custom-objects/accessing-accounts-data-from-custom-objects.md
-using-system-objects-with-custom-objects/restricting-access-to-object-data-by-account.md
-```
-
 ::::{grid} 2
 :gutter: 3 3 3 3
 

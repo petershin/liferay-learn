@@ -18,21 +18,6 @@ uuid: fc80c177-a89d-4dd5-8dac-b6fde330ad3f
 ---
 # Elasticsearch
 
-```{toctree}
-:maxdepth: 2
-
-elasticsearch/getting-started-with-elasticsearch.md
-elasticsearch/installing-elasticsearch.md
-elasticsearch/connecting-to-elasticsearch.md
-elasticsearch/securing-elasticsearch.md
-elasticsearch/exercise-run-liferay-and-elasticsearch-using-docker.md
-elasticsearch/troubleshooting-elasticsearch-installation.md
-elasticsearch/using-the-sidecar-or-embedded-elasticsearch.md
-elasticsearch/upgrading-elasticsearch.md
-elasticsearch/elasticsearch-connector-configuration-reference.md
-elasticsearch/advanced-configuration-of-the-liferay-elasticsearch-connector.md
-```
-
 Elasticsearch is the highly scalable, full-text search engine Liferay uses by default. Elasticsearch is bundled with Liferay for non-production purposes. In production, Liferay requires Elasticsearch running on a separate remote server.
 
 ```{important}

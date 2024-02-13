@@ -10,13 +10,6 @@ taxonomy-category-names:
 ---
 # Maintaining Clustered Installations
 
-```{toctree}
-:maxdepth: 3
-
-maintaining-clustered-installations/rolling-restarts.md
-maintaining-clustered-installations/blue-green-deployments.md
-```
-
 Setting up your Liferay DXP installation to function in a [cluster](../setting-up-liferay/clustering-for-high-availability.md) provides performance and scalability improvements, but also requires additional consideration to properly support and maintain. This includes deploying new and updated plugins and modules, [installing patches and fix packs](./patching-dxp-7-3-and-earlier.md), changing configurations, and more. The Liferay DXP cluster maintenance methods outlined maximize server uptime and minimize risks for server maintenance. Liferay DXP supports using standard cluster maintenance techniques:
 
 * [Rolling restarts](./maintaining-clustered-installations/rolling-restarts.md): Nodes are shut down and updated one at a time.

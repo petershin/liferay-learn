@@ -5,12 +5,6 @@ toc:
 ---
 # 開発者ガイド
 
-```{toctree}
-:maxdepth: 1
-developer-guide/price-list-api-basics.md
-developer-guide/discount-api-basics.md
-```
-
 ::::{grid} 2
 :gutter: 3 3 3 3
 

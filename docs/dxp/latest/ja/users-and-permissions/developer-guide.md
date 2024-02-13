@@ -12,20 +12,6 @@ toc:
 ---
 # 開発者ガイド
 
-```{toctree}
-:maxdepth: 3
-
-developer-guide/adding-the-uad-framework.md
-developer-guide/accounts-api-basics.md
-developer-guide/account-users-and-roles-apis.md
-developer-guide/user-account-api-basics.md
-developer-guide/organizations-api-basics.md
-developer-guide/roles-api-basics.md
-developer-guide/user-groups-api-basics.md
-developer-guide/countries-api-basics.md
-developer-guide/regions-api-basics.md
-```
-
 - [UADフレームワークの追加](./developer-guide/adding-the-uad-framework.md)
 - [アカウントAPIの基本](./developer-guide/accounts-api-basics.md)
 - [アカウントユーザーとロールのAPI](./developer-guide/account-users-and-roles-apis.md)

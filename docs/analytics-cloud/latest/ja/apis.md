@@ -7,15 +7,6 @@ toc:
 ---
 # API
 
-```{toctree}
-:maxdepth: 3
-
-apis/authentication.md
-apis/querying-data.md
-apis/exporting-data.md
-apis/resource-types-and-structure.md
-```
-
 Liferay Analytics Cloudは、一連のAPIエンドポイントを介した分析データへのアクセスをサポートしています。 開発者は、RESTful APIまたはデータエクスポートのいずれかを介してデータにアクセスし、統合することができるようになりました。
 
 ビジネスでは、Analytics Cloudのデータを使って以下のようなことができます。

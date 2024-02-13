@@ -7,15 +7,6 @@ toc:
 ---
 # タッチ ポイント
 
-```{toctree}
-:maxdepth: 3
-
-touchpoints/sites-dashboard.md
-touchpoints/pages.md
-touchpoints/assets.md
-touchpoints/events.md
-```
-
 タッチポイントは、ユーザーや顧客がブランドと相互作用するさまざまな方法を反映しています。 Analytics Cloudは、ページビューなどの従来のページアナリティクスと、包括的なサイト、パス、アセットに特化したアナリティクスデータを組み合わせた幅広いアナリティクスデータを提示します。
 
 Analytics Cloudは、サイト全体の包括的なレポートを提供する [サイトワイド レポート ダッシュボード](./touchpoints/sites-dashboard.md) を提示します。 これにより、サイトのユニーク訪問者数、訪問者がどのページにアクセスし、どのような関心を持っているかなどを把握することができます。 [個別ページ](./touchpoints/pages/pages.md) のアナリティクスも簡単に見ることができる。 これには、閲覧数、訪問者数、直帰率などが含まれます。 [パス分析](./touchpoints/pages/paths.md) 訪問者がどのようにあなたのページにたどり着いたかを示します。 これには、訪問者がお客様のページの前にどのページを訪れたか、訪問者の位置やデバイスの種類などの情報が含まれます。 多くのLiferay DXP [アセット](./touchpoints/assets/assets.md) のパフォーマンスを追跡して、ページレベルよりも深く掘り下げて、サイトのパフォーマンスを改善する方法を判断することもできます。 [イベント分析](./touchpoints/events/events-analysis.md) を使えば、個人がどのようにサイトを訪れ、どのように交流しているかを分析することができます。

@@ -6,14 +6,6 @@ toc:
 ---
 # リダイレクトと404トラッキングの設定
 
-```{toctree}
-:maxdepth: 3
-
-setting-up-redirects-and-404-tracking/using-alias-redirects.md
-setting-up-redirects-and-404-tracking/using-pattern-redirects.md
-setting-up-redirects-and-404-tracking/tracking-404-urls.md
-```
-
 {bdg-secondary}`7.4 U48+/GA48+`
 
 URLの整合性を保つことは、どんなサイトにとっても重要です。 Liferayの **Redirection** ツールは、HTTPリダイレクトを管理し、個々のサイトについて404エラーを追跡する便利で統合された方法を提供します。 リンク切れを回避・修正し、ユーザーエクスペリエンスとサイトのSEOの両方を向上させるために使用します。

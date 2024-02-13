@@ -17,18 +17,6 @@ uuid: 509393a0-2d94-43ec-a20a-29cfa5805243
 ---
 # Tags and Categories
 
-```{toctree}
-:maxdepth: 3
-
-tags-and-categories/organizing-content-with-categories-and-tags.md
-tags-and-categories/tagging-content-and-managing-tags.md
-tags-and-categories/defining-categories-and-vocabularies-for-content.md
-tags-and-categories/geolocating-assets.md
-tags-and-categories/session-property-vocabularies.md
-tags-and-categories/auto-tagging.md
-tags-and-categories/developer-guide.md
-```
-
 - [Organizing Content with Categories and Tags](./tags-and-categories/organizing-content-with-categories-and-tags.md)
 - [Tagging Content and Managing Tags](./tags-and-categories/tagging-content-and-managing-tags.md)
 - [Defining Categories and Vocabularies for Content](./tags-and-categories/defining-categories-and-vocabularies-for-content.md)

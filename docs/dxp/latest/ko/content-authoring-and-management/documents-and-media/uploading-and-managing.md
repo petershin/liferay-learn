@@ -14,22 +14,6 @@ toc:
 ---
 # 업로드 및 관리
 
-```{toctree}
-:maxdepth: 2
-
-uploading-and-managing/uploading-files.md
-uploading-and-managing/using-folders.md
-uploading-and-managing/managing-files.md
-uploading-and-managing/deleting-files.md
-uploading-and-managing/editing-images.md
-uploading-and-managing/using-file-expiration-and-review-dates.md
-uploading-and-managing/configuring-document-urls.md
-uploading-and-managing/linking-to-files-on-google-drive.md
-uploading-and-managing/enabling-docusign-digital-signatures.md
-uploading-and-managing/creating-documents.md
-uploading-and-managing/managing-metadata.md
-```
-
 * [파일 업로드](./uploading-and-managing/uploading-files.md)
 * [폴더 사용](./uploading-and-managing/using-folders.md)
 * [파일 관리](./uploading-and-managing/managing-files.md)

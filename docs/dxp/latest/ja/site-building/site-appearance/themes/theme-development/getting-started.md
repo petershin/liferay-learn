@@ -4,12 +4,6 @@ toc:
 ---
 # はじめに
 
-```{toctree}
-:maxdepth: 3
-
-getting-started/setting-up-an-environment-and-creating-a-theme.md
-```
-
 ::::{grid} 2
 :gutter: 3 3 3 3
 

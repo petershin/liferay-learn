@@ -11,19 +11,6 @@ toc:
 ---
 # 検索ファセット
 
-```{toctree}
-:maxdepth: 2
-
-search-facets/site-facet.md
-search-facets/type-facet.md
-search-facets/category-facet.md
-search-facets/tag-facet.md
-search-facets/folder-facet.md
-search-facets/user-facet.md
-search-facets/modified-facet.md
-search-facets/custom-facet.md
-```
-
 # ファセット
 
 検索バーにキーワードを入力し、［検索］ボタンをクリックします。 デフォルトの検索エクスペリエンスでは、右側に結果が、左側に **ファセット** のコレクションが表示されるページにリダイレクトされます。

@@ -14,22 +14,6 @@ toc:
 ---
 # 仮想インスタンス
 
-```{toctree}
-:maxdepth: 4
-
-virtual-instances/understanding-virtual-instances.md
-virtual-instances/adding-a-virtual-instance.md
-virtual-instances/instance-configuration.md
-virtual-instances/users.md
-virtual-instances/user-authentication.md
-virtual-instances/email-settings.md
-virtual-instances/analytics.md
-virtual-instances/localization.md
-virtual-instances/infrastructure.md
-virtual-instances/third-party.md
-virtual-instances/redirect-urls.md
-```
-
 * [仮想インスタンスを理解する](./virtual-instances/understanding-virtual-instances.md)
 * [仮想インスタンスの追加](./virtual-instances/adding-a-virtual-instance.md)
 * [インスタンス設定](./virtual-instances/instance-configuration.md)

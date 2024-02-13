@@ -4,12 +4,6 @@ toc:
 ---
 # 開発者リファレンス
 
-```{toctree}
-:maxdepth: 3
-
-reference/fragments.md
-```
-
 ## フラグメントの開発リファレンス
 
 ::::{grid} 2

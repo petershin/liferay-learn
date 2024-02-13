@@ -7,15 +7,6 @@ toc:
 ---
 # サイトテンプレート
 
-```{toctree}
-:maxdepth: 4
-
-site-templates/creating-site-templates.md
-site-templates/propagating-template-changes.md
-site-templates/configuring-site-template-propagation.md
-site-templates/exporting-importing-site-templates.md
-```
-
 Liferayは、サイト作成時に使用できる構造とコンテンツを設計するためのサイトテンプレートを提供します。 各テンプレートには、ページ、スタイルブック、ウェブコンテンツなどを追加するためのほとんどの標準的なサイトアプリケーションが含まれています。 テンプレートで作成されたサイトは、そのテンプレートのすべてのデータを継承します。 詳しくは、 [サイトテンプレートの作成](./site-templates/creating-site-templates.md) をご覧ください。
 
 ```{note}

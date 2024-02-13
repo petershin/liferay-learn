@@ -4,12 +4,6 @@ toc:
 ---
 # Alloy UI（AUI）タグライブラリ
 
-```{toctree}
-:maxdepth: 3
-
-alloy-ui-aui-tag-library/building-forms-with-aui-tags.md
-```
-
 AUIタグライブラリは、一般的に使用されるUIコンポーネントを実装するタグを提供します。  これらのタグにより、マークアップの一貫性、応答性、アクセス性が向上します。
 
 使用可能な`<aui>` taglibのリストは、 [AUI taglibdocs](https://resources.learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/aui/tld-summary.html) にあります。  各taglibには、タグに渡すことができる属性のリストがあります。 これらの一部は必須であり、一部はオプションです。 各タグの要件を確認するには、taglibdocsを参照してください。 タグによって生成された完全なマークアップは、 [Liferay Github Repo](https://github.com/liferay/liferay-portal/tree/7.2.x/portal-web/docroot/html/taglib/aui) フォルダのJSPにあります。

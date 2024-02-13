@@ -15,16 +15,6 @@ uuid: 6f904c1b-7c0a-409d-b8aa-8f22d75fd8f9
 ---
 # Using Content Pages
 
-```{toctree}
-:maxdepth: 3
-
-using-content-pages/adding-elements-to-content-pages.md
-using-content-pages/managing-content-in-content-pages.md
-using-content-pages/using-widgets-on-a-content-page.md
-using-content-pages/using-page-comments.md
-using-content-pages/content-page-editor-ui-reference.md
-```
-
 By default, Liferay DXP uses the content page type, which provides a convenient user interface for managing and editing page content and design. With content pages, you can use configurable drag-and-drop elements out-of-the-box or develop your own to create the desired user experience.
 
 As with other page types, you can use [widgets](./using-content-pages/using-widgets-on-a-content-page.md) to add dynamic functionality to a content page, integrating blogs, wikis, message boards, and more. Content pages are primarily built using [page fragments](./page-fragments-and-widgets/using-fragments.md). Page fragments are extensible, reusable page elements that include editable components, such as text, images, and links, which you can also map to available content. See [Default Fragments Reference](./page-fragments-and-widgets/using-fragments/default-fragments-reference.md) to learn more about DXP's out-of-the-box fragments, or [Developing Fragments](../developer-guide/developing-page-fragments/developing-fragments-intro.md) to learn how to create your own.

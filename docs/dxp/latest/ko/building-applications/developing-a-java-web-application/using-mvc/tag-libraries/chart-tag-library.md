@@ -15,23 +15,6 @@ toc:
 ---
 # 차트 태그 라이브러리
 
-```{toctree}
-:maxdepth: 3
-
-chart-tag-library/bar-chart.md
-chart-tag-library/combination-chart.md
-chart-tag-library/donut-chart.md
-chart-tag-library/geomap-chart.md
-chart-tag-library/gauge-chart.md
-chart-tag-library/line-chart.md
-chart-tag-library/pie-chart.md
-chart-tag-library/predictive-chart.md
-chart-tag-library/scatter-chart.md
-chart-tag-library/spline-chart.md
-chart-tag-library/step-chart.md
-chart-tag-library/refreshing-charts-to-reflect-real-time-data.md
-```
-
 선, 스플라인, 막대, 파이 등 차트 태그 라이브러리는 데이터를 모델링하는 데 필요한 모든 것을 제공합니다. 각 taglib는 해당 [Clay 구성 요소](https://github.com/liferay/clay/tree/2.x-stable/packages/clay-charts/src) 에 대한 액세스를 제공합니다. 이러한 구성 요소에는 UI의 기본 구성이 포함되어 있습니다.
 
 앱에서 Chart taglib를 사용하려면 JSP에 다음 선언을 추가하십시오.

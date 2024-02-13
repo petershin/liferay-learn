@@ -29,13 +29,6 @@ Liferayでは、すぐに使えるレスポンシブレイアウトを使用し�
 Liferay 7.2では、モバイルデバイスの検出時にサイトの動作を制御するモバイルデバイスルールを作成できます。 モバイル・デバイス・ルールの作成の詳細については、 [モバイル・デバイス・ルールの作成](./building-a-responsive-site/creating-mobile-device-rules.md) を参照してください。
 ```
 
-```{toctree}
-:maxdepth: 3
-
-building-a-responsive-site/building-responsive-layouts-with-the-grid-fragment.md
-building-a-responsive-site/using-the-simulation-panel.md
-```
-
 ::::{grid} 2
 :gutter: 3 3 3 3
 

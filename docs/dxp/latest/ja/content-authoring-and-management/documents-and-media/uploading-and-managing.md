@@ -14,22 +14,6 @@ toc:
 ---
 # アップロードと管理
 
-```{toctree}
-:maxdepth: 2
-
-uploading-and-managing/uploading-files.md
-uploading-and-managing/using-folders.md
-uploading-and-managing/managing-files.md
-uploading-and-managing/deleting-files.md
-uploading-and-managing/editing-images.md
-uploading-and-managing/using-file-expiration-and-review-dates.md
-uploading-and-managing/configuring-document-urls.md
-uploading-and-managing/linking-to-files-on-google-drive.md
-uploading-and-managing/enabling-docusign-digital-signatures.md
-uploading-and-managing/creating-documents.md
-uploading-and-managing/managing-metadata.md
-```
-
 - [ファイルのアップロード](./uploading-and-managing/uploading-files.md)
 - [フォルダーの使用](./uploading-and-managing/using-folders.md)
 - [ファイルの管理](./uploading-and-managing/managing-files.md)

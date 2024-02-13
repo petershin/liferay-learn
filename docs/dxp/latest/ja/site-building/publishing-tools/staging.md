@@ -14,22 +14,6 @@ toc:
 ---
 # ステージング
 
-```{toctree}
-:maxdepth: 3
-
-staging/understanding-the-publishing-process.md
-staging/configuring-local-live-staging.md
-staging/configuring-remote-live-staging.md
-staging/managing-data-and-content-types-in-staging.md
-staging/page-versioning.md
-staging/publishing-single-assets-and-widgets.md
-staging/configuring-automatic-publishing-of-displayed-content.md
-staging/configuring-page-publishing.md
-staging/managing-staging-permissions.md
-staging/using-staging-in-asset-libraries.md
-staging/site-staging-ui-reference.md
-```
-
 Liferayのステージングアプリケーションは、本番環境に変更を公開する前に、サイトやアセットライブラリに変更を加えるための作業環境を提供します。 これを使えば、ステージングされたアプリケーションのデータやページを舞台裏で修正し、準備ができたら変更を公開することができます。
 
 ![Liferayは元のサイトやライブラリのコピーを別に作成します。](./staging/images/01.png)

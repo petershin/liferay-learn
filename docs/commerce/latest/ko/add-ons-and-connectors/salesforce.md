@@ -4,12 +4,6 @@ toc:
 ---
 # 판매 인력.
 
-```{toctree}
-:maxdepth: 1
-
-salesforce/liferay-connector-to-salesforce.md
-```
-
 ```{raw} html
 :file: ../landingpage_template.html
 ```

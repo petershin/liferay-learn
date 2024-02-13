@@ -19,21 +19,6 @@ taxonomy-category-names:
 ---
 # Liferay Util Tag Library
 
-```{toctree}
-:maxdepth: 3
-
-liferay-util-tag-library/liferay-util-body-bottom.md
-liferay-util-tag-library/liferay-util-body-top.md
-liferay-util-tag-library/liferay-util-buffer.md
-liferay-util-tag-library/liferay-util-dynamic-include.md
-liferay-util-tag-library/liferay-util-get-url.md
-liferay-util-tag-library/liferay-util-html-bottom.md
-liferay-util-tag-library/liferay-util-html-top.md
-liferay-util-tag-library/liferay-util-include.md
-liferay-util-tag-library/liferay-util-param.md
-liferay-util-tag-library/liferay-util-whitespace-remover.md
-```
-
 The Liferay Util taglib is used to pull other resources into a portlet or theme. You can use it to specify which resources to insert at the bottom or top of the page's HTML. 
 
 To use the Liferay-Util taglib, add the following declaration to your JSP:

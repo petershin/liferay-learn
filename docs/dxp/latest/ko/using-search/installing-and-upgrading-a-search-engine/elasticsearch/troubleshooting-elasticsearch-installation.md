@@ -7,13 +7,6 @@ toc:
 ---
 # Elasticsearch 설치 문제 해결
 
-```{toctree}
-:maxdepth: 1
-
-troubleshooting-elasticsearch-installation/troubleshooting-the-elasticsearch-connection.md
-troubleshooting-elasticsearch-installation/troubleshooting-elasticsearch-common-issues.md
-```
-
 Liferay와 Elasticsearch는 구성으로 가득 찬 복잡한 시스템입니다. [연결할 때](./getting-started-with-elasticsearch.md), 도중에 어려움에 부딪힐 수 있습니다. 아래에는 문제 해결을 위한 기술이 포함되어 있습니다.
 
 몇 가지 일반적인 문제와 해결 방법에 대해 알아보려면 다음을 참조하세요.

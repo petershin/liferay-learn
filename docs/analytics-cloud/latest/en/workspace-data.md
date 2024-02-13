@@ -14,15 +14,6 @@ taxonomy-category-names:
 ---
 # Workspace Data
 
-```{toctree}
-:maxdepth: 3
-
-workspace-data/managing-api-access.md
-workspace-data/data-control-and-privacy.md
-workspace-data/managing-data-sources.md
-workspace-data/definitions.md
-```
-
 In settings view, and manage the data sources that sync with Analytics Cloud. Click the settings link at the bottom left of the UI.
 
 Manage [API](./workspace-data/managing-api-access.md) access by creating or revoking access tokens.

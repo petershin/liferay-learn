@@ -14,22 +14,6 @@ toc:
 ---
 # 스테이징
 
-```{toctree}
-:maxdepth: 3
-
-staging/understanding-the-publishing-process.md
-staging/configuring-local-live-staging.md
-staging/configuring-remote-live-staging.md
-staging/managing-data-and-content-types-in-staging.md
-staging/page-versioning.md
-staging/publishing-single-assets-and-widgets.md
-staging/configuring-automatic-publishing-of-displayed-content.md
-staging/configuring-page-publishing.md
-staging/managing-staging-permissions.md
-staging/using-staging-in-asset-libraries.md
-staging/site-staging-ui-reference.md
-```
-
 Liferay의 Staging 애플리케이션은 변경 사항을 실제 환경에 게시하기 전에 사이트나 자산 라이브러리를 변경할 수 있는 작업 환경을 제공합니다. 이를 통해 무대 뒤에서 준비된 애플리케이션 데이터와 페이지를 수정한 다음, 준비가 되면 변경 사항을 개별적으로 또는 모두 함께 게시할 수 있으며, 동시에 라이브 환경은 들어오는 사용자 트래픽을 처리합니다.
 
 ![Liferay creates a separate copy of the original site or library.](./staging/images/01.png)

@@ -10,12 +10,6 @@ taxonomy-category-names:
 ---
 # Reference
 
-```{toctree}
-:maxdepth: 3
-
-reference/cdi-portlet-predefined-beans.md
-```
-
 ```{raw} html
 :file: ../../../landingpage_template.html
 ```

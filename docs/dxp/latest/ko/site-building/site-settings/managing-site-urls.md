@@ -6,15 +6,6 @@ toc:
 ---
 # 사이트 URL 관리
 
-```{toctree}
-:maxdepth: 3
-
-managing-site-urls/configuring-your-sites-friendly-url.md
-managing-site-urls/configuring-virtual-hosts-site-urls.md
-managing-site-urls/setting-up-redirects-and-404-tracking.md
-
-```
-
 Liferay DXP는 사이트 URL 구성 및 관리를 위한 다양한 기본 기능을 제공합니다.
 
 ## 가상 호스트 사이트 URL

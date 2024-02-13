@@ -17,19 +17,6 @@ taxonomy-category-names:
 ---
 # Fundamentals
 
-```{toctree}
-:maxdepth: 3
-
-fundamentals/module-projects.md
-fundamentals/apis-as-osgi-services.md
-fundamentals/using-an-osgi-service.md
-fundamentals/importing-packages.md
-fundamentals/exporting-packages.md
-fundamentals/semantic-versioning.md
-fundamentals/configuring-dependencies.md
-fundamentals/using-the-gogo-shell.md
-```
-
 Liferay development projects consist primarily of simple .jar files. These contain a few extra configuration files that make them OSGi modules, but they're easily understandable by anyone who knows Java.
 
 Part of the power of OSGi is that you have a single, consistent way to build projects that access DXP's API, extend and override various features, or package new software for deployment. These projects, or modules, form an ecosystem where they can depend on each other for functionality and be manipulated at runtime.

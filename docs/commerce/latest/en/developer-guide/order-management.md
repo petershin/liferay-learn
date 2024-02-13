@@ -14,15 +14,6 @@ taxonomy-category-names:
 ---
 # Order Management
 
-```{toctree}
-:maxdepth: 1
-
-order-management/commerce-order-engine-overview.md
-order-management/implementing-a-custom-order-status.md
-order-management/implementing-a-custom-notification-type.md
-order-management/implementing-a-custom-order-rule.md
-```
-
 ::::{grid} 2
 :gutter: 3 3 3 3
 

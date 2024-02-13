@@ -7,14 +7,6 @@ toc:
 ---
 # 오디언스 타겟팅에서 마이그레이션
 
-```{toctree}
-:maxdepth: 3
-
-migration-from-audience-targeting/migrating-to-segmentation-and-personalization.md
-migration-from-audience-targeting/migrating-user-segments.md
-migration-from-audience-targeting/manually-migrating-from-audience-targeting.md
-```
-
 ::::{grid} 2
 :gutter: 3 3 3 3
 

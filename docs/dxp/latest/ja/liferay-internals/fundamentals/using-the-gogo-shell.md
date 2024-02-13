@@ -5,13 +5,6 @@ toc:
 ---
 # Gogo シェルの使用
 
-```{toctree}
-:maxdepth: 3
-
-using-the-gogo-shell/command-line-gogo-shell.md
-using-the-gogo-shell/gogo-shell-commands.md
-```
-
 Gogoシェルは、モジュールフレームワークと対話するための手段を提供します。 中でも、以下を実行できます。
 
 * バンドル（モジュール）の動的なインストール／アンインストール

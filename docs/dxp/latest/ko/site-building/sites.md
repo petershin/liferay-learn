@@ -10,18 +10,6 @@ toc:
 ---
 # 사이트
 
-```{toctree}
-:maxdepth: 4
-
-sites/adding-a-site.md
-sites/site-templates.md
-sites/site-hierarchies.md
-sites/site-membership.md
-sites/personal-sites.md
-sites/exporting-importing-site-pages-and-content.md
-sites/default-site-applications.md
-```
-
 사이트는 개인화된 디지털 경험을 구축할 수 있는 사용자 지정 가능한 공간입니다. 각 사이트에는 포털, 인트라넷, 전자상거래 스토어 등과 같은 사용자 지정 솔루션을 구축하기 위한 [즉시 사용 가능한 애플리케이션(](./sites/default-site-applications.md) )이 포함되어 있습니다. 사이트를 만들 때 빈 사이트를 만들거나 사용자 정의 및 기본 사이트 템플릿을 사용하여 미리 정의된 구조와 콘텐츠로 사이트를 채울 수 있습니다. [조직](../users-and-permissions/organizations/understanding-organizations.md)을 사용하는 경우 전용 [조직 사이트](../users-and-permissions/organizations/organization-sites.md) 를 활성화하여 각 조직의 요구 사항에 맞는 사이트를 개발 및 관리할 수도 있습니다.
 
 기본적으로 Liferay는 인증된 사용자를 위한 개인 사이트도 생성합니다. 각 사용자는 개인 사이트의 유일한 회원이며 개인 사이트를 사용하여 자신의 콘텐츠를 표시하고 관리할 수 있습니다. [사용자 그룹](../users-and-permissions/user-groups/creating-and-managing-user-groups.md)을 사용하는 경우 [사용자 그룹 사이트](../users-and-permissions/user-groups/user-group-sites.md) 를 만들어 모든 그룹 멤버의 개인 사이트에 미리 정의된 페이지를 추가할 수 있습니다.

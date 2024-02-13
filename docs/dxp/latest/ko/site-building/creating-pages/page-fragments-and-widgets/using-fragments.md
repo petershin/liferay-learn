@@ -15,23 +15,6 @@ toc:
 ---
 # 조각 사용
 
-```{toctree}
-:maxdepth: 3
-
-using-fragments/default-fragments-reference.md
-using-fragments/using-layout-elements.md
-using-fragments/configuring-fragments.md
-using-fragments/mapping-and-linking-fragment-elements.md
-using-fragments/configuring-fragment-visibility.md
-using-fragments/editing-fragment-elements.md
-using-fragments/personalizing-custom-forms-using-form-fragments.md
-using-fragments/creating-dropdown-menus-with-fragments.md
-using-fragments/duplicating-fragments.md
-using-fragments/saving-fragment-compositions.md
-using-fragments/managing-fragments.md
-using-fragments/propagating-fragment-changes.md
-```
-
 페이지 조각은 [콘텐츠 페이지] 및 관련 템플릿(예: [마스터](../defining-headers-and-footers/master-page-templates.md), [페이지](../adding-pages/creating-a-page-template.md) 및 [표시 페이지](../../displaying-content/using-display-page-templates.md))을 구축하기 위한 확장 가능하고 재사용 가능한 끌어서 놓기 요소입니다. HTML, CSS 및 JavaScript를 사용하여 구축되었으며 페이지에 구조와 기능을 모두 제공할 수 있습니다.
 
 ![Build content pages and templates with fragments.](./using-fragments/images/01.png)

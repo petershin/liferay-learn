@@ -6,14 +6,6 @@ toc:
 ---
 # 웹 서비스 보안
 
-```{toctree}
-:maxdepth: 2
-
-securing-web-services/setting-service-access-policies.md
-securing-web-services/using-authentication-verifiers.md
-securing-web-services/setting-up-cors.md
-```
-
 Liferay DXP는 웹 서비스를 위한 네 가지 보안 계층을 제공합니다.
 
 **IP 권한 레이어:** 웹 서비스 호출 요청이 시작된 IP 주소는 포털 속성 파일에서 화이트리스트에 있어야 합니다. 화이트리스트에 없는 IP 주소에서 오는 웹 서비스 호출은 자동으로 실패합니다.

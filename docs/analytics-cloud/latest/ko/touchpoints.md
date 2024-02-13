@@ -7,15 +7,6 @@ toc:
 ---
 # 터치포인트
 
-```{toctree}
-:maxdepth: 3
-
-touchpoints/sites-dashboard.md
-touchpoints/pages.md
-touchpoints/assets.md
-touchpoints/events.md
-```
-
 터치포인트는 사용자와 고객이 브랜드와 상호 작용하는 다양한 방식을 반영합니다. Analytics Cloud는 페이지 조회수와 같은 기존 페이지 분석을 포괄적인 사이트, 경로 및 자산별 분석 데이터와 결합한 광범위한 분석 데이터를 제공합니다.
 
 Analytics Cloud 전체 사이트에 대한 종합적인 보고서를 제공하는 [사이트 전체 보고 대시보드](./touchpoints/sites-dashboard.md)를 제공합니다. 이를 통해 시간이 지남에 따라 사이트의 순 방문자 수, 방문자가 액세스하는 페이지, 관심 분야 등을 이해할 수 있습니다. [개별 페이지](./touchpoints/pages/pages.md) 에 대한 분석도 쉽게 볼 수 있습니다. 여기에는 조회수, 방문자 및 이탈률이 포함됩니다. [경로 분석](./touchpoints/pages/paths.md) 방문자가 귀하의 페이지에 어떻게 도착하는지 보여줍니다. 여기에는 사용자가 귀하보다 먼저 방문한 페이지, 사이트

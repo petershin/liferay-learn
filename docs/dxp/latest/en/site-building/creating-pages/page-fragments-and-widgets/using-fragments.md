@@ -22,23 +22,6 @@ uuid: 6daca74f-6058-429b-af62-1e1af9c71048
 ---
 # Using Fragments
 
-```{toctree}
-:maxdepth: 3
-
-using-fragments/default-fragments-reference.md
-using-fragments/using-layout-elements.md
-using-fragments/configuring-fragments.md
-using-fragments/mapping-and-linking-fragment-elements.md
-using-fragments/configuring-fragment-visibility.md
-using-fragments/editing-fragment-elements.md
-using-fragments/personalizing-custom-forms-using-form-fragments.md
-using-fragments/creating-dropdown-menus-with-fragments.md
-using-fragments/duplicating-fragments.md
-using-fragments/saving-fragment-compositions.md
-using-fragments/managing-fragments.md
-using-fragments/propagating-fragment-changes.md
-```
-
 Page fragments are extensible and reusable drag-and-drop elements for building [content pages](../using-content-pages.md) and their related templates (i.e., [masters](../defining-headers-and-footers/master-page-templates.md), [pages](../adding-pages/creating-a-page-template.md), and [display pages](../../displaying-content/using-display-page-templates.md)). They are built using HTML, CSS, and JavaScript and can provide both structure and functionality to your pages.
 
 ![Build content pages and templates with fragments.](./using-fragments/images/01.png)

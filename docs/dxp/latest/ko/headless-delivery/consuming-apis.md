@@ -12,20 +12,6 @@ toc:
 ---
 # API 사용
 
-```{toctree}
-:maxdepth: 3
-
-consuming-apis/consuming-rest-services.md
-consuming-apis/consuming-graphql-apis.md
-consuming-apis/data-migration-center.md
-consuming-apis/api-query-parameters.md
-consuming-apis/batch-engine-api-basics-importing-data.md
-consuming-apis/batch-engine-api-basics-exporting-data.md
-consuming-apis/making-unauthenticated-requests.md
-consuming-apis/using-external-reference-codes.md
-consuming-apis/api-headers-reference.md
-```
-
 * [휴식 서비스 이용](./consuming-apis/consuming-rest-services.md)
 * [GraphQL API 사용](./consuming-apis/consuming-graphql-apis.md)
 * [데이터 마이그레이션 센터](./consuming-apis/data-migration-center.md)

@@ -6,14 +6,6 @@ toc:
 ---
 # 사이트 멤버십
 
-```{toctree}
-:maxdepth: 4
-
-site-membership/adding-members-to-sites.md
-site-membership/inviting-members-to-your-site.md
-site-membership/creating-teams-for-sites.md
-```
-
 사이트의 회원이 되면 인증되지 않은 게스트 사용자 이상의 액세스 권한과 기능이 사용자에게 부여됩니다. 이러한 주요 혜택은 사이트 멤버십과 함께 제공됩니다:
 
 * 사이트 회원은 게시판, 위키 등 사이트에서 콘텐츠를 만들고 공동 작업할 수 있는 많은 위젯에 대해 게스트보다 더 많은 권한을 갖습니다.

@@ -10,19 +10,6 @@ toc:
 - ./tag-libraries/chart-tag-library.md
 ---
 # タグライブラリ
-
-```{toctree}
-:maxdepth: 3
-
-tag-libraries/liferay-theme-objects-for-jsps.md
-tag-libraries/liferay-portlet-objects-for-jsps.md
-tag-libraries/alloy-ui-aui-tag-library.md
-tag-libraries/clay-tag-library.md
-tag-libraries/liferay-ui-tag-library.md
-tag-libraries/liferay-frontend-tag-library.md
-tag-libraries/liferay-util-tag-library.md
-tag-libraries/chart-tag-library.md
-```
 アプリ、テーマ、およびWebコンテンツで一般的に使用されるUIコンポーネントを作成するための強力なtaglibのセットを利用できます。 このセクションでは、次のtaglibについて説明します。
 
 * AUI：フォームやボタンなどの一般的なUIコンポーネントを作成します。

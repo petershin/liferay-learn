@@ -9,17 +9,6 @@ toc:
 ---
 # ドキュメントとメディア
 
-```{toctree}
-:maxdepth: 4
-
-documents-and-media/uploading-and-managing.md
-documents-and-media/publishing-and-sharing.md
-documents-and-media/videos.md
-documents-and-media/developer-guide.md
-documents-and-media/devops.md
-documents-and-media/documents-and-media-ui-reference.md
-```
-
 ドキュメントとメディアアプリケーションは、Liferayインスタンス内のファイルを保存および管理します。 これには、ドキュメントとメディアに直接アップロードされたファイルだけでなく、添付ファイルをサポートしているアプリケーションにアップロードされたファイルも含まれます。
 
 アップロードされたすべてのファイルは、指定された[ファイルストア](../system-administration/file-storage.md)に保存されます。 デフォルトでは、Documents and Media は [簡易ファイルシステムストア](../system-administration/file-storage/other-file-store-types/simple-file-system-store.md) を使用しますが、別のファイルストア（例： [DBStore](../system-administration/file-storage/other-file-store-types/dbstore.md) , [Google Cloud Store](../system-administration/file-storage/other-file-store-types/google-cloud-storage.md), または [Amazon S3 Store](../system-administration/file-storage/other-file-store-types/amazon-s3-store.md)）を使用するようにインスタンスを構成することができま す。

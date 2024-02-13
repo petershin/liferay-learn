@@ -9,17 +9,6 @@ toc:
 ---
 # Message Busメッセージバス
 
-```{toctree}
-:maxdepth: 3
-
-message-bus/listening-for-messages.md
-message-bus/using-asynchronous-messaging.md
-message-bus/using-default-synchronous-messaging-in-previous-versions.md
-message-bus/using-direct-synchronous-messaging-in-previous-versions.md
-message-bus/listening-for-registration-events.md
-message-bus/tuning-messaging-performance.md
-```
-
 メッセージバスは、メッセージを交換するための疎結合された方法を提供します。 メッセージを送信するクラスはメッセージバスを呼び出してメッセージを宛先に送信し、その宛先に登録されている他のクラス（**リスナー**）がメッセージを受信します。 リスナーは送信者に対して透過的であり、その逆も同様です。
 
 主なメッセージングコンポーネントは次のとおりです。

@@ -5,13 +5,6 @@ toc:
 ---
 # 사이트 사용자
 
-```{toctree}
-:maxdepth: 3
-
-site-users/changing-site-membership-type.md
-site-users/configuring-role-and-team-defaults-for-site-members.md
-```
-
 ::::{grid} 2
 :gutter: 3 3 3 3
 

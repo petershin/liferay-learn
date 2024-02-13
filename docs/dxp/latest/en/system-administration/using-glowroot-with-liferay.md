@@ -14,16 +14,6 @@ taxonomy-category-names:
 
 # Using Glowroot with Liferay
 
-```{toctree}
-:maxdepth: 3
-
-using-glowroot-with-liferay/troubleshooting-jvm-issues-with-glowroot.md
-using-glowroot-with-liferay/troubleshooting-liferay-performance-issues-with-glowroot.md
-using-glowroot-with-liferay/troubleshooting-templates-with-glowroot-freemarker-plugin.md
-using-glowroot-with-liferay/liferay-performance-use-cases-with-glowroot.md
-using-glowroot-with-liferay/developing-glowroot-plugins.md
-```
-
 {bdg-secondary}`Liferay DXP 2023.Q4+/Portal 7.4 GA100+`
 
 Liferay bundles [Glowroot](https://glowroot.org/), the open source Java application monitoring tool. The tool displays helpful statistics about your system (e.g. server requests, errors, etc.) with minimal overhead. Use Glowroot to troubleshoot issues and analyze performance issues.

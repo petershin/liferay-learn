@@ -15,15 +15,6 @@ uuid: 7306854f-8c76-4c95-946f-9930a0f477f4
 
 # Site Templates
 
-```{toctree}
-:maxdepth: 4
-
-site-templates/creating-site-templates.md
-site-templates/propagating-template-changes.md
-site-templates/configuring-site-template-propagation.md
-site-templates/exporting-importing-site-templates.md
-```
-
 Liferay provides site templates for designing structures and content that you can use during site creation. Each template includes most standard site applications for adding pages, stylebooks, web content, and more. Sites created with a template inherit all of its data. See [Creating Site Templates](./site-templates/creating-site-templates.md) for more information.
 
 ```{note}

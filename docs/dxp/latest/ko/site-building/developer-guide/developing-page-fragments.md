@@ -16,25 +16,6 @@ toc:
 ---
 # 페이지 조각 개발
 
-```{toctree}
-:maxdepth: 3
-
-developing-page-fragments/developing-fragments-intro.md
-developing-page-fragments/using-the-fragments-editor.md
-developing-page-fragments/using-the-fragments-toolkit.md
-developing-page-fragments/adding-configuration-options-to-fragments.md
-developing-page-fragments/best-practices-for-using-fragment-configurations.md
-developing-page-fragments/applying-styles-to-fragments.md
-developing-page-fragments/defining-fragment-drop-zones.md
-developing-page-fragments/using-custom-fields-in-page-fragments.md
-developing-page-fragments/creating-a-contributed-fragment-set.md
-developing-page-fragments/validating-fragment-configurations.md
-developing-page-fragments/auto-deploying-fragments.md
-developing-page-fragments/including-default-resources-with-fragments.md
-developing-page-fragments/setting-the-order-of-elements-in-a-fragment.md
-developing-page-fragments/creating-form-fragments.md
-```
-
 * [조각 개발](./developing-page-fragments/developing-fragments-intro.md)
 * [조각 편집기 사용하기](./developing-page-fragments/using-the-fragments-editor.md)
 * [Fragments Toolkit 사용하기](./developing-page-fragments/using-the-fragments-toolkit.md)

@@ -7,15 +7,6 @@ toc:
 ---
 # ワークスペース データ
 
-```{toctree}
-:maxdepth: 3
-
-workspace-data/managing-api-access.md
-workspace-data/data-control-and-privacy.md
-workspace-data/managing-data-sources.md
-workspace-data/definitions.md
-```
-
 設定で、Analytics Cloudと同期するデータソースを表示および管理します。 UIの左下にある設定リンクをクリックします。
 
 アクセストークンを作成または取り消すことで、[ API](./workspace-data/managing-api-access.md)アクセスを管理します。

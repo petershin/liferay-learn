@@ -13,21 +13,6 @@ toc:
 ---
 # 문제 해결
 
-```{toctree}
-:maxdepth: 1
-
-troubleshooting/troubleshooting-tools-and-resources.md
-troubleshooting/reading-liferay-cloud-service-logs.md
-troubleshooting/shell-access.md
-troubleshooting/troubleshooting-services.md
-troubleshooting/disaster-recovery-overview.md
-troubleshooting/configuring-cross-region-disaster-recovery.md
-troubleshooting/self-healing.md
-troubleshooting/support-access.md
-troubleshooting/liferay-cloud-platform-status.md
-troubleshooting/creating-thread-and-heap-dumps.md
-```
-
 * [문제 해결 도구 및 리소스](./troubleshooting/troubleshooting-tools-and-resources.md)
 * [Liferay 클라우드 서비스 로그 읽기](troubleshooting/reading-liferay-cloud-service-logs.md)
 * [셸 액세스](troubleshooting/shell-access.md)

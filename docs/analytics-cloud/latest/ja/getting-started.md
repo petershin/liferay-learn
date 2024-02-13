@@ -5,13 +5,6 @@ toc:
 ---
 # はじめに
 
-```{toctree}
-:maxdepth: 3
-
-getting-started/connecting-liferay-dxp-to-analytics-cloud.md
-getting-started/viewing-the-analytics-dashboard.md
-```
-
 Liferay Analytics Cloudへようこそ。 アナリティクスデータの収集は、あらゆるビジネスにおいて重要な役割を担っています。 さまざまなツールがありますが、すべてが高い価値を提供するわけではありません。 大量のデータを集めるだけでは不十分で、それを分析して有用なインサイトを見出すことが必要です。 さらに、価値の低いデータは、顧客像の不完全な把握や、誤った分野へのマーケティング費用の無駄遣いにつながる可能性があります。
 
 Liferay Analytics Cloudを使用することにより、誰がサイトを訪問し、サイトのコンテンツとどのようにエンゲージしているかを知ることができます。 その高い価値は、Liferay Analytics CloudとLiferay DXPの緊密な統合によってもたらされます。

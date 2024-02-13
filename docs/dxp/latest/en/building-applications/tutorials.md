@@ -12,14 +12,6 @@ taxonomy-category-names:
 ---
 # Tutorials
 
-```{toctree}
-:maxdepth: 4
-
-tutorials/building-a-custom-ticketing-system.md
-tutorials/building-a-time-off-requester.md
-tutorials/using-object-data-with-react-charts.md
-```
-
 Use Liferay's various features and tools to build real-world solutions for your business needs. See samples of custom applications and learn how they are made.
 
 ::::{grid} 2

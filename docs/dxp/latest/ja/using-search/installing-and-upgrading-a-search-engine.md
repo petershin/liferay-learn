@@ -5,14 +5,6 @@ toc:
 - ./installing-and-upgrading-a-search-engine/solr.md
 ---
 # 検索エンジンのインストールとアップグレード
-
-```{toctree}
-:maxdepth: 2
-
-installing-and-upgrading-a-search-engine/installing-a-search-engine.md
-installing-and-upgrading-a-search-engine/elasticsearch.md
-installing-and-upgrading-a-search-engine/solr.md
-```
 - [検索エンジンのインストール](./installing-and-upgrading-a-search-engine/installing-a-search-engine.md)
 - [Elasticsearchのアップグレード](./installing-and-upgrading-a-search-engine/elasticsearch/upgrading-elasticsearch.md)
 

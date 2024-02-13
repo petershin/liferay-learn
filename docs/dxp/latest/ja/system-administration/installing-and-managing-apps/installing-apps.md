@@ -5,13 +5,6 @@ toc:
 ---
 # アプリのインストール
 
-```{toctree}
-:maxdepth: 3
-
-installing-apps/downloading-apps.md
-installing-apps/accessing-ee-plugins-during-a-trial-period.md
-```
-
 [マーケットプレイスのWebサイト](https://web.liferay.com/marketplace) からアプリをLPKGファイルとしてダウンロードしたら、次にローカルのDXPインスタンスにインストールします。
 
 次のいずれかの方法を使用して、インスタンスに新しいアプリをインストールできます。

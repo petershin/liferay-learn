@@ -15,16 +15,6 @@ uuid: bd2ce0e7-dc9c-40c0-b323-d0a3ca2440d0
 ---
 # Using Adaptive Media
 
-```{toctree}
-:maxdepth: 4
-
-using-adaptive-media/adding-image-resolutions.md
-using-adaptive-media/managing-image-resolutions.md
-using-adaptive-media/using-adapted-images-in-site-content.md
-using-adaptive-media/migrating-documents-and-media-thumbnails.md
-using-adaptive-media/adaptive-media-configuration-reference.md
-```
-
 {bdg-secondary}`Liferay 7.4+`
 
 Liferay Adaptive Media processes images stored in the document library to produce copies at different resolutions. Once generated, you can [use the adapted images](./using-adaptive-media/using-adapted-images-in-site-content.md) in Documents and Media, Blogs, Web Content, and Content Pages to serve the optimal image resolution for the end user's device. This reduces page size, improves load times, and saves bandwidth. 

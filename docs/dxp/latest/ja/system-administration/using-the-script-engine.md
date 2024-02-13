@@ -6,14 +6,6 @@ toc:
 ---
 # スクリプトエンジンの使用
 
-```{toctree}
-:maxdepth: 3
-
-using-the-script-engine/invoking-liferay-services-from-scripts.md
-using-the-script-engine/running-scripts-from-the-script-console.md
-using-the-script-engine/script-examples.md
-```
-
 DXPは、 [Groovy](http://groovy-lang.org/) スクリプトを実行してLiferay DXPインスタンスを維持するための堅牢なスクリプトエンジンを提供します。 スクリプトを実行して、データのクリーンアップ、ユーザーメンテナンス操作、Liferay APIの一括呼び出し、またはシステムレベルの操作を含むメンテナンスタスクを実行できます。
 
 ![このスクリプトコンソールはGroovyスクリプトを実行し、現在のactionRequestなどのコンテキスト変数を提供します。 このスクリプトコンソールは、Liferayサービスを呼び出すために設計されました。](./using-the-script-engine/images/01.png)

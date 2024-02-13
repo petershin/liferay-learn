@@ -5,13 +5,6 @@ toc:
 ---
 # 앱 설치
 
-```{toctree}
-:maxdepth: 3
-
-installing-apps/downloading-apps.md
-installing-apps/accessing-ee-plugins-during-a-trial-period.md
-```
-
 [Marketplace 웹사이트](https://web.liferay.com/marketplace) 에서 LPKG 파일로 앱을 다운로드한 후 다음 단계는 로컬 DXP 인스턴스에 앱을 설치하는 것입니다.
 
 다음 방법 중 하나를 사용하여 인스턴스에 새 앱을 설치할 수 있습니다.

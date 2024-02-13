@@ -13,21 +13,6 @@ toc:
 ---
 # 프런트엔드 클라이언트 확장
 
-```{toctree}
-:maxdepth: 3
-
-front-end-client-extensions/tutorials.md
-front-end-client-extensions/javascript-yaml-configuration-reference.md
-front-end-client-extensions/css-yaml-configuration-reference.md
-front-end-client-extensions/theme-css-yaml-configuration-reference.md
-front-end-client-extensions/theme-favicon-yaml-configuration-reference.md
-front-end-client-extensions/theme-sprite-map-yaml-configuration-reference.md
-front-end-client-extensions/custom-element-yaml-configuration-reference.md
-front-end-client-extensions/iframe-yaml-configuration-reference.md
-front-end-client-extensions/understanding-custom-element-and-iframe-client-extensions.md
-front-end-client-extensions/client-extensions-ui-reference.md
-```
-
 {bdg-primary}`Liferay Self-Hosted`
 {bdg-primary}`Liferay SaaS`
 {bdg-warning}`Liferay PaaS`

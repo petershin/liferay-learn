@@ -19,16 +19,6 @@ taxonomy-category-names:
 
 # Poshi Layers
 
-```{toctree}
-:maxdepth: 3
-
-poshi-layers/functions.md
-poshi-layers/paths.md
-poshi-layers/macros.md
-poshi-layers/testcases.md
-poshi-layers/variables.md
-```
-
 ::::{grid} 2
 :gutter: 3 3 3 3
 

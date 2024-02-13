@@ -21,22 +21,6 @@ uuid: 030c10fc-290f-4821-970a-275b6b0aeff3
 ---
 # Developer Guide
 
-```{toctree}
-:maxdepth: 2
-
-developer-guide/implementing-workflow.md
-developer-guide/implementing-a-custom-sla-calendar.md
-developer-guide/crafting-xml-workflow-definitions.md
-developer-guide/using-the-script-engine-in-workflow.md
-developer-guide/workflow-definition-node-reference.md
-developer-guide/workflow-task-node-reference.md
-developer-guide/workflow-notification-template-variables.md
-developer-guide/creating-a-condition-evaluator.md
-developer-guide/creating-an-action-executor.md
-developer-guide/working-with-workflow-context.md
-developer-guide/apis.md
-```
-
 - [Implementing Workflow](./developer-guide/implementing-workflow.md)
 - [Implementing a Custom SLA Calendar](./developer-guide/implementing-a-custom-sla-calendar.md)
 - [Using The Script Engine in Workflow](./developer-guide/using-the-script-engine-in-workflow.md)

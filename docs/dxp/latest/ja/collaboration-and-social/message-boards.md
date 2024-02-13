@@ -5,13 +5,6 @@ toc:
 ---
 # 掲示板
 
-```{toctree}
-:maxdepth: 2
-
-message-boards/user-guide.md
-message-boards/developer-guide.md
-```
-
 ユーザーガイド
 
 * [掲示板の概要](.//message-boards/user-guide/getting-started-with-message-boards.md)

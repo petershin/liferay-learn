@@ -6,14 +6,6 @@ toc:
 ---
 # 以前のDXPバージョンにパッチを適用
 
-```{toctree}
-:maxdepth: 3
-
-patching-dxp-7-3-and-earlier/understanding-patch-types-for-dxp-7-3-and-earlier.md
-patching-dxp-7-3-and-earlier/installing-patches-for-dxp-7-3-and-earlier.md
-patching-dxp-7-3-and-earlier/advanced-patching-for-dxp-7-2.md
-```
-
 ```{note}
 Liferay DXPは、最新リリースにバンドルリリースを使用しています。 アップデートを適用する場合は、 [Liferayのアップデート](./updating-liferay.md) を参照してください。 すべてのホットフィックスはパッチです。 ホットフィックスを適用する場合は、このまま読み進めてください。
 ```

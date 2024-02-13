@@ -12,13 +12,6 @@ taxonomy-category-names:
 ---
 # Getting Started
 
-```{toctree}
-:maxdepth: 3
-
-getting-started/connecting-liferay-dxp-to-analytics-cloud.md
-getting-started/viewing-the-analytics-dashboard.md
-```
-
 Welcome to Liferay Analytics Cloud! Collecting analytics data is a crucial part of any business. There are many different tools out there but not all provide high value. It's not enough just to gather large amounts of data; you must also be able to analyze it to discover useful insights. Furthermore, low value data can lead to an incomplete picture of who your customers are or wasted marketing spend in the wrong areas.
 
 You can use Liferay Analytics Cloud to know who visits your site and how they interact with your site's content. The high value comes from the tight integration between Liferay Analytics Cloud and Liferay DXP.

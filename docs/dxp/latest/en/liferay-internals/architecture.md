@@ -16,17 +16,6 @@ taxonomy-category-names:
 ---
 # Architecture
 
-```{toctree}
-:maxdepth: 3
-
-architecture/liferay-classloader-hierarchy.md
-architecture/the-benefits-of-modularity.md
-architecture/osgi-and-modularity.md
-architecture/module-lifecycle.md
-architecture/bundle-classloading-flow.md
-architecture/ui-architecture.md
-```
-
 The Liferay DXP/Portal architecture has three parts: 
 
 1. **Core:** Bootstraps DXP and its [frameworks](../building-applications/core-frameworks.md). The Core provides a runtime environment for managing services, UI components, and customizations.

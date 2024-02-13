@@ -9,16 +9,6 @@ toc:
 ---
 # 표시 페이지 템플릿 사용
 
-```{toctree}
-:maxdepth: 3
-
-using-display-page-templates/creating-and-managing-display-page-templates.md
-using-display-page-templates/publishing-content-with-display-pages.md
-using-display-page-templates/displaying-categories-using-display-pages.md
-using-display-page-templates/using-multiple-display-page-templates-to-create-multi-step-applications.md
-using-display-page-templates/configuring-seo-and-open-graph.md
-```
-
 {bdg-secondary}`liferay DXP/포탈 7.3+`
 
 표시 페이지 템플릿은 전용 URL에 콘텐츠를 표시하기 위한 구조를 정의합니다. 콘텐츠 항목을 생성하거나 업로드하면 Liferay는 해당 항목에 액세스하기 위한 고유한 친숙한 URL을 생성합니다. 그러나 콘텐츠를 표시하기 위한 템플릿을 먼저 정의한 경우에만 이 URL을 사용하여 콘텐츠를 볼 수 있습니다.

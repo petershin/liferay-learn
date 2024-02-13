@@ -5,13 +5,6 @@ toc:
 ---
 # サイトの最適化
 
-```{toctree}
-:maxdepth: 3
-
-optimizing-sites/ab-testing.md
-optimizing-sites/building-a-responsive-site.md
-```
-
 トップレベルのSEOを行うことから、サイトのコンテンツを理解して行動すること、あらゆるタイプのユーザーがアクセス可能なサイトを構築することまで、Liferayはサイトの問題を理解して行動するためのツールを提供します。
 
 ## 検索エンジンを最適化

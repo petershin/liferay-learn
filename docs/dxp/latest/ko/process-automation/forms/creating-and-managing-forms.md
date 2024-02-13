@@ -19,27 +19,6 @@ toc:
 ---
 # 양식 생성 및 관리
 
-```{toctree}
-:maxdepth: 2
-
-creating-and-managing-forms/creating-forms.md
-creating-and-managing-forms/customizing-form-layouts.md
-creating-and-managing-forms/reusing-sets-of-form-elements.md
-creating-and-managing-forms/providing-help-text-and-predefined-values.md
-creating-and-managing-forms/building-forms-with-conditional-fields.md
-creating-and-managing-forms/validating-text-and-numeric-field-entries.md
-creating-and-managing-forms/using-the-search-location-field.md
-creating-and-managing-forms/translating-forms.md
-creating-and-managing-forms/customizing-auto-save-behavior.md
-creating-and-managing-forms/exporting-and-importing-forms.md
-creating-and-managing-forms/using-storage-adapters.md
-creating-and-managing-forms/customizing-the-submit-button.md
-creating-and-managing-forms/forms-field-types-reference.md
-creating-and-managing-forms/forms-configuration-reference.md
-creating-and-managing-forms/validation-conditions-reference.md
-creating-and-managing-forms/forms-permissions-reference.md
-```
-
 * [양식 만들기](./creating-and-managing-forms/creating-forms.md)
 * [양식 레이아웃 사용자 지정](./creating-and-managing-forms/customizing-form-layouts.md)
 * [양식 요소 세트 재사용](./creating-and-managing-forms/reusing-sets-of-form-elements.md)

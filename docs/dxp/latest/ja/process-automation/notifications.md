@@ -6,14 +6,6 @@ toc:
 ---
 # 通知
 
-```{toctree}
-:maxdepth: 3
-
-notifications/configuring-personal-notifications.md
-notifications/creating-notification-templates.md
-notifications/using-the-notification-queue.md
-```
-
 Liferayには通知ツールが統合されているため、プラットフォームのイベントをユーザーに確実に通知することができます。 Liferay DXPの場合、以下のデフォルトアプリケーションのメールやウェブサイトでの通知が含まれます。
 
 | アプリケーション          | メール      | Webサイト   |

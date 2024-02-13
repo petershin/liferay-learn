@@ -11,12 +11,6 @@ uuid: 42e875fb-1775-4761-9667-03336f89948e
 ---
 # Developer Reference
 
-```{toctree}
-:maxdepth: 3
-
-reference/fragments.md
-```
-
 ## Developing Fragments Reference
 
 ::::{grid} 2

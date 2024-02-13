@@ -6,14 +6,6 @@ toc:
 ---
 # 컨텐츠 대시보드
 
-```{toctree}
-:maxdepth: 3
-
-content-dashboard/about-the-content-dashboard.md
-content-dashboard/content-dashboard-interface.md
-content-dashboard/exporting-the-assets-list-to-a-spreadsheet.md
-```
-
 ```{note}
 이 기능은 [Elasticsearch](../using-search/installing-and-upgrading-a-search-engine/solr/solr-limitations.md)에서만 작동합니다.
 ```

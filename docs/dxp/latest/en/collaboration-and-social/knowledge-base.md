@@ -19,20 +19,6 @@ taxonomy-category-names:
 ---
 # Knowledge Base
 
-```{toctree}
-:maxdepth: 2
-
-knowledge-base/creating-knowledge-base-articles.md
-knowledge-base/importing-knowledge-base-articles.md
-knowledge-base/managing-the-knowledge-base.md
-knowledge-base/knowledge-base-templates.md
-knowledge-base/responding-to-knowledge-base-feedback.md
-knowledge-base/knowledge-base-display-widget.md
-knowledge-base/other-knowledge-base-widgets.md
-knowledge-base/knowledge-base-system-settings.md
-knowledge-base/developer-guide.md
-```
-
 {bdg-secondary}`Liferay 7.4 U72+/GA72+`
 
 Knowledge Base provides tools for creating and managing product documentation. You can write articles in the Liferay UI or import existing Markdown files. Additionally, you can create [templates](./knowledge-base/knowledge-base-templates.md) to standardize article structures and content. Enabling [workflow](../process-automation/workflow/introduction-to-workflow.md) ensures articles go through an approval process before publishing.

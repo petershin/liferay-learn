@@ -14,22 +14,6 @@ toc:
 ---
 # 참조
 
-```{toctree}
-:maxdepth: 1
-
-reference/liferay-cloud-infrastructure.md
-reference/configuration-via-lcp-json.md
-reference/understanding-service-stack-versions.md
-reference/upgrading-your-liferay-cloud-stack.md
-reference/liferay-cloud-version-5-changes.md
-reference/liferay-cloud-project-changes-in-version-4.md
-reference/upgrading-to-a-high-availability-subscription.md
-reference/command-line-tool.md
-reference/defining-environment-variables.md
-reference/platform-limitations.md
-reference/example-configuration-files.md
-```
-
 * [Liferay 클라우드 인프라](./reference/liferay-cloud-infrastructure.md)
 * [LCP.json을 통한 구성](./reference/configuration-via-lcp-json.md)
 * [서비스 스택 버전 이해](./reference/understanding-service-stack-versions.md)

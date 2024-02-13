@@ -7,13 +7,6 @@ toc:
 ---
 # サーバー管理パネルの使用
 
-```{toctree}
-using-the-server-administration-panel/managing-system-resources.md
-using-the-server-administration-panel/configuring-logging.md
-using-the-server-administration-panel/configuring-external-services.md
-using-the-server-administration-panel/configuring-a-shutdown-event.md
-```
-
 サーバー管理は、さまざまな低レベルのLiferay DXP構成を保持するシステムスコープの管理パネルです。 サーバー管理では、システムメモリの使用状況、低レベルのプロパティ、一部のサードパーティ統合、ドキュメントリポジトリの移行、ログ、スクリプト、メールサーバーの構成、ポータルのシャットダウンを管理および監視できます。
 
 ［**コントロールパネル**］ &rarr; ［**設定**］ &rarr; ［**サーバの管理**］ の順にクリックしてサーバーの管理にアクセスすることができます 。

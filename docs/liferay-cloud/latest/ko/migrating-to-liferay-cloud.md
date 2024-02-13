@@ -11,19 +11,6 @@ toc:
 ---
 # Liferay Cloud로 마이그레이션
 
-```{toctree}
-:maxdepth: 1
-
-migrating-to-liferay-cloud/matching-dxp-versions.md
-migrating-to-liferay-cloud/creating-data-backup-files.md
-migrating-to-liferay-cloud/uploading-and-restoring-the-data-backup.md
-migrating-to-liferay-cloud/migrating-dxp-configurations-and-customizations.md
-migrating-to-liferay-cloud/migrating-web-server-configurations.md
-migrating-to-liferay-cloud/migrating-search-configurations.md
-migrating-to-liferay-cloud/connecting-the-vpn.md
-migrating-to-liferay-cloud/next-steps-after-migration.md
-```
-
 Liferay Cloud는 고가용성, 확장성 및 성능을 위해 구축된 안전하고 신뢰할 수 있는 엔터프라이즈 플랫폼입니다. Liferay Cloud에서 Liferay DXP 인스턴스를 실행하면 [기능](./getting-started.md) 이 제공되어 사용자에게 안전하고 안정적이며 원활한 경험을 보장합니다.
 
 온프레미스 Liferay DXP 환경에서 Liferay Cloud로 마이그레이션하려면 모든 데이터(문서 또는 데이터베이스), 구성 및 사용자 지정(예: OSGi 모듈 또는 플러그인)을 포함하여 전체 인스턴스를 Liferay Cloud에서 실행되는 환경으로 이동해야 합니다. 여기에는 Liferay 클라우드 환경과 통합되는 Git 리포지토리로 변경 사항을 작업하고 배포하는 작업도 포함됩니다.

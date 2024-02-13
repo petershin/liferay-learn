@@ -10,12 +10,6 @@ uuid: ec5e1564-a946-47fb-bda7-cf2fc3917cf8
 ---
 # Getting Started
 
-```{toctree}
-:maxdepth: 3
-
-getting-started/setting-up-an-environment-and-creating-a-theme.md
-```
-
 ::::{grid} 2
 :gutter: 3 3 3 3
 

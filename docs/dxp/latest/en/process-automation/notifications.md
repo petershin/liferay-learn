@@ -13,14 +13,6 @@ uuid: 40b42b3f-1d9b-4dd8-882d-a490ae43d603
 ---
 # Notifications
 
-```{toctree}
-:maxdepth: 3
-
-notifications/configuring-personal-notifications.md
-notifications/creating-notification-templates.md
-notifications/using-the-notification-queue.md
-```
-
 Liferay provides integrated notification tools, so you can ensure users are alerted to platform events. For Liferay DXP, this includes email and website notifications for the following default applications:
 
 | Application          | Email    | Website  |

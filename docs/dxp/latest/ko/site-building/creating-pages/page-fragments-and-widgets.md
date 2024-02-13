@@ -5,13 +5,6 @@ toc:
 ---
 # 페이지 조각 및 위젯
 
-```{toctree}
-:maxdepth: 3
-
-page-fragments-and-widgets/using-fragments.md
-page-fragments-and-widgets/using-widgets.md
-```
-
 <!--TASK: Develop into-->
 
 Liferay는 사이트 페이지와 페이지 템플릿을 구축하기 위한 페이지 조각과 위젯을 제공합니다.

@@ -7,15 +7,6 @@ toc:
 ---
 # 安定性とパフォーマンスのアップグレード
 
-```{toctree}
-:maxdepth: 2
-
-upgrade-stability-and-performance/database-tuning-for-upgrades.md
-upgrade-stability-and-performance/database-pruning-for-faster-upgrades.md
-upgrade-stability-and-performance/example-removing-intermediate-journal-article-versions.md
-upgrade-stability-and-performance/upgrading-modules-using-gogo-shell.md
-```
-
 本番リリース用のDXPインスタンスをアップグレードする場合、データのアップグレードは正しく迅速に行う必要があります。 確実に成功させる方法をいくつか次に示します。
 
 * データベースとインストールのコピーを使用するテスト環境を作成する

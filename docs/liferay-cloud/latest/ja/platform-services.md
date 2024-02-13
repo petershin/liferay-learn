@@ -9,19 +9,6 @@ toc:
 ---
 # プラットフォームサービス
 
-```{toctree}
-:maxdepth: 2
-
-platform-services/continuous-integration.md
-platform-services/search-service.md
-platform-services/web-server-service.md
-platform-services/using-a-custom-service.md
-
-platform-services/backup-service.md
-
-platform-services/database-service.md
-```
-
 - [継続的インテグレーション](./platform-services/continuous-integration.md)
 - [検索サービス](./platform-services/search-service.md)
 - [Webサーバサービス](./platform-services/web-server-service.md)

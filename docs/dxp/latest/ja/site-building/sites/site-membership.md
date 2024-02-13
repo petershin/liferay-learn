@@ -6,14 +6,6 @@ toc:
 ---
 # サイトメンバーシップ
 
-```{toctree}
-:maxdepth: 4
-
-site-membership/adding-members-to-sites.md
-site-membership/inviting-members-to-your-site.md
-site-membership/creating-teams-for-sites.md
-```
-
 サイトのメンバーになることで、認証されていないゲスト・ユーザー以上のアクセスや能力がユーザーに与えられます。 これらの主な特典は、サイト・メンバーシップに付属している：
 
 * サイトメンバーは、掲示板やWikiなどの多くのウィジェットで、ゲストよりも多くの権限を持っており、コンテンツを作成したり、サイト上で共同作業を行ったりすることができます。

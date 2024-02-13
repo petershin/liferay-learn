@@ -6,14 +6,6 @@ toc:
 ---
 # サービスビルダーの基本
 
-```{toctree}
-:maxdepth: 3
-
-service-builder-basics/generating-model-persistence-and-service-code.md
-service-builder-basics/understanding-and-extending-generated-classes.md
-service-builder-basics/invoking-a-service-locally.md
-```
-
 サービスビルダーを使ってみることで習得しやすくなります。 使用しながら基本を学びましょう。
 
 1. [モデルコード、永続性コード、およびサービスコードの生成](./service-builder-basics/generating-model-persistence-and-service-code.md) ：基本モデルを定義し、そこからコードを生成して、コードをDXPにデプロイします。  生成されたデータベーステーブルを確認し、DXPで新しいサービスをテストします。

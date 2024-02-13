@@ -11,12 +11,6 @@ taxonomy-category-names:
 ---
 # Social Tools
 
-```{toctree}
-:maxdepth: 2
-
-social-tools/user-guide.md
-```
-
 User Guide
 ----------
 

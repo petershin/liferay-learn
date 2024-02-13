@@ -36,13 +36,6 @@ If you're using the default theme, your pages already adjust to fit mobile devic
 In Liferay 7.2 you can create mobile device rules that govern site behavior on detection of a mobile device. For more information on creating mobile device rules, see [Creating Mobile Device Rules](./building-a-responsive-site/creating-mobile-device-rules.md).
 ```
 
-```{toctree}
-:maxdepth: 3
-
-building-a-responsive-site/building-responsive-layouts-with-the-grid-fragment.md
-building-a-responsive-site/using-the-simulation-panel.md
-```
-
 ::::{grid} 2
 :gutter: 3 3 3 3
 

@@ -13,21 +13,6 @@ toc:
 ---
 # MVCの使用
 
-```{toctree}
-:maxdepth: 3
-
-using-mvc/using-a-jsp-and-mvc-portlet.md
-using-mvc/rendering-views-with-mvc-portlet.md
-using-mvc/invoking-actions-with-mvc-portlet.md
-using-mvc/mvc-action-command.md
-using-mvc/mvc-render-command.md
-using-mvc/mvc-resource-command.md
-using-mvc/portlet-preferences.md
-using-mvc/using-localized-messages-in-an-mvc-portlet.md
-using-mvc/sharing-localized-messages.md
-using-mvc/tag-libraries.md
-```
-
 経験豊富な開発者であれば、Model View Controllerについて聞いたのはこれが初めてではないでしょう。 JavaにはMVCフレームワークの実装がたくさんあるのに、Liferayがまた別のフレームワークを作成したのはなぜでしょうか。 Liferay MVCポートレットには次の利点があります。
 
 * 他の多くのJava MVCフレームワークとは対照的に、軽量です。

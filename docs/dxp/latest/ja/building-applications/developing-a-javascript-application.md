@@ -4,12 +4,6 @@ toc:
 ---
 # JavaScriptアプリケーションの開発
 
-```{toctree}
-:maxdepth: 3
-
-developing-a-javascript-application/using-react.md
-```
-
 ```{raw} html
 :file: ../landingpage_template.html
 ```

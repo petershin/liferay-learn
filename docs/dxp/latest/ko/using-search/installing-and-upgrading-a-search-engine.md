@@ -5,14 +5,6 @@ toc:
 - ./installing-and-upgrading-a-search-engine/solr.md
 ---
 # 검색 엔진 설치 및 업그레이드
-
-```{toctree}
-:maxdepth: 2
-
-installing-and-upgrading-a-search-engine/installing-a-search-engine.md
-installing-and-upgrading-a-search-engine/elasticsearch.md
-installing-and-upgrading-a-search-engine/solr.md
-```
 * [검색 엔진 설치](./installing-and-upgrading-a-search-engine/installing-a-search-engine.md)
 * [Elasticsearch 업그레이드](./installing-and-upgrading-a-search-engine/elasticsearch/upgrading-elasticsearch.md)
 

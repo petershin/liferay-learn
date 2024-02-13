@@ -12,20 +12,6 @@ toc:
 ---
 # 퍼블리싱
 
-```{toctree}
-:maxdepth: 3
-
-publications/enabling-publications.md
-publications/creating-and-managing-publications.md
-publications/using-publication-templates.md
-publications/making-and-publishing-changes.md
-publications/using-workflow-with-publications.md
-publications/collaborating-on-publications.md
-publications/resolving-conflicts.md
-publications/reverting-changes.md
-publications/publications-permissions.md
-```
-
 {bdg-secondary}`liferay DXP/포탈 7.3+`
 
 **출판** 을 사용하여 DXP 인스턴스 전반에 걸쳐 변경 사항을 개발, 추적 및 게시할 수 있습니다. 이는 데이터베이스 열을 생성하여 라이브 사이트에 표시되는 콘텐츠 버전을 결정하는 방식으로 작동합니다. 이를 통해 사용자는 별도의 **게시물** 을 생성하여 변경 사항을 게시 가능한 블록으로 그룹화합니다.

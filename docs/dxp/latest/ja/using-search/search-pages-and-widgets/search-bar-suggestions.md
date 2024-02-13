@@ -5,13 +5,6 @@ toc:
 ---
 # 検索バーの提案
 
-```{toctree}
-:maxdepth: 2
-
-search-bar-suggestions/configuring-search-bar-suggestions.md
-search-bar-suggestions/search-bar-suggestions-blueprints.md
-```
-
 {bdg-secondary}`7.4 U36+およびGA36+`
 
 **LiferayのSearch Bar Suggestionsは、** 機能を入力しながら検索できます。 検索バーウィジェットに検索キーワードを入力すると、検索エンジンによってクエリが処理され、結果がドロップダウンリストで返されます。 リストから検索結果の1つをクリックするか、虫眼鏡アイコンまたはEnterキーをクリックして通常どおり検索を実行すると、検索結果ウィジェットに検索結果が表示されます。

@@ -8,16 +8,6 @@ toc:
 ---
 # 맞춤형 티켓팅 시스템 구축
 
-```{toctree}
-:maxdepth: 3
-
-building-a-custom-ticketing-system/defining-a-custom-data-schema.md
-building-a-custom-ticketing-system/applying-a-custom-theme.md
-building-a-custom-ticketing-system/deploying-a-custom-application.md
-building-a-custom-ticketing-system/implementing-a-documentation-referral-system.md
-building-a-custom-ticketing-system/ticket-management-with-cron-jobs.md
-```
-
 Liferay를 사용하면 디지털 솔루션을 쉽게 구축할 수 있습니다. 예를 들어 비즈니스에 필요한 스타일과 기능을 갖춘 사용자 정의 티켓팅 애플리케이션을 만들 수 있습니다.
 
 ![See the custom ticketing system sample.](./building-a-custom-ticketing-system/images/01.png)

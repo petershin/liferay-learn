@@ -10,18 +10,6 @@ toc:
 ---
 # 계정 관리
 
-```{toctree}
-:maxdepth: 3
-
-account-management/creating-a-new-account.md
-account-management/inviting-users-to-an-account.md
-account-management/adding-addresses-to-an-account.md
-account-management/account-roles.md
-account-management/creating-a-new-account-group.md
-account-management/using-organizations-to-create-a-sales-network.md
-account-management/adding-organizations-to-accounts.md
-```
-
 Liferay Commerce에서 계정은 청구 및 배송 주소, 주문 세부 정보 및 VAT 번호와 같은 고객 정보를 저장하는 데 사용됩니다. 계정이 생성되면 공유 기준(예: 지역)에 따라 그룹으로 분류할 수 있습니다. 이러한 계정 그룹은 특정 가격표, 판촉 및 할인이 있는 고객을 대상으로 하는 데 사용할 수 있습니다.
 
 ## 계정 유형

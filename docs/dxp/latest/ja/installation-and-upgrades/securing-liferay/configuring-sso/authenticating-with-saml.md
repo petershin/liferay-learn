@@ -9,17 +9,6 @@ toc:
 ---
 # SAMLによる認証
 
-```{toctree}
-:maxdepth: 3
-
-authenticating-with-saml/saml-authentication-process-overview.md
-authenticating-with-saml/configuring-saml-at-the-system-level.md
-authenticating-with-saml/saml-admin.md
-authenticating-with-saml/importing-user-groups-memberships-from-an-external-idp-through-saml.md
-authenticating-with-saml/configuring-saml-at-the-instance-level.md
-authenticating-with-saml/saml-settings.md
-```
-
 SAML（Security Assertion Markup Language）アダプターは、シングルサインオン（SSO）とシングルログオフ（SLO）をデプロイ環境に提供します。 SAMLは、アイデンティティプロバイダー（IdP）とサービスプロバイダー（SP）を使用して機能します。
 
 **アイデンティティプロバイダー：** ユーザーが他のWebサイトにアクセスするためのシングルサインオンを提供する信頼できるシステム。

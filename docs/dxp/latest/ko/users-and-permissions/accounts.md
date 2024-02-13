@@ -10,18 +10,6 @@ toc:
 ---
 # 계정
 
-```{toctree}
-:maxdepth: 3
-
-accounts/account-users.md
-accounts/account-addresses.md
-accounts/account-groups.md
-accounts/account-roles.md
-accounts/account-management-widget.md
-accounts/using-workflow-with-accounts.md
-accounts/channel-defaults.md
-```
-
 {bdg-secondary}`가능 7.4+`
 
 계정은 관리자에게 다양한 상거래 또는 비즈니스 요구에 맞게 사용자를 구성하고 관리하는 방법을 제공합니다. [조직](./organizations.md) 또는 [사용자 그룹](./user-groups.md)과 달리 계정은 상품 및 서비스 구매 또는 기존 고객 관리와 같은 비즈니스 상황에서 발생할 수 있는 상호 작용을 용이하게 합니다.

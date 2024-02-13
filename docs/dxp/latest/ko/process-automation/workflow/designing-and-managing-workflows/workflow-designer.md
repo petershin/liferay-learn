@@ -14,19 +14,6 @@ toc:
 {bdg-primary}`구독`
 
 
-```{toctree}
-:maxdepth: 3
-
-workflow-designer/workflow-designer-overview.md
-workflow-designer/creating-workflow-tasks.md
-workflow-designer/configuring-workflow-actions-and-notifications.md
-workflow-designer/workflow-nodes.md
-workflow-designer/using-forks-and-joins.md
-workflow-designer/using-condition-nodes.md
-workflow-designer/assigning-task-nodes.md
-workflow-designer/workflow-transitions.md
-```
-
 ```{note}
 Workflow Designer의 사용자 인터페이스는 Liferay DXP 7.4 업데이트 20에서 새로 고쳐졌습니다. 새 빌더의 모양과 느낌이 개선되었으며 사용자 경험이 더욱 직관적입니다. 설명서는 새 인터페이스를 기반으로 업데이트되었습니다. Liferay 7.3 이하에서 이전 워크플로 디자이너를 사용하는 경우 이 섹션에 제시된 단계를 조정해야 할 수 있습니다.
 

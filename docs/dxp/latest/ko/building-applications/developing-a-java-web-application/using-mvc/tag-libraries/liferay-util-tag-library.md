@@ -13,21 +13,6 @@ toc:
 ---
 # Liferay 유틸리티 태그 라이브러리
 
-```{toctree}
-:maxdepth: 3
-
-liferay-util-tag-library/liferay-util-body-bottom.md
-liferay-util-tag-library/liferay-util-body-top.md
-liferay-util-tag-library/liferay-util-buffer.md
-liferay-util-tag-library/liferay-util-dynamic-include.md
-liferay-util-tag-library/liferay-util-get-url.md
-liferay-util-tag-library/liferay-util-html-bottom.md
-liferay-util-tag-library/liferay-util-html-top.md
-liferay-util-tag-library/liferay-util-include.md
-liferay-util-tag-library/liferay-util-param.md
-liferay-util-tag-library/liferay-util-whitespace-remover.md
-```
-
 Liferay Util taglib는 다른 리소스를 포틀릿이나 테마로 가져오는 데 사용됩니다. 이를 사용하여 페이지 HTML의 맨 아래 또는 맨 위에 삽입할 리소스를 지정할 수 있습니다.
 
 Liferay-Util taglib를 사용하려면 JSP에 다음 선언을 추가하십시오.

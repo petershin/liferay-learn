@@ -19,21 +19,6 @@ taxonomy-category-names:
 ---
 # Using MVC
 
-```{toctree}
-:maxdepth: 3
-
-using-mvc/using-a-jsp-and-mvc-portlet.md
-using-mvc/rendering-views-with-mvc-portlet.md
-using-mvc/invoking-actions-with-mvc-portlet.md
-using-mvc/mvc-action-command.md
-using-mvc/mvc-render-command.md
-using-mvc/mvc-resource-command.md
-using-mvc/portlet-preferences.md
-using-mvc/using-localized-messages-in-an-mvc-portlet.md
-using-mvc/sharing-localized-messages.md
-using-mvc/tag-libraries.md
-```
-
 If you're an experienced developer, this is not the first time you've heard about Model View Controller. If there are so many implementations of MVC frameworks in Java, why did Liferay create yet another one? Stay with us and you'll see that Liferay MVC Portlet provides these benefits:
 
 * It's lightweight, as opposed to many other Java MVC frameworks.

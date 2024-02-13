@@ -6,14 +6,6 @@ toc:
 ---
 # 주제
 
-```{toctree}
-:maxdepth: 3
-
-themes/introduction-to-themes.md
-themes/upgrading-a-theme.md
-themes/theme-development.md
-```
-
 ::::{grid} 2
 :gutter: 3 3 3 3
 

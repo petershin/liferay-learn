@@ -6,15 +6,6 @@ toc:
 ---
 # サイトURLの管理
 
-```{toctree}
-:maxdepth: 3
-
-managing-site-urls/configuring-your-sites-friendly-url.md
-managing-site-urls/configuring-virtual-hosts-site-urls.md
-managing-site-urls/setting-up-redirects-and-404-tracking.md
-
-```
-
 Liferay DXPでは、サイトURLを設定・管理するための複数の機能を追加設定なしで利用することができます。
 
 ## バーチャルホストのサイトURL

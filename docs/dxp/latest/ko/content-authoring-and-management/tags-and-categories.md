@@ -10,18 +10,6 @@ toc:
 ---
 # 태그 및 카테고리
 
-```{toctree}
-:maxdepth: 3
-
-tags-and-categories/organizing-content-with-categories-and-tags.md
-tags-and-categories/tagging-content-and-managing-tags.md
-tags-and-categories/defining-categories-and-vocabularies-for-content.md
-tags-and-categories/geolocating-assets.md
-tags-and-categories/session-property-vocabularies.md
-tags-and-categories/auto-tagging.md
-tags-and-categories/developer-guide.md
-```
-
 * [범주 및 태그로 콘텐츠 구성](./tags-and-categories/organizing-content-with-categories-and-tags.md)
 * [콘텐츠 태깅 및 태그 관리](./tags-and-categories/tagging-content-and-managing-tags.md)
 * [콘텐츠의 범주 및 어휘 정의](./tags-and-categories/defining-categories-and-vocabularies-for-content.md)

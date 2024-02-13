@@ -11,12 +11,6 @@ taxonomy-category-names:
 ---
 # Developing a JavaScript Application
 
-```{toctree}
-:maxdepth: 3
-
-developing-a-javascript-application/using-react.md
-```
-
 ```{raw} html
 :file: ../landingpage_template.html
 ```

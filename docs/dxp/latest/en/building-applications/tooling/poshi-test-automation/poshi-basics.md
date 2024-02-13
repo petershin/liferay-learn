@@ -16,13 +16,6 @@ taxonomy-category-names:
 
 # Poshi Basics
 
-```{toctree}
-:maxdepth: 3
-
-poshi-basics/poshi-advantages.md
-poshi-basics/poshi-layers
-```
-
 New features, improvements, and system upgrades can sometimes introduce unexpected behaviors and bugs. Running suites of automated tests is an advantageous method of identifying issues before they can impact users in production.
 
 

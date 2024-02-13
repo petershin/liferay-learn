@@ -16,13 +16,6 @@ uuid: 4955593b-f8dd-4b87-bffa-6cb10c97e9e2
 {bdg-primary}`[LES Subscription](./activating-liferay-enterprise-search.md)`
 {bdg-secondary}`DXP 7.4 U5+; 7.3 U6+`
 
-```{toctree}
-:maxdepth: 1
-
-./search-experiences/search-blueprints.md
-./search-experiences/semantic-search.md
-```
-
 The Liferay Enterprise Search Experiences app includes a suite of features granting fine-grained control over the end user's search experience.
 
 ## Search Blueprints

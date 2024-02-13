@@ -9,17 +9,6 @@ toc:
 ---
 # 작업공간 설정
 
-```{toctree}
-:maxdepth: 3
-
-workspace-settings/managing-users.md
-workspace-settings/managing-properties.md
-workspace-settings/tracking-usage.md
-workspace-settings/managing-workspaces.md
-workspace-settings/scoping-sites-and-individuals-using-properties.md
-workspace-settings/contact-sync-data-reference.md
-```
-
 설정에서 Analytics Cloud 작업 공간을 보고 관리하세요. UI 왼쪽 하단에 있는 설정 링크를 클릭합니다.
 
 [다른 사용자를 초대하고 워크스페이스에 대한](./workspace-settings/managing-users.md) 를 관리합니다.

@@ -16,16 +16,6 @@ taxonomy-category-names:
 ---
 # Configuring Payment Methods
 
-```{toctree}
-:maxdepth: 1
-
-configuring-payment-methods/managing-payment-methods.md
-configuring-payment-methods/authorize-net.md
-configuring-payment-methods/mercanet.md
-configuring-payment-methods/money-orders.md
-configuring-payment-methods/paypal.md
-```
-
 Payments are processed through a Payment Method. There are three types of payment methods:
 
 **Offline**: Liferay Commerce does not process payment.

@@ -13,21 +13,6 @@ toc:
 ---
 # Elasticsearch
 
-```{toctree}
-:maxdepth: 2
-
-elasticsearch/getting-started-with-elasticsearch.md
-elasticsearch/installing-elasticsearch.md
-elasticsearch/connecting-to-elasticsearch.md
-elasticsearch/securing-elasticsearch.md
-elasticsearch/exercise-run-liferay-and-elasticsearch-using-docker.md
-elasticsearch/troubleshooting-elasticsearch-installation.md
-elasticsearch/using-the-sidecar-or-embedded-elasticsearch.md
-elasticsearch/upgrading-elasticsearch.md
-elasticsearch/elasticsearch-connector-configuration-reference.md
-elasticsearch/advanced-configuration-of-the-liferay-elasticsearch-connector.md
-```
-
 Elasticsearch는 Liferay가 기본적으로 사용하는 확장성이 뛰어난 전체 텍스트 검색 엔진입니다. Elasticsearch는 비프로덕션 목적으로 Liferay와 함께 번들로 제공됩니다. 프로덕션 환경에서 Liferay를 사용하려면 별도의 원격 서버에서 실행되는 Elasticsearch가 필요합니다.
 
 ```{important}

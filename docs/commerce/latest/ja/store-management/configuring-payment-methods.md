@@ -8,16 +8,6 @@ toc:
 ---
 # 支払方法の設定
 
-```{toctree}
-:maxdepth: 1
-
-configuring-payment-methods/managing-payment-methods.md
-configuring-payment-methods/authorize-net.md
-configuring-payment-methods/mercanet.md
-configuring-payment-methods/money-orders.md
-configuring-payment-methods/paypal.md
-```
-
 支払は、支払方法を介して処理されます。 支払方法には3つのタイプがあります。
 
 **オフライン** ：Liferay Commerceは支払いを処理しません。

@@ -6,14 +6,6 @@ toc:
 ---
 # 지역화
 
-```{toctree}
-:maxdepth: 3
-
-localization/adding-a-language.md
-localization/automatically-generating-translations.md
-localization/reference.md
-```
-
 * [언어 추가](./localization/adding-a-language.md)
 * [번역 자동 생성](./localization/automatically-generating-translations.md)
 

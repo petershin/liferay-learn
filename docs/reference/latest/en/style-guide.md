@@ -12,15 +12,6 @@ uuid: 983854f4-bb37-4d0e-bffd-6f0645de9c05
 
 # Liferay Style Guide
 
-```{toctree}
-:maxdepth: 1
-
-style-guide/high-level-style.md
-style-guide/liferay-conventions.md
-style-guide/liferay-phraseology.md
-style-guide/liferay-format.md
-```
-
 The _Liferay Style Guide_ sits on the shoulders of giants---specifically, the giants of _The Chicago Manual of Style_ and Strunk and White's _The Elements of Style_. Where this guide is silent, assume what is written there. Both of those style guides are the foundation for what is here; in fact, this guide would not be possible without them. 
 
 Liferay's documentation style comes from four overarching values: 

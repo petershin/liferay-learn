@@ -6,14 +6,6 @@ toc:
 ---
 # 서비스 빌더 기본 사항
 
-```{toctree}
-:maxdepth: 3
-
-service-builder-basics/generating-model-persistence-and-service-code.md
-service-builder-basics/understanding-and-extending-generated-classes.md
-service-builder-basics/invoking-a-service-locally.md
-```
-
 Service Builder를 사용하면 학습하는 데 도움이 됩니다. 이를 사용하여 기본 사항을 학습합니다.
 
 1. [모델, 지속성 및 서비스 코드 생성](./service-builder-basics/generating-model-persistence-and-service-code.md): 기본 모델을 정의하고, 이 모델에서 코드를 생성하고, 코드를 DXP에 배포합니다. 생성된 데이터베이스 테이블을 확인하고 DXP에서 새 서비스를 테스트합니다.

@@ -11,12 +11,6 @@ uuid: eaf9a214-8e50-4e0e-a818-e96a21098e2e
 ---
 # Enabling Automated Live Chat Systems
 
-```{toctree}
-:maxdepth: 3
-
-enabling-automated-live-chat-systems/getting-a-chat-provider-account-id.md
-```
-
 {bdg-secondary}`Liferay 7.4+`
 
 Liferay now offers integration with a number of live support chat platforms. Enabling this integration adds a chat window to sites on your Liferay instance and can be used to enable improved support and site experience for your users.

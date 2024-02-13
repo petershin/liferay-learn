@@ -10,18 +10,6 @@ toc:
 ---
 # はじめに
 
-```{toctree}
-:maxdepth: 1
-
-getting-started/initial-setup-overview.md
-getting-started/development-requirements.md
-getting-started/configuring-your-github-repository.md
-getting-started/configuring-your-bitbucket-repository.md
-getting-started/configuring-your-gitlab-repository.md
-getting-started/logging-into-your-liferay-cloud-services.md
-getting-started/understanding-liferay-cloud-environments.md
-```
-
 Liferay Cloudは、Liferay DXP上の素晴らしいアプリケーションを簡素化、安全、そして配信するために必要なインフラとツールを提供する、安全で信頼できるエンタープライズ向けクラウドプラットフォームです。
 
 次の機能を提供するプラットフォームを使用して、心配をせずにさらに構築できます。

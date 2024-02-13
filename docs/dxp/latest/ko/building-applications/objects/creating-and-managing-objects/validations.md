@@ -5,13 +5,6 @@ toc:
 ---
 # 검증
 
-```{toctree}
-:maxdepth: 3
-
-validations/adding-field-validations.md
-validations/expression-builder-validations-reference.md
-```
-
 {bdg-secondary}`liferay 7.4+`
 
 객체 유효성 검사는 유효한 필드 입력을 결정하기 위한 규칙을 설정하고 [Groovy 스크립트](./validations/adding-field-validations.md#using-groovy-validations) 또는 [Liferay 표현식](./validations/adding-field-validations.md#using-expression-builder-validations) 을 사용하여 정의됩니다. 트리거되면 유효성 검사는 정의된 조건에 따라 유효한 필드 입력을 확인하고 잘못된 입력에 대한 오류 메시지를 표시합니다.

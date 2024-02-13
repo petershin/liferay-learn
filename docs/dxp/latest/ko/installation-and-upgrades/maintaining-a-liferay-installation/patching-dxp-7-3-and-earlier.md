@@ -6,14 +6,6 @@ toc:
 ---
 # 이전 DXP 버전 패치 적용
 
-```{toctree}
-:maxdepth: 3
-
-patching-dxp-7-3-and-earlier/understanding-patch-types-for-dxp-7-3-and-earlier.md
-patching-dxp-7-3-and-earlier/installing-patches-for-dxp-7-3-and-earlier.md
-patching-dxp-7-3-and-earlier/advanced-patching-for-dxp-7-2.md
-```
-
 ```{note}
 Liferay DXP는 최신 릴리스에 번들 릴리스를 사용합니다. 업데이트를 적용하는 경우 [Liferay 업데이트](./updating-liferay.md)를 참조하세요. 모든 핫픽스는 패치입니다. 핫픽스를 적용하는 경우 계속 읽으세요.
 ```

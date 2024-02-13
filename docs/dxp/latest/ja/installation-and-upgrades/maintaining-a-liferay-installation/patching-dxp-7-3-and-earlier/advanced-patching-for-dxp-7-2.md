@@ -6,14 +6,6 @@ toc:
 ---
 # DXP 7.2の高度なパッチ適用
 
-```{toctree}
-:maxdepth: 3
-
-advanced-patching-for-dxp-7-2/using-slim-bundles.md
-advanced-patching-for-dxp-7-2/slimming-down-patched-installations.md
-advanced-patching-for-dxp-7-2/custom-code-and-patch-compatibility.md
-```
-
 DXP 7.2の高度なパッチ適用に関するトピックは次のとおりです。
 
 * [スリムバンドルの使用](./advanced-patching-for-dxp-7-2/using-slim-bundles.md) では、パッチファイルを含まないDXPフィックスパックバンドルを使用してディスク領域を節約する方法を示しています。

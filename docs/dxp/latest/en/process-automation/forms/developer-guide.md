@@ -15,17 +15,6 @@ uuid: 7f39ba03-74e7-4424-a3c9-301f70cee793
 ---
 # Developer Guide
 
-```{toctree}
-:maxdepth: 3
-
-developer-guide/writing-a-custom-form-field-type.md
-developer-guide/understanding-form-storage-adapters.md
-developer-guide/writing-a-custom-data-provider.md
-developer-guide/writing-a-form-storage-adapter.md
-developer-guide/developing-a-custom-form-field-for-liferay-7-2.md
-
-```
-
 ## Forms
 
 - [Writing a Custom Form Field Type](./developer-guide/writing-a-custom-form-field-type.md)

@@ -6,14 +6,6 @@ toc:
 ---
 # 객체 통합 이해
 
-```{toctree}
-:maxdepth: 3
-
-understanding-object-integrations/permissions-framework-integration.md
-understanding-object-integrations/using-custom-object-apis.md
-understanding-object-integrations/assets-framework-integration.md
-```
-
 게시된 사용자 정의 개체는 Liferay의 핵심 프레임워크와 통합되므로 Liferay의 기능을 활용하여 플랫폼 전반에 걸쳐 통합된 경험을 구축할 수 있습니다. 이 차트는 Objects가 이러한 통합을 활용하는 방법에 대한 개요를 제공합니다.
 
 | 뼈대                                 | 묘사                                                                                                                                                                                                                                                                                                                                                                                                                                                       |

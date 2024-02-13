@@ -5,13 +5,6 @@ toc:
 ---
 # 일원
 
-```{toctree}
-:maxdepth: 3
-
-people/individuals.md
-people/segments.md
-```
-
 개별 사용자와 전체 사용자를 더 잘 이해하는 것은 우수한 서비스를 제공하기 위한 핵심입니다. 애널리틱스 클라우드는 이 두 가지를 더 잘 이해할 수 있는 도구를 제공합니다. Liferay DXP의 사용자 데이터를 활용하여 강력한 [개인 프로필(](./people/individuals/individual-profiles.md) )을 구축하면 고객이 누구인지에 대한 광범위한 세부 정보를 확보할 수 있습니다. 개별 프로필이 사이트와 상호 작용함에 따라 애널리틱스 클라우드는 개별 프로필을 지속적으로 구축하여 사용자의 [관심사](./people/individuals/understanding-interests.md) 및 행동을 파악하는 데 도움을 줍니다. 이 모든 것이 궁극적으로 사용자의 요구를 충족하고 그 이상을 충족하는 더 나은 조치를 취하는 데 도움이 됩니다.
 
 ![개인 프로필 개요는 사용자 행동에 대한 강력한 보기를 제공합니다.](./people/images/01.png)

@@ -12,14 +12,6 @@ taxonomy-category-names:
 ---
 # Service Builder
 
-```{toctree}
-:maxdepth: 3
-
-service-builder/service-builder-basics.md
-service-builder/defining-entities.md
-service-builder/business-logic-with-service-builder.md
-```
-
 An application without reliable business logic or persistence isn't much of an application at all. Unfortunately, writing your own persistence code often takes a great deal of time. Service Builder is an object-relational mapping tool that can generate your model, persistence, and service layers from a single `xml` file. Once generated, the code is completely customizable: you can write your own persistence code along with custom SQL if necessary. Regardless of how you produce your persistence code, you can then use Service Builder to implement your app's business logic.
 
 Here, you'll learn how to use Service Builder to

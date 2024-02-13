@@ -12,20 +12,6 @@ toc:
 ---
 # ナレッジベース（管理）
 
-```{toctree}
-:maxdepth: 2
-
-knowledge-base/creating-knowledge-base-articles.md
-knowledge-base/importing-knowledge-base-articles.md
-knowledge-base/managing-the-knowledge-base.md
-knowledge-base/knowledge-base-templates.md
-knowledge-base/responding-to-knowledge-base-feedback.md
-knowledge-base/knowledge-base-display-widget.md
-knowledge-base/other-knowledge-base-widgets.md
-knowledge-base/knowledge-base-system-settings.md
-knowledge-base/developer-guide.md
-```
-
 {bdg-secondary}`liferay 7.4 U72+/GA72+`.
 
 ナレッジベースは、製品ドキュメントを作成・管理するためのツールを提供します。 Liferay UIで記事を書いたり、既存のMarkdownファイルをインポートすることができます。 さらに、 [テンプレート](./knowledge-base/knowledge-base-templates.md) を作成して、記事の構成や内容を標準化することもできる。 [ワークフロー](../process-automation/workflow/introduction-to-workflow.md) を有効にすることで、記事は公開前に承認プロセスを通過します。

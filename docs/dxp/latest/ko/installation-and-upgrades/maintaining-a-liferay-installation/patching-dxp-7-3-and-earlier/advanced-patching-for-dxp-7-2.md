@@ -6,14 +6,6 @@ toc:
 ---
 # DXP 7.2용 고급 패칭
 
-```{toctree}
-:maxdepth: 3
-
-advanced-patching-for-dxp-7-2/using-slim-bundles.md
-advanced-patching-for-dxp-7-2/slimming-down-patched-installations.md
-advanced-patching-for-dxp-7-2/custom-code-and-patch-compatibility.md
-```
-
 다음은 DXP 7.2 고급 패칭 항목입니다.
 
 * [슬림 번들 사용](./advanced-patching-for-dxp-7-2/using-slim-bundles.md) 은 패치 파일을 포함하지 않는 DXP 수정 팩 번들을 사용하여 디스크 공간을 절약하는 방법을 보여줍니다.

@@ -7,15 +7,6 @@ toc:
 ---
 # 아피스
 
-```{toctree}
-:maxdepth: 3
-
-apis/authentication.md
-apis/querying-data.md
-apis/exporting-data.md
-apis/resource-types-and-structure.md
-```
-
 Liferay Analytics Cloud는 일련의 API 엔드포인트를 통해 분석 데이터에 대한 액세스를 지원합니다. 이제 개발자는 RESTful API 또는 데이터 내보내기를 통해 데이터에 액세스하고 데이터를 통합할 수 있습니다.
 
 기업은 Analytics Cloud 데이터로 다음을 수행할 수 있습니다.

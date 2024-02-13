@@ -9,17 +9,6 @@ toc:
 ---
 # Liferayフロントエンドタグライブラリ
 
-```{toctree}
-:maxdepth: 3
-
-liferay-frontend-tag-library/liferay-frontend-add-menu.md
-liferay-frontend-tag-library/liferay-frontend-cards.md
-liferay-frontend-tag-library/liferay-frontend-info-bar.md
-liferay-frontend-tag-library/liferay-frontend-management-bar.md
-liferay-frontend-tag-library/including-actions-in-the-management-bar.md
-liferay-frontend-tag-library/disabling-the-management-bar.md
-```
-
 Liferayフロントエンドタグライブラリは、アプリで一般的なフロントエンドUIコンポーネントを作成するためのタグのセットを提供します。
 
 アプリでフロントエンドtaglibを使用するには、JSPに次の宣言を追加します。

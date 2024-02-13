@@ -9,15 +9,6 @@ uuid: e6a89b26-4fcc-4dc2-b300-7a92adb60afd
 ---
 # Upgrade Stability and Performance
 
-```{toctree}
-:maxdepth: 2
-
-upgrade-stability-and-performance/database-tuning-for-upgrades.md
-upgrade-stability-and-performance/database-pruning-for-faster-upgrades.md
-upgrade-stability-and-performance/example-removing-intermediate-journal-article-versions.md
-upgrade-stability-and-performance/upgrading-modules-using-gogo-shell.md
-```
-
 When you upgrade a DXP instance for a production release, the data upgrades must be done correctly and swiftly. Here are some ways to help assure success:
 
 * Create a test environment that uses copies of your database and installation 

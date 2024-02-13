@@ -12,14 +12,6 @@ taxonomy-category-names:
 ---
 # Service Builder Basics
 
-```{toctree}
-:maxdepth: 3
-
-service-builder-basics/generating-model-persistence-and-service-code.md
-service-builder-basics/understanding-and-extending-generated-classes.md
-service-builder-basics/invoking-a-service-locally.md
-```
-
 Using Service Builder helps you learn it. You'll use it to learn the basics:
 
 1. [Generating Model, Persistence, and Service Code](./service-builder-basics/generating-model-persistence-and-service-code.md): Define a basic model, generate code from it, and deploy the code to DXP. Verify the generated database tables and test the new service on DXP.

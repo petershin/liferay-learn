@@ -8,16 +8,6 @@ toc:
 ---
 # フラグメントの設定
 
-```{toctree}
-:maxdepth: 3
-
-configuring-fragments/general-settings-reference.md
-configuring-fragments/styles-reference.md
-configuring-fragments/advanced-settings-reference.md
-configuring-fragments/fragment-sub-elements-reference.md
-configuring-fragments/localizing-fragment-configuration-fields.md
-```
-
 フラグメントとそのサブエレメントを設定できる。 利用可能なオプションはさまざまだが、すべてに共通するものもある。 利用可能な設定オプションを表示するには、ページまたはテンプレートの編集を開始し、サイドバーメニューの **ブラウザ** パネル (![Browser](../../../../images/icon-hierarchy.png)) を開きます。 次に、設定するフラグメントまたはサブエレメントをクリックします。 利用可能な設定オプションは3つのタブに表示されます：General、Styles、Advancedです。
 
 ![利用可能な設定オプションは3つのタブに分類されています。](./configuring-fragments/images/01.png)

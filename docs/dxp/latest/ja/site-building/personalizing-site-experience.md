@@ -7,15 +7,6 @@ toc:
 ---
 # サイトエクスペリエンスのパーソナライズ
 
-```{toctree}
-:maxdepth: 3
-
-personalizing-site-experience/segmentation.md
-personalizing-site-experience/experience-personalization.md
-personalizing-site-experience/migration-from-audience-targeting.md
-personalizing-site-experience/enabling-automated-live-chat-systems.md
-```
-
 Liferay DXPは、ユーザーを理解し、パーソナライズされた体験を提供するための強力なツールをすぐに利用できます。
 
 例えば、 [ユーザーセグメント](./personalizing-site-experience/segmentation/creating-and-managing-user-segments.md) を作成し、それらを異なる [エクスペリエンス](./personalizing-site-experience/experience-personalization/creating-and-managing-experiences.md) にマッピングすることができます。 エクスペリエンスを導入することで、 [コレクションをパーソナライズし、](./personalizing-site-experience/experience-personalization/personalizing-collections.md) コンテンツや [ユーザーが見るページ](./personalizing-site-experience/experience-personalization/content-page-personalization.md) をカスタマイズすることができる。

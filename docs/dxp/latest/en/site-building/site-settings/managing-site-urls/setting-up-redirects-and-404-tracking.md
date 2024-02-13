@@ -14,14 +14,6 @@ uuid: 19c713cc-87be-41e6-ba6d-fc23ee75ad82
 
 # Setting Up Redirects and 404 Tracking
 
-```{toctree}
-:maxdepth: 3
-
-setting-up-redirects-and-404-tracking/using-alias-redirects.md
-setting-up-redirects-and-404-tracking/using-pattern-redirects.md
-setting-up-redirects-and-404-tracking/tracking-404-urls.md
-```
-
 {bdg-secondary}`7.4 U48+/GA48+`
 
 Maintaining URL integrity is important for any site. Liferay's _Redirection_ tool provides a convenient and integrated way to manage HTTP redirects and track 404 errors for individual sites. Use it to avoid and fix broken links, improving both user experience and site SEO.

@@ -16,18 +16,6 @@ taxonomy-category-names:
 ---
 # Defining Entities
 
-```{toctree}
-:maxdepth: 3
-
-defining-entities/configuring-global-service-options.md
-defining-entities/defining-entity-columns.md
-defining-entities/modifying-database-fields-in-development.md
-defining-entities/defining-entity-relationships.md
-defining-entities/sorting-entity-instances.md
-defining-entities/defining-entity-finder-methods.md
-defining-entities/adding-model-hints.md
-```
-
 Entities are the heart and soul of a service. They represent the map between the model objects in Java and your database fields and tables. [Service Builder](../service-builder.md) automatically maps your Java model to the entities you define, giving you a facility for persisting Java objects. Consider the Y7G4 sample project found in [Generating Model, Persistence, and Service Code](./service-builder-basics/generating-model-persistence-and-service-code.md). Here's the summary of the entity:
 
 * **Name:** `Y7G4Entry`

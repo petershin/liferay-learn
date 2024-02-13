@@ -6,14 +6,6 @@ toc:
 ---
 # 워크플로우 설계 및 관리
 
-```{toctree}
-:maxdepth: 2
-
-designing-and-managing-workflows/building-workflows.md
-designing-and-managing-workflows/managing-workflows.md
-designing-and-managing-workflows/workflow-designer.md
-```
-
 * [워크플로우 구축](./designing-and-managing-workflows/building-workflows.md)
 * [워크플로 관리](./designing-and-managing-workflows/managing-workflows.md)
 

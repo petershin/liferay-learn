@@ -6,14 +6,6 @@ toc:
 ---
 # 알림
 
-```{toctree}
-:maxdepth: 3
-
-notifications/configuring-personal-notifications.md
-notifications/creating-notification-templates.md
-notifications/using-the-notification-queue.md
-```
-
 Liferay는 통합 알림 도구를 제공하므로 플랫폼 이벤트에 대해 사용자에게 경고할 수 있습니다. Liferay DXP의 경우 다음 기본 애플리케이션에 대한 이메일 및 웹사이트 알림이 포함됩니다.
 
 | 신청           | 이메일      | 웹사이트     |

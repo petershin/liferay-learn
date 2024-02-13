@@ -8,13 +8,6 @@ toc:
 {bdg-primary}`[LES 구독](./activating-liferay-enterprise-search.md)`
 {bdg-secondary}`DXP 7.4 U5+; 7.3 U6+`
 
-```{toctree}
-:maxdepth: 1
-
-./search-experiences/search-blueprints.md
-./search-experiences/semantic-search.md
-```
-
 Liferay Enterprise Search Experiences 앱에는 최종 사용자의 검색 경험을 세밀하게 제어할 수 있는 기능 모음이 포함되어 있습니다.
 
 ## 청사진 검색

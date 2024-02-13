@@ -18,25 +18,6 @@ toc:
 ---
 # Liferay 설정
 
-```{toctree}
-:maxdepth: 3
-
-setting-up-liferay/activating-liferay-dxp.md
-../system-administration/configuring-liferay/virtual-instances/instance-configuration.md
-setting-up-liferay/initial-instance-localization.md
-setting-up-liferay/configuring-mail.md
-../system-administration/configuring-liferay/virtual-instances/users.md
-../system-administration/file-storage.md
-../system-administration/file-storage/enabling-antivirus-scanning-for-uploaded-files.md
-../using-search/installing-and-upgrading-a-search-engine/installing-a-search-engine.md
-maintaining-a-liferay-installation/backing-up.md
-../system-administration/installing-and-managing-apps.md
-setting-up-liferay/using-a-cdn.md
-setting-up-liferay/clustering-for-high-availability.md
-setting-up-liferay/tuning-liferay.md
-setting-up-liferay/tuning-your-jvm.md
-```
-
 [에서 Liferay](./installing-liferay.md)를 설치한 후 필요에 맞게 구성합니다. 다음은 일반적인 설정 작업입니다.
 
 **설정 작업**

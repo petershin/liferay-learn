@@ -19,15 +19,6 @@ uuid: 190bc17e-ee9d-48bc-8770-0ea2d100318c
 ---
 # Using Collections
 
-```{toctree}
-:maxdepth: 3
-
-collections-and-collection-pages/about-collections-and-collection-pages.md
-collections-and-collection-pages/creating-collections.md
-collections-and-collection-pages/collection-providers.md
-collections-and-collection-pages/displaying-collections.md
-```
-
 * [About Collections and Collection Pages](./collections-and-collection-pages/about-collections-and-collection-pages.md)
 * [Creating Collections](./collections-and-collection-pages/creating-collections.md)
 * [Collection Providers](./collections-and-collection-pages/collection-providers.md)

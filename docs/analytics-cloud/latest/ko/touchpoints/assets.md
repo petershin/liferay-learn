@@ -9,17 +9,6 @@ toc:
 ---
 # 자산
 
-```{toctree}
-:maxdepth: 3
-
-assets/assets.md
-assets/web-content.md
-assets/blogs.md
-assets/forms.md
-assets/documents-and-media.md
-assets/tracking-custom-assets.md
-```
-
 * [자산](./assets/assets.md)
 * [웹 콘텐츠](./assets/web-content.md)
 * [블로그](./assets/blogs.md)

@@ -9,17 +9,6 @@ toc:
 ---
 # アプリケーションサーバーへのLiferayのインストール
 
-```{toctree}
-:maxdepth: 2
-
-installing-liferay-on-an-application-server/installing-on-tomcat.md
-installing-liferay-on-an-application-server/installing-on-wildfly.md
-installing-liferay-on-an-application-server/installing-on-jboss-eap.md
-installing-liferay-on-an-application-server/installing-on-weblogic.md
-installing-liferay-on-an-application-server/installing-on-websphere.md
-installing-liferay-on-an-application-server/setting-up-jndi-on-tomcat.md
-```
-
 Liferay DXPまたはLiferay Portalは、 [対応されているアプリケーションサーバー](https://help.liferay.com/hc/ja/articles/360049238151) にインストールすることが可能です。 これは通常、DevOpsおよび高可用性環境で使用する最も実用的なインストールタイプです。
 
 開始するには、

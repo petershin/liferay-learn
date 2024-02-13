@@ -4,12 +4,6 @@ toc:
 ---
 # 自動ライブチャットシステムの有効化
 
-```{toctree}
-:maxdepth: 3
-
-enabling-automated-live-chat-systems/getting-a-chat-provider-account-id.md
-```
-
 {bdg-secondary}`liferay 7.4+`
 
 Liferayは現在、多数のライブサポートチャットプラットフォームとの統合を提供しています。 この統合を有効にすると、Liferayインスタンスのサイトにチャットウィンドウが追加され、ユーザーのサポートとサイトエクスペリエンスを向上させるために使用できます。

@@ -13,14 +13,6 @@ taxonomy-category-names:
 ---
 # Reference
 
-```{toctree}
-:maxdepth: 3
-
-reference/app-builder.md
-reference/deploying-wars-wab-generator.md
-reference/jars-excluded-from-wabs.md
-```
-
 * [App Builder](./reference/app-builder.md)
 * [Deploying WARs (WAB Generator)](./reference/deploying-wars-wab-generator.md)
 * [JARS Excluded from WABs](./reference/jars-excluded-from-wabs.md)

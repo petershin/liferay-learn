@@ -21,22 +21,6 @@ uuid: 60669ae7-b0b6-4239-8c0c-d38d93e15339
 ---
 # Staging
 
-```{toctree}
-:maxdepth: 3
-
-staging/understanding-the-publishing-process.md
-staging/configuring-local-live-staging.md
-staging/configuring-remote-live-staging.md
-staging/managing-data-and-content-types-in-staging.md
-staging/page-versioning.md
-staging/publishing-single-assets-and-widgets.md
-staging/configuring-automatic-publishing-of-displayed-content.md
-staging/configuring-page-publishing.md
-staging/managing-staging-permissions.md
-staging/using-staging-in-asset-libraries.md
-staging/site-staging-ui-reference.md
-```
-
 Liferay's Staging application provides a working environment for making changes to a site or asset library before publishing your changes to your live environment. With it, you can modify staged application data and pages behind the scenes and then publish your changes when ready, whether individually or all together, while the live environment handles incoming user traffic.
 
 ![Liferay creates a separate copy of the original site or library.](./staging/images/01.png)

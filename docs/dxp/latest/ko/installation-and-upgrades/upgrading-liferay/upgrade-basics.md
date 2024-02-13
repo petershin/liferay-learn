@@ -7,15 +7,6 @@ toc:
 ---
 # 업그레이드 기본 사항
 
-```{toctree}
-:maxdepth: 2
-
-upgrade-basics/upgrading-via-auto-upgrade.md
-upgrade-basics/upgrading-via-docker.md
-upgrade-basics/using-the-database-upgrade-tool.md
-upgrade-basics/post-upgrade-considerations.md
-```
-
 Liferay의 도구와 지침은 DXP 및 Portal 환경을 안전하고 빠르게 업그레이드하는 데 도움을 줍니다. 예를 들어 작은 데이터 세트가 있는 비클러스터형 환경은 [Docker 이미지](./upgrade-basics/upgrading-via-docker.md)을 사용하여 업그레이드할 수 있습니다. 복잡하거나 더 큰 데이터 세트가 있거나 사용자 정의가 많은 DXP 환경 및 Portal 환경은 [데이터베이스 업그레이드 도구](./upgrade-basics/using-the-database-upgrade-tool.md)을 사용하여 업그레이드됩니다. [자동 업그레이드](./upgrade-basics/upgrading-via-auto-upgrade.md) 시작 중에도 활성화할 수 있습니다.
 
 ```{warning}

@@ -13,21 +13,6 @@ toc:
 ---
 # MVC 사용
 
-```{toctree}
-:maxdepth: 3
-
-using-mvc/using-a-jsp-and-mvc-portlet.md
-using-mvc/rendering-views-with-mvc-portlet.md
-using-mvc/invoking-actions-with-mvc-portlet.md
-using-mvc/mvc-action-command.md
-using-mvc/mvc-render-command.md
-using-mvc/mvc-resource-command.md
-using-mvc/portlet-preferences.md
-using-mvc/using-localized-messages-in-an-mvc-portlet.md
-using-mvc/sharing-localized-messages.md
-using-mvc/tag-libraries.md
-```
-
 숙련된 개발자라면 Model View Controller에 대해 들어본 것이 이번이 처음이 아닙니다. Java에서 MVC 프레임워크의 구현이 너무 많은 경우 Liferay가 또 다른 구현을 만든 이유는 무엇입니까? 우리와 함께 있으면 Liferay MVC 포틀릿이 다음과 같은 이점을 제공한다는 것을 알게 될 것입니다.
 
 * 다른 많은 Java MVC 프레임워크와 달리 가볍습니다.

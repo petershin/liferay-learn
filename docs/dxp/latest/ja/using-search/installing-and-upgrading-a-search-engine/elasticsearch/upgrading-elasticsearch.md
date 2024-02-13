@@ -7,15 +7,6 @@ toc:
 ---
 # Elasticsearchのアップグレード
 
-```{toctree}
-:maxdepth: 1
-
-upgrading-elasticsearch/upgrading-search-infrastructure.md
-upgrading-elasticsearch/upgrading-to-elasticsearch-8.md
-upgrading-elasticsearch/upgrading-to-elasticsearch-7.md
-upgrading-elasticsearch/backing-up-elasticsearch.md
-```
-
 LiferayはElasticsearch 8に対応しています。 [互換性マトリックス ](https://help.liferay.com/hc/ja/sections/360002103292-Compatibility-Matrix) では、最新のサポートの詳細を提供しています。
 
 ```{important}

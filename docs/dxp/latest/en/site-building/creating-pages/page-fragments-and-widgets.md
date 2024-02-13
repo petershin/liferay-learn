@@ -12,13 +12,6 @@ taxonomy-category-names:
 uuid: b34554d6-3d96-4f96-bcb8-83b486db176b
 ---
 # Page Fragments and Widgets
-
-```{toctree}
-:maxdepth: 3
-
-page-fragments-and-widgets/using-fragments.md
-page-fragments-and-widgets/using-widgets.md
-```
 <!--TASK: Develop into-->
 Liferay provides page fragments and widgets for building site pages and page templates.
 

@@ -4,12 +4,6 @@ toc:
 ---
 # カスタム開発のアップグレード
 
-```{toctree}
-:maxdepth: 3
-
-upgrading-custom-development/upgrading-language-key-overrides.md
-```
-
 ```{note}
 この部分は現在作成中です。
 ```

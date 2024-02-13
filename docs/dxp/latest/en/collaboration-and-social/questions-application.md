@@ -12,12 +12,5 @@ taxonomy-category-names:
 ---
 # Questions Application
 
-```{toctree}
-:maxdepth: 2
-
-questions-application/using-the-questions-app.md
-questions-application/configuring-the-questions-app.md
-```
-
 * [Using the Questions App](./questions-application/using-the-questions-app.md)
 * [Configuring the Questions App](./questions-application/configuring-the-questions-app.md)

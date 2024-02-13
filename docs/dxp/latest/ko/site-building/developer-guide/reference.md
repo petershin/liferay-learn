@@ -4,12 +4,6 @@ toc:
 ---
 # 개발자 참조
 
-```{toctree}
-:maxdepth: 3
-
-reference/fragments.md
-```
-
 ## 프래그먼트 참조 개발
 
 ::::{grid} 2

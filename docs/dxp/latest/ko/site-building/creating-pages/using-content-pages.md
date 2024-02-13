@@ -8,16 +8,6 @@ toc:
 ---
 # 콘텐츠 페이지 사용
 
-```{toctree}
-:maxdepth: 3
-
-using-content-pages/adding-elements-to-content-pages.md
-using-content-pages/managing-content-in-content-pages.md
-using-content-pages/using-widgets-on-a-content-page.md
-using-content-pages/using-page-comments.md
-using-content-pages/content-page-editor-ui-reference.md
-```
-
 기본적으로 Liferay DXP는 페이지 콘텐츠와 디자인을 관리하고 편집하기 위한 편리한 사용자 인터페이스를 제공하는 콘텐츠 페이지 유형을 사용합니다. 콘텐츠 페이지를 사용하면 기본적으로 구성 가능한 끌어서 놓기 요소를 사용하거나 직접 개발하여 원하는 사용자 경험을 만들 수 있습니다.
 
 다른 페이지 유형과 마찬가지로 [widgets](./using-content-pages/using-widgets-on-a-content-page.md)을 사용하여 블로그, 위키, 게시판을 통합하여 콘텐츠 페이지에 동적 기능을 추가할 수 있습니다. 그리고 더. 콘텐츠 페이지는 주로 [페이지 조각](./page-fragments-and-widgets/using-fragments.md)을 사용하여 구축됩니다. 페이지 조각은 사용 가능한 콘텐츠에 매핑할 수도 있는 텍스트, 이미지, 링크 등 편집 가능한 구성 요소를 포함하는 확장 가능하고 재사용 가능한 페이지 요소입니다. DXP의 기본 조각에 대한 자세한 내용은 [기본 조각 참조](./page-fragments-and-widgets/using-fragments/default-fragments-reference.md) 또는 [조각 개발](../developer-guide/developing-page-fragments/developing-fragments-intro.md)에서 직접 만드는 방법을 알아보세요.

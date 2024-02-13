@@ -12,14 +12,6 @@ taxonomy-category-names:
 ---
 # Patching Earlier DXP Versions
 
-```{toctree}
-:maxdepth: 3
-
-patching-dxp-7-3-and-earlier/understanding-patch-types-for-dxp-7-3-and-earlier.md
-patching-dxp-7-3-and-earlier/installing-patches-for-dxp-7-3-and-earlier.md
-patching-dxp-7-3-and-earlier/advanced-patching-for-dxp-7-2.md
-```
-
 ```{note}
 Liferay DXP uses Bundle Releases for its latest releases. Please see [Updating Liferay](./updating-liferay.md) if you are applying an Update. All Hotfixes are patches. If you're applying a Hotfix, continue reading.
 ```

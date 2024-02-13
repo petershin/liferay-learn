@@ -16,16 +16,6 @@ taxonomy-category-names:
 ---
 # Product Types
 
-```{toctree}
-:maxdepth: 3
-
-product-types/creating-a-simple-product.md
-product-types/creating-a-grouped-product.md
-product-types/creating-a-virtual-product.md
-product-types/virtual-product-reference.md
-product-types/shop-by-diagram.md
-```
-
 Commerce Catalogs provides four out-of-the-box Product types: Simple, Grouped, Virtual and Diagram.
 
 **[Simple Product](./product-types/creating-a-simple-product.md)**: Any physical product for which inventory is tracked.

@@ -15,13 +15,6 @@ taxonomy-category-names:
 
 {bdg-primary}`Subscription`
 
-```{toctree}
-:maxdepth: 1
-
-product-recommendations/using-product-recommendations.md
-product-recommendations/understanding-recommendation-types.md
-```
-
 Liferay supports both content- and user-based product recommendations. You can display these using Product and Order data from your Liferay instance.
 
 To get started, see [Using Product Recommendations](./product-recommendations/using-product-recommendations.md). 

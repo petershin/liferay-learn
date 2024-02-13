@@ -13,13 +13,6 @@ uuid: 91d8afef-b78a-4561-8080-213d8e1cf91a
 
 # Troubleshooting Elasticsearch Installation
 
-```{toctree}
-:maxdepth: 1
-
-troubleshooting-elasticsearch-installation/troubleshooting-the-elasticsearch-connection.md
-troubleshooting-elasticsearch-installation/troubleshooting-elasticsearch-common-issues.md
-```
-
 Liferay and Elasticsearch are complex systems full of configurations. When [connecting them](./getting-started-with-elasticsearch.md), you can run into difficulty along the way. Included below are techniques for troubleshooting.
 
 To learn about some common issues and how to solve them, see

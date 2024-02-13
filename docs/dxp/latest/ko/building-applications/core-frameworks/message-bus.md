@@ -9,17 +9,6 @@ toc:
 ---
 # 메시지 버스
 
-```{toctree}
-:maxdepth: 3
-
-message-bus/listening-for-messages.md
-message-bus/using-asynchronous-messaging.md
-message-bus/using-default-synchronous-messaging-in-previous-versions.md
-message-bus/using-direct-synchronous-messaging-in-previous-versions.md
-message-bus/listening-for-registration-events.md
-message-bus/tuning-messaging-performance.md
-```
-
 메시지 버스는 느슨하게 결합된 메시지 교환 방법을 제공합니다. 메시지를 보내는 클래스는 메시지 버스를 호출하여 메시지를 목적지로 보내고, 그 목적지에 등록된 다른 클래스(리스너 **개**)는 메시지를 받습니다. 수신기는 발신자에게 투명하며 그 반대도 마찬가지입니다.
 
 주요 메시징 구성 요소는 다음과 같습니다.

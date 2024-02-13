@@ -9,17 +9,6 @@ toc:
 ---
 # ワークスペース設定
 
-```{toctree}
-:maxdepth: 3
-
-workspace-settings/managing-users.md
-workspace-settings/managing-properties.md
-workspace-settings/tracking-usage.md
-workspace-settings/managing-workspaces.md
-workspace-settings/scoping-sites-and-individuals-using-properties.md
-workspace-settings/contact-sync-data-reference.md
-```
-
 設定で、Analytics Cloudのワークスペースの表示と管理を行います。 UIの左下にある設定リンクをクリックします。
 
 [他のユーザーを招待し、ワークスペースへのアクセスを管理します。](./workspace-settings/managing-users.md)

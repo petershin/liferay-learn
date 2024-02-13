@@ -13,21 +13,6 @@ toc:
 ---
 # フロントエンドのクライアント拡張
 
-```{toctree}
-:maxdepth: 3
-
-front-end-client-extensions/tutorials.md
-front-end-client-extensions/javascript-yaml-configuration-reference.md
-front-end-client-extensions/css-yaml-configuration-reference.md
-front-end-client-extensions/theme-css-yaml-configuration-reference.md
-front-end-client-extensions/theme-favicon-yaml-configuration-reference.md
-front-end-client-extensions/theme-sprite-map-yaml-configuration-reference.md
-front-end-client-extensions/custom-element-yaml-configuration-reference.md
-front-end-client-extensions/iframe-yaml-configuration-reference.md
-front-end-client-extensions/understanding-custom-element-and-iframe-client-extensions.md
-front-end-client-extensions/client-extensions-ui-reference.md
-```
-
 {bdg-secondary}`liferay DXP 7.4 (self-hosted)`   {bdg-secondary}`Liferay Experience Cloud (SaaS)`   {bdg-unsupported}`Liferay Cloud：セルフマネージド`
 
 フロントエンドクライアント拡張は、ページを拡張し、新しい機能を統合します。 利用可能なタイプには、CSS、JavaScript、テーマCSS、テーマファビコン、カスタム要素、IFrameがあります。

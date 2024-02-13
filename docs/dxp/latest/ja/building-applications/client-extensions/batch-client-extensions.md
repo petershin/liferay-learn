@@ -6,12 +6,6 @@ toc:
 
 {bdg-secondary}`liferay DXP 7.4 (self-hosted)`   {bdg-secondary}`Liferay Experience Cloud (SaaS)`   {bdg-unsupported}`Liferay Cloud：セルフマネージド`
 
-```{toctree}
-:maxdepth: 3
-
-batch-client-extensions/batch-yaml-configuration-reference.md
-```
-
 バッチクライアント拡張はLiferayの [バッチエンジンフレームワーク](../../headless-delivery/consuming-apis/batch-engine-api-basics-exporting-data.md) と連携し、Liferayインスタンスにデータエンティティを提供します。 インスタンスのデータをエクスポートする（例：`curl`またはエクスポート/インポート・センター経由）。 そして、それをバッチクライアントエクステンションに追加し、 [deploy](./working-with-client-extensions.md#deploying-to-your-liferay-instance) 、データを別のLiferayインスタンスに取り込みます。
 
 バッチクライアント拡張機能で使用するためにデータをエクスポートするには、アプリケーションメニューからエクスポート/インポートセンターを使用します( ![アプリケーションメニューアイコン](../../images/icon-applications-menu.png) )。 Export/Import センターを有効にするには、Liferay を起動する前にこの [portal プロパティ](../../installation-and-upgrades/reference/portal-properties.md) を追加してください：

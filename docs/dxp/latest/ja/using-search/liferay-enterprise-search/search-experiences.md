@@ -8,13 +8,6 @@ toc:
 {bdg-primary}`[LES Subscription](./activating-liferay-enterprise-search.md)`
 {bdg-secondary}`DXP 7.4 U5+; 7.3 U6+`
 
-```{toctree}
-:maxdepth: 1
-
-./search-experiences/search-blueprints.md
-./search-experiences/semantic-search.md
-```
-
 Liferay Enterprise Search Experiencesアプリには、エンドユーザーの検索体験をきめ細かくコントロールするための機能群が含まれています。
 
 ## ブループリントの検索

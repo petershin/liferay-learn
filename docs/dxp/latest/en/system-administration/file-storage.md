@@ -13,14 +13,6 @@ taxonomy-category-names:
 ---
 # File Storage
 
-```{toctree}
-:maxdepth: 3
-
-file-storage/enabling-antivirus-scanning-for-uploaded-files.md
-file-storage/file-store-migration.md
-file-storage/other-file-store-types.md
-```
-
 All files uploaded to Liferay DXP are stored in the instance's designated file store. This includes files uploaded using [Documents and Media](../content-authoring-and-management/documents-and-media.md), as well as those uploaded using applications that support file attachments (e.g., [Message Boards](../collaboration-and-social/collaboration-and-social-overview.md)). The file store can be hosted on the local machine, on a network mounted file system, in a database, or in the cloud.
 
 ```{important}

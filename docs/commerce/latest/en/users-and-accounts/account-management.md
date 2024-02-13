@@ -18,18 +18,6 @@ taxonomy-category-names:
 ---
 # Account Management
 
-```{toctree}
-:maxdepth: 3
-
-account-management/creating-a-new-account.md
-account-management/inviting-users-to-an-account.md
-account-management/adding-addresses-to-an-account.md
-account-management/account-roles.md
-account-management/creating-a-new-account-group.md
-account-management/using-organizations-to-create-a-sales-network.md
-account-management/adding-organizations-to-accounts.md
-```
-
 In Liferay Commerce, Accounts are used to store customer information, such as billing and shipping addresses, order details, and VAT number. Once created, Accounts can be sorted into groups based on shared criteria (e.g., geographic region). These Account Groups can be used to target customers with specific Price Lists, Promotions, and Discounts.
 
 ## Account Types

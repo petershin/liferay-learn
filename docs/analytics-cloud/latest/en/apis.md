@@ -14,15 +14,6 @@ uuid: 41697836-f8f5-40a5-83d8-93c85c186be8
 ---
 # APIs
 
-```{toctree}
-:maxdepth: 3
-   
-apis/authentication.md
-apis/querying-data.md
-apis/exporting-data.md
-apis/resource-types-and-structure.md
-```
-
 Liferay Analytics Cloud supports access to its analytics data via a set of API endpoints. Developer can now access and integrate the data either through RESTful APIs or data export.
 
 Business can do the following with the Analytics Cloud data:

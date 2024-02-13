@@ -15,23 +15,6 @@ toc:
 ---
 # Clayタグライブラリ
 
-```{toctree}
-:maxdepth: 3
-
-clay-tag-library/clay-alerts.md
-clay-tag-library/clay-badges.md
-clay-tag-library/clay-buttons.md
-clay-tag-library/clay-cards.md
-clay-tag-library/clay-dropdown-and-action-menus.md
-clay-tag-library/clay-form-elements.md
-clay-tag-library/clay-icons.md
-clay-tag-library/clay-links-and-labels.md
-clay-tag-library/clay-management-toolbar.md
-clay-tag-library/clay-navigation-bars.md
-clay-tag-library/clay-progress-bars.md
-clay-tag-library/clay-stickers.md
-```
-
 Liferay Clayタグライブラリは、アプリで [Clay](https://clayui.com/) UIコンポーネントを作成するためのタグのセットを提供します。
 
 ```{note}

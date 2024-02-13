@@ -7,15 +7,6 @@ toc:
 ---
 # 사이트 템플렛
 
-```{toctree}
-:maxdepth: 4
-
-site-templates/creating-site-templates.md
-site-templates/propagating-template-changes.md
-site-templates/configuring-site-template-propagation.md
-site-templates/exporting-importing-site-templates.md
-```
-
 Liferay는 사이트 제작 시 사용할 수 있는 구조와 콘텐츠를 디자인할 수 있는 사이트 템플릿을 제공합니다. 각 템플릿에는 페이지, 스타일북, 웹 콘텐츠 등을 추가할 수 있는 대부분의 표준 사이트 애플리케이션이 포함되어 있습니다. 템플릿으로 만든 사이트는 모든 데이터를 상속합니다. 자세한 내용은 [사이트 템플릿 만들기](./site-templates/creating-site-templates.md) 를 참조하세요.
 
 ```{note}

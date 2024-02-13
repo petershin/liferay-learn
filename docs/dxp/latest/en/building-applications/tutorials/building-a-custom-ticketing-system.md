@@ -14,16 +14,6 @@ taxonomy-category-names:
 ---
 # Building a Custom Ticketing System
 
-```{toctree}
-:maxdepth: 3
-
-building-a-custom-ticketing-system/defining-a-custom-data-schema.md
-building-a-custom-ticketing-system/applying-a-custom-theme.md
-building-a-custom-ticketing-system/deploying-a-custom-application.md
-building-a-custom-ticketing-system/implementing-a-documentation-referral-system.md
-building-a-custom-ticketing-system/ticket-management-with-cron-jobs.md
-```
-
 Liferay makes it easy for you to build digital solutions. For example, you can create a custom ticketing application with the styling and features needed for your business.
 
 ![See the custom ticketing system sample.](./building-a-custom-ticketing-system/images/01.png)

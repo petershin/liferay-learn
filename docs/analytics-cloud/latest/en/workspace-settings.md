@@ -16,17 +16,6 @@ taxonomy-category-names:
 ---
 # Workspace Settings
 
-```{toctree}
-:maxdepth: 3
-
-workspace-settings/managing-users.md
-workspace-settings/managing-properties.md
-workspace-settings/tracking-usage.md
-workspace-settings/managing-workspaces.md
-workspace-settings/scoping-sites-and-individuals-using-properties.md
-workspace-settings/contact-sync-data-reference.md
-```
-
 In settings, view and manage your Analytics Cloud workspace. Click the settings link at the bottom left of the UI.
 
 [Invite other users and manage access](./workspace-settings/managing-users.md) to the workspace.

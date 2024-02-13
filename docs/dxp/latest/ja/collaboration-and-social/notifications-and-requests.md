@@ -4,12 +4,6 @@ toc:
 ---
 # 通知とリクエスト
 
-```{toctree}
-:maxdepth: 2
-
-notifications-and-requests/user-guide.md
-```
-
 ユーザーガイド
 -------------
 

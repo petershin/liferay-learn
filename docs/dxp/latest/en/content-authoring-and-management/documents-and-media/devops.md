@@ -23,21 +23,6 @@ uuid: 44e5072d-9d76-42a5-a0f0-2687960348fb
 ---
 # DevOps
 
-```{toctree}
-:maxdepth: 2
-
-devops/configuring-documents-and-media-previews.md
-../../system-administration/file-storage/enabling-antivirus-scanning-for-uploaded-files.md
-devops/configuring-cache-control-for-documents-and-media.md
-devops/setting-storage-quotas-for-documents-and-media.md
-devops/enabling-optimization-of-animated-gifs.md
-devops/enabling-ffmpeg-for-audio-and-video-previews.md
-devops/enabling-openoffice-libreoffice-integration.md
-devops/enabling-document-creation-and-editing-with-microsoft-office-365.md
-devops/google-drive-integration.md
-devops/sharepoint-integration.md
-```
-
 - [Configuring Documents and Media Previews](./devops/configuring-documents-and-media-previews.md)
 - [Enabling Antivirus Scanning for Uploaded Files](../../system-administration/file-storage/enabling-antivirus-scanning-for-uploaded-files.md)
 - [Configuring Cache Control for Documents and Media](./devops/configuring-cache-control-for-documents-and-media.md)

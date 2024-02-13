@@ -8,16 +8,6 @@ toc:
 ---
 # アダプティブ・メディアの使用
 
-```{toctree}
-:maxdepth: 4
-
-using-adaptive-media/adding-image-resolutions.md
-using-adaptive-media/managing-image-resolutions.md
-using-adaptive-media/using-adapted-images-in-site-content.md
-using-adaptive-media/migrating-documents-and-media-thumbnails.md
-using-adaptive-media/adaptive-media-configuration-reference.md
-```
-
 {bdg-secondary}`liferay 7.4+`
 
 Liferay Adaptive Mediaは、ドキュメントライブラリに保存されている画像を処理し、異なる解像度のコピーを作成します。 一度生成されると、 [、ドキュメントとメディア、ブログ、ウェブコンテンツ、およびコンテンツページで、適応された画像](./using-adaptive-media/using-adapted-images-in-site-content.md) 、エンドユーザーのデバイスに最適な画像解像度を提供するために使用することができます。 これにより、ページサイズが小さくなり、ロード時間が短縮され、帯域幅が節約される。

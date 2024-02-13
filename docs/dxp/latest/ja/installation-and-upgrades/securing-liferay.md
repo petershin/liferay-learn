@@ -8,16 +8,6 @@ toc:
 ---
 # Liferayの保護
 
-```{toctree}
-:maxdepth: 3
-
-securing-liferay/authentication-basics.md
-securing-liferay/configuring-sso.md
-securing-liferay/multi-factor-authentication.md
-securing-liferay/using-antisamy.md
-securing-liferay/securing-web-services.md
-```
-
 Liferay DXPは、セキュリティに配慮して構築されています。 これには、 [OWASP Top 10](https://www.owasp.org/index.php/Top_10_2013-Top_10) や [CWE/SANS Top 25](https://www.sans.org/top25-software-errors/) で説明されているような一般的なセキュリティ脆弱性やエクスプロイトの緩和が含まれます。
 
 Liferayのインストールを保護するには、いくつかの側面があります-ホスティング環境、データベース、検索プロバイダー、アプリケーションサーバー、Liferay DXP自体のベストセキュリティプラクティスに従うことを含みますが、これらに限定されるものではありません。

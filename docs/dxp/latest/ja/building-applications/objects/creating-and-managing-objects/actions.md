@@ -6,14 +6,6 @@ toc:
 ---
 # アクション
 
-```{toctree}
-:maxdepth: 3
-
-actions/defining-object-actions.md
-actions/understanding-action-types.md
-actions/using-manual-actions.md
-```
-
 オブジェクトアクションは、オブジェクトエントリーイベントに対して手動または自動で実行できるカスタムビジネスロジックを定義します。 例えば、エントリーイベントのデータをWebhook URLに配信する、エントリー更新後にメール通知を行う、エントリー作成後にカスタムのGroovyスクリプトを実行する、などが挙げられます。
 
 自動トリガーを使用する場合、Liferayはイベントをリッスンし、あらかじめ定義された条件に従って自動的に操作を実行します。

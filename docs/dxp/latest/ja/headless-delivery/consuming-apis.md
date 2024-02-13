@@ -12,20 +12,6 @@ toc:
 ---
 # APIの使用
 
-```{toctree}
-:maxdepth: 3
-
-consuming-apis/consuming-rest-services.md
-consuming-apis/consuming-graphql-apis.md
-consuming-apis/data-migration-center.md
-consuming-apis/api-query-parameters.md
-consuming-apis/batch-engine-api-basics-importing-data.md
-consuming-apis/batch-engine-api-basics-exporting-data.md
-consuming-apis/making-unauthenticated-requests.md
-consuming-apis/using-external-reference-codes.md
-consuming-apis/api-headers-reference.md
-```
-
 * [休憩サービスの消費](./consuming-apis/consuming-rest-services.md) 
 * [GraphQL Apisの消費](./consuming-apis/consuming-graphql-apis.md) 
 * [データ移行センター](./consuming-apis/data-migration-center.md) 

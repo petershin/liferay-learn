@@ -5,13 +5,6 @@ toc:
 ---
 # ユーザー
 
-```{toctree}
-:maxdepth: 3
-
-people/individuals.md
-people/segments.md
-```
-
 個々のユーザーとユーザーの集合体をよりよく理解することが、優れたサービスを提供するための鍵となります。 Analytics Cloudは、両方をよりよく理解するためのツールを提供します。 Liferay DXPのユーザーデータを利用した堅牢な [訪問者プロフィール](./people/individuals/individual-profiles.md)を構築することで、顧客が誰であるかについて広範な詳細を把握することができます。 訪問者プロフィールがお客様のサイトと相互作用すると、Analytics Cloudは継続的に訪問者プロフィールをベースに構築し、ユーザーの[関心事](./people/individuals/understanding-interests.md)や行動を理解するのに役立ちます。 これらすべてが、最終的にはユーザーのニーズを満たし、それを超える行動をとるための手助けとなります。
 
 ![個人プロファイルの概要では、ユーザーの行動をしっかりと見ることができます。](./people/images/01.png)

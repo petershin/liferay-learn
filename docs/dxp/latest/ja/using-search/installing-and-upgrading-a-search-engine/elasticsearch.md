@@ -13,21 +13,6 @@ toc:
 ---
 # Elasticsearch
 
-```{toctree}
-:maxdepth: 2
-
-elasticsearch/getting-started-with-elasticsearch.md
-elasticsearch/installing-elasticsearch.md
-elasticsearch/connecting-to-elasticsearch.md
-elasticsearch/securing-elasticsearch.md
-elasticsearch/exercise-run-liferay-and-elasticsearch-using-docker.md
-elasticsearch/troubleshooting-elasticsearch-installation.md
-elasticsearch/using-the-sidecar-or-embedded-elasticsearch.md
-elasticsearch/upgrading-elasticsearch.md
-elasticsearch/elasticsearch-connector-configuration-reference.md
-elasticsearch/advanced-configuration-of-the-liferay-elasticsearch-connector.md
-```
-
 Elasticsearchは、Liferayがデフォルトで使用する、拡張性の高いフルテキスト検索エンジンです。 ElasticsearchはLiferayにバンドルされており、本番環境以外の目的で使用されます。 本番環境では、Liferayは別のリモートサーバーで動作するElasticsearchを必要とします。
 
 ```{important}

@@ -15,16 +15,6 @@ taxonomy-category-names:
 ---
 # Securing Liferay
 
-```{toctree}
-:maxdepth: 3
-
-securing-liferay/authentication-basics.md
-securing-liferay/configuring-sso.md
-securing-liferay/multi-factor-authentication.md
-securing-liferay/using-antisamy.md
-securing-liferay/securing-web-services.md
-```
-
 Liferay DXP is built with security in mind. This includes mitigation of common security vulnerabilities and exploits like those described by the [OWASP Top 10](https://www.owasp.org/index.php/Top_10_2013-Top_10) and the [CWE/SANS Top 25](https://www.sans.org/top25-software-errors/).
 
 There are several aspects of securing a Liferay installation---including, but not limited to, following the best security practices for your hosting environment, database, search provider, application server, and Liferay DXP itself.

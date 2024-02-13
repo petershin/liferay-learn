@@ -14,22 +14,6 @@ toc:
 ---
 # リファレンス
 
-```{toctree}
-:maxdepth: 1
-
-reference/liferay-cloud-infrastructure.md
-reference/configuration-via-lcp-json.md
-reference/understanding-service-stack-versions.md
-reference/upgrading-your-liferay-cloud-stack.md
-reference/liferay-cloud-version-5-changes.md
-reference/liferay-cloud-project-changes-in-version-4.md
-reference/upgrading-to-a-high-availability-subscription.md
-reference/command-line-tool.md
-reference/defining-environment-variables.md
-reference/platform-limitations.md
-reference/example-configuration-files.md
-```
-
 - [Liferayクラウドインフラ](./reference/liferay-cloud-infrastructure.md)
 - [LCP.jsonを介した設定](./reference/configuration-via-lcp-json.md)
 - [サービススタックのバージョンについて](./reference/understanding-service-stack-versions.md)

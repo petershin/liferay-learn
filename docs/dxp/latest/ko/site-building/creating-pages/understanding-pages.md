@@ -5,13 +5,6 @@ toc:
 ---
 # 페이지 이해
 
-```{toctree}
-:maxdepth: 3
-
-understanding-pages/understanding-pages.md
-understanding-pages/other-page-types.md
-```
-
 ::::{grid} 2
 :gutter: 3 3 3 3
 

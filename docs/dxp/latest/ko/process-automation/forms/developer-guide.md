@@ -8,17 +8,6 @@ toc:
 ---
 # 개발자 가이드
 
-```{toctree}
-:maxdepth: 3
-
-developer-guide/writing-a-custom-form-field-type.md
-developer-guide/understanding-form-storage-adapters.md
-developer-guide/writing-a-custom-data-provider.md
-developer-guide/writing-a-form-storage-adapter.md
-developer-guide/developing-a-custom-form-field-for-liferay-7-2.md
-
-```
-
 ## 양식
 
 * [사용자 정의 양식 필드 유형 작성](./developer-guide/writing-a-custom-form-field-type.md)

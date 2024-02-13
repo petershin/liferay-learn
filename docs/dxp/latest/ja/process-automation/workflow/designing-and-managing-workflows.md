@@ -6,14 +6,6 @@ toc:
 ---
 # ワークフローの設計と管理
 
-```{toctree}
-:maxdepth: 2
-
-designing-and-managing-workflows/building-workflows.md
-designing-and-managing-workflows/managing-workflows.md
-designing-and-managing-workflows/workflow-designer.md
-```
-
 - [ワークフローの構築](./designing-and-managing-workflows/building-workflows.md)
 - [ワークフローの管理](./designing-and-managing-workflows/managing-workflows.md)
 

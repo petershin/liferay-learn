@@ -6,14 +6,6 @@ toc:
 ---
 # ファイルストレージ
 
-```{toctree}
-:maxdepth: 3
-
-file-storage/enabling-antivirus-scanning-for-uploaded-files.md
-file-storage/file-store-migration.md
-file-storage/other-file-store-types.md
-```
-
 Liferay DXPにアップロードされた全てのファイルは、インスタンスの指定されたファイルストアに保存されます。 これには、 [［ドキュメントとメディア］](../content-authoring-and-management/documents-and-media.md)を使ってアップロードされたファイルや、ファイルの添付をサポートするアプリケーション（ [掲示板](../collaboration-and-social/collaboration-and-social-overview.md)など）を使ってアップロードされたファイルが含まれます。 ファイルストアは、ローカルマシン上、ネットワークにマウントされたファイルシステム上、データベース、またはクラウドでホストできます。
 
 ```{important}

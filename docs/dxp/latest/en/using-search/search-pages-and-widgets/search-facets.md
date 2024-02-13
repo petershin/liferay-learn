@@ -18,19 +18,6 @@ uuid: 90708a47-17a2-49dd-8397-5a7cad01fe35
 ---
 # Search Facets
 
-```{toctree}
-:maxdepth: 2
-
-search-facets/site-facet.md
-search-facets/type-facet.md
-search-facets/category-facet.md
-search-facets/tag-facet.md
-search-facets/folder-facet.md
-search-facets/user-facet.md
-search-facets/modified-facet.md
-search-facets/custom-facet.md
-```
-
 # Facets
 
 Enter a keyword in the Search Bar and click the Search button. The default search experience redirects to a page with results on the right and a collection of *facets* on the left.

@@ -17,19 +17,6 @@ taxonomy-category-names:
 ---
 # Collaboration and Social
 
-```{toctree}
-:maxdepth: 3
-
-collaboration-and-social/collaboration-and-social-overview.md
-collaboration-and-social/message-boards.md
-collaboration-and-social/notifications-and-requests.md
-collaboration-and-social/social-tools.md
-collaboration-and-social/wiki.md
-collaboration-and-social/questions-application.md
-collaboration-and-social/alerts-and-announcements.md
-collaboration-and-social/knowledge-base.md
-```
-
 Liferay DXP comes with a wide suite of flexible applications that can be used to build sites and communities that foster collaboration and communication. For an overview of these features, see the [Collaboration and Social Overview](./collaboration-and-social/collaboration-and-social-overview.md)
 
 ```{raw} html

@@ -7,13 +7,6 @@ toc:
 ---
 # 서버 관리 패널 사용
 
-```{toctree}
-using-the-server-administration-panel/managing-system-resources.md
-using-the-server-administration-panel/configuring-logging.md
-using-the-server-administration-panel/configuring-external-services.md
-using-the-server-administration-panel/configuring-a-shutdown-event.md
-```
-
 서버 관리는 다양한 저수준 Liferay DXP 구성을 포함하는 시스템 범위 관리 패널입니다. 서버 관리에서 시스템 메모리 사용량, 하위 수준 속성, 일부 타사 통합, 문서 리포지토리 마이그레이션, 로깅, 스크립팅, 메일 서버 구성 및 포털 종료를 관리하고 모니터링할 수 있습니다.
 
 **제어판** &rarr; **구성** &rarr; **서버 관리** 클릭하여 서버 관리에 액세스할 수 있습니다.

@@ -12,20 +12,6 @@ toc:
 ---
 # Liferay Docker 이미지 사용
 
-```{toctree}
-:maxdepth: 3
-
-using-liferay-docker-images/container-lifecycle-and-api.md
-using-liferay-docker-images/configuring-containers.md
-using-liferay-docker-images/installing-apps-and-other-artifacts-to-containers.md
-using-liferay-docker-images/licensing-dxp-in-docker.md
-using-liferay-docker-images/patching-dxp-in-docker.md
-using-liferay-docker-images/running-scripts-in-containers.md
-using-liferay-docker-images/providing-files-to-the-container.md
-using-liferay-docker-images/upgrading-to-a-new-docker-image.md
-using-liferay-docker-images/docker-image-versions.md
-```
-
 Docker Hub는 Linux의 Tomcat과 함께 번들로 제공되는 [Liferay DXP](https://hub.docker.com/r/liferay/dxp) 및 [Liferay Portal](https://hub.docker.com/r/liferay/portal) Docker 이미지를 호스팅합니다. Liferay Docker Hub 페이지는 다양한 릴리스에 대한 이미지 세부 정보와 태그를 제공합니다.
 
 * [liferay DXP 이미지](https://hub.docker.com/r/liferay/dxp) 

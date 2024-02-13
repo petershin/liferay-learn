@@ -16,17 +16,6 @@ uuid: 908f0e78-1508-4322-85b0-1deb26a4ef4d
 ---
 # Documents and Media
 
-```{toctree}
-:maxdepth: 4
-
-documents-and-media/uploading-and-managing.md
-documents-and-media/publishing-and-sharing.md
-documents-and-media/videos.md
-documents-and-media/developer-guide.md
-documents-and-media/devops.md
-documents-and-media/documents-and-media-ui-reference.md
-```
-
 The Documents and Media application stores and manages files in your Liferay instance. This includes files uploaded directly to Documents and Media, as well as those uploaded in applications that support file attachments.
 
 All uploaded files are stored in your designated [file store](../system-administration/file-storage.md). By default, Documents and Media uses the [Simple File System Store](../system-administration/file-storage/other-file-store-types/simple-file-system-store.md), but you can configure your instance to use an alternate file store (e.g., [DBStore](../system-administration/file-storage/other-file-store-types/dbstore.md), [Google Cloud Store](../system-administration/file-storage/other-file-store-types/google-cloud-storage.md), or [Amazon S3 Store](../system-administration/file-storage/other-file-store-types/amazon-s3-store.md)).

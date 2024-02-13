@@ -8,16 +8,6 @@ toc:
 ---
 # 라이프레이 설치
 
-```{toctree}
-:maxdepth: 2
-
-installing-liferay/installing-a-liferay-tomcat-bundle.md
-installing-liferay/configuring-a-database.md
-installing-liferay/running-liferay-for-the-first-time.md
-installing-liferay/using-liferay-docker-images.md
-installing-liferay/installing-liferay-on-an-application-server.md
-```
-
 Liferay는 애플리케이션 서버에서 실행됩니다. Liferay를 호스트하는 세 가지 방법이 있습니다.
 
 * 도커 컨테이너 사용

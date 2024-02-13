@@ -8,15 +8,6 @@ toc:
 ---
 # React 사용
 
-```{toctree}
-:maxdepth: 3
-
-../client-extensions/browser-based-client-extensions/tutorials/creating-a-basic-custom-element.md
-../client-extensions/browser-based-client-extensions/tutorials/using-routes-with-custom-elements.md
-using-react/remote-applications-with-headless-apis.md
-using-react/react-component-utilities-reference.md
-```
-
 Liferay와 React를 사용하여 나만의 솔루션을 구축하세요.
 
 ::::{grid} 2

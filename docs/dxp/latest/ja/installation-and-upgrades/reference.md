@@ -10,18 +10,6 @@ toc:
 ---
 # リファレンス
 
-```{toctree}
-:maxdepth: 3
-
-reference/database-configurations.md
-reference/database-templates.md
-reference/jvm-configuration.md
-reference/liferay-home.md
-reference/portal-properties.md
-reference/system-properties.md
-reference/liferay-software-versions.md
-```
-
 * [データベース設定](./reference/database-configurations.md)
 * [データベーステンプレート](./reference/database-templates.md)
 * [JVM設定](./reference/jvm-configuration.md)

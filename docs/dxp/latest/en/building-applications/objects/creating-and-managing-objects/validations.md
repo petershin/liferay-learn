@@ -12,13 +12,6 @@ taxonomy-category-names:
 ---
 # Validations
 
-```{toctree}
-:maxdepth: 3
-
-validations/adding-field-validations.md
-validations/expression-builder-validations-reference.md
-```
-
 {bdg-secondary}`Liferay 7.4+`
 
 Object validations set rules for determining valid field inputs and are defined using either [Groovy scripts](./validations/adding-field-validations.md#using-groovy-validations) or [Liferay expressions](./validations/adding-field-validations.md#using-expression-builder-validations). When triggered, the validation checks for valid field inputs according to defined conditions and displays an error message for invalid inputs.

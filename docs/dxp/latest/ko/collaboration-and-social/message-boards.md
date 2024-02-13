@@ -5,13 +5,6 @@ toc:
 ---
 # 게시판
 
-```{toctree}
-:maxdepth: 2
-
-message-boards/user-guide.md
-message-boards/developer-guide.md
-```
-
 사용자 설명서
 
 * [게시판 시작하기](.//message-boards/user-guide/getting-started-with-message-boards.md)

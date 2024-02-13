@@ -18,19 +18,6 @@ taxonomy-category-names:
 
 # Tutorials
 
-```{toctree}
-:maxdepth: 2
-
-tutorials/using-a-javascript-client-extension.md
-tutorials/using-a-css-client-extension.md
-tutorials/using-a-theme-favicon-client-extension.md
-tutorials/using-a-theme-spritemap-client-extension.md
-tutorials/using-a-theme-css-client-extension.md
-tutorials/creating-a-basic-custom-element.md
-tutorials/using-routes-with-custom-elements.md
-tutorials/using-an-iframe-client-extension.md
-```
-
 Follow these tutorials to create basic front-end client extensions.
 
 ::::{grid} 2

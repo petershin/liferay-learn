@@ -10,14 +10,6 @@ taxonomy-category-names:
 uuid: be42058b-d966-4f7e-9f48-f13fbb555b74
 ---
 # Installing and Upgrading a Search Engine
-
-```{toctree}
-:maxdepth: 2
-
-installing-and-upgrading-a-search-engine/installing-a-search-engine.md
-installing-and-upgrading-a-search-engine/elasticsearch.md
-installing-and-upgrading-a-search-engine/solr.md
-```
 - [Installing a Search Engine](./installing-and-upgrading-a-search-engine/installing-a-search-engine.md)
 - [Upgrading Elasticsearch](./installing-and-upgrading-a-search-engine/elasticsearch/upgrading-elasticsearch.md)
 

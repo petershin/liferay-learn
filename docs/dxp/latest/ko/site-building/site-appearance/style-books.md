@@ -6,14 +6,6 @@ toc:
 ---
 # 스타일 북
 
-```{toctree}
-:maxdepth: 3
-
-style-books/using-a-style-book-to-standardize-site-appearance.md
-style-books/exporting-and-importing-style-books.md
-style-books/developer-guide.md
-```
-
 ::::{grid} 2
 :gutter: 3 3 3 3
 

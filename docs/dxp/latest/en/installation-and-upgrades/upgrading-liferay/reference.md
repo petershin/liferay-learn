@@ -20,27 +20,6 @@ uuid: 191b6c08-ad23-4240-b9a4-d287b96509c5
 ---
 # Reference
 
-```{toctree}
-:maxdepth: 2
-
-reference/data-cleanup.md
-reference/data-removal.md
-reference/database-upgrade-options.md
-reference/database-upgrade-tool-reference.md
-reference/default-setting-changes-in-7-4.md
-reference/default-setting-changes-in-7-3.md
-reference/default-setting-changes-in-7-2.md
-reference/file-store-updates.md
-reference/maintenance-mode-and-deprecations-in-7-4.md
-reference/maintenance-mode-and-deprecations-in-7-3.md
-reference/maintenance-mode-and-deprecations-in-7-2.md
-reference/renamed-language-keys.md
-reference/troubleshooting-upgrades.md
-reference/upgrade-report.md
-reference/upgrade-log-context.md
-reference/monitoring-upgrades-with-mbeans.md
-```
-
 * [Data Cleanup](./reference/data-cleanup.md)
 * [Data Removal](./reference/data-removal.md)
 * [Database Upgrade Options](./reference/database-upgrade-options.md)

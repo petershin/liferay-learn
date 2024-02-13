@@ -6,14 +6,6 @@ toc:
 ---
 # 앱 설치 및 관리
 
-```{toctree}
-:maxdepth: 3
-
-installing-and-managing-apps/using-marketplace.md
-installing-and-managing-apps/installing-apps.md
-installing-and-managing-apps/managing-apps.md
-```
-
 앱을 구입하고 설치하여 DXP 설치에 모든 종류의 기능을 추가할 수 있습니다. 앱은 [Liferay Marketplace](./installing-and-managing-apps/using-marketplace.md)에서 사용할 수 있으며 [App Manager](./installing-and-managing-apps/managing-apps/using-the-app-manager.md) 와 같은 도구를 사용하여 설치에서 앱을 관리할 수 있습니다.
 
 ## 라이프레이 마켓플레이스

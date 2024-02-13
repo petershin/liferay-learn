@@ -5,12 +5,6 @@ toc:
 ---
 # その他のツール
 
-```{toctree}
-:maxdepth: 4
-other-tools/liferay-cli-tool.md
-other-tools/liferay-npm-bundler.md
-```
-
 * [Liferay CLI ツール](./other-tools/liferay-cli-tool.md)
 
 ## Liferay npm Bundler

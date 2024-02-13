@@ -8,13 +8,6 @@ toc:
 
 {bdg-primary}`サブスクリプション`
 
-```{toctree}
-:maxdepth: 1
-
-product-recommations/using-product-recommations.md
-product-recommations/understanding-recommendation-types.md
-```
-
 Liferayは、コンテンツベースとユーザーベースの両方の商品推薦に対応しています。 Liferayインスタンスの商品と注文データを使ってこれらを表示することができます。
 
 詳しくは、 [商品の推薦の使用](./product-recommendations/using-product-recommendations.md)をご覧ください。

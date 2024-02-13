@@ -8,16 +8,6 @@ toc:
 ---
 # 제품 유형
 
-```{toctree}
-:maxdepth: 3
-
-product-types/creating-a-simple-product.md
-product-types/creating-a-grouped-product.md
-product-types/creating-a-virtual-product.md
-product-types/virtual-product-reference.md
-product-types/shop-by-diagram.md
-```
-
 Commerce Catalogs는 단순, 그룹화, 가상 및 다이어그램의 네 가지 즉시 사용 가능한 제품 유형을 제공합니다.
 
 **[단순 제품](./product-types/creating-a-simple-product.md)** : 재고가 추적되는 실제 제품.

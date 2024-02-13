@@ -10,18 +10,6 @@ toc:
 ---
 # 엔터티 정의
 
-```{toctree}
-:maxdepth: 3
-
-defining-entities/configuring-global-service-options.md
-defining-entities/defining-entity-columns.md
-defining-entities/modifying-database-fields-in-development.md
-defining-entities/defining-entity-relationships.md
-defining-entities/sorting-entity-instances.md
-defining-entities/defining-entity-finder-methods.md
-defining-entities/adding-model-hints.md
-```
-
 엔터티는 서비스의 핵심이자 영혼입니다. Java의 모델 개체와 데이터베이스 필드 및 테이블 간의 맵을 나타냅니다. [서비스 빌더](../service-builder.md) 은 Java 모델을 사용자가 정의한 엔터티에 자동으로 매핑하여 Java 개체를 유지하기 위한 기능을 제공합니다. [모델, 지속성 및 서비스 코드 생성](./service-builder-basics/generating-model-persistence-and-service-code.md) 에 있는 Y7G4 샘플 프로젝트를 고려하십시오. 엔터티의 요약은 다음과 같습니다.
 
 * **이름:** `Y7G4Entry`

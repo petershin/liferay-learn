@@ -18,25 +18,6 @@ toc:
 ---
 # Liferayのセットアップ
 
-```{toctree}
-:maxdepth: 3
-
-setting-up-liferay/activating-liferay-dxp.md
-../system-administration/configuring-liferay/virtual-instances/instance-configuration.md
-setting-up-liferay/initial-instance-localization.md
-setting-up-liferay/configuring-mail.md
-../system-administration/configuring-liferay/virtual-instances/users.md
-../system-administration/file-storage.md
-../system-administration/file-storage/enabling-antivirus-scanning-for-uploaded-files.md
-../using-search/installing-and-upgrading-a-search-engine/installing-a-search-engine.md
-maintaining-a-liferay-installation/backing-up.md
-../system-administration/installing-and-managing-apps.md
-setting-up-liferay/using-a-cdn.md
-setting-up-liferay/clustering-for-high-availability.md
-setting-up-liferay/tuning-liferay.md
-setting-up-liferay/tuning-your-jvm.md
-```
-
 [Liferayをインストール](./installing-liferay.md)した後、ニーズに合わせて設定します。 ここでは、一般的なセットアップ作業を説明します。
 
 **セットアップタスク**

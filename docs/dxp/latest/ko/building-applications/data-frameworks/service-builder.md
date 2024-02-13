@@ -6,14 +6,6 @@ toc:
 ---
 # 서비스 빌더
 
-```{toctree}
-:maxdepth: 3
-
-service-builder/service-builder-basics.md
-service-builder/defining-entities.md
-service-builder/business-logic-with-service-builder.md
-```
-
 신뢰할 수 있는 비즈니스 로직이나 지속성이 없는 애플리케이션은 전혀 애플리케이션이 아닙니다. 안타깝게도 자체 지속성 코드를 작성하는 데는 종종 많은 시간이 걸립니다. Service Builder는 단일 `xml` 파일에서 모델, 지속성 및 서비스 계층을 생성할 수 있는 개체 관계형 매핑 도구입니다. 코드가 생성되면 완전히 사용자 정의할 수 있습니다. 필요한 경우 사용자 정의 SQL과 함께 고유한 지속성 코드를 작성할 수 있습니다. 지속성 코드를 생성하는 방법에 관계없이 Service Builder를 사용하여 앱의 비즈니스 로직을 구현할 수 있습니다.
 
 여기에서는 Service Builder를 사용하여 다음을 수행하는 방법을 배웁니다.

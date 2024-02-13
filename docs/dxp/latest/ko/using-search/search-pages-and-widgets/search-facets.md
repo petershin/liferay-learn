@@ -11,19 +11,6 @@ toc:
 ---
 # 패싯 검색
 
-```{toctree}
-:maxdepth: 2
-
-search-facets/site-facet.md
-search-facets/type-facet.md
-search-facets/category-facet.md
-search-facets/tag-facet.md
-search-facets/folder-facet.md
-search-facets/user-facet.md
-search-facets/modified-facet.md
-search-facets/custom-facet.md
-```
-
 # 패이셋
 
 검색창에 키워드를 입력하고 검색 버튼을 클릭합니다. 기본 검색 환경은 오른쪽에 결과가 있고 왼쪽에 **패싯** 컬렉션이 있는 페이지로 리디렉션됩니다.

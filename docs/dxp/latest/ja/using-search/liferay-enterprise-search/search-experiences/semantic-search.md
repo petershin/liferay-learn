@@ -8,13 +8,6 @@ toc:
 {bdg-secondary}`7.4 U70+`
 {bdg-link-primary}`[ベータ版特集](../../../system-administration/configuring-liferay/feature-flags.md)`
 
-```{toctree}
-:maxdepth: 1
-
-./semantic-search/setting-up-a-text-embedding-provider.md
-./semantic-search/creating-a-search-blueprint-for-semantic-search.md
-```
-
 セマンティック検索は、検索されたフレーズの背後にある意図を評価する。 一方、 **keyword** 検索は、検索されたフレーズをインデックスされたテキストフィールドにマッチさせるもので、意味に基づいてマッチさせることはできない。
 
 | 検索フレーズ     | インデックス・コンテンツ                       | マッチタイプ                               |

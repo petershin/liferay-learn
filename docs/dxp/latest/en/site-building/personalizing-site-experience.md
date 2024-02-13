@@ -14,15 +14,6 @@ uuid: 7ce0d5f8-e933-4eb3-8fe4-7588d0b00244
 ---
 # Personalizing Site Experience
 
-```{toctree}
-:maxdepth: 3
-
-personalizing-site-experience/segmentation.md
-personalizing-site-experience/experience-personalization.md
-personalizing-site-experience/migration-from-audience-targeting.md
-personalizing-site-experience/enabling-automated-live-chat-systems.md
-```
-
 Liferay DXP provides powerful tools out-of-the-box for understanding and delivering personalized experiences to users.
 
 For example, you can create [user segments](./personalizing-site-experience/segmentation/creating-and-managing-user-segments.md) and map them to different [experiences](./personalizing-site-experience/experience-personalization/creating-and-managing-experiences.md). With experiences in place, [personalize collections](./personalizing-site-experience/experience-personalization/personalizing-collections.md) and customize the way the content or the [pages](./personalizing-site-experience/experience-personalization/content-page-personalization.md) that users see. 

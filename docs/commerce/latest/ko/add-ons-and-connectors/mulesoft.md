@@ -5,13 +5,6 @@ toc:
 ---
 # 뮬소프트
 
-```{toctree}
-:maxdepth: 1
-
-mulesoft/configuring-the-mulesoft-connector.md
-mulesoft/designing-mule-flows.md
-```
-
 {bdg-primary}`구독`
 
 [Liferay Connector to MuleSoft](https://www.mulesoft.com/exchange/com.liferay/com.liferay.mule/minor/1.1/) 는 Liferay DXP를 MuleSoft 에코시스템의 다른 플랫폼 및 서비스에 연결합니다. Anypoint Studio 또는 Anypoint Design Center를 통해 커넥터에 액세스할 수 있습니다. 여기서는 커넥터 디자인의 기본 사항과 커넥터를 구성하고 기본 흐름에 맞게 설정하는 방법을 배웁니다.

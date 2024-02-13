@@ -8,16 +8,6 @@ toc:
 ---
 # カスタム発券システムの構築
 
-```{toctree}
-:maxdepth: 3
-
-building-a-custom-ticketing-system/defining-a-custom-data-schema.md
-building-a-custom-ticketing-system/applying-a-custom-theme.md
-building-a-custom-ticketing-system/deploying-a-custom-application.md
-building-a-custom-ticketing-system/implementing-a-documentation-referral-system.md
-building-a-custom-ticketing-system/ticket-management-with-cron-jobs.md
-```
-
 Liferayは、デジタルソリューションの構築を容易にします。 例えば、あなたのビジネスに必要なスタイルや機能を備えたカスタムチケットアプリケーションを作成することができます。
 
 ![See the custom ticketing system sample.](./building-a-custom-ticketing-system/images/01.png)

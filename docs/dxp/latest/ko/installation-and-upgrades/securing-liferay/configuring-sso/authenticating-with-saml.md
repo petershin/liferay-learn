@@ -9,17 +9,6 @@ toc:
 ---
 # SAML로 인증
 
-```{toctree}
-:maxdepth: 3
-
-authenticating-with-saml/saml-authentication-process-overview.md
-authenticating-with-saml/configuring-saml-at-the-system-level.md
-authenticating-with-saml/saml-admin.md
-authenticating-with-saml/importing-user-groups-memberships-from-an-external-idp-through-saml.md
-authenticating-with-saml/configuring-saml-at-the-instance-level.md
-authenticating-with-saml/saml-settings.md
-```
-
 SAML(Security Assertion Markup Language) 어댑터는 배포에서 SSO(Single Sign On) 및 SLO(Single Log Off)를 제공합니다. SAML은 ID 공급자(IdP) 및 서비스 공급자(SP)를 사용하여 작동합니다.
 
 **ID 공급자:** 사용자가 다른 웹사이트에 액세스할 수 있도록 싱글 사인온을 제공하는 신뢰할 수 있는 시스템입니다.

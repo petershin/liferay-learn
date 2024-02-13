@@ -9,19 +9,6 @@ toc:
 ---
 # 플랫폼 서비스
 
-```{toctree}
-:maxdepth: 2
-
-platform-services/continuous-integration.md
-platform-services/search-service.md
-platform-services/web-server-service.md
-platform-services/using-a-custom-service.md
-
-platform-services/backup-service.md
-
-platform-services/database-service.md
-```
-
 * [지속적인 통합](./platform-services/continuous-integration.md)
 * [검색 서비스](./platform-services/search-service.md)
 * [웹 서버 서비스](./platform-services/web-server-service.md)

@@ -24,25 +24,6 @@ uuid: faecb735-7bbf-4469-a702-fdda8a1b1427
 ---
 # Developing Page Fragments
 
-```{toctree}
-:maxdepth: 3
-
-developing-page-fragments/developing-fragments-intro.md
-developing-page-fragments/using-the-fragments-editor.md
-developing-page-fragments/using-the-fragments-toolkit.md
-developing-page-fragments/adding-configuration-options-to-fragments.md
-developing-page-fragments/best-practices-for-using-fragment-configurations.md
-developing-page-fragments/applying-styles-to-fragments.md
-developing-page-fragments/defining-fragment-drop-zones.md
-developing-page-fragments/using-custom-fields-in-page-fragments.md
-developing-page-fragments/creating-a-contributed-fragment-set.md
-developing-page-fragments/validating-fragment-configurations.md
-developing-page-fragments/auto-deploying-fragments.md
-developing-page-fragments/including-default-resources-with-fragments.md
-developing-page-fragments/setting-the-order-of-elements-in-a-fragment.md
-developing-page-fragments/creating-form-fragments.md
-```
-
 - [Developing Fragments](./developing-page-fragments/developing-fragments-intro.md)
 - [Using the Fragments Editor](./developing-page-fragments/using-the-fragments-editor.md)
 - [Using the Fragments Toolkit](./developing-page-fragments/using-the-fragments-toolkit.md)

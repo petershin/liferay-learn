@@ -15,16 +15,6 @@ uuid: 1f7c92d4-7a5f-4b7d-883e-073b839c2402
 ---
 # Experience Personalization
 
-```{toctree}
-:maxdepth: 3
-
-experience-personalization/content-page-personalization.md
-experience-personalization/creating-and-managing-experiences.md
-experience-personalization/personalizing-collections.md
-experience-personalization/understanding-content-recommendations.md
-experience-personalization/configuring-content-recommendations.md
-```
-
 ::::{grid} 2
 :gutter: 3 3 3 3
 

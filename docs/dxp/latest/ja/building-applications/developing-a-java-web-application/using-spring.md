@@ -4,12 +4,6 @@ toc:
 ---
 # Springの使用
 
-```{toctree}
-:maxdepth: 3
-
-using-spring/reference.md
-```
-
 PortletMVC4Springは、Spring FrameworkとModel View Controller（MVC）パターンを使用してポートレットを開発する方法です。 Spring FrameworkはSpring Web MVCを使用したサーブレットベースのWebアプリケーションの開発をサポートしていますが、PortletMVC4SpringはMVCを使用したポートレットベースのアプリケーションの開発をサポートしています。 PortletMVC4Springのトピックは次のとおりです。
 
 * [PortletMVC4Spring \(Help Center\)](https://help.liferay.com/hc/ja/articles/360029850931-PortletMVC4Spring) では、PortletMVC4Springについて紹介し、サンプルプロジェクトを提供しています。

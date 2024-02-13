@@ -4,12 +4,6 @@ toc:
 ---
 # Salesforce
 
-```{toctree}
-:maxdepth: 1
-
-salesforce/liferay-connector-to-salesforce.md
-```
-
 ```{raw} html
 :file: ../landingpage_template.html
 ```

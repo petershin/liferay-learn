@@ -6,14 +6,6 @@ toc:
 ---
 # 사용자 데이터 관리(GDPR)
 
-```{toctree}
-:maxdepth: 3
-
-managing-user-data/exporting-user-data.md
-managing-user-data/sanitizing-user-data.md
-managing-user-data/configuring-the-anonymous-user.md
-```
-
 Liferay의 UAD(사용자 관련 데이터) 프레임워크는 GDPR(일반 데이터 보호 규정)의 기술적으로 까다로운 두 가지 요구 사항을 충족하는 데 도움이 됩니다.
 
 - 데이터 이식성에 대한 [권리](./managing-user-data/exporting-user-data.md)

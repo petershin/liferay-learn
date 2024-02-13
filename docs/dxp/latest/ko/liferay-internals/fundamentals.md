@@ -11,19 +11,6 @@ toc:
 ---
 # 기초
 
-```{toctree}
-:maxdepth: 3
-
-fundamentals/module-projects.md
-fundamentals/apis-as-osgi-services.md
-fundamentals/using-an-osgi-service.md
-fundamentals/importing-packages.md
-fundamentals/exporting-packages.md
-fundamentals/semantic-versioning.md
-fundamentals/configuring-dependencies.md
-fundamentals/using-the-gogo-shell.md
-```
-
 Liferay 개발 프로젝트는 주로 간단한 .jar 파일로 구성됩니다. 여기에는 OSGi 모듈을 만드는 몇 가지 추가 구성 파일이 포함되어 있지만 Java를 아는 사람이라면 누구나 쉽게 이해할 수 있습니다.
 
 OSGi의 강력한 기능 중 하나는 DXP의 API에 액세스하고 다양한 기능을 확장 및 재정의하거나 배포를 위해 새 소프트웨어를 패키징하는 프로젝트를 구축하는 일관된 단일 방법이 있다는 것입니다. 이러한 프로젝트 또는 모듈은 기능에 대해 서로 의존하고 런타임에 조작할 수 있는 에코시스템을 형성합니다.

@@ -7,15 +7,6 @@ toc:
 ---
 # 안정성 및 성능 업그레이드
 
-```{toctree}
-:maxdepth: 2
-
-upgrade-stability-and-performance/database-tuning-for-upgrades.md
-upgrade-stability-and-performance/database-pruning-for-faster-upgrades.md
-upgrade-stability-and-performance/example-removing-intermediate-journal-article-versions.md
-upgrade-stability-and-performance/upgrading-modules-using-gogo-shell.md
-```
-
 프로덕션 릴리스를 위해 DXP 인스턴스를 업그레이드하는 경우 데이터 업그레이드를 정확하고 신속하게 수행해야 합니다. 다음은 성공을 보장하는 몇 가지 방법입니다:
 
 * 데이터베이스 및 설치 복사본을 사용하는 테스트 환경 만들기

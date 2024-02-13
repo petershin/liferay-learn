@@ -4,12 +4,6 @@ toc:
 ---
 # 알림 및 요청
 
-```{toctree}
-:maxdepth: 2
-
-notifications-and-requests/user-guide.md
-```
-
 사용자 설명서
 ------------
 

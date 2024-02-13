@@ -12,13 +12,6 @@ taxonomy-category-names:
 ---
 # Message Boards
 
-```{toctree}
-:maxdepth: 2
-
-message-boards/user-guide.md
-message-boards/developer-guide.md
-```
-
 User Guide
 
 * [Getting Started with Message Boards](.//message-boards/user-guide/getting-started-with-message-boards.md)

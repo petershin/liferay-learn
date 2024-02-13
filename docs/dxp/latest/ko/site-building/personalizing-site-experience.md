@@ -7,15 +7,6 @@ toc:
 ---
 # 사이트 경험 개인화
 
-```{toctree}
-:maxdepth: 3
-
-personalizing-site-experience/segmentation.md
-personalizing-site-experience/experience-personalization.md
-personalizing-site-experience/migration-from-audience-targeting.md
-personalizing-site-experience/enabling-automated-live-chat-systems.md
-```
-
 Liferay DXP는 사용자에게 개인화된 경험을 이해하고 제공하기 위한 강력한 도구를 즉시 제공합니다.
 
 예를 들어, [사용자 세그먼트](./personalizing-site-experience/segmentation/creating-and-managing-user-segments.md) 생성하고 이를 다른 [경험](./personalizing-site-experience/experience-personalization/creating-and-managing-experiences.md) 에 매핑할 수 있습니다. 경험을 바탕으로 [컬렉션을 개인화하고](./personalizing-site-experience/experience-personalization/personalizing-collections.md) 사용자가 보는 콘텐츠 또는 페이지 [방식](./personalizing-site-experience/experience-personalization/content-page-personalization.md) 맞춤화합니다.

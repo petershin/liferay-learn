@@ -13,14 +13,6 @@ taxonomy-category-names:
 ---
 # Understanding Object Integrations
 
-```{toctree}
-:maxdepth: 3
-
-understanding-object-integrations/permissions-framework-integration.md
-understanding-object-integrations/using-custom-object-apis.md
-understanding-object-integrations/assets-framework-integration.md
-```
-
 Published custom objects are integrated with Liferay's core frameworks, so you can leverage Liferay's features to build unified experiences across the platform. This chart provides an overview of how Objects leverages these integrations.
 
 | Framework                  | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |

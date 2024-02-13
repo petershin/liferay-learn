@@ -12,20 +12,6 @@ toc:
 ---
 # 公開
 
-```{toctree}
-:maxdepth: 3
-
-publications/enabling-publications.md
-publications/creating-and-managing-publications.md
-publications/using-publication-templates.md
-publications/making-and-publishing-changes.md
-publications/using-workflow-with-publications.md
-publications/collaborating-on-publications.md
-publications/resolving-conflicts.md
-publications/reverting-changes.md
-publications/publications-permissions.md
-```
-
 {bdg-secondary}`liferay DXP/Portal 7.3+`.
 
 **Publications** を使用して、DXPインスタンス全体の変更を開発、追跡、公開できます。 これは、データベース列を作成して、本番環境のサイトに表示されるコンテンツのバージョンを決定することによって機能します。 これを使えば、ユーザーは自分の変更を公開可能なブロックにグループ化するために、個別の **公開** を作成することができます。

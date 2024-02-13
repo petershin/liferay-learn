@@ -11,13 +11,6 @@ taxonomy-category-names:
 ---
 # Using the Gogo Shell
 
-```{toctree}
-:maxdepth: 3
-
-using-the-gogo-shell/command-line-gogo-shell.md
-using-the-gogo-shell/gogo-shell-commands.md
-```
-
 The Gogo shell provides a way to interact with the module framework. Among other things, you can
 
 * Dynamically install/uninstall bundles (modules)

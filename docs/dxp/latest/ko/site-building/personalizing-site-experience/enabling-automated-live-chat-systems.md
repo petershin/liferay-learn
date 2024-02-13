@@ -4,12 +4,6 @@ toc:
 ---
 # 자동화된 라이브 채팅 시스템 활성화
 
-```{toctree}
-:maxdepth: 3
-
-enabling-automated-live-chat-systems/getting-a-chat-provider-account-id.md
-```
-
 {bdg-secondary}`liferay 7.4+`
 
 Liferay는 이제 다양한 실시간 지원 채팅 플랫폼과의 통합을 제공합니다. 이 통합을 활성화하면 Liferay 인스턴스의 사이트에 채팅 창이 추가되고 이를 사용하여 사용자에 대한 향상된 지원 및 사이트 경험을 제공할 수 있습니다.

@@ -13,12 +13,6 @@ taxonomy-category-names:
 ---
 # APIs with REST Builder
 
-```{toctree}
-:maxdepth: 3
-
-apis-with-rest-builder/producing-and-implementing-apis-with-rest-builder.md
-```
-
 REST Builder is a code generation tool that makes it easy for you to take your local APIs and make them available on the web. It uses the [OpenAPI Specification](https://www.openapis.org/) to generate REST and [GraphQL](https://graphql.org/) APIs.
 
 REST Builder uses the configuration you define in `rest-config.yaml` and `rest-openapi.yaml` files to generate most of the code necessary for your API to work all at once. You configure class names and where to put the code, and REST Builder generates all of the necessary files. Then you add your implementation logic. 

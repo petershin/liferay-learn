@@ -15,23 +15,6 @@ toc:
 ---
 # 클레이 태그 라이브러리
 
-```{toctree}
-:maxdepth: 3
-
-clay-tag-library/clay-alerts.md
-clay-tag-library/clay-badges.md
-clay-tag-library/clay-buttons.md
-clay-tag-library/clay-cards.md
-clay-tag-library/clay-dropdown-and-action-menus.md
-clay-tag-library/clay-form-elements.md
-clay-tag-library/clay-icons.md
-clay-tag-library/clay-links-and-labels.md
-clay-tag-library/clay-management-toolbar.md
-clay-tag-library/clay-navigation-bars.md
-clay-tag-library/clay-progress-bars.md
-clay-tag-library/clay-stickers.md
-```
-
 Liferay Clay 태그 라이브러리는 앱에서 [Clay](https://clayui.com/) UI 구성요소를 생성하기 위한 태그 세트를 제공합니다.
 
 ```{note}

@@ -6,14 +6,6 @@ toc:
 ---
 # 머리글 및 바닥글 정의
 
-```{toctree}
-:maxdepth: 3
-
-defining-headers-and-footers/master-page-templates.md
-defining-headers-and-footers/creating-a-master-page-template.md
-defining-headers-and-footers/managing-master-page-templates.md
-```
-
 ::::{grid} 2
 :gutter: 3 3 3 3
 

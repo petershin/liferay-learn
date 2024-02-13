@@ -8,16 +8,6 @@ toc:
 ---
 # Liferay Enterprise Search
 
-```{toctree}
-:maxdepth: 4
-
-liferay-enterprise-search/activating-liferay-enterprise-search.md
-liferay-enterprise-search/cross-cluster-replication.md
-liferay-enterprise-search/learning-to-rank.md
-liferay-enterprise-search/monitoring-elasticsearch.md
-liferay-enterprise-search/search-experiences.md
-```
-
 Liferay 엔터프라이즈 검색(LES) 구독은 Liferay DXP 구독으로 즉시 사용할 수 있는 것 이상의 추가 검색 기능에 대한 액세스를 제공합니다. Liferay DXP 버전에서 LES에 포함된 서비스 및 기능에 대한 자세한 설명을 보려면 [Liferay DXP 구성 요소 리소스](https://help.liferay.com/hc/ko/articles/360014400932) 에서 LES에 대한 공식 설명을 참조하십시오. LES는 기본적으로 설치되지만 해당 기능을 사용하려면 라이선스가 필요합니다. 활성화 문서에 자세한 내용이 있습니다.
 
 * [Liferay 엔터프라이즈 검색 활성화](liferay-enterprise-search/activating-liferay-enterprise-search.md)

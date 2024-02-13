@@ -6,14 +6,6 @@ toc:
 ---
 # Webサービスの保護
 
-```{toctree}
-:maxdepth: 2
-
-securing-web-services/setting-service-access-policies.md
-securing-web-services/using-authentication-verifiers.md
-securing-web-services/setting-up-cors.md
-```
-
 Liferay DXPは、Webサービスに4つのセキュリティレイヤーを提供しています。
 
 **IP許可レイヤー。** Webサービス呼び出し要求の発信元IPアドレスは、ポータルのプロパティファイルでホワイトリスト化する必要があります。 ホワイトリストに登録されていないIPアドレスからのWebサービス呼び出しは、自動的に失敗します。

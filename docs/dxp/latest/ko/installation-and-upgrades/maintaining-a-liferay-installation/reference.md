@@ -8,16 +8,6 @@ toc:
 ---
  # 참조
 
-```{toctree}
-:maxdepth: 3
-
-reference/installing-the-patching-tool.md
-reference/configuring-the-patching-tool.md
-reference/getting-patch-information.md
-reference/uninstalling-patches.md
-reference/accessing-dxp-patch-code.md
-```
-
 * [패치 도구 설치](./reference/installing-the-patching-tool.md)
 * [패치 도구 구성](./reference/configuring-the-patching-tool.md)
 * [패치 정보 얻기](./reference/getting-patch-information.md)

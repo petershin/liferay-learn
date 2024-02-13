@@ -10,13 +10,6 @@ myst:
 
 Poshiのテスト作成者がよく使う関数や他のファイルに簡単にアクセスできるように、既存のPoshiファイルを依存ファイルとして保存し、ファイルシステム上の`*.path`、 `*.macro`、 `*.testcase`とは別にロードできる Poshiリソースが作成されました。
 
-```{toctree}
-:maxdepth: 3
-
-poshi-resources/configuration.md
-poshi-resources/using-poshi-resources.md
-```
-
 ::::{grid} 1
 :gutter: 3 3 3 3
 

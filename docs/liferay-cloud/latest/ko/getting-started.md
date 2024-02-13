@@ -10,18 +10,6 @@ toc:
 ---
 # 시작하기
 
-```{toctree}
-:maxdepth: 1
-
-getting-started/initial-setup-overview.md
-getting-started/development-requirements.md
-getting-started/configuring-your-github-repository.md
-getting-started/configuring-your-bitbucket-repository.md
-getting-started/configuring-your-gitlab-repository.md
-getting-started/logging-into-your-liferay-cloud-services.md
-getting-started/understanding-liferay-cloud-environments.md
-```
-
 Liferay Cloud는 Liferay DXP에서 놀라운 애플리케이션을 단순화, 보안 및 제공하는 데 필요한 인프라와 도구를 제공하는 안전하고 안정적인 엔터프라이즈 클라우드 플랫폼입니다.
 
 다음을 제공하는 플랫폼으로 걱정은 덜고 더 많이 구축하십시오.

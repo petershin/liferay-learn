@@ -5,13 +5,6 @@ toc:
 ---
 # 검색창 제안
 
-```{toctree}
-:maxdepth: 2
-
-search-bar-suggestions/configuring-search-bar-suggestions.md
-search-bar-suggestions/search-bar-suggestions-blueprints.md
-```
-
 `{bdg-secondary}`7.4 U36+ 및 GA36+`
 
 Liferay의 검색창 제안은 **입력과 동시에 검색** 기능을 제공합니다. 검색 창 위젯에 검색 키워드를 입력하면 검색 엔진이 쿼리를 처리하고 결과가 드롭다운 목록에 반환됩니다. 목록에서 결과 중 하나를 클릭하거나 돋보기 아이콘을 클릭하거나 Enter 키를 눌러 검색 결과 위젯에서 결과를 확인하여 평소대로 검색을 실행할 수 있습니다.

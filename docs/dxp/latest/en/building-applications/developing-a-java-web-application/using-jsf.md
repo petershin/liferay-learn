@@ -10,12 +10,6 @@ taxonomy-category-names:
 ---
 # Using JSF
 
-```{toctree}
-:maxdepth: 3
-
-using-jsf/reference.md
-```
-
 Liferay Faces is an umbrella project that provides support for the
 JavaServer&#8482; Faces (JSF) standard in Liferay DXP/Portal. Here are the Liferay Faces topics:
 

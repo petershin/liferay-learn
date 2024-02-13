@@ -8,16 +8,6 @@ toc:
 ---
 # コンテントページの使用
 
-```{toctree}
-:maxdepth: 3
-
-using-content-pages/adding-elements-to-content-pages.md
-using-content-pages/managing-content-in-content-pages.md
-using-content-pages/using-widgets-on-a-content-page.md
-using-content-pages/using-page-comments.md
-using-content-pages/content-page-editor-ui-reference.md
-```
-
 デフォルトでは、Liferay DXPはコンテンツページタイプを使用し、ページのコンテンツとデザインを管理・編集するための便利なユーザーインターフェースを提供します。 コンテンツページでは、設定可能なドラッグ＆ドロップ要素をすぐに使用したり、独自の要素を開発したりして、希望するユーザーエクスペリエンスを作り出すことができます。
 
 他のページタイプと同様に、 [ウィジェット](./using-content-pages/using-widgets-on-a-content-page.md) を使って、コンテンツページに動的な機能を追加し、ブログ、ウィキ、掲示板などを統合することができます。 コンテンツ・ページは主に [ページ・フラグメント](./page-fragments-and-widgets/using-fragments.md)を使って構築される。 ページ・フラグメントは拡張可能で再利用可能なページ要素で、テキスト、画像、リンクなどの編集可能なコンポーネントを含み、利用可能なコンテンツにマッピングすることもできます。 DXPのすぐに使えるフラグメントについては、 [デフォルトのフラグメントリファレンス](./page-fragments-and-widgets/using-fragments/default-fragments-reference.md) を、独自のフラグメントを作成する方法については、 [フラグメントの開発](../developer-guide/developing-page-fragments/developing-fragments-intro.md) を参照してください。

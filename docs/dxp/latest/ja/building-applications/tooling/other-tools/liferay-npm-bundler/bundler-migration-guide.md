@@ -7,15 +7,6 @@ toc:
 ---
 # バンドラー移行ガイド
 
-```{toctree}
-:maxdepth: 3
-
-bundler-migration-guide/migrating-bundler-projects-intro.md
-bundler-migration-guide/migrating-angular-bundler.md
-bundler-migration-guide/migrating-plain-js-billboard-jquery-metal-js-react-vue-bundler.md
-bundler-migration-guide/migrating-to-the-new-mode.md
-```
-
 ::::{grid} 2
 :gutter: 3 3 3 3
 

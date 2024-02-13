@@ -7,15 +7,6 @@ toc:
 ---
 # 종속성 구성
 
-```{toctree}
-:maxdepth: 3
-
-configuring-dependencies/finding-artifacts.md
-configuring-dependencies/specifying-dependencies.md
-configuring-dependencies/resolving-third-party-library-package-dependencies.md
-../../building-applications/reference/jars-excluded-from-wabs.md
-```
-
 Liferay는 모듈이 Java 패키지를 통해 기능을 게시하고 사용할 수 있는 컨테이너를 제공합니다. 모듈은 종속성으로 구성하여 다른 모듈이나 기존 라이브러리의 패키지를 활용할 수 있습니다. 여기서는 아티팩트(모듈 또는 라이브러리)를 찾고 이에 대한 종속성을 구성하는 방법을 알아봅니다.
 
 * [아티팩트 찾기](./configuring-dependencies/finding-artifacts.md) 에서는 애플리케이션 관리자, Gogo Shell 및 Liferay 참조 문서를 사용하여 Liferay에 배포되고 리포지토리에서 사용 가능한 아티팩트를 찾는 방법을 설명합니다.

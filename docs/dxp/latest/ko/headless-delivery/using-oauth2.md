@@ -7,15 +7,6 @@ toc:
 ---
 # OAuth 2.0 사용
 
-```{toctree}
-:maxdepth: 3
-
-using-oauth2/creating-oauth2-applications.md
-using-oauth2/authorizing-account-access-with-oauth2.md
-using-oauth2/oauth2-scopes.md
-using-oauth2/using-oauth2-to-authorize-users.md
-```
-
 OAuth 2.0은 업계 표준 인증 프로토콜입니다. 사용자는 Liferay 기반 웹사이트에서 선택한 자격 증명을 다양한 클라이언트와 원활하게 공유할 수 있습니다. OAuth 2.0은 사용자 소유 리소스(예: 이메일 주소, 사용자 프로필 사진 또는 계정의 다른 항목) 및 기타 허가된 리소스에 대한 암호 없는 액세스 권한을 부여하여 작동합니다. OAuth 2.0의 디자인은 HTTPS를 통한 모든 인증 전송을 암호화하여 시스템 간에 전달되는 데이터가 가로채는 것을 방지합니다.
 
 OAuth 2.0 앱 만들기로 바로 이동하거나 작동 방식을 알아보기 위해 계속 읽을 수 있습니다.

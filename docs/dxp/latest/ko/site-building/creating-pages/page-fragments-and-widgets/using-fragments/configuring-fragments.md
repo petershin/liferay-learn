@@ -8,16 +8,6 @@ toc:
 ---
 # 조각 구성
 
-```{toctree}
-:maxdepth: 3
-
-configuring-fragments/general-settings-reference.md
-configuring-fragments/styles-reference.md
-configuring-fragments/advanced-settings-reference.md
-configuring-fragments/fragment-sub-elements-reference.md
-configuring-fragments/localizing-fragment-configuration-fields.md
-```
-
 조각과 해당 하위 요소를 구성할 수 있습니다. 사용 가능한 옵션은 다양할 수 있지만 일부는 모두에게 공통적입니다. 사용 가능한 구성 옵션을 보려면 페이지 또는 템플릿 편집을 시작하고 사이드바 메뉴에서 **브라우저** 패널(![Browser](../../../../images/icon-hierarchy.png))을 엽니다. 그런 다음 구성할 조각 또는 하위 요소를 클릭합니다. 사용 가능한 구성 옵션은 일반, 스타일, 고급의 세 가지 탭에 나타납니다.
 
 ![Available configuration options are grouped into three tabs.](./configuring-fragments/images/01.png)

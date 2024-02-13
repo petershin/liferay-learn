@@ -1,12 +1,5 @@
 # デザインとテーマ
 
-```{toctree}
-:maxdepth: 1
-
-ページレイアウトを理解する<https://help.liferay.com/hc/en-us/articles/360022488271-Understanding-the-Page-Layout->
-テーマリファレンスガイド<https://help.liferay.com/hc/en-us/articles/360017901512-Theme-Reference-Guide>
-```
-
 ```{raw} html
 :file: ../landingpage_template.html
 ```

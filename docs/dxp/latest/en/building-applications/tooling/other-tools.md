@@ -12,12 +12,6 @@ taxonomy-category-names:
 ---
 # Other Tools
 
-```{toctree}
-:maxdepth: 4
-other-tools/liferay-cli-tool.md
-other-tools/liferay-npm-bundler.md
-```
-
 * [Liferay CLI Tool](./other-tools/liferay-cli-tool.md)
 
 ## Liferay npm Bundler

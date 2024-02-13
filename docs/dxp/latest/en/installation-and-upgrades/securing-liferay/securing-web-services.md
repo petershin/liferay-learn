@@ -12,14 +12,6 @@ taxonomy-category-names:
 ---
 # Securing Web Services
 
-```{toctree}
-:maxdepth: 2
-
-securing-web-services/setting-service-access-policies.md
-securing-web-services/using-authentication-verifiers.md
-securing-web-services/setting-up-cors.md
-```
-
 Liferay DXP provides four security layers for web services:
 
 **IP permission layer:** The IP address from which a web service invocation request originates must be white-listed in the portal properties file. A web service invocation coming from a non-whitelisted IP address automatically fails.

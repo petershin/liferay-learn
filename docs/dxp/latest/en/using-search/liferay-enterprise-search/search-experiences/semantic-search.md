@@ -16,13 +16,6 @@ uuid: e305b83d-913c-497f-8760-6a9c0ecc87f3
 {bdg-secondary}`7.4 U70+`
 {bdg-link-primary}`[Beta Feature](../../../system-administration/configuring-liferay/feature-flags.md)`
 
-```{toctree}
-:maxdepth: 1
-
-./semantic-search/setting-up-a-text-embedding-provider.md
-./semantic-search/creating-a-search-blueprint-for-semantic-search.md
-```
-
 _Semantic_ search evaluates the intent behind a searched phrase. Meanwhile, a _keyword_ search matches a searched phrase to the indexed text fields, and cannot produce a match based on meaning.
 
 | Searched Phrase | Indexed Content | Match Type |

@@ -5,13 +5,6 @@ toc:
 ---
 # 클러스터된 설치 유지
 
-```{toctree}
-:maxdepth: 3
-
-maintaining-clustered-installations/rolling-restarts.md
-maintaining-clustered-installations/blue-green-deployments.md
-```
-
 [클러스터](../setting-up-liferay/clustering-for-high-availability.md) 에서 작동하도록 Liferay DXP 설치를 설정하면 성능 및 확장성이 향상되지만 적절하게 지원하고 유지하려면 추가 고려 사항이 필요합니다. 여기에는 신규 및 업데이트된 플러그인 및 모듈 배포, [패치 및 수정팩 설치](./patching-dxp-7-3-and-earlier.md), 구성 변경 등이 포함됩니다. Liferay DXP 클러스터 유지 관리 방법은 서버 가동 시간을 최대화하고 서버 유지 관리에 대한 위험을 최소화합니다. Liferay DXP는 표준 클러스터 유지 관리 기술 사용을 지원합니다.
 
 * [롤링 재시작](./maintaining-clustered-installations/rolling-restarts.md): 노드가 한 번에 하나씩 종료되고 업데이트됩니다.

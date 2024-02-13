@@ -8,16 +8,6 @@ toc:
 ---
 # 결제 수단 구성
 
-```{toctree}
-:maxdepth: 1
-
-configuring-payment-methods/managing-payment-methods.md
-configuring-payment-methods/authorize-net.md
-configuring-payment-methods/mercanet.md
-configuring-payment-methods/money-orders.md
-configuring-payment-methods/paypal.md
-```
-
 결제는 결제 수단을 통해 처리됩니다. 세 가지 유형의 지불 방법이 있습니다.
 
 **오프라인** : Liferay Commerce가 결제를 처리하지 않습니다.

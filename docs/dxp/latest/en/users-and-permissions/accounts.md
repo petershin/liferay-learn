@@ -17,18 +17,6 @@ taxonomy-category-names:
 ---
 # Accounts
 
-```{toctree}
-:maxdepth: 3
-
-accounts/account-users.md
-accounts/account-addresses.md
-accounts/account-groups.md
-accounts/account-roles.md
-accounts/account-management-widget.md
-accounts/using-workflow-with-accounts.md
-accounts/channel-defaults.md
-```
-
 {bdg-secondary}`Available 7.4+`
 
 Accounts provide administrators with a way to organize and manage users for various commerce or business needs. Unlike [organizations](./organizations.md) or [user groups](./user-groups.md), accounts help facilitate interactions that might take place in business situations such as the purchasing of goods and services or managing existing customers.

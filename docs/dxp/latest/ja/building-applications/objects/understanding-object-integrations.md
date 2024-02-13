@@ -6,14 +6,6 @@ toc:
 ---
 # オブジェクト統合を理解する
 
-```{toctree}
-:maxdepth: 3
-
-understanding-object-integrations/permissions-framework-integration.md
-understanding-object-integrations/using-custom-object-apis.md
-understanding-object-integrations/assets-framework-integration.md
-```
-
 公開されたカスタムオブジェクトはLiferayのコアフレームワークと統合されているため、Liferayの機能を活用してプラットフォーム全体で統一されたエクスペリエンスを構築できます。 下表は、オブジェクトがこうした統合をどのように活用するかの概要を示しています。
 
 | フレームワーク        | 説明                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |

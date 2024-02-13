@@ -13,12 +13,5 @@ taxonomy-category-names:
 ---
 # Optimization
 
-```{toctree}
-:maxdepth: 3
-
-optimization/a-b-testing.md
-optimization/personalizing-content-with-segments.md
-```
-
 - [A/B Testing](./optimization/a-b-testing.md)
 - [Personalizing Content with Segments](./optimization/personalizing-content-with-segments.md)

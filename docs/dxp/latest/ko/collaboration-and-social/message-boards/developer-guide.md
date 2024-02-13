@@ -4,9 +4,4 @@ toc:
 ---
 # 개발자 가이드
 
-```{toctree}
-:maxdepth: 2
-developer-guide/message-boards-api-basics.md
-```
-
 * [메시지 보드 API 기본 사항](./developer-guide/message-boards-api-basics.md)

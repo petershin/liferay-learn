@@ -17,17 +17,6 @@ taxonomy-category-names:
 ---
 # Configuring Shipping Methods
 
-```{toctree}
-:maxdepth: 1
-
-configuring-shipping-methods/using-the-fedex-shipping-method.md
-configuring-shipping-methods/using-the-flat-rate-shipping-method.md
-configuring-shipping-methods/using-the-variable-rate-shipping-method.md
-configuring-shipping-methods/applying-shipping-method-restrictions.md
-configuring-shipping-methods/measurement-units.md
-configuring-shipping-methods/shipping-method-reference.md
-```
-
 Liferay Commerce supports several shipping methods and carriers. Before choosing any shipping method, verify the [Measurement Units](./configuring-shipping-methods/measurement-units.md) that the store will use.
 
 Here are several shipping methods:

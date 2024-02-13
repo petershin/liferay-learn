@@ -11,18 +11,6 @@ toc:
 
 # アカウント管理
 
-```{toctree}
-:maxdepth: 3
-
-account-management/creating-a-new-account.md
-account-management/inviting-users-to-an-account.md
-account-management/adding-addresses-to-an-account.md
-account-management/account-roles.md
-account-management/creating-a-new-account-group.md
-account-management/using-organizations-to-create-a-sales-network.md
-account-management/adding-organizations-to-accounts.md
-```
-
 Liferay Commerceでは、アカウントは、請求先住所や配送先住所、注文の詳細、VAT番号などの顧客情報を保存するために使用されます。 一度作成したアカウントは、共通の基準（例：地理的地域）に基づいてグループに分類することができます。 これらのアカウントグループは、特定の価格表、プロモーション、および割引を対象とする顧客をターゲットするために使用できます。
 
 ## アカウント タイプ

@@ -14,14 +14,6 @@ uuid: 2b8ce2bf-6358-4e6f-941a-cb1c847515f8
 
 # Site Membership
 
-```{toctree}
-:maxdepth: 4
-
-site-membership/adding-members-to-sites.md
-site-membership/inviting-members-to-your-site.md
-site-membership/creating-teams-for-sites.md
-```
-
 Being a member of a site grants users access and abilities beyond an unauthenticated guest user. These key benefits come with site membership:
 
 * Site members have more permissions than guests for many widgets like message boards and wikis that enable them to create content and collaborate on your site.

@@ -9,17 +9,6 @@ toc:
 ---
 # Liferay 프런트엔드 태그 라이브러리
 
-```{toctree}
-:maxdepth: 3
-
-liferay-frontend-tag-library/liferay-frontend-add-menu.md
-liferay-frontend-tag-library/liferay-frontend-cards.md
-liferay-frontend-tag-library/liferay-frontend-info-bar.md
-liferay-frontend-tag-library/liferay-frontend-management-bar.md
-liferay-frontend-tag-library/including-actions-in-the-management-bar.md
-liferay-frontend-tag-library/disabling-the-management-bar.md
-```
-
 Liferay 프런트 엔드 태그 라이브러리는 앱에서 공통 프런트 엔드 UI 구성 요소를 만들기 위한 태그 세트를 제공합니다.
 
 앱에서 프런트 엔드 taglib를 사용하려면 JSP에 다음 선언을 추가합니다.

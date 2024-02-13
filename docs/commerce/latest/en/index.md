@@ -18,10 +18,6 @@ uuid: 7e5ff1c5-105e-4021-8b5f-98b7e12ae3f5
 
 # Commerce
 
-```{toctree}
-:maxdepth: 4
-```
-
 ```{raw} html
 :file: landingpage_template.html
 ```

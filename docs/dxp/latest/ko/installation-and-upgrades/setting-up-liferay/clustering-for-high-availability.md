@@ -7,15 +7,6 @@ toc:
 ---
 # 고가용성을 위한 클러스터링
 
-```{toctree}
-:maxdepth: 3
-
-clustering-for-high-availability/example-creating-a-simple-dxp-cluster.md
-clustering-for-high-availability/database-configuration-for-cluster-nodes.md
-clustering-for-high-availability/configuring-cluster-link.md
-clustering-for-high-availability/configuring-unicast-over-tcp.md
-```
-
 Liferay DXP는 소규모 웹 사이트부터 대규모 웹 사이트까지 모든 규모에 맞게 확장할 수 있습니다. 즉시 사용 가능하며 단일 서버 환경에 최적으로 구성됩니다. 트래픽이 많을 것으로 예상되거나 사이트의 전반적인 내결함성을 개선하려는 경우 DXP를 클러스터링하는 것을 고려하세요.
 
 ![Liferay DXP는 필요한 만큼 대규모 설치로 확장할 수 있도록 설계되었습니다.](./clustering-for-high-availability/images/01.png)

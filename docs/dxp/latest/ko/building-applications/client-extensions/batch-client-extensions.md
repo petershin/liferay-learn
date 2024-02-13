@@ -10,12 +10,6 @@ toc:
 
 {bdg-secondary}`Liferay 7.4+`
 
-```{toctree}
-:maxdepth: 3
-
-batch-client-extensions/batch-yaml-configuration-reference.md
-```
-
 배치 클라이언트 확장은 Liferay의 [배치 엔진 프레임워크](../../headless-delivery/consuming-apis/batch-engine-api-basics-exporting-data.md)와 함께 작동하여 Liferay 인스턴스에 데이터 엔터티를 제공합니다. 한 인스턴스의 데이터를 내보냅니다(예: `curl` 또는 내보내기/가져오기 센터를 통해). 그런 다음 이를 배치 클라이언트 확장에 추가하고 [배포](./working-with-client-extensions.md#deploying-to-your-liferay-instance) 하여 데이터를 다른 Liferay 인스턴스로 가져옵니다.
 
 배치 클라이언트 확장과 함께 사용할 데이터를 내보내려면 애플리케이션 메뉴( ![애플리케이션 메뉴 아이콘](../../images/icon-applications-menu.png) )를 통해 내보내기/가져오기 센터를 사용할 수 있습니다. 내보내기/가져오기 센터를 활성화하려면 Liferay를 시작하기 전에 이 [포털 속성](../../installation-and-upgrades/reference/portal-properties.md) 추가하세요.

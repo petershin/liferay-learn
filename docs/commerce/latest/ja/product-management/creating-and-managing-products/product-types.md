@@ -8,16 +8,6 @@ toc:
 ---
 # 商品種類
 
-```{toctree}
-:maxdepth: 3
-
-product-types/creating-a-simple-product.md
-product-types/creating-a-grouped-product.md
-product-types/creating-a-virtual-product.md
-product-types/virtual-product-reference.md
-product-types/shop-by-diagram.md
-```
-
 コマースカタログには、シンプル、グループ化、仮想、図の4つの商品タイプが用意されています。
 
 [**シンプル商品**](./product-types/creating-a-simple-product.md) ：在庫が追跡される物理的な商品。

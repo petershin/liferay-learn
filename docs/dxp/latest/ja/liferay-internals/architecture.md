@@ -9,17 +9,6 @@ toc:
 ---
 # アーキテクチャ
 
-```{toctree}
-:maxdepth: 3
-
-architecture/liferay-classloader-hierarchy.md
-architecture/the-benefits-of-modularity.md
-architecture/osgi-and-modularity.md
-architecture/module-lifecycle.md
-architecture/bundle-classloading-flow.md
-architecture/ui-architecture.md
-```
-
 Liferay DXP/Portalのアーキテクチャには、次の3つの部分があります。
 
 1. **コア：** DXPとその[フレームワーク](../building-applications/core-frameworks.md)をブートストラップします。 コアは、サービス、UIコンポーネント、およびカスタマイゼーションを管理するためのランタイム環境を提供します。

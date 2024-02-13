@@ -6,14 +6,6 @@ toc:
 ---
 # 블레이드 CLI
 
-```{toctree}
-:maxdepth: 3
-
-blade-cli/installing-and-updating-blade-cli.md
-blade-cli/generating-projects-with-blade-cli.md
-blade-cli/troubleshooting-blade-cli.md
-```
-
 ::::{grid} 2
 :gutter: 3 3 3 3
 

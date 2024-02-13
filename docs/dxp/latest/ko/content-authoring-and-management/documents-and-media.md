@@ -9,17 +9,6 @@ toc:
 ---
 # 문서 및 미디어
 
-```{toctree}
-:maxdepth: 4
-
-documents-and-media/uploading-and-managing.md
-documents-and-media/publishing-and-sharing.md
-documents-and-media/videos.md
-documents-and-media/developer-guide.md
-documents-and-media/devops.md
-documents-and-media/documents-and-media-ui-reference.md
-```
-
 문서 및 미디어 애플리케이션은 Liferay 인스턴스에서 파일을 저장하고 관리합니다. 여기에는 문서 및 미디어에 직접 업로드된 파일과 첨부 파일을 지원하는 애플리케이션에서 업로드된 파일이 포함됩니다.
 
 업로드된 모든 파일은 지정된 [파일 저장소](../system-administration/file-storage.md)에 저장됩니다. 기본적으로 문서 및 미디어는 [단순 파일 시스템 저장소](../system-administration/file-storage/other-file-store-types/simple-file-system-store.md)사용하지만 대체 파일 저장소(예: [디비스토어](../system-administration/file-storage/other-file-store-types/dbstore.md) , [Google Cloud Store](../system-administration/file-storage/other-file-store-types/google-cloud-storage.md)또는 [Amazon S3 Store](../system-administration/file-storage/other-file-store-types/amazon-s3-store.md))를 사용하도록 인스턴스를 구성할 수 있습니다.

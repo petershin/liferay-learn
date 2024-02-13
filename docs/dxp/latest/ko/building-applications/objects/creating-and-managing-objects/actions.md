@@ -6,14 +6,6 @@ toc:
 ---
 # 액션
 
-```{toctree}
-:maxdepth: 3
-
-actions/defining-object-actions.md
-actions/understanding-action-types.md
-actions/using-manual-actions.md
-```
-
 개체 작업은 개체 항목 이벤트에 대해 수동 또는 자동으로 실행할 수 있는 사용자 정의 비즈니스 논리를 정의합니다. 예를 들어 웹후크 URL에 항목 이벤트 데이터 전달, 항목 업데이트 후 이메일 알림 보내기, 항목 생성 후 사용자 정의 Groovy 스크립트 실행 등이 있습니다.
 
 자동 트리거를 사용할 때 Liferay는 이벤트를 수신하고 미리 정의된 조건에 따라 자동으로 작업을 실행합니다.

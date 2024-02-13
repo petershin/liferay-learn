@@ -8,16 +8,6 @@ toc:
 ---
 # ページの追加
 
-```{toctree}
-:maxdepth: 3
-
-adding-pages/adding-a-page-to-a-site.md
-adding-pages/creating-a-page-template.md
-adding-pages/exporting-and-importing-page-templates.md
-adding-pages/using-the-full-page-application-page-type.md
-adding-pages/using-utility-pages.md
-```
-
 ::::{grid} 2
 :gutter: 3 3 3 3
 

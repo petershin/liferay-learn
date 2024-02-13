@@ -11,12 +11,6 @@ taxonomy-category-names:
 ---
 # Notifications and Requests
 
-```{toctree}
-:maxdepth: 2
-
-notifications-and-requests/user-guide.md
-```
-
 User Guide
 ----------
 

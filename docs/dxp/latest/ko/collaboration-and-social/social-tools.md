@@ -4,12 +4,6 @@ toc:
 ---
 # 소셜 도구
 
-```{toctree}
-:maxdepth: 2
-
-social-tools/user-guide.md
-```
-
 사용자 설명서
 ------------
 

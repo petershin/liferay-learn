@@ -6,14 +6,6 @@ toc:
 ---
 # メールを送信する
 
-```{toctree}
-:maxdepth: 1
-
-sending-emails/using-notification-templates.md
-sending-emails/configuring-the-commerce-notification-queue.md
-sending-emails/notification-template-variables-reference-guide.md
-```
-
 Liferayは、あなたのストアで起こるさまざまなイベントに対して、メール通知を送信するように設定できます。 例えば、注文担当者やその他の関係者に、注文の詳細に関する最新情報を送信することができます。 これには、注文ID、配送先住所、請求先住所、使用された支払方法などが含まれることがあります。 これを行うには、電子メールの内容とイベント・トリガーを決定する通知テンプレートを作成する必要があります。
 
 ```{note}

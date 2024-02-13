@@ -13,14 +13,6 @@ taxonomy-category-names:
 ---
 # Reference
 
-```{toctree}
-:maxdepth: 3
-
-reference/multi-factor-authentication.md
-reference/metrics-description.md
-reference/downloading-reports.md
-```
-
 - [Multi-Factor Authentication](./reference/multi-factor-authentication.md)
 - [Metrics Description](./reference/metrics-description.md)
 - [Downloading Reports](./reference/downloading-reports.md)

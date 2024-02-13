@@ -15,14 +15,6 @@ taxonomy-category-names:
 ---
 # Sending Emails
 
-```{toctree}
-:maxdepth: 1
-
-sending-emails/using-notification-templates.md
-sending-emails/configuring-the-commerce-notification-queue.md
-sending-emails/notification-template-variables-reference-guide.md
-```
-
 You can configure Liferay to send email notifications for different events that happen in your store. For example, you may want to send updates to the order manager or another person of interest with details of the order. This can include the order ID, shipping and billing addresses, the payment method used, and more. To do this, you must create a notification template that determines the email's contents and event trigger.
 
 ```{note}

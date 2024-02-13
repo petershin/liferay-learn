@@ -12,20 +12,6 @@ toc:
 ---
 # Knowledge Base
 
-```{toctree}
-:maxdepth: 2
-
-knowledge-base/creating-knowledge-base-articles.md
-knowledge-base/importing-knowledge-base-articles.md
-knowledge-base/managing-the-knowledge-base.md
-knowledge-base/knowledge-base-templates.md
-knowledge-base/responding-to-knowledge-base-feedback.md
-knowledge-base/knowledge-base-display-widget.md
-knowledge-base/other-knowledge-base-widgets.md
-knowledge-base/knowledge-base-system-settings.md
-knowledge-base/developer-guide.md
-```
-
 {bdg-secondary}`liferay 7.4 U72+/GA72+`
 
 기술 자료는 제품 문서를 작성하고 관리하기 위한 도구를 제공합니다. Liferay UI에서 기사를 작성하거나 기존 Markdown 파일을 가져올 수 있습니다. 또한 기사 구조와 콘텐츠를 표준화하기 위해 [템플릿](./knowledge-base/knowledge-base-templates.md) 을 만들 수 있습니다. [워크플로우](../process-automation/workflow/introduction-to-workflow.md) 활성화하면 기사가 게시되기 전에 승인 프로세스를 거치게 됩니다.

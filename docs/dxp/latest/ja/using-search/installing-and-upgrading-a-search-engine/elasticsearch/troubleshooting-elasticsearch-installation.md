@@ -7,13 +7,6 @@ toc:
 ---
 # Elasticsearchインストールのトラブルシューティング
 
-```{toctree}
-:maxdepth: 1
-
-troubleshooting-elasticsearch-installation/troubleshooting-the-elasticsearch-connection.md
-troubleshooting-elasticsearch-installation/troubleshooting-elasticsearch-common-issues.md
-```
-
 LiferayとElasticsearchは、多くの設定を伴う複雑なシステムです。 [この2つを接続する](./getting-started-with-elasticsearch.md)際、途中で困難にぶつかることがあります。 以下に、トラブルシューティングのテクニックを紹介します。
 
 よくある問題とその解決方法については、以下をご覧ください。

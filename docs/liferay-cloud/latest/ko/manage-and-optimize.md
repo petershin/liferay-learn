@@ -9,17 +9,6 @@ toc:
 ---
 # 관리 및 최적화
 
-```{toctree}
-:maxdepth: 1
-
-manage-and-optimize/auto-scaling.md
-manage-and-optimize/application-metrics.md
-manage-and-optimize/real-time-alerts.md
-manage-and-optimize/quotas.md
-manage-and-optimize/environment-teams-and-roles.md
-manage-and-optimize/team-activities.md
-```
-
 ## 성능 및 모니터링
 
 * [자동 크기 조정](./manage-and-optimize/auto-scaling.md)

@@ -6,14 +6,6 @@ toc:
 ---
 # テーマ開発
 
-```{toctree}
-:maxdepth: 3
-
-theme-development/getting-started.md
-theme-development/working-with-templates.md
-theme-development/bundling-resources.md
-```
-
 ::::{grid} 2
 :gutter: 3 3 3 3
 

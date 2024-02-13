@@ -14,14 +14,6 @@ taxonomy-category-names:
 ---
 # Contributing to Liferay Development
 
-```{toctree}
-:maxdepth: 3
-
-contributing-to-liferay-development/fixing-a-bug-or-contributing-a-new-feature.md
-contributing-to-liferay-development/building-liferay-source.md
-contributing-to-liferay-development/organizing-the-source.md
-```
-
 * [Fixing a Bug or Contributing a New Feature](./contributing-to-liferay-development/fixing-a-bug-or-contributing-a-new-feature.md)
 * [Building Liferay Source](./contributing-to-liferay-development/building-liferay-source.md)
 * [Organizing the Source](./contributing-to-liferay-development/organizing-the-source.md)

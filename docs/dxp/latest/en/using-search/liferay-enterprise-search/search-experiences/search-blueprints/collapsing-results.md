@@ -12,16 +12,19 @@ uuid: 46e00046-f0b0-4700-b73f-6d75d914800d
 
 {bdg-secondary}`Liferay DXP 2023.Q4+`
 
-You can collapse search results with an identical keyword field value. For example, an internal blog titled "Employee of the Month" could produce multiple identically titled search results. To collapse all secondary results into the best matching result, use the `collapse` configuration. See Elasticsearch's [Collapse Search Results](https://www.elastic.co/guide/en/elasticsearch/reference/current/collapse-search-results.html) for details on how the feature works.
+You can collapse search results with an identical keyword field value. For example, an internal blog titled "Employee of the Month" could produce multiple identically titled search results. To To collapse all secondary results into the best matching result, use the `collapse` configuration. See Elasticsearch's [Collapse Search Results](https://www.elastic.co/guide/en/elasticsearch/reference/current/collapse-search-results.html) for details on how the feature works.
 
 ![There are multiple blogs about the employee of the month.](./collapsing-results/images/01.png)
 
-There are a couple things to note when deciding to use the collapse feature:
+Liferay's default indexer clauses can interfere with attempts to collapse results by the title field. If you experience this in testing, [disable the search framework indexer clauses](./creating-and-managing-search-blueprints.md#advanced-configuring-query-clause-contributors) in the blueprint and construct the query from scratch. For example, add the _Text Match Over Multiple Fields_ element into the blueprint.
 
-1. Liferay's default indexer clauses can interfere with attempts to collapse results by the title field. If you experience this in testing, [disable the search framework indexer clauses](./creating-and-managing-search-blueprints.md#advanced-configuring-query-clause-contributors) in the blueprint and construct the query from scratch. For example, add the _Text Match Over Multiple Fields_ element into the blueprint.
-1. The results count remains the count from the original search response before the collapse was applied. Therefore, collapsing results causes inaccurate result counts and pagination will not work as expected.
+The results count remains the count from the original search response before the collapse was applied. Therefore, collapsing results causes inaccurate result counts and pagination will not work as expected. For example, imagine a search query that returns 100 results over 5 pages, where 90 results have identical titles. Collapsing these results by the title field results in this situation on Liferay's search page:
 
-NEED MORE INFORMATION ON PAGINATION ISSUES
+1. The search user sees 1 page of results with 11 results: the top scoring collapsed result and the 10 remaining unique results.
+1. The displayed results count is 100.
+1. The displayed pages count is 5.
+
+   ![Result counts and pagination don't work well with collapsed results.](./collapsing-results/images/03.png)
 
 ## Example: Collapse Results by Localized Title
 

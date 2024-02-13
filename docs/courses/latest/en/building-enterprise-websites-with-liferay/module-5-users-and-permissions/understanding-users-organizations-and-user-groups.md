@@ -1,20 +1,11 @@
 ---
 uuid: 281e89fe-1a37-4223-a37e-6d1c7f5e478e
 ---
-
 # Understanding Users, Organizations and User Groups
 
-Clarity values everyone that accesses their website and wants to ensure that the right users can access their data, tools, and relevant content. Every person who access Clarity's website is considered a user. Even unauthenticated users are considered users, they are called guest users.
+In Liferay, a user can be a person who has login privileges or no login privileges. For example, a visitor who comes to Clarity's public website would require no login privileges to see any public facing content. However, Clarity employees or customers that have B2B accounts with Clarity would have login privileges to access parts of the website that is not public facing.
 
-Users can be organized into organizations and user groups. Structuring your users into organizations and user groups empowers you to delegate administrative responsibility and organize them in a way that reflects your organization.
-
-Users break down into three general categories:
-
-| User          | Default Access                                                                                                           |
-|:--------------|:-------------------------------------------------------------------------------------------------------------------------|
-| Administrator | Liferay admin with full system access.                                                                                   |
-| User          | Authenticated users are able to view restricted pages and create content, under the permissions assigned to them.        |
-| Guest         | Unauthenticated user with view access to publicly accessible pages as well as limited ability to create and add content. |
+Liferay has different tools to help you manage your users. For example, users can be put into organizations or user groups. Structuring your users into organizations and user groups allows you to delegate administrative responsibility and organize users in the way that reflects your company.
 
 <!-- ## Importing Users through Client Extension
 
@@ -22,11 +13,13 @@ We'll have here the steps to download, unzip and deploy the client extension. --
 
 ## Adding and Managing Users
 
-Liferay allows administrators to create users within Liferay, or import them. Since Clarity chose to use Okta, a single sign-on solution, once the users log in, their accounts will be created automatically. Let's create an account for Clarity's Web Developer.
+Liferay offers different ways to add and manage users. [Add and manage users](https://learn.liferay.com/w/dxp/users-and-permissions/users/adding-and-managing-users) right from Liferay's UI. Add and mange users with Liferay' [headless APIs](https://learn.liferay.com/w/dxp/users-and-permissions/developer-guide/user-account-api-basics). Or import users from a [user directory](https://learn.liferay.com/w/dxp/users-and-permissions/connecting-to-a-user-directory) that you manage separately. To create a user from the UI,
 
-1. Navigate to *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) &rarr; *Control Panel* &rarr; *Users and Organizations*. Click *New* to add user.
+1. Navigate to *Control Panel* &rarr; *Users and Organizations*. Click the add button to add a new user.
 
-1. Create a user account for Walter Douglas, the Web Developer:
+   ![Input the details of the user and click save.](./understanding-users-organizations-and-user-groups/images/01.png)
+
+1. Input the details of the user. For example, let's create a user account for Walter Douglas, one of Clarity's web developers:
 
    * Screen Name: `walter`
    * Email Address: `walter@clarityvisionsolutions.com`
@@ -34,36 +27,48 @@ Liferay allows administrators to create users within Liferay, or import them. Si
    * Last Name: `Douglas`
    * Job Title: `Web Developer`
 
-<!-- We could add a screenshot of the users tab, showing all users on the table, the ones that were deployed and the one created manually, Walter Douglas-->
+   Click _Save_. If you [mail server is configured](https://learn.liferay.com/w/dxp/installation-and-upgrades/setting-up-liferay/configuring-mail), the user will receive a welcome email to log in to Liferay. Alternatively, you can set a temporary password and share the login with them.
 
-As an administrator, you can add additional information after creating the user, as well as editing it. See [Adding and Managing Users](https://learn.liferay.com/en/w/dxp/users-and-permissions/users/adding-and-managing-users) to learn more.
+   See our documentation on [adding and managing Users](https://learn.liferay.com/en/w/dxp/users-and-permissions/users/adding-and-managing-users) to learn more. 
+
+Since Clarity chose to use Okta, a single sign-on solution, once the users log in, their accounts are created automatically.
 
 ## Organizations
 
-Enhance your user management by using organizations, and use Liferay to model Clarity Vision Solutions' organizational hierarchy. You can also apply permissions to your users through organization roles, and it will affect only applications and content within that organization hierarchy.
+Use Liferay's organizations tool to model your company's hierarchy. As users are assigned to different organizations they receive different permissions and access. For example, an organization administrator has the permissions to manage users within an organization but does not have the permissions to make changes to users outside of the organization. 
+
+[Add and manage organizations](https://learn.liferay.com/w/dxp/users-and-permissions/organizations/creating-and-managing-organizations) from the UI, or [headless APIs](https://learn.liferay.com/w/dxp/users-and-permissions/developer-guide/organizations-api-basics) or through your [user directory](https://learn.liferay.com/w/dxp/users-and-permissions/connecting-to-a-user-directory/connecting-to-an-ldap-directory). 
 
 <!-- We could add a screenshot of the organization tab (Global Menu > Control Panel > Users and Organizations > Organizations tab), showing all three organizations that the user deployed using client extensions -->
 
-Now, since we created Walter's user manually, let's edit his user account to assign him to the IT organization.
+Let's create a sample organization and Walter to it.
 
-1. Navigate to *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) &rarr; *Control Panel* &rarr; *Users and Organizations*.
+1. Navigate to *Control Panel* &rarr; *Users and Organizations*.
 
-1. From the list of user accounts, click on *Walter Douglas*. Click *Organizations* in the left navigation.
+1. Click on the _Organizations_ tab and click the add button.
 
-1. Click *Select* and a new window pops up. Click on the checkbox for the IT organization. Click *Add*.
+1. Input `IT Department` as the organization name and click save.
 
-As an organization administrator, you can manage all users in your organization and in any child organization. See [Organizations](https://learn.liferay.com/web/guest/w/dxp/users-and-permissions/organizations) to learn more.
+1. Navigate out to the list of users. Click on *Walter Douglas*. Click *Organizations* in the left navigation.
+
+1. Click *Select* and a new window pops up. Click on the checkbox for the IT department. Click *Add*. Walter is now part of the IT department organization.
+
+See our documentation about [organizations](https://learn.liferay.com/web/guest/w/dxp/users-and-permissions/organizations) to learn more.
 
 ## User Groups
 
-A user group is a list of users created for a specific purpose, and they can be created across the hierarchical boundaries of organizations. There are some common use cases for user groups, three of them are:
+A user group is a collection of users created for a specific purpose. They can be created across the hierarchical boundaries of organizations. For example, if Clarity's marketing department wanted to collaborate with a few of their B2B customers on an affiliate site, a user group could be used to grant access and permissions to a common site.
 
-- **Manage Site membership**: Grant site membership to all users in a user group.
-- **Manage Users’ personal pages**: Provide predefined pages to those in the user group.
-- **Collect permissions**: Assign roles and permissions to a group of users that don’t share an organization.
+To create a user group, 
 
-Navigate to *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) &rarr; *Control Panel* &rarr; *Users* &rarr; *Users Groups*, and you'll see that Clarity created the *Content* user group.
+1. Navigate to *Control Panel* &rarr; *Users Groups*. Click the add button.
 
-As an user group administrator, this will help you assign roles and permissions to the content team, considering they are under different organizations. See [User Groups](https://learn.liferay.com/web/guest/w/dxp/users-and-permissions/user-groups) to learn more.
+1. Input a name for the new user group and click _Save_.
+
+1. Click on the user group you just created. Click the add icon to add users to the user group.
+
+Note, user groups can be created and managed from the Liferay UI like this. They can also be created and managed with [headless APIs](https://learn.liferay.com/w/dxp/users-and-permissions/developer-guide/user-groups-api-basics). 
+
+See our documentation on [user groups](https://learn.liferay.com/web/guest/w/dxp/users-and-permissions/user-groups) to learn more.
 
 Next: [Setting Permissions and Roles](./setting-permissions-and-roles.md)

@@ -11,7 +11,7 @@ taxonomy-category-names:
 
 {bdg-secondary}`Liferay 7.4 U58+/GA58+`
 
-In scenarios with multiple business [accounts](../../../../users-and-permissions/accounts.md), you may want to restrict access to object entries by account. For example, consider an insurance scenario with these requirements:
+In scenarios with multiple business [accounts](../../../../users-and-permissions/accounts.md), you may want to restrict access to object entries by account. For example, consider an [insurance scenario](#example-use-case-insurance-claims) with these requirements:
 
 * Business account users must open claims without seeing claims made by other accounts.
 
@@ -25,7 +25,7 @@ To restrict object entries by account, your custom object must have an active [r
 
 !!! important
    - You can only configure account restriction for draft objects. After [publishing](../creating-objects.md#publishing-object-drafts), these settings cannot be changed.
-   - For Liferay DXP 2024.Q1+/Liferay Portal 7.4 GA112+, the entries of account restricted objects appear in search results if the search user has the `Accounts > Account Entry: View` permission in an account- or regular-scoped role.
+   - For Liferay DXP 2024.Q1+/Liferay Portal 7.4 GA112+, the entries of account restricted objects appear in search results if the search user has the `Accounts > Account Entry: View` permission in an account- or regular-scoped role. See [Searching for Content](../../../../using-search/getting-started/searching-for-content.md#searching-for-liferay-objects) for details.
 
 To set up account restriction,
 

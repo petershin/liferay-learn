@@ -52,7 +52,7 @@ This initial permission checking is configurable at Control Panel &rarr; Configu
 
 **Permissions Term Limit:** Limits the number of permission search clauses added to the search query before this level of permission checking is aborted. Permission checking then relies solely on the final permission filtering described below.
 
-The only reason to limit permissions terms is performance. Users with administrative access to lots of Sites and Organizations generate many permissions terms added to the query. Too many terms in a query can make the search engine time out.
+The only reason to limit permissions terms is performance. Users with administrative access to lots of sites, organizations, and accounts generate many permissions terms added to the query. Too many terms in a query can make the search engine time out.
 
 ### Final Permissions Checking
 

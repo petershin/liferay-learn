@@ -20,10 +20,10 @@ In this module you will:
 Learn about the different way to manage and organize users in Liferay.
 :::
 
-:::{grid-item-card}  Settings Permissions
-:link: ./module-4-identity-management-sso/setting-permissions.md
+:::{grid-item-card}  Settings Permissions and Roles
+:link: ./module-4-identity-management-sso/setting-permissions-and-roles.md
 
-Learn how to set different permissions to different users.
+Learn how to assign different roles and set permissions for users.
 :::
 
 :::{grid-item-card}  Working with Accounts

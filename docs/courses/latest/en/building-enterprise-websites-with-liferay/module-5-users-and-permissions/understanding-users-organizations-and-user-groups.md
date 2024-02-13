@@ -4,7 +4,7 @@ uuid: 281e89fe-1a37-4223-a37e-6d1c7f5e478e
 
 # Understanding Users, Organizations and User Groups
 
-Clarity values every one that access their website, and wants to ensure that the right users can access their data, tools, and relevant content. Every person who access Clarity's website is considered a user. Even unauthenticated users are considered users, they are called guest users.
+Clarity values everyone that accesses their website and wants to ensure that the right users can access their data, tools, and relevant content. Every person who access Clarity's website is considered a user. Even unauthenticated users are considered users, they are called guest users.
 
 Users can be organized into organizations and user groups. Structuring your users into organizations and user groups empowers you to delegate administrative responsibility and organize them in a way that reflects your organization.
 
@@ -65,3 +65,5 @@ A user group is a list of users created for a specific purpose, and they can be 
 Navigate to *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) &rarr; *Control Panel* &rarr; *Users* &rarr; *Users Groups*, and you'll see that Clarity created the *Content* user group.
 
 As an user group administrator, this will help you assign roles and permissions to the content team, considering they are under different organizations. See [User Groups](https://learn.liferay.com/web/guest/w/dxp/users-and-permissions/user-groups) to learn more.
+
+Next: [Setting Permissions and Roles](./setting-permissions-and-roles.md)

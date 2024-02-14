@@ -48,4 +48,10 @@ Learn how to configure products and SKUs.
 
 Learn how to build the B2C storefront using out-of-the-box widgets and fragments.
 :::
+
+:::{grid-item-card}  Customizing the B2B Experience
+:link: ./commerce-architect/customizing-the-b2b-experience.md
+
+Learn how to use out-of-the-box Liferay features to customize your B2B experience.
+:::
 ::::

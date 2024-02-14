@@ -44,6 +44,7 @@ To achieve AND style selection between facet widgets, you must configure a diffe
 
 {bdg-secondary}`7.4 U48+ and GA48+`
 
+<!-- This changes in Q1+/GA112+ (or is it earlier than 112 in fact?) -->
 By default the Category Facet widget collects the categories of the matching results from every vocabulary in the site and displays them in a flat list. With the enhancements made in Update 48, you gain new display and filtering behaviors.
 
 #### Display Facet Terms (Categories) by Vocabulary
@@ -54,7 +55,7 @@ Display categories under their vocabulary by selecting the Vocabulary Layout in 
 
 #### Filter Facet Terms (Categories) by Vocabulary
 
-Select the vocabularies and categories to display in the facet. To enable this, switch the configuration in System Settings &rarr; Search &rarr; Category Facet Field from the default field, `assetCategoryIds`, to the `assetVocabularyCategoryIds` field. This setting specifies the field used to create the aggregations in the Category Facet. Setting `assetVocabularyCategoryIds` activates the vocabulary settings within the Category Facet widget's configuration screen. 
+Select the vocabularies and categories to display in the facet.
 
 ```{important}
 If you're upgrading from a Liferay version or update prior to 7.4 Update/GA 48 and there are already categorized assets in the system, re-index all search indexes to include the necessary `assetVocabularyCategoryIds` field in the search documents.
@@ -97,9 +98,8 @@ To configure the use case above,
    You must create a global category in the Global site, rather than a site category in the Foo site.
    ```
 
-   ```{note}
-   There's an existing vocabulary created by the site template during site initialization (named Foo after the site): it's better named _Vehicle Systems_ to match the example you're building and characterize the categories better (e.g., Brake System). However, the Foo vocabulary's categories are referenced by existing Commerce products, so it cannot be edited. 
-   ```
+   !!! note
+      There's an existing vocabulary created by the site template during site initialization (named Foo after the site): it's better named _Vehicle Systems_ to match the example you're building and characterize the categories better (e.g., Brake System). However, the Foo vocabulary's categories are referenced by existing Commerce products, so it cannot be edited. 
 
    ![Create a Quality vocabulary in the global site.](./category-facet/images/07.png)
 
@@ -127,8 +127,6 @@ To configure the use case above,
    ![The categories of all available vocabularies are aggregated.](./category-facet/images/08.png)
 
    Some of the widgets on the page are Commerce-specific widgets (e.g. the Specification Facet) but the Category Facet is the standard search widget.
-
-1. Change the Category Facet widget to create its aggregations using the `assetVocabularyCategoryIds` field. Go to System Settings &rarr; Search. In the Category Facet Field entry, Select `assetVocabularyCategoryIds` in the Category Facet Field selector and update the configuration.
 
 1. On the Foo site's home page add a Category Facet widget configured to show only the Foo vocabulary's categories. 
 

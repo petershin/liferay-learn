@@ -18,7 +18,7 @@ You can collapse search results with an identical keyword field value. For examp
 
 Liferay's default indexer clauses can interfere with attempts to collapse results by the title field. If you experience this in testing, [disable the search framework indexer clauses](./creating-and-managing-search-blueprints.md#advanced-configuring-query-clause-contributors) in the blueprint and construct the query from scratch. For example, add the _Text Match Over Multiple Fields_ element into the blueprint.
 
-The results count remains the count from the original search response before the collapse was applied. Therefore, collapsing results causes inaccurate result counts and pagination will not work as expected. For example, imagine a search query that returns 100 results over 5 pages, where 90 results have identical titles. Collapsing these results by the title field results in this situation on Liferay's search page:
+The number of total hits in the search response does not account for collapsing. Therefore, collapsing results causes inaccurate result counts, and pagination will not work as expected. For example, imagine a search query that returns 100 results over 5 pages, where 90 results have identical titles. Collapsing these results by the title field results in this situation on Liferay's search page:
 
 1. The search user sees 1 page of results with 11 results: the top scoring collapsed result and the 10 remaining unique results.
 1. The displayed results count is 100.

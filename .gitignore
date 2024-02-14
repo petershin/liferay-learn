@@ -1,5 +1,6 @@
 .DS_Store
 .gradle
+.latest_hash
 .project
 .settings
 .vscode
@@ -29,3 +30,4 @@ learn-markdown-converter/build
 node_modules
 node_modules_cache
 site
+update_examples.err

@@ -3,6 +3,8 @@ toc:
 - ./commerce-architect/setting-up-and-creating-products.md
 - ./commerce-architect/configuring-products-and-skus.md
 - ./commerce-architect/building-the-b2c-storefront.md
+- ./commerce-architect/building-the-b2b-storefront.md
+- ./commerce-architect/customizing-the-b2b-experience.md
 uuid: 3cb502c6-4320-4646-adbb-3a985c248728
 ---
 # Commerce Architect
@@ -47,6 +49,12 @@ Learn how to configure products and SKUs.
 :link: ./commerce-architect/building-the-b2c-storefront.md
 
 Learn how to build the B2C storefront using out-of-the-box widgets and fragments.
+:::
+
+:::{grid-item-card}  Building the B2B Storefront
+:link: ./commerce-architect/building-the-b2b-storefront.md
+
+Learn how to build the B2B storefront using Liferay's fragments and widgets.
 :::
 
 :::{grid-item-card}  Customizing the B2B Experience

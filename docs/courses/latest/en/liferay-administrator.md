@@ -9,7 +9,7 @@ uuid: 42a40fb0-ecff-498c-8433-68b0005c2d15
 ---
 # Liferay Administrator
 
-Is your Liferay instance installed? Now what? Whether you're on LXC, LXC-SM, or self-hosted, this course covers administering your Liferay installation. You'll learn
+Is your Liferay instance installed? Now what? Whether you're on Liferay SaaS, PaaS, or self-hosted, this course covers administering your Liferay installation. You'll learn
 
 - The difference between System Settings, Virtual Instances, and System Settings
 - How to make Liferay send notification emails

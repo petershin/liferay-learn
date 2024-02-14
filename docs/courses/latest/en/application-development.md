@@ -21,7 +21,7 @@ Due to recent growth, Delectable Bonsai needs two custom solutions to streamline
 
 ![Create a distributor application flow.](./application-development/images/01.png)
 
-This application is deployable on LXC, LXC-SM, and self-hosted environments, and Delectable Bonsai's partners can use it to apply for and obtain new business accounts.
+This application is deployable on Liferay SaaS, PaaS, and self-hosted environments, and Delectable Bonsai's partners can use it to apply for and obtain new business accounts.
 
 When finished, you'll have learned how to
 

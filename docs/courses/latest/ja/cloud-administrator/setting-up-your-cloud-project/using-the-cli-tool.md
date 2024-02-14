@@ -34,7 +34,7 @@ Windows環境の場合は、代わりに [Windowsインストーラー](https://
 
 クラウドインスタンスのセットアップに関するこのモジュールは完了しました。
 
-次： [コードをLXCインスタンスにデプロイする方法を学ぶ](../deploying-code-to-lxc.md).
+次： [コードをLXCインスタンスにデプロイする方法を学ぶ](../deploying-code-to-liferay-saas.md).
 
 ## 関連コンセプト
 

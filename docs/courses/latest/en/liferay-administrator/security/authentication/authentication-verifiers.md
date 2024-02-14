@@ -3,7 +3,7 @@ uuid: 4374a6df-6c9f-4991-a3c2-1d5056ae672b
 ---
 # Authentication Verifiers
 
-{bdg-secondary}`LXC-SM or Self-hosted`
+{bdg-secondary}`Liferay PaaS or Self-hosted`
 
 Authentication Verifiers are internal instances of code that determine if the provided credentials---whether that's a user name/password, a token, an HTTP header, or a parameter---match a user account. Liferay has built-in implementations for the most common situations, such as when remote clients use HTTP Basic authentication, send credentials in request parameters, use the `JSESSIONID`, or other shared secrets. 
 

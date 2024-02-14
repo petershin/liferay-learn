@@ -3,15 +3,15 @@ uuid: ed60ae33-a661-4593-844a-cb91c1379427
 ---
 # Configuring System Settings
 
-{bdg-secondary}`LXC-SM or Self-hosted`
+{bdg-secondary}`Liferay PaaS or Self-hosted`
 
 System settings apply across instances, sites, or widgets. Settings made here apply across your entire environment. Some of these cannot be changed at lower scopes (for example, configuring antivirus) and some become defaults that can be overridden at lower scopes. See [System Settings](https://learn.liferay.com/en/w/dxp/system-administration/configuring-liferay/system-settings) to learn more.
 
-### System Settings in LXC
+### System Settings in Liferay SaaS
 
 System settings are not accessible in LXC. Contact Liferay Cloud support to configure system settings.
 
-### System Settings in LXC-SM and Self-hosted
+### System Settings in Liferay PaaS and Self-hosted
 
 Liferay supports [ClamAV](https://www.clamav.net/), an open source antivirus solution. You can configure ClamAV antivirus software in system settings.
 

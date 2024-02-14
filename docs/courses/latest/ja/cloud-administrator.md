@@ -1,7 +1,7 @@
 ---
 toc:
   - ./cloud-administrator/setting-up-your-cloud-project.md
-  - ./cloud-administrator/deploying-code-to-lxc.md
+  - ./cloud-administrator/deploying-code-to-liferay-saas.md
   - ./cloud-administrator/cloud-configuration.md
   - ./cloud-administrator/cloud-development-lifecycle.md
 ---
@@ -38,7 +38,7 @@ LXCまたはLXC-SMでクラウドコンソールを使い始める方法をご�
 :::
 
 :::{grid-item-card}  LXCへのコードのデプロイ
-:link: ./cloud-administrator/deploying-code-to-lxc.md
+:link: ./cloud-administrator/deploying-code-to-liferay-saas.md
 
 LXCでクライアント拡張プロジェクトをデプロイして作業する方法を学びます。
 :::

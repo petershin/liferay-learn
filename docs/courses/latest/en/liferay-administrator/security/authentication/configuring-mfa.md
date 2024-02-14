@@ -11,7 +11,7 @@ Clarity Vision Solutions has come a long way from its days selling frames out of
 
 ## Setting Up MFA
 
-1. Follow the steps in [Configuring Mail in Liferay](../../configuration/server-administration-and-email.md#configuring-mail-in-lxc-sm-or-self-hosted) to simulate an SMTP mail server.
+1. Follow the steps in [Configuring Mail in Liferay](../../configuration/server-administration-and-email.md#configuring-mail-in-liferay-paas-or-self-hosted) to simulate an SMTP mail server.
 
 1. Log into Liferay as the administrator (i.e. [Kyle Klein](../../users-accounts-organizations/managing-users.md#creating-users)).
 

@@ -34,7 +34,7 @@ Windows 환경을 사용하시는 경우 대신 [Windows 설치 프로그램](ht
 
 훌륭한! 클라우드 인스턴스 설정에 대한 이 모듈을 완료했습니다.
 
-다음: LXC 인스턴스에 코드를 배포하는 [을 알아보세요](../deploying-code-to-lxc.md).
+다음: LXC 인스턴스에 코드를 배포하는 [을 알아보세요](../deploying-code-to-liferay-saas.md).
 
 ## 관련 개념
 

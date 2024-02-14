@@ -7,11 +7,11 @@ You can manage and monitor your Liferay instance from the server administration 
 
 Configure a mail server that is used for email notifications (e.g. user registration, password management, etc.). Follow the steps below to configure the mail server for Clarity Vision Solutions. 
 
-### Configuring Mail in LXC
+### Configuring Mail in Liferay SaaS
 
 If this wasn't already configured for you, contact your Liferay Cloud support person.
 
-### Configuring Mail in LXC-SM or Self-hosted
+### Configuring Mail in Liferay PaaS or Self-hosted
 
 In real life, you'd already have a mail server for Liferay to use. Here, you'll simulate one. 
 

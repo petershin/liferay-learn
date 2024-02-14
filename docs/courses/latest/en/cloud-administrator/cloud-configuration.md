@@ -11,10 +11,10 @@ uuid: 9f762025-c335-481c-b9d4-921e3021555c
 
 # Cloud Configuration
 
-You've walked through the process of setting up and using the Cloud console to deploy changes in LXC. LXC-SM uses the same Cloud console for deploying changes and custom code, so you can get started with the console and tooling with LXC-SM using the [same process as for LXC](./setting-up-your-cloud-project.md). But with LXC-SM, you have more to manage: you can also fully manage your own core Liferay services! 
+You've walked through the process of setting up and using the Cloud console to deploy changes in Liferay SaaS. Liferay PaaS (self-managed) uses the same Cloud console for deploying changes and custom code, so you can get started with the console and tooling with Liferay PaaS using the [same process as for SaaS](./setting-up-your-cloud-project.md). But with PaaS, you have more to manage: you can also fully manage your own core Liferay services! 
 
 ```{note}
-The next two modules (Cloud Configuration and the [Cloud Development Lifecycle](./cloud-development-lifecycle.md)) require a project on LXC-SM.
+The next two modules (Cloud Configuration and the [Cloud Development Lifecycle](./cloud-development-lifecycle.md)) require a project on Liferay PaaS.
 ```
 
 Each of your development or production environments includes all of these as separate services in a Cloud network:
@@ -29,9 +29,9 @@ Each of your development or production environments includes all of these as sep
 
 You also have a [CI service](https://learn.liferay.com/w/liferay-cloud/platform-services/continuous-integration) in a separate `infra` environment, which controls any builds you've created or deployed for your other environments.
 
-For more information on your reponsibilities with an LXC-SM project, see [here](https://help.liferay.com/hc/en-us/articles/360059798531-DXP-Cloud-Shared-Activities).
+For more information on your reponsibilities with an Liferay PaaS project, see [here](https://help.liferay.com/hc/en-us/articles/360059798531-DXP-Cloud-Shared-Activities).
 
-In LXC-SM, it's your responsibility to configure and manage your environments according to your specific needs. Here, you'll learn how to
+In Liferay PaaS, it's your responsibility to configure and manage your environments according to your specific needs. Here, you'll learn how to
 
 * Set up the Git repository to deploy builds for your entire project
 * Configure a custom domain for your Liferay instances

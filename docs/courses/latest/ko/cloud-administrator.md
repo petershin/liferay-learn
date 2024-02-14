@@ -1,7 +1,7 @@
 ---
 toc:
   - ./cloud-administrator/setting-up-your-cloud-project.md
-  - ./cloud-administrator/deploying-code-to-lxc.md
+  - ./cloud-administrator/deploying-code-to-liferay-saas.md
   - ./cloud-administrator/cloud-configuration.md
   - ./cloud-administrator/cloud-development-lifecycle.md
 ---
@@ -38,7 +38,7 @@ LXC 또는 LXC-SM과 함께 Cloud 콘솔을 사용하여 시작하는 방법을 
 :::
 
 :::{grid-item-card}  LXC에 코드 배포
-:link: ./cloud-administrator/deploying-code-to-lxc.md
+:link: ./cloud-administrator/deploying-code-to-liferay-saas.md
 
 LXC에서 클라이언트 확장 프로젝트를 배포하고 작업하는 방법을 알아보세요.
 :::

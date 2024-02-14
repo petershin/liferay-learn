@@ -8,11 +8,11 @@ uuid: 88094a31-939d-4710-bcc3-ee2d3933d721
 
 # Setting Up Your Cloud Project
 
-After you have either an instance of Liferay Experience Cloud (LXC) or an environment on LXC Self-Managed (LXC-SM) provisioned, your first task is to access the cloud console.
+After you have either an instance of Liferay SaaS or PaaS provisioned, your first task is to access the cloud console.
 
-In Liferay Experience Cloud Self-Managed (LXC-SM), you use the cloud console to manage each of your environment's services, including the [web server](https://learn.liferay.com/w/liferay-cloud/platform-services/web-server-service) and [database](https://learn.liferay.com/w/liferay-cloud/platform-services/database-service/database-service).
+In Liferay PaaS (self-managed), you use the cloud console to manage each of your environment's services, including the [web server](https://learn.liferay.com/w/liferay-cloud/platform-services/web-server-service) and [database](https://learn.liferay.com/w/liferay-cloud/platform-services/database-service/database-service).
 
-In LXC, these services are managed for you, and you work primarily with Liferay's out-of-the-box features, but you still use the console to manage your own [client extensions](https://learn.liferay.com/w/dxp/building-applications/client-extensions).
+In Liferay SaaS, these services are managed for you, and you work primarily with Liferay's out-of-the-box features, but you still use the console to manage your own [client extensions](https://learn.liferay.com/w/dxp/building-applications/client-extensions).
 
 Here, you'll learn how to 
 

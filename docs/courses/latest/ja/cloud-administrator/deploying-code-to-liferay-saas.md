@@ -1,7 +1,7 @@
 ---
 toc:
-  - ./deploying-code-to-lxc/deploying-and-managing-a-microservice-client-extension-project.md
-  - ./deploying-code-to-lxc/troubleshooting-a-microservice-in-the-cloud-console.md
+  - ./deploying-code-to-liferay-saas/deploying-and-managing-a-microservice-client-extension-project.md
+  - ./deploying-code-to-liferay-saas/troubleshooting-a-microservice-in-the-cloud-console.md
 ---
 # LXCへのコードのデプロイ
 
@@ -17,4 +17,4 @@ LXCを使えば、Liferay外のインフラストラクチャの設定や保守�
 
 Delectable Bonsaiの開発者は、Liferayの [オブジェクト](https://learn.liferay.com/web/guest/w/dxp/building-applications/objects) を使って、顧客からのフィードバックを収集・記録する新しい方法を構築したいと考えている。 このモジュールでは、 [オブジェクトアクションYAML設定リファレンス](https://learn.liferay.com/w/dxp/building-applications/client-extensions/microservice-client-extensions/object-action-yaml-configuration-reference) への変更をテスト、修正、トラブルシューティングすることで、クライアント拡張のデプロイに慣れ、マイクロサービスにシンプルなカウンターを実装します。
 
-[続きはこちら](./deploying-code-to-lxc/deploying-and-managing-a-microservice-client-extension-project.md)
+[続きはこちら](./deploying-code-to-liferay-saas/deploying-and-managing-a-microservice-client-extension-project.md)

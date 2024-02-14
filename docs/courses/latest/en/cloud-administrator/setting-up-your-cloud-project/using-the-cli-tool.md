@@ -38,7 +38,7 @@ Now the tool can connect to your environments to deploy your projects, including
 
 Excellent! You've completed this module on setting up your cloud instance. 
 
-Next: learn to [deploy code to your LXC instance](../deploying-code-to-lxc.md). 
+Next: learn to [deploy code to your LXC instance](../deploying-code-to-liferay-saas.md). 
 
 ## Relevant Concepts
 

@@ -3,7 +3,7 @@ uuid: 9540baaf-7e04-40a2-9a4a-1409d3526092
 ---
 # Connecting to LDAP
 
-You can configure an LDAP server at the system level or instance level. If you are on LXC-SM or self-hosted, you can choose the [configuration scope](https://learn.liferay.com/w/dxp/system-administration/configuring-liferay/understanding-configuration-scope) based on your needs. Note, when configuring at the system scope, you must specify each instance ID. If you're on LXC, you must configure LDAP at the instance scope. See [Connecting to an LDAP Directory](https://learn.liferay.com/w/dxp/users-and-permissions/connecting-to-a-user-directory/connecting-to-an-ldap-directory).
+You can configure an LDAP server at the system level or instance level. If you are on Liferay PaaS or self-hosted, you can choose the [configuration scope](https://learn.liferay.com/w/dxp/system-administration/configuring-liferay/understanding-configuration-scope) based on your needs. Note, when configuring at the system scope, you must specify each instance ID. If you're on Liferay SaaS, you must configure LDAP at the instance scope. See [Connecting to an LDAP Directory](https://learn.liferay.com/w/dxp/users-and-permissions/connecting-to-a-user-directory/connecting-to-an-ldap-directory).
 
 Clarity Vision Solutions must import user data from a company they just acquired. 
 

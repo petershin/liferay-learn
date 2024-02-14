@@ -24,15 +24,22 @@ With Results Rankings you can
 * Add results that normally wouldn't be returned for a certain keyword.
 * Re-order pinned results with a drag-and-drop interface.
 
-```{note}
-Result Rankings affect only searches using the newer search widgets (Search Bar, Search Results, etc.). The rankings you customize do not apply to the legacy Search portlet results or to the individual application search bars.
-```
+!!! important
+   Result Rankings affect only searches using the newer search widgets (Search Bar, Search Results, etc.). The rankings you customize do not apply to the legacy Search portlet results or to the individual application search bars.
 
-## Requirement and Limitations
+## Requirements and Limitations
+
+### Elasticsearch is Required for Result Rankings
 
 Result Rankings are only supported when using Elasticsearch as your search engine. Learn about installing Elasticsearch in [Getting Started with Elasticsearch](../installing-and-upgrading-a-search-engine/elasticsearch/getting-started-with-elasticsearch.md).
 
+### Result Rankings Cannot Be Renamed
+
 An existing ranking entry cannot be renamed. Renaming requires recreating the ranking under a different name. See [LPS-96357](https://issues.liferay.com/browse/LPS-96357) for more information.
+
+### Result Rankings and Blueprints
+
+Result Rankings does not work well with [Search Blueprints](../liferay-enterprise-search/search-experiences/search-blueprints.md). Even if a result pinned by Result Rankings is filtered out in the blueprint, it appears at the top of the results. If possible, avoid using these features together. If using Search Blueprints, you can add behavior to [simulate the pinning behavior](../liferay-enterprise-search/search-experiences/search-blueprints/pinning-results.md) of Result Rankings.
 
 ## Creating and Managing Result Rankings
 

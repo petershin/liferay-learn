@@ -11,18 +11,18 @@ uuid: 40e102ac-f887-40dd-a310-c6cd9a10cc4f
 ---
 # Pinning Results
 
-Liferay's [Result Rankings](../../../search-administration-and-tuning/result-rankings.md) application allows pinning results to the top of the results list. However, Result Rankings and Search Blueprints are not designed to work together. Instead, you can simulate the pinning behavior of a search blueprint by adding a high boost to the matching result.
+Liferay's [Result Rankings](../../../search-administration-and-tuning/result-rankings.md) application allows pinning results to the top of the results list. However, Result Rankings and Search Blueprints are not designed to work together. Instead, you can simulate the pinning behavior in a search blueprint by adding a high boost to the matching result.
 
-To do this in a blueprint, 
+To pin results with a blueprint, 
 
-1. Create a custom element.
+1. Create a [custom element](./creating-and-managing-elements/creating-elements.md).
 1. Use a query within a `should` clause to match only the desired result. A term query on the content's `assetEntryId` field can provide this.
 1. Boost a match to the query.
 1. Use a condition to make sure that the configured keyword matches the user's search keyword.
 
 ![You can pin results in a blueprint.](./pinning-results/images/03.png)
 
-For example, pin a certain blogs entry to the top of results when the user search for _foo_:
+For example, pin a certain blogs entry to the top of results when the user searches for _foo_:
 
 1. Add two new blogs entries. Open _Site Menu_ &rarr; _Content & Data_ &rarr; _Blogs_:
    - First Blogs Entry 
@@ -36,7 +36,7 @@ For example, pin a certain blogs entry to the top of results when the user searc
 
 1. Go to the _Home_ page and enter _foo_ into the search bar. The blog titled _Foo foo foo_ is returned first because the frequency of the searched term is higher.
 
-SCREENSHOT OF FOO FOO FOO AT TOP
+   ![The blog title Foo foo foo is at the top of the results list.](./pinning-results/images/07.png)
 
 1. [Create an element](creating-and-managing-elements/creating-elements.md) with these contents:
 

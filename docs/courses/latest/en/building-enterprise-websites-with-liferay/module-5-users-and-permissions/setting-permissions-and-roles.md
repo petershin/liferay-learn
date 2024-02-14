@@ -3,7 +3,7 @@ uuid: 5f0d81eb-2205-4dbd-a87a-a1444fffb5ca
 ---
 # Setting Permissions and Roles
 
-Now that you have different [users, organizations, and user groups](./understanding-users-organizations-and-user-groups.md), it is time to set appropriate permissions for your different team members. In Liferay, permissions are assigned to roles (as opposed to being assigned to individual users). Therefore, Clarity needs to assign roles to its users to have their team members have the proper permissions.
+Now that you have different [users, organizations, and user groups](./understanding-users-organizations-and-user-groups.md), it is time to set appropriate permissions for your different team members. In Liferay, permissions are assigned to roles (as opposed to being assigned to individual users). As Clarity brings their team members onto Liferay, they need to assign roles to each person so that they have the proper permissions.
 
 ## Understanding Liferay Roles
 
@@ -13,7 +13,7 @@ Custom roles can also be created to meet your business needs. To create a role, 
 
 ![Set different permissions to the new custom role.](./setting-permissions-and-roles/images/01.png)
 
-The permissions fall under different categories:
+The permissions fall under different areas:
 
 * __Control Panel__ - The different areas of the control panel the role has access to and what they can modify (i.e. changing configuration settings)
 * __Commerce__ - The different areas of commerce the role has access to (e.g. managing products)
@@ -21,11 +21,11 @@ The permissions fall under different categories:
 * __Site and Asset Library Administration__ - The various tools in Liferay related to assets and site building the role has access to
 * __User__ - The various tools related to managing users the role has access to
 
-See [creating and managing roles](https://learn.liferay.com/w/dxp/users-and-permissions/roles-and-permissions/creating-and-managing-roles) to learn more.
+Note, roles can also be created and managed with [headless APIs](https://learn.liferay.com/w/dxp/users-and-permissions/developer-guide/roles-api-basics). See our documentation to learn more about [creating and managing roles](https://learn.liferay.com/w/dxp/users-and-permissions/roles-and-permissions/creating-and-managing-roles).
 
 ## Assigning Permissions through Roles
 
-As mentioned above, permissions follow roles. Therefore, to set permissions for users, they must be assigned specific roles. If Clarity wants to limit what their team members can or cannot access in Liferay, their users must be assigned specific roles. To assign a role,
+As mentioned above, permissions follow roles. Therefore, to set permissions for users, they must be assigned specific roles. If Clarity wants to limit what their team members can or cannot access, their users must be assigned specific roles. To assign a role,
 
 1. Navigate to _Control Panel_ &rarr; _Users & Organizations_.
 

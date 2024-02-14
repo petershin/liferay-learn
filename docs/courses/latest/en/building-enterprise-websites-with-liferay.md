@@ -84,7 +84,7 @@ Learn about both the different identity management features built into Liferay, 
 :::{grid-item-card}  Module 5: Users & Permissions
 :link: ./building-enterprise-websites-with-liferay/module-5-users-and-permissions.md
 
-Coming Soon
+Learn how to use Liferay's user management tools to manage users, organizations, user groups and accounts. Assign roles and permissions to different users.
 :::
 
 :::{grid-item-card}  Module 6: Site Building

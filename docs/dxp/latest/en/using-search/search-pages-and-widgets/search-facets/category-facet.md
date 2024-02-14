@@ -44,7 +44,6 @@ To achieve AND style selection between facet widgets, you must configure a diffe
 
 {bdg-secondary}`7.4 U48+ and GA48+`
 
-<!-- This changes in Q1+/GA112+ (or is it earlier than 112 in fact?) -->
 By default the Category Facet widget collects the categories of the matching results from every vocabulary in the site and displays them in a flat list. With the enhancements made in Update 48, you gain new display and filtering behaviors.
 
 #### Display Facet Terms (Categories) by Vocabulary
@@ -57,14 +56,12 @@ Display categories under their vocabulary by selecting the Vocabulary Layout in 
 
 Select the vocabularies and categories to display in the facet.
 
-```{important}
-If you're upgrading from a Liferay version or update prior to 7.4 Update/GA 48 and there are already categorized assets in the system, re-index all search indexes to include the necessary `assetVocabularyCategoryIds` field in the search documents.
-```
+!!! important
+   If you're upgrading from a Liferay version or update prior to 7.4 Update/GA 48 and there are already categorized assets in the system, re-index all search indexes to include the necessary `assetVocabularyCategoryIds` field in the search documents.
 
 ![Select the vocabulary.](./category-facet/images/06.png)
 
 With this behavior you can provide a powerful search facet experience: see the [example below](#example-creating-a-hierarchic-filtering-experience-in-the-category-facet-using-vocabularies) for one use case.
-
 
 ## Example: Creating a Hierarchic Filtering Experience in the Category Facet Using Vocabularies
 

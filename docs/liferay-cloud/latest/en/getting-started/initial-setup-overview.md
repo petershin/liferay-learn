@@ -7,7 +7,7 @@ uuid: 5fc44fbf-c6df-4d8f-94ac-e861649c8ae0
 ---
 # Initial Setup Overview
 
-Getting started with Liferay Cloud involves ensuring all accounts, environments, and services have been successfully provisioned and deployed in your instance. Begin with the following steps:
+Getting started with Liferay Cloud (SaaS or PaaS) involves ensuring all accounts, environments, and services have been successfully provisioned and deployed in your instance. Begin with the following steps:
 
 - [Check Setup Emails](#check-setup-emails)
 - [Access the Liferay Cloud Console](#access-the-liferay-cloud-console)

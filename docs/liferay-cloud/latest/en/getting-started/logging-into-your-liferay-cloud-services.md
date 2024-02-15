@@ -7,7 +7,7 @@ uuid: eac9c112-377f-4106-8800-041f96c3de1f
 ---
 # Logging into Your Liferay Cloud Services
 
-By default, you must log in to access the web interfaces for the Liferay and Infrastructure services on any non-production environment (e.g., uat). Typically, login credentials appear in the initial onboarding email, but they are also located in the Liferay Cloud Console.
+By default, you must log in to access the web interfaces for the Liferay and Infrastructure services on any non-production environment (e.g., uat). Typically, login credentials appear in the initial onboarding email, but they are also located in the Cloud console.
 
 ## Locating Login Credentials
 

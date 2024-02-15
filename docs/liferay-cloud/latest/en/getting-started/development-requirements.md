@@ -7,7 +7,7 @@ uuid: 277bf5b8-1723-45f0-aa7e-b0141e2181d3
 ---
 # Development Requirements
 
-Before beginning deployment in Liferay Cloud, developers planning to create modules should install the required tools. There are various development tools and frameworks that developers can use to create their customizations, but deployment to Liferay Cloud begins with the GitHub project created during the provisioning process.
+Before beginning deployment in Liferay PaaS, developers planning to create modules should install the required tools. There are various development tools and frameworks that developers can use to create their customizations, but deployment to Liferay Cloud begins with the GitHub project created during the provisioning process.
 
 In order to set up a local environment for development with Liferay Cloud, the following are required:
 

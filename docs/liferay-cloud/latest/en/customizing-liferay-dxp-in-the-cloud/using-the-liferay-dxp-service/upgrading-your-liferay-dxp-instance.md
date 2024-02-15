@@ -18,7 +18,7 @@ To update to new minor versions or service packs, instead see [Updating to a New
 ```
 
 ```{important}
-Upgrading an environment in Liferay Cloud requires restoring an upgraded database, and therefore involves downtime for the Liferay service to restart. Plan ahead for this downtime for production environments.
+Upgrading an environment in Liferay PaaS requires restoring an upgraded database, and therefore involves downtime for the Liferay service to restart. Plan ahead for this downtime for production environments.
 ```
 
 Review the following steps to perform a database upgrade:
@@ -46,7 +46,7 @@ Download a fresh bundle for the upgrade instead of reusing an old one. Data from
 
 Perform the following steps to download a backup (consisting of both the database and data volume) of the DXP instance currently running in your `prd` environment:
 
-1. Log in to the [Liferay Cloud console](https://console.liferay.cloud/login).
+1. Log in to the [Cloud console](https://console.liferay.cloud/login).
 
 1. Navigate to your production environment, then select _Backups_ from the menu.
 

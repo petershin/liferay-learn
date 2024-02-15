@@ -44,7 +44,7 @@ The volumes stored in NFS are also available to all `Deployment` type services. 
 
 ## How Liferay Cloud's Services are Configured
 
-The following details how the services in Liferay Cloud are pre-configured out-of-the-box:
+The following details how the services in Liferay PaaS and SaaS are pre-configured out-of-the-box:
 
 * The _Liferay_ and _Backup_ services use the **Deployment** type, so that they can share access to the document library, which is stored in  NFS.
 
@@ -56,7 +56,7 @@ The following details how the services in Liferay Cloud are pre-configured out-o
 
 ## Configuring Deployment Types
 
-By default, the services in Liferay Cloud are pre-configured in order to fit a majority of use cases. However, the deployment type for each service is configurable via the `kind` variable in the service's `LCP.json`:
+By default, the services in Liferay PaaS are pre-configured in order to fit a majority of use cases. However, the deployment type for each service is configurable via the `kind` variable in the service's `LCP.json`:
 
 ```json
 {

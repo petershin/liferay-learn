@@ -7,7 +7,7 @@ uuid: 002ecd02-b586-483f-bd07-a378f27d14fd
 ---
 # Configuring the Liferay DXP Service
 
-There are several methods available to configure Liferay DXP: through the in [DXP System Settings](https://learn.liferay.com/dxp/latest/en/system-administration/configuring-liferay/system-settings.html) and through the use of [config](https://learn.liferay.com/dxp/latest/en/system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.html) and [property files](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/reference/portal-properties.html). DXP property and configuration files for your Liferay DXP instance in Liferay Cloud are deployed by being placed inside of one of the `configs/` folders in the Liferay DXP service directory in your repository.
+There are several methods available to configure DXP in Liferay PaaS: through the in [DXP System Settings](https://learn.liferay.com/dxp/latest/en/system-administration/configuring-liferay/system-settings.html) and through the use of [config](https://learn.liferay.com/dxp/latest/en/system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.html) and [property files](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/reference/portal-properties.html). DXP property and configuration files for your Liferay DXP instance in Liferay PaaS are deployed by being placed inside of one of the `configs/` folders in the Liferay DXP service directory in your repository.
 
 ```
 liferay
@@ -26,7 +26,7 @@ With the exception of the `common/` directory, changes added to an environment-s
 
 [Portal properties](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/reference/portal-properties.html) are properties saved in a `portal-ext.properties` file. They are used to configure your Liferay DXP environment.
 
-For an on-premises Liferay DXP instance, this file belongs inside of `$LIFERAY_HOME`. When using Liferay Cloud, place portal properties file into the appropriate `configs/[ENV]/` folder(s) for them to be copied into `$LIFERAY_HOME` for the Liferay DXP instance on deployment.
+For an on-premises Liferay DXP instance, this file belongs inside of `$LIFERAY_HOME`. When using Liferay PaaS, place portal properties file into the appropriate `configs/[ENV]/` folder(s) for them to be copied into `$LIFERAY_HOME` for the Liferay DXP instance on deployment.
 
 For example, the properties in a dev environment will result from the property files in the `configs/common` directory and the properties in the `configs/dev` directory. If any files have the same name, the file in the environment specific directory will overwrite the file from the `common` directory.
 

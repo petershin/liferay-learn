@@ -7,7 +7,7 @@ uuid: 5ce6a26d-ef5c-4919-bf23-0567fadc595a
 ---
 # Setting Up Clustering in Liferay Cloud
 
-This article outlines the steps necessary to configure clustering for your Liferay DXP instance in Liferay Cloud.
+This article outlines the steps necessary to configure clustering for your Liferay DXP instance in Liferay PaaS.
 
 **Contents:**
 
@@ -18,7 +18,7 @@ This article outlines the steps necessary to configure clustering for your Lifer
 
 ## Enable the Clustering Environment Variable
 
-Start from the desired environment in the Liferay Cloud Console. Then, under `Services`, navigate to `liferay`, and then click `Environment Variables`. Ensure that the `LCP_PROJECT_LIFERAY_CLUSTER_ENABLED` variable is set to `true`. This instructs the image startup process to add the clustering configuration to Liferay DXP.
+Start from the desired environment in the Cloud console. Then, under `Services`, navigate to `liferay`, and then click `Environment Variables`. Ensure that the `LCP_PROJECT_LIFERAY_CLUSTER_ENABLED` variable is set to `true`. This instructs the image startup process to add the clustering configuration to Liferay DXP.
 
 ![Setting LCP_PROJECT_LIFERAY_CLUSTER_ENABLED](./setting-up-clustering-in-liferay-cloud/images/01.png)
 

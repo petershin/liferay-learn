@@ -7,7 +7,7 @@ uuid: dc78712a-aba2-48cd-9566-a6f9182726c7
 ---
 # Overview of the Liferay Cloud Deployment Workflow
 
-Liferay Cloud provides a robust framework for achieving a highly efficient CI/CD strategy. With Git and Jenkins integrations, you can automatically trigger CI builds that you can then deploy to project environments. Alternatively, you can skip the CI service's build process altogether and directly deploy local changes to project environments using the [Command Line Interface](../reference/command-line-tool.md) (CLI) tool.
+Liferay PaaS provides a robust framework for achieving a highly efficient CI/CD strategy. With Git and Jenkins integrations, you can automatically trigger CI builds that you can then deploy to project environments. Alternatively, you can skip the CI service's build process altogether and directly deploy local changes to project environments using the [Command Line Interface](../reference/command-line-tool.md) (CLI) tool.
 
 Although there are multiple paths for deployment, workflows generally follow these three stages:
 
@@ -38,7 +38,7 @@ To access a full history of builds across all project environments, navigate to 
 
 ## Deploy
 
-With Liferay Cloud, there are three ways to deploy services: deploying via the CLI tool (manually), deploying via the Liferay Cloud Management Console (manually), or configuring certain CI builds to deploy automatically.
+With Liferay PaaS, there are three ways to deploy services: deploying via the CLI tool (manually), deploying via the Liferay Cloud Management Console (manually), or configuring certain CI builds to deploy automatically.
 
 ### Option 1: Deploying Through the Command Line Interface
 

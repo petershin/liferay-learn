@@ -7,7 +7,7 @@ uuid: 0800d6b6-65f3-403c-b9d0-2986f95239e8
 ---
 # Configuring Persistent File Storage Volumes
 
-Administrators can configure the volumes for their services in Liferay Cloud depending on their deployment type (`Deployment` or `StatefulSet`). Volumes can be stored either with persistent shared storage (NFS) or with dedicated storage (SSD), depending on the deployment type. This article documents how to configure volumes via a service's `LCP.json` file. See [Understanding Deployment Types](./understanding-deployment-types.md) for more information on deployment types.
+Administrators can configure the volumes for their services in Liferay PaaS depending on their deployment type (`Deployment` or `StatefulSet`). Volumes can be stored either with persistent shared storage (NFS) or with dedicated storage (SSD), depending on the deployment type. This article documents how to configure volumes via a service's `LCP.json` file. See [Understanding Deployment Types](./understanding-deployment-types.md) for more information on deployment types.
 
 ```{note}
 The `/opt/liferay/data` directory (named `data` by default) is reserved for the document library in the `liferay` and `backup` services. This volume does not need to be configured in `LCP.json` files and the path cannot be changed. If this configuration is present, then it can be safely removed without causing issues.

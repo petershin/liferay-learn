@@ -52,23 +52,26 @@ Then, follow these steps:
     STARTED com.acme.g2f3.impl_1.0.0
     ```
 
-2. Log in as an administrator, open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)), and click on *Control Panel* &rarr; *Language Override*. Click the *Add* button (![Add icon](../../images/icon-add.png)) and add the following keys.
+1. Log in as an administrator, open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)), and click on *Control Panel* &rarr; *Language Override*. Click the *Add* button (![Add icon](../../images/icon-add.png)) and add the following keys.
 
-    |  Language Key | Value  |
-    |:---|:---|
-    | g2f3-shipment-created  | G2F3 Shipment Created  |
-    | g2f3-shipment-creator-name-definition-term  | Name of the account that created the order  |
-    | g2f3-order-shipping-address-definition-term  | Shipping Address  |
-    | g2f3-shipment-id-definition-term  | Shipment ID  |
+    |  Language Key                                | Value                                        |
+    | :------------------------------------------- | :------------------------------------------- |
+    | g2f3-shipment-created                        | G2F3 Shipment Created                        |
+    | g2f3-shipment-creator-name-definition-term   | Name of the account that created the order   |
+    | g2f3-order-shipping-address-definition-term  | Shipping Address                             |
+    | g2f3-shipment-id-definition-term             | Shipment ID                                  |
     | g2f3-shipment-creator-email-definition-term  | Email of the user that created the shipment  |
 
-    ```{important}
-    You can add language keys in the Language Override tool for Liferay DXP 7.4 U4+ or Liferay Portal 7.4 GA8+. For previous versions, you must add a `Language.properties` file under `/src/main/resources/content/` with the keys before building and deploying.
-    ````
+    !!! important
+        You can add language keys in the Language Override tool for Liferay DXP 7.4 U4+ or Liferay Portal 7.4 GA8+. For previous versions, you must add a `Language.properties` file under `/src/main/resources/content/` with the keys before building and deploying.
 
-3. Open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)), click on *Commerce* &rarr; *Channels*, and select *Notification Templates*.
+1. Open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)), click on *Commerce* &rarr; *Channels*.
 
-4. Create a new template using the *Add* button (![Add icon](../../images/icon-add.png)):
+1. Create a new channel called *G2F3 Channel* and set it's *Type* to *Site*. See [Introduction to Channels](../../store-management/channels/introduction-to-channels.md) for more infomation on channels.
+
+1. Select *Notification Templates*.
+
+1. Create a new template using the *Add* button (![Add icon](../../images/icon-add.png)):
 
     **Name:** Testing G2F3 Shipment Created
 
@@ -95,24 +98,24 @@ Then, follow these steps:
 
     *Admin*
 
-5. Click *Save*.
+1. Click *Save*.
 
-6. Open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)), click on *Control Panel* &rarr; *Sites*, and add a new Minium Demo site.
+1. Open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)), click on *Control Panel* &rarr; *Sites*, and add a new Minium Demo site.
 
-7. Log in as a buyer and place a new order in the store.
+1. Log in as a buyer and place a new order in the store.
 
-8. Log out and log back in as an administrator, open the *Global Menu*, and click on *Commerce* &rarr; *Orders*.
+1. Log out and log back in as an administrator, open the *Global Menu*, and click on *Commerce* &rarr; *Orders*.
 
-9. Select the Order and click on *Accept Order*. Then click on *Create Shipment*.
+1. Select the Order and click on *Accept Order*. Then click on *Create Shipment*.
 
-10. Check your inbox for the received notification.
+1. Check your inbox for the received notification.
 
 !!! important
-You can use a fake SMTP server like [MockMock](https://github.com/tweakers/MockMock) to test these notifications in your local development environment. Add the following line in your `portal-ext.properties` file: `mail.send.blacklist=noreply@liferay.com, noreply@domain.invalid, test@domain.invalid`. Run the jar using `java -jar MockMock.jar` and check `localhost:8282` for the received emails.
+    You can use a fake SMTP server like MockMock (https://github.com/tweakers/MockMock) to test these notifications in your local development environment. Add the following line in your `portal-ext.properties` file: `mail.send.blacklist=noreply@liferay.com, noreply@domain.invalid, test@domain.invalid`. Run the jar using `java -jar MockMock.jar` and check `localhost:8282` for the received emails.
 
 ## How the Custom Notification Type Works
 
-This example consists of 7 main steps. First, you must annotate the class for OSGi registration. Next, review the [CommerceNotificationType](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-notification-api/src/main/java/com/liferay/commerce/notification/type/CommerceNotificationType.java) interface. Then, finish the implementation of the custom `CommerceNotificationType`.
+This example consists of 6 main steps. First, you must annotate the class for OSGi registration. Next, review the [CommerceNotificationType](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-notification-api/src/main/java/com/liferay/commerce/notification/type/CommerceNotificationType.java) interface. Then, finish the implementation of the custom `CommerceNotificationType`.
 
 After that, create a `ModelListener` for the `CommerceShipment` class. Next, review the `CommerceDefinitionTermContributor` interface. Finally, implement term contributors to resolve the wildcards for the new notification.
 
@@ -241,8 +244,3 @@ This method returns all the term contributors available for the Notification typ
 ## Conclusion
 
 Congratulations! You now know the basics for implementing the `CommerceNotificationType` interface. You also know the basics of how notifications work and the use of a `MessageListener` to send your own notification type.
-
-## Related Topics
-
-- [Sending Emails](../../store-management/sending-emails.md)
-- [Configuring Mail](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/setting-up-liferay/configuring-mail.html)

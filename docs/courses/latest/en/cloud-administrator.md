@@ -10,9 +10,9 @@ uuid: f18aba0c-9da6-4057-a9df-0d610216d651
 
 With Liferay Cloud you can build your website on a secure and reliable enterprise cloud platform. Two offerings are available:
 
-* **Liferay SaaS (LXC)**: Includes a Liferay DXP instance running on infrastructure provisioned and maintained by Liferay. Utilize out-of-the-box Liferay DXP features to build your site and deploy your own code or client extensions to achieve customizations, when necessary.
+* **Liferay SaaS**: Includes a Liferay DXP instance running on infrastructure provisioned and maintained by Liferay. Utilize out-of-the-box Liferay DXP features to build your site and deploy your own code or client extensions to achieve customizations, when necessary.
 
-* **Liferay PaaS (self-managed)**: Includes a Liferay Cloud project where you directly control and configure each service in the cloud yourself, including Liferay DXP, the web server, database, and Elasticsearch server. You are responsible for maintaining and updating these services.
+* **Liferay PaaS**: Includes a Liferay Cloud project where you directly control and configure each service in the cloud yourself, including Liferay DXP, the web server, database, and Elasticsearch server. You are responsible for maintaining and updating these services.
 
 You'll learn how to
 

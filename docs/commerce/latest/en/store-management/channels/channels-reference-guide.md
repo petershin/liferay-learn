@@ -19,7 +19,7 @@ The _General_ tab consists of important channel settings like currency, order wo
 
 ### Details
 
-You can view the channel's name, currency, site type, and {bdg-secondary}`Liferay DXP 7.4 U84+/GA84+` supplier account dropdown here. 
+You can view the channel's name, currency, site type, and {bdg-secondary}`Liferay DXP 7.4 U84+/GA84+` supplier account drop-down here. 
 
 ![You can view the channel's name, currency, site type, and supplier account dropdown here.](./channels-reference-guide/images/01.png)
 
@@ -27,36 +27,44 @@ You can view the channel's name, currency, site type, and {bdg-secondary}`Lifera
 
 You can set the [shipping tax category](../../pricing/configuring-taxes/creating-tax-categories.md), price type (net or gross), and the discounts target price type here.
 
-_Price Type_ - Choose between net price or gross price. Net price includes tax during calculation, gross price doesn't.
+**Price Type:** Choose between net price or gross price. Net price includes tax during calculation, gross price doesn't.
 
-_Discounts Target Price Type_ - Choose net price to apply discounts to the net price and gross price to apply discounts to the gross price. 
+**Discounts Target Price Type:** Choose net price to apply discounts to the net price and gross price to apply discounts to the gross price. 
 
 ![Set the tax category, price type, and discounts target type in the Prices section.](./channels-reference-guide/images/02.png)
 
 ### Orders
 
-The orders section contains several settings to customize the ordering experience for end users.
+The Orders section contains several settings to customize the ordering experience for end users.
 
-* Buyer Order Approval Workflow/Seller Order Acceptance Workflow - Enable this to have workflows for [buyers and sellers](../../order-management/order-workflows/introduction-to-order-workflows.md).
-* Shipping Price Zero - Enable it to display shipping price as zero in the shipping method selection screen during checkout. 
-* Purchase Order Number - Enable it to display the purchase order number field in pending and placed orders widgets. 
-* Requested Delivery Date at Checkout - Enable it to allow buyers to enter the requested delivery date during checkout.
-* Guest Checkout - Enable it to allow guests to checkout using an email address.
-* {bdg-secondary}`Liferay DXP 7.4 U84+/GA84+` Allow Request a Quote on a Fully Priced Cart - Enable it to allow buyers to request a quote on a cart that has no products [priced on application](../../order-management/orders/price-on-application.md).
-* Maximum Number of Open Orders per Account - Set the maximum number of open orders per account
-* Order Importer Date Format - Set the date format to use while importing orders. See [Order Importer](../../order-management/order-importer.md) for more information.
-* Print Order Template - Upload a `.jrxml` file to use as a template for printing order details. 
+Buyer Order Approval Workflow/Seller Order Acceptance Workflow - Enable this to have workflows for [buyers and sellers](../../order-management/order-workflows/introduction-to-order-workflows.md).
+
+**Shipping Price Zero:** Enable to display shipping price as zero in the shipping method selection screen during checkout. 
+
+**Purchase Order Number:** Enable to display the purchase order number field in pending and placed orders widgets. 
+
+**Requested Delivery Date at Checkout:** Enable to allow buyers to enter the requested delivery date during checkout.
+
+**Guest Checkout:** Enable to allow guests to checkout using an email address.
+
+{bdg-secondary}`Liferay DXP 7.4 U84+/GA84+` **Allow Request a Quote on a Fully Priced Cart:** Enable to allow buyers to request a quote on a cart that has no products [priced on application](../../order-management/orders/price-on-application.md).
+
+**Maximum Number of Open Orders per Account:** Set the maximum number of open orders per account
+
+**Order Importer Date Format:** Set the date format to use while importing orders. See [Order Importer](../../order-management/order-importer.md) for more information.
+
+**Print Order Template:** Upload a `.jrxml` file to use as a template for printing order details. 
 
    !!! note
        You can download the [default order template](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-report-impl/src/main/resources/com/liferay/commerce/report/internal/exporter/dependencies/commerce_order.jrxml), make changes to it using [iReport](https://sourceforge.net/projects/ireport/), and upload it to override the default template.
 
-* Show Separate Order Items - Enable it to display each item added to the cart on a separate line instead of updating the quantity for the same item. 
+**Show Separate Order Items:** Enable to display each item added to the cart on a separate line instead of updating the quantity for the same item. 
 
 ![You can configure several settings to customize the ordering experience for end users.](./channels-reference-guide/images/03.png)
 
 ### Health Checks
 
-Use health checks to quickly fix common setup issues with your stores such as missing widgets. This section shows up only if there's an issue. 
+Use health checks to fix common setup issues with your stores quickly, such as missing widgets. This section shows up only if there's an issue. 
 
 ![Health checks allow you to quickly add Commerce portlets or fix issues if you had built the site manually.](./channels-reference-guide/images/04.png)
 
@@ -97,13 +105,13 @@ See the [Configuring the Commerce Notification Queue](../../store-management/sen
 
 Use notification templates to customize email notifications and define the triggering events.
 
-To learn more about sending emails notifications, see [Sending emails](../sending-emails.md).
+To learn more about sending email notifications, see [Sending emails](../sending-emails.md).
 
 To learn more about creating and using notification templates, see [Using Notification Templates](../../store-management/sending-emails/using-notification-templates.md).
 
 ## Category Display Pages
 
-The category display pages tab displays the list of all category display pages created for your site. Using a [category display page](../../creating-store-content/creating-category-display-pages.md), you can us a specific page to display all products tagged in a given category. To work with category display pages, you should first create [product categories](../../product-management/creating-and-managing-products/products/organizing-your-catalog-with-product-categories.md) and associate them with the required products.
+The category display pages tab shows all category display pages created for your site. You use a [category display page](../../creating-store-content/creating-category-display-pages.md) to display all products tagged in a given category. To work with category display pages, you must create [product categories](../../product-management/creating-and-managing-products/products/organizing-your-catalog-with-product-categories.md) and associate them with the required products.
 
 See [Creating Pages](https://learn.liferay.com/dxp/latest/en/site-building/creating-pages.html) to learn more about creating pages. See [Tags and Categories](https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/tags-and-categories.html) to learn more about creating tags and categories.
 
@@ -113,7 +121,7 @@ Product display pages operate similarly to category display pages. Use this to c
 
 ## Payment Restrictions
 
-Choose countries restricted for your payment method here. If there's no billing address listed, the shipping address is used. To do so, you must activate at least one [payment method](../../store-management/configuring-payment-methods/managing-payment-methods.md). Check the boxes for each country to restrict accounts from that country from using the chosen payment method.
+Choose countries restricted for your payment method here. If no billing address appears, the shipping address is used. To do so, you must activate at least one [payment method](../../store-management/configuring-payment-methods/managing-payment-methods.md). Check the boxes for each country to restrict accounts from that country from using the chosen payment method.
 
 ![Select countries to restrict accounts from using the chosen payment method.](./channels-reference-guide/images/09.png)
 
@@ -127,7 +135,7 @@ Choose countries restricted for your shipment method here.
 
 {bdg-secondary}`Liferay DXP 2024.Q1+/Portal 7.4 GA112+`
 
-By default, a channel is eligible to all accounts. You can control channel eligibility in the Eligibility tab. 
+By default, a channel is eligible for all accounts. You can control channel eligibility in the Eligibility tab. 
 
 1. Select _Specific Accounts_.
 1. Search for an account and click _Select_.
@@ -136,7 +144,6 @@ By default, a channel is eligible to all accounts. You can control channel eligi
 ![Choose the eligible accounts for the given channel.](./channels-reference-guide/images/11.png)
 
 !!! note
-
     You cannot link guest accounts to a channel. Users from an account linked to an eligible channel cannot access other ineligible channels. If they are also linked to an account that is eligible for another channel, they must log in using the credentials for that account to access that channel. 
 
 ## Punch Out
@@ -145,7 +152,7 @@ Enable this to set a punch out URL for your external procurement system. See [Pu
 
 ## Commerce 2.1 and Below
 
-This article provides an overview to the channels management interface. To create a channel, see [Managing Channels](./managing-channels.md).
+To create a channel, see [Managing Channels](./managing-channels.md).
 
 ### General
 

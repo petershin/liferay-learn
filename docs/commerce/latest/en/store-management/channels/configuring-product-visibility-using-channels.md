@@ -10,7 +10,7 @@ taxonomy-category-names:
 ---
 # Configuring Product Visibility Using Channels
 
-When you create a product, it is visible across all channels but you can limit visibility to specific channels.
+When you create a product, it is visible across all channels, but you can limit visibility to specific channels.
 
 Consider a multi-brand scenario where multiple brands share the same products. Here, each site has a different brand experience. 
 

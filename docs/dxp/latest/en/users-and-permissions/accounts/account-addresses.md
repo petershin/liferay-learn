@@ -55,4 +55,4 @@ By default, an account's address is eligible for all channels. You can control a
 
 ![Choose the eligible channels for the selected address.](./channels-reference-guide/images/04.png)
 
-If an address is only eligible for a specific channel, it can't be selected during checkout in ineligible channels. The address won't be available to select on all orders coming from ineligible channels for the selected account.
+If an address is only eligible for a specific channel, it can't be selected during checkout in ineligible channels. The address cannot be selected on all orders coming from ineligible channels for the selected account.

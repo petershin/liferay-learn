@@ -14,11 +14,11 @@ taxonomy-category-names:
 ---
 # Channels
 
-Channels represent a place where you sell products. It can be a Liferay customer portal, a B2B marketplace, or even back office phone sales. By connecting sales channels to Liferay, sellers can manage product content, inventory, orders, and fulfillment across multiple channels in a single place.
+Channels represent a place where you sell products: a Liferay customer portal, a B2B marketplace, or even back office phone sales. By connecting sales channels to Liferay, sellers can manage product content, inventory, orders, and fulfillment across multiple channels in a single place.
 
 To display products and receive orders, a Liferay instance must have at least one channel.
 
-With multiple channels, you can create more than one Liferay site, each with a unique customer experience. You can also connect them to third party softwares or systems, or use a combination of both. You can configure products and discounts to be available in all channels or specific channels. Similarly, multiple configurations are available at the channel level. This includes:
+With multiple channels, you can create more than one Liferay site, each with a unique customer experience. You can also connect them to third party software or systems, or use a combination of both. You can configure products and discounts to be available in all channels or specific channels. Similarly, multiple configurations are available at the channel level, including
 
 * Category Display Pages
 * Notifications

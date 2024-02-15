@@ -14,7 +14,7 @@ You can configure Liferay Commerce to send email notifications for a variety of 
 
 To add a new notification type, you must implement the `CommerceNotificationType` interface. See [Sending Emails](../../store-management/sending-emails.md) to learn how to set up a Notification Template and view the OOTB types available.
 
-!!! warning
+!!! note
     This tutorial uses the Minium Demo site initializer.
 
 ## Overview of a Notification Type
@@ -55,7 +55,9 @@ Then, follow these steps:
     STARTED com.acme.g2f3.impl_1.0.0
     ```
 
-1. Log in as an administrator, open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)), and click on *Control Panel* &rarr; *Language Override*. Click the *Add* button (![Add icon](../../images/icon-add.png)) and add the following keys.
+1. Log in as an administrator, open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)), click on *Control Panel* &rarr; *Sites*, and add a new Minium Demo site.
+
+1. After creating the site, open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)) again, and go to *Control Panel* &rarr; *Language Override*. Click *Add* (![Add icon](../../images/icon-add.png)) and add the following keys.
 
     |  Language Key                                | Value                                        |
     | :------------------------------------------- | :------------------------------------------- |
@@ -68,21 +70,11 @@ Then, follow these steps:
     !!! important
         You can add language keys in the Language Override tool for Liferay DXP 7.4 U4+ or Liferay Portal 7.4 GA8+. For previous versions, you must add a `Language.properties` file under `/src/main/resources/content/` with the keys before building and deploying.
 
-1. Open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Channels*.
+1. Now, open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)) and go to *Commerce* &rarr; *Channels*.
 
-1. Click *Add* (![Add icon](../../images/icon-add.png)) to create a new channel and enter the following information:
+1. Select *Minium* and go to *Notification Templates*.
 
-   **Name:** G2F3 Channel
-
-   **Currency:** USD
-
-   **Type:** Site
-
-1. Click *Add*. See [Introduction to Channels](../../store-management/channels/introduction-to-channels.md) for more information on channels.
-
-1. Select *Notification Templates*.
-
-1. Create a new template using the *Add* button (![Add icon](../../images/icon-add.png)):
+1. Click *Add* (![Add icon](../../images/icon-add.png)) to create a new template:
 
     **Name:** Testing G2F3 Shipment Created
 
@@ -111,13 +103,11 @@ Then, follow these steps:
 
 1. Click *Save*.
 
-1. Open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)), click on *Control Panel* &rarr; *Sites*, and add a new Minium Demo site.
+1. Log out and log in as a buyer and place a new order in the store.
 
-1. Log in as a buyer and place a new order in the store.
+1. Log out and log back in as an administrator, open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)), and go to *Commerce* &rarr; *Orders*.
 
-1. Log out and log back in as an administrator, open the *Global Menu*, and click on *Commerce* &rarr; *Orders*.
-
-1. Select the Order and click on *Accept Order*. Then click on *Create Shipment*.
+1. Select the order and click *Accept Order*. Then click *Create Shipment*.
 
 1. Check your inbox for the received notification.
 

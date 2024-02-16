@@ -28,14 +28,14 @@ Finally, asset libraries work under the same permission management system as oth
 
 Use asset libraries to improve content collaboration, simplify asset organization, and reduce content duplication across your instance. See [Creating and Managing Asset Libraries](./asset-libraries/creating-and-managing-asset-libraries.md) to get started with asset libraries.
 
-::::
+::::{grid} 2
 :gutter: 3 3 3 3
 
-:::{grid-item-card} 
+:::{grid-item-card} Creating and Managing Asset Libraries
 :link: ./asset-libraries/creating-and-managing-asset-libraries.md
 :::
 
-:::{grid-item-card} 
+:::{grid-item-card} Asset Library Content
 :link: ./asset-libraries/asset-library-content.md
 :::
 ::::

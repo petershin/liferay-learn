@@ -13,7 +13,7 @@ taxonomy-category-names:
 {bdg-link-primary}`[Beta Feature](../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
 
 !!! important
-    This feature is currently behind a beta feature flag (COMMERCE-8087). Read [Release Feature Flags](../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags) for more information. The data migration center currently only supports the import and export of object definitions, object entries, and API applications.
+    This feature is currently behind a beta feature flag (COMMERCE-8087). The data migration center currently only supports the import and export of object definitions, object entries, and API applications. Read [Beta Feature Flags](../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags) for more information.
 
 The data migration center makes it easy for you to move your object definitions and object entries between Liferay installations.
 
@@ -40,50 +40,32 @@ To export object definitions,
 
 1. Click *Add* (![Add icon](../../images/icon-add.png)) and select *Export File*.
 
-1. (Optional) In the next page, select an export template if using a previously saved template.
+1. (Optional) In the next page, select an export *Template* if using a previously saved template.
 
-1. Select *ObjectDefinition (v1_0 - Liferay Object Admin REST)* as the entity type.
+1. Choose `ObjectDefinition (v1_0 - Liferay Object Admin REST)` as the Entity Type.
 
-1. Select one of the export file formats.
+   If the `ObjectDefinition (v1_0 - Liferay Object Admin REST)` option is not showing, select a different export file format: JSON, JSONL, or JSONT.
+
+1. Select one of the Export File Formats.
 
    !!! note
-       The data migration center only supports the JSON and JSONL file format for importing.
+       The data migration center only supports the JSON and JSONL file format for importing object definitions.
 
        If exporting to use in conjunction with batch client extensions, select the JSONT file format. JSONT is required for `*.batch-engine-dat.json` files.
 
-1. Under the fields section, select the object definition fields you wanted included in the export.
+   <!-- The team plans to support CSV in the future as well - Eric -->
+
+1. Under the Fields section, select the object definition fields you want to export.
 
    ![Select the object definition fields you wish to export.](./data-migration-center/images/02.png)
 
-1. Click *Save as Template* to save the export settings for future use. Give the template a name and click *Save*.
+1. (Optional) Click *Save as Template* to save the export settings for future use. Give the template a name and click *Save*.
 
 1. Finally, click *Export* to export the object definitions.
 
-1. A window appears to display the export process. When the job is completed, click *Download* to download a zip file.
+1. A window appears to display the export task. When the job is completed, click *Download* to download a zip file to your local machine.
 
    ![Click download to download a zip file.](./data-migration-center/images/03.png)
-
-   The zip file is downloaded to your local machine.
-
-## Exporting Object Entries
-
-To export object entries,
-
-1. Click *Add* (![Add icon](../../images/icon-add.png)) and select *Export File*.
-
-1. (Optional) In the next page, select an export template if using a previously saved template.
-
-1. Under entity type, select the object you wish to work with. See [creating and managing objects](../../building-applications/objects/creating-and-managing-objects.md) to learn more about objects.
-
-1. Select one of the export file formats.
-
-1. Under the fields section, select the object definition fields you wanted included in the export.
-
-1. Click *Save as Template* to save the export settings for future use. Give the template a name and click *Save*.
-
-1. Finally, click *Export* to export the object entries.
-
-1. A window appears to display the export process. When the job is completed, click *Download* to download a zip file. The zip file is downloaded to your local machine.
 
 ## Importing Object Definitions
 
@@ -91,66 +73,87 @@ To import object definitions,
 
 1. Click *Add* (![Add icon](../../images/icon-add.png)) and select *Import File*.
 
-1. In the next page, enter a name for the new import task.
+1. In the next page, enter a *Name* for the new import task.
 
-1. (Optional) Select an import template if using a previously saved template.
+1. (Optional) Select an import *Template* if using a previously saved template.
 
-1. Select *ObjectDefinition (v1_0 - Liferay Object Admin REST)* as the entity type.
+1. Choose `ObjectDefinition (v1_0 - Liferay Object Admin REST)` as the Entity Type.
 
 1. Use the checkbox to select whether to have the import task stop or continue upon error.
 
-1. Under import strategy, select an option to *Add or Update Records* or *Only Add New Records*. Note, when *Only Add New Records* is selected, if an entity already exists, the import task fails with an error. Select *Add or Update Records* instead to have the data migration center overwrite the existing entity.
+1. Under Import Strategy, select an option to Add or Update Records or Only Add New Records.
 
-1. Under update strategy, select an option to *Update Changed Record Fields* or *Overwrite Records*. Note, when *Overwrite Records* is selected, the whole entity is updated. When *Update Changed Record Fields* is selected, only the fields defined in the import file are updated, and the rest of the existing values are left alone.
+   When Only Add New Records is selected, if an entity already exists, the import task fails with an error. Select *Add or Update Records* instead to have the data migration center overwrite the existing entity.
 
-1. Under file settings, click *Choose File* and locate the JSON file that contains the object definitions to import.
+1. Under Update Strategy, select an option to Update Changed Record Fields or Overwrite Records.
 
-   ![Select the JSON file that contains the object definitions to import.](./data-migration-center/images/04.png)
+   When Overwrite Records is selected, the whole entity is updated. When Update Changed Record Fields is selected, only the fields defined in the import file are updated, and the rest of the existing values are left alone.
 
-1. Under import mappings, make any mapping changes you wish by selecting the drop-down list under source file field.
+1. Under file settings, click *Choose File* and locate the file that contains the object definitions to import.
+
+   !!! note
+       The data migration center only supports the JSON and JSONL file format for importing object definitions.
+
+   ![Select the file that contains the object definitions to import.](./data-migration-center/images/04.png)
+
+1. Under Import Mappings, make any mapping changes you wish by selecting the drop-down list under Source File Field.
 
    ![Make any mapping changes under the import mappings section.](./data-migration-center/images/05.png)
 
-1. Click *Save as Template* to save the export settings for future use. Give the template a name and click *Save*.
+1. (Optional) Click *Save as Template* to save the export settings for future use. Give the template a name and click *Save*.
 
-1. Click *Next* to continue the import. In the pop up window, click *Start Import*.
+1. Click *Next* to continue the import. In the pop-up window, click *Start Import*.
 
-1. The pop up window shows the progress of the import. Click *Close* when completed. Note, if an error occurs in the import process, return to the main data migration page and click *Options* (![Options icon](../../images/icon-options.png)) to download an error report.
+1. The pop-up window shows the progress of the import task. Click *Close* when completed.
+
+   If an error occurs in the import task, return to the main data migration page and click *Options* (![Options icon](../../images/icon-options.png)) to download an error report.
 
 1.  Navigate to *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) &rarr; *Control Panel* &rarr; *Objects* to verify the imported object definition.
 
+## Exporting Object Entries
+
+<!-- I decided to remove the directions here and in Importing Object Entries as they are the same as Exporting/Importing Object Definitions. Instead, I decided to provide the differences between processes. - Eric -->
+
+To export object entries, follow most of the process as if you were [Exporting Object Definitions](#exporting-object-definitions).
+
+Here are the main differences:
+
+-  Instead of choosing `ObjectDefinition (v1_0 - Liferay Object Admin REST)` as the Entity Type, select the object you wish to work with (e.g. `C_YourObject (v1_0 - Liferay Object REST)`). See [creating and managing objects](../../building-applications/objects/creating-and-managing-objects.md) to learn more about objects.
+
+-  {bdg-secondary}`Liferay DXP 2024.Q1+/Portal 7.4 GA112+` If your object definition is site-scoped, you can define a *Scope* by selecting a site from a list and exporting entries from the selected site.
+
+   ![With site-scoped object definitions, export object entries from a specific scope.](./data-migration-center/images/06.png)
+
+-  {bdg-secondary}`Liferay DXP 2024.Q1+/Portal 7.4 GA112+` You can select CSV as the Export File Format.
+
+   The header is always included in the generated CSV file.
+
+   When using the CSV format, see which fields are supported and can be selected for export in the Fields list.
+
+   !!! important
+       CSV files currently support these field types: `dateandtime`, `date`, `decimal`, `integer`, `longint`, `longtext`, `precissiondecimal`, `richtext`, `text`, and `picklist`.
+
+   ![Export only supported fields.](./data-migration-center/images/07.png)
+
 ## Importing Object Entries
 
-To import object entries,
-
-1. Click *Add* (![Add icon](../../images/icon-add.png)) and select *Import File*.
+To import object entries, follow most of the process as if you were [Importing Object Definitions](#importing-object-definitions).
 
 !!! note
     Make sure your object exists before attempting to import its entries.
 
-1. In the next page, enter a name for the new import task.
+Here are the main differences:
 
-1. (Optional) Select an import template if using a previously saved template.
+-  Instead of choosing `ObjectDefinition (v1_0 - Liferay Object Admin REST)` as the Entity Type, select the object you wish to work with (e.g. `C_YourObject (v1_0 - Liferay Object REST)`). See [creating and managing objects](../../building-applications/objects/creating-and-managing-objects.md) to learn more about objects.
 
-1. Under entity type, select the object you wish to work with.
+-  {bdg-secondary}`Liferay DXP 2024.Q1+/Portal 7.4 GA112+` If your object definition is site-scoped, you can define a *Scope* by selecting a site from a list and importing entries to the selected site.
 
-1. Use the checkbox to select whether to have the import task stop or continue upon error.
+-  {bdg-secondary}`Liferay DXP 2024.Q1+/Portal 7.4 GA112+` You can import object entries from CSV files.
 
-1. Under import strategy, select an option to *Add or Update Records* or *Only Add New Records*. Note, when *Only Add New Records* is selected, if the entity already exists, the import task fails with an error. Select *Add or Update Records* instead to have the data migration center overwrite the existing entity.
+   If the CSV file contains unsupported field types, no file format error is shown and the process tries to load the entries.
 
-1. Under update strategy, select an option to *Update Changed Record Fields* or *Overwrite Records*. Note, when *Overwrite Records* is selected, the whole entity is updated. When *Update Changed Record Fields* is selected, only the fields defined in the import file are updated, and the rest of the existing values are left alone.
-
-1. Under file settings, click *Choose File* and locate the JSON file that contains the object entries to import.
-
-1. Under import mappings, make any mapping changes you wish by selecting the drop-down list under source file field.
-
-1. Click *Save as Template* to save the export settings for future use. Give the template a name and click *Save*.
-
-1. Click *Next* to continue the import. In the pop up window, click *Start Import*.
-
-1. The pop up window shows the progress of the import. Click *Close* when completed. Note, if an error occurs in the import process, return to the main data migration page and click *Options* (![Options icon](../../images/icon-options.png)) to download an error report.
-
-1. If your [published object](../../building-applications/objects/creating-and-managing-objects/creating-objects.md#publishing-object-drafts) has a panel link, navigate to the object to verify the imported object entries.
+   !!! important
+       CSV files currently support these field types: `dateandtime`, `date`, `decimal`, `integer`, `longint`, `longtext`, `precissiondecimal`, `richtext`, `text`, and `picklist`.
 
 ## Related Topics
 

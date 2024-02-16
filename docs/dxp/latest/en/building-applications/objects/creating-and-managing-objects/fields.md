@@ -5,6 +5,7 @@ toc:
   - ./fields/adding-and-managing-custom-states.md
   - ./fields/aggregation-fields.md
   - ./fields/attachment-fields.md
+  - ./fields/auto-increment-fields.md
   - ./fields/encrypted-fields.md
   - ./fields/formula-fields.md
   - ./fields/picklist-fields.md

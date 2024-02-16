@@ -66,3 +66,10 @@ The Session Timeout category contains settings that specify `session.timeout.aut
 | :--- | :--- |
 | Auto Extend | If checked, automatically extends the session without prompting the user, keeping the session open as long as the user's browser is open with a loaded page. |
 | Auto Extend Offset | When Auto Extend is enabled, set the number of seconds between when the extend process is initiated and the actual session expiration. |
+
+## Related Topics
+
+- [Site Templates](../../../site-building/sites/site-templates.md)
+- [Configuring Site Template Propagation](../../../site-building/sites/site-templates/configuring-site-template-propagation.md)
+- [Staging](../../../site-building/publishing-tools/staging.md)
+- [Portal Properties](../../../installation-and-upgrades/reference/portal-properties.md)

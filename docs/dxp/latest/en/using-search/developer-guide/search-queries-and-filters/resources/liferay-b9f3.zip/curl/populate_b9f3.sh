@@ -14,13 +14,13 @@ function main {
 		-F "document={\"description\": \"Baker\", \"title\": \"Able Document\"}" \
 		-F "file=@b9f3.txt" \
 		-H "Content-Type: multipart/form-data" \
-		-X POST \
+		-X "POST" \
 		"http://localhost:8080/o/headless-delivery/v1.0/sites/${1}/documents" \
 		-u "test@liferay.com:learn"
 
 	local documentFolderId=$(curl \
 		-H "Content-Type: application/json" \
-		-X POST \
+		-X "POST" \
 		"http://localhost:8080/o/headless-delivery/v1.0/sites/${1}/document-folders" \
 		-d "{\"name\": \"Able Document Folder\"}" \
 		-u "test@liferay.com:learn" | \
@@ -31,7 +31,7 @@ function main {
 		-F "document={\"description\": \"Baker\", \"title\": \"Able Document\"}" \
 		-F "file=@b9f3.txt" \
 		-H "Content-Type: multipart/form-data" \
-		-X POST "http://localhost:8080/o/headless-delivery/v1.0/document-folders/${documentFolderId}/documents" \
+		-X "POST" "http://localhost:8080/o/headless-delivery/v1.0/document-folders/${documentFolderId}/documents" \
 		-u "test@liferay.com:learn"
 
 	local contentStructuredId=$(curl \
@@ -42,14 +42,14 @@ function main {
 
 	curl \
 		-H "Content-Type: application/json" \
-		-X POST \
+		-X "POST" \
 		"http://localhost:8080/o/headless-delivery/v1.0/sites/${1}/structured-contents" \
 		-d "{\"contentFields\": [{\"contentFieldValue\": {\"data\": \"<p>Foo</p>\"}, \"name\": \"content\"}], \"contentStructureId\": \"${contentStructuredId}\", \"title\": \"Able Content\"}" \
 		-u "test@liferay.com:learn"
 
 	local structuredContentFolderId=$(curl \
 		-H "Content-Type: application/json" \
-		-X POST \
+		-X "POST" \
 		"http://localhost:8080/o/headless-delivery/v1.0/sites/${1}/structured-content-folders" \
 		-d "{\"description\": \"Foo\", \"name\": \"Able Content Folder\"}" \
 		-u "test@liferay.com:learn" | \
@@ -58,7 +58,7 @@ function main {
 
 	curl \
 		-H "Content-Type: application/json" \
-		-X POST \
+		-X "POST" \
 		"http://localhost:8080/o/headless-delivery/v1.0/structured-content-folders/${structuredContentFolderId}/structured-contents" \
 		-d "{\"contentFields\": [{\"contentFieldValue\": {\"data\": \"<p>Foo</p>\"}, \"name\": \"content\"}], \"contentStructureId\": \"${contentStructuredId}\", \"title\": \"Able Content\"}" \
 		-u "test@liferay.com:learn"

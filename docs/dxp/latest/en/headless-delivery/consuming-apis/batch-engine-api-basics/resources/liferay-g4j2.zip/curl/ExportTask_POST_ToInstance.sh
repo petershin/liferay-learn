@@ -1,5 +1,4 @@
 curl \
 	-H "Content-Type: application/json" \
-	-X "POST" \
-	"http://localhost:8080/o/headless-batch-engine/v1.0/export-task/${1}/${2}" \
+	-X "POST" "http://localhost:8080/o/headless-batch-engine/v1.0/export-task/${1}/${2}" \
 	-u "test@liferay.com:learn"

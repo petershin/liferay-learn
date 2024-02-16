@@ -21,21 +21,23 @@ taxonomy-category-names:
 
 Accounts provide administrators with a way to organize and manage users for various commerce or business needs. Unlike [organizations](./organizations.md) or [user groups](./user-groups.md), accounts help facilitate interactions that might take place in business situations such as the purchasing of goods and services or managing existing customers.
 
-There are three different account types, *Business*, *Person*, and *Guest* types. Business accounts all you to associate multiple users to an account. Person type accounts can only have one account associated with them. Guest-type accounts provide a way for unregistered users to interact with your business or site.
+There are three different account types, *Business*, *Person*, and *Guest* types. Business accounts all you to associate multiple users to an account. Person type accounts can only have one account associated with them. Guest accounts provide a way for unregistered users to interact with your business or site.
 
-```{note}
-Accounts is a feature, originally found in [Liferay Commerce](https://learn.liferay.com/commerce/latest/en/users-and-accounts/account-management.html), that is now a part of Liferay DXP 7.4 and above.
-```
+!!! note
+    Accounts is a feature, originally found in [Liferay Commerce](https://learn.liferay.com/commerce/latest/en/users-and-accounts/account-management.html), that is now a part of Liferay DXP 7.4 and above.
 
 ## Creating an Account
 
 1. Open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)) and navigate to *Control Panel* &rarr; *Accounts*.
 
-1. Click the *Add* icon (![Add icon](../images/icon-add.png)) to create a new account.
+1. Click *New*.
 
-1. Give your account a name and select the type. Note that once an account is created the type cannot be changed.
+1. Give your account a name and select the type. Note that you cannot change the account type after creation.
 
    ![Give you account a name and select the type.](./accounts/images/01.png)
+
+   !!! note
+       Starting from Liferay DXP 2024.Q1+/Portal 7.4 GA112+, the account name can be up to 250 characters long. The earlier limit was 100.
 
 1. Add additional information for your account such as Tax ID or description. Click *Save* to create the new account.
 
@@ -49,7 +51,7 @@ The Details tab displays the main information about the account such as the acco
 
 ### Addresses Tab
 
-The Addresses tab displays the different addresses associated with the account. To add a new address click the Add icon (![Add icon](../images/icon-add.png)). Fill out the address information and click the *Save* button.
+The Addresses tab displays the different addresses associated with the account. To add a new address click *New* and fill out the address information. Then, click *Save*.
 
 ![Fill out the address information and click Save.](./accounts/images/03.png)
 
@@ -59,7 +61,7 @@ See [Account Addresses](./accounts/account-addresses.md) to learn more.
 
 The Users tab displays the different users associated with the account. Note, this tab does not exist for Person type accounts or Guest type accounts. To associate a user to the account,
 
-1. Click the *Add* icon (![Add icon](../images/icon-add.png)). A window shows a list of account users available to select.
+1. Click *New*. A window shows a list of account users available to select.
 
 1. Select users by checking the box next to a user's name and click the *Assign* button.
 

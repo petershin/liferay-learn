@@ -51,7 +51,7 @@ This vision continues today with our Mission Statement:
 
 * Founded in 2004
 * Head office in Los Angeles
-* Global presence in 22 locations
+* Global presence in 20 locations
 * Over 5 Million downloads worldwide
 * 350+ Partners globally
 * 1200+ Enterprise Customers
@@ -95,12 +95,15 @@ Unlike many other software companies, Liferay employees stay with the organizati
 
 The Competitive Advantages of our product include
 
-* Seamless integration with various legacy software applications and easy integration with almost any external system
-* Ranked best-in-class for B2B and B2E use cases by Gartner, and excellent track record for Consumer and Government solutions
-* Extensibility and flexibility to address the requirements of the most demanding enterprise customers
+* Fully integrated Digital Experience Platform
+* Seamless integration with various legacy software applications (e.g., CRM and ERP) and easy integration with almost any external system
+* Composible architecture to use Liferay's core functionalities
 * Low-Code and No-Code capabilities to allow non-developers to create tailored solutions
-* Outstanding customer support with industry-leading customer retention rates
-* Organic innovation. Unlike many of our competitors, Liferay is and has always been developed entirely in-house, bringing substantial user-experience benefits over platforms developed through acquisition
+* Best-of-breed and market leading Portal and capabilities
+* Limitless creation of various types of solutions in the platform
+* Open Source and organically grown platform
+* SaaS, PaaS, and Self-Hosted as available deployment models
+* Enterprise grade platform focused on high-level security, scalability, and availability
 
 ![Liferay has numerous competitive advantages.](./introduction-to-liferay/images/03.png)
 

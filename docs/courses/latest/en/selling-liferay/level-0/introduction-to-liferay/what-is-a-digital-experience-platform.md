@@ -1,6 +1,6 @@
 ---
 uuid: bb21b1db-1899-41cb-a3e7-b034c0582e08
-visibility: 
+visibility:
 - Employee
 - Partner
 ---
@@ -39,6 +39,8 @@ Gartner has frequently recognized this in Liferay. For example in 2022, Gartner 
 
 > “Liferay targets enterprise IT buyers with its powerful tooling and pure-play portal heritage.”
 
+On top of it, Liferay has also searched ways to innovate by going beyond DXP, the result of which being the addition of CMS, Commerce, and Low-Code capabilities.
+
 ## Anatomy of a Digital Experience Platform
 
 The basic anatomy of a Digital Experience Platform could be described as follows:
@@ -64,7 +66,9 @@ Another way to look at what a DXP should provide is to look at the customer life
 
 ## Liferay Deployment Approaches
 
-Our DXP deployment offerings include SaaS, PaaS and self-hosted options. Our SaaS offering---Liferay Experience Cloud---is a flexible, DXP-as-a-Service offering to create, launch, and optimize digital solutions with the agility and convenience of SaaS.
+With its composable architecture and the addition of strong Low-Code functionality, Liferay isn't just a complete, integrated Digital Experience Platform, but also goes beyond DXP's capabilities, making it usable to create any digital solution. This flexibility can make Liferay be used as the core component of any Digital Experience architecture.
+
+Our Liferay deployment offerings include SaaS, PaaS and Self-Hosted options.
 
 ## Tailored Solutions
 
@@ -88,6 +92,6 @@ Some global organizations using Liferay Platform for serving their customers and
 
 ## What’s Next
 
-Congratulations! You've now completed the Introduction to Liferay module. 
+Congratulations! You've now completed the Introduction to Liferay module.
 
 Next: learn about the [Liferay Product Offering](../liferay-product-offering.md).

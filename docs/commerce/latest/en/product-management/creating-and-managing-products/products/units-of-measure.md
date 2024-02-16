@@ -18,21 +18,23 @@ Businesses can have different ways of maintaining and selling their stock. This 
 * ton/kilogram/gram
 * pallet/case/unit
 
+!!! important
+    This feature is currently behind a release feature flag. Read [Release Feature Flags](https://learn.liferay.com/web/guest/w/dxp/system-administration/configuring-liferay/feature-flags#release-feature-flags) for more information.
+
 You can define your own units of measure to manage, price, and sell your inventory by these defined units. You can also use UOM to sell stock in decimal quantities. 
 
 Units of measure link to SKUs. After creating the first unit of measure, all existing inventory and pricing information for the SKU gets mapped to the new unit. 
 
-```{important}
-The first unit of measure you create adopts the pricing and inventory information related to the SKU. If you are introducing units of measure to previously traded SKUs, you must define the unit corresponding to the existing SKU first, and then create any additional UOMs.
-```
+!!! important
+    The first unit of measure you create adopts the pricing and inventory information related to the SKU. If you are introducing units of measure to previously traded SKUs, you must define the unit corresponding to the existing SKU first, and then create any additional UOMs.
 
-1. Open the *Global Menu* (![Applications Menu icon](../../../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Products*.
+1. Open the *Global Menu* (![Global Menu icon](../../../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Products*.
 
 1. Select the product for the new unit of measure.
 
 1. Go to the SKUs tab and select the SKU.
 
-1. Select the *Units of Measure (UOM)* tab and click *Add* (![Add button](../../../images/icon-add.png)).
+1. Select the *Units of Measure (UOM)* tab and click *Add* (![Add icon](../../../images/icon-add.png)).
 
    ![Enter the required details to create a new unit of measure.](./units-of-measure/images/01.png)
 

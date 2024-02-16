@@ -1,4 +1,5 @@
 curl \
+	"http://localhost:8080/o/c/ables/${1}/ableToBaker/${2}" \
 	-H "Content-Type: application/json" \
-	-X "DELETE" "http://localhost:8080/o/c/ables/${1}/ableToBaker/${2}" \
+	-X "DELETE" \
 	-u "test@liferay.com:learn" 

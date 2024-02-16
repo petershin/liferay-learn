@@ -39,7 +39,7 @@
 
 ```bash
 curl -X "POST" "http://localhost:8080/o/c/timeOffRequest?restrictFields=actions" \
-     -H 'Content-Type: application/json' \
+     -H "Content-Type: application/json" \
      -u 'test@liferay.com:test' \
      -d $'{
   "document": 12345

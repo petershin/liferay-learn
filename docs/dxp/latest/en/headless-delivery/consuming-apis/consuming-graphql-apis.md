@@ -47,7 +47,7 @@ Follow these steps:
 ```{note}
 You can also discover your local installation's APIs by requesting the schema directly:
 
-`curl 'http://localhost:8080/o/graphql'  -H 'Content-Type: application/json' --data '{"query":"query{ __schema{ queryType{ name fields{ name args{ name } description } } } }","variables":{}}'`
+`curl 'http://localhost:8080/o/graphql'  -H "Content-Type: application/json" --data '{"query":"query{ __schema{ queryType{ name fields{ name args{ name } description } } } }","variables":{}}'`
 
 
 This URL does not require authentication, but it's quite cumbersome to manage the returned schema. For this reason, it's better to use the included GraphQL client.

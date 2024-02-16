@@ -37,7 +37,7 @@ GraphQL APIを呼び出すには、実行中のLiferay DXPが必要です。
 ```{note}
 スキーマを直接要求することで、ローカルインストールのAPIを見つけることもできます
 
-`curl 'http://localhost:8080/o/graphql'  -H 'Content-Type: application/json' --data '{"query":"query{ __schema{ queryType{ name fields{ name args{ name } description } } } }","variables":{}}'`
+`curl 'http://localhost:8080/o/graphql'  -H "Content-Type: application/json" --data '{"query":"query{ __schema{ queryType{ name fields{ name args{ name } description } } } }","variables":{}}'`
 
 
    このURLは認証を必要としませんが、返されたスキーマを管理するのはかなり面倒です。 このため、付属のGraphQLクライアントを使用することをお勧めします。

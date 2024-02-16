@@ -1,7 +1,7 @@
 curl \
 	-H "Accept: application/json" \
 	-H "Content-Type: application/json" \
-	-X 'POST' "http://localhost:8080/o/headless-delivery/v1.0/sites/${1}/structured-contents" \
+	-X "POST" "http://localhost:8080/o/headless-delivery/v1.0/sites/${1}/structured-contents" \
 	-u "test@liferay.com:learn" \
 	--data-binary @- << EOF
 		{

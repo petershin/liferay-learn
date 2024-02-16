@@ -13,9 +13,9 @@ Here you'll learn the Liferay product offering basics:
 
 * Liferay develops a single Product: Liferay DXP
 * There are three Product Deployment Offerings:
-  * Liferay Experience Cloud (LXC) [SaaS]
-  * Liferay Experience Cloud - Self Managed [PaaS]
-  * DXP - Self Hosted
+  * Liferay SaaS
+  * Liferay PaaS
+  * Liferay Self-Hosted
 * Our Sales approach is SaaS first
 
 ## Background
@@ -27,6 +27,8 @@ It's important to note four pieces of background information:
 1. Liferay DXP contains three main capability sets: the core Digital Experience Platform, Commerce, and Analytics.
 
 1. **All** features are now available to customers with a current subscription to Liferay DXP. Previously, the three capability sets were separate offerings.
+
+1. While the product is called "Liferay DXP", the features it contains are substantial, allowing it to be used in Content Management (CMS), Commerce, Low-Code (LCAP), Portal, Digital Experience, and many other scenarios.
 
 1. The deployment approach chosen does not impact the features that are provided.
 
@@ -42,16 +44,16 @@ It's important to note four pieces of background information:
 
 Liferay has always been about preserving customer investment in their chosen software stack and infrastructure. As a result, Liferay has three product deployment offerings so customers can choose the approach that fits their requirements: 
 
-1. **Liferay Experience Cloud** provides a Software-as-a-Service (SaaS) deployment model.
+1. **Liferay SaaS** provides a Software-as-a-Service (SaaS) deployment model.
 
-1. **Liferay Experience Cloud Self-Managed** provides a Platform-as-a-Service (PaaS) deployment model.
+1. **Liferay PaaS** provides a Platform-as-a-Service (PaaS) deployment model.
 
-1. **Liferay DXP Self-Hosted** allows a customer to choose exactly how and where they host their Liferay DXP implementation.
+1. **Liferay Self-Hosted** allows a customer to choose exactly how and where they host their Liferay DXP implementation.
 
 This flexibility of deployment is an important differentiator over many of our competitors, who may not offer anything other than a SaaS deployment option.
 
 ```{note}
-Although the deployment method for Liferay Experience Cloud is SaaS, this is not a turn-key application. It is the full Digital Experience Platform, on top of which our customers, partners, and GS build the tailored solutions our customers need to solve their business problems.
+Although the deployment method for Liferay SaaS is SaaS, this is not a turn-key application. It is the full Digital Experience Platform, on top of which our customers, partners, and GS build the tailored solutions our customers need to solve their business problems.
 ```
 
 ![Liferay has three product deployment offerings.](./liferay-product-offering/images/02.png)

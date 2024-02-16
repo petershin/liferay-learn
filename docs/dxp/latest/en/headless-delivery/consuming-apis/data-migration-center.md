@@ -13,25 +13,26 @@ taxonomy-category-names:
 {bdg-link-primary}`[Beta Feature](../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
 
 !!! important
-    The data migration center is a beta feature that currently only supports the import and export of object definitions, object entries, and API applications.
+    This feature is currently behind a beta feature flag (COMMERCE-8087). Read [Release Feature Flags](../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags) for more information. The data migration center currently only supports the import and export of object definitions, object entries, and API applications.
 
 The data migration center makes it easy for you to move your object definitions and object entries between Liferay installations.
 
-To enable the data migration center,
-
-1. Navigate to *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) &rarr; *Control Panel* &rarr; *Instance Settings*.
-
-1. Click *Feature Flags* under *Platform*.
-
-1. Select *Beta* in the left navigation. Enable the *Data Migration Center* toggle on.
+To access the data migration center,
 
 1. Navigate to *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) &rarr; *Applications* &rarr; *Data Migration Center*.
 
    ![The data migration center is found under applications.](./data-migration-center/images/01.png)
 
-1. Click the *Import and Export* tab to see a list of import and export tasks and their status. Click the *options* (![Options icon](../../images/icon-options.png)) icon to download files from previous tasks.
+1. Click the *Import and Export* tab to see a list of import and export tasks and their status. Click the *Actions* (![Actions icon](../../images/icon-actions.png)) icon next to export/import tasks to download files from previous tasks.
 
 1. Click the *Templates* tab to see a list of import and export templates.
+
+With the data migration center, you can
+
+- [Export Object Definitions](#exporting-object-definitions)
+- [Import Object Definitions](#importing-object-definitions)
+- [Export Object Entries](#exporting-object-entries)
+- [Import Object Entries](#importing-object-entries)
 
 ## Exporting Object Definitions
 

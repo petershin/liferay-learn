@@ -19,7 +19,7 @@ The API builder makes it easy for you to create custom API applications in Lifer
 
 ## Using the API Builder
 
-Each custom API application can house multiple endpoints and schemas. This is similar to Liferay's out-of-the-box API applications. For example, the `headless-admin-user` API application houses endpoints for `accounts`, `organizations`, `roles`, `user-accounts`, etc.
+Each API application can house multiple endpoints and schemas. This is similar to Liferay's out-of-the-box API applications. For example, the `headless-admin-user` API application houses endpoints for `accounts`, `organizations`, `roles`, `user-accounts`, etc.
 
 !!! note
     The API Builder is configured at an instance-level scope. Create different API applications that are unique to each virtual instance. To re-create an API application in another instance, use the [data migration center](./consuming-apis/data-migration-center.md).
@@ -28,7 +28,7 @@ To access the API Builder application,
 
 1. Open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)), select the *Control Panel* tab, and click *API Builder* under Object.
 
-1. See a list of your custom API applications.
+1. A list of your custom API applications appears.
 
    The title, URL, description, last update, and status appear for each API application.
 
@@ -50,20 +50,22 @@ From the API Builder, you can also [create](#creating-custom-api-applications) a
 
 While in the [API Builder](#using-the-api-builder), use the Actions menu (![Actions menu](../images/icon-actions.png)) next to the API application to manage it. Select an available option:
 
--  **Edit**: edit your API application.
+**Edit**: Edit your API application.
 
-   You can also click on the API application's name to edit it.
+You can also click on the API application's name to edit it.
 
-   While editing an API application, you can create new [endpoints](#creating-and-managing-endpoints) and [schemas](#creating-and-managing-schemas) that work similarly to Liferay's out-of-the-box API applications.
+While editing an API application, you can create new [endpoints](#creating-and-managing-endpoints) and [schemas](#creating-and-managing-schemas) that work like Liferay's out-of-the-box API applications.
 
--  **Delete**: delete your API application.
+**Delete**: Delete your API application.
 
--  **Change Publication Status**: change your publication status from published to unpublished or vice versa.
+**Change Publication Status**: Change your publication status from published to unpublished or vice versa.
 
-   An API application must be published before use. Once published, the generated APIs have the same set of features as Liferay's out-of-the-box APIs (i.e. pagination, filtering, sorting, etc.)
+An API application must be published before use. Once published, the generated APIs have the same set of features as Liferay's out-of-the-box APIs (i.e. pagination, filtering, sorting, etc.)
 
 ## Creating and Managing Endpoints
+
 {bdg-secondary}`Liferay DXP 2024.Q1+ U112`
+
 {bdg-link-primary}`[Beta Feature](../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
 
 !!! important
@@ -91,13 +93,13 @@ To create a new endpoint,
 
 To manage endpoints, use the Actions menu (![Actions menu](../images/icon-actions.png)) next to the endpoint and select an available option:
 
--  **Edit**: edit your endpoint.
+**Edit**: Edit your endpoint.
 
-   You can also click on the endpoint's path to edit it.
+You can also click on the endpoint's path to edit it.
 
--  **Copy URL**: copy your endpoint's URL.
+**Copy URL**: Copy your endpoint's URL.
 
--  **Delete**: delete your endpoint.
+**Delete**: Delete your endpoint.
 
 ### Creating a GET Method Endpoint
 
@@ -143,7 +145,7 @@ If you selected Collection as your Retrieve Type,
 
 If you selected Single Element as your Retrieve Type,
 
-1. Select the *Path Parameter Property*. This is the object field that is mapped to the provided Parameter in the endpoint's Path. It can be a system or custom field (e.g. `id` and `externalReferenceCode` are system fields and `employeeId` is a custom field.).
+1. Select the *Path Parameter Property*. This is the object field that is mapped to the provided parameter in the endpoint's path. It can be a system or custom field (e.g. `id` and `externalReferenceCode` are system fields and `employeeId` is a custom field.).
 
 1. (Optional) Add a *Path Parameter Description*.
 
@@ -163,7 +165,7 @@ To create an endpoint using the POST method,
 
 1. While [creating an endpoint](#creating-and-managing-endpoints), select the POST method.
 
-1. Select the *Scope* for your endpoint based on your object's scope. Endpoints can be scoped for the Instance(Company) or a Site.
+1. Select the *Scope* for your endpoint based on your object's scope. Endpoints can be scoped for the instance (Company) or a site.
 
 1. Enter the *Path* you want to use in your endpoint.
 
@@ -182,13 +184,13 @@ Once the endpoint is created, select the *Configuration* tab for additional sett
    !!! warning
        You can use relationship-type properties in your schema to define relationships between entities. The created entities can be related to existing object entries through their ID.
 
-       Although you can define related entities as properties, the values provided for these related entities in the POST request are ignored. So, it's not possible to create related entities when creating a new entry using the POST method.
+       Although you can define related entities as properties, the values provided for these related entities in the POST request are ignored. Therefore, it's not possible to create related entities when creating a new entry using the POST method.
 
        <!-- Waiting on LPD-1184 for this feature. Then, I can remove this admonition. - Eric -->
 
 1. (Optional) Select the *Response Body Schema*. [Create a Schema](#creating-and-managing-schemas) and apply it to the endpoint to define the structure and format of the data that the server sends back to the client in response to the POST request.
 
-   If you don't select a Response Body Schema, an empty response is returned when the API is executed successfully.
+   If you don't select a response body schema, an empty response is returned when the API is executed successfully.
 
 Once the endpoint is created, you can see it on your API explorer page `http://localhost:8080/o/api`.
 
@@ -198,9 +200,9 @@ If you are creating the POST endpoint through API calls, keep these points in mi
 
 - POST endpoints must have `singleElement` as their retrieve type. This ensures that only the information related to the posted entry is requested.
 
-- Although you are using `singleElement` as retrieve type, if you try to define a path parameter (e.g. `/api/users/{userId}` where `{userId}` is the path parameter) during the API call to create a POST endpoint, an error will occur.
+- An error occurs if you use `singleElement` as retrieve type and define a path parameter (e.g. `/api/users/{userId}` where `{userId}` is the path parameter) during the API call to create a POST endpoint.
 
-- If you try to create a POST endpoint without a Request Body Schema, the API endpoint won't work.
+- POST endpoints without a request body schema don't work. 
 
 Here's an example of a CURL command you can use to create a POST endpoint:
 
@@ -224,7 +226,7 @@ curl -X 'POST' \
 }'
 ```
 
-Breaking it down:
+Here's how it works, in sections: 
 
 ```json
 curl -X 'POST' \
@@ -251,18 +253,27 @@ This section of the command specifies the HTTP request method as POST, defines t
 }'
 ```
 
-This section specifies the data sent in the request body. In this case, a JSON payload containing different properties:
+This section specifies the data sent in the request body. In this case, a JSON payload contains different properties:
 
-- `"externalReferenceCode"`: Defines the endpoint's external reference code (ERC).
-- `"description"`: Defines the endpoint's description.
-- `"httpMethod"`: Defines the endpoint's Method.
-- `"name"`: Define the endpoint's Name.
-- `"path"`: Defines the endpoint's Path.
-- `"r_apiApplicationToAPIEndpoints_c_apiApplicationERC"`: Points to an ERC to specify the API Application where the endpoint is added.
-- `"r_requestAPISchemaToAPIEndpoints_c_apiSchemaERC"`: Points to an ERC to specify the schema used for the endpoint's request body.
-- `"r_responseAPISchemaToAPIEndpoints_c_apiSchemaERC"`: Points to an ERC to specify the schema used for the endpoint's response body.
-- `"retrieveType"`: Defines the endpoint's Retrieve Type.
-- `"scope"`: Defines the endpoint's scope.
+`"externalReferenceCode"`: Defines the endpoint's external reference code (ERC).
+
+`"description"`: Defines the endpoint's description.
+
+`"httpMethod"`: Defines the endpoint's Method.
+
+`"name"`: Define the endpoint's Name.
+
+`"path"`: Defines the endpoint's Path.
+
+`"r_apiApplicationToAPIEndpoints_c_apiApplicationERC"`: Points to an ERC to specify the API Application where the endpoint is added.
+
+`"r_requestAPISchemaToAPIEndpoints_c_apiSchemaERC"`: Points to an ERC to specify the schema used for the endpoint's request body.
+
+`"r_responseAPISchemaToAPIEndpoints_c_apiSchemaERC"`: Points to an ERC to specify the schema used for the endpoint's response body.
+
+`"retrieveType"`: Defines the endpoint's Retrieve Type.
+
+`"scope"`: Defines the endpoint's scope.
 
 ## Creating and Managing Schemas
 
@@ -270,7 +281,7 @@ API schemas specify what entities are returned (or received) by your API.
 
 To see, manage, and create schemas,
 
-1. Start [editing your API application](#managing-custom-api-applications) and select the *Schemas* tab to see a list of your custom schemas.
+1. Start [editing your API application](#managing-custom-api-applications) and select the *Schemas* tab to see a list of your schemas.
 
    The name, description, and last update are shown for each schema.
 
@@ -288,11 +299,11 @@ To create a new schema,
 
 To manage schemas, use the Actions menu (![Actions menu](../images/icon-actions.png)) next to the schema and select an available option:
 
--  **Edit**: edit your schema.
+**Edit**: edit your schema.
 
-   You can also click on the schema's name to edit it.
+You can also click on the schema's name to edit it.
 
--  **Delete**: delete your schema.
+**Delete**: delete your schema.
 
 ### Configuring and Managing Schema Properties
 
@@ -300,9 +311,9 @@ To manage schemas, use the Actions menu (![Actions menu](../images/icon-actions.
 
 1. Select the entities you want to include in your schema.
 
-   To add an entity to the schema, click on the entity's name or in the Add icon (![Add icon](../images/icon-add-app.png)) next to it.
+   To add an entity to the schema, click the entity's name or the *Add* icon (![Add icon](../images/icon-add-app.png)) next to it.
 
-   Select from the various entities that are available from your [Liferay object](../building-applications/objects/creating-and-managing-objects.md). If the object has [object relationships](../building-applications/objects/creating-and-managing-objects/relationships.md), the entities from those objects can be selected also.
+   Select entities available from your [Liferay object](../building-applications/objects/creating-and-managing-objects.md). If the object has [object relationships](../building-applications/objects/creating-and-managing-objects/relationships.md), the entities from those objects can be selected also.
 
    You can use the search bar to find entities.
 
@@ -310,9 +321,9 @@ To manage schemas, use the Actions menu (![Actions menu](../images/icon-actions.
 
    Use the move handle next to the property name to rearrange your properties.
 
-   Hover your mouse over the property name to see the Edit (![Edit icon](../images/icon-edit-pencil.png)) and the Delete (![Delete icon](../images/icon-trash.png)) icons.
+   Hover your mouse over the property name to see the Edit (![Edit icon](../images/icon-edit-pencil.png)) and the Delete (![Delete icon](../images/icon-trash.png)) actions.
 
-   You can edit the object's property name and description. An object's property name can be renamed to suit your needs. For example, for the `Boss` object in the screenshot, change `Boss Name` to `bossName`, so it matches the mapped property.
+   You can edit the object's property name and description. For example, for the `Boss` object in the screenshot, change `Boss Name` to `bossName`, so it matches the mapped property.
 
    ![Select the entities you want to include in your schema.](./api-builder/images/06.png)
 

@@ -5,31 +5,31 @@ curl \
 	-u "test@liferay.com:learn" \
 	--data-binary @- << EOF
 		{
-			"contentFields" : [ {
-				"contentFieldValue" : {
-					"data" : "This text describes Foo."
+			"contentFields": [ {
+				"contentFieldValue": {
+					"data": "This text describes Foo."
 				},
-				"name" : "TextReference"
+				"name": "TextReference"
 			}, {
-				"contentFieldValue" : {
-					"image" : {
-						"description" : "This text describes Foo's image.",
-						"id" : "${3}"
+				"contentFieldValue": {
+					"image": {
+						"description": "This text describes Foo's image.",
+						"id": "${3}"
 					}
 				},
-				"name" : "ImageReference"
+				"name": "ImageReference"
 			}, {
-				"contentFieldValue" : {
-					"data" : "2021-08-30T00:00:00Z"
+				"contentFieldValue": {
+					"data": "2021-08-30T00:00:00Z"
 				},
-				"name" : "DateReference"
+				"name": "DateReference"
 			}, {
-				"contentFieldValue" : {
-					"data" : "Foo"
+				"contentFieldValue": {
+					"data": "Foo"
 				},
-				"name" : "SingleSelectionReference"
+				"name": "SingleSelectionReference"
 			} ],
-			"contentStructureId" : "${2}",
-			"title" : "Able"
+			"contentStructureId": "${2}",
+			"title": "Able"
 		}
 	EOF

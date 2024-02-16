@@ -29,6 +29,7 @@ Search Blueprints is the first feature in the Search Experiences application. Wi
 
 - Make minor tweaks to Liferay's default search page behavior
 - Override the search page behavior completely
-- Configure context-aware search results based on attributes of the search user
+- Configure [context-aware search results](./search-blueprints/personalizing-the-search-experience.md) based on attributes of the search user
 - Populate [collections](../../../site-building/displaying-content/collections-and-collection-pages/collection-providers.md) with the results of custom search query
-- Shrink the search response size by filtering out stored fields
+- Shrink the [search response size](./search-blueprints/optimizing-search-response-size.md) by filtering out stored fields
+- [Collapse results](./search-blueprints/collapsing-results.md) with identical field values

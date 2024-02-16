@@ -1,4 +1,12 @@
-<!-- You're missing the YAML header above with the UUID and taxonomy (and navigation, if necessary). Please add it. -Rich -->
+---
+uuid: 9c4667bf-3bc3-40f1-acc9-90eea29aa160
+taxonomy-category-names:
+- Security
+- Personal Data Management
+- Liferay Self-Hosted
+- Liferay SaaS
+- Liferay PaaS
+---
 
 # Enabling GDPR Compliance for Cookies
 
@@ -10,9 +18,9 @@ You can ensure [GDPR compliance](https://gdpr.eu/cookies) for your cookies using
 
    There are two checkboxes here: Enabled and Explicit Cookie Consent Mode. Though enabled by default, the explicit cookie consent mode doesn't work if the Enabled checkbox is unchecked.
 
-1. To set your handling preference, check the *Enabled* checkbox. With the Explicit Cookie Consent Mode checked, no cookies are set until the user explicitly agrees to cookie usages. If unchecked, all cookies are set until the user opts out of them.
+2. To set your handling preference, check the *Enabled* checkbox. With the Explicit Cookie Consent Mode checked, no cookies are set until the user explicitly agrees to cookie usages. If unchecked, all cookies are set until the user opts out of them.
 
-1. Click *Update*.
+3. Click *Update*.
 
    ![The default cookie banner appears at the bottom of the page.](./enabling-gdpr-compliance-for-cookies/images/02.png)
 
@@ -27,7 +35,6 @@ You can ensure [GDPR compliance](https://gdpr.eu/cookies) for your cookies using
 
    ![Find customizable options for your cookie banner under the Banner tab.](./enabling-gdpr-compliance-for-cookies/images/04.png)
 
-   <!-- This screenshot (and the one below) aren't very helpful. Better screenshots would show what the user sees when these options are used. Please replace them accordingly; thanks! -Rich -->
 
 1. Click *Save*.
 
@@ -37,9 +44,11 @@ You can ensure [GDPR compliance](https://gdpr.eu/cookies) for your cookies using
 
 1. Click *Save*.
 
-## Banner Options
+## Banner Customization
 
-<!-- What's a banner? Why does it appear? When does it appear? Please describe the banner. -Rich -->
+Your cookie policy will show up as soon as the user logs in through a banner. It displays the main text, as your privacy Policy Link and Link Display Text. The user will have three main options to select on the banner: *Configuration*, *Accept All* and *Decline All*. On the Banner page, you may customize these options.
+
+![Cookie Banner](./enabling-gdpr-compliance-for-cookies/images/06.png)
 
 **Content**: Add the information included in your cookie policy, like the types of cookies used, their purposes, how users can manage or disable cookies, and any other relevant information regarding data collection, tracking, and user privacy.
 
@@ -49,11 +58,15 @@ You can ensure [GDPR compliance](https://gdpr.eu/cookies) for your cookies using
 
 **Include "Decline All" Button**: Check this option to add a *Decline All* button on the cookie banner.
 
-## Consent Panel Options
+## Consent Panel Customization
 
-<!-- What's a consent panel? Why and when does it appear? What is it used for? Please describe the consent panel. -Rich -->
+Once the Banner is displayed on the screen, if the user clicks on the *Configuration*, he will have access to the Consent Panel page. There, he may choose which cookies are allowed while he uses the website.
 
-**Title**: Add a title to your consent panel.
+![Consent Panel Page](./enabling-gdpr-compliance-for-cookies/images/07.png)
+
+ You may customize the following options:
+
+**Title**: Adds a title to your consent panel.
 
 **Description**: Add a general overview about the usage of cookies on your site.
 
@@ -69,4 +82,7 @@ You can ensure [GDPR compliance](https://gdpr.eu/cookies) for your cookies using
 
 **Personalization Cookies Description**: Add details about how cookies personalize the user experience by building a profile of the users and showing relevant ads. By not allowing personalization cookies, users may receive less targeted advertising. You can check the *Prechecked* checkbox to enable this when the user opens the consent panel.
 
-<!-- Please add a Related Topics section. -Rich -->
+See also:
+
+* [Managing User Data (GDPR)](https://learn.liferay.com/web/guest/w/dxp/users-and-permissions/managing-user-data)
+* [Sanitizing User Data](https://learn.liferay.com/web/guest/w/dxp/users-and-permissions/managing-user-data/sanitizing-user-data)

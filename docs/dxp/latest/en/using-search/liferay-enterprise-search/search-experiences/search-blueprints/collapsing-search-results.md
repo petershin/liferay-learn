@@ -12,7 +12,7 @@ uuid: 46e00046-f0b0-4700-b73f-6d75d914800d
 
 {bdg-secondary}`Liferay DXP 2023.Q4+`
 
-You can collapse search results with an identical keyword field value. For example, an internal blog titled "Employee of the Month" could produce multiple identically titled search results. To To collapse all secondary results into the best matching result, use the `collapse` configuration. See Elasticsearch's [Collapse Search Results](https://www.elastic.co/guide/en/elasticsearch/reference/current/collapse-search-results.html) for details on how the feature works.
+You can collapse search results with an identical keyword field value. For example, an internal blog titled "Employee of the Month" produces multiple identically titled search results. To show just the best matching result, use the `collapse` configuration. See Elasticsearch's [Collapse Search Results](https://www.elastic.co/guide/en/elasticsearch/reference/current/collapse-search-results.html) for details on how the feature works.
 
 ![There are multiple blogs about the employee of the month.](./collapsing-search-results/images/01.png)
 
@@ -26,7 +26,7 @@ The number of total hits in the search response does not account for collapsing.
 
 ## Example: Collapse Results by Localized Title
 
-To use result collapsing by localized title,
+To collapse search results with an identical localized title,
 
 1. Open _Site Menu_ (![Site Menu](../../../../images/icon-product-menu.png)) &rarr; _Content & Data_ &rarr; _Blogs_, and create three blogs with these field values:
 

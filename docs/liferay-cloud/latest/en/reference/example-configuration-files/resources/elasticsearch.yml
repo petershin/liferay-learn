@@ -2,10 +2,10 @@ cluster:
   name: ${CLUSTER_NAME}
 
 node:
-  master: ${NODE_MASTER}
+  master: true
   name: ${HOSTNAME}
-  data: ${NODE_DATA}
-  ingest: ${NODE_INGEST}
+  data: true
+  ingest: true
 
 network.host: ${NETWORK_HOST}
 
@@ -15,13 +15,6 @@ path:
 
 bootstrap:
   memory_lock: ${MEMORY_LOCK}
-
-discovery:
-  zen:
-    minimum_master_nodes: ${LCP_MINIMUM_MASTER_NODES}
-    ping:
-      unicast:
-        hosts: ${PING_UNICAST_HOST}
 
 xpack.security.enabled: ${ENABLE_XPACK_SECURITY}
 xpack.monitoring.enabled: ${ENABLE_XPACK_MONITORING}

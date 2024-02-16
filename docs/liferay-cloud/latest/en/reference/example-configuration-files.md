@@ -15,8 +15,7 @@ Different services in Liferay Cloud (such as the [search](../platform-services/s
 The web server service uses an [Nginx](https://docs.nginx.com/) server to manage web traffic. Here is an example `nginx.conf` file:
 
 ```{literalinclude} ./example-configuration-files/resources/nginx.conf
-:lines: 1-81
-:language: nginx
+    :language: nginx
 ```
 
 The `nginx.conf` file belongs in the `webserver/configs/[ENV]/conf.d/` directory in your project repository.
@@ -26,8 +25,7 @@ The `nginx.conf` file belongs in the `webserver/configs/[ENV]/conf.d/` directory
 The search service uses an [Elasticsearch](https://www.elastic.co/guide/index.html) server to handle search queries in your Liferay instance. Here is an example `elasticsearch.yml` file:
 
 ```{literalinclude} ./example-configuration-files/resources/elasticsearch.yml
-:lines: 1-27
-:language: yaml
+    :language: yaml
 ```
 
 The `elasticsearch.yml` file belongs in the `search/configs/[ENV]/config/` directory in your project repository.

@@ -14,7 +14,7 @@ uuid: 46e00046-f0b0-4700-b73f-6d75d914800d
 
 You can collapse search results with an identical keyword field value. For example, an internal blog titled "Employee of the Month" could produce multiple identically titled search results. To To collapse all secondary results into the best matching result, use the `collapse` configuration. See Elasticsearch's [Collapse Search Results](https://www.elastic.co/guide/en/elasticsearch/reference/current/collapse-search-results.html) for details on how the feature works.
 
-![There are multiple blogs about the employee of the month.](./collapsing-results/images/01.png)
+![There are multiple blogs about the employee of the month.](./collapsing-search-results/images/01.png)
 
 The number of total hits in the search response does not account for collapsing. Therefore, collapsing results causes inaccurate result counts and pagination. For example, imagine a search query that returns 100 results over 5 pages, where 90 results have identical titles. Collapsing these results by the title field results in this situation on Liferay's search page:
 
@@ -22,7 +22,7 @@ The number of total hits in the search response does not account for collapsing.
 1. The displayed results count is 100.
 1. The displayed pages count is 5.
 
-   ![Result counts and pagination don't work well with collapsed results.](./collapsing-results/images/03.png)
+   ![Result counts and pagination don't work well with collapsed results.](./collapsing-search-results/images/03.png)
 
 ## Example: Collapse Results by Localized Title
 
@@ -86,7 +86,7 @@ To use result collapsing by localized title,
 
 1. If you're using the blueprint on a search page, save it and [apply it to the search page](./using-a-search-blueprint-on-a-search-page.md).
 
-![The results are collapsed, but the count remains the same.](./collapsing-results/images/02.png)
+![The results are collapsed, but the count remains the same.](./collapsing-search-results/images/02.png)
 
 ## Related Topics
 

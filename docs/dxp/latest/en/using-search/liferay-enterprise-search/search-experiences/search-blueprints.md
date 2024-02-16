@@ -10,7 +10,7 @@ toc:
   - ./search-blueprints/search-blueprints-elements-reference.md
   - ./search-blueprints/creating-and-managing-elements.md
   - ./search-blueprints/optimizing-search-response-size.md
-  - ./search-blueprints/collapsing-results.md
+  - ./search-blueprints/collapsing-search-results.md
 taxonomy-category-names:
 - Search
 - Liferay Enterprise Search
@@ -32,4 +32,4 @@ Search Blueprints is the first feature in the Search Experiences application. Wi
 - Configure [context-aware search results](./search-blueprints/personalizing-the-search-experience.md) based on attributes of the search user
 - Populate [collections](../../../site-building/displaying-content/collections-and-collection-pages/collection-providers.md) with the results of custom search query
 - Shrink the [search response size](./search-blueprints/optimizing-search-response-size.md) by filtering out stored fields
-- [Collapse results](./search-blueprints/collapsing-results.md) with identical field values
+- [Collapse results](./search-blueprints/collapsing-search-results.md) with identical field values

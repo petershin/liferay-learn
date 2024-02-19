@@ -99,10 +99,9 @@ The Competitive Advantages of our product include
 * Seamless integration with various legacy software applications (e.g., CRM and ERP) and easy integration with almost any external system
 * Composible architecture to use Liferay's core functionalities
 * Low-Code and No-Code capabilities to allow non-developers to create tailored solutions
-* Best-of-breed and market leading Portal and capabilities
-* Limitless creation of various types of solutions in the platform
+* Best-of-breed and market leading Portal and CMS capabilities
 * Open Source and organically grown platform
-* SaaS, PaaS, and Self-Hosted as available deployment models
+* Flexible deployment options: SaaS, PaaS, and Self-Hosted are available deployment models
 * Enterprise grade platform focused on high-level security, scalability, and availability
 
 ![Liferay has numerous competitive advantages.](./introduction-to-liferay/images/03.png)

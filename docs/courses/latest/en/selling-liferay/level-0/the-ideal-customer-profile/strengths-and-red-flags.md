@@ -100,15 +100,15 @@ One of the reasons that B2B Commerce opportunities are hard for consumer-focused
 
 It is important to remember that these lists are not exhaustive, and none of these items alone make it a 100% win or 100% lost case. But the more thumbs up and the less thumbs down, the stronger our chances of winning are.
 
-## Liferay Experience Cloud SaaS Ideal Opportunity Learnings
+## Liferay SaaS Ideal Opportunity Learnings
 
 Liferay carries out win-loss interviews with our sales teams, and sometimes also with prospects, so that a good understanding of where Liferay can (and can not) be successful can be obtained.
 
-Liferay Experience Cloud SaaS is a relatively new offering, with more being learned regularly about types of opportunities that are more successful than others. To date the following common elements have been observed:
+Liferay SaaS is a relatively new offering, with more being learned regularly about types of opportunities that are more successful than others. To date the following common elements have been observed:
 
 * Public Sites
 * Commerce capabilities included
-* Integration and low-cde capabilities
+* Integration and low-code capabilities
 * 50-100K starting point
 
 ### Public Sites

@@ -59,7 +59,7 @@ Liferay is a strong option when the customer has a need for high security and st
 
 The security landscape changes rapidly---and security is complicated. Unless the buyer, the prospect, or customer operate in the security industry or have a mature and dedicated security practice, most companies underestimate the threats that are out there. Often they do not have the most recent state-of-the-art tools or knowledge of hacktivists, cyber-criminals, state sponsored hackers, and so on. SaaS and PaaS deployments help provide an answer for this.
 
-With Liferay Experience Cloud, we provide as part of the SaaS subscription Distributed Denial of Services (DDoS) protection, a web application firewall, and much more.
+With Liferay SaaS, we provide as part of the SaaS subscription Distributed Denial of Services (DDoS) protection, a web application firewall, and much more.
 
 Security, access control and support for governance policies is vital for any DXP. While governance is not a “feature” as such, a DXP plays a role in helping the organization using the DXP to monitor, inform and adapt governance policies---including delegation of roles and responsibilities, compliance with accessibility, privacy regulations, and so on.
 

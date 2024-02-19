@@ -53,14 +53,14 @@ Liferay has always been about preserving customer investment in their chosen sof
 This flexibility of deployment is an important differentiator over many of our competitors, who may not offer anything other than a SaaS deployment option.
 
 ```{note}
-Although the deployment method for Liferay SaaS is SaaS, this is not a turn-key application. It is the full Digital Experience Platform, on top of which our customers, partners, and GS build the tailored solutions our customers need to solve their business problems.
+Although the provisioning, deployment, and maintenance is significantly reduced, Liferay SaaS is not a turn-key application. It is the full Digital Experience Platform, on top of which our customers, partners, and GS build the tailored solutions our customers need to solve their business problems.
 ```
 
 ![Liferay has three product deployment offerings.](./liferay-product-offering/images/02.png)
 
-The day-to-day activities vary with each deployment approach. While each activity is important, delivering the actual business application has the greatest value. In contrast, some of the lower-value activities can be quite time-consuming and difficult. Depending on the deployment approach chosen, these activities can be offloaded to Liferay, freeing the customer to concentrate on the most important tasks. 
+The day-to-day activities vary with each deployment approach. While each activity is important, delivering the actual business application has the greatest value. In contrast, some of the lower-value activities can be quite time-consuming and difficult. Depending on the deployment approach chosen, these activities can be offloaded to Liferay, freeing the customer to concentrate on the most important tasks.
 
-### DXP Self-Hosted
+### Liferay Self-Hosted
 
 Traditionally, this is how Liferay DXP has been sold. Customers download a Liferay DXP bundle or a Liferay DXP Docker image and then are responsible for everything else.
 
@@ -94,13 +94,13 @@ Finally, they must build their solution on DXP.
 | --- | --- | --- |
 | Application Delivery |  | &#10004; |
 
-### Liferay Experience Cloud Self-Managed
+### Liferay PaaS
 
-Liferay Experience Cloud Self-Managed (formerly DXP Cloud) is our Platform-as-a-Service offering. Liferay provides the software itself and also the infrastructure, all of the platform services, and so on.
+Liferay PaaS (formerly DXP Cloud) is our Platform-as-a-Service offering. Liferay provides the software itself and also the infrastructure, all of the platform services, and so on.
 
-Additionally, with Liferay Experience Cloud Self-Managed, there are predefined offers that include things like backup and VPN services. Furthermore, these scale via OOTB high availability, auto-scaling capabilities, auto-failover capabilities, and provide load balancing.  These activities are very important, but they can be hard and/or expensive to implement.
+Additionally, with Liferay PaaS, there are predefined offers that include things like backup and VPN services. Furthermore, these scale via OOTB high availability, auto-scaling capabilities, auto-failover capabilities, and provide load balancing.  These activities are very important, but they can be hard and/or expensive to implement.
 
-![Liferay Experience Cloud Self Managed provides many infrastructure services to the customer.](./liferay-product-offering/images/04.png)
+![Liferay PaaS provides many infrastructure services to the customer.](./liferay-product-offering/images/04.png)
 
 Liferay also provides an infrastructure uptime SLA of 99.95%, does regular updates to the platform services, and provides the full DevSecOps CI/CD pipeline with build management.
 
@@ -128,11 +128,11 @@ But there are still some time-consuming and relatively low-value activities that
 | --- | --- | --- |
 | Application Delivery |  | &#10004; |
 
-### Liferay Experience Cloud
+### Liferay SaaS
 
-The final product deployment offering is Liferay Experience Cloud. This is a SaaS offering which frees customers to focus on what really matters: creating, launching, and maintaining business applications.
+The final product deployment offering is Liferay Saas. This is a SaaS offering which frees customers to focus on what really matters: creating, launching, and maintaining business applications.
 
-With Liferay Experience Cloud SaaS, Liferay provides and manages all of the infrastructure and all of the low-value activities needed to maintain Liferay DXP. Liferay applies product updates on a quarterly basis, testing these against customers' data, and does SAST and DAST security scanning.
+With Liferay SaaS, Liferay provides and manages all of the infrastructure and all of the low-value activities needed to maintain Liferay DXP. Liferay applies product updates on a quarterly basis, testing these against customers' data, and does SAST and DAST security scanning.
 
 What is important to note is that although the deployment model is SaaS, this is not a turnkey application. Customers have a full Liferay DXP instance to use, with all of the out-of-the-box capabilities DXP provides, and they can build their custom applications on top of that base. Furthermore, they can continue to work with Partners and Liferay's Global Services organization to help them build those applications.
 

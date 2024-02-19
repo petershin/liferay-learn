@@ -33,9 +33,9 @@ Liferay defines a DXP as follows:
 
 Portal solutions focus on the needs of the long-term relationship between organizations and their customers, employees, partners, suppliers, and so on.
 
-A key differentiator of DXPs with portal heritage is the support for these needs through capabilities like authenticated experiences, and a focus on integration between the DXP and other systems.
+A key differentiator of DXPs with portal heritage is the support for these needs through capabilities like authenticated experiences, and a focus on integration between the DXP and other systems. Compared against other Digital Experience Platforms, our Liferay DXP offers customers a true best-in-class B2B and B2E authenticated portal experience.
 
-Gartner has frequently recognized this in Liferay. For example in 2022, Gartner said
+Gartner has frequently recognized this in Liferay. For example in 2022, Gartner said:
 
 > “Liferay targets enterprise IT buyers with its powerful tooling and pure-play portal heritage.”
 
@@ -66,9 +66,7 @@ Another way to look at what a DXP should provide is to look at the customer life
 
 ## Liferay Deployment Approaches
 
-With its composable architecture and the addition of strong Low-Code functionality, Liferay isn't just a complete, integrated Digital Experience Platform, but also goes beyond DXP's capabilities, making it usable to create any digital solution. This flexibility can make Liferay be used as the core component of any Digital Experience architecture.
-
-Our Liferay deployment offerings include SaaS, PaaS and Self-Hosted options.
+With its composable architecture and the addition of strong Low-Code functionality, Liferay isn't just a complete, integrated Digital Experience Platform, but also goes beyond DXP's capabilities. With Liferay DXP, a solution for any digital challenge can be created - SaaS, PaaS, or Self-Hosted
 
 ## Tailored Solutions
 

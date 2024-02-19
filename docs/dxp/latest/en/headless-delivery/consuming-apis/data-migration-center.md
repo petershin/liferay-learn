@@ -36,7 +36,7 @@ With the data migration center, you can
 
 ## Exporting Object Definitions
 
-To export object definitions,
+To export [object definitions](../../building-applications/objects.md),
 
 1. Click *Add* (![Add icon](../../images/icon-add.png)) and select *Export File*.
 
@@ -57,6 +57,8 @@ To export object definitions,
 
 1. Under the Fields section, select the object definition fields you want to export.
 
+   You must select at least one field.
+
    ![Select the object definition fields you wish to export.](./data-migration-center/images/02.png)
 
 1. (Optional) Click *Save as Template* to save the export settings for future use. Give the template a name and click *Save*.
@@ -65,11 +67,14 @@ To export object definitions,
 
 1. A window appears to display the export task. When the job is completed, click *Download* to download a zip file to your local machine.
 
+   !!! note
+       Closing the widow doesn't stop the export/import task. Once it's finished, you can download the file from the Import and Export tab.
+
    ![Click download to download a zip file.](./data-migration-center/images/03.png)
 
 ## Importing Object Definitions
 
-To import object definitions,
+To import [object definitions](../../building-applications/objects.md),
 
 1. Click *Add* (![Add icon](../../images/icon-add.png)) and select *Import File*.
 
@@ -83,7 +88,7 @@ To import object definitions,
 
 1. Under Import Strategy, select an option to Add or Update Records or Only Add New Records.
 
-   When Only Add New Records is selected, if an entity already exists, the import task fails with an error. Select *Add or Update Records* instead to have the data migration center overwrite the existing entity.
+   When Only Add New Records is selected, if an entity already exists, the import task fails with an error. Select *Add or Update Records* instead to have the data migration center overwrite the existing entity or create a new one if it doesn't exist.
 
 1. Under Update Strategy, select an option to Update Changed Record Fields or Overwrite Records.
 
@@ -124,7 +129,7 @@ Here are the main differences:
 
    ![With site-scoped object definitions, export object entries from a specific scope.](./data-migration-center/images/06.png)
 
--  {bdg-secondary}`Liferay DXP 2024.Q1+/Portal 7.4 GA112+` You can select CSV as the Export File Format.
+-  {bdg-secondary}`Liferay DXP 2024.Q1+/Portal 7.4 GA112+` You can select comma-separated values (CSV) files as the Export File Format.
 
    The header is always included in the generated CSV file.
 
@@ -148,12 +153,22 @@ Here are the main differences:
 
 -  {bdg-secondary}`Liferay DXP 2024.Q1+/Portal 7.4 GA112+` If your object definition is site-scoped, you can define a *Scope* by selecting a site from a list and importing entries to the selected site.
 
--  {bdg-secondary}`Liferay DXP 2024.Q1+/Portal 7.4 GA112+` You can import object entries from CSV files.
+-  {bdg-secondary}`Liferay DXP 2024.Q1+/Portal 7.4 GA112+` You can import object entries from comma-separated values (CSV) files.
 
-   If the CSV file contains unsupported field types, no file format error is shown and the process tries to load the entries.
+   Add a CSV file and define if it contains headers, which serve as labels for the data columns.
+
+   Define the CSV separator - a character used to separate individual fields within a CSV file. Typically, this is a comma, but you can use different characters like semicolons or pipes.
+
+   Also, specify the CSV enclosure, which encloses the entire field within the enclosure characters. You can use double or single quotation marks.
+
+   For example: if you define a comma as the separator and double quotation marks as the enclosure, and you have a field like "New York, USA", the comma is not considered a separator because it's enclosed within the double quotation marks. So, instead of two fields ("New York" and "USA"), you have only one ("New York, USA")
+
+   If the CSV file contains unsupported field types, no file format error is shown, and the process tries to load the entries.
 
    !!! important
        CSV files currently support these field types: `dateandtime`, `date`, `decimal`, `integer`, `longint`, `longtext`, `precissiondecimal`, `richtext`, `text`, and `picklist`.
+
+   ![Define the CSV separator and enclosure when importing a CSV file.](./data-migration-center/images/08.png)
 
 ## Related Topics
 

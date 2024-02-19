@@ -5,30 +5,28 @@ visibility:
 - Partner
 ---
 
-# Liferay Experience Cloud SaaS Pricing - Introduction and Plans
+# Liferay SaaS Pricing - Introduction and Plans
 
 **At a Glance**
 
-* New pricing model for Liferay Experience Cloud SaaS for 2023
+* New pricing model for Liferay SaaS introduced in 2023
+* Minor changes for 2024
 * New pricing supports Endless Solutions on Liferay Experience Cloud
 * Three plans provide different levels of capabilities:
   * Pro
   * Business
   * Enterprise
-* Free/Hobby plan proposed to support bottom-up growth
 
 ```{note}
 * View the [recording](https://learn.liferay.com/web/guest/d/sa1-2a-liferay-pricing-saas) from the live workshop of this module.
 * Download the [PDF](https://learn.liferay.com/documents/d/guest/sa1-2a-liferay-pricing-saas-pdf) of the presentation used in the live workshop.
 ```
 
-## Revised Pricing for 2023
+## Updated Pricing for 2024
 
-The Liferay Experience Cloud SaaS offering was launched in Q2 2022. A lot of feedback on this pricing has been received, the result of which is the new pricing which was introduced in Q1 2023.
+The Liferay Experience Cloud SaaS offering was launched in Q2 2022. A lot of feedback on this pricing was received, and a new pricing model was introduced in 2023.
 
-The original model didn’t scale well to cover many common solutions and use cases. For example, when the customer needed multiple simple sites the pricing quickly got prohibitively expensive.
-
-Plus, the pricing was confusing, complicated, and the entry level was high, with the lowest option being around EUR/USD 76,000.
+This model is retained in 2024, with minor updates.
 
 ## Key principles for Liferay Experience Cloud SaaS Pricing
 
@@ -91,7 +89,7 @@ MALUs measure the number of individuals that authenticated themselves and were l
 
 The combination of APVs and MALUs ensures that there is now a way to measure and track usage whether the solution is a public site, an internal site like a Customer Portal or Intranet, or a combination of both.
 
-## Liferay Experience Cloud SaaS Plans
+## Liferay SaaS Plans
 
 The first part of every new SaaS deal’s pricing are the base plans, of which there are three:
 
@@ -109,14 +107,13 @@ The Enterprise plan provides Platinum level support with a 24/7 response-time SL
 
 The key principle is that every customer needs to have one of these plans, either Pro, Business, or Enterprise.
 
-![There are three plans for Liferay Experience Cloud SaaS - Pro, Business, and Enterprise, each offering different levels of usage and capacity.](./liferay-pricing-saas/images/02.png)
+![There are three plans for Liferay SaaS - Pro, Business, and Enterprise, each offering different levels of usage and capacity.](./liferay-pricing-saas/images/02.png)
 
-**Free / Hobby tier**
+As of January 2024, the starting point for each plan are as follows:
+* Pro: EUR / USD 24,700 per year
+* Business: EUR / USD 49,400 per year
+* Enterprise: EUR / USD 80,300 per year
 
-Not available yet, but planned, is to offer a Free / Hobby tier. This will be much more limited in scope than the Pro plan but will allow for people to try out Liferay for no cost. 
-
-As an open source company having freely available access to our platform is embedded in our DNA, and is also tied to our goal of becoming a more Product Led Growth Company. We want to be able to let prospects and customers try out Liferay to see what it is capable of and to have a positive experience. And we want developers and others testing it and tailoring the platform and then be able to easily move to the paid plans when they have a serious project and need of an enterprise subscription and support.
-
-The details and timelines for the hobby plan are not yet finalized.
+Localized pricing is available in other geographies - please contact your local Liferay sales team for details.
 
 Continue learning about Liferay SaaS Pricing, with [MALUs, APVs and Moving Plans](./liferay-pricing-saas-malus-apvs.md).

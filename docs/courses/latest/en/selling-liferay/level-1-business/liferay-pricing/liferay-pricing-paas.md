@@ -5,32 +5,32 @@ visibility:
 - Partner
 ---
 
-# Liferay Experience Cloud Self-Managed (PaaS) Pricing
+# Liferay PaaS Pricing
 
 **At a Glance**
 
 * Liferay provides three deployment approaches, all including Liferay DXP:
-  * Liferay Experience Cloud (SaaS)
-  * Liferay Experience Cloud Self Managed (PaaS)
-  * DXP Self-Hosted
-* Liferay Experience Cloud SM uses an instance-based model
+  * Liferay SaaS
+  * Liferay PaaS
+  * Liferay Self-Hosted
+* Liferay PaaS uses an instance-based model
 * Pre-packaged Bundles provides the most value
-* A new pricing model for Liferay Experience Cloud SM is under review
+* A new pricing model for Liferay PaaS is under review
 
 ## Background
 
-In the cases where, for a valid reason, Liferay SaaS offering is not appropriate for a prospect, but where Cloud is acceptable, Liferay PaaS offering, Liferay Experience Cloud Self-Managed could be the deployment option to offer.
+In the cases where, for a valid reason, Liferay SaaS offering is not appropriate for a prospect, but where Cloud is acceptable, Liferay PaaS could be the deployment option to offer.
 
-With Liferay’s PaaS offering, Liferay provides DXP with all of its capabilities included, and as of DXP 7.4 that also includes Commerce and Analytics capabilities. Liferay also provides and manages the Infrastructure, and the Platform Services, but the Customer is still responsible for most other activities such as Upgrades, Updates, Patches, Security Hotfixes, Software Troubleshooting And Application Delivery.
+With Liferay PaaS, Liferay provides DXP with all of its capabilities included, and as of DXP 7.4 that also includes Commerce and Analytics capabilities. Liferay also provides and manages the Infrastructure, and the Platform Services, but the Customer is still responsible for most other activities such as Upgrades, Updates, Patches, Security Hotfixes, Software Troubleshooting And Application Delivery.
 
 ```{note}
 * View the [recording](https://learn.liferay.com/web/guest/d/sa1-2b-liferay-pricing-paas) from the live workshop of this module.
 * Download the [PDF](https://learn.liferay.com/documents/d/guest/sa1-2b-liferay-pricing-paas-pdf) of the presentation used in the live workshop.
 ```
 
-## Liferay Experience Cloud SM Pricing Summary
+## Liferay PaaS Pricing Summary
 
-At the current time the price model for Liferay’s PaaS offering is instance based, with two primary approaches:
+At the current time the price model for Liferay PaaS is instance based, with two primary approaches:
 
 * A la carte
 * Packaged Bundles
@@ -41,12 +41,11 @@ With this review under way, this module does not cover the a la carte options in
 
 ### Reasons for reviewing the pricing
 
-We want to be making it easier for Liferay and Partner sellers to navigate between the various offerings from the pricing point of view in general. And in particular for the PaaS pricing, make it easier to put together a correctly sized quote and “package” for a buyer.
+We want to be making it easier for Liferay and Partner sellers to navigate between the various offerings from the pricing point of view in general. And in particular for Liferay PaaS pricing, make it easier to put together a correctly sized quote and “package” for a buyer.
 
-Most importantly the buyer should also understand how their need is priced and what the elements are that impact it both short and long term. Some of things that are being evaluated and examined are:
+Most importantly the buyer should also understand how their need is priced and what the elements are that impact it both short and long term. 
 
-* What technically needs to change to have the PaaS pricing aligned as much as possible with the updated SaaS pricing. In particular this relates to potentially moving away from instance-based pricing.
-* Also being confident that the new SaaS pricing is working effectively, and this in part is dependent on having enough data to gain that confidence.
+Before introducing a new pricing model for Liferay PaaS we are evaluating and examining what technically needs to change to have Liferay PaaS pricing aligned as much as possible with Liferay SaaS pricing. In particular this relates to potentially moving away from instance-based pricing.
 
 ### Bundles
 
@@ -63,13 +62,13 @@ If the customer cannot commit to a 3-year commitment and to be a reference, thei
 
 The three bundles available are:
 
-* Liferay Experience Cloud SM - Pro Solution Bundle
-* Liferay Experience Cloud SM - Business Solution Bundle
-* Liferay Experience Cloud SM - Enterprise Solution Bundle
+* Liferay PaaS - Pro Solution Bundle
+* Liferay PaaS - Business Solution Bundle
+* Liferay PaaS - Enterprise Solution Bundle
 
-![There are three bundles for Liferay Experience Cloud SM - Pro, Business, and Enterprise.](./liferay-pricing-paas/images/01.png)
+![There are three bundles for Liferay PaaS - Pro, Business, and Enterprise.](./liferay-pricing-paas/images/01.png)
 
-## Liferay Experience Cloud SM Pro Bundle
+## Liferay PaaS Pro Bundle
 
 The smallest bundle available is the Pro Bundle, which is ideal for Small or Medium sized customers whose projects are less important and not mission critical.
 
@@ -80,9 +79,9 @@ This bundle includes the following environments:
 
 With any of the bundles it is possible to add further Capacity, additional Environments, Connectors, Enterprise Search as well as to buy Managed Services. Customers buying the Pro Bundle can also add Application Performance Monitoring, however it is worth noting that this is included in the Business and Enterprise Bundles at no extra charge.
 
-Note for Partners in particular, without prior Liferay Experience Cloud Self-Managed projects it is very important to include some SME from Liferay to guarantee a successful implementation.
+Note for Partners in particular, without prior Liferay PaaS projects it is very important to include some SME from Liferay to guarantee a successful implementation.
 
-## Self-Managed Business Bundle
+## Liferay PaaS Business Bundle
 
 The second bundle is much more capable for larger and/or mission critical applications. The Business Bundle builds on the Pro Bundle but adds high availability for Production and adds a high availability UAT environment. The complete list of included environments are:
 
@@ -96,7 +95,7 @@ A basic Subject Matter Expertise package is included and the customer can choose
 
 Like the Pro Bundle, it is possible to add further Capacity, additional Environments, Connectors, Enterprise Search as well as to buy Managed Services.
 
-## Self-Managed Enterprise Bundle
+## Liferay PaaS Enterprise Bundle
 
 The third bundle is the Enterprise Bundle, which is designed for the most demanding Enterprise Customers and their most critical projects. It includes High Availability Production and UAT environments, a standard Non-Production environment for development.  It also adds a High Availability Disaster Recovery environment with cross-region disaster recovery:
 
@@ -111,9 +110,9 @@ As with all of the Bundles, it is possible to add further Capacity, additional E
 
 ## Summary
 
-* The most cost-effective way for Customers to purchase Liferay Experience Cloud Self-Managed is to buy one of the pre-packaged Bundles.
-* The base-level Pro Bundle is the smallest bundle and represents Liferay’s recommendation for the smallest Liferay Experience Cloud Self-Managed configuration.
+* The most cost-effective way for Customers to purchase Liferay PaaS is to buy one of the pre-packaged Bundles.
+* The base-level Pro Bundle is the smallest bundle and represents Liferay’s recommendation for the smallest Liferay PaaS configuration.
 * All bundles can be enhanced with any of the wide range of additional features available.
 * Customers can, if they are unable to commit to a 3-year commitment and become a reference purchase from the a la carte list of products, but will not benefit from the discounts that the bundles provide.
 
-Now, complete the Liferay Pricing module, with [pricing for DXP Self-Hosted](./liferay-pricing-self-hosted.md).
+Now, complete the Liferay Pricing module, with [pricing for Liferay Self-Hosted](./liferay-pricing-self-hosted.md).

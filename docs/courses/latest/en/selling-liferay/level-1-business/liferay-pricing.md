@@ -16,9 +16,9 @@ visibility:
 **At a Glance**
 
 * Liferay provides three deployment approaches, all including Liferay DXP:
-  * Liferay Experience Cloud (SaaS)
-  * Liferay Experience Cloud Self Managed (PaaS)
-  * DXP Self-Hosted
+  * Liferay SaaS
+  * Liferay PaaS
+  * Liferay Self-Hosted
 * Each deployment approach has its own pricing model
 * Partner Co-Selling is a key component of Liferay’s sales strategy
 * Understanding the pricing models will help you to create Ballpark Pricing for opportunities
@@ -31,9 +31,9 @@ Additionally the module covers what type of questions to ask and conversations t
 
 Although detailed, this is still an *overview* of pricing. Partners should work with the appropriate members of the Liferay team to help with further pricing details. Liferay employees should work with the relevant sales manager.
 
-## Partner Co-Selling
+## Partner First
 
-Liferay is committed to a Partner Together strategy which means co-marketing, co-delivering and co-selling. Co-selling means that Liferay works together with Partners on partner opportunities. The structure of the team will vary based on whether the opportunity is for a new or existing customer:
+Liferay is committed to a Partner First strategy which means co-marketing, co-selling, and co-delivering. Co-selling means that Liferay works together with Partners on partner opportunities. The structure of the team will vary based on whether the opportunity is for a new or existing customer:
 
 **New logo opportunities:**
 
@@ -42,7 +42,7 @@ Liferay is committed to a Partner Together strategy which means co-marketing, co
 
 **Existing Customer opportunities:**
 
-* A Liferay Customer Success Manager (CSM) is there to support the customer and the partner.
+* The Liferay account team is there to support the customer and the partner.
 
 Because of this team structure there should not be any situation where Partners need to determine pricing by themselves.
 
@@ -103,11 +103,11 @@ Other considerations include, how much storage the solution will need, what type
 
 Liferay supports three deployment models:
 
-* Liferay Experience Cloud (SaaS / DXP-as-a-Service)
-* Liferay Experience Cloud Self Managed (PaaS)
-* Liferay DXP Self Hosted (DXP SH)
+* Liferay SaaS
+* Liferay PaaS
+* Liferay Self-Hosted
 
-![Liferay's three deployment models are Liferay Experience Cloud SaaS, Liferay Experience Cloud Self-Managed (PaaS) and DXP Self-Hosted.](./liferay-pricing/images/01.png)
+![Liferay's three deployment models are Liferay SaaS, Liferay PaaS and Liferay Self-Hosted.](./liferay-pricing/images/01.png)
 
 ### SaaS First
 
@@ -117,7 +117,7 @@ Liferay’s approach is SaaS first. To make it easier to identify whether this i
 * Or, can the preferred approach to customizations - Client Extensions - be used to meet those requirements?
 * Or, could the problem be solved with an upcoming feature - either one that’s already on the roadmap, or one that the customer requests and can be built for them during the sales cycle?
 
-If any of these are true, and the customer is comfortable with SaaS in the first place, then Liferay Experience Cloud SaaS should be proposed.
+If any of these are true, and the customer is comfortable with SaaS in the first place, then Liferay SaaS should be proposed.
 
 There are some possible scenarios where it might not be possible to be SaaS:
 
@@ -127,13 +127,13 @@ There are some possible scenarios where it might not be possible to be SaaS:
   * How it is secured
   * Who has control over it
 
-In these cases then it might be that PaaS - Liferay Experience Cloud Self-Managed could be an option, or if Liferay’s Cloud in general is not an option then DXP Self-Hosted is available.
+In these cases then it might be that Liferay PaaS could be an option, or if Liferay’s Cloud in general is not an option then Liferay Self-Hosted is available.
 
 And remember, the [Sales Decision Flow](https://learn.liferay.com/documents/d/guest/new-customer-new-project-sales-decision-flow) can also be used to help with this step.
 
 ![The Liferay New Customer and New Project Sales Decision Flow provides guidance on which deployment model is most appropriate for a new opportunity.](./liferay-pricing/images/02.png)
 
-Next: review each of the pricing models, starting with [Liferay Experience Cloud SaaS](./liferay-pricing/liferay-pricing-saas.md).
+Next: review each of the pricing models, starting with [Liferay SaaS](./liferay-pricing/liferay-pricing-saas.md).
 
 ::::{grid} 2
 :gutter: 3 3 3 3

@@ -5,11 +5,11 @@ visibility:
 - Partner
 ---
 
-# Liferay Experience Cloud SaaS Pricing - MALUs, APVs, Moving Plans
+# Liferay SaaS Pricing - MALUs, APVs, Moving Plans
 
 **At a Glance**
 
-* New pricing model for Liferay Experience Cloud SaaS for 2023
+* Updated pricing model for Liferay SaaS for 2024
 * Primary usage based on:
   * Monthly Active Logged-in Users (MALUs)
   * Anonymous Page Views (APVs)

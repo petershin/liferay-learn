@@ -5,22 +5,22 @@ visibility:
 - Partner
 ---
 
-# Liferay DXP Self-Hosted Pricing
+# Liferay Self-Hosted Pricing
 
 **At a Glance**
 
 * Liferay provides three deployment approaches, all including Liferay DXP:
-  * Liferay Experience Cloud (SaaS)
-  * Liferay Experience Cloud Self Managed (Paas)
-  * DXP Self-Hosted
-* A new pricing model for DXP Self-Hosted has been introduced for 2023
+  * Liferay SaaS
+  * Liferay Paas
+  * Liferay Self-Hosted
+* A new pricing model for Liferay Self-Hosted was introduced in 2023
 * The new model is Plan based, providing a bundle of Instances and Environments
 
 ## Background
 
-Sometimes Cloud, in either SaaS or PaaS-mode is not an option for a Customer.
+Sometimes Liferay's Cloud, in either SaaS or PaaS-mode is not an option for a Customer.
 
-With Liferay DXP Self-Hosted, Liferay provides just the DXP software itself, with the Customer responsible for everything else, either doing it themselves or paying for someone else to do it.
+With Liferay Self-Hosted, Liferay provides just the DXP software itself, with the Customer responsible for everything else, either doing it themselves or paying for someone else to do it.
 
 The Customer is responsible for the low-value, but often high cost activities, which include taking care of:
 
@@ -41,7 +41,7 @@ The Customer is responsible for the low-value, but often high cost activities, w
 
 In addition to these they are responsible for high-value activities like Application Delivery, also known as Solving Business Problems.
 
-While there are a lot of additional responsibilities, there’s also flexibility because Customers can deploy DXP Self-Hosted where they wish:
+While there are a lot of additional responsibilities, there’s also flexibility because Customers can deploy Liferay Self-Hosted where they wish:
 
 * Public Cloud
 * Private Cloud
@@ -52,18 +52,18 @@ While there are a lot of additional responsibilities, there’s also flexibility
 * Download the [PDF](https://learn.liferay.com/documents/d/guest/sa1-2c-liferay-pricing-self-hosted-pdf) of the presentation used in the live workshop.
 ```
 
-## Liferay DXP Self-Hosted Pricing Model - Summary
+## Liferay Self-Hosted Pricing Model - Summary
 
-Liferay DXP Self-Hosted pricing was updated May 2023. It is still instance based but starts with three base plans and a “plus” plan:
+Liferay Self-Hosted pricing was updated May 2023. It is still instance based but starts with three base plans and a “plus” plan:
 
 * Pro
 * Business
 * Business+
 * Enterprise
 
-![The pricing model for DXP Self-Hosted includes for plans, Pro, Business, Business+, and Enterprise.](./liferay-pricing-self-hosted/images/01.png)
+![The pricing model for Liferay Self-Hosted includes for plans, Pro, Business, Business+, and Enterprise.](./liferay-pricing-self-hosted/images/01.png)
 
-The new model is being rolled out in phases, with the new plans being available as of June 1st 2023 for New Business and New Project Existing Business opportunities.
+The new model is being rolled out in phases, with the new plans being available for New Business and New Project Existing Business opportunities.
 
 For existing customers renewals stay with the old a la carte pricing model for the time being. And, in some cases there are prior agreements or special pricing in place. For these situations please work with Liferay’s Go To Market leaders for exceptions when it comes to existing customers’ new projects.
 
@@ -71,9 +71,9 @@ Furthermore, there are some add-on product line items that have not yet been inc
 
 With the co-selling model now in place, the Liferay sales team manages these manual pieces for Partners.
 
-## Key principles for DXP Self-Hosted Pricing
+## Key principles for Liferay Self-Hosted Pricing
 
-The key principles to the new DXP Self-Hosted pricing model are as follows:
+The key principles to the new Liferay Self-Hosted pricing model are as follows:
 
 * Simpler than an a la carte model
 * Include 3 base plans and 1 “plus” plan
@@ -116,7 +116,7 @@ The new plans-based approach has been used in North America by Liferay’s Direc
 * All new opportunities must start with the new plans.
 * A la carte pricing is available for adding capacity and products to new opportunities.
 
-## DXP Self-Hosted Pro Plan
+## Liferay Self-Hosted Pro Plan
 
 The smallest available plan provides a base-level configuration for simple projects. This configuration is considered the absolute minimum to have an effective Liferay installation.
 
@@ -129,7 +129,7 @@ Note that the Pro Plan does not include Liferay Enterprise Search (LES), but it 
 
 Note that due to the low cost for the Pro Plan there is minimal room for price negotiation. It is expected that the buying and contracting process should be straightforward.
 
-## DXP Self-Hosted Business and Business+ Plans
+## Liferay Self-Hosted Business and Business+ Plans
 
 Next are the Business and Business+ Plans, which add High Availability with 2 instances for each of Production and UAT, along with an additional Non-Production instance. These plans also include a cluster of Enterprise Search nodes for production and sufficient Enterprise Search nodes for non-production.
 
@@ -148,7 +148,7 @@ For customers needing a 24/7 response SLA but not disaster recovery the Business
 
 Note that Platinum Support cannot be bought as an add on. Customers needing this level of support must either buy the Business+ or Enterprise Plans.
 
-## DXP Self-Hosted Enterprise Plan
+## Liferay Self-Hosted Enterprise Plan
 
 The Enterprise Plan expands on the Business+ Plan by adding Disaster Recovery capabilities. The complete configuration is:
 
@@ -165,10 +165,10 @@ This plan will be most suitable to customers running larger, mission critical ap
 
 The plans are currently priced as follows:
 
-* Pro: EUR / USD 39,000 per year
-* Business: EUR / USD 89,000 per year
-* Business+: EUR / USD 115,000 per year
-* Enterprise: EUR / USD 159,000 per year
+* Pro: EUR / USD 40,200 per year
+* Business: EUR / USD 91,700 per year
+* Business+: EUR / USD 118,5000 per year
+* Enterprise: EUR / USD 163,800 per year
 
 As noted above, the new plan-based approach has been piloted in the North American region prior to being launched globally.  This provided an opportunity to gather feedback from sales, and to work with the regional sales leaders.
 

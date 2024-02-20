@@ -35,7 +35,7 @@ installing-and-upgrading-a-search-engine/solr.md
 
 ## Solr
 
-Solr is deprecated in Liferay 7.3 and removed in 7.4.
+Solr is deprecated in Liferay 7.3 and is in [maintenance mode](../installation-and-upgrades/upgrading-liferay/reference/maintenance-mode-and-deprecations-in-7-4.md#features-moved-to-maintenance-mode-in-74) in 7.4.
 
 - [Solr Limitations](installing-and-upgrading-a-search-engine/solr/solr-limitations.md)
 - [Installing Solr](installing-and-upgrading-a-search-engine/solr/installing-solr.md)

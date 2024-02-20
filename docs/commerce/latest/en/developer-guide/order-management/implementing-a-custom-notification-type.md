@@ -57,7 +57,7 @@ Then, follow these steps:
 
 1. Log in as an administrator, open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)), click on *Control Panel* &rarr; *Sites*, and add a new Minium Demo site.
 
-1. After creating the site, open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)) again, and go to *Control Panel* &rarr; *Language Override*. Click *Add* (![Add icon](../../images/icon-add.png)) and add the following keys.
+1. After creating the site, open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)) again and go to *Control Panel* &rarr; *Language Override*. Click *Add* (![Add icon](../../images/icon-add.png)) and add the following keys.
 
     |  Language Key                                | Value                                        |
     | :------------------------------------------- | :------------------------------------------- |
@@ -112,11 +112,11 @@ Then, follow these steps:
 1. Check your inbox for the received notification.
 
 !!! important
-    You can use a fake SMTP server like MockMock (https://github.com/tweakers/MockMock) to test these notifications in your local development environment. Add the following line in your `portal-ext.properties` file: `mail.send.blacklist=noreply@liferay.com, noreply@domain.invalid, test@domain.invalid`. Run the jar using `java -jar MockMock.jar` and check `localhost:8282` for the received emails.
+    You can use a fake SMTP server like MockMock(https://github.com/tweakers/MockMock) to test these notifications in your local development environment. Add the following line in your `portal-ext.properties` file: `mail.send.blacklist=noreply@liferay.com, noreply@domain.invalid, test@domain.invalid`. Run the jar using `java -jar MockMock.jar` and check `localhost:8282` for the received emails.
 
 ## How the Custom Notification Type Works
 
-This example consists of 6 main steps. First, you must annotate the class for OSGi registration. Next, review the [CommerceNotificationType](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-notification-api/src/main/java/com/liferay/commerce/notification/type/CommerceNotificationType.java) interface. Then, finish the implementation of the custom `CommerceNotificationType`.
+This example consists of six main steps. First, you must annotate the class for OSGi registration. Next, review the [CommerceNotificationType](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-notification-api/src/main/java/com/liferay/commerce/notification/type/CommerceNotificationType.java) interface. Then, finish the implementation of the custom `CommerceNotificationType`.
 
 After that, create a `ModelListener` for the `CommerceShipment` class. Next, review the `CommerceDefinitionTermContributor` interface. Finally, implement term contributors to resolve the wildcards for the new notification.
 

@@ -1,29 +1,10 @@
 {
 	"dependencies": {
-		"@liferay/npm-scripts": "^33.0.1"
+		"@liferay/npm-scripts": "^49.2.0"
 	},
 	"description": "Liferay Learn",
 	"license": "ISC",
 	"name": "liferay-learn",
-	"prettier": {
-		"arrowParens": "avoid",
-		"bracketSpacing": false,
-		"endOfLine": "lf",
-		"jsxSingleQuote": true,
-		"overrides": [
-			{
-				"files": [
-					"**/*.html"
-				],
-				"options": {
-					"singleQuote": false
-				}
-			}
-		],
-		"singleQuote": true,
-		"tabWidth": 4,
-		"useTabs": true
-	},
 	"private": true,
 	"scripts": {
 		"fix": "liferay-npm-scripts fix",

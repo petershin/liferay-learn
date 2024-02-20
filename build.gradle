@@ -1,6 +1,5 @@
 buildscript {
 	dependencies {
-		classpath group: "com.liferay", name: "com.liferay.gradle.plugins.python", version: "latest.release"
 		classpath group: "com.liferay", name: "com.liferay.gradle.plugins.source.formatter", version: "latest.release"
 	}
 
@@ -13,7 +12,6 @@ buildscript {
 	}
 }
 
-apply plugin: "com.liferay.python"
 apply plugin: "com.liferay.source.formatter"
 
 repositories {

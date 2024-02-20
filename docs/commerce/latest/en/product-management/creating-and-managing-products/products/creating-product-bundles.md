@@ -49,7 +49,7 @@ Follow these steps to create a product bundle:
    * **Price Type**: Choose whether to use *Static* or *Dynamic* pricing for option values.
 
    ```{note}
-   *Dynamic* uses the linked SKU's price for a value, while *Static* uses a fixed price set directly in the value field. Dynamic and  static prices get added to the current product's base price.
+   *Dynamic* uses the linked SKU's price for a value, while *Static* uses a fixed price set directly in the value field. Dynamic and static prices get added to the current product's base price.
 
    Also, since product bundles use the Price Type attribute, they can only use the Single Selection and Select from List field types. 
    ```
@@ -119,6 +119,64 @@ The price of the cart updates automatically if the selected options change the p
 ```{important}
 The option to edit the bundle isn't available if you add the base product to cart. 
 ```
+
+## Creating Bundles Containing Product Relations
+
+{bdg-secondary}`Liferay DXP 2024.Q1+/Portal 7.4 GA112+`
+
+You can now create product bundles that contain two kinds of product relations.
+
+* Requires in Bundle
+* Incompatible in Bundle
+
+These product relations restrict the options that can or can't be selected in a product bundle. For instance, consider a computer hardware distributor that sells pre-built PCs. Some motherboards might not work with processors made by certain companies whereas some processors need a motherboard with a specific chipset to function. Both these scenarios are illustrated using the following two options.
+
+!!! important
+    This feature is currently behind a release feature flag. Read [Release Feature Flags](https://learn.liferay.com/web/guest/w/dxp/system-administration/configuring-liferay/feature-flags#release-feature-flags) for more information.
+
+### Requires in Bundle
+
+You can use this relation to enforce selection of an option based on another option's selection. For instance, if the buyer chooses a CPU that is only compatible with one motherboard, that motherboard appears as a required option in the bundle.
+
+To add this product relation,
+
+1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Products*.
+
+1. Select the product you want to add the relation to.
+
+1. Go to *Product Relations*.
+
+1. Click *Add* (![Add](../../../images/icon-add.png)) and select *Add Requires in Bundle Product*.
+
+1. Search for products and use the checkbox to select them.
+
+1. Click *Add*.
+
+This is a bidirectional relationship, meaning, both these products have the same relationship applied to them.
+
+![Selection of one option requires the selection of a specific value in another option.](./creating-product-bundles/images/08.png)
+
+### Incompatible in Bundle
+
+You can use this relation to display incompatible options based on another option's selection. For instance, if there are 4 motherboards available and the user's CPU selection is compatible with only 2 of them, the remaining two appear as incompatible options in the bundle.
+
+To add this product relation,
+
+1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Products*.
+
+1. Select the product you want to add the relation to.
+
+1. Go to *Product Relations*.
+
+1. Click *Add* (![Add](../../../images/icon-add.png)) and select *Add Incompatible in Bundle Product*.
+
+1. Search for products and use the checkbox to select them.
+
+1. Click *Add*.
+
+This is a bidirectional relationship, meaning, both these products have the same relationship applied to them.
+
+![Incompatible options appear depending on the option selected.](./creating-product-bundles/images/09.png)
 
 ## Related Topics
 

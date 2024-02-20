@@ -10,128 +10,140 @@ taxonomy-category-names:
 ---
 # Related Products, Up-Sells, and Cross-Sells
 
-Product relations can be used to connect products. Once connected, a product displays the links to other products. Every related product must be assigned to a Product Relation Type. These products can then be displayed by a Product Publisher widget configured to source data from the appropriate type.
+You can use product relations to create links between products. After doing so, one product displays other linked products. To add a product relation, you must choose from one of the available relation types. Then, you can use a product publisher and choose the appropriate relation type to display linked products relative to the product featured on the page.
 
-When more than one Product Publisher widget is placed on a product detail page, multiple sets of related products may be shown. For instance, one widget might display a set of products that are alternatives to the product featured on the page, while another might display products that are accessories to the featured product.
+When placing multiple product publisher widgets on a product detail page, multiple sets of related products may be shown. For instance, one widget can display alternatives while another can display accessories to the product featured on the page.
 
-Note: If your site was built using an accelerator, then a number of product relation types are already in place. Here is a list of default Product Relations:
+Here is a list of product relations that come with the Minium and Speedwell site initializers:
 
-* **Up-Sell**: Display products that are comparable to the featured product but have a higher sale value.
-* **Spare**: Display products that are spare parts or components for the featured product.
+* **Up-Sell**: Products with a higher sale value comparable to the featured product.
+* **Spare**: Spare parts or components of the featured product.
 * **Related**: A catch-all set.
-* **Accessories**: Display add-on products for use in conjunction with the featured products.
-* **Cross-Sell**: Display products complementary to the featured product.
+* **Accessories**: Add-on products for use in conjunction with the featured product.
+* **Cross-Sell**: Products complementary to the featured product.
 
-![Product Relations: Brake Rotors and Fluid](./related-products-up-sells-and-cross-sells/images/05.png)
+{bdg-secondary}`Liferay DXP 2024.Q1+/Portal 7.4 GA112+` There are two more product relations used in product bundles. See [Creating Bundles Containing Product Relations](./creating-product-bundles.md#creating-bundles-containing-product-relations) for more information.
 
-In the image above, the two related products are displayed in the Product Publisher widget at the bottom. You have the option to add more Product Publisher widgets configured with other types of Product Relations.
+In the image above, there are two related products in the product publisher widget at the bottom. To display other relations, you can add more product publisher widgets.
 
 ## Adding a New Product Relation Type
 
-Product Relation types can be added as necessary. This includes intangible products, such as warranties. To add a new Product Relation:
+If you're not using a site initializer or want more product relations, you can add them as needed.
 
-1. Go to the _Global Applications_ menu → _Control Panel_ → _System Settings_.
-1. Click _Catalog_ in the _Commerce_ section.
-1. Click _Product Relations_ on the left menu.
-1. Click the _Add_ button.
-1. Enter the new Product Relation in the _Type_ field: Warranties.
-1. Click _Save_.
+1. Open the *Global Menu* (![Global Menu icon](../../../images/icon-applications-menu.png)) and navigate to *Control Panel* &rarr; *System Settings*.
 
-    ![Creating a New Product Relation](./related-products-up-sells-and-cross-sells/images/01.png)
+1. Go to *Commerce* &rarr; *Catalog* and choose *Product Relations* from the left menu.
 
-The new Product Relation Type has been added.
+1. Click *Add*.
+
+1. Enter the name of the relation in the *Type* field.
+
+   ![Adding a new product relation.](./related-products-up-sells-and-cross-sells/images/01.png)
+
+1. Click *Save*.
 
 ## Creating Relationships Between Products
 
-1. Go to the _Global Applications_ menu → _Commerce_ → _Products_.
-1. Select any product; for example, _Brake Pads_.
-1. Click on the _Product Relations_ sub-tab.
-1. Click on _Related_ in the left menu.
+1. Open the *Global Menu* (![Global Menu icon](../../../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Products*.
 
-    ![Related Menu](./related-products-up-sells-and-cross-sells/images/02.png)
+1. Select a product.
 
-1. Click the (+) button to add one or more relationships. In this example, select _Brake Rotors_ and _Brake Fluid_.
-1. Click _Add_.
+1. Go to *Product Relations*.
 
-    ![Adding Two Products](./related-products-up-sells-and-cross-sells/images/04.png)
+1. Click *Add* (![Add icon](../../../images/icon-add.png)) and select *Add Related Product*.
 
-These two products are now associated with _Brake Pads_. Note that this relationship is unidirectional; in other words, when viewing _Brake Pads_ the new product relations will be visible but when viewing the _Brake Rotors_ or _Brake Fluid_ products, _Brake Pads_ will _not_ be listed as as a related product.
+    ![Select a product relation to add to the product.](./related-products-up-sells-and-cross-sells/images/02.png)
 
-Once the product relationships have been created, configure the Product Publisher widget to display the relations.
+1. Search for products and use the checkbox to select them.
+
+1. Click *Add*.
+
+    ![Adding two related products to the current product.](./related-products-up-sells-and-cross-sells/images/03.png)
+
+The two products (Brake Fluid and Brake Rotors) are now associated with the selected product (Brake Pads). This relationship is unidirectional. You can see brake fluid and brake rotors as related products when viewing brake pads. But the opposite is not true. To display product relations, you must configure a product publisher widget.
 
 ## Displaying Product Relations
 
-You can display product relations on a product display page by configuring a Product Publisher widget. You must have a [product display page](https://help.liferay.com/hc/en-us/articles/360017870292-Displaying-Product-Pages-) in place first.
+You can display product relations on a product display page by configuring a product publisher widget. You must have a [product display page](../../../creating-store-content/creating-product-display-pages.md) in place first.
 
-1. Search for a product (for example _Brake Pads_).
-1. Click _Brake Pads_ to view the Product Details.
-1. Scroll to the bottom of the page to view the related products listed in the _Product Publisher_ widget.
+1. After adding the product relations to a product and creating a product display page, go to the specific product's product display page.
 
-   ![Configuration Menu](./related-products-up-sells-and-cross-sells/images/06.png)
+1. Click *Edit* (![Edit icon](../../../images/icon-edit-pencil.png)) and add a product publisher widget below the product details widget.
 
-1. Click the _3-dot_ icon (Options) → _Configuration_.
-1. Select _Product Relations related_ from the _Data Source_ dropdown menu.
+1. Click *Actions* (![Actions icon](../../../images/icon-actions.png)) and select *Configuration*.
 
-    ![Choosing a Data Source](./related-products-up-sells-and-cross-sells/images/03.png)
+1. Select *Product Relations related* from the *Data Source* dropdown menu.
 
-1. Click _Save_ and close the dialog box.
+    ![Choosing a data source to display related products.](./related-products-up-sells-and-cross-sells/images/04.png)
 
-    ![Product Relations: Brake Rotors and Fluid](./related-products-up-sells-and-cross-sells/images/05.png)
+1. Click *Save* and close the dialog box.
 
-The example above shows how different products could be related, ensuring that customers can see the full range of products that may also be potentially useful.
+    ![The product publisher displays related products.](./related-products-up-sells-and-cross-sells/images/05.png)
+
+The two related products appear in the product publisher widget. This is contextual and changes when you select a different product. If the chosen product doesn't have related products, the widget appears empty.
 
 ## Commerce 2.1 and Below
 
 ### Adding a New Product Relation Type
 
-More Product Relation types may be added as necessary. This includes intangibles such as warranties. To add a new Product Relation:
+If you're not using a site initializer or want more product relations, you can add them as needed.
 
-1. Go to the _Control Panel_ → _Configuration_ → _System Settings_.
-1. Click _Catalog_ in the _Commerce_ section.
-1. Click _Product Relations_ on the left menu.
-1. Click the _Add_ button.
-1. Enter the new Product Relation in the _Type_ field: Warranties.
-1. Click _Save_.
+1. Go to the *Control Panel* &rarr; *Configuration* &rarr; *System Settings*.
 
-    ![Creating a New Product Relation](./related-products-up-sells-and-cross-sells/images/01.png)
+1. Click *Catalog* in the *Commerce* section.
 
-The new Product Relation Type has been added.
+1. Click *Product Relations* on the left menu.
+
+1. Click the *Add* button.
+
+1. Enter the new Product Relation in the *Type* field: Warranties.
+
+1. Click *Save*.
+
+    ![Creating a new product relation.](./related-products-up-sells-and-cross-sells/images/06.png)
+
+This adds a new product relation.
 
 ### Creating Relationships Between Products
 
-1. Go to the _Control Panel_ menu → _Commerce_ → _Products_.
-1. Select any product; for example, _Brake Pads_.
-1. Click on the _Product Relations_ sub-tab.
-1. Click on _Related_ in the left menu.
+1. Go to the *Control Panel* menu &rarr; *Commerce* &rarr; *Products*.
 
-    ![Related Menu](./related-products-up-sells-and-cross-sells/images/02.png)
+1. Select any product; for example, *Brake Pads*.
 
-1. Click the (+) button to add one or more relationships. In this example, select _Brake Rotors_ and _Brake Fluid_.
-1. Click _Add_.
+1. Click on the *Product Relations* sub-tab.
 
-    ![Adding Two Products](./related-products-up-sells-and-cross-sells/images/04.png)
+1. Click on *Related* in the left menu.
 
-These two products are now associated with _Brake Pads_. Note that this relationship is unidirectional; in other words, when viewing _Brake Pads_ the new product relations will be visible but when viewing the _Brake Rotors_ or _Brake Fluid_ products, _Brake Pads_ will _not_ be listed as as a related product.
+    ![Open the Related menu to configure related products.](./related-products-up-sells-and-cross-sells/images/07.png)
 
-Once the product relationships have been created, configure the Product Publisher widget to display the relations.
+1. Click *Add* (![Add icon](../../images/icon-add.png)) to add one or more relationships.
+
+1. Click *Add*.
+
+    ![Adding two related products to the current product.](./related-products-up-sells-and-cross-sells/images/08.png)
+
+The two products (Brake Fluid and Brake Rotors) are now associated with the selected product (Brake Pads). This relationship is unidirectional. You can see brake fluid and brake rotors as related products when viewing brake pads. But the opposite is not true. To display product relations, you must configure a product publisher widget.
 
 ### Displaying Product Relations
 
-You can display product relations on a product display page by configuring a Product Publisher widget. You must have a [product display page](https://help.liferay.com/hc/en-us/articles/360017870292-Displaying-Product-Pages-) in place first.
+You can display product relations on a product display page by configuring a product publisher widget. You must have a [product display page](../../../creating-store-content/creating-product-display-pages.md) in place first.
 
-1. Search for a product (for example _Brake Pads_).
-1. Click _Brake Pads_ to view the Product Details.
-1. Scroll to the bottom of the page to view the related products listed in the _Product Publisher_ widget.
+1. Search for a product (for example *Brake Pads*).
 
-   ![Configuration Menu](./related-products-up-sells-and-cross-sells/images/06.png)
+1. Click *Brake Pads* to view the Product Details.
 
-1. Click the _3-dot_ icon (Options) → _Configuration_.
-1. Select _Product Relations related_ from the _Data Source_ dropdown menu.
+1. Scroll to the bottom of the page to view the related products listed in the *Product Publisher* widget.
 
-    ![Choosing a Data Source](./related-products-up-sells-and-cross-sells/images/03.png)
+   ![Open the configuration menu for the product publisher widget.](./related-products-up-sells-and-cross-sells/images/09.png)
 
-1. Click _Save_ and close the dialog box.
+1. Click *Actions* (![Actions icon](../../../images/icon-actions.png)) and select *Configuration*.
 
-    ![Product Relations: Brake Rotors and Fluid](./related-products-up-sells-and-cross-sells/images/05.png)
+1. Select *Product Relations related* from the *Data Source* dropdown menu.
+
+    ![Choosing a data source to display related products.](./related-products-up-sells-and-cross-sells/images/10.png)
+
+1. Click *Save* and close the dialog box.
+
+    ![The product publisher displays related products.](./related-products-up-sells-and-cross-sells/images/11.png)
 
 The example above shows how different products could be related, ensuring that customers can see the full range of products that may also be potentially useful.

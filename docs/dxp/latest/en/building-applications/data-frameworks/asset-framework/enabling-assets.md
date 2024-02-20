@@ -220,5 +220,5 @@ The portlet is asset enabled. Your application's entries can now be found and di
 ## Related Topics
 
 - [Asset Publisher widget](../../../site-building/displaying-content/using-the-asset-publisher-widget/displaying-assets-using-the-asset-publisher-widget.md)
-- [Asset Libraries](../../../content-authoring-and-management/asset-libraries/asset-libraries-overview.md)
+- [Asset Libraries](../../../content-authoring-and-management/asset-libraries.md)
 - [Service Builder](../service-builder.md)

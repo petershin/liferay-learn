@@ -13,7 +13,7 @@ taxonomy-category-names:
 {bdg-link-primary}`[Beta Feature](../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
 
 !!! important
-    This feature is currently behind a [beta feature flag](../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags). API endpoints currently support retrieving and creating collections of entities.
+    This feature is currently behind a [beta feature flag](../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags). API endpoints currently support retrieving and creating collections of entities.
 
 The API builder makes it easy for you to create custom API applications in Liferay. Create API schemas and endpoints that meet your exact needs.
 
@@ -69,7 +69,7 @@ An API application must be published before use. Once published, the generated A
 {bdg-link-primary}`[Beta Feature](../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
 
 !!! important
-   This feature is currently behind a [beta feature flag](../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags) (LPS-178642). API endpoints currently support retrieving and creating collections of entities.
+   This feature is currently behind a [beta feature flag](../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags) (LPS-178642). API endpoints currently support retrieving and creating collections of entities.
 
 API endpoints are the specific URL locations that accept requests.
 

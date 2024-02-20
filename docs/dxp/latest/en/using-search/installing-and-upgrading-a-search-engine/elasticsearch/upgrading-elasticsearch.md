@@ -24,7 +24,7 @@ upgrading-elasticsearch/backing-up-elasticsearch.md
 Liferay supports Elasticsearch 8. The [compatibility matrix](https://help.liferay.com/hc/en-us/sections/360002103292-Compatibility-Matrix) provides the latest support details.
 
 !!! warning 
-    Solr is in [maintenance mode](../installation-and-upgrades/upgrading-liferay/reference/maintenance-mode-and-deprecations-in-7-4.md#features-moved-to-maintenance-mode-in-74) in Liferay 7.4.
+    Solr is in [maintenance mode](../../../installation-and-upgrades/upgrading-liferay/reference/maintenance-mode-and-deprecations-in-7-4.md#features-moved-to-maintenance-mode-in-74) in Liferay 7.4.
 
 ```{important}
 Elasticsearch 6.x is not supported on Liferay 7.3+.

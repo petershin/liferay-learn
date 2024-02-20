@@ -12,7 +12,7 @@ uuid: ffbbefb9-eab8-46b8-80c6-4589698e76e8
 Solr is a popular enterprise search platform built on Apache Lucene. It's reliable, scalable, and fault tolerant. Read more about it [here](http://lucene.apache.org/solr/).
 
 !!! warning
-    Solr is in [maintenance mode](../installation-and-upgrades/upgrading-liferay/reference/maintenance-mode-and-deprecations-in-7-4.md#features-moved-to-maintenance-mode-in-74) in Liferay 7.4.
+    Solr is in [maintenance mode](../../../installation-and-upgrades/upgrading-liferay/reference/maintenance-mode-and-deprecations-in-7-4.md#features-moved-to-maintenance-mode-in-74) in Liferay 7.4.
 
 These instructions describe installing Solr 8 for the [compatible Liferay versions](https://help.liferay.com/hc/en-us/articles/360016511651-Search-Engine-Compatibility-Matrix). If installing Solr 7, adjust the version name as necessary.
 

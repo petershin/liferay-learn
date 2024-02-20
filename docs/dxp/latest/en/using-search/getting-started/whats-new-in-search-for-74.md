@@ -26,7 +26,7 @@ Elasticsearch 7 is supported in Liferay 7.4. Check the [Search Engine Compatibil
 
 !!! important
     * Elasticsearch 6.x is not supported on Liferay DXP/Portal 7.4.
-    * Solr is in [maintenance mode](../installation-and-upgrades/upgrading-liferay/reference/maintenance-mode-and-deprecations-in-7-4.md#features-moved-to-maintenance-mode-in-74) in Liferay 7.4.
+    * Solr is in [maintenance mode](../../installation-and-upgrades/upgrading-liferay/reference/maintenance-mode-and-deprecations-in-7-4.md#features-moved-to-maintenance-mode-in-74) in Liferay 7.4.
 
 ## Search Infrastructure & Administration
 

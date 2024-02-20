@@ -23,26 +23,26 @@ The catalog page displays all of Clarity's products for its business customers. 
 
 1. Inside the first module of the grid, drag and drop a Search Bar fragment from the left menu.
 
-1. Go to its Styles section from the right sidebar menu and set its Margin Top to `3.5rem`.
+1. Go to its *Styles* section from the right sidebar menu and set its *Margin Top* to `3.5rem`.
 
 1. Click *Actions* (![Actions](../../images/icon-actions.png)) on the fragment, and choose *Configuration*.
 
 1. Set the scope to *Everything* and click *Save*.
 
-1. Drag and drop the following widgets under the search bar one below the other:
+1. Drag and drop these widgets under the search bar, one below the other:
 
    1. Option Facet
    2. Category Facet
    3. Price Range Facet
    4. Specification Facet
 
-1. Click *Actions* (![Actions](../../images/icon-actions.png)) on the category facet, and choose *Configuration*.
+1. Click *Actions* (![Actions](../../images/icon-actions.png)) on the category facet and choose *Configuration*.
 
 1. Choose *Select Vocabularies* and select *Clarity* from the Global scope.
 
 1. Click *Save*.
 
-1. Click *Actions* (![Actions](../../images/icon-actions.png)) on the price range facet, and choose *Configuration*.
+1. Click *Actions* (![Actions](../../images/icon-actions.png)) on the price range facet and choose *Configuration*.
 
 1. In the *Ranges JSON Array* textarea, paste the following array:
 
@@ -59,7 +59,7 @@ The catalog page displays all of Clarity's products for its business customers. 
 
 1. Click *Save*.
 
-1. Lastly, drag and drop a Search Options widget below the specification facet.
+1. Finally, drag and drop a Search Options widget below the specification facet.
 
 1. Click *Actions* (![Actions](../../images/icon-actions.png)) and select *Configuration*. 
 

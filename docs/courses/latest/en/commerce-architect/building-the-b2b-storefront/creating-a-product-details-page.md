@@ -23,13 +23,13 @@ The product details page displays all the information about a selected product. 
 
 1. Drag and drop the *Product Details* widget inside the fixed width container.
 
-1. Drag and drop a Heading fragment below the Product Details widget.
+1. Drag and drop a *Heading* fragment below the Product Details widget.
 
-1. Set the header title to *Related Products*.
+1. Set the header title to `Related Products`.
 
 1. Go to the *Styles* tab and in the Spacing settings, choose *Spacer 4* for the margin on the top and bottom of the element.
 
-1. In the Text settings, set the text alignment to center.
+1. In the Text settings, set the text alignment to *center*.
 
 1. Drag and drop the *Product Publisher* widget inside the fixed width container below the heading fragment.
 

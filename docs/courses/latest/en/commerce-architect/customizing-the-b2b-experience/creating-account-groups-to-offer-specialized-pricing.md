@@ -3,7 +3,7 @@ uuid: cb477fcd-9ea0-44c4-8deb-a131182f315d
 ---
 # Creating Account Groups to Offer Specialized Pricing
 
-The administrator, Kyle Klein, wants to create an account group for Platinum Accounts. These are accounts that have a long standing relationship with Clarity Vision Solutions and Clarity wants to introduce an additional 5% discount for these accounts. Currently, only Fabulous Frames qualify as a platinum account, so Kyle's going to add them to the newly created account group.
+The administrator, Kyle Klein, wants to create an account group for Platinum Accounts. These are accounts that have a long-standing relationship with Clarity Vision Solutions, and Clarity wants to introduce an additional 5% discount for these accounts. Currently, only Fabulous Frames qualifies as a platinum account, so Kyle will add them to the newly created account group.
 
 ## Creating a New Account Group
 
@@ -13,13 +13,13 @@ The administrator, Kyle Klein, wants to create an account group for Platinum Acc
 
 1. Click *Save*.
 
-1. After saving, go to the Accounts tab at the top.
+1. After saving, go to the *Accounts* tab at the top.
 
-1. Click *New* and select Fabulous Frames.
+1. Click *New* and select *Fabulous Frames*.
 
    ![Add Fabulous Frames to the Platinum Accounts account group.](./creating-account-groups-to-offer-specialized-pricing/images/01.png)
 
-1. Click Assign.
+1. Click *Assign*.
 
 This adds Fabulous Frames to the Platinum Accounts account group. 
 
@@ -41,13 +41,13 @@ This adds Fabulous Frames to the Platinum Accounts account group.
 
 In the newly opened configuration page,
 
-1. Go to the Eligibility tab.
+1. Go to the *Eligibility* tab.
 
 1. Select *Specific Account Groups* and search for Platinum Accounts.
 
 1. Click *Select* next to the account group.
 
-1. Go to the Price Modifiers tab.
+1. Go to the *Price Modifiers* tab.
 
 1. Click *New* and enter the following information:
 
@@ -65,6 +65,6 @@ In the newly opened configuration page,
 
 1. Click *Save*.
 
-This creates the new price modifier on the custom price list that's only applicable Fabulous Frames currently. They'll receive a 5% discount on the entire catalog in addition to other discounts that are already available.
+This creates the new price modifier on the custom price list that's currently only applicable to Fabulous Frames. They'll receive a 5% discount on the entire catalog in addition to other available discounts. 
 
 Next: [Creating Order Types for Bulk and Regular Orders](./creating-order-types-for-bulk-and-regular-orders.md)

@@ -9,23 +9,23 @@ As Clarity caters to a different businesses with varying supply demands, they mu
 
 1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Order Types*.
 
-1. Click *Add* (![Add](../../images/icon-add.png)) and enter Name as *Regular*.
+1. Click *Add* (![Add](../../images/icon-add.png)) and enter *Name* as `Regular`.
 
 1. Click *Submit*.
 
-1. In the newly opened configuration page, set the Display Order to 0.
+1. In the newly opened configuration page, set the *Display Order* to `0`.
 
 1. Activate the order type using the *Active* toggle.
 
 1. Click *Publish*.
 
-Now, go back to the Order Types application page and create one more order type for bulk orders.
+Now, go back to the *Order Types* application page and create one more order type for bulk orders.
 
-1. Click *Add* (![Add](../../images/icon-add.png)) and enter Name as *Bulk*. 
+1. Click *Add* (![Add](../../images/icon-add.png)) and enter *Name* as `Bulk`. 
 
 1. Click *Submit*.
 
-1. In the newly opened configuration page, set the display order to 1.
+1. In the newly opened configuration page, set the display order to `1`.
 
 1. Click *Publish*.
 
@@ -45,7 +45,7 @@ Now, go back to the Order Types application page and create one more order type 
 
 1. Click *Submit*.
 
-1. In the newly opened configuration page, set the *Amount* to 10. 
+1. In the newly opened configuration page, set the *Amount* to `10`. 
 
 1. Activate the discount using the *Active* toggle.
 
@@ -53,7 +53,7 @@ Now, go back to the Order Types application page and create one more order type 
 
 ## Configuring the new Discount
 
-This only creates a 10% discount but it is eligible to all orders. You must configure it so that it applies to only bulk orders. To avoid users creating bulk orders without actually having the cart total beyond a certain amount, you must also set up a rule for the discount.
+This only creates a 10% discount, but it is eligible to all orders. You must configure it so that it applies to only bulk orders. To avoid users creating bulk orders without actually having the cart total beyond a certain amount, you must also set up a rule for the discount.
 
 1. Under the Rules section, click *Add* (![Add](../../images/icon-add.png)) and enter the following information:
 
@@ -63,7 +63,7 @@ This only creates a 10% discount but it is eligible to all orders. You must conf
 
 1. Click *Submit*.
 
-1. Select the newly created rule and set the *Cart Total Minimum Amount* field to $5000.
+1. Select the newly created rule and set the *Cart Total Minimum Amount* field to `$5000`.
 
 1. Click *Save*.
 
@@ -79,13 +79,13 @@ This creates additional specificity for the discount so that only orders above $
 
 1. Log in as Robert Reed, the buyer for Fabulous Frames (`robert.reed@fabulousframes.com`, `learn`).
 
-1. Click on the Account Selector and select *Create New Order*.
+1. Click on the *Account* selector and select *Create New Order*.
 
-1. In the newly opened dialog box, choose between Regular or Bulk.
+1. In the newly opened dialog box, choose between *Regular* or *Bulk*.
 
 1. Click *Add Order*.
 
-You can now go back to the catalog page and add products to your cart to checkout. If you don't select an order type at the time of order creation, it defaults to the regular order type as it has a lower display order value.
+You can now go back to the catalog page and add products to your cart to check out. If you don't select an order type at the time of order creation, it defaults to the regular order type as it has a lower display order value.
 
 ![Choosing an order type during order creation.](./creating-order-types-for-bulk-and-regular-orders/images/02.gif)
 

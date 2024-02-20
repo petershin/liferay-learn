@@ -11,7 +11,7 @@ Clarity wants to implement a buyer order approval workflow for its customers. Ky
 
 1. Select *Clarity B2B* and scroll down to the Orders section.
 
-1. Choose *Single Approver (Version 1)* from the *Buyer Order Approval Workflow* dropdown.
+1. Choose *Single Approver (Version 1)* from the *Buyer Order Approval Workflow* drop-down.
 
 1. Click *Save*.
 
@@ -19,7 +19,7 @@ This enables the out-of-the-box buyer order approval workflow for buyers. Buyers
 
 ## Seeing the Workflow in Action
 
-To see the workflow in action, you must first log in as a buyer. After placing an order, you must log out and log back in as an order manager. The order manager gets a notification about the order pending their approval.
+To see the workflow in action, you must first log in as a buyer. After placing an order, you must log out and log back in as an order manager. The order manager gets a notification that the order is pending approval.
 
 1. Log in as Robert Reed, the buyer for Fabulous Frames (`robert.reed@fabulousframes.com`, `learn`).
 
@@ -33,11 +33,11 @@ To see the workflow in action, you must first log in as a buyer. After placing a
 
 1. Go to Clarity's Orders page and select the order submitted by Robert Reed.
 
-1. There's an option to Approve or Reject the order. Choose Approve. Add a comment and click *Done*.
+1. There's an option to Approve or Reject the order. Choose *Approve*. Add a comment and click *Done*.
 
    ![Approve or reject the order placed by the buyer.](./setting-up-a-workflow-for-buyers/images/01.png)
 
-   After approving the order, the buyer can log back in and proceed to checkout the order. To do this,
+   After approving the order, the buyer can log back in and proceed to check out. To do this,
 
 1. Log back in as Robert Reed (`robert.reed@fabulousframes.com`, `learn`).
 
@@ -49,4 +49,4 @@ To see the workflow in action, you must first log in as a buyer. After placing a
 
 That was a lot!
 
-With that, you've completed the Commerce Architect course. View the [Courses](../../index.md) page to go through some of the other available courses on Liferay Learn.
+Congratulations! You've completed the Commerce Architect course. View the [Courses](../../index.md) page to go through some of the other available courses on Liferay Learn.

@@ -27,7 +27,7 @@ taxonomy-category-names:
 
 Front-end client extensions augment your pages and integrate new functionality. Available types include CSS, JavaScript, Theme CSS, Theme Favicon, Custom Element, and IFrame.
 
-You can create and deploy these extensions from your [Liferay Workspace](../tooling/liferay-workspace/what-is-liferay-workspace.md).
+You can create and deploy these extensions from your [Liferay Workspace](../tooling/liferay-workspace/what-is-liferay-workspace.md) or via UI (Global Menu (![Global Menu](../../images/icon-applications-menu.png)) &rarr; Applications tab &rarr; Client Extensions under Custom Apps).
 
 See [Understanding Custom Element and IFrame Client Extensions](./front-end-client-extensions/understanding-custom-element-and-iframe-client-extensions.md) to learn more about creating [custom element](#custom-element-client-extensions) and [IFrame](#iframe-client-extensions) client extensions.
 
@@ -139,9 +139,40 @@ Set these properties in the `client-extension.yaml` file of any front-end client
 
 See [Configuring Client Extensions in `client-extension.yaml`](./working-with-client-extensions.md#configuring-client-extensions-in-client-extension-yaml) for more information.
 
+
+## Export/Import Front-end Client Extensions Configured From the UI
+
+{bdg-secondary}`Liferay DXP 2024.Q1+/Portal 7.4 GA112+`
+
+!!! important
+    This feature is currently behind a release feature flag (LPS-182184). Read [Release Feature Flags](../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information.
+
+You can Export/Import front-end client extensions that were configured from the UI while maintaining the external reference code and references created when the client extension was used in a page.
+
+!!! note
+    This export and import method is only available to client extensions configured from the UI.
+
+To export a front-end client extension,
+
+1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), navigate to the Applications tab, and select *Client Extensions* under Custom Apps.
+
+1. Click *Actions* (![Actions icon](../../images/icon-actions.png)) next to the client extension you want to export and select *Export as JSON*.
+
+The client extension is exported in JSON format and it's downloaded automatically into your machine.
+
+To import a front-end client extension,
+
+1. In the *Client Extensions* application under Custom Apps, click *Options* (![Options icon](../../images/icon-options.png)) next to the Global Menu and select *Import*.
+
+1. A modal opens prompting you to select a file. Select the JSON file containing the client extension and click *Import*.
+
+The client extension is imported and it appears in the client extensions list.
+
+![Export/Import front-end client extensions configured from the UI.](./front-end-client-extensions/images/03.png)
+
 ## Related Topics
 
-* [Introduction to Client Extensions](../client-extensions.md)
-* [Understanding Custom Element and IFrame Client Extensions](./front-end-client-extensions/understanding-custom-element-and-iframe-client-extensions.md)
-* [Using a JavaScript Client Extension](./front-end-client-extensions/tutorials/using-a-javascript-client-extension.md)
-* [Using a CSS Client Extension](./front-end-client-extensions/tutorials/using-a-css-client-extension.md)
+- [Introduction to Client Extensions](../client-extensions.md)
+- [Understanding Custom Element and IFrame Client Extensions](./front-end-client-extensions/understanding-custom-element-and-iframe-client-extensions.md)
+- [Using a JavaScript Client Extension](./front-end-client-extensions/tutorials/using-a-javascript-client-extension.md)
+- [Using a CSS Client Extension](./front-end-client-extensions/tutorials/using-a-css-client-extension.md)

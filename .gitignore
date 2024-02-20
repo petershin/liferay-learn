@@ -25,6 +25,7 @@ docs/**/liferay-????.zip/settings.gradle
 docs/**/liferay-????.zip/setup_tutorial.sh
 docs/**/liferay-????.zip/source-formatter-suppressions.xml
 docs/**/liferay-????.zip/yarn.lock
-learn-dxp-importer/build
+learn-markdown-converter/build
 node_modules
 node_modules_cache
+site

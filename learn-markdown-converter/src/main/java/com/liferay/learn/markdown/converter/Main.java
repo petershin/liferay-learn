@@ -1,36 +1,18 @@
 /**
- * Copyright (c) 2000-present Liferay, Inc. All rights reserved.
- *
- * This library is free software; you can redistribute it and/or modify it under
- * the terms of the GNU Lesser General Public License as published by the Free
- * Software Foundation; either version 2.1 of the License, or (at your option)
- * any later version.
- *
- * This library is distributed in the hope that it will be useful, but WITHOUT
- * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
- * FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more
- * details.
+ * SPDX-FileCopyrightText: (c) 2000 Liferay, Inc. https://liferay.com
+ * SPDX-License-Identifier: LGPL-2.1-or-later OR LicenseRef-Liferay-DXP-EULA-2.0.0-2023-06
  */
 
 package com.liferay.learn.markdown.converter;
 
-import com.liferay.headless.delivery.client.dto.v1_0.ContentField;
-import com.liferay.headless.delivery.client.dto.v1_0.ContentFieldValue;
-import com.liferay.headless.delivery.client.dto.v1_0.Document;
-import com.liferay.headless.delivery.client.dto.v1_0.DocumentFolder;
-import com.liferay.headless.delivery.client.dto.v1_0.StructuredContent;
-import com.liferay.headless.delivery.client.dto.v1_0.StructuredContentFolder;
-import com.liferay.headless.delivery.client.pagination.Page;
-import com.liferay.headless.delivery.client.resource.v1_0.DocumentFolderResource;
-import com.liferay.headless.delivery.client.resource.v1_0.DocumentResource;
-import com.liferay.headless.delivery.client.resource.v1_0.StructuredContentFolderResource;
-import com.liferay.headless.delivery.client.resource.v1_0.StructuredContentResource;
 import com.liferay.petra.string.CharPool;
+import com.liferay.petra.string.StringBundler;
 import com.liferay.petra.string.StringPool;
-import com.liferay.petra.string.StringUtil;
 import com.liferay.portal.kernel.util.GetterUtil;
 import com.liferay.portal.kernel.util.HashMapBuilder;
+import com.liferay.portal.kernel.util.StringUtil;
 import com.liferay.portal.kernel.util.Tuple;
+import com.liferay.portal.kernel.util.Validator;
 
 import com.vladsch.flexmark.ast.Image;
 import com.vladsch.flexmark.ast.Link;
@@ -46,16 +28,20 @@ import com.vladsch.flexmark.ext.superscript.SuperscriptExtension;
 import com.vladsch.flexmark.ext.tables.TablesExtension;
 import com.vladsch.flexmark.ext.toc.TocExtension;
 import com.vladsch.flexmark.ext.typographic.TypographicExtension;
-import com.vladsch.flexmark.ext.yaml.front.matter.AbstractYamlFrontMatterVisitor;
+import com.vladsch.flexmark.ext.yaml.front.matter.YamlFrontMatterBlock;
 import com.vladsch.flexmark.ext.yaml.front.matter.YamlFrontMatterExtension;
+import com.vladsch.flexmark.ext.yaml.front.matter.YamlFrontMatterNode;
+import com.vladsch.flexmark.ext.yaml.front.matter.YamlFrontMatterVisitor;
+import com.vladsch.flexmark.ext.yaml.front.matter.YamlFrontMatterVisitorExt;
 import com.vladsch.flexmark.html.HtmlRenderer;
 import com.vladsch.flexmark.parser.Parser;
+import com.vladsch.flexmark.util.ast.Document;
+import com.vladsch.flexmark.util.ast.Node;
 import com.vladsch.flexmark.util.ast.NodeVisitor;
 import com.vladsch.flexmark.util.ast.VisitHandler;
 import com.vladsch.flexmark.util.ast.Visitor;
 import com.vladsch.flexmark.util.data.MutableDataSet;
 import com.vladsch.flexmark.util.sequence.BasedSequence;
-import com.vladsch.flexmark.util.sequence.CharSubSequence;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -64,15 +50,14 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.StringReader;
 
-import java.net.URL;
-
-import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Enumeration;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
@@ -84,17 +69,15 @@ import java.util.regex.Pattern;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
-import org.apache.http.HttpStatus;
-import org.apache.http.StatusLine;
-import org.apache.http.client.entity.UrlEncodedFormEntity;
-import org.apache.http.client.methods.CloseableHttpResponse;
-import org.apache.http.client.methods.HttpPost;
-import org.apache.http.impl.client.CloseableHttpClient;
-import org.apache.http.impl.client.HttpClientBuilder;
-import org.apache.http.message.BasicNameValuePair;
-import org.apache.http.util.EntityUtils;
 
-import org.json.JSONObject;
+import org.eclipse.jgit.api.Git;
+import org.eclipse.jgit.diff.DiffEntry;
+import org.eclipse.jgit.lib.ObjectId;
+import org.eclipse.jgit.lib.Repository;
+import org.eclipse.jgit.revwalk.RevCommit;
+import org.eclipse.jgit.treewalk.CanonicalTreeParser;
+
+import org.yaml.snakeyaml.Yaml;
 
 /**
  * @author Brian Wing Shun Chan
@@ -104,12 +87,11 @@ import org.json.JSONObject;
 public class Main {
 
 	public static void main(String[] arguments) throws Exception {
-		Properties mainProperties = new Properties();
+		String lastestHashFileName = System.getenv(
+			"LIFERAY_LEARN_ETC_CRON_LATEST_HASH_FILE_NAME");
 
-		try (InputStream inputStream = Main.class.getResourceAsStream(
-				"dependencies/main.properties")) {
-
-			mainProperties.load(inputStream);
+		if (lastestHashFileName == null) {
+			lastestHashFileName = ".latest_hash";
 		}
 
 		Properties tokenProperties = new Properties();
@@ -120,34 +102,27 @@ public class Main {
 			tokenProperties.load(inputStream);
 		}
 
-		File markdownImportDirFile = new File(
-			mainProperties.getProperty("markdown.import.dir"));
+		File learnBaseDirFile = new File("..");
+		File learnDocsDirFile = new File("../docs");
+		File learnSiteDirFile = new File("../site");
 
 		Main main = new Main(
-			GetterUtil.getLong(
-				mainProperties.getProperty("liferay.content.structure.id")),
-			GetterUtil.getLong(mainProperties.getProperty("liferay.group.id")),
-			mainProperties.getProperty("liferay.oauth.client.id"),
-			mainProperties.getProperty("liferay.oauth.client.secret"),
-			new URL(mainProperties.getProperty("liferay.url")),
-			markdownImportDirFile.getCanonicalPath(), tokenProperties);
+			lastestHashFileName, learnBaseDirFile, learnDocsDirFile.getCanonicalPath(),
+			learnSiteDirFile.getCanonicalPath(), tokenProperties);
 
-		main.uploadToLiferay();
+		main.convertMarkdown();
 	}
 
 	public Main(
-			long liferayContentStructureId, long liferayGroupId,
-			String liferayOAuthClientId, String liferayOAuthClientSecret,
-			URL liferayURL, String markdownImportDirName,
-			Properties tokenProperties)
+			String lastestHashFileName, File learnBaseDirFile, String learnDocsDirName,
+			String learnSiteDirName, Properties tokenProperties)
 		throws Exception {
 
-		_liferayContentStructureId = liferayContentStructureId;
-		_liferayGroupId = liferayGroupId;
-		_liferayOAuthClientId = liferayOAuthClientId;
-		_liferayOAuthClientSecret = liferayOAuthClientSecret;
-		_liferayURL = liferayURL;
-		_markdownImportDirName = markdownImportDirName;
+		_latestHashFileName = lastestHashFileName;
+		_learnDocsDirName = learnDocsDirName;
+		_learnSiteDirName = learnSiteDirName;
+
+		_learnBaseDirName = learnBaseDirFile.getCanonicalPath();
 
 		Enumeration<String> enumeration =
 			(Enumeration<String>)tokenProperties.propertyNames();
@@ -162,37 +137,83 @@ public class Main {
 			}
 		}
 
-		_addFileNames(_markdownImportDirName);
+		_readHashFromFile(learnBaseDirFile);
+
+		_addFileNames(_learnDocsDirName);
+
+		_getGitDiff(learnBaseDirFile);
 
 		_initFlexmark();
-		_initResourceBuilders(_getOAuthAuthorization());
 	}
 
-	public void uploadToLiferay() throws Exception {
-		long start = System.currentTimeMillis();
+	public void convertMarkdown() throws Exception {
+		Set<String> uuids = new HashSet<>();
 
 		for (String fileName : _fileNames) {
-			if (!fileName.contains("/en/") || !fileName.endsWith(".md")) {
+			if (!fileName.endsWith(".md")) {
 				continue;
 			}
 
-			long delta = System.currentTimeMillis() - start;
+			try {
+				_validateUUID(uuids, fileName);
 
-			if (delta > (_oauthExpirationMillis - 10000)) {
-				_initResourceBuilders(_getOAuthAuthorization());
+				if (!_diffFileNames.isEmpty() &&
+					!_diffFileNames.contains(
+						fileName.replace(_learnBaseDirName, ""))) {
 
-				start = System.currentTimeMillis();
+					System.out.println("File skipped: " + fileName);
+
+					continue;
+				}
+
+				File file = new File(fileName);
+
+				String text = _processMarkdown(
+					FileUtils.readFileToString(file, StandardCharsets.UTF_8),
+					file);
+
+				String htmlFileName = FilenameUtils.getName(
+					fileName
+				).replace(
+					".md", ".html"
+				);
+
+				String parentFileDir = file.getParent(
+				).replaceFirst(
+					_learnDocsDirName, ""
+				);
+
+				String htmlFileDir = _learnSiteDirName + parentFileDir;
+
+				File htmlFile = new File(htmlFileDir, htmlFileName);
+
+				FileUtils.writeStringToFile(
+					htmlFile, _toHTML(file, text), StandardCharsets.UTF_8);
+
+				System.out.println(
+					"File saved: " + htmlFile.getCanonicalPath());
+			}
+			catch (Exception exception) {
+				_error(exception.getMessage());
+			}
+		}
+
+		if (!_warningMessages.isEmpty()) {
+			System.out.println(_warningMessages.size() + " warning messages:");
+
+			for (String warningMessage : _warningMessages) {
+				System.out.println(warningMessage);
+			}
+		}
+
+		if (!_errorMessages.isEmpty()) {
+			System.out.println(_errorMessages.size() + " error messages:");
+
+			for (String errorMessage : _errorMessages) {
+				System.out.println(errorMessage);
 			}
 
-			System.out.println(fileName);
-
-			_structuredContentResource.
-				postStructuredContentFolderStructuredContent(
-					_getStructuredContentFolderId(
-						FilenameUtils.getPathNoEndSeparator(
-							fileName.substring(
-								_markdownImportDirName.length()))),
-					_toStructuredContent(fileName));
+			throw new Exception(_errorMessages.size() + " error messages");
 		}
 	}
 
@@ -200,7 +221,8 @@ public class Main {
 		File file = new File(fileName);
 
 		if (file.isDirectory() &&
-			!Objects.equals(file.getName(), "resources")) {
+			!Objects.equals(file.getName(), "resources") &&
+			!Objects.equals(file.getName(), "_snippets")) {
 
 			for (String currentFileName : file.list()) {
 				_addFileNames(fileName + "/" + currentFileName);
@@ -242,229 +264,100 @@ public class Main {
 		return line;
 	}
 
-	private String[] _getDirNames(String fileName) throws Exception {
-		List<String> dirNames = new ArrayList<>();
+	private void _error(String errorMessage) {
+		System.out.println(errorMessage);
 
-		String[] parts = fileName.split(
-			Matcher.quoteReplacement(File.separator));
-
-		for (String part : parts) {
-			if (part.equalsIgnoreCase("en") || part.equalsIgnoreCase("ja") ||
-				part.equalsIgnoreCase("latest")) {
-
-				continue;
-			}
-
-			String dirName = part;
-
-			dirNames.add(dirName);
-		}
-
-		return dirNames.toArray(new String[0]);
+		_errorMessages.add(errorMessage);
 	}
 
-	private Long _getDocumentFolderId(String fileName) throws Exception {
-		Long documentFolderId = 0L;
+	private void _getGitDiff(File dir) throws Exception {
+		Git git = Git.open(new File(dir, ".git"));
 
-		for (String dirName : _getDirNames(fileName)) {
-			documentFolderId = _getDocumentFolderId(dirName, documentFolderId);
+		Repository repository = git.getRepository();
+
+		ObjectId newRev = repository.resolve("HEAD");
+
+		ObjectId oldRev = repository.resolve(_latestHash);
+
+		if (oldRev == null) {
+			return;
 		}
 
-		return documentFolderId;
-	}
+		CanonicalTreeParser newTreeParser = new CanonicalTreeParser();
+		CanonicalTreeParser oldTreeParser = new CanonicalTreeParser();
 
-	private Long _getDocumentFolderId(
-			String dirName, Long parentDocumentFolderId)
-		throws Exception {
+		RevCommit newCommit = repository.parseCommit(newRev);
 
-		String key = parentDocumentFolderId + "#" + dirName;
+		RevCommit oldCommit = repository.parseCommit(oldRev);
 
-		Long documentFolderId = _documentFolderIds.get(key);
+		newTreeParser.reset(
+			repository.newObjectReader(),
+			newCommit.getTree(
+			).getId());
+		oldTreeParser.reset(
+			repository.newObjectReader(),
+			oldCommit.getTree(
+			).getId());
 
-		if (documentFolderId != null) {
-			return documentFolderId;
-		}
+		List<DiffEntry> diffs = git.diff(
+		).setOldTree(
+			oldTreeParser
+		).setNewTree(
+			newTreeParser
+		).call();
 
-		DocumentFolder documentFolder = null;
+		for (DiffEntry diff : diffs) {
+			if (diff.getNewPath(
+				).endsWith(
+					".md"
+				)) {
 
-		if (parentDocumentFolderId == 0) {
-			Page<DocumentFolder> page =
-				_documentFolderResource.getSiteDocumentFoldersPage(
-					_liferayGroupId, null, null, null,
-					"name eq '" + dirName + "'", null, null);
-
-			documentFolder = page.fetchFirstItem();
-
-			if (documentFolder == null) {
-				documentFolder = _documentFolderResource.postSiteDocumentFolder(
-					_liferayGroupId,
-					new DocumentFolder() {
-						{
-							description = "";
-							name = dirName;
-						}
-					});
+				_diffFileNames.add("/" + diff.getNewPath());
 			}
-		}
-		else {
-			Page<DocumentFolder> page =
-				_documentFolderResource.getDocumentFolderDocumentFoldersPage(
-					parentDocumentFolderId, null, null, null,
-					"name eq '" + dirName + "'", null, null);
-
-			documentFolder = page.fetchFirstItem();
-
-			if (documentFolder == null) {
-				documentFolder =
-					_documentFolderResource.postDocumentFolderDocumentFolder(
-						parentDocumentFolderId,
-						new DocumentFolder() {
-							{
-								description = "";
-								name = dirName;
-							}
-						});
-			}
-		}
-
-		documentFolderId = documentFolder.getId();
-
-		_documentFolderIds.put(key, documentFolderId);
-
-		return documentFolderId;
-	}
-
-	private String _getOAuthAuthorization() throws Exception {
-		HttpPost httpPost = new HttpPost(_liferayURL + "/o/oauth2/token");
-
-		httpPost.setEntity(
-			new UrlEncodedFormEntity(
-				Arrays.asList(
-					new BasicNameValuePair("client_id", _liferayOAuthClientId),
-					new BasicNameValuePair(
-						"client_secret", _liferayOAuthClientSecret),
-					new BasicNameValuePair(
-						"grant_type", "client_credentials"))));
-		httpPost.setHeader("Content-Type", "application/x-www-form-urlencoded");
-
-		HttpClientBuilder httpClientBuilder = HttpClientBuilder.create();
-
-		try (CloseableHttpClient closeableHttpClient =
-				httpClientBuilder.build()) {
-
-			CloseableHttpResponse closeableHttpResponse =
-				closeableHttpClient.execute(httpPost);
-
-			StatusLine statusLine = closeableHttpResponse.getStatusLine();
-
-			if (statusLine.getStatusCode() == HttpStatus.SC_OK) {
-				JSONObject jsonObject = new JSONObject(
-					EntityUtils.toString(
-						closeableHttpResponse.getEntity(),
-						Charset.defaultCharset()));
-
-				_oauthExpirationMillis =
-					jsonObject.getLong("expires_in") * 1000;
-
-				return jsonObject.getString("token_type") + " " +
-					jsonObject.getString("access_token");
-			}
-
-			throw new Exception("Unable to get OAuth authorization");
 		}
 	}
 
-	private Long _getStructuredContentFolderId(String fileName)
-		throws Exception {
+	private String _getUuid(String text) {
+		Document document = _parser.parse(text);
 
-		Long structuredContentFolderId = 0L;
+		SnakeYamlFrontMatterVisitor snakeYamlFrontMatterVisitor =
+			new SnakeYamlFrontMatterVisitor();
 
-		for (String dirName : _getDirNames(fileName)) {
-			structuredContentFolderId = _getStructuredContentFolderId(
-				dirName, structuredContentFolderId);
+		snakeYamlFrontMatterVisitor.visit(document);
+
+		Map<String, Object> data = snakeYamlFrontMatterVisitor.getData();
+
+		if ((data == null) || !data.containsKey("uuid")) {
+			return StringPool.BLANK;
 		}
 
-		return structuredContentFolderId;
-	}
+		Object uuid = data.get("uuid");
 
-	private Long _getStructuredContentFolderId(
-			String dirName, Long parentStructuredContentFolderId)
-		throws Exception {
-
-		String key = parentStructuredContentFolderId + "#" + dirName;
-
-		Long structuredContentFolderId = _structuredContentFolderIds.get(key);
-
-		if (structuredContentFolderId != null) {
-			return structuredContentFolderId;
+		if (!(uuid instanceof String)) {
+			return StringPool.BLANK;
 		}
 
-		StructuredContentFolder structuredContentFolder = null;
-
-		if (parentStructuredContentFolderId == 0) {
-			Page<StructuredContentFolder> page =
-				_structuredContentFolderResource.
-					getSiteStructuredContentFoldersPage(
-						_liferayGroupId, null, null, null,
-						"name eq '" + dirName + "'", null, null);
-
-			structuredContentFolder = page.fetchFirstItem();
-
-			if (structuredContentFolder == null) {
-				structuredContentFolder =
-					_structuredContentFolderResource.
-						postSiteStructuredContentFolder(
-							_liferayGroupId,
-							new StructuredContentFolder() {
-								{
-									description = "";
-									name = dirName;
-								}
-							});
-			}
-		}
-		else {
-			Page<StructuredContentFolder> page =
-				_structuredContentFolderResource.
-					getStructuredContentFolderStructuredContentFoldersPage(
-						parentStructuredContentFolderId, null, null,
-						"name eq '" + dirName + "'", null, null);
-
-			structuredContentFolder = page.fetchFirstItem();
-
-			if (structuredContentFolder == null) {
-				structuredContentFolder =
-					_structuredContentFolderResource.
-						postStructuredContentFolderStructuredContentFolder(
-							parentStructuredContentFolderId,
-							new StructuredContentFolder() {
-								{
-									description = "";
-									name = dirName;
-								}
-							});
-			}
-		}
-
-		structuredContentFolderId = structuredContentFolder.getId();
-
-		_structuredContentFolderIds.put(key, structuredContentFolderId);
-
-		return structuredContentFolderId;
-	}
-
-	private String _getTitle(String text) {
-		int x = text.indexOf("#");
-
-		int y = text.indexOf(StringPool.NEW_LINE, x);
-
-		String title = text.substring(x + 1, y);
-
-		return title.trim();
+		return uuid.toString();
 	}
 
 	private void _initFlexmark() {
-		MutableDataSet mutableDataSet = new MutableDataSet().set(
+		MutableDataSet mutableDataSet = new MutableDataSet(
+		).set(
+			AdmonitionExtension.QUALIFIER_TYPE_MAP,
+			HashMapBuilder.put(
+				"error", "error"
+			).put(
+				"important", "important"
+			).put(
+				"note", "note"
+			).put(
+				"tip", "tip"
+			).put(
+				"warning", "warning"
+			).build()
+		).set(
+			AdmonitionExtension.TYPE_SVG_MAP, new HashMap<String, String>()
+		).set(
 			AsideExtension.ALLOW_LEADING_SPACE, true
 		).set(
 			AsideExtension.EXTEND_TO_BLANK_LINE, false
@@ -499,48 +392,88 @@ public class Main {
 		).build();
 	}
 
-	private void _initResourceBuilders(String authorization) throws Exception {
-		DocumentFolderResource.Builder documentFolderResourceBuilder =
-			DocumentFolderResource.builder();
+	private String _processGridBlock(List<String> gridLines, int columns) {
+		List<GridCard> gridCards = new ArrayList<>();
 
-		_documentFolderResource = documentFolderResourceBuilder.header(
-			"Authorization", authorization
-		).endpoint(
-			_liferayURL.getHost(), _liferayURL.getPort(),
-			_liferayURL.getProtocol()
-		).build();
+		GridCard currentGridCard = new GridCard();
 
-		DocumentResource.Builder documentResourceBuilder =
-			DocumentResource.builder();
+		for (String gridLine : gridLines) {
+			if (gridLine.equals(":::")) {
+				gridCards.add(currentGridCard);
 
-		_documentResource = documentResourceBuilder.header(
-			"Authorization", authorization
-		).endpoint(
-			_liferayURL.getHost(), _liferayURL.getPort(),
-			_liferayURL.getProtocol()
-		).build();
+				currentGridCard = new GridCard();
+			}
+			else if (gridLine.startsWith(":::{grid-item-card}")) {
+				int index = gridLine.indexOf(StringPool.CLOSE_CURLY_BRACE);
 
-		StructuredContentResource.Builder structuredContentResourceBuilder =
-			StructuredContentResource.builder();
+				currentGridCard.setTitle(gridLine.substring(index + 2));
+			}
+			else if (gridLine.startsWith(":gutter")) {
+			}
+			else if (gridLine.startsWith(":link:")) {
+				String link = gridLine.substring(7);
 
-		_structuredContentResource = structuredContentResourceBuilder.header(
-			"Authorization", authorization
-		).endpoint(
-			_liferayURL.getHost(), _liferayURL.getPort(),
-			_liferayURL.getProtocol()
-		).build();
+				currentGridCard.setLink(
+					StringUtil.removeSubstring(link, ".md"));
+			}
+			else {
+				currentGridCard.addContentLine(gridLine);
+			}
+		}
 
-		StructuredContentFolderResource.Builder
-			structuredContentFolderResourceBuilder =
-				StructuredContentFolderResource.builder();
+		StringBundler sb = new StringBundler(4 + gridCards.size());
 
-		_structuredContentFolderResource =
-			structuredContentFolderResourceBuilder.header(
-				"Authorization", authorization
-			).endpoint(
-				_liferayURL.getHost(), _liferayURL.getPort(),
-				_liferayURL.getProtocol()
-			).build();
+		sb.append("<div class=\"landing-page landing-page-grid-");
+		sb.append(String.valueOf(columns));
+		sb.append("\">");
+
+		for (GridCard gridCard : gridCards) {
+			sb.append(gridCard);
+		}
+
+		sb.append("</div>");
+
+		return sb.toString();
+	}
+
+	private String _processGridBlocks(
+			BufferedReader bufferedReader, String line, File markdownFile)
+		throws Exception {
+
+		String trimmedLine = line.trim();
+
+		if (!trimmedLine.startsWith("::::{grid}")) {
+			return line;
+		}
+
+		List<String> gridLines = new ArrayList<>();
+
+		int index = line.indexOf(StringPool.CLOSE_CURLY_BRACE);
+
+		int columns = Integer.valueOf(
+			StringUtil.trim(line.substring(index + 2)));
+
+		while (true) {
+			String gridLine = bufferedReader.readLine();
+
+			if (gridLine == null) {
+				_warn(
+					"Unclosed grid block found in " +
+						markdownFile.getCanonicalPath());
+
+				break;
+			}
+
+			String trimmedGridLine = gridLine.trim();
+
+			if (trimmedGridLine.startsWith("::::")) {
+				break;
+			}
+
+			gridLines.add(gridLine);
+		}
+
+		return _processGridBlock(gridLines, columns);
 	}
 
 	private String _processInclude(String includeFileName, File markdownFile)
@@ -552,24 +485,24 @@ public class Main {
 
 		if (includeFileName.startsWith(File.separator)) {
 			String dirName = markdownFileName.substring(
-				_markdownImportDirName.length());
+				_learnDocsDirName.length() + 1);
 
-			List<String> dirNameParts = StringUtil.split(
+			String[] dirNameParts = StringUtil.split(
 				dirName, File.separatorChar);
 
-			if (dirNameParts.size() < 3) {
+			if (dirNameParts.length < 3) {
 				throw new Exception("Invalid directory " + dirName);
 			}
 
 			StringBuilder sb = new StringBuilder();
 
-			sb.append(_markdownImportDirName);
+			sb.append(_learnDocsDirName);
 			sb.append(File.separator);
-			sb.append(dirNameParts.get(0));
+			sb.append(dirNameParts[0]);
 			sb.append(File.separator);
-			sb.append(dirNameParts.get(1));
+			sb.append(dirNameParts[1]);
 			sb.append(File.separator);
-			sb.append(dirNameParts.get(2));
+			sb.append(dirNameParts[2]);
 			sb.append(includeFileName);
 
 			file = new File(sb.toString());
@@ -605,7 +538,7 @@ public class Main {
 		}
 
 		if (!file.exists()) {
-			System.out.println("Nonexistent literal include " + file);
+			_warn("Nonexistent literal include " + file);
 
 			return StringPool.BLANK;
 		}
@@ -652,24 +585,23 @@ public class Main {
 			String value = matcher.group(2);
 
 			if (name.equals("lines")) {
-				List<String> lineRanges = StringUtil.split(
-					value, CharPool.COMMA);
+				for (String lineRange :
+						StringUtil.split(value, CharPool.COMMA)) {
 
-				for (String lineRange : lineRanges) {
 					Tuple tuple = null;
 
-					List<String> lineRangeParts = StringUtil.split(
+					String[] lineRangeParts = StringUtil.split(
 						lineRange, CharPool.DASH);
 
-					if (lineRangeParts.size() == 1) {
+					if (lineRangeParts.length == 1) {
 						tuple = new Tuple(
-							GetterUtil.getInteger(lineRangeParts.get(0)),
-							GetterUtil.getInteger(lineRangeParts.get(0)));
+							GetterUtil.getInteger(lineRangeParts[0]),
+							GetterUtil.getInteger(lineRangeParts[0]));
 					}
-					else if (lineRangeParts.size() == 2) {
+					else if (lineRangeParts.length == 2) {
 						tuple = new Tuple(
-							GetterUtil.getInteger(lineRangeParts.get(0)),
-							GetterUtil.getInteger(lineRangeParts.get(1)));
+							GetterUtil.getInteger(lineRangeParts[0]),
+							GetterUtil.getInteger(lineRangeParts[1]));
 					}
 					else {
 						throw new Exception(
@@ -737,6 +669,7 @@ public class Main {
 		String line = null;
 
 		while ((line = bufferedReader.readLine()) != null) {
+			line = _processGridBlocks(bufferedReader, line, markdownFile);
 			line = _processMySTDirectiveBlocks(
 				bufferedReader, line, markdownFile);
 			line = _processSphinxBadges(line);
@@ -756,9 +689,12 @@ public class Main {
 
 		String trimmedLine = line.trim();
 
-		if (!trimmedLine.startsWith("```{")) {
+		if (!trimmedLine.startsWith(_MYST_DIRECTIVE_BLOCK_START)) {
 			return line;
 		}
+
+		String leadingWhitespace = line.substring(
+			0, line.indexOf(_MYST_DIRECTIVE_BLOCK_START));
 
 		List<String> mySTDirectiveLines = new ArrayList<>();
 
@@ -771,7 +707,7 @@ public class Main {
 			String mySTDirectiveLine = bufferedReader.readLine();
 
 			if (mySTDirectiveLine == null) {
-				System.out.println(
+				_warn(
 					"Unclosed MyST directive block found in " +
 						markdownFile.getCanonicalPath());
 
@@ -780,9 +716,9 @@ public class Main {
 
 			mySTDirectiveLine = _processTokens(mySTDirectiveLine);
 
-			String trimmedMySTDirectiveLine = mySTDirectiveLine.trim();
+			if (mySTDirectiveLine.startsWith(
+					leadingWhitespace + _MYST_DIRECTIVE_BLOCK_END)) {
 
-			if (trimmedMySTDirectiveLine.startsWith("```")) {
 				break;
 			}
 
@@ -800,6 +736,36 @@ public class Main {
 			return _processLiteralIncludeBlock(
 				directiveArguments, markdownFile, mySTDirectiveLines);
 		}
+		else if (directiveName.equals("raw")) {
+			for (String mySTDirectiveLine : mySTDirectiveLines) {
+				Matcher matcher = _literalIncludeParameterPattern.matcher(
+					mySTDirectiveLine.trim());
+
+				if (!matcher.find()) {
+					continue;
+				}
+
+				String name = matcher.group(1);
+
+				if (name.equals("file")) {
+					String value = matcher.group(2);
+
+					if (value.contains("landingpage_template.html")) {
+						_landingPageFiles.add(markdownFile);
+
+						return StringPool.BLANK;
+					}
+
+					return _processInclude(value.trim(), markdownFile);
+				}
+			}
+
+			_warn(
+				"Invalid parameters found for raw directive block in " +
+					markdownFile.getCanonicalPath());
+
+			return StringPool.BLANK;
+		}
 		else if (directiveName.equals("toctree")) {
 			return StringPool.BLANK;
 		}
@@ -812,7 +778,9 @@ public class Main {
 
 		sb.append("!!! ");
 		sb.append(directiveName);
-		sb.append(" \"\" \n");
+		sb.append(" \"");
+		sb.append(directiveName);
+		sb.append("\" \n");
 
 		for (String mySTDirectiveLine : mySTDirectiveLines) {
 			sb.append("    ");
@@ -827,7 +795,7 @@ public class Main {
 		Matcher matcher = _sphinxBadgePattern.matcher(line);
 
 		if (matcher.find()) {
-			line = matcher.replaceFirst("<span class=\"bdg-$1\">$2</span>");
+			line = matcher.replaceFirst("<span class=\"bdg bdg-$1\">$2</span>");
 		}
 
 		return line;
@@ -841,33 +809,18 @@ public class Main {
 		return line;
 	}
 
-	private BasedSequence _toBasedSequence(String string) {
-		return CharSubSequence.of(string.toCharArray(), 0, string.length());
-	}
+	private void _readHashFromFile(File dir) throws Exception {
+		File hashFile = new File(dir, _lastestHashFileName);
 
-	private String _toFriendlyURLPath(String fileName) {
-		String friendlyURLPath = fileName.substring(
-			_markdownImportDirName.length());
-
-		if (friendlyURLPath.startsWith(File.separator)) {
-			friendlyURLPath = friendlyURLPath.substring(1);
+		if (hashFile.exists()) {
+			_latestHash = Files.readString(hashFile.toPath());
 		}
-
-		return FilenameUtils.removeExtension(friendlyURLPath) + ".html";
 	}
 
 	private String _toHTML(File file, String text) throws Exception {
 		_write(text, "build/markdown", file);
 
-		com.vladsch.flexmark.util.ast.Document document = _parser.parse(text);
-
-		AbstractYamlFrontMatterVisitor abstractYamlFrontMatterVisitor =
-			new AbstractYamlFrontMatterVisitor();
-
-		abstractYamlFrontMatterVisitor.visit(document);
-
-		/*Map<String, List<String>> data =
-			abstractYamlFrontMatterVisitor.getData();*/
+		Document document = _parser.parse(text);
 
 		_markdownFile = file;
 
@@ -885,84 +838,31 @@ public class Main {
 		return html;
 	}
 
-	private StructuredContent _toStructuredContent(String fileName)
+	private void _validateUUID(Set<String> uuids, String fileName)
 		throws Exception {
 
-		StructuredContent structuredContent = new StructuredContent();
+		if (!fileName.contains("/en/")) {
+			return;
+		}
 
 		File englishFile = new File(fileName);
 
-		String englishText = _processMarkdown(
-			FileUtils.readFileToString(englishFile, StandardCharsets.UTF_8),
-			englishFile);
+		String englishText = FileUtils.readFileToString(
+			englishFile, StandardCharsets.UTF_8);
 
-		ContentFieldValue englishContentFieldValue = new ContentFieldValue() {
-			{
-				data = _toHTML(englishFile, englishText);
-			}
-		};
+		String uuid = _getUuid(englishText);
 
-		String englishTitle = _getTitle(englishText);
-
-		File japaneseFile = new File(fileName.replace("/en/", "/ja/"));
-
-		if (japaneseFile.exists()) {
-			String japaneseText = _processMarkdown(
-				FileUtils.readFileToString(
-					japaneseFile, StandardCharsets.UTF_8),
-				japaneseFile);
-
-			structuredContent.setContentFields(
-				new ContentField[] {
-					new ContentField() {
-						{
-							contentFieldValue = englishContentFieldValue;
-							contentFieldValue_i18n = HashMapBuilder.put(
-								"en-US", englishContentFieldValue
-							).put(
-								"ja-JP",
-								new ContentFieldValue() {
-									{
-										data = _toHTML(
-											japaneseFile, japaneseText);
-									}
-								}
-							).build();
-							name = "content";
-						}
-					}
-				});
-
-			structuredContent.setFriendlyUrlPath_i18n(
-				HashMapBuilder.put(
-					"en-US", _toFriendlyURLPath(fileName)
-				).put(
-					"ja-JP", _toFriendlyURLPath(japaneseFile.getPath())
-				).build());
-			structuredContent.setTitle_i18n(
-				HashMapBuilder.put(
-					"en-US", englishTitle
-				).put(
-					"ja-JP", _getTitle(japaneseText)
-				).build());
-		}
-		else {
-			structuredContent.setContentFields(
-				new ContentField[] {
-					new ContentField() {
-						{
-							contentFieldValue = englishContentFieldValue;
-							name = "content";
-						}
-					}
-				});
+		if (Validator.isNull(uuid)) {
+			throw new Exception("Missing UUID in " + fileName);
 		}
 
-		structuredContent.setContentStructureId(_liferayContentStructureId);
-		structuredContent.setFriendlyUrlPath(_toFriendlyURLPath(fileName));
-		structuredContent.setTitle(englishTitle);
+		if (uuids.contains(uuid)) {
+			throw new Exception(
+				StringBundler.concat(
+					"Duplicate UUID ", uuid, " in ", fileName));
+		}
 
-		return structuredContent;
+		uuids.add(uuid);
 	}
 
 	private void _visit(Image image) throws Exception {
@@ -975,14 +875,12 @@ public class Main {
 		String fileName =
 			FilenameUtils.getFullPath(_markdownFile.getPath()) + basedSequence;
 
+		fileName = fileName.replaceAll("/ja/", "/en/");
+
 		File file = new File(fileName);
 
 		if (!file.exists()) {
-			file = new File(fileName.replaceAll("/ja/", "/en/"));
-		}
-
-		if (!file.exists()) {
-			System.out.println(
+			_warn(
 				_markdownFile.getCanonicalPath() +
 					" references nonexistent image file " +
 						file.getCanonicalPath());
@@ -990,43 +888,19 @@ public class Main {
 			return;
 		}
 
-		File finalFile = file;
-
-		String filePathString = file.getCanonicalPath();
-
-		String imageURL = _imageURLs.get(filePathString);
-
-		if (imageURL == null) {
-			Document document = _documentResource.postDocumentFolderDocument(
-				_getDocumentFolderId(
-					FilenameUtils.getPathNoEndSeparator(
-						filePathString.substring(
-							_markdownImportDirName.length()))),
-				new Document() {
-					{
-						title = finalFile.getName();
-					}
-				},
-				new HashMap<>() {
-					{
-						put("file", finalFile);
-					}
-				});
-
-			imageURL = document.getContentUrl();
-
-			_imageURLs.put(filePathString, imageURL);
-		}
-
-		image.setUrl(_toBasedSequence(imageURL));
-
 		_nodeVisitor.visitChildren(image);
 	}
 
-	private void _visit(Link link) throws Exception {
+	private void _visit(Link link) {
 		BasedSequence basedSequence = link.getUrl();
 
-		link.setUrl(basedSequence.replace(".md", ".html"));
+		link.setUrl(basedSequence.replace(".md", StringPool.BLANK));
+	}
+
+	private void _warn(String warningMessage) {
+		System.out.println(warningMessage);
+
+		_warningMessages.add(warningMessage);
 	}
 
 	private void _write(String content, String dirName, File markdownFile)
@@ -1035,7 +909,7 @@ public class Main {
 		String markdownFileName = markdownFile.getCanonicalPath();
 
 		markdownFileName = markdownFileName.substring(
-			_markdownImportDirName.length());
+			_learnDocsDirName.length());
 
 		File file = new File(dirName + markdownFileName);
 
@@ -1044,22 +918,26 @@ public class Main {
 		FileUtils.writeStringToFile(file, content, StandardCharsets.UTF_8);
 	}
 
-	private Map<String, Long> _documentFolderIds = new HashMap<>();
-	private DocumentFolderResource _documentFolderResource;
-	private DocumentResource _documentResource;
-	private Set<String> _fileNames = new TreeSet<>();
-	private Map<String, String> _imageURLs = new HashMap<>();
-	private final long _liferayContentStructureId;
-	private final long _liferayGroupId;
-	private final String _liferayOAuthClientId;
-	private final String _liferayOAuthClientSecret;
-	private final URL _liferayURL;
-	private final Pattern _literalIncludeParameterPattern = Pattern.compile(
-		":(.*): (.*)");
-	private File _markdownFile;
-	private final String _markdownImportDirName;
+	private static final String _MYST_DIRECTIVE_BLOCK_END = "```";
 
-	private NodeVisitor _nodeVisitor = new NodeVisitor(
+	private static final String _MYST_DIRECTIVE_BLOCK_START = "```{";
+
+	private static final String _lastestHashFileName = ".latest_hash";
+	private static final Pattern _literalIncludeParameterPattern =
+		Pattern.compile(":(.*): (.*)");
+	private static final Pattern _sphinxBadgePattern = Pattern.compile(
+		"\\{bdg-(.*)\\}`(.*)`");
+
+	private final Set<String> _diffFileNames = new TreeSet<>();
+	private final List<String> _errorMessages = new ArrayList<>();
+	private final Set<String> _fileNames = new TreeSet<>();
+	private final Set<File> _landingPageFiles = new HashSet<>();
+	private final String _learnBaseDirName;
+	private final String _learnDocsDirName;
+	private final String _learnSiteDirName;
+	private File _markdownFile;
+
+	private final NodeVisitor _nodeVisitor = new NodeVisitor(
 		new VisitHandler<Image>(
 			Image.class,
 			new Visitor<Image>() {
@@ -1070,7 +948,9 @@ public class Main {
 						_visit(image);
 					}
 					catch (Exception exception) {
-						exception.printStackTrace();
+						_error(
+							_markdownFile.getPath() + ": " +
+								exception.getMessage());
 					}
 				}
 
@@ -1081,24 +961,123 @@ public class Main {
 
 				@Override
 				public void visit(Link link) {
-					try {
-						_visit(link);
-					}
-					catch (Exception exception) {
-						exception.printStackTrace();
-					}
+					_visit(link);
 				}
 
 			}));
 
-	private long _oauthExpirationMillis;
+	private String _latestHash;
+	private String _latestHashFileName;
 	private Parser _parser;
 	private HtmlRenderer _renderer;
-	private final Pattern _sphinxBadgePattern = Pattern.compile(
-		"\\{bdg-(.*)\\}`(.*)`");
-	private Map<String, Long> _structuredContentFolderIds = new HashMap<>();
-	private StructuredContentFolderResource _structuredContentFolderResource;
-	private StructuredContentResource _structuredContentResource;
 	private Map<String, String> _tokens = new HashMap<>();
+	private final List<String> _warningMessages = new ArrayList<>();
+	private final Yaml _yaml = new Yaml();
+
+	private class GridCard {
+
+		public void addContentLine(String contentLine) {
+			_contentLines.add(contentLine);
+		}
+
+		public String getTitleHTML(boolean link) {
+			StringBundler sb = new StringBundler(3);
+
+			if (link) {
+				sb.append("<h4 class=\"primary-heading-link title\">");
+			}
+			else {
+				sb.append("<h4 class=\"title\">");
+			}
+
+			sb.append(_title);
+			sb.append("</h4>");
+
+			return sb.toString();
+		}
+
+		public void setLink(String link) {
+			_link = link;
+		}
+
+		public void setTitle(String title) {
+			_title = title;
+		}
+
+		public String toString() {
+			StringBundler sb = new StringBundler(16);
+
+			sb.append("<div class=\"section-card\">");
+			sb.append("<div class=\"autofit-row autofit-row-center\">");
+			sb.append("<div class=\"autofit-col autofit-col-expand\">");
+
+			if (Validator.isNotNull(_link)) {
+				sb.append("<a href=\"");
+				sb.append(_link);
+				sb.append("\">");
+
+				if (Validator.isNotNull(_title)) {
+					sb.append(getTitleHTML(true));
+				}
+
+				sb.append("</a>");
+			}
+			else if (Validator.isNotNull(_title)) {
+				sb.append(getTitleHTML(false));
+			}
+
+			if (!_contentLines.isEmpty()) {
+				sb.append("<div class=\"subsection-wrapper\">");
+
+				for (String contentLine : _contentLines) {
+					sb.append(contentLine);
+					sb.append(StringPool.NEW_LINE);
+				}
+
+				sb.append("</div>");
+			}
+
+			sb.append("</div>");
+			sb.append("</div>");
+			sb.append("</div>");
+
+			return sb.toString();
+		}
+
+		private List<String> _contentLines = new ArrayList<>();
+		private String _link = StringPool.BLANK;
+		private String _title = StringPool.BLANK;
+
+	}
+
+	private class SnakeYamlFrontMatterVisitor
+		implements YamlFrontMatterVisitor {
+
+		public Map<String, Object> getData() {
+			return _data;
+		}
+
+		public void visit(Node node) {
+			_yamlFrontMatterVisitor.visit(node);
+		}
+
+		@Override
+		public void visit(YamlFrontMatterBlock yamlFrontMatterBlock) {
+			String yamlString = String.valueOf(yamlFrontMatterBlock.getChars());
+
+			yamlString = yamlString.replaceAll("---", "");
+
+			_data = _yaml.load(yamlString);
+		}
+
+		@Override
+		public void visit(YamlFrontMatterNode yamlFrontMatterNode) {
+		}
+
+		private Map<String, Object> _data;
+		private final NodeVisitor _yamlFrontMatterVisitor = new NodeVisitor(
+			YamlFrontMatterVisitorExt.VISIT_HANDLERS(this));
+
+	}
 
 }

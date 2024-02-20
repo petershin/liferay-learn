@@ -1,37 +1,33 @@
 ---
+toc:
+- ./module-4-identity-management-and-sso/setting-up-sso.md
+- ./module-4-identity-management-and-sso/liferay-security-features.md
 uuid: 57aef6ee-03e9-4056-abf1-ebdbdb4984e4
 ---
 # Module 4: Identity Management & SSO
 
-Now with the [developer setup](./module-2-developer-setup.md) complete and [Liferay deployed](./module-3-deploying-liferay.md), Clarity can start inviting its team members to Liferay.
+Using the URL that was received from the Liferay SaaS provisioning email, visitors that come to Clarity's website are considered guest users and are not authenticated. In order to begin using Liferay's features and begin building its site, Clarity must implement a way for its team members to login and authenticate with Liferay. 
 
-Visitors that come to Clarity's website will be anonymous as they are not logged in. However, Clarity team members need to be logged in users that will use Liferay's various site-building features. With ever increasing security threats, utilizing identity management tools such as multi-factor authentication and single sign-on is critical to any business. Clarity is considering their different options as they look to make user access more streamlined and more secure.
+Liferay comes with a variety of out-of-the-box features, as well as support for integrating with third-party identity management services. For its employees, Clarity plans to use Okta for Single Sign-On (SSO) authentication and for its user directory. For other site visitors such as B2B customers, Clarity can use the security and identity management tools that are available within Liferay.
 
 In this module, you will:
 
-* Learn about the different identity management tools that are available in Liferay
-* See the different single sign-on solutions that can be used in conjunction with Liferay
-* Walk through an example of integrating Okta single sign-on with Liferay
+* Walk through an example of integrating Okta SSO with Liferay
+* Learn about the different security features for users to log in to Liferay
 
 Next: [Liferay Deployment Options](./module-4-identity-management-sso/identity-management-options.md)
 
 ::::{grid} 2
 :gutter: 3 3 3 3
 
-:::{grid-item-card}  Identity Management Options
-:link: ./module-4-identity-management-sso/identity-management-options.md
-
-Understand the different identity management options in Liferay.
-:::
-
-:::{grid-item-card}  Configuring SSO
-:link: ./module-4-identity-management-sso/configuring-sso-and-idp.md
-
-Learn about the different ways to configure a single sign-on (SSO) service and an identity provider (IdP) with Liferay.
-:::
-
-:::{grid-item-card}  Integrating Okta
-:link: ./module-4-identity-management-sso/integrating-okta-and-sso.md
+:::{grid-item-card}  Setting up SSO
+:link: ./module-4-identity-management-sso/setting-up-sso.md
 
 See how to implement Okta single sign-on service with Liferay.
+:::
+
+:::{grid-item-card}  Liferay Security Features
+:link: ./module-4-identity-management-sso/liferay-security-features.md
+
+Learn about the different security features that are available to protect and control user login.
 :::

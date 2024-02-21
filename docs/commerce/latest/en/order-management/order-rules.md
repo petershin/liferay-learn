@@ -13,7 +13,7 @@ taxonomy-category-names:
 ---
 # Order Rules
 
-You can use order rules to enforce conditions that the buyer must fulfil to continue checking out an order. To enable order rules,
+You can use order rules to enforce conditions that the buyer must fulfill to continue checking out an order. To enable order rules,
 
 1. Open the *Global Menu* (![Global Menu icon](../images/icon-applications-menu.png)) and navigate to *Control Panel* &rarr; *System Settings*.
 

@@ -1,6 +1,6 @@
 ---
 uuid: 15b25572-1b4a-4df4-ba8a-b402dc849916
-visibility: 
+visibility:
 - Employee
 - Partner
 ---
@@ -11,16 +11,15 @@ An external website (or public website) helps drive new opportunities by providi
 
 ## Target Audience
 
-The buying audience for External Websites is higher level stakeholders such as the Chief Marketing Officer (CMO) or Chief Revenue Officer (CRO). In larger more diverse organizations it includes leaders of the Marketing, Digital Experience, Business Development or Digital Channel departments as well as IT:
+The buying audience for External Websites is higher level stakeholders such as the Chief Marketing Officer (CMO). In larger more diverse organizations it includes leaders of the Marketing, Digital Experience, Business Development or Digital Channel departments as well as IT:
 
 * CMO
-* CRO
 * Head of, Director of, VP of, Manager
   * Marketing
   * Digital Experience
   * Business Development
   * Digital Channels
-* CIO/Head of IT
+* CIO / Head of IT
 
 ## Key Benefits
 
@@ -35,13 +34,11 @@ Some of the many reasons to use Liferay DXP to build an external website include
 
 When evaluating Liferay DXP's ability to power an external website, some of the most important capabilities to highlight are
 
-* [Design Systems & Experience Management](https://learn.liferay.com/w/dxp/site-building)
-* [Content & Asset Management](https://learn.liferay.com/w/dxp/content-authoring-and-management)
-* [Low-Code / No-Code Application Building](https://learn.liferay.com/w/dxp/building-applications/objects)
-* [Segmentation & Personalization](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience)
-* [Analytics](https://learn.liferay.com/w/analytics-cloud/index) & [Optimization](https://learn.liferay.com/w/dxp/site-building/optimizing-sites)
-* [Data Modeling & Process Automation](https://learn.liferay.com/w/dxp/process-automation)
-* [Search](https://learn.liferay.com/w/dxp/using-search) & [Navigation](https://learn.liferay.com/w/dxp/site-building/site-navigation)
-* [Headless APIs & Multichannel](https://learn.liferay.com/w/dxp/headless-delivery)
+* [Sites & Experience Management](https://learn.liferay.com/w/dxp/site-building)
+* [Content Management System (CMS)](https://learn.liferay.com/w/dxp/content-authoring-and-management)
+* [Digital Asset Management (DAM)](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media)
+* [Low-Code](https://learn.liferay.com/w/dxp/building-applications/objects) & [Process Management](https://learn.liferay.com/w/dxp/process-automation)
+* [Personalization](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience)
+* [Search](https://learn.liferay.com/w/dxp/using-search)
 
-Next: [Supplier Portals](./supplier-portals.md). 
+Next: [Supplier Portals](./supplier-portals.md).

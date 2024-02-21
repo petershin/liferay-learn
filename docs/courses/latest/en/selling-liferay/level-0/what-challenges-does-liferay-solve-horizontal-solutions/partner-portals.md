@@ -17,7 +17,7 @@ The key stakeholders for a partner portal reflect the structure of the company, 
 * Head of, Director of, VP of, Manager
   * Sales
   * Channels
-* CIO/Head of IT
+* CIO / Head of IT
 
 ## Key Benefits
 
@@ -31,15 +31,13 @@ Partner Portals provide many benefits for both the portal's host and the externa
 
 A partner portal's key capabilities are similar to the capabilities to highlight for a supplier portal:
 
-* [Segmentation & Personalization](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience)
-* [Identity Management & Access Control](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay)
-* [Low-Code / No-Code Application Building](https://learn.liferay.com/w/dxp/building-applications/objects)
-* [Data Modeling & Process Automation](https://learn.liferay.com/w/dxp/process-automation)
+* [Personalization](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience)
+* [Security](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay)
+* [Low-Code](https://learn.liferay.com/w/dxp/building-applications/objects) & [Process Management](https://learn.liferay.com/w/dxp/process-automation)
 * [Commerce](https://learn.liferay.com/w/commerce/index)
-* [Design Systems & Experience Management](https://learn.liferay.com/w/dxp/site-building)
-* Integration & Interoperability
-* [Search](https://learn.liferay.com/w/dxp/using-search) & [Navigation](https://learn.liferay.com/w/dxp/site-building/site-navigation)
-* [Headless APIs & Multichannel](https://learn.liferay.com/w/dxp/headless-delivery)
-* [Collaboration & Knowledge Sharing](https://learn.liferay.com/w/dxp/collaboration-and-social)
+* [Sites & Experience Management](https://learn.liferay.com/w/dxp/site-building)
+* Integration with core systems (e.g., ERP, CRM, etc.) & [Multi-channel support using Headless APIs](https://learn.liferay.com/w/dxp/headless-delivery)
+* [Search](https://learn.liferay.com/w/dxp/using-search)
+* [Digital Asset Management (DAM)](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media)
 
 Next: [Modern Intranets](./modern-intranets.md). 

@@ -7,7 +7,7 @@ toc:
 - ./what-challenges-does-liferay-solve-horizontal-solutions/partner-portals.md
 - ./what-challenges-does-liferay-solve-horizontal-solutions/modern-intranets.md
 uuid: b233e18d-2932-426e-9dfc-209670450195
-visibility: 
+visibility:
 - Employee
 - Partner
 ---
@@ -40,7 +40,7 @@ However, there are some solutions and industries we are a particularly good fit 
 
 ## Definition of a Solution
 
-A solution is a common business need or a set of challenges that Liferay Cloud is well-suited to address.
+A solution is a common business need or a set of challenges that Liferay SaaS is well-suited to address.
 
 ## Land and Expand
 
@@ -59,7 +59,7 @@ Click on each of the tiles to read about the six solutions most commonly solved 
 * Key benefits
 * Liferay DXP capabilities employed
 
-Don't know where to start? Start with Customer Portals. 
+Don't know where to start? Start with Customer Portals.
 
 [Let's Go!](./what-challenges-does-liferay-solve-horizontal-solutions/customer-portals.md)
 

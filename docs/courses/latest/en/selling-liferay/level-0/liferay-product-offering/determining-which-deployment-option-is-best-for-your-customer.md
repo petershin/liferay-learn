@@ -1,6 +1,6 @@
 ---
 uuid: 88656bc5-f0df-4461-8378-b7b554668954
-visibility: 
+visibility:
 - Employee
 - Partner
 ---
@@ -65,8 +65,8 @@ Liferay SaaS should be the default option, but we do recognize that there will b
 
 In these cases you should consider the other deployment options:
 
-* Liferay PaaS (where it's acceptable)
-* Liferay DXP Self-Hosted
+* Liferay PaaS (where it is acceptable)
+* Liferay Self-Hosted
 
 Both of these approaches can be provided with a Managed Service option - provided by Liferay or our Partners, which can provide a customer with a SaaS-like experience while addressing their concerns.
 
@@ -80,10 +80,12 @@ All of these cases should progressively reduce as the product evolves, and as re
 
 Liferay has developed a sales decision flow to use with new customers and for new projects with existing customers. Partners can use this flow to help determine the optimal approach for each customer or project. This provides guidance on which deployment approach is right for an opportunity, covering key decision steps that will guide you towards SaaS, PaaS, PaaS with Managed Services, or Self-Hosted - and to guide you to the Solution Concierge Desk for outliers.
 
+If there is a need for guidance from the Solution Concierge Desk, Partners should talk to their local CAM or AE who can connect you!
+
 ![Sales decision flow for new customers and new projects with existing customers.](../liferay-product-offering/images/06.png)
 
 ## What's Next
 
-Excellent! You've finished the module on the basics of the Liferay product offering. 
+Excellent! You've finished the module on the basics of the Liferay product offering.
 
 [Start the next module](../liferay-product-overview.md) to get an overview of Liferay DXP's capabilities and how they meet customer needs.

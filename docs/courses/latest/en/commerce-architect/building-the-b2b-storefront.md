@@ -1,4 +1,9 @@
 ---
+toc:
+  - ./building-the-b2b-storefront/creating-the-catalog-page.md
+  - ./building-the-b2b-storefront/creating-a-product-details-page.md
+  - ./building-the-b2b-storefront/creating-a-checkout-page.md
+  - ./building-the-b2b-storefront/creating-an-orders-page.md
 uuid: 10b5369b-770c-4658-b509-6bebab25fbb1
 ---
 # Building the B2B Storefront

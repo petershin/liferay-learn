@@ -5,7 +5,7 @@ toc:
   - ./customizing-the-b2b-experience/using-price-tiers-to-promote-more-buying.md
   - ./customizing-the-b2b-experience/setting-terms-and-conditions-for-payment-methods-and-shipping-options.md
   - ./customizing-the-b2b-experience/setting-up-a-workflow-for-buyers.md
-uuid: f0887bb7-fcc2-4e88-8b1a-27b54a2efadf
+uuid: b1658caf-afe7-49d5-b7d5-2fa98305e4ef
 ---
 # Customizing the B2B Experience
 

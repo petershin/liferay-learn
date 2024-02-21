@@ -23,9 +23,6 @@ Accounts provide administrators with a way to organize and manage users for vari
 
 There are three different account types, *Business*, *Person*, and *Guest* types. Business accounts all you to associate multiple users to an account. Person type accounts can only have one account associated with them. Guest accounts provide a way for unregistered users to interact with your business or site.
 
-!!! note
-    Accounts is a feature, originally found in [Liferay Commerce](https://learn.liferay.com/commerce/latest/en/users-and-accounts/account-management.html), that is now a part of Liferay DXP 7.4 and above.
-
 ## Creating an Account
 
 1. Open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)) and navigate to *Control Panel* &rarr; *Accounts*.
@@ -37,7 +34,7 @@ There are three different account types, *Business*, *Person*, and *Guest* types
    ![Give you account a name and select the type.](./accounts/images/01.png)
 
    !!! note
-       Starting from Liferay DXP 2024.Q1+/Portal 7.4 GA112+, the account name can be up to 250 characters long. The earlier limit was 100.
+       Starting from Liferay DXP 2024.Q1+/Portal 7.4 GA112+, account names can be up to 250 characters long. The earlier limit was 100.
 
 1. Add additional information for your account such as Tax ID or description. Click *Save* to create the new account.
 
@@ -51,7 +48,7 @@ The Details tab displays the main information about the account such as the acco
 
 ### Addresses Tab
 
-The Addresses tab displays the different addresses associated with the account. To add a new address click *New* and fill out the address information. Then, click *Save*.
+The Addresses tab displays the different addresses associated with the account. To add a new address, click *New* and fill out the address information. Then, click *Save*.
 
 ![Fill out the address information and click Save.](./accounts/images/03.png)
 

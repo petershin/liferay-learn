@@ -4,7 +4,7 @@ uuid: ba75bce7-ccf4-4c5a-bffe-7c247434dac2
 
 # Integrating Okta SSO
 
-Liferay supports a variety of single sign-on (SSO) standards including OpenID Connect (OIDC) and Security Assertion Markup Language (SAML). Clarity wants to use Okta, a SAML based SSO service, together with Liferay. Clarity appreciates the convenience of having one login not only for Liferay, but for the other services they use. In addition to authentication, they can use Okta to serve as their IdP and sync all user identities with Liferay. Continue reading to see the basic steps to set up your Liferay DXP instance as the Service Provider (SP), and Okta as the Identity Provider (IdP).
+Liferay supports a variety of single sign-on (SSO) standards including OpenID Connect (OIDC) and Security Assertion Markup Language (SAML). Clarity wants to use Okta, a SAML based SSO service, together with Liferay. Clarity appreciates the convenience of having one login not only for Liferay, but for the other services they use. In addition to authentication, they can use Okta to serve as their identity provider (IdP) and sync all user identities with Liferay. Continue reading to see the basic steps to set up your Liferay DXP instance as the Service Provider (SP), and Okta as the Identity Provider (IdP).
 
 !!! note
     This tutorial requires you to have an existing Okta account to test with.
@@ -92,6 +92,6 @@ Liferay supports a variety of single sign-on (SSO) standards including OpenID Co
 
 See our documentation about [configuring single sign-on](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/configuring-sso) to learn about integrating other solutions such as OpenAM, OpenID Connect, CAS, and Kerberos.  
 
-In addition to a universal user directory like Okta, Liferay supports traditional active directories. See [connecting a user directory](https://learn.liferay.com/w/dxp/users-and-permissions/connecting-to-a-user-directory/connecting-to-an-ldap-directory) to learn more.
+In addition to a universal user directory like Okta, Liferay supports connecting traditional active directories. See [connecting a user directory](https://learn.liferay.com/w/dxp/users-and-permissions/connecting-to-a-user-directory/connecting-to-an-ldap-directory) to learn more.
 
 Next: [Liferay Security Features](./liferay-security-features.md)

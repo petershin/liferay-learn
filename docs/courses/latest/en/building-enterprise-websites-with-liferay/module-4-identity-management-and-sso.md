@@ -15,7 +15,7 @@ In this module, you will:
 * Walk through an example of integrating Okta SSO with Liferay
 * Learn about the different security features for users to log in to Liferay
 
-Next: [Liferay Deployment Options](./module-4-identity-management-sso/identity-management-options.md)
+Next: [Setting Up SSO](./module-4-identity-management-sso/setting-up-sso.md)
 
 ::::{grid} 2
 :gutter: 3 3 3 3

@@ -13,7 +13,7 @@ taxonomy-category-names:
 !!! important
    This feature is currently behind a [developer feature flag](../../system-administration/configuring-liferay/feature-flags.md#dev-feature-flags) (LPS-167253) and a [beta feature flag](../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags) (LPS-164563).
 
-While managing data set views, you can define actions to be used in the data set fragment. Currently, you can configure Link-type actions that redirect users to a specified URL.
+While managing data set views, define actions to be used in the data set fragment. Currently, you can configure Link-type actions that redirect users to a specified URL.
 
 ## Adding Actions to the Data Set View
 
@@ -21,11 +21,11 @@ While managing data set views, you can define actions to be used in the data set
 
 1. Click on the *Name* of the data set you want to access.
 
-   Alternatively, you can click *Actions* (![Actions menu](../../images/icon-actions.png)) next to the data set entry and select *Edit*.
+   Alternatively, click *Actions* (![Actions menu](../../images/icon-actions.png)) next to the data set entry and select *Edit*.
 
 1. Click on the *Name* of the data set view to start editing it.
 
-1. Select the Actions tab and click *New* (![Add button](../../images/icon-add.png)) &rarr; you are redirected to a page where you can configure your action before creating it.
+1. Select the Actions tab and click *New* (![Add button](../../images/icon-add.png)) &rarr; you are redirected to a page where you must configure your action before creating it.
 
 Under the Display Options section,
 
@@ -33,7 +33,9 @@ Under the Display Options section,
 
 1. Fill in the Label and, optionally, [localize](./data-set-view-fields.md#editing-and-localizing-labels) it.
 
-1. (Optional) Choose an out-of-the-box icon to show in your Data Set fragment. The icon redirects the user to a specified URL. If no icon is selected, the Action's label appears as text inside a button component.
+1. (Optional) Choose an out-of-the-box icon to show in your Data Set fragment. The icon redirects the user to the specified URL.
+
+   If no icon is selected, the Action's label appears as text inside a button component.
 
    ![Use the action's label as text inside a button component or select an icon to show in your Data Set fragment instead.](./data-set-view-actions/images/02.png)
 
@@ -51,7 +53,7 @@ Under the Action Behavior section,
 
    So, if you want to create a button with an action to edit a document, you should use `replace` as the Headless Activation Key.
 
-   You can find those activation keys through your [API Explorer](../../headless-delivery/consuming-apis/consuming-rest-services.md). See [Use Case: Using Actions to Edit Documents](./using-data-set-view-actions.md#use-case-using-actions-to-edit-documents) to learn more.
+   Find those activation keys through your [API Explorer](../../headless-delivery/consuming-apis/consuming-rest-services.md). See [Use Case: Using Actions to Edit Documents](./using-data-set-view-actions.md#use-case-using-actions-to-edit-documents) to learn more.
 
    ![Use Headless Activation Keys to link an action to a headless endpoint.](./data-set-view-actions/images/04.png)
 
@@ -62,7 +64,7 @@ Under the Action Behavior section,
 
    No message is displayed if this field is left blank.
 
-   You can choose the Message Type from these options: Warning, Info, Secondary, Success, and Danger.
+   Choose the Message Type: Warning, Info, Secondary, Success, and Danger.
 
 Once you're done, users should be redirected to the selected URL once they click on the action button/icon.
 

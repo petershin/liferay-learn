@@ -12,7 +12,7 @@ uuid: a996ebe0-1f91-4867-a50d-dd81652cd9be
 !!! important
    This feature is currently behind a [developer feature flag](../../system-administration/configuring-liferay/feature-flags.md#dev-feature-flags) (LPS-167253) and a [beta feature flag](../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags) (LPS-164563).
 
-After [creating data sets](./creating-data-sets.md), you can create data set views to customize how you display your data set.
+Create data set views to customize how you display your data set.
 
 To create a data set view,
 
@@ -20,17 +20,17 @@ To create a data set view,
 
 1. Click on the *Name* of the data set you want to add the view to.
 
-   Alternatively, you can click *Actions* (![Actions menu](../../images/icon-actions.png)) next to the data set entry and select *Edit*.
+   Alternatively, click *Actions* (![Actions menu](../../images/icon-actions.png)) next to the data set entry and select *Edit*.
 
 1. Click *Add* (![Add button](../../images/icon-add.png)), name your data set, and add a description (optional).
 
 1. Click on the name of the data set view to start editing it.
 
-   Alternatively, you can click *Actions* (![Actions menu](../../images/icon-actions.png)) next to the data set view entry and select *Edit*.
+   Alternatively, click *Actions* (![Actions menu](../../images/icon-actions.png)) next to the data set view entry and select *Edit*.
 
    You can also delete a data set view using the Actions menu.
 
-![Add a data set view to a data set](./creating-data-set-views/images/01.gif)
+![Add a data set view to a data set.](./creating-data-set-views/images/01.gif)
 
 ## Managing Data Set Views
 
@@ -40,31 +40,35 @@ The Data Set View application is divided into tabs,
 
    You can also see the information about the REST Application, Schema, and Endpoint (3) used with that data set.
 
-   ![In the Details tab, you can edit the name and description of your data set view.](./creating-data-set-views/images/02.png)
+   ![In the Details tab, edit the name and description of your data set view.](./creating-data-set-views/images/02.png)
 
 - In the [Fields tab](./data-set-view-fields.md), select which fields are displayed in your data set view and manage them.
 
-   You can also edit the field, add a friendly label and localize it, choose a renderer for the field, and define the field as sortable or not sortable.
+   You can also edit the field, add a friendly label and localize it, choose a renderer for the field, and define it as sortable or not sortable.
 
-   ![In the Fields tab, you can manage the fields displayed in the data set view.](./creating-data-set-views/images/03.png)
+   ![In the Fields tab, manage the fields displayed in the data set view.](./creating-data-set-views/images/03.png)
 
-- In the [Filters tab](./data-set-view-filters), define filters that users can apply to the data set fragment. You can apply customized filters using [Client Extensions](../client-extensions.md), use date-type fields and show entries within a given period, or configure [Picklists](../objects/picklists.md) as the source of the options for the filter.
+- In the [Filters tab](./data-set-view-filters), define filters that users can apply to the data set fragment.
 
-   ![In the Filters tab, you can provide filters to your data set view.](./creating-data-set-views/images/04.png)
+   You can apply customized filters using [Client Extensions](../client-extensions.md), use date-type fields and show entries within a given period, or configure [Picklists](../objects/picklists.md) as the source of the options for the filter.
 
-- In the Sorting tab, you can set default sorting rules that are applied to the entries once the user visits a page with a Data Set fragment.
+   ![In the Filters tab, provide filters to your data set view.](./creating-data-set-views/images/04.png)
 
-   You can sort entries using a specific field as criterion in ascending or descending order.
+- In the Sorting tab, set default sorting rules that are applied to the entries once the user visits a page with a Data Set fragment.
+
+   Sort entries using a specific field as a criterion and in ascending or descending order.
 
    It is also possible to select multiple fields. In this scenario, the first field serves as the primary criterion for sorting the entries. If there are entries with the same value in the first field, the second field is used as the secondary criterion for sorting.
 
-   ![In the Sorting tab, you can set default sorting rules that are applied to the entries once the user visits a page with a Data Set fragment.](./creating-data-set-views/images/05.png)
+   ![In the Sorting tab, set default sorting rules that are applied to the entries once the user visits a page with a Data Set fragment.](./creating-data-set-views/images/05.png)
 
-- In the [Actions tab](./data-set-view-actions), you can create actions mapped to buttons that are performed once the user interacts with those buttons.
+- In the [Actions tab](./data-set-view-actions), create actions linked to the elements in the data set.
 
-   Link buttons or icons to different URLs and redirect users to them. It is also possible to show confirmation messages before executing the actions. See [Using Data Set View Actions](./using-data-set-view-actions.md) for more information.
+   Link action buttons to different URLs and redirect users once they interact with them. It is also possible to show confirmation messages before executing actions. See [Using Data Set View Actions](./using-data-set-view-actions.md) for more information.
 
-   ![In the Actions tab, you can create actions mapped to buttons and link them to different URLs.](./creating-data-set-views/images/06.png)
+   ![In the Actions tab, create actions mapped to buttons and link them to different URLs.](./creating-data-set-views/images/06.png)
+
+<!-- Once new actions are added, update this item. Eric -->
 
 - In the Pagination tab, configure the pagination options for the data set view. Pagination divides a large set of data into smaller, more manageable parts.
 
@@ -72,7 +76,7 @@ The Data Set View application is divided into tabs,
 
    Use positive numbers separated by commas to define the list of options.
 
-   ![In the Pagination tab, you can set a default number of items per page and add a list of defined values from which users can select their preferred number of items to display on a page.](./creating-data-set-views/images/07.png)
+   ![In the Pagination tab, set a default number of items per page and add a list of defined values from which users can select their preferred number of items to display on a page.](./creating-data-set-views/images/07.png)
 
 ## Relevant Topics
 

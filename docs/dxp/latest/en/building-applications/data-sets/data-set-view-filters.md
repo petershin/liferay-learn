@@ -20,7 +20,7 @@ While managing data set views, you can define pre-applied filters to be used in 
 
 1. Click on the *Name* of the data set you want to access.
 
-   Alternatively, you can click *Actions* (![Actions menu](../../images/icon-actions.png)) next to the data set entry and select *Edit*.
+   Alternatively, click *Actions* (![Actions menu](../../images/icon-actions.png)) next to the data set entry and select *Edit*.
 
 1. Click on the *Name* of the data set view to start editing it.
 

@@ -7,7 +7,7 @@ uuid: 91322da1-6e8d-4fa8-846c-0364ab665275
 ---
 # Using Data Set View Actions
 
-Here are some use cases to exemplify how you can use data set view actions to perform different tasks.
+Here are some use cases to exemplify how to use data set view actions and perform different tasks.
 
 ## Use Case: Using Actions to Edit Documents
 
@@ -24,7 +24,7 @@ Here are some use cases to exemplify how you can use data set view actions to pe
 
 [Create a data set view](./creating-data-set-views.md) for the Documents Data Set, name it Documents Data Set View, and add the `id`, `externalReferenceCode`, `title`, and `dateCreated` [fields](./data-set-view-fields.md) to it.
 
-Then, [upload the documents to the Documents and Media application](../../content-authoring-and-management/documents-and-media/uploading-and-managing/uploading-files.md).
+Then, [upload the documents to the Documents and Media application](../../content-authoring-and-management/documents-and-media/uploading-and-managing/uploading-files.md). You can use some mock documents just to practice.
 
 ### Creating the Edit Action
 
@@ -44,7 +44,7 @@ Now, to fill in the URL,
 
    The URL should look like this `http://localhost:8080/group/guest/~/control_panel/manage?(...)_com_liferay_document_library_web_portlet_DLAdminPortlet_fileEntryId=32813&(...)state%3Dmaximized%26p_p_mode%3Dview%26p_p_auth%3DYH1QvqK9&p_p_auth=YH1QvqK9`
 
-   ![Get the URL to edit the document.](./using-data-set-view-actions/images/01.gif)
+   ![Get the URL to the document's editing page.](./using-data-set-view-actions/images/01.gif)
 
 1. Return to the New Item Action window and paste the URL in its field.
 
@@ -76,7 +76,7 @@ Now, to fill in the URL,
 
    ![Add the URL to the action and make the proper adjustments to make it as universal as possible.](./using-data-set-view-actions/images/02.gif)
 
-1. Once the URL is set, add the Headless Activation Key. You can find the headless activation key using your API explorer. Find the REST application you are using and execute a GET command. You will find the keys in the response body like this:
+1. Once the URL is set, add the Headless Activation Key. You can find it using your API explorer. Find the REST application you are using and execute a GET command. The keys are in the response body like this:
 
    ```json
       {
@@ -116,7 +116,11 @@ The action is set. Use a Data Set fragment to display your data set view in a [c
 
 1. Click on your fragment. In the General tab on your right, there is a field where you can select a Data Set View. Click *Add* (![Add icon](../../images/icon-add-app.png)) and select the Documents Data Set View.
 
-Now the data set view is displaying your data set as you configured. Click on the Edit button and you should be redirected to the document's editing page.
+1. Publish the page.
+
+The data set view displays your data set as you configured. Click on the Edit button and you are redirected to the document's editing page.
+
+![Add the Data Set fragment to a content page and publish it. If the action is working properly, you are redirected to the document's editing page once you click on the action button.](./using-data-set-view-actions/images/03.gif)
 
 ## Related Topics
 

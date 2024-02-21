@@ -26,7 +26,7 @@ Use the data set manager to select which fields to display in your data set view
 
 1. Select the Fields tab.
 
-1. Click *Add* (![Add button](../../images/icon-add.png))
+1. Click *Add* (![Add button](../../images/icon-add.png)).
 
 1. In the modal that opens, select the fields to be displayed.
 
@@ -69,7 +69,7 @@ To localize the label,
 
 ### Selecting a Renderer for the Field
 
-A renderer (3) is a structured way to customize how a component is displayed. They are built to be convenient. You enter raw value, the renderer assumes the most typical format and UI for it.
+A renderer (3) is a structured way to customize how a component is displayed. They are built to be convenient. You enter a raw value and the renderer assumes the most typical format and UI for it.
 
 In the picture below, on the left, the status, date, and date and time fields have the default renderer applied. On the right, the status, date, and date and time renderers are applied to the respective fields.
 

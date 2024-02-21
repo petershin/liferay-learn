@@ -1,15 +1,15 @@
 ---
 uuid: b1fb889a-0dd3-4a34-aaf8-5a44df2530af
-visibility: 
+visibility:
 - Employee
 - Partner
 ---
 
-# Search and Navigation
+# Search
 
 With Liferay DXP, you can build digital experiences with dynamic navigation, categories, and search results tailored to your audience. The result is a user experience that makes it easy for customers, partners, or employees to find their content and discover other highly relevant services, products, or content you can offer them.
 
-![Dynamic navigation menus are one exciting feature of Liferay DXP to make customer's lives better.](./search-and-navigation/images/01.png)
+![Dynamic navigation menus are one exciting feature of Liferay DXP to make customer's lives better.](./search/images/01.png)
 
 ## Site Search
 
@@ -21,14 +21,12 @@ With Liferay DXP, you can build digital experiences with dynamic navigation, cat
 * [Search Administration and Tuning](https://learn.liferay.com/w/dxp/using-search/search-administration-and-tuning)
 * [Search Blueprints](https://learn.liferay.com/w/dxp/using-search/liferay-enterprise-search/search-experiences/search-blueprints)
 
-## Basic Navigation
+## Search Suggestions
 
-* [Site Navigation](https://learn.liferay.com/w/dxp/site-building/site-navigation)
-* [Managing Site Navigation](https://learn.liferay.com/w/dxp/site-building/site-navigation)
+* [Suggestions based on popular search terms, previously entered queries, or relevant content](https://learn.liferay.com/w/dxp/using-search/search-pages-and-widgets/search-results/enabling-search-suggestions)
 
-## Enhanced Navigation
+## Personalized Search
 
-* [Navigation Menus](https://learn.liferay.com/w/dxp/site-building/site-navigation/using-the-navigation-menus-application)
-* [Configuring Menu Displays](https://learn.liferay.com/w/dxp/site-building/site-navigation/configuring-menu-displays)
+* [Search results based on user segmentation](https://learn.liferay.com/w/dxp/using-search/liferay-enterprise-search/search-experiences/search-blueprints/personalizing-the-search-experience)
 
-Next: [Headless APIs and Multichannel](./headless-apis-and-multichannel.md).
+Next: [Sites](./sites.md).

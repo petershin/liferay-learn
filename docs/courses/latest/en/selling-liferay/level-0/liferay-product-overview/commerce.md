@@ -1,6 +1,6 @@
 ---
 uuid: 1d26accf-26e3-4b27-80ad-6e2a3f268376
-visibility: 
+visibility:
 - Employee
 - Partner
 ---
@@ -36,7 +36,17 @@ With digital commerce capabilities designed to support complex ordering workflow
 ## Multi-level Selling
 
 * [Support for buyers, sellers, accounts, user roles](https://learn.liferay.com/w/commerce/users-and-accounts)
- <!--* [Dashboards](https://learn.liferay.com/w/analytics-cloud/commerce/commerce-dashboard)-->
-* Forecasting
 
-Next: [Analytics and Optimization](./analytics-and-optimization.md).
+## Product Recommendations
+
+* [ML-based products recommendations based on similar interests, purchases, etc.](https://learn.liferay.com/w/commerce/pricing/promoting-products/product-recommendations)
+
+## Custom Pricing
+
+* [Support for contract pricing, bulk and tier discounts, modifiers, etc.](https://learn.liferay.com/w/commerce/pricing/introduction-to-pricing)
+
+## Shop-by-Diagram
+
+* [Planogram-based ordering to easily find items through diagrams](https://learn.liferay.com/web/guest/w/commerce/product-management/creating-and-managing-products/product-types/shop-by-diagram)
+
+Next: [Personalization](./personalization.md).

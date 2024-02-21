@@ -62,14 +62,17 @@ The Data Set View application is divided into tabs,
 
 - In the [Actions tab](./data-set-view-actions), you can create actions mapped to buttons that are performed once the user interacts with those buttons.
 
-   Link buttons or icons to different URLs and redirect users to them. It is also possible to show confirmation messages before executing the actions.
+   Link buttons or icons to different URLs and redirect users to them. It is also possible to show confirmation messages before executing the actions. See [Using Data Set View Actions](./using-data-set-view-actions.md) for more information.
 
    ![In the Actions tab, you can create actions mapped to buttons and link them to different URLs.](./creating-data-set-views/images/06.png)
 
-- In the Pagination tab,
+- In the Pagination tab, configure the pagination options for the data set view. Pagination divides a large set of data into smaller, more manageable parts.
 
-   ![In the Pagination tab, you can .](./creating-data-set-views/images/07.png)
+   Set a default number of items per page and provide users with a list of options from which they can select their preferred number of items to display on each page.
 
+   Use positive numbers separated by commas to define the list of options.
+
+   ![In the Pagination tab, you can set a default number of items per page and add a list of defined values from which users can select their preferred number of items to display on a page.](./creating-data-set-views/images/07.png)
 
 ## Relevant Topics
 

@@ -8,6 +8,7 @@ toc:
   - ./building-applications/developing-a-java-web-application.md
   - ./building-applications/core-frameworks.md
   - ./building-applications/data-frameworks.md
+  - ./building-applications/data-sets.md
   - ./building-applications/tooling.md
   - ./building-applications/reference.md
   - ./building-applications/reference/app-builder.md

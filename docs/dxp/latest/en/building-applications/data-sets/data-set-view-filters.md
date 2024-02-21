@@ -1,5 +1,9 @@
 ---
 uuid: 9c088b08-3ab6-4b1e-bb37-05e578657d51
+- Development and Tooling
+- Data Sets
+- Liferay Self-Hosted
+- Liferay SaaS
 ---
 # Data Set View Filters
 {bdg-secondary}`Liferay DXP 2024.Q1 U112`

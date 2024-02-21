@@ -5,6 +5,10 @@ toc:
   - ./data-sets/data-set-view-fields.md
   - ./data-sets/data-set-view-filters.md
 uuid: 314a9243-1503-437a-a275-802b8b5a571b
+- Development and Tooling
+- Data Sets
+- Liferay Self-Hosted
+- Liferay SaaS
 ---
 # Data Sets
 {bdg-secondary}`Liferay DXP 2024.Q1 U112`

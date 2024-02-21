@@ -32,7 +32,7 @@ Use Frontend Data Set Filter [client extensions](../client-extensions.md) to ful
 
 1. Choose *Client Extension* when adding a new filter.
 
-1. In the modal that opens, fill in the Name of the filter and, optionally, [localize](#localizing-the-filters-name) it.
+1. In the modal that opens, fill in the Name of the filter and, optionally, [localize](./data-set-view-fields.md#editing-and-localizing-labels) it.
 
 1. Select the Field by which you want to filter the entries.
 
@@ -48,7 +48,7 @@ Use date-type fields to pre-filter the displayed entries.
 
 1. Choose *Date Range* when adding a new filter.
 
-1. In the modal that opens, fill in the Name of the filter and, optionally, [localize](#localizing-the-filters-name) it.
+1. In the modal that opens, fill in the Name of the filter and, optionally, [localize](./data-set-view-fields.md#editing-and-localizing-labels) it.
 
 1. Select the Field by which you want to filter the entries.
 
@@ -66,7 +66,7 @@ Use picklist options as parameters for the filter.
 
 1. Choose *Selection* when adding a new filter.
 
-1. In the modal that opens, fill in the Name of the filter and, optionally, [localize](#localizing-the-filters-name) it.
+1. In the modal that opens, fill in the Name of the filter and, optionally, [localize](./data-set-view-fields.md#editing-and-localizing-labels) it.
 
 1. Select the Field by which you want to filter the entries.
 
@@ -83,22 +83,6 @@ Use picklist options as parameters for the filter.
 1. Click *Save*.
 
 ![Create a filter based on picklist options.](./data-set-view-filters/images/04.png)
-
-## Localizing the Filter's Name
-
-
-1. Click the flag icon next to the Name field and choose a Language.
-
-1. Enter the translated text in the Name field.
-
-   The translated text is saved automatically.
-
-   The localization status label next to the flag changes to `Translated` to indicate that the localization was successful.
-
-   ![The localization status label next to the flag changes to `Translated` to indicate that the localization was successful.](./data-set-view-filters/images/05.png)
-
-!!! note
-    The localized text is shown if users have the respective language applied to their portal.
 
 ## Related Topics
 

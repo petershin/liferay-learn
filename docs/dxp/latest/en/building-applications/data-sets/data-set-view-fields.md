@@ -44,7 +44,7 @@ To edit a field, click *Actions* (![Actions menu](../../images/icon-actions.png)
 
    ![In the Fields tab, you can change its label and localize it, choose a renderer and mark it as sortable.](./data-set-view-fields/images/02.png)
 
-### Editing and Localizing the Field's Label
+### Editing and Localizing Labels
 
 Once you start editing a field, you can change the label to a more user-friendly one and localize it (1).
 

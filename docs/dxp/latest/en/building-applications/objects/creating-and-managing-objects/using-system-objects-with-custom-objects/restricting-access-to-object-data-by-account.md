@@ -13,11 +13,11 @@ taxonomy-category-names:
 
 In scenarios with multiple business [accounts](../../../../users-and-permissions/accounts.md), you may want to restrict access to object entries by account. For example, consider an [insurance scenario](#example-use-case-insurance-claims) with these requirements:
 
-* Business account users must open claims without seeing claims made by other accounts.
+- Business account users must open claims without seeing claims made by other accounts.
 
-* Customer success managers (CSMs) must review claims made by the accounts they manage.
+- Customer success managers (CSMs) must review claims made by the accounts they manage.
 
-* A claims manager must oversee all claims.
+- A claims manager must oversee all claims.
 
 To restrict object entries by account, your custom object must have an active [relationship](../relationships/defining-object-relationships.md) with the Account system object, and you must configure the custom object to use this relationship for restricting entry data. Once set up, anyone adding entries to the custom object must select an account. This account becomes the entry's owner. See [Account Restriction and User Roles](#account-restriction-and-user-roles) to learn how role types control access to entries.
 
@@ -70,7 +70,7 @@ When setting up roles for account restriction, consider these factors:
 !!! important
     Account and organization roles are only supported in objects with account restriction enabled.
 
-    Account restriction does not support the default Account Member and Organization user roles. These roles do not automatically grant access to related object data.
+    Account restriction does not support the default Account Member and Organization user roles. These roles do not grant access automatically to related object data.
 
     When a user is a member of multiple accounts with different account roles and object permissions, these permissions apply to each account the user belongs to.
 

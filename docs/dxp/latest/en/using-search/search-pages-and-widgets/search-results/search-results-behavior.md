@@ -141,4 +141,4 @@ For Liferay 7.4 U64+/GA64+, clicking an object entry in search results redirects
 
 ![A default display page template is created if one doesn't already exist.](./search-results-behavior/images/14.png)
 
-For Liferay DXP 2024.Q1+/Liferay Portal 7.4 GA112+, the entries of [account restricted objects](../../../building-applications/objects/creating-and-managing-objects/using-system-objects-with-custom-objects/restricting-access-to-object-data-by-account.md) appear in search results, if the search user has the `Accounts > Account Entry: View` permission in an account- or regular-scoped role.
+For Liferay DXP 2024.Q1+/Liferay Portal 7.4 GA112+, [account restricted objects](../../../building-applications/objects/creating-and-managing-objects/using-system-objects-with-custom-objects/restricting-access-to-object-data-by-account.md) entries appear in search results, if the search user has the `Accounts > Account Entry: View` permission in an account- or regular-scoped role.

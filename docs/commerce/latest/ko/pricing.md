@@ -13,11 +13,3 @@ toc:
   - ./pricing/developer-guide.md
 ---
 # 가격
-
-```{raw} html
-:file: landingpage_template.html
-```
-
-```{raw} html
-:file: pricing/landing.html
-```

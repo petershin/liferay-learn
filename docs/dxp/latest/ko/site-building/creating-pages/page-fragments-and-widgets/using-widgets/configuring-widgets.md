@@ -10,11 +10,3 @@ toc:
 # 위젯 구성
 
 Liferay DXP와 함께 즉시 사용할 수 있는 위젯은 모양과 느낌, 위젯 데이터 가져오기/내보내기, 위젯 간 통신 등 몇 가지 구성 가능한 기능을 공유합니다.
-
-```{raw} html
-:file: ../../../../landingpage_template.html
-```
-
-```{raw} html
-:file: configuring-widgets/landing.html
-```

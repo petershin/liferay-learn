@@ -13,11 +13,3 @@ toc:
   - ./reference.md
 ---
 # 라이프레이 클라우드
-
-```{raw} html
-:file: landingpage_template.html
-```
-
-```{raw} html
-:file: landing.html
-```

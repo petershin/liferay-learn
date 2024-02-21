@@ -28,11 +28,3 @@ toc:
 ```{tip}
 문서 및 미디어는 모든 사이트에서 사용할 수 있으며 [자산 라이브러리](./asset-libraries/asset-libraries-overview.md)에서 활성화할 수 있습니다. 사이트에 업로드된 파일은 해당 사이트로 범위가 지정되며 DXP 인스턴스의 다른 사이트에서 쉽게 액세스할 수 없습니다. 자산 라이브러리에 업로드된 파일은 전역적으로 사용할 수 있으며 즉시 액세스할 수 있도록 여러 사이트에 연결할 수 있습니다.
 ```
-
-```{raw} html
-:file: ../landingpage_template.html
-```
-
-```{raw} html
-:file: documents-and-media/landing.html
-```

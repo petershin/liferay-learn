@@ -12,11 +12,3 @@ toc:
 - ./commerce-storefront-pages/search.md
 ---
 # 상거래 점포 페이지
-
-```{raw} html
-:file: ../landingpage_template.html
-```
-
-```{raw} html
-:file: commerce-storefront-pages/landing.html
-```

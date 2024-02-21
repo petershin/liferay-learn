@@ -32,14 +32,6 @@ Liferay Objects를 사용하면 코드를 작성하거나 모듈을 배포할 �
 
 [객체 생성](./objects/creating-and-managing-objects/creating-objects.md) 참조하여 사용자 정의 애플리케이션 구축을 시작하거나 [객체 통합 이해](./objects/understanding-object-integrations.md) 참조하여 객체가 Liferay의 핵심 프레임워크를 활용하는 방법에 대해 자세히 알아보세요.
 
-```{raw} html
-:file: ../landingpage_template.html
-```
-
-```{raw} html
-:file: objects/landing.html
-```
-
 <!--
 ## Modeling Data Structures
 

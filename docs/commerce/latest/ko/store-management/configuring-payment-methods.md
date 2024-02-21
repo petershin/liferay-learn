@@ -19,11 +19,3 @@ toc:
 Liferay Commerce는 네 가지 결제 방법을 제공합니다. 우편환은 오프라인 방식입니다. Authorize.net, Mercanet 및 PayPal은 구매자를 타사 웹사이트로 리디렉션합니다. 지불 방법 확장 지점을 사용하여 추가 방법을 추가할 수 있습니다.
 
 기본적으로 Liferay Commerce는 고객 결제 정보를 저장하지 **않습니다** . 반복 결제 또는 더 빠른 체크아웃 경험을 허용해야 하는 요구 사항이 있는 스토어는 제3자 결제 프로세서를 사용하여 민감한 고객 결제 정보를 관리하는 것이 좋습니다. 매장 관리자가 고객 결제 정보를 저장해야 하는 경우 [PCI DSS](https://www.pcisecuritystandards.org/) 준수 관행 및 정책을 구현하는 것이 **적극 권장** 됩니다.
-
-```{raw} html
-:file: ../landingpage_template.html
-```
-
-```{raw} html
-:file: configuring-payment-methods/landing.html
-```

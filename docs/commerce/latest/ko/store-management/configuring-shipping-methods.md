@@ -23,14 +23,6 @@ For users interested in adding other shipping methods or carriers, see [Implemen
 
 배송 방법은 국가 또는 지역에 따라 제한될 수 있습니다. 자세한 내용은 [배송 방법 제한 적용](./configuring-shipping-methods/applying-shipping-method-restrictions.md)을 참조하십시오.
 
-```{raw} html
-:file: ../landingpage_template.html
-```
-
-```{raw} html
-:file: configuring-shipping-methods/landing.html
-```
-
 <br></br>
 
 ## 관련 주제

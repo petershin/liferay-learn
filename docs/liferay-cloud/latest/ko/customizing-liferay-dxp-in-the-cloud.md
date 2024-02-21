@@ -103,11 +103,3 @@ Liferay DXP에는 웹에 콘텐츠를 빌드, 관리 및 배포할 수 있는 �
 * [라이프레이 클라우드 서비스에 로그인하기](getting-started/logging-into-your-liferay-cloud-services.md)
 * [Liferay DXP 서비스 구성](./customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.md)
 * [DCP 클라우드 콘솔을 통한 변경 사항 배포](updating-services-in-liferay-paas/deploying-changes-via-the-liferay-cloud-console.md)
-
-```{raw} html
-:file: landingpage_template.html
-```
-
-```{raw} html
-:file: customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/landing.html
-```

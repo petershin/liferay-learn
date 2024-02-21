@@ -12,11 +12,3 @@ toc:
   - ./configuring-liferay/common-tasks.md
 ---
 # Liferay 구성
-
-```{raw} html
-:file: ../landingpage_template.html
-```
-
-```{raw} html
-:file: configuring-liferay/landing.html
-```

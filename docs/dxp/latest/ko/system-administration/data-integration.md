@@ -5,11 +5,3 @@ toc:
 - ./data-integration/designing-talend-jobs-using-liferay-talend-components.md
 ---
 # 데이터 연결
-
-```{raw} html
-:file: ../landingpage_template.html
-```
-
-```{raw} html
-:file: data-integration/landing.html
-```

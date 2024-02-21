@@ -10,11 +10,3 @@ toc:
   - ./system-administration/using-glowroot-with-liferay.md
 ---
 # 시스템 관리
-
-```{raw} html
-:file: landingpage_template.html
-```
-
-```{raw} html
-:file: system-administration/landing.html
-```

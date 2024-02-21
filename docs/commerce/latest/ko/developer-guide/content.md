@@ -4,11 +4,3 @@ toc:
   - ./content/adding-a-new-product-data-source-for-the-product-publisher-widget.md
 ---
 # 컨텐츠
-
-```{raw} html
-:file: ../landingpage_template.html
-```
-
-```{raw} html
-:file: content/landing.html
-```

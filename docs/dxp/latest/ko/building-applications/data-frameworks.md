@@ -9,11 +9,3 @@ toc:
 - ./data-frameworks/upgrade-processes.md
 ---
 # 데이터 프레임워크
-
-```{raw} html
-:file: ../landingpage_template.html
-```
-
-```{raw} html
-:file: data-frameworks/landing.html
-```

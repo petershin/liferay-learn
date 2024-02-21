@@ -11,11 +11,3 @@ toc:
 - ./forms/using-forms-to-poll-users.md
 ---
 # 양식
-
-```{raw} html
-:file: ../landingpage_template.html
-```
-
-```{raw} html
-:file: forms/landing.html
-```

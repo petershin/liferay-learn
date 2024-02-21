@@ -78,11 +78,3 @@ App Builder는 Standard와 Workflow Powered의 두 가지 형태로 제공됩니
 
 * [App Builder로 애플리케이션 생성](./app-builder/creating-a-standard-application.md)
 * [워크플로 기반 애플리케이션 생성](./app-builder/creating-a-workflow-powered-application.md)
-
-```{raw} html
-:file: ../../landingpage_template.html
-```
-
-```{raw} html
-:file: app-builder/landing.html
-```

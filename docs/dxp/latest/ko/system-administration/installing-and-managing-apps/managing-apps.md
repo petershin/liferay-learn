@@ -7,11 +7,3 @@ toc:
 - ./managing-apps/renewing-apps.md
 ---
 # 앱 관리
-
-```{raw} html
-:file:  ../../landingpage_template.html
-```
-
-```{raw} html
-:file: managing-apps/landing.html
-```

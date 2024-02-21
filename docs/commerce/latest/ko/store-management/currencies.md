@@ -6,11 +6,3 @@ toc:
 - ./currencies/currencies-reference.md
 ---
 # 환율
-
-```{raw} html
-:file: ../landingpage_template.html
-```
-
-```{raw} html
-:file: currencies/landing.html
-```

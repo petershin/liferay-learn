@@ -8,11 +8,3 @@ toc:
 - ./upgrading-liferay/reference.md
 ---
 # 라이프레이 업그레이드
-
-```{raw} html
-:file: ../landingpage_template.html
-```
-
-```{raw} html
-:file: upgrading-liferay/landing.html
-```

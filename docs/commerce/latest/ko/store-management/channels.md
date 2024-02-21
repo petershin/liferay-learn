@@ -6,11 +6,3 @@ toc:
 - ./channels/channels-reference-guide.md
 ---
 # 채널
-
-```{raw} html
-:file: ../landingpage_template.html
-```
-
-```{raw} html
-:file: channels/landing.html
-```

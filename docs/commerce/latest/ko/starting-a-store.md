@@ -7,11 +7,3 @@ toc:
   - ./starting-a-store/sites-and-site-types.md
 ---
 # Starting a Store
-
-```{raw} html
-:file: landingpage_template.html
-```
-
-```{raw} html
-:file: starting-a-store/landing.html
-```

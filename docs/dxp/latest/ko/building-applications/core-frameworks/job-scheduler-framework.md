@@ -6,11 +6,3 @@ toc:
   - ./job-scheduler-framework/job-scheduler-ui-reference.md
 ---
 # 작업 스케줄러 프레임워크
-
-```{raw} html
-:file: ../../landingpage_template.html
-```
-
-```{raw} html
-:file: job-scheduler-framework/landing.html
-```

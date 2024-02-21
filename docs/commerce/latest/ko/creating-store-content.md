@@ -13,11 +13,3 @@ toc:
   - ./creating-store-content/liferay-commerce-fragments.md
 ---
 # 스토어 콘텐츠 생성
-
-```{raw} html
-:file: landingpage_template.html
-```
-
-```{raw} html
-:file: creating-store-content/landing.html
-```

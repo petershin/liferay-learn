@@ -23,11 +23,3 @@ toc:
 <!-- TASK: Add the following integrations when ready -->
 <!-- | Job Scheduler | Use the [Job Scheduler](../core-frameworks/job-scheduler-framework/using-job-scheduler.m) application to run Talend data integration tasks (e.g., bulk imports, data syncs). You can run them manually or schedule them to run at regular intervals. |-->
 <!-- | Publications |  | -->
-
-```{raw} html
-:file: ../../landingpage_template.html
-```
-
-```{raw} html
-:file: understanding-object-integrations/landing.html
-```

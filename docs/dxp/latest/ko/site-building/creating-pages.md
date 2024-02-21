@@ -9,11 +9,3 @@ toc:
 - ./creating-pages/page-settings.md
 ---
 # 페이지 만들기
-
-```{raw} html
-:file: ../landingpage_template.html
-```
-
-```{raw} html
-:file: creating-pages/landing.html
-```

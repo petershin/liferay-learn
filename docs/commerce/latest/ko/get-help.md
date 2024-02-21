@@ -8,11 +8,3 @@ toc:
     - ' [Open a Ticket](https://liferay-support.zendesk.com/agent/) '
 ---
 # 도움 받기
-
-```{raw} html
-:file: landingpage_template.html
-```
-
-```{raw} html
-:file: get-help/landing.html
-```

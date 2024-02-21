@@ -27,11 +27,3 @@ toc:
 또한 출판은 높은 수준의 프로세스 투명성을 제공하므로 출판 중에 충돌을 더 쉽게 식별하고 해결할 수 있습니다. 또한 인스턴스 변경 사항을 검토하고 되돌리는 데 사용할 수 있는 전체 게시 기록을 유지 관리합니다.
 
 시작하려면 [출판 활성화](./publications/enabling-publications.md) 참조하십시오.
-
-```{raw} html
-:file: ../../landingpage_template.html
-```
-
-```{raw} html
-:file: publications/landing.html
-```

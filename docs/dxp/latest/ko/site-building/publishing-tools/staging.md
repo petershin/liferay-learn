@@ -53,11 +53,3 @@ Liferay DXP 7.4 및 7.3.10 FP1부터 자산 라이브러리에 대한 스테이�
 ```{important}
 스테이징은 [커머스](https://learn.liferay.com/commerce/latest/ko/index.html) 또는 [사용자 정의 개체](../../building-applications/objects.md)를 지원하지 않습니다. 게시 프로세스 중에 상거래 및 개체의 엔터티가 준비되지 않습니다.
 ```
-
-```{raw} html
-:file: ../../landingpage_template.html
-```
-
-```{raw} html
-:file: staging/landing.html
-```

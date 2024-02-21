@@ -14,11 +14,3 @@ toc:
 - ./get-help.md
 ---
 # 커머스
-
-```{raw} html
-:file: landingpage_template.html
-```
-
-```{raw} html
-:file: landing.html
-```

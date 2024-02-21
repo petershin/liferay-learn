@@ -11,11 +11,3 @@ toc:
   - ./troubleshooting.md
 ---
 # 애널리틱 클라우드
-
-```{raw} html
-:file: landingpage_template.html
-```
-
-```{raw} html
-:file: landing.html
-```

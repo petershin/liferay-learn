@@ -8,11 +8,3 @@ toc:
   - ./headless-delivery/sample-api-tutorials.md
 ---
 # 헤드리스 배송
-
-```{raw} html
-:file: landingpage_template.html
-```
-
-```{raw} html
-:file: headless-delivery/landing.html
-```

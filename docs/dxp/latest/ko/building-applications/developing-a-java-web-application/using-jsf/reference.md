@@ -6,11 +6,3 @@ toc:
 - ./reference/liferay-faces-portal.md
 ---
 # 참조
-
-```{raw} html
-:file: ../../../landingpage_template.html
-```
-
-```{raw} html
-:file: reference/landing.html
-```

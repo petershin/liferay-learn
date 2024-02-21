@@ -8,11 +8,3 @@ toc:
   - ./core-frameworks/servlets.md
 ---
 # 핵심 프레임워크
-
-```{raw} html
-:file: ../landingpage_template.html
-```
-
-```{raw} html
-:file: core-frameworks/landing.html
-```

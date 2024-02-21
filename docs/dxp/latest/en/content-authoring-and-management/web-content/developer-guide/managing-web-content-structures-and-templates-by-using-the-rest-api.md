@@ -1,0 +1,328 @@
+---
+taxonomy-category-names:
+- Content Management System
+- Web Content and Structures
+- API Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
+uuid: ad9381e2-7fcf-4448-8028-59ed858e80c0
+---
+# Managing Web Content Structures and Templates by Using the REST API
+
+Web content structures define the information included in a web content article. Structures facilitate creating and managing web content while ensuring that the content includes all the required information.
+
+You can associate a structure with a web content template. A template determines how content fields are rendered on a page. The following table summarizes the available options using the Liferay DXP REST API with web content structures and templates:
+
+| Available Options                           | Unavailable Options            |
+|:--------------------------------------------|:-------------------------------|
+| Gather Structures and Templates information | Create Structures or Templates |
+| Replace Structures permissions              | Delete Structures or Templates |
+
+Use a pre-built Liferay DXP Docker image with several [cURL](https://curl.haxx.se/) code samples to learn how to manage structured content:
+
+- [Setting Up Your Environment](#setting-up-your-environment)
+- [Identifying the Service to Consume](#identifying-the-service-to-consume)
+- [Getting the Web Content Structures](#getting-the-web-content-structures)
+- [Getting the Web Content Templates](#getting-the-web-content-templates)
+- [Getting the Web Content Structure Permissions](#getting-the-web-content-structure-permissions)
+- [Replacing the Web Content Structure Permissions](#replacing-the-web-content-structure-permissions)
+
+## Setting Up Your Environment
+
+```{include} /_snippets/run-liferay-dxp.md
+```
+
+Then, follow these steps:
+
+1. Download and unzip the [sample project](https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/web-content/developer-guide/liferay-m7b1.zip):
+
+   ```bash
+   curl https://resources.learn.liferay.com/dxp/latest/en/content-authoring-and-management/web-content/developer-guide/liferay-m7b1.zip -O
+   ```
+
+   ```bash
+   unzip liferay-m7b1.zip
+   ```
+
+   !!! warning
+       These scripts use basic authentication and are designed for testing. Do not use basic authentication in a production Liferay DXP environment.
+
+### Identifying the Site ID
+
+1. Open the Site menu (![Site menu](../../../images/icon-menu.png)) and go to *Configuration* &rarr; *Site Settings*.
+
+1. Under the Platform section, click *Site Configuration*.
+
+1. Find the Site identifier under Site ID.
+
+   ![Find the Site ID under the Site Settings and Site Configuration option.](./managing-web-content-structures-and-templates-by-using-the-rest-api/images/01.png)
+
+### Creating the Web Content Structure and Template Samples
+
+!!! note
+    You can only create structures or templates manually through the user interface.
+
+Create a basic [web content structure](../web-content-structures/creating-structures.md) and a basic [web content template](../web-content-templates/creating-web-content-templates.md) based on the structure. This tutorial uses a basic structure with a single Text field to demonstrate the `ContentStructure` service.
+
+![Basic sample web content structure using a single Text field.](./managing-web-content-structures-and-templates-by-using-the-rest-api/images/02.png)
+
+### Identifying the Web Content Structure ID
+
+1. Open the Site menu (![Site menu](../../../images/icon-menu.png)) and go to *Content & Data* &rarr; *Web Content*.
+
+1. Click the *Structures* tab.
+
+1. Under the ID column, identify the ID for your structure.
+
+   ![In the Structures tab, identify the ID for your web content structure under the ID column.](./managing-web-content-structures-and-templates-by-using-the-rest-api/images/01.png)
+
+## Identifying the Service to Consume
+
+Use the `StructuredContent` service in the Liferay DXP Headless Delivery API to manage web content. To identify this service and all the different HTTP methods, use the Liferay API Explorer. For more information, see [Consuming REST Services](../../../headless-delivery/consuming-apis/consuming-rest-services.md).
+
+## Getting the Web Content Structures
+
+The `ContentStructures_GET_FromSite.sh` cURL script lists the existing site structures. This script uses the `ContentStructure` service with the `GET` HTTP method, using the site ID as the only parameter.
+
+| Method | Service            | Endpoint                                |
+|:-------|:-------------------|:----------------------------------------|
+| GET    | `ContentStructure` | /v1.0/sites/{siteId}/content-structures |
+
+In the `ContentStructures_GET_FromSite.sh` script, the `${1}` parameter refers to `siteID`. Use your site ID instead of the one in the example (20125) when running the script.
+
+```bash
+./ContentStructures_GET_FromSite.sh 20125
+```
+
+The following code shows the JSON output generated by the script. The script returns all the structures in the site. In this example, you can see a single structure identified by an `id` and a `name`.
+
+```json
+{
+   "actions" : { },
+   "facets" : [ ],
+   "items" : [ {
+      "availableLanguages" : [ "en-US" ],
+      "contentStructureFields" : [ {
+      "dataType" : "string",
+      "inputControl" : "text",
+      "label" : "Text",
+      "localizable" : true,
+      "multiple" : false,
+      "name" : "Text86549034",
+      "nestedContentStructureFields" : [ ],
+      "options" : [ ],
+      "predefinedValue" : "",
+      "repeatable" : false,
+      "required" : false,
+      "showLabel" : true
+      } ],
+      "creator" : {
+      "additionalName" : "",
+      "contentType" : "UserAccount",
+      "familyName" : "Bowman",
+      "givenName" : "David",
+      "id" : 20129,
+      "name" : "David Bowman"
+      },
+      "dateCreated" : "2021-08-02T13:15:42Z",
+      "dateModified" : "2021-08-02T13:16:57Z",
+      "description" : "",
+      "id" : 41837,
+      "name" : "Simple Structure",
+      "siteId" : 20125
+   } ],
+   "lastPage" : 1,
+   "page" : 1,
+   "pageSize" : 20,
+   "totalCount" : 1
+}
+```
+
+The structure has a single Text field described in the `dataType` section under `contentStructureFields`. When you include more elements on the structure, you can see additional sections under `contentStructureFields`. Below is the partial JSON output for a structure with a Text (`"dataType": "string"`) and an Image field (`"dataType": "image"`):
+
+```json
+{
+  "actions": {},
+  "facets": [],
+  "items": [
+    {
+      "availableLanguages": ["en-US"],
+      "contentStructureFields": [
+        {
+          "dataType": "string",
+          "inputControl": "text",
+          "label": "Text",
+          "localizable": true,
+          "multiple": false,
+          "name": "Text86549034",
+          "nestedContentStructureFields": [],
+          "options": [],
+          "predefinedValue": "",
+          "repeatable": false,
+          "required": false,
+          "showLabel": true
+        },
+        {
+          "dataType": "image",
+          "label": "Image",
+          "localizable": true,
+          "multiple": false,
+          "name": "Image96876678",
+          "nestedContentStructureFields": [],
+          "options": [],
+          "predefinedValue": "{}",
+          "repeatable": false,
+          "required": false,
+          "showLabel": true
+        }
+      ]
+    }
+  ]
+}
+```
+
+## Getting the Web Content Templates
+
+The `ContentTemplates_GET_FromSite.sh` cURL script lists the existing site templates. This script uses the `ContentTemplate` service with the `GET` HTTP method, using the site ID as the only parameter.
+
+| Method | Service           | Endpoint                               |
+|:-------|:------------------|:---------------------------------------|
+| GET    | `ContentTemplate` | /v1.0/sites/{siteId}/content-templates |
+
+In the `ContentTemplates_GET_FromSite.sh` script, the `${1}` parameter refers to `siteID`. Use your site ID instead of the one in the example (20125) when running the script.
+
+```bash
+./ContentTemplates_GET_FromSite.sh 20125
+```
+
+Below is the partial JSON output generated by the script. The script returns all the templates in the site. In this example, you can see a single template identified by an `id` and a `name`. The `contentStructureId` corresponds to the associated structure ID and the `templateScript` corresponds to the FreeMarker Template Language describing the template.
+
+```json
+{
+  (...)
+    "availableLanguages" : [ "en-US" ],
+    "contentStructureId" : 41837,
+    "creator" : {
+      "additionalName" : "",
+      "contentType" : "UserAccount",
+      "familyName" : "Bowman",
+      "givenName" : "David",
+      "id" : 20129,
+      "name" : "David Bowman"
+    },
+    "dateCreated" : "2021-08-02T13:24:32Z",
+    "dateModified" : "2021-08-02T14:33:24Z",
+    "description" : "",
+    "id" : "41847",
+    "name" : "Simple Template",
+    "programmingLanguage" : "ftl",
+    "siteId" : 20125,
+    "templateScript" : "<#if (Text86549034.getData())??>\n\t${Text86549034.getData()}\n</#if>"
+  } ],
+  "lastPage" : 1,
+  "page" : 1,
+  "pageSize" : 20,
+  "totalCount" : 1
+}
+```
+
+## Getting the Web Content Structure Permissions
+
+The `ContentStructure_GET_Permissions.sh` cURL script lists the structure's permission. This script uses the `ContentStructure` service with the `GET` HTTP method, using the structure's ID as the only parameter.
+
+| Method | Service            | Endpoint                                                    |
+|:-------|:-------------------|:------------------------------------------------------------|
+| GET    | `ContentStructure` | `/v1.0/content-structures/{contentStructureId}/permissions` |
+
+In the `ContentStructure_GET_Permissions.sh` script, the `${1}` parameter refers to `contentStructureId`. Use your structure's ID instead of the one in the example (41837) when running the script.
+
+```bash
+./ContentStructure_GET_Permissions.sh 41837
+```
+
+The JSON output includes the permissions under the `items` section. In this example, there is only one role with permissions on the sample structure in `roleName`, with the list of permissions in `actionIds`:
+
+```json
+{
+  "actions": {
+    "get": {
+      "method": "GET",
+      "href": "http://localhost:8080/o/headless-delivery/v1.0/content-structures/41837/permissions"
+    },
+    "replace": {
+      "method": "PUT",
+      "href": "http://localhost:8080/o/headless-delivery/v1.0/content-structures/41837/permissions"
+    }
+  },
+  "facets": [],
+  "items": [
+    {
+      "actionIds": ["DELETE", "PERMISSIONS", "UPDATE", "VIEW"],
+      "roleName": "Owner"
+    }
+  ],
+  "lastPage": 1,
+  "page": 1,
+  "pageSize": 2,
+  "totalCount": 2
+}
+```
+
+!!! note
+    To learn how to manage permissions, see [Assigning Permissions to Web Content Structures and Templates](../web-content-structures/assigning-permissions-to-structures-and-templates.md).
+
+## Replacing the Web Content Structure Permissions
+
+The `ContentStructure_PUT_Permissions.sh` cURL script uses the `PUT` HTTP method with the `ContentStructure` service to replace the original structure permission. This script includes the `DELETE` and `VIEW` permissions for the Power User role.
+
+| Method | Service            | Endpoint                                                    |
+|:-------|:-------------------|:------------------------------------------------------------|
+| PUT    | `ContentStructure` | `/v1.0/content-structures/{contentStructureId}/permissions` |
+
+In the `ContentStructure_PUT_Permissions.sh` script, the `${1}` parameter refers to `contentStructureId`. Use your structure's ID instead of the one in the example (41837) when running the script.
+
+```bash
+./ContentStructure_PUT_Permissions.sh 41837
+```
+
+The JSON output shows two entries under the `items` section, one for each role:
+
+```json
+{
+  "actions": {
+    "get": {
+      "method": "GET",
+      "href": "http://localhost:8080/o/headless-delivery/v1.0/content-structures/41837/permissions"
+    },
+    "replace": {
+      "method": "PUT",
+      "href": "http://localhost:8080/o/headless-delivery/v1.0/content-structures/41837/permissions"
+    }
+  },
+  "facets": [],
+  "items": [
+    {
+      "actionIds": ["DELETE", "PERMISSIONS", "UPDATE", "VIEW"],
+      "roleName": "Owner"
+    },
+    {
+      "actionIds": ["DELETE", "VIEW"],
+      "roleName": "Power User"
+    }
+  ],
+  "lastPage": 1,
+  "page": 1,
+  "pageSize": 2,
+  "totalCount": 2
+}
+```
+
+The Power User now has the Delete and View permissions.
+
+## Related Topics
+
+- [Creating Web Content Structures](../web-content-structures/creating-structures.md)
+- [Creating Web Content Templates](../web-content-templates/creating-web-content-templates.md)
+- [Consuming REST Services](../../../headless-delivery/consuming-apis/consuming-rest-services.md)
+- [Assigning Permissions to Web Content Structures and Templates](../web-content-structures/assigning-permissions-to-structures-and-templates.md)

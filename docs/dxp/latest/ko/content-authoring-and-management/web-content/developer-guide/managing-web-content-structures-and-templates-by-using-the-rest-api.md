@@ -2,18 +2,19 @@
 
 웹 콘텐츠 구조는 웹 콘텐츠 기사에 포함된 정보를 정의합니다. 구조는 웹 콘텐츠 생성 및 관리를 용이하게 하는 동시에 콘텐츠에 필요한 모든 정보가 포함되도록 보장합니다. 구조를 웹 콘텐츠 템플릿과 연결할 수 있습니다. 템플릿은 페이지에서 콘텐츠 필드가 렌더링되는 방식을 결정합니다. 다음 표에는 웹 콘텐츠 구조 및 템플릿과 함께 Liferay DXP REST API를 사용하여 사용 가능한 옵션이 요약되어 있습니다.
 
-| 사용 가능한 옵션                                         | 사용할 수 없는 옵션                                         |
-| :------------------------------------------------ | :-------------------------------------------------- |
-| <ul><li>구조 및 템플릿 정보 수집</li><li>구조 교체 권한</li></ul> | <ul><li>구조 또는 템플릿 생성</li><li>구조 또는 템플릿 삭제</li></ul> |
+| 사용 가능한 옵션      | 사용할 수 없는 옵션  |
+|:---------------|:-------------|
+| 구조 및 템플릿 정보 수집 | 구조 또는 템플릿 생성 |
+| 구조 교체 권한       | 구조 또는 템플릿 삭제 |
 
 여기에서는 여러 [cURL](https://curl.haxx.se/) 코드 샘플과 함께 사전 구축된 Liferay DXP Docker 이미지를 사용하여 구조화된 콘텐츠를 관리하는 방법을 알아봅니다. 다음 주제에 대해 알아볼 수 있습니다.
 
 * [환경 설정](#setting-up-your-environment)
 * [사용할 서비스 식별](#identifying-the-service-to-consume)
-* [사이트 구조 가져오기](#getting-the-site-structures)
-* [사이트 템플릿 가져오기](#getting-the-site-templates)
-* [구조 권한 얻기](#getting-the-structure-permissions)
-* [구조 권한 교체](#replacing-the-structure-permissions)
+* [사이트 구조 가져오기](#getting-the-web-content-structures)
+* [사이트 템플릿 가져오기](#getting-the-web-content-templates)
+* [구조 권한 얻기](#getting-the-web-content-structure-permissions)
+* [구조 권한 교체](#replacing-the-web-content-structure-permissions)
 
 ## 환경 설정
 
@@ -50,7 +51,7 @@
 1. 플랫폼 섹션에서 **사이트 구성** 을 클릭합니다.
 1. 사이트 ID 아래에서 사이트 식별자를 찾으세요.
 
-   ![Identify the Site ID under the Site Settings and Site Configuration option.](./managing-structures-and-templates-by-using-the-rest-api/images/01.png)
+   ![Identify the Site ID under the Site Settings and Site Configuration option.](./managing-web-content-structures-and-templates-by-using-the-rest-api/images/01.png)
 
 ### 구조 및 템플릿 샘플 생성
 
@@ -60,7 +61,7 @@ REST API를 사용하여 프로그래밍 방식으로 구조 또는 템플릿을
 
 구조를 생성하려면 [구조 생성](../web-content-structures/creating-structures.md) 을 읽어보세요. 템플릿을 생성하려면 [웹 콘텐츠 템플릿 생성](../web-content-templates/creating-web-content-templates.md) 읽고 샘플 구조를 기반으로 템플릿을 생성하십시오. 이 튜토리얼에서는 단일 텍스트 필드가 있는 기본 구조를 사용하여 `ContentStructure` 서비스를 보여줍니다.
 
-![Basic sample Structure using a single Text field.](./managing-structures-and-templates-by-using-the-rest-api/images/02.png)
+![Basic sample Structure using a single Text field.](./managing-web-content-structures-and-templates-by-using-the-rest-api/images/02.png)
 
 ### 샘플 구조 및 템플릿 식별
 
@@ -68,9 +69,9 @@ REST API를 사용하여 프로그래밍 방식으로 구조 또는 템플릿을
 1. **구조** 탭을 클릭하세요.
 1. ID 열에서 구조의 ID를 식별합니다.
 
-   ![In the Structures tab, identify the ID for your Structure under the ID column.](./managing-structures-and-templates-by-using-the-rest-api/images/01.png)
+   ![In the Structures tab, identify the ID for your Structure under the ID column.](./managing-web-content-structures-and-templates-by-using-the-rest-api/images/01.png)
 
-프로그래밍 방식으로 구조 ID를 식별할 수도 있습니다. 자세한 내용은 [REST API를 사용하여 구조 및 템플릿 관리](./managing-structures-and-templates-by-using-the-rest-api.md) 참조하세요.
+프로그래밍 방식으로 구조 ID를 식별할 수도 있습니다. 자세한 내용은 [REST API를 사용하여 구조 및 템플릿 관리](./managing-web-content-structures-and-templates-by-using-the-rest-api.md) 참조하세요.
 
 ## 사용할 서비스 식별
 

@@ -18,9 +18,9 @@ You can ensure [GDPR compliance](https://gdpr.eu/cookies) for your cookies using
 
    There are two checkboxes here: Enabled and Explicit Cookie Consent Mode. Though enabled by default, the explicit cookie consent mode doesn't work if the Enabled checkbox is unchecked.
 
-2. To set your handling preference, check the *Enabled* checkbox. With the Explicit Cookie Consent Mode checked, no cookies are set until the user explicitly agrees to cookie usages. If unchecked, all cookies are set until the user opts out of them.
+1. To set your handling preference, check the *Enabled* checkbox. With the Explicit Cookie Consent Mode checked, no cookies are set until the user explicitly agrees to cookie usages. If unchecked, all cookies are set until the user opts out of them.
 
-3. Click *Update*.
+1. Click *Update*.
 
    ![The default cookie banner appears at the bottom of the page.](./enabling-gdpr-compliance-for-cookies/images/02.png)
 
@@ -44,11 +44,11 @@ You can ensure [GDPR compliance](https://gdpr.eu/cookies) for your cookies using
 
 1. Click *Save*.
 
-## Banner Customization
+## Banner Options
 
-Your cookie policy will show up as soon as the user logs in through a banner. It displays the main text, as your privacy Policy Link and Link Display Text. The user will have three main options to select on the banner: *Configuration*, *Accept All* and *Decline All*. On the Banner page, you may customize these options.
+Your cookie policy appears when users log in through a banner. It displays the text from the Content field, your privacy Policy Link, and Link Display Text. Users can select from three options: *Configuration*, *Accept All* and *Decline All*. You can customize these options in the Banner tab.
 
-![Cookie Banner](./enabling-gdpr-compliance-for-cookies/images/06.png)
+![The cookie banner appears the first time users visit your site.](./enabling-gdpr-compliance-for-cookies/images/06.png)
 
 **Content**: Add the information included in your cookie policy, like the types of cookies used, their purposes, how users can manage or disable cookies, and any other relevant information regarding data collection, tracking, and user privacy.
 
@@ -58,9 +58,9 @@ Your cookie policy will show up as soon as the user logs in through a banner. It
 
 **Include "Decline All" Button**: Check this option to add a *Decline All* button on the cookie banner.
 
-## Consent Panel Customization
+## Consent Panel Options
 
-Once the Banner is displayed on the screen, if the user clicks on the *Configuration*, he will have access to the Consent Panel page. There, he may choose which cookies are allowed while he uses the website.
+The Consent Panel appears when users click the *Configuration* link on the banner. Users can use it to select the types of cookies they consent to have stored. 
 
 ![Consent Panel Page](./enabling-gdpr-compliance-for-cookies/images/07.png)
 
@@ -74,13 +74,13 @@ Once the Banner is displayed on the screen, if the user clicks on the *Configura
 
 **Link Display Text**: Specify the text that appears as the link to the cookie policy page.
 
-**Strictly Necessary Cookies Description**: Add details about the cookies that are necessary for the proper functioning of your site.
+**Strictly Necessary Cookies Description**: Describe the cookies that are necessary for the proper functioning of your site.
 
-**Functional Cookies Description**: Add details about cookies that provide enhanced functionality and personalization. You can check the *Prechecked* checkbox to enable this when the user opens the consent panel.
+**Functional Cookies Description**: Describe cookies you store to provide enhanced functionality and personalization. You can check the *Prechecked* checkbox to enable this when the user opens the consent panel.
 
-**Performance Cookies Description**: Add details about performance cookies and how they measure and improve the overall performance of the website by counting visits, traffic sources, and page popularity while maintaining full data privacy. You can check the *Prechecked* checkbox to enable this when the user opens the consent panel.
+**Performance Cookies Description**: Describe performance cookies you store, including how they measure and improve the overall performance of the website by counting visits, traffic sources, and page popularity, and any steps you have taken to maintain full data privacy. You can check the *Prechecked* checkbox to enable this when the user opens the consent panel.
 
-**Personalization Cookies Description**: Add details about how cookies personalize the user experience by building a profile of the users and showing relevant ads. By not allowing personalization cookies, users may receive less targeted advertising. You can check the *Prechecked* checkbox to enable this when the user opens the consent panel.
+**Personalization Cookies Description**: Describe cookies that personalize the user experience. For example, you might have cookies that build a profile of users to show relevant ads. By not allowing personalization cookies, users may receive less targeted advertising. You can check the *Prechecked* checkbox to enable this when the user opens the consent panel.
 
 See also:
 

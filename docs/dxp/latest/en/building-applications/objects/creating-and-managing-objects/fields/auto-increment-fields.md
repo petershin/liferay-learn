@@ -9,7 +9,7 @@ uuid: 013d44ac-a4a9-497b-85b2-be9b1fdcb23e
 ---
 # Auto-Increment Fields
 
-Auto-Increment fields are configurable read-only fields for uniquely identifying object entries in a human-readable format. For example, an IT ticketing system should generate a unique but meaningful identifier for each ticket, so users can refer to each entry easily. 
+Auto-Increment fields are configurable [read-only fields](./using-read-only-fields.md) for uniquely identifying object entries in a human-readable format. For example, an IT ticketing system should generate a unique but meaningful identifier for each ticket, so users can refer to each entry easily. 
 
 | Prefix | Starting Value | Suffix | Example Values |
 |:------ |:-------------- |:-------|:---------------|
@@ -17,77 +17,84 @@ Auto-Increment fields are configurable read-only fields for uniquely identifying
 | none | 0 | none | 0<br>1<br>2<br>...<br>256 |
 | FOO- | 01 | none | FOO-01<br>FOO-02<br>FOO-03<br>...<br>FOO-12 |
 
-When adding an auto-increment field, you must configure the starting numeric value. Liferay adds `1` to this value for each subsequent object entry. Optionally, you can add a meaningful suffix and/or prefix to each numeric value.
+To add an auto-increment field, you must configure the starting numeric value. Liferay adds `1` to this value for each subsequent object entry. Optionally, you can add a meaningful suffix and/or prefix to each numeric value.
 
-When editing the field, you can change its label and configure whether and how it's searchable. 
+![You must provide the initial value of an auto-increment field.](./auto-increment-fields/images/01.png)
 
-The field cannot be required
+When editing the field, you can change its label and configure how it's searched.
 
-Because it must be unique, you cannot import entries that have identical values to those already in the system.
-My question: what happens when this is violated?
+![After creating an auto-increment field, you can edit the label and the searchable settings.](./auto-increment-fields/images/02.png)
 
-You can add the field to published objects, and you can add it to views and layouts
+## Exporting and Importing Entries with Auto-Increment Fields
 
-You can sort entries by this field
+Object entries are imported and exported using the [Data Migration Center](../../../../headless-delivery/consuming-apis/data-migration-center.md), a [batch client extension](../../../client-extensions/batch-client-extensions.md), or by calling the [batch engine's import/export task](../../../../headless-delivery/consuming-apis/batch-engine-api-basics-exporting-data.md) endpoints. 
 
-Supports page builder (what does this mean?)
+Exporting entries with auto-increment fields simply preserves the values in the exported JSON. When importing entries that contain auto-increment fields, you must carefully consider whether the data is compatible with the object definition's existing entries.
+<!-- Is this actually true?-->
 
-Mappable like text fields
+Entries you're importing must have unique [External Reference Codes (ERCs)](../../../../headless-delivery/consuming-apis/using-external-reference-codes.md) and unique auto-increment values.
 
-Use in actions as a variable
-
-Use in validations as a variable
-
-Use in notifications as a variable
-
-What does this mean?
-15 - Given an objects admin,
-when managing object definitions,
-then I must be able to import the object entries (POST API / Data Migration Center) considering the increment field
+| Unique ERC | Unique Auto-Increment Value | Successful Import |
+| :--- | :--- | :--- |
+| &#10004;| &#10004; | &#10004; |
+| &#10008; | &#10004; | &#10008; |
+| &#10004; | &#10008; | &#10008; |
 
 
-My opinion: most use cases will want this field searchable as a keyword, but the default is text. Can I recommend setting it to keyword in the docs?
+If you try importing entries with unique ERCS but overlapping auto-increment values, only entries with unique values import successfully:
 
+| Existing Entries<br>ERC/Auto-Increment | Entries to Import<br>ERC/Auto-Increment | Import Result<br>ERC/Auto-Increment |
+|:---|:---|:---|
+| 11111/foo-01-bar<br>22222/foo-02-bar | 33333/foo-01-bar<br>44444/foo-02-bar<br>55555/foo-03-bar<br>66666/foo-04-bar<br>77777/foo-05-bar | 11111/foo-01-bar<br>22222/foo-02-bar<br>55555/foo-03-bar<br>66666/foo-04-bar<br>77777/foo-05-bar |
 
+You cannot import entries that don't follow the auto-increment format defined in the host system. Only the values following the specified format import successfully:
 
-13 - Given an objects admin,
-when managing notifications,
-then I must be able to use the increment field on notifications as a variable
+| Existing Entries<br>Valid Auto-Increment Values | Entries to Import<br>Auto-Increment Values | Import Result<br>Valid Auto-Increment Values |
+|:---|:---|:---|
+| foo-01-bar<br>foo-02-bar | foo-003-bar<br>foo-4-bar<br>life-05-ray<br>foo-04-bar<br>foo-05-bar | foo-01-bar<br>foo-02-bar<br>foo-04-bar<br>foo-05-bar |
 
-14 - Given an objects admin,
-when managing object definitions,
-then I must be able to export the object entries considering the increment field
+When you import entries, the highest numeric value in the system after the import becomes the value used to increment new field values.
 
-The system must not generate if there is already a value imported for it
+If you import entries with no value in an auto-increment field, the system generates one according to the specified prefix/suffix format and uses the next numeric value in the series.
 
-16 - Given an objects admin,
-when importing the object entries (POST API / Data Migration Center) considering the increment field,
-then the highest number added must update the auto-increment count
+## Using Auto-Increment Fields with APIs
 
-Test Case
+When you make a GET request to return object entries with an auto-increment field, the value is returned as a JSON string:
 
-If I already have 3 entries (1, 2, 3) and I import 10, 
+```json
+"ticket" : "ticket-12"
+```
 
-then next autogenerated will be 11
+When you [add an object definition field](../managing-objects-with-headless-apis.md) with the headless API, here's what the request body looks like for an auto-increment field that generates values `foo-01-bar`, `foo-02-bar`, etc.: 
 
-If I have 00010, 
+```json
+{
+   "businessType": "AutoIncrement",
+   "label": {
+      "en_US": "Able Ticket"
+   },
+   "name": "ableTicket",
+   "objectFieldSettings": [{
+      "name": "initialValue",
+      "value": "01"
+   },
+   {
+      "name": "prefix",
+      "value": "foo-"
+   },
+   {
+      "name": "suffix",
+      "value": "-bar"
+   }], 
+   "required": false
+} 
+```
 
-Then We can add 00011 and we cannot add 11
+<!-- Is this worthwhile, and is there anything else relevant to mention here? -->
 
-17 - Given an end user,
-When viewing a layout with an auto-increment field,
-Then the user should not see the field value until the entry has been created in the database
+## Related Topics
 
-Once the entry has been created, the end user will be able to see the field value as a read-only field
-
-Notes
-Definition of Done (DoD):
-All Acceptance Criteria were passed;
-
-Make sure that the expected automated tests were created (unit / integration / functional) and passed successfully;
-
-Validated by QA and Product Manager;
-
-No critical bug related to Story scope (FP5);
-
-Make sure that all system documentation were updated (if necessary)
+* [Fields](../fields.md)
+* [Attachment Fields](./attachment-fields.md)
+* [Adding Fields to Objects](./adding-fields-to-objects.md)
+* [Using External Reference Codes](../../../../headless-delivery/consuming-apis/using-external-reference-codes.md)

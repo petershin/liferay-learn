@@ -206,10 +206,10 @@ For the purposes of readers understanding your API calls, always use the fully s
 
 ```bash
 curl \
+    "http://localhost:8080/o/headless-delivery/v1.0/sites/${1}/document-folders" \
 	--data "{\"name\": \"Goo\"}" \
 	--header "Content-Type: application/json" \
 	--request POST \
-	"http://localhost:8080/o/headless-delivery/v1.0/sites/${1}/document-folders" \
 	-user "test@liferay.com:test"
 ```
 

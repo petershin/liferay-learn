@@ -192,35 +192,62 @@ It's time to develop your REST commands. Start with cURL commands.
 
 The API Browser's *Try it out* feature is a great way to see the services in action and to gather information about cURL commands. See the previous section [Exploring the API](#exploring-the-api) for details.
 
-A good service type t    o try first is one that gives you a listing of resource instances for your site (or instances for some other scope). For example, this command lists DocumentFolder instances for a site that has the ID `20121`.
+A good service type to try first is one that gives you a listing of resource instances for your site (or instances for some other scope). For example, this command lists `DocumentFolder` instances for a site that has the ID `20121`.
 
 ```bash
 curl \
 	"http://localhost:8080/o/headless-delivery/v1.0/sites/20121/document-folders" \
-	-u "test@liferay.com:test"
+	--user "test@liferay.com:test"
 ```
 
 > **Note:** GET commands are implicit--they don't require specifying the GET action.
 
-Organize command arguments alphabetically, starting with upper-case flags and ending with lower-case flags. For example,
+For the purposes of readers understanding your API calls, always use the fully spelled out option flags. Organize command arguments alphabetically. For example,
 
 ```bash
 curl \
-	-H "Content-Type: application/json" \
-	-X POST \
+	--data "{\"name\": \"Goo\"}" \
+	--header "Content-Type: application/json" \
+	--request POST \
 	"http://localhost:8080/o/headless-delivery/v1.0/sites/${1}/document-folders" \
-	-d "{\"name\": \"Goo\"}" \
-	-u "test@liferay.com:test"
+	-user "test@liferay.com:test"
 ```
 
 | Line | Description |
 | :--- | :---------- |
 | `curl \` | The cURL command has its own line. |
-| *\<tab\>* `-H "..." \` | The upper-case flags and their values are listed first alphabetically. |
-| *\<tab\>* `-X POST \` | The HTTP action has its own line. |
+| *\<tab\>* `--data "..." \` | The lower-case flags and their values are listed alphabetically. |
+| *\<tab\>* `--header "..." \` | The upper-case flags and their values are listed first alphabetically. |
+| *\<tab\>* `--request POST \` | The HTTP action has its own line. |
 | *\<tab\>* `"http://..." \` | The endpoint URL has its own line. |
-| *\<tab\>* `-d "..." \` | The lower-case flags and their values are listed alphabetically. |
-| *\<tab\>* `-u "..."` | The last line has no backslash. |
+| *\<tab\>* `--user "..."` | The last line has no backslash. |
+
+If the data you're posting is more than one line of JSON, use the `--data-binary` flag: 
+
+```bash
+curl \
+    "http://localhost:8080/o/object-admin/v1.0/object-definitions/by-external-reference-code/C_DISTRIBUTOR_APPLICATION/object-fields" \
+    --data-binary @- <<EOF
+        {
+			"DBType": "String",
+			"businessType": "Text",
+			"externalReferenceCode": "a3ebb708-d369-02c0-9baf-f041f9657b9c",
+			"indexed": true,
+			"indexedAsKeyword": false,
+			"indexedLanguageId": "en_US",
+			"label": {
+				"en_US": "Bank Name"
+			},
+			"name": "bankName",
+			"objectFieldSettings": [],
+			"required": false,
+			"state": false,
+			"system": false,
+			"type": "String"
+		}
+    EOF
+    --user "test@liferay.com:learn"
+```
 
 Remove non-essential options that you might get from the API Explorer cURL commands. See the Document API Basics [cURL commands](https://github.com/liferay/liferay-learn/tree/master/docs/dxp/latest/en/content-authoring-and-management/documents-and-media/developer-guide/document-api-basics/resources/liferay-g9i6.zip/curl) for examples.
 

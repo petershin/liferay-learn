@@ -10,12 +10,6 @@ uuid: 6a6309ad-103c-40ae-b909-47beb96e5149
 ---
 # Solr
 
-```{toctree}
-:maxdepth: 3
-
-solr/solr-limitations.md
-solr/installing-solr.md
-```
 !!! warning 
     Solr is in [maintenance mode](../../installation-and-upgrades/upgrading-liferay/reference/maintenance-mode-and-deprecations-in-7-4.md#features-moved-to-maintenance-mode-in-74) in Liferay 7.4.
 

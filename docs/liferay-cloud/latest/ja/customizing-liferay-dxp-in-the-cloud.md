@@ -104,18 +104,6 @@ Liferay DXPには、コンテンツを構築、管理、Webにデプロイする
 * [Liferay DXPサービスの設定](./customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.md)
 * [Liferay Cloudコンソールによる変更のデプロイ](updating-services-in-liferay-paas/deploying-changes-via-the-liferay-cloud-console.md)
 
-```{toctree}
-:maxdepth: 1
-
-customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/deploying-to-the-liferay-service.md
-customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/updating-your-dxp-instance-to-a-new-minor-version.md
-customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.md
-customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/liferay-service-environment-variables.md
-customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/setting-up-clustering-in-liferay-cloud.md
-customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/using-the-mysql-client.md
-customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/upgrading-your-liferay-dxp-instance.md
-```
-
 ```{raw} html
 :file: landingpage_template.html
 ```

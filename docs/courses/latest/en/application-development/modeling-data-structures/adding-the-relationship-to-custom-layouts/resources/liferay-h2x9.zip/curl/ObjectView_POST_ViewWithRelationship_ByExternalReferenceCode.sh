@@ -1,9 +1,6 @@
 curl \
 	"http://localhost:8080/o/object-admin/v1.0/object-definitions/by-external-reference-code/C_APPLICATION_EVALUATION/object-views" \
-	--header "Content-Type: application/json" \
-	--request "POST" \
-	--user "test@liferay.com:learn" \
-	--data-binary @- << EOF
+	--data-raw '
 		{
 			"defaultObjectView": true,
 			"name": {
@@ -63,5 +60,7 @@ curl \
 			],
 			"objectViewFilterColumns": [],
 			"objectViewSortColumns": []
-		}
-EOF
+		}' \
+	--header "Content-Type: application/json" \
+	--request "POST" \
+	--user "test@liferay.com:learn"

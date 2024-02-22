@@ -1,10 +1,7 @@
 # Bank Name
 curl \
 	"http://localhost:8080/o/object-admin/v1.0/object-definitions/by-external-reference-code/C_DISTRIBUTOR_APPLICATION/object-fields" \
-	--header "Content-Type: application/json" \
-	--request "POST" \
-	--user "test@liferay.com:learn" \
-	--data-binary @- << EOF
+	--data-raw '
 		{
 			"DBType": "String",
 			"businessType": "Text",
@@ -21,16 +18,15 @@ curl \
 			"state": false,
 			"system": false,
 			"type": "String"
-		}
-EOF
+		}' \
+	--header "Content-Type: application/json" \
+	--request "POST" \
+	--user "test@liferay.com:learn"
 
 # Bank Account Number
 curl \
 	"http://localhost:8080/o/object-admin/v1.0/object-definitions/by-external-reference-code/C_DISTRIBUTOR_APPLICATION/object-fields" \
-	--header "Content-Type: application/json" \
-	--request "POST" \
-	--user "test@liferay.com:learn" \
-	--data-binary @- << EOF
+	--data-raw '
 		{
 			"DBType": "String",
 			"businessType": "Text",
@@ -47,16 +43,15 @@ curl \
 			"state": false,
 			"system": false,
 			"type": "String"
-		}"
-EOF
+		}' \
+	--header "Content-Type: application/json" \
+	--request "POST" \
+	--user "test@liferay.com:learn"
 
 # Bank Phone Number
 curl \
 	"http://localhost:8080/o/object-admin/v1.0/object-definitions/by-external-reference-code/C_DISTRIBUTOR_APPLICATION/object-fields" \
-	--header "Content-Type: application/json" \
-	--request "POST" \
-	--user "test@liferay.com:learn" \
-	--data-binary @- << EOF
+	--data-raw '
 		{
 			"DBType": "String",
 			"businessType": "Text",
@@ -73,16 +68,15 @@ curl \
 			"state": false,
 			"system": false,
 			"type": "String"
-		}
-EOF
+		}' \
+	--header "Content-Type: application/json" \
+	--request "POST" \
+	--user "test@liferay.com:learn"
 
 # Bank Address Line One
 curl \
 	"http://localhost:8080/o/object-admin/v1.0/object-definitions/by-external-reference-code/C_DISTRIBUTOR_APPLICATION/object-fields" \
-	--header "Content-Type: application/json" \
-	--request "POST" \
-	--user "test@liferay.com:learn" \
-	--data-binary @- << EOF
+	--data-raw '
 		{
 			"DBType": "String",
 			"businessType": "Text",
@@ -99,16 +93,15 @@ curl \
 			"state": false,
 			"system": false,
 			"type": "String"
-		}
-EOF
+		}' \
+	--header "Content-Type: application/json" \
+	--request "POST" \
+	--user "test@liferay.com:learn"
 
 # Bank Address Line Two
 curl \
 	"http://localhost:8080/o/object-admin/v1.0/object-definitions/by-external-reference-code/C_DISTRIBUTOR_APPLICATION/object-fields" \
-	--header "Content-Type: application/json" \
-	--request "POST" \
-	--user "test@liferay.com:learn" \
-	--data-binary @- << EOF
+	--data-raw '
 		{
 			"DBType": "String",
 			"businessType": "Text",
@@ -125,16 +118,15 @@ curl \
 			"state": false,
 			"system": false,
 			"type": "String"
-		}
-EOF
+		}' \
+	--header "Content-Type: application/json" \
+	--request "POST" \
+	--user "test@liferay.com:learn"
 
 # Bank City
 curl \
 	"http://localhost:8080/o/object-admin/v1.0/object-definitions/by-external-reference-code/C_DISTRIBUTOR_APPLICATION/object-fields" \
-	--header "Content-Type: application/json" \
-	--request "POST" \
-	--user "test@liferay.com:learn" \
-	--data-binary @- << EOF
+	--data-raw '
 		{
 			"DBType": "String",
 			"businessType": "Text",
@@ -151,16 +143,15 @@ curl \
 			"state": false,
 			"system": false,
 			"type": "String"
-		}
-EOF
+		}' \
+	--header "Content-Type: application/json" \
+	--request "POST" \
+	--user "test@liferay.com:learn"
 
 # Bank State, Province, Region
 curl \
 	"http://localhost:8080/o/object-admin/v1.0/object-definitions/by-external-reference-code/C_DISTRIBUTOR_APPLICATION/object-fields" \
-	--header "Content-Type: application/json" \
-	--request "POST" \
-	--user "test@liferay.com:learn" \
-	--data-binary @- << EOF
+	--data-raw '
 		{
 			"DBType": "String",
 			"businessType": "Text",
@@ -177,16 +168,15 @@ curl \
 			"state": false,
 			"system": false,
 			"type": "String"
-		}
-EOF
+		}' \
+	--header "Content-Type: application/json" \
+	--request "POST" \
+	--user "test@liferay.com:learn"
 
 # Bank ZIP, Postal Code
 curl \
 	"http://localhost:8080/o/object-admin/v1.0/object-definitions/by-external-reference-code/C_DISTRIBUTOR_APPLICATION/object-fields" \
-	--header "Content-Type: application/json" \
-	--request "POST" \
-	--user "test@liferay.com:learn" \
-	--data-binary @- << EOF
+	--data-raw '
 		{
 			"DBType": "String",
 			"businessType": "Text",
@@ -203,16 +193,15 @@ curl \
 			"state": false,
 			"system": false,
 			"type": "String"
-		}
-EOF
+		}' \
+	--header "Content-Type: application/json" \
+	--request "POST" \
+	--user "test@liferay.com:learn"
 
 # Bank Country
 curl \
 	"http://localhost:8080/o/object-admin/v1.0/object-definitions/by-external-reference-code/C_DISTRIBUTOR_APPLICATION/object-fields" \
-	--header "Content-Type: application/json" \
-	--request "POST" \
-	--user "test@liferay.com:learn" \
-	--data-binary @- << EOF
+	--data-raw '
 		{
 			"DBType": "String",
 			"businessType": "Text",
@@ -229,5 +218,7 @@ curl \
 			"state": false,
 			"system": false,
 			"type": "String"
-		}
-EOF
+		}' \
+	--header "Content-Type: application/json" \
+	--request "POST" \
+	--user "test@liferay.com:learn"

@@ -1,10 +1,7 @@
 # Business Name
 curl \
 	"http://localhost:8080/o/object-admin/v1.0/object-definitions/by-external-reference-code/C_DISTRIBUTOR_APPLICATION/object-fields" \
-	--header "Content-Type: application/json" \
-	--request "POST" \
-	--user "test@liferay.com:learn" \
-	--data-binary @- << EOF
+	--data-raw '
 		{
 			"DBType": "String",
 			"businessType": "Text",
@@ -21,16 +18,15 @@ curl \
 			"state": false,
 			"system": false,
 			"type": "String"
-		}
-EOF
+		}' \
+	--header "Content-Type: application/json" \
+	--request "POST" \
+	--user "test@liferay.com:learn"
 
 # Business Website
 curl \
 	"http://localhost:8080/o/object-admin/v1.0/object-definitions/by-external-reference-code/C_DISTRIBUTOR_APPLICATION/object-fields" \
-	--header "Content-Type: application/json" \
-	--request "POST" \
-	--user "test@liferay.com:learn" \
-	--data-binary @- << EOF
+	--data-raw '
 		{
 			"DBType": "String",
 			"businessType": "Text",
@@ -47,16 +43,15 @@ curl \
 			"state": false,
 			"system": false,
 			"type": "String"
-		}
-EOF
+		}' \
+	--header "Content-Type: application/json" \
+	--request "POST" \
+	--user "test@liferay.com:learn"
 
 # Business Established Date
 curl \
 	"http://localhost:8080/o/object-admin/v1.0/object-definitions/by-external-reference-code/C_DISTRIBUTOR_APPLICATION/object-fields" \
-	--header "Content-Type: application/json" \
-	--request "POST" \
-	--user "test@liferay.com:learn" \
-	--data-binary @- << EOF
+	--data-raw '
 		{
 			"DBType": "Date",
 			"businessType": "Date",
@@ -73,16 +68,15 @@ curl \
 			"state": false,
 			"system": false,
 			"type": "Date"
-		}
-EOF
+		}' \
+	--header "Content-Type: application/json" \
+	--request "POST" \
+	--user "test@liferay.com:learn"
 
 # Business Employee Number
 curl \
 	"http://localhost:8080/o/object-admin/v1.0/object-definitions/by-external-reference-code/C_DISTRIBUTOR_APPLICATION/object-fields" \
-	--header "Content-Type: application/json" \
-	--request "POST" \
-	--user "test@liferay.com:learn" \
-	--data-binary @- << EOF
+	--data-raw '
 		{
 			"DBType": "Integer",
 			"businessType": "Integer",
@@ -99,16 +93,15 @@ curl \
 			"state": false,
 			"system": false,
 			"type": "Integer"
-		}
-EOF
+		}' \
+	--header "Content-Type: application/json" \
+	--request "POST" \
+	--user "test@liferay.com:learn"
 
 # Business Annual Revenue
 curl \
 	"http://localhost:8080/o/object-admin/v1.0/object-definitions/by-external-reference-code/C_DISTRIBUTOR_APPLICATION/object-fields" \
-	--header "Content-Type: application/json" \
-	--request "POST" \
-	--user "test@liferay.com:learn" \
-	--data-binary @- << EOF
+	--data-raw '
 		{
 			"DBType": "String",
 			"businessType": "Text",
@@ -125,17 +118,16 @@ curl \
 			"state": false,
 			"system": false,
 			"type": "String"
-		}
-EOF
+		}' \
+	--header "Content-Type: application/json" \
+	--request "POST" \
+	--user "test@liferay.com:learn"
 
 
 # Business Other Brands Offered
 curl \
 	"http://localhost:8080/o/object-admin/v1.0/object-definitions/by-external-reference-code/C_DISTRIBUTOR_APPLICATION/object-fields" \
-	--header "Content-Type: application/json" \
-	--request "POST" \
-	--user "test@liferay.com:learn" \
-	--data-binary @- << EOF
+	--data-raw '
 		{
 			"DBType": "Clob",
 			"businessType": "LongText",
@@ -157,16 +149,15 @@ curl \
 			"state": false,
 			"system": false,
 			"type": "Clob"
-		}
-EOF
+		}' \
+	--header "Content-Type: application/json" \
+	--request "POST" \
+	--user "test@liferay.com:learn"
 
 # Business Phone Number
 curl \
 	"http://localhost:8080/o/object-admin/v1.0/object-definitions/by-external-reference-code/C_DISTRIBUTOR_APPLICATION/object-fields" \
-	--header "Content-Type: application/json" \
-	--request "POST" \
-	--user "test@liferay.com:learn" \
-	--data-binary @- << EOF
+	--data-raw '
 		{
 			"DBType": "String",
 			"businessType": "Text",
@@ -183,16 +174,15 @@ curl \
 			"state": false,
 			"system": false,
 			"type": "String"
-		}
-EOF
+		}' \
+	--header "Content-Type: application/json" \
+	--request "POST" \
+	--user "test@liferay.com:learn"
 
 # Business Address Line One
 curl \
 	"http://localhost:8080/o/object-admin/v1.0/object-definitions/by-external-reference-code/C_DISTRIBUTOR_APPLICATION/object-fields" \
-	--header "Content-Type: application/json" \
-	--request "POST" \
-	--user "test@liferay.com:learn" \
-	--data-binary @- << EOF
+	--data-raw '
 		{
 			"DBType": "String",
 			"businessType": "Text",
@@ -209,16 +199,15 @@ curl \
 			"state": false,
 			"system": false,
 			"type": "String"
-		}
-EOF
+		}' \
+	--header "Content-Type: application/json" \
+	--request "POST" \
+	--user "test@liferay.com:learn"
 
 # Business Address Line Two
 curl \
 	"http://localhost:8080/o/object-admin/v1.0/object-definitions/by-external-reference-code/C_DISTRIBUTOR_APPLICATION/object-fields" \
-	--header "Content-Type: application/json" \
-	--request "POST" \
-	--user "test@liferay.com:learn" \
-	--data-binary @- << EOF
+	--data-raw '
 		{
 			"DBType": "String",
 			"businessType": "Text",
@@ -235,16 +224,15 @@ curl \
 			"state": false,
 			"system": false,
 			"type": "String"
-		}
-EOF
+		}' \
+	--header "Content-Type: application/json" \
+	--request "POST" \
+	--user "test@liferay.com:learn"
 
 # Business City
 curl \
 	"http://localhost:8080/o/object-admin/v1.0/object-definitions/by-external-reference-code/C_DISTRIBUTOR_APPLICATION/object-fields" \
-	--header "Content-Type: application/json" \
-	--request "POST" \
-	--user "test@liferay.com:learn" \
-	--data-binary @- << EOF
+	--data-raw '
 		{
 			"DBType": "String",
 			"businessType": "Text",
@@ -261,16 +249,15 @@ curl \
 			"state": false,
 			"system": false,
 			"type": "String"
-		}
-EOF
+		}' \
+	--header "Content-Type: application/json" \
+	--request "POST" \
+	--user "test@liferay.com:learn"
 
 # Business State/Province/Region
 curl \
 	"http://localhost:8080/o/object-admin/v1.0/object-definitions/by-external-reference-code/C_DISTRIBUTOR_APPLICATION/object-fields" \
-	--header "Content-Type: application/json" \
-	--request "POST" \
-	--user "test@liferay.com:learn" \
-	--data-binary @- << EOF
+	--data-raw '
 		{
 			"DBType": "String",
 			"businessType": "Text",
@@ -287,16 +274,15 @@ curl \
 			"state": false,
 			"system": false,
 			"type": "String"
-		}
-EOF
+		}' \
+	--header "Content-Type: application/json" \
+	--request "POST" \
+	--user "test@liferay.com:learn"
 
 # Business ZIP/Postal Code
 curl \
 	"http://localhost:8080/o/object-admin/v1.0/object-definitions/by-external-reference-code/C_DISTRIBUTOR_APPLICATION/object-fields" \
-	--header "Content-Type: application/json" \
-	--request "POST" \
-	--user "test@liferay.com:learn" \
-	--data-binary @- << EOF
+	--data-raw '
 		{
 			"DBType": "String",
 			"businessType": "Text",
@@ -313,16 +299,15 @@ curl \
 			"state": false,
 			"system": false,
 			"type": "String"
-		}
-EOF
+		}' \
+	--header "Content-Type: application/json" \
+	--request "POST" \
+	--user "test@liferay.com:learn"
 
 # Business Country
 curl \
 	"http://localhost:8080/o/object-admin/v1.0/object-definitions/by-external-reference-code/C_DISTRIBUTOR_APPLICATION/object-fields" \
-	--header "Content-Type: application/json" \
-	--request "POST" \
-	--user "test@liferay.com:learn" \
-	--data-binary @- << EOF
+	--data-raw '
 		{
 			"DBType": "String",
 			"businessType": "Text",
@@ -339,16 +324,15 @@ curl \
 			"state": false,
 			"system": false,
 			"type": "String"
-		}
-EOF
+		}' \
+	--header "Content-Type: application/json" \
+	--request "POST" \
+	--user "test@liferay.com:learn"
 
 # Business License Number
 curl \
 	"http://localhost:8080/o/object-admin/v1.0/object-definitions/by-external-reference-code/C_DISTRIBUTOR_APPLICATION/object-fields" \
-	--header "Content-Type: application/json" \
-	--request "POST" \
-	--user "test@liferay.com:learn" \
-	--data-binary @- << EOF
+	--data-raw '
 		{
 			"DBType": "String",
 			"businessType": "Text",
@@ -370,16 +354,15 @@ curl \
 			"state": false,
 			"system": false,
 			"type": "String"
-		}
-EOF
+		}' \
+	--header "Content-Type: application/json" \
+	--request "POST" \
+	--user "test@liferay.com:learn"
 
 # Business Resale Number
 curl \
 	"http://localhost:8080/o/object-admin/v1.0/object-definitions/by-external-reference-code/C_DISTRIBUTOR_APPLICATION/object-fields" \
-	--header "Content-Type: application/json" \
-	--request "POST" \
-	--user "test@liferay.com:learn" \
-	--data-binary @- << EOF
+	--data-raw '
 		{
 			"DBType": "String",
 			"businessType": "Text",
@@ -401,16 +384,15 @@ curl \
 			"state": false,
 			"system": false,
 			"type": "String"
-		}
-EOF
+		}' \
+	--header "Content-Type: application/json" \
+	--request "POST" \
+	--user "test@liferay.com:learn"
 
 # Business Tax ID Number
 curl \
 	"http://localhost:8080/o/object-admin/v1.0/object-definitions/by-external-reference-code/C_DISTRIBUTOR_APPLICATION/object-fields" \
-	--header "Content-Type: application/json" \
-	--request "POST" \
-	--user "test@liferay.com:learn" \
-	--data-binary @- << EOF
+	--data-raw '
 		{
 			"DBType": "String",
 			"businessType": "Text",
@@ -432,16 +414,15 @@ curl \
 			"state": false,
 			"system": false,
 			"type": "String"
-		}
-EOF
+		}' \
+	--header "Content-Type: application/json" \
+	--request "POST" \
+	--user "test@liferay.com:learn"
 
 # Business License
 curl \
 	"http://localhost:8080/o/object-admin/v1.0/object-definitions/by-external-reference-code/C_DISTRIBUTOR_APPLICATION/object-fields" \
-	--header "Content-Type: application/json" \
-	--request "POST" \
-	--user "test@liferay.com:learn" \
-	--data-binary @- << EOF
+	--data-raw '
 		{
 			"DBType": "Long",
 			"businessType": "Attachment",
@@ -479,16 +460,15 @@ curl \
 			"state": false,
 			"system": false,
 			"type": "Long"
-		}
-EOF
+		}' \
+	--header "Content-Type: application/json" \
+	--request "POST" \
+	--user "test@liferay.com:learn"
 
 # Business Proof of Insurance
 curl \
 	"http://localhost:8080/o/object-admin/v1.0/object-definitions/by-external-reference-code/C_DISTRIBUTOR_APPLICATION/object-fields" \
-	--header "Content-Type: application/json" \
-	--request "POST" \
-	--user "test@liferay.com:learn" \
-	--data-binary @- << EOF
+	--data-raw '
 		{
 			"DBType": "Long",
 			"businessType": "Attachment",
@@ -526,5 +506,7 @@ curl \
 			"state": false,
 			"system": false,
 			"type": "Long"
-		}
-EOF
+		}' \
+	--header "Content-Type: application/json" \
+	--request "POST" \
+	--user "test@liferay.com:learn"

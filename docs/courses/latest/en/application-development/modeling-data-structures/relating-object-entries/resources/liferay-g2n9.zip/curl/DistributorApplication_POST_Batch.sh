@@ -1,9 +1,6 @@
 curl \
 	"http://localhost:8080/o/c/distributorapplications/batch" \
-	--header "Content-Type: application/json" \
-	--request "POST" \
-	--user "test@liferay.com:learn" \
-	--data-binary @- << EOF
+	--data-raw '
 		[
 			{
 				"applicantEmail": "thelivingstone@maplemagic.com",
@@ -71,5 +68,7 @@ curl \
 				"primaryContactPhoneNumber": "+3 (333) 333-3333",
 				"primaryContactTitle": "Business Development Manager"
 			}
-		]
-EOF
+		]' \
+	--header "Content-Type: application/json" \
+	--request "POST" \
+	--user "test@liferay.com:learn"

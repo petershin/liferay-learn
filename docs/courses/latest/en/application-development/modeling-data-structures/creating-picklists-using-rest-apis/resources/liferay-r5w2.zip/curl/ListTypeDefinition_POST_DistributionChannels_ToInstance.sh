@@ -1,9 +1,6 @@
 curl \
 	"http://localhost:8080/o/headless-admin-list-type/v1.0/list-type-definitions" \
-	--header "Content-Type: application/json" \
-	--request "POST" \
-	--user "test@liferay.com:learn" \
-	--data-binary @- << EOF
+	--data-raw '
 		{
 			"externalReferenceCode": "LIST_DISTRIBUTION_CHANNELS",
 			"listTypeEntries": [
@@ -39,5 +36,7 @@ curl \
 			"name_i18n": {
 				"en-US": "Distribution Channels"
 			}
-		}
-EOF
+		}' \
+	--header "Content-Type: application/json" \
+	--request "POST" \
+	--user "test@liferay.com:learn"

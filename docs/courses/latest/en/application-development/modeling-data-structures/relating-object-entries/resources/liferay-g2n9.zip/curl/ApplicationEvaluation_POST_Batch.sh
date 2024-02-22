@@ -1,9 +1,6 @@
 curl \
 	"http://localhost:8080/o/c/applicationevaluations/batch" \
-	--header "Content-Type: application/json" \
-	--request "POST" \
-	--user "test@liferay.com:learn" \
-	--data-binary @- << EOF
+	--data-raw '
 		[
 			{
 				"assessmentScore": {
@@ -53,5 +50,7 @@ curl \
 				"recommendationCommentsRawText": "The applicant does not meet our standards.",
 				"recommendations": []
 			}
-		]
-EOF
+		]' \
+	--header "Content-Type: application/json" \
+	--request "POST" \
+	--user "test@liferay.com:learn"

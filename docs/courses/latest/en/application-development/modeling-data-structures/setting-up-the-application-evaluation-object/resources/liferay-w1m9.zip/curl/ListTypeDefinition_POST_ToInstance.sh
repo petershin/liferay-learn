@@ -1,9 +1,6 @@
 curl \
 	"http://localhost:8080/o/headless-admin-list-type/v1.0/list-type-definitions/batch" \
-	--header "Content-Type: application/json" \
-	--request "POST" \
-	--user "test@liferay.com:learn" \
-	--data-binary @- << EOF
+	--data-raw '
 		[
 			{
 				"externalReferenceCode": "LIST_ASSESSMENT_SCORES",
@@ -176,5 +173,7 @@ curl \
 					"en-US": "Decisions"
 				}
 			}
-		]
-EOF
+		]' \
+	--header "Content-Type: application/json" \
+	--request "POST" \
+	--user "test@liferay.com:learn"

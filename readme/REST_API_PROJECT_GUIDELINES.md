@@ -11,22 +11,22 @@ Here are the things to consider as you're creating REST API client projects.
 * [Opening access to a service](#opening-access-to-a-service)
 * [Developing cURL commands](#developing-cURL-commands)
 * [Developing Java clients](#developing-java-clients)
-	* [Researching resource methods](#researching-resource-methods)
-	* [Example: Posting a DocumentFolder](#example-posting-a-documentfolder)
-	* [Configuring dependencies](#configuring-dependencies)
-	* [Compiling classes](#compiling-classes)
-	* [Running classes](#running-classes)
+    * [Researching resource methods](#researching-resource-methods)
+    * [Example: Posting a DocumentFolder](#example-posting-a-documentfolder)
+    * [Configuring dependencies](#configuring-dependencies)
+    * [Compiling classes](#compiling-classes)
+    * [Running classes](#running-classes)
 * [Resource Titles and Values](#resource-titles-and-values)
-	* [Example Command Sequence](#example-command-sequence)
-	* [Use Unique Titles](#use-unique-titles)
-	* [PATCH Pattern](#patch-pattern)
-	* [PUT Pattern](#put-pattern)
+    * [Example Command Sequence](#example-command-sequence)
+    * [Use Unique Titles](#use-unique-titles)
+    * [PATCH Pattern](#patch-pattern)
+    * [PUT Pattern](#put-pattern)
 * [Formatting source code](#formatting-source-code)
 * [Updating permissions](#updating-permissions)
 * [Sending code for review](#sending-code-for-review)
 * [Appendix](#appendix)
-	* [POST using JSON data](#post-using-json-data)
-	* [POST using a multipart document](#post-using-a-multipart-document)
+    * [POST using JSON data](#post-using-json-data)
+    * [POST using a multipart document](#post-using-a-multipart-document)
 * [Additional information](#additional-information)
 
 Start exploring the REST APIs. 
@@ -39,56 +39,56 @@ The API Explorer is a UI for browsing Liferay REST APIs and trying them. Here's 
 
 1. Open the API Explorer at http://localhost:8080/o/api. The API Explorer appears.
 
-	![Liferay API Explorer](./REST_API_PROJECT_GUIDELINES/images/liferay-api-explorer.png)
+    ![Liferay API Explorer](./REST_API_PROJECT_GUIDELINES/images/liferay-api-explorer.png)
 
-	> **Tip:** Opening the API Explorer in a separate browser tab is convenient for signing back into Liferay if your session times out.
+    > **Tip:** Opening the API Explorer in a separate browser tab is convenient for signing back into Liferay if your session times out.
 
 1. View the various REST applications by clicking the *Rest Applications* menu in the top right. The menu lists the available applications.
 
-	![Rest Applications](./REST_API_PROJECT_GUIDELINES/images/rest-applications.png)
+    ![Rest Applications](./REST_API_PROJECT_GUIDELINES/images/rest-applications.png)
 
-	The headless-delivery/v1.0 application has popular application services for resources, such as BlogPosting, Document, and more. There are applications for user management, forms, app builder, and more. We'll explore DocumentFolder services in the headless-delivery/v1.0 application.
+    The headless-delivery/v1.0 application has popular application services for resources, such as BlogPosting, Document, and more. There are applications for user management, forms, app builder, and more. We'll explore DocumentFolder services in the headless-delivery/v1.0 application.
 
 1. Open the Headless Delivery services by clicking on *headless-delivery/v1.0* in the *Rest Applications* menu. The Headless Delivery API page appears.
 
-	![Resources](./REST_API_PROJECT_GUIDELINES/images/resources.png)
-	
-	Here's what the application page provides:
+    ![Resources](./REST_API_PROJECT_GUIDELINES/images/resources.png)
+    
+    Here's what the application page provides:
 
-	* Link to the application's [`openapi.json` file](https://swagger.io/docs/specification/basic-structure/). This document defines the entire API.
-	* Java client artifact JAR information. Your project's Java classes will depend on the REST application's client JAR. This is covered later in [Configuring Dependencies](#configuring-dependencies).
-	* Resource listing. The application's resources (e.g., BlogPostingImage, BlogPosting, etc.) are listed in alphabetical order. Each resource has an interface for examining the resource's services and schemas, and an interface for executing the service. 
-	* Schema listing. The *Schemas* section, after all the resources, lists each resource schema.
+    * Link to the application's [`openapi.json` file](https://swagger.io/docs/specification/basic-structure/). This document defines the entire API.
+    * Java client artifact JAR information. Your project's Java classes will depend on the REST application's client JAR. This is covered later in [Configuring Dependencies](#configuring-dependencies).
+    * Resource listing. The application's resources (e.g., BlogPostingImage, BlogPosting, etc.) are listed in alphabetical order. Each resource has an interface for examining the resource's services and schemas, and an interface for executing the service. 
+    * Schema listing. The *Schemas* section, after all the resources, lists each resource schema.
 
 1. In the resource listing, find *DocumentFolder* and click on it. The *DocumentFolder* service listing appears.
 
-	![DocumentFolder Services](./REST_API_PROJECT_GUIDELINES/images/document-folder-services.png)
+    ![DocumentFolder Services](./REST_API_PROJECT_GUIDELINES/images/document-folder-services.png)
 
-	Each row has an HTTP command and an endpoint URL. 
+    Each row has an HTTP command and an endpoint URL. 
 
-	| HTTP Command | Description |
-	| :----------- | :---------- |
-	| `GET` | Get a resource value or metadata about a resource |
-	| `POST` | Create a resource instance |
-	| `DELETE` | Remove a resource |
-	| `PATCH` | Update parts of a resource |
-	| `PUT` | Replace a resource |
+    | HTTP Command | Description |
+    | :----------- | :---------- |
+    | `GET` | Get a resource value or metadata about a resource |
+    | `POST` | Create a resource instance |
+    | `DELETE` | Remove a resource |
+    | `PATCH` | Update parts of a resource |
+    | `PUT` | Replace a resource |
 
 1. Click DocumentFolder's *GET /v1.0/sites/{sideId}/document-folders* service. The test interface appears.
 
-	![Test Inteface.](./REST_API_PROJECT_GUIDELINES/images/try-it-out.png)
+    ![Test Inteface.](./REST_API_PROJECT_GUIDELINES/images/try-it-out.png)
 
 1. Click *Try it out* and enter your site's ID (for example, `20121`) in the `siteId` field. See [Consuming REST Services](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services.html#identify-the-site-containing-the-data) for details on finding your site ID.
 
 1. Click *Execute* to invoke the service. The service responses appear in the *Responses* section below the *Execute* button.
 
-	![Site DocumentFolders Response](./REST_API_PROJECT_GUIDELINES/images/site-document-folders-response.png)
+    ![Site DocumentFolders Response](./REST_API_PROJECT_GUIDELINES/images/site-document-folders-response.png)
 
-	The *cURL* field shows the cURL command that was executed.
-	
-	> **Note:** You can base your cURL commands off of ones like these.
+    The *cURL* field shows the cURL command that was executed.
+    
+    > **Note:** You can base your cURL commands off of ones like these.
 
-	The service response *Response body* shows the site's DocumentFolder listing. In this example, the site has one DocumentFolder (i.e., `"totalCount": 1`) and the DocumentFolder's name is `Foo`  (i.e., `"name": "Foo"`).
+    The service response *Response body* shows the site's DocumentFolder listing. In this example, the site has one DocumentFolder (i.e., `"totalCount": 1`) and the DocumentFolder's name is `Foo`  (i.e., `"name": "Foo"`).
 
 Now that you've explored a resource in the API Explorer, you can explore and plan for demonstrating other Liferay REST APIs.
 
@@ -100,13 +100,13 @@ Use separate projects to demonstrate these types of services.
 
 * Fundamental services for a resource include using each HTTP command to demonstrate CRUD operations. (Required)
 
-	For example,
+    For example,
 
-	1. POST a [resource] instance to a site or other common location
-	1. GET the [resource] fields
-	1. PATCH the [resource] 
-	1. PUT another [resource] in its place
-	1. DELETE the [resource]
+    1. POST a [resource] instance to a site or other common location
+    1. GET the [resource] fields
+    1. PATCH the [resource] 
+    1. PUT another [resource] in its place
+    1. DELETE the [resource]
 
 * If your resource has "batch" services, demonstrate a sampling of them. Batch services involve creating or deleting multiple resource instances in one call. They typically involve input formats such as CSV, XLS, or JSON.
 
@@ -122,27 +122,27 @@ REST API client projects are similar to `liferay-learn` Java projects except the
 
 1. Create random project ID. Use the ID in place of `[xxxx]` in the project folder's name `liferay-[xxxx].zip`. The ID must be unique to the `liferay-learn` branch. You can generate the ID using this command:
 
-	```bash
-	tr -cd a-z1-9 < /dev/urandom \
-	 | head -c 1000 \
-	 | sed 's/.*\([a-z]\).*\([1-9]\).*\([a-z]\).*\([1-9]\).*/\1\2\3\4\n/'
-	```
+    ```bash
+    tr -cd a-z1-9 < /dev/urandom \
+     | head -c 1000 \
+     | sed 's/.*\([a-z]\).*\([1-9]\).*\([a-z]\).*\([1-9]\).*/\1\2\3\4\n/'
+    ```
 
-	Check the branch for any existing projects that already use the name. For example,
+    Check the branch for any existing projects that already use the name. For example,
 
-	```bash
-	find . -name liferay-xxxx.zip
-	````
+    ```bash
+    find . -name liferay-xxxx.zip
+    ````
 
 1. Create a path for your project folder, following this format:
 
-	``` 
-	[area]/developer-guide/api/[tutorial-name]/resources/liferay-[xxxx].zip
-	```
+    ``` 
+    [area]/developer-guide/api/[tutorial-name]/resources/liferay-[xxxx].zip
+    ```
 
-	For example, here is the project path for the *Document API Basics* tutorial:
+    For example, here is the project path for the *Document API Basics* tutorial:
 
-	[`documents-and-media/developer-guide/document-api-basics/resources/liferay-g9i6.zip`](https://github.com/liferay/liferay-learn/tree/master/docs/dxp/latest/en/content-authoring-and-management/documents-and-media/developer-guide/document-api-basics/resources/liferay-g9i6.zip)
+    [`documents-and-media/developer-guide/document-api-basics/resources/liferay-g9i6.zip`](https://github.com/liferay/liferay-learn/tree/master/docs/dxp/latest/en/content-authoring-and-management/documents-and-media/developer-guide/document-api-basics/resources/liferay-g9i6.zip)
 
 1. In your `liferay-[xxxx].zip` folder, create a `curl` folder for cURL commands and a `java` folder for Java client classes.
 
@@ -206,7 +206,7 @@ For the purposes of readers understanding your API calls, always use the fully s
 
 ```bash
 curl \
-	"http://localhost:8080/o/headless-delivery/v1.0/sites/${1}/document-folders" \
+    "http://localhost:8080/o/headless-delivery/v1.0/sites/${1}/document-folders" \
 	--data "{\"name\": \"Goo\"}" \
 	--header "Content-Type: application/json" \
 	--request POST \
@@ -226,9 +226,9 @@ If the data you're posting is more than one line of JSON, use the `--data-raw` f
 
 ```bash
 curl \
-	"http://localhost:8080/o/object-admin/v1.0/object-definitions/by-external-reference-code/C_DISTRIBUTOR_APPLICATION/object-fields" \
-	--data-raw '
-		{
+    "http://localhost:8080/o/object-admin/v1.0/object-definitions/by-external-reference-code/C_DISTRIBUTOR_APPLICATION/object-fields" \
+    --data-raw '
+        {
 			"DBType": "String",
 			"businessType": "Text",
 			"externalReferenceCode": "a3ebb708-d369-02c0-9baf-f041f9657b9c",
@@ -244,8 +244,8 @@ curl \
 			"state": false,
 			"system": false,
 			"type": "String"
-		}'
-	--user "test@liferay.com:learn"
+		} '
+    --user "test@liferay.com:learn"
 ```
 
 Remove non-essential options that you might get from the API Explorer cURL commands. See the Document API Basics [cURL commands](https://github.com/liferay/liferay-learn/tree/master/docs/dxp/latest/en/content-authoring-and-management/documents-and-media/developer-guide/document-api-basics/resources/liferay-g9i6.zip/curl) for examples.
@@ -345,7 +345,7 @@ Create an `update_example.sh` script:
 1. Copy the content above into your script.
 1. Replace `"com.liferay.headless.delivery.client"` with the name of the REST API client JAR your services require.
 
-	> **Note:** Your REST application's page in *API Explorer* mentions the client artifact JAR.
+    > **Note:** Your REST application's page in *API Explorer* mentions the client artifact JAR.
 
 1. On a command line, go to `liferay-learn/docs` and initialize your API project by running the `update_examples.sh` script, passing in your project ID. For example,
 
@@ -388,28 +388,28 @@ Example cURL scripts and Java classes should POST, PATCH, and PUT resource insta
 
 * Titles (e.g., message board message headline, web content title, etc) should be based on the [WWII CCB (ICAO) phonetic alphabet](https://en.wikipedia.org/wiki/Allied_military_phonetic_spelling_alphabets#WWII_CCB_(ICAO)_and_NATO_alphabets).
 
-	* `Able`
-	* `Baker`
-	* `Charlie`
-	* etc.
+    * `Able`
+    * `Baker`
+    * `Charlie`
+    * etc.
 
 * Values (all other attributes) should use these values:
-	* `Foo`
-	* `Bar`
-	* `Goo`
+    * `Foo`
+    * `Bar`
+    * `Goo`
 
 ### Example Command Sequence
 
 The following pseudo code demonstrates using the title and value patterns on the `MessageBoardMessage` resource type:
 
 1. Run cURL commands
-	1. POST title `Able`, value `Foo`
-	1. PATCH to value `Bar`
-	1. PUT title `Baker`, value `Goo`
+    1. POST title `Able`, value `Foo`
+    1. PATCH to value `Bar`
+    1. PUT title `Baker`, value `Goo`
 1. Run Java classes
-	1. POST title `Charlie`, value `Foo`
-	1. PATCH to value `Bar`
-	1. PUT title `Dog`, value `Goo`
+    1. POST title `Charlie`, value `Foo`
+    1. PATCH to value `Bar`
+    1. PUT title `Dog`, value `Goo`
 
 For complete examples, please see the [Accounts API](https://github.com/liferay/liferay-learn/tree/master/docs/dxp/latest/en/users-and-permissions/developer-guide/accounts-api-basics/resources/liferay-t5p9.zip) and the [Message Boards API](https://github.com/liferay/liferay-learn/tree/master/docs/dxp/latest/en/collaboration-and-social/message-boards/developer-guide/messageboard-api-basics/resources/liferay-y3a6.zip).
 

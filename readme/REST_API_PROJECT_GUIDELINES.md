@@ -210,7 +210,7 @@ curl \
 	--data "{\"name\": \"Goo\"}" \
 	--header "Content-Type: application/json" \
 	--request POST \
-	-user "test@liferay.com:test"
+	--user "test@liferay.com:test"
 ```
 
 | Line | Description |

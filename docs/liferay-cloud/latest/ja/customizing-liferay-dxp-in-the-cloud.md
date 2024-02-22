@@ -107,7 +107,3 @@ Liferay DXPには、コンテンツを構築、管理、Webにデプロイする
 ```{raw} html
 :file: landingpage_template.html
 ```
-
-```{raw} html
-:file: customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/landing.html
-```

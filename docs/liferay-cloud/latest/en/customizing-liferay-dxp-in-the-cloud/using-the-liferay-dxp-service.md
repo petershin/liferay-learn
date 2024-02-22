@@ -110,7 +110,3 @@ Liferay DXP has many powerful features to build, manage, and deploy content to t
 ```{raw} html
 :file: landingpage_template.html
 ```
-
-```{raw} html
-:file: customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/landing.html
-```

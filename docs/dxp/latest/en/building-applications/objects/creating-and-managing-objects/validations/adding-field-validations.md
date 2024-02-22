@@ -179,7 +179,7 @@ System objects have their own default fields, though there is some overlap with 
 
 {bdg-secondary}`Liferay DXP 2024.Q1+/GA112+`
 
-To add composite key validation in your object, first enable it using its release feature flag. Go to *Global Menu* (![Global Menu](../../../../images/icon-applications-menu.png)) &rarr; *Control Panel* &rarr; *Instance Settings* &rarr; *Feature Flags*. Open the *Release* section and enable *Improve Field Validations (LPS-187854)*.
+To add composite key validation in your object, first enable its release feature flag. Go to *Global Menu* (![Global Menu](../../../../images/icon-applications-menu.png)) &rarr; *Control Panel* &rarr; *Instance Settings* &rarr; *Feature Flags*. Open the *Release* section and enable *Improve Field Validations (LPS-187854)*.
 
 Unique composite keys are required in some data models and applications. For example, an orders object can require that each combination of customer ID and order date are unique in the system. Once enforced, this composite key can be used to look up and work with unique order entries. The Unique Composite Key validation ensures that a combination of fields is unique in the scope of the object. Site scoped objects can have unique composite keys in the site, while instance scoped objects can have unique composite keys throughout the instance.
 
@@ -187,9 +187,17 @@ You can use text, integer, and picklist fields in composite keys. You can also u
 
 ![You can use relationship fields in composite keys.](./adding-field-validations/images/10.png)
 
-You cannot use any field that already has data in a composite key validation.
+You cannot add a field to a composite key if it already has data. 
 
 ![Fields with published data cannot be used in composite keys.](./adding-field-validations/images/11.png)
+
+Certain actions are only supported in draft objects:
+
+| Action | Object Status | Supported |
+|:---|:---|:---|
+| Delete the validation | Draft<br><br>Published | &#10004;<br><br>&#10004; |
+| Remove a field from the validation | Draft<br><br>Published | &#10004;<br><br>&#10008; |
+| Delete a field that's being used in a validation| Draft<br><br>Published |  &#10008;<br><br>&#10008; |
 
 ## Related Topics
 

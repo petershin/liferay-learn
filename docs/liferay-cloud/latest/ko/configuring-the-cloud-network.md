@@ -11,7 +11,6 @@ taxonomy-category-names:
 - Cloud Platform Administration
 - Cloud Platform Networking
 - Liferay PaaS
-uuid: b7876b94-de3c-4a47-9aef-a6276f068518
 ---
 # Configuring the Cloud Network
 

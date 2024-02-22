@@ -14,7 +14,7 @@ taxonomy-category-names:
 
 {bdg-secondary}`Liferay 7.4+`
 
-Object validations set rules for determining valid field inputs and are defined using either [Groovy scripts](./validations/adding-field-validations.md#using-groovy-validations) or [Liferay expressions](./validations/adding-field-validations.md#using-expression-builder-validations). When triggered, the validation checks for valid field inputs according to defined conditions and displays an error message for invalid inputs.
+Object validations set rules for determining valid field inputs. You can define validations with [Groovy scripts](./validations/adding-field-validations.md#using-groovy-validations) or [Liferay expressions](./validations/adding-field-validations.md#using-expression-builder-validations), or specify a [Composite Key validation](./validations/adding-field-validations.md#using-composite-key-validations). When triggered, the validation checks for valid field inputs according to defined conditions and displays an error message for invalid inputs.
 
 ![Add field validations to object definitions.](./validations/images/01.png)
 

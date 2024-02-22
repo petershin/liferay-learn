@@ -13,6 +13,8 @@ taxonomy-category-names:
 
 Validations set rules for determining valid field entries. Each validation has its own trigger, conditions, and error message, which you can set via the Objects UI. You can define validations using [Groovy scripts](#using-groovy-validations) or [Liferay expressions](#using-expression-builder-validations).
 
+A third type of validation is available as of Liferay DXP 2024.Q1+/GA112+: [Composite Key validation](#using-composite-key-validations). Use composite key validations to require that a combination of two fields is unique.
+
 ![Create validations for custom and system object fields.](./adding-field-validations/images/01.png)
 
 !!! note
@@ -26,7 +28,7 @@ To add a validation,
 
 1. Go to the *Validations* tab and click *Add* ( ![Add Button](../../../../images/icon-add.png) ).
 
-1. Enter a *label* and select a validation type: *Groovy* or *Expression Builder*.
+1. Enter a *label* and select a validation type: *Groovy*, *Expression Builder*, or *Composite Key*.
 
    If you've deployed object validation rule client extensions to your instance, they also appear as options.
 
@@ -44,7 +46,9 @@ To add a validation,
 
    Each validation can only have one trigger event.
 
-1. Go to the *Conditions* tab and add conditions to the validation.
+1. Add validation rules. 
+
+   For Groovy and Expression Builder validations, go to the *Conditions* tab and add conditions to the validation.
 
    Conditions can include multiple fields and functions for performing complex logic.
 
@@ -56,6 +60,10 @@ To add a validation,
 
    !!! important
        Groovy script validations are only available for Liferay Experience Cloud Self-Managed and Liferay DXP Self-Hosted.
+
+   To set up composite key validations, go to the *Unique Composite Key* tab, then select the fields to use as a composite key. See [Using Composite Key Validations](#using-composite-key-validations) for more information.
+
+   ![Choose the fields to use as a composite key.](./adding-field-validations/images/09.png)
 
 1. Enter a localizable *error message*. This message appears whenever the validation is triggered, and field entries do not meet one or more of the defined conditions.
 
@@ -166,6 +174,22 @@ Below are all default fields available for custom objects:
 | `uuid`                  | Unique universal ID for the entry              |
 
 System objects have their own default fields, though there is some overlap with the above chart.
+
+## Using Composite Key Validations
+
+{bdg-secondary}`Liferay DXP 2024.Q1+/GA112+`
+
+To add composite key validation in your object, first enable it using its release feature flag. Go to *Global Menu* (![Global Menu](../../../../images/icon-applications-menu.png)) &rarr; *Control Panel* &rarr; *Instance Settings* &rarr; *Feature Flags*. Open the *Release* section and enable *Improve Field Validations (LPS-187854)*.
+
+Unique composite keys are required in some data models and applications. For example, an orders object can require that each combination of customer ID and order date are unique in the system. Once enforced, this composite key can be used to look up and work with unique order entries. The Unique Composite Key validation ensures that a combination of fields is unique in the scope of the object. Site scoped objects can have unique composite keys in the site, while instance scoped objects can have unique composite keys throughout the instance.
+
+You can use text, integer, and picklist fields in composite keys. You can also use relationship fields on the child side of a one to many relationship.
+
+![You can use relationship fields in composite keys.](./adding-field-validations/images/10.png)
+
+You cannot use any field that already has data in a composite key validation.
+
+![Fields with published data cannot be used in composite keys.](./adding-field-validations/images/11.png)
 
 ## Related Topics
 

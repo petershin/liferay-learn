@@ -222,12 +222,12 @@ curl \
 | *\<tab\>* `"http://..." \` | The endpoint URL has its own line. |
 | *\<tab\>* `--user "..."` | The last line has no backslash. |
 
-If the data you're posting is more than one line of JSON, use the `--data-binary` flag: 
+If the data you're posting is more than one line of JSON, use the `--data-raw` flag: 
 
 ```bash
 curl \
     "http://localhost:8080/o/object-admin/v1.0/object-definitions/by-external-reference-code/C_DISTRIBUTOR_APPLICATION/object-fields" \
-    --data-binary @- <<EOF
+    --data-raw '
         {
 			"DBType": "String",
 			"businessType": "Text",
@@ -244,8 +244,7 @@ curl \
 			"state": false,
 			"system": false,
 			"type": "String"
-		}
-    EOF
+		} '
     --user "test@liferay.com:learn"
 ```
 

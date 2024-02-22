@@ -6,11 +6,6 @@ toc:
   - ./configuring-the-cloud-network/connecting-a-vpn-server-to-liferay-cloud.md
   - ./configuring-the-cloud-network/custom-domains.md
   - ./configuring-the-cloud-network/load-balancer.md
-taxonomy-category-names:
-- Cloud
-- Cloud Platform Administration
-- Cloud Platform Networking
-- Liferay PaaS
 ---
 # Configuring the Cloud Network
 

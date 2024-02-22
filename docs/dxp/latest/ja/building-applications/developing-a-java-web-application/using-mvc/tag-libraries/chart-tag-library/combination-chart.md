@@ -1,10 +1,3 @@
----
-taxonomy-category-names:
-- Development and Tooling
-- Java Development
-- Liferay Self-Hosted
-- Liferay PaaS
----
 # Combination Charts
 
 組合せチャートには、他のチャートと少し違う点がある。組合せチャートでは、各データセットの表現タイプを定義しなければならない： `AREA`、`AREA_SPLINE`、`AREA_STEP`、`BAR`、`BUBBLE`、`DONUT`、`GAUGE`、`LINE`、`PIE`、`SCATTER`、`SPLINE`、`STEP`である。 コンビネーションチャートの各データセットは、 [`TypedMultiValueColumn` オブジェクトのインスタンスです](https://resources.learn.liferay.com/reference/latest/en/dxp/javadocs/modules/apps/frontend-taglib/com.liferay.frontend.taglib.chart/com/liferay/frontend/taglib/chart/model/TypedMultiValueColumn.html) 。 各オブジェクトは、データのID、表現タイプ、および値を受け取ります。 次の手順に従って、組み合わせグラフを使用するようにポートレットを構成します。

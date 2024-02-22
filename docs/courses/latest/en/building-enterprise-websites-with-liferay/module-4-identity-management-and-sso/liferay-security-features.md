@@ -13,9 +13,9 @@ Clarity understands the importance of requiring strong passwords to make user lo
 
 1. Click the options icon next to the default password policy and click _Edit_.
 
-1. Click the toggle to enable syntax checking and change the minimum symbols value from 0 to 1.
+1. Under `Password Syntax Checking`, click the toggle to enable syntax checking and change the minimum symbols value from 0 to 1.
 
-1. Click the toggle to enable expiration and set the maximum age to 8 weeks. 
+1. Under `Password Expiration`, click the toggle to enable expiration and set the maximum age to 8 weeks. 
 
    ![Enable syntax checking and expiration.](./liferay-security-features/images/01.png)
 
@@ -25,11 +25,11 @@ Clarity can make further changes by creating custom password policies for differ
 
 ## Enabling Multi-factor Authentication
 
-Clarity also wants to require multi-factor authentication (MFA) for users. They want logins to be authenticated though an email one-time password. To enable this MFA,
+Clarity also wants to require multi-factor authentication (MFA) for users. They want logins to be authenticated through an email one-time password. To enable this MFA,
 
 1. Navigate to _Control Panel_ &rarr; _Instance Settings_. Click on _Multi-Factor Authentication_ under the security section.
 
-1. Click the _Enabled_ checkbox and click _Update_.
+1. Click the _Enabled_ checkbox and click _Save/Update_.
 
    ![Enable the email one-time password.](./liferay-security-features/images/02.png)
 
@@ -41,7 +41,7 @@ Clarity also wants to require multi-factor authentication (MFA) for users. They 
 In addition to email one-time password, Liferay supports other types of MFA:
 
 * [IP address checker](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/multi-factor-authentication/multi-factor-authentication-checkers#ip-address-mfa-checker) - set up which IP addresses are authorized to log in to Liferay
-* [Time-based one-time password (OTP)](https://learn.liferay.com/web/guest/w/dxp/installation-and-upgrades/securing-liferay/multi-factor-authentication/multi-factor-authentication-checkers#time-based-one-time-password-mfa-checker) - Liferay provides a QR code to be scanned to be used with a time-based password app like Google Authenticator
+* [Time-based one-time password (OTP)](https://learn.liferay.com/web/guest/w/dxp/installation-and-upgrades/securing-liferay/multi-factor-authentication/multi-factor-authentication-checkers#time-based-one-time-password-mfa-checker) - Liferay provides a QR code to be scanned to configure a time-based password app like Google Authenticator
 * [Fast Identity Online (FIDO) password](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/multi-factor-authentication/fast-identity-online-2) - users can utilize their FIDO compliant devices such as fingerprint readers or USB keys
 
 See our documentation about [securing Liferay](https://learn.liferay.com/web/guest/w/dxp/installation-and-upgrades/securing-liferay) for a full explanation about each MFA option as well as the other security features that are available.

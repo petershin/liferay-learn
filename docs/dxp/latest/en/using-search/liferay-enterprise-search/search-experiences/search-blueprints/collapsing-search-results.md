@@ -8,25 +8,26 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: 46e00046-f0b0-4700-b73f-6d75d914800d
 ---
+
 # Collapsing Search Results
 
 {bdg-secondary}`Liferay DXP 2023.Q4+`
 
-You can collapse search results with an identical keyword field value. For example, an internal blog titled "Employee of the Month" produces multiple identically titled search results. To show just the best matching result, use the `collapse` configuration. See Elasticsearch's [Collapse Search Results](https://www.elastic.co/guide/en/elasticsearch/reference/current/collapse-search-results.html) for details on how the feature works.
+You can collapse search results that have identical keyword field values. For example, an internal blog titled "Employee of the Month" produces multiple, identically titled search results. To show only the best matching result, use the `collapse` configuration. See Elasticsearch's [Collapse Search Results](https://www.elastic.co/guide/en/elasticsearch/reference/current/collapse-search-results.html) for details on how the feature works.
 
 ![There are multiple blogs about the employee of the month.](./collapsing-search-results/images/01.png)
 
-The number of total hits in the search response does not account for collapsing. Therefore, collapsing results causes inaccurate result counts and pagination. For example, imagine a search query that returns 100 results over 5 pages, where 90 results have identical titles. Collapsing these results by the title field results in this situation on Liferay's search page:
+By default, collapsing results causes inaccurate result counts and pagination, because the total hits in the search response does not account for collapsing. For example, imagine a search query that returns 100 results over 5 pages, where 90 results have identical titles. Collapsing these results by the title field results in this situation on Liferay's search page:
 
-1. The search user sees 1 page of results with 11 results: the top scoring collapsed result and the 10 remaining unique results.
+1. The search user sees one page of results with 11 results: the top scoring collapsed result and the 10 remaining unique results.
 1. The displayed results count is 100.
 1. The displayed pages count is 5.
 
-   ![Result counts and pagination don't work well with collapsed results.](./collapsing-search-results/images/03.png)
+![Result counts and pagination don't work well with collapsed results.](./collapsing-search-results/images/03.png)
+
+You can fix this with a [Search Blueprint](./creating-and-managing-search-blueprints.md).
 
 ## Example: Collapse Results by Localized Title
-
-To collapse search results with an identical localized title,
 
 1. Open _Site Menu_ (![Site Menu](../../../../images/icon-product-menu.png)) &rarr; _Content & Data_ &rarr; _Blogs_, and create three blogs with these field values:
 
@@ -71,7 +72,7 @@ To collapse search results with an identical localized title,
 
 1. Click _New_, enter the title _Collapse by localized title_, and click _Create_.
 
-1. Open the [preview window](./creating-and-managing-search-blueprints.md#testing-a-blueprint-with-the-preview-sidebar) and search for _employee_. Three results appear.
+1. Open the [preview window](./creating-and-managing-search-blueprints.md#testing-a-blueprint-with-the-preview-sidebar) and search for `employee`. Three results appear.
 
 1. Open _Configuration_ and enter this in the Advanced Configuration field:
 

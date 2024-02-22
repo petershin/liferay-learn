@@ -158,15 +158,15 @@ To export a front-end client extension,
 
 1. Click *Actions* (![Actions icon](../../images/icon-actions.png)) next to the client extension you want to export and select *Export as JSON*.
 
-The client extension is exported in JSON format and it's downloaded automatically into your machine.
+The client extension is exported in JSON format and it's downloaded automatically onto your machine.
 
 To import a front-end client extension,
 
-1. In the *Client Extensions* application under Custom Apps, click *Options* (![Options icon](../../images/icon-options.png)) next to the Global Menu and select *Import*.
+1. In the Client Extensions application under Custom Apps, click *Options* (![Options icon](../../images/icon-options.png)) next to the Global Menu and select *Import*.
 
-1. A modal opens prompting you to select a file. Select the JSON file containing the client extension and click *Import*.
+1. Select the JSON file containing the client extension and click *Import*.
 
-The client extension is imported and it appears in the client extensions list.
+The client extension is imported, and it appears in the client extensions list.
 
 ![Export/Import front-end client extensions configured from the UI.](./front-end-client-extensions/images/03.png)
 

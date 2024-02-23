@@ -97,13 +97,13 @@ Configure your Liferay service's Tomcat server by deploying files in the appropr
 
 ## Environment Variables
 
-The Liferay service in Liferay Cloud uses [environment variables](../reference/defining-environment-variables.md) (or [secrets](../tuning-security-settings/managing-secure-environment-variables-with-secrets.md)) in place of some configurations that are done differently with an on-premises instance, such as JVM memory settings or database connection settings. Environment variables can also be used to [override or replace portal properties](./liferay-service-environment-variables.md#overriding-portal-properties).
+The Liferay service in Liferay Cloud uses [environment variables](../../reference/defining-environment-variables.md) (or [secrets](../../tuning-security-settings/managing-secure-environment-variables-with-secrets.md)) in place of some configurations that are done differently with an on-premises instance, such as JVM memory settings or database connection settings. Environment variables can also be used to [override or replace portal properties](./liferay-service-environment-variables.md#overriding-portal-properties).
 
 See [Liferay Service Environment Variables](./liferay-service-environment-variables.md) for more information.
 
 ## Related Topics
 
-* [Customizing Liferay DXP in the Cloud](../customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service.md)
+* [Customizing Liferay DXP in the Cloud](../using-the-liferay-dxp-service.md)
 * [Enabling Clustering in Liferay Cloud](./setting-up-clustering-in-liferay-cloud.md)
 * [Portal Properties](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/reference/portal-properties.html)
 * [Liferay Service Environment Variables](./liferay-service-environment-variables.md)

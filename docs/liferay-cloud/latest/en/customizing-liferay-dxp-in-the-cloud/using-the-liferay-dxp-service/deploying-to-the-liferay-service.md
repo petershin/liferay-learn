@@ -10,7 +10,7 @@ uuid: 5cc0862d-ae06-4a61-ac47-953fd1e914c3
 
 As with other services, deploying custom additions involves adding your configurations or files to the appropriate locations in your Git repository. However, deploying the Liferay service slightly differs from deploying other services.
 
-The Liferay service makes use of a [Liferay workspace](https://learn.liferay.com/dxp/latest/en/building-applications/tooling/liferay-workspace/what-is-liferay-workspace.html) to give you more options to add [deployable files](#deploying-themes-portlets-and-osgi-modules), [source code](#building-and-deploying-source-code), and more. These are easily included with a [CI build](../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md), but if you are using the [CLI tool](../reference/command-line-tool.md), some [extra steps](#cli-tool-deployment) are necessary specifically for the Liferay service.
+The Liferay service makes use of a [Liferay workspace](https://learn.liferay.com/dxp/latest/en/building-applications/tooling/liferay-workspace/what-is-liferay-workspace.html) to give you more options to add [deployable files](#deploying-themes-portlets-and-osgi-modules), [source code](#building-and-deploying-source-code), and more. These are easily included with a [CI build](../../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md), but if you are using the [CLI tool](../../reference/command-line-tool.md), some [extra steps](#cli-tool-deployment) are necessary specifically for the Liferay service.
 
 ## Defining the Liferay DXP Docker Image
 
@@ -24,7 +24,7 @@ The major version number of DXP defined in the `image` property of the Liferay s
 
 ## CLI Tool Deployment
 
-To add [deployable files](#deploying-themes-portlets-and-osgi-modules), [built source code](#building-and-deploying-source-code), [hotfixes](#deploying-hotfixes), and [licenses](#deploying-licenses) using the [CLI tool](../reference/command-line-tool.md), you must include them in a special `Dockerfile` image that is generated before you deploy. These extra steps are not necessary if you deploy a build via the [CI service](../platform-services/continuous-integration.md).
+To add [deployable files](#deploying-themes-portlets-and-osgi-modules), [built source code](#building-and-deploying-source-code), [hotfixes](#deploying-hotfixes), and [licenses](#deploying-licenses) using the [CLI tool](../../reference/command-line-tool.md), you must include them in a special `Dockerfile` image that is generated before you deploy. These extra steps are not necessary if you deploy a build via the [CI service](../../platform-services/continuous-integration.md).
 
 If you deploy the Liferay service with the CLI normally (when deploying all services at once, or from the `liferay/` directory), a **default version** of the Liferay DXP image (using the major version defined in `LCP.json`) that does not contain your customizations is deployed. This happens because you must specifically build and deploy any customizations with the service for them to be included.
 
@@ -125,7 +125,7 @@ See the following example of defining hotfixes in the `LCP.json` file:
 ```
 
 ```{note}
-This environment variable is only available if you have upgraded to at least version 4.x.x services. See [Understanding Service Stack Versions](../reference/understanding-service-stack-versions.md) for more information on checking the version.
+This environment variable is only available if you have upgraded to at least version 4.x.x services. See [Understanding Service Stack Versions](../../reference/understanding-service-stack-versions.md) for more information on checking the version.
 ```
 
 ## Deploying Licenses
@@ -151,7 +151,6 @@ Behind the scenes, XML licenses are copied to `$LIFERAY_HOME/deploy`, and AATF l
 
 ## Related Topics
 
-* [Customizing Liferay DXP in the Cloud](../customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service.md)
 * [Configuring the Liferay DXP Service](./configuring-the-liferay-dxp-service.md)
-* [Overview of the Liferay Cloud Deployment Workflow](../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md)
-* [CLI Tool](../reference/command-line-tool.md)
+* [Overview of the Liferay Cloud Deployment Workflow](../../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md)
+* [CLI Tool](../../reference/command-line-tool.md)

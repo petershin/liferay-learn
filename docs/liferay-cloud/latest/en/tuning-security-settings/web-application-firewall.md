@@ -18,12 +18,12 @@ Liferay Cloud includes additional network security features, including a [privat
 ![Figure 1: The Web Application Firewall protects against common attacks.](./web-application-firewall/images/01.png)
 
 ```{note}
-Custom firewall rules are not available with [shared cluster subscriptions](../../reference/platform-limitations.md#security).
+Custom firewall rules are not available with [shared cluster subscriptions](../reference/platform-limitations.md#security).
 ```
 
 ## Enabling ModSecurity
 
-ModSecurity is disabled by default. To enable it, add the `LCP_WEBSERVER_MODSECURITY` [environment variable](../../platform-services/web-server-service.md#environment-variables) to your project repository's `webserver/LCP.json` file. Attack detection rules are only processed if ModSecurity is enabled. You must [add your own rules](#adding-attack-detection-rules).
+ModSecurity is disabled by default. To enable it, add the `LCP_WEBSERVER_MODSECURITY` [environment variable](../platform-services/web-server-service.md#environment-variables) to your project repository's `webserver/LCP.json` file. Attack detection rules are only processed if ModSecurity is enabled. You must [add your own rules](#adding-attack-detection-rules).
 
 These values are allowed for `LCP_WEBSERVER_MODSECURITY`:
 
@@ -37,7 +37,7 @@ These values are allowed for `LCP_WEBSERVER_MODSECURITY`:
 The `LCP_WEBSERVER_MODSECURITY` environment variable is equivalent to ModSecurity's own [`SecRuleEngine` directive](https://github.com/SpiderLabs/ModSecurity/wiki/Reference-Manual-%28v3.x%29#SecRuleEngine).
 ```
 
-To enable ModSecurity, set the value of `LCP_WEBSERVER_MODSECURITY` to `On` or `DetectionOnly`, then [deploy the change](../../updating-services-in-liferay-paas/deploying-changes-via-the-cli-tool.md).
+To enable ModSecurity, set the value of `LCP_WEBSERVER_MODSECURITY` to `On` or `DetectionOnly`, then [deploy the change](../updating-services-in-liferay-paas/deploying-changes-via-the-cli-tool.md).
 
 ## Changing ModSecurity's Configuration
 
@@ -73,7 +73,7 @@ To add the OWASP CRS to ModSecurity,
 /etc/nginx/modsec/rules/*.conf
 ```
 
-1. Commit the files to your repository and [deploy the changes](../../updating-services-in-liferay-paas/deploying-changes-via-the-cli-tool.md).
+1. Commit the files to your repository and [deploy the changes](../updating-services-in-liferay-paas/deploying-changes-via-the-cli-tool.md).
 
 The rule set is interpreted once you [enable ModSecurity](#enabling-modsecurity).
 

@@ -18,7 +18,7 @@ Once a VPN connection is configured, you can view log messages from the VPN serv
 
 ![Select VPN Logs to view recent VPN activity in your environment.](./vpn-integration-overview/images/02.png)
 
-See the [VPN server limitations](../../reference/platform-limitations.md#vpn-servers) section for more information.
+See the [VPN server limitations](../reference/platform-limitations.md#vpn-servers) section for more information.
 
 ## Configuration
 

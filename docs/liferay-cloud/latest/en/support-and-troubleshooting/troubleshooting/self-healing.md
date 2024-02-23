@@ -30,7 +30,7 @@ When a probe detects a failure (i.e., it does not return the success message in 
 
 The liveness and readiness probes are deployed to all services regardless of the environment. Typically, customers do not have to make changes to the probes unless they want to adjust their values based on their needs. For example, a system administrator may increase the `initialDelaySeconds` value to account for a longer startup process.
 
-To change the default values, modify the `lcp.json` file. See the [Configuration via LCP.json](../reference/configuration-via-lcp-json.md) article.
+To change the default values, modify the `lcp.json` file. See the [Configuration via LCP.json](../../reference/configuration-via-lcp-json.md) article.
 
 ## Liveness Probe
 

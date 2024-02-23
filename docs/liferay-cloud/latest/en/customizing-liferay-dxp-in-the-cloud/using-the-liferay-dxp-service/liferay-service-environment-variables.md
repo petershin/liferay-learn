@@ -15,7 +15,7 @@ You can use environment variables in the Liferay service to override configurati
 
 Check the [portal properties documentation](https://docs.liferay.com/dxp/portal/7.3-latest/propertiesdoc/portal.properties.html) to find the environment variable name ("Env") for each corresponding portal property. For example, you can override the portal property `company.default.time.zone` with the environment variable, `LIFERAY_COMPANY_PERIOD_DEFAULT_PERIOD_TIME_PERIOD_ZONE`.
 
-See [Defining Environment Variables](../reference/defining-environment-variables.md) for more information on adding them to the Liferay service.
+See [Defining Environment Variables](../../reference/defining-environment-variables.md) for more information on adding them to the Liferay service.
 
 ### Converting Portal Property Names to Environment Variables
 
@@ -58,7 +58,7 @@ Name                                  | Default Value | Description  |
 
 ### Secrets
 
-These variables must instead be [defined as Secrets](../tuning-security-settings/managing-secure-environment-variables-with-secrets.md) for the Liferay service:
+These variables must instead be [defined as Secrets](../../tuning-security-settings/managing-secure-environment-variables-with-secrets.md) for the Liferay service:
 
 Name                                  | Default Value | Description  |
 :--- | :--- | :--- |

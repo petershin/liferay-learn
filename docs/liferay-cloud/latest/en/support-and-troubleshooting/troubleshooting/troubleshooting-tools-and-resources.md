@@ -34,9 +34,9 @@ Metrics are available for the default Liferay Cloud stack services: Webserver, L
 
 ![View application metrics via the Monitoring page in the Liferay Cloud console](./troubleshooting-tools-and-resources/images/01.png)
 
-Users can also integrate [Dynatrace’s](../manage-and-optimize/application-metrics.md#advanced-application-metrics-production-only) advanced performance monitoring with production environments.
+Users can also integrate [Dynatrace’s](../../manage-and-optimize/application-metrics.md#advanced-application-metrics-production-only) advanced performance monitoring with production environments.
 
-See [Application Metrics](../manage-and-optimize/application-metrics.md) for more information.
+See [Application Metrics](../../manage-and-optimize/application-metrics.md) for more information.
 
 ## Real-Time Alerts
 
@@ -46,7 +46,7 @@ View all environment alerts and set alert preferences via the Liferay Cloud cons
 
 ![View and manage alerts via the Alerts page in the Liferay Cloud console](./troubleshooting-tools-and-resources/images/02.png)
 
-See [Real-Time Alerts](../manage-and-optimize/real-time-alerts.md) for more information.
+See [Real-Time Alerts](../../manage-and-optimize/real-time-alerts.md) for more information.
 
 ## Environment Activities
 
@@ -56,7 +56,7 @@ View the status of builds, deployments, service activities, and more to help tro
 
 ![View environment activities from the Liferay Cloud console](./troubleshooting-tools-and-resources/images/03.png)
 
-See [Team Activities](../manage-and-optimize/team-activities.md) for more information.
+See [Team Activities](../../manage-and-optimize/team-activities.md) for more information.
 
 ## Environment Logs
 

@@ -53,7 +53,7 @@ failureThreshold: 3
 successThreshold: 3
 ```
 
-If the probe configuration values(such as the `path` or `port` values) are incorrect for your environment, then adjust them to the expected values in the service's `LCP.json` file, in your project repository. Find this file in the directory corresponding to the service (e.g., `liferay/`), and then [deploy the changes to your testing environment](../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md).
+If the probe configuration values(such as the `path` or `port` values) are incorrect for your environment, then adjust them to the expected values in the service's `LCP.json` file, in your project repository. Find this file in the directory corresponding to the service (e.g., `liferay/`), and then [deploy the changes to your testing environment](../../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md).
 
 If your service's `LCP.json` file does not already have the probe configurations, then you can copy the configurations shown in the console and convert them to JSON format while applying your changes. For example, readiness and liveness probe configurations for the `liferay` service may look like:
 

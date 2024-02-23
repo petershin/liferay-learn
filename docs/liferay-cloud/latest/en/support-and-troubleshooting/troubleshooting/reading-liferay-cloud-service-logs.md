@@ -46,7 +46,7 @@ From the Logs page, you can see (and filter by) all active instances of a servic
 
 ![Click on the instances drop-down menu to see all of the instances.](./reading-liferay-cloud-service-logs/images/01.png)
 
-The format of the instance ID depends on what deployment type (deployment or stateful set) the service is configured as. See [Understanding Deployment Types](../updating-services-in-liferay-paas/understanding-deployment-types.md) for more information.
+The format of the instance ID depends on what deployment type (deployment or stateful set) the service is configured as. See [Understanding Deployment Types](../../updating-services-in-liferay-paas/understanding-deployment-types.md) for more information.
 
 ### Instance ID for Deployment Type Logs
 
@@ -62,7 +62,7 @@ The instance ID for this message (in this example, `[liferay-7485669bdd-7ktfl]`)
 
 - A randomly generated **version ID**: in this example, `7485669bdd`. This corresponds to the version of your service that has been deployed with possible changes. Note that new deployments, changes to environment variables, and even manually restarting the service all generate a new version ID (because a new change may have been made in the configuration).
 
-- A randomly generated **container ID**: in this example, `7ktfl`. Whenever a new container is created (for example, after you deploy a new build and the service restarts), a new container ID is generated because a new container is created each time the service starts up. Note that any restart generates a new container ID, even when the version ID does not change (for example, when a [liveness or readiness probe failure](../support-and-troubleshooting/troubleshooting/self-healing.md) triggers a restart).
+- A randomly generated **container ID**: in this example, `7ktfl`. Whenever a new container is created (for example, after you deploy a new build and the service restarts), a new container ID is generated because a new container is created each time the service starts up. Note that any restart generates a new container ID, even when the version ID does not change (for example, when a [liveness or readiness probe failure](./self-healing.md) triggers a restart).
 
 ### Instance ID for Stateful Set Type Logs
 
@@ -78,7 +78,7 @@ These are the only components of the `instance ID` for stateful set type service
 
 - An iterating (non-random) **node ID**: in this example, `0`. This ID remains the same even after deploying new versions of the service.
 
-The entire instance ID for stateful set type services always remains the same for each node of the service. This allows you to reliably use the same instance ID to identify the node in a cluster with the same [volume](../updating-services-in-liferay-paas/configuring-persistent-file-storage-volumes.md), even after the service has been redeployed.
+The entire instance ID for stateful set type services always remains the same for each node of the service. This allows you to reliably use the same instance ID to identify the node in a cluster with the same [volume](../../updating-services-in-liferay-paas/configuring-persistent-file-storage-volumes.md), even after the service has been redeployed.
 
 ## Accessing Logs via the Liferay Cloud Console
 
@@ -104,7 +104,7 @@ You can filter by [type](#log-types) or by service on the Logs page. If you filt
 
 ![Use the drop-down menus to filter by type, service, and service instance.](./reading-liferay-cloud-service-logs/images/04.png)
 
-To filter by a date range, use the date picker at the top-right corner. You cannot choose a date that [no longer has valid logs](../reference/platform-limitations.md#all-services).
+To filter by a date range, use the date picker at the top-right corner. You cannot choose a date that [no longer has valid logs](../../reference/platform-limitations.md#all-services).
 
 ![Use the date picker to see logs from a specific date range.](./reading-liferay-cloud-service-logs/images/05.png)
 

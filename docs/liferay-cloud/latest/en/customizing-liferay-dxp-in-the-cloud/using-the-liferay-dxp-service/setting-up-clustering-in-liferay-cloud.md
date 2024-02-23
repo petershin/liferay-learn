@@ -24,7 +24,7 @@ Start from the desired environment in the Cloud console. Then, under `Services`,
 
 ## Set the Clustering Scale
 
-The number of nodes for your clustering environment is determined by the `scale` property within the Liferay service's `LCP.json` file (in the `liferay/` folder). If you are deploying your Liferay service for the first time, or if the `scale` property has not yet been set in the `LCP.json` file, then you must first set the value to `1` and then [deploy the service](../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md#deploy).
+The number of nodes for your clustering environment is determined by the `scale` property within the Liferay service's `LCP.json` file (in the `liferay/` folder). If you are deploying your Liferay service for the first time, or if the `scale` property has not yet been set in the `LCP.json` file, then you must first set the value to `1` and then [deploy the service](../../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md#deploy).
 
 ```json
 {
@@ -44,12 +44,12 @@ Multiple nodes in a clustered environment may conflict with each other if there 
 ```
 
 ```{note}
-Increasing the number of nodes for your Liferay DXP instance may increase the number of CPU cores allocated to your project. If the increased number of CPU cores exceeds the maximum [quota](../manage-and-optimize/quotas.md) for your plan, then the deployment may fail.
+Increasing the number of nodes for your Liferay DXP instance may increase the number of CPU cores allocated to your project. If the increased number of CPU cores exceeds the maximum [quota](../../manage-and-optimize/quotas.md) for your plan, then the deployment may fail.
 ```
 
 ### Auto-Scaling
 
-Auto-scaling works together with the `scale` attribute in `LCP.json`. If auto-scaling is enabled, then the `scale` property will determine the initial number of instances. The number of instances will then increase according to demand. See [Auto-scaling](../manage-and-optimize/auto-scaling.md) for more information.
+Auto-scaling works together with the `scale` attribute in `LCP.json`. If auto-scaling is enabled, then the `scale` property will determine the initial number of instances. The number of instances will then increase according to demand. See [Auto-scaling](../../manage-and-optimize/auto-scaling.md) for more information.
 
 ## Add Clustering Portal Properties
 
@@ -59,7 +59,7 @@ However, if additional portal properties for clustering are desired, the propert
 
 ## Deploy and Verify
 
-Deploy the configuration changes to the chosen environment to verify that clustering was enabled. See [Overview of the Liferay Cloud Deployment Workflow](../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md) for more information.
+Deploy the configuration changes to the chosen environment to verify that clustering was enabled. See [Overview of the Liferay Cloud Deployment Workflow](../../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md) for more information.
 
 To check if clustering is working correctly, check the logs of the Liferay DXP instances for the `Accepted View` message from the `JGroupsReceiver` class.
 
@@ -77,5 +77,5 @@ Aug 26 09:42:22.779 build-90 [liferay-68b8f6b48d-hdj9t] [dxp] INFO  [Incoming-1,
 ## Related Topics
 
 * [Auto-scaling](../manage-and-optimize/auto-scaling.md)
-* [Introduction to the Liferay DXP Service](../customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service.md)
+* [Introduction to the Liferay DXP Service](../using-the-liferay-dxp-service.md)
 * [Configuring the Liferay DXP Service](./configuring-the-liferay-dxp-service.md)

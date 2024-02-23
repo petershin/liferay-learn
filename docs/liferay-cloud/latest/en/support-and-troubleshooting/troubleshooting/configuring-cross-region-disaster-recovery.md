@@ -47,11 +47,11 @@ To ensure the two environments are connected,
 
 1. Click *Connect VPN*.
 
-For more information on connecting to a VPN, see [VPN Connection](../configuring-the-cloud-network/connecting-a-vpn-server-to-liferay-cloud.md).
+For more information on connecting to a VPN, see [VPN Connection](../../configuring-the-cloud-network/connecting-a-vpn-server-to-liferay-cloud.md).
 
 ### Deploy the Latest Stable Build from Production to the DR Environment
 
-Now you must deploy the latest stable build on Production to the DR environment. Follow the same steps outlined in [Overview of the Liferay Cloud Deployment Workflow](../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md).
+Now you must deploy the latest stable build on Production to the DR environment. Follow the same steps outlined in [Overview of the Liferay Cloud Deployment Workflow](../../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md).
 
 ### Set Up Automated Backup Restores to Disaster Recovery
 
@@ -71,13 +71,13 @@ First, retrieve your production environment's master token (this requires admini
 
     The master token is the hexadecimal ID after the `=` in the result.
 
-Once you have the production environment's master token, set these [environment variables](../reference/defining-environment-variables.md) in your DR environment:
+Once you have the production environment's master token, set these [environment variables](../../reference/defining-environment-variables.md) in your DR environment:
 
 * **LCP_EXTERNAL_PROJECT_ID**: the production environment's project ID (for example, `acme-prd`)
 
-* **LCP_BACKUP_RESTORE_SCHEDULE**: a [cron scheduling](https://crontab.guru/) value that defines the frequency of automated backups. See [Scheduling Automated Backups and Cleanups](../platform-services/backup-service/backup-service-overview.md#scheduling-automated-backups-and-cleanups) for more information.
+* **LCP_BACKUP_RESTORE_SCHEDULE**: a [cron scheduling](https://crontab.guru/) value that defines the frequency of automated backups. See [Scheduling Automated Backups and Cleanups](../../platform-services/backup-service/backup-service-overview.md#scheduling-automated-backups-and-cleanups) for more information.
 
-Set this value as a [secret](../tuning-security-settings/managing-secure-environment-variables-with-secrets.md) in your DR environment:
+Set this value as a [secret](../../tuning-security-settings/managing-secure-environment-variables-with-secrets.md) in your DR environment:
 
 * **LCP_EXTERNAL_PROJECT_MASTER_TOKEN**: your production environment's master token
 
@@ -105,7 +105,7 @@ During a cross-region incident, follow these steps:
 
 Since the DR environment becomes the main environment accessible to users for the duration of the incident, your normal database restoration schedule may overwrite data after you switch production over to it.
 
-If you are using the [`LCP_BACKUP_RESTORE_SCHEDULE` environment variable](../platform-services/backup-service/backup-service-overview.md#environment-variables-reference) to regularly restore data to your DR environment, temporarily disable the restoration schedule by removing the variable. This prevents data created during the incident from being overwritten by a scheduled restore.
+If you are using the [`LCP_BACKUP_RESTORE_SCHEDULE` environment variable](../../platform-services/backup-service/backup-service-overview.md#environment-variables-reference) to regularly restore data to your DR environment, temporarily disable the restoration schedule by removing the variable. This prevents data created during the incident from being overwritten by a scheduled restore.
 
 Follow these steps to disable the restoration schedule while it is accessible:
 
@@ -149,7 +149,7 @@ Next, follow these steps to ensure your DR environment is ready for incoming tra
 
     ![Check the VPN status for your DR environment to confirm that it is properly connected.](./configuring-cross-region-disaster-recovery/images/05.png)
 
-    If the appropriate VPN is not connected, set up the connection. See [Connecting a VPN Server to Liferay Cloud](../configuring-the-cloud-network/connecting-a-vpn-server-to-liferay-cloud.md) for more information.
+    If the appropriate VPN is not connected, set up the connection. See [Connecting a VPN Server to Liferay Cloud](../../configuring-the-cloud-network/connecting-a-vpn-server-to-liferay-cloud.md) for more information.
 
 1. Log onto your DXP instance (using the IP address, since the custom domain does not yet point to the DR environment).
 
@@ -171,7 +171,7 @@ The web server service's custom domain in the DR environment must match the orig
 
 1. Navigate to the same settings in the Production environment and remove the custom domain configuration.
 
-1. Update the DNS records and add the custom domain to the DR environment. For more information, see [Custom Domains](../configuring-the-cloud-network/custom-domains.md).
+1. Update the DNS records and add the custom domain to the DR environment. For more information, see [Custom Domains](../../configuring-the-cloud-network/custom-domains.md).
 
 This causes all traffic to go to the DR environment.
 
@@ -231,7 +231,7 @@ Follow these steps to ensure your production environment is ready for incoming t
 
 1. Verify that your VPN is connected to the production environment by navigating to the _Settings_ &rarr; _VPN_ page for your production environment.
 
-   If the appropriate VPN is not connected, set up the connection. See [Connecting a VPN Server to Liferay Cloud](../configuring-the-cloud-network/connecting-a-vpn-server-to-liferay-cloud.md) for more information.
+   If the appropriate VPN is not connected, set up the connection. See [Connecting a VPN Server to Liferay Cloud](../../configuring-the-cloud-network/connecting-a-vpn-server-to-liferay-cloud.md) for more information.
 
 1. Log onto your DXP instance (using the IP address, since the custom domain still points to the DR environment).
 
@@ -259,7 +259,7 @@ Because the webserver service redirected all traffic to the DR environment durin
     Removing the custom domain creates downtime until your Production environment is receiving traffic again.
     ```
 
-1. Update the DNS records and add the custom domain back to the Production environment. For more information, see [Custom Domains](../configuring-the-cloud-network/custom-domains.md).
+1. Update the DNS records and add the custom domain back to the Production environment. For more information, see [Custom Domains](../../configuring-the-cloud-network/custom-domains.md).
 
 1. Click _Update Custom Domain_.
 

@@ -7,7 +7,7 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: ee4ef207-d58a-4840-af34-f74fb4a031dc
 ---
-# Filtering Search Results
+# Using the Custom Filter Widget
 
 ```{note}
 This feature works [only with Elasticsearch](../../installing-and-upgrading-a-search-engine/solr/solr-limitations.md).
@@ -15,7 +15,7 @@ This feature works [only with Elasticsearch](../../installing-and-upgrading-a-se
 
 With Custom Filters, you can contribute queries to the main search query, filtering search results to control what's returned in the Search Results widget. You can make the filter widgets visible or invisible and decide if they're changeable or immutable.
 
-![Apply a custom filter to weed out certain search results.](./filtering-search-results/images/03.png)
+![Apply a custom filter to weed out certain search results.](./using-the-custom-filter-widget/images/03.png)
 
 There are many use cases satisfied by incorporating Custom Filters into your search page.
 
@@ -36,7 +36,7 @@ To explore all the options you have with the Custom Filter widget, you need one 
 
 1. From the Search section, drag a Custom Filter onto the page.
 
-![A custom filter has no impact until it's configured.](./filtering-search-results/images/01.png)
+![A custom filter has no impact until it's configured.](./using-the-custom-filter-widget/images/01.png)
 
 ## Custom Filter Configuration
 
@@ -87,7 +87,7 @@ Values in this field typically match the name of an application-defined index.
 
 To find the fields you can filter by in the Custom Filter widget, users with the proper permissions can navigate to _Control Panel_ &rarr; _Configuration_ &rarr; _Search_.  From there, open the Field Mappings tab and browse the mappings for the `liferay-[companyId]` index. Scroll to the [`properties`](https://www.elastic.co/guide/en/elasticsearch/reference/current/properties.html) section of the mapping.
 
-![Browse the field mappings to find Liferay DXP's indexed fields.](./filtering-search-results/images/04.png)
+![Browse the field mappings to find Liferay DXP's indexed fields.](./using-the-custom-filter-widget/images/04.png)
 
 ## Finding and Using Nested Fields
 

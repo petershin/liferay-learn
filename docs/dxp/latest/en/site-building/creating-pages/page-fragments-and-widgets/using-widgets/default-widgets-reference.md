@@ -134,7 +134,7 @@ Search widgets provides tailored search experiences that are customizable by you
 | Blueprints Options | Adds a [Blueprints Options widget](../../../../using-search/liferay-enterprise-search/search-experiences/search-blueprints/using-a-search-blueprint-on-a-search-page.md) that can apply a search blueprint. |
 | Category Facet | Adds a [Category Facet widget](../../../../using-search/search-pages-and-widgets/search-facets/category-facet.md) that filters search results by categories. |
 | Custom Facet | Adds a [Custom Facet widget](../../../../using-search/search-pages-and-widgets/search-facets/custom-facet.md) that lets you choose which field to group search results by. |
-| Custom Filter | Adds a [Custom Filter widget](../../../../using-search/search-pages-and-widgets/search-results/filtering-search-results.md) that lets you control the query sent to the search engine without deploying custom code. |
+| Custom Filter | Adds a [Custom Filter widget](../../../../using-search/search-pages-and-widgets/search-results/using-the-custom-filter-widget.md) that lets you control the query sent to the search engine without deploying custom code. |
 | Elasticsearch Monitoring | Adds a [Elasticsearch Monitoring widget](../../../../using-search/liferay-enterprise-search/monitoring-elasticsearch.md) that lets you monitor Elasticsearch. |
 | Folder Facet | Adds a [Folder Facet widget](../../../../using-search/search-pages-and-widgets/search-facets/folder-facet.md) that lets you filter search results by asset folders. |
 | Low Level Search Options | Adds a [Low Level Search Options widget](../../../../using-search/search-pages-and-widgets/search-results/understanding-low-level-search-options.md) that lets you use low level search. |

@@ -21,7 +21,7 @@ The Custom Filter widget is a powerful aid to your search tuning efforts. Withou
 - [Using Elasticsearch's Query String query](#complex-filter-with-query-string)
 - [Boosting Matches to Nested Fields](#boosting-matches-to-nested-fields)
 
-See [Filtering Search Results](./filtering-search-results.md) for a detailed explanation of the Custom Filter widget.
+See [Filtering Search Results](./using-the-custom-filter-widget.md) for a detailed explanation of the Custom Filter widget.
 
 ## Excluding Certain Content
 
@@ -61,7 +61,7 @@ Boosting certain documents based on specific fields is a common need, and it's r
 
 ### Boosting Results by Date Range
 
-The Date Range query option in the [Custom Filter widget's configuration form](filtering-search-results.md#custom-filter-configuration) corresponds to the [Elasticsearch Range query](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-range-query.html). To boost results created within the last year add a Custom Filter to a page and configure it like this:
+The Date Range query option in the [Custom Filter widget's configuration form](using-the-custom-filter-widget.md#custom-filter-configuration) corresponds to the [Elasticsearch Range query](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-range-query.html). To boost results created within the last year add a Custom Filter to a page and configure it like this:
 
 **Filter Field:** `createDate`
 
@@ -277,6 +277,6 @@ The boost value often needs tuning to meet your needs. Use the Search Insights w
 
 ## Related Content
 
-- [Filtering Search Results](./filtering-search-results.md)
+- [Filtering Search Results](./using-the-custom-filter-widget.md)
 - [Result Rankings](../../search-administration-and-tuning/result-rankings.md)
 - [Synonym Sets](../../search-administration-and-tuning/synonym-sets.md)

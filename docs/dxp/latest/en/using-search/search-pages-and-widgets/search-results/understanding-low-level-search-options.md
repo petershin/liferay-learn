@@ -94,7 +94,7 @@ Relevance scoring only makes sense within an index. Results coming from separate
 
    Choose _Match_ under Filter Query Type.
 
-   Since you’re overriding the default query to search an alternate index, there's nothing in the query by default. Any query clauses you want sent to the search engine must be added manually using [Custom Filter](./filtering-search-results.md) widget(s).
+   Since you’re overriding the default query to search an alternate index, there's nothing in the query by default. Any query clauses you want sent to the search engine must be added manually using [Custom Filter](./using-the-custom-filter-widget.md) widget(s).
 
    ```{important}
    Set the Custom Parameter Name to `q` to match the default value in the Search Bar's Keywords Parameter Name setting. The matching parameter ensures that the user's keywords, entered into the search bar, are applied to the Custom Filter widget. If a custom value is set in the Keywords Parameter Name of the Search Bar, use that instead of `q`.
@@ -113,7 +113,7 @@ Set up a [Search Page](../working-with-search-pages/search-pages.md) that displa
    * One Low Level Search Options
    * Two [Search Bars](../../getting-started/searching-for-content.md#using-the-search-bar)
    * Two [Search Results](./configuring-the-search-results-widget.md)
-   * One [Custom Filter](./filtering-search-results.md)
+   * One [Custom Filter](./using-the-custom-filter-widget.md)
 
    ```{tip}
    The 1-2-1 Columns (50/50) [page layout](./../../../site-building/creating-pages/page-settings/configuring-individual-pages.md#page-layout) is convenient for this example.

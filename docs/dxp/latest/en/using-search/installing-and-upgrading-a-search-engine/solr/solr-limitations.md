@@ -22,7 +22,7 @@ Liferay's Solr integration has limitations. Elasticsearch is required to use the
 * [Liferay Objects](../../../building-applications/objects.md)
 * [Liferay Commerce](https://learn.liferay.com/commerce/latest/en/index.html)
 * [Workflow Metrics](../../../process-automation/workflow/using-workflows/using-workflow-metrics.md)
-* [Custom Filter search widget](../../search-pages-and-widgets/search-results/filtering-search-results.md)
+* [Custom Filter search widget](../../search-pages-and-widgets/search-results/using-the-custom-filter-widget.md)
 * [The Low Level Search Options widget](../../search-pages-and-widgets/search-results/understanding-low-level-search-options.md)
 * [Search Tuning: Customizing Search Results](../../search-administration-and-tuning/result-rankings.md)
 * [Search Tuning: Synonyms](../../search-administration-and-tuning/synonym-sets.md)

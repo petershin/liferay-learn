@@ -10,9 +10,9 @@ uuid: ef053fbc-18f4-4724-a054-cb0774d02a6d
 {bdg-link-primary}`[Beta Feature](../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
 
 !!! important
-   This feature is currently behind a [developer feature flag](../../system-administration/configuring-liferay/feature-flags.md#dev-feature-flags) (LPS-167253) and a [beta feature flag](../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags) (LPS-164563).
+   This feature is currently behind a [beta feature flag](../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags) (LPS-164563).
 
-With Liferay, create data sets from different resources available through RESTful APIs. Use data sets to create and manage [data set views](./creating-data-set-views.md) and customize how you display your data set.
+With Liferay, create data sets from different resources available through Liferay Headless APIs. Use data sets to create and manage [data set views](./creating-data-set-views.md) and customize how you display your data set.
 
 ## Creating a Data Set
 

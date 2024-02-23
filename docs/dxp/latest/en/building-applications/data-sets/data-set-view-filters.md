@@ -9,9 +9,6 @@ uuid: 9c088b08-3ab6-4b1e-bb37-05e578657d51
 {bdg-secondary}`Liferay DXP 2024.Q1 U112`
 {bdg-link-primary}`[Beta Feature](../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
 
-!!! important
-   This feature is currently behind a [developer feature flag](../../system-administration/configuring-liferay/feature-flags.md#dev-feature-flags) (LPS-167253) and a [beta feature flag](../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags) (LPS-164563).
-
 While managing data set views, you can define pre-applied filters to be used in the data set fragment. Although you can set those filters, users can change their parameters however they want.
 
 ## Adding Filters to the Data Set View
@@ -30,11 +27,13 @@ While managing data set views, you can define pre-applied filters to be used in 
 
 ## Client Extension Filter
 
-Use Frontend Data Set Filter [client extensions](../client-extensions.md) to fully customize the filter experience and add new types of filters to your data set view.
+Use Frontend Data Set Filter [client extensions](../client-extensions.md) or deploy a [client extension from your workspace](../client-extensions/working-with-client-extensions.md) to fully customize the filter experience and add new types of filters to your data set view.
 
-![You need to have a Frontend Data Set Filter client extension in order to create the client extension filter.](./data-set-view-filters/images/01.png)
+![You need to have a Frontend Data Set Filter client extension to create the client extension filter.](./data-set-view-filters/images/01.png)
 
 1. Choose *Client Extension* when adding a new filter.
+
+   Each field can be associated with only one filter at a time.
 
 1. In the modal that opens, fill in the Name of the filter and, optionally, [localize](./data-set-view-fields.md#editing-and-localizing-labels) it.
 
@@ -55,6 +54,8 @@ Use date-type fields to pre-filter the displayed entries.
 1. In the modal that opens, fill in the Name of the filter and, optionally, [localize](./data-set-view-fields.md#editing-and-localizing-labels) it.
 
 1. Select the Field by which you want to filter the entries.
+
+   Each field can be associated with only one filter at a time.
 
 1. (Optional) Set From and To dates to pre-filter the entries and the filter will show entries within the specified range.
 

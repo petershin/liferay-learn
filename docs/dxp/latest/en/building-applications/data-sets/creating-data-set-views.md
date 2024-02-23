@@ -9,9 +9,6 @@ uuid: a996ebe0-1f91-4867-a50d-dd81652cd9be
 {bdg-secondary}`Liferay DXP 2024.Q1 U112`
 {bdg-link-primary}`[Beta Feature](../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
 
-!!! important
-   This feature is currently behind a [developer feature flag](../../system-administration/configuring-liferay/feature-flags.md#dev-feature-flags) (LPS-167253) and a [beta feature flag](../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags) (LPS-164563).
-
 Create data set views to customize how you display your data set.
 
 To create a data set view,

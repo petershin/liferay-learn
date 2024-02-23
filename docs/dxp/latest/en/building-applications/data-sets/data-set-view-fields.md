@@ -9,10 +9,7 @@ uuid: 8d92cb6f-d38f-4144-98ae-d69af473178b
 {bdg-secondary}`Liferay DXP 2024.Q1 U112`
 {bdg-link-primary}`[Beta Feature](../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
 
-!!! important
-   This feature is currently behind a [developer feature flag](../../system-administration/configuring-liferay/feature-flags.md#dev-feature-flags) (LPS-167253) and a [beta feature flag](../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags) (LPS-164563).
-
-Use the data set manager to select which fields to display in your data set view. You can add, delete, order, and edit your fields using the Fields tab in the data set view editor.
+Use the data set manager to select which fields to display in your data set view. These fields are mapped to columns in [the data set fragment](./using-data-set-view-actions.md#using-a-data-set-fragment-in-a-content-page). You can add, delete, order, and edit your fields using the Fields tab in the data set view editor.
 
 ## Adding Fields to the Data Set View
 
@@ -71,6 +68,9 @@ To localize the label,
 
 A renderer (3) is a structured way to customize how a component is displayed. They are built to be convenient. You enter a raw value and the renderer assumes the most typical format and UI for it.
 
+!!! important
+    To ensure your data is displayed correctly, the field type must be compatible with the selected renderer.
+
 In the picture below, on the left, the status, date, and date and time fields have the default renderer applied. On the right, the status, date, and date and time renderers are applied to the respective fields.
 
 ![Status, date, and date and time fields without and with renderers applied.](./data-set-view-fields/images/04.png)
@@ -81,7 +81,7 @@ In the picture below, on the left, the status, date, and date and time fields ha
 
 When a field is marked as sortable, users can sort the elements while using the data set fragment in a content page.
 
-In the video below, the integer field initially allows sorting, enabling users to filter entries based on it. However, when the sortable checkbox is unchecked, sorting entries using the integer field as a filter becomes impossible.
+In the video below, users can sort entries based on the integer field initially. However, when the sortable checkbox is unchecked, sorting entries using the integer field as a filter becomes impossible.
 
 ![Define the fields as sortable, so users can sort elements when using the data set fragment.](./data-set-view-fields/images/05.gif)
 

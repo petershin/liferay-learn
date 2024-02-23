@@ -10,9 +10,6 @@ taxonomy-category-names:
 {bdg-secondary}`Liferay DXP 2024.Q1 U112`
 {bdg-link-primary}`[Beta Feature](../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
 
-!!! important
-   This feature is currently behind a [developer feature flag](../../system-administration/configuring-liferay/feature-flags.md#dev-feature-flags) (LPS-167253) and a [beta feature flag](../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags) (LPS-164563).
-
 While managing data set views, define actions to be used in the data set fragment. Currently, you can configure Link-type actions that redirect users to a specified URL.
 
 ## Adding Actions to the Data Set View
@@ -33,7 +30,9 @@ Under the Display Options section,
 
 1. Fill in the Label and, optionally, [localize](./data-set-view-fields.md#editing-and-localizing-labels) it.
 
-1. (Optional) Choose an out-of-the-box icon to show in your Data Set fragment. The icon redirects the user to the specified URL.
+1. (Optional) Choose an icon to show in your Data Set fragment.
+
+   <!-- Choose from a list of out-of-the-box icons or type in the name of an icon registered through the SVG sprite map client extension. The custom icon requires configuring the client extension. - This is to be added once the article about this client extension is on. Eric -->
 
    If no icon is selected, the Action's label appears as text inside a button component.
 

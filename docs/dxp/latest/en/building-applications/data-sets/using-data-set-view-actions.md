@@ -100,7 +100,7 @@ Now, to fill in the URL,
          }
    ```
 
-   In this case, the action keys are `actions`, `replace`, `update`, and `delete`.
+   In this case, the action keys are `get`, `replace`, `update`, and `delete`.
 
    Since users will edit the document, you should use the PUT method and its activation key (`replace`). Add the key to the Headless Action Key field and ensure that the user has the required permissions for that action.
 

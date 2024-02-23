@@ -11,7 +11,7 @@ There are several options to set up a CSP policy. It is best to understand your 
 
 Imagine one of your company servers responsible for serving all the scripts to your website is compromised. This can lead to possible attacks like injection of malicious scripts to different web pages within your site. Using CSP, you can disable loading scripts if it originates from the compromised server. To do this,
 
-1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)) and navigate to *Control Panel* &rarr; *System Settings* &rarr; *Security* &rarr; *Content Security Policy* .
+1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)) and navigate to *Control Panel* &rarr; *System Settings* &rarr; *Security* &rarr; *Content Security Policy*.
 
    ![Configuring a content security policy.](./configuring-content-security-policy-headers/images/01.png)
 
@@ -29,6 +29,9 @@ Imagine one of your company servers responsible for serving all the scripts to y
 
 1. Click *Update*.
 
+!!! note
+    This applies the configuration to all sites for all instances. If you want to configure CSP headers for all sites of a specific instance, go to *Control Panel* &rarr; *Instance Settings* &rarr; *Security* &rarr; *Content Security Policy*. If you want to configure CSP headers for a specific site, open the site menu and go to *Configuration* &rarr; *Site Settings* &rarr; *Security* &rarr; *Content Security Policy*.
+
 This sample content security policy only allows resources to load from the same origin `self` and from the trusted content delivery network `https://trusted-cdn.example.com`. It also includes the nonce `'[$NONCE$]'` for scripts and stylesheets to secure their integrity and prevent unauthorized script execution.
 
 ![The CSP header appears in every HTTP request.](./configuring-content-security-policy-headers/images/02.png)
@@ -36,5 +39,5 @@ This sample content security policy only allows resources to load from the same 
 The `object-src 'none'` entry instructs the browser to prevent loading any HTML `<object>` elements. The `base-url 'self'` entry instructs the browser to only allow loading resources from the same origin as the document.
 
 !!! {note}
-    Content Security Police works best with SPA disabled. To disable it, add `javascript.single.page.application.enabled=false` to your [portal-ext.properties file](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/reference/portal-properties.html). 
-    Instance level CSP headers will be applied to site-wide configuration panels and common pages (e.g., 404 page), providing consistent security measures across the instance.
+    Content Security Police works best with SPA disabled. To disable it, add `javascript.single.page.application.enabled=false` to your [portal-ext.properties file](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/reference/portal-properties.html).
+    Site level configuration panel and common pages (such as the 404 page) belong to the instance, so it uses the instance level CSP headers.

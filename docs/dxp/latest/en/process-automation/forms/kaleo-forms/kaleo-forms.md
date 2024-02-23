@@ -9,16 +9,15 @@ uuid: 8838df23-e03b-4ab6-8c41-8893d489771d
 ---
 # Kaleo Forms
 
-```{important}
-Kaleo Forms is in [maintenance mode](../../../installation-and-upgrades/upgrading-liferay/reference/maintenance-mode-and-deprecations-in-7-4.md) in Liferay 7.4. Use [Objects](../../../building-applications/objects.md) if possible.
-```
+!!! note
+    Kaleo Forms is [deprecated](../../../installation-and-upgrades/upgrading-liferay/reference/maintenance-mode-and-deprecations-in-7-4.md) as of Liferay 7.4 2023.Q3. Use business processes for [Liferay Objects](../../../building-applications/objects.md) (i.e., objects, workflow, and form container fragments) instead.
 
 Liferay's *Kaleo Forms* solution combines the features of *Workflow Designer* and *Dynamic Data Lists* to create form-based business processes. With it, you can integrate forms with workflow tasks to create conference room checkout forms, support ticket processes, and more.
 
-* [Kaleo Forms](#kaleo-forms)
-  * [Creating a Kaleo Forms Process](#creating-a-kaleo-forms-process)
-  * [Using a Kaleo Forms Process](#using-a-kaleo-forms-process)
-  * [Related Topics](#related-topics)
+- [Kaleo Forms](#kaleo-forms)
+  - [Creating a Kaleo Forms Process](#creating-a-kaleo-forms-process)
+  - [Using a Kaleo Forms Process](#using-a-kaleo-forms-process)
+  - [Related Topics](#related-topics)
 
 ## Creating a Kaleo Forms Process
 
@@ -36,21 +35,21 @@ Follow these steps to create a new Kaleo Forms process:
 
    You can choose from existing field sets, or create a new one. Click on *View Fields* to preview all elements contained in an existing field set.
 
-   * To choose an existing field set, click on its *Actions* button ![Actions Button](../../../images/icon-add.png), and select *Choose*. Alternatively, you can select *Edit* to modify the field set before choosing it.
+   - To choose an existing field set, click on its *Actions* button ![Actions Button](../../../images/icon-add.png), and select *Choose*. Alternatively, you can select *Edit* to modify the field set before choosing it.
 
-   * To create a new field set, click on *Add Field Set*, and incorporate the desired elements. When finished, click on *Save* and close the dialogue window to update the list of available field sets to choose from. See [Creating Data Definitions](../dynamic-data-lists/creating-data-definitions.md) for more information.
+   - To create a new field set, click on *Add Field Set*, and incorporate the desired elements. When finished, click on *Save* and close the dialogue window to update the list of available field sets to choose from. See [Creating Data Definitions](../dynamic-data-lists/creating-data-definitions.md) for more information.
 
    Once you've chosen a field set, click *Next*.
 
-   ![Select a Field Set to define the fields for your process's forms, an click Next.](./kaleo-forms/images/02.png)
+   ![Select a Field Set to define the fields for your process's forms, and click Next.](./kaleo-forms/images/02.png)
 
 1. Select a *Workflow* to use for your new process's forms.
 
    You can choose from existing published workflows or create a new one.
 
-   * To choose an existing, published workflow, click on its *Actions* button ![Actions Button](../../../images/icon-actions.png), and select *Choose*. You can also select *Edit* to modify the workflow before choosing it.
+   - To choose an existing, published workflow, click on its *Actions* button ![Actions Button](../../../images/icon-actions.png), and select *Choose*. You can also select *Edit* to modify the workflow before choosing it.
 
-   * To create a new workflow, click on *Add Workflow*, and incorporate the desired elements. See [Workflow Designer Overview](../../workflow/designing-and-managing-workflows/workflow-designer/workflow-designer-overview.md) for more information. When finished, click on *Publish* and close the dialogue window to update the list of available workflows to choose from.
+   - To create a new workflow, click on *Add Workflow*, and incorporate the desired elements. See [Workflow Designer Overview](../../workflow/designing-and-managing-workflows/workflow-designer/workflow-designer-overview.md) for more information. When finished, click on *Publish* and close the dialogue window to update the list of available workflows to choose from.
 
    Once you've chosen a workflow, click *Next*.
 
@@ -60,9 +59,9 @@ Follow these steps to create a new Kaleo Forms process:
 
    You can choose from existing forms, or create new ones.
 
-   * To choose from existing forms, click on a task's *Actions* button ![Actions Button](../../../images/icon-actions.png), and select *Assign Form*. Then, click on the desired form. Once assigned, you can edit or unassign the selected form at any time via the task's *Actions* button.
+   - To choose from existing forms, click on a task's *Actions* button ![Actions Button](../../../images/icon-actions.png), and select *Assign Form*. Then, click on the desired form. Once assigned, you can edit or unassign the selected form at any time via the task's *Actions* button.
 
-   * To create a new form, click on each task's *Actions* button ![Actions Button](../../../images/icon-actions.png), and select *Assign Form*. Then, click on the *Add* button ![Add Button](../../../images/icon-add.png), and design a custom form. When finished, click on *Save*. You can then assign the new form to the selected workflow task.
+   - To create a new form, click on each task's *Actions* button ![Actions Button](../../../images/icon-actions.png), and select *Assign Form*. Then, click on the *Add* button ![Add Button](../../../images/icon-add.png), and design a custom form. When finished, click on *Save*. You can then assign the new form to the selected workflow task.
 
    ![Select forms to use for each workflow task, and click Save.](./kaleo-forms/images/04.png)
 
@@ -96,6 +95,6 @@ To access the diagram view, click the Track Workflow configuration option in the
 
 ## Related Topics
 
-* [Introduction to Forms](../introduction-to-forms.md)
-* [Introduction to Workflow](../../workflow/introduction-to-workflow.md)
-* [Creating Data Definitions](../dynamic-data-lists/creating-data-definitions.md)
+- [Introduction to Forms](../introduction-to-forms.md)
+- [Introduction to Workflow](../../workflow/introduction-to-workflow.md)
+- [Creating Data Definitions](../dynamic-data-lists/creating-data-definitions.md)

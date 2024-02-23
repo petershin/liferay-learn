@@ -59,7 +59,7 @@ Here are the features deprecated in 7.4:
 | Polls | Removed | Replaced by [Forms/Forms Reports](../../../process-automation/forms/sharing-forms-and-managing-submissions/form-reports.md). |
 | Search widget (classic) | Bundled | Deprecated in 7.1. Replaced by the [Search widgets](../../../using-search/search-pages-and-widgets/search-results/search-results.md). |
 | SOAP Web Services | Bundled (disabled by default) | Replaced by JSON web services, REST services, and GraphQL services. |
-| Staging Relationship Modules | Removed | These modules are obsolete and are no longer being used. They have been moved to deprecate, since 2023.Q3. It will be removed. |
+| Staging Relationship Modules | Bundled | These modules are obsolete and are no longer being used. They have been moved to deprecate, since 2023.Q3. It will be removed. |
 | Theme: Hello World | Archived | Deprecated in 7.3. No direct replacement. |
 | Web Content Search widget | Archived |  |
 

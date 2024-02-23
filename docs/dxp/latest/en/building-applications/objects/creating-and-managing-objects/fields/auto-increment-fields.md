@@ -9,6 +9,8 @@ uuid: 013d44ac-a4a9-497b-85b2-be9b1fdcb23e
 ---
 # Auto-Increment Fields
 
+{bdg-secondary}`DXP 2024.Q1+/Portal 7.4 GA112+`
+
 Auto-Increment fields are configurable [read-only fields](./using-read-only-fields.md) for uniquely identifying object entries in a human-readable format. For example, an IT ticketing system should generate a unique but meaningful identifier for each ticket, so users can refer to each entry easily. 
 
 | Prefix | Starting Value | Suffix | Example Values |
@@ -17,7 +19,9 @@ Auto-Increment fields are configurable [read-only fields](./using-read-only-fiel
 | none | 0 | none | 0<br>1<br>2<br>...<br>256 |
 | FOO- | 01 | none | FOO-01<br>FOO-02<br>FOO-03<br>...<br>FOO-12 |
 
-To add an auto-increment field, you must configure the starting numeric value. Liferay adds `1` to this value for each subsequent object entry. Optionally, you can add a meaningful suffix and/or prefix to each numeric value.
+To add an auto-increment field, first enable its release feature flag. Go to *Global Menu* (![Global Menu](../../../../images/icon-applications-menu.png)) &rarr; *Control Panel* &rarr; *Instance Settings* &rarr; *Feature Flags*. Open the *Release* section and enable *Auto-Increment Field Type for Objects (LPS-196724)*.
+
+You must configure the starting numeric value. Liferay adds `1` to this value for each subsequent object entry. Optionally, you can add a meaningful suffix and/or prefix to each numeric value.
 
 ![You must provide the initial value of an auto-increment field.](./auto-increment-fields/images/01.png)
 
@@ -65,7 +69,7 @@ When you make a GET request to return object entries with an auto-increment fiel
 "ticket" : "ticket-12"
 ```
 
-When you [add an object definition field](../managing-objects-with-headless-apis.md) with the headless API, here's what the request body looks like for an auto-increment field that generates values `foo-01-bar`, `foo-02-bar`, etc.: 
+When you [add an object definition field](../managing-objects-with-headless-apis.md) with the headless API, here's what the POST request body looks like for an auto-increment field that generates values `foo-01-bar`, `foo-02-bar`, etc.: 
 
 ```json
 {
@@ -74,23 +78,25 @@ When you [add an object definition field](../managing-objects-with-headless-apis
       "en_US": "Able Ticket"
    },
    "name": "ableTicket",
-   "objectFieldSettings": [{
-      "name": "initialValue",
-      "value": "01"
-   },
-   {
-      "name": "prefix",
-      "value": "foo-"
-   },
-   {
-      "name": "suffix",
-      "value": "-bar"
-   }], 
+   "objectFieldSettings": [
+      {
+         "name": "initialValue",
+         "value": "01"
+      },
+      {
+         "name": "prefix",
+         "value": "foo-"
+      },
+      {
+         "name": "suffix",
+         "value": "-bar"
+      }
+   ], 
    "required": false
 } 
 ```
 
-<!-- Is this worthwhile, and is there anything else relevant to mention here? -->
+See [Managing Objects with Headless APIs](../managing-objects-with-headless-apis.md) for more information.
 
 ## Related Topics
 

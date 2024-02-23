@@ -13,7 +13,7 @@ taxonomy-category-names:
 
 Validations set rules for determining valid field entries. Each validation has its own trigger, conditions, and error message, which you can set via the Objects UI. You can define validations using [Groovy scripts](#using-groovy-validations) or [Liferay expressions](#using-expression-builder-validations).
 
-A third type of validation is available as of Liferay DXP 2024.Q1+/GA112+: [Composite Key validation](#using-composite-key-validations). Use composite key validations to require that a combination of two fields is unique.
+A third type of validation is available as of Liferay DXP 2024.Q1+/GA112+: [Composite Key validation](#using-composite-key-validations). Use composite key validations to require that a combination of two or more fields is unique.
 
 ![Create validations for custom and system object fields.](./adding-field-validations/images/01.png)
 
@@ -187,7 +187,7 @@ You can use text, integer, and picklist fields in composite keys. You can also u
 
 ![You can use relationship fields in composite keys.](./adding-field-validations/images/10.png)
 
-You cannot add a field to a composite key if it already has data. 
+You cannot add a field to a composite key if it already has data.
 
 ![Fields with published data cannot be used in composite keys.](./adding-field-validations/images/11.png)
 

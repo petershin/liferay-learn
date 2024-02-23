@@ -1,20 +1,29 @@
 curl \
 	"http://localhost:8080/o/c/ables/" \
-	-H "Content-Type: application/json" \
-	-X "POST" \
-	-d "{\"name\": \"Able 1\"}" \
-	-u "test@liferay.com:learn"
+	--data-raw '
+		{
+			"name": "Able 1"
+		}' \
+	--header "Content-Type: application/json" \
+	--request "POST" \
+	--user "test@liferay.com:learn"
 
 curl \
 	"http://localhost:8080/o/c/ables/" \
-	-H "Content-Type: application/json" \
-	-X "POST" \
-	-d "{\"name\": \"Able 2\"}" \
-	-u "test@liferay.com:learn"
+	--data-raw '
+		{
+			"name": "Able 2"
+		}' \
+	--header "Content-Type: application/json" \
+	--request "POST" \
+	--user "test@liferay.com:learn"
 
 curl \
 	"http://localhost:8080/o/c/ables/" \
-	-H "Content-Type: application/json" \
-	-X "POST" \
-	-d "{\"name\": \"Able 3\"}" \
-	-u "test@liferay.com:learn"
+	--data-raw '
+		{
+			"name": "Able 3"
+		}' \
+	--header "Content-Type: application/json" \
+	--request "POST" \
+	--user "test@liferay.com:learn"

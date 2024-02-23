@@ -3,7 +3,7 @@ toc:
   - ./securing-web-services/setting-service-access-policies.md
   - ./securing-web-services/using-authentication-verifiers.md
   - ./securing-web-services/setting-up-cors.md
-  - ./securing-web-services/managing-content-http-headers.md
+  - ./securing-web-services/configuring-content-security-policy-headers.md
 uuid: 7bcf1f60-19c1-4765-9f32-938a05808317
 taxonomy-category-names:
 - Security

@@ -16,8 +16,23 @@ Using this feature, a service can automatically increase (upscale) the number of
   "scale": 2,
 ```
 
+## How Auto-Scaling is Charged
+
+Auto-scaling is only available for the Liferay DXP service in production environments. Once auto-scaling is enabled, each extra instance of the service incurs an hourly charge. This charge is independent of the normal Liferay PaaS subscription process.
+
+Liferay issues an invoice to customers after each quarter that they use or deploy auto-scaling instances. Customers must pay this invoice in accordance with their agreement with Liferay.
+
+### Pricing
+
+For each service instance added via auto-scaling, the price is based on the number of clock hours that the customer used this instance. For pricing purposes, the total usage during a calendar quarter is rounded up to the nearest full clock hour.
+
+| **Environment Type** | **Price per Instance per Hour** |
+| :------------------- | :------------------------------ |
+| High Availability    | $12.00 USD                      |
+| Standard             | $23.00 USD                      |
+
 !!! note
-    Auto-scaling is only available for the Liferay DXP service in production environments. Once auto-scaling is enabled, each extra instance of the service incurs an hourly charge. For more information on how auto-scaling is charged, see [How Auto-scaling is Charged](https://help.liferay.com/hc/en-us/articles/360030843592-How-Auto-Scaling-is-charged-).
+    These prices apply to all Liferay PaaS service instances added through auto-scaling, unless a customer enters a separate written agreement with Liferay as to the pricing.
 
 ## JVM Memory Configuration
 

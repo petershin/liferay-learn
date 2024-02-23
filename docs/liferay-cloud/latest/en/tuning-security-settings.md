@@ -5,6 +5,7 @@ toc:
   - ./tuning-security-settings/using-sso-with-liferay-cloud.md
   - ./tuning-security-settings/web-application-firewall.md
   - ./tuning-security-settings/managing-secure-environment-variables-with-secrets.md
+  - ./tuning-security-settings/liferay-paas-security-checklist.md
 taxonomy-category-names:
 - Cloud
 - Cloud Platform Administration

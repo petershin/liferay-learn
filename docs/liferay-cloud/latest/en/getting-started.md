@@ -7,6 +7,7 @@ toc:
   - ./getting-started/configuring-your-gitlab-repository.md
   - ./getting-started/logging-into-your-liferay-cloud-services.md
   - ./getting-started/understanding-liferay-cloud-environments.md
+  - ./getting-started/liferay-paas-go-live-checklist.md
 taxonomy-category-names:
 - Cloud
 - Cloud Platform Administration

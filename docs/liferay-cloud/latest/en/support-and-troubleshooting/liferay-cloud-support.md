@@ -1,6 +1,8 @@
 ---
 toc:
+  - ./liferay-cloud-support/incidents-and-uptime-status.md
   - ./liferay-cloud-support/support-access.md
+  - ./liferay-cloud-support/liferay-paas-shared-activities.md
 taxonomy-category-names:
 - Cloud
 - Cloud Platform Administration

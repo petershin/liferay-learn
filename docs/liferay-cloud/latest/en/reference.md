@@ -9,6 +9,8 @@ toc:
   - ./reference/upgrading-to-a-high-availability-subscription.md
   - ./reference/command-line-tool.md
   - ./reference/defining-environment-variables.md
+  - ./reference/liferay-cloud-data-center-locations.md
+  - ./ reference/liferay-saas-compatibility-matrix.md
   - ./reference/platform-limitations.md
   - ./reference/example-configuration-files.md
 taxonomy-category-names:

@@ -38,6 +38,6 @@ This sample content security policy only allows resources to load from the same 
 
 The `object-src 'none'` entry instructs the browser to prevent loading any HTML `<object>` elements. The `base-url 'self'` entry instructs the browser to only allow loading resources from the same origin as the document.
 
-!!! {note}
+!!! note
     Content Security Police works best with SPA disabled. To disable it, add `javascript.single.page.application.enabled=false` to your [portal-ext.properties file](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/reference/portal-properties.html).
     Site level configuration panel and common pages (such as the 404 page) belong to the instance, so it uses the instance level CSP headers.

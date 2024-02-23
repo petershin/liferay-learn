@@ -20,9 +20,8 @@ To start developing client extensions,
 
 1. Install Java (JDK 8 or JDK 11).
 
-   ```{note}
-   Check the [compatibility matrix](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) for supported JDKs, databases, and environments. See [JVM Configuration](https://learn.liferay.com/w/dxp/installation-and-upgrades/reference/jvm-configuration) for recommended JVM settings.
-   ```
+   !!! note
+       Check the [compatibility matrix](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) for supported JDKs, databases, and environments. See [JVM Configuration](https://learn.liferay.com/w/dxp/installation-and-upgrades/reference/jvm-configuration) for recommended JVM settings.
 
 1. Download and unzip the sample workspace:
 
@@ -50,7 +49,7 @@ assemble:
     - fromTask: bootJar
 ```
 
-The `assemble` block specifies that everything in the `assets/` folder should be included as a static resource in the built client extension `.zip` file. The JavaScript code in this client extension is used as a static resource in Liferay. The standalone application/microservice is created with the `bootJar` command that is available from the [Spring Boot Gradle Plugin](https://docs.spring.io/spring-boot/docs/current/gradle-plugin/reference/htmlsingle/). The application JAR must be included in the LUFFA for deployment in LXC.
+The `assemble` block specifies that everything in the `assets/` folder should be included as a static resource in the built client extension `.zip` file. The JavaScript code in this client extension is used as a static resource in Liferay. The standalone application/microservice is created with the `bootJar` command that is available from the [Spring Boot Gradle Plugin](https://docs.spring.io/spring-boot/docs/current/gradle-plugin/reference/htmlsingle/). The application JAR must be included in the LUFFA for deployment in Liferay SaaS.
 
 ```yaml
 liferay-sample-commerce-checkout-step:
@@ -79,7 +78,7 @@ liferay-sample-commerce-checkout-step-oauth-application-user-agent:
     type: oAuthApplicationUserAgent
 ```
 
-Another important part of the `client-extension.yaml` is in the `liferay-sample-commerce-checkout-step-oauth-application-user-agent` definition. The `serviceAddress` parameter defines where the service runs locally and the `serviceScheme` parameter defines the protocol. The `name` field defines the name of the OAuth application user agent. The `scopes` field defines the access given to the headless API. This section sets up Liferay as the authorization server, so that the checkout step you deploy next can invoke the resource server's secure endpoint and send a payload. In the example, the purchase order number entered by the user gets added to the order through Liferay's API. See [OAuth User Agent YAML Configuration Reference](https://learn.liferay.com/w/dxp/building-applications/client-extensions/configuration-client-extensions/oauth-user-agent-yaml-configuration-reference) for more information.
+Another important part of the `client-extension.yaml` is in the `liferay-sample-commerce-checkout-step-oauth-application-user-agent` definition. The `serviceAddress` parameter defines where the service runs locally and the `serviceScheme` parameter defines the protocol. The `name` field defines the name of the OAuth application user agent. The `scopes` field defines the access given to the headless API. This section sets up Liferay as the authorization server, so the checkout step you deploy next can invoke the resource server's secure endpoint and send a payload. In the example, the purchase order number entered by the user gets added to the order through Liferay's API. See [OAuth User Agent YAML Configuration Reference](https://learn.liferay.com/w/dxp/building-applications/client-extensions/configuration-client-extensions/oauth-user-agent-yaml-configuration-reference) for more information.
 
 ## Deploy the Checkout Step Client Extension
 
@@ -119,7 +118,7 @@ liferay.oauth.application.external.reference.codes=liferay-sample-commerce-check
 
 From the `client-extensions/liferay-sample-commerce-checkout-step` folder, run
 
-```sh
+```bash
 ../../gradlew bootRun
 ```
 
@@ -141,7 +140,7 @@ The Spring Boot application starts and prints messages in the log:
 
 1. Open the site and use the account selector to create a new account.
 
-1. Now, add a few items to your cart.
+1. Add a few items to your cart.
 
 1. Open the mini cart and click _Submit_. This starts the checkout flow.
 

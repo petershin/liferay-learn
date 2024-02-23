@@ -12,7 +12,7 @@ taxonomy-category-names:
 ---
 # Using the Checkout Step Client Extension
 
-You can use a client extension to create a new checkout step. This tutorial uses an example client extension from the sample-workspace and it consists of a standalone [Spring Boot application](https://docs.spring.io/spring-boot/docs/current/reference/html/getting-started.html#getting-started) that communicates with Liferay using [OAuth 2](https://learn.liferay.com/w/dxp/headless-delivery/using-oauth2) and a UI element that takes an input from the user during checkout. The user input for purchase order number gets added to the order through the Spring Boot application that patches the value to the relevant endpoint.
+You can use a client extension to create a new checkout step. This tutorial uses an example client extension from the [sample workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace) and it consists of a standalone [Spring Boot application](https://docs.spring.io/spring-boot/docs/current/reference/html/getting-started.html#getting-started) that communicates with Liferay using [OAuth 2](https://learn.liferay.com/w/dxp/headless-delivery/using-oauth2) and a UI element that takes an input from the user during checkout. The user input for purchase order number gets added to the order through the Spring Boot application that patches the value to the relevant endpoint.
 
 ## Prerequisites
 
@@ -36,17 +36,12 @@ To start developing client extensions,
 
 Now you have the tools to start and deploy the client extension(s) to Liferay. 
 
-1. Start a new Liferay instance by running
-
-   ```bash
-   docker run -it -m 8g -p 8080:8080 [$LIFERAY_LEARN_PORTAL_DOCKER_IMAGE$]
-   ```
-
-1. Sign in to Liferay at <http://localhost:8080>. Use the email address _test@liferay.com_ and the password _test_. When prompted, change the password to _learn_.
+```{include} /_snippets/run-liferay-portal.md
+```
 
 ## Examine the Checkout Step Client Extension
 
-The `client-extensions/liferay-sample-commerce-checkout-step/client-extension.yaml` file defines the checkout step client extension project in the sample workspace. There are three important blocks in the `.yaml` file that you must understand:
+The `client-extensions/liferay-sample-commerce-checkout-step/client-extension.yaml` file defines the checkout step client extension in the sample workspace. There are three important blocks in the `.yaml` file that you must understand:
 
 ```yaml
 assemble:
@@ -55,7 +50,7 @@ assemble:
     - fromTask: bootJar
 ```
 
-The `assemble` block specifies that everything in the `assets/` folder should be included as a static resource in the built client extension `.zip` file. The JavaScript code in this client extension is used as a static resource in Liferay. The external application/microservice is created with the `bootJar` command that is available from the [Spring Boot Gradle Plugin](https://docs.spring.io/spring-boot/docs/current/gradle-plugin/reference/htmlsingle/). The application JAR must be included in the LUFFA for deployment in LXC.
+The `assemble` block specifies that everything in the `assets/` folder should be included as a static resource in the built client extension `.zip` file. The JavaScript code in this client extension is used as a static resource in Liferay. The standalone application/microservice is created with the `bootJar` command that is available from the [Spring Boot Gradle Plugin](https://docs.spring.io/spring-boot/docs/current/gradle-plugin/reference/htmlsingle/). The application JAR must be included in the LUFFA for deployment in LXC.
 
 ```yaml
 liferay-sample-commerce-checkout-step:
@@ -112,7 +107,7 @@ Another important part of the `client-extension.yaml` is in the `liferay-sample-
 
 1. Verify that the OAuth Application User Agent was added to Liferay. Go to _Control Panel_ &rarr; _OAuth2 Administration_.
 
-   ![The Liferay Sample Commerce Checkout Step OAuth Application User Agent is added when you deploy the client extension.](./using-the-checkout-step-client-extension/images/01.png)
+![The Liferay Sample Commerce Checkout Step OAuth Application User Agent is added when you deploy the client extension.](./using-the-checkout-step-client-extension/images/01.png)
 
 The Liferay Sample Commerce Checkout Step OAuth Application User Agent provides the [OAuth 2 authorization](https://learn.liferay.com/w/dxp/headless-delivery/using-oauth2) needed so that Liferay can access the Spring Boot application's data through its protected endpoint. All that is needed for Liferay to authorize the application in this case is declaring the external reference code in the `application-default.properties`:
 
@@ -140,27 +135,31 @@ The Spring Boot application starts and prints messages in the log:
 
 ## Verifying the Addition of the Checkout Step
 
-1. Log in as an administrator, open the _Global Menu_ (![Applications Menu icon](../../images/icon-applications-menu.png)) and go to _Control Panel_ &rarr; _Sites_, and add a new Minium Demo site.
+1. Log in as an administrator, open the _Global Menu_ (![Applications Menu icon](../../images/icon-applications-menu.png)) and go to _Control Panel_ &rarr; _Sites_.
 
-1. Open the Minium website and add a few items to your cart.
+1. Add a new Minium site.
+
+1. Open the site and use the account selector to create a new account.
+
+1. Now, add a few items to your cart.
 
 1. Open the mini cart and click _Submit_. This starts the checkout flow.
 
    ![You can see a new step in the checkout flow.](./using-the-checkout-step-client-extension/images/02.png)
 
-1. Continue with the checkout flow till you reach the new step. Enter a number in the purchase order number field and click _Continue_.
+1. Continue checking out till you reach the new step. Enter a number in the purchase order number field and click _Continue_.
 
    ![Enter a purchase order number in the new checkout step.](./using-the-checkout-step-client-extension/images/03.png)
 
 1. Finish placing the order. Now, open the _Global Menu_ (![Applications Menu icon](../../images/icon-applications-menu.png)) and navigate to _Commerce_ &rarr; _Orders_.
 
-1. Find the order you placed and verify the addition of a purchase order number.
+1. Find the order you placed and verify the addition of the purchase order number you entered.
 
    ![The value entered by the user gets added to the order.](./using-the-checkout-step-client-extension/images/04.png)
 
 ## Examining the Code
 
-The provided checkout step contains a form inside `assets/index.js` to accept the user input for the purchase order number. It also has an `ActionRestController` that sends the request containing the purchase order number from the user and adds it to the current order.
+The provided checkout step contains an input field defined in `assets/index.js` to accept the user's input for the purchase order number. It also has an `ActionRestController` that sends the request containing the purchase order number from the user and updates the current order.
 
 ### Examining `index.js`
 
@@ -227,3 +226,8 @@ The `ActionRestController` contains a single post method that has two parameters
 After retrieving the request body as a JSON object, the code proceeds to make an asynchronous HTTP POST request. First, it initializes and configures the `WebClient` by setting the server protocol, base URL, and the relevant URL to update the order. The JSON object contains the order ID used for updating the order.
 
 Then, it calls the `patch()` method on the `WebClient`, setting the `MediaType` and `contentType` values to JSON. After this, it retrieves the purchase order number field (`pon`) from the JSON object and puts it inside the request body. Finally, it sets the required headers and makes the request.
+
+## Related Topics
+
+* [Using a Microservice Client Extension](https://learn.liferay.com/w/dxp/building-applications/client-extensions/microservice-client-extensions/using-a-microservice-client-extension)
+* [OAuth User Agent YAML Configuration Reference](https://learn.liferay.com/w/dxp/building-applications/client-extensions/configuration-client-extensions/oauth-user-agent-yaml-configuration-reference)

@@ -11,17 +11,17 @@ uuid: 807f6b22-c079-41e4-ac6c-38c2bf46e44b
 
 The required permissions for translating content pages and web content depend on the translation method:
 
-- Manual translation requires either *Update* permissions for the resource type, or *Translate* permissions for one or more languages.
+- Manual translation requires either Update permissions for the resource type, or Translate permissions for one or more languages.
 
-- Exporting and importing translations requires *Update* permissions for the resource type.
+- Exporting and importing translations requires Update permissions for the resource type.
 
 ## Assigning Update Permissions
 
-Users with *Update* permissions for pages and web content can manually translate them into any available language. They can also export them as XLIFF files for translation and then import the translations when finished. See [Defining Role Permissions](../../users-and-permissions/roles-and-permissions/defining-role-permissions.md) to learn how to assign these permissions at the application level.
+Users with Update permissions for pages and web content can translate them manually into any available language. They can also export them as XLIFF files for translation and then import the translations when finished. See [Defining Role Permissions](../../users-and-permissions/roles-and-permissions/defining-role-permissions.md) to learn how to assign these permissions at the application level.
 
 ## Assigning Translate Permissions
 
-Translate permissions are language specific and grant access to the *Translate* action for content pages and web content. Users with Translate permissions can only use languages they've been assigned. Once granted, these permissions cannot be restricted by individual assets.
+Translate permissions are language-specific and grant access to the Translate action for content pages and web content. Users with Translate permissions can only use languages they've been assigned. Once granted, these permissions cannot be restricted by individual assets.
 
 !!! note
     The languages available for translation are determined by your instance's localization settings. See [Initial Instance Localization](../../installation-and-upgrades/setting-up-liferay/initial-instance-localization.md) and [Virtual Instance Localization](../../system-administration/configuring-liferay/virtual-instances/localization.md) for more information.
@@ -40,7 +40,7 @@ Follow these steps to assign Translate permissions for specific languages:
 
    ![Assign the desired language permissions to the selected Role.](./managing-translation-permissions/images/01.png)
 
-1. Click *Change* (![Edit icon](../../images/icon-edit.png)) under the Scope column to adjust the permission's scope. By default, it applies to all sites and asset libraries, but you can customize it to specific ones.
+1. Click *Change* (![Edit icon](../../images/icon-edit.png)) under the Scope column to adjust the permission's scope. By default, the change applies to all sites and asset libraries, but you can customize it to specific ones.
 
    Browse recently used sites in the Recent tab, all sites in My Sites, and asset libraries in Asset Libraries to select the scope.
 

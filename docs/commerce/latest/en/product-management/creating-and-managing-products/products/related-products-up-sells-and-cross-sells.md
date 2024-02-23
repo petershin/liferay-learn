@@ -10,21 +10,23 @@ taxonomy-category-names:
 ---
 # Related Products, Up-Sells, and Cross-Sells
 
-You can use product relations to create links between products. After doing so, one product displays other linked products. To add a product relation, you must choose from one of the available relation types. Then, you can use a product publisher and choose the appropriate relation type to display linked products relative to the product featured on the page.
+You can use product relations to create links between products. After doing so, one product displays other linked products. To add a product relation, you must choose from one of the available relation types. Then you can use a product publisher and choose the appropriate relation type to display linked products relative to the product featured on the page.
 
-When placing multiple product publisher widgets on a product detail page, multiple sets of related products may be shown. For instance, one widget can display alternatives while another can display accessories to the product featured on the page.
+When placing multiple product publisher widgets on a product detail page, multiple sets of related products may appear. For instance, one widget can display alternatives while another can display accessories to the product featured on the page.
 
 Here is a list of product relations that come with the Minium and Speedwell site initializers:
 
-* **Up-Sell**: Products with a higher sale value comparable to the featured product.
-* **Spare**: Spare parts or components of the featured product.
-* **Related**: A catch-all set.
-* **Accessories**: Add-on products for use in conjunction with the featured product.
-* **Cross-Sell**: Products complementary to the featured product.
+**Up-Sell**: products with a higher sale value comparable to the featured product.
+
+**Spare**: spare parts or components of the featured product.
+
+**Related**: a catch-all set.
+
+**Accessories**: add-on products for use in conjunction with the featured product.
+
+**Cross-Sell**: products complementary to the featured product.
 
 {bdg-secondary}`Liferay DXP 2024.Q1+/Portal 7.4 GA112+` There are two more product relations used in product bundles. See [Creating Bundles Containing Product Relations](./creating-product-bundles.md#creating-bundles-containing-product-relations) for more information.
-
-In the image above, there are two related products in the product publisher widget at the bottom. To display other relations, you can add more product publisher widgets.
 
 ## Adding a New Product Relation Type
 
@@ -58,7 +60,7 @@ If you're not using a site initializer or want more product relations, you can a
 
 1. Click *Add*.
 
-    ![Adding two related products to the current product.](./related-products-up-sells-and-cross-sells/images/03.png)
+   ![Adding two related products to the current product.](./related-products-up-sells-and-cross-sells/images/03.png)
 
 The two products (Brake Fluid and Brake Rotors) are now associated with the selected product (Brake Pads). This relationship is unidirectional. You can see brake fluid and brake rotors as related products when viewing brake pads. But the opposite is not true. To display product relations, you must configure a product publisher widget.
 

@@ -48,11 +48,10 @@ Follow these steps to create a product bundle:
    * **Field Type**: Choose the type of field used for the option.
    * **Price Type**: Choose whether to use *Static* or *Dynamic* pricing for option values.
 
-   ```{note}
-   *Dynamic* uses the linked SKU's price for a value, while *Static* uses a fixed price set directly in the value field. Dynamic and static prices get added to the current product's base price.
+   !!! note
+       *Dynamic* uses the linked SKU's price for a value. *Static* uses a fixed price set directly in the value field. Dynamic and static prices get added to the current product's base price.
 
-   Also, since product bundles use the Price Type attribute, they can only use the Single Selection and Select from List field types. 
-   ```
+       Also, since product bundles use the Price Type attribute, they can only use the Single Selection and Select from List field types. 
 
    ![Use this form to configure the option's settings.](./creating-product-bundles/images/02.png)
 
@@ -116,9 +115,8 @@ Once added to the mini cart, you can always edit a product bundle before checkin
 
 The price of the cart updates automatically if the selected options change the price. 
 
-```{important}
-The option to edit the bundle isn't available if you add the base product to cart. 
-```
+!!! important
+    The option to edit the bundle isn't available if you add the base product to cart. 
 
 ## Creating Bundles Containing Product Relations
 
@@ -129,7 +127,7 @@ You can now create product bundles that contain two kinds of product relations.
 * Requires in Bundle
 * Incompatible in Bundle
 
-These product relations restrict the options that can or can't be selected in a product bundle. For instance, consider a computer hardware distributor that sells pre-built PCs. Some motherboards might not work with processors made by certain companies whereas some processors need a motherboard with a specific chipset to function. Both these scenarios are illustrated using the following two options.
+These product relations restrict the options that can or can't be selected in a product bundle. For instance, consider a computer hardware distributor that sells pre-built PCs. Some motherboards might not work with processors made by certain companies whereas some processors need a motherboard with a specific chipset to function. Both these scenarios are illustrated using these two options.
 
 !!! important
     This feature is currently behind a release feature flag. Read [Release Feature Flags](https://learn.liferay.com/web/guest/w/dxp/system-administration/configuring-liferay/feature-flags#release-feature-flags) for more information.
@@ -158,7 +156,7 @@ This is a bidirectional relationship, meaning, both these products have the same
 
 ### Incompatible in Bundle
 
-You can use this relation to display incompatible options based on another option's selection. For instance, if there are 4 motherboards available and the user's CPU selection is compatible with only 2 of them, the remaining two appear as incompatible options in the bundle.
+You can use this relation to display incompatible options based on another option's selection. For instance, if there are four motherboards available and the user's CPU selection is compatible with only two of them, the remaining two appear as incompatible options in the bundle.
 
 To add this product relation,
 

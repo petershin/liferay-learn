@@ -21,7 +21,7 @@ The Custom Filter widget is a powerful aid to your search tuning efforts. Withou
 - [Using Elasticsearch's Query String query](#complex-filter-with-query-string)
 - [Boosting Matches to Nested Fields](#boosting-matches-to-nested-fields)
 
-See [Filtering Search Results](./using-the-custom-filter-widget.md) for a detailed explanation of the Custom Filter widget.
+See [Using the Custom Filter Widget](./using-the-custom-filter-widget.md) for a detailed explanation of the Custom Filter widget.
 
 ## Excluding Certain Content
 
@@ -277,6 +277,6 @@ The boost value often needs tuning to meet your needs. Use the Search Insights w
 
 ## Related Content
 
-- [Filtering Search Results](./using-the-custom-filter-widget.md)
+- [Using the Custom Filter Widget](./using-the-custom-filter-widget.md)
 - [Result Rankings](../../search-administration-and-tuning/result-rankings.md)
 - [Synonym Sets](../../search-administration-and-tuning/synonym-sets.md)

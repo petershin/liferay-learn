@@ -43,7 +43,7 @@ For dedicated coverage of the search widgets, see [Search Pages and Widgets](./g
 
 **Search Insights**: Add this to the Search Page to inspect the full query string that's constructed by the back-end search code when the User enters a keyword. Only useful for testing and development. See [Search Insights](./search-pages-and-widgets/search-insights.md) for more information.
 
-**Custom Filter**: Add a widget to the page for each of the filters you'd like applied to the search results. Let search page users see and manipulate the filters or make them invisible and/or immutable. See [Filtering Search Results](./search-pages-and-widgets/search-results/using-the-custom-filter-widget.md) for more information.
+**Custom Filter**: Add a widget to the page for each of the filters you'd like applied to the search results. Let search page users see and manipulate the filters or make them invisible and/or immutable. See [Using the Custom Filter Widget](./search-pages-and-widgets/search-results/using-the-custom-filter-widget.md) for more information.
 
 **Sort**: Let Users reorder the search results based on the value of certain `keyword` fields in the index. For example, show results in alphabetic order of the Title field. The default order is determined by the search engine's _Relevance_ calculation. See [Sorting Search Results](./search-pages-and-widgets/search-results/sorting-search-results.md) for more information.
 

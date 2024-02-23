@@ -1,4 +1,13 @@
 ---
+toc:
+  - ./developer-guide/using-client-extensions.md
+  - ./developer-guide/catalog.md
+  - ./developer-guide/content.md
+  - ./developer-guide/managing-inventory.md
+  - ./developer-guide/order-management.md
+  - ./developer-guide/promotions.md
+  - ./developer-guide/sales.md
+  - '[Reference Materials](https://app.swaggerhub.com/search?owner=liferayinc&query=%20commerce)'
 uuid: 3dcb176e-6a50-4150-97ad-e40f83663c8b
 taxonomy-category-names:
 - Commerce

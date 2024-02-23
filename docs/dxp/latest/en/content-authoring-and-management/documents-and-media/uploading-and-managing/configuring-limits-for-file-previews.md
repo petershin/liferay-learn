@@ -1,4 +1,10 @@
 ---
+taxonomy-category-names:
+    - Digital Asset Management
+    - Documents and Media
+    - Liferay Self-Hosted
+    - Liferay PaaS
+    - Liferay SaaS
 uuid: 91bdb111-e5f0-4ac1-a1cf-5e3dd020a7e6
 ---
 # Configuring Limits for File Previews

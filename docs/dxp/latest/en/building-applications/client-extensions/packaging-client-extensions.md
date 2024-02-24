@@ -94,7 +94,7 @@ An `LCP.json` file is required in each LUFFA.
 
 The build process automatically generates and packages an `LCP.json` file for [batch](./batch-client-extensions.md), [configuration](./configuration-client-extensions.md), and [front-end](./front-end-client-extensions.md).
 
-You must provide an `LCP.json` file in your project for [microservice client extensions](./microservice-client-extensions.md). Add it to the root of your project, and it's copied into the LUFFA when your project is built. This `LCP.json` file configures the container used for the microservice when it's deployed in Liferay Experience Cloud.
+You must provide an `LCP.json` file in your project for [microservice client extensions](./microservice-client-extensions.md). Add it to the root of your project, and it's copied into the LUFFA when your project is built. This `LCP.json` file configures the container used for the microservice when it's deployed in Liferay Cloud.
 
 If packaging the LUFFA yourself, each client extension comes with different specification suggestions for its `LCP.json`:
 

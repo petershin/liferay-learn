@@ -16,8 +16,8 @@ visibility:
 * There are considerations which will drive the decision to one approach or another, depending on the specifics of each project.
 * Liferay provides three product deployment offerings:
   * Liferay Software - Self Hosted
-  * Liferay Experience Cloud Self Managed - PaaS
-  * Liferay Experience Cloud - SaaS
+  * Liferay PaaS
+  * Liferay SaaS
 * Liferay’s preferred approach is SaaS first.
 
 ## Background
@@ -43,8 +43,8 @@ The latest version of Liferay includes three main capability sets: the Digital E
 
 Liferay has always been about preserving customer investment in their chosen software stack and infrastructure. As a result, Liferay has three product deployment offerings so customers can choose the approach that fits their requirements:
 
-* **Liferay Experience Cloud SaaS** provides the full benefit of Liferay DXP without having to worry about infrastructure and upgrading related issues. Customers can focus on building solutions to solve business problems.
-* **Liferay Experience Cloud Self-Managed** provides a platform-as-a-service offering tailored for the Liferay platform.
+* **Liferay SaaS** provides the full benefit of Liferay DXP without having to worry about infrastructure and upgrading related issues. Customers can focus on building solutions to solve business problems.
+* **Liferay PaaS** provides a platform-as-a-service offering tailored for the Liferay platform.
 * **Liferay DXP Self-Hosted** allows a customer to choose exactly how and where they host their Liferay DXP implementation, providing them maximum flexibility but putting more responsibilities on them as well.
 
 ![Liferay offers deployment strategies for SaaS, PaaS, and on-premise deployments of Liferay DXP.](./deployment-strategies/images/02.png)

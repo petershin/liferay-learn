@@ -87,7 +87,7 @@ What is important is to help the customer to succeed with the solutions that are
 
 ![Needing more sites, a faster response time SLA, or more commerce transactions requires moving to a higher plan.](./liferay-pricing-saas/images/05.png)
 
-All customers must select one of the three available plans when purchasing Liferay Experience Cloud SaaS, but there are situations where the customer might need to move to a higher plan. There are three main situations where this might occur, where’s there’s a need for:
+All customers must select one of the three available plans when purchasing Liferay SaaS, but there are situations where the customer might need to move to a higher plan. There are three main situations where this might occur, where’s there’s a need for:
 
 * More sites
 * More mission critical response SLA
@@ -115,7 +115,7 @@ Platinum level support is usually the requirement for any business critical solu
 
 ### Transactions
 
-As with the other Liferay offerings, Liferay Experience Cloud SaaS includes commerce functionalities. What is meant by **transactions** is using the commerce capabilities to the point where a purchase or order is made through Liferay. This must be a “completed checkout in Commerce”.
+As with the other Liferay offerings, Liferay SaaS includes commerce functionalities. What is meant by **transactions** is using the commerce capabilities to the point where a purchase or order is made through Liferay. This must be a “completed checkout in Commerce”.
 
 What’s important here is that using other Commerce functionality such as the Product Catalog does not count as a transaction - only those orders that have a completed checkout step. 
 

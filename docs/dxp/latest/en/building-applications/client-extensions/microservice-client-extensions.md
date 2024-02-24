@@ -24,7 +24,7 @@ Define microservice client extensions to run your own code in response to events
 
 Microservice client extensions require pre-configured authentication profiles to handle requests properly and call protected Liferay APIs. You can add authentication profiles by including them as client extensions within the same project (e.g., [OAuth user agent client extensions](./configuration-client-extensions.md#oauth-user-agent-client-extensions)).
 
-Microservice client extensions are hosted automatically when deployed within Liferay Experience Cloud. If self-hosting a Liferay instance, you must host the microservices that these client extensions use separately.
+Microservice client extensions are hosted automatically when deployed within Liferay Cloud. If self-hosting a Liferay instance, you must host the microservices that these client extensions use separately.
 
 ## Object Action Client Extensions
 

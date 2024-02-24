@@ -10,7 +10,7 @@ visibility:
 **At a Glance**
 
 * Liferay’s preferred approach is SaaS first.
-* Each prospect’s unique requirements and circumstances may be more appropriately implemented with Liferay Experience Cloud Self-Managed, or to DXP Self-Hosted.
+* Each prospect’s unique requirements and circumstances may be more appropriately implemented with Liferay PaaS, or with DXP Self-Hosted.
 * Liferay has identified key considerations that will lead to SaaS, as well as others that will identify when it will not be SaaS.
 * Deployment strategies are not generally discussed during demos, or early-stage sales meetings, but the information learned during these sessions will help to guide the opportunity to one deployment approach or another.
 
@@ -23,7 +23,7 @@ visibility:
 
 After reviewing the deployment options covered above, it has become clear that, for LifeBank, the right option is the SaaS approach because it allows them to focus their efforts on building the application they need to address their business problems.
 
-In this case, Liferay Experience Cloud SaaS was the logical and obvious choice. In a real-world scenario things might not be so obvious.
+In this case, Liferay SaaS was the logical and obvious choice. In a real-world scenario things might not be so obvious.
 
 In demos and discussions it is important to not go through the specifics of every deployment approach with a prospect.
 
@@ -49,21 +49,21 @@ Almost all customers will need features unique to them, and the new approach pro
 
 This doesn’t change one of Liferay’s traditional key strengths - the ability to extend and customize to fit specific needs - just the approach used to doing it.
 
-In most cases the new approaches will fit - which will be one part of the decision making process leading a prospect towards Liferay Experience Cloud SaaS.
+In most cases the new approaches will fit - which will be one part of the decision making process leading a prospect towards Liferay SaaS.
 
-But, there may be some particular use cases that can only be achieved with alternative approaches. It is still possible to customize using the traditional approach of building custom Java OSGi modules, if this approach is needed that is one of the considerations that may direct a prospect towards a deployment approach _other_ than Liferay Experience Cloud SaaS.
+But, there may be some particular use cases that can only be achieved with alternative approaches. It is still possible to customize using the traditional approach of building custom Java OSGi modules, if this approach is needed that is one of the considerations that may direct a prospect towards a deployment approach _other_ than Liferay SaaS.
 
-## When Liferay Experience Cloud SaaS is the right approach
+## When Liferay SaaS is the right approach
 
-As already noted, the _preferred_ deployment approach for Liferay DXP is Liferay Experience Cloud SaaS, and there are three main questions that can be asked to support this:
+As already noted, the _preferred_ deployment approach for Liferay DXP is Liferay SaaS, and there are three main questions that can be asked to support this:
 
 1. Can the problem be solved with OOTB Liferay features?
 2. Can customization requirements be solved with the preferred approach to extensions?
 3. Can it be solved with an upcoming feature (roadmap or requested)?
 
-If the above are true, and the prospect is comfortable with a SaaS approach in the first place, the recommended deployment approach is Liferay Experience Cloud SaaS.
+If the above are true, and the prospect is comfortable with a SaaS approach in the first place, the recommended deployment approach is Liferay SaaS.
 
-## When Liferay Experience Cloud SaaS might not be the right approach
+## When Liferay SaaS might not be the right approach
 
 There are also some considerations that might guide a prospect to an deployment approach other than SaaS.
 
@@ -74,7 +74,7 @@ At a high level these considerations are:
 * There may be Data Sovereignty concerns - for example where there is currently no local data centre.
 * There may be other Data Security or Data Control issues
 
-If any of these considerations are present, SaaS _might_ not be the approach. In these cases Liferay Experience Cloud - Self-Managed (if PaaS is acceptable) or DXP Self-Hosted could be considered.
+If any of these considerations are present, SaaS _might_ not be the approach. In these cases Liferay PaaS (if it's acceptable) or DXP Self-Hosted could be considered.
 
 It is important though that these considerations or objections are not simply taken at face value, but are qualified hard and if needed validated with Liferay’s Solution Concierge Desk.
 

@@ -88,7 +88,7 @@ Customers can create a Publication and invite the necessary users to make their 
 
 ### Themes
 
-[Themes](https://learn.liferay.com/en/w/dxp/site-building/site-appearance/themes/introduction-to-themes) provide a flexible way to customize the look and feel of Liferay sites. Themes require a deployment of code to DXP and as such are not supported for customers of Liferay Experience Cloud SaaS.
+[Themes](https://learn.liferay.com/en/w/dxp/site-building/site-appearance/themes/introduction-to-themes) provide a flexible way to customize the look and feel of Liferay sites. Themes require a deployment of code to DXP and as such are not supported for customers of Liferay SaaS.
 
 ### Stylebooks
 
@@ -126,7 +126,7 @@ Some examples of configuration options include:
 [System Settings](https://learn.liferay.com/w/dxp/system-administration/configuring-liferay/system-settings) allows administrators to configure the global settings for the Liferay portal. Including site, mail or search settings, and more.
 
 ```{note}
-When Liferay DXP is deployed through the Liferay Experience Cloud SaaS offering, System Settings are not available.
+When Liferay DXP is deployed through the Liferay SaaS offering, System Settings are not available.
 ```
 
 ### Instance Settings
@@ -138,7 +138,7 @@ Instance Settings are a powerful tool for customizing the behavior and appearanc
 A [Virtual Instance](https://learn.liferay.com/w/dxp/system-administration/configuring-liferay/virtual-instances) is a logical separation of Liferay's resources, which allows administrators to create multiple, independent sites within a single Liferay installation. Each Virtual Instance has completely separate data and configurations. Each is accessed via a unique domain name and for all intents and purposes, is a separate Liferay-based implementation which shares an installation with additional instances.
 
 ```{note}
-When Liferay DXP is deployed through our Liferay Experience Cloud SaaS offering, Customers are not able to create Virtual Instances. Effectively their environment is a virtual instance, within a shared cluster shared with other Customers. Within this Virtual Instance they are able to create additional Sites, up to the limits provided for their chosen subscription Plan.
+When Liferay DXP is deployed through our Liferay SaaS offering, Customers are not able to create Virtual Instances. Effectively their environment is a virtual instance, within a shared cluster shared with other Customers. Within this Virtual Instance they are able to create additional Sites, up to the limits provided for their chosen subscription Plan.
 ```
 
 Next: [Extending Liferay with Low-Code / No-Code capabilities](./extending-liferay/low-code-no-code.md)

@@ -118,7 +118,7 @@ Next, the deck moves to the second broad challenge, and repeats the process of p
 
 ![Each Base Deck includes details of technical challenges commonly faced in the industry.](./sales-presentations-base-deck/images/12.png)
 
-After the final broad challenge, the deck moves on to cover the types of challenges that naturally occur when technology is used to try to solve problems. This is an opportunity to set up a discussion on the benefits of Liferay Experience Cloud as a solution. The slide covers how enterprise software can be expensive and difficult to procure, and solutions can be rigid and inflexible.  
+After the final broad challenge, the deck moves on to cover the types of challenges that naturally occur when technology is used to try to solve problems. This is an opportunity to set up a discussion on the benefits of Liferay Cloud as a solution. The slide covers how enterprise software can be expensive and difficult to procure, and solutions can be rigid and inflexible.  
 
 Customers either have to modify their business processes to align with the technology or have to create costly and difficult to maintain customizations that lock them into a specific product or version. Bringing new technology into an organization can also require provisioning new hardware and training IT staff to support the solution.
 
@@ -126,7 +126,7 @@ Customers either have to modify their business processes to align with the techn
 
 ![Each Base Deck includes solutions to common technical challenges.](./sales-presentations-base-deck/images/13.png)
 
-As in the previous sections, after discussing the challenges, the solution to those challenges is provided. For example, in this case by building a solution on Liferay Experience Cloud, each of those challenges can be addressed.
+As in the previous sections, after discussing the challenges, the solution to those challenges is provided. For example, in this case by building a solution on Liferay SaaS, each of those challenges can be addressed.
 
 ## About Liferay Slides
 

@@ -60,7 +60,7 @@ Menus can differ by page: landing pages can show a simple list of frequently vis
 
 Klabin is the biggest producer and exporter of packaging paper in Brazil. With more than 23,000 direct employees, Klabin knew they needed a modern intranet solution able to harness the collective knowledge and experience of their diverse workforce. Additionally, with 24 plants spread throughout Brazil and Argentina, Klabin needed a way to sustain the company’s culture digitally and to promote agile and organized communication for employees.
 
-Klabin selected Liferay Experience Cloud Self-Managed as the centerpiece of their modern intranet project not only for the lower TCO that a cloud-based solution provides, but also for the Liferay's underlying DXP features. 
+Klabin selected Liferay PaaS as the centerpiece of their modern intranet project not only for the lower TCO that a cloud-based solution provides, but also for the Liferay's underlying DXP features. 
 
 Some key features were Liferay's out-of-the-box collaboration tools. By enabling users to share knowledge and access relevant content, they were able to launch a solution that not only led to greater productivity and strengthened organization culture, but also earned more than a 95% user satisfaction rating.
 

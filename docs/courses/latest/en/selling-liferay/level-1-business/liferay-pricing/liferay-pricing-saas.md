@@ -11,7 +11,7 @@ visibility:
 
 * New pricing model for Liferay SaaS introduced in 2023
 * Minor changes for 2024
-* New pricing supports Endless Solutions on Liferay Experience Cloud
+* New pricing supports Endless Solutions on Liferay SaaS
 * Three plans provide different levels of capabilities:
   * Pro
   * Business
@@ -24,11 +24,11 @@ visibility:
 
 ## Updated Pricing for 2024
 
-The Liferay Experience Cloud SaaS offering was launched in Q2 2022. A lot of feedback on this pricing was received, and a new pricing model was introduced in 2023.
+The Liferay SaaS offering was launched in Q2 2022. A lot of feedback on this pricing was received, and a new pricing model was introduced in 2023.
 
 This model is retained in 2024, with minor updates.
 
-## Key principles for Liferay Experience Cloud SaaS Pricing
+## Key principles for Liferay SaaS Pricing
 
 With the new pricing we wanted to tackle four challenges:
 
@@ -73,7 +73,7 @@ An alternative then is to price based on known users, which works well for custo
 
 The solution to this challenge was to combine both models, to have metrics for both Page Views and Users, with each lever operating independently of the other.
 
-![Liferay Experience Cloud SaaS Pricing tracks both users and page views.](./liferay-pricing-saas/images/01.png)
+![Liferay SaaS Pricing tracks both users and page views.](./liferay-pricing-saas/images/01.png)
 
 ### Anonymous Page Views
 

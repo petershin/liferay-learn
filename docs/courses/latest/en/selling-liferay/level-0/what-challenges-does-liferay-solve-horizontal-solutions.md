@@ -40,7 +40,7 @@ However, there are some solutions and industries we are a particularly good fit 
 
 ## Definition of a Solution
 
-A solution is a common business need or a set of challenges that Liferay Experience Cloud is well-suited to address.
+A solution is a common business need or a set of challenges that Liferay Cloud is well-suited to address.
 
 ## Land and Expand
 

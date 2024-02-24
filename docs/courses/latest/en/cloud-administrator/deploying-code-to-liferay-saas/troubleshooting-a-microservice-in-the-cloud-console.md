@@ -157,7 +157,7 @@ Try testing the new changes one more time.
 
 Now you can see the object action client extension works again, and your new log message appears alongside the existing logging. If you submit more values on your Liferay instance, the counter value increments each time.
 
-Congratulations! You've completed the final module covering Liferay Experience Cloud. The rest of the course focuses on Liferay Experience Cloud Self-Managed. 
+Congratulations! You've completed the final module covering Liferay SaaS. The rest of the course focuses on Liferay PaaS. 
 
 Next: [Cloud Configuration](../cloud-configuration.md). 
 

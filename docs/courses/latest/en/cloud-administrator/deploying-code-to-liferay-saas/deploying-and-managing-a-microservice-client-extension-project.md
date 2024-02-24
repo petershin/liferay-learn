@@ -41,11 +41,11 @@ The sample Spring Boot project uses an `application.properties` file to register
    com.liferay.lxc.dxp.server.protocol=https
    ```
 
-Now the project is correctly configured for your LXC instance and ready to deploy.
+Now the project is correctly configured for your Liferay SaaS instance and ready to deploy.
 
-## Updating Services in Liferay PaaS the Project
+## Deploying to Your Liferay SaaS Instance
 
-Build and deploy the project to your LXC instance from the sample Spring Boot project's folder.
+Build and deploy the project to your Liferay SaaS instance from the sample Spring Boot project's folder.
 
 1. Run this command to build the project into a deployable [LUFFA](https://learn.liferay.com/w/dxp/building-applications/client-extensions/packaging-client-extensions):
 

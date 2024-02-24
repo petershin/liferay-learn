@@ -65,7 +65,7 @@ liferay-sample-etc-spring-boot-oauth-application-user-agent:
     type: oAuthApplicationUserAgent
 ```
 
-The external application/microservice is created with the `bootJar` command that is available from the [Spring Boot Gradle Plugin](https://docs.spring.io/spring-boot/docs/current/gradle-plugin/reference/htmlsingle/). The application JAR must be included in the LUFFA for deployment in LXC.
+The external application/microservice is created with the `bootJar` command that is available from the [Spring Boot Gradle Plugin](https://docs.spring.io/spring-boot/docs/current/gradle-plugin/reference/htmlsingle/). The application JAR must be included in the LUFFA for deployment in Liferay SaaS.
 
 The most important part of the `client-extension.yaml` is in the `liferay-sample-etc-spring-boot-oauth-application-user-agent` definition. This sets up Liferay as the authorization server, so that the front-end client extension you deploy next can call the resource server's secure endpoint and display its payload.
 
@@ -174,7 +174,7 @@ try {
 }
 ```
 
-This call provides the client with a token, which the client can use as a bearer token when requesting the resources from the `/dad/joke` route in the resource server. The client code doesn't need to worry about the location of the server it's requesting, as this information is encapsulated in the OAuth 2 application. In self-hosted environments it's declared in the OAuth application user agent's `client-extension.yaml` properties, as `.serviceAddress` and `.serviceScheme`. In LXC environments the resource server is controlled by Liferay, so no declaration of its location is necessary. This sets up authorization code flow for the client and resource server communication, so all that's left is for the client to call the endpoint in the resource server. `DadJoke.js` fetches from the `/dad/joke` route like this:
+This call provides the client with a token, which the client can use as a bearer token when requesting the resources from the `/dad/joke` route in the resource server. The client code doesn't need to worry about the location of the server it's requesting, as this information is encapsulated in the OAuth 2 application. In self-hosted environments it's declared in the OAuth application user agent's `client-extension.yaml` properties, as `.serviceAddress` and `.serviceScheme`. In Liferay SaaS environments the resource server is controlled by Liferay, so no declaration of its location is necessary. This sets up authorization code flow for the client and resource server communication, so all that's left is for the client to call the endpoint in the resource server. `DadJoke.js` fetches from the `/dad/joke` route like this:
 
 ```js
 React.useEffect(() => {

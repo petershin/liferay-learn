@@ -127,9 +127,9 @@ The ability to support integration, inclusion of low-code capabilities, a built-
 
 ### 50-100K Starting Point
 
-A common starting point for Liferay Experience Cloud SaaS opportunities appears to be an annual subscription _starting_ at between 50-100 K USD/EUR.  
+A common starting point for Liferay SaaS opportunities appears to be an annual subscription _starting_ at between 50-100 K USD/EUR.  
 
-This list is _not_ exhaustive and it is also not definitive, but it could provide some pointers when attempting to identify Liferay Experience Cloud SaaS deals.
+This list is _not_ exhaustive and it is also not definitive, but it could provide some pointers when attempting to identify Liferay SaaS deals.
 
 Congratulations! You've completed the module on the ideal customer profile! 
 

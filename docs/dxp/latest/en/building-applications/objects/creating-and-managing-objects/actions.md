@@ -32,7 +32,7 @@ Liferay Objects provides these action types:
 | Groovy Script | Execute [Groovy](https://groovy-lang.org/) scripts. |
 
 ```{important}
-Groovy script actions are only available for Liferay Experience Cloud Self-Managed and Liferay DXP Self-Hosted.
+Groovy script actions are only available for Liferay PaaS and Liferay DXP Self-Hosted.
 ```
 
 <!--TASK: When client extensions docs are ready, mention being able to add Action Types and Notification Types.-->

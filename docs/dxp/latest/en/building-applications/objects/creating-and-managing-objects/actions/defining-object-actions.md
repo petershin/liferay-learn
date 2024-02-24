@@ -66,7 +66,7 @@ To add an action,
    | Groovy Script          | Execute custom [Groovy](https://groovy-lang.org/) scripts.    |
 
    ```{important}
-   Groovy script actions are only available for Liferay Experience Cloud Self-Managed and Liferay DXP Self-Hosted.
+   Groovy script actions are only available for Liferay PaaS and Liferay DXP Self-Hosted.
    ```
 
    See [Understanding Action Types](./understanding-action-types.md#understanding-action-types) for more information.

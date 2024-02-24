@@ -40,7 +40,7 @@ You can export any type of data supported by the [batch engine framework](../../
 When exporting, use the `jsont` file format. `jsont` is required for `*.batch-engine-dat.json` files when using in conjunction with batch client extensions.
 ```
 
-Once the `*.batch-engine-data.json` file is added to a [batch client extension](./batch-client-extensions/batch-yaml-configuration-reference.md), deploy the [built archive](./packaging-client-extensions.md) to Liferay Experience Cloud or self-hosted Liferay instances.
+Once the `*.batch-engine-data.json` file is added to a [batch client extension](./batch-client-extensions/batch-yaml-configuration-reference.md), deploy the [built archive](./packaging-client-extensions.md) to Liferay Cloud or self-hosted Liferay instances.
 
 ## Related Topics
 

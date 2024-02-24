@@ -28,7 +28,7 @@ But for now, discovering more about your prospective customer will help you to s
 
 ## Building Tailored Solutions
 
-Solutions implemented with Liferay are not turnkey applications - even when a customer chooses Liferay Experience Cloud SaaS as their deployment approach. Liferay DXP provides extensive functionality out-of-the-box. In all cases, this will need to be configured to start to build a solution:
+Solutions implemented with Liferay are not turnkey applications - even when a customer chooses Liferay SaaS as their deployment approach. Liferay DXP provides extensive functionality out-of-the-box. In all cases, this will need to be configured to start to build a solution:
 
 * Pages have to be added
 * Content has to be created
@@ -57,7 +57,7 @@ For this last point, please validate with the Solution Concierge Desk - Liferay 
 
 ## Determining When SaaS Might not be Possible
 
-Liferay Experience Cloud SaaS should be the default option, but we do recognize that there will be situations where it might not be the optimal approach for a customer:
+Liferay SaaS should be the default option, but we do recognize that there will be situations where it might not be the optimal approach for a customer:
 
 * The customer is not open to SaaS
 * They have concerns over Data Sovereignty - for example if Liferay doesn't yet have a data center local to the customer
@@ -65,7 +65,7 @@ Liferay Experience Cloud SaaS should be the default option, but we do recognize 
 
 In these cases you should consider the other deployment options:
 
-* Liferay Experience Cloud Self-Managed (where PaaS is acceptable)
+* Liferay PaaS (where it's acceptable)
 * Liferay DXP Self-Hosted
 
 Both of these approaches can be provided with a Managed Service option - provided by Liferay or our Partners, which can provide a customer with a SaaS-like experience while addressing their concerns.

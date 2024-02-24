@@ -216,7 +216,7 @@ The course content referenced below is provided as-is and may not be up to date 
 * [7.1 Upgrading Liferay (5/5) - Testing Your Upgrade](https://youtube.com/playlist?list=PLm3_L1L-YuebKxhCTuyTEnEdqTZu6UnEk)
 
 
-## LXC-Self Managed (DXP Cloud)
+## Liferay PaaS
 
 ### 7.3 DXP Cloud
 

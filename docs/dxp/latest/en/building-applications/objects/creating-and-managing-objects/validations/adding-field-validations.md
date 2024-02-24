@@ -59,7 +59,7 @@ To add a validation,
    When using Expression Builder, you can browse and add fields, operators, and functions to your conditions via the side panel. See [Using Expression Builder Validations](#using-expression-builder-validations) for more information.
 
    !!! important
-       Groovy script validations are only available for Liferay Experience Cloud Self-Managed and Liferay DXP Self-Hosted.
+       Groovy script validations are only available for Liferay PaaS and Liferay DXP Self-Hosted.
 
    To set up composite key validations, go to the *Unique Composite Key* tab and select the fields to use as a composite key. See [Using Composite Key Validations](#using-composite-key-validations) for more information.
 
@@ -83,7 +83,7 @@ While activated, the validation runs for all new object entries and is displayed
 
 ## Using Groovy Validations
 
-{bdg-primary}`Liferay Experience Cloud Self-Managed and Liferay DXP Self-Hosted`
+{bdg-primary}`Liferay PaaS and Liferay DXP Self-Hosted`
 
 Groovy validations support all standard [Groovy Script](https://groovy-lang.org/) capabilities. When defining conditions, you must use the `invalidFields` variable. Liferay only displays the validation error message when `invalidFields` returns `true`.
 

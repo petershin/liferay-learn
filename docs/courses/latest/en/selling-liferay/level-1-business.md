@@ -60,7 +60,7 @@ Provides best practices for outbound prospecting for Liferay opportunities.
 :::{grid-item-card} Liferay Pricing
 :link: ./level-1-business/liferay-pricing.md
 
-Explains the pricing model for Liferay Experience Cloud SaaS, PaaS, and DXP Self-Hosted.
+Explains the pricing model for Liferay SaaS, PaaS, and DXP Self-Hosted.
 :::
 
 :::{grid-item-card} Liferay Sales Presentations and How to Master Them

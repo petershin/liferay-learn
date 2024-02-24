@@ -232,9 +232,9 @@ The environment variable you use can point to one of two types of routes:
 
    See [OAuth Headless Server Client Extensions](configuration-client-extensions.md#oauth-headless-server-client-extensions) and [OAuth User Agent Client Extensions](configuration-client-extensions.md#oauth-user-agent-client-extensions) for examples.
 
-### Pointing to Routes in Liferay Experience Cloud
+### Pointing to Routes in Liferay Cloud
 
-Containers in Liferay Experience Cloud have these environment variables set automatically. The routes are mounted automatically into the containers at the paths the environment variables define.
+Containers in Liferay Cloud have these environment variables set automatically. The routes are mounted automatically into the containers at the paths the environment variables define.
 
 ### Pointing to Routes in Self-Hosted Environments
 

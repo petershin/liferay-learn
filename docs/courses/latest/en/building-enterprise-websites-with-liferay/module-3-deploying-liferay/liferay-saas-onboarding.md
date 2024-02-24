@@ -19,7 +19,7 @@ Once you have logged in to your Liferay DXP environment, you have access to almo
 
 ![Login to Liferay and begin building.](./liferay-saas-onboarding/images/02.png)
 
-Note, to ensure the security and privacy of individual tenants, certain DXP features are not accessible. For a comprehensive breakdown of feature availability within Liferay SaaS, check [Liferay Experience Cloud Compatibility Matrix](https://help.liferay.com/hc/en-us/articles/17817489997325-Liferay-Experience-Cloud-Compatibility-Matrix).
+Note, to ensure the security and privacy of individual tenants, certain DXP features are not accessible. For a comprehensive breakdown of feature availability within Liferay SaaS, check the [Liferay SaaS Compatibility Matrix](https://learn.liferay.com/w/liferay-cloud/reference/liferay-saas-compatibility-matrix).
 
 ## The Cloud Administration Console
 

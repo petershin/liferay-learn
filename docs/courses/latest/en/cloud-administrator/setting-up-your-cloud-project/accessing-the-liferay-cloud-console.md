@@ -28,7 +28,7 @@ If your invitation was for a single environment (such as `dev` or `uat`) instead
 
 Take some time to navigate around the console to familiarize yourself with the available controls.
 
-If your project is on Liferay Experience Cloud, you also receive emails from **lxc.app** inviting you to set a password for your new administrator account on your Liferay instance. Accept this email as well so you can log in and manage your site.
+If your project is on Liferay SaaS, you also receive emails from **lxc.app** inviting you to set a password for your new administrator account on your Liferay instance. Accept this email as well so you can log in and manage your site.
 
 Next: [Adding Team Members to Your Project](./adding-team-members-to-the-project.md).
 

@@ -136,8 +136,8 @@ Liferay [Headless integration](https://learn.liferay.com/w/dxp/headless-delivery
 * This approach provides developers with greater control over the user experience, and enables faster time-to-market for their applications.
 
 ```{note}
-* Some of above mentioned integrations might not be possible with Liferay Experience Cloud SaaS
-* Please check with your designated Liferay contact on the latest supported integrations if you are using Liferay Experience Cloud SaaS.
+* Some of above mentioned integrations might not be possible with Liferay SaaS
+* Please check with your designated Liferay contact on the latest supported integrations if you are using Liferay SaaS.
 ```
 
 Next [Extending Liferay with Client Extensions](./client-extensions.md)

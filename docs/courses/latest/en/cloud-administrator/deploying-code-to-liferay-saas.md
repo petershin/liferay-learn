@@ -10,7 +10,7 @@ uuid: 819aa6d5-2b61-4438-b0dc-b848e6a25c87
 Now that you've accessed and started using the Cloud console, you're ready to deploy a client extension project to your Liferay SaaS instance.
 
 ```{note}
-This module requires a project on Liferay Experience Cloud. If you only have a project on Liferay PaaS, skip ahead to [Cloud Configuration](./cloud-configuration.md).
+This module requires a Liferay SaaS instance. If you only have a project on Liferay PaaS, skip ahead to [Cloud Configuration](./cloud-configuration.md).
 ```
 
 With Liferay SaaS, you don't need to worry about configuring or maintaining the infrastructure outside of Liferay, so you can simply focus on using the tools within Liferay DXP to build and manage your sites. However, when Liferay's out-of-the-box tools aren't enough, you can use client extensions.

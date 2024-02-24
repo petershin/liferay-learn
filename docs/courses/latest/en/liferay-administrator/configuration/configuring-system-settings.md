@@ -9,7 +9,7 @@ System settings apply across instances, sites, or widgets. Settings made here ap
 
 ### System Settings in Liferay SaaS
 
-System settings are not accessible in LXC. Contact Liferay Cloud support to configure system settings.
+System settings are not accessible in Liferay SaaS. Contact Liferay Cloud support to configure system settings.
 
 ### System Settings in Liferay PaaS and Self-hosted
 

@@ -22,7 +22,7 @@ Actions define custom operations triggered by object entry events. Liferay provi
 | [Groovy Script](#groovy-script)                   | Execute [Groovy](https://groovy-lang.org/) scripts.           |
 
 ```{important}
-Groovy script actions are only available for Liferay Experience Cloud Self-Managed and Liferay DXP Self-Hosted.
+Groovy script actions are only available for Liferay PaaS and Liferay DXP Self-Hosted.
 ```
 
 <!--TASK: When Client Extensions documentation is ready, note that you can create custom object actions. -->

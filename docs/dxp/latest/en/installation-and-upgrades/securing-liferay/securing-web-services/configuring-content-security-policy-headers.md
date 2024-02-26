@@ -3,11 +3,13 @@ uuid: 54d8d407-1f2d-4f9c-bae5-3329cdeda0a0
 ---
 # Configuring Content Security Policy Headers
 
-Liferay provides an extra layer of security that detects and mitigates certain types of attacks (like Cross-Site Scripting (XSS), data injection) with Content Security Policy (CSP) headers. You can enable CSP and users receive the configured headers on each HTTP request. These headers are then interpreted and enforced by their browsers.
+Modern browsers use [Content Security Policy](https://content-security-policy.com) HTTP response headers to enhance web pages' security to mitigate certain types of attacks (like Cross-Site Scripting or data injection). You can enable CSP on Liferay to send the configured headers on each HTTP request. 
 
-There are several options to set up a CSP policy. It is best to understand your user's needs and come up with a policy that suits their requirements. Read [Content Security Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy) for more information on CSP.
+CSP policies have many options. It is best to understand your users' needs and come up with a policy to suit their requirements. For an example of a browser implementation of Content Security Policies, read [Mozilla's implementation](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy) for more information.
 
 ## Configuring a Sample Content Security Policy
+
+<!-- This goes way too fast into the example. You haven't discussed the concept of the two different kinds of policies (Directives and Values) and how Liferay supports them. You were also supposed to have two examples, one for directives, and one for values; it looks like there's only one example here where you've combined the two concepts without telling the reader what you're doing. This doesn't help anybody understand the feature and how to use it. Please revise accordingly -Rich -->
 
 Imagine one of your company servers responsible for serving all the scripts to your website is compromised. This can lead to possible attacks like injection of malicious scripts to different web pages within your site. Using CSP, you can disable loading scripts if it originates from the compromised server. To do this,
 

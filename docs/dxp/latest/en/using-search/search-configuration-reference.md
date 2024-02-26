@@ -157,9 +157,12 @@ This entry has one repeatable property (use array syntax if you're defining via 
 
 **Configuration File:** `com.liferay.portal.search.configuration.ReindexConfiguration.config`
 
-This entry contains only one property:
+**`defaultReindexExecutionMode`**: Set the default mode for re-indexing Liferay's content. Choose from Full (default), Concurrent, or Sync. See [Re-Indexing Modes](./search-administration-and-tuning/re-indexing-modes.md) for more information.
 
 **`indexingBatchSizes`**: Set the number of documents (the default value is 1000) indexed per batch for model types that support batch indexing. For models with large documents, decreasing this value may improve stability when executing a full re-index.
+
+!!! important
+To configure indexing batch size for web content articles, the model you specify depends on a setting in web content itself. If `indexAllArticleVersionsEnabled` is `true` in System Settings &rarr; Content & Data &rarr; Web Content &rarr; Web Content (virtual instance scope), you must set `com.liferay.journal.model.JournalArticle==[size]`. If disabled, use `com.liferay.journal.model.JournalArticleResource=[size]`.
 
 ### Engine Helper
 

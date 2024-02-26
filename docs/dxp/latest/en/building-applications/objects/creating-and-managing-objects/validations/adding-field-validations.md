@@ -13,7 +13,7 @@ taxonomy-category-names:
 
 Validations set rules for determining valid field entries. Each validation has its own trigger, conditions, and error message, which you can set via the Objects UI. You can define validations using [Groovy scripts](#using-groovy-validations) or [Liferay expressions](#using-expression-builder-validations).
 
-A third type of validation is available as of Liferay DXP 2024.Q1+/GA112+: [Composite Key validation](#using-composite-key-validations). Use composite key validations to require that a combination of two or more fields is unique.
+A third type of validation is available as of Liferay DXP 2024.Q1+/GA112+: [Composite Key validation](#using-composite-key-validations). Use composite key validations to require that a combination of two or more fields be unique.
 
 ![Create validations for custom and system object fields.](./adding-field-validations/images/01.png)
 
@@ -61,7 +61,7 @@ To add a validation,
    !!! important
        Groovy script validations are only available for Liferay Experience Cloud Self-Managed and Liferay DXP Self-Hosted.
 
-   To set up composite key validations, go to the *Unique Composite Key* tab, then select the fields to use as a composite key. See [Using Composite Key Validations](#using-composite-key-validations) for more information.
+   To set up composite key validations, go to the *Unique Composite Key* tab and select the fields to use as a composite key. See [Using Composite Key Validations](#using-composite-key-validations) for more information.
 
    ![Choose the fields to use as a composite key.](./adding-field-validations/images/09.png)
 
@@ -179,11 +179,11 @@ System objects have their own default fields, though there is some overlap with 
 
 {bdg-secondary}`Liferay DXP 2024.Q1+/GA112+`
 
-To add composite key validation in your object, first enable its release feature flag. Go to *Global Menu* (![Global Menu](../../../../images/icon-applications-menu.png)) &rarr; *Control Panel* &rarr; *Instance Settings* &rarr; *Feature Flags*. Open the *Release* section and enable *Improve Field Validations (LPS-187854)*.
+To add composite key validation to your object, first enable its release feature flag. Go to *Global Menu* (![Global Menu](../../../../images/icon-applications-menu.png)) &rarr; *Control Panel* &rarr; *Instance Settings* &rarr; *Feature Flags*. Open the *Release* section and enable *Improve Field Validations (LPS-187854)*.
 
-Unique composite keys are required in some data models and applications. For example, an orders object can require that each combination of customer ID and order date are unique in the system. Once enforced, this composite key can be used to look up and work with unique order entries. The Unique Composite Key validation ensures that a combination of fields is unique in the scope of the object. Site scoped objects can have unique composite keys in the site, while instance scoped objects can have unique composite keys throughout the instance.
+Some data models and applications require unique composite keys. For example, an orders object can require that each combination of customer ID and order date are unique in the system. Once enforced, this composite key can be used to look up and work with unique order entries. The Unique Composite Key validation ensures that a combination of fields is unique in the scope of the object. Site-scoped objects can have unique composite keys in the site, while instance-scoped objects can have unique composite keys throughout the instance.
 
-You can use text, integer, and picklist fields in composite keys. You can also use relationship fields on the child side of a one to many relationship.
+You can use text, integer, and picklist fields in composite keys. You can also use relationship fields on the child side of a one-to-many relationship.
 
 ![You can use relationship fields in composite keys.](./adding-field-validations/images/10.png)
 
@@ -193,11 +193,11 @@ You cannot add a field to a composite key if it already has data.
 
 Certain actions are only supported in draft objects:
 
-| Action | Object Status | Supported |
-|:---|:---|:---|
-| Delete the validation | Draft<br><br>Published | &#10004;<br><br>&#10004; |
-| Remove a field from the validation | Draft<br><br>Published | &#10004;<br><br>&#10008; |
-| Delete a field that's being used in a validation| Draft<br><br>Published |  &#10008;<br><br>&#10008; |
+| Action                                           | Object Status          | Supported                |
+|:-------------------------------------------------|:-----------------------|:-------------------------|
+| Delete the validation                            | Draft<br><br>Published | &#10004;<br><br>&#10004; |
+| Remove a field from the validation               | Draft<br><br>Published | &#10004;<br><br>&#10008; |
+| Delete a field that's being used in a validation | Draft<br><br>Published | &#10008;<br><br>&#10008; |
 
 ## Related Topics
 

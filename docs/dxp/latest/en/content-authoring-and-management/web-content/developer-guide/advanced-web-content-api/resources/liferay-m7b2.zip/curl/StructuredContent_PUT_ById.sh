@@ -1,35 +1,40 @@
 curl \
 	"http://localhost:8080/o/headless-delivery/v1.0/structured-contents/${1}" \
-	-H "Content-Type: application/json" \
-	-X "PUT" \
-	-u "test@liferay.com:learn" \
+	--header "Content-Type: application/json" \
+	--request "PUT" \
+	--user "test@liferay.com:learn" \
 	--data-binary @- << EOF
 		{
-			"contentFields": [ {
-				"contentFieldValue": {
-					"data": "This text describes Goo."
+			"contentFields": [
+				{
+					"contentFieldValue": {
+						"data": "This text describes Goo."
+					},
+					"name": "TextReference"
 				},
-				"name": "TextReference"
-			}, {
-				"contentFieldValue": {
-					"image": {
-						"description": "This text describes Goo's image.",
-						"id": "${3}"
-					}
+				{
+					"contentFieldValue": {
+						"image": {
+							"description": "This text describes Goo's image.",
+							"id": "${3}"
+						}
+					},
+					"name": "ImageReference"
 				},
-				"name": "ImageReference"
-			}, {
-				"contentFieldValue": {
-					"data": "2021-10-30T00:00:00Z"
+				{
+					"contentFieldValue": {
+						"data": "2021-10-30T00:00:00Z"
+					},
+					"name": "DateReference"
 				},
-				"name": "DateReference"
-			}, {
-				"contentFieldValue": {
-					"data": "Goo"
-				},
-				"name": "SingleSelectionReference"
-			} ],
+				{
+					"contentFieldValue": {
+						"data": "Goo"
+					},
+					"name": "SingleSelectionReference"
+				}
+			],
 			"contentStructureId": "${2}",
 			"title": "Baker"
 		}
-	EOF
+EOF

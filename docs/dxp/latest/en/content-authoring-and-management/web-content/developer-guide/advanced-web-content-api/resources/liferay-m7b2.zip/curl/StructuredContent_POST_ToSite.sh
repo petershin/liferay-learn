@@ -1,36 +1,41 @@
 curl \
 	"http://localhost:8080/o/headless-delivery/v1.0/sites/${1}/structured-contents" \
-	-H "Accept: application/json" \
-	-H "Content-Type: application/json" \
-	-X "POST" \
-	-u "test@liferay.com:learn" \
+	--header "Accept: application/json" \
+	--header "Content-Type: application/json" \
+	--request "POST" \
+	--user "test@liferay.com:learn" \
 	--data-binary @- << EOF
 		{
-			"contentFields": [ {
-				"contentFieldValue": {
-					"data": "This text describes Foo."
+			"contentFields": [
+				{
+					"contentFieldValue": {
+						"data": "This text describes Foo."
+					},
+					"name": "TextReference"
 				},
-				"name": "TextReference"
-			}, {
-				"contentFieldValue": {
-					"image": {
-						"description": "This text describes Foo's image.",
-						"id": "${3}"
-					}
+				{
+					"contentFieldValue": {
+						"image": {
+							"description": "This text describes Foo's image.",
+							"id": "${3}"
+						}
+					},
+					"name": "ImageReference"
 				},
-				"name": "ImageReference"
-			}, {
-				"contentFieldValue": {
-					"data": "2021-08-30T00:00:00Z"
+				{
+					"contentFieldValue": {
+						"data": "2021-08-30T00:00:00Z"
+					},
+					"name": "DateReference"
 				},
-				"name": "DateReference"
-			}, {
-				"contentFieldValue": {
-					"data": "Foo"
-				},
-				"name": "SingleSelectionReference"
-			} ],
+				{
+					"contentFieldValue": {
+						"data": "Foo"
+					},
+					"name": "SingleSelectionReference"
+				}
+			],
 			"contentStructureId": "${2}",
 			"title": "Able"
 		}
-	EOF
+EOF

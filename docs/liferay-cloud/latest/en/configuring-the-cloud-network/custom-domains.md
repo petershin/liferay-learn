@@ -112,4 +112,4 @@ See [Load Balancer](./load-balancer.md) to learn more about SSL certificates in 
 ## Related Topics
 
 - [Load Balancer](./load-balancer.md)
-- [Configuration Via LCP.json](../../reference/configuration-via-lcp-json.md)
+- [Configuration Via LCP.json](../reference/configuration-via-lcp-json.md)

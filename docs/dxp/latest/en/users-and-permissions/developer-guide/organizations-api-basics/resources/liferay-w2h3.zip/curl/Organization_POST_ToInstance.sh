@@ -1,6 +1,9 @@
 curl \
 	"http://localhost:8080/o/headless-admin-user/v1.0/organizations" \
-	-H "Content-Type: application/json" \
-	-X "POST" \
-	-d "{\"name\": \"Able\"}" \
-	-u "test@liferay.com:learn"
+	--data-raw '
+		{
+			"name": "Able"
+		}' \
+	--header "Content-Type: application/json" \
+	--request "POST" \
+	--user "test@liferay.com:learn"

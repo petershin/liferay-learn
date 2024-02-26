@@ -12,57 +12,88 @@ function main {
 
 	curl \
 		"http://localhost:8080/o/headless-delivery/v1.0/sites/${1}/documents" \
-		-F "document={\"description\": \"Baker\", \"title\": \"Able Document\"}" \
-		-F "file=@b9f3.txt" \
-		-H "Content-Type: multipart/form-data" \
-		-X "POST" \
-		-u "test@liferay.com:learn"
+		--form "document={\"description\": \"Baker\", \"title\": \"Able Document\"}" \
+		--form "file=@b9f3.txt" \
+		--header "Content-Type: multipart/form-data" \
+		--request "POST" \
+		--user "test@liferay.com:learn"
 
 	local documentFolderId=$(curl \
 		"http://localhost:8080/o/headless-delivery/v1.0/sites/${1}/document-folders" \
-		-H "Content-Type: application/json" \
-		-X "POST" \
-		-d "{\"name\": \"Able Document Folder\"}" \
-		-u "test@liferay.com:learn" | \
+		--data-raw '
+			{
+				"name": "Able Document Folder"
+			}' \
+		--header "Content-Type: application/json" \
+		--request "POST" \
+		--user "test@liferay.com:learn" | \
 		jq '.id'
 	)
 
 	curl \
 		"http://localhost:8080/o/headless-delivery/v1.0/document-folders/${documentFolderId}/documents" \
-		-F "document={\"description\": \"Baker\", \"title\": \"Able Document\"}" \
-		-F "file=@b9f3.txt" \
-		-H "Content-Type: multipart/form-data" \
-		-X "POST"
-		-u "test@liferay.com:learn"
+		--form "document={\"description\": \"Baker\", \"title\": \"Able Document\"}" \
+		--form "file=@b9f3.txt" \
+		--header "Content-Type: multipart/form-data" \
+		--request "POST"
+		--user "test@liferay.com:learn"
 
 	local contentStructuredId=$(curl \
 		"http://localhost:8080/o/headless-delivery/v1.0/sites/${2}/content-structures?search=Basic%20Web%20Content" \
-		-u "test@liferay.com:learn" | \
+		--user "test@liferay.com:learn" | \
 		jq '.items[].id'
 	)
 
 	curl \
 		"http://localhost:8080/o/headless-delivery/v1.0/sites/${1}/structured-contents" \
-		-H "Content-Type: application/json" \
-		-X "POST" \
-		-d "{\"contentFields\": [{\"contentFieldValue\": {\"data\": \"<p>Foo</p>\"}, \"name\": \"content\"}], \"contentStructureId\": \"${contentStructuredId}\", \"title\": \"Able Content\"}" \
-		-u "test@liferay.com:learn"
+		--data-raw '
+			{
+				"contentFields": [
+					{
+					"contentFieldValue": {
+						"data": "<p>Foo</p>"
+					},
+					"name": "content"
+					}
+				],
+				"contentStructureId": "${contentStructuredId}",
+				"title": "Able Content"
+			} ' \
+		--header "Content-Type: application/json" \
+		--request "POST" \
+		--user "test@liferay.com:learn"
 
 	local structuredContentFolderId=$(curl \
 		"http://localhost:8080/o/headless-delivery/v1.0/sites/${1}/structured-content-folders" \
-		-H "Content-Type: application/json" \
-		-X "POST" \
-		-d "{\"description\": \"Foo\", \"name\": \"Able Content Folder\"}" \
-		-u "test@liferay.com:learn" | \
+		--data-raw '
+			{
+				"description": "Foo",
+				"name": "Able Content Folder"
+			}' \
+		--header "Content-Type: application/json" \
+		--request "POST" \
+		--user "test@liferay.com:learn" | \
 		jq '.id'
 	)
 
 	curl \
 		"http://localhost:8080/o/headless-delivery/v1.0/structured-content-folders/${structuredContentFolderId}/structured-contents" \
-		-H "Content-Type: application/json" \
-		-X "POST" \
-		-d "{\"contentFields\": [{\"contentFieldValue\": {\"data\": \"<p>Foo</p>\"}, \"name\": \"content\"}], \"contentStructureId\": \"${contentStructuredId}\", \"title\": \"Able Content\"}" \
-		-u "test@liferay.com:learn"
+		--data-raw '
+			{
+				"contentFields": [
+					{
+					"contentFieldValue": {
+						"data": "<p>Foo</p>"
+					},
+					"name": "content"
+					}
+				],
+				"contentStructureId": "${contentStructuredId}",
+				"title": "Able Content"
+			}' \
+		--header "Content-Type: application/json" \
+		--request "POST" \
+		--user "test@liferay.com:learn"
 
 	rm -f b9f3.txt
 }

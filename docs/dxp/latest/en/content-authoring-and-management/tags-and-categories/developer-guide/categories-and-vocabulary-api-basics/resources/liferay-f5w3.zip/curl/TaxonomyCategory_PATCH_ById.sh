@@ -1,6 +1,10 @@
 curl \
 	"http://localhost:8080/o/headless-admin-taxonomy/v1.0/taxonomy-categories/${1}" \
-	-H "Content-Type: application/json" \
-	-X "PATCH" \
-	-d "{\"description\": \"Bar\", \"name\": \"Able\"}" \
-	-u "test@liferay.com:learn"
+	--data-raw '
+		{
+			"description": "Bar",
+			"name": "Able"
+		}' \
+	--header "Content-Type: application/json" \
+	--request "PATCH" \
+	--user "test@liferay.com:learn"

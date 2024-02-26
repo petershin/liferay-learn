@@ -13,11 +13,11 @@ uuid: 013d44ac-a4a9-497b-85b2-be9b1fdcb23e
 
 Auto-Increment fields are configurable [read-only fields](./using-read-only-fields.md) for uniquely identifying object entries in a human-readable format. For example, an IT ticketing system should generate a unique but meaningful identifier for each ticket, so users can refer to each entry easily. 
 
-| Prefix | Starting Value | Suffix | Example Values |
-|:------ |:-------------- |:-------|:---------------|
-| life- | 2000 | -ray | life-2000-ray<br>life-2001-ray<br>life-2002-ray<br>...<br>life-3048-ray |
-| none | 0 | none | 0<br>1<br>2<br>...<br>256 |
-| FOO- | 01 | none | FOO-01<br>FOO-02<br>FOO-03<br>...<br>FOO-12 |
+| Prefix | Starting Value | Suffix | Example Values                                                          |
+|:-------|:---------------|:-------|:------------------------------------------------------------------------|
+| life-  | 2000           | -ray   | life-2000-ray<br>life-2001-ray<br>life-2002-ray<br>...<br>life-3048-ray |
+| none   | 0              | none   | 0<br>1<br>2<br>...<br>256                                               |
+| FOO-   | 01             | none   | FOO-01<br>FOO-02<br>FOO-03<br>...<br>FOO-12                             |
 
 To add an auto-increment field, first enable its release feature flag. Go to *Global Menu* (![Global Menu](../../../../images/icon-applications-menu.png)) &rarr; *Control Panel* &rarr; *Instance Settings* &rarr; *Feature Flags*. Open the *Release* section and enable *Auto-Increment Field Type for Objects (LPS-196724)*.
 
@@ -33,29 +33,27 @@ When editing the field, you can change its label and configure how it's searched
 
 Object entries are imported and exported using the [Data Migration Center](../../../../headless-delivery/consuming-apis/data-migration-center.md), a [batch client extension](../../../client-extensions/batch-client-extensions.md), or by calling the [batch engine's import/export task](../../../../headless-delivery/consuming-apis/batch-engine-api-basics-exporting-data.md) endpoints. 
 
-Exporting entries with auto-increment fields simply preserves the values in the exported JSON. When importing entries that contain auto-increment fields, you must carefully consider whether the data is compatible with the object definition's existing entries.
-<!-- Is this actually true?-->
+Exporting entries with auto-increment fields preserves the values in the exported JSON. When importing entries that contain auto-increment fields, you must carefully consider whether the data is compatible with the object definition's existing entries.
 
-Entries you're importing must have unique [External Reference Codes (ERCs)](../../../../headless-delivery/consuming-apis/using-external-reference-codes.md) and unique auto-increment values.
+Imported entries must have both unique [External Reference Codes (ERCs)](../../../../headless-delivery/consuming-apis/using-external-reference-codes.md) and unique auto-increment values.
 
 | Unique ERC | Unique Auto-Increment Value | Successful Import |
-| :--- | :--- | :--- |
-| &#10004;| &#10004; | &#10004; |
-| &#10008; | &#10004; | &#10008; |
-| &#10004; | &#10008; | &#10008; |
+|:-----------|:----------------------------|:------------------|
+| &#10004;   | &#10004;                    | &#10004;          |
+| &#10008;   | &#10004;                    | &#10008;          |
+| &#10004;   | &#10008;                    | &#10008;          |
 
+Not following this rule leads to inconsistent results. If you import entries with unique ERCs but overlapping auto-increment values, only entries with unique values import successfully:
 
-If you try importing entries with unique ERCS but overlapping auto-increment values, only entries with unique values import successfully:
+| Existing Entries<br>ERC/Auto-Increment | Entries to Import<br>ERC/Auto-Increment                                                          | Import Result<br>ERC/Auto-Increment                                                              |
+|:---------------------------------------|:-------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------|
+| 11111/foo-01-bar<br>22222/foo-02-bar   | 33333/foo-01-bar<br>44444/foo-02-bar<br>55555/foo-03-bar<br>66666/foo-04-bar<br>77777/foo-05-bar | 11111/foo-01-bar<br>22222/foo-02-bar<br>55555/foo-03-bar<br>66666/foo-04-bar<br>77777/foo-05-bar |
 
-| Existing Entries<br>ERC/Auto-Increment | Entries to Import<br>ERC/Auto-Increment | Import Result<br>ERC/Auto-Increment |
-|:---|:---|:---|
-| 11111/foo-01-bar<br>22222/foo-02-bar | 33333/foo-01-bar<br>44444/foo-02-bar<br>55555/foo-03-bar<br>66666/foo-04-bar<br>77777/foo-05-bar | 11111/foo-01-bar<br>22222/foo-02-bar<br>55555/foo-03-bar<br>66666/foo-04-bar<br>77777/foo-05-bar |
+If you import entries that don't follow the auto-increment format defined in the host system, only the values following the specified format import successfully:
 
-You cannot import entries that don't follow the auto-increment format defined in the host system. Only the values following the specified format import successfully:
-
-| Existing Entries<br>Valid Auto-Increment Values | Entries to Import<br>Auto-Increment Values | Import Result<br>Valid Auto-Increment Values |
-|:---|:---|:---|
-| foo-01-bar<br>foo-02-bar | foo-003-bar<br>foo-4-bar<br>life-05-ray<br>foo-04-bar<br>foo-05-bar | foo-01-bar<br>foo-02-bar<br>foo-04-bar<br>foo-05-bar |
+| Existing Entries<br>Valid Auto-Increment Values | Entries to Import<br>Auto-Increment Values                          | Import Result<br>Valid Auto-Increment Values         |
+|:------------------------------------------------|:--------------------------------------------------------------------|:-----------------------------------------------------|
+| foo-01-bar<br>foo-02-bar                        | foo-003-bar<br>foo-4-bar<br>life-05-ray<br>foo-04-bar<br>foo-05-bar | foo-01-bar<br>foo-02-bar<br>foo-04-bar<br>foo-05-bar |
 
 When you import entries, the highest numeric value in the system after the import becomes the value used to increment new field values.
 
@@ -69,7 +67,7 @@ When you make a GET request to return object entries with an auto-increment fiel
 "ticket" : "ticket-12"
 ```
 
-When you [add an object definition field](../managing-objects-with-headless-apis.md) with the headless API, here's what the POST request body looks like for an auto-increment field that generates values `foo-01-bar`, `foo-02-bar`, etc.: 
+To [add an object definition field](../managing-objects-with-headless-apis.md) with the headless API, use a POST request body like this one, which defines this auto-increment field format: `foo-01-bar`, `foo-02-bar`, etc. 
 
 ```json
 {

@@ -202,9 +202,12 @@ You can use the Elasticsearch Monitoring configuration if you have deployed the 
 
 ### Elasticsearch 7
 
+!!! important
+    The *Elasticsearch 7* system settings entry and corresponding configuration file are also used for configuring the connection to Elasticsearch 8.
+
 **Configuration File:** `com.liferay.portal.search.elasticsearch7.configuration.ElasticsearchConfiguration.config`
 
-Configure the connection between Liferay and Elasticsearch 7. See [Configuring the Connector](./installing-and-upgrading-a-search-engine/elasticsearch/connecting-to-elasticsearch.md#configuring-the-connector) for detailed coverage of these properties.
+Configure the connection between Liferay and Elasticsearch. See [Configuring the Connector](./installing-and-upgrading-a-search-engine/elasticsearch/connecting-to-elasticsearch.md#configuring-the-connector) for detailed coverage of these properties.
 
 ### Elasticsearch Connections
 

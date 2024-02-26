@@ -10,6 +10,9 @@ uuid: f2ee978a-5ef7-473c-b968-e16decbb98f2
 
 > The configuration information here applies to the latest available (bundled or through Marketplace) version of the Elasticsearch 6 and Elasticsearch 7 connectors for Liferay Portal 7.2-7.4 CE and for Liferay DXP 7.2-7.4. Appropriate information about the exact GA/Service Pack/Fix Pack and Marketplace versions are provided where needed.
 
+!!! important
+    The *Elasticsearch 7* system settings entry and corresponding configuration file are also used for configuring the connection to Elasticsearch 8.
+
 The connection to Elasticsearch is primarily defined in the _Elasticsearch 6/7_ configuration entry in System Settings (or via the [corresponding configuration file](#configuration-files-and-system-settings-entries)). In Liferay 7.3+ you can define multiple connections to Elasticsearch, through the [factory configuration](../../../system-administration/configuring-liferay/configuration-files-and-factories/using-factory-configuration.md) _Elasticsearch Connections_. Both entries are configurable through [System Settings](../../../system-administration/configuring-liferay/system-settings.md) or an [OSGi configuration file](../../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md). Configuration files are the recommended approach for production environments.
 
 ## Configuration Files and System Settings Entries

@@ -207,6 +207,9 @@ xpack.security.http.ssl.truststore.password: liferay
 
 On Liferay, security can be configured in the Control Panel or using a configuration file. Navigate to *Control Panel* &rarr; *Configuration* &rarr; *System Settings*. Find the *Search* category and click on the *Elasticsearch 7* entry on Liferay 7.3+ or *X-Pack Security* entry on Liferay 7.2. You can enter the property values here, but it's more common to use a configuration file deployed to `[Liferay Home]/osgi/configs`.
 
+!!! important
+    The Elasticsearch 7 system settings entry and corresponding configuration file are also used for configuring the connection to Elasticsearch 8.
+
 The exact contents of the file depend on your X-Pack setup. The `password` must match the one you set during the X-Pack user password setup above. 
 
 The certificate and key files referenced here are the same ones used on the Elasticsearch server nodes. Copy them to the Liferay server and update their paths in the configuration accordingly.

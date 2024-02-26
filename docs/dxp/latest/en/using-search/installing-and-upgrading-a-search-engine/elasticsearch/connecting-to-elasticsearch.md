@@ -11,9 +11,9 @@ After [setting up Elasticsearch](./installing-elasticsearch.md), connect it to L
 
 Notable installation and configuration procedure differences are presented here. 
 
-```{important}
-Stop each Liferay server node before configuring the connection.
-```
+!!! important
+    * The *Elasticsearch 7* system settings entry and corresponding configuration file are also used for configuring the connection to Elasticsearch 8.
+    * Stop each Liferay server node before configuring the connection.
 
 If you're on Liferay 7.2, skip to [Liferay 7.2: Installing Elasticsearch 7 Connector](#liferay-72-installing-elasticsearch-7-connector).
 

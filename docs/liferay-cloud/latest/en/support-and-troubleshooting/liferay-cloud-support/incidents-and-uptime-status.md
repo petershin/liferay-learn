@@ -27,11 +27,11 @@ Once the incident is confirmed and reproduced by Liferay staff, work begins on a
 
 ### Mitigation
 
-Liferay Support will attempt to mitigate reported issues while they are ongoing. For example, Liferay Support can provide additional resources, insights into the incident, or workaround solutions.
+Liferay Support attempts to mitigate reported issues while they are ongoing. For example, Liferay Support can provide additional resources, insights into the incident, or workaround solutions.
 
 ### Fix Delivery
 
-Liferay Support will deliver any fix and instructions to apply it via the Support ticket. After the fix is delivered, the ticket is marked as "Solved" once you verify the issue is resolved in your own environment, or after no response is received after an appropriate amount of time.
+Liferay Support delivers any fix and instructions to apply it via the Support ticket. After the fix is delivered, the ticket is marked as "Solved" once you verify the issue is resolved in your own environment, or after no response is received after an appropriate amount of time.
 
 Liferay Support automatically closes tickets 28 days after they are marked as solved.
 
@@ -67,23 +67,23 @@ Liferay Cloud defines the severity of issues according to these levels. Service 
 | **Severity 2 ("Normal")** | Any environment is running but experiencing limitations, instability, or periodic interruptions.    | 2 business hours      |
 | **Severity 3 ("Low")**    | Any environment is running and fully functional, but there are errors that do not impact usability. | 1 business day        |
 
-**Severity 1 ("High") incidents**: A severity 1 incident means that:
+**Severity 1 ("High") incidents**: A severity 1 incident means that
 
-1. The production environment on Liferay Cloud is completely shutdown or severely impacted,
+1. The production environment on Liferay Cloud is completely shut down or severely impacted,
 1. The customer's production environment system (for the purposes of Liferay software) is severely impacted or completely shut down,
 1. System operations or "mission-critical" applications are inoperable, or
 1. "Mission-critical" applications are experiencing repeated, material system interruptions that effectively make its applications inoperable.
 
-Liferay Support works on severity 1 incidents all 24 hours a day and 7 days a week. However, Liferay reserves the right to lower an incident's severity level to match actual business impact (if applicable) when Support team members are not available to work during those hours, until they are able to work on the incident on a 24/7 basis.
+Liferay Support works on severity 1 incidents 24 hours a day and 7 days a week. However, Liferay reserves the right to lower an incident's severity level to match actual business impact (if applicable) when Support team members are not available to work during those hours, until they are able to work on the incident on a 24/7 basis.
 
-**Severity 2 ("Normal") incidents**: A severity 2 incident means that:
+**Severity 2 ("Normal") incidents**: A severity 2 incident means that
 
-1. Any of the customer's environments on Liferay Cloud is functioning with limited capabilities, or is unstable with periodic interruptions,
+1. Any of the customer's environments on Liferay Cloud functions with limited capabilities, or is unstable with periodic interruptions,
 1. The customer's system (for the purposes of Liferay software) is functioning with limited capabilities,
 1. The customer's system (for the purposes of Liferay software) is unstable with periodic interruptions, or
 1. "Mission-critical" applications are not inoperable, but are experiencing material, periodic interruptions.
 
-**Severity 3 ("Low") incidents**: A severity 3 incident means that:
+**Severity 3 ("Low") incidents**: A severity 3 incident means that
 
 1. Any of the customer's environments on Liferay Cloud is fully functional, but is experiencing errors that do not impact its usability, or
 1. The customer's system (for the purposes of Liferay software) is fully functional, but is experiencing errors that do not impact its usability.

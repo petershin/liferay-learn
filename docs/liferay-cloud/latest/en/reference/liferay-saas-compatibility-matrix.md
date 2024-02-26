@@ -7,7 +7,7 @@ uuid: e95b132d-23e5-4a8c-ae16-ef71bb69d55b
 ---
 # Liferay SaaS Compatibility Matrix
 
-Liferay DXP is the heart of Liferay SaaS, but not every feature for DXP applies to Liferay SaaS. Some DXP features are not compatible, and some must be done via other means.
+Liferay DXP is the heart of Liferay SaaS, but not every DXP feature applies to Liferay SaaS. Some DXP features are not compatible, and some must be achieved via other means.
 
 Here is a list of common Liferay DXP features and their compatibility in Liferay SaaS.
 
@@ -27,7 +27,7 @@ Here is a list of common Liferay DXP features and their compatibility in Liferay
 | **Digest Header - Authentication Verifier**               | Not Compatible                     | This authentication verifier is disabled for security purposes.                                                                                                                                                                                                            |
 | **WebDav**                                                | Not Compatible                     | WebDav uses basic or digest authentication, so it is also disabled for security purposes.                                                                                                                                                                                  |
 | **Single Sign-On (SSO)**                                  | Compatible                         | Liferay SaaS is compatible with any identity provider (IdP) compliant with SAML 2.0.                                                                                                                                                                                       |
-| **Connecting Third-Party CDN Providers**                  | Not Compatible                     | Liferay SaaS comes has its own CDN. Third-party CDN providers (such as Cloudflare or Akamai) are not compatible.                                                                                                                                                           |
+| **Connecting Third-Party CDN Providers**                  | Not Compatible                     | Liferay SaaS has its own CDN. Third-party CDN providers (such as Cloudflare or Akamai) are not compatible.                                                                                                                                                           |
 | **Custom External Web Application Firewall (WAF)**        | Not Compatible                     | Liferay Cloud has its own WAF built into Nginx. Additional WAFs are not compatible.                                                                                                                                                                                        |
 | **IP Filtering**                                          | Compatible                         | Open a Support ticket to request IP configurations, such as custom whitelists or blacklists.                                                                                                                                                                               |
 | **VPN**                                                   | Compatible (client-to-site only)   | Request a VPN connection to the Liferay DXP instance with a Support ticket. Liferay SaaS is compatible with client-to-site VPNs using OpenVPN or IKEv2 protocols. This requires the "dedicated resources" add-on to your subscription.                                     |

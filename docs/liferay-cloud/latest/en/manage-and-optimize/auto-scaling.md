@@ -27,9 +27,9 @@ Liferay issues an invoice to customers after each quarter that they use or deplo
 For each service instance added via auto-scaling, the price is based on the number of clock hours that the customer used this instance. For pricing purposes, the total usage during a calendar quarter is rounded up to the nearest full clock hour.
 
 | **Environment Type** | **Price per Instance per Hour** |
-| :------------------- | :------------------------------ |
-| High Availability    | $12.00 USD                      |
-| Standard             | $23.00 USD                      |
+|:---------------------|:--------------------------------|
+| High Availability    | Consult your Account Manager    |
+| Standard             | Consult your Account Manager    |
 
 !!! note
     These prices apply to all Liferay PaaS service instances added through auto-scaling, unless a customer enters a separate written agreement with Liferay as to the pricing.

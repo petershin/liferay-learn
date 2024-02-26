@@ -42,7 +42,7 @@ Enable Elasticsearch security features by setting the `ENABLE_XPACK_SECURITY` en
 
 ### Single Sign-On
 
-Liferay PaaS can integrate with any SAML 2.0-compliant Single Sign-On (SSO) Identity Provider to authenticate users with Liferay Cloud. Set up multi-factor authentication for any developers or IT team members using any identity provider that supports it.
+Liferay PaaS can integrate with any SAML 2.0-compliant Single Sign-On (SSO) Identity Provider to authenticate users with Liferay Cloud. Set up multi-factor authentication for developers or IT team members using any identity provider that supports it.
 
 ### Default Administrator Account
 
@@ -54,7 +54,7 @@ At least quarterly, perform a periodic audit of user activities in each Liferay 
 
 ### Team Members
 
-At least quarterly, audit team members and their permissions for each environment, and delete inactive team members, for both members of your Liferay PaaS project and roles in Liferay DXP.
+At least quarterly, audit team members and their permissions for each environment and delete inactive team members, for both members of your Liferay PaaS project and roles in Liferay DXP.
 
 ## Network Controls
 
@@ -90,7 +90,7 @@ By default, the policy allows a broad set of clients to negotiate SSL, including
 
 ### CORS
 
-Cross-origin resource sharing (CORS) can allow resource requests from an outside domain. Configure your Liferay DXP instance to only allow domains that are required to interact with your web application.
+Cross-origin resource sharing (CORS) can allow resource requests from an outside domain. Configure your Liferay DXP instance to allow only domains that are required to interact with your web application.
 
 See [Setting Up CORS](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/securing-web-services/setting-up-cors) for more information.
 

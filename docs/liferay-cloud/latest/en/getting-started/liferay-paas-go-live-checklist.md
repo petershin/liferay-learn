@@ -29,6 +29,8 @@ Prioritize these items as you go through this checklist so that your project lau
 
 ## Reviewing Your Project Architecture
 
+The goal of reviewing your project architecture is to be sure your environment, services, and features are optimized to achieve the end result of what you're building. 
+
 ### Environment Specifications
 
 Confirm that your production environment matches your subscription. On your production environment's *Settings* page, the *Environment Type* should show as: **Production**.
@@ -45,21 +47,23 @@ Check your production environment's services and confirm they are up-to-date. Co
 
 Confirm that clustering is properly configured, if you have a High Availability production environment. See [Setting Up Clustering in Liferay Cloud](../customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/setting-up-clustering-in-liferay-cloud.md).
 
-### Development Lifecycle and Workflow
+### Development Life Cycle and Workflow
 
-Deploy test builds to confirm that the Software Development Life Cycle (SDLC) is working properly. When you generate a build with Liferay Cloud's CI, it should appear on the *Builds* page in the Liferay Cloud console. Builds should be deployed from the *Deployments* page.
+Deploy test builds to confirm that the Software Development Life Cycle (SDLC) is working properly. When you generate a build with Liferay Cloud's CI, it should appear on the Builds page in the Liferay Cloud console. Builds should be deployed from the Deployments page.
 
-    Here is more information about the SDLC and how to use it:
+Here is more information about the SDLC and how to use it:
 
-    * [Overview of the Liferay Cloud Deployment Workflow](../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md)
+* [Overview of the Liferay Cloud Deployment Workflow](../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md)
 
-    * [Deploying Changes via the Liferay Cloud Console](../updating-services-in-liferay-paas/deploying-changes-via-the-liferay-cloud-console.md)
+* [Deploying Changes via the Liferay Cloud Console](../updating-services-in-liferay-paas/deploying-changes-via-the-liferay-cloud-console.md)
 
-    * [Deploying Changes via the CLI Tool](../updating-services-in-liferay-paas/deploying-changes-via-the-cli-tool.md)
+* [Deploying Changes via the CLI Tool](../updating-services-in-liferay-paas/deploying-changes-via-the-cli-tool.md)
 
-    * [Automatically Deploying CI Service Builds](../updating-services-in-liferay-paas/automatically-deploying-ci-service-builds.md)
+* [Automatically Deploying CI Service Builds](../updating-services-in-liferay-paas/automatically-deploying-ci-service-builds.md)
 
 ## Reviewing Your Metrics
+
+Your metrics include items such as the alerts you may receive, your quotas, and your ability to profile your environment. Adjust these properly before going into production. 
 
 ### Subscription Plan Quotas
 
@@ -75,11 +79,13 @@ See [Integrating Dynatrace with Production Environments](../manage-and-optimize/
 
 ### Alerts
 
-Check the bell icon on the top-right of the Liferay Cloud console to see the *Alerts* page and check for any alerts that must be addressed.
+Check the bell icon on the top-right of the Liferay Cloud console to check for any alerts that must be addressed.
 
 Confirm that your project's main contributors also have updated their preferences to receive alerts via email. See [Real-Time Alerts](../manage-and-optimize/real-time-alerts.md) for more information.
 
 ## Reviewing Your Continuity Plan
+
+Your continuity plan includes items to ensure your site keeps running in the event of various events. 
 
 ### Backups
 
@@ -104,6 +110,8 @@ Deploy to your environments to verify that they do not cause downtime. If they d
 See [Self-Healing](../support-and-troubleshooting/troubleshooting/self-healing.md) for more information.
 
 ## Reviewing Your Project's Benchmarks
+
+Your performance benchmarks ensure your site runs as you plan it to run. 
 
 ### Performance
 

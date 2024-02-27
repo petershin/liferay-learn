@@ -12,7 +12,7 @@ Obsolete features are eventually removed or replaced with newer, improved featur
 **Deprecated:** Unsupported from the next minor version release
 
 !!! important
-    Plan to stop using deprecated features because their support may cease as early as the next minor release. See [Maintenance Mode and Deprecation Policies](https://help.liferay.com/hc/en-us/articles/360015767952-Maintenance-Mode-and-Deprecation) for details.
+    You should plan to stop using deprecated features because their support may cease as early as the next minor release. See [Maintenance Mode and Deprecation Policies](https://help.liferay.com/hc/en-us/articles/360015767952-Maintenance-Mode-and-Deprecation) for details.
 
 ## Deprecated Feature Availability
 
@@ -59,7 +59,7 @@ Here are the features deprecated in 7.4:
 | Polls | Removed | Replaced by [Forms/Forms Reports](../../../process-automation/forms/sharing-forms-and-managing-submissions/form-reports.md). |
 | Search widget (classic) | Bundled | Deprecated in 7.1. Replaced by the [Search widgets](../../../using-search/search-pages-and-widgets/search-results/search-results.md). |
 | SOAP Web Services | Bundled (disabled by default) | Replaced by JSON web services, REST services, and GraphQL services. |
-| Staging Relationship Modules | Bundled | These modules are obsolete and are no longer being used. They have been moved to deprecate, since 2023.Q3. It will be removed. |
+| Staging Relationship Modules | Bundled | These modules are obsolete and are no longer being used. They were deprecated in the 2023.Q3 release. |
 | Theme: Hello World | Archived | Deprecated in 7.3. No direct replacement. |
 | Web Content Search widget | Archived |  |
 

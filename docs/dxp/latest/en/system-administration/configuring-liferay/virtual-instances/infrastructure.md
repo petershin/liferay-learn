@@ -57,7 +57,7 @@ The Staging category contains settings that specify the default behavior of stag
 
 {bdg-secondary}`Liferay DXP 2024.Q1+/Portal 7.4 GA112+`
 
-The Session Timeout category contains settings that specify `session.timeout.auto.extend` and `session.timeout.auto.extend.offset` [portal properties](../../../installation-and-upgrades/reference/portal-properties.md) via UI without altering the `portal-ext.properties` file.!
+The Session Timeout category contains settings that specify `session.timeout.auto.extend` and `session.timeout.auto.extend.offset` [portal properties](../../../installation-and-upgrades/reference/portal-properties.md) via UI without altering the `portal-ext.properties` file.
 
 !!! note
     The `session.timeout.auto.extend` and `session.timeout.auto.extend.offset` properties are no longer available in `portal-ext.properties`.

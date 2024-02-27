@@ -55,7 +55,7 @@ A test variant is a customization of the Experience you want to optimize with A/
 1. If you selected the *Click* goal for the A/B Test, you must also select the element you want to test:
     1. Under the *Active Test* tab and *Click Goal* section, click *Select Clickable Element*.
 
-       - You can target collection display fragments, asset publishers, links, buttons, and input fields with an Element ID for the *Click* goal.
+       - You can target collection display fragments, links, buttons, and input fields with an Element ID for the *Click* goal.
        - You can also enter the *Element ID* of the element you want to test.
        - To highlight the Page element selected, click the Preview (![Preview](../../../images/icon-preview.png)) icon.
        - While the [test is running](./running-and-monitoring-ab-tests.md), the *Change Clickable Element* button is unavailable and the *Element ID* cannot be changed.

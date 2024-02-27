@@ -133,11 +133,14 @@ The Index Writer Helper entry contains one entry:
 
 ### Indexer Registry
 
+!!! note
+    For Liferay 7.4 Update/GA31+, the Indexer Registry configuration isn't available in the System Settings UI. It must be configured with a `.config` file.
+
 **Configuration File:** `com.liferay.portal.search.configuration.IndexerRegistryConfiguration.config`
 
 Configure the buffering of index requests:
 
-**`buffered`**: Enable (the default) or disable the buffering of indexing requests.
+**`buffered`**: Enable (the default) or disable the buffering of indexing requests. It's not recommended to disable buffering: more requests to Elasticsearch must be made, and index changes will not be rolled back when the database is rolled back.
 
 **`bufferedExecutionMode`**: Allow administrators to select a different `IndexerRequestBufferExecutor`, used to execute a `IndexerRequest`. One implementation of the executor is provided out of the box (_DEFAULT_). When a new `IndexerRequestBufferExecutor` implementation is deployed, one of the required properties is a `buffered.execution.mode`. This value can then be used in place of _DEFAULT_.
 

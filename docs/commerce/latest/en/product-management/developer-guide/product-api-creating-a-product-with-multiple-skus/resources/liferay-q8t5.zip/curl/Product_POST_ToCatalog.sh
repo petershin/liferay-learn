@@ -3,7 +3,7 @@ curl \
 	--data-raw '
 		{
 			"active": true,
-			"catalogId": "${1}",
+			"catalogId": "'"${1}"'",
 			"name": {
 				"en_US": "Foo"
 			},
@@ -14,7 +14,7 @@ curl \
 					"name": {
 						"en_US": "Able"
 					},
-					"optionId": "${2}",
+					"optionId": "'"${2}"'",
 					"required": true,
 					"skuContributor": true
 				}

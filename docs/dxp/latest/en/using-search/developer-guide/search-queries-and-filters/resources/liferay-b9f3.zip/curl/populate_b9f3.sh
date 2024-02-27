@@ -56,7 +56,7 @@ function main {
 					"name": "content"
 					}
 				],
-				"contentStructureId": "${contentStructuredId}",
+				"contentStructureId": "'"${contentStructuredId}"'",
 				"title": "Able Content"
 			} ' \
 		--header "Content-Type: application/json" \
@@ -88,7 +88,7 @@ function main {
 					"name": "content"
 					}
 				],
-				"contentStructureId": "${contentStructuredId}",
+				"contentStructureId": "'"${contentStructuredId}"'",
 				"title": "Able Content"
 			}' \
 		--header "Content-Type: application/json" \

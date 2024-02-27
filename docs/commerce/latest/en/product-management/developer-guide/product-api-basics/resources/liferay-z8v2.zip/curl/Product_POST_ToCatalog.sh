@@ -3,7 +3,7 @@ curl \
 	--data-raw '
 		{
 			"active": true,
-			"catalogId": "${1}",
+			"catalogId": "'"${1}"'",
 			"name": {
 				"en_US": "Foo"
 			},

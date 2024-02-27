@@ -1,7 +1,5 @@
 curl \
 	"http://localhost:8080/o/c/ables/batch" \
-	--header "Content-Type: application/json" \
-	--request "POST" \
 	--data-raw '
 		[
 			{
@@ -14,4 +12,6 @@ curl \
 				"name": "Able 3"
 			}
 		]' \
+	--header "Content-Type: application/json" \
+	--request "POST" \
 	--user "test@liferay.com:learn"

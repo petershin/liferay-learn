@@ -10,7 +10,7 @@ curl \
 				"name": "content"
 				}
 			],
-			"contentStructureId": "${2}",
+			"contentStructureId": "'"${2}"'",
 			"title": "Baker Article"
 		}' \
 	--header "Content-Type: application/json" \

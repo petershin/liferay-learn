@@ -3,13 +3,13 @@ curl \
 	--data-raw '
 		[
 			{
-				"id": ${1}
+				"id": "'"${1}"'"
 			},
 			{
-				"id": ${2}
+				"id": "'"${2}"'"
 			},
 			{
-				"id": ${3}
+				"id": "'"${3}"'"
 			}
 		]' \
 	--header "Content-Type: application/json" \

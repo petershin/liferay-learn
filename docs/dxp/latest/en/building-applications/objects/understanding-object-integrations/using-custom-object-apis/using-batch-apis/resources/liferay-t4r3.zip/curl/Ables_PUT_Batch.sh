@@ -3,15 +3,15 @@ curl \
 	--data-raw '
 		[
 			{
-				"id": ${1},
+				"id": "'"${1}"'",
 				"name": "Able One"
 			},
 			{
-				"id": ${2},
+				"id": "'"${2}"'",
 				"name": "Able Two"
 			},
 			{
-				"id": ${3},
+				"id": "'"${3}"'",
 				"name": "Able Three"
 			}
 		]' \

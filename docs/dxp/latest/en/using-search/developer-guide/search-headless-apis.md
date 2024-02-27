@@ -161,6 +161,9 @@ Query parameters can be used to further filter the results.
 | `search` | Search by keyword(s). |
 | `sort` | Sort by ascending or descending order. |
 
+!!! warning
+    [Search Blueprints](../liferay-enterprise-search/search-experiences/search-blueprints.md) can also add sort configurations to the search page. Make sure you understand [how these blueprint-added sorts interact](../liferay-enterprise-search/search-experiences/search-blueprints/sorting-results-in-a-search-blueprint.md#search-blueprints-versus-the-headless-api) with the `sort` parameter if you plan to use both.
+
 See [API Query Parameters](../../headless-delivery/consuming-apis/api-query-parameters.md) for more information.
 
 ## Search Request Body

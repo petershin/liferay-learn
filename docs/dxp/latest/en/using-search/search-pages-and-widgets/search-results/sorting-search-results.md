@@ -11,6 +11,9 @@ uuid: 8068b0aa-71c6-4041-bf2d-cf5816f6616e
 
 Search results displayed in the [Search Results](./search-results.md) widget are ordered by [relevance score](./search-results.md#search-results-relevance) (as calculated by the [search engine](https://www.elastic.co/guide/en/elasticsearch/guide/master/scoring-theory.html)) by default. With the Sort widget, users can control the order of returned results.
 
+!!! warning
+    [Search Blueprints](../../liferay-enterprise-search/search-experiences/search-blueprints.md) can also add sort configurations to the search page. Make sure you understand [how these blueprint-added sorts interact](../../liferay-enterprise-search/search-experiences/search-blueprints/sorting-results-in-a-search-blueprint.md#search-blueprints-versus-the-sort-widget) with the Sort widget's configuration.
+
 Add the widget to a [Search Page](../working-with-search-pages/search-pages.md) to begin sorting results.
 
 Out of the box, you can order results in these ways as an alternative to relevance sorting:
@@ -218,3 +221,8 @@ Depending on your version, [nested field storage](../../../liferay-internals/ref
 
 To change the behavior, use the _Enable Legacy Dynamic Data Mapping Index Fields_ setting in System Settings &rarr; Dynamic Data Mapping Indexer.
 
+## Related Topics
+
+* [Sorting Results in a Search Blueprint](../../liferay-enterprise-search/search-experiences/search-blueprints/sorting-results-in-a-search-blueprint.md)
+* [Search Results Behavior](search-results-behavior.md)
+* [Working with Search Pages](../working-with-search-pages.md)

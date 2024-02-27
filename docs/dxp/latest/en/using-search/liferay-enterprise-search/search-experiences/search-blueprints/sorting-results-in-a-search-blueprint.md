@@ -20,13 +20,47 @@ Add a [sort configuration](./search-blueprints-configuration-reference.md#sort-c
 
 ![Enter JSON to sort a blueprint's results.](./sorting-results-in-a-search-blueprint/images/01.png)
 
-```{important}
-* Avoid using both the [Sort widget](../../../search-pages-and-widgets/search-results/sorting-search-results.md) and a search blueprint to configure sorting on a search page. Liferay cannot guarantee consistent behavior.
+!!! important
+    The examples below are simple. A robust sort configuration must consider all scenarios. For example, if a search result document does not contain the sort field, use the [`missing`](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/sort-search-results.html#_missing_values) parameter to configure the sort behavior.
 
-* The examples below are simple. A robust sort configuration must consider all scenarios. For example, if a search result document does not contain the sort field, use the [`missing`](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/sort-search-results.html#_missing_values) parameter to configure the sort behavior.
+    See [Elasticsearch's sorting documentation](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/sort-search-results.html) for more details.
 
-   See [Elasticsearch's sorting documentation](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/sort-search-results.html) for more details.
+## Search Blueprints and Other Sort Contributors
+
+Like blueprints, there are other sort contributors that add elements to the search request's `sort` array. For example, here are two elements in the sort array:
+
+```json
+"sort": [
+   {
+      "modified": {
+         "unmapped_type": "keyword",
+         "order": "desc"
+      }
+   },
+   {
+      "localized_title_en_US_sortable": {
+         "unmapped_type": "keyword",
+         "order": "desc"
+      }
+   }
+]
 ```
+
+When there are multiple `sort`s in the request, the first one takes precedence. In the example above, the results will be sorted by the `modified` field, in descending order.
+
+When no `sort`s are in the search request, results are sorted by relevance score. 
+
+### Search Blueprints versus the Sort Widget
+
+You can sort results on a search page with the [Sort widget](../../../search-pages-and-widgets/search-results/sorting-search-results.md) or in a search blueprint.
+
+The Sort widget contributes nothing to the request if you choose its _Sort by Relevance_ option. Instead the default is relied upon to provide relevance sorting. However, if sorting is configured in a Blueprint that's applied to the page, it's added to the `sort` array in the request. Therefore, **the blueprint's sort takes precedence when the Sort widget is set to _Sort by Relevance_.**
+
+A different scenario occurs when `sort`s are contributed by the Sort widget and a blueprint. In this case both of them are added to the array, but the Sort widget's contribution is listed first in the array, so it takes precedence. Therefore, **the Sort widget's sort takes precedence when it sorts by anything except relevance.**
+
+### Search Blueprints versus the Headless API
+
+You can sort results from the [headless API's `/search`](../../../developer-guide/search-headless-apis.md) endpoint with a blueprint or with the `sort` API parameter. If both add `sort`s to the request, the blueprint's is listed first in the array. Therefore, **the blueprint's sort takes precedence over any sort added by the headless API parameter.**
 
 ## Example 1: Sorting by Title
 

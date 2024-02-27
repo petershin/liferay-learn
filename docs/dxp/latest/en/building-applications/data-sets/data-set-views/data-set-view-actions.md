@@ -14,15 +14,15 @@ While managing data set views, define actions to be used in the data set fragmen
 
 ## Adding Actions to the Data Set View
 
-1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), select the *Control Panel* tab, and click *Data Sets* under Object.
+1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), select the *Control Panel* tab, and click *Data Sets* under Object.
 
 1. Click on the *Name* of the data set you want to access.
 
-   Alternatively, click *Actions* (![Actions menu](../../images/icon-actions.png)) next to the data set entry and select *Edit*.
+   Alternatively, click *Actions* (![Actions menu](../../../images/icon-actions.png)) next to the data set entry and select *Edit*.
 
 1. Click on the *Name* of the data set view to start editing it.
 
-1. Select the Actions tab and click *New* (![Add button](../../images/icon-add.png)) &rarr; you are redirected to a page where you must configure your action before creating it.
+1. Select the Actions tab and click *Add* (![Add button](../../../images/icon-add.png)) &rarr; you are redirected to a page where you must configure your action before creating it.
 
 Under the Display Options section,
 
@@ -52,7 +52,7 @@ Under the Action Behavior section,
 
    So, if you want to create a button with an action to edit a document, you should use `replace` as the Headless Activation Key.
 
-   Find those activation keys through your [API Explorer](../../headless-delivery/consuming-apis/consuming-rest-services.md). See [Use Case: Using Actions to Edit Documents](./using-data-set-view-actions.md#use-case-using-actions-to-edit-documents) to learn more.
+   Find those activation keys through your [API Explorer](../../../headless-delivery/consuming-apis/consuming-rest-services.md). See [Use Case: Using Actions to Edit Documents](./using-data-set-view-actions.md#use-case-using-actions-to-edit-documents) to learn more.
 
    ![Use Headless Activation Keys to link an action to a headless endpoint.](./data-set-view-actions/images/04.png)
 
@@ -69,7 +69,7 @@ Once you're done, users should be redirected to the selected URL once they click
 
 ## Related Topics
 
-- [Creating Data Set Views](./creating-data-set-views.md)
-- [Creating Data Sets](./creating-data-sets.md)
+- [Data Set Views](../data-set-views.md)
+- [Creating Data Sets](../creating-data-sets.md)
 - [Data Set View Fields](./data-set-view-fields.md)
 - [Data Set View Filters](./data-set-view-filters.md)

@@ -13,7 +13,7 @@ Here are some use cases to exemplify how to use data set view actions and perfor
 
 **Background**: You have performance review documents in your site's Documents and Media application and you want to show a list of performance reviews, their ID, title, external reference code, and the date they were created. You also want to allow users who can view the data set to edit the documents.
 
-**Setting up the Environment**: Before you create the action, [create a Data Set](./creating-data-sets.md) with these parameters:
+**Setting up the Environment**: Before you create the action, [create a Data Set](../creating-data-sets.md) with these parameters:
 
 | Field            | Value                            |
 |:-----------------|:---------------------------------|
@@ -22,9 +22,9 @@ Here are some use cases to exemplify how to use data set view actions and perfor
 | REST Schema      | Document                         |
 | REST Endpoint    | `/v1.0/sites/{siteId}/documents` |
 
-[Create a data set view](./creating-data-set-views.md) for the Documents Data Set, name it Documents Data Set View, and add the `id`, `externalReferenceCode`, `title`, and `dateCreated` [fields](./data-set-view-fields.md) to it.
+[Create a data set view](../data-set-views.md) for the Documents Data Set, name it Documents Data Set View, and add the `id`, `externalReferenceCode`, `title`, and `dateCreated` [fields](./data-set-view-fields.md) to it.
 
-Then, [upload the documents to the Documents and Media application](../../content-authoring-and-management/documents-and-media/uploading-and-managing/uploading-files.md). You can use some mock documents just to practice.
+Then, [upload the documents to the Documents and Media application](../../../content-authoring-and-management/documents-and-media/uploading-and-managing/uploading-files.md). You can use some dummy documents just to practice.
 
 ### Creating the Edit Action
 
@@ -33,14 +33,14 @@ In the New Item Action page, fill in the fields using the information in the tab
 | Field | Value                                                      |
 |:------|:-----------------------------------------------------------|
 | Label | Edit Document                                              |
-| Icon  | Pencil (![Pencil icon](../../images/icon-edit-pencil.png)) |
+| Icon  | pencil (![Pencil icon](../../../images/icon-edit-pencil.png)) |
 | Type  | Link                                                       |
 
 Now, to fill in the URL,
 
 1. In a new tab, look for a performance review document in the Documents and Media application (Site Menu &rarr; Content & Data &rarr; Documents and Media).
 
-1. Open the document's *Actions* menu (![Actions menu](../../images/icon-actions.png)), right-click the *Edit* options, and select *Copy Link Address*.
+1. Open the document's *Actions* menu (![Actions menu](../../../images/icon-actions.png)), right-click the *Edit* options, and select *Copy Link Address*.
 
    The URL should look like this `http://localhost:8080/group/guest/~/control_panel/manage?(...)_com_liferay_document_library_web_portlet_DLAdminPortlet_fileEntryId=32813&(...)state%3Dmaximized%26p_p_mode%3Dview%26p_p_auth%3DYH1QvqK9&p_p_auth=YH1QvqK9`
 
@@ -65,39 +65,36 @@ Now, to fill in the URL,
 
    The value for the fileEntryId will be different in your instance.
 
-   If you are not sure which values you should use, access your [API explorer](../../headless-delivery/consuming-apis/consuming-rest-services.md) and look for the parameters used in your REST application.
+   If you are not sure which values you should use, access your [API explorer](../../../headless-delivery/consuming-apis/consuming-rest-services.md) and look for the parameters used in your REST application.
 
 1. Replace `32813` with `{id}`.
 
    Enter the parameter value between curly braces ({}).
-
-   !!! info
-       The Frontend Data Set (FDS) component does the work and replaces the parameter you provided with the `id` for the document you are trying to edit.
 
    ![Add the URL to the action and make the proper adjustments to make it as universal as possible.](./using-data-set-view-actions/images/02.gif)
 
 1. Once the URL is set, add the Headless Activation Key. You can find it using your API explorer. Find the REST application you are using and execute a GET command. The keys are in the response body like this:
 
    ```json
-      {
-         "actions": {
-         "get": {
-            "method": "GET",
-            "href": "http://localhost:8080/o/c/performancereviews/32647"
-         },
-         "replace": {
-            "method": "PUT",
-            "href": "http://localhost:8080/o/c/performancereviews/32647"
-         },
-         "update": {
-            "method": "PATCH",
-            "href": "http://localhost:8080/o/c/performancereviews/32647"
-         },
-         "delete": {
-            "method": "DELETE",
-            "href": "http://localhost:8080/o/c/performancereviews/32647"
-         }
-         }
+   (...)
+      "actions": {
+      "get": {
+         "method": "GET",
+         "href": "http://localhost:8080/o/c/performancereviews/32647"
+      },
+      "replace": {
+         "method": "PUT",
+         "href": "http://localhost:8080/o/c/performancereviews/32647"
+      },
+      "update": {
+         "method": "PATCH",
+         "href": "http://localhost:8080/o/c/performancereviews/32647"
+      },
+      "delete": {
+         "method": "DELETE",
+         "href": "http://localhost:8080/o/c/performancereviews/32647"
+      }
+   }
    ```
 
    In this case, the action keys are `get`, `replace`, `update`, and `delete`.
@@ -108,13 +105,13 @@ Now, to fill in the URL,
 
 ### Using a Data Set Fragment in a Content Page
 
-The action is set. Use a Data Set fragment to display your data set view in a [content page](../../site-building/creating-pages/using-content-pages.md):
+The action is set. Use a Data Set fragment to display your data set view in a [content page](../../../site-building/creating-pages/using-content-pages.md):
 
-1. [Create a new page](../../site-building/creating-pages/adding-pages/adding-a-page-to-a-site.md) or [start editing](../../site-building/creating-pages/using-content-pages/adding-elements-to-content-pages.md) one.
+1. [Create a new page](../../../site-building/creating-pages/adding-pages/adding-a-page-to-a-site.md) or [start editing](../../../site-building/creating-pages/using-content-pages/adding-elements-to-content-pages.md) one.
 
 1. On the Fragments and Widgets menu on the left, search for Data Set under fragments. Drag and drop the fragment in your editing area.
 
-1. Click on your fragment. In the General tab on your right, there is a field where you can select a Data Set View. Click *Add* (![Add icon](../../images/icon-add-app.png)) and select the Documents Data Set View.
+1. Click on your fragment. In the General tab on your right, there is a field where you can select a Data Set View. Click *Add* (![Add icon](../../../images/icon-add-app.png)) and select the Documents Data Set View.
 
 1. Publish the page.
 
@@ -124,8 +121,8 @@ The data set view displays your data set as you configured. Click on the Edit bu
 
 ## Related Topics
 
-- [Creating Data Set Views](./creating-data-set-views.md)
-- [Creating Data Sets](./creating-data-sets.md)
+- [Data Set Views](../data-set-views.md)
+- [Creating Data Sets](../creating-data-sets.md)
 - [Data Set View Fields](./data-set-view-fields.md)
 - [Data Set View Filters](./data-set-view-filters.md)
 - [Data Set View Actions](./data-set-view-actions.md)

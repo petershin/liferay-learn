@@ -13,21 +13,21 @@ While managing data set views, you can define pre-applied filters to be used in 
 
 ## Adding Filters to the Data Set View
 
-1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), select the *Control Panel* tab, and click *Data Sets* under Object.
+1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), select the *Control Panel* tab, and click *Data Sets* under Object.
 
 1. Click on the *Name* of the data set you want to access.
 
-   Alternatively, click *Actions* (![Actions menu](../../images/icon-actions.png)) next to the data set entry and select *Edit*.
+   Alternatively, click *Actions* (![Actions menu](../../../images/icon-actions.png)) next to the data set entry and select *Edit*.
 
 1. Click on the *Name* of the data set view to start editing it.
 
 1. Select the Filters tab.
 
-1. Click *Add* (![Add button](../../images/icon-add.png)) and choose one of the available options: [Client Extension](#client-extension-filter), [Date Range](#date-range-filter), or [Selection](#selection-filter).
+1. Click *Add* (![Add button](../../../images/icon-add.png)) and choose one of the available options: [Client Extension](#client-extension-filter), [Date Range](#date-range-filter), or [Selection](#selection-filter).
 
 ## Client Extension Filter
 
-Use Frontend Data Set Filter [client extensions](../client-extensions.md) or deploy a [client extension from your workspace](../client-extensions/working-with-client-extensions.md) to fully customize the filter experience and add new types of filters to your data set view.
+Use Frontend Data Set Filter [client extensions](../../client-extensions.md) or deploy a [client extension from your workspace](../../client-extensions/working-with-client-extensions.md) to fully customize the filter experience and add new types of filters to your data set view.
 
 ![You need to have a Frontend Data Set Filter client extension to create the client extension filter.](./data-set-view-filters/images/01.png)
 
@@ -91,7 +91,7 @@ Use picklist options as parameters for the filter.
 
 ## Related Topics
 
-- [Creating Data Set Views](./creating-data-set-views.md)
-- [Creating Data Sets](./creating-data-sets.md)
+- [Data Set Views](../data-set-views.md)
+- [Creating Data Sets](../creating-data-sets.md)
 - [Data Set View Fields](./data-set-view-fields.md)
 - [Data Set View Actions](./data-set-view-actions.md)

@@ -12,7 +12,7 @@ uuid: ef053fbc-18f4-4724-a054-cb0774d02a6d
 !!! important
    This feature is currently behind a [beta feature flag](../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags) (LPS-164563).
 
-With Liferay, create data sets from different resources available through Liferay Headless APIs. Use data sets to create and manage [data set views](./creating-data-set-views.md) and customize how you display your data set.
+With Liferay, create data sets from different resources available through Liferay Headless APIs. Use data sets to create and manage [data set views](./data-set-views.md) and customize how you display your data set.
 
 ## Creating a Data Set
 
@@ -63,7 +63,7 @@ You can also click on the arrow down icon (8) and search for a specific table fi
 
 Edit, rename, alter the permissions, or delete your data set using the data set's Action menu (![Actions menu](../../images/icon-actions.png))(9):
 
-- **Edit**: While editing a data set, you can [create and manage data set views](../data-sets/creating-data-set-views.md). Alternatively, click on the name of the data set to edit it.
+- **Edit**: While editing a data set, you can [create and manage data set views](../data-sets/data-set-views.md). Alternatively, click on the name of the data set to edit it.
 
 - **Rename**: In the modal that opens, rename your data set and click *Save*.
 
@@ -77,4 +77,4 @@ Edit, rename, alter the permissions, or delete your data set using the data set'
 
 ## Related Topics
 
-- [Creating Data Set Views](../data-sets/creating-data-set-views.md)
+- [Data Set Views](../data-sets/data-set-views.md)

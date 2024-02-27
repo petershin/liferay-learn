@@ -13,17 +13,17 @@ Use the data set manager to select which fields to display in your data set view
 
 ## Adding Fields to the Data Set View
 
-1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), select the *Control Panel* tab, and click *Data Sets* under Object.
+1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), select the *Control Panel* tab, and click *Data Sets* under Object.
 
 1. Click on the *Name* of the data set you want to access.
 
-   Alternatively, you can click *Actions* (![Actions menu](../../images/icon-actions.png)) next to the data set entry and select *Edit*.
+   Alternatively, you can click *Actions* (![Actions menu](../../../images/icon-actions.png)) next to the data set entry and select *Edit*.
 
 1. Click on the *Name* of the data set view to start editing it.
 
 1. Select the Fields tab.
 
-1. Click *Add* (![Add button](../../images/icon-add.png)).
+1. Click *Add* (![Add button](../../../images/icon-add.png)).
 
 1. In the modal that opens, select the fields to be displayed.
 
@@ -41,7 +41,7 @@ With the fields in place, you can reorder them by using the drag icon on the lef
 
 Now, you can edit your fields to alter and localize their labels, select a renderer, and define if they are sortable or not.
 
-To edit a field, click *Actions* (![Actions menu](../../images/icon-actions.png)) next to the field and select *Edit*.
+To edit a field, click *Actions* (![Actions menu](../../../images/icon-actions.png)) next to the field and select *Edit*.
 
    ![In the Fields tab, you can change its label and localize it, choose a renderer and mark it as sortable.](./data-set-view-fields/images/02.png)
 
@@ -87,7 +87,7 @@ In the video below, users can sort entries based on the integer field initially.
 
 ## Related Topics
 
-- [Creating Data Set Views](./creating-data-set-views.md)
-- [Creating Data Sets](./creating-data-sets.md)
+- [Data Set Views](../data-set-views.md)
+- [Creating Data Sets](../creating-data-sets.md)
 - [Data Set View Actions](./data-set-view-actions.md)
 - [Data Set View Filters](./data-set-view-filters.md)

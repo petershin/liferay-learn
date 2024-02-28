@@ -248,6 +248,22 @@ curl \
     --user "test@liferay.com:learn"
 ```
 
+If you're writing a script that accepts parameters, be aware of quote completion. If you want the shell to process your parameter, you must complete a quote (which is nested inside both double and single quotes), specify the parameter, and then continue the quote. This looks a little strange, but it works: 
+
+```bash
+curl \
+	"http://localhost:8080/o/headless-commerce-admin-order/v1.0/orders" \
+	--data-raw '
+		{
+			"accountId": "'${1}'",
+			"channelId": "'${2}'",
+			"currencyCode": "'${3}'"
+		}' \
+	--header "Content-Type: application/json" \
+	--request "POST" \
+	--user "test@liferay.com:learn"
+```
+
 Remove non-essential options that you might get from the API Explorer cURL commands. See the Document API Basics [cURL commands](https://github.com/liferay/liferay-learn/tree/master/docs/dxp/latest/en/content-authoring-and-management/documents-and-media/developer-guide/document-api-basics/resources/liferay-g9i6.zip/curl) for examples.
 
 Make sure to open execute permissions on the scripts by [running the `update_permissions.sh xxxx` command]((#updating-permissions) on it, where `xxxx` is your project ID.

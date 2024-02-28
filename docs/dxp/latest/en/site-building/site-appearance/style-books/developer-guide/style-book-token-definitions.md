@@ -5,7 +5,6 @@ taxonomy-category-names:
 - Site Appearance and Design
 - Liferay Self-Hosted
 - Liferay PaaS
-- Liferay SaaS
 uuid: 28fd229f-2eb5-4c12-bc0b-cc33b2a0e859
 ---
 

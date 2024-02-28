@@ -125,9 +125,9 @@ public class Main {
 			}
 		}
 
+		_initDiffFileNames(learnBaseDirFile);
 		_initFileNames(_learnDocsDirName);
 		_initFlexmark();
-		_initDiffFileNames(learnBaseDirFile);
 	}
 
 	public void convertMarkdown() throws Exception {
@@ -261,6 +261,55 @@ public class Main {
 		return uuid.toString();
 	}
 
+	private void _initDiffFileNames(File dir) throws Exception {
+		_initLatestHash();
+
+		Git git = Git.open(new File(dir, ".git"));
+
+		Repository repository = git.getRepository();
+
+		ObjectId objectId = repository.resolve(_latestHash);
+
+		if (objectId == null) {
+			return;
+		}
+
+		CanonicalTreeParser oldCanonicalTreeParser = new CanonicalTreeParser();
+
+		oldCanonicalTreeParser.reset(
+			repository.newObjectReader(),
+			repository.parseCommit(
+				objectId
+			).getTree(
+			).getId());
+
+		CanonicalTreeParser newCanonicalTreeParser = new CanonicalTreeParser();
+
+		newCanonicalTreeParser.reset(
+			repository.newObjectReader(),
+			repository.parseCommit(
+				repository.resolve("HEAD")
+			).getTree(
+			).getId());
+
+		List<DiffEntry> diffs = git.diff(
+		).setOldTree(
+			oldCanonicalTreeParser
+		).setNewTree(
+			newCanonicalTreeParser
+		).call();
+
+		for (DiffEntry diff : diffs) {
+			if (diff.getNewPath(
+				).endsWith(
+					".md"
+				)) {
+
+				_diffFileNames.add("/" + diff.getNewPath());
+			}
+		}
+	}
+
 	private void _initFileNames(String fileName) {
 		File file = new File(fileName);
 
@@ -326,55 +375,6 @@ public class Main {
 		_parser = Parser.builder(
 			mutableDataSet
 		).build();
-	}
-
-	private void _initDiffFileNames(File dir) throws Exception {
-		_initLatestHash();
-
-		Git git = Git.open(new File(dir, ".git"));
-
-		Repository repository = git.getRepository();
-
-		ObjectId objectId = repository.resolve(_latestHash);
-
-		if (objectId == null) {
-			return;
-		}
-
-		CanonicalTreeParser oldCanonicalTreeParser = new CanonicalTreeParser();
-
-		oldCanonicalTreeParser.reset(
-			repository.newObjectReader(),
-			repository.parseCommit(
-				objectId
-			).getTree(
-			).getId());
-
-		CanonicalTreeParser newCanonicalTreeParser = new CanonicalTreeParser();
-
-		newCanonicalTreeParser.reset(
-			repository.newObjectReader(),
-			repository.parseCommit(
-				repository.resolve("HEAD")
-			).getTree(
-			).getId());
-
-		List<DiffEntry> diffs = git.diff(
-		).setOldTree(
-			oldCanonicalTreeParser
-		).setNewTree(
-			newCanonicalTreeParser
-		).call();
-
-		for (DiffEntry diff : diffs) {
-			if (diff.getNewPath(
-				).endsWith(
-					".md"
-				)) {
-
-				_diffFileNames.add("/" + diff.getNewPath());
-			}
-		}
 	}
 
 	private void _initLatestHash() throws Exception {

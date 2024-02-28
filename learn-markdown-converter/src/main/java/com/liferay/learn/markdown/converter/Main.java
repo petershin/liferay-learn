@@ -87,13 +87,6 @@ import org.yaml.snakeyaml.Yaml;
 public class Main {
 
 	public static void main(String[] arguments) throws Exception {
-		String lastestHashFileName = System.getenv(
-			"LIFERAY_LEARN_ETC_CRON_LATEST_HASH_FILE_NAME");
-
-		if (lastestHashFileName == null) {
-			lastestHashFileName = ".latest_hash";
-		}
-
 		Properties tokenProperties = new Properties();
 
 		try (InputStream inputStream = Main.class.getResourceAsStream(
@@ -107,18 +100,17 @@ public class Main {
 		File learnSiteDirFile = new File("../site");
 
 		Main main = new Main(
-			lastestHashFileName, learnBaseDirFile, learnDocsDirFile.getCanonicalPath(),
+			learnBaseDirFile, learnDocsDirFile.getCanonicalPath(),
 			learnSiteDirFile.getCanonicalPath(), tokenProperties);
 
 		main.convertMarkdown();
 	}
 
 	public Main(
-			String lastestHashFileName, File learnBaseDirFile, String learnDocsDirName,
+			File learnBaseDirFile, String learnDocsDirName,
 			String learnSiteDirName, Properties tokenProperties)
 		throws Exception {
 
-		_latestHashFileName = lastestHashFileName;
 		_learnDocsDirName = learnDocsDirName;
 		_learnSiteDirName = learnSiteDirName;
 
@@ -810,7 +802,7 @@ public class Main {
 	}
 
 	private void _readHashFromFile(File dir) throws Exception {
-		File hashFile = new File(dir, _lastestHashFileName);
+		File hashFile = new File(dir, ".latest_hash");
 
 		if (hashFile.exists()) {
 			_latestHash = Files.readString(hashFile.toPath());
@@ -922,7 +914,6 @@ public class Main {
 
 	private static final String _MYST_DIRECTIVE_BLOCK_START = "```{";
 
-	private static final String _lastestHashFileName = ".latest_hash";
 	private static final Pattern _literalIncludeParameterPattern =
 		Pattern.compile(":(.*): (.*)");
 	private static final Pattern _sphinxBadgePattern = Pattern.compile(
@@ -932,6 +923,7 @@ public class Main {
 	private final List<String> _errorMessages = new ArrayList<>();
 	private final Set<String> _fileNames = new TreeSet<>();
 	private final Set<File> _landingPageFiles = new HashSet<>();
+	private String _latestHash;
 	private final String _learnBaseDirName;
 	private final String _learnDocsDirName;
 	private final String _learnSiteDirName;
@@ -966,8 +958,6 @@ public class Main {
 
 			}));
 
-	private String _latestHash;
-	private String _latestHashFileName;
 	private Parser _parser;
 	private HtmlRenderer _renderer;
 	private Map<String, String> _tokens = new HashMap<>();

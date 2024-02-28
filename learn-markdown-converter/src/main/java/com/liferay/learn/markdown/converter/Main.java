@@ -127,7 +127,7 @@ public class Main {
 
 		_initFileNames(_learnDocsDirName);
 		_initFlexmark();
-		_initGitDiff(learnBaseDirFile);
+		_initDiffFileNames(learnBaseDirFile);
 	}
 
 	public void convertMarkdown() throws Exception {
@@ -328,7 +328,7 @@ public class Main {
 		).build();
 	}
 
-	private void _initGitDiff(File dir) throws Exception {
+	private void _initDiffFileNames(File dir) throws Exception {
 		_initLatestHash();
 
 		Git git = Git.open(new File(dir, ".git"));

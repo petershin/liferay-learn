@@ -95,24 +95,21 @@ public class Main {
 			tokenProperties.load(inputStream);
 		}
 
-		File learnBaseDirFile = new File("..");
-		File learnDocsDirFile = new File("../docs");
-		File learnSiteDirFile = new File("../site");
-
-		Main main = new Main(
-			learnBaseDirFile, learnDocsDirFile.getCanonicalPath(),
-			learnSiteDirFile.getCanonicalPath(), tokenProperties);
+		Main main = new Main(tokenProperties);
 
 		main.convertMarkdown();
 	}
 
-	public Main(
-			File learnBaseDirFile, String learnDocsDirName,
-			String learnSiteDirName, Properties tokenProperties)
-		throws Exception {
+	public Main(Properties tokenProperties) throws Exception {
+		File learnDocsDirFile = new File("../docs");
 
-		_learnDocsDirName = learnDocsDirName;
-		_learnSiteDirName = learnSiteDirName;
+		_learnDocsDirName = learnDocsDirFile.getCanonicalPath();
+
+		File learnSiteDirFile = new File("../site");
+
+		_learnSiteDirName = learnSiteDirFile.getCanonicalPath();
+
+		File learnBaseDirFile = new File("..");
 
 		_learnBaseDirName = learnBaseDirFile.getCanonicalPath();
 

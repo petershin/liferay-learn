@@ -23,6 +23,10 @@ Each Element can be disabled or enabled in the Blueprint using the toggle switch
 
 Each Element has configuration options, many of which directly correspond to attributes of the query as defined in the Elasticsearch [Query DSL documentation](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/query-dsl.html). Links to specific query types are provided below as appropriate.
 
+Beginning in Liferay 2024.Q1, elements requiring `groupId`s or `assetCategoryId`s have a selector instead of a basic text field, so the numeric IDs are no longer necessary.
+
+![Select asset categories and sites instead of entering their IDs.](./search-blueprints-elements-reference/images/15.png)
+
 ## Boost Some Results
 
 A `boost` configured on an [Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/query-dsl-term-query.html#term-field-params) query adjusts the relevance score of matching results. Values over 1.0 increase the score, while values between 0 and 1.0 decrease it.
@@ -52,55 +56,27 @@ Boost Pages and Web Content having with a default language matching the current 
 
 ### Boost Contents in a Category by Keyword Match
 
-Boost contents in a category if the user's search keywords contain any of the configured keywords. The Keywords and Asset Category ID are required.
-
-You can query the Elasticsearch index (using Kibana, for example) to find the search document for the Asset Category, which will include it's `assetCategoryId`. In this case the Category being searched has the title _business_:
-
-```json
-GET /_search
-{
-  "query": {
-    "multi_match": {
-      "fields": [
-        "localized_title_en_US",
-        "title_en_US",
-        "title"
-      ],
-      "query": "business"
-    }
-  }
-}
-```
-
-```{tip}
-If you're not sure whether the field to search for is localized or not, use a Multi-match query as in the above snippet to search multiple variations of the field.
-```
-
-Alternatively, Users with the proper permissions can find the Asset Category ID by navigating to the Site Menu &rarr; Categorization &rarr; Categories. Open the Category and check out its URL. For example,
-
-<http://localhost:8080/group/guest/~/control_panel/manage/-/categories_admin/vocabulary/41891/category/41892>
-
-The ID you need is the last part of the URL: `41892` in this case.
+Boost contents in a category if the user's search keywords contain any of the configured keywords. The Keywords and Asset Category Name (ID) are required.
 
 ### Boost Contents in a Category for a Period of Time
 
-Boost contents in a category for the given period of time. The Asset Category ID, the start time, and the end time are all required. This Element is conditional: if the current date is outside of the configured date range, the query and its boost is not executed.
+Boost contents in a category for the given period of time. The Asset Category Name (ID), the start time, and the end time are all required. This Element is conditional: if the current date is outside of the configured date range, the query and its boost is not executed.
 
 ![Boost results with a certain Category in the given date range.](./search-blueprints-elements-reference/images/02.png)
 
 ### Boost Contents in a Category for a User Segment
 
-Boost contents in a category for users belonging to the given [User Segments](../../../../site-building/personalizing-site-experience/segmentation/creating-and-managing-user-segments.md). If entering more than one User Segment ID, enter a comma into the text box to begin entering the next ID. The Asset Category ID and the User Segment IDs are required fields. This is a conditional Element: the query is executed and boosted only if the `user.active_segment_entry_ids` contains the given Segment IDs.
+Boost contents in a category for users belonging to the given [User Segments](../../../../site-building/personalizing-site-experience/segmentation/creating-and-managing-user-segments.md). If entering more than one User Segment ID, enter a comma into the text box to begin entering the next ID. The Asset Category Name (ID) and the User Segment IDs are required fields. This is a conditional Element: the query is executed and boosted only if the `user.active_segment_entry_ids` contains the given Segment IDs.
 
 ![Boost results with a certain Category for users in the given Segments.](./search-blueprints-elements-reference/images/03.png)
 
 ### Boost Contents in a Category for Guest Users
 
-Boost contents in a category if a user is not logged in. The Asset Category ID is required. This is a conditional Element, in that its query is only executed and boosted if the `user.is_signed_in` parameter is `false`.
+Boost contents in a category if a user is not logged in. The Asset Category Name (ID) is required. This is a conditional Element, in that its query is only executed and boosted if the `user.is_signed_in` parameter is `false`.
 
 ### Boost Contents in a Category for New User Accounts
 
-Boost contents in a category for user accounts created within the given time. The Asset Category ID and the Time range (in number of days) are required. An account created within the given number of days is considered a new account, and certain results are boosted for these users. This is a conditional Element: the query is executed and boosted only if the `user.create_date` parameter has a value within the given Time range.
+Boost contents in a category for user accounts created within the given time. The Asset Category Name (ID) and the Time range (in number of days) are required. An account created within the given number of days is considered a new account, and certain results are boosted for these users. This is a conditional Element: the query is executed and boosted only if the `user.create_date` parameter has a value within the given Time range.
 
 ![Boost results with a certain Category new Users.](./search-blueprints-elements-reference/images/04.png)
 
@@ -117,7 +93,7 @@ Boost contents in a category based on the time of day. Select one of these time 
 
 ### Boost Contents in a Category
 
-Boost and promote contents in a given category. The Asset Category ID is required.
+Boost and promote contents in a given category. The Asset Category Name (ID) is required.
 
 ### Boost Contents on My Sites
 
@@ -270,11 +246,11 @@ Do not search for comments. This Element looks for documents with a `discussion`
 
 ### Hide Contents in a Category for Guest Users
 
-Hide results in a category if the user is not logged in. This is a conditional Element: if the `user.is_signed_in` context parameter is `false`, results with the `assetCategoryIds` field matching the configured Asset Category ID are not returned.
+Hide results in a category if the user is not logged in. This is a conditional Element: if the `user.is_signed_in` context parameter is `false`, results with the `assetCategoryIds` field matching the configured Asset Category Name (ID) are not returned.
 
 ### Hide Contents in a Category
 
-Hide results with the given category. A term query is executed on the `assetCategoryIds` field. If the configured Asset Category ID matches, the document is not returned in the search results.
+Hide results with the given category. A term query is executed on the `assetCategoryIds` field. If the configured Asset Category Name (ID) matches, the document is not returned in the search results.
 
 ### Hide Hidden Contents
 

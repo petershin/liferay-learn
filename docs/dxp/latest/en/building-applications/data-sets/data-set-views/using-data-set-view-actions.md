@@ -1,13 +1,15 @@
 ---
 uuid: 91322da1-6e8d-4fa8-846c-0364ab665275
-- Development and Tooling
-- Data Sets
-- Liferay Self-Hosted
-- Liferay SaaS
+taxonomy-category-names:
+    - Development and Tooling
+    - Data Sets
+    - Liferay Self-Hosted
+    - Liferay SaaS
 ---
+
 # Using Data Set View Actions
 
-Here are some use cases to exemplify how to use data set view actions and perform different tasks.
+Here are some examples for how to use data set view actions and perform different tasks.
 
 ## Use Case: Using Actions to Edit Documents
 
@@ -22,21 +24,21 @@ Here are some use cases to exemplify how to use data set view actions and perfor
 | REST Schema      | Document                         |
 | REST Endpoint    | `/v1.0/sites/{siteId}/documents` |
 
-[Create a data set view](../data-set-views.md) for the Documents Data Set, name it Documents Data Set View, and add the `id`, `externalReferenceCode`, `title`, and `dateCreated` [fields](./data-set-view-fields.md) to it.
+[Create a data set view](../data-set-views.md) for the Documents Data Set, name it *Documents Data Set View*, and add the `id`, `externalReferenceCode`, `title`, and `dateCreated` [fields](./data-set-view-fields.md) to it.
 
-Then, [upload the documents to the Documents and Media application](../../../content-authoring-and-management/documents-and-media/uploading-and-managing/uploading-files.md). You can use some dummy documents just to practice.
+Then, [upload the documents to the Documents and Media application](../../../content-authoring-and-management/documents-and-media/uploading-and-managing/uploading-files.md). 
 
 ### Creating the Edit Action
 
-In the New Item Action page, fill in the fields using the information in the table below:
+In the New Item Action page, enter the fields using the information in the table below:
 
-| Field | Value                                                      |
-|:------|:-----------------------------------------------------------|
-| Label | Edit Document                                              |
+| Field | Value                                                         |
+|:------|:--------------------------------------------------------------|
+| Label | Edit Document                                                 |
 | Icon  | pencil (![Pencil icon](../../../images/icon-edit-pencil.png)) |
-| Type  | Link                                                       |
+| Type  | Link                                                          |
 
-Now, to fill in the URL,
+To fill in the URL,
 
 1. In a new tab, look for a performance review document in the Documents and Media application (Site Menu &rarr; Content & Data &rarr; Documents and Media).
 
@@ -48,9 +50,9 @@ Now, to fill in the URL,
 
 1. Return to the New Item Action window and paste the URL in its field.
 
-   If you use the action as it is now, users will be redirected to the same editing page referring to the same document regardless of the entry they are trying to edit.
+   If you use the action as it is now, users are sent to the same editing page referring to the same document regardless of the entry they are trying to edit.
 
-   That is not a behavior you want. Instead, you should make the URL as universal as possible and parameterize values to guarantee that each action will point to a specific entry's URL.
+   Since you don't want that, you should make the URL as universal as possible and parameterize values to guarantee that each action points to a specific entry's URL.
 
 1. To make the URL more universal, you can start by finding and deleting the initial address (`http://localhost:8080`).
 
@@ -58,12 +60,11 @@ Now, to fill in the URL,
 
 1. You can also find and delete the authentication token `p_p_auth%3DYH1QvqK9&p_p_auth=YH1QvqK9`.
 
-   This prevents any authentication conflicts since the `p_p_auth` authentication token changes every time you log in.
-
+   This prevents authentication conflicts since the `p_p_auth` authentication token changes every time you log in.
 
 1. To parameterize your URL, find the `fileEntryId` value in your URL. Replace it with a parameter used in the headless API to refer to the document. In this case, `id`.
 
-   The value for the fileEntryId will be different in your instance.
+   The value for the `fileEntryId` will be different in your instance.
 
    If you are not sure which values you should use, access your [API explorer](../../../headless-delivery/consuming-apis/consuming-rest-services.md) and look for the parameters used in your REST application.
 
@@ -109,7 +110,7 @@ The action is set. Use a Data Set fragment to display your data set view in a [c
 
 1. [Create a new page](../../../site-building/creating-pages/adding-pages/adding-a-page-to-a-site.md) or [start editing](../../../site-building/creating-pages/using-content-pages/adding-elements-to-content-pages.md) one.
 
-1. On the Fragments and Widgets menu on the left, search for Data Set under fragments. Drag and drop the fragment in your editing area.
+1. In the Fragments and Widgets menu on the left, search for Data Set under fragments. Drag and drop the fragment in your editing area.
 
 1. Click on your fragment. In the General tab on your right, there is a field where you can select a Data Set View. Click *Add* (![Add icon](../../../images/icon-add-app.png)) and select the Documents Data Set View.
 

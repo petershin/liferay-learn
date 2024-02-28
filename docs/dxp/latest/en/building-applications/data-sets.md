@@ -3,16 +3,19 @@ toc:
   - ./data-sets/creating-data-sets.md
   - ./data-sets/data-set-views.md
 uuid: 314a9243-1503-437a-a275-802b8b5a571b
-- Development and Tooling
-- Data Sets
-- Liferay Self-Hosted
-- Liferay SaaS
+taxonomy-category-names:
+  - Development and Tooling
+  - Data Sets
+  - Liferay Self-Hosted
+  - Liferay SaaS
 ---
+
 # Data Sets
+
 {bdg-secondary}`Liferay DXP 2024.Q1 U112`
 {bdg-link-primary}`[Beta Feature](../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
 
-Data sets are collections of related data that can be accessed individually or in combination or managed as a single entity.
+Data sets are collections of related data that can be accessed individually, in combination, or managed as a single entity.
 
 In Liferay, use the Data Set Manager application to [create and manage data sets](./data-sets/creating-data-sets.md) from different resources available through Liferay Headless APIs. This includes but is not restricted to, object definitions, blog postings, documents, user accounts, commerce-related elements, etc. Use the [API Explorer](../headless-delivery/consuming-apis/consuming-rest-services.md) to access the full list of available REST applications.
 
@@ -29,6 +32,8 @@ While creating or editing your data set view, select the [fields](./data-sets/da
 Combine the data set fragment with [experiences](../site-building/personalizing-site-experience/experience-personalization/creating-and-managing-experiences.md) and [segments](../site-building/personalizing-site-experience/segmentation/creating-and-managing-user-segments.md) to show different content to different audiences.
 
 ![Create different views for each data set and show different information to different audiences.](./data-sets/images/02.png)
+
+<!-- This intro doesn't tell me what data sets are for. Why do we have them? How can people use them? What are some use cases for why you would use them? What problems do they solve? In the intro, I don't really care about the Data Set Manager application, because I presume you'll tell me all about that in one of the other documents. I don't care that you can select fields and apply filters. I don't care that you customize the display, or sort them, or anything. Why don't I care? Because I have no idea what they are, or why I want or need them. Tell me those things. Tell me how they can solve my problems, or help me do something faster. -Rich -->
 
 ```{raw} html
 :file: ../landingpage_template.html

@@ -1,15 +1,18 @@
 ---
 uuid: 9c088b08-3ab6-4b1e-bb37-05e578657d51
-- Development and Tooling
-- Data Sets
-- Liferay Self-Hosted
-- Liferay SaaS
+taxonomy-category-names:
+    - Development and Tooling
+    - Data Sets
+    - Liferay Self-Hosted
+    - Liferay SaaS
 ---
+
 # Data Set View Filters
+
 {bdg-secondary}`Liferay DXP 2024.Q1 U112`
 {bdg-link-primary}`[Beta Feature](../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
 
-While managing data set views, you can define pre-applied filters to be used in the data set fragment. Although you can set those filters, users can change their parameters however they want.
+While managing data set views, you can define pre-applied filters to be used in the data set fragment. Although you can set those filters, users can change their parameters anytime.
 
 ## Adding Filters to the Data Set View
 
@@ -21,25 +24,25 @@ While managing data set views, you can define pre-applied filters to be used in 
 
 1. Click on the *Name* of the data set view to start editing it.
 
-1. Select the Filters tab.
+1. Select the *Filters* tab.
 
 1. Click *Add* (![Add button](../../../images/icon-add.png)) and choose one of the available options: [Client Extension](#client-extension-filter), [Date Range](#date-range-filter), or [Selection](#selection-filter).
 
 ## Client Extension Filter
 
-Use Frontend Data Set Filter [client extensions](../../client-extensions.md) or deploy a [client extension from your workspace](../../client-extensions/working-with-client-extensions.md) to fully customize the filter experience and add new types of filters to your data set view.
+Use Front-end Data Set Filter [client extensions](../../client-extensions.md) or deploy a [client extension from your workspace](../../client-extensions/working-with-client-extensions.md) to customize the filter experience and add new types of filters to your data set view.
 
-![You need to have a Frontend Data Set Filter client extension to create the client extension filter.](./data-set-view-filters/images/01.png)
+![You need to have a Front-end Data Set Filter client extension to create the client extension filter.](./data-set-view-filters/images/01.png)
 
 1. Choose *Client Extension* when adding a new filter.
 
    Each field can be associated with only one filter at a time.
 
-1. In the modal that opens, fill in the Name of the filter and, optionally, [localize](./data-set-view-fields.md#editing-and-localizing-labels) it.
+1. Fill in the *Name* of the filter and, optionally, [localize](./data-set-view-fields.md#editing-and-localizing-labels) it.
 
-1. Select the Field by which you want to filter the entries.
+1. Select the *Field* by which you want to filter the entries.
 
-1. Select the Frontend Data Set Filter client extension and click *Save*.
+1. Select the *Front-end Data Set Filter* client extension and click *Save*.
 
 ![Create a filter based on a client extension.](./data-set-view-filters/images/02.png)
 
@@ -51,13 +54,13 @@ Use date-type fields to pre-filter the displayed entries.
 
 1. Choose *Date Range* when adding a new filter.
 
-1. In the modal that opens, fill in the Name of the filter and, optionally, [localize](./data-set-view-fields.md#editing-and-localizing-labels) it.
+1. Fill in the *Name* of the filter and, optionally, [localize](./data-set-view-fields.md#editing-and-localizing-labels) it.
 
-1. Select the Field by which you want to filter the entries.
+1. Select the *Field* by which you want to filter the entries.
 
    Each field can be associated with only one filter at a time.
 
-1. (Optional) Set From and To dates to pre-filter the entries and the filter will show entries within the specified range.
+1. (Optional) Set *From* and *To* dates to pre-filter the entries, and the filter shows entries within the specified range.
 
    You can set just one of the two dates.
 
@@ -71,9 +74,9 @@ Use picklist options as parameters for the filter.
 
 1. Choose *Selection* when adding a new filter.
 
-1. In the modal that opens, fill in the Name of the filter and, optionally, [localize](./data-set-view-fields.md#editing-and-localizing-labels) it.
+1. Fill in the *Name* of the filter and, optionally, [localize](./data-set-view-fields.md#editing-and-localizing-labels) it.
 
-1. Select the Field by which you want to filter the entries.
+1. Select the *Field* by which you want to filter the entries.
 
 1. Choose a picklist to associate with the filter.
 

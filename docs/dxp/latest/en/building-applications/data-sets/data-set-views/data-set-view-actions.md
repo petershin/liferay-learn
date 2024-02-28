@@ -1,12 +1,14 @@
 ---
 uuid: f4f19cd5-1077-4541-a836-aaeeeb1eeb08
 taxonomy-category-names:
-- Development and Tooling
-- Data Sets
-- Liferay Self-Hosted
-- Liferay SaaS
+    - Development and Tooling
+    - Data Sets
+    - Liferay Self-Hosted
+    - Liferay SaaS
 ---
+
 # Data Set View Actions
+
 {bdg-secondary}`Liferay DXP 2024.Q1 U112`
 {bdg-link-primary}`[Beta Feature](../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
 
@@ -16,13 +18,13 @@ While managing data set views, define actions to be used in the data set fragmen
 
 1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), select the *Control Panel* tab, and click *Data Sets* under Object.
 
-1. Click on the *Name* of the data set you want to access.
+1. Click the *Name* of the data set you want to access.
 
    Alternatively, click *Actions* (![Actions menu](../../../images/icon-actions.png)) next to the data set entry and select *Edit*.
 
-1. Click on the *Name* of the data set view to start editing it.
+1. Click the *Name* of the data set view to start editing it.
 
-1. Select the Actions tab and click *Add* (![Add button](../../../images/icon-add.png)) &rarr; you are redirected to a page where you must configure your action before creating it.
+1. Select the Actions tab and click *Add* (![Add button](../../../images/icon-add.png)); a page appears where you must configure your action before creating it.
 
 Under the Display Options section,
 
@@ -42,7 +44,7 @@ Under the Action Behavior section,
 
 ![Use the Link type action and specify a URL for redirecting the user. Add a Headless Action Key, write a Confirmation Message, and choose the Message Type.](./data-set-view-actions/images/03.png)
 
-1. The Link Type is selected by default. Use it to redirect users to a specified URL once they click on the action button/icon.
+1. The Link Type is selected by default. Use it to send users to a specified URL once they click on the action button/icon.
 
 <!-- This will change once new features are introduced. There is talk of adding modals, panels, and buttons to create new elements. Then, I'll restructure this doc and add sections for each of those types. - Eric  -->
 
@@ -50,18 +52,18 @@ Under the Action Behavior section,
 
 1. (Optional) Enter a Headless Activation Key. With the activation key, administrators can associate an action to a headless endpoint (e.g. GET, POST, and DELETE).
 
-   So, if you want to create a button with an action to edit a document, you should use `replace` as the Headless Activation Key.
+   If you want to create a button with an action to edit a document, use `replace` as the Headless Activation Key.
 
-   Find those activation keys through your [API Explorer](../../../headless-delivery/consuming-apis/consuming-rest-services.md). See [Use Case: Using Actions to Edit Documents](./using-data-set-view-actions.md#use-case-using-actions-to-edit-documents) to learn more.
+   Find activation keys through your [API Explorer](../../../headless-delivery/consuming-apis/consuming-rest-services.md). See [Use Case: Using Actions to Edit Documents](./using-data-set-view-actions.md#use-case-using-actions-to-edit-documents) to learn more.
 
    ![Use Headless Activation Keys to link an action to a headless endpoint.](./data-set-view-actions/images/04.png)
 
    !!! important
        As the action is associated with a headless endpoint, the user must have the necessary permissions to use the endpoint (e.g. to edit the document). Otherwise, the action is not shown.
 
-1. (Optional) Enter a Confirmation Message. The message is shown before the action is executed.
+1. (Optional) Enter a Confirmation Message. The message appears before the action is executed.
 
-   No message is displayed if this field is left blank.
+   No message appears if this field is left blank.
 
    Choose the Message Type: Warning, Info, Secondary, Success, and Danger.
 

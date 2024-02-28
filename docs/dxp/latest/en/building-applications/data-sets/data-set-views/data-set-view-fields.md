@@ -1,31 +1,34 @@
 ---
 uuid: 8d92cb6f-d38f-4144-98ae-d69af473178b
-- Development and Tooling
-- Data Sets
-- Liferay Self-Hosted
-- Liferay SaaS
+taxonomy-category-names:
+    - Development and Tooling
+    - Data Sets
+    - Liferay Self-Hosted
+    - Liferay SaaS
 ---
+
 # Data Set View Fields
+
 {bdg-secondary}`Liferay DXP 2024.Q1 U112`
 {bdg-link-primary}`[Beta Feature](../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
 
-Use the data set manager to select which fields to display in your data set view. These fields are mapped to columns in [the data set fragment](./using-data-set-view-actions.md#using-a-data-set-fragment-in-a-content-page). You can add, delete, order, and edit your fields using the Fields tab in the data set view editor.
+Use the data set manager to select the fields to display in your data set view. These fields are mapped to columns in [the data set fragment](./using-data-set-view-actions.md#using-a-data-set-fragment-in-a-content-page). You can add, delete, order, and edit your fields using the Fields tab in the data set view editor.
 
 ## Adding Fields to the Data Set View
 
 1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), select the *Control Panel* tab, and click *Data Sets* under Object.
 
-1. Click on the *Name* of the data set you want to access.
+1. Click the *Name* of the data set you want to access.
 
    Alternatively, you can click *Actions* (![Actions menu](../../../images/icon-actions.png)) next to the data set entry and select *Edit*.
 
-1. Click on the *Name* of the data set view to start editing it.
+1. Click the *Name* of the data set view to start editing it.
 
-1. Select the Fields tab.
+1. Select the *Fields* tab.
 
 1. Click *Add* (![Add button](../../../images/icon-add.png)).
 
-1. In the modal that opens, select the fields to be displayed.
+1. Select the fields to be displayed.
 
    Select one or more fields. You can also select all fields at once by clicking the checkbox next to the search bar.
 
@@ -39,7 +42,7 @@ With the fields in place, you can reorder them by using the drag icon on the lef
 
 ## Editing Fields in the Data Set View
 
-Now, you can edit your fields to alter and localize their labels, select a renderer, and define if they are sortable or not.
+Now you can edit your fields to alter and localize their labels, select a renderer, and define if they are sortable.
 
 To edit a field, click *Actions* (![Actions menu](../../../images/icon-actions.png)) next to the field and select *Edit*.
 
@@ -47,7 +50,7 @@ To edit a field, click *Actions* (![Actions menu](../../../images/icon-actions.p
 
 ### Editing and Localizing Labels
 
-Once you start editing a field, you can change the label to a more user-friendly one and localize it (1).
+Once you start editing a field, you can change the label and localize it (1).
 
 To localize the label,
 
@@ -62,16 +65,16 @@ To localize the label,
    ![The localization status label next to the flag changes to `Translated` to indicate that the localization was successful.](./data-set-view-fields/images/03.png)
 
 !!! note
-    The localized text is shown if users have the respective language applied to their portal.
+    The localized text appears if users have the respective language applied to their portal.
 
 ### Selecting a Renderer for the Field
 
-A renderer (3) is a structured way to customize how a component is displayed. They are built to be convenient. You enter a raw value and the renderer assumes the most typical format and UI for it.
+A renderer (3) is a structured way to customize how a component appears. They are built to be convenient. You enter a raw value and the renderer assumes the most typical format and UI for it.
 
 !!! important
     To ensure your data is displayed correctly, the field type must be compatible with the selected renderer.
 
-In the picture below, on the left, the status, date, and date and time fields have the default renderer applied. On the right, the status, date, and date and time renderers are applied to the respective fields.
+Below on the left, the status, date, and date and time fields have the default renderer applied. On the right, the status, date, and date and time renderers are applied to the respective fields.
 
 ![Status, date, and date and time fields without and with renderers applied.](./data-set-view-fields/images/04.png)
 
@@ -81,7 +84,7 @@ In the picture below, on the left, the status, date, and date and time fields ha
 
 When a field is marked as sortable, users can sort the elements while using the data set fragment in a content page.
 
-In the video below, users can sort entries based on the integer field initially. However, when the sortable checkbox is unchecked, sorting entries using the integer field as a filter becomes impossible.
+Users can sort entries based on the integer field initially. However, when the sortable checkbox is unchecked, sorting entries using the integer field as a filter becomes impossible (see below).
 
 ![Define the fields as sortable, so users can sort elements when using the data set fragment.](./data-set-view-fields/images/05.gif)
 

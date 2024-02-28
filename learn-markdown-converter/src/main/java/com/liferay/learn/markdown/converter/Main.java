@@ -240,14 +240,6 @@ public class Main {
 		_errorMessages.add(errorMessage);
 	}
 
-	private void _getLatestHash() throws Exception {
-		File file = new File(_learnBaseDirName, ".latest_hash");
-
-		if (file.exists()) {
-			_latestHash = Files.readString(file.toPath());
-		}
-	}
-
 	private String _getUuid(String text) {
 		Document document = _parser.parse(text);
 
@@ -339,7 +331,7 @@ public class Main {
 	}
 
 	private void _initGitDiff(File dir) throws Exception {
-		_getLatestHash();
+		_initLatestHash();
 
 		Git git = Git.open(new File(dir, ".git"));
 
@@ -384,6 +376,14 @@ public class Main {
 
 				_diffFileNames.add("/" + diff.getNewPath());
 			}
+		}
+	}
+
+	private void _initLatestHash() throws Exception {
+		File file = new File(_learnBaseDirName, ".latest_hash");
+
+		if (file.exists()) {
+			_latestHash = Files.readString(file.toPath());
 		}
 	}
 

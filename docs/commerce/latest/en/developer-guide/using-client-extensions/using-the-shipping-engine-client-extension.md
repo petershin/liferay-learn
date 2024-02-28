@@ -1,5 +1,14 @@
 ---
 uuid: 91bc36b1-f5bd-4b79-a43d-66914fc11d89
+taxonomy-category-names:
+- Commerce
+- Client Extensions
+- Development and Tooling
+- Developer Tools
+- Java Development
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 # Using the Shipping Engine Client Extension
 

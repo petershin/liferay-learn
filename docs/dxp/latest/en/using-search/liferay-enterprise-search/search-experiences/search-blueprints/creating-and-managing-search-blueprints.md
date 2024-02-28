@@ -229,11 +229,9 @@ For example,
 
 1. Add two new [Web Content Articles](../../../../content-authoring-and-management/web-content/web-content-articles.md); make sure both have _test_ in the title field. Associate one of them to the category you created.
 
-1. Create a new Blueprint and add the Conditional Element _Hide Contents in a Category for Guest Users_. You need the Asset Category ID for the Category you created, but you can find that in the Preview window.
+1. Create a new Blueprint and add the Conditional Element _Hide Contents in a Category for Guest Users_.
 
-1. Search for _administrative_ in the preview. Expand the document of the Web Content Article with the category, then find the `assetCategoryId` (e.g., 43013).
-
-1. Use the ID in the Element's configuration.
+1. Select _administrative_ in the Asset Category Names (ID) field.
 
 1. Open the Preview sidebar's _Attributes_ and enter
 

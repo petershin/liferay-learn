@@ -3,22 +3,22 @@ uuid: 9fdd050d-28b6-46a5-af49-e864e4a35553
 ---
 # Modeling B2B Relationships with Liferay Accounts
 
-We've set up Clarity's internal users with the right roles and permissions. Now we turn our attention to Clarity's business to business (B2B) customers. The Liferay Accounts feature can be used to represent external entities. For example, Liferay accounts can model a business to consumer (B2C) context in which a user is a customer. Accounts can also model a B2B context where an external company is a customer that is used by multiple users.
+We've set up Clarity's internal users with the right roles and permissions. We now turn our attention to Clarity's business to business (B2B) customers. The Liferay Accounts feature can be used to represent external entities. For example, Liferay accounts can model a business to consumer (B2C) context in which a customer is a single user. Accounts can also model a B2B context where a customer represents an external company with multiple users.
 
-Clarity wants to provide login access to their different B2B partners. They can use Liferay account to do this. In our demonstration, Clarity has a B2B customer called Opportune Optics that has stores across the country. Clarity also has an account manager that is associated with the Opportune Optics account group. See a summary in the table below:
+Clarity wants to provide login access to their different B2B partners. They can use Liferay account to do this. In our demonstration, Clarity has a B2B partner called Opportune Optics that has stores across the country. See a summary in the table below:
 
 | Name | Account | Account Group | Role | Organization |
 |:--- |:--- |:--- |:--- |:--- |
 | Noah Norman | Opportune Optics NY | Opportune Optics | Order Manager | Opportune Optics |
-| Sarah Stanley | Opportune Optics NY | Opportune Optics | Buyer |
-| Preston Palmer | Opportune Optics SF | Opportune Optics | Order Manager |
-| Robert Reed | Opportune Optics SF | Opportune Optics | Buyer |
-| Lily Lewis | N/A | Opportune Optics | Account Manager |
+| Sarah Stanley | Opportune Optics NY | Opportune Optics | Buyer | Opportune Optics |
+| Preston Palmer | Opportune Optics SF | Opportune Optics | Order Manager | Opportune Optics |
+| Robert Reed | Opportune Optics SF | Opportune Optics | Buyer | Opportune Optics |
+| Lily Lewis | N/A | Opportune Optics | Account Manager | Opportune Optics |
 
 For our next exercise we will create accounts for Opportune Optics and associate users with the accounts.
 
 !!! note
-   These users are already created together with the Clarity sample site. If you do not have the Clarity sample site, create these users from within the Liferay UI.
+   These users are already created with the Clarity sample site. If you do not have the Clarity sample site, create these users from within the Liferay UI.
 
 ## Exercise 2
 
@@ -28,11 +28,11 @@ For our next exercise we will create accounts for Opportune Optics and associate
 
 1. Input `Opportune Optics NY` as the account name. Select `Business` as the account type. Click _Save_.
 
-1. Click the _Users_ tab and click the add icon to add new users. Click _Assign Users_ and select Noah Norman and Sarah Stanley from the list of users. Click _Assign.
+1. Click the _Users_ tab and click the add icon to add new users. Click _Assign Users_ and select Noah Norman and Sarah Stanley from the list of users. Click _Assign_.
 
    ![Select the users to assign to the account.](./modeling-b2b-relationships-with-liferay-accounts/images/01.png)
 
-1. Noah and Sarah should now appear under the list of users associated with the account. Click the options icon next to Noah Norman and click _Assign Roles_. Select _Order Manager_ and click _Done_. In the same way, assign the _Buyer_ role to Sarah.
+1. Noah and Sarah should now appear under the list of users associated with the account. Click the options icon next to Noah Norman and click _Assign Roles_. Select _Order Manager_ and click _Done_. In the same way, assign the _Buyer_ role to Sarah. These default account roles come with different permissions in which the buyer can view and add items to an accounts cart, while the order manager can view and approve an order.
 
    ![Select the role to assign to an account user.](./modeling-b2b-relationships-with-liferay-accounts/images/02.png)
 
@@ -40,11 +40,11 @@ For our next exercise we will create accounts for Opportune Optics and associate
 
 1. Navigate back to the accounts page. Click the add icon and create a new account for `Opportune Optics SF`.
 
-1. Assign Preston Palmer and Robert Reed to the account. Then, assign order manager role to Preston and the buyer role to Robert. 
+1. Assign Preston Palmer and Robert Reed to the account. Then, assign the order manager role to Preston and the buyer role to Robert. 
 
 ### Creating an Opportune Optics Account Group
 
-Use account groups to keep accounts organized. For example, since Opportune Optics has different stores, group them together in one account group. This also gives the possibility of customizing price lists, offering discounts, and changing product visibility for the accounts in the group.
+Use account groups to keep accounts organized. For example, since Opportune Optics has different stores, group them together under one account group. Account groups gives the possibility of customizing price lists, offering discounts, and changing product visibility for the accounts in the group. This is great for Clarity's account management because of the special pricing agreements they have with Opportune Optics. 
 
 1. Navigate to _Control Panel_ &rarr; _Account Groups_. Click the add icon to create a new account group.
 
@@ -58,7 +58,7 @@ Use account groups to keep accounts organized. For example, since Opportune Opti
 
 ### Associating an Organization
 
-As Opportune Optics represents a large number of accounts, it makes sense for Clarity to assign a dedicated B2B account manager to all the accounts. The account manager role has permissions such ass adding itmes to an account's shopping cart or submitting an order on behalf of an account. This role is available through Liferay organizations. 
+As Opportune Optics represents a large number of accounts, it makes sense for Clarity to assign a dedicated B2B account manager to all the accounts. The account manager role has permissions such as adding items to an account's shopping cart or submitting an order on behalf of an account. This role is available through Liferay organizations. This again is a time-saver for Clarity as it means they can help Opportune Optics fulfill orders quickly.
 
 1. Navigate to _Control Panel_ &rarr; _Accounts_. Click on _Opportune Optics NY_ and click the _Organizations_ tab. Click the add icon.
 
@@ -72,7 +72,7 @@ As Opportune Optics represents a large number of accounts, it makes sense for Cl
 
 1. Click _Select_ and select the _Opportune Optics_ organization. Click _Add_.
 
-1. Finally, click on _Roles_. Click _Select_ next to organization roles. Click _Choose_ next to account manager. Scroll to the bottom and click _Save_. Lily is now the account manager for the Opportune Optics organization.
+1. Finally, click on _Roles_. Click _Select_ next to organization roles. Click _Choose_ next to account manager. Scroll to the bottom and click _Save_. Lily is now the account manager for the Opportune Optics organization. She has the permissions now to view and submit orders for Opportune Optics.
 
 To learn more about Liferay accounts and modeling B2B relationships, see our official documentation about [accounts](https://learn.liferay.com/w/dxp/users-and-permissions/accounts)
 

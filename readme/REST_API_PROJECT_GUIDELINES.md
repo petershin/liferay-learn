@@ -216,10 +216,10 @@ curl \
 | Line | Description |
 | :--- | :---------- |
 | `curl \` | The cURL command has its own line. |
+| *\<tab\>* `"http://..." \` | The endpoint URL has its own line. |
 | *\<tab\>* `--data "..." \` | The lower-case flags and their values are listed alphabetically. |
 | *\<tab\>* `--header "..." \` | The upper-case flags and their values are listed first alphabetically. |
 | *\<tab\>* `--request POST \` | The HTTP action has its own line. |
-| *\<tab\>* `"http://..." \` | The endpoint URL has its own line. |
 | *\<tab\>* `--user "..."` | The last line has no backslash. |
 
 If the data you're posting is more than one line of JSON, use the `--data-raw` flag: 

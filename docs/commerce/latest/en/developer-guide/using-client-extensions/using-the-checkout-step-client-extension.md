@@ -12,6 +12,8 @@ taxonomy-category-names:
 ---
 # Using the Checkout Step Client Extension
 
+{bdg-secondary}`Liferay DXP 2024.Q1+/Portal 7.4 GA112+`
+
 You can use a client extension to create a new checkout step. This tutorial uses an example client extension from the [sample workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace) and it consists of a standalone [Spring Boot application](https://docs.spring.io/spring-boot/docs/current/reference/html/getting-started.html#getting-started) that communicates with Liferay using [OAuth 2](https://learn.liferay.com/w/dxp/headless-delivery/using-oauth2) and a UI element that takes an input from the user during checkout. The user input for purchase order number gets added to the order through the Spring Boot application that patches the value to the relevant endpoint.
 
 ## Prerequisites
@@ -228,5 +230,6 @@ Then, it calls the `patch()` method on the `WebClient`, setting the `MediaType` 
 
 ## Related Topics
 
+* [Using the Shipping Engine Client Extension](./using-the-shipping-engine-client-extension.md)
 * [Using a Microservice Client Extension](https://learn.liferay.com/w/dxp/building-applications/client-extensions/microservice-client-extensions/using-a-microservice-client-extension)
 * [OAuth User Agent YAML Configuration Reference](https://learn.liferay.com/w/dxp/building-applications/client-extensions/configuration-client-extensions/oauth-user-agent-yaml-configuration-reference)

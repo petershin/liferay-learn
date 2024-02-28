@@ -74,7 +74,6 @@ import org.eclipse.jgit.api.Git;
 import org.eclipse.jgit.diff.DiffEntry;
 import org.eclipse.jgit.lib.ObjectId;
 import org.eclipse.jgit.lib.Repository;
-import org.eclipse.jgit.revwalk.RevCommit;
 import org.eclipse.jgit.treewalk.CanonicalTreeParser;
 
 import org.yaml.snakeyaml.Yaml;
@@ -336,35 +335,35 @@ public class Main {
 
 		Repository repository = git.getRepository();
 
-		ObjectId newRev = repository.resolve("HEAD");
+		ObjectId objectId = repository.resolve(_latestHash);
 
-		ObjectId oldRev = repository.resolve(_latestHash);
-
-		if (oldRev == null) {
+		if (objectId == null) {
 			return;
 		}
 
-		CanonicalTreeParser newTreeParser = new CanonicalTreeParser();
-		CanonicalTreeParser oldTreeParser = new CanonicalTreeParser();
+		CanonicalTreeParser oldCanonicalTreeParser = new CanonicalTreeParser();
 
-		RevCommit newCommit = repository.parseCommit(newRev);
-
-		RevCommit oldCommit = repository.parseCommit(oldRev);
-
-		newTreeParser.reset(
+		oldCanonicalTreeParser.reset(
 			repository.newObjectReader(),
-			newCommit.getTree(
+			repository.parseCommit(
+				objectId
+			).getTree(
 			).getId());
-		oldTreeParser.reset(
+
+		CanonicalTreeParser newCanonicalTreeParser = new CanonicalTreeParser();
+
+		newCanonicalTreeParser.reset(
 			repository.newObjectReader(),
-			oldCommit.getTree(
+			repository.parseCommit(
+				repository.resolve("HEAD")
+			).getTree(
 			).getId());
 
 		List<DiffEntry> diffs = git.diff(
 		).setOldTree(
-			oldTreeParser
+			oldCanonicalTreeParser
 		).setNewTree(
-			newTreeParser
+			newCanonicalTreeParser
 		).call();
 
 		for (DiffEntry diff : diffs) {

@@ -292,20 +292,20 @@ public class Main {
 			).getTree(
 			).getId());
 
-		List<DiffEntry> diffs = git.diff(
+		List<DiffEntry> diffEntries = git.diff(
 		).setOldTree(
 			oldCanonicalTreeParser
 		).setNewTree(
 			newCanonicalTreeParser
 		).call();
 
-		for (DiffEntry diff : diffs) {
-			if (diff.getNewPath(
+		for (DiffEntry diffEntry : diffEntries) {
+			if (diffEntry.getNewPath(
 				).endsWith(
 					".md"
 				)) {
 
-				_diffFileNames.add("/" + diff.getNewPath());
+				_diffFileNames.add("/" + diffEntry.getNewPath());
 			}
 		}
 	}

@@ -101,6 +101,10 @@ public class Main {
 	}
 
 	public Main(Properties tokenProperties) throws Exception {
+		File learnBaseDirFile = new File("..");
+
+		_learnBaseDirName = learnBaseDirFile.getCanonicalPath();
+
 		File learnDocsDirFile = new File("../docs");
 
 		_learnDocsDirName = learnDocsDirFile.getCanonicalPath();
@@ -108,10 +112,6 @@ public class Main {
 		File learnSiteDirFile = new File("../site");
 
 		_learnSiteDirName = learnSiteDirFile.getCanonicalPath();
-
-		File learnBaseDirFile = new File("..");
-
-		_learnBaseDirName = learnBaseDirFile.getCanonicalPath();
 
 		Enumeration<String> enumeration =
 			(Enumeration<String>)tokenProperties.propertyNames();
@@ -126,13 +126,9 @@ public class Main {
 			}
 		}
 
-		_readHashFromFile(learnBaseDirFile);
-
-		_addFileNames(_learnDocsDirName);
-
-		_getGitDiff(learnBaseDirFile);
-
+		_initFileNames(_learnDocsDirName);
 		_initFlexmark();
+		_initGitDiff(learnBaseDirFile);
 	}
 
 	public void convertMarkdown() throws Exception {
@@ -206,21 +202,6 @@ public class Main {
 		}
 	}
 
-	private void _addFileNames(String fileName) {
-		File file = new File(fileName);
-
-		if (file.isDirectory() &&
-			!Objects.equals(file.getName(), "resources") &&
-			!Objects.equals(file.getName(), "_snippets")) {
-
-			for (String currentFileName : file.list()) {
-				_addFileNames(fileName + "/" + currentFileName);
-			}
-		}
-
-		_fileNames.add(fileName);
-	}
-
 	private String _dedent(int dedent, String line) {
 		if (line == null) {
 			return null;
@@ -259,50 +240,11 @@ public class Main {
 		_errorMessages.add(errorMessage);
 	}
 
-	private void _getGitDiff(File dir) throws Exception {
-		Git git = Git.open(new File(dir, ".git"));
+	private void _getLatestHash() throws Exception {
+		File file = new File(_learnBaseDirName, ".latest_hash");
 
-		Repository repository = git.getRepository();
-
-		ObjectId newRev = repository.resolve("HEAD");
-
-		ObjectId oldRev = repository.resolve(_latestHash);
-
-		if (oldRev == null) {
-			return;
-		}
-
-		CanonicalTreeParser newTreeParser = new CanonicalTreeParser();
-		CanonicalTreeParser oldTreeParser = new CanonicalTreeParser();
-
-		RevCommit newCommit = repository.parseCommit(newRev);
-
-		RevCommit oldCommit = repository.parseCommit(oldRev);
-
-		newTreeParser.reset(
-			repository.newObjectReader(),
-			newCommit.getTree(
-			).getId());
-		oldTreeParser.reset(
-			repository.newObjectReader(),
-			oldCommit.getTree(
-			).getId());
-
-		List<DiffEntry> diffs = git.diff(
-		).setOldTree(
-			oldTreeParser
-		).setNewTree(
-			newTreeParser
-		).call();
-
-		for (DiffEntry diff : diffs) {
-			if (diff.getNewPath(
-				).endsWith(
-					".md"
-				)) {
-
-				_diffFileNames.add("/" + diff.getNewPath());
-			}
+		if (file.exists()) {
+			_latestHash = Files.readString(file.toPath());
 		}
 	}
 
@@ -327,6 +269,21 @@ public class Main {
 		}
 
 		return uuid.toString();
+	}
+
+	private void _initFileNames(String fileName) {
+		File file = new File(fileName);
+
+		if (file.isDirectory() &&
+			!Objects.equals(file.getName(), "resources") &&
+			!Objects.equals(file.getName(), "_snippets")) {
+
+			for (String currentFileName : file.list()) {
+				_initFileNames(fileName + "/" + currentFileName);
+			}
+		}
+
+		_fileNames.add(fileName);
 	}
 
 	private void _initFlexmark() {
@@ -379,6 +336,55 @@ public class Main {
 		_parser = Parser.builder(
 			mutableDataSet
 		).build();
+	}
+
+	private void _initGitDiff(File dir) throws Exception {
+		_getLatestHash();
+
+		Git git = Git.open(new File(dir, ".git"));
+
+		Repository repository = git.getRepository();
+
+		ObjectId newRev = repository.resolve("HEAD");
+
+		ObjectId oldRev = repository.resolve(_latestHash);
+
+		if (oldRev == null) {
+			return;
+		}
+
+		CanonicalTreeParser newTreeParser = new CanonicalTreeParser();
+		CanonicalTreeParser oldTreeParser = new CanonicalTreeParser();
+
+		RevCommit newCommit = repository.parseCommit(newRev);
+
+		RevCommit oldCommit = repository.parseCommit(oldRev);
+
+		newTreeParser.reset(
+			repository.newObjectReader(),
+			newCommit.getTree(
+			).getId());
+		oldTreeParser.reset(
+			repository.newObjectReader(),
+			oldCommit.getTree(
+			).getId());
+
+		List<DiffEntry> diffs = git.diff(
+		).setOldTree(
+			oldTreeParser
+		).setNewTree(
+			newTreeParser
+		).call();
+
+		for (DiffEntry diff : diffs) {
+			if (diff.getNewPath(
+				).endsWith(
+					".md"
+				)) {
+
+				_diffFileNames.add("/" + diff.getNewPath());
+			}
+		}
 	}
 
 	private String _processGridBlock(List<String> gridLines, int columns) {
@@ -796,14 +802,6 @@ public class Main {
 		}
 
 		return line;
-	}
-
-	private void _readHashFromFile(File dir) throws Exception {
-		File hashFile = new File(dir, ".latest_hash");
-
-		if (hashFile.exists()) {
-			_latestHash = Files.readString(hashFile.toPath());
-		}
 	}
 
 	private String _toHTML(File file, String text) throws Exception {

@@ -146,7 +146,7 @@ public class Main {
 					!_diffFileNames.contains(
 						fileName.replace(_learnBaseDirName, ""))) {
 
-					System.out.println("File skipped: " + fileName);
+					System.out.println("Skipped: " + fileName);
 
 					continue;
 				}
@@ -175,19 +175,10 @@ public class Main {
 				FileUtils.writeStringToFile(
 					htmlFile, _toHTML(file, text), StandardCharsets.UTF_8);
 
-				System.out.println(
-					"File saved: " + htmlFile.getCanonicalPath());
+				System.out.println("Saved: " + htmlFile.getCanonicalPath());
 			}
 			catch (Exception exception) {
 				_error(exception.getMessage());
-			}
-		}
-
-		if (!_warningMessages.isEmpty()) {
-			System.out.println(_warningMessages.size() + " warning messages:");
-
-			for (String warningMessage : _warningMessages) {
-				System.out.println(warningMessage);
 			}
 		}
 
@@ -199,6 +190,14 @@ public class Main {
 			}
 
 			throw new Exception(_errorMessages.size() + " error messages");
+		}
+
+		if (!_warningMessages.isEmpty()) {
+			System.out.println(_warningMessages.size() + " warning messages:");
+
+			for (String warningMessage : _warningMessages) {
+				System.out.println(warningMessage);
+			}
 		}
 	}
 

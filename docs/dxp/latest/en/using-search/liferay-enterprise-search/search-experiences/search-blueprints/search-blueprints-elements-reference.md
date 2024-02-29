@@ -23,7 +23,7 @@ Each Element can be disabled or enabled in the Blueprint using the toggle switch
 
 Each Element has configuration options, many of which directly correspond to attributes of the query as defined in the Elasticsearch [Query DSL documentation](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/query-dsl.html). Links to specific query types are provided below as appropriate.
 
-Beginning in Liferay 2024.Q1, elements requiring `groupId`s or `assetCategoryId`s have a selector instead of a basic text field, so the numeric IDs are no longer necessary.
+Beginning in Liferay 2024.Q1, elements using asset categories and sites provide a selector instead of a requiring an ID in a basic text field. Retrieving numeric IDs is no longer necessary, but you can continue entering IDs manually if desired.
 
 ![Select asset categories and sites instead of entering their IDs.](./search-blueprints-elements-reference/images/15.png)
 

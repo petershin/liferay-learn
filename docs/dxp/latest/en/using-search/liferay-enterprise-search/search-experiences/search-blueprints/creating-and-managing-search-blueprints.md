@@ -231,7 +231,7 @@ For example,
 
 1. Create a new Blueprint and add the Conditional Element _Hide Contents in a Category for Guest Users_.
 
-1. Select _administrative_ in the Asset Category Names (ID) field.
+1. Select _administrative_ in the Asset Category Names (ID) field, or enter the ID manually if you know it.
 
 1. Open the Preview sidebar's _Attributes_ and enter
 

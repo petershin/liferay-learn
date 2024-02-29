@@ -10,60 +10,49 @@ taxonomy-category-names:
 ---
 # Product Images
 
-Product images help to ensure that customers know what they are buying and increase the likelihood of a sale. Store administrators can upload images for each product variant (different SKUs).
+Product images help to ensure that customers know what they are buying and increase the likelihood of a sale. If you have a product with different SKUs you can can upload images for each product variant.
 
 ## Adding a Single Image
 
 To add a single image:
 
-1. Go to the _Global Applications_ menu → _Commerce_ → _Products_.
-1. Click on a product (in this example, _Brake Rotors_).
-1. Click the _Media_ sub-tab.
+1. Open the _Global Menu_ (![Global Menu](../../../images/icon-applications-menu.png)) &rarr; _Commerce_ &rarr; _Products_.
 
-    ![Adding a product image](./product-images/images/08.png)
+1. Select a product.
 
-1. Click the (![Add Icon](../../../images/icon-add.png)) button to add a product image.
+1. Go to _Media_ and under Images, click _Add_ (![Add Icon](../../../images/icon-add.png)) to add a product image.
+
+   ![Adding a product image.](./product-images/images/01.png)
+
 1. Drag and drop an image or click _Select File_ to upload an image.
-1. Enter a title: _Brake Rotor_.
 
-    ![Adding a product image](./product-images/images/06.png)
+1. Enter a title and click _Publish_.
 
-1. Click _Publish_.
-
-The new product image has been added to the product. Note that under _Options_, the message "*There are no options set as the SKU contributor.*" may appear. If this message appears, then the product does not have additional associated SKUs and the image added is the only one associated with the product. See the section below on how to associate multiple product images to product variants.
+This adds the new image to the product. Note that under _Options_, the message "_There are no options set as the SKU contributor._" may appear. If this message appears, then the product does not have additional associated SKUs and the image added is the only one associated with the product.
 
 ## Adding Multiple Images
 
-Multiple product images can be associated with a single product. In order to add multiple images to a product, first review the following:
+You can also associate multiple product images with a single product. Ensure that you have [product options](./using-product-options.md) created and [multiple SKUs](./creating-skus-for-product-variants.md) generated for each option.
 
-* [Product Options](./using-product-options.md) have been created for this product.
-* [Multiple SKUs](./creating-skus-for-product-variants.md) have been generated for this product.
+After doing so, you can associate different product images to different SKUs.
 
-Once you have created Product Options and generated the corresponding SKUs, you can then associate different product images. To add multiple images to the different SKUs:
+1. Open the _Global Menu_ (![Global Menu](../../../images/icon-applications-menu.png)) &rarr; _Commerce_ &rarr; _Products_.
 
-1. Go to the _Global Applications_ menu → _Commerce_ → _Products_.
-1. Click on a product, in this example, _Hoses_.
+1. Select a product.
 
-    ```{note}
-    If you had used Minium to create your store and sample data, this product was added by the Minium accelerator.
-    ```
+1. Go to _Media_ and under Images, click _Add_ (![Add Icon](../../../images/icon-add.png)) to add a product image.
 
-1. Click the _Media_ sub-tab.
+1. Drag and drop an image or click _Select File_ to upload an image.
 
-    ![Hoses Media tab](./product-images/images/09.png)
+1. Select an option value from the option dropdown to associate the image with.
 
-1. Click the (![Add icon](../../../images/icon-add.png)) button to add a product image.
-1. Drag and drop an image or click _Select File_ to insert an image.
-1. Click on the existing image.
-1. Select _6_ under the _Package Quantity_ drop down.
-
-    ![Adding an image](./product-images/images/07.png)
+   ![Adding an image for a SKU.](./product-images/images/02.png)
 
 1. Click _Publish_.
 
-The product image has been updated with the respective Product Option. Repeat these steps as desired for all other available SKUs, such as another package quantity. In this example, different images may be used for the different package quantities. When searching for a product, you can see that all images have been included inside the Product Detail widget.
+This associates the image with the selected product option value. Repeat these steps for all other available SKUs. For instance, you can use multiple images for a product that comes in different quantities. When searching for a product, you can view all the images in the product details widget.
 
-![Images in Product Detail widget](./product-images/images/05.png)
+![View all the images in the product details widget.](./product-images/images/03.png)
 
 ## Commerce 2.1 and Below
 
@@ -71,86 +60,71 @@ The product image has been updated with the respective Product Option. Repeat th
 
 To add a single image:
 
-1. Navigate to _Control Panel_ → _Commerce_ → _Products_.
-1. Click on a product (in this example, _Brake Rotors_).
-1. Click the _Media_ sub-tab.
+1. Navigate to _Control Panel_ &rarr; _Commerce_ &rarr; _Products_.
 
-    ![Adding a product image](./product-images/images/08.png)
+1. Select a product.
 
-1. Click the (![Add Icon](../../../images/icon-add.png)) button to add a product image.
+1. Go to _Media_ and under Images, click _Add_ (![Add Icon](../../../images/icon-add.png)) to add a product image.
+
 1. Drag and drop an image or click _Select File_ to upload an image.
-1. Enter a title: _Brake Rotor_.
 
-    ![Adding a product image](./product-images/images/06.png)
+1. Enter a title and click _Publish_.
 
-1. Click _Publish_.
-
-The new product image has been added to the product. Note that under _Options_, the message "*There are no options set as the SKU contributor.*" may appear. If this message appears, then the product does not have additional associated SKUs and the image added is the only one associated with the product. See the section below on how to associate multiple product images to product variants.
-
-To view the image in the catalog, go to the store site and then search for the product (_Microfiber Cloth_).
-
-![Viewing product](./product-images/images/02.png)
+This adds the new image to the product. Note that under _Options_, the message "_There are no options set as the SKU contributor._" may appear. If this message appears, then the product does not have additional associated SKUs and the image added is the only one associated with the product.
 
 ### Adding Multiple Product Images
 
-Multiple product images can be associated with a single product. In order to add multiple images to a product, first review the following:
+You can also associate multiple product images with a single product. Ensure that you have [product options](./using-product-options.md) created and [multiple SKUs](./creating-skus-for-product-variants.md) generated for each option.
 
-* [Product Options](./using-product-options.md) have been created for this product.
-* [Multiple SKUs](./creating-skus-for-product-variants.md) have been generated for this product.
+After doing so, you can associate different product images to different SKUs.
 
-Once you have created Product Options and generated the corresponding SKUs, you can then associate different product images. To add multiple images to the different SKUs:
+1. Navigate to _Control Panel_ &rarr; _Commerce_ &rarr; _Products_.
 
-1. Navigate to _Control Panel_ → _Commerce_ → _Products_.
-1. Click on a product, in this example, _Hoses_.
+1. Select a product.
 
-    ```{note}
-    If you had used Minium to create your store and sample data, this product was added by the Minium accelerator.
-    ```
+1. Go to _Media_ and under Images, click _Add_ (![Add Icon](../../../images/icon-add.png)) to add a product image.
 
-1. Click the _Media_ sub-tab.
+1. Drag and drop an image or click _Select File_ to upload an image.
 
-    ![Hoses Media tab](./product-images/images/09.png)
+1. Select an option value from the option dropdown to associate the image with.
 
-1. Click the (![Add Icon](../../../images/icon-add.png)) button to add a product image.
-1. Drag and drop an image or click _Select File_ to insert an image.
-1. Click on the existing image.
-1. Select _6_ under the _Package Quantity_ drop down.
-
-    ![Adding an image](./product-images/images/07.png)
+   ![Adding an image for a SKU.](./product-images/images/02.png)
 
 1. Click _Publish_.
 
-The product image has been updated with the respective Product Option. Repeat these steps as desired for all other available SKUs, such as another package quantity. In this example, different images may be used for the different package quantities. When searching for a product, you can see that all images have been included inside the Product Detail widget.
+This associates the image with the selected product option value. Repeat these steps for all other available SKUs. For instance, you can use multiple images for a product that comes in different quantities. When searching for a product, you can view all the images in the product details widget.
 
-![Images in Product Detail widget](./product-images/images/05.png)
+![View all the images in the product details widget.](./product-images/images/03.png)
 
-### Commerce 2.0 and Below
+## Commerce 2.0 and Below
 
-#### Adding a Single Product Image
+### Adding a Single Product Image
 
-1. Navigate to _Control Panel_ → _Commerce_ → _Products_.
-1. Click on a product (in this example, _Microfiber Cloth_).
-1. Click the _Images_ sub-tab.
-1. Click the (![Add Icon](../../../images/icon-add.png)) button to add a product image.
+1. Navigate to _Control Panel_ &rarr; _Commerce_ &rarr; _Products_.
+
+1. Select a product.
+
+1. Go to _Images_ and click _Add_ (![Add Icon](../../../images/icon-add.png)) to add a product image.
+
 1. Drag and drop an image or click _Select File_ to upload an image.
-1. Enter a title: _Microfiber Cloth_.
-1. Set a priority: _1.0_.
 
-    ![Adding a product image](./product-images/images/01.png)
+1. Enter a title and set a priority.
+
+    ![Adding a product image.](./product-images/images/04.png)
 
 1. Click _Publish_.
 
 ### Adding Multiple Product Images
 
-1. Navigate to _Control Panel_ → _Commerce_ → _Products_.
-1. Click on a product, in this example, _Hoses_.
-1. Click the _Images_ sub-tab.
-1. Click the (![Add Icon](../../../images/icon-add.png)) button to add a product image.
-1. Drag and drop an image or click _Select File_ to insert an image.
-1. Click on the existing image.
-1. Select _6_ under the _Package Quantity_ drop down.
+1. Navigate to _Control Panel_ &rarr; _Commerce_ &rarr; _Products_.
 
-    ![Adding an image](./product-images/images/04.png)
+1. Select a product.
+
+1. Go to _Images_ and click _Add_ (![Add Icon](../../../images/icon-add.png)) to add a product image.
+
+1. Drag and drop an image or click _Select File_ to insert an image.
+
+1. Select an option value from the option dropdown to associate the image with.
 
 1. Click _Publish_.
 

@@ -4,6 +4,7 @@ toc:
   - ./managing-user-data/sanitizing-user-data.md
   - ./managing-user-data/configuring-the-anonymous-user.md
   - ./managing-user-data/enabling-gdpr-compliance-for-cookies.md
+  - ./managing-user-data/managing-third-party-cookies.md
 uuid: 2ab639a3-b972-4418-9fa5-db5958090d7a
 taxonomy-category-names:
 - Security
@@ -34,6 +35,5 @@ The following Liferay applications have the UAD framework applied to them:
 | Web Content            | Yes                    | Yes                    | Yes         |
 | Wiki                   | Yes                    | Yes                    | Yes         |
 
-```{important}
-Through the User Management functionality of Liferay DXP, companies processing the personal data of their website's users can begin to address the requirements of GDPR. However, the tools discussed here and anywhere else in the documentation, including those directly aimed at addressing GDPR requirements, do not guarantee compliance with the legal requirements of GDPR. Each company or individual whose website processes user personal data and is under the jurisdiction of GDPR must carefully determine the precise steps necessary to ensure they are fully compliant with GDPR.
-```
+!!! important
+    Through the User Management functionality of Liferay DXP, companies processing the personal data of their website's users can begin to address the requirements of GDPR. However, the tools discussed here and anywhere else in the documentation, including those directly aimed at addressing GDPR requirements, do not guarantee compliance with the legal requirements of GDPR. Each company or individual whose website processes user personal data and is under the jurisdiction of GDPR must carefully determine the precise steps necessary to ensure they are fully compliant with GDPR.

@@ -55,14 +55,14 @@ function process_image_path {
         if [[ -z ${thisFile} ]]
 		then
             thisFile=${md_file}
-            echo "FILE: ${md_file}"
+            echo "Bad Image Paths Found: ${md_file}"
         elif [[ ${thisFile} != ${md_file} ]]
 		then
             thisFile=${md_file}
-            echo "FILE: ${md_file}"
+            echo "Bad Image Paths Found: ${md_file}"
         fi
 
-        echo "    bad image path: ${image_path}"
+        echo "    Bad Image Path: ${image_path}"
         echo 
     fi
 }
@@ -75,12 +75,12 @@ function process_relative_link {
     if ! ls "${link}" >/dev/null 2>&1; then
         if [[ -z ${thisFile} ]]; then
             thisFile=${md_file}
-            echo "FILE: ${md_file}"
+            echo "Bad Links Found: ${md_file}"
         elif [[ ${thisFile} != ${md_file} ]]; then
             thisFile=${md_file}
-            echo "FILE: ${md_file}"
+            echo "Bad Links Found: ${md_file}"
         fi
-        echo "    bad link: ${link}"
+        echo "    bad Link: ${link}"
         echo 
     fi
 }
@@ -90,7 +90,7 @@ function check_this_folder {
 
     for markdown_url in $(ag --depth 0 --only-matching "\[.+?\]\(.*?\)" --file-search-regex ".*\.md")
 	do
-		#the markdown_url looks like this right now: 
+		# the markdown_url looks like this right now: 
 		# deploying-and-managing-a-microservice-client-extension-project.md:184:[Actions menu](../../images/icon-actions.png)
 		
 		md_file=$(echo ${markdown_url} | cut -d':' -f1 )
@@ -147,13 +147,13 @@ function check_toc_links {
 		if ! ls "${tocLine}" >/dev/null 2>&1 ; then
             if [[ -z ${thisFile} ]]; then
                 thisFile=${toc_file}
-                echo "FILE: ${toc_file}"
+                echo "Bad TOC Entries Found: ${toc_file}"
             elif [[ ${thisFile} != ${toc_file} ]]; then
                 thisFile=${toc_file}
-                echo "FILE: ${toc_file}"
+                echo "Bad TOC Entries Found: ${toc_file}"
             fi
 
-			echo "    bad link: ${toc_dir}/${tocLine}"
+			echo "    Bad Link: ${toc_dir}/${tocLine}"
 			echo 
 		fi
     done
@@ -164,35 +164,18 @@ function main {
 
 	check_args
 
-	echo -e "------------------"
-	echo "Checking Landing Page Links in ${1}"
-	echo
 
-    IFS=$'\n'
+	echo    "Checking Relative Links in ${1}"
+	echo -e "-----------------------------\n"
+
 	for article_dir in $(find ${1} -name '*.md' -printf '%h\n' | sort -u); do
 		pushd ${article_dir} 
 			check_landing_links
-		popd
-	done
-	unset IFS
-
-	echo -e "\n\n------------------"
-	echo "Checking Article Links in ${1}"
-
-	for article_dir in $(find ${1} -name '*.md' -printf '%h\n' | sort -u); do
-		pushd ${article_dir} 
 			check_this_folder
-		popd
-	done
-
-	echo -e "\n\n------------------"
-	echo "Checking TOC Links in ${1}"
-
-	for toc_dir in $(dirname $(ag --file-search-regex "${1}/.*\.md" --files-with-matches --multiline "(?s)toc\:.*---") | sort -u); do
-		pushd ${toc_dir} 
 			check_toc_links
 		popd
 	done
+
 }
 
 main ${@}

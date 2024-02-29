@@ -15,25 +15,27 @@ taxonomy-category-names:
 {bdg-secondary}`Liferay DXP 2024.Q1 U112`
 {bdg-link-primary}`[Beta Feature](../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
 
-Data sets are collections of related data that can be accessed individually, in combination, or managed as a single entity.
+Data sets are like virtual containers that help organize and manage related data in Liferay. They gather information from different resources available through Liferay headless APIs (e.g., object definitions, blog posts, documents, and more), making it easier to handle everything in one place. Use the [API Explorer](../headless-delivery/consuming-apis/consuming-rest-services.md) to access the full list of available headless APIs.
 
-In Liferay, use the Data Set Manager application to [create and manage data sets](./data-sets/creating-data-sets.md) from different resources available through Liferay Headless APIs. This includes but is not restricted to, object definitions, blog postings, documents, user accounts, commerce-related elements, etc. Use the [API Explorer](../headless-delivery/consuming-apis/consuming-rest-services.md) to access the full list of available REST applications.
+![Use resources available through Liferay headless APIs to create data sets.](./data-sets/images/01.png)
 
-![Use resources available through RESTful APIs to create data sets.](./data-sets/images/01.png)
+Here are some uses for data sets:
 
-Using the data set manager, [create data set views](./data-sets/data-set-views.md) to customize and display the data in different ways.
+- Aggregate data from multiple sources, such as customer profiles, transaction records, and product catalogs, to generate comprehensive analytics reports or personalized experiences. With data sets, you can harmonize data sources for insightful analysis.
 
-While creating or editing your data set view, select the [fields](./data-sets/data-set-views/data-set-view-fields.md) you want to display, define and pre-apply [filters](./data-sets/data-set-views/data-set-view-filters.md), set default sorting rules, redirect users to a different URL where they can perform [actions](./data-sets/data-set-views/data-set-view-actions.md), and configure pagination options for your data set view.
+- Consolidate information into cohesive data sets, enabling seamless content management and publication workflows.
 
-<!-- when new actions are added, this paragraph needs to be updated. Eric -->
+- Tailor content display based on user preferences or behaviors. With data sets and views, you can craft dynamic content layouts that adapt to individual user segments, delivering personalized experiences.
 
-[Display your data set view](./data-sets/data-set-views/using-data-set-view-actions.md#using-a-data-set-fragment-in-a-content-page) in content pages using the Data Set fragment.
+To make the most of data sets, [create](./data-sets/creating-data-sets.md), organize, and control your data sets exactly how you need them using the Data Set Manager application, saving time and effort.
 
-Combine the data set fragment with [experiences](../site-building/personalizing-site-experience/experience-personalization/creating-and-managing-experiences.md) and [segments](../site-building/personalizing-site-experience/segmentation/creating-and-managing-user-segments.md) to show different content to different audiences.
+But data sets aren't just about gathering and organizing data. They're also about displaying it in the best way possible. With [data set views](./data-sets/data-set-views.md), customize how your data looks and behaves, tailoring it to your specific needs.
+
+By using data sets and views, you have more control over your data. Whether you're displaying content on pages, personalizing experiences, or just trying to make sense of a lot of information, data sets get the job done. Make data management easier with customizable data sets and views.
+
+Take your data sets even further by integrating them with [experiences](../site-building/personalizing-site-experience/experience-personalization/creating-and-managing-experiences.md) and [segments](../site-building/personalizing-site-experience/segmentation/creating-and-managing-user-segments.md). This lets you deliver exactly the right content to the right people at the right time.
 
 ![Create different views for each data set and show different information to different audiences.](./data-sets/images/02.png)
-
-<!-- This intro doesn't tell me what data sets are for. Why do we have them? How can people use them? What are some use cases for why you would use them? What problems do they solve? In the intro, I don't really care about the Data Set Manager application, because I presume you'll tell me all about that in one of the other documents. I don't care that you can select fields and apply filters. I don't care that you customize the display, or sort them, or anything. Why don't I care? Because I have no idea what they are, or why I want or need them. Tell me those things. Tell me how they can solve my problems, or help me do something faster. -Rich -->
 
 ```{raw} html
 :file: ../landingpage_template.html

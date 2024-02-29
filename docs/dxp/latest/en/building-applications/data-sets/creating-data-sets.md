@@ -10,7 +10,6 @@ taxonomy-category-names:
 # Creating Data Sets
 
 {bdg-secondary}`Liferay DXP 2024.Q1 U112`
-
 {bdg-link-primary}`[Beta Feature](../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
 
 !!! important

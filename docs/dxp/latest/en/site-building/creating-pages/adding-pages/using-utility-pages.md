@@ -45,24 +45,42 @@ You can edit, preview, or copy utility pages.
 
 You can edit the newly created utility page the same way you would edit a [content page](../using-content-pages/adding-elements-to-content-pages.md).
 
-## Selecting a Utility Page as Default
+## Utility Pages Action Menu Reference
 
-To select a new utility page as default, follow these steps:
+Use the actions menu to perform certain actions with your utility page. To access the actions menu,
 
 1. Open the *Site Menu* (![Site Menu icon](../../../images/icon-product-menu.png)) and navigate to *Site Builder* &rarr; *Pages* &rarr; *Utility Pages* tab.
 
-1. Select Actions (![Actions Menu](../../../images/icon-actions.png)) for the utility page you want to set as default.
+1. Select Actions (![Actions Menu](../../../images/icon-actions.png)) for the utility page you want.
 
-1. Select *Mark as Default*.
+Here are the available options:
 
-![Select a utility page as the default page in the actions menu.](./using-utility-pages/images/02.png)
+| Action | Definition |
+| :--- | :--- |
+| Edit | Edit the utility page in the page editor. |
+| Preview | Preview the utility page in a new tab. |
+| Mark/Unmark as Default | Mark/Unmark the utility page as the default. |
+| Rename | Rename the utility page in the modal that opens. Click *Save* to rename your page. |
+| Change Thumbnail | Change the thumbnail that shows in your card. Drag and drop an image in the modal that opens. |
+| Remove Thumbnail | Remove the utility page's thumbnail from the card. |
+| Export | Export the utility page in ZIP format. |
+| Make a Copy | Create a copy of the utility page. The copy is automatically named `{Original page's name} (Copy)` and it's created as a draft. |
+| Configure | Configure some SEO settings such as HTML Title and Description. See [Configuring SEO and Open Graph](../../displaying-content/using-display-page-templates/configuring-seo-and-open-graph.md) to learn more. |
+| Permissions | Manage permissions related to the utility pages. |
+| Delete | Delete the utility page. Confirm the deletion in the modal that opens. |
+
+![Use the actions menu to perform actions with the utility pages such as edit, preview, and mark as default.](./using-utility-pages/images/02.png)
 
 !!! note
     If a site contains no pages, the default 404 error page is shown even if a utility page is applied.
 
 ## Utility Page Permissions
 
-Utility pages have permissions that govern their use.
+Utility pages have permissions that govern their use. To find and manage those permissions,
+
+1. Open the *Global Menu* (![Global Menu icon](../../../images/icon-applications-menu.png)), select the *Control Panel* tab and, under Users, select *Roles*.
+
+1. Select the role you want to 
 
 | Permission Name             | Description                                       |
 | :-------------------------- | :------------------------------------------------ |

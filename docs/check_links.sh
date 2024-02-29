@@ -24,102 +24,137 @@ function check_args {
 	#else
 	#	echo "good"
 	#fi
+	echo
 }
 
 function process_image_path {
-    imgpath=$(echo ${imgmatch} | sed 's/.*\](\(.*\.png.*\)).*/\1/g'  | sed 's/\(\.png\).*/\1/g' )
+	echo $image_match
+	imgpath=$(echo ${image_match} | sed 's/\[.*\]\((.*\.(gif|png|jpg))\)/\1/g' )
+
+    imgpath=$(echo ${image_match} | sed 's/\[.*\](\(.*\.png.*\)).*/\1/g'  | sed 's/\(\.png\).*/\1/g' )
+	echo $imgpath
+    # The full image path means we can do string substitution on the language part of the path, so we can work in the translation folders
     imgdir=$(pwd $imgpath)
+
+	# If we're in a translation folder we need to refer to the en images, so we do this string substitution
     imgdir=$(echo "${imgdir/\/ja\//\/en\/}")
     imgdir=$(echo "${imgdir/\/ko\//\/en\/}")
-    # The full image path means we can do string substitution (see above) and this works in the translations
+
     fullimgpath=${imgdir}/${imgpath}
 
-    if [[ ${imgpath} != *.png ]] && [[ ${imgpath} != *.gif ]]; then
+    if [[ ${imgpath} != *.png ]] && [[ ${imgpath} != *.gif ]]
+	then
         return
     fi
-    if ! ls "${fullimgpath}" >/dev/null 2>&1; then
+    if ! ls "${fullimgpath}" >/dev/null 2>&1 || [[ ${imgpath} != *"/images/"* ]]
+	then
 
-        if [[ -z ${thisFile} ]]; then
-            thisFile=${file}
-            echo "FILE: ${file}"
-        elif [[ ${thisFile} != ${file} ]]; then
-            thisFile=${file}
-            echo "FILE: ${file}"
+        if [[ -z ${thisFile} ]]
+		then
+            thisFile=${md_file}
+            echo "FILE: ${md_file}"
+        elif [[ ${thisFile} != ${md_file} ]]
+		then
+            thisFile=${md_file}
+            echo "FILE: ${md_file}"
         fi
 
         echo "    bad imgpath: ${imgpath}"
         echo ""
     fi
-	if [[ "${imgpath}" != *"images"* ]] then
-        # only print the file if it's unique: store it in a 
-        echo "FILE: ${file}"
-        echo "imgpath does not include /images: ${imgpath}"
-        echo ""
-	fi
 }
 
-function process_link {
-    link=$(echo ${match} | sed 's/.*\](\(.*\.md.*\)).*/\1/g'  | sed 's/\(\.md\).*/\1/g' )
+function process_relative_link {
+    link=$(echo ${article_match} | sed 's/.*\](\(.*\.md.*\)).*/\1/g'  | sed 's/\(\.md\).*/\1/g' )
     if [[ ${link} != *.md ]] || [[ ${link} == "http"* ]]; then
         return
     fi
     if ! ls "${link}" >/dev/null 2>&1; then
         if [[ -z ${thisFile} ]]; then
-            thisFile=${file}
-            echo "FILE: ${file}"
-        elif [[ ${thisFile} != ${file} ]]; then
-            thisFile=${file}
-            echo "FILE: ${file}"
+            thisFile=${md_file}
+            echo "FILE: ${md_file}"
+        elif [[ ${thisFile} != ${md_file} ]]; then
+            thisFile=${md_file}
+            echo "FILE: ${md_file}"
         fi
         echo "    bad link: ${link}"
         echo ""
     fi
 }
 
-function checkThisDir {
+function check_this_folder {
     IFS=$'\n'
-    for file in $(ag --depth 0 -lG "${1}/.*\.md"); do
 
-        for line in $(ag --depth 0 --file-search-regex "./${file}" --nofilename --only-matching "\[.*\]\(.*\.md.*\)"); do
+    for markdown_url in $(ag --depth 0 --only-matching "\[.+?\]\(.*?\)" --file-search-regex ".*\.md")
+	do
+		#the markdown_url looks like this right now: 
+		# deploying-and-managing-a-microservice-client-extension-project.md:184:[Actions menu](../../images/icon-actions.png)
+		
+		md_file=$(echo ${markdown_url} | cut -d':' -f1 )
 
-            #some lines have multiple links
-            if [[ ${line} == *.md*.md* ]]; then
-                
-                matches=$(echo $line | sed -e 's/)/)\n/g')
+		match=$(echo ${markdown_url} | cut -d':' -f3 )
 
-                for match in ${matches}; do
-					if [[ ${match} != \[*\) ]]; then
-						match=$(echo $match | sed 's/.*\(\[.*)\)/\1/g')
-					fi
-                    process_link
-                done
-            else 
-				match=${line}
-				process_link
-            fi
-        done
+		if [[ ${match} == "["*"]("*".md"* ]]
+		then
+			article_match=${match}
+			process_relative_link
+		elif  [[ ${match} == *".png"* || *".gif"* || *".jpg"* ]]
+		then
+			image_match=${match}
+			process_image_path
+		fi
+	done
 
-        for imgline in $(ag --depth 0 --file-search-regex "./${file}" --nofilename --only-matching "\[.*\]\(.*(\.png|\.gif)\)"); do
-			
-			# Fix up the imgline to exclude double end parens
-			imgline=$(echo ${imgline} | sed 's/))/)/g')
+#    for file in $(ag --depth 0 -lG "${1}/.*\.md")
+#	do
+#
+#        for line in $(ag --depth 0 --file-search-regex "./${file}" --nofilename --only-matching "\[.*\]\(.*\.md.*\)")
+#		do
+#
+#            #some lines have multiple links
+#            if [[ ${line} == *.md*.md* ]]
+#			then
+#                
+#                matches=$(echo $line | sed -e 's/)/)\n/g')
+#
+#                for match in ${matches}
+#				do
+#					if [[ ${match} != \[*\) ]]
+#					then
+#						echo $match
+#						match=$(echo $match | sed 's/.*\(\[.*)\)/\1/g')
+#						echo $match
+#						read -p "continue?"
+#					fi
+#                    process_link
+#                done
+#            else 
+#				match=${line}
+#				process_link
+#            fi
+#        done
 
-            if [[ ${imgline} == *.png*.png* ]]; then
-                
-                imgmatches=$(echo $imgline | sed -e 's/)/)\n/g')
-
-                for imgmatch in ${imgmatches}; do
-					if [[ ${imgmatch} != \[*\) ]]; then
-						imgmatch=$(echo $imgmatch | sed 's/.*\(\[.*)\)/\1/g')
-					fi
-                    process_image_path
-                done
-            else 
-				imgmatch=${imgline}
-				process_image_path
-            fi
-        done
-    done
+#        for imgline in $(ag --depth 0 --file-search-regex "./${file}" --nofilename --only-matching "\[.*\]\(.*(\.png|\.gif)\)"); do
+#			
+#			# Fix up the imgline to exclude double end parens
+#			imgline=$(echo ${imgline} | sed 's/))/)/g')
+#
+#            if [[ ${imgline} == *.png*.png* ]]; then
+#                
+#                imgmatches=$(echo $imgline | sed -e 's/)/)\n/g')
+#
+#                for imgmatch in ${imgmatches}; do
+#					if [[ ${imgmatch} != \[*\) ]]; then
+#						imgmatch=$(echo $imgmatch | sed 's/.*\(\[.*)\)/\1/g')
+#					fi
+#                    process_image_path
+#                done
+#            else 
+#				imgmatch=${imgline}
+#				process_image_path
+#            fi
+#        done
+#    done
     unset IFS
 }
 
@@ -196,7 +231,7 @@ function main {
 
 	for article_dir in $(find ${1} -name '*.md' -printf '%h\n' | sort -u); do
 		pushd ${article_dir} 
-			checkThisDir
+			check_this_folder
 		popd
 	done
 

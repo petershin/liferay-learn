@@ -95,7 +95,7 @@ You can run two docker containers to demonstrate a simple clustered environment.
 
 1. You can now visit each node. `Liferay-1` is available at `http://localhost:8080`. And `Liferay-2` is available at `http://localhost:9080`.
 
-   ![The two nodes can be accessed locally.](./configuring-the-dxp-cluster/images/01.png)
+   ![The two nodes can be accessed locally.](./configuring-the-dxp-cluster/01.png)
 
 ```{note}
 Running two Liferay docker nodes may require increasing your default CPU and memory resource settings.

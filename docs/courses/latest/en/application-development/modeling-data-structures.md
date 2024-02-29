@@ -43,7 +43,7 @@ Delectable Bonsai must store and manage two types of data entities for their onb
 * Distributor Applications
 * Application Evaluations
 
-<!--FINISH: ![](./modeling-data-structures/images/01.png) -->
+<!--FINISH: ![alksjdl](./modeling-data-structures/images/01.png) -->
 
 Each distributor application should store the necessary business information for verifying each applicant's identity and credit for Know Your Customer (KYC) best practice and compliance with Anti-Money Laundering (AML) laws. Additionally, they must collect information that can help them assess the relative value of each prospective distributor.
 

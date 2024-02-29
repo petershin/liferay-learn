@@ -28,6 +28,10 @@ To add a single image:
 
 1. Enter a title and click _Publish_.
 
+![You can enter a title, priority, and add tags to an image.](./product-images/images/02.png)
+
+{bdg-secondary}`Liferay DXP 2024.Q1+/Portal 7.4 GA112+` You can now tag images using tags from the Global scope. See [Tagging Content and Managing Tags](https://learn.liferay.com/w/dxp/content-authoring-and-management/tags-and-categories/tagging-content-and-managing-tags) for more information.
+
 This adds the new image to the product. Note that under _Options_, the message "_There are no options set as the SKU contributor._" may appear. If this message appears, then the product does not have additional associated SKUs and the image added is the only one associated with the product.
 
 ## Adding Multiple Images
@@ -53,6 +57,8 @@ After doing so, you can associate different product images to different SKUs.
 This associates the image with the selected product option value. Repeat these steps for all other available SKUs. For instance, you can use multiple images for a product that comes in different quantities. When searching for a product, you can view all the images in the product details widget.
 
 ![View all the images in the product details widget.](./product-images/images/03.png)
+
+{bdg-secondary}`Liferay DXP 2024.Q1+/Portal 7.4 GA112+` You can use the _Use in Shopping Experience Image Gallery_ toggle to select images that appear in the product details widget.
 
 ## Commerce 2.1 and Below
 

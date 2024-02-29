@@ -11,9 +11,9 @@ uuid: bc048a82-8d6c-4a0a-9ad4-30cf9d74c0d0
 
 > **Subscribers**
 
-```{note}
-This feature works [only with Elasticsearch](../installing-and-upgrading-a-search-engine/solr/solr-limitations.md).
-```
+!!! warning
+    * This feature works [only with Elasticsearch](../installing-and-upgrading-a-search-engine/solr/solr-limitations.md).
+    * Do not activate Result Rankings if using [Search Blueprints](../liferay-enterprise-search/search-experiences/search-blueprints.md). These features cannot contribute predictably to the same search.
 
 Result Rankings are for changing the list of returned results for specific keywords.
 

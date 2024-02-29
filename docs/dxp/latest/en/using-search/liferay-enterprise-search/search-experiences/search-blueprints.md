@@ -33,3 +33,5 @@ Search Blueprints is the first feature in the Search Experiences application. Wi
 - Populate [collections](../../../site-building/displaying-content/collections-and-collection-pages/collection-providers.md) with the results of custom search query
 - Shrink the [search response size](./search-blueprints/optimizing-search-response-size.md) by filtering out stored fields
 - [Collapse results](./search-blueprints/collapsing-search-results.md) with identical field values
+
+Search Blueprints does not work seamlessly with all existing search functionality. For example, you must not activate [Result Rankings](../../search-administration-and-tuning/result-rankings.md) if a blueprint is applied to the search page. You can end up pinning results on the search page that are not returned at all in the blueprint's search results, resulting in a confusing search experience.

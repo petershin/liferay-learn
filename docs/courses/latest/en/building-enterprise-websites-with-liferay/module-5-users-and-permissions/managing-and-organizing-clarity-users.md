@@ -3,7 +3,7 @@ uuid: f548210b-6113-4205-ac28-23451ed61e43
 ---
 # Managing and Organizing Clarity Users
 
-Clarity Vision Solutions currently has five users already assigned to groups in Okta, along with several B2B partners who distribute their products. Liferay's out-of-the-box features are designed to help us manage and grant permissions to all of these users based on their relationship to Clarity and the responsibilities they have on the new site. Let’s start by looking at Clarity’s internal users.
+Clarity Vision Solutions team members were provisioned through Okta and have already logged into Liferay, but their roles and permissions have not been set yet. Liferay's out-of-the-box features are designed to help us manage and grant permissions to all of these users based on their relationship to Clarity and the responsibilities they have on the new site. Let’s start by looking at Clarity’s internal users.
 
 At Clarity, each group has different responsibilities in developing the new enterprise website. Let’s look at Clarity's users, their respective role and group memberships, and their assigned responsibilities for the new site.
 

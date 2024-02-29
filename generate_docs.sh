@@ -51,7 +51,7 @@ function get_reference_docs {
 
 	cp -R liferay-ce-portal-doc-${LIFERAY_LEARN_PORTAL_GIT_TAG_VALUE}/* "${_REPOSITORY_DIR}/site/reference/latest/en/dxp"
 
-	rm -r liferay-ce-portal-doc-${LIFERAY_LEARN_PORTAL_GIT_TAG_VALUE}
+	rm -fr liferay-ce-portal-doc-${LIFERAY_LEARN_PORTAL_GIT_TAG_VALUE}
 
 	rm -f liferay-ce-portal-doc.zip
 
@@ -115,12 +115,12 @@ function is_diff {
 		return 0
 	fi
 
-	if [[ "$1" == *.zip ]] && [[ "$_DIFFS_STRING" == *"$1"* ]]
+	if [[ "${1}" == *.zip ]] && [[ "$_DIFFS_STRING" == *"${1}"* ]]
 	then
 		return 0
 	fi
 
-	[[ "${_DIFFS[@]}" =~ "$1" ]]
+	[[ "${_DIFFS[@]}" =~ "${1}" ]]
 }
 
 function main {

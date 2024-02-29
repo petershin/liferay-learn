@@ -9,7 +9,23 @@ CSP policies have many options. It is best to understand your users' needs and c
 
 ## Configuring a Sample Content Security Policy
 
-<!-- This goes way too fast into the example. You haven't discussed the concept of the two different kinds of policies (Directives and Values) and how Liferay supports them. You were also supposed to have two examples, one for directives, and one for values; it looks like there's only one example here where you've combined the two concepts without telling the reader what you're doing. This doesn't help anybody understand the feature and how to use it. Please revise accordingly -Rich -->
+Content Security Policy can be separated in 2 distinct kinds: *Directives CSP* and *Values CSP*. They both can be used to form a robust security frameworks that helps protect web applications against a variety of threats, however, they operate differently from each other:
+
+* Directives CSP -  It acts as commands that specify the types of content allowed to be loaded on a web page and from where it can be sourced. These directives serve as the blueprint for the security policy and include instructions for resources like scripts, stylesheets, images, fonts, and so on. Directives establish the boundaries and restrictions that dictates the behavior of web content.
+
+* Values CSP - Values complement directives by defining the specific origins or sources from which the permitted content can be loaded. They provide granular control over the origins allowed for each type of resource specified by the directives. Specifying values restricts the loading of resources to only those from approved origins, increasing the security of the web application.
+
+While working with CSP, you have access to directives. They are commands that specify the rules and restrictions for loading different types of resources on a web page, allowing you to define security guidelines that browsers should apply while rendering the page.
+
+| Directive     | Description                                           | Example                                                                                    |
+|:--------------|:------------------------------------------------------|:------------------------------------------------------------------------------------------|
+|`default-src`  | Default source list for unspecified directives.       | 'self' https://cdn.example.com https://fonts.gstatic.com                             |
+|`script-src`   | Defines valid sources for JavaScript.                 | 'self' https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js               |
+|`style-src`    | Specifies valid sources for CSS stylesheets.          | 'self' https://fonts.googleapis.com/css2?family=Roboto                                 |
+|`img-src`      | Specifies valid sources for images.                   | 'self' data: https://www.example.com                                                       |
+|`font-src`     | Specifies valid sources for fonts.                    | 'self' https://fonts.gstatic.com/s/roboto                                              |
+|`connect-src`  | Defines valid sources for network connections like XMLHttpRequest and EventSource.| 'self' https://api.example.com                                                               |
+|`frame-src`    | Defines valid sources for frames and iframes.         | 'self' https://www.youtube.com/embed/ABCDEFGHIJK                                     |
 
 Imagine one of your company servers responsible for serving all the scripts to your website is compromised. This can lead to possible attacks like injection of malicious scripts to different web pages within your site. Using CSP, you can disable loading scripts if it originates from the compromised server. To do this,
 

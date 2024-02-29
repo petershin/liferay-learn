@@ -1,17 +1,18 @@
 ---
 uuid: 138e346e-2aac-42f6-a57e-36999e31261c
 taxonomy-category-names:
-- API Development
-- Platform
-- DXP Configuration
-- Identity Management and Authentication
-- Liferay Self-Hosted
-- Liferay PaaS
-- Liferay SaaS
+    - API Development
+    - Platform
+    - DXP Configuration
+    - Identity Management and Authentication
+    - Liferay Self-Hosted
+    - Liferay PaaS
+    - Liferay SaaS
 ---
+
 # Captcha API Basics
 
-Liferay provides a headless API to retrieve and submit captchas using the [SimpleCAPTCHA](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/authentication-basics#configuring-captcha-or-recaptcha) engine. Using the `/captcha` endpoint from the [API Explorer](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services.html), you can add captchas in your custom implementations without using a TagLib. There are two endpoints that you can use:
+Liferay provides a headless API to retrieve and submit captchas using the [SimpleCAPTCHA](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/authentication-basics#configuring-captcha-or-recaptcha) engine. Using the `/captcha` endpoint from the [API Explorer](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services.html), you can add captchas in your custom implementations without using a tag library. There are two endpoints:
 
 * `/GET` - Retrieve a Base64 encoded captcha image string and a JWT token for validation
 * `/POST` - Send the answer of the captcha along with the JWT token for verification
@@ -87,9 +88,8 @@ Here are the command's arguments:
 | `"http://localhost:8080/o/captcha/v1.0/captcha/challenge"` | Specify the REST service endpoint.      |
 | `--user "test@liferay.com:learn"`                          | Enter basic authentication credentials. |
 
-```{note}
-Basic authentication is used here for demonstration purposes. For production, you should authorize users via [OAuth2](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2.html). See [Using OAuth2 to Authorize Users](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2/using-oauth2-to-authorize-users.html) for a sample React application using OAuth2.
-```
+!!! note
+    Basic authentication is used here for demonstration purposes. For production, you should authorize users via [OAuth2](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2.html). See [Using OAuth2 to Authorize Users](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2/using-oauth2-to-authorize-users.html) for a sample React application using OAuth2.
 
 ## Examine the Java Class
 
@@ -109,17 +109,15 @@ This class invokes the REST service using only three lines of code:
 | `CaptchaResource captchaResource = builder.authentication(...).build();` | Use basic authentication and generate a `CaptchaResource` service instance. |
 | `captchaResource.getCaptchaChallenge();`                                 | Call the `captchaResource.getCaptchaChallenge` method.                      |
 
-After retrieving the response, the token is displayed while the `Base64` class is used to decode the image string into bytes. This gets saved as an image in the same directory. 
+After retrieving the response, the token is displayed, and the `Base64` class is used to decode the image string into bytes. This gets saved as an image in the same directory. 
 
 Note that the project includes the `com.liferay.captcha.rest.client.jar` file as a dependency. You can find client JAR dependency information for all REST applications in the API explorer in your installation at `/o/api` (e.g., <http://localhost:8080/o/api>).
 
-```{note}
-The `main` method's comment demonstrates running the class.
-```
+!!! note
+    The `main` method's comment demonstrates running the class.
 
-```{important}
-See [CaptchaResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/captcha/captcha-rest-client/src/main/java/com/liferay/captcha/rest/client/resource/v1_0/CaptchaResource.java) for service details.
-```
+!!! important
+    See [CaptchaResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/captcha/captcha-rest-client/src/main/java/com/liferay/captcha/rest/client/resource/v1_0/CaptchaResource.java) for service details.
 
 ## Post Captcha Response
 

@@ -56,6 +56,26 @@ This sample content security policy only allows resources to load from the same 
 
 The `object-src 'none'` entry instructs the browser to prevent loading any HTML `<object>` elements. The `base-url 'self'` entry instructs the browser to only allow loading resources from the same origin as the document.
 
+## Current CPS's Limitations
+
+* Content Security Policy Constraints in Webpack Bundling
+
+It is required to add `unsafe-eval` to Liferay's policy due to the webpack bundling settings `liferay.js`. The browser does not allow the evaluation of strings as *JavaScript* by default, so the code is being refused execution. By using `unsafe-eval`, it will be possible the use of dynamic code evaluation mechanisms like the `Function(\"return this\")()` constructor.
+
+* Styles for HTML and Script Styling 
+
+It is required to enable `unsafe-inline` for styles, since Liferay works with several `style` attributes inside HTML elements, and also as some style additions to head part by scripts.
+
+* Inline Event Listeners
+
+It is required to add `script-src-attr 'self' 'unsafe-inline';` since Content Security Policy treats *Event Listeners* as scripts.
+
+* CSP Rules for CKEditor Integration
+
+*CKEditor 4* functionalities may enter in conflict with CSP restrictions, so it is required to change the rule to `script-src ‘self' 'unsafe-inline' 'unsafe-eval';` or add `/group/guest/~/control_panel/manage` as excluded paths. Be aware that *7.3 CKEditor* is the only supported  *WYSIWYG* (What You See Is What You Get) editor, but Liferay uses *CKEditor 4* which cannot be used without unsafe-inline ‘https://csplite.com/csp/test347/#nonce_dynamic‘.
+
+
+
 !!! note
     Content Security Police works best with SPA disabled. To disable it, add `javascript.single.page.application.enabled=false` to your [portal-ext.properties file](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/reference/portal-properties.html).
     Site level configuration panel and common pages (such as the 404 page) belong to the instance, so it uses the instance level CSP headers.

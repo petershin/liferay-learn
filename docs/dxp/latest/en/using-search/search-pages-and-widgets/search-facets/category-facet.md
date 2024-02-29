@@ -56,7 +56,7 @@ Display categories under their vocabulary by selecting the Vocabulary Layout in 
 Select the vocabularies and categories to display in the facet.
 
 !!! important
-   If you're upgrading from a Liferay version or update prior to 7.4 Update/GA 48 and there are already categorized assets in the system, re-index all search indexes to include the necessary `assetVocabularyCategoryIds` field in the search documents.
+    If you're upgrading from a Liferay version or update prior to 7.4 Update/GA 48 and there are already categorized assets in the system, re-index all search indexes to include the necessary `assetVocabularyCategoryIds` field in the search documents.
 
 ![Select the vocabulary.](./category-facet/images/06.png)
 
@@ -90,9 +90,8 @@ To configure the use case above,
 1. Name the site Foo and click _Add_.
 1. Go to the Global site's menu &rarr; Categorization &rarr; Categories. Add a vocabulary named Quality and create two categories: Premium and Standard.
 
-   ```{important}
-   You must create a global category in the Global site, rather than a site category in the Foo site.
-   ```
+   !!! important
+       You must create a global category in the Global site, rather than a site category in the Foo site.
 
    !!! note
        There's an existing vocabulary created by the site template during site initialization (named Foo after the site): it's better named _Vehicle Systems_ to match the example you're building and characterize the categories better (e.g., Brake System). However, the Foo vocabulary's categories are referenced by existing Commerce products, so it cannot be edited. 

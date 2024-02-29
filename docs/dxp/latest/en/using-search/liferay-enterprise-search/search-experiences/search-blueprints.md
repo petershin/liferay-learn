@@ -34,4 +34,4 @@ Search Blueprints is the first feature in the Search Experiences application. Wi
 - Shrink the [search response size](./search-blueprints/optimizing-search-response-size.md) by filtering out stored fields
 - [Collapse results](./search-blueprints/collapsing-search-results.md) with identical field values
 
-Search Blueprints does not work well with [Result Rankings](../../search-administration-and-tuning/result-rankings.md). Even if a result pinned by Result Rankings is filtered out in the blueprint, it appears at the top of the results. If possible, avoid using these features together.
+Search Blueprints does not work well with [Result Rankings](../../search-administration-and-tuning/result-rankings.md). If a result pinned by Result Rankings is filtered out in the blueprint, it still appears at the top of the results. If possible, avoid using these features together.

@@ -24,7 +24,7 @@ With Results Rankings you can
 * Re-order pinned results with a drag-and-drop interface.
 
 !!! important
-   Result Rankings affect only searches using the newer search widgets (Search Bar, Search Results, etc.). The rankings you customize do not apply to the legacy Search portlet results or to the individual application search bars.
+    Result Rankings affect only searches using the newer search widgets (Search Bar, Search Results, etc.). The rankings you customize do not apply to the legacy Search portlet results or to the individual application search bars.
 
 ## Requirements and Limitations
 
@@ -38,7 +38,7 @@ An existing ranking entry cannot be renamed. Renaming requires recreating the ra
 
 ### Result Rankings and Blueprints
 
-Result Rankings does not work well with [Search Blueprints](../liferay-enterprise-search/search-experiences/search-blueprints.md). Even if a result pinned by Result Rankings is filtered out in the blueprint, it appears at the top of the results. If possible, avoid using these features together.
+Result Rankings does not work well with [Search Blueprints](../liferay-enterprise-search/search-experiences/search-blueprints.md). If a result pinned by Result Rankings is filtered out in the blueprint, it still appears at the top of the results. If possible, avoid using these features together.
 
 ## Creating and Managing Result Rankings
 

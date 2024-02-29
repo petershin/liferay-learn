@@ -75,14 +75,17 @@ function generate_zip_files {
 function get_git_diffs {
 	local hash=$(cat .latest_hash)
 
-	if ! git rev-parse --verify "$hash" >/dev/null 2>&1; then
+	if ! git rev-parse --verify "$hash" >/dev/null 2>&1
+	then
 		echo "Error: Invalid hash '$hash'"
+
 		return 1
 	fi
 
 	_diffs_string=$(git diff --name-only "$hash" HEAD)
 
-	while IFS= read -r filename; do
+	while IFS= read -r filename
+	do
 		_diffs+=("$filename")
 	done <<< ${_diffs_string}
 }

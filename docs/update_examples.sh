@@ -72,6 +72,14 @@ function copy_template {
 	done
 }
 
+function main {
+	pushd "${CURRENT_DIR_NAME}" || exit 1
+
+	copy_template ${1}
+
+	update_examples ${1}
+}
+
 function update_examples {
 	if [ -n "${1}" ] && [ "${1}" != "prod" ]
 	then
@@ -95,14 +103,6 @@ function update_examples {
 			popd
 		done
 	fi
-}
-
-function main {
-	pushd "${CURRENT_DIR_NAME}" || exit 1
-
-	copy_template ${1}
-
-	update_examples ${1}
 }
 
 main "${@}"

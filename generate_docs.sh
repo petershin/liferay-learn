@@ -10,7 +10,7 @@ function generate_docs {
 	popd
 }
 
-function generate_examples {
+function update_examples {
 	pushd "${_REPOSITORY_DIR}/docs"
 
 	for update_example_script_name in $(find . -name "update_example.sh" -type f)
@@ -26,7 +26,7 @@ function generate_examples {
 	
 		popd
 
-		echo "Generated example: ${update_example_script_name}"
+		echo "Updated example: ${update_example_script_name}"
 	done
 
 	popd
@@ -166,7 +166,7 @@ function main {
 
 	set_up_environment
 
-	generate_examples
+	update_examples
 
 	generate_docs
 

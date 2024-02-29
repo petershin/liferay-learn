@@ -34,7 +34,7 @@ Now your new article is created! If it's inside a folder, an interactive path ap
 You can now display your web content article on a page using the [Web Content Display widget](../../../site-building/displaying-content/additional-content-display-options/using-the-web-content-display-widget.md), for example.
 
 !!! note
-    The user who creates the first version of a web content article becomes its owner. Even if another user edits the content, creating a new version, ownership isn't transferred.
+    The user who creates the first version of a web content article becomes its owner. If another user edits the content (which creates a new version), ownership isn't transferred.
 
 ## Previewing Web Content Articles
 

@@ -28,25 +28,28 @@ function check_args {
 }
 
 function process_image_path {
-	echo $image_match
-	imgpath=$(echo ${image_match} | sed 's/\[.*\]\((.*\.(gif|png|jpg))\)/\1/g' )
 
-    imgpath=$(echo ${image_match} | sed 's/\[.*\](\(.*\.png.*\)).*/\1/g'  | sed 's/\(\.png\).*/\1/g' )
-	echo $imgpath
-    # The full image path means we can do string substitution on the language part of the path, so we can work in the translation folders
-    imgdir=$(pwd $imgpath)
+	# Turns [Add Button](../../images/icon-add.png) into
+	# ../../images/icon-add.png
+	image_path=$(echo ${image_match} | sed 's/\[.*\](\(.*\.\(png\|jpg\|gif\)\).*)/\1/g' )
 
-	# If we're in a translation folder we need to refer to the en images, so we do this string substitution
-    imgdir=$(echo "${imgdir/\/ja\//\/en\/}")
-    imgdir=$(echo "${imgdir/\/ko\//\/en\/}")
+	# Use thje full image path so that we can do string substitution on the
+	# language part of the path, which makes it possible to run this in the
+	# translation folders which rely on the en images
+    image_folder=$(pwd $image_path)
 
-    fullimgpath=${imgdir}/${imgpath}
+    full_image_path=${image_folder}/${image_path}
 
-    if [[ ${imgpath} != *.png ]] && [[ ${imgpath} != *.gif ]]
+	# Switch the language to en for ja and ko image paths
+	if [[ ${1} == *"/ja" && *"/ko" ]]
 	then
-        return
-    fi
-    if ! ls "${fullimgpath}" >/dev/null 2>&1 || [[ ${imgpath} != *"/images/"* ]]
+		full_image_path=$(echo "${image_folder/\/ja\//\/en\/}")
+		full_image_path=$(echo "${image_folder/\/ko\//\/en\/}")
+	fi
+
+	# Uses the same logic as process_relative_link to determine if the path
+	# resolves, and prints a message if not
+    if ! ls "${full_image_path}" >/dev/null 2>&1 || [[ ${image_path} != *"/images/"* ]]
 	then
 
         if [[ -z ${thisFile} ]]
@@ -59,7 +62,7 @@ function process_image_path {
             echo "FILE: ${md_file}"
         fi
 
-        echo "    bad imgpath: ${imgpath}"
+        echo "    bad image path: ${image_path}"
         echo ""
     fi
 }
@@ -98,83 +101,50 @@ function check_this_folder {
 		then
 			article_match=${match}
 			process_relative_link
-		elif  [[ ${match} == *".png"* || *".gif"* || *".jpg"* ]]
+		elif  [[ ${match} == "["*"]("*".png"* && "["*"]("*".gif"* && "["*"]("*".jpg"* ]]
 		then
 			image_match=${match}
 			process_image_path
 		fi
 	done
 
-#    for file in $(ag --depth 0 -lG "${1}/.*\.md")
-#	do
-#
-#        for line in $(ag --depth 0 --file-search-regex "./${file}" --nofilename --only-matching "\[.*\]\(.*\.md.*\)")
-#		do
-#
-#            #some lines have multiple links
-#            if [[ ${line} == *.md*.md* ]]
-#			then
-#                
-#                matches=$(echo $line | sed -e 's/)/)\n/g')
-#
-#                for match in ${matches}
-#				do
-#					if [[ ${match} != \[*\) ]]
-#					then
-#						echo $match
-#						match=$(echo $match | sed 's/.*\(\[.*)\)/\1/g')
-#						echo $match
-#						read -p "continue?"
-#					fi
-#                    process_link
-#                done
-#            else 
-#				match=${line}
-#				process_link
-#            fi
-#        done
-
-#        for imgline in $(ag --depth 0 --file-search-regex "./${file}" --nofilename --only-matching "\[.*\]\(.*(\.png|\.gif)\)"); do
-#			
-#			# Fix up the imgline to exclude double end parens
-#			imgline=$(echo ${imgline} | sed 's/))/)/g')
-#
-#            if [[ ${imgline} == *.png*.png* ]]; then
-#                
-#                imgmatches=$(echo $imgline | sed -e 's/)/)\n/g')
-#
-#                for imgmatch in ${imgmatches}; do
-#					if [[ ${imgmatch} != \[*\) ]]; then
-#						imgmatch=$(echo $imgmatch | sed 's/.*\(\[.*)\)/\1/g')
-#					fi
-#                    process_image_path
-#                done
-#            else 
-#				imgmatch=${imgline}
-#				process_image_path
-#            fi
-#        done
-#    done
     unset IFS
 }
 
 function check_landing_links {
     IFS=$'\n'
-    for urlLine in $(ag --depth 0 --file-search-regex "${1}/.*landing.html" --nofilename "url\:"); do
+    for urlLine in $(ag --depth 0 --file-search-regex landing.html --nofilename "url\:"); do
+        if [[ ${urlLine} != *"https://"* ]]; then
 
-        if [[ ${urlLine} != *https://* ]]; then
+			# Strip out everything except the url inside the quotes
             url=$(echo $urlLine | sed "s/.*'\(.*\.html\)'.*/\1/g")
-            url=$(echo $url | sed 's/\.html/\.md/g')
-            #url=$(echo "../${url}")
 
+			# Swap .md for .html
+            url=$(echo $url | sed 's/\.html/\.md/g')
+
+			# This logic below is needed because of how we ingest landing pages
+			# into regular markdown pages one directory above where the
+			# landing.html file lives. We will likely do away with these
+			# landing pages in the future so we shouldn't refactor them right
+			# now. This logic has worked for months, and can be removed when we
+			# use a different paradigm for landing pages.
+			
+# new logic: first, get the landing page references form markdown files, like return the objects/landing.html reference. then extract the link, and ls it from the direcctory where the reference to the landing page is made
+
+			# Add a `../` if the url already has a `../`, this is necessary for
+			# proper link resolving to other sections
             if [[ ${url} == ../* ]]; then
                 url=$(echo "../${url}")
+			# elif, the abs path of the landing page has the first directorey of the url in it, like objects/landing.html has links to 'objects/creating-objects.html'
+			# in this case we cut that folder from the poath for proper link resolving
+			# Isn't this the same as adding the ../ to the url? we could simpliofy these two blocks if so
             elif [[ $(realpath landing.html) == *"$(echo ${url} | cut -d/ -f1)"* ]]; then
                 url=$(echo $url | cut -d/ -f2-)
-            elif
-                # add another check, AND the dirname is the same as the url dir (because otherwise we'd need the ../ as in the else
-                [[ ${landing_dir} == . ]]; then
+			# The landing pages at the root of a section don't need
+			# modification to their urls before checking them
+		elif [[ ${landing_dir} == ${1} ]]; then
                 url=${url}
+			# these seem to be links to other sections one dir up
             else
                 url=$(echo "../${url}")
             fi
@@ -189,6 +159,35 @@ function check_landing_links {
         fi
 		unset IFS
     done
+	unset IFS
+}
+
+function check_landing_links_alt {
+    IFS=$'\n'
+	for landing_reference in $(ag --depth 0 --file-search-regex ".*\.md" --no-filename --no-numbers "\:file\:.*landing\.html")
+	do
+		landing_reference_path=$(echo ${landing_reference} | sed 's/\:file\://g' | sed 's/\ //g' )
+		for landing_page_link in $(ag --no-filename "url\:" ${landing_reference_path})
+		do
+			if [[ ${landing_page_link} != *"https://"* ]]
+			then
+				# Strip out everything except the url inside the quotes and get rid of page anchors
+				landing_page_link=$(echo ${landing_page_link} | sed "s/.*\('\|\"\)\(.*\)\('\|\"\|\#\).*/\2/g" | sed 's/\(.*\)#.*/\1/g' )
+
+				# Swap .md for .html
+				landing_page_link=$(echo ${landing_page_link} | sed 's/\.html/\.md/g')
+
+				if ! ls "${landing_page_link}" >/dev/null 2>&1 ; then
+					echo "I'm here: $(pwd)" 
+					echo "${landing_reference_path}"
+					echo "bad link: ${landing_page_link/.md/.html}"
+					echo ""
+				fi
+			fi
+		done
+	done
+
+	
 	unset IFS
 }
 
@@ -218,13 +217,23 @@ function main {
 	check_args
 
 	echo -e "------------------"
-	echo "Checking Landing Page Links in ${1}"
+	echo "Checking Landing Page Links VERSION 2 in ${1}"
 
-	for landing_dir in $(find ${1} -name landing.html -printf '%h\n' | sort -u); do
-		pushd ${landing_dir}
-			check_landing_links
+    IFS=$'\n'
+	for article_dir in $(find ${1} -name '*.md' -printf '%h\n' | sort -u); do
+		pushd ${article_dir} 
+			check_landing_links_alt ${1}
 		popd
 	done
+	unset IFS
+	#echo -e "------------------"
+	#echo "Checking Landing Page Links in ${1}"
+
+	#for landing_dir in $(find ${1} -name landing.html -printf '%h\n' | sort -u); do
+	#	pushd ${landing_dir}
+	#		check_landing_links ${1}
+	#	popd
+	#done
 
 	echo -e "\n\n\n------------------"
 	echo "Checking Article Links in ${1}"

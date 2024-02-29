@@ -27,13 +27,13 @@ Here are some uses for data sets:
 
 - Tailor content display based on user preferences or behaviors. With data sets and views, you can craft dynamic content layouts that adapt to individual user segments, delivering personalized experiences.
 
-To make the most of data sets, [create](./data-sets/creating-data-sets.md), organize, and control your data sets exactly how you need them using the Data Set Manager application, saving time and effort.
+You [create](./data-sets/creating-data-sets.md), organize, and control your data sets using the Data Set Manager application. 
 
-But data sets aren't just about gathering and organizing data. They're also about displaying it in the best way possible. With [data set views](./data-sets/data-set-views.md), customize how your data looks and behaves, tailoring it to your specific needs.
+But data sets aren't just about gathering and organizing data. They're also about displaying it in the best way possible. With [data set views](./data-sets/data-set-views.md), you can customize how your data is presented to users.
 
 By using data sets and views, you have more control over your data. Whether you're displaying content on pages, personalizing experiences, or just trying to make sense of a lot of information, data sets get the job done. Make data management easier with customizable data sets and views.
 
-Take your data sets even further by integrating them with [experiences](../site-building/personalizing-site-experience/experience-personalization/creating-and-managing-experiences.md) and [segments](../site-building/personalizing-site-experience/segmentation/creating-and-managing-user-segments.md). This lets you deliver exactly the right content to the right people at the right time.
+Take your data sets even further by integrating them with [experiences](../site-building/personalizing-site-experience/experience-personalization/creating-and-managing-experiences.md) and [segments](../site-building/personalizing-site-experience/segmentation/creating-and-managing-user-segments.md), so you can deliver exactly the right content to the right people at the right time.
 
 ![Create different views for each data set and show different information to different audiences.](./data-sets/images/02.png)
 

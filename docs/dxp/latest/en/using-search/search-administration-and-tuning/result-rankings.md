@@ -11,9 +11,8 @@ uuid: bc048a82-8d6c-4a0a-9ad4-30cf9d74c0d0
 
 > **Subscribers**
 
-!!! warning
-    * This feature works [only with Elasticsearch](../installing-and-upgrading-a-search-engine/solr/solr-limitations.md).
-    * Do not activate Result Rankings if using [Search Blueprints](../liferay-enterprise-search/search-experiences/search-blueprints.md). These features cannot contribute predictably to the same search.
+!!! note
+    This feature works [only with Elasticsearch](../installing-and-upgrading-a-search-engine/solr/solr-limitations.md).
 
 Result Rankings are for changing the list of returned results for specific keywords.
 
@@ -39,7 +38,7 @@ An existing ranking entry cannot be renamed. Renaming requires recreating the ra
 
 ### Result Rankings and Blueprints
 
-Result Rankings does not work well with [Search Blueprints](../liferay-enterprise-search/search-experiences/search-blueprints.md). Even if a result pinned by Result Rankings is filtered out in the blueprint, it appears at the top of the results. If possible, avoid using these features together. If using Search Blueprints, you can add behavior to [simulate the pinning behavior](../liferay-enterprise-search/search-experiences/search-blueprints/pinning-results.md) of Result Rankings.
+Result Rankings does not work well with [Search Blueprints](../liferay-enterprise-search/search-experiences/search-blueprints.md). Even if a result pinned by Result Rankings is filtered out in the blueprint, it appears at the top of the results. If possible, avoid using these features together.
 
 ## Creating and Managing Result Rankings
 

@@ -10,34 +10,6 @@ function generate_docs {
 	popd
 }
 
-function update_examples {
-	pushd "${_REPOSITORY_DIR}/docs"
-
-	for update_example_script_name in $(find . -name "update_example.sh" -type f)
-	do
-		if ! is_diff "${update_example_script_name}"
-		then
-			continue;
-		fi
-
-		pushd "$(dirname "${update_example_script_name}")"
-
-		./$(basename "${update_example_script_name}") 2> ${_REPOSITORY_DIR}/update_examples.err
-	
-		popd
-
-		echo "Updated example: ${update_example_script_name}"
-	done
-
-	popd
-
-	local exit_code=$?
-
-	cat ${_REPOSITORY_DIR}/update_examples.err
-
-	generate_zip_files
-}
-
 function generate_zip_files {
 	pushd "${_REPOSITORY_DIR}/docs" > /dev/null
 
@@ -190,6 +162,34 @@ function set_up_environment {
 	then
 		export LIFERAY_LEARN_RESOURCE_DOMAIN="${LIFERAY_LEARN_ETC_CRON_LIFERAY_LEARN_RESOURCES_DOMAIN}"
 	fi
+}
+
+function update_examples {
+	pushd "${_REPOSITORY_DIR}/docs"
+
+	for update_example_script_name in $(find . -name "update_example.sh" -type f)
+	do
+		if ! is_diff "${update_example_script_name}"
+		then
+			continue;
+		fi
+
+		pushd "$(dirname "${update_example_script_name}")"
+
+		./$(basename "${update_example_script_name}") 2> ${_REPOSITORY_DIR}/update_examples.err
+	
+		popd
+
+		echo "Updated example: ${update_example_script_name}"
+	done
+
+	popd
+
+	local exit_code=$?
+
+	cat ${_REPOSITORY_DIR}/update_examples.err
+
+	generate_zip_files
 }
 
 function update_permissions {

@@ -9,7 +9,7 @@ taxonomy-category-names:
 ---
 # Understanding Users
 
-Every person who accesses a Liferay site is considered a User. Unauthenticated Users are considered *Guest* users. Liferay ships out-of-the-box with a default Admin user who has complete control of and access to the system. [Roles and Permissions](../roles-and-permissions.md) govern what users are able to see and do on a site.
+Every person who accesses a Liferay site is considered a User. Unauthenticated users are considered *Guest* users. Liferay ships out-of-the-box with a default Admin user who has complete control of and access to the system. [Roles and Permissions](../roles-and-permissions.md) govern what users are able to see and do on a site.
 
 Users break down into three general categories:
 
@@ -21,15 +21,21 @@ Users break down into three general categories:
 
 ## Managing Users
 
-To add and manage Users, open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Users and Organizations*.
+To add and manage users, open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Users and Organizations*.
 
-![Add and manage Users via the Users and Organizations application.](./understanding-users/images/01.png)
+![Add and manage users via the Users and Organizations application.](./understanding-users/images/01.png)
 
-Here, you can manage each User's metadata (name, department, etc.), permissions, pages, and activation status.
+Here, you can manage each user's metadata (name, department, etc.), permissions, pages, and activation status.
+
+You can also filter, sort, search, and change the view layout for users using the controls available. 
+
+When filtering users, you have the option to select *All*, *Inactive*, or *Active* users. There's also an option to *FILTER BY DOMAIN* where you can choose between users that belong to an account or organization.
+
+{bdg-secondary}`Liferay DXP 2024.Q1+/Portal 7.4 GA112+` There's a new option under the *FILTER BY DOMAIN* section to filter *Unassociated Users*. These are users that don't belong to an account or organization.
 
 ### Adding Users
 
-Administrators can add Users through the Users and Organizations section of the Control Panel or [through the API](../developer-guide/user-account-api-basics.md). New users can be created by administrators, can register themselves if open registration is configured, or can be synced from an LDAP server. See [Adding and Managing Users](./adding-and-managing-users.md) to learn more.
+Administrators can add users through the Users and Organizations section of the Control Panel or [through the API](../developer-guide/user-account-api-basics.md). New users can be created by administrators, can register themselves if open registration is configured, or can be synced from an LDAP server. See [Adding and Managing Users](./adding-and-managing-users.md) to learn more.
 
 #### Open Registration
 
@@ -47,17 +53,17 @@ Are there other methods of adding users? -->
 
 ## Managing User Access
 
-User access is controlled by Roles and Permissions. Permissions define what a User can and cannot do. Roles are groupings of permissions. Permissions are configured by defining permissions for a Role and assigning Users to pre-set Roles. To learn more about managing access for Users, see [Roles and Permissions](../roles-and-permissions.md).
+User access is controlled by Roles and Permissions. Permissions define what a User can and cannot do. Roles are groupings of permissions. Permissions are configured by defining permissions for a Role and assigning users to pre-set Roles. To learn more about managing access for users, see [Roles and Permissions](../roles-and-permissions.md).
 
 ## Organizing Users
 
-Liferay has several tools to help you organize and administer Users.
+Liferay has several tools to help you organize and administer users.
 
-[Organizations](../organizations/understanding-organizations.md) are an entity in Liferay that can group users in a distributed hierarchy. Practically, this means that large organizations can empower and delegate Users to administer their Organizations.
+[Organizations](../organizations/understanding-organizations.md) are an entity in Liferay that can group users in a distributed hierarchy. Practically, this means that large organizations can empower and delegate users to administer their Organizations.
 
-![Create Organizations to organize Users.](./understanding-users/images/02.png)
+![Create Organizations to organize users.](./understanding-users/images/02.png)
 
-[User Groups](../user-groups/creating-and-managing-user-groups.md) are another way to group Users to simplify administration and assigning Roles. User Groups are simple lists of Users that can have Roles assigned to them.
+[User Groups](../user-groups/creating-and-managing-user-groups.md) are another way to group users to simplify administration and assigning Roles. User Groups are simple lists of users that can have Roles assigned to them.
 
 ## Related Information
 

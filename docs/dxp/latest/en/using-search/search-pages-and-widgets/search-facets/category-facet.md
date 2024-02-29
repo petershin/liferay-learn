@@ -28,9 +28,8 @@ The Advanced Configuration section contains additional options:
 
 **Category Parameter Name:** Change the parameter name in the URL for the Facet. The default is *category*. 
 
-```{important}
-To achieve AND style selection between facet widgets, you must configure a different Category Parameter Name for each widget. By default all Category Facet widgets have this field set to _category_. The [example below](#example-creating-a-hierarchic-filtering-experience-in-the-category-facet-using-vocabularies) demonstrates a use case. 
-```
+!!! important
+    To achieve AND style selection between facet widgets, you must configure a different Category Parameter Name for each widget. By default all Category Facet widgets have this field set to _category_. The [example below](#example-creating-a-hierarchic-filtering-experience-in-the-category-facet-using-vocabularies) demonstrates a use case. 
 
 **Max Terms:** Set the maximum number of facet terms to display, regardless of how many matching terms are found for the facet.
 
@@ -96,7 +95,7 @@ To configure the use case above,
    ```
 
    !!! note
-      There's an existing vocabulary created by the site template during site initialization (named Foo after the site): it's better named _Vehicle Systems_ to match the example you're building and characterize the categories better (e.g., Brake System). However, the Foo vocabulary's categories are referenced by existing Commerce products, so it cannot be edited. 
+       There's an existing vocabulary created by the site template during site initialization (named Foo after the site): it's better named _Vehicle Systems_ to match the example you're building and characterize the categories better (e.g., Brake System). However, the Foo vocabulary's categories are referenced by existing Commerce products, so it cannot be edited. 
 
    ![Create a Quality vocabulary in the global site.](./category-facet/images/07.png)
 

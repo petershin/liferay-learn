@@ -1,13 +1,9 @@
 #!/bin/bash
 
-readonly BASE_DIR=$(pwd)
-
-readonly CONVERTER_DIR="${BASE_DIR}/learn-markdown-converter"
-readonly DOCS_DIR="${BASE_DIR}/docs"
-readonly SITE_DIR="${BASE_DIR}/site"
+_REPOSITORY_DIR=$(pwd)
 
 function generate_docs {
-	pushd ${CONVERTER_DIR}
+	pushd "${_REPOSITORY_DIR}/learn-markdown-converter"
 	
 	../gradlew run
 
@@ -15,7 +11,7 @@ function generate_docs {
 }
 
 function generate_examples {
-	pushd ${DOCS_DIR}
+	pushd "${_REPOSITORY_DIR}/docs"
 
 	for update_example_script_name in $(find . -name "update_example.sh" -type f)
 	do
@@ -26,7 +22,7 @@ function generate_examples {
 
 		pushd "$(dirname "${update_example_script_name}")"
 
-		./$(basename "${update_example_script_name}") 2> ${BASE_DIR}/update_examples.err
+		./$(basename "${update_example_script_name}") 2> ${_REPOSITORY_DIR}/update_examples.err
 		
 		popd
 
@@ -37,13 +33,13 @@ function generate_examples {
 
 	local exit_code=$?
 
-	cat ${BASE_DIR}/update_examples.err
+	cat ${_REPOSITORY_DIR}/update_examples.err
 
 	generate_zip_files
 }
 
 function generate_zip_files {
-	pushd ${DOCS_DIR} > /dev/null
+	pushd "${_REPOSITORY_DIR}/docs" > /dev/null
 
 	for zip_dir_name in $(find * -name \*.zip -type d)
 	do
@@ -62,7 +58,7 @@ function generate_zip_files {
 
 		popd
 
-		local output_dir_name=$(dirname "${SITE_DIR}/${zip_dir_name}")
+		local output_dir_name=$(dirname "${_REPOSITORY_DIR}/site/${zip_dir_name}")
 		local output_dir_name=$(dirname "${output_dir_name}")
 		local output_dir_name=$(dirname "${output_dir_name}")
 
@@ -92,7 +88,7 @@ function get_git_diffs {
 }
 
 function get_reference_docs {
-	pushd ${SITE_DIR} > /dev/null
+	pushd "${_REPOSITORY_DIR}/site" > /dev/null
 
 	#
 	# liferay-ce-portal-doc-*.zip
@@ -102,15 +98,15 @@ function get_reference_docs {
 
 	7z x -aoa liferay-ce-portal-doc.zip
 
-	mkdir -p ${SITE_DIR}/reference/latest/en/dxp
+	mkdir -p "${_REPOSITORY_DIR}/site/reference/latest/en/dxp"
 
-	cp -R liferay-ce-portal-doc-${LIFERAY_LEARN_PORTAL_GIT_TAG_VALUE}/* ${SITE_DIR}/reference/latest/en/dxp
+	cp -R liferay-ce-portal-doc-${LIFERAY_LEARN_PORTAL_GIT_TAG_VALUE}/* "${_REPOSITORY_DIR}/site/reference/latest/en/dxp"
 
 	rm -r liferay-ce-portal-doc-${LIFERAY_LEARN_PORTAL_GIT_TAG_VALUE}
 
 	rm -f liferay-ce-portal-doc.zip
 
-	local apps_markdown_file_name=${DOCS_DIR}/reference/latest/en/dxp/apps.md
+	local apps_markdown_file_name="${_REPOSITORY_DIR}/docs/reference/latest/en/dxp/apps.md"
 
 	echo "---" > ${apps_markdown_file_name}
 	echo "uuid: ba71e6fa-d76f-42ec-b3bb-c54cebae6156" >> ${apps_markdown_file_name}
@@ -118,7 +114,7 @@ function get_reference_docs {
 	echo "# Apps" >> ${apps_markdown_file_name}
 	echo "" >> ${apps_markdown_file_name}
 
-	for app_dir_name in ${SITE_DIR}/reference/latest/en/dxp/javadocs/modules/apps/*
+	for app_dir_name in "${_REPOSITORY_DIR}/site/reference/latest/en/dxp/javadocs/modules/apps/*"
 	do
 		echo "## $(basename $app_dir_name)" >> ${apps_markdown_file_name}
 
@@ -137,9 +133,9 @@ function get_reference_docs {
 
 	curl https://repo1.maven.org/maven2/javax/portlet/portlet-api/3.0.1/portlet-api-3.0.1-javadoc.jar -O
 
-	mkdir -p ${SITE_DIR}/reference/latest/en/dxp/portlet-api
+	mkdir -p "${_REPOSITORY_DIR}/site/reference/latest/en/dxp/portlet-api"
 
-	7z x -aoa -o${SITE_DIR}/reference/latest/en/portlet-api portlet-api-3.0.1-javadoc.jar
+	7z x -aoa -o"${_REPOSITORY_DIR}/site/reference/latest/en/portlet-api" portlet-api-3.0.1-javadoc.jar
 
 	rm -f portlet-api-3.0.1-javadoc.jar
 
@@ -185,7 +181,7 @@ function setup_environment {
 
 	update_permissions
 
-	export LIFERAY_LEARN_RESOURCE_DOMAIN="${SITE_DIR}"
+	export LIFERAY_LEARN_RESOURCE_DOMAIN="${_REPOSITORY_DIR}/site"
 
 	if [[ -n "${LIFERAY_LEARN_ETC_CRON_LIFERAY_LEARN_RESOURCES_DOMAIN}" ]]
 	then
@@ -194,7 +190,7 @@ function setup_environment {
 }
 
 function update_permissions {
-	pushd ${DOCS_DIR}
+	pushd "${_REPOSITORY_DIR}/docs"
 
 	./update_permissions.sh
 

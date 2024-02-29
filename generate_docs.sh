@@ -36,24 +36,6 @@ function generate_zip_files {
 	popd > /dev/null
 }
 
-function get_git_diffs {
-	local hash=$(cat .latest_hash)
-
-	if ! git rev-parse --verify "${hash}" >/dev/null 2>&1
-	then
-		echo "Invalid hash: ${hash}"
-
-		return 1
-	fi
-
-	_diffs_string=$(git diff --name-only "${hash}" HEAD)
-
-	while IFS= read -r file_name
-	do
-		_diffs+=("${file_name}")
-	done <<< ${_diffs_string}
-}
-
 function get_reference_docs {
 	pushd "${_REPOSITORY_DIR}/site" > /dev/null
 
@@ -109,24 +91,43 @@ function get_reference_docs {
 	popd > /dev/null
 }
 
+function init_diffs {
+	local hash=$(cat .latest_hash)
+
+	if ! git rev-parse --verify "${hash}" >/dev/null 2>&1
+	then
+		echo "Invalid hash: ${hash}"
+
+		return 1
+	fi
+
+	_DIFFS_STRING=$(git diff --name-only "${hash}" HEAD)
+
+	while IFS= read -r file_name
+	do
+		_DIFFS+=("${file_name}")
+	done <<< ${_DIFFS_STRING}
+}
+
 function is_diff {
-	if [ -z "${_diffs}" ]
+	if [ -z "${_DIFFS}" ]
 	then
 		return 0
 	fi
 
-	if [[ "$1" == *.zip ]] && [[ "$_diffs_string" == *"$1"* ]]
+	if [[ "$1" == *.zip ]] && [[ "$_DIFFS_STRING" == *"$1"* ]]
 	then
 		return 0
 	fi
 
-	[[ "${_diffs[@]}" =~ "$1" ]]
+	[[ "${_DIFFS[@]}" =~ "$1" ]]
 }
 
 function main {
-	local _diffs=()
-	local _diffs_string=""
-	local start=`date +%s`
+	_DIFFS=()
+	_DIFFS_STRING=""
+
+	local start_time=`date +%s`
 
 	set_up_environment
 
@@ -136,9 +137,9 @@ function main {
 
 	get_reference_docs
 
-	local end=`date +%s`
+	local end_time=`date +%s`
 
-	echo "Script run in $((end-start)) seconds"
+	echo "Script took $((end_time - start_time)) seconds."
 }
 
 function run_learn_markdown_converter {
@@ -152,7 +153,7 @@ function run_learn_markdown_converter {
 function set_up_environment {
 	source ./_common.sh
 
-	get_git_diffs
+	init_diffs
 
 	update_permissions
 

@@ -26,7 +26,7 @@ As Clarity brings their team members into Liferay, they need to assign roles to 
 
 Let’s walk through an example of this.
 
-### Exercise
+### Exercise 1
 
 Clara Murphy is Clarity’s marketing content manager. Clara needs access to all of Clarity’s public facing pages as well as Clarity’s blog. As the manager, she also needs the ability to grant access to new marketing team members. Let’s walk through giving Clara and her user group the permissions they need.
 
@@ -36,24 +36,32 @@ Clara Murphy is Clarity’s marketing content manager. Clara needs access to all
 
 1. Click _Select_ on the User Groups section.
 
-1. Choose the _Marketing Manager_ and the _Content Contributor_ user groups.
+1. Choose the _Marketing Manager_ and the _Content Contributor_ user groups. Click _Save_.
+
+![Add Clara to the Margeting Manager and Content Contributor user groups](./managing-and-organizing-clarity-users/images/01.png)
 
 Great job! Clara is now part of the Marketing Manager and Content Contributor user groups. Let's give the right permissions to the user groups.
 
 1. Navigate to _Control Panel_ &rarr; _Roles_.
 
-1. Click on the options button for _Marketing Manager_ role, and select _Edit_.
+1. Click on the options button for _Marketing Content Manager_ role, and select _Edit_.
 
-1. Go to the Assignee tab, choose _User Groups_ and add the Marketing Manager user group.
+1. Go to the Assignees tab, choose _User Groups_ and add the Marketing Manager user group.
 
-      From now on, all users assigned to the marketing manager user group will have marketing manager role. You can check this by going to _Control Panel_ &rarr; _Users & Organizations_ &rarr; Clara's user  &rarr; Roles, and check the roles under _Inherited Regular Roles_.
+      !!! note
+          From now on, all users assigned to the marketing manager user group will have marketing manager role. You can check this by going to _Control Panel_ &rarr; _Users & Organizations_ &rarr; Clara's user  &rarr; Roles, and check the _Inherited Regular Roles_.
 
 1. Impersonate Clara by navigating to _Control Panel_ &rarr; _Users & Organizations_, and selecting _Impersonate User_ on her options button.
 
-Well done! Clara and her user group, Content Contributor, have now access to the pages and blogs.
+Well done! Clara now has the appropriate permissions to manage the marketing team and access the pages and blogs.
 
-!!! note
-    The other users are already part of a user group with the Clarity sample site. If you do not have the Clarity sample site, assign them as you did with Clara.
+### Exercise 2
+
+Now that you've learned how to manage users and how to assign user groups to roles, your next challenge is to assign the other four users to their respective user groups, and each user group to the respective role.
+
+Your final users tab should look like this:
+
+![User and Organizations tab with all users assigned to their user groups](./managing-and-organizing-clarity-users/images/02.png)
 
 ## Organizations
 

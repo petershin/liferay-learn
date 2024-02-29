@@ -63,7 +63,7 @@ function process_image_path {
         fi
 
         echo "    bad image path: ${image_path}"
-        echo ""
+        echo 
     fi
 }
 
@@ -81,7 +81,7 @@ function process_relative_link {
             echo "FILE: ${md_file}"
         fi
         echo "    bad link: ${link}"
-        echo ""
+        echo 
     fi
 }
 
@@ -113,57 +113,6 @@ function check_this_folder {
 
 function check_landing_links {
     IFS=$'\n'
-    for urlLine in $(ag --depth 0 --file-search-regex landing.html --nofilename "url\:"); do
-        if [[ ${urlLine} != *"https://"* ]]; then
-
-			# Strip out everything except the url inside the quotes
-            url=$(echo $urlLine | sed "s/.*'\(.*\.html\)'.*/\1/g")
-
-			# Swap .md for .html
-            url=$(echo $url | sed 's/\.html/\.md/g')
-
-			# This logic below is needed because of how we ingest landing pages
-			# into regular markdown pages one directory above where the
-			# landing.html file lives. We will likely do away with these
-			# landing pages in the future so we shouldn't refactor them right
-			# now. This logic has worked for months, and can be removed when we
-			# use a different paradigm for landing pages.
-			
-# new logic: first, get the landing page references form markdown files, like return the objects/landing.html reference. then extract the link, and ls it from the direcctory where the reference to the landing page is made
-
-			# Add a `../` if the url already has a `../`, this is necessary for
-			# proper link resolving to other sections
-            if [[ ${url} == ../* ]]; then
-                url=$(echo "../${url}")
-			# elif, the abs path of the landing page has the first directorey of the url in it, like objects/landing.html has links to 'objects/creating-objects.html'
-			# in this case we cut that folder from the poath for proper link resolving
-			# Isn't this the same as adding the ../ to the url? we could simpliofy these two blocks if so
-            elif [[ $(realpath landing.html) == *"$(echo ${url} | cut -d/ -f1)"* ]]; then
-                url=$(echo $url | cut -d/ -f2-)
-			# The landing pages at the root of a section don't need
-			# modification to their urls before checking them
-		elif [[ ${landing_dir} == ${1} ]]; then
-                url=${url}
-			# these seem to be links to other sections one dir up
-            else
-                url=$(echo "../${url}")
-            fi
-            if [[ ${url} != *.md ]]; then
-                return
-            fi
-            if ! ls "${url}" >/dev/null 2>&1 ; then
-                echo "${landing_dir}/landing.html"
-                echo "bad link: ${url/.md/.html}"
-                echo ""
-            fi
-        fi
-		unset IFS
-    done
-	unset IFS
-}
-
-function check_landing_links_alt {
-    IFS=$'\n'
 	for landing_reference in $(ag --depth 0 --file-search-regex ".*\.md" --no-filename --no-numbers "\:file\:.*landing\.html")
 	do
 		landing_reference_path=$(echo ${landing_reference} | sed 's/\:file\://g' | sed 's/\ //g' )
@@ -178,10 +127,9 @@ function check_landing_links_alt {
 				landing_page_link=$(echo ${landing_page_link} | sed 's/\.html/\.md/g')
 
 				if ! ls "${landing_page_link}" >/dev/null 2>&1 ; then
-					echo "I'm here: $(pwd)" 
-					echo "${landing_reference_path}"
-					echo "bad link: ${landing_page_link/.md/.html}"
-					echo ""
+					echo "Landing Page Reference: ${landing_reference_path}"
+					echo "Bad Link: ${landing_page_link/.md/.html}"
+					echo 
 				fi
 			fi
 		done
@@ -206,7 +154,7 @@ function check_toc_links {
             fi
 
 			echo "    bad link: ${toc_dir}/${tocLine}"
-			echo ""
+			echo 
 		fi
     done
 	unset IFS
@@ -217,25 +165,18 @@ function main {
 	check_args
 
 	echo -e "------------------"
-	echo "Checking Landing Page Links VERSION 2 in ${1}"
+	echo "Checking Landing Page Links in ${1}"
+	echo
 
     IFS=$'\n'
 	for article_dir in $(find ${1} -name '*.md' -printf '%h\n' | sort -u); do
 		pushd ${article_dir} 
-			check_landing_links_alt ${1}
+			check_landing_links
 		popd
 	done
 	unset IFS
-	#echo -e "------------------"
-	#echo "Checking Landing Page Links in ${1}"
 
-	#for landing_dir in $(find ${1} -name landing.html -printf '%h\n' | sort -u); do
-	#	pushd ${landing_dir}
-	#		check_landing_links ${1}
-	#	popd
-	#done
-
-	echo -e "\n\n\n------------------"
+	echo -e "\n\n------------------"
 	echo "Checking Article Links in ${1}"
 
 	for article_dir in $(find ${1} -name '*.md' -printf '%h\n' | sort -u); do
@@ -244,7 +185,7 @@ function main {
 		popd
 	done
 
-	echo -e "\n\n\n------------------"
+	echo -e "\n\n------------------"
 	echo "Checking TOC Links in ${1}"
 
 	for toc_dir in $(dirname $(ag --file-search-regex "${1}/.*\.md" --files-with-matches --multiline "(?s)toc\:.*---") | sort -u); do

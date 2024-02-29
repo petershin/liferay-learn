@@ -23,6 +23,8 @@ If you'd like to contribute example code for a tutorial, please follow the [Tuto
 
 If you'd like to specifically contribute example code for a REST API tutorial, please follow the [REST API Project Guidelines](./readme/REST_API_PROJECT_GUIDELINES.md).
 
+If you'd like to run the site locally, please follow the [Local Set Up Guidelines](./readme/LOCAL_SET_UP_GUIDELINES.md).
+
 Please note that this documentation and any contributions are subject to the Creative Commons license below. 
 
 Copyright (C) 2021 Liferay, Inc. All rights reserved. 

@@ -32,7 +32,7 @@ To add a single image:
 
 {bdg-secondary}`Liferay DXP 2024.Q1+/Portal 7.4 GA112+` You can now tag images using tags from the Global scope. See [Tagging Content and Managing Tags](https://learn.liferay.com/w/dxp/content-authoring-and-management/tags-and-categories/tagging-content-and-managing-tags) for more information.
 
-This adds the new image to the product. Note that under _Options_, the message "_There are no options set as the SKU contributor._" may appear. If this message appears, then the product does not have additional associated SKUs and the image added is the only one associated with the product.
+This adds the new image to the product. Note that under _Options_, the message "_There are no options set as the SKU contributor._" may appear. If this message appears, the product does not have additional associated SKUs, and the image added is the only one associated with the product.
 
 ## Adding Multiple Images
 
@@ -48,7 +48,7 @@ After doing so, you can associate different product images to different SKUs.
 
 1. Drag and drop an image or click _Select File_ to upload an image.
 
-1. Select an option value from the option dropdown to associate the image with.
+1. Select an option value from the option drop-down to associate the image with.
 
    ![Adding an image for a SKU.](./product-images/images/02.png)
 

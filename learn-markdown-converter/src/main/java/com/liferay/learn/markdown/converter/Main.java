@@ -268,7 +268,14 @@ public class Main {
 
 		Repository repository = git.getRepository();
 
-		ObjectId objectId = repository.resolve(_latestHash);
+		ObjectId objectId = null;
+
+		try {
+			objectId = repository.resolve(_latestHash);
+		}
+		catch (Exception exception) {
+			_warn(exception.getMessage());
+		}
 
 		if (objectId == null) {
 			return;

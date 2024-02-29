@@ -2,14 +2,6 @@
 
 _REPOSITORY_DIR=$(pwd)
 
-function generate_docs {
-	pushd "${_REPOSITORY_DIR}/learn-markdown-converter"
-
-	../gradlew run
-
-	popd
-}
-
 function generate_zip_files {
 	pushd "${_REPOSITORY_DIR}/docs" > /dev/null
 
@@ -140,13 +132,21 @@ function main {
 
 	update_examples
 
-	generate_docs
+	run_learn_markdown_converter
 
 	get_reference_docs
 
 	local end=`date +%s`
 
 	echo "Script run in $((end-start)) seconds"
+}
+
+function run_learn_markdown_converter {
+	pushd "${_REPOSITORY_DIR}/learn-markdown-converter"
+
+	../gradlew run
+
+	popd
 }
 
 function set_up_environment {

@@ -14,17 +14,14 @@ taxonomy-category-names:
 
 {bdg-secondary}`Liferay DXP 2024.Q1+/Portal 7.4 GA112+`
 
-You can use a client extension to add a new shipping engine to Liferay. This tutorial uses an example client extension from the [sample workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace) and it consists of a standalone Spring Boot application that communicates with Liferay using OAuth 2. See [Configuring Shipping Methods](../../store-management/configuring-shipping-methods.md) to read more about the shipping methods available out-of-the-box with Liferay.
+You can use a client extension to add a new shipping engine to Liferay. This client extension from the [sample workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace) consists of a standalone Spring Boot application that communicates with Liferay using OAuth 2. See [Configuring Shipping Methods](../../store-management/configuring-shipping-methods.md) to read more about the shipping methods available out-of-the-box with Liferay.
 
 ## Prerequisites
 
-To start developing client extensions,
-
 1. Install Java (JDK 8 or JDK 11).
 
-   ```{note}
-   Check the [compatibility matrix](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) for supported JDKs, databases, and environments. See [JVM Configuration](https://learn.liferay.com/w/dxp/installation-and-upgrades/reference/jvm-configuration) for recommended JVM settings.
-   ```
+   !!! note
+       Check the [compatibility matrix](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) for supported JDKs, databases, and environments. See [JVM Configuration](https://learn.liferay.com/w/dxp/installation-and-upgrades/reference/jvm-configuration) for recommended JVM settings.
 
 1. Download and unzip the sample workspace:
 
@@ -134,7 +131,7 @@ The Spring Boot application starts and prints messages in the log:
 
 ## Verifying the Addition of the Shipping Engine
 
-1. Log in as an administrator, open the _Global Menu_ (![Applications Menu icon](../../images/icon-applications-menu.png)) and go to _Control Panel_ &rarr; _Sites_.
+1. Log in as an administrator, open the _Global Menu_ (![Applications Menu icon](../../images/icon-applications-menu.png)), and go to _Control Panel_ &rarr; _Sites_.
 
 1. Add a new Minium site.
 
@@ -146,7 +143,7 @@ The Spring Boot application starts and prints messages in the log:
 
 1. Select the new shipping engine and activate it using the _Active_ toggle.
 
-1. Click _Save_. A new _Configuration_ tab appears for the shipping engine. The configuration tab contains an input field. You can enter information required by the client extension here instead of hardcoding values in the client extension itself. The example contains sample key-value pairs.
+1. Click _Save_. A new _Configuration_ tab appears for the shipping engine. The configuration tab contains an input field. You can enter information required by the client extension here instead of hard coding values in the client extension itself. The example contains sample key-value pairs.
 
 1. Click _Save_.
 
@@ -156,7 +153,7 @@ The Spring Boot application starts and prints messages in the log:
 
 1. Open the mini cart and click _Submit_. This starts the checkout flow.
 
-1. Continue checking out till you reach the step to select a shipping option.
+1. Continue checking out until you reach the step to select a shipping option.
 
    ![Verify the addition of two new shipping options from the newly added client extension.](./using-the-shipping-engine-client-extension/images/03.png)
 
@@ -240,7 +237,7 @@ public ResponseEntity<String> post(
 }
 ```
 
-The `OptionLabelRestController` contains a single post method that has two parameters: the JSON Web Token (JWT) and the request body. The token authenticates HTTP calls, and the request body contains data as a string in JSON format. After logging the request body, it uses a `JSONObject()` constructor to create a new JSON object from the JSON string in the request body. If the json object doesn't contain the `name` attribute, it returns null. Next, it uses a `JSONObject()` constructor to add the shipping option name and returns it as a response entity along with the HTTP status.
+The `OptionLabelRestController` contains a single post method that has two parameters: the JSON Web Token (JWT) and the request body. The token authenticates HTTP calls, and the request body contains data as a string in JSON format. After logging the request body, it uses a `JSONObject()` constructor to create a new JSON object from the JSON string in the request body. If the JSON object doesn't contain the `name` attribute, it returns null. Next, it uses a `JSONObject()` constructor to add the shipping option name and returns it as a response entity along with the HTTP status.
 
 ### Examining `OptionsRestController.java`
 
@@ -296,7 +293,7 @@ public ResponseEntity<String> post(
 }
 ```
 
-The `OptionsRestController` contains a single post method that has two parameters: the JSON Web Token (JWT) and the request body. The token authenticates HTTP calls, and the request body contains data as a string in JSON format. After logging the request body, it uses a `JSONObject()` constructor followed by a `JSONArray()` constructor to add 3 shipping options to the shipping engine and returns it as a response entity along with the HTTP status. Each shipping options requires a `key`, `name`, `priority`, and `amount`.
+The `OptionsRestController` contains a single post method that has two parameters: the JSON Web Token (JWT) and the request body. The token authenticates HTTP calls, and the request body contains data as a string in JSON format. After logging the request body, it uses a `JSONObject()` constructor followed by a `JSONArray()` constructor to add three shipping options to the shipping engine and returns it as a response entity along with the HTTP status. Each shipping options requires a `key`, `name`, `priority`, and `amount`.
 
 ### Examining `OptionsEnabledRestController.java`
 
@@ -341,7 +338,7 @@ public ResponseEntity<String> post(
 }
 ```
 
-The `OptionsEnabledRestController` contains a single post method that has two parameters: the JSON Web Token (JWT) and the request body. The token authenticates HTTP calls, and the request body contains data as a string in JSON format. After logging the request body, it uses a `JSONObject()` constructor followed by a `JSONArray()` constructor to add 2 shipping options to the shipping engine and returns it as a response entity along with the HTTP status. These shipping options are the active ones available to select during checkout. Each shipping options requires a `key`, `name`, `priority`, and `amount`.
+The `OptionsEnabledRestController` contains a single post method that has two parameters: the JSON Web Token (JWT) and the request body. The token authenticates HTTP calls, and the request body contains data as a string in JSON format. After logging the request body, it uses a `JSONObject()` constructor followed by a `JSONArray()` constructor to add two shipping options to the shipping engine and returns it as a response entity along with the HTTP status. These shipping options are the active ones available to select during checkout. Each shipping options requires a `key`, `name`, `priority`, and `amount`.
 
 ## Related Topics
 

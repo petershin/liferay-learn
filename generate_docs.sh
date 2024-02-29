@@ -4,7 +4,7 @@ _REPOSITORY_DIR=$(pwd)
 
 function generate_docs {
 	pushd "${_REPOSITORY_DIR}/learn-markdown-converter"
-	
+
 	../gradlew run
 
 	popd
@@ -23,7 +23,7 @@ function generate_examples {
 		pushd "$(dirname "${update_example_script_name}")"
 
 		./$(basename "${update_example_script_name}") 2> ${_REPOSITORY_DIR}/update_examples.err
-		
+	
 		popd
 
 		echo "Generated example: ${update_example_script_name}"
@@ -164,7 +164,7 @@ function main {
 	local _diffs_string=""
 	local start=`date +%s`
 
-	setup_environment
+	set_up_environment
 
 	generate_examples
 
@@ -177,7 +177,7 @@ function main {
 	echo "Script run in $((end-start)) seconds"
 }
 
-function setup_environment {
+function set_up_environment {
 	source ./_common.sh
 
 	get_git_diffs

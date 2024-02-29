@@ -5,9 +5,19 @@ uuid: aad2f09c-9d83-45a6-8c3d-30b4b39e5222
 
 After learning the benefits of Liferay DXP and the value of Liferay SaaS, Clarity Vision Solutions has signed up for a Liferay SaaS account. In this lesson we will review the Liferay SaaS onboarding process and what you can expect when starting with Liferay SaaS.
 
+## Initial Contact
+
+Liferay SaaS provisioning begins with an initial outreach by a Liferay provisioning team. The team will collect information from you about:
+
+* Desired Liferay project name
+* Desired data server location 
+* Who to include in the Liferay environment email invitation
+
+Once the provisioning team has this information, they will prepare your Liferay SaaS environments.
+
 ## Invitations
 
-After sign up, you will receive a welcome email for the production (`PRD`) Liferay DXP environment and a welcome email for the test (`UAT`) environment. You will be asked to set a new password upon clicking on the link in the emails. Once logged in, you can begin creating and inviting other users.
+Next, you will receive a welcome email for the production (`PRD`) Liferay DXP environment and a welcome email for the test (`UAT`) environment. You will be asked to set a new password upon clicking on the link in the emails. Once logged in, you can begin creating and inviting other users.
 
 ![Email invitations to Liferay environments and Liferay Cloud console access.](./liferay-saas-onboarding/images/01.png)
 

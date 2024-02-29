@@ -13,6 +13,9 @@ At a high level:
 * Liferay PaaS - Have Liferay manage your cloud infrastructure while keeping control over your database, file storage, backups, etc.
 * Liferay SaaS - All installation, maintenance, backups, upgrades, etc. are handled by Liferay.
 
+!!! important
+   Key Decision: Clarity needs to understand the deployment option differences so they can choose what makes sense for their business.
+
 Let's go into these distinctions in further detail.
 
 ## Liferay Self-Hosted

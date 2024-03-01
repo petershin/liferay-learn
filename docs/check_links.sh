@@ -68,7 +68,13 @@ function process_image_path {
 }
 
 function process_relative_link {
-    link=$(echo ${article_match} | sed 's/.*\](\(.*\.md.*\)).*/\1/g'  | sed 's/\(\.md\).*/\1/g' )
+	if [[ ${article_match} == *"]("*".md"* ]]
+	then
+		link=$(echo ${article_match} | sed 's/.*\](\(.*\.md.*\)).*/\1/g'  | sed 's/\(\.md\).*/\1/g' )
+	else
+		link=$(echo ${article_match} | sed 's/\ //g' )
+	fi
+
     if [[ ${link} != *.md ]] || [[ ${link} == "http"* ]]; then
         return
     fi
@@ -85,14 +91,11 @@ function process_relative_link {
     fi
 }
 
-function check_this_folder {
+function check_relative_markdown_links {
     IFS=$'\n'
 
     for markdown_url in $(ag --depth 0 --only-matching "\[.+?\]\(.*?\)" --file-search-regex ".*\.md")
 	do
-		# the markdown_url looks like this right now: 
-		# deploying-and-managing-a-microservice-client-extension-project.md:184:[Actions menu](../../images/icon-actions.png)
-		
 		md_file=$(echo ${markdown_url} | cut -d':' -f1 )
 
 		match=$(echo ${markdown_url} | cut -d':' -f3 )
@@ -107,27 +110,42 @@ function check_this_folder {
 			process_image_path
 		fi
 	done
+
+    unset IFS
+}
+
+function check_relative_grid_links {
+    IFS=$'\n'
+
 	for grid_url in $(ag --depth 0 --only-matching "\:link\:.*\.md" --file-search-regex ".*\.md")
 	do
 		# For example, a grid url looks like this
 		# :link: ./using-react/react-component-utilities-reference.md
 		md_file=$(echo ${grid_url} | cut -d':' -f1 )
 
-		match=$(echo ${grid_url} | cut -d':' -f5 )
+		article_match=$(echo ${grid_url} | cut -d':' -f5 )
 		
 		process_relative_link
 	done
 
-    unset IFS
+	unset IFS
 }
 
-function check_landing_links {
+function check_relative_landing_links {
     IFS=$'\n'
+	# This logic works differently, since the links in landing.html pages are
+	# resolved and must be checked from the directory of the markdown file that
+	# ingests the landing.html file, not from the landing.html file itself.
+	#
+	# This ag gets each .md file that ingests a landing.html
 	for landing_reference in $(ag --depth 0 --file-search-regex ".*\.md" --no-filename --no-numbers "\:file\:.*landing\.html")
 	do
+		# Extract just the path, from the current dir to the referenced
+		# landing.html, e.g., `objects/landing.html`
 		landing_reference_path=$(echo ${landing_reference} | sed 's/\:file\://g' | sed 's/\ //g' )
 		for landing_page_link in $(ag --no-filename "url\:" ${landing_reference_path})
 		do
+			# Ignore absolute urls
 			if [[ ${landing_page_link} != *"https://"* ]]
 			then
 				# Strip out everything except the url inside the quotes and get rid of page anchors
@@ -151,17 +169,24 @@ function check_landing_links {
 	unset IFS
 }
 
-function check_toc_links {
+function check_relative_toc_links {
     IFS=$'\n'
+
+	# The first ag regex matches the entire `toc` block, while the second gets
+	# the lines that end with .md to extract the links
     for tocLine in $(ag --depth 0 --file-search-regex "${1}/.*\.md" --only-matching "(?s)toc\:.*^---$" | ag --nonumbers --nomultiline ".*\.md$" ); do
 		toc_file=$(echo "${tocLine}" | cut -d: -f1)
+
 		tocLine=$(echo "${tocLine}" | rev | cut -d' ' -f1 | rev)
+
 		if ! ls "${tocLine}" >/dev/null 2>&1 ; then
             if [[ -z ${thisFile} ]]; then
                 thisFile=${toc_file}
+
                 echo "Bad TOC Entries Found: ${toc_file}"
             elif [[ ${thisFile} != ${toc_file} ]]; then
                 thisFile=${toc_file}
+
                 echo "Bad TOC Entries Found: ${toc_file}"
             fi
 
@@ -169,6 +194,7 @@ function check_toc_links {
 			echo 
 		fi
     done
+
 	unset IFS
 }
 
@@ -182,9 +208,10 @@ function main {
 
 	for article_dir in $(find ${1} -name '*.md' -printf '%h\n' | sort -u); do
 		pushd ${article_dir} 
-			check_landing_links
-			check_this_folder
-			check_toc_links
+			check_relative_landing_links
+			check_relative_grid_links
+			check_relative_markdown_links
+			check_relative_toc_links
 		popd
 	done
 

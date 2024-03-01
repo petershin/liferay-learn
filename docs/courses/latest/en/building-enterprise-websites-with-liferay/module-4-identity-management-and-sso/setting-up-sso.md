@@ -4,14 +4,14 @@ uuid: ba75bce7-ccf4-4c5a-bffe-7c247434dac2
 
 # Integrating Okta SSO
 
-Liferay supports a variety of single sign-on (SSO) standards including OpenID Connect (OIDC) and Security Assertion Markup Language (SAML). Clarity wants to use Okta, a SAML based SSO service, together with Liferay. Clarity appreciates the convenience of having one login not only for Liferay, but for the other services they use. In addition to authentication, they can use Okta to serve as their identity provider (IdP) and sync all user identities with Liferay. Continue reading to see the basic steps to set up your Liferay DXP instance as the Service Provider (SP), and Okta as the Identity Provider (IdP).
+Clarity values having one login not only for Liferay, but for the other services they use. They aim to keep using Okta to maintain this unified login approach, aiming to save costs, minimize additional systems, and mitigate risks. Liferay supports a variety of single sign-on (SSO) standards, including OpenID Connect (OIDC) and Security Assertion Markup Language (SAML), making it straightforward to integrate with Okta. In addition to authentication, they can use Okta to serve as their identity provider (IdP) and sync all user identities with Liferay. Continue reading to see the basic steps to set up your Liferay DXP instance as the Service Provider (SP), and Okta as the Identity Provider (IdP).
 
 !!! note
     This tutorial requires you to have an existing Okta developer account to test with.
 
 ## Okta Configuration
 
-1. Log in to [Okta Dev](https://developer.okta.com/login/). In the left menu, click on _Applications_ under the applications sub-section. In the new page click _Create App Integration_. 
+1. Log in to [Okta Dev](https://developer.okta.com/login/). In the left menu, click on _Applications_ under the applications sub-section. In the new page click _Create App Integration_.
 
 1. Select `SAML 2.0` and click _Next_.
 
@@ -31,7 +31,9 @@ Liferay supports a variety of single sign-on (SSO) standards including OpenID Co
     - `lastName (Unspecified) = user.lastName`
     - `emailAddress (Unspecified) = user.email`
 
-1. Click *Next* at the bottom of the page.  Finally, click _Finish_ on the next page.
+<!-- configure user groups based on this tutorial https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/configuring-sso/authenticating-with-saml/importing-user-groups-memberships-from-an-external-idp-through-saml -->
+
+1. Click *Next* at the bottom of the page. Finally, click _Finish_ on the next page.
 
 1. On the Sign On tab, confirm that Application username format is set to to Email.
 
@@ -85,7 +87,7 @@ Liferay supports a variety of single sign-on (SSO) standards including OpenID Co
 
 ## Further Reading
 
-See our documentation about [configuring single sign-on](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/configuring-sso) to learn about integrating other solutions such as OpenAM, OpenID Connect, CAS, and Kerberos.  
+See our documentation about [configuring single sign-on](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/configuring-sso) to learn about integrating other solutions such as OpenAM, OpenID Connect, CAS, and Kerberos.
 
 In addition to a universal user directory like Okta, Liferay supports connecting traditional active directories. See [connecting a user directory](https://learn.liferay.com/w/dxp/users-and-permissions/connecting-to-a-user-directory/connecting-to-an-ldap-directory) to learn more.
 

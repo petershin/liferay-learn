@@ -6,9 +6,11 @@ uuid: 57aef6ee-03e9-4056-abf1-ebdbdb4984e4
 ---
 # Module 4: Identity Management & SSO
 
-Using the URL that was received from the Liferay SaaS provisioning email, visitors that come to Clarity's website are considered guest users and are not authenticated. In order to begin using Liferay's features and begin building its site, Clarity must implement a way for its team members to login and authenticate with Liferay. 
+Now that Clarity has a Liferay SaaS instance provisioned, the Liferay DXP instance is now available to access via the URL that was sent in the provisioning email. The next step is to integrate Clarity's already existing set of users into Liferay and enable them to authenticate to the system.
 
-Liferay comes with a variety of out-of-the-box features, as well as support for integrating with third-party identity management services. For its employees, Clarity plans to use Okta for Single Sign-On (SSO) authentication and for its user directory. For other site visitors such as B2B customers, Clarity can use the security and identity management tools that are available within Liferay.
+To ensure secure access for Clarity's employees and leverage existing Identity Management and Single Sign-On Solutions, Liferay comes with a variety of out-of-the-box features, as well as support for integrating with third-party identity management services. For employee authentication and user directory management, Clarity plans to utilize Okta for Single Sign-On (SSO). For other site visitors such as B2B customers, Clarity can use the security and identity management tools that are available within Liferay.
+
+<!-- [Maybe add an image like the one under the "Saving the Metadata" section](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/configuring-sso/authenticating-with-saml/importing-user-groups-memberships-from-an-external-idp-through-saml#saving-the-metadata) -->
 
 In this module, you will:
 

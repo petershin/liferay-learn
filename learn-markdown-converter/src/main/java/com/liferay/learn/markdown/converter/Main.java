@@ -112,6 +112,15 @@ public class Main {
 
 		_learnSiteDirName = learnSiteDirFile.getCanonicalPath();
 
+		String liferayLearnResourceDomain = System.getenv(
+			"LIFERAY_LEARN_RESOURCE_DOMAIN");
+
+		if (liferayLearnResourceDomain == null) {
+			liferayLearnResourceDomain = "localhost:8000";
+		}
+
+		_liferayLearnResourceDomain = liferayLearnResourceDomain;
+
 		Enumeration<String> enumeration =
 			(Enumeration<String>)tokenProperties.propertyNames();
 
@@ -880,6 +889,13 @@ public class Main {
 			return;
 		}
 
+		String filePathString = file.getCanonicalPath();
+
+		image.setUrl(
+			BasedSequence.of(
+				_liferayLearnResourceDomain + "/images" +
+					filePathString.substring(_learnDocsDirName.length())));
+
 		_nodeVisitor.visitChildren(image);
 	}
 
@@ -887,6 +903,25 @@ public class Main {
 		BasedSequence basedSequence = link.getUrl();
 
 		link.setUrl(basedSequence.replace(".md", StringPool.BLANK));
+
+		String url = basedSequence.toString();
+
+		if (url.contains(".zip") && url.startsWith("./")) {
+			try {
+				String markdownFilePathString = _markdownFile.getParent();
+
+				String dirName = markdownFilePathString.substring(
+					_learnDocsDirName.length());
+
+				link.setUrl(
+					BasedSequence.of(
+						_liferayLearnResourceDomain + dirName +
+							url.substring(1)));
+			}
+			catch (Exception exception) {
+				_error(_markdownFile.getPath() + ": " + exception.getMessage());
+			}
+		}
 	}
 
 	private void _warn(String warningMessage) {
@@ -927,6 +962,7 @@ public class Main {
 	private final String _learnBaseDirName;
 	private final String _learnDocsDirName;
 	private final String _learnSiteDirName;
+	private String _liferayLearnResourceDomain;
 	private File _markdownFile;
 
 	private final NodeVisitor _nodeVisitor = new NodeVisitor(

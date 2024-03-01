@@ -2,6 +2,10 @@
 
 _REPOSITORY_DIR=$(pwd)
 
+function copy_images {
+	rsync --include="images/*" --include="*/" --exclude="*" --prune-empty-dirs --recursive ${_REPOSITORY_DIR}/docs/ ${_REPOSITORY_DIR}/site/images
+}
+
 function generate_zip_files {
 	pushd "${_REPOSITORY_DIR}/docs" > /dev/null
 
@@ -136,6 +140,8 @@ function main {
 	run_learn_markdown_converter
 
 	get_reference_docs
+
+	copy_images
 
 	local end_time=`date +%s`
 

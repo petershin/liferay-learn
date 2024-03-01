@@ -44,7 +44,7 @@ function check_image_paths {
 
 		full_image_path=${image_folder}/${image_path}
 
-		if [[ ${1} == *"/ja" && *"/ko" ]]
+		if [[ ${full_image_path} == *"/ja/"* && *"/ko/"* ]]
 		then
 			full_image_path=$(echo "${image_folder/\/ja\//\/en\/}")
 

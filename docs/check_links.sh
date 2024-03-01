@@ -15,7 +15,7 @@ ls () {
 function check_grid_links {
 	for grid_url in $(ag --depth 0 --only-matching "\:link\:.*\.md" ${article})
 	do
-		article=$(echo ${article} | sed 's/\.\///g' ) 
+		article=$(echo ${article} | sed 's/\.\///g' )
 
 		match=$(echo ${grid_url} | cut -d':' -f3 )
 		
@@ -29,7 +29,7 @@ function check_grid_links {
 				echo "	  ${article}"
 			fi
 			echo "		  Grid link: ${link}"
-			echo 
+			echo
 		fi
 	done
 }
@@ -49,7 +49,7 @@ function check_image_paths {
 			full_image_path=$(echo "${image_folder/\/ko\//\/en\/}")
 		fi
 
-		article=$(echo ${article} | sed 's/\.\///g' ) 
+		article=$(echo ${article} | sed 's/\.\///g' )
 
 		if ! ls "${full_image_path}" || [[ ${image_path} != *"/images/"* ]]
 		then
@@ -62,7 +62,7 @@ function check_image_paths {
 			fi
 
 			echo "		  Bad Image Path: ${image_path}"
-			echo 
+			echo
 		fi
 	done
 }
@@ -86,7 +86,7 @@ function check_landing_links {
 					echo "Bad landing page link:"
 					echo "	  Landing Page Reference: ${landing_reference_path}"
 					echo "	  Link: ${landing_page_link/.md/.html}"
-					echo 
+					echo
 				fi
 			fi
 		done
@@ -107,7 +107,7 @@ function check_markdown_links {
 			return
 		fi
 
-		article=$(echo ${article} | sed 's/\.\///g' ) 
+		article=$(echo ${article} | sed 's/\.\///g' )
 		if ! ls "${link}"
 		then
 			if [[ -z ${this_file} || ${this_file} != ${article} ]]
@@ -116,7 +116,7 @@ function check_markdown_links {
 				echo "	  ${article}"
 			fi
 			echo "		  Markdown link: ${link}"
-			echo 
+			echo
 		fi
 	done
 }
@@ -126,7 +126,7 @@ function check_toc_links {
 	do
 		toc_line=$(echo "${toc_line}" | rev | cut -d' ' -f1 | rev)
 
-		article=$(echo ${article} | sed 's/\.\///g' ) 
+		article=$(echo ${article} | sed 's/\.\///g' )
 
 		if ! ls "${toc_line}"
 		then
@@ -139,7 +139,7 @@ function check_toc_links {
 			fi
 
 			echo "		  TOC link: ${toc_line}"
-			echo 
+			echo
 		fi
 	done
 }
@@ -153,7 +153,7 @@ function main {
 
 	for article_dir in $(find ${1} -name '*.md' -printf '%h\n' | sort -u)
 	do
-		pushd ${article_dir} 
+		pushd ${article_dir}
 		
 		for article in $(find .  -maxdepth 1 -name "*.md")
 		do

@@ -80,7 +80,7 @@ function process_relative_link {
             thisFile=${md_file}
             echo "Bad Links Found: ${md_file}"
         fi
-        echo "    bad Link: ${link}"
+        echo "    Bad Link: ${link}"
         echo 
     fi
 }
@@ -107,6 +107,16 @@ function check_this_folder {
 			process_image_path
 		fi
 	done
+	for grid_url in $(ag --depth 0 --only-matching "\:link\:.*\.md" --file-search-regex ".*\.md")
+	do
+		# For example, a grid url looks like this
+		# :link: ./using-react/react-component-utilities-reference.md
+		md_file=$(echo ${grid_url} | cut -d':' -f1 )
+
+		match=$(echo ${grid_url} | cut -d':' -f5 )
+		
+		process_relative_link
+	done
 
     unset IFS
 }
@@ -121,7 +131,9 @@ function check_landing_links {
 			if [[ ${landing_page_link} != *"https://"* ]]
 			then
 				# Strip out everything except the url inside the quotes and get rid of page anchors
-				landing_page_link=$(echo ${landing_page_link} | sed "s/.*\('\|\"\)\(.*\)\('\|\"\|\#\).*/\2/g" | sed 's/\(.*\)#.*/\1/g' )
+				landing_page_link=$(echo ${landing_page_link} | sed "s/.*\('\|\"\)\(.*\)\('\|\"\|\#\).*/\2/g" )
+
+				landing_page_link=$(echo ${landing_page_link} | sed 's/\(.*\)#.*/\1/g' )
 
 				# Swap .md for .html
 				landing_page_link=$(echo ${landing_page_link} | sed 's/\.html/\.md/g')
@@ -153,7 +165,7 @@ function check_toc_links {
                 echo "Bad TOC Entries Found: ${toc_file}"
             fi
 
-			echo "    Bad Link: ${toc_dir}/${tocLine}"
+			echo "    Bad Link: ${tocLine}"
 			echo 
 		fi
     done
@@ -165,7 +177,7 @@ function main {
 	check_args
 
 
-	echo    "Checking Relative Links in ${1}"
+	echo    "Checking Relative Links, Image Paths, TOC Entries, and Landing Page Links in ${1}"
 	echo -e "-----------------------------\n"
 
 	for article_dir in $(find ${1} -name '*.md' -printf '%h\n' | sort -u); do

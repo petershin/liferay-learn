@@ -24,10 +24,13 @@ function check_grid_links {
 		if ! ls "${link}"
 		then
 			if [[ -z ${this_file} || ${this_file} != ${article} ]]
-			then this_file=${article}
+			then
+				this_file=${article}
+
 				echo "Bad links Found in"
 				echo "	  ${article}"
 			fi
+
 			echo "		  Grid link: ${link}"
 			echo
 		fi
@@ -46,6 +49,7 @@ function check_image_paths {
 		if [[ ${1} == *"/ja" && *"/ko" ]]
 		then
 			full_image_path=$(echo "${image_folder/\/ja\//\/en\/}")
+
 			full_image_path=$(echo "${image_folder/\/ko\//\/en\/}")
 		fi
 
@@ -61,7 +65,7 @@ function check_image_paths {
 				echo "	  ${article}"
 			fi
 
-			echo "		  Bad Image Path: ${image_path}"
+			echo "		  Image path: ${image_path}"
 			echo
 		fi
 	done
@@ -100,7 +104,7 @@ function check_markdown_links {
 
 		match=$(echo ${markdown_link} | cut -d':' -f3 )
 
-		link=$(echo ${match} | sed 's/.*\](\(.*\.md.*\)).*/\1/g'  | sed 's/\(\.md\).*/\1/g' )
+		link=$(echo ${match} | sed 's/.*\](\(.*\.md.*\)).*/\1/g' | sed 's/\(\.md\).*/\1/g' )
 
 		if [[ ${link} != *.md ]] || [[ ${link} == "http"* ]]
 		then
@@ -115,6 +119,7 @@ function check_markdown_links {
 				echo "Bad links Found in"
 				echo "	  ${article}"
 			fi
+
 			echo "		  Markdown link: ${link}"
 			echo
 		fi
@@ -122,7 +127,7 @@ function check_markdown_links {
 }
 
 function check_toc_links {
-	for toc_line in $(ag --depth 0 --only-matching "(?s)toc\:.*^---$" ${article} | ag --nonumbers --nomultiline ".*\.md$" )
+	for toc_line in $(ag --depth 0 --only-matching "(?s)toc\:.*^---$" ${article} | ag --nomultiline --nonumbers ".*\.md$" )
 	do
 		toc_line=$(echo "${toc_line}" | rev | cut -d' ' -f1 | rev)
 
@@ -155,7 +160,7 @@ function main {
 	do
 		pushd ${article_dir}
 		
-		for article in $(find .  -maxdepth 1 -name "*.md")
+		for article in $(find . -maxdepth 1 -name "*.md")
 		do
 			check_grid_links
 			check_image_paths

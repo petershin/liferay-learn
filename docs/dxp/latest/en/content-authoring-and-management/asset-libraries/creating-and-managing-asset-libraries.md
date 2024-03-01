@@ -101,5 +101,5 @@ To remove an asset library and its contents from your instance, click its *Actio
 
 ## Related Topics
 
-* [Asset Libraries Overview](../asset-libraries.md)
-* [Asset Library Content](./asset-library-content.md)
+- [Asset Libraries Overview](../asset-libraries.md)
+- [Asset Library Content](./asset-library-content.md)

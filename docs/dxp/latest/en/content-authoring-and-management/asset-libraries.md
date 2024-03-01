@@ -2,6 +2,7 @@
 toc:
   - ./asset-libraries/creating-and-managing-asset-libraries.md
   - ./asset-libraries/asset-library-content.md
+  - ./asset-libraries/additional-content-configuration-in-asset-libraries.md
 taxonomy-category-names:
 - Digital Asset Management
 - Asset Libraries
@@ -37,5 +38,9 @@ Use asset libraries to improve content collaboration, simplify asset organizatio
 
 :::{grid-item-card} Asset Library Content
 :link: ./asset-libraries/asset-library-content.md
+:::
+
+:::{grid-item-card} Additional Content Configuration in Asset Libraries
+:link: ./asset-libraries/additional-content-configuration-in-asset-libraries.md
 :::
 ::::

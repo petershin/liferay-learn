@@ -1,11 +1,11 @@
 #!/bin/bash
 
 pushd () {
-    command pushd "$@" > /dev/null
+	command pushd "$@" > /dev/null
 }
 
 popd () {
-    command popd "$@" > /dev/null
+	command popd "$@" > /dev/null
 }
 
 ls () {
@@ -26,9 +26,9 @@ function check_grid_links {
 			if [[ -z ${this_file} || ${this_file} != ${article} ]]
 			then this_file=${article}
 				echo "Bad links Found in"
-				echo "    ${article}"
+				echo "	  ${article}"
 			fi
-			echo "        Grid link: ${link}"
+			echo "		  Grid link: ${link}"
 			echo 
 		fi
 	done
@@ -58,10 +58,10 @@ function check_image_paths {
 			then
 				thisFile=${article}
 				echo "Bad links Found in"
-				echo "    ${article}"
+				echo "	  ${article}"
 			fi
 
-			echo "        Bad Image Path: ${image_path}"
+			echo "		  Bad Image Path: ${image_path}"
 			echo 
 		fi
 	done
@@ -84,8 +84,8 @@ function check_landing_links {
 				if ! ls "${landing_page_link}"
 				then
 					echo "Bad landing page link:"
-					echo "    Landing Page Reference: ${landing_reference_path}"
-					echo "    Link: ${landing_page_link/.md/.html}"
+					echo "	  Landing Page Reference: ${landing_reference_path}"
+					echo "	  Link: ${landing_page_link/.md/.html}"
 					echo 
 				fi
 			fi
@@ -95,7 +95,7 @@ function check_landing_links {
 }
 
 function check_markdown_links {
-    for markdown_link in $(ag --depth 0 --only-matching "\[.+?\]\(.*?\.md\)" ${article} )
+	for markdown_link in $(ag --depth 0 --only-matching "\[.+?\]\(.*?\.md\)" ${article} )
 	do
 
 		match=$(echo ${markdown_link} | cut -d':' -f3 )
@@ -113,16 +113,16 @@ function check_markdown_links {
 			if [[ -z ${this_file} || ${this_file} != ${article} ]]
 			then this_file=${article}
 				echo "Bad links Found in"
-				echo "    ${article}"
+				echo "	  ${article}"
 			fi
-			echo "        Markdown link: ${link}"
+			echo "		  Markdown link: ${link}"
 			echo 
 		fi
 	done
 }
 
 function check_toc_links {
-    for toc_line in $(ag --depth 0 --only-matching "(?s)toc\:.*^---$" ${article} | ag --nonumbers --nomultiline ".*\.md$" )
+	for toc_line in $(ag --depth 0 --only-matching "(?s)toc\:.*^---$" ${article} | ag --nonumbers --nomultiline ".*\.md$" )
 	do
 		toc_line=$(echo "${toc_line}" | rev | cut -d' ' -f1 | rev)
 
@@ -132,23 +132,23 @@ function check_toc_links {
 		then
 			if [[ -z ${this_file} || ${this_file} != ${article} ]]
 			then
-                this_file=${article}
+				this_file=${article}
 
 				echo "Bad links Found in"
-				echo "    ${article}"
-            fi
+				echo "	  ${article}"
+			fi
 
-			echo "        TOC link: ${toc_line}"
+			echo "		  TOC link: ${toc_line}"
 			echo 
 		fi
-    done
+	done
 }
 
 function main {
-    IFS=$'\n'
+	IFS=$'\n'
 
 	echo
-	echo    "Checking Relative Links in ${1}"
+	echo	"Checking Relative Links in ${1}"
 	echo -e "-----------------------------\n"
 
 	for article_dir in $(find ${1} -name '*.md' -printf '%h\n' | sort -u)

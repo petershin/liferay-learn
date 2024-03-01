@@ -13,11 +13,9 @@ ls () {
 }
 
 function check_grid_links {
-	for grid_url in $(ag --depth 0 --only-matching "\:link\:.*\.md" ${article})
+	for grid_link in $(ag --depth 0 --only-matching "\:link\:.*\.md" ${article})
 	do
-		article=$(echo ${article} | sed 's/\.\///g' )
-
-		match=$(echo ${grid_url} | cut -d':' -f3 )
+		match=$(echo ${grid_link} | cut -d':' -f3 )
 		
 		link=$(echo ${match} | sed 's/\ //g' )
 
@@ -52,8 +50,6 @@ function check_image_paths {
 
 			full_image_path=$(echo "${image_folder/\/ko\//\/en\/}")
 		fi
-
-		article=$(echo ${article} | sed 's/\.\///g' )
 
 		if ! ls "${full_image_path}" || [[ ${image_path} != *"/images/"* ]]
 		then
@@ -111,7 +107,6 @@ function check_markdown_links {
 			return
 		fi
 
-		article=$(echo ${article} | sed 's/\.\///g' )
 		if ! ls "${link}"
 		then
 			if [[ -z ${this_file} || ${this_file} != ${article} ]]
@@ -127,13 +122,11 @@ function check_markdown_links {
 }
 
 function check_toc_links {
-	for toc_line in $(ag --depth 0 --only-matching "(?s)toc\:.*^---$" ${article} | ag --nomultiline --nonumbers ".*\.md$" )
+	for toc_link in $(ag --depth 0 --only-matching "(?s)toc\:.*^---$" ${article} | ag --nomultiline --nonumbers ".*\.md$" )
 	do
-		toc_line=$(echo "${toc_line}" | rev | cut -d' ' -f1 | rev)
+		toc_link=$(echo "${toc_link}" | rev | cut -d' ' -f1 | rev)
 
-		article=$(echo ${article} | sed 's/\.\///g' )
-
-		if ! ls "${toc_line}"
+		if ! ls "${toc_link}"
 		then
 			if [[ -z ${this_file} || ${this_file} != ${article} ]]
 			then
@@ -143,7 +136,7 @@ function check_toc_links {
 				echo "	  ${article}"
 			fi
 
-			echo "		  TOC link: ${toc_line}"
+			echo "		  TOC link: ${toc_link}"
 			echo
 		fi
 	done
@@ -162,6 +155,8 @@ function main {
 		
 		for article in $(find . -maxdepth 1 -name "*.md")
 		do
+			article=$(echo ${article} | sed 's/\.\///g' )
+
 			check_grid_links
 			check_image_paths
 			check_landing_links

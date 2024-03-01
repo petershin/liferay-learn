@@ -2,9 +2,9 @@ package com.acme.x7y2.web.internal.portlet;
 
 import com.acme.x7y2.web.internal.configuration.X7Y2PortletInstanceConfiguration;
 
+import com.liferay.portal.configuration.module.configuration.ConfigurationProvider;
 import com.liferay.portal.kernel.module.configuration.ConfigurationException;
 import com.liferay.portal.kernel.portlet.bridges.mvc.MVCPortlet;
-import com.liferay.portal.kernel.theme.PortletDisplay;
 import com.liferay.portal.kernel.theme.ThemeDisplay;
 import com.liferay.portal.kernel.util.WebKeys;
 
@@ -16,6 +16,7 @@ import javax.portlet.RenderRequest;
 import javax.portlet.RenderResponse;
 
 import org.osgi.service.component.annotations.Component;
+import org.osgi.service.component.annotations.Reference;
 
 @Component(
 	configurationPid = "com.acme.x7y2.web.internal.configuration.X7Y2PortletInstanceConfiguration",
@@ -49,15 +50,16 @@ public class X7Y2Portlet extends MVCPortlet {
 		ThemeDisplay themeDisplay = (ThemeDisplay)renderRequest.getAttribute(
 			WebKeys.THEME_DISPLAY);
 
-		PortletDisplay portletDisplay = themeDisplay.getPortletDisplay();
-
 		try {
-			return portletDisplay.getPortletInstanceConfiguration(
-				X7Y2PortletInstanceConfiguration.class);
+			return _configurationProvider.getPortletInstanceConfiguration(
+				X7Y2PortletInstanceConfiguration.class, themeDisplay);
 		}
 		catch (ConfigurationException configurationException) {
 			throw new PortletException(configurationException);
 		}
 	}
+
+	@Reference
+	private ConfigurationProvider _configurationProvider;
 
 }

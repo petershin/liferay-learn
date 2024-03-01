@@ -1,9 +1,9 @@
 ---
 toc:
-- ./tuning-security-settings/authentication.md
-- ./tuning-security-settings/securing-web-services.md
-- ./tuning-security-settings/authorizing-and-single-sign-on.md
-- ./tuning-security-settings/managing-antisamy.md
+- ./security/authentication.md
+- ./sescurity/securing-web-services.md
+- ./security/authorizing-and-single-sign-on.md
+- ./security/managing-antisamy.md
 uuid: b3acd179-59d4-4676-956e-4dbd5ce5519a
 ---
 # Security
@@ -29,4 +29,4 @@ These topics give you a tour through many of Liferay's security features. To lea
 
 Ready?
 
-[Let's Go!](./tuning-security-settings/authentication.md)
+[Let's Go!](./security/authentication.md)

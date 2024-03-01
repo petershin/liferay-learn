@@ -3,9 +3,9 @@ uuid: 9fdd050d-28b6-46a5-af49-e864e4a35553
 ---
 # Modeling B2B Relationships with Liferay Accounts
 
-We've set up Clarity's internal users with the right roles and permissions. We now turn our attention to Clarity's business to business (B2B) customers. The Liferay Accounts feature can be used to represent external entities. For example, Liferay accounts can model a business to consumer (B2C) context in which a customer is a single user. Accounts can also model a B2B context where a customer represents an external company with multiple users.
+We've set up Clarity's internal users with the right roles and permissions. We now turn our attention to Clarity's business to business (B2B) customers. The Liferay accounts feature can be used to represent external entities. For example, Liferay accounts can model a business to consumer (B2C) context in which a customer is a single user. Accounts can also model a B2B context where a customer represents an external company with multiple users. 
 
-Clarity wants to provide login access to their different B2B partners. They can use Liferay account to do this. In our demonstration, Clarity has a B2B partner called Opportune Optics that has stores across the country. See a summary in the table below:
+Clarity wants to provide login access to their different B2B partners. They can use Liferay account to do this. And just like Clarity team members, Liferay account users can also receive roles with different Liferay permissions. In our example, Clarity has a B2B partner called Opportune Optics that has stores across the country. See a summary in the table below of different users:
 
 | Name | Account | Account Group | Role | Organization |
 |:--- |:--- |:--- |:--- |:--- |
@@ -58,13 +58,16 @@ Use account groups to keep accounts organized. For example, since Opportune Opti
 
 ### Associating an Organization
 
-As Opportune Optics represents a large number of accounts, it makes sense for Clarity to assign a dedicated B2B account manager to all the accounts. The account manager role has permissions such as adding items to an account's shopping cart or submitting an order on behalf of an account. This role is available through Liferay organizations. This again is a time-saver for Clarity as it means they can help Opportune Optics fulfill orders quickly.
+As Opportune Optics represents a large number of accounts, it makes sense for Clarity to assign a dedicated B2B account manager to all the accounts. The account manager role has permissions such as adding items to an account's shopping cart or submitting an order on behalf of an account. The role is available through Liferay organizations. This again is a time-saver for Clarity as it means the account manager can help Opportune Optics with order management and fulfillment.
 
 1. Navigate to _Control Panel_ &rarr; _Accounts_. Click on _Opportune Optics NY_ and click the _Organizations_ tab. Click the add icon.
 
-1. Assign the account to the _Opportune Optics_ organization. Note, this organization was already created with the sample Clarity site. If you do not have this organization, create it from within the Liferay UI.
+1. Assign the account to the _Opportune Optics_ organization. 
 
    ![Assign the account to the organization.](./modeling-b2b-relationships-with-liferay-accounts/images/04.png)
+
+   !!! note
+      This organization was already created with the sample Clarity site. If you do not have this organization, create it from within the Liferay UI.
 
 1. In the same way, assign _Opportune Optics SF_ to the _Opportune Optics_ organization.
 
@@ -74,7 +77,7 @@ As Opportune Optics represents a large number of accounts, it makes sense for Cl
 
 1. Finally, click on _Roles_. Click _Select_ next to organization roles. Click _Choose_ next to account manager. Scroll to the bottom and click _Save_. Lily is now the account manager for the Opportune Optics organization. She has the permissions now to view and submit orders for Opportune Optics.
 
-To learn more about Liferay accounts and modeling B2B relationships, see our official documentation about [accounts](https://learn.liferay.com/w/dxp/users-and-permissions/accounts)
+To learn more about Liferay accounts and modeling B2B relationships, see our official documentation about [accounts](https://learn.liferay.com/w/dxp/users-and-permissions/accounts).
 
 Congratulations! You've completed Module 5 - Users and Permissions.
 

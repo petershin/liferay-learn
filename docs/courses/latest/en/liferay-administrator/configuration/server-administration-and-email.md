@@ -59,7 +59,7 @@ In real life, you'd already have a mail server for Liferay to use. Here, you'll 
 
    Click _Save_.
 
-1. Navigate to _Global Menu_ (![Global Menu](../../images/icon-aplications-menu.png)) &rarr; _Control Panel_ &rarr; _Users and Organizations_. Click _Add User_ (![Add icon](../../images/icn-add.png)).
+1. Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Users and Organizations_. Click _Add User_ (![Add icon](../../images/icon-add.png)).
 
 1. Enter the following account information:
 

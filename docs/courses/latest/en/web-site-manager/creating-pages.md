@@ -60,4 +60,4 @@ Clarity wants a [search page](https://learn.liferay.com/en/w/dxp/using-search/se
 
 Ready to build this?
 
-[Let's Go!](./creatingpages/importing-fragments-and-resources.md)
+[Let's Go!](./creating-pages/importing-fragments-and-resources.md)

@@ -36,11 +36,3 @@ By using data sets and views, you have more control over your data. Whether you'
 Take your data sets even further by integrating them with [experiences](../site-building/personalizing-site-experience/experience-personalization/creating-and-managing-experiences.md) and [segments](../site-building/personalizing-site-experience/segmentation/creating-and-managing-user-segments.md), so you can deliver exactly the right content to the right people at the right time.
 
 ![Create different views for each data set and show different information to different audiences.](./data-sets/images/02.png)
-
-```{raw} html
-:file: ../landingpage_template.html
-```
-
-```{raw} html
-:file: data-sets/landing.html
-```

@@ -1,9 +1,12 @@
 ---
+toc:
+- ./module-5-users-and-permissions/managing-and-organizing-clarity-users.md
+- ./module-5-users-and-permissions/modeling-b2b-relationships-with-liferay-accounts.md
 uuid: 36dd306c-d71e-4606-95c2-da8acea64686
 ---
 # Module 5: Users & Permissions
 
-In the previous module, we saw Clarity bring over their users from Okta. In this module, we’re going to learn best practices for how to use Liferay features to manage and permission these new Liferay users so that they can access and do everything they need to, and nothing they shouldn’t.
+In the previous module, we saw Clarity bring over their team members through Okta, along with the user groups they belong to. In this module, we’re going to learn best practices for how to use Liferay features to manage and permission these new Liferay users so that they can access and do everything they need to, and nothing they shouldn’t.
 
 Having access based on role and permissions is not just about access content - it’s about access and visibility into functionality, content creation, sensitive information, and more.
 

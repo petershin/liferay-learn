@@ -3,74 +3,67 @@ uuid: f548210b-6113-4205-ac28-23451ed61e43
 ---
 # Managing and Organizing Clarity Users
 
-Clarity Vision Solutions team members were provisioned through Okta and have already logged into Liferay, but their roles and permissions have not been set yet. Liferay's out-of-the-box features are designed to help us manage and grant permissions to all of these users based on their relationship to Clarity and the responsibilities they have on the new site. Let’s start by looking at Clarity’s internal users.
+Clarity team members were provisioned through Okta and have already logged into Liferay, but their roles and permissions have not been set yet. Liferay's out-of-the-box features are designed to help you manage and grant permissions to all of these users based on their role in Clarity and the responsibilities they have on the new site.
 
 At Clarity, each group has different responsibilities in developing the new enterprise website. Let’s look at Clarity's users, their respective role and group memberships, and their assigned responsibilities for the new site.
 
-| Name             | Role                          | Group                                 | Responsibility                                                                                                                 |
-|:-----------------|:------------------------------|:--------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------|
-| Ian Miller       | IT Manager                    | Info Tech                             | Ensures efficient operation of IT infrastructure by aligning technology strategy with organizational objectives.               |
-| Walter Douglas   | Web Developer                 | Info Tech                             | Ensures functionality, security, and performance of Clarity's website by designing, building, and maintaining it.              |
-| Clara Murphy     | Marketing Content Manager     | Marketing Manager/Content Contributor | Creates and implements content strategies to attract and engage visitors, driving brand awareness and conversions.             |
-| Christian Carter | Marketing Content Contributor | Content Contributor                   | Supports marketing initiatives by creating high-quality content like blog posts and product descriptions.                      |
-| Harper Roberts   | HR Content Contributor        | Content Contributor                   | Develops and maintains career page content and job descriptions with the aim of attracting and informing potential candidates. |
+| Name | Role | User Group | Responsibility|
+|:---|:---|:---|:---|
+| Ian Miller | IT Manager | IT | Ensures efficient operation of IT infrastructure by aligning technology strategy with organizational objectives. |
+| Walter Douglas | Web Developer | IT | Ensures functionality, security, and performance of Clarity's website by designing, building, and maintaining it. |
+| Clara Murphy | Marketing Content Manager | Content Manager | Creates and implements content strategies to attract and engage visitors, driving brand awareness and conversions. |
+| Christian Carter | Marketing Content Contributor | Content Creator | Supports marketing initiatives by creating high-quality content like blog posts and product descriptions. |
+| Harper Roberts | HR Content Contributor | Content Creator | Develops and maintains career page content and job descriptions with the aim of attracting and informing potential candidates. |
 
 ## Structuring Your Organization through User Groups
 
 !!! important
     Deciding how to group and assign permissions to users is a key decision point as you build out your enterprise website. Using Liferay's user groups feature to model your organization’s structure and responsibilities on the new site is the recommended approach in this situation.
 
-One of Clarity's goals is to improve their user experience, and apply personalized experiences for its users. In this case, user groups can be leveraged alongside permissions to customize experiences for different users in Liferay. A user group is a collection of users created for a specific purpose. To effectively manage and assign permissions to users in Liferay, it's recommended to assign roles to user groups.
+In Liferay, permissions are assigned to roles, as opposed to being assigned to individuals. Liferay provides [out-of-the-box roles](https://learn.liferay.com/en/w/dxp/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions) that come by default. Custom roles can also be created with your choice of permissions to fit your business. These Liferay roles are then assigned to individuals.
 
-As Clarity brings their team members into Liferay, they need to assign roles to each person so that they have the proper permissions. Liferay manages permissions and access to the system, features, and content by assigning permissions to roles. Roles refer to the responsibilities, and expectations associated with a particular job in Clarity. The roles that are relevant to this exercise are the five mentioned on the previous table. You can learn more about the out-of-the-box roles [here](https://learn.liferay.com/en/w/dxp/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions).
-
-Let’s walk through an example of this.
+To increase efficiency, roles can also be assigned to entire user groups. One of Clarity's goals is to improve their user experience and apply personalized experiences for its users. Therefore, Clarity can leverage their existing groupings from Okta and assign custom roles to different user groups in Liferay. Let’s walk through an example of this.
 
 ### Exercise 1
 
-Clara Murphy is Clarity’s marketing content manager. Clara needs access to all of Clarity’s public facing pages as well as Clarity’s blog. As the manager, she also needs the ability to grant access to new marketing team members. Let’s walk through giving Clara and her user group the permissions they need.
+The content creator user group requires permissions to edit site pages as well as add blog posts. Let's create the custom role and assign it to the user group.
 
-1. Navigate to _Control Panel_ &rarr; _Users & Organizations_, and click on Clara's name.
+1. Navigate to _Control Panel_ &rarr; _Roles_. Under the _Regular Roles_ tab, click the add icon.
 
-1. In the left navigation, click on _Memberships_.
+1. Input `Content Creator` as the title of the new role. Click _Save_. 
 
-1. Click _Select_ on the User Groups section.
+1. Click the _Define Permissions_ tab. In the left navigation, expand _Site and Asset Library Administration_ and click _Site Builder_ &rarr; _Pages_. Scroll down to the _Page_ section and check the _Update_ checkbox. Scroll down to the bottom and click _Save_. 
 
-1. Choose the _Marketing Manager_ and the _Content Contributor_ user groups. Click _Save_.
+1. Still under the _Site and Asset Library Administration_ menu, click _Content & Data_ &rarr; _Blogs_. Under _Blog Entries_, check the _Add Entry_ checkbox. Under the _Blogs Entry_, check the _Update_ checkbox. Scroll down to the bottom and click _Save_. 
 
-![Add Clara to the Margeting Manager and Content Contributor user groups](./managing-and-organizing-clarity-users/images/01.png)
+1. The summary of the permissions under the _Define Permissions_ tab should look like the screenshot below.
 
-Great job! Clara is now part of the Marketing Manager and Content Contributor user groups. Let's give the right permissions to the user groups.
+    ![Set the permissions for the content creator role.](./managing-and-organizing-clarity-users/images/01.png)
 
-1. Navigate to _Control Panel_ &rarr; _Roles_.
+1. Next, click the _Assignees_ tab. Click the _User Groups_ tab. Click the add icon.
 
-1. Click on the options button for _Marketing Content Manager_ role, and select _Edit_.
+1. In the pop-up window, select the content creator user group and click _Add_.
 
-1. Go to the Assignees tab, choose _User Groups_ and add the Marketing Manager user group.
+1. To verify the permissions, navigate to _Control Panel_ &rarr; _Users and Organizations_. Click the options icon for Christian Carter and click _Impersonate User_. Navigate to Clarity's blog page and verify that the user can add a blog entry.
 
-      !!! note
-          From now on, all users assigned to the marketing manager user group will have marketing manager role. You can check this by going to _Control Panel_ &rarr; _Users & Organizations_ &rarr; Clara's user  &rarr; Roles, and check the _Inherited Regular Roles_.
+Well done! Now every team member that is part of the content creator user group now has the correct permissions.
 
-1. Impersonate Clara by navigating to _Control Panel_ &rarr; _Users & Organizations_, and selecting _Impersonate User_ on her options button.
+To learn more about user management in general, see our [documentation](https://learn.liferay.com/w/dxp/users-and-permissions).
 
-Well done! Clara now has the appropriate permissions to manage the marketing team and access the pages and blogs.
+### Bonus Exercise
 
-### Exercise 2
+You've learned how to create a custom role for the content creator user group. 
 
-Now that you've learned how to manage users and how to assign user groups to roles, your next challenge is to assign the other four users to their respective user groups, and each user group to the respective role.
-
-Your final users tab should look like this:
-
-![User and Organizations tab with all users assigned to their user groups](./managing-and-organizing-clarity-users/images/02.png)
+Your next challenge is to create custom roles for Clarity's other roles and assign them to the other user groups.
 
 ## Organizations
 
-Clarity relies on user groups and roles for a significant portion of their user and permission management. However, Liferay offers additional features that can handle more complex use cases, such as organizations and accounts features.
+Clarity relies on user groups and roles for a significant portion of their user and permission management. However, Liferay offers Organizations as an additional user management tool. 
 
-While Clarity is not yet using Liferay's organization features, they will likely need to adopt this powerful feature as their business grows and their site requirements evolve.
+Organizations can be used to model the hierarchy of your company. It is also an important part of managing groups of accounts. In the next article, you'll be adding Lily Lewis, Opportune Optics' Account Manager, to the Opportune Optics organization.
 
-Organizations are used to model the hierarchy of your company, and it is also an important part of managing groups of accounts. In the next article, you'll be adding Lily Lewis, Opportune Optics' Account Manager, to the Opportune Optics organization.
+While Clarity is not yet using Liferay's organization features, they will likely need to adopt this feature as their business grows and their site requirements evolve.
 
 Learn more about organizations [here](https://learn.liferay.com/w/dxp/users-and-permissions/organizations/understanding-organizations).
 
-Next Up: [Modeling B2B Relationships with Liferay Accounts]()
+Next Up: [Modeling B2B Relationships with Liferay Accounts](./modeling-b2b-relationships-with-liferay-accounts.md)

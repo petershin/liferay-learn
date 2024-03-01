@@ -25,6 +25,6 @@ taxonomy-category-names:
 :::
 
 :::{grid-item-card} Troubleshooting Blade CLI
-:link: ./liferay-workspace/blade-cli/troubleshooting-blade-cli.md
+:link: ./blade-cli/troubleshooting-blade-cli.md
 :::
 ::::

@@ -6,7 +6,7 @@ curl \
 			"name": {
 				"en_US": "UAE Dirham"
 			},
-		 "rate": 3.67
+		   "rate": 3.67
 		}' \
 	--header "Content-Type: application/json" \
 	--request "POST" \

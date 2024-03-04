@@ -32,59 +32,59 @@ Once Liferay is running,
    unzip liferay-e6w7.zip
    ```
 
-1. Currencies are scoped to an instance, and each currency must specify a unique `code`. You must also provide a `name` and `rate` to create a currency.
+Currencies are scoped to an instance, and each currency must specify a unique `code`. You must also provide a `name` and `rate` to create a currency.
 
-   Use the cURL script to add a new currency. On the command line, navigate to the `curl` folder. Execute the `Currency_POST_ToInstance.sh` script.
+Use the cURL script to add a new currency. On the command line, navigate to the `curl` folder. Execute the `Currency_POST_ToInstance.sh` script.
 
-   ```bash
-   ./Currency_POST_ToInstance.sh
-   ```
-
-   The JSON response shows a new currency was added:
-
-   ```bash
-   {
-      "active" : false,
-      "code" : "AED",
-      "formatPattern" : {
-         "en_US" : "###,##0.00"
-      },
-      "id" : 35562,
-      "maxFractionDigits" : 2,
-      "minFractionDigits" : 2,
-      "name" : {
-         "en_US" : "UAE Dirham"
-      },
-      "primary" : false,
-      "priority" : 0.0,
-      "rate" : 3.67,
+```bash
+./Currency_POST_ToInstance.sh
+```
+ The JSON response shows a new currency was added:
+ ```json
+{
+   "active" : false,
+   "code" : "AED",
+   "formatPattern" : {
+      "en_US" : "###,##0.00"
+   },
+   "id" : 35562,
+   "maxFractionDigits" : 2,
+   "minFractionDigits" : 2,
+   "name" : {
+      "en_US" : "UAE Dirham"
+   },
+   "primary" : false,
+   "priority" : 0.0,
+   "rate" : 3.67,
       "roundingMode" : "HALF_EVEN",
       "symbol" : ""
    }
-   ```
+```
 
-   The rate field specifies the conversion rate relative to the primary currency. For instance, if your primary currency is United States Dollar (USD) and you're creating UAE Dirham (AED), the rate determines how many dirhams make up a dollar. If you're setting a currency as primary, the rate must be `1.00`.
+The rate field specifies the conversion rate relative to the primary currency. For instance, if your primary currency is United States Dollar (USD) and you're creating UAE Dirham (AED), the rate determines how many dirhams make up a dollar. If you're setting a currency as primary, the rate must be `1.00`.
 
-   The values for `maxFractionDigits` and `minFractionDigits` default to 2. This specifies the decimal precision for the currency.
+The values for `maxFractionDigits` and `minFractionDigits` default to 2. This specifies the decimal precision for the currency.
 
-   The value for `roundingMode` defaults to `HALF_EVEN`. This uses the `java.math.RoundingMode` enum to provide rounding strategies for currencies. You can use the following values for the rounding mode: `UP`, `DOWN`, `CEILING`, `FLOOR`, `HALF_UP`, `HALF_DOWN`, `HALF_EVEN`, and `UNNECESSARY`.
+The value for `roundingMode` defaults to `HALF_EVEN`. This uses the `java.math.RoundingMode` enum to provide rounding strategies for currencies. You can use the following values for the rounding mode: `UP`, `DOWN`, `CEILING`, `FLOOR`, `HALF_UP`, `HALF_DOWN`, `HALF_EVEN`, and `UNNECESSARY`.
 
-   | Rounding Mode | Positive Value | Rounded Value | Negative Value | Rounded Value | Description                                                                                                                          |
-   | :------------ | :------------- | :------------ | :------------- | :------------ | :----------------------------------------------------------------------------------------------------------------------------------- |
-   | `UP`          | `3.14`         | `4`           | `-3.14`        | `-4`          | Rounds towards positive infinity for positive numbers. For negative numbers, `UP` rounds away from 0.                                |
-   | `DOWN`        | `3.14`         | `3`           | `-3.14`        | `-3`          | Rounds towards zero for positive and negative numbers.                                                                               |
-   | `CEILING`     | `3.14`         | `4`           | `-3.14`        | `-3`          | Rounds towards positive infinity for positive numbers. For negative numbers, `CEILING` rounds towards from 0.                        |
-   | `FLOOR`       | `3.14`         | `3`           | `-3.14`        | `-4`          | Rounds towards zero for positive numbers. For negative numbers, `FLOOR` rounds towards from 0.                                       |
-   | `HALF_UP`     | `3.5`          | `4`           | `-3.5`         | `-3`          | Rounds towards the nearest neighbor. If the number is exactly halfway between two neighbors, it rounds up.                           |
-   | `HALF_DOWN`   | `3.5`          | `3`           | `-3.5`         | `-4`          | Rounds towards the nearest neighbor. If the number is exactly halfway between two neighbors, it rounds down.                         |
-   | `HALF_EVEN`   | `2.5`          | `2`           | `-2.5`         | `-2`          | Rounds towards the nearest neighbor. If the number is exactly halfway between two neighbors, it rounds to the nearest even neighbor. |
-   | `UNNECESSARY` | `3.14`         | NA            | `-3.14`        | NA            | Throws an `ArithmeticException` to ensure no rounding occurs.                                                                        |
+| Rounding Mode | Positive Value | Rounded Value | Negative Value | Rounded Value | Description                                                                                                                          |
+| :------------ | :------------- | :------------ | :------------- | :------------ | :----------------------------------------------------------------------------------------------------------------------------------- |
+| `UP`          | `3.14`         | `4`           | `-3.14`        | `-4`          | Rounds towards positive infinity for positive numbers. For negative numbers, `UP` rounds away from 0.                                |
+| `DOWN`        | `3.14`         | `3`           | `-3.14`        | `-3`          | Rounds towards zero for positive and negative numbers.                                                                               |
+| `CEILING`     | `3.14`         | `4`           | `-3.14`        | `-3`          | Rounds towards positive infinity for positive numbers. For negative numbers, `CEILING` rounds towards from 0.                        |
+| `FLOOR`       | `3.14`         | `3`           | `-3.14`        | `-4`          | Rounds towards zero for positive numbers. For negative numbers, `FLOOR` rounds towards from 0.                                       |
+| `HALF_UP`     | `3.5`          | `4`           | `-3.5`         | `-3`          | Rounds towards the nearest neighbor. If the number is exactly halfway between two neighbors, it rounds up.                           |
+| `HALF_DOWN`   | `3.5`          | `3`           | `-3.5`         | `-4`          | Rounds towards the nearest neighbor. If the number is exactly halfway between two neighbors, it rounds down.                         |
+| `HALF_EVEN`   | `2.5`          | `2`           | `-2.5`         | `-2`          | Rounds towards the nearest neighbor. If the number is exactly halfway between two neighbors, it rounds to the nearest even neighbor. |
+| `UNNECESSARY` | `3.14`         | NA            | `-3.14`        | NA            | Throws an `ArithmeticException` to ensure no rounding occurs.                                                                        |
 
-1. To verify the currency addition, open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Currencies*. The new currency appears.
+To verify the currency addition, open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Currencies*. The new currency appears.
 
    ![Confirm that a new currency was added.](./currency-api-basics/images/01.png)
 
-1. Alternatively, call the REST service using the Java client. Navigate into the `java` folder and compile the source files:
+Alternatively, call the REST service using the Java client: 
+
+1. Navigate into the `java` folder and compile the source files:
 
    ```bash
    javac -classpath .:* *.java
@@ -115,7 +115,7 @@ Here are the command's arguments:
 | `--user "test@liferay.com:learn"`                                                 | Enter basic authentication credentials.                  |
 
 !!! note
-   Basic authentication is used here for demonstration purposes. For production, you should authorize users via [OAuth2](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2.html). See [Using OAuth2 to Authorize Users](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2/using-oauth2-to-authorize-users.html) for a sample React application using OAuth2.
+    Basic authentication is used here for demonstration purposes. For production, you should authorize users via [OAuth2](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2.html). See [Using OAuth2 to Authorize Users](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2/using-oauth2-to-authorize-users.html) for a sample React application using OAuth2.
 
 The other cURL commands use similar JSON arguments.
 
@@ -140,12 +140,12 @@ This class invokes the REST service using only three lines of code:
 The project includes the `com.liferay.headless.commerce.admin.catalog.client.jar` file as a dependency. You can find client JAR dependency information for all REST applications in the API Explorer in your installation at `/o/api` (e.g., <http://localhost:8080/o/api>).
 
 !!! note
-   The `main` method's comment demonstrates running the class.
+    The `main` method's comment demonstrates running the class.
 
 The remaining example Java classes call different `CurrencyResource` methods.
 
 !!! important
-   See [CurrencyResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/headless/headless-commerce/headless-commerce-admin-catalog-client/src/main/java/com/liferay/headless/commerce/admin/catalog/client/resource/v1_0/CurrencyResource.java) for service details.
+    See [CurrencyResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/headless/headless-commerce/headless-commerce-admin-catalog-client/src/main/java/com/liferay/headless/commerce/admin/catalog/client/resource/v1_0/CurrencyResource.java) for service details.
 
 Below are examples of calling other `Currency` REST services using cURL and Java.
 

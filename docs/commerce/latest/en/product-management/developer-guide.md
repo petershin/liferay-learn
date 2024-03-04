@@ -1,6 +1,7 @@
 ---
 toc:
   - ./developer-guide/catalog-api-basics.md
+  - ./developer-guide/currency-api-basics.md
   - ./developer-guide/option-api-basics.md
   - ./developer-guide/option-value-api-basics.md
   - ./developer-guide/product-api-basics.md
@@ -23,6 +24,10 @@ taxonomy-category-names:
 
 :::{grid-item-card}  Catalog API Basics
 :link: ./developer-guide/catalog-api-basics.md
+:::
+
+:::{grid-item-card}  Currency API Basics
+:link: ./developer-guide/currency-api-basics.md
 :::
 
 :::{grid-item-card}  Option API Basics

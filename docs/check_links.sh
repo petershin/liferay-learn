@@ -95,9 +95,9 @@ function check_landing_links {
 }
 
 function check_markdown_links {
-	for markdown_link in $(ag --depth 0 --only-matching "\[.*?\]\(.*?\.md\)" ${article} )
+	for markdown_link in $(ag --depth 0 --only-matching '\[.*\]\((?!http).*\.md.*\).*' ${article} )
 	do
-		link=$(echo ${markdown_link} | sed 's/.*\](\(.*\.md\).*)/\1/g' )
+		link=$(echo ${markdown_link} | sed 's/.*\](\(.*\.md\).*).*/\1/g' )
 
 		if ! ls "${link}"
 		then

@@ -134,13 +134,13 @@ The Index Writer Helper entry contains one entry:
 ### Indexer Registry
 
 !!! note
-    For Liferay 7.4 Update/GA31+, the Indexer Registry configuration isn't available in the System Settings UI. It must be configured with a `.config` file.
+    For Liferay 7.4 Update/GA31+, the Indexer Registry configuration isn't available in the System Settings UI. You must configure it with a `.config` file.
 
 **Configuration File:** `com.liferay.portal.search.configuration.IndexerRegistryConfiguration.config`
 
 Configure the buffering of index requests:
 
-**`buffered`**: Enable (the default) or disable the buffering of indexing requests. It's not recommended to disable buffering: more requests to Elasticsearch must be made, and index changes will not be rolled back when the database is rolled back.
+**`buffered`**: Enable (the default) or disable the buffering of indexing requests. Disabling buffering is not recommended: more requests to Elasticsearch must be made, and index changes will not be rolled back when the database is rolled back.
 
 **`bufferedExecutionMode`**: Allow administrators to select a different `IndexerRequestBufferExecutor`, used to execute a `IndexerRequest`. One implementation of the executor is provided out of the box (_DEFAULT_). When a new `IndexerRequestBufferExecutor` implementation is deployed, one of the required properties is a `buffered.execution.mode`. This value can then be used in place of _DEFAULT_.
 
@@ -165,7 +165,7 @@ This entry has one repeatable property (use array syntax if you're defining via 
 **`indexingBatchSizes`**: Set the number of documents (the default value is 1000) indexed per batch for model types that support batch indexing. For models with large documents, decreasing this value may improve stability when executing a full re-index.
 
 !!! important
-To configure indexing batch size for web content articles, the model you specify depends on a setting in web content itself. If `indexAllArticleVersionsEnabled` is `true` in System Settings &rarr; Content & Data &rarr; Web Content &rarr; Web Content (virtual instance scope), you must set `com.liferay.journal.model.JournalArticle==[size]`. If disabled, use `com.liferay.journal.model.JournalArticleResource=[size]`.
+To configure indexing batch size for web content articles, the model to specify depends on a Web Content setting. If `indexAllArticleVersionsEnabled` is `true` in System Settings &rarr; Content & Data &rarr; Web Content &rarr; Web Content (virtual instance scope), you must set `com.liferay.journal.model.JournalArticle==[size]`. If disabled, use `com.liferay.journal.model.JournalArticleResource=[size]`.
 
 ### Engine Helper
 

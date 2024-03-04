@@ -6,13 +6,14 @@ taxonomy-category-names:
 - Liferay PaaS
 - Liferay SaaS
 uuid: 8068b0aa-71c6-4041-bf2d-cf5816f6616e
+
 ---
 # Sorting Search Results
 
 Search results displayed in the [Search Results](./search-results.md) widget are ordered by [relevance score](./search-results.md#search-results-relevance) (as calculated by the [search engine](https://www.elastic.co/guide/en/elasticsearch/guide/master/scoring-theory.html)) by default. With the Sort widget, users can control the order of returned results.
 
 !!! warning
-    [Search Blueprints](../../liferay-enterprise-search/search-experiences/search-blueprints.md) can also add sort configurations to the search page. Make sure you understand [how these blueprint-added sorts interact](../../liferay-enterprise-search/search-experiences/search-blueprints/sorting-results-in-a-search-blueprint.md#search-blueprints-versus-the-sort-widget) with the Sort widget's configuration.
+    [Search Blueprints](../../liferay-enterprise-search/search-experiences/search-blueprints.md) can also add sorting to the search page. Make sure you understand [how these blueprint-added sorts interact](../../liferay-enterprise-search/search-experiences/search-blueprints/sorting-results-in-a-search-blueprint.md#search-blueprints-versus-the-sort-widget) with the Sort widget's configuration.
 
 Add the widget to a [Search Page](../working-with-search-pages/search-pages.md) to begin sorting results.
 

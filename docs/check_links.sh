@@ -13,7 +13,7 @@ ls () {
 }
 
 function check_grid_links {
-	for grid_link in $(ag --depth 0 --only-matching "\:link\:.*\.md" ${article})
+	for grid_link in $(ag --only-matching "\:link\:.*\.md" ${article})
 	do
 		match=$(echo ${grid_link} | cut -d':' -f3 )
 		
@@ -36,7 +36,7 @@ function check_grid_links {
 }
 
 function check_image_paths {
-	for image_path in $(ag --depth 0 --only-matching "\[.+?\]\(.*?\.(png|gif|jpg)\)" ${article})
+	for image_path in $(ag --only-matching "\[.+?\]\(.*?\.(png|gif|jpg)\)" ${article})
 	do
 		image_path=$(echo ${image_path} | sed 's/\[.*\](\(.*\.\(png\|jpg\|gif\)\).*)/\1/g' )
 
@@ -68,7 +68,7 @@ function check_image_paths {
 }
 
 function check_landing_links {
-	for landing_reference in $(ag --depth 0 --no-filename --no-numbers "\:file\:.*landing\.html" ${article} )
+	for landing_reference in $(ag --no-filename --no-numbers "\:file\:.*landing\.html" ${article} )
 	do
 		landing_reference_path=$(echo ${landing_reference} | sed 's/\:file\://g' | sed 's/\ //g' )
 		for landing_page_link in $(ag --no-filename "url\:" ${landing_reference_path})
@@ -95,26 +95,33 @@ function check_landing_links {
 }
 
 function check_markdown_links {
-	for markdown_link in $(ag --depth 0 --only-matching '\[.*\]\((?!http).*\.md.*\).*' ${article} )
+	for markdown_match in $(ag --only-matching '\[.*\]\((?!http).*\.md.*\).*' ${article} )
 	do
-		link=$(echo ${markdown_link} | sed 's/.*\](\(.*\.md\).*).*/\1/g' )
+		links=$(echo ${markdown_match} | sed -e 's/\.md)/\.md)\n/g' | sed 's/.*\](\(.*\.md\).*).*/\1/g' )
 
-		if ! ls "${link}"
-		then
-			if [[ -z ${this_file} || ${this_file} != ${article} ]]
-			then this_file=${article}
-				echo "Bad links Found in"
-				echo "	  ${article}"
+		for link in ${links}
+		do
+
+			if [[ ${link} == *".md" ]]
+			then
+				if ! ls "${link}"
+				then
+					if [[ -z ${this_file} || ${this_file} != ${article} ]]
+					then this_file=${article}
+						echo "Bad links Found in"
+						echo "	  ${article}"
+					fi
+
+					echo "		  Markdown link: ${link}"
+					echo
+				fi
 			fi
-
-			echo "		  Markdown link: ${link}"
-			echo
-		fi
+		done
 	done
 }
 
 function check_toc_links {
-	for toc_link in $(ag --depth 0 --only-matching "(?s)toc\:.*^---$" ${article} | ag --nomultiline --nonumbers ".*\.md$" )
+	for toc_link in $(ag --only-matching "(?s)toc\:.*^---$" ${article} | ag --nomultiline --nonumbers ".*\.md$" )
 	do
 		toc_link=$(echo "${toc_link}" | rev | cut -d' ' -f1 | rev)
 

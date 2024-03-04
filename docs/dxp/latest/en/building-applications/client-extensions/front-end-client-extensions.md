@@ -22,7 +22,6 @@ taxonomy-category-names:
 {bdg-primary}`Liferay Self-Hosted`
 {bdg-primary}`Liferay SaaS`
 {bdg-warning}`Liferay PaaS`
-
 {bdg-secondary}`Liferay 7.4`
 
 Front-end client extensions augment your pages and integrate new functionality. Available types include CSS, JavaScript, Theme CSS, Theme Favicon, Custom Element, and IFrame.
@@ -31,9 +30,8 @@ You can create and deploy these extensions from your [Liferay Workspace](../tool
 
 See [Understanding Custom Element and IFrame Client Extensions](./front-end-client-extensions/understanding-custom-element-and-iframe-client-extensions.md) to learn more about creating [custom element](#custom-element-client-extensions) and [IFrame](#iframe-client-extensions) client extensions.
 
-```{note}
-You can add JavaScript, CSS, or Theme CSS client extensions to layout sets (i.e., page sets), master templates, page templates, and individual content pages. The level at which you add the extension determines which entities inherit the extension's code. For example, if you add extensions to a master template, all page templates and content pages using the master template inherit its extensions.
-```
+!!! note
+    You can add JavaScript, CSS, or Theme CSS client extensions to layout sets (i.e., page sets), master templates, page templates, and individual content pages. The level at which you add the extension determines which entities inherit the extension's code. For example, if you add extensions to a master template, all page templates and content pages using the master template inherit its extensions.
 
 ## JavaScript Client Extensions
 
@@ -67,11 +65,10 @@ You can add this type of client extension as an option from *Client Extensions* 
 
 ![Add a theme CSS client extension to replace CSS provided by your site's theme.](./front-end-client-extensions/images/01.png)
 
-```{note}
-The `clay.css` and `main.css` files must be hosted remotely to use this type of client extension.
+!!! note
+    The `clay.css` and `main.css` files must be hosted remotely to use this type of client extension.
 
-As this client extension fully replaces the default CSS contained in the theme, make sure to provide [Clay styling](https://clayui.com/docs/css/index.html) for any out-of-the-box widgets that are used by Liferay. Alternatively, to fix the styling of a particular Liferay widget, wrap the widget in a container that includes the `cadmin` CSS class under the container element's Advanced tab.
-```
+    As this client extension fully replaces the default CSS contained in the theme, make sure to provide [Clay styling](https://clayui.com/docs/css/index.html) for any out-of-the-box widgets that are used by Liferay. Alternatively, to fix the styling of a particular Liferay widget, wrap the widget in a container that includes the `cadmin` CSS class under the container element's Advanced tab.
 
 Specify a Theme CSS client extension in your `client-extension.yaml` file:
 
@@ -124,6 +121,18 @@ type: iframe
 ```
 
 See [Understanding Custom Element and IFrame Client Extensions](./front-end-client-extensions/understanding-custom-element-and-iframe-client-extensions.md) for more information.
+
+## Editor Config Contributor Client Extensions
+
+{bdg-secondary}`Liferay DXP 2024.Q1+/Portal 7.4 GA112+`
+
+Editor Config Contributor client extensions override existing CKEditor customization in a `ConfigContributor.java` file. Configuration options of the client extension must match the `ConfigContributor` it's overriding (portlet names, editor names, and editor config keys).
+
+Specify an Editor Config Contributor client extension in your `client-extension.yaml` file:
+
+```yaml
+type: editorConfigContributor
+```
 
 ## Front-end Client Extension Properties
 

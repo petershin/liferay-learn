@@ -153,10 +153,8 @@ function main {
 	do
 		pushd ${article_dir}
 		
-		for article in $(find . -maxdepth 1 -name "*.md")
+		for article in $(find . -maxdepth 1 -name "*.md" -printf '%f\n')
 		do
-			article=$(echo ${article} | sed 's/\.\///g' )
-
 			check_grid_links
 			check_image_paths
 			check_landing_links

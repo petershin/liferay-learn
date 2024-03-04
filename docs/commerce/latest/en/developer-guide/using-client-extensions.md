@@ -34,7 +34,7 @@ A client extension interfaces with Liferay's APIs. This loose coupling makes cli
 :::
 
 :::{grid-item-card}  Using the Shipping Engine Client Extension
-:link: ./using-client-extensions/using-the-shipping-client-extension.md
+:link: ./using-client-extensions/using-the-shipping-engine-client-extension.md
 :::
 
 :::{grid-item-card}  Checkout Step Client Extension Reference

@@ -75,6 +75,8 @@ See [Tags and Categories](../tags-and-categories.md) documentation for more info
 
 ## Categories and Vocabulary
 
+{bdg-secondary}`Liferay DXP 2024.Q1+/Portal 7.4 GA112+`
+
 When creating a vocabulary within an asset library, some additional configurations for [categories and vocabularies](../tags-and-categories/defining-categories-and-vocabularies-for-content.md) are available:
 
 1. Open the *Global Menu* (![Applications Menu](../../images/icon-applications-menu.png)), go to the *Applications* tab, and select *Asset Libraries* under Content.

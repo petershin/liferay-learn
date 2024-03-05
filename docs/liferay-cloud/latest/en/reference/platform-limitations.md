@@ -1,6 +1,5 @@
 ---
 taxonomy-category-names:
-- Cloud
 - Cloud Platform Administration
 - Reference
 - Liferay PaaS

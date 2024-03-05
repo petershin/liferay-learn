@@ -16,7 +16,7 @@ Liferay Objects provides the Model Builder GUI for designing complex object stru
 ![Use the Model Builder GUI to design complex data structures.](./using-the-objects-model-builder/images/01.png)
 
 !!! note 
-    For Liferay 7.4 2023.Q4+/GA102+, you must also have the *Object Folder > View* permissions to access the Objects UI. See [Objects Application Permissions](../objects-application-permissions.md) for more information.
+    For Liferay 7.4 2023.Q4+/GA102+, you must have *Object Folder > View* permissions to access the Objects UI. See [Objects Application Permissions](../objects-application-permissions.md) for more information.
 
 To access the Model Builder view,
 
@@ -53,9 +53,9 @@ Once saved, the draft definition appears in the center diagram area. You can cli
 
 ![Click an object card to access configuration options.](./using-the-objects-model-builder/images/04.png)
 
-Here you can edit its details, enable integrations, and configure additional features (e.g., categorization, draft mode). <!--TASK: See [Configuring Object Definitions]() for more information on available options.-->
+In the side panel, you can edit the object's details, enable integrations, and configure additional features (e.g., categorization, draft mode).
 
-You can also add fields and relationships to object definitions. However, you must use the default Objects view to add [validations](./validations.md), [actions](./actions.md), [views](./views.md), [layouts](./layouts.md), and [states](./fields/adding-and-managing-custom-states.md).
+You can also add fields and relationships to object definitions. However, some configurations cannot be added from the model builder view. [Validations](./validations.md), [actions](./actions.md), [views](./views.md), [layouts](./layouts.md), and [states](./fields/adding-and-managing-custom-states.md) must be added from the object's page view. To access the page view from the model builder view, click *Actions* (![Actions](../../../images/icon-actions.png)) &rarr; *Edit in page view* in the object card.
 
 ### Adding Data Fields
 
@@ -97,7 +97,7 @@ The field is added immediately to the definition. By default, object cards displ
 
 1. Click *Save*.
 
-Once saved, the diagram area visualizes the logical connection between object definitions and distinguishes between one-to-many and many-to-many relationships. Additionally, you can select a relationship to access configuration options in the right side panel.
+Once saved, the diagram area visualizes the logical connection between object definitions and distinguishes between one-to-many and many-to-many relationships. Click a relationship connector to access configuration options in the right side panel.
 
 ![Select a relationship to access its configuration options in the right side panel.](./using-the-objects-model-builder/images/08.png)
 
@@ -125,6 +125,7 @@ You can access additional management options by clicking Actions (![Actions Butt
 
 * Edit in Page View: Switch to the default Objects UI.
 * Edit ERC: Update the object's external reference code (ERC).
+* Export as JSON: [Download](./exporting-and-importing-object-definitions.md) the JSON object definition.
 * Manage Permissions: Determine which roles can [act on the object](../objects-application-permissions.md#actions-on-database-entities).
 * Delete Object: [Delete](./deleting-objects.md) the object definition.
 

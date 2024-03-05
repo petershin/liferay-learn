@@ -100,17 +100,17 @@ public class Main {
 	}
 
 	public Main(Properties tokenProperties) throws Exception {
-		File learnBaseDirFile = new File("..");
+		File repositoryBaseDirFile = new File("..");
 
-		_learnBaseDirName = learnBaseDirFile.getCanonicalPath();
+		_repositoryBaseDirName = repositoryBaseDirFile.getCanonicalPath();
 
-		File learnDocsDirFile = new File("../docs");
+		File repositoryDocsDirFile = new File("../docs");
 
-		_learnDocsDirName = learnDocsDirFile.getCanonicalPath();
+		_repositoryDocsDirName = repositoryDocsDirFile.getCanonicalPath();
 
-		File learnSiteDirFile = new File("../site");
+		File repositorySiteDirFile = new File("../site");
 
-		_learnSiteDirName = learnSiteDirFile.getCanonicalPath();
+		_repositorySiteDirName = repositorySiteDirFile.getCanonicalPath();
 
 		String liferayLearnResourceDomain = System.getenv(
 			"LIFERAY_LEARN_RESOURCE_DOMAIN");
@@ -134,8 +134,8 @@ public class Main {
 			}
 		}
 
-		_initDiffFileNames(learnBaseDirFile);
-		_initFileNames(_learnDocsDirName);
+		_initDiffFileNames(repositoryBaseDirFile);
+		_initFileNames(_repositoryDocsDirName);
 		_initFlexmark();
 	}
 
@@ -152,7 +152,7 @@ public class Main {
 
 				if (!_diffFileNames.isEmpty() &&
 					!_diffFileNames.contains(
-						fileName.replace(_learnBaseDirName, ""))) {
+						fileName.replace(_repositoryBaseDirName, ""))) {
 
 					System.out.println("Skipped: " + fileName);
 
@@ -173,10 +173,10 @@ public class Main {
 
 				String parentFileDir = file.getParent(
 				).replaceFirst(
-					_learnDocsDirName, ""
+					_repositoryDocsDirName, ""
 				);
 
-				String htmlFileDir = _learnSiteDirName + parentFileDir;
+				String htmlFileDir = _repositorySiteDirName + parentFileDir;
 
 				File htmlFile = new File(htmlFileDir, htmlFileName);
 
@@ -394,7 +394,7 @@ public class Main {
 	}
 
 	private void _initLatestHash() throws Exception {
-		File file = new File(_learnBaseDirName, ".latest_hash");
+		File file = new File(_repositoryBaseDirName, ".latest_hash");
 
 		if (file.exists()) {
 			_latestHash = Files.readString(file.toPath());
@@ -494,7 +494,7 @@ public class Main {
 
 		if (includeFileName.startsWith(File.separator)) {
 			String dirName = markdownFileName.substring(
-				_learnDocsDirName.length() + 1);
+				_repositoryDocsDirName.length() + 1);
 
 			String[] dirNameParts = StringUtil.split(
 				dirName, File.separatorChar);
@@ -505,7 +505,7 @@ public class Main {
 
 			StringBuilder sb = new StringBuilder();
 
-			sb.append(_learnDocsDirName);
+			sb.append(_repositoryDocsDirName);
 			sb.append(File.separator);
 			sb.append(dirNameParts[0]);
 			sb.append(File.separator);
@@ -894,7 +894,7 @@ public class Main {
 		image.setUrl(
 			BasedSequence.of(
 				_liferayLearnResourceDomain + "/images" +
-					filePathString.substring(_learnDocsDirName.length())));
+					filePathString.substring(_repositoryDocsDirName.length())));
 
 		_nodeVisitor.visitChildren(image);
 	}
@@ -911,7 +911,7 @@ public class Main {
 				String markdownFilePathString = _markdownFile.getParent();
 
 				String dirName = markdownFilePathString.substring(
-					_learnDocsDirName.length());
+					_repositoryDocsDirName.length());
 
 				link.setUrl(
 					BasedSequence.of(
@@ -936,7 +936,7 @@ public class Main {
 		String markdownFileName = markdownFile.getCanonicalPath();
 
 		markdownFileName = markdownFileName.substring(
-			_learnDocsDirName.length());
+			_repositoryDocsDirName.length());
 
 		File file = new File(dirName + markdownFileName);
 
@@ -959,9 +959,9 @@ public class Main {
 	private final Set<String> _fileNames = new TreeSet<>();
 	private final Set<File> _landingPageFiles = new HashSet<>();
 	private String _latestHash;
-	private final String _learnBaseDirName;
-	private final String _learnDocsDirName;
-	private final String _learnSiteDirName;
+	private final String _repositoryBaseDirName;
+	private final String _repositoryDocsDirName;
+	private final String _repositorySiteDirName;
 	private String _liferayLearnResourceDomain;
 	private File _markdownFile;
 

@@ -959,9 +959,6 @@ public class Main {
 	private final Set<String> _fileNames = new TreeSet<>();
 	private final Set<File> _landingPageFiles = new HashSet<>();
 	private String _latestHash;
-	private final String _repositoryBaseDirName;
-	private final String _repositoryDocsDirName;
-	private final String _repositorySiteDirName;
 	private String _liferayLearnResourceDomain;
 	private File _markdownFile;
 
@@ -996,6 +993,9 @@ public class Main {
 
 	private Parser _parser;
 	private HtmlRenderer _renderer;
+	private final String _repositoryBaseDirName;
+	private final String _repositoryDocsDirName;
+	private final String _repositorySiteDirName;
 	private Map<String, String> _tokens = new HashMap<>();
 	private final List<String> _warningMessages = new ArrayList<>();
 	private final Yaml _yaml = new Yaml();

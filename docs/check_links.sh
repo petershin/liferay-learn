@@ -1,15 +1,15 @@
 #!/bin/bash
 
-pushd () {
-	command pushd "$@" > /dev/null
+ls () {
+	command ls "$@" > /dev/null 2>&1
 }
 
 popd () {
 	command popd "$@" > /dev/null
 }
 
-ls () {
-	command ls "$@" > /dev/null 2>&1
+pushd () {
+	command pushd "$@" > /dev/null
 }
 
 function check_grid_links {
@@ -25,11 +25,10 @@ function check_grid_links {
 			then
 				this_file=${article}
 
-				echo "Bad links Found in"
-				echo "	  ${article}"
+				echo "${article}"
 			fi
 
-			echo "		  Grid link: ${link}"
+			echo "	grid link: ${link}"
 			echo
 		fi
 	done
@@ -54,14 +53,14 @@ function check_image_paths {
 		if ! ls "${full_image_path}" || [[ ${image_path} != *"/images/"* ]]
 		then
 
-			if [[ -z ${thisFile} || ${this_file} != ${article} ]]
+			if [[ -z ${this_file} || ${this_file} != ${article} ]]
 			then
-				thisFile=${article}
-				echo "Bad links Found in"
-				echo "	  ${article}"
+				this_file=${article}
+
+				echo "${article}"
 			fi
 
-			echo "		  Image path: ${image_path}"
+			echo "	image path: ${image_path}"
 			echo
 		fi
 	done
@@ -83,9 +82,9 @@ function check_landing_links {
 
 				if ! ls "${landing_page_link}"
 				then
-					echo "Bad landing page link:"
-					echo "	  Landing Page Reference: ${landing_reference_path}"
-					echo "	  Link: ${landing_page_link/.md/.html}"
+					echo "landing page link:"
+					echo "	landing page reference: ${landing_reference_path}"
+					echo "	link: ${landing_page_link/.md/.html}"
 					echo
 				fi
 			fi
@@ -108,11 +107,10 @@ function check_markdown_links {
 				then
 					if [[ -z ${this_file} || ${this_file} != ${article} ]]
 					then this_file=${article}
-						echo "Bad links Found in"
-						echo "	  ${article}"
+						echo "${article}"
 					fi
 
-					echo "		  Markdown link: ${link}"
+					echo "	markdown link: ${link}"
 					echo
 				fi
 			fi
@@ -131,11 +129,10 @@ function check_toc_links {
 			then
 				this_file=${article}
 
-				echo "Bad links Found in"
-				echo "	  ${article}"
+				echo "${article}"
 			fi
 
-			echo "		  TOC link: ${toc_link}"
+			echo "	toc link: ${toc_link}"
 			echo
 		fi
 	done

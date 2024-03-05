@@ -126,7 +126,10 @@ See [Understanding Custom Element and IFrame Client Extensions](./front-end-clie
 
 {bdg-secondary}`Liferay DXP 2024.Q1+/Portal 7.4 GA112+`
 
-Editor Config Contributor client extensions override existing CKEditor customization in a `ConfigContributor.java` file. Configuration options of the client extension must match the `ConfigContributor` it's overriding (portlet names, editor names, and editor config keys).
+Editor Config Contributor client extensions override existing CKEditor customization in a `ConfigContributor.java` file.
+
+!!! important
+    The client extension's configuration options must match the `ConfigContributor` it's overriding (i.e., portlet names, editor names, and editor config keys).
 
 Specify an Editor Config Contributor client extension in your `client-extension.yaml` file:
 

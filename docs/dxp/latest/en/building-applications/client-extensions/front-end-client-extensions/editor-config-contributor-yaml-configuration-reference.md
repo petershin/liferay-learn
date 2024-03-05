@@ -33,25 +33,28 @@ able-editorConfigContributor:
 
 Editor Config Contributor client extensions override existing CKEditor customization in a `ConfigContributor.java` file. Configuration options of the client extension must match the `ConfigContributor` it's overriding (portlet names, editor names, and editor config keys).
 
-The required url property defines the JavaScript resource file’s location. The JavaScript resource must contain the custom element initialization code.
+!!! tip
+    Client extensions are deployed at the instance level and impact all CKEditor instances across pages within that virtual instance.
 
-[The example workspace](https://github.com/liferay/liferay-portal/blob/master/workspaces/liferay-sample-workspace/client-extensions/liferay-sample-editor-config-contributor) includes a complete Editor Config Contributor client extension.
+    In addition, if you don't specify any configuration options in the client extension, it will apply to every CKEditor instance within the DXP environment.
+
+The required URL property points to a JavaScript snippet which should implement a function according to the [TypeScript interfaces outlined in the public API](https://github.com/liferay/liferay-frontend-projects/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/projects/js-toolkit/packages/js-api/editor/index.ts).
+
+[The example workspace](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/workspaces/liferay-sample-workspace/client-extensions/liferay-sample-editor-config-contributor) includes a complete Editor Config Contributor client extension.
 
 !!! important
-    You must provide valid configurations. No validations are performed.
-
-Client extensions are deployed on an instance-level basis, affecting editors placed on admin/site pages belonging to that virtual instance.
+    Developers must provide valid configurations when implementing the client extension. The system does not perform any validation checks on these configurations.
 
 ## YAML Properties
 
 These properties are specific to Editor Config Contributor client extensions:
 
-| Name | Data Type | Description |
-| :--- | :--- | :--- |
-| `editorConfigKeys` | | Specifies the keys related to the editor configurations that this client extension will override or contribute to. |
-| `name` | | The name of the client extension, which is "Liferay Sample Editor Config Contributor" in this case |
-| `type` | | Indicates the type of client extension, which is "editorConfigContributor". |
-| `url` | URL | (Required) The path to the CSS file added to the page's CSS when enabled on a page. The complete URI is prefixed by the `baseURL` value. |
+| Name               | Data Type   | Description                                                                                                                        |
+|:-------------------|:------------|:-----------------------------------------------------------------------------------------------------------------------------------|
+| `editorConfigKeys` | `Set<String>` | Specifies the keys related to the editor configurations that this client extension will override or contribute to.                 |
+| `name`             | `String`      | The name of the client extension.                                                                                                  |
+| `type`             | `String`      | Indicates the type of client extension.                                                                                            |
+| `url`              | `URL`         | (Required) The path to the JavaScript snippet that implements the functionality of the Editor Config Contributor client extension. |
 
 See [Front-end Client Extension Properties](../front-end-client-extensions.md#front-end-client-extension-properties) for properties common to all front-end client extensions.
 

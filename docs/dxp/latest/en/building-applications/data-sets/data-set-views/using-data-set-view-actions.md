@@ -10,7 +10,7 @@ taxonomy-category-names:
 # Using Data Set View Actions
 
 {bdg-secondary}`Liferay DXP 2024.Q1 U112`
-{bdg-link-primary}`[Beta Feature](../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
+{bdg-link-primary}`[Beta Feature](../../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
 
 Here are some examples for how to use data set view actions and perform different tasks.
 

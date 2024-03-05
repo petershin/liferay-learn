@@ -10,7 +10,7 @@ taxonomy-category-names:
 # Data Set View Actions
 
 {bdg-secondary}`Liferay DXP 2024.Q1 U112`
-{bdg-link-primary}`[Beta Feature](../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
+{bdg-link-primary}`[Beta Feature](../../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
 
 While managing data set views, define actions to be used in the data set fragment. Currently, you can configure Link-type actions that redirect users to a specified URL.
 

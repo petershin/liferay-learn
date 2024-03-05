@@ -10,7 +10,7 @@ taxonomy-category-names:
 # Data Set View Filters
 
 {bdg-secondary}`Liferay DXP 2024.Q1 U112`
-{bdg-link-primary}`[Beta Feature](../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
+{bdg-link-primary}`[Beta Feature](../../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
 
 While managing data set views, you can define pre-applied filters to be used in the data set fragment. Although you can set those filters, users can change their parameters anytime.
 

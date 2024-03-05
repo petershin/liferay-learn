@@ -10,7 +10,7 @@ taxonomy-category-names:
 # Data Set View Fields
 
 {bdg-secondary}`Liferay DXP 2024.Q1 U112`
-{bdg-link-primary}`[Beta Feature](../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
+{bdg-link-primary}`[Beta Feature](../../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
 
 Use the data set manager to select the fields to display in your data set view. These fields are mapped to columns in [the data set fragment](./using-data-set-view-actions.md#using-a-data-set-fragment-in-a-content-page). You can add, delete, order, and edit your fields using the Fields tab in the data set view editor.
 

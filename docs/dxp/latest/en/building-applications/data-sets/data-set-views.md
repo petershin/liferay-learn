@@ -15,7 +15,7 @@ taxonomy-category-names:
 # Data Set Views
 
 {bdg-secondary}`Liferay DXP 2024.Q1 U112`
-{bdg-link-primary}`[Beta Feature](../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
+{bdg-link-primary}`[Beta Feature](../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
 
 With the data set manager, you can create data set views and customize how users see your data set. Choose which fields are displayed, define and pre-apply filters, set default sorting rules, redirect users to a different URL where they can perform actions, and configure pagination options for your data set view.
 

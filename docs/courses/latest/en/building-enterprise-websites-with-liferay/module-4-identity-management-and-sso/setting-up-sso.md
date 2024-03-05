@@ -29,7 +29,7 @@ In your Okta developer account, create a new group called `Okta-IT`. Then create
 
 ![Create a sample user Jane Newton.](./setting-up-sso/images/01.png)
 
-## Okta Configuration
+## Exercise 1: Configuring Okta as an Identity Provider
 
 1. Log in to [Okta Dev](https://developer.okta.com/login/). In the left menu, click on _Applications_ under the applications sub-section. In the new page click _Create App Integration_.
 
@@ -81,7 +81,7 @@ In your Okta developer account, create a new group called `Okta-IT`. Then create
 !!! note
     Make sure to assign yourself and provision your own user account so that you will still be able to log in as the Liferay administrator.
 
-## Exercise 1: Configuring Liferay as a Service Provider
+## Exercise 2: Configuring Liferay as a Service Provider
 
 1. (Prerequisite) The Clarity sample site already comes with an `Okta-IT` user group. If you do not have the sample Clarity site, create a user group called `Okta-IT`. See our documentation about [user groups](https://learn.liferay.com/w/dxp/users-and-permissions/user-groups).
 
@@ -94,7 +94,7 @@ In your Okta developer account, create a new group called `Okta-IT`. Then create
     - Scroll down to the bottom. Input the key password as `learn`.
     - Click *Save*.
 
-``. Leave the default settings under the _Service Provider_ tab.
+1. Leave the default settings under the _Service Provider_ tab.
 
 1. Click the _Identity Provider Connections_ tab. Click *Add Identity Provider* and set the following:
     1. Name: *okta*
@@ -128,6 +128,9 @@ In your Okta developer account, create a new group called `Okta-IT`. Then create
 1. Navigate to _Control Panel_ &rarr; _Users and Organizations_. Verify that Jane Newton's account came into Liferay and that she was automatically assigned to the `Okta-IT` Liferay user group.
 
     ![Jane Newton's account has been created in Liferay.](./setting-up-sso/images/06.png)
+
+!!! note
+    Okta SSO was enabled in this exercise. Feel free to disable it as you continue this Liferay course.
 
 ## Further Reading
 

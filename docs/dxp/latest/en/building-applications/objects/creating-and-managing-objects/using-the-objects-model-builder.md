@@ -20,8 +20,6 @@ Liferay Objects provides the Model Builder GUI for designing complex object stru
 
 To access the Model Builder view,
 
-1. Enable the model builder using its release feature flag. Go to *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)) &rarr; *Control Panel* &rarr; *Instance Settings* &rarr; *Feature Flags*. Open the *Release* section and enable *Object Model Builder (LPS-148856)*.
-
 1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Objects*.
 
 1. Go to the desired [object folder](./organizing-objects-with-folders.md) and click *View in Model Builder*.

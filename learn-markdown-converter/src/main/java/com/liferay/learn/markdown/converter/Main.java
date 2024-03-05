@@ -100,6 +100,15 @@ public class Main {
 	}
 
 	public Main(Properties tokenProperties) throws Exception {
+		String liferayLearnResourceDomain = System.getenv(
+			"LIFERAY_LEARN_RESOURCE_DOMAIN");
+
+		if (liferayLearnResourceDomain == null) {
+			liferayLearnResourceDomain = "localhost:8000";
+		}
+
+		_liferayLearnResourceDomain = liferayLearnResourceDomain;
+
 		File repositoryBaseDirFile = new File("..");
 
 		_repositoryBaseDirName = repositoryBaseDirFile.getCanonicalPath();
@@ -111,15 +120,6 @@ public class Main {
 		File repositorySiteDirFile = new File("../site");
 
 		_repositorySiteDirName = repositorySiteDirFile.getCanonicalPath();
-
-		String liferayLearnResourceDomain = System.getenv(
-			"LIFERAY_LEARN_RESOURCE_DOMAIN");
-
-		if (liferayLearnResourceDomain == null) {
-			liferayLearnResourceDomain = "localhost:8000";
-		}
-
-		_liferayLearnResourceDomain = liferayLearnResourceDomain;
 
 		Enumeration<String> enumeration =
 			(Enumeration<String>)tokenProperties.propertyNames();

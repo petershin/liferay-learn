@@ -61,7 +61,7 @@ To create a new Result Rankings,
 
    Click the *X* next to a keyword to remove an alias.
 
-1. To pin a specific result, click the _Options_ icon (![Options.](../../images/icon-options.png)) and click *Pin Result*. You can also hover your mouse over a result and click on the pin icon.
+1. To pin a specific result, click _Options_ (![Options](../../images/icon-options.png)) and click *Pin Result*. You can also hover your mouse over a result and click on the pin icon.
 
    ![Click on the pin result link.](result-rankings/images/03.png)
 
@@ -71,11 +71,11 @@ To create a new Result Rankings,
 
    As you drag, your selected item appears as a rectangular box that you can move. The highlighted blue line indicates the item insertion point.
 
-1. To hide a specific result, click _Options_ (![Options.](../../images/icon-options.png)) &rarr; *Hide Result*. You can also hover your mouse over a result and click on the hide result icon.
+1. To hide a specific result, click _Options_ (![Options](../../images/icon-options.png)) &rarr; *Hide Result*. You can also hover your mouse over a result and click on the hide result icon.
 
    ![Click on the hide result link.](result-rankings/images/03.png)
 
-   The list of hidden results can be found by clicking the *Hidden* tab of the results. To make a hidden result visible again click _Options_ (![Options.](../../images/icon-options.png)) &rarr; *Show Result*. You can also hover your mouse over a result and click on the show result icon. 
+   The list of hidden results can be found by clicking the *Hidden* tab of the results. To make a hidden result visible again click _Options_ (![Options](../../images/icon-options.png)) &rarr; *Show Result*. You can also hover your mouse over a result and click on the show result icon. 
 
 1. To add additional results, click _Add Result_. In the new window, use other search terms to locate additional results. Mark the results you want to add with a check and click the _Add_ button.
 
@@ -85,13 +85,13 @@ To create a new Result Rankings,
 
  1. Finish configuring your Result Rankings and click *Save*.
 
- 1. If you like, you can choose to deactivate specific Result Rankings. Click _Options_ (![Options.](../../images/icon-options.png)) &rarr; *Deactivate*.
+ 1. If you like, you can choose to deactivate specific Result Rankings. Click _Options_ (![Options](../../images/icon-options.png)) &rarr; *Deactivate*.
 
    ![Click on deactivate to deactivate a search query.](result-rankings/images/06.png)
 
-   To make a Result Rankings active again, click _Options_ (![Options.](../../images/icon-options.png)) &rarr; *Activate*. 
+   To make a Result Rankings active again, click _Options_ (![Options](../../images/icon-options.png)) &rarr; *Activate*. 
 
-   If you wish to permanently delete a Result Rankings, click _Options_ (![Options.](../../images/icon-options.png)) &rarr; *Delete*.
+   If you wish to permanently delete a Result Rankings, click _Options_ (![Options](../../images/icon-options.png)) &rarr; *Delete*.
 
 ## Result Rankings Scope and Permissions
 

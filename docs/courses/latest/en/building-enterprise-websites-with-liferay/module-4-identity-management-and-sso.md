@@ -10,7 +10,7 @@ Now that Clarity has a Liferay SaaS instance provisioned, the Liferay DXP instan
 
 To ensure secure access for Clarity's employees and leverage existing Identity Management and Single Sign-On Solutions, Liferay comes with a variety of out-of-the-box features, as well as support for integrating with third-party identity management services. For employee authentication and user directory management, Clarity plans to utilize Okta for Single Sign-On (SSO). For other site visitors such as B2B customers, Clarity can use the security and identity management tools that are available within Liferay.
 
-<!-- [Maybe add an image like the one under the "Saving the Metadata" section](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/configuring-sso/authenticating-with-saml/importing-user-groups-memberships-from-an-external-idp-through-saml#saving-the-metadata) -->
+<!--- A diagram showing Clarity has users stored in Okta and they come into Liferay as they authenticate --->
 
 In this module, you will:
 

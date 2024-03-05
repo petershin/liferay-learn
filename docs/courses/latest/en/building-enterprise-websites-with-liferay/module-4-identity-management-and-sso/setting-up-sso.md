@@ -4,10 +4,30 @@ uuid: ba75bce7-ccf4-4c5a-bffe-7c247434dac2
 
 # Integrating Okta SSO
 
-Clarity values having one login not only for Liferay, but for the other services they use. They aim to keep using Okta to maintain this unified login approach, aiming to save costs, minimize additional systems, and mitigate risks. Liferay supports a variety of single sign-on (SSO) standards, including OpenID Connect (OIDC) and Security Assertion Markup Language (SAML), making it straightforward to integrate with Okta. In addition to authentication, they can use Okta to serve as their identity provider (IdP) and sync all user identities with Liferay. Continue reading to see the basic steps to set up your Liferay DXP instance as the Service Provider (SP), and Okta as the Identity Provider (IdP).
+Clarity values having one login not only for Liferay, but for the other services they use. They aim to keep using Okta to maintain this unified login approach, aiming to save costs, minimize additional systems, and mitigate risks. Fortunately, Liferay supports a variety of single sign-on (SSO) standards, including OpenID Connect (OIDC) and Security Assertion Markup Language (SAML), making it straightforward to integrate with Okta. In addition to authentication, they can use Okta to serve as their identity provider (IdP) and sync all user identities with Liferay. Continue reading to see the basic steps to set up your Liferay DXP instance as the Service Provider (SP), and Okta as the Identity Provider (IdP).
+
+!!! important
+    Deciding how to bring in new users to Liferay is a key business decision. For Clarity's use case, we recommend provisioning and managing users through Okta instead of separately in Liferay.
+
+## Okta Prerequisite
 
 !!! note
     This tutorial requires you to have an existing Okta developer account to test with.
+
+In your Okta developer account, create a new group called `Okta-IT`. Then create the following user:
+
+| Field | Value |
+|:--- |:--- |
+| User type | Select `User` |
+| First name | `Jane` |
+| Last name | `Newton` |
+| Username | `jane@clarityvisionsolutions.com` |
+| Primary email | `jane@clarityvisionsolutions.com` |
+| Groups | `Okta-IT` |
+| Password | select `Set by admin` and input `LearnLiferay` as the password |
+| User must change password on first login | unchecked |
+
+![Create a sample user Jane Newton.](./setting-up-sso/images/01.png)
 
 ## Okta Configuration
 
@@ -15,7 +35,7 @@ Clarity values having one login not only for Liferay, but for the other services
 
 1. Select `SAML 2.0` and click _Next_.
 
-1. Enter *liferaysaml* as the app name and click next.
+1. Enter `liferay-saml-{your.name}` as the app name and click next.
 
 1. Enter the following fields:
     - Single sign-on URL: *http://[your_lifray_saas_environment]/c/portal/saml/acs*
@@ -23,31 +43,49 @@ Clarity values having one login not only for Liferay, but for the other services
     - Name ID format: *EmailAddress*
     - Application username: *Email*
 
-    ![Configuring SAML Integration](./setting-up-sso/images/01.png)
+    ![Configuring SAML Integration](./setting-up-sso/images/02.png)
 
 1. Add the following attribute statement:
-    - `screenName (Unspecified) = user.firstName`
-    - `firstName (Unspecified) = user.firstName`
-    - `lastName (Unspecified) = user.lastName`
-    - `emailAddress (Unspecified) = user.email`
 
-<!-- configure user groups based on this tutorial https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/configuring-sso/authenticating-with-saml/importing-user-groups-memberships-from-an-external-idp-through-saml -->
+    | Name | Name Format | Value |
+    |:--- |:--- |:--- |
+    | `screenName` | Unspecified | `user.firstName` |
+    | `firstName` | Unspecified | `user.firstName` |
+    | `lastName` | Unspecified | `user.lastName` |
+    | `emailAddress` | Unspecified | `user.email` |
 
+1. Add the following group attribute statement:
+
+    | Name | Name Format | Filter | Value |
+    |:--- |:--- |:--- |:--- |
+    | `userGroup` | Unspecified | Starts with | `Okta` |
+ 
 1. Click *Next* at the bottom of the page. Finally, click _Finish_ on the next page.
 
 1. On the Sign On tab, confirm that Application username format is set to to Email.
 
 1. Click *View SAML Setup Instructions* on the right side of the page. A new page will open.
 
-    ![Click View SAML Setup Instructions on the right side.](./setting-up-sso/images/02.png)
+    ![Click View SAML Setup Instructions on the right side.](./setting-up-sso/images/03.png)
 
 1. Under the Optional heading, select and copy all the xml text. Paste the block of text into a new text file and save the file with the name `oktametadata.xml`.
 
-1. Navigate back to _Applications_ &rarr; _Applications_. Click on the down arrow for the *liferaysaml* application. Click on *Assign to Users*, click *Assign* for the users you want to provision Liferay access. Then click *Save and Go Back*.
+1. Next, click on the _Assignments_ tab of your application. Click _Assign_ and select _Assign to People_. Click _Assign_ next to Jane Newton.
 
-## Liferay DXP Configuration
+    ![Assign Jane Newton to your application.](./setting-up-sso/images/04.png)
 
-1. Log in to Liferay and navigate to _Control Panel_ &rarr; _Security_ &rarr; _SAML Admin_.
+    In the next window, click _Save and Go Back_.
+
+1. In the list of users, click _Assign_ for your own user account as well. Click _Save and Go Back_.
+
+!!! note
+    Make sure to assign yourself and provision your own user account so that you will still be able to log in as the Liferay administrator.
+
+## Exercise 1: Configuring Liferay as a Service Provider
+
+1. (Prerequisite) The Clarity sample site already comes with an `Okta-IT` user group. If you do not have the sample Clarity site, create a user group called `Okta-IT`. See our documentation about [user groups](https://learn.liferay.com/w/dxp/users-and-permissions/user-groups).
+
+1. In Liferay, navigate to _Control Panel_ &rarr; _Security_ &rarr; _SAML Admin_.
 
 1. Set the SAML Role to *Service Provider*, and Entity ID to *samlspdemo*. Click _Save_.
 
@@ -56,7 +94,7 @@ Clarity values having one login not only for Liferay, but for the other services
     - Scroll down to the bottom. Input the key password as `learn`.
     - Click *Save*.
 
-1. Leave the default settings under the _Service Provider_ tab.
+``. Leave the default settings under the _Service Provider_ tab.
 
 1. Click the _Identity Provider Connections_ tab. Click *Add Identity Provider* and set the following:
     1. Name: *okta*
@@ -75,15 +113,21 @@ Clarity values having one login not only for Liferay, but for the other services
 
     1. Click on *Save*
 
-3. Go back to *General* tab and make sure the `Enabled` checkbox is checked. Click *Save*.
+1. Go back to *General* tab and make sure the `Enabled` checkbox is checked. Click *Save*.
 
-1. As a precaution, create a temporary site page and add a `Sign In` widget to it. In case testing the SSO fails, this can provide a login workaround.
+1. Log out of your Liferay instance and click *Sign In* in the top right corner. You are redirected to the Okta login page.
 
-2. Log out of your Liferay instance and click *Sign In* in the top right corner. You are redirected to the Okta login page.
+    ![User is redirected to the Okta login page.](./setting-up-sso/images/05.png)
 
-    ![User is redirected to the Okta login page.](./setting-up-sso/images/03.png)
+    Note, if you have previously logged in with Okta, you may need to try with your browser in incognito mode.
 
-3. Input your user email and password and click _Sign in_. You are redirected back to Liferay and automatically signed in. Note that if the login is a new user, a new user account is automatically created in Liferay.
+1. Input the user name `jane@clarityvisionsolutions.com` and the password `LearnLiferay`. You have successfully logged in as a Clarity team member.
+
+1. Log out of the account and sign back in with your Liferay administrator account.
+
+1. Navigate to _Control Panel_ &rarr; _Users and Organizations_. Verify that Jane Newton's account came into Liferay and that she was automatically assigned to the `Okta-IT` Liferay user group.
+
+    ![Jane Newton's account has been created in Liferay.](./setting-up-sso/images/06.png)
 
 ## Further Reading
 

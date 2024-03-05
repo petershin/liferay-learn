@@ -26,7 +26,7 @@ Now you can access the library's active applications to create and manage conten
 
 To create content in an asset library, first go to the library's menu page, and click the desired application. From here, creating content is essentially the same as creating it in a site. The differences are mainly its scope and default theme settings.
 
-However, some content requires additional configuration when set within an asset library's context. Read [Additional Content Configuration in Asset Libraries](./additional-content-configuration-in-asset-libraries.md) to learn more.
+However, some content requires additional configuration when set within an asset library's context. Read [Categories and Vocabulary](#categories-and-vocabulary) to learn more.
 
 See [Content Authoring and Management](../../content-authoring-and-management.md) articles for more information about creating each type of content.
 

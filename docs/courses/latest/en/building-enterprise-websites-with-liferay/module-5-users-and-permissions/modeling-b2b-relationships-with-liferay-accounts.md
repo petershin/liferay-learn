@@ -20,7 +20,7 @@ For our next exercise we will create accounts for Opportune Optics and associate
 !!! note
    These users are already created with the Clarity sample site. If you do not have the Clarity sample site, create these users from within the Liferay UI.
 
-## Exercise 1
+## Exercise 1 - Creating Accounts and Account Users
 
 ### Creating Opportune Optics NY Account
 

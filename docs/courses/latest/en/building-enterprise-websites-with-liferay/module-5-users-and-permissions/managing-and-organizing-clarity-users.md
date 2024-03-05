@@ -27,7 +27,7 @@ To increase efficiency, roles can also be assigned to entire user groups as well
 !!! note
     The Clarity users that came with the sample Clarity site are already assigned to user groups. If you do not have the sample Clarity site, create the user groups above and assign the users to them. See our documentation about [user groups](https://learn.liferay.com/w/dxp/users-and-permissions/user-groups).
 
-### Exercise 1
+### Exercise 1 - Creating Custom Roles for User Groups
 
 The content creator user group requires permissions to edit site pages as well as add blog posts. Let's create a custom role and assign it to the user group.
 
@@ -45,9 +45,9 @@ The content creator user group requires permissions to edit site pages as well a
 
 1. Next, click the _Assignees_ tab. Click the _User Groups_ tab. Click the add icon.
 
-2. In the pop-up window, select the content creator user group and click _Add_.
+1. In the pop-up window, select the content creator user group and click _Add_.
 
-3. To verify the permissions, navigate to _Control Panel_ &rarr; _Users and Organizations_. Click the options icon for Christian Carter and click _Impersonate User_. Navigate to Clarity's blog page and verify that the user can add a blog entry. Also, navigate to a site page and verify that the user can edit the page.
+1. To verify the permissions, navigate to _Control Panel_ &rarr; _Users and Organizations_. Click the options icon for Christian Carter and click _Impersonate User_. Navigate to Clarity's blog page and verify that the user can add a blog entry. Also, navigate to a site page and verify that the user can edit the page.
 
 Well done! Now every team member that is part of the content creator user group has the correct permissions.
 

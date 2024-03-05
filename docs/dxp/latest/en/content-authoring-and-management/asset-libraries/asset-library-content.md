@@ -89,7 +89,7 @@ When creating a vocabulary within an asset library, some additional configuratio
 
 1. Configure whether and where that vocabulary is required. You can find the configuration under Associated Asset Types with three options:
 
-   ![Determine whether the vocabulary is required and set where it's required.](./additional-content-configuration-in-asset-libraries/images/06.png)
+   ![Determine whether the vocabulary is required and set where it's required.](./asset-library-content/images/06.png)
 
    | Option                                                 | Description                                                                                      |
    |:-------------------------------------------------------|:-------------------------------------------------------------------------------------------------|
@@ -100,7 +100,7 @@ When creating a vocabulary within an asset library, some additional configuratio
    !!! note
        When the vocabulary is marked as required, an asterisk marks the vocabulary field, and it must have content or it cannot be saved. Trying to save content without the required vocabulary causes an error message to appear.
 
-   ![Determine whether the vocabulary is required and set where it's required.](./additional-content-configuration-in-asset-libraries/images/07.png)
+   ![Determine whether the vocabulary is required and set where it's required.](./asset-library-content/images/07.png)
 
 Note that when using the Required in This Asset Library and Its Connected Sites option, if a [site gets disconnected](./creating-and-managing-asset-libraries.md#sites) from the asset library, the vocabulary stops being shown on the content created at a site level. Without the required vocabulary, you can publish content without filling in the vocabulary field.
 

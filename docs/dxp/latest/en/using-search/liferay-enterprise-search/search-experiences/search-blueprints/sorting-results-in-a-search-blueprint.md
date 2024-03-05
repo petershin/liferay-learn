@@ -46,7 +46,7 @@ Like blueprints, there are other sort contributors that add elements to the sear
 ]
 ```
 
-When there are multiple `sort`s in the request, the first one takes precedence. In the example above, the results will be sorted by the `modified` field, in descending order.
+When there are multiple `sort`s in the request, they're applied in the order they appear: in the example above, the results will be sorted by the `modified` field, with the last modified result first in the list. If multiple results have an identical `modified` value, then they'll be sorted by the localized title, in descending alphabetical order.
 
 When no `sort`s are in the search request, results are sorted by relevance score. 
 
@@ -56,11 +56,11 @@ You can sort results on a search page with the [Sort widget](../../../search-pag
 
 The Sort widget contributes nothing to the request if you choose its _Sort by Relevance_ option. Instead the default is relied upon to provide relevance sorting. However, if sorting is configured in a Blueprint that's applied to the page, it's added to the `sort` array in the request. Therefore, **the blueprint's sort takes precedence when the Sort widget is set to _Sort by Relevance_.**
 
-A different scenario occurs when `sort`s are contributed by the Sort widget and a blueprint. In this case both of them are added to the array, but the Sort widget's contribution is listed first in the array, so it takes precedence. Therefore, **the Sort widget's sort takes precedence when it sorts by anything except relevance.**
+A different scenario occurs when `sort`s are contributed by the Sort widget and a blueprint. In this case both of them are added to the array, but the Sort widget's contribution is listed first in the array, so its `sort`s are applied first. Therefore, **the Sort widget's sorts are applied first, when it sorts by anything except relevance.**
 
 ### Search Blueprints versus the Headless API
 
-You can sort results from the [headless API's `/search`](../../../developer-guide/search-headless-apis.md) endpoint with a blueprint or with the `sort` API parameter. If both add `sort`s to the request, the blueprint's is listed first in the array. Therefore, **the blueprint's sort takes precedence over any sort added by the headless API parameter.**
+You can sort results from the [headless API's `/search`](../../../developer-guide/search-headless-apis.md) endpoint with a blueprint or with the `sort` API parameter. If both add `sort`s to the request, the blueprint's is listed first in the array. Therefore, **the blueprint's sorts are applied first, and any sorts added by the headless API parameter are applied subsequently.**
 
 ## Example 1: Sorting by Title
 

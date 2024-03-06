@@ -53,12 +53,12 @@ This vision continues today with our Mission Statement:
 * Head office in Los Angeles
 * Global presence in 20 locations
 * Over 5 Million downloads worldwide
-* 350+ Partners globally
+* 400+ Partners globally
 * 1200+ Enterprise Customers
 * 1000+ Employees Globally
 * 180,000+ Community Members
 
-Over more than 19 years Liferay has opened offices on all continents, and today we serve more than 1200 enterprise customers. In addition tens of thousands of organizations use Liferay’s open source Community Edition.
+Over more than 20 years Liferay has opened offices on all continents, and today we serve more than 1200 enterprise customers. In addition tens of thousands of organizations use Liferay’s open source Community Edition.
 
 ![Liferay has offices that span the globe.](./introduction-to-liferay/images/01.png)
 
@@ -69,7 +69,7 @@ There are over 180K members in the Liferay community contributing in various way
 Despite being headquartered in the USA, Liferay is not a typical American company:
 
 * 78% of staff are based outside North America.
-* Non-US members represent 50% of senior leadership of the company
+* Non-US members represent more than 50% of senior leadership of the company
 
 ## Importance of Partners
 
@@ -91,19 +91,30 @@ Our company and product strategy and direction are made with customers, partners
 
 Unlike many other software companies, Liferay employees stay with the organization for many years---with many having served for more than 10 years. This improves both product knowledge as well as account continuity.
 
-## Liferay Competitive Advantages
+## Liferay's Differentiators
 
-The Competitive Advantages of our product include
+The differentiators of our product include
 
+* Portal heritage and a leader in headless CMS
 * Fully integrated Digital Experience Platform
-* Seamless integration with various legacy software applications (e.g., CRM and ERP) and easy integration with almost any external system
-* Composible architecture to use Liferay's core functionalities
+* Seamless integration with legacy software applications (e.g., CRM and ERP) and easy connection with enterprise data sources
+* Composible architecture allows headless access to Liferay core functionality
+* Extendable and customizable using loosely-coupled approach
 * Low-Code and No-Code capabilities to allow non-developers to create tailored solutions
-* Best-of-breed and market leading Portal and CMS capabilities
-* Open Source and organically grown platform
-* Flexible deployment options: SaaS, PaaS, and Self-Hosted are available deployment models
+* Open Source and organically grown platform ensures different parts of the platform are designed to work seamlessly together
+* Flexible deployment options over competition with SaaS, PaaS, and Self-Hosted deployment models available
 * Enterprise grade platform focused on high-level security, scalability, and availability
 
+Liferay's differentiators ensure that there are practically no limits to the solutions that can be created on the platform to meet the complex enterprise needs faced by our customers.
+
 ![Liferay has numerous competitive advantages.](./introduction-to-liferay/images/03.png)
+
+## Unique Combination of Capabilities
+
+The combination of native Digital Experience Platform, Content Management System, and digital Commerce capabilities within one platform is quite unique in the market.
+
+All of these capabilities are further enhanced with a set of robust low-code tools to enable Liferay to provide customers with a platform that is beyond a Digital Experience Platform.
+
+![Liferay has a unique combination of capabilities.](./introduction-to-liferay/images/04.png)
 
 Next: [What is a Digital Experience Platform?](./introduction-to-liferay/what-is-a-digital-experience-platform.md)

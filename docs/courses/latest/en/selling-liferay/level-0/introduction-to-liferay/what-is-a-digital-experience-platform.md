@@ -7,19 +7,14 @@ visibility:
 
 # What is a Digital Experience Platform
 
-Digital Experience Platforms emerged with the convergence of Content Management, Digital Commerce, and Horizontal Portal technologies. While defined differently by different analysts, the broad definition is very similar.
+Definitions for Digital Experience Platforms vary from one analyst to another, but the broad definition is very similar.  For example most analysts use phrases like
 
-Gartner defines a DXP as
+> Digital Experience Platforms “deliver contextualized digital experiences, optimization of customer journey and touchpoints, integrated and cohesive, tailoring experience with context and value with commerce.”
 
-> “A digital experience platform (DXP) is an integrated and cohesive piece of technology designed to enable the composition, management, delivery and optimization of contextualized digital experiences across multi-experience customer journeys.”
-
-While Forrester, who were the first to call out Digital Experience Platforms distinctly from other offerings define a DXP as
-
-> “Forrester distills a digital experience down to four solutions: 1) understanding the customer with data; 2) creating the experience with content; 3) tailoring that experience to fit the context with marketing; and 4) delivering value with commerce.“
-
-Liferay defines a DXP as follows:
+Liferay definition of a DXP is as follows:
 
 > “Enterprise software that provides the foundation for companies to deliver connected, contextualized digital experiences across multiple touchpoints for the entire customer journey.
+
 > Put simply, a DXP is a single platform that has all the elements to deliver external and internal digital experiences.”
 
 ![Digital Experience Platforms provide all the tools necessary to external and internal digital experiences.](./what-is-a-digital-experience-platform/images/01.png)
@@ -29,18 +24,6 @@ Liferay defines a DXP as follows:
 * Download the [PDF](https://learn.liferay.com/documents/d/guest/l0-1-introduction-to-liferay-pdf) of the presentation used in the live workshop.
 ```
 
-## Liferay Portal Heritage
-
-Portal solutions focus on the needs of the long-term relationship between organizations and their customers, employees, partners, suppliers, and so on.
-
-A key differentiator of DXPs with portal heritage is the support for these needs through capabilities like authenticated experiences, and a focus on integration between the DXP and other systems. Compared against other Digital Experience Platforms, our Liferay DXP offers customers a true best-in-class B2B and B2E authenticated portal experience.
-
-Gartner has frequently recognized this in Liferay. For example in 2022, Gartner said:
-
-> “Liferay targets enterprise IT buyers with its powerful tooling and pure-play portal heritage.”
-
-On top of it, Liferay has also searched ways to innovate by going beyond DXP, the result of which being the addition of CMS, Commerce, and Low-Code capabilities.
-
 ## Anatomy of a Digital Experience Platform
 
 The basic anatomy of a Digital Experience Platform could be described as follows:
@@ -49,6 +32,7 @@ The basic anatomy of a Digital Experience Platform could be described as follows
 * These touchpoints then provide some sort of presentation layer---which may be supplied by the platform itself, or implemented via headless API capabilities. Liferay’s presentation layer is flexible enough to support all and any of these types of presentation technologies.
 * These interfaces serve information and data sourced from various enterprise data sources or content authoring systems. These disparate data sources include CRM, ERP, HRIS, Marketing Automation tools, and many others.
 * The DXP therefore must include some sort of integration layer---which might be native to the platform or some 3rd party tool like an Enterprise Service Bus (ESB)
+* The integration layer makes it possible to connect to the enterprise data sources, and may use technologies and frameworks like OpenAPI, GraphQL, SOAP, JSON etc.
 
 The heart of a DXP, however, sits between the presentation and integration layers. This is the promise of a DXP's transformative power for a customer's business.
 
@@ -66,7 +50,7 @@ Another way to look at what a DXP should provide is to look at the customer life
 
 ## Liferay Deployment Approaches
 
-With its composable architecture and the addition of strong Low-Code functionality, Liferay isn't just a complete, integrated Digital Experience Platform, but also goes beyond DXP's capabilities. With Liferay DXP, a solution for any digital challenge can be created - SaaS, PaaS, or Self-Hosted
+With its composable architecture and the addition of strong Low-Code functionality, Liferay isn't just a complete, integrated Digital Experience Platform, but also goes beyond DXP's capabilities. With Liferay DXP, a solution for any digital challenge can be created and deployed as the customer needs - whether that is SaaS, PaaS, or Self-Hosted.
 
 ## Tailored Solutions
 
@@ -75,10 +59,11 @@ Liferay DXP can be used to solve almost any business problem that our customers 
 * Customer Portals - attract, serve, and empower customers
 * Supplier Portals - simplify purchasing, support vendors, and increase profitability
 * Partner Portals - collaborate, support, and grow partner revenue
-* Employee Portals - keep employees productive, self-sufficient, and connected
-* Public Websites - give customers a smooth digital journey and reap the benefits of their loyalty
+* Intranets - keep employees productive, self-sufficient, and connected
+* Enterprise Websites - give customers a smooth digital journey and reap the benefits of their loyalty
 * Digital Commerce - simplify buying and encourage repeat orders
-* And many more…
+
+The Liferay platform is also used as an Integration Platform, Agent Portal, Student Portal, and many more.
 
 ## Example Customers
 

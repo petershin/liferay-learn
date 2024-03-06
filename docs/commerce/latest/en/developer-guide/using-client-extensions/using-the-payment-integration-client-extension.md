@@ -76,7 +76,7 @@ liferay-sample-commerce-payment-integration-oauth-application-user-agent:
     type: oAuthApplicationUserAgent
 ```
 
-Another important part of the `client-extension.yaml` is in the `liferay-sample-commerce-payment-integration-oauth-application-user-agent` definition. The `serviceAddress` parameter defines where the service runs locally and the `serviceScheme` parameter defines the protocol. The `name` field defines the name of the OAuth application user agent. The `scopes` field defines the access given to the headless API. This section sets up Liferay as the authorization server, so that the payment integration you deploy next can invoke the resource server's secure endpoints and send payloads. See [OAuth User Agent YAML Configuration Reference](https://learn.liferay.com/w/dxp/building-applications/client-extensions/configuration-client-extensions/oauth-user-agent-yaml-configuration-reference) for more information.
+Another important part of the `client-extension.yaml` is in the `liferay-sample-commerce-payment-integration-oauth-application-user-agent` definition. The `serviceAddress` parameter defines where the service runs locally, and the `serviceScheme` parameter defines the protocol. The `name` field defines the name of the OAuth application user agent. The `scopes` field defines the access given to the headless API. This section sets up Liferay as the authorization server, so that the payment integration you deploy next can invoke the resource server's secure endpoints and send payloads. See [OAuth User Agent YAML Configuration Reference](https://learn.liferay.com/w/dxp/building-applications/client-extensions/configuration-client-extensions/oauth-user-agent-yaml-configuration-reference) for more information.
 
 ## Deploy the Payment Integration Client Extension
 
@@ -172,7 +172,7 @@ To create a payment integration in Liferay, you must implement controllers for t
 * Cancel
 * Refund
 
-The provided sample client extension contains these controllers invoked by the Spring Boot application to create a new payment integration in Liferay. The `key` and `name` fields in the `client-extension.yaml` file specifies the key and name for the payment integration. It is recommended to use a unique key that doesn't conflict with any of the existing payment methods.
+The provided sample client extension contains these controllers invoked by the Spring Boot application to create a new payment integration in Liferay. The `key` and `name` fields in the `client-extension.yaml` file specifies the key and name for the payment integration. You should use a unique key that doesn't conflict with any of the existing payment methods.
 
 ### Examining `SetUpPaymentRestController.java`
 

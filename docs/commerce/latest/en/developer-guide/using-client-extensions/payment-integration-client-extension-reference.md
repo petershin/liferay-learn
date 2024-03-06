@@ -30,13 +30,13 @@ See [CommercePaymentIntegrationConstants](https://github.com/liferay/liferay-por
 ## Payment Integration Status Reference
 
 | Value | Status            | Description                                                   |
-| :---- | :---------------- | :------------------------------------------------------------ |
+|:------|:------------------|:--------------------------------------------------------------|
 | 2     | STATUS_AUTHORIZED | Payment provider authorizes the payment                       |
-| 8     | STATUS_CANCELLED  | Payment gets canceled by the buyer                           |
+| 8     | STATUS_CANCELLED  | Payment gets canceled by the buyer                            |
 | 0     | STATUS_COMPLETED  | Transaction is complete and the merchant receives the payment |
 | 4     | STATUS_FAILED     | Transaction fails for reasons other than cancellation         |
 | 1     | STATUS_PENDING    | Specifies the creation of a refund that’s not submitted yet   |
 | 17    | STATUS_REFUNDED   | Refund submission is complete                                 |
 | 18    | STATUS_CREATED    | Specifies the addition of a new payment entry                 |
 
-See [CommercePaymentEntryConstants](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/constants/CommercePaymentEntryConstants.java) for more information on the constants. See [Status Reference](../../payment-management/payments-reference.md#status-reference) for more information on the payments lifecycle.
+See [CommercePaymentEntryConstants](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/constants/CommercePaymentEntryConstants.java) for more information on the constants. See [Status Reference](../../payment-management/payments-reference.md#status-reference) for more information on the payments life cycle.

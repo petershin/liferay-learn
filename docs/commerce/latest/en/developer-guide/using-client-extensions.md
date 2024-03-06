@@ -1,8 +1,10 @@
 ---
 toc:
   - ./using-client-extensions/using-the-checkout-step-client-extension.md
+  - ./using-client-extensions/using-the-payment-integration-client-extension.md
   - ./using-client-extensions/using-the-shipping-engine-client-extension.md
   - ./using-client-extensions/checkout-step-client-extension-reference.md
+  - ./using-client-extensions/payment-integration-client-extension-reference.md
   - ./using-client-extensions/shipping-engine-client-extension-reference.md
 uuid: e44189a8-c0c0-4416-9c57-d8623b290637
 taxonomy-category-names:
@@ -33,12 +35,20 @@ A client extension interfaces with Liferay's APIs. This loose coupling makes cli
 :link: ./using-client-extensions/using-the-checkout-step-client-extension.md
 :::
 
+:::{grid-item-card}  Using the Payment Integration Client Extension
+:link: ./using-client-extensions/using-the-payment-integration-client-extension.md
+:::
+
 :::{grid-item-card}  Using the Shipping Engine Client Extension
 :link: ./using-client-extensions/using-the-shipping-engine-client-extension.md
 :::
 
 :::{grid-item-card}  Checkout Step Client Extension Reference
 :link: ./using-client-extensions/checkout-step-client-extension-reference.md
+:::
+
+:::{grid-item-card}  Payment Integration Client Extension Reference
+:link: ./using-client-extensions/payment-integration-client-extension-reference.md
 :::
 
 :::{grid-item-card}  Shipping Engine Client Extension Reference

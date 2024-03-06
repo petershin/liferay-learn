@@ -9,7 +9,7 @@ taxonomy-category-names:
 ---
 # Using the Objects Model Builder
 
-{bdg-secondary}`Liferay 7.4 2023.Q4+/GA102+`
+{bdg-link-secondary}`[Liferay 7.4 2023.Q4+/GA102+](#model-builder-availability)`
 
 Liferay Objects provides the Model Builder GUI for designing complex object structures. This graphical tool displays each object definition as a card and visualizes relationships between object definitions. With it, you can create, manage, and extend data models in the Objects application and quickly configure definitions, fields, and relationships.
 
@@ -146,6 +146,15 @@ While using Model Builder, you can publish individual object definitions as well
 1. Click *Publish Objects*.
 
 The selected drafts begin publishing simultaneously.
+
+## Model Builder Availability 
+
+Model Builder was released behind a [release feature flag](../../../system-administration/configuring-liferay/feature-flagz.md) in Liferay 7.4 2023.Q4/GA102. It was made Generally Available (GA) in 2024.Q1/GA112.
+
+| Liferay Version | Feature Status | Feature Flag [Label] |
+|:---|:---|:---|
+| 2023.Q4<br>GA102 | [Release Feature](../../../system-administration/configuring-liferay/feature-flagz.md#release-feture-flags) | &#10004; [Object Model Builder (LPS-148856)] |
+| 2024.Q1+<br>GA112+ | GA | &#10008; |
 
 ## Related Topics
 

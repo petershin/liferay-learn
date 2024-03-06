@@ -22,10 +22,6 @@ CSP policies have many options. It is best to understand your users' needs and c
 
 You can separate Content Security Policy into two: directives and values. Using directives and values, you can form a robust policy to protect web applications against a variety of threats.
 
-## Configuration Reference for Content Security Policy
-
-While working with CSP, you have access to different directives and values. They are commands that specify the rules and restrictions for loading different types of resources on a web page, allowing you to define security guidelines that browsers should apply while rendering the page.
-
 * Directives - Directives specify the rules for resources (scripts, stylesheets, images, etc.) a browser can load or execute on a web page. Below are examples of some commonly used directives.
 
 | Directive         | Description                                                                                |

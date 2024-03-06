@@ -49,10 +49,6 @@ It's important to note that while `unsafe-eval` and `unsafe-inline` provide flex
 
 ## Configuring a Sample Content Security Policy
 
-Let's get back to the examples above and see them working in practice.
-
-### Configuring CSP Directives
-
 To configure a sample content security policy in Liferay,
 
 1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)) and navigate to *Control Panel* &rarr; *System Settings* &rarr; *Security* &rarr; *Content Security Policy*.

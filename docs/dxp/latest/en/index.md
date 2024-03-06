@@ -8,7 +8,7 @@ toc:
   - ./collaboration-and-social.md
   - ./users-and-permissions.md
   - ./system-administration.md
-  - ./building-applications.md
+  - ./liferay-development.md
   - ./liferay-internals.md
   - ./headless-delivery.md
   - ./installation-and-upgrades.md

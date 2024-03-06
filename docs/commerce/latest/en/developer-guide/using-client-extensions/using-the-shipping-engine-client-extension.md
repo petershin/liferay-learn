@@ -137,7 +137,7 @@ The Spring Boot application starts and prints messages in the log:
 
 1. Open the _Global Menu_ (![Applications Menu icon](../../images/icon-applications-menu.png)) and go to _Commerce_ &rarr; _Channels_.
 
-1. Select _Minium_ and scroll down to the Shipping Methods section. Verify the addition of the new shipping engine here. It is inactive by default.
+1. Select _Minium Portal_ and scroll down to the Shipping Methods section. Verify the addition of the new shipping engine here. It is inactive by default.
 
    ![Verify the addition of the new shipping engine in channel settings.](./using-the-shipping-engine-client-extension/images/02.png)
 
@@ -170,7 +170,7 @@ To create a shipping engine in Liferay, you require the following details:
 * Enabled Shipping Options
 * Shipping Option Label
 
-The provided sample shipping engine client extension contains several controllers invoked by the Spring Boot application to create a new shipping engine in Liferay. The `key` field in the `client-extension.yaml` file specifies the key for the shipping engine. If you use an existing key, the client extension shipping engine overwrites that shipping engine.
+The provided sample shipping engine client extension contains several controllers invoked by the Spring Boot application to create a new shipping engine in Liferay. The `key` field in the `client-extension.yaml` file specifies the key for the shipping engine. It is recommended to use a unique key that doesn't conflict with any of the existing shipping methods.
 
 ### Examining `NameRestController.java`
 

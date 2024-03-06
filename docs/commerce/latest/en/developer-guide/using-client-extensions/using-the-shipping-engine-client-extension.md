@@ -170,7 +170,7 @@ To create a shipping engine in Liferay, you require the following details:
 * Enabled Shipping Options
 * Shipping Option Label
 
-The provided sample shipping engine client extension contains several controllers invoked by the Spring Boot application to create a new shipping engine in Liferay. The `key` field in the `client-extension.yaml` file specifies the key for the shipping engine. It is recommended to use a unique key that doesn't conflict with any of the existing shipping methods.
+The provided sample shipping engine client extension contains several controllers invoked by the Spring Boot application to create a new shipping engine in Liferay. The `key` field in the `client-extension.yaml` file specifies the key for the shipping engine. You should use a unique key that doesn't conflict with any of the existing shipping methods.
 
 ### Examining `NameRestController.java`
 

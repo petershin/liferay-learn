@@ -137,9 +137,9 @@ function main {
 
 	update_examples
 
-	run_learn_markdown_converter
-
 	get_reference_docs
+
+	run_learn_markdown_converter
 
 	copy_images
 

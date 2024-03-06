@@ -11,12 +11,13 @@ taxonomy-category-names:
 
 {bdg-link-secondary}`[Liferay 7.4 2023.Q4+/GA102+](#model-builder-availability)`
 
+!!! note 
+    * For Liferay 7.4 2023.Q4+/GA102+, you must have *Object Folder > View* permissions to access the Objects UI. See [Objects Application Permissions](../objects-application-permissions.md) for more information.
+    * Model Builder moved from [Release Feature to Generally Available (GA)](#model-builder-availability) in Liferay 7.4 2024.Q1/GA112.
+
 Liferay Objects provides the Model Builder GUI for designing complex object structures. This graphical tool displays each object definition as a card and visualizes relationships between object definitions. With it, you can create, manage, and extend data models in the Objects application and quickly configure definitions, fields, and relationships.
 
 ![Use the Model Builder GUI to design complex data structures.](./using-the-objects-model-builder/images/01.png)
-
-!!! note 
-    For Liferay 7.4 2023.Q4+/GA102+, you must have *Object Folder > View* permissions to access the Objects UI. See [Objects Application Permissions](../objects-application-permissions.md) for more information.
 
 To access the Model Builder view,
 

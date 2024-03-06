@@ -23,7 +23,7 @@ As a quick refresher, Liferay's product is Liferay DXP, and includes core Digita
 
 ![The Liferay Product line has three capability sets.](./liferay-product-offering/images/01.png)
 
-It's also important to note that, while the product is called "Liferay DXP", the features it contains are substantial, allowing it to be used in Content Management (CMS), Commerce, Low-Code (LCAP), Portal, Digital Experience, and many other scenarios.
+It's important to note that, while the product is called "Liferay DXP", the features it contains are substantial, allowing it to be used in Content Management (CMS), Commerce, Low-Code (LCAP), Portal, Digital Experience, and many other scenarios.
 
 ![Liferay DXP includes 10 main capabilities.](./liferay-product-offering/images/07.png)
 

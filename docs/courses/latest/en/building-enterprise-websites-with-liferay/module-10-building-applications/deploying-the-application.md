@@ -72,7 +72,7 @@ In order to deploy Client Extensions to your SaaS environment, you'll use the Li
 
    ![The command returns a list of available projects to deploy the extension.](./deploying-the-application/images/01.png)
 
-1. After the deployment finishes, open the [Cloud Console](https://console.liferay.cloud/) and go into the choosen project environment's Services menu. Make sure the `liferayclaritypicklistsbatch`'s service status shows `ready`.
+1. After the deployment finishes, open the [Cloud Console](https://console.liferay.cloud/) and go into the chosen project environment's Services menu. Make sure the `liferayclaritypicklistsbatch`'s service status shows `ready`.
 
 1. Finally, go into your Liferay instance, go to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Picklists_. Once the menu opens, confirm that all picklists display.
 
@@ -92,22 +92,15 @@ After the server finishes processing the Client Extension, go into your Liferay 
 
 ## Deploying the Objects
 
-The Distributor Application solution uses two objects:
-
-* **Distributor Application:** Stores the necessary business information for verifying each applicant's identity and credit for Know Your Customer (KYC) best practice and compliance with Anti-Money Laundering (AML) laws. Additionally, Clarity collects information that can help them assess the relative value of each prospective distributor.
-* **Application Evaluations:** Keeps notes and recommendations made during the review process. Users that are responsible for reviewing the applications can relate each evaluation to an application and each application to multiple evaluations.
-
-Both of them are the main parts of the solution, as all functionality and data are determined by how they're configured.
-
 ### Exercise 1
 
-Now that you know how to deploy a Client Extension using a preconfigured Liferay Workspace, let's deploy the Distributor Applications and Application Evaluations objects.
+The prebuilt solution uses two Liferay objects, the Distributor Application object and the Application Evaluation object. You will learn more about these objects and how they are configured in the following sections. For now, we'll just deploy them to your Liferay instance with the same method you used to deploy the picklists.
 
 Go to the `liferay-clarity-objects-batch/` directory and repeat the steps from the [previous section](#deploying-the-picklists).
 
 ### Bonus Exercise
 
-If Exercise 1 was done correctly, both objects were successfully deployed and can be interacted with. Now let's create and review a Distributor Application entry.
+If you completed Exercise 1 successfully, you can now interact with the deployed objects. Let's create and review a Distributor Application entry.
 
 1. Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_. Notice that two new options appear under Object: Application Evaluations and Distributor Applications.
 
@@ -141,7 +134,7 @@ An evaluation entry is automatically assigned to the application. You can confir
 
    ![The Evaluation Notes displays the assigned evaluations related to the application entry](./deploying-the-application/images/06.png)
 
-Now that you've deployed the main parts of the solution, let's move to the next section.
+Now that you've deployed the main parts of the solution, let's move on. The following sections will guide you through the features of the solution and some of the decisions Clarity had to make in designing it.
 
 Up next: [Modeling Data Structures](./modeling-data-structures.md)
 

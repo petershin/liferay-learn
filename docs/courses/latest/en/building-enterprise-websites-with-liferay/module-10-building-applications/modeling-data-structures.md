@@ -33,7 +33,7 @@ Attributes represent database columns that store specific types of information f
 
 <!--IMAGE: Example database diagram to demonstrate the different types of fields. Maybe show picklist column with a dropdown selection. -->
 
-For Clarity's use case, each distributor application should store the necessary business information for verifying each applicant's identity and credit for Know Your Customer (KYC) best practice and compliance with Anti-Money Laundering (AML) laws. As such, the Distributor Application object contains fields for the applicant's name, title, email, and phone number, along with a *Comments* field for the applicant to write a message. 
+For Clarity's use case, each distributor application should store the necessary business information for verifying each applicant's identity and credit for Know Your Customer (KYC) best practices and compliance with Anti-Money Laundering (AML) laws. As such, the Distributor Application object contains fields for the applicant's name, title, email, and phone number, along with a *Comments* field for the applicant to write a message. 
 
 Additionally, Clarity must collect information that can help them assess the relative value of each prospective distributor. In this case, they want applicants to select from predefined options, so they have added the following picklists to the Distributor Application object definition:
 
@@ -67,7 +67,7 @@ For Clarity's distributor application flow, users must be able to relate each ev
 
 Once the relationship has been added between the object definitions, you can relate individual object entries to one another through either the Liferay UI or relationship REST APIs.
 
-Now that you've learned about the process of modeling data structures with Liferay Objects, you can move on to [Implementing Business Logic](./implementing-business-logic.md)
+Now that you've learned about the process of modeling data structures with Liferay Objects, let's move on to [Implementing Business Logic](./implementing-business-logic.md).
 
 ## Additional Resources
 

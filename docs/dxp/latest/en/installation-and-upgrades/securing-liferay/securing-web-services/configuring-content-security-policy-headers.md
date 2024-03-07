@@ -12,17 +12,17 @@ Modern browsers use [Content Security Policy](https://content-security-policy.co
 
 CSP policies have many options. It is best to understand your users' needs and come up with a policy to suit their requirements. After enabling CSP headers, they’re enforced by the browsers. Visit the links below to learn more about how browsers handle CSP headers:
 
-* [Mozilla](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy)
 * [Google Chrome](https://developer.chrome.com/docs/privacy-security/csp)
+* [Mozilla](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy)
 
 !!! warning
     This feature is currently behind a beta feature flag. See [Beta Feature Flags](../../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags) for more information. Configuring an unsupported content security policy can cause your instance to malfunction.
 
 ## Content Security Policy Directives and Values
 
-You can separate Content Security Policy into two: directives and values. Using directives and values, you can form a robust policy to protect web applications against a variety of threats.
+Content Security Policies take the form of key-value pairs. The keys are directives, and they can have values. Using directives and values, you can form a robust policy to protect web applications against a variety of threats.
 
-* Directives - Directives specify the rules for resources (scripts, stylesheets, images, etc.) a browser can load or execute on a web page. Below are examples of some commonly used directives.
+**Directives:** Directives specify the resources (scripts, stylesheets, images, etc.) a browser can load or execute on a web page. Below are examples of some commonly used directives.
 
 | Directive         | Description                                                                                |
 | :---------------- | :----------------------------------------------------------------------------------------- |
@@ -34,7 +34,7 @@ You can separate Content Security Policy into two: directives and values. Using 
 | `script-src-attr` | Specifies the sources from where you can load inline script event handlers like onClick.   |
 | `style-src`       | Specifies the sources from where you can load stylesheets.                                 |
 
-* Values - Values complement directives by specifying the approved origins to load resources from. Below are examples of some commonly used values. In addition to these, you can also specify URLs.
+**Values:** Values specify the approved origins to load resources from. Below are examples of some commonly used values. In addition to these, you can also specify URLs.
 
 | Value            | Description                                                                                                |
 | :--------------- | :--------------------------------------------------------------------------------------------------------- |
@@ -49,17 +49,11 @@ It's important to note that while `unsafe-eval` and `unsafe-inline` provide flex
 
 ## Configuring a Sample Content Security Policy
 
-To configure a sample content security policy in Liferay,
-
-1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)) and navigate to *Control Panel* &rarr; *System Settings* &rarr; *Security* &rarr; *Content Security Policy*.
+1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)) and navigate to *Control Panel* &rarr; *Instance Settings* &rarr; *Security* &rarr; *Content Security Policy*.
 
    ![Configuring a content security policy.](./configuring-content-security-policy-headers/images/01.png)
 
-1. To enable CSP headers, check the *Enabled* checkbox. You can enter your policy in the *Content Security Policy* input field and specify a number of paths to exclude.
-
-   * **Content Security Policy** - Specify the content security policy to enforce. The value entered here appears as the value for the `Content-Security-Policy` HTTP header. You can add a [nonce](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy#nonce-) by using the placeholder `'[$NONCE$]'` in your content security policy. The placeholder gets replaced with a generated nonce for the tags you specify.
-
-   * **Excluded Paths** - Paths that start with the value added here are excluded from the content security policy. You can add multiple paths to exclude by clicking the ![Add Setting icon](../../../images/icon-add-setting.png) button or remove them using the ![Remove Setting icon](../../../images/icon-remove-setting.png) button.
+1. To enable CSP headers, check the *Enabled* checkbox. You can enter your policy in the *Content Security Policy* input field and specify a number of paths to exclude (see below). 
 
 1. Enter the following policy in the *Content Security Policy* input field.
 
@@ -67,28 +61,30 @@ To configure a sample content security policy in Liferay,
    default-src 'self'; script-src 'self' https://trusted-cdn.example.com '[$NONCE$]'; style-src 'self' https://trusted-cdn.example.com '[$NONCE$]' base-uri 'self';
    ```
 
-  This sample content security policy only allows resources to load from the same origin `self` and from the trusted content delivery network `https://trusted-cdn.example.com`. It also includes the nonce `'[$NONCE$]'` for scripts and stylesheets to secure their integrity and prevent unauthorized script execution. The `base-url 'self'` value instructs the browser to only allow loading resources from the same origin as the document.
+  This sample content security policy allows resources to load only from the same origin `self` and from the trusted content delivery network `https://trusted-cdn.example.com`. It also includes the nonce `'[$NONCE$]'` for scripts and stylesheets to secure their integrity and prevent unauthorized script execution. The `base-url 'self'` value instructs the browser to allow loading resources only from the same origin as the document.
 
 1. Click *Update*.
 
+**Content Security Policy:** Specify the content security policy to enforce. The value entered here appears as the value for the `Content-Security-Policy` HTTP header. You can add a [nonce](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy#nonce-) by using the placeholder `'[$NONCE$]'` in your content security policy. The placeholder is replaced with a generated nonce for the tags you specify.
+
+**Excluded Paths:** Paths that start with the value added here are excluded from the content security policy. You can add multiple paths to exclude by clicking the ![Add Setting icon](../../../images/icon-add-setting.png) button or remove them using the ![Remove Setting icon](../../../images/icon-remove-setting.png) button.
+
 !!! note
-    This applies the configuration to all sites for all instances. If you want to configure CSP headers for all sites of a specific instance, go to *Control Panel* &rarr; *Instance Settings* &rarr; *Security* &rarr; *Content Security Policy*. If you want to configure CSP headers for a specific site, open the site menu and go to *Configuration* &rarr; *Site Settings* &rarr; *Security* &rarr; *Content Security Policy*.
+    CSP configuration is available at all scopes. For the system scope, go to *Control Panel* &rarr; *System Settings* &rarr; *Security* &rarr; *Content Security Policy*. For the site scope, open the site menu and go to *Configuration* &rarr; *Site Settings* &rarr; *Security* &rarr; *Content Security Policy*.
 
 ## Current Limitations of CSP
 
 This feature is still in beta and has the following limitations.
 
-* **CSP constraints with Webpack Bundling** - Liferay uses Webpack for bundling code and there are instances where strings get evaluated as code. For this to work with CSP, you must add the `unsafe-eval` value to the `script-src` directive.
+* Your `script-src` directive must have the `unsafe-eval` and `unsafe-inline` values defined. The first is to support [Webpack](https://webpack.js.org), because Liferay uses it to bundle code, and the second is to support CKEditor 4, which is the only supported WYSIWYG editor.
 
-* **CKEditor Conflicts** - CKEditor causes issues due to the above restrictions with the `script-src` directive. To overcome this, you can add the `unsafe-eval` value to the `script-src` directive. This is not recommended but Liferay uses CKEditor 4 which is the only supported WYSIWYG (What You See Is What You Get) editor and it cannot be used without `unsafe-inline`.
+* Your `style-src` directive must have the `unsafe-inline` value, because Liferay has both inline style attributes and also adds stylesheets to the `<head>` tag using scripts. 
 
-* **Inline styles and stylesheets added dynamically** - Liferay contains several inline style attributes within HTML elements and also adds stylesheets to the `<head>` tag using scripts. For this to work with CSP, you must add the `unsafe-inline` value to the `style-src` directive.
-
-* **Inline event listeners** - Liferay contains inline event listeners within HTML elements. For this to work with CSP, you must add the `unsafe-inline` value to the `script-src-attr` directive.
+* Your `script-src-attr` directive must have the `unsafe-inline` value, because Liferay contains inline event listeners within HTML elements.
 
 !!! note
-    Content Security Police works best with SPA disabled. To disable it, add `javascript.single.page.application.enabled=false` to your [portal-ext.properties file](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/reference/portal-properties.html).
-    Site level configuration panel and common pages (such as the 404 page) belong to the instance, so it uses the instance level CSP headers.
+    Content Security Policies work best with SPA disabled. To disable it, add `javascript.single.page.application.enabled=false` to your [portal-ext.properties file](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/reference/portal-properties.html).
+    Site level configuration panel and common pages (such as the 404 page) belong to the instance, so they use the instance level CSP headers.
 
 ## Related Topics
 

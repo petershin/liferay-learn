@@ -49,10 +49,10 @@ Given the breadth and depth of Liferay features and configurations, it is imposs
 
 To bridge the gap between theory and practice, this course will lead you through building an enterprise marketing website for a fictional company, Clarity Vision Solutions. Before diving into the technical aspects of Liferay DXP, we'll introduce Clarity and outline what you'll be building. <!--TASK: improve rigid transition-->
 
-![This course will lead you through building an enterprise marketing website for a fictional company, Clarity Vision Solutions.](./building-enterprise-websites-with-liferay/images/02.png) 
+![This course will lead you through building an enterprise marketing website for a fictional company, Clarity Vision Solutions.](./building-enterprise-websites-with-liferay/images/02.png)
 <!--TASK: Update img once design is finalized.-->
 
-Up Next: [Getting Started with Clarity](./building-enterprise-websites-with-liferay/module-1-getting-started-with-clarity.md)
+Up First: [Getting Started with Clarity](./building-enterprise-websites-with-liferay/module-1-getting-started-with-clarity.md)
 
 ::::{grid} 2
 :gutter: 3 3 3 3

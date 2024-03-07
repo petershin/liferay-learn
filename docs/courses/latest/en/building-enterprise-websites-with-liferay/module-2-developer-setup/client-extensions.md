@@ -7,7 +7,7 @@ Client Extensions are the recommended way to customize and extend Liferay. You c
 
 <!--IMAGE: diagram of how Client Extensions interface with Liferay-->
 
-You can use Liferay Workspace to develop and deploy your own client extensions, which you will explore further in *Module 9: Building Applications*.
+You can use Liferay Workspace to develop and deploy your own client extensions, which you will explore further in *Module 10: Building Applications*.
 
 ## Types of Client Extensions
 

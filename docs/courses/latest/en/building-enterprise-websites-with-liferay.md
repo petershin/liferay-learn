@@ -7,9 +7,9 @@ toc:
 - ./building-enterprise-websites-with-liferay/module-5.md
 - ./building-enterprise-websites-with-liferay/module-6.md
 - ./building-enterprise-websites-with-liferay/module-7.md
-- ./building-enterprise-websites-with-liferay/module-8.md
-- ./building-enterprise-websites-with-liferay/module-9.md
-- ./building-enterprise-websites-with-liferay/module-10.md
+- ./building-enterprise-websites-with-liferay/module-8-headless-delivery.md
+- ./building-enterprise-websites-with-liferay/module-9-search.md
+- ./building-enterprise-websites-with-liferay/module-10-building-applications.md
 - ./building-enterprise-websites-with-liferay/module-11.md
 - ./building-enterprise-websites-with-liferay/module-12.md
 uuid: 28bfc1dd-8a55-4377-aa3a-e5fdd9da55fb
@@ -99,20 +99,20 @@ Coming Soon in Q1 2024
 Coming Soon in Q1 2024
 :::
 
-:::{grid-item-card}  Module 8: Search
-:link: ./building-enterprise-websites-with-liferay/module-8.md
+:::{grid-item-card}  Module 8: Headless Delivery
+:link: ./building-enterprise-websites-with-liferay/module-8-delivery.md
 
 Coming Soon in Q1 2024
 :::
 
-:::{grid-item-card}  Module 9: Building Applications
-:link: ./building-enterprise-websites-with-liferay/module-9.md
+:::{grid-item-card}  Module 9: Search
+:link: ./building-enterprise-websites-with-liferay/module-9-search.md
 
 Coming Soon in Q1 2024
 :::
 
-:::{grid-item-card}  Module 10: Headless Delivery
-:link: ./building-enterprise-websites-with-liferay/module-10.md
+:::{grid-item-card}  Module 10: Building Applications
+:link: ./building-enterprise-websites-with-liferay/module-10-building-applications.md
 
 Coming Soon in Q1 2024
 :::

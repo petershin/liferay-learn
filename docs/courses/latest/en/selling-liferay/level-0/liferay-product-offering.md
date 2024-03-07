@@ -96,7 +96,7 @@ Finally, they must build their solution on DXP.
 
 ### Liferay PaaS
 
-Liferay PaaS (formerly DXP Cloud) is our Platform-as-a-Service offering. Liferay provides the software itself and also the infrastructure, all of the platform services, and so on.
+Liferay PaaS (formerly Liferay Experience Cloud Self-Managed) is our Platform-as-a-Service offering. Liferay provides the software itself and also the infrastructure, all of the platform services, and so on.
 
 Additionally, with Liferay PaaS, there are predefined offers that include things like backup and VPN services. Furthermore, these scale via OOTB high availability, auto-scaling capabilities, auto-failover capabilities, and provide load balancing.  These activities are very important, but they can be hard and/or expensive to implement.
 
@@ -130,7 +130,7 @@ But there are still some time-consuming and relatively low-value activities that
 
 ### Liferay SaaS
 
-The final product deployment offering is Liferay Saas. This is a SaaS offering which frees customers to focus on what really matters: creating, launching, and maintaining business applications.
+The final product deployment offering is Liferay SaaS. This is a SaaS offering which frees customers to focus on what really matters: creating, launching, and maintaining business applications.
 
 With Liferay SaaS, Liferay provides and manages all of the infrastructure and all of the low-value activities needed to maintain Liferay DXP. Liferay applies product updates on a quarterly basis, testing these against customers' data, and does SAST and DAST security scanning.
 

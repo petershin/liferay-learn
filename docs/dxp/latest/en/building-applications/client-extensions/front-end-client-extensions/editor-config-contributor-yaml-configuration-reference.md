@@ -31,12 +31,12 @@ able-editorConfigContributor:
    url: index.js
 ```
 
-Editor Config Contributor client extensions override existing CKEditor customization in a `ConfigContributor.java` file. Configuration options of the client extension must match the `ConfigContributor` it's overriding (portlet names, editor names, and editor config keys).
+Editor Config Contributor client extensions override existing CKEditor configurations in a `ConfigContributor.java` file. Configuration options of the client extension must match the `ConfigContributor` it's overriding (portlet names, editor names, and editor config keys).
+
+Client extensions are deployed at the instance level and impact all CKEditor instances across pages within that virtual instance if they meet the configuration criteria.
 
 !!! tip
-    Client extensions are deployed at the instance level and impact all CKEditor instances across pages within that virtual instance.
-
-    In addition, if you don't specify any configuration options in the client extension, it will apply to every CKEditor instance within the DXP environment.
+    By specifying configuration options, you can control which CKEditor instances your extensions affect. If you omit specific configuration options, the extension will apply to all CKEditors filtered by the provided criteria. However, if no options are specified, the extension will apply to every CKEditor instance within the DXP environment.
 
 The required URL property points to a JavaScript snippet which should implement a function according to the [TypeScript interfaces outlined in the public API](https://github.com/liferay/liferay-frontend-projects/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/projects/js-toolkit/packages/js-api/editor/index.ts).
 

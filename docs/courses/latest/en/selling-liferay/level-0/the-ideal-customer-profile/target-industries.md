@@ -77,6 +77,10 @@ Energy and utilities companies' needs are not that different from other industri
 
 Lowering costs to serve and increasing end customer satisfaction are the main drivers. This can be achieved by allowing end customers to manage their own accounts, pay online, and solve problems without needing to contact a representative.
 
+## Other Verticals
+
+Other industries where Liferay has lots of customers include Wealth management, Telco, Logistics, Education, and many more.
+
 ## Example Customers
 
 Liferay is flexible enough to serve the complex needs of global enterprise customers, but is also used by many medium sized companies and public sector organizations who use our platform to deliver digital experiences for their end users and customers.

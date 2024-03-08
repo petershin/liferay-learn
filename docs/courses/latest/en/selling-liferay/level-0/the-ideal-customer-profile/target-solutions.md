@@ -11,9 +11,9 @@ visibility:
 
 * Liferay can be used to solve almost any business problem.
 
-Liferay DXP is---as it states in the name---a platform, and it is flexible to cater for all sorts of needs.
+The Liferay platform is extremely flexible to cater for all sorts of needs. 
 
-Our out-of-the-box product capabilities can be used for almost any solution; however, they are particularly suitable for certain types of solutions and use cases:
+The rich product capabilities, low code capabilities and extensibility are well suited for almost any solution and particularly suitable for certain solutions and use cases: 
 
 * Customer Portals
 * Digital Commerce
@@ -44,13 +44,13 @@ With a Partner Portal the customer can support their partners’ sales and techn
 
 By integrating with other platforms, such as CRM, it is possible to automate lead routing, MDF workflows, and more.
 
-## External Websites
+## Enterprise Websites
 
 In many ways self-service starts from even before a customer has logged in or posted anything. When there are several digital touch points in play, (e.g on top of web there are Kiosks, Chatbots, mobile, email)  Liferay can orchestrate the systems required for these channels. Most pure CMS vendors (regardless of how fancy they make it look), cannot handle this very well and Liferay beats them hands down once it becomes about associated application management and not just content.
 
 Liferay’s multi-tenancy capabilities are well appreciated by those customers who need a lot of sites.
 
-## Modern Intranets
+## Intranets
 
 With a modern employee portal our customers can have their employees share, collaborate, and communicate on one platform and keep everyone in their organization productive, self-sufficient, and connected. Liferay DXP's portal heritage makes it particularly suitable for various Intranet use cases in the same way that it is well suited to customer self-service use cases.
 
@@ -58,7 +58,7 @@ Many common intranet platforms lack personalization features or modularity or ea
 
 ## Other Solutions
 
-Of course, the solutions covered so far do not represent every solution that can be solved with Liferay. Liferay DXP is also used, for example, as an integration platform, agent portal, student portal, and more.
+Of course, the solutions covered so far do not represent every solution that can be solved with Liferay. Liferay DXP is also used, for example, as an integration platform, agent portal, student portal, and more. Liferay categorizes the platform as a DXP, but it can be equally categorized as a Low Code Application Platform (LCAP), a Commerce Platform, or a Content Management System (CMS) as well.
 
 ## Demographics and Other Factors
 

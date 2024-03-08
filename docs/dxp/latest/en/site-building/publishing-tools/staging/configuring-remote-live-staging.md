@@ -43,9 +43,8 @@ If you haven't already, follow these steps to configure your Liferay servers for
 
    If the server has multiple IP addresses, each IP address must be added.
 
-   ```{important}
-   If you're validating IPv6 addresses, you must configure the app server's JVM to not force the usage of IPv4 addresses. For example, if you're using Tomcat, add the `-Djava.net.preferIPv4Stack=false` attribute in the `$TOMCAT_HOME\bin\setenv.[bat|sh]` file.
-   ```
+   !!! important
+       If you're validating IPv6 addresses, you must configure the app server's JVM to not force the usage of IPv4 addresses. For example, if you're using Tomcat, add the `-Djava.net.preferIPv4Stack=false` attribute in the `$TOMCAT_HOME\bin\setenv.[bat|sh]` file.
 
 1. Update the remote instance's *Tunnel Authentication Verifier Configuration*.
 
@@ -55,11 +54,10 @@ If you haven't already, follow these steps to configure your Liferay servers for
 
    ![Update the remote instance's Tunnel Authentication Verifier Configuration via the Control Panel.](./configuring-remote-live-staging/images/02.png)
 
-   ```{note}
-   While it is enabled by default, ensure each Liferay server's tunneling servlet [authentication verifier](../../../installation-and-upgrades/securing-liferay/securing-web-services/using-authentication-verifiers.md) is enabled.
-   ```
+   !!! note
+       While it is enabled by default, ensure each Liferay server's tunneling servlet [authentication verifier](../../../installation-and-upgrades/securing-liferay/securing-web-services/using-authentication-verifiers.md) is enabled.
 
-   Alternatively, you can write this configuration into an OSGi file in your Liferay instance (e.g., `osgi/configs/com.liferay.portal.security.auth.verifier.tunnel.module.configuration.TunnelAuthVerifierConfiguration-default.config`):
+   Alternatively, you can write this configuration into an OSGi file in your Liferay instance (e.g., `osgi/configs/com.liferay.portal.security.auth.verifier.internal.tunnel.configuration.TunnelAuthVerifierConfiguration~default.config`):
 
    ```
    enabled=true
@@ -72,9 +70,8 @@ If you haven't already, follow these steps to configure your Liferay servers for
 
 Once restarted, both servers are ready for staging configuration.
 
-```{important}
-When applying patches to a remote staging environment, you must apply them to all your servers. Having servers on different patch levels is not a good practice and can lead to import failures and data corruption. It is essential that all servers are updated to the same patch level to ensure remote staging works correctly.
-```
+!!! important
+    When applying patches to a remote staging environment, you must apply them to all your servers. Having servers on different patch levels is not a good practice and can lead to import failures and data corruption. All servers must be updated to the same patch level to ensure remote staging works correctly.
 
 ## Setting Up Remote Live Staging
 
@@ -100,11 +97,10 @@ Once you've prepared your Liferay servers, follow these steps to set up Remote L
 
    **Remote Site ID**/**Remote Asset Library ID**: Enter the *Site ID*/*Asset Library ID* for the desired target.
 
-   ```{note}
-   If you're configuring an IPv6 address, it must contain brackets when entered into the *Remote Host/IP* field (e.g., [0:0:0:0:0:0:0:1]).
+   !!! note
+       If you're configuring an IPv6 address, it must contain brackets when entered into the *Remote Host/IP* field (e.g., [0:0:0:0:0:0:0:1]).
 
-   If the remote server is a cluster, you can set the Remote Host/IP to the cluster's load balanced IP address to increase the availability of the publishing process. See the [Configuring Remote Staging in a Clustered Environment](https://help.liferay.com/hc/en-us/articles/360018175251-Configuring-Remote-Staging-in-a-Clustered-Environment) for details.
-   ```
+       If the remote server is a cluster, you can set the Remote Host/IP to the cluster's load balanced IP address to increase the availability of the publishing process. See the [Configuring Remote Staging in a Clustered Environment](https://help.liferay.com/hc/en-us/articles/360018175251-Configuring-Remote-Staging-in-a-Clustered-Environment) for details.
 
 1. Determine whether to use a secure network connection (i.e., HTTPS) for publishing pages from staging to live.
 
@@ -122,15 +118,13 @@ Once you've prepared your Liferay servers, follow these steps to set up Remote L
 
    ![Select the data and content types you want to stage.](./configuring-remote-live-staging/images/05.png)
 
-   ```{warning}
-   When applications are checked, their data is copied, and it may not be possible to edit them directly on the live site. When unchecking an application, first make sure that any changes in staging are published, since they may be lost. See [Managing Data and Content Types in Staging](./managing-data-and-content-types-in-staging.md) for more information.
-   ```
+   !!! warning
+       When applications are checked, their data is copied, and it may not be possible to edit them directly on the live site. When unchecking an application, first make sure that any changes in staging are published, since they may be lost. See [Managing Data and Content Types in Staging](./managing-data-and-content-types-in-staging.md) for more information.
 
 1. Click *Save* to initiate the staging process. The duration of this process depends on the size of your site or asset library.
 
-   ```{note}
-   If your attempt to enable Remote Live staging fails, please verify that you've properly prepared your servers.
-   ```
+   !!! note
+       If your attempt to enable Remote Live staging fails, please verify that you've properly prepared your servers.
 
 Once the process is complete, you are ready to use Remote Live staging. See [Site Staging UI Reference](./site-staging-ui-reference.md) for information about navigating the staging environment's publishing features.
 
@@ -156,11 +150,10 @@ This property sets the file block sizes for remote staging. If a LAR file used f
 
 Disabling Remote Live staging disables the connection between your environments without deleting any data. Since no data is erased and no processes are started, disabling Remote Live staging is almost instantaneous.
 
-```{warning}
-When you disable remote staging, you must ensure the live site or asset library is still accessible so both sides can communicate. Do not shut down your live environment. If the network connection is ever lost between environments, an error message appears and instructs you to forcibly disable staging.
+!!! warning
+    When you disable remote staging, you must ensure the live site or asset library is still accessible so both sides can communicate. Do not shut down your live environment. If the network connection is ever lost between environments, an error message appears and instructs you to forcibly disable staging.
 
-Forcibly disabling staging erases your staging information from your staging server, not the content. The live environment remains in a locked state. A possible workaround is to create a new live site or asset library and import content to it, if necessary.
-```
+    Forcibly disabling staging erases your staging information from your staging server, not the content. The live environment remains in a locked state. A possible workaround is to create a new live site or asset library and import content to it, if necessary.
 
 Follow these steps to disable Remote Live Staging:
 
@@ -174,7 +167,7 @@ Follow these steps to disable Remote Live Staging:
 
 ## Related Topics
 
-* [Staging Overview](../staging.md)
-* [Site Staging UI Reference](./site-staging-ui-reference.md)
-* [Managing Staging Permissions](./managing-staging-permissions.md)
-* [Managing Data and Content Types in Staging](./managing-data-and-content-types-in-staging.md)
+- [Staging Overview](../staging.md)
+- [Site Staging UI Reference](./site-staging-ui-reference.md)
+- [Managing Staging Permissions](./managing-staging-permissions.md)
+- [Managing Data and Content Types in Staging](./managing-data-and-content-types-in-staging.md)

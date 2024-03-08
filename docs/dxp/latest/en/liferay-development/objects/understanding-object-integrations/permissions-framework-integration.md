@@ -51,6 +51,8 @@ Resource permissions grant access to view, create, and act on entries for custom
 | Add Object Entry | Create an entry. This permission is required to view the associated object's form container. Without it, form containers are not displayed in View and Preview modes. |
 | Permissions      | View and manage permissions related to creating entries.                                                                                                              |
 
+To learn about managing an unauthenticated guest user's ability to add object entries, see [Managing Guest User Permissions](./managing-guest-user-entries.md).
+
 ### Acting on Existing Entries
 
 | Permission           | Description                                                                                                                                                                                                                                                                                                        |

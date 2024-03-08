@@ -13,7 +13,7 @@ Liferay has many ways to customize your site's appearance. Your site's favicon a
 
 ## Changing Your Site's Favicon
 
-``` {include} /_snippets/run-liferay-portal.md
+```{include} /_snippets/run-liferay-portal.md
 ```
 
 Then, follow these steps:

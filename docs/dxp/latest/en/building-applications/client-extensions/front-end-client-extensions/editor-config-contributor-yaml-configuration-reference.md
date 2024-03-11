@@ -31,14 +31,14 @@ able-editorConfigContributor:
    url: index.js
 ```
 
-Editor Config Contributor client extensions override existing CKEditor configurations in a `ConfigContributor.java` file. Configuration options of the client extension must match the `ConfigContributor` it's overriding (portlet names, editor names, and editor config keys).
+Editor Config Contributor client extensions override existing CKEditor configurations in a `ConfigContributor.java` file. The client extension's configuration options must match the `ConfigContributor` it's overriding (portlet names, editor names, and editor config keys).
 
 Client extensions are deployed at the instance level and impact all CKEditor instances across pages within that virtual instance if they meet the configuration criteria.
 
 !!! tip
-    By specifying configuration options, you can control which CKEditor instances your extensions affect. If you omit specific configuration options, the extension will apply to all CKEditors filtered by the provided criteria. However, if no options are specified, the extension will apply to every CKEditor instance within the DXP environment.
+    By specifying configuration options, you can control which CKEditor instances your extensions affect. If you omit specific configuration options, the extension applies to all CKEditors filtered by the provided criteria. If no options are specified, the extension applies to every CKEditor instance in the DXP environment.
 
-The required URL property points to a JavaScript snippet which should implement a function according to the [TypeScript interfaces outlined in the public API](https://github.com/liferay/liferay-frontend-projects/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/projects/js-toolkit/packages/js-api/editor/index.ts).
+The required URL property points to a JavaScript snippet that should implement a function according to the [TypeScript interfaces outlined in the public API](https://github.com/liferay/liferay-frontend-projects/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/projects/js-toolkit/packages/js-api/editor/index.ts).
 
 [The example workspace](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/workspaces/liferay-sample-workspace/client-extensions/liferay-sample-editor-config-contributor) includes a complete Editor Config Contributor client extension.
 
@@ -49,8 +49,8 @@ The required URL property points to a JavaScript snippet which should implement 
 
 These properties are specific to Editor Config Contributor client extensions:
 
-| Name               | Data Type   | Description                                                                                                                        |
-|:-------------------|:------------|:-----------------------------------------------------------------------------------------------------------------------------------|
+| Name               | Data Type     | Description                                                                                                                        |
+|:-------------------|:--------------|:-----------------------------------------------------------------------------------------------------------------------------------|
 | `editorConfigKeys` | `Set<String>` | Specifies the keys related to the editor configurations that this client extension will override or contribute to.                 |
 | `name`             | `String`      | The name of the client extension.                                                                                                  |
 | `type`             | `String`      | Indicates the type of client extension.                                                                                            |

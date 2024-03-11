@@ -2,8 +2,8 @@
 toc:
 - ./module-4-identity-management-and-sso/liferay-authentication.md
 - ./module-4-identity-management-and-sso/managing-clarity-employees.md
-- ./module-4-identity-management-and-sso/setting-up-sso.md
-- ./module-4-identity-management-and-sso/liferay-security-features.md
+- ./module-4-identity-management-and-sso/using-okta-for-authentication-and-sso.md
+- ./module-4-identity-management-and-sso/managing-clarity-business-partners-and-guests.md
 uuid: 57aef6ee-03e9-4056-abf1-ebdbdb4984e4
 ---
 # Module 4: Identity Management & SSO
@@ -51,14 +51,26 @@ Up First: [Liferay Authentication](./module-4-identity-management-and-sso/lifera
 ::::{grid} 2
 :gutter: 3 3 3 3
 
-:::{grid-item-card}  Setting up SSO
-:link: ./module-4-identity-management-and-sso/setting-up-sso.md
+:::{grid-item-card}  Liferay Authentication
+:link: ./module-4-identity-management-and-sso/liferay-authentication.md
 
-See how to implement Okta single sign-on service with Liferay.
+Learn the basics of Liferay authentication and identity management.
 :::
 
-:::{grid-item-card}  Liferay Security Features
-:link: ./module-4-identity-management-and-sso/liferay-security-features.md
+:::{grid-item-card}  Managing Clarity Employees
+:link: ./module-4-identity-management-and-sso/managing-clarity-employees.md
 
-Learn about the different security features that are available to protect and control user login.
+Learn more about the business problems Clarity is seeking to solve for its employees.
+:::
+
+:::{grid-item-card}  Using Okta for Authentication and SSO
+:link: ./module-4-identity-management-and-sso/using-okta-for-authentication-and-sso.md
+
+Learn about SAML authentication and how to configure Okta single sign-on service with Liferay.
+:::
+
+:::{grid-item-card}  Managing Clarity Business Partners and Guests
+:link: ./module-4-identity-management-and-sso/managing-clarity-business-partners-and-guests.md
+
+Finally, learn about different authentication options Clarity could use for its Business Partners and other users.
 :::

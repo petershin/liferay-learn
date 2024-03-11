@@ -110,3 +110,83 @@ Here's an example `LCP.json` file that uses all the properties:
   }
 }
 ```
+
+## The `environments` Configuration
+
+The `environments` configuration allows for environment-specific overrides to the `LCP.json` configuration.
+
+For example, the CI service should only be deployed to the `infra` environment, so this `environments` configuration overrides the behavior (`"deploy": false`) specifically for the `infra` environment:
+
+```json
+{
+  "id": "ci",
+  "memory": 8192,
+  "cpu": 4,
+  "deploy": false,
+  "environments": {
+    "infra": {
+      "deploy": true
+    }
+  }
+}
+```
+
+### Overriding JSON Objects
+
+For JSON object configurations (such as a `loadBalancer` configuration), specify only the specific fields that you want to override per environment. Any other fields are inherited from the existing configuration by default.
+
+In this example, the `environments` configuration disables the CDN for the `dev` environment, but keeps the target port of `80` for all environments.
+
+```json
+{
+  "id": "webserver",
+  "memory": 512,
+  "cpu": 2,
+  "loadBalancer": {
+    "targetPort": 80,
+    "cdn": true
+  },
+  "environments": {
+    "dev": {
+      "loadBalancer": {
+        "cdn": false
+      }
+    }
+  }
+}
+```
+
+### Overriding JSON Arrays
+
+Unlike [JSON objects](#overriding-json-objects), if you override a JSON array in an `environments` configuration, you must define the whole array in the override. Any elements of the array that you don't include are not included in the environment-specific result.
+
+In this example overriding the `ports` array, the `environments` configuration configures the `uat` environment with only one port (but two for all other environments).
+
+```json
+{
+  "id": "database",
+  "memory": 1024,
+  "cpu": 2,
+  "ports": [
+    {
+      "port": 3306,
+      "external": false
+    },
+    {
+      "port": 3000,
+      "external": false
+    }
+  ],
+  "environments": {
+    "uat": {
+      "ports": [
+        {
+          "port": 3306,
+          "external": true
+        }
+      ]
+    }
+  }
+}
+```
+

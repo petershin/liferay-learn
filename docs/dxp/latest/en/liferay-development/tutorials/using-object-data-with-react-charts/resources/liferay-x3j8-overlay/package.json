@@ -1,6 +1,0 @@
-{
-	"dependencies": {
-		"fusioncharts": "^3.18.0",
-		"react-fusioncharts": "^3.1.2"
-	}
-}

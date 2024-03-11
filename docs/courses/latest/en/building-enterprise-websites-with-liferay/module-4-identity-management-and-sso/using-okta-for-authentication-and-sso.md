@@ -4,17 +4,17 @@ uuid: ba75bce7-ccf4-4c5a-bffe-7c247434dac2
 
 # Integrating Okta SSO
 
-Clarity is leveraging Okta’s Workforce Identity Cloud product to manage their employee information.  Okta is a Cloud based Identity Management service that allows Clarity to securely manage their employee’s identity information and manage secure authentication into the applications they use.  Okta provides many different features, but for this training we’re going to be focusing on their support of the SAML protocol to support Single Sign On.
+Clarity is leveraging Okta’s Workforce Identity Cloud product to manage their employee information. Okta is a Cloud based Identity Management service that allows Clarity to securely manage their employee’s identity information and manage secure authentication into the applications they use. Okta provides many different features, but for this training we’re going to be focusing on their support of the SAML protocol to support Single Sign On.
 
 <!-- ![okta image](https://) -->
 
 ## What is SAML?
 
-SAML stands for Security Assertion Markup Language and it is an open standard used for authentication. SAML works by passing authentication information in a specific format between two applications, an Identity Provider (IdP) and a Service Provider (SP). Using SAML provides us with a few key benefits. First, by centralizing the authentication through Okta, Clarity employees only have to remember one set of credentials, and once logged in they can easily move from one SAML enabled application to another without having to repeat the login process. Additionally, by securely storing the login credentials in one, dedicated application, they are benefiting from Okta’s robust security features to provide capabilities such as multi-factor authentication (MFA). password reset workflows, and to protect them from many common password attacks.
+SAML stands for Security Assertion Markup Language and it is an open standard used for authentication. SAML works by passing authentication information in a specific format between two applications, an Identity Provider (IdP) and a Service Provider (SP). Using SAML provides us with a few key benefits. First, by centralizing the authentication through Okta, Clarity employees only have to remember one set of credentials, and once logged in they can easily move from one SAML enabled application to another without having to repeat the login process. Additionally, by securely storing the login credentials in one, dedicated application, they are benefiting from Okta’s robust security features to provide capabilities such as multi-factor authentication (MFA), password reset workflows, and to protect them from many common password attacks.
 
 <!-- ![diagram](https://) -->
 
-In this context and using this language, Okta is configured as the Identity Provider (IdP) and Liferay will be acting as a Service Provider (SP)
+In this context and using this language, Okta is configured as the Identity Provider (IdP) and Liferay will be acting as a Service Provider (SP).
 
 !!! important
     In this training course, we are using Okta to illustrate a common identity management and single sign on scenario. While we are not specifically endorsing the use of Okta as a best practice, we are endorsing the use of external authentication as a best practice. The process of authentication requires multiple rounds of password hashing which consumes a considerable amount of processing power. This is processing power that can’t be used to serve other web site requests.
@@ -78,7 +78,7 @@ Follow these steps in Okta to configure Okta as an Identity Provider:
 
 1. Click *Next* at the bottom of the page. Finally, click *Finish* on the next page.
 
-1. On the Sign On tab, confirm that Application username format is set to to Email.
+1. On the Sign On tab, confirm that Application username format is set to Email.
 
 1. Click *View SAML Setup Instructions* on the right side of the page. A new page will open.
 
@@ -154,7 +154,7 @@ Follow these steps in Liferay to configure Liferay as a Service Provider:
 
 ## Conclusion
 
-Great job! Your Liferay instance is now integrated with Okta and you Clarity employees now have a clear path to begin authenticating to Liferay! Later on we will get into how to configure roles and permissions for those users, but next we will turn our attention to Clarity's Business Partners and Guest users.
+Great job! Your Liferay instance is now integrated with Okta and Clarity's employees now have a clear path to begin authenticating to Liferay! Later on we will get into how to configure roles and permissions for those users, but next we will turn our attention to Clarity's Business Partners and Guest users.
 
 Next Up: [Managing Clarity Business Partners and Guests](./managing-clarity-business-partners-and-guests.md)
 

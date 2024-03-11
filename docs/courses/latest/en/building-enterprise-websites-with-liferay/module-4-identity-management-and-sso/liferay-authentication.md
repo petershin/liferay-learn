@@ -15,11 +15,13 @@ First, visit your Liferay environment, whether that is at the URL that was sent 
 
 <!--
 
-Your first order of business should be to change the password for your initially provisioned user, or in the case of Liferay PaaS or Self-Hosted, to change the password for the `test@liferay.com`. Follow these steps to do so:
+Your first order of business should be to change the password for your initially provisioned user. In case you are using Liferay PaaS or Self-Hosted, change the password for the `test@liferay.com`. Once you are logged in, follow these steps to change your user password:
 
-1.
-1.
-1.
+1. Click the user avatar and navigate to Account Settings → Password.
+
+1. Enter your Current Password and provide a new password.
+
+[Change your user password initially provisioned user](./liferay-authentication/images/01.png)
 
 -->
 
@@ -36,9 +38,9 @@ Out-of-the-box, Liferay includes a variety of user authentication and management
 
 Integrations with third party identity management and SSO solutions is straightforward with Liferay. Liferay supports standards such as LDAP, SAML, and others.
 
-<!-- image of the variety of logos and Liferay integrates with and supports -->
+[Third party identity management and single sign-on solutions supported by Liferay](./liferay-authentication/images/02.png)
 
-As we have already mentioned, Liferay DXP identity management and user authentication is very flexible, and for some use-cases, it might even make sense to stick with the default behavior and let Liferay manage identity and authentication. However, most prospective customers will already have some type of identity management and single sign on solution in place, and Liferay can easily work with those solutions. In fact, nearly every element of the default authentication experience can be changed by an administrator.
+As we have already mentioned, Liferay DXP identity management and user authentication is very flexible, and for some use-cases, it might even make sense to stick with the default behavior and let Liferay manage identity and authentication. However, most prospective customers will already have some type of identity management and single sign-on solution in place, and Liferay can easily work with those solutions. In fact, nearly every element of the default authentication experience can be changed by an administrator.
 
 For identity management, Liferay can easily be configured to integrate with popular LDAP directories such as Microsoft Active Directory or OpenLDAP. For authentication, you can configure a SSO connection to a range of popular SSO providers such as Okta, PingFederate, Siteminder and several others.
 

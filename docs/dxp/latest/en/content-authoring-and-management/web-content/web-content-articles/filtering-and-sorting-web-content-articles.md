@@ -10,7 +10,7 @@ uuid: c423446a-0ecb-4cf4-b455-93be58860e71
 # Filtering and Sorting Web Content Articles
 
 !!! important
-    Some features are currently behind release feature flags (LPS-194763 and LPS-196768). Read [Release Feature Flags](../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information.
+    Some features are currently behind release feature flags (LPS-196768 and LPD-11218). Read [Release Feature Flags](../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information.
 
 The web content application shows a list of all the web content articles you can access under the Web Content tab. The filtering and sorting options help you find and review items faster.
 
@@ -25,7 +25,7 @@ When viewing all assets, assets in a specific folder, assets resulting from a we
 - [Order by](#order-by)
 - {bdg-secondary}`Liferay 7.4 2024.Q1+` [Filter Search Results](#filter-search-results)
 
-You can combine (single or multiple) filters and order your results for an enhanced experience. For example, if you select the `Product Advertisement Blog Post` [highlighted structure](#filter-by-highlighted-web-content-structures), the [Mine](#filter-by-navigation), [Draft](#filter-by-status), [order by Title](#order-by), and the [Ascending order](#order-by) filters, you obtain a list of your articles that use the `Product Advertisement Blog Post` web content structure, are in Draft status, and are ordered by title in ascending alphabetical order.
+You can combine (single or multiple) filters and order your results for an enhanced experience. For example, if you select the `Product Advertisement Blog Post` [highlighted structure](#filter-by-highlighted-web-content-structures) and the [Mine](#filter-by-navigation), [Draft](#filter-by-status), [order by Title](#order-by), and the [Ascending order](#order-by) filters, you obtain a list of your articles that use the `Product Advertisement Blog Post` web content structure, are in Draft status, and are ordered by title in ascending alphabetical order.
 
 !!! note
     (**Breaking Change**) All filtering options apply exclusively to the current folder. Web content articles located elsewhere are not included in the filtered results.
@@ -37,9 +37,6 @@ You can combine (single or multiple) filters and order your results for an enhan
 ## Filter by Highlighted Web Content Structure
 
 {bdg-secondary}`Liferay 7.4 2024.Q1+`
-
-!!! important
-    This feature is currently behind a release feature flag (LPS-194763). Read [Release Feature Flags](../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information.
 
 You can select web content structures and see only web content articles that belong to those selected structures. To choose which structures to highlight,
 
@@ -66,14 +63,17 @@ When you filter by navigation, you filter the web content articles you have perm
 {bdg-secondary}`Liferay 7.4 2024.Q1+` You can apply a single filter or multiple filters. You can also select multiple categories/tags.
 <!-- add the highlighted structure here in addition to the folder -->
 
-| Filter Option                                    | Description                                                                                                                      |
-|:-------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------|
-| All                                              | All web content articles and folders.                                                                                            |
-| Mine                                             | Web content articles authored by the logged-in user.                                                                             |
-| Recent                                           | Web content articles that have been modified recently. The [order by](#order-by) option is unavailable with this filter.         |
-| Structures                                       | Filters web content articles based on [web content structure](../web-content-structures.md).                                     |
-| {bdg-secondary}`Liferay 7.4 2023.Q4+` Categories | Filters web content articles based on [category](../../tags-and-categories/defining-categories-and-vocabularies-for-content.md). |
-| {bdg-secondary}`Liferay 7.4 2023.Q4+` Tags       | Filters web content articles based on assigned [tags](../../tags-and-categories/tagging-content-and-managing-tags.md).           |
+| Filter Option                                    | Description                                                                                                                                                                                                                                                                                                |
+|:-------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| All                                              | All web content articles and folders.                                                                                                                                                                                                                                                                      |
+| Mine                                             | Web content articles created by the logged-in user.                                                                                                                                                                                                                                                        |
+| Recent                                           | Recent web content articles created by the logged-in user and ordered by creation date. The content is organized in sections based on their creation dates, including today, the last 7 days, the last 30 days, and older content. The [order by](#order-by) option is unavailable when using this filter. |
+| Structures                                       | Filters web content articles based on [web content structure](../web-content-structures.md).                                                                                                                                                                                                               |
+| {bdg-secondary}`Liferay 7.4 2023.Q4+` Categories | Filters web content articles based on [category](../../tags-and-categories/defining-categories-and-vocabularies-for-content.md).                                                                                                                                                                           |
+| {bdg-secondary}`Liferay 7.4 2023.Q4+` Tags       | Filters web content articles based on assigned [tags](../../tags-and-categories/tagging-content-and-managing-tags.md).                                                                                                                                                                                     |
+
+!!! note
+    {bdg-secondary}`Liferay DXP 2024.Q1+/Portal 7.4 GA112+` By default, the Mine filter is ordered by create date. This way, you can see the most recent articles first.
 
 ## Filter by Status
 
@@ -83,11 +83,9 @@ When you filter by status, you filter the web content articles you have permissi
 |:--------------------------------------------------------------|:-----------------------------------------------------------------|
 | Any                                                           | All web content articles, regardless of publication status.      |
 | Draft                                                         | All web content articles that have been saved but not published. |
-| {bdg-secondary}`Liferay 7.4 2023.Q4+/Portal GA102+` Approved  | All web content articles with Approved status.          |
-| {bdg-secondary}`Liferay 7.4 2023.Q4+/Portal GA102+` Expired   | All web content articles with Expired status.           |
-| {bdg-secondary}`Liferay 7.4 2023.Q4+/Portal GA102+` Scheduled | All web content articles with Scheduled status.         |
-
-With the Approved, Expired, and Scheduled filters, you can select the [*Versions* filter](#filter-by-type) to see all article's versions with the selected status.
+| {bdg-secondary}`Liferay 7.4 2023.Q4+/Portal GA112+` Approved  | All web content articles with Approved status.                   |
+| {bdg-secondary}`Liferay 7.4 2023.Q4+/Portal GA112+` Expired   | All web content articles with Expired status.                    |
+| {bdg-secondary}`Liferay 7.4 2023.Q4+/Portal GA112+` Scheduled | All web content articles with Scheduled status.                  |
 
 !!! note
     (**Breaking Change**) Prior to Liferay 7.4 2024.Q1+/Portal GA112+, the Approved, Expired, and Scheduled filters were called With Approved/Expired/Scheduled Versions and returned any web content with at least one version in the selected status.
@@ -109,6 +107,7 @@ These options sort the screen content based on the selected criteria. You can us
 |:-------------------------------------------------|:----------------------------------------------------------|
 | Display Date                                     | Sorts web content articles by the last display date.      |
 | Modified Date                                    | Sorts web content articles by the last modification date. |
+| Create Date                                      | Sorts web content articles by their creation date.        |
 | Title                                            | Sorts web content articles alphabetically.                |
 | {bdg-secondary}`Liferay 7.4 2024.Q1+` Ascending  | Sorts the applied filter's result in ascending order.     |
 | {bdg-secondary}`Liferay 7.4 2024.Q1+` Descending | Sorts the applied filter's result in descending order.    |

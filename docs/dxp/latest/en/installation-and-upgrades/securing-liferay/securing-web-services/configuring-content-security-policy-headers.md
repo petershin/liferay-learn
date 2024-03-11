@@ -47,39 +47,23 @@ Content Security Policies take the form of key-value pairs. The keys are directi
 
 It's important to note that while `unsafe-eval` and `unsafe-inline` provide flexibility in terms of code execution and styling, they come with increased security risks. Liferay currently cannot support a fully `unsafe-` free CSP due to certain limitations. See [Current Limitations of CSP](#current-limitations-of-csp) for more information.
 
-### Using Strict-Dynamic Tokens
+### The Strict-Dynamic CSP Value: When Should You Use It?
 
-The `strict-dynamic` token simplifies script execution from trusted sources, improving your security setup. It eliminates the need to send nonces to the client side for script trust, as trust is inherited from server-generated scripts to those created in the browser.
+When managing script execution in web applications with dynamically loaded scripts (e.g., single-page applications and using JavaScript loaders) or when establishing trust boundaries for script sources (e.g., dynamic content management systems and web-based widgets that fetch and display data from various sources), it's crucial to understand the available options and their implications.
 
-In scenarios like single-page applications (SPAs), where pages aren't reloaded, maintaining nonces for longer durations becomes necessary. Storing nonces in sessions for extended periods, though not ideal, becomes a good practice in such cases.
+!!! note
+    Nonce propagation mechanisms, such as those employed by Liferay, are proprietary solutions implemented at the application level. In contrast, the `strict-dynamic` value is a standardized feature supported by modern browsers, providing consistent behavior across platforms.
 
-Conversely, to handle SPAs and ensure secure script execution, use the `strict-dynamic` token in the CSP. This eliminates the need to send nonces to the client side. Instead, trust is propagated from a nonced `<script>` node emitted from the server to those generated in the browser.
+- `Strict-dynamic` CSP value: This option allows scripts loaded dynamically by trusted scripts to bypass CSP restrictions. It's implemented by the browser and provides a convenient way to handle script loading without explicitly specifying each script source.
 
-You can use `<aui:script>` tags to generate nonced `<script>` automatically. They emit nonces for all `<script>` nodes as needed, facilitating trust inheritance from server-generated scripts to those produced in the browser.
+   While strict-dynamic simplifies CSP configuration and reduces the need for nonce propagation, it may enlarge the attack surface by allowing any script loaded by trusted scripts to execute. However, it's implemented by the browser, which may enhance its reliability and compatibility.
+
+- Sending Nonces from Server to Client: You can send nonces from the server to the client, ensuring that dynamically loaded scripts have the necessary nonce attribute for compliance with CSP. This approach involves proprietary mechanisms, managed by Liferay, to propagate nonces from the server to the client.
+
+   This approach provides more granular control over script loading and may be preferable in scenarios where strict control over script execution is essential. However, it requires proprietary mechanisms for nonce propagation, which may introduce some complexity to the issue.
 
 !!! important
-    The decision to use `strict-dynamic` depends on your specific needs and preferences. Consider the pros and cons before implementing it in your CSP.
-
-Here's how you can use `<aui:script>` tags with `strict-dynamic` tokens:
-
-1. In your HTML code, insert a `<aui:script>` and specify the script you want to execute:
-
-   HTML:
-   ```html
-   <aui:script use="hello.js" />
-   ```
-
-   When the code is rendered in the HTML, the `<aui:script>` automatically adds a nonce to the `<script>` node, ensuring secure script execution.
-
-1. Enable `strict-dynamic` in CSP. See [Configuring a Sample Content Security Policy](#configuring-a-sample-content-security-policy) to learn more.
-
-   ```bash
-   script-src 'self' 'strict-dynamic';
-   ```
-
-   This configuration instructs the browser to trust scripts dynamically generated from trusted sources, even if they violate other CSP rules.
-
-By using `<aui:script>` tags alongside the `strict-dynamic` token in your CSP, you establish a robust and secure approach to script execution in your Liferay application.
+    The choice between strict-dynamic and nonce propagation depends on factors such as the specific threat model, risk tolerance, and operational requirements. Consider the pros and cons before implementing it in your CSP.
 
 ## Configuring a Sample Content Security Policy
 

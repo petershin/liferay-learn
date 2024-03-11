@@ -29,7 +29,7 @@ Liferay's development platform makes developers faster and more efficient, by pr
 
 1. Developing full-blown applications that take advantage of Liferay's user management, security, and other features
 
-Most people want to do some amount of both those things. How you go about it depends on how you're deploying Liferay and what you're building. You should start with Liferay's low/no code options, such as [headless APIs](./headless-delivery/apis-with-rest-builder.md), [Objects](liferay-development/objects.md), and various kinds of [Client Extensions](./liferay-development/client-extensions.md). These are preferred because they're compatible in both Liferay Cloud and self-hosted scenarios, and they make upgrading easier by integrating only with public APIs that are unlikely to change. 
+Most people want to do some amount of both those things. How you go about it depends on how you're deploying Liferay and what you're building. You should start with Liferay's low/no code options, such as [headless APIs](./headless-delivery/consuming-apis.md), [Objects](liferay-development/objects.md), and various kinds of [Client Extensions](./liferay-development/client-extensions.md). These are preferred because they're compatible in both Liferay Cloud and self-hosted scenarios, and they make upgrading easier by integrating only with public APIs that are unlikely to change. 
 
 If, however, you must make a customization or build an application that cannot be done with those technologies, and you're self-hosted or on Liferay PaaS, you can follow a traditional development model by deploying code to Liferay itself to extend its functionality, customize its look and feel, or build an entirely new application. In this scenario, upgrades can be more challenging, as you have access to internal, Java-based Liferay APIs that could change from version to version. 
 
@@ -44,5 +44,5 @@ To get started, check out the boxes below. For applications, you may want to sta
 ```
 
 ```{raw} html
-:file: building-applications/landing.html
+:file: liferay-development/landing.html
 ```

@@ -1,17 +1,5 @@
 #!/bin/bash
 
-function ls {
-	command ls "$@" > /dev/null 2>&1
-}
-
-function popd {
-	command popd "$@" > /dev/null
-}
-
-function pushd {
-	command pushd "$@" > /dev/null
-}
-
 function check_grid_links {
 	for grid_link in $(ag --only-matching "\:link\:.*\.md" ${article})
 	do
@@ -138,6 +126,10 @@ function check_toc_links {
 	done
 }
 
+function ls {
+	command ls "$@" > /dev/null 2>&1
+}
+
 function main {
 	IFS=$'\n'
 
@@ -150,7 +142,7 @@ function main {
 
 	for article_dir in $(find ${1} -name '*.md' -printf '%h\n' | sort -u)
 	do
-		pushd ${article_dir}
+		pushd ${article_dir} > /dev/null
 
 		for article in $(find . -maxdepth 1 -name "*.md" -printf '%f\n')
 		do
@@ -161,7 +153,7 @@ function main {
 			check_toc_links
 		done
 
-		popd
+		popd > /dev/null
 	done
 
 	unset IFS

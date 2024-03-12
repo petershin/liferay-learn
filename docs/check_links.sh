@@ -1,31 +1,29 @@
 #!/bin/bash
 
 function check_grid_links {
-	for grid_link in $(ag --only-matching "\:link\:.*\.md" ${article})
+	for grid_link in $(ag --only-matching "\:link\:.*\.md" ${_MARKDOWN_FILE_NAME})
 	do
-		match=$(echo ${grid_link} | cut -d':' -f3 )
+		grid_link=$(echo ${grid_link} | cut -d':' -f3 | sed 's/\ //g' )
 
-		link=$(echo ${match} | sed 's/\ //g' )
-
-		if ! ls "${link}"
+		if ! ls "${grid_link}"
 		then
-			if [[ -z ${this_file} || ${this_file} != ${article} ]]
+			if [[ -z ${_CURRENT_MARKDOWN_FILE_NAME} || ${_CURRENT_MARKDOWN_FILE_NAME} != ${_MARKDOWN_FILE_NAME} ]]
 			then
-				this_file=${article}
+				_CURRENT_MARKDOWN_FILE_NAME=${_MARKDOWN_FILE_NAME}
 
-				echo "${article}"
+				echo "${_MARKDOWN_FILE_NAME}"
 			fi
 
-			echo "	grid link: ${link}"
+			echo "    Grid link: ${grid_link}"
 			echo
 		fi
 	done
 }
 
 function check_image_paths {
-	for image_path in $(ag --only-matching "\[.+?\]\(.*?\.(png|gif|jpg)\)" ${article})
+	for image_path in $(ag --only-matching "\[.+?\]\(.*?\.(gif|jpg|png)\)" ${_MARKDOWN_FILE_NAME})
 	do
-		image_path=$(echo ${image_path} | sed 's/\[.*\](\(.*\.\(png\|jpg\|gif\)\).*)/\1/g' )
+		image_path=$(echo ${image_path} | sed 's/\[.*\](\(.*\.\(gif\|jpg\|png\)\).*)/\1/g' )
 
 		image_folder=$(pwd $image_path)
 
@@ -41,21 +39,21 @@ function check_image_paths {
 		if ! ls "${full_image_path}" || [[ ${image_path} != *"/images/"* ]]
 		then
 
-			if [[ -z ${this_file} || ${this_file} != ${article} ]]
+			if [[ -z ${_CURRENT_MARKDOWN_FILE_NAME} || ${_CURRENT_MARKDOWN_FILE_NAME} != ${_MARKDOWN_FILE_NAME} ]]
 			then
-				this_file=${article}
+				_CURRENT_MARKDOWN_FILE_NAME=${_MARKDOWN_FILE_NAME}
 
-				echo "${article}"
+				echo "${_MARKDOWN_FILE_NAME}"
 			fi
 
-			echo "	image path: ${image_path}"
+			echo "    Image path: ${image_path}"
 			echo
 		fi
 	done
 }
 
 function check_landing_links {
-	for landing_reference in $(ag --no-filename --no-numbers "\:file\:.*landing\.html" ${article} )
+	for landing_reference in $(ag --no-filename --no-numbers "\:file\:.*landing\.html" ${_MARKDOWN_FILE_NAME} )
 	do
 		landing_reference_path=$(echo ${landing_reference} | sed 's/\:file\://g' | sed 's/\ //g' )
 		for landing_page_link in $(ag --no-filename "url\:" ${landing_reference_path})
@@ -70,35 +68,33 @@ function check_landing_links {
 
 				if ! ls "${landing_page_link}"
 				then
-					echo "landing page link:"
-					echo "	landing page reference: ${landing_reference_path}"
-					echo "	link: ${landing_page_link/.md/.html}"
+					echo "Landing page link:"
+					echo "    Landing page reference: ${landing_reference_path}"
+					echo "    Link: ${landing_page_link/.md/.html}"
 					echo
 				fi
 			fi
 		done
 	done
-
 }
 
 function check_markdown_links {
-	for markdown_match in $(ag --only-matching '\[.*\]\((?!http).*\.md.*\).*' ${article} )
+	for markdown_match in $(ag --only-matching '\[.*\]\((?!http).*\.md.*\).*' ${_MARKDOWN_FILE_NAME} )
 	do
-		links=$(echo ${markdown_match} | sed -e 's/\.md)/\.md)\n/g' | sed 's/.*\](\(.*\.md\).*).*/\1/g' )
+		links=$(echo ${markdown_match} | sed -e 's/\.md)/\.md)\n/g' | sed 's/.*\](\(.*\.md\).*).*/\1/g')
 
 		for link in ${links}
 		do
-
 			if [[ ${link} == *".md" ]]
 			then
 				if ! ls "${link}"
 				then
-					if [[ -z ${this_file} || ${this_file} != ${article} ]]
-					then this_file=${article}
-						echo "${article}"
+					if [[ -z ${_CURRENT_MARKDOWN_FILE_NAME} || ${_CURRENT_MARKDOWN_FILE_NAME} != ${_MARKDOWN_FILE_NAME} ]]
+					then _CURRENT_MARKDOWN_FILE_NAME=${_MARKDOWN_FILE_NAME}
+						echo "${_MARKDOWN_FILE_NAME}"
 					fi
 
-					echo "	markdown link: ${link}"
+					echo "    Markdown link: ${link}"
 					echo
 				fi
 			fi
@@ -107,20 +103,20 @@ function check_markdown_links {
 }
 
 function check_toc_links {
-	for toc_link in $(ag --only-matching "(?s)toc\:.*^---$" ${article} | ag --nomultiline --nonumbers ".*\.md$" )
+	for toc_link in $(ag --only-matching "(?s)toc\:.*^---$" ${_MARKDOWN_FILE_NAME} | ag --nomultiline --nonumbers ".*\.md$" )
 	do
 		toc_link=$(echo "${toc_link}" | rev | cut -d' ' -f1 | rev)
 
 		if ! ls "${toc_link}"
 		then
-			if [[ -z ${this_file} || ${this_file} != ${article} ]]
+			if [[ -z ${_CURRENT_MARKDOWN_FILE_NAME} || ${_CURRENT_MARKDOWN_FILE_NAME} != ${_MARKDOWN_FILE_NAME} ]]
 			then
-				this_file=${article}
+				_CURRENT_MARKDOWN_FILE_NAME=${_MARKDOWN_FILE_NAME}
 
-				echo "${article}"
+				echo "${_MARKDOWN_FILE_NAME}"
 			fi
 
-			echo "	toc link: ${toc_link}"
+			echo "    TOC link: ${toc_link}"
 			echo
 		fi
 	done
@@ -140,11 +136,13 @@ function main {
 		exit 0
 	fi
 
-	for article_dir in $(find ${1} -name '*.md' -printf '%h\n' | sort -u)
-	do
-		pushd ${article_dir} > /dev/null
+	local markdown_dir_name
 
-		for article in $(find . -maxdepth 1 -name "*.md" -printf '%f\n')
+	for markdown_dir_name in $(find ${1} -name '*.md' -printf '%h\n' | sort -u)
+	do
+		pushd ${markdown_dir_name} > /dev/null
+
+		for _MARKDOWN_FILE_NAME in $(find . -maxdepth 1 -name "*.md" -printf '%f\n')
 		do
 			check_grid_links
 			check_image_paths

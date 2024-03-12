@@ -5,6 +5,7 @@ toc:
   - ./securing-liferay/multi-factor-authentication.md
   - ./securing-liferay/using-antisamy.md
   - ./securing-liferay/securing-web-services.md
+  - ./securing-liferay/system-for-cross-domain-identity-management-scim.md
   - ./securing-liferay/developer-guide.md
 uuid: 8d84b144-9aba-4076-abc5-0043ac3ff72c
 taxonomy-category-names:

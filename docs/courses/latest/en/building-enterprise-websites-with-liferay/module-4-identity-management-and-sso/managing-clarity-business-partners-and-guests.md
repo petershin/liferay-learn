@@ -4,7 +4,7 @@ uuid: 9bf15d62-c0a2-48af-9cb6-9197fca3b82c
 
 # Managing Clarity Business Partners and Guests
 
-Now that we have employees taken care of, we turn our attention to Clarity's business partners that will need to access the Web Site and unauthenticated guest visitors.
+Now that we have employees taken care of, we turn our attention to Clarity's business partners that will need to access the web site and unauthenticated guest visitors.
 
 ## Business Partner Requirements
 

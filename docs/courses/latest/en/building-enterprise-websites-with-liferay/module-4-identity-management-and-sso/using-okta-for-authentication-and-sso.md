@@ -130,6 +130,15 @@ Follow these steps in Liferay to configure Liferay as a Service Provider:
         | lastName              | lastName       |
         | screenName            | screenName     |
 
+    1. Enter the following attribute mapping under Group Attribute Statements:
+
+        | Name      | Name format | Filter      | Input |
+        |:--------- | :---------- |:----------- |:----- |
+        | userGroup | Unspecified | Starts with | Okta  |
+
+        !!! note
+            This [importing user groups through SAML](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/configuring-sso/authenticating-with-saml/importing-user-groups-memberships-from-an-external-idp-through-saml) feature is currently behind a dev feature flag.
+
     1. Click on *Save*
 
 1. Go back to *General* tab and make sure the `Enabled` checkbox is checked. Click *Save*.

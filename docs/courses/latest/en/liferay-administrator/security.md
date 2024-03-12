@@ -1,7 +1,7 @@
 ---
 toc:
 - ./security/authentication.md
-- ./sescurity/securing-web-services.md
+- ./security/securing-web-services.md
 - ./security/authorizing-and-single-sign-on.md
 - ./security/managing-antisamy.md
 uuid: b3acd179-59d4-4676-956e-4dbd5ce5519a

@@ -9,7 +9,9 @@ taxonomy-category-names:
 
 # Configuring Content Security Policy Headers
 
-Modern browsers use [Content Security Policy](https://content-security-policy.com) (CSP) HTTP response headers to enhance web pages' security to mitigate certain types of attacks (like Cross-Site Scripting or data injection). You can enable CSP on Liferay to send the configured headers on each HTTP request. 
+{bdg-link-primary}`[Beta Feature](../../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
+
+Modern browsers use [Content Security Policy](https://content-security-policy.com) HTTP response headers to enhance web pages' security to mitigate certain types of attacks (like Cross-Site Scripting or data injection). You can enable CSP on Liferay to send the configured headers on each HTTP request. 
 
 CSP policies have many options. It is best to understand your users' needs and come up with a policy to suit their requirements. After enabling CSP headers, they’re enforced by the browsers. Visit the links below to learn more about how browsers handle CSP headers:
 

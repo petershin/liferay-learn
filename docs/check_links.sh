@@ -1,14 +1,14 @@
 #!/bin/bash
 
-ls () {
+function ls {
 	command ls "$@" > /dev/null 2>&1
 }
 
-popd () {
+function popd {
 	command popd "$@" > /dev/null
 }
 
-pushd () {
+function pushd {
 	command pushd "$@" > /dev/null
 }
 
@@ -141,9 +141,12 @@ function check_toc_links {
 function main {
 	IFS=$'\n'
 
-	echo
-	echo	"Checking Relative Links in ${1}"
-	echo -e "-----------------------------\n"
+	if [ -z ${1} ]
+	then
+		echo "Usage: ./check_links.sh dxp/latest/en"
+
+		exit 0
+	fi
 
 	for article_dir in $(find ${1} -name '*.md' -printf '%h\n' | sort -u)
 	do
@@ -164,4 +167,4 @@ function main {
 	unset IFS
 }
 
-main ${@}
+main "${@}"

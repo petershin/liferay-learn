@@ -31,7 +31,7 @@ Out-of-the-box, Liferay includes a variety of user authentication and management
 * Support for multiple types of [multi-factor authentication](https://learn.liferay.com/web/guest/w/dxp/installation-and-upgrades/securing-liferay/multi-factor-authentication) schemes
 * And more...
 
-!!! Key Decision
+!!! important "Key Decision"
     While there is a lot of flexibility for using Liferay DXP as your primary identity management system and to handle user authentication, in most cases organizations will already have existing IdM and SSO solutions in place. Furthermore, depending on scope and scale of the number of users expected to authenticate to Liferay, using a dedicated IdM and SSO solution can have performance benefits for your Liferay project.
 
 Integrations with third party identity management and SSO solutions is straightforward with Liferay. Liferay supports standards such as LDAP, SAML, and others.

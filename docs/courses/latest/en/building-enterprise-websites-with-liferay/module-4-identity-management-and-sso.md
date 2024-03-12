@@ -22,7 +22,7 @@ Identity Management and Single Sign On can be a pretty big topic so before we ge
 
 ## Clarity's Requirements
 
-!!! **Key Decision**
+!!! important "Key Decision"
     Identity management and single sign on requirements will vary greatly depending on the type of solution you are building and the organization that you are building it for. For example, the needs of a public facing, marketing website are going to be very different from the needs of a B2B Supplier portal, and similarly the needs of a financial services organization whose employees are based in offices and have their own workstation to access multiple systems and applications might be very different from the needs of a services organization with a mobile workforce who only have access to a single mobile app on a company issued tablet. Finally, how, where, and how many users you have and expect to authenticate can also be a significant design and implementation factor when thinking about how to optimize site performance and scalability.
 
 Let's summarize Clarity's requirements related to Identity Management & SSO:

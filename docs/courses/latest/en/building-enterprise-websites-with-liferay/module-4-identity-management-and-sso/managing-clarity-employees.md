@@ -25,19 +25,19 @@ With Liferay, many of these factors are being supported with regards to Identity
 
 Liferay’s extensive support for multiple identity management and single sign on vendors and protocols ensure that even a non-technical user can easily integrate Liferay with existing identity management systems through configuration and with minimal IT involvement.  We’ll be focusing on integration with a single vendor in this training, but the process for other vendors will be very similar and we have extensive documentation for all of the configuration options.  
 
-> 1. Simplified maintenance (and evolution) &#x2705;
+> 2. Simplified maintenance (and evolution) &#x2705;
 
 By leveraging Clarity’s existing Identity Management solution, we are going to be simplifying the maintenance of employee identity within the platform, and we’ll be ensuring that as employee information is updated by HR, those updates are going to be reflected in Liferay as well.  
 
-> 1. Increase engagement and user experience through personalization &#x2705;
+> 3. Increase engagement and user experience through personalization &#x2705;
 
 Another advantage is that in addition to basic identity management information, such as name, email address, etc.  We can also sync much more employee information, information that could also be used to segment employees in order to deliver a more personalized experience on the website.  This might not be critical for this first phase of building an enterprise website, but for future projects, this will be very important.  
 
-> 1. Risk mitigation with better governance &#x2705;
+> 4. Risk mitigation with better governance &#x2705;
 
 Additionally, identity management solutions help to mitigate risks and to ensure better governance by making sure the right employees have the right roles and can access the right information.  We’ll be covering more about roles in the next module, but rest assured that Liferay makes it easy to leverage information in an organization’s identity management solution to organize users and makes it easier to manage their permissions.  And of course, when an employee’s time with Clarity is over, it’s important that access to critical systems, such as the website is revoked in a timely manner.  
 
-> 1. Lower investment / total cost of ownership &#x2705;
+> 4. Lower investment / total cost of ownership &#x2705;
 
 And lastly, by offloading the majority of identity management to a dedicated identity management system, that is managed by the right people, we’re lowering the cost of managing the Liferay solution by reducing the duplication of effort of managing identity in multiple systems.  Also, by relying on integration, we are improving data accuracy.  Instead of adding and maintaining users in the system, we can focus our efforts on building a great website experience for our customers!  
 

@@ -16,7 +16,7 @@ function check_grid_links {
 	for grid_link in $(ag --only-matching "\:link\:.*\.md" ${article})
 	do
 		match=$(echo ${grid_link} | cut -d':' -f3 )
-		
+
 		link=$(echo ${match} | sed 's/\ //g' )
 
 		if ! ls "${link}"
@@ -151,7 +151,7 @@ function main {
 	for article_dir in $(find ${1} -name '*.md' -printf '%h\n' | sort -u)
 	do
 		pushd ${article_dir}
-		
+
 		for article in $(find . -maxdepth 1 -name "*.md" -printf '%f\n')
 		do
 			check_grid_links

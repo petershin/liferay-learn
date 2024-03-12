@@ -1,77 +1,63 @@
 #!/bin/bash
 
-function check_grid_links {
-	for grid_link in $(ag --only-matching "\:link\:.*\.md" ${_MARKDOWN_FILE_NAME})
+function check_grids {
+	for link in $(ag --only-matching "\:link\:.*\.md" ${_MARKDOWN_FILE_NAME})
 	do
-		grid_link=$(echo ${grid_link} | cut -d':' -f3 | sed 's/\ //g' )
+		_PATH=$(echo ${link} | cut -d':' -f3 | sed 's/\ //g' )
 
-		if ! ls "${grid_link}"
+		if ! ls "${_PATH}"
 		then
-			if [[ -z ${_CURRENT_MARKDOWN_FILE_NAME} || ${_CURRENT_MARKDOWN_FILE_NAME} != ${_MARKDOWN_FILE_NAME} ]]
-			then
-				_CURRENT_MARKDOWN_FILE_NAME=${_MARKDOWN_FILE_NAME}
+			_LINK_TYPE="Grid link"
 
-				echo "${_MARKDOWN_FILE_NAME}"
-			fi
-
-			echo "    Grid link: ${grid_link}"
-			echo
+			echo_broken_links
 		fi
 	done
 }
 
-function check_image_paths {
-	for image_path in $(ag --only-matching "\[.+?\]\(.*?\.(gif|jpg|png)\)" ${_MARKDOWN_FILE_NAME})
+function check_images {
+	for link in $(ag --only-matching "\[.+?\]\(.*?\.(gif|jpg|png)\)" ${_MARKDOWN_FILE_NAME})
 	do
-		image_path=$(echo ${image_path} | sed 's/\[.*\](\(.*\.\(gif\|jpg\|png\)\).*)/\1/g' )
 
-		image_folder=$(pwd $image_path)
+		path=$(echo ${link} | sed 's/\[.*\](\(.*\.\(gif\|jpg\|png\)\).*)/\1/g' )
 
-		full_image_path=${image_folder}/${image_path}
+		image_file_name=$(pwd ${path})/${path}
 
-		if [[ ${full_image_path} == *"/ja/"* && *"/ko/"* ]]
+		if [[ ${image_file_name} != *"/en/"* ]]
 		then
-			full_image_path=$(echo "${image_folder/\/ja\//\/en\/}")
-
-			full_image_path=$(echo "${image_folder/\/ko\//\/en\/}")
+			image_file_name=$(echo "${link_dir_name/\/ja\//\/en\/}")
+			image_file_name=$(echo "${link_dir_name/\/ko\//\/en\/}")
 		fi
 
-		if ! ls "${full_image_path}" || [[ ${image_path} != *"/images/"* ]]
+		if ! ls "${image_file_name}" || [[ ${image_file_name} != *"/images/"* ]]
 		then
+			_PATH=${path}
 
-			if [[ -z ${_CURRENT_MARKDOWN_FILE_NAME} || ${_CURRENT_MARKDOWN_FILE_NAME} != ${_MARKDOWN_FILE_NAME} ]]
-			then
-				_CURRENT_MARKDOWN_FILE_NAME=${_MARKDOWN_FILE_NAME}
+			_LINK_TYPE="Image link"
 
-				echo "${_MARKDOWN_FILE_NAME}"
-			fi
-
-			echo "    Image path: ${image_path}"
-			echo
+			echo_broken_links ${_LINK_TYPE}
 		fi
 	done
 }
 
-function check_landing_links {
-	for landing_reference in $(ag --no-filename --no-numbers "\:file\:.*landing\.html" ${_MARKDOWN_FILE_NAME} )
+function check_landing_pages {
+	for landing_page_reference in $(ag --no-filename --no-numbers "\:file\:.*landing\.html" ${_MARKDOWN_FILE_NAME} )
 	do
-		landing_reference_path=$(echo ${landing_reference} | sed 's/\:file\://g' | sed 's/\ //g' )
+		landing_page_path=$(echo ${landing_page_reference} | sed 's/\:file\://g' | sed 's/\ //g' )
 
-		for landing_page_link in $(ag --no-filename "url\:" ${landing_reference_path})
+		for link in $(ag --no-filename "url\:" ${landing_page_path})
 		do
-			if [[ ${landing_page_link} != *"https://"* ]]
+			if [[ ${link} != *"https://"* ]]
 			then
-				landing_page_link=$(echo ${landing_page_link} | sed "s/.*\('\|\"\)\(.*\)\('\|\"\|\#\).*/\2/g" )
+				path=$(echo ${link} \
+					| sed "s/.*\('\|\"\)\(.*\)\('\|\"\|\#\).*/\2/g" \
+					| sed 's/\(.*\)#.*/\1/g' | sed 's/\.html/\.md/g' \
+				)
 
-				landing_page_link=$(echo ${landing_page_link} | sed 's/\(.*\)#.*/\1/g' )
-
-				landing_page_link=$(echo ${landing_page_link} | sed 's/\.html/\.md/g')
-
-				if ! ls "${landing_page_link}"
+				if ! ls "${path}"
 				then
 					echo "Landing page link:"
-					echo "    Landing page reference: ${landing_reference_path}"
-					echo "    Link: ${landing_page_link/.md/.html}"
+					echo "    Landing page reference: ${landing_page_path}"
+					echo "    Link: ${path/.md/.html}"
 					echo
 				fi
 			fi
@@ -79,46 +65,51 @@ function check_landing_links {
 	done
 }
 
-function check_markdown_links {
-	for markdown_match in $(ag --only-matching '\[.*\]\((?!http).*\.md.*\).*' ${_MARKDOWN_FILE_NAME} )
+function check_markdown {
+	for links in $(ag --only-matching '\[.*\]\((?!http).*\.md.*\).*' ${_MARKDOWN_FILE_NAME} )
 	do
-		for link in $(echo ${markdown_match} | sed -e 's/\.md)/\.md)\n/g' | sed 's/.*\](\(.*\.md\).*).*/\1/g')
+		for _PATH in $(echo ${links} | sed -e 's/\.md)/\.md)\n/g' | sed 's/.*\](\(.*\.md\).*).*/\1/g')
 		do
-			if [[ ${link} == *".md" ]]
+			if [[ ${_PATH} == *".md" ]]
 			then
-				if ! ls "${link}"
+				if ! ls "${_PATH}"
 				then
-					if [[ -z ${_CURRENT_MARKDOWN_FILE_NAME} || ${_CURRENT_MARKDOWN_FILE_NAME} != ${_MARKDOWN_FILE_NAME} ]]
-					then _CURRENT_MARKDOWN_FILE_NAME=${_MARKDOWN_FILE_NAME}
-						echo "${_MARKDOWN_FILE_NAME}"
-					fi
+					_LINK_TYPE="Markdown link"
 
-					echo "    Markdown link: ${link}"
-					echo
+					echo_broken_links ${_LINK_TYPE}
 				fi
 			fi
 		done
 	done
 }
 
-function check_toc_links {
-	for toc_link in $(ag --only-matching "(?s)toc\:.*^---$" ${_MARKDOWN_FILE_NAME} | ag --nomultiline --nonumbers ".*\.md$" )
+function check_tocs {
+	for link in $(ag --only-matching "(?s)toc\:.*^---$" ${_MARKDOWN_FILE_NAME} | ag --nomultiline --nonumbers ".*\.md$" )
 	do
-		toc_link=$(echo "${toc_link}" | rev | cut -d' ' -f1 | rev)
+		_PATH=$(echo "${link}" | rev | cut -d' ' -f1 | rev)
 
-		if ! ls "${toc_link}"
+		if ! ls "${_PATH}"
 		then
-			if [[ -z ${_CURRENT_MARKDOWN_FILE_NAME} || ${_CURRENT_MARKDOWN_FILE_NAME} != ${_MARKDOWN_FILE_NAME} ]]
-			then
-				_CURRENT_MARKDOWN_FILE_NAME=${_MARKDOWN_FILE_NAME}
+			_LINK_TYPE="TOC link"
 
-				echo "${_MARKDOWN_FILE_NAME}"
-			fi
-
-			echo "    TOC link: ${toc_link}"
-			echo
+			echo_broken_links ${_LINK_TYPE}
 		fi
 	done
+}
+
+function echo_broken_links {
+
+	if [[ -z ${_CURRENT_MARKDOWN_FILE_NAME} || ${_CURRENT_MARKDOWN_FILE_NAME} != ${_MARKDOWN_FILE_NAME} ]]
+	then
+		_CURRENT_MARKDOWN_FILE_NAME=${_MARKDOWN_FILE_NAME}
+
+		echo
+		echo "${_MARKDOWN_FILE_NAME}"
+	fi
+
+	echo "    ${_LINK_TYPE}: ${_PATH}"
+	echo
+
 }
 
 function ls {
@@ -143,11 +134,11 @@ function main {
 
 		for _MARKDOWN_FILE_NAME in $(find . -maxdepth 1 -name "*.md" -printf '%f\n')
 		do
-			check_grid_links
-			check_image_paths
-			check_landing_links
-			check_markdown_links
-			check_toc_links
+			check_grids
+			check_images
+			check_landing_pages
+			check_markdown
+			check_tocs
 		done
 
 		popd > /dev/null

@@ -56,6 +56,7 @@ function check_landing_links {
 	for landing_reference in $(ag --no-filename --no-numbers "\:file\:.*landing\.html" ${_MARKDOWN_FILE_NAME} )
 	do
 		landing_reference_path=$(echo ${landing_reference} | sed 's/\:file\://g' | sed 's/\ //g' )
+
 		for landing_page_link in $(ag --no-filename "url\:" ${landing_reference_path})
 		do
 			if [[ ${landing_page_link} != *"https://"* ]]
@@ -81,9 +82,7 @@ function check_landing_links {
 function check_markdown_links {
 	for markdown_match in $(ag --only-matching '\[.*\]\((?!http).*\.md.*\).*' ${_MARKDOWN_FILE_NAME} )
 	do
-		links=$(echo ${markdown_match} | sed -e 's/\.md)/\.md)\n/g' | sed 's/.*\](\(.*\.md\).*).*/\1/g')
-
-		for link in ${links}
+		for link in $(echo ${markdown_match} | sed -e 's/\.md)/\.md)\n/g' | sed 's/.*\](\(.*\.md\).*).*/\1/g')
 		do
 			if [[ ${link} == *".md" ]]
 			then

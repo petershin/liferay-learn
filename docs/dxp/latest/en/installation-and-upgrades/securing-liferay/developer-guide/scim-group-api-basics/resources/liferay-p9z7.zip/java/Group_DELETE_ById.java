@@ -12,7 +12,8 @@ public class Group_DELETE_ById {
 			"test@liferay.com", "learn"
 		).build();
 
-		groupResource.deleteV2Group(String.valueOf(System.getProperty("groupId")));
+		groupResource.deleteV2Group(
+			String.valueOf(System.getProperty("groupId")));
 	}
 
 }

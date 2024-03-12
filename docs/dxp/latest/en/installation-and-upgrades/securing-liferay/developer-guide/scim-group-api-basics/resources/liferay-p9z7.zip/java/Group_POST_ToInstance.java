@@ -1,5 +1,3 @@
-import com.liferay.scim.rest.client.dto.v1_0.MultiValuedAttribute;
-import com.liferay.scim.rest.client.dto.v1_0.Name;
 import com.liferay.scim.rest.client.dto.v1_0.Group;
 import com.liferay.scim.rest.client.resource.v1_0.GroupResource;
 

@@ -3,6 +3,9 @@ toc:
   - ./customizing-liferays-look-and-feel/using-a-theme-favicon-client-extension.md
   - ./customizing-liferays-look-and-feel/using-a-css-client-extension.md
   - ./customizing-liferays-look-and-feel/using-a-theme-css-client-extension.md
+  - ./customizing-liferays-look-and-feel/using-a-javascript-client-extension.md
+  - ./customizing-liferays-look-and-feel/using-a-theme-spritemap-client-extension.md
+  - ./customizing-liferays-look-and-feel/themes.md
 taxonomy-category-names:
   - Development and Tooling
   - Client Extensions
@@ -38,4 +41,17 @@ Read on to learn how to customize Liferay to match your design!
 :::{grid-item-card}  Using A Theme CSS Client Extension
 :link: ./customizing-liferays-look-and-feel/using-a-theme-css-client-extension.md
 :::
+
+:::{grid-item-card}  Using a JavaScript Client Extension
+:link: ./customizing-liferays-look-and-feel/using-a-javascript-client-extension.md
+:::
+
+:::{grid-item-card}  Using A Theme Spritemap Client Extension
+:link: ./customizing-liferays-look-and-feel/using-a-theme-spritemap-client-extension.md
+:::
+
+:::{grid-item-card}  Themes
+:link: ./customizing-liferays-look-and-feel/themes.md
+:::
+
 ::::

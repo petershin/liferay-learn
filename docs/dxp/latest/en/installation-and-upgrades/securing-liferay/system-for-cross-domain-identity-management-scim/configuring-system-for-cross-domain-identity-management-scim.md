@@ -53,6 +53,8 @@ To link a user to a SCIM client,
 
 1. Scroll down to the CUSTOM FIELDS section and enter the the SCIM client ID in the *Scimclientid* field.
 
+   ![Enter the SCIM client ID to link the user to the SCIM client.](./configuring-system-for-cross-domain-identity-management-scim/images/02.png)
+
 1. Click *Save*.
 
 ## Linking a User Group to a SCIM Client
@@ -64,5 +66,7 @@ To link a user group to a SCIM client,
 1. Select a user group, click *Actions* (![Global Menu](../../../images/icon-actions.png)) and select *Edit*.
 
 1. Enter the SCIM client ID in the *Scimclientid* field.
+
+   ![Enter the SCIM client ID to link the user group to the SCIM client.](./configuring-system-for-cross-domain-identity-management-scim/images/03.png)
 
 1. Click *Save*.

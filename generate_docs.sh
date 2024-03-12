@@ -171,24 +171,30 @@ function set_up_environment {
 	fi
 }
 
+function update_example {
+	if ! is_diff "${1}"
+	then
+		continue;
+	fi
+
+	pushd "$(dirname "${1}")"
+
+	./$(basename "${1}") 2> ${_REPOSITORY_DIR}/update_examples.err
+
+	popd
+
+	echo "Updated example: ${1}"
+}
+
 function update_examples {
 	pushd "${_REPOSITORY_DIR}/docs"
 
 	for update_example_script_name in $(find . -name "update_example.sh" -type f)
 	do
-		if ! is_diff "${update_example_script_name}"
-		then
-			continue;
-		fi
-
-		pushd "$(dirname "${update_example_script_name}")"
-
-		./$(basename "${update_example_script_name}") 2> ${_REPOSITORY_DIR}/update_examples.err
-	
-		popd
-
-		echo "Updated example: ${update_example_script_name}"
+		update_example "${update_example_script_name}" &
 	done
+
+	wait
 
 	popd
 

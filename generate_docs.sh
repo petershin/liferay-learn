@@ -169,6 +169,13 @@ function set_up_environment {
 	then
 		export LIFERAY_LEARN_RESOURCE_DOMAIN="${LIFERAY_LEARN_ETC_CRON_LIFERAY_LEARN_RESOURCES_DOMAIN}"
 	fi
+
+	export _RUN_PARALLEL="true"
+
+	if [[ -n "${LIFERAY_LEARN_RUN_PARALLEL}" ]]
+	then
+		export _RUN_PARALLEL="${LIFERAY_LEARN_RUN_PARALLEL}"
+	fi
 }
 
 function update_example {
@@ -177,21 +184,31 @@ function update_example {
 		continue;
 	fi
 
-	pushd "$(dirname "${1}")"
+	pushd "$(dirname "${1}")" > /dev/null
 
-	./$(basename "${1}") 2> ${_REPOSITORY_DIR}/update_examples.err
+	./$(basename "${1}") 2> "${_REPOSITORY_DIR}/site/logs/$(basename ${1%/*/*}).err"
 
-	popd
+	popd > /dev/null
 
 	echo "Updated example: ${1}"
 }
 
 function update_examples {
+	if [ ! -d "${_REPOSITORY_DIR}/site/logs" ]
+	then
+		mkdir "${_REPOSITORY_DIR}/site/logs"
+	fi
+
 	pushd "${_REPOSITORY_DIR}/docs"
 
 	for update_example_script_name in $(find . -name "update_example.sh" -type f)
 	do
-		update_example "${update_example_script_name}" &
+		if [ "${_RUN_PARALLEL}" == "true" ]
+		then
+			update_example "${update_example_script_name}" &
+		else
+			update_example "${update_example_script_name}"
+		fi
 	done
 
 	wait
@@ -200,7 +217,14 @@ function update_examples {
 
 	local exit_code=$?
 
-	cat ${_REPOSITORY_DIR}/update_examples.err
+	for file_name in $(find ${_REPOSITORY_DIR}/site/logs -name "*.err" -type f)
+	do
+		if [ -s "${file_name}" ]
+		then
+			echo "Errors from: $(basename ${file_name})"
+			cat "${file_name}"
+		fi
+	done
 
 	generate_zip_files
 }

@@ -3,8 +3,6 @@ toc:
   - ./experience-personalization/content-page-personalization.md
   - ./experience-personalization/creating-and-managing-experiences.md
   - ./experience-personalization/personalizing-collections.md
-  - ./experience-personalization/understanding-content-recommendations.md
-  - ./experience-personalization/configuring-content-recommendations.md
 taxonomy-category-names:
 - Personalization
 - Experience Personalization
@@ -29,12 +27,3 @@ uuid: 1f7c92d4-7a5f-4b7d-883e-073b839c2402
 :::{grid-item-card} Personalizing Collections
 :link: ./experience-personalization/personalizing-collections.md
 :::
-
-:::{grid-item-card} Understanding Content Recommendations
-:link: ./experience-personalization/understanding-content-recommendations.md
-:::
-
-:::{grid-item-card} Configuring Content Recommendations
-:link: ./experience-personalization/configuring-content-recommendations.md
-:::
-::::

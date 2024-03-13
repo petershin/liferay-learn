@@ -9,9 +9,8 @@ uuid: 651a3ecc-7ffe-48af-903e-29e46036c510
 ---
 # Creating Collections
 
-```{note}
-This information applies to Liferay DXP 7.3+. For previous Liferay DXP versions, see [Liferay DXP 7.2](#liferay-dxp-7-2).
-```
+!!! note
+    This information applies to Liferay DXP 7.3+. For previous Liferay DXP versions, see [Liferay DXP 7.2](#liferay-dxp-7-2).
 
 You can create *Manual* or *Dynamic* Collections. For information about the different types of Collections, see [About Collections and Collection Pages](./about-collections-and-collection-pages.md).
 
@@ -23,23 +22,23 @@ You can create *Manual* or *Dynamic* Collections. For information about the diff
 1. In the *Item Type* drop-down menu, select the item type you want to include in the Collection.
     - If you want to include only one item type
 
-       1. Select the type under *Single Item Type*.
-       1. Optionally, if your *Item Type* includes a subtype, select this in the *Item Subtype* drop-down menu.
-       1. Click *Save*.
+        1. Select the type under *Single Item Type*.
+        1. Optionally, if your *Item Type* includes a subtype, select this in the *Item Subtype* drop-down menu.
+        1. Click *Save*.
 
-       ![Configure the content Type and Subtype for the Manual Collection](./creating-collections/images/01.png)
+        ![Configure the content Type and Subtype for the Manual Collection](./creating-collections/images/01.png)
 
     - If you want to include more than one item type
 
-       1. Select *Select More Than One* under *Multiple Item Types*.
-       1. In the dual list box, add or remove the item types you want to include in your collection.
+        1. Select *Select More Than One* under *Multiple Item Types*.
+        1. In the dual list box, add or remove the item types you want to include in your collection.
 
-       ![Select the different item Types for the Manual Collection](./creating-collections/images/02.png)
+        ![Select the different item Types for the Manual Collection](./creating-collections/images/02.png)
 
 1. Click *Save*.
 1. Click *Select* next to *Collection Items* and select one of your item types.
 
-   ![Select the items you want to include in the Manual Collection](./creating-collections/images/03.png)
+    ![Select the items you want to include in the Manual Collection](./creating-collections/images/03.png)
 
 1. In the selection dialog, check the items you want to include.
 1. Click *Add*.
@@ -47,9 +46,8 @@ You can create *Manual* or *Dynamic* Collections. For information about the diff
 
 Note that Documents and Media folders and Web Content folders can be added to a Collection.
 
-```{note}
-While Documents and Media and Web Content folders can be added to a collection, the content is not displayed when the folder is published on a Collections Page or in an Asset Publisher widget. Even if these assets are added to a collection, they can only be viewed separately. This is a known limitation and will be fixed in a future release.
-```
+!!! note
+    While Documents and Media and Web Content folders can be added to a collection, the content is not displayed when the folder is published on a Collections Page or in an Asset Publisher widget. Even if these assets are added to a collection, they can only be viewed separately. This is a known limitation and will be fixed in a future release.
 
 ## Creating a Dynamic Collection
 
@@ -59,37 +57,35 @@ While Documents and Media and Web Content folders can be added to a collection, 
 1. In the *Item Type* drop-down menu, select the item type you want to include in the Collection.
     - If you want to include only one item type,
 
-       1. Select the type under *Single Item Type*.
-       1. Optionally, if your *Item Type* includes a subtype, select this in the *Item Subtype* drop-down menu.
-       1. To filter you *Item Subtype* by a specific field, enable the *Filter by Field* switch, click *Select*, choose the field, and click *Apply*.
-       1. Click *Save*.
+        1. Select the type under *Single Item Type*.
+        1. Optionally, if your *Item Type* includes a subtype, select this in the *Item Subtype* drop-down menu.
+        1. To filter you *Item Subtype* by a specific field, enable the *Filter by Field* switch, click *Select*, choose the field, and click *Apply*.
+        1. Click *Save*.
 
-       ![You can filter the Item Subtype in your Collection by one of the item fields](./creating-collections/images/09.gif)
+        ![You can filter the Item Subtype in your Collection by one of the item fields](./creating-collections/images/09.gif)
 
     - If you want to include more than one item type,
 
-       1. Select *Select Types* under *Multiple Item Types*.
-       1. In the dual list box, add or remove the item types you want to include in your collection.
+        1. Select *Select Types* under *Multiple Item Types*.
+        1. In the dual list box, add or remove the item types you want to include in your collection.
 
-       ![Select the different item Types for the Manual Collection](./creating-collections/images/02.png)
+        ![Select the different item Types for the Manual Collection](./creating-collections/images/02.png)
 
 1. Configure the criteria for your Dynamic Collection, based on *Scope*, *Filter*, *Content Recommendation*, or *Ordering*.
 
-   **Scope:** Define the source of items in your Dynamic Collection. By default, the source is the current site.
+    **Scope:** Define the source of items in your Dynamic Collection. By default, the source is the current site.
 
-   **Filter:** Configure the rules for the items in the Dynamic Collection. For example, you may want to include only items with the "promotion" tag.
+    **Filter:** Configure the rules for the items in the Dynamic Collection. For example, you may want to include only items with the "promotion" tag.
 
-   ![Filter your Dynamic Collection by adding one or more rules.](./creating-collections/images/10.png)
+    ![Filter your Dynamic Collection by adding one or more rules.](./creating-collections/images/10.png)
 
-    ```{tip}
-    You can add multiple rules to your Filter clicking on the Add button. The final content in the Dynamic Collection is the result of adding all the rules.
-    ```
+    !!! tip
+        You can add multiple rules to your Filter clicking on the Add button. The final content in the Dynamic Collection is the result of adding all the rules.
 
-   **Content Recommendation:** Enable this option to display content based on user behavior. For more information, see [Configuring Content Recommendations](../../../site-building/personalizing-site-experience/experience-personalization/configuring-content-recommendations.md).
+    **Content Recommendation:** Enable this option to display content based on user behavior.
 
-   ```{note}
-   The Content Recommendation option is available when you connect the DXP instance to Analytics Cloud and synchronize the content.
-   ```
+    !!! note
+        The Content Recommendation option is available when you connect the DXP instance to Analytics Cloud and synchronize the content.
 
    **Ordering:** Items in the collection appear using the order criteria you define here.
 
@@ -104,16 +100,16 @@ You can create a new Collection from an [Asset Publisher Widget](../../../site-b
 1. Go to *Site Administration* &rarr; *Site Builder* &rarr; *Pages*.
 1. Click the *Actions* button (![Add](../../../images/icon-actions.png)) next to the page that contains the Asset Publisher and select *Edit*.
 
-   ![Edit the page which contains your Asset Publisher.](./creating-collections/images/11.png)
+    ![Edit the page which contains your Asset Publisher.](./creating-collections/images/11.png)
 
 1. Hover over the *Asset Publisher*, click the *Options* icon (![Options](../../../images/icon-app-options.png)) in the widget's menu, and select *Configuration*.
 
-   ![Configure the Asset Publisher Widget.](./creating-collections/images/07.png)
+    ![Configure the Asset Publisher Widget.](./creating-collections/images/07.png)
 
 1. In the *Asset Publisher - Configuration* dialog, click the *Setup* tab and *Asset Selection* sub-tab.
 1. Scroll down and click *Create a Collection from this Configuration*.
 
-   ![Click the Create a collection from this configuration to transform the Asset Publisher widget into a new Collection.](./creating-collections/images/08.png)
+    ![Click the Create a collection from this configuration to transform the Asset Publisher widget into a new Collection.](./creating-collections/images/08.png)
 
 1. Enter the *Title* for your Collection and click *Save*.
 1. Close the *Asset Publisher - Configuration* dialog.

@@ -19,7 +19,7 @@ When you first start and configure your Liferay DXP instance, a default site is 
 
 Liferay DXP includes all the tools you need to [build your site](./sites/adding-a-site.md) and [create pages](./creating-pages/adding-pages/adding-a-page-to-a-site.md). You can create a site from an existing [site template](./sites/site-templates.md), which includes a predefined set of pages with applications, or you can create a blank site and build it from the ground up.
 
-Pages are just as flexible. There are multiple page types. Create a page from an existing [page type](./creating-pages/understanding-pages/understanding-pages.md) or create one from one of the default [page templates](./creating-pages/adding-pages/creating-a-page-template.md), or a page template you've created yourself. 
+Pages are just as flexible. There are multiple page types. Create a page from an existing [page type](./creating-pages/understanding-pages/understanding-pages.md) or create one from one of the default [page templates](./creating-pages/adding-pages/creating-a-page-template.md), or a page template you've created yourself.
 
 Sites and pages can be organized hierarchically. You can add as many nested pages (child pages) and [nested sites](./sites/site-hierarchies.md) (child sites) as you like for the parent site or page. It is possible to have multiple sites across your Liferay DXP instance for various organizations, employees, etc. You can also share content and pages between sites with the [import and export options](./sites/exporting-importing-site-pages-and-content.md).
 
@@ -29,7 +29,7 @@ Liferay DXP also provides tools to enable you to make changes to your site witho
 
 ## Displaying Content
 
-Liferay DXP's Content Management System (CMS) offers a variety of tools to create, manage and display content of many types (e.g. blogs, images, web content articles). You can use the [Web Content Display widget](./displaying-content/additional-content-display-options/using-the-web-content-display-widget.md) to display web content articles of your choosing. 
+Liferay DXP's Content Management System (CMS) offers a variety of tools to create, manage and display content of many types (e.g. blogs, images, web content articles). You can use the [Web Content Display widget](./displaying-content/additional-content-display-options/using-the-web-content-display-widget.md) to display web content articles of your choosing.
 
 If you want to publish a mix of content types you can use the [Asset Publisher](./displaying-content/using-the-asset-publisher-widget/displaying-assets-using-the-asset-publisher-widget.md) or [Collections](../site-building/displaying-content/collections-and-collection-pages/displaying-collections.md). You can manually select the content the Asset Publisher displays, or you can have it display assets dynamically based on specific criteria, giving you a great deal of control over the experience your users have. You can also embed content from other websites with the [Iframe widget](./displaying-content/additional-content-display-options/using-the-iframe-widget.md) or by creating an [embedded page](./creating-pages/understanding-pages/other-page-types.md#embedded).
 
@@ -41,7 +41,7 @@ Each piece of content has a default landing page, but you can create a [Display 
 
 ## Personalizing User Experiences
 
-Liferay DXP's [personalization and segmentation](./personalizing-site-experience.md) framework lets you build site experiences that respond to and meet your user's interests and needs. You can [create user segments](./personalizing-site-experience/segmentation/creating-and-managing-user-segments.md) based on specific criteria, such as the organizations they belong to or their role in the site, and then use it to display [personalized page layouts and content](./personalizing-site-experience/experience-personalization/content-page-personalization.md) for the user demographic, or you can [integrate with Analytics Cloud](https://learn.liferay.com/analytics-cloud/latest/en/connecting-data-sources/connecting-liferay-dxp-to-analytics-cloud.html) to analyze the behavior of the users within the segment to see how they interact with your site. You can even [recommend content based on a user's behavior](./personalizing-site-experience/experience-personalization/understanding-content-recommendations.md).
+Liferay DXP's [personalization and segmentation](./personalizing-site-experience.md) framework lets you build site experiences that respond to and meet your user's interests and needs. You can [create user segments](./personalizing-site-experience/segmentation/creating-and-managing-user-segments.md) based on specific criteria, such as the organizations they belong to or their role in the site, and then use it to display [personalized page layouts and content](./personalizing-site-experience/experience-personalization/content-page-personalization.md) for the user demographic, or you can [integrate with Analytics Cloud](https://learn.liferay.com/analytics-cloud/latest/en/connecting-data-sources/connecting-liferay-dxp-to-analytics-cloud.html) to analyze the behavior of the users within the segment to see how they interact with your site. You can even recommend content based on a user's behavior.
 
 <!-- Screenshot -->
 

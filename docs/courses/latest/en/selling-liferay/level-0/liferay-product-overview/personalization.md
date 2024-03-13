@@ -13,18 +13,20 @@ With Liferay DXP, you can personalize and optimize digital experiences at scale 
 
 ## Segmentation
 
-* [Segmentation](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience/segmentation)
+- [Segmentation](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience/segmentation)
 
 ## Personalized Experiences
 
-* [Experience Personalization](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience/experience-personalization)
+- [Experience Personalization](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience/experience-personalization)
 
 ## Personalized Collections
 
-* [Predefined collections for specific user segments](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience/experience-personalization/personalizing-collections)
+- [Predefined collections for specific user segments](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience/experience-personalization/personalizing-collections)
 
-## Recommendations
-
-* [Content Recommendations](https://learn.liferay.com/web/guest/w/dxp/site-building/personalizing-site-experience/experience-personalization/understanding-content-recommendations)
+<!--
+-- ## Recommendations
+--
+--  Add link to article on content recommendation when it's written
+-->
 
 Next: [Search](./search.md).

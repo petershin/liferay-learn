@@ -107,6 +107,3 @@ Liferay DXP has many powerful features to build, manage, and deploy content to t
 - [Configuring the Liferay DXP Service](./using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.md)
 - [Deploying Changes via the DCP Cloud Console](../updating-services-in-liferay-paas/deploying-changes-via-the-liferay-cloud-console.md)
 
-```{raw} html
-:file: landingpage_template.html
-```

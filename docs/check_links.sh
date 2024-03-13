@@ -87,6 +87,8 @@ function check_markdown {
 }
 
 function check_tocs {
+	local link
+
 	for link in $(ag --only-matching "(?s)toc\:.*^---$" ${_MARKDOWN_FILE_NAME} | ag --nomultiline --nonumbers ".*\.md$" )
 	do
 		_LINK_FILE_NAME=$(echo "${link}" | rev | cut -d' ' -f1 | rev)

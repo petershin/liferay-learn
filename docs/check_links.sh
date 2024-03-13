@@ -105,8 +105,8 @@ function echo_broken_links {
 	then
 		_CURRENT_MARKDOWN_FILE_NAME=${_MARKDOWN_FILE_NAME}
 
+		echo $(git rev-parse --show-prefix | cut -d'/' -f2- )${_MARKDOWN_FILE_NAME}
 		echo
-		echo "${_MARKDOWN_FILE_NAME}"
 	fi
 
 	echo "    ${1}: ${_LINK_FILE_NAME}"

@@ -75,7 +75,7 @@ function get_reference_docs {
 		do
 			local app_jar_relative_path=$(echo "${app_jar_dir_name}/index.html" | cut -d/ -f7-)
 
-			echo "[${app_jar_dir_name##*/}](${LIFERAY_LEARN_RESOURCE_DOMAIN}/${app_jar_relative_path})" >> ${apps_markdown_file_name}
+			echo "[${app_jar_dir_name##*/}](${_LIFERAY_LEARN_RESOURCES_DOMAIN}/${app_jar_relative_path})" >> ${apps_markdown_file_name}
 			echo "" >> ${apps_markdown_file_name}
 		done
 	done
@@ -163,18 +163,18 @@ function set_up_environment {
 
 	update_permissions
 
-	export LIFERAY_LEARN_RESOURCE_DOMAIN="${_REPOSITORY_DIR}/site"
+	export _LIFERAY_LEARN_RESOURCES_DOMAIN="${_REPOSITORY_DIR}/site"
 
 	if [[ -n "${LIFERAY_LEARN_ETC_CRON_LIFERAY_LEARN_RESOURCES_DOMAIN}" ]]
 	then
-		export LIFERAY_LEARN_RESOURCE_DOMAIN="${LIFERAY_LEARN_ETC_CRON_LIFERAY_LEARN_RESOURCES_DOMAIN}"
+		export _LIFERAY_LEARN_RESOURCES_DOMAIN="${LIFERAY_LEARN_ETC_CRON_LIFERAY_LEARN_RESOURCES_DOMAIN}"
 	fi
 
 	export _RUN_PARALLEL="true"
 
-	if [[ -n "${LIFERAY_LEARN_RUN_PARALLEL}" ]]
+	if [[ -n "${LIFERAY_LEARN_ETC_CRON_RUN_PARALLEL}" ]]
 	then
-		export _RUN_PARALLEL="${LIFERAY_LEARN_RUN_PARALLEL}"
+		export _RUN_PARALLEL="${LIFERAY_LEARN_ETC_CRON_RUN_PARALLEL}"
 	fi
 }
 

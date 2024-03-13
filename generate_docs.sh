@@ -194,10 +194,7 @@ function update_example {
 }
 
 function update_examples {
-	if [ ! -d "${_REPOSITORY_DIR}/site/logs" ]
-	then
-		mkdir "${_REPOSITORY_DIR}/site/logs"
-	fi
+	mkdir -p "${_REPOSITORY_DIR}/site/logs"
 
 	pushd "${_REPOSITORY_DIR}/docs"
 

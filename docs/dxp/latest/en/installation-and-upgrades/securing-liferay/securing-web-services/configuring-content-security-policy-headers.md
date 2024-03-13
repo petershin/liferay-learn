@@ -5,6 +5,7 @@ taxonomy-category-names:
 - Service Access Policies
 - Liferay Self-Hosted
 - Liferay PaaS
+- Liferay SaaS
 ---
 
 # Configuring Content Security Policy Headers

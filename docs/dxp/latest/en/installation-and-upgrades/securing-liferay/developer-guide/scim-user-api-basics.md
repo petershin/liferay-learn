@@ -9,6 +9,7 @@ taxonomy-category-names:
     - Liferay PaaS
     - Liferay SaaS
 ---
+
 # SCIM User API Basics
 
 {bdg-secondary}`Liferay DXP 2024.Q1+`
@@ -41,7 +42,7 @@ Once Liferay is running,
 
    The JSON response shows the addition of a new SCIM user:
 
-   ```bash
+   ```json
    {
       "emails": [
          {

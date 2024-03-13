@@ -11,6 +11,9 @@ taxonomy-category-names:
 ---
 # SCIM Group API Basics
 
+{bdg-secondary}`Liferay DXP 2024.Q1+`
+{bdg-link-primary}`[Beta Feature](../../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
+
 Liferay provides a headless API to perform CRUD operations on SCIM groups to keep their information in sync with your company's applications. SCIM groups are analogous to [user groups](../../../users-and-permissions/user-groups.md) in Liferay. Use the `/scim` endpoint from the [API Explorer](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services.html) to manage SCIM [groups](https://datatracker.ietf.org/doc/html/rfc7643#section-4.2).
 
 ## Adding a Group
@@ -263,4 +266,4 @@ The [API Explorer](https://learn.liferay.com/dxp/latest/en/headless-delivery/con
 
 ## Related Topics
 
--[Consuming REST Services](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services)
+* [Consuming REST Services](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services)

@@ -15,7 +15,7 @@ taxonomy-category-names:
 System for Cross-domain Identity Management or SCIM, is an open standard designed to automate user provisioning. In other words, it's a standard way to create, update, and deactivate user identities. SCIM provides a unified, RFC compliant way to keep user/group data in sync between different applications. It consists of:
 
 * A defined schema for representing users and groups. See [User Resource Schema](https://datatracker.ietf.org/doc/html/rfc7643#section-4.1) and [Group Resource Schema](https://datatracker.ietf.org/doc/html/rfc7643#section-4.2) for more information.
-* A RESTful API to run CRUD operations on those users and groups to keep them in sync.
+* A RESTful API to run CRUD operations on those users and groups to keep them in sync. See [SCIM User API Basics](./developer-guide/scim-user-api-basics.md) and [SCIM Group API Basics](./developer-guide/scim-group-api-basics.md) for more information.
 
 !!! important
     This feature is currently behind a [beta feature flag](../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags).
@@ -72,3 +72,8 @@ To link a user group to a SCIM client,
    ![Enter the SCIM client ID to link the user group to the SCIM client.](./system-for-cross-domain-identity-management-scim/images/03.png)
 
 1. Click *Save*.
+
+## Related Topics
+
+* [SCIM User API Basics](./developer-guide/scim-user-api-basics.md)
+* [SCIM Group API Basics](./developer-guide/scim-group-api-basics.md)

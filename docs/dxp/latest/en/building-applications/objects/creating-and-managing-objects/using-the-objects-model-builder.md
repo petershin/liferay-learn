@@ -150,11 +150,11 @@ The selected drafts begin publishing simultaneously.
 
 ## Model Builder Availability 
 
-Model Builder was released behind a [release feature flag](../../../system-administration/configuring-liferay/feature-flagz.md) in Liferay 7.4 2023.Q4/GA102. It was made Generally Available (GA) in 2024.Q1/GA112.
+Model Builder was released behind a [release feature flag](../../../system-administration/configuring-liferay/feature-flags.md) in Liferay 7.4 2023.Q4/GA102. It was made Generally Available (GA) in 2024.Q1/GA112.
 
 | Liferay Version    | Feature Status                                                                                              | Feature Flag [Label]                         |
 |:-------------------|:------------------------------------------------------------------------------------------------------------|:---------------------------------------------|
-| 2023.Q4<br>GA102   | [Release Feature](../../../system-administration/configuring-liferay/feature-flagz.md#release-feture-flags) | &#10004; [Object Model Builder (LPS-148856)] |
+| 2023.Q4<br>GA102   | [Release Feature](../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) | &#10004; [Object Model Builder (LPS-148856)] |
 | 2024.Q1+<br>GA112+ | GA                                                                                                          | &#10008;                                     |
 
 ## Related Topics

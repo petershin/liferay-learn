@@ -1,6 +1,6 @@
 # API ビルダー
 
-{bdg-secondary}Liferay DXP 2023.Q4+/Portal 7.4 GA96+
+{bdg-secondary}Liferay DXP 2023.Q4+/Portal 7.4 GA102+
 {bdg-link-primary}`[Beta Feature](../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
 
 ```{important}

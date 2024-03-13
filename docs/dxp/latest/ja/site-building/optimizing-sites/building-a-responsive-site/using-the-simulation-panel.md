@@ -1,6 +1,6 @@
 # シミュレーションパネルの使用
 
-{bdg-secondary}`利用可能 Liferay DXP 2023.Q4+/Portal GA106+`
+{bdg-secondary}`利用可能 Liferay DXP 2023.Q4+/Portal GA102+`
 
 さまざまなシナリオをシミュレートすることで、ページの応答性を検証できます。
 

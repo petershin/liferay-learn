@@ -9,7 +9,7 @@ uuid: 4ce30a4a-1d13-4b1d-a48e-dad2594a31ba
 ---
 # Using the Simulation Panel
 
-{bdg-secondary}`Available Liferay DXP 2023.Q4+/Portal GA106+`
+{bdg-secondary}`Available Liferay DXP 2023.Q4+/Portal GA102+`
 
 You can verify your page's responsiveness by simulating different scenarios.
 

@@ -1,6 +1,6 @@
 # バッチテンプレートデザイナー
 
-{bdg-secondary}`liferay DXP 2023.Q4+/Portal 7.4 GA98+`
+{bdg-secondary}`liferay DXP 2023.Q4+/Portal 7.4 GA102+`
 {bdg-link-primary}`[ベータ版フィーチャー](../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
 
 ```{important}

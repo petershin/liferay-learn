@@ -1,6 +1,6 @@
 # 가져오기/내보내기 센터
 
-{bdg-secondary}`Liferay DXP 2023.Q4+/Portal 7.4 GA98+`
+{bdg-secondary}`Liferay DXP 2023.Q4+/Portal 7.4 GA102+`
 {bdg-link-primary}` [베타 기능](../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags) `
 
 ```{important}

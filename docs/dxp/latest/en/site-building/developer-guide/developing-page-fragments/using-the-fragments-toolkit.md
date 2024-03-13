@@ -412,7 +412,7 @@ There are some alternatives you can use for developing fragments:
 
 -  **Create a Basic Custom Element**: If you must develop and manage React components, you can create a [custom element client extension](../../../building-applications/client-extensions/front-end-client-extensions/tutorials/creating-a-basic-custom-element.md). This way, you transform your React component into a widget and you can use it in your pages.
 
--  {bdg-secondary}`Available: Liferay DXP 2023.Q4+/Portal 7.4 GA105+` **Create a React Fragment**: Instantiate a React component in a fragment using static JS imports. See the example code below and its comments.
+-  {bdg-secondary}`Available: Liferay DXP 2023.Q4+/Portal 7.4 GA102+` **Create a React Fragment**: Instantiate a React component in a fragment using static JS imports. See the example code below and its comments.
 
    ![Instantiate a React component in a fragment using static JS imports.](./using-the-fragments-toolkit/images/04.png)
 

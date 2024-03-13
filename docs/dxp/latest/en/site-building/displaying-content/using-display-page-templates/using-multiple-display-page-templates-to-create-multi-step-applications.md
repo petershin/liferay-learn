@@ -10,7 +10,7 @@ uuid: 8b2517e5-e747-49f4-b389-a3b3b1f66d0b
 ---
 # Using Multiple Display Page Templates to Create Multi-Step Applications
 
-{bdg-secondary}`Liferay 2023.Q4+/GA106+`
+{bdg-secondary}`Liferay 2023.Q4+/GA102+`
 
 Display page templates display content at a dedicated URL. To use this URL and view the content, you have to first define a template to display it.
 

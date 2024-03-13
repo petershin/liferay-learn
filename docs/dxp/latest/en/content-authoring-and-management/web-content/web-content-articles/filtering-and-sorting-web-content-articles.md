@@ -83,9 +83,9 @@ When you filter by status, you filter the web content articles you have permissi
 |:--------------------------------------------------------------|:-----------------------------------------------------------------|
 | Any                                                           | All web content articles, regardless of publication status.      |
 | Draft                                                         | All web content articles that have been saved but not published. |
-| {bdg-secondary}`Liferay 7.4 2023.Q4+/Portal GA108+` Approved  | All web content articles with Approved status.          |
-| {bdg-secondary}`Liferay 7.4 2023.Q4+/Portal GA108+` Expired   | All web content articles with Expired status.           |
-| {bdg-secondary}`Liferay 7.4 2023.Q4+/Portal GA108+` Scheduled | All web content articles with Scheduled status.         |
+| {bdg-secondary}`Liferay 7.4 2023.Q4+/Portal GA102+` Approved  | All web content articles with Approved status.          |
+| {bdg-secondary}`Liferay 7.4 2023.Q4+/Portal GA102+` Expired   | All web content articles with Expired status.           |
+| {bdg-secondary}`Liferay 7.4 2023.Q4+/Portal GA102+` Scheduled | All web content articles with Scheduled status.         |
 
 With the Approved, Expired, and Scheduled filters, you can select the [*Versions* filter](#filter-by-type) to see all article's versions with the selected status.
 

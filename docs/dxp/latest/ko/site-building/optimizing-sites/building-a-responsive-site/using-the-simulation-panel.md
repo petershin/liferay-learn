@@ -1,6 +1,6 @@
 # 시뮬레이션 패널 사용
 
-{bdg-secondary}`사용 가능한 Liferay DXP 2023.Q4+/Portal GA104+`
+{bdg-secondary}`사용 가능한 Liferay DXP 2023.Q4+/Portal GA102+`
 
 다양한 시나리오를 시뮬레이션하여 페이지의 응답성을 확인할 수 있습니다.
 

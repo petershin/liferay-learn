@@ -9,7 +9,7 @@ uuid: afe56739-fa42-4145-a09a-24c56a0b9ec8
 # Fragments Toolkit Command Reference
 
 !!! note
-    The Fragments Toolkit is deprecated as of Liferay 2024.Q1+/Portal 7.4 GA107+. See [Alternatives for the Fragments Toolkit](#alternatives-to-the-fragments-toolkit) for more information.
+    The Fragments Toolkit is deprecated as of Liferay 2024.Q1+/Portal 7.4 GA112+. See [Alternatives for the Fragments Toolkit](#alternatives-to-the-fragments-toolkit) for more information.
 
 The [Fragments Toolkit](../../developing-page-fragments/using-the-fragments-toolkit.md) can connect to your currently running Liferay DXP instance to import and export fragments. You can even have Fragments that you create with the toolkit imported into Portal automatically. These commands are available:
 

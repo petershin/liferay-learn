@@ -90,7 +90,7 @@ When you filter by status, you filter the web content articles you have permissi
 With the Approved, Expired, and Scheduled filters, you can select the [*Versions* filter](#filter-by-type) to see all article's versions with the selected status.
 
 !!! note
-    (**Breaking Change**) Prior to Liferay 7.4 2024.Q1+/Portal GA108, the Approved, Expired, and Scheduled filters were called With Approved/Expired/Scheduled Versions and returned any web content with at least one version in the selected status.
+    (**Breaking Change**) Prior to Liferay 7.4 2024.Q1+/Portal GA112+, the Approved, Expired, and Scheduled filters were called With Approved/Expired/Scheduled Versions and returned any web content with at least one version in the selected status.
 
 ## Filter by Type
 

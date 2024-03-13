@@ -9,7 +9,7 @@ uuid: 8d257002-3c90-4810-82a1-17ae741c33c4
 # Using the Fragments Toolkit
 
 !!! note
-    The Fragments Toolkit is deprecated as of Liferay 2024.Q1+/Portal 7.4 GA107+. See [Alternatives for the Fragments Toolkit](#alternatives-to-the-fragments-toolkit) for more information.
+    The Fragments Toolkit is deprecated as of Liferay 2024.Q1+/Portal 7.4 GA112+. See [Alternatives for the Fragments Toolkit](#alternatives-to-the-fragments-toolkit) for more information.
 
 The Fragments Toolkit helps you develop and manage Fragments locally, using your favorite tools. Here you'll use the toolkit to generate a Fragments Project with sample Fragments, deploy it, and add your own Fragments Set to it.
 
@@ -402,7 +402,7 @@ Great! Now you know how to use the Fragments Toolkit to create and manage Fragme
 
 ## Alternatives to the Fragments Toolkit
 
-The Fragments Toolkit is deprecated as of Liferay 2024.Q1+/Portal 7.4 GA107+.
+The Fragments Toolkit is deprecated as of Liferay 2024.Q1+/Portal 7.4 GA112+.
 
 There are some alternatives you can use for developing fragments:
 

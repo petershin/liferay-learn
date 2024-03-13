@@ -246,9 +246,9 @@ Code:
    :lines: 11-40
 ```
 
-## Delete a User
+## Deactivate a User
 
-Delete an existing user with the following cURL and Java commands. Replace `1234` with your user's ID.
+Deactivate an existing user with the following cURL and Java commands. Replace `1234` with your user's ID.
 
 ### User_DELETE_ById.sh
 

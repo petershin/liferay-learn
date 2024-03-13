@@ -7,7 +7,7 @@ curl \
             {
                "primary": "'true'",
                "type": "default",
-               "value": "able@liferay.com",
+               "value": "able@liferay.com"
             }
          ],
          "name": {

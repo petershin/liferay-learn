@@ -4,9 +4,9 @@ curl \
       {
          "emails": [
             {
+               "primary": true,
                "type": "default",
-               "value": "able@liferay.com",
-               "primary": true
+               "value": "able@liferay.com"
             }
          ],
          "name": {

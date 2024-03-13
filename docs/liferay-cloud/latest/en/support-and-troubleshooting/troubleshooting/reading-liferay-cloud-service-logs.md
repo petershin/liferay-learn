@@ -111,9 +111,7 @@ To filter by a date range, use the date picker at the top-right corner. You cann
 !!! tip
     Click *Jump to now* to quickly see the latest log messages when you've selected a date range. The end of your selected date range changes to the current time.
 
-You can also use the search bar to search for a specific term in log messages. Select _Term_ or _Regex_ from the drop-down menu, and then enter your search term or regular expression. Search suggestions appear based on previous searches. Regular expressions use the [RE2 syntax](https://github.com/google/re2/wiki/Syntax).
-
-![Use the search to find logs with specific terms or formats.](./reading-liferay-cloud-service-logs/images/06.png)
+You can also use the search bar to search for specific terms in log messages.
 
 ## Accessing Logs via the Terminal
 

@@ -1,4 +1,6 @@
 ---
+toc: 
+  - ./using-a-theme-css-client-extension/theme-css-yaml-configuration-reference.md
 uuid: bc607275-9efe-4dee-9199-22ccc118a821
 taxonomy-category-names:
 - Development and Tooling
@@ -168,3 +170,7 @@ You have successfully used a theme CSS client extension in Liferay. Next, try de
 * [Using a JS Client Extension](./using-a-javascript-client-extension.md)
 * [Using a Theme Favicon Client Extension](./using-a-theme-favicon-client-extension.md)
 * [Using a Theme Sprite Map Client Extension](./using-a-theme-spritemap-client-extension.md)
+
+## Related Topics
+
+[Theme CSS Client Extension Configuration Reference](./using-a-theme-css-client-extension/theme-css-yaml-configuration-reference.md)

@@ -1,4 +1,6 @@
 ---
+toc: 
+  - ./using-a-css-client-extension/css-yaml-configuration-reference.md
 uuid: a8159380-3119-46c5-be6e-d9e24e60c325
 taxonomy-category-names:
 - Development and Tooling
@@ -139,3 +141,7 @@ If the buttons on the page still show the default background color, do a hard re
 You have successfully used a CSS client extension in Liferay. Next, try deploying other client extension types.
 
 * [Using a JS Client Extension](./using-a-javascript-client-extension.md)
+
+## Related Topics
+
+[CSS Client Extension YAML Configuration Reference](./using-a-css-client-extension/css-yaml-configuration-reference.md)

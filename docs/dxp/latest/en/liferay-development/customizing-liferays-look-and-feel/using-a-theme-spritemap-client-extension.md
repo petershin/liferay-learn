@@ -1,4 +1,6 @@
 ---
+toc: 
+  - ./using-a-theme-spritemap-client-extension/theme-sprite-map-yaml-configuration-reference.md
 uuid: 916e394b-8115-4639-b465-d849ede6475b
 taxonomy-category-names:
 - Development and Tooling
@@ -167,3 +169,7 @@ You have successfully used a theme sprite map client extension. Next, try deploy
 * [Using a CSS Client Extension](./using-a-css-client-extension.md)
 * [Using a JS Client Extension](./using-a-javascript-client-extension.md)
 * [Using a Theme Favicon Client Extension](./using-a-theme-favicon-client-extension.md)
+
+## Related Topics
+
+[Theme Spritemap YAML Configuration Reference](./using-a-theme-spritemap-client-extension/theme-sprite-map-yaml-configuration-reference.md)

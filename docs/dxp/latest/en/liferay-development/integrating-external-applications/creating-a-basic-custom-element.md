@@ -1,4 +1,6 @@
 ---
+toc: 
+  - ./creating-a-basic-custom-element/custom-element-yaml-configuration-reference.md
 uuid: fdced878-aea0-40b8-9959-828e9787d373
 taxonomy-category-names:
 - Development and Tooling
@@ -178,7 +180,8 @@ Once saved, Liferay creates a widget named H5V7-Custom-Element, which you can de
 
 ## Related Topics
 
-* [Frontend Client Extensions](../../frontend-client-extensions.md)
+* [Custom Element YAML Configuration Reference](./creating-a-basic-custom-element/custom-element-yaml-configuration-reference.md)
+* [Front-end Client Extensions](../../front-end-client-extensions.md)
 * [Understanding Custom Element and IFrame Client Extensions](../understanding-custom-element-and-iframe-client-extensions.md)
 * [Using Routes with Custom Elements](./using-routes-with-custom-elements.md)
 * [Remote Applications UI Reference](../client-extensions-ui-reference.md)

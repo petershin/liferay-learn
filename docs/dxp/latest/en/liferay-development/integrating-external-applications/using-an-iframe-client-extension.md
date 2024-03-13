@@ -1,4 +1,6 @@
 ---
+toc: 
+  - ./using-an-iframe-client-extension/iframe-yaml-configuration-reference.md
 uuid: 26cee4e4-07ad-4341-a5d6-ee4c715f7009
 taxonomy-category-names:
 - Development and Tooling
@@ -102,5 +104,6 @@ Confirm the Counter App is working by adding some items.
 ## Related Topics
 
 * [Frontend Client Extensions](../../frontend-client-extensions.md)
+* [IFrame YAML Configuration Reference](./using-an-iframe-client-extension/iframe-yaml-configuration-reference.md)
 * [Understanding Custom Element and IFrame Client Extensions](../understanding-custom-element-and-iframe-client-extensions.md)
 * [Client Extensions UI Reference](../client-extensions-ui-reference.md)

@@ -1,4 +1,6 @@
 ---
+toc: 
+  - ./using-a-javascript-client-extension/javascript-yaml-configuration-reference.md
 uuid: e26e34b4-ca1b-490b-b911-4ef92ad123ea
 taxonomy-category-names:
 - Development and Tooling
@@ -127,3 +129,7 @@ If the alert window does not appear at first, do a hard refresh of the page to c
 You have successfully used a JS client extension in Liferay. Next, try deploying other client extension types.
 
 * [Using a CSS Client Extension](./using-a-css-client-extension.md)
+
+## Related Topics
+
+[JavaScript Client Extension YAML Configuration Reference](./using-a-javascript-client-extension/javascript-yaml-configuration-reference.md)

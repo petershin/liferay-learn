@@ -45,53 +45,6 @@ type: globalJS
 
 See [Using a JavaScript Client Extension](./frontend-client-extensions/tutorials/using-a-javascript-client-extension.md) to get started.
 
-## CSS Client Extensions
-
-CSS client extensions introduce new CSS styling to pages. A deployed CSS client extension on a page adds to the page's existing styling, including theme and style book settings.
-
-Specify a CSS client extension in your `client-extension.yaml` file :
-
-```yaml
-type: globalCSS
-```
-
-See [Using a CSS Client Extension](./frontend-client-extensions/tutorials/using-a-css-client-extension.md) to get started.
-
-## Theme CSS Client Extensions
-
-While [CSS client extensions](#css-client-extensions) add styling to pages, theme CSS client extensions override styling on the page, including from the site's [theme](../../site-building/site-appearance/themes/introduction-to-themes.md). The client extension uses a `clay.css` file and a `main.css` file to replace the identically named files normally used in your site's theme.
-
-You can add this type of client extension as an option from *Client Extensions* in the Liferay Applications menu.
-
-![Add a theme CSS client extension to replace CSS provided by your site's theme.](./frontend-client-extensions/images/01.png)
-
-!!! note
-    The `clay.css` and `main.css` files must be hosted remotely to use this type of client extension.
-
-    As this client extension fully replaces the default CSS contained in the theme, make sure to provide [Clay styling](https://clayui.com/docs/css/index.html) for any out-of-the-box widgets that are used by Liferay. Alternatively, to fix the styling of a particular Liferay widget, wrap the widget in a container that includes the `cadmin` CSS class under the container element's Advanced tab.
-
-Specify a Theme CSS client extension in your `client-extension.yaml` file:
-
-```yaml
-type: themeCSS
-```
-
-## Theme Favicon Client Extensions
-
-Override the favicon for your pages in Liferay. When deployed, the provided icon file becomes available for any page in Liferay. You can access it in a separate *Client Extensions* tab when you configure the favicon for a page from the Page Design Options menu.
-
-![When you configure the favicon for a page, access the favicon from your client extension from a special Client Extensions tab.](./frontend-client-extensions/images/02.png)
-
-## Theme Sprite Map Client Extensions
-
-Theme sprite map client extensions override the sprite map for site pages. Define the sprite map as an `.svg` image, and it replaces the one used by your site's current theme.
-
-Specify a theme sprite map client extension in your `client-extension.yaml` file:
-
-```yaml
-type: themeSpritemap
-```
-
 ## Custom Element Client Extensions
 
 > Previously named Custom Element Remote App

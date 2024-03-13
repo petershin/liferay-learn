@@ -1,4 +1,6 @@
 ---
+toc: 
+  - ./using-an-editor-config-contributor-client-extension/editor-config-contributor-yaml-configuration-reference.md
 uuid: 526d84df-cbe5-414a-8ac4-434f22e81a97
 taxonomy-category-names:
 - Development and Tooling
@@ -165,6 +167,9 @@ You have successfully used an Editor Config Contributor client extension in Life
 
 ## Related Topics
 
+- [Editor Config Contributor YAML Configuration Reference](./using-an-editor-config-contributor-client-extension/editor-config-contributor-yaml-configuration-reference.md)
 - [Using a CSS Client Extension](./using-a-css-client-extension.md)
 - [Using a JS Client Extension](./using-a-javascript-client-extension.md)
 - [Creating a Basic Custom Element](./creating-a-basic-custom-element.md)
+
+

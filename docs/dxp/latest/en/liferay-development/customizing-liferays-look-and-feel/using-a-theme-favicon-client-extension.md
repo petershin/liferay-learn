@@ -1,4 +1,6 @@
 ---
+toc: 
+  - ./using-a-theme-favicon-client-extension/theme-favicon-yaml-configuration-reference.md
 uuid: 75c87280-d934-43a4-b1e1-59d7a3b054ed
 taxonomy-category-names:
 - Development and Tooling
@@ -111,3 +113,7 @@ You have successfully used a theme favicon client extension in Liferay. Next, tr
 
 * [Using a CSS Client Extension](./using-a-css-client-extension.md)
 * [Using a JS Client Extension](./using-a-javascript-client-extension.md)
+
+## Related Topics
+
+[Theme Favicon YAML Configuration Reference](./using-a-theme-favicon-client-extension/theme-favicon-yaml-configuration-reference.md)

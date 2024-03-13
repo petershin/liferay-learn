@@ -107,7 +107,6 @@ function check_tocs {
 }
 
 function echo_broken_links {
-
 	if [[ -z ${_CURRENT_MARKDOWN_FILE_NAME} || ${_CURRENT_MARKDOWN_FILE_NAME} != ${_MARKDOWN_FILE_NAME} ]]
 	then
 		_CURRENT_MARKDOWN_FILE_NAME=${_MARKDOWN_FILE_NAME}
@@ -118,7 +117,6 @@ function echo_broken_links {
 
 	echo "    ${_LINK_TYPE}: ${_PATH}"
 	echo
-
 }
 
 function ls {

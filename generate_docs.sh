@@ -219,6 +219,7 @@ function update_examples {
 		if [ -s "${file_name}" ]
 		then
 			echo "Errors from: $(basename ${file_name})"
+
 			cat "${file_name}"
 		fi
 	done

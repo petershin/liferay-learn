@@ -19,11 +19,9 @@ Users with the necessary account management permissions can set channel defaults
 
 Here you can set the following defaults.
 
-```{note}
-If you set defaults for individual channels and all other channels, the individual defaults takes priority if eligible.
-
-{bdg-secondary}`Liferay DXP 2024.Q1+/Portal 7.4 GA112+` There are two new permissions to control user access to view and manage channel defaults. A user with the `Accounts > Account Entry: View Channel Defaults` permission can only view the defaults under the Channel Defaults tab. Users with the `Accounts > Account Entry: Manage Channel Defaults` permission can view and edit channel defaults. 
-```
+!!! note
+    If you set defaults for individual channels and all other channels, the individual defaults takes priority if eligible.
+    {bdg-secondary}`Liferay DXP 2024.Q1+/Portal 7.4 GA112+` There are two new permissions to control user access to view and manage channel defaults. A user with the `Accounts > Account Entry: View Channel Defaults` permission can only view the defaults under the Channel Defaults tab. Users with the `Accounts > Account Entry: Manage Channel Defaults` permission can view and edit channel defaults. 
 
 ## Default Billing and Shipping Addresses
 
@@ -37,9 +35,8 @@ If you set defaults for individual channels and all other channels, the individu
 
    ![Set default billing and shipping addresses for all or individual channels.](./setting-channel-defaults/images/01.png)
 
-```{note}
-Only users with account management permissions can manage channel defaults. However, account users can set their default billing and shipping addresses for all channels via the Account Details tab.
-```
+!!! note
+    Only users with account management permissions can manage channel defaults. However, account users can set their default billing and shipping addresses for all channels via the Account Details tab.
 
 ## Default Terms and Conditions
 
@@ -49,9 +46,8 @@ Only users with account management permissions can manage channel defaults. Howe
 
 1. (Optional) Enable the *Override Eligibility* toggle to override eligibility set for the terms and conditions.
 
-   ```{important}
-   Payment terms are linked to a payment method and delivery terms are linked to a shipping option. When there are multiple eligible terms and conditions for a payment method or shipping option, overriding eligibility sets the selected terms and conditions as the default, regardless of eligibility. See [Understanding Eligibility and Channel Defaults](../channel-defaults.md#understanding-eligibility-and-channel-defaults) to learn more.
-   ```
+   !!! important
+       Payment terms are linked to a payment method and delivery terms are linked to a shipping option. When there are multiple eligible terms and conditions for a payment method or shipping option, overriding eligibility sets the selected terms and conditions as the default, regardless of eligibility. See [Understanding Eligibility and Channel Defaults](../channel-defaults.md#understanding-eligibility-and-channel-defaults) to learn more.
 
 1. Select a *term*.
 
@@ -93,9 +89,8 @@ The default shipping value is determined by existing priority settings for the c
 
 1. Select a *currency*.
 
-   ```{important}
-   This sets the default channel currency for the account during navigation only. Product pages and the catalog use the currency set here. The currency set for the channel at the time of creation is not modified.
-   ```
+   !!! important
+       This sets the default channel currency for the account during navigation only. Product pages and the catalog use the currency set here. The currency set for the channel at the time of creation is not modified.
 
 1. Click *Save*.
 
@@ -119,9 +114,8 @@ The default payment method is determined by existing priority settings for the c
 
 1. Select *All Channels* or an individual channel.
 
-   ```{tip}
-   You can assign multiple channel account managers to the same channel.
-   ```
+   !!! tip
+       You can assign multiple channel account managers to the same channel.
 
 1. Select a user.
 
@@ -139,9 +133,8 @@ When selecting default Channel Account Managers, only users with a regular role 
 
 By itself, this permission does not grant access to the Accounts application, or to view and update individual accounts. It also does not grant allow managing orders or setting channel defaults for price lists and other Commerce entities. If you want Channel Account Managers to perform these administrative actions, you must grant them the necessary permissions for each application (e.g., Accounts, Orders, Price Lists). See [Channel Defaults Permissions Reference](./channel-defaults-permissions-reference.md) for more information.
 
-```{note}
-If you use [organizations](../../organizations/understanding-organizations.md), users can continue to manage the organization accounts they have permission to manage along with accounts for which they are default Channel Account Managers.
-```
+!!! note
+    If you use [organizations](../../organizations/understanding-organizations.md), users can continue to manage the organization accounts they have permission to manage along with accounts for which they are default Channel Account Managers.
 
 ## Related Topics
 

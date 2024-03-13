@@ -13,9 +13,8 @@ taxonomy-category-names:
 
 {bdg-secondary}`Liferay DXP 7.4 U84+/GA84+`
 
-```{important}
-Order splitting is currently behind a release feature flag. Read [Release Feature Flags](https://learn.liferay.com/web/guest/w/dxp/system-administration/configuring-liferay/feature-flags#release-feature-flags) for more information.
-```
+!!! important
+    Order Splitting was released behind a [release feature flag](https://learn.liferay.com/web/guest/w/dxp/system-administration/configuring-liferay/feature-flags#release-feature-flags) in Liferay DXP 7.4 U84/GA84. It was made Generally Available (GA) in 2024.Q1/GA112.
 
 Sometimes an order has multiple product lines or products fulfilled by different suppliers. In such cases, you may want to split the order into independently fulfilled sub-orders.
 
@@ -113,9 +112,8 @@ When using the out-of-the-box order splitting rule, discounts are split between 
 
 The original order's total value is $100 and has a fixed order discount of $10. It is split between two suppliers, A and B, with values $25 and $75 respectively. The discount is split among these two suppliers based on the percentage value of the supplier order with respect to the original order. Here, supplier A's order value of $25 makes up 25% of the original order value. Therefore, supplier A's order gets a discount that is 25% of the original discount.
 
-```{note}
-The above illustration is valid only for fixed discounts. For percentage discounts, the percentage amounts are deducted from each supplier order. For instance, if there's a 10% discount on the order, each supplier order gets a discount of 10%.
-```
+!!! note
+    The above illustration is valid only for fixed discounts. For percentage discounts, the percentage amounts are deducted from each supplier order. For instance, if there's a 10% discount on the order, each supplier order gets a discount of 10%.
 
 ## Fulfilling Split Orders
 

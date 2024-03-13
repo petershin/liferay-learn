@@ -19,7 +19,7 @@ Businesses can have different ways of maintaining and selling their stock. This 
 * pallet/case/unit
 
 !!! important
-    This feature is currently behind a release feature flag. Read [Release Feature Flags](https://learn.liferay.com/web/guest/w/dxp/system-administration/configuring-liferay/feature-flags#release-feature-flags) for more information.
+    Units of Measure (UOM) was released behind a [release feature flag](https://learn.liferay.com/web/guest/w/dxp/system-administration/configuring-liferay/feature-flags#release-feature-flags) in Liferay DXP 2023.Q4/Portal 7.4 GA98. It was made Generally Available (GA) in 2024.Q1/GA112.
 
 You can define your own units of measure to manage, price, and sell your inventory by these defined units. You can also use UOM to sell stock in decimal quantities. 
 

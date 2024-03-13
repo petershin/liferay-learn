@@ -12,11 +12,10 @@ taxonomy-category-names:
 
 {bdg-secondary}`Liferay DXP 7.4 U84+/GA84+`
 
-```{important}
-Price on Application is currently behind a release feature flag. Read [Release Feature Flags](https://learn.liferay.com/web/guest/w/dxp/system-administration/configuring-liferay/feature-flags#release-feature-flags) for more information.
-```
+!!! important
+    Price on Application was released behind a [release feature flag](https://learn.liferay.com/web/guest/w/dxp/system-administration/configuring-liferay/feature-flags#release-feature-flags) in Liferay DXP 7.4 U84/GA84. It was made Generally Available (GA) in 2024.Q1/GA112.
 
-If you have expensive or complex products in your catalog, you may not want customers to purchase them without help. If you want support staff to assist and intervene before making a purchase, you can hide pricing on those products and require your customers to request a quote. This is called _price on application_. Customers can optionally request quotes for regular products or baskets of goods. You can even selectively apply this to accounts or account groups so that some customers can order autonomously while others must request a quote.
+If you have expensive or complex products in your catalog, you may not want customers to purchase them without help. If you want support staff to assist and intervene before making a purchase, you can hide pricing on those products and require your customers to request a quote. This is called *price on application*. Customers can optionally request quotes for regular products or baskets of goods. You can even selectively apply this to accounts or account groups so that some customers can order autonomously while others must request a quote.
 
 ## Enabling Price on Application for a Product
 
@@ -50,9 +49,8 @@ The product detail's page contains a new button to request a quote.
 
 1. Click *Request a Quote* from the product details page. Alternatively, if you wish to combine this product with other products, you can add them to cart, open the mini cart, and click on *Request a Quote*.
 
-   ```{note}
-   If any item in the cart is priced on application, then the checkout button isn't available, and customers must request a quote.
-   ```
+   !!! note
+       If any item in the cart is priced on application, then the checkout button isn't available, and customers must request a quote.
 
    ![You can request a quote from the mini cart.](./price-on-application/images/03.png)
 
@@ -116,13 +114,10 @@ With a custom price list or promotion list, you can require a product to be pric
 
 The account (CC West) must now request a quote for this product while all other accounts can purchase the product for its base price. You can follow the same steps as above to use a promotion list to price a SKU on application. Customer accounts eligible for the promotion must request a quote for the configured SKU. Other accounts can check out and submit an order as usual.
 
-```{important}
-The default discovery logic for price lists and promotion lists is `hierarchy`. This works based on priority. The highest priority eligible price list or promotion list gets applied to the account.
-
-When using the `lowest` discovery logic for price lists and promotion lists, price on application has the highest precedence compared to price lists and promotion lists (price on application > price lists and promotion lists).
-
-Consider a scenario where an SKU is priced on application in the base price list. You have a long standing account that can buy the same SKU at a fixed price. To do this, you can create a custom price list or promotion list and set a price for the SKU and its eligibility for the specific account account. This takes precedence over the base price list (price on application) for that account. Other accounts must request a quote for the same SKU.
-```
+!!! important
+    The default discovery logic for price lists and promotion lists is `hierarchy`. This works based on priority. The highest priority eligible price list or promotion list gets applied to the account.
+    When using the `lowest` discovery logic for price lists and promotion lists, price on application has the highest precedence compared to price lists and promotion lists (price on application > price lists and promotion lists).
+    Consider a scenario where an SKU is priced on application in the base price list. You have a long standing account that can buy the same SKU at a fixed price. To do this, you can create a custom price list or promotion list and set a price for the SKU and its eligibility for the specific account account. This takes precedence over the base price list (price on application) for that account. Other accounts must request a quote for the same SKU.
 
 ## Order Life Cycle of Products Priced on Application
 
@@ -134,6 +129,5 @@ After selecting the order, you can add notes or more information that the custom
 
 ![Click on Quote Processed to process the quote.](./price-on-application/images/06.png)
 
-```{note}
-Image: “[CIFA Wash Batching Plant](https://www.cifa.com/en/batching-plants/recycling/cifa-wash)”
-```
+!!! note
+    Image: “[CIFA Wash Batching Plant](https://www.cifa.com/en/batching-plants/recycling/cifa-wash)”

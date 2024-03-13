@@ -73,6 +73,8 @@ function check_landing_pages {
 }
 
 function check_markdown {
+	local links
+
 	for links in $(ag --only-matching '\[.*\]\((?!http).*\.md.*\).*' ${_MARKDOWN_FILE_NAME} )
 	do
 		for _PATH in $(echo ${links} | sed -e 's/\.md)/\.md)\n/g' | sed 's/.*\](\(.*\.md\).*).*/\1/g')

@@ -9,9 +9,7 @@ function check_grids {
 
 		if ! ls "${_PATH}"
 		then
-			_LINK_TYPE="Grid link"
-
-			echo_broken_links
+			echo_broken_links "Grid link"
 		fi
 	done
 }
@@ -35,9 +33,7 @@ function check_images {
 		then
 			_PATH=${path}
 
-			_LINK_TYPE="Image link"
-
-			echo_broken_links ${_LINK_TYPE}
+			echo_broken_links "Image link"
 		fi
 	done
 }
@@ -83,9 +79,7 @@ function check_markdown {
 			then
 				if ! ls "${_PATH}"
 				then
-					_LINK_TYPE="Markdown link"
-
-					echo_broken_links ${_LINK_TYPE}
+					echo_broken_links "Markdown link"
 				fi
 			fi
 		done
@@ -99,9 +93,7 @@ function check_tocs {
 
 		if ! ls "${_PATH}"
 		then
-			_LINK_TYPE="TOC link"
-
-			echo_broken_links ${_LINK_TYPE}
+			echo_broken_links "TOC link"
 		fi
 	done
 }
@@ -115,7 +107,7 @@ function echo_broken_links {
 		echo "${_MARKDOWN_FILE_NAME}"
 	fi
 
-	echo "    ${_LINK_TYPE}: ${_PATH}"
+	echo "    ${1}: ${_PATH}"
 	echo
 }
 

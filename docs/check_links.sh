@@ -5,9 +5,9 @@ function check_grids {
 
 	for link in $(ag --only-matching "\:link\:.*\.md" ${_MARKDOWN_FILE_NAME})
 	do
-		_PATH=$(echo ${link} | cut -d':' -f3 | sed 's/\ //g' )
+		_LINK_FILE_NAME=$(echo ${link} | cut -d':' -f3 | sed 's/\ //g' )
 
-		if ! ls "${_PATH}"
+		if ! ls "${_LINK_FILE_NAME}"
 		then
 			echo_broken_links "Grid link"
 		fi
@@ -19,9 +19,9 @@ function check_images {
 
 	for link in $(ag --only-matching "\[.+?\]\(.*?\.(gif|jpg|png)\)" ${_MARKDOWN_FILE_NAME})
 	do
-		local path=$(echo ${link} | sed 's/\[.*\](\(.*\.\(gif\|jpg\|png\)\).*)/\1/g' )
+		local link_file_name=$(echo ${link} | sed 's/\[.*\](\(.*\.\(gif\|jpg\|png\)\).*)/\1/g' )
 
-		local image_file_name=$(pwd ${path})/${path}
+		local image_file_name=$(pwd ${link_file_name})/${link_file_name}
 
 		if [[ ${image_file_name} != *"/en/"* ]]
 		then
@@ -31,7 +31,7 @@ function check_images {
 
 		if ! ls "${image_file_name}" || [[ ${image_file_name} != *"/images/"* ]]
 		then
-			_PATH=${path}
+			_LINK_FILE_NAME=${link_file_name}
 
 			echo_broken_links "Image link"
 		fi
@@ -43,24 +43,24 @@ function check_landing_pages {
 
 	for landing_page_reference in $(ag --no-filename --no-numbers "\:file\:.*landing\.html" ${_MARKDOWN_FILE_NAME} )
 	do
-		local landing_page_path=$(echo ${landing_page_reference} | sed 's/\:file\://g' | sed 's/\ //g' )
+		local landing_page_link_file_name=$(echo ${landing_page_reference} | sed 's/\:file\://g' | sed 's/\ //g' )
 
 		local link
 
-		for link in $(ag --no-filename "url\:" ${landing_page_path})
+		for link in $(ag --no-filename "url\:" ${landing_page_link_file_name})
 		do
 			if [[ ${link} != *"https://"* ]]
 			then
-				local path=$(echo ${link} \
+				local link_file_name=$(echo ${link} \
 					| sed "s/.*\('\|\"\)\(.*\)\('\|\"\|\#\).*/\2/g" \
 					| sed 's/\(.*\)#.*/\1/g' | sed 's/\.html/\.md/g' \
 				)
 
-				if ! ls "${path}"
+				if ! ls "${link_file_name}"
 				then
 					echo "Landing page link:"
-					echo "    Landing page reference: ${landing_page_path}"
-					echo "    Link: ${path/.md/.html}"
+					echo "    Landing page reference: ${landing_page_link_file_name}"
+					echo "    Link: ${link_file_name/.md/.html}"
 					echo
 				fi
 			fi
@@ -73,11 +73,11 @@ function check_markdown {
 
 	for links in $(ag --only-matching '\[.*\]\((?!http).*\.md.*\).*' ${_MARKDOWN_FILE_NAME} )
 	do
-		for _PATH in $(echo ${links} | sed -e 's/\.md)/\.md)\n/g' | sed 's/.*\](\(.*\.md\).*).*/\1/g')
+		for _LINK_FILE_NAME in $(echo ${links} | sed -e 's/\.md)/\.md)\n/g' | sed 's/.*\](\(.*\.md\).*).*/\1/g')
 		do
-			if [[ ${_PATH} == *".md" ]]
+			if [[ ${_LINK_FILE_NAME} == *".md" ]]
 			then
-				if ! ls "${_PATH}"
+				if ! ls "${_LINK_FILE_NAME}"
 				then
 					echo_broken_links "Markdown link"
 				fi
@@ -89,9 +89,9 @@ function check_markdown {
 function check_tocs {
 	for link in $(ag --only-matching "(?s)toc\:.*^---$" ${_MARKDOWN_FILE_NAME} | ag --nomultiline --nonumbers ".*\.md$" )
 	do
-		_PATH=$(echo "${link}" | rev | cut -d' ' -f1 | rev)
+		_LINK_FILE_NAME=$(echo "${link}" | rev | cut -d' ' -f1 | rev)
 
-		if ! ls "${_PATH}"
+		if ! ls "${_LINK_FILE_NAME}"
 		then
 			echo_broken_links "TOC link"
 		fi
@@ -107,7 +107,7 @@ function echo_broken_links {
 		echo "${_MARKDOWN_FILE_NAME}"
 	fi
 
-	echo "    ${1}: ${_PATH}"
+	echo "    ${1}: ${_LINK_FILE_NAME}"
 	echo
 }
 

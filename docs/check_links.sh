@@ -1,6 +1,8 @@
 #!/bin/bash
 
 function check_grids {
+	local link
+
 	for link in $(ag --only-matching "\:link\:.*\.md" ${_MARKDOWN_FILE_NAME})
 	do
 		_PATH=$(echo ${link} | cut -d':' -f3 | sed 's/\ //g' )
@@ -15,12 +17,13 @@ function check_grids {
 }
 
 function check_images {
+	local link
+
 	for link in $(ag --only-matching "\[.+?\]\(.*?\.(gif|jpg|png)\)" ${_MARKDOWN_FILE_NAME})
 	do
+		local path=$(echo ${link} | sed 's/\[.*\](\(.*\.\(gif\|jpg\|png\)\).*)/\1/g' )
 
-		path=$(echo ${link} | sed 's/\[.*\](\(.*\.\(gif\|jpg\|png\)\).*)/\1/g' )
-
-		image_file_name=$(pwd ${path})/${path}
+		local image_file_name=$(pwd ${path})/${path}
 
 		if [[ ${image_file_name} != *"/en/"* ]]
 		then
@@ -40,15 +43,19 @@ function check_images {
 }
 
 function check_landing_pages {
+	local landing_page_reference
+
 	for landing_page_reference in $(ag --no-filename --no-numbers "\:file\:.*landing\.html" ${_MARKDOWN_FILE_NAME} )
 	do
-		landing_page_path=$(echo ${landing_page_reference} | sed 's/\:file\://g' | sed 's/\ //g' )
+		local landing_page_path=$(echo ${landing_page_reference} | sed 's/\:file\://g' | sed 's/\ //g' )
+
+		local link
 
 		for link in $(ag --no-filename "url\:" ${landing_page_path})
 		do
 			if [[ ${link} != *"https://"* ]]
 			then
-				path=$(echo ${link} \
+				local path=$(echo ${link} \
 					| sed "s/.*\('\|\"\)\(.*\)\('\|\"\|\#\).*/\2/g" \
 					| sed 's/\(.*\)#.*/\1/g' | sed 's/\.html/\.md/g' \
 				)

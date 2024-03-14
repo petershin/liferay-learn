@@ -3,9 +3,9 @@ uuid: 7600c13a-c687-4637-97ca-abac89b05107
 ---
 # Deploying the Application
 
-The Distributor Application solution comprises many Liferay features, such as [Objects](https://learn.liferay.com/w/dxp/building-applications/objects), [Picklists](https://learn.liferay.com/w/dxp/building-applications/objects/picklists), and [Workflows](https://learn.liferay.com/w/dxp/process-automation/workflow/). It also utilizes page builder features to [build dynamic and responsive user interfaces](https://learn.liferay.com/w/dxp/site-building/creating-pages), [design forms](https://learn.liferay.com/w/dxp/process-automation/forms/creating-and-managing-forms), [display object data](https://learn.liferay.com/w/dxp/building-applications/objects/displaying-object-entries), and more.
+The Distributor Application solution incorporates several Liferay features, such as [Objects](https://learn.liferay.com/w/dxp/building-applications/objects), [Picklists](https://learn.liferay.com/w/dxp/building-applications/objects/picklists), and [Workflows](https://learn.liferay.com/w/dxp/process-automation/workflow/). It also utilizes page builder features to [build dynamic and responsive user interfaces](https://learn.liferay.com/w/dxp/site-building/creating-pages), [design forms](https://learn.liferay.com/w/dxp/process-automation/forms/creating-and-managing-forms), [display object data](https://learn.liferay.com/w/dxp/building-applications/objects/displaying-object-entries), and more.
 
-The solution will be deployed using [Client Extensions](https://learn.liferay.com/w/dxp/building-applications/client-extensions), which are stored in Clarity's prebuilt [Liferay Workspace](https://learn.liferay.com/web/guest/w/dxp/building-applications/tooling/liferay-workspace). Some portions of the application are already configured in the prebuilt solution; other parts will be completed in the exercises found along the module.
+For the purpose of this course, we will deploy the application using [Client Extensions](https://learn.liferay.com/w/dxp/building-applications/client-extensions), which are stored in Clarity's prebuilt [Liferay Workspace](https://learn.liferay.com/web/guest/w/dxp/building-applications/tooling/liferay-workspace). Some portions of the application are already configured in the prebuilt solution; you will complete other parts yourself as you progress through this module.
 
 In this article, you'll learn how to:
 
@@ -17,7 +17,7 @@ In this article, you'll learn how to:
 
 Follow these steps to install the prebuilt Clarity workspace:
 
-1. Download and unzip the workspace in a folder of your choice.
+1. Download and unzip the workspace in a folder of your choice using these commands:
 
    ```bash
    curl <!-- TODO: Insert Nexus Clarity Workspace link for download -->
@@ -39,7 +39,7 @@ Follow these steps to install the prebuilt Clarity workspace:
    ../gradlew clean build
    ```
 
-The compiled `.zip` files are created in each project's `dist/` folder. Client Extensions are deployed by placing these archives in the correct location of your running Liferay instance.
+The compiled `.zip` files are created in each project's `dist/` folder.<!--IMAGE: screenshot/example of directory--> Client Extensions are deployed by placing these archives in the correct location of your running Liferay instance.
 
 ## Deploying the Picklists
 
@@ -49,13 +49,13 @@ The predefined picklists for Clarity's solution can be implemented by following 
 
 1. Go to the `liferay-clarity-picklists-batch` folder.
 
-   ```
+   ```bash
    cd liferay-clarity-picklists-batch/
    ```
 
 Depending on which deployment option you're using for Liferay (SaaS or Self-Hosted only), the steps to deploy the Client Extension will be different.
 
-### Deploying to Liferay SaaS:
+### Deploying to Liferay SaaS
 
 In order to deploy Client Extensions to your SaaS environment, you'll use the Liferay Cloud CLI tool you installed in [Module 2](../module-2-developer-setup/liferay-workspace.md#prerequisites).
 
@@ -78,7 +78,7 @@ In order to deploy Client Extensions to your SaaS environment, you'll use the Li
 
    ![All picklists appear after deploying the Client Extension.](./deploying-the-application/images/02.png)
 
-### Deploying to Liferay Self-Hosted:
+### Deploying to Liferay Self-Hosted
 
 If you self-host your Liferay installation, copy the `.zip` file from the project's `dist/` into the server's `[Liferay Home]/osgi/client-extensions/` folder.
 
@@ -136,7 +136,7 @@ An evaluation entry is automatically assigned to the application. You can confir
 
 Now that you've deployed the main parts of the solution, let's move on. The following sections will guide you through the features of the solution and some of the decisions Clarity had to make in designing it.
 
-Up next: [Modeling Data Structures](./modeling-data-structures.md)
+Up Next: [Modeling Data Structures](./modeling-data-structures.md)
 
 ## Additional Resources
 

@@ -14,6 +14,6 @@ Originally, Clarity's distributor application solution used standard object layo
 
 <!--TODO: Add screenshots of custom pages once they are built. How much of this can we include in the prebuilt application, and how much should we have students do themselves?-->
 
-While the distributor application previously existed as a separate entity, these new pages unify the application with the rest of the Clarity experience. 
+While the distributor application previously existed as a separate entity, these new pages unify the application with the rest of the Clarity experience.
 
-This concludes *Module 10: Building Applications*. Up next: [Module 11: Performance Tuning](../module-11.md)
+This concludes *Module 10: Building Applications*.

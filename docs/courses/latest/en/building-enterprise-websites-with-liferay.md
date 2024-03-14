@@ -114,7 +114,7 @@ Coming Soon in Q1 2024
 :::{grid-item-card}  Module 10: Building Applications
 :link: ./building-enterprise-websites-with-liferay/module-10-building-applications.md
 
-Coming Soon in Q1 2024
+Learn about building low code applications with Liferay.
 :::
 
 :::{grid-item-card}  Module 11: Performance Tuning

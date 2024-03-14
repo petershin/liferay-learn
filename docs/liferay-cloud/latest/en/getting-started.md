@@ -78,9 +78,6 @@ With Liferay PaaS, connect a VPN to your cloud services by [configuring and conn
 
 With Liferay SaaS, Liferay's team automatically backs up your data on a regular interval. To protect customer data, backups are restricted to [the cloud instance's data region](./reference/liferay-cloud-data-center-locations.md) and is never transported outside of it. Request a manual backup, a backup restore, or a copy of your data by [opening a Support ticket](./support-and-troubleshooting/liferay-cloud-support.md#opening-a-support-ticket).
 
-!!! note
-    With Liferay SaaS, the Recovery Point Objective (RPO) for the loss of data in case of an incident is the last 8 hours of data at maximum. The Recovery Time Objective (RTO) in case of an incident is a maximum of 5 hours to return a service to operation. These metrics may vary depending on how much extra storage is purchased with your subscription.
-
 With Liferay PaaS, you can [fine-tune your automated update schedule](./platform-services/backup-service/backup-service-overview.md#scheduling-automated-backups-and-cleanups) and [restore data from backups](./platform-services/backup-service/restoring-data-from-a-backup.md) yourself when necessary.
 
 ![Liferay Cloud's backup service preserves and protects your data.](./getting-started/images/01.png)

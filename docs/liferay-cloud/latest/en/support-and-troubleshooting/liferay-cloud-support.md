@@ -1,8 +1,6 @@
 ---
 toc:
-  - ./liferay-cloud-support/incidents-and-uptime-status.md
   - ./liferay-cloud-support/support-access.md
-  - ./liferay-cloud-support/liferay-saas-subscription-plans.md
   - ./liferay-cloud-support/liferay-paas-shared-activities.md
   - ./liferay-cloud-support/live-chat-for-liferay-paas.md
   - ./liferay-cloud-support/liferay-cloud-maintenance-and-release-schedule.md
@@ -16,7 +14,7 @@ uuid: 7575a756-e793-4243-87f6-e22c4fd1ebd9
 ---
 # Liferay Cloud Support
 
-Liferay is committed to providing excellent service and customer experience. Liferay Cloud customers have several means to contact support, including [opening a Support ticket](#opening-a-support-ticket) or [calling the appropriate region's Support office](#liferay-phone-support). Liferay PaaS customers can also use a [live chat with Support](./liferay-cloud-support/live-chat-for-liferay-paas.md) to ask about simple questions or issues.
+Liferay is committed to providing excellent service and customer experience. Liferay Cloud customers have several means to contact support, including [opening a Support ticket](#opening-a-support-ticket) or calling the appropriate region's Support office. Liferay PaaS customers can also use a [live chat with Support](./liferay-cloud-support/live-chat-for-liferay-paas.md) to ask about simple questions or issues.
 
 Subscribe to the [Liferay Cloud Status page](https://status.liferay.cloud/) for real-time updates on the platform's status, including its various services, the console, and API. You can subscribe to updates via email, text message, Slack message, or webhook notifications.
 
@@ -44,40 +42,6 @@ If you need help with issues you are experiencing as a Liferay Cloud customer, y
     * A description of both the actual behavior and the expected behavior
 
 The ticket is created once you submit the form. You will get an email notification once a Support team member has responded to your ticket. You can continue to respond via the [Help Center Requests](https://help.liferay.com/hc/requests) page, or by responding to the email.
-
-## Liferay Phone Support
-
-Liferay Cloud customers have six Support centers with phone support around the world. Phone support is available for customers based on their country of purchase, during the Support office's business hours. See [Contact Us](https://help.liferay.com/hc/en-us/articles/360017784212-Contact-Us?_ga=2.254167624.1908736764.1562000563-1350017715.1560788053) for all Support region phone numbers.
-
-## Support Office Business Hours
-
-These are the Support region office locations and standard business hours, *from Monday to Friday and excluding observed holidays*.
-
-| **Support Region**     | **Office Location** | **Time Zone**                   | **Standard Business Hours** |
-| :--------------------- | :------------------ | :------------------------------ | :-------------------------- |
-| United States & Canada | United States       | UTC -8 or UTC -7 (PST/PDT)      | 8 AM to 5 PM                |
-| EMEA                   | Hungary             | UTC +1 or UTC +2 (CET/CEST)     | 9 AM to 6 PM                |
-| Spain & Portugal       | Spain               | UTC +1 or UTC +2 (CET/CEST)     | 9 AM to 6 PM                |
-| South Asia             | India               | UTC +5:30 (India Standard Time) | 9 AM to 6 PM                |
-| Latin America          | Brazil              | UTC -3 (Brasilia Standard Time) | 9 AM to 6 PM                |
-| APAC                   | China               | UTC +8 (China Standard Time)    | 9 AM to 6 PM                |
-| Japan                  | Japan               | UTC +9 (Japan Standard Time)    | 9 AM to 6 PM                |
-
-## Support Exclusions Disclaimer
-
-Liferay Cloud is not obligated to provide support services in any of these situations, **unless otherwise stated in your legal agreement with Liferay**.
-
-1. The Software or Cloud Service has been modified, changed, damaged by the customer in any way, except as provided in the applicable documentation or otherwise as directed by or under agreement with Liferay, with or without malicious intent.
-
-1. The incident is caused by the customer’s negligence, malicious intent, hardware malfunction, or other causes beyond the reasonable control of Liferay.
-
-1. The incident is caused by third-party software, unless the third-party software causes the software to not substantially conform to the documentation.
-
-1. The incident results from use of a custom service that is outside Liferay Cloud's published services.
-
-1. The customer has been previously provided a fix for an incident reported to Liferay, and where the customer has not installed this fix within forty-five (45) days after its been given to the customer.
-
-1. Liferay has discontinued services for the version of the software, in accordance with the EOSL Policy. 
 
 ## Additional Information
 

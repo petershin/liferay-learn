@@ -46,6 +46,7 @@ Here are the SLA times for Liferay Support to respond when you report an issue *
 
 ## Availability
 
-The live chat is only available during the Liferay office's [business hours](../liferay-cloud-support.md#support-office-business-hours) in your region. You can still use the Help button to search for relevant Support articles at any time.
+The live chat is only available during the Liferay office's business hours in your region. You can still use the Help button to search for relevant Support articles at any time.
 
 The live chat is also limited to specific regions. However, live chat support may be added for more regions with time. You'll receive an email when live chat support is added for your region.
+

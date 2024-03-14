@@ -6,7 +6,7 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: 7fab317c-cefc-49e9-a9ad-f2bb87ef602b
 ---
-# Liferay Cloud Support FAQ
+# Liferay Cloud Support FAQs
 
 Here are the answers to common questions pertaining to Liferay Cloud Support.
 
@@ -32,19 +32,17 @@ Check the [Security Advisories page](https://help.liferay.com/hc/en-us/articles/
 
 ## Should I give the Liferay Cloud team advance notice of any performance or penetration testing on a Liferay PaaS environment? If so, how?
 
-When you perform performance or penetration testing on your Liferay Cloud environment, it can appear to Liferay that there is an attack on the environment, which could require intervention to protect it. To prevent Liferay interfering with your testing, notify Liferay Cloud of your testing window *at least 15 days in advance*.
+When you perform performance or penetration testing on your Liferay Cloud environment, it can appear to Liferay that there is an attack on the environment, which could require intervention to protect it. To prevent Liferay interfering with your testing, notify Liferay Cloud of your testing window in advance.
 
-Inform the Liferay Cloud team about your testing plans by [opening a Support ticket](../liferay-cloud-support.md#opening-a-support-ticket). Include the time, duration, and type of your tests, the source IP addresses you'll execute your testing from, and the target domains or IP addresses.
+See [Performance/Penetration Test Advanced Notice](https://help.liferay.com/hc/en-us/articles/4407536203661-Liferay-Experience-Cloud-Self-Managed-PaaS-Performance-Penetration-Test-Advanced-Notice) for more information.
 
 ## How are third-party technologies supported? How should I report issues with third-party services?
 
-You may still [create a Support ticket](../liferay-cloud-support.md#opening-a-support-ticket) for issues or incidents involving third-party technology or services. However, in most cases Liferay is *not* responsible for incidents involving third-party technologies. These cases are subject to your own legal agreement with Liferay.
+In most cases, Liferay is *not* responsible for incidents involving third-party technologies (though you can still [ask on a Support ticket](../liferay-cloud-support.md#opening-a-support-ticket)). See [Third-Party Technology Support](https://help.liferay.com/hc/en-us/articles/360015768152-Third-Party-Technology-Defects-Optimizations-and-Configurations) for more information.
 
 ## Does Liferay support custom images or services? What are the limits?
 
-Liferay Cloud supports all official Liferay images, services, and features provided by Liferay Cloud that run on this platform. This includes addressing any defects or issues involving Docker or Liferay Cloud's associated infrastructure layers.
-
-However, Liferay Cloud cannot provide support for custom images or services, including setting up or configuring them. If a customer leverages custom images or services in their environment, any issues encountered are the customer's responsibility, unless it's due to an issue that exists in Liferay DXP or Liferay Cloud independently of any custom applications.
+Liferay Cloud supports all official Liferay images, services, and features provided by Liferay Cloud that run on this platform. However, Liferay Cloud generally cannot provide support for custom images or services. See [Custom Image Support](https://help.liferay.com/hc/en-us/articles/360015768132-Customizations) for more information.
 
 ## How is auto-scaling charged?
 

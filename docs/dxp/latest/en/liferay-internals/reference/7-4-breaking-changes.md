@@ -14,6 +14,25 @@ Breaking changes changes break or significantly alter existing functionality or 
 
 Read about 7.4 breaking changes from before 2023 Q3 in the [Liferay source code](https://github.com/liferay/liferay-portal/blob/master/readme/BREAKING_CHANGES.markdown).
 
+## 2024 Q1 Release
+
+### Changes in Liferay DXP
+
+Here is a list of changes that break or significantly alter existing functionality within Liferay.
+
+| **Breaking Change**                                         | **Description**                                                                                                                                                                                              | **References**                                                |
+| :---------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------ |
+| **Selecting Guest Role for Segments**                       | You can no longer select the Guest role when editing a Segment. The option was removed because selecting this role would not work properly.                                                                  | [LPS-199579](https://liferay.atlassian.net/browse/LPS-199579) |
+| **Breadcrumb Portlet Access to Sites for Guests**           | Guests are now able to access sites via the Breadcrumb portlet as long as they are accessible to Guests. Previously, the portlet incorrectly denied access if the site had restricted or private membership. | [LPS-200487](https://liferay.atlassian.net/browse/LPS-200487) |
+| **Selecting Administrator Role for Segments**               | You can no longer assign regular administrators to Segments (like Site Administrators and Site Owners). Te option was removed because it caused some unexpected behaviors.                                   | [LPD-4335](https://liferay.atlassian.net/browse/LPD-4335)     |
+| **Case-Sensitive Tags**                                     | Tag names are now case-sensitive.                                                                                                                                                                            | [LPD-6882](https://liferay.atlassian.net/browse/LPD-6882)     |
+| **Filtering Web Content**                                   | All web content filters now only apply to the currently selected folder. This change makes web content filter behavior more consistent.                                                                      | [LPD-6710](https://liferay.atlassian.net/browse/LPD-6710)     |
+| **Searching Web Content with Filters**                      | If you have a filter applied when searching web content, performing a new search now clears the filter.                                                                                                      | [LPD-6710](https://liferay.atlassian.net/browse/LPD-6710)     |
+| **Web Content Status Filter Names**                         | The filter options for web content status have been renamed: "With approved versions" is now "Approved," "With scheduled versions" is now "Scheduled," and "With expired versions" is now "Expired."         | [LPD-6709](https://liferay.atlassian.net/browse/LPD-6709)     |
+| **Article ID in Web Content Template Editor**               | The `reserved-article-id` variable is renamed to `articleId` for web content templates. The `externalReferenceCode` and `resourcePrimKey` (i.e., the `structuredContentId`) variables are also added.        | [LPS-203949](https://liferay.atlassian.net/browse/LPS-203949) |
+| **Utility Page Configurations**                             | The general configuration icon for utility pages no longer appears on the Page Design Options panel. You must now access them via the Actions menu on the Utility Pages page.                                | [LPD-4459](https://liferay.atlassian.net/browse/LPD-4459)     |
+| **Allow Manual Membership Management Option for New Sites** | When creating a new site, the Allow Manual Membership Management option is disabled by default.                                                                                                              | [LPS-191374](https://liferay.atlassian.net/browse/LPS-191374) |
+
 ## 2023 Q4 Release
 
 ### Changes in Liferay DXP

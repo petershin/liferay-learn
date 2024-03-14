@@ -27,7 +27,7 @@ To run a local version of [learn.liferay.com](https://learn.liferay.com) there a
 1. Export the following environment variables in your terminal (replacing the values with appropriate content from prior steps).
 
    ```bash
-   export LIFERAY_LEARN_ETC_CRON_ROOT_DIR=[Your Path to Liferay Learn Repo]
+   export LIFERAY_LEARN_ETC_CRON_GIT_REPOSITORY_DIR=[Your Path to Liferay Learn Repo]
    export LIFERAY_LEARN_ETC_CRON_LIFERAY_OAUTH_CLIENT_ID=[Your Client ID]
    export LIFERAY_LEARN_ETC_CRON_LIFERAY_OAUTH_CLIENT_SECRET=[Your Client Secret]
    ``` 

@@ -22,17 +22,7 @@ Auto-scaling is only available for the Liferay DXP service in production environ
 
 Liferay issues an invoice to customers after each quarter that they use or deploy auto-scaling instances. Customers must pay this invoice in accordance with their agreement with Liferay.
 
-### Pricing
-
-For each service instance added via auto-scaling, the price is based on the number of clock hours that the customer used this instance. For pricing purposes, the total usage during a calendar quarter is rounded up to the nearest full clock hour.
-
-| **Environment Type** | **Price per Instance per Hour** |
-|:---------------------|:--------------------------------|
-| High Availability    | Consult your Account Manager    |
-| Standard             | Consult your Account Manager    |
-
-!!! note
-    These prices apply to all Liferay PaaS service instances added through auto-scaling, unless a customer enters a separate written agreement with Liferay as to the pricing.
+For each service instance added via auto-scaling, the price depends on your subscription plan. The total charge is based on the number of clock hours that the customer used the scaled instances. For pricing purposes, the total usage during a calendar quarter is rounded up to the nearest full clock hour.
 
 ## JVM Memory Configuration
 

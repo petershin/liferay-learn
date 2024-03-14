@@ -16,7 +16,7 @@ Liferay SaaS instances have weekly DXP maintenance windows. The maintenance wind
 
 Liferay strives to test updates in advance on a copy of customer databases to avoid issues and verify the update's quality. Customers should establish a predefined test plan with Liferay that covers important business use cases, so these can be included when testing each update's quality. If the testing is successful, the update applies to both production and non-production instances.
 
-In Liferay PaaS, maintaining and updating Liferay DXP is the customer's responsibility. See [Liferay PaaS Shared Activities](./liferay-paas-shared-activities.md) for more information.
+In Liferay PaaS, maintaining and updating Liferay DXP is the customer's responsibility. See [Liferay PaaS Shared Activities](https://help.liferay.com/hc/en-us/articles/360059798531-Liferay-PaaS-Shared-Activities) for more information.
 
 ## Liferay Cloud Platform Maintenance Windows
 

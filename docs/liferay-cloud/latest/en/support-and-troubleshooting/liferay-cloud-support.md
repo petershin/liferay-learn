@@ -1,7 +1,6 @@
 ---
 toc:
   - ./liferay-cloud-support/support-access.md
-  - ./liferay-cloud-support/liferay-paas-shared-activities.md
   - ./liferay-cloud-support/live-chat-for-liferay-paas.md
   - ./liferay-cloud-support/liferay-cloud-maintenance-and-release-schedule.md
   - ./liferay-cloud-support/liferay-cloud-support-faqs.md

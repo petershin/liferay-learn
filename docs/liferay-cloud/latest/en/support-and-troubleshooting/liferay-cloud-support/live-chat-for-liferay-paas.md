@@ -34,16 +34,6 @@ Once you send your message, your position in the live chat queue is shown. The w
 
 You can also review previous chat messages afterward by clicking *View My Tickets* at [Help Center](https://help.liferay.com), the same way you can review Support tickets.
 
-## Service Level Agreement
-
-Here are the SLA times for Liferay Support to respond when you report an issue *via the live chat*. Note that this response may be to contact Liferay's phone support or submit a Support ticket if the query cannot be quickly resolved.
-
-| **Severity Level**        | **Description**                                                                                     | **Response Time SLA**          |
-| :------------------------ | :-------------------------------------------------------------------------------------------------- | :----------------------------: |
-| **Severity 1 ("High")**   | Production environment is severely impacted or shut down.                                           | N/A (unsuitable for live chat) |
-| **Severity 2 ("Normal")** | Any environment is running but experiencing limitations, instability, or periodic interruptions.    | 2 minutes                      |
-| **Severity 3 ("Low")**    | Any environment is running and fully functional, but there are errors that do not impact usability. | 2 minutes                      |
-
 ## Availability
 
 The live chat is only available during the Liferay office's business hours in your region. You can still use the Help button to search for relevant Support articles at any time.

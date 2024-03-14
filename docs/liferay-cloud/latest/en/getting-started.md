@@ -53,17 +53,6 @@ All customer data is encrypted at rest by default (with the advanced AES-256 sta
 
 Liferay SaaS comes with a Web Application Firewall (WAF) by default. The WAF helps detect and prevent web-based threats from impacting your sites. You can also [open a Support ticket](./support-and-troubleshooting/liferay-cloud-support.md#opening-a-support-ticket) to request filtering specific IP addresses or ranges. The same WAF is also available in Liferay PaaS, but [you must enable and configure it](./tuning-security-settings/web-application-firewall.md) to suit your needs.
 
-### Security Testing
-
-Liferay performs its own security testing for its cloud systems. However, you can also perform security testing to satisfy your own requirements.
-
-When you perform performance or penetration testing on your Liferay Cloud environment, it can appear to Liferay that there is an attack on the environment, which could require intervention to protect it. To prevent interference, notify the Liferay Cloud team *15 days in advance* of your testing by [opening a Support ticket](./support-and-troubleshooting/liferay-cloud-support.md#opening-a-support-ticket) with this information:
-
-1. The time and duration of the tests.
-1. The type of tests.
-1. The source IP addresses you will execute the tests from.
-1. The target domains or IP addresses.
-
 ### VPN Integration
 
 You can also connect systems outside of Liferay Cloud (for example, an LDAP server) to your instance with a client-to-site Virtual Private Network (VPN). Liferay Cloud supports integration with OpenVPN or IPSec IKEv2 protocols, allowing for high-grade encryption and advanced VPN security features.

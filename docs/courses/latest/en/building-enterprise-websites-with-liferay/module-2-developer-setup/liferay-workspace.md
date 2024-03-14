@@ -24,24 +24,31 @@ Complete these prerequisites to install Liferay Workspace on your computer:
     !!! note
         While we recommend using Blade to set up Liferay Workspace, you can also use Gradle to complete the process manually. See [Creating a Liferay Workspace Manually](https://learn.liferay.com/web/guest/w/dxp/building-applications/tooling/liferay-workspace/creating-a-liferay-workspace#creating-a-liferay-workspace-manually) for more information.
 
-1. Install the Liferay Cloud CLI with this command:
+1. Install and configure the Liferay Cloud CLI by following these steps:
 
-    ```bash
-    curl https://cdn.liferay.cloud/lcp/stable/latest/install.sh -fsSL | bash
-    ```
+    1. Run this command:
 
-    If you get a permissions error, try replacing `bash` with `sudo bash` and running the command again.
+       ```bash
+       curl https://cdn.liferay.cloud/lcp/stable/latest/install.sh -fsSL | bash
+       ```
 
-    !!! note
-        For Windows systems, find the link to download the Windows installer at [Installing the CLI Tool](https://learn.liferay.com/en/w/liferay-cloud/reference/command-line-tool#installing-the-cli-tool).
+       If you get a permission error, try replacing `bash` with `sudo bash` and running the command again.
 
-    Type `lcp --help` to confirm that the tool is installed.
+       !!! note
+           For Windows systems, find the link to download the Windows installer at [Installing the CLI Tool](https://learn.liferay.com/en/w/liferay-cloud/reference/command-line-tool#installing-the-cli-tool).
+
+    1. Run `lcp login` to authenticate the tool with your Liferay Cloud Platform's account.
+
+    1. When prompted to open the browser, type `Y` and press the Enter key.
+
+    1. Finally, log into your account and wait for the success screen. Your tool should then be authenticated.
 
 1. Configure the CLI tool to point to Liferay Cloud Platform's remote URL (`liferay.cloud`). See [Configuring the CLI Remote](https://learn.liferay.com/en/w/liferay-cloud/reference/command-line-tool#configuring-the-cli-remote) for instructions.
 
 1. Run the `lcp login` command to authenticate the CLI tool with your platform account.
 
 1. Choose and install one of these IDEs in your computer:
+
    - [VS Code](https://code.visualstudio.com/download) (recommended)
    - [Sublime Text](https://www.sublimetext.com/download)
    - [Eclipse](https://eclipseide.org/)

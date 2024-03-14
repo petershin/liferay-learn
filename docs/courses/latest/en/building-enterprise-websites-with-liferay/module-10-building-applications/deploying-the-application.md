@@ -39,14 +39,27 @@ Follow these steps to install the prebuilt Clarity workspace:
    ../gradlew clean build
    ```
 
-The compiled `.zip` files are created in each project's `dist/` folder.<!--IMAGE: screenshot/example of directory--> Client Extensions are deployed by placing these archives in the correct location of your running Liferay instance.
+The compiled `.zip` files are created in each project's `dist/` folder.
+
+```bash
+[project-name]
+├── batch
+├── build
+├── dist
+│   └── [project-name].zip
+└── client-extension.yaml
+```
+
+Client Extensions are deployed by placing these archives in the correct location of your running Liferay instance.
 
 ## Deploying the Picklists
 
 Picklists are predefined lists of string values that determine options in single-select and multiple-select fields. Clarity uses Picklists to collect information by making the distributor applicants select from predefined options.
 
 !!! note
-   These steps assume you are using Liferay SaaS. If you are using a self-hosted environment, see [Deploying to Liferay Self-Hosted](#deploying-to-liferay-self-hosted).
+    The following steps assume you're using Liferay SaaS. See [Deploying to Your Liferay Instance](https://learn.liferay.com/web/guest/w/dxp/building-applications/client-extensions/working-with-client-extensions#deploying-to-your-liferay-instance) if you're PaaS or Self-Hosted user.
+
+In order to deploy Client Extensions to your SaaS environment, you'll use the Liferay Cloud CLI tool you installed in [Module 2](../module-2-developer-setup/liferay-workspace.md#prerequisites).
 
 The predefined picklists for Clarity's solution can be implemented and deployed by following these steps:
 
@@ -55,11 +68,6 @@ The predefined picklists for Clarity's solution can be implemented and deployed 
    ```bash
    cd liferay-clarity-picklists-batch/
    ```
-
-   In order to deploy Client Extensions to your SaaS environment, you'll use the Liferay Cloud CLI tool you installed in [Module 2](../module-2-developer-setup/liferay-workspace.md#prerequisites).
-
-   !!! note
-      The tool must be configured with Liferay Cloud Platform's remote URL (`liferay.cloud`). It also needs to be authenticated with your platform account. See [Configuring the CLI Remote](https://learn.liferay.com/en/w/liferay-cloud/reference/command-line-tool#configuring-the-cli-remote) for more information and run the `lcp login` command to authenticate the tool. If you didn't configure the tool in Module 2, you must do so before proceeding.
 
 1. Deploy the compiled Client Extension file in the project's `dist/` folder with this command:
 
@@ -76,18 +84,6 @@ The predefined picklists for Clarity's solution can be implemented and deployed 
 1. Finally, go into your Liferay instance, go to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Picklists_. Once the menu opens, confirm that all picklists display.
 
    ![All picklists appear after deploying the Client Extension.](./deploying-the-application/images/02.png)
-
-### Deploying to Liferay Self-Hosted
-
-If you self-host your Liferay installation, copy the `.zip` file from the project's `dist/` into the server's `[Liferay Home]/osgi/client-extensions/` folder.
-
-You can check your console for the following message to confirm the bundle was deployed successfully:
-
-```log
-2024-03-05 19:49:09.667 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:68] STARTED liferayclaritypicklistsbatch_7.4.13 [1526]
-```
-
-After the server finishes processing the Client Extension, go into your Liferay instance, navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Picklists_. Once the menu opens, all picklists should appear.
 
 ## Deploying the Objects
 

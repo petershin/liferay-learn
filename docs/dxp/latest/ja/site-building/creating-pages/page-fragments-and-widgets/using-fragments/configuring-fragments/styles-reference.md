@@ -18,7 +18,7 @@
 
 ![Access a fragment's Styles settings in the Browser panel of the editing sidebar menu.](./styles-reference/images/01.png)
 
-多くのスタイルには、スタイルブックでサポートされるトークンが定義されています。 トークンの値はスタイルブックから継承することができ、その場合は表示される値の横に青い点または **value from stylebook** アイコン（！ [スタイルブックからの値](../../../../../images/icon-theme.png) ）が表示されます。 詳細については、 [Creating a Style Book](../../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md) および [スタイルブックトークンの定義](../../../../site-appearance/style-books/developer-guide/style-book-token-definitions.md) を参照してください。
+多くのスタイルには、スタイルブックでサポートされるトークンが定義されています。 トークンの値はスタイルブックから継承することができ、その場合は表示される値の横に青い点または **value from stylebook** アイコン（！ [スタイルブックからの値](../../../../../images/icon-theme.png) ）が表示されます。 詳細については、 [Creating a Style Book](../../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md) および [スタイルブックトークンの定義](../../../../site-appearance/style-books/developer-guide/frontend-token-definitions.md) を参照してください。
 
 ![Visual representation of inherited token values with blue dots](./styles-reference/images/07.png)
 
@@ -126,4 +126,4 @@ Liferay 7.4 U31+/GA31+ では、画面上部のデバイスボタンをクリッ
 * [コンテンツページの使用](../../../using-content-pages.md)
 * [フラグメントの使用](../../using-fragments.md)
 * [スタイルブックの作成](../../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md)
-* [スタイルブック・トークンの定義](../../../../site-appearance/style-books/developer-guide/style-book-token-definitions.md)
+* [スタイルブック・トークンの定義](../../../../site-appearance/style-books/developer-guide/frontend-token-definitions.md)

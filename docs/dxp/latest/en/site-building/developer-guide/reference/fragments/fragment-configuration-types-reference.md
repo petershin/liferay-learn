@@ -129,7 +129,7 @@ The color picker JSON configuration creates a flexible color selector where any 
 ![The color picker configuration lets you directly input a color value, select one from a range, or select one from your style book.](./fragment-configuration-types-reference/images/04.png)
 
 !!! note
-    If the theme you are using has no [token definitions for style books](../../../site-appearance/style-books/developer-guide/style-book-token-definitions.md), color picker configurations on the page are replaced with [color palette](#color-palette configuration) configurations.
+    If the theme you are using has no [token definitions for style books](../../../site-appearance/style-books/developer-guide/frontend-token-definitions.md), color picker configurations on the page are replaced with [color palette](#color-palette configuration) configurations.
 
 This JSON configuration creates a color picker field called `headingColor`:
 

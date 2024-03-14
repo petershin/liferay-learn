@@ -18,7 +18,7 @@
 
 ![Access a fragment's Styles settings in the Browser panel of the editing sidebar menu.](./styles-reference/images/01.png)
 
-많은 스타일이 스타일 북에서 지원하는 토큰을 정의했습니다. 토큰 값은 파란색 점 또는 **stylebook의 값** 아이콘(![Stylebook의 값](../../../../../images/icon-으로 표시되는 스타일 북에서 상속될 수 있습니다. theme.png))가 표시된 값 옆에 표시됩니다. 자세한 내용은 [스타일북 만들기](../../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md) 및 [스타일북 토큰 정의](../../../../site-appearance/style-books/developer-guide/style-book-token-definitions.md) 참조하십시오.
+많은 스타일이 스타일 북에서 지원하는 토큰을 정의했습니다. 토큰 값은 파란색 점 또는 **stylebook의 값** 아이콘(![Stylebook의 값](../../../../../images/icon-으로 표시되는 스타일 북에서 상속될 수 있습니다. theme.png))가 표시된 값 옆에 표시됩니다. 자세한 내용은 [스타일북 만들기](../../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md) 및 [스타일북 토큰 정의](../../../../site-appearance/style-books/developer-guide/frontend-token-definitions.md) 참조하십시오.
 
 ![Visual representation of inherited token values with blue dots](./styles-reference/images/07.png)
 
@@ -126,4 +126,4 @@ Liferay 7.4 U31+/GA31+의 경우 화면 상단의 장치 버튼을 클릭하거�
 * [콘텐츠 페이지 사용하기](../../../using-content-pages.md)
 * [조각 사용](../../using-fragments.md)
 * [스타일 북 만들기](../../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md)
-* [스타일 북 토큰 정의](../../../../site-appearance/style-books/developer-guide/style-book-token-definitions.md)
+* [스타일 북 토큰 정의](../../../../site-appearance/style-books/developer-guide/frontend-token-definitions.md)

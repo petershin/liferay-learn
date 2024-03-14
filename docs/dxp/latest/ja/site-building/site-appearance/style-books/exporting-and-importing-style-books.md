@@ -96,4 +96,4 @@ Liferayはエクスポートとインポート処理を設定するための設�
 
 [スタイルブックを使用してサイトの外観を標準化する](./using-a-style-book-to-standardize-site-appearance.md)
 
-[スタイルブックトークンの定義](./developer-guide/style-book-token-definitions.md)
+[スタイルブックトークンの定義](./developer-guide/frontend-token-definitions.md)

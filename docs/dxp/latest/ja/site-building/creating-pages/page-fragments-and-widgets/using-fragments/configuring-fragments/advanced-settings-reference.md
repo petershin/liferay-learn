@@ -101,4 +101,4 @@ CSS Classesテキストボックスには、自分で追加したCSSクラスだ
 * [一般設定リファレンス](./general-settings-reference.md)
 * [フラグメントの使用](../../using-fragments.md)
 * [スタイルブックの作成](../../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md)
-* [スタイルブック・トークンの定義](../../../../site-appearance/style-books/developer-guide/style-book-token-definitions.md)
+* [スタイルブック・トークンの定義](../../../../site-appearance/style-books/developer-guide/frontend-token-definitions.md)

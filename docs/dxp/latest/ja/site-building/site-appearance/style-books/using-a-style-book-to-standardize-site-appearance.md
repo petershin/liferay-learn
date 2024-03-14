@@ -4,7 +4,7 @@
 
 **スタイル・ブック** とは、ページ全体で一貫した体験を提供するために、サイトに適用される視覚的なルールのセットです。 これらのルールによって、要素（ウィジェットなど）間の間隔、色、フォントなど、サイトのさまざまな視覚的設定が決定まります。 これらの各設定は、スタイルブックを使用するすべてのページに等しく適用されます。
 
-サイトのページに割り当てるテーマによって、サイトのスタイル・ブックで利用できる設定のカテゴリが決まります。 開発者は、スタイルブックを構成するための新しいオプションを使用してカテゴリをカスタマイズできます。 詳細は [スタイルブックトークンの定義](./developer-guide/style-book-token-definitions.md) を参照のこと。
+サイトのページに割り当てるテーマによって、サイトのスタイル・ブックで利用できる設定のカテゴリが決まります。 開発者は、スタイルブックを構成するための新しいオプションを使用してカテゴリをカスタマイズできます。 詳細は [スタイルブックトークンの定義](./developer-guide/frontend-token-definitions.md) を参照のこと。
 
 ## ページのスタイルブックの選択
 
@@ -108,7 +108,7 @@ Liferay 7.4 U10+とGA14+から、すべてのサイトには*Styles from Theme*�
 
 ![See a color's token value by hovering the cursor over the color in the color picker.](./using-a-style-book-to-standardize-site-appearance/images/11.png)
 
-特定の色を検索するには、検索バーを使用します。 [カテゴリ](./developer-guide/style-book-token-definitions.md#token-categories) 、 [トークンセット](./developer-guide/style-book-token-definitions.md#token-sets) 、 [トークン値](./developer-guide/style-book-token-definitions.md#token-definitions) 、 [16進カラー値](https://www.w3schools.com/html/html_colors_hex.asp) で検索できます。
+特定の色を検索するには、検索バーを使用します。 [カテゴリ](./developer-guide/frontend-token-definitions.md#token-categories) 、 [トークンセット](./developer-guide/frontend-token-definitions.md#token-sets) 、 [トークン値](./developer-guide/frontend-token-definitions.md#token-definitions) 、 [16進カラー値](https://www.w3schools.com/html/html_colors_hex.asp) で検索できます。
 
 検索バーを使用する場合、検索システムは大文字と小文字を区別しません。 また、検索で結果が得られなかった場合、検索エリアに **No Results Found** というメッセージが表示される。
 
@@ -167,4 +167,4 @@ width、margin、paddingなど、色に関係のないトークンを変更す�
 
 ## 関連トピック
 
-* [スタイルブック・トークンの定義](./developer-guide/style-book-token-definitions.md)
+* [スタイルブック・トークンの定義](./developer-guide/frontend-token-definitions.md)

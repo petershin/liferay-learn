@@ -14,7 +14,7 @@ uuid: 88364ec4-ce77-4e8b-aa8d-fb5b6bd526c3
 
 A *Style Book* is a set of visual rules that apply to a Site to provide a consistent experience across its pages. They determine various visual settings on the Site, including spacing between elements (such as widgets), colors, and fonts. Each of these settings applies equally to every page using the Style Book.
 
-The theme you assign to your Site's Pages determines the categories of settings available to the Style Books for your Site. Developers can customize the categories with new options for configuring Style Books. See [Style Book Token Definitions](./developer-guide/style-book-token-definitions.md) for more information.
+The theme you assign to your Site's Pages determines the categories of settings available to the Style Books for your Site. Developers can customize the categories with new options for configuring Style Books. See [Frontend Token Definitions](./developer-guide/frontend-token-definitions.md) for more information.
 
 ## Choosing a Style Book for a Page
 
@@ -118,7 +118,7 @@ In the color picker, existing colors are divided by categories and token sets. Y
 
 ![See a color's token value by hovering the cursor over the color in the color picker.](./using-a-style-book-to-standardize-site-appearance/images/11.png)
 
-Use the search bar to search for a specific color. You may search by [category](./developer-guide/style-book-token-definitions.md#token-categories), [token set](./developer-guide/style-book-token-definitions.md#token-sets), [token value](./developer-guide/style-book-token-definitions.md#token-definitions), or [hex color values](https://www.w3schools.com/html/html_colors_hex.asp).
+Use the search bar to search for a specific color. You may search by [category](./developer-guide/frontend-token-definitions.md#token-categories), [token set](./developer-guide/frontend-token-definitions.md#token-sets), [token value](./developer-guide/frontend-token-definitions.md#token-definitions), or [hex color values](https://www.w3schools.com/html/html_colors_hex.asp).
 
 When using the search bar, the search system is not case-sensitive. Also, if a search returns no results, a *No Results Found* message is displayed in the search area.
 
@@ -178,4 +178,4 @@ These options modify the style for the default types of buttons. You can customi
 
 ## Related Topics
 
-* [Style Book Token Definitions](./developer-guide/style-book-token-definitions.md)
+* [Frontend Token Definitions](./developer-guide/frontend-token-definitions.md)

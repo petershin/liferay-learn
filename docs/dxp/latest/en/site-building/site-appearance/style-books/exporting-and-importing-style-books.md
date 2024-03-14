@@ -106,4 +106,4 @@ Liferay provides settings for configuring export and import processes.
 
 [Using a Style Book to Standardize Site Appearance](./using-a-style-book-to-standardize-site-appearance.md)
 
-[Style Book Token Definitions](./developer-guide/style-book-token-definitions.md)
+[Frontend Token Definitions](./developer-guide/frontend-token-definitions.md)

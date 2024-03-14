@@ -28,7 +28,7 @@
 
 テーマは、サイトのスタイリングの基礎となるものです。 サイトのページのUIの詳細、カスタマイズされたポートレットデコレータを定義したり <!--リンクがあれば追加してください--> 、サイトの配色を定義 <!--リンクがあれば追加してください--> したりできます。
 
-テーマに基づいてカスタムの[スタイルブックトークン定義](../style-books/developer-guide/style-book-token-definitions.md)を構成することもできます。 <!--Add link when available: See Hooking Style Book Tokens into Your Theme for more information.-->
+テーマに基づいてカスタムの[スタイルブックトークン定義](../style-books/developer-guide/frontend-token-definitions.md)を構成することもできます。 <!--Add link when available: See Hooking Style Book Tokens into Your Theme for more information.-->
 
 <a name="designing-pages" />
 
@@ -68,7 +68,7 @@
 
 * テーマに変数値を設定して <!--リンクがあれば追加してください--> 、DXPの既存の機能の動作に影響を与えることができます。
 
-* [スタイルブック](../style-books/using-a-style-book-to-standardize-site-appearance.md)でスタイリングするためのカテゴリを定義するために使用される[トークン定義](../style-books/developer-guide/style-book-token-definitions.md)を追加できます。
+* [スタイルブック](../style-books/using-a-style-book-to-standardize-site-appearance.md)でスタイリングするためのカテゴリを定義するために使用される[トークン定義](../style-books/developer-guide/frontend-token-definitions.md)を追加できます。
 
 <a name="upgrading-themes" />
 

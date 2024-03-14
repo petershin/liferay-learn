@@ -110,4 +110,4 @@ By default, Liferay automatically renders all containers in a page. However, set
 * [General Settings Reference](./general-settings-reference.md)
 * [Using Fragments](../../using-fragments.md)
 * [Creating a Style Book](../../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md)
-* [Style Book Token Definitions](../../../../site-appearance/style-books/developer-guide/style-book-token-definitions.md)
+* [Frontend Token Definitions](../../../../site-appearance/style-books/developer-guide/frontend-token-definitions.md)

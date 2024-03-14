@@ -1,6 +1,6 @@
 ---
 toc:
-- ./developer-guide/style-book-token-definitions.md
+- ./developer-guide/frontend-token-definitions.md
 ---
 # 開発者ガイド
 
@@ -8,6 +8,6 @@ toc:
 :gutter: 3 3 3 3
 
 :::{grid-item-card} スタイルブックトークン定義
-:link: ./developer-guide/style-book-token-definitions.md
+:link: ./developer-guide/frontend-token-definitions.md
 :::
 ::::

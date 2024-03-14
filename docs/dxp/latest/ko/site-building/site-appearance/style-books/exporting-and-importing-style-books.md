@@ -96,4 +96,4 @@ Liferay는 내보내기 및 가져오기 프로세스 구성을 위한 설정을
 
 [스타일 북을 사용하여 사이트 모양 표준화](./using-a-style-book-to-standardize-site-appearance.md)
 
-[스타일북 토큰 정의](./developer-guide/style-book-token-definitions.md)
+[스타일북 토큰 정의](./developer-guide/frontend-token-definitions.md)

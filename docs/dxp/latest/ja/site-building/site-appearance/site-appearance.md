@@ -29,7 +29,7 @@ Liferayサイトのデザインや機能は、様々な補完的なメカニズ�
 <!--
 TODO:
 
-### Style Book Token Definitions
+### Frontend Token Definitions
 
 Note how they tie into themes as well (depending on them for definitions), possibly? And then maybe link to developer guide articles? (Unless maybe developer guide material is not good to go into for this overview... then perhaps it'd be better to just briefly reference their reliance on the theme and leave it as that, not even with an H3)
 -->

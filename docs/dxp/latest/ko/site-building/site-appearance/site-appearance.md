@@ -23,7 +23,7 @@ Liferay 사이트의 디자인과 기능은 다양한 보완 메커니즘을 통
 ![Style Books는 텍스트 색상과 같은 사이트 모양에 대한 규칙을 정의합니다.](./site-appearance/images/02.png) <!--
 TODO:
 
-### Style Book Token Definitions
+### Frontend Token Definitions
 
 Note how they tie into themes as well (depending on them for definitions), possibly? And then maybe link to developer guide articles? (Unless maybe developer guide material is not good to go into for this overview... then perhaps it'd be better to just briefly reference their reliance on the theme and leave it as that, not even with an H3)
 -->

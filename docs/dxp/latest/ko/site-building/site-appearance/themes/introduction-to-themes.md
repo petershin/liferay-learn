@@ -22,7 +22,7 @@
 
 테마는 모든 사이트에서 스타일 지정의 기초를 제공합니다. 사이트 페이지, 사용자 정의 포틀릿 데코레이터에 대한 UI 세부 정보를 정의할 수 있습니다. <!--Add link when available--> , 색 구성표를 정의합니다. <!--Add link when available--> 귀하의 사이트.
 
-테마에 따라 사용자 지정 [Style Book 토큰 정의](../style-books/developer-guide/style-book-token-definitions.md) 을 구성할 수도 있습니다. <!--Add link when available: See Hooking Style Book Tokens into Your Theme for more information.-->
+테마에 따라 사용자 지정 [Frontend 토큰 정의](../style-books/developer-guide/frontend-token-definitions.md) 을 구성할 수도 있습니다. <!--Add link when available: See Hooking Style Book Tokens into Your Theme for more information.-->
 
 ### 페이지 디자인
 
@@ -56,7 +56,7 @@
 
 * 변수 값을 설정할 수 있습니다. <!--Add link when available--> 테마를 사용하여 DXP의 기존 기능 동작에 영향을 줍니다.
 
-* [Style Books](../style-books/using-a-style-book-to-standardize-site-appearance.md)으로 스타일링 범주를 정의하는 데 사용되는 [토큰 정의](../style-books/developer-guide/style-book-token-definitions.md) 을 추가할 수 있습니다.
+* [Style Books](../style-books/using-a-style-book-to-standardize-site-appearance.md)으로 스타일링 범주를 정의하는 데 사용되는 [토큰 정의](../style-books/developer-guide/frontend-token-definitions.md) 을 추가할 수 있습니다.
 
 ## 테마 업그레이드
 

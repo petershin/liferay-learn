@@ -101,4 +101,4 @@ Framgent의 고급 설정을 구성하려면 해당 페이지에 대한 업데�
 * [일반 설정 참조](./general-settings-reference.md)
 * [조각 사용](../../using-fragments.md)
 * [스타일 북 만들기](../../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md)
-* [스타일 북 토큰 정의](../../../../site-appearance/style-books/developer-guide/style-book-token-definitions.md)
+* [스타일 북 토큰 정의](../../../../site-appearance/style-books/developer-guide/frontend-token-definitions.md)

@@ -33,7 +33,7 @@ Themes can be used to customize your Site in a variety of ways, including stylin
 
 Themes provide the basis for styling on any Site. You can define the UI details for your Site's pages, customized portlet decorators<!--Add link when available-->, and define the color scheme<!--Add link when available--> for your Site.
 
-You can also configure a custom [Style Book Token Definition](../../site-building/site-appearance/style-books/developer-guide/style-book-token-definitions.md) based on your theme. <!--Add link when available: See Hooking Style Book Tokens into Your Theme for more information.-->
+You can also configure a custom [Frontend Token Definition](../../site-building/site-appearance/style-books/developer-guide/frontend-token-definitions.md) based on your theme. <!--Add link when available: See Hooking Style Book Tokens into Your Theme for more information.-->
 
 ### Designing Pages
 
@@ -61,13 +61,14 @@ The Resources Importer is deprecated as of Liferay DXP 7.1.
 
 ### Modifying Behavior
 
-Themes are also a powerful tool for modifying the behavior of different parts of your Site. 
+Themes are also a powerful tool for modifying the behavior of different parts of your Site.
 
 * You can add context variables usable in your [Page Templates](../../site-building/creating-pages/adding-pages/creating-a-page-template.md) so that these templates can hook into the functionality of your theme.
 
 * You can set variable values<!--Add link when available--> with your theme to influence the behavior of existing functionality in DXP.
 
-* You can add [token definitions](../../site-building/site-appearance/style-books/developer-guide/style-book-token-definitions.md) that are used to define categories for styling with [Style Books](../../site-building/site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md).
+<<<<<<< HEAD:docs/dxp/latest/en/liferay-development/customizing-liferays-look-and-feel/themes.md
+* You can add [token definitions](../../site-building/site-appearance/style-books/developer-guide/frontend-token-definitions.md) that are used to define categories for styling with [Style Books](../../site-building/site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md).
 
 ## Upgrading Themes
 

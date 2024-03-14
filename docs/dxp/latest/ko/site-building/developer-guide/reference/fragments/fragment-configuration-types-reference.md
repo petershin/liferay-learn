@@ -122,7 +122,7 @@
 
 !!! note
 
-    사용 중인 테마에 스타일 북 [에 대한](../../../site-appearance/style-books/developer-guide/style-book-token-definitions.md) 토큰 정의가 없는 경우 페이지의 색상 선택기 구성이 [색 팔레트](#color-palette configuration) 구성으로 대체됩니다.
+    사용 중인 테마에 스타일 북 [에 대한](../../../site-appearance/style-books/developer-guide/frontend-token-definitions.md) 토큰 정의가 없는 경우 페이지의 색상 선택기 구성이 [색 팔레트](#color-palette configuration) 구성으로 대체됩니다.
 
 이 JSON 구성은 `headingColor`라는 색상 선택기 필드를 생성합니다.
 

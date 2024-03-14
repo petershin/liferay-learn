@@ -1,6 +1,6 @@
 ---
 toc:
-  - ./developer-guide/style-book-token-definitions.md
+  - ./developer-guide/frontend-token-definitions.md
 taxonomy-category-names:
 - Sites
 - Style Books
@@ -15,7 +15,7 @@ uuid: 25425a8e-4bb6-40b5-a075-233f0fdc54c6
 ::::{grid} 2
 :gutter: 3 3 3 3
 
-:::{grid-item-card} Style Book Token Definitions
-:link: ./developer-guide/style-book-token-definitions.md
+:::{grid-item-card} Frontend Token Definitions
+:link: ./developer-guide/frontend-token-definitions.md
 :::
 ::::

@@ -4,7 +4,7 @@
 
 **스타일 북** 은 사이트 페이지 전반에 걸쳐 일관된 경험을 제공하기 위해 사이트에 적용되는 일련의 시각적 규칙입니다. 이는 요소(예: 위젯) 사이의 간격, 색상 및 글꼴을 포함하여 사이트의 다양한 시각적 설정을 결정합니다. 이러한 각 설정은 Style Book을 사용하는 모든 페이지에 동일하게 적용됩니다.
 
-사이트 페이지에 할당한 테마에 따라 사이트의 Style Books에 사용할 수 있는 설정 범주가 결정됩니다. 개발자는 Style Books 구성을 위한 새로운 옵션을 사용하여 범주를 사용자 정의할 수 있습니다. 자세한 내용은 [Style Book 토큰 정의](./developer-guide/style-book-token-definitions.md)를 참조하세요.
+사이트 페이지에 할당한 테마에 따라 사이트의 Style Books에 사용할 수 있는 설정 범주가 결정됩니다. 개발자는 Style Books 구성을 위한 새로운 옵션을 사용하여 범주를 사용자 정의할 수 있습니다. 자세한 내용은 [Frontend 토큰 정의](./developer-guide/frontend-token-definitions.md)를 참조하세요.
 
 ## 페이지에 대한 스타일 북 선택
 
@@ -108,7 +108,7 @@ Style Book 토큰에 색상 값을 첨부하거나 분리하려면 Liferay DXP 7
 
 ![See a color's token value by hovering the cursor over the color in the color picker.](./using-a-style-book-to-standardize-site-appearance/images/11.png)
 
-특정 색상을 검색하려면 검색창을 사용하세요. [카테고리](./developer-guide/style-book-token-definitions.md#token-categories) , [토큰 세트](./developer-guide/style-book-token-definitions.md#token-sets) , [토큰 값](./developer-guide/style-book-token-definitions.md#token-definitions) 또는 [진수 색상 값](https://www.w3schools.com/html/html_colors_hex.asp) 로 검색할 수 있습니다.
+특정 색상을 검색하려면 검색창을 사용하세요. [카테고리](./developer-guide/frontend-token-definitions.md#token-categories) , [토큰 세트](./developer-guide/frontend-token-definitions.md#token-sets) , [토큰 값](./developer-guide/frontend-token-definitions.md#token-definitions) 또는 [진수 색상 값](https://www.w3schools.com/html/html_colors_hex.asp) 로 검색할 수 있습니다.
 
 검색창을 사용할 때 검색 시스템은 대소문자를 구분하지 않습니다. 또한, 검색 결과가 반환되지 않으면 **결과를 찾을 수 없음** 메시지가 검색 영역에 표시됩니다.
 
@@ -168,4 +168,4 @@ Style Book 토큰에 색상 값을 첨부하거나 분리하려면 Liferay DXP 7
 
 ## 관련 주제
 
-* [스타일 북 토큰 정의](./developer-guide/style-book-token-definitions.md)
+* [스타일 북 토큰 정의](./developer-guide/frontend-token-definitions.md)

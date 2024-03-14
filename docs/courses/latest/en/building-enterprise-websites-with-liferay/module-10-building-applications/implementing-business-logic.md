@@ -129,7 +129,7 @@ When users update the *Application State* field of a Distributor Application obj
 
 Currently, all updates to the *Application State* field are approved automatically, regardless of the current state value. Clarity wants to require final approval from a team manager whenever *Application State* changes to `Approved` or `Denied`.
 
-_Workflows_ can improve task visibility, eliminate bottlenecks in business processes, and reduce the time and resources required to complete tasks. Additional custom business logic can be defined around states with Liferay's workflow functionality.
+Workflows can improve task visibility, eliminate bottlenecks in business processes, and reduce the time and resources required to complete tasks. Additional custom business logic can be defined around states with Liferay's workflow functionality.
 
 ![Workflows are used to organize business processes.](./implementing-business-logic/images/06.png)
 
@@ -179,8 +179,6 @@ You’ve set up an approval workflow that requires manager review for the applic
 While Clarity has defined workflows around state changes, they have no automated notifications for when such events occur. As of now, members of the business development team can only learn of new application submissions by checking the Distributor Application object manually. Similarly, applicants can only learn about their application status if they are informed directly by a business development specialist or manager. This strategy doesn't scale and leaves room for human error, resulting in missed opportunities or poor user experience.
 
 To address these issues, you can implement notifications by first creating notification templates and then applying those templates to object entry events (entry creation, entry update, etc.). The template provides the notification content and design, while the object entry event determines the condition to trigger the notification. Notifications can improve visibility in your application by providing real-time updates to users and administrators for object entry events.
-
-<!--IMAGE: Diagram of different types of notifications needed for different recipients (see /courses/application-development/implementing-business-logic/adding-notification-templates), along with screenshot of template creation. -->
 
 ### Exercise 3
 

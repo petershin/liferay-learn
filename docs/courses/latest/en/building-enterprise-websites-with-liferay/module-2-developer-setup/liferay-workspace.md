@@ -37,6 +37,10 @@ Complete these prerequisites to install Liferay Workspace on your computer:
 
     Type `lcp --help` to confirm that the tool is installed.
 
+1. Configure the CLI tool to point to Liferay Cloud Platform's remote URL (`liferay.cloud`). See [Configuring the CLI Remote](https://learn.liferay.com/en/w/liferay-cloud/reference/command-line-tool#configuring-the-cli-remote) for instructions.
+
+1. Run the `lcp login` command to authenticate the CLI tool with your platform account.
+
 1. Choose and install one of these IDEs in your computer:
    - [VS Code](https://code.visualstudio.com/download) (recommended)
    - [Sublime Text](https://www.sublimetext.com/download)

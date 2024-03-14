@@ -45,7 +45,10 @@ The compiled `.zip` files are created in each project's `dist/` folder.<!--IMAGE
 
 Picklists are predefined lists of string values that determine options in single-select and multiple-select fields. Clarity uses Picklists to collect information by making the distributor applicants select from predefined options.
 
-The predefined picklists for Clarity's solution can be implemented by following these steps:
+!!! note
+   These steps assume you are using Liferay SaaS. If you are using a self-hosted environment, see [Deploying to Liferay Self-Hosted](#deploying-to-liferay-self-hosted).
+
+The predefined picklists for Clarity's solution can be implemented and deployed by following these steps:
 
 1. Go to the `liferay-clarity-picklists-batch` folder.
 
@@ -53,14 +56,10 @@ The predefined picklists for Clarity's solution can be implemented by following 
    cd liferay-clarity-picklists-batch/
    ```
 
-Depending on which deployment option you're using for Liferay (SaaS or Self-Hosted only), the steps to deploy the Client Extension will be different.
+   In order to deploy Client Extensions to your SaaS environment, you'll use the Liferay Cloud CLI tool you installed in [Module 2](../module-2-developer-setup/liferay-workspace.md#prerequisites).
 
-### Deploying to Liferay SaaS
-
-In order to deploy Client Extensions to your SaaS environment, you'll use the Liferay Cloud CLI tool you installed in [Module 2](../module-2-developer-setup/liferay-workspace.md#prerequisites).
-
-!!! note
-    The tool must be configured with Liferay Cloud Platform's remote URL (`liferay.cloud`). It also needs to be authenticated with your platform account. See [Configuring the CLI Remote](https://learn.liferay.com/en/w/liferay-cloud/reference/command-line-tool#configuring-the-cli-remote) for more information and run the `lcp login` command to authenticate the tool.
+   !!! note
+      The tool must be configured with Liferay Cloud Platform's remote URL (`liferay.cloud`). It also needs to be authenticated with your platform account. See [Configuring the CLI Remote](https://learn.liferay.com/en/w/liferay-cloud/reference/command-line-tool#configuring-the-cli-remote) for more information and run the `lcp login` command to authenticate the tool. If you didn't configure the tool in Module 2, you must do so before proceeding.
 
 1. Deploy the compiled Client Extension file in the project's `dist/` folder with this command:
 

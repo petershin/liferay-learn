@@ -104,7 +104,7 @@ public class Main {
 			"LIFERAY_LEARN_RESOURCE_DOMAIN");
 
 		if (liferayLearnResourceDomain == null) {
-			liferayLearnResourceDomain = "localhost:8000";
+			liferayLearnResourceDomain = "http://localhost:8000";
 		}
 
 		_liferayLearnResourceDomain = liferayLearnResourceDomain;

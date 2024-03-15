@@ -109,7 +109,7 @@ To filter by a date range, use the date picker at the top-right corner. You cann
 ![Use the date picker to see logs from a specific date range.](./reading-liferay-cloud-service-logs/images/05.png)
 
 !!! tip
-    Click *Jump to now* to quickly see the latest log messages when you've selected a date range. The end of your selected date range changes to the current time.
+    Click *Jump to now* to see the latest log messages when you've selected a date range. The end of your selected date range changes to the current time.
 
 You can also use the search bar to search for specific terms in log messages.
 

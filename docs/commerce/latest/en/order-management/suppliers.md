@@ -20,6 +20,14 @@ Using Liferay's out-of-the-box supplier account type, you can cater to suppliers
 !!! important
     Supplier account and role were released behind a [release feature flag](https://learn.liferay.com/web/guest/w/dxp/system-administration/configuring-liferay/feature-flags#release-feature-flags) in Liferay DXP 7.4 U84/GA84. It was made Generally Available (GA) in 2024.Q1/GA112.
 
+To start using suppliers, ensure that you've enabled the feature flag depending on the Liferay version you're using. Then,
+
+1. Open the *Global Menu* (![Applications Menu icon](../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Health Check*.
+
+1. Find the health check for Account Roles and click *Fix Issue*.
+
+![Run the health check for account roles.](./suppliers/images/01.png)
+
 ::::{grid} 2
 :gutter: 3 3 3 3
 

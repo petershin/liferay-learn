@@ -17,7 +17,7 @@ taxonomy-category-names:
 # Data Frameworks
 
 ```{raw} html
-:file: ../landingpage_template.html
+:file: ../../landingpage_template.html
 ```
 
 ```{raw} html

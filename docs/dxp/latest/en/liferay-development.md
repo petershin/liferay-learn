@@ -2,6 +2,9 @@
 toc:
   - ./liferay-development/customizing-liferays-look-and-feel.md
   - ./liferay-development/integrating-external-applications.md
+  - ./liferay-development/configuration-as-code.md
+  - ./liferay-development/integrating-microservices.md
+  - ./liferay-development/importing-exporting-data.md
   - ./liferay-development/building-applications.md
   - ./liferay-development/objects.md
   - ./liferay-development/client-extensions.md

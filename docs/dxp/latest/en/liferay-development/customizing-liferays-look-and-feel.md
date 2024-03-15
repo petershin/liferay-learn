@@ -6,6 +6,7 @@ toc:
   - ./customizing-liferays-look-and-feel/using-a-javascript-client-extension.md
   - ./customizing-liferays-look-and-feel/using-a-theme-spritemap-client-extension.md
   - ./customizing-liferays-look-and-feel/using-an-editor-config-contributor-client-extension.md
+  - ./customizing-liferays-look-and-feel/client-extensions-ui-reference.md
   - ./customizing-liferays-look-and-feel/themes.md
 taxonomy-category-names:
   - Development and Tooling
@@ -73,6 +74,21 @@ Specify a theme sprite map client extension in your `client-extension.yaml` file
 type: themeSpritemap
 ```
 
+## Editor Config Contributor Client Extensions
+
+{bdg-secondary}`Liferay DXP 2024.Q1+/Portal 7.4 GA112+`
+
+Editor Config Contributor client extensions override existing CKEditor configurations in a `ConfigContributor.java` file.
+
+!!! important
+    The client extension's configuration options must match the `ConfigContributor` it's overriding (i.e., portlet names, editor names, and editor config keys).
+
+Specify an Editor Config Contributor client extension in your `client-extension.yaml` file:
+
+```yaml
+type: editorConfigContributor
+```
+
 ## Themes (PaaS or self-hosted only)
 
 Finally, themes are a traditionally deployed asset to Liferay, which is why they are only available via PaaS or self-hosted platforms. You can define your own complete look and feel with themes. 
@@ -104,6 +120,10 @@ Read on to learn how to customize Liferay to match your design!
 
 :::{grid-item-card}  Using An Editor Config Contributor Client Extension
 :link:  ./customizing-liferays-look-and-feel/using-an-editor-config-contributor-client-extension.md
+:::
+
+:::{grid-item-card}  Front-end Client Extensions UI Reference 
+:link:  ./customizing-liferays-look-and-feel/client-extensions-ui-reference.md
 :::
 
 :::{grid-item-card}  Themes

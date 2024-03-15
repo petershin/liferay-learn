@@ -6,20 +6,20 @@ uuid: ba75bce7-ccf4-4c5a-bffe-7c247434dac2
 
 Clarity is leveraging Okta’s Workforce Identity Cloud product to manage their employee information. Okta is a Cloud based Identity Management service that allows Clarity to securely manage their employee’s identity information and manage secure authentication into the applications they use. Okta provides many different features, but for this training we’re going to be focusing on their support of the SAML protocol to support Single Sign On.
 
-<!-- ![okta image](https://) -->
-
-## What is SAML?
-
-SAML stands for Security Assertion Markup Language and it is an open standard used for authentication. SAML works by passing authentication information in a specific format between two applications, an Identity Provider (IdP) and a Service Provider (SP). Using SAML provides us with a few key benefits. First, by centralizing the authentication through Okta, Clarity employees only have to remember one set of credentials, and once logged in they can easily move from one SAML enabled application to another without having to repeat the login process. Additionally, by securely storing the login credentials in one, dedicated application, they are benefiting from Okta’s robust security features to provide capabilities such as multi-factor authentication (MFA), password reset workflows, and to protect them from many common password attacks.
-
-<!-- ![diagram](https://) -->
-
-In this context and using this language, Okta is configured as the Identity Provider (IdP) and Liferay will be acting as a Service Provider (SP).
+![Okta logo](./using-okta-for-authentication-and-sso/images/01.png)
 
 !!! important
     In this training course, we are using Okta to illustrate a common identity management and single sign on scenario. While we are not specifically endorsing the use of Okta as a best practice, we are endorsing the use of external authentication as a best practice. The process of authentication requires multiple rounds of password hashing which consumes a considerable amount of processing power. This is processing power that can’t be used to serve other web site requests.
 
-    At this stage, Clarity won’t have too many users logging in concurrently, but that will change in the future as the solution expands and even now when login performance isn’t top-of-mind, Clarity will enjoy significant other benefits by leveraging a SSO solution.
+    While Clarity's current user base may be small, implementing a Single Sign-On (SSO) solution now offers significant advantages that extend beyond simply accommodating future growth. This proactive approach ensures a smooth user experience and robust security posture as Clarity scales.
+
+## What is SAML?
+
+SAML stands for Security Assertion Markup Language and it is an open standard used for authentication. SAML works by passing authentication information in a specific format between two applications, an Identity Provider (IdP) and a Service Provider (SP). By using SAML, Clarity employees only need to remember one set of credentials to access all their SAML-enabled applications, eliminating the need for multiple logins. Additionally, Okta securely stores these credentials, reducing the risk of data breaches compared to individual app logins. Okta's robust security features like multi-factor authentication and streamlined password resets further enhance protection against common attacks.
+
+![SAML authentication process diagram](./using-okta-for-authentication-and-sso/images/02.png)
+
+In this context and using this language, Okta is configured as the Identity Provider (IdP) and Liferay will be acting as a Service Provider (SP).
 
 ## Configuring Okta as an IdP
 
@@ -39,7 +39,7 @@ In your Okta developer account, create a new group called `Okta-IT`. Then create
 | Password | select `Set by admin` and input `LearnLiferay` as the password |
 | User must change password on first login | unchecked |
 
-![Create a sample user Jane Newton.](./using-okta-for-authentication-and-sso/images/01.png)
+![Create a sample user Jane Newton.](./using-okta-for-authentication-and-sso/images/03.png)
 
 ## Exercise 1: Configuring Okta as an Identity Provider
 
@@ -59,7 +59,7 @@ Follow these steps in Okta to configure Okta as an Identity Provider:
     * Name ID format: *EmailAddress*
     * Application username: *Email*
 
-    ![Configuring SAML Integration](./using-okta-for-authentication-and-sso/images/02.png)
+    ![Configuring SAML Integration](./using-okta-for-authentication-and-sso/images/04.png)
 
 1. Add the following attribute statement:
 
@@ -82,13 +82,13 @@ Follow these steps in Okta to configure Okta as an Identity Provider:
 
 1. Click *View SAML Setup Instructions* on the right side of the page. A new page will open.
 
-    ![Click View SAML Setup Instructions on the right side.](./using-okta-for-authentication-and-sso/images/03.png)
+    ![Click View SAML Setup Instructions on the right side.](./using-okta-for-authentication-and-sso/images/05.png)
 
 1. Under the Optional heading, select and copy all the xml text. Paste the block of text into a new text file and save the file with the name `oktametadata.xml`.
 
 1. Next, click on the *Assignments* tab of your application. Click *Assign* and select *Assign to People*. Click *Assign* next to Jane Newton.
 
-    ![Assign Jane Newton to your application.](./using-okta-for-authentication-and-sso/images/04.png)
+    ![Assign Jane Newton to your application.](./using-okta-for-authentication-and-sso/images/06.png)
 
     In the next window, click *Save and Go Back*.
 
@@ -145,7 +145,7 @@ Follow these steps in Liferay to configure Liferay as a Service Provider:
 
 1. Log out of your Liferay instance and click *Sign In* in the top right corner. You are redirected to the Okta login page.
 
-    ![User is redirected to the Okta login page.](./using-okta-for-authentication-and-sso/images/05.png)
+    ![User is redirected to the Okta login page.](./using-okta-for-authentication-and-sso/images/07.png)
 
     !!! important
         Note, if you have previously logged in with Okta, you may need to try with your browser in incognito mode.
@@ -156,7 +156,7 @@ Follow these steps in Liferay to configure Liferay as a Service Provider:
 
 1. Navigate to *Control Panel* &rarr; *Users and Organizations*. Verify that Jane Newton's account came into Liferay and that she was automatically assigned to the `Okta-IT` Liferay user group.
 
-    ![Jane Newton's account has been created in Liferay.](./using-okta-for-authentication-and-sso/images/06.png)
+    ![Jane Newton's account has been created in Liferay.](./using-okta-for-authentication-and-sso/images/08.png)
 
 !!! note
     Okta SSO was enabled in this exercise. Feel free to disable it as you continue this course.

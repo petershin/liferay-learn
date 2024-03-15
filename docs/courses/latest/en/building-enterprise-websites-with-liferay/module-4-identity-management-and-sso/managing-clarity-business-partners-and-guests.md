@@ -43,7 +43,7 @@ In the next module, [Module 5 - Users and Permissions](../module-5.md), we’ll 
 
 ## Addressing Anonymous Site Visitors
 
-Ok, now that we have Clarity's employees and business partners taken care of, let’s turn our attention to the other third of the equation, web site visitors. Now it’s important to note that these visitors won’t be logging in, so identity management in the traditional sense doesn’t apply to these users. However, we still want to consider what their user experience will look like.
+Ok, now that we have Clarity's employees and business partners taken care of, let’s turn our attention to the other third of the equation, web site visitors. It’s important to note that these visitors won’t be logging in, so identity management in the traditional sense doesn’t apply to these users. However, we still want to consider what their user experience will look like.
 
 Since there is no need to authenticate anonymous site visitors, or guest users - there is no specific configuration we need to make for these users with regards to authentication. However, in latter modules we will be working to ensure that we can tailor personalized site experiences, even for this type of users.
 

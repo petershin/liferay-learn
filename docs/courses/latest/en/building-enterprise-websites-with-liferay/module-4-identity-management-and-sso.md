@@ -14,7 +14,7 @@ When we talk about identity management in the context of Liferay, we’re talkin
 
 In many enterprises today, there are already systems managing both identity and authentication. The good news is that not only does Liferay provides very robust identity management and single sign-on capabilities but also supports integration with many leading IdM and SSO services and protocols.
 
-<!-- ![Logos of IdMs and SSOs Liferay is compatible with](https://) -->
+![Logos of IdMs and SSOs Liferay is compatible with](./module-4-identity-management-and-sso/images/01.png)
 
 Additionally, Liferay also supports scenarios where different types of users are managed by different identity management systems and authentication mechanisms.
 
@@ -34,7 +34,7 @@ Let's summarize Clarity's requirements related to identity management & single s
 * Authenticated users should seamlessly integrate from Clarity's existing user directory
 * Clarity's employees and B2B users must be able to log in using Clarity's existing SSO solution
 
-<!-- ![Diagram of Clarity's users](https://) -->
+![Diagram of Clarity's employees and their roles](./module-4-identity-management-and-sso/images/02.png)
 
 Fortunately, Liferay excels at powering a wide variety of solutions and can meet the needs of just about any type of organization. However, for the purposes of this training, we are going to be focusing on the needs of Clarity and, for now, Clarity is focused on implementing their public facing website where the vast majority of site visitors will be anonymous users browsing the site to learn more about Clarity’s products and services. We need to consider the type of identity management solution Clarity may already be using and how the users, specifically the ones managing content and requiring access to the website, will be interacting with the solution.
 

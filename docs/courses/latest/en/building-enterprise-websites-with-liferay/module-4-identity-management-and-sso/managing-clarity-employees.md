@@ -10,7 +10,7 @@ Clarity is already using Okta as their identity management system for managing t
 
 ## Revisiting Clarity's Critical Success Factors
 
-In an earlier course, Clarity identified several critical success factors for their new project with Liferay. Let's briefly revisit those factors in the context of the Liferay's Identity Management and SSO features.
+In an earlier course, Clarity established several critical success factors for their new project with Liferay. Let's revisit those factors in the context of Liferay's Identity Management and SSO features.
 
 1. Non-technical participation &#x2705;
 1. Simplified maintenance (and evolution) &#x2705;
@@ -29,15 +29,15 @@ Liferay’s extensive support for multiple identity management and single-sign o
 
 By leveraging Clarity’s existing Identity Management solution, we are going to be simplifying the maintenance of employee identity within the platform, and we’ll be ensuring that as employee information is updated by HR, those updates are going to be reflected in Liferay as well.
 
-> 3. Increase engagement and user experience through personalization &#x2705;
+> 4. Increase engagement and user experience through personalization &#x2705;
 
 Another advantage is that, beyond basic identity management data like name and email address, we can also synchronize a wide range of employee information. This additional information could also be used to segment employees in order to deliver a more personalized experience on the website. This might not be critical for this first phase of building an enterprise website, but for future projects, this will be very important.
 
-> 4. Risk mitigation with better governance &#x2705;
+> 5. Risk mitigation with better governance &#x2705;
 
 Additionally, identity management solutions help to mitigate risks and to ensure better governance by making sure the right employees have the right roles and can access the right information. We’ll be covering more about roles in the next module, but rest assured that Liferay makes it easy to leverage information in an organization’s identity management solution to organize users and simplify the management of their permissions. And of course, when an employee’s time with Clarity is over, it’s important that access to critical systems, such as the website is revoked in a timely manner.
 
-> 5. Lower investment / total cost of ownership &#x2705;
+> 6. Lower investment / total cost of ownership &#x2705;
 
 And lastly, by offloading the majority of identity management to a dedicated identity management system, that is managed by the right people, we’re lowering the cost of managing the Liferay solution by reducing the duplication of effort of managing identity in multiple systems. Also, by relying on integration, we are improving data accuracy. Instead of adding and maintaining users in the system, we can focus our efforts on building a great website experience for our customers!
 
@@ -52,7 +52,7 @@ Let's look into each of these requirements in further detail.
 
 ### Providing Secure Access
 
-Clarity has provided us with their business requirements for this project and there are several that are related to identity management and single sign-on. The first that we are going to be tackling is to provide secure access for Content Managers and System Administrators. For some organizations, adding a new corporate system invariably comes with adding another username/password combination to a long list of usernames and passwords. Clarity has made it very clear that they don’t want this to be the case for adopting a new enterprise website. Thankfully, Liferay provides support for a wide variety of Identity Management and Single Sign-On solutions so we will be able to leverage Clarity’s existing solution to satisfy this requirement.
+Clarity has provided us with their business requirements for this project and there are several that are related to identity management and single sign-on. The first that we are going to be tackling is to provide secure access for Content Managers and System Administrators. For some organizations, adding a new corporate system invariably comes with adding another username/password combination to a long list of usernames and passwords. Clarity has made it very clear that they don’t want this to be the case for adopting a new enterprise website. Thankfully, Liferay provides support for a wide variety of identity management and single sign-on solutions so we will be able to leverage Clarity’s existing solution to satisfy this requirement.
 
 ### Keeping Employee Information Up-to-Date
 

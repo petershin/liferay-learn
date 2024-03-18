@@ -9,7 +9,7 @@ visibility:
 
 A Digital Commerce Site allows people to buy physical goods, services, and digital products over the internet.
 
-## Target Audience
+## Target Buyers
 
 The buying audience for Digital Commerce is typically from both the Marketing and Sales organizations. With many integration requirements, IT is almost always heavily involved:
 
@@ -35,9 +35,16 @@ Using Liferay DXP as a basis for a digital commerce site provides several key be
 
 ## Key Liferay DXP Capabilities for Digital Commerce
 
-When talking with prospects about Liferay DXP-based Digital Commerce sites, some of the most important capabilities to highlight are
+When talking with prospects about Liferay DXP-based Digital Commerce sites, it is important to understand buyer needs related to [Commerce](https://learn.liferay.com/w/commerce/index) in general, but highlighting features for
 
-* [Commerce](https://learn.liferay.com/w/commerce/index)
+* Managing transactions e.g. [Checkout](https://learn.liferay.com/w/commerce/creating-store-content/commerce-storefront-pages/checkout) process, [Order Workflows](https://learn.liferay.com/w/commerce/order-management/order-workflows/introduction-to-order-workflows), [Payment Gateway](https://learn.liferay.com/w/commerce/store-management/configuring-payment-methods) integration
+* [Product Recommendations](https://learn.liferay.com/web/guest/w/commerce/pricing/promoting-products/product-recommendations)
+* Product [Catalogs](https://learn.liferay.com/w/commerce/product-management/catalogs), facilitating [Shop by Diagram](https://learn.liferay.com/w/commerce/product-management/creating-and-managing-products/product-types/shop-by-diagram) (similar to, but more sophisticated than bill-of-materials)
+* [Inventory Management](https://learn.liferay.com/w/commerce/inventory-management)
+* Particularly for B2B use-cases: Multi-level selling, custom and contract [Pricing](https://learn.liferay.com/w/commerce/pricing), and so on
+
+On top of the Commerce-specific capability set some features worth highlighting are
+
 * [Low-Code](https://learn.liferay.com/w/dxp/building-applications/objects) & [Process Management](https://learn.liferay.com/w/dxp/process-automation)
 * [Content Management System (CMS)](https://learn.liferay.com/w/dxp/content-authoring-and-management)
 * [Digital Asset Management (DAM)](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media)
@@ -46,4 +53,4 @@ When talking with prospects about Liferay DXP-based Digital Commerce sites, some
 * [Personalization](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience)
 * [Sites & Experience Management](https://learn.liferay.com/w/dxp/site-building)
 
-Next: [External Websites](./external-websites.md).
+Next: [External Websites](./enterprise-websites.md).

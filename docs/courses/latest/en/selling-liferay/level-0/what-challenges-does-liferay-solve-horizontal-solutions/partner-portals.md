@@ -9,7 +9,7 @@ visibility:
 
 A partner portal provides partners with access to deal registration, marketing resources, pricing and sales information for products and services, as well as technical details and support.
 
-## Target Audience
+## Target Buyers
 
 The key stakeholders for a partner portal reflect the structure of the company, but the decision maker is typically high in the sales organization such as the Chief Sales Officer (CSO) or the leader of the sales or channels team. The IT team also contributes to the decision.
 
@@ -29,7 +29,7 @@ Partner Portals provide many benefits for both the portal's host and the externa
 
 ## Key Liferay DXP Capabilities for Partner Portals
 
-A partner portal's key capabilities are similar to the capabilities to highlight for a supplier portal:
+Key platform capabilities and features to highlight for Partner Portal opportunities include
 
 * [Personalization](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience)
 * [Security](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay)
@@ -39,5 +39,6 @@ A partner portal's key capabilities are similar to the capabilities to highlight
 * Integration with core systems (e.g., ERP, CRM, etc.) & [Multi-channel support using Headless APIs](https://learn.liferay.com/w/dxp/headless-delivery)
 * [Search](https://learn.liferay.com/w/dxp/using-search)
 * [Digital Asset Management (DAM)](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media)
+* [Content Management System (CMS)](https://learn.liferay.com/w/dxp/content-authoring-and-management)
 
-Next: [Modern Intranets](./modern-intranets.md). 
+Next: [Intranets](./intranets.md). 

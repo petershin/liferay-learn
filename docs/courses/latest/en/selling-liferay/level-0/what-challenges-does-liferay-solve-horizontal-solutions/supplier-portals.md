@@ -9,7 +9,7 @@ visibility:
 
 A supplier portal allows a company to connect and collaborate with suppliers of goods and services. Most users of Supplier portals are manufacturers with complex supply chains. Any company in any industry must rely on suppliers to some degree, and as they grow, they benefit from a supplier portal as relationships with suppliers become more difficult to manage.
 
-## Target Audience
+## Target Buyers
 
 Supplier portal projects are typically led by procurement departments. Due to integration requirements (in particular with ERPs), the leaders of the Finance and IT departments are also heavily involved:
 
@@ -33,7 +33,7 @@ Many challenges can be solved by implementing a supplier portal, and not every o
 * [Personalization](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience)
 * [Security](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay)
 * [Low-Code](https://learn.liferay.com/w/dxp/building-applications/objects) & [Process Management](https://learn.liferay.com/w/dxp/process-automation)
-* [Commerce](https://learn.liferay.com/w/commerce/index)
+* [Product Management](https://learn.liferay.com/w/commerce/product-management) and [Commerce](https://learn.liferay.com/w/commerce/index) capabilities in general
 * [Sites & Experience Management](https://learn.liferay.com/w/dxp/site-building)
 * Integration with core systems (e.g., ERP, CRM, etc.) & [Multi-channel support using Headless APIs](https://learn.liferay.com/w/dxp/headless-delivery)
 * [Search](https://learn.liferay.com/w/dxp/using-search)

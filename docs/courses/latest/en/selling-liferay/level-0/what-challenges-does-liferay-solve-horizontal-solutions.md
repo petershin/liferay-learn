@@ -2,10 +2,10 @@
 toc:
 - ./what-challenges-does-liferay-solve-horizontal-solutions/customer-portals.md
 - ./what-challenges-does-liferay-solve-horizontal-solutions/digital-commerce-sites.md
-- ./what-challenges-does-liferay-solve-horizontal-solutions/external-websites.md
+- ./what-challenges-does-liferay-solve-horizontal-solutions/enterprise-websites.md
 - ./what-challenges-does-liferay-solve-horizontal-solutions/supplier-portals.md
 - ./what-challenges-does-liferay-solve-horizontal-solutions/partner-portals.md
-- ./what-challenges-does-liferay-solve-horizontal-solutions/modern-intranets.md
+- ./what-challenges-does-liferay-solve-horizontal-solutions/intranets.md
 uuid: b233e18d-2932-426e-9dfc-209670450195
 visibility:
 - Employee
@@ -19,10 +19,10 @@ visibility:
 * Liferay is great for horizontal solutions like
   * Customer Portals
   * Digital Commerce Sites
-  * External Websites
+  * Enterprise Websites
   * Supplier Portals
   * Partner Portals
-  * Modern Intranets
+  * Intranets
   * And more
 * Customers often start with one project and later add others.
 * Each of these solutions draw on many of Liferay’s core capabilities.
@@ -46,7 +46,7 @@ A solution is a common business need or a set of challenges that Liferay SaaS is
 
 Most customers come to Liferay looking for a specific solution. Over time they often find additional business challenges that Liferay can help them solve.
 
-For example, in one common pattern, a customer finds Liferay when looking for a modern intranet solution. After the customer implements their intranet, they realize the same features and capabilities (and the same subscription) could also help them solve challenges on their public website or on an authenticated customer portal experience.
+For example, in one common pattern, a customer finds Liferay when looking for a platform for their public website. After the customer implements their website, they realize the same features and capabilities (and the same subscription) could also help them solve challenges with their authenticated customer portal experiencem, and later on expand to meet their needs for digital commerce, and so on.
 
 ![Starting with a basic solution and gradually extending Liferay's usage within a company is a great approach to expansion and growth.](./what-challenges-does-liferay-solve-horizontal-solutions/images/01.png)
 
@@ -55,7 +55,7 @@ For example, in one common pattern, a customer finds Liferay when looking for a 
 Click on each of the tiles to read about the six solutions most commonly solved by Liferay. In each case is provided
 
 * A definition for the solution
-* The buying audience for the solution
+* The target buyers for that solution
 * Key benefits
 * Liferay DXP capabilities employed
 
@@ -76,8 +76,8 @@ Don't know where to start? Start with Customer Portals.
 
 :::
 
-:::{grid-item-card} External Websites
-:link: ./what-challenges-does-liferay-solve-horizontal-solutions/external-websites.md
+:::{grid-item-card} Enterprise Websites
+:link: ./what-challenges-does-liferay-solve-horizontal-solutions/enterprise-websites.md
 
 :::
 
@@ -91,8 +91,8 @@ Don't know where to start? Start with Customer Portals.
 
 :::
 
-:::{grid-item-card} Modern Intranets
-:link: ./what-challenges-does-liferay-solve-horizontal-solutions/modern-intranets.md
+:::{grid-item-card} Intranets
+:link: ./what-challenges-does-liferay-solve-horizontal-solutions/intranets.md
 
 :::
 ::::

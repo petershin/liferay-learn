@@ -56,13 +56,13 @@ At the root of the LUFFA are one or more `*.client-extension-config.json` ([OSGi
 At least one Dockerfile is required in each LUFFA.
 ```
 
-The build process automatically generates and packages a `Dockerfile` for [batch](./batch-client-extensions.md), [configuration](./configuration-client-extensions.md), and [front-end](./front-end-client-extensions.md) client extensions.
+The build process automatically generates and packages a `Dockerfile` for [batch](./batch-client-extensions.md), [configuration](./configuration-client-extensions.md), and [frontend](./frontend-client-extensions.md) client extensions.
 
 You must provide a [`Dockerfile`](https://docs.docker.com/engine/reference/builder/) in your project for [microservice client extensions](./microservice-client-extensions.md). Add it to the root of your project, and it's copied into the LUFFA when you build the project. Make sure your `Dockerfile` can execute the microservice client extensions in your project. For example, your `Dockerfile` may need to install specific tools that your microservice's code needs to run.
 
 ### Packaging a Client Extension Manually
 
-If packaging the LUFFA yourself, batch, configuration, and front-end client extensions requires certain `Dockerfile` conventions. Liferay provides them for you in the images below. 
+If packaging the LUFFA yourself, batch, configuration, and frontend client extensions requires certain `Dockerfile` conventions. Liferay provides them for you in the images below. 
 
 For batch client extensions, use the `liferay/batch:latest` image:
 
@@ -77,7 +77,7 @@ For configuration client extensions, use the `liferay/noop:latest` image:
 FROM liferay/noop:latest
 ```
 
-For front-end client extensions, use the `liferay/caddy:latest` image:
+For frontend client extensions, use the `liferay/caddy:latest` image:
 
 ```Dockerfile
 FROM liferay/caddy:latest
@@ -92,7 +92,7 @@ A microservice client extension's `Dockerfile` depends entirely on your specific
 An `LCP.json` file is required in each LUFFA.
 ```
 
-The build process automatically generates and packages an `LCP.json` file for [batch](./batch-client-extensions.md), [configuration](./configuration-client-extensions.md), and [front-end](./front-end-client-extensions.md).
+The build process automatically generates and packages an `LCP.json` file for [batch](./batch-client-extensions.md), [configuration](./configuration-client-extensions.md), and [frontend](./frontend-client-extensions.md).
 
 You must provide an `LCP.json` file in your project for [microservice client extensions](./microservice-client-extensions.md). Add it to the root of your project, and it's copied into the LUFFA when your project is built. This `LCP.json` file configures the container used for the microservice when it's deployed in Liferay Cloud.
 
@@ -102,7 +102,7 @@ If packaging the LUFFA yourself, each client extension comes with different spec
 | :--------------- | :----------------------------- | :--- | :---- |
 | [Batch](#example-batch-client-extension-lcp-json)            | &#10008;                       | Job  | <ul><li>The environment variable `LIFERAY_BATCH_OAUTH_APP_ERC` must be set to the value of your batch client extension's `oAuthApplicationHeadlessServer` property. This can be provided through interpolation.</li><li>You can specify small values for `cpu`, `memory` and `scale`.</li></ul> |
 | [Configuration](#example-configuration-client-extension-lcp-json)    | &#10008;                       | Job  | <ul><li>Even less memory intensive than batch extensions.</li><li>You can specify very small values for `cpu`, `memory` and `scale`.</li></ul> |
-| [Front-End](#example-front-end-client-extension-lcp-json)        | &#10008;                       | Deployment  | <ul><li>Must specify the `loadBalancer` property with `targetPort` set to `80`.</li><li>Should specify [`livenessProbe` and `readinessProbe` properties](https://learn.liferay.com/w/liferay-cloud/troubleshooting/self-healing) for self-healing.</li><li>You can specify small values for `cpu`, `memory` and `scale`.</li></ul> |
+| [Frontend](#example-frontend-client-extension-lcp-json)        | &#10008;                       | Deployment  | <ul><li>Must specify the `loadBalancer` property with `targetPort` set to `80`.</li><li>Should specify [`livenessProbe` and `readinessProbe` properties](https://learn.liferay.com/w/liferay-cloud/troubleshooting/self-healing) for self-healing.</li><li>You can specify small values for `cpu`, `memory` and `scale`.</li></ul> |
 
 ### Example Batch Client Extension LCP.json
 
@@ -131,7 +131,7 @@ If packaging the LUFFA yourself, each client extension comes with different spec
 }
 ```
 
-### Example Front-End Client Extension LCP.json
+### Example Frontend Client Extension LCP.json
 
 ```json
 {
@@ -164,10 +164,10 @@ See [Configuration via LCP.json](https://learn.liferay.com/w/liferay-cloud/refer
 ## `static`
 
 ```{note}
-The `static` directory is only required by [front-end client extension projects](./front-end-client-extensions.md).
+The `static` directory is only required by [frontend client extension projects](./frontend-client-extensions.md).
 ```
 
-You can place any number of static resource files into the root level `static/` directory in the built LUFFA. Use any folder structure you like within the `static/` folder. These files are ignored if there is no front-end client extension defined in your project's `client-extension.yaml` file.
+You can place any number of static resource files into the root level `static/` directory in the built LUFFA. Use any folder structure you like within the `static/` folder. These files are ignored if there is no frontend client extension defined in your project's `client-extension.yaml` file.
 
 ## Microservice Resources
 

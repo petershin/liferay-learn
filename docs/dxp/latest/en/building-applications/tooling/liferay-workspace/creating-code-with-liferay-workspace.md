@@ -97,7 +97,7 @@ You can also create a themes project in Workspace the same way you create it out
    ../gradlew build
    ```
 
-   The above command assumes you're one folder down from the Workspace root; if you've nested your project (perhaps in a `themes` folder), adjust the call to `gradlew` accordingly. This command builds the front-end theme using Liferay's Node Gradle Plugin. 
+   The above command assumes you're one folder down from the Workspace root; if you've nested your project (perhaps in a `themes` folder), adjust the call to `gradlew` accordingly. This command builds the frontend theme using Liferay's Node Gradle Plugin. 
 
 To verify Workspace recognizes your project, use this command to display all the projects: 
 

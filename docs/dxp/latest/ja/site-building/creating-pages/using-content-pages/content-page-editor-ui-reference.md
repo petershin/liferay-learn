@@ -103,7 +103,7 @@ Liferay 7.4 U37/GA37から、順序ボタン(![順序ボタン](../../../images/
 
 ### ページデザインオプション
 
-**ページデザインオプションパネル**(![ページデザインオプション](../../../images/icon-format.png))を開いて、ページの [マスターページテンプレート](../defining-headers-and-footers/managing-master-page-templates.md) または [スタイルブック](../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md) を変更します。 **オプション**(![オプションボタン](../../../images/icon-cog3.png))をクリックして、 [フロントエンドクライアント拡張機能](../../../building-applications/client-extensions/front-end-client-extensions.md) を含む、追加のページデザインオプションにアクセスします。
+**ページデザインオプションパネル**(![ページデザインオプション](../../../images/icon-format.png))を開いて、ページの [マスターページテンプレート](../defining-headers-and-footers/managing-master-page-templates.md) または [スタイルブック](../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md) を変更します。 **オプション**(![オプションボタン](../../../images/icon-cog3.png))をクリックして、 [フロントエンドクライアント拡張機能](../../../building-applications/client-extensions/frontend-client-extensions.md) を含む、追加のページデザインオプションにアクセスします。
 
 ### ページコンテンツ
 

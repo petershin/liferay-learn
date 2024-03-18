@@ -352,7 +352,7 @@ Liferay has begun transitioning big portions of its internal UI to React. As a s
 
 **ReactRenderer:** A low level Java primitive for rendering React components, simplifying the bootstrapping of a React component and generating the necessary JavaScript code for its initialization. 
 
-**React:component:**  A high level JSP tag that can be combined with traditional `MVCPortlet` approaches to render and initialize complex React applications from traditional JSPs. This facilitates the progressive migration of complex JS applications and the adoption of more modern front-end workflows.
+**React:component:**  A high level JSP tag that can be combined with traditional `MVCPortlet` approaches to render and initialize complex React applications from traditional JSPs. This facilitates the progressive migration of complex JS applications and the adoption of more modern frontend workflows.
 
 ### Upgrade Improvements 
 

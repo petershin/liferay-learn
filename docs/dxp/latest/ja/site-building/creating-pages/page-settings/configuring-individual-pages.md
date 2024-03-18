@@ -96,13 +96,13 @@ nameフィールドを使用して、サイトナビゲーションに使用さ�
 
 また、ページにカスタムコードを追加できるCSSエディターやJavaScriptエディターにもアクセスできる。
 
-**テーマCSSクライアント拡張:** [テーマCSSクライアント拡張](../../../building-applications/client-extensions/front-end-client-extensions.md#theme-css-client-extensions) を追加して、テーマに含まれるデフォルトCSSを完全に置き換えます。
+**テーマCSSクライアント拡張:** [テーマCSSクライアント拡張](../../../building-applications/client-extensions/frontend-client-extensions.md#theme-css-client-extensions) を追加して、テーマに含まれるデフォルトCSSを完全に置き換えます。
 
-**CSSクライアント拡張:** [CSSクライアント拡張](../../../building-applications/client-extensions/front-end-client-extensions.md#css-client-extensions) を追加して、ページのCSSをクライアント拡張で拡張する。 これらはテーマCSSの後、マスターエクステンションの後にロードされます。
+**CSSクライアント拡張:** [CSSクライアント拡張](../../../building-applications/client-extensions/frontend-client-extensions.md#css-client-extensions) を追加して、ページのCSSをクライアント拡張で拡張する。 これらはテーマCSSの後、マスターエクステンションの後にロードされます。
 
 **カスタムCSS:** カスタムCSSを適用することができ、テーマの後に読み込まれます。
 
-**JavaScriptクライアント拡張とカスタムJavaScript:** [JavaScriptクライアント拡張](../../../building-applications/client-extensions/front-end-client-extensions.md#javascript-client-extensions) を追加することで、このマスターページテンプレートを使用したページが訪問されたときにJavaScriptを実行させることができます。 カスタムJavaScriptコードも追加でき、ページ下部で実行される。
+**JavaScriptクライアント拡張とカスタムJavaScript:** [JavaScriptクライアント拡張](../../../building-applications/client-extensions/frontend-client-extensions.md#javascript-client-extensions) を追加することで、このマスターページテンプレートを使用したページが訪問されたときにJavaScriptを実行させることができます。 カスタムJavaScriptコードも追加でき、ページ下部で実行される。
 
 ![Use CSS and JavaScript editors to add custom code to the page](./configuring-individual-pages/images/09.png)
 

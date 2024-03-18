@@ -79,13 +79,13 @@ You can change a page's master page template in the [content page editor](../usi
 
 **Style Book:** Change the default style book applied from the theme.
 
-**Theme CSS Client Extension:** Add [theme CSS client extensions](../../../building-applications/client-extensions/front-end-client-extensions.md#theme-css-client-extensions) to replace the default CSS fully from a theme without deploying an entire theme.
+**Theme CSS Client Extension:** Add [theme CSS client extensions](../../../building-applications/client-extensions/frontend-client-extensions.md#theme-css-client-extensions) to replace the default CSS fully from a theme without deploying an entire theme.
 
-**CSS Client Extensions:** Add [CSS client extensions](../../../building-applications/client-extensions/front-end-client-extensions.md#css-client-extensions) to override CSS styling of a content page that uses the master page template.
+**CSS Client Extensions:** Add [CSS client extensions](../../../building-applications/client-extensions/frontend-client-extensions.md#css-client-extensions) to override CSS styling of a content page that uses the master page template.
 
 **Custom CSS:** Custom CSS can also be applied and is loaded after the theme. Custom CSS is disabled when using the inherited theme.
 
-**JavaScript Client Extension and Custom JavaScript:** [JavaScript client extentions](../../../building-applications/client-extensions/front-end-client-extensions.md#javascript-client-extensions) can be added to have JavaScript run when the page using this master page template is visited. Custom JavaScript code can be added that is executed at the bottom of the page.
+**JavaScript Client Extension and Custom JavaScript:** [JavaScript client extentions](../../../building-applications/client-extensions/frontend-client-extensions.md#javascript-client-extensions) can be added to have JavaScript run when the page using this master page template is visited. Custom JavaScript code can be added that is executed at the bottom of the page.
 
 ```{note}
 A theme is applied to a content page through a master page template. When a master page template is applied to a content page, the design of the content page is defined by the master page template.

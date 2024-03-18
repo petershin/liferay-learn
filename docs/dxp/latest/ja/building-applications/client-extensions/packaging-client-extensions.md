@@ -44,7 +44,7 @@ LUFFAのルートには、1つ以上の`*.client-extension-config.json` ( [OSGi 
 各LUFFAには少なくとも1つのDockerfileが必要です。
 ```
 
-ビルド・プロセスは、 [バッチ](./batch-client-extensions.md) 、 [コンフィギュレーション](./configuration-client-extensions.md) 、 [フロントエンド](./front-end-client-extensions.md) クライアント拡張用の `Dockerfile` を自動的に生成し、パッケージ化する。
+ビルド・プロセスは、 [バッチ](./batch-client-extensions.md) 、 [コンフィギュレーション](./configuration-client-extensions.md) 、 [フロントエンド](./frontend-client-extensions.md) クライアント拡張用の `Dockerfile` を自動的に生成し、パッケージ化する。
 
 [マイクロサービスクライアント拡張](./microservice-client-extensions.md) 用に、 [`Dockerfile`](https://docs.docker.com/engine/reference/builder/) をプロジェクトに用意する必要があります。 これをプロジェクトのルートに追加すると、プロジェクトのビルド時にLUFFAにコピーされます。 `Dockerfile`がプロジェクトのマイクロサービスクライアント拡張を実行できることを確認してください。 例えば、`Dockerfile`はマイクロサービスのコードを実行するために必要な特定のツールをインストールする必要があるかもしれない。
 
@@ -80,7 +80,7 @@ COPY static/ /public_html/
 各LUFFAには`LCP.json`ファイルが必要です。
 ```
 
-ビルドプロセスは、 [バッチ](./batch-client-extensions.md) 、 [コンフィギュレーション](./configuration-client-extensions.md) 、 [フロントエンド](./front-end-client-extensions.md) 用の `LCP.json` ファイルを自動的に生成し、パッケージ化します。
+ビルドプロセスは、 [バッチ](./batch-client-extensions.md) 、 [コンフィギュレーション](./configuration-client-extensions.md) 、 [フロントエンド](./frontend-client-extensions.md) 用の `LCP.json` ファイルを自動的に生成し、パッケージ化します。
 
 [マイクロサービスクライアント拡張](./microservice-client-extensions.md) 用に `LCP.json` ファイルをプロジェクトに用意する必要があります。 これをプロジェクトのルートに追加すると、プロジェクトがビルドされるときにLUFFAにコピーされます。 この `LCP.json` ファイルは、マイクロサービスが Liferay Experience Cloud にデプロイされたときに使用されるコンテナを設定します。
 
@@ -90,7 +90,7 @@ LUFFAを自分でパッケージングする場合、各クライアント拡張
 | :------------------------------------------------------------------------- | :------------ | :--- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [バッチ](#example-batch-client-extension-lcp-json)                 | &#10008;      | 仕事   | <ul><li>環境変数 `LIFERAY_BATCH_OAUTH_APP_ERC` には、バッチクライアント拡張の `oAuthApplicationHeadlessServer` プロパティの値を設定しなければならない。 これは補間によって提供することができる。</li><li>`cpu`、`memory`、`scale` には小さな値を指定できる。</li></ul>                                                                                    |
 | [コンフィギュレーション](#example-configuration-client-extension-lcp-json) | &#10008      | 仕事   | <ul><li>バッチ拡張よりもさらにメモリ消費量が少ない。</li><li>`cpu`、`memory`、`scale` には非常に小さな値を指定できる。</li></ul>                                                                                                                                                                                        |
-| [フロントエンド](#example-front-end-client-extension-lcp-json)         | &#10008      | デプロイ | <ul><li>`loadBalancer` プロパティを `targetPort` に `80` を指定して指定する必要がある。</li><li> [セルフヒーリング](https://learn.liferay.com/w/liferay-cloud/troubleshooting/self-healing) `livenessProbe` プロパティと `readinessProbe` プロパティを指定する必要がある。</li><li>`cpu`、`memory`、`scale` には小さな値を指定できる。</li></ul> |
+| [フロントエンド](#example-frontend-client-extension-lcp-json)         | &#10008      | デプロイ | <ul><li>`loadBalancer` プロパティを `targetPort` に `80` を指定して指定する必要がある。</li><li> [セルフヒーリング](https://learn.liferay.com/w/liferay-cloud/troubleshooting/self-healing) `livenessProbe` プロパティと `readinessProbe` プロパティを指定する必要がある。</li><li>`cpu`、`memory`、`scale` には小さな値を指定できる。</li></ul> |
 
 ### バッチクライアント拡張 LCP.json の例
 
@@ -152,7 +152,7 @@ LUFFAを自分でパッケージングする場合、各クライアント拡張
 ## `static`
 
 ```{note}
-static`ディレクトリが必要なのは、 [フロントエンドクライアント拡張プロジェクト](./front-end-client-extensions.md) だけです。
+static`ディレクトリが必要なのは、 [フロントエンドクライアント拡張プロジェクト](./frontend-client-extensions.md) だけです。
 ```
 
 ビルドされたLUFFAのルートレベル`static/`ディレクトリには、任意の数の静的リソースファイルを置くことができます。 `static/`フォルダの中に好きなフォルダ構造を使ってください。 プロジェクトの `client-extension.yaml` ファイルにフロントエンドクライアント拡張が定義されていない場合、これらのファイルは無視されます。

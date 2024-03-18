@@ -19,4 +19,4 @@ includeタグを使用すると、ポートレットのJSP、テーマ、また�
 
 * [Using the Liferay Util Param Tag](./liferay-util-param.md)
 * [Using the Liferay Util Dynamic Include Tag](./liferay-util-dynamic-include.md)
-* [Using the Liferay Front-End Taglibs](../clay-tag-library.md)
+* [Using the Liferay Frontend Taglibs](../clay-tag-library.md)

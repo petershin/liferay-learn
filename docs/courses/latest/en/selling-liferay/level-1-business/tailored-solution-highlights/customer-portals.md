@@ -65,7 +65,7 @@ Integration can take many different forms. For example, customers may want integ
 
 ![Placed orders list displays orders via integration with a system of record.](./customer-portals/images/04.png)
 
-Customer portal integration could also involve surfacing key order and invoice data from a back office system of record. In many cases, these back office systems don’t provide self-service directly, or the self-service experience leaves much to be desired. When using Liferay as a front-end to these back office systems, customers get the right level of access with a consistent user experience and branding. 
+Customer portal integration could also involve surfacing key order and invoice data from a back office system of record. In many cases, these back office systems don’t provide self-service directly, or the self-service experience leaves much to be desired. When using Liferay as a frontend to these back office systems, customers get the right level of access with a consistent user experience and branding. 
 
 With this in place, the customer portal is a single pane of glass that provides users an unmatched view into their business relationships and reduces friction that might impede future purchases. 
 

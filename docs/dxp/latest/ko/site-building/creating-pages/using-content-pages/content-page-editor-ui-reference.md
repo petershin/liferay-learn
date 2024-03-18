@@ -101,7 +101,7 @@ Liferay 7.4 U37/GA37부터 Order 버튼(![Order 버튼](../../../images/icon-ord
 
 ### 페이지 디자인 옵션
 
-**페이지 디자인 옵션 패널**(![페이지 디자인 옵션](../../../images/icon-format.png))을 열어 페이지의 [마스터 페이지 템플릿](../defining-headers-and-footers/managing-master-page-templates.md) 또는 [스타일 북](../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md) 을 변경합니다. **옵션**(![옵션 버튼](../../../images/icon-cog3.png))을 클릭하여 [프런트 엔드 클라이언트 확장을 포함한 추가 페이지 디자인 옵션에 액세스하세요](../../../building-applications/client-extensions/front-end-client-extensions.md) .
+**페이지 디자인 옵션 패널**(![페이지 디자인 옵션](../../../images/icon-format.png))을 열어 페이지의 [마스터 페이지 템플릿](../defining-headers-and-footers/managing-master-page-templates.md) 또는 [스타일 북](../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md) 을 변경합니다. **옵션**(![옵션 버튼](../../../images/icon-cog3.png))을 클릭하여 [프런트 엔드 클라이언트 확장을 포함한 추가 페이지 디자인 옵션에 액세스하세요](../../../building-applications/client-extensions/frontend-client-extensions.md) .
 
 ### 페이지 컨텐츠
 

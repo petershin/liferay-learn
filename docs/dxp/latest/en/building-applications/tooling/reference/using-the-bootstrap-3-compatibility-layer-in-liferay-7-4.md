@@ -9,7 +9,7 @@ taxonomy-category-names:
 ---
 # Using the Bootstrap 3 Compatibility Layer in Liferay 7.4
 
-As of Liferay DXP 7.4 GA1, the [Bootstrap 3](https://getbootstrap.com/) compatibility layer is removed from the built-in packages in Liferay front-end applications. If you are upgrading from a previous version, you must include the compatibility layer as an external package for any of your projects that depend on Bootstrap 3 for their CSS code.
+As of Liferay DXP 7.4 GA1, the [Bootstrap 3](https://getbootstrap.com/) compatibility layer is removed from the built-in packages in Liferay frontend applications. If you are upgrading from a previous version, you must include the compatibility layer as an external package for any of your projects that depend on Bootstrap 3 for their CSS code.
 
 ```{note}
 If you use the `gulp upgrade` command to [upgrade a theme](../../../site-building/site-appearance/themes/upgrading-a-theme.md) to Liferay 7.4, you can automatically include the Bootstrap 3 compatibility layer with the upgrade. In this case, you need not add the compabitility layer manually to that theme.

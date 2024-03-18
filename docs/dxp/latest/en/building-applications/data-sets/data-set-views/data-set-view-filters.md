@@ -30,9 +30,9 @@ While managing data set views, you can define pre-applied filters to be used in 
 
 ## Client Extension Filter
 
-Use Front-end Data Set Filter [client extensions](../../client-extensions.md) or deploy a [client extension from your workspace](../../client-extensions/working-with-client-extensions.md) to customize the filter experience and add new types of filters to your data set view.
+Use Frontend Data Set Filter [client extensions](../../client-extensions.md) or deploy a [client extension from your workspace](../../client-extensions/working-with-client-extensions.md) to customize the filter experience and add new types of filters to your data set view.
 
-![You need to have a Front-end Data Set Filter client extension to create the client extension filter.](./data-set-view-filters/images/01.png)
+![You need to have a Frontend Data Set Filter client extension to create the client extension filter.](./data-set-view-filters/images/01.png)
 
 1. Choose *Client Extension* when adding a new filter.
 
@@ -42,7 +42,7 @@ Use Front-end Data Set Filter [client extensions](../../client-extensions.md) or
 
 1. Select the *Field* by which you want to filter the entries.
 
-1. Select the *Front-end Data Set Filter* client extension and click *Save*.
+1. Select the *Frontend Data Set Filter* client extension and click *Save*.
 
 ![Create a filter based on a client extension.](./data-set-view-filters/images/02.png)
 

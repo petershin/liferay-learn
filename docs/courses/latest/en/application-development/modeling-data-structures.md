@@ -26,7 +26,7 @@ Your first step in writing an application is to model its data structures. This 
 
 ## Identifying Data Entities
 
-You can create [object definitions](https://learn.liferay.com/en/w/dxp/building-applications/objects) that represent the data entities for your application. These can be anything from insurance claims, support tickets, or commerce products. When you publish custom objects, Liferay creates a database table for storing data entries. It also generates headless APIs for performing CRUD operations and provides a basic front-end. Using Liferay objects, you can build a robust and flexible foundation for your solution that can support the specific needs of your organization.
+You can create [object definitions](https://learn.liferay.com/en/w/dxp/building-applications/objects) that represent the data entities for your application. These can be anything from insurance claims, support tickets, or commerce products. When you publish custom objects, Liferay creates a database table for storing data entries. It also generates headless APIs for performing CRUD operations and provides a basic frontend. Using Liferay objects, you can build a robust and flexible foundation for your solution that can support the specific needs of your organization.
 
 ## Adding Attributes
 

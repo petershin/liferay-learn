@@ -94,7 +94,7 @@ Here are some of the applications that can be managed from the applications menu
 
 - [Content Dashboard](../content-authoring-and-management/content-dashboard.md)
 - [Workflow](../process-automation/workflow/introduction-to-workflow.md)
-- [Remote Apps](../building-applications/client-extensions/front-end-client-extensions.md#custom-element-client-extensions)
+- [Remote Apps](../building-applications/client-extensions/frontend-client-extensions.md#custom-element-client-extensions)
 
 ### Commerce Menu
 

@@ -1,6 +1,6 @@
 # カスタムアプリケーションのデプロイ
 
-[custom element client extension](../../../building-applications/client-extensions/front-end-client-extensions.md#custom-element-client-extensions) を使って、JavaScript アプリケーションを Liferay サイトページのウィジェットとしてレンダリングできます。 アプリケーションはLiferayによって提供され、 [ヘッドレスAPI](../../../headless-delivery/using-liferay-as-a-headless-platform.md) を通してLiferayとやりとりします。
+[custom element client extension](../../../building-applications/client-extensions/frontend-client-extensions.md#custom-element-client-extensions) を使って、JavaScript アプリケーションを Liferay サイトページのウィジェットとしてレンダリングできます。 アプリケーションはLiferayによって提供され、 [ヘッドレスAPI](../../../headless-delivery/using-liferay-as-a-headless-platform.md) を通してLiferayとやりとりします。
 
 `liferay-ticket-custom-element` クライアントエクステンションをデプロイします。
 
@@ -40,7 +40,7 @@ assemble:
 
 なお、JavaScriptアプリケーションの `.js` と `.css` のビルドファイルは `build/assets` フォルダからコピーされ、配置可能なクライアントの拡張ファイル `.zip` に格納される。
 
-この `liferay-ticket-custom-element` は [カスタム要素](../../../building-applications/client-extensions/front-end-client-extensions.md#custom-element-client-extensions) タイプのクライアント拡張です。 これは`client-extension.yaml`ファイルで以下のように定義されている：
+この `liferay-ticket-custom-element` は [カスタム要素](../../../building-applications/client-extensions/frontend-client-extensions.md#custom-element-client-extensions) タイプのクライアント拡張です。 これは`client-extension.yaml`ファイルで以下のように定義されている：
 
 ```yaml
 liferay-ticket-custom-element:
@@ -57,7 +57,7 @@ liferay-ticket-custom-element:
    useESM: true
 ```
 
-各プロパティの説明は [カスタム要素のYAML設定リファレンス](../../../building-applications/client-extensions/front-end-client-extensions/custom-element-yaml-configuration-reference.md) を参照してください。
+各プロパティの説明は [カスタム要素のYAML設定リファレンス](../../../building-applications/client-extensions/frontend-client-extensions/custom-element-yaml-configuration-reference.md) を参照してください。
 
 アプリケーションに関連するJavaScriptファイルは`/src`フォルダに含まれている。 JavaScriptコードの完全な説明はこのチュートリアルの範囲を超えているが、注意すべき点がいくつかある：
 
@@ -70,5 +70,5 @@ liferay-ticket-custom-element:
 
 ## 関連コンセプト
 
-* [基本的なカスタム要素の作成](../../../building-applications/client-extensions/front-end-client-extensions/tutorials/creating-a-basic-custom-element.md) 
-* [カスタムエレメントとIframeクライアント拡張機能を理解する](../../../building-applications/client-extensions/front-end-client-extensions/understanding-custom-element-and-iframe-client-extensions.md) 
+* [基本的なカスタム要素の作成](../../../building-applications/client-extensions/frontend-client-extensions/tutorials/creating-a-basic-custom-element.md) 
+* [カスタムエレメントとIframeクライアント拡張機能を理解する](../../../building-applications/client-extensions/frontend-client-extensions/understanding-custom-element-and-iframe-client-extensions.md) 

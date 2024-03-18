@@ -111,7 +111,7 @@ This example uses a reference to [`UUIDItemSelectorReturnType`](https://resource
 
    The item selector uses the criterion and return type classes to decide what selection views of items (presented as tabs) to show and how to identify each item.
 
-1. Now you can use the criteria to generate a URL for the item selector. This URL creates the item selector dialog in your front-end code.
+1. Now you can use the criteria to generate a URL for the item selector. This URL creates the item selector dialog in your frontend code.
 
    The [`RequestBackedPortletURLFactory` class](https://resources.learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/portlet/RequestBackedPortletURLFactory.html) can quickly generate an item selector URL using the criteria:
 
@@ -122,7 +122,7 @@ This example uses a reference to [`UUIDItemSelectorReturnType`](https://resource
    ```
 
    !!! important
-       The String you use to generate the URL (in this example, `selectRole`) is the dialog's event name. This must match a value you'll use later when creating the dialog in your front-end code.
+       The String you use to generate the URL (in this example, `selectRole`) is the dialog's event name. This must match a value you'll use later when creating the dialog in your frontend code.
 
 1. Add the item selector URL to the `renderRequest` so that it's available in the JSP:
 
@@ -132,7 +132,7 @@ This example uses a reference to [`UUIDItemSelectorReturnType`](https://resource
    :lines: 50-51
    ```
 
-   The `view.jsp` file is where the front-end code is defined. The `renderRequest` object in your Java class' `render` method is passed to the JSP file. Use a constant to make sure you identify the URL in both the controller (portlet class) and the view (JSP).
+   The `view.jsp` file is where the frontend code is defined. The `renderRequest` object in your Java class' `render` method is passed to the JSP file. Use a constant to make sure you identify the URL in both the controller (portlet class) and the view (JSP).
 
 1. Finally, call `MVCPortlet`'s `render` method to continue the rendering process once your code is executed:
 
@@ -146,7 +146,7 @@ That's the controller code. Execution now passes to the view layer (the V in MVC
 
 ## Use the Item Selector in Your View
 
-You must retrieve the item selector and define a way to use it in your front-end code.
+You must retrieve the item selector and define a way to use it in your frontend code.
 
 1. Open `view.jsp` from the example.
 
@@ -203,7 +203,7 @@ When you use an item selector, you want the selected value inserted into a form.
 
    Now you have a form with one input field called `role`.
 
-1. Scroll down to the JavaScript alert. Replace the JavaScript alert with a call to Liferay's front-end `setFormValues` method:
+1. Scroll down to the JavaScript alert. Replace the JavaScript alert with a call to Liferay's frontend `setFormValues` method:
 
    ```jsp
    Liferay.Util.setFormValues(document.<portlet:namespace />form, {

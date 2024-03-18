@@ -253,11 +253,11 @@ Liferay 작업 공간 버전이 9.0.2 이전인 경우 동일한 형식에 따�
 
 * [배치 클라이언트 확장](./batch-client-extensions.md)
 * [구성 클라이언트 확장](./configuration-client-extensions.md)
-* [프런트엔드 클라이언트 확장](./front-end-client-extensions.md)
+* [프런트엔드 클라이언트 확장](./frontend-client-extensions.md)
 * [마이크로서비스 클라이언트 확장](./microservice-client-extensions.md)
 * [클라이언트 확장 패키징](./packaging-client-extensions.md)
 
 ## 튜토리얼
 
-* [JavaScript 클라이언트 확장 사용](./front-end-client-extensions/tutorials/using-a-javascript-client-extension.md)
-* [CSS 클라이언트 확장 사용하기](./front-end-client-extensions/tutorials/using-a-css-client-extension.md)
+* [JavaScript 클라이언트 확장 사용](./frontend-client-extensions/tutorials/using-a-javascript-client-extension.md)
+* [CSS 클라이언트 확장 사용하기](./frontend-client-extensions/tutorials/using-a-css-client-extension.md)

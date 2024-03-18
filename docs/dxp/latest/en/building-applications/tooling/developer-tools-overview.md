@@ -19,11 +19,11 @@ If you're an experienced developer or prefer integrating Liferay development int
 
 [**Blade CLI**](./blade-cli/installing-and-updating-blade-cli.md) makes it easy to create and build projects and Liferay Workspaces from your command line interface. Experienced developers can make use of this small, simple CLI tool to integrate Liferay projects into their existing workflows. 
 
-## Tools for Front-End Developers
+## Tools for Frontend Developers
 
-If you're a front-end developer, two CLI-based tools can help you create theme projects to transform Liferay's look and feel, as well as widget projects. 
+If you're a frontend developer, two CLI-based tools can help you create theme projects to transform Liferay's look and feel, as well as widget projects. 
 
-**Liferay Theme Generator** helps front-end developers create themes and layout templates to define the look and feel of your Liferay DXP-based site.
+**Liferay Theme Generator** helps frontend developers create themes and layout templates to define the look and feel of your Liferay DXP-based site.
 
 **Liferay JS Generator** creates projects for JavaScript-based widgets deployable to Liferay DXP.
 

@@ -2,7 +2,7 @@
 toc:
   - ./client-extensions/working-with-client-extensions.md
   - ./client-extensions/packaging-client-extensions.md
-  - ./client-extensions/front-end-client-extensions.md
+  - ./client-extensions/frontend-client-extensions.md
   - ./client-extensions/microservice-client-extensions.md
   - ./client-extensions/configuration-client-extensions.md
   - ./client-extensions/batch-client-extensions.md
@@ -21,8 +21,8 @@ toc:
 
 クライアント・エクステンションを使用すると、次のことが可能になります。
 
-* [カスタムJavaScriptまたはCSS](#front-end-client-extensions) を適用し、Liferayのコードに依存しないようにする。
-* Liferay ページ上の [カスタム要素](./client-extensions/front-end-client-extensions/understanding-custom-element-and-iframe-client-extensions.md)にリモートでホストされているアプリケーションを埋め込む
+* [カスタムJavaScriptまたはCSS](#frontend-client-extensions) を適用し、Liferayのコードに依存しないようにする。
+* Liferay ページ上の [カスタム要素](./client-extensions/frontend-client-extensions/understanding-custom-element-and-iframe-client-extensions.md)にリモートでホストされているアプリケーションを埋め込む
 * 同じコンフィギュレーションやオブジェクトを、 [クライアント拡張に変換することで、複数の環境に適用](#configuration-client-extensions)
 * カスタムサービスや [関数を呼び出す](#microservice-client-extensions) Liferayの外部（例：RESTエンドポイント）で、お好みのプログラミング言語やテクノロジーを使って実行する。
 
@@ -34,7 +34,7 @@ toc:
 
 * [バッチクライアント拡張](#batch-client-extensions)
 * [設定クライアント拡張](#configuration-client-extensions)
-* [フロントエンドのクライアント拡張](#front-end-client-extensions)
+* [フロントエンドのクライアント拡張](#frontend-client-extensions)
 * [マイクロサービスクライアントの拡張](#microservice-client-extensions)
 
 ### バッチクライアント拡張機能
@@ -57,7 +57,7 @@ toc:
 
 フロントエンドクライアントエクステンションは、特定のページに表示するリソースを提供します。 テーマリソースまたはカスタム HTML 要素をクライアント拡張機能で提供できるようになりました。 ほとんどのフロントエンドクライアント拡張は、Liferayインスタンスに **静的リソース** を提供します。
 
-特定のタイプの詳細については、 [フロントエンドのクライアント拡張](./client-extensions/front-end-client-extensions.md) を参照のこと。
+特定のタイプの詳細については、 [フロントエンドのクライアント拡張](./client-extensions/frontend-client-extensions.md) を参照のこと。
 
 ### マイクロサービスのクライアント拡張
 

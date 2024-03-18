@@ -2,7 +2,7 @@
 toc:
   - ./client-extensions/working-with-client-extensions.md
   - ./client-extensions/packaging-client-extensions.md
-  - ./client-extensions/front-end-client-extensions.md
+  - ./client-extensions/frontend-client-extensions.md
   - ./client-extensions/microservice-client-extensions.md
   - ./client-extensions/configuration-client-extensions.md
   - ./client-extensions/batch-client-extensions.md
@@ -23,8 +23,8 @@ toc:
 
 클라이언트 확장을 사용하면 다음을 수행할 수 있습니다.
 
-* Liferay 코드에 대한 종속성을 피하면서 [사용자 정의 JavaScript 또는 CSS](#front-end-client-extensions) 적용합니다.
-* Liferay 페이지의 [사용자 정의 요소](./client-extensions/front-end-client-extensions/understanding-custom-element-and-iframe-client-extensions.md) 에 원격으로 호스팅되는 애플리케이션 포함
+* Liferay 코드에 대한 종속성을 피하면서 [사용자 정의 JavaScript 또는 CSS](#frontend-client-extensions) 적용합니다.
+* Liferay 페이지의 [사용자 정의 요소](./client-extensions/frontend-client-extensions/understanding-custom-element-and-iframe-client-extensions.md) 에 원격으로 호스팅되는 애플리케이션 포함
 * 동일한 구성이나 객체를 클라이언트 확장으로 변환하여 [환경에 적용](#configuration-client-extensions) 
 * 선택한 프로그래밍 언어나 기술을 사용하여 Liferay 외부(예: REST 엔드포인트)에서 실행되는 사용자 지정 서비스 또는 [함수](#microservice-client-extensions) 을 호출하세요.
 
@@ -36,7 +36,7 @@ toc:
 
 * [배치 클라이언트 확장](#batch-client-extensions)
 * [구성 클라이언트 확장](#configuration-client-extensions)
-* [프런트엔드 클라이언트 확장](#front-end-client-extensions)
+* [프런트엔드 클라이언트 확장](#frontend-client-extensions)
 * [마이크로서비스 클라이언트 확장](#microservice-client-extensions)
 
 ### 배치 클라이언트 확장
@@ -59,7 +59,7 @@ toc:
 
 프런트 엔드 클라이언트 확장은 특정 페이지에 표시할 리소스를 제공합니다. 이제 클라이언트 확장에서 테마 리소스 또는 사용자 정의 HTML 요소를 제공할 수 있습니다. 대부분의 프런트 엔드 클라이언트 확장은 Liferay 인스턴스에 **정적 리소스** 를 제공합니다.
 
-특정 유형에 대한 자세한 내용은 [프런트 엔드 클라이언트 확장](./client-extensions/front-end-client-extensions.md) 참조하세요.
+특정 유형에 대한 자세한 내용은 [프런트 엔드 클라이언트 확장](./client-extensions/frontend-client-extensions.md) 참조하세요.
 
 ### 마이크로서비스 클라이언트 확장
 

@@ -1,6 +1,6 @@
 # React 차트에서 객체 데이터 사용하기
 
-여기서는 [개의 개체](../objects.md) , [헤드리스 API](../objects/understanding-object-integrations/using-custom-object-apis.md) 및 [사용자 정의 요소 원격 애플리케이션](../client-extensions/front-end-client-extensions/tutorials/creating-a-basic-custom-element.md) 를 사용하여 데이터 대시보드에 대한 동적 차트를 생성합니다. 먼저 Object API 호출에 대해 [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) 활성화된 새 DXP 인스턴스를 설정합니다. 그런 다음 데이터를 수신하고 저장하기 위한 개체를 만듭니다. REST API를 사용하여 객체에 데이터를 추가한 후 제공된 React [FusionCharts](https://www.fusioncharts.com/dev/getting-started/react/your-first-chart-using-react) 애플리케이션을 다운로드하고 빌드합니다. 코드가 컴파일되면 생성된 `.js` 파일을 Liferay 문서 라이브러리에 호스팅하고 해당 WebDAV URL을 복사합니다. 마지막으로 이 URL을 사용하여 React 차트용 원격 앱을 만들고 이를 페이지 위젯으로 배포합니다.
+여기서는 [개의 개체](../objects.md) , [헤드리스 API](../objects/understanding-object-integrations/using-custom-object-apis.md) 및 [사용자 정의 요소 원격 애플리케이션](../client-extensions/frontend-client-extensions/tutorials/creating-a-basic-custom-element.md) 를 사용하여 데이터 대시보드에 대한 동적 차트를 생성합니다. 먼저 Object API 호출에 대해 [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) 활성화된 새 DXP 인스턴스를 설정합니다. 그런 다음 데이터를 수신하고 저장하기 위한 개체를 만듭니다. REST API를 사용하여 객체에 데이터를 추가한 후 제공된 React [FusionCharts](https://www.fusioncharts.com/dev/getting-started/react/your-first-chart-using-react) 애플리케이션을 다운로드하고 빌드합니다. 코드가 컴파일되면 생성된 `.js` 파일을 Liferay 문서 라이브러리에 호스팅하고 해당 WebDAV URL을 복사합니다. 마지막으로 이 URL을 사용하여 React 차트용 원격 앱을 만들고 이를 페이지 위젯으로 배포합니다.
 
 차트는 5초마다 Headless API를 통해 개체를 호출하도록 구성되어 개체의 데이터를 반환하고 차트를 동적으로 업데이트합니다.
 

@@ -17,7 +17,7 @@ Liferay 프런트 엔드 태그 라이브러리는 앱에서 공통 프런트 �
 <%@ taglib prefix="liferay-frontend" uri="http://liferay.com/tld/frontend" %>
 ```
 
-Liferay Front-end taglib는 FreeMarker 테마 템플릿 및 웹 콘텐츠 템플릿용 매크로를 통해서도 사용할 수 있습니다. 다음 구문을 따르십시오.
+Liferay Frontend taglib는 FreeMarker 테마 템플릿 및 웹 콘텐츠 템플릿용 매크로를 통해서도 사용할 수 있습니다. 다음 구문을 따르십시오.
 
 ```
 <@liferay_frontend["tag-name"] attribute="string value" attribute=10 />

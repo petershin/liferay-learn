@@ -6,7 +6,7 @@ taxonomy-category-names:
 - Liferay Self-Hosted
 - Liferay PaaS
 ---
-# Liferay Front-end Info Bar
+# Liferay Frontend Info Bar
 
 An info bar provides a button that toggles the visibility of additional sidebar information. This is perfect for providing more detailed metadata for a search result, such as the file size, type, URL, etc.
 
@@ -50,6 +50,6 @@ The examples above use some of the available attributes. See the [info bar](http
 
 ## Related Topics
 
-* [Liferay Front-end Add Menu](./liferay-frontend-add-menu.md)
-* [Liferay Front-end Cards](./liferay-frontend-cards.md)
-* [Liferay Front-end Management Bar](./liferay-frontend-management-bar.md)
+* [Liferay Frontend Add Menu](./liferay-frontend-add-menu.md)
+* [Liferay Frontend Cards](./liferay-frontend-cards.md)
+* [Liferay Frontend Management Bar](./liferay-frontend-management-bar.md)

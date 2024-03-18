@@ -161,7 +161,7 @@ It's hard to keep terminology consistent, so when we find an inconsistency in th
 | **Wrong**                     | **Right** |
 | :--- | :--- | 
 | backend                   | back-end        |
-| frontend                  | front-end       |
+| frontend                  | frontend       |
 | Javascript (or JS or js)  | JavaScript      |
 | ServiceBuilder            | Service Builder |
 | RESTBuilder               | REST Builder    |

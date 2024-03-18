@@ -1,12 +1,12 @@
 # マイクロサービスクライアント拡張機能の使用
 
-マイクロサービスクライアントエクステンションは、Liferayとの通信をOAuth 2に依存するスタンドアロンのサーバープロセスです。 マイクロサービスはリソースサーバーであり、Liferayは認可サーバーである。 詳しくは [Using OAuth 2](../../../headless-delivery/using-oauth2.md) をご覧ください。 このデモのサンプルプロジェクトは、リソースサーバー（マイクロサービス）の保護されたルートからペイロードを取り込み、 [カスタム要素](../front-end-client-extensions/understanding-custom-element-and-iframe-client-extensions.md) クライアント拡張に基づくフロントエンドウィジェットに表示します。 スタンドアロン [Spring Bootアプリケーション](https://docs.spring.io/spring-boot/docs/current/reference/html/getting-started.html#getting-started) と連携するために、この例では2つのクライアント拡張タイプが使われている：
+マイクロサービスクライアントエクステンションは、Liferayとの通信をOAuth 2に依存するスタンドアロンのサーバープロセスです。 マイクロサービスはリソースサーバーであり、Liferayは認可サーバーである。 詳しくは [Using OAuth 2](../../../headless-delivery/using-oauth2.md) をご覧ください。 このデモのサンプルプロジェクトは、リソースサーバー（マイクロサービス）の保護されたルートからペイロードを取り込み、 [カスタム要素](../frontend-client-extensions/understanding-custom-element-and-iframe-client-extensions.md) クライアント拡張に基づくフロントエンドウィジェットに表示します。 スタンドアロン [Spring Bootアプリケーション](https://docs.spring.io/spring-boot/docs/current/reference/html/getting-started.html#getting-started) と連携するために、この例では2つのクライアント拡張タイプが使われている：
 
 | デプロイ可能または実行可能なコード                            | 種類                                                                                                                                   | 説明                                                             | ワークスペース・サンプル                 |
 |:-------------------------------------------- |:------------------------------------------------------------------------------------------------------------------------------------ |:-------------------------------------------------------------- |:---------------------------- |
 | Liferay サンプル OAuth アプリケーションユーザーエージェントをデプロイする | Client extension: [`oAuthApplicationUserAgent`](../configuration-client-extensions/oauth-user-agent-yaml-configuration-reference.md) | ログインしたユーザーがカスタムエレメント内のマイクロサービスのペイロードを見ることができるように、認可チャネルを設定します。 | liferay-サンプル-etc-spring-boot |
 | Spring Bootマイクロサービスアプリケーションを実行する             | 保護されたエンドポイント `/dad/joke`                                                                                                             | リソース・サーバーへの保護されたエンドポイント。 JWTトークンを受け取り、ペイロードを返す。                | liferay サンプル-etc-spring-boot |
-| Liferayサンプルカスタム要素2をデプロイする                    | クライアント・エクステンション: [`カスタムエレメント`](../front-end-client-extensions/custom-element-yaml-configuration-reference.md)                        | カスタム要素を定義し、OAuth 2 クライアントコードを通してリソースサーバーにペイロードを要求します。          | ライフレイ・サンプル・カスタム要素-2          |
+| Liferayサンプルカスタム要素2をデプロイする                    | クライアント・エクステンション: [`カスタムエレメント`](../frontend-client-extensions/custom-element-yaml-configuration-reference.md)                        | カスタム要素を定義し、OAuth 2 クライアントコードを通してリソースサーバーにペイロードを要求します。          | ライフレイ・サンプル・カスタム要素-2          |
 
 ```{note}
 便宜上、このチュートリアルでは、サンプル・ワークスペースにあるすぐにデプロイできるカスタム要素を使用します。 しかし、ここではカスタム・エレメント・クライアントの拡張が焦点ではない。 認可サーバーを呼び出し、リソースサーバーからのペイロードを表示できるフロントエンド技術であれば、カスタム要素の代わりに使用することができます。
@@ -83,7 +83,7 @@ liferay-sample-custom-element-2:
     useESM: true
 ```
 
-詳しくは、[カスタム要素とIFrameクライアント拡張機能を理解する](../front-end-client-extensions/understanding-custom-element-and-iframe-client-extensions.md)をご参照ください。
+詳しくは、[カスタム要素とIFrameクライアント拡張機能を理解する](../frontend-client-extensions/understanding-custom-element-and-iframe-client-extensions.md)をご参照ください。
 
 ## OAuth Application User Agent Client Extensionのデプロイ
 
@@ -136,7 +136,7 @@ Spring Bootアプリケーションが起動し、ログにメッセージが表
 
 ## カスタム要素クライアント拡張機能の展開
 
-マイクロサービスが実行され、OAuth2 アプリケーション通信チャネルが DXP でプロビジョニングされ、利用可能になりました。 この例では、マイクロサービスによって生成されたデータを表示するために、 [カスタム要素クライアント拡張](../front-end-client-extensions/understanding-custom-element-and-iframe-client-extensions.md) を使用しています。 それを配備する、
+マイクロサービスが実行され、OAuth2 アプリケーション通信チャネルが DXP でプロビジョニングされ、利用可能になりました。 この例では、マイクロサービスによって生成されたデータを表示するために、 [カスタム要素クライアント拡張](../frontend-client-extensions/understanding-custom-element-and-iframe-client-extensions.md) を使用しています。 それを配備する、
 
 1. `client-extensions/liferay-sample-custom-element-2` フォルダに移動します。
 

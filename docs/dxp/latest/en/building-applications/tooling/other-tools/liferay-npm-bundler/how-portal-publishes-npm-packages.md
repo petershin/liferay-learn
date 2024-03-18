@@ -67,7 +67,7 @@ The OSGi bundle ID (598) may vary.
 
 Since two or more OSGi modules may export multiple copies of the same package and version, Liferay Portal must de-duplicate such collisions, by using a new concept called a *resolved module*.
 
-A resolved module is the reference package exported to Liferay Portal's front-end, when multiple copies of the same package and version exist. It's randomly referenced from one of the several bundles exporting the same copies of the package.
+A resolved module is the reference package exported to Liferay Portal's frontend, when multiple copies of the same package and version exist. It's randomly referenced from one of the several bundles exporting the same copies of the package.
 
 Using the example above, for each group of canonical URLs referring to the same module inside different OSGi bundles, there's another canonical URL for the resolved module. The example structure has the resolved module URLs shown below:
 

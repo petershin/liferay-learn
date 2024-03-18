@@ -1,6 +1,6 @@
 # カスタムテーマの適用
 
-あなたのサイトのルック＆フィールをカスタマイズするために、さまざまな [フロントエンドクライアント拡張](../../../building-applications/client-extensions/front-end-client-extensions.md) を使用することができます。 具体的には、 [テーマCSSタイプ](../../../building-applications/client-extensions/front-end-client-extensions.md#theme-css-client-extensions) クライアントエクステンションは、 [カスタムテーマの構築](../../../site-building/site-appearance/themes/introduction-to-themes.md) の代替として使用できます。
+あなたのサイトのルック＆フィールをカスタマイズするために、さまざまな [フロントエンドクライアント拡張](../../../building-applications/client-extensions/frontend-client-extensions.md) を使用することができます。 具体的には、 [テーマCSSタイプ](../../../building-applications/client-extensions/frontend-client-extensions.md#theme-css-client-extensions) クライアントエクステンションは、 [カスタムテーマの構築](../../../site-building/site-appearance/themes/introduction-to-themes.md) の代替として使用できます。
 
 `liferay-ticket-theme-css`クライアントエクステンションをデプロイします。
 
@@ -32,7 +32,7 @@ assemble:
       into: static/img
 ```
 
-この `liferay-ticket-theme-css` は [テーマ CSS](../../../building-applications/client-extensions/front-end-client-extensions.md#theme-css-client-extensions) タイプのクライアント拡張です。 これは次のように定義されている：
+この `liferay-ticket-theme-css` は [テーマ CSS](../../../building-applications/client-extensions/frontend-client-extensions.md#theme-css-client-extensions) タイプのクライアント拡張です。 これは次のように定義されている：
 
 ```yaml
 liferay-ticket-theme-css:
@@ -42,7 +42,7 @@ liferay-ticket-theme-css:
     type: themeCSS
 ```
 
-各プロパティの説明は [テーマのCSS YAML設定リファレンス](../../../building-applications/client-extensions/front-end-client-extensions/theme-css-yaml-configuration-reference.md) を参照してください。
+各プロパティの説明は [テーマのCSS YAML設定リファレンス](../../../building-applications/client-extensions/frontend-client-extensions/theme-css-yaml-configuration-reference.md) を参照してください。
 
 テーマのカスタマイズは、`/src/css`フォルダ内の2つのファイルに表示されます。
 
@@ -50,11 +50,11 @@ liferay-ticket-theme-css:
 
 `_custom.scss`ファイルはCSSのカスタマイズを提供する。
 
-変数とカスタマイズの詳細については、 [Clay CSS](https://clayui.com/docs/css/index.html) ドキュメントをご覧ください。 また、 [using the theme CSS client extension](../../../building-applications/client-extensions/front-end-client-extensions/tutorials/using-a-theme-css-client-extension.md) 、別のクライアント拡張の例をご覧ください。
+変数とカスタマイズの詳細については、 [Clay CSS](https://clayui.com/docs/css/index.html) ドキュメントをご覧ください。 また、 [using the theme CSS client extension](../../../building-applications/client-extensions/frontend-client-extensions/tutorials/using-a-theme-css-client-extension.md) 、別のクライアント拡張の例をご覧ください。
 
 次へ [カスタム発券アプリケーションのデプロイ](./deploying-a-custom-application.md) .
 
 ## 関連コンセプト
 
 * [テーマ入門](../../../site-building/site-appearance/themes/introduction-to-themes.md) 
-* [フロントエンド・クライアント拡張](../../../building-applications/client-extensions/front-end-client-extensions.md) 
+* [フロントエンド・クライアント拡張](../../../building-applications/client-extensions/frontend-client-extensions.md) 

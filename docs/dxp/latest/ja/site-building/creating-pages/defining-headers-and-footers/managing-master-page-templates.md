@@ -70,13 +70,13 @@
 
 **スタイルブック** テーマから適用されるデフォルトのスタイルブックを変更します。
 
-**テーマCSSクライアント拡張：** [テーマ CSS クライアント拡張](../../../building-applications/client-extensions/front-end-client-extensions.md#theme-css-client-extensions) を追加すると、テーマ全体をデプロイすることなく、テーマのデフォルト CSS を完全に置き換えることができます。
+**テーマCSSクライアント拡張：** [テーマ CSS クライアント拡張](../../../building-applications/client-extensions/frontend-client-extensions.md#theme-css-client-extensions) を追加すると、テーマ全体をデプロイすることなく、テーマのデフォルト CSS を完全に置き換えることができます。
 
-**CSSクライアント拡張：** [CSS クライアント拡張機能](../../../building-applications/client-extensions/front-end-client-extensions.md#css-client-extensions) を追加し、マスターページテンプレートを使用するコンテンツページの CSS スタイリングを上書きします。
+**CSSクライアント拡張：** [CSS クライアント拡張機能](../../../building-applications/client-extensions/frontend-client-extensions.md#css-client-extensions) を追加し、マスターページテンプレートを使用するコンテンツページの CSS スタイリングを上書きします。
 
 **カスタムCSS：** カスタムCSSも適用可能で、テーマの後に読み込まれます。 カスタム CSS は継承されたテーマを使用する場合は無効です。
 
-**JavaScriptクライアント拡張とカスタムJavaScript：** [JavaScriptクライアントエクステンション](../../../building-applications/client-extensions/front-end-client-extensions.md#javascript-client-extensions) を追加することで、このマスターページテンプレートを使用したページが訪問されたときにJavaScriptを実行させることができます。 ページの下部で実行されるカスタムJavaScriptコードを追加することができます。
+**JavaScriptクライアント拡張とカスタムJavaScript：** [JavaScriptクライアントエクステンション](../../../building-applications/client-extensions/frontend-client-extensions.md#javascript-client-extensions) を追加することで、このマスターページテンプレートを使用したページが訪問されたときにJavaScriptを実行させることができます。 ページの下部で実行されるカスタムJavaScriptコードを追加することができます。
 
 ```{note}
 テーマはマスターページテンプレートを通してコンテンツページに適用される。 マスターページテンプレートがコンテンツページに適用されると、コンテンツページのデザインはマスターページテンプレートによって定義されます。

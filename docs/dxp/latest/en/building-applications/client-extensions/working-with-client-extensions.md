@@ -54,10 +54,10 @@ You can group client extensions together in these ways:
 
 * Client extensions of the same type (e.g., multiple batch client extensions)
 * Configuration client extensions with batch client extensions
-* Configuration client extensions with front-end client extensions
+* Configuration client extensions with frontend client extensions
 * Configuration client extensions with microservice client extensions
 
-Building a project with an incompatible grouping of client extensions (e.g., front-end with microservice) fails with an error.
+Building a project with an incompatible grouping of client extensions (e.g., frontend with microservice) fails with an error.
 
 ## Configuring Client Extensions
 
@@ -108,7 +108,7 @@ The `assemble` array has these properties:
 
 * `into`: Specify where in the resulting LUFFA to copy the matching resources.
 
-   Static resources for front-end client extensions must be copied into the `static/` directory. Liferay serves these as static resources in self-hosted instances, or from containers in Liferay SaaS.
+   Static resources for frontend client extensions must be copied into the `static/` directory. Liferay serves these as static resources in self-hosted instances, or from containers in Liferay SaaS.
 
    JSON resources for batch client extensions must be copied into the `batch/` directory.
 
@@ -257,11 +257,11 @@ These two environment variables must be provided to client extension processes w
 
 * [Batch Client Extensions](./batch-client-extensions.md)
 * [Configuration Client Extensions](./configuration-client-extensions.md)
-* [Front-end Client Extensions](./front-end-client-extensions.md)
+* [Frontend Client Extensions](./frontend-client-extensions.md)
 * [Microservice Client Extensions](./microservice-client-extensions.md)
 * [Packaging Client Extensions](./packaging-client-extensions.md)
 
 ## Tutorials
 
-* [Using a JavaScript Client Extension](./front-end-client-extensions/tutorials/using-a-javascript-client-extension.md)
-* [Using a CSS Client Extension](./front-end-client-extensions/tutorials/using-a-css-client-extension.md)
+* [Using a JavaScript Client Extension](./frontend-client-extensions/tutorials/using-a-javascript-client-extension.md)
+* [Using a CSS Client Extension](./frontend-client-extensions/tutorials/using-a-css-client-extension.md)

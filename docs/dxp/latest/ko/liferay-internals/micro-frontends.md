@@ -2,11 +2,11 @@
 
 마이크로 프런트엔드는 마이크로서비스의 개념을 개발의 프런트엔드 측면으로 확장합니다. 마이크로서비스 아키텍처를 사용하여 애플리케이션을 더 작은 부분으로 나누는 모든 기능을 갖춘 강력한 브라우저 애플리케이션을 구축할 수 있습니다. 그러면 별도의 팀이 다른 프레임워크를 사용하더라도 작은 부품을 제공하는 데 집중할 수 있습니다. 완성되면 부품이 완벽하게 결합되어 훌륭한 사용자 경험을 선사합니다.
 
-![Using Liferay to build a fully-featured and powerful browser application applying Micro Front-ends](micro-frontends/images/01.png)
+![Using Liferay to build a fully-featured and powerful browser application applying Micro Frontends](micro-frontends/images/01.png)
 
-마이크로 프런트 엔드를 구현하기 위해 [조각](../site-building/creating-pages/page-fragments-and-widgets/using-fragments.md) 및 [위젯](../site-building/creating-pages/page-fragments-and-widgets/using-widgets.md) 와 같은 즉시 사용 가능한 솔루션과 결합된 [프런트 엔드 클라이언트 확장](../building-applications/client-extensions/front-end-client-extensions.md) 사용합니다. 개발자는 다양한 프레임워크를 사용하여 애플리케이션을 생성하거나 확장한 다음 클라이언트 확장을 사용하여 Liferay에 연결할 수 있습니다.
+마이크로 프런트 엔드를 구현하기 위해 [조각](../site-building/creating-pages/page-fragments-and-widgets/using-fragments.md) 및 [위젯](../site-building/creating-pages/page-fragments-and-widgets/using-widgets.md) 와 같은 즉시 사용 가능한 솔루션과 결합된 [프런트 엔드 클라이언트 확장](../building-applications/client-extensions/frontend-client-extensions.md) 사용합니다. 개발자는 다양한 프레임워크를 사용하여 애플리케이션을 생성하거나 확장한 다음 클라이언트 확장을 사용하여 Liferay에 연결할 수 있습니다.
 
-사용 가능한 프런트 엔드 클라이언트 확장 중 하나는 [기본 사용자 정의 요소](../building-applications/client-extensions/front-end-client-extensions/tutorials/creating-a-basic-custom-element.md) 입니다. 기본 사용자 정의 요소는 Liferay의 프런트 엔드 인프라를 사용하여 Liferay 플랫폼에 외부 원격 애플리케이션을 등록하고 이를 위젯으로 렌더링합니다. 이러한 방식으로 사용자는 애플리케이션을 별도로 개발하고, 클라이언트 확장을 사용하여 기본 사용자 정의 요소를 생성하고, 이를 페이지에 추가할 수 있습니다.
+사용 가능한 프런트 엔드 클라이언트 확장 중 하나는 [기본 사용자 정의 요소](../building-applications/client-extensions/frontend-client-extensions/tutorials/creating-a-basic-custom-element.md) 입니다. 기본 사용자 정의 요소는 Liferay의 프런트 엔드 인프라를 사용하여 Liferay 플랫폼에 외부 원격 애플리케이션을 등록하고 이를 위젯으로 렌더링합니다. 이러한 방식으로 사용자는 애플리케이션을 별도로 개발하고, 클라이언트 확장을 사용하여 기본 사용자 정의 요소를 생성하고, 이를 페이지에 추가할 수 있습니다.
 
 ```{note}
 사용자 정의 요소 클라이언트 확장은 구축, 패키지 또는 호스팅 방법에 관계없이 모든 기술을 사용할 수 있습니다.
@@ -26,7 +26,7 @@ Raylife에는 네 가지 별도의 애플리케이션이 필요합니다. 다양
 
 여러 팀이 동시에 프로젝트를 진행했습니다. 각 팀은 애플리케이션을 담당했습니다. 클라이언트 확장을 사용했기 때문에 각 팀의 코드는 격리되었습니다. 애플리케이션 중 하나는 React를 기본 프레임워크로 사용했지만 다른 애플리케이션은 HTML, CSS 및 JavaScript를 사용하는 사용자 정의 조각을 통해 생성되었습니다.
 
-![Raylife is an agent portal solution built on Liferay using a Micro Front-end concept.](micro-frontends/images/02.png)
+![Raylife is an agent portal solution built on Liferay using a Micro Frontend concept.](micro-frontends/images/02.png)
 
 ### 사례 2: 상거래 애플리케이션
 

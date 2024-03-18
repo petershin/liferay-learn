@@ -96,13 +96,13 @@
 
 페이지에 사용자 정의 코드를 추가할 수 있는 CSS 및 JavaScript 편집기에 액세스할 수도 있습니다.
 
-**테마 CSS 클라이언트 확장:** 테마에 포함된 기본 CSS를 완전히 대체하려면 [테마 CSS 클라이언트 확장](../../../building-applications/client-extensions/front-end-client-extensions.md#theme-css-client-extensions) 을 추가하세요.
+**테마 CSS 클라이언트 확장:** 테마에 포함된 기본 CSS를 완전히 대체하려면 [테마 CSS 클라이언트 확장](../../../building-applications/client-extensions/frontend-client-extensions.md#theme-css-client-extensions) 을 추가하세요.
 
-**CSS 클라이언트 확장:** [CSS 클라이언트 확장](../../../building-applications/client-extensions/front-end-client-extensions.md#css-client-extensions) 을 추가하여 클라이언트 확장으로 페이지의 CSS를 확장합니다. 테마 CSS 뒤와 마스터 확장 뒤에 로드됩니다.
+**CSS 클라이언트 확장:** [CSS 클라이언트 확장](../../../building-applications/client-extensions/frontend-client-extensions.md#css-client-extensions) 을 추가하여 클라이언트 확장으로 페이지의 CSS를 확장합니다. 테마 CSS 뒤와 마스터 확장 뒤에 로드됩니다.
 
 **맞춤 CSS:** 맞춤 CSS를 적용할 수 있으며 테마 다음에 로드됩니다.
 
-**JavaScript 클라이언트 확장 및 사용자 정의 JavaScript:** 이 마스터 페이지 템플릿을 사용하는 페이지를 방문할 때 JavaScript가 실행되도록 [JavaScript 클라이언트 확장](../../../building-applications/client-extensions/front-end-client-extensions.md#javascript-client-extensions) 추가할 수 있습니다. 사용자 정의 JavaScript 코드도 추가할 수 있으며 페이지 하단에서 실행됩니다.
+**JavaScript 클라이언트 확장 및 사용자 정의 JavaScript:** 이 마스터 페이지 템플릿을 사용하는 페이지를 방문할 때 JavaScript가 실행되도록 [JavaScript 클라이언트 확장](../../../building-applications/client-extensions/frontend-client-extensions.md#javascript-client-extensions) 추가할 수 있습니다. 사용자 정의 JavaScript 코드도 추가할 수 있으며 페이지 하단에서 실행됩니다.
 
 ![Use CSS and JavaScript editors to add custom code to the page](./configuring-individual-pages/images/09.png)
 

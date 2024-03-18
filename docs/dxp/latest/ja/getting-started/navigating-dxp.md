@@ -84,7 +84,7 @@ DXP **グローバルメニュー** には、 [アプリケーション](#applic
 
 - [コンテンツ・ダッシュボード](../content-authoring-and-management/content-dashboard.md) 
 - [ワークフロー](../process-automation/workflow/introduction-to-workflow.md) 
-- [リモートアプリ](../building-applications/client-extensions/front-end-client-extensions.md#custom-element-client-extensions) 
+- [リモートアプリ](../building-applications/client-extensions/frontend-client-extensions.md#custom-element-client-extensions) 
 
 ### コマースメニュー
 

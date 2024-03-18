@@ -149,5 +149,5 @@ The forms are gathered together and displayed on one page with the [`App.js`](./
 
 ## Related Topics
 
-[Creating a Basic Custom Element](../../client-extensions/front-end-client-extensions/tutorials/creating-a-basic-custom-element.md)
+[Creating a Basic Custom Element](../../client-extensions/frontend-client-extensions/tutorials/creating-a-basic-custom-element.md)
 [Headless Framework Integration](../../objects/understanding-object-integrations/using-custom-object-apis.md)

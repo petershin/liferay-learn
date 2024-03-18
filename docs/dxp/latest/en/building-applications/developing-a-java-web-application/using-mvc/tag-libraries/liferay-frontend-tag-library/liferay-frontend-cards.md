@@ -6,7 +6,7 @@ taxonomy-category-names:
 - Liferay Self-Hosted
 - Liferay PaaS
 ---
-# Liferay Front-end Cards
+# Liferay Frontend Cards
 
 If you have data you want to compare that's heavy on image usage, cards are the component for the job. Cards visually represent data in a minimal and compact format. Use them for images, document libraries, user profiles, and more. There are four main types of Cards:
 
@@ -156,6 +156,6 @@ The User Vertical card displays user profile selections in the icon view of the 
 
 ## Related Topics
 
-* [Liferay Front-end Add Menu](./liferay-frontend-add-menu.md)
-* [Liferay Front-end Info Bar](./liferay-frontend-info-bar.md)
-* [Liferay Front-end Management Bar](./liferay-frontend-management-bar.md)
+* [Liferay Frontend Add Menu](./liferay-frontend-add-menu.md)
+* [Liferay Frontend Info Bar](./liferay-frontend-info-bar.md)
+* [Liferay Frontend Management Bar](./liferay-frontend-management-bar.md)

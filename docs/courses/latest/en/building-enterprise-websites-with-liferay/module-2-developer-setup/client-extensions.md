@@ -15,7 +15,7 @@ There are four classifications of Liferay client extensions:
 
 1. **Batch** client extensions provide data entities to your Liferay instance, such as object or workflow definitions.
 
-1. **Front-end** client extensions provide (typically static) resources to display on specific pages.
+1. **Frontend** client extensions provide (typically static) resources to display on specific pages.
 
 1. **Microservice** client extensions provide API endpoints that can be triggered from within Liferay to run functions outside of Liferay.
 
@@ -29,7 +29,7 @@ Client extensions can be grouped in a single project and deployed together as a 
 
 - Client extensions of the same type
 - Configuration client extensions with batch client extensions
-- Configuration client extensions with front-end client extensions
+- Configuration client extensions with frontend client extensions
 - Configuration client extensions with microservice client extensions
 
 <!--IMAGE: diagram showing valid groupings for client extensions may be helpful here-->

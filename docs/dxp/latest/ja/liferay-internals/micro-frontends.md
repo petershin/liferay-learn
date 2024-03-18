@@ -2,11 +2,11 @@
 
 マイクロフロントエンドは、マイクロサービスの概念を開発のフロントエンド側に拡張する。 マイクロサービス・アーキテクチャを使用してアプリケーションを小さなパーツに分解し、完全な機能を備えた強力なブラウザ・アプリケーションを構築することができます。 その後、別々のチームが、異なるフレームワークを使ってでも、より小さなパーツを提供することに集中することができる。 完成すると、パーツはシームレスにつなぎ合わされ、素晴らしいユーザー体験を生み出す。
 
-![Using Liferay to build a fully-featured and powerful browser application applying Micro Front-ends](micro-frontends/images/01.png)
+![Using Liferay to build a fully-featured and powerful browser application applying Micro Frontends](micro-frontends/images/01.png)
 
-マイクロフロントエンドを実装するために、 [フラグメント](../site-building/creating-pages/page-fragments-and-widgets/using-fragments.md) や [ウィジェット](../site-building/creating-pages/page-fragments-and-widgets/using-widgets.md) のような、すぐに使えるソリューションと相まって、 [フロントエンドクライアント拡張](../building-applications/client-extensions/front-end-client-extensions.md) を使用します。 開発者はさまざまなフレームワークを使用してアプリケーションを作成または拡張し、クライアント拡張機能を使用してそれらをLiferayに接続することができます。
+マイクロフロントエンドを実装するために、 [フラグメント](../site-building/creating-pages/page-fragments-and-widgets/using-fragments.md) や [ウィジェット](../site-building/creating-pages/page-fragments-and-widgets/using-widgets.md) のような、すぐに使えるソリューションと相まって、 [フロントエンドクライアント拡張](../building-applications/client-extensions/frontend-client-extensions.md) を使用します。 開発者はさまざまなフレームワークを使用してアプリケーションを作成または拡張し、クライアント拡張機能を使用してそれらをLiferayに接続することができます。
 
-利用可能なフロントエンドクライアント拡張機能のひとつに、 [基本カスタムエレメント](../building-applications/client-extensions/front-end-client-extensions/tutorials/creating-a-basic-custom-element.md) があります。 基本的なカスタム要素はLiferayのフロントエンドインフラストラクチャを使用して、外部のリモートアプリケーションをLiferayプラットフォームに登録し、ウィジェットとしてレンダリングします。 こうすることで、ユーザーはアプリケーションを個別に開発し、クライアント・エクステンションを使って基本的なカスタム要素を作成し、ページに追加することができる。
+利用可能なフロントエンドクライアント拡張機能のひとつに、 [基本カスタムエレメント](../building-applications/client-extensions/frontend-client-extensions/tutorials/creating-a-basic-custom-element.md) があります。 基本的なカスタム要素はLiferayのフロントエンドインフラストラクチャを使用して、外部のリモートアプリケーションをLiferayプラットフォームに登録し、ウィジェットとしてレンダリングします。 こうすることで、ユーザーはアプリケーションを個別に開発し、クライアント・エクステンションを使って基本的なカスタム要素を作成し、ページに追加することができる。
 
 ```{note}
 カスタムエレメントクライアントのエクステンションは、そのビルド、パッケージ、ホスティングの方法に関係なく、どのようなテクノロジーでも使用することができます。
@@ -25,7 +25,7 @@ Raylifeは4つの独立したアプリケーションを必要とする： [Reac
 
 異なるチームが同時にプロジェクトに取り組んだ。 各チームがアプリケーションを担当した。 クライアント・エクステンションを使用したため、各チームのコードは分離されていた。 あるアプリケーションはReactをメインフレームワークとして使用したが、他のアプリケーションはHTML、CSS、JavaScriptを使用したカスタムフラグメントで作成された。
 
-![Raylife is an agent portal solution built on Liferay using a Micro Front-end concept.](micro-frontends/images/02.png)
+![Raylife is an agent portal solution built on Liferay using a Micro Frontend concept.](micro-frontends/images/02.png)
 
 ### ケース2：コマース・アプリケーション
 

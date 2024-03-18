@@ -39,15 +39,15 @@ Advantages of this loosely coupled approach include:
 
 **Decoupled Customizations**
 
-![Front-end Client Extensions can be developed in any popular front-end framework like React, Angular, etc., while Back-end client extensions can be developed using popular back-end frameworks like Spring Boot.](./client-extensions/images/02.png)
+![Frontend Client Extensions can be developed in any popular frontend framework like React, Angular, etc., while Back-end client extensions can be developed using popular back-end frameworks like Spring Boot.](./client-extensions/images/02.png)
 
-Decoupling customizations from the DXP core also results in less issues with the overall delivery. This also means that there is no longer the requirement to find and train Liferay-specific developers, instead developers can be hired who have expertise in popular front-end JavaScript frameworks like REACT, Angular, Vue, or back-end frameworks like Spring Boot etc, which can communicate back to Liferay DXP via Headless-API.
+Decoupling customizations from the DXP core also results in less issues with the overall delivery. This also means that there is no longer the requirement to find and train Liferay-specific developers, instead developers can be hired who have expertise in popular frontend JavaScript frameworks like REACT, Angular, Vue, or back-end frameworks like Spring Boot etc, which can communicate back to Liferay DXP via Headless-API.
 
 Partners will play a critical role in helping customers:
 
 * Create SDLC for extensions
 * Low code development
-* Code for backend services or front-end development
+* Code for backend services or frontend development
 * Performance of these custom solutions
 * Maintaining the customization, where required
 

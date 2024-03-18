@@ -25,7 +25,7 @@ The Forms application contains many highly configurable [field types out-of-the-
 
 - **Project compatibility:** The example project runs on Liferay 7.4. If you're running Liferay 7.3, the source code is compatible but the [Workspace project](../../../building-applications/tooling/liferay-workspace/what-is-liferay-workspace.md) must be reconfigured for Liferay 7.3. The steps to do this are included in the instructions below.
 
-    If you're running Liferay 7.2, this source code does not run due to a difference in supported front-end frameworks. Please see [Developing a Custom Form Field for Liferay 7.2](./developing-a-custom-form-field-for-liferay-7-2.md) to learn how to adapt the C2P9 Slider code sample for 7.2.
+    If you're running Liferay 7.2, this source code does not run due to a difference in supported frontend frameworks. Please see [Developing a Custom Form Field for Liferay 7.2](./developing-a-custom-form-field-for-liferay-7-2.md) to learn how to adapt the C2P9 Slider code sample for 7.2.
 ```
 
 ## Examine the Custom Form Field in Liferay 
@@ -165,7 +165,7 @@ The `Main` component is exported at the end of the file; it includes the `Slider
 Right now the Max and Min settings for the Slider field are hard coded, but it's better if they're configurable. To add custom settings to a form field,
 
 - Adjust the back-end by adding a `DDMFormFieldTypeSettings` class and adding a method to the `DDMFormFieldType`.
-- Adapt the front-end for rendering the new settings by adding a `DDMFormFieldTemplateContextContributor` and updating the way the settings are defined in `Slider.es.js`.
+- Adapt the frontend for rendering the new settings by adding a `DDMFormFieldTemplateContextContributor` and updating the way the settings are defined in `Slider.es.js`.
 
 ### Supporting Custom Settings in the Back-end
 
@@ -262,9 +262,9 @@ The form field's settings are defined in the `DDMTypeSettings` class, which also
    }
    ```
 
-### Supporting Custom Settings in the Front-end
+### Supporting Custom Settings in the Frontend
 
-The front-end requires updates to the `Slider.es.js` to support user-entered min and max values and a `DDMTemplateContextContributor` so that the front-end can receive the setting values from the back-end.
+The frontend requires updates to the `Slider.es.js` to support user-entered min and max values and a `DDMTemplateContextContributor` so that the frontend can receive the setting values from the back-end.
 
 1. Create a `C2P9DDMFormFieldTemplateContextContributor` class in the `com.acme.c2p9.internal.dynamic.data.mapping.form.field.type` package:
 

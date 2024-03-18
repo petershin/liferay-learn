@@ -37,7 +37,7 @@ Liferay DXP는 분기별로 업데이트된다는 점도 언급하는 것이 중
 
 **분리된 사용자 정의**
 
-![Front-end Client Extensions can be developed in any popular front-end framework like React, Angular, etc., while Back-end client extensions can be developed using popular back-end frameworks like Spring Boot.](./client-extensions/images/02.png)
+![Frontend Client Extensions can be developed in any popular frontend framework like React, Angular, etc., while Back-end client extensions can be developed using popular back-end frameworks like Spring Boot.](./client-extensions/images/02.png)
 
 DXP 코어에서 사용자 정의를 분리하면 전체 제공 시 문제가 줄어듭니다. 이는 또한 더 이상 Liferay 관련 개발자를 찾고 교육할 필요가 없으며 대신 REACT, Angular, Vue와 같은 인기 있는 프런트 엔드 JavaScript 프레임워크 또는 Spring Boot 등과 같은 백엔드 프레임워크에 대한 전문 지식을 갖춘 개발자를 고용할 수 있음을 의미합니다. , Headless-API를 통해 Liferay DXP와 다시 통신할 수 있습니다.
 

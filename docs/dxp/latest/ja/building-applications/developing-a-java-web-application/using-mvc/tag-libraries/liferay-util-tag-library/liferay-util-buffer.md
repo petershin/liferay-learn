@@ -29,4 +29,4 @@ bufferタグは自己終了タグではありません。 このタグの開始�
 
 * [JSP Overrides Using OSGi Fragments](https://help.liferay.com/hc/ja/articles/360029122451-JSP-Overrides-Using-OSGi-Fragments)
 * [Using the Liferay Util Param Tag](./liferay-util-param.md)
-* [Using the Liferay Front-End Taglibs](../liferay-frontend-tag-library.md)
+* [Using the Liferay Frontend Taglibs](../liferay-frontend-tag-library.md)

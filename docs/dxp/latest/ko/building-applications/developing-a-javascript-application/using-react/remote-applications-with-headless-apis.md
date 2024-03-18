@@ -140,5 +140,5 @@
 
 ## 관련 주제
 
-[기본 사용자 정의 요소 생성](../../client-extensions/front-end-client-extensions/tutorials/creating-a-basic-custom-element.md)
+[기본 사용자 정의 요소 생성](../../client-extensions/frontend-client-extensions/tutorials/creating-a-basic-custom-element.md)
 [헤드리스 프레임워크 통합](../../objects/understanding-object-integrations/using-custom-object-apis.md)

@@ -1,6 +1,6 @@
 # 사용자 정의 애플리케이션 배포
 
-[사용자 정의 요소 클라이언트 확장](../../../building-applications/client-extensions/front-end-client-extensions.md#custom-element-client-extensions) 을 사용하여 JavaScript를 렌더링할 수 있습니다. Liferay 사이트 페이지의 위젯으로 응용 프로그램. 이 애플리케이션은 Liferay에서 제공되며 [헤드리스 API](../../../headless-delivery/using-liferay-as-a-headless-platform.md)를 통해 Liferay와 상호 작용합니다.
+[사용자 정의 요소 클라이언트 확장](../../../building-applications/client-extensions/frontend-client-extensions.md#custom-element-client-extensions) 을 사용하여 JavaScript를 렌더링할 수 있습니다. Liferay 사이트 페이지의 위젯으로 응용 프로그램. 이 애플리케이션은 Liferay에서 제공되며 [헤드리스 API](../../../headless-delivery/using-liferay-as-a-headless-platform.md)를 통해 Liferay와 상호 작용합니다.
 
 `liferay-ticket-custom-element` 클라이언트 확장을 배포합니다.
 
@@ -40,7 +40,7 @@ assemble:
 
 JavaScript 애플리케이션의 `.js` 및 `.css` 빌드 파일은 `build/assets` 폴더에서 복사되어 배포 가능한 클라이언트 확장 `.zip` 파일에 배치됩니다.
 
-이 `liferay-ticket-custom-element`는 [맞춤 요소](../../../building-applications/client-extensions/front-end-client-extensions.md#custom-element-client- 확장) 유형 클라이언트 확장. `client-extension.yaml` 파일에 다음과 같이 정의되어 있습니다.
+이 `liferay-ticket-custom-element`는 [맞춤 요소](../../../building-applications/client-extensions/frontend-client-extensions.md#custom-element-client- 확장) 유형 클라이언트 확장. `client-extension.yaml` 파일에 다음과 같이 정의되어 있습니다.
 
 ```yaml
 liferay-ticket-custom-element:
@@ -57,7 +57,7 @@ liferay-ticket-custom-element:
    useESM: true
 ```
 
-설명은 [사용자 정의 요소 YAML 구성 참조](../../../building-applications/client-extensions/front-end-client-extensions/custom-element-yaml-configuration-reference.md)를 참조하세요. 각 속성.
+설명은 [사용자 정의 요소 YAML 구성 참조](../../../building-applications/client-extensions/frontend-client-extensions/custom-element-yaml-configuration-reference.md)를 참조하세요. 각 속성.
 
 애플리케이션의 관련 JavaScript 파일은 `/src` 폴더에 포함되어 있습니다. JavaScript 코드에 대한 전체 설명은 이 튜토리얼의 범위를 벗어나지만 몇 가지 참고할 사항이 있습니다.
 
@@ -70,5 +70,5 @@ liferay-ticket-custom-element:
 
 ## 관련 개념
 
-* [기본 커스텀 요소 생성](../../../building-applications/client-extensions/front-end-client-extensions/tutorials/creating-a-basic-custom-element.md)
-* [사용자 정의 요소 및 Iframe 클라이언트 확장 이해](../../../building-applications/client-extensions/front-end-client-extensions/understanding-custom-element-and-iframe-client-extensions.md)
+* [기본 커스텀 요소 생성](../../../building-applications/client-extensions/frontend-client-extensions/tutorials/creating-a-basic-custom-element.md)
+* [사용자 정의 요소 및 Iframe 클라이언트 확장 이해](../../../building-applications/client-extensions/frontend-client-extensions/understanding-custom-element-and-iframe-client-extensions.md)

@@ -105,13 +105,13 @@ Content pages also include Master and Style Book settings in the Edit sidebar me
 
 You can also access a CSS and JavaScript editors where you can add custom code to the page.
 
-**Theme CSS Client Extension:** Add [theme CSS client extensions](../../../building-applications/client-extensions/front-end-client-extensions.md#theme-css-client-extensions) to fully replace the default CSS contained in the theme.
+**Theme CSS Client Extension:** Add [theme CSS client extensions](../../../building-applications/client-extensions/frontend-client-extensions.md#theme-css-client-extensions) to fully replace the default CSS contained in the theme.
 
-**CSS Client Extensions:** Add [CSS client extensions](../../../building-applications/client-extensions/front-end-client-extensions.md#css-client-extensions) to extend the page's CSS with client extensions. They are loaded after the theme CSS and after master extensions.
+**CSS Client Extensions:** Add [CSS client extensions](../../../building-applications/client-extensions/frontend-client-extensions.md#css-client-extensions) to extend the page's CSS with client extensions. They are loaded after the theme CSS and after master extensions.
 
 **Custom CSS:** Custom CSS can be applied and is loaded after the theme.
 
-**JavaScript Client Extension and Custom JavaScript:** [JavaScript client extensions](../../../building-applications/client-extensions/front-end-client-extensions.md#javascript-client-extensions) can be added to have JavaScript run when the page using this master page template is visited. Custom JavaScript code can also be added and is executed at the bottom of the page.
+**JavaScript Client Extension and Custom JavaScript:** [JavaScript client extensions](../../../building-applications/client-extensions/frontend-client-extensions.md#javascript-client-extensions) can be added to have JavaScript run when the page using this master page template is visited. Custom JavaScript code can also be added and is executed at the bottom of the page.
 
 ![Use CSS and JavaScript editors to add custom code to the page](./configuring-individual-pages/images/09.png)
 

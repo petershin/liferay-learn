@@ -28,7 +28,7 @@ When finished, you'll have learned how to
 * Use Liferay Objects to define and manage custom data structures that leverage Liferay's core frameworks, including headless APIs, permissions, and more.
 * Use Liferay's page builder features to design experiences for creating and displaying object entries.
 * Use microservice client extensions to provide back-end functionality to your solutions.
-<!--TASK: * Use front-end client extensions to build dynamic user experiences that integrate with object APIs. -->
+<!--TASK: * Use frontend client extensions to build dynamic user experiences that integrate with object APIs. -->
 <!--TASK: * Promote custom applications from UAT/DEV to PRD environments. -->
 
 Start by [Modeling Data Structures](./application-development/modeling-data-structures.md)!

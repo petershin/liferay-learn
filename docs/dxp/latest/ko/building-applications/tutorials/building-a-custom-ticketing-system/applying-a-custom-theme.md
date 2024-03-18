@@ -1,6 +1,6 @@
 # 사용자 정의 테마 적용
 
-다양한 [프론트 엔드 클라이언트 확장](../../../building-applications/client-extensions/front-end-client-extensions.md)을 사용하여 사이트의 모양과 느낌을 사용자 지정할 수 있습니다. 특히, [테마 CSS 유형](../../../building-applications/client-extensions/front-end-client-extensions.md#theme-css-client-extensions) 클라이언트 확장을 [사용자 정의 테마 구축](../../../site-building/site-appearance/themes/introduction-to-themes.md)의 대안.
+다양한 [프론트 엔드 클라이언트 확장](../../../building-applications/client-extensions/frontend-client-extensions.md)을 사용하여 사이트의 모양과 느낌을 사용자 지정할 수 있습니다. 특히, [테마 CSS 유형](../../../building-applications/client-extensions/frontend-client-extensions.md#theme-css-client-extensions) 클라이언트 확장을 [사용자 정의 테마 구축](../../../site-building/site-appearance/themes/introduction-to-themes.md)의 대안.
 
 `liferay-ticket-theme-css` 클라이언트 확장을 배포합니다.
 
@@ -32,7 +32,7 @@ assemble:
       into: static/img
 ```
 
-이 `liferay-ticket-theme-css`는 [테마 CSS](../../../building-applications/client-extensions/front-end-client-extensions.md#theme-css-client- 확장) 클라이언트 확장을 입력합니다. 이는 다음과 같이 정의됩니다:
+이 `liferay-ticket-theme-css`는 [테마 CSS](../../../building-applications/client-extensions/frontend-client-extensions.md#theme-css-client- 확장) 클라이언트 확장을 입력합니다. 이는 다음과 같이 정의됩니다:
 
 ```yaml
 liferay-ticket-theme-css:
@@ -42,7 +42,7 @@ liferay-ticket-theme-css:
     type: themeCSS
 ```
 
-설명은 [테마 CSS YAML 구성 참조](../../../building-applications/client-extensions/front-end-client-extensions/theme-css-yaml-configuration-reference.md)를 참조하세요. 각 속성.
+설명은 [테마 CSS YAML 구성 참조](../../../building-applications/client-extensions/frontend-client-extensions/theme-css-yaml-configuration-reference.md)를 참조하세요. 각 속성.
 
 테마의 사용자 정의 내용은 `/src/css` 폴더에 있는 두 파일에 나타납니다.
 
@@ -50,11 +50,11 @@ liferay-ticket-theme-css:
 
 `_custom.scss` 파일은 CSS 사용자 정의를 제공합니다.
 
-변수 및 맞춤설정에 대한 자세한 내용은 [Clay CSS](https://clayui.com/docs/css/index.html) 문서를 참조하세요. 그리고 [테마 CSS 클라이언트 확장 사용](../../../building-applications/client-extensions/front-end-client-extensions/tutorials/using-a-theme-css-client-extension. md) 다른 클라이언트 확장 예를 확인하세요.
+변수 및 맞춤설정에 대한 자세한 내용은 [Clay CSS](https://clayui.com/docs/css/index.html) 문서를 참조하세요. 그리고 [테마 CSS 클라이언트 확장 사용](../../../building-applications/client-extensions/frontend-client-extensions/tutorials/using-a-theme-css-client-extension. md) 다른 클라이언트 확장 예를 확인하세요.
 
 다음: [사용자 정의 티켓팅 애플리케이션 배포](./deploying-a-custom-application.md).
 
 ## 관련 개념
 
 * [테마 소개](../../../site-building/site-appearance/themes/introduction-to-themes.md)
-* [프런트엔드 클라이언트 확장](../../../building-applications/client-extensions/front-end-client-extensions.md)
+* [프런트엔드 클라이언트 확장](../../../building-applications/client-extensions/frontend-client-extensions.md)

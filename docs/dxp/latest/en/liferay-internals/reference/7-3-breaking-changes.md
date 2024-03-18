@@ -580,7 +580,7 @@ As of 7.3, CKEditor is the default and only supported WYSIWYG editor.
 
 ### Who is affected
 
-This affects anyone who uses the Liferay Front-end Editor Simple Web module.
+This affects anyone who uses the Liferay Frontend Editor Simple Web module.
 
 ### How should I update my code?
 

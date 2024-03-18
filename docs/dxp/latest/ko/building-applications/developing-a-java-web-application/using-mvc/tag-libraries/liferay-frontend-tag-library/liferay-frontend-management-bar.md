@@ -5,7 +5,7 @@
 ![관리 표시줄을 통해 사용자는 앱이 콘텐츠를 표시하는 방식을 사용자 지정할 수 있습니다.](./liferay-frontend-management-bar/images/01.png)
 
 ```{note}
-Liferay Front-end Management Bar는 @product-ver@부터 더 이상 사용되지 않습니다. 대신 [Clay 관리 도구 모음](../clay-tag-library/clay-management-toolbar.md)을 사용하는 것이 좋습니다.
+Liferay Frontend Management Bar는 @product-ver@부터 더 이상 사용되지 않습니다. 대신 [Clay 관리 도구 모음](../clay-tag-library/clay-management-toolbar.md)을 사용하는 것이 좋습니다.
 ```
 
 관리 표시줄에는 몇 가지 주요 섹션이 있습니다. 각 섹션은 서로 다른 taglibs를 사용하여 그룹화되고 구성됩니다.

@@ -27,7 +27,7 @@ Due to recent growth, Delectable Bonsai needs two custom solutions to streamline
 * Liferay 개체를 사용하여 헤드리스 API, 권한 등을 포함하여 Liferay의 핵심 프레임워크를 활용하는 사용자 정의 데이터 구조를 정의하고 관리하세요.
 * Liferay의 페이지 빌더 기능을 사용하여 객체 항목 생성 및 표시 경험을 디자인하세요.
 * 마이크로서비스 클라이언트 확장을 사용하여 솔루션에 백엔드 기능을 제공하세요.
-<!--TASK: * Use front-end client extensions to build dynamic user experiences that integrate with object APIs. -->
+<!--TASK: * Use frontend client extensions to build dynamic user experiences that integrate with object APIs. -->
 <!--TASK: * Promote custom applications from UAT/DEV to PRD environments. -->
 
 [데이터 구조 모델링](./application-development/modeling-data-structures.md)부터 시작하세요!

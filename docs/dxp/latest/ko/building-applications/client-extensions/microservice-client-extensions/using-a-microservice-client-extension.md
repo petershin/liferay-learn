@@ -1,12 +1,12 @@
 # 마이크로서비스 클라이언트 확장 사용
 
-마이크로서비스 클라이언트 확장은 Liferay와의 통신을 위해 OAuth 2에 의존하는 독립 실행형 서버 프로세스입니다. 마이크로 서비스는 리소스 서버이고 Liferay는 인증 서버입니다. 자세한 내용은 [OAuth 사용 2](../../../headless-delivery/using-oauth2.md) 을 참조하십시오. 이 데모의 샘플 프로젝트는 리소스 서버(마이크로 서비스)의 보호된 경로에서 페이로드를 수집하고 [사용자 지정 요소](../front-end-client-extensions/understanding-custom-element-and-iframe-client-extensions.md) 클라이언트 확장을 기반으로 프런트 엔드 위젯에 표시합니다. 독립 실행형 [Spring Boot 애플리케이션](https://docs.spring.io/spring-boot/docs/current/reference/html/getting-started.html#getting-started) 과 조정하기 위해 이 예제에서는 두 가지 클라이언트 확장 유형이 사용됩니다.
+마이크로서비스 클라이언트 확장은 Liferay와의 통신을 위해 OAuth 2에 의존하는 독립 실행형 서버 프로세스입니다. 마이크로 서비스는 리소스 서버이고 Liferay는 인증 서버입니다. 자세한 내용은 [OAuth 사용 2](../../../headless-delivery/using-oauth2.md) 을 참조하십시오. 이 데모의 샘플 프로젝트는 리소스 서버(마이크로 서비스)의 보호된 경로에서 페이로드를 수집하고 [사용자 지정 요소](../frontend-client-extensions/understanding-custom-element-and-iframe-client-extensions.md) 클라이언트 확장을 기반으로 프런트 엔드 위젯에 표시합니다. 독립 실행형 [Spring Boot 애플리케이션](https://docs.spring.io/spring-boot/docs/current/reference/html/getting-started.html#getting-started) 과 조정하기 위해 이 예제에서는 두 가지 클라이언트 확장 유형이 사용됩니다.
 
 | 배포 가능하거나 실행 가능한 코드                  | 유형                                                                                                                           | 묘사                                                         | 작업 공간 샘플                        |
 |:----------------------------------- |:---------------------------------------------------------------------------------------------------------------------------- |:---------------------------------------------------------- |:------------------------------- |
 | Liferay 샘플 OAuth 애플리케이션 사용자 에이전트 배포 | 클라이언트 확장: [`oAuthApplicationUserAgent`](../configuration-client-extensions/oauth-user-agent-yaml-configuration-reference.md) | 로그인한 사용자가 사용자 정의 요소에서 마이크로서비스의 페이로드를 볼 수 있도록 인증 채널을 구성합니다. | liferay-sample-etc-spring-boot  |
 | Spring Boot 마이크로서비스 애플리케이션 실행       | 보호된 엔드포인트: `/dad/joke`                                                                                                       | 리소스 서버에 대한 보호된 엔드포인트. JWT 토큰을 사용하고 페이로드를 반환합니다.            | liferay-sample-etc-spring-boot  |
-| Liferay 샘플 사용자 정의 요소 2 배포           | 클라이언트 확장: [`customElement`](../front-end-client-extensions/custom-element-yaml-configuration-reference.md)                   | 사용자 정의 요소를 정의하고 OAuth 2 클라이언트 코드를 통해 리소스 서버에서 페이로드를 요청합니다. | liferay-sample-custom-element-2 |
+| Liferay 샘플 사용자 정의 요소 2 배포           | 클라이언트 확장: [`customElement`](../frontend-client-extensions/custom-element-yaml-configuration-reference.md)                   | 사용자 정의 요소를 정의하고 OAuth 2 클라이언트 코드를 통해 리소스 서버에서 페이로드를 요청합니다. | liferay-sample-custom-element-2 |
 
 ```{note}
 편의를 위해 이 자습서에서는 샘플 작업 영역에서 배포할 준비가 된 사용자 지정 요소를 사용합니다. 그러나 사용자 정의 요소 클라이언트 확장은 여기서 초점이 아닙니다. 권한 부여 서버를 호출하고 리소스 서버의 페이로드를 표시할 수 있는 모든 프런트 엔드 기술을 사용자 지정 요소 대신 사용할 수 있습니다.
@@ -83,7 +83,7 @@ liferay-sample-custom-element-2:
     useESM: true
 ```
 
-자세한 내용은 [맞춤 요소 및 IFrame 클라이언트 확장 이해](../front-end-client-extensions/understanding-custom-element-and-iframe-client-extensions.md) 을 참조하세요.
+자세한 내용은 [맞춤 요소 및 IFrame 클라이언트 확장 이해](../frontend-client-extensions/understanding-custom-element-and-iframe-client-extensions.md) 을 참조하세요.
 
 ## OAuth 애플리케이션 사용자 에이전트 클라이언트 확장 배포
 
@@ -136,7 +136,7 @@ Spring Boot 애플리케이션이 시작되고 로그에 메시지가 출력됩�
 
 ## 사용자 지정 요소 클라이언트 확장 배포
 
-마이크로서비스가 실행 중이고 OAuth2 애플리케이션 통신 채널이 이제 프로비저닝되어 DXP에서 사용할 수 있습니다. 이 예제에서는 [Custom Element 클라이언트 확장](../front-end-client-extensions/understanding-custom-element-and-iframe-client-extensions.md) 을 사용하여 마이크로서비스에서 생성된 데이터를 표시합니다. 배포하려면
+마이크로서비스가 실행 중이고 OAuth2 애플리케이션 통신 채널이 이제 프로비저닝되어 DXP에서 사용할 수 있습니다. 이 예제에서는 [Custom Element 클라이언트 확장](../frontend-client-extensions/understanding-custom-element-and-iframe-client-extensions.md) 을 사용하여 마이크로서비스에서 생성된 데이터를 표시합니다. 배포하려면
 
 1. `client-extensions/liferay-sample-custom-element-2` 폴더로 이동합니다.
 

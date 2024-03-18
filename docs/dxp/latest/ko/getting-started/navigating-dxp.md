@@ -84,7 +84,7 @@ DXP **글로벌 메뉴** 에는 [애플리케이션](#applications-menu) , [상�
 
 * [콘텐츠 대시보드](../content-authoring-and-management/content-dashboard.md)
 * [워크플로](../process-automation/workflow/introduction-to-workflow.md)
-* [원격 앱](../building-applications/client-extensions/front-end-client-extensions.md#custom-element-client-extensions)
+* [원격 앱](../building-applications/client-extensions/frontend-client-extensions.md#custom-element-client-extensions)
 
 ### 커머스 메뉴
 

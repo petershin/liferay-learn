@@ -15,21 +15,21 @@ taxonomy-category-names:
 ---
 # Liferay Frontend Tag Library
 
-The Liferay Front-end tag library provides a set of tags for creating common front-end UI components in your app. 
+The Liferay Frontend tag library provides a set of tags for creating common frontend UI components in your app. 
 
-To use the Front-end taglib in you apps, add the following declaration to your JSP:
+To use the Frontend taglib in you apps, add the following declaration to your JSP:
 
 ```jsp
 <%@ taglib prefix="liferay-frontend" uri="http://liferay.com/tld/frontend" %>
 ```
 
-The Liferay Front-end taglib is also available via a macro for your FreeMarker theme templates and web content templates. Follow this syntax:
+The Liferay Frontend taglib is also available via a macro for your FreeMarker theme templates and web content templates. Follow this syntax:
 
 ```
 <@liferay_frontend["tag-name"] attribute="string value" attribute=10 />
 ```
 
-The following Front-end UI components are covered in this section:
+The following Frontend UI components are covered in this section:
 
 * [Add Menu](./liferay-frontend-tag-library/liferay-frontend-add-menu.md)
 * [Cards](./liferay-frontend-tag-library/liferay-frontend-cards.md)

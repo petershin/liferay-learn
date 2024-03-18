@@ -27,4 +27,4 @@ Now you know how to use the `<liferay-util:include>` tag to include other JSPs i
 
 * [Using the Liferay Util Param Tag](./liferay-util-param.md)
 * [Using the Liferay Util Dynamic Include Tag](./liferay-util-dynamic-include.md)
-* [Using the Liferay Front-End Taglibs](../clay-tag-library.md)
+* [Using the Liferay Frontend Taglibs](../clay-tag-library.md)

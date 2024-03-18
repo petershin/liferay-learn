@@ -48,7 +48,7 @@ LUFFA의 루트에는 하나 이상의 `*.client-extension-config.json`( [OSGi �
 각 LUFFA에는 하나 이상의 Dockerfile이 필요합니다.
 ```
 
-빌드 프로세스는 [배치](./batch-client-extensions.md) , [구성](./configuration-client-extensions.md) 및 [프런트 엔드](./front-end-client-extensions.md) 클라이언트 확장에 대한 'Dockerfile'을 자동으로 생성하고 패키징합니다.
+빌드 프로세스는 [배치](./batch-client-extensions.md) , [구성](./configuration-client-extensions.md) 및 [프런트 엔드](./frontend-client-extensions.md) 클라이언트 확장에 대한 'Dockerfile'을 자동으로 생성하고 패키징합니다.
 
 [마이크로서비스 클라이언트 확장](./microservice-client-extensions.md) 을 위해 프로젝트에 [`Dockerfile`](https://docs.docker.com/engine/reference/builder/) 제공해야 합니다. 프로젝트의 루트에 추가하면 프로젝트를 빌드할 때 LUFFA에 복사됩니다. `Dockerfile`이 프로젝트에서 마이크로서비스 클라이언트 확장을 실행할 수 있는지 확인하세요. 예를 들어 `Dockerfile`은 마이크로서비스 코드를 실행하는 데 필요한 특정 도구를 설치해야 할 수 있습니다.
 
@@ -84,7 +84,7 @@ COPY static/ /public_html/
 각 LUFFA에는 `LCP.json` 파일이 필요합니다.
 ```
 
-빌드 프로세스는 [배치](./batch-client-extensions.md) , [구성](./configuration-client-extensions.md) 및 [프런트엔드](./front-end-client-extensions.md) 에 대한 `LCP.json` 파일을 자동으로 생성하고 패키징합니다.
+빌드 프로세스는 [배치](./batch-client-extensions.md) , [구성](./configuration-client-extensions.md) 및 [프런트엔드](./frontend-client-extensions.md) 에 대한 `LCP.json` 파일을 자동으로 생성하고 패키징합니다.
 
 [마이크로서비스 클라이언트 확장](./microservice-client-extensions.md) 에 대한 프로젝트에 `LCP.json` 파일을 제공해야 합니다. 프로젝트의 루트에 추가하면 프로젝트가 빌드될 때 LUFFA에 복사됩니다. 이 'LCP.json' 파일은 Liferay Experience Cloud에 배포될 때 마이크로서비스에 사용되는 컨테이너를 구성합니다.
 
@@ -94,7 +94,7 @@ LUFFA를 직접 패키징하는 경우 각 클라이언트 확장에는 'LCP.jso
 | :---------------------------------------------------------------- | :-------- | :-- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [배치](#example-batch-client-extension-lcp-json)         | ✘         | 직업  | <ul><li>환경 변수 `LIFERAY_BATCH_OAUTH_APP_ERC`는 배치 클라이언트 확장의 'oAuthApplicationHeadlessServer' 속성 값으로 설정되어야 합니다. 이는 보간을 통해 제공될 수 있습니다.</li><li>'cpu', 'memory' 및 'scale'에 대해 작은 값을 지정할 수 있습니다.</li></ul>                                                                                 |
 | [구성](#example-configuration-client-extension-lcp-json) | ✘         | 직업  | <ul><li>일괄 확장보다 메모리 사용량이 훨씬 적습니다.</li><li>`cpu`, `memory` 및 `scale`에 매우 작은 값을 지정할 수 있습니다.</li></ul>                                                                                                                                                                                  |
-| [프런트엔드](#example-front-end-client-extension-lcp-json)  | ✘         | 전개  | <ul><li>`targetPort`를 `80`으로 설정하여 `loadBalancer` 속성을 지정해야 합니다.</li><li>치유를 위해 [자가 치유](https://learn.liferay.com/w/liferay-cloud/troubleshooting/self-healing) 지정해야 합니다.</li><li>`cpu`, `memory` 및 `scale`에 대해 작은 값을 지정할 수 있습니다.</li></ul> |
+| [프런트엔드](#example-frontend-client-extension-lcp-json)  | ✘         | 전개  | <ul><li>`targetPort`를 `80`으로 설정하여 `loadBalancer` 속성을 지정해야 합니다.</li><li>치유를 위해 [자가 치유](https://learn.liferay.com/w/liferay-cloud/troubleshooting/self-healing) 지정해야 합니다.</li><li>`cpu`, `memory` 및 `scale`에 대해 작은 값을 지정할 수 있습니다.</li></ul> |
 
 ### 배치 클라이언트 확장 예 LCP.json
 
@@ -156,7 +156,7 @@ LUFFA를 직접 패키징하는 경우 각 클라이언트 확장에는 'LCP.jso
 ## `static`
 
 ```{note}
-`static` 디렉터리는 [프런트 엔드 클라이언트 확장 프로젝트에만 필요합니다](./front-end-client-extensions.md).
+`static` 디렉터리는 [프런트 엔드 클라이언트 확장 프로젝트에만 필요합니다](./frontend-client-extensions.md).
 ```
 
 빌드된 LUFFA의 루트 레벨 `static/` 디렉토리에 정적 리소스 파일을 원하는 만큼 배치할 수 있습니다. `static/` 폴더 내에서 원하는 폴더 구조를 사용하세요. 프로젝트의 `client-extension.yaml` 파일에 정의된 프런트 엔드 클라이언트 확장이 없으면 이러한 파일은 무시됩니다.

@@ -245,11 +245,11 @@ Liferayワークスペースのバージョンが9.0.2より前の場合は、�
 
 * [バッチクライアント拡張](./batch-client-extensions.md) 
 * [設定 クライアント拡張](./configuration-client-extensions.md)
-* [フロントエンド・クライアント拡張](./front-end-client-extensions.md)
+* [フロントエンド・クライアント拡張](./frontend-client-extensions.md)
 * [マイクロサービス・クライアント拡張](./microservice-client-extensions.md)
 * [クライアント拡張機能のパッケージ化](./packaging-client-extensions.md)
 
 ## チュートリアル
 
-* [JavaScriptクライアント拡張機能の使用](./front-end-client-extensions/tutorials/using-a-javascript-client-extension.md)
-* [CSSクライアント拡張機能を使う](./front-end-client-extensions/tutorials/using-a-css-client-extension.md)
+* [JavaScriptクライアント拡張機能の使用](./frontend-client-extensions/tutorials/using-a-javascript-client-extension.md)
+* [CSSクライアント拡張機能を使う](./frontend-client-extensions/tutorials/using-a-css-client-extension.md)

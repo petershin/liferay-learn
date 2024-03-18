@@ -32,15 +32,15 @@ The course content referenced below is provided as-is and may not be up to date 
 * [7.4 Back-End Developer (6/7) - Integrate with Liferay DXP Frameworks](https://youtube.com/playlist?list=PLm3_L1L-YueanvEKca-dJjPseoHbfkcgp)
 * [7.4 Back-End Developer (7/7) - Integrate with External Systems](https://youtube.com/playlist?list=PLm3_L1L-YueYL73rBtxI0Dc98Wz_m0tYD)
 
-### 7.4 Front-End Developer
+### 7.4 Frontend Developer
 
-* [7.4 Front-End Developer (1/7) - Build Your First Front-End Project](https://youtube.com/playlist?list=PLm3_L1L-YueYkCX-m7AaSdKJDkwDdda4x)
-* [7.4 Front-End Developer (2/7) - Create Your Unique Site Brand with Themes](https://youtube.com/playlist?list=PLm3_L1L-Yueb-sDw7Iho7QXSykCUrRXX3)
-* [7.4 Front-End Developer (3/7) - Create Page Fragments](https://youtube.com/playlist?list=PLm3_L1L-YueYWFcAjj6alNnFwlF6z6CaM)
-* [7.4 Front-End Developer (4/7) - Content Presentation](https://youtube.com/playlist?list=PLm3_L1L-YueZeTWGy1Z2taGJVVmsM5YyJ)
-* [7.4 Front-End Developer (5/7) - Controlling Page Layouts](https://youtube.com/playlist?list=PLm3_L1L-YueaWyxWE-kXG78-QSUy0r9od)
-* [7.4 Front-End Developer (6/7) - Build React Apps for Liferay DXP](https://youtube.com/playlist?list=PLm3_L1L-YueZdkYY6vRMtQvS_8t7dICfY)
-* [7.4 Front-End Developer (7/7) - Using Headless REST APIs with Liferay DXP](https://youtube.com/playlist?list=PLm3_L1L-Yueba2M07o_nuZPhAqozkUGtm)
+* [7.4 Frontend Developer (1/7) - Build Your First Frontend Project](https://youtube.com/playlist?list=PLm3_L1L-YueYkCX-m7AaSdKJDkwDdda4x)
+* [7.4 Frontend Developer (2/7) - Create Your Unique Site Brand with Themes](https://youtube.com/playlist?list=PLm3_L1L-Yueb-sDw7Iho7QXSykCUrRXX3)
+* [7.4 Frontend Developer (3/7) - Create Page Fragments](https://youtube.com/playlist?list=PLm3_L1L-YueYWFcAjj6alNnFwlF6z6CaM)
+* [7.4 Frontend Developer (4/7) - Content Presentation](https://youtube.com/playlist?list=PLm3_L1L-YueZeTWGy1Z2taGJVVmsM5YyJ)
+* [7.4 Frontend Developer (5/7) - Controlling Page Layouts](https://youtube.com/playlist?list=PLm3_L1L-YueaWyxWE-kXG78-QSUy0r9od)
+* [7.4 Frontend Developer (6/7) - Build React Apps for Liferay DXP](https://youtube.com/playlist?list=PLm3_L1L-YueZdkYY6vRMtQvS_8t7dICfY)
+* [7.4 Frontend Developer (7/7) - Using Headless REST APIs with Liferay DXP](https://youtube.com/playlist?list=PLm3_L1L-Yueba2M07o_nuZPhAqozkUGtm)
 
 ## 7.3 Courses and Modules
 
@@ -55,13 +55,13 @@ The course content referenced below is provided as-is and may not be up to date 
 * [7.3 Business Practitioner (7/8) - Creating Multistage Review Processes DXP](https://youtube.com/playlist?list=PLm3_L1L-YueYkTaG1UkKOh3a0U2sbyNT-)
 * [7.3 Business Practitioner (8/8) - Building a Website with Experience Tools DXP](https://youtube.com/playlist?list=PLm3_L1L-Yueb5PUHWa2C3Guwqnwn1tRC1)
 
-### 7.3 Front-End Developer
+### 7.3 Frontend Developer
 
-* [7.3 Front-End Developer (1/5) - Build Your First Front-End Project](https://youtube.com/playlist?list=PLm3_L1L-YueYkCX-m7AaSdKJDkwDdda4x)
-* [7.3 Front-End Developer (2/5) - Create Your Unique Site Brand with Themes](https://youtube.com/playlist?list=PLm3_L1L-Yueb-sDw7Iho7QXSykCUrRXX3)
-* [7.3 Front-End Developer (3/5) - Create Page Fragments](https://youtube.com/playlist?list=PLm3_L1L-YueYWFcAjj6alNnFwlF6z6CaM)
-* [7.3 Front-End Developer (4/5) - Content Presentation](https://youtube.com/playlist?list=PLm3_L1L-YueZeTWGy1Z2taGJVVmsM5YyJ)
-* [7.3 Front-End Developer (5/5) - Controlling Page Layouts](https://youtube.com/playlist?list=PLm3_L1L-YueaWyxWE-kXG78-QSUy0r9od)
+* [7.3 Frontend Developer (1/5) - Build Your First Frontend Project](https://youtube.com/playlist?list=PLm3_L1L-YueYkCX-m7AaSdKJDkwDdda4x)
+* [7.3 Frontend Developer (2/5) - Create Your Unique Site Brand with Themes](https://youtube.com/playlist?list=PLm3_L1L-Yueb-sDw7Iho7QXSykCUrRXX3)
+* [7.3 Frontend Developer (3/5) - Create Page Fragments](https://youtube.com/playlist?list=PLm3_L1L-YueYWFcAjj6alNnFwlF6z6CaM)
+* [7.3 Frontend Developer (4/5) - Content Presentation](https://youtube.com/playlist?list=PLm3_L1L-YueZeTWGy1Z2taGJVVmsM5YyJ)
+* [7.3 Frontend Developer (5/5) - Controlling Page Layouts](https://youtube.com/playlist?list=PLm3_L1L-YueaWyxWE-kXG78-QSUy0r9od)
 
 ### 7.3 Back-End Developer
 
@@ -123,12 +123,12 @@ The course content referenced below is provided as-is and may not be up to date 
 * [7.2 Back-End Developer  (13/14) - Leverage Liferay Message Bus](https://youtube.com/playlist?list=PLm3_L1L-YueaCYn7kiCd-kNBzznFipTyQ)
 * [7.2 Back-End Developer  (14/14) - Customize the Portal Search](https://youtube.com/playlist?list=PLm3_L1L-YueagvtLjmVMvuuSMCalKOdSl)
 
-### 7.2 Front-End Developer
+### 7.2 Frontend Developer
 
-* [7.2 Front-End Developer (1/4) - Introduction to Front-End Development](https://youtube.com/playlist?list=PLm3_L1L-YueZQmoKaCnwX7WxmrWW3Nouv)
-* [7.2 Front-End Developer (2/4) - Branding the Platform with Themes](https://youtube.com/playlist?list=PLm3_L1L-Yueal9K_Z0QkyZe10prdMla9H)
-* [7.2 Front-End Developer (3/4) - Widget Templates](https://youtube.com/playlist?list=PLm3_L1L-YueYzZgZTz65RQomV6IdXbGKB)
-* [7.2 Front-End Developer (4/4) - Styling Content in Liferay DXP](https://youtube.com/playlist?list=PLm3_L1L-YuebiiuLdmhM2b4Od3cvcHsRD)
+* [7.2 Frontend Developer (1/4) - Introduction to Frontend Development](https://youtube.com/playlist?list=PLm3_L1L-YueZQmoKaCnwX7WxmrWW3Nouv)
+* [7.2 Frontend Developer (2/4) - Branding the Platform with Themes](https://youtube.com/playlist?list=PLm3_L1L-Yueal9K_Z0QkyZe10prdMla9H)
+* [7.2 Frontend Developer (3/4) - Widget Templates](https://youtube.com/playlist?list=PLm3_L1L-YueYzZgZTz65RQomV6IdXbGKB)
+* [7.2 Frontend Developer (4/4) - Styling Content in Liferay DXP](https://youtube.com/playlist?list=PLm3_L1L-YuebiiuLdmhM2b4Od3cvcHsRD)
 
 ### 7.2 DevOps
 
@@ -185,15 +185,15 @@ The course content referenced below is provided as-is and may not be up to date 
 * [7.1 Back-End Developer (14/15) - Leverage the Liferay Message Bus](https://youtube.com/playlist?list=PLm3_L1L-YueZQe00v_YJaF6QkGCQgP-xi)
 * [7.1 Back-End Developer (15/15) - Customize Portal Search](https://youtube.com/playlist?list=PLm3_L1L-YueYxkMOVX4yb6FAkv3d4RuXM)
 
-### 7.1 Front-End Developer
+### 7.1 Frontend Developer
 
-* [7.1 Front-End Developer (1/7) - Introduction](https://youtube.com/playlist?list=PLm3_L1L-YueaIByQcYquL2HtrZMTC-qOw)
-* [7.1 Front-End Developer (2/7) - Front-end Development in Liferay](https://youtube.com/playlist?list=PLm3_L1L-Yuebt6e3i40Y_11GpymwAcwis)
-* [7.1 Front-End Developer (3/7) - UI Frameworks](https://youtube.com/playlist?list=PLm3_L1L-YueY234jOvbAQUnM2-zvJqIjZ)
-* [7.1 Front-End Developer (4/7) - Theme Development](https://youtube.com/playlist?list=PLm3_L1L-YueadlbVN-Gr1W7FGZ2J0F3cf)
-* [7.1 Front-End Developer (5/7) - Layout Templates](https://youtube.com/playlist?list=PLm3_L1L-YueaC6NnRvnyzqfrQRoVcthBK)
-* [7.1 Front-End Developer (6/7) - Customizing Widgets with Templates](https://youtube.com/playlist?list=PLm3_L1L-Yueb_1c4stFSHROLl9UaJ1f04)
-* [7.1 Front-End Developer (7/7) - Developing Widgets and Apps](https://youtube.com/playlist?list=PLm3_L1L-YuebPg1dtGPi-3dTlZKWhu87C)
+* [7.1 Frontend Developer (1/7) - Introduction](https://youtube.com/playlist?list=PLm3_L1L-YueaIByQcYquL2HtrZMTC-qOw)
+* [7.1 Frontend Developer (2/7) - Frontend Development in Liferay](https://youtube.com/playlist?list=PLm3_L1L-Yuebt6e3i40Y_11GpymwAcwis)
+* [7.1 Frontend Developer (3/7) - UI Frameworks](https://youtube.com/playlist?list=PLm3_L1L-YueY234jOvbAQUnM2-zvJqIjZ)
+* [7.1 Frontend Developer (4/7) - Theme Development](https://youtube.com/playlist?list=PLm3_L1L-YueadlbVN-Gr1W7FGZ2J0F3cf)
+* [7.1 Frontend Developer (5/7) - Layout Templates](https://youtube.com/playlist?list=PLm3_L1L-YueaC6NnRvnyzqfrQRoVcthBK)
+* [7.1 Frontend Developer (6/7) - Customizing Widgets with Templates](https://youtube.com/playlist?list=PLm3_L1L-Yueb_1c4stFSHROLl9UaJ1f04)
+* [7.1 Frontend Developer (7/7) - Developing Widgets and Apps](https://youtube.com/playlist?list=PLm3_L1L-YuebPg1dtGPi-3dTlZKWhu87C)
 
 ### 7.1 DevOps
 

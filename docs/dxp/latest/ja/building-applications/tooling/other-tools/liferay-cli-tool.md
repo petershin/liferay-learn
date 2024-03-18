@@ -20,7 +20,7 @@ CLI ツールをグローバルにインストールしたくない場合は、 
 
 ## プロジェクトの生成
 
-`liferay new` コマンドを使用して、新しい [Client Extension](../../client-extensions/front-end-client-extensions/understanding-custom-element-and-iframe-client-extensions.md) または Liferay Platform プロジェクトを作成します：
+`liferay new` コマンドを使用して、新しい [Client Extension](../../client-extensions/frontend-client-extensions/understanding-custom-element-and-iframe-client-extensions.md) または Liferay Platform プロジェクトを作成します：
 
 1. ターミナルを開き、プロジェクトを作成したい場所に移動します。 次のコマンドを実行します。
 
@@ -35,7 +35,7 @@ CLI ツールをグローバルにインストールしたくない場合は、 
    ![矢印キーを使って、リモートアプリケーションまたは Liferay プラットフォームプロジェクトを選択し、Enter キーを押します。](./liferay-cli-tool/images/01.png)
 
    ```{note}
-   [クライアント拡張機能](../../client-extensions/front-end-client-extensions/understanding-custom-element-and-iframe-client-extensions.md) はリモートサーバーでホストされ、Liferay DXPインスタンスがアクセスしてアプリケーションとして使用できるようにします。 Liferayプラットフォームのプロジェクトは、Liferay DXP／Portalにデプロイ可能です。
+   [クライアント拡張機能](../../client-extensions/frontend-client-extensions/understanding-custom-element-and-iframe-client-extensions.md) はリモートサーバーでホストされ、Liferay DXPインスタンスがアクセスしてアプリケーションとして使用できるようにします。 Liferayプラットフォームのプロジェクトは、Liferay DXP／Portalにデプロイ可能です。
    ```
 
 1. プロンプトで、新規プロジェクトについて、人間が読み取り可能な説明を入力します。 デフォルト値は、「New Project」です。

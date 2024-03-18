@@ -29,7 +29,7 @@ If you would rather not install the CLI tool globally, you can also run the tool
 
 ## Generating a Project
 
-Use the `liferay new` command to create a new [Client Extension](../../client-extensions/front-end-client-extensions/understanding-custom-element-and-iframe-client-extensions.md) or Liferay Platform project:
+Use the `liferay new` command to create a new [Client Extension](../../client-extensions/frontend-client-extensions/understanding-custom-element-and-iframe-client-extensions.md) or Liferay Platform project:
 
 1. Open a terminal and navigate to where you want to create the project. Run this command:
 
@@ -44,7 +44,7 @@ Use the `liferay new` command to create a new [Client Extension](../../client-ex
    ![Use the arrow keys and press Enter to select a Remote App or Liferay Platform project.](./liferay-cli-tool/images/01.png)
 
    ```{note}
-   [Client Extensions](../../client-extensions/front-end-client-extensions/understanding-custom-element-and-iframe-client-extensions.md) are hosted on a remote server that your Liferay DXP instance can access to use as an application. Liferay Platform projects are deployable to Liferay DXP/Portal.
+   [Client Extensions](../../client-extensions/frontend-client-extensions/understanding-custom-element-and-iframe-client-extensions.md) are hosted on a remote server that your Liferay DXP instance can access to use as an application. Liferay Platform projects are deployable to Liferay DXP/Portal.
    ```
 
 1. Enter a human readable description of the new project at the prompt. The default value is "New Project".

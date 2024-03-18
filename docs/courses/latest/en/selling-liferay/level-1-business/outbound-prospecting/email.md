@@ -70,7 +70,7 @@ A Customer Portal isn’t a replacement for your sales team, it should be a cata
 
 To ensure emails are noticed and opened, lead with a subject that explains how Liferay can solve a business challenge or problem that the prospect might be experiencing. Because Liferay provides so many features and capabilities, there is no shortage of solutions that can be built or problems that Liferay can help to solve.
 
-For customers that have grown through acquisition, there are bound to be growing pains as disparate systems now must work together. A Liferay-based solution can help to present a unified front-end to customers, partners, dealers and distributors.
+For customers that have grown through acquisition, there are bound to be growing pains as disparate systems now must work together. A Liferay-based solution can help to present a unified frontend to customers, partners, dealers and distributors.
 
 ### Getting more from Sales Teams
 

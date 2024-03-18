@@ -2,7 +2,7 @@
 toc:
   - ./client-extensions/working-with-client-extensions.md
   - ./client-extensions/packaging-client-extensions.md
-  - ./client-extensions/front-end-client-extensions.md
+  - ./client-extensions/frontend-client-extensions.md
   - ./client-extensions/microservice-client-extensions.md
   - ./client-extensions/configuration-client-extensions.md
   - ./client-extensions/batch-client-extensions.md
@@ -29,8 +29,8 @@ While other Liferay extensions like [OSGi modules](../liferay-internals/fundamen
 
 With client extensions, you can
 
-* Apply [custom JavaScript or CSS](#front-end-client-extensions), while avoiding dependencies on Liferay's code
-* Embed applications hosted remotely into a [custom element](./client-extensions/front-end-client-extensions/understanding-custom-element-and-iframe-client-extensions.md) on a Liferay page
+* Apply [custom JavaScript or CSS](#frontend-client-extensions), while avoiding dependencies on Liferay's code
+* Embed applications hosted remotely into a [custom element](./client-extensions/frontend-client-extensions/understanding-custom-element-and-iframe-client-extensions.md) on a Liferay page
 * Apply the same configurations or objects to multiple environments, by [converting them into client extensions](#configuration-client-extensions)
 * Call custom services or [functions](#microservice-client-extensions) running outside of Liferay (e.g., a REST endpoint), using the programming languages or technologies of your choice
 
@@ -42,7 +42,7 @@ These are the classifications of client extensions:
 
 * [Batch client extensions](#batch-client-extensions)
 * [Configuration client extensions](#configuration-client-extensions)
-* [Front-end client extensions](#front-end-client-extensions)
+* [Frontend client extensions](#frontend-client-extensions)
 * [Microservice client extensions](#microservice-client-extensions)
 
 ### Batch Client Extensions
@@ -61,11 +61,11 @@ They can be used together with other client extensions, such as [microservice cl
 
 See [Configuration Client Extensions](./client-extensions/configuration-client-extensions.md) for more information on the specific types.
 
-### Front-end Client Extensions
+### Frontend Client Extensions
 
-Front-end client extensions provide resources to display on specific pages. Theme resources or custom HTML elements can now be provided in client extensions. Most front-end client extensions provide *static resources* to your Liferay instance.
+Frontend client extensions provide resources to display on specific pages. Theme resources or custom HTML elements can now be provided in client extensions. Most frontend client extensions provide *static resources* to your Liferay instance.
 
-See [Front-end Client Extensions](./client-extensions/front-end-client-extensions.md) for more information on the specific types.
+See [Frontend Client Extensions](./client-extensions/frontend-client-extensions.md) for more information on the specific types.
 
 ### Microservice Client Extensions
 

@@ -20,7 +20,7 @@ CLI 도구를 전체적으로 설치하지 않으려면 `npx`를 사용하여 �
 
 ## 프로젝트 생성
 
-`liferay new` 명령을 사용하여 새 [클라이언트 확장](../../client-extensions/front-end-client-extensions/understanding-custom-element-and-iframe-client-extensions.md) 또는 Liferay 플랫폼 프로젝트를 만듭니다.
+`liferay new` 명령을 사용하여 새 [클라이언트 확장](../../client-extensions/frontend-client-extensions/understanding-custom-element-and-iframe-client-extensions.md) 또는 Liferay 플랫폼 프로젝트를 만듭니다.
 
 1. 터미널을 열고 프로젝트를 생성할 사이트로 이동합니다. 다음 명령을 실행합니다.
 
@@ -35,7 +35,7 @@ CLI 도구를 전체적으로 설치하지 않으려면 `npx`를 사용하여 �
    ![화살표 키를 사용하고 Enter 키를 눌러 원격 앱 또는 Liferay 플랫폼 프로젝트를 선택합니다.](./liferay-cli-tool/images/01.png)
 
    ```{note}
-   [클라이언트 확장](../../client-extensions/front-end-client-extensions/understanding-custom-element-and-iframe-client-extensions.md)는 Liferay DXP 인스턴스가 실행되는 원격 서버에서 호스팅됩니다. 접근하여 어플리케이션으로 사용할 수 있습니다. Liferay 플랫폼 프로젝트는 Liferay DXP/Portal에 배포할 수 있습니다.
+   [클라이언트 확장](../../client-extensions/frontend-client-extensions/understanding-custom-element-and-iframe-client-extensions.md)는 Liferay DXP 인스턴스가 실행되는 원격 서버에서 호스팅됩니다. 접근하여 어플리케이션으로 사용할 수 있습니다. Liferay 플랫폼 프로젝트는 Liferay DXP/Portal에 배포할 수 있습니다.
    ```
 
 1. 프롬프트에서 새 프로젝트에 대한 사람이 읽을 수 있는 설명을 입력합니다. 기본값은 "새 프로젝트"입니다.

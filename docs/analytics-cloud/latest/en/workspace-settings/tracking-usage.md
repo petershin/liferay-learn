@@ -13,6 +13,9 @@ Analytics Cloud plans are limited by the total amount of [Individuals](../people
 
 ![The usage page reports when you are approaching or exceeding plan limits.](tracking-usage/images/01.png)
 
+!!! note
+    The Subscription & Usage page updates daily at 12:00 AM UTC.
+
 ## Plans
 
 The Plans section describes each plan’s limits and cost. Higher tier plans offer additional flexibility through higher limits and less expensive add-ons. Your current plan is highlighted. You can upgrade from lower tier to higher tier plans.
@@ -22,3 +25,8 @@ The Plans section describes each plan’s limits and cost. Higher tier plans off
 Add-ons increase limits on Individuals or Page Views, without requiring you to upgrade to a new plan. Purchasing add-ons gives you commitment-free analytics capacity increases.
 
 Contact your sales representative for further guidance on getting a plan that fits your organization's needs.
+
+## Related Topics
+
+- [Individual Profiles](../people/individuals/individual-profiles.md)
+- [Pages](../touchpoints/pages/pages.md)

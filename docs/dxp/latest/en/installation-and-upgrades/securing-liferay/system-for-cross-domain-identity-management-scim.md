@@ -20,7 +20,7 @@ System for Cross-domain Identity Management or SCIM, is an open standard that au
 * A RESTful API to run CRUD operations on those users and groups to keep them in sync. See [SCIM User API Basics](./developer-guide/scim-user-api-basics.md) and [SCIM Group API Basics](./developer-guide/scim-group-api-basics.md) for more information.
 
 !!! important
-    This feature is currently behind a [beta feature flag](../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags).
+    This feature is currently behind a [beta feature flag](../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags).
 
 Using SCIM, you can automate the exchange of user identity information between your company's applications and service providers like Liferay securely. This is useful if your company uses multiple applications and wants to keep user data in sync without custom implementations.
 

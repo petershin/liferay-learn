@@ -12,7 +12,7 @@ visibility:
 * Liferay is organically grown, not innovated through acquisition
 * Liferay is an Open Source Leader with a Portal heritage
 
-One of the most important aspects of our value proposition is that Liferay has evolved organically using home grown technology. Liferay is
+One of the most important facts is that Liferay has evolved organically using home grown technology. Liferay is
 
 * Developed entirely in-house
 * Committed to a consistent user experience

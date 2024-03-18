@@ -22,8 +22,8 @@ Liferay’s portal heritage gives us a unique perspective:
 * Digital agility
 
 ```{note}
-* View the [recording](https://learn.liferay.com/web/guest/d/l0-4-liferays-unique-value-proposition) from the live workshop of this module.
-* Download the [PDF](https://learn.liferay.com/documents/d/guest/l0-4-liferays-unique-value-proposition-pdf) of the presentation used in the live workshop.
+* View the [recording](https://learn.liferay.com/web/guest/d/l0-4-liferays-unique-selling-points) from the live workshop of this module.
+* Download the [PDF](https://learn.liferay.com/documents/d/guest/l0-4-liferays-unique-selling-points-pdf) of the presentation used in the live workshop.
 ```
 
 ## Integration Capabilities
@@ -48,7 +48,7 @@ As highlighted by Gartner, portals can be used as a common architectural framewo
 
 By turning a portal-heritage digital experience platform into a solutions factory, customers can quickly advance their digital strategies while maintaining control over the quality of individual experiences.
 
-## Easy to Tailor
+## Easy to Customize
 
 Liferay is recognized as the most flexible and extensible DXP available.
 
@@ -68,7 +68,7 @@ Each step forward reduced the knowledge needed to extend the platform while redu
 
 Liferay DXP 7.0 introduced OSGi. This moved customizations to a modular model, keeping them in a "container" that isolated them from core Liferay code and allowing them to communicate via Extension Points. For example, developers could implement new payment methods or order rules in the Commerce context, or new storage mechanisms for storing Documents and Media.
 
-All of these improvements, however, still made upgrades challenging. The latest step in this process is the introduction of Client Extensions as our most powerful and maintainable extension mechanism. Client Extensions run separately from the core Liferay code, supporting easy upgrades and enabling Liferay DXP to be delivered as a SaaS platform.
+All of these improvements, however, still made upgrades challenging. The latest step in this process is the introduction of Client Extensions as our most powerful and maintainable extension mechanism. Client Extensions run separately from the core Liferay code, supporting easy upgrades and enabling Liferay DXP to be delivered using SaaS, PaaS, and Self-Hosted deployment approaches.
 
 ## Delivering Experiences for Many Audiences and Use Cases
 
@@ -83,7 +83,7 @@ Example business-focused authenticated solutions include
 
 Of course, this is far from a complete list.
 
-All of these B2B solutions feature inherent complexity in requirements and integration needs. By focusing on solutions that can handle this complexity, Liferay is well positioned to address the most common B2C use cases as well.
+All of these solutions feature inherent complexity in requirements and integration needs. By focusing on solutions that can handle this complexity, Liferay helps our customers to save time and reduce errors, and to address business-to-business (B2B), business-to-employee (B2E), government-to-citizen (G2C), government-to-business (G2B) as well as many of the most common B2C use cases as well.
 
 Congratulations! You have completed this module on Liferay's value proposition. 
 

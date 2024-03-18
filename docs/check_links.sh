@@ -21,7 +21,7 @@ function check_images {
 	do
 		_LINK_FILE_NAME=$(echo ${link} | sed 's/\[.*\](\(.*\.\(gif\|jpg\|png\)\).*)/\1/g')
 
-		use_english_resource
+		use_english
 
 		if ! ls "${_LINK_FILE_NAME}" || [[ ${_LINK_FILE_NAME} != *"/images/"* ]]
 		then
@@ -44,7 +44,7 @@ function check_includes {
 		then
 			link_type="Literal include"
 
-			use_english_resource
+			use_english
 
 			local resources_dir_name=$(echo ${_LINK_FILE_NAME} | sed 's/\(.*\/resources\/\).*/\1/g')
 
@@ -187,7 +187,7 @@ function main {
 	unset IFS
 }
 
-function use_english_resource {
+function use_english {
 	local language_code=$(pwd ${_MARKDOWN_FILE_NAME} | sed 's,.*/\(en\|ja\|ko\)/.*,\1,g')
 
 	if [[ ${language_code} != "en" ]]

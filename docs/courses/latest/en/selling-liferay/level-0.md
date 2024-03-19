@@ -7,7 +7,7 @@ toc:
 - ./level-0/the-ideal-customer-profile.md
 - ./level-0/what-challenges-does-liferay-solve-horizontal-solutions.md
 - ./level-0/what-challenges-does-liferay-solve-industry-solutions.md
-- ./level-0/main-competitors-faced-by-liferay.md
+- ./level-0/competitive-landscape-and-liferay-positioning.md
 uuid: 17a3f6d0-bda3-4fc0-84c0-0a6398b36b3c
 visibility: 
 - Employee
@@ -95,9 +95,9 @@ Learn more about common horizontal solutions built with Liferay.
 This module covers how Liferay solves some of the common challenges seen in particular industries as well as the most common solutions for each industry.
 :::
 
-:::{grid-item-card} Main Competitors Faced by Liferay
-:link: ./level-0/main-competitors-faced-by-liferay.md
+:::{grid-item-card} Competitive Landscape and Liferay Positioning
+:link: ./level-0/competitive-landscape-and-liferay-positioning.md
 
-This module reviews some of Liferay’s main competitors.
+Learn about Liferay's competitive landscape, and how to position Liferay for the highest chance of winning.
 :::
 ::::

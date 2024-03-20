@@ -33,6 +33,1049 @@ Here is a list of changes that break or significantly alter existing functionali
 | **Utility Page Configurations**                             | The general configuration icon for utility pages no longer appears on the Page Design Options panel. You must now access them via the Actions menu on the Utility Pages page.                                | [LPD-4459](https://liferay.atlassian.net/browse/LPD-4459)     |
 | **Allow Manual Membership Management Option for New Sites** | When creating a new site, the Allow Manual Membership Management option is disabled by default.                                                                                                              | [LPS-191374](https://liferay.atlassian.net/browse/LPS-191374) |
 
+### Changes in Module Source Code
+
+**PersonalMenuEntry.java**
+[`modules/apps/product-navigation/product-navigation-personal-menu-api/src/main/java/com/liferay/product/navigation/personal/menu/PersonalMenuEntry.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/product-navigation/product-navigation-personal-menu-api/src/main/java/com/liferay/product/navigation/personal/menu/PersonalMenuEntry.java)
+
+* __Date:__ Nov. 6, 2023
+* __Ticket:__ [LPS-198527](https://liferay.atlassian.net/browse/LPS-198527)
+* __What changed:__ The new `getOnClickJSModuleURL` method is added.
+* __Reason:__ This change allows for loading a JS module at run-time by clicking on Personal Menu entries.
+
+**BaseAMImageCounter.java**
+[`modules/apps/adaptive-media/adaptive-media-image-api/src/main/java/com/liferay/adaptive/media/image/counter/BaseAMImageCounter.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/adaptive-media/adaptive-media-image-api/src/main/java/com/liferay/adaptive/media/image/counter/BaseAMImageCounter.java)
+
+* __Date:__ Nov. 7, 2023
+* __Ticket:__ [LPS-197738](https://liferay.atlassian.net/browse/LPS-197738)
+* __What changed:__ The `BaseAMImageCounter` class is a new base class for `AMImageCounter` implementations to use.
+* __Reason:__ This class helps implement `AMImageCounter` with common logic implementations.
+
+**BaseAMImageOptimizer.java**
+[`modules/apps/adaptive-media/adaptive-media-image-api/src/main/java/com/liferay/adaptive/media/image/optimizer/BaseAMImageOptimizer.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/adaptive-media/adaptive-media-image-api/src/main/java/com/liferay/adaptive/media/image/optimizer/BaseAMImageOptimizer.java)
+
+* __Date:__ Nov. 7, 2023
+* __Ticket:__ [LPS-197738](https://liferay.atlassian.net/browse/LPS-197738)
+* __What changed:__ The `BaseAMImageOptimizer` class is a new base class for `AMImageOptimizer` implementations to use.
+* __Reason:__ This class helps implement `AMImageOptimizer` with common logic implementations.
+
+**DLFileEntryConfigurationProvider.java**
+[`modules/apps/document-library/document-library-api/src/main/java/com/liferay/document/library/configuration/DLFileEntryConfigurationProvider.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/document-library/document-library-api/src/main/java/com/liferay/document/library/configuration/DLFileEntryConfigurationProvider.java)
+
+* __Date:__ Nov. 7, 2023
+* __Ticket:__ [LPS-197738](https://liferay.atlassian.net/browse/LPS-197738)
+* __What changed:__ The new `getGroupPreviewableProcessorMaxSizeMap` method is added to return all group values with the given `previewableProcessorMaxSize` attribute.
+* __Reason:__ This change helps filter by groups with specific attribute values, instead of getting the attribute for all types.
+
+**CPDefinitionLinkTypeSettingsImpl.java**
+`modules/apps/commerce/commerce-product-service/src/main/java/com/liferay/commerce/product/internal/configuration/CPDefinitionLinkTypeSettingsImpl.java`
+        
+* __Date:__ Nov. 8, 2023
+* __Ticket:__ [COMMERCE-12306](https://liferay.atlassian.net/browse/COMMERCE-12306)
+* __What changed:__ The class is removed.
+* __Reason:__ This functionality is handled by `CPDefinitionLinkTypeRegistry`.
+
+**CPDefinitionLinkTypeSettings.java**
+`modules/apps/commerce/commerce-product-api/src/main/java/com/liferay/commerce/product/configuration/CPDefinitionLinkTypeSettings.java`
+
+* __Date:__ Nov. 8, 2023
+* __Ticket:__ [COMMERCE-12306](https://liferay.atlassian.net/browse/COMMERCE-12306)
+* __What changed:__ The class is removed.
+* __Reason:__ This functionality is handled by `CPDefinitionLinkTypeRegistry`.
+
+**CPDefinitionLinkTypeConfigurationWrapper.java**
+`modules/apps/commerce/commerce-product-service/src/main/java/com/liferay/commerce/product/internal/configuration/CPDefinitionLinkTypeConfigurationWrapper.java`
+
+* __Date:__ Nov. 8, 2023
+* __Ticket:__ [COMMERCE-12306](https://liferay.atlassian.net/browse/COMMERCE-12306)
+* __What changed:__ The class is removed.
+* __Reason:__ This functionality is handled by `CPDefinitionLinkTypeRegistry`.
+
+**COREntryType.java**
+[`modules/apps/commerce/commerce-order-rule-api/src/main/java/com/liferay/commerce/order/rule/entry/type/COREntryType.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/commerce/commerce-order-rule-api/src/main/java/com/liferay/commerce/order/rule/entry/type/COREntryType.java)
+
+* __Date:__ Nov. 8, 2023
+* __Ticket:__ [COMMERCE-12306](https://liferay.atlassian.net/browse/COMMERCE-12306)
+* __What changed:__ The new `evaluate(COREntry, List<COREntryTypeItem>)` method is added.
+* __Reason:__ This change is made to evaluate rules before creating an order.
+
+**CPContentHelper.java**
+[`modules/apps/commerce/commerce-product-content-api/src/main/java/com/liferay/commerce/product/content/helper/CPContentHelper.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/commerce/commerce-product-content-api/src/main/java/com/liferay/commerce/product/content/helper/CPContentHelper.java)
+
+* __Date:__ Nov. 10, 2023
+* __Ticket:__ [COMMERCE-12682](https://liferay.atlassian.net/browse/COMMERCE-12682)
+* __What changed:__ The `getImages` method now has a `boolean` parameter for `gallery`.
+* __Reason:__ This change allows for retrieving images with a filter for images that are not allowed in an image gallery.
+
+**AccountConstants.java**
+[`modules/apps/account/account-api/src/main/java/com/liferay/account/constants/AccountConstants.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/account/account-api/src/main/java/com/liferay/account/constants/AccountConstants.java)
+
+* __Date:__ Nov. 15, 2023
+* __Ticket:__ [COMMERCE-12813](https://liferay.atlassian.net/browse/COMMERCE-12813)
+* __What changed:__ The `getAccountEntryTypes` method now has a `long` parameter for `companyId`. The `ACCOUNT_ENTRY_TYPES` field is also removed.
+* __Reason:__ This change allows feature flags to be based on specific Liferay DXP instances.
+
+**SharingDropdownItemFactory.java**
+[`modules/apps/sharing/sharing-api/src/main/java/com/liferay/sharing/display/context/util/SharingDropdownItemFactory.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/sharing/sharing-api/src/main/java/com/liferay/sharing/display/context/util/SharingDropdownItemFactory.java)
+
+* __Date:__ Nov. 16, 2023
+* __Ticket:__ [LPS-200202](https://liferay.atlassian.net/browse/LPS-200202)
+* __What changed:__ A new `createCopyLinkDropdownItem(String, long, HttpServletRequest)` method is added.
+* __Reason:__ This method allows for creating a drop-down menu to copy document links.
+
+**JavaScriptAwarePortalWebResources.java**
+`modules/apps/frontend-js/frontend-js-loader-modules-extender-api/scr/main/java/com/liferay/frontend/js/loader/modules/extender/npm/JavaScriptAwarePortalWebResources.java`
+
+* __Date:__ Nov. 22, 2023
+* __Ticket:__ [LPS-199532](https://liferay.atlassian.net/browse/LPS-199532)
+* __What changed:__ The class is removed.
+* __Reason:__ This class is no longer used.
+
+**ObjectFieldLocalServiceImpl.java**
+[`modules/apps/object/object-service/src/main/java/com/liferay/object/service/impl/ObjectFieldLocalServiceImpl.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/object/object-service/src/main/java/com/liferay/object/service/impl/ObjectFieldLocalServiceImpl.java)
+
+* __Date:__ Nov. 28, 2023
+* __Ticket:__ [LPS-196717](https://liferay.atlassian.net/browse/LPS-196717)
+* __What changed:__ The `validateExternalReferenceCode`, `validateRequired`, and `validateReadOnlyAndReadOnlyConditionExpression` methods are now public and included in `ObjectFieldLocalService`.
+* __Reason:__ This change is needed for object field validation when creating one-to-one or one-to-many relationships.
+
+**ObjectRelationshipImpl.java**
+[`modules/apps/object/object-service/src/main/java/com/liferay/object/model/impl/ObjectRelationshipImpl.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/object/object-service/src/main/java/com/liferay/object/model/impl/ObjectRelationshipImpl.java`)
+
+* __Date:__ Nov. 28, 2023
+* __Ticket:__ [LPS-196717](https://liferay.atlassian.net/browse/LPS-196717)
+* __What changed:__ A new `compareType(String)` method is added.
+* __Reason:__ This change simplifies the logic implementation to allow for more code reuse.
+
+**ObjectRelationshipLocalServiceImpl.java**
+[`modules/apps/object/object-service/src/main/java/com/liferay/object/service/impl/ObjectRelationshipLocalServiceImpl.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/object/object-service/src/main/java/com/liferay/object/service/impl/ObjectRelationshipLocalServiceImpl.java)
+
+* __Date:__ Nov. 28, 2023
+* __Ticket:__ [LPS-196717](https://liferay.atlassian.net/browse/LPS-196717)
+* __What changed:__ The `addObjectRelationship` and `updateObjectRelationship` methods have a new `ObjectField` parameter.
+* __Reason:__ This change allows for methods to set properties when creating a one-to-one or one-to-many object relationship.
+
+**ObjectRelationshipServiceImpl.java**
+[`modules/apps/object/object-service/src/main/java/com/liferay/object/service/impl/ObjectRelationshipServiceImpl.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/object/object-service/src/main/java/com/liferay/object/service/impl/ObjectRelationshipServiceImpl.java)
+
+* __Date:__ Nov. 28, 2023
+* __Ticket:__ [LPS-196717](https://liferay.atlassian.net/browse/LPS-196717)
+* __What changed:__ The `addObjectRelationship` and `updateObjectRelationship` methods have a new `ObjectField` parameter.
+* __Reason:__ This change allows for methods to set properties when creating a one-to-one or one-to-many object relationship.
+
+**rest-openapi.yaml**
+`modules/apps/object/object-admin-rest-impl/rest-openapi.yaml`
+        
+* __Date:__ Nov. 28, 2023
+* __Ticket:__ [LPS-196717](https://liferay.atlassian.net/browse/LPS-196717)
+* __What changed:__ The `ObjectRelationship` schema has a new `objectField` property.
+* __Reason:__ This change allows for exporting object fields with its associated one-to-one or one-to-many object relationships.
+
+`/modules/apps/users-admin/users-admin-test-util/bnd.bnd`
+
+* __Date:__ Nov. 29, 2023
+* __Ticket:__ [LPS-202908](https://liferay.atlassian.net/browse/LPS-202908)
+* __What changed:__ The bundle version is increased to `6.0.0`.
+
+`modules/apps/object/object-admin-rest-api/bnd.bnd`
+
+* __Date:__ Nov. 30, 2023
+* __Ticket:__ [LPS-172418](https://liferay.atlassian.net/browse/LPS-172418)
+* __What changed:__ The bundle version is increased to `20.0.0`.
+
+**CommercePaymentEntryLocalServiceImpl.java**
+[`modules/apps/commerce/commerce-payment-service/src/main/java/com/liferay/commerce/payment/service/impl/CommercePaymentEntryLocalServiceImpl.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/commerce/commerce-payment-service/src/main/java/com/liferay/commerce/payment/service/impl/CommercePaymentEntryLocalServiceImpl.java)
+
+* __Date:__ Nov. 30, 2023
+* __Ticket:__ [COMMERCE-12384](https://liferay.atlassian.net/browse/COMMERCE-12384)
+* __What changed:__ The `addCommercePaymentEntry` and `updateCommercePaymentEntry` methods have new parameters.
+* __Reason:__ Commerce payment entries require more information to create and update.
+
+* __Date:__ Dec. 19, 2023
+* __Ticket:__ [COMMERCE-12943](https://liferay.atlassian.net/browse/COMMERCE-12943)
+* __What changed:__ Various method signatures have had their parameters changed.
+* __Reason:__ This change allows for managing the different types of payments.
+
+**BundleManager.java**
+`modules/apps/marketplace/marketplace-api/src/main/java/com/liferay/marketplace/bundle/BundleManager.java`
+
+* __Date:__ Dec. 1, 2023
+* __Ticket:__ [LPS-201076](https://liferay.atlassian.net/browse/LPS-201076)
+* __What changed:__ The class is removed. Instead, use `BundleManagerUtil`.
+* __Reason:__ The class is being replaced by `BundleManagerUtil`.
+
+**EntityExtensionHandler.java**
+[`modules/apps/portal-vulcan/portal-vulcan-api/src/main/java/com/liferay/portal/vulcan/extension/EntityExtensionHandler.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/portal-vulcan/portal-vulcan-api/src/main/java/com/liferay/portal/vulcan/extension/EntityExtensionHandler.java)
+
+* __Date:__ Dec. 1, 2023
+* __Ticket:__ [COMMERCE-12980](https://liferay.atlassian.net/browse/COMMERCE-12980)
+* __What changed:__ The `getExtendedProperties` method has a new `long userId` parameter.
+* __Reason:__ This change is required to pass `dtoConverterContext` with the correct user ID when converting the related unmodifiable system objects to DTO.
+
+**ExtensionProvider.java**
+[`modules/apps/portal-vulcan/portal-vulcan-api/src/main/java/com/liferay/portal/vulcan/extension/ExtensionProvider.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/portal-vulcan/portal-vulcan-api/src/main/java/com/liferay/portal/vulcan/extension/ExtensionProvider.java)
+
+* __Date:__ Dec. 1, 2023
+* __Ticket:__ [COMMERCE-12980](https://liferay.atlassian.net/browse/COMMERCE-12980)
+* __What changed:__ The `getExtendedProperties` method has a new `long userId` parameter.
+* __Reason:__ This change is required to pass `dtoConverterContext` with the correct user ID when converting the related unmodifiable system objects to DTO.
+
+**CommerceCountryItemSelectorCriterion.java**
+`modules/apps/commerce/commerce-item-selector-api/src/main/java/com/liferay/commerce/item/selector/criterion/CommerceCountryItemSelectorCriterion.java`
+
+* __Date:__ Dec. 1, 2023
+* __Ticket:__ [LPS-201373](https://liferay.atlassian.net/browse/LPS-201373)
+* __What changed:__ The class is removed.
+* __Reason:__ This class was meant for internal use and is no longer used.
+
+**CommerceInventoryWarehouseItemSelectorCriterion.java**
+`modules/apps/commerce/commerce-item-selector-api/src/main/java/com/liferay/commerce/item/selector/criterion/CommerceInventoryWarehouseItemSelectorCriterion.java`
+
+* __Date:__ Dec. 1, 2023
+* __Ticket:__ [LPS-201373](https://liferay.atlassian.net/browse/LPS-201373)
+* __What changed:__ The class is removed.
+* __Reason:__ This class was meant for internal use and is no longer used.
+
+**CommercePricingClassItemSelectorCriterion.java**
+`modules/apps/commerce/commerce-item-selector-api/src/main/java/com/liferay/commerce/item/selector/criterion/CommercePricingClassItemSelectorCriterion.java`
+
+* __Date:__ Dec. 1, 2023
+* __Ticket:__ [LPS-201373](https://liferay.atlassian.net/browse/LPS-201373)
+* __What changed:__ The class is removed.
+* __Reason:__ This class was meant for internal use and is no longer used.
+
+**CommerceProductInstanceItemSelectorCriterion.java**
+`modules/apps/commerce/commerce-item-selector-api/src/main/java/com/liferay/commerce/item/selector/criterion/CommerceProductInstanceItemSelectorCriterion.java`
+
+* __Date:__ Dec. 1, 2023
+* __Ticket:__ [LPS-201373](https://liferay.atlassian.net/browse/LPS-201373)
+* __What changed:__ The class is removed.
+* __Reason:__ This class was meant for internal use and is no longer used.
+
+**CPInstanceItemSelectorCriterion.java**
+`modules/apps/commerce/commerce-product-item-selector-api/src/main/java/com/liferay/commerce/product/item/selector/criterion/CPInstanceItemSelectorCriterion.java`
+
+* __Date:__ Dec. 1, 2023
+* __Ticket:__ [LPS-201373](https://liferay.atlassian.net/browse/LPS-201373)
+* __What changed:__ The class is removed.
+* __Reason:__ This class was meant for internal use and is no longer used.
+
+**LayoutPageTemplateEntryItemSelectorCriterion.java**
+`modules/apps/commerce/commerce-product-item-selector-api/src/main/java/com/liferay/commerce/product/item/selector/criterion/LayoutPageTemplateEntryItemSelectorCriterion.java`
+
+* __Date:__ Dec. 1, 2023
+* __Ticket:__ [LPS-201373](https://liferay.atlassian.net/browse/LPS-201373)
+* __What changed:__ The class is removed.
+* __Reason:__ This class was meant for internal use and is no longer used.
+
+**DLProcessorRegistryTest.java**
+`modules/apps/document-library/document-library-test/src/testIntegration/java/com/liferay/document/library/util/test/DLProcessorRegistryTest.java`
+
+* __Date:__ Dec. 1, 2023
+* __Ticket:__ [LPS-188559](https://liferay.atlassian.net/browse/LPS-188559)
+* __What changed:__ The class is renamed to `DLProcessorHelperTest`, and moved from the `com.liferay.document.library.util.test` package to the `com.liferay.document.library.processor.test` package.
+* __Reason:__ This change is made for clarity and to keep the package name matching the class name.
+
+**DLProcessorRegistryImpl.java**
+`modules/apps/document-library/document-library-service/src/main/java/com/liferay/document/library/internal/util/DLProcessorRegistryImpl.java`
+
+* __Date:__ Dec. 1, 2023
+* __Ticket:__ [LPS-188559](https://liferay.atlassian.net/browse/LPS-188559)
+* __What changed:__ The class is renamed to `DLProcessorHelperImpl`, and moved from the `com.liferay.document.library.internal.util` package to the `com.liferay.document.library.internal.processor` package. The `register` and `unregister` methods have also been removed. If you are providing your own non-OSGi `DLProcessor` implementation, convert it to an OSGi service.
+* __Reason:__ The refactoring change is made for clarity and to keep the package name matching the class name. The `register` and `unregister` methods are removed because all out-of-the-box `DLProcessor` objects are now OSGi components.
+
+**CommerceOrderValidator.java**
+[`modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/order/CommerceOrderValidator.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/order/CommerceOrderValidator.java)
+
+* __Date:__ Dec. 2, 2023
+* __Ticket:__ [COMMERCE-12309](https://liferay.atlassian.net/browse/COMMERCE-12309)
+* __What changed:__ The `validate(Locale, CommerceOrder, CPInstance, BigDecimal)` method has two new parameters: `String json` and `boolean child`.
+* __Reason:__ This change helps with validation of products before they're added to a cart.
+
+**AssetDisplayPageEntry.java**
+[`modules/apps/asset/asset-display-page-api/src/main/java/com/liferay/asset/display/page/model/AssetDisplayPageEntry.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/asset/asset-display-page-api/src/main/java/com/liferay/asset/display/page/model/AssetDisplayPageEntry.java)
+
+* __Date:__ Dec. 2, 2023
+* __Ticket:__ [LPS-200477](https://liferay.atlassian.net/browse/LPS-200477)
+* __What changed:__ A new `getPlid()` method is added. The `plid` column is removed from the `AssetDisplayPageEntry` table. Instead, call `AssetDisplayPageEntry.getPlid()`.
+* __Reason:__ The `plid` column was temporarily removed from the `AssetDisplayPageEntry` table, so this was added as an alternative method to retrieve the `plid`.
+
+**CommerceAddressService.java**
+[`modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/service/CommerceAddressService.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/service/CommerceAddressService.java)
+
+* __Date:__ Dec. 2, 2023
+* __Ticket:__ [COMMERCE-12658](https://liferay.atlassian.net/browse/COMMERCE-12658)
+* __What changed:__ The `getBillingCommerceAddresses`, `getBillingCommerceAddressesCount`, `getShippingCommerceAddresses`, and `getShippingCommerceAddressesCount` methods have a new `long commerceChannelId` parameter.
+* __Reason:__ This change allows addresses to be assigned to specific Commerce channels.
+
+**CommerceShippingEngine.java**
+[`modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/model/CommerceShippingEngine.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/model/CommerceShippingEngine.java)
+
+* __Date:__ Dec. 2, 2023
+* __Ticket:__ [COMMERCE-12879](https://liferay.atlassian.net/browse/COMMERCE-12879)
+* __What changed:__ A new `getKey` method is added.
+* __Reason:__ This change allows for managing both standard OSGi components and client extensions.dard osgi components and client extensions
+
+**CETConfiguration.java**
+[`modules/apps/client-extension/client-extension-type-api/src/main/java/com/liferay/client/extension/type/configuration/CETConfiguration.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/client-extension/client-extension-type-api/src/main/java/com/liferay/client/extension/type/configuration/CETConfiguration.java)
+
+* __Date:__ Dec. 4, 2023
+* __Ticket:__ [LPS-202104](https://liferay.atlassian.net/browse/LPS-202104)
+* __What changed:__ A new `buildTimestamp` field is added for whenever a new build takes place in a Liferay Workspace.
+* __Reason:__ Liferay DXP will use this field for the `${modifiedTimestamp}` variable for client extensions.
+
+**CETFactory.java**
+[`modules/apps/client-extension/client-extension-type-api/src/main/java/com/liferay/client/extension/type/factory/CETFactory.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/client-extension/client-extension-type-api/src/main/java/com/liferay/client/extension/type/factory/CETFactory.java)
+
+* __Date:__ Dec. 4, 2023
+* __Ticket:__ [LPS-202104](https://liferay.atlassian.net/browse/LPS-202104)
+* __What changed:__ A new `boolean replaceVariables` parameter is added to the `create` methods.
+* __Reason:__ This change is made to make the API easier to understand, maintain, and extend. The new parameter allows for controlling variable substitutions in URL fields.
+
+**CETImplFactory.java**
+[`modules/apps/client-extension/client-extension-type-api/src/main/java/com/liferay/client/extension/type/factory/CETImplFactory.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/client-extension/client-extension-type-api/src/main/java/com/liferay/client/extension/type/factory/CETImplFactory.java)
+
+* __Date:__ Dec. 4, 2023
+* __Ticket:__ [LPS-202104](https://liferay.atlassian.net/browse/LPS-202104)
+* __What changed:__ Various changes to the interface's method signatures.
+* __Reason:__ CET factory implementations are now responsible for constructing specific CET objects. This helps simplify implementation logic.
+
+**CET.java**
+[`modules/apps/client-extension/client-extension-type-api/src/main/java/com/liferay/client/extension/type/CET.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/client-extension/client-extension-type-api/src/main/java/com/liferay/client/extension/type/CET.java)
+
+* __Date:__ Dec. 4, 2023
+* __Ticket:__ [LPS-202104](https://liferay.atlassian.net/browse/LPS-202104)
+* __What changed:__ A new `getName` method is added to get a client extension's name with the full localization XML.
+* __Reason:__ This change is needed to retrieve the name for all locales instead of one at a time.
+
+**Sitemap.java**
+`modules/apps/site/site-api/src/main/java/com/liferay/site/util/Sitemap.java`
+
+* __Date:__ Dec. 5, 2023
+* __Ticket:__ [LPS-203260](https://liferay.atlassian.net/browse/LPS-203260)
+* __What changed:__ The class is renamed to `SitemapManager`, and the `com.liferay.site.util` package is refactored to the `com.liferay.site.manager` package.
+* __Reason:__ This change is made to make the naming more clear and consistent.
+
+**RecentGroupManager.java**
+`modules/apps/site/site-api/src/main/java/com/liferay/site/util/RecentGroupManager.java`
+
+* __Date:__ Dec. 5, 2023
+* __Ticket:__ [LPS-203260](https://liferay.atlassian.net/browse/LPS-203260)
+* __What changed:__ The class has been moved from the `com.lifereay.site.util` package to the `com.liferay.site.manager` package.
+modules/apps/site/site-api/src/main/java/com/liferay/site/util/RecentGroupManager.java was moved from com.liferay.site.util package to the com.liferay.site.manager package
+* __Reason:__ This change is made to match the class name to the package name.
+
+**GroupSearchProvider.java**
+`modules/apps/site/site-api/src/main/java/com/liferay/site/util/GroupSearchProvider.java`
+
+* __Date:__ Dec. 5, 2023
+* __Ticket:__ [LPS-203260](https://liferay.atlassian.net/browse/LPS-203260)
+* __What changed:__ The class has been moved from the `com.lifereay.site.util` package to the `com.liferay.site.manager` package.
+modules/apps/site/site-api/src/main/java/com/liferay/site/util/RecentGroupManager.java was moved from com.liferay.site.util package to the com.liferay.site.manager package
+* __Reason:__ This change is made to match the class name to the package name.
+
+**GroupURLProvider.java**
+`modules/apps/site/site-api/src/main/java/com/liferay/site/util/GroupURLProvider.java`
+
+* __Date:__ Dec. 5, 2023
+* __Ticket:__ [LPS-203260](https://liferay.atlassian.net/browse/LPS-203260)
+* __What changed:__ The class has been moved from the `com.lifereay.site.util` package to the `com.liferay.site.manager` package.
+modules/apps/site/site-api/src/main/java/com/liferay/site/util/RecentGroupManager.java was moved from com.liferay.site.util package to the com.liferay.site.manager package
+* __Reason:__ This change is made to match the class name to the package name.
+
+**SitemapURLProvider.java**
+`modules/apps/site/site-api/src/main/java/com/liferay/site/util/SitemapURLProvider.java`
+
+* __Date:__ Dec. 5, 2023
+* __Ticket:__ [LPS-203260](https://liferay.atlassian.net/browse/LPS-203260)
+* __What changed:__ The class has been moved from the `com.lifereay.site.util` package to the `com.liferay.site.manager` package.
+modules/apps/site/site-api/src/main/java/com/liferay/site/util/RecentGroupManager.java was moved from com.liferay.site.util package to the com.liferay.site.manager package
+* __Reason:__ This change is made to match the class name to the package name.
+
+**SitemapURLProviderHelper.java**
+`modules/apps/site/site-api/src/main/java/com/liferay/site/util/SitemapURLProviderHelper.java`
+
+* __Date:__ Dec. 5, 2023
+* __Ticket:__ [LPS-203260](https://liferay.atlassian.net/browse/LPS-203260)
+* __What changed:__ The class has been moved from the `com.lifereay.site.util` package to the `com.liferay.site.manager` package.
+modules/apps/site/site-api/src/main/java/com/liferay/site/util/RecentGroupManager.java was moved from com.liferay.site.util package to the com.liferay.site.manager package
+* __Reason:__ This change is made to match the class name to the package name.
+
+**APIApplicationPublisher.java**
+[`modules/apps/headless/headless-builder/headless-builder-api/src/main/java/com/liferay/headless/builder/application/publisher/APIApplicationPublisher.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/headless/headless-builder/headless-builder-api/src/main/java/com/liferay/headless/builder/application/publisher/APIApplicationPublisher.java)
+
+* __Date:__ Dec. 5, 2023
+* __Ticket:__ [LPS-203043](https://liferay.atlassian.net/browse/LPS-203043)
+* __What changed:__ A new clusterable method is added to publish all the applications for a given company.
+* __Reason:__ This change encapsulates the logic and potentially avoids intracluster calls.
+
+**SegmentsExperimentLocalServiceImpl.java**
+[`modules/apps/segments/segments-service/src/main/java/com/liferay/segments/service/impl/SegmentsExperimentLocalServiceImpl.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/segments/segments-service/src/main/java/com/liferay/segments/service/impl/SegmentsExperimentLocalServiceImpl.java)
+
+* __Date:__ Dec. 6, 2023
+* __Ticket:__ [LRAC-15144](https://liferay.atlassian.net/browse/LRAC-15144)
+* __What changed:__ The `runSegmentsExperiment` method has an added `Experiment` parameter.
+* __Reason:__ The new parameter is needed for the implementation logic.
+
+**SegmentsExperimentServiceImpl.java**
+[`modules/apps/segments/segments-service/src/main/java/com/liferay/segments/service/impl/SegmentsExperimentServiceImpl.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/segments/segments-service/src/main/java/com/liferay/segments/service/impl/SegmentsExperimentServiceImpl.java)
+
+* __Date:__ Dec. 6, 2023
+* __Ticket:__ [LRAC-15144](https://liferay.atlassian.net/browse/LRAC-15144)
+* __What changed:__ The `runSegmentsExperiment` method has an added `Experiment` parameter.
+* __Reason:__ The new parameter is needed for the implementation logic.
+
+**RatingsImporter.java**
+[`modules/apps/commerce/commerce-initializer-util/src/main/java/com/liferay/commerce/initializer/util/RatingsImporter.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/commerce/commerce-initializer-util/src/main/java/com/liferay/commerce/initializer/util/RatingsImporter.java)
+
+* __Date:__ Dec. 7, 2023
+* __Ticket:__ [LPS-199636](https://liferay.atlassian.net/browse/LPS-199636)
+* __What changed:__ The class is now removed.
+* __Reason:__ The class had no usage.
+
+[`modules/apps/cookies/cookies-impl/bnd.bnd`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/cookies/cookies-impl/bnd.bnd)
+
+* __Date:__ Dec. 7, 2023
+* __Ticket:__ [LPS-51404](https://liferay.atlassian.net/browse/LPS-51404)
+* __What changed:__ The major version is increased to `6.0.0`.
+
+**ObjectFolderLocalServiceImpl.java**
+[`modules/apps/object/object-service/src/main/java/com/liferay/object/service/impl/ObjectFolderLocalServiceImpl.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/object/object-service/src/main/java/com/liferay/object/service/impl/ObjectFolderLocalServiceImpl.java)
+
+* __Date:__ Dec. 12, 2023
+* __Ticket:__ [LPS-201520](https://liferay.atlassian.net/browse/LPS-201520)
+* __What changed:__ The `updateObjectFolder(String, long, Map<Locale, String>, List<ObjectFolderItem>)` method has the list of object folder items removed.
+* __Reason:__ Each object is able to update the object folder items they are associated with.
+
+**ObjectFolderServiceImpl.java**
+[`modules/apps/object/object-service/src/main/java/com/liferay/object/service/impl/ObjectFolderServiceImpl.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/object/object-service/src/main/java/com/liferay/object/service/impl/ObjectFolderServiceImpl.java)
+
+* __Date:__ Dec. 12, 2023
+* __Ticket:__ [LPS-201520](https://liferay.atlassian.net/browse/LPS-201520)
+* __What changed:__ The `updateObjectFolder(String, long, Map<Locale, String>, List<ObjectFolderItem>)` method has the list of object folder items removed.
+* __Reason:__ Each object is able to update the object folder items they are associated with.
+
+[`modules/apps/commerce/commerce-initializer-util/bnd.bnd`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/commerce/commerce-initializer-util/bnd.bnd)
+
+* __Date:__ Dec. 13, 2023
+* __Ticket:__ [LPS-199636](https://liferay.atlassian.net/browse/LPS-199636)
+* __What changed:__ The bundle's major version is increased to `9.0.0`.
+
+**rest-openapi.yaml**
+[`modules/apps/captcha/captcha-rest-impl/rest-openapi.yaml`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/captcha/captcha-rest-impl/rest-openapi.yaml)
+
+* __Date:__ Dec. 13, 2023
+* __Ticket:__ [LPS-185213](https://liferay.atlassian.net/browse/LPS-185213)
+* __What changed:__ The API is changed to provide separate `GET` and `POST` paths.
+* __Reason:__ This change simplifies the schemas.
+
+**CategoryFacetFieldConfiguration.java**
+[`modules/apps/portal-search/portal-search-api/src/main/java/com/liferay/portal/search/configuration/CategoryFacetFieldConfiguration.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/portal-search/portal-search-api/src/main/java/com/liferay/portal/search/configuration/CategoryFacetFieldConfiguration.java)
+
+* __Date:__ Dec. 17, 2023
+* __Ticket:__ [LPS-203720](https://liferay.atlassian.net/browse/LPS-203720)
+* __What changed:__ The class is now deleted.
+* __Reason:__ The `assetVocabularyCategoryIds` field is now used as the aggregation field for the Category Facet.
+
+**DefaultObjectEntryManagerImpl.java**
+[`modules/apps/object/object-rest-impl/src/main/java/com/liferay/object/rest/internal/manager/v1_0/DefaultObjectEntryManagerImpl.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/object/object-rest-impl/src/main/java/com/liferay/object/rest/internal/manager/v1_0/DefaultObjectEntryManagerImpl.java)
+
+* __Date:__ Dec. 18, 2023
+* __Ticket:__ [LPS-201793](https://liferay.atlassian.net/browse/LPS-201793)
+* __What changed:__ The `_addOrUpdateNestedObjectEntries` method adds a new `String` parameter for a `scopeKey`.
+* __Reason:__ This change allows the creation of site-scoped, nested object entries.
+
+**CommercePaymentEntryRefundType.java**
+[`modules/apps/commerce/commerce-payment-api/src/main/java/com/liferay/commerce/payment/entry/CommercePaymentEntryRefundType.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/commerce/commerce-payment-api/src/main/java/com/liferay/commerce/payment/entry/CommercePaymentEntryRefundType.java)
+
+* __Date:__ Dec. 19, 2023
+* __Ticket:__ [COMMERCE-12943](https://liferay.atlassian.net/browse/COMMERCE-12943)
+* __What changed:__ The new `getNameMap` method is added.
+* __Reason:__ This method is necessary to retrieve the name map in the service layer.
+
+**SitemapConfigurationManager.java**
+[`modules/apps/site/site-api/src/main/java/com/liferay/site/configuration/manager/SitemapConfigurationManager.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/site/site-api/src/main/java/com/liferay/site/configuration/manager/SitemapConfigurationManager.java)
+
+* __Date:__ Dec. 19, 2023
+* __Ticket:__ [LPS-203214](https://liferay.atlassian.net/browse/LPS-203214)
+* __What changed:__ The `includeCategories(long)`, `includePages(long)`, and `includeWebContent(long)` methods have been renamed to `includeCategoriesCompanyEnabled(long)`, `includePagesCompanyEnabled(long)`, and `includeWebContentCompanyEnabled(long)`, respectively. The new `includeCategoriesGroupEnabled(long, long)`, `includePagesGroupEnabled(long, long)`, `includeWebContentGroupEnabled(long, long)`, and `saveSitemapGroupConfiguration(long, boolean, boolean, boolean)` methods are also added.
+* __Reason:__ This change is made for clarity since a site configuration is being added.
+
+**StyleBookEntryLocalServiceImpl.java**
+[`modules/apps/style-book/style-book-service/src/main/java/com/liferay/style/book/service/impl/StyleBookEntryLocalServiceImpl.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/style-book/style-book-service/src/main/java/com/liferay/style/book/service/impl/StyleBookEntryLocalServiceImpl.java)
+
+* __Date:__ Dec. 19, 2023
+* __Ticket:__ [LPS-203973](https://liferay.atlassian.net/browse/LPS-203973)
+* __What changed:__ The `addStyleBookEntry(long, long, String, String, String, ServiceContext)` method adds a new `boolean` parameter for `defaultStyleBookeEntry`.
+* __Reason:__ This change allows a newly added style book to be made the default.
+
+**SXPParameterContributor.java**
+`modules/dxp/apps/search-experiences/search-experiences-service/src/main/java/com/liferay/search/experiences/internal/blueprint/parameter/contributor/SXPParameterContributor.java`
+
+* __Date:__ Dec. 20, 2023
+* __Ticket:__ [LPS-201309](https://liferay.atlassian.net/browse/LPS-201309)
+* __What changed:__ The `SXPParameterContributor` interface is moved to the `search-experiences-api` module.
+* __Reason:__ This change is needed for other modules to be able to access the interface.
+
+**AssetDisplayPageEntryFormProcessor.java**
+[`modules/apps/asset/asset-display-page-api/src/main/java/com/liferay/asset/display/page/portlet/AssetDisplayPageEntryFormProcessor.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/asset/asset-display-page-api/src/main/java/com/liferay/asset/display/page/portlet/AssetDisplayPageEntryFormProcessor.java)
+
+* __Date:__ Dec. 20, 2023
+* __Ticket:__ [LPS-202905](https://liferay.atlassian.net/browse/LPS-202905)
+* __What changed:__ The new `process(long, long, String, long, int, String, long, ServiceContext)` and `process(String, long, ServiceContext)` methods are added.
+* __Reason:__ The new method implementations make the class easier to use for services because they don't require a `PortletRequest` argument.
+
+**ObjectDefinitionTestUtil.java**
+[`modules/apps/object/object-rest-test-util/src/main/java/com/liferay/object/rest/test/util/ObjectDefinitionTestUtil.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/object/object-rest-test-util/src/main/java/com/liferay/object/rest/test/util/ObjectDefinitionTestUtil.java)
+
+* __Date:__ Dec. 27, 2023
+* __Ticket:__ [LPS-204463](https://liferay.atlassian.net/browse/LPS-204463)
+* __What changed:__ The `publishObjectDefinition(List<ObjectField>, String, long)` method is removed, and a new `publishObjectDefinition(String, List<ObjectField>, String)` is added.
+* __Reason:__ The name needs to be specified when publishing an object definition.
+
+**CommercePaymentEntryConstants.java**
+[`modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/constants/CommercePaymentEntryConstants.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/constants/CommercePaymentEntryConstants.java)
+
+* __Date:__ Dec. 28, 2023
+* __Ticket:__ [COMMERCE-12755](https://liferay.atlassian.net/browse/COMMERCE-12755)
+* __What changed:__ The `REFUND` constant field is renamed to `REFUNDED`.
+* __Reason:__ The constant was renamed for consistency.
+
+**FragmentWebKeys.java**
+[`modules/apps/fragment/fragment-api/src/main/java/com/liferay/fragment/constants/FragmentWebKeys.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/fragment/fragment-api/src/main/java/com/liferay/fragment/constants/FragmentWebKeys.java)
+
+* __Date:__ Dec. 30, 2023
+* __Ticket:__ [LPS-204724](https://liferay.atlassian.net/browse/LPS-204724)
+* __What changed:__ The `FRAGMENT_ENTRY_LINK` constant field is removed.
+* __Reason:__ This constant is no longer used.
+
+**FragmentPortletRenderer.java**
+[`modules/apps/fragment/fragment-api/src/main/java/com/liferay/fragment/renderer/FragmentPortletRenderer.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/fragment/fragment-api/src/main/java/com/liferay/fragment/renderer/FragmentPortletRenderer.java)
+        
+* __Date:__ Dec. 30, 2023
+* __Ticket:__ [LPS-204724](https://liferay.atlassian.net/browse/LPS-204724)
+* __What changed:__ The `renderPortlet` method now has a `FragmentEntryLink` parameter.
+* __Reason:__ The `FragmentEntryLink` is removed from the request.
+
+**SegmentsEntryLocalServiceUtil.java**
+[`modules/apps/segments/segments-api/src/main/java/com/liferay/segments/service/SegmentsEntryLocalServiceUtil.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/segments/segments-api/src/main/java/com/liferay/segments/service/SegmentsEntryLocalServiceUtil.java)
+
+* __Date:__ Jan. 4, 2024
+* __Ticket:__ [LPS-205013](https://liferay.atlassian.net/browse/LPS-205013)
+* __What changed:__ The `getSegmentsEntriesCount(long, boolean)`, `getSegmentsEntries(long, boolean, int, int, OrderByComparator)`, and `getSegmentsEntries(long, boolean, String, String, int, int, OrderByComparator)` methods each have the `boolean` parameter removed. The `searchSegmentsEntries(long, String, LinkedHashMap, int, int, Sort)` and `getSegmentsEntries(long, boolean, String, int, int, OrderByComparator)` methods are also removed.
+* __Reason:__ The API is updated to simplify the implementation logic.
+
+**SegmentsEntryServiceUtil.java**
+[`modules/apps/segments/segments-api/src/main/java/com/liferay/segments/service/SegmentsEntryServiceUtil.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/segments/segments-api/src/main/java/com/liferay/segments/service/SegmentsEntryServiceUtil.java)
+
+* __Date:__ Jan. 4, 2024
+* __Ticket:__ [LPS-205013](https://liferay.atlassian.net/browse/LPS-205013)
+* __What changed:__ The `getSegmentsEntries(long, boolean)`, `getSegmentsEntries(long, boolean, int, int, OrderByComparator)`, and `getSegmentsEntriesCount(long, boolean)` methods each have the `boolean` parameter removed. The `getSegmentsEntries(long, int, int, OrderByComparator)` and `getSegmentsEntriesCount(long)` methods are also removed.
+* __Reason:__ The API is updated to simplify the implementation logic.
+
+**JournalServiceConfiguration.java**
+[`modules/apps/journal/journal-api/src/main/java/com/liferay/journal/configuration/JournalServiceConfiguration.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/journal/journal-api/src/main/java/com/liferay/journal/configuration/JournalServiceConfiguration.java)
+
+* __Date:__ Jan. 4, 2024
+* __Ticket:__ [LPS-204945](https://liferay.atlassian.net/browse/LPS-204945)
+* __What changed:__ The `journalArticleStorageType` and `databaseContentKeywordSearchEnabled` methods are removed.
+* __Reason:__ These methods have no usage and are not considered in other areas of the code.
+
+**AntivirusAsyncStatisticsManager.java**
+[`modules/dxp/apps/antivirus/antivirus-async-store/src/main/java/com/liferay/antivirus/async/store/jmx/AntivirusAsyncStatisticsManager.java`](https://github.com/liferay/liferay-portal/blob/master/modules/dxp/apps/antivirus/antivirus-async-store/src/main/java/com/liferay/antivirus/async/store/jmx/AntivirusAsyncStatisticsManager.java)
+
+* __Date:__ Jan. 5, 2024
+* __Ticket:__ [LPS-202191](https://liferay.atlassian.net/browse/LPS-202191)
+* __What changed:__ The class no longer implements the `AntivirusStatisticsUpdaterAsyncEventListener` interface, so it no longer implements the `receive(Message)` method.
+* __Reason:__ The class was refactored to avoid publishing multiple services.
+
+**LayoutDisplayPageWebKeys.java**
+[`modules/apps/layout/layout-display-page-api/src/main/java/com/liferay/layout/display/page/constants/LayoutDisplayPageWebKeys.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/layout/layout-display-page-api/src/main/java/com/liferay/layout/display/page/constants/LayoutDisplayPageWebKeys.java)
+
+* __Date:__ Jan. 6, 2024
+* __Ticket:__ [LPS-204842](https://liferay.atlassian.net/browse/LPS-204842)
+* __What changed:__ The `DEFAULT_LAYOUT_DISPLAY` constant field is removed.
+* __Reason:__ The only usage of this constant was removed.
+
+**Field.java**
+[`modules/apps/portal-vulcan/portal-vulcan-api/src/main/java/com/liferay/portal/vulcan/batch/engine/Field.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/portal-vulcan/portal-vulcan-api/src/main/java/com/liferay/portal/vulcan/batch/engine/Field.java)
+
+* __Date:__ Jan. 7, 2024
+* __Ticket:__ [LPS-204467](https://liferay.atlassian.net/browse/LPS-204467)
+* __What changed:__ The `unsupportedFormats` JSON property is added.
+* __Reason:__ This change allows for checking if the batch engine supports a field.
+
+**ContentTransformerHandler.java**
+[`modules/apps/adaptive-media/adaptive-media-content-transformer-api/src/main/java/com/liferay/adaptive/media/content/transformer/ContentTransformerHandler.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/adaptive-media/adaptive-media-content-transformer-api/src/main/java/com/liferay/adaptive/media/content/transformer/ContentTransformerHandler.java)
+
+* __Date:__ Jan. 10, 2024
+* __Ticket:__ [LPS-203653](https://liferay.atlassian.net/browse/LPS-203653)
+* __What changed:__ The `transform(ContentTransformerContentType, T)` method is removed, and replaced with the `transform(String)` method.
+* __Reason:__ The content types were not used, and the logic supporting it was causing issues.
+
+**ContentTransformer.java**
+[`modules/apps/adaptive-media/adaptive-media-content-transformer-api/src/main/java/com/liferay/adaptive/media/content/transformer/ContentTransformer.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/adaptive-media/adaptive-media-content-transformer-api/src/main/java/com/liferay/adaptive/media/content/transformer/ContentTransformer.java)
+
+* __Date:__ Jan. 10, 2024
+* __Ticket:__ [LPS-203653](https://liferay.atlassian.net/browse/LPS-203653)
+* __What changed:__ The generic type is removed from the class, and the `getContentTransformerContentType` and `transform(T)` methods are removed. Instead, a `transform(String)` method is added.
+* __Reason:__ The content types were not used, and the logic supporting it was causing issues.
+
+**SegmentsCriteriaContributorRegistry.java**
+[`modules/apps/segments/segments-api/src/main/java/com/liferay/segments/criteria/contributor/SegmentsCriteriaContributorRegistry.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/segments/segments-api/src/main/java/com/liferay/segments/criteria/contributor/SegmentsCriteriaContributorRegistry.java)
+
+* __Date:__ Jan. 11, 2024
+* __Ticket:__ [LPS-205239](https://liferay.atlassian.net/browse/LPS-205239)
+* __What changed:__ The `String` parameter is removed from the `getSegmentsCriteriaContributors(String)` method. The `getSegmentsCriteriaContributors(String, Criteria.Type)` method is removed.
+* __Reason:__ This is an internal registry, and this change simplifies the API. The removed method implementation had no usage.
+
+**SegmentsEntryProviderRegistry.java**
+[`modules/apps/segments/segments-api/src/main/java/com/liferay/segments/provider/SegmentsEntryProviderRegistry.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/segments/segments-api/src/main/java/com/liferay/segments/provider/SegmentsEntryProviderRegistry.java)
+
+* __Date:__ Jan. 11, 2024
+* __Ticket:__ [LPS-205239](https://liferay.atlassian.net/browse/LPS-205239)
+* __What changed:__ The `getSegmentsEntryIds(long, String, long, Context)` method is removed. Instead, add the `segmentEntryIds` array parameter to use the `getSegmentsEntryId(long, String, long, Context, long[])` implementation.
+* __Reason:__ The removed method implementation was deprecated.
+
+**SegmentsEntryRetriever.java**
+[`modules/apps/segments/segments-api/src/main/java/com/liferay/segments/SegmentsEntryRetriever.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/segments/segments-api/src/main/java/com/liferay/segments/SegmentsEntryRetriever.java)
+
+* __Date:__ Jan. 11, 2024
+* __Ticket:__ [LPS-205239](https://liferay.atlassian.net/browse/LPS-205239)
+* __What changed:__ The `getSegmentsEntryIds(long, long, Context)` method is removed. Instead, add the `segmentEntryIds` array parameter to use the `getSegmentEntryIds(long, long, Context, long[])` implementation.
+* __Reason:__ The removed method implementation was deprecated.
+
+**CommerceMediaResolver.java**
+[`modules/apps/commerce/commerce-media-api/src/main/java/com/liferay/commerce/media/CommerceMediaResolver.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/commerce/commerce-media-api/src/main/java/com/liferay/commerce/media/CommerceMediaResolver.java)
+
+* __Date:__ Jan. 13, 2024
+* __Ticket:__ [COMMERCE-12776](https://liferay.atlassian.net/browse/COMMERCE-12776)
+* __What changed:__ The `getDownloadVirtualOrderItemURL` method now has an extra `long` parameter, for `fileEntryId`.
+* __Reason:__ The method must support specifying a file entry to download because you can now download more than one file at a time with an `OrderItem`.
+
+**service.xml**
+[`modules/apps/commerce/commerce-product-type-virtual-service/service.xml`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/commerce/commerce-product-type-virtual-service/service.xml)
+
+* __Date:__ Jan. 13, 2024
+* __Ticket:__ [COMMERCE-12776](https://liferay.atlassian.net/browse/COMMERCE-12776)
+* __What changed:__ The `fileEntryId` and `URL` columns are removed, and a one-to-many relationship is added with the `CPDVirtualSettingFileEntry` entity.
+* __Reason:__ `CPDefinitionVirtualSetting` and `CommerceVirtualOrderItem` must now handle multiple file entries.
+
+**service.xml**
+[`modules/apps/commerce/commerce-product-type-virtual-order-service/service.xml`](
+modules/apps/commerce/commerce-product-type-virtual-order-service/service.xml)
+
+* __Date:__ Jan. 13, 2024
+* __Ticket:__ [COMMERCE-12776](https://liferay.atlassian.net/browse/COMMERCE-12776)
+* __What changed:__ The `fileEntryId` and `URL` columns are removed, and a one-to-many relationship is added with the `CommerceVirtualOrderItemFileEntry` entity.
+* __Reason:__ `CPDefinitionVirtualSetting` and `CommerceVirtualOrderItem` must now handle multiple file entries.
+
+**CPDefinitionVirtualSettingLocalServiceImpl.java**
+[`modules/apps/commerce/commerce-product-type-virtual-service/src/main/java/com/liferay/commerce/product/type/virtual/service/impl/CPDefinitionVirtualSettingLocalServiceImpl.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/commerce/commerce-product-type-virtual-service/src/main/java/com/liferay/commerce/product/type/virtual/service/impl/CPDefinitionVirtualSettingLocalServiceImpl.java)
+
+* __Date:__ Jan. 13, 2024
+* __Ticket:__ [COMMERCE-12776](https://liferay.atlassian.net/browse/COMMERCE-12776)
+* __What changed:__ Some `add` method implementations are removed, and various other method signatures are changed to remove `fileEntryId` and `url` parameters.
+* __Reason:__ `CPDefinitionVirtualSetting` and `CommerceVirtualOrderItem` must now handle multiple file entries. The removed `add` implementations were redundant.
+
+**CommerceVirtualOrderItemLocalServiceImpl.java**
+[`modules/apps/commerce/commerce-product-type-virtual-order-service/src/main/java/com/liferay/commerce/product/type/virtual/order/service/impl/CommerceVirtualOrderItemLocalServiceImpl.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/commerce/commerce-product-type-virtual-order-service/src/main/java/com/liferay/commerce/product/type/virtual/order/service/impl/CommerceVirtualOrderItemLocalServiceImpl.java)
+
+* __Date:__ Jan. 13, 2024
+* __Ticket:__ [COMMERCE-12776](https://liferay.atlassian.net/browse/COMMERCE-12776)
+* __What changed:__ Various method signatures are changed to remove `fileEntryId` and `url` parameters.
+* __Reason:__ `CPDefinitionVirtualSetting` and `CommerceVirtualOrderItem` must now handle multiple file entries.
+
+**CommerceVirtualOrderItemServiceImpl.java**
+[`modules/apps/commerce/commerce-product-type-virtual-order-service/src/main/java/com/liferay/commerce/product/type/virtual/order/service/impl/CommerceVirtualOrderItemServiceImpl.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/commerce/commerce-product-type-virtual-order-service/src/main/java/com/liferay/commerce/product/type/virtual/order/service/impl/CommerceVirtualOrderItemServiceImpl.java)
+
+* __Date:__ Jan. 13, 2024
+* __Ticket:__ [COMMERCE-12776](https://liferay.atlassian.net/browse/COMMERCE-12776)
+* __What changed:__ Various method signatures are changed to remove `fileEntryId` and `url` parameters.
+* __Reason:__ `CPDefinitionVirtualSetting` and `CommerceVirtualOrderItem` must now handle multiple file entries.
+
+**CTClosureFactory.java**
+[`modules/apps/change-tracking/change-tracking-api/src/main/java/com/liferay/change/tracking/closure/CTClosureFactory.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/change-tracking/change-tracking-api/src/main/java/com/liferay/change/tracking/closure/CTClosureFactory.java)
+
+* __Date:__ Jan. 16, 2024
+* __Ticket:__ [LPS-203903](https://liferay.atlassian.net/browse/LPS-203903)
+* __What changed:__ A new `clearCache(long ctCollectionId)` method is added`.
+* __Reason:__ The new method implementation allows for caching `CTClosure` objects.
+
+**Levels.java**
+`modules/apps/portal/portal-log4j/src/main/java/com/liferay/portal/log4j/Levels.java`
+
+* __Date:__ Jan. 17, 2024
+* __Ticket:__ [LPS-200582](https://liferay.atlassian.net/browse/LPS-200582)
+* __What changed:__ The `Levels` class is removed.
+* __Reason:__ The class was deprecated.
+
+**AssetListEntryServiceImpl.java**
+[`modules/apps/asset/asset-list-service/src/main/java/com/liferay/asset/list/service/impl/AssetListEntryServiceImpl.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/asset/asset-list-service/src/main/java/com/liferay/asset/list/service/impl/AssetListEntryServiceImpl.java)
+
+* __Date:__ Jan. 22, 2024
+* __Ticket:__ [LPS-206304](https://liferay.atlassian.net/browse/LPS-206304)
+* __What changed:__ The `addDynamicAssetListEntry` and `addManualAssetListEntry` methods have removed the `long userId` parameter.
+* __Reason:__ This change avoids exposing user IDs to the remote service.
+
+**CommercePaymentMethodGroupRelLocalServiceImpl.java**
+[`modules/apps/commerce/commerce-payment-service/src/main/java/com/liferay/commerce/payment/service/impl/CommercePaymentMethodGroupRelLocalServiceImpl.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/commerce/commerce-payment-service/src/main/java/com/liferay/commerce/payment/service/impl/CommercePaymentMethodGroupRelLocalServiceImpl.java)
+
+* __Date:__ Jan. 24, 2024
+* __Ticket:__ [COMMERCE-12385](https://liferay.atlassian.net/browse/COMMERCE-12385)
+* __What changed:__ A new `updateCommercePaymentMethodGroupRel(CommercePaymentMethodGroupRel)` method is added.
+* __Reason:__ The new method implementation is necessary to update a `CommercePaymentMethodGroupRel` object.
+
+**ReflectionUtil.java**
+[`modules/core/petra/petra-reflect/src/main/java/com/liferay/petra/reflect/ReflectionUtil.java`](https://github.com/liferay/liferay-portal/blob/master/modules/core/petra/petra-reflect/src/main/java/com/liferay/petra/reflect/ReflectionUtil.java)
+
+* __Date:__ Jan. 25, 2024
+* __Ticket:__ [LPD-15179](https://liferay.atlassian.net/browse/LPD-15179)
+* __What changed:__ The `arrayClone` method is removed.
+* __Reason:__ The `arrayClone` method had no usage.
+
+**ObjectGraphUtil.java**
+[`modules/core/petra/petra-reflect/src/main/java/com/liferay/petra/reflect/ObjectGraphUtil.java`](https://github.com/liferay/liferay-portal/blob/master/modules/core/petra/petra-reflect/src/main/java/com/liferay/petra/reflect/ObjectGraphUtil.java)
+
+* __Date:__ Jan. 25, 2024
+* __Ticket:__ [LPD-15179](https://liferay.atlassian.net/browse/LPD-15179)
+* __What changed:__ The `ObjectGraphUtil` class is removed.
+* __Reason:__ The class had no usage.
+
+**SegmentsEntryServiceImpl.java**
+[`modules/apps/segments/segments-service/src/main/java/com/liferay/segments/service/impl/SegmentsEntryServiceImpl.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/segments/segments-service/src/main/java/com/liferay/segments/service/impl/SegmentsEntryServiceImpl.java)
+
+* __Date:__ Jan. 30, 2024
+* __Ticket:__ [LPS-206170](https://liferay.atlassian.net/browse/LPS-206170)
+* __What changed:__ Both `addSegmentsEntry` implementations have the `type` parameter removed. Update your implementation to remove the type from the method call.
+* __Reason:__ The `type` parameter always has the same value, so this change simplifies the API.
+
+**SegmentsEntryLocalServiceImpl.java**
+[`modules/apps/segments/segments-service/src/main/java/com/liferay/segments/service/impl/SegmentsEntryLocalServiceImpl.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/segments/segments-service/src/main/java/com/liferay/segments/service/impl/SegmentsEntryLocalServiceImpl.java)
+
+* __Date:__ Jan. 30, 2024
+* __Ticket:__ [LPS-206170](https://liferay.atlassian.net/browse/LPS-206170)
+* __What changed:__ Both `addSegmentsEntry` implementations have the `type` parameter removed. Update your implementation to remove the type from the method call.
+* __Reason:__ The `type` parameter always has the same value, so this change simplifies the API.
+
+**CountriesCommerceHealthStatus.java**
+`modules/apps/commerce/commerce-health-status-web/src/main/java/com/liferay/commerce/health/status/web/internal/CountriesCommerceHealthStatus.java`
+
+* __Date:__ Jan. 30, 2024
+* __Ticket:__ [LPD-15148](https://liferay.atlassian.net/browse/LPD-15148)
+* __What changed:__ The `CountriesCommerceHealthStatus` class is removed.
+* __Reason:__ The countries health check implementation did not provide value.
+
+**FragmentEntryLocalServiceUtil.java**
+[`modules/apps/fragment/fragment-api/src/main/java/com/liferay/fragment/service/FragmentEntryLocalServiceUtil.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/fragment/fragment-api/src/main/java/com/liferay/fragment/service/FragmentEntryLocalServiceUtil.java)
+
+* __Date:__ Feb. 6, 2024
+* __Ticket:__ [LPD-16310](https://liferay.atlassian.net/browse/LPD-16310)
+* __What changed:__ The `addFragmentEntry(long, long, long, String, String, String, String, String, boolean, String, String, long, int, String, int, ServiceContext)` and `updateEntry(long, long, long, String, String, String, String, boolean, String, String, long, String, int)` methods are removed.
+* __Reason:__ The methods are replaced with new `addFragmentEntry` and `updateFragmentEntry` methods, with updated parameters to improve fragment version logic.
+
+**FragmentEntryServiceUtil.java**
+[`modules/apps/fragment/fragment-api/src/main/java/com/liferay/fragment/service/FragmentEntryServiceUtil.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/fragment/fragment-api/src/main/java/com/liferay/fragment/service/FragmentEntryServiceUtil.java)
+        
+* __Date:__ Feb. 6, 2024
+* __Ticket:__ [LPD-16310](https://liferay.atlassian.net/browse/LPD-16310)
+* __What changed:__ The `addFragmentEntry(long, long, long, String, String, String, String, String, boolean, String, String, long, int, String, int, ServiceContext)` and `updateEntry(long, long, long, String, String, String, String, boolean, String, String, long, String, int)` methods are removed.
+* __Reason:__ The methods are replaced with new `addFragmentEntry` and `updateFragmentEntry` methods, with updated parameters to improve fragment version logic.
+
+**GroupSearchProvider.java**
+`modules/apps/site/site-api/src/main/java/com/liferay/site/provider/GroupSearchProvider.java`
+
+* __Date:__ Feb. 6, 2024
+* __Ticket:__ [LPD-16643](https://liferay.atlassian.net/browse/LPD-16643)
+* __What changed:__ `GroupSearchProvider` is now a static class, and the `getGroupSearch(PortletRequest, PortletURL)` method is removed.
+* __Reason:__ The `GroupSearchProvider` is an internal API class, and the change better aligns with its use case.
+
+**SiteWebKeys.java**
+[`modules/apps/site/site-api/src/main/java/com/liferay/site/constants/SiteWebKeys.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/site/site-api/src/main/java/com/liferay/site/constants/SiteWebKeys.java)
+
+* __Date:__ Feb. 6, 2024
+* __Ticket:__ [LPD-16643](https://liferay.atlassian.net/browse/LPD-16643)
+* __What changed:__ The `GROUP_SEARCH_PROVIDER` is removed.
+* __Reason:__ The `GROUP_SEARCH_PROVIDER` was meant for internal use and no longer has any usage.
+
+**ObjectFieldLocalServiceImpl.java**
+[`modules/apps/object/object-service/src/main/java/com/liferay/object/service/impl/ObjectFieldLocalServiceImpl.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/object/object-service/src/main/java/com/liferay/object/service/impl/ObjectFieldLocalServiceImpl.java)
+
+* __Date:__ Feb. 6, 2024
+* __Ticket:__ [LPD-15616](https://liferay.atlassian.net/browse/LPD-15616)
+* __What changed:__ The `validateRequired` method's parameters are reordered with a new `boolean` parameter.
+* __Reason:__ This change is necessary for object definition validation.
+
+**BatchEngineTaskItemDelegateRegistry.java**
+[`modules/apps/batch-engine/batch-engine-api/src/main/java/com/liferay/batch/engine/BatchEngineTaskItemDelegateRegistry.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/batch-engine/batch-engine-api/src/main/java/com/liferay/batch/engine/BatchEngineTaskItemDelegateRegistry.java)
+
+* __Date:__ Feb. 8, 2024
+* __Ticket:__ [LPD-15236](https://liferay.atlassian.net/browse/LPD-15236)
+* __What changed:__ The `getBatchEngineTaskItemDelegate` method has a new `long` parameter for a company ID.
+* __Reason:__ The `BatchEngineTaskItemDelegate` needs a way to be retrieved by company ID.
+
+**CommercePortletKeys.java**
+`modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/constants/CommercePortletKeys.java`
+
+* __Date:__ Mar. 18, 2024
+* __Ticket:__ [LPD-15148](https://liferay.atlassian.net/browse/LPD-15148)
+* __What changed:__ The `CommercePortletKeys` class is removed.
+* __Reason:__ The Commerce Country portlet is removed.
+
+**CommerceCountryPanelApp.java**
+`modules/apps/commerce/commerce-address-web/src/main/java/com/liferay/commerce/address/web/internal/application/list/CommerceCountryPanelApp.java`
+
+* __Date:__ Mar. 18, 2024
+* __Ticket:__ [LPD-15148](https://liferay.atlassian.net/browse/LPD-15148)
+* __What changed:__ The `CommerceCountryPanelApp` class is removed.
+* __Reason:__ The Commerce Country portlet is removed.
+
+**CommerceCountryScreenNavigationConstants.java**
+`modules/apps/commerce/commerce-address-web/src/main/java/com/liferay/commerce/address/web/internal/constants/CommerceCountryScreenNavigationConstants.java`
+
+* __Date:__ Mar. 18, 2024
+* __Ticket:__ [LPD-15148](https://liferay.atlassian.net/browse/LPD-15148)
+* __What changed:__ The `CommerceCountryScreenNavigationConstants` class is removed.
+* __Reason:__ The Commerce Country portlet is removed.
+
+**BaseCommerceCountriesDisplayContext.java**
+`modules/apps/commerce/commerce-address-web/src/main/java/com/liferay/commerce/address/web/internal/display/context/BaseCommerceCountriesDisplayContext.java`
+
+* __Date:__ Mar. 18, 2024
+* __Ticket:__ [LPD-15148](https://liferay.atlassian.net/browse/LPD-15148)
+* __What changed:__ The `BaseCommerceCountriesDisplayContext` class is removed.
+* __Reason:__ The Commerce Country portlet is removed.
+
+**CommerceCountriesDisplayContext.java**
+`modules/apps/commerce/commerce-address-web/src/main/java/com/liferay/commerce/address/web/internal/display/context/CommerceCountriesDisplayContext.java`
+
+* __Date:__ Mar. 18, 2024
+* __Ticket:__ [LPD-15148](https://liferay.atlassian.net/browse/LPD-15148)
+* __What changed:__ The `CommerceCountriesDisplayContext` class is removed.
+* __Reason:__ The Commerce Country portlet is removed.
+
+**CommerceCountriesManagementToolbarDisplayContext.java**
+`modules/apps/commerce/commerce-address-web/src/main/java/com/liferay/commerce/address/web/internal/display/context/CommerceCountriesManagementToolbarDisplayContext.java`
+
+* __Date:__ Mar. 18, 2024
+* __Ticket:__ [LPD-15148](https://liferay.atlassian.net/browse/LPD-15148)
+* __What changed:__ The `CommerceCountriesManagementToolbarDisplayContext` class is removed.
+* __Reason:__ The Commerce Country portlet is removed.
+
+**CommerceRegionsDisplayContext.java**
+`modules/apps/commerce/commerce-address-web/src/main/java/com/liferay/commerce/address/web/internal/display/context/CommerceRegionsDisplayContext.java`
+
+* __Date:__ Mar. 18, 2024
+* __Ticket:__ [LPD-15148](https://liferay.atlassian.net/browse/LPD-15148)
+* __What changed:__ The `CommerceRegionsDisplayContext` class is removed.
+* __Reason:__ The Commerce Country portlet is removed.
+
+**CommerceRegionsManagementToolbarDisplayContext.java**
+`modules/apps/commerce/commerce-address-web/src/main/java/com/liferay/commerce/address/web/internal/display/context/CommerceRegionsManagementToolbarDisplayContext.java`
+
+* __Date:__ Mar. 18, 2024
+* __Ticket:__ [LPD-15148](https://liferay.atlassian.net/browse/LPD-15148)
+* __What changed:__ The `CommerceRegionsManagementToolbarDisplayContext` class is removed.
+* __Reason:__ The Commerce Country portlet is removed.
+
+**CommerceCountryRequestHelper.java**
+`modules/apps/commerce/commerce-address-web/src/main/java/com/liferay/commerce/address/web/internal/display/context/helper/CommerceCountryRequestHelper.java`
+
+* __Date:__ Mar. 18, 2024
+* __Ticket:__ [LPD-15148](https://liferay.atlassian.net/browse/LPD-15148)
+* __What changed:__ The `CommerceCountryRequestHelper` class is removed.
+* __Reason:__ The Commerce Country portlet is removed.
+
+**CommerceCountryChannelsScreenNavigationCategory.java**
+`modules/apps/commerce/commerce-address-web/src/main/java/com/liferay/commerce/address/web/internal/frontend/taglib/servlet/taglib/CommerceCountryChannelsScreenNavigationCategory.java`
+
+* __Date:__ Mar. 18, 2024
+* __Ticket:__ [LPD-15148](https://liferay.atlassian.net/browse/LPD-15148)
+* __What changed:__ The `CommerceCountryChannelsScreenNavigationCategory` class is removed.
+* __Reason:__ The Commerce Country portlet is removed.
+
+**CommerceCountryChannelsScreenNavigationEntry.java**
+`modules/apps/commerce/commerce-address-web/src/main/java/com/liferay/commerce/address/web/internal/frontend/taglib/servlet/taglib/CommerceCountryChannelsScreenNavigationEntry.java`
+
+* __Date:__ Mar. 18, 2024
+* __Ticket:__ [LPD-15148](https://liferay.atlassian.net/browse/LPD-15148)
+* __What changed:__ The `CommerceCountryChannelsScreenNavigationEntry` class is removed.
+* __Reason:__ The Commerce Country portlet is removed.
+
+**CommerceCountryDetailsScreenNavigationCategory.java**
+`modules/apps/commerce/commerce-address-web/src/main/java/com/liferay/commerce/address/web/internal/frontend/taglib/servlet/taglib/CommerceCountryDetailsScreenNavigationCategory.java`
+
+* __Date:__ Mar. 18, 2024
+* __Ticket:__ [LPD-15148](https://liferay.atlassian.net/browse/LPD-15148)
+* __What changed:__ The `CommerceCountryDetailsScreenNavigationCategory` class is removed.
+* __Reason:__ The Commerce Country portlet is removed.
+
+**CommerceCountryDetailsScreenNavigationEntry.java**
+`modules/apps/commerce/commerce-address-web/src/main/java/com/liferay/commerce/address/web/internal/frontend/taglib/servlet/taglib/CommerceCountryDetailsScreenNavigationEntry.java`
+
+* __Date:__ Mar. 18, 2024
+* __Ticket:__ [LPD-15148](https://liferay.atlassian.net/browse/LPD-15148)
+* __What changed:__ The `CommerceCountryDetailsScreenNavigationEntry` class is removed.
+* __Reason:__ The Commerce Country portlet is removed.
+
+**CommerceCountryRegionsScreenNavigationCategory.java**
+`modules/apps/commerce/commerce-address-web/src/main/java/com/liferay/commerce/address/web/internal/frontend/taglib/servlet/taglib/CommerceCountryRegionsScreenNavigationCategory.java`
+
+* __Date:__ Mar. 18, 2024
+* __Ticket:__ [LPD-15148](https://liferay.atlassian.net/browse/LPD-15148)
+* __What changed:__ The `CommerceCountryRegionsScreenNavigationCategory` class is removed.
+* __Reason:__ The Commerce Country portlet is removed.
+
+**CommerceCountryRegionsScreenNavigationEntry.java**
+`modules/apps/commerce/commerce-address-web/src/main/java/com/liferay/commerce/address/web/internal/frontend/taglib/servlet/taglib/CommerceCountryRegionsScreenNavigationEntry.java`
+
+* __Date:__ Mar. 18, 2024
+* __Ticket:__ [LPD-15148](https://liferay.atlassian.net/browse/LPD-15148)
+* __What changed:__ The `CommerceCountryRegionsScreenNavigationEntry` class is removed.
+* __Reason:__ The Commerce Country portlet is removed.
+
+**CommerceCountryPortlet.java**
+`modules/apps/commerce/commerce-address-web/src/main/java/com/liferay/commerce/address/web/internal/portlet/CommerceCountryPortlet.java`
+
+* __Date:__ Mar. 18, 2024
+* __Ticket:__ [LPD-15148](https://liferay.atlassian.net/browse/LPD-15148)
+* __What changed:__ The `CommerceCountryPortlet` class is removed.
+* __Reason:__ The Commerce Country portlet is removed.
+
+**EditCommerceCountryMVCActionCommand.java**
+`modules/apps/commerce/commerce-address-web/src/main/java/com/liferay/commerce/address/web/internal/portlet/action/EditCommerceCountryMVCActionCommand.java`
+
+* __Date:__ Mar. 18, 2024
+* __Ticket:__ [LPD-15148](https://liferay.atlassian.net/browse/LPD-15148)
+* __What changed:__ The `EditCommerceCountryMVCActionCommand` class is removed.
+* __Reason:__ The Commerce Country portlet is removed.
+
+**EditCommerceCountryMVCRenderCommand.java**
+`modules/apps/commerce/commerce-address-web/src/main/java/com/liferay/commerce/address/web/internal/portlet/action/EditCommerceCountryMVCRenderCommand.java`
+
+* __Date:__ Mar. 18, 2024
+* __Ticket:__ [LPD-15148](https://liferay.atlassian.net/browse/LPD-15148)
+* __What changed:__ The `EditCommerceCountryMVCRenderCommand` class is removed.
+* __Reason:__ The Commerce Country portlet is removed.
+
+**EditCommerceRegionMVCActionCommand.java**
+`modules/apps/commerce/commerce-address-web/src/main/java/com/liferay/commerce/address/web/internal/portlet/action/EditCommerceRegionMVCActionCommand.java`
+
+* __Date:__ Mar. 18, 2024
+* __Ticket:__ [LPD-15148](https://liferay.atlassian.net/browse/LPD-15148)
+* __What changed:__ The `EditCommerceRegionMVCActionCommand` class is removed.
+* __Reason:__ The Commerce Country portlet is removed.
+
+**EditCommerceRegionMVCRenderCommand.java**
+`modules/apps/commerce/commerce-address-web/src/main/java/com/liferay/commerce/address/web/internal/portlet/action/EditCommerceRegionMVCRenderCommand.java`
+
+* __Date:__ Mar. 18, 2024
+* __Ticket:__ [LPD-15148](https://liferay.atlassian.net/browse/LPD-15148)
+* __What changed:__ The `EditCommerceRegionMVCRenderCommand` class is removed.
+* __Reason:__ The Commerce Country portlet is removed.
+
+**ImportCommerceRegionsMVCActionCommand.java**
+`modules/apps/commerce/commerce-address-web/src/main/java/com/liferay/commerce/address/web/internal/portlet/action/ImportCommerceRegionsMVCActionCommand.java`
+
+* __Date:__ Mar. 18, 2024
+* __Ticket:__ [LPD-15148](https://liferay.atlassian.net/browse/LPD-15148)
+* __What changed:__ The `ImportCommerceRegionsMVCActionCommand` class is removed.
+* __Reason:__ The Commerce Country portlet is removed.
+
+**ActionHelper.java**
+`modules/apps/commerce/commerce-address-web/src/main/java/com/liferay/commerce/address/web/internal/portlet/action/helper/ActionHelper.java`
+
+* __Date:__ Mar. 18, 2024
+* __Ticket:__ [LPD-15148](https://liferay.atlassian.net/browse/LPD-15148)
+* __What changed:__ The `ActionHelper` class is removed.
+* __Reason:__ The Commerce Country portlet is removed.
+
+**channels.jsp**
+`modules/apps/commerce/commerce-address-web/src/main/resources/META-INF/resources/commerce_country/channels.jsp`
+
+* __Date:__ Mar. 18, 2024
+* __Ticket:__ [LPD-15148](https://liferay.atlassian.net/browse/LPD-15148)
+* __What changed:__ The `channels.jsp` file is removed.
+* __Reason:__ The Commerce Country portlet is removed.
+
+**commerce_regions.jsp**
+`modules/apps/commerce/commerce-address-web/src/main/resources/META-INF/resources/commerce_country/commerce_regions.jsp`
+
+* __Date:__ Mar. 18, 2024
+* __Ticket:__ [LPD-15148](https://liferay.atlassian.net/browse/LPD-15148)
+* __What changed:__ The `commerce_regions.jsp` file is removed.
+* __Reason:__ The Commerce Country portlet is removed.
+
+**details.jsp**
+`modules/apps/commerce/commerce-address-web/src/main/resources/META-INF/resources/commerce_country/details.jsp`
+
+* __Date:__ Mar. 18, 2024
+* __Ticket:__ [LPD-15148](https://liferay.atlassian.net/browse/LPD-15148)
+* __What changed:__ The `details.jsp` file is removed.
+* __Reason:__ The Commerce Country portlet is removed.
+
+**commerce_country_action.jsp**
+`modules/apps/commerce/commerce-address-web/src/main/resources/META-INF/resources/commerce_country_action.jsp`
+
+* __Date:__ Mar. 18, 2024
+* __Ticket:__ [LPD-15148](https://liferay.atlassian.net/browse/LPD-15148)
+* __What changed:__ The `commerce_country_action.jsp` file is removed.
+* __Reason:__ The Commerce Country portlet is removed.
+
+**commerce_region_action.jsp**
+`modules/apps/commerce/commerce-address-web/src/main/resources/META-INF/resources/commerce_region_action.jsp`
+
+* __Date:__ Mar. 18, 2024
+* __Ticket:__ [LPD-15148](https://liferay.atlassian.net/browse/LPD-15148)
+* __What changed:__ The `commerce_region_action.jsp` file is removed.
+* __Reason:__ The Commerce Country portlet is removed.
+
+`modules/apps/commerce/commerce-address-web/src/main/resources/META-INF/resources/css/main.scss`
+
+* __Date:__ Mar. 18, 2024
+* __Ticket:__ [LPD-15148](https://liferay.atlassian.net/browse/LPD-15148)
+* __What changed:__ The `commerce-address-web` module's `main.scss` file is removed.
+* __Reason:__ The Commerce Country portlet is removed.
+
+**edit_commerce_country.jsp**
+`modules/apps/commerce/commerce-address-web/src/main/resources/META-INF/resources/edit_commerce_country.jsp`
+
+* __Date:__ Mar. 18, 2024
+* __Ticket:__ [LPD-15148](https://liferay.atlassian.net/browse/LPD-15148)
+* __What changed:__ The `edit_commerce_country.jsp` file is removed.
+* __Reason:__ The Commerce Country portlet is removed.
+
+**edit_commerce_region.jsp**
+`modules/apps/commerce/commerce-address-web/src/main/resources/META-INF/resources/edit_commerce_region.jsp`
+
+* __Date:__ Mar. 18, 2024
+* __Ticket:__ [LPD-15148](https://liferay.atlassian.net/browse/LPD-15148)
+* __What changed:__ The `edit_commerce_region.jsp` file is removed.
+* __Reason:__ The Commerce Country portlet is removed.
+
+**CommerceCountriesManagementToolbarPropsTransformer.js**
+`modules/apps/commerce/commerce-address-web/src/main/resources/META-INF/resources/js/CommerceCountriesManagementToolbarPropsTransformer.js`
+
+* __Date:__ Mar. 18, 2024
+* __Ticket:__ [LPD-15148](https://liferay.atlassian.net/browse/LPD-15148)
+* __What changed:__ The `CommerceCountriesManagementToolbarPropsTransformer.js` file is removed.
+* __Reason:__ The Commerce Country portlet is removed.
+
+**CommerceRegionsManagementToolbarPropsTransformer.js**
+`modules/apps/commerce/commerce-address-web/src/main/resources/META-INF/resources/js/CommerceRegionsManagementToolbarPropsTransformer.js`
+
+* __Date:__ Mar. 18, 2024
+* __Ticket:__ [LPD-15148](https://liferay.atlassian.net/browse/LPD-15148)
+* __What changed:__ The `CommerceRegionsManagementToolbarPropsTransformer.js` file is removed.
+* __Reason:__ The Commerce Country portlet is removed.
+
+`modules/apps/commerce/commerce-address-web/src/main/resources/META-INF/resources/view.jsp`
+
+* __Date:__ Mar. 18, 2024
+* __Ticket:__ [LPD-15148](https://liferay.atlassian.net/browse/LPD-15148)
+* __What changed:__ The `commerce-address-web` module's `view.jsp` file is removed.
+* __Reason:__ The Commerce Country portlet is removed.
+
 ## 2023 Q4 Release
 
 ### Changes in Liferay DXP

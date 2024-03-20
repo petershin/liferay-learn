@@ -15,15 +15,12 @@ Publications provides a convenient and flexible way for you and your teams to de
 
 [$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/8N6djs7Gcs4
 
-```{important}
-Staging and Publications cannot be enabled at the same time. If Staging is enabled on any of your sites, you must first disable Staging before enabling Publications. See [Disabling Local Live Staging](../staging/configuring-local-live-staging.md#disabling-local-live-staging) and [Disabling Remote Live Staging](../staging/configuring-remote-live-staging.md#disabling-remote-live-staging) for more information.
+!!! important
+    Staging and Publications cannot be enabled at the same time. If Staging is enabled on any of your sites, you must first disable Staging before enabling Publications. See [Disabling Local Live Staging](../staging/configuring-local-live-staging.md#disabling-local-live-staging) and [Disabling Remote Live Staging](../staging/configuring-remote-live-staging.md#disabling-remote-live-staging) for more information.
 
-[Workflow](../../../process-automation/workflow/introduction-to-workflow.md) cannot be used with Publications in Liferay 7.3.
-```
+    [Workflow](../../../process-automation/workflow/introduction-to-workflow.md) cannot be used with Publications in Liferay 7.3.
 
 ## How to Enable Publications
-
-Follow these steps to enable Publications:
 
 1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), go to the *Applications* tab, and click *Publications*.
 
@@ -33,9 +30,8 @@ Follow these steps to enable Publications:
 
 1. (Optional) Toggle *Sandbox Only* mode. While enabled, users are directed automatically to their last working publication when they log in. If they don't have one, a new publication is generated for them using the `screen.name - date` naming pattern. You can use publication templates to set default values for these auto-generated publications. See [Using Publication Templates](./using-publication-templates.md) for more information.
 
-   ```{tip}
-   Using Sandbox Only can help reduce accidental edits to production.
-   ```
+   !!! tip
+       Using Sandbox Only can help reduce accidental edits to production.
 
 1. (Optional) Enable *Allow Unapproved Changes* to let users publish unapproved changes to production.
 
@@ -61,9 +57,8 @@ If desired, you can disable Publications at any time via the Publications applic
 
 1. Click *Save*.
 
-```{important}
-Once disabled, all active publications are deactivated, scheduled publications are canceled, and you can no longer access your publication history. However, Liferay retains your instance's publication history, so you can access it again if you re-enable Publications.
-```
+!!! important
+    Once disabled, all active publications are deactivated, scheduled publications are canceled, and you can no longer access your publication history. However, Liferay retains your instance's publication history, so you can access it again if you re-enable Publications.
 
 ## Enabling Publications for 7.3.x
 
@@ -89,12 +84,11 @@ If desired, you can disable Publications at any time via the Publications *Setti
 
 1. Click *Submit*.
 
-```{important}
-Once disabled, all active publications are deactivated, scheduled publications are canceled, and you can no longer access your publication history. DXP, however, retains your instance's publication history, so you can access it again if you re-enable Publications.
-```
+!!! important
+    Once disabled, all active publications are deactivated, scheduled publications are canceled, and you can no longer access your publication history. DXP, however, retains your instance's publication history, so you can access it again if you re-enable Publications.
 
 ## Related Topics
 
-* [Publications Overview](../publications.md)
-* [Creating and Managing Publications](./creating-and-managing-publications.md)
-* [Making and Publishing Changes](./making-and-publishing-changes.md)
+- [Publications Overview](../publications.md)
+- [Creating and Managing Publications](./creating-and-managing-publications.md)
+- [Making and Publishing Changes](./making-and-publishing-changes.md)

@@ -23,7 +23,7 @@
 
 Index Actions에서는 Liferay의 데이터를 다시 인덱싱할 수 있습니다.
 
-![Re-index using the Index Actions user interface.](./search-administration/images/05.png)
+![Reindex using the Index Actions user interface.](./search-administration/images/05.png)
 
 다음 수준 중 하나에서 다시 색인을 생성할 수 있습니다.
 
@@ -34,22 +34,22 @@ Index Actions에서는 Liferay의 데이터를 다시 인덱싱할 수 있습니
 
 1. [Liferay 2023.Q4+/GA 102+] 리인덱싱 모드를 선택하세요.
 
-   ![Choose the re-indexing mode.](./re-indexing-modes/images/01.png)
+   ![Choose the reindexing mode.](./reindexing-modes/images/01.png)
 
-   Liferay 7.4 2023.Q4 이상(업데이트/GA 102+)에서는 검색 중단 시간을 방지하기 위해 재색인 모드를 구성할 수 있습니다. 도입된 **Concurrent** 및 **Sync** 모드에 대해 알아보려면 [재인덱싱 모드](./re-indexing-modes.md) 을 참조하세요.
+   Liferay 7.4 2023.Q4 이상(업데이트/GA 102+)에서는 검색 중단 시간을 방지하기 위해 재색인 모드를 구성할 수 있습니다. 도입된 **Concurrent** 및 **Sync** 모드에 대해 알아보려면 [재인덱싱 모드](./reindexing-modes.md) 을 참조하세요.
 
 1. [Liferay 7.4] 실행 범위 탭을 사용하여 다시 인덱싱할 인스턴스를 선택합니다.
 
-   ![Select the instances to re-index.](./search-administration/images/03.png)
+   ![Select the instances to reindex.](./search-administration/images/03.png)
 
    Liferay 7.4부터 재색인 작업 범위를 특정 [가상 인스턴스](../../system-administration/configuring-liferay/virtual-instances/understanding-virtual-instances.md)로 제한할 수 있습니다.
 
 1. [Liferay 2023.Q4+/GA 102+] 대화상자에서 **실행** 을 클릭하여 재인덱싱을 확인하세요.
 
-   ![Confirm that you'd like to re-index.](./search-administration/images/04.png)
+   ![Confirm that you'd like to reindex.](./search-administration/images/04.png)
 
 ```{note}
-[워크플로 지표](../../process-automation/workflow/using-workflows/using-workflow-metrics.md) 은 애플리케이션의 전용 설정 메뉴를 통해 다시 색인화됩니다. 전역 메뉴의 애플리케이션 &rarr; 워크플로 섹션에서 _Metrics_를 클릭한 다음 설정 창(![옵션](../../images/icon-actions.png))을 엽니다. 자세한 내용은 [작업 흐름 지표 다시 인덱싱](../../process-automation/workflow/using-workflows/using-workflow-metrics.md#re-indexing-workflow-metrics) 참조하세요.
+[워크플로 지표](../../process-automation/workflow/using-workflows/using-workflow-metrics.md) 은 애플리케이션의 전용 설정 메뉴를 통해 다시 색인화됩니다. 전역 메뉴의 애플리케이션 &rarr; 워크플로 섹션에서 _Metrics_를 클릭한 다음 설정 창(![옵션](../../images/icon-actions.png))을 엽니다. 자세한 내용은 [작업 흐름 지표 다시 인덱싱](../../process-automation/workflow/using-workflows/using-workflow-metrics.md#reindexing-workflow-metrics) 참조하세요.
 ```
 
 ### 모든 콘텐츠 다시 색인화

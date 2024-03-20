@@ -23,7 +23,7 @@
 
 Index Actionsでは、Liferayのデータのインデックスを再作成することができます。
 
-![Re-index using the Index Actions user interface.](./search-administration/images/05.png)
+![Reindex using the Index Actions user interface.](./search-administration/images/05.png)
 
 これらのレベルのいずれかでインデックスを再作成することができます：
 
@@ -34,22 +34,22 @@ Index Actionsでは、Liferayのデータのインデックスを再作成する
 
 1. [Liferay 2023.Q4+/GA 102+] リインデックスモードを選択します。
 
-   ![Choose the re-indexing mode.](./re-indexing-modes/images/01.png)
+   ![Choose the reindexing mode.](./reindexing-modes/images/01.png)
 
-   Liferay 7.4 2023.Q4以降（Update/GA 102+）では、検索のダウンタイムを避けるために再インデックスのモードを設定することができます。 導入された **Concurrent** モードと **Sync** モードについては、 [再インデックス・モード](./re-indexing-modes.md) を参照のこと。
+   Liferay 7.4 2023.Q4以降（Update/GA 102+）では、検索のダウンタイムを避けるために再インデックスのモードを設定することができます。 導入された **Concurrent** モードと **Sync** モードについては、 [再インデックス・モード](./reindexing-modes.md) を参照のこと。
 
 1. [Liferay 7.4] 実行スコープタブで再インデックスするインスタンスを選択します。
 
-   ![Select the instances to re-index.](./search-administration/images/03.png)
+   ![Select the instances to reindex.](./search-administration/images/03.png)
 
    Liferay 7.4 以降、再インデックスアクションの範囲を特定の [バーチャルインスタンス](../../system-administration/configuring-liferay/virtual-instances/understanding-virtual-instances.md) に限定することができます。
 
 1. [Liferay 2023.Q4+/GA 102+] 再インデックスを確認するダイアログで **Execute** をクリックします。
 
-   ![Confirm that you'd like to re-index.](./search-administration/images/04.png)
+   ![Confirm that you'd like to reindex.](./search-administration/images/04.png)
 
 ```{note}
-[Workflow Metrics](../../process-automation/workflow/using-workflows/using-workflow-metrics.md) は、アプリケーションの専用設定メニューから再インデックス化されます。 グローバルメニューの［アプリケーション］ &rarr; ［ワークフロー］セクションの［_Metrics_］をクリックし、［設定］ウィンドウを開きます (![Options](../../images/icon-actions.png))。 詳しくは [Re-Indexing Workflow Metrics](../../process-automation/workflow/using-workflows/using-workflow-metrics.md#re-indexing-workflow-metrics) を参照。
+[Workflow Metrics](../../process-automation/workflow/using-workflows/using-workflow-metrics.md) は、アプリケーションの専用設定メニューから再インデックス化されます。 グローバルメニューの［アプリケーション］ &rarr; ［ワークフロー］セクションの［_Metrics_］をクリックし、［設定］ウィンドウを開きます (![Options](../../images/icon-actions.png))。 詳しくは [Reindexing Workflow Metrics](../../process-automation/workflow/using-workflows/using-workflow-metrics.md#reindexing-workflow-metrics) を参照。
 ```
 
 ### 全コンテンツの再インデックス化

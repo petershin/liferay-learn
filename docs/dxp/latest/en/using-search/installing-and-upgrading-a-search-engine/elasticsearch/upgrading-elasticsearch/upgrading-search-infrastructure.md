@@ -25,9 +25,9 @@ While upgrading Liferay, you must account for the search experience when using E
 
 1. [Upgrade Liferay.](../../../../installation-and-upgrades/upgrading-liferay/upgrade-basics.md)
 
-1. [Re-index the search indexes and spell check dictionaries.](../../../../installation-and-upgrades/upgrading-liferay/upgrade-basics/post-upgrade-considerations.md)
+1. [Reindex the search indexes and spell check dictionaries.](../../../../installation-and-upgrades/upgrading-liferay/upgrade-basics/post-upgrade-considerations.md)
 
-   Don't forget to re-index the [Workflow Metrics indexes.](../../../../process-automation/workflow/using-workflows/using-workflow-metrics.md#re-indexing-workflow-metrics)
+   Don't forget to reindex the [Workflow Metrics indexes.](../../../../process-automation/workflow/using-workflows/using-workflow-metrics.md#reindexing-workflow-metrics)
 
 1. [Test the search experience](#test-the-upgraded-search-experience) in the upgraded system to ensure everything is working as expected.
 

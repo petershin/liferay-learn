@@ -66,7 +66,7 @@ This tutorial assumes that you have a Service Builder application that is alread
 !!! note
    The `ModelSearchConfigurator` pattern applies to Liferay 2023.Q4+ and GA/Update 100+. Earlier versions used a `SearchRegistrar`. See [the Liferay 7.2 documentation](https://help.liferay.com/hc/en-us/articles/360032611231-Search-Service-Registration) to implement a `SearchRegistrar`.
 
-`*ModelIndexerWriterContributor.java` - configures the re-indexing and batch re-indexing behavior of entries (e.g., the `com.acme.s5e6.search.S5E6EntryModelIndexerWriterContributor.java` class).
+`*ModelIndexerWriterContributor.java` - configures the reindexing and batch reindexing behavior of entries (e.g., the `com.acme.s5e6.search.S5E6EntryModelIndexerWriterContributor.java` class).
 
 `*ModelSummaryContributor.java` - constructs the result summary for entries (e.g., the `com.acme.s5e6.search.S5E6EntryModelSummaryContributor.java` class).
 

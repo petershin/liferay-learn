@@ -20,9 +20,9 @@ rm osgi/configs/com.liferay.portal.search.configuration.IndexStatusManagerConfig
 
 1. 구성 섹션에서 **검색** 을 클릭하고 **인덱스 작업** 탭을 선택합니다.
 
-1. [동시 또는 전체 재인덱싱 모드](../../../using-search/search-administration-and-tuning/re-indexing-modes.md) 선택한 다음 **모든 검색 인덱스** 에 대해 **재인덱싱** 을 클릭합니다. 재인덱싱이 실행되고 완료되면 성공 메시지가 표시됩니다.
+1. [동시 또는 전체 재인덱싱 모드](../../../using-search/search-administration-and-tuning/reindexing-modes.md) 선택한 다음 **모든 검색 인덱스** 에 대해 **재인덱싱** 을 클릭합니다. 재인덱싱이 실행되고 완료되면 성공 메시지가 표시됩니다.
 
-![You can re-index your search indexes in the Control Panel.](./post-upgrade-considerations/images/01.png)
+![You can reindex your search indexes in the Control Panel.](./post-upgrade-considerations/images/01.png)
 
 ```{note}
 이전 버전(7.1 이하)에서 업그레이드한 경우 [검색 인덱싱을 처리하기 위해 Elasticsearch](../../../using-search/installing-and-upgrading-a-search-engine/installing-a-search-engine.md) 설치를 고려하십시오.

@@ -21,7 +21,7 @@ LiferayのSolr統合には限界があります。 以下の機能を利用す�
 * [チューニングを検索類義語](../../search-administration-and-tuning/synonym-sets.md)
 * [コンテンツ・ダッシュボード](../../../content-authoring-and-management/content-dashboard.md)
 * [類似の結果](../../search-pages-and-widgets/similar-results.md)
-* [並行および同期再インデックス・モード](../../search-administration-and-tuning/re-indexing-modes.md)
+* [並行および同期再インデックス・モード](../../search-administration-and-tuning/reindexing-modes.md)
 * 以下を含むすべての [Liferay Enterprise Search](../../liferay-enterprise-search.md) アプリケーション：
 
   * クラスター横断レプリケーション

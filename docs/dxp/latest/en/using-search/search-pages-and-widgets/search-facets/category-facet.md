@@ -56,7 +56,7 @@ Display categories under their vocabulary by selecting the Vocabulary Layout in 
 Select the vocabularies and categories to display in the facet.
 
 !!! important
-    If you're upgrading from a Liferay version or update prior to 7.4 Update/GA 48 and there are already categorized assets in the system, re-index all search indexes to include the necessary `assetVocabularyCategoryIds` field in the search documents.
+    If you're upgrading from a Liferay version or update prior to 7.4 Update/GA 48 and there are already categorized assets in the system, reindex all search indexes to include the necessary `assetVocabularyCategoryIds` field in the search documents.
 
 ![Select the vocabulary.](./category-facet/images/06.png)
 

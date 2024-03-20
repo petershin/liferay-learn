@@ -126,7 +126,7 @@ Specify the properties Liferay needs to connect with Elasticsearch; then run the
 
    ![An active connection is displayed in the Search administrative panel.](./exercise-run-liferay-and-elasticsearch-using-docker/images/01.png)
 
-Re-index your search and spell check indexes. Both re-index actions are carried out from the Index Actions tab of Control Panel &rarr; Configuration &rarr; Search.
+Reindex your search and spell check indexes. Both reindex actions are carried out from the Index Actions tab of Control Panel &rarr; Configuration &rarr; Search.
 
 ## Cleaning Up Exercise Files
 

@@ -21,7 +21,7 @@ Liferay의 Solr 통합에는 제한이 있습니다. 다음 기능을 사용하�
 * [검색 조정: 동의어](../../search-administration-and-tuning/synonym-sets.md)
 * [콘텐츠 대시보드](../../../content-authoring-and-management/content-dashboard.md)
 * [유사한 결과](../../search-pages-and-widgets/similar-results.md)
-* [동시 및 동기 재인덱싱 모드](../../search-administration-and-tuning/re-indexing-modes.md)
+* [동시 및 동기 재인덱싱 모드](../../search-administration-and-tuning/reindexing-modes.md)
 * 다음을 포함한 모든 [Liferay Enterprise Search](../../liferay-enterprise-search.md) 애플리케이션
    * 교차 클러스터 복제
    * Search Experiences

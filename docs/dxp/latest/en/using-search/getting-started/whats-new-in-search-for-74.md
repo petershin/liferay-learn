@@ -30,14 +30,14 @@ Elasticsearch 7 is supported in Liferay 7.4. Check the [Search Engine Compatibil
 
 ## Search Infrastructure & Administration
 
-### Re-Index Virtual Instances Independently
+### Reindex Virtual Instances Independently
 
-Beginning in Liferay 7.4, Server Administrators can limit the scope of the re-index actions to specific [Virtual Instances](../../system-administration/configuring-liferay/virtual-instances/understanding-virtual-instances.md). To choose which instances the index actions apply to,
+Beginning in Liferay 7.4, Server Administrators can limit the scope of the reindex actions to specific [Virtual Instances](../../system-administration/configuring-liferay/virtual-instances/understanding-virtual-instances.md). To choose which instances the index actions apply to,
 
 1. Open Global Menu &rarr; Control Panel &rarr; Search and click the Index Actions tab.
-1. Use the Execution Scope tab to choose the instances to re-index.
+1. Use the Execution Scope tab to choose the instances to reindex.
 
-   ![Select the instances to re-index.](./whats-new-in-search-for-74/images/01.png)
+   ![Select the instances to reindex.](./whats-new-in-search-for-74/images/01.png)
 
 ## Search Widgets
 
@@ -63,11 +63,11 @@ To learn more about Liferay Objects and search, read [Searching for Liferay Obje
 
 ### Search Tuning Data is Stored in the Database
 
-Beginning in DXP Liferay 7.4, the Result Rankings and Synonym Sets data is stored in the Liferay database, and a re-index action from the Search Administration panel can be used to populate each application's index with the proper data. In prior versions the indexes were used as primary data storage for these applications.
+Beginning in DXP Liferay 7.4, the Result Rankings and Synonym Sets data is stored in the Liferay database, and a reindex action from the Search Administration panel can be used to populate each application's index with the proper data. In prior versions the indexes were used as primary data storage for these applications.
 
 To learn about how this impacts the upgrade process, read [Upgrading Search Infrastructure](../installing-and-upgrading-a-search-engine/elasticsearch/upgrading-elasticsearch/upgrading-search-infrastructure.md) and [Backing Up Elasticsearch](../installing-and-upgrading-a-search-engine/elasticsearch/upgrading-elasticsearch/backing-up-elasticsearch.md).
 
-![Re-index the Search Tunings data just like you would other Liferay DXP assets.](./whats-new-in-search-for-74/images/02.png)
+![Reindex the Search Tunings data just like you would other Liferay DXP assets.](./whats-new-in-search-for-74/images/02.png)
 
 ## Liferay Enterprise Search (LES)
 

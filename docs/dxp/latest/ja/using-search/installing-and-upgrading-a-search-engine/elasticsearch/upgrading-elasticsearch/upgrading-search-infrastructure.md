@@ -21,7 +21,7 @@ Liferayをアップグレードする際には、Elasticsearchを使用する際
 
 1. [検索インデックスとスペルチェック辞書のインデックスを再作成する。](../../../../installation-and-upgrades/upgrading-liferay/upgrade-basics/post-upgrade-considerations.md)
 
-   [ワークフロー統計情報インデックス](../../../../process-automation/workflow/using-workflows/using-workflow-metrics.md#re-indexing-workflow-metrics) を必ず再作成してください。
+   [ワークフロー統計情報インデックス](../../../../process-automation/workflow/using-workflows/using-workflow-metrics.md#reindexing-workflow-metrics) を必ず再作成してください。
 
 1. アップグレードされたシステムで [検索エクスペリエンスをテスト](#test-the-upgraded-search-experience) し、すべてが期待どおりに動作していることを確認します。
 

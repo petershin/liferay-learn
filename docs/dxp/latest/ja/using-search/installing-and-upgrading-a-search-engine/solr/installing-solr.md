@@ -222,7 +222,7 @@ Liferay の `osgi/configs` フォルダに配置された設定ファイルを�
 
    ![検索管理コンソールでSolrの接続を確認する。](./installing-solr/images/01.png)
 
-1. LiferayのデータをSolrに再インデックスします。 グローバルメニューを開き、 ［**コントロールパネル**］ &rarr; ［**設定**］ &rarr; ［**検索**］ へ行きます。 Index Actions] ペインで、[Re-index Search Indexes] オプションの隣にある **Execute** をクリックします。
+1. LiferayのデータをSolrに再インデックスします。 グローバルメニューを開き、 ［**コントロールパネル**］ &rarr; ［**設定**］ &rarr; ［**検索**］ へ行きます。 Index Actions] ペインで、[Reindex Search Indexes] オプションの隣にある **Execute** をクリックします。
 
    スペルチェック用のインデックスも再作成してください。
 

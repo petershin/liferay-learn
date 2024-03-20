@@ -68,7 +68,7 @@ Out of the box, Synonyms Sets supports synonyms in [English and Spanish only](#r
 - Create a [custom analyzer](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/analysis-custom-analyzer.html) by re-implementing the default [French](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/analysis-lang-analyzer.html#french-analyzer) analyzer with the necessary changes (including an extra [Synonym graph token filter](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/analysis-synonym-graph-tokenfilter.html) in the pipeline)
 - Add the custom analyzer definition to the index settings, using the Additional Index Configurations of the connector configuration.
 - Apply the custom analyzer on the desired fields by overriding Liferay DXP's default type mappings, using the Override Type Mappings setting of the connector configuration.
-- Re-index to apply the new settings.
+- Reindex to apply the new settings.
 
 ### Prerequisite: Obtain the Default Mappings
 
@@ -194,7 +194,7 @@ Now that you have the default mapping file, make the necessary changes to add th
 
 1. Add the custom filter name (e.g., `custom-synonym-filter-fr`) to the Filter Names setting and save the configuration.
 
-1. Perform a full re-index: in Control Panel &rarr; Search &rarr; Index Actions, click _Reindex_ for All Search Indexes.
+1. Perform a full reindex: in Control Panel &rarr; Search &rarr; Index Actions, click _Reindex_ for All Search Indexes.
 
    To verify that the custom mapping has been applied successfully, go to the Field Mappings tab, choose your index (for example `liferay-20101`) and look for `template_fr` in the right panel.
 

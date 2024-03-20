@@ -127,7 +127,7 @@ If you've already [purchased](https://www.liferay.com/contact-sales) a Commerce 
 Once you've acquired your XML activation key, you can activate Commerce Enterprise by copying it to your DXP instance's `deploy` folder. This process is the same as activating Liferay DXP.
 
 ```{note}
-As of Liferay 7.3 SP1, users are no longer required to re-index their instance after activating Commerce.
+As of Liferay 7.3 SP1, users are no longer required to reindex their instance after activating Commerce.
 ```
 
 #### Deploying to DXP Bundles

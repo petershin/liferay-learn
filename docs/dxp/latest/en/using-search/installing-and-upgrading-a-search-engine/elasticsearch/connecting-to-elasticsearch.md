@@ -161,15 +161,15 @@ You're ready to configure the connector.
 
 You're ready to start Liferay.
 
-## Start Liferay and Re-Index
+## Start Liferay and Reindex
 
 If Elasticsearch is [installed and running](./installing-elasticsearch.md), start Liferay. In the Control Panel, navigate to Configuration &rarr; Search and verify the Elasticsearch connection is active.
 
 ![An active connection is displayed in the Search administrative panel.](./getting-started-with-elasticsearch/images/01.png)
 
-Re-index the search indexes and spell check indexes. Invoke both of these actions in the Index Actions tab of Control Panel &rarr; Configuration &rarr; Search.
+Reindex the search indexes and spell check indexes. Invoke both of these actions in the Index Actions tab of Control Panel &rarr; Configuration &rarr; Search.
 
-On Liferay 7.3+, Re-index the [Workflow Metrics](../../../process-automation/workflow/using-workflows/using-workflow-metrics.md) indexes from the Workflow Metrics Settings window: 
+On Liferay 7.3+, Reindex the [Workflow Metrics](../../../process-automation/workflow/using-workflows/using-workflow-metrics.md) indexes from the Workflow Metrics Settings window: 
 
 1. From the Global Menu (![Applications Menu](../../../images/icon-applications-menu.png)) navigate to Applications &rarr; Workflow Metrics. 
 
@@ -181,7 +181,7 @@ On Liferay 7.3+, Re-index the [Workflow Metrics](../../../process-automation/wor
 If you use Elasticsearch indexes for primary data storage (storing data not backed by a database) you can bring that data into your new Elasticsearch cluster using the [snapshot and restore approach](./upgrading-elasticsearch/backing-up-elasticsearch.md). In 7.2 and 7.3, Liferay's own Search Tuning indexes for Result Rankings and Synonyms are primary storage indexes. In 7.4, these indexes are backed by database tables.
 ```
 
-In Liferay 7.4 U45+/GA45+ and Liferay DXP 7.3 U14+, enhanced logging is enabled so you can know when the re-index starts and finishes for system and company indexes. For example,
+In Liferay 7.4 U45+/GA45+ and Liferay DXP 7.3 U14+, enhanced logging is enabled so you can know when the reindex starts and finishes for system and company indexes. For example,
 
 ```log
 2023-01-09 20:44:17.730 INFO  [liferay/background_task-2][ReindexPortalBackgroundTaskExecutor:57] Start reindexing company 0

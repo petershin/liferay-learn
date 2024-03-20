@@ -20,9 +20,9 @@ rm osgi/configs/com.liferay.portal.search.configuration.IndexStatusManagerConfig
 
 1. Configurationセクションの **Search** をクリックし、 **Index Actions** タブを選択します。
 
-1. [再インデックス作成モード](../../../using-search/search-administration-and-tuning/re-indexing-modes.md) を選択し、 **All search indexes** の **Reindex** をクリックします。
+1. [再インデックス作成モード](../../../using-search/search-administration-and-tuning/reindexing-modes.md) を選択し、 **All search indexes** の **Reindex** をクリックします。
 
-![You can re-index your search indexes in the Control Panel.](./post-upgrade-considerations/images/01.png)
+![You can reindex your search indexes in the Control Panel.](./post-upgrade-considerations/images/01.png)
 
 ```{note}
 古いバージョン（7.1以下）からアップグレードした場合は、検索インデックスを処理するために、 [Elasticsearch](../../../using-search/installing-and-upgrading-a-search-engine/installing-a-search-engine.md) をインストールすることを検討してください。

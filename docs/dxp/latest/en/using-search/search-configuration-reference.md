@@ -11,7 +11,7 @@ uuid: 6d30909a-5198-437c-b3b5-1fc61cc705fc
 
 Search in Liferay DXP can be configured in lots of ways. Once you understand the concept of [configuration scope](../system-administration/configuring-liferay/understanding-configuration-scope.md), you'll understand where to find a certain configuration screen.
 
-* Many search configurations affect the system scope (e.g., re-indexing actions and configuring the search engine connector).
+* Many search configurations affect the system scope (e.g., reindexing actions and configuring the search engine connector).
 * Search tuning configurations affect the virtual instance.
 * Creating new Search Pages affects search at the site scope.
 * Configuring the search widgets is widget-scoped configuration, but some can also be thought of as page-scoped configuration.
@@ -121,7 +121,7 @@ The Default Search Result Permission Filter entry allows configuration of *post-
 
 The Index Status Manager entry has one setting:
 
-**`indexReadOnly`**: Enable this to suspend all indexing operations and writes to the search engine. Searches return only the documents already indexed. This is useful for speeding up large data imports, but it should be disabled and a full re-index executed once the import is finished.
+**`indexReadOnly`**: Enable this to suspend all indexing operations and writes to the search engine. Searches return only the documents already indexed. This is useful for speeding up large data imports, but it should be disabled and a full reindex executed once the import is finished.
 
 ### Indexer Writer Helper
 
@@ -160,9 +160,9 @@ This entry has one repeatable property (use array syntax if you're defining via 
 
 **Configuration File:** `com.liferay.portal.search.configuration.ReindexConfiguration.config`
 
-**`defaultReindexExecutionMode`**: Set the default mode for re-indexing Liferay's content. Choose from Full (default), Concurrent, or Sync. See [Re-Indexing Modes](./search-administration-and-tuning/re-indexing-modes.md) for more information.
+**`defaultReindexExecutionMode`**: Set the default mode for reindexing Liferay's content. Choose from Full (default), Concurrent, or Sync. See [Reindexing Modes](./search-administration-and-tuning/reindexing-modes.md) for more information.
 
-**`indexingBatchSizes`**: Set the number of documents (the default value is 1000) indexed per batch for model types that support batch indexing. For models with large documents, decreasing this value may improve stability when executing a full re-index.
+**`indexingBatchSizes`**: Set the number of documents (the default value is 1000) indexed per batch for model types that support batch indexing. For models with large documents, decreasing this value may improve stability when executing a full reindex.
 
 !!! important
     To configure indexing batch size for web content articles, the model to specify depends on a Web Content setting. If `indexAllArticleVersionsEnabled` is `true` in System Settings &rarr; Content & Data &rarr; Web Content &rarr; Web Content (virtual instance scope), you must set `com.liferay.journal.model.JournalArticle==[size]`. If disabled, use `com.liferay.journal.model.JournalArticleResource=[size]`.
@@ -263,7 +263,7 @@ Information about the search engine connection(s) is displayed here. For example
 
 #### Index Actions
 
-In Index Actions, re-index at one of these levels:
+In Index Actions, reindex at one of these levels:
 
    * All indexable assets
    * An individual indexable asset

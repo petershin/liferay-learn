@@ -232,9 +232,9 @@ It is most common to make your edits to the Solr connector's default configurati
 
    ![Verify the Solr connection in the search administration console.](./installing-solr/images/01.png)
 
-1. Re-index your Liferay data into Solr. Open the Global Menu and navigate to *Control Panel* &rarr; *Configuration* &rarr; *Search*. In the Index Actions pane, click *Execute* next to the Re-index Search Indexes option.
+1. Reindex your Liferay data into Solr. Open the Global Menu and navigate to *Control Panel* &rarr; *Configuration* &rarr; *Search*. In the Index Actions pane, click *Execute* next to the Reindex Search Indexes option.
 
-   Re-index the spell check indexes too.
+   Reindex the spell check indexes too.
 
 ## High Availability with SolrCloud
 

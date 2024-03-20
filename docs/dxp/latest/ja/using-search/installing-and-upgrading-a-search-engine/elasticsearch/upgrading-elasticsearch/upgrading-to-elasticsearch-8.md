@@ -42,7 +42,7 @@ Elasticsearchをアップグレードする前に、既存のデータをバッ�
 
 ローリング再スタート可能なバージョンを使用している場合、 [ローリングアップグレード](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/rolling-upgrades.html) を行うことが、ダウンタイムを最小限に抑え、すべてのデータのインデックスを再作成する必要がなくなるため、Elasticsearch クラスタをアップグレードするおすすめの方法です。 それ以外の場合は、 [フルクラスター再起動アップグレード](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/restart-upgrade.html) ガイドに従ってください。
 
-新しいElasticsearchサーバーをインストールし、アップグレード前のデータにインデックスしたい場合、Liferay [データベースがアップグレード](../../../../installation-and-upgrades/upgrading-liferay/upgrade-basics/using-the-database-upgrade-tool.md) されると、UIから [再インデックス](#restart-liferay-and-re-index) をトリガーすることで、ほとんどのLiferayインデックスを復元できます。 ただし、検索の調整（結果ランキングと同義語）インデックス、およびデータベースストレージにバックアップされていないカスタムインデックスは、 [アップグレード前のインデックスのスナップショット](./backing-up-elasticsearch.md#backing-up-and-restoring-search-tuning-indexes-for-liferay-7-2-and-7-3) から復元する必要があります。
+新しいElasticsearchサーバーをインストールし、アップグレード前のデータにインデックスしたい場合、Liferay [データベースがアップグレード](../../../../installation-and-upgrades/upgrading-liferay/upgrade-basics/using-the-database-upgrade-tool.md) されると、UIから [再インデックス](#restart-liferay-and-reindex) をトリガーすることで、ほとんどのLiferayインデックスを復元できます。 ただし、検索の調整（結果ランキングと同義語）インデックス、およびデータベースストレージにバックアップされていないカスタムインデックスは、 [アップグレード前のインデックスのスナップショット](./backing-up-elasticsearch.md#backing-up-and-restoring-search-tuning-indexes-for-liferay-7-2-and-7-3) から復元する必要があります。
 
 ## Liferayを再起動してインデックスを再作成する
 
@@ -52,6 +52,6 @@ LiferayがElasticsearchクラスターに接続されたら、Liferayを再起�
 
 1. 完全なクラスタ再起動のアップグレードを実行した場合は、会社、システム、およびスペルチェックのインデックスの再作成が必要です。 グローバルメニュー(![グローバルメニュー](../../../../images/icon-applications-menu.png))から、 **コントロールパネル** &rarr; **設定** &rarr; **検索** に移動します。 すべての検索 イ ンデ ッ ク ス を再インデ ッ ク ス ] 項目の **実行** をク リ ック。
 
-1. 完全なクラスタ再起動のアップグレードを実行した場合は、 [Workflow Metrics インデックスのインデックスを再作成する必要があります。](../../../../process-automation/workflow/using-workflows/using-workflow-metrics.md#re-indexing-workflow-metrics) : Global Menu (![Global Menu](../../../../images/icon-applications-menu.png)) から、 **Applications** &rarr; **Workflow---Metrics** に移動します。 設定メニュー (![Options](../../../../images/icon-options.png)) を開き、 **Reindex All** をクリックします。 各仮想インスタンスについて、この作業を繰り返します。
+1. 完全なクラスタ再起動のアップグレードを実行した場合は、 [Workflow Metrics インデックスのインデックスを再作成する必要があります。](../../../../process-automation/workflow/using-workflows/using-workflow-metrics.md#reindexing-workflow-metrics) : Global Menu (![Global Menu](../../../../images/icon-applications-menu.png)) から、 **Applications** &rarr; **Workflow---Metrics** に移動します。 設定メニュー (![Options](../../../../images/icon-options.png)) を開き、 **Reindex All** をクリックします。 各仮想インスタンスについて、この作業を繰り返します。
 
 これにより、Liferayデータベースに保存されているデータから作成されたインデックスが復元されます。 プライマリストレージとして使用されるインデックスを復元するには、 [Elasticsearchのバックアップ](./backing-up-elasticsearch.md) を参照してください。

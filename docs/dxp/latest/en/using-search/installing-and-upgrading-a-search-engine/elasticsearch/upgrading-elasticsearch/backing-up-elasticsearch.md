@@ -11,7 +11,7 @@ uuid: 35f429b3-aadb-4c7f-844f-e389410ea935
 
 ## Backing Up Indexes Before Upgrading
 
-It's best practice to back up the indexes under all upgrade scenarios, even if the indexed data can be restored by re-indexing from Liferay's database. Taking a [snapshot of your app-specific indexes](#backing-up-and-restoring-search-tuning-indexes-for-liferay-7-2-and-7-3) (like Liferay's Search Tuning indexes in Liferay DXP 7.2 and 7.3) is essential if your data is stored only in the search index. The snapshot can be used to restore your previous data (e.g., Synonym Sets and Result Rankings) when you set up a new Elasticsearch server. Make sure to read the Elasticsearch documentation on [snapshot and restore version compatibility](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/snapshot-restore.html#snapshot-restore-version-compatibility) before attempting this approach.
+It's best practice to back up the indexes under all upgrade scenarios, even if the indexed data can be restored by reindexing from Liferay's database. Taking a [snapshot of your app-specific indexes](#backing-up-and-restoring-search-tuning-indexes-for-liferay-7-2-and-7-3) (like Liferay's Search Tuning indexes in Liferay DXP 7.2 and 7.3) is essential if your data is stored only in the search index. The snapshot can be used to restore your previous data (e.g., Synonym Sets and Result Rankings) when you set up a new Elasticsearch server. Make sure to read the Elasticsearch documentation on [snapshot and restore version compatibility](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/snapshot-restore.html#snapshot-restore-version-compatibility) before attempting this approach.
 
 Here are some representative upgrade scenarios:
 
@@ -172,7 +172,7 @@ If a catastrophic failure occurs, what good is a snapshot if you can't [restore 
 POST /_snapshot/test_backup/snapshot_1/_restore
 ```
 
-If you need to restore the data from a snapshot index into an existing index, restore the index with a different name, then re-index the data into the existing index. To limit the restore command to specific indexes, use the `indices` option. Rename the restored index using the `rename_pattern` and `rename_replacement` options:
+If you need to restore the data from a snapshot index into an existing index, restore the index with a different name, then reindex the data into the existing index. To limit the restore command to specific indexes, use the `indices` option. Rename the restored index using the `rename_pattern` and `rename_replacement` options:
 
 ```bash
 POST /_snapshot/test_backup/snapshot_1/_restore
@@ -267,7 +267,7 @@ You can use Elasticsearch's [snapshot and restore](https://www.elastic.co/guide/
 
    where `indices` sets the snapshotted index names to restore from. The indexes from the above call would be restored as `restored_liferay-20101-search-tuning-rankings` and `restored_liferay-20101-search-tuning-synonyms`, following the `rename_pattern` and `rename_replacement` regular expressions.
 
-If you've added search tuning configurations (i.e., synonym sets or results rankings) while running in Sidecar/Embedded mode, they'll disappear once you configure a production mode connection to Elasticsearch and re-index.
+If you've added search tuning configurations (i.e., synonym sets or results rankings) while running in Sidecar/Embedded mode, they'll disappear once you configure a production mode connection to Elasticsearch and reindex.
 
 To restore your existing search tuning index documents, you can use the Elasticsearch's [Reindex API](https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-reindex.html#docs-reindex), like this:
 

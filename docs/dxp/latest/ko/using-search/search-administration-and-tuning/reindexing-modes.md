@@ -38,7 +38,7 @@
 
 이전 Liferay 버전에서는 재인덱싱은 항상 전체 모드를 사용하여 재생성하기 전에 라이브 프로덕션 인덱스에서 콘텐츠를 삭제합니다. 이로 인해 상당한 검색 색인 가동 중지 시간이 발생할 수 있습니다. 동시 및 동기화 재인덱싱 모드를 사용하면 인덱스를 먼저 삭제하지 않고도 재인덱싱이 수행됩니다. 동기화 모드는 인덱스를 제자리에서 업데이트하는 반면, 동시 모드는 백그라운드에서 새 인덱스를 작성하여 준비될 때까지 이전 인덱스를 유지합니다. 검색 색인의 고가용성은 가동 중지 시간을 최소화한다는 의미입니다. 즉, 사이트 콘텐츠를 다시 색인화하는 동안 사이트 사용자가 사이트를 찾아보고 검색할 수 있습니다.
 
-![Choose from Full, Concurrent, or Sync re-index modes, depending on your needs.](./re-indexing-modes/images/01.png)
+![Choose from Full, Concurrent, or Sync reindex modes, depending on your needs.](./reindexing-modes/images/01.png)
 
 가능할 때마다 동시 또는 동기화 모드를 선택하여 재인덱싱 중 가동 중지 시간을 방지하세요. 그러나 상황에 적합한 모드를 결정할 때 고려해야 할 사항이 있습니다.
 
@@ -64,7 +64,7 @@
 
 동시 재인덱싱은 이전 인덱스와 함께 새 인덱스를 생성하기 때문에 다른 모드보다 Elasticsearch 시스템 인프라에 더 많은 디스크 공간이 필요합니다. 디스크 공간 부족으로 인한 오류를 방지하기 위해 Liferay는 사용 가능한 공간이 충분한지 추정하고 그렇지 않은 경우 경고합니다.
 
-![You're warned if Liferay estimates insufficient disk space for a concurrent re-index.](./re-indexing-modes/images/03.png)
+![You're warned if Liferay estimates insufficient disk space for a concurrent reindex.](./reindexing-modes/images/03.png)
 
 ## ![동기화](../../images/icon-restore2.png) 동기화 재색인 모드
 
@@ -87,4 +87,4 @@ Elasticsearch의 기본 디스크 공간이 중요하거나 모든 고가용성 
 
 1. **기본 재색인 실행 모드** 를 설정하고 **업데이트** 를 클릭하세요.
 
-![The default re-indexing mode is configurable.](./re-indexing-modes/images/02.png)
+![The default reindexing mode is configurable.](./reindexing-modes/images/02.png)

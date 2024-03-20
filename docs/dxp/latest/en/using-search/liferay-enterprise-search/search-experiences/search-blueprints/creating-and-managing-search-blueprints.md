@@ -85,7 +85,7 @@ Add Elements to begin adding query clauses to the Blueprint:
    See [Creating Elements](./creating-and-managing-elements/creating-elements.md) to learn about building Custom JSON Elements.
 
 ```{important}
-Some Elements require more action than adding them to the Blueprint in the Query Builder. For example, to use the Boost Longer Contents element or the Boost Contents with More Versions element, you must re-index the following entries in Control Panel &rarr; Search &rarr; Index Actions:
+Some Elements require more action than adding them to the Blueprint in the Query Builder. For example, to use the Boost Longer Contents element or the Boost Contents with More Versions element, you must reindex the following entries in Control Panel &rarr; Search &rarr; Index Actions:
 
 
 * `com.liferay.blogs.model.BlogsEntry`

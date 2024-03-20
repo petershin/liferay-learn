@@ -166,7 +166,7 @@ It's hard to keep terminology consistent, so when we find an inconsistency in th
 | ServiceBuilder            | Service Builder |
 | RESTBuilder               | REST Builder    |
 | openapi                   | OpenAPI         |
-| reindex                   | re-index        |
+| reindex                   | reindex        |
 | [LIFERAY_HOME]            | [Liferay Home]  |
 | out of the box            | out-of-the-box  |
 | Freemarker or Free Marker | FreeMarker      |

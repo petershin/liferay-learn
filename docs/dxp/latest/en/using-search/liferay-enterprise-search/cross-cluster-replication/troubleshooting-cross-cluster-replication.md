@@ -99,7 +99,7 @@ Caused by: org.elasticsearch.index.snapshots.IndexShardRestoreFailedException: f
 [2021-01-08T15:49:25,592][INFO ][o.e.c.r.a.AllocationService] [es-follower-node1] Cluster health status changed from [YELLOW] to [RED] (reason: [shards failed [[liferay-20097][0]]]).
 ```
 
-This may happen if you've been configuring, restarting, and re-indexing repeatedly throughout the setting up procedure. If you see this happen and you are confident your connections are configured properly, re-enable the CCR functionality by deleting the follower indexes, then re-enabling CCR from Liferay's System Settings:
+This may happen if you've been configuring, restarting, and reindexing repeatedly throughout the setting up procedure. If you see this happen and you are confident your connections are configured properly, re-enable the CCR functionality by deleting the follower indexes, then re-enabling CCR from Liferay's System Settings:
 
 1. Delete all the follower indexes. This is most conveniently carried out in Kibana's Index Management UI.
 

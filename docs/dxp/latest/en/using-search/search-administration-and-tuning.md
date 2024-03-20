@@ -4,7 +4,7 @@ toc:
   - ./search-administration-and-tuning/result-rankings.md
   - ./search-administration-and-tuning/elasticsearch-indexes-reference.md
   - ./search-administration-and-tuning/search-administration.md
-  - ./search-administration-and-tuning/re-indexing-modes.md
+  - ./search-administration-and-tuning/reindexing-modes.md
 taxonomy-category-names:
 - Search
 - Search Administration and Tuning
@@ -16,7 +16,7 @@ uuid: c7d1b6cf-3532-4e80-9215-5c16a16ea495
 # Search Administration and Tuning
 
 - [Search Administration Panel Overview](./search-administration-and-tuning/search-administration.md)
-- [Re-Indexing Modes](./search-administration-and-tuning/re-indexing-modes.md)
+- [Reindexing Modes](./search-administration-and-tuning/reindexing-modes.md)
 - Understanding Localized Search (Coming Soon)
 
 ## Search Tuning

@@ -38,7 +38,7 @@
 
 以前のLiferayバージョンでは、再インデックス作成は常にフルモードを使用し、本番インデックスからコンテンツを削除してから再生成していました。 その結果、検索インデックスが大幅にダウンする可能性がある。 同時再インデックスモードと同期再インデックスモードでは、最初にインデックスを削除することなく再インデックスが行われる。 同期モードはインデックスをその場で更新し、同時実行モードはバックグラウンドで新しいインデックスを作成し、準備ができるまで古いインデックスを保持する。 検索インデックスの可用性が高いということは、ダウンタイムが最小限に抑えられるということです。つまり、サイトのコンテンツのインデックスを再作成している間も、サイトのユーザーはサイトを閲覧したり検索したりすることができます。
 
-![Choose from Full, Concurrent, or Sync re-index modes, depending on your needs.](./re-indexing-modes/images/01.png)
+![Choose from Full, Concurrent, or Sync reindex modes, depending on your needs.](./reindexing-modes/images/01.png)
 
 可能な限り、再インデックス中のダウンタイムを避けるために、コンカレントモードまたはシンクモードを選択する。 しかし、自分の状況に合ったモードを決めるには、考慮すべき点がある。
 
@@ -64,7 +64,7 @@
 
 コンカレントリインデックスは古いインデックスと同時に新しいインデックスを作成するため、他のモードよりもElasticsearchシステムのインフラに多くのディスクスペースを必要とします。 ディスク容量不足によるエラーを避けるため、Liferayは利用可能な容量が十分かどうかを推定し、十分でない場合は警告を表示します：
 
-![You're warned if Liferay estimates insufficient disk space for a concurrent re-index.](./re-indexing-modes/images/03.png)
+![You're warned if Liferay estimates insufficient disk space for a concurrent reindex.](./reindexing-modes/images/03.png)
 
 ## ![Sync](../../images/icon-restore2.png) 同期再インデックスモード
 
@@ -87,4 +87,4 @@ Elasticsearch のプライマリディスクの空き容量が気になる場合
 
 1. **デフォルトの再インデックス実行モード** を設定し、 **更新** をクリックする。
 
-![The default re-indexing mode is configurable.](./re-indexing-modes/images/02.png)
+![The default reindexing mode is configurable.](./reindexing-modes/images/02.png)

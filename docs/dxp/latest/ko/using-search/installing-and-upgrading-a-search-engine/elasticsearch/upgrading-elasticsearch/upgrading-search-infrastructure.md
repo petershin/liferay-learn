@@ -21,7 +21,7 @@ Liferay를 업그레이드하는 동안 Elasticsearch를 사용할 때의 검색
 
 1. [검색 색인과 맞춤법 검사 사전의 색인을 다시 생성하세요.](../../../../installation-and-upgrades/upgrading-liferay/upgrade-basics/post-upgrade-considerations.md) 
 
-   [Workflow Metrics 인덱스를 다시 인덱싱하는 것을 잊지 마세요.](../../../../process-automation/workflow/using-workflows/using-workflow-metrics.md#re-indexing-workflow-metrics) 
+   [Workflow Metrics 인덱스를 다시 인덱싱하는 것을 잊지 마세요.](../../../../process-automation/workflow/using-workflows/using-workflow-metrics.md#reindexing-workflow-metrics) 
 
 1. [업그레이드된 시스템에서 검색 경험](#test-the-upgraded-search-experience) 테스트하여 모든 것이 예상대로 작동하는지 확인합니다.
 

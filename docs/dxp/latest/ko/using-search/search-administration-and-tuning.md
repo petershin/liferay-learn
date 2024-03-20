@@ -4,12 +4,12 @@ toc:
   - ./search-administration-and-tuning/result-rankings.md
   - ./search-administration-and-tuning/elasticsearch-indexes-reference.md
   - ./search-administration-and-tuning/search-administration.md
-  - ./search-administration-and-tuning/re-indexing-modes.md
+  - ./search-administration-and-tuning/reindexing-modes.md
 ---
 # 검색 관리 및 조정
 
 * [검색관리패널 개요](./search-administration-and-tuning/search-administration.md)
-* [재인덱싱 모드](./search-administration-and-tuning/re-indexing-modes.md)
+* [재인덱싱 모드](./search-administration-and-tuning/reindexing-modes.md)
 * 지역화된 검색 이해(출시 예정)
 
 ## 튜닝 검색

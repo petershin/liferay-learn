@@ -12,13 +12,13 @@ To enhance the quality of your experience with Liferay Commerce, Liferay provide
 
 ## Upgrading to Commerce 4.0
 
-Starting with Liferay Commerce 3.0, Commerce is now bundled with Liferay DXP. To upgrade to Commerce 4.0, you must first upgrade your base Liferay DXP installation to DXP 7.4 and perform a search re-index.
+Starting with Liferay Commerce 3.0, Commerce is now bundled with Liferay DXP. To upgrade to Commerce 4.0, you must first upgrade your base Liferay DXP installation to DXP 7.4 and perform a search reindex.
 
 ```{warning}
 After upgrading to 7.4, do *not* deploy the Commerce `LPKG` again. The Commerce 4.0 modules are bundled with 7.4. Deploying the `LPKG` causes conflicts.
 ```
 
-To learn more about the DXP upgrade process, see [Upgrade Basics](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/upgrading-liferay/upgrade-basics.html). Once DXP is upgraded to 7.4, execute a re-index.
+To learn more about the DXP upgrade process, see [Upgrade Basics](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/upgrading-liferay/upgrade-basics.html). Once DXP is upgraded to 7.4, execute a reindex.
 
 ### Prerequisite for Upgrading to Liferay Commerce 4.0
 
@@ -30,7 +30,7 @@ The `CommerceCountry` table may be populated if you are using the Minium Acceler
 
 ### Executing a Post-Upgrade Reindex
 
-After upgrading to DXP 7.4, execute a full search re-index.
+After upgrading to DXP 7.4, execute a full search reindex.
 
 1. Open the _Global Menu_, and go to _Control Panel_ &rarr; _Search_.
 
@@ -42,7 +42,7 @@ Once the reindex has finished, verify it was successful by going to _Commerce_ &
 
 ## Upgrading to Commerce 3.0 from 2.1 and Below
 
-To upgrade to Commerce 3.0, you must first upgrade your base Liferay DXP installation to DXP 7.3 and then execute a search re-index.
+To upgrade to Commerce 3.0, you must first upgrade your base Liferay DXP installation to DXP 7.3 and then execute a search reindex.
 
 ```{warning}
 After upgrading to 7.3, do *not* deploy the Commerce `LPKG` again. The Commerce 3.0 modules are bundled with 7.3. Deploying the `LPKG` causes conflicts.
@@ -50,7 +50,7 @@ After upgrading to 7.3, do *not* deploy the Commerce `LPKG` again. The Commerce 
 
 ### Executing a Post-Upgrade Reindex
 
-After upgrading to DXP 7.3, execute a full search re-index.
+After upgrading to DXP 7.3, execute a full search reindex.
 
 1. Open the _Global Menu_ and go to _Control Panel_ &rarr; _Search_.
 

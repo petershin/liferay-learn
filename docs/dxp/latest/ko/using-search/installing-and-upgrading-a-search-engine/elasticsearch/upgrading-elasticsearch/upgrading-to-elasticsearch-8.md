@@ -42,7 +42,7 @@ Elasticsearch를 업그레이드하기 전에 기존 데이터를 백업하세�
 
 롤링 재시작 가능 버전을 사용하는 경우 [롤링 업그레이드](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/rolling-upgrades.html) 을 수행하는 것은 가동 중지 시간을 최소화하고 모든 데이터를 다시 인덱싱할 필요성을 없애기 때문에 Elasticsearch 클러스터를 업그레이드하는 데 권장되는 방법입니다. 그렇지 않은 경우 [전체 클러스터 다시 시작 업그레이드](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/restart-upgrade.html) 가이드를 따르세요.
 
-새 Elasticsearch 서버를 설치했고 업그레이드 전 데이터를 인덱싱하려는 경우 Liferay [데이터베이스가 업그레이드되면](../../../../installation-and-upgrades/upgrading-liferay/upgrade-basics/using-the-database-upgrade-tool.md) UI에서 [인덱싱](#restart-liferay-and-re-index) 트리거하여 대부분의 Liferay 인덱스를 복원할 수 있습니다. 그러나 데이터베이스 스토리지에서 지원하지 않는 검색 튜닝(결과 순위 및 동의어) 인덱스와 사용자 정의 인덱스는 업그레이드 전 인덱스 [의](./backing-up-elasticsearch.md#backing-up-and-restoring-search-tuning-indexes-for-liferay-7-2-and-7-3) 스냅샷에서 복원해야 합니다.
+새 Elasticsearch 서버를 설치했고 업그레이드 전 데이터를 인덱싱하려는 경우 Liferay [데이터베이스가 업그레이드되면](../../../../installation-and-upgrades/upgrading-liferay/upgrade-basics/using-the-database-upgrade-tool.md) UI에서 [인덱싱](#restart-liferay-and-reindex) 트리거하여 대부분의 Liferay 인덱스를 복원할 수 있습니다. 그러나 데이터베이스 스토리지에서 지원하지 않는 검색 튜닝(결과 순위 및 동의어) 인덱스와 사용자 정의 인덱스는 업그레이드 전 인덱스 [의](./backing-up-elasticsearch.md#backing-up-and-restoring-search-tuning-indexes-for-liferay-7-2-and-7-3) 스냅샷에서 복원해야 합니다.
 
 ## Liferay를 다시 시작하고 다시 색인을 생성하세요.
 
@@ -52,6 +52,6 @@ Liferay가 Elasticsearch 클러스터와 연결되면 Liferay를 다시 시작�
 
 1. 전체 클러스터 다시 시작 업그레이드를 수행한 경우 회사, 시스템 및 맞춤법 검사 색인을 다시 색인화해야 합니다. 글로벌 메뉴(![글로벌 메뉴](../../../../images/icon-applications-menu.png))에서 **제어판** &rarr; **구성** &rarr; **검색** 으로 이동합니다. 모든 검색 색인 재색인 항목에 대해 **실행** 을 클릭합니다.
 
-1. 전체 클러스터 재시작 업그레이드를 수행한 경우 글로벌 메뉴(![글로벌 메뉴](../../../../images/icon-에서 [워크플로 메트릭 인덱스](../../../../process-automation/workflow/using-workflows/using-workflow-metrics.md#re-indexing-workflow-metrics) 을 다시 인덱싱해야 합니다. apps-menu.png)), **Applications** &rarr; **Workflow---Metrics** 로 이동합니다. 설정 메뉴(![옵션](../../../../images/icon-options.png)를 열고 **모두 다시 색인화** 를 클릭합니다. 각 가상 인스턴스에 대해 프로세스를 반복합니다.
+1. 전체 클러스터 재시작 업그레이드를 수행한 경우 글로벌 메뉴(![글로벌 메뉴](../../../../images/icon-에서 [워크플로 메트릭 인덱스](../../../../process-automation/workflow/using-workflows/using-workflow-metrics.md#reindexing-workflow-metrics) 을 다시 인덱싱해야 합니다. apps-menu.png)), **Applications** &rarr; **Workflow---Metrics** 로 이동합니다. 설정 메뉴(![옵션](../../../../images/icon-options.png)를 열고 **모두 다시 색인화** 를 클릭합니다. 각 가상 인스턴스에 대해 프로세스를 반복합니다.
 
 그러면 Liferay 데이터베이스에 저장된 데이터로 작성된 인덱스가 복원됩니다. 기본 스토리지로 사용되는 인덱스를 복원하려면 [Elasticsearch 백업](./backing-up-elasticsearch.md) 참조하세요.

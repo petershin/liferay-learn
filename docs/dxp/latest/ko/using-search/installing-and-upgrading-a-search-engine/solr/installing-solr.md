@@ -222,7 +222,7 @@ Liferay의 `osgi/configs` 폴더에 배포된 구성 파일을 사용하여 Solr
 
    ![검색 관리 콘솔에서 Solr 연결을 확인하십시오.](./installing-solr/images/01.png)
 
-1. Liferay 데이터를 Solr로 재색인합니다. 전역 메뉴를 열고 **제어판** &rarr; **구성** &rarr; **검색** 로 이동합니다. Index Actions 창에서 Re-index Search Indexes 옵션 옆에 있는 **Execute** 클릭합니다.
+1. Liferay 데이터를 Solr로 재색인합니다. 전역 메뉴를 열고 **제어판** &rarr; **구성** &rarr; **검색** 로 이동합니다. Index Actions 창에서 Reindex Search Indexes 옵션 옆에 있는 **Execute** 클릭합니다.
 
    맞춤법 검사 색인도 다시 색인화합니다.
 

@@ -20,7 +20,7 @@ Follow the steps to enable and deploy the referral system:
    ./gradlew :client-extensions:liferay-ticket-batch-object-definition:deploy
    ```
 
-   Note, the [object action](../../../building-applications/objects/creating-and-managing-objects/actions.md) can also be enabled from the UI. In Liferay, navigate to _Control Panel_ &rarr; _Objects_. Click on the _Ticket_ object, and click the _Actions_ tab. See the action is `active`.
+   Note, the [object action](../../objects/creating-and-managing-objects/actions.md) can also be enabled from the UI. In Liferay, navigate to _Control Panel_ &rarr; _Objects_. Click on the _Ticket_ object, and click the _Actions_ tab. See the action is `active`.
 
    ![Object action is active.](./implementing-a-documentation-referral-system/images/01.png)
 
@@ -50,12 +50,12 @@ Follow the steps to enable and deploy the referral system:
 
 ## Examine the Referral System Code
 
-The documentation referral system is a [microservice](../../../building-applications/client-extensions/microservice-client-extensions.md) type client extension. Specifically, this sample is a Spring Boot application that is built with `BootJar`. The `assemble` block section of the `client-extension.yaml` identifies this as follows:
+The documentation referral system is a [microservice](../../client-extensions/microservice-client-extensions.md) type client extension. Specifically, this sample is a Spring Boot application that is built with `BootJar`. The `assemble` block section of the `client-extension.yaml` identifies this as follows:
 
 assemble:
     - fromTask: bootJar
 
-See [Assembling Client Extensions](../../../building-applications/client-extensions/working-with-client-extensions#assembling-client-extensions) to learn more.
+See [Assembling Client Extensions](../../client-extensions/working-with-client-extensions#assembling-client-extensions) to learn more.
 
 Microservice client extensions require an OAuth2 user agent configuration to interact with Liferay. Therefore the `client-extension.yaml` file includes both a `oAuthApplicationUserAgent` type client extension along with a `objectAction` type client extension.
 
@@ -85,7 +85,7 @@ liferay-ticket-etc-spring-boot-object-action-ticket:
 
 Note, the `resourcePath` parameter defines the endpoint at which the microservice is running. The `oAuth2ApplicationExternalReferenceCode` parameter references the previous OAuth2 application configuration.
 
-See [Object Action Yaml Configuration](../../../building-applications/client-extensions/microservice-client-extensions/object-action-yaml-configuration-reference.md) for an explanation of each property.
+See [Object Action Yaml Configuration](../../client-extensions/microservice-client-extensions/object-action-yaml-configuration-reference.md) for an explanation of each property.
 
 The relevant Spring Boot files for the application are contained in the `/src` folder. A full explanation of the Java code is beyond the scope of this tutorial, but there are a few things to note:
 
@@ -97,5 +97,5 @@ Next: [Ticket Management with Cron Jobs](./ticket-management-with-cron-jobs.md).
 
 ## Relevant Concepts
 
-* [Developing a Java Web Application](../../../building-applications/developing-a-java-web-application.md)
-* [Microservice Client Extensions](../../../building-applications/client-extensions/microservice-client-extensions.md)
+* [Developing a Java Web Application](../developing-a-java-web-application.md)
+* [Microservice Client Extensions](../../integrating-microservices.md)

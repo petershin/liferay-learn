@@ -36,7 +36,7 @@ Follow the steps to enable and deploy the cron job:
 
 ## Examine the Cron Job Code
 
-This cron job is a [microservice](../../../building-applications/client-extensions/microservice-client-extensions.md) type client extension. Specifically, it is a Spring Boot application just like the previous documentation referral system client extension. Therefore, the `client-extension.yaml` file contains the same `assemble` block section as well as the `oAuthApplicationUserAgent` section like before.
+This cron job is a [microservice](../../integrating-microservices.md) type client extension. Specifically, it is a Spring Boot application just like the previous documentation referral system client extension. Therefore, the `client-extension.yaml` file contains the same `assemble` block section as well as the `oAuthApplicationUserAgent` section like before.
 
 The relevant Spring Boot files for the application are contained in the `/src` folder. A full explanation of the Java code is beyond the scope of this tutorial, but there are a few things to note:
 
@@ -48,5 +48,5 @@ Congratulations on completing this solutions tutorial on building a custom ticke
 
 ## Relevant Concepts
 
-* [Developing a Java Web Application](../../../building-applications/developing-a-java-web-application.md)
-* [Microservice Client Extensions](../../../building-applications/client-extensions/microservice-client-extensions.md)
+* [Developing a Java Web Application](../developing-a-java-web-application.md)
+* [Microservice Client Extensions](../../integrating-microservices.md)

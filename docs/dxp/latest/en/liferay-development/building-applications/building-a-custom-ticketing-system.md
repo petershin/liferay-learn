@@ -25,7 +25,7 @@ Here, you'll learn how custom ticketing system works. You'll learn how to
 * Deploy a custom application
 * Implement a documentation referral system
 
-Each of these components are deployable through the use of [client extensions](../../building-applications/client-extensions.md). The configuration of each client extension is defined by its [`client-extension.yaml`](../../building-applications/client-extensions/working-with-client-extensions.md#configuring-client-extensions) file.
+Each of these components are deployable through the use of [client extensions](../client-extensions.md). The configuration of each client extension is defined by its [`client-extension.yaml`](../client-extensions/working-with-client-extensions.md#configuring-client-extensions) file.
 
 ## Prerequisites
 

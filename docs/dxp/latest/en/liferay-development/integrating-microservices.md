@@ -23,13 +23,13 @@ taxonomy-category-names:
 
 You can define microservice client extensions to run your own code in response to events in your Liferay instance. How you implement the code is up to you: use the patterns and technologies you like. Microservice client extensions are hosted outside of Liferay and are triggered by cues from Liferay itself.
 
-Microservice client extensions require pre-configured authentication profiles to handle requests properly and call protected Liferay APIs. You can add authentication profiles by including them as client extensions within the same project (e.g., [OAuth user agent client extensions](./configuration-client-extensions.md#oauth-user-agent-client-extensions)).
+Microservice client extensions require pre-configured authentication profiles to handle requests properly and call protected Liferay APIs. You can add authentication profiles by including them as client extensions within the same project (e.g., [OAuth user agent client extensions](./configuration-as-code.md#oauth-user-agent-client-extensions)).
 
 Microservice client extensions are hosted automatically when deployed within Liferay Cloud. If self-hosting a Liferay instance, you must host the microservices that these client extensions use separately.
 
 ## Object Action Client Extensions
 
-Object action client extensions define external action handlers that bind to an [object definition's](../objects.md) action events. Your microservice's handler code is executed when the object action occurs.
+Object action client extensions define external action handlers that bind to an [object definition's](./objects.md) action events. Your microservice's handler code is executed when the object action occurs.
 
 Use the `type` value in your `client-extension.yaml` file to specify an object action client extension:
 

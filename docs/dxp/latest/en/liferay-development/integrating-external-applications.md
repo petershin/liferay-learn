@@ -64,7 +64,7 @@ Once rendered, the application is integrated fully into the Liferay page so it c
 
 * [Client Extensions](./client-extensions.md)
 * [Creating a Basic Custom Element](./integrating-external-applications/creating-a-basic-custom-element.md)
-* [Remote Applications UI Reference](./client-extensions/front-end-client-extensions/client-extensions-ui-reference.md)
+* [Front-end Client Extensions Reference](./customizing-liferays-look-and-feel/client-extensions-ui-reference.md)
 
 ::::{grid} 2
 :gutter: 3 3 3 3

@@ -2,17 +2,15 @@
 toc:
   - ./client-extensions/working-with-client-extensions.md
   - ./client-extensions/packaging-client-extensions.md
-  - ./client-extensions/frontend-client-extensions.md
-  - ./client-extensions/microservice-client-extensions.md
-  - ./client-extensions/configuration-client-extensions.md
-  - ./client-extensions/batch-client-extensions.md
 uuid: 33141e0f-9fc0-4bcb-ae34-536c157e0198
 taxonomy-category-names:
 - Development and Tooling
 - Client Extensions
 - Liferay Self-Hosted
 - Liferay SaaS
+- Liferay PaaS
 ---
+
 # Client Extensions
 
 {bdg-primary}`Liferay Self-Hosted`
@@ -46,11 +44,11 @@ These are the classifications of client extensions:
 * [Microservice client extensions](#microservice-client-extensions)
 * [Batch client extensions](#batch-client-extensions)
 
-### Front-end Client Extensions
+### Frontend Client Extensions
 
 Front-end client extensions provide resources to display on specific pages. Theme resources or custom HTML elements can now be provided in client extensions. Most front-end client extensions provide *static resources* to your Liferay instance.
 
-See [Front-end Client Extensions](./client-extensions/front-end-client-extensions.md) for more information on the specific types.
+See [Frontend Client Extensions](./client-extensions/front-end-client-extensions.md) for more information on the specific types.
 
 ### Configuration Client Extensions
 

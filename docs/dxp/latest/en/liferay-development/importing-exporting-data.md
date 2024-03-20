@@ -17,7 +17,7 @@ taxonomy-category-names:
 
 {bdg-secondary}`Liferay 7.4`
 
-If you want to import or export data from Liferay, you use batch client extensions. They work with Liferay's [batch engine framework](../headless-delivery/consuming-apis/batch-engine-api-basics-exporting-data.md) to provide data entities to your Liferay instance. Export one instance's data (e.g., via `curl` or the Export/Import Center). Then add it to a batch client extension and [deploy](./working-with-client-extensions.md#deploying-to-your-liferay-instance) it to bring the data into a different Liferay instance.
+If you want to import or export data from Liferay, you use batch client extensions. They work with Liferay's [batch engine framework](../headless-delivery/consuming-apis/batch-engine-api-basics-exporting-data.md) to provide data entities to your Liferay instance. Export one instance's data (e.g., via `curl` or the Export/Import Center). Then add it to a batch client extension and [deploy](./client-extensions/working-with-client-extensions.md#deploying-to-your-liferay-instance) it to bring the data into a different Liferay instance.
 
 To export data to use with batch client extensions, you can use the Export/Import Center via the Applications Menu ( ![Applications menu icon](../images/icon-applications-menu.png) ). To enable the Export/Import center, add this [portal property](../installation-and-upgrades/reference/portal-properties.md) before starting Liferay:
 
@@ -41,7 +41,7 @@ You can export any type of data supported by the [batch engine framework](../hea
 When exporting, use the `jsont` file format. `jsont` is required for `*.batch-engine-dat.json` files when using in conjunction with batch client extensions.
 ```
 
-Once the `*.batch-engine-data.json` file is added to a [batch client extension](./batch-client-extensions/batch-yaml-configuration-reference.md), deploy the [built archive](./packaging-client-extensions.md) to Liferay Cloud or self-hosted Liferay instances.
+Once the `*.batch-engine-data.json` file is added to a [batch client extension](./importing-exporting-data/batch-yaml-configuration-reference.md), deploy the [built archive](./client-extensions/packaging-client-extensions.md) to Liferay Cloud or self-hosted Liferay instances.
 
 ## Related Topics
 

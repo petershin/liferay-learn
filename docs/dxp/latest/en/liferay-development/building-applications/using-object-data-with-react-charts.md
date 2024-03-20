@@ -9,7 +9,7 @@ taxonomy-category-names:
 ---
 # Using Object Data with React Charts
 
-Here you'll use [Objects](../objects.md), [Headless APIs](../objects/understanding-object-integrations/using-custom-object-apis.md), and [custom element remote applications](../client-extensions/front-end-client-extensions/tutorials/creating-a-basic-custom-element.md) to create a dynamic chart for data dashboards. First, you'll set up a new DXP instance with [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) enabled for Object API calls. Then, you'll create an Object for receiving and storing data. After adding data to the Object using REST APIs, you'll download and build the provided React [FusionCharts](https://www.fusioncharts.com/dev/getting-started/react/your-first-chart-using-react) application. Once the code is compiled, you'll host the generated `.js` file in the Liferay Document Library and copy its WebDAV URL. Finally, you'll use this URL to create a remote app for the React chart and deploy it as a Page widget.
+Here you'll use [Objects](../objects.md), [Headless APIs](../objects/understanding-object-integrations/using-custom-object-apis.md), and [custom element remote applications](../integrating-external-applications/tutorials/creating-a-basic-custom-element.md) to create a dynamic chart for data dashboards. First, you'll set up a new DXP instance with [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) enabled for Object API calls. Then, you'll create an Object for receiving and storing data. After adding data to the Object using REST APIs, you'll download and build the provided React [FusionCharts](https://www.fusioncharts.com/dev/getting-started/react/your-first-chart-using-react) application. Once the code is compiled, you'll host the generated `.js` file in the Liferay Document Library and copy its WebDAV URL. Finally, you'll use this URL to create a remote app for the React chart and deploy it as a Page widget.
 
 The chart is configured to call the Object via Headless API every five seconds, which returns the Object's data and updates the chart dynamically.
 
@@ -101,7 +101,7 @@ Follow these steps to download and build the React application:
 1. Download and unzip the [React project](./liferay-x3j8.zip).
 
    ```bash
-   curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/tutorials/liferay-x3j8.zip -O
+   curl https://resources.learn.liferay.com/dxp/latest/en/liferay-development/building-applications/liferay-x3j8.zip -O
    ```
 
    ```bash

@@ -8,7 +8,7 @@ taxonomy-category-names:
 ---
 # Applying a Custom Theme
 
-You can use different [front-end client extensions](../../../building-applications/client-extensions/front-end-client-extensions.md) to customize the look and feel of your site. Specifically, [theme CSS type](../../../building-applications/client-extensions/front-end-client-extensions.md#theme-css-client-extensions) client extension can be used as an alternative to [building custom themes](../../../site-building/site-appearance/themes/introduction-to-themes.md).
+You can use different [front-end client extensions](../../customizing-liferays-look-and-feel.md) to customize the look and feel of your site. Specifically, [theme CSS type](../../customizing-liferays-look-and-feel.md#theme-css-client-extensions) client extension can be used as an alternative to [building custom themes](../../customizing-liferays-look-and-feel/themes.md).
 
 Deploy the `liferay-ticket-theme-css` client extension.
 
@@ -40,7 +40,7 @@ assemble:
       into: static/img
 ```
 
-This `liferay-ticket-theme-css` is a [theme CSS](../../../building-applications/client-extensions/front-end-client-extensions.md#theme-css-client-extensions) type client extension. It is defined as follows:
+This `liferay-ticket-theme-css` is a [theme CSS](../../customizing-liferays-look-and-feel.md#theme-css-client-extensions) type client extension. It is defined as follows:
 
 ```yaml
 liferay-ticket-theme-css:
@@ -50,7 +50,7 @@ liferay-ticket-theme-css:
     type: themeCSS
 ```
 
-See [Theme CSS YAML Configuration Reference](../../../building-applications/client-extensions/front-end-client-extensions/theme-css-yaml-configuration-reference.md) for an explanation of each property.
+See [Theme CSS YAML Configuration Reference](../../customizing-liferays-look-and-feel/theme-css-yaml-configuration-reference.md) for an explanation of each property.
 
 The theme's customizations appear in the two files in the `/src/css` folder.
 
@@ -58,11 +58,11 @@ The `_clay_variables.scss` file provides any CSS clay variables to be overwritte
 
 The `_custom.scss` file provides any CSS customizations.
 
-See the [Clay CSS](https://clayui.com/docs/css/index.html) documentation to learn more about the variables and customization. And see [using a theme CSS client extension](../../../building-applications/client-extensions/front-end-client-extensions/tutorials/using-a-theme-css-client-extension.md) to see another client extension example.
+See the [Clay CSS](https://clayui.com/docs/css/index.html) documentation to learn more about the variables and customization. And see [using a theme CSS client extension](../../customizing-liferays-look-and-feel/using-a-theme-css-client-extension.md) to see another client extension example.
 
 Next: [Deploying the Custom Ticketing Application](./deploying-a-custom-application.md).
 
 ## Relevant Concepts
 
-* [Introduction to Themes](../../../site-building/site-appearance/themes/introduction-to-themes.md)
-* [Front-end Client Extensions](../../../building-applications/client-extensions/front-end-client-extensions.md)
+* [Introduction to Themes](../../customizing-liferays-look-and-feel/themes.md)
+* [Front-end Client Extensions](../../customizing-liferays-look-and-feel.md)

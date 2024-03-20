@@ -24,6 +24,14 @@ Each plan has a limit to the number of known individuals (users with accounts on
 
 The Subscription Details section describes your plan’s limits. Higher tier plans offer additional flexibility through higher limits and less expensive add-ons. You can upgrade from lower to higher tier plans.
 
+| Plan Type                            | Basic    | Business     | Enterprise   |
+| :----------------------------------- | :------- | :----------- | :----------- |
+| Known Individuals Limit              | 1000     | 10000        | 100000       |
+| Page View Limit                      | 300000   | 5000000      | 60000000     |
+| Optional Add-Ons (Known Individuals) | &#10008; | 5000 each    | 5000 each    |
+| Optional Add-Ons (Page Views)        | &#10008; | 5000000 each | 5000000 each |
+| Yearly Reset                         | &#10008; | &#10004;     | &#10004;     |
+
 ## Add-ons
 
 Add-ons increase limits on Individuals or Page Views, without requiring you to upgrade to a new plan. Purchasing add-ons gives you commitment-free analytics capacity increases. Your add-ons appear on the Purchased Add-ons section under Subscription Details. Add-ons are available for the Business and Enterprise plans.

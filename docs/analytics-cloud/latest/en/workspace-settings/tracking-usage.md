@@ -30,7 +30,9 @@ The Subscription Details section describes your plan’s limits. Higher tier pla
 | Page View Limit                      | 300000   | 5000000      | 60000000     |
 | Optional Add-Ons (Known Individuals) | &#10008; | 5000 each    | 5000 each    |
 | Optional Add-Ons (Page Views)        | &#10008; | 5000000 each | 5000000 each |
-| Yearly Reset                         | &#10008; | &#10004;     | &#10004;     |
+| Yearly Reset *                       | &#10008; | &#10004;     | &#10004;     |
+
+_\* The Business and Enterprise plans limit yearly usage. The count is reset on your workspace birthday. The Basic plan limits lifetime usage. If you exceed your limit, you must upgrade to a higher plan._
 
 ## Add-ons
 

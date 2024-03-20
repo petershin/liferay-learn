@@ -17,9 +17,8 @@ With Publications, users can create instance-scoped blocks of changes. Because e
 
 Once Publications is [enabled](./enabling-publications.md), you can create, edit, publish, or remove a publication via the Publications application page or the Publications drop-down menu.
 
-```{important}
-Before upgrading your Liferay version, ensure you've published all active publications. After upgrading, active publications are marked as out of date and cannot be published or changed. Also, you cannot revert any publications published before your upgrade. The *Revert* option is removed for these publications.
-```
+!!! important
+    Before upgrading your Liferay version, ensure you've published all active publications. After upgrading, active publications are marked as out of date and cannot be published or changed. Also, you cannot revert any publications published before your upgrade. The *Revert* option is removed for these publications.
 
 ## Creating a Publication
 
@@ -33,9 +32,8 @@ Before upgrading your Liferay version, ensure you've published all active public
 
    Alternatively, select a [publication template](./using-publication-templates.md) to auto-populate these fields.
 
-   ```{note}
-   Publication names do not need to be unique. However, using unique names is recommended for organization.
-   ```
+   !!! note
+       Publication names do not need to be unique. However, using unique names is recommended for organization.
 
 1. Click *Create*.
 
@@ -43,9 +41,8 @@ Before upgrading your Liferay version, ensure you've published all active public
 
 Once the publication is created, you can begin adding changes to it. See [Making and Publishing Changes](./making-and-publishing-changes.md) to learn more about the editing and publishing process.
 
-```{note}
-After creation, each publication is automatically updated with changes made in production, provided they don't conflict with any changes made in the publication.
-```
+!!! note
+    After creation, each publication is automatically updated with changes made in production, provided they don't conflict with any changes made in the publication.
 
 ## Managing Ongoing Publications
 
@@ -71,9 +68,8 @@ From here, you can click a publication's Actions button ( ![Actions button](../.
 
 **Delete**: Remove the publication from your instance. When selected, you are prompted to confirm your choice.
 
-```{warning}
-Deleting a publication permanently removes all of its changes from your database and cannot be undone. Before deleting a publication, ensure you've saved any data you want to preserve.
-```
+!!! warning
+    Deleting a publication permanently removes all of its changes from your database and cannot be undone. Before deleting a publication, ensure you've saved any data you want to preserve.
 
 ## Managing Scheduled Publications
 
@@ -97,12 +93,11 @@ In the *History* tab, you can view a table of all published publications for the
 
 From here, you can click *Revert* for a publication to automatically create a new publication that reverts its changes. You can also make additional changes to your DXP instance as part of your Revert publication. See [Reverting Changes](./reverting-changes.md) for more information.
 
-```{note}
-While all published publications on an instance are listed in the History tab, only publication owners and collaborators can view the publication's list of changes or revert it.
-```
+!!! note
+    While all published publications on an instance are listed in the History tab, only publication owners and collaborators can view the publication's list of changes or revert it.
 
 ## Related Topics
 
-* [Publications Overview](../publications.md)
-* [Enabling Publications](./enabling-publications.md)
-* [Making and Publishing Changes](./making-and-publishing-changes.md)
+- [Publications Overview](../publications.md)
+- [Enabling Publications](./enabling-publications.md)
+- [Making and Publishing Changes](./making-and-publishing-changes.md)

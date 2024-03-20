@@ -10,10 +10,10 @@ visibility:
 **At a Glance**
 
 * Liferay competes against many competitors, grouped into:
-    * Enterprise Suites
-    * Composable Point-Solutions
-    * Low-Code Application Platforms (LCAP)
-    * Digital Experience Platforms (DXP)
+  * Enterprise Suites
+  * Composable Point-Solutions
+  * Low-Code Application Platforms (LCAP)
+  * Digital Experience Platforms (DXP)
 * Liferay’s fundamental differentiators provide guidance on where Liferay DXP is strong
 * Battlecards are provided for the core competitors Liferay faces most often
 
@@ -88,7 +88,7 @@ Liferay DXP is an ideal solution to modernize and consolidate complex architectu
 
 Extending legacy applications is also a frequently observed need. This is where enterprises would like to keep their legacy applications, but would like to extend the lives of these applications using latest innovations to give their enterprise a competitive edge without having to upgrade or re-implement these legacy applications entirely.
 
-### Technical audiences & Partners
+### Technical Audiences & Partners
 
 Technical audiences often immediately see the value Liferay brings because of the nature of Liferay DXP as a platform on which almost any application can be implemented.
 
@@ -121,7 +121,7 @@ It’s also important to know about deals that have been _lost_ to competitors a
 * [Adobe Experience Cloud](https://partner.liferay.com/d/adobe-experience-cloud-battlecard)
 * [Microsoft SharePoint](https://partner.liferay.com/d/sharepoint-battlecard)
 * [Oracle Service Cloud](https://partner.liferay.com/d/oracle-service-cloud-battlecard)
-* [Salesfore Experience Cloud](https://partner.liferay.com/d/salesforce-experience-cloud)
+* [Salesforce Experience Cloud](https://partner.liferay.com/d/salesforce-experience-cloud)
 * [SAP Hybris](https://partner.liferay.com/d/sap-hybris-battlecard)
 
 ### Composable Point Solutions
@@ -149,7 +149,7 @@ It’s also important to know about deals that have been _lost_ to competitors a
 * [Sitecore](https://partner.liferay.com/d/sitecore-battlecard)
 * [Wordpress VIP](https://partner.liferay.com/d/wordpress-vip-battlecard)
 
-This list is being extended all the time, please check back for updates. The current collection represent vendors who are competed with 
+This list is being extended all the time, please check back for updates. The current collection represent vendors who are competed with
 
 * Most often
 * Especially with industries and solutions needs that match Liferay’s ideal customer profile

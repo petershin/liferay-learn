@@ -19,7 +19,7 @@ visibility:
 
 This section contains a brief review of each of the currently available Battlecards. This is _not_ intended to be a deep-dive, please download the Battlecards themselves to view all of the details.
 
-Acquia, Adobe, Optimizely and Sitecore are the [four main competitors](../../level-0/main-competitors-faced-by-liferay.md) covered in the level 0 module.
+Acquia, Adobe, Optimizely and Sitecore are the [four main competitors](../../level-0/competitive-landscape-and-liferay-positioning.md) covered in the level 0 module.
 
 ### Acquia
 

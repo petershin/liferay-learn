@@ -46,4 +46,4 @@ Liferay provides a variety of solutions to streamline customer experiences for e
 
 Congratulations! You have completed this module on industry solutions. 
 
-Next, find out who are the [Main Competitors](../main-competitors-faced-by-liferay.md) faced by Liferay.
+Next, find out who are the [Main Competitors](../competitive-landscape-and-liferay-positioning.md) faced by Liferay.

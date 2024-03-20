@@ -22,7 +22,7 @@ visibility:
 
 This module explains how to learn about Liferay’s competitors by using the competitor Battlecards.
 
-The level 0 session on the [main competitors faced by Liferay](../level-0/main-competitors-faced-by-liferay.md) went through, on a fairly detailed level, four of Liferay’s main competitors. This module focuses on Battlecards in general, covering how they are built and maintained, along with where to find them and how they are structured.
+The level 0 session on the [main competitors faced by Liferay](../level-0/competitive-landscape-and-liferay-positioning.md) went through, on a fairly detailed level, four of Liferay’s main competitors. This module focuses on Battlecards in general, covering how they are built and maintained, along with where to find them and how they are structured.
 
 The actual content of this module are the Battlecards themselves. In order to learn more about the competitors please download them and study them.
 

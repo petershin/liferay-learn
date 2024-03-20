@@ -10,15 +10,15 @@ visibility:
 **At a Glance**
 
 * Liferay competes against many competitors, grouped into:
-    * Enterprise Suites
-    * Composable Point-Solutions
-    * Low-Code Application Platforms (LCAP)
-    * Digital Experience Platforms (DXP)
+  * Enterprise Suites
+  * Composable Point-Solutions
+  * Low-Code Application Platforms (LCAP)
+  * Digital Experience Platforms (DXP)
 * Focus on different aspects depending on the competitor being faced
 
 ## Liferay vs. Enterprise Suites
 
-When competing against an enterprise suite vendor, focus on the following
+When competing against an enterprise suite vendor, focus on the following:
 
 * **Best-of-breed**: Suite vendors are best-of-suite, not best-of-breed DXP because there is no specific focus on DXP. Liferay also provides best-of-breed Portal and CMS capabilities. For example, Liferay is a Headless CMS leader in the latest [IDC MarketScape for Hybrid-Headless CMS](https://www.liferay.com/idc-marketscape-for-hybrid-headless-cms).
 * **Customizability**: Enterprise suites are only customizable within the limited boundaries of their monolithic architecture. By comparison, Liferay is completely customizable and can be part of a fully flexible composable architecture.
@@ -29,7 +29,7 @@ When competing against an enterprise suite vendor, focus on the following
 
 ## Liferay vs. Composable Point Solutions
 
-When competing against composable point solutions, focus on the following
+When competing against composable point solutions, focus on the following:
 
 * **Complexity & Time-to-market**: To achieve a complete enterprise solution for customers, a composable point solution like a headless CMS will have to be integrated with other solutions, such as a Commerce point solution. Although this composability provides the ultimate flexibility, it will take time to select and integrate these various components.
 * **Accountability & Maintainability**: Another aspect prospects should consider is that all these composable solutions are provided by different vendors, all with their own terms and conditions, so the complete solution will be complex, difficult to maintain, and there is no single accountability for the solution as a whole.
@@ -39,7 +39,7 @@ When competing against composable point solutions, focus on the following
 
 ## Liferay vs. Low-Code Application Platforms
 
-LCAP vendors allow the quick creation of applications to automate business processes, but there are some restrictions and disadvantages to be aware of 
+LCAP vendors allow the quick creation of applications to automate business processes, but there are some restrictions and disadvantages to be aware of:
 
 * **Best-of-breed DXP**: Generic business processes are easily automated with LCAP, but core DXP functionality like CMS and Portal is typically not available and will have to be integrated. Liferay provides market leading DXP capabilities.
 * **Customizability & Integration**: The main advantage of LCAP is the ease and speed at which a non-technical user can automate business processes. However, low code has severe limitations. For more advanced customizations, code is required. The same applies to Integrations - LCAP can be integrated with other systems but not to the extent that is possible with composable code-based solutions.
@@ -50,7 +50,7 @@ LCAP vendors allow the quick creation of applications to automate business proce
 
 ### Liferay vs. Integrated Digital Experience Platforms
 
-Liferay has traditionally been considered to be an integrated DXP, but, even when compared to other DXP vendors there are some additional advantages 
+Liferay has traditionally been considered to be an integrated DXP, but, even when compared to other DXP vendors there are some additional advantages:
 
 * **Composability & Integration**: Liferay is fully composable through its Headless APIs. This allows Liferay to be part of a fully composable architecture. DXPs are traditionally Monolithic and do not provide such flexibility to customize and integrate.
 * **Customizability with no-Code and code**: Liferay is market leading when it comes to tailoring solutions with either No-Code capabilities or Code-based Client Extensions, which is not the case for many Monolithic DXP vendors.

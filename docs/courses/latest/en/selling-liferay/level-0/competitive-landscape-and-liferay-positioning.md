@@ -1,7 +1,7 @@
 ---
 toc:
 - ./competitive-landscape-and-liferay-positioning/enterprise-application-categories.md
-- ./competitive-landscape-and-liferay-positioning/.md
+- ./competitive-landscape-and-liferay-positioning/liferay-positioning.md
 uuid: f27cc155-9321-43ee-bbda-9e0698529f66
 visibility: 
 - Employee
@@ -14,12 +14,12 @@ visibility:
 
 * The market for both DXPs and Enterprise Applications is large and growing
 * Liferay competes against many competitors, grouped into:
-    * Enterprise Suites
-    * Composable Point-Solutions
-    * Low-Code Application Platforms (LCAP)
-    * Digital Experience Platforms (DXP)
+  * Enterprise Suites
+  * Composable Point-Solutions
+  * Low-Code Application Platforms (LCAP)
+  * Digital Experience Platforms (DXP)
 * Liferay’s fundamental differentiators provide guidance on where Liferay DXP is strong
-* Battlecards are provided for the core competitors Liferay faces most often 
+* Battlecards are provided for the core competitors Liferay faces most often
 
 ## Background
 
@@ -39,11 +39,11 @@ The market for Liferay is very large, and includes healthy growth:
 * DXP Market: $14b with 12% annual growth
 * Enterprise Application Market: $330b with 8% annual growth
 
-This provides opportunities for Liferay and Lifeary’s Partners. But, the market is very competitive with a wide-range of vendors, which makes it difficult and confusing for customers to decide which solution is best for them.
+This provides opportunities for Liferay and Liferay’s Partners. But, the market is very competitive with a wide-range of vendors, which makes it difficult and confusing for customers to decide which solution is best for them.
 
 ## Enterprise Application Categories
 
-Liferay’s competition can be broadly divided into four main categories
+Liferay’s competition can be broadly divided into four main categories:
 
 * Enterprise Suites
 * Digital Experience Platforms (DXP)
@@ -52,7 +52,7 @@ Liferay’s competition can be broadly divided into four main categories
 
 Grouping our competitors this way allows us to highlight our unique strengths against different types of competitors.
 
-### Enterprise Suites 
+### Enterprise Suites
 
 Enterprise suite vendors provide solutions for end-to-end business processes, including Enterprise Resource Planning (ERP), Supply Chain Management, and Customer Experience. Most large enterprises have complex backend applications provided by vendors like SAP and Oracle. 
 
@@ -92,7 +92,7 @@ Note that not all of the vendors are pure-plays. For example, some Enterprise Su
 
 ![Liferay's competition landscape is composed of four categories used to group competitors together.](./competitive-landscape-and-liferay-positioning/images/01.png)
 
-## The best of all worlds in one vendor
+## The Best of All Worlds in One Vendor
 
 In this model, Liferay is right at the center because we work effectively in all four areas because
 

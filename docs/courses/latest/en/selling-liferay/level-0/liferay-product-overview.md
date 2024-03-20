@@ -87,8 +87,8 @@ By the end of this module you will have a high level view of all of the main cap
 
 :::
 
-:::{grid-item-card} 
+:::{grid-item-card} Developer Tooling
 :link: ./liferay-product-overview/developer-tooling.md
 
-:::::::
-
+:::
+::::

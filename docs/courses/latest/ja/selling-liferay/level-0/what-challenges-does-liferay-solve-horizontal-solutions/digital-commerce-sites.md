@@ -47,4 +47,4 @@ Liferay DXPベースのデジタルコマースサイトについて見込み顧
 * 統合 & 相互運用性
 * [サイトの構築](https://learn.liferay.com/w/dxp/site-building)
 
-次：[外部Webサイト](./external-websites.md) 
+次：[外部Webサイト](./enterprise-websites.md) 

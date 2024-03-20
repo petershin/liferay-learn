@@ -2,10 +2,10 @@
 toc:
   - ./what-challenges-does-liferay-solve-horizontal-solutions/customer-portals.md
   - ./what-challenges-does-liferay-solve-horizontal-solutions/digital-commerce-sites.md
-  - ./what-challenges-does-liferay-solve-horizontal-solutions/external-websites.md
+  - ./what-challenges-does-liferay-solve-horizontal-solutions/enterprise-websites.md
   - ./what-challenges-does-liferay-solve-horizontal-solutions/supplier-portals.md
   - ./what-challenges-does-liferay-solve-horizontal-solutions/partner-portals.md
-  - ./what-challenges-does-liferay-solve-horizontal-solutions/modern-intranets.md
+  - ./what-challenges-does-liferay-solve-horizontal-solutions/intranets.md
 visibility:
   - Employee
   - Partner
@@ -75,7 +75,7 @@ Liferay가 가장 일반적으로 해결하는 6가지 솔루션에 대해 알�
 :::
 
 :::{grid-item-card} 외부 웹사이트
-:link: ./what-challenges-does-liferay-solve-horizontal-solutions/external-websites.md
+:link: ./what-challenges-does-liferay-solve-horizontal-solutions/enterprise-websites.md
 
 :::
 
@@ -90,7 +90,7 @@ Liferay가 가장 일반적으로 해결하는 6가지 솔루션에 대해 알�
 :::
 
 :::{grid-item-card} 최신 인트라넷
-:link: ./what-challenges-does-liferay-solve-horizontal-solutions/modern-intranets.md
+:link: ./what-challenges-does-liferay-solve-horizontal-solutions/intranets.md
 
 :::
 ::::

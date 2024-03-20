@@ -40,4 +40,4 @@ visibility:
 * [ヘッドレスデリバリー](https://learn.liferay.com/w/dxp/headless-delivery)
 * [コラボレーションとソーシャルメディア](https://learn.liferay.com/w/dxp/collaboration-and-social)
 
-次：[最新の社内ポータル](./modern-intranets.md) 
+次：[最新の社内ポータル](./intranets.md) 

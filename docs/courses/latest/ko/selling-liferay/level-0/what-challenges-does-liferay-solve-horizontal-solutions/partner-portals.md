@@ -40,4 +40,4 @@ visibility:
 * [헤드리스 배송](https://learn.liferay.com/w/dxp/headless-delivery)
 * [협업 및 소셜](https://learn.liferay.com/w/dxp/collaboration-and-social)
 
-다음: [최신 인트라넷](./modern-intranets.md). 
+다음: [최신 인트라넷](./intranets.md). 

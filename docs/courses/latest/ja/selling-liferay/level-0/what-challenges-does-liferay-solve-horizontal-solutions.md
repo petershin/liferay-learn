@@ -2,10 +2,10 @@
 toc:
   - ./what-challenges-does-liferay-solve-horizontal-solutions/customer-portals.md
   - ./what-challenges-does-liferay-solve-horizontal-solutions/digital-commerce-sites.md
-  - ./what-challenges-does-liferay-solve-horizontal-solutions/external-websites.md
+  - ./what-challenges-does-liferay-solve-horizontal-solutions/enterprise-websites.md
   - ./what-challenges-does-liferay-solve-horizontal-solutions/supplier-portals.md
   - ./what-challenges-does-liferay-solve-horizontal-solutions/partner-portals.md
-  - ./what-challenges-does-liferay-solve-horizontal-solutions/modern-intranets.md
+  - ./what-challenges-does-liferay-solve-horizontal-solutions/intranets.md
 visibility:
 - Employee
 - Partner
@@ -75,7 +75,7 @@ visibility:
 :::
 
 :::{grid-item-card} 外部Webサイト
-:link: ./what-challenges-does-liferay-solve-horizontal-solutions/external-websites.md
+:link: ./what-challenges-does-liferay-solve-horizontal-solutions/enterprise-websites.md
 
 :::
 
@@ -90,8 +90,7 @@ visibility:
 :::
 
 :::{grid-item-card} 最新の社内ポータル
-:link: ./what-challenges-does-liferay-solve-horizontal-solutions/modern-intranets.md
+:link: ./what-challenges-does-liferay-solve-horizontal-solutions/intranets.md
 
 :::  
 ::::
-

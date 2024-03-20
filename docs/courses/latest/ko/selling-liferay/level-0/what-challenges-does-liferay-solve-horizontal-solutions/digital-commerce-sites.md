@@ -47,4 +47,4 @@ Liferay DXP 기반 디지털 상거래 사이트에 대해 잠재 고객과 이�
 * 통합 & 상호 운용성
 * [사이트 구축](https://learn.liferay.com/w/dxp/site-building)
 
-다음: [외부 웹사이트](./external-websites.md). 
+다음: [외부 웹사이트](./enterprise-websites.md). 

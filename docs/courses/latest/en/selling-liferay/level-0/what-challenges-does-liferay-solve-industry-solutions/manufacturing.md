@@ -34,6 +34,6 @@ When working with customers in manufacturing, we most commonly see desire for th
 
 **Self-Service Customer Portal** : Improve customer loyalty and reduce cost-to-serve with a self-service portal that streamlines processes and empower customers to manage their accounts, access knowledge, and solve problems independently.
 
-**Integration Platform** : Connect data sources and easily integrate into back-end systems like ERP, PIM, CRM, to provide a unified view of accurate, real-time data on one platform.
+**Integration Platform** : Connect data sources and easily integrate into backend systems like ERP, PIM, CRM, to provide a unified view of accurate, real-time data on one platform.
 
 Next: [Financial Services](./financial-services.md)

@@ -14,7 +14,7 @@ uuid: f96c5490-e5f3-44cc-ab84-061874af7d47
 
 The Search Insights Widget, when added to a Search Page, is for inspecting two things: 
 
-- The query string that's constructed by the back-end search code when the User enters a keyword
+- The query string that's constructed by the backend search code when the User enters a keyword
 
 - The response string returned from the search engine
 

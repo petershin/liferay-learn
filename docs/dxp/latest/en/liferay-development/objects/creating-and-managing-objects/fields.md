@@ -27,7 +27,7 @@ When you [publish](./creating-objects.md#publishing-object-drafts) an object dra
 
 ![All objects include default system fields, but you can add custom fields.](./fields/images/01.png)
 
-Liferay provides these field types that correspond to specific data types in the back-end:
+Liferay provides these field types that correspond to specific data types in the backend:
 
 | Field Types (UI)                                      | Data Type (HEADLESS) | Description                                                                                                                                                                                                                                                                                                          |
 |:------------------------------------------------------|:---------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

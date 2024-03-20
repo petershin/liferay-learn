@@ -12,7 +12,7 @@ taxonomy-category-names:
 Liferay's Headless Delivery application provides REST services for the [Message Boards](../../message-boards.md) application. With these services, you can add message board categories, threads, and messages, list their information, modify their content, or remove them altogether. Here you'll call those services using cURL commands and Java classes.
 
 ```{note}
-Message board categories are named *sections* in the Liferay back-end. These sections define topics for organizing threads.
+Message board categories are named *sections* in the Liferay backend. These sections define topics for organizing threads.
 ```
 
 ## Preparing Tutorial Resources

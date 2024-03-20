@@ -90,7 +90,7 @@ Once you've created your picklists, you can use them for data fields in your obj
 
    **Label**: This value identifies the field in the Objects UI and can be localized after the field is created.
 
-   **Field Name**: This value determines the field's name in the back-end and uses camel case. Once a field is published, this value cannot be changed.
+   **Field Name**: This value determines the field's name in the backend and uses camel case. Once a field is published, this value cannot be changed.
 
 1. Select a field *Type*. See [Field Compatibility Reference](#field-compatibility-reference) for which field types are compatible with DDL fields.
 

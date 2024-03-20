@@ -7,7 +7,7 @@ visibility:
 
 # Integration
 
-Integrate external back-end or legacy applications faster and simplify complexity by connecting disparate systems, tools, and data into one unified view. Liferay provides a platform for integrating content and services from back-end or legacy applications. It supports integration with SOAP, REST, GraphQL, RSS, and proprietary APIs, making it easy to unite third-party software, legacy systems, and data, so you can create more productive and efficient user experiences.
+Integrate external backend or legacy applications faster and simplify complexity by connecting disparate systems, tools, and data into one unified view. Liferay provides a platform for integrating content and services from backend or legacy applications. It supports integration with SOAP, REST, GraphQL, RSS, and proprietary APIs, making it easy to unite third-party software, legacy systems, and data, so you can create more productive and efficient user experiences.
 
 ![Liferay's low code and API features are a part of Liferay DXP, while Client Extensions can exist outside of the DXP environment.](./integration/images/01.png)
 

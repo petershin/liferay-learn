@@ -30,7 +30,7 @@ Liferay’s portal heritage gives us a unique perspective:
 
 Digital experience platforms empower companies to embrace digital transformation. A key to effective digital transformation is providing seamless experiences by breaking down the barriers between disparate systems.
 
-Portal-heritage platforms like Liferay excel at integrating back-end and legacy systems. These give customers, employees, and other end users access to the data they need across multiple applications within a company.
+Portal-heritage platforms like Liferay excel at integrating backend and legacy systems. These give customers, employees, and other end users access to the data they need across multiple applications within a company.
 
 For example, customer data locked in a CRM or company’s marketing automation tool can be unified and shared easily through a portal-heritage DXP. This saves businesses and customers time and effort and helps companies better understand and support their target audience.
 

@@ -35,7 +35,7 @@ To create a picklist,
 
    **Name**: Determines the item's display name and can be localized after creation.
 
-   **Key**: Determines the standard value understood by applications in the back-end and uses camel case.
+   **Key**: Determines the standard value understood by applications in the backend and uses camel case.
 
    ![Enter a name and key, and then click Save.](./creating-picklists/images/03.png)
 

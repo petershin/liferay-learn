@@ -22,15 +22,15 @@ The course content referenced below is provided as-is and may not be up to date 
 * [7.4 Business User (7/8) - Using Modern Tools to Improve Sites with Liferay DXP](https://youtube.com/playlist?list=PLm3_L1L-YuebOYsqo2qyqA0YrqrLvnqmF)
 * [7.4 Business User (8/8) - Secure Your Liferay DXP Platform](https://youtube.com/playlist?list=PLm3_L1L-YuebDiYuoboao2x0YmK4vkvaZ)
 
-### 7.4 Back-End Developer
+### 7.4 Backend Developer
 
-* [7.4 Back-End Developer (1/7) - Setting Up the Development Environment](https://youtube.com/playlist?list=PLm3_L1L-YueZbw4S_sMBs-F1dq0ploHvH)
-* [7.4 Back-End Developer (2/7) - Building the Baseline](https://youtube.com/playlist?list=PLm3_L1L-YueZChjtsBVZP3ZH3eheUQVl4)
-* [7.4 Back-End Developer (3/7) - Application Presentation and Customization](https://youtube.com/playlist?list=PLm3_L1L-YueZlR9rzVRSC2edT51uC9d_G)
-* [7.4 Back-End Developer (4/7) - Application Localization and Styling](https://youtube.com/playlist?list=PLm3_L1L-YueahH2OkCuH-nRcC6S3SbVbh)
-* [7.4 Back-End Developer (5/7) - Implement Access Control](https://youtube.com/playlist?list=PLm3_L1L-YuebnQR-FFZn9f-3GAJsr5VvD)
-* [7.4 Back-End Developer (6/7) - Integrate with Liferay DXP Frameworks](https://youtube.com/playlist?list=PLm3_L1L-YueanvEKca-dJjPseoHbfkcgp)
-* [7.4 Back-End Developer (7/7) - Integrate with External Systems](https://youtube.com/playlist?list=PLm3_L1L-YueYL73rBtxI0Dc98Wz_m0tYD)
+* [7.4 Backend Developer (1/7) - Setting Up the Development Environment](https://youtube.com/playlist?list=PLm3_L1L-YueZbw4S_sMBs-F1dq0ploHvH)
+* [7.4 Backend Developer (2/7) - Building the Baseline](https://youtube.com/playlist?list=PLm3_L1L-YueZChjtsBVZP3ZH3eheUQVl4)
+* [7.4 Backend Developer (3/7) - Application Presentation and Customization](https://youtube.com/playlist?list=PLm3_L1L-YueZlR9rzVRSC2edT51uC9d_G)
+* [7.4 Backend Developer (4/7) - Application Localization and Styling](https://youtube.com/playlist?list=PLm3_L1L-YueahH2OkCuH-nRcC6S3SbVbh)
+* [7.4 Backend Developer (5/7) - Implement Access Control](https://youtube.com/playlist?list=PLm3_L1L-YuebnQR-FFZn9f-3GAJsr5VvD)
+* [7.4 Backend Developer (6/7) - Integrate with Liferay DXP Frameworks](https://youtube.com/playlist?list=PLm3_L1L-YueanvEKca-dJjPseoHbfkcgp)
+* [7.4 Backend Developer (7/7) - Integrate with External Systems](https://youtube.com/playlist?list=PLm3_L1L-YueYL73rBtxI0Dc98Wz_m0tYD)
 
 ### 7.4 Frontend Developer
 
@@ -63,15 +63,15 @@ The course content referenced below is provided as-is and may not be up to date 
 * [7.3 Frontend Developer (4/5) - Content Presentation](https://youtube.com/playlist?list=PLm3_L1L-YueZeTWGy1Z2taGJVVmsM5YyJ)
 * [7.3 Frontend Developer (5/5) - Controlling Page Layouts](https://youtube.com/playlist?list=PLm3_L1L-YueaWyxWE-kXG78-QSUy0r9od)
 
-### 7.3 Back-End Developer
+### 7.3 Backend Developer
 
-* [7.3 Back-End Developer (1/7) - Setting up the Development Environment DXP](https://youtube.com/playlist?list=PLm3_L1L-YueZbw4S_sMBs-F1dq0ploHvH)
-* [7.3 Back-End Developer (2/7) - Building the Baselines DXP](https://youtube.com/playlist?list=PLm3_L1L-YueZChjtsBVZP3ZH3eheUQVl4)
-* [7.3 Back-End Developer (3/7) - Application Presentation and Customization DXP](https://youtube.com/playlist?list=PLm3_L1L-YueZlR9rzVRSC2edT51uC9d_G)
-* [7.3 Back-End Developer (4/7) - Application Localization and Styling DXP](https://youtube.com/playlist?list=PLm3_L1L-YueahH2OkCuH-nRcC6S3SbVbh)
-* [7.3 Back-End Developer (5/7) - Implement Access Control DXP](https://youtube.com/playlist?list=PLm3_L1L-YuebnQR-FFZn9f-3GAJsr5VvD)
-* [7.3 Back-End Developer (6/7) - Integrate with Liferay DXP Frameworks DXP](https://youtube.com/playlist?list=PLm3_L1L-YueanvEKca-dJjPseoHbfkcgp)
-* [7.3 Back-End Developer (7/7) - Integrate with External Systems DXP](https://youtube.com/playlist?list=PLm3_L1L-YueYL73rBtxI0Dc98Wz_m0tYD)
+* [7.3 Backend Developer (1/7) - Setting up the Development Environment DXP](https://youtube.com/playlist?list=PLm3_L1L-YueZbw4S_sMBs-F1dq0ploHvH)
+* [7.3 Backend Developer (2/7) - Building the Baselines DXP](https://youtube.com/playlist?list=PLm3_L1L-YueZChjtsBVZP3ZH3eheUQVl4)
+* [7.3 Backend Developer (3/7) - Application Presentation and Customization DXP](https://youtube.com/playlist?list=PLm3_L1L-YueZlR9rzVRSC2edT51uC9d_G)
+* [7.3 Backend Developer (4/7) - Application Localization and Styling DXP](https://youtube.com/playlist?list=PLm3_L1L-YueahH2OkCuH-nRcC6S3SbVbh)
+* [7.3 Backend Developer (5/7) - Implement Access Control DXP](https://youtube.com/playlist?list=PLm3_L1L-YuebnQR-FFZn9f-3GAJsr5VvD)
+* [7.3 Backend Developer (6/7) - Integrate with Liferay DXP Frameworks DXP](https://youtube.com/playlist?list=PLm3_L1L-YueanvEKca-dJjPseoHbfkcgp)
+* [7.3 Backend Developer (7/7) - Integrate with External Systems DXP](https://youtube.com/playlist?list=PLm3_L1L-YueYL73rBtxI0Dc98Wz_m0tYD)
 
 ### 7.3 Solution Architect
 
@@ -106,22 +106,22 @@ The course content referenced below is provided as-is and may not be up to date 
 * [7.2 Content Creator (4/5) - Gain Insight on the User Journey](https://youtube.com/playlist?list=PLm3_L1L-Yuea5-C5eOh-pFq2QTIwHxr-B)
 * [7.2 Content Creator (5/5) - Manage Your Business Workflow](https://youtube.com/playlist?list=PLm3_L1L-YueYzfuswe9GldTWyu7Ggo5sG)
 
-### 7.2 Back-End Developer
+### 7.2 Backend Developer
 
-* [7.2 Back-End Developer  (1/14) - Setting Up the Back-End Development](https://youtube.com/playlist?list=PLm3_L1L-YueZHsgs0EDaCxlyE0hWeN2aP)
-* [7.2 Back-End Developer  (2/14) - OSGi Basics](https://youtube.com/playlist?list=PLm3_L1L-Yueb1gseOrHXTvCDpdoXrjVhf)
-* [7.2 Back-End Developer  (3/14) - Liferay's OSGi Container](https://youtube.com/playlist?list=PLm3_L1L-YueZQLZ5YJTlF4bfrSFXQA0sH)
-* [7.2 Back-End Developer  (4/14) - Managing OSGi Bundles](https://youtube.com/playlist?list=PLm3_L1L-YueaTzFVzNlYlXbyLtkMn0mZn)
-* [7.2 Back-End Developer  (5/14) - Working with Portlet Modules](https://youtube.com/playlist?list=PLm3_L1L-YueaEYHApvigIUsQMK9SSd3ln)
-* [7.2 Back-End Developer  (6/14) - Real World Application](https://youtube.com/playlist?list=PLm3_L1L-Yuebz6dR_nJv1KcOUVtaTTecj)
-* [7.2 Back-End Developer  (7/14) - Platform Architecture Overview](https://youtube.com/playlist?list=PLm3_L1L-YuebkXBGOlIi4CmBvMDWveFNG)
-* [7.2 Back-End Developer  (8/14) - Customize the User Interface](https://youtube.com/playlist?list=PLm3_L1L-YueYNq5Ty1DXaurzBdmLAOH47)
-* [7.2 Back-End Developer  (9/14) - Extend Liferay Schema](https://youtube.com/playlist?list=PLm3_L1L-YueZiXbf_yE0h-RZP-fXIumTT)
-* [7.2 Back-End Developer  (10/14) - Customize the Service Layer](https://youtube.com/playlist?list=PLm3_L1L-YueZpZGVOeKBg8_3CdzvkMEyB)
-* [7.2 Back-End Developer  (11/14) - Override Controller Actions](https://youtube.com/playlist?list=PLm3_L1L-YueYL1XmSmXTXCp6I3JH_Yk59)
-* [7.2 Back-End Developer  (12/14) - Catch Portal Events](https://youtube.com/playlist?list=PLm3_L1L-YueZhSzMWDL4BLnTi9E3lLwQL)
-* [7.2 Back-End Developer  (13/14) - Leverage Liferay Message Bus](https://youtube.com/playlist?list=PLm3_L1L-YueaCYn7kiCd-kNBzznFipTyQ)
-* [7.2 Back-End Developer  (14/14) - Customize the Portal Search](https://youtube.com/playlist?list=PLm3_L1L-YueagvtLjmVMvuuSMCalKOdSl)
+* [7.2 Backend Developer  (1/14) - Setting Up the Backend Development](https://youtube.com/playlist?list=PLm3_L1L-YueZHsgs0EDaCxlyE0hWeN2aP)
+* [7.2 Backend Developer  (2/14) - OSGi Basics](https://youtube.com/playlist?list=PLm3_L1L-Yueb1gseOrHXTvCDpdoXrjVhf)
+* [7.2 Backend Developer  (3/14) - Liferay's OSGi Container](https://youtube.com/playlist?list=PLm3_L1L-YueZQLZ5YJTlF4bfrSFXQA0sH)
+* [7.2 Backend Developer  (4/14) - Managing OSGi Bundles](https://youtube.com/playlist?list=PLm3_L1L-YueaTzFVzNlYlXbyLtkMn0mZn)
+* [7.2 Backend Developer  (5/14) - Working with Portlet Modules](https://youtube.com/playlist?list=PLm3_L1L-YueaEYHApvigIUsQMK9SSd3ln)
+* [7.2 Backend Developer  (6/14) - Real World Application](https://youtube.com/playlist?list=PLm3_L1L-Yuebz6dR_nJv1KcOUVtaTTecj)
+* [7.2 Backend Developer  (7/14) - Platform Architecture Overview](https://youtube.com/playlist?list=PLm3_L1L-YuebkXBGOlIi4CmBvMDWveFNG)
+* [7.2 Backend Developer  (8/14) - Customize the User Interface](https://youtube.com/playlist?list=PLm3_L1L-YueYNq5Ty1DXaurzBdmLAOH47)
+* [7.2 Backend Developer  (9/14) - Extend Liferay Schema](https://youtube.com/playlist?list=PLm3_L1L-YueZiXbf_yE0h-RZP-fXIumTT)
+* [7.2 Backend Developer  (10/14) - Customize the Service Layer](https://youtube.com/playlist?list=PLm3_L1L-YueZpZGVOeKBg8_3CdzvkMEyB)
+* [7.2 Backend Developer  (11/14) - Override Controller Actions](https://youtube.com/playlist?list=PLm3_L1L-YueYL1XmSmXTXCp6I3JH_Yk59)
+* [7.2 Backend Developer  (12/14) - Catch Portal Events](https://youtube.com/playlist?list=PLm3_L1L-YueZhSzMWDL4BLnTi9E3lLwQL)
+* [7.2 Backend Developer  (13/14) - Leverage Liferay Message Bus](https://youtube.com/playlist?list=PLm3_L1L-YueaCYn7kiCd-kNBzznFipTyQ)
+* [7.2 Backend Developer  (14/14) - Customize the Portal Search](https://youtube.com/playlist?list=PLm3_L1L-YueagvtLjmVMvuuSMCalKOdSl)
 
 ### 7.2 Frontend Developer
 
@@ -167,23 +167,23 @@ The course content referenced below is provided as-is and may not be up to date 
 * [7.1 Content Management (10/11) - Managing Business Processes with Workflows](https://youtube.com/playlist?list=PLm3_L1L-YueajZm1lh-eAwbXiZrc2IMBG)
 * [7.1 Content Management (11/11) - Staging Content Before Publication](https://youtube.com/playlist?list=PLm3_L1L-Yuea6YLqnnbp5bQ8EVYPjqXBa)
 
-### 7.1 Back-End Developer
+### 7.1 Backend Developer
 
-* [7.1 Back-End Developer (1/15) - Introduction](https://youtube.com/playlist?list=PLm3_L1L-YueatR2slO_AhS_Q9vQqr4Jrd)
-* [7.1 Back-End Developer (2/15) - Development Environment](https://youtube.com/playlist?list=PLm3_L1L-Yuea6bkw60W_F5Q28pJib89jx)
-* [7.1 Back-End Developer (3/15) - OSGi Basics](https://youtube.com/playlist?list=PLm3_L1L-YuebJpnjNNMr_hx4eRbkgCUnp)
-* [7.1 Back-End Developer (4/15) - Liferay's OSGi Container](https://youtube.com/playlist?list=PLm3_L1L-YuebaBx5VnApYiE4bLUdcj82s)
-* [7.1 Back-End Developer (5/15) - Managing OSGi Bundles](https://youtube.com/playlist?list=PLm3_L1L-YueapjbRgWbSEsPbaWTqDMgZI)
-* [7.1 Back-End Developer (6/15) - Working with Portlet Modules](https://youtube.com/playlist?list=PLm3_L1L-YueYjn_bI8ts6nBdfq_WrfD1b)
-* [7.1 Back-End Developer (7/15) - Develop a Real-World Application](https://youtube.com/playlist?list=PLm3_L1L-YueaTyvj28Q0wBWcGEeaarrXu)
-* [7.1 Back-End Developer (8/15) - Liferay Platform Architecture Review](https://youtube.com/playlist?list=PLm3_L1L-YueaAcP1bafK5nq_0xpb2IMuS)
-* [7.1 Back-End Developer (9/15) - Customize the User Interface](https://youtube.com/playlist?list=PLm3_L1L-YueYSOmVzgXHipfiYx0Qgb2Ez)
-* [7.1 Back-End Developer (10/15) - Extend Liferay's Schema](https://youtube.com/playlist?list=PLm3_L1L-Yuea6t4BaV_DM49TnPYvbi_bO)
-* [7.1 Back-End Developer (11/15) - Customize the Service Layer](https://youtube.com/playlist?list=PLm3_L1L-YueZm3VAGvf19gxHJ8tjOecw5)
-* [7.1 Back-End Developer (12/15) - Override Controller Actions](https://youtube.com/playlist?list=PLm3_L1L-YuebUbfa8FfQfo6hs8kxdqrx7)
-* [7.1 Back-End Developer (13/15) - Catch Portal Events](https://youtube.com/playlist?list=PLm3_L1L-YuebZh52jdrRM6addTPwXtFTk)
-* [7.1 Back-End Developer (14/15) - Leverage the Liferay Message Bus](https://youtube.com/playlist?list=PLm3_L1L-YueZQe00v_YJaF6QkGCQgP-xi)
-* [7.1 Back-End Developer (15/15) - Customize Portal Search](https://youtube.com/playlist?list=PLm3_L1L-YueYxkMOVX4yb6FAkv3d4RuXM)
+* [7.1 Backend Developer (1/15) - Introduction](https://youtube.com/playlist?list=PLm3_L1L-YueatR2slO_AhS_Q9vQqr4Jrd)
+* [7.1 Backend Developer (2/15) - Development Environment](https://youtube.com/playlist?list=PLm3_L1L-Yuea6bkw60W_F5Q28pJib89jx)
+* [7.1 Backend Developer (3/15) - OSGi Basics](https://youtube.com/playlist?list=PLm3_L1L-YuebJpnjNNMr_hx4eRbkgCUnp)
+* [7.1 Backend Developer (4/15) - Liferay's OSGi Container](https://youtube.com/playlist?list=PLm3_L1L-YuebaBx5VnApYiE4bLUdcj82s)
+* [7.1 Backend Developer (5/15) - Managing OSGi Bundles](https://youtube.com/playlist?list=PLm3_L1L-YueapjbRgWbSEsPbaWTqDMgZI)
+* [7.1 Backend Developer (6/15) - Working with Portlet Modules](https://youtube.com/playlist?list=PLm3_L1L-YueYjn_bI8ts6nBdfq_WrfD1b)
+* [7.1 Backend Developer (7/15) - Develop a Real-World Application](https://youtube.com/playlist?list=PLm3_L1L-YueaTyvj28Q0wBWcGEeaarrXu)
+* [7.1 Backend Developer (8/15) - Liferay Platform Architecture Review](https://youtube.com/playlist?list=PLm3_L1L-YueaAcP1bafK5nq_0xpb2IMuS)
+* [7.1 Backend Developer (9/15) - Customize the User Interface](https://youtube.com/playlist?list=PLm3_L1L-YueYSOmVzgXHipfiYx0Qgb2Ez)
+* [7.1 Backend Developer (10/15) - Extend Liferay's Schema](https://youtube.com/playlist?list=PLm3_L1L-Yuea6t4BaV_DM49TnPYvbi_bO)
+* [7.1 Backend Developer (11/15) - Customize the Service Layer](https://youtube.com/playlist?list=PLm3_L1L-YueZm3VAGvf19gxHJ8tjOecw5)
+* [7.1 Backend Developer (12/15) - Override Controller Actions](https://youtube.com/playlist?list=PLm3_L1L-YuebUbfa8FfQfo6hs8kxdqrx7)
+* [7.1 Backend Developer (13/15) - Catch Portal Events](https://youtube.com/playlist?list=PLm3_L1L-YuebZh52jdrRM6addTPwXtFTk)
+* [7.1 Backend Developer (14/15) - Leverage the Liferay Message Bus](https://youtube.com/playlist?list=PLm3_L1L-YueZQe00v_YJaF6QkGCQgP-xi)
+* [7.1 Backend Developer (15/15) - Customize Portal Search](https://youtube.com/playlist?list=PLm3_L1L-YueYxkMOVX4yb6FAkv3d4RuXM)
 
 ### 7.1 Frontend Developer
 

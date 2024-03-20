@@ -31,7 +31,7 @@ Follow these steps:
 
    **Label**: This value identifies the field in the Objects UI and can be localized after the field is created.
 
-   **Field Name**: This value determines the field's name in the back-end and uses camel case. Once a field is published, this value cannot be changed.
+   **Field Name**: This value determines the field's name in the backend and uses camel case. Once a field is published, this value cannot be changed.
 
    ```{note}
    Some field names are reserved by Liferay and cannot be used. See [Reserved Field Names](#reserved-field-names) for more information. 

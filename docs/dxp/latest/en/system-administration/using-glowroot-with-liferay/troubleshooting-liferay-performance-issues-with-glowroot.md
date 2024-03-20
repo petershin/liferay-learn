@@ -69,9 +69,9 @@ If some transactions seems to be slow despite low CPU utilization, it may be a c
 
 Check to see if transactions are blocked or waiting for a long time.
 
-## Back-end Service Slowness
+## Backend Service Slowness
 
-It may be that a slow transaction is caused by a slow or unresponsive external back-end service. Like the [concurrency issues](#concurrency-issues) above, use the transaction dashboard to inspect your back-end service transactions. You may need to make some configuration changes with your services.
+It may be that a slow transaction is caused by a slow or unresponsive external backend service. Like the [concurrency issues](#concurrency-issues) above, use the transaction dashboard to inspect your backend service transactions. You may need to make some configuration changes with your services.
 
 ## Long Garbage Collection Time
 

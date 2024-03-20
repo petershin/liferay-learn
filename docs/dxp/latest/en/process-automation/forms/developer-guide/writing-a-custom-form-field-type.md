@@ -164,10 +164,10 @@ The `Main` component is exported at the end of the file; it includes the `Slider
 
 Right now the Max and Min settings for the Slider field are hard coded, but it's better if they're configurable. To add custom settings to a form field,
 
-- Adjust the back-end by adding a `DDMFormFieldTypeSettings` class and adding a method to the `DDMFormFieldType`.
+- Adjust the backend by adding a `DDMFormFieldTypeSettings` class and adding a method to the `DDMFormFieldType`.
 - Adapt the frontend for rendering the new settings by adding a `DDMFormFieldTemplateContextContributor` and updating the way the settings are defined in `Slider.es.js`.
 
-### Supporting Custom Settings in the Back-end
+### Supporting Custom Settings in the Backend
 
 The form field's settings are defined in the `DDMTypeSettings` class, which also defines the form that appears in the field's sidebar using the `@DDMForm` annotation. Then the `DDMFormFieldType` itself must know about the new settings definition so it doesn't display the default field settings form. A `DDMFormFieldContextContributor` class sends the new settings to the React component to show it to the end user.
 
@@ -264,7 +264,7 @@ The form field's settings are defined in the `DDMTypeSettings` class, which also
 
 ### Supporting Custom Settings in the Frontend
 
-The frontend requires updates to the `Slider.es.js` to support user-entered min and max values and a `DDMTemplateContextContributor` so that the frontend can receive the setting values from the back-end.
+The frontend requires updates to the `Slider.es.js` to support user-entered min and max values and a `DDMTemplateContextContributor` so that the frontend can receive the setting values from the backend.
 
 1. Create a `C2P9DDMFormFieldTemplateContextContributor` class in the `com.acme.c2p9.internal.dynamic.data.mapping.form.field.type` package:
 

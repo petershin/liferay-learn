@@ -147,7 +147,7 @@ public void render(
 
 ### Complete the Discount Rule Type
 
-The discount rule type is comprised of back-end logic for evaluating when to apply a discount rule to an order, logic to render UI inputs for the discount rule type, and the custom UI inputs themselves. Follow these steps:
+The discount rule type is comprised of backend logic for evaluating when to apply a discount rule to an order, logic to render UI inputs for the discount rule type, and the custom UI inputs themselves. Follow these steps:
 
 * [Configure the `ServletContext` for the module.](#configure-the-servletcontext-for-the-module)
 * [Implement the `CommerceDiscountRuleTypeJSPContributor`'s `render` method.](#implement-the-commercediscountruletypejspcontributors-render-method)

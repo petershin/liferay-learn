@@ -51,7 +51,7 @@ Liferay's native capabilities help organizations reach customers in a true multi
 
 * **Headless APIs** - Liferay offers OpenAPI based APIs that can be consumed using either REST or GraphQL. When using these headless APIs, organizations can focus on creating tailored experiences across multiple devices. 
 * **Adaptive Media** - Liferay DXP dynamically adjusts images to best fit the screen size and network speed of each device, addressing experience and performance issues for all page types and products.
-* **Mobile Support** - Rapidly develop native and hybrid apps, create mobile experiences, and define mobile device rules using Liferay DXP as a mobile back-end.
+* **Mobile Support** - Rapidly develop native and hybrid apps, create mobile experiences, and define mobile device rules using Liferay DXP as a mobile backend.
 
 ## Case Study - Zain
 

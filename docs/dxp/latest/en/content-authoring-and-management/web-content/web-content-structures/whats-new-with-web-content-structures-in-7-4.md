@@ -9,7 +9,7 @@ uuid: f69fd720-0df2-4a33-8aeb-ebaa3e0bcfdf
 ---
 # What's New with Web Content Structures in 7.4?
 
-As of Liferay 7.4, web content structures have been migrated from using Dynamic Data Mapping (DDM) to Data Engine (DE) as the back-end framework for building forms.
+As of Liferay 7.4, web content structures have been migrated from using Dynamic Data Mapping (DDM) to Data Engine (DE) as the backend framework for building forms.
 
 ![Web content structures are built using a form builder backed by the Data Engine framework.](./whats-new-with-web-content-structures-in-7-4/images/01.png)
 

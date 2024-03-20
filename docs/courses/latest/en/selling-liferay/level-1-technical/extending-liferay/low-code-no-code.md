@@ -131,7 +131,7 @@ Examples include customer data, product data, and sales data etc. But, there are
 
 ### Headless APIs
 
-Liferay [Headless integration](https://learn.liferay.com/w/dxp/headless-delivery/using-liferay-as-a-headless-platform) provides developers with a flexible and efficient way to integrate Liferay's back-end functionality with their own applications, using modern REST APIs.
+Liferay [Headless integration](https://learn.liferay.com/w/dxp/headless-delivery/using-liferay-as-a-headless-platform) provides developers with a flexible and efficient way to integrate Liferay's backend functionality with their own applications, using modern REST APIs.
 
 * This approach provides developers with greater control over the user experience, and enables faster time-to-market for their applications.
 

@@ -114,7 +114,7 @@ The [Portlet Descriptor to OSGi Service Property Map](../reference/portlet-descr
 
 ## What's Next
 
-Congratulations! You've created a web application using a JSP and one simple Java class. There are lots of directions you can go from here. To add more views, see [Rendering Views with MVC Portlet](./rendering-views-with-mvc-portlet.md). To add actions to your application, see [MVC Action Command](./mvc-action-command.md). Or implement a back-end data model using [Service Builder](../../data-frameworks/service-builder.md).
+Congratulations! You've created a web application using a JSP and one simple Java class. There are lots of directions you can go from here. To add more views, see [Rendering Views with MVC Portlet](./rendering-views-with-mvc-portlet.md). To add actions to your application, see [MVC Action Command](./mvc-action-command.md). Or implement a backend data model using [Service Builder](../../data-frameworks/service-builder.md).
 
 ## Related Topics
 

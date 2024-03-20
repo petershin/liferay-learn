@@ -21,7 +21,7 @@ By default, object definitions are grouped in the Uncategorized folder, but you 
 
    **Label**: Identifies the relationship in the Objects UI and can be localized after the relationship is created.
 
-   **Name**: Determines the relationship's name in the back-end and uses camel case. Once the relationship is published, this value cannot be changed.
+   **Name**: Determines the relationship's name in the backend and uses camel case. Once the relationship is published, this value cannot be changed.
 
    ![Enter a folder Label and Name.](./organizing-objects-with-folders/images/01.png)
 

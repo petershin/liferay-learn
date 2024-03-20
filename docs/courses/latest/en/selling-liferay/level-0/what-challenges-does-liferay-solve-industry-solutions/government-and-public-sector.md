@@ -26,7 +26,7 @@ The biggest challenge for customers in the public sector is how to meet ever-ris
 
 Another concern for the public sector is to support complex security and compliance requirements. Liferay adheres to a secure development process, adopts OWASP and CWE/SANS security standards, and conducts robust security testing and verification. Additionally, Liferay’s solutions meet EU General Data Protection Regulation (GDPR), ISO 27001, and SOC 2 standards.
 
-The final two challenges---addressing aging legacy systems and breaking down organizational silos---are related, because they are both integration challenges that Liferay addresses well.  When using Liferay as a presentation and personalization layer on the frontend and an integration platform on the back-end, data and functionality can be unlocked from diverse legacy systems and presented to citizens in a modern and intuitive platform.
+The final two challenges---addressing aging legacy systems and breaking down organizational silos---are related, because they are both integration challenges that Liferay addresses well.  When using Liferay as a presentation and personalization layer on the frontend and an integration platform on the backend, data and functionality can be unlocked from diverse legacy systems and presented to citizens in a modern and intuitive platform.
 
 ## Common Solutions
 

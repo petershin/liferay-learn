@@ -41,7 +41,7 @@ For dedicated coverage of the search widgets, see [Search Pages and Widgets](./g
 
 **Search Suggestions**: Suggest better queries and spell check queries. See the [Suggestions Configuration Reference](./search-pages-and-widgets/search-results/enabling-search-suggestions.md#suggestions-configuration-reference) for more information.
 
-**Search Insights**: Add this to the Search Page to inspect the full query string that's constructed by the back-end search code when the User enters a keyword. Only useful for testing and development. See [Search Insights](./search-pages-and-widgets/search-insights.md) for more information.
+**Search Insights**: Add this to the Search Page to inspect the full query string that's constructed by the backend search code when the User enters a keyword. Only useful for testing and development. See [Search Insights](./search-pages-and-widgets/search-insights.md) for more information.
 
 **Custom Filter**: Add a widget to the page for each of the filters you'd like applied to the search results. Let search page users see and manipulate the filters or make them invisible and/or immutable. See [Using the Custom Filter Widget](./search-pages-and-widgets/search-results/using-the-custom-filter-widget.md) for more information.
 

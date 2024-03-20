@@ -31,7 +31,7 @@ Having a dedicated load balancer provides a myriad of enhanced features, such as
 
 ## CDN
 
-Liferay's Content Delivery Network (CDN) is a built-in feature of Liferay Cloud. It acts as a proxy between the client and origin servers, caching and serving content from points-of-presence (POPs) closer to users, instead of sending them to back-end servers (instances).
+Liferay's Content Delivery Network (CDN) is a built-in feature of Liferay Cloud. It acts as a proxy between the client and origin servers, caching and serving content from points-of-presence (POPs) closer to users, instead of sending them to backend servers (instances).
 
 In the event of a DDoS attack for cacheable content, the requests are sent to globally distributed POPs instead of the origin servers, thereby providing a larger set of locations to absorb the attack. Caching your global, static content also greatly enhances delivery speed.
 

@@ -81,7 +81,7 @@ Two applications make and display a poll: the *Forms* application in the Site Me
 
 If you're upgrading Liferay along the path of Liferay 7.2 &rarr; 7.3 &rarr; 7.4, your Polls are automatically upgraded to use Forms. During the 7.4 lifecycle the upgrade process to accomplish this task was enhanced; as of Liferay 7.4 GA/Update 27 it can now
 
-- Convert the entities in the back-end so that Polls become Form entities and can be managed with the Forms application and APIs.
+- Convert the entities in the backend so that Polls become Form entities and can be managed with the Forms application and APIs.
 - Enable the form settings that provide polls-like behavior.
 - If the Poll was displayed on a page in the Polls Display widget, post-upgrade it's displayed on the page in a Form widget.
 

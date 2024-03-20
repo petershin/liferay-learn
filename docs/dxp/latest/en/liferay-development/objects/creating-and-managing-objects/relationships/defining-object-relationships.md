@@ -23,7 +23,7 @@ Relationships add fields and tables to object definitions for relating their ent
 
    **Label**: Identifies the relationship in the Objects UI and can be localized after the relationship is created.
 
-   **Name**: Determines the relationship's name in the back-end and uses camel case. Once the relationship is published, this value cannot be changed.
+   **Name**: Determines the relationship's name in the backend and uses camel case. Once the relationship is published, this value cannot be changed.
 
 1. Select a relationship type: *One to Many* or *Many to Many*.
 

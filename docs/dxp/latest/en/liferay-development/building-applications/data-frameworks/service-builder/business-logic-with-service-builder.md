@@ -106,7 +106,7 @@ Extend the local service by adding methods that can add, update, and delete `E4G
 
 After implementing your `add*`, `update*`, and `delete*` methods, run Service Builder to propagate your new service methods to the `*LocalService` interface.
 
-## Integrate the Back-end
+## Integrate the Backend
 
 Now implement the service methods you created into your web module with [portlet actions](../../developing-a-java-web-application/using-mvc/invoking-actions-with-mvc-portlet.md).
 

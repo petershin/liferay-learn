@@ -122,14 +122,14 @@ More information appears below, as the Searchable Types configuration has import
 
 ### Advanced: Configuring Query Clause Contributors
 
-Liferay's back-end code (and potentially any custom applications deployed in your Liferay instance) contributes query clauses to the ongoing search.
+Liferay's backend code (and potentially any custom applications deployed in your Liferay instance) contributes query clauses to the ongoing search.
 
-These clauses contributed by the back-end can be configured via Search Blueprints. However, most users should never touch two settings: 
+These clauses contributed by the backend can be configured via Search Blueprints. However, most users should never touch two settings: 
 
 - Search Framework Indexer Clauses 
 - Search Framework Query Contributors 
 
-The default settings are usually enough. If you're sure you must tweak this behavior beyond using the [Searchable Types](#choosing-which-liferay-assets-to-search), you must understand the way these back-end contributors work:
+The default settings are usually enough. If you're sure you must tweak this behavior beyond using the [Searchable Types](#choosing-which-liferay-assets-to-search), you must understand the way these backend contributors work:
 
 1. Use **Searchable Types** to disable individual indexers from participating in the search. If you disable a type's indexer, no clauses for the type are added to the search query, even if its Query Contributors are selected. Results for these types do not appear for users. 
 

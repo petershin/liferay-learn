@@ -25,7 +25,7 @@ To see the storage adapters in your system,
 1. Click the ![Settings](../../../images/icon-settings.png) icon in the upper right.
 1. In the General tab, expand the list options in the Select a Storage Type setting.
 
-The Dynamic Data Mapping (DDM) back-end can *adapt* to other storage formats for form records. This makes it easy to serialize form data as XML or YAML (or whatever format you like) instead of the default JSON, and you can choose to store form data anywhere, including the Liferay database.
+The Dynamic Data Mapping (DDM) backend can *adapt* to other storage formats for form records. This makes it easy to serialize form data as XML or YAML (or whatever format you like) instead of the default JSON, and you can choose to store form data anywhere, including the Liferay database.
 
 ```{important}
 You cannot change the storage adapter after a form has been saved. All existing forms continue to use the adapter configured at the time of their creation, and a different storage adapter cannot be selected.

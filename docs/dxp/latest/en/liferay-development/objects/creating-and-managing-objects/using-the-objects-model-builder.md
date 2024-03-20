@@ -70,7 +70,7 @@ You can also add fields and relationships to object definitions. However, some c
 
    **Label**: Identifies the field in the Objects UI and can be localized after the field is created.
 
-   **Field Name**: Determines the field's name in the back-end and uses camel case. Once a field is published, this value cannot be changed.
+   **Field Name**: Determines the field's name in the backend and uses camel case. Once a field is published, this value cannot be changed.
 
 1. Select a field *Type*. See [Field Types Reference](./fields/adding-fields-to-objects.md#field-types-ui-reference) for more information about available field types and configuration options.
 
@@ -92,7 +92,7 @@ The field is added immediately to the definition. By default, object cards displ
 
    **Label**: Identifies the relationship in the Objects UI and can be localized after the relationship is created.
 
-   **Name**: Determines the relationship's name in the back-end and uses camel case. Once the relationship is published, this value cannot be changed.
+   **Name**: Determines the relationship's name in the backend and uses camel case. Once the relationship is published, this value cannot be changed.
 
 1. Select a relationship *Type* and an object definition for the other side of the relationship. See [Defining Object Relationships](./relationships/defining-object-relationships.md) for more information.
 

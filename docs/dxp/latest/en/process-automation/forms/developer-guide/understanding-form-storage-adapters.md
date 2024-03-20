@@ -12,7 +12,7 @@ uuid: 36e2c2c9-6b4c-43cd-9ced-6ae3f500428c
 
 When a user adds a form record, the forms API routes the processing of the request through a storage adapter API. The same is true for the other *CRUD* operations performed on form entries (read, update, and delete). The default implementation of the storage service is called `DefaultDDMStorageAdapter`, and as its name implies, it implements the `DDMStorageAdapter` interface to store form entry data in JSON format.
 
-The Dynamic Data Mapping (DDM) back-end can *adapt* to other storage formats for form records. This makes it easy to serialize form data as XML or YAML (or whatever format you like) instead of the default JSON. You can then choose to store form data anywhere, including the Liferay database.
+The Dynamic Data Mapping (DDM) backend can *adapt* to other storage formats for form records. This makes it easy to serialize form data as XML or YAML (or whatever format you like) instead of the default JSON. You can then choose to store form data anywhere, including the Liferay database.
 
 ```{important}
 A newly added storage adapter can only be used with new Forms. All existing Forms continue to use the adapter selected (JSON by default) at the time of their creation, and a different storage adapter cannot be selected.

@@ -39,7 +39,7 @@ Here are some key features:
 * Flexibility and support for adding custom SQL queries and dynamic queries 
 
 ```{note}
-You don't have to use Service Builder for your back-end services on DXP/Portal. It's entirely possible to use your persistence framework of choice, such as JPA or Hibernate. Note that under the hood, Service Builder uses [Hibernate](http://hibernate.org/). 
+You don't have to use Service Builder for your backend services on DXP/Portal. It's entirely possible to use your persistence framework of choice, such as JPA or Hibernate. Note that under the hood, Service Builder uses [Hibernate](http://hibernate.org/). 
 ```
 
 ## Customization via Implementation Classes

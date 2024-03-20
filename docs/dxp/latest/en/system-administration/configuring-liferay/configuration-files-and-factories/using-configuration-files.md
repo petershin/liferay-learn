@@ -30,7 +30,7 @@ Configuration files are named after the backing Java class. For example, the Jou
 com.liferay.journal.configuration.JournalServiceConfiguration.config
 ```
 
-![The Web Content System Settings entry has the back-end ID com.liferay.journal.configuration.JournalServiceConfiguration.](./using-configuration-files/images/01.png)
+![The Web Content System Settings entry has the backend ID com.liferay.journal.configuration.JournalServiceConfiguration.](./using-configuration-files/images/01.png)
 
 The system enforces the configuration file's name. If you edit the name, the link to the configuration entry is broken and further customization never takes effect. The only exception is for [Factory Configuration](./using-factory-configuration.md), where a unique subname can be provided in some cases.
 

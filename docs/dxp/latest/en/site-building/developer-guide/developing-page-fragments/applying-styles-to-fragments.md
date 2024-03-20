@@ -29,7 +29,7 @@ For example, if you configure a simple custom fragment with this HTML and apply 
 </a>
 ```
 
-Changing the background color of this example fragment to black applies that change to the outer `<div>` that is created for styles on the back-end normally. It looks like this in the UI:
+Changing the background color of this example fragment to black applies that change to the outer `<div>` that is created for styles on the backend normally. It looks like this in the UI:
 
 ![Without the data-lfr-styles attribute, the background color applies to the entire fragment, creating an undesirable effect.](./applying-styles-to-fragments/images/02.png)
 

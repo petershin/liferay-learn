@@ -43,6 +43,9 @@ Once enabled, you can access the drop-down Publications bar menu from anywhere i
 
 You can use this menu to create new publications, select which publication you want to work on, switch between edit and production modes, and review and publish the current publication's changes. See [Creating and Managing Publications](./creating-and-managing-publications.md) to learn about creating, editing, and removing individual publications.
 
+!!! note
+    While using API calls, the publication is still in effect. Changes you make through an API call are recorded and can be reviewed in your publication application.
+
 ## How to Disable Publications
 
 If desired, you can disable Publications at any time via the Publications application page.

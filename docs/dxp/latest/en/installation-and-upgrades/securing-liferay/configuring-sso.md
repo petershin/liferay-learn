@@ -6,6 +6,7 @@ toc:
   - ./configuring-sso/using-openid-connect.md
   - ./configuring-sso/authenticating-with-cas.md
   - ./configuring-sso/authenticating-with-kerberos.md
+  - ./configuring-sso/integrating-pingone-through-saml.md
   - ./configuring-sso/configuring-liferay-authentication-with-okta-using-openid-connect.md
 uuid: ac3296b7-70b3-47db-b0fd-e57a1b1280fb
 taxonomy-category-names:

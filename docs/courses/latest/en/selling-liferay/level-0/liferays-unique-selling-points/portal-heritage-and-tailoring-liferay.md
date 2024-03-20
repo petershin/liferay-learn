@@ -85,7 +85,6 @@ Of course, this is far from a complete list.
 
 All of these solutions feature inherent complexity in requirements and integration needs. By focusing on solutions that can handle this complexity, Liferay helps our customers to save time and reduce errors, and to address business-to-business (B2B), business-to-employee (B2E), government-to-citizen (G2C), government-to-business (G2B) as well as many of the most common B2C use cases as well.
 
-Congratulations! You have completed this module on Liferay's value proposition. 
+Congratulations! You have completed this module on Liferay's unique selling points.
 
 Next: [The Ideal Customer Profile for Liferay Customers](../the-ideal-customer-profile.md).
-

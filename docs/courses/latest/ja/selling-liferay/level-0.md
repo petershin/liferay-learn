@@ -3,7 +3,7 @@ toc:
 - ./level-0/introduction-to-liferay.md
 - ./level-0/liferay-product-offering.md
 - ./level-0/liferay-product-overview.md
-- ./level-0/liferays-unique-value-proposition.md
+- ./level-0/liferays-unique-selling-points.md
 - ./level-0/the-ideal-customer-profile.md
 - ./level-0/what-challenges-does-liferay-solve-horizontal-solutions.md
 - ./level-0/what-challenges-does-liferay-solve-industry-solutions.md
@@ -70,7 +70,7 @@ visibility:
 :::
 
 :::{grid-item-card} Liferayが提案する独自の価値
-:link: ./level-0/liferays-unique-value-proposition.md
+:link: ./level-0/liferays-unique-selling-points.md
 
 このモジュールでは、デジタルエクスペリエンスプラットフォームの概念を確認します。
 :::

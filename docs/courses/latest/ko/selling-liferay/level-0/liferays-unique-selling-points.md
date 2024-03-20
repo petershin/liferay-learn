@@ -1,7 +1,7 @@
 ---
 toc:
-  - ./liferays-unique-value-proposition/organic-innovation-and-open-source-leadership.md
-  - ./liferays-unique-value-proposition/portal-heritage-and-tailoring-liferay.md
+  - ./liferays-unique-selling-points/organic-innovation-and-open-source-leadership.md
+  - ./liferays-unique-selling-points/portal-heritage-and-tailoring-liferay.md
 visibility:
   - Employee
   - Partner
@@ -24,8 +24,8 @@ visibility:
 경쟁업체가 동일한 가치를 제공한다고 주장하는 반면, Liferay만이 고객에게 더 많은 가치를 제공하기 위해 경쟁업체와 차별화되는 특성과 특징의 고유한 조합을 보유하고 있습니다.
 
 ```{note}
-* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/c/portal/login?p_l_id=3026&redirect=%2Fweb%2Fguest%2Fd%2Fl0-4-liferays-unique-value-proposition) 을 확인하세요.
-* 라이브 워크숍에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/c/portal/login?redirect=%2Fdocuments%2Fd%2Fguest%2Fl0-4-liferays-unique-value-proposition-pdf) 을 다운로드하세요.
+* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/c/portal/login?p_l_id=3026&redirect=%2Fweb%2Fguest%2Fd%2Fl0-4-liferays-unique-selling-points) 을 확인하세요.
+* 라이브 워크숍에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/c/portal/login?redirect=%2Fdocuments%2Fd%2Fguest%2Fl0-4-liferays-unique-selling-points-pdf) 을 다운로드하세요.
 ```
 
 ## 가치 제안이란 무엇입니까?
@@ -44,7 +44,7 @@ USP는 가치 제안을 지원하고 대상 고객이 가치 있다고 인식하
 
 ## Liferay의 가치 제안은 무엇입니까?
 
-![Liferay는 속도, 유연성 또는 비용을 희생하지 않고 완전한 플랫폼을 제공합니다.](./liferays-unique-value-proposition/images/01.png)
+![Liferay는 속도, 유연성 또는 비용을 희생하지 않고 완전한 플랫폼을 제공합니다.](./liferays-unique-selling-points/images/01.png)
 
 liferay.com에 명시된 바와 같이 Liferay의 가치 제안은 Liferay가 맞춤형 솔루션을 위한 완벽한 플랫폼임을 명시합니다. Liferay를 통해 고객은 속도, 유연성 또는 비용을 희생하지 않고도 맞춤형 디지털 경험을 만들 수 있습니다.
 
@@ -56,4 +56,4 @@ liferay.com에 명시된 바와 같이 Liferay의 가치 제안은 Liferay가 �
 
 즉, 플랫폼이 아닌 디지털 경험을 맞춤화하는 솔루션을 제공하는 것입니다. 우리는 오픈 소스 포털 유산과 탁월한 사용자 정의 용이성 덕분에 이를 수행할 수 있는 좋은 사이트에 있습니다. 더 들을 준비가 되셨나요?
 
-[갑시다!](./liferays-unique-value-proposition/organic-innovation-and-open-source-leadership.md)
+[갑시다!](./liferays-unique-selling-points/organic-innovation-and-open-source-leadership.md)

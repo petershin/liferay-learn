@@ -1,7 +1,7 @@
 ---
 toc:
-  - ./liferays-unique-value-proposition/organic-innovation-and-open-source-leadership.md
-  - ./liferays-unique-value-proposition/portal-heritage-and-tailoring-liferay.md
+  - ./liferays-unique-selling-points/organic-innovation-and-open-source-leadership.md
+  - ./liferays-unique-selling-points/portal-heritage-and-tailoring-liferay.md
 visibility:
 - Employee
 - Partner
@@ -44,7 +44,7 @@ USPは、UVPをサポートし、ターゲットオーディエンスが価値�
 
 ## LiferayのUVPとは
 
-![Liferayは、スピード、柔軟性、コストを損なうことなく、完全なプラットフォームを提供します。](./liferays-unique-value-proposition/images/01.png)
+![Liferayは、スピード、柔軟性、コストを損なうことなく、完全なプラットフォームを提供します。](./liferays-unique-selling-points/images/01.png)
 
 liferay.comに記載されているように、弊社のUVPは、Liferayはカスタマイズされたソリューション向けの完全なプラットフォームであることです。 Liferayを使用することで、お客様はスピード、柔軟性、コストを損なうことなく、カスタムデジタルエクスペリエンスを構築できます。
 
@@ -56,4 +56,4 @@ liferay.comに記載されているように、弊社のUVPは、Liferayはカ�
 
 言い換えれば、プラットフォームではなく、デジタルエクスペリエンスをカスタマイズするソリューションを提供することです。 弊社には、オープンソースポータル製品と他にはないカスタマイズのしやすさという利点があるため、そのようなサービスが可能になります。 　
 
-[次：オーガニック・イノベーションとオープンソース・リーダーシップ](./liferays-unique-value-proposition/organic-innovation-and-open-source-leadership.md)
+[次：オーガニック・イノベーションとオープンソース・リーダーシップ](./liferays-unique-selling-points/organic-innovation-and-open-source-leadership.md)

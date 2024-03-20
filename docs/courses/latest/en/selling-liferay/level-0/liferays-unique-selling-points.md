@@ -45,7 +45,7 @@ USPs help support the value proposition and highlight benefits that target audie
 
 While the wording of each vendor’s value proposition is different, many vendors propose the same value. USPs, however, are the key differentiators that set vendors apart from their competitors and establish them in the market.
 
-## What is Liferay's Value Proposition?  
+## What is Liferay's Value Proposition?
 
 ![Liferay provides a complete platform without sacrificing speed, flexibility, or cost.](./liferays-unique-selling-points/images/01.png)
 
@@ -55,7 +55,7 @@ This statement captures the unique values that Liferay has demonstrated for year
 
 At times, this customization ability has been both a benefit and a challenge. It provides complete flexibility, but can create a burden for teams tasked with maintaining and upgrading the platform.
 
-Recently, Liferay has focused on developing the platform with a wide range of out-of-the-box features, low-code capabilitie,s and ways to extend the platform without customizing the core. With these featrues the platform can be tailored to customers’ unique and complex needs, to create any solution or application.
+Recently, Liferay has focused on developing the platform with a wide range of out-of-the-box features, low-code capabilities, and ways to extend the platform without customizing the core. With these featrues the platform can be tailored to customers’ unique and complex needs, to create any solution or application.
 
 Or in other words, to deliver solutions that customize the digital experience, not the platform. Liferay is well positioned to do that because of our organic innovation, open source portal heritage and our unparalleled ease of customization.
 

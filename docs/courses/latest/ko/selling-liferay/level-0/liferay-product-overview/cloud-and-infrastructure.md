@@ -17,4 +17,4 @@ Liferay Experience Cloud는 강력한 사용자 정의 기능을 제공하는 �
 
 축하해요! Liferay 제품 개요 모듈을 완료했습니다!
 
-다음 모듈에서는 [Liferay의 고유한 가치 제안](../liferays-unique-value-proposition.md)대해 알아봅니다.
+다음 모듈에서는 [Liferay의 고유한 가치 제안](../liferays-unique-selling-points.md)대해 알아봅니다.

@@ -3,7 +3,7 @@ toc:
 - ./level-0/introduction-to-liferay.md
 - ./level-0/liferay-product-offering.md
 - ./level-0/liferay-product-overview.md
-- ./level-0/liferays-unique-value-proposition.md
+- ./level-0/liferays-unique-selling-points.md
 - ./level-0/the-ideal-customer-profile.md
 - ./level-0/what-challenges-does-liferay-solve-horizontal-solutions.md
 - ./level-0/what-challenges-does-liferay-solve-industry-solutions.md
@@ -71,8 +71,8 @@ This module provides an introduction to Liferay's sales approach.
 This module provides an introduction to Liferay DXP and its core capabilities.
 :::
 
-:::{grid-item-card} The Unique Value Proposition of Liferay
-:link: ./level-0/liferays-unique-value-proposition.md
+:::{grid-item-card} Liferay's Unique Selling Points
+:link: ./level-0/liferays-unique-selling-points.md
 
 This module reviews the concept of a Digital Experience Platform.
 :::

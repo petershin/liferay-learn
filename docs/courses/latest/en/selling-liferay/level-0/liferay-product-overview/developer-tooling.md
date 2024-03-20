@@ -30,4 +30,4 @@ Although Liferay's recent focus is on customization using low-code and no-code, 
 
 Congratulations! You've completed the Liferay Product Overview module!
 
-In the next module learn about [Liferay's Unique Value Proposition](../liferays-unique-value-proposition.md).
+In the next module learn about [Liferay's Unique Selling Points](../liferays-unique-selling-points.md).

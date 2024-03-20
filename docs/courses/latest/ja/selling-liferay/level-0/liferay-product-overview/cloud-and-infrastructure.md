@@ -17,4 +17,4 @@ Liferay Experience Cloudは、LiferayのSaaSサービスで、強力なカスタ
 
 　 Liferay製品の概要についてはこれで完了です。
 
-次のモジュールでは、[Liferayが提案する独自の価値](../liferays-unique-value-proposition.md)について学びます。
+次のモジュールでは、[Liferayが提案する独自の価値](../liferays-unique-selling-points.md)について学びます。

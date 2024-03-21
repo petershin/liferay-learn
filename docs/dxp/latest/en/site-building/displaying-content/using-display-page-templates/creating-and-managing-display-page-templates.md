@@ -25,7 +25,9 @@ See [Using Display Page Templates](../using-display-page-templates.md) to learn 
 
 1. Open the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)) and click *Design* &rarr; *Page Templates*.
 
-1. Click the *Display Page Templates* tab and click *Add* (![Add Button](./../../../images/icon-add.png)).
+1. Click the *Display Page Templates* tab and click *New*.
+
+   {bdg-secondary}`Liferay DXP 2024.Q2+` You can also create folders to organize your display page templates. Click *New* &rarr; *Folder* &rarr;  enter a *Name* and, optionally, a *Description* for the folder. Click *Create*. See [Using Folders](../../../content-authoring-and-management/documents-and-media/uploading-and-managing/using-folders.md) to learn more about folders.
 
 1. Enter a *Name* for your template and select a *Content Type* and *Subtype*, if applicable. Then click *Save*.
 

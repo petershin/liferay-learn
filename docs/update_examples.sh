@@ -93,6 +93,17 @@ function update_examples {
 
 			popd
 		fi
+
+		if [ -z ${zip_dir_name} ]
+		then
+			update_example_script_name=$(find dxp/latest/en -name update_example.sh -print0 | xargs -0 grep "${1}" | sed 's/\(.*update_example\.sh\).*/\1/g')
+
+			pushd $(dirname "${update_example_script_name}")
+
+			./update_example.sh
+
+			popd
+		fi
 	else
 		for update_example_script_name in `find . -name "update_example.sh" -type f`
 		do

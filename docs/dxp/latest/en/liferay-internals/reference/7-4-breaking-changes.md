@@ -1092,6 +1092,14 @@ modules/apps/commerce/commerce-product-type-virtual-order-service/service.xml)
 * __What changed:__ The `commerce-address-web` module's `view.jsp` file is removed.
 * __Reason:__ The Commerce Country portlet is removed.
 
+**PersonalMenuEntry.java**
+[`modules/apps/product-navigation/product-navigation-personal-menu-api/src/main/java/com/liferay/product/navigation/personal/menu/PersonalMenuEntry.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/product-navigation/product-navigation-personal-menu-api/src/main/java/com/liferay/product/navigation/personal/menu/PersonalMenuEntry.java)
+
+* __Date:__ Mar. 18, 2024
+* __Ticket:__ [LPS-194004](https://liferay.atlassian.net/browse/LPS-194004)
+* __What changed:__ The `getJSOnClickConfigJSONObject` method behavior now requires providing a JavaScript function for `getOnClickJSModuleURL`, which is called with the value from `getJSOnClickConfigJSONObject` as its parameter.
+* __Reason:__ This change makes `getJSOnClickConfigJSONObject` more broadly usable for any type of on-click interaction, not just for opening a selection modal.
+
 ### Changes in `portal-impl` classes
 
 **PortletContextFactoryImpl.java**
@@ -1102,6 +1110,117 @@ modules/apps/commerce/commerce-product-type-virtual-order-service/service.xml)
 * __What changed:__ The class is removed. Instead, use `PortletContextFactoryUtil` directly.
 * __Reason:__ The code is being consolidated to simplify code structure.
 
+**portal.properties**
+[`portal-impl/src/portal.properties`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/portal.properties)
+
+* __Date:__ Nov. 7, 2023
+* __Ticket:__ [LPS-196123](https://liferay.atlassian.net/browse/LPS-196123)
+* __What changed:__ The `dl.file.entry.processors` portal property is removed. Instead, add your own `DLProcessor` implementation as an OSGi service.
+* __Reason:__ This portal property is no longer required because all out-of-the-box implementations of `DLProcessor` are now OSGi services.
+
+**DLPreviewableProcessor.java**
+`portal-impl/src/com/liferay/portlet/documentlibrary/util/DLPreviewableProcessor.java`
+
+* __Date:__ Nov. 7, 2023
+* __Ticket:__ [LPS-196123](https://liferay.atlassian.net/browse/LPS-196123)
+* __What changed:__ The `DLPreviewableProcessor` class is moved from `portal-impl` to the `document-library-preview-api` module. Add `document-library-preview-api` as a build dependency to continue using this class.
+* __Reason:__ `DLPreviewableProcessor`'s subclasses are now all in the module, so they can be converted into OSGi components.
+
+**AudioProcessorImpl.java**
+`portal-impl/src/com/liferay/portlet/documentlibrary/util/AudioProcessorImpl.java`
+
+* __Date:__ Nov. 7, 2023
+* __Ticket:__ [LPS-196123](https://liferay.atlassian.net/browse/LPS-196123)
+* __What changed:__ The `AudioProcessorImpl` class is moved from `portal-impl` to the `document-library-preview-audio` module. Instead, reference the `DLProcessor` class with the target `"(type=" + DLProcessorConstants.AUDIO_PROCESSOR + ")"`.
+* __Reason:__ This change allows `AudioProcessorImpl` to become an OSGi component.
+
+**VideoProcessorImpl.java**
+`portal-impl/src/com/liferay/portlet/documentlibrary/util/VideoProcessorImpl.java`
+
+* __Date:__ Nov. 7, 2023
+* __Ticket:__ [LPS-196123](https://liferay.atlassian.net/browse/LPS-196123)
+* __What changed:__ The `VideoProcessorImpl` class is moved from `portal-impl` to the `document-library-preview-video` module. Instead, reference the `DLProcessor` class with the target `"(type=" + DLProcessorConstants.VIDEO_PROCESSOR + ")"`.
+* __Reason:__ This change allows `AudioProcessorImpl` to become an OSGi component.
+
+**DLFileEntryLocalServiceImpl.java**
+[`portal-impl/src/com/liferay/portlet/documentlibrary/service/impl/DLFileEntryLocalServiceImpl.java`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/com/liferay/portlet/documentlibrary/service/impl/DLFileEntryLocalServiceImpl.java)
+
+* __Date:__ Nov. 7, 2023
+* __Ticket:__ [LPS-197738](https://liferay.atlassian.net/browse/LPS-197738)
+* __What changed:__ The new `forEachFileEntry(long, Consumer<DLFileEntry>, long, String[])` and `forEachFileEntry(long, long, Consumer<DLFileEntry>, long, String[])` methods are added.
+* __Reason:__ These methods allow for executing arbitrary code on a long list of file entries without retrieving the entire list first.
+
+**AssetTagFinderImpl.java**
+[`portal-impl/src/com/liferay/portlet/asset/service/persistence/impl/AssetTagFinderImpl.java`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/com/liferay/portlet/asset/service/persistence/impl/AssetTagFinderImpl.java)
+
+* __Date:__ Nov. 20, 2023
+* __Ticket:__ [LPS-201547](https://liferay.atlassian.net/browse/LPS-201547)
+* __What changed:__ The `countByG_N(long, String)` method is removed. Instead, use the `countByG_C_N(long, long, String)` method, passing `0` as the second argument (`classNameId`).
+* __Reason:__ The `countByG_N(long, String)` method was redundant.
+
+**AssetTagLocalServiceImpl.java** --> getTagsSize(long groupId, String name) `portal-impl/src/com/liferay/portlet/asset/service/impl/AssetTagLocalServiceImpl.java --> getTagsSize(long groupId, String name)`
+
+* __Date:__ Nov. 20, 2023
+* __Ticket:__ [LPS-201547](https://liferay.atlassian.net/browse/LPS-201547)
+* __What changed:__ The `getTagsSize(long, String)` method is removed. Instead, use the `getTagsSize(long, long, String)` method, passing `0` as the second argument (`classNameId`).
+* __Reason:__ The `getTagsSize(long, String)` method was redundant.
+
+**AssetTagServiceImpl.java**
+[`portal-impl/src/com/liferay/portlet/asset/service/impl/AssetTagServiceImpl.java`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/com/liferay/portlet/asset/service/impl/AssetTagServiceImpl.java)
+
+* __Date:__ Nov. 20, 2023
+* __Ticket:__ [LPS-201547](https://liferay.atlassian.net/browse/LPS-201547)
+* __What changed:__ The `getVisibleAssetsTagsCount(long, String)` method is removed. Instead, use the `getVisibleAssetsTagsCount(long, long, String)` method, passing `0` as the second argument (`classNameId`).
+* __Reason:__ The `getVisibleAssetsTagsCount(long, String)` method was redundant.
+
+**SiteMembershipPolicyFactoryUtil.java**
+`portal-impl/src/com/liferay/portal/security/membershippolicy/SiteMembershipPolicyFactoryUtil.java`
+
+* __Date:__ Nov. 23, 2023
+* __Ticket:__ [LPS-199470](https://liferay.atlassian.net/browse/LPS-199470)
+* __What changed:__ The class is removed. Instead, use the static methods in `SiteMembershipPolicyUtil`.
+* __Reason:__ The logic from this class is consolidated into `SiteMembershipPolicyUtil` to simplify the code structure.
+
+**SiteMembershipPolicyFactoryImpl.java**
+`portal-impl/src/com/liferay/portal/security/membershippolicy/SiteMembershipPolicyFactoryImpl.java`
+
+* __Date:__ Nov. 23, 2023
+* __Ticket:__ [LPS-199470](https://liferay.atlassian.net/browse/LPS-199470)
+* __What changed:__ The class is removed. Instead, use `SiteMembershipPolicyUtil` directly.
+* __Reason:__ The logic from this class is consolidated into `SiteMembershipPolicyUtil` to simplify the code structure.
+
+**UserLocalServiceImpl.java**
+[`portal-impl/src/com/liferay/portal/service/impl/UserLocalServiceImpl.java`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/com/liferay/portal/service/impl/UserLocalServiceImpl.java)
+
+* __Date:__ Nov. 24, 2023
+* __Ticket:__ [LPS-201007](https://liferay.atlassian.net/browse/LPS-201007)
+* __What changed:__ The `searchBySocial` method has a new `long[]` parameter for group IDs.
+* __Reason:__ This change allows for searching for users who are added to a group via a user group.
+
+**LayoutPrototypePermissionImpl.java**
+`portal-impl/src/com/liferay/portal/service/permission/LayoutPrototypePermissionImpl.java`
+
+* __Date:__ Nov. 24, 2023
+* __Ticket:__ [LPS-201156](https://liferay.atlassian.net/browse/LPS-201156)
+* __What changed:__ The class is removed. Instead, use `LayoutPrototypePermissionUtil` directly.
+* __Reason:__ The `LayoutPrototypePermissionImpl` class is no longer needed Spring no longer needs to register it as an OSGi component.
+
+**MethodFactoryRegistryImpl.java**
+`portal-impl/src/com/liferay/portal/webdav/methods/MethodFactoryRegistryImpl.java`
+
+* __Date:__ Nov. 27, 2023
+* __Ticket:__ [LPS-200166](https://liferay.atlassian.net/browse/LPS-200166)
+* __What changed:__ The class is removed. Registering custom `MethodFactory` implementations is no longer supported.
+* __Reason:__ No `MethodFactory` implementation is needed other than `MethodFactoryImpl`.
+
+**BaseWebDAVStorageImpl.java**
+`portal-impl/src/com/liferay/portal/webdav/BaseWebDAVStorageImpl.java`
+
+* __Date:__ Nov. 27, 2023
+* __Ticket:__ [LPS-200166](https://liferay.atlassian.net/browse/LPS-200166)
+* __What changed:__ The`BaseWebDAVStorageImpl` class is moved from `portal-kernel` to `portal-impl`. Add `portal-impl` as a build dependency to keep using the same class.
+* __Reason:__ The `BaseWebDAVStorageImpl` class is moved into `portal-impl` to simplify the code structure.
+
 **DLImpl.java**
 `portal-impl/src/com/liferay/portlet/documentlibrary/util/DLImpl.java`
 
@@ -1109,6 +1228,39 @@ modules/apps/commerce/commerce-product-type-virtual-order-service/service.xml)
 * __Ticket:__ [LPS-202905](https://liferay.atlassian.net/browse/LPS-202905)
 * __What changed:__ The `DLImpl` class is moved to the `document-library-service` module.
 * __Reason:__ The class is rewritten to have access to some OSGi components in the `document-library-service` module to improve performance.
+
+**JSONWebServiceHotDeployListener.java**
+`portal-impl/src/com/liferay/portal/deploy/hot/JSONWebServiceHotDeployListener.java`
+
+* __Date:__ Dec. 13, 2023
+* __Ticket:__ [LPS-203854](https://liferay.atlassian.net/browse/LPS-203854)
+* __What changed:__ The class is removed.
+* __Reason:__ Spring bean JSON web service registration is now centralized in `JSONWebServiceTracker`, so this class is no longer needed to respond to hot deploy events.
+
+**messaging-misc-spring.xml**
+`portal-impl/src/META-INF/messaging-misc-spring.xml`
+
+* __Date:__ Dec. 15, 2023
+* __Ticket:__ [LPS-203461](https://liferay.atlassian.net/browse/LPS-203461)
+* __What changed:__ The `messaging-misc-spring.xml` file is removed.
+* __Reason:__ The `messaging-misc-spring.xml` file is no longer used.
+
+**system.properties**
+[`portal-impl/src/system.properties`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/system.properties)
+
+* __Date:__ Jan. 8, 2024
+* __Ticket:__ [LPS-204548](https://liferay.atlassian.net/browse/LPS-204548)
+* __What changed:__ The `com.liferay.portal.kernel.util.ServiceProxyFactory.timeout` system property is removed.
+Property com.liferay.portal.kernel.util.ServiceProxyFactory.timeout is being removed.
+* __Reason:__ This property is only used for the `ServiceProxyFactory` class, which is being removed.
+
+**ServiceBag.java**
+[`portal-impl/src/com/liferay/portal/deploy/hot/ServiceBag.java`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/com/liferay/portal/deploy/hot/ServiceBag.java)
+
+* __Date:__ Jan. 10, 2024
+* __Ticket:__ [LPS-204273](https://liferay.atlassian.net/browse/LPS-204273)
+* __What changed:__ The `ServiceBag` constructor has removed the `ClassLoader` parameter and added `BundleContext` and `ServiceReference` parameters. The `replace` method also no longer throws `Exception`.
+* __Reason:__ This change fixes issues with creating this class.
 
 ### Changes in `portal-kernel` classes
 

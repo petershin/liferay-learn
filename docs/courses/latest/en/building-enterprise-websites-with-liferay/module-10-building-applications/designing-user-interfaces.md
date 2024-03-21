@@ -3,9 +3,12 @@ uuid: 8fb6dacf-dc80-482c-bed7-7d83773f6b15
 ---
 # Designing User Interfaces
 
-Liferay gives you the tools for creating dynamic and responsive user interfaces for your custom applications. You can use page builder features like fragments and widgets in site pages to design forms, display object data, and more. In this way, you can create a seamless site experience for your users.
+Liferay gives you the tools for creating dynamic and responsive user interfaces for your custom applications. You can use page builder features like fragments and widgets in site pages to design forms, display object data, and more, creating seamless site experiences for your users.
 
-Originally, Clarity's distributor application solution used standard object layouts and views. While these are serviceable for administrative users, they have limited customization options. Since Clarity wants to integrate the application with their enterprise marketing website, they have used the tools above to design these custom pages:
+Originally, Clarity's distributor application solution used standard object layouts and views. While these are serviceable for administrative users, they have limited customization options. Clarity has instead used Liferay's page building tools to integrate the distributor application with the website's user interface. You can see what these pages look like below.
+
+!!! info "Article under Development"
+    We are working to update this article with additional content and exercises to guide you through Clarity's UI changes for the distributor application. You can expect these changes in April 2024. Thank you for your patience and please check back soon!
 
 ## Start Application Page
 

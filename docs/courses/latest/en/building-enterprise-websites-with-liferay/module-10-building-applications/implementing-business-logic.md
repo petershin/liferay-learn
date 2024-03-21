@@ -232,6 +232,8 @@ Clarity still needs an automated notification action for administrative users th
 
 1. Click _Save_.
 
+<!--TODO: Add steps for testing notification-->
+
 After adding and activating the notification actions, they'll be triggered when adding and updating object entries. These notifications can help improve visibility for new applications and keep applicants up to date on the state of their applications.
 
 Now that you've learned about implementing business logic in low code applications, let's move on to [Designing User Interfaces](./designing-user-interfaces.md).

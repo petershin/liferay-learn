@@ -43,7 +43,7 @@ Additionally, Clarity must collect information that can help them assess the rel
 * Annual Purchase Volumes
 * Product Labels
 
-The second object Clarity needs for this use case is the Application Evaluation. This object should store notes and recommendations made during the review process for Distributor Applications. The Application Evaluation object definition contains the following custom fields:
+The second object needed for this use case is the Application Evaluation. Clarity employees would use this object to evaluate incoming distributor applications, so it should store notes and recommendations made during the review process. The Application Evaluation object definition contains the following custom fields:
 
 * Business Name (text)
 * Assessment Score (picklist)

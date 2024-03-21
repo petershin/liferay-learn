@@ -53,4 +53,4 @@ On top of the Commerce-specific capability set some features worth highlighting 
 * [Personalization](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience)
 * [Sites & Experience Management](https://learn.liferay.com/w/dxp/site-building)
 
-Next: [External Websites](./enterprise-websites.md).
+Next: [Enterprise Websites](./enterprise-websites.md).

@@ -1538,6 +1538,46 @@ Register FriendlyURLNormalizer OSGi service.
 * __What changed:__ The `portal-kernel/src/com/liferay/portal/kernel/portlet/constants/packageinfo` version has increased to `1.6.0`, and the `portal-kernel/src/com/liferay/portal/kernel/portlet/packageinfo` version has increased to `29.2.0`.
 * __Reason:__ The `FriendlyURLRegistryUtil` class now has a new method `getFriendlyURLResolverByDefaultURLSeparator(String defaultURLSeparator)`.
 
+### Changes in `portal-test` classes
+
+`portal-test/bnd.bnd`
+
+* __Date:__ Jan. 17, 2024
+* __Ticket:__ [LPS-200582](https://liferay.atlassian.net/browse/LPS-200582)
+* __What changed:__ The bundle version is increased to `24.0.0` due to multiple class removals.
+
+**CaptureAppender.java**
+`portal-test/src/com/liferay/portal/test/log/CaptureAppender.java`
+
+* __Date:__ Jan. 17, 2024
+* __Ticket:__ [LPS-200582](https://liferay.atlassian.net/browse/LPS-200582)
+* __What changed:__ The class is removed. Use `LoggerTestUtil`'s `Log4JLogCapture` method instead.
+* __Reason:__ The `CaptureAppender` class was deprecated.
+
+**Log4JLoggerTestUtil.java**
+`portal-test/src/com/liferay/portal/test/log/Log4JLoggerTestUtil.java`
+
+* __Date:__ Jan. 17, 2024
+* __Ticket:__ [LPS-200582](https://liferay.atlassian.net/browse/LPS-200582)
+* __What changed:__ The class is removed. Use `LoggerTestUtil` directly instead.
+* __Reason:__ The `Log4JLoggerTestUtil` class was deprecated.
+
+**LogEvent.java**
+`portal-test/src/com/liferay/portal/test/log/LogEvent.java`
+
+* __Date:__ Jan. 17, 2024
+* __Ticket:__ [LPS-200582](https://liferay.atlassian.net/browse/LPS-200582)
+* __What changed:__ The class is removed. Use `LoggerTestUtil`'s `Log4JLogEntry` method instead.
+* __Reason:__ The `LogEvent` class was deprecated.
+
+**LogAssertionAppender.java**
+`portal-test/src/com/liferay/portal/test/rule/LogAssertionAppender.java`
+
+* __Date:__ Jan. 17, 2024
+* __Ticket:__ [LPS-200582](https://liferay.atlassian.net/browse/LPS-200582)
+* __What changed:__ The class is removed.
+* __Reason:__ The `LogAssertionAppender` class was deprecated.
+
 ## 2023 Q4 Release
 
 ### Changes in Liferay DXP

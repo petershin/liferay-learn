@@ -1730,6 +1730,40 @@ Register FriendlyURLNormalizer OSGi service.
 * __What changed:__ The class is removed.
 * __Reason:__ The `LogAssertionAppender` class was deprecated.
 
+### Changes in Taglibs
+
+**liferay-hook_7_4_0.dtd**
+[`definitions/liferay-hook_7_4_0.dtd`](https://github.com/liferay/liferay-portal/blob/master/definitions/liferay-hook_7_4_0.dtd)
+
+* __Date:__ Nov. 7, 2023
+* __Ticket:__ [LPS-196123](https://liferay.atlassian.net/browse/LPS-196123)
+* __What changed:__ The `dl.file.entry.processors` portal property is removed from the list. Instead of using this portal property, add your own `DLProcessor` implementation as an OSGi service.
+* __Reason:__ This portal property is no longer required because all out-of-the-box implementations of `DLProcessor` are now OSGi services.
+
+**liferay-ui.tld**
+[`util-taglib/src/META-INF/liferay-ui.tld`](https://github.com/liferay/liferay-portal/blob/master/util-taglib/src/META-INF/liferay-ui.tld)
+
+* __Date:__ Nov. 28, 2023
+* __Ticket:__ [LPS-202768](https://liferay.atlassian.net/browse/LPS-202768)
+* __What changed:__ The `liferay-ui:logo-selector` and `liferay-ui:progress` taglibs are removed. Instead, use the `liferay-frontend:logo-selector` and `liferay-document-library:upload-progress` taglibs, respectively.
+* __Reason:__ The locations of these two taglibs were moved into modules.
+
+**LogoSelectorTag.java**
+`util-taglib/src/com/liferay/taglib/ui/LogoSelectorTag.java`
+
+* __Date:__ Nov. 28, 2023
+* __Ticket:__ [LPS-202768](https://liferay.atlassian.net/browse/LPS-202768)
+* __What changed:__ This taglib class is removed. Use `liferay-frontend:logo-selector` instead.
+* __Reason:__ The frontend module now handles the same functionality.
+
+**UploadProgressTag.java**
+`util-taglib/src/com/liferay/taglib/ui/UploadProgressTag.java`
+
+* __Date:__ Nov. 28, 2023
+* __Ticket:__ [LPS-202768](https://liferay.atlassian.net/browse/LPS-202768)
+* __What changed:__ This taglib class is removed. Use `liferay-document-library:upload-progress` instead.
+* __Reason:__ The document library module now handles the same functionality.
+
 ## 2023 Q4 Release
 
 ### Changes in Liferay DXP

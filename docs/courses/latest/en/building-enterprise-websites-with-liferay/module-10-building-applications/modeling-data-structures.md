@@ -127,7 +127,7 @@ Once saved, the Distributor Application's `Products of Interest` custom field is
 
 Defining relationships is key to creating data models that accurately represent real-world entities. Object relationships determine how data is connected in your application and capture entity interactions and dependencies. You can define one-to-many and many-to-many relationships between object definitions. These relationships add fields or tables to each object for relating their entries, enabling you to access entry data in different object contexts.
 
-A one-to-many relationship occurs when a single entity of type A can be related to one or more entities of type B. For example, if you were to model a university organization, the University object definition would have a one-to-many relationship with the Student object definition. Each university has multiple students, but each student can only attend a single university. 
+A one-to-many relationship occurs when a single entity of type A can be related to one or more entities of type B. For example, if you were to model a university organization, the University object definition would have a one-to-many relationship with the Student object definition. Each university has multiple students, but each student can only attend a single university.
 
 On the other hand, a many-to-many relationship occurs when one entity of type A can be related to multiple entities of type B, *and* one entity of type B can be related to multiple entities of type A. In the university example, you could implement a many-to-many relationship between the Student object and the Professor object, because each student can have multiple professors and each professor can have multiple students.
 

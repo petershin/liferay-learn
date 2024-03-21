@@ -62,7 +62,6 @@ Clarity also wants to allow only members of the business development team to vie
 
 1. Enter these details and click _Save_:
 
-
    | Field       | Value                                                                                                        |
    |:------------|:-------------------------------------------------------------------------------------------------------------|
    | Type        | Regular                                                                                                      |

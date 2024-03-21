@@ -146,11 +146,11 @@ Clarity wants to implement a workflow for reviewing and approving changes made t
    !!! important
        If you're a Liferay Self-Hosted user, navigate to the `liferay-clarity-spring-boot/` project and start the Spring Boot application with this command:
 
-       ```bash
-       ../../gradlew bootRun
-       ```
+   ```bash
+   ../../gradlew bootRun
+   ```
 
-       When the application starts, go to http://localhost:58081/ready. If the application is ready for use, the page says “READY.” See [Microservice Client Extensions](https://learn.liferay.com/web/guest/w/dxp/building-applications/client-extensions/microservice-client-extensions) for more information.
+   When the application starts, go to http://localhost:58081/ready. If the application is ready for use, the page says “READY.” See [Microservice Client Extensions](https://learn.liferay.com/web/guest/w/dxp/building-applications/client-extensions/microservice-client-extensions) for more information.
 
 1. Go into your Liferay instance and navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Applications_ &rarr; _Process Builder_.
 

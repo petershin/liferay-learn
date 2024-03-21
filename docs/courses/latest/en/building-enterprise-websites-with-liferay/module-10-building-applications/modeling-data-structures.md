@@ -3,7 +3,7 @@ uuid: 3cc6f0a9-a820-42f1-94ca-9227c53c98ed
 ---
 # Modeling Data Structures
 
-Your first step in building an application is to model its data structures by considering the types of data entities you want to store and manipulate, the attributes of each entity type, and the relationships between different entity types. All of this functionality is captured by [Liferay Objects](https://learn.liferay.com/web/guest/w/dxp/building-applications/objects), which are the foundation of low-code applications in Liferay. This article discusses the features of Liferay objects in the context of Clarity's distributor application solution.
+Your first step in building an application is to model its data structures by considering the types of data entities you want to store and manipulate, the attributes of each entity type, and the relationships between different entity types. All of this functionality is captured by [Liferay Objects](https://learn.liferay.com/web/guest/w/dxp/building-applications/objects), which are the foundation of low-code applications in Liferay. This lesson discusses the features of Liferay Objects in the context of Clarity's distributor application solution.
 
 From the time of creation, all objects are fully integrated with Liferay's core frameworks to provide a unified experience across the platform and leverage all of its capabilities. This means that permissions, workflow, APIs, data mapping for page elements, and a consistent UI and UX are automatically handled when you build an application with Liferay's low-code tools. You can focus on developing your solution without having to reinvent the wheel.
 

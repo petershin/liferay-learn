@@ -22,7 +22,7 @@ In this module, you will deploy the prebuilt solution yourself and learn about t
 
 You'll be able to explore the application as we discuss its corresponding features through the course of the module.
 
-Let's get started with [Deploying the Application](./module-10-building-applications/deploying-the-application.md)
+Up First: [Deploying the Application](./module-10-building-applications/deploying-the-application.md)
 
 ::::{grid} 2
 :gutter: 3 3 3 3
@@ -48,6 +48,6 @@ Learn about implementing business logic to define application behavior.
 :::{grid-item-card} Designing User Interfaces
 :link: ./module-10-building-applications/designing-user-interfaces.md
 
-Learn about designing user interfaces that incorporate applications into enterprise websites. 
+Learn about designing user interfaces that incorporate applications into enterprise websites.
 :::
 ::::

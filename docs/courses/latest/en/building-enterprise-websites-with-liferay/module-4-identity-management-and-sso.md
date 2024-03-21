@@ -8,11 +8,11 @@ uuid: 57aef6ee-03e9-4056-abf1-ebdbdb4984e4
 ---
 # Module 4: Identity Management & SSO
 
-Before we can get started with building Clarity’s website, we’ll first need to get logged in and ensure that other content contributors can also get logged in. *Identity Management*, or IdM, plays an important role in any enterprise software project, even when building an Enterprise Website such as Clarity. This may seem counterintuitive, because the main audience of the site will initially be anonymous users browsing public pages. However, there will be a small team of Clarity employees that will be logging into the system to create and maintain the content. Additionally, Clarity has some B2B partners with existing user accounts from their previous platform and aims to enable new distributors to create accounts for a more personalized experience.
+Before we can get started with building Clarity’s website, we’ll first need to get logged in and ensure that other content contributors can also get logged in. *Identity Management* (IdM), plays an important role in any enterprise software project, even when building an Enterprise Website such as Clarity. This may seem counterintuitive, because the main audience of the site will initially be anonymous users browsing public pages. However, there will be a small team of Clarity employees that will be logging into the system to create and maintain the content. Additionally, Clarity has some B2B partners with existing user accounts from their previous platform and aims to enable new distributors to create accounts for a more personalized experience.
 
 When we talk about identity management in the context of Liferay, we’re talking about providing the ability to manage users and provide those users with the ability to authenticate to the portal to access protected resources. *Single Sign-On*, or SSO, is a complementary topic in which users who are authenticated can access multiple systems or resources with the same set of credentials.
 
-In many enterprises today, there are already systems managing both identity and authentication. The good news is that not only does Liferay provides very robust identity management and single sign-on capabilities but also supports integration with many leading IdM and SSO services and protocols.
+In many enterprises today, there are already systems managing both identity and authentication. The good news is that not only does Liferay provides robust identity management and single sign-on capabilities but also supports integration with many leading IdM and SSO services and protocols.
 
 ![Logos of IdMs and SSOs Liferay is compatible with](./module-4-identity-management-and-sso/images/01.png)
 

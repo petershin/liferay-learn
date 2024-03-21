@@ -11,7 +11,7 @@ Before we talk about Clarity's users and how we will manage them, let's learn mo
 First, visit your Liferay environment, whether that is at the URL that was sent to you in your Liferay SaaS / PaaS provisioning environment or your own self-hosted environment at `localhost:8080`. When you first visit it you are a guest user and are not authenticated to access Liferay. By default, users login to Liferay DXP using the Sign In widget, which uses the database to authenticate the user. We’ll have to use this method for our initial login, because we haven’t had an opportunity to make any configuration changes yet.
 
 !!! Note
-    If you are a Liferay SaaS customer, the initial login will be communicated to the initial administrator(s) during the provisioning process. If you are a Liferay PaaS or Self-Hosted user, then the default administrator email address is `test@liferay.com` and the default password is `test`. There are portal properties that can be used by Liferay PaaS and Self-Hosted customers that can change this default behavior, so if you’re in doubt, check with your Liferay administrator.
+    If you are a Liferay SaaS customer, the initial login will be communicated to the initial administrator(s) during the provisioning process. If you are a Liferay PaaS or Self-Hosted user, then the default administrator email address is `test@liferay.com` and the default password is `test`. There are [portal properties](https://learn.liferay.com/w/dxp/installation-and-upgrades/reference/portal-properties) that can be used by Liferay PaaS and Self-Hosted customers that can change this default behavior, so if you’re in doubt, check with your Liferay administrator.
 
 <!--
 

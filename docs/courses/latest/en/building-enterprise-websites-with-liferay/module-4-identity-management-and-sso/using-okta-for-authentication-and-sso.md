@@ -2,14 +2,14 @@
 uuid: ba75bce7-ccf4-4c5a-bffe-7c247434dac2
 ---
 
-# Integrating Okta SSO
+# Using Okta for Authentication and SSO with Liferay
 
 Clarity is leveraging Okta’s Workforce Identity Cloud product to manage their employee information. Okta is a Cloud based Identity Management service that allows Clarity to securely manage their employee’s identity information and manage secure authentication into the applications they use. Okta provides many different features, but for this training we’re going to be focusing on their support of the SAML protocol to support Single Sign On.
 
 ![Okta logo](./using-okta-for-authentication-and-sso/images/01.png)
 
 !!! important
-    In this training course, we are using Okta to illustrate a common identity management and single sign on scenario. While we are not specifically endorsing the use of Okta as a best practice, we are endorsing the use of external authentication as a best practice. The process of authentication requires multiple rounds of password hashing which consumes a considerable amount of processing power. This is processing power that can’t be used to serve other web site requests.
+    In this course, we are using Okta to illustrate a common identity management and single sign on scenario. While we are not specifically endorsing the use of Okta as a best practice, we are endorsing the use of external authentication as a best practice. The process of authentication requires multiple rounds of password hashing which consumes a considerable amount of processing power. This is processing power that can’t be used to serve other web site requests.
 
     While Clarity's current user base may be small, implementing a Single Sign-On (SSO) solution now offers significant advantages that extend beyond simply accommodating future growth. This proactive approach ensures a smooth user experience and robust security posture as Clarity scales.
 
@@ -159,7 +159,7 @@ Follow these steps in Liferay to configure Liferay as a Service Provider:
     ![Jane Newton's account has been created in Liferay.](./using-okta-for-authentication-and-sso/images/08.png)
 
 !!! note
-    Okta SSO was enabled in this exercise. Feel free to disable it as you continue this course.
+    Okta SSO was enabled in this exercise. You may opt to disable it as you continue this course.
 
 ## Conclusion
 

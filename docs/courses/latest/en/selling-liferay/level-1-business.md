@@ -51,7 +51,7 @@ Start Level 1 with [Tailored Solution Highlights](./level-1-business/tailored-so
 Explores the tailored solutions that have been built on Liferay, showcasing flexibility and possibilities with real examples.
 :::
 
-:::{grid-item-card} Outbound Prospecting 101 for Liferay opportunities
+:::{grid-item-card} Outbound Prospecting 101 for Liferay Opportunities
 :link: ./level-1-business/outbound-prospecting.md
 
 Provides best practices for outbound prospecting for Liferay opportunities.

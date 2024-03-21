@@ -32,6 +32,7 @@ Here is a list of changes that break or significantly alter existing functionali
 | **Article ID in Web Content Template Editor**               | The `reserved-article-id` variable is renamed to `articleId` for web content templates. The `externalReferenceCode` and `resourcePrimKey` (i.e., the `structuredContentId`) variables are also added.        | [LPS-203949](https://liferay.atlassian.net/browse/LPS-203949) |
 | **Utility Page Configurations**                             | The general configuration icon for utility pages no longer appears on the Page Design Options panel. You must now access them via the Actions menu on the Utility Pages page.                                | [LPD-4459](https://liferay.atlassian.net/browse/LPD-4459)     |
 | **Allow Manual Membership Management Option for New Sites** | When creating a new site, the Allow Manual Membership Management option is disabled by default.                                                                                                              | [LPS-191374](https://liferay.atlassian.net/browse/LPS-191374) |
+| **Configuration for Auto-extending Session Timeouts**       | The `session.timeout.auto.extend` and `session.timeout.auto.extend.offset` portal properties are now configured in site, instance, or system settings instead.                                               | [LPS-199234](https://liferay.atlassian.net/browse/LPS-199234) |
 
 ### Changes in Module Source Code
 
@@ -830,6 +831,14 @@ modules/apps/commerce/commerce-product-type-virtual-order-service/service.xml)
 * __What changed:__ The `getBatchEngineTaskItemDelegate` method has a new `long` parameter for a company ID.
 * __Reason:__ The `BatchEngineTaskItemDelegate` needs a way to be retrieved by company ID.
 
+**ObjectFieldLocalServiceImpl.java**
+[`modules/apps/object/object-service/src/main/java/com/liferay/object/service/impl/ObjectFieldLocalServiceImpl.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/object/object-service/src/main/java/com/liferay/object/service/impl/ObjectFieldLocalServiceImpl.java)
+
+* __Date:__ Feb. 20, 2024
+* __Ticket:__ [LPD-16492](https://liferay.atlassian.net/browse/LPD-16492)
+* __What changed:__ The object field local service's validation now makes sure that `BUSINESS_TYPE_AGGREGATION` and `BUSINESS_TYPE_FORMULA` object fields are not indexable.
+* __Reason:__ Elasticsearch does not properly support indexing these types of object fields, which set their values at runtime.
+
 **CommercePortletKeys.java**
 `modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/constants/CommercePortletKeys.java`
 
@@ -1149,6 +1158,14 @@ modules/apps/commerce/commerce-product-type-virtual-order-service/service.xml)
 * __Ticket:__ [LPS-197738](https://liferay.atlassian.net/browse/LPS-197738)
 * __What changed:__ The new `forEachFileEntry(long, Consumer<DLFileEntry>, long, String[])` and `forEachFileEntry(long, long, Consumer<DLFileEntry>, long, String[])` methods are added.
 * __Reason:__ These methods allow for executing arbitrary code on a long list of file entries without retrieving the entire list first.
+
+**portal.properties**
+[`portal-impl/src/portal.properties`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/portal.properties)
+
+* __Date:__ Nov. 16, 2023
+* __Ticket:__ [LPS-199234](https://liferay.atlassian.net/browse/LPS-199234)
+* __What changed:__ The `session.timeout.auto.extend` and `session.timeout.auto.extend.offset` portal properties are removed. Instead, set these configurations (with the same names) in the system, instance, or site settings.
+* __Reason:__ These configurations are now handled in the UI via site, instance, or system settings, so they do not require adjustments to `portal-ext.properties`.
 
 **AssetTagFinderImpl.java**
 [`portal-impl/src/com/liferay/portlet/asset/service/persistence/impl/AssetTagFinderImpl.java`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/com/liferay/portlet/asset/service/persistence/impl/AssetTagFinderImpl.java)
@@ -1789,6 +1806,22 @@ Here is a list of changes that break or significantly alter existing functionali
 -   **What Changed**: A new `String` parameter (`fileName`) is added to the `addExtRepositoryFileEntry(String, String, String, String, String, InputStream)` method (so it now takes 6 `String` parameters and an `InputStream`).
 -   **Reason**: The file name is required to create files with a Sharepoint external repository.
 
+**WorkflowTaskResourceImpl.java**
+[`modules/apps/headless/headless-admin-workflow/headless-admin-workflow-impl/src/main/java/com/liferay/headless/admin/workflow/internal/resource/v1_0/WorkflowTaskResourceImpl.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/headless/headless-admin-workflow/headless-admin-workflow-impl/src/main/java/com/liferay/headless/admin/workflow/internal/resource/v1_0/WorkflowTaskResourceImpl.java)
+
+-   **Date**: Oct. 3, 2023
+-   **Ticket**: [LPS-197317](https://liferay.atlassian.net/browse/LPS-197317)
+-   **What Changed**: The `_workflowTaskModelResourcePermission` field's target reference field is changed from `(model.class.name=com.liferay.portal.kernel.workflow.WorkflowTask)` to `(model.class.name=com.liferay.portal.workflow.kaleo.model.KaleoTaskInstanceToken)`.
+-   **Reason**: This change is made to enforce class name consistency.
+
+**WorkflowTaskModelResourcePermission.java**
+[`modules/apps/portal-workflow/portal-workflow-kaleo-runtime-integration-impl/src/main/java/com/liferay/portal/workflow/kaleo/runtime/integration/internal/security/permission/resource/WorkflowTaskModelResourcePermission.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/portal-workflow/portal-workflow-kaleo-runtime-integration-impl/src/main/java/com/liferay/portal/workflow/kaleo/runtime/integration/internal/security/permission/resource/WorkflowTaskModelResourcePermission.java)
+
+-   **Date**: Oct. 3, 2023
+-   **Ticket**: [LPS-197317](https://liferay.atlassian.net/browse/LPS-197317)
+-   **What Changed**: The class's OSGi property value is changed from `model.class.name=com.liferay.portal.kernel.workflow.WorkflowTask` to `model.class.name=com.liferay.portal.workflow.kaleo.model.KaleoTaskInstanceToken`.
+-   **Reason**: This change is made to enforce class name consistency.
+
 **liferay-chart.tld**
 `modules/apps/frontend-taglib/frontend-taglib-chart/src/main/resources/META-INF/liferay-chart.tld`
 
@@ -2200,6 +2233,16 @@ Here is a list of changes that break or significantly alter existing functionali
 -   **Ticket**: [LPS-200453](https://liferay.atlassian.net/browse/LPS-200453)
 -   **What Changed**: The `PortletToolbar` class's constructor is now private. Use `PortletToolbar.INSTANCE` to get an instance of `PortletToolbar` instead.
 -   **Reason**: `PortletToolbar` is no longer in `util-spring`, so it needs a static instance instead.
+
+### Changes in `osgi-util` classes
+
+**Snapshot.java**
+[`osgi-util/src/main/java/com/liferay/osgi/util/service/Snapshot.java`](https://github.com/liferay/liferay-portal/blob/master/osgi-util/src/main/java/com/liferay/osgi/util/service/Snapshot.java)
+
+* __Date:__ Sep. 27, 2023
+* __Ticket:__ [LPS-196524](https://liferay.atlassian.net/browse/LPS-196524)
+* __What changed:__ The `Snapshot` class is moved from `osgi-util` into `portal-kernel`.
+* __Reason:__ The `Snapshot` class is replacing all usages of `ServiceProxyFactory`.
 
 ### Changes in Taglibs
 

@@ -43,6 +43,14 @@ Here is a list of changes that break or significantly alter existing functionali
 * __What changed:__ The new `getOnClickJSModuleURL` method is added.
 * __Reason:__ This change allows for loading a JS module at run-time by clicking on Personal Menu entries.
 
+**CacheControlConfiguration.java**
+[`modules/apps/document-library/document-library-web/src/main/java/com/liferay/document/library/web/internal/configuration/CacheControlConfiguration.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/document-library/document-library-web/src/main/java/com/liferay/document/library/web/internal/configuration/CacheControlConfiguration.java)
+
+* __Date:__ Nov. 6, 2023
+* __Ticket:__ [LPS-200359](https://liferay.atlassian.net/browse/LPS-200359)
+* __What changed:__ A new configuration is added to not cache documents by default.
+* __Reason:__ This configuration is the new default to improve security.
+
 **BaseAMImageCounter.java**
 [`modules/apps/adaptive-media/adaptive-media-image-api/src/main/java/com/liferay/adaptive/media/image/counter/BaseAMImageCounter.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/adaptive-media/adaptive-media-image-api/src/main/java/com/liferay/adaptive/media/image/counter/BaseAMImageCounter.java)
 
@@ -67,9 +75,17 @@ Here is a list of changes that break or significantly alter existing functionali
 * __What changed:__ The new `getGroupPreviewableProcessorMaxSizeMap` method is added to return all group values with the given `previewableProcessorMaxSize` attribute.
 * __Reason:__ This change helps filter by groups with specific attribute values, instead of getting the attribute for all types.
 
+**AuditMessageFactoryImpl.java**
+`modules/apps/portal-security-audit/portal-security-audit-impl/src/main/java/com/liferay/portal/security/audit/internal/AuditMessageFactoryImpl.java`
+
+* __Date__ Nov. 7, 2023
+* __Ticket:__ [LPS-201086](https://liferay.atlassian.net/browse/LPS-201086)
+* __What changed:__ The class is removed. The logic previously in `AuditMessageFactoryImpl` is now implemented in `AuditMessageFactory` instead.
+* __Reason:__ These classes being separated did not provide any value, so they were consolidated into `AuditMessageFactory` to simplify the code.
+
 **CPDefinitionLinkTypeSettingsImpl.java**
 `modules/apps/commerce/commerce-product-service/src/main/java/com/liferay/commerce/product/internal/configuration/CPDefinitionLinkTypeSettingsImpl.java`
-        
+
 * __Date:__ Nov. 8, 2023
 * __Ticket:__ [COMMERCE-12306](https://liferay.atlassian.net/browse/COMMERCE-12306)
 * __What changed:__ The class is removed.
@@ -1075,6 +1091,452 @@ modules/apps/commerce/commerce-product-type-virtual-order-service/service.xml)
 * __Ticket:__ [LPD-15148](https://liferay.atlassian.net/browse/LPD-15148)
 * __What changed:__ The `commerce-address-web` module's `view.jsp` file is removed.
 * __Reason:__ The Commerce Country portlet is removed.
+
+### Changes in `portal-impl` classes
+
+**PortletContextFactoryImpl.java**
+`portal-impl/src/com/liferay/portlet/internal/PortletContextFactoryImpl.java`
+
+* __Date:__ Nov. 7, 2023
+* __Ticket:__ [LPS-200088](https://liferay.atlassian.net/browse/LPS-200088)
+* __What changed:__ The class is removed. Instead, use `PortletContextFactoryUtil` directly.
+* __Reason:__ The code is being consolidated to simplify code structure.
+
+**DLImpl.java**
+`portal-impl/src/com/liferay/portlet/documentlibrary/util/DLImpl.java`
+
+* __Date:__ Dec. 6, 2023
+* __Ticket:__ [LPS-202905](https://liferay.atlassian.net/browse/LPS-202905)
+* __What changed:__ The `DLImpl` class is moved to the `document-library-service` module.
+* __Reason:__ The class is rewritten to have access to some OSGi components in the `document-library-service` module to improve performance.
+
+### Changes in `portal-kernel` classes
+
+**IndexableActionableDynamicQuery.java**
+[`portal-kernel/src/com/liferay/portal/kernel/dao/orm/IndexableActionableDynamicQuery.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/dao/orm/IndexableActionableDynamicQuery.java)
+
+* __Date:__ Nov. 6, 2023
+* __Ticket:__ [LPS-199958](https://liferay.atlassian.net/browse/LPS-199958)
+* __What changed:__ The `setIndexWriterHelper` method is removed.
+* __Reason:__ This method was only used for the `UserIndexer` class, which has been removed.
+
+**PortletContextFactory.java**
+`portal-kernel/src/com/liferay/portal/kernel/portlet/PortletContextFactory.java`
+
+* __Date:__ Nov. 7, 2023
+* __Ticket:__ [LPS-200088](https://liferay.atlassian.net/browse/LPS-200088)
+* __What changed:__ The interface is removed. Instead, add `portal-impl` as a build dependency and use `PortletContextFactoryUtil` directly.
+* __Reason:__ The code is being consolidated and moved into `portal-impl` to simplify code structure.
+
+**PortletContextFactoryUtil.java**
+`portal-kernel/src/com/liferay/portal/kernel/portlet/PortletContextFactoryUtil.java`
+
+* __Date:__ Nov. 7, 2023
+* __Ticket:__ [LPS-199470](https://liferay.atlassian.net/browse/LPS-199470)
+* __What changed:__ The `PortletContextFactoryUtil` class is moved from `portal-kernel` to `portal-impl`. Add `portal-impl` as a build dependency to continue using this class.
+* __Reason:__ This class is moved into `portal-impl` to simplify the code structure.
+
+**AuditMessageFactory.java**
+[`portal-kernel/src/com/liferay/portal/kernel/audit/AuditMessageFactory.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/audit/AuditMessageFactory.java)
+
+* __Date:__ Nov. 7, 2023
+* __Ticket:__ [LPS-201086](https://liferay.atlassian.net/browse/LPS-201086)
+* __What changed:__ The `AuditMessageFactory` interface is now an implemented class. The logic previously in `AuditMessageFactoryImpl` and `AuditMessageFactoryUtil` is now implemented in this class.
+* __Reason:__ Having these classes separated did not provide any value, so they were consolidated into `AuditMessageFactory` to simplify the code.
+
+**AuditMessageFactoryUtil.java**
+`portal-kernel/src/com/liferay/portal/kernel/audit/AuditMessageFactoryUtil.java`
+
+* __Date:__ Nov. 7, 2023
+* __Ticket:__ [LPS-201086](https://liferay.atlassian.net/browse/LPS-201086)
+* __What changed:__ The class is removed. The logic from this class is moved into `AuditMessageFactory`.
+* __Reason:__ Having these classes separated did not provide any value, so they were merged into a single class to simplify the code.
+
+**AssetEntriesFacet.java**
+`portal-kernel/src/com/liferay/portal/kernel/search/facet/AssetEntriesFacet.java`
+
+* __Date:__ Nov. 15, 2023
+* __Ticket:__ [LPS-200073](https://liferay.atlassian.net/browse/LPS-200073)
+* __What changed:__ The class is removed.
+* __Reason:__ The class was deprecated and its usages have been replaced by `FacetImpl`.
+
+**AssetTagUtil.java**
+[`portal-kernel/src/com/liferay/asset/kernel/service/persistence/AssetTagUtil.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/asset/kernel/service/persistence/AssetTagUtil.java)
+
+* __Date:__ Nov. 21, 2023
+* __Ticket:__ [LPS-202248](https://liferay.atlassian.net/browse/LPS-202248)
+* __What changed:__ The `findByG_LikeN`, `findByG_N_First`, `findByG_N_Last`, `findByG_N_PrevAndNext`, `removeByG_N`, and `countByG_N` methods are removed.
+* __Reason:__ These methods no longer have any usage.
+
+**AssetTagPersistence.java**
+[`portal-kernel/src/com/liferay/asset/kernel/service/persistence/AssetTagPersistence.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/asset/kernel/service/persistence/AssetTagPersistence.java)
+
+* __Date:__ Nov. 21, 2023
+* __Ticket:__ [LPS-202248](https://liferay.atlassian.net/browse/LPS-202248)
+* __What changed:__ The `findByG_LikeN`, `findByG_N_First`, `findByG_N_Last`, `findByG_N_PrevAndNext`, `removeByG_N`, and `countByG_N` methods are removed.
+* __Reason:__ These methods no longer have any usage.
+
+**AssetTagFinder.java**
+[`portal-kernel/src/com/liferay/asset/kernel/service/persistence/AssetTagFinder.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/asset/kernel/service/persistence/AssetTagFinder.java`)
+
+* __Date:__ Nov. 22, 2023
+* __Ticket:__ [LPS-202275](https://liferay.atlassian.net/browse/LPS-202275)
+* __What changed:__ The `findByG_N_S_E` method is removed.
+* __Reason:__ This method no longer has any usage.
+
+**AssetTagFinderUtil.java**
+[`portal-kernel/src/com/liferay/asset/kernel/service/persistence/AssetTagFinderUtil.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/asset/kernel/service/persistence/AssetTagFinderUtil.java)
+
+* __Date:__ Nov. 22, 2023
+* __Ticket:__ [LPS-202275](https://liferay.atlassian.net/browse/LPS-202275)
+* __What changed:__ The `findByG_N_S_E` method is removed.
+* __Reason:__ This method no longer has any usage.
+
+**AssetTagLocalService.java**
+`portal-kernel/src/com/liferay/asset/kernel/service/AssetTagLocalService.java`
+
+* __Date:__ Nov. 22, 2023
+* __Ticket:__ [LPS-202275](https://liferay.atlassian.net/browse/LPS-202275)
+* __What changed:__ The `getSocialActivityCounterOffsetTags` and `getSocialActivityCounterPeriodTags` methods are removed.
+* __Reason:__ These methods no longer have any usage.
+
+**AssetTagLocalServiceUtil.java**
+[`portal-kernel/src/com/liferay/asset/kernel/service/AssetTagLocalServiceUtil.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/asset/kernel/service/AssetTagLocalServiceUtil.java)
+
+* __Date:__ Nov. 22, 2023
+* __Ticket:__ [LPS-202275](https://liferay.atlassian.net/browse/LPS-202275)
+* __What changed:__ The `getSocialActivityCounterOffsetTags` and `getSocialActivityCounterPeriodTags` methods are removed.
+* __Reason:__ These methods no longer have any usage.
+
+**SiteMembershipPolicyFactory.java**
+`portal-kernel/src/com/liferay/portal/kernel/security/membershippolicy/SiteMembershipPolicyFactory.java`
+
+* __Date:__ Nov. 23, 2023
+* __Ticket:__ [LPS-199470](https://liferay.atlassian.net/browse/LPS-199470)
+* __What changed:__ The interface is removed. Instead, use `SiteMembershipPolicyFactoryUtil` directly.
+* __Reason:__ This interface is no longer needed because Spring no longer needs to register its implementations as OSGi components.
+
+**SiteMembershipPolicyFactoryUtil.java**
+`portal-kernel/src/com/liferay/portal/kernel/security/membershippolicy/SiteMembershipPolicyFactoryUtil.java`
+
+* __Date:__ Nov. 23, 2023
+* __Ticket:__ [LPS-199470](https://liferay.atlassian.net/browse/LPS-199470)
+* __What changed:__ The `SiteMembershipPolicyFactoryUtil` class is moved from `portal-kernel` to `portal-impl`. Add `portal-impl` as a build dependency to continue using this class.
+* __Reason:__ This class is moved into `portal-impl` to simplify the code structure.
+
+**SiteMembershipPolicyUtil.java**
+`portal-kernel/src/com/liferay/portal/security/membershippolicy/SiteMembershipPolicyUtil.java`
+
+* __Date:__ Nov. 23, 2023
+* __Ticket:__ [LPS-199470](https://liferay.atlassian.net/browse/LPS-199470)
+* __What changed:__ The `SiteMembershipPolicyUtil` class is moved from `portal-kernel` to `portal-impl`. Add `portal-impl` as a build dependency to continue using this class.
+* __Reason:__ This class is moved into `portal-impl` to simplify the code structure.
+
+**LayoutPrototypePermissionUtil.java**
+`portal-kernel/src/com/liferay/portal/kernel/service/permission/LayoutPrototypePermissionUtil.java`
+
+* __Date:__ Nov. 24, 2023
+* __Ticket:__ [LPS-201156](https://liferay.atlassian.net/browse/LPS-201156)
+* __What changed:__ The `LayoutPrototypePermissionUtil` class is moved from `portal-kernel` to `portal-impl`. Add `portal-impl` as a build dependency to continue using this class. The `getLayoutPrototypePermission` is also removed. Instead, use `LayoutPrototypePermissionUtil` directly.
+* __Reason:__ This class is moved into `portal-impl` to simplify the code structure.
+
+**MethodFactory.java**
+`portal-kernel/src/com/liferay/portal/kernel/webdav/methods/MethodFactory.java`
+
+* __Date:__ Nov. 27, 2023
+* __Ticket:__ [LPS-200166](https://liferay.atlassian.net/browse/LPS-200166)
+* __What changed:__ The class is removed. Use `MethodFactoryUtil` instead.
+* __Reason:__ This class no longer has any usage.
+
+**WebDAVStorage.java**
+[`portal-kernel/src/com/liferay/portal/kernel/webdav/WebDAVStorage.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/webdav/WebDAVStorage.java)
+
+* __Date:__ Nov. 27, 2023
+* __Ticket:__ [LPS-200166](https://liferay.atlassian.net/browse/LPS-200166)
+* __What changed:__ The `getMethodFactory` method is removed. Use `MethodFactoryUtil` instead.
+* __Reason:__ `MethodFactory` is simplified and is now a `Util` class, so this method is no longer needed.
+
+**MethodFactoryRegistry.java**
+`portal-kernel/src/com/liferay/portal/kernel/webdav/methods/MethodFactoryRegistry.java`
+
+* __Date:__ Nov. 27, 2023
+* __Ticket:__ [LPS-200166](https://liferay.atlassian.net/browse/LPS-200166)
+* __What changed:__ The interface is removed. Registering custom `MethodFactory` implementations is no longer supported.
+* __Reason:__ The default implementation, `MethodFactoryImpl`, was the only needed implementation, so the interface is no longer needed.
+
+**MethodFactoryRegistryUtil.java**
+`portal-kernel/src/com/liferay/portal/kernel/webdav/methods/MethodFactoryRegistryUtil.java`
+
+* __Date:__ Nov. 27, 2023
+* __Ticket:__ [LPS-200166](https://liferay.atlassian.net/browse/LPS-200166)
+* __What changed:__ The class is removed. Registering custom `MethodFactory` implementations is no longer supported.
+* __Reason:__ The default implementation, `MethodFactoryImpl`, was the only needed implementation, so this class is no longer needed.
+
+**PortletConfigurationIconMenu.java**
+[`portal-kernel/src/com/liferay/portal/kernel/portlet/configuration/icon/PortletConfigurationIconMenu.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/portlet/configuration/icon/PortletConfigurationIconMenu.java)
+
+* __Date:__ Nov. 27, 2023
+* __Ticket:__ [LPS-200326](https://liferay.atlassian.net/browse/LPS-200326)
+* __What changed:__ The `PortletConfigurationIconMenu` constructor is now private.
+* __Reason:__ `PortletConfigurationIconMenu` is being removed from `util-spring`, so it needs a static `INSTANCE` field to replace existing usages.
+
+**FriendlyURLNormalizerUtil.java**
+`portal-kernel/src/com/liferay/portal/kernel/util/FriendlyURLNormalizerUtil.java`
+
+* __Date:__ Nov. 27, 2023
+* __Ticket:__ [LPS-188565](https://liferay.atlassian.net/browse/LPS-188565)
+* __What changed:__ The `setFriendlyURLNormalizer(FriendlyURLNormalizer)` method is removed.
+* __Reason:__ The class uses OSGi to retrieve the service, so this method is no longer needed.
+            
+* __Alternatives:__ 
+Register FriendlyURLNormalizer OSGi service.
+
+**UserGroupMembershipPolicyFactory.java**
+`portal-kernel/src/com/liferay/portal/kernel/security/membershippolicy/UserGroupMembershipPolicyFactory.java`
+
+* __Date:__ Nov. 28, 2023
+* __Ticket:__ [LPS-200563](https://liferay.atlassian.net/browse/LPS-200563)
+* __What changed:__ The interface is removed. Instead, use `UserGroupMembershipPolicyFactoryUtil` directly.
+* __Reason:__ This interface is no longer needed because Spring no longer needs to register its implementations as OSGi components.
+
+**UserGroupMembershipPolicyFactoryUtil.java**
+`portal-kernel/src/com/liferay/portal/kernel/security/membershippolicy/UserGroupMembershipPolicyFactoryUtil.java`
+
+* __Date:__ Nov. 28, 2023
+* __Ticket:__ [LPS-200563](https://liferay.atlassian.net/browse/LPS-200563)
+* __What changed:__ The `UserGroupMembershipPolicyFactoryUtil` class is moved from `portal-kernel` to `portal-impl`. Add `portal-impl` as a build dependency to continue using this class. The `getUserGroupMembershipPolicyFactory` method is also removed. Directly use `UserGroupMembershipPolicyUtil` instead.
+* __Reason:__ The class is moved into `portal-impl` to simplify the code structure. The `getUserGroupMembershipPolicyFactory` method is no longer needed.
+
+**UserGroupMembershipPolicyUtil.java**
+`portal-kernel/src/com/liferay/portal/kernel/security/membershippolicy/UserGroupMembershipPolicyUtil.java`
+
+* __Date:__ Nov. 28, 2023
+* __Ticket:__ [LPS-200563](https://liferay.atlassian.net/browse/LPS-200563)
+* __What changed:__ The class is moved from `portal-kernel` to `portal-impl`. Add `portal-impl` as a build dependency to continue using this class.
+* __Reason:__ The class is moved into `portal-impl` to simplify the code structure.
+
+**AudioProcessor.java**
+`portal-kernel/src/com/liferay/document/library/kernel/util/AudioProcessor.java`
+
+* __Date:__ Dec. 1, 2023
+* __Ticket:__ [LPS-188559](https://liferay.atlassian.net/browse/LPS-188559)
+* __What changed:__ The `AudioProcessor` class is moved from the `com.liferay.document.library.kernel.util` package to the `com.liferay.document.library.kernel.processor` package.
+* __Reason:__ This change matches the package name to the class name.
+
+**AudioProcessorUtil.java**
+`portal-kernel/src/com/liferay/document/library/kernel/util/AudioProcessorUtil.java`
+
+* __Date:__ Dec. 1, 2023
+* __Ticket:__ [LPS-188559](https://liferay.atlassian.net/browse/LPS-188559)
+* __What changed:__ The `AudioProcessorUtil` class is moved from the `com.liferay.document.library.kernel.util` package to the `com.liferay.document.library.kernel.processor` package.
+* __Reason:__ This change matches the package name to the class name.
+
+**DLProcessor.java**
+`portal-kernel/src/com/liferay/document/library/kernel/util/DLProcessor.java`
+
+* __Date:__ Dec. 1, 2023
+* __Ticket:__ [LPS-188559](https://liferay.atlassian.net/browse/LPS-188559)
+* __What changed:__ The `DLProcessor` class is moved from the `com.liferay.document.library.kernel.util` package to the `com.liferay.document.library.kernel.processor` package. The `afterPropertiesSet` and `destroy` methods are also removed. Instead, use the OSGi service lifecycle `activate` and `deactivate` methods.
+* __Reason:__ The refactoring change matches the package name to the class name. The `afterPropertiesSet` and `destroy` methods are removed because `DLProcessor` implementations are no longer Spring beans.
+
+**DLProcessorRegistry.java**
+`portal-kernel/src/com/liferay/document/library/kernel/util/DLProcessorRegistry.java`
+
+* __Date:__ Dec. 1, 2023
+* __Ticket:__ [LPS-188559](https://liferay.atlassian.net/browse/LPS-188559)
+* __What changed:__ The `DLProcessorRegistry` class is renamed to `DLProcessorHelper`, and it's moved from the `com.liferay.document.library.kernel.util` package to the `com.liferay.document.library.kernel.processor` package.
+* __Reason:__ This class no longer registers or unregisters `DLProcessor` objects, and the refactoring change matches the package name to the class name.
+
+**DLProcessorRegistryUtil.java**
+`portal-kernel/src/com/liferay/document/library/kernel/util/DLProcessorRegistryUtil.java`
+
+* __Date:__ Dec. 1, 2023
+* __Ticket:__ [LPS-188559](https://liferay.atlassian.net/browse/LPS-188559)
+* __What changed:__ The `DLProcessorRegistryUtil` class is renamed to `DLProcessorHelperUtil`, and it's moved from the `com.liferay.document.library.kernel.util` package to the `com.liferay.document.library.kernel.processor` package.
+* __Reason:__ The class name change clarifies the class's usage, and the refactoring change matches the package name to the class name.
+
+**DLProcessorThreadLocal.java**
+`portal-kernel/src/com/liferay/document/library/kernel/util/DLProcessorThreadLocal.java`
+
+* __Date:__ Dec. 1, 2023
+* __Ticket:__ [LPS-188559](https://liferay.atlassian.net/browse/LPS-188559)
+* __What changed:__ The `DLProcessorThreadLocal` class is moved from the `com.liferay.document.library.kernel.util` package to the `com.liferay.document.library.kernel.processor` package.
+* __Reason:__ This change matches the package name to the class name.
+
+**ImageProcessor.java**
+`portal-kernel/src/com/liferay/document/library/kernel/util/ImageProcessor.java`
+
+* __Date:__ Dec. 1, 2023
+* __Ticket:__ [LPS-188559](https://liferay.atlassian.net/browse/LPS-188559)
+* __What changed:__ The `ImageProcessor` class is moved from the `com.liferay.document.library.kernel.util` package to the `com.liferay.document.library.kernel.processor` package.
+* __Reason:__ This change matches the package name to the class name.
+
+**ImageProcessorUtil.java**
+`portal-kernel/src/com/liferay/document/library/kernel/util/ImageProcessorUtil.java`
+
+* __Date:__ Dec. 1, 2023
+* __Ticket:__ [LPS-188559](https://liferay.atlassian.net/browse/LPS-188559)
+* __What changed:__ The `ImageProcessor` class is moved from the `com.liferay.document.library.kernel.util` package to the `com.liferay.document.library.kernel.processor` package.
+* __Reason:__ This change matches the package name to the class name.
+
+**PDFProcessor.java**
+`portal-kernel/src/com/liferay/document/library/kernel/util/PDFProcessor.java`
+
+* __Date:__ Dec. 1, 2023
+* __Ticket:__ [LPS-188559](https://liferay.atlassian.net/browse/LPS-188559)
+* __What changed:__ The `PDFProcessor` class is moved from the `com.liferay.document.library.kernel.util` package to the `com.liferay.document.library.kernel.processor` package.
+* __Reason:__ This change matches the package name to the class name.
+
+**PDFProcessorUtil.java**
+`portal-kernel/src/com/liferay/document/library/kernel/util/PDFProcessorUtil.java`
+
+* __Date:__ Dec. 1, 2023
+* __Ticket:__ [LPS-188559](https://liferay.atlassian.net/browse/LPS-188559)
+* __What changed:__ The `PDFProcessorUtil` class is moved from the `com.liferay.document.library.kernel.util` package to the `com.liferay.document.library.kernel.processor` package.
+* __Reason:__ This change matches the package name to the class name.
+
+**RawMetadataProcessor.java**
+`portal-kernel/src/com/liferay/document/library/kernel/util/RawMetadataProcessor.java`
+
+* __Date:__ Dec. 1, 2023
+* __Ticket:__ [LPS-188559](https://liferay.atlassian.net/browse/LPS-188559)
+* __What changed:__ The `RawMetadataProcessor` class is moved from the `com.liferay.document.library.kernel.util` package to the `com.liferay.document.library.kernel.processor` package.
+* __Reason:__ This change matches the package name to the class name.
+
+**RawMetadataProcessorUtil.java**
+`portal-kernel/src/com/liferay/document/library/kernel/util/RawMetadataProcessorUtil.java`
+
+* __Date:__ Dec. 1, 2023
+* __Ticket:__ [LPS-188559](https://liferay.atlassian.net/browse/LPS-188559)
+* __What changed:__ The `RawMetadataProcessorUtil` class is moved from the `com.liferay.document.library.kernel.util` package to the `com.liferay.document.library.kernel.processor` package.
+* __Reason:__ This change matches the package name to the class name.
+
+**VideoProcessor.java**
+`portal-kernel/src/com/liferay/document/library/kernel/util/VideoProcessor.java`
+
+* __Date:__ Dec. 1, 2023
+* __Ticket:__ [LPS-188559](https://liferay.atlassian.net/browse/LPS-188559)
+* __What changed:__ The `VideoProcessor` class is moved from the `com.liferay.document.library.kernel.util` package to the `com.liferay.document.library.kernel.processor` package.
+* __Reason:__ This change matches the package name to the class name.
+
+**VideoProcessorUtil.java**
+`portal-kernel/src/com/liferay/document/library/kernel/util/VideoProcessorUtil.java`
+
+* __Date:__ Dec. 1, 2023
+* __Ticket:__ [LPS-188559](https://liferay.atlassian.net/browse/LPS-188559)
+* __What changed:__ The `VideoProcessorUtil` class is moved from the `com.liferay.document.library.kernel.util` package to the `com.liferay.document.library.kernel.processor` package.
+* __Reason:__ This change matches the package name to the class name.
+
+**ModelResourcePermissionFactory.java**
+[`portal-kernel/src/com/liferay/portal/kernel/security/permission/resource/ModelResourcePermissionFactory.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/security/permission/resource/ModelResourcePermissionFactory.java)
+
+* __Date:__ Dec. 12, 2023
+* __Ticket:__ [LPS-193174](https://liferay.atlassian.net/browse/LPS-193174)
+* __What changed:__ The `getInstance` method is removed.
+* __Reason:__ Service model resource permissions are now retrieved via `ModelResourcePermissionRegistryUtil`.
+
+**PortletResourcePermissionFactory.java**
+[`portal-kernel/src/com/liferay/portal/kernel/security/permission/resource/PortletResourcePermissionFactory.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/security/permission/resource/PortletResourcePermissionFactory.java)
+
+* __Date:__ Dec. 12, 2023
+* __Ticket:__ [LPS-193174](https://liferay.atlassian.net/browse/LPS-193174)
+* __What changed:__ The `getInstance` method is removed.
+* __Reason:__ There are no longer any usages for this method.
+
+**JSONWebServiceActionsManager.java**
+[`portal-kernel/src/com/liferay/portal/kernel/jsonwebservice/JSONWebServiceActionsManager.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/jsonwebservice/JSONWebServiceActionsManager.java)
+
+* __Date:__ Dec. 13, 2023
+* __Ticket:__ [LPS-203854](https://liferay.atlassian.net/browse/LPS-203854)
+* __What changed:__ The `registerServletContext(ServletContext)` and `unregisterServletContext(ServletContext)` methods are removed.
+* __Reason:__ Spring bean JSON web service registration is now centralized in `JSONWebServiceTracker`, so there is no longer a need to explicitly register or unregister a `ServletContext`.
+
+**JSONWebServiceActionsManagerUtil.java**
+[`portal-kernel/src/com/liferay/portal/kernel/jsonwebservice/JSONWebServiceActionsManagerUtil.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/jsonwebservice/JSONWebServiceActionsManagerUtil.java)
+
+* __Date:__ Dec. 13, 2023
+* __Ticket:__ [LPS-203854](https://liferay.atlassian.net/browse/LPS-203854)
+* __What changed:__ The `registerServletContext(ServletContext)` and `unregisterServletContext(ServletContext)` methods are removed.
+* __Reason:__ Spring bean JSON web service registration is now centralized in `JSONWebServiceTracker`, so there is no longer a need to explicitly register or unregister a `ServletContext`.
+
+**PhoneNumberFormatUtil.java**
+`portal-kernel/src/com/liferay/portal/kernel/format/PhoneNumberFormatUtil.java`
+
+* __Date:__ Dec. 13, 2023
+* __Ticket:__ [LPS-200292](https://liferay.atlassian.net/browse/LPS-200292)
+* __What changed:__ The `PhoneNumberFormatUtil` class is moved from `portal-kernel` to `portal-impl`. Add `portal-impl` as a build dependency to continue using this class. Additionally, the `getPhoneNumberFormat` method is removed.
+* __Reason:__ The class is moved into `portal-impl` to simplify the code structure. The `getPhoneNumberFormat` method is no longer used.
+
+**ClusterBridgeMessageListener.java**
+`portal-kernel/src/com/liferay/portal/kernel/cluster/messaging/ClusterBridgeMessageListener.java`
+
+* __Date:__ Dec. 15, 2023
+* __Ticket:__ [LPS-203461](https://liferay.atlassian.net/browse/LPS-203461)
+* __What changed:__ The `ClusterBridgeMessageListener` class is moved from `portal-kernel` to the `user-admin-web` module.
+* __Reason:__ This class is only used for the `live_users` destination in the `user-admin-web` module.
+
+**DefaultControlPanelEntry.java**
+`portal-kernel/com/liferay/portal/kernel/portlet/DefaultControlPanelEntry.java`
+        
+* __Date:__ Jan. 4, 2024
+* __Ticket:__ [LPS-200537](https://liferay.atlassian.net/browse/LPS-200537)
+* __What changed:__ The class is removed.
+* __Reason:__ There is no longer any usage for this implementation.
+
+**ServiceProxyFactory.java**
+`portal-kernel/src/com/liferay/portal/kernel/util/ServiceProxyFactory.java`
+        
+* __Date:__ Jan. 8, 2024
+* __Ticket:__ [LPS-204548](https://liferay.atlassian.net/browse/LPS-204548)
+* __What changed:__ The class is removed. Instead, directly use the `Snapshot` class.
+* __Reason:__ This class no longer has any usage.
+
+**LayoutSet.java**
+[`portal-kernel/src/com/liferay/portal/kernel/model/LayoutSet.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/model/LayoutSet.java)
+
+* __Date:__ Jan. 10, 2024
+* __Ticket:__ [LPS-146160](https://liferay.atlassian.net/browse/LPS-146160)
+* __What changed:__ A new `isLayoutSetReadyForPropagation` method is added.
+* __Reason:__ This new method allows for identifying if a layout set is actively propagated from a layout set prototype.
+
+**LayoutSetWrapper.java**
+[`portal-kernel/src/com/liferay/portal/kernel/model/LayoutSetWrapper.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/model/LayoutSetWrapper.java)
+
+* __Date:__ Jan. 10, 2024
+* __Ticket:__ [LPS-146160](https://liferay.atlassian.net/browse/LPS-146160)
+* __What changed:__ A new `isLayoutSetReadyForPropagation` method is added.
+* __Reason:__ This new method allows for identifying if a layout set is actively propagated from a layout set prototype.
+
+**FileEntry.java**
+[`portal-kernel/src/com/liferay/portal/kernel/repository/model/FileEntry.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/repository/model/FileEntry.java)
+
+* __Date:__ Jan. 29, 2024
+* __Ticket:__ [LPD-6958](https://liferay.atlassian.net/browse/LPD-6958)
+* __What changed:__ A new `getDisplayDate` method is added for the new display date field.
+* __Reason:__ This new method allows for a display date to propogate to file entries in external repositories if they are enabled.
+
+**FileVersion.java**
+[`portal-kernel/src/com/liferay/portal/kernel/repository/model/FileVersion.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/repository/model/FileVersion.java)
+
+* __Date:__ Jan. 29, 2024
+* __Ticket:__ [LPD-6958](https://liferay.atlassian.net/browse/LPD-6958)
+* __What changed:__ A new `getDisplayDate` method is added for the new display date field.
+* __Reason:__ This new method allows for a display date to propogate to specific file versions in external repositories if they are enabled.
+
+**DLStore.java**
+[`portal-kernel/src/com/liferay/document/library/kernel/store/DLStore.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/document/library/kernel/store/DLStore.java)
+
+* __Date:__ Jan. 31, 2024
+* __Ticket:__ [LPD-15353](https://liferay.atlassian.net/browse/LPD-15353)
+* __What changed:__ The `deleteFile(long, long, String)` has been restored after it was previously removed.
+* __Reason:__ This method implementation is useful for deleting a single file.
+
+[`portal-kernel/bnd.bnd`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/bnd.bnd)
+
+* __Date:__ Feb. 7, 2024
+* __Ticket:__ [LPS-206272](https://liferay.atlassian.net/browse/LPS-206272)
+* __What changed:__ The `portal-kernel/src/com/liferay/portal/kernel/portlet/constants/packageinfo` version has increased to `1.6.0`, and the `portal-kernel/src/com/liferay/portal/kernel/portlet/packageinfo` version has increased to `29.2.0`.
+* __Reason:__ The `FriendlyURLRegistryUtil` class now has a new method `getFriendlyURLResolverByDefaultURLSeparator(String defaultURLSeparator)`.
 
 ## 2023 Q4 Release
 

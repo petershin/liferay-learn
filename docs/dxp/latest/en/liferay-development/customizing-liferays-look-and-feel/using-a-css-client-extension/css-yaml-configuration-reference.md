@@ -33,10 +33,10 @@ These properties are specific to CSS client extensions:
 | :--- | :--- | :--- |
 | `url` | URL | (Required) The path to the CSS file added to the page's CSS when enabled on a page. The complete URI is prefixed by the `baseURL` value. |
 
-See [Frontend Client Extension Properties](../frontend-client-extensions.md#frontend-client-extension-properties) for properties common to all frontend client extensions.
+See [Frontend Client Extension Properties](../../customizing-liferays-look-and-feel.md#frontend-client-extension-properties) for properties common to all frontend client extensions.
 
 ## Related Topics
 
-* [Frontend Client Extensions](../frontend-client-extensions.md)
-* [Working with Client Extensions](../working-with-client-extensions.md)
-* [Theme CSS YAML Configuration Reference](./theme-css-yaml-configuration-reference.md)
+* [Customizing Liferay's Look and Feel](../../customizing-liferays-look-and-feel.md)
+* [Working with Client Extensions](../../client-extensions/working-with-client-extensions.md)
+* [Theme CSS YAML Configuration Reference](../using-a-theme-css-client-extension/theme-css-yaml-configuration-reference.md)

@@ -27,7 +27,7 @@ easy-oauth-application-user-agent:
 
 The required `resourcePath` property defines the object action handler's location. Point to any implementation of an object action handler that's accessible as an external application (for example, a Java Spring Boot application). This value is combined with the `homePageURL` value of the associated OAuth2 application profile to form the complete URL.
 
-Object action client extensions require OAuth2 application profiles to secure requests triggered by object actions in Liferay. The `client-extension.yaml` defines an additional [OAuth user agent client extension](../configuration-client-extensions/oauth-user-agent-yaml-configuration-reference.md) for this profile, and the `oAuth2ApplicationExternalReferenceCode` property references that client extension's `key` value.
+Object action client extensions require OAuth2 application profiles to secure requests triggered by object actions in Liferay. The `client-extension.yaml` defines an additional [OAuth user agent client extension](../configuration-as-code/oauth-user-agent-yaml-configuration-reference.md) for this profile, and the `oAuth2ApplicationExternalReferenceCode` property references that client extension's `key` value.
 
 [The sample workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace/client-extensions/liferay-sample-etc-spring-boot) demonstrates adding an object action client extension.
 
@@ -44,7 +44,7 @@ easy-object-action-1:
         - User
 ```
 
-In this example, `easy-object-action-1` only appears as an option when [defining actions](../../objects/creating-and-managing-objects/actions.md) for the `C_EasyObject` and `User` objects.
+In this example, `easy-object-action-1` only appears as an option when [defining actions](../objects/creating-and-managing-objects/actions.md) for the `C_EasyObject` and `User` objects.
 
 To restrict access by instance, add the `dxp.lxc.liferay.com.virtualInstanceId` property with the desired virtual instance's ID:
 
@@ -71,6 +71,6 @@ These properties are specific to object action client extensions:
 
 ## Related Topics
 
-* [Microservice Client Extensions](../microservice-client-extensions.md)
-* [Working with Client Extensions](../working-with-client-extensions.md)
+* [Microservice Client Extensions](../integrating-microservices.md)
+* [Working with Client Extensions](../client-extensions/working-with-client-extensions.md)
 * [Workflow Action YAML Configuration Reference](./workflow-action-yaml-configuration-reference.md)

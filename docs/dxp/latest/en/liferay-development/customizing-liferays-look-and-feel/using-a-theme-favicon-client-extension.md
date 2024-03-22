@@ -21,7 +21,7 @@ To start developing client extensions,
 1. Install Java (JDK 8 or JDK 11).
 
     ```{note}
-    Check the [compatibility matrix](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) for supported JDKs, databases, and environments. See [JVM Configuration](../../../../installation-and-upgrades/reference/jvm-configuration.md) for recommended JVM settings.
+    Check the [compatibility matrix](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) for supported JDKs, databases, and environments. See [JVM Configuration](../../installation-and-upgrades/reference/jvm-configuration.md) for recommended JVM settings.
     ```
 
 1. Download and unzip the sample workspace:
@@ -47,7 +47,7 @@ liferay-sample-theme-favicon:
     url: favicon.ico
 ```
 
-The client extension has the ID `liferay-sample-theme-favicon` and contains the key configurations for a theme favicon client extension, including the type and the favicon file to add. See the [Theme Favicon YAML Configuration Reference](../theme-favicon-yaml-configuration-reference.md) for more information on the available properties.
+The client extension has the ID `liferay-sample-theme-favicon` and contains the key configurations for a theme favicon client extension, including the type and the favicon file to add. See the [Theme Favicon YAML Configuration Reference](./using-a-theme-favicon-client-extension/theme-favicon-yaml-configuration-reference.md) for more information on the available properties.
 
 It also contains the `assemble` YAML block:
 
@@ -91,9 +91,9 @@ STARTED liferay-sample-theme-favicon_1.0.0
 <!-- Should we suggest doing this to the pages of a Site Template? -->
 Configure a page in Liferay to use your deployed client extension:
 
-1. On a page, click _Edit_ (![Edit icon](../../../../images/icon-edit-pencil.png)) at the top.
+1. On a page, click _Edit_ (![Edit icon](../../images/icon-edit-pencil.png)) at the top.
 
-1. In the sidebar, navigate to the Page Design Options menu (![Page Design Options icon](../../../../images/icon-format.png)) and click _configuration_ (![Configuration icon](../../../../images/icon-cog3.png)) at the top of the menu.
+1. In the sidebar, navigate to the Page Design Options menu (![Page Design Options icon](../../images/icon-format.png)) and click _configuration_ (![Configuration icon](../../images/icon-cog3.png)) at the top of the menu.
 
 1. In the _Favicon_ section under the _Look and Feel_ tab, click _Change Favicon_.
 

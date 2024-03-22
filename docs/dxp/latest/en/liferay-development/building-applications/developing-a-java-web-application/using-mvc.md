@@ -50,9 +50,9 @@ In MVC, there are three layers.
 
 **Controller:** The middle man in the MVC pattern, the Controller passes the data back and forth between the view and the model layers.
 
-Liferay DXP's applications are divided into multiple discrete [modules](../../liferay-internals/architecture/osgi-and-modularity.md). With [Service Builder](../data-frameworks/service-builder.md), the model layer is generated into `service` and `api` [modules](../../liferay-internals/fundamentals/module-projects.md). The view and the controller layers share a module, the `web` module.
+Liferay DXP's applications are divided into multiple discrete [modules](../../../liferay-internals/architecture/osgi-and-modularity.md). With [Service Builder](../data-frameworks/service-builder.md), the model layer is generated into `service` and `api` [modules](../../../liferay-internals/fundamentals/module-projects.md). The view and the controller layers share a module, the `web` module.
 
-Generating the skeleton for a multi-module Service Builder-driven MVC application [project](../../liferay-internals/fundamentals/module-projects.md) using [Workspace](../tooling/liferay-workspace/creating-code-with-liferay-workspace.md) saves you lots of time and gets you started on the more important (and interesting, if we're being honest) development work.
+Generating the skeleton for a multi-module Service Builder-driven MVC application [project](../../../liferay-internals/fundamentals/module-projects.md) using [Workspace](../../tooling/liferay-workspace/creating-code-with-liferay-workspace.md) saves you lots of time and gets you started on the more important (and interesting, if we're being honest) development work.
 
 ## Liferay MVC Command Classes
 
@@ -129,7 +129,7 @@ If you're ready to develop your model layer, see [Service Builder](../data-frame
 
 * [Portlet Preferences](./using-mvc/portlet-preferences.md)
 * [Using Localized Messages in an MVC Portlet](./using-mvc/using-localized-messages-in-an-mvc-portlet.md)
-* [Module Projects](../../liferay-internals/fundamentals/module-projects.md)
-* [Workspace](../tooling/liferay-workspace/creating-code-with-liferay-workspace.md)
-* [Fundamentals](../../liferay-internals/fundamentals.md)
-* [Architecture](../../liferay-internals/architecture.md)
+* [Module Projects](../../../liferay-internals/fundamentals/module-projects.md)
+* [Workspace](../../tooling/liferay-workspace/creating-code-with-liferay-workspace.md)
+* [Fundamentals](../../../liferay-internals/fundamentals.md)
+* [Architecture](../../../liferay-internals/architecture.md)

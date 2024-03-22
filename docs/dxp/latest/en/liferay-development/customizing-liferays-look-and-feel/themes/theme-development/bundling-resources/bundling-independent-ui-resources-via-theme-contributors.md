@@ -128,10 +128,10 @@ Now to see how the theme contributor affects your pages, try changing the backgr
 
 ## Conclusion
 
-Congratulations! You've created a theme contributor with a CSS style change. You can also apply specific style changes to your Site's pages with [Style Books](../../../style-books/using-a-style-book-to-standardize-site-appearance.md).
+Congratulations! You've created a theme contributor with a CSS style change. You can also apply specific style changes to your Site's pages with [Style Books](../../../../../site-building/site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md).
 
 ## Related Topics
 
 * [Bundling and Installing Resources into Your Theme via Themelets](./bundling-and-installing-resources-into-your-theme-via-themelets.md)
-* [Introduction to Themes](../../introduction-to-themes.md)
-* [Using a Style Book to Standardize Site Appearance](../../../style-books/using-a-style-book-to-standardize-site-appearance.md)
+* [Themes](../../../themes.md)
+* [Using a Style Book to Standardize Site Appearance](../../../../../site-building/site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md)

@@ -19,7 +19,7 @@ A service's global options apply to all its entities. Here are the options:
 
 ## Dependency Injector
 
-The default dependency injector is OSGi Declarative Services. This makes Service Builder work consistently as other modules do. Before DXP/Portal 7.2, Service Builder used Spring dependency injection. The only difference is how you inject the services when you use them. Both injector settings are shown below. See _Dependency Injection_ in [Core Frameworks](../../../core-frameworks.md) for more information.
+The default dependency injector is OSGi Declarative Services. This makes Service Builder work consistently as other modules do. Before DXP/Portal 7.2, Service Builder used Spring dependency injection. The only difference is how you inject the services when you use them. Both injector settings are shown below. See _Dependency Injection_ in [Core Frameworks](../../../../core-frameworks.md) for more information.
 
 Declarative Services Dependency Injector:
 
@@ -33,7 +33,7 @@ Spring Dependency Injector:
 <service-builder dependency-injector="spring">
 ```
 
-When a project is created using the [Service Builder template](../../../tooling/blade-cli/generating-projects-with-blade-cli.md#creating-a-project), the Declarative Services dependency injector and its dependencies are configured for the project by default. To use the Spring dependency injector instead, create the project using [Blade CLI](../../../tooling/blade-cli/generating-projects-with-blade-cli.md)'s Service Builder template and the `--dependency-injector spring` option.
+When a project is created using the [Service Builder template](../../../../tooling/blade-cli/generating-projects-with-blade-cli.md#creating-a-project), the Declarative Services dependency injector and its dependencies are configured for the project by default. To use the Spring dependency injector instead, create the project using [Blade CLI](../../../../tooling/blade-cli/generating-projects-with-blade-cli.md)'s Service Builder template and the `--dependency-injector spring` option.
 
 !!! note
 Before Liferay DXP/Portal 7.2, Spring was the sole dependency injector. The services were Spring beans. Liferay's Spring bean framework accommodates Spring beans referencing each other: for example, Spring bean A has a Spring bean B field and vice versa. When using Spring as the dependency injector, the Service Builder generates base services that include local service and persistence fields for all entities defined in the service.xml. This causes circular references. Since OSGi Declarative Services doesn't accommodate circular references, the Service Builder doesn't create these fields in the base classes when DS is the dependency injector. For more details, see [Understanding and Extending Generated Classes](../service-builder-basics/understanding-and-extending-generated-classes.md).
@@ -116,5 +116,5 @@ As the last piece of global information, enter your name as the service's _autho
 
 ## Related Topics
 
--   [Core Frameworks](../../../core-frameworks.md)
+-   [Core Frameworks](../../../../core-frameworks.md)
 -   [Understanding and Extending Generated Classes](../service-builder-basics/understanding-and-extending-generated-classes.md)

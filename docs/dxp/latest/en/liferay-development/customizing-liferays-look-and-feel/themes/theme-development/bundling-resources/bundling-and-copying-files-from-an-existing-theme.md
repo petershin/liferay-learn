@@ -14,11 +14,11 @@ The process is different from extending a theme. While the `kickstart` task serv
 ## Creating and Copying Themes
 
 !!! note
-    In case you did not set up your environment to create a theme, see [Setting Up an Environment and Creating a Theme](../getting-started/setting-up-an-environment-and-creating-a-theme.md).
+    In case you did not set up your environment to create a theme, see [Setting Up an Environment and Creating a Theme](../setting-up-an-environment-and-creating-a-theme.md).
 
 Follow these steps to create multiple themes and copy the files from one into the other:
 
-1. Create two themes by [Running the Liferay Theme Generator](../getting-started/setting-up-an-environment-and-creating-a-theme.md#running-the-liferay-theme-generator). Label them as `Liferay Theme 1` and `Liferay Theme 2`.
+1. Create two themes by [Running the Liferay Theme Generator](../setting-up-an-environment-and-creating-a-theme.md#running-the-liferay-theme-generator). Label them as `Liferay Theme 1` and `Liferay Theme 2`.
 
 1. Navigate to Liferay Theme 1's root folder.
 
@@ -86,4 +86,4 @@ Now you know how to develop a theme based on an existing one by configuring and 
 
 * [Bundling and Installing Resources into Your Theme via Themelets](./bundling-and-installing-resources-into-your-theme-via-themelets.md)
 * [Bundling Independent UI Resources via Theme Contributors](./bundling-independent-ui-resources-via-theme-contributors.md)
-* [Setting Up an Environment and Creating a Theme](../getting-started/setting-up-an-environment-and-creating-a-theme.md)
+* [Setting Up an Environment and Creating a Theme](../setting-up-an-environment-and-creating-a-theme.md)

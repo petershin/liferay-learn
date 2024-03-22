@@ -28,7 +28,7 @@ To start developing client extensions,
 1. Install Java (JDK 8 or JDK 11).
 
    ```{note}
-   Check the [compatibility matrix](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) for supported JDKs, databases, and environments. See [JVM Configuration](../../../../installation-and-upgrades/reference/jvm-configuration.md) for recommended JVM settings.
+   Check the [compatibility matrix](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) for supported JDKs, databases, and environments. See [JVM Configuration](../../installation-and-upgrades/reference/jvm-configuration.md) for recommended JVM settings.
    ```
 
 1. Download and unzip the sample workspace:
@@ -56,7 +56,7 @@ liferay-sample-iframe-1-counter-app:
 
 This client extension has the ID `liferay-sample-iframe-1` and contains the key configurations for an IFrame client extension, including the `name`, `type` and the URL of the app to ingest as an IFrame. The [Counter App](https://github.com/arnab-datta/counter-app) running at the example's `url` is a basic React app that simulates adding items to a shopping cart. After deploying the client extension, you can add the app to a page in Liferay as you would any widget.
 
-See the [IFrame YAML configuration reference](../iframe-yaml-configuration-reference.md) for more information on the available properties.
+See the [IFrame YAML configuration reference](./using-an-iframe-client-extension/iframe-yaml-configuration-reference.md) for more information on the available properties.
 
 ## Deploy the IFrame Client Extension
 
@@ -91,9 +91,9 @@ Now that your client extension is deployed, configure Liferay to use it.
 
 The IFrame is added to a page as a widget.
 
-1. Click _Edit_ (![Edit](../../../../images/icon-edit-pencil.png)) at the top of any page.
+1. Click _Edit_ (![Edit](../../images/icon-edit-pencil.png)) at the top of any page.
 
-1. Add the widget to the page. In the Fragments and Widgets sidebar (![Fragments and Widgets](../../../../images/icon-plus.png)), click _Widgets_.
+1. Add the widget to the page. In the Fragments and Widgets sidebar (![Fragments and Widgets](../../images/icon-plus.png)), click _Widgets_.
 
 1. Find the Client Extensions &rarr; Counter App widget and drag it onto the page. Click _Publish_.
 
@@ -103,7 +103,7 @@ Confirm the Counter App is working by adding some items.
 
 ## Related Topics
 
-* [Frontend Client Extensions](../../frontend-client-extensions.md)
+* [Customizing Liferay's Look and Feel](../customizing-liferays-look-and-feel.md)
 * [IFrame YAML Configuration Reference](./using-an-iframe-client-extension/iframe-yaml-configuration-reference.md)
-* [Understanding Custom Element and IFrame Client Extensions](../understanding-custom-element-and-iframe-client-extensions.md)
-* [Client Extensions UI Reference](../client-extensions-ui-reference.md)
+* [Integrating External Applications](../integrating-external-applications.md)
+* [Client Extensions UI Reference](../customizing-liferays-look-and-feel/client-extensions-ui-reference.md)

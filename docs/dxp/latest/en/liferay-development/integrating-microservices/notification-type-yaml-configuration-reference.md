@@ -26,7 +26,7 @@ zebra-oauth-user-agent:
 
 The required `resourcePath` property defines the notification handler's location. Point to any notification handler implementation that's accessible as an external application. This value is combined with the `homePageURL` value of the OAuth2 application profile to form the complete URL.
 
-Notification type client extensions require OAuth2 application profiles to secure requests triggered by notifications in Liferay. The example above defines an additional [OAuth user agent client extension](../configuration-client-extensions/oauth-user-agent-yaml-configuration-reference.md) for this profile, and the `oAuth2ApplicationExternalReferenceCode` property references its `key` value.
+Notification type client extensions require OAuth2 application profiles to secure requests triggered by notifications in Liferay. The example above defines an additional [OAuth user agent client extension](../configuration-as-code/oauth-user-agent-yaml-configuration-reference.md) for this profile, and the `oAuth2ApplicationExternalReferenceCode` property references its `key` value.
 
 [The sample workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace/client-extensions/liferay-sample-etc-spring-boot) demonstrates adding a notification type client extension.
 
@@ -41,5 +41,5 @@ These properties are specific to notification type client extensions:
 
 ## Related Topics
 
-* [Microservice Client Extensions](../microservice-client-extensions.md)
-* [Working with Client Extensions](../working-with-client-extensions.md)
+* [Microservice Client Extensions](../integrating-microservices.md)
+* [Working with Client Extensions](../client-extensions/working-with-client-extensions.md)

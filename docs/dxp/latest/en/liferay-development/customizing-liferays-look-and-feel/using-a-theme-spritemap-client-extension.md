@@ -25,7 +25,7 @@ To start developing client extensions,
 1. Install Java (JDK 8 or JDK 11).
 
     ```{note}
-    Check the [compatibility matrix](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) for supported JDKs, databases, and environments. See [JVM Configuration](../../../../installation-and-upgrades/reference/jvm-configuration.md) for recommended JVM settings.
+    Check the [compatibility matrix](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) for supported JDKs, databases, and environments. See [JVM Configuration](../../installation-and-upgrades/reference/jvm-configuration.md) for recommended JVM settings.
     ```
 
 1. Download and unzip the sample workspace:
@@ -51,7 +51,7 @@ liferay-sample-theme-spritemap-1:
     url: spritemap.svg
 ```
 
-The client extension has the ID `liferay-sample-theme-spritemap-1` and contains the key configurations for a theme sprite map client extension, including the type and the sprite map file to add. See the [Theme Sprite Map YAML Configuration Reference](../theme-sprite-map-yaml-configuration-reference.md) for more information on the available properties.
+The client extension has the ID `liferay-sample-theme-spritemap-1` and contains the key configurations for a theme sprite map client extension, including the type and the sprite map file to add. See the [Theme Sprite Map YAML Configuration Reference](./using-a-theme-spritemap-client-extension/theme-sprite-map-yaml-configuration-reference.md) for more information on the available properties.
 
 It also contains the `assemble` YAML block:
 
@@ -79,13 +79,13 @@ Given below are the IDs of the icons used on the top navbar.
 
 | Number | Icon                                                                          | ID                     |
 | :----- | :---------------------------------------------------------------------------- | :--------------------- |
-| 1      | ![Edit icon](../../../../images/icon-edit-pencil.png)                         | pencil                 |
-| 2      | ![Cog icon](../../../../images/icon-cog.png)                                  | cog                    |
-| 3      | ![Simulation icon](../../../../images/icon-simulation.png)                    | simulation-menu-closed |
-| 4      | ![Analytics icon](../../../../images/icon-analytics.png)                      | analytics              |
-| 5      | ![AB Testing icon](../../../../images/icon-ab-testing.png)                    | test                   |
+| 1      | ![Edit icon](../../images/icon-edit-pencil.png)                         | pencil                 |
+| 2      | ![Cog icon](../../images/icon-cog.png)                                  | cog                    |
+| 3      | ![Simulation icon](../../images/icon-simulation.png)                    | simulation-menu-closed |
+| 4      | ![Analytics icon](../../images/icon-analytics.png)                      | analytics              |
+| 5      | ![AB Testing icon](../../images/icon-ab-testing.png)                    | test                   |
 | 6      | ![Information icon](./using-a-theme-spritemap-client-extension/images/02.png) | info-circle            |
-| 7      | ![Global Menu icon](../../../../images/icon-applications-menu.png)            | grid                   |
+| 7      | ![Global Menu icon](../../images/icon-applications-menu.png)            | grid                   |
 | 8      | ![Search icon](./using-a-theme-spritemap-client-extension/images/03.png)      | search                 |
 | 9      | ![User icon](./using-a-theme-spritemap-client-extension/images/04.png)        | user                   |
 
@@ -141,16 +141,16 @@ STARTED liferay-sample-theme-spritemap-1_1.0.0
 ## Use the New Sprite Map on a Page
 
 ```{note}
-The theme sprite map client extension is currently behind a [release feature flag](../../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags). You must enable the feature flag before start using it.
+The theme sprite map client extension is currently behind a [release feature flag](../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags). You must enable the feature flag before start using it.
 ```
 
 Configure a page to use your deployed client extension:
 
-1. Go to the page, then click _Edit_ (![Edit icon](../../../../images/icon-edit-pencil.png)) at the top.
+1. Go to the page, then click _Edit_ (![Edit icon](../../images/icon-edit-pencil.png)) at the top.
 
-1. In the sidebar, navigate to the Page Design Options menu (![Page Design Options icon](../../../../images/icon-format.png)) and click _Configuration_ (![Configuration icon](../../../../images/icon-cog3.png)) at the top of the menu.
+1. In the sidebar, navigate to the Page Design Options menu (![Page Design Options icon](../../images/icon-format.png)) and click _Configuration_ (![Configuration icon](../../images/icon-cog3.png)) at the top of the menu.
 
-1. In the Theme Sprite Map Client Extension section, click _Add_ (![Add](../../../../images/icon-duplicate.png)).
+1. In the Theme Sprite Map Client Extension section, click _Add_ (![Add](../../images/icon-duplicate.png)).
 
 1. Select the newly deployed sprite map, _Liferay Sample Theme Spritemap 1_.
 
@@ -158,7 +158,7 @@ Configure a page to use your deployed client extension:
 
 1. Scroll down and click _Save_.
 
-1. Go back to the page. In the navbar, a fish icon has replaced the pencil (![Edit icon](../../../../images/icon-edit-pencil.png)) for the edit functionality.
+1. Go back to the page. In the navbar, a fish icon has replaced the pencil (![Edit icon](../../images/icon-edit-pencil.png)) for the edit functionality.
 
 ![The new icon from the sprite map appears on the navbar.](./using-a-theme-spritemap-client-extension/images/06.png)
 

@@ -79,4 +79,4 @@ Table 2: Dependent Scoped Beans[^2]
 
 ## Related Topics
 
-[CDI Dependency Injection](../../../core-frameworks/dependency-injection.md)
+[CDI Dependency Injection](../../../../core-frameworks/dependency-injection.md)

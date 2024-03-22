@@ -19,7 +19,7 @@ If an imported definition references picklists or objects that do not exist, Lif
 
 <!--TASK: Uncomment when batch feature and documentation is ready...
 ```{tip}
-You can use the batch client extension to help migrate object definitions between Liferay environments. See [Batch Client Extensions](../../client-extensions/batch-client-extensions.md) for more information.
+You can use the batch client extension to help migrate object definitions between Liferay environments. See [Batch Client Extensions](../../importing-exporting-data.md) for more information.
 ```
 -->
 

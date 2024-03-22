@@ -27,7 +27,7 @@ easy-oauth-application-user-agent:
 
 The required `resourcePath` property defines the Object Validation Rule handler's location. Point to any implementation of an Object Validation Rule handler that's accessible as an external application (for example, a Java Spring Boot application). This value is combined with the `homePageURL` value of the associated OAuth2 application profile to form the complete URL.
 
-Object Validation Rule client extensions require OAuth2 application profiles to secure the requests they trigger in Liferay. The `client-extension.yaml` defines an additional [OAuth user agent client extension](../configuration-client-extensions/oauth-user-agent-yaml-configuration-reference.md) for this profile, and the `oAuth2ApplicationExternalReferenceCode` property references that client extension's `key` value.
+Object Validation Rule client extensions require OAuth2 application profiles to secure the requests they trigger in Liferay. The `client-extension.yaml` defines an additional [OAuth user agent client extension](../configuration-as-code/oauth-user-agent-yaml-configuration-reference.md) for this profile, and the `oAuth2ApplicationExternalReferenceCode` property references that client extension's `key` value.
 
 The [sample workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace/client-extensions/liferay-sample-etc-spring-boot) demonstrates how to use an Object Validation Rule client extension with Spring Boot application.
 
@@ -44,7 +44,7 @@ easy-object-validation-rule-1:
         - User
 ```
 
-In this example, `easy-object-validation-rule-1` only appears as an option when [defining validations](../../objects/creating-and-managing-objects/validations.md) for the `C_EasyObject` and `User` objects.
+In this example, `easy-object-validation-rule-1` only appears as an option when [defining validations](../objects/creating-and-managing-objects/validations.md) for the `C_EasyObject` and `User` objects.
 
 To restrict access by instance, add the `dxp.lxc.liferay.com.virtualInstanceId` property with the desired virtual instance's ID:
 
@@ -71,6 +71,6 @@ These properties are specific to Object Validation Rule client extensions:
 
 ## Related Topics
 
-* [Microservice Client Extensions](../microservice-client-extensions.md)
-* [Working with Client Extensions](../working-with-client-extensions.md)
+* [Microservice Client Extensions](../integrating-microservices.md)
+* [Working with Client Extensions](../client-extensions/working-with-client-extensions.md)
 * [Validations](./workflow-action-yaml-configuration-reference.md)

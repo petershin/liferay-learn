@@ -12,7 +12,7 @@ taxonomy-category-names:
 As of Liferay DXP 7.4 GA1, the [Bootstrap 3](https://getbootstrap.com/) compatibility layer is removed from the built-in packages in Liferay frontend applications. If you are upgrading from a previous version, you must include the compatibility layer as an external package for any of your projects that depend on Bootstrap 3 for their CSS code.
 
 ```{note}
-If you use the `gulp upgrade` command to [upgrade a theme](../../../site-building/site-appearance/themes/upgrading-a-theme.md) to Liferay 7.4, you can automatically include the Bootstrap 3 compatibility layer with the upgrade. In this case, you need not add the compabitility layer manually to that theme.
+If you use the `gulp upgrade` command to [upgrade a theme](../../customizing-liferays-look-and-feel/themes.md) to Liferay 7.4, you can automatically include the Bootstrap 3 compatibility layer with the upgrade. In this case, you need not add the compabitility layer manually to that theme.
 ```
 
 ```{warning}
@@ -37,7 +37,7 @@ Once you have the compatibility layer installed, you can use it in any project t
 
 ## Using the Compatibility Layer in Your Project
 
-To use the compatibility layer, you must import it into your project's `clay.scss` file (unless it is a theme that already has it included as part of an [upgrade to 7.4](../../../site-building/site-appearance/themes/upgrading-a-theme.md)).
+To use the compatibility layer, you must import it into your project's `clay.scss` file (unless it is a theme that already has it included as part of an [upgrade to 7.4](../../customizing-liferays-look-and-feel/themes.md)).
 
 If you require the atlas theme variables, add this to your project's `src/css/clay.scss` file:
 
@@ -65,5 +65,5 @@ Now the Bootstrap 3 compatibility layer is included in your theme, so it works w
 
 ## Related Topics
 
-* [Upgrading a Theme](../../../site-building/site-appearance/themes/upgrading-a-theme.md)
+* [Upgrading a Theme](../../customizing-liferays-look-and-feel/themes.md)
 * [Features Deprecated in 7.4](../../../installation-and-upgrades/upgrading-liferay/reference/maintenance-mode-and-deprecations-in-7-4.md#features-deprecated-in-7-4)

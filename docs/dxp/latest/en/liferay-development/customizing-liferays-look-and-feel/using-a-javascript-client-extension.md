@@ -21,7 +21,7 @@ To start developing client extensions,
 1. Install Java (JDK 8 or JDK 11).
 
    ```{note}
-   Check the [compatibility matrix](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) for supported JDKs, databases, and environments. See [JVM Configuration](../../../../installation-and-upgrades/reference/jvm-configuration.md) for recommended JVM settings.
+   Check the [compatibility matrix](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) for supported JDKs, databases, and environments. See [JVM Configuration](../../installation-and-upgrades/reference/jvm-configuration.md) for recommended JVM settings.
    ```
 
 1. Download and unzip the sample workspace:
@@ -47,7 +47,7 @@ liferay-sample-global-js:
     url: global.js
 ```
 
-The client extension has the ID `liferay-sample-global-js` and contains the key configurations for a JS client extension, including the `type` and the JavaScript file to add. See the [JavaScript YAML configuration reference](../javascript-yaml-configuration-reference.md) for more information on the properties.
+The client extension has the ID `liferay-sample-global-js` and contains the key configurations for a JS client extension, including the `type` and the JavaScript file to add. See the [JavaScript YAML configuration reference](./using-a-javascript-client-extension/javascript-yaml-configuration-reference.md) for more information on the properties.
 
 It also contains the `assemble` block:
 
@@ -100,9 +100,9 @@ Once your client extension is deployed successfully, configure Liferay to use it
 
 Configure a page in Liferay to use your deployed client extension:
 
-1. On a page in your instance, click the *Edit* icon ![Edit icon](../../../../images/icon-edit-pencil.png) at the top.
+1. On a page in your instance, click the *Edit* icon ![Edit icon](../../images/icon-edit-pencil.png) at the top.
 
-1. In the sidebar, navigate to the Page Design *Options* menu (![Page Design Options icon](../../../../images/icon-format.png)), and click the *Configuration* icon (![Configuration icon](../../../../images/icon-cog3.png)) at the top of the menu.
+1. In the sidebar, navigate to the Page Design *Options* menu (![Page Design Options icon](../../images/icon-format.png)), and click the *Configuration* icon (![Configuration icon](../../images/icon-cog3.png)) at the top of the menu.
 
    ![Click the cog wheel icon in the Page Design Options menu to access this client extension's configurations.](./using-a-javascript-client-extension/images/01.png)
 

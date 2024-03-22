@@ -18,7 +18,7 @@ Object validations set rules for determining valid field inputs. You can define 
 
 ![Add field validations to object definitions.](./validations/images/01.png)
 
-If out-of-the-box validations don't meet your needs, you can create custom validations using the `objectValidationRule` client extension. See [Microservice Client Extensions](../../client-extensions/microservice-client-extensions.md) for more information.
+If out-of-the-box validations don't meet your needs, you can create custom validations using the `objectValidationRule` client extension. See [Microservice Client Extensions](../../integrating-microservices.md) for more information.
 
 ::::{grid} 2
 :gutter: 3 3 3 3

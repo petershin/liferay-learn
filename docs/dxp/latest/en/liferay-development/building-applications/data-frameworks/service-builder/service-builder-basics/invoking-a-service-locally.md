@@ -98,7 +98,7 @@ The `t2p5-web` module's portlet application depends on the `T2P5EntryLocalServic
 ```
 
 ```{note}
-For information on finding artifacts and specifying dependencies, please see [Configuring Dependencies](../../../../liferay-internals/fundamentals/configuring-dependencies.md).
+For information on finding artifacts and specifying dependencies, please see [Configuring Dependencies](../../../../../liferay-internals/fundamentals/configuring-dependencies.md).
 ```
 
 ## Examine the Portlet
@@ -115,7 +115,7 @@ The `t2p5-web` module's `T2P5Portlet` class handles requests to add `T2P5Entry` 
 The `_t2p5EntryLocalService` field's `@Reference` annotation signals the runtime framework to inject a `T2P5EntryLocalService` component instance into the field.
 
 ```{note}
-For more information on using the `@Reference` annotation and acessing services in other ways, see *Dependency Injection* in [Core Frameworks](../../../core-frameworks.md).
+For more information on using the `@Reference` annotation and acessing services in other ways, see *Dependency Injection* in [Core Frameworks](../../../../core-frameworks.md).
 ```
 
 The `addT2P5Entry` method calls `T2P5EntryLocalService`'s `addT2P5Entry` method, passing in description and name parameters retrieved from the `ActionRequest`.

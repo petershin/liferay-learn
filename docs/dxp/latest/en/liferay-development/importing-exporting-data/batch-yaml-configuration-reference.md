@@ -34,4 +34,4 @@ These properties are specific to batch client extensions:
 
 ## Related Topics
 
-* [Working with Client Extensions](../working-with-client-extensions.md)
+* [Working with Client Extensions](../client-extensions/working-with-client-extensions.md)

@@ -97,9 +97,9 @@ Running `create_custom_element.sh` requires the latest versions of [Node.JS](htt
 
 1. Sign in to Liferay at `<http://localhost:8080>` using the email address *test@liferay.com* and the password *test*. When prompted, change the password to *learn*.
 
-1. Open the *Site Menu* (![Site Menu](../../../../images/icon-product-menu.png)), expand *Content & Data*, and go to *Documents and Media*.
+1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)), expand *Content & Data*, and go to *Documents and Media*.
 
-1. Click *Add* (![Add Button](../../../../images/icon-add.png)) and select *Multiple Files Upload*.
+1. Click *Add* (![Add Button](../../images/icon-add.png)) and select *Multiple Files Upload*.
 
 1. Drag and drop the `.js` and `.css` files into the upload area.
 
@@ -112,7 +112,7 @@ This adds the files to the Liferay Document Library and assigns them unique WebD
 !!! tip
    This tutorial hosts the application’s static resources in Liferay’s Document Library for demonstration purposes. In a production environment, you should host the application’s files on a server optimized for hosting static resources.
 
-To view each file's URL, click the *Info* icon (![Info Icon](../../../../images/icon-information.png)) and select one of the files at a time. Copy each file's *WebDAV URL* and save them for use in the next step.
+To view each file's URL, click the *Info* icon (![Info Icon](../../images/icon-information.png)) and select one of the files at a time. Copy each file's *WebDAV URL* and save them for use in the next step.
 
 ![Copy each file's WebDAV URL.](./using-routes-with-custom-elements/images/03.png)
 
@@ -123,9 +123,9 @@ For example,
 
 ## Registering and Deploying the Application
 
-1. Open the *Global Menu* (![Global Menu](../../../../images/icon-applications-menu.png)), click on the *Applications* tab, and go to *Remote Apps*.
+1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), click on the *Applications* tab, and go to *Remote Apps*.
 
-1. Click *Add* (![Add Button](../../../../images/icon-add.png)).
+1. Click *Add* (![Add Button](../../images/icon-add.png)).
 
 1. Enter these values:
 
@@ -153,7 +153,7 @@ The auto-generated app includes three routes: `hello-world`, `hello-foo`, `hello
 
 ### Defining a Route Property via the Remote Apps Menu
 
-1. Open the *Global Menu* (![Global Menu](../../../../images/icon-applications-menu.png)), click on the *Applications* tab, and go to *Remote Apps*.
+1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), click on the *Applications* tab, and go to *Remote Apps*.
 
 1. Select *J1V3-Custom-Element*.
 
@@ -173,7 +173,7 @@ The auto-generated app includes three routes: `hello-world`, `hello-foo`, `hello
 
 1. Edit the Page containing the J1V3-Custom-Element widgets.
 
-1. Click the *Options* button (![Options Button](../../../../images/icon-actions.png)) for one of the widgets and select *Configuration*.
+1. Click the *Options* button (![Options Button](../../images/icon-actions.png)) for one of the widgets and select *Configuration*.
 
    ![Click the Options button and select Configuration.](./using-routes-with-custom-elements/images/08.png)
 
@@ -234,7 +234,7 @@ routes
 
 ## Related Topics
 
-- [Frontend Client Extensions](../../frontend-client-extensions.md)
-- [Understanding Custom Element and IFrame Client Extensions](../understanding-custom-element-and-iframe-client-extensions.md)
+- [Customizing Liferay's Look and Feel](../customizing-liferays-look-and-feel.md)
+- [Integrating External Applications](../integrating-external-applications.md)
 - [Creating a Basic Custom Element](./creating-a-basic-custom-element.md)
-- [Remote Applications UI Reference](../client-extensions-ui-reference.md)
+- [Client Extensions UI Reference](../customizing-liferays-look-and-feel/client-extensions-ui-reference.md)

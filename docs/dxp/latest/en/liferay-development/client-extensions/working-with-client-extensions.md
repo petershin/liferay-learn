@@ -48,7 +48,7 @@ Client extension development follows a *workspace plus project* model. Within a 
 
 Client extensions grouped in a single project comprise a single, deployable unit when built. You can group client extensions where it makes sense (e.g., to improve efficiency when they should work on related tasks), but there are restrictions.
 
-Because all client extensions in a single project are associated with a Docker container that represents a workload particular to that project, only certain kinds of client extensions are compatible for grouping. For example, [microservice client extensions](./microservice-client-extensions.md) can only be grouped with configuration client extensions, as microservices represent a workload that runs outside Liferay.
+Because all client extensions in a single project are associated with a Docker container that represents a workload particular to that project, only certain kinds of client extensions are compatible for grouping. For example, [microservice client extensions](../integrating-microservices.md) can only be grouped with configuration client extensions, as microservices represent a workload that runs outside Liferay.
 
 You can group client extensions together in these ways:
 
@@ -230,7 +230,7 @@ The environment variable you use can point to one of two types of routes:
 
 1. `LIFERAY_ROUTES_CLIENT_EXTENSION`: The directory path to the route which contains context-sensitive metadata for the *client extension project* itself.
 
-   See [OAuth Headless Server Client Extensions](configuration-client-extensions.md#oauth-headless-server-client-extensions) and [OAuth User Agent Client Extensions](configuration-client-extensions.md#oauth-user-agent-client-extensions) for examples.
+   See [OAuth Headless Server Client Extensions](../configuration-as-code.md#oauth-headless-server-client-extensions) and [OAuth User Agent Client Extensions](../configuration-as-code.md#oauth-user-agent-client-extensions) for examples.
 
 ### Pointing to Routes in Liferay Cloud
 
@@ -255,13 +255,13 @@ These two environment variables must be provided to client extension processes w
 
 ## Related Topics
 
-* [Batch Client Extensions](./batch-client-extensions.md)
-* [Configuration Client Extensions](./configuration-client-extensions.md)
-* [Frontend Client Extensions](./frontend-client-extensions.md)
-* [Microservice Client Extensions](./microservice-client-extensions.md)
+* [Batch Client Extensions](../importing-exporting-data.md)
+* [Configuration Client Extensions](../configuration-as-code.md)
+* [Frontend Client Extensions](../customizing-liferays-look-and-feel.md)
+* [Microservice Client Extensions](../integrating-microservices.md)
 * [Packaging Client Extensions](./packaging-client-extensions.md)
 
 ## Tutorials
 
-* [Using a JavaScript Client Extension](./frontend-client-extensions/tutorials/using-a-javascript-client-extension.md)
-* [Using a CSS Client Extension](./frontend-client-extensions/tutorials/using-a-css-client-extension.md)
+* [Using a JavaScript Client Extension](../customizing-liferays-look-and-feel/using-a-javascript-client-extension.md)
+* [Using a CSS Client Extension](../customizing-liferays-look-and-feel/using-a-css-client-extension.md)

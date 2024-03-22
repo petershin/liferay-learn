@@ -21,7 +21,7 @@ To start developing client extensions,
 1. Install Java (JDK 8 or JDK 11).
 
    ```{note}
-   Check the [compatibility matrix](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) for supported JDKs, databases, and environments. See [JVM Configuration](../../../../installation-and-upgrades/reference/jvm-configuration.md) for recommended JVM settings.
+   Check the [compatibility matrix](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) for supported JDKs, databases, and environments. See [JVM Configuration](../../installation-and-upgrades/reference/jvm-configuration.md) for recommended JVM settings.
    ```
 
 1. Download and unzip the sample workspace:
@@ -47,7 +47,7 @@ liferay-sample-global-css:
     url: global.css
 ```
 
-The client extension has the ID `liferay-sample-global-css` and contains the key configurations for a CSS client extension, including the `type` and the CSS file to add. See the [CSS YAML configuration reference](../css-yaml-configuration-reference.md) for more information on the available properties.
+The client extension has the ID `liferay-sample-global-css` and contains the key configurations for a CSS client extension, including the `type` and the CSS file to add. See the [CSS YAML configuration reference](./using-a-css-client-extension/css-yaml-configuration-reference.md) for more information on the available properties.
 
 It also contains the `assemble` block:
 
@@ -114,9 +114,9 @@ Now that your client extension is deployed, configure Liferay to use it.
 
 Configure a page in Liferay to use your deployed client extension:
 
-1. On a page with at least one button, click the *Edit* ( ![Edit icon](../../../../images/icon-edit-pencil.png) ) at the top.
+1. On a page with at least one button, click the *Edit* ( ![Edit icon](../../images/icon-edit-pencil.png) ) at the top.
 
-1. In the sidebar, navigate to the Page Design Options menu ( ![Page Design Options icon](../../../../images/icon-format.png) ) and click the *Configuration* icon (![Configuration icon](../../../../images/icon-cog3.png)) at the top of the menu.
+1. In the sidebar, navigate to the Page Design Options menu ( ![Page Design Options icon](../../images/icon-format.png) ) and click the *Configuration* icon (![Configuration icon](../../images/icon-cog3.png)) at the top of the menu.
 
    ![Click the configuration icon in the Page Design Options menu to access this client extension's configurations.](./using-a-css-client-extension/images/01.png)
 

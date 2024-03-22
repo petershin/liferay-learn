@@ -35,6 +35,6 @@ These properties are specific to OAuth user agent client extensions:
 
 ## Related Topics
 
-* [Microservice Client Extensions](../microservice-client-extensions.md)
-* [Working with Client Extensions](../working-with-client-extensions.md)
+* [Microservice Client Extensions](../integrating-microservices.md)
+* [Working with Client Extensions](../client-extensions/working-with-client-extensions.md)
 * [OAuth Headless Server YAML Configuration Reference](./oauth-headless-server-yaml-configuration-reference.md)

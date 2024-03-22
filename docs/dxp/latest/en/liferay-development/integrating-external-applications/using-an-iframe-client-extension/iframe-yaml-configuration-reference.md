@@ -36,10 +36,10 @@ These properties are specific to IFrame client extensions:
 | `url` | URL | | (Required) The complete URL to the HTML page to embed within the IFrame widget. |
 | `instanceable` | True/false | `false` | Whether the IFrame widget can appear multiple times on a page. |
 
-See [Frontend Client Extension Properties](../frontend-client-extensions.md#frontend-client-extension-properties) for properties common to all frontend client extensions.
+See [Frontend Client Extension Properties](../../customizing-liferays-look-and-feel.md#frontend-client-extension-properties) for properties common to all frontend client extensions.
 
 ## Related Topics
 
-* [Frontend Client Extensions](../frontend-client-extensions.md)
-* [Working with Client Extensions](../working-with-client-extensions.md)
-* [Custom Element YAML Configuration Reference](./custom-element-yaml-configuration-reference.md)
+* [Frontend Client Extensions](../../customizing-liferays-look-and-feel.md)
+* [Working with Client Extensions](../../client-extensions/working-with-client-extensions.md)
+* [Custom Element YAML Configuration Reference](../creating-a-basic-custom-element/custom-element-yaml-configuration-reference.md)

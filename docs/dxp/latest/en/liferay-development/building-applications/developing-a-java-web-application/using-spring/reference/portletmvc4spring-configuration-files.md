@@ -376,14 +376,14 @@ Bundle-Version: 1.0.0
 Import-Package: com.liferay.portal.webserver,com.liferay.portal.kernel.servlet.filters.invoker
 ```
 
-It uses this OSGi metadata header to [import required Java packages](../../../..//liferay-internals/fundamentals/importing-packages.md):
+It uses this OSGi metadata header to [import required Java packages](../../../../../liferay-internals/fundamentals/importing-packages.md):
 
 ```properties
 Import-Package: com.liferay.portal.webserver,\
 com.liferay.portal.kernel.servlet.filters.invoker
 ```
 
-On deploying the portlet application WAR file, the [WAB Generator](../../../reference/deploying-wars-wab-generator.md) adds the specified OSGi metadata to the resulting web application bundle (WAB) that's deployed to Liferay's runtime framework.
+On deploying the portlet application WAR file, the [WAB Generator](../../../../reference/deploying-wars-wab-generator.md) adds the specified OSGi metadata to the resulting web application bundle (WAB) that's deployed to Liferay's runtime framework.
 
 The [`liferay-plugin-package-[version].dtd` file](https://learn.liferay.com/reference/latest/en/dxp/definitions/index.html) describes the `liferay-plugin-package.properties` file. 
 

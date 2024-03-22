@@ -19,7 +19,7 @@ With a theme CSS client extension, you can override the current theme's CSS file
 1. Install Java (JDK 8 or JDK 11).
 
     ```{note}
-    Check the [compatibility matrix](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) for supported JDKs, databases, and environments. See [JVM Configuration](../../../../installation-and-upgrades/reference/jvm-configuration.md) for recommended JVM settings.
+    Check the [compatibility matrix](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) for supported JDKs, databases, and environments. See [JVM Configuration](../../installation-and-upgrades/reference/jvm-configuration.md) for recommended JVM settings.
     ```
 
 1. Download and unzip the sample workspace:
@@ -46,7 +46,7 @@ liferay-sample-theme-css-1:
     type: themeCSS
 ```
 
-The client extension has the ID `liferay-sample-theme-css-1` and contains the key configurations for a theme CSS client extension, including the type and path to the two CSS resource files. See the [Theme CSS YAML Configuration Reference](../theme-css-yaml-configuration-reference.md) for more information on the available properties.
+The client extension has the ID `liferay-sample-theme-css-1` and contains the key configurations for a theme CSS client extension, including the type and path to the two CSS resource files. See the [Theme CSS YAML Configuration Reference](./using-a-theme-css-client-extension/theme-css-yaml-configuration-reference.md) for more information on the available properties.
 
 It also contains the `assemble` YAML block:
 
@@ -146,11 +146,11 @@ STARTED liferay-sample-theme-css-1_1.0.0
 
 Configure a page to use your new theme CSS: 
 
-1. On a page, click _Edit_ (![Edit icon](../../../../images/icon-edit-pencil.png)) at the top.
+1. On a page, click _Edit_ (![Edit icon](../../images/icon-edit-pencil.png)) at the top.
 
-1. In the sidebar, navigate to the _Page Design Options_ menu (![Page Design Options icon](../../../../images/icon-format.png)) and click _Configuration_ (![Configuration icon](../../../../images/icon-cog3.png)) at the top of the menu.
+1. In the sidebar, navigate to the _Page Design Options_ menu (![Page Design Options icon](../../images/icon-format.png)) and click _Configuration_ (![Configuration icon](../../images/icon-cog3.png)) at the top of the menu.
 
-1. In the Theme CSS Client Extension section under the Look and Feel tab, click _Add_ (![Add](../../../../images/icon-duplicate.png)).
+1. In the Theme CSS Client Extension section under the Look and Feel tab, click _Add_ (![Add](../../images/icon-duplicate.png)).
 
 1. Select the newly deployed client extension, _Liferay Sample Theme CSS 1_.
 

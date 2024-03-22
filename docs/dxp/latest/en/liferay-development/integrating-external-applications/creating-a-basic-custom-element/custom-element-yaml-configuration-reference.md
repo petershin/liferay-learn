@@ -48,10 +48,10 @@ These properties are specific to custom element client extensions:
 | `urls` | String[] (partial URLs) | | (Required) List of paths to JavaScript resources that are added to the HTML head when the widget is used on a page. One of these resources must contain the custom element initialization code. This combines with `baseURL` to form a complete URL. |
 | `useESM` | True/false | `false` | Whether the JavaScript code uses [ESM](https://nodejs.org/api/esm.html#modules-ecmascript-modules) format. When `true`, the JavaScript is added to the page with the `type="module"` property. |
 
-See [Frontend Client Extension Properties](../frontend-client-extensions.md#frontend-client-extension-properties) for properties common to all frontend client extensions.
+See [Frontend Client Extension Properties](../../customizing-liferays-look-and-feel.md#frontend-client-extension-properties) for properties common to all frontend client extensions.
 
 ## Related Topics
 
-* [Frontend Client Extensions](../frontend-client-extensions.md)
-* [Working with Client Extensions](../working-with-client-extensions.md)
-* [IFrame YAML Configuration Reference](./iframe-yaml-configuration-reference.md)
+* [Customizing Liferay's Look and Feel](../../customizing-liferays-look-and-feel.md)
+* [Working with Client Extensions](../../client-extensions/working-with-client-extensions.md)
+* [IFrame YAML Configuration Reference](../using-an-iframe-client-extension/iframe-yaml-configuration-reference.md)

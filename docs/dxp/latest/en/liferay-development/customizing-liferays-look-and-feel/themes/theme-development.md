@@ -1,6 +1,6 @@
 ---
 toc:
-  - ./theme-development/getting-started.md
+  - ./theme-development/setting-up-an-environment-and-creating-a-theme.md
   - ./theme-development/working-with-templates.md
   - ./theme-development/bundling-resources.md
 taxonomy-category-names:
@@ -15,8 +15,8 @@ uuid: e7038c92-9621-4117-8e02-841150cc9bb3
 ::::{grid} 2
 :gutter: 3 3 3 3
 
-:::{grid-item-card} Getting Started
-:link: ./theme-development/getting-started.md
+:::{grid-item-card} Setting Up an Environment and Creating a Theme
+:link: ./theme-development/setting-up-an-environment-and-creating-a-theme.md
 :::
 
 :::{grid-item-card} Working with Templates

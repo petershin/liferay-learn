@@ -12,7 +12,7 @@ With the configuration framework, you can set your [application's configuration 
 
 The configuration framework can be used in conjunction with portlet preferences so that an app can have both a configuration UI in system settings as well a preference UI in the portlet's setup tab.
 
-Note, an application's configuration is overridden if portlet preferences are implemented and set by a user. See [Portlet Preferences](../../developing-a-java-web-application/using-mvc/portlet-preferences.md) to learn more.
+Note, an application's configuration is overridden if portlet preferences are implemented and set by a user. See [Portlet Preferences](../../building-applications/developing-a-java-web-application/using-mvc/portlet-preferences.md) to learn more.
 
 ## See the Example Code
 
@@ -97,7 +97,7 @@ The `X7Y2PortletInstanceConfiguration` method uses `PortletDisplay` to obtain th
 
 ## Set up Portlet Preferences
 
-For the portlet to have portlet preferences, you must also add a configuration JSP file and configuration action to your application. To learn more about how these files work in a portlet, see [Portlet Preferences](../../developing-a-java-web-application/using-mvc/portlet-preferences.md).
+For the portlet to have portlet preferences, you must also add a configuration JSP file and configuration action to your application. To learn more about how these files work in a portlet, see [Portlet Preferences](../../../liferay-development/building-applications/developing-a-java-web-application/using-mvc/portlet-preferences.md).
 
 ## Related Information
 

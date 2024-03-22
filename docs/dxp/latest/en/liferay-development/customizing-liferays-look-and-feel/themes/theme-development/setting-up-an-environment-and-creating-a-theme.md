@@ -8,7 +8,7 @@ uuid: 6e7086c0-033f-489e-815a-471dac938005
 ---
 # Setting Up an Environment and Creating a Theme
 
-Creating a theme is the first step in theme development. Once you have your own theme, you can deploy it to your Liferay DXP instance, and use it for [various site customizations](../../introduction-to-themes.md#developing-themes).
+Creating a theme is the first step in theme development. Once you have your own theme, you can deploy it to your Liferay DXP instance, and use it for [various site customizations](../../themes.md#developing-themes).
 
 ## Using the Liferay Theme Generator
 
@@ -21,7 +21,7 @@ Older versions of the Liferay Theme Generator can be used to generate themes for
 ### Installation
 
 ```{note}
-Node and NPM are both required for developing themes with the Liferay Theme Generator. Check the [Node compatibility matrix](../../../../../building-applications/tooling/reference/node-version-information.md) to ensure you have the correct versions of these installed for your Liferay version.
+Node and NPM are both required for developing themes with the Liferay Theme Generator. Check the [Node compatibility matrix](../../../tooling/reference/node-version-information.md) to ensure you have the correct versions of these installed for your Liferay version.
 ```
 
 If you have not already done so, install the Liferay Theme Generator with this command:
@@ -117,4 +117,4 @@ Run `npm install` to install LibSass. The next time you build with gulp, the err
 
 ## Related Topics
 
-* [Changing Your Site's Appearance](../../../../../getting-started/changing-your-sites-appearance.md)
+* [Changing Your Site's Appearance](../../../../getting-started/changing-your-sites-appearance.md)

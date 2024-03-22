@@ -33,9 +33,9 @@ These properties are specific to theme sprite map client extensions:
 | :--- | :--- | :--- |
 | `url` | URL | (Required) A path to the `.svg` sprite map that replaces the one for your existing Liferay theme. The complete URI is prefixed by the `baseURL` value. |
 
-See [Frontend Client Extension Properties](../frontend-client-extensions.md#frontend-client-extension-properties) for properties common to all frontend client extensions.
+See [Frontend Client Extension Properties](../../customizing-liferays-look-and-feel.md#frontend-client-extension-properties) for properties common to all frontend client extensions.
 
 ## Related Topics
 
-* [Frontend Client Extensions](../frontend-client-extensions.md)
-* [Working with Client Extensions](../working-with-client-extensions.md)
+* [Frontend Client Extensions](../../customizing-liferays-look-and-feel.md)
+* [Working with Client Extensions](../../client-extensions/working-with-client-extensions.md)

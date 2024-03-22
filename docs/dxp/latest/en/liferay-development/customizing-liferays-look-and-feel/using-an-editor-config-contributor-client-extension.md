@@ -22,7 +22,7 @@ To start developing client extensions,
 1. Install Java (JDK 8 or JDK 11).
 
    !!! note
-       Check the [compatibility matrix](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) for supported JDKs, databases, and environments. See [JVM Configuration](../../../../installation-and-upgrades/reference/jvm-configuration.md) for recommended JVM settings.
+       Check the [compatibility matrix](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) for supported JDKs, databases, and environments. See [JVM Configuration](../../installation-and-upgrades/reference/jvm-configuration.md) for recommended JVM settings.
 
 1. Download and unzip the sample workspace:
 
@@ -52,7 +52,7 @@ liferay-sample-editor-config-contributor:
     url: index.js
 ```
 
-The client extension has the ID `liferay-sample-editor-config-contributor` and contains the key configurations for an Editor Config Contributor client extension, including the `type`, the `editorConfigKeys`, and the `url` property that defines the JavaScript resource file's location. See the [Editor Config Contributor YAML configuration reference](../editor-config-contributor-yaml-configuration-reference.md) for more information on the available properties.
+The client extension has the ID `liferay-sample-editor-config-contributor` and contains the key configurations for an Editor Config Contributor client extension, including the `type`, the `editorConfigKeys`, and the `url` property that defines the JavaScript resource file's location. See the [Editor Config Contributor YAML configuration reference](./using-an-editor-config-contributor-client-extension/editor-config-contributor-yaml-configuration-reference.md) for more information on the available properties.
 
 It also contains the `assemble` block:
 
@@ -153,13 +153,13 @@ STARTED liferaysampleeditorconfigcontributor_7.4.3.99
 
 Now that your client extension is deployed, check if it's running properly.
 
-1. Open the *Global Menu* (![Global Menu](../../../../images/icon-applications-menu.png)), go to the *Applications* tab, and click *Client Extensions* under Custom Apps.
+1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), go to the *Applications* tab, and click *Client Extensions* under Custom Apps.
 
 1. If the deployment is successful, the Liferay Sample Editor Config Contributor client extension appears in the client extensions manager.
 
    ![If the deployment is successful, your client extension appears.](./using-an-editor-config-contributor-client-extension/images/01.png)
 
-1. Click *Add* (![Add icon](../../../../images/icon-add.png)) and choose any option as they all use a WYSIWYG editor. In the new page, a Create AI Content button is displayed at the end of the editor.
+1. Click *Add* (![Add icon](../../images/icon-add.png)) and choose any option as they all use a WYSIWYG editor. In the new page, a Create AI Content button is displayed at the end of the editor.
 
 ![The WYSIWYG editor before and after the client extension's deployment](./using-an-editor-config-contributor-client-extension/images/02.png)
 
@@ -170,6 +170,6 @@ You have successfully used an Editor Config Contributor client extension in Life
 - [Editor Config Contributor YAML Configuration Reference](./using-an-editor-config-contributor-client-extension/editor-config-contributor-yaml-configuration-reference.md)
 - [Using a CSS Client Extension](./using-a-css-client-extension.md)
 - [Using a JS Client Extension](./using-a-javascript-client-extension.md)
-- [Creating a Basic Custom Element](./creating-a-basic-custom-element.md)
+- [Creating a Basic Custom Element](../integrating-external-applications/creating-a-basic-custom-element.md)
 
 

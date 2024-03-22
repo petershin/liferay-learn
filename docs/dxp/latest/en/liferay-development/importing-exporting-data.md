@@ -26,7 +26,7 @@ feature.flag.COMMERCE-8087=true
 ```
 
 ```{warning}
-The batch framework's export/import center is a [feature under development](../../system-administration/configuring-liferay/feature-flags.md#dev-feature-flags). Never enable a dev feature flag in production.
+The batch framework's export/import center is a [feature under development](../system-administration/configuring-liferay/feature-flags.md#dev-feature-flags). Never enable a dev feature flag in production.
 ```
 
 Specify the batch client extension in your `client-extension.yaml` file:

@@ -18,7 +18,7 @@ When you need additional fields in your application, you can always add them in 
 
 Then, follow these steps:
 
-1. Navigate to *Control Panel* &rarr; *Users and Organizations*. Click the admin user's Options icon (![Options icon](../../../images/icon-actions.png)) and click *Edit*. In the General tab, scroll down to Custom Fields. Click the *Add* button.
+1. Navigate to *Control Panel* &rarr; *Users and Organizations*. Click the admin user's Options icon (![Options icon](../../../../images/icon-actions.png)) and click *Edit*. In the General tab, scroll down to Custom Fields. Click the *Add* button.
 
 1. Select *Input Field* as the field type. Input `f5a3Text` as the Field Name. Input a starting value, such as `test`. Click *Save*.
 
@@ -52,7 +52,7 @@ Then, follow these steps:
 
 1. Verify that the example module is working. Open your browser to `https://localhost:8080`.
 
-1. Navigate to a Site page and click the Edit icon (![Edit icon](../../../images/icon-edit.png)). Add the F5A3 Portlet to the page. The widget can be found under Sample widgets.
+1. Navigate to a Site page and click the Edit icon (![Edit icon](../../../../images/icon-edit.png)). Add the F5A3 Portlet to the page. The widget can be found under Sample widgets.
 
    ![Add the F5A3 Portlet to a Site page.](./accessing-custom-fields-with-expando/images/02.png)
 

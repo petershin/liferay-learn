@@ -306,5 +306,5 @@ for o in $(git -P grep -l 'scope = ExtendedObjectClassDefinition.Scope.GROUP' --
 
 ## Related Topics
 
-* [Working with Client Extensions](../working-with-client-extensions.md)
-* [Configuration CLient Extensions](../configuration-client-extensions.md)
+* [Working with Client Extensions](../client-extensions/working-with-client-extensions.md)
+* [Configuration Client Extensions](../configuration-as-code.md)

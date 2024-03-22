@@ -20,11 +20,11 @@ Build your own solutions using Liferay and React.
 :gutter: 3 3 3 3
 
 :::{grid-item-card} Creating a Basic Custom Element
-:link: ../client-extensions/frontend-client-extensions/tutorials/creating-a-basic-custom-element.md
+:link: ../../integrating-external-applications/creating-a-basic-custom-element.md
 :::
 
 :::{grid-item-card} Using Routes with Custom Elements
-:link: ../client-extensions/frontend-client-extensions/tutorials/using-routes-with-custom-elements.md
+:link: ../../integrating-external-applications/using-routes-with-custom-elements.md
 :::
 
 :::{grid-item-card} Remote Applications with Headless APIs

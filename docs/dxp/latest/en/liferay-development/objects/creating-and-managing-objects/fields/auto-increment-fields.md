@@ -31,7 +31,7 @@ When editing the field, you can change its label and configure how it's searched
 
 ## Exporting and Importing Entries with Auto-Increment Fields
 
-Object entries are imported and exported using the [Data Migration Center](../../../../headless-delivery/consuming-apis/data-migration-center.md), a [batch client extension](../../../client-extensions/batch-client-extensions.md), or by calling the [batch engine's import/export task](../../../../headless-delivery/consuming-apis/batch-engine-api-basics-exporting-data.md) endpoints. 
+Object entries are imported and exported using the [Data Migration Center](../../../../headless-delivery/consuming-apis/data-migration-center.md), a [batch client extension](../../../importing-exporting-data.md), or by calling the [batch engine's import/export task](../../../../headless-delivery/consuming-apis/batch-engine-api-basics-exporting-data.md) endpoints. 
 
 Exporting entries with auto-increment fields preserves the values in the exported JSON. When importing entries that contain auto-increment fields, you must carefully consider whether the data is compatible with the object definition's existing entries.
 

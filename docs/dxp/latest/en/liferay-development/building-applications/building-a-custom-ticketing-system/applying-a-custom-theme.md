@@ -50,7 +50,7 @@ liferay-ticket-theme-css:
     type: themeCSS
 ```
 
-See [Theme CSS YAML Configuration Reference](../../customizing-liferays-look-and-feel/theme-css-yaml-configuration-reference.md) for an explanation of each property.
+See [Theme CSS YAML Configuration Reference](../../customizing-liferays-look-and-feel/using-a-theme-css-client-extension/theme-css-yaml-configuration-reference.md) for an explanation of each property.
 
 The theme's customizations appear in the two files in the `/src/css` folder.
 

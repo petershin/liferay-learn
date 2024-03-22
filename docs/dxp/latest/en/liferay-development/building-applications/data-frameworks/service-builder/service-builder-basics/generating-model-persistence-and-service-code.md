@@ -46,7 +46,7 @@ Here's the `bnd.bnd` file:
 
 ```
 
-The `Bundle-` headers describe the module artifact. The `Export-Package` header specifies the API packages to publish. See [Module Projects](../../../../liferay-internals/fundamentals/module-projects.md) for details on bnd metadata and how it's used.
+The `Bundle-` headers describe the module artifact. The `Export-Package` header specifies the API packages to publish. See [Module Projects](../../../../../liferay-internals/fundamentals/module-projects.md) for details on bnd metadata and how it's used.
 
 The `build.gradle` file declares the module's dependency on DXP/Portal.
 
@@ -77,7 +77,7 @@ Once again, the `Bundle-` headers describe the module artifact. Service metadata
 | :------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `Liferay-Require-SchemaVersion: 1.0.0` | Your application's data schema version. When you release application versions that have database schema changes, you'll increment the version.                                                                                                                                                             |
 | `Liferay-Service: true`                | The module provides a Liferay Service.                                                                                                                                                                                                                                                                     |
-| `-dsannotations-options: inherit`      | OSGi service component classes inherit [OSGi Declarative Services](../../../../liferay-internals/fundamentals/apis-as-osgi-services.md) annotations from their class hierarchy. For example, extension classes can access all the services that ancestor fields reference via the `@Reference` annotation. |
+| `-dsannotations-options: inherit`      | OSGi service component classes inherit [OSGi Declarative Services](../../../../../liferay-internals/fundamentals/apis-as-osgi-services.md) annotations from their class hierarchy. For example, extension classes can access all the services that ancestor fields reference via the `@Reference` annotation. |
 
 Here's the `build.gradle` file:
 
@@ -265,7 +265,7 @@ It's time to create the persistence layer and services by deploying the generate
     dockertable and install the -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mariadb:10.2
     ```
 
-1. [Create the DXP database](../../../../installation-and-upgrades/reference/database-configurations.md) from within the MariaDB Docker container.
+1. [Create the DXP database](../../../../../installation-and-upgrades/reference/database-configurations.md) from within the MariaDB Docker container.
 
     Sign in to the database server.
 
@@ -459,4 +459,4 @@ Now that you know how to define a model and generate persistence code and servic
 ## Related Topics
 
 -   [Invoking a Service Locally](./invoking-a-service-locally.md)
--   [What is Liferay Workspace](../../../tooling/liferay-workspace/what-is-liferay-workspace.md)
+-   [What is Liferay Workspace](../../../../tooling/liferay-workspace/what-is-liferay-workspace.md)

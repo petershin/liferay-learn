@@ -132,9 +132,9 @@ For demonstration purposes this tutorial hosts the application’s static resour
 
 Then, follow these steps:
 
-1. Open the *Site Menu* (![Site Menu](../../../../images/icon-product-menu.png)), expand *Content & Data*, and go to *Documents and Media*.
+1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)), expand *Content & Data*, and go to *Documents and Media*.
 
-1. Click *Add* (![Add Button](../../../../images/icon-add.png)) and select *Multiple Files Upload*.
+1. Click *Add* (![Add Button](../../images/icon-add.png)) and select *Multiple Files Upload*.
 
 1. Drag and drop the `.js` and `.css` files into the upload area.
 
@@ -146,7 +146,7 @@ Then, follow these steps:
 
 This adds the files to the Document Library and assigns them unique URLs, which you'll use to create the remote application.
 
-To view each file's URL, click the *Info* icon (![Info Icon](../../../../images/icon-information.png)) and select a file. Copy each file's *WebDAV URL* and save them for use in the next step.
+To view each file's URL, click the *Info* icon (![Info Icon](../../images/icon-information.png)) and select a file. Copy each file's *WebDAV URL* and save them for use in the next step.
 
 ![Copy each file's WebDAV URL.](./creating-a-basic-custom-element/images/03.png)
 
@@ -157,9 +157,9 @@ For example,
 
 ## Registering the Application with Liferay
 
-1. Open the *Global Menu* (![Global Menu](../../../../images/icon-applications-menu.png)), click the *Applications* tab, and go to *Remote Apps*.
+1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), click the *Applications* tab, and go to *Remote Apps*.
 
-1. Click *Add* (![Add Button](../../../../images/icon-add.png)).
+1. Click *Add* (![Add Button](../../images/icon-add.png)).
 
 1. Enter these values:
 
@@ -181,7 +181,7 @@ Once saved, Liferay creates a widget named H5V7-Custom-Element, which you can de
 ## Related Topics
 
 * [Custom Element YAML Configuration Reference](./creating-a-basic-custom-element/custom-element-yaml-configuration-reference.md)
-* [Front-end Client Extensions](../../front-end-client-extensions.md)
-* [Understanding Custom Element and IFrame Client Extensions](../understanding-custom-element-and-iframe-client-extensions.md)
+* [Customizing Liferay's Look and Feel](../customizing-liferays-look-and-feel.md)
+* [Integrating External Applications](../integrating-external-applications.md)
 * [Using Routes with Custom Elements](./using-routes-with-custom-elements.md)
-* [Remote Applications UI Reference](../client-extensions-ui-reference.md)
+* [Client Extensions UI Reference](../customizing-liferays-look-and-feel/client-extensions-ui-reference.md)

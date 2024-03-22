@@ -9,7 +9,7 @@ taxonomy-category-names:
 ---
 # Enabling Assets
 
-Many of Liferay's applications (e.g. Blogs, Documents and Media, Message Boards, etc.) are asset-enabled out of the box. You can publish assets with the [Asset Publisher widget](../../../site-building/displaying-content/using-the-asset-publisher-widget/displaying-assets-using-the-asset-publisher-widget.md) or even create [Asset Libraries](../../../content-authoring-and-management/asset-libraries.md). With the help of [Service Builder](../service-builder.md), you can asset-enable your custom application. See the sample project below to learn how.
+Many of Liferay's applications (e.g. Blogs, Documents and Media, Message Boards, etc.) are asset-enabled out of the box. You can publish assets with the [Asset Publisher widget](../../../../site-building/displaying-content/using-the-asset-publisher-widget/displaying-assets-using-the-asset-publisher-widget.md) or even create [Asset Libraries](../../../../content-authoring-and-management/asset-libraries.md). With the help of [Service Builder](../service-builder.md), you can asset-enable your custom application. See the sample project below to learn how.
 
 ## Get the Sample Code
 
@@ -70,7 +70,7 @@ This tutorial assumes that you have a Service Builder application that is alread
 
 `*ModelSummaryContributor.java` - constructs the result summary for entries (e.g., the `com.acme.s5e6.search.S5E6EntryModelSummaryContributor.java` class).
 
-See the [Developer Guide](../../../using-search/developer-guide.md) in Using Search to learn more about enabling search.
+See the [Developer Guide](../../../../using-search/developer-guide.md) in Using Search to learn more about enabling search.
 
 ## Modify the Service Model Definition
 
@@ -219,6 +219,6 @@ The portlet is asset enabled. Your application's entries can now be found and di
 
 ## Related Topics
 
-- [Asset Publisher widget](../../../site-building/displaying-content/using-the-asset-publisher-widget/displaying-assets-using-the-asset-publisher-widget.md)
-- [Asset Libraries](../../../content-authoring-and-management/asset-libraries.md)
+- [Asset Publisher widget](../../../../site-building/displaying-content/using-the-asset-publisher-widget/displaying-assets-using-the-asset-publisher-widget.md)
+- [Asset Libraries](../../../../content-authoring-and-management/asset-libraries.md)
 - [Service Builder](../service-builder.md)

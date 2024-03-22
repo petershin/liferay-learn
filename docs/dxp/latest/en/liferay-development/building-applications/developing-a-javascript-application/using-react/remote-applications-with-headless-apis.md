@@ -11,7 +11,7 @@ taxonomy-category-names:
 
 {bdg-secondary}`Available 7.4+`
 
-After [creating and publishing objects](../../objects/creating-and-managing-objects/creating-objects.md), headless REST APIs are automatically generated. Here you'll see how to integrate these endpoints to create a simple CRUD (create, read, update, and delete) remote application.
+After [creating and publishing objects](../../../objects/creating-and-managing-objects/creating-objects.md), headless REST APIs are automatically generated. Here you'll see how to integrate these endpoints to create a simple CRUD (create, read, update, and delete) remote application.
 
 ## Set Up Liferay DXP
 
@@ -20,7 +20,7 @@ After [creating and publishing objects](../../objects/creating-and-managing-obje
 
 Then, follow these steps to add the `/o/c/*` URL pattern to the *Default Portal CORS Configuration*:
 
-1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), click the *Control Panel* tab, and go to *System Settings* &rarr; *Security Tools*.
+1. Open the *Global Menu* (![Global Menu](../../../../images/icon-applications-menu.png)), click the *Control Panel* tab, and go to *System Settings* &rarr; *Security Tools*.
 
 1. Go to the *Portal Cross-Origin Resource Sharing (CORS)* tab and click *Default Portal CORS Configuration*.
 
@@ -30,9 +30,9 @@ Then, follow these steps to add the `/o/c/*` URL pattern to the *Default Portal 
 
 ## Creating an Object for the CRUD Application
 
-1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), click the *Control Panel* tab, and go to *Objects*.
+1. Open the *Global Menu* (![Global Menu](../../../../images/icon-applications-menu.png)), click the *Control Panel* tab, and go to *Objects*.
 
-1. Click the *Add* button (![Add Button](../../../images/icon-add.png)) and enter these values:
+1. Click the *Add* button (![Add Button](../../../../images/icon-add.png)) and enter these values:
 
    | Field | Value |
    | :--- | :--- |
@@ -132,7 +132,7 @@ The `Requests.js` file uses JavaScript's built-in `fetch()` method.
 ```
 
 ```{note}
-Basic authentication is used here for demonstration purposes. For production, you should authorize users via [OAuth 2.0](../../../headless-delivery/using-oauth2.md). See [Using OAuth2 to Authorize Users](../../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md) for a sample React application that uses OAuth2.
+Basic authentication is used here for demonstration purposes. For production, you should authorize users via [OAuth 2.0](../../../../headless-delivery/using-oauth2.md). See [Using OAuth2 to Authorize Users](../../../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md) for a sample React application that uses OAuth2.
 ```
 
 ### Implement Forms
@@ -149,5 +149,5 @@ The forms are gathered together and displayed on one page with the [`App.js`](./
 
 ## Related Topics
 
-[Creating a Basic Custom Element](../../client-extensions/frontend-client-extensions/tutorials/creating-a-basic-custom-element.md)
-[Headless Framework Integration](../../objects/understanding-object-integrations/using-custom-object-apis.md)
+[Creating a Basic Custom Element](../../../integrating-external-applications/creating-a-basic-custom-element.md)
+[Headless Framework Integration](../../../objects/understanding-object-integrations/using-custom-object-apis.md)

@@ -35,7 +35,7 @@ This is a LUFFA's structure:
 ## `batch`
 
 ```{note}
-The `batch` folder is only required by [batch client extension projects](./batch-client-extensions.md).
+The `batch` folder is only required by [batch client extension projects](../importing-exporting-data.md).
 ```
 
 The data entities in a batch client extension are `*.batch-engine-data.json` files inside a `batch/` folder in the built LUFFA. These files can be in any folder structure within the `batch/` folder.
@@ -56,9 +56,9 @@ At the root of the LUFFA are one or more `*.client-extension-config.json` ([OSGi
 At least one Dockerfile is required in each LUFFA.
 ```
 
-The build process automatically generates and packages a `Dockerfile` for [batch](./batch-client-extensions.md), [configuration](./configuration-client-extensions.md), and [frontend](./frontend-client-extensions.md) client extensions.
+The build process automatically generates and packages a `Dockerfile` for [batch](../importing-exporting-data.md), [configuration](../configuration-as-code.md), and [frontend](../customizing-liferays-look-and-feel.md) client extensions.
 
-You must provide a [`Dockerfile`](https://docs.docker.com/engine/reference/builder/) in your project for [microservice client extensions](./microservice-client-extensions.md). Add it to the root of your project, and it's copied into the LUFFA when you build the project. Make sure your `Dockerfile` can execute the microservice client extensions in your project. For example, your `Dockerfile` may need to install specific tools that your microservice's code needs to run.
+You must provide a [`Dockerfile`](https://docs.docker.com/engine/reference/builder/) in your project for [microservice client extensions](../integrating-microservices.md). Add it to the root of your project, and it's copied into the LUFFA when you build the project. Make sure your `Dockerfile` can execute the microservice client extensions in your project. For example, your `Dockerfile` may need to install specific tools that your microservice's code needs to run.
 
 ### Packaging a Client Extension Manually
 
@@ -92,9 +92,9 @@ A microservice client extension's `Dockerfile` depends entirely on your specific
 An `LCP.json` file is required in each LUFFA.
 ```
 
-The build process automatically generates and packages an `LCP.json` file for [batch](./batch-client-extensions.md), [configuration](./configuration-client-extensions.md), and [frontend](./frontend-client-extensions.md).
+The build process automatically generates and packages an `LCP.json` file for [batch](../importing-exporting-data.md), [configuration](../configuration-as-code.md), and [frontend](../customizing-liferays-look-and-feel.md).
 
-You must provide an `LCP.json` file in your project for [microservice client extensions](./microservice-client-extensions.md). Add it to the root of your project, and it's copied into the LUFFA when your project is built. This `LCP.json` file configures the container used for the microservice when it's deployed in Liferay Cloud.
+You must provide an `LCP.json` file in your project for [microservice client extensions](../integrating-microservices.md). Add it to the root of your project, and it's copied into the LUFFA when your project is built. This `LCP.json` file configures the container used for the microservice when it's deployed in Liferay Cloud.
 
 If packaging the LUFFA yourself, each client extension comes with different specification suggestions for its `LCP.json`:
 
@@ -164,7 +164,7 @@ See [Configuration via LCP.json](https://learn.liferay.com/w/liferay-cloud/refer
 ## `static`
 
 ```{note}
-The `static` directory is only required by [frontend client extension projects](./frontend-client-extensions.md).
+The `static` directory is only required by [frontend client extension projects](../customizing-liferays-look-and-feel.md).
 ```
 
 You can place any number of static resource files into the root level `static/` directory in the built LUFFA. Use any folder structure you like within the `static/` folder. These files are ignored if there is no frontend client extension defined in your project's `client-extension.yaml` file.

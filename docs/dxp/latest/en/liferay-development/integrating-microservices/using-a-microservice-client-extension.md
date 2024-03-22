@@ -8,13 +8,13 @@ taxonomy-category-names:
 ---
 # Using a Microservice Client Extension
 
-A microservice client extension is a standalone server process that relies on OAuth 2 for communication with Liferay. The microservice is a resource server and Liferay is the authorization server. See [Using OAuth 2](../../../headless-delivery/using-oauth2.md) for more information. The sample projects in this demonstration ingest the payload from a protected route in the resource server (microservice) and display it in a frontend widget based on a [custom element](../frontend-client-extensions/understanding-custom-element-and-iframe-client-extensions.md) client extension. In order to coordinate with the standalone [Spring Boot application](https://docs.spring.io/spring-boot/docs/current/reference/html/getting-started.html#getting-started), two client extension types are used in this example:
+A microservice client extension is a standalone server process that relies on OAuth 2 for communication with Liferay. The microservice is a resource server and Liferay is the authorization server. See [Using OAuth 2](../../headless-delivery/using-oauth2.md) for more information. The sample projects in this demonstration ingest the payload from a protected route in the resource server (microservice) and display it in a frontend widget based on a [custom element](../integrating-external-applications.md) client extension. To coordinate with the standalone [Spring Boot application](https://docs.spring.io/spring-boot/docs/current/reference/html/getting-started.html#getting-started), two client extension types are used in this example:
 
 | Deployable or Runnable Code                            | Type                                                                                                                                    | Description                                                                                                       | Workspace Sample                |
 |:-------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------|:--------------------------------|
-| Deploy the Liferay Sample OAuth Application User Agent | Client extension: [`oAuthApplicationUserAgent`](../configuration-client-extensions/oauth-user-agent-yaml-configuration-reference.md) | Configures the authorization channel so the logged in user sees the microservice's payload in the custom element. | liferay-sample-etc-spring-boot  |
+| Deploy the Liferay Sample OAuth Application User Agent | Client extension: [`oAuthApplicationUserAgent`](../configuration-as-code/oauth-user-agent-yaml-configuration-reference.md) | Configures the authorization channel so the logged in user sees the microservice's payload in the custom element. | liferay-sample-etc-spring-boot  |
 | Run the Spring Boot microservice application           | Protected endpoint: `/dad/joke`                                                                                                         | A protected endpoint to the resource server. It takes a JWT token and returns a payload.                          | liferay-sample-etc-spring-boot  |
-| Deploy the Liferay Sample Custom Element 2             | Client extension: [`customElement`](../frontend-client-extensions/custom-element-yaml-configuration-reference.md)                   | Defines a custom element and requests the payload from the resource server, through its OAuth 2 client code.      | liferay-sample-custom-element-2 |
+| Deploy the Liferay Sample Custom Element 2             | Client extension: [`customElement`](../integrating-external-applications/creating-a-basic-custom-element/custom-element-yaml-configuration-reference.md)                   | Defines a custom element and requests the payload from the resource server, through its OAuth 2 client code.      | liferay-sample-custom-element-2 |
 
 ```{note}
 For convenience, this tutorial uses the ready-to-deploy custom element from the sample workspace. However, the custom element client extension isn't the focus here. Any frontend technology that can call the authorization server and display the payload from the resource server can be used in place of the custom element.
@@ -31,7 +31,7 @@ To start developing client extensions,
 1. Install Java (JDK 8 or JDK 11).
 
    ```{note}
-   Check the [compatibility matrix](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) for supported JDKs, databases, and environments. See [JVM Configuration](../../../installation-and-upgrades/reference/jvm-configuration.md) for recommended JVM settings.
+   Check the [compatibility matrix](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) for supported JDKs, databases, and environments. See [JVM Configuration](../../installation-and-upgrades/reference/jvm-configuration.md) for recommended JVM settings.
    ```
 
 1. Download and unzip the sample workspace:
@@ -91,7 +91,7 @@ liferay-sample-custom-element-2:
     useESM: true
 ```
 
-See [Understanding Custom Element and IFrame Client Extensions](../frontend-client-extensions/understanding-custom-element-and-iframe-client-extensions.md) for more information.
+See [Integrating External Applications](../integrating-external-applications.md) for more information.
 
 ## Deploy the OAuth Application User Agent Client Extension
 
@@ -118,7 +118,7 @@ See [Understanding Custom Element and IFrame Client Extensions](../frontend-clie
 
    ![The Liferay Sample OAuth Application User Agent is added when you deploy the client extension.](./using-a-microservice-client-extension/images/01.png)
 
-The Liferay Sample OAuth Application User Agent provides the [OAuth 2 authorization](../../../headless-delivery/using-oauth2.md) needed so that Liferay can access the Spring Boot application's data through its protected endpoint. All that is needed for Liferay to authorize the application in this case is declaring the external reference code in the `application-default.properties`:
+The Liferay Sample OAuth Application User Agent provides the [OAuth 2 authorization](../../headless-delivery/using-oauth2.md) needed so that Liferay can access the Spring Boot application's data through its protected endpoint. All that is needed for Liferay to authorize the application in this case is declaring the external reference code in the `application-default.properties`:
 
 ```properties
 liferay.oauth.application.external.reference.codes=liferay-sample-etc-spring-boot-oauth-application-user-agent
@@ -144,7 +144,7 @@ The Spring Boot application starts and prints messages in the log:
 
 ## Deploy the Custom Element Client Extension
 
-The microservice is running, and the OAuth2 Application communication channel is now provisioned and available in DXP. This example uses a [Custom Element client extension](../frontend-client-extensions/understanding-custom-element-and-iframe-client-extensions.md) to display the data generated by the microservice. To deploy it,
+The microservice is running, and the OAuth2 Application communication channel is now provisioned and available in DXP. This example uses a [Custom Element client extension](../integrating-external-applications/creating-a-basic-custom-element.md) to display the data generated by the microservice. To deploy it,
 
 1. Go to the `client-extensions/liferay-sample-custom-element-2` folder.
 

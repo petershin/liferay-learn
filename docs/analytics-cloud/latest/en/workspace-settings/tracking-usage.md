@@ -9,7 +9,7 @@ taxonomy-category-names:
 ---
 # Tracking Usage
 
-Analytics Cloud plans are limited by the total amount of [Individuals](../people/individuals/individual-profiles.md) and [Page Views](../touchpoints/pages/pages.md) synced from data sources. When either limit is exceeded, Analytics Cloud users are prompted to upgrade their plan or purchase add-ons to accommodate the additional usage.
+Analytics Cloud plans are limited by the total amount of [Individuals](../people/individuals/individual-profiles.md) and [Page Views](../touchpoints/pages/pages.md) synced from data sources. When either limit is exceeded, Analytics Cloud users are prompted to upgrade their plans or purchase add-ons to accommodate the additional usage.
 
 !!! note
     The Subscription & Usage page updates daily at 12:00 AM UTC.
@@ -22,7 +22,7 @@ Each plan has a limit to the number of known individuals (users with accounts on
 
 ## Subscription
 
-The Subscription Details section describes your plan’s limits. Higher tier plans offer additional flexibility through higher limits and less expensive add-ons. You can upgrade from lower to higher tier plans.
+The Subscription Details section describes your plan's limits. Higher tier plans offer additional flexibility through higher limits and less expensive add-ons. You can upgrade from lower to higher tier plans.
 
 | Plan Type                            | Basic    | Business     | Enterprise   |
 | :----------------------------------- | :------- | :----------- | :----------- |

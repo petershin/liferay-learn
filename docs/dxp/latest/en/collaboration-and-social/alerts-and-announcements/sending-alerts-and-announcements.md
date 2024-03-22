@@ -14,11 +14,11 @@ Use the Alerts or the Announcements widgets to broadcast important information.
 Alerts are for high-priority information (e.g. planned downtime alerts, security alerts, etc.) and come with a red *Important* tag. Conversely, Announcements are for all other information you might want to broadcast.
 
 !!! tip
-    You can set the announcement's priority to important to display the red *Important* tag in the message.
+    You can set the announcement's priority to Important to display the red *Important* tag in the message.
 
 ![Use the Announcements and Alerts application or widgets on a page to create and manage alerts and announcements.](./sending-alerts-and-announcements/images/01.png)
 
-Although very similar, alerts and announcements have some differences:
+Although similar, alerts and announcements have some differences:
 
 | Configuration      | Alert                       | Announcement                                                       |
 |:-------------------|:----------------------------|:-------------------------------------------------------------------|
@@ -37,7 +37,7 @@ Administrators can create and manage announcements and alerts through the Announ
 
 Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), select the *Applications* tab, and click *Announcements and Alerts* under Communication.
 
-In the application, select the Announcements or the Alerts tab (1) to create (2), view (3), select and delete multiple entries (4), filter by site or role (5), sort entries (6), or use the actions menu (7) to edit and delete announcements or alerts.
+In the application, select the *Announcements* or the *Alerts* tab (1) to create (2), view (3), select and delete multiple entries (4), filter by site or role (5), sort entries (6), or use the actions menu (7) to edit and delete announcements or alerts.
 
 Another way to create, display, and manage alerts and announcements is by using widgets:
 
@@ -53,7 +53,7 @@ Another way to create, display, and manage alerts and announcements is by using 
 
 1. Use the Title field to give the alert or announcement a title. Add additional text in the Content field.
 
-1. Set additional settings under the *Configuration* section. See [Alerts and Announcements Configuration Reference](#alerts-and-announcements-configuration-reference) for more information.
+1. Set additional settings under the Configuration section. See [Alerts and Announcements Configuration Reference](#alerts-and-announcements-configuration-reference) for more information.
 
 1. Click *Save* when you’re done. Your alert/announcement now appears in the widget.
 
@@ -63,7 +63,7 @@ While creating or editing alerts and announcements, expand the Configuration sec
 
 ![Expand the Configuration section to find more settings for your alert or announcement.](./sending-alerts-and-announcements/images/04.png)
 
-**Distribution Scope:** The scope where the alert/announcement should appear. The default General scope sends the alert/announcements to everyone. Alternatively, you can select your site or specific roles. See [Configuring the Distribution Scope](#configuring-the-distribution-scope) to learn more.
+**Distribution Scope:** The scope where the alert/announcement should appear. The default General scope sends the alert/announcements to everyone in the instance. Alternatively, you can select your site or specific roles. See [Configuring the Distribution Scope](#configuring-the-distribution-scope) to learn more.
 
 **URL:** A URL (optional) to include with the alert/announcement. For example, an announcement about a news story could include a link to the news article. The URL must be valid and begin with `http://` or `https://`.
 
@@ -71,17 +71,17 @@ While creating or editing alerts and announcements, expand the Configuration sec
 
 **Priority:** The announcement's priority. This can be Normal or Important. Note that this is disabled for alerts because alerts are always set to a high priority by default.
 
-**Display Date:** The date the alert/announcement should be displayed. This determines when the alert/announcement is sent and appears in the widget. By default, the *Display Immediately* box is checked. This sets the display date equal to the creation date. Uncheck this box to enter a custom display date. For example, you can create alerts/announcements for display at a later date. This date can be days, weeks, months, or years in the future. Once the Display Immediately box is unchecked, clicking the Display Date field opens the date-picker.
+**Display Date:** The date the alert/announcement should be displayed. This determines when the alert/announcement is sent and appears in the widget. By default, the *Display Immediately* box is checked. This sets the display date equal to the creation date. Uncheck this box to enter a custom display date. For example, you can create alerts/announcements for display at a later date. This date can be days, weeks, months, or years in the future. Uncheck the *Display Immediately* box and click the *Display Date* field to open the date-picker.
 
 **Expiration Date:** The date and time the alert/announcement expires. Once an alert/announcement expires, the widget displays it in the Read tab. Clicking the Expiration Date field opens the date-picker.
 
 ### Configuring the Distribution Scope
 
-Configure the distribution scope to define where the alert/announcement appears. By default, it's set to *General* sending it to everyone. To set the distribution scope,
+Configure the distribution scope to define where the alert/announcement appears. By default, it's set to *General*, which is everyone. To set the distribution scope,
 
 1. [Add an announcement or alert](#creating-alerts-and-announcements) using the application or the widgets.
 
-1. Click the *Distribution Scope* field to see a list of available sites, organizations, user groups, and roles. This list varies depending on the current user.
+1. Click the *Distribution Scope* field to see a list of available sites, organizations, user groups, and roles. This list varies depending on the current user's permissions.
 
    **Sites**: All sites the user belongs to.
 
@@ -101,7 +101,7 @@ You can also configure your Announcements widget to customize the distribution s
 
    ![Use the Customize Announcements Displayed option to restrict the distribution scope for announcements.](./sending-alerts-and-announcements/images/06.gif)
 
-   A new section is now available. You can select tabs to define which available sites, organizations, user groups, and roles are included in the distribution scope. If there are no elements in a category, the tab doesn't appear.
+   A new section appears. You can select tabs to define which available sites, organizations, user groups, and roles are included in the distribution scope. If there are no elements in a category, the tab isn't shown.
 
 1. Select the available options and use the arrows to move them from the Available to the Current column to include the option in the distribution scope.
 
@@ -113,14 +113,13 @@ You can also configure your Announcements widget to customize the distribution s
 
 Users can configure how they'd like to receive announcements.
 
-1. Click on your User profile at the top right and select  *Account Settings*.
+1. Click on your User profile at the top right and select *Account Settings*.
 
 1. Open the *Preferences* tab to find the *Alerts and Announcements Delivery* option.
 
    ![Open the preferences tab to find the settings.](./sending-alerts-and-announcements/images/07.png)
 
-1. Alerts and announcements are always visible from the page on which the widget is configured. Users can choose to
-receive alerts and announcements by email as well. Select between General, News, or Test type.
+1. Alerts and announcements are always visible from the page on which the widget is configured. Users can choose to receive alerts and announcements by email as well. Select between General, News, or Test types.
 
 1. Click *Save* when you're finished.
 
@@ -130,11 +129,11 @@ You can also create roles and assign permissions for users to be able to manage 
 
 1. Open the *Global Menu* (![Global Menu icon](../../images/icon-applications-menu.png)) &rarr; *Control Panel* &rarr; *Roles*.
 
-1. With the *Regular Roles* tab selected, click the *Add* icon (![Add icon](../../images/icon-add.png)). This opens the New Role form.
+1. With the *Regular Roles* tab selected, click *Add* (![Add icon](../../images/icon-add.png)). This opens the New Role form.
 
-1. Name your Role *Announcements*, give it a title and description, and click *Save*.
+1. Name your role *Announcements*, give it a title and description, and click *Save*.
 
-1. Click *Options* (![Options icon](../../images/icon-options.png)) of the Role &rarr; *Edit*.
+1. Click the role's *Options* (![Options icon](../../images/icon-options.png)) &rarr; *Edit*.
 
 1. Open the *Define Permissions* tab.
 
@@ -144,11 +143,11 @@ You can also create roles and assign permissions for users to be able to manage 
 
    Go back to the Define Permissions tab. Navigate to *Site and Asset Library Administration* &rarr; *Applications* &rarr; *Announcements*. Select all the resource permissions and click *Save*.
 
-1. Now any User assigned to this Role can manage alerts and announcements.
+1. Now any user assigned to this role can manage alerts and announcements.
 
 ### Distribution Scope Permissions
 
-Here's a list of necessary permissions for users to publish alerts/announcements to each distribution scope option and where you can find them in the Define Permissions tab:
+Here's a list of necessary permissions users must have to publish alerts/announcements at each distribution scope and where you can find them in the Define Permissions tab:
 
 | Option        | Permission                | Where is the Permission                                                                                 |
 |:--------------|:--------------------------|:--------------------------------------------------------------------------------------------------------|

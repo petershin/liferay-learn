@@ -12,7 +12,7 @@ uuid: 6f717fa5-9cf3-426e-9df3-b59517a62dc7
 
 {bdg-secondary}`Liferay DXP/Portal 7.3+`
 
-Liferay provides integrated tools for translating web content articles, so you can create engaging, localized content for your global users. With these tools, you can manually translate web content or import translations as XLIFF files.
+Liferay provides integrated tools for translating web content articles, so you can create engaging, localized content for your global users. With these tools, you can manually translate web content articles or import translations as XLIFF files.
 
 If desired, you can [enable a custom workflow](./enabling-workflows-for-translations.md) to direct the review and publishing process for translations.
 
@@ -24,9 +24,13 @@ If desired, you can [enable a custom workflow](./enabling-workflows-for-translat
 !!! note
     To manually translate web content, users must have either View and Update permissions for the asset or Translation permissions for one or more languages. See [Managing Permissions for Translation](./managing-translation-permissions.md) for more information.
 
+Use the [translation interface](#manually-translating-web-content-articles-using-the-translation-interface) in the web content article's action menu, or translate its fields while [creating/editing one](#manually-translating-web-content-articles-during-creationedition).
+
+### Manually Translating Web Content Articles Using the Translation Interface
+
 1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)) and navigate to *Content & Data* &rarr; *Web Content*.
 
-1. Click *Actions* (![Actions icon](../../images/icon-actions.png)) for the content you want to translate and select *Translate*.
+1. Select the *Web Content* tab, click *Actions* (![Actions icon](../../images/icon-actions.png)) for the content you want to translate, and select *Translate*.
 
    This redirects you to the translation interface, where you can view the content's original text alongside your translation.
 
@@ -39,61 +43,56 @@ If desired, you can [enable a custom workflow](./enabling-workflows-for-translat
    !!! important
        Users with content Update permissions can translate the original text into any language.
 
-       Users with `translate` permissions can only translate the origin text into languages for which they have permission.
-
-   ![Select the language you want to translate.](./translating-web-content/images/02.png)
+       Users with `Translate` permissions can only translate the origin text into languages for which they have permission.
 
 1. Enter your translation for the available fields.
 
    !!! note
        The friendly URL for translations remains empty unless filled in by the user. If the friendly URL is left empty, the default language's friendly URL is used.
 
-1. Click *Publish* to create a new version of the web content or initiate a workflow, if it's enabled.
+1. Click *Publish* to create a new version of the web content article or initiate a workflow, if it's enabled.
 
    Alternatively, click *Save as Draft* to save and publish your translation later.
 
-## Publishing Translated Web Content Using Localizable Fields
+   ![Use the translation interface to translate your web content article.](./translating-web-content/images/02.gif)
 
-Translated web content in localizable fields can be different structurally from the content displayed in the original language. Liferay does this so your changes don't override content that has been already translated. To see how this works, follow these steps:
+### Manually Translating Web Content Articles During Creation/Edition
 
-1. In Web Content, go to Structures and Click *Add*.
+{bdg-secondary}`Liferay DXP 2024.Q1+/Portal 7.4 GA112+`
 
-1. Create a structure using a repeatable fieldset. For example, add a Text and an Image field to your fieldset. Make them both required and click *Save*.
+!!! important
+    The translation status feature is currently behind a release feature flag (LPS-114700). Read [Release Feature Flags](../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information. Other features may differ without this feature flag.
 
-1. Add the fieldset to your new structure and make it repeatable.
+1. Create or start editing a web content article.
 
-1. In the upper left corner, click the flag icon and click *Manage Translations*.
+1. On the editing page, click the *flag icon + language code* in the upper left corner to see available languages and their translation statuses.
 
-1. Click *Add* (![Add icon.](../../images/icon-add.png)) and add a language of your choice. Click *Done*.
+   There are three available statuses: Not Translated, {bdg-secondary}`Liferay DXP 2024.Q2+` Translating, and Translated.
 
-1. Name your structure and click *Save*.
+   {bdg-secondary}`Liferay DXP 2024.Q2+` The Translating status indicates two numbers, the number of fields that were translated and the total number of fields. It's presented as a badge next to the selected language. Once all fields are translated, the badge changes to Translated.
 
-1. Now navigate to Web Content and click *New*. Select the structure you just created.
+   {bdg-secondary}`Liferay DXP 2024.Q2+` The title and metadata information (i.e. Description and Friendly URL) count as information that must be translated if you want to completely translate your web content article.
 
-1. Enter a value for your text field and select an image.
+!!! tip
+    If you didn't define the field as Localizable, the field and its localization are disabled when translating the web content article.
 
-1. In the upper left corner, click the flag icon and click the language previously chosen as your translation. Notice that the content in the fieldset has not changed. The same happens when you duplicate the fieldset using the default language; the secondary language's content doesn't change. Now change the translation back to the default language and name your web content. Click *Publish*.
+1. Choose a language and translate the fields.
 
-1.  Click *Actions* (![Actions icon](../../images/icon-actions.png)) next to your web content and click *Translate*.
+1. Publish or save the article as a draft to save the modifications.
 
-1. On Translate From in the upper corner, select the language chosen in the structure creation. Click *Publish*.
+!!! note
+    When adding a new repeatable field set to a web content article with existing translations, changes to the default content won't automatically propagate to translations. This prevents unintended overwriting of already translated content.
 
-1. Click your web content to enter edit mode.
+![Translate your web content article while creating/editing it.](./translating-web-content/images/03.gif)
 
-1. In the upper left corner, click the flag icon. See that the secondary language has the Translated message next to it.
+## Translating Web Content Articles Using Third Party Services
 
-![See the Translated message next to the language.](./translating-web-content/images/03.png)
-
-1. Using your default language, click *Duplicate* (![Actions icon.](../../images/icon-actions.png)) once more and enter a value for the text field and select an image.
-
-1. In the upper left corner, click the flag icon and select the translated language. You can see that the content selected for the duplicated fieldset is not present when using this translation.
-
-This behavior frees you to manage your translations independently from the original language.
+If you've enabled Liferay's integration with [Google Cloud Translation](https://cloud.google.com/translate/docs/setup), [Amazon Translate](https://docs.aws.amazon.com/translate/latest/dg/what-is.html), or [Microsoft Translator](https://docs.microsoft.com/en-us/azure/cognitive-services/translator/), you can use them to automatically translate web content. See [Using Third Parties for Translation](./using-third-parties-for-translation.md) for more information.
 
 ## Exporting and Importing Translations
 
 !!! note
-    To translate content page experiences manually, users must have either View and Update permissions for content pages or Translation permissions for one or more languages. See [Managing Translation Permissions](./managing-translation-permissions.md) for more information.
+    To translate content page experiences manually, users must have View and Update permissions for content pages or Translation permissions for one or more languages. See [Managing Translation Permissions](./managing-translation-permissions.md) for more information.
 
 With Liferay, you can export web content for translation as `.xliff` or `.xlf` files. You can send these files to translators and then import the translations together as a `.zip` file or individually as `.xliff` or `.xlf` files.
 
@@ -108,7 +107,7 @@ With Liferay, you can export web content for translation as `.xliff` or `.xlf` f
 
    ![Select Export for Translation.](./translating-web-content/images/04.png)
 
-   In Liferay Portal 7.4 GA26+, you can select multiple articles and click the *Export for Translation* button.
+   {bdg-secondary}`Liferay Portal 7.4 GA26+` You can also select multiple articles and click the *Export for Translation* button.
 
    ![Select multiple articles and click Export for Translation](./translating-web-content/images/05.png)
 
@@ -132,7 +131,7 @@ Liferay generates a ZIP archive that contains an XLIFF file for each selected la
 
    ![Select Import Translation.](./translating-web-content/images/07.png)
 
-   In Liferay Portal 7.4 GA26+, you can import translations for multiple articles at once by clicking the *Actions* button (![Actions Button](../../images/icon-actions.png)) in the Application Bar and selecting *Import Translations*.
+   {bdg-secondary}`Liferay Portal 7.4 GA26+` You can also import translations for multiple articles at once by clicking the *Actions* button (![Actions Button](../../images/icon-actions.png)) in the Application Bar and selecting *Import Translations*.
 
    ![Upload translations for multiple articles.](./translating-web-content/images/08.png)
 
@@ -152,10 +151,6 @@ Liferay generates a ZIP archive that contains an XLIFF file for each selected la
    However, if errors occur during import, Liferay notifies you of the failing files and provides a downloadable CSV error report.
 
    ![If errors occur during import, Liferay notifies you of the failing files and provides a downloadable CSV error report.](./translating-web-content/images/11.png)
-
-## Translating Web Content Using Third Party Services
-
-If you've enabled Liferay's integration with [Google Cloud Translation](https://cloud.google.com/translate/docs/setup), [Amazon Translate](https://docs.aws.amazon.com/translate/latest/dg/what-is.html), or [Microsoft Translator](https://docs.microsoft.com/en-us/azure/cognitive-services/translator/), you can use them to automatically translate web content. See [Using Third Parties for Translation](./using-third-parties-for-translation.md) for more information.
 
 ## Related Topics
 

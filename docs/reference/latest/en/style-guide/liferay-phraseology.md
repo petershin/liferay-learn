@@ -158,15 +158,15 @@ It's hard to keep terminology consistent, so when we find an inconsistency in th
 
 **Common Examples**
 
-| **Wrong**                     | **Right** |
-| :--- | :--- | 
-| backend                   | backend        |
-| frontend                  | frontend       |
+| **Wrong**                 | **Right**       |
+|:--------------------------|:----------------|
+| back-end                  | backend         |
+| front-end                 | frontend        |
 | Javascript (or JS or js)  | JavaScript      |
 | ServiceBuilder            | Service Builder |
 | RESTBuilder               | REST Builder    |
 | openapi                   | OpenAPI         |
-| reindex                   | reindex        |
+| re-index                  | reindex         |
 | [LIFERAY_HOME]            | [Liferay Home]  |
 | out of the box            | out-of-the-box  |
 | Freemarker or Free Marker | FreeMarker      |

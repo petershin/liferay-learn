@@ -10,34 +10,27 @@ Clarity is already using Okta as their identity management system for managing t
 
 ## Revisiting Clarity's Critical Success Factors
 
-In an earlier course, Clarity established several critical success factors for their new project with Liferay. Let's revisit those factors in the context of Liferay's Identity Management and SSO features.
+In an earlier course, Clarity established several [critical success factors](../module-1-getting-started-with-clarity/the-clarity-story.md#critical-success-factors) for their new project with Liferay. Let's revisit those factors in the context of Liferay's Identity Management and SSO features.
 
-1. Non-technical participation &#x2705;
-1. Simplified maintenance (and evolution) &#x2705;
-1. Future proofed and flexible
-1. Increase engagement and user experience through personalization &#x2705;
-1. Risk mitigation with better governance &#x2705;
-1. Lower investment / total cost of ownership &#x2705;
-
-> 1. Non-technical participation &#x2705;
+### Non-Technical Participation
 
 With Liferay, many of these factors are being supported with regards to Identity Management and SSO. One key benefit with Clarity's decision to go with Liferay is that integrating IdM and SSO with Liferay is a *configuration activity*, not a development task. When tasks like integration with IdMs and SSOs can be achieved without development time and effort, we contribute to several of Clarity's critical success factors simultaneously.
 
 Liferay’s extensive support for multiple identity management and single-sign on vendors and protocols ensure that even a non-technical user can easily integrate Liferay with existing identity management systems through configuration and with minimal IT involvement. We’ll be focusing on integration with a single vendor in this training, but the process for other vendors will be very similar and we have extensive documentation for all of the configuration options.
 
-> 2. Simplified maintenance (and evolution) &#x2705;
+### Unified Platform and Simplified Maintenance
 
 By leveraging Clarity’s existing Identity Management solution, we are going to be simplifying the maintenance of employee identity within the platform, and we’ll be ensuring that as employee information is updated by HR, those updates are going to be reflected in Liferay as well.
 
-> 4. Increase engagement and user experience through personalization &#x2705;
+### Increased Engagement through Personalization
 
 Another advantage is that, beyond basic identity management data like name and email address, we can also synchronize a wide range of employee information. This additional information could also be used to segment employees in order to deliver a more personalized experience on the website. This might not be critical for this first phase of building an enterprise website, but for future projects, this will be very important.
 
-> 5. Risk mitigation with better governance &#x2705;
+### Risk Mitigation with Better Governance
 
 Additionally, identity management solutions help to mitigate risks and to ensure better governance by making sure the right employees have the right roles and can access the right information. We’ll be covering more about roles in the next module, but rest assured that Liferay makes it easy to leverage information in an organization’s identity management solution to organize users and simplify the management of their permissions. And of course, when an employee’s time with Clarity is over, it’s important that access to critical systems, such as the website is revoked in a timely manner.
 
-> 6. Lower investment / total cost of ownership &#x2705;
+### Lower Total Cost of Ownership
 
 And lastly, by offloading the majority of identity management to a dedicated identity management system, that is managed by the right people, we’re lowering the cost of managing the Liferay solution by reducing the duplication of effort of managing identity in multiple systems. Also, by relying on integration, we are improving data accuracy. Instead of adding and maintaining users in the system, we can focus our efforts on building a great website experience for our customers!
 

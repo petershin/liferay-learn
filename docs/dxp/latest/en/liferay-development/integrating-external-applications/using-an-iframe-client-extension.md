@@ -14,10 +14,6 @@ taxonomy-category-names:
 
 IFrame client extensions use Liferay's frontend infrastructure to register external applications as `<iframe>` HTML elements. They're added to Liferay pages as widgets. Unlike other frontend client extensions, IFrames do not provide a static resource.
 
-```{warning}
-IFrame client extensions are under development and are currently unsupported in Liferay 7.4.
-```
-
 Start with a client extension from the [sample workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace).
 
 
@@ -27,9 +23,8 @@ To start developing client extensions,
 
 1. Install Java (JDK 8 or JDK 11).
 
-   ```{note}
-   Check the [compatibility matrix](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) for supported JDKs, databases, and environments. See [JVM Configuration](../../installation-and-upgrades/reference/jvm-configuration.md) for recommended JVM settings.
-   ```
+   !!! note
+       Check the [compatibility matrix](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) for supported JDKs, databases, and environments. See [JVM Configuration](../../installation-and-upgrades/reference/jvm-configuration.md) for recommended JVM settings.
 
 1. Download and unzip the sample workspace:
 
@@ -60,9 +55,8 @@ See the [IFrame YAML configuration reference](./using-an-iframe-client-extension
 
 ## Deploy the IFrame Client Extension
 
-```{note}
-To deploy your client extension to Liferay SaaS, use the Liferay Cloud [Command-Line Tool](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool) to run [`lcp deploy`](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool#deploying-to-your-liferay-cloud-environment).
-```
+!!! note
+    To deploy your client extension to Liferay SaaS, use the Liferay Cloud [Command-Line Tool](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool) to run [`lcp deploy`](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool#deploying-to-your-liferay-cloud-environment).
 
 ```{include} /_snippets/run-liferay-portal.md
 ```
@@ -75,9 +69,8 @@ Next, go to the client extension's folder in the sample workspace and run
 
 This builds your client extension and deploys the zip to Liferay's `/deploy` folder.
 
-```{tip}
-To deploy all client extensions in the workspace simultaneously, run the command from the `/client-extensions` folder.
-```
+!!! tip
+    To deploy all client extensions in the workspace simultaneously, run the command from the `/client-extensions` folder.
 
 Confirm the deployment in your Liferay instance's console:
 

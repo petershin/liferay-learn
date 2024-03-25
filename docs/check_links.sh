@@ -60,7 +60,9 @@ function check_includes {
 		else
 			link_type="Include"
 
-			_LINK_FILE_NAME=$(echo $(git rev-parse --show-toplevel)/docs/${1}${_LINK_FILE_NAME} | sed 's,//,/,g')
+			local snippets_dir_name=$(git rev-parse --show-toplevel)/docs/$(echo ${1} | cut -d'/' -f1-3)
+
+			_LINK_FILE_NAME=${snippets_dir_name}${_LINK_FILE_NAME}
 		fi
 
 		if ! ls "${_LINK_FILE_NAME}"

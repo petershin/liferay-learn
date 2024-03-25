@@ -1,6 +1,4 @@
 ---
-toc: 
-  - ./creating-a-basic-custom-element/custom-element-yaml-configuration-reference.md
 uuid: fdced878-aea0-40b8-9959-828e9787d373
 taxonomy-category-names:
 - Development and Tooling
@@ -14,174 +12,224 @@ taxonomy-category-names:
 
 Custom element client extensions use Liferay's frontend infrastructure to register external, remote applications with the Liferay platform and render them as widgets.
 
-```{warning}
-Deploying Custom elements or IFrames like other types of client extensions is a **beta feature** in Liferay 7.4. This tutorial deploys custom element remote applications differently, and it is still the recommended approach until a future update.
-```
+!!! note
+    Custom Element client extensions can use any technology, regardless of how it's built, packaged, or hosted.
 
-Here you'll create a basic remote application using Liferay's [`create_custom_element.sh`](https://raw.githubusercontent.com/liferay/liferay-portal/master/tools/create_custom_element.sh) script. After the application is generated, you'll compile its code and host its `.js` and `.css` files. Once hosted, you'll copy each file's URLs and use them to create a custom element. Finally, you can deploy the application to site pages as a widget.
+## Prerequisites
 
-![Use the create_custom_element.sh script to create a simple React application.](./creating-a-basic-custom-element/images/01.png)
+To start developing client extensions,
 
-```{note}
-Custom element client extensions can use any technology, regardless of how it's built, packaged, or hosted. This tutorial only offers a sample custom element application using React.
-```
+1. Install Java (JDK 8 or JDK 11).
 
-Running `create_custom_element.sh` requires the latest versions of [Node.JS](https://nodejs.org/), [NPM](https://www.npmjs.com/), and [YARN](https://classic.yarnpkg.com/). Before proceeding, ensure these tools are installed.
+   !!! note
+       Check the [compatibility matrix](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) for supported JDKs, databases, and environments. See [JVM Configuration](../../installation-and-upgrades/reference/jvm-configuration.md) for recommended JVM settings.
 
-## Run the `create_custom_element.sh` Script
+1. Download and unzip the sample workspace:
 
-When calling `create_custom_element.sh`, you must provide a valid HTML element name and specify the desired JavaScript framework (i.e., React or Vue).
-
-Run this command to generate the React application's code:
-
-```bash
-curl -Ls https://github.com/liferay/liferay-portal/raw/master/tools/create_custom_element.sh | bash -s h5v7-custom-element react
-```
-
-This calls the script with two arguments: a custom HTML element name (`h5v7-custom-element`) and the desired JavaScript framework (`react`).
-
-When finished running, the script automatically creates a new React application with these elements in a folder named `h5v7-custom-element`:
-
-```bash
-h5v7-custom-element
-├── node_modules
-├── README.md
-├── package.json
-├── public
-│   └── index.html
-├── src
-│   ├── common
-│   │   ├── services
-│   │   │   └── liferay
-│   │   │       ├── api.js
-│   │   │       └── liferay.js
-│   │   └── styles
-│   │       ├── hello-world.scss
-│   │       ├── index.scss
-│   │       └── variables.scss
-│   ├── index.js
-│   └── routes
-│       ├── hello-bar
-│       │   ├── components
-│       │   └── pages
-│       │       └── HelloBar.js
-│       ├── hello-foo
-│       │   ├── components
-│       │   └── pages
-│       │       └── HelloFoo.js
-│       └── hello-world
-│           ├── components
-│           └── pages
-│               └── HelloWorld.js
-└── yarn.lock
-```
-
-### Understanding the `index.js` File
-
-   ```{literalinclude} ./creating-a-basic-custom-element/resources/liferay-h5v7.zip/h5v7-custom-element/src/index.js
-       :language: js
+   ```bash
+   curl -o com.liferay.sample.workspace-latest.zip https://repository.liferay.com/nexus/service/local/artifact/maven/content\?r\=liferay-public-releases\&g\=com.liferay.workspace\&a\=com.liferay.sample.workspace\&\v\=LATEST\&p\=zip
    ```
 
-The generated `index.js` file includes two customizations necessary for using the application as a Liferay custom element remote application.
+   ```bash
+   unzip com.liferay.sample.workspace-latest.zip
+   ```
 
-* `WebComponent`: On line 21, the application is declared a `WebComponent` so it can connect to Liferay's framework.
-* `ELEMENT_ID`: On line 30, `ELEMENT_ID` is set to `h5v7-custom-element`, instead of the conventional `<div id="root" />`. This is because a remote application's HTML Element Name must match the application's `ELEMENT_ID`, and `<div id="root" />` does not work for this purpose.
+Now you have the tools to deploy your first Custom Element client extension.
 
-### Understanding the React Routes
+## Examine and Modify the Client Extension
 
-The generated code includes three routes: `hello-world` (default), `hello-foo`, and `hello-bar`. Routes are alternative sets of code that you can use when running an application. See [Using Routes with Custom Elements](./using-routes-with-custom-elements.md) for a basic example.
+The Custom Element client extension is in the sample workspace's `client-extensions/liferay-sample-custom-element-1/` folder. It's defined in the `client-extension.yaml` file:
 
-## Building the React Application
+```yaml
+liferay-sample-custom-element-1:
+   cssURLs:
+      - style.css
+   friendlyURLMapping: vanilla-counter
+   htmlElementName: vanilla-counter
+   instanceable: false
+   name: Liferay Sample Custom Element 1
+   portletCategoryName: category.client-extensions
+   type: customElement
+   urls:
+      - index.js
+   useESM: false
+```
 
-After running `create_custom_element.sh`, navigate to the new `h5v7-custom-element` folder and build the application:
+The client extension has the ID `liferay-sample-custom-element-1` and contains the key configurations for a Custom Element client extension, including the `type` and the `url` property that defines the JavaScript resource file's location. See the [Custom Element YAML configuration reference](./creating-a-basic-custom-element/custom-element-yaml-configuration-reference.md) for more information on the available properties.
+
+It also contains the `assemble` block:
+
+```yaml
+   assemble:
+      - from: assets
+      into: static
+```
+
+This specifies that everything in the `assets/` folder should be included as a static resource in the built client extension `.zip` file. The JavaScript and CSS files in a client extension are used as static resources in Liferay.
+
+The `assets/index.js` file contains this code that defines a custom HTML element named 'vanilla-counter' that represents a simple counter component. It creates buttons to increment and decrement the counter, displays the current counter value, and shows the portlet internal route based on the URL. Additionally, event listeners are attached for button clicks, and methods are provided to handle counter updates and route information.
+
+```javascript
+(function () {
+   // Enable strict mode for error handling.
+   'use strict';
+
+   // Define a custom HTML element as a subclass of HTMLElement.
+   class VanillaCounter extends HTMLElement {
+      // Constructor function to initialize the element.
+      constructor() {
+         super(); // Call the constructor of the superclass (HTMLElement).
+
+         // Initialize instance variables.
+         this.friendlyURLMapping = this.getAttribute('friendly-url-mapping');
+         this.value = 0;
+
+         // Create DOM elements for counter, buttons, and route.
+         this.counter = document.createElement('span');
+         this.counter.setAttribute('class', 'counter');
+         this.counter.innerText = this.value;
+
+         this.decrementButton = document.createElement('button');
+         this.decrementButton.setAttribute('class', 'decrement');
+         this.decrementButton.innerText = '-';
+
+         this.incrementButton = document.createElement('button');
+         this.incrementButton.setAttribute('class', 'increment');
+         this.incrementButton.innerText = '+';
+
+         // Create a <style> element to apply CSS styles.
+         const style = document.createElement('style');
+         style.innerHTML = `
+            button {
+               height: 24px;
+               width: 24px;
+            }
+
+            span {
+               display: inline-block;
+               font-style: italic;
+               margin: 0 1em;
+            }
+         `;
+
+         // Create a <div> element to display portlet route information
+         this.route = document.createElement('div');
+         this.updateRoute();
+
+         // Create a root <div> element to hold all elements.
+         const root = document.createElement('div');
+         root.setAttribute('class', 'portlet-container');
+         root.appendChild(style);
+         root.appendChild(this.decrementButton);
+         root.appendChild(this.incrementButton);
+         root.appendChild(this.counter);
+         root.appendChild(this.route);
+
+         // Attach the shadow DOM to the custom element.
+         this.attachShadow({mode: 'open'}).appendChild(root);
+
+         // Bind event handlers to the current instance.
+         this.decrement = this.decrement.bind(this);
+         this.increment = this.increment.bind(this);
+      }
+
+      // Called when the custom element is added to the DOM.
+      connectedCallback() {
+         this.decrementButton.addEventListener('click', this.decrement);
+         this.incrementButton.addEventListener('click', this.increment);
+      }
+
+      // Handles the decrement button click event.
+      decrement() {
+         this.counter.innerText = --this.value;
+      }
+
+      // Called when the custom element is removed from the DOM.
+      disconnectedCallback() {
+         this.decrementButton.removeEventListener('click', this.decrement);
+         this.incrementButton.removeEventListener('click', this.increment);
+      }
+
+      // Handles the increment button click event.
+      increment() {
+         this.counter.innerText = ++this.value;
+      }
+
+      // Method to update the portlet route information based on the current URL
+      updateRoute() {
+         const url = window.location.href;
+         const prefix = `/-/${this.friendlyURLMapping}/`;
+         const prefixIndex = url.indexOf(prefix);
+         let route;
+
+         if (prefixIndex === -1) {
+            route = '/';
+         } else {
+            route = url.substring(prefixIndex + prefix.length - 1);
+         }
+
+         this.route.innerHTML = `<hr><b>Portlet internal route</b>: ${route}`;
+      }
+   }
+
+   // Check if the custom element has already been defined
+   if (!customElements.get('vanilla-counter')) {
+      // Define the custom element with the tag name 'vanilla-counter'
+      customElements.define('vanilla-counter', VanillaCounter);
+   }
+})();
+```
+
+Other Custom Element client extension samples are available through the sample workspace using different frameworks/programming languages/libraries (e.g., Angular, JavaScript, and React). Try deploying and using them too.
+
+Now, deploy the client extension.
+
+## Deploy the Client Extension to Liferay
+
+```{include} /_snippets/run-liferay-portal.md
+```
+
+Once Liferay starts, run this command from the client extension's folder in the sample workspace:
 
 ```bash
-cd h5v7-custom-element
+../../gradlew clean deploy -Ddeploy.docker.container.id=$(docker ps -lq)
 ```
 
-```bash
-yarn build
+This builds your client extension and deploys the zip to Liferay's `deploy/` folder.
+
+!!! note
+    To deploy your client extension to Liferay SaaS, use the Liferay Cloud [Command-Line Tool](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool) to run [`lcp deploy`](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool#deploying-to-your-liferay-cloud-environment).
+
+!!! tip
+    To deploy all client extensions in the workspace simultaneously, run the command from the `client-extensions/` folder.
+
+Confirm the deployment in your Liferay instance's console:
+
+```
+STARTED liferaysamplecustomelement1_7.4.13
 ```
 
-This command creates an optimized production build, which includes the `.js` and `.css` files necessary for running the application.
+Now that your client extension is deployed, check if the widget is working properly.
 
-Before proceeding, confirm the code has compiled successfully and note the application's `.js` and `.css` files.
+## Add the Custom Element Client Extension as a Widget
 
-```
-Creating an optimized production build...
-Compiled successfully.
+The Custom Element is added to a page as a widget.
 
-File sizes after gzip:
+1. Click *Edit* (![Edit](../../images/icon-edit-pencil.png)) at the top of any page.
 
-  43.51 kB  build/static/js/main.114dde4a.js
-  121 B     build/static/css/main.9877909d.css
-```
+1. Add the widget to the page. In the Fragments and Widgets sidebar (![Fragments and Widgets](../../images/icon-plus.png)), click *Widgets*.
 
-These files must be [hosted](#hosting-the-application-files) in a location accessible to Liferay. They can be hosted on a remote server or a data storage system optimized for serving static resources. For demonstration purposes, this example uploads them to Liferay's Document Library and hosts them using WebDAV URLs.
+1. Find the Client Extensions &rarr; Liferay Sample Custom Element 1 widget and drag it onto the page. Click *Publish*.
 
-```{tip}
-Unique file names are generated for every build. When testing your custom applications, remember to update your `.js` and `.css` files after builds.
-```
+   ![Drag the Liferay Sample Custom Element 1 onto a page.](./creating-a-basic-custom-element/images/01.png)
 
-## Hosting the Application Files
+Confirm the widget app is working by using the buttons to increase/decrease the counter.
 
-For demonstration purposes this tutorial hosts the application’s static resources in Liferay’s Document Library. In a production environment, you should host the application’s files on a server optimized for hosting static resources.
-
-```{include} /_snippets/run-liferay-dxp.md
-```
-
-Then, follow these steps:
-
-1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)), expand *Content & Data*, and go to *Documents and Media*.
-
-1. Click *Add* (![Add Button](../../images/icon-add.png)) and select *Multiple Files Upload*.
-
-1. Drag and drop the `.js` and `.css` files into the upload area.
-
-   Alternatively, use *Select Files* to upload them.
-
-   ![Upload the .js and .css files to the Liferay Document Library.](./creating-a-basic-custom-element/images/02.png)
-
-1. Click *Publish*.
-
-This adds the files to the Document Library and assigns them unique URLs, which you'll use to create the remote application.
-
-To view each file's URL, click the *Info* icon (![Info Icon](../../images/icon-information.png)) and select a file. Copy each file's *WebDAV URL* and save them for use in the next step.
-
-![Copy each file's WebDAV URL.](./creating-a-basic-custom-element/images/03.png)
-
-For example,
-
-* `http://localhost:8080/webdav/guest/document_library/main.114dde4a.js`
-* `http://localhost:8080/webdav/guest/document_library/main.9877909d.css`
-
-## Registering the Application with Liferay
-
-1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), click the *Applications* tab, and go to *Remote Apps*.
-
-1. Click *Add* (![Add Button](../../images/icon-add.png)).
-
-1. Enter these values:
-
-   | Field | Value |
-   | :--- | :--- |
-   | Name | H5V7-Custom-Element |
-   | Type | Custom Element |
-   | HTML Element Name | `h5v7-custom-element` |
-   | URL | WebDAV URL for the `.js` file |
-   | CSS URL | WebDAV URL for the `.css` file |
-   | Portlet Category Name | Remote Apps |
-
-1. Click *Save*.
-
-Once saved, Liferay creates a widget named H5V7-Custom-Element, which you can deploy to site pages like other page widgets. This widget appears under the selected Portlet Category Name.
-
-![Deploy the H5V7-Custom-Element widget to site pages.](./creating-a-basic-custom-element/images/04.png)
+You have successfully used a Custom Element client extension in Liferay. Next, try using other Custom Element client extension samples located in the sample workspace or deploying other client extension types.
 
 ## Related Topics
 
-* [Custom Element YAML Configuration Reference](./creating-a-basic-custom-element/custom-element-yaml-configuration-reference.md)
-* [Customizing Liferay's Look and Feel](../customizing-liferays-look-and-feel.md)
-* [Integrating External Applications](../integrating-external-applications.md)
-* [Using Routes with Custom Elements](./using-routes-with-custom-elements.md)
-* [Client Extensions UI Reference](../customizing-liferays-look-and-feel/client-extensions-ui-reference.md)
+- [Custom Element YAML Configuration Reference](./creating-a-basic-custom-element/custom-element-yaml-configuration-reference.md)
+- [Integrating External Applications](../integrating-external-applications.md)
+- [Using an Editor Config Contributor Client Extension](../customizing-liferays-look-and-feel/using-an-editor-config-contributor-client-extension.md)
+- [Client Extensions UI Reference](../customizing-liferays-look-and-feel/client-extensions-ui-reference.md)

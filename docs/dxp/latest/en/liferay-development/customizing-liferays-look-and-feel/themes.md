@@ -21,9 +21,8 @@ Themes are available and used out-of-the-box on any Site you create. There are a
 
 Themes are one of the most broad and flexible ways to add customizations, in the hierarchy of ways to design your Site's appearance. Themes are used for providing the most foundational basis for your Site that more specific tools (such as [Master Pages](../../site-building/creating-pages/defining-headers-and-footers/master-page-templates.md) and [Style Books](../../site-building/site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md)) can build on top of. However, you may also use themes to add more customizations that are not possible with those other methods.
 
-```{warning}
-Adding customizations to your site through a theme can come with increased maintenance when upgrading from one version of Liferay to another. When possible, manage your site's appearance through the use of [Master Pages Templates](../../site-building/creating-pages/defining-headers-and-footers/master-page-templates.md) and [Style Books](../../site-building/site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md).
-```
+!!! warning
+    Adding customizations to your site through a theme can come with increased maintenance when upgrading from one version of Liferay to another. When possible, manage your site's appearance through the use of [Master Pages Templates](../../site-building/creating-pages/defining-headers-and-footers/master-page-templates.md) and [Style Books](../../site-building/site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md).
 
 ## Developing Themes
 
@@ -41,9 +40,8 @@ Themes are also a complement to [Page Templates](../../site-building/creating-pa
 
 For example, you can [embed widgets in your theme](./themes/theme-development/working-with-templates/embedding-widgets-via-templates.md) to make them a permanent fixture of your Site's pages.
 
-```{note}
-You can also create templates for your pages using [Master Pages](../../site-building/creating-pages/defining-headers-and-footers/master-page-templates.md) or [Page Templates](../../site-building/creating-pages/adding-pages/creating-a-page-template.md).
-```
+!!! note
+    You can also create templates for your pages using [Master Pages](../../site-building/creating-pages/defining-headers-and-footers/master-page-templates.md) or [Page Templates](../../site-building/creating-pages/adding-pages/creating-a-page-template.md).
 
 ### Bundling Resources
 
@@ -55,9 +53,8 @@ Resources may be bundled into your theme or from other sources to bring together
 
 * The Resources Importer<!--Add link when available--> uses Site Templates to import files and content necessary to implement a theme.
 
-```{warning}
-The Resources Importer is deprecated as of Liferay DXP 7.1.
-```
+!!! warning
+    The Resources Importer is deprecated as of Liferay DXP 7.1.
 
 ### Modifying Behavior
 
@@ -67,7 +64,6 @@ Themes are also a powerful tool for modifying the behavior of different parts of
 
 * You can set variable values<!--Add link when available--> with your theme to influence the behavior of existing functionality in DXP.
 
-<<<<<<< HEAD:docs/dxp/latest/en/liferay-development/customizing-liferays-look-and-feel/themes.md
 * You can add [token definitions](../../site-building/site-appearance/style-books/developer-guide/frontend-token-definitions.md) that are used to define categories for styling with [Style Books](../../site-building/site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md).
 
 ## Upgrading Themes

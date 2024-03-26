@@ -12,9 +12,8 @@ Liferay DXP supports 50 languages out-of-the-box. Each locale has its own [langu
 
 When you create an application with custom language keys, it's tedious and difficult to translate them for all these different languages. Fortunately, you can use Liferay's Language Builder tool to generate translations automatically. Language Builder generates translations using Microsoft's Translator API.
 
-```{note}
-The accuracy and correctness of machine translation can vary from language to language. It is up to you on how to make use of these generated translations.
-```
+!!! note
+   The accuracy and correctness of machine translation can vary from language to language. It is up to you on how to make use of these generated translations.
 
 ## See the Sample Project
 
@@ -39,7 +38,7 @@ Then, follow these steps:
    microsoft.translator.subscription.key={your unique key}
    ```
 
-   Note for Language Builder to work, you need to obtain your own [Microsoft Translator subscription key](https://www.microsoft.com/en-us/translator/business/translator-api/). 
+   Note for Language Builder to work, you need to obtain your own [Microsoft Translator subscription key](https://www.microsoft.com/en-us/translator/business/translator-api/).
 
 1. From the module root, run Language Builder.
 
@@ -57,9 +56,9 @@ Then, follow these steps:
 
 The sample project has one language key in the `Language.properties` file. Add as many language keys as you need for your application, then run Language Builder.
 
-To deploy the language keys to Liferay, see [Overriding Global Language Keys](../../../liferay-internals/extending-liferay/overriding-global-language-translations.md). The instructions are the same whether overriding existing keys or adding new keys. 
+To deploy the language keys to Liferay, see [Overriding Global Language Keys](../../../liferay-internals/extending-liferay/overriding-global-language-translations.md). The instructions are the same whether overriding existing keys or adding new keys.
 
-If you want to exclude some languages from being translated automatically, use the `excludedLanguageIds` property in your project's `build.gradle` file. For example, to include French, 
+If you want to exclude some languages from being translated automatically, use the `excludedLanguageIds` property in your project's `build.gradle` file. For example, to exclude French,
 
 ```properties
 buildLang {

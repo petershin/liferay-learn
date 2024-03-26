@@ -41,9 +41,11 @@ The Default template:
 ![The default search bar layout.](./using-search-widget-display-templates/images/04.png)
 
 The Left Aligned Icon Layout template:
-<!-- mention suggestions -->
 
 ![The left aligned search bar layout.](./using-search-widget-display-templates/images/05.png)
+
+!!! Note
+    The Left Aligned Icon Layout template does not support [search bar suggestions](./search-bar-suggestions.md).
 
 ### Search Facets
 
@@ -63,8 +65,7 @@ The Cloud Layout template is available for the Tag Facet and Category Facet widg
 
 ![The cloud search facet layout.](./using-search-widget-display-templates/images/09.png)
 
-The Vocabulary Layout template is available for the Category Facet widget:
-<!-- link to cat facet docs on this -->
+The Vocabulary Layout template is available for the [Category Facet widget](./search-facets/category-facet.md):
 
 ![The vocabulary layout is available for the Category Facet widget.](./using-search-widget-display-templates/images/10.png)
 

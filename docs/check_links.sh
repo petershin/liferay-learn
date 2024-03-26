@@ -10,6 +10,8 @@ function check_grids {
 		if ! ls "${_LINK_FILE_NAME}"
 		then
 			echo_broken_link "Grid link"
+
+			fix_link ${@}
 		fi
 	done
 }
@@ -77,25 +79,27 @@ function check_landing_pages {
 
 	for landing_page_reference in $(ag --no-filename --no-numbers "\:file\:.*landing\.html" ${_MARKDOWN_FILE_NAME})
 	do
-		local landing_page_link_file_name=$(echo ${landing_page_reference} | sed 's/\:file\://g' | sed 's/\ //g')
+		_LANDING_PAGE_LINK_FILE_NAME=$(echo ${landing_page_reference} | sed 's/\:file\://g' | sed 's/\ //g')
 
 		local link
 
-		for link in $(ag --no-filename "url\:" ${landing_page_link_file_name})
+		for link in $(ag --no-filename "url\:" ${_LANDING_PAGE_LINK_FILE_NAME})
 		do
 			if [[ ${link} != *"https://"* ]]
 			then
-				local link_file_name=$(echo ${link} \
+				_LINK_FILE_NAME=$(echo ${link} \
 					| sed "s/.*\('\|\"\)\(.*\)\('\|\"\|\#\).*/\2/g" \
-					| sed 's/\(.*\)#.*/\1/g' | sed 's/\.html/\.md/g' \
+					| sed 's/\(.*\)#.*/\1/g' \
 				)
 
-				if ! ls "${link_file_name}"
+				if ! ls "${_LINK_FILE_NAME/.html/.md}"
 				then
 					echo "Landing page link:"
-					echo "    Landing page reference: ${landing_page_link_file_name}"
-					echo "    Link: ${link_file_name/.md/.html}"
+					echo "    Landing page reference: ${_LANDING_PAGE_LINK_FILE_NAME}"
+					echo "    Link: ${_LINK_FILE_NAME/.md/.html}"
 					echo
+
+					fix_link ${@} landing
 				fi
 			fi
 		done
@@ -114,6 +118,8 @@ function check_markdown {
 				if ! ls "${_LINK_FILE_NAME}"
 				then
 					echo_broken_link "Markdown link"
+
+					fix_link ${@}
 				fi
 			fi
 		done
@@ -130,6 +136,8 @@ function check_tocs {
 		if ! ls "${_LINK_FILE_NAME}"
 		then
 			echo_broken_link "TOC link"
+
+			fix_link ${@}
 		fi
 	done
 }
@@ -153,6 +161,41 @@ function echo_broken_link {
 	echo
 }
 
+function fix_link {
+	if [[ ${2} == "--fix" ]]
+	then
+		local link_file_basename=$(echo ${_LINK_FILE_NAME} | rev | cut -d'/' -f1 | rev)
+
+		local correct_link_file_name=$(ag -g "/${link_file_basename/.html/.md}" "${_DOCS_DIR_NAME}/${_LANGUAGE_DIR_NAME}" 2>/dev/null)
+
+		local replace_in_file_name=${_MARKDOWN_FILE_NAME}
+
+		if [[ ${correct_link_file_name} == *".md"*".md"* ]]
+		then
+			echo "    WARNING: Cannot fix because ${link_file_basename} is not unique in $_LANGUAGE_DIR_NAME}."
+			echo
+		elif [[ ${correct_link_file_name} ]]
+		then
+			correct_link_file_name=$(realpath --relative-to=${PWD} ${correct_link_file_name})
+
+			if [[ ${3} == "landing" ]]
+			then
+				correct_link_file_name=$(echo ${correct_link_file_name} | sed 's/\.md/\.html/g')
+
+				replace_in_file_name=${_LANDING_PAGE_LINK_FILE_NAME}
+			fi
+
+			sed -i "s,(${_LINK_FILE_NAME}),(${correct_link_file_name}),g" ${replace_in_file_name}
+			echo "    Fixed: ${correct_link_file_name}"
+			echo
+
+		else
+			echo "    WARNING: Cannot fix ${_LINK_FILE_NAME} in ${replace_in_file_name}."
+			echo
+		fi
+	fi
+}
+
 function ls {
 	command ls "$@" > /dev/null 2>&1
 }
@@ -162,10 +205,27 @@ function main {
 
 	if [ -z ${1} ]
 	then
-		echo "Usage: ./check_links.sh dxp/latest/en"
+		echo "To report broken links: ./check_links.sh dxp/latest/en"
+		echo
+		echo "To report and attempt fixing broken links: ./check_links.sh dxp/latest/en --fix"
 
 		exit 0
 	fi
+	if [[ ${2} == "--fix" ]]
+	then
+		if [[ $(git status --short -- ${1}) ]]
+		then
+			echo "WARNING: There are uncommitted changes. Don't run with --fix unless there's nothing reported by 'git status --short -- ${1}'."
+
+			git status --short -- ${1}
+
+			exit 0
+		fi
+	fi
+
+	_DOCS_DIR_NAME=$(pwd ./)
+
+	_LANGUAGE_DIR_NAME=$(echo ${1} | cut -d'/' -f1-3)
 
 	local markdown_dir_name
 
@@ -175,12 +235,12 @@ function main {
 
 		for _MARKDOWN_FILE_NAME in $(find . -maxdepth 1 -name "*.md" -printf '%f\n')
 		do
-			check_grids
-			check_images ${1}
-			check_includes ${1}
-			check_landing_pages
-			check_markdown
-			check_tocs
+			check_grids ${@}
+			check_images
+			check_includes ${@}
+			check_landing_pages ${@}
+			check_markdown ${@}
+			check_tocs ${@}
 		done
 
 		popd > /dev/null

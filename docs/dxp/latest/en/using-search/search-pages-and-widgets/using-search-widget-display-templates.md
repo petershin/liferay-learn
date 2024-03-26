@@ -14,13 +14,11 @@ The search widgets' default views are useful, but often you need a different des
 
 From [each widget's](../search-configuration-reference.md#search-widgets) configuration, use the Display Template field to choose from available configurations. Available templates include those created specifically for the widget you're configuring, in the Global site or the current site.
 
-SCREENSHOT of Display Template in widget configuration
-
-From Instance Settings you can change the default template for a widget, so that when you add the widget to a page it defaults to the configured template.
-
-SCREENSHOT of Instance Settings (or a mash-up for these 2 screenshots to not take up too much space)
+From Instance Settings you can change the default template for a widget, so that when you add the widget to a page it defaults to the configured template. Doing this requires getting the widget template's key from the template editor.
 
 ![You can set the default widget template in the instance scope and override it in the widget scope.](./using-search-widget-display-templates/images/01.png)
+
+There are several out-of-the-box templates you can choose from.
 
 ## Using the Out-of-the-Box Templates
 
@@ -30,64 +28,86 @@ You can use the out-of-the-box widget templates as-is or use them as the base fo
 
 The Default template:
 
+![The default custom filter layout.](./using-search-widget-display-templates/images/02.png)
 
 The Compact Layout template:
+
+![The compact custom filter layout.](./using-search-widget-display-templates/images/03.png)
 
 ### Search Bar
 
 The Default template:
 
+![The default search bar layout.](./using-search-widget-display-templates/images/04.png)
+
 The Left Aligned Icon Layout template:
 <!-- mention suggestions -->
 
+![The left aligned search bar layout.](./using-search-widget-display-templates/images/05.png)
+
 ### Search Facets
 
-The Default template is available for all search facet widgets:
-All
+A Default template is available for all search facet widgets:
 
-The Compact Layout template is available for all search facet widgets:
-All
+![The default search facet layout.](./using-search-widget-display-templates/images/07.png)
+
+The Compact Layout template is available for all but the Modified facet widget:
+
+![The compact search facet layout.](./using-search-widget-display-templates/images/06.png)
 
 The Label Layout template is available for all but the Modified facet widget:
 
+![The label search facet layout template.](./using-search-widget-display-templates/images/08.png)
+
 The Cloud Layout template is available for the Tag Facet and Category Facet widgets:
+
+![The cloud search facet layout.](./using-search-widget-display-templates/images/09.png)
 
 The Vocabulary Layout template is available for the Category Facet widget:
 <!-- link to cat facet docs on this -->
 
+![The vocabulary layout is available for the Category Facet widget.](./using-search-widget-display-templates/images/10.png)
+
 The Radio Layout template is available for the Modified Facet:
-Modified facet
 
-
-<!-- can we cover these in one section? -->
+![The radio layout is available for the Modified Facet widget.](./using-search-widget-display-templates/images/11.png)
 
 ### Search Results
 
 The default template is the _List Layout_, displays results in a paginated list.
 
+![The default search results layout.](./using-search-widget-display-templates/images/12.png)
+
 Use the _Card Layout_ to display results in rows of cards.
 
+![The card search results layout.](./using-search-widget-display-templates/images/13.png)
+
 Use the _Compact Layout_ to display just a list of titles.
+
+![The compact search results layout.](./using-search-widget-display-templates/images/14.png)
 
 ### Similar Results
 
 The Compact Layout template is the default:
 
+![The compact similar results layout.](./using-search-widget-display-templates/images/15.png)
 
 The List Layout template:
 
+![The list similar results layout.](./using-search-widget-display-templates/images/16.png)
 
 The Card Layout template:
 
+![The card similar results layout.](./using-search-widget-display-templates/images/17.png)
 
 ## Creating a Search Widget Template
 
-To create a widget template for the Search Results widget,
+To create a widget template,
 
 1. Go to the site where you want to use the template.
 
    !!! note
-       The out-pf-the-box widget templates are all added to the Global site. You can do the same or add yours to a specific site.
+       The out-of-the-box widget templates are all added to the Global site. You can do the same or add yours to a specific site.
 
 1. Open _Site_ &rarr; _Design_ &rarr; _Templates_.
 
@@ -95,9 +115,14 @@ To create a widget template for the Search Results widget,
 
 1. Click _New_ &rarr; _More_.
 
-1. Choose the first _Search Results Template_ from the list. The second one is for the Commerce Search Results widget.
+1. From the list of widgets, choose the widget your template should target. 
+
+   !!! Note
+       The first listing for _Search Results Template_ targets the Search Results widget, while the second listing with the same name targets the Commerce Search Results widget.
 
 1. Using the editors predefined variables, create your template using FreeMarker.
+
+1. _Save_ the template when finished.
 
 Once you save the template, you can select it from the Search Results widget.
 
@@ -111,21 +136,19 @@ To copy an existing template,
 
 1. Click the _Widget Templates_ tab.
 
-1. Search for the title of the template you want to copy. For example, search for _compact_ if you're hoping to start with the FreeMarker for the Compact Layout template. Click _Actions_ (![Actions](../../images/icon-actions.png)) for the result with the Type value _Search Results Template_.
+1. Search for the title of the template you want to copy. For example, search for _compact_ if you're hoping to start with the FreeMarker for the Compact Layout template. 
 
-   SCREENSHOT
+1. When you find the entry for the widget you're interested in, click _Actions_ (![Actions](../../images/icon-actions.png)) &rarr; _Make a Copy_.
 
-1. Using the editor's predefined variables and your own FreeMarker.
+   ![You can copy an existing template.](./using-search-widget-display-templates/images/19.png)
 
-   SCREENSHOT
+1. Using the editor's predefined variables and your own FreeMarker, create the template.
 
-## Search Results Widget Display Templates
+   ![Use the editor to create the template.](./using-search-widget-display-templates/images/20.png)
 
-The Search Results widget's out-of-the-box list view is useful, but you can choose a different view or create your own if needed. See [Styling Widgets with Widget Templates](../../site-building/displaying-content/additional-content-display-options/styling-widgets-with-widget-templates.md) to learn about creating templates for a widget's display.
+1. Click _Save_.
 
-From the [Search Results widget's configuration](./search-results/configuring-the-search-results-widget.md) screen, you can choose an available template for the Search Results widget.
-
-## Example: Extending the Compact Layout Template
+## Example: Extending the Search Results Widget's Compact Layout Template
 
 In this example, extend the Compact Layout template to include the last modified date of the result:
 
@@ -133,9 +156,9 @@ In this example, extend the Compact Layout template to include the last modified
 
 1. Search for _compact_, then click _Actions_ (![Actions](../../images/icon-actions.png)) &rarr; _Make a Copy_ for the Search Results Template.
 
-1. Name it _Compact with Modified Date_.
+1. Name it _Compact with Details_.
 
-1. Your copy appears in the list with the others, so click _Compact with Modified Date_ to begin editing.
+1. Your copy appears in the list with the others, so click _Compact with Details_ to begin editing.
 
 1. Replace the list item with this code:
 
@@ -157,5 +180,9 @@ In this example, extend the Compact Layout template to include the last modified
    ```
 1. Click _Save_.
 
+![It's convenient to start with a copy of an existing template.](./using-search-widget-display-templates/images/18.png)
 
 ## Related Topics
+
+* [Search Configuration Reference](../search-configuration-reference.md)
+* [Styling Widgets with Widget Templates](../../site-building/displaying-content/additional-content-display-options/styling-widgets-with-widget-templates.md)

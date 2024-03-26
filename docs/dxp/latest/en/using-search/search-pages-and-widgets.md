@@ -6,6 +6,7 @@ toc:
   - ./search-pages-and-widgets/similar-results.md
   - ./search-pages-and-widgets/search-insights.md
   - ./search-pages-and-widgets/search-bar-suggestions.md
+  - ./search-pages-and-widgets/using-search-widget-display-templates.md
 taxonomy-category-names:
 - Search
 - Search Pages and Widgets

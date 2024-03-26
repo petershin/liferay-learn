@@ -48,9 +48,8 @@ You can preview your content using the selected default template or display page
 
    ![The default template has a preview button that looks like an eye.](./adding-a-basic-web-content-article/images/04.png)
 
-```{note}
- Only web content articles that have been published or saved as a draft can be previewed.
-```
+!!! note
+    Only web content articles that have been published or saved as a draft can be previewed.
 
 ### Previewing a Web Content Articles Using a Display Page
 
@@ -62,9 +61,8 @@ You can preview web content using a display page template from any site or asset
 
    ![When you've selected a display page template, use the preview button in the properties tab.](./adding-a-basic-web-content-article/images/05.png)
 
-```{note}
-Selecting the Preview button saves a draft of the web content article before displaying the preview.
-```
+!!! note
+    Selecting the Preview button saves a draft of the web content article before displaying the preview.
 
 ## Properties Tab
 
@@ -84,8 +82,6 @@ When creating or editing a Basic Web Content article, the following options appe
 
 ## Related Topics
 
-[Creating and Managing Display Page Templates](../../../site-building/displaying-content/using-display-page-templates/creating-and-managing-display-page-templates.md)
-
-[Introduction to Web Content Structures](../web-content-structures/understanding-web-content-structures.md)
-
-[Filtering and Sorting Web Content Articles](./filtering-and-sorting-web-content-articles.md)
+- [Creating and Managing Display Page Templates](../../../site-building/displaying-content/using-display-page-templates/creating-and-managing-display-page-templates.md)
+- [Introduction to Web Content Structures](../web-content-structures/understanding-web-content-structures.md)
+- [Filtering and Sorting Web Content Articles](./filtering-and-sorting-web-content-articles.md)

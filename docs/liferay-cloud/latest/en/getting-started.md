@@ -22,11 +22,11 @@ Liferay Cloud is a secure and reliable enterprise cloud platform that provides t
 
 There are two Liferay Cloud offerings:
 
-* **Liferay SaaS**: Liferay’s flexible, Digital Experience, Software-as-a-Service offering to quickly and conveniently create, launch, and optimize digital solutions. Updating, patching, and managing Liferay DXP and the other core Liferay Cloud services is part of the package, so you only need to worry about your own [customizations](#customizing-liferay-with-client-extensions).
+* **Liferay SaaS**: Liferay’s flexible, Digital Experience, Software-as-a-Service offering to create, launch, and optimize digital solutions quickly and conveniently. Updating, patching, and managing Liferay DXP and the other core Liferay Cloud services is part of the package, so you only need to worry about your own [customizations](#customizing-liferay-with-client-extensions).
 
 * **Liferay PaaS**: Manage and configure your own Liferay Cloud services to use Liferay DXP in a secure cloud environment. Directly manage and maintain the core Liferay Cloud services in addition to your customizations.
 
-Worry less and build more with a platform that provides:
+Worry less and build more with a platform that provides
 
 * [Standards-Compliant Security and Networking Capabilities](#standards-compliant-security-and-networking-capabilities)
 * [Data Recovery and Automated Backups](#data-recovery-and-automated-backups)
@@ -40,7 +40,7 @@ The *Liferay Cloud console* is your main tool to monitor and manage your [custom
 
 Liferay PaaS accelerates application development and deployment by providing a complete DevOps CI/CD strategy, tools, and workflow. These tools allow you to fine-tune each cloud service by deploying them from your own [code repository](./getting-started/initial-setup-overview.md#access-the-provisioned-project-source-code).
 
-Every Liferay PaaS project also comes with:
+Every Liferay PaaS project also comes with
 
 * [Accelerated Development with Built-in CI/CD](#accelerated-development-with-built-in-cicd)
 * [Insightful Monitoring](#insightful-monitoring)
@@ -55,7 +55,7 @@ Liferay SaaS comes with a Web Application Firewall (WAF) by default. The WAF hel
 
 ### VPN Integration
 
-You can also connect systems outside of Liferay Cloud (for example, an LDAP server) to your instance with a client-to-site Virtual Private Network (VPN). Liferay Cloud supports integration with OpenVPN or IPSec IKEv2 protocols, allowing for high-grade encryption and advanced VPN security features.
+You can also connect systems outside of Liferay Cloud to your instance (for example, an LDAP server) with a client-to-site Virtual Private Network (VPN). Liferay Cloud supports integration with OpenVPN or IPSec IKEv2 protocols, allowing for high-grade encryption and advanced VPN security features.
 
 With Liferay SaaS, connect a VPN to your Liferay DXP instance by [opening a Support ticket](./support-and-troubleshooting/liferay-cloud-support.md#opening-a-support-ticket) with the VPN's information. You can also connect a VPN to client extension services yourself by [using the Liferay Cloud console](./configuring-the-cloud-network/connecting-a-vpn-server-to-liferay-cloud.md).
 
@@ -81,7 +81,7 @@ Out-of-the-box [role and team administration](./manage-and-optimize/environment-
 
 Liferay Cloud is committed to maintaining as close to 100% uptime as possible, and its systems have enjoyed an aggregate of over 99.9% uptime each quarter since its release in 2019.
 
-Liferay Cloud databases are configured with Multi-Availability Zone (Multi-AZ) environments. This ensures that data is replicated in different secure, isolated locations, so it isn't vulnerable to a single point of failure. Subscription plans for Liferay SaaS and PaaS may also employ multiple instances of the Liferay DXP, search engine, and web server services to ensure high availability and reduce the possibility of interruptions or downtime.
+Liferay Cloud databases are configured with Multi-Availability Zone (Multi-AZ) environments. This ensures that data is replicated in different secure, isolated locations, so it isn't vulnerable to a single point of failure. Subscription plans for Liferay SaaS and PaaS may also employ multiple instances of Liferay DXP, search engine, and web server services to ensure high availability and reduce the possibility of interruptions or downtime.
 
 [Clustering](./customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/setting-up-clustering-in-liferay-cloud.md) and [load-balancing](./configuring-the-cloud-network/load-balancer.md) deliver highly available, zero-downtime deployments to ensure that mission-critical sites stay online. Liferay Cloud delivers data through a multi-region architecture to ensure high availability.
 
@@ -120,11 +120,11 @@ Liferay PaaS delivers [application metrics](./manage-and-optimize/application-me
 ![Use a variety of metrics to keep tabs on your Liferay Cloud services, including your Liferay DXP instances.](./getting-started/images/07.png)
 
 !!! note
-    With Liferay SaaS, Liferay Cloud's team monitors your environment regularly to respond to an incident whenever necessary. The team can respond to unresponsive or offline sites, as well as signs or trends that can cause downtime in the future. The team will contact you whenever a situation requires your own intervention. However, you can also stay up-to-date on the status of Liferay Cloud's systems on the [Status page](https://status.liferay.cloud/).
+    With Liferay SaaS, Liferay Cloud's team monitors your environment regularly to respond incidents whenever necessary. The team can respond to unresponsive or offline sites, as well as signs or trends that can cause downtime in the future. The team contacts you if a situation requires your own intervention. You can also stay up-to-date on the status of Liferay Cloud's systems on the [Status page](https://status.liferay.cloud/).
 
 ## Customizing Liferay DXP with Client Extensions
 
-Client extensions allow you to customize your site's features without needing to alter Liferay DXP's code. They only interface with Liferay's API's, promoting flexibility and compatibility with different versions of Liferay.
+You can customize your site's features using client extensions, without altering Liferay DXP's code. Client extensions interface with Liferay's API's, promoting flexibility and compatibility with different versions of Liferay.
 
 You can manage client extensions in Liferay SaaS or PaaS from the Liferay Cloud console. Because client extensions are purely a method of customization, you must manage the code yourself (via a [Liferay workspace](https://learn.liferay.com/web/guest/w/dxp/building-applications/tooling/liferay-workspace/what-is-liferay-workspace), and *Liferay cannot guarantee support* for issues that may arise with them.
 

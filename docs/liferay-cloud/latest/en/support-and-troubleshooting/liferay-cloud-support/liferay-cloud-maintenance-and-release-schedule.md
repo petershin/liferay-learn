@@ -24,7 +24,7 @@ The Liferay Cloud platform has two release windows per week: **Tuesday** and **T
 
 Most scheduled releases are completed with no downtime or outage for customer applications or Liferay Cloud's interface. However, larger updates or changes can cause downtime.
 
-For transparency's sake, releases are broken into *Major*, *Minor*, and *Patch* types. Here are the the risks of downtime for Liferay Cloud and customer systems for each type.
+For transparency's sake, releases are broken into *Major*, *Minor*, and *Patch* types. Here are the risks of downtime for Liferay Cloud and customer systems for each type.
 
 | **Release Type** | **Liferay Cloud Console** | **Liferay Cloud API** | **Customer Applications** |
 | :--------------- | :-----------------------: | :-------------------: | :-----------------------: |
@@ -44,6 +44,6 @@ Here is the regular maintenance schedule for each type of update:
 
 If strictly necessary, Liferay can install critical zero-day security updates or emergency fixes for reliability at any time without prior notice. Liferay is committed to maintaining uptime for customer environments as a top priority when mitigating security or reliability issues.
 
-## Additional Information
+## Related Topics
 
 * [Liferay Cloud Support Overview](../liferay-cloud-support.md)

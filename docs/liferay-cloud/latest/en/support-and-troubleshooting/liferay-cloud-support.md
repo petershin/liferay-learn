@@ -33,16 +33,16 @@ If you need help with issues you are experiencing as a Liferay Cloud customer, y
 
     ![Describe the issue you are having in the fields given so that the Support team can appropriately respond to your request.](./liferay-cloud-support/images/03.png)
 
-    When submitting a ticket, please provide information including:
+    When submitting a ticket, please provide this information:
 
     * The build images currently in use
     * The behavior or question you are facing
     * Steps to reproduce the issue
     * A description of both the actual behavior and the expected behavior
 
-The ticket is created once you submit the form. You will get an email notification once a Support team member has responded to your ticket. You can continue to respond via the [Help Center Requests](https://help.liferay.com/hc/requests) page, or by responding to the email.
+The ticket is created once you submit the form. When a Support team member responds to your ticket, you'll receive an email notification. You can continue to respond via the [Help Center Requests](https://help.liferay.com/hc/requests) page, or by responding to the email.
 
-## Additional Information
+## Related Topics
 
 * [Support Access](./liferay-cloud-support/support-access.md)
 

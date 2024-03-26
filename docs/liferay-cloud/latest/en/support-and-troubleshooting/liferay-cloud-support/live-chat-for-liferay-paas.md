@@ -32,7 +32,7 @@ Liferay PaaS subscribers can access the live chat via the [Liferay Cloud console
 
 Once you send your message, your position in the live chat queue is shown. The widget updates when a Support staff member joins and responds to your chat.
 
-You can also review previous chat messages afterward by clicking *View My Tickets* at [Help Center](https://help.liferay.com), the same way you can review Support tickets.
+You can also review previous chat messages by clicking *View My Tickets* at [Help Center](https://help.liferay.com), the same way you can review Support tickets.
 
 ## Availability
 

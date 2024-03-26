@@ -17,7 +17,7 @@ Each web content article is based on a structure that defines its available fiel
 
 1. Open the Site Menu (![Site Menu](../../../images/icon-menu.png)) and navigate to *Content & Data* &rarr; *Web Content*.
 
-1. Under the Web Content tab, click *Add* (![Add icon](../../../images/icon-add.png)) and select *Basic Web Content*.
+1. Under the Web Content tab, click *New* and select *Basic Web Content*.
 
    ![The web content administration page.](./adding-a-basic-web-content-article/images/01.png).
 
@@ -27,6 +27,10 @@ Each web content article is based on a structure that defines its available fiel
 
 1. Click *Publish*.
 
+   {bdg-secondary}`Liferay DXP 2024.Q2+` Using the LPD-15596 developer feature flag, two more options show up: Publish with Permissions and Schedule Publications. See [Publish With Permissions and Schedule Publications](#publish-with-permissions-and-schedule-publications) to learn more.
+
+   <!-- I'll adjust this section once the feature is off the feature flag to keep all the information in just one place. For now, I'm dividing it into these sections. -->
+
 Now your new article is created! If it's inside a folder, an interactive path appears for easier navigation.
 
 ![An interactive path enables easy file navigation.](./adding-a-basic-web-content-article/images/06.png)
@@ -35,6 +39,37 @@ You can now display your web content article on a page using the [Web Content Di
 
 !!! note
     The user who creates the first version of a web content article becomes its owner. If another user edits the content (which creates a new version), ownership isn't transferred.
+
+### Publish With Permissions and Schedule Publications
+
+{bdg-secondary}`Liferay DXP 2024.Q2+`
+
+!!! important
+    This feature is currently behind a developer feature flag (LPD-15596). Read [Developer Feature Flags](../../../system-administration/configuring-liferay/feature-flags.md#dev-feature-flags) for more information.
+
+While creating the web content, if you click *Publish*, these two options show up: Publish with Permissions and Schedule Publications.
+
+You can confirm the web content article's visibility before publishing it. You can also assign permissions that can be assigned for the item.
+
+1. Click *Publish* and select *Publish with Permissions*.
+
+1. Choose who can view the web content by selecting an option under Viewable by.
+
+   The web content can be viewable by Anyone (Guest Role), Site Members, or the Owner of the content.
+
+1. (Optional) Click *More Options* to view more permissions for the web content. Assign the permissions to Guest users or Site Members.
+
+   Update Discussion, Delete, Permissions, Expire, Delete Discussion, Update, Subscribe, View, and Add Discussion.
+
+1. Click *Publish*.
+
+You can also schedule your web content's publication to a future date.
+
+1. Click *Publish* and select *Schedule Publication*.
+
+1. Select the Date and Time when your content will be published. Notice that the UTC standard is used as a reference.
+
+1. While setting up a future time, you can also choose who can view the web content and define permissions for users.
 
 ## Previewing Web Content Articles
 

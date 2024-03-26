@@ -3,9 +3,9 @@ uuid: 9fdd050d-28b6-46a5-af49-e864e4a35553
 ---
 # Modeling B2B Relationships with Liferay Accounts
 
-We've set up Clarity's internal users with the right roles and permissions. We now turn our attention to Clarity's business to business (B2B) customers. The Liferay accounts feature can be used to represent external entities. For example, Liferay accounts can model a business to consumer (B2C) context in which a customer is a single user. Accounts can also model a B2B context where a customer represents an external company with multiple users. 
+We've set up Clarity's internal users with the right roles and permissions. We now turn our attention to Clarity's business to business (B2B) customers. The Liferay accounts framework can be used to manage external parties. For example, Liferay accounts can model a business to consumer (B2C) context in which a customer is a single user. Accounts can also model a B2B context where a customer represents an external company with multiple users.
 
-Clarity wants to provide login access to their different B2B partners. They can use Liferay account to do this. And just like Clarity team members, Liferay account users can also receive roles with different Liferay permissions. In our example, Clarity has a B2B partner called Opportune Optics that has stores across the country. See a summary in the table below of different users:
+Accounts enable increased organizational structure and customized user experiences primarily around commerce or business needs. Its approach is different from user management, because customers or vendors don’t need to interact with the site the same way employees need to. Customers and vendors don’t need to create or manage content on Liferay, but they do need to be able to place an order and track the order status. In our example, Clarity has a B2B partner called Opportune Optics that has stores across the country. See a summary in the table below of different users:
 
 | Name | Account | Account Group | Role | Organization |
 |:--- |:--- |:--- |:--- |:--- |
@@ -18,7 +18,7 @@ Clarity wants to provide login access to their different B2B partners. They can 
 For our next exercise we will create accounts for Opportune Optics and associate users with the accounts.
 
 !!! note
-   These users are already created with the Clarity sample site. If you do not have the Clarity sample site, create these users from within the Liferay UI.
+    These users are already created with the Clarity sample site. If you do not have the Clarity sample site, create these users from within the Liferay UI.
 
 ## Exercise 1 - Creating Accounts and Account Users
 
@@ -40,11 +40,11 @@ For our next exercise we will create accounts for Opportune Optics and associate
 
 1. Navigate back to the accounts page. Click the add icon and create a new account for `Opportune Optics SF`.
 
-1. Assign Preston Palmer and Robert Reed to the account. Then, assign the order manager role to Preston and the buyer role to Robert. 
+1. Assign Preston Palmer and Robert Reed to the account. Then, assign the order manager role to Preston and the buyer role to Robert.
 
 ### Creating an Opportune Optics Account Group
 
-Use account groups to keep accounts organized. For example, since Opportune Optics has different stores, group them together under one account group. Account groups gives the possibility of customizing price lists, offering discounts, and changing product visibility for the accounts in the group. This is great for Clarity's account management because of the special pricing agreements they have with Opportune Optics. 
+Use account groups to keep accounts organized. For example, since Opportune Optics has different stores, group them together under one account group. Account groups gives the possibility of customizing price lists, offering discounts, and changing product visibility for the accounts in the group. This is great for Clarity's account management because of the special pricing agreements they have with Opportune Optics.
 
 1. Navigate to _Control Panel_ &rarr; _Account Groups_. Click the add icon to create a new account group.
 
@@ -62,16 +62,16 @@ As Opportune Optics represents a large number of accounts, it makes sense for Cl
 
 1. Navigate to _Control Panel_ &rarr; _Accounts_. Click on _Opportune Optics NY_ and click the _Organizations_ tab. Click the add icon.
 
-1. Assign the account to the _Opportune Optics_ organization. 
+1. Assign the account to the _Opportune Optics_ organization.
 
    ![Assign the account to the organization.](./modeling-b2b-relationships-with-liferay-accounts/images/04.png)
 
    !!! note
-      This organization was already created with the sample Clarity site. If you do not have this organization, create it from within the Liferay UI.
+       This organization was already created with the sample Clarity site. If you do not have this organization, create it from within the Liferay UI.
 
 1. In the same way, assign _Opportune Optics SF_ to the _Opportune Optics_ organization.
 
-1. Next, navigate to _Control Panel_ &rarr; _Users and Organizations_. Click on _Lily Lewis_ and click on _Organizations_. 
+1. Next, navigate to _Control Panel_ &rarr; _Users and Organizations_. Click on _Lily Lewis_ and click on _Organizations_.
 
 1. Click _Select_ and select the _Opportune Optics_ organization. Click _Add_.
 

@@ -6,9 +6,9 @@ uuid: 36dd306c-d71e-4606-95c2-da8acea64686
 ---
 # Module 5: Users & Permissions
 
-In the previous module, we saw Clarity bring over their team members through Okta, along with the user groups they belong to. In this module, we’re going to learn best practices for how to use Liferay features to manage and permission these new Liferay users so that they can access and do everything they need to, and nothing they shouldn’t.
+In the previous module, we saw Clarity bring over their team members through Okta, along with the user groups they belong to. In this module, we’re going to learn best practices for how to use Liferay features to manage and permission these new Liferay users allowing meaningful interaction with the platform and maintaining the organization secure.
 
-Having access based on roles and permissions is not just about accessing content - it’s about access and visibility into functionality, content creation, sensitive information, and more.
+Access based on roles and permissions goes beyond just viewing content. Roles and permissions also determine visibility into functionality, content creation, sensitive information, and more.
 
 In this module, you will learn:
 

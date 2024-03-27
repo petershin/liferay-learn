@@ -15,25 +15,24 @@ Key to this is the customer or the end user of the products/services provided by
 
 Several of Liferay’s high-level capabilities are likely to be incorporated into most customer portal solutions:
 
-* [Segmentation and Personalization](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience)
-* [Identity Management and Access Control](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay)
-* [Low-Code / No-Code Application Building](https://learn.liferay.com/w/dxp/building-applications/objects)
-* [Data Modeling and Process Automation](https://learn.liferay.com/w/dxp/process-automation)
+* [Content Management System (CMS)](https://learn.liferay.com/w/dxp/content-authoring-and-management)
+* [Digital Asset Management (DAM)](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media)
 * [Commerce](https://learn.liferay.com/w/commerce/index)
-* [Design Systems and Experience Management](https://learn.liferay.com/w/dxp/site-building)
-* Integration and Interoperability
-* [Search](https://learn.liferay.com/w/dxp/using-search) and [Navigation](https://learn.liferay.com/w/dxp/site-building/site-navigation)
-* [Headless APIs and Multichannel](https://learn.liferay.com/w/dxp/headless-delivery)
-* [Collaboration and Knowledge Sharing](https://learn.liferay.com/w/dxp/collaboration-and-social)
+* [Personalization](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience)
+* [Search](https://learn.liferay.com/w/dxp/using-search)
+* [Sites](https://learn.liferay.com/w/dxp/site-building)
+* Integration
+* [Security](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay)
+* [Low-Code](https://learn.liferay.com/w/dxp/liferay-development/objects)
 
 Two are particularly relevant for customer portals:
 
-* Segmentation and Personalization
-* Integration and Interoperability
+* Personalization
+* Integration
 
-## Segmentation and Personalization
+## Personalization
 
-One key goal of a customer portal is to provide tailored experiences to customers. Liferay provides OOTB Segmentation and Personalization capabilities that ensure the right content is delivered to the right audience, with meaningful recommendations, tailored search results, and much more.
+One key goal of a customer portal is to provide tailored experiences to customers. Liferay provides OOTB Personalization capabilities that ensure the right content is delivered to the right audience, with meaningful recommendations, tailored search results, and much more.
 
 As different types of buyers log into the site they see information tailored to their requirements. 
 
@@ -51,7 +50,7 @@ When business buyers visit the same page, they see a personalized dashboard that
 
 Liferay provides key features that help achieve this desired business outcome, including a segment builder for creating segments based on demographic data (e.g., country, gender, language) or behavioral patterns (e.g., page visited, device, last login date). Users can create as many different experiences as they need for any given page, each linked to a different user segment. Each of these different experiences can show different widgets, fragments, and data based on users' needs.
 
-**Integration and Interoperability**
+**Integration**
 
 One the key value of a customer portal is to bring together and unify the many disparate systems in use across the enterprise, so it is critical that a customer portal is built on technology that excels at integration.
 

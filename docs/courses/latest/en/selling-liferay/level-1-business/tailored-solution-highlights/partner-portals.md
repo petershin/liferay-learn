@@ -13,31 +13,33 @@ A partner portal gives partners access to deal registration, marketing resources
 
 The key capabilities for partner portals are similar to those used for Supplier Portals:
 
-* [Segmentation and Personalization](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience)
-* [Identity Management and Access Control](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay)
-* [Low-Code / No-Code Application Building](https://learn.liferay.com/w/dxp/building-applications/objects)
-* [Data Modeling and Process Automation](https://learn.liferay.com/w/dxp/process-automation)
+* [Personalization](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience)
+* [Security](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay)
+* [Low-Code](https://learn.liferay.com/w/dxp/liferay-development/objects)
 * [Commerce](https://learn.liferay.com/w/commerce/index)
-* [Design Systems and Experience Management](https://learn.liferay.com/w/dxp/site-building) 
-* Integration and Interoperability
-* [Search](https://learn.liferay.com/w/dxp/using-search) and [Navigation](https://learn.liferay.com/w/dxp/site-building/site-navigation)
-* [Headless APIs and Multichannel](https://learn.liferay.com/w/dxp/headless-delivery)
-* [Collaboration and Knowledge Sharing](https://learn.liferay.com/w/dxp/collaboration-and-social)
+* [Content Management System (CMS)](https://learn.liferay.com/w/dxp/content-authoring-and-management)
+* [Sites](https://learn.liferay.com/w/dxp/site-building)
+* Integration
+* [Search](https://learn.liferay.com/w/dxp/using-search)
+* [Digital Asset Management (DAM)](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media)
 
 Liferay's key capabilities for Partner Portals are
 
-* Identity Management and Access Control
-* Analytics and Optimization
+* Security
+* Sites
+* Analytics
+* Optimization
+* Personalization
 
-## Identity Management and Access Control
+## Security
 
 Liferay DXP's identity management and user authentication features are sophisticated. Most prospective customers already have some type of identity management and single sign on solution in place, and Liferay can work easily with those solutions. 
 
-For identity management, Liferay can integrate with popular LDAP directories such as Microsoft Active Directory or OpenLDAP. For authentication, Liferay works with a range of popular SSO providers such as Okta, PingFederate, Siteminder, along with any provider that supports standards-based approaches such as SAML or OpenID Connect. These capabilities are key for any type of authenticated solution, not just for partner portals.
+Liferay can easily integrate with external IdMs through built-in support for standards like SAML, OpenID Connect, and so on. These integrations also allow Single Sign-On (SSO) to be used across Liferay and non-Liferay applications and systems. Once users are authenticated, Liferay’s granular roles and permissions model ensure that users interact only with information they are authorized to interact with. Multi-Factor Authentication provides an extra layer of security, while GDPR-compliant features are also included.
 
-![Liferay provides support for multiple LDAP directories, SAML providers, and SSO implementations.](./partner-portals/images/01.png)
+These capabilities are key for any type of authenticated solution, not just for Partner Portals.  
 
-## Analytics and Optimization
+## Sites and Personalization
 
 Liferay Analytics Cloud offers a fully integrated analytics solution for Liferay DXP to help companies understand how people use their site and how they can improve.
 
@@ -61,4 +63,4 @@ Prior to introducing the Liferay-based partner portal, the primary B2B sales pro
 
 When automating previously manual processes, it's important to observe and analyze how users adapt to the new approach, to ensure they do not become lost or confused with a new process. Liferay Analytics helps make those types of observations and analysis, to ensure the solution evolves to best support the needs of the users.
 
-Next: [Modern Intranets](./modern-intranets.md).
+Next: [Intranets](./intranets.md).

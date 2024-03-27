@@ -13,16 +13,14 @@ A supplier portal empowers collaboration between a company and its suppliers of 
 
 Many challenges can be solved by implementing a supplier portal, but each opportunity's set of challenges may be unique.  The following capabilities showcase how Liferay DXP can be used as a supplier portal:
 
-* [Segmentation and Personalization](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience)
-* [Identity Management and Access Control](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay)
-* [Low-Code / No-Code Application Building](https://learn.liferay.com/w/dxp/building-applications/objects)
-* [Data Modeling and Process Automation](https://learn.liferay.com/w/dxp/process-automation)
+* [Personalization](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience)
+* [Security](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay)
+* [Low-Code](https://learn.liferay.com/w/dxp/liferay-development/objects)
 * [Commerce](https://learn.liferay.com/w/commerce/index)
-* [Design Systems and Experience Management](https://learn.liferay.com/w/dxp/site-building) 
-* Integration and Interoperability
-* [Search](https://learn.liferay.com/w/dxp/using-search) and [Navigation](https://learn.liferay.com/w/dxp/site-building/site-navigation)
-* [Headless APIs and Multichannel](https://learn.liferay.com/w/dxp/headless-delivery)
-* [Collaboration and Knowledge Sharing](https://learn.liferay.com/w/dxp/collaboration-and-social)
+* [Sites](https://learn.liferay.com/w/dxp/site-building)
+* Integration
+* [Search](https://learn.liferay.com/w/dxp/using-search)
+* [Digital Asset Management (DAM)](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media)
 
 When evaluating Liferay DXP for a supplier portal, highlight these capabilities: 
 
@@ -43,9 +41,9 @@ Customers can design forms for everything from business process automation to re
 
 ## Data Modeling and Process Management
 
-Liferay provides a graphical workflow designer for defining many simple to complex business processes or workflows. Workflows can be used organization-wide and tailored for specific individual requirements.
+Liferay provides the [Objects Model Builder](https://learn.liferay.com/w/dxp/liferay-development/objects/creating-and-managing-objects/using-the-objects-model-builder) to define and manage relationships between Custom and System objects. Liferay provides a graphical workflow designer for defining many simple to complex business processes or workflows. Workflows can be used organization-wide and tailored for specific individual requirements.
 
-![Liferay's process designer allows the creation of simple to complex workflows.](./supplier-portals/images/03.png)
+![Liferay's Object Model Builder allows Custom Objects to be defined and managed.](./supplier-portals/images/03.png)
 
 Workflow metrics provide insight into how long certain workflow events take to complete, with options to filter by workflow version. Additionally SLAs can set deadlines on specific workflow events and activities.
 

@@ -14,24 +14,24 @@ A digital commerce solution allows people or companies to buy physical goods, se
 Particular focus when talking with prospects about Liferay DXP-based Digital Commerce sites should be given to
 
 * [Commerce](https://learn.liferay.com/w/commerce/index)
-* [Headless APIs and Multichannel](https://learn.liferay.com/w/dxp/headless-delivery)
-* [Low-Code / No-Code Application Building](https://learn.liferay.com/w/dxp/building-applications/objects)
-* [Data Modeling and Process Automation](https://learn.liferay.com/w/dxp/process-automation)
-* [Content and Asset Management](https://learn.liferay.com/w/dxp/content-authoring-and-management)
-* [Analytics](https://learn.liferay.com/w/analytics-cloud/index) and [Optimization](https://learn.liferay.com/w/dxp/site-building/optimizing-sites)
-* [Segmentation and Personalization](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience)
-* [Search](https://learn.liferay.com/w/dxp/using-search) and [Navigation](https://learn.liferay.com/w/dxp/site-building/site-navigation)
-* Integration and Interoperability
-* [Design Systems and Experience Management](https://learn.liferay.com/w/dxp/site-building)
+* [Low-Code](https://learn.liferay.com/w/dxp/liferay-development/objects)
+* [Content Management System (CMS)](https://learn.liferay.com/w/dxp/content-authoring-and-management)
+* [Digital Asset Management (DAM)](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media)
+* Integration
+* [Search](https://learn.liferay.com/w/dxp/using-search)
+* [Personalization](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience)
+* [Sites](https://learn.liferay.com/w/dxp/site-building)
+* [Security](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay)
 
 Of the above topics, the two below are the most important: 
 
 * Commerce
-* Headless API and Multichannel
+* Integration
+* Support for multi-channel apps using Headless APIs
 
 ## Digital Commerce
 
-Liferay DXP contains native digital commerce functionality that facilitates an experience-led digital buying journey for both B2B and B2C scenarios. Liferay helps companies own the commerce experience, eliminating silos between customer acquisition and nurture. 
+Liferay DXP contains native digital commerce functionality that facilitates an experience-led digital buying journey for B2B, B2C, and other commerce scenarios. Liferay helps companies own the commerce experience, eliminating silos between customer acquisition and nurture. 
 
 On one platform, Liferay DXP combines content, products, and customer data to offer better experiences at every touchpoint. Liferay has not acquired any digital commerce products to integrate with Liferay DXP, but has innovated internally. This means that all the capabilities are part of a single architecture. Out-of-the-box, Liferay covers commerce, experience and automation, and integration capabilities. 
 
@@ -45,13 +45,12 @@ Catalog management functionality helps organizations create different catalogs t
 
 Liferay uses Elasticsearch for enterprise search. Elasticsearch provides faceted search and filtering for more effective product browsing and discovery. Liferay’s payment and tax management capabilities provide native payment support with PayPal and credit and debit cards. Liferay’s native order engine facilitates end-to-end order management including shipment management.
 
-## Headless APIs and Multichannel
+## Integration
 
 Liferay's native capabilities help organizations reach customers in a true multi-channel way---from storefront, to mobile, to IoT. Some of the key features supporting the multichannel delivery Liferay applications are
 
-* **Headless APIs** - Liferay offers OpenAPI based APIs that can be consumed using either REST or GraphQL. When using these headless APIs, organizations can focus on creating tailored experiences across multiple devices. 
+* **Headless APIs** - Liferay offers OpenAPI-compliant APIs that can be consumed using either REST or GraphQL. When using these headless APIs, organizations can focus on creating tailored experiences across multiple devices and channels. 
 * **Adaptive Media** - Liferay DXP dynamically adjusts images to best fit the screen size and network speed of each device, addressing experience and performance issues for all page types and products.
-* **Mobile Support** - Rapidly develop native and hybrid apps, create mobile experiences, and define mobile device rules using Liferay DXP as a mobile backend.
 
 ## Case Study - Zain
 
@@ -63,4 +62,4 @@ Zain had a rigid legacy system which was complex to customize. It also had a dec
 
 Liferay’s ML product recommendation capabilities are also being used by Zain. The entire order processing, shipment management, and inventory management has been implemented using Liferay.
 
-Next: [External Websites](./external-websites.md).
+Next: [Enterprise Websites](./enterprise-websites.md).

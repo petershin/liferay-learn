@@ -2,10 +2,10 @@
 toc:
   - ./tailored-solution-highlights/customer-portals.md
   - ./tailored-solution-highlights/digital-commerce-sites.md
-  - ./tailored-solution-highlights/external-websites.md
+  - ./tailored-solution-highlights/enterprise-websites.md
   - ./tailored-solution-highlights/supplier-portals.md
   - ./tailored-solution-highlights/partner-portals.md
-  - ./tailored-solution-highlights/modern-intranets.md
+  - ./tailored-solution-highlights/intranets.md
 uuid: 04c0d21c-dbf1-443e-b097-f053a387e2dd
 visibility: 
 - Employee
@@ -19,10 +19,10 @@ visibility:
 * Liferay solves the following business problems:
   * Customer Portals
   * Digital Commerce Sites
-  * External Websites
+  * Enterprise Websites
   * Supplier Portals
   * Partner Portals
-  * Modern Intranets
+  * Intranets
 * Different business problems use different sets of Liferay out-of-the-box capabilities
 * Success stories are available for each horizontal solution 
 
@@ -45,34 +45,29 @@ Liferay's horizontal portal legacy solves many business use cases across multipl
 
 * Customer Portals
 * Digital Commerce Sites
-* External Websites
+* Enterprise Websites
 * Supplier Portals
 * Partner Portals
 * Intranets
 
-![Liferay's Target Solutions include Customer Portals, Digital Commerce Sites, External Websites, Supplier Portals, Partner Portals, Intranets.](./tailored-solution-highlights/images/01.png)
+![Liferay's Target Solutions include Customer Portals, Digital Commerce Sites, Enterprise Websites, Supplier Portals, Partner Portals, Intranets.](./tailored-solution-highlights/images/01.png)
 
 ## Liferay DXP Capabilities
 
-Liferay's industry leading Digital Experience Platform (DXP) includes many out-of-the-box capabilities. The latest release Liferay DXP 7.4 includes core DXP, Digital Commerce, and Analytics features. Its high-level key capabilities are
+Liferay's industry leading Digital Experience Platform (DXP) includes many out-of-the-box capabilities. The latest release includes core DXP, Digital Commerce, and Analytics features. Its high-level key capabilities are
 
-* [Design Systems & Experience Management](https://learn.liferay.com/w/dxp/building-applications/tooling/liferay-workspace)
-* [Content & Asset Management](https://learn.liferay.com/w/dxp/content-authoring-and-management)
-* [Low-Code / No-Code Application Building](https://learn.liferay.com/w/dxp/building-applications/objects)
-* [Data Modeling & Process Automation](https://learn.liferay.com/w/dxp/process-automation)
+* [Content Management System (CMS)](https://learn.liferay.com/w/dxp/content-authoring-and-management)
+* [Digital Asset Management (DAM)](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media)
 * [Commerce](https://learn.liferay.com/w/commerce/index)
-* [Analytics](https://learn.liferay.com/web/guest/w/analytics-cloud/index) & [Optimization](https://learn.liferay.com/w/dxp/content-authoring-and-management/content-dashboard)
-* [Segmentation & Personalization](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience)
-* [Search](https://learn.liferay.com/w/dxp/using-search) & [Navigation](https://learn.liferay.com/w/dxp/site-building/site-navigation)
-* [Headless APIs & Multichannel](https://learn.liferay.com/w/dxp/headless-delivery)
-* [Collaboration & Knowledge Sharing](https://learn.liferay.com/w/dxp/collaboration-and-social)
-* [Identity Management & Access Control](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay)
-* Integration & Interoperability
-* [Developer Tooling](https://learn.liferay.com/w/dxp/building-applications/tooling/liferay-workspace)
-* Platform Services
-* [Cloud & Infrastructure](https://learn.liferay.com/w/dxp/building-applications/tooling/liferay-workspace)
+* [Personalization](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience)
+* [Search](https://learn.liferay.com/w/dxp/using-search)
+* [Sites](https://learn.liferay.com/w/dxp/site-building)
+* Integration
+* [Security](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay)
+* [Cloud](https://learn.liferay.com/w/liferay-cloud/getting-started)
+* [Low-Code](https://learn.liferay.com/w/dxp/liferay-development/objects)
 
-All the horizontal solutions mentioned earlier leverage these features. These OOTB capabilities make Liferay a strong player in the DXP space.
+All the horizontal solutions mentioned earlier leverage these features. These out of the box capabilities combined make Liferay a strong player in the DXP space - and provide options to address CMS, DAM, LCAP, Portal, etc. use cases as well.
 
 For more information, please see the [Liferay DXP Product Capabilities](../level-0/liferay-product-overview.md) module.
 
@@ -100,7 +95,7 @@ Don't know where to start? [Start with Customer Portals](./tailored-solution-hig
 :::
 
 :::{grid-item-card} External Websites
-:link: ./tailored-solution-highlights/external-websites.md
+:link: ./tailored-solution-highlights/enterprise-websites.md
 
 :::
 
@@ -115,7 +110,7 @@ Don't know where to start? [Start with Customer Portals](./tailored-solution-hig
 :::
 
 :::{grid-item-card} Modern Intranets
-:link: ./tailored-solution-highlights/modern-intranets.md
+:link: ./tailored-solution-highlights/intranets.md
 
 :::
 ::::

@@ -6,6 +6,7 @@ taxonomy-category-names:
 - Liferay Self-Hosted
 - Liferay SaaS
 ---
+
 # Creating a Basic Custom Element
 
 {bdg-secondary}`Liferay 7.4+`
@@ -36,7 +37,7 @@ To start developing client extensions,
 
 Now you have the tools to deploy your first Custom Element client extension.
 
-## Examine and Modify the Client Extension
+## Examine and Modify the Custom Element Client Extension
 
 The Custom Element client extension is in the sample workspace's `client-extensions/liferay-sample-custom-element-1/` folder. It's defined in the `client-extension.yaml` file:
 
@@ -67,7 +68,7 @@ It also contains the `assemble` block:
 
 This specifies that everything in the `assets/` folder should be included as a static resource in the built client extension `.zip` file. The JavaScript and CSS files in a client extension are used as static resources in Liferay.
 
-The `assets/index.js` file contains this code that defines a custom HTML element named 'vanilla-counter' that represents a simple counter component. It creates buttons to increment and decrement the counter, displays the current counter value, and shows the portlet internal route based on the URL. Additionally, event listeners are attached for button clicks, and methods are provided to handle counter updates and route information.
+The `assets/index.js` file defines a custom HTML element named `vanilla-counter` that represents a simple counter component. It creates buttons to increment and decrement the counter, displays the current counter value, and shows the internal route based on the URL. Additionally, it attaches event listeners for button clicks and provides methods to handle counter updates and route information.
 
 ```javascript
 (function () {
@@ -180,11 +181,11 @@ The `assets/index.js` file contains this code that defines a custom HTML element
 })();
 ```
 
-Other Custom Element client extension samples are available through the sample workspace using different frameworks/programming languages/libraries (e.g., Angular, JavaScript, and React). Try deploying and using them too.
+Other Custom Element client extension samples that use different frameworks/programming languages/libraries are available through the sample workspace. Try deploying and using them too.
 
 Now, deploy the client extension.
 
-## Deploy the Client Extension to Liferay
+## Deploy the Custom Element Client Extension to Liferay
 
 ```{include} /_snippets/run-liferay-portal.md
 ```
@@ -213,8 +214,6 @@ Now that your client extension is deployed, check if the widget is working prope
 
 ## Add the Custom Element Client Extension as a Widget
 
-The Custom Element is added to a page as a widget.
-
 1. Click *Edit* (![Edit](../../images/icon-edit-pencil.png)) at the top of any page.
 
 1. Add the widget to the page. In the Fragments and Widgets sidebar (![Fragments and Widgets](../../images/icon-plus.png)), click *Widgets*.
@@ -225,7 +224,7 @@ The Custom Element is added to a page as a widget.
 
 Confirm the widget app is working by using the buttons to increase/decrease the counter.
 
-You have successfully used a Custom Element client extension in Liferay. Next, try using other Custom Element client extension samples located in the sample workspace or deploying other client extension types.
+You have successfully used a Custom Element client extension in Liferay. Next, try working with the [routes](./using-routes-with-custom-elements.md) in a React custom element.
 
 ## Related Topics
 

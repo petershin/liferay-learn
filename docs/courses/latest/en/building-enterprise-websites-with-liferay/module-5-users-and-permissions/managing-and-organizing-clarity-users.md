@@ -13,7 +13,7 @@ All six [critical success factors](../module-1-getting-started-with-clarity/the-
 
 **Non-Technical Participation**: Manage the user experience with ease, even for non-developers. While Clarity's initial setup might require technical expertise, Liferay's user-friendly UI allows them to train its own personnel to take control of user management and tailor the experience.
 
-**Increased Engagement through Personalization**: Personalization is the key to user engagement, after all, that's what user management is ultimately about: creating a more engaging experience for users. By enabling customization and personalization, Liferay's user-friendly UI empowers administrators to achieve this goal quickly and easily.
+**Increased Engagement through Personalization**: Providing different user experiences with Liferay not only applies to customers, but also to Clarity employees. Being able to provide access and visibility to different features in Liferay empowers team members to carry out their responsibilities without needing to ask their IT team for help.
 
 **Risk Mitigation with Better Governance**: Role-based permissions within Clarity ensure data security. Users can only access and edit site sections relevant to their role, minimizing the risk of data leaks and protecting your brand reputation.
 

@@ -6,6 +6,12 @@ uuid: 1564af7e-387f-4946-b382-fe824655f077
 ---
 # Module 2: Developer Setup
 
+!!! important "Webinar Note"
+    This module was presented using slides for a live webinar audience. The formatting, presentation, and examples may differ from what is presented here as part of the course.
+
+    * View the [recording](https://learn.liferay.com/web/guest/d/lp1-2-developer-setup) from the live webinar of this module.
+    * Download the [PDF](https://learn.liferay.com/documents/d/guest/lp1-2-developer-setup-pdf) of the presentation used in the live workshop.
+
 <!--TODO: This introduction will probably need to be updated to transition more smoothly from the last section of Module 1, "Building Clarity on Liferay"-->
 
 Now that you've learned about Clarity's business needs and how Liferay can address them, you are tasked with creating a solution for Clarity. Liferay provides a variety of tools to streamline development and help you deliver better digital experiences. This module will introduce you to Liferay Workspace and Client Extensions, two key features for building applications with Liferay. While you won't be developing any extensions for Clarity just yet, you will have your workspace ready to go before you continue the course.

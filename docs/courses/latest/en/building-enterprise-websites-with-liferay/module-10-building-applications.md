@@ -8,6 +8,12 @@ uuid: 9311d48e-997b-4e20-ad75-2a08b9a82e3f
 ---
 # Module 10: Building Applications
 
+!!! important "Webinar Note"
+    This module was presented using slides for a live webinar audience. The formatting, presentation, and examples may differ from what is presented here as part of the course.
+
+    * View the [recording](https://learn.liferay.com/web/guest/d/lp1-10-building-applications) from the live webinar of this module.
+    * Download the [PDF](https://learn.liferay.com/documents/d/guest/lp1-10-building-applications-pdf) of the presentation used in the live workshop.
+
 So far, you've learned about using Liferay's powerful out-of-the-box features to build a modern enterprise marketing website with a centralized technical infrastructure. Sometimes these features don't cover all the functionality you require, and you will need to develop your own applications to interface with Liferay.
 
 Clarity's presence as a global leader in optical technology has drawn interest from a growing number of international distributors. To address this interest, they need to develop a custom solution for receiving and approving applications from B2B distributors. Clarity can do just that with one of Liferay's key differentiators: low-code applications.

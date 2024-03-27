@@ -5,7 +5,7 @@ uuid: f548210b-6113-4205-ac28-23451ed61e43
 
 Clarity team members were provisioned through Okta and have already logged into Liferay, but their roles and permissions have not been set yet. Liferay's out-of-the-box features are designed to help manage and grant permissions to these users based on their company role and responsibilities on the new site.
 
-User management is the primary means of customizing a diverse user experience. Common use cases includes giving users privileges to access parts of the platform or specific resources, as well as restricting user access from unauthorized resources or actions. Basically, when user management is done right, everyone is granted access only to the resources and functionalities necessary for their roles. Fortunately, Liferay’s user and permission management takes care of the underlying dirty work, to simplify user management so you don’t have to deal with employee complaints.
+To ensure control of access to platform content, user management is crucial, especially with regards to user permissions. Common use cases includes giving users privileges to access parts of the platform or specific resources, as well as restricting user access from unauthorized resources or actions. Basically, when user management is done right, everyone is granted access only to the resources and functionalities necessary for their roles. Fortunately, Liferay's user and permission management streamlines user administration, making it easier to manage employee access.
 
 ## Revisiting Clarity’s Critical Success Factors
 

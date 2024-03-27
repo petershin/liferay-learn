@@ -6,6 +6,12 @@ uuid: 36dd306c-d71e-4606-95c2-da8acea64686
 ---
 # Module 5: Users & Permissions
 
+!!! important "Webinar Note"
+    This module was presented using slides for a live webinar audience. The formatting, presentation, and examples may differ from what is presented here as part of the course.
+
+    * View the [recording](https://learn.liferay.com/web/guest/d/lp1-5-users-permissions) from the live webinar of this module.
+    * Download the [PDF](https://learn.liferay.com/documents/d/guest/lp1-5-users-permissions-pdf) of the presentation used in the live workshop.
+
 In the previous module, we saw Clarity bring over their team members through Okta, along with the user groups they belong to. In this module, we’re going to learn best practices for how to use Liferay features to manage and permission these new Liferay users allowing meaningful interaction with the platform and maintaining the organization secure.
 
 Access based on roles and permissions goes beyond just viewing content. Roles and permissions also determine visibility into functionality, content creation, sensitive information, and more.

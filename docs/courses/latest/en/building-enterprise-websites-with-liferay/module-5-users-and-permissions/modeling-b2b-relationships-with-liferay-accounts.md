@@ -75,7 +75,7 @@ As Opportune Optics represents a large number of accounts, it makes sense for Cl
 
 1. Click _Select_ and select the _Opportune Optics_ organization. Click _Add_.
 
-1. Finally, click on _Roles_. Click _Select_ next to organization roles. Click _Choose_ next to account manager. Scroll to the bottom and click _Save_. Lily is now the account manager for the Opportune Optics organization. She has the permissions now to view and submit orders for Opportune Optics.
+1. Finally, click on _Roles_. Click _Select_ next to organization roles. Click _Choose_ next to account manager. Scroll to the bottom and click _Save_. Lily is now the account manager for the Opportune Optics organization. With this role, she has the permissions now to view and submit orders for Opportune Optics.
 
 To learn more about Liferay accounts and modeling B2B relationships, see our official documentation about [accounts](https://learn.liferay.com/w/dxp/users-and-permissions/accounts).
 

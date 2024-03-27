@@ -5,22 +5,22 @@ uuid: f548210b-6113-4205-ac28-23451ed61e43
 
 Clarity team members were provisioned through Okta and have already logged into Liferay, but their roles and permissions have not been set yet. Liferay's out-of-the-box features are designed to help manage and grant permissions to these users based on their company role and responsibilities on the new site.
 
-To ensure control of access to platform content, user management is crucial, especially with regards to user permissions. Common use cases includes giving users privileges to access parts of the platform or specific resources, as well as restricting user access from unauthorized resources or actions. Basically, when user management is done right, everyone is granted access only to the resources and functionalities necessary for their roles. Fortunately, Liferay's user and permission management streamlines user administration, making it easier to manage employee access.
+The primary concern in user management is managing user access to content and platform features. Common use cases includes giving privileges to access parts of the platform or specific resources, as well as restricting user access from unauthorized resources or actions. Basically, when user management is done right, everyone is granted access only to the resources and functionalities necessary for their roles.
 
 ## Revisiting Clarity’s Critical Success Factors
 
 All six [critical success factors](../module-1-getting-started-with-clarity/the-clarity-story.md#critical-success-factors) identified by Clarity's business team can be mapped to user and permission requirements. However, three of these factors hold particular relevance.
 
-**Non-Technical Participation**: Manage the user experience with ease, even for non-developers. While Clarity's initial setup might require technical expertise, Liferay's user-friendly UI allows them to train its own personnel to take control of user management and tailor the experience.
+**Non-Technical Participation**: Anyone, including non-developers, can manage the users with ease. While Clarity's initial setup might require technical expertise, Liferay's user-friendly UI allows them to train its own personnel to take control of managing users.
 
-**Increased Engagement through Personalization**: Providing different user experiences with Liferay not only applies to customers, but also to Clarity employees. Being able to provide access and visibility to different features in Liferay empowers team members to carry out their responsibilities without needing to ask their IT team for help.
+**Increased Engagement through Personalization**: Providing different user experiences with Liferay not only applies to customers, but also to Clarity employees. Being able to provide tailored access and visibility to different features in Liferay empowers team members to carry out their responsibilities without needing to involve their IT team for every task.
 
-**Risk Mitigation with Better Governance**: Role-based permissions within Clarity ensure data security. Users can only access and edit site sections relevant to their role, minimizing the risk of data leaks and protecting your brand reputation.
+**Risk Mitigation with Better Governance**: Role-based permissions within Clarity ensure data security. Users can only access and edit site sections relevant to their role, minimizing the risk of data leaks and protecting their brand reputation.
 
 At Clarity, each person has different responsibilities in developing the new enterprise website. Let's take a closer look at the different types of users involved, their roles, the groups they belong to, and the responsibilities they have for the site.
 
 | Name | Role | User Group | Responsibility|
-|:---|:---|:---|:---|
+|:--- |:--- |:--- |:--- |
 | Ian Miller | IT Manager | IT | Ensures efficient operation of IT infrastructure by aligning technology strategy with organizational objectives. |
 | Walter Douglas | Web Developer | IT | Ensures functionality, security, and performance of Clarity's website by designing, building, and maintaining it. |
 | Clara Murphy | Marketing Content Manager | Content Creation and Site Management | Creates and implements content strategies to attract and engage visitors, driving brand awareness and conversions. |
@@ -29,19 +29,19 @@ At Clarity, each person has different responsibilities in developing the new ent
 
 ## Defining Roles and Permissions
 
-In Liferay, permissions are assigned to roles, as opposed to being assigned to individuals. We can consider roles as collections of permissions and Liferay provides [out-of-the-box roles](https://learn.liferay.com/en/w/dxp/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions) that come by default. Custom roles can also be created with your choice of permissions to fit your business. These roles can then be assigned to Liferay users.
+Permissions are individual checks that determine whether a user can access a specific resource or perform a certain activity. For example, creating or editing a blog post. In Liferay, permissions are assigned to roles, as opposed to being assigned to individuals. Roles then serve as a collection of permissions. Using roles promotes reuse within the permissions structures and discourages directly assigning permissions to individual users.
 
-Permissions are individual checks that determine whether a user can access a specific resource or perform a certain activity. In contrast, roles are made of many permissions together. Creating roles promotes reuse within the permission structure and discourages directly assigning permissions to individual users. Based on a user's role you should know what they are, and what they can do.
+Liferay provides [out-of-the-box roles](https://learn.liferay.com/en/w/dxp/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions). Custom roles can also be created with your choice of permissions to fit your business. Then, these roles can then be assigned to Liferay users.
 
-The different kinds of roles are created by Liferay for scoping purposes. Sometimes, you don’t want a certain permission to carry across the whole site. Other times, you might want the permission to be valid only in a certain site, or set of pages. The different kinds of roles will allow you to scope permissions differently, and Liferay offers 5 kinds of permissions.
+The different default roles also fall under different scoping. Sometimes, you don’t want a certain permission to carry across a whole Liferay instance or even across a whole site. For example, you may want to assign the role of site administrator to two different people; a different administrator per site. Use scoped roles to limit what users can and cannot access. 
 
-|Role type | Scope |
+| Role type | Scope |
 |:--- |:--- |
-|Regular Role | This is the most extensive permission scope, and it spans across the whole portal. |
-|Site Role | Permissions that are scoped to a particular site. |
-|Organization Role | Permissions that are scoped to particular users of an organization. |
-|Asset Library Role | Permissions attached specifically to shared resources, particularly related to asset libraries and asset management. |
-|Account Role | Permissions that are given to users who are a part of an account. |
+| Regular Role | This is the most extensive permission scope, and it spans across the whole portal. |
+| Site Role | Permissions that are scoped to a particular site. |
+| Organization Role | Permissions that are scoped to particular users of an organization. |
+| Asset Library Role | Permissions attached specifically to shared resources, particularly related to asset libraries and asset management. |
+| Account Role | Permissions that are given to users who are a part of an account. |
 
 ## Structuring Your Organization through User Groups
 
@@ -54,7 +54,7 @@ To increase efficiency, roles can also be assigned to entire user groups. The pu
 
 The image above illustrates three user groups used by Clarity, represented by dotted lines. Each user group is assigned the necessary roles and permissions required to perform their daily tasks. Marketing content manager, Clara Murphy, belongs to two of these teams. Consequently, she inherits all the roles associated with both user groups. Italicized roles in the image indicate those assigned to specific users, while non-italicized roles are assigned to user groups.
 
-Let’s walk through an example of custom role creation for user groups.
+Let’s walk through an example of creating a custom role and applying it to a user group.
 
 !!! note
     The Clarity users that came with the sample Clarity site are already assigned to user groups. If you do not have the sample Clarity site, create the user groups above and assign the users to them. See our documentation about [user groups](https://learn.liferay.com/w/dxp/users-and-permissions/user-groups).

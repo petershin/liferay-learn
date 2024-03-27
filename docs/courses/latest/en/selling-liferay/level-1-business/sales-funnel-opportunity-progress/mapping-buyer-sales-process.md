@@ -102,7 +102,7 @@ To support generation of SQLs and MQLs the following can be used:
 
 For goal confirmation various tools and approaches can be used:
 
-* If the prospect is hesitant to share their goals or it is not clear what they are yet, preparing and suggesting a menu of goals can be effective. This means putting together some business challenges of similar companies from similar industries where Liferay has been successful and suggesting those. 
+* If the prospect is hesitant to share their goals or it is not clear what they are yet, preparing and suggesting a menu of goals can be effective. This means putting together some business challenges of similar companies from similar industries where Liferay has been successful and suggesting those.
 * Success stories and solution examples and of course horizontal solution decks are also useful. 
 * Being familiar with competitive intelligence provides opportunities to drive conversation to areas where Liferay has known advantages is appreciated by buyers.
 
@@ -110,7 +110,7 @@ As solution development continues, the following are important:
 
 * Building relationships with different players at the buyer.
 * Further expanding the solutions through the expansion decks and solution examples.
-* Liferay UVP and battle cards are more tools to help the deal progress at this stage.
+* Liferay USP and battle cards are more tools to help the deal progress at this stage.
 
 To establish business value use the following tactics and tools: 
 
@@ -127,7 +127,7 @@ To help to prove business value, use the following:
 * Demonstrating capabilities, often via a customized demo, is a critical part of the evaluation phase.
 * Depending on the buyer, ROI and TCO calculations might also be required.
 * It is important the buyer confirms that the offering and solution being put together for them is what they want. 
-* You will also need to put together a SOE. That could mean listing on high evel all the things that need to happen before the MVP goes live. This will help you to count backwards to help the buyer understand also when there’s the time to have the contracts signed. 
+* You will also need to put together a _sequence of events_. That could mean listing on high level all the things that need to happen before the minimum viable product (MVP) goes live. This will help you to count backwards to help the buyer understand also when there’s the time to have the contracts signed. 
 
 To confirm the value and the process:
 

@@ -53,7 +53,7 @@ Advanced Configuration contains additional options:
 To use the Custom Facet, you must know which non-analyzed keyword field to use in the configuration. 
 
 ```{tip}
-Elasticsearch supports indexing fields in multiple ways. Some text fields can be used as keyword fields if they're nested `raw` [multi-fields](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/multi-fields.html) in the mapping, or if the field is mapped in an additional separate field mapping as `fieldName_sortable` (as a `keyword`). See the example below on creating facets for Custom Fields, as it leverages the Elasticsearch multi-field concept.
+Elasticsearch supports indexing fields in multiple ways. Some text fields can be used as keyword fields if they're nested `raw` [multi-fields](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/multi-fields.html) in the mapping, or if the field is mapped in an additional separate field mapping as `fieldName_sortable.keyword_lowercase` (as a `keyword`). See the example below on creating facets for Custom Fields, as it leverages the Elasticsearch multi-field concept.
 ```
 
 To browse the entire list of available fields, inspect the field mappings from *Control Panel* &rarr; *Configuration* &rarr; *Search* (click the *Field Mappings* tab). Here you'll see numerous indexes. The Liferay Assets you're likely interested in are indexed into the [company index](../../search-administration-and-tuning/elasticsearch-indexes-reference.md), which is named similarly to `liferay-20101` (`20101` is the Company ID).

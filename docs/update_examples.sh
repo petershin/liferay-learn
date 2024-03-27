@@ -81,6 +81,8 @@ function main {
 }
 
 function update_examples {
+	local update_example_script_name
+
 	if [ -n "${1}" ] && [ "${1}" != "prod" ]
 	then
 		local zip_dir_name=`find . -name "liferay-${1}.zip" -type d`

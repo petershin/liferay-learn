@@ -9,72 +9,71 @@ visibility:
 
 **At a Glance**
 
-* Liferay provides Battlecards for
-  * The four main competitors covered in Level 0
-  * Other vendors competed against regularly
-  * MACH Alliance and Low-Code / No-Code offerings
-* Additional Battlecards are being added over time
+* Liferay provides Battlecards for vendors in four categories
+  * Low Code Application Platforms (LCAP)
+  * Composable Point Solutions (CPS)
+  * Digital Experience Platforms (DXP)
+  * Enterprise Suites
+* Additional Battlecards are added over time
 
 ## Battlecard Summaries
 
-This section contains a brief review of each of the currently available Battlecards. This is _not_ intended to be a deep-dive, please download the Battlecards themselves to view all of the details.
+The session on [Competitive Landscape and Liferay Positioning](../../level-0/competitive-landscape-and-liferay-positioning.md) covered the four categories that Liferay's competitors are grouped into: Low Code Application Platforms (LCAP), Composable Point Solutions (CPS), Digital Experience Platforms (DXP), and Enterprise Suites.
 
-Acquia, Adobe, Optimizely and Sitecore are the [four main competitors](../../level-0/competitive-landscape-and-liferay-positioning.md) covered in the level 0 module.
+This section contains a brief review of each of the currently available Battlecards. This is _not_ intended to be a deep-dive, please download the Battlecards themselves to view all of the details.
 
 ### Acquia
 
 * Acquia is a SaaS company that provides enterprise products, services, and technical support for the open-source web content management platform Drupal.
-* Liferay shouldn’t fear Acquia at all unless the opportunity use case is a pure play CMS or B2C website.
+* Acquia's main focus and strength are in CMS and B2C website solution use cases.
+* Liferay continues to be stronger in B2B and B2E Experience use cases, according to the latest report from Gartner.
 
 ### Adobe Experience Cloud
 
-* Adobe deployments are of very high cost.
-* Adobe does not have document management or collaboration capabilities.
+* Adobe Experience Cloud is a collection of integrated online marketing and web analytics products by Adobe Inc.
+* Liferay offers a substantially lower total cost of ownership (TCO).
+* For complex scenarios requiring extensive integration with other systems, including legacy, internal and back-office systems, Liferay outperforms Adobe.
 
 ### Optimizely
 
 * Optimizely provides a SaaS DXP and is strong in B2C use cases.
 * Episerver acquired Optimizely in 2021, and chose Optimizely as the rebranded name for both companies.
-* Optimizely relies heavily on Forrester and Gartner reports to attract prospects.
-* The offering is lacking in employee experience capabilities, is not intuitive for non-technical users, and lacks a robust user community.
 
 ### Sitecore
 
 * Sitecore is a DXP focused on marketing driven opportunities.
-* Gartner reports that some customers accumulate more technical debt from each version upgrade.
 * Customers report limited out-of-the-box capabilities that require a lot of customization and hidden costs, as well as a lack of direct support to all customers.
-
-In addition to the four main competitors faced by Liferay, there are Battlecards for several other organizations:
+* Personalization with Liferay extends beyond targeting content (Sitecore is primarily a CMS) and includes all engagements, interactions, and transactions not based on a content interaction.
 
 ### HCL Technologies
 
 * HCL Technologies is a multinational IT services and consulting company that offers HCL Digital Experience.
 * IBM sold a number of the Websphere software products to HCL in 2019.
-* To date there has been no word about any future development, despite support costs continuing to rise.
-* Ultimately, HCL knows how to be a consulting and services company, not a product company.
+* Liferay is the clear alternative for organizations that currently have IBM Websphere Portal and are experiencing the pain of rising costs, potential disruption in support and the possibility of discontinued future development.
+* Liferay can make the transition easy, providing organizations with a modern, reliable, secure, manageable and affordable infrastructure now and in the future, with the flexibility and customizability of Java-based open source code, out of the box applications, and Headless APIs.
 
 ### Magnolia
 
-* Magnolia is a java-based, open-source CMS.
+* Magnolia is a Java-based, open-source CMS.
 * Magnolia is primarily a CMS, not a true digital experience platform like Liferay.
-* According to Gartner, Magnolia is now lacking in their “ability to execute” and “completeness of vision”.
 
 ### Open Source Drupal
 
 * Another open source competitor is Drupal and more specifically Open Source Drupal is a “free” CMS written in PHP. Acquia DXP is based on Drupal.
-* Drupal is known for trying to be “bigger and better” too fast instead of maintaining a solid foundation. Support is lacking (according to current customers), learning curve is steep, upgrades are notoriously difficult, and it can take months (or years!) for bugs to be fixed.
+* Emphasize the hybrid nature of Liferay's headless implementation which is a distinguishing feature from other CMS vendors. It is unique in that you can create content in the UI, create it via Headless or both.
+* Liferay recently won an opportunity with a organization that was also considering Drupal. The customer ultimately chose Liferay because they determined that Liferay is an extensively used product, and the Liferay partner ecosystem backing the technology also transmitted confidence.
 
 ### Salesforce
 
 * Salesforce Experience Cloud is a set of functionality acquired by and built on top of the Salesforce CRM platform, which allows companies to build digital experiences.
-* Salesforce bought their way into the DXP market via 62 acquired organizations to date, so the offering is very fractured. For example they purchased Mulesoft because they didn't have a backend.
-* Salesforce “gives products away” in order to get their foot in the door with a customer, and will expand their influence (and high costs) from there.
+* Liferay recently won an opportunity with a manufacturing organization that was also considering Salesforce. Liferay stood out from the other competitors with the service level experience (sales team, responsiveness, availability, etc.), which was one of the deciding factors which led to Liferay winning the opportunity.
+* Another recent win was with a telecommunications company. The two main differentiators were cost and integration capabilities. Salesforce was going to cost much more, and the customer felt that Liferay was superior in its breadth of integration capabilities. They wanted a single platform to give access to their different enterprise systems, which made integration key.
 
 ### Sharepoint
 
 * Microsoft Sharepoint is a collaboration platform designed for the purpose of storing and managing documents and content. 
-* Sharepoint doesn’t play well with others capabilities unless they are other Microsoft products. 
-* There are no native B2B capabilities, pricing is high and complex, and apps are disconnected.
+* There are no B2B capabilities and Sharepoint runs on Microsoft environments only, leading to vendor lock-in.
+* Liferay has one of the highest scores for B2B Experience use cases (according to the latest Gartner report), has more flexible deployment options, and can be integrated with third party applications without risk of vendor lock-in.
 
 ### Wordpress VIP
 
@@ -83,8 +82,10 @@ In addition to the four main competitors faced by Liferay, there are Battlecards
 
 ### Oracle Service Cloud
 
-* Oracle Service Cloud is an enterprise platform that has grown its capabilities through many acquisitions similar to many other competitors.
-* There are high costs associated with little flexibility when it comes to customers’ needs.
+* Oracle has created an Enterprise Application suite by acquiring 65 companies, integrated to create "Fusion Applications".
+* Oracle's main focus is to cover end-to-end business processes, with a focus on ERP, with very little focus on CX, or Digital Experience.
+* Oracle is no longer regarded as a DXP player according to Gartner.
+* Liferay usually only competes with Oracle when an organization already has a big Oracle footprint, where Oracle already has vendor lock-in.
 
 ### OutSystems
 
@@ -135,5 +136,21 @@ This Battlecard summarizes some selling points against any Low-Code / No-Code so
 * ShopifyPlus has evolved from the consumer-focused Shopify application
 * Shopify is a best fit for digital businesses that need a quick, light, and usable solution
 * ShopifyPlus has significant functional limitations compared with true enterprise platforms
+
+### Backbase
+
+* Backbase is a fast growing fintech software provider that empowers financial institutions to accelerate their digital transformation and compete in a digital-first world.
+* Despit being a best fit for digital businesses that need certain limited use cases, Backbase has significant functional limitations versus its enterprise peers.
+
+### Contentful
+
+* Contentful is a flexible and future-friendly content platform that helps editors to manage and developers to serve content into mobile or web applications.
+* Despite being one of the fastest growing brands in the market, Contentful has certain limitations for sites that require high levels of customization, especially e-commerce.
+
+### Umbraco
+
+* Umbraco is an open-source .NET Core CMS. 
+* Umbraco is used by more than 500,000 companies and web solutions around the world, from small business brochure sites to complex multilingual corporate websites.
+* Although Umbraco may be a good fit for a project consisting of a single website, it seems to be costly and lacking in features and accessibility that are needed for more complex solutions.
 
 Next: Understand the [structure of the battlecards](./battlecard-format.md).

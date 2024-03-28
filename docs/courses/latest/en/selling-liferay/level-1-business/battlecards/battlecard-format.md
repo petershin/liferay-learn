@@ -38,7 +38,7 @@ Coupled with this, the end user and developer experiences are fragmented and the
 
 ### Company Snapshot
 
-![Screenshot of the Company Snapshot section of the MACH Alliance Battlecard from Q2 2023.](./battlecard-format/images/01.png)
+![Screenshot of the Company Snapshot section of the MACH Alliance Battlecard.](./battlecard-format/images/01.png)
 
 The Company Snapshot section provides information on the company and its product offerings to provide a summary of the company and what they sell.
 
@@ -54,7 +54,7 @@ This section is compiled from scraped and manually added information.
 
 ### Selling Against
 
-![Screenshot of the Selling Against section of the MACH Alliance Battlecard from Q2 2023.](./battlecard-format/images/02.png)
+![Screenshot of the Selling Against section of the MACH Alliance Battlecard.](./battlecard-format/images/02.png)
 
 The Selling Against section provides information geared toward helping understand the way the competitor attempts to position their product and what their strengths and weaknesses are.
 
@@ -71,7 +71,7 @@ The information in this section is manually sourced from Liferay’s Product Mar
 
 ### Dynamic Content
 
-![Screenshot of the dynamically updated section of the MACH Alliance Battlecard from Q2 2023.](./battlecard-format/images/03.png)
+![Screenshot of the dynamically updated section of the Outsystems Battlecard.](./battlecard-format/images/03.png)
 
 The Dynamic Content section contains a snapshot of the most recent updates and communication including:
 

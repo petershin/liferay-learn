@@ -11,7 +11,7 @@ Okta is an identity and access management platform that ensures secure user auth
 !!! note
     This tutorial requires you to have an existing Okta dev account to test with.
 
-1. Log in to [Okta Dev](https://developer.okta.com/login/) and navigate to *Applications* &rarr; *Add Application* (Shortcuts in the right menu) &rarr; *Create App Integration*.
+<!-- 1. Log in to [Okta Dev](https://developer.okta.com/login/) and navigate to *Applications* &rarr; *Add Application* (Shortcuts in the right menu) &rarr; *Create App Integration*.
 
 1. Select *OIDC - OpenID Connect*, under Sign-in method, and *Web Application*, under Application type.
 
@@ -49,7 +49,7 @@ Okta is an identity and access management platform that ensures secure user auth
         jwks_uri: "https://dev-123456.okta.com/oauth2/default/v1/keys"
     ```
 
-1. This will give you the necessary URL with the exception of the */userinfo* endpoint which can be constructed from your base URL and the Auth Server name, for example *https://dev-123456.okta.com/oauth2/default/v1/userinfo*.
+1. This will give you the necessary URL with the exception of the */userinfo* endpoint which can be constructed from your base URL and the Auth Server name, for example *https://dev-123456.okta.com/oauth2/default/v1/userinfo*. -->
 
 ## Configuring the OpenID Connect Provider Connection
 

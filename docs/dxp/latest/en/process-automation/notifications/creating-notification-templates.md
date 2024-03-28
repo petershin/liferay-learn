@@ -18,7 +18,7 @@ Currently, notification templates only support [object actions](../../liferay-de
 !!! important
     To use email notifications, your instance must have a configured [mail server](../../installation-and-upgrades/setting-up-liferay/configuring-mail.md). Once configured, you can access additional [email notification settings](../../system-administration/configuring-liferay/virtual-instances/email-settings.md) at the instance level.
 
-If the out-of-the-box notification types don't meet your needs, you can create custom notification types using client extensions. See [Microservice Client Extensions](../../building-applications/client-extensions/microservice-client-extensions.md) for more information.
+If the out-of-the-box notification types don't meet your needs, you can create custom notification types using client extensions. See [Microservice Client Extensions](../../liferay-development/integrating-microservices.md) for more information.
 
 ## Adding Email Notification Templates
 

@@ -77,7 +77,7 @@ Once Liferay is running,
 
 The `Captcha_GET_FromInstance.sh` script calls the REST service with a cURL command.
 
-```{literalinclude} ./captcha-api-basics/resources/liferay-p6s7.zip/curl/captcha-api-basics.sh
+```{literalinclude} ./captcha-api-basics/resources/liferay-p6s7.zip/curl/Captcha_GET_FromInstance.sh
     :language: bash
 ```
 

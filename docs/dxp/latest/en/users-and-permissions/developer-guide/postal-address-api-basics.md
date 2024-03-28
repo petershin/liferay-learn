@@ -99,7 +99,7 @@ The other cURL commands use similar JSON arguments.
 
 The `PostalAddress_POST_ToAccount.java` class adds a postal address by calling the postal-address-related service.
 
-```{literalinclude} ./postal-address-api-basics/resources/liferay-n8y7.zip/java/PostalAddress_POST_Account.java
+```{literalinclude} ./postal-address-api-basics/resources/liferay-n8y7.zip/java/PostalAddress_POST_ToAccount.java
    :dedent: 1
    :language: java
    :lines: 9-35

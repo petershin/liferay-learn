@@ -167,6 +167,6 @@ Here are the main differences:
 ## Related Topics
 
 - [Creating and Managing Objects](../../liferay-development/objects/creating-and-managing-objects.md)
-- [Batch Client Extensions](../../building-applications/client-extensions/batch-client-extensions.md)
+- [Batch Client Extensions](../../liferay-development/importing-exporting-data.md)
 - [Batch Engine API Basics - Importing Data](./batch-engine-api-basics-importing-data.md)
 - [Batch Engine API Basics - Exporting Data](./batch-engine-api-basics-exporting-data.md)

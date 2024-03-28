@@ -10,7 +10,7 @@ toc:
   - ./reference/command-line-tool.md
   - ./reference/defining-environment-variables.md
   - ./reference/liferay-cloud-data-center-locations.md
-  - ./ reference/liferay-saas-compatibility-matrix.md
+  - ./reference/liferay-saas-compatibility-matrix.md
   - ./reference/platform-limitations.md
   - ./reference/example-configuration-files.md
 taxonomy-category-names:
@@ -31,5 +31,7 @@ uuid: f3b8e497-1332-43e9-98c7-b654c048bb99
 - [Upgrading to a High Availability Subscription](./reference/upgrading-to-a-high-availability-subscription.md)
 - [Command-Line Tool](./reference/command-line-tool.md)
 - [Defining Environment Variables](./reference/defining-environment-variables.md)
+- [Liferay Cloud Data Center Locations](./reference/liferay-cloud-data-center-locations.md)
+- [Liferay SaaS Compatibility Matrix](./reference/liferay-saas-compatibility-matrix.md)
 - [Platform Limitations](./reference/platform-limitations.md)
 - [Example Configuration Files](./reference/example-configuration-files.md)

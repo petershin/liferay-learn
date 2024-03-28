@@ -110,7 +110,7 @@ When editing a content page, header and footer elements are not included in the 
 
 ### Page Design Options
 
-Open the *Page Design Options panel* (![Page Design Options](../../../images/icon-format.png)) to change the page's [master page template](../defining-headers-and-footers/managing-master-page-templates.md) or [style book](../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md). Click *Options* (![Options button](../../../images/icon-cog3.png)) to access additional page design options, including [frontend client extensions](../../../building-applications/client-extensions/frontend-client-extensions.md).
+Open the *Page Design Options panel* (![Page Design Options](../../../images/icon-format.png)) to change the page's [master page template](../defining-headers-and-footers/managing-master-page-templates.md) or [style book](../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md). Click *Options* (![Options button](../../../images/icon-cog3.png)) to access additional page design options, including [frontend client extensions](../../../liferay-development/customizing-liferays-look-and-feel.md).
 
 ### Page Content
 

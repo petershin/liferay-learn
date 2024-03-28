@@ -14,7 +14,7 @@ Micro frontends extend the concept of microservices to the frontend side of deve
 
 ![Using Liferay to build a fully-featured and powerful browser application applying Micro Frontends](micro-frontends/images/01.png)
 
-You use [frontend client extensions](../building-applications/client-extensions/frontend-client-extensions.md) coupled with out-of-the-box solutions like [fragments](../site-building/creating-pages/page-fragments-and-widgets/using-fragments.md) and [widgets](../site-building/creating-pages/page-fragments-and-widgets/using-widgets.md) to implement micro frontends. Developers can create or extend applications using different frameworks and then connect them to Liferay using client extensions.
+You use [frontend client extensions](../liferay-development/customizing-liferays-look-and-feel.md) coupled with out-of-the-box solutions like [fragments](../site-building/creating-pages/page-fragments-and-widgets/using-fragments.md) and [widgets](../site-building/creating-pages/page-fragments-and-widgets/using-widgets.md) to implement micro frontends. Developers can create or extend applications using different frameworks and then connect them to Liferay using client extensions.
 
 One of the available frontend client extensions is the [basic custom element](../liferay-development/integrating-external-applications/creating-a-basic-custom-element.md). Basic custom elements use Liferay's frontend infrastructure to register external, remote applications with the Liferay platform and render them as widgets. This way, users can develop the applications separately, create basic custom elements using client extensions, and add them to a page.
 

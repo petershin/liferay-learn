@@ -157,7 +157,7 @@ Once the endpoint is created, you can see it on your API explorer page `http://l
 
 ### Creating a POST Method Endpoint
 
-In the API Builder, the POST method is used to create [object](../building-applications/objects/creating-and-managing-objects/creating-objects.md) entries.
+In the API Builder, the POST method is used to create [object](../liferay-development/objects/creating-and-managing-objects/creating-objects.md) entries.
 
 <!-- for now, at least. I'll have to change it once new features come out. - Eric -->
 
@@ -313,7 +313,7 @@ You can also click on the schema's name to edit it.
 
    To add an entity to the schema, click the entity's name or the *Add* icon (![Add icon](../images/icon-add-app.png)) next to it.
 
-   Select entities available from your [Liferay object](../building-applications/objects/creating-and-managing-objects.md). If the object has [object relationships](../building-applications/objects/creating-and-managing-objects/relationships.md), the entities from those objects can be selected also.
+   Select entities available from your [Liferay object](../liferay-development/objects/creating-and-managing-objects.md). If the object has [object relationships](../liferay-development/objects/creating-and-managing-objects/relationships.md), the entities from those objects can be selected also.
 
    You can use the search bar to find entities.
 

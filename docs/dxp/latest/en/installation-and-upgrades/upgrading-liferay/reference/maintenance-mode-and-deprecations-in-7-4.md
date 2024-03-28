@@ -34,8 +34,8 @@ Here are the features deprecated in 7.4:
 
 | Feature | Availability | Notes |
 | :------ | :----------- | :---- |
-| App Builder, App Builder Workflow | Removed | Replaced by [Liferay Objects](../../../building-applications/objects.md). |
-| Bootstrap 3 & Bootstrap 4 compatibility layer | Removed | Opt in to adding a compatibility layer during [Theme upgrade](../../../site-building/site-appearance/themes/upgrading-a-theme.md) or manually add the layer.  |
+| App Builder, App Builder Workflow | Removed | Replaced by [Liferay Objects](../../../liferay-development/objects.md). |
+| Bootstrap 3 & Bootstrap 4 compatibility layer | Removed | Opt in to adding a compatibility layer during [Theme upgrade](../../../liferay-development/customizing-liferays-look-and-feel/themes/upgrading-a-theme.md) or manually add the layer.  |
 | Commerce Account Widget | Removed | Replaced by the DXP/Portal Accounts Widget |
 | Central Authentication Service (CAS) | Archived | Deprecated in 7.2. Replaced by other solutions, including SAML, OpenID Connect, and Token-based SSO. |
 | Commerce Categories Navigation widget | Bundled | Replaced by [Display Page Templates](../../../site-building/displaying-content/using-display-page-templates.md) [Menu Display](../../../site-building/site-navigation/configuring-menu-displays.md) support. |
@@ -43,12 +43,12 @@ Here are the features deprecated in 7.4:
 | Commerce Category Content widget | Bundled | Replaced by [Display Page Templates](../../../site-building/displaying-content/using-display-page-templates.md). |
 | Digest Authentication | Bundled | Digest Authentication  requires weak password hash storage, which is a vulnerability. |
 | Dynamic Data Lists | Bundled | Deprecated in 7.3. Replaced by [Liferay Objects](../../../process-automation/forms/dynamic-data-lists/migrating-to-liferay-objects.md). |
-| Export/Import Resource Importer | Removed | This importer was originally created to allow themes to provide additional Liferay assets during deployment. It was deprecated in earlier versions of 7.4 and was removed in 7.4 U74 / 7.4 GA74. We recommend leveraging our new approaches such as site initializers or [client extensions](../../../building-applications/client-extensions.md). |
+| Export/Import Resource Importer | Removed | This importer was originally created to allow themes to provide additional Liferay assets during deployment. It was deprecated in earlier versions of 7.4 and was removed in 7.4 U74 / 7.4 GA74. We recommend leveraging our new approaches such as site initializers or [client extensions](../../../liferay-development/client-extensions.md). |
 | EXT Plugins support | Removed | Replaced by configuration settings and standard extension points. |
 | Google Login/SSO | Archived | Deprecated in 7.2. Replaced by other solutions, including SAML, OpenID Connect, and Token-based SSO. |
 | Image Editor (Soy-based) | Removed | Replaced by a React-based image editor. |
 | JAAS support code | Bundled | No replacement. |
-| Kaleo Forms     | Bundled | Deprecated in 2023.Q3. Replaced by business processes for [Liferay Objects](../../../building-applications/objects.md) (i.e., objects, workflow, and form container fragments). |
+| Kaleo Forms     | Bundled | Deprecated in 2023.Q3. Replaced by business processes for [Liferay Objects](../../../liferay-development/objects.md) (i.e., objects, workflow, and form container fragments). |
 | Liferay Mobile Device Detection Enterprise | Archived | Deprecated in 7.2. Contact 51Degrees for up-to-date definitions. |
 | Liferay Screens | Removed. Final version released in 7.3. | No direct replacement; however, the mobile SDK and headless APIs support mobile application development. |
 | Liferay Sync Connector and Sync Client | Archived | Deprecated in 7.3. No direct replacement. |

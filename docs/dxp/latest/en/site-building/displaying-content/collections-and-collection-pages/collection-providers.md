@@ -28,7 +28,7 @@ The following collection providers are available out-of-the-box and function the
 
 Some collection providers are created automatically by Liferay's applications. For example, 
 
-* When an object is published, Liferay creates a collection provider for it. See [Using the Collection Provider for Objects](../../../building-applications/objects/displaying-object-entries.md#using-the-collection-provider-for-objects) for more information.
+* When an object is published, Liferay creates a collection provider for it. See [Using the Collection Provider for Objects](../../../liferay-development/objects/displaying-object-entries.md#using-the-collection-provider-for-objects) for more information.
 * [Liferay DXP] When a search blueprint is published, Liferay creates a collection provider for it. See [Collections with Search Blueprints](../../../using-search/liferay-enterprise-search/search-experiences/search-blueprints/collections-with-search-blueprints.md) for more information.
 
 ## Related Items Collection Providers
@@ -51,7 +51,7 @@ Related items collection providers show lists of items related to the main items
 
 ![Items with the Same Categories requires you to choose an item type.](./collection-providers/images/04.png)
 
-**Objects in a Relationship:** (when viewing an object) shows other objects that have a relationship to the object being viewed. A new related item collection provider appears for every relationship the main object has. For example, if the main object is a *country* and has a [one-to-many relationship](../../../building-applications/objects/creating-and-managing-objects/relationships/defining-object-relationships.md) with a *city* object (with many cities mapped to one country), all city object entries related to that country entry are shown.
+**Objects in a Relationship:** (when viewing an object) shows other objects that have a relationship to the object being viewed. A new related item collection provider appears for every relationship the main object has. For example, if the main object is a *country* and has a [one-to-many relationship](../../../liferay-development/objects/creating-and-managing-objects/relationships/defining-object-relationships.md) with a *city* object (with many cities mapped to one country), all city object entries related to that country entry are shown.
 
 ### Advanced Rules for Items with the Same Categories
 

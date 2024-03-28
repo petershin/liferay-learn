@@ -175,7 +175,7 @@ The `elementDefinition` is where you'll do the bulk of the work. Its properties 
 
 `configuration` provides the `queryConfiguration`, which holds the query clauses you're contributing, via the `queryEntries` property.
 
-`icon` sets a string that sets which available icon to use for the Element. Any image available in the [Lexicon Icon Library](../../../../../building-applications/developing-a-java-web-application/using-mvc/tag-libraries/clay-tag-library/clay-icons.md) can be used (e.g., `thumbs-up`).
+`icon` sets a string that sets which available icon to use for the Element. Any image available in the [Lexicon Icon Library](../../../../../liferay-development/building-applications/developing-a-java-web-application/using-mvc/tag-libraries/clay-tag-library/clay-icons.md) can be used (e.g., `thumbs-up`).
 
 `uiConfiguration` sets the configuration elements that you'll show in the UI and then pass into your custom Element with the configured values. 
 

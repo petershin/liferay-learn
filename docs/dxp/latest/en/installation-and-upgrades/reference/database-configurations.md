@@ -61,7 +61,7 @@ Some Liferay events cause database actions (e.g., creating and dropping tables) 
 
 | Event | How to Proceed | 
 | :---- | :---------- | 
-| [Publishing Object Definitions](../../building-applications/objects/creating-and-managing-objects/creating-objects.md#publishing-object-drafts) | Do not use Objects unless the Liferay database user has full database permissions. |
+| [Publishing Object Definitions](../../liferay-development/objects/creating-and-managing-objects/creating-objects.md#publishing-object-drafts) | Do not use Objects unless the Liferay database user has full database permissions. |
 | Deploying plugins that create tables | Before deploying, grant full rights to the Liferay database user, then re-secure the database once deployed. |
 | Upgrading Liferay | Before upgrading, grant full rights to the Liferay database user, then re-secure the database once upgraded. |
 ```

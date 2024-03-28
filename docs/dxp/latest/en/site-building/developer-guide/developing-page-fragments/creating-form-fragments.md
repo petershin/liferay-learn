@@ -49,7 +49,7 @@ To create form fragments,
 
 1. Click *Publish*.
 
-Now use your form fragment to build forms in content pages. See [Using Fragments to Build Forms](../../../building-applications/objects/using-fragments-to-build-forms.md) for more information.
+Now use your form fragment to build forms in content pages. See [Using Fragments to Build Forms](../../../liferay-development/objects/using-fragments-to-build-forms.md) for more information.
 
 If using the Fragments Toolkit, you can select the fragment type when running `yarn run add-fragment`.
 
@@ -113,7 +113,7 @@ Form fragments include the `input` variable for use with each fragment's JavaScr
 |:-------------------------------|:------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `allowedFileExtensions`        | `string`                | Allowed file extensions. If Show Supported File Info is enabled, the allowed extensions appear in the field's help text.                                                                  |
 | `maxFileSize`                  | `number`                | Maximum upload size in megabytes. If Show Supported File Info is enabled, the maximum allowed size appears in the field's help text.                                                      |
-| `selectFromDocumentLibrary`    | `boolean`               | Whether users can select files from the document library. This is set in the object's [attachment field](../../../building-applications/objects/creating-and-managing-objects/fields.md). |
+| `selectFromDocumentLibrary`    | `boolean`               | Whether users can select files from the document library. This is set in the object's [attachment field](../../../liferay-development/objects/creating-and-managing-objects/fields.md). |
 | `selectFromDocumentLibraryURL` | `string` or `undefined` | If `selectFromDocumentLibrary` is true, this property contains the URL for rendering the corresponding `ItemSelector`.                                                                    |
 
 ### Attributes for `number` Input
@@ -143,4 +143,4 @@ Form fragments include the `input` variable for use with each fragment's JavaScr
 
 [Developing Page Fragments](../developing-page-fragments.md)
 
-[Using Fragments to Build Forms](../../../building-applications/objects/using-fragments-to-build-forms.md)
+[Using Fragments to Build Forms](../../../liferay-development/objects/using-fragments-to-build-forms.md)

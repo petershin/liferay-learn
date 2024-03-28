@@ -1,10 +1,10 @@
 ---
 toc:
-  - ./integrating-micro-services/using-a-microservice-client-extension.md
-  - ./integrating-micro-services/object-action-yaml-configuration-reference.md
-  - ./integrating-micro-services/object-validation-rule-yaml-configuration-reference.md
-  - ./integrating-micro-services/workflow-action-yaml-configuration-reference.md
-  - ./integrating-micro-services/notification-type-yaml-configuration-reference.md
+  - integrating-microservices/using-a-microservice-client-extension.md
+  - integrating-microservices/object-action-yaml-configuration-reference.md
+  - integrating-microservices/object-validation-rule-yaml-configuration-reference.md
+  - integrating-microservices/workflow-action-yaml-configuration-reference.md
+  - integrating-microservices/notification-type-yaml-configuration-reference.md
 uuid: c35ace6c-9e29-4e9e-be37-b4799a8b21d5
 taxonomy-category-names:
 - Development and Tooling

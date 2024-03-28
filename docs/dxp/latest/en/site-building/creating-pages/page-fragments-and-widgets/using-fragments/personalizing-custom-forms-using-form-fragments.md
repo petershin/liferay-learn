@@ -14,7 +14,7 @@ Form fragments auto-generate forms based on custom objects. If Liferay's out-of-
 The custom form fragments use HTML, CSS, and JavaScript code to create an element with customized style and functionality. This way, you can customize your forms using an existing design system and/or components library. See [Creating Form Fragments](../../../developer-guide/developing-page-fragments/creating-form-fragments.md) for more information.
 
 ```{important}
-Form fragments can only be used with custom objects. Liferay hides the Form Components fragment set until you have at least one published object. Once published, users with access to the object can view and use the Form Components fragments. See [Creating Objects](../../../../building-applications/objects/creating-and-managing-objects/creating-objects.md) for more information.
+Form fragments can only be used with custom objects. Liferay hides the Form Components fragment set until you have at least one published object. Once published, users with access to the object can view and use the Form Components fragments. See [Creating Objects](../../../../liferay-development/objects/creating-and-managing-objects/creating-objects.md) for more information.
 ```
 
 ## Map Custom Form Fragments to Form Fields
@@ -37,7 +37,7 @@ To alter the default style and functionality of a form field, you can map a [cus
 
    ![The options that are compatible with the field can be selected.](./personalizing-custom-forms-using-form-fragments/images/03.png)
 
-You can check if the custom fragment is applied to the field type by adding a form to a content or template page. See [Using Fragments to Build Forms](../../../../building-applications/objects/using-fragments-to-build-forms.md) to learn more about building forms using fragments.
+You can check if the custom fragment is applied to the field type by adding a form to a content or template page. See [Using Fragments to Build Forms](../../../../liferay-development/objects/using-fragments-to-build-forms.md) to learn more about building forms using fragments.
 
 Once you've applied the custom form fragment to the field type, the new style (on the left) is applied to the field type instead of the out-of-the-box style (on the right).
 
@@ -50,5 +50,5 @@ Once you've applied the custom form fragment to the field type, the new style (o
 * [Developing Page Fragments](../../../developer-guide/developing-page-fragments.md)
 * [Form Components](./default-fragments-reference.md#form-components)
 * [Form Fragment Options](./configuring-fragments/general-settings-reference.md#form-fragment-options)
-* [Using Fragments to Build Forms](../../../../building-applications/objects/using-fragments-to-build-forms.md)
+* [Using Fragments to Build Forms](../../../../liferay-development/objects/using-fragments-to-build-forms.md)
 

@@ -18,7 +18,7 @@ uuid: f70fbde9-da00-4de9-b63c-524720b4222c
 When you create a search blueprint, a [collection provider](../../../../site-building/displaying-content/collections-and-collection-pages/collection-providers.md) is registered automatically. Assets matching the blueprint's query and configuration are added to the collection.
 
 ```{important}
-Only content registered with Liferay's [Asset Framework](../../../../building-applications/data-frameworks/asset-framework.md) is returned by the blueprints collection provider.
+Only content registered with Liferay's [Asset Framework](../../../../liferay-development/building-applications/data-frameworks/asset-framework.md) is returned by the blueprints collection provider.
 ```
 
 ![Search blueprints are registered as collection providers.](./collections-with-search-blueprints/images/01.png)

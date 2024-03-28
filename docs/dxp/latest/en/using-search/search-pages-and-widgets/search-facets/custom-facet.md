@@ -176,7 +176,7 @@ ddmFieldArray.ddm__keyword__40806__Textb5mx_en_US.ddmFieldValueKeyword_en_US_Str
 
 {bdg-secondary}`7.4 U72+/GA72+`
 
-To find [object definition](../../../building-applications/objects.md) fields in existing documents in the index, use the [Display Results in Document Form](../search-results/configuring-the-search-results-widget#inspecting-search-engine-documents) setting in the Search Results widget.
+To find [object definition](../../../liferay-development/objects.md) fields in existing documents in the index, use the [Display Results in Document Form](../search-results/configuring-the-search-results-widget#inspecting-search-engine-documents) setting in the Search Results widget.
 
 The document has a `nestedFieldArray` field with nested content:
 

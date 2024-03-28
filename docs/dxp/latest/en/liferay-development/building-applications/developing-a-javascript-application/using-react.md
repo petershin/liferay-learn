@@ -1,7 +1,7 @@
 ---
 toc:
-  - ./../client-extensions/frontend-client-extensions/tutorials/creating-a-basic-custom-element.md
-  - ./../client-extensions/frontend-client-extensions/tutorials/using-routes-with-custom-elements.md
+  - ../../integrating-external-applications/creating-a-basic-custom-element.md
+  - ../../integrating-external-applications/using-routes-with-custom-elements.md
   - ./using-react/remote-applications-with-headless-apis.md
   - ./using-react/react-component-utilities-reference.md
 uuid: 572b3a78-1921-410e-9ae2-d16b20d23632

@@ -20,7 +20,7 @@ The application lists the following details for each notification:
 | Column     | Description                                                                                                                                                                                 |
 |:-----------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Subject    | The notification's subject, which is set in the [notification template](./creating-notification-templates.md).                                                                              |
-| Trigger By | The Object responsible for triggering the [notification action](../../building-applications/objects/creating-and-managing-objects/actions/defining-object-actions.md#notification-actions). |
+| Trigger By | The Object responsible for triggering the [notification action](../../liferay-development/objects/creating-and-managing-objects/actions/defining-object-actions.md#notification-actions). |
 | From       | The notification's sender, which is set in the [notification template](./creating-notification-templates.md).                                                                               |
 | To         | The notification's recipients, which are set in the [notification template](./creating-notification-templates.md).                                                                          |
 | Status     | Indicates the notification status, whether it was sent (*Sent*) or is in the process of sending (*Unsent*).                                                                                 |

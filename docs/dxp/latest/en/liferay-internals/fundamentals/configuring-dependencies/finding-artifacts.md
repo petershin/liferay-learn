@@ -144,4 +144,4 @@ Now that you know the artifact's attributes, you can configure a dependency on i
 * [Importing Packages](../importing-packages.md)
 * [Exporting Packages](../exporting-packages.md)
 * [Resolving Third Party Library Package Dependencies](./resolving-third-party-library-package-dependencies.md)
-* [Deploying WARs \(WAB Generator\)](../../../building-applications/reference/deploying-wars-wab-generator.md)
+* [Deploying WARs \(WAB Generator\)](../../../liferay-development/reference/deploying-wars-wab-generator.md)

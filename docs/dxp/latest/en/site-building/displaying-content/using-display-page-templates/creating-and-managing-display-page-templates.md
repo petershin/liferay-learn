@@ -15,7 +15,7 @@ Display page templates define structures for displaying content at a dedicated f
 
 - [Blog Entries](../../../content-authoring-and-management/blogs/getting-started-with-blogs.md)
 - [Categories](../../../content-authoring-and-management/tags-and-categories/defining-categories-and-vocabularies-for-content.md) {bdg-secondary}`Liferay DXP/Portal 7.4+`
-- [Custom Objects](../../../building-applications/objects/displaying-object-entries.md) {bdg-secondary}`Liferay DXP/Portal 7.4+`
+- [Custom Objects](../../../liferay-development/objects/displaying-object-entries.md) {bdg-secondary}`Liferay DXP/Portal 7.4+`
 - [Documents](../../../content-authoring-and-management/documents-and-media/publishing-and-sharing/publishing-documents.md)
 - [Web Content Articles](../../../content-authoring-and-management/web-content/web-content-articles/adding-a-basic-web-content-article.md)
 
@@ -81,7 +81,7 @@ For example, you can create different display page templates for an object, each
 
 ![Map links to different display page templates](./creating-and-managing-display-page-templates/images/04.png)
 
-This gives you more freedom when dealing with objects and [forms mapped from objects](../../../building-applications/objects/using-fragments-to-build-forms.md) with multiple steps.
+This gives you more freedom when dealing with objects and [forms mapped from objects](../../../liferay-development/objects/using-fragments-to-build-forms.md) with multiple steps.
 
 ### Previewing the Display Page Template Content Mappings
 

@@ -58,7 +58,7 @@ From a low level perspective, staging is an equivalence relation where entities 
 Understanding this process can improve efficiency and help you plan ahead to achieve a seamless publishing experience. See [Understanding the Publishing Process](./staging/understanding-the-publishing-process.md) for more information.
 
 ```{important}
-Staging does not support [Commerce applications](https://learn.liferay.com/commerce/latest/en/index.html) and [custom objects](../../building-applications/objects.md). During the publishing process, entities from Commerce and objects are not staged. Also, [A/B testing](../optimizing-sites/ab-testing.md) is not supported if staging is enabled.
+Staging does not support [Commerce applications](https://learn.liferay.com/commerce/latest/en/index.html) and [custom objects](../../liferay-development/objects.md). During the publishing process, entities from Commerce and objects are not staged. Also, [A/B testing](../optimizing-sites/ab-testing.md) is not supported if staging is enabled.
 ```
 
 ```{raw} html

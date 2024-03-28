@@ -133,12 +133,12 @@ In Liferay 7.4 GA25+/U25+, you can also search for widget pages (by title only).
 
 ## Returning Objects in Search Results
 
-Liferay 7.4 includes [Liferay Objects](../../../building-applications/objects.md), a GUI-driven application-building framework. Fields of each Object's definition can be declared searchable; Object Entries (the records submitted by the application's users) [can then be queried](../../getting-started/searching-for-content.md#searching-for-liferay-objects) and returned in the Search Results widget.
+Liferay 7.4 includes [Liferay Objects](../../../liferay-development/objects.md), a GUI-driven application-building framework. Fields of each Object's definition can be declared searchable; Object Entries (the records submitted by the application's users) [can then be queried](../../getting-started/searching-for-content.md#searching-for-liferay-objects) and returned in the Search Results widget.
 
 ![A title and a content summary are displayed for Object Entries.](./search-results-behavior/images/13.png)
 
-For Liferay 7.4 U64+/GA64+, clicking an object entry in search results redirects to the entry's [display page](../../../building-applications/objects/displaying-object-entries.md#creating-display-page-templates-for-objects) to provide a detailed view of the result. If a display page template does not exist for the object, a default layout is used. Click the back arrow in the entry detail view to return to the search page.
+For Liferay 7.4 U64+/GA64+, clicking an object entry in search results redirects to the entry's [display page](../../../liferay-development/objects/displaying-object-entries.md#creating-display-page-templates-for-objects) to provide a detailed view of the result. If a display page template does not exist for the object, a default layout is used. Click the back arrow in the entry detail view to return to the search page.
 
 ![A default display page template is created if one doesn't already exist.](./search-results-behavior/images/14.png)
 
-For Liferay DXP 2024.Q1+/Liferay Portal 7.4 GA112+, [account restricted objects](../../../building-applications/objects/creating-and-managing-objects/using-system-objects-with-custom-objects/restricting-access-to-object-data-by-account.md) entries appear in search results, if the search user has the `Accounts > Account Entry: View` permission in an account- or regular-scoped role.
+For Liferay DXP 2024.Q1+/Liferay Portal 7.4 GA112+, [account restricted objects](../../../liferay-development/objects/creating-and-managing-objects/using-system-objects-with-custom-objects/restricting-access-to-object-data-by-account.md) entries appear in search results, if the search user has the `Accounts > Account Entry: View` permission in an account- or regular-scoped role.

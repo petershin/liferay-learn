@@ -14,13 +14,13 @@ uuid: 8b2517e5-e747-49f4-b389-a3b3b1f66d0b
 
 Display page templates display content at a dedicated URL. To use this URL and view the content, you have to first define a template to display it.
 
-Generally, a default display page template is set for a specific content type. You can, however, associate multiple display page templates with the same content type and map any of those options to links. This means users can create applications (e.g., [forms mapped from custom objects](../../../building-applications/objects/using-fragments-to-build-forms.md)) with multiple steps. By using multiple display templates, you can create forms with multiple steps, because each step is linked to a different display page template.
+Generally, a default display page template is set for a specific content type. You can, however, associate multiple display page templates with the same content type and map any of those options to links. This means users can create applications (e.g., [forms mapped from custom objects](../../../liferay-development/objects/using-fragments-to-build-forms.md)) with multiple steps. By using multiple display templates, you can create forms with multiple steps, because each step is linked to a different display page template.
 
 Using display page templates, objects, and Form Container fragments, you can create a page that allows users to add an object entry and edit it in a different page. To do that, it is necessary to create a [custom object](#tasks-custom-object), a [display page template](#edit-display-page-template) to edit the object entry, and a [content page](#content-page-to-display-the-application) where the user can enter a new object entry and view a list of existing object entries.
 
 ## Tasks Custom Object
 
-1. [Create a custom object](../../../building-applications/objects/creating-and-managing-objects/creating-objects.md) and label it *Task*.
+1. [Create a custom object](../../../liferay-development/objects/creating-and-managing-objects/creating-objects.md) and label it *Task*.
 
 1. Click on the *Task* object.
 
@@ -30,7 +30,7 @@ Using display page templates, objects, and Form Container fragments, you can cre
 
 1. Under Action Builder, select *Standalone* as the Trigger.
 
-   This option allows the [action to be mapped to a button](../../../building-applications/objects/creating-and-managing-objects/actions/using-manual-actions.md#mapping-buttons-to-object-actions-in-content-pages).
+   This option allows the [action to be mapped to a button](../../../liferay-development/objects/creating-and-managing-objects/actions/using-manual-actions.md#mapping-buttons-to-object-actions-in-content-pages).
 
 1. Select *Update an Object Entry* as the Action.
 
@@ -164,9 +164,9 @@ You can create a display page template as an initial step and configure the Form
 
 ## Related Topics
 
-[Using Fragments to Build Forms](../../../building-applications/objects/using-fragments-to-build-forms.md)
+[Using Fragments to Build Forms](../../../liferay-development/objects/using-fragments-to-build-forms.md)
 
-[Creating Objects](../../../building-applications/objects/creating-and-managing-objects/creating-objects.md)
+[Creating Objects](../../../liferay-development/objects/creating-and-managing-objects/creating-objects.md)
 
 [Adding a Page to a Site](../../creating-pages/adding-pages/adding-a-page-to-a-site.md)
 

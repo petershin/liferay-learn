@@ -166,9 +166,9 @@ Liferay modules are developed in a Gradle build infrastructure. The following Gr
 | `gradle/` | Contains a Gradle wrapper |
 | `gradlew[.bat]`  | Invokes the Gradle wrapper to execute tasks |
 | `gradle.properties` | Specifies the Liferay product version |
-| `settings.gradle` | Applies Gradle plugins, including the [Liferay Workspace](../../building-applications/tooling.md) plugin. |
+| `settings.gradle` | Applies Gradle plugins, including the [Liferay Workspace](../../liferay-development/tooling.md) plugin. |
 
-You can add more modules in new subfolders, like the example project's `k8s2-api` folder, or create them in a new [Liferay Workspace](../../building-applications/tooling/liferay-workspace/what-is-liferay-workspace.md).
+You can add more modules in new subfolders, like the example project's `k8s2-api` folder, or create them in a new [Liferay Workspace](../../liferay-development/tooling/liferay-workspace/what-is-liferay-workspace.md).
 
 Here's the `k8s2-api` module structure in the context of the project root.
 

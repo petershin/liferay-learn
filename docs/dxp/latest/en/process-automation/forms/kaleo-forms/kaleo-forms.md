@@ -10,7 +10,7 @@ uuid: 8838df23-e03b-4ab6-8c41-8893d489771d
 # Kaleo Forms
 
 !!! note
-    Kaleo Forms is [deprecated](../../../installation-and-upgrades/upgrading-liferay/reference/maintenance-mode-and-deprecations-in-7-4.md) as of Liferay 7.4 2023.Q3. Use business processes for [Liferay Objects](../../../building-applications/objects.md) (i.e., objects, workflow, and form container fragments) instead.
+    Kaleo Forms is [deprecated](../../../installation-and-upgrades/upgrading-liferay/reference/maintenance-mode-and-deprecations-in-7-4.md) as of Liferay 7.4 2023.Q3. Use business processes for [Liferay Objects](../../../liferay-development/objects.md) (i.e., objects, workflow, and form container fragments) instead.
 
 Liferay's *Kaleo Forms* solution combines the features of *Workflow Designer* and *Dynamic Data Lists* to create form-based business processes. With it, you can integrate forms with workflow tasks to create conference room checkout forms, support ticket processes, and more.
 

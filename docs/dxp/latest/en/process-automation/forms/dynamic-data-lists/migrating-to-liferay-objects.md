@@ -10,7 +10,7 @@ uuid: 548428c2-6577-41e5-bae3-5ea41396262e
 ---
 # Migrating to Liferay Objects
 
-Dynamic Data Lists is deprecated and scheduled for removal by the end of 2024. To prevent data loss and achieve the same functionality, please migrate your structures and data to Liferay Objects. [Objects](../../../building-applications/objects.md) provides low-code capabilities for building applications in the Liferay UI without having to write code or deploy modules. Each application is fully integrated with Liferay's core frameworks (e.g., headless, permissions, workflow) and can be accessed via the UI or dedicated REST APIs to create and manage data entries.
+Dynamic Data Lists is deprecated and scheduled for removal by the end of 2024. To prevent data loss and achieve the same functionality, please migrate your structures and data to Liferay Objects. [Objects](../../../liferay-development/objects.md) provides low-code capabilities for building applications in the Liferay UI without having to write code or deploy modules. Each application is fully integrated with Liferay's core frameworks (e.g., headless, permissions, workflow) and can be accessed via the UI or dedicated REST APIs to create and manage data entries.
 
 Working with Dynamic Data Lists involves creating data definitions and then using them to create forms (`DDLRecordSet`) that store lists of data entries (`DDLRecords`). Using Objects involves creating, relating, and publishing object definitions. Once published, you can then access the application to create object entries. In comparison with DDL, Objects provides a far more robust and integrated experience for modeling data structures while including additional tools for implementing custom business logic and designing user interfaces.
 
@@ -43,7 +43,7 @@ To migrate your data,
 
 1. Click *Save*.
 
-Once created, you can edit the object to configure its scope, platform integrations, and more. See [Editing Object Drafts](../../../building-applications/objects/creating-and-managing-objects/creating-objects.md#editing-object-drafts) for more information.
+Once created, you can edit the object to configure its scope, platform integrations, and more. See [Editing Object Drafts](../../../liferay-development/objects/creating-and-managing-objects/creating-objects.md#editing-object-drafts) for more information.
 
 If your dynamic data list includes Select and Radio fields, you must [add picklists](#adding-picklists) to store these field options. Otherwise, you can continue to [add data fields](#adding-data-fields) to the object definition.
 
@@ -104,11 +104,11 @@ Once you've created your picklists, you can use them for data fields in your obj
 
    ![Repeat the above steps to add other fields.](./migrating-to-liferay-objects/images/06.png)
 
-Once you've added data fields, edit them to configure additional settings, such as searchability, default values, and localizability. See [Fields](../../../building-applications/objects/creating-and-managing-objects/fields.md) for more information. 
+Once you've added data fields, edit them to configure additional settings, such as searchability, default values, and localizability. See [Fields](../../../liferay-development/objects/creating-and-managing-objects/fields.md) for more information. 
 
 ### Publishing the Object Definition
 
-After configuring your object definition and adding data fields, publish the object to make it available for use. To do this, go to the object's *Details* tab and click *Publish*. Once published, you can design forms and displays for the object. To design administrative interfaces, see [Layouts](../../../building-applications/objects/creating-and-managing-objects/layouts.md) and [Views](../../../building-applications/objects/creating-and-managing-objects/views.md). To learn about object integrations with the info framework and page builder features, see [Displaying Object Entries](../../../building-applications/objects/displaying-object-entries.md) and [Using Fragments to Build Forms](../../../building-applications/objects/using-fragments-to-build-forms.md). 
+After configuring your object definition and adding data fields, publish the object to make it available for use. To do this, go to the object's *Details* tab and click *Publish*. Once published, you can design forms and displays for the object. To design administrative interfaces, see [Layouts](../../../liferay-development/objects/creating-and-managing-objects/layouts.md) and [Views](../../../liferay-development/objects/creating-and-managing-objects/views.md). To learn about object integrations with the info framework and page builder features, see [Displaying Object Entries](../../../liferay-development/objects/displaying-object-entries.md) and [Using Fragments to Build Forms](../../../liferay-development/objects/using-fragments-to-build-forms.md). 
 
 Next, export your data list records and import them to the custom object definition.
 
@@ -185,7 +185,7 @@ Once your JSON file is ready, you can import it to the custom object definition.
 
 ## Related Topics
 
-* [Objects](../../../building-applications/objects.md)
-* [Creating Objects](../../../building-applications/objects/creating-and-managing-objects/creating-objects.md)
-* [Adding Fields to Objects](../../../building-applications/objects/creating-and-managing-objects/fields/adding-fields-to-objects.md)
-* [Creating Picklists](../../../building-applications/objects/picklists/creating-picklists.md)
+* [Objects](../../../liferay-development/objects.md)
+* [Creating Objects](../../../liferay-development/objects/creating-and-managing-objects/creating-objects.md)
+* [Adding Fields to Objects](../../../liferay-development/objects/creating-and-managing-objects/fields/adding-fields-to-objects.md)
+* [Creating Picklists](../../../liferay-development/objects/picklists/creating-picklists.md)

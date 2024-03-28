@@ -2,7 +2,7 @@
 toc:
   - ./site-appearance/site-appearance.md
   - ./creating-pages/defining-headers-and-footers/master-page-templates.md
-  - ./site-appearance/themes.md
+  - ../liferay-development/customizing-liferays-look-and-feel/themes.md
   - ./site-appearance/style-books.md
 taxonomy-category-names:
 - Sites

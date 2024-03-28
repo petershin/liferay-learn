@@ -44,13 +44,13 @@ Follow the links below for sample API tutorials that include example requests an
 
 ## Building Applications (Objects)
 
-* [Custom Objects API Basics](../building-applications/objects/understanding-object-integrations/using-custom-object-apis/object-api-basics.md)
-* [Custom Objects Using Aggregation Terms with REST APIs](../building-applications/objects/understanding-object-integrations/using-custom-object-apis/using-aggregation-terms-with-rest-apis.md)
-* [Custom Objects Using Batch APIs](../building-applications/objects/understanding-object-integrations/using-custom-object-apis/using-batch-apis.md)
-* [Custom Objects Using nestedFields to Audit Entry History](../building-applications/objects/understanding-object-integrations/using-custom-object-apis/using-nestedfields-to-audit-entry-history.md)
-* [Custom Objects Using nestedFields to Query Related Entries](../building-applications/objects/understanding-object-integrations/using-custom-object-apis/using-nestedfields-to-query-related-entries.md)
-* [Custom Objects Using Relationship REST APIs](../building-applications/objects/understanding-object-integrations/using-custom-object-apis/using-relationship-rest-apis.md)
-* [Managing Objects with Headless APIs](../building-applications/objects/creating-and-managing-objects/managing-objects-with-headless-apis.md)
+* [Custom Objects API Basics](../liferay-development/objects/understanding-object-integrations/using-custom-object-apis/object-api-basics.md)
+* [Custom Objects Using Aggregation Terms with REST APIs](../liferay-development/objects/understanding-object-integrations/using-custom-object-apis/using-aggregation-terms-with-rest-apis.md)
+* [Custom Objects Using Batch APIs](../liferay-development/objects/understanding-object-integrations/using-custom-object-apis/using-batch-apis.md)
+* [Custom Objects Using nestedFields to Audit Entry History](../liferay-development/objects/understanding-object-integrations/using-custom-object-apis/using-nestedfields-to-audit-entry-history.md)
+* [Custom Objects Using nestedFields to Query Related Entries](../liferay-development/objects/understanding-object-integrations/using-custom-object-apis/using-nestedfields-to-query-related-entries.md)
+* [Custom Objects Using Relationship REST APIs](../liferay-development/objects/understanding-object-integrations/using-custom-object-apis/using-relationship-rest-apis.md)
+* [Managing Objects with Headless APIs](../liferay-development/objects/creating-and-managing-objects/managing-objects-with-headless-apis.md)
 
 ## Headless Delivery
 

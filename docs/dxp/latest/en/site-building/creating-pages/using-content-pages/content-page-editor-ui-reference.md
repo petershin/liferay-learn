@@ -94,7 +94,7 @@ In the Fragments and Widgets panel ( ![Fragments and Widgets icon](../../../imag
 
 **Fragments**: Fragments are extensible, reusable, drag-and-drop elements that serve as the primary building blocks for content pages. Examples include layout elements, videos, and banner images with text overlay. See [Using Fragments](../page-fragments-and-widgets/using-fragments.md) to learn more about the out-of-the-box fragments or [Developing Fragments](../../developer-guide/developing-page-fragments/developing-fragments-intro.md) to learn how to create your own.
 
-**Widgets**: Widgets are [applications](../../../building-applications.md) that add dynamic functionality to a page. Examples include blogs, message boards, and calendars. See [Using Widgets on Content Pages](./using-widgets-on-a-content-page.md) for more information.
+**Widgets**: Widgets are [applications](../../../liferay-development/building-applications.md) that add dynamic functionality to a page. Examples include blogs, message boards, and calendars. See [Using Widgets on Content Pages](./using-widgets-on-a-content-page.md) for more information.
 
 ```{tip}
 Beginning with Liferay 7.4 U37/GA37, click the Order button (![Order Button](../../../images/icon-order.png)) to reorder sets of fragments and widgets. Click the Star button (![Star Button](../../../images/icon-star.png)) to add a fragment or widget to your list of favorite elements.

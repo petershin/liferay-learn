@@ -16,7 +16,7 @@ Micro frontends extend the concept of microservices to the frontend side of deve
 
 You use [frontend client extensions](../building-applications/client-extensions/frontend-client-extensions.md) coupled with out-of-the-box solutions like [fragments](../site-building/creating-pages/page-fragments-and-widgets/using-fragments.md) and [widgets](../site-building/creating-pages/page-fragments-and-widgets/using-widgets.md) to implement micro frontends. Developers can create or extend applications using different frameworks and then connect them to Liferay using client extensions.
 
-One of the available frontend client extensions is the [basic custom element](../building-applications/client-extensions/frontend-client-extensions/tutorials/creating-a-basic-custom-element.md). Basic custom elements use Liferay's frontend infrastructure to register external, remote applications with the Liferay platform and render them as widgets. This way, users can develop the applications separately, create basic custom elements using client extensions, and add them to a page.
+One of the available frontend client extensions is the [basic custom element](../liferay-development/integrating-external-applications/creating-a-basic-custom-element.md). Basic custom elements use Liferay's frontend infrastructure to register external, remote applications with the Liferay platform and render them as widgets. This way, users can develop the applications separately, create basic custom elements using client extensions, and add them to a page.
 
 ```{note}
 Custom element client extensions can use any technology, regardless of how it’s built, packaged, or hosted.
@@ -28,11 +28,11 @@ The cases below illustrate the concept.
 
 [Raylife](https://marketplace.liferay.com/p/liferay-insurance-agent-portal-accelerator#solutions-details-video) is an agent portal solution built on Liferay. It works as an accelerator that can be customized. 
 
-Raylife requires four separate applications: a [React based client extension](../building-applications/developing-a-javascript-application/using-react.md) that displays a list of insurance claims with different fields, fragment blocks that visualize information (they can be replaced by other blocks to show different visualizations), a header, and a side menu bar.
+Raylife requires four separate applications: a [React based client extension](../liferay-development/building-applications/developing-a-javascript-application/using-react.md) that displays a list of insurance claims with different fields, fragment blocks that visualize information (they can be replaced by other blocks to show different visualizations), a header, and a side menu bar.
 
 The elements on the page communicate through events triggered by the DOM, and they can maintain synchronous communication and share resources.
 
-All data on the screen is obtained through [headless APIs](../building-applications/objects/creating-and-managing-objects/managing-objects-with-headless-apis.md) and [objects](../building-applications/objects.md) for data persistence.
+All data on the screen is obtained through [headless APIs](../liferay-development/objects/creating-and-managing-objects/managing-objects-with-headless-apis.md) and [objects](../liferay-development/objects.md) for data persistence.
 
 Different teams worked on the project at the same time. Each team was responsible for an application. Since client extensions were used, each team's code was isolated. While one of the applications used React as its main framework, others were created via custom fragments using HTML, CSS, and JavaScript.
 

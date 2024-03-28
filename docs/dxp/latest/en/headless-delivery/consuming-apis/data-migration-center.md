@@ -61,7 +61,7 @@ With the data migration center, you can
 
 1. (Optional) Click *Save as Template* to save the export settings for future use. Give the template a name and click *Save*.
 
-1. Finally, click *Export* to export the [object definitions](../../building-applications/objects.md).
+1. Finally, click *Export* to export the [object definitions](../../liferay-development/objects.md).
 
 1. A window appears to display the export task. When the job finishes, click *Download* to download a zip file to your local machine.
 
@@ -90,7 +90,7 @@ With the data migration center, you can
 
    With Overwrite Records, the whole entity is updated. With Update Changed Record Fields, only the fields defined in the import file are updated, and the rest of the existing values are left alone.
 
-1. Under file settings, click *Choose File* and locate the file that contains the [object definitions](../../building-applications/objects.md) to import.
+1. Under file settings, click *Choose File* and locate the file that contains the [object definitions](../../liferay-development/objects.md) to import.
 
    !!! note
        The data migration center only supports the JSON and JSONL file format for importing object definitions.
@@ -117,7 +117,7 @@ To export object entries, follow most of the process as if you were [Exporting O
 
 Here are the main differences:
 
--  Instead of choosing `ObjectDefinition (v1_0 - Liferay Object Admin REST)` as the Entity Type, select the object you want to export (e.g. `C_YourObject (v1_0 - Liferay Object REST)`). See [creating and managing objects](../../building-applications/objects/creating-and-managing-objects.md) to learn more about objects.
+-  Instead of choosing `ObjectDefinition (v1_0 - Liferay Object Admin REST)` as the Entity Type, select the object you want to export (e.g. `C_YourObject (v1_0 - Liferay Object REST)`). See [creating and managing objects](../../liferay-development/objects/creating-and-managing-objects.md) to learn more about objects.
 
 -  {bdg-secondary}`Liferay DXP 2024.Q1+/Portal 7.4 GA112+` If your object definition is site-scoped, you can define a *Scope* by selecting a site from a list and exporting entries from the selected site.
 
@@ -143,7 +143,7 @@ To import object entries, follow most of the process as if you were [Importing O
 
 Here are the main differences:
 
--  Instead of choosing `ObjectDefinition (v1_0 - Liferay Object Admin REST)` as the Entity Type, select the object you want to import (e.g. `C_YourObject (v1_0 - Liferay Object REST)`). See [creating and managing objects](../../building-applications/objects/creating-and-managing-objects.md) to learn more about objects.
+-  Instead of choosing `ObjectDefinition (v1_0 - Liferay Object Admin REST)` as the Entity Type, select the object you want to import (e.g. `C_YourObject (v1_0 - Liferay Object REST)`). See [creating and managing objects](../../liferay-development/objects/creating-and-managing-objects.md) to learn more about objects.
 
 -  {bdg-secondary}`Liferay DXP 2024.Q1+/Portal 7.4 GA112+` If your object definition is site-scoped, you can define a *Scope* by selecting a site from a list and importing entries to the selected site.
 
@@ -166,7 +166,7 @@ Here are the main differences:
 
 ## Related Topics
 
-- [Creating and Managing Objects](../../building-applications/objects/creating-and-managing-objects.md)
+- [Creating and Managing Objects](../../liferay-development/objects/creating-and-managing-objects.md)
 - [Batch Client Extensions](../../building-applications/client-extensions/batch-client-extensions.md)
 - [Batch Engine API Basics - Importing Data](./batch-engine-api-basics-importing-data.md)
 - [Batch Engine API Basics - Exporting Data](./batch-engine-api-basics-exporting-data.md)

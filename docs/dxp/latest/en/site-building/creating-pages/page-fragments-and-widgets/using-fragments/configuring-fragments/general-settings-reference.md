@@ -243,13 +243,13 @@ Form fragments include unique configuration options. To access them, you must ma
 
 | Field | Description |
 | :--- | :--- |
-| Show Characters Count | Displays the number of characters entered and a warning when the maximum character count is exceeded. The maximum character count can be configured in the object's field configuration. See [Field Types UI Reference](../../../../../building-applications/objects/creating-and-managing-objects/fields/adding-fields-to-objects.md) for more information.|
+| Show Characters Count | Displays the number of characters entered and a warning when the maximum character count is exceeded. The maximum character count can be configured in the object's field configuration. See [Field Types UI Reference](../../../../../liferay-development/objects/creating-and-managing-objects/fields/adding-fields-to-objects.md) for more information.|
 
 ### Categories
 
 | Field | Description |
 | :--- | :--- |
-| Vocabulary Type| Displays categories based on the visibility of the vocabulary. See [Vocabulary Visibility](../../../../../content-authoring-and-management/tags-and-categories/organizing-content-with-categories-and-tags.md#vocabulary-visibility) for more information. To access this setting, `Enable Categorization` must be enabled on the object. See [Creating Objects](../../../../../building-applications/objects/creating-and-managing-objects/creating-objects.md#editing-object-drafts) for more information.|
+| Vocabulary Type| Displays categories based on the visibility of the vocabulary. See [Vocabulary Visibility](../../../../../content-authoring-and-management/tags-and-categories/organizing-content-with-categories-and-tags.md#vocabulary-visibility) for more information. To access this setting, `Enable Categorization` must be enabled on the object. See [Creating Objects](../../../../../liferay-development/objects/creating-and-managing-objects/creating-objects.md#editing-object-drafts) for more information.|
 
 ### Other Form Fragment Configurations
 

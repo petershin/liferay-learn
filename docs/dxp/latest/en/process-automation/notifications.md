@@ -32,7 +32,7 @@ Liferay provides integrated notification tools, so you can ensure users are aler
 | Web Content          | &#10004; | &#10004; |
 | Wiki                 | &#10004; | &#10004; |
 
-To use email notifications, you must [configure a mail server](../installation-and-upgrades/setting-up-liferay/configuring-mail.md) for your instance. Once configured, you can access additional [email notification settings](../system-administration/configuring-liferay/virtual-instances/email-settings.md) at the instance level. Beginning with Liferay 7.4 U33+/GA33+, you can also create [notification templates](./notifications/creating-notification-templates.md) to design and dynamically populate email notifications for Objects. See [Notification Actions](../building-applications/objects/creating-and-managing-objects/actions/defining-object-actions.md#notification-actions) for more information.
+To use email notifications, you must [configure a mail server](../installation-and-upgrades/setting-up-liferay/configuring-mail.md) for your instance. Once configured, you can access additional [email notification settings](../system-administration/configuring-liferay/virtual-instances/email-settings.md) at the instance level. Beginning with Liferay 7.4 U33+/GA33+, you can also create [notification templates](./notifications/creating-notification-templates.md) to design and dynamically populate email notifications for Objects. See [Notification Actions](../liferay-development/objects/creating-and-managing-objects/actions/defining-object-actions.md#notification-actions) for more information.
 
 In the Commerce context, notifications are supported for Channel events. See [Sending Emails](https://learn.liferay.com/w/commerce/store-management/sending-emails) to learn more.
 

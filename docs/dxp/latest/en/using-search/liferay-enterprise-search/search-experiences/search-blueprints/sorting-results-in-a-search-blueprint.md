@@ -141,7 +141,7 @@ For a nested field, the sort configuration's field declaration is more complicat
 
 ## Example 3: Sorting by an Objects Field
 
-[Object](../../../../building-applications/objects.md) entry fields are indexed as nested fields in the search engine document.
+[Object](../../../../liferay-development/objects.md) entry fields are indexed as nested fields in the search engine document.
 
 When viewing the document, an object's nested properties appear under `nestedFieldArray`:
 

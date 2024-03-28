@@ -24,7 +24,7 @@ include-and-override=portal-developer.properties
 
 ## Executing Commands
 
-You can execute Gogo shell commands using [Blade CLI](../../../building-applications/tooling/blade-cli/installing-and-updating-blade-cli.md) or a telnet session.
+You can execute Gogo shell commands using [Blade CLI](../../../liferay-development/tooling/blade-cli/installing-and-updating-blade-cli.md) or a telnet session.
 
 ### Using Blade CLI
 

@@ -36,7 +36,7 @@ Liferay uses [Ehcache](https://www.ehcache.org/) to cache most of its entities. 
 
    ![See the current utilization for the entity.](./troubleshooting-liferay-performance-issues-with-glowroot/images/03.png)
 
-Based on your inspection of the entity, make necessary changes to your [cache configuration](../../building-applications/data-frameworks/cache.md).
+Based on your inspection of the entity, make necessary changes to your [cache configuration](../../liferay-development/building-applications/data-frameworks/cache.md).
 
 It is also possible to clear the cache. In Liferay, navigate to _Control Panel_ &rarr; _Server Administration_. Cache clearing is available under the Resources tab.
 

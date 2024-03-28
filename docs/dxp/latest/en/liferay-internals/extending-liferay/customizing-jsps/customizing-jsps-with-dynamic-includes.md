@@ -83,8 +83,8 @@ Add the `liferay-util:dynamic-include` tag where you want the dynamic include to
 
 Make sure the dynamic include `key` matches the target set in the `register()` method above.
 
-See [Using a JSP and MVC Portlet](../../../building-applications/developing-a-java-web-application/using-mvc/using-a-jsp-and-mvc-portlet.md) to learn more about JSPs and portlets.
+See [Using a JSP and MVC Portlet](../../../liferay-development/building-applications/developing-a-java-web-application/using-mvc/using-a-jsp-and-mvc-portlet.md) to learn more about JSPs and portlets.
 
 ## Related Topics
 
-- [Using a JSP and MVC Portlet](../../../building-applications/developing-a-java-web-application/using-mvc/using-a-jsp-and-mvc-portlet.md)
+- [Using a JSP and MVC Portlet](../../../liferay-development/building-applications/developing-a-java-web-application/using-mvc/using-a-jsp-and-mvc-portlet.md)

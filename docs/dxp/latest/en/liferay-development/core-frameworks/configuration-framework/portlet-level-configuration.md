@@ -102,4 +102,4 @@ For the portlet to have portlet preferences, you must also add a configuration J
 ## Related Information
 
 * [Scoping Configuration](./scoping-configurations.md)
-* [Portlet Preferences](../../developing-a-java-web-application/using-mvc/portlet-preferences.md)
+* [Portlet Preferences](../../building-applications/developing-a-java-web-application/using-mvc/portlet-preferences.md)

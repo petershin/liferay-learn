@@ -13,7 +13,7 @@ uuid: 23945a81-3dac-4a80-a0e3-a05b113bba7e
 
 With Notification Templates, you can design automated email and user notifications for Liferay services. Each template identifies a sender, recipients, and message content. While designing the template, you can search supported entities and add field references that insert their data dynamically into emails.
 
-Currently, notification templates only support [object actions](../../building-applications/objects/creating-and-managing-objects/actions/defining-object-actions.md). However, Commerce Channels include built-in notification template capabilities for channel events. See [Store Emails](https://learn.liferay.com/w/commerce/store-management/sending-emails) for more information.
+Currently, notification templates only support [object actions](../../liferay-development/objects/creating-and-managing-objects/actions/defining-object-actions.md). However, Commerce Channels include built-in notification template capabilities for channel events. See [Store Emails](https://learn.liferay.com/w/commerce/store-management/sending-emails) for more information.
 
 !!! important
     To use email notifications, your instance must have a configured [mail server](../../installation-and-upgrades/setting-up-liferay/configuring-mail.md). Once configured, you can access additional [email notification settings](../../system-administration/configuring-liferay/virtual-instances/email-settings.md) at the instance level.
@@ -65,7 +65,7 @@ If the out-of-the-box notification types don't meet your needs, you can create c
 
 1. Click *Save*.
 
-Once created, you can use notification templates with object actions. See [Defining Object Actions](../../building-applications/objects/creating-and-managing-objects/actions/defining-object-actions.md) for more information.
+Once created, you can use notification templates with object actions. See [Defining Object Actions](../../liferay-development/objects/creating-and-managing-objects/actions/defining-object-actions.md) for more information.
 
 ## Adding User Notification Templates
 
@@ -88,7 +88,7 @@ Once created, you can use notification templates with object actions. See [Defin
    You can use defined terms, user names, or user roles. To add multiple recipients, separate values with a comma or space (e.g., `[%TICKET_AUTHOR_ID%]`, `[%TICKET_R_ASSIGNEE_USERID%]`).
 
    !!! important
-       If you set the recipients dynamically, only users with [permission to add object entries](../../building-applications/objects/understanding-object-integrations/permissions-framework-integration.md#creating-entries) can receive the notification.
+       If you set the recipients dynamically, only users with [permission to add object entries](../../liferay-development/objects/understanding-object-integrations/permissions-framework-integration.md#creating-entries) can receive the notification.
 
    ![Determine recipients by entering terms, individual user names, or user roles.](./creating-notification-templates/images/10.png)
 
@@ -100,11 +100,11 @@ Once created, you can use notification templates with object actions. See [Defin
 
 1. Click *Save*.
 
-Once created, you can use notification templates with object actions. See [Defining Object Actions](../../building-applications/objects/creating-and-managing-objects/actions/defining-object-actions.md) for more information.
+Once created, you can use notification templates with object actions. See [Defining Object Actions](../../liferay-development/objects/creating-and-managing-objects/actions/defining-object-actions.md) for more information.
 
 ## Definition of Terms Reference
 
-You can use reference terms to access user and entry data, dynamically populating a template's fields. You can reference any entries and users involved in the event triggering the [notification action](../../building-applications/objects/creating-and-managing-objects/actions/understanding-action-types.md#notification). You can also reference fields in related object entries if the current entry is on the child side of a one-to-many relationship. References to related entry fields use this pattern, `[%RELATIONSHIPNAME_PARENTOBJECTNAME_OBJECTFIELD%]`.
+You can use reference terms to access user and entry data, dynamically populating a template's fields. You can reference any entries and users involved in the event triggering the [notification action](../../liferay-development/objects/creating-and-managing-objects/actions/understanding-action-types.md#notification). You can also reference fields in related object entries if the current entry is on the child side of a one-to-many relationship. References to related entry fields use this pattern, `[%RELATIONSHIPNAME_PARENTOBJECTNAME_OBJECTFIELD%]`.
 
 Consider a scenario with a custom Ticket object that is on the child side of a one-to-many relationship with the User system object. This relationship determines the ticket's assignee. If you add a notification action to the Ticket object for notifying the assignee on entry update, the template used for this action can access data for both the updated ticket and the assignee.
 

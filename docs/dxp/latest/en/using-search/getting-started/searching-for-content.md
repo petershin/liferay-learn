@@ -130,7 +130,7 @@ If [Search Bar Suggestions](../search-pages-and-widgets/search-bar-suggestions.m
 
 ## Searching for Liferay Objects
 
-Liferay 7.4 includes [Liferay Objects](../../building-applications/objects.md), a GUI-driven application-building framework. Fields of each Object's definition can be declared searchable; Object Entries (the records submitted by the application's users) can then be queried and returned in the Search Results widget. 
+Liferay 7.4 includes [Liferay Objects](../../liferay-development/objects.md), a GUI-driven application-building framework. Fields of each Object's definition can be declared searchable; Object Entries (the records submitted by the application's users) can then be queried and returned in the Search Results widget. 
 
 ```{important}
 The scope of the Object determines how it must be searched:
@@ -149,9 +149,9 @@ The Type Facet and the Search Results widget support searching for Liferay Objec
 
    ![A title and a content summary are displayed for Object Entries.](./searching-for-content/images/10.png)
 
-For Liferay 7.4 U64+/GA64+, clicking an object entry in search results redirects to the entry's [display page](../../building-applications/objects/displaying-object-entries.md#creating-display-page-templates-for-objects), if one exists.
+For Liferay 7.4 U64+/GA64+, clicking an object entry in search results redirects to the entry's [display page](../../liferay-development/objects/displaying-object-entries.md#creating-display-page-templates-for-objects), if one exists.
 
-For Liferay DXP 2024.Q1+/Liferay Portal 7.4 GA112+, the entries of [account restricted objects](../../building-applications/objects/creating-and-managing-objects/using-system-objects-with-custom-objects/restricting-access-to-object-data-by-account.md) appear in search results, if the search user has the `Accounts > Account Entry: View` permission in an account- or regular-scoped role. Because many permissions clauses are added to the search query for users with administrative access to sites, organizations, and accounts, poor search performance can result. If you notice this in your system, you can limit the number of permissions clauses in the search framework's [initial permissions check](../search-pages-and-widgets/search-results/search-results-behavior.md#initial-permissions-checking). To do this, configure the [Permission Checker's](../search-configuration-reference.md#permission-checker) Permissions Term Limit setting.
+For Liferay DXP 2024.Q1+/Liferay Portal 7.4 GA112+, the entries of [account restricted objects](../../liferay-development/objects/creating-and-managing-objects/using-system-objects-with-custom-objects/restricting-access-to-object-data-by-account.md) appear in search results, if the search user has the `Accounts > Account Entry: View` permission in an account- or regular-scoped role. Because many permissions clauses are added to the search query for users with administrative access to sites, organizations, and accounts, poor search performance can result. If you notice this in your system, you can limit the number of permissions clauses in the search framework's [initial permissions check](../search-pages-and-widgets/search-results/search-results-behavior.md#initial-permissions-checking). To do this, configure the [Permission Checker's](../search-configuration-reference.md#permission-checker) Permissions Term Limit setting.
 
 ## Related Topics
 

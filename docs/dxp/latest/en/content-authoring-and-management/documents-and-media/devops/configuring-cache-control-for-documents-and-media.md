@@ -46,4 +46,4 @@ Follow these steps to configure caching for your Liferay system or instance:
 
 * [Setting Storage Quotas for Documents and Media](./setting-storage-quotas-for-documents-and-media.md)
 * [Configuring Documents and Media Preview](./configuring-documents-and-media-previews.md)
-* [Cache](../../../building-applications/data-frameworks/cache.md)
+* [Cache](../../../liferay-development/building-applications/data-frameworks/cache.md)

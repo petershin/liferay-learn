@@ -412,7 +412,7 @@ You can localize the date format the same way you [localize fragment configurati
 
 ## Making Buttons Action-ready
 
-You can trigger [object actions](../../../../building-applications/objects/creating-and-managing-objects/actions.md) using button components by including the `data-lfr-editable-id="action"` and `data-lfr-editable-type="action"` attributes to the button tag. The `data-lfr-editable-id` must be a unique ID, like this example:
+You can trigger [object actions](../../../../liferay-development/objects/creating-and-managing-objects/actions.md) using button components by including the `data-lfr-editable-id="action"` and `data-lfr-editable-type="action"` attributes to the button tag. The `data-lfr-editable-id` must be a unique ID, like this example:
 
 ```html
 <button class="btn btn-${configuration.buttonSize} btn-${configuration.buttonType}" data-lfr-editable-id="action" data-lfr-editable-type="action">

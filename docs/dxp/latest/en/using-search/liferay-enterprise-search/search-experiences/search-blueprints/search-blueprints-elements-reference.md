@@ -48,7 +48,7 @@ _External Reference_: See the Elasticsearch [Multi-match](https://www.elastic.co
 
 ### Boost Asset Type
 
-Boost the given asset type. Select the Asset Type (required) from a list of registered [Assets](../../../../building-applications/data-frameworks/asset-framework.md) and configure the boost value.
+Boost the given asset type. Select the Asset Type (required) from a list of registered [Assets](../../../../liferay-development/building-applications/data-frameworks/asset-framework.md) and configure the boost value.
 
 ### Boost Contents for the Current Language
 

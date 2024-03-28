@@ -155,7 +155,7 @@ The `+` sign following the field name indicates that the order is _ascending_.  
 
 {bdg-secondary}`7.4 U72+/GA72+`
 
-[Object definition](../../../building-applications/objects.md) fields are indexed as nested fields in Elasticsearch. To find object fields in existing documents in the index, use the [Display Results in Document Form](../search-results/configuring-the-search-results-widget#inspecting-search-engine-documents) setting in the Search Results widget.
+[Object definition](../../../liferay-development/objects.md) fields are indexed as nested fields in Elasticsearch. To find object fields in existing documents in the index, use the [Display Results in Document Form](../search-results/configuring-the-search-results-widget#inspecting-search-engine-documents) setting in the Search Results widget.
 
 ```json
 "nestedFieldArray" : [

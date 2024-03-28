@@ -91,7 +91,7 @@ Additionally, you can use [style books](../site-building/site-appearance/style-b
 
 There are many themes available on the [Liferay Marketplace](../system-administration/installing-and-managing-apps/using-marketplace.md) that can be used to quickly achieve a professional look and feel.
 
-You can also learn how to [create your own theme](../site-building/site-appearance/themes/introduction-to-themes.md).
+You can also learn how to [create your own theme](../liferay-development/customizing-liferays-look-and-feel/themes.md).
 
 <!-- ## Changing Your Site's Logo
 

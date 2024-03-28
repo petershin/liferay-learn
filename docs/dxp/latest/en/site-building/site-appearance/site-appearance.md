@@ -48,6 +48,6 @@ Fragments and widgets are the building blocks of your Site. There are many ways 
 
 ## Themes
 
-[Themes](./themes/introduction-to-themes.md) are a highly flexible tool for customizing the default look and feel of your Site. They provide a foundation that your [Style Books](#style-books) and [Page Templates](../creating-pages/adding-pages/creating-a-page-template.md) build on top of. Widgets can also be embedded in the themes themselves to ensure a particular arrangement.
+[Themes](../../liferay-development/customizing-liferays-look-and-feel/themes.md) are a highly flexible tool for customizing the default look and feel of your Site. They provide a foundation that your [Style Books](#style-books) and [Page Templates](../creating-pages/adding-pages/creating-a-page-template.md) build on top of. Widgets can also be embedded in the themes themselves to ensure a particular arrangement.
 
 ![Choosing a theme for your Site's pages can significantly alter the look and feel of your Site.](./site-appearance/images/03.png)

@@ -74,7 +74,7 @@ The Core provides the component runtime environment for the frameworks, services
 * [JSP customizations](./extending-liferay/customizing-jsps.md)
 * [Portlets \(templates, controllers, and resources\)](../liferay-development/building-applications/developing-a-java-web-application/reference/portlets.md)
 * [Portlet filters](./extending-liferay/auditing-portlet-activity-with-a-portlet-filter.md)
-* [Themes](../site-building/site-appearance/themes/introduction-to-themes.md)
+* [Themes](../liferay-development/customizing-liferays-look-and-feel/themes.md)
 
 The following figure shows these component types in the runtime environment.
 
@@ -110,7 +110,7 @@ The UI helps people do work, [collaborate](../collaboration-and-social/collabora
 
 * [Applications](../liferay-development/building-applications/developing-a-java-web-application.md): Widgets that provide a user interface for services already deployed. 
 
-* [Themes](../site-building/site-appearance/themes/introduction-to-themes.md): Plugins for styling Sites with a unique look and feel.
+* [Themes](../liferay-development/customizing-liferays-look-and-feel/themes.md): Plugins for styling Sites with a unique look and feel.
 
 The [UI architecture](./architecture/ui-architecture.md) articles dig deeper into developing and customizing UI components.
 

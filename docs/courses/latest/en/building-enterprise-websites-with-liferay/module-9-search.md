@@ -1,8 +1,8 @@
 ---
 toc:
-- ./module-9-search/understanding-and-customizing-search-results-pages
-- ./module-9-search/enabling-search-across-legacy-content.md
 - ./module-9-search/
+- ./module-9-search/understanding-and-customizing-search-results-pages.md
+- ./module-9-search/personalizing-search-experiences-with-blueprints.md
 uuid: 361efa0d-1a2f-4527-92bb-b31d62ef0cfb
 ---
 # Module 9: Search
@@ -18,8 +18,7 @@ Clarity has been busy building out their new website. On top of their products t
 In this module you will learn:
 
 * About search results pages and how to customize them
-* How to enable search across legacy content
-* How to personalize search experiences
+* How to personalize search experiences with blueprints
 
 Up First: [Understanding and Customizing Search Results Pages]()
 
@@ -32,14 +31,8 @@ Up First: [Understanding and Customizing Search Results Pages]()
 Learn about configuring search results pages.
 :::
 
-:::{grid-item-card}  Enabling Search Across Legacy Content
-:link: ./module-9-search/enabling-search-across-legacy-content.md
-
-Learn how to expand the capabilities of Liferay search.
-:::
-
 :::{grid-item-card}  Personalizing Search Experiences with Blueprints
-:link: ./module-9-search/personalizing-search-experience-with-blueprints.md
+:link: ./module-9-search/personalizing-search-experiences-with-blueprints.md
 
 Learn about personalizing search experiences with Liferay blueprints.
 :::

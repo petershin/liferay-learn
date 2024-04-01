@@ -9,7 +9,7 @@ extends: existence
 message: 'Avoid using future tense: "%s"'
 ignorecase: true
 level: warning
-link: https://docs.gitlab.com/ee/development/documentation/styleguide.html#language-to-avoid
+link: https://learn.liferay.com/w/reference/style-guide/liferay-phraseology#future-tense
 raw:
   - "(going to( |\n|[[:punct:]])[a-zA-Z]*|"
   - "will( |\n|[[:punct:]])[a-zA-Z]*|"

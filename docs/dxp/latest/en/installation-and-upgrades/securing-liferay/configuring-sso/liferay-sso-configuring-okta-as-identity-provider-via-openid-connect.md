@@ -113,12 +113,12 @@ Congratulations! You have successfully completed this Solution Tutorial. By now,
 
 ### Sign-in and Sign-out Redirect URIs
 
-If you encounter an error like the image below, verify that your sign-in and sign-out redirect URIs are configured correctly with the appropriate path and Hypertext Transfer Protocol (HTTP or HTTPS). These redirect URIs can be found by navigating to your application &rarr; General tab &rarr; General Setting &rarr; Login.
+If you encounter an error like the image below, verify that your sign-in and sign-out redirect URIs are configured correctly in Okta with the appropriate path and Hypertext Transfer Protocol (HTTP or HTTPS). You can find them in your Dev Okta account by navigating to the application you created &rarr; *General* tab &rarr; *General Setting* &rarr; *Login* section.
 
 ![400 error when using https in the redirect URIs](./liferay-sso-configuring-okta-as-identity-provider-via-openid-connect/images/07.png)
 
 ### Verify email address
 
-By default, new users must verify their email address upon first login. To disable this requirement, deselect the "Require strangers to verify their email address" checkbox in Control Panel &rarr; Instance Settings &rarr; User Authentication. However, if you want to keep email validation enabled, a [configured connection to a mail server](../../setting-up-liferay/configuring-mail.md) is necessary for your installation.
+By default, new users must verify their email address upon first login. To disable this requirement, in your Liferay DXP unselect the "Require strangers to verify their email address" checkbox. Navigate to *Control Panel* &rarr; *Instance Settings* &rarr; *Platform* &rarr; *User Authentication* and unselect the checkbox. However, if you want to keep email validation enabled, a [configured connection to a mail server](../../setting-up-liferay/configuring-mail.md) is necessary for your installation.
 
 ![Verify email address](./liferay-sso-configuring-okta-as-identity-provider-via-openid-connect/images/08.png)

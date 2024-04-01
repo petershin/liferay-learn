@@ -164,15 +164,15 @@ function echo_broken_link {
 function fix_link {
 	if [[ ${2} == "--fix" ]]
 	then
-		local link_file_basename=$(echo ${_LINK_FILE_NAME} | rev | cut -d'/' -f1 | rev)
+		local link_base_file_name=$(echo ${_LINK_FILE_NAME} | rev | cut -d'/' -f1 | rev)
 
-		local correct_link_file_name=$(ag -g "/${link_file_basename/.html/.md}" "${_DOCS_DIR_NAME}/${_LANGUAGE_DIR_NAME}" 2>/dev/null)
+		local correct_link_file_name=$(ag -g "/${link_base_file_name/.html/.md}" "${_DOCS_DIR_NAME}/${_LANGUAGE_DIR_NAME}" 2>/dev/null)
 
 		local replace_in_file_name=${_MARKDOWN_FILE_NAME}
 
 		if [[ ${correct_link_file_name} == *".md"*".md"* ]]
 		then
-			echo "    WARNING: Cannot fix because ${link_file_basename} is not unique in $_LANGUAGE_DIR_NAME}."
+			echo "    WARNING: Cannot fix because ${link_base_file_name} is not unique in $_LANGUAGE_DIR_NAME}."
 			echo
 		elif [[ ${correct_link_file_name} ]]
 		then

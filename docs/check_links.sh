@@ -173,7 +173,6 @@ function fix_link {
 		if [[ ${correct_link_file_name} == *".md"*".md"* ]]
 		then
 			echo "    WARNING: Unable to fix because ${link_base_file_name} is not unique in $_LANGUAGE_DIR_NAME}."
-			echo
 		elif [[ ${correct_link_file_name} ]]
 		then
 			correct_link_file_name=$(realpath --relative-to=${PWD} ${correct_link_file_name})
@@ -188,11 +187,11 @@ function fix_link {
 			sed -i "s,(${_LINK_FILE_NAME}),(${correct_link_file_name}),g" ${replace_in_file_name}
 
 			echo "    Fixed: ${correct_link_file_name}"
-			echo
 		else
 			echo "    WARNING: Unable to fix ${_LINK_FILE_NAME} in ${replace_in_file_name}."
-			echo
 		fi
+
+		echo
 	fi
 }
 

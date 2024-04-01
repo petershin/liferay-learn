@@ -4,6 +4,7 @@ toc:
   - ./managing-site-urls/configuring-virtual-hosts-site-urls.md
   - ./managing-site-urls/setting-up-redirects-and-404-tracking.md
   - ./managing-site-urls/configuring-friendly-url-redirects.md
+  - ./managing-site-urls/configuring-friendly-url-separators.md
   - ./managing-site-urls/configuring-xml-sitemaps.md
 taxonomy-category-names:
 - Sites
@@ -25,9 +26,8 @@ Configure virtual hosts for your Liferay server to connect domain names (e.g., `
 
 Define friendly URLs to help users quickly access your sites. Each friendly URL on your Liferay server must be unique and is appended to `https://[server:port]/web` (e.g., `https://localhost:8080/web/hello-world/`). See [Configuring Your Site's Friendly URL](./managing-site-urls/configuring-your-sites-friendly-url.md) for more information.
 
-```{note}
-You can also configure friendly URLs for pages and documents. See [Configuring Your Page's Friendly URL](../creating-pages/page-settings/configuring-your-pages-friendly-url.md) and [Configuring Document URLs](../../content-authoring-and-management/documents-and-media/uploading-and-managing/configuring-document-urls.md) for more information.
-```
+!!! note
+     can also configure friendly URLs for pages, URL separators, and documents. See [Configuring Your Page's Friendly URL](../creating-pages/page-settings/configuring-your-pages-friendly-url.md), [Configuring Friendly URL Separators](./managing-site-urls/configuring-friendly-url-separators.md), and [Configuring Document URLs](../../content-authoring-and-management/documents-and-media/uploading-and-managing/configuring-document-urls.md) for more information.
 
 ## Site Redirects
 
@@ -64,6 +64,10 @@ Use the Redirection tool to track and manage Site requests leading to 404 errors
 
 :::{grid-item-card} Configuring Friendly URL Redirects
 :link: ./managing-site-urls/configuring-friendly-url-redirects.md
+:::
+
+:::{grid-item-card} Configuring Friendly URL Separators
+:link: ./managing-site-urls/configuring-friendly-url-separators.md
 :::
 
 :::{grid-item-card} Configuring XML Sitemaps

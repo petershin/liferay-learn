@@ -204,9 +204,9 @@ function main {
 
 	if [ -z ${1} ]
 	then
-		echo "To report broken links: ./check_links.sh dxp/latest/en"
+		echo "Usage: ${0} dxp/latest/en"
 		echo
-		echo "To report and attempt fixing broken links: ./check_links.sh dxp/latest/en --fix"
+		echo "    --fix (optional): Attempt to fix broken links"
 
 		exit 0
 	fi

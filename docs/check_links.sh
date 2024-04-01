@@ -214,7 +214,7 @@ function main {
 	then
 		if [[ $(git status --short -- ${1}) ]]
 		then
-			echo "WARNING: There are uncommitted changes. Don't run with --fix unless there's nothing reported by 'git status --short -- ${1}'."
+			echo "WARNING: There are uncommitted changes. Do not run with --fix unless there is nothing reported by \"git status --short -- ${1}\"."
 
 			git status --short -- ${1}
 

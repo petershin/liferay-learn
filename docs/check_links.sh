@@ -186,6 +186,7 @@ function fix_link {
 			fi
 
 			sed -i "s,(${_LINK_FILE_NAME}),(${correct_link_file_name}),g" ${replace_in_file_name}
+
 			echo "    Fixed: ${correct_link_file_name}"
 			echo
 		else

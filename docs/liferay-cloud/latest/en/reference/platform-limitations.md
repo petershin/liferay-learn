@@ -8,7 +8,7 @@ uuid: e2f145ad-3da7-43cf-9ecb-cd5c6f8131ed
 ---
 # Platform Limitations
 
-Liferay Cloud and its services have some notable limitations, depending on your subscription level. Limitations may change over time as changes are made to Liferay Cloud's infrastructure.
+Liferay Cloud and its services have some notable limitations, depending on your subscription level. Limitations may change over time with Liferay Cloud's infrastructure.
 
 ## Overview
 
@@ -37,7 +37,7 @@ See the further sections below for more details.
 * [Security](#security)
 * [File Storage](#file-storage)
 * [Network Configuration](#network-configuration)
-* [VPN Servers](#vpn-servers)
+* [VPN](#vpn)
 
 ## All Services
 
@@ -93,7 +93,7 @@ These limitations apply to the [Database service](../platform-services/database-
 
 These limitations apply to the [Search service](../platform-services/search-service.md) in each Liferay Cloud environment:
 
-**Configuration**: Elasticsearch must be configured through the Liferay Cloud workspace, and *not* the Liferay UI. The configuration file in the project workspace is used on each deployment and overwrites the previous configuration.
+**Configuration**: Elasticsearch must be configured through the Liferay Cloud workspace, and *not* the Liferay UI. The configuration file in the project workspace is used on each deployment and overwrites the previous deployment's configuration.
 
 **Memory Settings**: The default (and maximum) JVM heap size for the Elasticsearch server is 4 GB. The maximum allocation is determined by your subscription plan.
 
@@ -195,7 +195,7 @@ These limitations apply to the network configuration of your services in a Lifer
 
 **TCP Port Status**: Some TCP ports may show as open, even if no external traffic can reach the customer environment using it. These ports are open for other projects sharing the same disk on the server, and do not pose a security risk for your environment.
 
-## VPN Servers
+## VPN
 
 These limitations apply if you have connected a [VPN server](../configuring-the-cloud-network/vpn-integration-overview.md) to the services in your environment:
 
@@ -204,3 +204,6 @@ These limitations apply if you have connected a [VPN server](../configuring-the-
 **Bandwidth**: Each VPN tunnel is limited to a total bandwidth of 3 Gbps. This limit applies to the total of incoming and outgoing traffic.
 
 **Extending On-Premises Networks:** Cloud Interconnect or Express Route dedicated connections from an on-premises network are not supported. This applies to connections made directly or via partner providers, and with shared or private clusters.
+
+**Two-Factor Authentication**: Using two-factor authentication within your Cloud VPN (OpenVPN or IPSec) is not supported.
+

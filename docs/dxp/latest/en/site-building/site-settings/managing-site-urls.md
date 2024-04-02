@@ -4,6 +4,7 @@ toc:
   - ./managing-site-urls/configuring-virtual-hosts-site-urls.md
   - ./managing-site-urls/setting-up-redirects-and-404-tracking.md
   - ./managing-site-urls/configuring-friendly-url-redirects.md
+  - ./managing-site-urls/configuring-xml-sitemaps.md
 taxonomy-category-names:
 - Sites
 - SEO
@@ -40,6 +41,12 @@ Set up URL redirects for your sites to avoid 404s and improve user experience. W
 
 Use the Redirection tool to track and manage Site requests leading to 404 errors. When enabled, Liferay DXP catalogs each 404 error, so you can assess and quickly resolve any issues. See [Tracking 404 URLs](./managing-site-urls/setting-up-redirects-and-404-tracking/tracking-404-urls.md) for more information and available configuration options.
 
+## XML Sitemaps
+
+{bdg-secondary}`Liferay 7.4+ 2024.Q2`
+
+Configure the XML sitemap to notify search engines of the website's structure, indicating which URLs are available for crawling. With this configuration, you can include or exclude sites, page URLs (e.g., widget, content, panel, collection, and embedded pages), web content URLs, and category URLs from your sitemap.
+
 ::::{grid} 2
 :gutter: 3 3 3 3
 
@@ -57,5 +64,9 @@ Use the Redirection tool to track and manage Site requests leading to 404 errors
 
 :::{grid-item-card} Configuring Friendly URL Redirects
 :link: ./managing-site-urls/configuring-friendly-url-redirects.md
+:::
+
+:::{grid-item-card} Configuring XML Sitemaps
+:link: ./managing-site-urls/configuring-xml-sitemaps.md
 :::
 ::::

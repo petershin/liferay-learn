@@ -11,20 +11,20 @@ In this article, you'll learn how to:
 
 * Install and use Clarity's preconfigured Liferay Workspace.
 * Build and deploy Client Extensions.
-* Configure the solution in Liferay's UI.
+* Test the solution in Liferay's UI.
 
-## Downloading the Solution's Materials
+## Downloading and Deploying the Solution's Material
 
 Follow these steps to install the prebuilt Clarity workspace:
 
 1. Download and unzip the workspace in a folder of your choice using these commands:
 
    ```bash
-   curl <!-- TODO: Insert Nexus Clarity Workspace link for download -->
+   curl -o com.liferay.sample.workspace-latest.zip https://repository.liferay.com/nexus/service/local/artifact/maven/content\?r\=liferay-public-releases\&g\=com.liferay.workspace\&a\=com.liferay.clarity.workspace\&\v\=LATEST\&p\=zip
    ```
 
    ```bash
-   unzip <!-- TODO: Insert zip file name -->
+   unzip com.liferay.sample.workspace-latest.zip
    ```
 
 1. After extracting the workspace, go into the `client-extensions` folder.
@@ -52,21 +52,17 @@ The compiled `.zip` files are created in each project's `dist/` folder.
 
 Client Extensions are deployed by placing these archives in the correct location of your running Liferay instance.
 
-## Deploying the Picklists
-
-Picklists are predefined lists of string values that determine options in single-select and multiple-select fields. Clarity uses Picklists to collect information by making the distributor applicants select from predefined options.
-
 !!! note
-    The following steps assume you're using Liferay SaaS. See [Deploying to Your Liferay Instance](https://learn.liferay.com/web/guest/w/dxp/building-applications/client-extensions/working-with-client-extensions#deploying-to-your-liferay-instance) if you're PaaS or Self-Hosted user.
+    The following steps assume you're using Liferay SaaS. See [Deploying to Your Liferay Instance](https://learn.liferay.com/web/guest/w/dxp/building-applications/client-extensions/working-with-client-extensions#deploying-to-your-liferay-instance) if you're a PaaS or Self-Hosted user.
 
 In order to deploy Client Extensions to your SaaS environment, you'll use the Liferay Cloud CLI tool you installed in [Module 2](../module-2-developer-setup/liferay-workspace.md#prerequisites).
 
-The predefined picklists for Clarity's solution can be implemented and deployed by following these steps:
+The predefined Clarity solution can be implemented and deployed by following these steps:
 
-1. Go to the `liferay-clarity-picklists-batch` folder.
+1. Go to the `liferay-clarity-batch` folder.
 
    ```bash
-   cd liferay-clarity-picklists-batch/
+   cd liferay-clarity-batch/
    ```
 
 1. Deploy the compiled Client Extension file in the project's `dist/` folder with this command:
@@ -79,23 +75,15 @@ The predefined picklists for Clarity's solution can be implemented and deployed 
 
    ![The command returns a list of available projects to deploy the extension.](./deploying-the-application/images/01.png)
 
-1. After the deployment finishes, open the [Cloud Console](https://console.liferay.cloud/) and go into the chosen project environment's Services menu. Make sure the `liferayclaritypicklistsbatch`'s service status shows `ready`.
+1. After the deployment finishes, open the [Cloud Console](https://console.liferay.cloud/) and go into the chosen project environment's Services menu. Make sure the `liferayclaritybatch`'s service status shows `ready`.
 
-1. Finally, go into your Liferay instance, go to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Picklists_. Once the menu opens, confirm that all picklists display.
+Now that you've deployed the solution's client extensions, all the necessary components should be within your Liferay instance. You can verify this by navigating  to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Picklists_. Once the menu opens, confirm that all picklists display.
 
    ![All picklists appear after deploying the Client Extension.](./deploying-the-application/images/02.png)
 
-## Deploying the Objects
-
-### Exercise 1
-
-The prebuilt solution uses two Liferay objects, the Distributor Application object and the Application Evaluation object. You will learn more about these objects and how they are configured in the following sections. For now, we'll just deploy them to your Liferay instance with the same method you used to deploy the picklists.
-
-Go to the `liferay-clarity-objects-batch/` directory and repeat the steps from the [previous section](#deploying-the-picklists).
-
 ### Bonus Exercise
 
-If you completed Exercise 1 successfully, you can now interact with the deployed objects. Let's create and review a Distributor Application entry.
+The prebuilt solution uses two Liferay objects, the Distributor Application object and the Application Evaluation object. You will learn more about these objects and how they are configured in the following sections. For now, let's create and review a Distributor Application entry.
 
 1. Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_. Notice that two new options appear under Object: Application Evaluations and Distributor Applications.
 
@@ -111,7 +99,7 @@ If you completed Exercise 1 successfully, you can now interact with the deployed
 
    ![The created application entry is displayed in the Distributor Application menu.](./deploying-the-application/images/04.png)
 
-Now that you've created an entry for the Distributor Applications object, you can check how the review process works.
+After creating an entry for the Distributor Applications object, you can check how the review process works.
 
 1. Go to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Application Evaluations_.
 

@@ -75,7 +75,7 @@ The Distributor Application object contains a great number of custom fields for 
 
    ![Clicking Add opens a panel to create a new custom field.](./modeling-data-structures/images/04.png)
 
-Each saved field is added immediately to the object and automatically appears in its default layout when creating entries. However, the Distributor Application object has a custom layout and will need to be modified to include the new custom field.
+Each saved field is added immediately to the object and automatically appears in its default layout when creating entries. However, the Distributor Application object has a custom layout that will need to be modified to include the new custom field.
 
 1. Navigate to the *Layouts* tab and click on *Main Layout*.
 

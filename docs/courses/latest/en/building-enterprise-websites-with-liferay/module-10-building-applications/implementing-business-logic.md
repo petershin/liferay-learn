@@ -54,20 +54,9 @@ In order to satisfy Clarity's proper business requirement, let's modify the *Use
 
    ![All permissions are assigned to the User role after configuration.](./implementing-business-logic/images/03.png)
 
-Clarity also wants to allow only members of the business development team to view submitted applications and fill out evaluations. To achieve this, let's create the Business Development Manager. This role has read permissions for Distributor Application object entries and permissions to create, read, update, and delete Application Evaluation object entries. A user must be assigned to this role to view applications and submit evaluations.
+Clarity also wants to allow only members of the business development team to view submitted applications and fill out evaluations. To achieve this, let's modify the Business Development Manager role, which was created after [deploying the solution](./deploying-the-application.md). This role needs read permissions for Distributor Application entries and permissions to create, read, update, and delete Application Evaluation entries. A user must be assigned to this role to view applications and submit evaluations.
 
-1. Go back to the Roles menu.
-
-1. Click _Add_ (![Add Button](../../images/icon-add.png)).
-
-1. Enter these details and click _Save_:
-
-   | Field       | Value                                                                                                        |
-   |:------------|:-------------------------------------------------------------------------------------------------------------|
-   | Type        | Regular                                                                                                      |
-   | Title       | Business Development Manager                                                                                 |
-   | Description | Business Development Managers are responsible for the final review and approval of distributor applications. |
-   | Key         | Business Development Manager                                                                                 |
+1. Navigate back to the Roles menu and select _Business Development Manager_.
 
 1. Go to the _Define Permissions_ tab, add these permissions, then click _Save_:
 
@@ -134,16 +123,14 @@ Workflows can improve task visibility, eliminate bottlenecks in business process
 
 ### Exercise 2
 
-Clarity wants to implement a workflow for reviewing and approving changes made to applications. Let's deploy the `Distribution Manager Approval` workflow process using Client Extensions and finish configuring it in Liferay's UI.
+Clarity already implemented a workflow process for reviewing and approving changes made to applications, but its main functionality still needs to be set up in order to make it work properly. Let's deploy the `Machine Action` function using [Microservice Client Extensions](https://learn.liferay.com/web/guest/w/dxp/building-applications/client-extensions/microservice-client-extensions) and finish configuring the workflow in Liferay's UI.
 
-1. In your terminal, go to the `[workspace-root]/client-extensions/liferay-clarity-workflow-batch/` folder.
+1. In your terminal, go to the `[workspace-root]/client-extensions/liferay-clarity-etc-spring-boot/` folder.
 
 1. Build and deploy the client extension project into your Liferay instance (see [Deploying the Application](./deploying-the-application.md) to learn how). Make sure the deployment was successful.
 
-1. Repeat the previous steps in the `liferay-clarity-spring-boot/` folder. Ensure it was successfully deployed.
-
    !!! important
-       If you're a Liferay Self-Hosted user, navigate to the `liferay-clarity-spring-boot/` project and start the Spring Boot application with this command:
+       If you're a Liferay Self-Hosted user, navigate to the `liferay-clarity-etc-spring-boot/` project and start the Spring Boot application with this command:
 
    ```bash
    ../../gradlew bootRun
@@ -153,15 +140,27 @@ Clarity wants to implement a workflow for reviewing and approving changes made t
 
 1. Go into your Liferay instance and navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Applications_ &rarr; _Process Builder_.
 
-1. Confirm the Distribution Manager Approval workflow process appears.
+1. Select the Distribution Manager Approval workflow process.
 
-   ![The Distribution Manager Approval workflow displays in the menu after being deployed.](./implementing-business-logic/images/07.png)
+   ![The Distribution Manager Approval workflow displays in the workflows menu.](./implementing-business-logic/images/07.png)
 
-1. Go to the _Configuration_ tab.
+1. Click the _Machine Review_ task.
+
+1. In the sidebar panel, select _Machine Action_ under Actions.
+
+1. Pick the `function#liferay-clarity-etc-spring-boot-workflow-action-application` function in the Type field.
+
+   ![You can choose an action's function in the sidebar.](./implementing-business-logic/images/08.png)
+
+1. Click _Update_.
+
+Now that the Distribution Manager Approval workflow is fully set up, you can assign it to the Distributor Application object.
+
+1. Return to the Process Builder menu and navigate to the _Configuration_ tab.
 
 1. Finally, click _Edit_ for Distributor Application, select _Distribution Manager Approval_, then click _Save_.
 
-   ![The assigned workflow will be used by the object.](./implementing-business-logic/images/08.png)
+   ![The assigned workflow will be used by the object.](./implementing-business-logic/images/09.png)
 
 ### Bonus Exercise 1
 
@@ -181,15 +180,9 @@ To address these issues, you can implement notifications by first creating notif
 
 ### Exercise 3
 
-1. In your terminal, go to the `[workspace-root]/client-extensions/liferay-clarity-notifications-batch/` folder.
+In your Liferay instance, navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_, then select _Templates_ under Notifications.
 
-1. Build and deploy the client extension project into your Liferay instance.
-
-1. After the deployment finishes, go into your Liferay instance and navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_, then select _Templates_ under Notifications.
-
-1. Once the menu opens, confirm that all four notification templates are present.
-
-   ![All notification templates are present after deployment.](./implementing-business-logic/images/09.png)
+![All notification templates are present after deployment.](./implementing-business-logic/images/10.png)
 
 These templates are utilized to define notification actions in the Distributor Application object, which are used to improve visibility for new applications and automate updates for applicants, notifying them when their application is received, approved, or denied.
 
@@ -216,7 +209,7 @@ Clarity still needs an automated notification action for administrative users th
    | Description  | On After Add, send notifications to administrative users. |
    | Active       | True                                                      |
 
-   ![Clicking Add opens a sidebar to create a new object action.](./implementing-business-logic/images/10.png)
+   ![Clicking Add opens a sidebar to create a new object action.](./implementing-business-logic/images/11.png)
 
 1. Go to the Action Builder tab and set these values:
 
@@ -227,13 +220,21 @@ Clarity still needs an automated notification action for administrative users th
    | Action                | Notification                       |
    | Notification Template | Application Submitted, Admin, User |
 
-   ![The Action Builder tab is used to set the trigger, condition, and action to be done.](./implementing-business-logic/images/11.png)
+   ![The Action Builder tab is used to set the trigger, condition, and action to be done.](./implementing-business-logic/images/12.png)
 
 1. Click _Save_.
 
-<!--TODO: Add steps for testing notification-->
-
 After adding and activating the notification actions, they'll be triggered when adding and updating object entries. These notifications can help improve visibility for new applications and keep applicants up to date on the state of their applications.
+
+### Bonus Exercise 2
+
+You've configured a notification that is sent to administrative business users when a new application is submitted. Follow these steps to test your new configured notification functionality:
+
+1. Create a Distributor Application entry.
+
+1. Impersonate the Douglas Morgan user and check for a new notification.
+
+![A notification is sent to the business manager when an application is submitted.](./implementing-business-logic/images/13.png)
 
 Now that you've learned about implementing business logic in low code applications, let's move on to [Designing User Interfaces](./designing-user-interfaces.md).
 

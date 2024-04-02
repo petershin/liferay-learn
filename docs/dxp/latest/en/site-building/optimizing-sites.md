@@ -31,6 +31,10 @@ From having top-tier SEO, to understanding and acting on your site's content, to
 :link: ./creating-pages/page-settings/configuring-page-sets.md#sitemap
 :::
 
+:::{grid-item-card} Configuring XML Sitemaps
+:link: ./site-settings/managing-site-urls/configuring-xml-sitemaps.md
+:::
+
 :::{grid-item-card} Configuring Virtual Hosts Site URLs
 :link: ./site-settings/managing-site-urls/configuring-virtual-hosts-site-urls.md
 :::
@@ -101,10 +105,9 @@ From having top-tier SEO, to understanding and acting on your site's content, to
 ::::{grid} 2
 :gutter: 3 3 3 3
 
-<!-- Eric is working on LRDOCS-11987, when he is finished, he will add the documentation link here
 :::{grid-item-card} Using the Simulation Panel
-:link: ./building-a-responsive-site/
-::: -->
+:link: ./optimizing-sites/building-a-responsive-site.md
+:::
 
 :::{grid-item-card} Building Responsive Layouts with the Grid Fragment
 :link: ./optimizing-sites/building-a-responsive-site/building-responsive-layouts-with-the-grid-fragment.md

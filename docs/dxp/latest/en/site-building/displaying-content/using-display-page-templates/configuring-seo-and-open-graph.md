@@ -18,6 +18,9 @@ Follow these steps to configure SEO and Open Graph settings for a display page t
 
 1. Open the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)), navigate to *Design* &rarr; *Page Templates*, and click on the *Display Page Templates* tab.
 
+   !!! note
+      You can also configure SEO and Open Graph for other types of pages (e.g., content pages). To do that, navigate to *Site Builder* &rarr; *Pages* and continue with the next step.
+
    ![Go to the display page templates tab.](./configuring-seo-and-open-graph/images/01.png)
 
 1. Click *Actions* (![Actions icon](./../../../images/icon-actions.png)) for the desired template and select *Edit*. When editing the template, click *Options* (![Options icon](./../../../images/icon-options.png)) on the application bar and click *Configure* (![Configure icon](../../../images/icon-cog.png)).
@@ -28,9 +31,8 @@ Follow these steps to configure SEO and Open Graph settings for a display page t
 
 1. Click *Save*.
 
-   ```{important}
-   Unsaved changes are lost when navigating between the SEO and Open Graph tabs.
-   ```
+   !!! important
+       Unsaved changes are lost when navigating between the SEO and Open Graph tabs.
 
 When configuring SEO and Open Graph settings, you can enter values directly and use field mapping to add values dynamically. Available mapping options depend on the template's content type and subtype. To map a field, click on the *field selector* button (![Mapping button](../../../images/icon-map.png)) and select from available fields. As of Liferay DXP 7.4 U1 and Portal 7.4 GA5, fields added this way are represented as `${}` placeholders with two parts: a field reference ID and field label (`${fieldReferenceID:Field Label}`).
 
@@ -38,9 +40,8 @@ For earlier versions, mapping placeholders only include the field reference ID (
 
 Liferay provides the field label value for clarity on the administrative side, since field reference IDs in custom web content and document structures are not human-readable (e.g., `${Text84981642:Contributors}`). The label is not displayed to end users and does not affect mapping, so users can edit it as desired. Mapping only depends on the placeholder's field reference ID.
 
-```{note}
-Liferay provides translations for mapped fields when possible. However, text provided outside of mapped fields is not translated.
-```
+!!! note
+    Liferay provides translations for mapped fields when possible. However, text provided outside of mapped fields is not translated.
 
 ## SEO Settings Reference
 
@@ -52,9 +53,8 @@ The HTML Title field defines a display page's `<title>` tag. This title is used 
 
 The recommended length for an *HTML title* is under 60 characters.
 
-```{tip}
-It is best practice to update the SEO and Open Graph titles together.
-```
+!!! tip
+    It is best practice to update the SEO and Open Graph titles together.
 
 ![Combine multiple mapped fields to build your own HTML title.](./configuring-seo-and-open-graph/images/03.png)
 
@@ -64,11 +64,21 @@ The Description field defines a display page's description `<meta>` tag. This de
 
 The recommended length for a page's description is under 155 characters.
 
-```{tip}
-It is best practice to update the SEO and Open Graph descriptions together.
-```
+!!! tip
+    It is best practice to update the SEO and Open Graph descriptions together.
 
 ![Combine multiple mapped fields to create a custom HTML description.](./configuring-seo-and-open-graph/images/04.png)
+
+### Custom Canonical URL
+
+{bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA126+`
+
+Canonical pages are the preferred version of a web page among multiple versions that have similar or identical content. By selecting a canonical page, you ensure that search engines understand which version of a page is the primary one to index and rank in search results. It also helps prevent dilution of search rankings due to duplicate content and helps users find the most relevant content.
+
+Check the *Use Custom Canonical URL* field to customize and localize the canonical URL.
+
+!!! note
+    Custom canonical URL are excluded from the [sitemap](#sitemap).
 
 ### Robots
 
@@ -92,17 +102,15 @@ Determine whether to include a display page in your `sitemap.xml` file, as well 
 
 With Liferay DXP, you can create display page templates that dynamically configure a page's Open Graph `<meta>` tags. Values defined here override default values defined at the [site](../../site-settings/configuring-open-graph.md) level.
 
-```{note}
-Open Graph `<meta>` tags are only included in page headers to unauthenticated users. They are not included when the user is logged in.
-```
+!!! note
+    Open Graph `<meta>` tags are only included in page headers to unauthenticated users. They are not included when the user is logged in.
 
 ### Title
 
 The Title field defines a display page's `og:title` property, which defines the title displayed for your content in rich previews. By default, this field is mapped to `${title}`. You can edit this value directly and use the field selector to include additional mappings (e.g., `${title} - ${authorName:Author Name}`).
 
-```{tip}
-It is best practice to update the SEO and Open Graph titles together.
-```
+!!! tip
+    It is best practice to update the SEO and Open Graph titles together.
 
 ![Combine multiple mapped fields to create a custom og:title value.](./configuring-seo-and-open-graph/images/07.png)
 
@@ -110,9 +118,8 @@ It is best practice to update the SEO and Open Graph titles together.
 
 The Description field defines a display page's `og:description` property which determines the description displayed for your content in rich previews. By default, this field is mapped to `${description}`. You can edit this value and use the field selector to include additional mappings (e.g., `${description} - ${authorName:Author Name}`).
 
-```{tip}
-It is best practice to update the SEO and Open Graph descriptions together.
-```
+!!! tip
+    It is best practice to update the SEO and Open Graph descriptions together.
 
 ![Combine multiple mapped fields to create a custom og:description value.](./configuring-seo-and-open-graph/images/08.png)
 
@@ -146,6 +153,6 @@ By default, this field is unmapped in display page templates. This means the tem
 
 ## Related Topics
 
-[Configuring Your Page's Friendly URL](../../creating-pages/page-settings/configuring-your-pages-friendly-url.md)
+- [Configuring Your Page's Friendly URL](../../creating-pages/page-settings/configuring-your-pages-friendly-url.md)
 
-[Configuring Open Graph](./../../site-settings/configuring-open-graph.md)
+- [Configuring Open Graph](./../../site-settings/configuring-open-graph.md)

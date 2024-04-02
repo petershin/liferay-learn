@@ -14,7 +14,7 @@ By default, a Liferay search bar is set to only search within site content. To b
 
 1. From the Clarity website's global search bar, search for the term `UV Protection`.
 
-   ![Search for UV protection in the global search bar.](./understanding-and-customizing-search-results-pages/01.png)
+   ![Search for UV protection in the global search bar.](./understanding-and-customizing-search-results-pages/images/01.png)
 
 1. In the search results, notice that the results only show site content such as blog posts.
 
@@ -22,7 +22,7 @@ By default, a Liferay search bar is set to only search within site content. To b
 
 1. For the search bar widget in the left module, click the options icon and click _Configuration_.
 
-   ![Click configurations for the search bar widget.](./understanding-and-customizing-search-results-pages/02.png)
+   ![Click configurations for the search bar widget.](./understanding-and-customizing-search-results-pages/images/02.png)
 
 1. Under the scope section, change the selection to _Everything_. Click _Save_ and close the window. Click _Publish_ to update the page.
 
@@ -42,7 +42,7 @@ The Clarity team has added some of their products already onto the website (e.g.
 
 1. In the left navigation, drag over a container element onto the new page. Next, drag over a grid element into the container. Double click the grid element and change the number of modules from three to two. Drag the divider between the two modules to the left so that the left module takes about one-fourth of the total size.
 
-   ![Add a two module grid element into the container.](./understanding-and-customizing-search-results-pages/03.png)
+   ![Add a two module grid element into the container.](./understanding-and-customizing-search-results-pages/images/03.png)
 
 1. Drag a search bar widget into the left module. Click the options icon of the widget and click _Configuration_. Change the scope from _This Site_ to _Everything_. Click _Save_ and close the window.
 
@@ -52,7 +52,7 @@ The Clarity team has added some of their products already onto the website (e.g.
 
 1. Drag a commerce search results widget onto the right module. Click _Publish_. See that the products can now be filtered across different facets.
 
-   ![Publish the page and see that the products can be filtered across different facets.](./understanding-and-customizing-search-results-pages/04.png)
+   ![Publish the page and see that the products can be filtered across different facets.](./understanding-and-customizing-search-results-pages/images/04.png)
 
 ## Conclusion
 

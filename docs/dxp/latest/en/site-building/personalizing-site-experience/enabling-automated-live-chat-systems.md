@@ -58,7 +58,7 @@ If you are unsure how to get the Account ID or Token for your chat provider see 
 * [Chatwoot](./enabling-automated-live-chat-systems/getting-a-chat-provider-account-id/chatwoot.md)
 * [Crisp](./enabling-automated-live-chat-systems/getting-a-chat-provider-account-id/crisp.md)
 * [Hubspot](./enabling-automated-live-chat-systems/getting-a-chat-provider-account-id/hubspot.md)
-* [Intercom](https://developers.intercom.com/installing-intercom/web/installation/)
+* [Intercom](./enabling-automated-live-chat-systems/getting-a-chat-provider-account-id/intercom.md)
 * [Jivochat](./enabling-automated-live-chat-systems/getting-a-chat-provider-account-id/jivochat.md)
 * [LiveChat](./enabling-automated-live-chat-systems/getting-a-chat-provider-account-id/livechat.md)
 * [LivePerson](./enabling-automated-live-chat-systems/getting-a-chat-provider-account-id/liveperson.md)

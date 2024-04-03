@@ -1,5 +1,12 @@
 ---
 uuid: aeac79c3-efa0-479e-816a-b66c92743e68
+taxonomy-category-names:
+- Platform
+- DXP Configuration
+- Identity Management and Authentication
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 
 # Liferay SSO: Configuring Okta as an Identity Provider Via OpenID Connect

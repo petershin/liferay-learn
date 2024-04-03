@@ -56,23 +56,23 @@ While the object is active, you can use these APIs to perform basic CRUD operati
 
 ## Default Company-Scoped REST APIs
 
-Default REST APIs are available for all company-scoped objects. For the Java methods, replace `ObjectName` with the name of your object.
+Default REST APIs are available for all company-scoped objects.
 
-| HTTP Method | HTTP Endpoint                       | Java Method                     | Description                                                                                                  |
-|:------------|:------------------------------------|:--------------------------------|:-------------------------------------------------------------------------------------------------------------|
-| DELETE      | `/by-external-reference-code/{erc}` | `deleteByExternalReferenceCode` | Deletes the specified entry and returns a 204 if the operation succeeds                                      |
-| GET         | `/by-external-reference-code/{erc}` | `getByExternalReferenceCode`    | Returns details for the specified entry                                                                      |
-| PATCH       | `/by-external-reference-code/{erc}` | `patchByExternalReferenceCode`  | Updates the specified entry; only fields included in the API call are changed                                |
-| PUT         | `/by-external-reference-code/{erc}` | `putByExternalReferenceCode`    | Replaces the specified entry's details with those provided in the API call                                   |
-| GET         | `/`                                 | `getObjectNamePage`             | Returns a complete list of entries in a Liferay instance; you can paginate, filter, search, and sort results |
-| POST        | `/`                                 | `postObjectName`                | Creates a new entry using the details provided in the API call                                               |
-| DELETE      | `/batch`                            | `deleteObjectNameBatch`         | Deletes multiple entries and returns a 204 if the operation succeeds                                         |
-| POST        | `/batch`                            | `postObjectNameBatch`           | Creates multiple entries using the details provided in the API call                                          |
-| PUT         | `/batch`                            | `putObjectNameBatch`            | Replaces multiple entries using the details provided in the API call                                         |
-| DELETE      | `/{entryId}`                        | `deleteObjectName`              | Deletes the specified entry and returns a 204 if the operation succeeds                                      |
-| GET         | `/{entryId}`                        | `getObjectName`                 | Returns details for the specified entry                                                                      |
-| PATCH       | `/{entryId}`                        | `patchObjectName`               | Updates the specified entry; only fields included in the API call are changed                                |
-| PUT         | `/{entryId}`                        | `putObjectName`                 | Replaces the specified entry's details with those provided in the API call                                   |
+| HTTP Method | HTTP Endpoint                       | Description                                                                                                  |
+|:------------|:------------------------------------|:-------------------------------------------------------------------------------------------------------------|
+| DELETE      | `/by-external-reference-code/{erc}` | Deletes the specified entry and returns a 204 if the operation succeeds                                      |
+| GET         | `/by-external-reference-code/{erc}` | Returns details for the specified entry                                                                      |
+| PATCH       | `/by-external-reference-code/{erc}` | Updates the specified entry; only fields included in the API call are changed                                |
+| PUT         | `/by-external-reference-code/{erc}` | Replaces the specified entry's details with those provided in the API call                                   |
+| GET         | `/`                                 | Returns a complete list of entries in a Liferay instance; you can paginate, filter, search, and sort results |
+| POST        | `/`                                 | Creates a new entry using the details provided in the API call                                               |
+| DELETE      | `/batch`                            | Deletes multiple entries and returns a 204 if the operation succeeds                                         |
+| POST        | `/batch`                            | Creates multiple entries using the details provided in the API call                                          |
+| PUT         | `/batch`                            | Replaces multiple entries using the details provided in the API call                                         |
+| DELETE      | `/{entryId}`                        | Deletes the specified entry and returns a 204 if the operation succeeds                                      |
+| GET         | `/{entryId}`                        | Returns details for the specified entry                                                                      |
+| PATCH       | `/{entryId}`                        | Updates the specified entry; only fields included in the API call are changed                                |
+| PUT         | `/{entryId}`                        | Replaces the specified entry's details with those provided in the API call                                   |
 
 ```{note}
 Batch operations are only available for company-scoped objects.
@@ -80,20 +80,20 @@ Batch operations are only available for company-scoped objects.
 
 ## Default Site-Scoped REST APIs
 
-Default REST APIs are available for all site-scoped objects. For the Java methods, replace `ObjectName` with the name of your object.
+Default REST APIs are available for all site-scoped objects.
 
-| HTTP Method | HTTP Endpoint                                         | Java Method                                  | Description                                                                                                   |
-|:------------|:------------------------------------------------------|:---------------------------------------------|:--------------------------------------------------------------------------------------------------------------|
-| DELETE      | `/scopes/{scopeKey}/by-external-reference-code/{erc}` | `deleteScopeScopeKeyByExternalReferenceCode` | Deletes the specified entry and returns a 204 if the operation succeeds                                       |
-| GET         | `/scopes/{scopeKey}/by-external-reference-code/{erc}` | `getScopeScopeKeyByExternalReferenceCode`    | Returns details for the specified entry                                                                       |
-| PATCH       | `/scopes/{scopeKey}/by-external-reference-code/{erc}` | `patchScopeScopeKeyByExternalReferenceCode`  | Updates the specified entry; only fields included in the API call are changed                                 |
-| PUT         | `/scopes/{scopeKey}/by-external-reference-code/{erc}` | `putScopeScopeKeyByExternalReferenceCode`    | Replaces the specified entry's details with those provided in the API call                                    |
-| GET         | `/scopes/{scopeKey}`                                  | `getScopeScopeKeyPage`                       | Returns a complete list of entries in the specified scope; you can paginate, filter, search, and sort results |
-| POST        | `/scopes/{scopeKey}`                                  | `postScopeScopeKey`                          | Creates a new entry in the specified scope using the details provided in the API call                         |
-| DELETE      | `/{entryId}`                                          | `deleteObjectName`                           | Deletes the specified entry and returns a 204 if the operation succeeds                                       |
-| GET         | `/{entryId}`                                          | `getObjectName`                              | Returns details for the specified entry                                                                       |
-| PATCH       | `/{entryId}`                                          | `patchObjectName`                            | Updates the specified entry; only fields included in the API call are changed                                 |
-| PUT         | `/{entryId}`                                          | `putObjectName`                              | Replaces the specified entry's details with those provided in the API call                                    |
+| HTTP Method | HTTP Endpoint                                         | Description                                                                                                   |
+|:------------|:------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------|
+| DELETE      | `/scopes/{scopeKey}/by-external-reference-code/{erc}` | Deletes the specified entry and returns a 204 if the operation succeeds                                       |
+| GET         | `/scopes/{scopeKey}/by-external-reference-code/{erc}` | Returns details for the specified entry                                                                       |
+| PATCH       | `/scopes/{scopeKey}/by-external-reference-code/{erc}` | Updates the specified entry; only fields included in the API call are changed                                 |
+| PUT         | `/scopes/{scopeKey}/by-external-reference-code/{erc}` | Replaces the specified entry's details with those provided in the API call                                    |
+| GET         | `/scopes/{scopeKey}`                                  | Returns a complete list of entries in the specified scope; you can paginate, filter, search, and sort results |
+| POST        | `/scopes/{scopeKey}`                                  | Creates a new entry in the specified scope using the details provided in the API call                         |
+| DELETE      | `/{entryId}`                                          | Deletes the specified entry and returns a 204 if the operation succeeds                                       |
+| GET         | `/{entryId}`                                          | Returns details for the specified entry                                                                       |
+| PATCH       | `/{entryId}`                                          | Updates the specified entry; only fields included in the API call are changed                                 |
+| PUT         | `/{entryId}`                                          | Replaces the specified entry's details with those provided in the API call                                    |
 
 ```{note}
 For the `scopeKey`, use the proper identifier for the desired data scope (e.g., site ID or user role).
@@ -105,7 +105,7 @@ For the `scopeKey`, use the proper identifier for the desired data scope (e.g., 
 
 When you define one-to-many and many-to-many relationships between objects, Liferay generates endpoints for querying and managing entry relationships. This includes a GET endpoint for returning related object entries, PUT endpoints for relating entries, and a DELETE endpoint for disassociating related entries. See [Using Relationship APIs](./using-custom-object-apis/using-relationship-rest-apis.md) for more information.
 
-For the HTTP endpoints, replace `relationshipName` with the name of your relationship (e.g., `userToTicket`). The Java method for each relationship API follows this naming pattern: method + current object + relationship name + related object (e.g., `getTicketUserToTicketUserPage`, `deleteTicketUserToTicketUser`).
+For the HTTP endpoints, replace `relationshipName` with the name of your relationship (e.g., `userToTicket`).
 
 | HTTP Method | HTTP Endpoint                                                     | Description                                                                 |
 |:------------|:------------------------------------------------------------------|:----------------------------------------------------------------------------|
@@ -126,10 +126,10 @@ In addition to the dedicated relationship APIs, you can use the `nestedFields` q
 
 When you define standalone actions for a published object, Liferay generates two endpoints for triggering the action on an entry. One uses the entry's ID and the other uses the entry's external reference code (ERC). See [Using Manual Actions](../creating-and-managing-objects/actions/using-manual-actions.md) for more information.
 
-| HTTP Method | HTTP Endpoint                                                 | Java Method               |
-|:------------|:--------------------------------------------------------------|:--------------------------|
-| PUT         | `/by-external-reference-code/{erc}/object-actions/actionName` | `putObjectNameActionName` |
-| PUT         | `/{entryId}/object-actions/actionName`                        | `putObjectNameActionName` |
+| HTTP Method | HTTP Endpoint                                                 |
+|:------------|:--------------------------------------------------------------|
+| PUT         | `/by-external-reference-code/{erc}/object-actions/actionName` |
+| PUT         | `/{entryId}/object-actions/actionName`                        |
 
 For site-scoped objects, the ERC endpoint includes the `/scope/{scopeKey}` prefix (e.g., `/scopes/{scopeKey}/by-external-reference-code/{erc}/object-actions/actionName`).
 

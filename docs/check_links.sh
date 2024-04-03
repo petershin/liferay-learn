@@ -107,22 +107,18 @@ function check_landing_pages {
 }
 
 function check_markdown {
-	local links
+	local link
 
-	for links in $(ag --only-matching '\[.*\]\((?!http).*\.md.*\).*' ${_MARKDOWN_FILE_NAME})
+	for link in $(ag --nofilename --only-matching "\[.+?\]\\((?!http).+?\.md[\#|\\)]" ${_MARKDOWN_FILE_NAME} | ag --only-matching ".*\.md")
 	do
-		for _LINK_FILE_NAME in $(echo ${links} | sed -e 's/\.md)/\.md)\n/g' | sed 's/.*\](\(.*\.md\).*).*/\1/g')
-		do
-			if [[ ${_LINK_FILE_NAME} == *".md" ]]
-			then
-				if ! ls "${_LINK_FILE_NAME}"
-				then
-					echo_broken_link "Markdown link"
+		_LINK_FILE_NAME=$(echo ${link} | sed 's/.*\](\(.*\.md\).*/\1/g')
 
-					fix_link ${@}
-				fi
-			fi
-		done
+		if ! ls "${_LINK_FILE_NAME}"
+		then
+			echo_broken_link "Markdown link"
+
+			fix_link ${@}
+		fi
 	done
 }
 
@@ -151,7 +147,10 @@ function echo_broken_link {
 		echo
 	fi
 
-	_LINK_FILE_NAME=$(echo ${_LINK_FILE_NAME} | sed 's/.*liferay-learn\/docs\///g' | sed 's/\/\.\//\//g')
+	if [[ ${_LINK_FILE_NAME} == *"liferay-learn"* ]]
+	then
+		_LINK_FILE_NAME=$(echo ${_LINK_FILE_NAME} | sed 's/.*liferay-learn\/docs\///g' | sed 's/\/\.\//\//g')
+	fi
 
 	if ! [ -z ${2} ]
 	then
@@ -182,9 +181,14 @@ function fix_link {
 				correct_link_file_name=$(echo ${correct_link_file_name} | sed 's/\.md/\.html/g')
 
 				replace_in_file_name=${_LANDING_PAGE_LINK_FILE_NAME}
+			elif [[ $(echo ${correct_link_file_name} | ag "^[a-z]") ]]
+			then
+				correct_link_file_name=$(echo "./${correct_link_file_name}")
 			fi
 
 			sed -i "s,(${_LINK_FILE_NAME},(${correct_link_file_name},g" ${replace_in_file_name}
+			sed -i "s,- ${_LINK_FILE_NAME},- ${correct_link_file_name},g" ${replace_in_file_name}
+			sed -i "s,\([\x27|\x22]\)${_LINK_FILE_NAME},\1${correct_link_file_name},g" ${replace_in_file_name}
 
 			echo "    Fixed: ${correct_link_file_name}"
 		else

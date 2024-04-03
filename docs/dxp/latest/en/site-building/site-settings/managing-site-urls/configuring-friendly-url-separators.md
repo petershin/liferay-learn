@@ -10,7 +10,12 @@ uuid: 93b7a0b6-926f-47dd-a26a-c50f40de6fb4
 
 # Configuring Friendly URL Separators
 
-{bdg-secondary}`Liferay DXP 2024.Q2+`
+{bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA126+`
+
+!!! important
+    This feature is currently behind a developer feature flag (LPS-203351). Read [Developer Feature Flags](../../../system-administration/configuring-liferay/feature-flags.md#dev-feature-flags) for more information.
+
+<!-- I was waiting for this flag to change, I'll have to alter this admonition later. - Eric -->
 
 With Liferay, you can customize URL separators to improve URL readability and enhance SEO.
 
@@ -24,7 +29,7 @@ To configure friendly URL separators,
 
 1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), navigate to *Control Panel*, and open *Instance Settings* under Configuration.
 
-1. Select *SEO* under Platform.
+1. Select *SEO* under Platform and click *Friendly URL* on the left.
 
 1. Change the default values to set your friendly URL separators.
 

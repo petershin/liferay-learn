@@ -27,6 +27,10 @@ From having top-tier SEO, to understanding and acting on your site's content, to
 :link: ./site-settings/managing-site-urls/configuring-your-sites-friendly-url.md
 :::
 
+:::{grid-item-card} Configuring Friendly URL Separators
+:link: ./site-settings/managing-site-urls/configuring-friendly-url-separators.md
+:::
+
 :::{grid-item-card} Site Map
 :link: ./creating-pages/page-settings/configuring-page-sets.md#sitemap
 :::

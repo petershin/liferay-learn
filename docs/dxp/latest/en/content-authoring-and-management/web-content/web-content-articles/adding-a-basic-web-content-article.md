@@ -32,9 +32,9 @@ Your new article is created/submitted for [workflow](../../../process-automation
 
 ### Publish With Permissions and Schedule Publications
 
-<!-- Adjust this information once this feature is released. I can merge the sections into one. -->
+<!-- Adjust this information once this feature is released. I can merge the sections into one. - Eric -->
 
-{bdg-secondary}`Liferay DXP 2024.Q2+`
+{bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA126+`
 
 !!! important
     This feature is currently behind a release feature flag (LPD-15596). Read [Release Feature Flags](../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information.
@@ -43,11 +43,11 @@ While creating/editing a web content article, you can view and set the web conte
 
 To set the web content article's visibility and permissions,
 
-1. Follow the steps to create a web content article.
+1. Follow the steps to [create a web content article](#creating-a-basic-web-content-article).
 
 1. Click *Publish* and select *Publish with Permissions*.
 
-1. Choose who can view the web content article by selecting an option under Viewable by (i.e., Anyone (Guest Role), Site Members, or the content's Owner).
+1. Choose who can view the web content article by selecting an option under Viewable By (i.e., Anyone (Guest Role), Site Members, or the content's Owner).
 
 1. Click *More Options* to view available permissions. Assign them to Guest users or Site Members. See [Web Content Article Permissions Reference](#web-content-article-permissions-reference) to learn more about each permission.
 
@@ -55,23 +55,21 @@ To set the web content article's visibility and permissions,
 
 ![Set the web content article's visibility and permissions and schedule its publication before publishing/submitting it for workflow.](./adding-a-basic-web-content-article/images/02.gif)
 
-Once you publish your web content article, set its permissions in one of two ways:
+Once you publish your web content article, modify its permissions in one of two ways:
 
-While in the editing page (1), open the *Options* menu (![Options menu icon](../../../images/icon-options.png)) at the top right corner and select *Permissions*.
+- While in the editing page (1), open the *Options* menu (![Options menu icon](../../../images/icon-options.png)) at the top right corner and select *Permissions*.
 
-Or, in the Web Content application (2), open the *Action* menu (![Actions menu icon](../../../images/icon-actions.png)) for the article and select *Permissions*.
+- Or, in the Web Content application (2), open the *Action* menu (![Actions menu icon](../../../images/icon-actions.png)) for the article and select *Permissions*.
 
 ![Set permissions in the editing page or through the web content application.](./adding-a-basic-web-content-article/images/03.png)
 
 To schedule your web content article's publication to a future date,
 
-1. Follow the steps to create a web content article.
+1. Follow the steps to [create a web content article](#creating-a-basic-web-content-article).
 
 1. Click *Publish* and select *Schedule Publication*.
 
-1. Select a valid Date and Time for your publication.
-
-   UTC standard is used as a reference.
+1. Select a valid Date and Time for your publication (UTC standard is used as a reference).
 
 1. While scheduling the publication, you can also choose who can view the web content article and define permissions for users.
 
@@ -85,25 +83,30 @@ Once the publication is scheduled, you can reschedule it by editing and setting 
 
 When you reschedule the same publication multiple times, you can view all versions and when they will be published by going to the Web Content application screen and clicking the *Action* menu (![Action menu icon](../../../images/icon-actions.png)) next to the desired article &rarr; *View History*.
 
+!!! tip
+    All rescheduled versions of the web content article are published. Note that later scheduled versions replace previous ones.
+
 ![Schedule the same web content article multiple times.](./adding-a-basic-web-content-article/images/05.png)
 
 ### Web Content Article Permissions Reference
 
 Here's a list of available permissions you can set for your web content article:
 
-![Available permissions.](./adding-a-basic-web-content-article/images/06.png)
-
 | Permission        | Description                                                                                |
 |:------------------|:-------------------------------------------------------------------------------------------|
 | Update Discussion | Edit another user's comment on the web content article.                                    |
 | Delete            | Move the web content article to the [Recycle Bin](../recycle-bin/recycle-bin-overview.md). |
 | Permissions       | View and modify the web content article's permissions.                                     |
-| Expire            | Set expiration dates for web content article.                                              |
+| Expire            | Set expiration dates for the web content article.                                              |
 | Delete Discussion | Delete any comments on the web content article.                                            |
 | Update            | Edit and modify the web content article.                                                   |
 | Subscribe         | Receive notifications on new and modified web content articles.                            |
 | View              | View the web content article.                                                              |
 | Add Discussion    | Comment on the web content article.                                                        |
+
+On the left, you can see all permissions and users displayed when modifying your permissions. {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA126+` On the right, a simplified view showing the most common roles displayed when creating an article.
+
+![On the left, displayed permissions while modifying your permissions. On the right, displayed permissions while creating an article.](./adding-a-basic-web-content-article/images/06.png)
 
 ## Previewing Web Content Articles
 

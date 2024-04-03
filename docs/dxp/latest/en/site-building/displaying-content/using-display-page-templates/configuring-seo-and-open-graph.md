@@ -19,7 +19,7 @@ Follow these steps to configure SEO and Open Graph settings for a display page t
 1. Open the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)), navigate to *Design* &rarr; *Page Templates*, and click on the *Display Page Templates* tab.
 
    !!! note
-      You can also configure SEO and Open Graph for other types of pages (e.g., content pages). To do that, navigate to *Site Builder* &rarr; *Pages* and continue with the next step.
+      You can also configure SEO and Open Graph for other types of pages (e.g., content pages). To do that, navigate to *Site Builder* &rarr; *Pages* and click *Actions* (![Actions icon](../../../images/icon-actions.png)) next to the page you want to configure &rarr; *Configure*. Skip the next step and continue the tutorial normally.
 
    ![Go to the display page templates tab.](./configuring-seo-and-open-graph/images/01.png)
 
@@ -154,5 +154,4 @@ By default, this field is unmapped in display page templates. This means the tem
 ## Related Topics
 
 - [Configuring Your Page's Friendly URL](../../creating-pages/page-settings/configuring-your-pages-friendly-url.md)
-
 - [Configuring Open Graph](./../../site-settings/configuring-open-graph.md)

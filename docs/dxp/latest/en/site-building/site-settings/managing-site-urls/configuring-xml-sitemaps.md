@@ -41,8 +41,6 @@ To configure your XML sitemap,
 
    You can add a page to the sitemap through the page's configuration. Read [Configuring SEO and Open Graph](../../displaying-content/using-display-page-templates/configuring-seo-and-open-graph.md#sitemap) to learn more.
 
-   <!-- This link points to an article under Using Display Page Templates. However, it also applies to different kinds of pages. Maybe I should change its location or rewrite it a little instead of rewriting the whole information? - Eric -->
-
 1. Select whether or not to include web content URLs in the XML sitemap.
 
 1. Select whether or not to include category URLs in the XML sitemap.

@@ -15,8 +15,9 @@ This tutorial guides you through the basic steps needed to integrate Okta, your 
 
 ## Prerequisites
 - [Okta Dev](https://developer.okta.com/login/) account
-- Admin access for Liferay control panel
-
+- Liferay DXP environment
+- A user who has administrative access Okta Admin Console
+- A user who has administrative access to Liferay's Control Panel
 ## Okta Configuration
 
 1. Log in to [Okta Dev](https://developer.okta.com/login/) and navigate to *Applications* &rarr; *Add Application* &rarr; *Create App Integration*.
@@ -29,9 +30,9 @@ This tutorial guides you through the basic steps needed to integrate Okta, your 
 
 1. For grant types, select *Authorization Code* and *Refresh Token*
 
-1. Enter `https://[your_liferay_saas_environment]/c/portal/login/openidconnect` for the sign-in redirect URIs.
+1. Enter `https://[your_instance_url]/c/portal/login/openidconnect` for the sign-in redirect URIs.
 
-1. Enter `https://[your_liferay_saas_environment]` for the sign-out redirect URIs.
+1. Enter `https://[your_instance_url]` for the sign-out redirect URIs.
 
 1. Under assignments, select *Skip group assignment for now*.
 

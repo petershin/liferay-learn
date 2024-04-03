@@ -9,7 +9,7 @@ uuid: 8a924e5a-66b3-4530-b343-27ddcdd52f86
 ---
 # Form Reports
 
-> Available: Liferay CE/DXP 7.3
+{bdg-secondary}`7.3, 7.4`
 
 Once users begin submitting form entries, you can access a field-by-field report on the form's records:
 
@@ -35,14 +35,14 @@ The data presentation is different depending on the field type:
 
 | Field(s) | Data Display Format | Additional Information |
 | :--- | :--- | :--- |
-| Color<br />Date<br />Number<br />Text| Field List | Number fields also include these summary statistics: Average, Maximum Value, Minimum Value, Sum |
+| Color<br />Date<br />Numeric<br />Text<br />Image<br />Upload | Field List | Number fields also include these summary statistics: Average, Maximum Value, Minimum Value, Sum |
 | Select from List<br />Single Selection | Pie Chart | None |
 | Grid<br />Multiple Selection | Bar Graph | Multiple Selection graphs are horizontal, where Grid graphs are vertical with grouped bars |
-| Image<br />Paragraph<br />Rich Text<br />Separator<br />Upload | _No Metrics_ | These fields don't have metrics to report |
+| Paragraph<br />Rich Text<br />Separator | _No Metrics_ | These fields don't have metrics to report |
 
 ### Field Lists
 
-The Color, Date, Number, and Text fields accept free-form data entry from the form's users, so data can't really be tabulated for these fields. Instead, they're presented as a simple list of responses. However, since the number field includes validation to ensure that only numeric data are entered, some summary statistics are compiled: average, sum, minimum value, and maximum value.
+Color, Date, Image, Number, Text, and Upload fields have data that can't really be tabulated. Instead, they're presented as a simple list of responses. However, since the numeric field includes validation to ensure that only numeric data are entered, some summary statistics are compiled: average, sum, minimum value, and maximum value.
 
 ![Color field entries are displayed as a simple list of responses.](./form-reports/images/02.png)
 

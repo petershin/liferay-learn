@@ -30,7 +30,7 @@ Your new article is created/submitted for [workflow](../../../process-automation
 !!! note
     The user who creates the first version of a web content article becomes its owner. If another user edits the content (which creates a new version), ownership isn't transferred.
 
-### Publish With Permissions and Schedule Publications
+## Publish With Permissions and Schedule Publications
 
 <!-- Adjust this information once this feature is released. I can merge the sections into one. - Eric -->
 
@@ -39,9 +39,9 @@ Your new article is created/submitted for [workflow](../../../process-automation
 !!! important
     This feature is currently behind a release feature flag (LPD-15596). Read [Release Feature Flags](../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information.
 
-While creating/editing a web content article, you can view and set the web content article's visibility, view and set its permissions, and schedule its publication to a future date before publishing/submitting it for workflow.
+While creating/editing a web content article, you can view and set the web content article's visibility, view and set its permissions, and schedule its publication for a future date before publishing/submitting it for workflow.
 
-To set the web content article's visibility and permissions,
+### Setting the Web Content Article's Visibility and Permissions
 
 1. Follow the steps to [create a web content article](#creating-a-basic-web-content-article).
 
@@ -49,7 +49,7 @@ To set the web content article's visibility and permissions,
 
 1. Choose who can view the web content article by selecting an option under Viewable By (i.e., Anyone (Guest Role), Site Members, or the content's Owner).
 
-1. Click *More Options* to view available permissions. Assign them to Guest users or Site Members. See [Web Content Article Permissions Reference](#web-content-article-permissions-reference) to learn more about each permission.
+1. Click *More Options* to view available permissions. Assign them to guest users or site members. See [Web Content Article Permissions Reference](#web-content-article-permissions-reference) to learn more about each permission.
 
 1. Click *Publish*.
 
@@ -59,29 +59,29 @@ Once you publish your web content article, modify its permissions in one of two 
 
 - While in the editing page (1), open the *Options* menu (![Options menu icon](../../../images/icon-options.png)) at the top right corner and select *Permissions*.
 
-- Or, in the Web Content application (2), open the *Action* menu (![Actions menu icon](../../../images/icon-actions.png)) for the article and select *Permissions*.
+- Or, in the Web Content application (2), open the article's *Actions* menu (![Actions menu icon](../../../images/icon-actions.png)) and select *Permissions*.
 
 ![Set permissions in the editing page or through the web content application.](./adding-a-basic-web-content-article/images/03.png)
 
-To schedule your web content article's publication to a future date,
+### Scheduling A Web Content Article's Publication for a Future Date
 
 1. Follow the steps to [create a web content article](#creating-a-basic-web-content-article).
 
 1. Click *Publish* and select *Schedule Publication*.
 
-1. Select a valid Date and Time for your publication (UTC standard is used as a reference).
+1. Select a valid date and time for your publication (UTC standard is used as a reference).
 
 1. While scheduling the publication, you can also choose who can view the web content article and define permissions for users.
 
 1. Click *Schedule*.
 
-The web content article is now tagged as scheduled and you can see the selected date and time by hovering over the `?` icon next to the item.
+The web content article is now tagged as scheduled, and you can see the selected date and time by hovering over the `?` icon next to the item.
 
 ![Schedule your web content article's publication.](./adding-a-basic-web-content-article/images/04.gif)
 
 Once the publication is scheduled, you can reschedule it by editing and setting a different time.
 
-When you reschedule the same publication multiple times, you can view all versions and when they will be published by going to the Web Content application screen and clicking the *Action* menu (![Action menu icon](../../../images/icon-actions.png)) next to the desired article &rarr; *View History*.
+When you reschedule the same publication multiple times, you can view all versions and their publication schedule by going to the Web Content application screen and clicking the article's *Actions* menu (![Actions menu icon](../../../images/icon-actions.png)) &rarr; *View History*.
 
 !!! tip
     All rescheduled versions of the web content article are published. Note that later scheduled versions replace previous ones.
@@ -89,8 +89,6 @@ When you reschedule the same publication multiple times, you can view all versio
 ![Schedule the same web content article multiple times.](./adding-a-basic-web-content-article/images/05.png)
 
 ### Web Content Article Permissions Reference
-
-Here's a list of available permissions you can set for your web content article:
 
 | Permission        | Description                                                                                |
 |:------------------|:-------------------------------------------------------------------------------------------|
@@ -104,7 +102,7 @@ Here's a list of available permissions you can set for your web content article:
 | View              | View the web content article.                                                              |
 | Add Discussion    | Comment on the web content article.                                                        |
 
-On the left, you can see all permissions and users displayed when modifying your permissions. {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA126+` On the right, a simplified view showing the most common roles displayed when creating an article.
+On the left, appear all permissions and users displayed when modifying your permissions. {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA126+` On the right is a simplified view showing the most common roles displayed when creating an article.
 
 ![On the left, displayed permissions while modifying your permissions. On the right, displayed permissions while creating an article.](./adding-a-basic-web-content-article/images/06.png)
 
@@ -129,7 +127,7 @@ You can preview web content using a display page template from any site or asset
 
 1. In the properties tab, select a site and display page to preview the web content article.
 
-1. Click*Preview* (![Preview](../../../images/icon-preview.png)).
+1. Click *Preview* (![Preview](../../../images/icon-preview.png)).
 
    ![When you've selected a display page template, use the preview button in the properties tab.](./adding-a-basic-web-content-article/images/08.png)
 
@@ -142,15 +140,15 @@ When creating or editing a Basic Web Content article, the following options appe
 
 | Property | Purpose | Additional Notes |
 | :--- | :--- | :--- |
-| Basic Information | See basic information about the article including the web content structure it is based on, version and status, ID, and a short editable description. | The structure cannot be edited once the article is created. See [Web Content Structures](../web-content-structures/understanding-web-content-structures.md) for more information. |
-| Default Template | Select a default template to display this web content. | See [Creating Web Content Templates](../web-content-templates/creating-web-content-templates.md) for more information. |
-| Display Page Template | Select a Display Page Template for this article, if one is desired. | See [Creating and Managing Display Page Templates](../../../site-building/displaying-content/using-display-page-templates/creating-and-managing-display-page-templates.md) for more information. |
-| Featured Image | Select a small image to use as the article's thumbnail. | The image can come from a URL, uploaded from your system, or from files located in Documents and Media. |
-| Categorization | Set any public or private categories, tags, or priority for the article. | See [Tagging Content](../../tags-and-categories/tagging-content-and-managing-tags.md) and [Organizing Content with Categories and Tags](../../tags-and-categories/organizing-content-with-categories-and-tags.md) for more information. |
-| Friendly URL | Set a custom friendly URL for this article. | |
-| Schedule | Schedule a date to display or expire the article, if desired. | See [Scheduling Web Content](./using-expiration-and-review-dates-in-web-content.md) for more information. |
-| Search | Set whether this article will be indexed for search. | |
-| Related Assets | Select any related assets, if desired. | |
+| **Basic Information** | See basic information about the article including the web content structure it is based on, version and status, ID, and a short editable description. | The structure cannot be edited once the article is created. See [Web Content Structures](../web-content-structures/understanding-web-content-structures.md) for more information. |
+| **Default Template** | Select a default template to display this web content. | See [Creating Web Content Templates](../web-content-templates/creating-web-content-templates.md) for more information. |
+| **Display Page Template** | Select a Display Page Template for this article, if one is desired. | See [Creating and Managing Display Page Templates](../../../site-building/displaying-content/using-display-page-templates/creating-and-managing-display-page-templates.md) for more information. |
+| **Featured Image** | Select a small image to use as the article's thumbnail. | The image can come from a URL, uploaded from your system, or from files located in Documents and Media. |
+| **Categorization** | Set any public or private categories, tags, or priority for the article. | See [Tagging Content](../../tags-and-categories/tagging-content-and-managing-tags.md) and [Organizing Content with Categories and Tags](../../tags-and-categories/organizing-content-with-categories-and-tags.md) for more information. |
+| **Friendly URL** | Set a custom friendly URL for this article. | |
+| **Schedule** | Schedule a date to display or expire the article, if desired. | See [Scheduling Web Content](./using-expiration-and-review-dates-in-web-content.md) for more information. |
+| **Search** | Set whether this article will be indexed for search. | |
+| **Related Assets** | Select any related assets, if desired. | |
 
 ## Related Topics
 

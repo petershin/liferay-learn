@@ -3,6 +3,7 @@ toc:
   - ./getting-a-chat-provider-account-id/chatwoot.md
   - ./getting-a-chat-provider-account-id/crisp.md
   - ./getting-a-chat-provider-account-id/hubspot.md
+  - ./getting-a-chat-provider-account-id/intercom.md
   - ./getting-a-chat-provider-account-id/jivochat.md
   - ./getting-a-chat-provider-account-id/livechat.md
   - ./getting-a-chat-provider-account-id/liveperson.md
@@ -33,6 +34,10 @@ uuid: b7e905d2-e746-4095-8344-43fd43dc3213
 
 :::{grid-item-card} Hubspot
 :link: ./getting-a-chat-provider-account-id/hubspot.md
+:::
+
+:::{grid-item-card} Intercom 
+:link: ./getting-a-chat-provider-account-id/intercom.md
 :::
 
 :::{grid-item-card} JivoChat

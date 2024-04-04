@@ -44,7 +44,7 @@ Once enabled, you can access the drop-down Publications bar menu from anywhere i
 You can use this menu to create new publications, select which publication you want to work on, switch between edit and production modes, and review and publish the current publication's changes. See [Creating and Managing Publications](./creating-and-managing-publications.md) to learn about creating, editing, and removing individual publications.
 
 !!! note
-    With headless API calls, the publication remains effective. Any modifications made through headless API calls are recorded and can be reviewed within your publication application.
+    If you modify the contents of a publication with headless API calls, the publication remains in effect. Modifications made through headless API calls are recorded and can be reviewed in the Publications application.
 
 ## How to Disable Publications
 

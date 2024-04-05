@@ -13,7 +13,7 @@ taxonomy-category-names:
 {bdg-link-primary}`[Beta Feature](../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
 
 !!! important
-    This feature is currently behind a [beta feature flag](../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags). API endpoints currently support retrieving and creating collections of entities.
+    This feature is currently behind a [beta feature flag](../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags) (LPS-178642). API endpoints currently support retrieving and creating collections of entities.
 
 The API builder makes it easy for you to create custom API applications in Liferay. Create API schemas and endpoints that meet your exact needs.
 
@@ -64,12 +64,7 @@ An API application must be published before use. Once published, the generated A
 
 ## Creating and Managing Endpoints
 
-{bdg-secondary}`Liferay DXP 2024.Q1+ U112`
-
-{bdg-link-primary}`[Beta Feature](../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
-
-!!! important
-   This feature is currently behind a [beta feature flag](../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags) (LPS-178642). API endpoints currently support retrieving and creating collections of entities.
+{bdg-secondary}`Liferay DXP 2024.Q1+/Portal 7.4 GA112+`
 
 API endpoints are the specific URL locations that accept requests.
 
@@ -331,4 +326,4 @@ You can also click on the schema's name to edit it.
 
 ## Next Steps
 
-* [Building a Sample API Application](./api-builder/building-a-sample-api-application.md)
+- [Building a Sample API Application](./api-builder/building-a-sample-api-application.md)

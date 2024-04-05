@@ -9,7 +9,7 @@ uuid: 48295c24-00df-4baf-a05e-25f531a5cb70
 ---
 # Tagging Content and Managing Tags
 
-Tags are keywords you can use to organize your assets and describe specific information about its content. Tags tell website visitors what the content is about so they can find relevant information through search or navigation. For more information about tags in Liferay DXP and the different usage scenarios, see [Organizing Content with Categories and Tags](./organizing-content-with-categories-and-tags.md).
+Tags are keywords you can use to organize your assets and describe specific information about their content. Tags tell website visitors what the content is about so they can find relevant information through search or navigation. For more information about tags in Liferay DXP and the different usage scenarios, see [Organizing Content with Categories and Tags](./organizing-content-with-categories-and-tags.md).
 
 ## Tagging Content
 
@@ -37,9 +37,12 @@ Only site administrators can manage tags in the Tags panel.
 1. To create a new tag, click *Add Tag* (![Add Tag](./../../images/icon-add.png)).
 1. Type your new tag and click *Save*.
 
-   !!! note
-       Tags are all lowercase, unless you enable a release feature flag that makes them case-sensitive.
-       Read [Release Feature Flags](../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information.
+!!! important
+    Tags in {bdg-secondary}`Liferay DXP 2024.Q1+/Portal 7.4 GA112+` are case-sensitive, stored and displayed exactly as entered.
+
+    For backward compatibility, tags created before this version remain in lowercase.
+
+    Also note that the search and autocomplete functions are case-insensitive, displaying all related entries. Conversely, filtering is case-sensitive, showing results only for the specific case selected.
 
 1. To edit an existing tag, click *Actions* (![Actions](./../../images/icon-actions.png)) next to the tag's name and select *Edit*.
 

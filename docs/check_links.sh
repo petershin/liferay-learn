@@ -1,5 +1,50 @@
 #!/bin/bash
 
+source ../_common.sh
+
+function check_external_links {
+	echo "Checking external links throughout ${1}"
+	echo
+
+	local current_markdown_file_name
+	local link
+	local markdown_file_name
+	local url
+
+    for link in $(ag --file-search-regex "\.md|landing\.html" --only-matching "\[.+?\]\(http.*?\)")
+	do
+        url=$(echo "${link}" | sed 's/.*(\(.*\))/\1/g' )
+
+        if [[ ${url} == *"LIFERAY_LEARN"* ]]
+		then
+            url=$(echo "${url}" | sed "s/${LIFERAY_LEARN_COMMERCE_DOCKER_IMAGE_TOKEN}/${LIFERAY_LEARN_COMMERCE_DOCKER_IMAGE_VALUE}/g" )
+            url=$(echo "${url}" | sed "s/${LIFERAY_LEARN_COMMERCE_GIT_TAG_TOKEN}/${LIFERAY_LEARN_COMMERCE_GIT_TAG_VALUE}/g" )
+            url=$(echo "${url}" | sed "s/${LIFERAY_LEARN_DXP_DOCKER_IMAGE_TOKEN}/${LIFERAY_LEARN_DXP_DOCKER_IMAGE_VALUE}/g" )
+            url=$(echo "${url}" | sed "s/${LIFERAY_LEARN_PORTAL_DOCKER_IMAGE_TOKEN}/${LIFERAY_LEARN_PORTAL_DOCKER_IMAGE_VALUE}/g" )
+            url=$(echo "${url}" | sed "s/${LIFERAY_LEARN_PORTAL_GIT_TAG_TOKEN}/${LIFERAY_LEARN_PORTAL_GIT_TAG_VALUE}/g" )
+            url=$(echo "${url}" | sed "s/${LIFERAY_LEARN_PORTAL_WORKSPACE_TOKEN}/${LIFERAY_LEARN_PORTAL_WORKSPACE_TOKEN_VALUE}/g" )
+		fi
+        if [[ "${url}" != *"localhost"* ]] && [[ "${url}" != "https://support.google.com"* ]]
+		then
+            if [[ $(curl -o /dev/null --silent --head --write-out "%{http_code}" "${url}") == "404" ]]
+			then
+				markdown_file_name=$(echo ${link} | cut -d':' -f1)
+
+				if [[ -z ${current_markdown_file_name} || ${current_markdown_file_name} != ${markdown_file_name} ]]
+				then
+					current_markdown_file_name=${markdown_file_name}
+
+					echo $(git rev-parse --show-prefix | cut -d'/' -f2-)${markdown_file_name}
+					echo
+				fi
+
+                echo "    404: ${url}"
+				echo
+            fi
+        fi
+    done
+}
+
 function check_grids {
 	local link
 
@@ -210,6 +255,7 @@ function main {
 	then
 		echo "Usage: ${0} dxp/latest/en"
 		echo
+		echo "    --ext (optional): Check absolute links and report 404 responses"
 		echo "    --fix (optional): Attempt to fix broken links"
 
 		exit 0
@@ -238,12 +284,18 @@ function main {
 
 		for _MARKDOWN_FILE_NAME in $(find . -maxdepth 1 -name "*.md" -printf '%f\n')
 		do
-			check_grids ${@}
-			check_images
-			check_includes ${@}
-			check_landing_pages ${@}
-			check_markdown ${@}
-			check_tocs ${@}
+			if [[ -z ${2} || ${2} == "--fix" ]]
+				then
+				check_grids ${@}
+				check_images
+				check_includes ${@}
+				check_landing_pages ${@}
+				check_markdown ${@}
+				check_tocs ${@}
+			elif [[ ${2} == "--ext" ]]
+			then
+				check_external_links ${@}
+			fi
 		done
 
 		popd > /dev/null

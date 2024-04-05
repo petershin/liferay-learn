@@ -13,6 +13,9 @@ taxonomy-category-names:
 
 {bdg-secondary}`Liferay DXP 2024.Q1+/Portal 7.4 GA112+`
 
+!!! important
+    The translation status feature is currently behind a release feature flag (LPS-186870). Read [Release Feature Flags](../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information. Other features may differ without this feature flag.
+
 Editor Config Contributor client extensions override existing CKEditor configuration in a `ConfigContributor.java` file. Start with a client extension (from the [sample workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace)).
 
 ## Prerequisites

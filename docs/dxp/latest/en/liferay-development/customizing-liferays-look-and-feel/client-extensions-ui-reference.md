@@ -24,13 +24,13 @@ To add and manage these extensions,
 
 Set these properties in the `client-extension.yaml` file of any frontend client extension:
 
-| Name | Data Type | Default Value | Description |
-| :--- | :--- | :--- | :--- |
-| `baseURL` | String | *Derived from site URL* | The base path from which all of the client extension's defined resources are served. |
-| `description` | String | | The client extension's description. |
-| `name` | String | | The client extension's name (as it appears in the UI). A name is required for frontend client extensions. |
-| `sourceCodeURL` | URL | https://www.liferay.com | The address to the client extension's source repository. |
-| `typeSettings` | String[] | [] | A list of strings that are processed with Liferay's `UnicodeProperties` syntax. Type-specific client extension properties are copied automatically into this when the client extension is built. |
+| Name            | Data Type | Default Value           | Description                                                                                                                                                                                      |
+|:----------------|:----------|:------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `baseURL`       | String    | *Derived from site URL* | The base path from which all of the client extension's defined resources are served.                                                                                                             |
+| `description`   | String    |                         | The client extension's description.                                                                                                                                                              |
+| `name`          | String    |                         | The client extension's name (as it appears in the UI). A name is required for frontend client extensions.                                                                                        |
+| `sourceCodeURL` | URL       | https://www.liferay.com | The address to the client extension's source repository.                                                                                                                                         |
+| `typeSettings`  | String[]  | []                      | A list of strings that are processed with Liferay's `UnicodeProperties` syntax. Type-specific client extension properties are copied automatically into this when the client extension is built. |
 
 See [Configuring Client Extensions in `client-extension.yaml`](../client-extensions/working-with-client-extensions.md#configuring-client-extensions-in-client-extension-yaml) for more information.
 
@@ -113,5 +113,5 @@ Once the client extensions are created, they can be applied so that pages are ab
 
 ## Related Topics
 
-* [Customizing Liferay's Look and Feel](../customizing-liferays-look-and-feel.md)
-* [Integrating External Applications](../integrating-external-applications.md)
+- [Customizing Liferay's Look and Feel](../customizing-liferays-look-and-feel.md)
+- [Integrating External Applications](../integrating-external-applications.md)

@@ -9,22 +9,24 @@ taxonomy-category-names:
 - Liferay SaaS
 ---
 
-# Liferay SSO: Configuring Okta as an Identity Provider Via OpenID Connect
+# Configuring Liferay Authentication With Okta Using OpenId Connect
 
 This tutorial guides you through the basic steps needed to integrate Okta, your Identity Provider (IdP), with your environment using OpenID Connect. Using an external authentication service is a best practice we endorse. Adding an IdP to your environment can address security concerns, streamline user management, and provide access control for a server that lacks its own robust authentication system.
 
 ## Prerequisites
+
 - [Okta Dev](https://developer.okta.com/login/) account
 - Liferay DXP environment
 - A user who has administrative access Okta Admin Console
 - A user who has administrative access to Liferay's Control Panel
+
 ## Okta Configuration
 
 1. Log in to [Okta Dev](https://developer.okta.com/login/) and navigate to *Applications* &rarr; *Add Application* &rarr; *Create App Integration*.
 
 1. Select *OIDC - OpenID Connect*, under Sign-in method, and *Web Application*, under Application type.
 
-    ![Create a new OIDC app integration](./liferay-sso-configuring-okta-as-identity-provider-via-openid-connect/images/01.png)
+    ![Create a new OIDC app integration](./configuring-liferay-authentication-with-okta-using-openid-connect/images/01.png)
 
 1. Enter *Liferay DXP - OIDC* as the app integration name.
 
@@ -49,7 +51,7 @@ This tutorial guides you through the basic steps needed to integrate Okta, your 
 
 1. Under the “Authorization Servers” tab, locate the server named `default` and click on it to edit its configuration.
 
-    ![Edit the default Authorization Server to find Metadata URI](./liferay-sso-configuring-okta-as-identity-provider-via-openid-connect/images/02.png)
+    ![Edit the default Authorization Server to find Metadata URI](./configuring-liferay-authentication-with-okta-using-openid-connect/images/02.png)
 
 1. Click on the "Metadata URI" link, which typically looks like this: https://dev-123456.okta.com/oauth2/default/.well-known/oauth-authorization-server
 
@@ -95,7 +97,7 @@ Once that is done, OpenID Connect needs to be enabled. To enable the OpenId Conn
 
 1. Go to the *OpenID Connect* tab, click the *Enabled* checkbox and click *Save*.
 
-![Click the Enabled checkbox to enable the OpenID Connection](./liferay-sso-configuring-okta-as-identity-provider-via-openid-connect/images/03.png)
+![Click the Enabled checkbox to enable the OpenID Connection](./configuring-liferay-authentication-with-okta-using-openid-connect/images/03.png)
 
 ## Validation
 
@@ -103,15 +105,15 @@ Once that is done, OpenID Connect needs to be enabled. To enable the OpenId Conn
 
 1. Click on the *Sign In* button and choose *OpenId Connect*.
 
-    ![Click on the Sign In button and choose OpenId Connect](./liferay-sso-configuring-okta-as-identity-provider-via-openid-connect/images/04.png)
+    ![Click on the Sign In button and choose OpenId Connect](./configuring-liferay-authentication-with-okta-using-openid-connect/images/04.png)
 
 1. Choose *Client to Okta OIDC* from the list.
 
-    ![Choose Client to Okta OIDC from the list](./liferay-sso-configuring-okta-as-identity-provider-via-openid-connect/images/05.png)
+    ![Choose Client to Okta OIDC from the list](./configuring-liferay-authentication-with-okta-using-openid-connect/images/05.png)
 
 1. Sign in with your Okta account.
 
-    ![Sign in with your Okta account](./liferay-sso-configuring-okta-as-identity-provider-via-openid-connect/images/06.png)
+    ![Sign in with your Okta account](./configuring-liferay-authentication-with-okta-using-openid-connect/images/06.png)
 
 ## Conclusion
 
@@ -123,10 +125,10 @@ Congratulations! You have successfully completed this Solution Tutorial. By now,
 
 If you encounter an error like the image below, verify that your sign-in and sign-out redirect URIs are configured correctly in Okta with the appropriate path and Hypertext Transfer Protocol (HTTP or HTTPS). You can find them in your Dev Okta account by navigating to the application you created &rarr; *General* tab &rarr; *General Setting* &rarr; *Login* section.
 
-![400 error when using https in the redirect URIs](./liferay-sso-configuring-okta-as-identity-provider-via-openid-connect/images/07.png)
+![400 error when using https in the redirect URIs](./configuring-liferay-authentication-with-okta-using-openid-connect/images/07.png)
 
 ### Verify email address
 
 By default, new users must verify their email address upon first login. To disable this requirement, in your Liferay DXP unselect the "Require strangers to verify their email address" checkbox. Navigate to *Control Panel* &rarr; *Instance Settings* &rarr; *Platform* &rarr; *User Authentication* and unselect the checkbox. However, if you want to keep email validation enabled, a [configured connection to a mail server](../../setting-up-liferay/configuring-mail.md) is necessary for your installation.
 
-![Verify email address](./liferay-sso-configuring-okta-as-identity-provider-via-openid-connect/images/08.png)
+![Verify email address](./configuring-liferay-authentication-with-okta-using-openid-connect/images/08.png)

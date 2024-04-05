@@ -9,17 +9,16 @@ uuid: 1c7ea087-074c-4b44-933b-fb49cb364c0a
 ---
 # About the Page Audit Tool
 
-```{important}
-This feature is currently behind a beta feature flag. See [Beta Feature Flags](../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags) for more information.
-```
+!!! important
+    This feature is currently behind a beta feature flag. See [Beta Feature Flags](../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags) for more information.
 
 The Page Audit tool displays performance-related information about the server render time, component type, component's origin, and cache status as well as warning messages about potential performance issues.
 
-You need, at least, two [permissions](../../users-and-permissions/roles-and-permissions.md) to view and use the Page Audit tool. Configure them under Site and Asset Library Administration &rarr; Site Builder &rarr; Pages: 
+You need, at least, two [permissions](../../users-and-permissions/roles-and-permissions.md) to view and use the Page Audit tool. Configure them under Site and Asset Library Administration &rarr; Site Builder &rarr; Pages:
 
-1. *Access in Site and Asset Library Administration* under General Permissions 
+1. *Access in Site and Asset Library Administration* under General Permissions.
 
-1. *Update* permission under Pages
+1. *Update* permission under Pages.
 
 ![The Page Audit is a powerful tool that helps users identify performance-related problems and solve them.](./about-the-page-audit-tool/images/01.gif)
 
@@ -67,24 +66,28 @@ Click on a component card to display warnings and basic information about the co
 
 Warnings indicate possible performance issues with page components. It also includes suggestions to solve the problem and optimize your page.
 
-Here's is a list of warnings:
+Here's a list of warnings:
 
-| Component | Warning | Possible Solution |
-| :--- | :--- | :--- |
-| Collection Display Fragment | Pagination is disabled. This setting can affect page performance severely if the number of collection items is above 200. We strongly recommend using pagination instead. | Enable pagination for your collection display |
-| Image Fragment | Big image file size used. Please, consider configuring adaptive media, lazy loading, or reducing the image size. | Configure adaptive media, enable lazy loading, or upload a smaller image file |
+| Component                   | Warning                                                                                                                                                                   | Possible Solution                                                             |
+|:----------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------|
+| Collection Display Fragment | Pagination is disabled. This setting can affect page performance severely if the number of collection items is above 200. We strongly recommend using pagination instead. | Enable pagination for your collection display                                 |
+| Image Fragment              | Big image file size used. Please, consider configuring adaptive media, lazy loading, or reducing the image size.                                                          | Configure adaptive media, enable lazy loading, or upload a smaller image file |
 
 ### Basic Information
 
-The component card displays basic information about the component. Here is a list of details covered:
+The component card displays basic information about the component. Here's a list of details covered:
 
-```{warning}
-Render time is an approximation and subject to slight variations depending on various factors (e.g., server status and load).
-```
+!!! warning
+    Render time is an approximation and subject to slight variations depending on various factors (e.g., server status and load).
 
-| Detail | Description |
-| :--- | :--- |
-| Server Render Time | The render time in milliseconds |
-| Component Type | The component type: Fragment, Widget, or Collection |
-| Origin | The origin of the component (e.g. This Page if it is originated in the same page it is displayed) |
-| Cache Status | The component's cache status: Cached or Not Cached |
+| Detail             | Description                                                                                       |
+|:-------------------|:--------------------------------------------------------------------------------------------------|
+| Server Render Time | The render time in milliseconds                                                                   |
+| Component Type     | The component type: Fragment, Widget, or Collection                                               |
+| Origin             | The origin of the component (e.g. This Page if it is originated in the same page it is displayed) |
+| Cache Status       | The component's cache status: Cached or Not Cached                                                |
+
+## Related Topics
+
+- [About the Content Performance Tool](./about-the-content-performance-tool.md)
+- [Analyze SEO and Accessibility on Pages](./analyze-seo-and-accessibility-on-pages.md)

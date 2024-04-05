@@ -10,11 +10,6 @@ uuid: 71e441a1-8c7c-468f-a758-b4e1cb9d185d
 # Configuring Locked Pages
 {bdg-secondary}`Liferay DXP 2023.Q3+/Portal 7.4 GA92+`
 
-<!-- The feature flag had been removed, but the commit was reverted: https://github.com/liferay/liferay-portal/commit/6313e4d18f4610d6c45009b33932d666113adfd7 - Eric -->
-
-!!! important
-    This feature is currently behind a release feature flag. Read [Release Feature Flags](../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information.
-
 Liferay locks pages during editing to avoid conflicts when multiple users try to edit the same page.
 
 This feature works with [content](../using-content-pages.md), [master](../defining-headers-and-footers/master-page-templates.md), [utility](../adding-pages/using-utility-pages.md), and [collection pages](../../../content-authoring-and-management/collections-and-collection-pages.md), along with [page](../adding-pages/creating-a-page-template.md) and [display page](../../displaying-content/using-display-page-templates.md) templates.
@@ -59,9 +54,8 @@ If a user leaves a page open in Edit mode for a long time without making changes
 
 1. Set a *Time Without Autosave* in minutes.
 
-```{warning}
-The Time Without Autosave may not be accurate as the system checks for locked pages every 15 minutes.
-```
+!!! warning
+    The Time Without Autosave may not be accurate as the system checks for locked pages every 15 minutes.
 
 ![Set the automatic unlocking time in Instance Settings](./configuring-locked-pages/images/02.png)
 
@@ -75,14 +69,12 @@ Site Administrators or Super Administrators can unlock pages manually.
 
 The page is unlocked. All the autosaved alterations are kept, and you can now edit the page.
 
-```{tip}
-In this list you can also see the type of the page, the user currently editing the page, and the time since the last autosave.
-```
+!!! tip
+    In this list you can also see the type of the page, the user currently editing the page, and the time since the last autosave.
 
 ![If you are a Site Administrator or a Super Administrator, you can unlock any page manually](./configuring-locked-pages/images/03.png)
 
 ## Related Topics
 
-[Adding Elements to Content Pages](../using-content-pages/adding-elements-to-content-pages.md)
-
-[Adding Widgets to a Page](../using-widget-pages/adding-widgets-to-a-page.md)
+- [Adding Elements to Content Pages](../using-content-pages/adding-elements-to-content-pages.md)
+- [Adding Widgets to a Page](../using-widget-pages/adding-widgets-to-a-page.md)

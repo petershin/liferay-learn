@@ -104,7 +104,7 @@ To create an endpoint using the GET method,
 
 1. While [creating an endpoint](#creating-and-managing-endpoints), select the GET method.
 
-1. Select the *Retrieve Type*. Retrieve a Collection or a Single Element.
+1. {bdg-secondary}`Liferay DXP 2024.Q1+/Portal 7.4 GA112+` Select the *Retrieve Type*. Retrieve a Collection or a Single Element.
 
    Depending on the type you selected, there are different configurations for the Path and in the Configurations tab.
 
@@ -112,17 +112,17 @@ To create an endpoint using the GET method,
 
 1. Enter the *Path* you want to use in your endpoint.
 
-   If you selected Single Element as your Retrieve Type, you must add a parameter to the path. (e.g. if you want information from a single product, you need to provide a product ID as a parameter).
+   {bdg-secondary}`Liferay DXP 2024.Q1+/Portal 7.4 GA112+` If you selected Single Element as your Retrieve Type, you must add a parameter to the path. (e.g. if you want information from a single product, you need to provide a product ID as a parameter).
 
 1. (Optional) Add a *Description* to your endpoint.
 
 1. Click *Create*.
 
-Once the endpoint is created, select the *Configuration* tab for additional settings. Depending on the Retrieve Type you chose, different settings appear. In the configuration tab,
+Once the endpoint is created, select the *Configuration* tab for additional settings. {bdg-secondary}`Liferay DXP 2024.Q1+/Portal 7.4 GA112+` Depending on the Retrieve Type you chose, different settings appear. In the configuration tab,
 
 1. Select the *Response Body Schema*. [Create a Schema](#creating-and-managing-schemas) and apply it to the endpoint to define the structure and format of the data that is returned by the API in response to a client's request.
 
-If you selected Collection as your Retrieve Type,
+{bdg-secondary}`Liferay DXP 2024.Q1+/Portal 7.4 GA112+` If you selected Collection as your Retrieve Type,
 
 1. Apply *Filters* to your endpoint.
 
@@ -138,7 +138,7 @@ If you selected Collection as your Retrieve Type,
 
 ![Configure the endpoint using the GET method and a Collection as the Retrieve Type.](./api-builder/images/03.png)
 
-If you selected Single Element as your Retrieve Type,
+{bdg-secondary}`Liferay DXP 2024.Q1+/Portal 7.4 GA112+` If you selected Single Element as your Retrieve Type,
 
 1. Select the *Path Parameter Property*. This is the object field that is mapped to the provided parameter in the endpoint's path. It can be a system or custom field (e.g. `id` and `externalReferenceCode` are system fields and `employeeId` is a custom field.).
 
@@ -193,9 +193,9 @@ Once the endpoint is created, you can see it on your API explorer page `http://l
 
 If you are creating the POST endpoint through API calls, keep these points in mind:
 
-- POST endpoints must have `singleElement` as their retrieve type. This ensures that only the information related to the posted entry is requested.
+- {bdg-secondary}`Liferay DXP 2024.Q1+/Portal 7.4 GA112+` POST endpoints must have `singleElement` as their retrieve type. This ensures that only the information related to the posted entry is requested.
 
-- An error occurs if you use `singleElement` as retrieve type and define a path parameter (e.g. `/api/users/{userId}` where `{userId}` is the path parameter) during the API call to create a POST endpoint.
+- {bdg-secondary}`Liferay DXP 2024.Q1+/Portal 7.4 GA112+` An error occurs if you use `singleElement` as retrieve type and define a path parameter (e.g. `/api/users/{userId}` where `{userId}` is the path parameter) during the API call to create a POST endpoint.
 
 - POST endpoints without a request body schema don't work. 
 
@@ -266,7 +266,7 @@ This section specifies the data sent in the request body. In this case, a JSON p
 
 `"r_responseAPISchemaToAPIEndpoints_c_apiSchemaERC"`: Points to an ERC to specify the schema used for the endpoint's response body.
 
-`"retrieveType"`: Defines the endpoint's Retrieve Type.
+{bdg-secondary}`Liferay DXP 2024.Q1+/Portal 7.4 GA112+` `"retrieveType"`: Defines the endpoint's Retrieve Type.
 
 `"scope"`: Defines the endpoint's scope.
 

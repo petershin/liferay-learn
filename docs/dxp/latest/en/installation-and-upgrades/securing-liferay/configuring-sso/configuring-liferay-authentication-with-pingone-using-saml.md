@@ -9,7 +9,7 @@ taxonomy-category-names:
 - Liferay SaaS
 ---
 
-# Liferay SSO: Configuring PingOne as an Identity Provider Via SAML
+# Configuring Liferay Authentication With PingOne Using SAML
 
 This tutorial guides you through the basic steps needed to integrate PingOne, your Identity Provider (IdP), with your Liferay environment using Security Assertion Markup Language (SAML). The use of an external authentication service is a best practice we endorse. Integrating an IdP into your environment simplifies user authentication without compromising security standards.
 
@@ -25,7 +25,7 @@ This tutorial guides you through the basic steps needed to integrate PingOne, yo
 
 1. Go to Applications &rarr; Application, and click to add a new application.
 
-    ![Click to add a new application](./liferay-sso-configuring-pingone-as-identity-provider-via-saml/images/01.png)
+    ![Click to add a new application](./configuring-liferay-authentication-with-pingone-using-saml/images/01.png)
 
 1. Fill out the Application name and select the Application Type.
 
@@ -37,7 +37,7 @@ This tutorial guides you through the basic steps needed to integrate PingOne, yo
 
     1. Application Type: SAML Application
 
-    ![Fill out the Application name and select the Application Type](./liferay-sso-configuring-pingone-as-identity-provider-via-saml/images/02.png)
+    ![Fill out the Application name and select the Application Type](./configuring-liferay-authentication-with-pingone-using-saml/images/02.png)
 
 1. Click *Configure*.
 
@@ -49,7 +49,7 @@ This tutorial guides you through the basic steps needed to integrate PingOne, yo
 
     1. Entity ID: `samlsp`
 
-    ![Enter your application metadata on SAML Configuration](./liferay-sso-configuring-pingone-as-identity-provider-via-saml/images/03.png)
+    ![Enter your application metadata on SAML Configuration](./configuring-liferay-authentication-with-pingone-using-saml/images/03.png)
 
 1. Click *Save*.
 
@@ -88,7 +88,7 @@ This tutorial guides you through the basic steps needed to integrate PingOne, yo
 
 1. Enable the access to this application through the toggle switch on the top right.
 
-![Enable the access to this application through the toggle switch on the top right](./liferay-sso-configuring-pingone-as-identity-provider-via-saml/images/04.png)
+![Enable the access to this application through the toggle switch on the top right](./configuring-liferay-authentication-with-pingone-using-saml/images/04.png)
 
 ## Liferay DXP Configuration
 
@@ -100,7 +100,7 @@ This tutorial guides you through the basic steps needed to integrate PingOne, yo
 
 1. Click *Create Certificate* under the certificate and private key section. Import or create your certificate.
 
-    ![Set the SAML Role to Service Provider, and Entity ID to samlsp, and add a certificate](./liferay-sso-configuring-pingone-as-identity-provider-via-saml/images/05.png)
+    ![Set the SAML Role to Service Provider, and Entity ID to samlsp, and add a certificate](./configuring-liferay-authentication-with-pingone-using-saml/images/05.png)
 
 1. Go to the *Service Provider* tab.
 
@@ -133,11 +133,11 @@ This tutorial guides you through the basic steps needed to integrate PingOne, yo
 
     1. Click on *Save*
 
-    ![Add the identity provider connection](./liferay-sso-configuring-pingone-as-identity-provider-via-saml/images/06.png)
+    ![Add the identity provider connection](./configuring-liferay-authentication-with-pingone-using-saml/images/06.png)
 
 1. Go back to *General* tab and make sure the `Enabled` checkbox is checked. Click *Save*.
 
-    ![Check the Enabled checkbox in the General tab](./liferay-sso-configuring-pingone-as-identity-provider-via-saml/images/07.png)
+    ![Check the Enabled checkbox in the General tab](./configuring-liferay-authentication-with-pingone-using-saml/images/07.png)
 
 ## Validation
 
@@ -145,13 +145,13 @@ This tutorial guides you through the basic steps needed to integrate PingOne, yo
 
 1. Click on the *Sign In* button and you should be redirected to PingOne's login page.
 
-    ![Click on the Sign In button and you should be redirected to PingOne's login page](./liferay-sso-configuring-pingone-as-identity-provider-via-saml/images/08.png)
+    ![Click on the Sign In button and you should be redirected to PingOne's login page](./configuring-liferay-authentication-with-pingone-using-saml/images/08.png)
 
 1. Type in the username and password for your user. You have successfully logged in.
 
 1. Sign back in with your Liferay administrator account. Navigate to *Control Panel* &rarr; *Users and Organizations*, and verify that the account came into Liferay
 
-    ![Since this user is not assigned to any roles, once you log in, this is what you will see.](./liferay-sso-configuring-pingone-as-identity-provider-via-saml/images/09.png)
+    ![Since this user is not assigned to any roles, once you log in, this is what you will see.](./configuring-liferay-authentication-with-pingone-using-saml/images/09.png)
 
 ## Conclusion
 
@@ -163,7 +163,7 @@ Congratulations! You have successfully completed this Solution Tutorial. By now,
 
 If you encounter `ErrorCode: INVALID_ACS_URL`, verify that your ACS URLs are configured correctly in PingOne with the appropriate path and Hypertext Transfer Protocol (HTTP or HTTPS). You can find them in your PingOne account by navigating to the application you created &rarr; *Configuration* tab &rarr; *Edit icon*.
 
-![INVALID_ACS_URL error when trying to sign in to Liferay.](./liferay-sso-configuring-pingone-as-identity-provider-via-saml/images/10.png)
+![INVALID_ACS_URL error when trying to sign in to Liferay.](./configuring-liferay-authentication-with-pingone-using-saml/images/10.png)
 
 
 <!--
@@ -171,4 +171,4 @@ Hey JR,
 
 For some reason that I don't know, when I create a user in Liferay, than add that user to PingOne users (with the same email and username) and try signing in through PingOne, an alert pops up saying that the email is incomplete or invalid. See image below
 
-![user has to be created in PingOne first to log in through SAML](./liferay-sso-configuring-pingone-as-identity-provider-via-saml/images/this-will-be-deleted.png) -->
+![user has to be created in PingOne first to log in through SAML](./configuring-liferay-authentication-with-pingone-using-saml/images/this-will-be-deleted.png) -->

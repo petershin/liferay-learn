@@ -10,7 +10,7 @@ uuid: c423446a-0ecb-4cf4-b455-93be58860e71
 # Filtering and Sorting Web Content Articles
 
 !!! important
-    Some features are currently behind release feature flags (LPS-196768 and LPD-11218). Read [Release Feature Flags](../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information.
+    Some features are currently behind release feature flags (LPD-11218). Read [Release Feature Flags](../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information.
 
 The web content application shows a list of all the web content articles you can access under the Web Content tab. The filtering and sorting options help you find and review items faster.
 
@@ -124,7 +124,7 @@ Once you use the search bar to search for specific keywords, use these options t
 
 ![You can search for keywords in all fields, only in the title, or in the comments of web content articles to make your search process even more accurate.](./filtering-and-sorting-web-content-articles/images/04.png)
 
-## Related Information
+## Related Topics
 
 - [Adding a Basic Web Content Article](./adding-a-basic-web-content-article.md)
 - [Understanding Web Content Structures](../web-content-structures/understanding-web-content-structures.md)

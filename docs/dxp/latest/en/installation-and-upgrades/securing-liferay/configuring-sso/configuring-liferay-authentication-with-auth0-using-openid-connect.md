@@ -1,8 +1,15 @@
 ---
 uuid: 49e814e3-6c64-4a26-b58a-96bce6406f33
+taxonomy-category-names:
+- Platform
+- DXP Configuration
+- Identity Management and Authentication
+- Liferay Self-Hosted
+- Liferay PaaS
+- Liferay SaaS
 ---
 
-# Liferay SSO: Configuring Auth0 as an Identity Provider Via OpenID Connect
+# Configuring Liferay Authentication With Auth0 Using OpenId Connect
 
 This tutorial guides you through integrating Auth0, your Identity Provider (IdP), with your Liferay environment using OpenID Connect. We endorse using an external authentication service, a best practice that simplifies user authentication while maintaining security. By integrating Auth0 with OpenID Connect, a trusted authentication protocol, employees can leverage Auth0's single sign-on feature to access applications seamlessly.
 
@@ -20,21 +27,21 @@ This tutorial guides you through integrating Auth0, your Identity Provider (IdP)
 
 1. Select *Applications* from the side menu and create a new application.
 
-    ![Select Applications from the side menu and create a new application.](./liferay-sso-configuring-auth0-as-identity-provider-via-openid-connect/images/01.png)
+    ![Select Applications from the side menu and create a new application.](./configuring-liferay-authentication-with-auth0-using-openid-connect/images/01.png)
 
 1. Set a name of your choice, and choose *Regular Web Applications* for your application type.
 
-    ![Choose Regular Web Applications type](./liferay-sso-configuring-auth0-as-identity-provider-via-openid-connect/images/02.png)
+    ![Choose Regular Web Applications type](./configuring-liferay-authentication-with-auth0-using-openid-connect/images/02.png)
 
 1. Click *Create* to have your application ready.
 
 1. The Client ID and Client Secret can be found in the Settings tab. You'll need them later on.
 
-    ![The Client ID and Client Secret can be found in the Settings tab](./liferay-sso-configuring-auth0-as-identity-provider-via-openid-connect/images/03.png)
+    ![The Client ID and Client Secret can be found in the Settings tab](./configuring-liferay-authentication-with-auth0-using-openid-connect/images/03.png)
 
 1. Scroll down to the Application URIs section to set the Allowed Callback URLs field, and enter `https://[your_liferay_environment]/c/portal/login/openidconnect`.
 
-    ![Set the Allowed Callback URLs field under Application URIs section](./liferay-sso-configuring-auth0-as-identity-provider-via-openid-connect/images/04.png)
+    ![Set the Allowed Callback URLs field under Application URIs section](./configuring-liferay-authentication-with-auth0-using-openid-connect/images/04.png)
 
 1. Access the Advanced Settings at the bottom of the page to edit any additional settings.
 
@@ -82,7 +89,7 @@ Once that is done, OpenID Connect needs to be enabled. To enable the OpenId Conn
 
 1. Go to the *OpenID Connect* tab, click the *Enabled* checkbox and click *Save*.
 
-![Click the Enabled checkbox to enable the OpenID Connection](./liferay-sso-configuring-auth0-as-identity-provider-via-openid-connect/images/05.png)
+![Click the Enabled checkbox to enable the OpenID Connection](./configuring-liferay-authentication-with-auth0-using-openid-connect/images/05.png)
 
 ## Validation
 
@@ -90,15 +97,15 @@ Once that is done, OpenID Connect needs to be enabled. To enable the OpenId Conn
 
 1. Click on the *Sign In* button and choose *OpenId Connect*.
 
-    ![Click on the Sign In button and choose OpenId Connect](./liferay-sso-configuring-auth0-as-identity-provider-via-openid-connect/images/06.png)
+    ![Click on the Sign In button and choose OpenId Connect](./configuring-liferay-authentication-with-auth0-using-openid-connect/images/06.png)
 
 1. Choose *Auth0 OIDC* from the list and sign in with your Auth0 account.
 
-    ![Choose Auth0 from the list and sign in with your Auth0 account](./liferay-sso-configuring-auth0-as-identity-provider-via-openid-connect/images/07.png)
+    ![Choose Auth0 from the list and sign in with your Auth0 account](./configuring-liferay-authentication-with-auth0-using-openid-connect/images/07.png)
 
 1. Once you click Sign In, you'll be redirected to Auth0's log in page.
 
-    ![Once you click Sign In, you'll be redirected to Auth0's log in page](./liferay-sso-configuring-auth0-as-identity-provider-via-openid-connect/images/08.png)
+    ![Once you click Sign In, you'll be redirected to Auth0's log in page](./configuring-liferay-authentication-with-auth0-using-openid-connect/images/08.png)
 
 1. Type in the email address and password for your user. You have successfully logged in.
 
@@ -114,4 +121,4 @@ Congratulations! You have successfully completed this Solution Tutorial. By now,
 
 If you encounter an error like the image below, verify that your Allowed Callback URLs are configured correctly in Auth0 with the appropriate path and Hypertext Transfer Protocol (HTTP or HTTPS). You can find them in your Auth0 account by navigating to the application you created &rarr; *Settings* tab &rarr; *Application URIs* section.
 
-![Error when not using appropriate path and Hypertext Transfer Protocol in the allowed callback URLs](./liferay-sso-configuring-auth0-as-identity-provider-via-openid-connect/images/09.png)
+![Error when not using appropriate path and Hypertext Transfer Protocol in the allowed callback URLs](./configuring-liferay-authentication-with-auth0-using-openid-connect/images/09.png)

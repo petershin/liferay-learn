@@ -13,13 +13,11 @@ By default, Liferay generates a personal site for every user. Each site includes
 
 If desired, you can [disable or customize](#customizing-personal-sites-with-portal-properties) personal sites using portal properties.
 
-```{important}
-For Liferay 7.4 U22+ and GA22+, new Liferay installations include a release feature flag that disables the creation of private pages, including dashboard pages. To manually create custom dashboard pages for a personal site, private pages must be enabled for your Liferay system. See [Enabling Private Pages](../creating-pages/understanding-pages/understanding-pages.md#enabling-private-pages) for more information.
-```
+!!! important
+    For Liferay 7.4 U22+ and GA22+, new Liferay installations include a release feature flag that disables the creation of private pages, including dashboard pages. To manually create custom dashboard pages for a personal site, private pages must be enabled for your Liferay system. See [Enabling Private Pages](../creating-pages/understanding-pages/understanding-pages.md#enabling-private-pages) for more information.
 
-```{tip}
+!!! tip
 With user group sites, you can dynamically add pages to the personal sites of all group members. See [User Group Sites](../../users-and-permissions/user-groups/user-group-sites.md) for more information.
-```
 
 ## Profile Pages and Dashboard Pages
 
@@ -56,11 +54,11 @@ Permissions and roles for personal sites follow the behavior shown below:
 
 There are several portal properties you can add to [`portal-ext.properties`](../../installation-and-upgrades/reference/portal-properties.md) to customize the default pages of personal sites. You can customize the names of the pages, the applications that appear on the pages, the themes and layout templates of pages, and more. Please refer to the [Default User Public Layouts](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Default%20User%20Public%20Layouts) and [Default User Private Layouts](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Default%20User%20Private%20Layouts) sections of the `portal.properties` file for details. Some of these properties are listed in the table below:
 
-| Functionality | Property |
-| :--- | :--- |
-| Disable personal sites | `layout.user.public.layouts.enabled=false` |
-| Disable private pages on personal sites | `layout.user.private.layouts.enabled=false` |
-| Disable automatic creation of personal sites | `layout.user.public.layouts.auto.create=false` |
+| Functionality                                                 | Property                                        |
+|:--------------------------------------------------------------|:------------------------------------------------|
+| Disable personal sites                                        | `layout.user.public.layouts.enabled=false`      |
+| Disable private pages on personal sites                       | `layout.user.private.layouts.enabled=false`     |
+| Disable automatic creation of personal sites                  | `layout.user.public.layouts.auto.create=false`  |
 | Disable automatic creation of private pages on personal sites | `layout.user.private.layouts.auto.create=false` |
 
 The public and private page sets of personal sites are handled separately. You can leave one page set enabled while disabling the other. If you initially had user personal sites enabled for your instance but then disabled them, existing personal sites remain on your instance until the next time users sign in, at which point they're removed.

@@ -72,9 +72,6 @@ To set a friendly URL for your display page template,
 
 ### Mapping Links to Different Display Page Templates
 
-!!! important
-    This feature is currently behind a release feature flag. Read [Release Feature Flags](../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information.
-
 If a content type (e.g., custom object, web content article, or blogs entry) more than one display page template, you can map links to any available template for that content type.
 
 For example, you can create different display page templates for an object, each corresponding to a step in a mapped form (e.g., submission, editing, and approval). Then, you can choose which display page template to use for each stage, enabling the creation of multi-step forms.

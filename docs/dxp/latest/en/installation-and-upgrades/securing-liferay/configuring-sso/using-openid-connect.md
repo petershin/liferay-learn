@@ -34,17 +34,17 @@ Collect the information from the provider. You'll need it create the provider co
 
 ## Configuring an OpenID Connect Provider Connection
 
-Liferay seeks feedback on a new interface for a provider connection. For this reason, there are two ways to create the connection: the standard way and the new way. 
+Liferay seeks feedback on a new interface for a provider connection. For this reason, there are two ways to create the connection: the standard way and the new way.
 
 ```{important}
-To provide a smooth transition to the new provider as it is developed, Liferay converts and syncs the OpenID Connect configuration between the two interfaces. 
+To provide a smooth transition to the new provider as it is developed, Liferay converts and syncs the OpenID Connect configuration between the two interfaces.
 ```
 
 ### New OpenID Connect Provider Connection for OAuth 2.0**
 
-This interface is for those who want granular control over their client connection. All configuration is done through the provider's Well-Known Configuration Endpoint, as defined in the [OpenID Connect configuration specification](https://openid.net/specs/openid-connect-discovery-1_0.html#ProviderConfigurationRequest). 
+This interface is for those who want granular control over their client connection. All configuration is done through the provider's Well-Known Configuration Endpoint, as defined in the [OpenID Connect configuration specification](https://openid.net/specs/openid-connect-discovery-1_0.html#ProviderConfigurationRequest).
 
-1. Go to the Global Menu &rarr; Control Panel &rarr; Security &rarr; OAuth Client Administration. 
+1. Navigate to Global Menu &rarr; Control Panel &rarr; Security &rarr; OAuth Client Administration.
 
 1. There are two tabs. The first creates a client for an authorization server. The second is for authorization servers without a Well Known URI. You'll always use the first tab; you'll only use the second tab to create a "pseudo" well-known URI for a server that doesn't have one.
 
@@ -74,7 +74,7 @@ The other fields on the form are for specific configuration generated with the p
 
 ### Standard OpenID Connect Provider Connection
 
-Go to *Control Panel* &rarr; *Configuration* &rarr; *Instance Settings* &rarr; *Security* &rarr; *SSO* and select ***OpenID Connect Provider*** under the *System Scope*.
+Navigate to *Global Menu* &rarr; *Control Panel* &rarr; *Instance Settings* &rarr; *Security* &rarr; *SSO* and select ***OpenID Connect Provider*** under the *Virtual Instance Scope*.
 
 ![Locating OpenID configurations in the System Settings menu.](using-openid-connect/images/01.png)
 
@@ -86,9 +86,7 @@ Follow these steps:
 
    | Field | Description |
    | :--- | :--- |
-   | **Provider Name** | This name appears in the Sign-In Portlet when users use OpenID Connect to log in. |
-   | **OpenID Client ID** | Provide the OAuth 2.0 Client ID you received from your provider. |
-   | **OpenID Connect Client Secret** | Provide the OAuth 2.0 Client Secret you received from your provider. |
+   | **Provider Name** | This name appears in the Sign-In portlet when users use OpenID Connect to log in. |
    | **Scopes** | Leave the default, which requests the user name and the email. Your provider may offer other scopes of user information. |
    | **Discovery Endpoint** | Other URLs may be obtained from this URL, and they vary by provider. |
    | **Discovery Endpoint Cache in Milliseconds** | Cache the endpoints (URLs) discovered for this amount of time. |
@@ -100,38 +98,34 @@ Follow these steps:
    | **Token Endpoint** | The provider's URL where tokens can be requested. |
    | **Token Connection Timeout in Milliseconds** | Wait this long when requesting a token for validation before timing out. A value of `0` means wait forever and is not recommended. |
    | **User Information Endpoint** | The OAuth 2.0 protected URL from which user information can be obtained. |
+   | **OpenID Connect Client ID** | Provide the OAuth 2.0 Client ID you received from your provider. |
+   | **OpenID Connect Client Secret** | Provide the OAuth 2.0 Client Secret you received from your provider. |
 
 Once you've filled out the form, click *Save*, and you're ready to enable OpenID Connect authentication.
 
-An exported configuration results in this System Settings configuration file:
+This configuration can be exported by selecting the connection's action menu and clicking *Export*. An exported configuration results in this System Settings configuration file:
 
 ```bash
 com.liferay.portal.security.sso.openid.connect.internal.configuration.OpenIdConnectProviderConfiguration-[name].config
 ```
 
-where `[name]` is a descriptive, but unique name for example `provider1`.
+where `[name]` is a unique id.
 
 ## Enabling OpenID Connect Authentication
 
-1. Go to *Control Panel* &rarr; *Configuration* &rarr; *Instance Settings* &rarr; *Security* &rarr; *SSO* and select ***OpenID Connect*** under *Virtual Instance Scope*.
+1. Navigate to *Global Menu* &rarr; *Control Panel* &rarr; *Instance Settings* &rarr; *Security* &rarr; *SSO* and select ***OpenID Connect*** under *Virtual Instance Scope*.
 
     ![Enabling OpenID Connect authentication in Instance Settings.](using-openid-connect/images/02.png)
 
-1. Click the *Enabled* check box and then click *Save*.
-
-An exported configuration results in this System Settings configuration file:
-
-```bash
-com.liferay.portal.security.sso.openid.connect.configuration.OpenIdConnectConfiguration.config
-```
+1. Click the *Enabled* check box and click *Save*.
 
 Now users can sign in with OpenID Connect.
 
 ## Signing In With OpenID Connect
 
-A new link appears in the Sign-In Portlet for signing in with OpenID Connect:
+A new link appears in the Sign-In portlet for signing in with OpenID Connect:
 
-1. From the Sign-In Portlet, click the OpenID Connect link at the bottom.
+1. From the Sign-In portlet, click the OpenID Connect link at the bottom.
 
 1. Choose a provider and click *Sign In*.
 

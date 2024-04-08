@@ -8,7 +8,7 @@ Clarity wants to have site visitors be able to search for content and find conte
 !!! important "Key Decision"
     In Liferay, commerce search results are separate from regular search results. The commerce search results, as the name implies, only returns commerce products. The regular search results can be set to return just site content (i.e. blog posts, documents, etc.) or everything (i.e. including products). For Clarity, providing quick access to both products and site content is important, so they will enable everything to be searched.
 
-## Exercise 1: Walk through the Global Search Bar
+## Exercise 1: Configuring the Global Search Bar
 
 By default, a Liferay search bar is set to only search within site content. To be able to give visitors the ability to search across products as well, the scope must be changed.
 
@@ -42,7 +42,7 @@ The Clarity team has added some of their products already onto the website (e.g.
 
 1. In the left navigation, drag over a container element onto the new page. Next, drag over a grid element into the container. Click onto the grid element and change the number of modules from three to two. Drag the divider between the two modules to the left so that the left module takes about one-fourth of the total size.
 
-   ![Add a two module grid element into the container.](./understanding-and-customizing-search-results-pages/images/03.png)
+   ![Add a two module grid element into the container.](./understanding-and-customizing-search-results-pages/images/03.gif)
 
 1. Drag a search bar widget into the left module. Click the options icon of the widget and click _Configuration_. Change the scope from _This Site_ to _Everything_. Click _Save_ and close the window.
 

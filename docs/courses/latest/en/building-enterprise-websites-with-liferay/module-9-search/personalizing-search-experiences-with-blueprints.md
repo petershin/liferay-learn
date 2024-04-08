@@ -9,7 +9,7 @@ As we saw in the previous lesson, using search facets is great in providing visi
 
 Clarity has some sunglasses with summer prints that they have been promoting in their different marketing campaigns. They want these summer sunglasses to also show up at the top of search results when visitors are looking for sunglasses. They can do this by boosting the relevance score of this product category. Here's how to set this up.
 
-1. Click the product menu and navigate to _Categorization_ &rarr; _Categories_. Click the plus icon to add a new vocabulary.
+1. Click the product menu and navigate to _Categorization_ &rarr; _Categories_. Click the plus icon to add a new vocabulary. Make sure to add the vocabulary as a global vocabulary.
 
 1. Input `Seasonal` as the name. Under associated asset types, select _Product_ as the chosen asset type. Click _Save_.
 
@@ -17,7 +17,7 @@ Clarity has some sunglasses with summer prints that they have been promoting in 
 
    ![Create a summer category in the seasonal vocabulary.](./personalizing-search-experiences-with-blueprints/images/01.png)
 
-1. Click the application menu and navigate to _Commerce_ &rarr; _Products_. Click the options icon of one of Clarity's sunglasses and click _Duplicate_. Give the product a new name (e.g. `Sunny Sunglasses`).
+1. Click the application menu and navigate to _Commerce_ &rarr; _Products_. Click the options icon of one of Clarity's sunglasses and click _Duplicate_. Select the Clarity product catalog and give the product a new name (e.g. `Sunny Sunglasses`).
 
 1. On the right side under categorization, click _Select_ next to the seasonal vocabulary. In the pop up window, select _Summer_ and click _Done_. Click _Publish_ to publish the product. The new product is now associated with the summer category.
 
@@ -33,7 +33,8 @@ Clarity has some sunglasses with summer prints that they have been promoting in 
 
    ![Use the preview feature to see the search relevance score rankings.](./personalizing-search-experiences-with-blueprints/images/03.png)
 
-   Note, the search relevance score can vary based on the search term and the search index you have. You may need to further increase the boost value depending on your use case.
+   !!! important
+   The search relevance score can vary based on the search term and the search index you have. You may need to further increase the boost value depending on your use case.
 
 1. Click _Save_ to save the blueprint. Any product marked with the summer category will now be returned with a higher relevance score to show up at the top of search results for sunglasses.
 

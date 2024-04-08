@@ -33,7 +33,7 @@ Clarity has some sunglasses with summer prints that they have been promoting in 
 
    ![Use the preview feature to see the search relevance score rankings.](./personalizing-search-experiences-with-blueprints/images/03.png)
 
-   Note, the search relevance score can very based on the search term and the search index you have. You may need to further increase the boost value depending on your use case.
+   Note, the search relevance score can vary based on the search term and the search index you have. You may need to further increase the boost value depending on your use case.
 
 1. Click _Save_ to save the blueprint. Any product marked with the summer category will now be returned with a higher relevance score to show up at the top of search results for sunglasses.
 

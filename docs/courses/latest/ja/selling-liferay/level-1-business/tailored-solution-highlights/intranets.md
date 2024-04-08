@@ -28,7 +28,7 @@ visibility:
 
 Liferay DXPのコラボレーションは、ブログ、フォーラム、メッセージボードなどのアプリケーションでサポートされています。 コラボレーション活動をさらにサポートするソーシャルネットワーキング機能も利用できる。
 
-![liferay.dev enables community members to ask questions which can be answered by other community members, Liferay employees, Liferay partners, etc.](./modern-intranets/images/01.png)
+![liferay.dev enables community members to ask questions which can be answered by other community members, Liferay employees, Liferay partners, etc.](./intranets/images/01.png)
 
 ## 検索とナビゲーション
 
@@ -44,7 +44,7 @@ Liferayは、検索ブループリントのような、より高度な機能を�
 * 検索ページの動作を完全にオーバーライドします
 * 検索ユーザーの属性に応じたコンテキストアウェアな検索結果の構成
 
-![Search blueprints is a feature that allows users to modify Liferay search behavior without needing to write code.](./modern-intranets/images/02.png)
+![Search blueprints is a feature that allows users to modify Liferay search behavior without needing to write code.](./intranets/images/02.png)
 
 ナビゲーションの面では、Liferayはページの作成と整理のための強力なツールを提供します。 シンプルでフラットなサイトナビゲーションから、何階層にもネストされたサブページの複雑な階層ツリーまで、簡単に構築することができます。
 
@@ -54,7 +54,7 @@ Liferayは、検索ブループリントのような、より高度な機能を�
 
 ## ケーススタディ - クラビン
 
-![The Klabin Case Study highlights the challenges and key objectives, describes the solution, and provides key success metrics.](./modern-intranets/images/03.png)
+![The Klabin Case Study highlights the challenges and key objectives, describes the solution, and provides key success metrics.](./intranets/images/03.png)
 
 クラビンはブラジルで最大の包装用紙生産・輸出業者である。 23,000人を超える直接雇用の従業員を抱えるKlabinは、多様な従業員の集合的な知識と経験を活用できる最新のイントラネット・ソリューションが必要だと考えていました。 さらに、ブラジルとアルゼンチンに24の工場を持つクラビンは、企業文化をデジタルで維持し、従業員のコミュニケーションを機敏かつ組織的に促進する方法を必要としていた。
 

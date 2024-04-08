@@ -61,4 +61,4 @@ Zainはカスタマイズが複雑な硬直したレガシーシステムを持�
 
 LiferayのML製品推薦機能はZainでも使われている。 注文処理、出荷管理、在庫管理はすべてLiferayを使って実装されている。
 
-次へ [外部ウェブサイト](./external-websites.md).
+次へ [外部ウェブサイト](./enterprise-websites.md).

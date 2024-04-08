@@ -61,4 +61,4 @@ Zain은 맞춤 설정이 복잡한 엄격한 레거시 시스템을 갖고 있�
 
 Liferay의 ML 제품 추천 기능은 Zain에서도 사용되고 있습니다. 전체 주문 처리, 배송 관리, 재고 관리는 Liferay를 사용하여 구현되었습니다.
 
-다음: [외부 웹사이트](./external-websites.md).
+다음: [외부 웹사이트](./enterprise-websites.md).

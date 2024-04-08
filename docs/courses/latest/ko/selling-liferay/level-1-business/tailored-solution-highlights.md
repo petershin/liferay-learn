@@ -2,10 +2,10 @@
 toc:
   - ./tailored-solution-highlights/customer-portals.md
   - ./tailored-solution-highlights/digital-commerce-sites.md
-  - ./tailored-solution-highlights/external-websites.md
+  - ./tailored-solution-highlights/enterprise-websites.md
   - ./tailored-solution-highlights/supplier-portals.md
   - ./tailored-solution-highlights/partner-portals.md
-  - ./tailored-solution-highlights/modern-intranets.md
+  - ./tailored-solution-highlights/intranets.md
 visibility:
   - Employee
   - Partner
@@ -98,7 +98,7 @@ Liferay의 가장 일반적인 6가지 수평 솔루션에 대해 자세히 알�
 :::
 
 :::{grid-item-card} 외부 웹사이트
-:link: ./tailored-solution-highlights/external-websites.md
+:link: ./tailored-solution-highlights/enterprise-websites.md
 
 :::
 
@@ -113,7 +113,7 @@ Liferay의 가장 일반적인 6가지 수평 솔루션에 대해 자세히 알�
 :::
 
 :::{grid-item-card} 최신 인트라넷
-:link: ./tailored-solution-highlights/modern-intranets.md
+:link: ./tailored-solution-highlights/intranets.md
 
 :::
 ::::

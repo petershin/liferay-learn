@@ -2,10 +2,10 @@
 toc:
   - ./tailored-solution-highlights/customer-portals.md
   - ./tailored-solution-highlights/digital-commerce-sites.md
-  - ./tailored-solution-highlights/external-websites.md
+  - ./tailored-solution-highlights/enterprise-websites.md
   - ./tailored-solution-highlights/supplier-portals.md
   - ./tailored-solution-highlights/partner-portals.md
-  - ./tailored-solution-highlights/modern-intranets.md
+  - ./tailored-solution-highlights/intranets.md
 visibility:
   - Employee
   - Partner
@@ -97,7 +97,7 @@ Liferayの水平ポータルレガシーは、複数の業界にわたる多く�
 :::
 
 :::{grid-item-card} 外部Webサイト
-:link: ./tailored-solution-highlights/external-websites.md
+:link: ./tailored-solution-highlights/enterprise-websites.md
 
 :::
 
@@ -112,7 +112,7 @@ Liferayの水平ポータルレガシーは、複数の業界にわたる多く�
 :::
 
 :::{grid-item-card} 最新の社内ポータル
-:link: ./tailored-solution-highlights/modern-intranets.md
+:link: ./tailored-solution-highlights/intranets.md
 
 :::
 ::::

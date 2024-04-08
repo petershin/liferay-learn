@@ -6,6 +6,7 @@ toc:
   - ./documents-and-media/developer-guide.md
   - ./documents-and-media/devops.md
   - ./documents-and-media/documents-and-media-ui-reference.md
+  - ./documents-and-media/generating-images-using-ai.md
 taxonomy-category-names:
 - Digital Asset Management
 - Documents and Media
@@ -14,6 +15,7 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: 908f0e78-1508-4322-85b0-1deb26a4ef4d
 ---
+
 # Documents and Media
 
 The Documents and Media application stores and manages files in your Liferay instance. This includes files uploaded directly to Documents and Media, as well as those uploaded in applications that support file attachments.
@@ -32,9 +34,8 @@ Files added to Documents and Media can be displayed in applications that support
 
 If desired, you can [export](../site-building/sites/exporting-importing-site-pages-and-content.md) Documents and Media assets as Liferay Archive (`LAR`) files. These files can be used as backups or to import your assets into another Site or Asset Library.
 
-```{tip}
-Documents and Media is available in all Sites and can be enabled in [Asset Libraries](./asset-libraries.md). Files uploaded to a Site are scoped to that Site and cannot be readily accessed by other Sites in your DXP instance. Files uploaded to an Asset Library are available globally and can be linked to multiple Sites for ready access.
-```
+!!! tip
+    Documents and Media is available in all Sites and can be enabled in [Asset Libraries](./asset-libraries.md). Files uploaded to a Site are scoped to that Site and cannot be readily accessed by other Sites in your DXP instance. Files uploaded to an Asset Library are available globally and can be linked to multiple Sites for ready access.
 
 ```{raw} html
 :file: ../landingpage_template.html

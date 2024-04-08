@@ -52,21 +52,32 @@ Advanced Configuration contains additional options:
 
 To use the Custom Facet, you must know which non-analyzed keyword field to use in the configuration. 
 
-```{tip}
-Elasticsearch supports indexing fields in multiple ways. Some text fields can be used as keyword fields if they're nested `raw` [multi-fields](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/multi-fields.html) in the mapping, or if the field is mapped in an additional separate field mapping as `fieldName_sortable.keyword_lowercase` (as a `keyword`). See the example below on creating facets for Custom Fields, as it leverages the Elasticsearch multi-field concept.
-```
+!!! tip
+    The Custom Facet uses keyword fields, but some `text` and `icu_collationcan_keyword` fields in Liferay are mapped with `keyword` sub-fields and are usable in the Custom Facet. [Accessing Sub-Fields](#accessing-sub-fields) and the example below on [creating facets for Custom Fields](#accessing-custom-fields).
 
-To browse the entire list of available fields, inspect the field mappings from *Control Panel* &rarr; *Configuration* &rarr; *Search* (click the *Field Mappings* tab). Here you'll see numerous indexes. The Liferay Assets you're likely interested in are indexed into the [company index](../../search-administration-and-tuning/elasticsearch-indexes-reference.md), which is named similarly to `liferay-20101` (`20101` is the Company ID).
+To browse the entire list of available fields, inspect the field mappings from *Control Panel* &rarr; *Configuration* &rarr; *Search* (click the *Field Mappings* tab). Here you'll see numerous indexes. Liferay's main content is indexed into the [company index](../../search-administration-and-tuning/elasticsearch-indexes-reference.md), which is named `liferay-[company id]` (e.g., `liferay-10819726314237`).
 
-Alternatively, use your search engine's API to browse the mappings. In Elasticsearch you can access the field mappings from your terminal using cURL to call the [Get Mapping API](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/indices-get-mapping.html):
+When you find the field, note its type and if it has sub-fields. Some fields are mapped as `text` fields to enable full text search or as `icu_collation` fields to enable sorting, but given a sub-field of type `keyword` for using in aggregations (i.e., facets).
 
-```{tip}
-[Kibana's](../../liferay-enterprise-search/monitoring-elasticsearch.md) Dev Tools console is more convenient for making Elasticsearch API calls than cURL.
-```
+### Accessing Sub-Fields
+
+ Elasticsearch can index [multi-fields](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/multi-fields.html), adding sub-field mappings to the main field. Some `text` and `icu_collationcan_keyword` fields in Liferay are mapped with `keyword` sub-fields and are usable in the Custom Facet. 
+
+To use sub-fields in the Custom Facet, use dot notation (e.g., `fieldName.sub_field_name`). Examples include `assetTagNames.raw` and `title_en_US_sortable.keyword_lowercase`. Some [nested fields](#accessing-nested-fields) are mapped this way.
+
+!!! warning
+    While you can see sub-fields when you view the mappings in Liferay, you cannot see sub-fields in the document source. Therefore, you cannot find these fields using the [Display Results in Document Form setting](../search-results/configuring-the-search-results-widget#inspecting-search-engine-documents) in Search Results.
+
+### Using the Search Engine's API
+
+Alternatively, use your search engine's API to browse the mappings. You can access Elasticsearch's field mappings from your terminal using cURL to call the [Get Mapping API](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/indices-get-mapping.html):
 
  ```bash
 curl -X GET "localhost:9200/_mapping"?pretty
  ```
+
+!!! tip
+    [Kibana's](../../liferay-enterprise-search/monitoring-elasticsearch.md) Dev Tools console is more convenient for making Elasticsearch API calls than cURL.
 
 Solr uses the [ListFields API](https://lucene.apache.org/solr/guide/6_6/schema-api.html#SchemaAPI-ListFields):
 
@@ -169,7 +180,7 @@ nestedFieldArray.lastAccessed.value_date
 This example references a web content structure field:
 
 ```
-ddmFieldArray.ddm__keyword__40806__Textb5mx_en_US.ddmFieldValueKeyword_en_US_String_sortable
+ddmFieldArray.ddm__keyword__40806__Textb5mx_en_US.ddmFieldValueKeyword_en_US_String_sortable.keyword_lowercase
 ```
 
 ### Using Object Definition Fields in the Custom Facet

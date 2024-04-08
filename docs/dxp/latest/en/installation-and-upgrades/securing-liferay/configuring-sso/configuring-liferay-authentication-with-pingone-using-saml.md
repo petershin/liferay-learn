@@ -88,7 +88,7 @@ This tutorial guides you through the basic steps needed to integrate PingOne, yo
 
 1. Enable the access to this application through the toggle switch on the top right.
 
-![Enable the access to this application through the toggle switch on the top right](./configuring-liferay-authentication-with-pingone-using-saml/images/04.png)
+    ![Enable the access to this application through the toggle switch on the top right](./configuring-liferay-authentication-with-pingone-using-saml/images/04.png)
 
 ## Liferay DXP Configuration
 

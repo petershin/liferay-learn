@@ -89,7 +89,7 @@ Once that is done, OpenID Connect needs to be enabled. To enable the OpenId Conn
 
 1. Go to the *OpenID Connect* tab, click the *Enabled* checkbox and click *Save*.
 
-![Click the Enabled checkbox to enable the OpenID Connection](./configuring-liferay-authentication-with-auth0-using-openid-connect/images/05.png)
+    ![Click the Enabled checkbox to enable the OpenID Connection](./configuring-liferay-authentication-with-auth0-using-openid-connect/images/05.png)
 
 ## Validation
 

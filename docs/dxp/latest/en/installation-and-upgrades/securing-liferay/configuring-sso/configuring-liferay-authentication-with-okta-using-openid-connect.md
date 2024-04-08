@@ -11,7 +11,7 @@ taxonomy-category-names:
 
 # Configuring Liferay Authentication With Okta Using OpenId Connect
 
-This tutorial guides you through the basic steps needed to integrate Okta, your Identity Provider (IdP), with your environment using OpenID Connect. Using an external authentication service is a best practice we endorse. Adding an IdP to your environment can address security concerns, streamline user management, and provide access control for a server that lacks its own robust authentication system.
+Liferay has its own robust authentication methods, but supports integrations with many external authentication services This tutorial guides you through the basic steps needed to integrate Okta, your Identity Provider (IdP), with your environment using OpenID Connect.
 
 ## Prerequisites
 
@@ -74,7 +74,7 @@ This tutorial guides you through the basic steps needed to integrate Okta, your 
 
 1. Go to *OpenID Connect Provider Connection* tab and add a new connection entry.
 
-1. Fill in the fields with the data you find at the [endpoint URLs](#obtaining-endpoint-urls), as shown in the table below. You can find these values on the.
+1. Fill in the fields with the data you find at the [endpoint URLs](#obtaining-endpoint-urls), as shown in the table below.
 
     | Field                        | Data                                                                   |
     |:-----------------------------|:-----------------------------------------------------------------------|
@@ -97,7 +97,7 @@ Once that is done, OpenID Connect needs to be enabled. To enable the OpenId Conn
 
 1. Go to the *OpenID Connect* tab, click the *Enabled* checkbox and click *Save*.
 
-![Click the Enabled checkbox to enable the OpenID Connection](./configuring-liferay-authentication-with-okta-using-openid-connect/images/03.png)
+    ![Click the Enabled checkbox to enable the OpenID Connection](./configuring-liferay-authentication-with-okta-using-openid-connect/images/03.png)
 
 ## Validation
 
@@ -117,7 +117,7 @@ Once that is done, OpenID Connect needs to be enabled. To enable the OpenId Conn
 
 ## Conclusion
 
-Congratulations! You have successfully completed this Solution Tutorial. By now, you should be able to run Okta and authenticate users through it.
+Congratulations! You have successfully completed this Solution Tutorial.
 
 ## Tips and Troubleshooting
 

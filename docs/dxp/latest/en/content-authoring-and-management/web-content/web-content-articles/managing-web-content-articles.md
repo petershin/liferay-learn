@@ -52,6 +52,8 @@ The Details tab includes the following information about web content articles.
 | Expiration Date | When the article expires.           |
 | Review Date     | When the article is set for review. |
 
+!!! warning
+    When clicking the *Actions* button ( ![Actions button](../../../images/icon-actions.png) ) close to the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)), you may access the *Staging* page. While publishing a content, it is recommended to publish a small incremental changes to avoid large publishing processes that can take a long time to execute.
 
 ## Info Panel Versions Tab
 

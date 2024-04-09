@@ -3,9 +3,12 @@
 source ../_common.sh
 
 function check_external_links {
+	echo "Checking external links throughout ${1}."
+	echo
+
 	local link
 
-	for link in $(ag --file-search-regex "\.md|landing\.html" --only-matching "\[.+?\]\(http.*?\)")
+	for link in $(ag --file-search-regex "${1}.*\.md|landing\.html" --only-matching "\[.+?\]\(http.*?\)")
 	do
 		local url=$(echo "${link}" | sed 's/.*(\(.*\))/\1/g' )
 
@@ -273,28 +276,28 @@ function main {
 
 	local markdown_dir_name
 
-	for markdown_dir_name in $(find ${1} -name '*.md' -printf '%h\n' | sort -u)
-	do
-		pushd ${markdown_dir_name} > /dev/null
-
-		for _MARKDOWN_FILE_NAME in $(find . -maxdepth 1 -name "*.md" -printf '%f\n')
+	if [[ -z ${2} || ${2} == "--fix" ]]
+	then
+		for markdown_dir_name in $(find ${1} -name '*.md' -printf '%h\n' | sort -u)
 		do
-			if [[ -z ${2} || ${2} == "--fix" ]]
-			then
+			pushd ${markdown_dir_name} > /dev/null
+
+			for _MARKDOWN_FILE_NAME in $(find . -maxdepth 1 -name "*.md" -printf '%f\n')
+			do
 				check_grids ${@}
 				check_images
 				check_includes ${@}
 				check_landing_pages ${@}
 				check_markdown ${@}
 				check_tocs ${@}
-			elif [[ ${2} == "--ext" ]]
-			then
-				check_external_links ${@}
-			fi
-		done
+			done
 
-		popd > /dev/null
-	done
+			popd > /dev/null
+		done
+	elif [[ ${2} == "--ext" ]]
+	then
+		check_external_links ${@}
+	fi
 
 	unset IFS
 }

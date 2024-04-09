@@ -253,8 +253,10 @@ function main {
 	then
 		echo "Usage: ${0} dxp/latest/en"
 		echo
-		echo "    --ext (optional): Check absolute links and report 404 responses"
-		echo "    --fix (optional): Attempt to fix broken links"
+		echo "    Optional arguments (choose one):"
+		echo
+		echo "    --ext: Check absolute links and report 404 responses"
+		echo "    --fix: Attempt to fix broken relative links"
 
 		exit 0
 	fi

@@ -3,17 +3,15 @@
 source ../_common.sh
 
 function check_external_links {
-	echo "Checking external links throughout ${1}"
+	echo "Checking external links throughout ${1}."
 	echo
 
 	local current_markdown_file_name
 	local link
-	local markdown_file_name
-	local url
 
     for link in $(ag --file-search-regex "\.md|landing\.html" --only-matching "\[.+?\]\(http.*?\)")
 	do
-        url=$(echo "${link}" | sed 's/.*(\(.*\))/\1/g' )
+        local url=$(echo "${link}" | sed 's/.*(\(.*\))/\1/g' )
 
         if [[ ${url} == *"LIFERAY_LEARN"* ]]
 		then
@@ -24,11 +22,12 @@ function check_external_links {
             url=$(echo "${url}" | sed "s/${LIFERAY_LEARN_PORTAL_GIT_TAG_TOKEN}/${LIFERAY_LEARN_PORTAL_GIT_TAG_VALUE}/g" )
             url=$(echo "${url}" | sed "s/${LIFERAY_LEARN_PORTAL_WORKSPACE_TOKEN}/${LIFERAY_LEARN_PORTAL_WORKSPACE_TOKEN_VALUE}/g" )
 		fi
+
         if [[ "${url}" != *"localhost"* ]] && [[ "${url}" != "https://support.google.com"* ]]
 		then
             if [[ $(curl -o /dev/null --silent --head --write-out "%{http_code}" "${url}") == "404" ]]
 			then
-				markdown_file_name=$(echo ${link} | cut -d':' -f1)
+				local markdown_file_name=$(echo ${link} | cut -d':' -f1)
 
 				if [[ -z ${current_markdown_file_name} || ${current_markdown_file_name} != ${markdown_file_name} ]]
 				then

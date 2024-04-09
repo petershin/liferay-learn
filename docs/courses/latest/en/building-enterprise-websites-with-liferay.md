@@ -84,31 +84,31 @@ Learn about both the different identity management features built into Liferay, 
 :::{grid-item-card}  Module 5: Users & Permissions
 :link: ./building-enterprise-websites-with-liferay/module-5.md
 
-Coming Soon in Q1 2024
+Coming Soon
 :::
 
 :::{grid-item-card}  Module 6: Site Building
 :link: ./building-enterprise-websites-with-liferay/module-6.md
 
-Coming Soon in Q1 2024
+Coming Soon
 :::
 
 :::{grid-item-card}  Module 7: Content Authoring & Management
 :link: ./building-enterprise-websites-with-liferay/module-7.md
 
-Coming Soon in Q1 2024
+Coming Soon
 :::
 
 :::{grid-item-card}  Module 8: Headless Delivery
 :link: ./building-enterprise-websites-with-liferay/module-8-delivery.md
 
-Coming Soon in Q1 2024
+Coming Soon
 :::
 
 :::{grid-item-card}  Module 9: Search
 :link: ./building-enterprise-websites-with-liferay/module-9-search.md
 
-Coming Soon in Q1 2024
+Coming Soon
 :::
 
 :::{grid-item-card}  Module 10: Building Applications
@@ -120,12 +120,12 @@ Learn about building low code applications with Liferay.
 :::{grid-item-card}  Module 11: Performance Tuning
 :link: ./building-enterprise-websites-with-liferay/module-11.md
 
-Coming Soon in Q1 2024
+Coming Soon
 :::
 
 :::{grid-item-card}  Module 12: Troubleshooting
 :link: ./building-enterprise-websites-with-liferay/module-12.md
 
-Coming Soon in Q1 2024
+Coming Soon
 :::
 ::::

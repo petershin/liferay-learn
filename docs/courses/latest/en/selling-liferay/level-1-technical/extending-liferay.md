@@ -47,6 +47,7 @@ It is important to note that:
 * The latest version of Liferay DXP includes three main capability sets: Digital Experience Platform core, Commerce, Analytics
 * This offers customers both a simplified product line but also access to quarterly updates
 * Updates contain not only includes fixes to known issues, but new features as well
+* Liferay DXP is suitable for DXP, CMS, Commerce, LCAP, Portal, and many other use-cases
 
 ![Liferay DXP contains core Digital Experience Platform capabilities along with Commerce and Analytics.](./extending-liferay/images/01.png)
 
@@ -58,8 +59,8 @@ These methods allow users a visual way to build and configure pages. Some notabl
 
 * Fragments
 * Publications
+* Style Books
 * Themes
-* Stylebooks
 * Templates
 
 ### Fragments
@@ -86,15 +87,17 @@ The [publications](https://learn.liferay.com/w/dxp/site-building/publishing-tool
 
 Customers can create a Publication and invite the necessary users to make their changes before publishing them.
 
-### Themes
-
-[Themes](https://learn.liferay.com/en/w/dxp/site-building/site-appearance/themes/introduction-to-themes) provide a flexible way to customize the look and feel of Liferay sites. Themes require a deployment of code to DXP and as such are not supported for customers of Liferay SaaS.
-
-### Stylebooks
+### Style Books
 
 ![Stylebooks are sets of visual standards which apply to a site, such as colors, fonts, and spacing.](./extending-liferay/images/05.png)
 
 [Style Books](https://learn.liferay.com/en/w/dxp/site-building/site-appearance/style-books/using-a-style-book-to-standardize-site-appearance) are sets of visual standards which apply to a Site, such as colors, fonts, and spacing. This allows the layout for every page to be designed independently while maintaining a consistent experience across each of them.
+
+### Themes
+
+Sometime it might be necessary to create a [Theme](https://learn.liferay.com/en/w/dxp/site-building/site-appearance/themes/introduction-to-themes) to customize the look and feel of a Liferay site. 
+
+Themes require deployment of code to Liferay DXP and as such are no longer the recommended approach. Developing custom Themes is also not supported for customers of Liferay SaaS. Even with the other deployment approaches the need to develop a custom theme is reducing as the product evolves.
 
 ### Templates
 

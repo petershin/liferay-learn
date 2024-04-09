@@ -119,6 +119,10 @@ DocuSign is a service which manages documents to be signed electronically. This 
 
 Liferay is able to integrate with ETL (Exchange-Transform-Load) tools like [Talend](https://learn.liferay.com/web/guest/w/dxp/system-administration/data-integration/liferay-talend-components-overview). Thanks to Liferay’s Talend Components, customers can import and export data to and from Liferay. For example, user data, web contents or products, can be imported from and exported to other systems such as a CRM, an ERP or database.
 
+```{note}
+It is not possible to use Talend for import or export jobs when using Liferay SaaS.
+```
+
 ### Enterprise Service Bus
 
 Liferay is also able to integrate with architectures like an Enterprise Service Bus (ESB). [MuleSoft](https://learn.liferay.com/w/commerce/add-ons-and-connectors/mulesoft) is a well known ESB which also has a Liferay connector. A typical use case for Liferay would be for customers to automate workflows between Liferay and other applications, such as ERP or CRM systems.

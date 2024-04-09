@@ -37,6 +37,8 @@ Before going through the Deployment strategy, it is important to highlight that,
 
 The latest version of Liferay includes three main capability sets: the Digital Experience Platform core, Commerce, and Analytics. The product incorporates all the tools and features that will allow customers to develop their solutions and meet their business outcomes, with all customers having access to all of the features.
 
+It is also important to recognise that while the product is called Liferay DXP, the features it contains are substantial, and can be used in Content Management (CMS), Commerce, Low-Code (LCAP), Portal and many other scenarios in addition to Digital Experience scenarios.
+
 ![Liferay DXP contains core Digital Experience Platform capabilities along with Commerce and Analytics.](./deployment-strategies/images/01.png)
 
 ## Supporting Every Deployment Approach

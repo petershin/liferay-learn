@@ -26,18 +26,11 @@ function check_external_links {
 		then
 			if [[ $(curl -o /dev/null --silent --head --write-out "%{http_code}" "${url}") == "404" ]]
 			then
-				local markdown_file_name=$(echo ${link} | cut -d':' -f1)
+				_MARKDOWN_FILE_NAME=$(echo ${link} | cut -d':' -f1)
 
-				if [[ -z ${current_markdown_file_name} || ${current_markdown_file_name} != ${markdown_file_name} ]]
-				then
-					local current_markdown_file_name=${markdown_file_name}
+				_LINK_FILE_NAME=${url}
 
-					echo $(git rev-parse --show-prefix | cut -d'/' -f2-)${markdown_file_name}
-					echo
-				fi
-
-				echo "    404: ${url}"
-				echo
+				echo_broken_link "404"
 			fi
 		fi
 	done

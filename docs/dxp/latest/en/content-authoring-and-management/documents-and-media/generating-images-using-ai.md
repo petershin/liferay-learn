@@ -75,10 +75,9 @@ To begin generating images in your Documents and Media application,
 
 1. Click *Add Selected*.
 
-1. (Optional) If you don't like the AI-generated content, you can click *Try Again* to regenerate it.
+1. (Optional) If you don't like any of the AI-generated content, click *Try Again* to regenerate it.
 
-   !!! note
-       Once you regenerate your images, the previous ones are lost. So, ensure you add the selected images you liked before regenerating your images.
+   Note that regenerating the images replaces existing ones. If you wish to keep any of the current images, be sure to save them before starting the image generation process again.
 
 You can now begin using your generated images.
 

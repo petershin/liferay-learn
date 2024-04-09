@@ -11,9 +11,8 @@ uuid: fa9b419d-3b2f-45c7-b641-b6fcbaf0f946
 
 Liferay DXP's Staging tool provides ways to manage available application data and content types both during initial configuration and the publishing process. Because there can be so many relationships between applications and types of content, be sure to consider how they reference each other in your database before deciding to stage or unstage any categories.
 
-```{important}
-Liferay Commerce does not support Staging. During the publishing process, entities from Commerce are not staged. 
-```
+!!! important
+    Liferay Commerce does not support Staging. During the publishing process, entities from Commerce are not staged. 
 
 ## Staging Data and Content Types
 
@@ -41,9 +40,9 @@ When working with Staging, you must think about the applications you're using on
 
 \* *Only published when the Page is published*
 
-```{important}
-After configuration, users can't change whether or not an application data or content type is staged. This is because staging and unstaging this data and content could cause inconsistencies between Staging and Live environments. To change these settings, you must turn staging off and re-enable it with your new configuration.
-```
+!!! important
+    After configuration, users can't change whether or not an application data or content type is staged. This is because staging and unstaging this data and content could cause inconsistencies between Staging and Live environments. To change these settings, you must turn staging off and re-enable it with your new configuration.
+
 
 ## Publishing Data and Content Types
 
@@ -52,6 +51,9 @@ During the publishing process, you can also configure which application data and
 ![Configure which application data and content types are published from Staging to Live.](./managing-data-and-content-types-in-staging/images/02.png)
 
 Here, you can exclude some data and content types during publishing or export to speed up the process.
+
+!!! warning
+   When selecting *All* or *Date Range*, the following warning notification will appear: "*Publishing all content or using a wide date range will take some time. Click "Refresh Counts" to track progress.*" It is recommended to publish a small incremental changes to avoid large publishing processes that can take a long time to execute.
 
 ### Version History
 
@@ -71,9 +73,8 @@ When working within a Site, you can select vocabularies from both the current Si
 
 For environments that use both global and local vocabularies, note that global vocabularies must be published to the Live Site through global Site Staging. One way to avoid vocabulary confusion is to keep all vocabularies local or global. If both must be used, you can resolve the issue by ensuring that dependencies (e.g., categories and vocabularies) are published before publishing the Site that depends on them, whether the dependencies are local or global.
 
-```{note}
-Assets like tags, categories, structures, templates, widget templates, document types, and dynamic data lists can also be shared by a parent to its child Sites. In this case, ensure that the parent's dependencies are published before the Site in question.
-```
+!!! note
+    Assets like tags, categories, structures, templates, widget templates, document types, and dynamic data lists can also be shared by a parent to its child Sites. In this case, ensure that the parent's dependencies are published before the Site in question.
 
 ### Deletions
 

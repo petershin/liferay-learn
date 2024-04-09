@@ -18,14 +18,14 @@ visibility:
 
 ## Background
 
-In the earlier module in Level 0, [What Challenges Does Liferay Solve - Horizontal Solutions](https://learn.liferay.com/web/guest/w/courses/selling-liferay/level-0/what-challenges-does-liferay-solve-horizontal-solutions) we reviewed, in detail, six of the horizontal solutions that Liferay is a good fit for:
+In the earlier module in Level 1 for Business Sales Roles, [Tailored Solution Highlights](https://learn.liferay.com/w/courses/selling-liferay/level-1-business/tailored-solution-highlights) we reviewed, in detail, six of the horizontal solutions that Liferay is a good fit for:
 
 * Customer Portals
 * Digital Commerce Sites
-* External Websites
+* Enterprise Websites
 * Supplier Portals
 * Partner Portals
-* Modern Intranets
+* Intranets
 
 This module uses the same presentation as its content, but is presented as a resource that can be used to aid the Sales Engineer as they do additional discovery and provide guidance on pre-built demos and Liferay DXP capabilities that might be useful for a prospect with a similar requirement.
 
@@ -42,16 +42,16 @@ This module provides a guide to using the success stories as an existing resourc
 
 ## Horizontal Solutions
 
-![Six of the most common Liferay Horizontal Solutions are: Customer Portals, Digital Commerce Sites, External Websites, Supplier Portals, Partner Portals, and Modern Intranets](./success-stories-analysis/images/01.png)
+![Six of the most common Liferay Horizontal Solutions are: Customer Portals, Digital Commerce Sites, Enterprise Websites, Supplier Portals, Partner Portals, and Intranets](./success-stories-analysis/images/01.png)
 
 The most popular horizontal solutions that Liferay is used for are:
 
 * Customer Portals
 * Digital Commerce Sites
-* External Websites
+* Enterprise Websites
 * Supplier Portals
 * Partner Portals
-* Modern Intranets
+* Intranets
 
 First, it is important to remember that this is _not_ the complete list of solutions that LIferay is suitable for. Liferay provides a very wide range of out of the box capabilities which are suitable for many different use cases. Even knowing Liferay really well it sometimes comes as a surprise when hearing that it has been used successfully somewhere that wouldn’t at first glance be seen as a logical fit for the platform.
 

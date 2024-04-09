@@ -6,7 +6,7 @@ uuid: 31b4df1f-149b-4882-8eb0-fea2ded0fa3c
 
 **At a Glance**
 
-* The Horizontal Solutions learning path presentation provides details of six common solutions where Liferay has been successful.
+* The Tailored Solution Highlights learning path presentation provides details of six common solutions where Liferay has been successful.
 * Each Solution is detailed in the same way:
   * Solution Definition
   * Key Liferay Capabilities to support that solution
@@ -39,12 +39,12 @@ The next slide in the presentation includes the main groups of features that are
 
 For Customer Portals the key features to focus on are
 
-* Segmentation & Personalization
-* Integration & Interoperability
+* Personalization
+* Integration
 
-Segmentation and Personalization are important, as noted earlier, because they provide features that enable customers to be targeted, and in doing so stay more engaged with the application.
+Personalization is important, because it provide features that enable customers to be targeted, and in doing so stay more engaged with the application.
 
-Integration and Interoperability are important, again as noted earlier, because customer portals are more than just landing pages, they aggregate information from various underlying systems, and in many cases surface this information through dashboards. Dashboards are ultimately a combination of these two feature areas that Liferay is particularly strong in.
+Integration is another important capbility, as noted earlier, because customer portals are more than just landing pages, they aggregate information from various underlying systems, and in many cases surface this information through dashboards. Dashboards are ultimately a combination of these two feature areas that Liferay is particularly strong in.
 
 Sales Engineers need to know what kind of Integration capabilities Liferay provides, how it can be integrated into third-party solutions, and so on.
 

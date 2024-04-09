@@ -3,10 +3,6 @@
 source ../_common.sh
 
 function check_external_links {
-	echo "Checking external links throughout ${1}."
-	echo
-
-	local current_markdown_file_name
 	local link
 
 	for link in $(ag --file-search-regex "\.md|landing\.html" --only-matching "\[.+?\]\(http.*?\)")
@@ -31,7 +27,7 @@ function check_external_links {
 
 				if [[ -z ${current_markdown_file_name} || ${current_markdown_file_name} != ${markdown_file_name} ]]
 				then
-					current_markdown_file_name=${markdown_file_name}
+					local current_markdown_file_name=${markdown_file_name}
 
 					echo $(git rev-parse --show-prefix | cut -d'/' -f2-)${markdown_file_name}
 					echo

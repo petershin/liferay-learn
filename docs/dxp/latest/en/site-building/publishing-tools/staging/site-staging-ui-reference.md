@@ -38,6 +38,9 @@ When you click on *Publish to Live*, a modal window appears with additional opti
 
 ![Click on Publish to Live to access the publishing modal window.](./site-staging-ui-reference/images/03.png)
 
+!!! warning
+    It is recommended to publish a small incremental changes to avoid large publishing processes that can take a long time to execute.
+
 ## Simple Publishing
 
 **Name**: Enter a descriptive name for your publish process into the *Name* field.
@@ -89,15 +92,13 @@ If you want to publish pages with a custom theme, you must check the Theme Setti
 | *Date Range* | Shows the content updated during a specific period of time. |
 | *Last* | Shows the content updated in the last hours or days. |
 
-```{note}
-After selecting your Content option, click *Refresh Counts* to update the number of results.
-```
+!!! note
+    After selecting your Content option, click *Refresh Counts* to update the number of results.
 
 You can also click on *Change* for each content type to manage items and other settings included in each type, such as *version history*, *vocabularies*, and *previews and thumbnails*. See [Managing Data and Content Types in Staging](./managing-data-and-content-types-in-staging.md) for more information.
 
-```{important}
-By default, content displayed using the following widgets is always included in publishing processes: Dynamic Data Lists Display, Form, Web Content Display, and Wiki Display. For Liferay DXP/Portal 7.4+, you can disable this behavior so that displayed content is only published when explicitly included in the publishing process's configuration. See [Configuring Automatic Publishing of Displayed Content](./configuring-automatic-publishing-of-displayed-content.md) for more information.
-```
+!!! important
+    By default, content displayed using the following widgets is always included in publishing processes: Dynamic Data Lists Display, Form, Web Content Display, and Wiki Display. For Liferay DXP/Portal 7.4+, you can disable this behavior so that displayed content is only published when explicitly included in the publishing process's configuration. See [Configuring Automatic Publishing of Displayed Content](./configuring-automatic-publishing-of-displayed-content.md) for more information.
 
 **Permissions**: Select whether to include permissions for the pages and widgets when your changes are published.
 

@@ -26,27 +26,28 @@ Once you confirm, you're directed to a process page where you can see the publis
 
 Similar to the standard process, single asset publishing includes associated dependencies: images, custom templates, or folders.
 
+!!! note
+   Single asset publishing is not supported for page-scoped content.
+
+## Publishing Multiple Assets
+
 It is also possible to manually choose and publish multiple assets at the same time.
 
 1. Select your assets by checking the box
 
 1. Click on the *Actions* button ( ![Actions button](../../../images/icon-actions.png) ) from the toolbar above the elements and then click *Publish Selected Elements*
 
-   ![Click on the Actions button on the toolbar and select Publish Selected Elements button.](./publishing-single-assets-and-widgets/images/05.png)
-
-!!!{note}
-Single asset publishing is not supported for page-scoped content.
-!!!
+   ![Click on the Actions button on the toolbar and select Publish Selected Elements button.](./publishing-single-assets-and-widgets/images/02.png)
 
 ## Publishing Single Widgets
 
-> Only Available for Widget Pages
+{bdg-primary}`Widget Pages`
 
 Although Staging is typically used to publish content, you can also publish widgets. For example, you can modify a widget's title and publish the change to Live. This is possible because widget configurations are always staged. To publish a widget that is on a Page, you must publish the Page first.
 
 After changing a widget, you can publish the widget by clicking on the *Actions* button ( ![Actions button](../../../images/icon-actions.png) ) for the widget and selecting *Staging*.
 
-   ![Click on a widget's Action button, and select Staging.](./publishing-single-assets-and-widgets/images/04.png)
+   ![Click on a widget's Action button, and select Staging.](./publishing-single-assets-and-widgets/images/03.png)
 
 ## Verifying Published Content
 
@@ -54,21 +55,19 @@ It is possible to the user to see assets after it was published, so it can obtai
 
 1. After publishing to live a Basic Web Content asset, Click the Product Menu (![Product Menu icon.](../../images/icon-product-menu.png)) and navigate to *Publishing* &rarr; *Staging*
 
-1. Create a New Publish Process layout.
+1. Create a New Publish Process layout. Then, make sure the Web Content checkbox is selected.
 
-1. Make Sure the Web Content checkbox is selected.
+   ![Assuring that the Web Content checkbox is selected.](./publishing-single-assets-and-widgets/images/04.png)                        
 
-   ![Assuring that the Web Content checkbox is selected.](./publishing-single-assets-and-widgets/images/06.png)                        
-
-1. Press the *Publish to Live* button.
+1. Click on the *Publish to Live* button.
 
 1. After successfully publishing the layout, click on the *Actions* button ( ![Actions button](../../../images/icon-actions.png) ) next to the process of your new layout and select *Summary*.
 
-   ![Clicking on the kebab menu and visualizing the Summary button.](./publishing-single-assets-and-widgets/images/07.png)                       
+   ![Clicking on Actions and visualizing the Summary button.](./publishing-single-assets-and-widgets/images/05.png)                       
 
 On the summary page, you can verify your previous published Web Content assets.
 
-   ![Visualizing published Web Content Asset.](./publishing-single-assets-and-widgets/images/08.png) 
+   ![Visualizing published Web Content Asset.](./publishing-single-assets-and-widgets/images/06.png) 
 
 ## Related Topics
 

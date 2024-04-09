@@ -53,7 +53,7 @@ Advanced Configuration contains additional options:
 To use the Custom Facet, you must know which non-analyzed keyword field to use in the configuration. 
 
 !!! tip
-    The Custom Facet uses keyword fields, but some `text` and `icu_collationcan_keyword` fields in Liferay are mapped with `keyword` sub-fields and are usable in the Custom Facet. [Accessing Sub-Fields](#accessing-sub-fields) and the example below on [creating facets for Custom Fields](#accessing-custom-fields).
+    The Custom Facet uses keyword fields, but some `text` and `icu_collation_keyword` fields in Liferay are mapped with `keyword` sub-fields and are usable in the Custom Facet. [Accessing Sub-Fields](#accessing-sub-fields) and the example below on [creating facets for Custom Fields](#accessing-custom-fields).
 
 To browse the entire list of available fields, inspect the field mappings from *Control Panel* &rarr; *Configuration* &rarr; *Search* (click the *Field Mappings* tab). Here you'll see numerous indexes. Liferay's main content is indexed into the [company index](../../search-administration-and-tuning/elasticsearch-indexes-reference.md), which is named `liferay-[company id]` (e.g., `liferay-10819726314237`).
 
@@ -61,19 +61,19 @@ When you find the field, note its type and if it has sub-fields. Some fields are
 
 ### Accessing Sub-Fields
 
- Elasticsearch can index [multi-fields](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/multi-fields.html), adding sub-field mappings to the main field. Some `text` and `icu_collationcan_keyword` fields in Liferay are mapped with `keyword` sub-fields and are usable in the Custom Facet. 
+ Elasticsearch can index [multi-fields](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/multi-fields.html), adding sub-field mappings to the main field. Some `text` and `icu_collation_keyword` fields in Liferay are mapped with `keyword` sub-fields and are usable in the Custom Facet. 
 
 To use sub-fields in the Custom Facet, use dot notation (e.g., `fieldName.sub_field_name`). Examples include `assetTagNames.raw` and `title_en_US_sortable.keyword_lowercase`. Some [nested fields](#accessing-nested-fields) are mapped this way.
 
 !!! warning
-    While you can see sub-fields when you view the mappings in Liferay, you cannot see sub-fields in the document source. Therefore, you cannot find these fields using the [Display Results in Document Form setting](../search-results/configuring-the-search-results-widget#inspecting-search-engine-documents) in Search Results.
+    You can see sub-fields when you view the mappings in Liferay, but they are not present in the document source. Therefore, you cannot find these fields using the [Display Results in Document Form setting](../search-results/configuring-the-search-results-widget#inspecting-search-engine-documents) in Search Results.
 
 ### Using the Search Engine's API
 
 Alternatively, use your search engine's API to browse the mappings. You can access Elasticsearch's field mappings from your terminal using cURL to call the [Get Mapping API](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/indices-get-mapping.html):
 
  ```bash
-curl -X GET "localhost:9200/_mapping"?pretty
+curl -X GET "localhost:9200/_mapping?pretty"
  ```
 
 !!! tip
@@ -255,3 +255,9 @@ Depending on your version, [nested field storage for DDM fields](../../../lifera
 | DXP 7.2 SP3/FP8+ | &#10008; |
 
 To change the behavior, use the _Enable Legacy Dynamic Data Mapping Index Fields_ setting in System Settings &rarr; Dynamic Data Mapping Indexer.
+
+## Related Topics
+
+* [Searching for Content](../../getting-started/searching-for-content.md)
+* [Search Administration](../../search-administration-and-tuning/search-administration.md)
+* [Using the Custom Filter Widget](../search-results/using-the-custom-filter-widget.md)

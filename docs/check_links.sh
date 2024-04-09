@@ -285,7 +285,7 @@ function main {
 		for _MARKDOWN_FILE_NAME in $(find . -maxdepth 1 -name "*.md" -printf '%f\n')
 		do
 			if [[ -z ${2} || ${2} == "--fix" ]]
-				then
+			then
 				check_grids ${@}
 				check_images
 				check_includes ${@}

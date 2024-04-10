@@ -10,19 +10,19 @@ uuid: 6accf706-b809-4189-b014-2a90d4362f04
 ---
 # Using Search Widget Templates
 
-The default search widgets views are useful, but your site's widgets likely need a specific design. You can choose from one of the available widget templates, or create a new one. See [Styling Widgets with Widget Templates](../../site-building/displaying-content/additional-content-display-options/styling-widgets-with-widget-templates.md) for general information about creating templates for a widget's display.
+The default search widgets views are useful, but your site's widgets likely need a specific design. You can choose from one of the available widget templates or create a new one. See [Styling Widgets with Widget Templates](../../site-building/displaying-content/additional-content-display-options/styling-widgets-with-widget-templates.md) for general information about creating templates for a widget's display.
 
-From [each widget's](../search-configuration-reference.md#search-widgets) configuration, choose a template from the Display Template field. Available templates were created specifically for the widget you're configuring, and are viewable in the Global site or the current site at *Site Menu* (![Site Menu](../../images/icon-menu.png)) &rarr; *Design* &rarr; *Templates* &rarr; *Widget Templates*.
+From [each widget's](../search-configuration-reference.md#search-widgets) configuration, choose a template from the Display Template field. Available templates were created specifically for the widget you're configuring, and are visible in the Global site or the current site at *Site Menu* (![Site Menu](../../images/icon-menu.png)) &rarr; *Design* &rarr; *Templates* &rarr; *Widget Templates*.
 
-From [Instance Settings](../../system-administration/configuring-liferay/understanding-configuration-scope.md#system-settings-and-instance-settings) you can change the default template for a widget. When you add the widget to a page it defaults to the configured template. Doing this requires getting the widget template's key from the template editor.
+From [Instance Settings](../../system-administration/configuring-liferay/understanding-configuration-scope.md#system-settings-and-instance-settings) you can change the default template for a widget. When you add the widget to a page, it defaults to the configured template. Doing this requires getting the widget template's key from the template editor.
 
 ![You can set the default widget template in the instance scope and override it in the widget scope.](./using-search-widget-display-templates/images/01.png)
 
-There are several out-of-the-box templates you can choose from.
+There are several out-of-the-box templates you can choose.
 
 ## Using the Out-of-the-Box Templates
 
-You can use the out-of-the-box widget templates as-is or as inspiration for [creating your own widget template](#creating-a-search-widget-template). Here you can see what they look like to decide if they're right for your use case.
+You can use the out-of-the-box widget templates as-is or as inspiration for [creating your own widget template](#creating-a-search-widget-template). Here's a preview, so you can see which one works best for you. 
 
 ### Custom Filter
 
@@ -103,12 +103,10 @@ The Card Layout template:
 
 ## Creating a Search Widget Template
 
-To create a widget template form scratch,
-
 1. Go to the site where you want to use the template.
 
    !!! note
-       The out-of-the-box widget templates are all added to the Global site. You can do the same or add yours to a specific site.
+       The out-of-the-box widget templates appear in the Global site. You can do the same or add yours to a specific site.
 
 1. Open _Site_ &rarr; _Design_ &rarr; _Templates_.
 
@@ -119,7 +117,7 @@ To create a widget template form scratch,
 1. From the list of widgets, choose the widget your template should target. 
 
    !!! Note
-       The first listing for _Search Results Template_ targets the Search Results widget, while the second listing with the same name targets the Commerce Search Results widget.
+       The first listing for Search Results Template targets the Search Results widget, while the second listing with the same name targets the Commerce Search Results widget.
 
 1. Using the editor's predefined variables, create your template using FreeMarker.
 
@@ -135,9 +133,9 @@ You can accelerate template development by copying an existing template and modi
 
 1. Click the _Widget Templates_ tab.
 
-1. Search for the title of the template to copy. For example, search for _compact_ if you're hoping to start with the Compact Layout template. 
+1. Search for the title of the template to copy. For example, search for _compact_ to start with the Compact Layout template. 
 
-1. Find the entry for the widget you're interested in, then click _Actions_ (![Actions](../../images/icon-actions.png)) &rarr; _Make a Copy_.
+1. Find the entry for the widget you want, then click _Actions_ (![Actions](../../images/icon-actions.png)) &rarr; _Make a Copy_.
 
    ![You can copy an existing template.](./using-search-widget-display-templates/images/19.png)
 
@@ -151,7 +149,7 @@ Once saved, you can select the template from the widget configuration.
 
 ## Example: Extending the Search Results Widget's Compact Layout Template
 
-In this example, extend the Compact Layout template to include the last modified date of the result:
+This example extends the Compact Layout template to include the last modified date of the result:
 
 1. In the Global site's menu, open _Site_ &rarr; _Design_ &rarr; _Templates_ and click the _Widget Templates_ tab.
 
@@ -161,7 +159,7 @@ In this example, extend the Compact Layout template to include the last modified
 
 1. Your copy appears in the list with the others, so click _Compact with Details_ to begin editing.
 
-1. Replace the template's list item block (i.e., the code from `<li>` to `</li>`) with this code:
+1. Replace the template's list item block (the code from `<li>` to `</li>`) with this code:
 
    ```html
    <li class="c-mb-3 c-mt-3">

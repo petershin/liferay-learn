@@ -9,23 +9,23 @@ uuid: bfc953a5-54eb-4324-bce7-30c888cdf1e9
 ---
 # Custom Facet
 
-The Custom Facet is unique among the out-of-the-box search facets. Rather than group results by a single static field (like the modified date or the asset type), you use a Custom Facet to choose which field to group results by. You can create an entirely new facet with much more customization.
+The Custom Facet is unique among the out-of-the-box search facets. Rather than group results by a single static field (like the modified date or the asset type), you can choose which field to group results by, creating an entirely new facet in the process.
 
 ## Configuring the Custom Facet
 
-1. Click the _Add_ icon (![Add icon](../../../images/icon-add-app.png)) at the top of the page.
+1. Click _Add_ (![Add icon](../../../images/icon-add-app.png)) at the top of the page.
 
 1. Locate the Custom Facet and drag it to the collection of facets on the left. The Custom Facet is found under the Search section of widgets.
 
    ![Find the custom facet under the search widgets.](custom-facet/images/01.png)
 
-1. Click the facet's _Options_ icon (![Options icon](../../../images/icon-app-options.png)) and click *Configuration*.
+1. Click *Options* (![Options icon](../../../images/icon-app-options.png)) &rarr; *Configuration*.
 
    ![Click on the Configuration option.](custom-facet/images/02.png)
 
    The Custom Facet has several configuration options which are described below.
 
-1. When finished setting options, click the *Save* button.
+1. When finished, click *Save*.
 
 **Display Settings:** Choose between *Default*, *Compact Layout*, and *Label Layout*. The Default layout shows checkboxes next to each term but the Compact layout does not. The Label layout shows small clickable labels for each term.
 
@@ -53,15 +53,15 @@ Advanced Configuration contains additional options:
 To use the Custom Facet, you must know which non-analyzed keyword field to use in the configuration. 
 
 !!! tip
-    The Custom Facet uses keyword fields, but some `text` and `icu_collation_keyword` fields in Liferay are mapped with `keyword` sub-fields and are usable in the Custom Facet. [Accessing Sub-Fields](#accessing-sub-fields) and the example below on [creating facets for Custom Fields](#accessing-custom-fields).
+    The Custom Facet uses keyword fields, but some `text` and `icu_collation_keyword` fields in Liferay are mapped with `keyword` sub-fields and are usable in the Custom Facet. See [Accessing Sub-Fields](#accessing-sub-fields) and the example on [creating facets for Custom Fields](#accessing-custom-fields).
 
-To browse the entire list of available fields, inspect the field mappings from *Control Panel* &rarr; *Configuration* &rarr; *Search* (click the *Field Mappings* tab). Here you'll see numerous indexes. Liferay's main content is indexed into the [company index](../../search-administration-and-tuning/elasticsearch-indexes-reference.md), which is named `liferay-[company id]` (e.g., `liferay-10819726314237`).
+To browse the entire list of available fields, inspect the field mappings from *Control Panel* &rarr; *Configuration* &rarr; *Search* (click the *Field Mappings* tab). Here you'll see numerous indexes. Liferay's main content is indexed into the [company index](../../search-administration-and-tuning/elasticsearch-indexes-reference.md), which is named `liferay-[company id]` (e.g., `liferay-10819726314237`). To search and browse the mappings you can copy them locally and use your favorite editor.
 
 When you find the field, note its type and if it has sub-fields. Some fields are mapped as `text` fields to enable full text search or as `icu_collation` fields to enable sorting, but given a sub-field of type `keyword` for using in aggregations (i.e., facets).
 
 ### Accessing Sub-Fields
 
- Elasticsearch can index [multi-fields](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/multi-fields.html), adding sub-field mappings to the main field. Some `text` and `icu_collation_keyword` fields in Liferay are mapped with `keyword` sub-fields and are usable in the Custom Facet. 
+Elasticsearch can index [multi-fields](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/multi-fields.html), adding sub-field mappings to the main field. Some `text` and `icu_collation_keyword` fields in Liferay are mapped with `keyword` sub-fields and are usable in the Custom Facet. 
 
 To use sub-fields in the Custom Facet, use dot notation (e.g., `fieldName.sub_field_name`). Examples include `assetTagNames.raw` and `title_en_US_sortable.keyword_lowercase`. Some [nested fields](#accessing-nested-fields) are mapped this way.
 

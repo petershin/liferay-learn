@@ -52,4 +52,4 @@ The metrics and information available in the cloud console include:
 
 Congratulations! You've completed Module 3 - Deploying Liferay.
 
-[Back to Building Enterprise Websites with Liferay](../../building-enterprise-websites-with-liferay.md)
+Up Next: [Module 4 - Identity Management and SSO](../module-4-identity-management-and-sso.md)

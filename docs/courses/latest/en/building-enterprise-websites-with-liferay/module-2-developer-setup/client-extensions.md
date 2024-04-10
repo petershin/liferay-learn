@@ -38,7 +38,7 @@ Client extension projects are built with Gradle and deployed with the Liferay Cl
 
 Congratulations! You've completed Module 2 - Developer Setup.
 
-[Back to Building Enterprise Websites with Liferay](../../building-enterprise-websites-with-liferay.md)
+Up Next: [Module 3 - Deploying Liferay](../module-3-deploying-liferay.md)
 
 ## Additional Resources
 

@@ -44,8 +44,8 @@ While building this solution, we'll follow these Clarity personas as they contri
 
 ## Conclusion
 
-Congratulations! You've finished Module One.
+Congratulations! You've completed Module 1 - Getting Started with Clarity.
 
 Now that we've learn about Clarity and how Liferay can help them overcome their obstacles, let's move on to the next module!
 
-Up Next: [Module 2: Developer Setup](../module-2-developer-setup.md)
+Up Next: [Module 2 - Developer Setup](../module-2-developer-setup.md)

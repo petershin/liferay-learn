@@ -32,4 +32,6 @@ Originally, Clarity's distributor application solution used standard object layo
 
 While the distributor application previously existed as a separate entity, these new pages unify the application with the rest of the Clarity experience.
 
-This concludes *Module 10: Building Applications*.
+Congratulations! You've completed Module 10 - Building Applications.
+
+[Back to Building Enterprise Websites with Liferay](../../building-enterprise-websites-with-liferay.md)

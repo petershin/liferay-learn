@@ -45,7 +45,7 @@ After taking this course, you will have learned how to
 * __________
 -->
 
-Given the breadth and depth of Liferay features and configurations, it is impossible to cover every detail necessary for building a production ready website. However, after completing this course and reading related articles, you will gain the knowledge necessary to pass the *Building Enterprise Websites with Liferay* exam.
+Given the breadth and depth of Liferay features and configurations, it is impossible to cover every detail necessary for building a production ready website. However, this course will equip you with the knowledge and skills necessary to tackle real-world problems and create solutions with Liferay.
 
 To bridge the gap between theory and practice, this course will lead you through building an enterprise marketing website for a fictional company, Clarity Vision Solutions. Before diving into the technical aspects of Liferay DXP, we'll introduce Clarity and outline what you'll be building. <!--TASK: improve rigid transition-->
 

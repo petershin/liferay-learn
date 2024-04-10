@@ -51,7 +51,7 @@ Since there is no need to authenticate anonymous site visitors, or guest users -
 
 Congratulations! You've completed Module 4 - Identity Management and SSO.
 
-[Back to Building Enterprise Websites with Liferay](../../building-enterprise-websites-with-liferay.md)
+Up Next: [Module 5 - Users and Permissions]()
 
 ## Additional Resources
 

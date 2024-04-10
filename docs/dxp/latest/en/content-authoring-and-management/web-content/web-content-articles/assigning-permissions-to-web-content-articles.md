@@ -41,6 +41,9 @@ To select multiple web content articles and set their permissions at once,
 
 1. Select the checkbox next to the web content articles you want to configure.
 
+   !!! note
+       You can only assign permissions in bulk to web content articles. Permissions of folders must be set individually.
+
 1. Click *Permissions* at the top options bar.
 
 1. Update the permissions for each role. See [Web Content Articles Permissions Reference](#web-content-articles-permissions-reference) to learn more about each permission.

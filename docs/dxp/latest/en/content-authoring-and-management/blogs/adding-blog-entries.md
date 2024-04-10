@@ -7,21 +7,21 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: 357d9fa7-1cc8-499a-9770-c6ac607c6444
 ---
+
 # Adding Blog Entries
 
-Blog entries are scoped to sites. By default, only authenticated users have the ability to create blog entries. See the [Blogs Permissions Reference](./blog-permissions-reference.md) for more information.
+Blog entries are scoped to sites. By default, only authenticated users can create blog entries. See the [Blogs Permissions Reference](./blog-permissions-reference.md) for more information.
 
 You can [create a blog entry](#creating-an-entry) and [display it on a page](./displaying-blogs.md).
 
-```{tip}
-Using a Blogs [widget](../../site-building/creating-pages/using-widget-pages/adding-widgets-to-a-page.md) is one of the easiest ways to display your blog entries on a page.
-```
+!!! tip
+    Using a Blogs [widget](../../site-building/creating-pages/using-widget-pages/adding-widgets-to-a-page.md) is one of the easiest ways to display your blog entries on a page.
 
 ## Creating an Entry
 
-1. Open the *Site Menu* ( ![Product Menu](../../images/icon-product-menu.png) ) and go to *Content & Data* &rarr; *Blogs*.
+1. Open the *Site Menu* (![Product Menu](../../images/icon-product-menu.png)) and navigate to *Content & Data* &rarr; *Blogs*.
 
-1. Under the Entries tab, click *Add* ( ![Add icon](../../images/icon-add.png) ) to add a new blog entry.
+1. Under the Entries tab, click *Add* (![Add icon](../../images/icon-add.png)) to add a new blog entry.
 
    ![Blog entry form editor](./adding-blog-entries/images/01.png)
 
@@ -39,7 +39,7 @@ Using a Blogs [widget](../../site-building/creating-pages/using-widget-pages/add
 
 You can help users find content on your site by categorizing blog entries.
 
-Use categories (public and internal), tags, or relate the entry to an asset to categorize your blog entry. See [Defining Categories and Vocabularies for Content](../tags-and-categories/defining-categories-and-vocabularies-for-content.md) to learn more about categories and vocabulary and [Tagging Content and Mananing Tags](../tags-and-categories/tagging-content-and-managing-tags.md) to learn more about using tags.
+Use categories (public and internal), tags, or relate the entry to an asset to categorize your blog entry. See [Defining Categories and Vocabularies for Content](../tags-and-categories/defining-categories-and-vocabularies-for-content.md) to learn more about categories and vocabulary and [Tagging Content and Managing Tags](../tags-and-categories/tagging-content-and-managing-tags.md) to learn more about using tags.
 
 To categorize your entry using categories and tags,
 
@@ -47,7 +47,7 @@ To categorize your entry using categories and tags,
 
 1. Click *Select* to choose an existing category or tag.
 
-   Alternately, you can create a new tag by entering the tag name in the Tags field and pressing Return.
+   Alternatively, create a new tag by entering the tag name in the Tags field and pressing Return.
 
 To relate an asset to the entry,
 
@@ -82,8 +82,6 @@ Fellow site members can add comments, rate the entry, or share it on other socia
 
 ## Related Topics
 
-[Managing Blog Entries](./managing-blog-entries.md)
-
-[Configuring the Blogs App](./configuring-the-blogs-app.md)
-
-[Displaying Blogs](./displaying-blogs.md)
+- [Managing Blog Entries](./managing-blog-entries.md)
+- [Configuring the Blogs App](./configuring-the-blogs-app.md)
+- [Displaying Blogs](./displaying-blogs.md)

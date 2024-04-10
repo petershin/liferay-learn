@@ -198,7 +198,7 @@ function echo_broken_link {
 }
 
 function fix_link {
-	if [[ ${2} == "--fix" ]]
+	if [[ ${2} == "--cmd=fix" ]]
 	then
 		local link_base_file_name=$(echo ${_LINK_FILE_NAME} | rev | cut -d'/' -f1 | rev)
 
@@ -247,18 +247,16 @@ function main {
 	then
 		echo "Usage: ${0} dxp/latest/en"
 		echo
-		echo "    Optional arguments (choose one):"
-		echo
-		echo "    --ext: Check absolute links and report 404 responses"
-		echo "    --fix: Attempt to fix broken relative links"
+		echo "    --cmd=ext (optional): Check absolute links and report 404 responses"
+		echo "    --cmd=fix (optional): Attempt to fix broken relative links"
 
 		exit 0
 	fi
-	if [[ ${2} == "--fix" ]]
+	if [[ ${2} == "--cmd=fix" ]]
 	then
 		if [[ $(git status --short -- ${1}) ]]
 		then
-			echo "WARNING: There are uncommitted changes. Do not run with \"--fix\" unless there is nothing reported by \"git status --short -- ${1}\"."
+			echo "WARNING: There are uncommitted changes. Do not run with \"--cmd=fix\" unless there is nothing reported by \"git status --short -- ${1}\"."
 
 			git status --short -- ${1}
 
@@ -272,7 +270,7 @@ function main {
 
 	local markdown_dir_name
 
-	if [[ -z ${2} || ${2} == "--fix" ]]
+	if [[ -z ${2} || ${2} == "--cmd=fix" ]]
 	then
 		for markdown_dir_name in $(find ${1} -name '*.md' -printf '%h\n' | sort -u)
 		do
@@ -290,7 +288,7 @@ function main {
 
 			popd > /dev/null
 		done
-	elif [[ ${2} == "--ext" ]]
+	elif [[ ${2} == "--cmd=ext" ]]
 	then
 		check_external_links ${@}
 	fi

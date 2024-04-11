@@ -7,38 +7,40 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: 231895b7-3e9b-42d4-a89f-91d2e8e9f3ac
 ---
+
 # Auto Tagging Images
 
 Once [asset auto tagging has been enabled](./configuring-asset-auto-tagging.md), you can also enable image auto tagging. Image auto tagging tags images uploaded to the Documents and Media Library.
 
-```{tip}
+!!! tip
 Currently, tags applied automatically are English only.
-```
 
 By default, Image Auto Tagging is disabled by default. In addition to enabling Auto Tagging in DXP, you must also configure an image tagging provider. Three providers are available:
 
-* [**TensorFlow:**](#configuring-tensorflow-image-auto-tagging) An open-source library that provides machine learning capabilities. TensorFlow image auto-tagging in DXP is based on [TensorFlow's `LabelImage` sample for Java](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/java/src/main/java/org/tensorflow/examples/LabelImage.java), and uses the Inception5h model. Use this with caution, since its accuracy is limited.
+- [**TensorFlow:**](#configuring-tensorflow-image-auto-tagging) An open-source library that provides machine learning capabilities. TensorFlow image auto-tagging in DXP is based on [TensorFlow's `LabelImage` sample for Java](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/java/src/main/java/org/tensorflow/examples/LabelImage.java), and uses the Inception5h model. Use this with caution, since its accuracy is limited.
 
-* [**Google Cloud Vision:**](#configuring-google-cloud-vision) Uses the [Google Cloud Vision API](https://cloud.google.com/vision/) to automatically tag images.
+- [**Google Cloud Vision:**](#configuring-google-cloud-vision) Uses the [Google Cloud Vision API](https://cloud.google.com/vision/) to automatically tag images.
 
-* [**Microsoft Cognitive Services:**](#configuring-microsoft-cognitive-services) Uses [Microsoft Cognitive Services](https://azure.microsoft.com/en-us/services/cognitive-services/) to automatically tag images.
+- [**Microsoft Cognitive Services:**](#configuring-microsoft-cognitive-services) Uses [Microsoft Cognitive Services](https://azure.microsoft.com/en-us/services/cognitive-services/) to automatically tag images.
+
+- [**OpenNLP:**](#configuring-opennlp-text-auto-tagging) [OpenNLP](https://opennlp.apache.org/) is an open-source library used for natural language processing tasks like tokenization, part-of-speech tagging, and named entity recognition.
 
 ![The tags freight car and electric locomotive were automatically applied to this image.](./auto-tagging-images/images/01.png)
 
 ## Configuring TensorFlow Image Auto Tagging
 
-1. Click the _Global Menu_ &rarr; _Control Panel_
-1. Click _System Settings_.
+1. Click the *Global Menu* &rarr; *Control Panel*
+1. Click *System Settings*.
 
     ![Navigate to the System Settings.](./auto-tagging-images/images/02.png)
 
-1. Click _Assets_ under _Content and Data_.
+1. Click *Assets* under *Content and Data*.
 
     ![Click on Assets.](./auto-tagging-images/images/03.png)
 
-1. Under _VIRTUAL INSTANCE SCOPE_, click _TensorFlow Image Auto Tagging_.
+1. Under *VIRTUAL INSTANCE SCOPE*, click *TensorFlow Image Auto Tagging*.
 1. Fill out the form.
-1. Click _Save_ when finished.
+1. Click *Save* when finished.
 
 The form asks for this information:
 
@@ -50,12 +52,12 @@ The form asks for this information:
 
 ### Optimizing TensorFlow Auto Tagging Performance
 
-1. Click the _Global Menu_ &rarr; _Control Panel_
-1. Click _System Settings_.
-1. Click _Assets_.
-1. Under _SYSTEM SCOPE_, click _TensorFlow Image Auto Tagging Process_.
+1. Click the *Global Menu* &rarr; *Control Panel*
+1. Click *System Settings*.
+1. Click *Assets*.
+1. Under *SYSTEM SCOPE*, click *TensorFlow Image Auto Tagging Process*.
 1. Fill out the form.
-1. Click _Save_ to apply the settings.
+1. Click *Save* to apply the settings.
 
 The form asks for this information:
 
@@ -69,29 +71,29 @@ The TensorFlow provider has been configured.
 
 ## Configuring Google Cloud Vision
 
-1. Click the _Global Menu_ &rarr; _Control Panel_
-1. Click _System Settings_.
-1. Click _Assets_.
-1. Under _VIRTUAL INSTANCE SCOPE_, click _Google Cloud Vision Image Auto Tagging_.
+1. Click the *Global Menu* &rarr; *Control Panel*
+1. Click *System Settings*.
+1. Click *Assets*.
+1. Under *VIRTUAL INSTANCE SCOPE*, click *Google Cloud Vision Image Auto Tagging*.
 1. Enter your Google Cloud Vision API Key. For more information, see [Google's documentation on API keys](https://cloud.google.com/docs/authentication/api-keys).
-1. Check the _Enabled_ box to enable Google Cloud Vision.
+1. Check the *Enabled* box to enable Google Cloud Vision.
 
    ![The Google Cloud Vision provider requires an API key.](./auto-tagging-images/images/06.png)
 
-1. Click _Save_ when finished.
+1. Click *Save* when finished.
 
 ## Configuring Microsoft Cognitive Services
 
-1. Click the _Global Menu_ &rarr; _Control Panel_
-1. Click _System Settings_.
-1. Click _Assets_
-1. Under _VIRTUAL INSTANCE SCOPE_, click _Microsoft Cognitive Services Image Auto Tagging_.
+1. Click the *Global Menu* &rarr; *Control Panel*
+1. Click *System Settings*.
+1. Click *Assets*
+1. Under *VIRTUAL INSTANCE SCOPE*, click *Microsoft Cognitive Services Image Auto Tagging*.
 1. Fill out the form.
-1. Check the _Enabled_ box.
+1. Check the *Enabled* box.
 
     ![The Microsoft Cognitive Services provider requires an API key and an endpoint.](./auto-tagging-images/images/07.png)
 
-1. Click _Save_ when finished.
+1. Click *Save* when finished.
 
 The form asks for this information:
 
@@ -101,9 +103,9 @@ The form asks for this information:
 
 The Microsoft Cognitive Services provider has been configured. For more information, see the [Microsoft Cognitive Services documentation](https://docs.microsoft.com/en-us/azure/cognitive-services/).
 
-If you have more than one virtual instance, you can configure each instance individually. Navigate to the _Control Panel_ &rarr; _Instance Settings_. Click _Assets_ then configure the provider there.
+If you have more than one virtual instance, you can configure each instance individually. Navigate to the *Control Panel* &rarr; *Instance Settings*. Click *Assets* then configure the provider there.
 
 ## Related Topics
 
-* [Configuring Asset Auto Tagging](./configuring-asset-auto-tagging.md)
-* [Auto Tagging Assets](./auto-tagging-assets.md)
+- [Configuring Asset Auto Tagging](./configuring-asset-auto-tagging.md)
+- [Auto Tagging Assets](./auto-tagging-assets.md)

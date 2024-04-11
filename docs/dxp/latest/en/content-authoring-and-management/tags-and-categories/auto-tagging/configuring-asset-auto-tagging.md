@@ -7,13 +7,13 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: 48c633fe-df2d-4f68-a630-cc85c8d1e33a
 ---
+
 # Configuring Asset Auto Tagging
 
 [Tagging assets](../tagging-content-and-managing-tags.md) is a great way to organize content. Typically, the content creator manually applies tags during creation, but you can configure Liferay to tag content automatically. For example, you can scan an image on upload and apply tags that describe the image's content. 
 
-```{note}
+!!! note
 Currently, auto tagging only works for images, text-based documents, text-based web content, and blog entries. See [Auto Tagging Assets](./auto-tagging-assets.md) and [Auto Tagging Images](./auto-tagging-images.md) for more information.
-```
 
 Auto tagging is enabled by default. You can configure it at three levels:
 

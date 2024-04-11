@@ -11,7 +11,7 @@ taxonomy-category-names:
 
 # Configuring Liferay Authentication With Okta Using OpenId Connect
 
-Liferay has its own robust authentication methods, but supports integrations with many external authentication services This tutorial guides you through the basic steps needed to integrate Okta, your Identity Provider (IdP), with your environment using OpenID Connect.
+Liferay has its own robust authentication methods, but supports integrations with many external authentication services. This tutorial guides you through the basic steps needed to integrate Okta, your Identity Provider (IdP), with your environment using OpenID Connect.
 
 ## Prerequisites
 

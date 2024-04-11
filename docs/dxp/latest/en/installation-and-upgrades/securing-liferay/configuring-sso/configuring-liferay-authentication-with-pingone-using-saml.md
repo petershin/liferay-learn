@@ -11,9 +11,10 @@ taxonomy-category-names:
 
 # Configuring Liferay Authentication With PingOne Using SAML
 
-This tutorial guides you through the basic steps needed to integrate PingOne, your Identity Provider (IdP), with your Liferay environment using Security Assertion Markup Language (SAML). The use of an external authentication service is a best practice we endorse. Integrating an IdP into your environment simplifies user authentication without compromising security standards.
+Liferay has its own robust authentication methods, but supports integrations with many external authentication services. This tutorial guides you through the basic steps needed to integrate PingOne, your Identity Provider (IdP), with your Liferay environment using Security Assertion Markup Language (SAML).
 
 ## Prerequisites
+
 - PingOne environment
 - Liferay DXP environment
 - A user who has administrative access to PingOne environment
@@ -31,9 +32,9 @@ This tutorial guides you through the basic steps needed to integrate PingOne, yo
 
     1. Application Name: Liferay DXP - SAML
 
-    1. Description: (Optional) You can give a description to your application
+    1. Description: (Optional) Enter a description
 
-    1. Icon: (Optional) You can upload the Liferay logo
+    1. Icon: (Optional) Upload an icon
 
     1. Application Type: SAML Application
 
@@ -41,7 +42,7 @@ This tutorial guides you through the basic steps needed to integrate PingOne, yo
 
 1. Click *Configure*.
 
-1. In the SAML Configuration section, manually enter your application metadata.
+1. In the SAML Configuration section, enter your application metadata.
 
     1. Provide Application Metadata: select `Manually Enter`
 
@@ -82,7 +83,7 @@ This tutorial guides you through the basic steps needed to integrate PingOne, yo
 1. Click *Save*.
 
     !!! note
-        Create your users by navigating to Directory &rarr; Users.
+    Create your users by navigating to Directory &rarr; Users.
 
 1. Navigate to the *Configuration* tab, and download the Metadata .xml file. We will use it while configuring Liferay DXP
 
@@ -92,9 +93,7 @@ This tutorial guides you through the basic steps needed to integrate PingOne, yo
 
 ## Liferay DXP Configuration
 
-1. Start your Liferay DXP instance.
-
-1. Navigate to *Control Panel* &rarr; *Security* &rarr; *SAML Admin*.
+1. On your Liferay DXP instance, navigate to *Control Panel* &rarr; *Security* &rarr; *SAML Admin*.
 
 1. Set the SAML Role to *Service Provider*, and Entity ID to *samlsp*. Click *Save*.
 
@@ -155,7 +154,7 @@ This tutorial guides you through the basic steps needed to integrate PingOne, yo
 
 ## Conclusion
 
-Congratulations! You have successfully completed this Solution Tutorial. By now, you should be able to integrate PingOne through SAML and authenticate users to your environment through it.
+Congratulations! Users may now authenticate to your environment by using PingOne.
 
 ## Tips and Troubleshooting
 
@@ -164,11 +163,3 @@ Congratulations! You have successfully completed this Solution Tutorial. By now,
 If you encounter `ErrorCode: INVALID_ACS_URL`, verify that your ACS URLs are configured correctly in PingOne with the appropriate path and Hypertext Transfer Protocol (HTTP or HTTPS). You can find them in your PingOne account by navigating to the application you created &rarr; *Configuration* tab &rarr; *Edit icon*.
 
 ![INVALID_ACS_URL error when trying to sign in to Liferay.](./configuring-liferay-authentication-with-pingone-using-saml/images/10.png)
-
-
-<!--
-Hey JR,
-
-For some reason that I don't know, when I create a user in Liferay, than add that user to PingOne users (with the same email and username) and try signing in through PingOne, an alert pops up saying that the email is incomplete or invalid. See image below
-
-![user has to be created in PingOne first to log in through SAML](./configuring-liferay-authentication-with-pingone-using-saml/images/this-will-be-deleted.png) -->

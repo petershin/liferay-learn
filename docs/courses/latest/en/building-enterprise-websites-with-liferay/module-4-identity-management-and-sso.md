@@ -14,22 +14,22 @@ uuid: 57aef6ee-03e9-4056-abf1-ebdbdb4984e4
     * View the [recording](https://learn.liferay.com/web/guest/d/lp1-4-identity-management-sso) from the live webinar of this module.
     * Download the [PDF](https://learn.liferay.com/documents/d/guest/lp1-4-identity-management-sso-pdf) of the presentation used in the live workshop.
 
-Before we can get started with building Clarity’s website, we’ll first need to get logged in and ensure that other content contributors can also get logged in. *Identity Management* (IdM), plays an important role in any enterprise software project, even when building an Enterprise Website such as Clarity. This may seem counterintuitive, because the main audience of the site will initially be anonymous users browsing public pages. However, there will be a small team of Clarity employees that will be logging into the system to create and maintain the content. Additionally, Clarity has some B2B partners with existing user accounts from their previous platform and aims to enable new distributors to create accounts for a more personalized experience.
+Before we can get started with building Clarity’s website, we’ll first need to get logged in and ensure that other content contributors can also get logged in. *Identity Management* (IdM), plays an important role in any enterprise software project, even when building an enterprise website such as Clarity. This may seem counterintuitive, because the main audience of the site will initially be anonymous users browsing public pages. However, there is still a team of Clarity employees that need to log in to the system to create and maintain the content. Additionally, Clarity has some B2B partners with existing user accounts from their previous platform and aims to enable new distributors to create accounts for a more personalized experience.
 
 When we talk about identity management in the context of Liferay, we’re talking about providing the ability to manage users and provide those users with the ability to authenticate to the portal to access protected resources. *Single Sign-On*, or SSO, is a complementary topic in which users who are authenticated can access multiple systems or resources with the same set of credentials.
 
-In many enterprises today, there are already systems managing both identity and authentication. The good news is that not only does Liferay provides robust identity management and single sign-on capabilities but also supports integration with many leading IdM and SSO services and protocols.
+In many enterprises today, there are already systems managing both identity and authentication. The good news is that Liferay not only provides robust identity management and single sign-on capabilities but also supports integration with many leading IdM and SSO services and protocols.
 
 ![Logos of IdMs and SSOs Liferay is compatible with](./module-4-identity-management-and-sso/images/01.png)
 
-Additionally, Liferay also supports scenarios where different types of users are managed by different identity management systems and authentication mechanisms.
+Liferay also supports scenarios where different types of users are managed by different identity management systems and authentication mechanisms.
 
 Identity management and single sign-on can be a pretty big topics, so before we get into the details, let’s examine the scope of this module and understand Clarity’s business needs.
 
 ## Clarity's Requirements
 
 !!! important "Key Decision"
-    Identity management and single sign on requirements will vary greatly depending on the type of solution you are building and the organization that you are building it for. For example, the needs of a public facing, marketing website are going to be very different from the needs of a B2B Supplier portal, and similarly the needs of a financial services organization whose employees are based in offices and have their own workstation to access multiple systems and applications might be very different from the needs of a services organization with a mobile workforce who only have access to a single mobile app on a company issued tablet. Finally, how, where, and how many users you have and expect to authenticate can also be a significant design and implementation factor when thinking about how to optimize site performance and scalability.
+    Identity management and single sign-on requirements will vary greatly depending on the type of solution you are building and the organization that you are building it for. For example, the needs of a public facing, marketing website are going to be very different from the needs of a B2B supplier portal, and similarly the needs of a financial services organization whose employees are based in offices and have their own workstation to access multiple systems and applications might be very different from the needs of a services organization with a mobile workforce who only have access to a single mobile app on a company issued tablet. Finally, how, where, and how many users you have and expect to authenticate can also be a significant design and implementation factor when thinking about how to optimize site performance and scalability.
 
 Let's summarize Clarity's requirements related to identity management & single sign-on:
 

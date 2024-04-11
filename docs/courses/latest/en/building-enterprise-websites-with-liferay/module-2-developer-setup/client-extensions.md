@@ -7,11 +7,11 @@ Client Extensions are the recommended way to customize and extend Liferay. You c
 
 <!--IMAGE: diagram of how Client Extensions interface with Liferay-->
 
-You can use Liferay Workspace to develop and deploy your own client extensions, which you will explore further in *Module 10: Building Applications*.
+You can use your Liferay Workspace to develop and deploy your own client extensions, which you will explore further in [Module 10 - Building Applications](../module-10-building-applications.md).
 
 ## Types of Client Extensions
 
-There are four classifications of Liferay client extensions:
+There are four types of Liferay client extensions:
 
 1. **Batch** client extensions provide data entities to your Liferay instance, such as object or workflow definitions.
 
@@ -34,7 +34,7 @@ Client extensions can be grouped in a single project and deployed together as a 
 
 <!--IMAGE: diagram showing valid groupings for client extensions may be helpful here-->
 
-Client extension projects are built with Gradle and deployed with the Liferay Cloud CLI, which you installed in the previous section, [Liferay Workspace](./liferay-workspace.md).
+Client extension projects are built with Gradle and deployed with the Liferay Cloud CLI, which you installed in the previous lesson, [Liferay Workspace](./liferay-workspace.md).
 
 Congratulations! You've completed Module 2 - Developer Setup.
 

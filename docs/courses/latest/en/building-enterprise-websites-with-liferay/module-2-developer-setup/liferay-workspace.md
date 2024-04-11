@@ -3,7 +3,7 @@ uuid: a4730247-c6d1-49b6-b8e5-4f2c6616e585
 ---
 # Liferay Workspace
 
-Liferay Workspace is an environment designed to handle the full development life cycle—create, build, deploy, test—for Liferay DXP projects. Because it is implemented with Gradle scripts and plugins, Liferay Workspace integrates seamlessly with any IDE or development tool. It also works hand-in-hand with Liferay's CLI utilities: *Blade CLI*, which exists to manage workspaces and projects, and the *Liferay Cloud CLI*, which exists to manage Cloud services and deploy client extensions to the Cloud Platform.
+Liferay Workspace is an environment designed to handle the full development life cycle (i.e. create, build, deploy, test) for Liferay DXP projects. Because it is implemented with Gradle scripts and plugins, Liferay Workspace integrates seamlessly with any IDE or development tool. It also works hand-in-hand with Liferay's CLI utilities: *Blade CLI*, which exists to manage workspaces and projects, and the *Liferay Cloud CLI*, which exists to manage Cloud services and deploy client extensions to the Cloud Platform.
 
 <!-- IMAGE: Include diagram image representing Liferay Workspace's folders and scripts structure. -->
 

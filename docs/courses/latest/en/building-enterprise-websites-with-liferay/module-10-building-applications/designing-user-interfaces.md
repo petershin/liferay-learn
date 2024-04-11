@@ -8,7 +8,7 @@ Liferay gives you the tools for creating dynamic and responsive user interfaces 
 Originally, Clarity's distributor application solution used standard object layouts and views. While these are serviceable for administrative users, they have limited customization options. Clarity has instead used Liferay's page building tools to integrate the distributor application with the website's user interface. You can see what these pages look like below.
 
 !!! info "Article under Development"
-    We are working to update this article with additional content and exercises to guide you through Clarity's UI changes for the distributor application. You can expect these changes in April 2024. Thank you for your patience and please check back soon!
+    We are working to update this article with additional content and exercises to guide you through Clarity's UI changes for the distributor application. Thank you for your patience and please check back soon!
 
 ## Start Application Page
 

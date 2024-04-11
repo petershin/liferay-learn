@@ -3,7 +3,7 @@ uuid: 5a6706c2-05f9-4d7c-8b41-a8f69516694d
 ---
 # Liferay Deployment Options
 
-As the decision maker for Clarity, one of the first important choices you must make is the deployment approach you will take with Liferay. The Liferay DXP platform is available in three different deployment approaches: Liferay SaaS, Liferay PaaS, and Liferay Self-Hosted.
+The Liferay DXP platform is available in three different deployment approaches: Liferay SaaS, Liferay PaaS, and Liferay Self-Hosted. This is one of the first important decisions Clarity needs to make as they start planning to build enterprise websites with Liferay. 
 
 ![The three Liferay deployment approaches, Liferay SaaS, Liferay PaaS, and Liferay Self-Hosted](./liferay-deployment-options/images/01.png)
 
@@ -26,7 +26,7 @@ With the self-hosted approach, Liferay provides just the Liferay DXP software. I
 * and of course...
 * Solution Development: the actual building of the enterprise Site that the Clarity company wants to build
 
-The biggest positive to this approach is that you have full control of your Liferay DXP deployment and you have every tool available to you for development and customization. Of course, this can backfire as some methods of customization can make future upgrades extremely challenging. If this is a deployment approach that you're interested in, there is a wealth of documentation and tutorials available for you to follow in order to correctly stand up a Liferay Self-Hosted deployments. See the documentation to learn more:
+The biggest positive to this approach is that you have full control of your Liferay DXP deployment and you have every tool available to you for development and customization. Of course, this can also lead to future challenges when it comes to maintaining upgrades with these customizations. If this is a deployment approach that you're interested in, there is a wealth of documentation and tutorials available for you to follow in order to correctly stand up a Liferay Self-Hosted deployments. See the documentation to learn more:
 
 * [Installation and Upgrades](https://learn.liferay.com/w/dxp/installation-and-upgrades)
 * [Installing and Upgrading a Search Engine](https://learn.liferay.com/w/dxp/using-search/installing-and-upgrading-a-search-engine)
@@ -51,7 +51,7 @@ Furthermore, with Liferay PaaS, Liferay's cloud infrastructure includes features
 
 Learn more about the Liferay PaaS and working with its cloud infrastructure tools in the [Liferay Cloud documentation](https://learn.liferay.com/web/guest/w/liferay-cloud/index).
 
-While Liferay PaaS takes care of the cloud infrastructure and core platform updates, you'll still need to handle Liferay DXP upgrades, patch implementation, and security hotfix application. All of this maintenance and management can still represent a hefty workload that Clarity is not interested in.
+While Liferay PaaS takes care of the cloud infrastructure and core platform updates, you'll still need to handle Liferay DXP upgrades, patch implementation, and security hotfix application. All of this maintenance and management can still represent a hefty overhead that Clarity is not interested in.
 
 Finally, let's evaluate Liferay SaaS.
 
@@ -71,9 +71,9 @@ With this deployment approach Liferay provides:
 
 ![Liferay SaaS is fully managed for you.](./liferay-deployment-options/images/03.png)
 
-Liferay takes care of the full tech stack including the web server running Liferay, the database, search, and file storage. Each Liferay SaaS account comes with a production (`PRD`) Liferay environment as well as a test (`UAT`) Liferay environment. 
+Liferay takes care of the full tech stack including the web server running Liferay, the database, search, and file storage. Each Liferay SaaS account comes with a production (`PRD`) Liferay environment as well as a test (`UAT`) Liferay environment.
 
-Client extension environments are also provided for custom development and customizations. Custom development is done through the use of Liferay Workspace and Client Extensions, both topics that are covered briefly in [Module 2](../module-2-developer-setup.md) and later applied in [Module 9](../module-9-search.md). A VPN client is also available in these extension environments to enable client extensions to integrate to systems within your own data center.
+Client extension environments are also provided for custom development and customizations. Custom development is done through the use of Liferay Workspace and Client Extensions, both topics that are covered briefly in [Module 2 - Developer Setup](../module-2-developer-setup.md) and later applied in [Module 10 - Building Applications](../module-10-building-applications.md). A VPN client is also available in these extension environments to enable client extensions to integrate to systems within your own data center.
 
 With Liferay SaaS, backups and upgrades are fully managed and done for you. There is no need to update your environment or patch previous releases. You can rest assured that your Liferay application is always up-to-date with the latest releases.
 

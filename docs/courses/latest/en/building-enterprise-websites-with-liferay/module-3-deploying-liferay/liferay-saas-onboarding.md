@@ -3,7 +3,7 @@ uuid: aad2f09c-9d83-45a6-8c3d-30b4b39e5222
 ---
 # Liferay SaaS Provisioning
 
-After learning the benefits of Liferay DXP and the value of Liferay SaaS, Clarity Vision Solutions has signed up for a Liferay SaaS account. In this lesson we will review the Liferay SaaS onboarding process and what you can expect when starting with Liferay SaaS.
+After learning about the benefits of Liferay DXP and the value of Liferay SaaS, Clarity Vision Solutions has signed up for a Liferay SaaS account. In this lesson we will review the Liferay SaaS onboarding process and what you can expect when starting with Liferay SaaS.
 
 ## Initial Contact
 

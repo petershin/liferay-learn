@@ -12,7 +12,7 @@ uuid: 5d382dfe-d85b-409d-a0b7-0ea2bfaad155
     * View the [recording](https://learn.liferay.com/web/guest/d/lp1-3-deploying-liferay) from the live webinar of this module.
     * Download the [PDF](https://learn.liferay.com/documents/d/guest/lp1-3-deploying-liferay-pdf) of the presentation used in the live workshop.
 
-Liferay DXP is the enterprise-grade platform that has the capabilities that meet Clarity Vision Solutions' needs. Liferay DXP is available in three different deployment approaches, Liferay SaaS, Liferay PaaS, and Liferay Self-Hosted. As the decision maker for the Clarity organization, it is important for you to make an informed decision about which deployment approach will meet your business needs.
+Liferay DXP is the enterprise-grade platform that has the capabilities to meet Clarity Vision Solutions' needs. Liferay DXP is available in three different deployment approaches, Liferay SaaS, Liferay PaaS, and Liferay Self-Hosted. As Clarity considers these approaches, it is important to understand their business needs and how it will inform their decision.
 
 In this module you will learn:
 

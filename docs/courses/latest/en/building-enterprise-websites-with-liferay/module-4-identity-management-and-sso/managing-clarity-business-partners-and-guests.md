@@ -1,7 +1,6 @@
 ---
 uuid: 9bf15d62-c0a2-48af-9cb6-9197fca3b82c
 ---
-
 # Managing Clarity Business Partners and Guests
 
 Now that we have employees taken care of, we turn our attention to Clarity's business partners that will need to access the web site and unauthenticated guest visitors.
@@ -16,7 +15,7 @@ Clarity's business partner requirements:
 * Segment business partners based on type and industry
 * Maintain system performance
 
-Clarity works with a variety of business partners, including their distributors and suppliers, and eventually those business partners will need to log in to access special sections of the website. With this future need in mind, Clarity has asked that we provide this capability right from the beginning of the project. Additionally, they would like the ability to group or segment those business partners by their industry or type.
+Clarity works with a variety of business partners, including their distributors and suppliers, and eventually those business partners will need to log in to access special sections of the website. With this future need in mind, Clarity wants to enable this capability right from the beginning of the project. Additionally, they would like the ability to group or segment those business partners by their industry or type.
 
 And of course, they want to ensure that having additional users logging into the site doesn’t impact the overall site performance.
 
@@ -43,15 +42,15 @@ In the next module, [Module 5 - Users and Permissions](../module-5.md), we’ll 
 
 ## Addressing Anonymous Site Visitors
 
-Ok, now that we have Clarity's employees and business partners taken care of, let’s turn our attention to the other third of the equation, web site visitors. It’s important to note that these visitors won’t be logging in, so identity management in the traditional sense doesn’t apply to these users. However, we still want to consider what their user experience will look like.
+Ok, now that we have Clarity's employees and business partners taken care of, let’s turn our attention to the web site visitors. It’s important to note that these visitors won’t be logging in, so identity management in the traditional sense doesn’t apply to these users. However, we still want to consider what their user experience will look like.
 
-Since there is no need to authenticate anonymous site visitors, or guest users - there is no specific configuration we need to make for these users with regards to authentication. However, in latter modules we will be working to ensure that we can tailor personalized site experiences, even for this type of users.
+Since there is no need to authenticate anonymous site visitors, or guest users - there is no specific configuration we need to make for these users with regards to authentication. However, in latter modules we will be working to ensure that we can tailor personalized site experiences, even for this type of user.
 
 ## Conclusion
 
 Congratulations! You've completed Module 4 - Identity Management and SSO.
 
-Up Next: [Module 5 - Users and Permissions]()
+Up Next: [Module 5 - Users and Permissions](../module-5-users-and-permissions.md)
 
 ## Additional Resources
 

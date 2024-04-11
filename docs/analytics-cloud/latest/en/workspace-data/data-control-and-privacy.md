@@ -11,9 +11,9 @@ taxonomy-category-names:
 
 Analytics Cloud provides administrative tools for managing individual data and privacy. Use these tools to assist you in meeting General Data Protection Regulation (GDPR) requirements:
 
-* Requesting download of data helps with meeting the right to data portability.
-* Requesting deletion of a user helps with the right to be forgotten. 
-* Requesting suppression of a user helps with the right to restrict processing.
+- Requesting download of data helps with meeting the right to data portability.
+- Requesting deletion of a user helps with the right to be forgotten.
+- Requesting suppression of a user helps with the right to restrict processing.
 
 To access the tools, click *Settings* &rarr; *Data Control & Privacy*.
 
@@ -31,31 +31,28 @@ By default, event data and inactive anonymous individuals are retained for 13 mo
 
 1. Click *Change Period* to save.
 
-```{warning}
-You will permanently lose analytics data that has been recorded over 7 months ago when you make this change.
-```
+!!! warning
+    You will permanently lose analytics data that has been recorded over 7 months ago when you make this change.
 
 ## Request Log
 
 Manage and control collected data of individuals with this tool. New requests can be made to access individual data, delete individual data, or suppress individual data. For example, someone may contact you requesting their collected data be shared or deleted.
 
-```{important}
-When the suppress job type is selected, the user's analytics data is anonymized (i.e. their activities are no longer associated with the user but are treated as anonymous data). Therefore, the number of anonymous users may increase in your analytics dashboard (e.g. a suppressed user who visits your site with two different devices would be considered as two anonymous individuals).
+!!! important
+    When the suppress job type is selected, the user's analytics data is anonymized (i.e. their activities are no longer associated with the user but are treated as anonymous data). Therefore, the number of anonymous users may increase in your analytics dashboard (e.g. a suppressed user who visits your site with two different devices would be considered as two anonymous individuals).
 
-When the user that was suppressed is unsuppressed, previously collected data is restored to that user’s profile; however, activities recorded while suppressed remain anonymous. 
+    When the user that was suppressed is unsuppressed, previously collected data is restored to that user’s profile; however, activities recorded while suppressed remain anonymous. \
 
-When the delete job type is selected, the user's analytics data is anonymized, and the user's contact information that is synced with DXP is removed. If this user is unsuppressed later (i.e. re-synced with Analytics Cloud), the user is treated as a new user with no prior data.
-```
+    When the delete job type is selected, the user's analytics data is anonymized, and the user's contact information that is synced with DXP is removed. If this user is unsuppressed later (i.e. re-synced with Analytics Cloud), the user is treated as a new user with no prior data.
 
 To create a new request or view previous requests, click the *Manage* button.
 
 ![Create a new request or view previous requests.](./data-control-and-privacy/images/03.png)
 
-A log of previous requests appears. Use the filter function or search function to find a particular request. To download a ZIP file of a request, click the request's *Download* button. 
+A log of previous requests appears. Use the filter function or search function to find a particular request. To download a ZIP file of a request, click the request's *Download* button.
 
-```{note}
-A request to delete a user's data, suppress a user, or unsuppress a user requires processing time that could take up to 90 minutes to complete.
-```
+!!! note
+    A request to delete a user's data, suppress a user, or unsuppress a user requires processing time that could take up to 90 minutes to complete.
 
 To create a new request,
 
@@ -67,9 +64,9 @@ To create a new request,
 
 1. Enter an email address for the new request. A list of emails in a CSV file can also be uploaded.
 
-1. Click *Save* to process the request. 
+1. Click *Save* to process the request.
 
-Click the *Export Log* button on the main page to download a log of previous requests. 
+Click the *Export Log* button on the main page to download a log of previous requests.
 
 ![Click the Export Log button to download a log of previous requests.](./data-control-and-privacy/images/05.png)
 
@@ -81,7 +78,7 @@ Suppressing users excludes them from further identity resolution activities. Not
 
 ![View suppressed individuals or unsuppress individuals.](./data-control-and-privacy/images/06.png)
 
-Search the list of suppressed individuals by entering an email address. 
+Search the list of suppressed individuals by entering an email address.
 
 To unsuppress, locate the individual and click the *Unsuppress* button.
 
@@ -101,8 +98,11 @@ To suppress analytics data from being sent by a particular browser, set the foll
 window['ac_client_disable_tracking'] = true
 ```
 
-```{important}
-You must implement your own logic to persist user consent by using a cookie or by saving and loading from your database. Please make sure that the window variable described above is set before the client page is fully loaded.
-```
+!!! important
+    You must implement your own logic to persist user consent by using a cookie or by saving and loading from your database. Please make sure that the window variable described above is set before the client page is fully loaded.
 
-Visitors to your site can also choose to enable do not track from their browser. Learn more about the [do not track setting in browsers](https://allaboutdnt.com/). With this enabled no data is sent or collected by Analytics Cloud. 
+Visitors to your site can also choose to enable do not track from their browser. Learn more about the [do not track setting in browsers](https://allaboutdnt.com/). With this enabled no data is sent or collected by Analytics Cloud.
+
+## Related Topics
+
+- [Tracking Usage](../workspace-settings/tracking-usage.md)

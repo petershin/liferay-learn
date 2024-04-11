@@ -15,13 +15,7 @@ Discount rule types define conditions for evaluating when discounts are applied 
 
 ![Discount rule types available out-of-the-box.](./adding-a-new-discount-rule-type/images/01.png)
 
-## Overview
-
-1. [**Deploy an Example**](#deploy-an-example)
-1. [**Walk Through the Example**](#walk-through-the-example)
-1. [**Additional Information**](#related-topics)
-
-## Deploy an Example
+## Deploy an Example Discount Rule Type
 
 ```{include} /_snippets/run-liferay-portal.md
 ```
@@ -62,7 +56,7 @@ Then, follow these steps to deploy an example discount rule type on your Liferay
 
 Congratulations, you've successfully built and deployed a new discount rule type that implements `CommerceDiscountRuleType`.
 
-## Walk Through the Example
+## Anatomy of a Discount Rule Type
 
 There are two classes: a discount rule type class and a JSP contributor for a custom UI input. Follow these steps:
 

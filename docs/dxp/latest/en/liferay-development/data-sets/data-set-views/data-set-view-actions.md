@@ -1,4 +1,7 @@
 ---
+toc:
+  - ./data-sets-view-actions/data-set-view-item-actions.md
+  - ./data-sets-view-actions/data-set-view-creation-actions.md
 uuid: f4f19cd5-1077-4541-a836-aaeeeb1eeb08
 taxonomy-category-names:
     - Development and Tooling
@@ -12,7 +15,7 @@ taxonomy-category-names:
 {bdg-secondary}`Liferay DXP 2024.Q1 U112`
 {bdg-link-primary}`[Beta Feature](../../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
 
-While managing data set views, define actions to be used in the data set fragment. Currently, you can configure Link-type actions that redirect users to a specified URL.
+While managing data set views, define actions to be used in the data set fragment. With actions, users can delete, edit, or display the details of a single item in the data set or they can create new data or be redirected to a different location where they can create it.
 
 ## Adding Actions to the Data Set View
 
@@ -24,9 +27,9 @@ While managing data set views, define actions to be used in the data set fragmen
 
 1. Click the *Name* of the data set view to start editing it.
 
-1. Select the Actions tab and click *Add* (![Add button](../../../images/icon-add.png)); a page appears where you must configure your action before creating it.
+1. Select the Actions tab, open the [*Item Actions*](./data-set-view-actions/data-set-view-item-actions.md) or the [*Creation Actions*](./data-set-view-actions/data-set-view-creation-actions.md) tab, and click *Add* (![Add button](../../../images/icon-add.png)); a page appears where you must configure your action before creating it.
 
-Under the Display Options section,
+Under the Display Options section, you can find general settings common to all actions.
 
 ![Fill in the Label, localize it, and select an icon for your action.](./data-set-view-actions/images/01.png)
 
@@ -36,41 +39,21 @@ Under the Display Options section,
 
    <!-- Choose from a list of out-of-the-box icons or type in the name of an icon registered through the SVG sprite map client extension. The custom icon requires configuring the client extension. - This is to be added once the article about this client extension is on. Eric -->
 
-   If no icon is selected, the Action's label appears as text inside a button component.
+   !!! tip
+       When an item has a single action, its label appears as text inside a button component if no icon is selected.
+
+       Conversely, if multiple actions exist, an action icon (![Action icon](../../../images/icon-actions.png)) appears, revealing available actions on click.
 
    ![Use the action's label as text inside a button component or select an icon to show in your Data Set fragment instead.](./data-set-view-actions/images/02.png)
 
-Under the Action Behavior section,
+Under the Action Behavior section, select the action type. You can find specific configurations for each action you choose. See [Using Item Actions](./data-set-view-actions/data-set-view-item-actions.md) and [Using Creation Actions](./data-set-view-actions/data-set-view-creation-actions.md) to learn more about each action.
 
-![Use the Link type action and specify a URL for redirecting the user. Add a Headless Action Key, write a Confirmation Message, and choose the Message Type.](./data-set-view-actions/images/03.png)
-
-1. The Link Type is selected by default. Use it to send users to a specified URL once they click on the action button/icon.
-
-<!-- This will change once new features are introduced. There is talk of adding modals, panels, and buttons to create new elements. Then, I'll restructure this doc and add sections for each of those types. - Eric  -->
-
-1. Specify the URL for redirecting the user.
-
-1. (Optional) Enter a Headless Activation Key. With the activation key, administrators can associate an action to a headless endpoint (e.g. GET, POST, and DELETE).
-
-   If you want to create a button with an action to edit a document, use `replace` as the Headless Activation Key.
-
-   Find activation keys through your [API Explorer](../../../headless-delivery/consuming-apis/consuming-rest-services.md). See [Use Case: Using Actions to Edit Documents](./using-data-set-view-actions.md#use-case-using-actions-to-edit-documents) to learn more.
-
-   ![Use Headless Activation Keys to link an action to a headless endpoint.](./data-set-view-actions/images/04.png)
-
-   !!! important
-       As the action is associated with a headless endpoint, the user must have the necessary permissions to use the endpoint (e.g. to edit the document). Otherwise, the action is not shown.
-
-1. (Optional) Enter a Confirmation Message. The message appears before the action is executed.
-
-   No message appears if this field is left blank.
-
-   Choose the Message Type: Warning, Info, Secondary, Success, and Danger.
-
-Once you're done, users should be redirected to the selected URL once they click on the action button/icon.
+Once the action is configured, click *Save*.
 
 ## Related Topics
 
+- [Data Set View Item Actions](./data-set-view-item-actions.md)
+- [Data Set View Creation Actions](./data-set-view-actions/data-set-view-creation-actions.md)
 - [Data Set Views](../data-set-views.md)
 - [Creating Data Sets](../creating-data-sets.md)
 - [Data Set View Fields](./data-set-view-fields.md)

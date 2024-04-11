@@ -16,9 +16,9 @@ The Page Audit tool displays performance-related information about the server re
 
 You need, at least, two [permissions](../../users-and-permissions/roles-and-permissions.md) to view and use the Page Audit tool. Configure them under Site and Asset Library Administration &rarr; Site Builder &rarr; Pages:
 
-1. *Access in Site and Asset Library Administration* under General Permissions.
+1. *Access in Site and Asset Library Administration* under General Permissions
 
-1. *Update* permission under Pages.
+1. *Update* permission under Pages
 
 ![The Page Audit is a powerful tool that helps users identify performance-related problems and solve them.](./about-the-page-audit-tool/images/01.gif)
 

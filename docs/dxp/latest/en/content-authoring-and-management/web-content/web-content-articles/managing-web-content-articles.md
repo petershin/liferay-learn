@@ -37,6 +37,35 @@ In the info panel, the article's information is organized into two tabs: Details
 
 ![Select the article and click on the toggle info panel icon to access the info panel reference.](./managing-web-content-articles/images/02.png)
 
+## Web Content Article Visibility
+
+Web content articles can be viewed by guests or you can restrict their visibility to specific roles.
+
+You can set the article's visibility during creation or by setting the  View permission for that specific web content article.
+
+To set the article's visibility during creation,
+
+1. [Create a new web content article](./adding-a-basic-web-content-article.md)
+
+1. At the bottom right of the Properties tab, select a *Viewable by* option under Permissions: Anyone (Guest Role), Site Members, or Owner.
+
+   You can also set permissions for Guests and Site Members by clicking on *More Options*. See [Assigning Permissions to Web Content Articles](./assigning-permissions-to-web-content-articles.md) to learn more.
+
+   {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA126+` Set the permissions using the 
+
+   <!-- This article is under KM review and was added in LRDOCS-12873. It'll probably be published before. Eric -->
+
+![Set the article's visibility during creation using the Viewable by option under Permissions.](./managing-web-content-articles/images/03.png)
+
+After that, you can easily identify which articles are visible for guests and which ones are not.
+
+Articles with visibility restrictions have an icon (![]()) next to it.
+
+!!! tip
+    The xx icon is only shown in the List and Table views.
+
+
+
 ## Info Panel Details Tab
 
 The Details tab includes the following information about web content articles.
@@ -59,7 +88,7 @@ The Details tab includes the following information about web content articles.
 
 The Versions tab displays the 10 most recent versions of the selected web content article. To view all available versions, click the *View More* button at the bottom of the versions tab or click the article's *Actions* button (![Actions button](../../../images/icon-actions.png)) and select *View History*.
 
-![Click the article's Actions button and select View History to access configuration options for the versions.](./managing-web-content-articles/images/03.png)
+![Click the article's Actions button and select View History to access configuration options for the versions.](./managing-web-content-articles/images/04.png)
 
 | Option                                                 | Description                                                                                                                                                          |
 |:-------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -71,6 +100,6 @@ The Versions tab displays the 10 most recent versions of the selected web conten
 
 ## Related Topics
 
-* [Adding a Basic Web Content Article](./adding-a-basic-web-content-article.md)
-* [Filtering and Sorting Web Content Articles](./filtering-and-sorting-web-content-articles.md)
-* [Using Expiration and Review Dates in Web Content](./using-expiration-and-review-dates-in-web-content.md)
+- [Adding a Basic Web Content Article](./adding-a-basic-web-content-article.md)
+- [Filtering and Sorting Web Content Articles](./filtering-and-sorting-web-content-articles.md)
+- [Using Expiration and Review Dates in Web Content](./using-expiration-and-review-dates-in-web-content.md)

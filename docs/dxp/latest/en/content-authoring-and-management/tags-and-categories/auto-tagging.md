@@ -11,8 +11,9 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: a9274b09-7106-430d-927f-26472612acd4
 ---
+
 # Auto Tagging
 
-* [Configuring Asset Auto Tagging](./auto-tagging/auto-tagging-assets.md)
+* [Configuring Asset Auto Tagging](./auto-tagging/configuring-asset-auto-tagging.md)
 * [Auto Tagging Assets](./auto-tagging/auto-tagging-assets.md)
 * [Auto Tagging Images](./auto-tagging/auto-tagging-images.md)

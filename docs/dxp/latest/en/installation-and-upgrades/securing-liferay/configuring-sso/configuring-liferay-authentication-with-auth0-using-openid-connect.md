@@ -11,9 +11,10 @@ taxonomy-category-names:
 
 # Configuring Liferay Authentication With Auth0 Using OpenId Connect
 
-This tutorial guides you through integrating Auth0, your Identity Provider (IdP), with your Liferay environment using OpenID Connect. We endorse using an external authentication service, a best practice that simplifies user authentication while maintaining security. By integrating Auth0 with OpenID Connect, a trusted authentication protocol, employees can leverage Auth0's single sign-on feature to access applications seamlessly.
+This tutorial guides you through integrating Auth0, your Identity Provider (IdP), with your Liferay environment using OpenID Connect.
 
 ## Prerequisites
+
 - [Auth0](https://auth0.com) account
 - Liferay DXP environment
 - A user who has administrative access to Auth0's dashboard
@@ -50,7 +51,7 @@ This tutorial guides you through integrating Auth0, your Identity Provider (IdP)
 1. With the Auth0 configuration complete, you can now configure your Auth0 application to Liferay DXP.
 
 !!! note
-    Create your users by navigating to User Management &rarr; Users.
+    If you are testing and do not have any users, make sure to create your users by navigating to User Management &rarr; Users.
 
 ## Configuring the OpenID Connect Provider Connection
 
@@ -81,7 +82,7 @@ Now that Auth0 is configured, use Liferay's interface to set up the provider con
 
 Be sure to click *Save* to ensure your changes are preserved.
 
-Once that is done, OpenID Connect needs to be enabled. To enable the OpenId Connect:
+Once that is done, enable OpenID Connect. To enable the OpenId Connect:
 
 1. On your DXP instance, navigate to *Global Menu* &rarr; *Control Panel* &rarr; *Configuration* &rarr; *Instance Settings*.
 
@@ -113,7 +114,7 @@ Once that is done, OpenID Connect needs to be enabled. To enable the OpenId Conn
 
 ## Conclusion
 
-Congratulations! You have successfully completed this Solution Tutorial. By now, you should be able to integrate Auth0 with Liferay and authenticate users through it.
+Congratulations! Users may now authenticate to your environment by using Auth0.
 
 ## Tips and Troubleshooting
 

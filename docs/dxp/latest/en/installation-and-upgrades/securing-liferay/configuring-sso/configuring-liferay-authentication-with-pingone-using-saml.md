@@ -11,7 +11,7 @@ taxonomy-category-names:
 
 # Configuring Liferay Authentication With PingOne Using SAML
 
-Liferay has its own robust authentication methods, but supports integrations with many external authentication services. This tutorial guides you through the basic steps needed to integrate PingOne, your Identity Provider (IdP), with your Liferay environment using Security Assertion Markup Language (SAML).
+This tutorial guides you through the basic steps needed to integrate PingOne, your Identity Provider (IdP), with your Liferay environment using Security Assertion Markup Language (SAML).
 
 ## Prerequisites
 

@@ -19,11 +19,11 @@ The Documents and Media application provides integration with OpenAI's ChatGPT e
 
 ## Enabling AI Creator
 
-To begin, you must add an API key to authenticate your access to ChatGPT. You can [add it to a Liferay instance](#adding-an-api-key-to-a-liferay-instance) through *Instance Settings* or add it [to a specific site](#adding-an-api-key-to-a-specific-site).
+To begin, you must add an API key to authenticate your access to ChatGPT. You can [add it to a Liferay instance](#adding-an-api-key-to-a-liferay-instance) through Instance Settings or add it [to a specific site](#adding-an-api-key-to-a-specific-site).
 
 ### Adding an API Key to a Liferay Instance
 
-1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and navigate to the *Control Panel* tab &rarr; *Instance Settings* under Configuration.
+1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and navigate to *Control Panel* &rarr; *Instance Settings* under Configuration.
 
 1. Click *AI Creator* under Content and Data.
 
@@ -35,7 +35,7 @@ To begin, you must add an API key to authenticate your access to ChatGPT. You ca
 
 ### Adding an API Key to a Specific Site
 
-By adding an API key in the scope of a specific site, you can use different keys for each site or disable a key in a specific site.
+By adding an API key at the site scope, you can use different keys for each site or disable a key in a specific site.
 
 1. Open the *Product Menu* (![Product Menu icon](../../images/icon-product-menu.png)) and select *Configuration* &rarr; *Site Settings*.
 
@@ -52,32 +52,32 @@ By adding an API key in the scope of a specific site, you can use different keys
 
 ## Using The AI Creator
 
-After [enabling the feature flag and configuring the API Key](#enabling-ai-creator), the Create AI Image button becomes available wherever you can add a new image whether it's in your Documents and Media application (1) or through the item selector on the Documents and Media tab (e.g., when adding an image in your WYSIWYG editors) (2).
+After [enabling the feature flag and configuring the API Key](#enabling-ai-creator), the Create AI Image button becomes available wherever you can add a new image, either in your Documents and Media application (1) or through the item selector on the Documents and Media tab (e.g., when adding an image in your WYSIWYG editors) (2).
 
 ![After enabling the feature flag, you can see the Create AI Image option.](./generating-images-using-ai/images/01.png)
-
-To begin generating images in your Documents and Media application,
 
 1. Open the *Site Menu* (![Site Menu icon](../../images/icon-applications-menu.png)) and navigate to *Content & Data* &rarr; *Documents and Media*.
 
 1. Click *New* and select *Create AI Image*.
 
-1. In the modal window, fill in these three fields:
-
-   - **Description**: The prompt or textual description that outlines the desired content, theme, or concept for the generated image.
-   - **Image Size**: Choose an image size: 256x256, 512x512, or 1024x1024.
-   - **Number of Images to Generate**: Determine how many images you want to create per request, up to a maximum of four images.
+1. In the modal window, fill out the form (see below for field descriptions).
 
    !!! important
-       Each request to generate content consumes [OpenAI API tokens](https://help.openai.com/en/articles/4936856-what-are-tokens-and-how-to-count-them). When your limit is reached, a generic error message will appear.
+       Each request to generate content consumes [OpenAI API tokens](https://help.openai.com/en/articles/4936856-what-are-tokens-and-how-to-count-them). When you reach your limit, a generic error message appears.
 
    ![You can choose the content, the image size, and the number of images to generate.](./generating-images-using-ai/images/02.png)
 
 1. Click *Add Selected*.
 
-1. (Optional) If you don't like any of the AI-generated content, click *Try Again* to regenerate it.
+1. (Optional) If you don't like the AI-generated content, click *Try Again* to regenerate it.
 
    Note that regenerating the images replaces existing ones. If you wish to keep any of the current images, be sure to save them before starting the image generation process again.
+
+ **Description**: The prompt or textual description that outlines the desired content, theme, or concept for the generated image.
+
+ **Image Size**: Choose an image size: 256x256, 512x512, or 1024x1024.
+
+ **Number of Images to Generate**: Determine how many images you want to create per request, up to a maximum of four images.
 
 You can now begin using your generated images.
 

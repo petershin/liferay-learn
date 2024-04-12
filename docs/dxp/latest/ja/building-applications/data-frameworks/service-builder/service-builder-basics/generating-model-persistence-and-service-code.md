@@ -35,7 +35,7 @@ y7g4-api
 ```{literalinclude} ./generating-model-persistence-and-service-code/resources/liferay-y7g4.zip/y7g4-api/bnd.bnd
 ```
 
-`Bundle-`ヘッダーはモジュールアーティファクトを説明します。 `Export-Package`ヘッダーは公開するAPIパッケージを指定します。 bndメタデータの詳細とその使用方法については [モジュールプロジェクト](../../../liferay-internals/fundamentals/module-projects.md) を参照してください。
+`Bundle-`ヘッダーはモジュールアーティファクトを説明します。 `Export-Package`ヘッダーは公開するAPIパッケージを指定します。 bndメタデータの詳細とその使用方法については [モジュールプロジェクト](../../../../liferay-internals/fundamentals/module-projects.md) を参照してください。
 
 `build.gradle`ファイルは、モジュールのDXP/Portalへの依存を宣言します。
 
@@ -64,7 +64,7 @@ y7g4-service
 | :------- | :---------- |
 | `Liferay-Require-SchemaVersion: 1.0.0` | アプリケーションのデータスキーマバージョン。 データベーススキーマの変更を伴うアプリケーションのバージョンをリリースする場合、バージョンをインクリメントすることになります。 |
 | `Liferay-Service: true` | このモジュールはLiferay Serviceを提供します。 |
-| `-dsannotations-options: inherit` | OSGiサービスコンポーネントクラスは、クラス階層から [OSGi宣言型サービス](../../../liferay-internals/fundamentals/apis-as-osgi-services.md)のアノテーションを継承しています。 例えば、拡張クラスは `@Reference` アノテーションを介して、祖先のフィールドが参照するすべてのサービスにアクセスすることができます。 |
+| `-dsannotations-options: inherit` | OSGiサービスコンポーネントクラスは、クラス階層から [OSGi宣言型サービス](../../../../liferay-internals/fundamentals/apis-as-osgi-services.md)のアノテーションを継承しています。 例えば、拡張クラスは `@Reference` アノテーションを介して、祖先のフィールドが参照するすべてのサービスにアクセスすることができます。 |
 
 `build.gradle`ファイルはこちら：
 

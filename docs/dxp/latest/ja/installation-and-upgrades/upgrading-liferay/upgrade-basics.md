@@ -10,7 +10,7 @@ toc:
 Liferayのツールや説明書は、DXPやポータル環境を安全かつ迅速にアップグレードするのに役立ちます。 小さなデータセットを持つ非クラスター環境などは、[Dockerイメージ](./upgrade-basics/upgrading-via-docker.md)を使ってアップグレードすることができます。 複雑で、より大きなデータセットを持つ、または多くのカスタマイズがあるDXP環境およびポータル環境は、[データベースアップグレードツール](./upgrade-basics/using-the-database-upgrade-tool.md)を使用してアップグレードします。 [自動アップグレード](./upgrade-basics/upgrading-via-auto-upgrade.md) は、起動時に有効にすることもできます。
 
 ```{warning}
-アップグレードする前に、**必ず**データベースとインストールを[バックアップ](../../maintaining-a-liferay-installation/backing-up.md)してください。 バックアップコピーでアップグレードプロセスをテストすることをお勧めします。
+アップグレードする前に、**必ず**データベースとインストールを[バックアップ](../maintaining-a-liferay-installation/backing-up.md)してください。 バックアップコピーでアップグレードプロセスをテストすることをお勧めします。
 ```
 
 ```{note}

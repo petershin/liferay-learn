@@ -1,7 +1,7 @@
 # Kaleoフォーム
 
 ```{important}
-Kaleo Formsは、Liferay 7.4では[メンテナンスモード](../../installation-and-upgrades/upgrading-liferay/reference/maintenance-mode-and-deprecations-in-7-4.md)になっています。 可能であれば、[オブジェクト](../../../building-applications/objects.md)を使用してください。
+Kaleo Formsは、Liferay 7.4では[メンテナンスモード](../../../installation-and-upgrades/upgrading-liferay/reference/maintenance-mode-and-deprecations-in-7-4.md)になっています。 可能であれば、[オブジェクト](../../../building-applications/objects.md)を使用してください。
 ```
 
 Liferayの **Kaleoフォーム** ソリューションは、 **ワークフローデザイナー** と **動的データリスト** の特徴を組み合わせて、フォームベースのビジネスプロセスを作成します。 これを使えば、フォームとワークフロータスクを統合して、会議室のチェックアウトフォームやサポートチケットのプロセスなどを作成することができます。

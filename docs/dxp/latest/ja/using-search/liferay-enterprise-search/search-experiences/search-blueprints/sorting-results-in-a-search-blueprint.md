@@ -11,7 +11,7 @@
 ![JSONを入力して、ブループリントの結果を並べ替えます。](./sorting-results-in-a-search-blueprint/images/01.png)
 
 ```{important}
-* 検索ページでソートを設定するために、[Sort widget](../../search-pages-and-widgets/search-results/sorting-search-results.md) と検索ブループリントの両方を使用することは避けてください。 Liferayは一貫した動作を保証できません。
+* 検索ページでソートを設定するために、[Sort widget](../../../search-pages-and-widgets/search-results/sorting-search-results.md) と検索ブループリントの両方を使用することは避けてください。 Liferayは一貫した動作を保証できません。
 
 * 以下の例は簡単なものです。 堅牢なソート構成は、あらゆるシナリオを考慮する必要があります。 例えば、検索結果ドキュメントにソートフィールドが含まれていない場合、 [`missing`](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/sort-search-results.html#_missing_values) パラメーターを使用してソートの動作を設定することができます。
 

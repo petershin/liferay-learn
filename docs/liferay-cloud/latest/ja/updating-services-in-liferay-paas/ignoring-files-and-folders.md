@@ -42,4 +42,4 @@ Liferay Cloud では、サービスをデプロイする前に、どのファイ
 ## 関連トピック
 
 * [Liferay DXPサービスの使用](../customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service.md)
-* [Liferay サービスを設定する](../customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.md)
+* [Liferay サービスを設定する](../customizing-liferay-dxp-in-the-cloud/configuring-the-liferay-dxp-service.md)

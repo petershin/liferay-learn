@@ -12,14 +12,14 @@ Liferayの様々な機能やツールを使って、あなたのビジネスニ�
 :gutter: 3 3 3 3
 
 :::{grid-item-card}  カスタム発券システムの構築
-:link: ./tutorialss/building-a-custom-ticketing-system.md
+:link: ./tutorials/building-a-custom-ticketing-system.md
 :::
 
 :::{grid-item-card}  Time Off Requestの構築
-:link: ./tutorialss/building-a-time-off-requester.md
+:link: ./tutorials/building-a-time-off-requester.md
 :::
 
 :::{grid-item-card}  Reactチャートでのオブジェクトデータの使用
-:link: ./tutorialss/using-object-data-with-react-charts.md
+:link: ./tutorials/using-object-data-with-react-charts.md
 :::
 ::::

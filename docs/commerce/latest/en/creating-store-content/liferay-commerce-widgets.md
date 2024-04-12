@@ -24,7 +24,7 @@ taxonomy-category-names:
 :::
 
 :::{grid-item-card}  Using the Price Range Facet Widget
-:link: /liferay-commerce-widgets/using-the-price-range-facet-widget.md
+:link: ./liferay-commerce-widgets/using-the-price-range-facet-widget.md
 :::
 
 :::{grid-item-card}  Using the Product Downloads Widget

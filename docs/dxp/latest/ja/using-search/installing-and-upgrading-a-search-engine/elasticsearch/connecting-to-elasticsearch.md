@@ -104,7 +104,7 @@ Liferay 7.2では、バンドルされているコネクタアプリケーショ
     Liferayサーバーを起動すると（まだ起動していない場合）、Liferayはこのファイルを読み取り、宣言されたバンドルの起動をブロックします。
 
     ```{tip}
-    **Docker:** `Liferay Home` と Liferay インストールの他の重要なフォルダは、Docker コンテナの `/mnt/liferay` で [here](../../installation-and-upgrades/installing-liferay/using-liferay-docker-images/container-lifecycle-and-api.md#api) と記述してアクセスすることが可能です。 `docker cp /path/to/local/file [container_name]:/mnt/liferay/files/osgi/configs` でコンテナに設定ファイルを配置することができます。 その後、`docker cp` を使って Liferay Connector to Elasticsearch 7 LPKGファイルをデプロイすることができます。
+    **Docker:** `Liferay Home` と Liferay インストールの他の重要なフォルダは、Docker コンテナの `/mnt/liferay` で [here](../../../installation-and-upgrades/installing-liferay/using-liferay-docker-images/container-lifecycle-and-api.md#api) と記述してアクセスすることが可能です。 `docker cp /path/to/local/file [container_name]:/mnt/liferay/files/osgi/configs` でコンテナに設定ファイルを配置することができます。 その後、`docker cp` を使って Liferay Connector to Elasticsearch 7 LPKGファイルをデプロイすることができます。
     ```
 
 ### Elasticsearch 7コネクタのインストール

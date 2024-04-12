@@ -27,7 +27,7 @@ Liferayインスタンスから切り離された状態でデータベースを�
 
 1. DXPアクティベーションキー(Subscription)と[OSGi設定ファイル](../../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md)を [バックアップ](../../maintaining-a-liferay-installation/backing-up.md#liferay-home) から新しいインストールにコピーします。
 
-1. 7.2にアップグレードする場合は、新しいインストールの`[Liferay Home]/files/osgi/configigs/`フォルダにある[設定ファイル](../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md)を使って検索インデックスを無効にします。例えば、こうだ、
+1. 7.2にアップグレードする場合は、新しいインストールの`[Liferay Home]/files/osgi/configigs/`フォルダにある[設定ファイル](../../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md)を使って検索インデックスを無効にします。例えば、こうだ、
 
     ```bash
     cd liferay-home

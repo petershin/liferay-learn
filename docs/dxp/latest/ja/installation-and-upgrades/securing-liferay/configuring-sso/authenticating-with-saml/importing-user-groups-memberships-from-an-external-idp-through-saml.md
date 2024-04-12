@@ -147,7 +147,7 @@ Liferay インスタンスにアクセスし、 **Sign In** をクリックし�
    ![ログインに成功すると、ユーザーはLiferayユーザーグループに追加されます。](./importing-user-group-memberships-from-an-external-idp-through-saml/images/07.png)
 
 ```{important}
-ユーザーは、すでに存在している場合のみ、自動的にユーザーグループに割り当てられます。 LiferayのユーザーグループがOktaのグループに対応していることを確認してください。 Oktaがグループ情報を送信し、対応するユーザーグループがLiferayに存在しない場合、その属性は無視されます。 ユーザー・グループの作成と管理方法については、[ユーザー・グループの作成と管理](../../../users-and-permissions/user-groups/creating-and-managing-user-groups.md)を参照してください。 
+ユーザーは、すでに存在している場合のみ、自動的にユーザーグループに割り当てられます。 LiferayのユーザーグループがOktaのグループに対応していることを確認してください。 Oktaがグループ情報を送信し、対応するユーザーグループがLiferayに存在しない場合、その属性は無視されます。 ユーザー・グループの作成と管理方法については、[ユーザー・グループの作成と管理](../../../../users-and-permissions/user-groups/creating-and-managing-user-groups.md)を参照してください。 
 
 サインイン後にLiferayでユーザーを他のユーザーグループに割り当てると、これらのメンバーシップは次回IdP経由でログインしたときに上書きされます。 
 ```

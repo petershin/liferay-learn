@@ -10,7 +10,7 @@ VPN接続が設定されると、環境のログページで、ドロップダ�
 
 ![［VPN Logs］を選択すると、自分の環境での最近のVPNアクティビティが表示されます。](./vpn-integration-overview/images/02.png)
 
-詳細は、 [VPNサーバーの制限](../../reference/platform-limitations.md#vpn-servers) のセクションを参照してください。
+詳細は、 [VPNサーバーの制限](../reference/platform-limitations.md#vpn-servers) のセクションを参照してください。
 
 ## 設定
 

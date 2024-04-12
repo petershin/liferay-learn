@@ -1,6 +1,6 @@
 # Headless API を検索
 
-`{bdg-link-primary}` [ベータ機能](../../システム管理/liferay/feature-flags.md#beta-feature-flags) `
+`{bdg-link-primary}` [ベータ機能](../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags) `
 
 {bdg-secondary}`7.4 U88+ および GA88+`
 

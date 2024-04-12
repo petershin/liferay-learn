@@ -9,12 +9,12 @@ Liferay クラウドには、 [プライベートネットワーク](../configur
 ![Figure 1: The Web Application Firewall protects against common attacks.](./web-application-firewall/images/01.png)
 
 ```{note}
-カスタムファイアウォールルールは、 [共有クラスタサブスクリプション](../../reference/platform-limitations.md#security) では使用できません。
+カスタムファイアウォールルールは、 [共有クラスタサブスクリプション](../reference/platform-limitations.md#security) では使用できません。
 ```
 
 ## ModSecurityの有効化
 
-ModSecurityはデフォルトで無効になっています。 これを有効にするには、`LCP_WEBSERVER_MODSECURITY` [環境変数](../../platform-services/web-server-service.md#environment-variables) をプロジェクトリポジトリの `webserver/LCP.json` ファイルに追加する。 攻撃検知ルールは、ModSecurityが有効な場合のみ処理されます。 [](#adding-attack-detection-rules) 独自のルールを追加する必要がある。
+ModSecurityはデフォルトで無効になっています。 これを有効にするには、`LCP_WEBSERVER_MODSECURITY` [環境変数](../platform-services/web-server-service.md#environment-variables) をプロジェクトリポジトリの `webserver/LCP.json` ファイルに追加する。 攻撃検知ルールは、ModSecurityが有効な場合のみ処理されます。 [](#adding-attack-detection-rules) 独自のルールを追加する必要がある。
 
 これらの値は `LCP_WEBSERVER_MODSECURITY` で使用できる：
 
@@ -28,7 +28,7 @@ ModSecurityはデフォルトで無効になっています。 これを有効�
 環境変数 `LCP_WEBSERVER_MODSECURITY` は ModSecurity の [`SecRuleEngine` ディレクティブ](https://github.com/SpiderLabs/ModSecurity/wiki/Reference-Manual-%28v3.x%29#SecRuleEngine) と同じです。
 ```
 
-ModSecurity を有効にするには、`LCP_WEBSERVER_MODSECURITY` の値を `On` または `DetectionOnly` に設定してから、 [変更を配置する](../../updating-services-in-liferay-paas/deploying-changes-via-the-cli-tool.md) 。
+ModSecurity を有効にするには、`LCP_WEBSERVER_MODSECURITY` の値を `On` または `DetectionOnly` に設定してから、 [変更を配置する](../updating-services-in-liferay-paas/deploying-changes-via-the-cli-tool.md) 。
 
 ## ModSecurityの設定を変更する
 
@@ -64,7 +64,7 @@ ModSecurityにOWASP CRSを追加するには：
 /etc/nginx/modsec/rules/*.conf
 ```
 
-1. ファイルをリポジトリにコミットし、 [変更をデプロイする](../../updating-services-in-liferay-paas/deploying-changes-via-the-cli-tool.md) 。
+1. ファイルをリポジトリにコミットし、 [変更をデプロイする](../updating-services-in-liferay-paas/deploying-changes-via-the-cli-tool.md) 。
 
 [ModSecurity](#enabling-modsecurity) を有効にすると、ルールセットは解釈される。
 

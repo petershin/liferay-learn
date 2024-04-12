@@ -46,4 +46,4 @@ Googleのドキュメントに記載されているように、一部のデー�
 * [データベースのユーザー名の変更](./changing-your-database-username.md)
 * [データベースパスワードの変更](./changing-your-database-password.md)
 * [データベースサービスの制限事項](../../reference/platform-limitations.md#database-service)
-* [MySQLクライアントの使用](../../customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/using-the-mysql-client.md)
+* [MySQLクライアントの使用](../../customizing-liferay-dxp-in-the-cloud/using-the-mysql-client.md)

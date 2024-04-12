@@ -1,7 +1,7 @@
 # テキスト埋め込みプロバイダーの設定
 
 {bdg-secondary}`7.4 U70+`
-{bdg-link-primary}`[ベータ版機能](../../../システム管理/設定-liferay/feature-flags.md)`
+{bdg-link-primary}`[ベータ版機能](../../../../system-administration/configuring-liferay/feature-flags.md)`
 
 テキスト埋め込みプロバイダーには、2つの仕事があります：
 

@@ -403,7 +403,7 @@ W3C HTML 標準によると、カスタム要素は自己終了できません�
 
 ## ボタンをアクション対応にする
 
-`data-lfr-editable-id="action"`と`data-lfr-editable-type="action"`属性をボタンタグに含めることで、ボタンコンポーネントを使用して[オブジェクトアクション](../../../building-applications/objects/creating-and-managing-objects/actions.md)をトリガーすることができます。data-lfr-editable-id`は一意なIDでなければなりません：
+`data-lfr-editable-id="action"`と`data-lfr-editable-type="action"`属性をボタンタグに含めることで、ボタンコンポーネントを使用して[オブジェクトアクション](../../../../building-applications/objects/creating-and-managing-objects/actions.md)をトリガーすることができます。data-lfr-editable-id`は一意なIDでなければなりません：
 
 ```html
 <button class="btn btn-${configuration.buttonSize} btn-${configuration.buttonType}" data-lfr-editable-id="action" data-lfr-editable-type="action">

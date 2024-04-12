@@ -282,7 +282,7 @@ JSON出力には、`items`セクションの下のパーミッションが含ま
 ```
 
 ```{note}
-パーミッションの管理方法については、[Webコンテンツ構造とテンプレートへのパーミッションの割り当て](../assigning-web-content-structures/assigning-permissions-to-structures-and-templates.md)を参照してください。
+パーミッションの管理方法については、[Webコンテンツ構造とテンプレートへのパーミッションの割り当て](../web-content-structures/assigning-permissions-to-structures-and-templates.md)を参照してください。
 ```
 
 ## ストラクチャー権限の置換

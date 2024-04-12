@@ -1,7 +1,7 @@
 # セマンティックサーチのためのサーチブループリントを作成する
 
 {bdg-secondary}`7.4 U70+`
-{bdg-link-primary}`[ベータ版機能](../../../システム管理/設定-liferay/feature-flags.md)`
+{bdg-link-primary}`[ベータ版機能](../../../../system-administration/configuring-liferay/feature-flags.md)`
 
 モデルが選択され、テキスト埋め込みがインデックスされると、検索時に埋め込みを考慮するようにLiferayを構成する必要があります。 概念的には2つの選択肢があります：
 

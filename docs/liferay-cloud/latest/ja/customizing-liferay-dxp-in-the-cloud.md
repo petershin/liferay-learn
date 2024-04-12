@@ -1,12 +1,12 @@
 ---
 toc:
-  - ./customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/deploying-to-the-liferay-service.md
+  - ./customizing-liferay-dxp-in-the-cloud/deploying-to-the-liferay-service.md
   - >-
-    - ./customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.md
-    - ./customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/liferay-service-environment-variables.md
-    - ./customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/setting-up-clustering-in-liferay-cloud.md
-    - ./customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/using-the-mysql-client.md
-    - ./customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/upgrading-your-liferay-dxp-instance.md
+    - ./customizing-liferay-dxp-in-the-cloud/configuring-the-liferay-dxp-service.md
+    - ./customizing-liferay-dxp-in-the-cloud/liferay-service-environment-variables.md
+    - ./customizing-liferay-dxp-in-the-cloud/setting-up-clustering-in-liferay-cloud.md
+    - ./customizing-liferay-dxp-in-the-cloud/using-the-mysql-client.md
+    - ./customizing-liferay-dxp-in-the-cloud/upgrading-your-liferay-dxp-instance.md
 ---
 # Liferay DXPサービスの使用
 
@@ -53,13 +53,13 @@ Liferay DXPへのカスタム追加の導入には、Gitリポジトリの適切
 
 `common/`ディレクトリを除き、特定の環境フォルダ（`dev`、`uat`、`prod`など）に追加された変更は、対応する環境にデプロイするときに **のみ** 伝播されます。 `common/`ディレクトリに追加された変更は、ターゲットのデプロイ環境に関係なく、 **常に** デプロイされます。 これは、すべてのサービスにおいて、 `configs/` ディレクトリ内のすべてのサブフォルダに適用されます。
 
-Liferayサービスは、他のサービスに比べて多くのカスタマイゼーション（ホットフィックスの追加、モジュールのソースコードの構築など）を提供しているため、サービスをデプロイする際には、いくつかの考慮すべき点があります。 詳しくは [Liferayサービスへのデプロイ](./customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/deploying-to-the-liferay-service.md) を参照してください。 また、一般的なデプロイメントワークフローについては、 [Overview of Deployment Workflow](./updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md) を参照してください。 Liferay Cloudへのデプロイのチュートリアルについては、 [Deploying Changes via DCP Cloud Console](./updating-services-in-liferay-paas/deploying-changes-via-the-liferay-cloud-console.md)をご覧ください。
+Liferayサービスは、他のサービスに比べて多くのカスタマイゼーション（ホットフィックスの追加、モジュールのソースコードの構築など）を提供しているため、サービスをデプロイする際には、いくつかの考慮すべき点があります。 詳しくは [Liferayサービスへのデプロイ](./customizing-liferay-dxp-in-the-cloud/deploying-to-the-liferay-service.md) を参照してください。 また、一般的なデプロイメントワークフローについては、 [Overview of Deployment Workflow](./updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md) を参照してください。 Liferay Cloudへのデプロイのチュートリアルについては、 [Deploying Changes via DCP Cloud Console](./updating-services-in-liferay-paas/deploying-changes-via-the-liferay-cloud-console.md)をご覧ください。
 
 ## 設定
 
-`portal.properties` 変更など、Liferayサービスに設定を適用するには、Gitリポジトリに設定を追加し、変更をGitにプッシュする必要があります。 これらの設定ファイルの追加の詳細は、 [Liferay DXPサービスの設定](./customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.md)を参照してください。
+`portal.properties` 変更など、Liferayサービスに設定を適用するには、Gitリポジトリに設定を追加し、変更をGitにプッシュする必要があります。 これらの設定ファイルの追加の詳細は、 [Liferay DXPサービスの設定](./customizing-liferay-dxp-in-the-cloud/configuring-the-liferay-dxp-service.md)を参照してください。
 
-環境変数は、Liferayサービスの設定にも使用され、場合によってはポータルのプロパティをオーバーライドすることもあります。 詳しくは、 [Liferayサービス環境変数](./customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/liferay-service-environment-variables.md) を参照してください。
+環境変数は、Liferayサービスの設定にも使用され、場合によってはポータルのプロパティをオーバーライドすることもあります。 詳しくは、 [Liferayサービス環境変数](./customizing-liferay-dxp-in-the-cloud/liferay-service-environment-variables.md) を参照してください。
 
 ## ホットデプロイ
 
@@ -71,7 +71,7 @@ Liferay Cloudでホットデプロイを使用することは *not* 推奨され
 
 ## クラスタリングを有効にする
 
-Liferay CloudでのLiferay DXPのクラスタリングは、Liferay DXPでのクラスタリングに比べて非常に単純化されたプロセスです。 クラスタリングのサポートが利用可能で、Liferay Cloudですぐに使用できます。 クラスタリングの動作とスケールのための追加の設定には、いくつかの追加の手順が必要です。 詳細は、 [Liferay Cloud](./customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/setting-up-clustering-in-liferay-cloud.md) でのクラスタリングのセットアップを参照してください。
+Liferay CloudでのLiferay DXPのクラスタリングは、Liferay DXPでのクラスタリングに比べて非常に単純化されたプロセスです。 クラスタリングのサポートが利用可能で、Liferay Cloudですぐに使用できます。 クラスタリングの動作とスケールのための追加の設定には、いくつかの追加の手順が必要です。 詳細は、 [Liferay Cloud](./customizing-liferay-dxp-in-the-cloud/setting-up-clustering-in-liferay-cloud.md) でのクラスタリングのセットアップを参照してください。
 
 ## スクリプトの実行
 
@@ -99,9 +99,9 @@ Liferay DXPには、コンテンツを構築、管理、Webにデプロイする
 
 ## 関連トピック
 
-* [Liferayサービスへのデプロイ](./customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/deploying-to-the-liferay-service.md)
+* [Liferayサービスへのデプロイ](./customizing-liferay-dxp-in-the-cloud/deploying-to-the-liferay-service.md)
 * [Liferay Cloudサービスへのログイン](getting-started/logging-into-your-liferay-cloud-services.md)
-* [Liferay DXPサービスの設定](./customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.md)
+* [Liferay DXPサービスの設定](./customizing-liferay-dxp-in-the-cloud/configuring-the-liferay-dxp-service.md)
 * [Liferay Cloudコンソールによる変更のデプロイ](updating-services-in-liferay-paas/deploying-changes-via-the-liferay-cloud-console.md)
 
 ```{raw} html

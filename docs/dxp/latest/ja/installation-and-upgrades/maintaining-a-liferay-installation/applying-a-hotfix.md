@@ -9,7 +9,7 @@
 ```
 
 ```{note}
-DXPをDockerコンテナで動作させている場合は、 [DXPをDockerでパッチする](./installing-liferay/using-liferay-docker-images/patching-dxp-in-docker.md)の手順に従ってホットフィックスを適用してください。
+DXPをDockerコンテナで動作させている場合は、 [DXPをDockerでパッチする](../installing-liferay/using-liferay-docker-images/patching-dxp-in-docker.md)の手順に従ってホットフィックスを適用してください。
 ```
 
 ## ホットフィックスをリクエストする

@@ -2,7 +2,7 @@
 
 　 このセクションの前の段階がすべて完了したなら、オンプレミスのLiferay DXPインストールをLiferay Cloudに移行することに成功したことになります!
 
-Liferay DXPがLiferay Cloud上で動作するようになったので、その機能を活用する準備が整いました。これには [自動バックアップ](../platform-services/backup-service/backup-service-overview.md)、 [内蔵の継続的インテグレーション](../platform-services/continuous-integration.md)、自動 [サービスログ](../support-and-troubleshooting/troubleshooting/reading-liferay-cloud-service-logs.md)、そして内蔵 [セキュリティ機能](../tuning-security-settings/information-security-and-liferay-cloud.md)があります。
+Liferay DXPがLiferay Cloud上で動作するようになったので、その機能を活用する準備が整いました。これには [自動バックアップ](../platform-services/backup-service/backup-service-overview.md)、 [内蔵の継続的インテグレーション](../platform-services/continuous-integration.md)、自動 [サービスログ](../troubleshooting/reading-liferay-cloud-service-logs.md)、そして内蔵 [セキュリティ機能](../tuning-security-settings/information-security-and-liferay-cloud.md)があります。
 
 しかし、Liferay Cloudの機能をフルに活用するためには、開始時にいくつかの追加手順があります。
 
@@ -34,9 +34,9 @@ Liferay Cloud上の環境では、必要に応じて独自のカスタムドメ�
 
 ## ディザスターリカバリー環境の構築
 
-Liferay Cloudはデフォルトで、同一リージョン内の [自動ディザスタリカバリ](../support-and-troubleshooting/troubleshooting/disaster-recovery-overview.md#automatic-disaster-recovery-strategy) を提供することにより、サービス停止によるダウンタイムを軽減します。 しかし、災害によりLiferay Cloud環境のサービス提供地域が停止した場合、本番インスタンスのユーザーのダウンタイムを最小限に抑えるために、フォールバック環境（またはディザスターリカバリー環境）の使用も検討する必要があります。
+Liferay Cloudはデフォルトで、同一リージョン内の [自動ディザスタリカバリ](../troubleshooting/disaster-recovery-overview.md#automatic-disaster-recovery-strategy) を提供することにより、サービス停止によるダウンタイムを軽減します。 しかし、災害によりLiferay Cloud環境のサービス提供地域が停止した場合、本番インスタンスのユーザーのダウンタイムを最小限に抑えるために、フォールバック環境（またはディザスターリカバリー環境）の使用も検討する必要があります。
 
-[Diaster Recovery 環境](../support-and-troubleshooting/troubleshooting/configuring-cross-region-disaster-recovery.md) を設定し、計画外のダウンタイムから可能な限り強固な保護を維持します。 [自動的かつ地域横断的なディザスターリカバリーについて詳しくはこちら](../support-and-troubleshooting/troubleshooting/disaster-recovery-overview.md).
+[Diaster Recovery 環境](../troubleshooting/configuring-cross-region-disaster-recovery.md) を設定し、計画外のダウンタイムから可能な限り強固な保護を維持します。 [自動的かつ地域横断的なディザスターリカバリーについて詳しくはこちら](../troubleshooting/disaster-recovery-overview.md).
 
 ```{important}
 ディザスターリカバリー環境を構築するためには、サブスクリプションの一部として、そのための環境を別途購入する必要があります。
@@ -66,7 +66,7 @@ Liferay CloudでLiferayを使い始めるにあたり、アプリケーション
 
 * 本番環境では、 [Dynatrace integration](../manage-and-optimize/application-metrics.md#advanced-application-metrics-production-only) を使用することで、より高度なパフォーマンスメトリクスを使用することもできます。 **なお、これを利用するには、Liferay Cloudのサブスクリプションに特定のDynatraceアドオンが必要です。**
 
-オンプレミスのインスタンスをチューニングするのと同じように、Liferay Cloud上のインスタンスで独自のパフォーマンステストと最適化を実行する必要があります。 サービスデータ、メトリクス、 [ロギング](../support-and-troubleshooting/troubleshooting/reading-liferay-cloud-service-logs.md) が用意されており、テストに役立てることができます。
+オンプレミスのインスタンスをチューニングするのと同じように、Liferay Cloud上のインスタンスで独自のパフォーマンステストと最適化を実行する必要があります。 サービスデータ、メトリクス、 [ロギング](../troubleshooting/reading-liferay-cloud-service-logs.md) が用意されており、テストに役立てることができます。
 
 ## Liferay Cloudでの開発を始めよう
 

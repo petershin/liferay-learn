@@ -13,7 +13,7 @@ Liferay 7.3.xでは、Xugglerの統合は非推奨となっています。 ユ�
 これらのサービスをインストールしたら、コントロールパネルの［サーバー管理］ページでLiferayインスタンスがこれらのサービスを使用するように設定します。
 
 ```{note}
-Liferay 7.1では、OpenOffice/LibreOfficeは、サーバー管理やポータルのプロパティではなく、OSGi Configuration Adminで設定されます。 詳しくは[OpenOffice/LibreOfficeの統合を可能にする](./../content-authoring-and-management/documents-and-media/devops/enabling-openoffice-libreoffice-integration.md)をご覧ください。
+Liferay 7.1では、OpenOffice/LibreOfficeは、サーバー管理やポータルのプロパティではなく、OSGi Configuration Adminで設定されます。 詳しくは[OpenOffice/LibreOfficeの統合を可能にする](../../content-authoring-and-management/documents-and-media/devops/enabling-openoffice-libreoffice-integration.md)をご覧ください。
 ```
 
 ## ImageMagickとGhostscriptを有効にする

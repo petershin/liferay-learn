@@ -18,6 +18,6 @@ toc:
 :::
 
 :::{grid-item-card} Blade CLIのトラブルシューティング
-:link: ./liferay-workspace/blade-cli/troubleshooting-blade-cli.md
+:link: ./blade-cli/troubleshooting-blade-cli.md
 :::
 ::::

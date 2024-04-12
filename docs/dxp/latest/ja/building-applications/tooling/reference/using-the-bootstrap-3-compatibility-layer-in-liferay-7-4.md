@@ -3,7 +3,7 @@
 Liferay DXP 7.4 GA1では、 [Bootstrap 3](https://getbootstrap.com/) 互換性レイヤーはLiferayフロントエンドアプリケーションの組み込みパッケージから削除されています。 以前のバージョンからアップグレードする場合、CSSコードを Bootstrap 3に依存しているプロジェクトには、外部パッケージとして互換性レイヤーを含める必要があります。
 
 ```{note}
-`gulp upgrade`コマンドを使用してLiferay 7.4に[テーマをアップグレード](../../site-building/site-appearance/themes/upgrading-a-theme.md)すれば、自動的にBootstrap 3互換性レイヤーをアップグレードに含めることができます。 この場合、そのテーマに手動で互換性レイヤーを追加する必要はありません。
+`gulp upgrade`コマンドを使用してLiferay 7.4に[テーマをアップグレード](../../../site-building/site-appearance/themes/upgrading-a-theme.md)すれば、自動的にBootstrap 3互換性レイヤーをアップグレードに含めることができます。 この場合、そのテーマに手動で互換性レイヤーを追加する必要はありません。
 ```
 
 ```{warning}

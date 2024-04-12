@@ -3,7 +3,7 @@
 {bdg-primary}`サブスクリプション`
 
 ```{warning}
-この機能は[Elasticsearchでのみ](./../../using-search/installing-and-upgrading-a-search-engine/solr/solr-limitations.md)機能します.
+この機能は[Elasticsearchでのみ](../../../using-search/installing-and-upgrading-a-search-engine/solr/solr-limitations.md)機能します.
 ```
 
 **ワークフローメトリクス** により、特定のワークフローイベントを完了するために費やされた時間についての洞察が提供されます。 これを使用するには、ワークフロープロセスのイベントに期限を設定します。 これらの期限設定は、SLA(サービスレベルアグリーメント）と呼ばれます。 定義すると、ワークフローレポートによって、SLAへの準拠が測定されます。 これは、ワークフローの参加者とワークフロー項目を送信するユーザーの間の契約のようなものです。 **ワークフローレポート** には、各ワークフロー項目のSLAステータス(期限内または期限切れ）を含む、SLAが設定されたすべてのプロセスのデータが表示されます。

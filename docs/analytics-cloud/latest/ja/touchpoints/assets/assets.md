@@ -15,7 +15,7 @@
 * [ウェブコンテンツ](./tracking-custom-assets.md)
 * [カスタム](./tracking-custom-assets.md)
 
-各資産タイプのCSVレポートもダウンロードできます。 詳しくは [ダウンロードレポート](../reference/downloading-reports.md)をご覧ください。
+各資産タイプのCSVレポートもダウンロードできます。 詳しくは [ダウンロードレポート](../../reference/downloading-reports.md)をご覧ください。
 
 ![Each Asset has its own table.](assets/images/01.png)
 

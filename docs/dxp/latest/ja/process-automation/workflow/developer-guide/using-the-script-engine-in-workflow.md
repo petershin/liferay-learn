@@ -91,7 +91,7 @@ Groovyスクリプトを[XMLワークフロー定義](./crafting-xml-workflow-de
 | `kaleoTimerInstanceToken` ( [`KaleoTimerInstanceToken`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-api/src/main/java/com/liferay/portal/workflow/kaleo/model/KaleoTimerInstanceToken.java) ) | [タスクタイマー](./workflow-task-node-reference.md)が存在する場合は、`kaleoTimerInstanceToken.getKaleoTimerInstanceTokenId()`を呼び出してIDを取得します。 | |                                       |
 
 ```{warning}
-これらの変数は、ワークフロータスクノードのアクションスクリプト（すなわち、`<actions>` &rarr; `<action>` &rarr; `<script>`ブロック内のスクリプト）に現れます。 [スクリプトによる割り当て](../designing-and-managing-workflow/workflow-designer/assigning-task-nodes.md#scripted-assignments) には、これらの変数は注入されていません。
+これらの変数は、ワークフロータスクノードのアクションスクリプト（すなわち、`<actions>` &rarr; `<action>` &rarr; `<script>`ブロック内のスクリプト）に現れます。 [スクリプトによる割り当て](../designing-and-managing-workflows/workflow-designer/assigning-task-nodes.md#scripted-assignments) には、これらの変数は注入されていません。
 ```
 
 ## スクリプトの例

@@ -24,7 +24,7 @@
 
 | 構成 | 説明 |
 | :--- | :--- |
-| 受け付けるファイル拡張子| ユーザーがフィールドにアップロードできるファイルの種類を決定するために、受け付けるファイル拡張子のリストを入力します。各拡張子はカンマで区切る必要があります。添付ファイルフィールドは、[Documents and Media](../../../content-authoring-and-management/documents-and-media.md) で受け入れられるすべてのファイル形式をサポートします。|
+| 受け付けるファイル拡張子| ユーザーがフィールドにアップロードできるファイルの種類を決定するために、受け付けるファイル拡張子のリストを入力します。各拡張子はカンマで区切る必要があります。添付ファイルフィールドは、[Documents and Media](../../../../content-authoring-and-management/documents-and-media.md) で受け入れられるすべてのファイル形式をサポートします。|
 | 最大ファイルサイズ | このフィールドで受け入れられる最大ファイルサイズを入力します。デフォルト値は100MBです。必要であれば、この値を0に設定して、サーバーのOverall Maximum Upload Request Sizeプロパティを使用することができます。|
 | Storage Folder (**for Show Files in Documents and Media**) | Documents and Mediaでアップロードされたファイルが保存される場所を決定するためのフォルダー名を入力します。デフォルトでは、フォルダはオブジェクト定義の名前（例：`/Employee`、`/TimeOffRequest`）を使用します。|
 

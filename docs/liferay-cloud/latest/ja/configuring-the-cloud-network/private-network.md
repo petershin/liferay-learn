@@ -15,7 +15,7 @@
 `external`：接続が外部接続で使用可能かどうか。 デフォルト値 `false` は、Liferay Cloud の内部接続に制限します。
 
 ```{tip}
-接続を外部接続に公開している場合は、サービスのシェルを使用して接続のトラブルシューティングを行う必要がある場合があります。 詳しくは、[シェルアクセス](../../support-and-support-and-troubleshooting/troubleshooting/shell-access.md)をご覧ください。
+接続を外部接続に公開している場合は、サービスのシェルを使用して接続のトラブルシューティングを行う必要がある場合があります。 詳しくは、[シェルアクセス](../troubleshooting/shell-access.md)をご覧ください。
 ```
 
 構成例を次に示します。
@@ -50,5 +50,5 @@
 
 ## 関連トピック
 
-* [LCP JSONによる設定](../../reference/configuration-via-lcp-json.md)
-* [シェルアクセス](../../support-and-troubleshooting/troubleshooting/shell-access.md)
+* [LCP JSONによる設定](../reference/configuration-via-lcp-json.md)
+* [シェルアクセス](../troubleshooting/shell-access.md)

@@ -498,7 +498,7 @@ java -classpath .:* -DcontentStructureId=1234 -DstructuredContentId=5678 Structu
 `StructuredContent`サービスで`DELETE`メソッドを使用して、Webコンテンツ記事を削除します。 `StructuredContent_DELETE_ById.java|sh]` スクリプトサンプルでは、Webコンテンツ`id`を使用してWebコンテンツを削除しています。
 
 !!! important
-   REST APIを使用してWebコンテンツを削除すると、[Liferay DXPゴミ箱](../../content-authoring-and-management/recycle-bin/recycle-bin-overview.md) を使用せずに、永久に削除されます。
+   REST APIを使用してWebコンテンツを削除すると、[Liferay DXPゴミ箱](../../recycle-bin/recycle-bin-overview.md) を使用せずに、永久に削除されます。
 
 ### StructuredContent_DELETE_ById.sh
 
@@ -545,7 +545,7 @@ java -classpath .:* -DstructuredContentId=1234 StructuredContent_DELETE_ById
 | `StructuredContent_POST_ToStructuredContentFolder.[java\|sh]` | Webコンテンツ記事をフォルダーに投稿します。         |
 
 !!! important
-   REST APIを使用してWebコンテンツフォルダーを削除すると、フォルダとそのコンテンツは [Liferay DXPゴミ箱](../../content-authoring-and-management/recycle-bin/recycle-bin-overview.md) を使わずに永久に削除されます。
+   REST APIを使用してWebコンテンツフォルダーを削除すると、フォルダとそのコンテンツは [Liferay DXPゴミ箱](../../recycle-bin/recycle-bin-overview.md) を使わずに永久に削除されます。
 
 ## 関連情報
 

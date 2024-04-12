@@ -4,15 +4,15 @@
 
 ## 設定ファイルの整理
 
-まず、移行したいオンプレミスインストールのLiferayの設定ファイルを整理します。 これには、使用しているポータルのプロパティファイル（ [）](../customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.md#portal-properties) が含まれます。
+まず、移行したいオンプレミスインストールのLiferayの設定ファイルを整理します。 これには、使用しているポータルのプロパティファイル（ [）](../customizing-liferay-dxp-in-the-cloud/configuring-the-liferay-dxp-service.md#portal-properties) が含まれます。
 
 ```{tip}
 Liferay 固有のコードは `liferay` フォルダに属し、 [Liferay DXP workspace](https://learn.liferay.com/dxp/latest/en/developing-applications/tooling/liferay_workspace.html) のように構成されています。
 ```
 
-[先にクローンした](./matching-dxp-versions.md#clone-the-liferay-cloud-repository) Liferay Cloud プロジェクトリポジトリから`liferay/configs/{ENV}/`フォルダ（Liferay Cloud 環境に対応）に移動し、Liferay [ポータルプロパティ](../customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.md#portal-properties) ファイル（例： `portal-ext.properties`）を各環境フォルダに配置します。
+[先にクローンした](./matching-dxp-versions.md#clone-the-liferay-cloud-repository) Liferay Cloud プロジェクトリポジトリから`liferay/configs/{ENV}/`フォルダ（Liferay Cloud 環境に対応）に移動し、Liferay [ポータルプロパティ](../customizing-liferay-dxp-in-the-cloud/configuring-the-liferay-dxp-service.md#portal-properties) ファイル（例： `portal-ext.properties`）を各環境フォルダに配置します。
 
-[OSGi 設定](../customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.md#osgi-configurations) ファイル（例： `.cfg` または `.config` ファイル）を、 `osgi/`という適切な環境フォルダの中のサブフォルダに入れます。
+[OSGi 設定](../customizing-liferay-dxp-in-the-cloud/configuring-the-liferay-dxp-service.md#osgi-configurations) ファイル（例： `.cfg` または `.config` ファイル）を、 `osgi/`という適切な環境フォルダの中のサブフォルダに入れます。
 
 例えば、 `dev` の環境では、portal のプロパティファイルを `liferay/configs/dev`に、OSGi の設定ファイルを `liferay/configs/dev/osgi/`に配置します。
 

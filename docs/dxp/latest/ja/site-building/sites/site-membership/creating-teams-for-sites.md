@@ -3,7 +3,7 @@
 サイト内で同じタスクセット（サイトのウィキコンテンツのモデレート、掲示板スレッドの管理、ブログの執筆、サイト内の特定のページの編集など）を実行するユーザーのグループ（**ad hoc**）がある場合、それらをサイトチームに編成し、様々なサイト固有の機能に対してチームにパーミッションを割り当てることができます。 1つのサイト内で権限を管理するには、サイトチームが望ましい方法である。 サイトチームに割り当てられた権限は、そのサイトのみに適用される。
 
 ```{note}
-Liferay ポータルインスタンスで複数のサイトや組織で使用するユーザグループのパーミッションを作成・適用するには、ユーザを [ユーザグループ](../../../users-and-permissions/user-groups/creating-and-managing-user-groups.md) に集約し、 [roles](../../../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md) を介してユーザグループのパーミッションを割り当てることを検討してください。
+Liferay ポータルインスタンスで複数のサイトや組織で使用するユーザグループのパーミッションを作成・適用するには、ユーザを [ユーザグループ](../../../users-and-permissions/user-groups/creating-and-managing-user-groups.md) に集約し、 [roles](../../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md) を介してユーザグループのパーミッションを割り当てることを検討してください。
 ```
 
 以下の手順では、これらのトピックについて説明します。

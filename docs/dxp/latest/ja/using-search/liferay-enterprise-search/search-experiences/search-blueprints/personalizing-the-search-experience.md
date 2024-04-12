@@ -38,7 +38,7 @@ Search ExperiencesとSearch Blueprintsの主な使用例の1つは、Liferayの�
 
 **新規ユーザーアカウントのカテゴリ内コンテンツをブースト：** 検索ユーザーのアカウントが特定の時間範囲に作成された場合、 [特定のカテゴリ](../../../../content-authoring-and-management/tags-and-categories/defining-categories-and-vocabularies-for-content.md) で検索結果をブーストします。
 
-**Boost Contents in a Category for a User Segment:** ユーザーが特定の[ユーザーセグメント](../../../../content-authoring and-management/tags-and-categories/defining-categories-and-vocabularies-for-content.md) に属している場合、[特定のカテゴリ](../../../../../site-building/personalizing-site-experience/segmentation/creating-and-managing-user-segments.md) で検索結果をブーストします。
+**Boost Contents in a Category for a User Segment:** ユーザーが特定の[ユーザーセグメント](../../../../content-authoring-and-management/tags-and-categories/defining-categories-and-vocabularies-for-content.md) に属している場合、[特定のカテゴリ](../../../../site-building/personalizing-site-experience/segmentation/creating-and-managing-user-segments.md) で検索結果をブーストします。
 
 <!-- TODO: Move these descriptions to the Elements Reference guide when written, and link to them. Since we don't currently have the Elements Reference guide written, we must describe them here. -->
 

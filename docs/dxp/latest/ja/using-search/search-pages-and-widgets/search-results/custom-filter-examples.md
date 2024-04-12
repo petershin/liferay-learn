@@ -1,7 +1,7 @@
 # カスタムフィルターの例
 
 ```{note}
-この機能は[Elasticsearchでのみ](../../installing and-upgrading-a-search-engine/solr/solr-limitations.md)動作します。
+この機能は[Elasticsearchでのみ](../../installing-and-upgrading-a-search-engine/solr/solr-limitations.md)動作します。
 ```
 
 カスタムフィルターウィジェットは、検索チューニングを強力にサポートします。 カスタムコードを導入することなく、検索エンジンに送信されるクエリをコントロールすることができます。 ここでは、カスタムフィルターウィジェットへのアプローチ方法を理解するために、いくつかの一般的な使用例を紹介します。

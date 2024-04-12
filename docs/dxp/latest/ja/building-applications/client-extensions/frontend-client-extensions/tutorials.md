@@ -25,15 +25,15 @@ toc:
 :::
 
 :::{grid-item-card} テーマファビコンクライアント拡張を使う
-:link: ./tutorialss/using-a-theme-favicon-client-extension.md
+:link: ./tutorials/using-a-theme-favicon-client-extension.md
 :::
 
 :::{grid-item-card} Using a Theme Sprite Map Client Extension
-:link: ./tutorialss/using-a-theme-spritemap-client-extension.md
+:link: ./tutorials/using-a-theme-spritemap-client-extension.md
 :::
 
 :::{grid-item-card} テーマCSSクライアント拡張の使用
-:link: ./tutorialss/using-a-theme-css-client-extension.md
+:link: ./tutorials/using-a-theme-css-client-extension.md
 :::
 
 :::{grid-item-card} 基本的なカスタム要素の作成
@@ -45,6 +45,6 @@ toc:
 :::
 
 :::{grid-item-card} IFrame Client Extensionの使用
-:link: ./tutorialss/using-an-iframe-client-extension.md
+:link: ./tutorials/using-an-iframe-client-extension.md
 :::
 ::::

@@ -23,7 +23,7 @@
 1. Java（JDK8またはJDK11）をインストールします。
 
    ```{note}
-   対応するJDK、データベース、環境については、 [互換性マトリックス](https://help.liferay.com/hc/ja/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) を確認してください。 推奨されるJVM設定については、[JVM Configuration](../../installation-and-upgrades/reference/jvm-configuration.md)を参照のこと。
+   対応するJDK、データベース、環境については、 [互換性マトリックス](https://help.liferay.com/hc/ja/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) を確認してください。 推奨されるJVM設定については、[JVM Configuration](../../../installation-and-upgrades/reference/jvm-configuration.md)を参照のこと。
    ```
 
 1. サンプルワークスペースをダウンロードし、解凍します。

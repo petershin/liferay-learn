@@ -1,6 +1,6 @@
 ---
 toc:
-- ./developer-guide/message-boards-api-basics.md
+- ../../../collaboration-and-social/message-boards/developer-guide/message-boards-api-basics.md
 ---
 # 開発者ガイド
 

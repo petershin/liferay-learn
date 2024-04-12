@@ -1,6 +1,6 @@
 # シークレットで安全な環境変数を管理
 
-シークレットを使用すると、Liferay Cloud内のあらゆる環境の変数を安全に保存することができます。 Liferay Cloud プロジェクトを閲覧する権限を持つ全てのユーザーが [環境変数](../../reference/defining-environment-variables.md)を閲覧できるのに対し、secret はそのロールに閲覧権限が与えられている場合にのみ閲覧可能です。
+シークレットを使用すると、Liferay Cloud内のあらゆる環境の変数を安全に保存することができます。 Liferay Cloud プロジェクトを閲覧する権限を持つ全てのユーザーが [環境変数](../reference/defining-environment-variables.md)を閲覧できるのに対し、secret はそのロールに閲覧権限が与えられている場合にのみ閲覧可能です。
 
 ## シークレットとは
 
@@ -108,5 +108,5 @@
 
 ## 関連トピック
 
-* [LCP.jsonによるコンフィギュレーション](../../reference/configuration-via-lcp-json.md)
-* [環境変数の定義](../../reference/defining-environment-variables.md)
+* [LCP.jsonによるコンフィギュレーション](../reference/configuration-via-lcp-json.md)
+* [環境変数の定義](../reference/defining-environment-variables.md)

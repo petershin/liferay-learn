@@ -58,7 +58,7 @@ Liferayのイベントの中には、これらの高いセキュリティのス�
 
 | Event | How to Proceed | 
 | :---- | :---------- | 
-| [Publishing Object Definitions](./../building-applications/objects/creating-and-managing-objects/creating-objects.md#publishing-object-drafts) | Liferayデータベースユーザーが完全なデータベース権限を持っていない場合はObjectsを使用しないでください。 |
+| [Publishing Object Definitions](../../building-applications/objects/creating-and-managing-objects/creating-objects.md#publishing-object-drafts) | Liferayデータベースユーザーが完全なデータベース権限を持っていない場合はObjectsを使用しないでください。 |
 | テーブルを作成するプラグインをデプロイする | デプロイする前に、Liferayデータベースユーザーに完全な権限を付与し、デプロイ後にデータベースを再セキュアにします。 |
 | Liferay をアップグレードする | アップグレードする前に、Liferay データベースユーザーに完全な権限を付与し、アップグレード後にデータベースを再セキュア化します。 |
 ```

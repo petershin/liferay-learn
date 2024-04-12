@@ -41,7 +41,7 @@
 1. ［**公開**］ をクリックして変更を保存します。
 
 ```{warning}
-ウェブコンテンツの記事は編集・保存されたときにインデックスが再作成されるが、コンテンツページは（リソースを節約するために）公開されたときにのみインデックスが再作成される。 そのため、キャッシュされたフラグメントにマップされたウェブコンテンツ記事が更新されると、ページを再度公開するか、 [フラグメントをキャッシュ可能なものとしてマーク解除](./../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/managing-fragments.md#managing-individual-page-fragments) するまで、更新はコンテンツページに表示されません。
+ウェブコンテンツの記事は編集・保存されたときにインデックスが再作成されるが、コンテンツページは（リソースを節約するために）公開されたときにのみインデックスが再作成される。 そのため、キャッシュされたフラグメントにマップされたウェブコンテンツ記事が更新されると、ページを再度公開するか、 [フラグメントをキャッシュ可能なものとしてマーク解除](../../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/managing-fragments.md#managing-individual-page-fragments) するまで、更新はコンテンツページに表示されません。
 ```
 
 ## 関連トピック

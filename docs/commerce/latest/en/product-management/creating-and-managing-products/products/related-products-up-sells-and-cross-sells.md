@@ -118,7 +118,7 @@ This adds a new product relation.
 
     ![Open the Related menu to configure related products.](./related-products-up-sells-and-cross-sells/images/07.png)
 
-1. Click *Add* (![Add icon](../../images/icon-add.png)) to add one or more relationships.
+1. Click *Add* (![Add icon](../../../images/icon-add.png)) to add one or more relationships.
 
 1. Click *Add*.
 

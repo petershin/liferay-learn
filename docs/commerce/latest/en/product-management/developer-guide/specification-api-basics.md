@@ -99,7 +99,7 @@ The other cURL commands use similar JSON arguments.
 
 The `Specification_POST_ToInstance.java` class adds a specification by calling the `SpecificationResource` service.
 
-```{literalinclude} ./specifications-api-basics/resources/liferay-u9x9.zip/java/Specification_POST_ToInstance.java
+```{literalinclude} ./specification-api-basics/resources/liferay-u9x9.zip/java/Specification_POST_ToInstance.java
    :dedent: 1
    :language: java
    :lines: 11-31
@@ -141,7 +141,7 @@ Command:
 
 Code:
 
-```{literalinclude} ./specifications-api-basics/resources/liferay-u9x9.zip/curl/Specifications_GET_FromInstance.sh
+```{literalinclude} ./specification-api-basics/resources/liferay-u9x9.zip/curl/Specifications_GET_FromInstance.sh
    :language: bash
 ```
 
@@ -155,7 +155,7 @@ java -classpath .:* Specifications_GET_FromInstance
 
 Code:
 
-```{literalinclude} ./specifications-api-basics/resources/liferay-u9x9.zip/java/Specifications_GET_FromInstance.java
+```{literalinclude} ./specification-api-basics/resources/liferay-u9x9.zip/java/Specifications_GET_FromInstance.java
    :dedent: 1
    :language: java
    :lines: 11-22
@@ -200,7 +200,7 @@ Command:
 
 Code:
 
-```{literalinclude} ./specifications-api-basics/resources/liferay-u9x9.zip/curl/Specification_GET_ById.sh
+```{literalinclude} ./specification-api-basics/resources/liferay-u9x9.zip/curl/Specification_GET_ById.sh
    :language: bash
 ```
 
@@ -214,7 +214,7 @@ java -classpath .:* -DspecificationId=1234 Specification_GET_ById
 
 Code:
 
-```{literalinclude} ./specifications-api-basics/resources/liferay-u9x9.zip/java/Specification_GET_ById.java
+```{literalinclude} ./specification-api-basics/resources/liferay-u9x9.zip/java/Specification_GET_ById.java
    :dedent: 1
    :language: java
    :lines: 8-18
@@ -236,7 +236,7 @@ Command:
 
 Code:
 
-```{literalinclude} ./specifications-api-basics/resources/liferay-u9x9.zip/curl/Specification_PATCH_ById.sh
+```{literalinclude} ./specification-api-basics/resources/liferay-u9x9.zip/curl/Specification_PATCH_ById.sh
    :language: bash
 ```
 
@@ -250,7 +250,7 @@ java -classpath .:* -DspecificationId=1234 Specification_PATCH_ById
 
 Code:
 
-```{literalinclude} ./specifications-api-basics/resources/liferay-u9x9.zip/java/Specification_PATCH_ById.java
+```{literalinclude} ./specification-api-basics/resources/liferay-u9x9.zip/java/Specification_PATCH_ById.java
    :dedent: 1
    :language: java
    :lines: 11-30
@@ -270,7 +270,7 @@ Command:
 
 Code:
 
-```{literalinclude} ./specifications-api-basics/resources/liferay-u9x9.zip/curl/Specification_DELETE_ById.sh
+```{literalinclude} ./specification-api-basics/resources/liferay-u9x9.zip/curl/Specification_DELETE_ById.sh
    :language: bash
 ```
 
@@ -284,7 +284,7 @@ java -classpath .:* -DspecificationId=1234 Specification_DELETE_ById
 
 Code:
 
-```{literalinclude} ./specifications-api-basics/resources/liferay-u9x9.zip/java/Specification_DELETE_ById.java
+```{literalinclude} ./specification-api-basics/resources/liferay-u9x9.zip/java/Specification_DELETE_ById.java
    :dedent: 1
    :language: java
    :lines: 8-17

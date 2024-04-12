@@ -53,7 +53,7 @@ During the publishing process, you can also configure which application data and
 Here, you can exclude some data and content types during publishing or export to speed up the process.
 
 !!! warning
-   When selecting *All* or *Date Range*, the following warning notification will appear: "*Publishing all content or using a wide date range will take some time. Click "Refresh Counts" to track progress.*" It is recommended to publish a small incremental changes to avoid large publishing processes that can take a long time to execute.
+    Selecting *All* or *Date Range* can make the publishing process take a long time, especially if you have many versions. Instead, publish small incremental changes to avoid large publishing processes that can take a long time to execute.
 
 ### Version History
 

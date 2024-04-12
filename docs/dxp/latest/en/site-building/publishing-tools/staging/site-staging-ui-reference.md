@@ -39,7 +39,7 @@ When you click on *Publish to Live*, a modal window appears with additional opti
 ![Click on Publish to Live to access the publishing modal window.](./site-staging-ui-reference/images/03.png)
 
 !!! warning
-    It is recommended to publish a small incremental changes to avoid large publishing processes that can take a long time to execute.
+    It is recommended to publish small incremental changes to avoid large publishing processes that can take a long time to execute.
 
 ## Simple Publishing
 

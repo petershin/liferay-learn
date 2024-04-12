@@ -6,6 +6,7 @@ toc:
   - ./web-content-articles/using-expiration-and-review-dates-in-web-content.md
   - ./web-content-articles/generating-text-content-using-ai.md
   - ./web-content-articles/assigning-permissions-to-web-content-articles.md
+  - ./web-content-articles/previewing-web-content-articles.md
 taxonomy-category-names:
 - Content Management System
 - Web Content and Structures
@@ -23,4 +24,4 @@ uuid: 37e47bd5-4bf0-4194-932f-f4076c16d1e6
 - [Using Expiration and Review Dates in Web Content](./web-content-articles/using-expiration-and-review-dates-in-web-content.md)
 - [Generating Text Content Using AI](./web-content-articles/generating-text-content-using-ai.md)
 - [Assigning Permissions to Web Content Articles](./web-content-articles/assigning-permissions-to-web-content-articles.md)
-
+- [Previewing Web Content Articles](./web-content-articles/previewing-web-content-articles.md)

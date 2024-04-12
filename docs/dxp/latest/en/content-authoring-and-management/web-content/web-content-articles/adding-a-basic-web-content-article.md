@@ -7,9 +7,10 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: 89efcf46-c68b-42f1-b33e-f41ba46002f2
 ---
+
 # Adding a Basic Web Content Article
 
-When you have a lot of content to publish on your site, Liferay's content management system helps you with practical and essential ways to manage it. Web content articles can be displayed through [widgets](../../../site-building/displaying-content/additional-content-display-options/using-the-web-content-display-widget.md), [fragments](../../../site-building/creating-pages/page-fragments-and-widgets/using-fragments.md), or [display pages](../../../site-building/displaying-content/using-display-page-templates/creating-and-managing-display-page-templates.md).
+When you have a lot of content to publish on your site, Liferay's content management system helps you with practical and essential ways to manage it. Web content articles can be displayed through [widgets](../../../site-building/displaying-content/additional-content-display-options/using-the-web-content-display-widget.md), [fragments](../../../site-building/creating-pages/page-fragments-and-widgets/using-fragments.md), or [display pages](../../../site-building/displaying-content/using-display-page-templates/creating-and-managing-display-page-templates.md). See [Previewing Web Content Articles](./previewing-web-content-articles.md) to learn more.
 
 Each web content article is based on a structure that defines its available fields. Liferay includes the Basic Web Content structure out-of-the-box, but you can create your own. See [Understanding Web Content Structures](../web-content-structures/understanding-web-content-structures.md) for more information.
 
@@ -87,34 +88,6 @@ When you reschedule the same publication multiple times, you can view all versio
     All rescheduled versions of the web content article are published. Note that later scheduled versions replace previous ones.
 
 ![Schedule the same web content article multiple times.](./adding-a-basic-web-content-article/images/05.png)
-
-## Previewing Web Content Articles
-
-You can preview your content using the selected default template or display page template before publishing, so you can make adjustments to ensure your content appears as intended to users.
-
-### Previewing a Web Content Article Using a Template
-
-1. In the properties tab, select a template to preview the web content article.
-
-1. Click *Preview* (![Preview](../../../images/icon-preview.png)).
-
-   ![The default template has a preview button that looks like an eye.](./adding-a-basic-web-content-article/images/06.png)
-
-!!! note
-    Only web content articles that have been published or saved as a draft can be previewed.
-
-### Previewing a Web Content Articles Using a Display Page
-
-You can preview web content using a display page template from any site or asset library.
-
-1. In the properties tab, select a site and display page to preview the web content article.
-
-1. Click *Preview* (![Preview](../../../images/icon-preview.png)).
-
-   ![When you've selected a display page template, use the preview button in the properties tab.](./adding-a-basic-web-content-article/images/07.png)
-
-!!! note
-    Selecting the Preview button saves a draft of the web content article before displaying the preview.
 
 ## Properties Tab
 

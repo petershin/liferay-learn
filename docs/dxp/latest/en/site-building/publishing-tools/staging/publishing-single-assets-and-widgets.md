@@ -31,13 +31,11 @@ Similar to the standard process, single asset publishing includes associated dep
 
 ## Publishing Multiple Assets
 
-It is also possible to manually choose and publish multiple assets at the same time.
+1. Select your assets by checking the box. 
 
-1. Select your assets by checking the box
+1. Click *Actions* (![Actions button](../../../images/icon-actions.png)) in the toolbar above the elements and then click *Publish Selected Elements*
 
-1. Click on the *Actions* button ( ![Actions button](../../../images/icon-actions.png) ) from the toolbar above the elements and then click *Publish Selected Elements*
-
-   ![Click on the Actions button on the toolbar and select Publish Selected Elements button.](./publishing-single-assets-and-widgets/images/02.png)
+   ![Click the Actions button on the toolbar and select Publish Selected Elements button.](./publishing-single-assets-and-widgets/images/02.png)
 
 ## Publishing Single Widgets
 
@@ -51,23 +49,25 @@ After changing a widget, you can publish the widget by clicking on the *Actions*
 
 ## Verifying Published Content
 
-It is possible to the user to see assets after it was published, so it can obtain a better overview of past publications. The title of the assets are displayed on the summary page. Based on the previous examples, we will be using a Basic Web Content Content to assert this functionality.
+To verify what was published, you can view a summary of each publication process after it runs. 
 
-1. After publishing to live a Basic Web Content asset, Click the Product Menu (![Product Menu icon.](../../images/icon-product-menu.png)) and navigate to *Publishing* &rarr; *Staging*
+1. Publish a Basic Web Content article to live. 
 
-1. Create a New Publish Process layout. Then, make sure the Web Content checkbox is selected.
+`. Click the *Product Menu* (![Product Menu](../../../images/icon-product-menu.png)) and navigate to *Publishing* &rarr; *Staging*.
 
-   ![Assuring that the Web Content checkbox is selected.](./publishing-single-assets-and-widgets/images/04.png)                        
+1. Use the [advanced publish process](./site-staging-ui-reference.md#advanced-publishing) and select the Web Content checkbox. 
 
-1. Click on the *Publish to Live* button.
+   ![Check the Web Content checkbox.](./publishing-single-assets-and-widgets/images/04.png)                        
 
-1. After successfully publishing the layout, click on the *Actions* button ( ![Actions button](../../../images/icon-actions.png) ) next to the process of your new layout and select *Summary*.
+1. Click *Publish to Live*.
+
+1. After the publish process runs, click *Actions* (![Actions button](../../../images/icon-actions.png)) next to the process and select *Summary*.
 
    ![Clicking on Actions and visualizing the Summary button.](./publishing-single-assets-and-widgets/images/05.png)                       
 
-On the summary page, you can verify your previous published Web Content assets.
+The summary page shows everything published in that process. 
 
-   ![Visualizing published Web Content Asset.](./publishing-single-assets-and-widgets/images/06.png) 
+   ![The summary page shows what was published.](./publishing-single-assets-and-widgets/images/06.png) 
 
 ## Related Topics
 

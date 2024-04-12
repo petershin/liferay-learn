@@ -35,7 +35,7 @@ Liferay Commerce contains a catalog management system that supports a variety of
 
 ![Product catalog](./introduction-to-liferay-commerce/images/02.png)
 
-[Channels](../store-management/channels/introduction-to-channels.md) connect catalogs and products to any place products are sold: a Liferay Commerce based storefront, third party marketplaces, or even back office phone sales.
+[Channels](../store-management/channels.md) connect catalogs and products to any place products are sold: a Liferay Commerce based storefront, third party marketplaces, or even back office phone sales.
 
 ![Channels enabled for a product](./introduction-to-liferay-commerce/images/03.png)
 

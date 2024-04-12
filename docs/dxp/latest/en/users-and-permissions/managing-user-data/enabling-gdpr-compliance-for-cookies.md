@@ -12,22 +12,22 @@ taxonomy-category-names:
 
 You can ensure [GDPR compliance](https://gdpr.eu/cookies) for your cookies using Liferay's configuration interface.
 
-1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), and navigate to *Control Panel* &rarr; *System Settings* &rarr; *Platform* &rarr; *Cookies*.
+1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), and navigate to *Control Panel* &rarr; *System Settings* &rarr; *Platform* &rarr; *Cookies*. This page configures all sites. If you want to configure cookie settings for a specific site, go to *Control Panel* &rarr; *Instance Settings* &rarr; *Platform* &rarr; *Cookies*.
 
     ![Ensure GDPR compliance for your cookies through the configuration interface.](./enabling-gdpr-compliance-for-cookies/images/01.png)
 
-    There are two checkboxes here: Enabled and Explicit Cookie Consent Mode. Though enabled by default, the explicit cookie consent mode doesn't work if the Enabled checkbox is unchecked.
+    There are two checkboxes here: Enabled and Explicit Cookie Consent Mode. Though checked by default, the explicit cookie consent mode doesn't work if the Enabled checkbox is unchecked.
 
 1. To set your handling preference, check the *Enabled* checkbox. With the Explicit Cookie Consent Mode checked, no cookies are set until the user explicitly agrees to cookie usages. If unchecked, all cookies are set until the user opts out of them.
 
+    !!! note
+        [Analytics Cloud](https://learn.liferay.com/web/guest/w/analytics-cloud/workspace-data/data-control-and-privacy) uses cookies to gather data. If the first checkbox is left unchecked, cookies are enabled by default and Analytics Cloud can track users. If only the first checkbox is checked, Analytics Cloud tracks users until they opt out of Performance Cookies through the cookie banner. If both boxes are checked, Analytics Cloud won't track users until they accept Performance Cookies in the cookie banner.
+
 1. Click *Save* or *Update*.
 
-   Two new options appear in the left menu: *Banner* and *Consent Panel*.
+    Two new options appear in the left menu: *Banner* and *Consent Panel*.
 
-   ![Two new options appear in the left menu.](./enabling-gdpr-compliance-for-cookies/images/02.png)
-
-    !!! note
-        This applies the configuration to all sites. If you want to configure cookie settings for a specific site, go to *Control Panel* &rarr; *Instance Settings* &rarr; *Platform* &rarr; *Cookies*.
+    ![Two new options appear in the left menu.](./enabling-gdpr-compliance-for-cookies/images/02.png)
 
 1. Go to the *Banner* tab and choose your options for the cookie banner (see Banner Options below).
 
@@ -84,4 +84,4 @@ You may customize the following options:
 
 - [Managing User Data (GDPR)](../managing-user-data.md)
 - [Sanitizing User Data](./sanitizing-user-data.md)
-- [Data Control and Privacy](https://learn.liferay.com/web/guest/w/analytics-cloud/workspace-data/data-control-and-privacy?p_l_back_url=https%3A%2F%2Flearn.liferay.com%2F)
+- [Data Control and Privacy](https://learn.liferay.com/web/guest/w/analytics-cloud/workspace-data/data-control-and-privacy)

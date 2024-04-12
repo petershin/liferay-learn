@@ -15,13 +15,7 @@ Low stock activities are actions that are automatically taken if products fall b
 
 ![Low stock activity available out-of-the-box.](./implementing-a-custom-low-stock-activity/images/01.png)
 
-## Overview
-
-1. [**Deploy an Example**](#deploy-an-example)
-1. [**Walk Through the Example**](#walk-through-the-example)
-1. [**Additional Information**](#related-topics)
-
-## Deploy an Example
+## Deploy an Example Low Stock Activity
 
 ```{include} /_snippets/run-liferay-portal.md
 ```
@@ -62,9 +56,9 @@ Then, follow these steps:
 
 ![The newly added low stock activity](./implementing-a-custom-low-stock-activity/images/02.png)
 
-## Walk Through the Example
+## Anatomy of a Low Stock Activity
 
-This example consists of three main steps. First, we will annotate the class for OSGi registration. Second, we will review the `CommerceLowStockActivity` interface. And third, we will complete our implementation of `CommerceLowStockActivity`.
+This example consists of three main steps. First, you must annotate the class for OSGi registration. Second, review the `CommerceLowStockActivity` interface. Finally, you must complete the implementation of the `CommerceLowStockActivity` interface.
 
 - [Annotate the class for OSGi Registration](#annotate-the-class-for-osgi-registration)
 - [Review the `CommerceLowStockActivity` interface](#review-the-commercelowstockactivity-interface)

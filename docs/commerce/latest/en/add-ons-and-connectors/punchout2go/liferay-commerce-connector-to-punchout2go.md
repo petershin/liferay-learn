@@ -49,7 +49,7 @@ Once the server finishes restarting, the connector is active and ready for confi
 
 ## Configure the Connector
 
-The PunchOut2Go Connector is configured on a per-[channel](../../store-management/channels/introduction-to-channels.md) basis.
+The PunchOut2Go Connector is configured on a per-[channel](../../store-management/channels.md) basis.
 
 Users must have the URL of the store's catalog page; in this example: `http://localhost:8080/web/everest.com/catalog`.
 

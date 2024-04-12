@@ -10,7 +10,7 @@ taxonomy-category-names:
 ---
 # Enabling Guest Checkout
 
-Guest checkout functionality can be enabled on a per-[channel](../../store-management/channels/introduction-to-channels.md) basis and allows users to submit orders without a registered account on the site.
+Guest checkout functionality can be enabled on a per-[channel](../channels.md) basis and allows users to submit orders without a registered account on the site.
 
 To enable Guest Checkout:
 

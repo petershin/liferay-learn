@@ -12,7 +12,21 @@ uuid: a7ff0bd6-553d-42f4-ad4b-ee23268f6f90
 
 With Liferay's permissions framework, you can control which users can create, view, and manage web content articles. You can set permissions to an individual article or {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA126+` multiple articles at once. See [Understanding Roles and Permissions](../../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md) for more information.
 
-To assign permissions to web content articles,
+To assign permissions to web content articles before publication,
+
+1. Follow the steps to [create a web content article](./adding-a-basic-web-content-article.md).
+
+1. The Permissions section is located at the bottom right of the Properties tab (1). Click *More Options* to set permissions for Guests and Site Members. You can also set your article's [visibility](./configuring-visibility-for-web-content-articles.md) by choosing a *Viewable by* option.
+
+   {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA126+` Alternatively, you can set permissions before publishing your web content using the *Publish With Permissions* option (2). See [Publish With Permissions and Schedule Publications](./adding-a-basic-web-content-article.md#publish-with-permissions-and-schedule-publications) to learn more.
+
+   ![Assign permissions to web content articles before publication.](./assigning-permissions-to-web-content-articles/images/01.png)
+
+1. Select the permissions you need for your roles. See [Web Content Articles Permissions Reference](#web-content-articles-permissions-reference) to learn more about each permission.
+
+1. Proceed with the publication process.
+
+To assign permissions to web content articles after publication,
 
 1. Open the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)) and navigate to *Content & Data* &rarr; *Web Content*.
 
@@ -20,9 +34,9 @@ To assign permissions to web content articles,
 
 1. For the web content articles where you want to assign permissions, click *Actions* (![Actions](../../../images/icon-actions.png)) and select *Permissions* (1).
 
-   {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA126+` Alternatively, select the checkbox next to the web content article (or articles if you want to set [permissions in bulk](#setting-web-content-articles-permissions-in-bulk)) and click *Permissions* at the top options bar (2).
+   {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA126+` You can also select the checkbox next to the web content article (or articles if you want to set [permissions in bulk](#setting-web-content-articles-permissions-in-bulk)) and click *Permissions* at the top options bar (2).
 
-   ![The web content article permissions can be found in the Web Content application.](./assigning-permissions-to-web-content-articles/images/01.png)
+   ![The web content article permissions can be found in the Web Content application.](./assigning-permissions-to-web-content-articles/images/02.png)
 
 1. Select the permissions you need for your roles. See [Web Content Articles Permissions Reference](#web-content-articles-permissions-reference) to learn more about each permission.
 
@@ -63,7 +77,7 @@ To select multiple web content articles and set their permissions at once,
 
    <!-- These icons are included in another PR (LRDOCS-12620). I checked the path and I'm pretty sure they'll load once they are up. Eric -->
 
-   ![The permissions offer many options for each role.](./assigning-permissions-to-web-content-articles/images/02.png)
+   ![The permissions offer many options for each role.](./assigning-permissions-to-web-content-articles/images/03.png)
 
 1. Click *Save* to apply the changes.
 
@@ -71,17 +85,21 @@ To select multiple web content articles and set their permissions at once,
 
 Here's a list of permissions associated with web content articles. To learn more about DXP Roles and Permissions in general, see [Roles and Permissions](../../../users-and-permissions/roles-and-permissions.md).
 
-| Permission | Description |
-|:---|:---|
-| Update Discussion | Update a comment to a web content article. |
-| Delete | Move the web content article to the [Recycle Bin](../../recycle-bin/recycle-bin-overview.md). |
-| Permissions | View and modify the web content article's permissions. |
-| Expire | Set expiration dates for the web content article. |
-| Delete Discussion | Delete any comments on the web content article. |
-| Update | Edit the web content article. |
-| Subscribe | Receive notifications on new and modified web content articles. |
-| View | View the web content article. |
-| Add Discussion | Allows users to comment on the web content article. |
+| Permission        | Description                                                                                |
+|:------------------|:-------------------------------------------------------------------------------------------|
+| Update Discussion | Edit another user's comment on the web content article.                                    |
+| Delete            | Move the web content article to the [Recycle Bin](../../recycle-bin/recycle-bin-overview.md). |
+| Permissions       | View and modify the web content article's permissions.                                     |
+| Expire            | Set expiration dates for the web content article.                                          |
+| Delete Discussion | Delete any comments on the web content article.                                            |
+| Update            | Edit and modify the web content article.                                                   |
+| Subscribe         | Receive notifications on new and modified web content articles.                            |
+| View              | View the web content article.                                                              |
+| Add Discussion    | Comment on the web content article.                                                        |
+
+On the left, appear all permissions and users displayed when modifying your permissions. {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA126+` On the right is a simplified view showing the most common roles displayed when creating an article.
+
+![On the left, displayed permissions while modifying your permissions. On the right, displayed permissions while creating an article.](./assigning-permissions-to-web-content-articles/images/04.png)
 
 ## Related Topics
 

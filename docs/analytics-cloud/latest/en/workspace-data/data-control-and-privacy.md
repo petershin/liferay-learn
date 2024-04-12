@@ -74,7 +74,7 @@ Select a start date and an end date and click the *Download* button for a CSV lo
 
 ## Suppressed Users
 
-Suppressing users excludes them from further identity resolution activities. Note, a suppressed user is still considered an anonymous user and is still included in individual or segmented data. To view a list of suppressed individuals or to unsuppress an individual, click the *Manage* button.
+Suppressing users excludes them from further identity resolution activities. Note, a suppressed user is considered an anonymous user and is still included in individual or segmented data. To view a list of suppressed individuals or to unsuppress an individual, click the *Manage* button.
 
 ![View suppressed individuals or unsuppress individuals.](./data-control-and-privacy/images/06.png)
 
@@ -106,3 +106,4 @@ Visitors to your site can also choose to enable do not track from their browser.
 ## Related Topics
 
 - [Tracking Usage](../workspace-settings/tracking-usage.md)
+- [Enabling GDPR Compliance for Cookies](https://learn.liferay.com/web/guest/w/dxp/users-and-permissions/managing-user-data/enabling-gdpr-compliance-for-cookies)

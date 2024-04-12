@@ -53,7 +53,7 @@ Advanced Configuration contains additional options:
 To use the Custom Facet, you must know which non-analyzed keyword field to use in the configuration. 
 
 !!! tip
-    The Custom Facet uses keyword fields, but some `text` and `icu_collation_keyword` fields in Liferay are mapped with `keyword` sub-fields and are usable in the Custom Facet. See [Accessing Sub-Fields](#accessing-sub-fields) and the example on [creating facets for Custom Fields](#accessing-custom-fields).
+    The Custom Facet uses keyword fields, but some `text` and `icu_collation_keyword` fields are mapped with `keyword` sub-fields and are usable in the Custom Facet. See [Accessing Sub-Fields](#accessing-sub-fields) and the example on [creating facets for Custom Fields](#accessing-custom-fields).
 
 To browse the entire list of available fields, inspect the field mappings from *Control Panel* &rarr; *Configuration* &rarr; *Search* (click the *Field Mappings* tab). Here you'll see numerous indexes. Liferay's main content is indexed into the [company index](../../search-administration-and-tuning/elasticsearch-indexes-reference.md), which is named `liferay-[company id]` (e.g., `liferay-10819726314237`). To search and browse the mappings you can copy them locally and use your favorite editor.
 
@@ -66,7 +66,7 @@ Elasticsearch can index [multi-fields](https://www.elastic.co/guide/en/elasticse
 To use sub-fields in the Custom Facet, use dot notation (e.g., `fieldName.sub_field_name`). Examples include `assetTagNames.raw` and `title_en_US_sortable.keyword_lowercase`. Some [nested fields](#accessing-nested-fields) are mapped this way.
 
 !!! warning
-    You can see sub-fields when you view the mappings in Liferay, but they are not present in the document source. Therefore, you cannot find these fields using the [Display Results in Document Form setting](../search-results/configuring-the-search-results-widget#inspecting-search-engine-documents) in Search Results.
+    You can see sub-fields when you view the mappings in Liferay, but they are not present in the document source. That's why, in Search Results you cannot find these fields using the [Display Results in Document Form setting](../search-results/configuring-the-search-results-widget#inspecting-search-engine-documents).
 
 ### Using the Search Engine's API
 

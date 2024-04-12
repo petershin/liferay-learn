@@ -103,7 +103,7 @@ This returns a text label that describes how the discount rule is applied. See t
 
 ### Annotate the JSP Contributor Class for OSGi Registration
 
-```{literalinclude} ./adding-a-new-discount-rule-type/resources/liferay-m6a8.zip/m6a8-web/src/main/java/com/acme/m6a8/web/internal/commerce/discount/rule/type/CommerceDiscountRuleTypeJSPContributor.java
+```{literalinclude} ./adding-a-new-discount-rule-type/resources/liferay-m6a8.zip/m6a8-web/src/main/java/com/acme/m6a8/web/internal/commerce/discount/rule/type/M6A8CommerceDiscountRuleTypeJSPContributor.java
 :language: java
 :lines: 13-18
 ```
@@ -114,7 +114,7 @@ It is important to provide a distinct key for the JSP contributor so that Lifera
 
 Implement the following method:
 
-```{literalinclude} ./adding-a-new-discount-rule-type/resources/liferay-m6a8.zip/m6a8-web/src/main/java/com/acme/m6a8/web/internal/commerce/discount/rule/type/CommerceDiscountRuleTypeJSPContributor.java
+```{literalinclude} ./adding-a-new-discount-rule-type/resources/liferay-m6a8.zip/m6a8-web/src/main/java/com/acme/m6a8/web/internal/commerce/discount/rule/type/M6A8CommerceDiscountRuleTypeJSPContributor.java
 :dedent:1
 :language: java
 :lines: 21-25
@@ -136,7 +136,7 @@ The discount rule type comprises of the backend logic for evaluating when to app
 
 Define the `ServletContext` in the JSP contributor class using the bundle's symbolic name so it can find the JSP:
 
-```{literalinclude} ./adding-a-new-discount-rule-type/resources/liferay-m6a8.zip/m6a8-web/src/main/java/com/acme/m6a8/web/internal/commerce/discount/rule/type/CommerceDiscountRuleTypeJSPContributor.java
+```{literalinclude} ./adding-a-new-discount-rule-type/resources/liferay-m6a8.zip/m6a8-web/src/main/java/com/acme/m6a8/web/internal/commerce/discount/rule/type/M6A8CommerceDiscountRuleTypeJSPContributor.java
 :dedent:1
 :language: java
 :lines: 35-36
@@ -148,7 +148,7 @@ Declare a unique value for `Web-ContextPath` in the bnd.bnd file so the `Servlet
 
 #### Implement the `CommerceDiscountRuleTypeJSPContributor`'s `render` Method
 
-```{literalinclude} ./adding-a-new-discount-rule-type/resources/liferay-m6a8.zip/m6a8-web/src/main/java/com/acme/m6a8/web/internal/commerce/discount/rule/type/CommerceDiscountRuleTypeJSPContributor.java
+```{literalinclude} ./adding-a-new-discount-rule-type/resources/liferay-m6a8.zip/m6a8-web/src/main/java/com/acme/m6a8/web/internal/commerce/discount/rule/type/M6A8CommerceDiscountRuleTypeJSPContributor.java
 :dedent:1
 :language: java
 :lines: 20-30

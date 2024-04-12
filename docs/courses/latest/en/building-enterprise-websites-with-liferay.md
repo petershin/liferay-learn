@@ -100,7 +100,7 @@ Coming Soon
 :::
 
 :::{grid-item-card}  Module 8: Headless Delivery
-:link: ./building-enterprise-websites-with-liferay/module-8-delivery.md
+:link: ./building-enterprise-websites-with-liferay/module-8-headless-delivery.md
 
 Coming Soon
 :::

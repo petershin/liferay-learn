@@ -41,25 +41,27 @@ With the data set manager, you can create data set views and customize how users
 
 The Data Set View application is divided into tabs:
 
--  In the Details tab, see and edit the name (1) and description (2) of your data set view. Click *Save* once the alterations are complete.
+- In the Details tab, see and edit the name (1) and description (2) of your data set view. Click *Save* once the alterations are complete.
 
    You can also see the information about the REST Application, Schema, and Endpoint (3) used with that data set.
 
    ![In the Details tab, edit the name and description of your data set view.](./data-set-views/images/02.png)
 
--  In the [Fields tab](./data-set-views/data-set-view-fields.md), select which fields are displayed in your data set view and manage them.
+- In the [Visualization Modes tab](./data-set-views/data-set-view-fields.md), select fields and manage how they are displayed in your data set using three different visualization modes, Table, List, and Cards.
 
-   You can also edit the field, add a friendly label and localize it, choose a renderer for the field, and define it as sortable or not sortable.
+   Edit the fields, add friendly labels and localize them, choose a renderer for the fields, and define them as sortable or not sortable.
+
+   You can also customize the list and the card visualization modes by mapping their elements to fields from your data set.
 
    ![In the Fields tab, manage the fields displayed in the data set view.](./data-set-views/images/03.png)
 
--  In the [Filters tab](./data-set-views/data-set-view-filters.md), define filters that users can apply to the data set fragment.
+- In the [Filters tab](./data-set-views/data-set-view-filters.md), define filters that users can apply to the data set fragment.
 
    You can apply customized filters using [Client Extensions](../client-extensions.md), use date-type fields and show entries within a given period, or configure [Picklists](../objects/picklists.md) as the source of the options for the filter.
 
    ![In the Filters tab, provide filters to your data set view.](./data-set-views/images/04.png)
 
--  In the Sorting tab, set default sorting rules that are applied to the entries once the user visits a page with a Data Set fragment.
+- In the Sorting tab, set default sorting rules that are applied to the entries once the user visits a page with a Data Set fragment.
 
    Sort entries using a specific field as a criterion and in ascending or descending order.
 
@@ -67,7 +69,7 @@ The Data Set View application is divided into tabs:
 
    ![In the Sorting tab, set default sorting rules that are applied to the entries once the user visits a page with a Data Set fragment.](./data-set-views/images/05.png)
 
--  In the [Actions tab](./data-set-views/data-set-view-actions.md), create actions linked to the elements in the data set.
+- In the [Actions tab](./data-set-views/data-set-view-actions.md), create actions linked to the elements in the data set.
 
    With *Item Actions*, you can delete, edit, or display the details of a single item in the data set (e.g., a row in the table or an item from a list).
 
@@ -77,7 +79,7 @@ The Data Set View application is divided into tabs:
 
    ![In the Actions tab, create actions mapped to buttons and link them to different URLs.](./data-set-views/images/06.png)
 
--  In the Pagination tab, configure the pagination options for the data set view. Pagination divides a large set of data into smaller, more manageable parts.
+- In the Pagination tab, configure the pagination options for the data set view. Pagination divides a large set of data into smaller, more manageable parts.
 
    Set a default number of items per page and provide users with a list of options from which they can select their preferred number of items to display on each page.
 
@@ -92,4 +94,3 @@ The Data Set View application is divided into tabs:
 - [Data Set View Filters](./data-set-views/data-set-view-filters.md)
 - [Data Set View Actions](./data-set-views/data-set-view-actions.md)
 - [Using Data Set View Actions](./data-set-views/using-data-set-view-actions.md)
-

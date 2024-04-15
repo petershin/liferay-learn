@@ -1,5 +1,6 @@
 ---
 toc:
+- ./module-3-deploying-liferay/claritys-deployment-requirements.md
 - ./module-3-deploying-liferay/liferay-deployment-options.md
 - ./module-3-deploying-liferay/liferay-saas-onboarding.md
 uuid: 5d382dfe-d85b-409d-a0b7-0ea2bfaad155
@@ -19,10 +20,16 @@ In this module you will learn:
 * The distinctions between the three different Liferay deployment approaches: SaaS, PaaS, and Self-Hosted. Understand their strengths and why Liferay SaaS was the best choice for Clarity's business needs
 * The Liferay SaaS onboarding process and getting started with Liferay SaaS
 
-Up First: [Liferay Deployment Options](./module-3-deploying-liferay/liferay-deployment-options.md)
+Up First: [Clarity's Deployment Requirements](./module-3-deploying-liferay/claritys-deployment-requirements.md)
 
 ::::{grid} 2
 :gutter: 3 3 3 3
+
+:::{grid-item-card}  Clarity's Deployment Requirements
+:link: ./module-3-deploying-liferay/claritys-deployment-requirements.md
+
+Read about the specific deployment requirements Clarity has.
+:::
 
 :::{grid-item-card}  Liferay Deployment Options
 :link: ./module-3-deploying-liferay/liferay-deployment-options.md

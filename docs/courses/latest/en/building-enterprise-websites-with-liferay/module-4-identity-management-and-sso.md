@@ -1,5 +1,6 @@
 ---
 toc:
+- ./module-4-identity-management-and-sso/claritys-authentication-and-sso-requirements.md
 - ./module-4-identity-management-and-sso/liferay-authentication.md
 - ./module-4-identity-management-and-sso/managing-clarity-employees.md
 - ./module-4-identity-management-and-sso/using-okta-for-authentication-and-sso.md
@@ -52,10 +53,16 @@ In this module, you will learn:
 * How to configure an integration using Okta as SSO and IdM
 * How to distinguish the authentication experience for Clarity's employees, business partners, and guest users
 
-Up First: [Liferay Authentication](./module-4-identity-management-and-sso/liferay-authentication.md)
+Up First: [Clarity's Authentication and SSO Requirements](./module-4-identity-management-and-sso/claritys-authentication-and-sso-requirements.md)
 
 ::::{grid} 2
 :gutter: 3 3 3 3
+
+:::{grid-item-card}  Clarity's Authentication SSO Requirements
+:link: ./module-4-identity-management-and-sso/claritys-authentication-and-sso-requirements.md
+
+Read about the specific authentication and SSO requirements Clarity has.
+:::
 
 :::{grid-item-card}  Liferay Authentication
 :link: ./module-4-identity-management-and-sso/liferay-authentication.md

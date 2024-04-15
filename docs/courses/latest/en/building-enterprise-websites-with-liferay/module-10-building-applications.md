@@ -1,5 +1,6 @@
 ---
 toc:
+- ./module-10-building-applications/claritys-building-applications-requirements.md
 - ./module-10-building-applications/deploying-the-application.md
 - ./module-10-building-applications/modeling-data-structures.md
 - ./module-10-building-applications/implementing-business-logic.md
@@ -28,10 +29,16 @@ In this module, you will deploy the prebuilt solution yourself and learn about t
 
 You'll be able to explore the application as we discuss its corresponding features through the module.
 
-Up First: [Deploying the Application](./module-10-building-applications/deploying-the-application.md)
+Up First: [Clarity's Building Applications Requirements](./module-10-building-applications/claritys-building-applications-requirements.md)
 
 ::::{grid} 2
 :gutter: 3 3 3 3
+
+:::{grid-item-card} Clarity's Building Applications Requirements
+:link: ./module-10-building-applications/claritys-building-applications-requirements.md
+
+Read about the specific building applications requirements Clarity has.
+:::
 
 :::{grid-item-card} Deploying the Application
 :link: ./module-10-building-applications/deploying-the-application.md

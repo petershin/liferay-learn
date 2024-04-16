@@ -57,15 +57,15 @@ This is when a user views a form. See [Liferay Forms](https://learn.liferay.com/
 
 ## Page Depth Reached
 
-This is when a user scrolls the content of a site page. See [Understanding Pages](https://learn.liferay.com/en/w/dxp/site-building/creating-pages/understanding-pages/understanding-pages) to learn more.
+This is when a user scrolls the content of a site page. See [Understanding Pages](https://learn.liferay.com/en/w/dxp/site-building/creating-pages/understanding-pages) to learn more.
 
 ## Page Read
 
-This is when a user reads a site page (calculated based on assumptions of page content length and expected reading time). See [Understanding Pages](https://learn.liferay.com/en/w/dxp/site-building/creating-pages/understanding-pages/understanding-pages) to learn more.
+This is when a user reads a site page (calculated based on assumptions of page content length and expected reading time). See [Understanding Pages](https://learn.liferay.com/en/w/dxp/site-building/creating-pages/understanding-pages) to learn more.
 
 ## Page Viewed
 
-This is when a user views a site page. See [Understanding Pages](https://learn.liferay.com/en/w/dxp/site-building/creating-pages/understanding-pages/understanding-pages) to learn more.
+This is when a user views a site page. See [Understanding Pages](https://learn.liferay.com/en/w/dxp/site-building/creating-pages/understanding-pages) to learn more.
 
 ## Web Content Clicked
 

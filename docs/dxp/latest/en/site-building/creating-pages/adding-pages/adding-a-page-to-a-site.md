@@ -9,10 +9,10 @@ uuid: 1079119c-21f5-48e6-aebb-4a6dfc8262ea
 ---
 # Adding a Page to a Site
 
-The steps below describe how to add a new page to your site and configure the general options. To learn how to configure the remaining page settings, see [Configuring Individual Pages](../page-settings/configuring-individual-pages.md), or see [Configuring Page Sets](../page-settings/configuring-page-sets.md) to configure options for a [page set](../understanding-pages/understanding-pages.md#page-sets).
+The steps below describe how to add a new page to your site and configure the general options. To learn how to configure the remaining page settings, see [Configuring Individual Pages](../page-settings/configuring-individual-pages.md), or see [Configuring Page Sets](../page-settings/configuring-page-sets.md) to configure options for a [page set](../understanding-pages.md#page-sets).
 
 ```{note}
-For Liferay 7.4 U22+ and GA22+, private pages are disabled for new installations. To enable them, see [Enabling Private Pages](../understanding-pages/understanding-pages.md#enabling-private-pages) for more information.
+For Liferay 7.4 U22+ and GA22+, private pages are disabled for new installations. To enable them, see [Enabling Private Pages](../understanding-pages.md#enabling-private-pages) for more information.
 ```
 
 ## Adding a New Page
@@ -29,7 +29,7 @@ You can add a new page from the pages administration screen or from the page tre
 
 1. Under Page Template Sets, select a Basic or Global template.
 
-   To start with an empty [content page](../understanding-pages/understanding-pages.md#page-types), select the *Blank* [master page template](../defining-headers-and-footers/master-page-templates.md).
+   To start with an empty [content page](../understanding-pages.md#page-types), select the *Blank* [master page template](../defining-headers-and-footers/master-page-templates.md).
 
    Alternatively, select from other available templates.
 
@@ -107,7 +107,7 @@ If users are logged in and have permission to edit the page, and there are multi
 
 ## Related Topics
 
-[Understanding Pages](../understanding-pages/understanding-pages.md)
+[Understanding Pages](../understanding-pages.md)
 
 [Using Content Pages](../using-content-pages.md)
 

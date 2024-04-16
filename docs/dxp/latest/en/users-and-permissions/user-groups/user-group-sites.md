@@ -9,7 +9,7 @@ taxonomy-category-names:
 ---
 # User Group Sites
 
-With User Group Sites, you can create pages that are added automatically to each member’s [personal Site](../../site-building/sites/personal-sites.md). These pages are organized into two [page sets](../../site-building/creating-pages/understanding-pages/understanding-pages.md#page-sets), *My Profile* (public) and *My Dashboard* (private), just like personal Sites. If users belong to multiple User Groups, all pages from those groups are also added to their Sites.
+With User Group Sites, you can create pages that are added automatically to each member’s [personal Site](../../site-building/sites/personal-sites.md). These pages are organized into two [page sets](../../site-building/creating-pages/understanding-pages.md#page-sets), *My Profile* (public) and *My Dashboard* (private), just like personal Sites. If users belong to multiple User Groups, all pages from those groups are also added to their Sites.
 
 ![Create profile and dashboard pages that are added to each member's personal Site.](./user-group-sites/images/01.png)
 
@@ -18,7 +18,7 @@ By default, inherited pages can only be edited from the User Group Site and cann
 User Group Sites can be designed [manually](#designing-user-group-sites-manually) or using a [Site Template](#using-site-templates).
 
 ```{important}
-For Liferay 7.4 U22+ and GA22+, new Liferay installations include a release feature flag that disables the creation of Private Pages, including My Dashboard pages. To manually create custom dashboard pages for a User Group, Private Pages must be enabled for your Liferay system. See [Enabling Private Pages](../../site-building/creating-pages/understanding-pages/understanding-pages.md#enabling-private-pages) for more information.
+For Liferay 7.4 U22+ and GA22+, new Liferay installations include a release feature flag that disables the creation of Private Pages, including My Dashboard pages. To manually create custom dashboard pages for a User Group, Private Pages must be enabled for your Liferay system. See [Enabling Private Pages](../../site-building/creating-pages/understanding-pages.md#enabling-private-pages) for more information.
 
 Alternatively, when Private Pages are disabled, you can add My Dashboard pages using a Site Template. Pages added to the template and applied to the My Dashboard page set are treated as Private Pages.
 ```

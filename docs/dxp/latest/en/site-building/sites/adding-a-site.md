@@ -26,7 +26,7 @@ Sites are customizable spaces for building personalized digital experiences. Fol
 1. Enter a *Name* for the site.
 
    ```{note}
-   If [Private Pages](../creating-pages/understanding-pages/understanding-pages.md#enabling-private-pages) are enabled for your system, you, you can determine whether all pages inherited from a site template are private.
+   If [Private Pages](../creating-pages/understanding-pages.md#enabling-private-pages) are enabled for your system, you, you can determine whether all pages inherited from a site template are private.
    ```
 
 1. Click *Add* to begin creating your site.

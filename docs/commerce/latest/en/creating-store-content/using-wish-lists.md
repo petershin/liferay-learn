@@ -37,12 +37,12 @@ If you are using the Minium or Speedwell accelerator, you have access to the *My
 
 ### Adding a Wish List Widget to your Page
 
-Follow these steps to add the Wish Lists widget to a [Widget Page](https://learn.liferay.com/dxp/latest/en/site-building/creating-pages/understanding-pages/understanding-pages.html#widget-pages).
+Follow these steps to add the Wish Lists widget to a [Widget Page](https://learn.liferay.com/dxp/latest/en/site-building/creating-pages/understanding-pages.html#widget-pages).
 
 1. Click the *Add* (![Add](../images/icon-add-widget.png)) button from the top menu.
 
     ```{important}
-    If you are using a [*Content Page*](https://learn.liferay.com/dxp/latest/en/site-building/creating-pages/understanding-pages/understanding-pages.html#content-pages), there are two different ways to add a widget.
+    If you are using a [*Content Page*](https://learn.liferay.com/dxp/latest/en/site-building/creating-pages/understanding-pages.html#content-pages), there are two different ways to add a widget.
 
     1. Click the *Edit* (![Edit](../images/icon-edit-pencil.png)) button from the top menu and click the *Add* (![Add](../images/icon-add-widget.png)) button on the right side. The rest of the steps are the same as above.
 

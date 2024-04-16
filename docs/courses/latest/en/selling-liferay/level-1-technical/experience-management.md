@@ -42,7 +42,7 @@ In-order to better understand the different aspects of experience management, th
 
 ## Pages
 
-Demonstrating [pages](https://learn.liferay.com/dxp/latest/en/site-building/creating-pages/understanding-pages/understanding-pages.html) and how they are constructed is the logical place to start this section of a demo because pages are the primary method that is used in Liferay DXP to display content and applications to users. 
+Demonstrating [pages](https://learn.liferay.com/dxp/latest/en/site-building/creating-pages/understanding-pages.html) and how they are constructed is the logical place to start this section of a demo because pages are the primary method that is used in Liferay DXP to display content and applications to users. 
 
 Before starting the demo, introduce what the prospect is going to see, for example personas, user journeys, etc. With more context, the audience can better understand what is being shown to them when the demo begins. Tips for this include:
 

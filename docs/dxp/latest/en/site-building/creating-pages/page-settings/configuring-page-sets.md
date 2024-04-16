@@ -10,10 +10,10 @@ uuid: 05b26b7e-47e6-4d5e-9814-5bc02a7691f7
 # Configuring Page Sets
 
 ```{important}
-For Liferay 7.4 U22+ and GA22+, Private Pages are disabled for new installations. However, you can enable them if desired. See [Enabling Private Pages](../understanding-pages/understanding-pages.md#enabling-private-pages) for more information.
+For Liferay 7.4 U22+ and GA22+, Private Pages are disabled for new installations. However, you can enable them if desired. See [Enabling Private Pages](../understanding-pages.md#enabling-private-pages) for more information.
 ```
 
-When Private Pages are enabled, Site Pages are divided into public and private [Page Sets](../understanding-pages/understanding-pages.md#page-sets). These sets group Pages so you can apply bulk configurations to each type of Page. Settings configured for a Page Set apply to all grouped pages and override configurations at the Site level. Page Set configurations are overridden by [customizations to individual pages](./configuring-individual-pages.md).
+When Private Pages are enabled, Site Pages are divided into public and private [Page Sets](../understanding-pages.md#page-sets). These sets group Pages so you can apply bulk configurations to each type of Page. Settings configured for a Page Set apply to all grouped pages and override configurations at the Site level. Page Set configurations are overridden by [customizations to individual pages](./configuring-individual-pages.md).
 
 If Private Pages are disabled for your Liferay System, follow these steps to access bulk configuration Options for your Pages:
 

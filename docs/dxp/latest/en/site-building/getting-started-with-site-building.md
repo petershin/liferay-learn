@@ -19,7 +19,7 @@ When you first start and configure your Liferay DXP instance, a default site is 
 
 Liferay DXP includes all the tools you need to [build your site](./sites/adding-a-site.md) and [create pages](./creating-pages/adding-pages/adding-a-page-to-a-site.md). You can create a site from an existing [site template](./sites/site-templates.md), which includes a predefined set of pages with applications, or you can create a blank site and build it from the ground up.
 
-Pages are just as flexible. There are multiple page types. Create a page from an existing [page type](./creating-pages/understanding-pages/understanding-pages.md) or create one from one of the default [page templates](./creating-pages/adding-pages/creating-a-page-template.md), or a page template you've created yourself.
+Pages are just as flexible. There are multiple page types. Create a page from an existing [page type](./creating-pages/understanding-pages.md) or create one from one of the default [page templates](./creating-pages/adding-pages/creating-a-page-template.md), or a page template you've created yourself.
 
 Sites and pages can be organized hierarchically. You can add as many nested pages (child pages) and [nested sites](./sites/site-hierarchies.md) (child sites) as you like for the parent site or page. It is possible to have multiple sites across your Liferay DXP instance for various organizations, employees, etc. You can also share content and pages between sites with the [import and export options](./sites/exporting-importing-site-pages-and-content.md).
 

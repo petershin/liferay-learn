@@ -15,7 +15,7 @@ With *page templates*, you can create pages based on predefined layouts and cont
 
 ![Basic page templates are available.](./creating-a-page-template/images/01.png)
 
-You may also create your own [content page](../using-content-pages.md) templates and [widget page](../understanding-pages/understanding-pages.md#widget-pages) templates.
+You may also create your own [content page](../using-content-pages.md) templates and [widget page](../understanding-pages.md#widget-pages) templates.
 
 ```{note}
 For Liferay DXP 7.4+, Page Template Collections are called Page Template Sets in the Liferay UI.
@@ -39,7 +39,7 @@ The steps below show how to create and use widget and content page templates.
 
 1. Click *Save*.
 
-The new page template appears. Follow the instructions in [Building Content Pages](../using-content-pages/adding-elements-to-content-pages.md) to configure your content page template. Likewise, see [Widget Pages](../understanding-pages/understanding-pages.md#widget-pages) to create your widget page template.
+The new page template appears. Follow the instructions in [Building Content Pages](../using-content-pages/adding-elements-to-content-pages.md) to configure your content page template. Likewise, see [Widget Pages](../understanding-pages.md#widget-pages) to create your widget page template.
 
 You can edit the page template at any time by clicking *Actions* (![Actions icon](../../../images/icon-actions.png)) &rarr; *Edit* next to the page template in the set. 
 

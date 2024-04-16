@@ -78,7 +78,7 @@ The other fields on the form are for specific configuration generated with the p
 
    ![Locating OpenID configurations in the System Settings menu.](using-openid-connect/images/01.png)
 
-1. Add the provider by clicking the *Add* button.
+1. Add the provider by clicking *Add*.
 
 1. Use the information you received from the provider to fill out the form.
 
@@ -101,7 +101,7 @@ The other fields on the form are for specific configuration generated with the p
 
 1. Click *Save*. Now you're ready to enable OpenID Connect authentication.
 
-This configuration can be exported by clicking the connection's *Actions* (![Actions](../../../images/icon-actions.png)) button and clicking *Export*. An exported configuration results in this System Settings configuration file with a unique `[name]` field.
+This configuration can be exported by clicking the connection's *Actions* (![Actions](../../../images/icon-actions.png)) button and clicking *Export*. An exported configuration results in a System Settings configuration file with a unique `[name]` field.
 
 ```bash
 com.liferay.portal.security.sso.openid.connect.internal.configuration.OpenIdConnectProviderConfiguration-[name].config

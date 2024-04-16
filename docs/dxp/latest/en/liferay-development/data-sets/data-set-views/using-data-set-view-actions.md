@@ -27,9 +27,9 @@ Here are some examples for how to use data set view actions and perform differen
 | REST Schema      | Document                         |
 | REST Endpoint    | `/v1.0/sites/{siteId}/documents` |
 
-[Create a data set view](../data-set-views.md) for the Documents Data Set, name it *Documents Data Set View*, and add the `id`, `externalReferenceCode`, `title`, and `dateCreated` [fields](./data-set-view-fields.md) to it.
+[Create a data set view](../data-set-views.md) for the Documents Data Set, name it *Documents Data Set View*, and add the `id`, `externalReferenceCode`, `title`, and `dateCreated` [fields](./data-set-view-visualization-modes.md) to it.
 
-Then, [upload the documents to the Documents and Media application](../../../content-authoring-and-management/documents-and-media/uploading-and-managing/uploading-files.md). 
+Then, [upload the documents to the Documents and Media application](../../../content-authoring-and-management/documents-and-media/uploading-and-managing/uploading-files.md).
 
 ### Creating the Edit Action
 
@@ -127,6 +127,6 @@ The data set view displays your data set as you configured. Click on the Edit bu
 
 - [Data Set Views](../data-set-views.md)
 - [Creating Data Sets](../creating-data-sets.md)
-- [Data Set View Fields](./data-set-view-fields.md)
+- [Data Set View Fields](./data-set-view-visualization-modes.md)
 - [Data Set View Filters](./data-set-view-filters.md)
 - [Data Set View Actions](./data-set-view-actions.md)

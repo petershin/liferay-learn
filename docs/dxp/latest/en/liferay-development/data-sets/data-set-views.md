@@ -1,7 +1,7 @@
 ---
 toc:
   - ./data-set-views/data-set-view-actions.md
-  - ./data-set-views/data-set-view-fields.md
+  - ./data-set-views/data-set-view-visualization-modes.md
   - ./data-set-views/data-set-view-filters.md
   - ./data-set-views/using-data-set-view-actions.md
 uuid: a996ebe0-1f91-4867-a50d-dd81652cd9be
@@ -47,13 +47,13 @@ The Data Set View application is divided into tabs:
 
    ![In the Details tab, edit the name and description of your data set view.](./data-set-views/images/02.png)
 
-- In the [Visualization Modes tab](./data-set-views/data-set-view-fields.md), select fields and manage how they are displayed in your data set using three different visualization modes, Table, List, and Cards.
+- In the [Visualization Modes tab](./data-set-views/data-set-view-visualization-modes.md), select fields and manage how they are displayed in your data set using three different visualization modes: Table, List, and Cards.
 
    Edit the fields, add friendly labels and localize them, choose a renderer for the fields, and define them as sortable or not sortable.
 
    You can also customize the list and the card visualization modes by mapping their elements to fields from your data set.
 
-   ![In the Fields tab, manage the fields displayed in the data set view.](./data-set-views/images/03.png)
+   ![In the Visualization Modes tab, manage the fields and visualization modes used to display the data.](./data-set-views/images/03.png)
 
 - In the [Filters tab](./data-set-views/data-set-view-filters.md), define filters that users can apply to the data set fragment.
 
@@ -90,7 +90,7 @@ The Data Set View application is divided into tabs:
 ## Relevant Topics
 
 - [Creating Data Sets](./creating-data-sets.md)
-- [Data Set View Fields](./data-set-views/data-set-view-fields.md)
+- [Data Set View Visualization Modes](./data-set-views/data-set-view-visualization-modes.md)
 - [Data Set View Filters](./data-set-views/data-set-view-filters.md)
 - [Data Set View Actions](./data-set-views/data-set-view-actions.md)
 - [Using Data Set View Actions](./data-set-views/using-data-set-view-actions.md)

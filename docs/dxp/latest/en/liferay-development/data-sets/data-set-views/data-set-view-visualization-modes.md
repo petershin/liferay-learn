@@ -7,7 +7,7 @@ taxonomy-category-names:
     - Liferay SaaS
 ---
 
-# Data Set View Fields
+# Data Set View Visualization Modes
 
 {bdg-secondary}`Liferay DXP 2024.Q1 U112`
 {bdg-link-primary}`[Beta Feature](../../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
@@ -38,7 +38,7 @@ Use the data set manager to select the fields to display in your data set view. 
 
 With the fields in place, you can reorder them by using the drag icon on the left to drag and drop the field into the desired position.
 
-![Drag and drop fields to reorder them.](./data-set-view-fields/images/01.gif)
+![Drag and drop fields to reorder them.](./data-set-view-visualization-modes/images/01.gif)
 
 ## Editing Fields in the Data Set View
 
@@ -46,7 +46,7 @@ Now you can edit your fields to alter and localize their labels, select a render
 
 To edit a field, click *Actions* (![Actions menu](../../../images/icon-actions.png)) next to the field and select *Edit*.
 
-   ![In the Fields tab, you can change its label and localize it, choose a renderer and mark it as sortable.](./data-set-view-fields/images/02.png)
+   ![In the Fields tab, you can change its label and localize it, choose a renderer and mark it as sortable.](./data-set-view-visualization-modes/images/02.png)
 
 ### Editing and Localizing Labels
 
@@ -62,7 +62,7 @@ To localize the label,
 
    The localization status label next to the flag changes to `Translated` to indicate that the localization was successful.
 
-   ![The localization status label next to the flag changes to `Translated` to indicate that the localization was successful.](./data-set-view-fields/images/03.png)
+   ![The localization status label next to the flag changes to `Translated` to indicate that the localization was successful.](./data-set-view-visualization-modes/images/03.png)
 
 !!! note
     The localized text appears if users have the respective language applied to their portal.
@@ -76,7 +76,7 @@ A renderer (3) is a structured way to customize how a component appears. They ar
 
 Below on the left, the status, date, and date and time fields have the default renderer applied. On the right, the status, date, and date and time renderers are applied to the respective fields.
 
-![Status, date, and date and time fields without and with renderers applied.](./data-set-view-fields/images/04.png)
+![Status, date, and date and time fields without and with renderers applied.](./data-set-view-visualization-modes/images/04.png)
 
 <!-- once I have more information about renderers, I'll add a link to another section where I'll explain the types of renderers and what they do or what kind of structure/data/data type they need to work. -->
 
@@ -86,7 +86,7 @@ When a field is marked as sortable, users can sort the elements while using the 
 
 Users can sort entries based on the integer field initially. However, when the sortable checkbox is unchecked, sorting entries using the integer field as a filter becomes impossible (see below).
 
-![Define the fields as sortable, so users can sort elements when using the data set fragment.](./data-set-view-fields/images/05.gif)
+![Define the fields as sortable, so users can sort elements when using the data set fragment.](./data-set-view-visualization-modes/images/05.gif)
 
 ## Related Topics
 

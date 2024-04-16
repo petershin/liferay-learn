@@ -36,7 +36,7 @@ Under the Display Options section, you can find general settings common to all a
 
 ![Fill in the Label, localize it, and select an icon for your action.](./data-set-view-actions/images/01.png)
 
-1. Fill in the Label and, optionally, [localize](./data-set-view-fields.md#editing-and-localizing-labels) it.
+1. Fill in the Label and, optionally, [localize](./data-set-view-visualization-modes.md#editing-and-localizing-labels) it.
 
 1. (Optional) Choose an icon to show in your Data Set fragment.
 
@@ -221,7 +221,7 @@ To create status messages for [async](#async-action) and [headless](#headless-ac
 1. Select the *Error* tab and enter an error message.
 
 !!! tip
-    Confirmation and status messages can be localized. Read [Editing and Localizing Labels](../data-set-view-fields.md#editing-and-localizing-labels) to learn more.
+    Confirmation and status messages can be localized. Read [Editing and Localizing Labels](./data-set-view-visualization-modes.md#editing-and-localizing-labels) to learn more.
 
 ## Related Topics
 

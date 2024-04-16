@@ -38,7 +38,7 @@ Use Frontend Data Set Filter [client extensions](../../client-extensions.md) or 
 
    Each field can be associated with only one filter at a time.
 
-1. Fill in the *Name* of the filter and, optionally, [localize](./data-set-view-fields.md#editing-and-localizing-labels) it.
+1. Fill in the *Name* of the filter and, optionally, [localize](./data-set-view-visualization-modes.md#editing-and-localizing-labels) it.
 
 1. Select the *Field* by which you want to filter the entries.
 
@@ -54,7 +54,7 @@ Use date-type fields to pre-filter the displayed entries.
 
 1. Choose *Date Range* when adding a new filter.
 
-1. Fill in the *Name* of the filter and, optionally, [localize](./data-set-view-fields.md#editing-and-localizing-labels) it.
+1. Fill in the *Name* of the filter and, optionally, [localize](./data-set-view-visualization-modes.md#editing-and-localizing-labels) it.
 
 1. Select the *Field* by which you want to filter the entries.
 
@@ -74,7 +74,7 @@ Use picklist options as parameters for the filter.
 
 1. Choose *Selection* when adding a new filter.
 
-1. Fill in the *Name* of the filter and, optionally, [localize](./data-set-view-fields.md#editing-and-localizing-labels) it.
+1. Fill in the *Name* of the filter and, optionally, [localize](./data-set-view-visualization-modes.md#editing-and-localizing-labels) it.
 
 1. Select the *Field* by which you want to filter the entries.
 
@@ -96,5 +96,5 @@ Use picklist options as parameters for the filter.
 
 - [Data Set Views](../data-set-views.md)
 - [Creating Data Sets](../creating-data-sets.md)
-- [Data Set View Fields](./data-set-view-fields.md)
+- [Data Set View Fields](./data-set-view-visualization-modes.md)
 - [Data Set View Actions](./data-set-view-actions.md)

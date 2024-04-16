@@ -8,7 +8,7 @@ taxonomy-category-names:
 ---
 # Adding A Language
 
-Liferay currently supports about 50 languages out-of-the-box. [Translation](https://translate.liferay.com/) is complete for many of these languages and some are still in the translation process. Each language has its own [language properties file](https://github.com/liferay/liferay-portal/tree/master/modules/apps/portal-language/portal-language-lang/src/main/resources/content) containing its language keys.
+Liferay currently supports about 50 languages out-of-the-box. [Translation](https://translate.liferay.com/) is complete for many of these languages, and some are still in the translation process. Each language has its own [language properties file](https://github.com/liferay/liferay-portal/tree/master/modules/apps/portal-language/portal-language-lang/src/main/resources/content) containing its language keys.
 
 ## Adding A New Language
 
@@ -76,7 +76,17 @@ By default, the [`portal.properties`](https://github.com/liferay/liferay-portal/
 
 ## Adding a Flag Icon
 
-Liferay's out-of-the-box languages come with flag icons that show up on the language selector. To add a flag icon for your new language, use a [theme sprite map client extension](#adding-a-flag-icon-to-user-pages-using-a-theme-sprite-map-client-extension) or a [classic theme](#adding-a-flag-icon-to-user-pages-using-a-classic-theme) for user pages and an [admin theme](#adding-a-flag-icon-to-admin-pages-using-an-admin-theme) for admin pages. For this example, use the Ethiopian flag:
+Liferay's out-of-the-box languages have flag icons that appear on the language selector. 
+
+There are two ways to add a flag icon for your new language: 
+
+1. Use a [theme sprite map client extension](#adding-a-flag-icon-to-user-pages-using-a-theme-sprite-map-client-extension). 
+
+1. Use a [classic theme](#adding-a-flag-icon-to-user-pages-using-a-classic-theme) for user pages and an [admin theme](#adding-a-flag-icon-to-admin-pages-using-an-admin-theme) for admin pages. 
+
+The example below adds the Ethiopian flag to represent the Amharic language. 
+
+<!-- What's below is not HTML; it's SVG code. -Rich --> 
 
 ```html
 <symbol id="am-et" viewBox="0 0 1200 600">
@@ -97,11 +107,33 @@ Liferay's out-of-the-box languages come with flag icons that show up on the lang
 </symbol>
 ```
 
+<!-- I changed the order because our preference would be for people to use a client extension. -Rich -->
+
+### Adding a Flag Icon to User Pages Using a Theme Sprite Map Client Extension
+
+{bdg-secondary}`Liferay 7.4`
+
+1. Create a [theme sprite map client extension](../../customizing-liferays-look-and-feel/using-a-theme-spritemap-client-extension.md).
+
+1. In your `spritemap.svg`, add your flag's svg inside a `<symbol>` tag. The `id` should be your language code.
+
+1. Deploy your client extension to Liferay.
+
+1. Create a new Blank Page and add a Language Selector fragment. Your language has no flag icon.
+
+   ![The created language has no flag.](./adding-a-language/images/03.png)
+
+1. Add your client extension and publish the page. Your flag now appears on the Language Selector.
+
+   ![The Language Selector shows the icon from your client extension.](./adding-a-language/images/04.png)
+
+Use this client extension on every page or page template where you want your flag visible. For more information on Theme Sprite Map Client Extensions, see [Using a Theme Sprite Map Client Extension](../../customizing-liferays-look-and-feel/using-a-theme-spritemap-client-extension.md)
+
 ### Adding a Flag Icon to Admin Pages Using an Admin Theme
 
 1. Create a theme using Liferay's [theme generator](https://github.com/liferay/liferay-frontend-projects/tree/master/projects/js-themes-toolkit/packages/generator-liferay-theme).
 
-1. Modify `src/images/clay/icons.svg` and add your flag's svg inside a `<symbol>`. The id should be your language code.
+1. Modify `src/images/clay/icons.svg` and add your flag's svg inside a `<symbol>` tag. The `id` should be your language code.
 
 1. Update `package.json` to use the appropriate version of each dependency.
 
@@ -113,41 +145,24 @@ Liferay's out-of-the-box languages come with flag icons that show up on the lang
 
 For more information on themes, see [Themes](../../customizing-liferays-look-and-feel/themes).
 
-### Adding a Flag Icon to User Pages Using a Theme Sprite Map Client Extension
-
-{bdg-secondary}`Liferay 7.4`
-
-1. Create a theme sprite map client extension like the one in [Using a Theme Sprite Map Client Extension](../../customizing-liferays-look-and-feel/using-a-theme-spritemap-client-extension.md).
-
-1. In your `spritemap.svg`, add your flag's svg inside a `<symbol>`. The id should be your language code.
-
-1. Deploy your client extension to Liferay.
-
-1. Create a new Blank Page and add a Language Selector fragment. Your language has no flag icon.
-
-    ![The created language has no flag](./adding-a-language/images/03.png)
-
-1. Add your client extension and publish the page. Your flag should now be visible on the Language Selector.
-
-    ![The Language Selector show the icon from your client extension](./adding-a-language/images/04.png)
-
-Use this client extension on every page or page template where you want your flag visible. For more information on Theme Sprite Map Client Extensions, see [Using a Theme Sprite Map Client Extension](../../customizing-liferays-look-and-feel/using-a-theme-spritemap-client-extension.md)
-
 ### Adding a Flag Icon to User Pages Using a Classic Theme
 
 1. Create a theme using Liferay's [theme generator](https://github.com/liferay/liferay-frontend-projects/tree/master/projects/js-themes-toolkit/packages/generator-liferay-theme).
 
-1. Modify `src/images/clay/icons.svg` and add your flag's svg inside a `<symbol>`. The id should be your language code.
+1. Modify `src/images/clay/icons.svg` and add your flag's svg inside a `<symbol>` tag. The `id` should be your language code.
 
 1. Update `package.json` to use the appropriate version of each dependency.
 
 1. Modify `src/WEB-INF/liferay-look-and-feel.xml` to make this an admin theme. Follow the example in the [liferay-portal repository](https://github.com/liferay/liferay-portal/blob/master/modules/apps/frontend-theme/frontend-theme-classic/src/WEB-INF/liferay-look-and-feel.xml).
+
+<!-- Should the above step be here? This is using a classic theme, not an admin theme. -Rich -->
 
 1. Run `gulp deploy` on your root module directory.
 
 1. Add your theme to all pages or page templates where you want your flag icon. For more information on themes, see [Themes](../../customizing-liferays-look-and-feel/themes).
 
 ## Related Topics
+
 - [Site Localization](../../../site-building/site-settings/site-localization.md)
 - [Using a Theme Sprite Map Client Extension](../../customizing-liferays-look-and-feel/using-a-theme-spritemap-client-extension.md)
 - [Setting Up an Environment and Creating a Theme](../../customizing-liferays-look-and-feel/themes/theme-development/setting-up-an-environment-and-creating-a-theme.md)

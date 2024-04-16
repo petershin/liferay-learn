@@ -9,7 +9,7 @@ taxonomy-category-names:
 
 # Data Set View Actions
 
-{bdg-secondary}`Liferay DXP 2024.Q1 U112`
+{bdg-secondary}`Liferay DXP 2024.Q1+/Portal 7.4 GA112+`
 {bdg-link-primary}`[Beta Feature](../../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
 
 While managing data set views, define actions to be used in the data set fragment. There are two types of action, item and creation.
@@ -54,6 +54,8 @@ Under the Action Behavior section, select the action type. You can find specific
 Once the action is configured, click *Save*.
 
 ## Configuring Item and Creation Actions
+
+{bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA126+`
 
 You can further customize your data set view with item and creation actions.
 

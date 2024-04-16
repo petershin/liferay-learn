@@ -14,7 +14,7 @@ taxonomy-category-names:
 
 # Data Set Views
 
-{bdg-secondary}`Liferay DXP 2024.Q1 U112`
+{bdg-secondary}`Liferay DXP 2024.Q1+/Portal 7.4 GA112+`
 {bdg-link-primary}`[Beta Feature](../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
 
 With the data set manager, you can create data set views and customize how users see your data set. Choose which fields are displayed, define and pre-apply filters, set default sorting rules, redirect users to a different URL where they can perform actions, and configure pagination options for your data set view.
@@ -47,7 +47,7 @@ The Data Set View application is divided into tabs:
 
    ![In the Details tab, edit the name and description of your data set view.](./data-set-views/images/02.png)
 
-- In the [Visualization Modes tab](./data-set-views/data-set-view-visualization-modes.md), select fields and manage how they are displayed in your data set using three different visualization modes: Table, List, and Cards.
+- {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA126+` In the [Visualization Modes tab](./data-set-views/data-set-view-visualization-modes.md), select fields and manage how they are displayed in your data set using three different visualization modes: Table, List, and Cards.
 
    Edit the fields, add friendly labels and localize them, choose a renderer for the fields, and define them as sortable or not sortable.
 
@@ -69,7 +69,7 @@ The Data Set View application is divided into tabs:
 
    ![In the Sorting tab, set default sorting rules that are applied to the entries once the user visits a page with a Data Set fragment.](./data-set-views/images/05.png)
 
-- In the [Actions tab](./data-set-views/data-set-view-actions.md), create actions linked to the elements in the data set.
+- {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA126+` In the [Actions tab](./data-set-views/data-set-view-actions.md), create actions linked to the elements in the data set.
 
    With *Item Actions*, you can delete, edit, or display the details of a single item in the data set (e.g., a row in the table or an item from a list).
 

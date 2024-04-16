@@ -12,7 +12,7 @@ taxonomy-category-names:
 
 # Data Sets
 
-{bdg-secondary}`Liferay DXP 2024.Q1 U112`
+{bdg-secondary}`Liferay DXP 2024.Q1+/Portal 7.4 GA112+`
 {bdg-link-primary}`[Beta Feature](../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
 
 Data sets are like virtual containers that help organize and manage related data in Liferay. They gather information from different resources available through Liferay headless APIs (e.g., object definitions, blog posts, documents, and more), making it easier to handle everything in one place. Use the [API Explorer](../headless-delivery/consuming-apis/consuming-rest-services.md) to access the full list of available headless APIs.

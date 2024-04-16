@@ -9,9 +9,9 @@ taxonomy-category-names:
 ---
 # Implementing a Custom Low Stock Activity
 
-This tutorial adds a custom low stock activity by implementing the [CommerceLowStockActivity](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/stock/activity/CommerceLowStockActivity.java) interface.
+Here, you'll learn how to add a custom low stock activity by implementing the [CommerceLowStockActivity](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/stock/activity/CommerceLowStockActivity.java) interface.
 
-Low stock activities are actions that are automatically taken if products fall below their configured minimum stock quantities. Liferay provides one [default low stock activity](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-service/src/main/java/com/liferay/commerce/internal/stock/activity/CommerceLowStockActivityImpl.java), which unpublishes the product.
+Low stock activities are actions happen automatically if products fall below their configured minimum stock quantities. Liferay provides one [default low stock activity](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-service/src/main/java/com/liferay/commerce/internal/stock/activity/CommerceLowStockActivityImpl.java), which unpublishes the product.
 
 ![Low stock activity available out-of-the-box.](./implementing-a-custom-low-stock-activity/images/01.png)
 
@@ -47,31 +47,31 @@ Then, follow these steps:
    STARTED com.acme.j1e4.impl_1.0.0
    ```
 
-1. Verify that the example low stock activity was added. Open your browser to `https://localhost:8080`. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and navigate to *Commerce* → *Products*. Then click *Edit* within the menu for any product. If necessary, you can add a [product](../../product-management/creating-and-managing-products/product-types/creating-a-simple-product.md).
+1. Verify that the example low stock activity was added. Open your browser to `https://localhost:8080`. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Products*. Then click *Edit* within the menu for any product. If necessary, you can add a [product](../../product-management/creating-and-managing-products/product-types/creating-a-simple-product.md).
 
-   From there, navigate to *Configuration*. The new activity ("Log a warning message") will be present under the *Low Stock Action* dropdown.
+   From there, navigate to *Configuration*. The new activity ("Log a warning message") is present under the *Low Stock Action* drop-down.
 
 !!! note
-    In Liferay Commerce 2.1 and earlier, find the products page by navigating to *Control Panel* → *Commerce* → *Products*.
+    In Liferay Commerce 2.1 and earlier, find the products page by navigating to *Control Panel* &rarr; *Commerce* &rarr; *Products*.
 
 ![The newly added low stock activity](./implementing-a-custom-low-stock-activity/images/02.png)
 
 ## Anatomy of a Low Stock Activity
 
-This example consists of three main steps. First, you must annotate the class for OSGi registration. Second, review the `CommerceLowStockActivity` interface. Finally, you must complete the implementation of the `CommerceLowStockActivity` interface.
+This example has three steps: 
 
-- [Annotate the class for OSGi Registration](#annotate-the-class-for-osgi-registration)
-- [Review the `CommerceLowStockActivity` interface](#review-the-commercelowstockactivity-interface)
-- [Complete the Low Stock Activity](#complete-the-low-stock-activity)
+1. [Annotate the class for OSGi Registration](#annotate-the-class-for-osgi-registration)
+1. [Review the `CommerceLowStockActivity` interface](#review-the-commercelowstockactivity-interface)
+1. [Complete the Low Stock Activity](#complete-the-low-stock-activity)
 
-### Annotate the class for OSGi Registration
+### Annotate the Class for OSGi Registration
 
 ```{literalinclude} ./implementing-a-custom-low-stock-activity/resources/liferay-j1e4.zip/j1e4-impl/src/main/java/com/acme/j1e4/internal/commerce/stock/activity/J1E4CommerceLowStockActivity.java
     :language: java
     :lines: 18-25
 ```
 
-It is important to provide a distinct key for the low stock activity so that Liferay can distinguish the new activity from others in the [low stock activity registry](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-service/src/main/java/com/liferay/commerce/internal/stock/activity/CommerceLowStockActivityRegistryImpl.java). Reusing a key that is already in use will override the existing associated activity.
+It's important to provide a distinct key for the low stock activity so that Liferay can distinguish the new activity from others in the [low stock activity registry](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-service/src/main/java/com/liferay/commerce/internal/stock/activity/CommerceLowStockActivityRegistryImpl.java). Reusing a key that is already in use will override the existing associated activity.
 
 The `commerce.low.stock.activity.priority` value indicates how far into the list of low stock activities this activity appears in the UI. For example, the [Set as Unpublished activity](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-service/src/main/java/com/liferay/commerce/internal/stock/activity/CommerceLowStockActivityImpl.java) has a value of 10. Giving this low stock activity a value of 9 ensures that it appears immediately before the Set as Unpublished" activity.
 
@@ -83,13 +83,13 @@ Implement the following methods:
 public void execute(CPInstance cpInstance) throws PortalException;
 ```
 
-This method will be where the business logic is implemented for the custom activity.
+This method is where you implement the business logic for the custom activity.
 
 ```java
 public String getKey();
 ```
 
-This provides a unique identifier for the low stock activity in the low stock activity registry. The key can be used to fetch the low stock activity from the registry.
+This provides a unique identifier for the low stock activity in the low stock activity registry. You can use the key to fetch the low stock activity from the registry.
 
 ```java
 public String getLabel(Locale locale);
@@ -126,8 +126,6 @@ Add the language key and its value to a [Language.properties](https://github.com
 ```
 
 See [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application) for more information.
-
-## Conclusion
 
 Congratulations! You now know the basics for adding a new low stock activity to Liferay by implementing the `CommerceLowStockActivity` interface.
 

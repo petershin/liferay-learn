@@ -7,6 +7,7 @@ toc:
   - ./accounts/account-management-widget.md
   - ./accounts/using-workflow-with-accounts.md
   - ./accounts/channel-defaults.md
+  - ./accounts/contacts.md
 uuid: ed55c175-f9b4-40ac-b41b-9238b1467a11
 taxonomy-category-names:
 - Security

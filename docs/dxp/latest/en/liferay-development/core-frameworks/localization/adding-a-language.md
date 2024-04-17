@@ -111,17 +111,17 @@ The example below adds the Ethiopian flag to represent the Amharic language.
 
 1. Create a [theme sprite map client extension](../../customizing-liferays-look-and-feel/using-a-theme-spritemap-client-extension.md).
 
-1. In your `spritemap.svg`, add your flag's svg inside a `<symbol>` tag. The `id` should be your language code.
+1. In your `spritemap.svg`, add your flag's SVG inside a `<symbol>` tag. The `id` should be your language code.
 
 1. Deploy your client extension to Liferay.
 
 1. Create a new Blank Page and add a Language Selector fragment. Your language has no flag icon.
 
-    ![The created language has no flag.](./adding-a-language/images/03.png)
+   ![The created language has no flag.](./adding-a-language/images/03.png)
 
 1. Add your client extension and publish the page. Your flag now appears on the Language Selector.
 
-    ![The Language Selector shows the icon from your client extension.](./adding-a-language/images/04.png)
+   ![The Language Selector shows the icon from your client extension.](./adding-a-language/images/04.png)
 
 Use this client extension on every page or page template where you want your flag visible. For more information on Theme Sprite Map Client Extensions, see [Using a Theme Sprite Map Client Extension](../../customizing-liferays-look-and-feel/using-a-theme-spritemap-client-extension.md).
 

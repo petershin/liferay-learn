@@ -1,4 +1,7 @@
 ---
+toc:
+  - ./understanding-pages/types-of-utility-pages.md
+  - ./understanding-pages/other-page-types.md
 taxonomy-category-names:
 - Sites
 - Pages and Composition

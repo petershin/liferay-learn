@@ -13,7 +13,7 @@ uuid: 688335ec-a749-4c33-a940-0b19dd493a9f
 
 ## Utility Pages
 
-Utility pages are content pages you can apply to system-level pages, like 404 error pages. See [Using Utility Pages](../adding-pages/using-utility-pages.md) for more information.
+Utility pages are content pages you can apply to system-level pages, like 404 error pages. See [Types of Utility Pages](./types-of-utility-pages.md) for more information.
 
 ![You can create 404 error page like this one using a utility page.](./other-page-types/images/01.png)
 

@@ -87,6 +87,10 @@ The Data Set View application is divided into tabs:
 
    ![In the Pagination tab, set a default number of items per page and add a list of defined values from which users can select their preferred number of items to display on a page.](./data-set-views/images/07.png)
 
+- In the Settings tab, configure your data set view (e.g., set a default visualization mode).
+
+   ![In the Settings tab, you can configure your data set view.](./data-set-views/images/08.png)
+
 ## Relevant Topics
 
 - [Creating Data Sets](./creating-data-sets.md)

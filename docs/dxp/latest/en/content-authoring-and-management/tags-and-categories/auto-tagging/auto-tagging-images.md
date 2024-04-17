@@ -13,17 +13,17 @@ uuid: 231895b7-3e9b-42d4-a89f-91d2e8e9f3ac
 Once [asset auto tagging has been enabled](./configuring-asset-auto-tagging.md), you can also enable image auto tagging. Image auto tagging tags images uploaded to the Documents and Media Library.
 
 !!! tip
-Currently, tags applied automatically are English only.
+    Currently, tags applied automatically are English only.
 
-By default, Image Auto Tagging is disabled by default. In addition to enabling Auto Tagging in DXP, you must also configure an image tagging provider. Three providers are available:
+By default, Image Auto Tagging is disabled by default. In addition to enabling Auto Tagging in DXP, you must also configure an image tagging provider. Four providers are available:
 
-- [**TensorFlow:**](#configuring-tensorflow-image-auto-tagging) An open-source library that provides machine learning capabilities. TensorFlow image auto-tagging in DXP is based on [TensorFlow's `LabelImage` sample for Java](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/java/src/main/java/org/tensorflow/examples/LabelImage.java), and uses the Inception5h model. Use this with caution, since its accuracy is limited.
+1. [**TensorFlow:**](#configuring-tensorflow-image-auto-tagging) An open-source library that provides machine learning capabilities. TensorFlow image auto-tagging in DXP is based on [TensorFlow's `LabelImage` sample for Java](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/java/src/main/java/org/tensorflow/examples/LabelImage.java), and uses the Inception5h model. Use this with caution, since its accuracy is limited.
 
-- [**Google Cloud Vision:**](#configuring-google-cloud-vision) Uses the [Google Cloud Vision API](https://cloud.google.com/vision/) to automatically tag images.
+1. [**Google Cloud Vision:**](#configuring-google-cloud-vision) Uses the [Google Cloud Vision API](https://cloud.google.com/vision/) to automatically tag images.
 
-- [**Microsoft Cognitive Services:**](#configuring-microsoft-cognitive-services) Uses [Microsoft Cognitive Services](https://azure.microsoft.com/en-us/services/cognitive-services/) to automatically tag images.
+1. [**Microsoft Cognitive Services:**](#configuring-microsoft-cognitive-services) Uses [Microsoft Cognitive Services](https://azure.microsoft.com/en-us/services/cognitive-services/) to automatically tag images.
 
-- [**OpenNLP:**](#configuring-opennlp-text-auto-tagging) [OpenNLP](https://opennlp.apache.org/) is an open-source library used for natural language processing tasks like tokenization, part-of-speech tagging, and named entity recognition.
+1. [**OpenNLP:**](#configuring-opennlp-text-auto-tagging) [OpenNLP](https://opennlp.apache.org/) is an open-source library used for natural language processing tasks like tokenization, part-of-speech tagging, and named entity recognition.
 
 ![The tags freight car and electric locomotive were automatically applied to this image.](./auto-tagging-images/images/01.png)
 
@@ -104,6 +104,8 @@ The form asks for this information:
 The Microsoft Cognitive Services provider has been configured. For more information, see the [Microsoft Cognitive Services documentation](https://docs.microsoft.com/en-us/azure/cognitive-services/).
 
 If you have more than one virtual instance, you can configure each instance individually. Navigate to the *Control Panel* &rarr; *Instance Settings*. Click *Assets* then configure the provider there.
+
+<!-- Where is OpenNLP? It was added to the list above, but there's no section for it. -Rich --> 
 
 ## Related Topics
 

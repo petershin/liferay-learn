@@ -21,11 +21,12 @@ Text Auto Tagging is disabled by default. You must [enable Auto Tagging](./confi
 - **OpenNLP Text Auto Tagging**: Uses the open source [Apache OpenNLP](https://opennlp.apache.org/) library to analyze and automatically tag portal content. Three models are used: location name finder, organization finder, and person name finder.
 
 !!! tip
-Use this provider with caution because its accuracy may be limited.
+    Use this provider with caution because its accuracy may be limited.
 
 ## Configuring Google Cloud Natural Language Text Auto Tagging
 
-1. Click the *Global Menu* &rarr; *Control Panel*
+1. Click the *Global Menu* &rarr; *Control Panel*. 
+ 
 1. Click *System Settings*.
 
    ![Navigate to the System Settings.](./auto-tagging-assets/images/01.png)
@@ -35,12 +36,14 @@ Use this provider with caution because its accuracy may be limited.
    ![Click on Assets.](./auto-tagging-assets/images/02.png)
 
 1. Under *VIRTUAL INSTANCE SCOPE*, click *Google Cloud Natural Language Text Auto Tagging*.
+ 
 1. Fill out the form.
+ 
 1. Click *Save* when finished.
 
 The form asks for this information:
 
- **API Key:** The API key to use for the Google Cloud Natural Language API. For more information, see [Google's documentation on API keys](https://cloud.google.com/docs/authentication/api-keys).
+**API Key:** The API key to use for the Google Cloud Natural Language API. For more information, see [Google's documentation on API keys](https://cloud.google.com/docs/authentication/api-keys).
 
 **Classification Endpoint Enabled:** Whether to enable auto tagging of text using the Google Cloud Natural Language API Classification endpoint.
 
@@ -61,10 +64,15 @@ If there are multiple virtual instances on the server, you can override these se
 ## Configuring OpenNLP Text Auto Tagging
 
 1. Click the *Global Menu* &rarr; *Control Panel*
+
 1. Click *System Settings*.
+
 1. Click *Assets* under *Content and Data*.
+
 1. Under *VIRTUAL INSTANCE SCOPE*, click *OpenNLP Text Auto Tagging*.
+
 1. Fill out the form.
+
 1. Click *Save* when finished.
 
 The form asks for this information:

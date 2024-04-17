@@ -55,7 +55,7 @@ Once the action is configured, click *Save*.
 
 ## Configuring Item and Creation Actions
 
-{bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA126+`
+{bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+`
 
 You can further customize your data set view with item and creation actions.
 

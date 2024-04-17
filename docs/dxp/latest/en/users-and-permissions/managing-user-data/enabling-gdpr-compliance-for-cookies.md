@@ -60,7 +60,7 @@ Your cookie policy appears when users log in through a banner. It displays the t
 
 The Consent Panel appears when users click the *Configuration* link on the banner. Users can use it to select the types of cookies they consent to have stored.
 
-![Consent Panel Page](./enabling-gdpr-compliance-for-cookies/images/07.png)
+![Consent Panel Page](./enabling-gdpr-compliance-for-cookies/images/06.png)
 
 You may customize the following options:
 

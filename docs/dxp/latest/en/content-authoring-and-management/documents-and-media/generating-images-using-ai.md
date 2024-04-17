@@ -10,7 +10,7 @@ uuid: 61c12f13-b84c-4d35-80a4-cc58f2289cba
 
 # Generating Images Using AI
 
-{bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA126+`
+{bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+`
 
 !!! important
     ChatGPT integration for Documents and Media is currently behind a release feature flag (LPD-10793). Read [Release Feature Flags](../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information.

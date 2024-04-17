@@ -35,7 +35,7 @@ Your new article is created/submitted for [workflow](../../../process-automation
 
 <!-- Adjust this information once this feature is released. I can merge the sections into one. - Eric -->
 
-{bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA126+`
+{bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+`
 
 !!! important
     This feature is currently behind a release feature flag (LPD-15596). Read [Release Feature Flags](../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information.

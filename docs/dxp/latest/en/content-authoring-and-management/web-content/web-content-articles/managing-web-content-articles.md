@@ -51,7 +51,7 @@ To set the article's visibility during creation,
 
    You can also set permissions for Guests and Site Members by clicking on *More Options*. See [Assigning Permissions to Web Content Articles](./assigning-permissions-to-web-content-articles.md) to learn more.
 
-   {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA126+` Set the permissions using the 
+   {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+` Set the permissions using the 
 
    <!-- This article is under KM review and was added in LRDOCS-12873. It'll probably be published before. Eric -->
 

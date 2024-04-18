@@ -12,10 +12,18 @@ taxonomy-category-names:
 uuid: a9274b09-7106-430d-927f-26472612acd4
 ---
 
-# Auto Tagging
+# Auto-Tagging
 
-<!-- This is an introductory article without the introduction. Please write the introduction any time you see something like this in the repo; it shouldn't be like this. -Rich --> 
+Auto-tagging is the process of assigning descriptive tags or labels to digital content automatically without manual intervention. When having multiple content, auto-tagging organizes and groups this content by determining related tags, which is assigned according to attributes, context, or metadata.
 
-* [Configuring Asset Auto Tagging](./auto-tagging/configuring-asset-auto-tagging.md)
-* [Auto Tagging Assets](./auto-tagging/auto-tagging-assets.md)
-* [Auto Tagging Images](./auto-tagging/auto-tagging-images.md)
+Liferay offers the option for automatic tagging assets and images within your work processes, allowing the user to configure it at three levels: *Global*, *Virtual Instance* and *Site*. The user can review and adjust tags to meet the accuracy and validity of their specific requirements. The following articles will teach how to configure and use this functionality.
+
+:::{grid-item-card} Configuring Asset Auto-Tagging
+:link: ./auto-tagging/configuring-asset-auto-tagging.md
+:::
+:::{grid-item-card} Auto-Tagging Assets
+:link: ./auto-tagging/auto-tagging-assets.md
+:::
+:::{grid-item-card} Auto-Tagging Images
+:link: ./auto-tagging/auto-tagging-images.md
+:::

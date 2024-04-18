@@ -56,11 +56,14 @@ This tutorial guides you through the basic steps needed to integrate PingOne, yo
 
 1. Navigate to the *Configuration* tab and click the Edit icon.
 
-    1. Signing Certificate: choose between `Sign Assertion`, `Sign Response`, or `Sign Assertion & Response`
+    1. Signing Certificate: Choose between `Sign Response` or `Sign Assertion & Response` depending on your use case. See [Defining signature policy (SAML)](https://docs.pingidentity.com/r/en-us/pingfederate-120/help_spprotocolsettingstasklet_spsignaturepolicystate) from PingOne to learn more about these choices.
 
     1. Signing Algorithm: `RSA_SHA256`
 
-    1. Encryption: Leave unchecked
+    1. Encryption: Leave unchecked.
+
+        !!! note
+            For the purpose of this tutorial, we are leaving this unchecked, but we recommend encryption. Enabling encryption requires additional configuration with your infrastructure.
 
     1. SLO endpoint: `https://[your_instance_url]/c/portal/saml/slo`
 
@@ -83,7 +86,7 @@ This tutorial guides you through the basic steps needed to integrate PingOne, yo
 1. Click *Save*.
 
     !!! note
-    Create your users by navigating to Directory &rarr; Users.
+        Create your users by navigating to Directory &rarr; Users.
 
 1. Navigate to the *Configuration* tab, and download the Metadata .xml file. We will use it while configuring Liferay DXP
 

@@ -70,7 +70,7 @@ To set the web content article's visibility and permissions before {bdg-secondar
 
 1. Click *Publish*.
 
-Once you publish your web content article, modify its permissions in one of three ways:
+Once you publish your web content article, it becomes accessible to any user with a guest role. However, you can restrict the article's [visibility](#setting-the-web-content-articles-visibility-and-permissions) to specific user roles or modify [permissions](./assigning-permissions-to-web-content-articles.md) in one of three ways:
 
 - In the editing page (1), open the *Options* menu (![Options menu icon](../../../images/icon-options.png)) at the top right corner and select *Permissions*.
 
@@ -80,11 +80,12 @@ Once you publish your web content article, modify its permissions in one of thre
 
 ![Set permissions in the editing page or through the web content application.](./adding-a-basic-web-content-article/images/04.png)
 
-Note that once your web content article is published, it can be viewed by everyone with the guest role by default, but you can set its [visibility](#setting-the-web-content-articles-visibility-and-permissions) to specific roles or remove [permission](./assigning-permissions-to-web-content-articles.md) to view the article to restrict its visibility.
+{bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+` When an article has restricted visibility, the Not Visible to Guest Users icon (![Not Visible to Guest Users icon](../../../images/icon-password-policies.png)) is displayed next to the article's name in various situations, such as in the web content article application, during editing, or when selecting an article for a web content display fragment.
 
-{bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+` When an article has restricted visibility, a Not Visible to Guest Users icon (![Not Visible to Guest Users icon](../../../images/icon-password-policies.png)) is displayed next to it.
+!!! tip
+    If the Not Visible to Guest Users icon does not appear after managing the view permission for web content articles in the web content article application, try refreshing your page.
 
-![Identify which articles have restrictions to their visibility.](./adding-a-basic-web-content-article/images/05.png)
+![Use the Not Visible to Guest Users icon to identify which articles have restrictions to their visibility.](./adding-a-basic-web-content-article/images/05.png)
 
 ### Scheduling A Web Content Article's Publication for a Future Date
 

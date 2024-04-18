@@ -111,52 +111,6 @@ When you reschedule the same publication multiple times, you can view all versio
 
 ![Schedule the same web content article multiple times.](./adding-a-basic-web-content-article/images/07.png)
 
-### Web Content Article Permissions Reference
-
-| Permission        | Description                                                                                |
-|:------------------|:-------------------------------------------------------------------------------------------|
-| Update Discussion | Edit another user's comment on the web content article.                                    |
-| Delete            | Move the web content article to the [Recycle Bin](../../recycle-bin/recycle-bin-overview.md). |
-| Permissions       | View and modify the web content article's permissions.                                     |
-| Expire            | Set expiration dates for the web content article.                                              |
-| Delete Discussion | Delete any comments on the web content article.                                            |
-| Update            | Edit and modify the web content article.                                                   |
-| Subscribe         | Receive notifications on new and modified web content articles.                            |
-| View              | View the web content article.                                                              |
-| Add Discussion    | Comment on the web content article.                                                        |
-
-On the left, appear all permissions and users displayed when modifying your permissions. {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA126+` On the right is a simplified view showing the most common roles displayed when creating an article.
-
-![On the left, displayed permissions while modifying your permissions. On the right, displayed permissions while creating an article.](./adding-a-basic-web-content-article/images/06.png)
-
-## Previewing Web Content Articles
-
-You can preview your content using the selected default template or display page template before publishing, so you can make adjustments to ensure your content appears as intended to users.
-
-### Previewing a Web Content Article Using a Template
-
-1. In the properties tab, select a template to preview the web content article.
-
-1. Click *Preview* (![Preview](../../../images/icon-preview.png)).
-
-   ![The default template has a preview button that looks like an eye.](./adding-a-basic-web-content-article/images/07.png)
-
-!!! note
-    Only web content articles that have been published or saved as a draft can be previewed.
-
-### Previewing a Web Content Articles Using a Display Page
-
-You can preview web content using a display page template from any site or asset library.
-
-1. In the properties tab, select a site and display page to preview the web content article.
-
-1. Click *Preview* (![Preview](../../../images/icon-preview.png)).
-
-   ![When you've selected a display page template, use the preview button in the properties tab.](./adding-a-basic-web-content-article/images/08.png)
-
-!!! note
-    Selecting the Preview button saves a draft of the web content article before displaying the preview.
-
 ## Properties Tab
 
 When creating or editing a Basic Web Content article, the following options appear in the sidebar menu's Properties tab:

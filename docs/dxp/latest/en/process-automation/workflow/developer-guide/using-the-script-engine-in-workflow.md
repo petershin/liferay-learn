@@ -8,6 +8,9 @@ uuid: 8be1370c-e992-44c5-bbf5-63c3016c54c7
 ---
 # Using the Script Engine in Workflow
 
+!!! important
+    As of DXP 2024.Q2/Portal 7.4 GA120, scripting is disabled by default. You can enable it in System Settings &rarr; Script Management (under the Security category).
+
 Add Groovy scripts to [your XML workflow definition](./crafting-xml-workflow-definitions.md) to inject logic and access Liferay's Java services in your workflow. Scripts run during workflow execution.
 
 * [Adding Scripts to Workflow Nodes](#adding-scripts-to-workflow-nodes)

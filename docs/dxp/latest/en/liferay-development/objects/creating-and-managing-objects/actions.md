@@ -31,9 +31,9 @@ Liferay Objects provides these action types:
 | Webhook | Deliver a payload to a URL. |
 | Groovy Script | Execute [Groovy](https://groovy-lang.org/) scripts. |
 
-```{important}
-Groovy script actions are only available for Liferay PaaS and Liferay DXP Self-Hosted.
-```
+!!! important
+    * Groovy script actions are only available for Liferay PaaS and Liferay DXP Self-Hosted.
+    * As of DXP 2024.Q2/Portal 7.4 GA120, scripting is disabled by default. You can enable it in System Settings &rarr; Script Management (under the Security category).
 
 <!--TASK: When client extensions docs are ready, mention being able to add Action Types and Notification Types.-->
 

@@ -9,6 +9,9 @@ uuid: cf8367f8-a297-4fe1-be3c-9ea3437f06f5
 ---
 # Crafting XML Workflow Definitions
 
+!!! important
+    As of DXP 2024.Q2/Portal 7.4 GA120, scripting is disabled by default. You can enable it in System Settings &rarr; Script Management (under the Security category).
+
 All Workflow definitions in Liferay DXP are written in XML format. To craft your own workflow definition, remember that definitions should reflect real life approval processes.
 
 ```{tip}

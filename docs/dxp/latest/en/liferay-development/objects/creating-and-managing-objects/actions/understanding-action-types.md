@@ -21,9 +21,9 @@ Actions define custom operations triggered by object entry events. Liferay provi
 | [Webhook](#webhook)                               | Deliver a payload to a URL.                                   |
 | [Groovy Script](#groovy-script)                   | Execute [Groovy](https://groovy-lang.org/) scripts.           |
 
-```{important}
-Groovy script actions are only available for Liferay PaaS and Liferay DXP Self-Hosted.
-```
+!!! important
+    * Groovy script actions are only available for Liferay PaaS and Liferay DXP Self-Hosted.
+    * As of DXP 2024.Q2/Portal 7.4 GA120, scripting is disabled by default. You can enable it in System Settings &rarr; Script Management (under the Security category).
 
 <!--TASK: When Client Extensions documentation is ready, note that you can create custom object actions. -->
 
@@ -74,6 +74,9 @@ Webhook actions deliver a data payload to a set URL. You must enter a target URL
 <!--TASK: When Client Extensions documentation is ready, recommend using client extensions instead, since it can include OAuth. -->
 
 ## Groovy Script
+
+!!! important
+    As of DXP 2024.Q2/Portal 7.4 GA120, scripting is disabled by default. You can enable it in System Settings &rarr; Script Management (under the Security category).
 
 Groovy Script actions execute Groovy scripts. Enter your script into the provided code window. For Liferay 7.4 U33+/GA33+, Liferay uses the [GroovyShell class](https://docs.groovy-lang.org/latest/html/api/groovy/lang/GroovyShell.html) to validate Groovy script syntax when you click Save. If the script is invalid, Liferay displays a general error message.
 

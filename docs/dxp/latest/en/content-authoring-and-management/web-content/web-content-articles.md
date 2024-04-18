@@ -1,12 +1,12 @@
 ---
 toc:
   - ./web-content-articles/adding-a-basic-web-content-article.md
+  - ./web-content-articles/previewing-web-content-articles.md
   - ./web-content-articles/managing-web-content-articles.md
   - ./web-content-articles/filtering-and-sorting-web-content-articles.md
   - ./web-content-articles/using-expiration-and-review-dates-in-web-content.md
   - ./web-content-articles/generating-text-content-using-ai.md
   - ./web-content-articles/assigning-permissions-to-web-content-articles.md
-  - ./web-content-articles/previewing-web-content-articles.md
 taxonomy-category-names:
 - Content Management System
 - Web Content and Structures
@@ -18,10 +18,42 @@ uuid: 37e47bd5-4bf0-4194-932f-f4076c16d1e6
 
 # Web Content Articles
 
-- [Adding a Basic Web Content Article](./web-content-articles/adding-a-basic-web-content-article.md)
-- [Managing Web Content Articles](./web-content-articles/managing-web-content-articles.md)
-- [Filtering and Sorting Web Content Articles](./web-content-articles/filtering-and-sorting-web-content-articles.md)
-- [Using Expiration and Review Dates in Web Content](./web-content-articles/using-expiration-and-review-dates-in-web-content.md)
-- [Generating Text Content Using AI](./web-content-articles/generating-text-content-using-ai.md)
-- [Assigning Permissions to Web Content Articles](./web-content-articles/assigning-permissions-to-web-content-articles.md)
-- [Previewing Web Content Articles](./web-content-articles/previewing-web-content-articles.md)
+Web content articles are dynamic content entries that can be created, edited, and managed through Liferay’s built-in content management system (CMS).
+
+These articles are versatile and can be used for multiple purposes, such as publishing news, blog posts, or product descriptions. You can even [generate text content using AI integration](./web-content-articles/generating-text-content-using-ai.md).
+
+With web content articles, structures, and templates, you can have more control over the content management and presentation processes within Liferay. It supports a streamlined workflow where content managers can focus on the content itself, while designers can focus on how it looks.
+
+In this section, start by [adding a web content article](./web-content-articles/adding-a-basic-web-content-article.md) and learn how to [manage](./web-content-articles/managing-web-content-articles.md), [preview](./web-content-articles/previewing-web-content-articles.md), [filter, and sort](./web-content-articles/filtering-and-sorting-web-content-articles.md) articles.
+
+::::{grid} 2
+:gutter: 3 3 3 3
+
+:::{grid-item-card}  Adding a Basic Web Content Article
+:link: ./web-content-articles/adding-a-basic-web-content-article.md
+:::
+
+:::{grid-item-card}  Previewing Web Content Articles
+:link: ./web-content-articles/previewing-web-content-articles.md
+:::
+
+:::{grid-item-card}  Managing Web Content Articles
+:link: ./web-content-articles/managing-web-content-articles.md
+:::
+
+:::{grid-item-card}  Filtering and Sorting Web Content Articles
+:link: ./web-content-articles/filtering-and-sorting-web-content-articles.md
+:::
+
+:::{grid-item-card}  Using Expiration and Review Dates in Web Content
+:link: ./web-content-articles/using-expiration-and-review-dates-in-web-content.md
+:::
+
+:::{grid-item-card}  Generating Text Content Using AI
+:link: ./web-content-articles/generating-text-content-using-ai.md
+:::
+
+:::{grid-item-card}  Assigning Permissions to Web Content Articles
+:link: ./web-content-articles/assigning-permissions-to-web-content-articles.md
+:::
+::::

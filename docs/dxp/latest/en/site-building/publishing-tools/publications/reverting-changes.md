@@ -48,11 +48,11 @@ If you've selected to publish *Now*, you are redirected to the publishing page. 
 If you've selected to publish *Later*, you are redirected to the Review Changes page for your new publication. At this point, you can make further changes to your publication, and then publish when ready.
 
 !!! warning
-    Be careful when reverting a publication with components that generate new versions when edited (e.g., web content).
+    Be careful when reverting a publication containing components that generate new versions when edited (e.g., web content).
 
     These components are treated as additions rather than modifications when they are edited during a publication. Consequently, they are deleted instead of being restored to their previous state when the publication is reverted.
 
-    Conversely, components modified during publication (e.g., sites, documents, and media) are reverted to their previous states before publication.
+    Conversely, components modified during publication (e.g., sites, documents, and media) that don't generate new versions are reverted to their previous states before publication.
 
 ## Related Topics
 

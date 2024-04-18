@@ -1,5 +1,11 @@
 ---
 uuid: bf3515ed-986a-4c54-ba23-5b3d44a40015
+taxonomy-category-names:
+- Security
+- User, Organization, and Account Management
+- Liferay Self-Hosted
+- Liferay SaaS
+- Liferay PaaS
 ---
 # Contacts
 
@@ -44,7 +50,7 @@ To add one of the above fields,
 
 1. Click *Save*.
 
-These addresses are for informational purposes only. You cannot use an address added here as a billing or shipping address during checkout. For that, you must add an address in the *Addresses* tab. See [Account Addresses](./account-addresses.md) for more information.
+These addresses are for informational purposes only. You cannot use an address added here during checkout. For that, you must add an address in the *Addresses* tab. See [Account Addresses](./account-addresses.md) for more information.
 
 ## Phone Numbers
 
@@ -122,4 +128,5 @@ After saving, an option to make a Skype call appears under the *Skype* text fiel
 
 1. Click *Save*.
 
-All the contact fields for an account are for informational purposes only.
+!!! note
+    The contact fields for an account are for informational purposes only.

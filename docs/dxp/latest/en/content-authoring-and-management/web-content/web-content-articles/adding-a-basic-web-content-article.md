@@ -44,6 +44,8 @@ While creating/editing a web content article, you can view and set the web conte
 
 ### Setting the Web Content Article's Visibility and Permissions
 
+{bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+`
+
 1. Follow the steps to [create a web content article](#creating-a-basic-web-content-article).
 
 1. Click *Publish* and select *Publish with Permissions*.
@@ -56,13 +58,33 @@ While creating/editing a web content article, you can view and set the web conte
 
 ![Set the web content article's visibility and permissions and schedule its publication before publishing/submitting it for workflow.](./adding-a-basic-web-content-article/images/02.gif)
 
-Once you publish your web content article, modify its permissions in one of two ways:
+To set the web content article's visibility and permissions before {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+`,
 
-- While in the editing page (1), open the *Options* menu (![Options menu icon](../../../images/icon-options.png)) at the top right corner and select *Permissions*.
+1. Follow the steps to [create a web content article](#creating-a-basic-web-content-article).
 
-- Or, in the Web Content application (2), open the article's *Actions* menu (![Actions menu icon](../../../images/icon-actions.png)) and select *Permissions*.
+1. At the bottom right of the Properties tab, select an available *Viewable by* option under Permissions: Anyone (Guest Role), Site Members, or Owner.
 
-![Set permissions in the editing page or through the web content application.](./adding-a-basic-web-content-article/images/03.png)
+1. Set permissions for Guests and Site Members by clicking *More Options*. See [Assigning Permissions to Web Content Articles](./assigning-permissions-to-web-content-articles.md) to learn more.
+
+   ![Set permissions and visibility while creating a web content article before Liferay DXP 2024.Q2/Portal 7.4 GA120.](./adding-a-basic-web-content-article/images/03.png)
+
+1. Click *Publish*.
+
+Once you publish your web content article, modify its permissions in one of three ways:
+
+- In the editing page (1), open the *Options* menu (![Options menu icon](../../../images/icon-options.png)) at the top right corner and select *Permissions*.
+
+- In the Web Content application (2), open the article's *Actions* menu (![Actions menu icon](../../../images/icon-actions.png)) and select *Permissions*.
+
+- {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+` In the Web Content application (3), select the checkbox next to the article you want to manage (or articles if you want to [assign permissions in bulk](./assigning-permissions-to-web-content-articles.md#setting-web-content-articles-permissions-in-bulk)) and click *Permissions* at the top options bar.
+
+![Set permissions in the editing page or through the web content application.](./adding-a-basic-web-content-article/images/04.png)
+
+Note that once your web content article is published, it can be viewed by everyone with the guest role by default, but you can set its [visibility](#setting-the-web-content-articles-visibility-and-permissions) to specific roles or remove [permission](./assigning-permissions-to-web-content-articles.md) to view the article to restrict its visibility.
+
+{bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+` When an article has restricted visibility, a Not Visible to Guest Users icon (![Not Visible to Guest Users icon](../../../images/icon-password-policies.png)) is displayed next to it.
+
+![Identify which articles have restrictions to their visibility.](./adding-a-basic-web-content-article/images/05.png)
 
 ### Scheduling A Web Content Article's Publication for a Future Date
 
@@ -78,7 +100,7 @@ Once you publish your web content article, modify its permissions in one of two 
 
 The web content article is now tagged as scheduled, and you can see the selected date and time by hovering over the `?` icon next to the item.
 
-![Schedule your web content article's publication.](./adding-a-basic-web-content-article/images/04.gif)
+![Schedule your web content article's publication.](./adding-a-basic-web-content-article/images/06.gif)
 
 Once the publication is scheduled, you can reschedule it by editing and setting a different time.
 
@@ -87,7 +109,7 @@ When you reschedule the same publication multiple times, you can view all versio
 !!! tip
     All rescheduled versions of the web content article are published. Note that later scheduled versions replace previous ones.
 
-![Schedule the same web content article multiple times.](./adding-a-basic-web-content-article/images/05.png)
+![Schedule the same web content article multiple times.](./adding-a-basic-web-content-article/images/07.png)
 
 ### Web Content Article Permissions Reference
 
@@ -150,6 +172,9 @@ When creating or editing a Basic Web Content article, the following options appe
 | **Schedule** | Schedule a date to display or expire the article, if desired. | See [Scheduling Web Content](./using-expiration-and-review-dates-in-web-content.md) for more information. |
 | **Search** | Set whether this article will be indexed for search. | |
 | **Related Assets** | Select any related assets, if desired. | |
+
+!!! note
+    Before {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+`, the Permissions option appears in the Properties tab only when first creating an article.
 
 ## Related Topics
 

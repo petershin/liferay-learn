@@ -7,11 +7,12 @@ taxonomy-category-names:
 - Liferay SaaS
 - Liferay PaaS
 ---
+
 # Contacts
 
 {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+`
 
-Using the new *Contact* tab on an account, you can add generic contact details related to the account. You can add the following information:
+Using the new *Contact* tab on an account, you can add contact details related to the account:
 
 * Addresses
 * Phone Numbers
@@ -22,9 +23,7 @@ Using the new *Contact* tab on an account, you can add generic contact details r
 * Social Network
 
 !!! important
-    This feature is currently behind a release feature flag. Read [Release Feature Flags](../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information.
-
-To add one of the above fields,
+    Currently, this feature is behind a release feature flag. Read [Release Feature Flags](../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information.
 
 1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and navigate to *Control Panel* &rarr; *Accounts*.
 
@@ -32,7 +31,7 @@ To add one of the above fields,
 
 1. Open the *Contact* tab.
 
-![Choose an account to add contact details to.](./contacts/images/01.png)
+   ![Choose an account that needs contact details added.](./contacts/images/01.png)
 
 ## Addresses
 
@@ -106,7 +105,7 @@ The first website you save automatically becomes the primary website. You can ch
 
 1. Open the Contact Information section and scroll down to INSTANT MESSENGER.
 
-1. You can enter the Jabber username or Skype ID for the account.
+1. You can enter a Jabber username or Skype ID for the account.
 
 1. Click *Save*.
 
@@ -124,7 +123,7 @@ After saving, an option to make a Skype call appears under the *Skype* text fiel
 
 1. Open the Contact Information section and scroll down to SOCIAL NETWORK.
 
-1. You can enter the Facebook or Twitter ID for the account.
+1. You can enter a Facebook or Twitter ID for the account.
 
 1. Click *Save*.
 

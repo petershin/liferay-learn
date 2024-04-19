@@ -74,7 +74,7 @@ Once you publish your web content article, it becomes accessible to any user wit
 
 - In the editing page (1), open the *Options* menu (![Options menu icon](../../../images/icon-options.png)) at the top right corner and select *Permissions*.
 
-- In the Web Content application (2), open the article's *Actions* menu (![Actions menu icon](../../../images/icon-actions.png)) and select *Permissions*.
+- In the Web Content application (2), open the article's *Actions* (![Actions menu icon](../../../images/icon-actions.png)) and select *Permissions*.
 
 - {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+` In the Web Content application (3), select the checkbox next to the article you want to manage (or articles if you want to [assign permissions in bulk](./assigning-permissions-to-web-content-articles.md#setting-web-content-articles-permissions-in-bulk)) and click *Permissions* at the top options bar.
 
@@ -108,7 +108,7 @@ Once the publication is scheduled, you can reschedule it by editing and setting 
 When you reschedule the same publication multiple times, you can view all versions and their publication schedule by going to the Web Content application screen and clicking the article's *Actions* menu (![Actions menu icon](../../../images/icon-actions.png)) &rarr; *View History*.
 
 !!! tip
-    All rescheduled versions of the web content article are published. Note that later scheduled versions replace previous ones.
+    All rescheduled versions of the web content article are published. Note that versions scheduled later replace previous ones.
 
 ![Schedule the same web content article multiple times.](./adding-a-basic-web-content-article/images/07.png)
 

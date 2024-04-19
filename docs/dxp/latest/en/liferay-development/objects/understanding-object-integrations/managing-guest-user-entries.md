@@ -32,7 +32,7 @@ To allow guest users permission to submit object entries,
 
 ## Limiting Object Entry Submissions
 
-To deter distributed denial-of-service (DDoS) attacks and spam submissions, you can limit how many guest object entry submissions are permitted. Go to *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)) &rarr; *Control Panel* &rarr; *Instance Settings* &rarr; *Object*.
+To deter distributed denial-of-service (DDoS) attacks and spam submissions, you can limit guest object entry submissions. Go to *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)) &rarr; *Control Panel* &rarr; *Instance Settings* &rarr; *Object*.
 
 ![Set the allowed number of guest entry submissions in a period of time.](./managing-guest-user-entries/images/03.png)
 
@@ -40,26 +40,11 @@ To deter distributed denial-of-service (DDoS) attacks and spam submissions, you 
 
 ![After the maximum entries allowed in the configured time period are added, more submissions are not allowed until the set period of time elapses.](./managing-guest-user-entries/images/02.png)
 
-The below settings appear in the Instance Settings UI in 2024.Q1/GA112, but they are behind a [dev feature flag](../../../system-administration/configuring-liferay/feature-flags.md#dev-feature-flags) and should not be used in production environments. They set a time period for the maximum number of allowed guest submissions, so that after the configured duration guest submission are allowed again. With this you can ensure that you limit the _rate_ of guest entry submissions.
+In DXP 2024.Q2+/GA120+, you can also set a time period (and scale) for the maximum number of allowed guest submissions, so that after the configured duration guest submission are allowed again. With this you can ensure that you limit the _rate_ of guest entry submissions.
 
 **Duration:** Set the time period for which the configured maximum number of guest entries cannot be exceeded.
 
 **Time Scale:** Set whether the duration is measured in weeks or days.
-
-
-To try using these settings in your testing environment, enable the LPS-192957 feature flag using a [portal property](../../../installation-and-upgrades/reference/portal-properties.md) or Docker environment variable:
-
-Using a `portal-ext.properties` file:
-
-```properties
-feature.flag.LPS-192957=true
-```
-
-Using a Docker environment variable:
-
-```shell
-docker run --env LIFERAY_FEATURE_PERIOD_FLAG_PERIOD__UPPERCASEL__UPPERCASEP__UPPERCASES__MINUS__NUMBER1__NUMBER9__NUMBER2__NUMBER9__NUMBER5__NUMBER7_=true -it -m 9g -p 8080:8080 [$LIFERAY_LEARN_PORTAL_DOCKER_IMAGE$]
-```
 
 ## Limiting the Attachment Field File Size
 

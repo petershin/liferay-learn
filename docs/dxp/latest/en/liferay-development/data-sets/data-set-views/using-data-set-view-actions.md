@@ -125,8 +125,8 @@ The data set view displays your data set as you configured. Click on the Edit bu
 
 ## Related Topics
 
-- [Data Set Views](../data-set-views.md)
 - [Creating Data Sets](../creating-data-sets.md)
-- [Data Set View Fields](./data-set-view-visualization-modes.md)
+- [Data Set Views](../data-set-views.md)
+- [Data Set View Visualization Modes](./data-set-view-visualization-modes.md)
 - [Data Set View Filters](./data-set-view-filters.md)
 - [Data Set View Actions](./data-set-view-actions.md)

@@ -159,7 +159,7 @@ To set a default visualization mode,
 
 ## Related Topics
 
-- [Data Set Views](../data-set-views.md)
 - [Creating Data Sets](../creating-data-sets.md)
+- [Data Set Views](../data-set-views.md)
 - [Data Set View Actions](./data-set-view-actions.md)
 - [Data Set View Filters](./data-set-view-filters.md)

@@ -236,7 +236,6 @@ To create status messages for [async](#async-action) and [headless](#headless-ac
 
 ## Related Topics
 
-- [Data Set View Item Actions](./data-set-view-actions/data-set-view-item-actions.md)
-- [Data Set View Creation Actions](./data-set-view-actions/data-set-view-creation-actions.md)
 - [Data Set Views](../data-set-views.md)
 - [Creating Data Sets](../creating-data-sets.md)
+- [Using Data Set View Actions](./using-data-set-view-actions.md)

@@ -85,6 +85,19 @@ Once scheduled, changes cannot be added to a publication. However, you can click
 
 **Review Changes**: View all changes included in the publication.
 
+## Managing Out-of-date Publications
+
+{bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+`
+{bdg-link-primary}`[Beta Feature](../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
+
+When publications are created in a version of Liferay and an [upgrade](../../../installation-and-upgrades/upgrading-liferay.md) happens, this publication becomes out-of-date.
+
+Out-of-date publications serve only as a reference and cannot be published, reverted, or modified further. However, you can view, delete, or move compatible changes to another publication.
+
+To manage out-of-date publications,
+
+To move changes to a new publication,
+
 ## Managing History of Publications
 
 In the *History* tab, you can view a table of all published publications for the DXP instance, including those published by other users. By default, publications are ordered by *Published Date*, though you can order them by name.

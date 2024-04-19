@@ -7,16 +7,6 @@ Clarity team members were provisioned through Okta and have already logged into 
 
 The primary concern in user management is managing user access to content and platform features. Common use cases includes giving privileges to access parts of the platform or specific resources, as well as restricting user access from unauthorized resources or actions. Basically, when user management is done right, everyone is granted access only to the resources and functionalities necessary for their roles.
 
-## Revisiting Clarity’s Critical Success Factors
-
-All six [critical success factors](../module-1-getting-started-with-clarity/the-clarity-story.md#critical-success-factors) identified by Clarity's business team can be mapped to user and permission requirements. However, three of these factors hold particular relevance.
-
-**Non-Technical Participation**: Anyone, including non-developers, can manage the users with ease. While Clarity's initial setup might require technical expertise, Liferay's user-friendly UI allows them to train its own personnel to take control of managing users.
-
-**Increased Engagement through Personalization**: Providing different user experiences with Liferay not only applies to customers, but also to Clarity employees. Being able to provide tailored access and visibility to different features in Liferay empowers team members to carry out their responsibilities without needing to involve their IT team for every task.
-
-**Risk Mitigation with Better Governance**: Role-based permissions within Clarity ensure data security. Users can only access and edit site sections relevant to their role, minimizing the risk of data leaks and protecting their brand reputation.
-
 At Clarity, each person has different responsibilities in developing the new enterprise website. Let's take a closer look at the different types of users involved, their roles, the groups they belong to, and the responsibilities they have for the site.
 
 | Name | Role | User Group | Responsibility|

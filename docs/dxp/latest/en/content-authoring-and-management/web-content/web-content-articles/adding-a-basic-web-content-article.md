@@ -80,7 +80,7 @@ Once you publish your web content article, it becomes accessible to any user wit
 
 ![Set permissions in the editing page or through the web content application.](./adding-a-basic-web-content-article/images/04.png)
 
-{bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+` When an article has restricted visibility, the Not Visible to Guest Users icon (![Not Visible to Guest Users icon](../../../images/icon-password-policies.png)) is displayed next to the article's name in various situations, such as in the web content article application, during editing, or when selecting an article for a web content display fragment.
+{bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+` When an article has restricted visibility, the Not Visible to Guest Users icon (![Not Visible to Guest Users icon](../../../images/icon-password-policies.png)) is displayed next to the article's name in various situations, such as in the web content article application while in List or Table view modes,  when editing the article, or when selecting an article for a web content display fragment.
 
 !!! tip
     If the Not Visible to Guest Users icon does not appear after managing the view permission for web content articles in the web content article application, try refreshing your page.

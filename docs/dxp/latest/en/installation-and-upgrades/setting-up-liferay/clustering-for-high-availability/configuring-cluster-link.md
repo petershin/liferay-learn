@@ -36,10 +36,10 @@ Set it to connect to some other host that's contactable by your server. By defau
 
 Cluster Link depends on [JGroups](http://www.jgroups.org) and provides an API for nodes to communicate. It can:
 
-* Send messages to all nodes in a cluster
-* Send messages to a specific node
-* Invoke methods and retrieve values from all, some, or specific nodes
-* Detect membership and notify when nodes join or leave
+- Send messages to all nodes in a cluster
+- Send messages to a specific node
+- Invoke methods and retrieve values from all, some, or specific nodes
+- Detect membership and notify when nodes join or leave
 
 Cluster Link contains an enhanced algorithm that provides one-to-many type communication between the nodes. This is implemented by default with JGroups's UDP multicast, but unicast and TCP are also available.
 
@@ -49,7 +49,7 @@ When you enable Cluster Link, DXP's default clustering configuration is enabled.
 
 ### Using Multicast Over UDP
 
-DXP uses two groups of [channels from JGroups](http://www.jgroups.org/manual4/index.html#_channel) to implement multicast over UDP: a control group and a transport group. If you want to customize the [channel properties](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Cluster%20Link), you can do so by adding the following Portal Properties to `portal-ext.properties`:
+DXP uses two groups of [channels from JGroups](http://www.jgroups.org/manual4/index.html#_channel) to implement multicast over UDP: a control group and a transport group. If you want to customize the [channel properties](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Cluster%20Link), you can do so by adding the following portal properties to `portal-ext.properties`:
 
 ```properties
 cluster.link.channel.name.control=[your control channel name]
@@ -85,6 +85,43 @@ An alternative to detecting the host address automatically for the bind address,
 
 Your network configuration may preclude the use of multicast over TCP, see [Configuring Unicast over TCP](./configuring-unicast-over-tcp.md) for information for those situations. Note that these methods are all provided by JGroups.
 
+## Securing Node Communication
+
+Liferay comes with three authentication options:
+
+- `jgroups/unsecure/udp_control.xml` and `jgroups/unsecure/udp_transport.xml` don't use any sort of encryption.
+- `jgroups/secure/md5/udp_control.xml` and `jgroups/secure/md5/udp_transport.xml` use MD5 for authentication. This is the default setting.
+- `jgroups/secure/x509/udp_control.xml` and `jgroups/secure/x509/udp_transport.xml` use X509 certificates for authentication. Recommended for production environments.
+
+Choose which of these files you wish to use in `portal-ext.properties`. You could also use your own custom JGroups configuration. Nodes with different types of encryption can't communicate with each other, so changing your cluster's encryption type requires a full maintenance shutdown.
+
+```properties
+cluster.link.channel.properties.control=[your control channel properties]
+cluster.link.channel.properties.transport.0=[your transport channel properties]
+```
+
+For MD5, you can choose the auth.value with the property below. The default value is `liferay-cluster`. Make sure every node in the cluster has the same auth.value so they can decrypt each other's messages.
+
+```properties
+cluster.link.auth.value=[secret]
+```
+
+For X509, you will need these additional properties:
+
+```properties
+cluster.link.auth.cert.alias=[certification's alias in the keystore]
+cluster.link.auth.cert.password=[certification's password in the keystore]
+cluster.link.auth.cipher.type=[algorithms to encrypt the message]
+cluster.link.auth.keystore.password=[keystore password]
+cluster.link.auth.keystore.path=[keystore location]
+cluster.link.auth.keystore.type=[keystore type]
+cluster.link.auth.value=[the string to encrypt]
+```
+
+## Upgrading an Unsecure Environment
+
+If you're using the default configuration and you want to upgrade the `portal-cluster-multiple` module to a version that allows different encryption options, you'll need to make sure your nodes can communicate with each other throughout the entire upgrade process. Since your old cluster might not be using any form of encryption, it's important to make sure that your new nodes do not use the default MD5 authentication, but use `jgroups/unsecure/udp_control.xml` and `jgroups/unsecure/udp_transport.xml` instead. Once all your nodes have been upgraded, if you wish to change your encryption type, your environment will require a full maintenance shutdown.
+
 ## Conclusion
 
 Once you've configured your cluster, you can start it. A log file message shows your cluster's  name (e.g., `cluster=liferay-channel-control`):
@@ -103,5 +140,5 @@ It's best to test your DXP cluster under load and investigate optimizing your sy
 
 ## Related Topics
 
-* [Configuring Unicast over TCP](./configuring-unicast-over-tcp.md)
-* [Clustering for High Availability](../clustering-for-high-availability.md)
+- [Configuring Unicast over TCP](./configuring-unicast-over-tcp.md)
+- [Clustering for High Availability](../clustering-for-high-availability.md)

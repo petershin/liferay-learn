@@ -14,7 +14,7 @@ You can manually tag most assets, such as Message Boards, Blogs, Documents, Imag
 
 Auto-tagging is only available for text-based documents, text-based web content, and blog entries, as well as [images](./auto-tagging-images.md).
 
-Text Auto-Tagging is disabled by default. You must [enable Auto-Tagging](./configuring-asset-auto-tagging.md) in DXP and then enable a text auto-tagging provider. Finally, you must choose the asset to auto-tag. There are two text auto-tagging providers available for DXP:
+Text auto-tagging is disabled by default. You must [enable auto-tagging](./configuring-asset-auto-tagging.md) in DXP and then enable a text auto-tagging provider. Finally, you must choose the asset to auto-tag. There are two text auto-tagging providers available for DXP:
 
 - **Google Cloud Natural Language Text Auto-Tagging**: Uses the [Google Cloud Natural Language API](https://cloud.google.com/natural-language/) to analyze and automatically tag content.
 

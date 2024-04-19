@@ -17,7 +17,7 @@ uuid: 48c633fe-df2d-4f68-a630-cc85c8d1e33a
 
 Auto-tagging is enabled by default. You can configure it at three levels:
 
-**Global (System Settings)**: Enable or disable auto-tagging for the Liferay server. For auto-tagging to function on any level, it must be enabled globally. At the global level, you can also set a default configuration for all virtual instances.
+**Global (System Settings)**: Enable or disable auto-tagging for the Liferay server. For auto-tagging to function on any level, it must be enabled globally. At the global level, you can also set a default configuration for all virtual instances. This is not available in Liferay Cloud SaaS. 
 
 **Virtual Instance (Instance Settings)**: Override auto-tagging configurations set at the global level. This setting determines the default configuration for all instance sites.
 
@@ -83,7 +83,7 @@ Once saved, this determines the default configuration for the current virtual in
 
 1. Click *Save*.
 
-## Related Information
+## Related Topics
 
 - [Tagging Content and Managing Tags](../tagging-content-and-managing-tags.md)
 - [Auto-tagging Images](./auto-tagging-images.md)

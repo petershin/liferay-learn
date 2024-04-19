@@ -15,9 +15,9 @@ Once [asset auto-tagging has been enabled](./configuring-asset-auto-tagging.md),
 !!! tip
     Currently, tags applied automatically are English only.
 
-By default, Image Auto-Tagging is disabled by default. In addition to enabling Auto-Tagging in DXP, you must also configure an image tagging provider. Four providers are available:
+By default, image auto-tagging is disabled by default. In addition to enabling auto-tagging in DXP, you must also configure an image tagging provider. Three providers are available:
 
-1. [**TensorFlow:**](#configuring-tensorflow-image-auto-tagging) An open-source library that provides machine learning capabilities. TensorFlow image auto-tagging in DXP is based on [TensorFlow's `LabelImage` sample for Java](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/java/src/main/java/org/tensorflow/examples/LabelImage.java), and uses the Inception5h model. Use this with caution, since its accuracy is limited.
+1. [**TensorFlow:**](#configuring-tensorflow-image-auto-tagging) An open-source library that provides machine learning capabilities. TensorFlow image auto-tagging in DXP is based on [TensorFlow's `LabelImage` sample for Java](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/java/src/main/java/org/tensorflow/examples/LabelImage.java), and uses the `Inception5h` model. Use this with caution, since its accuracy is limited.
 
 1. [**Google Cloud Vision:**](#configuring-google-cloud-vision) Uses the [Google Cloud Vision API](https://cloud.google.com/vision/) to automatically tag images.
 
@@ -30,11 +30,11 @@ By default, Image Auto-Tagging is disabled by default. In addition to enabling A
 1. Click the *Global Menu* &rarr; *Control Panel*
 1. Click *System Settings*.
 
-    ![Navigate to the System Settings.](./auto-tagging-images/images/02.png)
+   ![Navigate to the System Settings.](./auto-tagging-images/images/02.png)
 
 1. Click *Assets* under *Content and Data*.
 
-    ![Click on Assets.](./auto-tagging-images/images/03.png)
+   ![Click on Assets.](./auto-tagging-images/images/03.png)
 
 1. Under *VIRTUAL INSTANCE SCOPE*, click *TensorFlow Image Auto-Tagging*.
 1. Fill out the form.
@@ -44,7 +44,7 @@ The form asks for this information:
 
 **Enable TensorFlow Image Auto-Tagging:** Check this box to select whether image auto-tagging is enabled by default in any instance that has asset auto-tagging enabled.
 
-**Confidence Threshold:** TensorFlow assigns a confidence level between 0 and 1 for each tag, where 1 is the highest confidence and 0 is the lowest. This field sets the minimum confidence level that TensorFlow needs to apply a tag. Higher values yield fewer tags because TensorFlow needs more confidence before it applies a tag. Lower values yield more tags.
+**Confidence Threshold:** TensorFlow assigns a confidence level between `0` and `1` for each tag, where `1` is the highest confidence and `0` is the lowest. This field sets the minimum confidence level that TensorFlow needs to apply a tag. Higher values yield fewer tags because TensorFlow needs more confidence before it applies a tag. Lower values yield more tags.
 
 ![Configure TensorFlow image auto-tagging for your portal instances.](./auto-tagging-images/images/04.png)
 

@@ -14,7 +14,7 @@ taxonomy-category-names:
 
 While managing data set views, define actions to be used in the data set fragment. There are two types of action, item and creation.
 
-Use item actions to interact directly with individual items in the data set and perform actions such as deleting, editing, or viewing details of an item.
+Use *Item Actions* to perform different actions related to items in the data set, depending on the specific needs and context of the data.
 
 Use creation actions to add new data by directing users to appropriate locations for data creation.
 
@@ -61,11 +61,11 @@ You can further customize your data set view with item and creation actions.
 
 With item actions, set actions (e.g., delete, edit, or display the details of items) users can perform for each of the data set items.
 
-There are five item actions: [Async](#async-action), [Headless](#headless-action), [Link](#link-action), [Modal](#modal-action), and [Side Panel](#side-panel-action)
+There are five item action types: [Async](#async-action), [Headless](#headless-action), [Link](#link-action), [Modal](#modal-action), and [Side Panel](#side-panel-action)
 
 With creation actions, create new items for the data set. You can direct users to a URL where the new entry is created, and choose whether to open the link directly or in a modal or side panel.
 
-There are three creation actions: [Link](#link-action), [Modal](#modal-action), and [Side Panel](#side-panel-action).
+There are three creation action types: [Link](#link-action), [Modal](#modal-action), and [Side Panel](#side-panel-action).
 
 For hands-on examples of how to implement these actions, read [Using Data Set View Actions](./using-data-set-view-actions.md).
 
@@ -103,7 +103,10 @@ To create an async action,
 
 1. Specify the *URL* for the REST endpoint where the selected method is implemented, and select the *Method*: Delete, Get, Patch, or Post.
 
-1. (Optional) Enter a *Headless Action Key* which must match or be compatible with the selected method. With the key, administrators can associate an action to a headless endpoint. If no key is defined, the action still works, but any user can see and use it, as no restrictions are set without the key.
+1. (Optional) Enter a *Headless Action Key* to link an action with a headless endpoint and verify if users have the required permissions for the specific action method. Ensure the key matches or is compatible with the selected method.
+
+   !!! important
+       If no key is defined, the action still works, but becomes visible to all users, as there are no validation or restrictions in place.
 
 1. (Optional) [Set *Confirmation* and *Status Messages*](#setting-confirmation-and-status-messages) for your async action.
 
@@ -155,6 +158,9 @@ Modal actions redirect users to a specified URL that is rendered in a modal wind
 
 ![Use the modal action to redirect users to a specified URL and render its content in a modal window.](./data-set-view-actions/images/07.png)
 
+!!! important
+    When using a Modal action, make sure the destination URL works well inside a modal.
+
 To create a modal action,
 
 1. Under the Action Behavior section, select *Modal* as the Type.
@@ -178,6 +184,9 @@ Once configured, users are redirected to the chosen URL rendered in a modal when
 Side Panel actions redirect users to a specified URL that is rendered in a side panel. Depending on the specific intent behind the action, they can be used as item or creation actions. The key difference is that only item actions include confirmation messages.
 
 ![Use the Side Panel action to redirect users to a specified URL and render its content in a Side Panel.](./data-set-view-actions/images/08.png)
+
+!!! important
+    When using a Side Panel action, make sure the destination URL works well inside a side panel.
 
 To create a side panel action,
 

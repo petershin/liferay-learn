@@ -71,7 +71,7 @@ The Data Set View application is divided into tabs:
 
 - {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+` In the [Actions tab](./data-set-views/data-set-view-actions.md), create actions linked to the elements in the data set.
 
-   With *Item Actions*, you can delete, edit, or display the details of a single item in the data set (e.g., a row in the table or an item from a list).
+   With *Item Actions*, you can perform many actions related to items in the data set, depending on the specific needs and context of the data. For example, if a data set item represents a user, possible actions include activating/deactivating it or impersonating it. Similarly, for a web content item, actions could include expiring content or viewing its history and usage.
 
    With *Creation Actions*, users can create new data or you can redirect them to a different location where they can create it.
 

@@ -7,6 +7,7 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: 065ba9d2-8610-4dc8-b8d8-0f68dadda5d5
 ---
+
 # Creating and Managing Publications
 
 {bdg-secondary}`Liferay DXP/Portal 7.3+`
@@ -18,7 +19,11 @@ With Publications, users can create instance-scoped blocks of changes. Because e
 Once Publications is [enabled](./enabling-publications.md), you can create, edit, publish, or remove a publication via the Publications application page or the Publications drop-down menu.
 
 !!! important
-    Before upgrading your Liferay version, ensure you've published all active publications. After upgrading, active publications are marked as out of date and cannot be published or changed. Also, you cannot revert any publications published before your upgrade. The *Revert* option is removed for these publications.
+    Before upgrading your Liferay version, ensure you've published all active publications. After upgrading, active publications are marked as `out-of-date` and cannot be published, changed, or reverted.
+
+    After {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+`, only unreconcilable differences (e.g., schema changes) make [publications go out of date](#managing-out-of-date-publications). Additionally, you can move changes from out-of-date publications to other publications.
+
+<!-- This needs to be adjusted once 2024.Q2 is released -->
 
 ## Creating a Publication
 
@@ -90,7 +95,7 @@ Once scheduled, changes cannot be added to a publication. However, you can click
 {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+`
 {bdg-link-primary}`[Beta Feature](../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
 
-After an [upgrade](../../../installation-and-upgrades/upgrading-liferay.md) in Liferay, publications created in older versions become out-of-date, serving only as references and no longer being modifiable, revertible, or publishable. However, users can still view, delete, or move compatible changes to another publication.
+After an [upgrade](../../../installation-and-upgrades/upgrading-liferay.md) in Liferay, publications created in older versions become out of date, serving only as references and no longer being modifiable, revertible, or publishable. However, users can still view, delete, or move compatible changes to another publication.
 
 To manage out-of-date publications,
 
@@ -98,15 +103,7 @@ To manage out-of-date publications,
 
 1. Click *Actions* (![Actions menu icon](../../../images/icon-actions.png)) next to the out-of-date publication you want to manage.
 
-1. Choose an available action:
-
-   | Action         | Description                                                                                                                |
-   |:---------------|:---------------------------------------------------------------------------------------------------------------------------|
-   | Edit           | Edit the template, name, and description for your publication.                                                             |
-   | Review Changes | Review the publication's changes. Here, you can view more information about the change and move it to another publication. |
-   | Delete         | Delete your out-of-date publication.                                                                                       |
-   <!-- | Schedule       | Schedule your out-of-date publication.                                                                                     |
-   | Publish        | Publish your out-of-date publication.                                                                                      | -->
+1. Choose an available action: select *Review Changes* to view more information about the change and move it to another publication, or select *Delete* to delete your out-of-date publication.
 
 To move changes to a new publication,
 

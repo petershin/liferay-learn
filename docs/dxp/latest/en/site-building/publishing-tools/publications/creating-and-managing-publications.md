@@ -90,19 +90,47 @@ Once scheduled, changes cannot be added to a publication. However, you can click
 {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+`
 {bdg-link-primary}`[Beta Feature](../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
 
-When publications are created in a version of Liferay and an [upgrade](../../../installation-and-upgrades/upgrading-liferay.md) happens, this publication becomes out-of-date.
-
-Out-of-date publications serve only as a reference and cannot be published, reverted, or modified further. However, you can view, delete, or move compatible changes to another publication.
+After an [upgrade](../../../installation-and-upgrades/upgrading-liferay.md) in Liferay, publications created in older versions become out-of-date, serving only as references and no longer being modifiable, revertible, or publishable. However, users can still view, delete, or move compatible changes to another publication.
 
 To manage out-of-date publications,
 
+1. Open the *Global Menu* (![Global Menu icon](../../../images/icon-applications-menu.png)), navigate to the *Applications* tab, and click *Publications* under Publications.
+
+1. Click *Actions* (![Actions menu icon](../../../images/icon-actions.png)) next to the out-of-date publication you want to manage.
+
+1. Choose an available action:
+
+   | Action         | Description                                                                                                                |
+   |:---------------|:---------------------------------------------------------------------------------------------------------------------------|
+   | Edit           | Edit the template, name, and description for your publication.                                                             |
+   | Review Changes | Review the publication's changes. Here, you can view more information about the change and move it to another publication. |
+   | Delete         | Delete your out-of-date publication.                                                                                       |
+   <!-- | Schedule       | Schedule your out-of-date publication.                                                                                     |
+   | Publish        | Publish your out-of-date publication.                                                                                      | -->
+
 To move changes to a new publication,
+
+1. (Optional. Skip this step if you already have one) Follow the steps to [create a new publication](#creating-a-publication) to house the new changes.
+
+1. Click *Actions* (![Actions menu icon](../../../images/icon-actions.png)) next to the out-of-date publication you want to manage and select *Review Changes*.
+
+   Conversely, click on the name of the publication to review its changes.
+
+1. Click *Actions* (![Actions menu icon](../../../images/icon-actions.png)) next to the change you want to move and select *Move Changes*. You are redirected to a page displaying the author of the changes along with a summary of the alterations made.
+
+   ![Move changes from an out-of-date publication to another publication.](./creating-and-managing-publications/images/05.png)
+
+1. Select the target publication at the bottom of the page and click *Move Changes* to complete the process.
+
+   ![Review the changes and select a publication to which the changes will be moved.](./creating-and-managing-publications/images/06.png)
+
+The changes are moved to the target publication and you can now schedule/publish it.
 
 ## Managing History of Publications
 
 In the *History* tab, you can view a table of all published publications for the DXP instance, including those published by other users. By default, publications are ordered by *Published Date*, though you can order them by name.
 
-![The History tab lists all previously published publications for your instance.](./creating-and-managing-publications/images/05.png)
+![The History tab lists all previously published publications for your instance.](./creating-and-managing-publications/images/07.png)
 
 From here, you can click *Revert* for a publication to automatically create a new publication that reverts its changes. You can also make additional changes to your DXP instance as part of your Revert publication. See [Reverting Changes](./reverting-changes.md) for more information.
 

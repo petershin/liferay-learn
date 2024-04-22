@@ -5,6 +5,7 @@ toc:
     - ./using-display-page-templates/publishing-content-with-display-pages.md
     - ./using-display-page-templates/displaying-categories-using-display-pages.md
     - ./using-display-page-templates/using-multiple-display-page-templates-to-create-multi-step-applications.md
+    - ./using-display-page-templates/mapping-calendar-events-to-display-page-templates.md
     - ./using-display-page-templates/configuring-seo-and-open-graph.md
 taxonomy-category-names:
 - Sites
@@ -34,9 +35,10 @@ Display page templates currently support the following content types:
 -   [Custom Objects](../../liferay-development/objects/displaying-object-entries.md) {bdg-secondary}`7.4+`
 -   [Documents](../../content-authoring-and-management/documents-and-media/publishing-and-sharing/publishing-documents.md)
 -   [Web Content Articles](../../content-authoring-and-management/web-content/web-content-articles/adding-a-basic-web-content-article.md)
+-   [Calendar Events](./using-display-page-templates/mapping-calendar-events-to-display-page-templates.md)
 
 !!! tip
-Use display page templates for designing layouts that you want to reuse for multiple content items.
+    Use display page templates for designing layouts that you want to reuse for multiple content items.
 
 These templates are ideal for displaying a list of elements in a consistent way, like business case studies, product or service options, job listings, web articles, and more. For example, on an insurance business website, you may want to list the available options. Individual web content articles describe each option. You want a landing page where site visitors can choose an option to see the corresponding insurance details from the articles.
 
@@ -69,7 +71,7 @@ If a content type has multiple display page templates created for it, you can [m
 :link: ./using-display-page-templates/configuring-seo-and-open-graph.md
 :::
 
-:::{grid-item-card} Using Multiple Display Page Templates to Create Multi-step Applications
-:link: ./using-display-page-templates/using-multiple-display-page-templates-to-create-multi-step-applications.md
+:::{grid-item-card} Mapping Calendar Events to Display Page Templates
+:link: ./using-display-page-templates/mapping-calendar-events-to-display-page-templates.md
 :::
 ::::

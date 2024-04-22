@@ -55,7 +55,7 @@ Use the following steps to configure Unicast:
     ```
 
     !!! important
-    Note that the `port_range` is set to `1` so that TCCPing probes additional ports to create each channel. For example, for `initial_hosts="HostA[7800],HostB[7800]`, TCCPing tries to contact both HostA and HostB with port 7800 and 7801. Set this value to cover as many ports as you need (number of channels minus one).
+        Note that the `port_range` is set to `1` so that TCCPing probes additional ports to create each channel. For example, for `initial_hosts="HostA[7800],HostB[7800]`, TCCPing tries to contact both HostA and HostB with port 7800 and 7801. Set this value to cover as many ports as you need (number of channels minus one).
 
     **Regarding Initial Hosts:**
 
@@ -75,12 +75,13 @@ Use the following steps to configure Unicast:
         port_range="1"/>
     ```
 
-1. Modify the [Cluster Link properties](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Cluster%20Link) in each node's [`portal-ext.properties` file](../../reference/portal-properties.md) to enable Cluster Link and point to the TCP XML file for each Cluster Link channel:
+1. Modify the [Cluster Link properties](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Cluster%20Link) in each node's [`portal-ext.properties` file](../../reference/portal-properties.md) to enable Cluster Link and point to the TCP XML file for each Cluster Link channel. This example uses MD5 encryption:
 
     ```properties
     cluster.link.enabled=true
-    cluster.link.channel.properties.control=/jgroups/tcp.xml
-    cluster.link.channel.properties.transport.0=/jgroups/tcp.xml
+    cluster.link.channel.properties.control=jgroups/secure/md5/udp_control.xml
+    cluster.link.channel.properties.transport.0=jgroups/secure/md5/udp_transport.xml
+
     ```
 
 The JGroups configuration demonstrated above is typically all that Unicast over TCP requires. However, in a very specific case, if *(and only if)* cluster nodes are deployed across multiple networks, then the `external_addr` TCP transport parameter must be set on each host to the external (public IP) address of the firewall. This kind of configuration is usually only necessary when nodes are geographically separated. By setting this, clustered nodes deployed to separate networks (e.g. separated by different firewalls) can communicate together. This configuration may be flagged in security audits of your system. See [JGroups documentation](http://www.jgroups.org/manual4/index.html#_transport_protocols) for more information.

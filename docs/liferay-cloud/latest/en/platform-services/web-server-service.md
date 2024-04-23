@@ -24,12 +24,10 @@ Although Liferay Cloud's services are fine-tuned to work well by default, you ma
     │           └── nginx.conf
     └── LCP.json
 
-The `nginx.conf` file does not allow configurations that require root user permissions. It also doesn't require a user declaration to run. Adding a user declaration may disrupt the service.
+!!! important
+    As of web server version 6.0.0+, the `nginx.conf` file does not allow configurations that require root user permissions. See [Breaking Changes](../reference/breaking-changes.md#web-server-version-6.0.0) for more information.
 
 Files in `/webserver/configs/[ENV]/` are copied as overrides into `/etc/nginx/` in the web server container in Liferay Cloud. Files in `/webserver/configs/[ENV]/public/` are copied as overrides into `var/www/html/`.
-
-!!! important
-    The `nginx.pid` file is located in the web server container's `/tmp/` directory. Previously, it was located in `/var/run/`. If you have custom configurations in `nginx.conf`, update the location of all references to `nginx.pid` to prevent issues at runtime.
 
 ## Automatic Log Rotation
 
@@ -52,7 +50,7 @@ You can define these environment variables in your web server service to adjust 
 You can use scripts for more extensive customizations, but you must use caution when doing so. This is the most powerful way to customize the web server service and can cause undesired side effects.
 
 !!! important
-    The web server service runs as the `nginx` user, *not as root*. Take care to avoid scripting tasks that require root access to run.
+    As of web server version 6.0.0+, the web server service runs as the `nginx` user, *not as root*. Avoid scripting tasks that require root access to run. See [Breaking Changes](../reference/breaking-changes.md#web-server-version-6.0.0) for more information.
 
 Any `.sh` files found in the `configs/[ENV]/scripts/` folder are run prior to starting your service. For example, you can place a script in this directory structure to remove all log files:
 

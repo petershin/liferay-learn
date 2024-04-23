@@ -1,6 +1,7 @@
 ---
 toc:
   - ./reference/liferay-cloud-infrastructure.md
+  - ./reference/breaking-changes.md
   - ./reference/configuration-via-lcp-json.md
   - ./reference/understanding-service-stack-versions.md
   - ./reference/upgrading-your-liferay-cloud-stack.md
@@ -23,6 +24,7 @@ uuid: f3b8e497-1332-43e9-98c7-b654c048bb99
 # Reference
 
 - [Liferay Cloud Infrastructure](./reference/liferay-cloud-infrastructure.md)
+- [Breaking Changes](./reference/breaking-changes.md)
 - [Configuration via LCP.json](./reference/configuration-via-lcp-json.md)
 - [Understanding Service Stack Versions](./reference/understanding-service-stack-versions.md)
 - [Upgrading Your Liferay Cloud Stack](./reference/upgrading-your-liferay-cloud-stack.md)

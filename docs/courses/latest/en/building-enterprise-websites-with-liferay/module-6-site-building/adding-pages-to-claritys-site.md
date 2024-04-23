@@ -20,6 +20,12 @@ Content pages are used to create content-rich, visually engaging experiences. Wi
 !!! tip “Content Pages vs. Widget Pages”
     Liferay also provides widget pages, but this course focuses on building user experiences with content pages. Content pages provide superior flexibility and integration with Liferay’s latest content and personalization features, including fragments, collections, segmentation, and client extensions. Widget pages do not support these features.
 
+<!--TASK:
+### Parent and Child Pages
+
+Explain the value of defining these relationships for content pages. Also note that the Open Positions page is a child of the Careers page. 
+-->
+
 ## Display Pages
 
 Display page templates define structures for displaying content at a dedicated URL. When you create or upload content items, Liferay generates a unique friendly URL for accessing it. However, you can only use this URL to view the content if you create one of these templates for displaying it. Display pages are built using the same UI and features as content pages. With these templates, you can establish a consistent visual style for different types of content.
@@ -40,16 +46,22 @@ While logged in as Walter Douglas,
 
 1. In the Static Pages tab, click *New* and select *Page*.
 
+   ![Add a page.](./adding-pages-to-claritys-site/images/05.png)
+
 1. Select the *Blank* template.
 
    !!! note
        This applies a basic header and footer to an empty content page.
 
-1. For name, enter Home and click *Add*.
+   ![Select the Blank template.](./adding-pages-to-claritys-site/images/06.png)
 
-   This creates a blank content page, from which you can access Liferay’s page builder tools and configuration options.
+1. For name, enter `Home` and click *Add*.
 
-1. Click *Publish*.
+   This creates a blank content page and directs you to Liferay’s page editor UI. Here you can access all page building tools and configuration options.
+
+1. Leave the page blank and click *Publish*.
+
+   ![Leave the page blank and click Publish.](./adding-pages-to-claritys-site/images/07.png)
 
 1. Repeat this process for these pages:
 
@@ -62,6 +74,12 @@ While logged in as Walter Douglas,
    * Careers
    * Open Positions
    * Search
+
+   ![Add these content pages.](./adding-pages-to-claritys-site/images/08.png)
+
+1. Drag and drop *Open Positions* onto *Careers* to make it a child of the Careers page.
+
+   ![Drag and drop Open Positions onto the Careers page.](./adding-pages-to-claritys-site/images/09.gif)
 
 With these pages in place, create the remaining parts of Clarity's site structure as display page templates.
 
@@ -77,11 +95,13 @@ While logged in as Walter Douglas,
 
 1. Select *Blank*.
 
-1. For name, enter Leader Profile.
+1. For name, enter `Leader Profile`.
 
 1. For content type, select *Web Content Article*
 
 1. For subtype, select *Basic Web Content*.
+
+   ![Add the web content display page template.](./adding-pages-to-claritys-site/images/10.png)
 
 1. Click *Save*.
 
@@ -91,16 +111,7 @@ While logged in as Walter Douglas,
 
 1. Repeat this process for these pages:
 
-   * Eyeglasses
-      * Content Type: Category
-
-   * Sunglasses
-      * Content Type: Category
-
-   * Contacts
-      * Content Type: Category
-
-   * Lenses
+   * Product Categories
       * Content Type: Category
 
    * Product Details
@@ -115,7 +126,11 @@ While logged in as Walter Douglas,
    * Job Opening
       * Content Type: Web Content Article > Basic Web Content
 
-We'll revisit these templates in Module 7 to update some of their content types, but for now the site structure is complete. There's no need to create Clarity's utility pages since all Liferay sites include default error pages.
+   ![Create these display page templates.](./adding-pages-to-claritys-site/images/11.png)
+
+We'll revisit these templates in Module 7, but for now leave them blank.
+
+Since Liferay sites include 404 and 500 error pages by default, there's no need to create any utility pages, so Clarity's site structure is complete.
 
 ## Conclusion
 

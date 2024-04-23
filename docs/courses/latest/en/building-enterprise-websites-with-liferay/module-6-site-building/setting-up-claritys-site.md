@@ -38,6 +38,8 @@ To do this,
 
 1. Enter *Clarity Public Enterprise Website* for name and click *Add*.
 
+   ![Name the site Clarity Public Enterprise Website and click Add.](./setting-up-claritys-site/images/01.png)
+
 This creates a site and redirects you to its configuration page. Let’s take a quick tour to familiarize ourselves with Liferay's site building UI.
 
 ## Exploring the Site Building UI

@@ -11,11 +11,8 @@ At Clarity, each person has different responsibilities in developing the new ent
 
 | Name | Role | User Group | Responsibility|
 |:--- |:--- |:--- |:--- |
-| Ian Miller | IT Manager | IT | Ensures efficient operation of IT infrastructure by aligning technology strategy with organizational objectives. |
-| Walter Douglas | Web Developer | IT | Ensures functionality, security, and performance of Clarity's website by designing, building, and maintaining it. |
-| Clara Murphy | Marketing Content Manager | Content Creation and Site Management | Creates and implements content strategies to attract and engage visitors, driving brand awareness and conversions. |
-| Christian Carter | Marketing Content Contributor | Content Creation | Supports marketing initiatives by creating high-quality content like blog posts and product descriptions. |
-| Harper Roberts | HR Content Contributor | Content Creation | Develops and maintains career page content and job descriptions with the aim of attracting and informing potential candidates. |
+| Ian Miller | IT Manager | Clarity-IT | Ensures efficient operation of IT infrastructure by aligning technology strategy with organizational objectives. |
+| Jane Newton | Marketing Content Manager | Clarity-Marketing | Creates and implements content strategies to attract and engage visitors, driving brand awareness and conversions. |
 
 ## Defining Roles and Permissions
 
@@ -38,51 +35,63 @@ The different default roles also fall under different scoping. Sometimes, you do
 !!! important **Key Decision**
     Deciding how to group and assign permissions to users is a key decision point as you build out your enterprise website. Using Liferay's user groups feature to model your organization’s structure and responsibilities on the new site is the recommended approach in this situation.
 
-To increase efficiency, roles can also be assigned to entire user groups. The purpose behind this is to promote reuse and simplify the user management experience. One of Clarity's goals is to improve their user experience and apply personalized experiences for its users. Therefore, Clarity can leverage their existing groupings from Okta and assign custom roles to different user groups in Liferay. Here is a visual representation of Clarity's set of user groups where users get certain accesses based on their roles.
+To increase efficiency, roles can also be assigned to entire user groups. The purpose behind this is to promote reuse and simplify the user management experience. 
 
-![Visual representation of Clarity's set of user groups, and Liferay’s permission framework.](./managing-and-organizing-clarity-users/images/01.png)
-
-The image above illustrates three user groups used by Clarity, represented by dotted lines. Each user group is assigned the necessary roles and permissions required to perform their daily tasks. Marketing content manager, Clara Murphy, belongs to two of these teams. Consequently, she inherits all the roles associated with both user groups. Italicized roles in the image indicate those assigned to specific users, while non-italicized roles are assigned to user groups.
-
-Let’s walk through an example of creating a custom role and applying it to a user group.
+Let’s take a look at how we could create user groups, roles and permissions for Jane Newton to be able to access and edit relevant content for marketing. 
 
 !!! note
-    The Clarity users that came with the sample Clarity site are already assigned to user groups. If you do not have the sample Clarity site, create the user groups above and assign the users to them. See our documentation about [user groups](https://learn.liferay.com/w/dxp/users-and-permissions/user-groups).
+    The following exercises assume that you already have the Clarity site up and running and have the sample Clarity users, roles, etc.
 
-### Exercise 1 - Creating Custom Roles for User Groups
+### Exercise 1 - Assigning the Permissions and Roles for the Marketing User Group
 
-The content creation user group requires permissions to edit site pages as well as add blog posts. Let's create a custom role and assign it to the user group.
+1. Let's impersonate Jane Newton to see what the application looks like from her point of view. 
+   1. Navigate to _Control Panel_ &rarr; _Users and Organizations_. 
+   1. Click on the options icon next to Jane Newton and click _Impersonate User_. Notice how she does not have access to any of the resources she needs (e.g. site menu, asset library, etc.).
 
-1. Navigate to _Control Panel_ &rarr; _Roles_. Under the _Regular Roles_ tab, click the add icon.
+1. Verify the permissions for the Clarity content manager role.
 
-1. Input `Content Creator` as the title of the new role. Click _Save_.
+    ![Verify the permissions for the content manager role.](./managing-and-organizing-clarity-users/images/01.png)
 
-1. Click the _Define Permissions_ tab. In the left navigation, expand _Site and Asset Library Administration_ and click _Site Builder_ &rarr; _Pages_. Scroll down to the _Page_ section and check the _Update_ checkbox. Scroll down to the bottom and click _Save_.
+    1. Navigate to _Control Panel_ &rarr; _Roles_. Click on the Clarity content manager role.
+    1. Click on the _Define Permissions_ tab. Notice how the content manager role has permissions around asset libraries and site pages. This is because the content managers need access to asset libraries and pages. Permissions can be added or removed from this definitions page. For example, permissions for blogs might also be added for the role.
 
-1. Still under the _Site and Asset Library Administration_ menu, click _Content & Data_ &rarr; _Blogs_. Under _Blog Entries_, check the _Add Entry_ checkbox. Under the _Blogs Entry_, check the _Update_ checkbox. Scroll down to the bottom and click _Save_.
+1. Now that the permissions for the role have been verified, let's assign a user group to the role. Note that Liferay roles can also be assigned to individual users, but assigning it to user groups promotes reusability and ease of future maintenance as discussed above. 
 
-1. The summary of the permissions under the _Define Permissions_ tab should look as follows.
+    ![Assign a user group to the role.](./managing-and-organizing-clarity-users/images/02.png)
 
-    ![Set the permissions for the content creator role.](./managing-and-organizing-clarity-users/images/02.png)
+    1. Still within the edit page for the Clarity content manager role, click on the _Assignees_ tab. 
+    1. Click the _User Groups_ tab. 
+    1. Click the add button and assign the Clarity marketing user group to role. 
 
-1. Next, click the _Assignees_ tab. Click the _User Groups_ tab. Click the add icon.
+1. Let's make sure that Jane Newton is part of the clarity marketing user group. 
+    1. Navigate to _Control Panel_ &rarr; _User Groups_.
+    1. Click the options icon next to the Clarity marketing user group and click _Assign Members_. 
+    1. Click the add button and assign Jane Newton to the user group.
 
-1. In the pop-up window, select the content creation user group and click _Add_.
+1. Content managers also need access to Clarity's marketing asset library, so let's check that as well. Verify the permissions for the Clarity asset library manager role.
+    1. Navigate to _Control Panel_ &rarr; _Roles_. 
+    1. Click on the asset library roles tab. 
+    1. Click on the Clarity asset library manager role. 
+    1. Click on the _Define Permissions_ tab. Notice how the role has permissions around asset libraries as well as documents and media. Permissions can be added or removed from this definitions page.
 
-1. To verify the permissions, navigate to _Control Panel_ &rarr; _Users and Organizations_. Click the options icon for Christian Carter and click _Impersonate User_. Navigate to Clarity's blog page and verify that the user can add a blog entry. Also, navigate to a site page and verify that the user can edit the page.
+1. Let's associate the correct asset library to this asset library role. 
+    1. Navigate to _Applications_ &rarr; _Asset Libraries_ and click on the marketing asset library. 
+    1. Scroll down and click _Memberships_. 
+    1. Click the user groups tab and click the add icon. 
+    1. Assign the Clarity marketing user group to the membership. 
 
-Well done! Now every team member that is part of the content creation user group has the correct permissions.
+        ![Assign a role to the user group.](./managing-and-organizing-clarity-users/images/03.png)
+
+    1. Then, click on the options icon of the Clarity marketing user group and click assign roles. Assign the Clarity asset library manager role.
+
+1. Let's impersonate Jane Newton again to verify what she can access. 
+    1. Navigate to _Control Panel_ &rarr; _Users and Organizations_. 
+    1. Click on the options icon next to Jane Newton and click _Impersonate User_. 
+    1. Notice that she now has access to the product menu to add and edit site pages. She also has access to the asset library under the applications menu.
+
+Well done! Now everyone in the Clarity marketing user group has the correct permissions on the platform.
 
 To learn more about user management in general, see our [documentation](https://learn.liferay.com/w/dxp/users-and-permissions).
-
-### Bonus Exercise
-
-You've learned how to create a custom role for the content creator user group.
-
-Next, try to create custom roles for Clarity's other roles and assign them to the other user groups.
-
-!!! tip
-    To establish an effective permission system, begin by identifying individual responsibilities or general user roles. Next, group similar responsibilities and permissions as demonstrated in exercise 1. Then, assign these scoped role-responsibilities to user groups based on their needs. Finally, review your design to ensure it covers all necessary permissions.
 
 ## Organizations
 

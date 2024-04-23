@@ -11,16 +11,15 @@ The deployment strategy of a service determines how new versions will be initial
 
 ## Differences Between Deployment Strategies
 
-Users expect applications to be available all the time and developers are expected to deploy new versions of them several times a day. In Liferay PaaS this is done with the `RollingUpdate` strategy. Rolling updates allow deployments to take place with zero downtime by incrementally updating instances with new ones.
+Users expect applications to be available all the time and developers are expected to deploy new versions of them several times a day. In Liferay PaaS this is done with the `RollingUpdate` strategy. Rolling updates allow deployments to take place with zero downtime by incrementally updating instances with new ones as long as the cluster has at least two working nodes.
 
-| Deployment Strategy | Pros | Cons |
-| :--- | :--- | :--- |
-| `RollingUpdate` | New versions are released incrementally, maximizing uptime | Full roll outs can take additional time relative to number of instances |
-| `Recreate` | Application state entirely renewed at once | Downtime length that occurs is dependent on shutdown and boot up duration for the application |
+| Deployment Strategy | Pros                                                       | Cons                                                                                          |
+| :------------------ | :--------------------------------------------------------- | :-------------------------------------------------------------------------------------------- |
+| `RollingUpdate`     | New versions are released incrementally, maximizing uptime | Full roll outs can take additional time relative to number of instances                       |
+| `Recreate`          | Application state entirely renewed at once                 | Downtime length that occurs is dependent on shutdown and boot up duration for the application |
 
-```{important}
-Deployments defined with the `Recreate` strategy will terminate all the running instances before recreating them with the newer version.
-```
+!!! important
+    Deployments defined with the `Recreate` strategy will terminate all the running instances before recreating them with the newer version.
 
 In general, the `RollingUpdate` strategy is our recommended approach. The `Recreate` strategy can be used in non-production environments or very specific edge cases.
 
@@ -30,13 +29,13 @@ By default, the services in Liferay PaaS are pre-configured to use the `RollingU
 
 ```json
 {
-    "id": "myservice",
-    "strategy": {
-        "type": "Recreate"
-    }
+  "id": "myservice",
+  "strategy": {
+    "type": "Recreate"
+  }
 }
 ```
 
 ## Related Topics
 
-* [Understanding Deployment Types](./understanding-deployment-types.md)
+- [Understanding Deployment Types](./understanding-deployment-types.md)

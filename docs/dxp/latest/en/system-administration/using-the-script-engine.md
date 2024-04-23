@@ -12,9 +12,9 @@ taxonomy-category-names:
 ---
 # Using the Script Engine
 
-Liferay provides a robust script engine for executing [Groovy](http://groovy-lang.org/) scripts to maintain your Liferay DXP instance. You can execute scripts to perform maintenance tasks involving data cleanup, user maintenance operations, bulk Liferay API invocations, or even system level operations.
+Liferay provides a robust script engine for executing [Groovy](http://groovy-lang.org/) scripts. You can execute scripts to perform maintenance tasks involving data cleanup, user maintenance operations, bulk Liferay API invocations, or even system level operations.
 
-In self-hosted or PaaS instances, you can leverage scripts in multiple applications:
+In self-hosted or PaaS instances, you can also leverage scripts in multiple applications:
 
 - [Object actions](../../liferay-development/objects/creating-and-managing-objects/actions.md)
 - [Object validations](../../liferay-development/objects/creating-and-managing-objects/validations.md)
@@ -23,9 +23,9 @@ In self-hosted or PaaS instances, you can leverage scripts in multiple applicati
 
 ![The Script Console executes Groovy scripts and provides context variables, such as the current actionRequest. The Script Console was designed for invoking Liferay Services.](./using-the-script-engine/images/01.png)
 
-Beginning in DXP 2024.Q2/Portal 7.4 GA120, scripting is disabled by default in workflow and objects (validations and actions). Administrators won't even see the option for creating or executing scripts unless permission is granted explicitly by a system-level administrator.
-
 ## Enabling Scripting
+
+Beginning in DXP 2024.Q2/Portal 7.4 GA120, scripting is disabled by default in workflow and objects (validations and actions). Administrators won't even see the option for creating or executing scripts in these applications unless permission is granted explicitly by a system-level administrator.
 
 To enable scripting for administrative users of workflow and objects,
 
@@ -39,7 +39,7 @@ To enable scripting for administrative users of workflow and objects,
 
 Once enabled, administrative applications that can leverage scripting will display the option to users:
 
-![You can enable scripting in supported applications.](./scripting/images/03.png)
+![You can enable scripting in supported applications.](./using-the-script-engine/images/03.png)
 
 ## Navigating to the Script Engine
 

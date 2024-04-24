@@ -16,6 +16,9 @@ uuid: 81304039-f329-43a0-bfe0-8666f6ae66d3
 
 A list of your site's web content articles are presented along with different metrics. To download this data as a CSV file, click _Download Report_. See [downloading reports](../../reference/downloading-reports.md) to learn more.
 
+!!! note
+    Analytics data for web content is collected through the Web Content Display widget. For information on how to use other types of fragments and widgets to collect data on web content, see [Tracking Custom Assets](./tracking-custom-assets.md)
+
 ## Visitor Behavior
 
 The overview tab of an asset's detail presents several data presentations. To download this dashboard view as a PDF file, click _Download Report_. See [downloading reports](../../reference/downloading-reports.md) to learn more.

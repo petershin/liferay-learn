@@ -29,3 +29,6 @@ A CSV report is also available for download for each asset type. See [downloadin
 ![Each Asset has its own table.](assets/images/01.png)
 
 Clicking an individual asset leads to an overview page showing analytics data for the asset. Clicking on the Known Individuals tab shows a list of known visitors who have interacted with the asset.
+
+!!! note
+    Analytics data for assets is collected through each asset's respective widget. For information on how to use other types of fragments and widgets to collect data on these assets, see [Tracking Custom Assets](./tracking-custom-assets.md)

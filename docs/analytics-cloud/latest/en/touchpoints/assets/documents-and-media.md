@@ -16,6 +16,9 @@ Documents and media files are assets you want site users to look at or download.
 
 A list of your site's documents and media appear along with different metrics. To download this data as a CSV file, click _Download Report_. See [downloading reports](../../reference/downloading-reports.md) to learn more.
 
+!!! note
+    Analytics data for documents is collected through the Documents and Media widget. For information on how to use other types of fragments and widgets to collect data on documents, see [Tracking Custom Assets](./tracking-custom-assets.md)
+
 ## Visitor Behavior
 
 The Overview tab of an asset's detail presents several data presentations. To download this dashboard view as a PDF file, click _Download Report_. See [downloading reports](../../reference/downloading-reports.md) to learn more.

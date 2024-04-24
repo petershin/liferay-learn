@@ -18,6 +18,9 @@ Analytics Cloud gives you important insights into how engaged readers are with y
 
 A list of your site's blog posts is presented along with different metrics. To download this data as a CSV file, click _Download Report_. See [downloading reports](../../reference/downloading-reports.md) to learn more.
 
+!!! note
+    Analytics data for blogs is collected through the Blogs widget. For information on how to use other types of fragments and widgets to collect data on blogs, see [Tracking Custom Assets](./tracking-custom-assets.md)
+
 ## Visitor Behavior
 
 Click the name of any blog post to see more detailed analytics. The overview tab of an asset's detail presents several data presentations. To download this dashboard view as a PDF file, click _Download Report_. See [downloading reports](../../reference/downloading-reports.md) to learn more.

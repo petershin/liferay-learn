@@ -16,6 +16,9 @@ uuid: ea56f3d5-74f0-4eb3-84b5-0f4d9ef8d4fe
 
 A list of your site's forms appears along with different metrics. To download this data as a CSV file, click _Download Report_. See [downloading reports](../../reference/downloading-reports.md) to learn more.
 
+!!! note
+    Analytics data for forms is collected through the Form widget. For information on how to use other types of fragments and widgets to collect data on forms, see [Tracking Custom Assets](./tracking-custom-assets.md)
+
 ## Visitor Behavior
 
 As with all asset types, the Visitors Behavior Chart is at the top of its page and provides a line graph with several trend lines. To download this dashboard view as a PDF file, click _Download Report_. See [downloading reports](../../reference/downloading-reports.md) to learn more.

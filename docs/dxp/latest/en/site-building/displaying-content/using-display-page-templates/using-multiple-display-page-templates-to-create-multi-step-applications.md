@@ -98,9 +98,8 @@ Although you can view the page, add an object entry, and see the list of tasks u
 
    A form is generated automatically using the fields from the selected object definition.
 
-   ```{warning}
-   Form fields from master page templates are not populated on display pages. If you add a form container linked to an object in the display page's master page, it is not possible to visualize the form fields related to the object.
-   ```
+   !!! warning
+       Form fields from master page templates are not populated on display pages. If you add a form container linked to an object in the display page's master page, it is not possible to visualize the form fields related to the object.
 
 1. Select the Form Container. Set its Success Interaction to *Go to Page*, and select the List of Tasks page.
 
@@ -110,11 +109,10 @@ Although you can view the page, add an object entry, and see the list of tasks u
 
    When users click the submit button, the List of Tasks page appears, and they also activate the Edit action that replaces the previous Description value with the newly added one.
 
-```{tip}
-Form Container fragments enabled in display page templates. You can also edit the Form Container fragment and use only a subset of input fragments. Then, when the object entry is updated, only the available fields are updated.
+!!! tip
+    Form Container fragments enabled in display page templates. You can also edit the Form Container fragment and use only a subset of input fragments. Then, when the object entry is updated, only the available fields are updated.
 
-Edit the fragments as you see fit and save the Form Container fragment as a composition to be used in both content pages and display pages.
-```
+    Edit the fragments as you see fit and save the Form Container fragment as a composition to be used in both content pages and display pages.
 
 ![Creating the Edit display page template](./using-multiple-display-page-templates-to-create-multi-step-applications/images/05.gif)
 
@@ -156,18 +154,14 @@ Now you can access the List of Tasks page and test the application. Add a task d
 
 If you click on the Edit button, you are directed to the Edit display page where you can edit the entry. When you click submit, you are directed back to the List of Tasks page.
 
-```{tip}
-You can create a display page template as an initial step and configure the Form Container's Success Interaction to Go to Entry Display Page, pointing to the next display page template. This creates a chained multi-step form.
-```
+!!! tip
+    You can create a display page template as an initial step and configure the Form Container's Success Interaction to Go to Entry Display Page, pointing to the next display page template. This creates a chained multi-step form.
 
 ![Testing your resulting application.](./using-multiple-display-page-templates-to-create-multi-step-applications/images/07.gif)
 
 ## Related Topics
 
-[Using Fragments to Build Forms](../../../liferay-development/objects/using-fragments-to-build-forms.md)
-
-[Creating Objects](../../../liferay-development/objects/creating-and-managing-objects/creating-objects.md)
-
-[Adding a Page to a Site](../../creating-pages/adding-pages/adding-a-page-to-a-site.md)
-
-[Creating and Managing Display Page Templates](./creating-and-managing-display-page-templates.md)
+- [Using Fragments to Build Forms](../../../liferay-development/objects/using-fragments-to-build-forms.md)
+- [Creating Objects](../../../liferay-development/objects/creating-and-managing-objects/creating-objects.md)
+- [Adding a Page to a Site](../../creating-pages/adding-pages/adding-a-page-to-a-site.md)
+- [Creating and Managing Display Page Templates](./creating-and-managing-display-page-templates.md)

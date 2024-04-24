@@ -32,6 +32,12 @@ Display page templates define structures for displaying content at a dedicated U
 
 ![Create these pages as display pages.](./adding-pages-to-claritys-site/images/03.png)
 
+<!--TASK:
+### Default Templates
+
+Explain how applying a display page works... we will need to mark the category and product display pages and as the default for their content type.
+-->
+
 ## Utility Pages
 
 Utility pages handle specific functions within a site. Currently, you can use them to create your site’s default 404 and 500 error pages. They are designed using the same tools and features as content pages. With them, you can ensure that even the errors returned to users maintain corporate branding while being easily maintained. Each site includes out-of-the-box error pages, which you can use or modify as needed.
@@ -127,6 +133,10 @@ While logged in as Walter Douglas,
       * Content Type: Web Content Article > Basic Web Content
 
    ![Create these display page templates.](./adding-pages-to-claritys-site/images/11.png)
+
+1. Click the *Actions* button (![Actions Button](../../images/icon-actions.png)) for Product Categories and select *Mark as Default*. Repeat this step for Product Details.
+
+   ![Mark Product Categories and Product Details as default.](./adding-pages-to-claritys-site/images/12.png)
 
 We'll revisit these templates in Module 7, but for now leave them blank.
 

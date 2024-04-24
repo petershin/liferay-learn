@@ -10,97 +10,107 @@ taxonomy-category-names:
 ---
 # API Headers Reference
 
-This article documents the available headers you can use when making Headless API requests:
+API headers are components of HTTP requests that provide essential information to the server about the client's request and how the server should handle it.
 
-* [`Accept`](#accept)
-* [`Accept-Language`](#accept-language)
-* [`Authorization`](#authorization)
-* [`Content-Type`](#content-type)
-* [`Cookie`](#cookie)
+Here's a list of available headers you can use when making Headless API requests:
 
-## `Accept`
+- [`Accept`](#accept)
+- [`Accept-Language`](#accept-language)
+- [`X-Accept-All-Languages`](#x-accept-all-languages)
+- [`Authorization`](#authorization)
+- [`Cookie`](#cookie)
+- [`Content-Type`](#content-type)
 
-Indicates what format the response content should take. Defaults to `json`.
+## Accept
 
-### Valid Options
+The `Accept` header specifies the media types the client can receive in response from the server. It typically contains a list of types that the client can handle. The valid options are `json` (default) and `xml`.
 
-* `json`
-* `xml`
-
-### Example
+Here's an example of a cURL command that makes a GET request to `http://example.com/o/headless-admin-user/v1.0/user-accounts` and includes a header specifying that the client accepts XML-formatted data in the response:
 
 ```bash
-curl --header 'Accept: application/xml' 'example.com/o/headless-admin-user/v1.0/user-accounts'
+curl \
+	"http://example.com/o/headless-admin-user/v1.0/user-accounts" \
+	--header "Accept: application/xml" \
+	--request "GET" \
 ```
 
-## `Accept-Language`
+## Accept-Language
 
-For resources containing content translated into multiple languages, indicates the language for the returned response content. 
+The `Accept-Language` header specifies the client's preferred natural language(s), usually for the response content, so the server responds with content in the preferred language if available.
 
-### Valid Options
+All valid language tags (an ISO-639 language identifier plus ISO-3166-1 alpha-2 country identifier) are valid options (e.g., `en-US`, `es-ES`, or `pt-BR`). The default value is the language of the site that houses the requested content.
 
-All valid language tags (an ISO-639 language identifier plus ISO-3166-1 alpha-2 country identifier); e.g. `en-US`, `es-ES`. Defaults to the default language of the site that houses the requested content.
+Here's an example of a cURL command where the preferred language for the response content is Brazilian Portuguese.
 
-### Example
-
-```
-curl --header 'Accept-Language: pt-BR' 'example.com/o/headless-delivery/v1.0/sites/20124/blog-postings'
-```
-
-## `Authorization`
-
-Identifies which User is making the request, using DXP's Authentication framework. (See also [`Cookie`](#cookie).) If both this and `Cookie` are not supplied, the request is attempted as a guest (unauthenticated) user.
-
-### Valid Options
-
-* `Basic` + Base64-encoded credentials
-* `Bearer` + OAuth token
-
-### Example
-
-```
-curl --header 'Authorization: Basic dXNlcm5hbWU6cGFzc3dvcmQK' 'example.com/o/headless-admin-user/v1.0/user-accounts'
+```bash
+curl \
+	"http://example.com/o/c/customobjects/" \
+	--header "accept: application/json" \
+	--header "Accept-Language: pt-BR" \
+	--request "GET" \
 ```
 
-## `Content-Type`
+## X-Accept-All-Languages
 
-Allows uploading binary data.
+The `X-Accept-All-Languages` header indicates to the server that the client requests the content to be returned in all available languages. This header is an extension beyond the standard [`Accept-Language`](#accept-language) header, allowing the client to explicitly specify this behavior.
 
-### Valid Options
+Use `true` as the parameter to return the content in all available languages or `false` to do otherwise (default behavior).
 
-* `multipart/form-data`
+Here's an example of a cURL command that sends a request to `example.com/o/headless-admin-user/v1.0/user-accounts`, specifying that the server should return the requested content in all available languages.
 
-### Example
-
-```
-curl --form 'file=@myfile.txt' --header 'Content-Type: multipart/form-data; boundary=ARBITRARY' 'example.com'
-```
-
-## `Cookie`
-
-Identifies the User making the request, using DXP's Authentication framework. (See also [`Authorization`](#authorization).) If both this and `Authorization` are not supplied, the request is attempted as a guest (unauthenticated) user.
-
-### Valid Options
-
-* `JSESSIONID`
-
-### Example
-
-```
-curl --header 'Cookie: JSESSIONID=6349351B37C3EE1F6BA4E128107E9A34' 'example.com/o/headless-admin-user/v1.0/user-accounts'
+```bash
+curl \
+	"http://example.com/o/headless-admin-user/v1.0/user-accounts" \
+	--header "X-Accept-All-Languages: true" \
 ```
 
-## `X-Accept-All-Languages`
+## Authorization
 
-Indicates that the server should return the requested content in all available languages. (See also [`Accept-Language`](#accept-language).)
+The `Authorization` header provides credentials for authentication purposes. Clients can authenticate themselves with the server using various authentication mechanisms, such as Basic Authentication, Bearer Tokens, or OAuth tokens.
 
-### Valid Options
+In Liferay, the Authorization header identifies which user is making the request, using DXP's Authentication framework. If both this and the [`Cookie`](#cookie) headers are not supplied, the request is attempted as a guest (unauthenticated) user.
 
-* `true`
-* `false`
+Valid options for the Authorization header include using Basic Authentication with Base64-encoded credentials or Bearer Tokens with OAuth tokens.
 
-### Example
+Here's an example of a cURL command that specifies a GET request to `http://example.com/o/c/customobjects/` and provides an authentication token using the Bearer token method:
 
+```bash
+curl \
+	"http://example.com/o/c/customobjects/" \
+	--header "accept: application/json" \
+	--header "Accept-Language: pt-BR" \
+	--header "Authorization: Bearer YOUR_ACCESS_TOKEN_HERE" \
+   --request "GET" \
 ```
-curl --header 'X-Accept-All-Languages: true' 'example.com/o/headless-admin-user/v1.0/user-accounts'
+
+## Cookie
+
+The `Cookie` header sends cookies previously stored by the server with the client's browser so the server maintains session state and tracks user activity across multiple requests.
+
+In Liferay, the Cookie header uses a `JSESSIONID` value that identifies and tracks the user's session, using DXP's Authentication framework. If both this and [`Authorization`](#cookie) are not supplied, the request is attempted as a guest (unauthenticated) user.
+
+Here's an example of a cURL command that performs a GET request to the provided URL and includes a Cookie header with a `JSESSIONID` value.
+
+```bash
+curl \
+	"http://example.com/o/headless-admin-user/v1.0/user-accounts" \
+	--header "Authorization: Bearer YOUR_ACCESS_TOKEN_HERE" \
+	--header "Cookie: JSESSIONID=6349351B37C3EE1F6BA4E128107E9A34" \
+   --request "GET" \
+```
+
+## Content-Type
+
+The `Content-Type` header indicates the media type of the request payload sent from the client to the server so it can manage the data accordingly.
+
+In Liferay, you can upload binary data as `multipart/form-data`
+
+Here's an example of a cURL command that sends a POST request to `http://example.com`, attaching a file named `myfile.txt`. The command includes a header specifying that the request body is formatted as `multipart/form-data` to transmit files and other data fields as parts of the message.
+
+```bash
+curl \
+	"http://example.com" \
+	--form "file=@myfile.txt" \
+	--header "Content-Type: multipart/form-data; boundary=ARBITRARY" \
+   --request "POST" \
 ```

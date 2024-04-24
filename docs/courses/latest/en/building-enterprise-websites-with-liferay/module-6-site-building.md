@@ -9,6 +9,7 @@ toc:
 - ./module-6-site-building/designing-claritys-master-pages.md
 - ./module-6-site-building/creating-navigation-menus-for-claritys-master-pages.md
 - ./module-6-site-building/creating-custom-fragments-for-clarity.md
+- ./module-6-site-building/wireframing-claritys-pages.md
 uuid: b46186fd-6e49-4418-9b6f-b04710b36e4d
 ---
 # Module 6: Site Building

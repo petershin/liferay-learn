@@ -41,13 +41,13 @@ With the data set manager, you can create data set views and customize how users
 
 The Data Set View application is divided into tabs:
 
-- In the Details tab, see and edit the name (1) and description (2) of your data set view. Click *Save* once the alterations are complete.
+- Details tab: see and edit the name (1) and description (2) of your data set view. Click *Save* once the alterations are complete.
 
    You can also see the information about the REST Application, Schema, and Endpoint (3) used with that data set.
 
    ![In the Details tab, edit the name and description of your data set view.](./data-set-views/images/02.png)
 
-- {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+` In the [Visualization Modes tab](./data-set-views/data-set-view-visualization-modes.md), select fields and manage how they are displayed in your data set using three different visualization modes: Table, List, and Cards.
+- {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+` [Visualization Modes](./data-set-views/data-set-view-visualization-modes.md) tab: select fields and manage how they are displayed in your data set using three different visualization modes: Table, List, and Cards.
 
    Edit the fields, add friendly labels and localize them, choose a renderer for the fields, and define them as sortable or not sortable.
 
@@ -55,13 +55,13 @@ The Data Set View application is divided into tabs:
 
    ![In the Visualization Modes tab, manage the fields and visualization modes used to display the data.](./data-set-views/images/03.png)
 
-- In the [Filters tab](./data-set-views/data-set-view-filters.md), define filters that users can apply to the data set fragment.
+- [Filters](./data-set-views/data-set-view-filters.md) tab: define filters that users can apply to the data set fragment.
 
    You can apply customized filters using [Client Extensions](../client-extensions.md), use date-type fields and show entries within a given period, or configure [Picklists](../objects/picklists.md) as the source of the options for the filter.
 
    ![In the Filters tab, provide filters to your data set view.](./data-set-views/images/04.png)
 
-- In the Sorting tab, set default sorting rules that are applied to the entries once the user visits a page with a Data Set fragment.
+- Sorting tab: set default sorting rules that are applied to the entries once the user visits a page with a Data Set fragment.
 
    Sort entries using a specific field as a criterion and in ascending or descending order.
 
@@ -69,7 +69,7 @@ The Data Set View application is divided into tabs:
 
    ![In the Sorting tab, set default sorting rules that are applied to the entries once the user visits a page with a Data Set fragment.](./data-set-views/images/05.png)
 
-- {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+` In the [Actions tab](./data-set-views/data-set-view-actions.md), create actions linked to the elements in the data set.
+- {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+` [Actions](./data-set-views/data-set-view-actions.md) tab: create actions linked to the elements in the data set.
 
    With *Item Actions*, you can perform many actions related to items in the data set, depending on the specific needs and context of the data. For example, if a data set item represents a user, possible actions include activating/deactivating it or impersonating it. Similarly, for a web content item, actions could include expiring content or viewing its history and usage.
 
@@ -79,7 +79,7 @@ The Data Set View application is divided into tabs:
 
    ![In the Actions tab, create actions mapped to buttons and link them to different URLs.](./data-set-views/images/06.png)
 
-- In the Pagination tab, configure the pagination options for the data set view. Pagination divides a large set of data into smaller, more manageable parts.
+- Pagination tab: configure the pagination options for the data set view. Pagination divides a large set of data into smaller, more manageable parts.
 
    Set a default number of items per page and provide users with a list of options from which they can select their preferred number of items to display on each page.
 
@@ -87,7 +87,7 @@ The Data Set View application is divided into tabs:
 
    ![In the Pagination tab, set a default number of items per page and add a list of defined values from which users can select their preferred number of items to display on a page.](./data-set-views/images/07.png)
 
-- In the Settings tab, configure your data set view (e.g., set a default visualization mode).
+- Settings tab: configure your data set view (e.g., set a default visualization mode).
 
    ![In the Settings tab, you can configure your data set view.](./data-set-views/images/08.png)
 

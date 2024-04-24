@@ -12,11 +12,11 @@ taxonomy-category-names:
 {bdg-secondary}`Liferay DXP 2024.Q1+/Portal 7.4 GA112+`
 {bdg-link-primary}`[Beta Feature](../../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
 
-While managing data set views, define actions to be used in the data set fragment. There are two types of action, item and creation.
+While managing data set views, define actions to be used in the data set fragment. There are two types of actions: item and creation.
 
-Use *Item Actions* to perform different actions related to items in the data set, depending on the specific needs and context of the data.
+Use *Item Actions* to perform actions on items in the data set. 
 
-Use creation actions to add new data by directing users to appropriate locations for data creation.
+Use *Creation Actions* to add new data. 
 
 Begin by [adding an action to the data set view](#adding-actions-to-the-data-set-view) and configure it as an [item or creation action](#configuring-item-and-creation-actions).
 
@@ -43,11 +43,9 @@ Under the Display Options section, you can find general settings common to all a
    <!-- Choose from a list of out-of-the-box icons or type in the name of an icon registered through the SVG sprite map client extension. The custom icon requires configuring the client extension. - This is to be added once the article about this client extension is on. Eric -->
 
    !!! tip
-       When an item has a single action, its label appears as text inside a button component if no icon is selected.
+       When an item has a single action, its label appears as text inside a button component if no icon is selected. If multiple actions exist, an action menu icon (![Action Menu icon](../../../images/icon-actions.png)) appears, revealing available actions on click.
 
-       Conversely, if multiple actions exist, an action menu icon (![Action Menu icon](../../../images/icon-actions.png)) appears, revealing available actions on click.
-
-   ![Use the action's label as text inside a button component or select an icon to show in your Data Set fragment instead.](./data-set-view-actions/images/02.png)
+![Use the action's label as text inside a button component or select an icon to show in your Data Set fragment instead.](./data-set-view-actions/images/02.png)
 
 Under the Action Behavior section, select the action type. You can find specific configurations for each action you choose. See [Configuring Item and Creation Actions](#configuring-item-and-creation-actions) to learn more about each action type.
 
@@ -63,7 +61,7 @@ With item actions, set actions (e.g., delete, edit, or display the details of it
 
 There are five item action types: [Async](#async-action), [Headless](#headless-action), [Link](#link-action), [Modal](#modal-action), and [Side Panel](#side-panel-action)
 
-With creation actions, create new items for the data set. You can direct users to a URL where the new entry is created, and choose whether to open the link directly or in a modal or side panel.
+With creation actions, create new items for the data set. You can direct users to a URL where the new entry is created and choose whether to open the link directly or in a modal or side panel.
 
 There are three creation action types: [Link](#link-action), [Modal](#modal-action), and [Side Panel](#side-panel-action).
 
@@ -73,15 +71,15 @@ Before creating actions for your data set, review the [General Observations](#ge
 
 ### General Observations
 
-- API Information: Access action keys and endpoint details through your [API Explorer](../../../headless-delivery/consuming-apis/consuming-rest-services.md).
+- API Information: Access action keys and endpoint details through the [API Explorer](../../../headless-delivery/consuming-apis/consuming-rest-services.md).
 
-- Confirmation Messages: These are only available for Item Actions.
+- Confirmation Messages: These are only available for item actions.
 
 - Permissions: When an action is associated with a headless endpoint, the user must have the necessary permissions to use the endpoint (e.g. to edit the document). The information returned by the endpoint may vary depending on the user's permissions.
 
-- URL Interpolation: Use interpolated parameters in URLs to dynamically send information to the API. Enclose parameterized values in curly braces `{}`.
+- URL Interpolation: Use interpolated parameters in URLs to send information dynamically to the API. Enclose parameterized values in curly braces `{}`.
 
-   For example, replace static values like `(...)externalReferenceCode=9ad3e87f-0a7b-4624(...)` with `externalReferenceCode={externalReferenceCode}` so the value is dynamically retrieved based on the item.
+   For example, replace static values like `(...)externalReferenceCode=9ad3e87f-0a7b-4624(...)` with `externalReferenceCode={externalReferenceCode}` so the value is retrieved dynamically based on the item.
 
 - URL Best Practices: Use relative URLs and try to make them as universal as possible.
 
@@ -89,19 +87,19 @@ Before creating actions for your data set, review the [General Observations](#ge
 
    Avoid specifying site names whenever possible.
 
-   Do not use `p_p_auth` values in URLs, as they are session-specific and are not be valid in different contexts.
+   Do not use `p_p_auth` values in URLs, as they are session-specific and are not valid in different contexts.
 
 ### Async Action
 
-Async actions are designed to operate behind the scenes, allowing complex or time-consuming operations to be carried out in the background while users continue interacting with the application.
+Async actions operate behind the scenes, allowing complex or time-consuming operations to be carried out in the background while users continue interacting with the application.
 
 ![Available options for the Async type.](./data-set-view-actions/images/03.png)
 
 To create an async action,
 
-1. Under the Action Behavior section, select *Async* as the Type.
+1. Under Action Behavior, select *Async* as the Type.
 
-1. Specify the *URL* for the REST endpoint where the selected method is implemented, and select the *Method*: Delete, Get, Patch, or Post.
+1. Specify the *URL* for the REST endpoint where the selected method is implemented and select the *Method*: Delete, Get, Patch, or Post.
 
 1. (Optional) Enter a *Headless Action Key* to link an action with a headless endpoint and verify if users have the required permissions for the specific action method. Ensure the key matches or is compatible with the selected method.
 
@@ -114,15 +112,15 @@ Once configured, use the async action to invoke and execute the selected method.
 
 ### Headless Action
 
-Headless actions are controlled via a "Headless Action Key," which determines the specific permissions and functionalities that can be executed through the API. For example, a headless action with the key "delete" would allow an API to carry out a deletion operation on a specific resource.
+Headless actions are controlled via a *Headless Action Key*, which determines the specific permissions and functionalities that can be executed through the API. For example, a headless action with the key *delete* would allow an API to carry out a deletion operation on a specific resource.
 
 ![Available options for the Headless type.](./data-set-view-actions/images/04.png)
 
 To create a headless action,
 
-1. Under the Action Behavior section, select *Headless* as the Type.
+1. Under Action Behavior, select *Headless* as the Type.
 
-1. Enter a *Headless Action Key*. With the key, administrators can associate an action to a headless endpoint. If no key is defined, the action still works, but any user can see and use it, as no restrictions are set without it.
+1. Enter a *Headless Action Key*. With the key, administrators can associate an action to a headless endpoint. 
 
 1. (Optional) [Set *Confirmation* and *Status Messages*](#setting-confirmation-and-status-messages) for your headless action.
 
@@ -138,23 +136,23 @@ The primary distinction is the specific purpose of the URL and whether you can s
 
 To create a link action,
 
-1. Under the Action Behavior section, select *Link* as the Type.
+1. Under Action Behavior, select *Link* as the Type.
 
 1. Specify the URL for redirecting the user.
 
-1. (Optional) Enter a Headless Action Key. With the Action key, administrators can associate an action to a headless endpoint (e.g. GET, POST, and DELETE).
+1. (Optional) Enter a *Headless Action Key*. With the Action key, administrators can associate an action to a headless endpoint (e.g. GET, POST, and DELETE).
 
-   For example, use `replace` to modify an entry as an item action, or use `create` to add a new entry as a creation action.
+   For example, use `replace` to modify an entry as an item action or use `create` to add a new entry as a creation action.
 
    ![Use Headless Action Keys to link an action to a headless endpoint.](./data-set-view-actions/images/06.png)
 
 1. (Optional) If you are using the Link action as an item type, you can [set a *Confirmation Message*](#setting-confirmation-and-status-messages) for it.
 
-Once configured, users are redirected to the designated URL upon clicking the action button or icon.
+Once configured, users are directed to the designated URL upon clicking the action button or icon.
 
 ### Modal Action
 
-Modal actions redirect users to a specified URL that is rendered in a modal window. Depending on the specific intent behind the action, they can be used as item or creation actions. The key difference is that only item actions include confirmation messages.
+Modal actions send users to a specified URL that is rendered in a modal window. You can use modal actions as item or creation actions, but remember that only item actions include confirmation messages.
 
 ![Use the modal action to redirect users to a specified URL and render its content in a modal window.](./data-set-view-actions/images/07.png)
 
@@ -163,25 +161,25 @@ Modal actions redirect users to a specified URL that is rendered in a modal wind
 
 To create a modal action,
 
-1. Under the Action Behavior section, select *Modal* as the Type.
+1. Under Action Behavior, select *Modal* as the Type.
 
 1. Select a *Variant* for your modal: Full Screen, Large, or Small.
 
 1. Enter a *Title* for your modal.
 
-1. Specify the URL for redirecting the user.
+1. Specify the URL.
 
-1. (Optional) Enter a Headless Action Key. With the Action key, administrators can associate an action to a headless endpoint (e.g. GET, POST, and DELETE).
+1. (Optional) Enter a *Headless Action Key*. With the Action key, administrators can associate an action to a headless endpoint (e.g. GET, POST, and DELETE).
 
-   For example, use `replace` to modify an entry as an item action, or use `create` to add a new entry as a creation action.
+   For example, use `replace` to modify an entry as an item action or use `create` to add a new entry as a creation action.
 
 1. (Optional) If you are using the Modal action as an item type, you can [set a *Confirmation Message*](#setting-confirmation-and-status-messages) for it.
 
-Once configured, users are redirected to the chosen URL rendered in a modal when they click on the action button or icon.
+Once configured, users are directed to the chosen URL rendered in a modal when they click the action button or icon.
 
 ### Side Panel Action
 
-Side Panel actions redirect users to a specified URL that is rendered in a side panel. Depending on the specific intent behind the action, they can be used as item or creation actions. The key difference is that only item actions include confirmation messages.
+Side Panel actions send users to a specified URL that is rendered in a side panel. You can use side panel actions as item or creation actions, but remember that only item actions include confirmation messages.
 
 ![Use the Side Panel action to redirect users to a specified URL and render its content in a Side Panel.](./data-set-view-actions/images/08.png)
 
@@ -202,16 +200,16 @@ To create a side panel action,
 
 1. (Optional) If you are using the Side Panel action as an item type, you can [set a *Confirmation Message*](#setting-confirmation-and-status-messages) for it.
 
-Once configured, users are redirected to the chosen URL rendered in a side panel when they click on the action button or icon.
+Once configured, users are directed to the chosen URL rendered in a side panel when they click the action button or icon.
 
 ### Setting Confirmation and Status Messages
 
-Display confirmation messages before executing an action or status messages to indicate the final status of an action, whether it was successful or not.
+You can display confirmation or success/failure messages before executing an action.
 
 ![Use confirmation and status messages to warn and notify users.](./data-set-view-actions/images/09.png)
 
 !!! tip
-    Both fields are optional. If the confirmation message is empty, no message is displayed and the action is performed immediately. Similarly, if the status message is left empty, a generic success or error message is displayed.
+    Both fields are optional. If the confirmation message is empty, no message appears, and the action is performed immediately. Similarly, if the status message is left empty, a generic success or error message appears.
 
 To create confirmation messages for item actions,
 
@@ -219,13 +217,13 @@ To create confirmation messages for item actions,
 
 1. Under Action Behavior, enter a *Confirmation Message*.
 
-1. Choose the Message Type: Warning, Info, Secondary, Success, and Danger.
+1. Choose the *Message Type*: Warning, Info, Secondary, Success, and Danger.
 
 To create status messages for [async](#async-action) and [headless](#headless-action) actions,
 
 1. Follow the steps to [create a data set view *Item Action*](#adding-actions-to-the-data-set-view).
 
-1. Select either *Async* or *Headless* as the type.
+1. Select *Async* or *Headless* as the type.
 
 1. Under Status Messages, select the *Success* tab and enter a success message.
 

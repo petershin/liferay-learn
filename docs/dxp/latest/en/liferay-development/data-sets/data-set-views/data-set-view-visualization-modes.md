@@ -12,11 +12,11 @@ taxonomy-category-names:
 {bdg-secondary}`Liferay DXP 2024.Q1+/Portal 7.4 GA112+`
 {bdg-link-primary}`[Beta Feature](../../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
 
-Use the data set manager to select fields and manage visualization modes to customize how you display the data in your data set view. There are three visualization modes: [table](#displaying-data-as-a-table), [list, and cards](#displaying-data-as-a-list-or-in-cards).
+To customize the data display in your data set view, use the data set manager to select fields and manage visualization modes. There are three visualization modes: [table](#displaying-data-as-a-table), [list, and cards](#displaying-data-as-a-list-or-in-cards).
 
 With the table visualization mode, you can add and customize any number of fields and select how to render them. With lists and cards, you have a restricted number of elements that can be mapped to fields.
 
-After setting up the visualization modes, access a page with a [data set fragment](./using-data-set-view-actions.md#using-a-data-set-fragment-in-a-content-page) and choose your preferred mode using the *Show View Options*
+After setting up the visualization modes, access a page with a [data set fragment](./using-data-set-view-actions.md#using-a-data-set-fragment-in-a-content-page) and choose your preferred mode using *Show View Options*
 
 ![Drag and drop fields to reorder them.](./data-set-view-visualization-modes/images/01.png)
 
@@ -28,11 +28,11 @@ To configure a table visualization mode,
 
 1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), select the *Control Panel* tab, and click *Data Sets* under Object.
 
-1. Click the *Name* of the data set you want to access.
+1. Click the name of the *data set* you want to access.
 
    Alternatively, you can click *Actions* (![Actions menu](../../../images/icon-actions.png)) next to the data set entry and select *Edit*.
 
-1. Click the *Name* of the data set view to start editing it.
+1. Click the name of the *data set view* to start editing it.
 
 1. Select the *Visualization Modes* tab.
 
@@ -62,15 +62,13 @@ To edit a field, click *Actions* (![Actions menu](../../../images/icon-actions.p
 
 Once you start editing a field, you can change the label and localize it (1).
 
-To localize the label,
-
-1. Click the flag icon next to the Label field and choose a Language.
+1. Click the *flag icon* next to the Label field and choose a *language*.
 
 1. Enter the translated text in the Label field (2).
 
    The translated text is saved automatically.
 
-   The localization status label next to the flag changes to `Translated` to indicate that the localization was successful.
+   The localization status label next to the flag changes to `Translated` to indicate that localization was successful.
 
    ![The localization status label next to the flag changes to `Translated` to indicate that the localization was successful.](./data-set-view-visualization-modes/images/04.png)
 
@@ -79,10 +77,10 @@ To localize the label,
 
 ### Selecting a Renderer for the Field
 
-A renderer (3) is a structured way to customize how a component appears. They are built to be convenient. You enter a raw value and the renderer assumes the most typical format and UI for it.
+A renderer (3) is a structured way to customize how a component appears. You enter a raw value, and the renderer assumes the most typical format and UI for it.
 
 !!! important
-    To ensure your data is displayed correctly, the field type must be compatible with the selected renderer.
+    To ensure your data appears correctly, the field type must be compatible with the selected renderer.
 
 Below on the left, the status, date, and date and time fields have the default renderer applied. On the right, the status, date, and date and time renderers are applied to the respective fields.
 
@@ -94,7 +92,7 @@ Below on the left, the status, date, and date and time fields have the default r
 
 When a field is marked as sortable, users can sort the elements while using the data set fragment in a content page.
 
-Users can sort entries based on the integer field initially. However, when the sortable checkbox is unchecked, sorting entries using the integer field as a filter becomes impossible (see below).
+Initially, users can sort entries based on the integer field. However, when the sortable checkbox is unchecked, sorting entries using the integer field as a filter becomes impossible (see below).
 
 ![Define the fields as sortable, so users can sort elements when using the data set fragment.](./data-set-view-visualization-modes/images/06.gif)
 
@@ -109,11 +107,11 @@ Use the list and cards visualization modes to map fields to the visualization mo
 
 1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), select the *Control Panel* tab, and click *Data Sets* under Object.
 
-1. Click the *Name* of the data set you want to access.
+1. Click the name of the *data set* you want to access.
 
    Alternatively, you can click *Actions* (![Actions menu](../../../images/icon-actions.png)) next to the data set entry and select *Edit*.
 
-1. Click the *Name* of the data set view to start editing it.
+1. Click the name of the *data set view* to start editing it.
 
 1. Select the *Visualization Modes* tab.
 
@@ -123,12 +121,12 @@ Use the list and cards visualization modes to map fields to the visualization mo
 
 1. To assign a field to an element, click *Add* (![Add icon](../../../images/icon-plus.png)) and select a field.
 
-   The available elements are Title, Description, Image, and Symbol. Note that the image element overrides the symbol element; Therefore, you only need to assign one of them.
+   The available elements are Title, Description, Image, and Symbol. Note that the image element overrides the symbol element; therefore, you only need to assign one of them.
 
    !!! tip
        To use the Symbol element, you must create [a text-type object field](../../objects/creating-and-managing-objects/fields.md) with values that match icon names from the [Clay Icon Reference](https://clayui.com/docs/components/icon.html).
 
-       For example, if you want to use a shopping cart symbol, create the object definition, add a text field, name it however you want, and enter `shopping-cart` in the field when creating the object entry. Once you assign the field to the Symbol element, the shopping-cart symbol will show.
+       For example, if you want to use a shopping cart symbol, create the object definition, add a text field, name it however you want, and enter `shopping-cart` in the field when creating the object entry. Once you assign the field to the Symbol element, the shopping-cart symbol appears.
 
 Below, you can see the same data shown in cards using images and as a list using clay icons as symbols.
 
@@ -138,15 +136,13 @@ Below, you can see the same data shown in cards using images and as a list using
 
 You can define a default visualization mode to be shown first once a data set fragment is used in a page.
 
-To set a default visualization mode,
-
 1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), select the *Control Panel* tab, and click *Data Sets* under Object.
 
-1. Click the *Name* of the data set you want to access.
+1. Click the name of the *data set* you want to access.
 
    Alternatively, you can click *Actions* (![Actions menu](../../../images/icon-actions.png)) next to the data set entry and select *Edit*.
 
-1. Click the *Name* of the data set view to start editing it.
+1. Click the name of the *data set view* to start editing it.
 
 1. Select the *Settings* tab.
 

@@ -52,10 +52,10 @@ Ratings can be enabled on documents and media. Whether the rating is a simple th
 
 The audience report uses charts to present information about the audience interaction with the asset. It answers these questions:
 
-* How many users are interacting with my content?
-* Of these users, how many are known or anonymous?
-* Of the known users who interacted with my content, how many belong to Analytics Cloud segments?
-* Of the users in segments, what are the top 15 segments?
+- How many users are interacting with my content?
+- Of these users, how many are known or anonymous?
+- Of the known users who interacted with my content, how many belong to Analytics Cloud segments?
+- Of the users in segments, what are the top 15 segments?
 
 Here are the charts in the audience report:
 
@@ -91,3 +91,8 @@ Click _Browsers_ to see a donut chart displaying up to the top eight web browser
 The asset appears on table includes a page name and URL. Like any page data in Analytics Cloud, only pages that were interacted with in some way by site visitors are tracked and reported. It's important to note that the link doesn't take you to the actual page with the asset on it. Instead, it leads to the page analytics view of the page. From there you can click the URL to the actual page.
 
 ![A table lists where the assets appear.](documents-and-media/images/06.png)
+
+## Related Topics
+
+- [Documents and Media](https://learn.liferay.com/web/guest/w/dxp/content-authoring-and-management/documents-and-media)
+- [Tracking Custom Assets](./tracking-custom-assets.md)

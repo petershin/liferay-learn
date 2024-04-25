@@ -81,7 +81,6 @@ Use the following steps to configure Unicast:
     cluster.link.enabled=true
     cluster.link.channel.properties.control=jgroups/secure/md5/udp_control.xml
     cluster.link.channel.properties.transport.0=jgroups/secure/md5/udp_transport.xml
-
     ```
 
 The JGroups configuration demonstrated above is typically all that Unicast over TCP requires. However, in a very specific case, if *(and only if)* cluster nodes are deployed across multiple networks, then the `external_addr` TCP transport parameter must be set on each host to the external (public IP) address of the firewall. This kind of configuration is usually only necessary when nodes are geographically separated. By setting this, clustered nodes deployed to separate networks (e.g. separated by different firewalls) can communicate together. This configuration may be flagged in security audits of your system. See [JGroups documentation](http://www.jgroups.org/manual4/index.html#_transport_protocols) for more information.

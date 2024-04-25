@@ -100,13 +100,13 @@ cluster.link.channel.properties.control=[your control channel properties]
 cluster.link.channel.properties.transport.0=[your transport channel properties]
 ```
 
-For MD5, you can choose the auth.value with the property below. The default value is `liferay-cluster`. Make sure every node in the cluster has the same auth.value so they can decrypt each other's messages.
+For MD5, you can choose the `auth.value` with the property below. The default value is `liferay-cluster`. Make sure every node in the cluster has the same `auth.value` so they can decrypt each other's messages.
 
 ```properties
 cluster.link.auth.value=[secret]
 ```
 
-For X509, you will need these additional properties:
+For X509, you need these additional properties:
 
 ```properties
 cluster.link.auth.cert.alias=[certification's alias in the keystore]
@@ -118,9 +118,9 @@ cluster.link.auth.keystore.type=[keystore type]
 cluster.link.auth.value=[the string to encrypt]
 ```
 
-## Upgrading an Unsecure Environment
+## Upgrading an Insecure Environment
 
-If you're using the default configuration and you want to upgrade the `portal-cluster-multiple` module to a version that allows different encryption options, you'll need to make sure your nodes can communicate with each other throughout the entire upgrade process. Since your old cluster might not be using any form of encryption, it's important to make sure that your new nodes do not use the default MD5 authentication, but use `jgroups/unsecure/udp_control.xml` and `jgroups/unsecure/udp_transport.xml` instead. Once all your nodes have been upgraded, if you wish to change your encryption type, your environment will require a full maintenance shutdown.
+If you're using the default configuration and you want to upgrade the `portal-cluster-multiple` module to a version that allows different encryption options, you must make sure your nodes can communicate with each other throughout the entire upgrade process. Since your old cluster might not be using any form of encryption, it's important to make sure that your new nodes do not use the default MD5 authentication, but use `jgroups/unsecure/udp_control.xml` and `jgroups/unsecure/udp_transport.xml` instead. Once all your nodes have been upgraded, to change your encryption type, you must initiate a full maintenance shutdown.
 
 ## Conclusion
 

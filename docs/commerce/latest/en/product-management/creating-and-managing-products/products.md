@@ -1,6 +1,7 @@
 ---
 toc:
   - ./products/products-overview.md
+  - ./products/generating-product-descriptions-using-ai.md
   - ./products/using-product-options.md
   - ./products/creating-skus-for-product-variants.md
   - ./products/defining-skus-as-option-values-using-a-collection-provider.md

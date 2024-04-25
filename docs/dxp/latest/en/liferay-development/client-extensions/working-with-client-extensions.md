@@ -10,7 +10,7 @@ taxonomy-category-names:
 
 {bdg-primary}`Liferay Self-Hosted`
 {bdg-primary}`Liferay SaaS`
-{bdg-warning}`Liferay PaaS`
+{bdg-primary}`Liferay PaaS`
 
 {bdg-secondary}`Liferay 7.4`
 
@@ -185,6 +185,26 @@ To deploy client extensions for Liferay SaaS,
    ```
 
    When prompted, select a project and the deployment environment. The zip files are uploaded to your Liferay SaaS project once the command completes.
+   
+### Deploying to Liferay PaaS
+
+To deploy any type of client extension *other than microservices* for Liferay PaaS,
+
+1. Go to your workspace's `client-extensions/` folder and run
+
+    ```bash
+    ../gradlew clean build
+    ```
+    
+    The compiled `.zip` files are created in each project's `dist/` folder. To build one project at a time, run the command from the project's folder.
+
+1. Copy the `.zip` file from the desired project's `dist/` folder into your PaaS project repository's `liferay/configs/[ENV]/osgi/client-extensions/` folder.
+
+1. [Create and deploy a new build](https://learn.liferay.com/w/liferay-cloud/updating-services-in-liferay-paas/deploying-changes-via-the-liferay-cloud-console) to your environment.
+
+This process builds the client extension as part of the updated Liferay Docker image.
+
+Deploying microservices requires additional steps to run in a separate container and communicate with Liferay. See [Deploying Microservice Client Extensions to Liferay PaaS](https://learn.liferay.com/w/liferay-cloud/customizing-liferay-dxp-in-the-cloud/deploying-microservice-client-extensions-to-liferay-paas) for more information.
 
 ### Deploying to a Self-Hosted Liferay Instance
 

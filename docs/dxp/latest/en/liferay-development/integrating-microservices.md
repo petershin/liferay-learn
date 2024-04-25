@@ -17,7 +17,7 @@ taxonomy-category-names:
 
 {bdg-primary}`Liferay Self-Hosted`
 {bdg-primary}`Liferay SaaS`
-{bdg-warning}`Liferay PaaS`
+{bdg-primary}`Liferay PaaS`
 
 {bdg-secondary}`Liferay 7.4`
 

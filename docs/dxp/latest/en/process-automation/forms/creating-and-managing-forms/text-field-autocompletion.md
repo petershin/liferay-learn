@@ -24,9 +24,9 @@ To enable autocompletion from a list of manually entered options,
 
 To enable autocompletion from a list of manually entered options, 
 
-1. Go to the Forms application. Open *Site Menu* ![Site Menu](../../../images/icon-menu.png) &rarr; *Content & Data* &rarr; *Forms*
+1. Go to the Forms application. Open *Site Menu* ![Site Menu](../../../images/icon-menu.png) &rarr; *Content & Data* &rarr; *Forms*.
 
-1. Open *Data Providers_ and add a [REST data provider](../data-providers/using-the-rest-data-provider-to-populate-form-options.md) configured like this:
+1. Open *Data Providers* and add a [REST data provider](../data-providers/using-the-rest-data-provider-to-populate-form-options.md) configured like this:
 
    * **Name**: REST Countries
    * **URL**: `https://restcountries.com/v3.1/all`
@@ -48,11 +48,35 @@ To enable autocompletion from a list of manually entered options,
 
 ## HTML Attribute Autocompletion
 
+{bdg-secondary}`DXP 2024.Q2+; Portal 7.4 GA120+`
+
 Date, Numeric, and Text fields can leverage autocompletion or autofill from the [browser through HTML attributes](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#autofill).
 
+1. Go to the Forms application. Open *Site Menu* ![Site Menu](../../../images/icon-menu.png) &rarr; *Content & Data* &rarr; *Forms*.
+
+1. Open *Data Providers* and add a [REST data provider](../data-providers/using-the-rest-data-provider-to-populate-form-options.md) configured like this:
+
+   * **Name**: REST Countries
+   * **URL**: `https://restcountries.com/v3.1/all`
+   * **Output Path**: `$..name.common`
+   * **Output Type**: List
+   * **Output Label**: Country Name
+
+   To understand more about these values, see [Data Providers Overview](../data-providers/data-providers-overview.md).
+
+1. [Add a form](./creating-forms.md) with a text field named *Country*.
 
 
 
+After configuring the data provider, you should be able to create a form field and use these as the HTML autocomplete attribute 
+
+    "country"
+
+    "country-name"
+
+    "postal-code"
+
+Then when you publish the form and you’re filling it out, if your browser has this information cached, the browser should prompt you if you want to fill it out or just type it in. Personally, I think more common examples would be email and password. 
 
 liferay-docs master article:
 It's been scientifically proven that Internet users are lazy (not you, of

@@ -9,9 +9,6 @@ uuid: c423446a-0ecb-4cf4-b455-93be58860e71
 ---
 # Filtering and Sorting Web Content Articles
 
-!!! important
-    Some features are currently behind release feature flags (LPD-11218). Read [Release Feature Flags](../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information.
-
 The web content application shows a list of all the web content articles you can access under the Web Content tab. The filtering and sorting options help you find and review items faster.
 
 ![You can filter web content articles from the web content application and order the articles to get a more precise result](./filtering-and-sorting-web-content-articles/images/01.png)
@@ -28,11 +25,9 @@ When viewing all assets, assets in a specific folder, assets resulting from a we
 You can combine (single or multiple) filters and order your results for an enhanced experience. For example, if you select the `Product Advertisement Blog Post` [highlighted structure](#filter-by-highlighted-web-content-structures) and the [Mine](#filter-by-navigation), [Draft](#filter-by-status), [order by Title](#order-by), and the [Ascending order](#order-by) filters, you obtain a list of your articles that use the `Product Advertisement Blog Post` web content structure, are in Draft status, and are ordered by title in ascending alphabetical order.
 
 !!! note
-    (**Breaking Change**) All filtering options apply exclusively to the current folder. Web content articles located elsewhere are not included in the filtered results.
+    (**Breaking Change**) All filtering options apply exclusively to the current folder or highlighted structure. Web content articles located elsewhere are not included in the filtered results.
 
     If you initiate a new search, the filters reset, and the search extends to all assets in the folder.
-
-<!-- folder or highlighted structure. Add this information once the feature is not under a feature flag anymore. -->
 
 ## Filter by Highlighted Web Content Structure
 
@@ -58,10 +53,9 @@ The Content Library option shows all web content articles and their folder hiera
 
 ## Filter by Navigation
 
-When you filter by navigation, you filter the web content articles you have permission to view in the selected folder.
+When you filter by navigation, you filter the web content articles you have permission to view in the selected folder or highlighted structure.
 
 {bdg-secondary}`Liferay DXP 2024.Q1+/Portal 7.4 GA112+` You can apply a single filter or multiple filters. You can also select multiple categories/tags.
-<!-- add the highlighted structure here in addition to the folder -->
 
 | Filter Option                                           | Description                                                                                                                                                                                                                                                                                                |
 |:--------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

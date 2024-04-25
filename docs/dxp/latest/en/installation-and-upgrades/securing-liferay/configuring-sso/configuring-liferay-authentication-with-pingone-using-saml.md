@@ -63,7 +63,7 @@ This tutorial guides you through the basic steps needed to integrate PingOne, yo
     1. Encryption: Leave unchecked.
 
         !!! note
-            For the purpose of this tutorial, we are leaving this unchecked, but we recommend encryption. Enabling encryption requires additional configuration with your infrastructure.
+            We recommend the use of encryption, however for the purpose of this tutorial we are leaving this unchecked. Enabling encryption may require additional configuration with your infrastructure.
 
     1. SLO endpoint: `https://[your_instance_url]/c/portal/saml/slo`
 

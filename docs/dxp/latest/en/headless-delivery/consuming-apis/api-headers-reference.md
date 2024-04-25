@@ -38,7 +38,9 @@ curl \
 
 The `Accept-Language` header specifies the client's preferred natural language(s), usually for the response content, so the server responds with content in the preferred language if available.
 
-All valid language tags (an ISO-639 language identifier plus ISO-3166-1 alpha-2 country identifier) are valid options (e.g., `en-US`, `es-ES`, or `pt-BR`). The default value is the language of the site that houses the requested content.
+All valid language tags (an ISO-639 language identifier plus ISO-3166-1 alpha-2 country identifier) are valid options (e.g., `en-US`, `es-ES`, or `pt-BR`).
+
+If the value for the selected language is empty, the query returns the result in the default language.
 
 Here's an example of a cURL command where the preferred language for the response content is Brazilian Portuguese.
 
@@ -49,6 +51,11 @@ curl \
 	--header "Accept-Language: pt-BR" \
 	--request "GET" \
 ```
+
+!!! tip
+    {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+` Use the `Accept-Language` header with both Rest API and GraphQL to return values in the selected language when dealing with custom [objects](../../liferay-development/objects.md).
+
+    Unless the Enable Entry Translation is disabled. Then, the query returns the default language value.
 
 ## X-Accept-All-Languages
 
@@ -80,7 +87,7 @@ curl \
 	--header "accept: application/json" \
 	--header "Accept-Language: pt-BR" \
 	--header "Authorization: Bearer YOUR_ACCESS_TOKEN_HERE" \
-   --request "GET" \
+	--request "GET" \
 ```
 
 ## Cookie
@@ -96,7 +103,7 @@ curl \
 	"http://example.com/o/headless-admin-user/v1.0/user-accounts" \
 	--header "Authorization: Bearer YOUR_ACCESS_TOKEN_HERE" \
 	--header "Cookie: JSESSIONID=6349351B37C3EE1F6BA4E128107E9A34" \
-   --request "GET" \
+	--request "GET" \
 ```
 
 ## Content-Type
@@ -112,5 +119,9 @@ curl \
 	"http://example.com" \
 	--form "file=@myfile.txt" \
 	--header "Content-Type: multipart/form-data; boundary=ARBITRARY" \
-   --request "POST" \
+	--request "POST" \
 ```
+
+## Related Topics
+- [Consuming REST Services](./consuming-rest-services.md)
+- [Consuming GraphQL APIs](./consuming-graphql-apis.md)

@@ -3,7 +3,9 @@ uuid: 136c61f9-106d-45a1-bd10-4b99a1dffae9
 ---
 # Clarity's Deployment Requirements
 
-Before we talk about the different ways Liferay can be deployed, let's look a little closer at some of the specific requirements Clarity has around deployment.
+Coming soon!
+
+<!-- Before we talk about the different ways Liferay can be deployed, let's look a little closer at some of the specific requirements Clarity has around deployment.
 
 ### Clarity wants to reduce the need for multiple IT systems for their website.
 
@@ -17,6 +19,6 @@ Almost all of the site building Clarity wants to do can be done right from the U
 
 Liferay is ready to scale with you whether you plan to have thousands of employees using the system or thousands of visitors navigating your websites. Clarity mostly serves other businesses for now, but in the future, Liferay can grow with them to also support an e-commerce store to serve consumers. Spinning up new websites on a Liferay instance can be done with just a few clicks. Auto-scaling and node clustering can be configured to handle high volumes of site traffic. 
 
-Now let's move on to the different offerings from Liferay and Clarity's decision-making process.
+Now let's move on to the different offerings from Liferay and Clarity's decision-making process. -->
 
 Up Next: [Liferay Deployment Options](./liferay-deployment-options.md)

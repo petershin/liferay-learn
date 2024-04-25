@@ -70,6 +70,27 @@ If you click on an organization with related accounts, organizations, or users o
 
 ![Click Add to create additional nodes linked to the parent node.](./using-the-new-organization-management-chart-widget/images/04.png)
 
+### Display Limit
+
+The organization management chart widget can only display up to 10 organizations at the root level. If you have more than 10 organizations at the root level, the chart displays the following message:
+
+`You have too many organizations to display. Filter your organizations or search for the organization you want to display.`
+
+You can either select 10 organizations or search for a specific organization to display on the chart. See [Using the Search Bar](#using-the-search-bar) to learn how to search for an organization.
+
+To select 10 organizations,
+
+1. Click *Select Organizations*.
+
+1. This opens a dropdown with a list of all the organizations available. Click the checkbox next to an organization to select it for display.
+
+   ![Select organizations you want to display in the chart.](./using-the-new-organization-management-chart-widget/images/05.png)
+
+1. Click *Apply*.
+
+!!! note
+    The limit of 10 organizations apply only at the root level. If there are more than 10 organizations under a specific organization, they're displayed normally.
+
 ## Editing Entities
 
 To edit accounts, organizations, or users,
@@ -80,7 +101,7 @@ To edit accounts, organizations, or users,
 
    This opens the side panel in edit mode. 
 
-   ![Edit information about the selected organization, account, or user from the side panel.](./using-the-new-organization-management-chart-widget/images/05.png)
+   ![Edit information about the selected organization, account, or user from the side panel.](./using-the-new-organization-management-chart-widget/images/06.png)
 
    You can edit the following fields for each entity. 
 

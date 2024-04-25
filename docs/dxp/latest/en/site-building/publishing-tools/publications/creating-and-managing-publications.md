@@ -95,7 +95,7 @@ Once scheduled, changes cannot be added to a publication. However, you can click
 {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+`
 {bdg-link-primary}`[Beta Feature](../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
 
-After an [upgrade](../../../installation-and-upgrades/upgrading-liferay.md) in Liferay, publications created in older versions become out of date, serving only as references and no longer being modifiable, revertible, or publishable. However, users can still view, delete, or move compatible changes to another publication.
+After an [upgrade](../../../installation-and-upgrades/upgrading-liferay.md), publications created on older versions become out of date, serving only as references and no longer being modifiable, revertible, or publishable. However, users can still view, delete, or move compatible changes to another publication.
 
 To manage out-of-date publications,
 
@@ -103,17 +103,15 @@ To manage out-of-date publications,
 
 1. Click *Actions* (![Actions menu icon](../../../images/icon-actions.png)) next to the out-of-date publication you want to manage.
 
-1. Choose an available action: select *Review Changes* to view more information about the change and move it to another publication, or select *Delete* to delete your out-of-date publication.
+1. Choose an available action: select *Review Changes* to view more information about the change and move it to another publication or select *Delete* to delete your out-of-date publication.
 
 To move changes to a new publication,
 
-1. (Optional. Skip this step if you already have one) Follow the steps to [create a new publication](#creating-a-publication) to house the new changes.
+1. [Create a new publication](#creating-a-publication) or open an existing one to house the new changes.
 
-1. Click *Actions* (![Actions menu icon](../../../images/icon-actions.png)) next to the out-of-date publication you want to manage and select *Review Changes*.
+1. Click the publication name or *Actions* (![Actions menu icon](../../../images/icon-actions.png)) next to the out-of-date publication you want to manage and select *Review Changes*.
 
-   Conversely, click on the name of the publication to review its changes.
-
-1. Click *Actions* (![Actions menu icon](../../../images/icon-actions.png)) next to the change you want to move and select *Move Changes*. You are redirected to a page displaying the author of the changes along with a summary of the alterations made.
+1. Click *Actions* (![Actions menu icon](../../../images/icon-actions.png)) next to the change you want to move and select *Move Changes*. A page appears displaying the author of the changes along with a summary of the alterations made.
 
    ![Move changes from an out-of-date publication to another publication.](./creating-and-managing-publications/images/05.png)
 
@@ -121,7 +119,7 @@ To move changes to a new publication,
 
    ![Review the changes and select a publication to which the changes will be moved.](./creating-and-managing-publications/images/06.png)
 
-The changes are moved to the target publication and you can now schedule/publish it.
+The changes are moved to the target publication, and you can now schedule/publish it.
 
 ## Managing History of Publications
 

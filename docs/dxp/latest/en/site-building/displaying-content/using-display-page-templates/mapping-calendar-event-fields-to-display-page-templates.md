@@ -8,7 +8,7 @@ taxonomy-category-names:
 uuid: d1cb43ad-8329-40fe-8fec-5c39f1f09aaf
 ---
 
-# Mapping Calendar Events to Display Page Templates
+# Mapping Calendar Event Fields to Display Page Templates
 
 With Liferay, you can customize and display calendar event information by mapping calendar fields to [display page templates](../using-display-page-templates.md). Highlight certain fields such as title, date, and location, while hiding others that are less relevant.
 
@@ -28,7 +28,7 @@ Start by adding the Calendar widget to a page, navigating to the page, and creat
 
 1. Add a few more events.
 
-   ![Add more events to populate the collection.](./mapping-calendar-events-to-display-page-templates/images/01.png)
+   ![Add more events to populate the collection.](./mapping-calendar-event-fields-to-display-page-templates/images/01.png)
 
 ## Dynamic Collections to Group Calendar Events
 
@@ -38,7 +38,7 @@ Create a collection to group the calendar events. You can [display this collecti
 
 1. In the Item Type dropdown menu, select *Calendar Event* under Single Item Type.
 
-   ![Select Calendar Event as the item type for the collection.](./mapping-calendar-events-to-display-page-templates/images/02.png)
+   ![Select Calendar Event as the item type for the collection.](./mapping-calendar-event-fields-to-display-page-templates/images/02.png)
 
 1. (Optional) Configure the collection.
 
@@ -76,7 +76,7 @@ Create a display page template and map calendar event fields to the elements. Fo
 
 You should now have a simple structure that displays the calendar information: The title of the event at the top, followed by the description, place, and time. You can also add this information mixed with other content and customize it any way you want.
 
-![Customize how you want to display the calendar event.](./mapping-calendar-events-to-display-page-templates/images/03.png)
+![Customize how you want to display the calendar event.](./mapping-calendar-event-fields-to-display-page-templates/images/03.png)
 
 Mark the display page template as the default to use it with the collection display: Once you publish the page, you are redirected to the Page Templates application. Click *Actions* (![Actions icon](../../../images/icon-actions.png)) next to the created template and select *Mark as Default*.
 
@@ -111,7 +111,7 @@ For this example, you'll create a simple structure to display the event's title 
 
    The titles for the existing events are shown as collection items in the collection display. Once you drop an element inside the collection item area, the same element is added to the other items as well.
 
-   ![The titles for the existing events are shown as collection items in the collection display.](./mapping-calendar-events-to-display-page-templates/images/04.png)
+   ![The titles for the existing events are shown as collection items in the collection display.](./mapping-calendar-event-fields-to-display-page-templates/images/04.png)
 
 1. In the Fragments and Widgets sidebar, look for the Container fragment. Drag and drop it into the Collection Item area. In the Browser, click on the *container* once and select the *Styles* tab on the right. Add 14.5 rem right and left margins and a 4.5 rem top margin.
 
@@ -131,13 +131,13 @@ For this example, you'll create a simple structure to display the event's title 
 
    <!-- there is a bug here. The DPT should be showing, but they are not. As soon as it's fixed, I have to change this to say select the "DPT's name". Eric -->
 
-   ![Use a button to redirect users to the display page template.](./mapping-calendar-events-to-display-page-templates/images/05.png)
+   ![Use a button to redirect users to the display page template.](./mapping-calendar-event-fields-to-display-page-templates/images/05.png)
 
 1. Click *Publish*
 
 Once you are done, check if everything is working. Navigate to the Calendar Event Collection page. Click on any *Learn More* button. You should be redirected to a display page template showing the information about the event.
 
-![If everything is working properly, you should be redirected to the display page template once you click on the Learn More button located in the Calendar Event Collection page.](./mapping-calendar-events-to-display-page-templates/images/06.png)
+![If everything is working properly, you should be redirected to the display page template once you click on the Learn More button located in the Calendar Event Collection page.](./mapping-calendar-event-fields-to-display-page-templates/images/06.png)
 
 ## Related Topics
 

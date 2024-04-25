@@ -1,10 +1,14 @@
 ---
 uuid: 34581f39-bde2-4e5f-8317-cafa6de7eae0
+taxonomy-category-names:
+- DXP Self-Hosted Installation, Maintenance, and Administration
+- DXP Configuration
+- Liferay Self-Hosted
+- Liferay PaaS
 ---
 # JVM Configuration
-{bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+`
 
-Liferay DXP/Portal requires a Java JDK 8, 11, 17, or 21 and requires specific JVM option settings. There are also recommended settings specific to JDK 11, 17, and 21, and recommended baseline memory settings. Here you'll learn about all of these settings and see them demonstrated in an example Tomcat script.
+As of {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+`, Liferay DXP/Portal requires a Java JDK 8, 11, 17, or 21 (prior versions support only JDKs 8 and 11) with specific JVM option settings. There are also recommended settings specific to JDK 11, 17, and 21, and recommended baseline memory settings. Here you'll learn about all of these settings and see them demonstrated in an example Tomcat script.
 
 !!! note
     See [the Liferay DXP compatibility matrix](https://help.liferay.com/hc/en-us/articles/360049238151) to choose a JDK.
@@ -41,7 +45,7 @@ WARNING: All illegal access operations will be denied in a future release
 
 These warnings are caused by a known issue ([LPS-87421](https://issues.liferay.com/browse/LPS-87421)) and can be resolved by adding these JVM options:
 
-```
+```bash
 --add-opens=java.base/java.lang=ALL-UNNAMED
 --add-opens=java.base/java.lang.invoke=ALL-UNNAMED
 --add-opens=java.base/java.lang.reflect=ALL-UNNAMED

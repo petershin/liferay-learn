@@ -10,94 +10,91 @@ taxonomy-category-names:
 ---
 # Specifications
 
-A specification stores a single piece of Product information. This can be the Product’s dimensions, color, weight, capacity, or any other attribute. These details can help customers when comparing similar Products.
+A specification stores a single piece of product information. This can be the product's dimensions, color, weight, capacity, or any other attribute. These details help customers when comparing similar products.
 
-Specification data is ordered into groups, labels, and values to make them easy to display and maintain.
+Specification data consists of groups, labels, and values. This makes it easier to display and maintain them.
 
-| Name | Description |
-| :--- | :--- |
-| [Specification Group](#specification-groups) | Entity for grouping and organizing similar Specification Labels (e.g., `dimensions`) |
-| [Specification Label](#specification-labels) | Entity for storing a Specification Value (e.g., `height`) |
-| [Specification Value](#specification-values) | Product-specific data added to a Specification Label (e.g., `100 cm`) |
+| Name                                         | Description                                                                   |
+| :------------------------------------------- | :---------------------------------------------------------------------------- |
+| [Specification Group](#specification-groups) | For grouping and organizing similar specification labels (e.g., `dimensions`) |
+| [Specification Label](#specification-labels) | For storing a specification value (e.g., `height`)                            |
+| [Specification Value](#specification-values) | Product-specific data added to a specification label (e.g., `100 cm`)         |
 
-```{note}
-Specifications defined at the SKU level override Specifications defined at the Product level. See [Overriding Product Level Information](./overriding-product-level-information.md) for more details.
-```
-
-## Specification Groups
-
-1. Navigate to the _Global Menu_ (![Applications Menu icon](../../../images/icon-applications-menu.png)) → _Commerce_ → _Products_.
-1. Click the _Specifications_ tab.
-1. Click the _Specification Groups_ sub-tab. By default, there are five Specification Groups included:
-
-    ![In the Specification Groups sub-tab, you can view, create, and manage Groups.](./specifications/images/01.png)
-
-To add a new Specification Group, click the *Add* button (![Add Button](../../../images/icon-add.png)).
-
-| Field | Description |
-| :--- | :--- |
-| Title | Shows the display name of the Specification Group. |
-| Description | Explains what the specifications have in common |
-| Priority | Establishes the order to display the specification groups with smaller numbers going first. |
-| Key | Uniquely identifies this group programmatically. |
-
-![To create a Specification Group, enter a title, description, priority and key in the form provided.](./specifications/images/02.png)
+!!! note
+    Specifications defined at the SKU level override specifications defined at the product level. See [Overriding Product Level Information](./overriding-product-level-information.md) for more details.
 
 ## Specification Labels
 
 To create a specification label:
 
-1. Navigate to the _Global Menu_ (![Applications Menu icon](../../../images/icon-applications-menu.png)) → _Commerce_ → _Products_.
-1. Click the _Specifications_ tab.
-1. Click the _Specifications Labels_ sub-tab.
-1. There are nine Specification Labels included by default:
+1. Open the _Global Menu_ (![Global Menu icon](../../../images/icon-applications-menu.png)) and navigate to _Commerce_ &rarr; _Specifications_.
 
-    ![In the Specification Labels sub-tab, you can view, create, and manage Specification Labels.](./specifications/images/03.png)
+   This displays all the specification labels in the _Specifications Labels_ screen.
 
-To add a new Specification Group, click the *Add* button (![Add Button](../../../images/icon-add.png)).
+1. There are nine specification labels included by default:
 
-| Field | Description |
-| :--- | :--- |
-| Label | Shows the display name of the Label. |
-| Description | Gives a description of the label. |
-| Use in Faceted Navigation | Toggle this label to use in faceted navigation. |
-| Default Specification Group | Choose a group to associate this label with. |
-| Key | Uniquely identifies this group programmatically. |
+   ![In the specification labels sub-tab, you can view, create, and manage specification labels.](./specifications/images/01.png)
 
-![Use the provided form to create a Specification Label.](./specifications/images/04.png)
+1. To add a new specification label, click _New_.
 
-The label has been created, but assigning a value to it must be done on the Product level.
+   | Field                       | Description                                    |
+   | :-------------------------- | :--------------------------------------------- |
+   | Label                       | Display name of the label.                     |
+   | Description                 | Description of the label.                      |
+   | Use in Faceted Navigation   | Enable to use the label in faceted navigation. |
+   | Default Specification Group | Choose a group to associate this label with.   |
+   | Key                         | Unique identifier for the label.               |
+
+![Use the provided form to create a specification label.](./specifications/images/02.png)
+
+This only creates the label. You must assign it to a product to set values to a specification.
+
+## Specification Groups
+
+To create a specification group:
+
+1. Open the _Global Menu_ (![Global Menu icon](../../../images/icon-applications-menu.png)) and navigate to _Commerce_ &rarr; _Specifications_.
+
+1. Go to _Specification Groups_. By default, there are five specification groups included:
+
+   ![In the specification groups sub-tab, you can view, create, and manage groups.](./specifications/images/03.png)
+
+1. To add a new specification group, click _New_.
+
+   | Field       | Description                                                                     |
+   | :---------- | :------------------------------------------------------------------------------ |
+   | Title       | Display name of the specification group.                                        |
+   | Description | Description of the specification group.                                         |
+   | Priority    | Order to display the specification groups with smaller numbers displayed first. |
+   | Key         | Unique identifier for the group.                                                |
+
+![To create a specification group, enter a title, description, priority and key in the form provided.](./specifications/images/04.png)
 
 ## Specification Values
 
- Groups and labels are scoped to the catalog, which means once they are created, they can be assigned to any Product in the catalog. Values, however, are scoped to the Product and have no impact anywhere but on the Product to which they are assigned.
+Specification groups and labels are scoped to a catalog. After creating them, you can assign it to a product and set values.
 
- To create a specification label, you must first assign a label to a Product.
+1. Open the _Global Menu_ (![Global Menu icon](../../../images/icon-applications-menu.png)) and navigate to _Commerce_ &rarr; _Products_.
 
-1. Navigate to the _Global Applications_ menu → _Commerce_ → _Products_.
-1. Click on a Product (for example, _Torque Converter_. This sample Product is added when using the Minium accelerator.)
-1. Click on the _Specifications_ sub-tab.
-1. The following values have been added by default:
+1. Select a product.
 
-    ![The Specifications sub-tab displays the Specifications added to a Product.](./specifications/images/05.png)
+1. Scroll down to the _Specifications_ section.
 
-1. Click the *Add* button (![Add Button](../../../images/icon-add.png)).
-1. Check the boxes for one or more specification labels from the list of specification labels.
-1. Click _Add_ to close the pop-up.
+   ![The specifications sub-tab displays the specifications added to a product.](./specifications/images/05.png)
 
-This assigns the selected labels to the Product.
+1. Search for an existing specification and click _Select_ to assign it to the product. You can also create a new specification label by typing its name in the search bar and clicking on _Create New_.
 
-Next, edit the label to give it a value.
+   This assigns the new label to the product.
 
-1. Click on the 3-dot icon next to the new label.
-1. Click _Edit_.
+1. To set its value, click on the label or click _Actions_ (![Actions icon](../../../images/icon-actions.png)) and select _Edit_. Enter values in the form to set a specification value.
 
-|Field | Description |
-| :--- | :--- |
-| Value | Gives a short description of what the Product is made of |
-| Group | Select a Specification Group. |
-| Priority | Establishes the order to display the specification groups with smaller numbers going first. |
+   | Field                                                       | Description                                                                                                                                                           |
+   | :---------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+   | Value                                                       | Value assigned to the specification.                                                                                                                                  |
+   | Group                                                       | Select a group to assign the label to.                                                                                                                                |
+   | {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+` Key | Default key to uniquely identify the specification value. Use this to display the specification in a display page template using the  Product Specification fragment. |
+   | Priority                                                    | Establishes the order to display the specification groups with smaller numbers going first.                                                                           |
 
-![To store a Specification Value, click on Edit and enter a value, group, and priority in the form provided.](./specifications/images/06.png)
+![Enter values in the form to set a specification value.](./specifications/images/06.png)
 
-You can also override the specification group that was selected when the label was created. When editing the label to assign a value, you can choose any group from the _Group_ drop-down box. This change applies only to the current Product and has no effect on other Products that use the same label.
+You can also override the specification group that was selected when the label was created. When editing the label to assign a value, you can choose any group from the _Group_ drop-down box. This change applies only to the current product and has no effect on other products that use the same label.

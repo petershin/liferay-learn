@@ -52,6 +52,29 @@ To enable autocompletion from a list of manually entered options,
 
 Date, Numeric, and Text fields can leverage autocompletion or autofill from the [browser through HTML attributes](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#autofill).
 
+
+1. First, make sure your browser has at least one address configured for autofill. For example,
+
+   ![Configure the autofill information for at least one address in your browser.](./text-field-autocompletion/images/01.png)
+
+   This example uses the Name and Email fields.
+
+1. Go to the Forms application. Open *Site Menu* ![Site Menu](../../../images/icon-menu.png) &rarr; *Content & Data* &rarr; *Forms*.
+
+1. Add a form with these fields and configuration:
+
+   Field 1:
+
+      * **Label:** Name
+      * **HTML Autocomplete Attribute (Advanced):** name
+
+   Field 2:
+
+      * **Label:** Email
+      * **HTML Autocomplete Attribute (Advanced):** email
+
+1. Save and publish the form.
+
 1. Go to the Forms application. Open *Site Menu* ![Site Menu](../../../images/icon-menu.png) &rarr; *Content & Data* &rarr; *Forms*.
 
 1. Open *Data Providers* and add a [REST data provider](../data-providers/using-the-rest-data-provider-to-populate-form-options.md) configured like this:

@@ -13,9 +13,11 @@ taxonomy-category-names:
 
 Liferay DXP contains [GraphQL](https://graphql.org) APIs for most of its applications. Here, you'll learn how to consume them. This takes only three steps:
 
-1. Identify the API you wish to consume.
-1. Identify the site containing the data you need.
-1. Make the API call using credentials that have access to the data.
+1. [Identify the API you wish to consume.](#identify-the-service-to-consume)
+
+1. [Identify the site containing the data you need.](#identify-the-site-containing-the-data)
+
+1. [Make the API call using credentials that have access to the data.](#make-the-service-call-using-credentials-with-access-to-the-data)
 
 You need a running Liferay DXP to call its GraphQL APIs.
 
@@ -24,19 +26,15 @@ You need a running Liferay DXP to call its GraphQL APIs.
 
 ## Identify the Service to Consume
 
-Follow these steps:
-
 1. Go to `http://localhost:8080/o/api`.
 
-1. At the top-left of the screen that appears, pick *headless-delivery* from the selector. This is the category that contains the Blog posting API.
-
-1. Click the *Show GraphQL* button at the top-right of the screen to open Liferay's [GraphiQL](https://github.com/graphql/graphiql) browser.
+1. Click *GraphQL* at the top-right of the screen to open Liferay's [GraphiQL](https://github.com/graphql/graphiql) browser.
 
 1. Click the *Docs* link below the button you just clicked. Now you can browse the API.
 
-1. GraphQL separates read and write operations by calling the first a *query* and the second a *mutation*. Since the first thing you want to do is post a blog entry, click *mutation*.
+1. GraphQL separates read and write operations by calling the first a *query* and the second a *mutation*. Since the first thing you want to do is post a blog entry, click *mutation*. A list of the entire API appears.
 
-1. A list appears of the entire API use the search at the top or scroll down and find the call to `createSiteBlogPosting`:
+1. Use the search at the top or scroll down and find the call to `createSiteBlogPosting`:
 
     ```graphql
     createSiteBlogPosting(
@@ -50,31 +48,30 @@ Follow these steps:
 
     `curl 'http://localhost:8080/o/graphql'  -H "Content-Type: application/json" --data '{"query":"query{ __schema{ queryType{ name fields{ name args{ name } description } } } }","variables":{}}'`
 
-    This URL does not require authentication, but it's quite cumbersome to manage the returned schema. For this reason, it's better to use the included GraphQL client.
+    This URL does not require authentication, but it's quite cumbersome to manage the returned schema. So, it's better to use the included GraphQL client.
 
 ![The included GraphQL client has a schema documentation browser.](./consuming-graphql-apis/images/01.png)
 
-Since the API requires you to know the Site containing the Blog where the entry should be posted, you must find the Site ID first.
+Since the API requires you to know the site containing the blog where the entry should be posted, you must find the site ID first.
 
 ## Identify the Site Containing the Data
-
-Now you must find the Site ID:
 
 1. Go to `http://localhost:8080`.
 
 1. Open the *Global Menu* ![Global Menu](../../images/icon-applications-menu.png), click the *Control Panel* tab, and go to *Sites* &rarr; Sites.
 
-1. Click the *Actions* button ![Actions Button](../../images/icon-actions.png) next to the Liferay Site and choose *Go to Site Settings*.
+1. Click the *Actions* button ![Actions Button](../../images/icon-actions.png) next to the Liferay site and choose *Go to Site Settings*.
 
 1. Go to *Site Configuration*.
 
-The Site ID appears at the top of the Details section. It's an Integer, like `20122`.
+The Site ID appears at the top of the Details section. It's an integer, like `20122`.
 
 ## Make the Service Call using Credentials with Access to the Data
 
-Now you have everything you need to make the call. All web services must be accessed using credentials that have access to the data you're requesting. The included GraphQL client authenticates using your browser. If your plan is to write a standalone client, you should authorize users via [OAuth2](../using-oauth2.md).
+Now you have everything you need to make the call. All web services must be accessed using credentials that have access to the data you're requesting. The included GraphQL client authenticates using your browser. If you plan to write a standalone client, you should authorize users via [OAuth2](../using-oauth2.md).
 
-During development, it's much easier to use Basic Auth, which passes credential data in the URL. Since this is insecure, *never use this method for production.*
+!!! important
+    During development, it's much easier to use Basic Auth, which passes credential data in the URL. Since this is insecure, *never use this method for production.*
 
 ### Calling a GraphQL API Using Basic Auth (During Development Only)
 
@@ -151,7 +148,7 @@ The GraphQL schema revealed the call that must be made to post a blog entry.
     }
     ```
 
-1. Make the request by visiting `http://localhost:8080/o/api` again. Click the *Show GraphQL* button.
+1. Make the request by visiting `http://localhost:8080/o/api` again. Click *GraphQL*.
 
 1. Paste your JSON document into the Query Variables box at the lower left.
 

@@ -9,29 +9,28 @@ uuid: 40febe64-2fa2-4508-8321-10fe5462e0ac
 ---
 # Assets
 
-Assets are individual pieces of content that exist on Site Pages in your Liferay Analytics Cloud data sources. In summary, Assets are
+Assets are individual pieces of content that exist on site pages in your Liferay Analytics Cloud data sources. In summary, assets are
 
-- Content residing on a Page.
+- Content residing on a page.
 - Registered, tracked, and reported on by Analytics Cloud the first time an interaction is detected by the Analytics Cloud client.
 - Queried and reported on at regular intervals.
 - Reported on in Analytics Cloud with the data reports shown in this tutorial.
 
-Metrics for these Assets are currently reported in Analytics Cloud:
+Analytics Cloud supports these types of assets:
 
 - [Blogs](./blogs.md)
 - [Documents and Media](./documents-and-media.md)
 - [Forms](./forms.md)
 - [Web Content](./tracking-custom-assets.md)
-- [Custom](./tracking-custom-assets.md)
 
-A CSV report is also available for download for each asset type. See [downloading reports](../../reference/downloading-reports.md) to learn more.
+A CSV report is available for each asset type. See [downloading reports](../../reference/downloading-reports.md) to learn more.
 
 ![Each Asset has its own table.](assets/images/01.png)
 
 Clicking an individual asset leads to an overview page showing analytics data for the asset. Clicking on the Known Individuals tab shows a list of known visitors who have interacted with the asset.
 
 !!! note
-    By default, Analytics data for assets is only collected through each asset's respective widget. For information on how to use other types of fragments and widgets to collect data on these assets, see [Tracking Custom Assets](./tracking-custom-assets.md)
+    By default, Analytics data for assets is only collected through each asset's respective widget. For information on how to use other types of fragments and widgets to collect data on assets, see [Tracking Custom Assets](./tracking-custom-assets.md)
 
 ## Related Topics
 

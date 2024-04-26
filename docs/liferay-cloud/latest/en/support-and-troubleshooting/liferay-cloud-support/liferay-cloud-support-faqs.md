@@ -12,7 +12,7 @@ Here are the answers to common questions pertaining to Liferay Cloud Support.
 
 ## Why isn't Liferay Cloud open source?
 
-Liferay is an open-source company, with open-source projects including Liferay Portal CE. 
+Liferay is an open-source company, with open-source projects including Liferay Portal CE.
 
 However, Liferay Cloud is not an open-source product, because of the high requirements for data security and protection and the general nature of cloud software.
 
@@ -30,11 +30,11 @@ An outage is specifically when Liferay Cloud services are inaccessible or not fu
 
 Check the [Security Advisories page](https://help.liferay.com/hc/en-us/articles/360018875952-Security-Advisories) to learn about security alerts and vulnerabilities.
 
-## Should I give the Liferay Cloud team advance notice of any performance or penetration testing on a Liferay PaaS environment? If so, how?
+## Should I give the Liferay Cloud team advanced notice of any performance or penetration testing on a Liferay PaaS or SaaS environment? If so, how?
 
 When you perform performance or penetration testing on your Liferay Cloud environment, it can appear to Liferay that there is an attack on the environment, which could require intervention to protect it. To prevent Liferay from interfering with your testing, notify Liferay Cloud of your testing window in advance.
 
-See [Performance/Penetration Test Advanced Notice](https://help.liferay.com/hc/en-us/articles/4407536203661-Liferay-Experience-Cloud-Self-Managed-PaaS-Performance-Penetration-Test-Advanced-Notice) for more information.
+See [Liferay PaaS Performance and Penetration Test - Advanced Notice](https://help.liferay.com/hc/en-us/articles/4407536203661-Liferay-Experience-Cloud-Self-Managed-PaaS-Performance-Penetration-Test-Advanced-Notice) and [Liferay SaaS Performance and Penetration Test - Advanced Notice](https://help.liferay.com/hc/en-us/articles/25827729290893-Liferay-SaaS-Performance-and-Penetration-Test-Advanced-Notice) for more information.
 
 ## How are third-party technologies supported? How should I report issues with third-party services?
 

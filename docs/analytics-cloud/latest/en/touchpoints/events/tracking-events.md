@@ -30,19 +30,19 @@ Analytics.track("Add to Cart Click",{
 });
 ```
 
-Analytics Cloud automatically tries to detect and cast the datatype based on the first data collected for that attribute. Make changes to the typecast if necessary in [Definitions for Event Attributes](../../workspace-data/definitions/definitions-for-event-attributes.md) found in the settings page of Analytics Cloud. In addition to the attributes you specify, there are [global attributes](../../workspace-data/definitions/definitions-for-event-attributes.md) that are automatically associated with all events. The following data typecasts can be set for attributes:
+Analytics Cloud automatically tries to detect and cast the datatype based on the first data collected for that attribute. Make changes to the typecast if necessary in [Definitions for Event Attributes](../../workspace-data/definitions/definitions-for-event-attributes.md) found in the settings page of Analytics Cloud. In addition to the attributes you specify, there are [global attributes](../../workspace-data/definitions/definitions-for-event-attributes.md) that are associated automatically with all events. The following data typecasts can be set for attributes:
 
 | Attribute Type | Description                                                    |
 | :------------- | :------------------------------------------------------------- |
 | `Boolean`      | `true` or `false`, case insensitive                            |
 | `Date`         | ISO-8061 format (yyyy-MM-dd'T'HH:mm:ss.SSSX)                   |
 | `Duration`     | In milliseconds, non-negative                                  |
-| `Number`       | Without thousands separator, decimal separator is okay         |
+| `Number`       | Without thousands separator; decimal separator is okay         |
 | `String`       | If no other format matches, Analytics Cloud will assume string |
 
 ## Modify An Individual Page
 
-The simplest way to add the JavaScript code is to modify an individual page. Make sure to use Widget Pages as they have the ability to add JavaScript code.
+The simplest way to add the JavaScript code is to modify an individual page. Make sure to use widget pages as they can add JavaScript code.
 
 1. Click the Product Menu (![Product Menu icon.](../../images/icon-product-menu.png)) and navigate to *Site Builder* &rarr; *Pages*.
 

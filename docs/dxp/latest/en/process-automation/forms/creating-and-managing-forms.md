@@ -16,6 +16,7 @@ toc:
   - ./creating-and-managing-forms/forms-configuration-reference.md
   - ./creating-and-managing-forms/validation-conditions-reference.md
   - ./creating-and-managing-forms/forms-permissions-reference.md
+  - ./creating-and-managing-forms/forms-field-autocompletion.md
 taxonomy-category-names:
 - Platform
 - Forms
@@ -38,6 +39,7 @@ uuid: 1b2b186d-36a9-4152-a3fc-240272641624
 - [Exporting and Importing Forms](./creating-and-managing-forms/exporting-and-importing-forms.md)
 - [Using Storage Adapters](./creating-and-managing-forms/using-storage-adapters.md)
 - [Customizing the Submit Button](./creating-and-managing-forms/customizing-the-submit-button.md)
+- [Field Autocompletion](./creating-and-managing-forms/forms-field-autocompletion.md)
 
 ## Reference
 

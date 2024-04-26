@@ -37,7 +37,7 @@ To enable scripting for administrative users of workflow and objects,
 
 1. Click _Save_.
 
-Once enabled, administrative applications that can leverage scripting will display the option to users:
+Once enabled, the option appears for administrative applications that can leverage scripting: 
 
 ![You can enable scripting in supported applications.](./using-the-script-engine/images/03.png)
 

@@ -8,6 +8,7 @@ taxonomy-category-names:
 - Liferay PaaS
 - Liferay SaaS
 ---
+
 # Consuming GraphQL APIs
 
 Liferay DXP contains [GraphQL](https://graphql.org) APIs for most of its applications. Here, you'll learn how to consume them. This takes only three steps:
@@ -44,14 +45,12 @@ Follow these steps:
       ): BlogPosting
     ```
 
-```{note}
-You can also discover your local installation's APIs by requesting the schema directly:
+!!! note
+    You can also discover your local installation's APIs by requesting the schema directly:
 
-`curl 'http://localhost:8080/o/graphql'  -H "Content-Type: application/json" --data '{"query":"query{ __schema{ queryType{ name fields{ name args{ name } description } } } }","variables":{}}'`
+    `curl 'http://localhost:8080/o/graphql'  -H "Content-Type: application/json" --data '{"query":"query{ __schema{ queryType{ name fields{ name args{ name } description } } } }","variables":{}}'`
 
-
-This URL does not require authentication, but it's quite cumbersome to manage the returned schema. For this reason, it's better to use the included GraphQL client.
-```
+    This URL does not require authentication, but it's quite cumbersome to manage the returned schema. For this reason, it's better to use the included GraphQL client.
 
 ![The included GraphQL client has a schema documentation browser.](./consuming-graphql-apis/images/01.png)
 
@@ -87,9 +86,8 @@ curl --request POST --url http://localhost:8080/o/graphql \ -u test@liferay.com:
 
 ### Calling a Service Using OAuth2
 
-```{note}
-The use of GraphQL with OAuth2 is supported in Liferay DXP 7.4 U77+/Liferay Portal 7.4 GA77+
-```
+!!! note
+    The use of GraphQL with OAuth2 is supported in Liferay DXP 7.4 U77+/Liferay Portal 7.4 GA77+
 
 For production, create an [OAuth2 application](../using-oauth2/creating-oauth2-applications.md) and use the OAuth2 process to get an authorization token. Once you have the token, provide it in the HTTP header:
 
@@ -180,11 +178,10 @@ Liferay DXP returns a JSON representation of your blog entry that contains the f
 }
 ```
 
-```{note}
-You can make these requests with any web client, such as cURL:
+!!! note
+    You can make these requests with any web client, such as cURL:
 
-`curl --request POST --url http://localhost:8080/o/graphql -u test@liferay.com:learn --header 'content-type: application/json' --data '{"query":"mutation CreateBlog($blog: InputBlogPosting){   createSiteBlogPosting(blogPosting: $blog, siteKey: \"20122\" ) {    headline    articleBody    id    friendlyUrlPath  }    } ","variables":{"blog":{"articleBody":"This Blog entry was created by using cURL to call the GraphQL service!","headline":"cURL GraphQL Blog Entry"}},"operationName":"CreateBlog"}'`
-```
+    `curl --request POST --url http://localhost:8080/o/graphql -u test@liferay.com:learn --header 'content-type: application/json' --data '{"query":"mutation CreateBlog($blog: InputBlogPosting){   createSiteBlogPosting(blogPosting: $blog, siteKey: \"20122\" ) {    headline    articleBody    id    friendlyUrlPath  }    } ","variables":{"blog":{"articleBody":"This Blog entry was created by using cURL to call the GraphQL service!","headline":"cURL GraphQL Blog Entry"}},"operationName":"CreateBlog"}'`
 
 ### Getting All Blog Entries
 
@@ -290,3 +287,8 @@ This call returns a Boolean in a JSON document denoting success or failure:
 ```
 
 Congratulations! You've now learned how to call Liferay DXP's GraphQL services. Remember that the examples above use Basic Auth: for production, use OAuth2 to call services in a secure way.
+
+## Related Topics
+
+- [Consuming REST Services](./consuming-rest-services.md)
+- [API Headers Reference](./api-headers-reference.md)

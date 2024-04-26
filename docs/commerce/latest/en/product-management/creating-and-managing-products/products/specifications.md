@@ -25,8 +25,6 @@ Specification data consists of groups, labels, and values. This makes it easier 
 
 ## Specification Labels
 
-To create a specification label:
-
 1. Open the _Global Menu_ (![Global Menu icon](../../../images/icon-applications-menu.png)) and navigate to _Commerce_ &rarr; _Specifications_.
 
    This displays all the specification labels in the _Specifications Labels_ screen.
@@ -50,8 +48,6 @@ To create a specification label:
 This only creates the label. You must assign it to a product to set values to a specification.
 
 ## Specification Groups
-
-To create a specification group:
 
 1. Open the _Global Menu_ (![Global Menu icon](../../../images/icon-applications-menu.png)) and navigate to _Commerce_ &rarr; _Specifications_.
 
@@ -91,8 +87,8 @@ Specification groups and labels are scoped to a catalog. After creating them, yo
    | Field                                                       | Description                                                                                                                                                           |
    | :---------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
    | Value                                                       | Value assigned to the specification.                                                                                                                                  |
-   | Group                                                       | Select a group to assign the label to.                                                                                                                                |
-   | {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+` Key | Default key to uniquely identify the specification value. Use this to display the specification in a display page template using the  Product Specification fragment. |
+   | Group                                                       | Assign the label to a group.                                                                                                                                |
+   | {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+` Key | Default key to identify the specification value uniquely. Use this to display the specification in a display page template using the  Product Specification fragment. |
    | Priority                                                    | Establishes the order to display the specification groups with smaller numbers going first.                                                                           |
 
 ![Enter values in the form to set a specification value.](./specifications/images/06.png)

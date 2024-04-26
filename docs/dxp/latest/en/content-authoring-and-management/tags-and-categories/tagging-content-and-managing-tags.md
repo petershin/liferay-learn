@@ -55,7 +55,7 @@ You can manage tags under the Categorization panel in the Site Menu. From here, 
 
    1. Check the box next to the tags you want to merge and click *Merge* (![Merge](../../images/icon-merge.png)).
 
-   1. Select the tag where you want to merge in the *Into This Tag* dropdown menu.
+   1. Select the tag where you want to merge in the *Into This Tag* drop-down menu.
 
    1. Click *Save*.
 

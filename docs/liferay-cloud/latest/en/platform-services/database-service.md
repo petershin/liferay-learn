@@ -17,11 +17,7 @@ The database service is a distributed, relational database that simplifies the s
 
 See the [Database service limitations](../reference/platform-limitations.md#database-service) section for more information.
 
-## Environment Variables
-
-You can set these environment variables to configure the database service.
-
-### Core Database Settings and User Management Variables
+## Core Database Settings and User Management Variables
 
 These environment variables influence core settings for the database and the main users that access it. They are already created for you during project provisioning, and you should only need to change them if you have very specific requirements.
 
@@ -43,7 +39,7 @@ For more information, see [Changing Your Database Username](./database-service/c
 | `LCP_SECRET_DATABASE_USER`                   | `dxpcloud`                                             | Secrets (`lcp-secret-database-user`)                 | Master username.                                                                                          |
 | `LCP_DATABASE_USER_WHITELIST`                | None                                                   | `LCP.json`                                           | Add any extra users to to the whitelist to prevent the database service from removing them automatically. |
 
-### Database Maintenance Window Variables
+## Database Maintenance Window Variables
 
 Your Liferay Cloud environment's database service occasionally requires downtime for scheduled maintenance, typically for about two minutes. You can configure a preferred window for this maintenance to take place to reduce the downtime's impact. By default, no specific time preference is defined.
 
@@ -51,9 +47,9 @@ Your Liferay Cloud environment's database service occasionally requires downtime
 | :---------------------------- | :--------------------- | :---------------------------------------------------------------------- |
 | `LCP_GCP_MW_DAY`              | `1` through `7`        | Preferred day of the week (Monday (1) through Sunday (7), in UTC time). |
 | `LCP_GCP_MW_HOUR`             | `0` through `23`       | Preferred hour of the day (in UTC time).                                |
-| `LCP_GCP_MW_UPDATE_TRACK`     | `canary`, `stable`     | Set `canary` to update earlier, up to a week before other environments. | 
+| `LCP_GCP_MW_UPDATE_TRACK`     | `canary`, `stable`     | Set `canary` to update earlier, up to a week before other environments. |
 
-### Google Cloud PostgreSQL Flags
+## Google Cloud PostgreSQL Flags
 
 You can pass MySQL flags in as environment variables. The available flags are listed in the
 [Google Cloud documentation](https://cloud.google.com/sql/docs/postgres/flags). Each flag must be prepended with `LCP_GCP_DATABASE_FLAG_` to work in Liferay Cloud. Below are common flags that can be useful for debugging in a development environment, but should NOT be used in a production environment as they have significant performance costs.
@@ -61,24 +57,29 @@ You can pass MySQL flags in as environment variables. The available flags are li
 !!! warning
     As noted in Google's documentation, some database flag settings can affect instance availability or stability. Be very careful when using these flags and follow Google's [Operational Guidelines](https://cloud.google.com/sql/docs/mysql/operational-guidelines).
 
-### Google Cloud MySQL Flags
+## Google Cloud MySQL Flags
 
 You can pass MySQL flags in as environment variables. The available flags are listed in the
-[Google Cloud documentation](https://cloud.google.com/sql/docs/mysql/flags). Each flag must be prepended with `LCP_GCP_DATABASE_FLAG_` to work in Liferay Cloud.
-
-!!! warning
-    As noted in Google's documentation, some database flag settings can affect instance availability or stability. Be very careful when using these flags and follow Google's [Operational Guidelines](https://cloud.google.com/sql/docs/mysql/operational-guidelines).
-
-Here are common flags useful for debugging in a development environment. They should NOT be used in a production environment because they have significant performance costs.
+[Google Cloud documentation](https://cloud.google.com/sql/docs/mysql/flags). Each flag must be prepended with `LCP_GCP_DATABASE_FLAG_` to work in Liferay Cloud.Here are common flags useful for debugging in a development environment. They should NOT be used in a production environment because they have significant performance costs.
 
 | **Name**                               | **Acceptable Values** | **Default Value** |
 | :------------------------------------- | :-------------------- | :---------------- |
 | `LCP_GCP_DATABASE_FLAG_GENERAL_LOG`    | `on, off`             | `off`             |
 | `LCP_GCP_DATABASE_FLAG_SLOW_QUERY_LOG` | `on, off`             | `off`             |
 
-## Related Information
+You can also use the `max_allowed_packet` property to limit the size of payloads. Setting it too high might consume more memory. Setting it too low might result in failed queries and lost connections for larger payloads.
 
-* [Changing Your Database Username](./database-service/changing-your-database-username.md)
-* [Changing Your Database Password](./database-service/changing-your-database-password.md)
-* [Database Service Limitations](../reference/platform-limitations.md#database-service)
-* [Using the Database Client](./database-service/using-the-database-client.md)
+| Name                                       | Acceptable Values | Default Value       |
+| :----------------------------------------- | :---------------- | :------------------ |
+| `LCP_GCP_DATABASE_FLAG_MAX_ALLOWED_PACKET` | Multiples of 1024 | `268435456`         |
+
+!!! warning
+    As noted in Google's documentation, some database flag settings can affect instance availability or stability. Be very careful when using these flags and follow Google's [Operational Guidelines](https://cloud.google.com/sql/docs/mysql/operational-guidelines).
+
+
+## Related Topics
+
+- [Changing Your Database Username](./database-service/changing-your-database-username.md)
+- [Changing Your Database Password](./database-service/changing-your-database-password.md)
+- [Database Service Limitations](../reference/platform-limitations.md#database-service)
+- [Using the Database Client](./database-service/using-the-database-client.md)

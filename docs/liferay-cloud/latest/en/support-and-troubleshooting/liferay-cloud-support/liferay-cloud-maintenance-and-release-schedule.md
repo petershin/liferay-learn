@@ -10,9 +10,11 @@ uuid: 24b34437-7273-4570-b799-de0f3086cd9a
 
 Liferay SaaS and PaaS both have a weekly maintenance and release schedule. Liferay Cloud uses a transparent and predictable release cadence to ensure that customers can rely on a stable and dependable infrastructure for their cloud projects.
 
+[Liferay DXP maintenance](#liferay-dxp-maintenance-windows) and [Liferay Cloud Platform maintenance](#liferay-cloud-platform-maintenance-windows) occur independently from one another.
+
 ## Liferay DXP Maintenance Windows
 
-Liferay SaaS instances have weekly DXP maintenance windows. The maintenance window depends on the customer's *deployment region* and lasts for *4 hours*. These maintenance windows include updates to the instance's database and Liferay DXP instance. *One or two short downtimes are expected each week during this window*. These maintenance windows *cannot* be changed or delayed per request.
+Liferay SaaS instances have weekly DXP maintenance windows. The maintenance window depends on the customer's *deployment region* and lasts *4 hours*. These maintenance windows include updates to the instance's database and Liferay DXP instance. *One or two short downtimes are expected each week during this window*. These maintenance windows *cannot* be changed or delayed per request.
 
 Liferay strives to test updates in advance on a copy of customer databases to avoid issues and verify the update's quality. Customers should establish a predefined test plan with Liferay that covers important business use cases, so these can be included when testing each update's quality. If the testing is successful, the update applies to both production and non-production instances.
 
@@ -34,11 +36,11 @@ For transparency's sake, releases are broken into *Major*, *Minor*, and *Patch* 
 
 Here is the regular maintenance schedule for each type of update:
 
-* **Patch updates** are applied on an ad-hoc basis in any release window (Tuesdays or Thursdays, between 8 AM to 8 PM PST)
+- **Patch updates** are applied on an ad-hoc basis in any release window (Tuesdays or Thursdays, between 8 AM to 8 PM PST)
 
-* **Minor releases** are scheduled *monthly* (on the last Tuesday of the month).
+- **Minor releases** are scheduled *monthly* (on the last Tuesday of the month).
 
-* **Major releases** are scheduled *quarterly* (on the last Tuesday of March, June, September, and December).
+- **Major releases** are scheduled *quarterly* (on the last Tuesday of March, June, September, and December).
 
 ## Emergency Maintenance Updates
 
@@ -46,4 +48,4 @@ If strictly necessary, Liferay can install critical zero-day security updates or
 
 ## Related Topics
 
-* [Liferay Cloud Support Overview](../liferay-cloud-support.md)
+- [Liferay Cloud Support Overview](../liferay-cloud-support.md)

@@ -8,6 +8,7 @@ taxonomy-category-names:
 - Security
 - User, Organization, and Account Management
 ---
+
 # Managing Guest User Entries
 
 When you create an object and its application UI, unauthenticated users cannot add object entries, even if you add an object-backed application to a page and grant the guest user view permission in the application.
@@ -18,13 +19,11 @@ You must explicitly grant [Resource Permissions](./permissions-framework-integra
 
 ## Allowing Guest Submissions
 
-To allow guest user object entry submissions,
-
 1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)) &rarr; *Control Panel* &rarr; *Roles*.
 
 1. In the Regular Roles tab, click *Guest* &rarr; *Define Permissions*.
 
-1. Search for your object and click it to begin defining the guest user's permissions.
+1. Search for your object and select it to begin defining the guest user's permissions.
 
 1. Under Resource Permissions, grant at least the *Add Object Entry* permission.
 

@@ -11,9 +11,8 @@ The Liferay Cloud backup service creates backups of an environment's database an
 
 Users can also download or upload environment backups [using the Liferay Cloud Console](#uploading-backups-via-the-console), or through [Backup APIs](#backup-service-apis).
 
-```{note}
-The Backups page is only available in production environments for backup service versions older than 4.3.5.
-```
+!!! note
+    The Backups page is only available in production environments for backup service versions older than 4.3.5.
 
 ## Downloading Backups via the CLI Tool
 
@@ -27,15 +26,15 @@ Run this command using a specific backup's ID to download its database and docum
 lcp backup download --backupId [ID]
 ```
 
-There are three optional command line switches: 
+There are three optional command line switches:
 
-`--database` specifies downloading only the database. 
+`--database` specifies downloading only the database.
 
 `--doclib` specifies downloading only the document library.
 
 `--concurrency` defines the number of files to download in parallel (up to 10,000).
 
-Here's an example of using multiple switches: 
+Here's an example of using multiple switches:
 
 ```bash
 lcp backup download --backupId [ID] --doclib --concurrency 500
@@ -47,9 +46,8 @@ The optimal number of files to download concurrently varies depending on your sy
 
 {bdg-secondary}`Requires CLI tool version 3.12.0+, backup service version 5.9.0+, and Liferay service version 5.3.0+`
 
-```{warning}
-Database table and column names are case sensitive in Liferay Cloud. Ensure that the table names are in Pascal case before uploading your database. See [Ensuring Correct Table Capitalization](../../migrating-to-liferay-cloud.md#ensuring-correct-table-capitalization) for more information.
-```
+!!! warning
+    Database table and column names are case sensitive in Liferay Cloud. Ensure that the table names are in Pascal case before uploading your database. See [Ensuring Correct Table Capitalization](../../migrating-to-liferay-cloud.md#ensuring-correct-table-capitalization) for more information.
 
 Run this command to upload a backup with both a database and document library:
 
@@ -73,9 +71,8 @@ To create a MySQL dump (as a `.sql` script) and compress it into a `.gz` archive
 mysqldump -uroot -ppassword --add-drop-database --databases lportal | gzip -c | cat > database.gz
 ```
 
-```{note}
-If your Backup service is not updated to at least version `4.2`, you must also run the following command to convert the archive to a `.tgz` file: `tar zcvf database.tgz database.gz`. Then use the resulting `.tgz` archive to upload.
-```
+!!! note
+    If your Backup service is not updated to at least version `4.2`, you must also run the following command to convert the archive to a `.tgz` file: `tar zcvf database.tgz database.gz`. Then use the resulting `.tgz` archive to upload.
 
 The `--databases` and `--add-drop-database` flags are necessary for backup restoration to work correctly. You can also use the `/backup/download` API to see how the backup service creates its MySQL dump file.
 
@@ -95,13 +92,12 @@ USE `lportal`;
 
 ### Creating the Volume File
 
-If you are uploading a backup with the [LCP tool](#uploading-backups-via-the-cli-tool), you do not need to create a volume file because the tool automatically compresses your document library's files.
+If you are uploading a backup with the [LCP tool](#uploading-backups-via-the-cli-tool), you don't need to create a volume file because the tool automatically compresses your document library's files.
 
-To upload a backup via the Cloud console UI or API, you must compress the document library to upload it. 
+To upload a backup via the Cloud console UI or API, you must compress the document library to upload it.
 
-```{tip}
-If permissions are not already configured for Liferay Cloud when you upload a backup, then restoring the backup to your environments afterward can take longer to complete. To avoid long restore times, navigate to your `LIFERAY_HOME` folder and run this command before compressing the document library: `chown -R 1000:1000 data/document_library/`.
-```
+!!! tip
+    If permissions are not already configured for Liferay Cloud when you upload a backup, restoring the backup to your environments afterward can take longer to complete. To avoid long restore times, navigate to your `LIFERAY_HOME` folder and run this command before compressing the document library: `chown -R 1000:1000 data/document_library/`.
 
 Run this command to compress the data volume:
 
@@ -111,9 +107,8 @@ cd $LIFERAY_HOME/data && tar -czvf volume.tgz document_library
 
 ## Downloading Backups via the Console
 
-```{important}
-You can only download backups via the console **before backup service 5.9.0**. For versions 5.9.0+, use the [CLI tool](#downloading-backups-via-the-cli-tool) instead.
-```
+!!! important
+    You can only download backups via the console **before backup service 5.9.0**. For versions 5.9.0+, use the [CLI tool](#downloading-backups-via-the-cli-tool) instead.
 
 Follow these steps (as an administrator) to download a backup from the *Backups* page in your chosen environment:
 
@@ -125,19 +120,17 @@ Follow these steps (as an administrator) to download a backup from the *Backups*
 
 1. Click the *Database* (`.gz`) or *Liferay* (`.tgz`) file to start downloading. Together, these zip archives comprise the environment backup.
 
-   ```{note}
-   If your Backup service is not yet updated to version `4.2` or above, then the Database volume is downloaded as a `.tgz` archive instead of `.gz`.
-   ```
+    !!! note
+        If your Backup service is not yet updated to version `4.2` or above, then the Database volume is downloaded as a `.tgz` archive instead of `.gz`.
 
-   ![Click to download the database and Liferay data volume files.](./downloading-and-uploading-backups/images/02.png)
+    ![Click to download the database and Liferay data volume files.](./downloading-and-uploading-backups/images/02.png)
 
 ## Uploading Backups via the Console
 
 Before you can upload a backup to Liferay Cloud, you must compress the database dump and document library in separate archives. See [Preparing the Database and Document Library for Upload](#preparing-the-database-and-document-library-for-upload) for more information on preparing them for an on-premises environment.
 
-```{warning}
-Database table and column names are case sensitive in Liferay Cloud. Ensure that the table names are in Pascal case before uploading your database. See [Ensuring Correct Table Capitalization](../../migrating-to-liferay-cloud.md#ensuring-correct-table-capitalization) for more information.
-```
+!!! warning
+    Database table and column names are case sensitive in Liferay Cloud. Ensure that the table names are in Pascal case before uploading your database. See [Ensuring Correct Table Capitalization](../../migrating-to-liferay-cloud.md#ensuring-correct-table-capitalization) for more information.
 
 Follow these steps from the Backups page:
 
@@ -145,7 +138,7 @@ Follow these steps from the Backups page:
 
 1. On the Upload Backup page, expand the appropriate environment, and then click the `+` icons for both the database and document library to upload them.
 
-   ![Click the icons to upload both the database and document library as .gz archives.](./downloading-and-uploading-backups/images/03.png)
+    ![Click the icons to upload both the database and document library as .gz archives.](./downloading-and-uploading-backups/images/03.png)
 
 1. When both the database dump and document library are uploaded, click *Initiate Upload*.
 
@@ -157,7 +150,11 @@ A success message appears on the page when the backup is generated, and the serv
 
 ## Backup Service APIs
 
-The backup service has APIs that you can also use to download and upload backups before backup version 5.9.0. You can invoke these APIs using a command line tool such as `curl`.
+The backup service has APIs that you can also use to download and upload backups. You can invoke these APIs using a command line tool such as `curl`. Only use the Backup APIs if uploading with the CLI isn't available in your version of the backup service or if it gives you the following error:
+
+```
+Project [projectId] does not have GCS enabled for Document Library Store.
+```
 
 ### Getting the Host Name
 
@@ -169,10 +166,10 @@ The backup service's host name is a combination of the service, project, and env
 
 Consider this example:
 
-* Service name: `backup`
-* Project name: `lfrjoebloggs`
-* Environment name: `prd`
-* Host name: `backup-lfrjoebloggs-prd.lfr.cloud`
+- Service name: `backup`
+- Project name: `lfrjoebloggs`
+- Environment name: `prd`
+- Host name: `backup-lfrjoebloggs-prd.lfr.cloud`
 
 ### Authentication
 
@@ -191,9 +188,8 @@ curl -X POST \
   -F 'volume=@/my-folder/volume.tgz'
 ```
 
-```{note}
-Passing the user token in the header `dxpcloud-authorization` only works for versions `3.2.0` or greater of the backup service. Previous versions should be upgraded to at least `3.2.0`. Requests to earlier versions must use the header `Authorization: Bearer [Project master token]`. You can find the project master token by running the command `env | grep LCP_PROJECT_MASTER_TOKEN` in any shell in the Liferay Cloud console.
-```
+!!! note
+    Passing the user token in the header `dxpcloud-authorization` only works for versions `3.2.0` or greater of the backup service. Previous versions should be upgraded to at least `3.2.0`. Requests to earlier versions must use the header `Authorization: Bearer [Project master token]`. You can find the project master token by running the command `env | grep LCP_PROJECT_MASTER_TOKEN` in any shell in the Liferay Cloud console.
 
 ### Download Database API
 
@@ -201,9 +197,9 @@ The API for downloading a database contains an endpoint that returns a `.gz` fil
 
 #### Parameters
 
-Name | Type     | Required |
-:--- | :--- | :--- |
-`id` | `String` | Yes      |
+| Name | Type     | Required |
+| :--- | :------- | :------- |
+| `id` | `String` | Yes      |
 
 #### curl Example
 
@@ -214,9 +210,8 @@ curl -X GET \
   --output database.gz
 ```
 
-```{note}
-If your Backup service is not yet updated to version `4.2` or above, then the Database volume is downloaded as a `.tgz` archive instead of `.gz`.
-```
+!!! note
+    If your Backup service is not yet updated to version `4.2` or above, then the Database volume is downloaded as a `.tgz` archive instead of `.gz`.
 
 ### Download Data Volume API
 
@@ -224,9 +219,9 @@ The API for downloading a data volume contains an endpoint that returns a `.tgz`
 
 #### Parameters
 
-Name | Type     | Required |
-:--- | :--- | :--- |
-`id` | `String` | Yes      |
+| Name | Type     | Required |
+| :--- | :------- | :------- |
+| `id` | `String` | Yes      |
 
 #### curl Example
 
@@ -253,10 +248,10 @@ Before you can use the upload API, you must compress the database dump and docum
 
 **Parameters**
 
-Name       | Type   | Required |
-:--- | :--- | :--- |
-`database` | `File` | Yes      |
-`volume`   | `File` | Yes      |
+| Name       | Type   | Required |
+| :--------- | :----- | :------- |
+| `database` | `File` | Yes      |
+| `volume`   | `File` | Yes      |
 
 **curl Example**
 
@@ -271,6 +266,6 @@ curl -X POST \
 
 ## Related Topics
 
-* [Backup Service Overview](./backup-service-overview.md)
-* [Restoring Data from a Backup](./restoring-data-from-a-backup.md)
-* [Database Service (MySQL)](../database-service/database-service.md)
+- [Backup Service Overview](./backup-service-overview.md)
+- [Restoring Data from a Backup](./restoring-data-from-a-backup.md)
+- [Database Service (MySQL)](../database-service/database-service.md)

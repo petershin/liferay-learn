@@ -1,7 +1,5 @@
 ---
 toc:
-  - ./developer-guide/implementing-workflow.md
-  - ./developer-guide/implementing-a-custom-sla-calendar.md
   - ./developer-guide/crafting-xml-workflow-definitions.md
   - ./developer-guide/using-the-script-engine-in-workflow.md
   - ./developer-guide/workflow-definition-node-reference.md
@@ -10,7 +8,6 @@ toc:
   - ./developer-guide/creating-a-condition-evaluator.md
   - ./developer-guide/creating-an-action-executor.md
   - ./developer-guide/working-with-workflow-context.md
-  - ./developer-guide/apis.md
 taxonomy-category-names:
 - Platform
 - Workflow
@@ -21,8 +18,6 @@ uuid: 030c10fc-290f-4821-970a-275b6b0aeff3
 ---
 # Developer Guide
 
-- [Implementing Workflow](./developer-guide/implementing-workflow.md)
-- [Implementing a Custom SLA Calendar](./developer-guide/implementing-a-custom-sla-calendar.md)
 - [Using The Script Engine in Workflow](./developer-guide/using-the-script-engine-in-workflow.md)
 - [Crafting XML Workflow Definitions](./developer-guide/crafting-xml-workflow-definitions.md)
 - [Workflow Definition Node Reference](./developer-guide/workflow-definition-node-reference.md)

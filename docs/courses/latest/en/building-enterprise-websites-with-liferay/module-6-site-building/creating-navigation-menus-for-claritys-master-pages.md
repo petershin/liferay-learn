@@ -15,7 +15,7 @@ Clarity wants to focus visitor attention on their values and products. They also
 
 While logged in as Walter Douglas,
 
-1. Open the *Site Menu*, expand *Site Builder*, and click *Navigation Menus*.
+1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)), expand *Site Builder*, and click *Navigation Menus*.
 
 1. Click *New*.
 
@@ -67,19 +67,61 @@ While editing the menu,
 
 These changes are saved automatically, so the menu is ready for use in the master pages.
 
-## Exercise Three: Creating the Footer Navigation Menus
+## Exercise Three: Creating Categories for the Products Menu
+
+Before creating the footer Products menu, you must add the product categories (e.g., Eyeglasses, Sunglasses). This is because the menu links to the display page for each categories. Here, we'll cover this material quickly as a prerequisite for making the navigation menu. Module 7 will revisit and explore categorization in greater detail.
+
+1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and go to the *Global* site.
+
+   !!! important "Using the Global Site"
+       The Global Site shares content to all sites, but with significant limitations. To begin with, you cannot limit which sites can access the Global Site's content. Additionally, managing permissions and content organization within the Global Site can be overly complex and burdensome. Therefore, reserve the Global Site for non-sensitive content requiring universal availability. For content sharing across sites, use Asset Libraries when possible. You'll revisit this topic in Module 7.
+
+1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)), expand *Categorization*, and click *Categories*.
+
+1. Click the *Add* button (![Add Button](../../images/icon-plus.png)) to create a vocabulary and enter these details:
+
+   | Field                     | Value                                                                        |
+   |:--------------------------|:-----------------------------------------------------------------------------|
+   | Name                      | Clarity Products                                                             |
+   | Description               | Categories for Clarity's products: eyeglasses, sunglasses, contacts, lenses. |
+   | Allow Multiple Categories | Yes                                                                          |
+   | Visibility                | Public                                                                       |
+   | Asset Types               | Product                                                                      |
+   | Required                  | No                                                                           |
+
+   ![Create this vocabulary.](./creating-navigation-menus-for-claritys-master-pages/images/07.png)
+
+1. Click *Save*.
+
+1. Click *New* and add these categories:
+
+   | Name       | Description                                                                                                                   |
+   |:-----------|:------------------------------------------------------------------------------------------------------------------------------|
+   | Eyeglasses | Elevate your style with precision-crafted eyeglasses that seamlessly merge high quality with sustainability.                  |
+   | Sunglasses | Make a bold statement with our stylish and sustainable sunglasses, combining cutting-edge design with uncompromising quality. |
+   | Contacts   | Explore our range of contact lenses for a seamless blend of comfort and clarity.                                              |
+   | Lenses     | Experience unparalleled clarity with our premium lenses, meticulously engineered for optimal vision and lasting performance.  |
+
+   !!! tip
+       Click *Save and Add a New One* to create another category.
+
+   ![Add these categories.](./creating-navigation-menus-for-claritys-master-pages/images/08.png)
+
+   Once finished, you can create the Products navigation menu.
+
+1. Return to *Clarity Public Enterprise Website* and open the *Navigation Menus* application.
+
+## Exercise Four: Creating the Footer Navigation Menus
 
 Repeat the steps from exercises one and two to create these four menus for the page footer.
 
 ### Footer Products Menu
 
-<!--TASK: REVISIT! WE MUST ADD GLOBAL CATEGORIES BEFORE WE MAKE THIS MENU! -->
-
 **Name**: Footer Products Menu
 
 **Pages**: Eyeglasses, Sunglasses, Contacts, Lenses
 
-![Create the footer Products menu.](./creating-navigation-menus-for-claritys-master-pages/images/07.png)
+![Create the footer Products menu.](./creating-navigation-menus-for-claritys-master-pages/images/09.png)
 
 ### Footer About Us Menu
 
@@ -87,10 +129,10 @@ Repeat the steps from exercises one and two to create these four menus for the p
 
 **Pages**: Leadership, Our Impact, Careers
 
-![Create the footer About Us menu.](./creating-navigation-menus-for-claritys-master-pages/images/08.png)
-
 !!! note
     The Leadership and Our Impact links should direct users to the About Us page. Just add the page twice and use custom names for each menu item.
+
+![Create the footer About Us menu.](./creating-navigation-menus-for-claritys-master-pages/images/10.png)
 
 ### Footer Resources Menu
 
@@ -98,7 +140,7 @@ Repeat the steps from exercises one and two to create these four menus for the p
 
 **Pages**: Blog, FAQ
 
-![Create the footer Resources menu.](./creating-navigation-menus-for-claritys-master-pages/images/09.png)
+![Create the footer Resources menu.](./creating-navigation-menus-for-claritys-master-pages/images/11.png)
 
 ### Footer Get In Touch Menu
 
@@ -106,11 +148,22 @@ Repeat the steps from exercises one and two to create these four menus for the p
 
 **Pages**: Contact Us
 
-![Create the footer Get in Touch menu.](./creating-navigation-menus-for-claritys-master-pages/images/10.png)
+![Create the footer Get In Touch menu.](./creating-navigation-menus-for-claritys-master-pages/images/12.png)
 
 Now that the menus are defined, you can update the existing menu displays in the master pages to use them.
 
-## Exercise Four: Updating the Master Pages
+<!--TASK:
+### Footer Legal Menu
+
+**Name**: Footer Legal Menu
+
+**Pages**: ???
+
+![Create the footer legal menu.](./creating-navigation-menus-for-claritys-master-pages/images/13.png)
+
+Now that the menus are defined, you can update the existing menu displays in the master pages to use them. -->
+
+## Exercise Five: Updating the Master Pages
 
 When you add a menu display fragment or widget to a page, you can determine which menu to display. To do this,
 
@@ -120,7 +173,7 @@ When you add a menu display fragment or widget to a page, you can determine whic
 
 1. In the configuration side panel, set the source to Header Page Menu.
 
-   <!--TASK: ![Set the source to Header Page Menu.]() -->
+   ![Set the source to Header Page Menu.](./creating-navigation-menus-for-claritys-master-pages/images/14.gif)
 
 1. Repeat the above process for the menu displays in the footer.
 
@@ -130,7 +183,7 @@ When you add a menu display fragment or widget to a page, you can determine whic
 
 Once finished, navigate to the Home page to see how your changes to the template were automatically applied to the connected pages.
 
-<!--TASK: ![Navigate to the Home page to see how your changes to the template were automatically applied to the connected pages.]()-->
+<!--TASK: ![Navigate to the Home page to see how your changes to the template were automatically applied to the connected pages.](./creating-navigation-menus-for-claritys-master-pages/images/14.png)-->
 
 ## Conclusion
 

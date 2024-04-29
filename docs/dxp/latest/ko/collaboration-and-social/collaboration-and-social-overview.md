@@ -30,8 +30,8 @@ Wiki 만들기를 시작하려면 [Wiki 시작하기](./wiki/getting-started-wit
 
 Liferay DXP에는 다음과 같은 소셜 애플리케이션이 포함되어 있습니다.
 
-* [활동](./social-tools/user-guide/using-the-activities-widget.md)
-* [연락처 센터](./social-tools/user-guide/using-the-contacts-center-widget.md)
+* [활동](./social-tools/using-the-activities-widget.md)
+* [연락처 센터](./social-tools/using-the-contacts-center-widget.md)
 
 이러한 도구는 사용자를 위한 통합된 소셜 경험을 구축하기 위한 구성 요소입니다. 활동은 사용자가 사이트에서 수행하는 작업의 구성 가능한 피드를 제공합니다. Contacts Center를 통해 사용자는 다른 사용자를 검색하고 보고 소셜 관계를 설정할 수 있습니다.
 

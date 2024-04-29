@@ -1,6 +1,6 @@
 # 콘텐츠 등급 유형 구성
 
-[등급](../../../collaboration-and-social/social-tools/user-guide/using-the-ratings-system.md) 은 다양한 유형의 아이콘/레이블(예: 쌓인 별, 별, 좋아요)로 나타낼 수 있습니다. 다음 애플리케이션에 대해 이러한 등급 유형을 구성할 수 있습니다.
+[등급](../../../collaboration-and-social/social-tools/using-the-ratings-system.md) 은 다양한 유형의 아이콘/레이블(예: 쌓인 별, 별, 좋아요)로 나타낼 수 있습니다. 다음 애플리케이션에 대해 이러한 등급 유형을 구성할 수 있습니다.
 
 - 블로그
 - 댓글

@@ -67,7 +67,7 @@ Note that only users with the requisite permissions have the ability to create t
 
 질문에 답변한 후에는 해당 답변을 다음과 같은 방법으로 관리할 수 있습니다.
 
-**등급:** 위 또는 아래 화살표를 사용하여 답변에 [등급](../social-tools/user-guide/using-the-ratings-system.md) 을 줄 수 있습니다.
+**등급:** 위 또는 아래 화살표를 사용하여 답변에 [등급](../social-tools/using-the-ratings-system.md) 을 줄 수 있습니다.
 
 **정렬:** 탭을 사용하여 활성, 가장 오래된 또는 투표로 답변을 정렬할 수 있습니다.
 

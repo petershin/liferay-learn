@@ -30,8 +30,8 @@ Wikiの作成を始めるには、 [Wikiの概要](./wiki/getting-started-with-w
 
 Liferay DXPには、以下のソーシャルアプリケーションが含まれています。
 
-* [アクティビティ](./social-tools/user-guide/using-the-activities-widget.md)
-* [コンタクトセンター](./social-tools/user-guide/using-the-contacts-center-widget.md)
+* [アクティビティ](./social-tools/using-the-activities-widget.md)
+* [コンタクトセンター](./social-tools/using-the-contacts-center-widget.md)
 
 これらのツールは、ユーザーにとって統合されたソーシャルな体験を構築するためのビルディングブロックです。 アクティビティは、ユーザーがサイト上で行ったアクションを設定可能なフィードとして提供します。 Contacts Centerでは、他のユーザーの検索、閲覧、ソーシャルリレーションシップの確立が可能です。
 

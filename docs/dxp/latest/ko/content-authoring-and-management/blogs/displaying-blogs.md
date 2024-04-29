@@ -55,7 +55,7 @@ Liferay는 블로그 항목을 표시하는 두 가지 방법, 즉 [표시 페�
 
 ### 설정 탭
 
-**평점 활성화:** 블로그 항목에 대해 [등급 시스템](../../collaboration-and-social/social-tools/user-guide/using-the-ratings-system.md) 활성화합니다.
+**평점 활성화:** 블로그 항목에 대해 [등급 시스템](../../collaboration-and-social/social-toolse/using-the-ratings-system.md) 활성화합니다.
 
 **댓글 활성화:** 블로그 항목에 댓글을 활성화합니다.
 
@@ -85,7 +85,7 @@ Liferay는 블로그 항목을 표시하는 두 가지 방법, 즉 [표시 페�
 
 **부적절한 콘텐츠 신고 활성화:** 부적절한 콘텐츠 신고를 활성화하여 관리자에게 이메일을 보냅니다.
 
-**댓글에 대한 평가 활성화:** 블로그 항목 댓글에 대해 [평가 시스템](../../collaboration-and-social/social-tools/user-guide/using-the-ratings-system.md) 을 활성화합니다.
+**댓글에 대한 평가 활성화:** 블로그 항목 댓글에 대해 [평가 시스템](../../collaboration-and-social/social-tools/using-the-ratings-system.md) 을 활성화합니다.
 
 **관련 자산 표시:** 다른 위젯의 관련 콘텐츠 표시를 활성화합니다.
 

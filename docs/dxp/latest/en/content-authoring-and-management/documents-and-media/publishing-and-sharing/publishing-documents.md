@@ -8,6 +8,7 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: c938bebd-e338-4173-9be3-cf1d6dc90f17
 ---
+
 # Publishing Documents
 
 Liferay makes it easy to publish and showcase documents and other types of media files. As you begin [uploading media files](../uploading-and-managing/uploading-files.md), you probably want to start sharing them on your site.
@@ -69,7 +70,7 @@ You can configure Documents and Media via its *Options* button (![Options button
 
 **Entries listing for table display style:** Set what type of file information to display when the user selects Table view.
 
-**Ratings:** Enable or disable the [ratings system](../../../collaboration-and-social/social-tools/user-guide/using-the-ratings-system.md).
+**Ratings:** Enable or disable the [ratings system](../../../collaboration-and-social/social-tools/using-the-ratings-system.md).
 
 The toolbar at the top of Documents and Media provides these functions: 
 

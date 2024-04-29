@@ -70,7 +70,7 @@ To configure the widget, click _Options_ (![Options icon](../../images/icon-app-
 
 ### Setup Tab
 
-**Enable Ratings:** Enable the [ratings system](../../collaboration-and-social/social-tools/user-guide/using-the-ratings-system.md) for blog entries.
+**Enable Ratings:** Enable the [ratings system](../../collaboration-and-social/social-tools/using-the-ratings-system.md) for blog entries.
 
 **Enable Comments:** Enable comments on blog entries.
 
@@ -100,7 +100,7 @@ To select a different application display template (ADT) or create your own, cli
 
 **Enable Report Inappropriate Content:** Enable flagging content as inappropriate, which sends an email to administrators.
 
-**Enable Ratings for Comments:** Enable the [ratings system](../../collaboration-and-social/social-tools/user-guide/using-the-ratings-system.md) for blog entry comments.
+**Enable Ratings for Comments:** Enable the [ratings system](../../collaboration-and-social/social-tools/using-the-ratings-system.md) for blog entry comments.
 
 **Show Related Assets:** Enable showing related content from other widgets.
 

@@ -22,7 +22,7 @@ visibility:
 
 ## 사회
 
-* [등급 시스템 사용](https://learn.liferay.com/w/dxp/collaboration-and-social/social-tools/user-guide/using-the-ratings-system)
+* [등급 시스템 사용](https://learn.liferay.com/w/dxp/collaboration-and-social/social-tools/using-the-ratings-system)
 * [페이지 댓글 사용](https://learn.liferay.com/w/dxp/site-building/creating-pages/using-content-pages/using-page-comments)
 * [사용자 언급](https://learn.liferay.com/w/dxp/collaboration-and-social/notifications-and-requests/user-guide/mentioning-users)
 

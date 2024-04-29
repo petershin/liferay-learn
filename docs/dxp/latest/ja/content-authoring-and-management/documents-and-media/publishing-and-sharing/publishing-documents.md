@@ -49,7 +49,7 @@ Liferayでは、ドキュメントやその他の種類のメディアファイ�
 
 1. [メディアファイルを追加](../uploading-and-managing/uploading-files.md)したい場合は、［ドキュメントとメディア］アプリケーションからアップロードできます。
 
-**オプション** ボタン(![Options button](../../../images/icon-options.png)）を使用して、ドキュメントとメディアを設定できます。
+**オプション** ボタン(![Options button](../../../images/icon-options.png)) を使用して、ドキュメントとメディアを設定できます。
 
 ![設定ウィンドウには、4つの異なるタブがあります。](publishing-documents-on-a-dxp-site/images/06.png)
 
@@ -59,7 +59,7 @@ Liferayでは、ドキュメントやその他の種類のメディアファイ�
 
 **テーブル表示スタイル用のエントリーリスト:** ユーザーがテーブルビューを選択したときに表示するファイル情報のタイプを設定します。
 
-**評価:**[評価システム](../../../collaboration-and-social/social-tools/user-guide/using-the-ratings-system.md)を有効または無効にします。
+**評価:**[評価システム](../../../collaboration-and-social/social-tools/using-the-ratings-system.md)を有効または無効にします。
 
 ドキュメントとメディアの上部にあるツールバーは、次の機能を提供します。
 

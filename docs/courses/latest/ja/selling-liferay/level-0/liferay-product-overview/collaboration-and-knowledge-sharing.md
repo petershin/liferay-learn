@@ -22,7 +22,7 @@ visibility:
 
 ## ソーシャル
 
-* [評価システムの使用](https://learn.liferay.com/w/dxp/collaboration-and-social/social-tools/user-guide/using-the-ratings-system)
+* [評価システムの使用](https://learn.liferay.com/w/dxp/collaboration-and-social/social-tools/using-the-ratings-system)
 * [ページコメントの追加](https://learn.liferay.com/w/dxp/site-building/creating-pages/using-content-pages/using-page-comments)
 * [ユーザーにメンションする](https://learn.liferay.com/w/dxp/collaboration-and-social/notifications-and-requests/user-guide/mentioning-users)
 

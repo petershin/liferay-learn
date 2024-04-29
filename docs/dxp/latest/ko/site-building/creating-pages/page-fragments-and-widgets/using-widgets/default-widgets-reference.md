@@ -147,8 +147,8 @@ Liferay는 기본적으로 다양한 위젯을 제공하므로 솔루션 구축�
 
 | 위젯     | 묘사                                                                                                                                                            |
 | :----- | :------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 활동     | 사용자 활동을 추적할 수 있는 [활동 위젯](../../../../collaboration-and-social/social-tools/user-guide/using-the-activities-widget.md)을 추가합니다. 대지.                             |
-| 연락처 센터 | [연락처 센터 위젯](../../../../collaboration-and-social/social-tools/user-guide/using-the-contacts-center-widget.md)을 추가하면 사용자가 양식을 작성할 수 있습니다. 연결하고 다른 사용자를 팔로우하세요. |
+| 활동     | 사용자 활동을 추적할 수 있는 [활동 위젯](../../../../collaboration-and-social/social-tools/using-the-activities-widget.md)을 추가합니다. 대지.                             |
+| 연락처 센터 | [연락처 센터 위젯](../../../../collaboration-and-social/social-tools/using-the-contacts-center-widget.md)을 추가하면 사용자가 양식을 작성할 수 있습니다. 연결하고 다른 사용자를 팔로우하세요. |
 | 회원     | 사이트 회원을 표시하는 회원 위젯을 추가합니다.                                                                                                                                    |
 | 내 연락처  | 연결을 보여주는 내 연락처 위젯을 추가합니다. 이 위젯은 프로필 페이지에만 추가할 수 있습니다.                                                                                                         |
 | 단면도    | 사용자가 자신에 대한 사진과 설명을 추가하여 표시할 수 있는 프로필 위젯을 추가합니다. 내 프로필 페이지에만 적용할 수 있습니다.                                                                                      |

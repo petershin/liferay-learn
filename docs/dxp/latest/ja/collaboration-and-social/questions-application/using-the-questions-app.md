@@ -67,7 +67,7 @@ Note that only users with the requisite permissions have the ability to create t
 
 質問に回答されると、それらの回答は次の方法で管理できます。
 
-**評価:** 上矢印または下矢印を使用して回答に[評価](../social-tools/user-guide/using-the-ratings-system.md)を付けることができます。
+**評価:** 上矢印または下矢印を使用して回答に[評価](../social-tools/using-the-ratings-system.md)を付けることができます。
 
 **ソート:** タブを使用して、回答を［Active］、［Oldest］、［Votes］の順に並べ替えることができます。
 

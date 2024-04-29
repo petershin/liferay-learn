@@ -1,6 +1,6 @@
 # コンテンツの評価タイプの設定
 
-[評価](../../../collaboration-and-social/social-tools/user-guide/using-the-ratings-system.md)は、さまざまな種類のアイコン/ラベル（山積みの星、スター、サムズアップなど）で表すことができます。 これらの評価タイプは、次のアプリケーション用に構成できます。
+[評価](../../../collaboration-and-social/social-tools/using-the-ratings-system.md)は、さまざまな種類のアイコン/ラベル（山積みの星、スター、サムズアップなど）で表すことができます。 これらの評価タイプは、次のアプリケーション用に構成できます。
 
 - ブログ
 - コメント

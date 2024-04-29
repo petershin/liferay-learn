@@ -157,8 +157,8 @@ Social widgets create a social media experience on user sites.
 
 | Widget          | Description                                                                                                                                                                   |
 |:----------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Activities      | Adds an [Activities widget](../../../../collaboration-and-social/social-tools/user-guide/using-the-activities-widget.md) to track user activities on a site.                  |
-| Contacts Center | Adds a [Contacts Center widget](../../../../collaboration-and-social/social-tools/user-guide/using-the-contacts-center-widget.md) to form connections and follow other users. |
+| Activities      | Adds an [Activities widget](../../../../collaboration-and-social/social-tools/using-the-activities-widget.md) to track user activities on a site.                  |
+| Contacts Center | Adds a [Contacts Center widget](../../../../collaboration-and-social/social-tools/using-the-contacts-center-widget.md) to form connections and follow other users. |
 | Members         | Adds a Members widget to show site members.                                                                                                                                   |
 | My Contacts     | Adds a My Contacts widget to show users' connections. This widget can only be added to your profile page.                                                                     |
 | Profile         | Adds a Profile widget to display user profile information, including pictures and descriptions. This widget can only be applied to the My Profile page.                       |

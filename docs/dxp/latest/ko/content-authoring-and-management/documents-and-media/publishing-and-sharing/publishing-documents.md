@@ -59,7 +59,7 @@ Liferay를 사용하면 문서 및 기타 유형의 미디어 파일을 쉽게 �
 
 **테이블 표시 스타일에 대한 항목 목록:** 사용자가 테이블 보기를 선택할 때 표시할 파일 정보 유형을 설정합니다.
 
-**등급:**[등급 시스템을 활성화 또는 비활성화합니다.](../../../collaboration-and-social/social-tools/user-guide/using-the-ratings-system.md).
+**등급:**[등급 시스템을 활성화 또는 비활성화합니다.](../../../collaboration-and-social/social-tools/using-the-ratings-system.md).
 
 문서 및 미디어 상단에 있는 도구 모음은 다음 기능을 제공합니다.
 

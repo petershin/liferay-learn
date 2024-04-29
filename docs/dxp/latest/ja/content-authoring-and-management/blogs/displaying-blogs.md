@@ -54,7 +54,7 @@ Blogsウィジェットをページに追加するには、
 
 ### ［Setup］タブ
 
-**Enable Ratings:** ブログエントリーの [評価システム](../../collaboration-and-social/social-tools/user-guide/using-the-ratings-system.md) を有効にする。
+**Enable Ratings:** ブログエントリーの [評価システム](../../collaboration-and-social/social-tools/using-the-ratings-system.md) を有効にする。
 
 **コメントを有効にする** ： ブログのエントリーにコメントを有効にする。
 
@@ -84,7 +84,7 @@ Blogsウィジェットをページに追加するには、
 
 **不適切なコンテンツの報告を有効にする** ： 不適切なコンテンツとしてフラグを立て、管理者に電子メールを送信できるようにします。
 
-**Enable Ratings for Comments** : Enable [ratings system](../../collaboration-and-social/social-tools/user-guide/using-the-ratings-system.md) for blog entry comments.
+**Enable Ratings for Comments** : Enable [ratings system](../../collaboration-and-social/social-tools/using-the-ratings-system.md) for blog entry comments.
 
 **Show Related Assets:** 他のウィジェットからの関連コンテンツを表示できるようにします。
 

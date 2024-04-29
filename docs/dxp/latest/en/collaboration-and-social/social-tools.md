@@ -11,6 +11,7 @@ taxonomy-category-names:
 - Liferay PaaS
 - Liferay SaaS
 ---
+
 # Social Tools
 
 User Guide

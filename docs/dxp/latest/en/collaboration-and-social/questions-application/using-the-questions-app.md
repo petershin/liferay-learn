@@ -77,7 +77,7 @@ Note that only users with the requisite permissions have the ability to create t
 
 Once a question has been answered, those answers can be managed in the following ways:
 
-**Rating:** You can give the answer a [rating](../social-tools/user-guide/using-the-ratings-system.md) using the up or down arrows.
+**Rating:** You can give the answer a [rating](../social-tools/using-the-ratings-system.md) using the up or down arrows.
 
 **Sort:** You can use the tabs to sort answers by Active, Oldest, or Votes.
 

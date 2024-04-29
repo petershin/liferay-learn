@@ -262,6 +262,8 @@ While editing the primary master page,
 
    Each container is for footer navigation menus.
 
+   ![Add a container to each grid area and name them Products Navigation, About Us Navigation, Resources Navigation, and Get In Touch Navigation.](./designing-claritys-master-pages/images/16.png)
+
 1. Select each container and configure these settings:
 
    **Products Navigation**
@@ -333,8 +335,6 @@ While editing the primary master page,
    2rem = Spacer 4?
    -->
 
-   <!--TASK: ![]() -->
-
 1. Add these fragments to the footer containers:
 
    | Container               | Fragments             |
@@ -344,14 +344,15 @@ While editing the primary master page,
    | About Us Navigation     | Heading, Menu Display |
    | Resources Navigation    | Heading, Menu Display |
    | Get In Touch Navigation | Heading, Menu Display |
+   | Footer Legal            | N/A                   |
 
-   <!--TASK: | Footer Legal | ??? | -->
+   For now, leave the Footer Legal container empty. You'll add a custom fragment to it in a later lesson.
+
+   ![Add these fragments to the footer containers.](./designing-claritys-master-pages/images/17.png)
 
 1. Double click the headings to update their text to Products, About Us, Resources, and Get In Touch.
 
 1. Select the menu displays and set their Display Style to *Stacked*.
-
-   <!--TASK: ![]() -->
 
 For now, this completes the wireframing for the primary master page. You'll revisit it again in the following lessons to update its menus and add both the search bar and login button. Now you can configure the template's allowed fragments.
 
@@ -365,18 +366,18 @@ While editing the master page template,
 
 1. Uncheck these fragments to prevent users from adding them to pages using the template:
 
-   * Product (fragment set)
-   * Knowledge Base Navigation (fragment)
-   * Header Navigation Bars (fragment set)
-   * Footers (fragment set)
-   * Cart (fragment set)
    * Account (fragment set)
+   * Cart (fragment set)
+   * Footers (fragment set)
+   * Navigation Bars (fragment set)
+   * Knowledge Base Navigation (fragment)
+   * Product (fragment set)
 
-   <!--TASK: ![]() -->
+   ![Uncheck these fragments to prevent users from adding them to pages using the template.](./designing-claritys-master-pages/images/18.png)
 
 1. Click *Save*.
 
-1. Click *Publish*.
+1. Click *Publish Master*.
 
 Now when the template is applied to a page, users can only add the allowed fragments to the page. But before we apply the template to any pages, let’s create the secondary master page that Clarity wants to use for their sign in and utility pages.
 
@@ -388,19 +389,21 @@ While in the Masters tab of the Page Templates application,
 
 1. Click the *Action* button for the primary master page and select *Make a Copy* &rarr; *Master Page*.
 
-1. Click the *Action* button for the copy and select *Rename*.
+   ![Copy the master page template.](./designing-claritys-master-pages/images/19.png)
 
-1. For name, enter `Secondary Master Page` and click *Save*.
+1. Click the *Action* button ![Actions Button](../../images/icon-actions.png) for the copy and select *Rename*.
 
-1. Begin editing the template and remove these elements:
+1. Enter `Secondary Master Page` and click *Save*.
 
-   * Header Header Announcement Bar
+1. Begin editing the template and remove these containers along with their contents:
+
+   * Header Announcement Bar
    * Footer Branding
    * Footer Navigation
 
-   <!--TASK: ![]() -->
+   ![Remove the unneeded containers and their contents.](./designing-claritys-master-pages/images/20.png)
 
-1. Click *Publish*.
+1. Click *Publish Master*.
 
 You can now apply both master pages to their respective pages.
 
@@ -412,8 +415,6 @@ After creating a page, you can always update its master page. To do this,
 
 1. Go to the *Page Design Options* tab (![Page Design Options Tab](../../images/icon-format.png)) in the left side panel.
 
-   <!--TASK: ![]() -->
-
 1. Select the appropriate *master page*:
 
    * Apply the primary master page to these pages.
@@ -423,6 +424,8 @@ After creating a page, you can always update its master page. To do this,
    * Apply the secondary master page to these pages.
       * Content Pages: Sign In
       * Utility Pages: 404, 500
+
+   ![Apply the appropriate master page template.](./designing-claritys-master-pages/images/21.png)
 
 1. Click *Publish*.
 

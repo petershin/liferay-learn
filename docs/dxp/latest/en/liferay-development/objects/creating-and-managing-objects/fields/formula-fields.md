@@ -41,4 +41,3 @@ Formula field values are set dynamically using these expressions whenever entrie
 
 * [Adding Field to Objects](./adding-fields-to-objects.md)
 * [Aggregation Fields](./aggregation-fields.md)
-<!-- * [Numeric Fields](./numeric-fields.md) -->

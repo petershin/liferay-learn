@@ -16,9 +16,9 @@ Liferay provides a robust script engine for executing [Groovy](http://groovy-lan
 
 In self-hosted or PaaS instances, you can also leverage scripts in multiple applications:
 
-- [Object actions](../../liferay-development/objects/creating-and-managing-objects/actions.md)
-- [Object validations](../../liferay-development/objects/creating-and-managing-objects/validations.md)
-- [Workflow](../../process-automation/workflow/developer-guide/using-the-script-engine-in-workflow.md)
+- [Object actions](../liferay-development/objects/creating-and-managing-objects/actions.md)
+- [Object validations](../liferay-development/objects/creating-and-managing-objects/validations.md)
+- [Workflow](../process-automation/workflow/developer-guide/using-the-script-engine-in-workflow.md)
 - [The script console](./using-the-script-engine/running-scripts-from-the-script-console.md)
 
 ![The Script Console executes Groovy scripts and provides context variables, such as the current actionRequest. The Script Console was designed for invoking Liferay Services.](./using-the-script-engine/images/01.png)
@@ -29,7 +29,7 @@ Beginning in DXP 2024.Q2/Portal 7.4 GA120, scripting is disabled by default in w
 
 To enable scripting for administrative users of workflow and objects,
 
-1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)) and navigate to *Control Panel* &rarr; *System Settings* (in the Configuration section).
+1. Open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)) and navigate to *Control Panel* &rarr; *System Settings* (in the Configuration section).
 
 1. From the Security category click _Script Management_.
 

@@ -93,7 +93,7 @@ Once scheduled, changes cannot be added to a publication. However, you can click
 ## Managing Out-of-date Publications
 
 {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+`
-{bdg-link-primary}`[Beta Feature](../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
+{bdg-link-primary}`[Beta Feature](../../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
 
 After an [upgrade](../../../installation-and-upgrades/upgrading-liferay.md), publications created on older versions become out of date, serving only as references and no longer being modifiable, revertible, or publishable. However, users can still view, delete, or move compatible changes to another publication.
 

@@ -7,6 +7,7 @@ toc:
   - ./workflow-designer/using-forks-and-joins.md
   - ./workflow-designer/using-condition-nodes.md
   - ./workflow-designer/assigning-task-nodes.md
+  - ./workflow-designer/using-task-timers.md
   - ./workflow-designer/workflow-transitions.md
 taxonomy-category-names:
 - Platform
@@ -31,6 +32,7 @@ The Workflow Designer's user interface was refreshed in Liferay DXP 7.4 Update 2
 - [Creating Workflow Tasks](./workflow-designer/creating-workflow-tasks.md)
 - [Configuring Workflow Actions and Notifications](./workflow-designer/configuring-workflow-actions-and-notifications.md)
 - [Assigning Task Nodes](./workflow-designer/assigning-task-nodes.md)
+- [Using Task Timers](./workflow-designer/using-task-timers.md)
 - [Using Forks and Joins](./workflow-designer/using-forks-and-joins.md)
 - [Using Condition Nodes](./workflow-designer/using-condition-nodes.md)
 - [Workflow Nodes](./workflow-designer/workflow-nodes.md)

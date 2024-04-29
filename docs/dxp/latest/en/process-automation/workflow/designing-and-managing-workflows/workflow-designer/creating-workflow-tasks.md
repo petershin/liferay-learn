@@ -19,6 +19,8 @@ Task nodes are often the most complex parts of a workflow definition. They can h
 
 Task nodes also contain Notifications and Actions--both of which support [workflow scripts](../../developer-guide/using-the-script-engine-in-workflow.md). See [Configuring Workflow Actions and Notifications](./configuring-workflow-actions-and-notifications.md).
 
+Task nodes can also use [task timers](../../developer-guide/workflow-task-node-reference.md#task-timers) to trigger an action after a specified time period passes. Timers are useful for ensuring a task does not go unattended for a long time. Available timer actions include sending an additional notification, reassigning the asset, or creating a timer action.
+
 When the review is finished and the approved transition is triggered, the workflow advances to the next node. In the Single Approver process, it moves to the Approved nd node.
 
 ## Creating the Single Approver Workflow

@@ -28,27 +28,27 @@ After [installing Liferay](./installing-liferay.md), configure it to meet your n
 
 **Setup Tasks**
 
-* [Activate Liferay](#activate-liferay) (Subscription Required)
-* [Configure Your Instance](#configure-your-instance)
-* [Localize Your Instance](#localize-your-instance)
-* [Configure Mail](#configure-mail)
-* [Configure Users](#configure-users)
-* [Configure File Storage](#configure-file-storage)
-* [Install a Search Engine](#install-a-search-engine)
-* [Secure Liferay](#secure-liferay)
-* [Configure Backups](#configure-backups)
+- [Activate Liferay](#activate-liferay) (Subscription Required)
+- [Configure Your Instance](#configure-your-instance)
+- [Localize Your Instance](#localize-your-instance)
+- [Configure Mail](#configure-mail)
+- [Configure Users](#configure-users)
+- [Configure File Storage](#configure-file-storage)
+- [Install a Search Engine](#install-a-search-engine)
+- [Secure Liferay](#secure-liferay)
+- [Configure Backups](#configure-backups)
 
 **Other Setup Tasks**
 
-* [Install Apps From Marketplace](#install-apps-from-marketplace)
-* [Configure Roles and Permissions](#configure-roles-and-permissions)
-* [Add Custom Fields](#add-custom-fields)
-* [Integrate with Existing Systems](#integrate-with-existing-systems)
-* [Configure Media File Previews](#configure-media-file-previews)
-* [Configure a CDN](#configure-a-cdn)
-* [Configure High Availability](#configure-high-availability)
-* [Tune Liferay](#tune-liferay)
-* [Setting Up JNDI](#setting-up-jndi)
+- [Install Apps From Marketplace](#install-apps-from-marketplace)
+- [Configure Roles and Permissions](#configure-roles-and-permissions)
+- [Add Custom Fields](#add-custom-fields)
+- [Integrate with Existing Systems](#integrate-with-existing-systems)
+- [Configure Media File Previews](#configure-media-file-previews)
+- [Configure a CDN](#configure-a-cdn)
+- [Configure High Availability](#configure-high-availability)
+- [Tune Liferay](#tune-liferay)
+- [Setting Up JNDI](#setting-up-jndi)
 
 Each task above links to a description below that includes references to applicable articles. The first tasks are essential for any production-ready Liferay instance. Examine the *Other Setup Tasks* that also apply to your system. As you complete tasks, make sure to revisit the checklist above.
 
@@ -74,13 +74,13 @@ Configure your instance's locale and time zone. See [Initial Instance Localizati
 
 After you [understand Users](../users-and-permissions/users/understanding-users.md), configure them for your instance.
 
-* Enable/disable User fields
-* Add any necessary [custom User fields](../users-and-permissions/users/adding-custom-fields-to-users.md)
-* Specify whether to allow strangers to create accounts
-* Define [User authentication](./securing-liferay/authentication-basics.md)
-* Configure automatic association of Users to specific Sites, [Roles](../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md), and [User Groups](../users-and-permissions/user-groups.md)
+- Enable/disable User fields
+- Add any necessary [custom User fields](../system-administration/configuring-liferay/adding-custom-fields.md)
+- Specify whether to allow strangers to create accounts
+- Define [User authentication](./securing-liferay/authentication-basics.md)
+- Configure automatic association of Users to specific Sites, [Roles](../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md), and [User Groups](../users-and-permissions/user-groups.md)
 
-Visit [Users](../system-administration/configuring-liferay/virtual-instances/users.md), [User Authentication](../system-administration/configuring-liferay/virtual-instances/user-authentication.md), and [Adding Custom Fields For Users](../users-and-permissions/users/adding-custom-fields-to-users.md) for details.
+Visit [Users](../system-administration/configuring-liferay/virtual-instances/users.md), [User Authentication](../system-administration/configuring-liferay/virtual-instances/user-authentication.md).
 
 ## Configure File Storage
 
@@ -114,7 +114,7 @@ Use [Roles](../users-and-permissions/roles-and-permissions/understanding-roles-a
 
 ## Add Custom Fields
 
-Entities in your Instances and applications can be customized with additional fields. This may include adding fields for Users. For details, see [Adding Custom Fields](../system-administration/configuring-liferay/adding-custom-fields.md) and [Adding Custom Fields For Users](../users-and-permissions/users/adding-custom-fields-to-users.md).
+Entities in your Instances and applications can be customized with additional fields. See [Adding Custom Fields](../system-administration/configuring-liferay/adding-custom-fields.md) for more information.
 
 ## Integrate with Existing Systems
 
@@ -140,6 +140,5 @@ Tune Liferay's JVM, connection pools, and more for optimal performance. See [Tun
 
 If you're using Liferay DXP and haven't [activated](./setting-up-liferay/activating-liferay-dxp.md) it, do that first. Then continue with [Instance Configuration](../system-administration/configuring-liferay/virtual-instances/instance-configuration.md) and the other [Setup Tasks](#setup-tasks) listed above.
 
-```{important}
-Before going to production, configure a process for backing up your installation and data. Please see [Backing Up](./maintaining-a-liferay-installation/backing-up.md) for details.
-```
+!!! important
+    Before going to production, configure a process for backing up your installation and data. Please see [Backing Up](./maintaining-a-liferay-installation/backing-up.md) for details.

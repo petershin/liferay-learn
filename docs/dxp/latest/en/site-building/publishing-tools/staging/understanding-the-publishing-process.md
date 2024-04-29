@@ -11,16 +11,15 @@ uuid: 3572cd09-2cb0-4688-953d-7a6958b5e756
 
 Publishing is the process whereby changes made in the Staging environment are transferred to the Live environment. Understanding this process can improve efficiency and help you plan ahead to achieve a seamless publishing experience.
 
-* [The Staging Process](#the-staging-process)
-* [Planning Ahead for Staging](#planning-ahead-for-staging)
+- [The Staging Process](#the-staging-process)
+- [Planning Ahead for Staging](#planning-ahead-for-staging)
 
 ## The Staging Process
 
 From a low level perspective, staging is a relationship between two Sites or Asset Libraries where the same entities are mirrored between them. From a high level perspective, staging involves a publish process that is executed in three sequential phases: Export, Validation, and Import.
 
-```{important}
-When using [Custom Fields](../../../users-and-permissions/users/adding-custom-fields-to-users.md) with Remote Live Staging, you must export and import new custom fields manually to your Live environment before publishing. This is because custom fields are not site-scoped and cannot be exported/imported automatically along with content changes.
-```
+!!! important
+    When using [Custom Fields](../../../system-administration/configuring-liferay/adding-custom-fields.md) with Remote Live Staging, you must export and import new custom fields manually to your Live environment before publishing. This is because custom fields are not site-scoped and cannot be exported/imported automatically along with content changes.
 
 ### Export Phase
 
@@ -46,9 +45,8 @@ Staging is a complex subsystem that's flexible and scalable. Before you begin us
 
 Depending on the content in your Site and Asset Library, you can turn on Staging for only the necessary content types during your initial setup. You can also configure your publish process to only include certain types of content. Both of these measures can help to avoid unnecessary work.
 
-```{important}
-By default, content displayed using the following widgets is always included in publishing processes: Dynamic Data Lists Display, Form, Web Content Display, and Wiki Display. For Liferay DXP/Portal 7.4+, you can disable this behavior so that displayed content is only published when explicitly included in the publishing process's configuration. See [Configuring Automatic Publishing of Displayed Content](./configuring-automatic-publishing-of-displayed-content.md) for more information.
-```
+!!! important
+    By default, content displayed using the following widgets is always included in publishing processes: Dynamic Data Lists Display, Form, Web Content Display, and Wiki Display. For Liferay DXP/Portal 7.4+, you can disable this behavior so that displayed content is only published when explicitly included in the publishing process's configuration. See [Configuring Automatic Publishing of Displayed Content](./configuring-automatic-publishing-of-displayed-content.md) for more information.
 
 ### Hardware Environment
 
@@ -68,5 +66,5 @@ For Staging, JVMs/networks should be configured with a minimum of 4GB of memory 
 
 ## Related Topics
 
-* [Configuring Local Live Staging](./configuring-local-live-staging.md)
-* [Configuring Remote Live Staging](./configuring-remote-live-staging.md)
+- [Configuring Local Live Staging](./configuring-local-live-staging.md)
+- [Configuring Remote Live Staging](./configuring-remote-live-staging.md)

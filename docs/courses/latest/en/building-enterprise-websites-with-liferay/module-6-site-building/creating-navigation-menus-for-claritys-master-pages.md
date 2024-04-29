@@ -107,9 +107,7 @@ Before creating the footer Products menu, you must add the product categories (e
 
    ![Add these categories.](./creating-navigation-menus-for-claritys-master-pages/images/08.png)
 
-   Once finished, you can create the Products navigation menu.
-
-1. Return to *Clarity Public Enterprise Website* and open the *Navigation Menus* application.
+Great! Now that you've added these categories, you can return to *Clarity Public Enterprise Website*, open the *Navigation Menus* application, and create the footer navigation menus.
 
 ## Exercise Four: Creating the Footer Navigation Menus
 

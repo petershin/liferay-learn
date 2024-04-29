@@ -9,9 +9,8 @@ taxonomy-category-names:
 ---
 # Creating Segments
 
-```{important}
-Segments created in Analytics Cloud sync with Liferay DXP. However, segments created in Liferay DXP do not sync with Analytics Cloud.
-```
+!!! important
+    Segments created in Analytics Cloud sync with Liferay DXP. However, segments created in Liferay DXP do not sync with Analytics Cloud.
 
 ## Creating a Dynamic Segment
 
@@ -25,45 +24,43 @@ Segments created in Analytics Cloud sync with Liferay DXP. However, segments cre
 
 1. Drag and drop Segment criteria from the panel on the right to the canvas on the center of the screen. The selector menu at the top of the panel shows you the criteria types you can select:
 
-    * **Web Behaviors:** Actions taken by a person (e.g., submitted a form, viewed a blog, etc.).
-    * **Individual Attributes:** Attributes that belong to a person (e.g., age, country, industry, etc.). Note that DXP custom fields can also be selected under Individual Attributes. Learn more about [adding custom fields to Users in DXP](https://learn.liferay.com/dxp/latest/en/users-and-permissions/users/adding-custom-fields-to-users.html).
-    * **Interests:** Topics and content types that interest the person. For more information on interests in Analytics Cloud, see Customer Insights.
-    * **Session Attributes:** Attributes that belong to a person's web session (e.g., browser, geo-location, etc.).
-    * **Organization Attributes:** Attributes that belong to an organization (e.g. name, hierarchy, type, etc.).
+    - **Web Behaviors:** Actions taken by a person (e.g., submitted a form, viewed a blog, etc.).
+    - **Individual Attributes:** Attributes that belong to a person (e.g., age, country, industry, etc.). Note that DXP custom fields can also be selected under Individual Attributes. Learn more about [adding custom fields to Users in DXP](https://learn.liferay.com/en/w/dxp/system-administration/configuring-liferay/adding-custom-fields).
+    - **Interests:** Topics and content types that interest the person. For more information on interests in Analytics Cloud, see Customer Insights.
+    - **Session Attributes:** Attributes that belong to a person's web session (e.g., browser, geo-location, etc.).
+    - **Organization Attributes:** Attributes that belong to an organization (e.g. name, hierarchy, type, etc.).
 
     ![By default anonymous users are not included in Segments.](creating-segments/images/02.png)
 
-    ```{note}
-    Anonymous users are excluded from Segments by default. To include them, enable the Include Anonymous toggle. Note, however, that criteria with individual attributes excludes anonymous users regardless of your setting here. Such attributes only apply to known users.
-
-    ```
+    !!! note
+        Anonymous users are excluded from Segments by default. To include them, enable the Include Anonymous toggle. Note, however, that criteria with individual attributes excludes anonymous users regardless of your setting here. Such attributes only apply to known users.
 
 ### Creating Criteria
 
 The criteria creation canvas is flexible. Once added to the canvas, you can move, delete, or duplicate any criterion:
 
-* **To move:** Click and drag the criterion using the vertical dots ![Drag icon.](../../images/icon-drag.png) on its left.
-* **To delete:** Click the criterion's trash icon ![Delete icon.](../../images/icon-delete.png). Alternatively, you can click the criterion's *Actions* icon ![Actions icon.](../../images/icon-actions.png) and select *Delete*.
-* **To duplicate:** Click the criterion's *Actions* icon ![Actions icon.](../../images/icon-actions.png) and select *Duplicate*.
+- **To move:** Click and drag the criterion using the vertical dots ![Drag icon.](../../images/icon-drag.png) on its left.
+- **To delete:** Click the criterion's trash icon ![Delete icon.](../../images/icon-delete.png). Alternatively, you can click the criterion's *Actions* icon ![Actions icon.](../../images/icon-actions.png) and select *Delete*.
+- **To duplicate:** Click the criterion's *Actions* icon ![Actions icon.](../../images/icon-actions.png) and select *Duplicate*.
 
 Each criterion that you add contains fields for customization. The first field is typically a selector menu where you specify a condition for any remaining fields. The condition's values depend on the data type for the remaining fields. Here are some common condition values:
 
-* Contains (text)
-* Equals
-* Greater than (number)
-* Is known
-* Less than (number)
-* Does not contain (text)
-* Does not equal
-* Is not known
-* Greater than or equals (number)
-* Less than or equals (number)
-* Is
-* Is not
-* Is before (date)
-* Is after (date)
-* Has (behavior)
-* Has not (behavior)
+- Contains (text)
+- Equals
+- Greater than (number)
+- Is known
+- Less than (number)
+- Does not contain (text)
+- Does not equal
+- Is not known
+- Greater than or equals (number)
+- Less than or equals (number)
+- Is
+- Is not
+- Is before (date)
+- Is after (date)
+- Has (behavior)
+- Has not (behavior)
 
 For example, the `birthDate` criterion's first field is a selector menu containing the options _is before_, _is_, and _is after_. The second field is a date field. You can, therefore, specify a criterion in which only Individuals with a birthday after 31 December 1980 are part of the Segment.
 
@@ -73,9 +70,9 @@ You can also control the way adjacent criteria interact with each other. For exa
 
 For example, joining two `birthDate` criteria with the following conditions creates a Segment targeting the Millennial generation (born 1981 - 1996):
 
-* Is after 31 December 1980
-* AND
-* Is before 01 January 1997
+- Is after 31 December 1980
+- AND
+- Is before 01 January 1997
 
 You can also form subgroups of criteria by dragging and dropping criteria onto each other. An AND/OR box then appears between the subgroup and any adjacent criteria. Together, these tools help you build complex criteria for your Segment.
 

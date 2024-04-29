@@ -13,7 +13,7 @@ Due to the similarities between Audience Targeting user segments and Liferay 7.2
 
 ## User Attribute Rules
 
-Some User Attributes, like Gender or Age, do not have a direct equivalent in Liferay 7.2+. User Attributes retrieved from external sources like Facebook also do not have a replacement. To replace these, you must [create a custom user field](../../../users-and-permissions/users/adding-custom-fields-to-users.md) and use that to define your new Segment.
+Some User Attributes, like Gender or Age, do not have a direct equivalent in Liferay 7.2+. User Attributes retrieved from external sources like Facebook also do not have a replacement. To replace these, you must [create a custom user field](../../../system-administration/configuring-liferay/adding-custom-fields.md) and use that to define your new Segment.
 
 ## Session Rules
 
@@ -33,22 +33,21 @@ If you need to re-implement a rule entirely, follow the information in [Creating
 
 With Audience Targeting, you could display personalized content using the User Segment Content Display or an Asset Publisher personalization. The method you use to personalize content with Audience Targeting determines the way to personalize this content in Liferay Segmentation.
 
-| Audience Targeting Method | Liferay Segmentation Method |
-| :--- | :--- |
-| User Segment Content Display | [Manual Content Sets or Collections](../../../site-building/displaying-content/collections-and-collection-pages/creating-collections.md#creating-a-manual-collection) |
-| Asset Publisher Personalization | [Dynamic Content Sets](../../../site-building/displaying-content/collections-and-collection-pages/creating-collections.md#creating-a-dynamic-collection) |
+| Audience Targeting Method       | Liferay Segmentation Method                                                                                                                                           |
+| :------------------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| User Segment Content Display    | [Manual Content Sets or Collections](../../../site-building/displaying-content/collections-and-collection-pages/creating-collections.md#creating-a-manual-collection) |
+| Asset Publisher Personalization | [Dynamic Content Sets](../../../site-building/displaying-content/collections-and-collection-pages/creating-collections.md#creating-a-dynamic-collection)              |
 
-```{note}
-For users on Liferay 7.2, Collections are referred to as [Content Sets](../../../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md#liferay-dxp-7-2).
-```
+!!! note
+    For users on Liferay 7.2, Collections are referred to as [Content Sets](../../../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md#liferay-dxp-7-2).
 
 Whether you use Content Sets or Collections, you can personalize the content using [Personalized Variations](../experience-personalization/personalizing-collections.md).
 
 In addition, the [Content Page personalization](../../../site-building/personalizing-site-experience/experience-personalization/content-page-personalization.md) feature may fulfill a use case that you were previously solving with one of the Audience Targeting methods.
 
-## Related Information
+## Related Topics
 
-- [Create a Custom User Field](../../../users-and-permissions/users/adding-custom-fields-to-users.md)
+- [Adding Custom Fields](../../../system-administration/configuring-liferay/adding-custom-fields.md)
 - [Segments Editor UI Reference](../segmentation/segments-editor-ui-reference.md)
 - [Creating Collections](../../../site-building/displaying-content/collections-and-collection-pages/creating-collections.md)
 - [Analytics Cloud Segments](https://learn.liferay.com/analytics-cloud/latest/en/people/segments/segments.html)

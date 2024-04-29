@@ -64,7 +64,11 @@ To build these designs, you’ll primarily use fragments. As previously explaine
 
 Some fragments are layout elements that define drop zones within pages and templates. These include Containers, which define a single `<div>`, and Grids, which can define any number of `<div>`s in rows and columns. Other fragments are components that add text, images, buttons, menus, forms, and more to your page. You can go to [Default Fragments Reference](https://learn.liferay.com/web/guest/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments/default-fragments-reference) for a complete list of Liferay's out-of-the-box fragments.
 
+![Access available pages elements in the Fragments and Widgets side panel.](./designing-claritys-master-pages/images/05.png)
+
 Once added to a page, you configure each fragment’s styling and behavior. For example, when you add a container to a page, you can determine the container’s display behavior (`block`, `flex`), spacing (`margin`, `padding`), dimensions (`width`, `height`), background, and more. You can go to [Configuring Fragments](https://learn.liferay.com/web/guest/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments) for a list of available configuration options.
+
+![Access configuration and styling options in the Configurations side panel.](./designing-claritys-master-pages/images/06.png)
 
 We’ll revisit these configurations later in this module. But for now, let’s use these page elements to wireframe the primary and secondary master page templates.
 
@@ -80,7 +84,7 @@ While logged in as Walter Douglas,
 
 1. For name, enter `Primary Master Page` and click *Save*.
 
-   <!--TASK: ![](./designing-claritys-master-pages/images/05.png) -->
+   ![Create the Primary Master Page.](./designing-claritys-master-pages/images/07.png)
 
 This creates a blank template and directs you to its edit page so you can begin designing it.
 
@@ -99,52 +103,42 @@ While editing the master page template,
    !!! tip
        When designing a page, it’s recommended to always put elements into their own containers. This can help provide more control over styling.
 
-   ![Add three separate containers to the template.](./designing-claritys-master-pages/images/06.png)
+   ![Add three separate containers to the template.](./designing-claritys-master-pages/images/08.png)
 
-1. Go to the *Browser* tab (![Browser Tab](../../images/icon-hierarchy.png)) in the side panel, double-click the name of each container and rename them Header, Body, and Footer.
+1. Go to the *Browser* tab (![Browser Tab](../../images/icon-hierarchy.png)) in the side panel, double-click the name of each container and rename them `Page Header`, `Page Body`, and `Page Footer`.
 
    !!! tip
        Naming fragments adds a custom `data-name` attribute to the `<div>` that you can use in your JavaScript and CSS. This can help bring clarity to complex page structures and provide more control over your site. <!--IMPROVE-->
 
-   ![Rename the containers Header, Body, and Footer.](./designing-claritys-master-pages/images/07.png)
+   ![Rename the containers Page Header, Page Body, and Page Footer.](./designing-claritys-master-pages/images/09.png)
 
-1. Drag and drop the Drop Zone element into the Body container.
+1. Drag and drop the *Drop Zone* element into the Page Body container.
 
-   ![Drag and drop the Drop Zone element into the Body container.](./designing-claritys-master-pages/images/08.png)
+1. Add two separate containers to the Page Header container and name them `Header Announcement Bar` and `Header Navigation Bar`.
 
-1. Add two separate containers to the Header container and name them Header Announcement Bar and Header Navigation Bar.
-
-   * **Header Announcement Bar**: This container is for displaying Clarity’s announcements. For now, leave this container blank; you’ll revisit it in Module 7.
+   * **Header Announcement Bar**: This container is for displaying Clarity’s announcements. For now, leave this container blank and toggle the fragment's visibility (![View Button](../../images/icon-preview.png)); you’ll revisit it in Module 7.
 
    * **Header Navigation Bar**: This container is for essential elements, including Clarity's logo, main navigation menu, search bar, and user menu.
 
-   ![Add two separate containers to the Header container and name them Header Announcement Bar and Header Navigation Bar.](./designing-claritys-master-pages/images/09.png)
-
-1. Select the *Header Announcement Bar* container and configure these settings:
-
-   | Tab     | Setting         | Value                                        |
-   |:--------|:----------------|:---------------------------------------------|
-   | General | Content Display | Flex Row                                     |
-   | General | Align Items     | Center                                       |
-   | General | Justify Content | Center                                       |
-   | General | Hide Fragment   | Yes                                          |
-
-   <!--REMOVE?
-   | Styles  | Padding         | 1rem (top and bottom), 40px/2.5rem (left and right) |
-   -->
-
-   <!--TASK ![]() -->
+   ![Add two separate containers to the Page Header container and name them Header Announcement Bar and Header Navigation Bar.](./designing-claritys-master-pages/images/10.png)
 
 1. Select the *Header Navigation Bar* container and configure these settings:
 
-   | Tab     | Setting         | Value                                            |
-   |:--------|:----------------|:-------------------------------------------------|
-   | General | Content Display | Block                                            |
-   | Styles  | Padding         | `1rem` (top and bottom), `5rem` (left and right) |
+   | Tab     | Setting         | Value                                                    |
+   |:--------|:----------------|:---------------------------------------------------------|
+   | General | Content Display | Block                                                    |
+   | Styles  | Padding         | Spacer 3 (top and bottom) <br> Spacer 6 (left and right) |
+
+   <!--
+   1rem = Spacer 3
+   5rem = Spacer 6/7?
+   -->
+
+   ![Adding padding to Header Navigation Bar.](./designing-claritys-master-pages/images/11.png)
 
 1. Add a grid element to the Header Navigation Bar container and widen the center module by dragging the dividers outward one space on each side.
 
-   <!--TASK: ![Add a grid to the Header Navigation Bar and widen the center module.]() -->
+   ![Add a grid to the Header Navigation Bar and widen the center module.](./designing-claritys-master-pages/images/12.gif)
 
 1. Select the grid and configure these settings:
 
@@ -159,6 +153,8 @@ While editing the master page template,
    * **Header Navigation**: This container is for the page navigation menu.
 
    * **Header User Actions**: This container is for the search bar and user login/menu.
+
+   ![Add a container to each grid area and name them Header Branding, Header Navigation, and Header User Actions.](./designing-claritys-master-pages/images/13.png)
 
 1. Select the *Header Branding* container and configure these settings:
 
@@ -194,7 +190,7 @@ While editing the master page template,
 
    Leave the Header User Actions container empty for now, since no out of the box fragments fit Clarity’s designs for the search bar or login button. You’ll create these fragments later.
 
-   <!--TASK: ![]() -->
+   ![Add these fragments to their respective containers.](./designing-claritys-master-pages/images/14.png)
 
 Great! You've started defining the structure for Clarity's master page template.
 
@@ -207,40 +203,52 @@ The size of the navigation bar and the contents of the menu don't match Clarity'
 
 While editing the primary master page,
 
-1. Add containers and grids to the Footer container to create this structure:
+1. Add containers and grids to the Page Footer container to create this structure:
 
-   * Footer
+   * Page Footer
       * Footer Branding
       * Footer Navigation
          * Grid
       * Footer Legal
 
-   <!--TASK: ![]() -->
+   ![Add containers and grids to the Page Footer container to create this structure.](./designing-claritys-master-pages/images/15.png)
 
 1. Select these layout elements and configure these settings:
 
-   **Footer**
+   **Page Footer**
 
-   | Tab     | Setting         | Value                   |
-   |:--------|:----------------|:------------------------|
-   | General | Content Display | Block                   |
-   | Styles  | Padding         | `5rem` (left and right) |
+   | Tab     | Setting         | Value                     |
+   |:--------|:----------------|:--------------------------|
+   | General | Content Display | Block                     |
+   | Styles  | Padding         | Spacer 6 (left and right) |
+
+   <!--
+   5rem = Spacer 6/7?
+   -->
 
    **Footer Branding**
 
-   | Tab     | Setting         | Value                   |
-   |:--------|:----------------|:------------------------|
-   | General | Content Display | Flex Row                |
-   | General | Align Items     | Center                  |
-   | General | Justify Content | Center                  |
-   | Styles  | Padding         | `3rem` (top and bottom) |
+   | Tab     | Setting         | Value                     |
+   |:--------|:----------------|:--------------------------|
+   | General | Content Display | Flex Row                  |
+   | General | Align Items     | Center                    |
+   | General | Justify Content | Center                    |
+   | Styles  | Padding         | Spacer 5 (top and bottom) |
+
+   <!--
+   3rem = Spacer 5
+   -->
 
    **Footer Navigation**
 
-   | Tab     | Setting         | Value           |
-   |:--------|:----------------|:----------------|
-   | General | Content Display | Block           |
-   | Styles  | Padding         | `2rem` (bottom) |
+   | Tab     | Setting         | Value             |
+   |:--------|:----------------|:------------------|
+   | General | Content Display | Block             |
+   | Styles  | Padding         | Spacer 4 (bottom) |
+
+   <!--
+   2rem = Spacer 4?
+   -->
 
    **Grid**
 
@@ -258,44 +266,72 @@ While editing the primary master page,
 
    **Products Navigation**
 
-   | Tab     | Setting         | Value                                              |
-   |:--------|:----------------|:---------------------------------------------------|
-   | General | Content Display | Block                                              |
-   | Styles  | Padding         | `1.5rem` (top and bottom), `2rem` (left and right) |
-   | Styles  | Margin          | `1.25rem` (right)                                  |
+   | Tab     | Setting         | Value                                                    |
+   |:--------|:----------------|:---------------------------------------------------------|
+   | General | Content Display | Block                                                    |
+   | Styles  | Padding         | Spacer 3 (top and bottom) <br> Spacer 4 (left and right) |
+   | Styles  | Margin          | Spacer 2 (right)                                         |
+
+   <!--
+   2rem = Spacer 4?
+   1.5rem = Spacer 3?
+   1.25rem = Spacer 2?
+   -->
 
    **About Us Navigation**
 
-   | Tab     | Setting         | Value                                              |
-   |:--------|:----------------|:---------------------------------------------------|
-   | General | Content Display | Block                                              |
-   | Styles  | Padding         | `1.5rem` (top and bottom), `2rem` (left and right) |
-   | Styles  | Margin          | `1.25rem` (left and right)                         |
+   | Tab     | Setting         | Value                                                    |
+   |:--------|:----------------|:---------------------------------------------------------|
+   | General | Content Display | Block                                                    |
+   | Styles  | Padding         | Spacer 3 (top and bottom) <br> Spacer 4 (left and right) |
+   | Styles  | Margin          | Spacer 2 (left and right)                                |
+
+   <!--
+   2rem = Spacer 4?
+   1.5rem = Spacer 3?
+   1.25rem = Spacer 2?
+   -->
 
    **Resources Navigation**
 
-   | Tab     | Setting         | Value                                              |
-   |:--------|:----------------|:---------------------------------------------------|
-   | General | Content Display | Block                                              |
-   | Styles  | Padding         | `1.5rem` (top and bottom), `2rem` (left and right) |
-   | Styles  | Margin          | `1.25rem` (left and right)                         |
+   | Tab     | Setting         | Value                                                    |
+   |:--------|:----------------|:---------------------------------------------------------|
+   | General | Content Display | Block                                                    |
+   | Styles  | Padding         | Spacer 3 (top and bottom) <br> Spacer 4 (left and right) |
+   | Styles  | Margin          | Spacer 2 (left and right)                                |
+
+   <!--
+   2rem = Spacer 4?
+   1.5rem = Spacer 3?
+   1.25rem = Spacer 2?
+   -->
 
    **Get In Touch Navigation**
 
-   | Tab     | Setting         | Value                                              |
-   |:--------|:----------------|:---------------------------------------------------|
-   | General | Content Display | Block                                              |
-   | Styles  | Padding         | `1.5rem` (top and bottom), `2rem` (left and right) |
-   | Styles  | Margin          | `1.25rem` (left)                                   |
+   | Tab     | Setting         | Value                                                    |
+   |:--------|:----------------|:---------------------------------------------------------|
+   | General | Content Display | Block                                                    |
+   | Styles  | Padding         | Spacer 3 (top and bottom) <br> Spacer 4 (left and right) |
+   | Styles  | Margin          | Spacer 2 (left)                                          |
+
+   <!--
+   2rem = Spacer 4?
+   1.5rem = Spacer 3?
+   1.25rem = Spacer 2?
+   -->
 
 1. Select the Footer Legal container and configure these settings:
 
-   | Tab     | Setting         | Value                   |
-   |:--------|:----------------|:------------------------|
-   | General | Content Display | Flex Row                |
-   | General | Align Items     | Center                  |
-   | General | Justify Content | Center                  |
-   | Styles  | Padding         | `2rem` (top and bottom) |
+   | Tab     | Setting         | Value                     |
+   |:--------|:----------------|:--------------------------|
+   | General | Content Display | Flex Row                  |
+   | General | Align Items     | Center                    |
+   | General | Justify Content | Center                    |
+   | Styles  | Padding         | Spacer 4 (top and bottom) |
+
+   <!--
+   2rem = Spacer 4?
+   -->
 
    <!--TASK: ![]() -->
 
@@ -308,6 +344,7 @@ While editing the primary master page,
    | About Us Navigation     | Heading, Menu Display |
    | Resources Navigation    | Heading, Menu Display |
    | Get In Touch Navigation | Heading, Menu Display |
+
    <!--TASK: | Footer Legal | ??? | -->
 
 1. Double click the headings to update their text to Products, About Us, Resources, and Get In Touch.
@@ -395,6 +432,6 @@ Once finished, each page should be linked to the correct master page template. N
 
 ## Conclusion
 
-Congratulations! You’ve successfully wireframed Clarity’s headers and footers. Next, you’ll create custom navigation menus and use them for these master page templates so they only include the desired pages.
+Congratulations! You’ve started wireframing Clarity’s headers and footers. Next, you’ll create custom navigation menus and use them for these master page templates so they only include the desired pages.
 
 Next Up: [Creating Navigation Menus for Clarity’s Master Pages](./creating-navigation-menus-for-claritys-master-pages.md)

@@ -17,7 +17,6 @@ uuid: c7d1b6cf-3532-4e80-9215-5c16a16ea495
 
 - [Search Administration Panel Overview](./search-administration-and-tuning/search-administration.md)
 - [Reindexing Modes](./search-administration-and-tuning/reindexing-modes.md)
-- Understanding Localized Search (Coming Soon)
 
 ## Search Tuning
 
@@ -28,7 +27,7 @@ uuid: c7d1b6cf-3532-4e80-9215-5c16a16ea495
 ## Troubleshooting Search
 
 - [Search Insights](search-pages-and-widgets/search-insights.md)
-- Adjusting Elasticsearch Logging (Coming soon)
+- [Troubleshooting Elasticsearch Installation](installing-and-upgrading-a-search-engine/elasticsearch/troubleshooting-elasticsearch-installation.md)
 
 ## Reference
 

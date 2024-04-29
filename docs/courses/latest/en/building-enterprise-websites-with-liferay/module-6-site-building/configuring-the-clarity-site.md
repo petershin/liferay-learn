@@ -111,6 +111,6 @@ Together, these configurations help Clarity’s enterprise website fulfill its i
 
 ## Conclusion
 
-Congratulations! You’ve created and configured the Clarity site to ensure it is public and accessible to Clarity’s global audience. Next you’ll explore the topic of Site Membership in greater depth.
+Congratulations! You’ve created and configured the Clarity site to ensure it is public and accessible to Clarity’s global audience. Next you’ll add pages to Clarity’s site.
 
-Next Up: [Managing Clarity's Site Members](./managing-claritys-site-members.md)
+Next Up: [Managing Clarity's Site Members](./adding-pages-to-claritys-site.md)

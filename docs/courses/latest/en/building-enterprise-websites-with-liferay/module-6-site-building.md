@@ -3,7 +3,6 @@ toc:
 - ./module-6-site-building/claritys-site-building-requirements.md
 - ./module-6-site-building/setting-up-claritys-site.md
 - ./module-6-site-building/configuring-the-clarity-site.md
-- ./module-6-site-building/managing-claritys-site-members.md
 - ./module-6-site-building/adding-pages-to-claritys-site.md
 - ./module-6-site-building/understanding-page-design.md
 - ./module-6-site-building/designing-claritys-master-pages.md

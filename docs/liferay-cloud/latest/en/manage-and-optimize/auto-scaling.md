@@ -16,6 +16,8 @@ Using this feature, a service can automatically increase (upscale) the number of
   "scale": 2,
 ```
 
+Make sure to regularly monitor your application's resource usage (CPU and memory) for applications that require auto-scaling. More insight into your resource requirements helps you more effectively fine-tune your [JVM memory settings](#jvm-memory-configuration) and [auto-scaling behavior](#specifying-target-average-utilization).
+
 ## How Auto-Scaling is Charged
 
 Auto-scaling is only available for the Liferay DXP service in production environments. Once auto-scaling is enabled, each extra instance of the service incurs an hourly charge. This charge is independent of the normal Liferay PaaS subscription process.
@@ -34,7 +36,9 @@ Set the `liferay` service's `LIFERAY_JVM_OPTS` environment variable to allocate 
 -Xms4096m -Xmx12288m
 ```
 
-The recommended configuration is to set the `-Xms` flag using 25% of the available memory, and to set the `-Xmx` flag using 75% of the available memory. See this table for reference on recommended values, for different levels of memory available to your `liferay` service:
+The recommended configuration is to set the `-Xms` flag using 25% of the available memory, and to set the `-Xmx` flag using 75% of the available memory. *Make sure to set your `-Xmx` value lower than the service's total available memory* to avoid errors when other processes in the container require more memory.
+
+Here are some recommended configurations for different levels of memory available to your `liferay` service:
 
 | **Available Memory** | **Recommended LIFERAY_JAVA_OPTS** |
 | :--- | :--- |
@@ -90,6 +94,15 @@ Specify the target average utilization in the `autoscale` property of the servic
 "autoscale": {
     "cpu": 80,
     "memory": 90
+}
+```
+
+Balance your target average utilization according to your application's specific needs for the most efficient auto-scaling. For example, this configuration heavily prioritizes CPU usage:
+
+```json
+"autoscale": {
+    "cpu": 60,
+    "memory": 95
 }
 ```
 

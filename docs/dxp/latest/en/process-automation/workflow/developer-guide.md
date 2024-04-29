@@ -31,7 +31,3 @@ uuid: 030c10fc-290f-4821-970a-275b6b0aeff3
 - [Creating a Condition Evaluator](./developer-guide/creating-a-condition-evaluator.md)
 - [Creating an Action Executor](./developer-guide/creating-an-action-executor.md)
 - [Working with Workflow Context](./developer-guide/working-with-workflow-context.md)
-
-## APIs
-
-Coming soon!

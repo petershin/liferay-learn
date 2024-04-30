@@ -114,16 +114,16 @@ Follow these steps (as an administrator) to download a backup from the *Backups*
 
 1. Click *Actions* ( ⋮ ) for the backup you want to download.
 
-1. Click on *Download*.
+1. Click *Download*.
 
    ![Click on the Actions button, and then click Download.](./downloading-and-uploading-backups/images/01.png)
 
 1. Click the *Database* (`.gz`) or *Liferay* (`.tgz`) file to start downloading. Together, these zip archives comprise the environment backup.
 
     !!! note
-        If your Backup service is not yet updated to version `4.2` or above, then the Database volume is downloaded as a `.tgz` archive instead of `.gz`.
+        If your backup service is not yet updated to version `4.2` or above, the database volume is downloaded as a `.tgz` archive instead of `.gz`.
 
-    ![Click to download the database and Liferay data volume files.](./downloading-and-uploading-backups/images/02.png)
+   ![Click to download the database and Liferay data volume files.](./downloading-and-uploading-backups/images/02.png)
 
 ## Uploading Backups via the Console
 
@@ -138,7 +138,7 @@ Follow these steps from the Backups page:
 
 1. On the Upload Backup page, expand the appropriate environment, and then click the `+` icons for both the database and document library to upload them.
 
-    ![Click the icons to upload both the database and document library as .gz archives.](./downloading-and-uploading-backups/images/03.png)
+   ![Click the icons to upload both the database and document library as .gz archives.](./downloading-and-uploading-backups/images/03.png)
 
 1. When both the database dump and document library are uploaded, click *Initiate Upload*.
 
@@ -150,7 +150,7 @@ A success message appears on the page when the backup is generated, and the serv
 
 ## Backup Service APIs
 
-The backup service has APIs that you can also use to download and upload backups. You can invoke these APIs using a command line tool such as `curl`. Only use the Backup APIs if uploading with the CLI isn't available in your version of the backup service or if it gives you the following error:
+The backup service has APIs that you can also use to download and upload backups. You can invoke these APIs using a command line tool such as `curl`. Only use the backup APIs if uploading with the CLI isn't available in your version of the backup service or if it gives you the following error:
 
 ```
 Project [projectId] does not have GCS enabled for Document Library Store.
@@ -211,7 +211,7 @@ curl -X GET \
 ```
 
 !!! note
-    If your Backup service is not yet updated to version `4.2` or above, then the Database volume is downloaded as a `.tgz` archive instead of `.gz`.
+    If your backup service is not yet updated to version `4.2` or above, the database volume is downloaded as a `.tgz` archive instead of `.gz`.
 
 ### Download Data Volume API
 

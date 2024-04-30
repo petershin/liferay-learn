@@ -15,8 +15,8 @@ The Script Console provides a single view for executing Groovy scripts and print
 - [Predefined variables available in the Script Console](#predefined-variables)
 - [Tips for running scripts in the Script Console](#tips)
 
-    !!! important
-        The Script Console is for system operations and maintenance---it's not for end users. Limit Script Console access to portal administrators.
+!!! important
+    The Script Console is for system operations and maintenance---it's not for end users. Limit Script Console access to portal administrators.
 
 Start with running the Script Console's sample script.
 
@@ -42,8 +42,8 @@ Here's how to run the sample script in the Script Console:
 
 The Groovy sample invokes the Liferay service utility [`UserLocalServiceUtil`](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/service/UserLocalServiceUtil.html) to get the user count. Then it uses `out` (a built-in `PrintWriter`) to write the count to the Script Console.
 
-    !!! note
-        If you use *System.out.println* instead of *out.println*, your output is printed to Liferay's log file rather than to the Script Console.
+!!! note
+    If you use *System.out.println* instead of *out.println*, your output is printed to Liferay's log file rather than to the Script Console.
 
 ## Predefined Script Console Variables
 

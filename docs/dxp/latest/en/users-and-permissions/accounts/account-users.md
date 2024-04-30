@@ -159,4 +159,4 @@ A new window opens with you logged in as the selected account user.
 
 * [Accounts](../accounts.md)
 * [Account Roles](./account-roles.md)
-* [Understanding Users](../users/understanding-users.md)
+* [Users](../users.md)

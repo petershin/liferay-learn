@@ -48,11 +48,11 @@ User access is controlled by roles and permissions. Permissions define what a us
 
 Liferay has several tools to help you organize and administer users.
 
-[Organizations](../organizations/understanding-organizations.md) can group users in a distributed hierarchy. Practically, this means that large organizations can empower and delegate users to administer their organizations.
+[Organizations](./organizations/understanding-organizations.md) can group users in a distributed hierarchy. Practically, this means that large organizations can empower and delegate users to administer their organizations.
 
-![Create Organizations to organize users.](./understanding-users/images/02.png)
+![Create Organizations to organize users.](users/images/02.png)
 
-[User groups](../user-groups/creating-and-managing-user-groups.md) are another way to group users to simplify administration and assigning roles. User groups are simple lists of users that can have roles assigned to them.
+[User groups](./user-groups/creating-and-managing-user-groups.md) are another way to group users to simplify administration and assigning roles. User groups are simple lists of users that can have roles assigned to them.
 
 ## Related Topics
 

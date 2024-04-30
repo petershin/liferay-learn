@@ -135,6 +135,5 @@ See [Password Policies](../roles-and-permissions/configuring-a-password-policy.m
 
 ## Related Topics
 
-- [Understanding Users](./understanding-users.md)
 - [Authentication Basics](../../installation-and-upgrades/securing-liferay/authentication-basics.md)
 - [Connecting to an LDAP Directory](../connecting-to-a-user-directory/connecting-to-an-ldap-directory.md)

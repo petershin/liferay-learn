@@ -16,7 +16,7 @@ taxonomy-category-names:
 ---
 # Architecture
 
-The Liferay DXP/Portal architecture has three parts: 
+The Liferay DXP/Portal architecture has three parts:
 
 1. **Core:** Bootstraps DXP and its [frameworks](../liferay-development/core-frameworks.md). The Core provides a runtime environment for managing services, UI components, and customizations.
 
@@ -30,11 +30,11 @@ You can use the UI and services together or focus solely on using services via [
 
 The architecture satisfies these requirements:
 
-* Supports using common development technologies
-* Leverages development standards
-* Facilitates swapping components
-* Starts fast and performs well
-* Its runtime is easy to configure and inspect
+- Supports using common development technologies
+- Leverages development standards
+- Facilitates swapping components
+- Starts fast and performs well
+- Its runtime is easy to configure and inspect
 
 The Core supports UI and service deployments and orchestrates wiring them together.
 
@@ -44,37 +44,37 @@ DXP is a web application that runs on your application server. The Core bootstra
 
 There are frameworks for these things and more:
 
-* Adaptive Media
-* Application Configuration
-* Application Security
-* Assets
-* Cache
-* Data Scopes
-* Dependency Injection
-* Expando/Custom Attributes
-* File Management
-* Localization
-* Logging
-* Message Bus
-* Scheduler
-* Search
-* Segmentation and Personalization
-* Service Builder
-* Testing
-* Upgrade Processes
-* Virus Protection
-* Workflow
+- Adaptive Media
+- Application Configuration
+- Application Security
+- Assets
+- Cache
+- Data Scopes
+- Dependency Injection
+- Expando/Custom Attributes
+- File Management
+- Localization
+- Logging
+- Message Bus
+- Scheduler
+- Search
+- Segmentation and Personalization
+- Service Builder
+- Testing
+- Upgrade Processes
+- Virus Protection
+- Workflow
 
 The Core provides the component runtime environment for the frameworks, services, and UI. Here are some component examples:
 
-* [Services](./fundamentals/apis-as-osgi-services.md)
-* [Service customizations](./extending-liferay/overriding-osgi-services.md)
-* [Language Keys \(localized messages\)](../liferay-development/building-applications/developing-a-java-web-application/using-mvc/sharing-localized-messages.md)
-* [JavaScript applications \(templates, routers, and resources\)](../liferay-development/building-applications/developing-a-javascript-application/using-react.md)
-* [JSP customizations](./extending-liferay/customizing-jsps.md)
-* [Portlets \(templates, controllers, and resources\)](../liferay-development/building-applications/developing-a-java-web-application/reference/portlets.md)
-* [Portlet filters](./extending-liferay/auditing-portlet-activity-with-a-portlet-filter.md)
-* [Themes](../liferay-development/customizing-liferays-look-and-feel/themes.md)
+- [Services](./fundamentals/apis-as-osgi-services.md)
+- [Service customizations](./extending-liferay/overriding-osgi-services.md)
+- [Language Keys \(localized messages\)](../liferay-development/building-applications/developing-a-java-web-application/using-mvc/sharing-localized-messages.md)
+- [JavaScript applications \(templates, routers, and resources\)](../liferay-development/building-applications/developing-a-javascript-application/using-react.md)
+- [JSP customizations](./extending-liferay/customizing-jsps.md)
+- [Portlets \(templates, controllers, and resources\)](../liferay-development/building-applications/developing-a-java-web-application/reference/portlets.md)
+- [Portlet filters](./extending-liferay/auditing-portlet-activity-with-a-portlet-filter.md)
+- [Themes](../liferay-development/customizing-liferays-look-and-feel/themes.md)
 
 The following figure shows these component types in the runtime environment.
 
@@ -92,7 +92,7 @@ The service components provide business functionality.
 
 ## Services
 
-Business logic is implemented in services deployed to the component runtime environment. Built-in Core services and framework services operate on models such as [Users](../users-and-permissions/users/understanding-users.md), [Roles](../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md), [Web Content](../content-authoring-and-management/web-content/web-content-articles/adding-a-basic-web-content-article.md), [Documents and Media](../content-authoring-and-management/documents-and-media.md), and more. You can introduce new models and functionality through custom services. Service components can access each other via dependency injection.
+Business logic is implemented in services deployed to the component runtime environment. Built-in Core services and framework services operate on models such as [Users](../users-and-permissions/users.md), [Roles](../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md), [Web Content](../content-authoring-and-management/web-content/web-content-articles/adding-a-basic-web-content-article.md), [Documents and Media](../content-authoring-and-management/documents-and-media.md), and more. You can introduce new models and functionality through custom services. Service components can access each other via dependency injection.
 
 Frontend applications invoke the services to do work. You can deploy Java-based applications that call services directly using the Java APIs. Any web-based (Java and non-Java) application, whether deployed on DXP or not, can use the web APIs, including [REST APIs](../headless-delivery/consuming-apis/consuming-rest-services.md) that conform to the [OpenAPI](https://swagger.io/docs/specification/about/) standard, [GraphQL APIs](../headless-delivery/consuming-apis/consuming-graphql-apis.md), and plain web/REST services. The following figure shows applications and external clients invoking Liferay services.
 
@@ -106,11 +106,11 @@ The web-based UI makes content and service functionality available in browsers.
 
 The UI helps people do work, [collaborate](../collaboration-and-social/collaboration-and-social-overview.md), and enjoy content. Here's what the UI consists of:
 
-* [DXP application](../site-building/getting-started-with-site-building.md): The web application for managing Portals, Sites, Users, Pages, Widgets, and more. 
+- [DXP application](../site-building/getting-started-with-site-building.md): The web application for managing Portals, Sites, Users, Pages, Widgets, and more. 
 
-* [Applications](../liferay-development/building-applications/developing-a-java-web-application.md): Widgets that provide a user interface for services already deployed. 
+- [Applications](../liferay-development/building-applications/developing-a-java-web-application.md): Widgets that provide a user interface for services already deployed.
 
-* [Themes](../liferay-development/customizing-liferays-look-and-feel/themes.md): Plugins for styling Sites with a unique look and feel.
+- [Themes](../liferay-development/customizing-liferays-look-and-feel/themes.md): Plugins for styling Sites with a unique look and feel.
 
 The [UI architecture](./architecture/ui-architecture.md) articles dig deeper into developing and customizing UI components.
 

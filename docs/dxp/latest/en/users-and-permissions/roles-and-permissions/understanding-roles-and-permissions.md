@@ -9,19 +9,18 @@ taxonomy-category-names:
 ---
 # Understanding Roles and Permissions
 
-To get things done in Liferay DXP, [Users](./../users/understanding-users.md) must have the proper permissions. Roles join Users with permissions. Most administrative work for Roles and permissions is done in *Control Panel* &rarr; *Users* &rarr; *Roles*.
+To get things done in Liferay DXP, [Users](../users.md) must have the proper permissions. Roles join Users with permissions. Most administrative work for Roles and permissions is done in *Control Panel* &rarr; *Users* &rarr; *Roles*.
 
 ![Manage Roles from the Control Panel.](./understanding-roles-and-permissions/images/03.png)
 
 To skip straight to creating Roles and assigning Users, see
 
-* [Role Creation and Management](./creating-and-managing-roles.md)
-* [Defining Role Permissions](./defining-role-permissions.md)
-* [Assigning Users to Roles](./assigning-users-to-roles.md)
+- [Role Creation and Management](./creating-and-managing-roles.md)
+- [Defining Role Permissions](./defining-role-permissions.md)
+- [Assigning Users to Roles](./assigning-users-to-roles.md)
 
-```{note}
-[Site Teams](./../../site-building/sites/site-membership/creating-teams-for-sites.md) have a dedicated permissions management User Interface.
-```
+!!! note
+    [Site Teams](./../../site-building/sites/site-membership/creating-teams-for-sites.md) have a dedicated permissions management User Interface.
 
 ## Roles and Scope
 
@@ -42,16 +41,16 @@ The conceptual diagram below shows how the User inherits the necessary permissio
 
 Roles have scope, so they apply at different levels.
 
-| Permission Scope | Role Type | Where is it assigned to Users? | Available Assignments |
-| :--- | :--- | :--- | :--- |
-| Throughout the Virtual Instance (global) | Regular   | Control Panel &rarr; Users &rarr; Roles (Click on the Role) &rarr; Assignees | User Groups <br />Organizations <br />Sites <br />Segments <br />Individual Users |
-| A single Organization | Organization | Control Panel &rarr; Users &rarr; Users and Organizations &rarr; Organizations (Organization actions menu) | Individual Users |
-| A single Site    | Site   | Site Administration &rarr; People &rarr; Memberships | User Groups <br />Organizations <br />Segments <br />Individual Site Members |
-| A single Asset Library | Asset Library | Site/Library Administration of Asset Library &rarr; People &rarr; Memberships | Organizations <br />User Groups <br /> Individual Users |
+| Permission Scope                         | Role Type     | Where is it assigned to Users?                                                                             | Available Assignments                                                             |
+| :--------------------------------------- | :------------ | :--------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------- |
+| Throughout the Virtual Instance (global) | Regular       | Control Panel &rarr; Users &rarr; Roles (Click on the Role) &rarr; Assignees                               | User Groups <br />Organizations <br />Sites <br />Segments <br />Individual Users |
+| A single Organization                    | Organization  | Control Panel &rarr; Users &rarr; Users and Organizations &rarr; Organizations (Organization actions menu) | Individual Users                                                                  |
+| A single Site                            | Site          | Site Administration &rarr; People &rarr; Memberships                                                       | User Groups <br />Organizations <br />Segments <br />Individual Site Members      |
+| A single Asset Library                   | Asset Library | Site/Library Administration of Asset Library &rarr; People &rarr; Memberships                              | Organizations <br />User Groups <br /> Individual Users                           |
 
 <!-- ripped out row from above table as per LRODCS-8188: | A single Account | Account   | Control Panel &rarr; Accounts &rarr; Accounts (Select Account) &rarr; Roles | Individual Account Members -->
 
-Individual [Users](./../users/understanding-users.md) can be manually assigned to Roles. This method is less efficient than using collections of Users. Users can also be [automatically](../../system-administration/configuring-liferay/virtual-instances.md) assigned to Roles of all scopes through a Virtual Instance Setting called Default User Associations.
+Individual [Users](./../users.md) can be manually assigned to Roles. This method is less efficient than using collections of Users. Users can also be [automatically](../../system-administration/configuring-liferay/virtual-instances.md) assigned to Roles of all scopes through a Virtual Instance Setting called Default User Associations.
 
 ### Regular Roles
 
@@ -59,10 +58,10 @@ Instance scoped Roles are called Regular Roles. These Roles grant permissions gl
 
 Several User collections can be assigned to Regular Roles:
 
-* [Organizations](./../organizations/understanding-organizations.md) hold Users of a shared hierarchical level.
-* [User Groups](./../user-groups/creating-and-managing-user-groups.md) hold Users that only share the need to perform the same function.
-* [Sites](./../../site-building/sites/site-membership/adding-members-to-sites.md) hold Users (as Site Members) that might need to perform a certain action.
-* [Segments](./../../site-building/personalizing-site-experience/segmentation/creating-and-managing-user-segments.md) hold Users of a Site that match certain conditions.
+- [Organizations](./../organizations/understanding-organizations.md) hold Users of a shared hierarchical level.
+- [User Groups](./../user-groups/creating-and-managing-user-groups.md) hold Users that only share the need to perform the same function.
+- [Sites](./../../site-building/sites/site-membership/adding-members-to-sites.md) hold Users (as Site Members) that might need to perform a certain action.
+- [Segments](./../../site-building/personalizing-site-experience/segmentation/creating-and-managing-user-segments.md) hold Users of a Site that match certain conditions.
 
 ### Organization Roles
 
@@ -86,6 +85,6 @@ Asset-level permissions (for instance, permission to edit an individual blog pos
 
 ## Related Topics
 
-* [Role Creation and Management](./creating-and-managing-roles.md)
-* [Defining Role Permissions](./defining-role-permissions.md)
-* [Assigning Users to Roles](./assigning-users-to-roles.md)
+- [Role Creation and Management](./creating-and-managing-roles.md)
+- [Defining Role Permissions](./defining-role-permissions.md)
+- [Assigning Users to Roles](./assigning-users-to-roles.md)

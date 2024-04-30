@@ -72,7 +72,7 @@ Configure your instance's locale and time zone. See [Initial Instance Localizati
 
 ## Configure Users
 
-After you [understand Users](../users-and-permissions/users/understanding-users.md), configure them for your instance.
+After you [understand Users](../users-and-permissions/users.md), configure them for your instance.
 
 - Enable/disable User fields
 - Add any necessary [custom User fields](../system-administration/configuring-liferay/adding-custom-fields.md)

@@ -1,6 +1,7 @@
 ---
 toc:
 - ./module-5-users-and-permissions/claritys-users-and-persmissions-requirements.md
+- ./module-5-users-and-permissions/users-and-permissions-setup.md
 - ./module-5-users-and-permissions/managing-and-organizing-clarity-users.md
 - ./module-5-users-and-permissions/modeling-b2b-relationships-with-liferay-accounts.md
 uuid: 36dd306c-d71e-4606-95c2-da8acea64686
@@ -20,6 +21,7 @@ Access based on roles and permissions goes beyond just viewing content. Roles an
 In this module, you will learn:
 
 * The specific users and permissions requirements Clarity has
+* How to do some initial set up for Clarity's team members
 * How to use Liferay’s user management tools and manage permissions
 * How to model B2B relationships with Liferay accounts
 
@@ -32,6 +34,12 @@ Up First: [Clarity's Users and Permissions Requirements](./module-5-users-and-pe
 :link: ./module-5-users-and-permissions/claritys-users-and-permissions-requirements.md
 
 Read about the specific users and permissions requirements Clarity has.
+:::
+
+:::{grid-item-card}  Users and Permissions Setup
+:link: ./module-5-users-and-permissions/users-and-permissions-setup.md
+
+See how to do some initial set up for Clarity's team members.
 :::
 
 :::{grid-item-card}  Managing and Organizing Clarity Users

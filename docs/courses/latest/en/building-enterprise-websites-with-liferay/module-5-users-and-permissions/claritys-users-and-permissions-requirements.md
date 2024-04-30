@@ -17,6 +17,6 @@ With Liferay's permissioning tools, you can create precise roles with specific p
 
 In Liferay, permissions are not only assignable to roles but also to user groups. If users in a specific group should have the same access and permissions on the platform, it makes sense for them to be grouped together with one set of permissions. Furthermore, user groups can be assigned automatically from user directories, as we saw in the previous module. This saves time and energy because new users who authenticate to Liferay won't need roles or permissions assigned to them, but will automatically receive the appropriate permissions of their user group.
 
-Now let's move on to how the different user management tools can be used in Clarity's use case.
+Now let's move on to some initial set up we need for Clarity's team members.
 
-Next Up: [Managing and Organizing Clarity Users](./managing-and-organizing-clarity-users.md)
+Next Up: [Users and Permissions Setup](./users-and-permissions-setup.md)

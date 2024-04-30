@@ -1,4 +1,5 @@
 ---
+taxonomy-category-names:
 - Platform
 - Workflow
 - Liferay Self-Hosted

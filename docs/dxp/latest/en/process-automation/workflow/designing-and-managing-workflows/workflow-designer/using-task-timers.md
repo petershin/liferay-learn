@@ -9,7 +9,7 @@ uuid: 52c9479a-c8a0-4d82-b0d4-07edb4a8492a
 ---
 # Using Task Timers
 
-Task nodes can include [task timers](../../developer-guide/workflow-task-node-reference.md#task-timers) to trigger an action after a specified time period. Timers are useful for ensuring a task does not go unattended for a long time. Available timer actions include sending an additional notification, reassigning the asset, or creating a timer action.
+Task nodes can include [task timers](../../developer-guide/workflow-task-node-reference.md#task-timers) to trigger an action after a specified time period. Timers are useful for ensuring a task does not go unattended for too long. Available timer actions include sending an additional notification, reassigning the asset, or creating a timer action.
 
 ![Use task timers to execute actions when a task fails to progress.](./using-task-timers/images/01.png)
 
@@ -24,7 +24,6 @@ You can modify the out-of-the-box Single Approver workflow definition to use a t
    * **Duration:** 3 days
    * **Recurrence:** Enabled
    * **Duration:** 24 hours
-   * **Name:** _Review Timer_
    * **Type:** Notification
    * **Name** Review Reminder
    * **Template Language:** FreeMarker
@@ -36,7 +35,7 @@ You can modify the out-of-the-box Single Approver workflow definition to use a t
 
 1. Click _Update_.
 
-Now, after three days in the review task, task assignees are reminded that they have a review to complete. The notification repeats daily at that point.
+Now, after three days in the review task, task assignees are reminded that they have a review to complete. The reminder notification repeats daily.
 
 ## Related Topics
 

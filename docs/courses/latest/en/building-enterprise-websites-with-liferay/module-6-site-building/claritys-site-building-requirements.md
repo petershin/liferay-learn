@@ -60,4 +60,4 @@ Clarity can integrate analytics tools to provide insights into website traffic, 
 
 Now that we've explored Clarity's site building requirements, we can use them to focus and guide our contributions to the Clarity website. In the next lesson, we’ll set up the version of the site we’ll use throughout the following exercises.
 
-Next Up: [Setting Up Clarity’s Site](.setting-up-claritys-site.md)
+Next Up: [Setting Up Clarity’s Site](./setting-up-claritys-site.md)

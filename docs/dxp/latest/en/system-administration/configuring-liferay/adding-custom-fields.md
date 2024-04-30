@@ -34,7 +34,27 @@ There are many reasons for using custom fields. Here's one example.
 
 **Max Role Use Case**: Suppose you want to limit the number of users that can be assigned to a particular role on your site. To accomplish this, you could create a *max-users* custom field for the role. Then, create logic to keep track and prevent more users from being added once the set limit was reached.
 
-## Adding Custom Fields
+## Field Types
+
+There are several different field types you can choose.
+
+![There are different field types you can choose from.](adding-custom-fields/images/01.png)
+
+- **Text and Numbers**
+    - **Text Area**: This field type can collect longer lines of text.
+    - **Input Field**: This field type can collect a string of text, a decimal number, or an integer.
+
+- **Selection**
+    - **Dropdown**: This field type can provide a drop-down list of items to select. The list can be text, decimal numbers, or integers.
+    - **Checkbox**: This field type shows a checkbox.
+    - **Radio**: This field type shows a selection of two or more radio buttons.
+
+- **Others**
+    - **Geolocation**: This field type collects geolocation information.
+    - **Date**: This field type collects date and time information.
+    - **True/False**: This field type shows a true or false choice.
+
+## Adding a Custom Field
 
 Follow these steps to see how a custom field can be created for the example use case above:
 
@@ -42,27 +62,9 @@ Follow these steps to see how a custom field can be created for the example use 
 
 1. Scroll down and click on the link for *Role*.
 
-    ![You can choose an asset or resource to add a custom field to](adding-custom-fields/images/01.png)
+    ![You can choose an asset or resource to add a custom field to](adding-custom-fields/images/02.png)
 
 1. Click the *Add* icon (![Click on the add icon to add a custom field.](../../images/icon-add.png)) to add a custom field.
-
-1. There are several different field types you can choose.
-
-    ![There are different field types you can choose from.](adding-custom-fields/images/02.png)
-
-    - **Text and Numbers**
-        - **Text Area**: This field type can collect longer lines of text.
-        - **Input Field**: This field type can collect a string of text, a decimal number, or an integer.
-
-    - **Selection**
-        - **Dropdown**: This field type can provide a drop-down list of items to select. The list can be text, decimal numbers, or integers.
-        - **Checkbox**: This field type shows a checkbox.
-        - **Radio**: This field type shows a selection of two or more radio buttons.
-
-    - **Others**
-        - **Geolocation**: This field type collects geolocation information.
-        - **Date**: This field type collects date and time information.
-        - **True/False**: This field type shows a true or false choice.
 
 1. For the above use case, select *Input Field* as the field type. Input a *Field Name* and select Integer as the Data Type.
 

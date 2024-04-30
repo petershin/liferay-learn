@@ -94,6 +94,3 @@ Liferayのアセットとリソースの多くは、カスタムフィールド�
 **削除：** カスタムフィールドを削除できます。
 
 ## 関連トピック
-
-* [ユーザーへのカスタムフィールドの追加](../../users-and-permissions/users/adding-custom-fields-to-users.md)
-

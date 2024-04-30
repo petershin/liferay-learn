@@ -27,7 +27,7 @@ To enable text field autocompletion from a list of manually entered options,
 
 1. In the text field's configuration sidebar, add the options a user sees while typing in the field.
 
-   ![You can add autocomplete options manually.](./forms-field-autocompletion/images/03.png)
+   ![You can add autocomplete options manually.](./forms-field-autocompletion/images/03.gif)
 
 ## Autocompletion from a Data Provider
 
@@ -92,20 +92,6 @@ To see how it works,
 1. Go to the form and confirm that the browser's autocomplete is working:
 
    ![You can autocomplete form fields with the HTMl autocomplete attribute.](./forms-field-autocompletion/images/02.gif)
-
-1. Go to the Forms application. Open *Site Menu* ![Site Menu](../../../images/icon-menu.png) &rarr; *Content & Data* &rarr; *Forms*.
-
-1. Open *Data Providers* and add a [REST data provider](../data-providers/using-the-rest-data-provider-to-populate-form-options.md) configured like this:
-
-   * **Name**: REST Countries
-   * **URL**: `https://restcountries.com/v3.1/all`
-   * **Output Path**: `$..name.common`
-   * **Output Type**: List
-   * **Output Label**: Country Name
-
-   To understand more about these values, see [Data Providers Overview](../data-providers/data-providers-overview.md).
-
-1. [Add a form](./creating-forms.md) with a text field named *Country*.
 
 Autocompletion in form fields can make users more likely to fill out your forms.
 

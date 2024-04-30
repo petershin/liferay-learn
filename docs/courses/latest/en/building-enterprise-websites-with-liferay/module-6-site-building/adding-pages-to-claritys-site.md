@@ -44,11 +44,11 @@ Utility pages handle specific functions within a site. Currently, you can use th
 
 ![Create these pages as utility pages.](./adding-pages-to-claritys-site/images/04.png)
 
-## Exercise: Adding Content Pages
+## Exercise One: Adding Content Pages
 
 While logged in as Walter Douglas,
 
-1. Open the *Site Menu*, expand *Site Builder*, and click *Pages*.
+1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)), expand *Site Builder*, and click *Pages*.
 
 1. In the Static Pages tab, click *New* and select *Page*.
 
@@ -89,7 +89,7 @@ While logged in as Walter Douglas,
 
 With these pages in place, create the remaining parts of Clarity's site structure as display page templates.
 
-## Exercise: Adding Display Page Templates
+## Exercise Two: Adding Display Page Templates
 
 While logged in as Walter Douglas,
 

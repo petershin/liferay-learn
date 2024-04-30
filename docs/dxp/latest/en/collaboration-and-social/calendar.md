@@ -22,7 +22,7 @@ The Calendar widget is a tool for storing and sharing scheduled events. It's a p
 
 <!-- I altered the link in LRDOCS-13096 that is in the queue. Once it passes, there will be no user-guide folder. Eric. -->
 
-Start by learning how to [use the Calendar widget](./calendar/using-the-calendar-widget.md) and [configure it](./calendar/calendar-widget-configuration-reference.md). Then, learn how to [export/import its data](./calendar/exporting-importing-calendar-data.md) and [map]
+Start by learning how to [use the Calendar widget](./calendar/using-the-calendar-widget.md) and [configure it](./calendar/calendar-widget-configuration-reference.md). Then, you can [export/import](./calendar/exporting-importing-calendar-data.md) the calendar data and display calendar event information by [mapping it to display page templates](./calendar/mapping-calendar-event-fields-to-display-page-templates.md) which gives you more options to use the calendar data throughout sites.
 
 ::::{grid} 2
 :gutter: 3 3 3 3

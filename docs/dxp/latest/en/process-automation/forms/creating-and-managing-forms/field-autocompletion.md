@@ -13,9 +13,9 @@ You can configure form field autocompletion in the Forms application:
 
 | Autocompletion Type    | Description                                   | Field Types                 |
 |------------------------|-----------------------------------------------|-----------------------------|
-| Manual                 | Type a list of autocompletion options         | Text                        |
-| Data Provider          | Call an API to provide autocompletion options | Text                        |
-| Browser Autocompletion | Configure the `autocomplete` HTML attribute   | Date<br />Numeric<br />Text |
+| [Manual](#manual-autocompletion)                 | Type a list of autocompletion options         | Text                        |
+| [Data Provider](#autocompletion-from-a-data-provider)          | Call an API to provide autocompletion options | Text                        |
+| [Browser Autocompletion](#browser-autocompletion) | Configure the `autocomplete` HTML attribute   | Date<br />Numeric<br />Text |
 
 ## Manual Autocompletion
 
@@ -27,7 +27,9 @@ To enable text field autocompletion from a list of manually entered options,
 
 1. In the text field's configuration sidebar, add the options a user sees while typing in the field.
 
-   ![You can add autocomplete options manually.](./forms-field-autocompletion/images/03.gif)
+1. Save and publish the form, then make sure the autocmpletion is working.
+
+   ![You can add autocomplete options manually.](./field-autocompletion/images/03.gif)
 
 ## Autocompletion from a Data Provider
 
@@ -57,19 +59,17 @@ To enable text field autocompletion from a list of options returned by a [REST d
 
 1. Go to the form and begin entering data into the field:
 
-   ![You can autocomplete text fields with a data provider.](./forms-field-autocompletion/images/04.gif)
+   ![You can autocomplete text fields with a data provider.](./field-autocompletion/images/04.gif)
 
 ## Browser Autocompletion
 
 {bdg-secondary}`DXP 2024.Q2+; Portal 7.4 GA120+`
 
-Date, Numeric, and Text fields can leverage autocompletion or autofill from the [browser through HTML attributes](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#autofill).
-
-To see how it works,
+Browser autocompletion [through HTML attributes](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#autofill) is available for Date, Numeric, and Text fields. To configure it,
 
 1. First, make sure your browser settings have at least one address configured for autofill. For example,
 
-   ![Configure the autofill information for at least one address in your browser.](./forms-field-autocompletion/images/01.png)
+   ![Configure the autofill information for at least one address in your browser.](./field-autocompletion/images/01.png)
 
    This example uses the Name and Email fields.
 
@@ -87,11 +87,13 @@ To see how it works,
       * **Label:** Email
       * **HTML Autocomplete Attribute (Advanced):** email
 
+   The HTML Attribute setting is in the Advanced tab of the field configuration sidebar.
+
 1. Save and publish the form.
 
-1. Go to the form and confirm that the browser's autocomplete is working:
+1. Go to the form and confirm that autocompletion is working:
 
-   ![You can autocomplete form fields with the HTMl autocomplete attribute.](./forms-field-autocompletion/images/02.gif)
+   ![You can autocomplete form fields with the HTMl autocomplete attribute.](./field-autocompletion/images/02.gif)
 
 Autocompletion in form fields can make users more likely to fill out your forms.
 

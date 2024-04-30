@@ -3,6 +3,7 @@ toc:
   - ./collaboration-and-social/collaboration-and-social-overview.md
   - ./collaboration-and-social/message-boards.md
   - ./collaboration-and-social/notifications-and-requests.md
+  - ./collaboration-and-social/calendar.md
   - ./collaboration-and-social/social-tools.md
   - ./collaboration-and-social/wiki.md
   - ./collaboration-and-social/questions-application.md

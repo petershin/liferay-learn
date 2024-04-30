@@ -11,11 +11,11 @@ uuid: 6013366c-80d9-4e6f-9b2b-049fcb824727
 
 You can configure form field autocompletion in the Forms application:
 
-| Autocompletion Type    | Description                                   | Field Types                 |
-|------------------------|-----------------------------------------------|-----------------------------|
-| [Manual](#manual-autocompletion)                 | Type a list of autocompletion options         | Text                        |
-| [Data Provider](#autocompletion-from-a-data-provider)          | Call an API to provide autocompletion options | Text                        |
-| [Browser Autocompletion](#browser-autocompletion) | Configure the `autocomplete` HTML attribute   | Date<br />Numeric<br />Text |
+| Autocompletion Type                                   | Configuration                                 | Field Types                 |
+|-------------------------------------------------------|-----------------------------------------------|-----------------------------|
+| [Manual](#manual-autocompletion)                      | Type a list of autocompletion options         | Text                        |
+| [Data Provider](#autocompletion-from-a-data-provider) | Call an API to provide autocompletion options | Text                        |
+| [Browser Autocompletion](#browser-autocompletion)     | Configure the `autocomplete` HTML attribute   | Date<br />Numeric<br />Text |
 
 ## Manual Autocompletion
 

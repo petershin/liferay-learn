@@ -16,7 +16,7 @@ Using this feature, a service can automatically increase (upscale) the number of
   "scale": 2,
 ```
 
-Make sure to regularly monitor your application's resource usage (CPU and memory) for applications that require auto-scaling. More insight into your resource requirements helps you more effectively fine-tune your [JVM memory settings](#jvm-memory-configuration) and [auto-scaling behavior](#specifying-target-average-utilization).
+Make sure to monitor your application's resource usage (CPU and memory) regularly for applications that require auto-scaling. More insight into your resource requirements helps you more effectively fine-tune your [JVM memory settings](#jvm-memory-configuration) and [auto-scaling behavior](#specifying-target-average-utilization).
 
 ## How Auto-Scaling is Charged
 

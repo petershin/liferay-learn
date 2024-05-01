@@ -14,7 +14,16 @@ Here you'll use the Fragments Editor UI to create and import Clarity's custom fr
 !!! tip “When to Use Custom Fragments”
     Liferay recommends using out-of-the-box fragments and configuration options whenever possible. Also, when you do need custom fragments, Liferay recommends leveraging available style tokens to simplify fragment code, which promotes design consistency across your website elements and improved maintainability.
 
-<!--TASK: Explain how to add configurations. -->
+<!--TASK:
+## Defining Fragment Configuration Options
+
+## Using Liferay Tags and Attributes
+
+## Updating Fragments
+
+Propagation.
+
+-->
 
 ## Exercise One: Creating the Clarity Fragment Set
 
@@ -126,14 +135,15 @@ To create the Login and User Menu fragment,
 
 1. Click *Publish*.
 
-<!--TASK:
+<!--TASK: Finish Steps for Search Bar-->
+
 ## Exercise Three: Importing Fragments
 
-__.
+Coming Soon!
 
 ## Exercise Four: Adding Custom Fragments to Master Pages
 
-__. -->
+Coming Soon!
 
 ## Conclusion
 

@@ -88,9 +88,9 @@ Coming Soon
 :::
 
 :::{grid-item-card}  Module 6: Site Building
-:link: ./building-enterprise-websites-with-liferay/module-6.md
+:link: ./building-enterprise-websites-with-liferay/module-6-site-building.md
 
-Coming Soon
+Learn the fundamentals of building Liferay websites, designing effective page layouts, and applying custom styling.
 :::
 
 :::{grid-item-card}  Module 7: Content Authoring & Management

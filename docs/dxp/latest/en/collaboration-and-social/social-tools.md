@@ -14,16 +14,15 @@ taxonomy-category-names:
 
 # Social Tools
 
-Social tools play a vital role in fostering engagement, collaboration, and interaction within digital environments. They are designed to enhance user experiences and facilitate connections. Liferay DXP offers three powerful social tools: the [Activities Widget](./social-tools/using-the-activities-widget.md), [Contacts Center Widget](./social-tools/using-the-contacts-center-widget.md), and [Ratings System](./social-tools/using-the-ratings-system.md).
+Social tools play a vital role in fostering engagement, collaboration, and interaction within digital environments. They can enhance user experiences and facilitate connections. Liferay DXP offers three powerful social tools: the [Activities Widget](./social-tools/using-the-activities-widget.md), the [Contacts Center Widget](./social-tools/using-the-contacts-center-widget.md), and the [Ratings System](./social-tools/using-the-ratings-system.md).
 
-With the [Activities widget](./social-tools/using-the-activities-widget.md), users can stay informed about recent activities, such as the addition, update, and deletion of items.
+With the [Activities widget](./social-tools/using-the-activities-widget.md), users can stay informed about recent activities, such as when items are added, updated, and deleted.
 
-![Use the Activities widget to view recent activities, such as the addition, update, and deletion of items.](./social-tools/images/01.png)
+![Use the Activities widget to view recent activities, such as when items are added, updated, and deleted.](./social-tools/images/01.png)
 
 The [Contacts Center widget](./social-tools/using-the-contacts-center-widget.md) offers a solution for managing connections within the Liferay platform. By centralizing contact information, users can discover and connect with other users.
 
 ![Use the Contacts Center widget to centralize contact information.](./social-tools/images/02.png)
-
 
 With the [Ratings System](./social-tools/using-the-ratings-system.md), users can rate or value content based on their experiences. This way, organizations can drive continuous improvement, foster innovation, and enhance the overall user experience.
 

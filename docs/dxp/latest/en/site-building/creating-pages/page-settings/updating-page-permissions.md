@@ -23,13 +23,13 @@ To update page permissions,
 
    Alternatively, while [editing a page](../using-content-pages/adding-elements-to-content-pages.md), click *Options* (![Options icon](../../../images/icon-options.png)) at the top right corner of the page &rarr; *Permissions* (2).
 
-   {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA126+` Or select the checkbox next to the page (or pages if you want to set [permissions in bulk](#setting-pages-permissions-in-bulk)) and click *Permissions* at the top options bar (3).
+   {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA126+` Or select the checkbox next to the page(s) (see [permissions in bulk](#setting-pages-permissions-in-bulk)) and click *Permissions* at the top options bar (3).
 
    ![The page permissions can be found in the Pages app or while editing a page.](./updating-page-permissions/images/01.png)
 
-1. Update the permissions for each role. See [Page Permissions Reference](#page-permissions-reference) to learn more about each permission.
+1. Select the permissions you need for your roles. See [Page Permissions Reference](#page-permissions-reference) to learn more about each permission.
 
-    ![Permissions offer many options for each role.](./updating-page-permissions/images/02.png)
+   ![Permissions offer many options for each role.](./updating-page-permissions/images/02.png)
 
 1. Click *Save* to apply the changes.
 
@@ -50,8 +50,6 @@ To copy a page with its permissions,
 !!! important
     This feature is currently behind a release feature flag (LPS-196847). Read [Release Feature Flags](../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information.
 
-To select multiple pages and set their permissions at once,
-
 1. Open the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)) and navigate to *Site Builder* &rarr; *Pages*.
 
 1. Select the checkbox next to the pages you want to configure.
@@ -67,7 +65,7 @@ To select multiple pages and set their permissions at once,
    !!! tip
        Uncheck the permission to disable it on all selected pages. To enable the permission on all selected pages, uncheck and check it.
 
-   (2) (![Empty permission icon](../../../images/icon-permission-empty.png)) indicates that the permission is **not set to any** of the selected pages
+   (2) (![Empty permission icon](../../../images/icon-permission-empty.png)) indicates that the permission is **not set to any** of the selected pages.
 
    (3) (![Disabled permission icon](../../../images/icon-permission-disabled.png)) indicates that you **can't set** the permission for that role.
 
@@ -81,30 +79,30 @@ To select multiple pages and set their permissions at once,
 
 Here's a list of permissions associated with pages. To learn more about DXP Roles and Permissions in general, see [Roles and Permissions](../../../users-and-permissions/roles-and-permissions.md).
 
-| Permission | Description |
-|:---|:---|
-| Update Discussion | Edit another user's comment on the page. |
-| Permissions | View and modify the page's permissions. |
-| Update - Advanced options | Access the page element's Advanced tab when [updating](#update-permissions-reference) a page. |
-| Update Page Content | Update the page's existing content. |
-| Customize | Customize the page. |
-| Page Rule Builder | Use the Page Rule Builder to define rules for the page. This feature is currently under a [feature flag](../../../system-administration/configuring-liferay/feature-flags.md). |
-| Add Page | Add pages. |
-| View | View pages. |
-| Delete | Move the page to the [Recycle Bin](../recycle-bin/recycle-bin-overview.md). |
-| {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA126+` Preview Draft | Even without the Edit permission, users can preview Draft versions of the page. |
-| Update Basic | Basic options for [updating](#update-permissions-reference) the page. |
-| Delete Discussion | Delete any comments on page. |
-| Configure Applications | Manage Fragments and Widgets. |
-| Update | [Update](#update-permissions-reference) the page. |
-| Update - Limited  | Limited options for [updating](#update-permissions-reference) the page. |
-| Add Discussion | Comment on the page. |
+| Permission                                                            | Description                                                                                                                                                                    |
+|:----------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Update Discussion                                                     | Edit another user's comment on the page.                                                                                                                                       |
+| Permissions                                                           | View and modify the page's permissions.                                                                                                                                        |
+| Update - Advanced options                                             | Access the page element's Advanced tab when [updating](#update-permissions-reference) a page.                                                                                  |
+| Update Page Content                                                   | Update the page's existing content.                                                                                                                                            |
+| Customize                                                             | Customize the page.                                                                                                                                                            |
+| Page Rule Builder                                                     | Use the Page Rule Builder to define rules for the page. This feature is currently under a [feature flag](../../../system-administration/configuring-liferay/feature-flags.md). |
+| Add Page                                                              | Add pages.                                                                                                                                                                     |
+| View                                                                  | View pages.                                                                                                                                                                    |
+| Delete                                                                | Move the page to the [Recycle Bin](../recycle-bin/recycle-bin-overview.md).                                                                                                    |
+| {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA126+` Preview Draft | Even without the Edit permission, users can preview Draft versions of the page.                                                                                                |
+| Update Basic                                                          | Basic options for [updating](#update-permissions-reference) the page.                                                                                                          |
+| Delete Discussion                                                     | Delete any comments on page.                                                                                                                                                   |
+| Configure Applications                                                | Manage Fragments and Widgets.                                                                                                                                                  |
+| Update                                                                | [Update](#update-permissions-reference) the page.                                                                                                                              |
+| Update - Limited                                                      | Limited options for [updating](#update-permissions-reference) the page.                                                                                                        |
+| Add Discussion                                                        | Comment on the page.                                                                                                                                                           |
 
 ### Update Permissions Reference
 
 To manage the site's look and feel while maintaining control over branding and style, users require different sets of permissions depending on their roles in the process.
 
-For example, designers should have total control over the edition of the layout and style of pages. Conversely, content creators just need to add content to the page. So, a more restrictive permission would suffice.
+For example, designers require full control over layout and style editing, best achieved with Update permissions. Conversely, content creators typically only need to add content and map fields to page elements, which can be accomplished with Update Page Content permissions.
 
 Liferay provides four update permissions for pages. Each grants users different sets of permissions:
 
@@ -120,31 +118,28 @@ Liferay provides four update permissions for pages. Each grants users different 
 
    Users can edit fragment styles only inside the brand/style book limits. It's aimed at the page builder role as they need to make some adjustments when building the pages.
 
-   | Page Element | Available Actions |
-   | :--- | :--- |
-   | Fragments | Available: Drag and drop. |
-   | General Tab - Container and Grid fragments | Available: Container, Frame, Overflow, and Hide Fragment options. |
-   | General Tab - other fragments | Available: Overflow and Hide Fragment options. |
-   | Styles Tab | Not available: Decoupling from tokens. |
+   | Page Element                                                 | Available Actions                                                  |
+   |:-------------------------------------------------------------|:-------------------------------------------------------------------|
+   | Fragments                                                    | Available: Drag and drop.                                          |
+   | General Tab - Container and Grid fragments                   | Available: Container, Frame, Overflow, and Hide Fragment options.  |
+   | General Tab - other fragments                                | Available: Overflow and Hide Fragment options.                     |
+   | Styles Tab                                                   | Not available: Decoupling from tokens.                             |
    | Advanced Tab (`Update - Advanced Options` permission needed) | Available: Advanced configurations.<br> Not Available: Custom CSS. |
 
 - **Update - Basic**: Users can perform basic actions while updating the page.
 
    Users can update the page layout and drag & drop new fragments, but it's not possible to change all options in the page element's Styles tab.
 
-   | Page Element | Available Actions |
-   | :--- | :--- |
-   | Fragments | Available: Drag and drop. |
-   | General Tab - Container and Grid fragments | Available: Container, Frame, Overflow, and Hide Fragment options. |
-   | General Tab - other fragments | Available: Overflow and Hide Fragment options. |
-   | Styles Tab - Container and Grid fragments | Available: Edit Spacing options. |
-   | Styles Tab - other fragments | Not Available. |
+   | Page Element                                                 | Available Actions                                                  |
+   |:-------------------------------------------------------------|:-------------------------------------------------------------------|
+   | Fragments                                                    | Available: Drag and drop.                                          |
+   | General Tab - Container and Grid fragments                   | Available: Container, Frame, Overflow, and Hide Fragment options.  |
+   | General Tab - other fragments                                | Available: Overflow and Hide Fragment options.                     |
+   | Styles Tab - Container and Grid fragments                    | Available: Edit Spacing options.                                   |
+   | Styles Tab - other fragments                                 | Not Available.                                                     |
    | Advanced Tab (`Update - Advanced Options` permission needed) | Available: Advanced configurations.<br> Not Available: Custom CSS. |
 
 - **Update - Advanced Options**: Users can access the page element's Advanced tab.
-
-!!! tip
-    With roles that only need to add content and map fields (e.g., content creator), granting the Update Page Content permission should suffice.
 
 ## Related Topics
 

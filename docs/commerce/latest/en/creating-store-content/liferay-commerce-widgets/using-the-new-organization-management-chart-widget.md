@@ -15,7 +15,7 @@ taxonomy-category-names:
 You can use Liferay's organization management chart to view, manage, and search through organizations, associated accounts, and users.
 
 !!! important
-    Currently, this feature is behind a release feature flag. Read [Release Feature Flags](https://learn.liferay.com/web/guest/w/dxp/system-administration/configuring-liferay/feature-flags#release-feature-flags) for more information.
+    The organization management chart was released behind a [release feature flag](https://learn.liferay.com/web/guest/w/dxp/system-administration/configuring-liferay/feature-flags#release-feature-flags) in Liferay DXP 2024.Q1/Portal 7.4 GA112. It was made Generally Available (GA) in 2024.Q2/GA120.
 
 ![Use the organization management chart to view, manage, and search through organizations, its associated accounts, and users](./using-the-new-organization-management-chart-widget/images/01.png)
 

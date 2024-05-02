@@ -9,7 +9,17 @@ uuid: e0a94403-3c26-4bea-8d12-7642b1c050e7
 ---
 # Types of Utility Pages
 
-Utility pages are content pages you can apply to system-level pages. Liferay comes with three utility pages out-of-the-box and the ability to customize them or add your own.
+Utility pages are content pages you can apply to system-level pages. Liferay comes with several utility pages out-of-the-box and the ability to customize them or add your own.
+
+## Sign In
+
+## Create Account
+
+## Forgot Password
+
+## 404/500
+
+The 404 and 500 utility pages display 
 
 ## Cookies List
 

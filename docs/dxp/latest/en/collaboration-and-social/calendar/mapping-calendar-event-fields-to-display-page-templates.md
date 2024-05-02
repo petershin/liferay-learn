@@ -10,9 +10,9 @@ uuid: d1cb43ad-8329-40fe-8fec-5c39f1f09aaf
 
 # Mapping Calendar Event Fields to Display Page Templates
 
-With Liferay, you can customize and display calendar event information by mapping calendar fields to [display page templates](../using-display-page-templates.md). Highlight certain fields such as title, date, and location, while hiding others that are less relevant.
+With Liferay, you can customize and display calendar event information by mapping calendar fields to [display page templates](../../site-building/displaying-content/using-display-page-templates.md). Highlight certain fields such as title, date, and location, while hiding others that are less relevant.
 
-Additionally, with a [collection display fragment](../collections-and-collection-pages/displaying-collections.md) on a content page, you can display a dynamically or manually generated collection of calendar events and redirect users to each collection item's display page template.
+Additionally, with a [collection display fragment](../../site-building/displaying-content/collections-and-collection-pages/displaying-collections.md) on a content page, you can display a dynamically or manually generated collection of calendar events and redirect users to each collection item's display page template.
 
 To do that, you can create [calendar events](#calendar-events) using a calendar widget, a [collection](#dynamic-collections-to-group-calendar-events) to group events dynamically, a [display page template](#calendar-events-display-page-template) to customize how you want to display the calendar events, a [content page](#content-page-to-display-the-calendar-event-collection) with a Collection Display fragment to show all items in the collection, and a button to redirect users to the display page template.
 
@@ -20,9 +20,9 @@ To do that, you can create [calendar events](#calendar-events) using a calendar 
 
 Start by adding the Calendar widget to a page, navigating to the page, and creating an event:
 
-1. [Create a new page](../../creating-pages/adding-pages/adding-a-page-to-a-site.md) or [start editing](../../creating-pages/using-content-pages/adding-elements-to-content-pages.md) one.
+1. [Create a new page](../../site-building/creating-pages/adding-pages/adding-a-page-to-a-site.md) or [start editing](../../site-building/creating-pages/using-content-pages/adding-elements-to-content-pages.md) one.
 
-1. In the Fragments and Widgets sidebar, look for the [*Calendar* widget](../../creating-pages/using-widget-pages/adding-widgets-to-a-page.md). Drag and drop it into the page and publish the page.
+1. In the Fragments and Widgets sidebar, look for the [*Calendar* widget](./using-the-calendar-widget.md). Drag and drop it into the page and publish the page.
 
 1. Navigate to the page and click *Add Event*. Fill in the information and click *Publish*.
 
@@ -34,7 +34,7 @@ Start by adding the Calendar widget to a page, navigating to the page, and creat
 
 Create a collection to group the calendar events. You can [display this collection](#content-page-to-display-the-calendar-event-collection) later using a collection display fragment.
 
-1. [Create a dynamic collection](../collections-and-collection-pages/creating-collections.md#creating-a-dynamic-collection) and name it `Calendar Event Collection`.
+1. [Create a dynamic collection](../../site-building/displaying-content/collections-and-collection-pages/creating-collections.md#creating-a-dynamic-collection) and name it `Calendar Event Collection`.
 
 1. In the Item Type dropdown menu, select *Calendar Event* under Single Item Type.
 
@@ -50,7 +50,7 @@ Every calendar event, including new ones, is added to the collection.
 
 Create a display page template and map calendar event fields to the elements. For this example, you'll create a simple structure to display the event's information.
 
-1. Create a [display page template](./creating-and-managing-display-page-templates.md), name it `Calendar Event Display Page Template`, and select *Calendar Event* as the content type.
+1. Create a [display page template](../../site-building/displaying-content/using-display-page-templates/creating-and-managing-display-page-templates.md), name it `Calendar Event Display Page Template`, and select *Calendar Event* as the content type.
 
    The display page template is now associated with calendar events.
 
@@ -78,7 +78,7 @@ You should now have a simple structure that displays the calendar information: T
 
 ![Customize how you want to display the calendar event.](./mapping-calendar-event-fields-to-display-page-templates/images/03.png)
 
-Mark the display page template as the default to use it with the collection display: Once you publish the page, you are redirected to the Page Templates application. Click *Actions* (![Actions icon](../../../images/icon-actions.png)) next to the created template and select *Mark as Default*.
+Mark the display page template as the default to use it with the collection display: Once you publish the page, you are redirected to the Page Templates application. Click *Actions* (![Actions icon](../../images/icon-actions.png)) next to the created template and select *Mark as Default*.
 
 ### Mappable Fields
 
@@ -103,11 +103,11 @@ Create a content page and add a Collection Display fragment to show the calendar
 
 For this example, you'll create a simple structure to display the event's title and a button that redirects users to the display page template when clicked.
 
-1. [Create a new page](../../creating-pages/adding-pages/adding-a-page-to-a-site.md) and name it `Calendar Event Collection Page`.
+1. [Create a new page](../../site-building/creating-pages/adding-pages/adding-a-page-to-a-site.md) and name it `Calendar Event Collection Page`.
 
 1. In the Fragments and Widgets sidebar, look for the Collection Display fragment. Drag and drop it into the page.
 
-1. Click on the *Collection Display* once, click (![Add icon](../../../images/icon-add-app.png)) next to Collection on the right, and select the *Calendar Event Collection*.
+1. Click on the *Collection Display* once, click (![Add icon](../../images/icon-add-app.png)) next to Collection on the right, and select the *Calendar Event Collection*.
 
    The titles for the existing events are shown as collection items in the collection display. Once you drop an element inside the collection item area, the same element is added to the other items as well.
 
@@ -141,7 +141,7 @@ Once you are done, check if everything is working. Navigate to the Calendar Even
 
 ## Related Topics
 
-- [Using Collections](../using-collections.md)
-- [Using Display Page Templates](../using-display-page-templates.md)
-- [Using Multiple Display Page Templates to Create Multi-Step Applications](./using-multiple-display-page-templates-to-create-multi-step-applications.md)
-- [Using Widgets](../../creating-pages/page-fragments-and-widgets/using-widgets.md)
+- [Using Collections](../../site-building/displaying-content/using-collections.md)
+- [Using Display Page Templates](../../site-building/displaying-content/using-display-page-templates.md)
+- [Using Multiple Display Page Templates to Create Multi-Step Applications](../../site-building/displaying-content/using-display-page-templates/using-multiple-display-page-templates-to-create-multi-step-applications.md)
+- [Using Widgets](../../site-building/creating-pages/page-fragments-and-widgets/using-widgets.md)

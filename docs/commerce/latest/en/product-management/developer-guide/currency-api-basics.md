@@ -15,6 +15,9 @@ taxonomy-category-names:
 
 You can manage [currencies](../../store-management/currencies.md) from the Applications menu or with REST APIs. Call the [headless-commerce-admin-catalog](http://localhost:8080/o/api?endpoint=http://localhost:8080/o/headless-commerce-admin-catalog/v1.0/openapi.json) services to create and manage currencies.
 
+!!! important
+    The currency APIs were released behind a [release feature flag](https://learn.liferay.com/web/guest/w/dxp/system-administration/configuring-liferay/feature-flags#release-feature-flags) in Liferay DXP 2024.Q1/Portal 7.4 GA112. It was made Generally Available (GA) in 2024.Q2/GA120.
+
 ## Adding a Currency
 
 ```{include} /_snippets/run-liferay-portal.md

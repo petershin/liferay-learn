@@ -109,6 +109,9 @@ Follow these steps (as an administrator) to download a backup from the *Backups*
 
 ## Uploading Backups via the Console
 
+!!! warning
+    If your document library store is GCS, upload the backup [using the CLI](#uploading-backups-via-the-cli-tool).
+
 Before you can upload a backup to Liferay Cloud, you must compress the database dump and document library in separate archives. See [Preparing the Database and Document Library for Upload](#preparing-the-database-and-document-library-for-upload) for more information on preparing them for an on-premises environment.
 
 !!! warning

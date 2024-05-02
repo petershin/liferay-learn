@@ -9,17 +9,34 @@ uuid: ee3a8169-8408-4c36-afbc-9976f0ef3866
 
 Now that the Liferay versions match between your on-premises and Liferay Cloud environments, you must prepare the data from your installation for migration. This stage of migration involves creating a database dump, migrating the document library store, and compressing the document library into an archive.
 
-```{warning}
-The combined size of your database dump and (compressed) document library archive must not exceed 2 TB for you to upload in the next step without contacting Liferay Cloud Support.
-```
+!!! warning
+    The combined size of your database dump and (compressed) document library archive must not exceed 2 TB for you to upload in the next step without contacting Liferay Cloud Support.
 
 ## Freeze the Data
 
 Before you create your data backup files, you must arrange a window to freeze the data in your Liferay instance. This prevents data from being lost while the backup is being taken. Coordinate with your database administrator to reserve a window to freeze the database and document library for migration.
 
-## Convert the Database to MySQL
+## Convert the Database to PostgreSQL
 
-Make sure your database is compatible with MySQL 5.7. You can use a tool like [DBeaver](https://dbeaver.io/) to convert other database formats to MySQL.
+Make sure your database is compatible with PostgreSQL 15. You can use a tool like [pgloader](https://pgloader.io/) to convert other database formats to PostgreSQL. However, you must take care to ensure the created database includes the correct data types and all relevant database objects (tables, indexes, and rules).
+
+You should generally run Liferay with all your custom modules against an empty PostgreSQL 15 database to create the initial schema, and use that as the basis for your database conversion. Then you can move your data into the new database tables with a tool like `pgloader`.
+
+Here are some important considerations when converting your database:
+
+* Liferay tables must all be created in the `public` schema.
+
+* Database columns storing boolean (true/false) data should be created with the `boolean` data type, not using `tinyint` or `smallint`.
+
+* If your application uses custom object tables, these tables are not created automatically if you initialize an empty PostgreSQL database. Instead, you must export and import these objects to ensure they're included in the new schema.
+
+* Some object tables for system objects are created using a company ID field in the name. Check these object tables and adjust all of them with a company ID in the name to match your source database's company ID.
+
+* Liferay uses PostgreSQL rules to properly handle large objects in the database. Make sure you include the same rules defined [here](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/com/liferay/portal/dao/db/PostgreSQLDB.java#L44-L59).
+
+* If you rely on any custom tables not part of Liferay's schema, you must devise a solution to migrate each of those tables specifically.
+
+* Check your application for any custom logic that leverages proprietary database features (e.g., functions or stored procedures). For example, MySQL database functions like `DAY` or `GROUP_CONCAT` don't work in PostgreSQL, so you must use alternatives.
 
 Coordinate with your database administrator before and after the conversion to ensure data integrity. Test the converted database by [connecting it to a local Liferay installation](https://learn.liferay.com/w/dxp/installation-and-upgrades/installing-liferay/configuring-a-database) before proceeding.
 

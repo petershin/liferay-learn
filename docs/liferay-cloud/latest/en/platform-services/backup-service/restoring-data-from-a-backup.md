@@ -61,20 +61,35 @@ You can track the status of the restore in the backup service's *Logs* and the *
 
 You can also use custom SQL scripts to perform additional updates to your database with a normal data restore. This approach is ideal for sanitizing sensitive data, since it allows you to apply the scripts to separately maintained database backups.
 
-```{note}
-Using this feature requires version 3.0.7 or newer of the backup service.
-```
-
-### Preparing SQL Scripts
-
-The following formats are supported for SQL scripts:
+SQL scripts support these formats:
 
 * `.sql` is used for individual scripts.
 * `.zip`, `.tgz`, or `.gz` are used for multiple scripts within a compressed file.
 
-Note that scripts are run in alphanumerical order when they are executed. SQL scripts must also reference the exact database to run on (for example, with `USE lportal;` or `lportal.User_`).
+### Preparing SQL Scripts for PostgreSQL
 
-Place SQL scripts into the appropriate, environment-specific `backup/configs/[ENV]/scripts/` folder.
+Scripts for PostgreSQL only run on the database specified in the secret `lcp-secret-database-name`. Specify tables either without a qualifier or with the public schema (e.g., `update journalarticle` or `update public.journalarticle`).
+
+The database user specified in the `lcp-secret-database-user` secret is used to run your scripts with the `psql` command, with these options:
+
+* `--single-transaction`: Runs all commands within one transaction.
+* `-v ON_ERROR_STOP=1`: Forces all errors encountered to stop executing the script and report the error in the restore process.
+
+You can see details about the script execution in the backup log, like this example:
+
+![The backup log includes details about your executed SQL scripts.](./restoring-data-from-a-backup/images/04.png)
+
+Any errors encountered executing your scripts (such as syntax errors) causes the restore process to fail and report the error in the restore log. Here's an example of an error:
+
+![Errors encountered running scripts abort the restore process and include the error messages in the restore log.](./restoring-data-from-a-backup/images/05.png)
+
+Place your SQL scripts into the appropriate, environment-specific `backup/configs/[ENV]/scripts/` folder. Note that scripts run in alphanumerical order.
+
+### Preparing SQL Scripts for MySQL
+
+Scripts for MySQL must reference the exact database to run on (e.g., with `USE lportal;` or `lportal.User_`).
+
+Place your SQL scripts into the appropriate, environment-specific `backup/configs/[ENV]/scripts/` folder. Note that scripts run in alphanumerical order.
 
 ### Performing the Data Restore
 
@@ -95,4 +110,4 @@ Jun 20 14:46:41.970 build-39 [backup-57488f8b8-rjq4f] Running Script: SanitizeUs
 
 * [Backup Service](./backup-service-overview.md)
 * [Downloading and Uploading Backups](./downloading-and-uploading-backups.md)
-* [Database Service (MySQL)](../database-service/database-service.md)
+* [Database Service](../database-service.md)

@@ -5,7 +5,6 @@ toc:
   - ./using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.md
   - ./using-the-liferay-dxp-service/liferay-service-environment-variables.md
   - ./using-the-liferay-dxp-service/setting-up-clustering-in-liferay-cloud.md
-  - ./using-the-liferay-dxp-service/using-the-mysql-client.md
   - ./using-the-liferay-dxp-service/upgrading-your-liferay-dxp-instance.md
 taxonomy-category-names:
 - Cloud
@@ -15,7 +14,7 @@ uuid: 01625ffe-bb32-4fe9-bfde-9f3adbb3f2de
 ---
 # Using the Liferay DXP Service
 
-The Liferay service is the heartbeat of any project in Liferay Cloud (SaaS or PaaS). It runs the application's Liferay DXP instance and interacts with other services like the web server, Elasticsearch, and MySQL database.
+The Liferay service is the heartbeat of any project in Liferay Cloud (SaaS or PaaS). It runs the application's Liferay DXP instance and interacts with other services like the web server, Elasticsearch, and database.
 
 ![The Liferay service is one of several services available in Liferay Cloud.](./using-the-liferay-dxp-service/images/01.png)
 

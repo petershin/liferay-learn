@@ -8,39 +8,38 @@ uuid: 792fe30d-65cb-4c3e-8ea6-a97cde3dc4cd
 ---
 # Changing Your Database Password
 
-Changing the MySQL password for your [`database` service](./database-service.md) also affects the other services that must connect to the database.
+Changing the database password for your [`database` service](./database-service.md) also affects the other services that must connect to the database.
 
-```{warning}
-Updating your database password requires a period of downtime for you to restore a backup to your database service, and then restart all of your services. Plan ahead to make time for this before rotating your database password.
-```
+!!! warning
+    Updating your database password requires a period of downtime for you to restore a backup to your database service, and then restart all of your services. Plan ahead to make time for this before rotating your database password.
 
 ## Creating a Backup
 
-If you are changing the password for a production environment, then you must ensure you have an up-to-date backup so you can restore it after the update.
+If you are changing the password for a production environment, you must ensure you have an up-to-date backup so you can restore it after the update.
 
 To create a backup for any environment, click _Backups_ from the menu on the left:
 
-![Navigate to your chosen environment's Backups page.](./changing-your-database-password/images/01.png)
+![Navigate to your chosen environment's Backups page.](./changing-your-database-username/images/01.png)
 
 Then, click _Backup Now_ on the _Backups_ page:
 
-![Click Backup Now to create a new backup.](./changing-your-database-password/images/02.png)
+![Click Backup Now to create a new backup.](./changing-your-database-username/images/02.png)
 
 ## Changing the Database Password
 
-The database password is changed directly using the [secrets](../../tuning-security-settings/managing-secure-environment-variables-with-secrets.md) feature within your chosen environment. However, for the database password secret, you must follow additional steps to ensure that your services update correctly with the new value.
-
-<!-- Mention required service versions, and link to possible section on the procedure for 3.x services -->
-
-When you are ready, follow these steps to change your database password:
+Change your database password using your chosen environment's [secrets](../../tuning-security-settings/managing-secure-environment-variables-with-secrets.md), after you've created a backup.
 
 1. Navigate to your chosen environment.
 
-1. Click _Settings_ from the menu on the left:
+1. Click _Settings_ from the menu on the left.
 
     ![Navigate to your environment's Settings page.](./changing-your-database-password/images/03.png)
 
-1. In the _Secrets_ section, click _Edit..._ from the Actions menu beside the `lcp-secret-database-password` secret:
+1. Click the _Secrets_ tab.
+
+1. Click the `lcp-secret-database-password` secret from the list.
+
+1. Click _Edit_ at the top of the screen.
 
     ![Edit the lcp-secret-database-password secret.](./changing-your-database-password/images/04.png)
 
@@ -48,17 +47,24 @@ When you are ready, follow these steps to change your database password:
 
     ![Show the secret to enable editing it.](./changing-your-database-password/images/05.png)
 
-1. Edit the value of the secret.
+1. Edit the secret value.
 
 1. Scroll down and check all of the boxes acknowledging the effects of changing the value of the secret.
 
     ![Check the boxes to enable the Publish secret button.](./changing-your-database-password/images/06.png)
 
-1. Click _Publish secret_.
+1. Click _Publish Changes_.
 
-    ```{note}
-    The services attempt to restart when you click `Publish secret`. However, the database service can only update its password upon image creation, so the service must be deleted and redeployed to update it.
-    ```
+The services restart and the database user is updated with the new password. While the services are restarting, they do not receive requests.
+
+!!! important
+    If your database service is not updated to version 5.1.2+, the password can only be updated after deleting and redeploying the service. Continue reading to complete the process for these versions.
+
+## Additional Required Steps (Versions Before 5.1.2)
+
+The database password is still changed directly using your chosen environment's [secrets](../../tuning-security-settings/managing-secure-environment-variables-with-secrets.md) prior to version 5.1.2. However, you must follow additional steps to ensure that your services update correctly with the new value.
+
+After you've [updated the secret value](#changing-the-database-password), follow these steps to complete the process.
 
 1. Return to your environment's _Services_ page.
 
@@ -100,6 +106,6 @@ Your `database` service is now updated with a new password, and your other servi
 
 ## Related Topics
 
-* [Database Service](./database-service.md)
+* [Database Service](../database-service.md)
 * [Changing Your Database Username](./changing-your-database-username.md)
 * [Managing Secure Environment Variables with Secrets](../../tuning-security-settings/managing-secure-environment-variables-with-secrets.md)

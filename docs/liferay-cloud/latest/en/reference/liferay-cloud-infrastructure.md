@@ -62,11 +62,11 @@ Liferay Cloud uses [Elasticsearch](https://www.elastic.co/elasticsearch/service)
 
 The Elasticsearch engine is offered as one of Liferay Cloud's main services, making it highly scalable and customizable. See the [Search Service](../platform-services/search-service.md) for more information.
 
-## MySQL Database
+## Database
 
-Liferay Cloud connects the Liferay service to a separate, database storage service within its private network. A [MySQL](https://www.mysql.com/) database is used to create a reliable, secure, and scalable DXP implementation in the cloud. The database service is only accessible via private network traffic, through TCP or UDP connection.
+Liferay Cloud connects the Liferay service to a separate database storage service within its private network. The database itself is a reliable, secure, and scalable DXP implementation in the cloud. The database service is only accessible via private network traffic, through TCP or UDP connection.
 
-The MySQL database is offered as one of Liferay Cloud's main services, making it freely configurable and customizable. See the [Database Service](../platform-services/database-service/database-service.md) for more information.
+See the [Database Service](../platform-services/database-service/database-service.md) for more information on configuring the database.
 
 ## Persisted Storage (Volumes)
 

@@ -8,15 +8,30 @@ uuid: 27a5817f-b99c-4a95-a49d-cf6182a0c4ee
 ---
 # Changing Your Database Username
 
-The MySQL username is defined by the `lcp-secret-database-user` secret and can be changed at any time. When this value is changed, a user with the new credentials is created in your database, and the previous username is removed when the service restarts.
+The database username is defined by the `lcp-secret-database-user` secret and can be changed at any time. When this value is changed, a user with the new credentials is created in your database, and the previous username is removed when the service restarts.
 
 However, before changing the secret's value, you can add the current username to a list of retained users using the `LCP_DATABASE_USER_WHITELIST` variable. User credentials added in this way are retained and remain associated with your database even after the service is updated with a new secret value.
+
+!!! warning
+    Updating your database username requires a period of downtime for you to restore a backup to your database service, and then restart all of your services. Plan ahead to make time for this before rotating your database password.
 
 Keep in mind that changing the username can affect other services connected to the database, such as the `liferay` and `backup` services. These services must also restart when the database username is changed to continue working.
 
 ```{note}
 If no database username secret exists, then your Project service uses the `LCP_MASTER_USER_NAME` variable. This variable is defined in the `LCP.json` file and uses `dxpcloud` as its default value.
 ```
+
+## Creating a Backup
+
+If you are changing the password for a production environment, you must ensure you have an up-to-date backup so you can restore it after the update.
+
+To create a backup for any environment, click _Backups_ from the menu on the left:
+
+![Navigate to your chosen environment's Backups page.](./changing-your-database-password/images/01.png)
+
+Then, click _Backup Now_ on the _Backups_ page:
+
+![Click Backup Now to create a new backup.](./changing-your-database-password/images/02.png)
 
 ## Retaining Database Usernames
 

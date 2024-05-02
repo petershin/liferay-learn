@@ -81,8 +81,6 @@ These limitations apply to Dynatrace:
 
 These limitations apply to the [Database service](../platform-services/database-service/database-service.md) in each Liferay Cloud environment:
 
-**Database Metrics**: The metrics displayed in the Liferay Cloud console reflect the data for the service container, not individual service metrics.
-
 **Database Size**: The maximum size for a database is normally 100 GB. [Submit a Support request](https://help.liferay.com/) to increase this limit.
 
 **Downtime**: Database maintenance may cause downtime every few months. This downtime usually lasts about two minutes. This may not come with a notification in advance. You can set a [preferred maintenance window](../platform-services/database-service/database-service.md#database-maintenance-window-variables) to mitigate the impact of downtime.

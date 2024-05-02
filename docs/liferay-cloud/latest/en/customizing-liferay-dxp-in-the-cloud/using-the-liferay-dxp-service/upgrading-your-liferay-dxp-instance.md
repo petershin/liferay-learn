@@ -9,17 +9,14 @@ uuid: c3d3cfc7-1cd9-4a07-91a3-4a2f6ed6ecb2
 
 Liferay periodically releases new minor and major versions of Liferay DXP that include security and bug fixes, as well as enhancements. To upgrade to a new major Liferay DXP version increment, you must upgrade the DXP database.
 
-```{note}
-For large data sets in production, there are several additional considerations to perform a smooth upgrade. For example, custom code or Marketplace apps may require additional updates to continue working properly. See [the guide to upgrading Liferay DXP](https://learn.liferay.com/w/dxp/installation-and-upgrades/upgrading-liferay/upgrade-basics) for a comprehensive overview of the core upgrade.
-```
+!!! note
+    For large data sets in production, there are several additional considerations to perform a smooth upgrade. For example, custom code or Marketplace apps may require additional updates to continue working properly. See [the guide to upgrading Liferay DXP](https://learn.liferay.com/w/dxp/installation-and-upgrades/upgrading-liferay/upgrade-basics) for a comprehensive overview of the core upgrade.
 
-```{note}
-To update to new minor versions or service packs, instead see [Updating to a New Version of Liferay DXP](./updating-your-dxp-instance-to-a-new-minor-version.md).
-```
+!!! note
+    To update to new minor versions or service packs, instead see [Updating to a New Version of Liferay DXP](./updating-your-dxp-instance-to-a-new-minor-version.md).
 
-```{important}
-Upgrading an environment in Liferay PaaS requires restoring an upgraded database, and therefore involves downtime for the Liferay service to restart. Plan ahead for this downtime for production environments.
-```
+!!! important
+   Upgrading an environment in Liferay PaaS requires restoring an upgraded database, and therefore involves downtime for the Liferay service to restart. Plan ahead for this downtime for production environments.
 
 Review the following steps to perform a database upgrade:
 
@@ -35,12 +32,12 @@ Review the following steps to perform a database upgrade:
 
 Before beginning the upgrade procedure, satisfy the following prerequisites:
 
-* [A locally available MySQL installation](https://dev.mysql.com/doc/mysql-installation-excerpt/5.7/en/).
+* [A locally available PostgreSQL 15 installation](https://www.postgresql.org/download/), if your Liferay Cloud database uses PostgreSQL.
+* [A locally available MySQL installation](https://dev.mysql.com/doc/mysql-installation-excerpt/5.7/en/), if your Liferay Cloud database uses MySQL.
 * [Downloaded bundle of Liferay DXP](https://customer.liferay.com/en_US/downloads) for the version of DXP you are upgrading to. Extract this bundle to a location of your choosing.
 
-```{important}
-Download a fresh bundle for the upgrade instead of reusing an old one. Data from previous usage may interfere with the data upgrade.
-```
+!!! important
+    Download a fresh bundle for the upgrade instead of reusing an old one. Data from previous usage may interfere with the data upgrade.
 
 ## Download a Backup
 
@@ -82,19 +79,33 @@ Open a command prompt at the location of the downloaded database archive (named 
     tar -xvzf ARCHIVE_NAME.tgz
     ```
 
-1. Log into the MySQL client on your local system:
+1. Use the database client on your local system to create a database to import the data into.
+
+    **For PostgreSQL**:
+
+    ```bash
+    psql -U postgres -c "CREATE DATABASE lportal OWNER postgres encoding UTF8 locale='en_US.UTF-8' template=template0"
+    ```
+
+    **For MySQL** (using the name of the `.sql` dump without the extension as the database name):
 
     ```bash
     mysql -u root -ppassword
     ```
-
-1. Create a database to import the data into, using the name of the file (minus the extension) as the database name:
 
     ```
     create database DATABASE_NAME;
     ```
 
 1. Import the database from the extracted `.sql` dump:
+
+    **For PostgreSQL** (replacing the name of your dump file`):
+
+    ```bash
+    psql -U postgres lportal -v ON_ERROR_STOP=1 < DATABASE_NAME.sql
+    ```
+
+    **For MySQL**:
 
     ```
     use DATABASE_NAME;
@@ -103,8 +114,6 @@ Open a command prompt at the location of the downloaded database archive (named 
     ```
     source DATABASE_NAME.sql;
     ```
-
-1. Finally, disconnect from the MySQL client:
 
     ```
     exit
@@ -116,9 +125,8 @@ The database and document library are now in place and ready for you to perform 
 
 DXP bundles provide an upgrade tool that is used for data upgrades. This tool is invoked through a script included in the bundle, `db_upgrade.sh`.
 
-```{note}
-The database upgrade tool can be pre-configured for more flexibility when running it. See [Using the Database Upgrade Tool](https://learn.liferay.com/w/dxp/installation-and-upgrades/upgrading-liferay/upgrade-basics/using-the-database-upgrade-tool) for more information on advanced usage.
-```
+!!! note
+    The database upgrade tool can be pre-configured for more flexibility when running it. See [Using the Database Upgrade Tool](https://learn.liferay.com/w/dxp/installation-and-upgrades/upgrading-liferay/upgrade-basics/using-the-database-upgrade-tool) for more information on advanced usage.
 
 Open a command prompt within your `LIFERAY_HOME/tools/portal-tools-db-upgrade-client` folder. Then, run the following command:
 
@@ -126,7 +134,7 @@ Open a command prompt within your `LIFERAY_HOME/tools/portal-tools-db-upgrade-cl
 db_upgrade.sh -j "-Dfile.encoding=UTF-8 -Duser.timezone=GMT -Xmx2048m" -l "output.log"
 ```
 
-The upgrade tool prompts you for information about your installation before beginning the data upgrade. If you have downloaded a Liferay bundle with Tomcat, then it automatically detects some of the directories as default values.
+The upgrade tool prompts you for information about your installation before beginning the data upgrade. If you have downloaded a Liferay bundle with Tomcat, then it automatically detects some of the directories as default values. Make sure you choose the appropriate database for your Liferay Cloud environment when prompted.
 
 Here is an example interaction with the upgrade tool entering this information:
 
@@ -144,7 +152,7 @@ Please enter your portal directory (../../tomcat-9.0.17/webapps/ROOT):
 
 [ db2 mariadb mysql oracle postgresql sqlserver sybase ]
 Please enter your database (mysql):
-mysql
+postgresql
 
 Please enter your database host (localhost):
 
@@ -180,25 +188,14 @@ Now that your Liferay installation has been upgraded, use the following steps to
     tar -czvf volume.tgz document_library
     ```
 
-    ```{important}
-    If the data volume you downloaded contained more folders (such as a `license/` folder), then add these as additional arguments after `document_library`.
-    ```
+    !!! important
+        If the data volume you downloaded contained more folders (such as a `license/` folder), add these as additional arguments after `document_library`.
 
 ### Export and Compress the Upgraded Database
 
-1. Run the following command to perform a database dump:
+Next, create a database dump by [following these steps based on your type of database](../../platform-services/backup-service/creating-a-database-dump.md).
 
-    ```
-    mysqldump -uroot -ppassword --databases --add-drop-database lportal | gzip -c | cat > database.gz
-    ```
-
-1. Compress this file into a `.tgz` archive with the following command:
-
-    ```bash
-    tar zcvf database.tgz database.gz
-    ```
-
-The database and Liferay data volume are now ready for upload to the `backup` service.
+These steps should dump your database and compress it into a resulting `database.gz` file.
 
 ## Upload the Document Library and Database
 
@@ -218,9 +215,8 @@ Upload the document library and database archives to the `backup` service via th
 
 1. When both the database dump and document library are uploaded, click *Initiate Upload*.
 
-```{note}
-You can also upload the database dump and document library via the upload APIs. See the [Backup Service APIs](../../platform-services/backup-service/downloading-and-uploading-backups.md#backup-service-apis) for more information.
-```
+!!! note
+    You can also upload the database dump and document library via the upload APIs. See the [Backup Service APIs](../../platform-services/backup-service/downloading-and-uploading-backups.md#backup-service-apis) for more information.
 
 When the upload is complete, a new backup appears at the top of the list on the Backups page.
 
@@ -254,9 +250,8 @@ Follow these steps to restore a backup to your chosen environment:
 
 1. Click _Restore to environment_.
 
-    ```{note}
-    The chosen environment will be unavailable while the the backup is being deployed.
-    ```
+    !!! note
+        The chosen environment is unavailable while the the backup is being deployed.
 
 <!-- I'd also want to know if there is a zero downtime way to do an upgrade - because that's one of the next questions I would ask if I put myself in the shoes of someone trying to run a prod and business critical env. We may not be ready to say anything about that - but just a thought to put in your mind as potentially a future iteration of this - or let's say if we find out that you CAN do a zero downtime upgrade using a DR environment, then we should update this article to say so. An example:
 

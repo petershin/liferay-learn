@@ -47,7 +47,7 @@ The optimal number of files to download concurrently varies depending on your sy
 {bdg-secondary}`Requires CLI tool version 3.12.0+, backup service version 5.9.0+, and Liferay service version 5.3.0+`
 
 !!! warning
-    Database table and column names are case sensitive in Liferay Cloud. Ensure that the table names are in Pascal case before uploading your database. See [Ensuring Correct Table Capitalization](../../migrating-to-liferay-cloud.md#ensuring-correct-table-capitalization) for more information.
+    Database table and column names are case sensitive in Liferay Cloud. Ensure that the table names use the correct capitalization (lower case for PostgreSQL or Pascal case for MySQL). See [Ensuring Correct Table Capitalization](./creating-a-database-dump.md#ensuring-correct-table-capitalization) for more information.
 
 Run this command to upload a backup with both a database and document library:
 
@@ -65,30 +65,9 @@ To upload a backup of your environment to Liferay Cloud, you must have the datab
 
 ### Creating the Database File
 
-To create a MySQL dump (as a `.sql` script) and compress it into a `.gz` archive, run these commands:
+Creating a database dump requires different commands for PostgreSQL and MySQL databases. See [Creating a Database Dump](./creating-a-database-dump.md) for more steps specific to your type of database.
 
-```bash
-mysqldump -uroot -ppassword --add-drop-database --databases lportal | gzip -c | cat > database.gz
-```
-
-!!! note
-    If your Backup service is not updated to at least version `4.2`, you must also run the following command to convert the archive to a `.tgz` file: `tar zcvf database.tgz database.gz`. Then use the resulting `.tgz` archive to upload.
-
-The `--databases` and `--add-drop-database` flags are necessary for backup restoration to work correctly. You can also use the `/backup/download` API to see how the backup service creates its MySQL dump file.
-
-With these options, the resulting dump file contains the following code just before the create table statements.
-
-```sql
---
--- Current Database: `lportal`
---
-
-/*!40000 DROP DATABASE IF EXISTS `lportal`*/;
-
-CREATE DATABASE /*!32312 IF NOT EXISTS*/ `lportal` /*!40100 DEFAULT CHARACTER SET utf8 */;
-
-USE `lportal`;
-```
+These steps should dump your database and compress it into a resulting `database.gz` file.
 
 ### Creating the Volume File
 

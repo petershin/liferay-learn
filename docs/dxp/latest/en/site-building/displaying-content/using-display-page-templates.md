@@ -5,7 +5,6 @@ toc:
     - ./using-display-page-templates/publishing-content-with-display-pages.md
     - ./using-display-page-templates/displaying-categories-using-display-pages.md
     - ./using-display-page-templates/using-multiple-display-page-templates-to-create-multi-step-applications.md
-    - ./using-display-page-templates/mapping-calendar-event-fields-to-display-page-templates.md
     - ./using-display-page-templates/configuring-seo-and-open-graph.md
 taxonomy-category-names:
 - Sites
@@ -35,7 +34,7 @@ Display page templates currently support the following content types:
 -   [Custom Objects](../../liferay-development/objects/displaying-object-entries.md) {bdg-secondary}`7.4+`
 -   [Documents](../../content-authoring-and-management/documents-and-media/publishing-and-sharing/publishing-documents.md)
 -   [Web Content Articles](../../content-authoring-and-management/web-content/web-content-articles/adding-a-basic-web-content-article.md)
--   [Calendar Event Fields](./using-display-page-templates/mapping-calendar-event-fields-to-display-page-templates.md)
+-   [Calendar Event Fields](../../collaboration-and-social/calendar/mapping-calendar-event-fields-to-display-page-templates.md)
 
 !!! tip
     Use display page templates for designing layouts that you want to reuse for multiple content items.
@@ -69,9 +68,5 @@ If a content type has multiple display page templates created for it, you can [m
 
 :::{grid-item-card} Configuring SEO and Open Graph
 :link: ./using-display-page-templates/configuring-seo-and-open-graph.md
-:::
-
-:::{grid-item-card} Mapping Calendar Event Fields to Display Page Templates
-:link: ./using-display-page-templates/mapping-calendar-event-fields-to-display-page-templates.md
 :::
 ::::

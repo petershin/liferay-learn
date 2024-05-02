@@ -15,7 +15,7 @@ taxonomy-category-names:
 
 # Calendar
 
-The Calendar widget is a tool for storing and sharing scheduled events. It's a personal planner for individual users, a shared calendar for an entire site, or both at the same time. It can be used to create multiple calendars for a single site or user, to send email reminders to users, and more.
+The Calendar widget is a tool for storing and sharing scheduled events. It's a personal planner for individual users, a shared calendar for an entire site, or both at the same time. It can be used to create multiple calendars for a single site or user, to overlay the events stored in multiple calendars for simultaneous view, to send email reminders to users, and more.
 
 !!! note
     The calendar supports social activities. Whenever a calendar event is added or updated, a corresponding social activity notification is created. If the event was added or updated in a calendar that the current user has permission to view, the social activity is viewable in the [Activities widget](./social-tools/using-the-activities-widget.md).

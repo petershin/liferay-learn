@@ -34,13 +34,13 @@ There are three optional command line switches:
 
 `--concurrency` defines the number of files to download in parallel (up to 10,000).
 
-Here's an example of using multiple switches:
+Here's an example using multiple switches:
 
 ```bash
 lcp backup download --backupId [ID] --doclib --concurrency 500
 ```
 
-The optimal number of files to download concurrently varies depending on your system and network specifications. The `--concurrency` flag only affects downloads for the document library because the database is downloaded as a single file.
+The optimal number of files to download concurrently depends on your system and network specifications. The `--concurrency` flag only affects downloads for the document library because the database is downloaded as a single file.
 
 ## Uploading Backups via the CLI Tool
 
@@ -68,6 +68,9 @@ To upload a backup of your environment to Liferay Cloud, you must have the datab
 Creating a database dump requires different commands for PostgreSQL and MySQL databases. See [Creating a Database Dump](./creating-a-database-dump.md) for more steps specific to your type of database.
 
 These steps dump your database and compress it into a resulting `database.gz` file.
+
+!!! tip
+    To ignore a database when creating a dump, use the LCP_DUMP_DATABASES_TO_IGNORE variable.
 
 ### Creating the Volume File
 

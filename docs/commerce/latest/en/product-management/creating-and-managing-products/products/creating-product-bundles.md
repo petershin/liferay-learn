@@ -130,7 +130,7 @@ You can now create product bundles that contain two kinds of product relations.
 These product relations restrict the options that can or can't be selected in a product bundle. For instance, consider a computer hardware distributor that sells pre-built PCs. Some motherboards might not work with processors made by certain companies whereas some processors need a motherboard with a specific chipset to function. Both these scenarios are illustrated using these two options.
 
 !!! important
-    This feature is currently behind a release feature flag. Read [Release Feature Flags](https://learn.liferay.com/web/guest/w/dxp/system-administration/configuring-liferay/feature-flags#release-feature-flags) for more information.
+    This feature was released behind a [release feature flag](https://learn.liferay.com/web/guest/w/dxp/system-administration/configuring-liferay/feature-flags#release-feature-flags) in Liferay DXP 2024.Q1/Portal 7.4 GA112. It was made Generally Available (GA) in 2024.Q2/GA120.
 
 ### Requires in Bundle
 

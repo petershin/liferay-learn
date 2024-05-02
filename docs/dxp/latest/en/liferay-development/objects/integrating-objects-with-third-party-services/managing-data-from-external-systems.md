@@ -1,6 +1,7 @@
 ---
 toc:
   - ./managing-data-from-external-systems/using-objects-with-salesforce.md
+  - ./managing-data-from-external-systems/using-objects-with-sugar-crm.md
 uuid: f1b85ce0-bfb0-4abd-bf57-534edda1d5f0
 taxonomy-category-names:
 - Development and Tooling
@@ -41,9 +42,9 @@ Examples include creating display pages for object data, displaying data in coll
 
 ## Supported Connectors for Proxy Objects
 
-Currently, Liferay includes a [beta](../../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags) connector to Salesforce for proxy objects. With it, you can integrate your proxy object with [custom Salesforce objects](https://help.salesforce.com/s/), using Salesforce as an external storage system.
+Liferay includes [beta](../../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags) connectors to Salesforce and SugarCRM for proxy objects. With these, you can integrate your proxy object with [Salesforce](https://help.salesforce.com/s/) or [SugarCRM objects](https://support.sugarcrm.com/). In this way you can use the external system for storage.
 
-To use this feature, enable the Proxy Object (LPS-135430) [feature flag](../../../system-administration/configuring-liferay/feature-flags.md) and see [Using Objects with Salesforce](./managing-data-from-external-systems/using-objects-with-salesforce.md) for more information.
+To use proxy objects, enable the Proxy Object (LPS-135430) [feature flag](../../../system-administration/configuring-liferay/feature-flags.md) and see [Using Objects with Salesforce](./managing-data-from-external-systems/using-objects-with-salesforce.md) for more information.
 
 ## Related Topics
 

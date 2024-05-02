@@ -36,21 +36,23 @@ Next to each calendar is a colored box. Click it to show/hide that calendar's ev
 
 1. Pick a color to color code events whenever multiple calendar events are displayed at once.
 
-1. Decide if it's the user's *default calendar*, which is the one shown automatically whenever the widget is displayed.
+1. Decide if the calendar should be the user's default, automatically shown whenever the widget is displayed.
 
 1. Decide to enable ratings and comments on the calendar events.
 
 1. Configure visibility and permissions.
 
-   After the calendar is created, you can set permissions by clicking on the arrow to the right of the calendar's name and selecting *Permissions*.
+   After the calendar is created, set permissions by clicking on the arrow to the right of the calendar's name &rarr; *Permissions*.
 
    Read [Calendar Permissions Reference](#calendar-permissions-reference) to learn more about each permission.
+
+1. Click *Save*.
 
 ## Adding Events to a Calendar
 
 1. Click on any day in the main viewing area to open an event creation pop-up. If you've selected the *Day* or *Week* view, you can click on the specific time when your event begins.
 
-   Alternatively, you can click *Add Event*.
+   Alternatively, click *Add Event*.
 
    ![Click anywhere on the calendar and the event creation pop-up appears. Click *Edit* to specify details for your event.](./using-the-calendar-widget/images/02.png)
 
@@ -60,11 +62,11 @@ Next to each calendar is a colored box. Click it to show/hide that calendar's ev
 
 1. If you choose to edit the event, complete the edit event form. Enter start and end times and enter a description.
 
-1. To schedule an event that reoccurs, check the *Repeat* box and fill in the *Repeat* pop-up to specify whether an event repeats daily, weekly, monthly, or yearly, how often it repeats, and when (or if) it ends.
+1. To schedule a recurring event, check the Repeat box and specify its frequency, duration, and end date in the pop-up.
 
    ![The Repeat box allows you to specify whether an event repeats daily, weekly, monthly, or yearly, how often it repeats, and when (or if) it ends.](./using-the-calendar-widget/images/04.png)
 
-1. Configure your event further through the options in the collapsed sections: [Details](#details), [Invitations](#invitations), [Reminders](#reminders), [Categorization](#categorization), and [Related Assets](#related-assets).
+1. Further configure your event through the options in the collapsed sections: [Details](#details), [Invitations](#invitations), [Reminders](#reminders), [Categorization](#categorization), and [Related Assets](#related-assets).
 
 1. Click *Publish* or *Save as a Draft* to publish your event later.
 
@@ -76,13 +78,11 @@ In the Details section, you can move the event to another calendar, enter a loca
 
 ### Invitations
 
-In the invitations section, add users, sites, or calendar resources to your event.
+In the invitations section, add users, sites, or [calendar resources](#creating-calendar-resources) to your event.
 
 1. Enter the name of an invitee (user, site, or resource) in the *Invitations* field. Hit *Enter* to add them to the *Pending* column.
 
-   An automated email is sent to invitees who must navigate to the calendar widget to respond. When invitees respond to the invitation, their names move to the Accepted, Declined, or Maybe columns.
-
-   Read [Customize Email Notifications](#customizing-email-notifications) to learn how to customize the content of the invitation email.
+   An automated [customizable](#customizing-email-notifications) email is sent to invitees who must navigate to the calendar widget to respond. When invitees respond to the invitation, their names move to the Accepted, Declined, or Maybe columns.
 
 1. Check the availability of invitees by clicking the arrow next to their names and selecting *Check Availability*. This displays their calendars (assuming you have permission to view them).
 
@@ -101,9 +101,7 @@ Read [Customize Email Notifications](#customizing-email-notifications) to learn 
 
 ### Categorization
 
-Tag your event or assign it to a category so it appears in relevant search results and gets published by any asset publisher set to publish content assigned to the same category.
-
-Read [Defining Categories and Vocabularies for Content](../../content-authoring-and-management/tags-and-categories/defining-categories-and-vocabularies-for-content.md) to learn more about categories and vocabularies.
+[Tag your event or assign it to a category](../../content-authoring-and-management/tags-and-categories.md) so it appears in relevant search results and gets published by any asset publisher set to publish content assigned to the same category.
 
 ![The Categorization section.](./using-the-calendar-widget/images/08.png)
 
@@ -129,6 +127,32 @@ Customize email notifications for event invitations and reminders.
       It's a good idea to include a link to the event (use the variable `$EVENT_URL$]`) as users must navigate to the calendar widget to respond.
 
 1. Click *Save*. Now your notifications contain the proper text. The next article covers setting up calendar resources and porting data from one installation to another.
+
+## Creating Calendar Resources
+
+With calendar resources, you can invite entities other than people to your events. This is beneficial for finding the availability of important resources your event requires, like a conference room, laptop, or, at The Lunar Resort, the Sasquatch Space Suit used to scare guests out on Lunar hikes.
+
+To add a new calendar resource,
+
+1. Click on the *Resources* tab and click *New*.
+
+   ![Figure 1: Resources are accessed from the tab menu at the top of the widget.](../../images/calendar-resources.png)
+
+1. Fill in the *New Resource* form. Enter a name, give it a description, and choose whether to set it as active.
+
+1. You can also [tag it and assign it to categories](../../content-authoring-and-management/tags-and-categories.md).
+
+1. Configure its [permissions](#calendar-permissions-reference).
+
+1. Click *Save*.
+
+The resource has its calendar that was generated automatically (this is how users can check its availability when creating events). Just as with users, however, resources can have more than one calendar:
+
+1. Go to the widget's *Resources* tab, click ![Actions](../../images/icon-actions.png) next to the resource, and select *View Calendars*.
+
+2. Click *Add Calendar* and continue just as if you were creating a calendar for a user or a site.
+
+Once a resource is created, invite it to your events just as you would an attendee.
 
 ## Calendar Permissions Reference
 

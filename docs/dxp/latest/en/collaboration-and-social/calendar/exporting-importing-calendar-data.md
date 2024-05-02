@@ -45,11 +45,9 @@ Like other Liferay Applications, you can [export](#exporting-and-importing-calen
 
 1. Click the *Import* tab.
 
-1. Click *Choose File* or else drag-and-drop a LAR into the area surrounded by a dotted line. Click *Continue*.
+1. Click *Choose File* or drag-and-drop a LAR into the area surrounded by a dotted line. Click *Continue*.
 
    ![Calendar data import process.](./exporting-importing-calendar-data/images/03.png)
-
-1. Decide how much data you want to import:
 
 1. Under *Application*, check the box to import the configuration stored in the LAR or leave it unchecked to keep your current configuration.
 
@@ -67,7 +65,7 @@ Like other Liferay Applications, you can [export](#exporting-and-importing-calen
 
 1. Click *Import*.
 
-Your calendar is set up and ready to go! Better check it to see what's next on the agenda.
+Your imported calendar data is now available for use. Better check it to see what's next on the agenda.
 
 ## Related Topics
 

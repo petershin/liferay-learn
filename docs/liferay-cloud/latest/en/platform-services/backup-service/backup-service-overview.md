@@ -210,4 +210,4 @@ This `backup/LCP.json` example creates backups every 12 hours (i.e., 00:00 and 1
 - [Downloading and Uploading Backups](./downloading-and-uploading-backups.md)
 - [Restoring Data from a Backup](./restoring-data-from-a-backup.md)
 - [Configuration via LCP.json](../../reference/configuration-via-lcp-json.md)
-- [Database Service (MySQL)](../database-service/database-service.md)
+- [Database Service (MySQL)](../database-service.md)

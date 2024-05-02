@@ -67,6 +67,6 @@ Once published, all connected services restart and stop receiving requests for s
 
 ## Related Topics
 
-* [Database Service](./database-service.md)
+* [Database Service](../database-service.md)
 * [Changing your Database Password](./changing-your-database-password.md)
 * [Managing Secure Environment Variables with Secrets](../../tuning-security-settings/managing-secure-environment-variables-with-secrets.md)

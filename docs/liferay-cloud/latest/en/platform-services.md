@@ -27,6 +27,6 @@ uuid: 8dac09ff-0f0e-4e07-93d1-d69feb1d8481
 
 ## Database Service
 
-- [Database Service](./platform-services/database-service/database-service.md)
+- [Database Service](./platform-services/database-service.md)
 - [Changing Your Database Username](./platform-services/database-service/changing-your-database-username.md)
 - [Changing Your Database Password](./platform-services/database-service/changing-your-database-password.md)

@@ -247,4 +247,4 @@ curl -X POST \
 
 - [Backup Service Overview](./backup-service-overview.md)
 - [Restoring Data from a Backup](./restoring-data-from-a-backup.md)
-- [Database Service (MySQL)](../database-service/database-service.md)
+- [Database Service](../database-service.md)

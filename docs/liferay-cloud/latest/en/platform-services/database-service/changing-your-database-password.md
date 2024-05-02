@@ -8,7 +8,7 @@ uuid: 792fe30d-65cb-4c3e-8ea6-a97cde3dc4cd
 ---
 # Changing Your Database Password
 
-Changing the database password for your [`database` service](./database-service.md) also affects the other services that must connect to the database.
+Changing the database password for your [`database` service](../database-service.md) also affects the other services that must connect to the database.
 
 !!! warning
     Updating your database password requires a period of downtime for you to restore a backup to your database service, and then restart all of your services. Plan ahead to make time for this before rotating your database password.

@@ -57,7 +57,7 @@ Attack detection rules are not provided by default. You must provide rules accor
 
 ### OWASP ModSecurity Core Rule Set
 
-The OWASP Foundation's ModSecurity Core Rule Set (CRS) is recommended for use with Liferay Cloud. You can download the OWASP CRS [here](https://coreruleset.org/installation/).
+The OWASP Foundation's ModSecurity Core Rule Set (CRS) is recommended for use with Liferay Cloud. You can download the OWASP CRS [here](https://coreruleset.org/docs/deployment/install/).
 
 To add the OWASP CRS to ModSecurity,
 

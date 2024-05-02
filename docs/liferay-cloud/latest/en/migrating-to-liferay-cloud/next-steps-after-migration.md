@@ -59,7 +59,7 @@ In addition to the `liferay` service, your main Liferay Cloud environments all h
 
 * The [`webserver` service](../platform-services/web-server-service.md) provides a gateway between your Liferay Cloud services and the rest of the internet. Depending on the performance and the types of requests your Liferay instances service, you may want to tweak the [timeout or number of retries](../platform-services/web-server-service.md#environment-variables) for requests to be handled as expected.
 
-* The [`database` service](../platform-services/database-service/database-service.md) securely provides the database that you [uploaded earlier in migration](./uploading-and-restoring-the-data-backup.md). You may want to configure your preferred [database maintenance window](../platform-services/database-service/database-service.md#database-maintenance-window-variables) to mitigate the impact of downtime for maintenance.
+* The [`database` service](../platform-services/database-service.md) securely provides the database that you [uploaded earlier in migration](./uploading-and-restoring-the-data-backup.md). You may want to configure your preferred [database maintenance window](../platform-services/database-service.md#database-maintenance-window-variables) to mitigate the impact of downtime for maintenance.
 
 ## Optimize and Tune Application Performance
 

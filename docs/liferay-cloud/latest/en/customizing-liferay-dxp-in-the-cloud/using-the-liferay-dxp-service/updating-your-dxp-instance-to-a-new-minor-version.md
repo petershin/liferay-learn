@@ -9,13 +9,12 @@ uuid: b704f84a-8cc9-429a-acde-06e029072ab2
 
 Regularly updating your Liferay DXP installation is an important part of maintaining your Liferay PaaS environment. Use the available tags on the [Liferay DXP Docker Hub page](https://hub.docker.com/r/liferay/dxp/tags) to update and deploy your service.
 
-```{note}
-Upgrading to a new major version (such as Liferay DXP 7.3) requires a different procedure from a smaller version update. See [Upgrading Your Liferay DXP Instance](./upgrading-your-liferay-dxp-instance.md) for more information.
-```
+!!! note
+    Upgrading to a new major version (such as Liferay DXP 7.3) requires a different procedure from a smaller version update. See [Upgrading Your Liferay DXP Instance](./upgrading-your-liferay-dxp-instance.md) for more information.
 
-```{note}
-If you want to install a [hotfix](https://learn.liferay.com/w/dxp/installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier/understanding-patch-types-for-dxp-7-3-and-earlier.md#hotfixes), then follow [these steps](./deploying-to-the-liferay-service.md#deploying-hotfixes) instead.
-```
+!!! note
+    If you want to install a [hotfix](https://learn.liferay.com/web/guest/w/dxp/installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier/understanding-patch-types-for-dxp-7-3-and-earlier#hotfixes), follow [these steps](./deploying-to-the-liferay-service.md#deploying-hotfixes) instead.
+
 
 ## Enabling Module Upgrades for DXP 7.3+
 

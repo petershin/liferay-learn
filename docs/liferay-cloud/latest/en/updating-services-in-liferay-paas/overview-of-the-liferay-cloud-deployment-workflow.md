@@ -24,7 +24,7 @@ Configure a service's [LCP.json file](../reference/configuration-via-lcp-json.md
 * [Liferay Service](../customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.md)
 * [Backup Service](../platform-services/backup-service/backup-service-overview.md)
 * [Continuous Integration Service (Jenkins)](../platform-services/continuous-integration.md)
-* [Database Service](../platform-services/database-service/database-service.md)
+* [Database Service](../platform-services/database-service.md)
 * [Search Service (Elasticsearch)](../platform-services/search-service.md)
 * [Web Server Service (Nginx)](../platform-services/web-server-service.md)
 

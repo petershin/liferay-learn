@@ -19,21 +19,17 @@ You can configure form field autocompletion in the Forms application:
 
 ## Manual Autocompletion
 
-To enable text field autocompletion from a list of manually entered options, 
-
 1. Go to the Forms application. Open *Site Menu* ![Site Menu](../../../images/icon-menu.png) &rarr; *Content & Data* &rarr; *Forms*.
 
 1. Add a form and a text field.
 
 1. In the text field's configuration sidebar, add the options a user sees while typing in the field.
 
-1. Save and publish the form, then make sure the autocmpletion is working.
+1. Save and publish the form, then make sure the autocompletion is working.
 
    ![You can add autocomplete options manually.](./field-autocompletion/images/03.gif)
 
-## Autocompletion from a Data Provider
-
-To enable text field autocompletion from a list of options returned by a [REST data provider](../data-providers/using-the-rest-data-provider-to-populate-form-options.md), 
+## Autocompletion from a [Data Provider](../data-providers/using-the-rest-data-provider-to-populate-form-options.md)
 
 1. Go to the Forms application. Open *Site Menu* ![Site Menu](../../../images/icon-menu.png) &rarr; *Content & Data* &rarr; *Forms*.
 
@@ -65,9 +61,9 @@ To enable text field autocompletion from a list of options returned by a [REST d
 
 {bdg-secondary}`DXP 2024.Q2+; Portal 7.4 GA120+`
 
-Browser autocompletion [through HTML attributes](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#autofill) is available for Date, Numeric, and Text fields. To configure it,
+Browser autocompletion [through HTML attributes](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#autofill) is available for Date, Numeric, and Text fields. 
 
-1. First, make sure your browser settings have at least one address configured for autofill. For example,
+1. First, make sure your browser settings have at least one address configured for autofill:
 
    ![Configure the autofill information for at least one address in your browser.](./field-autocompletion/images/01.png)
 
@@ -93,7 +89,7 @@ Browser autocompletion [through HTML attributes](https://html.spec.whatwg.org/mu
 
 1. Go to the form and confirm that autocompletion is working:
 
-   ![You can autocomplete form fields with the HTMl autocomplete attribute.](./field-autocompletion/images/02.gif)
+   ![You can autocomplete form fields with the HTML autocomplete attribute.](./field-autocompletion/images/02.gif)
 
 Autocompletion in form fields can make users more likely to fill out your forms.
 

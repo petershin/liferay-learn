@@ -20,15 +20,15 @@ Liferay Workspace is the developer's tool for creating and managing Liferay deve
 
 1. From inside your workspace, find the project template that most closely matches what you want to do, using this command: 
 
-    ```bash
-    blade create -l
-    ```
+   ```bash
+   blade create -l
+   ```
 
 1. Once you've identified the template you want to use, generate your project. For example, to create a MVC Portlet, use this command: 
 
-    ```bash
-    blade create -t mvc-portlet -p com.acme.z3x1.portlet -c MyPortlet myproject-web
-    ```
+   ```bash
+   blade create -t mvc-portlet -p com.acme.z3x1.portlet -c MyPortlet myproject-web
+   ```
 
     This creates a project using the MVC Portlet template (`-t mvc-portlet`), generates the portlet class in the Java package you specify (`-p com.acme.z3x1.portlet`), specifies the name of the portlet class (`-c MyPortlet`), and names the project `myproject-web`. 
 
@@ -38,17 +38,17 @@ You don't need Blade CLI to create projects. You can create a project folder man
 
 1. From inside your workspace, create a folder to house your project: 
 
-    ```bash
-    cd [my project name]
-    ```
+   ```bash
+   cd [my project name]
+   ```
 
 1. Create a `build.gradle` script for your project. Since you're using Liferay Workspace, most of the time you only need one dependency: 
 
-    ```groovy
-    dependencies {
+   ```groovy
+   dependencies {
         compileOnly group: "com.liferay.portal", name: "release.portal.api"
-    }
-    ```
+   }
+   ```
 
 1. Create the folder structure for your project. 
 
@@ -87,23 +87,23 @@ You can also create a themes project in Workspace the same way you create it out
 
 1. Assuming you've installed the themes generator, navigate to your Liferay Workspace. Like other projects, you can place your theme projects anywhere. Run the following command to create a theme project: 
 
-    ```bash
-    yo liferay-theme
-    ```
+   ```bash
+   yo liferay-theme
+   ```
 
 1. Navigate into your new theme folder and run 
 
-    ```bash
-    ../gradlew build
-    ```
+   ```bash
+   ../gradlew build
+   ```
 
     The above command assumes you're one folder down from the Workspace root; if you've nested your project (perhaps in a `themes` folder), adjust the call to `gradlew` accordingly. This command builds the frontend theme using Liferay's Node Gradle Plugin. 
 
 To verify Workspace recognizes your project, use this command to display all the projects: 
 
-    ```bash
-    ./gradlew projects
-    ```
+```bash
+./gradlew projects
+```
 
 ## Adding a Liferay Bundle to Workspace
 
@@ -117,9 +117,9 @@ Workspace automates the download and setup of a runtime for your code. When you'
 
 1. When using a more recent versions of *gradle workspace plugins* (v10+), `liferay.workspace.product` will be automatically added to your `gradle.properties` file. If using older versions, open `gradle.properties` from the root folder of your workspace and set the bundle URL property: 
 
-    ```properties
-    liferay.workspace.bundle.url=[paste the URL from your clipboard]
-    ```
+   ```properties
+   liferay.workspace.bundle.url=[paste the URL from your clipboard]
+   ```
 
 !!! warning
     If `liferay.workspace.product` is in your `gradle.properties` file, `liferay.workspace.bundle.url` is not required.
@@ -136,15 +136,15 @@ Workspace automates the download and setup of a runtime for your code. When you'
 
 1. Ready to download the bundle? Run this command: 
 
-    ```bash
-    ./gradlew initBundle
-    ```
+   ```bash
+   ./gradlew initBundle
+   ```
 
     Or if you prefer Blade, 
 
-    ```bash
-    blade server init
-    ```
+   ```bash
+   blade server init
+   ```
 
 If on DXP, for security reasons you should remove your password from the properties file after your bundle has downloaded. 
 

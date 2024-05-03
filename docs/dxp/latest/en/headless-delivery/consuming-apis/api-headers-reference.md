@@ -55,7 +55,12 @@ curl \
 !!! tip
     {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+` Use the `Accept-Language` header with both Rest API and GraphQL to return values in the selected language when dealing with custom [objects](../../liferay-development/objects.md).
 
-    Unless the Enable Entry Translation is disabled. Then, the query returns the default language value.
+!!! warning
+    {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+` When the "Enable Entry Translation" option is turned off for a custom object's field, it means the field doesn't support translation into multiple languages.
+
+    So, if a value is stored for a specific language other than the default one, and you query for the field without specifying the language, you'll get an empty response.
+
+    That's because the default language value isn't used automatically as a fallback when you query for a different language. Instead, the response only includes values stored for the language you've queried.
 
 ## X-Accept-All-Languages
 

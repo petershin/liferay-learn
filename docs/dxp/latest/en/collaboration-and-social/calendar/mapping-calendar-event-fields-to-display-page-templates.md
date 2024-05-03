@@ -66,11 +66,11 @@ Create a display page template and map calendar event fields to the elements. Fo
 
 1. Repeat the steps to add a paragraph element, add a 1.5 rem bottom margin to it, and map it to the *Description* of the calendar event.
 
-1. Repeat the steps to add a heading element, add a 0.5 rem bottom margin to it, and map it to the *Location* of the calendar event.
+1. Repeat the steps to add a heading element. Under the General tab, set it as an H5 Heading Level. Under the Styles tab, add a 0.5 rem bottom margin to it. Map it to the *Location* of the calendar event.
 
-1. Repeat the steps to add a heading element and map it to the *Start Date* of the calendar event.
+1. Repeat the steps to add a heading element. Under the General tab, set it as an H5 Heading Level. Map it to the *Start Date* of the calendar event.
 
-1. Repeat the steps to add a heading element and map it to the *End Date* of the calendar event.
+1. Repeat the steps to add a heading element. Under the General tab, set it as an H5 Heading Level. Map it to the *End Date* of the calendar event.
 
 1. Click *Publish*
 
@@ -113,7 +113,7 @@ For this example, you'll create a simple structure to display the event's title 
 
    ![The titles for the existing events are shown as collection items in the collection display.](./mapping-calendar-event-fields-to-display-page-templates/images/04.png)
 
-1. In the Fragments and Widgets sidebar, look for the Container fragment. Drag and drop it into the Collection Item area. In the Browser, click on the *container* once and select the *Styles* tab on the right. Add 14.5 rem right and left margins and a 4.5 rem top margin.
+1. In the Fragments and Widgets sidebar, look for the Container fragment. Drag and drop it into the Collection Item area. In the Browser, click on the *container* once and select the *Styles* tab on the right. Add 14.5 rem right and left margins and a 3.0 rem top margin.
 
 1. Add a heading in the container. In the Browser, click on the *heading* once and select the *Styles* tab on the right. Add a 1 rem bottom margin.
 

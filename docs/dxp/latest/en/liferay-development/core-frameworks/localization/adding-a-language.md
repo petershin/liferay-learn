@@ -74,6 +74,24 @@ By default, the [`portal.properties`](https://github.com/liferay/liferay-portal/
 
     ![Select and use the new language for your Liferay instance.](./adding-a-language/images/02.png)
 
+## Changing the Writing Direction
+
+When adding a language that writes from right to left, add the following property to your language properties:
+
+```
+lang.dir=rtl
+```
+
+This might affect the site's CSS in unexpected ways. You can prevent CSS rules from transforming (flipping) by placing the `/* @noflip */` decoration to the left of the CSS rule you want to apply it to. This example gives a left margin of `20em` to the `body` no matter the writing direction of the selected language:
+
+```css
+/* @noflip */ body {
+  margin-left: 20em;
+}
+```
+
+You can also use the `.rtl` CSS selector to apply rules exclusively to RTL languages.
+
 ## Adding a Flag Icon
 
 Liferay's out-of-the-box languages have flag icons that appear on the language selector.

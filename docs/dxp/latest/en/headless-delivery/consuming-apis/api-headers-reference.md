@@ -12,7 +12,24 @@ taxonomy-category-names:
 
 API headers are components of HTTP requests that provide essential information to the server about the client's request and how the server should handle it.
 
-Here's a list of available headers you can use when making Headless API requests:
+You can use API Headers for both [REST APIs](./consuming-rest-services.md) and [GraphQL](./consuming-graphql-apis.md).
+
+For REST APIs, you can include headers using cURL commands. Use the `--header "Header: Value"` syntax to specify the required headers. The headers you include depend on the specific REST API you're interacting with and the authentication mechanisms it supports.
+
+For GraphQL, you can input header key/value pairs directly through the GraphQL browser interface. Alternatively, if you prefer using cURL commands, you can include GraphQL queries using the `--data` parameter along with the necessary headers using the `--header "Header: Value"` syntax for each header.
+
+Here's an example of a cURL command that makes a GraphQL request:
+
+```bash
+curl \
+   http://localhost:8080/o/graphql \
+   --data '{"query":"{ blogPostings(filter: \"\", page: 1, pageSize: 10, search: \"\", siteKey: \"20117\", sort: \"\") { page items { id articleBody headline creator { name } } } }"}' \
+   --header "content-type: application/json" \
+   --request POST \
+   --user test@liferay.com:test
+```
+
+These are the available headers you can use when making Headless API requests:
 
 - [`Accept`](#accept)
 - [`Accept-Language`](#accept-language)
@@ -47,7 +64,7 @@ Here's an example of a cURL command where the preferred language for the respons
 ```bash
 curl \
 	"http://example.com/o/c/customobjects/" \
-	--header "accept: application/json" \
+	--header "Accept: application/json" \
 	--header "Accept-Language: pt-BR" \
 	--request "GET" \
 ```

@@ -49,7 +49,7 @@ Liferay DXP는 기본적으로 50개 언어를 지원합니다. 각 로캘에는
 
 샘플 프로젝트에는 `Language.properties` 파일에 하나의 언어 키가 있습니다. 애플리케이션에 필요한 만큼 언어 키를 추가한 다음 Language Builder를 실행합니다.
 
-Liferay에 언어 키를 배포하려면 [글로벌 언어 키 재정의](../../../liferay-internals/extending-liferay/overriding-global-language-translations-with-language-properties.md)참조하십시오. 지침은 기존 키를 재정의하든 새 키를 추가하든 동일합니다.
+Liferay에 언어 키를 배포하려면 [글로벌 언어 키 재정의](../../../liferay-internals/extending-liferay/overriding-global-language-translations.md)참조하십시오. 지침은 기존 키를 재정의하든 새 키를 추가하든 동일합니다.
 
 일부 언어가 자동으로 번역되지 않도록 제외하려면 프로젝트의 `build.gradle` 파일에서 `excludeLanguageIds` 속성을 사용하세요. 예를 들어 프랑스어를 포함하려면
 

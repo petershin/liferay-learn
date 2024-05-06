@@ -24,7 +24,7 @@
 
 1. **제안 제공자** : 기본 제공자이자 Liferay CE에서 기본 제공되는 유일한 제공자는 `Basic`입니다. Liferay DXP에서는 대신 하나 이상의 Blueprint 기여자를 사용하도록 선택할 수 있습니다. 자세한 내용은 [검색창 제안 청사진](./search-bar-suggestions-blueprints.md) 을 참조하십시오.
 
-1. **표시 그룹 이름** : 기본값은 `제안`입니다. 이 값은 영어에 대한 UI의 제목으로 Suggestions로 확인되는 언어 키입니다. 언어 키를 변경하거나 직접 추가할 수 있습니다. 예를 들어 `is-this-what-you're-looking-for`로 만든 다음 [번역](../../../system-administration/configuring-liferay/changing-translations-with-language-override.md#adding-a-language-key-and-translation) 추가합니다. 둘 이상의 Blueprint 기여자를 사용하는 경우 각각 고유한 표시 그룹 이름 값이 있는지 확인하십시오.
+1. **표시 그룹 이름** : 기본값은 `제안`입니다. 이 값은 영어에 대한 UI의 제목으로 Suggestions로 확인되는 언어 키입니다. 언어 키를 변경하거나 직접 추가할 수 있습니다. 예를 들어 `is-this-what-you're-looking-for`로 만든 다음 [번역](../../../system-administration/configuring-liferay/changing-language-translations.md#adding-a-language-key-and-translation) 추가합니다. 둘 이상의 Blueprint 기여자를 사용하는 경우 각각 고유한 표시 그룹 이름 값이 있는지 확인하십시오.
 
 1. **크기** : 검색 표시줄 드롭다운 목록에 표시할 최대 결과 수를 설정합니다. 기본값은 `5`입니다. 표시 공간이 제한되어 있으므로 크기를 크게 설정해도 이점이 없습니다.
 

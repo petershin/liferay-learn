@@ -1,7 +1,7 @@
 # 이전 버전에서 모듈 언어 번역 재정의
 
 ```{important}
-Liferay DXP 7.4 U4(업데이트 4) 이상 또는 Liferay Portal 7.4 GA8 이상에서 [언어 재정의 도구](../../system-administration/configuring-liferay/changing-translations-with-language-override.md)는 권장 접근 방식. Liferay DXP/Portal 7.4+로 작업하는 경우 [전역 언어 번역 재정의](./overriding-global-language-translations-with-language-properties.md)에 대한 지침을 따르십시오.
+Liferay DXP 7.4 U4(업데이트 4) 이상 또는 Liferay Portal 7.4 GA8 이상에서 [언어 재정의 도구](../../system-administration/configuring-liferay/changing-language-translations.md)는 권장 접근 방식. Liferay DXP/Portal 7.4+로 작업하는 경우 [전역 언어 번역 재정의](./overriding-global-language-translations.md)에 대한 지침을 따르십시오.
 ```
 
 이전 버전에서 Liferay 응용 프로그램별 언어 번역을 재정의하는 것은 이전 버전의 전역 언어 번역을 재정의하는 것과 유사하지만 추가 단계가 있습니다.
@@ -197,12 +197,12 @@ Liferay DXP 7.4 U4(업데이트 4) 이상 또는 Liferay Portal 7.4 GA8 이상�
 ```
 
 ```{note}
-언어 키 이름이 동일한 경우 DXP 7.4+에서 언어 번역 재정의를 계속 사용할 수 있습니다. [`/modules/apps/portal-language/portal-language-lang/src/main/resources/content/Language[_xx_XX].properties`](https://github.com/liferay/liferay-portal/tree/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-language/portal-language-lang/src/main/resources/content) 파일. 선택적으로 `ResourceBundle` 클래스를 제거하고 `bnd.bnd` 파일의 `Provide-Capability` 헤더를 [Overriding Global Language Translations with Language Properties](./overriding-global-language-translations-with-language-properties.md#declare-the-oOverride-in-the-bnd-file) .
+언어 키 이름이 동일한 경우 DXP 7.4+에서 언어 번역 재정의를 계속 사용할 수 있습니다. [`/modules/apps/portal-language/portal-language-lang/src/main/resources/content/Language[_xx_XX].properties`](https://github.com/liferay/liferay-portal/tree/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-language/portal-language-lang/src/main/resources/content) 파일. 선택적으로 `ResourceBundle` 클래스를 제거하고 `bnd.bnd` 파일의 `Provide-Capability` 헤더를 [Overriding Global Language Translations](./overriding-global-language-translations.md#declare-the-oOverride-in-the-bnd-file) .
 ```
 
 순위가 높은 리소스 묶음 집합 서비스에 대한 결과를 검색합니다.
 
 ## 관련 정보
 
-* [전역 언어 번역 재정의](./overriding-global-language-translations-with-language-properties.md)
-* [언어 번역 변경](../../system-administration/configuring-liferay/changing-translations-with-language-override.md)
+* [전역 언어 번역 재정의](./overriding-global-language-translations.md)
+* [언어 번역 변경](../../system-administration/configuring-liferay/changing-language-translations.md)

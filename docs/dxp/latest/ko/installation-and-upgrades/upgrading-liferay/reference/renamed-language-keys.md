@@ -122,5 +122,5 @@ Liferay의 모듈은 [`Portal-Language-Lang`](https://github.com/liferay/liferay
 
 ## 관련 정보
 
-* [전역 언어 번역 재정의](../../../liferay-internals/extending-liferay/overriding-global-language-translations-with-language-properties.md)
+* [전역 언어 번역 재정의](../../../liferay-internals/extending-liferay/overriding-global-language-translations.md)
 * [MVC 포틀릿에서 현지화된 메시지 사용](../../../building-applications/developing-a-java-web-application/using-mvc/using-localized-messages-in-an-mvc-portlet.md)

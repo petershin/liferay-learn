@@ -49,7 +49,7 @@ Liferayは現在、約50の言語をサポートしています。 これらの�
     sign-in=ስግን እን
     ```
 
-1. 作成した `language.properties` ファイルで言語モジュールを作成し、モジュールをLiferayのインストールにデプロイします。 このモジュールを作成するためのサンプルプロジェクトと具体的な手順については、 [標準言語ファイルの上書き方法](../../../liferay-internals/extending-liferay/overriding-global-language-translations-with-language-properties.md) を参照してください。
+1. 作成した `language.properties` ファイルで言語モジュールを作成し、モジュールをLiferayのインストールにデプロイします。 このモジュールを作成するためのサンプルプロジェクトと具体的な手順については、 [標準言語ファイルの上書き方法](../../../liferay-internals/extending-liferay/overriding-global-language-translations.md) を参照してください。
 
 1. インストールした [Liferay Home](../../../installation-and-upgrades/reference/liferay-home.md) フォルダに`portal-ext.properties` ファイルを作成または変更します。 なお、このファイルは、 `portal.properties` ファイルで定義された有効なデフォルトロケールを上書きします。 そのため、 `portal-ext.properties` ファイルに使用する予定の言語をすべて列挙します。 `locales`と`locales.enabled`の両方を定義します。 例:
 

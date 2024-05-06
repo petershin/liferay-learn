@@ -32,7 +32,7 @@
 
 ### 기본 사용자 프로필 이미지의 이니셜 순서 변경
 
-기본 사용자 아이콘(사용자 이니셜 포함)은 해당 로케일에서 작동하도록 구성할 수 있습니다. 이러한 설정은 [언어 설정 모듈](../../liferay-internals/extending-liferay/customizing-localization/adding-a-language.md)에서 구성됩니다.
+기본 사용자 아이콘(사용자 이니셜 포함)은 해당 로케일에서 작동하도록 구성할 수 있습니다. 이러한 설정은 [언어 설정 모듈](../../building-applications/core-frameworks/localization/adding-a-language.md)에서 구성됩니다.
 
 `lang.user.default.portrait=initials` 은 아바타에 사용할 아이콘 유형을 설정합니다. 기본값은 **이니셜** 입니다. initials로 설정하면 다음 속성은 표시할 이니셜과 순서를 구성합니다. 또는 위에 표시된 것과 동일한 이니셜이 아닌 기본 이미지를 제공하는 **image** 을 지정합니다.
 

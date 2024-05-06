@@ -62,7 +62,7 @@ DXPは、アプリケーションサーバー上で実行されるWebアプリ�
 
 * [サービス](./fundamentals/apis-as-osgi-services.md)
 * [サービスのカスタマイゼーション](./extending-liferay/overriding-osgi-services.md)
-* [言語キー\（ローカライズされたメッセージ\）](../liferay-development/building-applications/developing-a-java-web-application/using-mvc/using-localized-messages-in-an-mvc-portlet/sharing-localized-messages.md)
+* [言語キー\（ローカライズされたメッセージ\）](../building-applications/developing-a-java-web-application/using-mvc/sharing-localized-messages.md)
 * [JavaScriptアプリケーション\（テンプレート、ルーター、およびリソース\）](../building-applications/developing-a-javascript-application/using-react.md)
 * [JSPのカスタマイゼーション](./extending-liferay/customizing-jsps.md)
 * [ポートレット\（テンプレート、コントローラー、およびリソース\）](../building-applications/developing-a-java-web-application/reference/portlets.md)

@@ -9,9 +9,8 @@ uuid: ce0a8b5e-a09a-49bf-98c5-47ff980b6a7c
 ---
 # Site Localization
 
-```{note}
-If you are setting up your Liferay installation for the first time, we recommend reviewing [Initial Instance Localization](../../installation-and-upgrades/setting-up-liferay/initial-instance-localization.md) first.
-```
+!!! note
+    If you are setting up your Liferay installation for the first time, we recommend reviewing [Initial Instance Localization](../../installation-and-upgrades/setting-up-liferay/initial-instance-localization.md) first.
 
 ## Configuring Site Languages
 

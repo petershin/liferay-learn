@@ -50,7 +50,7 @@ category.cms=Content Management
 
 In Liferay DXP/Portal 7.4+, you can declare overrides using metadata. In earlier versions, Java classes declare the overrides.
 
-If your version is earlier than 7.4, skip ahead to [Overriding in Earlier Versions](#overriding-in-earlier-versions). Otherwise, read on.
+If your version is earlier than 7.4, skip ahead to [Overriding in Earlier Versions](#overriding-in-earlier-versions).
 
 ## Deploy the Example for 7.4+
 

@@ -24,7 +24,7 @@ Search Bar Suggestionsは、LiferayのSearch Barウィジェットに **search a
 
 1. **Suggestions Contributor** : デフォルトのコントリビューターで、Liferay CEですぐに利用できるのは `Basic`です。 Liferay DXPでは、代わりに1つまたは複数のBlueprintコントリビューターを使用することを選択できます。 詳しくは、 [検索バーの提案 ブループリント](./search-bar-suggestions-blueprints.md) をご覧ください。
 
-1. **表示グループ名** : デフォルトは `提案`. この値は、英語のUIにおける見出しとしてSuggestionsに解決する言語キーです。 言語キーを変更したり、独自に追加することも可能です。 例えば、 `is-this-what-you're-looking-for`とした後、 [translation](../../../system-administration/configuring-liferay/changing-language-translations.md#adding-a-language-key-and-translation) を追加します。 複数のBlueprintコントリビューターを使用している場合は、それぞれに固有のDisplay Group Nameの値があることを確認してください。
+1. **表示グループ名** : デフォルトは `提案`. この値は、英語のUIにおける見出しとしてSuggestionsに解決する言語キーです。 言語キーを変更したり、独自に追加することも可能です。 例えば、 `is-this-what-you're-looking-for`とした後、 [translation](../../../system-administration/configuring-liferay/changing-translations-with-language-override.md#adding-a-language-key-and-translation) を追加します。 複数のBlueprintコントリビューターを使用している場合は、それぞれに固有のDisplay Group Nameの値があることを確認してください。
 
 1. **Size** : Search Bar のドロップダウンリストに表示する結果の最大数を設定します。 デフォルトは `5`です。 表示スペースが限られているため、サイズを大きく設定するメリットはない。
 

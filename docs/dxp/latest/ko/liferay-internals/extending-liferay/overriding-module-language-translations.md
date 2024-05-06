@@ -1,7 +1,7 @@
 # 이전 버전에서 모듈 언어 번역 재정의
 
 ```{important}
-Liferay DXP 7.4 U4(업데이트 4) 이상 또는 Liferay Portal 7.4 GA8 이상에서 [언어 재정의 도구](../../system-administration/configuring-liferay/changing-language-translations.md)는 권장 접근 방식. Liferay DXP/Portal 7.4+로 작업하는 경우 [전역 언어 번역 재정의](./overriding-global-language-translations.md)에 대한 지침을 따르십시오.
+Liferay DXP 7.4 U4(업데이트 4) 이상 또는 Liferay Portal 7.4 GA8 이상에서 [언어 재정의 도구](../../system-administration/configuring-liferay/changing-translations-with-language-override.md)는 권장 접근 방식. Liferay DXP/Portal 7.4+로 작업하는 경우 [전역 언어 번역 재정의](./overriding-global-language-translations.md)에 대한 지침을 따르십시오.
 ```
 
 이전 버전에서 Liferay 응용 프로그램별 언어 번역을 재정의하는 것은 이전 버전의 전역 언어 번역을 재정의하는 것과 유사하지만 추가 단계가 있습니다.
@@ -205,4 +205,4 @@ Liferay DXP 7.4 U4(업데이트 4) 이상 또는 Liferay Portal 7.4 GA8 이상�
 ## 관련 정보
 
 * [전역 언어 번역 재정의](./overriding-global-language-translations.md)
-* [언어 번역 변경](../../system-administration/configuring-liferay/changing-language-translations.md)
+* [언어 번역 변경](../../system-administration/configuring-liferay/changing-translations-with-language-override.md)

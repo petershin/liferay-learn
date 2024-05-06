@@ -3,7 +3,7 @@
 Liferay DXP/Portal은 언어 번역을 사용하여 기본 로케일 및 기타 여러 로케일에 대한 제목, 레이블 및 메시지를 구현합니다. 모듈의 새 언어 번역 값을 사용하여 모든 로캘에 대해 이러한 번역을 재정의할 수 있습니다.
 
 !!! note
-   [Language Override 도구](../../system-administration/configuring-liferay/ changing-language-translations.md)는 언어 번역을 재정의하는 데 권장되는 접근 방식입니다. 이 도구는 Liferay DXP 7.4 U4(업데이트 4) 이상 또는 Liferay Portal 7.4 GA8 이상에서 사용할 수 있습니다. 이전 방법에 대해 계속 읽으십시오.
+   [Language Override 도구](../../system-administration/configuring-liferay/ changing-translations-with-language-override.md)는 언어 번역을 재정의하는 데 권장되는 접근 방식입니다. 이 도구는 Liferay DXP 7.4 U4(업데이트 4) 이상 또는 Liferay Portal 7.4 GA8 이상에서 사용할 수 있습니다. 이전 방법에 대해 계속 읽으십시오.
 
 ## 글로벌 언어 번역 검토
 
@@ -254,4 +254,4 @@ Provide-Capability:\
 ## 관련 정보
 
 - [이전 버전에서 모듈 언어 번역 재정의](./overriding-module-language-translations.md)
-- [언어 번역 변경](../../system-administration/configuring-liferay/changing-language-translations.md)
+- [언어 번역 변경](../../system-administration/configuring-liferay/changing-translations-with-language-override.md)

@@ -6,7 +6,7 @@ uuid: 0e974ead-9e19-4ded-8b82-1e63c54fc2fc
 Liferay DXP/Portal implements headings, labels, and messages for the default locale and many other locales using language translations. You can override these translations for any of the locales using new language translation values in a module.
 
 !!! note
-    The [Language Override tool](../../system-administration/configuring-liferay/changing-language-translations.md) is the recommended approach for overriding language translations. This tool is available in Liferay DXP 7.4 U4 (Update 4) and above or Liferay Portal 7.4 GA8 and above. Continue reading for the previous way.
+    The [Language Override tool](../../system-administration/configuring-liferay/changing-translations-with-language-override.md) is the recommended approach for overriding language translations. This tool is available in Liferay DXP 7.4 U4 (Update 4) and above or Liferay Portal 7.4 GA8 and above. Continue reading for the previous way.
 
 ## Examining the Global Language Translations
 
@@ -257,4 +257,4 @@ Deploy your module to see your new language translation values.
 ## Related Topics
 
 - [Overriding Module Language Translations in Earlier Versions](./overriding-module-language-translations.md)
-- [Changing Language Translations](../../system-administration/configuring-liferay/changing-language-translations.md)
+- [Changing Translations with Language Override](../../system-administration/configuring-liferay/changing-translations-with-language-override.md)

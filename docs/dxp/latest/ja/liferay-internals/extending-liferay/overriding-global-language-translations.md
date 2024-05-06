@@ -3,7 +3,7 @@
 Liferay DXP/Portalでは、言語ファイルを使用して、デフォルトロケールと他の多くのロケールの見出し、ラベル、およびメッセージを実装します。 モジュール内の新しい言語ファイル値を使用して、任意のロケールのこれらの翻訳をオーバーライドできます。
 
 !!! note
-   言語翻訳をオーバーライドするには、[Language Override tool](../../system-administration/configuring-liferay/changing-language-translations.md)を使用することをお勧めします。 このツールは、Liferay DXP 7.4 U4 (アップデート 4)以上、またはLiferay Portal 7.4 GA8以上で使用できます。 以前の方法を続けて読んでください。
+   言語翻訳をオーバーライドするには、[Language Override tool](../../system-administration/configuring-liferay/changing-translations-with-language-override.md)を使用することをお勧めします。 このツールは、Liferay DXP 7.4 U4 (アップデート 4)以上、またはLiferay Portal 7.4 GA8以上で使用できます。 以前の方法を続けて読んでください。
 
 ## 標準言語ファイルの検証
 
@@ -253,4 +253,4 @@ Provide-Capability:\
 ## 関連情報
 
 - [以前のバージョンでのモジュール言語ファイルのオーバーライドをする](./overriding-module-language-translations.md)
-- [翻訳ファイルの変更](../../system-administration/configuring-liferay/changing-language-translations.md)
+- [翻訳ファイルの変更](../../system-administration/configuring-liferay/changing-translations-with-language-override.md)

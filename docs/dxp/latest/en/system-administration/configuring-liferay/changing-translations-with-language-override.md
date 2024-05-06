@@ -7,7 +7,7 @@ taxonomy-category-names:
 - Liferay PaaS
 - Liferay SaaS
 ---
-# Changing Language Translations
+# Changing Translations with Language Override
 
 > Available: Liferay DXP 7.4 U4/Liferay Portal 7.4 GA8. 
 
@@ -23,7 +23,7 @@ Use the Language Override tool to override existing translations or add new lang
 
 1. Use the search bar to find the translation you wish to override. For example, if you want to override `home` found at the top of the Product Menu, search for the term `home`.
 
-    ![Search for the term home in the Language Override UI.](./changing-language-translations/images/01.png)
+    ![Search for the term home in the Language Override UI.](./changing-translations-with-language-override/images/01.png)
 
    Note, the search bar searches language keys for the selected locale's translations. Use the locale selector to switch between languages. For example, select `en-US` to search within US English translations. 
 
@@ -31,11 +31,11 @@ Use the Language Override tool to override existing translations or add new lang
 
 1. Enter a new translation for each language you want to override. Click *Save* at the bottom of the page. 
 
-   ![Enter a new translation for each language you want to override.](./changing-language-translations/images/02.png)
+   ![Enter a new translation for each language you want to override.](./changing-translations-with-language-override/images/02.png)
 
 1. The translation for `home` is now overridden.
 
-   ![The translation for home is now overridden.](./changing-language-translations/images/03.png)
+   ![The translation for home is now overridden.](./changing-translations-with-language-override/images/03.png)
 
 ## Modifying a Translation Override
 
@@ -49,7 +49,7 @@ Use the Language Override tool to override existing translations or add new lang
 
    If overrides exist, the *Actions* icon (![Actions icon](../../images/icon-actions.png)) also has an option to remove translation overrides. Click *Remove all translation overrides* and click *OK* in the pop-up window to remove all overrides. If an override exists in the locale you have selected, there's an additional option to remove just that locale's translation (e.g. *Remove translation override for en_US* if US English is selected).
 
-   ![The Actions icon has an option to remove translation overrides.](./changing-language-translations/images/04.png)
+   ![The Actions icon has an option to remove translation overrides.](./changing-translations-with-language-override/images/04.png)
 
 1. Enter your changes and click *Save* at the bottom of the page. If you wish to remove all overrides and revert back to the original translations, click *Clear All Overrides*.
 
@@ -71,7 +71,7 @@ Language overrides can be easily imported or exported with language properties f
 
 1. Select *Import Translations* and a new window will open.
 
-   ![Select import translations and a new window will open.](./changing-language-translations/images/05.png)
+   ![Select import translations and a new window will open.](./changing-translations-with-language-override/images/05.png)
 
 1. Use the drop-down menu to select the language.
 

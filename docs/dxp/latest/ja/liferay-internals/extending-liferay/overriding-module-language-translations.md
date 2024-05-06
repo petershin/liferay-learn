@@ -1,7 +1,7 @@
 # 以前のバージョンでのモジュール言語ファイルのオーバーライドをする
 
 ```{important}
-Liferay DXP 7.4 U4 (アップデート 4)以降、またはLiferay Portal 7.4 GA8以降では、[Language Override tool](../../system-administration/configuring-liferay/changing-language-translations.md)を使用することが推奨されます。 Liferay DXP/Portal 7.4以降を使用している場合は、[標準言語ファイルの上書き](./overriding-global-language-translations.md)の手順に従ってください。
+Liferay DXP 7.4 U4 (アップデート 4)以降、またはLiferay Portal 7.4 GA8以降では、[Language Override tool](../../system-administration/configuring-liferay/changing-translations-with-language-override.md)を使用することが推奨されます。 Liferay DXP/Portal 7.4以降を使用している場合は、[標準言語ファイルの上書き](./overriding-global-language-translations.md)の手順に従ってください。
 ```
 
 以前のバージョンでLiferayアプリケーション固有の言語ファイルをオーバーライドすることは、以前のバージョンでの標準言語ファイルのオーバーライドと似ていますが、追加の手順があります。
@@ -205,4 +205,4 @@ Liferay DXP 7.4 U4 (アップデート 4)以降、またはLiferay Portal 7.4 GA
 ## 関連情報
 
 * [標準言語ファイルの上書き方法](./overriding-global-language-translations.md)
-* [翻訳ファイルの変更](../../system-administration/configuring-liferay/changing-language-translations.md)
+* [翻訳ファイルの変更](../../system-administration/configuring-liferay/changing-translations-with-language-override.md)

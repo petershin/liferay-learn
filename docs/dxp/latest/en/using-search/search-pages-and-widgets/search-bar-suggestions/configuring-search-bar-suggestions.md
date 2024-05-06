@@ -34,7 +34,7 @@ The primary way to configure Search Bar Suggestions is with the Search Bar widge
 
 1. **Suggestions Contributor**: The default contributor, and the only one available out-of-the-box in Liferay CE, is `Basic`. In Liferay DXP you can choose to use one or more Blueprint contributors instead. See [Search Bar Suggestions Blueprints](./search-bar-suggestions-blueprints.md) for more information.
 
-1. **Display Group Name**: The default is `suggestions`. This value is a language key that resolves to Suggestions as the heading in the UI for the English language. You can change the language key or add your own. For example, make it `is-this-what-you're-looking-for`, then add the [translation](../../../system-administration/configuring-liferay/changing-language-translations.md#adding-a-language-key-and-translation). If you are using more than one Blueprint contributor, make sure each one has a unique Display Group Name value.
+1. **Display Group Name**: The default is `suggestions`. This value is a language key that resolves to Suggestions as the heading in the UI for the English language. You can change the language key or add your own. For example, make it `is-this-what-you're-looking-for`, then add the [translation](../../../system-administration/configuring-liferay/changing-translations-with-language-override.md#adding-a-language-key-and-translation). If you are using more than one Blueprint contributor, make sure each one has a unique Display Group Name value.
 
 1. **Size**: Set the maximum number of results to display in the Search Bar drop-down list. The default is `5`. Because display space is limited, there's no benefit to setting the size to a large number.
 

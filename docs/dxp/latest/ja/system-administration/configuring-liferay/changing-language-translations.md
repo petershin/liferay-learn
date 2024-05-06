@@ -14,7 +14,7 @@ Language Override toolを使って、既存の翻訳ファイルをオーバー�
 
 1. 検索バーを使って、上書きしたい翻訳ファイルを探します。 例えば、プロダクトメニューの一番上にある `home` をオーバーライドしたい場合は、 `home`を検索してください 。
 
-    ![Language Override UIでhomeという言葉を検索してください。](./changing-language-translations/images/01.png)
+    ![Language Override UIでhomeという言葉を検索してください。](./changing-translations-with-language-override/images/01.png)
 
    なお、検索バーでは、選択したロケールの翻訳ファイルの言語キーを検索します。 ロケールセレクターで言語を切り替えることができます。 例えば、 `en-US` を選択すると、米国英語の翻訳ファイルを検索することができます。
 
@@ -22,11 +22,11 @@ Language Override toolを使って、既存の翻訳ファイルをオーバー�
 
 1. オーバーライドしたい言語ごとに翻訳ファイルを新たに入力します。 ページの下部にある [**保存**] をクリックします。
 
-   ![オーバーライドしたい言語ごとに翻訳ファイルを新たに入力します。](./changing-language-translations/images/02.png)
+   ![オーバーライドしたい言語ごとに翻訳ファイルを新たに入力します。](./changing-translations-with-language-override/images/02.png)
 
 1. `home` の翻訳ファイルがオーバーライドされました。
 
-   ![home の翻訳ファイルがオーバーライドされました。](./changing-language-translations/images/03.png)
+   ![home の翻訳ファイルがオーバーライドされました。](./changing-translations-with-language-override/images/03.png)
 
 ## 翻訳ファイルのオーバーライドを修正する
 
@@ -40,7 +40,7 @@ Language Override toolを使って、既存の翻訳ファイルをオーバー�
 
    オーバーライドが存在する場合、 **アクション** アイコン(![Actions icon](../../images/icon-actions.png)) には、翻訳ファイルオーバーライドを削除するオプションも用意されています。 ［**Remove all translation overrides**］ をクリックし、ポップアップウィンドウの ［**OK**］ をクリックすると、すべてのオーバーライドが削除されます。 選択したロケールにオーバーライドが存在する場合、そのロケールの翻訳だけを削除する追加オプションがあります（例：アメリカ英語が選択されている場合は、 ［**Remove translation override for en_US**］）。
 
-   ![アクションアイコンには、翻訳オーバーライドを削除するオプションがあります。](./changing-language-translations/images/04.png)
+   ![アクションアイコンには、翻訳オーバーライドを削除するオプションがあります。](./changing-translations-with-language-override/images/04.png)
 
 1. 変更内容を入力し、ページ下部の ［**保存**］ をクリックします。 すべてのオーバーライドを削除して元の翻訳ファイルに戻したい場合は、 ［**オーバーライドをすべて消去**］ をクリックします。
 
@@ -62,7 +62,7 @@ Language Override toolを使って、既存の翻訳ファイルをオーバー�
 
 1. ［**Import Translations**］ を選択すると、新しいウィンドウが表示されます。
 
-   ![［翻訳のインポート］を選択すると、新しいウィンドウが表示されます。](./changing-language-translations/images/05.png)
+   ![［翻訳のインポート］を選択すると、新しいウィンドウが表示されます。](./changing-translations-with-language-override/images/05.png)
 
 1. ドロップダウンメニューで言語を選択します。
 

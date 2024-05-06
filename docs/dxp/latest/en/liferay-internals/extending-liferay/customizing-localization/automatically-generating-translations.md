@@ -71,5 +71,5 @@ To learn more about the Language Builder tool and additional configuration, see 
 ## Related Topics
 
 - [Overriding Global Language Translations](../../../liferay-internals/extending-liferay/overriding-global-language-translations.md)
-- [Changing Language Translations](../../../system-administration/configuring-liferay/changing-language-translations.md)
+- [Changing Translations with Language Override](../../../system-administration/configuring-liferay/changing-translations-with-language-override.md)
 - [Upgrading Language Key Overrides](../../../installation-and-upgrades/upgrading-liferay/upgrading-custom-development/upgrading-language-key-overrides.md)

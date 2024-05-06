@@ -18,7 +18,7 @@ As of Liferay DXP 2023.Q4+, the title and description fields are localizable. To
 
    ![You can translate the element title and description fields.](./creating-elements/images/05.png)
 
-1. Use the [Language Override](../../../../../system-administration/configuring-liferay/changing-language-translations.md#adding-a-language-key-and-translation) application to provide a language key (e.g., `search-for-new-content`) and its translated values (e.g., _Search for New Content_ in the English translation).
+1. Use the [Language Override](../../../../../system-administration/configuring-liferay/changing-translations-with-language-override.md#adding-a-language-key-and-translation) application to provide a language key (e.g., `search-for-new-content`) and its translated values (e.g., _Search for New Content_ in the English translation).
 
 To delete existing custom Elements, select the Element(s) using the checkbox selector and click the Delete (![Delete](../../../../../images/icon-trash.png)) button.
 

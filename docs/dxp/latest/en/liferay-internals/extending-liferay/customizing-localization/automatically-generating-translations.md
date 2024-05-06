@@ -56,7 +56,7 @@ Then, follow these steps:
 
 The sample project has one language key in the `Language.properties` file. Add as many language keys as you need for your application, then run Language Builder.
 
-To deploy the language keys to Liferay, see [Overriding Global Language Translations with Language Properties](../../../liferay-internals/extending-liferay/overriding-global-language-translations-with-language-properties.md). The instructions are the same whether overriding existing keys or adding new keys.
+To deploy the language keys to Liferay, see [Overriding Global Language Translations with Language Properties](./overriding-global-language-translations-with-language-properties.md). The instructions are the same whether overriding existing keys or adding new keys.
 
 If you want to exclude some languages from being translated automatically, use the `excludedLanguageIds` property in your project's `build.gradle` file. For example, to exclude French,
 
@@ -70,6 +70,6 @@ To learn more about the Language Builder tool and additional configuration, see 
 
 ## Related Topics
 
-- [Overriding Global Language Translations with Language Properties](../../../liferay-internals/extending-liferay/overriding-global-language-translations-with-language-properties.md)
+- [Overriding Global Language Translations with Language Properties](./overriding-global-language-translations-with-language-properties.md)
 - [Changing Translations with Language Override](../../../system-administration/configuring-liferay/changing-translations-with-language-override.md)
 - [Upgrading Language Key Overrides](../../../installation-and-upgrades/upgrading-liferay/upgrading-custom-development/upgrading-language-key-overrides.md)

@@ -33,9 +33,8 @@ Then, follow these steps:
     ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
     ```
 
-    ```{note}
-    This command is the same as copying the deployed jars to `/opt/liferay/osgi/modules` on the Docker container.
-    ```
+    !!! note
+        This command is the same as copying the deployed jars to `/opt/liferay/osgi/modules` on the Docker container.
 
 1. Confirm the deployment in the Liferay Docker container console.
 
@@ -60,9 +59,9 @@ Now it's time to learn how it works.
 
 ## Create the Language Properties File
 
-Create a separate project module to hold all the shared language keys. In the example project, the shared keys are in the `Acme U8T2 Impl` module. 
+Create a separate project module to hold all the shared language keys. In the example project, the shared keys are in the `Acme U8T2 Impl` module.
 
-Create a `Language.properties` file and add it to the module's `src/main/resources/content` folder. In the file define the keys you want to share with the other modules. 
+Create a `Language.properties` file and add it to the module's `src/main/resources/content` folder. In the file define the keys you want to share with the other modules.
 
 The example project has a list of six colors used by the `Acme U8T2 Web` module:
 
@@ -72,14 +71,14 @@ green=Green
 orange=Orange
 purple=Purple
 red=Red
-yellow=Yellow 
+yellow=Yellow
 ```
 
 Language property files for other locales can also be included in the folder. For example, to include language keys for Japanese, add a `Language_ja.properties` file to the folder.
 
 ## Add the bnd Instruction
 
-For each module that you want to share language keys with, you must specify the resource in the bnd header. 
+For each module that you want to share language keys with, you must specify the resource in the bnd header.
 
 ```properties
 Bundle-Name: Acme U8T2 Web
@@ -94,8 +93,8 @@ The example project has a web portlet that uses the color language keys from `Ac
 -liferay-aggregate-resource-bundles: com.acme.u8t2.impl
 ```
 
-Note that you can still choose to place some language keys in an individual module. For example, the welcome message in the example project comes from the `Acme U8T2 Web` module's language keys and not the shared keys of `Acme U8T2 Impl`. Language keys of an individual module take priority over any shared keys specified by `-liferay-aggregate-resource-bundles`. 
+Note that you can still choose to place some language keys in an individual module. For example, the welcome message in the example project comes from the `Acme U8T2 Web` module's language keys and not the shared keys of `Acme U8T2 Impl`. Language keys of an individual module take priority over any shared keys specified by `-liferay-aggregate-resource-bundles`.
 
 ## Related Topics
 
-* [Aggregating Resource Bundles](../../../core-frameworks/localization/reference/aggregating-resource-bundles.md)
+- [Aggregating Resource Bundles](./aggregating-resource-bundles.md)

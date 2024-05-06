@@ -62,7 +62,7 @@ DXP는 애플리케이션 서버에서 실행되는 웹 애플리케이션입니
 
 * [서비스](./fundamentals/apis-as-osgi-services.md)
 * [서비스 사용자 지정](./extending-liferay/overriding-osgi-services.md)
-* [언어 키 \(현지화된 메시지\)](../building-applications/developing-a-java-web-application/using-mvc/sharing-localized-messages.md)
+* [언어 키 \(현지화된 메시지\)](../liferay-development/building-applications/developing-a-java-web-application/using-mvc/using-localized-messages-in-an-mvc-portlet/sharing-localized-messages.md)
 * [JavaScript 애플리케이션 \(템플릿, 라우터 및 리소스\)](../building-applications/developing-a-javascript-application/using-react.md)
 * [JSP 사용자 지정](./extending-liferay/customizing-jsps.md)
 * [포틀릿 \(템플릿, 컨트롤러 및 리소스\)](../building-applications/developing-a-java-web-application/reference/portlets.md)

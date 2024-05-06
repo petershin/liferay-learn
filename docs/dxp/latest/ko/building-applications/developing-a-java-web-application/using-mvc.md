@@ -8,7 +8,6 @@ toc:
 - ./using-mvc/mvc-resource-command.md
 - ./using-mvc/portlet-preferences.md
 - ./using-mvc/using-localized-messages-in-an-mvc-portlet.md
-- ./using-mvc/sharing-localized-messages.md
 - ./using-mvc/tag-libraries.md
 ---
 # MVC 사용

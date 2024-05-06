@@ -69,7 +69,7 @@ The Core provides the component runtime environment for the frameworks, services
 
 - [Services](./fundamentals/apis-as-osgi-services.md)
 - [Service customizations](./extending-liferay/overriding-osgi-services.md)
-- [Language Keys \(localized messages\)](../liferay-development/building-applications/developing-a-java-web-application/using-mvc/sharing-localized-messages.md)
+- [Language Keys \(localized messages\)](../liferay-development/building-applications/developing-a-java-web-application/using-mvc/using-localized-messages-in-an-mvc-portlet/sharing-localized-messages.md)
 - [JavaScript applications \(templates, routers, and resources\)](../liferay-development/building-applications/developing-a-javascript-application/using-react.md)
 - [JSP customizations](./extending-liferay/customizing-jsps-with-dynamic-includes.md)
 - [Portlets \(templates, controllers, and resources\)](../liferay-development/building-applications/developing-a-java-web-application/reference/portlets.md)

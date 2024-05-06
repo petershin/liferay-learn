@@ -8,7 +8,6 @@ toc:
   - ./using-mvc/mvc-resource-command.md
   - ./using-mvc/portlet-preferences.md
   - ./using-mvc/using-localized-messages-in-an-mvc-portlet.md
-  - ./using-mvc/sharing-localized-messages.md
   - ./using-mvc/tag-libraries.md
 uuid: b28851ff-575f-4169-832d-9a5154490a47
 taxonomy-category-names:

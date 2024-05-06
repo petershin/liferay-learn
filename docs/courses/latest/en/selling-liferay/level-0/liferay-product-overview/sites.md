@@ -38,8 +38,8 @@ Sites include Design Systems and Experience Management capabilities, which work 
 * [Site](https://learn.liferay.com/w/dxp/site-building/site-settings/site-localization)
 * [Page](https://learn.liferay.com/w/dxp/content-authoring-and-management/translating-pages-and-content)
 * [Content Localization](https://learn.liferay.com/w/dxp/content-authoring-and-management/translating-pages-and-content/translating-web-content)
-* [ML-based Auto-translation](https://learn.liferay.com/w/dxp/building-applications/core-frameworks/localization/automatically-generating-translations)
-* [OOTB Languages](https://learn.liferay.com/w/dxp/building-applications/core-frameworks/localization/adding-a-language)
+* [ML-based Auto-translation](https://learn.liferay.com/w/dxp/liferay-internals/extending-liferay/customizing-localization/automatically-generating-translations)
+* [OOTB Languages](https://learn.liferay.com/w/dxp/liferay-internals/extending-liferay/customizing-localization/adding-a-language)
 
 ## Search Engine Optimization (SEO)
 

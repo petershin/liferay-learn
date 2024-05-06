@@ -6,11 +6,11 @@ taxonomy-category-names:
 - Liferay Self-Hosted
 - Liferay PaaS
 ---
-# Adding A Language
+# Adding a Language
 
 Liferay currently supports about 50 languages out-of-the-box. [Translation](https://translate.liferay.com/) is complete for many of these languages, and some are still in the translation process. Each language has its own [language properties file](https://github.com/liferay/liferay-portal/tree/master/modules/apps/portal-language/portal-language-lang/src/main/resources/content) containing its language keys.
 
-## Adding A New Language
+## Adding a New Language
 
 By default, the [`portal.properties`](https://github.com/liferay/liferay-portal/blob/41ac354cd0aa3f9d851a37a6a62d8167f81a2bce/portal-impl/src/portal.properties#L2930) file specifies all languages available in Liferay. To add a new language that is not specified,
 

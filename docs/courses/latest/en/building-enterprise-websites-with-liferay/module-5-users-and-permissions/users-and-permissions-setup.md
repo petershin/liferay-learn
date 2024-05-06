@@ -12,10 +12,14 @@ Here are some of the Clarity team members:
 | Screen Name | Email | First Name | Last Name | Job Title |
 |:---|:---|:---|:---|:---|
 | ianmiller | ian.miller@clarityvisionsolutions.com | Ian | Miller | IT Manager |
+| janenewton | jane.newton@clarityvisionsolutions.com | Jane | Newton | Marketing Specialist |
+
+<!---
 | walterdouglas | walter.douglas@clarityvisionsolutions.com | Walter | Douglas | Web Developer |
 | claramurphy | clara.murphy@clarityvisionsolutions.com | Clara | Murphy | Marketing Manager |
 | christiancarter | christian.carter@clarityvisionsolutions.com | Christian | Carter | Marketing Coordinator |
 | harperroberts | harper.roberts@clarityvisionsolutions.com | Harper | Roberts | Director of Human Resources |
+--->
 
 Follow the steps below to create these user accounts:
 
@@ -44,26 +48,29 @@ In addition to the default roles that ship with Liferay, Clarity needs some cust
 
 | Type | Title | Description |
 |:---|:---|:---|
-| Regular | IT Manager | Organizational title reserved for a Manager within the IT Department. |
-| Regular | Web Developer | Organizational title reserved for the front end Developer role within the IT Department. |
-| Regular | Marketing Manager | Organizational title reserved for the Manager member of the Marketing Team. |
-| Regular | Marketing Coordinator | Organizational title reserved for an individual contributor from the Marketing Team. |
-| Regular | Director of Human Resources | Organizational title reserved for the Director of Human Resources. |
-| Site | Site Content Contributor | Site based role for an individual who will be contributing. |
+| Regular | IT Manager | Organizational title for a manager within the IT department |
+| Regular | Marketing Specialist | Organizational title for a marketing specialist on the marketing team |
+
+<!---
+| Regular | Web Developer | Organizational title for a front end developer role within the IT Department |
+| Regular | Marketing Coordinator | Organizational title for an individual contributor from the Marketing Team |
+| Regular | Director of Human Resources | Organizational title for a Director of Human Resources |
+| Site | Site Content Contributor | Site based role for an individual who will be contributing |
+--->
 
 Follow the steps below to create these roles:
 
 1. Open the applications menu and navigate to _Control Panel_ &rarr; _Roles_.
 
-1. Click _New_ to create a new role.
+2. Click _New_ to create a new role.
 
-1. Select the role type (e.g. `Regular`).
+3. Select the role type (e.g. `Regular`).
 
-1. Input the role title (e.g. `IT Manager`).
+4. Input the role title (e.g. `IT Manager`).
 
-1. Input the role description (e.g. `Organizational title reserved for a Manager within the IT Department.`).
+5. Input the role description (e.g. `Organizational title for a manager within the IT department`).
 
-1. Click _Save_ and navigate back out to the list of roles. Continue making each of the roles listed in the table.
+6. Click _Save_ and navigate back out to the list of roles. Continue making each of the roles listed in the table.
 
 !!! note
    The roles above do not yet have any permissions assigned to them. The succeeding lessons will cover assigning permissions to roles.
@@ -74,8 +81,8 @@ Here are some of Clarity's user groups:
 
 | Name | Description |
 |:---|:---|
-| Marketing | Members of the marketing department at Clarity |
 | IT | Members of the IT department at Clarity |
+| Marketing | Members of the marketing department at Clarity |
 
 Follow the steps below to create these user groups:
 
@@ -83,9 +90,9 @@ Follow the steps below to create these user groups:
 
 1. Click _New_ to create a new user group.
 
-1. Input the user group name (e.g. `Marketing`).
+1. Input the user group name (e.g. `IT`).
 
-1. Input the user group description (e.g. `Members of the marketing department at Clarity`).
+1. Input the user group description (e.g. `Members of the IT department at Clarity`).
 
 1. Click _Save_. Continue making each user group listed in the table.
 

@@ -34,40 +34,40 @@ The different default roles also fall under different scoping. Sometimes, you do
 
 To increase efficiency, roles can also be assigned to entire user groups. The purpose behind this is to promote reuse and simplify the user management experience. 
 
-Let’s take a look at how we could create user groups, roles and permissions for Jane Newton to be able to access and edit relevant content for marketing. 
+Let’s take a look at how we could create user groups, roles and permissions for Clara Murphy, the marketing manager, to be able to access and edit relevant content for marketing. 
 
 ### Exercise 1 - Assigning the Permissions and Roles for the Marketing User Group
 
-1. Let's impersonate Jane Newton to see what the application looks like from her point of view. 
+1. Let's impersonate Clara Murphy to see what the application looks like from her point of view. 
    1. Navigate to _Control Panel_ &rarr; _Users and Organizations_. 
-   1. Click on the options icon next to Jane Newton and click _Impersonate User_. Notice how she does not have access to any of the resources she needs (e.g. site menu, asset library, etc.).
+   1. Click on the options icon next to Clara Murphy and click _Impersonate User_. Notice how she does not have access to any of the resources she needs (e.g. site menu, asset library, etc.).
 
-1. Assign the correct permissions for the marketing specialist role.
+1. Assign the correct permissions for the marketing manager role.
 
-    ![Assign permissions to the marketing specialist role.](./managing-and-organizing-clarity-users/images/01.png)
+    ![Assign permissions to the marketing manager role.](./managing-and-organizing-clarity-users/images/01.png)
 
-    1. Navigate to _Control Panel_ &rarr; _Roles_. Click on the _Marketing Specialist_ role.
+    1. Navigate to _Control Panel_ &rarr; _Roles_. Click on the _Marketing Manager_ role.
     1. Click on the _Define Permissions_ tab. 
     1. In the left menu, navigate to _Applications Menu_ &rarr; _Content_ &rarr; _Asset Libraries_. Under the applications permissions section, select _Access in Control Panel_ and _View_. Under the asset library entry section, select _View Site and Asset Library Administration Menu_. Click _Save_.
     1. Still in the left menu, navigate to _Site and Asset Library Administration_ &rarr; _Content & Data_ &rarr; _Documents and Media_. Under the general permissions, select _Access in Site and Asset Library Administration_ and _View_. Under documents, select _View_. Under document folder, select _View_. Click _Save_.
     1. Still in the left menu, navigate to _Site and Asset Library Administration_ &rarr; _Site Builder_ &rarr; _Pages_. Under the page section, select _Update_. Click _Save_.
 
-    Now the marketing specialist role has permissions around asset libraries and site pages. This is because marketing specialists need access to asset libraries and pages.
+    Now the marketing manager role has permissions around asset libraries and site pages. This is because marketing managers need access to asset libraries and pages.
 
 1. Now that the permissions for the role have been set, let's assign a user group to the role. Note that Liferay roles can also be assigned to individual users, but assigning it to user groups promotes reusability and ease of future maintenance as discussed above. 
 
     ![Assign a user group to the role.](./managing-and-organizing-clarity-users/images/02.png)
 
-    1. Still within the edit page for the marketing specialist role, click on the _Assignees_ tab. 
+    1. Still within the edit page for the marketing manager role, click on the _Assignees_ tab. 
     1. Click the _User Groups_ tab. 
     1. Click the add button and assign the marketing user group to role. 
 
-1. Let's make sure that Jane Newton is part of the marketing user group. 
+1. Let's make sure that Clara Murphy is part of the marketing user group. 
     1. Navigate to _Control Panel_ &rarr; _User Groups_.
     1. Click the options icon next to the marketing user group and click _Assign Members_. 
-    1. Click the add button and assign Jane Newton to the user group.
+    1. Click the add button and assign Clara Murphy to the user group.
 
-1. Marketing specialists also need access to Clarity's marketing asset library, so let's associate the correct asset library to this asset library role. 
+1. Marketing managers also need access to Clarity's marketing asset library, so let's associate the correct asset library to this asset library role. 
     1. Navigate to _Applications_ &rarr; _Asset Libraries_ and click on the marketing asset library. 
     1. Scroll down and click _Memberships_. 
     1. Click the user groups tab and click the add icon. 
@@ -75,9 +75,9 @@ Let’s take a look at how we could create user groups, roles and permissions fo
 
         ![Assign a role to the user group.](./managing-and-organizing-clarity-users/images/03.png)
 
-1. Let's impersonate Jane Newton again to verify what she can access. 
+1. Let's impersonate Clara Murphy again to verify what she can access. 
     1. Navigate to _Control Panel_ &rarr; _Users and Organizations_. 
-    1. Click on the options icon next to Jane Newton and click _Impersonate User_. 
+    1. Click on the options icon next to Clara Murphy and click _Impersonate User_. 
     1. Notice that she now has access to the product menu to add and edit site pages. She also has access to the asset library under the applications menu.
 
 Well done! Now everyone in the marketing user group has the correct permissions on the platform.
@@ -94,4 +94,8 @@ As their business grows and site requirements evolve, Clarity can consider lever
 
 Learn more about Liferay organizations [here](https://learn.liferay.com/w/dxp/users-and-permissions/organizations/understanding-organizations).
 
-Next Up: [Modeling B2B Relationships with Liferay Accounts](./modeling-b2b-relationships-with-liferay-accounts.md)
+## Accounts
+
+Liferay also offer additional tools around accounts. These can be used to model business relationships to help manage external parties. For example, Liferay accounts can model a business to consumer (B2C) context in which a customer is a single user. Accounts can also model a business to business (B2B) context where a customer represents an external company with multiple users. See our official documentation to learn more about [accounts](https://learn.liferay.com/w/dxp/users-and-permissions/accounts).
+
+Next Up: [Securing Clarity Content](./modeling-b2b-relationships-with-liferay-accounts.md)

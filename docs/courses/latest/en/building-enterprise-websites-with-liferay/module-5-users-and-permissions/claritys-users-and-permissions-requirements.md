@@ -13,9 +13,9 @@ As a growing organization, Clarity has some processes in place, but there's defi
 
 Liferay's robust user management tools come ready to use all from within the Liferay UI. No programming or custom code is required to create and manage users. Even customization such as custom fields or custom roles can be accomplished from the UI. This means that non-technical team members can cover all aspects of managing users without the need for IT staff. Some examples include managing roles and permissions, managing organizations and user groups, and leveraging accounts.
 
-### Precise permissioning tools that provide Clarity users with the necessary and appropriate platform privileges
+### Precise permission system that provide Clarity users with the necessary and appropriate platform privileges
 
-With Liferay's permissioning tools, you can create precise roles with specific permissions. In Liferay, permissions are additive for each role, as opposed to subtractive. This means that users will only have the permissions that you assign and intend for them to have. This way, you ensure that users only have access to the things they need.
+With Liferay's permission system, you can create precise roles with specific permissions. In Liferay, permissions are additive for each role, as opposed to subtractive. This means that users will only have the permissions that you assign and intend for them to have. This way, you ensure that users only have access to the things they need.
 
 ### Reduce management time and costs through reusable user segments
 

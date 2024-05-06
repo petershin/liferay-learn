@@ -15,7 +15,7 @@ taxonomy-category-names:
 Import/Export and filtering functionality in Liferay DXP 7.4 U17/Liferay Portal 7.4 GA17
 ```
 
-Use the Language Override tool to override existing translations or add new language keys and translations. Note that these overrides take place at the Instance level of [Configuration Scope](./understanding-configuration-scope.md). For previous Liferay versions, see [Overriding Global Language Translations](../../liferay-internals/extending-liferay/overriding-global-language-translations.md).
+Use the Language Override tool to override existing translations or add new language keys and translations. Note that these overrides take place at the Instance level of [Configuration Scope](./understanding-configuration-scope.md). For previous Liferay versions, see [Overriding Global Language Translations with Language Properties](../../liferay-internals/extending-liferay/overriding-global-language-translations-with-language-properties.md).
 
 ## Overriding a Translation
 

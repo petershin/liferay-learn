@@ -45,5 +45,5 @@ DXP 인스턴스의 기본 언어 및 표준 시간대를 구성했습니다. �
 ## 관련 주제
 
 * [가상 인스턴스 현지화 구성](../../system-administration/configuring-liferay/virtual-instances/localization.md)
-* [글로벌 언어 번역 재정의](../../liferay-internals/extending-liferay/overriding-global-language-translations.md)
+* [글로벌 언어 번역 재정의](../../liferay-internals/extending-liferay/overriding-global-language-translations-with-language-properties.md)
 * [애플리케이션 현지화](https://help.liferay.com/hc/ko/articles/360028746692-Localizing-Your-Application)

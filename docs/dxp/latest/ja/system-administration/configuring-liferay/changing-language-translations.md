@@ -6,7 +6,7 @@
 Liferay DXP 7.4 U17 / Liferay Portal 7.4 GA17のインポート／エクスポートおよびフィルタリング機能
 ```
 
-Language Override toolを使って、既存の翻訳ファイルをオーバーライドするか新しい言語キーと翻訳ファイルを追加します。 これらのオーバーライドは、 [Configuration Scope](./understanding-configuration-scope.md)のインスタンスレベルで行われることに注意してください。 Liferayの以前のバージョンについては、 [標準言語ファイルの上書き](../../liferay-internals/extending-liferay/overriding-global-language-translations.md)をご覧ください。
+Language Override toolを使って、既存の翻訳ファイルをオーバーライドするか新しい言語キーと翻訳ファイルを追加します。 これらのオーバーライドは、 [Configuration Scope](./understanding-configuration-scope.md)のインスタンスレベルで行われることに注意してください。 Liferayの以前のバージョンについては、 [標準言語ファイルの上書き](../../liferay-internals/extending-liferay/overriding-global-language-translations-with-language-properties.md)をご覧ください。
 
 ## 翻訳ファイルのオーバーライド
 

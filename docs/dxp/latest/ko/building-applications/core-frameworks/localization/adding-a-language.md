@@ -49,7 +49,7 @@ Liferay는 현재 기본적으로 약 50개 언어를 지원합니다. [번역](
     sign-in=ስግን እን
     ```
 
-1. 생성한 `language.properties` 파일로 언어 모듈을 생성하고 모듈을 Liferay 설치에 배포합니다. 이 모듈 생성에 대한 샘플 프로젝트 및 특정 지침을 보려면 [전역 언어 번역 재정의](../../../liferay-internals/extending-liferay/overriding-global-language-translations.md) 참조하십시오.
+1. 생성한 `language.properties` 파일로 언어 모듈을 생성하고 모듈을 Liferay 설치에 배포합니다. 이 모듈 생성에 대한 샘플 프로젝트 및 특정 지침을 보려면 [전역 언어 번역 재정의](../../../liferay-internals/extending-liferay/overriding-global-language-translations-with-language-properties.md) 참조하십시오.
 
 1. 설치의 [Liferay Home](../../../installation-and-upgrades/reference/liferay-home.md) 폴더에 `Portal-ext.properties` 파일을 생성하거나 수정합니다. 이 파일은 `portal.properties` 파일에 정의된 활성화된 기본 로캘을 재정의합니다. 따라서 `portal-ext.properties` 파일에서 사용하려는 모든 언어를 나열하십시오. `locales` 및 `locales.enabled`모두 정의합니다. 예를 들어:
 

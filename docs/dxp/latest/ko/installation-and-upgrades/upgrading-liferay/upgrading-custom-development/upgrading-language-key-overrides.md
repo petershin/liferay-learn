@@ -15,6 +15,6 @@ Liferay DXP/Portal 7.4에서 Liferay 모듈 언어 키가 Liferay Portal 언어 
 
 ## 관련 주제
 
-* [전역 언어 번역 재정의](../../../liferay-internals/extending-liferay/overriding-global-language-translations.md)
+* [전역 언어 번역 재정의](../../../liferay-internals/extending-liferay/overriding-global-language-translations-with-language-properties.md)
 * [이름이 변경된 언어 키](../reference/renamed-language-keys.md)
 * [맞춤형 개발 업그레이드](../upgrading-custom-development.md)

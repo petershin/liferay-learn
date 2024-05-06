@@ -18,6 +18,6 @@ Your module is ready to deploy.
 
 ## Related Topics
 
-* [Overriding Global Language Translations](../../../liferay-internals/extending-liferay/overriding-global-language-translations.md)
+* [Overriding Global Language Translations with Language Properties](../../../liferay-internals/extending-liferay/overriding-global-language-translations-with-language-properties.md)
 * [Renamed Language Keys](../reference/renamed-language-keys.md)
 * [Upgrading Custom Development](../upgrading-custom-development.md)

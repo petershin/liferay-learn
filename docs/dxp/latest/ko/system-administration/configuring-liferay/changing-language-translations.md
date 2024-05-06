@@ -6,7 +6,7 @@
 Liferay DXP 7.4 U17/Liferay Portal 7.4 GA17의 가져오기/내보내기 및 필터링 기능
 ```
 
-언어 재정의 도구를 사용하여 기존 번역을 재정의하거나 새 언어 키 및 번역을 추가합니다. 이러한 재정의는 인스턴스 수준 [구성 범위](./understanding-configuration-scope.md)에서 발생합니다. 이전 Liferay 버전의 경우 [글로벌 언어 번역 재정의](../../liferay-internals/extending-liferay/overriding-global-language-translations.md)을 참조하십시오.
+언어 재정의 도구를 사용하여 기존 번역을 재정의하거나 새 언어 키 및 번역을 추가합니다. 이러한 재정의는 인스턴스 수준 [구성 범위](./understanding-configuration-scope.md)에서 발생합니다. 이전 Liferay 버전의 경우 [글로벌 언어 번역 재정의](../../liferay-internals/extending-liferay/overriding-global-language-translations-with-language-properties.md)을 참조하십시오.
 
 ## 번역 재정의
 

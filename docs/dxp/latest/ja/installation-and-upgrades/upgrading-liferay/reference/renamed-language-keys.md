@@ -123,5 +123,5 @@ Liferay のモジュールは [`portal-language-lang`](https://github.com/lifera
 
 ## 関連情報
 
-* [標準言語ファイルの上書き方法](../../../liferay-internals/extending-liferay/overriding-global-language-translations.md)
+* [標準言語ファイルの上書き方法](../../../liferay-internals/extending-liferay/overriding-global-language-translations-with-language-properties.md)
 * [MVCポートレットでのローカライズされたメッセージの使用](../../../building-applications/developing-a-java-web-application/using-mvc/using-localized-messages-in-an-mvc-portlet.md)

@@ -49,7 +49,7 @@ Liferay DXPは、標準で50の言語をサポートしています。 各ロケ
 
 サンプルプロジェクトでは、`Language.properties`ファイルに1つの言語キーがあります。  アプリケーションに必要な数の言語キーを追加してから、Language Builderを実行します。
 
-言語キーをLiferayにデプロイするには、[グローバル言語キーのオーバーライド](../../../liferay-internals/extending-liferay/overriding-global-language-translations.md)を参照してください。 既存のキーをオーバーライドする場合でも、新しいキーを追加する場合でも、手順は同じです。
+言語キーをLiferayにデプロイするには、[グローバル言語キーのオーバーライド](../../../liferay-internals/extending-liferay/overriding-global-language-translations-with-language-properties.md)を参照してください。 既存のキーをオーバーライドする場合でも、新しいキーを追加する場合でも、手順は同じです。
 
 一部の言語を自動的に翻訳されないようにする場合は、プロジェクトの`build.gradle`ファイルで`excludedLanguageIds`プロパティを使用します。  たとえば、フランス語を含める場合は以下のようにします。
 

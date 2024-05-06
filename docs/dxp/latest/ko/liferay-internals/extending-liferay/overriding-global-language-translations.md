@@ -52,7 +52,7 @@ Liferay DXP/Portal 7.4+에서는 메타데이터를 사용하여 재정의를 �
 
 이 예는 `홈` 언어 번역 설정을 다음과 같이 변경합니다.
 
-```{literalinclude} ./overriding-global-language-translations/resources/liferay-i2f4.zip/i2f4-impl/src/main/resources/content/Language_en_US.properties
+```{literalinclude} ./overriding-global-language-translations-with-language-properties/resources/liferay-i2f4.zip/i2f4-impl/src/main/resources/content/Language_en_US.properties
 :language: properties
 ```
 
@@ -94,11 +94,11 @@ Liferay DXP/Portal 7.4+에서는 메타데이터를 사용하여 재정의를 �
 
 1. 메뉴 아이콘(![Menu](../../images/icon-menu.png))을 클릭합니다. 홈 아이콘 레이블은 사용자 정의 언어 번역 값을 사용합니다.
 
-   ![홈 아이콘은 이제 사용자 정의 언어 번역 값을 사용합니다.](./overriding-global-language-translations/images/04.png)
+   ![홈 아이콘은 이제 사용자 정의 언어 번역 값을 사용합니다.](./overriding-global-language-translations-with-language-properties/images/04.png)
 
 1. 이 예에는 여러 로케일에 대한 사용자 정의 언어 번역 값이 포함되어 있습니다. 예를 들어 언어 선택기를 사용하여 포르투갈어(브라질) 또는 일본어를 선택하면 해당 로케일의 사용자 정의를 볼 수 있습니다. 모듈은 이러한 로케일에 대한 언어 번역도 재정의합니다.
 
-   ![사용자 지정 언어 번역은 브라질 포르투갈어 및 일본어에도 사용됩니다.](./overriding-global-language-translations/images/05.png)
+   ![사용자 지정 언어 번역은 브라질 포르투갈어 및 일본어에도 사용됩니다.](./overriding-global-language-translations-with-language-properties/images/05.png)
 
 이제 예제를 보았으므로 작동 방식은 다음과 같습니다.
 
@@ -106,7 +106,7 @@ Liferay DXP/Portal 7.4+에서는 메타데이터를 사용하여 재정의를 �
 
 재정의할 번역을 선택합니다. 예제 모듈은 `홈` 언어 번역을 재정의합니다.
 
-```{literalinclude} ./overriding-global-language-translations/resources/liferay-i2f4.zip/i2f4-impl/src/main/resources/content/Language_en_US.properties
+```{literalinclude} ./overriding-global-language-translations-with-language-properties/resources/liferay-i2f4.zip/i2f4-impl/src/main/resources/content/Language_en_US.properties
    :language: properties
 ```
 
@@ -125,7 +125,7 @@ Language[_xx_XX].properties
 
 모듈의 `bnd.bnd` 파일에서 언어 리소스 공급자 기능을 지정합니다. 다음은 예제의 `Provide-Capability` 헤더입니다.
 
-```{literalinclude} ./overriding-global-language-translations/resources/liferay-i2f4.zip/i2f4-impl/bnd.bnd
+```{literalinclude} ./overriding-global-language-translations-with-language-properties/resources/liferay-i2f4.zip/i2f4-impl/bnd.bnd
    :lines: 4-6
 ```
 
@@ -159,7 +159,7 @@ Provide-Capability:\
 
 이 예는 `게시` 언어 번역 설정을 다음과 같이 변경합니다.
 
-```{literalinclude} ./overriding-global-language-translations/resources/liferay-x8f3.zip/x8f3-impl/src/main/resources/content/Language_en_US.properties
+```{literalinclude} ./overriding-global-language-translations-with-language-properties/resources/liferay-x8f3.zip/x8f3-impl/src/main/resources/content/Language_en_US.properties
    :language: properties
 ```
 
@@ -195,11 +195,11 @@ Provide-Capability:\
 
 1. 사이트 페이지로 이동하고 수정 아이콘(![Edit](../../images/icon-edit.png))을 클릭합니다. 게시 버튼은 사용자 정의 언어 번역을 보여줍니다.
 
-   ![게시 버튼은 이제 사용자 정의 언어 번역을 사용합니다.](./overriding-global-language-translations/images/06.png)
+   ![게시 버튼은 이제 사용자 정의 언어 번역을 사용합니다.](./overriding-global-language-translations-with-language-properties/images/06.png)
 
 1. 사용자 정의 언어 번역을 보려면 언어 선택기를 사용하여 브라질 포르투갈어 또는 일본어를 선택하십시오. 모듈은 모듈에 포함된 각 로캘에 대한 언어 번역을 재정의합니다.
 
-   ![사용자 지정 언어 번역은 브라질 포르투갈어 및 일본어에도 사용됩니다.](./overriding-global-language-translations/images/07.png)
+   ![사용자 지정 언어 번역은 브라질 포르투갈어 및 일본어에도 사용됩니다.](./overriding-global-language-translations-with-language-properties/images/07.png)
 
 7.4+ 예제와 마찬가지로 이 모듈은 언어 번역 파일에서 사용자 정의 값을 지정합니다. 그러나 재정의를 선언하기 위해 메타데이터( `bnd.bnd` 파일 헤더)를 사용하는 대신 모듈은 `ResourceBundle` 클래스를 사용합니다.
 
@@ -207,7 +207,7 @@ Provide-Capability:\
 
 재정의하는 각 로케일에는 `java.util.ResourceBundle`을 확장하는 클래스가 필요합니다. 다음은 `en_US` 로케일에 대한 예제 리소스 번들 클래스입니다.
 
-```{literalinclude} ./overriding-global-language-translations/resources/liferay-x8f3.zip/x8f3-impl/src/main/java/com/acme/x8f3/internal/language/X8F3EnglishResourceBundle.java
+```{literalinclude} ./overriding-global-language-translations-with-language-properties/resources/liferay-x8f3.zip/x8f3-impl/src/main/java/com/acme/x8f3/internal/language/X8F3EnglishResourceBundle.java
    :language: java
    :lines: 10-26
 ```
@@ -216,7 +216,7 @@ Provide-Capability:\
 
 클래스의 `@Component` 주석은 이를 OSGi `ResourceBundle` 서비스 구성요소로 선언합니다. `language.id` 속성은 `en_US` 로케일을 지정합니다.
 
-```{literalinclude} ./overriding-global-language-translations/resources/liferay-x8f3.zip/x8f3-impl/src/main/java/com/acme/x8f3/internal/language/X8F3EnglishResourceBundle.java
+```{literalinclude} ./overriding-global-language-translations-with-language-properties/resources/liferay-x8f3.zip/x8f3-impl/src/main/java/com/acme/x8f3/internal/language/X8F3EnglishResourceBundle.java
    :language: java
    :lines: 10
 ```
@@ -233,14 +233,14 @@ Provide-Capability:\
 
 구성 요소 정의:
 
-```{literalinclude} ./overriding-global-language-translations/resources/liferay-x8f3.zip/x8f3-impl/src/main/java/com/acme/x8f3/internal/language/X8F3JapaneseResourceBundle.java
+```{literalinclude} ./overriding-global-language-translations-with-language-properties/resources/liferay-x8f3.zip/x8f3-impl/src/main/java/com/acme/x8f3/internal/language/X8F3JapaneseResourceBundle.java
    :language: java
    :lines: 10
 ```
 
 리소스 번들 할당:
 
-```{literalinclude} ./overriding-global-language-translations/resources/liferay-x8f3.zip/x8f3-impl/src/main/java/com/acme/x8f3/internal/language/X8F3JapaneseResourceBundle.java
+```{literalinclude} ./overriding-global-language-translations-with-language-properties/resources/liferay-x8f3.zip/x8f3-impl/src/main/java/com/acme/x8f3/internal/language/X8F3JapaneseResourceBundle.java
    :dedent: 1
    :language: java
    :lines: 23-24

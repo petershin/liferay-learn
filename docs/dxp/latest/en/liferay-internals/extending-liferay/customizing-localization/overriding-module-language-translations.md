@@ -4,7 +4,7 @@ uuid: 4d839db3-cb3a-4d88-852e-2c866358fa06
 # Overriding Module Language Translations in Earlier Versions
 
 ```{important}
-For Liferay DXP 7.4 U4 (Update 4) and above or Liferay Portal 7.4 GA8 and above, the [Language Override tool](../../system-administration/configuring-liferay/changing-translations-with-language-override.md) is the recommended approach. If you're working with Liferay DXP/Portal 7.4+, please follow the instructions for [Overriding Global Language Translations](./overriding-global-language-translations.md).
+For Liferay DXP 7.4 U4 (Update 4) and above or Liferay Portal 7.4 GA8 and above, the [Language Override tool](../../system-administration/configuring-liferay/changing-translations-with-language-override.md) is the recommended approach. If you're working with Liferay DXP/Portal 7.4+, please follow the instructions for [Overriding Global Language Translations with Language Properties](./overriding-global-language-translations-with-language-properties.md).
 ```
 
 Overriding Liferay application specific language translations in earlier versions is similar to overriding global language translations in earlier versions but there are additional steps. 
@@ -200,12 +200,12 @@ If your override isn't showing, use [Gogo shell](../fundamentals/using-the-gogo-
 ```
 
 ```{note}
-You can continue to use your language translation override in DXP 7.4+ if the language key name is the same---check the [`/modules/apps/portal-language/portal-language-lang/src/main/resources/content/Language[_xx_XX].properties`](https://github.com/liferay/liferay-portal/tree/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-language/portal-language-lang/src/main/resources/content) file. Optionally, you can simplify your module by removing the `ResourceBundle` class and replacing the `Provide-Capability` header in your `bnd.bnd` file with the header demonstrated in the [Overriding Global Language Translations](./overriding-global-language-translations.md#declare-the-oOverride-in-the-bnd-file).
+You can continue to use your language translation override in DXP 7.4+ if the language key name is the same---check the [`/modules/apps/portal-language/portal-language-lang/src/main/resources/content/Language[_xx_XX].properties`](https://github.com/liferay/liferay-portal/tree/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-language/portal-language-lang/src/main/resources/content) file. Optionally, you can simplify your module by removing the `ResourceBundle` class and replacing the `Provide-Capability` header in your `bnd.bnd` file with the header demonstrated in the [Overriding Global Language Translations with Language Properties](./overriding-global-language-translations-with-language-properties.md#declare-the-override-in-the-bnd-file).
 ```
 
 Search the results for resource bundle aggregate services whose ranking is higher.
 
 ## Related Information
 
-* [Overriding Global Language Translations](./overriding-global-language-translations.md)
+* [Overriding Global Language Translations with Language Properties](./overriding-global-language-translations-with-language-properties.md)
 * [Changing Translations with Language Override](../../system-administration/configuring-liferay/changing-translations-with-language-override.md)

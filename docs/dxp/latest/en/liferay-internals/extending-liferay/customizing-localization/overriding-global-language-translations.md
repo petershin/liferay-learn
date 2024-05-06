@@ -1,7 +1,7 @@
 ---
 uuid: 0e974ead-9e19-4ded-8b82-1e63c54fc2fc
 ---
-# Overriding Global Language Translations
+# Overriding Global Language Translations with Language Properties
 
 Liferay DXP/Portal implements headings, labels, and messages for the default locale and many other locales using language translations. You can override these translations for any of the locales using new language translation values in a module.
 
@@ -56,7 +56,7 @@ If your version is earlier than 7.4, skip ahead to [Overriding in Earlier Versio
 
 This example changes the `home` language translation setting to this:
 
-```{literalinclude} ./overriding-global-language-translations/resources/liferay-i2f4.zip/i2f4-impl/src/main/resources/content/Language_en_US.properties
+```{literalinclude} ./overriding-global-language-translations-with-language-properties/resources/liferay-i2f4.zip/i2f4-impl/src/main/resources/content/Language_en_US.properties
 :language: properties
 ```
 
@@ -98,11 +98,11 @@ Then, follow these steps to deploy the example:
 
 1. Click the menu icon (![Menu](../../images/icon-menu.png)). The home icon label uses the custom language translation value.
 
-    ![The home icon now uses the custom language translation value.](./overriding-global-language-translations/images/04.png)
+    ![The home icon now uses the custom language translation value.](./overriding-global-language-translations-with-language-properties/images/04.png)
 
 1. The example includes custom language translation values for multiple locales. For example, use the language selector to select Brazilian Portuguese or Japanese to see the customization in that locale. The module overrides language translations for these locales too.
 
-    ![A custom language translation is also used for Brazilian Portuguese and Japanese.](./overriding-global-language-translations/images/05.png)
+    ![A custom language translation is also used for Brazilian Portuguese and Japanese.](./overriding-global-language-translations-with-language-properties/images/05.png)
 
 Now that you've seen the example, here's how it works.
 
@@ -110,7 +110,7 @@ Now that you've seen the example, here's how it works.
 
 Select the translations you want to override. The example module overrides the `home` language translation.
 
-```{literalinclude} ./overriding-global-language-translations/resources/liferay-i2f4.zip/i2f4-impl/src/main/resources/content/Language_en_US.properties
+```{literalinclude} ./overriding-global-language-translations-with-language-properties/resources/liferay-i2f4.zip/i2f4-impl/src/main/resources/content/Language_en_US.properties
 :language: properties
 ```
 
@@ -129,7 +129,7 @@ For example, if you're overriding Japanese, use `Language_ja.properties`.
 
 In your module's `bnd.bnd` file, specify your language resource provider capability. Here is the example's `Provide-Capability` header:
 
-```{literalinclude} ./overriding-global-language-translations/resources/liferay-i2f4.zip/i2f4-impl/bnd.bnd
+```{literalinclude} ./overriding-global-language-translations-with-language-properties/resources/liferay-i2f4.zip/i2f4-impl/bnd.bnd
 :lines: 4-6
 ```
 
@@ -162,7 +162,7 @@ On Liferay DXP/Portal versions earlier than 7.4, overriding global language tran
 
 This example changes the `publish` language translation setting to this:
 
-```{literalinclude} ./overriding-global-language-translations/resources/liferay-x8f3.zip/x8f3-impl/src/main/resources/content/Language_en_US.properties
+```{literalinclude} ./overriding-global-language-translations-with-language-properties/resources/liferay-x8f3.zip/x8f3-impl/src/main/resources/content/Language_en_US.properties
 :language: properties
 ```
 
@@ -198,11 +198,11 @@ Here's how to deploy the example:
 
 1. Navigate to a Site page and click the edit icon (![Edit](../../images/icon-edit.png)). The publish button shows the custom language translation.
 
-    ![The publish button now uses the custom language translation.](./overriding-global-language-translations/images/06.png)
+    ![The publish button now uses the custom language translation.](./overriding-global-language-translations-with-language-properties/images/06.png)
 
 1. Use the language selector to select Brazilian Portuguese or Japanese to see the custom language translation. The module overrides language translations for each locale you include in the module.
 
-    ![A custom language translation is also used for Brazilian Portuguese and Japanese.](./overriding-global-language-translations/images/07.png)
+    ![A custom language translation is also used for Brazilian Portuguese and Japanese.](./overriding-global-language-translations-with-language-properties/images/07.png)
 
 Like the 7.4+ example, this module specifies custom values in language translation files. Instead of using metadata (a `bnd.bnd` file header) to declare the override, however, the module uses `ResourceBundle` classes.
 
@@ -210,7 +210,7 @@ Like the 7.4+ example, this module specifies custom values in language translati
 
 Each locale you're overriding requires a class that extends `java.util.ResourceBundle`. Here's the example resource bundle class for the `en_US` locale:
 
-```{literalinclude} ./overriding-global-language-translations/resources/liferay-x8f3.zip/x8f3-impl/src/main/java/com/acme/x8f3/internal/language/X8F3EnglishResourceBundle.java
+```{literalinclude} ./overriding-global-language-translations-with-language-properties/resources/liferay-x8f3.zip/x8f3-impl/src/main/java/com/acme/x8f3/internal/language/X8F3EnglishResourceBundle.java
 :language: java
 :lines: 10-26
 ```
@@ -219,7 +219,7 @@ The class's `_resourceBundle` field is assigned a `ResourceBundle`. The call to 
 
 The class's `@Component` annotation declares it an OSGi `ResourceBundle` service component. Its `language.id` property designates it for the `en_US` locale.
 
-```{literalinclude} ./overriding-global-language-translations/resources/liferay-x8f3.zip/x8f3-impl/src/main/java/com/acme/x8f3/internal/language/X8F3EnglishResourceBundle.java
+```{literalinclude} ./overriding-global-language-translations-with-language-properties/resources/liferay-x8f3.zip/x8f3-impl/src/main/java/com/acme/x8f3/internal/language/X8F3EnglishResourceBundle.java
 :language: java
 :lines: 10
 ```
@@ -236,14 +236,14 @@ Global language translation overrides for multiple locales require a separate re
 
 Component definition:
 
-```{literalinclude} ./overriding-global-language-translations/resources/liferay-x8f3.zip/x8f3-impl/src/main/java/com/acme/x8f3/internal/language/X8F3JapaneseResourceBundle.java
+```{literalinclude} ./overriding-global-language-translations-with-language-properties/resources/liferay-x8f3.zip/x8f3-impl/src/main/java/com/acme/x8f3/internal/language/X8F3JapaneseResourceBundle.java
 :language: java
 :lines: 10
 ```
 
 Resource bundle assignment:
 
-```{literalinclude} ./overriding-global-language-translations/resources/liferay-x8f3.zip/x8f3-impl/src/main/java/com/acme/x8f3/internal/language/X8F3JapaneseResourceBundle.java
+```{literalinclude} ./overriding-global-language-translations-with-language-properties/resources/liferay-x8f3.zip/x8f3-impl/src/main/java/com/acme/x8f3/internal/language/X8F3JapaneseResourceBundle.java
 :dedent: 1
 :language: java
 :lines: 23-24

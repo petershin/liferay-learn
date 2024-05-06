@@ -45,5 +45,5 @@ DXPインスタンスのデフォルトの言語とタイムゾーンを構成�
 ## 関連トピック
 
 * [仮想インスタンスのローカリゼーションの構成](../../system-administration/configuring-liferay/virtual-instances/localization.md)
-* [標準言語ファイルの上書き方法](../../liferay-internals/extending-liferay/overriding-global-language-translations.md)
+* [標準言語ファイルの上書き方法](../../liferay-internals/extending-liferay/overriding-global-language-translations-with-language-properties.md)
 * [アプリケーションのローカライズ](https://help.liferay.com/hc/ja/articles/360028746692-Localizing-Your-Application)

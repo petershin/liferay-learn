@@ -1,7 +1,7 @@
 # 以前のバージョンでのモジュール言語ファイルのオーバーライドをする
 
 ```{important}
-Liferay DXP 7.4 U4 (アップデート 4)以降、またはLiferay Portal 7.4 GA8以降では、[Language Override tool](../../system-administration/configuring-liferay/changing-translations-with-language-override.md)を使用することが推奨されます。 Liferay DXP/Portal 7.4以降を使用している場合は、[標準言語ファイルの上書き](./overriding-global-language-translations.md)の手順に従ってください。
+Liferay DXP 7.4 U4 (アップデート 4)以降、またはLiferay Portal 7.4 GA8以降では、[Language Override tool](../../system-administration/configuring-liferay/changing-translations-with-language-override.md)を使用することが推奨されます。 Liferay DXP/Portal 7.4以降を使用している場合は、[標準言語ファイルの上書き](./overriding-global-language-translations-with-language-properties.md)の手順に従ってください。
 ```
 
 以前のバージョンでLiferayアプリケーション固有の言語ファイルをオーバーライドすることは、以前のバージョンでの標準言語ファイルのオーバーライドと似ていますが、追加の手順があります。
@@ -197,12 +197,12 @@ Liferay DXP 7.4 U4 (アップデート 4)以降、またはLiferay Portal 7.4 GA
 ```
 
 ```{note}
-言語キー名が同じ場合は、DXP7.4以降で言語ファイルオーバーライドを引き続き使用できます---  [`/modules/apps/portal-language/portal-language-lang/src/main/resources/content/Language [_xx_XX].properties`](https://github.com/liferay/liferay-portal/tree/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-language/portal-language-lang/src/main/resources/content) ファイルを確認してください。 オプションとして、`ResourceBundle`クラスを削除し、`bnd.bnd`ファイルの`Provide-Capability`ヘッダーを [標準言語ファイルの上書き](./overriding-global-language-translations.md#declare-the-oOverride-in-the-bnd-file) で示されているヘッダーに置き換えることで、モジュールを簡素化することができます。
+言語キー名が同じ場合は、DXP7.4以降で言語ファイルオーバーライドを引き続き使用できます---  [`/modules/apps/portal-language/portal-language-lang/src/main/resources/content/Language [_xx_XX].properties`](https://github.com/liferay/liferay-portal/tree/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-language/portal-language-lang/src/main/resources/content) ファイルを確認してください。 オプションとして、`ResourceBundle`クラスを削除し、`bnd.bnd`ファイルの`Provide-Capability`ヘッダーを [標準言語ファイルの上書き](./overriding-global-language-translations-with-language-properties.md#declare-the-oOverride-in-the-bnd-file) で示されているヘッダーに置き換えることで、モジュールを簡素化することができます。
 ```
 
 結果を検索して、ランキングが高いリソースバンドル集約サービスを探します。
 
 ## 関連情報
 
-* [標準言語ファイルの上書き方法](./overriding-global-language-translations.md)
+* [標準言語ファイルの上書き方法](./overriding-global-language-translations-with-language-properties.md)
 * [翻訳ファイルの変更](../../system-administration/configuring-liferay/changing-translations-with-language-override.md)

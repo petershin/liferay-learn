@@ -15,6 +15,6 @@ Liferay DXP/Portal 7.4では、Liferayモジュールの言語キーがLiferay P
 
 ## 関連トピック
 
-* [標準言語ファイルの上書き方法](../../../liferay-internals/extending-liferay/overriding-global-language-translations.md)
+* [標準言語ファイルの上書き方法](../../../liferay-internals/extending-liferay/overriding-global-language-translations-with-language-properties.md)
 * [言語キーの名称変更](../reference/renamed-language-keys.md)
 * [カスタム開発のアップグレード](../upgrading-custom-development.md)

@@ -52,7 +52,7 @@ Liferay DXP/Portal 7.4+では、メタデータを使用してオーバーライ
 
 この例では、`home`言語ファイル設定を次のように変更します。
 
-```{literalinclude} ./overriding-global-language-translations/resources/liferay-i2f4.zip/i2f4-impl/src/main/resources/content/Language_en_US.properties
+```{literalinclude} ./overriding-global-language-translations-with-language-properties/resources/liferay-i2f4.zip/i2f4-impl/src/main/resources/content/Language_en_US.properties
    :language: properties
 ```
 
@@ -94,11 +94,11 @@ Liferay DXP/Portal 7.4+では、メタデータを使用してオーバーライ
 
 1. メニューアイコン（![Menu](../../images/icon-menu.png)）をクリックします。 ホームアイコンラベルには、カスタム言語ファイル値が使用されています。
 
-   ![ホームアイコンには、カスタム言語ファイル値が使用されています。](./overriding-global-language-translations/images/04.png)
+   ![ホームアイコンには、カスタム言語ファイル値が使用されています。](./overriding-global-language-translations-with-language-properties/images/04.png)
 
 1. この例には、複数のロケールのカスタム言語ファイル値が含まれています。 たとえば、言語セレクターでブラジルのポルトガル語または日本語を選択すると、そのロケールでのカスタマイゼーションが表示されます。 モジュールは、これらのロケールの言語ファイルもオーバーライドします。
 
-   ![カスタム言語ファイルは、ブラジルポルトガル語と日本語にも使用されます。](./overriding-global-language-translations/images/05.png)
+   ![カスタム言語ファイルは、ブラジルポルトガル語と日本語にも使用されます。](./overriding-global-language-translations-with-language-properties/images/05.png)
 
 例を見たところで、次にこれがどのように機能するかを確認していきます。
 
@@ -106,7 +106,7 @@ Liferay DXP/Portal 7.4+では、メタデータを使用してオーバーライ
 
 オーバーライドしたい翻訳ファイルを選択します。 サンプルモジュールは、`home`言語ファイルをオーバーライドします。
 
-```{literalinclude} ./overriding-global-language-translations/resources/liferay-i2f4.zip/i2f4-impl/src/main/resources/content/Language_en_US.properties
+```{literalinclude} ./overriding-global-language-translations-with-language-properties/resources/liferay-i2f4.zip/i2f4-impl/src/main/resources/content/Language_en_US.properties
    :language: properties
 ```
 
@@ -125,7 +125,7 @@ Language[_xx_XX].properties
 
 モジュールの`bnd.bnd`ファイルで、言語リソースプロバイダーの機能を指定します。 サンプルの`Provide-Capability`ヘッダーは次のとおりです。
 
-```{literalinclude} ./overriding-global-language-translations/resources/liferay-i2f4.zip/i2f4-impl/bnd.bnd
+```{literalinclude} ./overriding-global-language-translations-with-language-properties/resources/liferay-i2f4.zip/i2f4-impl/bnd.bnd
    :lines: 4-6
 ```
 
@@ -158,7 +158,7 @@ Provide-Capability:\
 
 この例では、`publish`言語ファイル設定を次のように変更します。
 
-```{literalinclude} ./overriding-global-language-translations/resources/liferay-x8f3.zip/x8f3-impl/src/main/resources/content/Language_en_US.properties
+```{literalinclude} ./overriding-global-language-translations-with-language-properties/resources/liferay-x8f3.zip/x8f3-impl/src/main/resources/content/Language_en_US.properties
    :language: properties
 ```
 
@@ -194,11 +194,11 @@ Provide-Capability:\
 
 1. サイトページに移動し、編集アイコンをクリックします（![Edit](../../images/icon-edit.png)）。 公開ボタンに、カスタム言語ファイルが表示されます。
 
-   ![公開ボタンには、カスタム言語ファイルが使用されています。](./overriding-global-language-translations/images/06.png)
+   ![公開ボタンには、カスタム言語ファイルが使用されています。](./overriding-global-language-translations-with-language-properties/images/06.png)
 
 1. 言語セレクターを使用してブラジルのポルトガル語または日本語を選択すると、カスタム言語ファイルが表示されます。 モジュールは、モジュールに含める各ロケールの言語ファイルをオーバーライドします。
 
-   ![カスタム言語ファイルは、ブラジルポルトガル語と日本語にも使用されます。](./overriding-global-language-translations/images/07.png)
+   ![カスタム言語ファイルは、ブラジルポルトガル語と日本語にも使用されます。](./overriding-global-language-translations-with-language-properties/images/07.png)
 
 7.4以降の例と同様に、このモジュールは言語ファイルの変更値を指定します。 ただし、メタデータ（`bnd.bnd`ファイルヘッダー）を使用してオーバーライドを宣言する代わりに、モジュールは`ResourceBundle`クラスを使用します。
 
@@ -206,7 +206,7 @@ Provide-Capability:\
 
 オーバーライドする各ロケールには、`java.util.ResourceBundle`を拡張するクラスが必要です。 `en_US`ロケールのリソースバンドルクラスの例を次に示します。
 
-```{literalinclude} ./overriding-global-language-translations/resources/liferay-x8f3.zip/x8f3-impl/src/main/java/com/acme/x8f3/internal/language/X8F3EnglishResourceBundle.java
+```{literalinclude} ./overriding-global-language-translations-with-language-properties/resources/liferay-x8f3.zip/x8f3-impl/src/main/java/com/acme/x8f3/internal/language/X8F3EnglishResourceBundle.java
    :language: java
    :lines: 10-26
 ```
@@ -215,7 +215,7 @@ Provide-Capability:\
 
 クラスの`@Component`アノテーションは、それをOSGi `ResourceBundle` サービスコンポーネントとして宣言します。 その`language.id`プロパティは、`en_US`ロケール用にそれを指定します。
 
-```{literalinclude} ./overriding-global-language-translations/resources/liferay-x8f3.zip/x8f3-impl/src/main/java/com/acme/x8f3/internal/language/X8F3EnglishResourceBundle.java
+```{literalinclude} ./overriding-global-language-translations-with-language-properties/resources/liferay-x8f3.zip/x8f3-impl/src/main/java/com/acme/x8f3/internal/language/X8F3EnglishResourceBundle.java
    :language: java
    :lines: 10
 ```
@@ -232,14 +232,14 @@ Provide-Capability:\
 
 コンポーネント定義：
 
-```{literalinclude} ./overriding-global-language-translations/resources/liferay-x8f3.zip/x8f3-impl/src/main/java/com/acme/x8f3/internal/language/X8F3JapaneseResourceBundle.java
+```{literalinclude} ./overriding-global-language-translations-with-language-properties/resources/liferay-x8f3.zip/x8f3-impl/src/main/java/com/acme/x8f3/internal/language/X8F3JapaneseResourceBundle.java
    :language: java
    :lines: 10
 ```
 
 リソースバンドルの割り当て：
 
-```{literalinclude} ./overriding-global-language-translations/resources/liferay-x8f3.zip/x8f3-impl/src/main/java/com/acme/x8f3/internal/language/X8F3JapaneseResourceBundle.java
+```{literalinclude} ./overriding-global-language-translations-with-language-properties/resources/liferay-x8f3.zip/x8f3-impl/src/main/java/com/acme/x8f3/internal/language/X8F3JapaneseResourceBundle.java
    :dedent: 1
    :language: java
    :lines: 23-24

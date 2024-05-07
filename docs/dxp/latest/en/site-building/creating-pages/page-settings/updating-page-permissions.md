@@ -21,7 +21,7 @@ To update page permissions,
 
 1. Next to a page, click *Actions* (![Actions](../../../images/icon-actions.png)) &rarr; *Permissions* (1).
 
-   Alternatively, while [editing a page](../using-content-pages/adding-elements-to-content-pages.md), click *Options* (![Options icon](../../../images/icon-options.png)) at the top right corner of the page &rarr; *Permissions* (2).
+   Alternatively, while [editing a page](../using-content-pages/adding-elements-to-content-pages.md), at the top right corner of the page click *Options* (![Options icon](../../../images/icon-options.png)) &rarr; *Permissions* (2).
 
    {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA126+` Or select the checkbox next to the page(s) (see [permissions in bulk](#setting-pages-permissions-in-bulk)) and click *Permissions* at the top options bar (3).
 
@@ -48,7 +48,7 @@ To copy a page with its permissions,
 {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA126+`
 
 !!! important
-    This feature is currently behind a release feature flag (LPS-196847). Read [Release Feature Flags](../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information.
+    Currently, this feature is behind a release feature flag (LPS-196847). Read [Release Feature Flags](../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information.
 
 1. Open the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)) and navigate to *Site Builder* &rarr; *Pages*.
 
@@ -106,40 +106,40 @@ For example, designers require full control over layout and style editing, best 
 
 Liferay provides four update permissions for pages. Each grants users different sets of permissions:
 
-- **Update**: The most comprehensive of the four permissions.
+**Update:** The most comprehensive of the four permissions.
 
-   Users can edit the page's layout and style completely. It's aimed at the designer role as they are the ones who must edit and style the whole page.
+Users can edit the page's layout and style completely. It's aimed at the designer role as they are the ones who must edit and style the whole page.
 
-   All features added to the page editor are enabled by default for this permission.
+All features added to the page editor are enabled by default for this permission.
 
-   The other update permissions are irrelevant once this one is granted since it encompasses the others.
+The other update permissions are irrelevant once this one is granted since it encompasses the others.
 
-- **Update - Limited**: Users have limited access to the edition of fragment styles.
+**Update - Limited:** Users have limited access to editing fragment styles.
 
-   Users can edit fragment styles only inside the brand/style book limits. It's aimed at the page builder role as they need to make some adjustments when building the pages.
+Users can edit fragment styles only inside the brand/style book limits. It's aimed at the page builder role as they need to make some adjustments when building the pages.
 
-   | Page Element                                                 | Available Actions                                                  |
-   |:-------------------------------------------------------------|:-------------------------------------------------------------------|
-   | Fragments                                                    | Available: Drag and drop.                                          |
-   | General Tab - Container and Grid fragments                   | Available: Container, Frame, Overflow, and Hide Fragment options.  |
-   | General Tab - other fragments                                | Available: Overflow and Hide Fragment options.                     |
-   | Styles Tab                                                   | Not available: Decoupling from tokens.                             |
-   | Advanced Tab (`Update - Advanced Options` permission needed) | Available: Advanced configurations.<br> Not Available: Custom CSS. |
+| Page Element                                                 | Available Actions                                                  |
+|:-------------------------------------------------------------|:-------------------------------------------------------------------|
+| Fragments                                                    | Available: Drag and drop.                                          |
+| General Tab - Container and Grid fragments                   | Available: Container, Frame, Overflow, and Hide Fragment options.  |
+| General Tab - other fragments                                | Available: Overflow and Hide Fragment options.                     |
+| Styles Tab                                                   | Not available: Decoupling from tokens.                             |
+| Advanced Tab (`Update - Advanced Options` permission needed) | Available: Advanced configurations.<br> Not Available: Custom CSS. |
 
-- **Update - Basic**: Users can perform basic actions while updating the page.
+**Update - Basic:** Users can perform basic actions while updating the page.
 
-   Users can update the page layout and drag & drop new fragments, but it's not possible to change all options in the page element's Styles tab.
+Users can update the page layout and drag and drop new fragments, but it's not possible to change all options in the page element's Styles tab.
 
-   | Page Element                                                 | Available Actions                                                  |
-   |:-------------------------------------------------------------|:-------------------------------------------------------------------|
-   | Fragments                                                    | Available: Drag and drop.                                          |
-   | General Tab - Container and Grid fragments                   | Available: Container, Frame, Overflow, and Hide Fragment options.  |
-   | General Tab - other fragments                                | Available: Overflow and Hide Fragment options.                     |
-   | Styles Tab - Container and Grid fragments                    | Available: Edit Spacing options.                                   |
-   | Styles Tab - other fragments                                 | Not Available.                                                     |
-   | Advanced Tab (`Update - Advanced Options` permission needed) | Available: Advanced configurations.<br> Not Available: Custom CSS. |
+| Page Element                                                 | Available Actions                                                  |
+|:-------------------------------------------------------------|:-------------------------------------------------------------------|
+| Fragments                                                    | Available: Drag and drop.                                          |
+| General Tab - Container and Grid fragments                   | Available: Container, Frame, Overflow, and Hide Fragment options.  |
+| General Tab - other fragments                                | Available: Overflow and Hide Fragment options.                     |
+| Styles Tab - Container and Grid fragments                    | Available: Edit Spacing options.                                   |
+| Styles Tab - other fragments                                 | Not Available.                                                     |
+| Advanced Tab (`Update - Advanced Options` permission needed) | Available: Advanced configurations.<br> Not Available: Custom CSS. |
 
-- **Update - Advanced Options**: Users can access the page element's Advanced tab.
+**Update - Advanced Options:** Users can access the page element's Advanced tab.
 
 ## Related Topics
 

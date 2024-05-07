@@ -12,23 +12,25 @@ taxonomy-category-names:
 
 Products undergo a life cycle after which they reach end-of-life (EOL). Some products are discontinued completely while others can have a replacement, to bring newer and better variants to the buyers. Using *Replacement Products*, you can direct buyers to the replacement and curb potential loss.
 
-```{note}
-Replacement Products are available in Liferay DXP 7.4+/Commerce 4.0+.
-```
+!!! note
+    Replacement products are available in Liferay DXP 7.4+/Commerce 4.0+.
 
 ## Feature Overview
 
 ### Viewing a discontinued product
 
-All discontinued products have a label that shows current availability along with its status. A *Replacement Product* button displays the Product Details for the replacement. A *Replacements* section directs users to the replacement product.
+All discontinued products have a label that shows current availability along with its status. A *Replacement Product* button displays the product details for the replacement. A *Replacements* section directs users to the replacement product.
 
-![The discontinued product shows information about the Replacement Product.](./replacement-products/images/01.gif)
+![The discontinued product shows information about the replacement product.](./replacement-products/images/01.gif)
 
 ### Replacing discontinued products while importing Orders
 
 If an order imported from a CSV file or wishlist contains a discontinued product, it is replaced by its replacement. The discontinued product is not replaced if it's still in stock or allows back orders.
 
 ![A new Replacing column shows the discontinued product replaced.](./replacement-products/images/02.png)
+
+!!! note
+    If you use the quick add-to-cart function to add a discontinued SKU to the mini cart, the replacement SKU gets added automatically. See [Adding Discontinued Products to Cart](../../creating-store-content/liferay-commerce-fragments/using-the-mini-cart-fragment.md#adding-the-mini-cart-fragment-to-a-page)
 
 <!-- TO BE ADDED ONCE FEATURE IS AVAILABLE
 
@@ -41,7 +43,7 @@ If an order imported from a CSV file or wishlist contains a discontinued product
 
 When a Product has reached end of life or is being retired, you can mark it as discontinued.
 
-1. Open the *Global Menu* and click on *Commerce* &rarr; *Products*.
+1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Products*.
 
 1. Select the product you want to discontinue.
 
@@ -51,9 +53,8 @@ When a Product has reached end of life or is being retired, you can mark it as d
 
 ![Enter an End of Life Date and mark the SKU as discontinued.](./replacement-products/images/03.png)
 
-```{important}
-This date is for informational purposes only and appears on the Product Details page. It does not schedule a product to be discontinued.
-```
+!!! important
+    This date is for informational purposes only and appears on the Product Details page. It does not schedule a product to be discontinued.
 
 ## Setting a Replacement
 

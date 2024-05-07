@@ -11,14 +11,14 @@ Here are some of the Clarity team members:
 
 | Screen Name | Email | First Name | Last Name | Job Title |
 |:---|:---|:---|:---|:---|
+| janenewton | jane.newton@clarityvisionsolutions.com | Jane | Newton | Marketing Specialist |
 | claramurphy | clara.murphy@clarityvisionsolutions.com | Clara | Murphy | Marketing Manager |
-| harperroberts | harper.roberts@clarityvisionsolutions.com | Harper | Roberts | Director of Human Resources |
 
 <!---
 | ianmiller | ian.miller@clarityvisionsolutions.com | Ian | Miller | IT Manager |
 | walterdouglas | walter.douglas@clarityvisionsolutions.com | Walter | Douglas | Web Developer |
 | christiancarter | christian.carter@clarityvisionsolutions.com | Christian | Carter | Marketing Coordinator |
-
+| harperroberts | harper.roberts@clarityvisionsolutions.com | Harper | Roberts | Director of Human Resources |
 --->
 
 Follow the steps below to create these user accounts:
@@ -27,15 +27,15 @@ Follow the steps below to create these user accounts:
 
 1. Click _New_ to create a new user.
 
-1. Input the user's screen name (e.g. `claramurphy`).
+1. Input the user's screen name (e.g. `janenewton`).
 
-1. Input the user's email address (e.g. `claramurphy@clarityvisionsoltions.com`).
+1. Input the user's email address (e.g. `jane.newton@clarityvisionsoltions.com`).
 
-1. Input the user's first name (e.g. `Clara`).
+1. Input the user's first name (e.g. `Jane`).
 
-1. Input the user's last name (e.g. `Murphy`).
+1. Input the user's last name (e.g. `Newton`).
 
-1. Input the user's job title (e.g. `Marketing Manager`).
+1. Input the user's job title (e.g. `Marketing Specialist`).
 
 1. Click _Save_ and navigate back out to the list of users. Continue making each of the users listed in the table.
 
@@ -48,8 +48,8 @@ In addition to the default roles that ship with Liferay, Clarity needs some cust
 
 | Type | Title | Description |
 |:---|:---|:---|
-| Regular | Marketing Manager | Organizational title for a manager within the marketing department |
-| Regular | Director of Human Resources | Organizational title for a Director of Human Resources |
+| Regular | Marketing Specialist | Organizational title for a member within the marketing department |
+| Regular | Content Manager | Organizational role for those managing content on Liferay |
 
 <!---
 | Regular | IT Manager | Organizational title for a manager within the IT department |
@@ -66,9 +66,9 @@ Follow the steps below to create these roles:
 
 1. Select the role type (e.g. `Regular`).
 
-1. Input the role title (e.g. `Marketing Manager`).
+1. Input the role title (e.g. `Marketing Specialist`).
 
-1. Input the role description (e.g. `Organizational title for a manager within the marketing department`).
+1. Input the role description (e.g. `Organizational title for a member within the marketing department`).
 
 1. Click _Save_ and navigate back out to the list of roles. Continue making each of the roles listed in the table.
 
@@ -77,24 +77,17 @@ Follow the steps below to create these roles:
 
 ## Creating Clarity User Groups
 
-Here are some of Clarity's user groups:
-
-| Name | Description |
-|:---|:---|
-| Information Technology (IT) | Members of the IT department at Clarity |
-| Marketing | Members of the marketing department at Clarity |
-
-Follow the steps below to create these user groups:
+Now let's make a Liferay user group for the marketing department. Follow the steps below to create these user groups:
 
 1. Open the applications menu and navigate to _Control Panel_ &rarr; _Users Groups_.
 
 1. Click _New_ to create a new user group.
 
-1. Input the user group name (e.g. `Information Technology (IT)`).
+1. Input the user group name (e.g. `Marketing`).
 
 1. Input the user group description (e.g. `Members of the IT department at Clarity`).
 
-1. Click _Save_. Continue making each user group listed in the table.
+1. Click _Save_. 
 
 Now that we have these users, roles, and user groups set up, let's move on to how the different user management tools can be used in Clarity's use case.
 

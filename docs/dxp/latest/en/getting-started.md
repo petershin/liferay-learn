@@ -1,4 +1,5 @@
 ---
+showChildrenCards: false
 toc:
   - ./getting-started/whats-new-74.md
   - ./getting-started/starting-with-a-docker-image.md

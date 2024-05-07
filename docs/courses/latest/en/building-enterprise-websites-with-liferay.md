@@ -5,7 +5,7 @@ toc:
 - ./building-enterprise-websites-with-liferay/module-3-deploying-liferay.md
 - ./building-enterprise-websites-with-liferay/module-4-identity-management-and-sso.md
 - ./building-enterprise-websites-with-liferay/module-5.md
-- ./building-enterprise-websites-with-liferay/module-6.md
+- ./building-enterprise-websites-with-liferay/module-6-site-building.md
 - ./building-enterprise-websites-with-liferay/module-7.md
 - ./building-enterprise-websites-with-liferay/module-8-headless-delivery.md
 - ./building-enterprise-websites-with-liferay/module-9-search.md

@@ -5,7 +5,7 @@ uuid: 22da9cce-2493-4a93-b184-6e8fe9d27879
 
 Site building is the process of creating the structure, framework, and overall user experience of a website. It is the necessary foundation for any successful web based solution. Leveraging information architecture and user experience (UX) principles, site building goes beyond design to ensure a cohesive, user-centric platform that is both functional and engaging.
 
-Getting the website foundation right from the start facilitates future growth, scalability, and ongoing support for your business needs. This is especially crucial for a company like Clarity Vision Solutions, which operates in a dynamic industry and needs a website that can adapt to their evolving product lines, marketing strategies, and customer demands. Developing and maintaining a website can be resource-intensive.
+Getting the website foundation right from the start facilitates future growth, scalability, and ongoing support for your business needs. This is especially crucial for a company like Clarity Vision Solutions, which operates in a dynamic industry and needs a website that can adapt to their evolving product lines, marketing strategies, and customer demands.
 
 Leveraging Liferay’s agile site building features, Clarity can streamline iterative development through reusable page elements, templates, and flexible content management. This empowers them to build a seamless and engaging user experience quickly and efficiently, minimizing resource requirements.
 

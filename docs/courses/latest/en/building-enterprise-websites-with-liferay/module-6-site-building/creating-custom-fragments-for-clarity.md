@@ -12,7 +12,7 @@ Liferay DXP includes the fragments editor UI for creating and managing fragments
 Here you'll use the Fragments Editor UI to create and import Clarity's custom fragments.
 
 !!! tip “When to Use Custom Fragments”
-    Liferay recommends using out-of-the-box fragments and configuration options whenever possible. Also, when you do need custom fragments, Liferay recommends leveraging available style tokens to simplify fragment code, which promotes design consistency across your website elements and improved maintainability.
+    Liferay recommends using out-of-the-box fragments and configuration options whenever possible. When you do need custom fragments, Liferay recommends leveraging available style tokens to simplify fragment code, which promotes design consistency across your website elements and improved maintainability.
 
 <!--TASK:
 ## Defining Fragment Configuration Options

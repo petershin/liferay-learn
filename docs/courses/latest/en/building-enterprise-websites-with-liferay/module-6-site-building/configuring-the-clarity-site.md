@@ -113,4 +113,4 @@ Together, these configurations help Clarity’s enterprise website fulfill its i
 
 Congratulations! You’ve created and configured the Clarity site to ensure it is public and accessible to Clarity’s global audience. Next you’ll add pages to Clarity’s site.
 
-Next Up: [Managing Clarity's Site Members](./adding-pages-to-claritys-site.md)
+Next Up: [Adding Pages to Clarity's Site](./adding-pages-to-claritys-site.md)

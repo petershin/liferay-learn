@@ -121,6 +121,9 @@ public class Main {
 
 		_repositorySiteDirName = repositorySiteDirFile.getCanonicalPath();
 
+		_skipDiffCheck = GetterUtil.getBoolean(
+			System.getenv("LIFERAY_LEARN_SKIP_DIFF_CHECK"));
+
 		Enumeration<String> enumeration =
 			(Enumeration<String>)tokenProperties.propertyNames();
 
@@ -152,7 +155,8 @@ public class Main {
 
 				if (!_diffFileNames.isEmpty() &&
 					!_diffFileNames.contains(
-						fileName.replace(_repositoryBaseDirName, ""))) {
+						fileName.replace(_repositoryBaseDirName, "")) &&
+					!_skipDiffCheck) {
 
 					System.out.println("Skipped: " + fileName);
 
@@ -996,6 +1000,7 @@ public class Main {
 	private final String _repositoryBaseDirName;
 	private final String _repositoryDocsDirName;
 	private final String _repositorySiteDirName;
+	private final boolean _skipDiffCheck;
 	private Map<String, String> _tokens = new HashMap<>();
 	private final List<String> _warningMessages = new ArrayList<>();
 	private final Yaml _yaml = new Yaml();

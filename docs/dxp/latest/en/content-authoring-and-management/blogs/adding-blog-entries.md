@@ -59,9 +59,14 @@ To relate an asset to the entry,
 {bdg-link-primary}`[Beta Feature](../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
 
 !!! important
-    This feature is currently behind a beta feature flag (LPD-11147). Read [Beta Feature Flags](../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags) for more information.
+    Currently, this feature is behind a beta feature flag (LPD-11147). Read [Beta Feature Flags](../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags) for more information.
 
 1. Expand the Friendly URL section and select *Use a Customized URL*.
+
+   !!! note
+       If you select *Use the Default URL* and there's a pre-existing entry with the same title, a numerical suffix is appended to the URL upon publication to ensure its uniqueness.
+
+       For instance, if the URL is `exploring-the-enigmatic-world-of-axolotls` and it's already in use, the new entry's URL will be adjusted automatically to `exploring-the-enigmatic-world-of-axolotls-1` when published.
 
    Read [Configuring Friendly URL Separators](../../site-building/site-settings/managing-site-urls/configuring-friendly-url-separators.md) to learn how to further configure the URL.
 
@@ -78,11 +83,13 @@ To relate an asset to the entry,
 
       For example, if you attempt to include both the `Appliances` and the `Supplies` categories along with custom elements like `/home/kitchen/blog-entry-title` in the Friendly URL field, you will get an error saying that `The URL title cannot contain slashes and categories.`
 
+      In case of a conflict between URLs, the one using slashes has precedent over the one with categories.
+
 1. Continue configuring the blog entry, publish it, or save it as draft.
 
-   Once the blog entry is published, you can display it using a [display page template](#configuring-how-the-entry-is-displayed) and the URL will include the selected categories.
+Once the blog entry is published, you can display it using a [display page template](#configuring-how-the-entry-is-displayed) and the URL will include the selected categories.
 
-   ![Once you publish the blog entry, the categories are added to the URL.](./adding-blog-entries/images/03.png)
+![Once you publish the blog entry, the categories are added to the URL.](./adding-blog-entries/images/03.png)
 
 <!-- 1. If you want to use the categories in a different order, you can drag and drop them in the desired order.
 
@@ -101,6 +108,8 @@ When customizing friendly URLs, keep these points in mind:
 - Categories are displayed in the order they were created.
 
 <!-- This will change once the feature that allows users to reorganize categories is on. Then, I can just eliminate this part. Eric. -->
+
+- When a category used in a custom URL has translations available in different languages, those translations are applied to the categories in the URL when the target language is selected.
 
 !!! note
     When you update an entry's friendly URL, Liferay stores the previous value in the entry's friendly URL history. As long as the old URL remains in the history, Liferay redirects users to the latest version of the blog entry, and you cannot use it for other blog entries in the same site. See [Managing the Friendly URL History](./displaying-blogs.md#managing-the-friendly-url-history) to learn more about managing the friendly URL history for blog entries.

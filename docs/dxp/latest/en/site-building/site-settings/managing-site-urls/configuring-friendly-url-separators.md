@@ -13,7 +13,7 @@ uuid: 93b7a0b6-926f-47dd-a26a-c50f40de6fb4
 {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA126+`
 
 !!! important
-    This feature is currently behind a beta feature flag (LPD-11147). Read [Beta Feature Flags](../../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags) for more information.
+    Currently, this feature is behind a beta feature flag (LPD-11147). Read [Beta Feature Flags](../../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags) for more information.
 
 With Liferay, you can customize URL separators to improve URL readability and enhance SEO.
 

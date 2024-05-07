@@ -75,11 +75,13 @@ This adds the SKU to your cart. If desired, you can add multiple SKUs at once.
 
 ![Add multiple SKUs at once by selecting each SKU and clicking on the Mini Cart icon.](./using-the-mini-cart-fragment/images/05.gif)
 
-<!-- Add this when ready
-
 ### Adding Discontinued Products to Cart
 
-SKUs may reach end-of-life (EOL) and be marked as discontinued. Discontinued SKUs may or may not get a replacement. Replacement SKUs get added automatically to the cart when you try adding the discontinued SKU through quick add-to-cart.  -->
+{bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+`
+
+SKUs may reach end-of-life (EOL) and be discontinued. Discontinued SKUs with a valid replacement gets added automatically to the cart when you try adding the discontinued SKU using the quick add-to-cart function.
+
+![Adding a discontinued SKU adds its replacement automatically.](./using-the-mini-cart-fragment/images/06.gif)
 
 ## Related Topics
 

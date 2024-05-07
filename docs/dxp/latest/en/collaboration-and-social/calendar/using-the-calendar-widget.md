@@ -158,8 +158,6 @@ Once a resource is created, invite it to your events just as you would an attend
 
 Here's a list of calendar permissions:
 
-Giving a user permission to add, delete, or update discussion allows them to make, edit and remove comments on the event. The *Permissions* permission allows a Role to update permissions for the event.
-
 | Permission         | Description                                                                              |
 |:-------------------|:-----------------------------------------------------------------------------------------|
 | Delete             | Grants the ability to delete calendars.                                                  |
@@ -167,7 +165,7 @@ Giving a user permission to add, delete, or update discussion allows them to mak
 | Manage Events      | Grants the ability to manage events. This includes deleting, editing, and updating them. |
 | View Event Details | Grants the ability to view event details by using the View Details button.               |
 | Update             | Grants the ability to access the calendar settings and update general calendar settings. |
-| View               | Grants the ability to view the calendar and calendar events.                             |
+| View               | Grants the ability to view the calendar portlet/widget.                                  |
 
 ## Related Topics
 

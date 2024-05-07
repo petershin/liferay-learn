@@ -35,7 +35,7 @@ Setting the virtual host connects a domain name (e.g., `www.helloworld.com`) to 
 
 <!--TASK: ![Set the site’s virtual hosts.]()-->
 
-Clarity wants to set their site’s virtual host to `www.clarityvisionsolutions.com`. They also want to set virtual hosts for these languages to better engage their international audience: Spanish (`www.solucionesdeclaridad.com`), Portuguese (`www.soluesdeclareza.com`), and German (`www.klarheitsloesungen.com`).
+Clarity wants to set their site’s virtual host to `www.clarityvisionsolutions.com`. They also want to set a virtual host for Spanish (`www.solucionesdeclaridad.com`) to better engage their international audience.
 
 ## Accessibility
 
@@ -77,15 +77,9 @@ Now, let’s configure these site settings. While logged in as Walter Douglas,
 
 1. Set the site’s virtual host for the default language to `www.clarityvisionsolutions.com`.
 
-1. Click the *Add* button (![Add Button](../../images/icon-add.png)) to add additional virtual hosts for these languages:
+1. Click the *Add* button (![Add Button](../../images/icon-add.png)) to add an extra virtual host for Spanish with the URL `www.solucionesdeclaridad.com`.
 
-   * German: `www.klarheitsloesungen.com`
-
-   * Spanish: `www.solucionesdeclaridad.com`
-
-   * Portuguese: `www.solucoesdeclareza.com`
-
-   ![Add virtual hosts for these languages.](./configuring-the-clarity-site/images/04.png)
+   ![Add a virtual host for Spanish.](./configuring-the-clarity-site/images/04.png)
 
 1. Click *Save*.
 
@@ -93,7 +87,7 @@ Now, let’s configure these site settings. While logged in as Walter Douglas,
 
 1. Return to the *Site Settings* page and go to *Localization*.
 
-1. Define custom languages for your site. For now, Clarity only wants to support English (United States), Portuguese (Brazil), German (Germany), and Spanish (Spain) on their site. Use the left arrow button (![Left Arrow Button](../../images/icon-angle-left.png)) to move all other languages from the Current Column to the Available column.
+1. Define custom languages for your site. For now, Clarity only wants to support English (United States), and Spanish (Spain) on their site. Use the left arrow button (![Left Arrow Button](../../images/icon-angle-left.png)) to move all other languages from the Current Column to the Available column.
 
    ![Define a custom language configuration.](./configuring-the-clarity-site/images/05.png)
 

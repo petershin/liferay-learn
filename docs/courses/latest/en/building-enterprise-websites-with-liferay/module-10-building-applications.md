@@ -17,7 +17,7 @@ uuid: 9311d48e-997b-4e20-ad75-2a08b9a82e3f
 
 So far, you've learned about using Liferay's out-of-the-box features to build enterprise websites. While these features cover many use cases, unique business needs may require custom applications. Fortunately, Liferay provides extensive tools for building custom applications that seamlessly integrate with Liferay's core frameworks. Using low-code capabilities and client extensions, you can enhance the Liferay platform and streamline critical business processes without modifying its core.
 
-Here, you will deploy a prebuilt solution for Clarity Vision Solutions and learn how to
+In this module, you'll deploy a prebuilt solution for Clarity Vision Solutions and learn how to
 
 * Model data structures integrated with Liferay's core frameworks
 * Implement business logic to operate on those data structures

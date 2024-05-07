@@ -14,6 +14,7 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: e4e2e951-db91-4d5e-982c-049b5e03be42
 ---
+
 # Managing Site URLs
 
 Liferay DXP provides multiple out-of-the-box features for configuring and managing site URLs.

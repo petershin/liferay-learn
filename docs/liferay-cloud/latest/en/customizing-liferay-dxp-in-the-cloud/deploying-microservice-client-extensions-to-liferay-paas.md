@@ -9,7 +9,7 @@ uuid: 240d0998-8a75-4e99-a9fa-27e581b2c28a
 
 In most cases, you can deploy client extensions with Liferay PaaS similarly to [self-hosted instances](https://learn.liferay.com/w/dxp/liferay-development/client-extensions/working-with-client-extensions#deploying-to-a-self-hosted-liferay-instance).
 
-Frontend, configuration, and batch client extensions can be deployed with this procedure:
+Deploy frontend, configuration, and batch client extensions with this procedure:
 
 1. Place your client extension project folder in your PaaS Liferay workspace's `client-extensions/` folder (`liferay/configs/[ENV]/client-extensions/`).
 
@@ -65,7 +65,7 @@ This `.zip` file includes a workspace with a variety of sample client extensions
 
 * `liferay-sample-custom-element-2`, a frontend client extension with a custom widget. You'll use this client extension to retrieve data from the microservice in Liferay and demonstrate the successful connection between them.
 
-Unzip the workspace and copy the `client-extensions` folder into your PaaS project repository's `liferay/configs/[ENV]/` folder.
+Unzip the workspace and copy the `client-extensions/` folder into your PaaS project repository's `liferay/configs/[ENV]/` folder. Merge it with the existing client extensions folder if you already have one.
 
 !!! note
     Alternatively, you can copy all of the `.zip` folder contents into your workspace, but make sure you are not overwriting any of your own important configurations in existing files such as `settings.gradle`.

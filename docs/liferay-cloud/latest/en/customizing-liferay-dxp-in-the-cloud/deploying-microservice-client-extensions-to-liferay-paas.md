@@ -11,11 +11,9 @@ In most cases, you can deploy client extensions with Liferay PaaS similarly to [
 
 Frontend, configuration, and batch client extensions can be deployed with this procedure:
 
-1. [Build the client extension](https://learn.liferay.com/w/dxp/liferay-development/client-extensions/working-with-client-extensions#deploying-to-a-self-hosted-liferay-instance).
+1. Place your client extension project folder in your PaaS Liferay workspace's `client-extensions/` folder (`liferay/configs/[ENV]/client-extensions/`).
 
-1. Copy the LUFFA (`.zip` file) from the `dist/` folder to the `liferay/configs/[ENV]/osgi/client-extensions/` folder.
-
-1. Create a new build of the Liferay service and deploy it to your environment.
+1. Create a new build of the Liferay service and [deploy it to your environment](../updating-services-in-liferay-paas/deploying-changes-via-the-liferay-cloud-console.md).
 
 The client extension is added as part of the Liferay Docker image, and it works on its own within Liferay.
 
@@ -23,11 +21,15 @@ However, [microservice client extensions](https://learn.liferay.com/web/guest/w/
 
 ## Deploying Microservice Client Extensions
 
+{bdg-secondary}`Requires [Liferay workspace 10.0.0+](https://learn.liferay.com/w/dxp/liferay-development/tooling/liferay-workspace/configuring-liferay-workspace#updating-liferay-workspace-and-bundled-plugins)`
+
 Here is the general procedure for using microservice client extensions in Liferay PaaS:
+
+1. [Prepare Your Liferay Workspace](#prepare-your-liferay-workspace)
 
 1. [Configure Required Environment Variables in `LCP.json`](#configure-required-environment-variables)
 
-    Many environment variables are required to ensure that Liferay DXP can communicate with your microservice, which runs in a separate Cloud container. See [the tables here](#environment-variables-reference) for a complete list.
+    Additional environment variables are required to ensure that Liferay DXP can communicate with your microservice, which runs in a separate Cloud container. See [the tables here](#environment-variables-reference) for a complete list.
     
 1. [Deploy the Client Extension to Liferay DXP](#build-and-deploy-the-client-extensions-with-liferay-dxp)
 
@@ -49,29 +51,30 @@ Most of these steps are exclusive to microservice client extensions because of t
 
 Try it yourself with a microservice using an OAuth user agent client extension. This example uses the Liferay sample workspace's [Spring Boot microservice](https://learn.liferay.com/w/dxp/liferay-development/integrating-microservices/using-a-microservice-client-extension).
 
-## Prepare Your Client Extension Workspace
+## Prepare Your Liferay Workspace
 
-If you haven't already done so, download and unzip the Liferay sample workspace:
+If you haven't already done so, download the Liferay sample workspace:
 
 ```bash
 curl -o com.liferay.sample.workspace-latest.zip https://repository.liferay.com/nexus/service/local/artifact/maven/content\?r\=liferay-public-releases\&g\=com.liferay.workspace\&a\=com.liferay.sample.workspace\&\v\=LATEST\&p\=zip
 ```
 
-```bash
-unzip -d liferay-sample-workspace com.liferay.sample.workspace-latest.zip
-```
-
-Now you have a workspace with a variety of sample client extensions, including the two needed for this walkthrough:
+This `.zip` file includes a workspace with a variety of sample client extensions, including the two needed for this walkthrough:
 
 * `liferay-sample-etc-spring-boot`, the microservice client extension project. It also contains an OAuth user agent client extension for authentication.
 
 * `liferay-sample-custom-element-2`, a frontend client extension with a custom widget. You'll use this client extension to retrieve data from the microservice in Liferay and demonstrate the successful connection between them.
 
+Unzip the workspace and copy the `client-extensions` folder into your PaaS project repository's `liferay/configs/[ENV]/` folder.
+
+!!! note
+    Alternatively, you can copy all of the `.zip` folder contents into your workspace, but make sure you are not overwriting any of your own important configurations in existing files such as `settings.gradle`.
+
 ## Configure Required Environment Variables
 
-Before you build and deploy the client extension, add some environment variables to configure the microservice for communication with Liferay.
+Before you build and deploy the microservice, add some environment variables to configure it for communication with Liferay.
 
-1. In the Liferay sample workspace's `client-extensions/liferay-sample-etc-spring-boot/` folder, open the `LCP.json` file.
+1. In the copied `client-extensions/liferay-sample-etc-spring-boot/` folder, open the `LCP.json` file.
 
 1. In the `env` block, [add new environment variables](https://learn.liferay.com/w/liferay-cloud/reference/defining-environment-variables#defining-environment-variables-via-lcpjson) with these values:
 
@@ -111,27 +114,9 @@ Now you're ready to deploy your client extensions to Liferay.
 
 ## Build and Deploy the Client Extensions with Liferay DXP
 
-1. In your client extension's root folder, build the client extension from your command prompt.
+The Liferay workspace in your PaaS repository's `liferay/` folder automatically builds and deploys the code in it, including your client extensions.
 
-    ```bash
-    ../../gradlew clean build
-    ```
-
-    The client extension builds into a LUFFA (`.zip` archive) in a `dist/` folder.
-
-1. Copy `liferay-sample-etc-spring-boot.zip` from the `dist/` folder into your project repository's `liferay/configs/uat/osgi/client-extensions/` folder.
-
-    Now the microservice client extension's configuration will be included in your next build. For this example, you'll also need to deploy the `liferay-sample-custom-element-2` to show that your microservice is working.
-
-1. Navigate to the sample workspace's `client-extensions/liferay-sample-custom-element-2` folder and build the client extension.
-
-    ```bash
-    ../../gradlew clean build
-    ```
-
-    The client extension builds into a LUFFA in the `dist/` folder.
-
-1. Copy `liferay-sample-custom-element-2.zip` from the `dist/` folder into your project repository's `liferay/configs/uat/osgi/client-extensions/` folder.
+Next, create and deploy a new build with your Spring Boot and custom element client extensions so they are available in Liferay DXP.
 
 1. From the root folder of your repository, create a new branch and commit the change.
 
@@ -153,7 +138,7 @@ Now you're ready to deploy your client extensions to Liferay.
     git push origin client-extensions
     ```
 
-    After a delay, the new build is created.
+    After a delay, the new build is created. The client extensions are automatically deployed to [the Liferay service container's `osgi/client-extensions/` folder](https://learn.liferay.com/w/dxp/liferay-development/client-extensions/working-with-client-extensions#deploying-to-a-self-hosted-liferay-instance).
 
 1. In the Liferay Cloud console, navigate to the *Builds* page.
 
@@ -171,11 +156,17 @@ After a delay, your Liferay service redeploys with both a new custom widget to p
 
 ## Deploy the Microservice to Your Cloud Environment
 
-Now Liferay DXP has the necessary configurations deployed, but the microservice isn't running yet. The microservice must run as a separate service, in its own container.
+Now Liferay DXP has the necessary configurations deployed, but the Spring Boot microservice isn't running yet. The microservice must run as a separate service, in its own container.
 
 1. In the Liferay sample workspace, navigate back to the `client-extensions/liferay-sample-etc-spring-boot/` folder.
 
-    You don't need to build the client extension again because you already built it previously.
+1. Build the client extension.
+
+    ```bash
+    ../../gradlew clean build
+    ```
+
+    The client extension builds into a LUFFA in the `dist/` folder.
 
 1. Deploy the client extension LUFFA with the LCP tool.
 

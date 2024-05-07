@@ -3,44 +3,46 @@ uuid: 3cc6f0a9-a820-42f1-94ca-9227c53c98ed
 ---
 # Modeling Data Structures
 
-Your first step in building an application is to model its data structures by considering the types of data entities you want to store and manipulate, the attributes of each entity type, and the relationships between different entity types. All of this functionality is captured by [Liferay Objects](https://learn.liferay.com/web/guest/w/dxp/building-applications/objects), which are the foundation of low-code applications in Liferay. This lesson discusses the features of Liferay Objects in the context of Clarity's distributor application solution.
+The first step in building an application is to model its data structures. This requires some brainstorming about the types of data entities you want to store, as well as their attributes and relationships. This is accomplished using [Liferay Objects](https://learn.liferay.com/web/guest/w/dxp/building-applications/objects), which is the foundation of Liferay's low-code application development. With it, you can define database tables, implement business logic, integrate with external services, and more, all without writing code.
 
-From the time of creation, all objects are fully integrated with Liferay's core frameworks to provide a unified experience across the platform and leverage all of its capabilities. This means that permissions, workflow, APIs, data mapping for page elements, and a consistent UI and UX are automatically handled when you build an application with Liferay's low-code tools. You can focus on developing your solution without having to reinvent the wheel.
+When created, each object is fully integrated with Liferay's core frameworks, providing a unified experience across the platform and enabling you to leverage Liferay's out-of-the-box capabilities. This means developers can leverage Liferay's built-in functionalities like workflows, notifications, permissions, Headless APIs, and data mapping without the need for additional coding. This significantly reduces development time and effort, allowing them to focus on building unique application features and functionalities.
 
 <!--[TODO: Update with Design ticket] IMAGE: Diagram showing how Objects fit into the Liferay ecosystem and integrate with the various core frameworks -- headless APIs, Job Scheduler, Workflows, Forms, etc. -->
 
+Now let's see how Clarity can leverage these capabilities in their distributor onboarding solution. The first step is to identify the types of data entities required for their solution.
+
 ## Identifying Data Entities
 
-Clarity must store and manage two types of data entities for the distributor application flow:
+Clarity must store and manage two types of data entities for their distributor onboarding flow:
 
-* Distributor Applications
-* Application Evaluations
+* Applications submitted by prospective distributors (Distributor Applications)
+* Internal evaluations of these applications (Application Evaluations)
 
-You can model these two data entity types with *object definitions*. Object definitions include a standard set of system fields along with configuration options for modifying their general details, behavior, scope/permissions, and available features. When an object definition is published, Liferay creates a database table for storing *entries* of that object.
+You can model each of these data entities as *object definitions*. An object definition is essentially a blueprint. It defines the structure and properties of the data stored by your solution. Each definition includes a standard set of system fields along with configuration options for modifying their general details, behavior, data scope, and available features. When published, Liferay creates a database table for storing the definition's *entries*.
 
 !!! note "Object Definition vs. Object Entry"
-    An object definition specifies a type of data entity, while an object entry is an individual instance of that data entity. A single object definition can (and often does) have multiple object entries in its corresponding database table.
+    Object definitions specify types of data entities, while object entries are instances of those data entities.
 
 ![Object entries are individual instances of an object definition.](./modeling-data-structures/images/01.png)
 
-Once you determine the types of entities required in your application, you can add relevant attributes to them.
+After determining the types of entities required for their solution, Clarity can start adding their attributes.
 
 ## Adding Attributes
 
-Attributes represent database columns that store specific types of information for an application, such as text, numeric values, or file attachments. You can define attributes for the data structures in your application by adding fields to the corresponding object definitions. Fields are populated by user input when an object entry is created. In addition to standard fields, you can also add picklists as object attributes to provide users with predefined single-select and multi-select fields. Fields and picklists can be added via the UI or REST APIs.
+Attributes represent database columns storing specific data types for object definitions (e.g., text, numbers, and files). You define attributes by adding [fields](https://learn.liferay.com/en/w/dxp/building-applications/objects/creating-and-managing-objects/fields) to an object. Additionally, you can create [picklists](https://learn.liferay.com/en/w/dxp/building-applications/objects/picklists) and use them with objects to provide users with predefined single-select and multi-select fields.
+
+<!--TASK: Introduce picklists.-->
 
 ![An object definition can have multiple fields to store information according to its type.](./modeling-data-structures/images/02.png)
 
-For Clarity's use case, each Distributor Application should store the necessary business information for verifying each applicant's identity and credit for Know Your Customer (KYC) best practices and compliance with Anti-Money Laundering (AML) laws. As such, the Distributor Application object contains fields for the applicant's name, title, email, and phone number, along with a *Comments* field for the applicant to write a message.
+For Clarity's use case, each Distributor Application entry should store the necessary business information for verifying each applicant's identity and credit for Know Your Customer (KYC) best practices and compliance with Anti-Money Laundering (AML) laws. As such, the Distributor Application object contains fields for the applicant's name, title, email, and phone number, along with a *Comments* field for the applicant to write a message. <!--TASK: ^ This list doesn't satisfy the AML/KYC comment.--> Additionally, Clarity wants to collect information for assessing the relative value of each prospective distributor. So they've added picklist fields for collecting this information:
 
-Additionally, Clarity must collect information that can help them assess the relative value of each prospective distributor. In this case, they want applicants to select from predefined options, so they have added the following picklists to the Distributor Application object definition:
-
-* Business Types
+* Business Type
 * Distribution Regions
 * Distribution Channels
 * Order Types
 * Product Types
-* Annual Purchase Volumes
+* Annual Purchase Volume
 * Product Labels
 
 The second object needed for this use case is the Application Evaluation. Clarity employees would use this object to evaluate incoming distributor applications, so it should store notes and recommendations made during the review process. The Application Evaluation object definition contains the following custom fields:
@@ -53,17 +55,23 @@ The second object needed for this use case is the Application Evaluation. Clarit
 * Recommendations (picklist)
 * Recommendation Comments (text)
 
+<!--TASK: Maybe reevaluate how this information is presented. It feels strange to list only the picklists for distributor application while listing all of the fields for the application evaluation object.-->
+
 ![Both the Distributor Application and Application Evaluation objects store data related to the applicant.](./modeling-data-structures/images/03.png)
 
-### Exercise 1
+### Exercise One: Adding Fields to the Distributor Applications Object
 
-The Distributor Application object contains a great number of custom fields for collecting business information in compliance with KYC and AML policies, but Clarity still needs one that can be used by the applicant to describe other brands that they offer. Let's add that field to the object.
+<!--TASK: Update steps to use the model builder view.-->
 
-1. Navigate to *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) &rarr; *Control Panel* &rarr; *Objects*, then select *Distributor Application*.
+The Distributor Applications object contains a great number of custom fields, but Clarity still needs one that can be used by the applicant to describe other brands that they offer.
 
-1. Go to the *Fields* tab.
+To add this field,
 
-1. Click *Add* (![Add Button](../../images/icon-add.png)) to create a new custom field, enter these values, and click Save:
+1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Objects*.
+
+1. Select the *Distributor Application* and go to the *Fields* tab.
+
+1. Click *Add* (![Add Button](../../images/icon-add.png)) to create a new custom field, enter these values, and click *Save*:
 
    | Field                    | Value                        |
    |:-------------------------|:-----------------------------|
@@ -75,11 +83,13 @@ The Distributor Application object contains a great number of custom fields for 
 
    ![Clicking Add opens a panel to create a new custom field.](./modeling-data-structures/images/04.png)
 
-Each saved field is added immediately to the object and automatically appears in its default layout when creating entries. However, the Distributor Application object has a custom layout that will need to be modified to include the new custom field.
+Each saved field is added immediately to the object and automatically appears in its default layout when creating entries. However, the Distributor Application object has a custom layout that must be modified to include the new field.
 
-1. Navigate to the *Layouts* tab and click on *Main Layout*.
+To add the field to the object's layout,
 
-1. Go to *Layout*.
+1. Go to the *Layouts* tab and click *Main Layout*.
+
+1. Go to the *Layout* tab.
 
 1. Find the Business Details block under the Application tab, then click *Add Field*.
 
@@ -89,15 +99,21 @@ Each saved field is added immediately to the object and automatically appears in
 
    ![Clicking Add Field opens a panel to include a field to the block.](./modeling-data-structures/images/06.png)
 
-Now the new field will display in the form layout when you create an entry.
+1. Click *Save*.
 
-### Exercise 2
+Now the new field appears in the layout when creating entries.
 
-As mentioned previously, Clarity uses picklists to create predefined options for the applicants to choose from. The Product Types picklist, which should offer a selection of different categories for eyewear, is currently missing its configurations. Let's jump in and fix the picklist.
+### Exercise Two: Adding Picklist Items
 
-1. Navigate to *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) &rarr; *Control Panel* &rarr; *Picklists*, then select *Product Types*.
+As mentioned previously, Clarity uses picklists to create predefined options for the applicants to choose from. Currently, the Product Types picklist is empty and does not include any options.
 
-1. Click *Add* (![Add Button](../../images/icon-add.png)) and create these items in the picklist:
+To fix this,
+
+1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Picklists*
+
+1. Select *Product Types*.
+
+1. Click *Add* (![Add Button](../../images/icon-add.png)) and create these items:
 
    | Name       | Key        |
    |:-----------|:-----------|
@@ -121,25 +137,31 @@ As mentioned previously, Clarity uses picklists to create predefined options for
 
 1. Click *Save*.
 
-Once saved, the Distributor Application's `Products of Interest` custom field is automatically updated with the new values, since it's related to this picklist. Applicants are now able to select their desired products.
+Once saved, the Distributor Application's `Products of Interest` custom field is automatically updated with the values, since it's related to this picklist. Applicants are now able to select their desired products.
+
+<!--TASK: Improve; this is the first time we've mentioned Products of Interest.-->
 
 ## Defining Relationships
 
-Defining relationships is key to creating data models that accurately represent real-world entities. Object relationships determine how data is connected in your application and capture entity interactions and dependencies. You can define one-to-many and many-to-many relationships between object definitions. These relationships add fields or tables to each object for relating their entries, enabling you to access entry data in different object contexts.
+Defining relationships is key to creating data models that accurately represent real-world entities. They determine how data is connected in your application and capture entity interactions and dependencies. You can define one-to-many and many-to-many relationships between definitions. These relationships add fields or tables to each object for relating their entries, enabling you to access entry data in different object contexts.
 
-A one-to-many relationship occurs when a single entity of type A can be related to one or more entities of type B. For example, if you were to model a university organization, the University object definition would have a one-to-many relationship with the Student object definition. Each university has multiple students, but each student can only attend a single university.
+One-to-many relationships enable users to relate a single entity of type A to multiple entities of type B. For example, if you were to model a university organization, the University object definition would have a one-to-many relationship with the Student object definition. Each university has multiple students, while each student only has one university.
 
-On the other hand, a many-to-many relationship occurs when one entity of type A can be related to multiple entities of type B, *and* one entity of type B can be related to multiple entities of type A. In the university example, you could implement a many-to-many relationship between the Student object and the Professor object, because each student can have multiple professors and each professor can have multiple students.
+On the other hand, many-to-many relationships enable users to relate multiple entities of type A to multiples entities of type B, and vice versa. In the university example, you could implement a many-to-many relationship between the Student object and the Professor object, because each student can have multiple professors and each professor can have multiple students.
 
-For Clarity's solution, a single distributor application can have multiple evaluations attached to it. To model this, they have added a one-to-many relationship to the Distributor Application object definition and specified Application Evaluation as the relatable object.
+For Clarity's solution, a single distributor application can have multiple evaluations related to it. But each evaluation can only relate to one application. So they have added a one-to-many relationship between the Distributor Application (one) and Application Evaluation (many) objects.
 
 ![A single Distributor Application entry is related to many Application Evaluation entities.](./modeling-data-structures/images/08.png)
 
 <!--TODO: Image above should probably have multiple Application Evaluations to better visualize the one-to-many relationship-->
 
-Once the relationship has been added between the object definitions, you can relate individual object entries to one another through either the Liferay UI or relationship REST APIs. See the previous article's [bonus exercise](./deploying-the-application.md#bonus-exercise) for a hands-on example.
+With the relationship added between the object definitions, you can relate individual entries to one another through the Liferay UI or relationship REST APIs.
 
-Now that you've learned about the process of modeling data structures with Liferay Objects, let's move on to [Implementing Business Logic](./implementing-business-logic.md).
+## Conclusion
+
+Congratulations! You've helped to finish modeling Clarity's data structures. Next, let's begin implementing business logic.
+
+Next Up: [Implementing Business Logic](./implementing-business-logic.md).
 
 ## Additional Resources
 

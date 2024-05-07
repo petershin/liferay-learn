@@ -79,11 +79,11 @@ Now, let’s configure these site settings. While logged in as Walter Douglas,
 
 1. Click the *Add* button (![Add Button](../../images/icon-add.png)) to add additional virtual hosts for these languages:
 
+   * German: `www.klarheitsloesungen.com`
+
    * Spanish: `www.solucionesdeclaridad.com`
 
-   * Portuguese: `www.soluesdeclareza.com`
-
-   * German: `www.klarheitsloesungen.com`
+   * Portuguese: `www.solucoesdeclareza.com`
 
    ![Add virtual hosts for these languages.](./configuring-the-clarity-site/images/04.png)
 

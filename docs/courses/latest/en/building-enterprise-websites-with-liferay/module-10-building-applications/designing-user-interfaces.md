@@ -32,6 +32,43 @@ Originally, Clarity's distributor application solution used standard object layo
 
 While the distributor application previously existed as a separate entity, these new pages unify the application with the rest of the Clarity experience.
 
+## Exercise One: Adding Pages for the Distributor Application
+
+Coming Soon!
+
+<!-- 
+1. Add these pages:
+
+   | Type | Name | Content Type |
+   | :--- | :--- | :--- |
+   | Display Page | Distributor Form 1  |  |
+   | Display Page | Distributor Form 2  |  |
+   | Display Page | Distributor Form 3  |  |
+   | Display Page | Distributor Form 4  |  |
+   | Display Page | Distributor Form 5  |  |
+   | Display Page | Distributor Success |  |
+   | Content Page | Applicants/Applications | N/A |
+   | Display Page | Application Details |  |
+   
+1. Update the primary navigation menu to include Applicants and Application Details:
+
+1. Configure ...
+-->
+
+## Exercise Two: Designing the Form
+
+Coming Soon!
+
+## Exercise Three: Designing the Application Overview Page
+
+Coming Soon!
+
+## Exercise Four: Designing the Application Details Page
+
+Coming Soon!
+
+## Conclusion
+
 Congratulations! You've completed Module 10 - Building Applications.
 
 [Back to Building Enterprise Websites with Liferay](../../building-enterprise-websites-with-liferay.md)

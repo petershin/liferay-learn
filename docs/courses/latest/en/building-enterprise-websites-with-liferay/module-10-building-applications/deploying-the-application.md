@@ -85,11 +85,11 @@ Deploying client extensions to a SaaS environment requires the Liferay Cloud CLI
 
 <!--Q: Just the liferayclaritybatch service? What about the microservice client extension?-->
 
-Now that you've deployed the solution's client extensions, all the necessary components should be available in your Liferay instance. You can verify this by testing out the solution.
+Now that you've deployed the solution's client extensions, all the necessary components are available in your Liferay instance. Let's verify this by testing the solution.
 
 ### Exercise Three: Testing the Distributor Application
 
-The prebuilt solution includes two Liferay objects: the Distributor Application object and the Application Evaluation object. In the following lessons, you'll learn more about these objects and how they're configured. For now, let's create and review a Distributor Application entry.
+The solution includes two Liferay objects: the Distributor Application object and the Application Evaluation object. In the following lessons, you'll learn more about these objects and how they're configured. For now, let's create and review a Distributor Application entry.
 
 To do this,
 

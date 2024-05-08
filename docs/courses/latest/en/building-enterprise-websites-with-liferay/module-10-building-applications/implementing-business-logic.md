@@ -216,7 +216,7 @@ Here you'll add a notification template and set up an object action for triggeri
    |:--------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------|
    | Subject | APP-[%DISTRIBUTORAPPLICATION_ID%]: [%DISTRIBUTORAPPLICATION_APPLICANTNAME%] submitted a distributor application for [%DISTRIBUTORAPPLICATION_BUSINESSNAME%]. |
 
-   ![Enter this value for Content.](./adding-notification-templates/images/05.png)
+   ![Enter this value for Content.](./implementing-business-logic/images/05.png)
 
 1. Click *Save*.
 

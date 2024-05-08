@@ -63,7 +63,7 @@ The second object needed for this use case is the Application Evaluation. Clarit
 
 <!--TASK: Update steps to use the model builder view.-->
 
-The Distributor Applications object contains a great number of custom fields, but Clarity still needs one that can be used by the applicant to describe other brands that they offer.
+The Distributor Applications object contains a number of custom fields, but Clarity needs one that can be used by the applicant to describe other brands that they offer.
 
 To add this field,
 

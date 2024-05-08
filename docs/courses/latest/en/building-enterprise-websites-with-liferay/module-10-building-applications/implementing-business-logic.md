@@ -3,39 +3,64 @@ uuid: b283ea94-6a1c-497b-8bfd-e9fd5aade789
 ---
 # Implementing Business Logic
 
-Business logic refers to the rules and processes that determine how an application behaves within a system to meet business needs. Implementing business logic effectively can streamline operations, improve efficiency, and promote consistency across your organization.
+Business logic refers to the rules and processes that determine how an application behaves within a system to meet business needs. Implementing business logic effectively can streamline operations, improve efficiency, and promote consistency across your organization. Here we'll explore how Clarity can leverage Liferay's features to add business logic to their distributor onboarding solution. While some parts of Clarity's business logic are already complete, others need to be implemented to finish Clarity's distributor onboarding solution.
 
-This article discusses the types of business logic you can implement with Liferay in the context of Clarity's distributor application solution. Now that you understand how Clarity has modeled the Distributor Application object, you can learn about how they use business logic to define application behavior. Implementing business logic allows Clarity to onboard distributors quickly and safely.
+## Validating Fields
 
-## Validations
+Ensuring data integrity is crucial to effective business operations. With Liferay, you can set object validations to enforce rules on user input that prevent errors and ensure your application is collecting the data you want. This minimizes the need for manual corrections, ensuring consistent and reliable data (e.g., valid email formats and phone number patterns).
 
-Validations set rules to ensure user input meets your criteria. By preventing data errors and reducing the need for manual cleanup, validations improve the integrity of gathered data.
-
-Liferay provides built-in validation functions for email addresses, phone numbers, and website URLs. You can add validation rules directly to object definition fields, have them trigger on submission of an object entry, and display an error message for invalid input.
-
-You can navigate to the editing menu for the Distributor Application object and go to the _Validations_ tab to see how Clarity ensures applicants provide valid, consistent data in their distributor applications by validating these fields:
-
-* Applicant Email
-* Primary Contact Email
-* Primary Contact Phone Number
-* Business Phone Number
-* Bank Phone Number
-* Reference Phone Number
-* Business Website
+When using validations, you can select from out-of-the-box options (e.g., valid email formats and URL patterns) or define your own through the UI. For advanced use cases, you can also use the Object Validation Rule client extension. Once defined, Liferay checks field values on entry submission and displays an error message for invalid input.
 
 ![Liferay uses validation rules to check field values upon entry submission.](./implementing-business-logic/images/01.png)
 
-## Permissions
+Clarity's Distributor Application object already includes the validations they need. To view them, open the *Objects* application, begin editing the *Distributor Application* object, and go to the *Validations* tab.
 
-In addition to validating input fields, Clarity wants to ensure that all authorized users (and only authorized users) can submit distributor applications. Managing access to data with account membership and role permissions is critical for data privacy and security. You can manage permissions at the application and entry levels.
+<!--TASK: ![]() -->
 
-### Exercise 1
+## Managing Data Access
 
-In order to satisfy Clarity's proper business requirement, let's modify the *User* role with permissions to create, read, update, and delete Distributor Application object entries.
+Managing access to data with account membership and role permissions is critical for data privacy and security. Since Liferay objects are integrated with the permissions framework, you can use roles and permissions to manage access to Distributor Applications and Application Evaluations. This can help Clarity ensure that only authenticated users can submit applications, while allowing a limited number of employees to review submissions.
 
-1. Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; Roles.
+<!--TASK: ![]() -->
 
-1. Select the _User_ role and go to the _Define Permissions_ tab.
+By default, custom Object permissions are not assigned to user roles. So you must manually grant access to objects and their entries. When you deployed Clarity's distributor onboarding solution, you also created a business role for reviewing applications, but it doesn't have any permissions assigned to it. You'll assign the proper permissions in a later exercise.
+
+## Defining Workflows
+
+Workflows define approval processes for application entities and can improve task visibility, eliminate bottlenecks in business processes, and reduce the time and resources required to complete tasks. You can build and enable custom approval processes for custom objects. When you deployed the distributor onboarding solution, you also added a custom workflow definition.
+
+![Workflows are used to organize business processes.](./implementing-business-logic/images/06.png)
+
+In addition to workflow, you can use picklists to define custom state fields with their own flow. This is helpful when you need to assign multiple states to an object entry at the same time. For example, Clarity wants to track the evaluation state of applications independently from their workflow status. To implement this, Clarity leveraged Liferay picklists with objects to define custom states for entries. They then defined a flow for valid state field transitions in the *State Manager* tab.
+
+| Current State | Next State                           |
+|---------------|--------------------------------------|
+| Open          | Under Review, Withdrawn              |
+| Under Review  | Approved, Denied, Withdrawn, On Hold |
+| Approved      | Under Review                         |
+| Denied        | Under Review                         |
+| Withdrawn     | Open                                 |
+| On Hold       | Open, Under Review                   |
+
+![The application states are related to one another.](./implementing-business-logic/images/05.png)
+
+After setting this up, Clarity can use the field with validations and actions to add business logic for different states. They also can use the field alongside workflow statuses to define more complex review and approval processes. In a later exercise, you'll finish setting up Clarity's workflow for Distributor Applications.
+
+## Automating Notifications
+
+Notifications can improve visibility in your application by providing real-time updates to users and system administrators for object entry events. This involves creating notification templates and then using those templates with object actions. The template provides the notification content and design, while the object action determines the trigger and conditions for sending the notification (e.g., at entry creation, at entry update).
+
+<!--TASK: ![]()-->
+
+Currently, Clarity's onboarding solution includes three automated notifications. They inform applicants when their applications are received, approved, or rejected. In a later exercise, you'll add another notification for informing Clarity's business development team of new submissions.
+
+## Exercise One: Assigning Object Permissions
+
+Clarity wants to allow all authenticated users to submit distributor applications. To do this, let's grant the default *User* role permission to access Distributor Applications and add entries:
+
+1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Roles*.
+
+1. Select the *User* role and go to the *Define Permissions* tab.
 
 1. Add these permissions:
 
@@ -46,19 +71,21 @@ In order to satisfy Clarity's proper business requirement, let's modify the *Use
    | Distributor Applications > Distributor Application: Update            |
    | Distributor Applications > Distributor Applications: Add Object Entry |
 
+   <!--TASK: Confirm whether the delete and update permissions are necessary. I suspect they are not necessary, since entry creators are assigned the entry 'owner' role, which allows them to update for delete the entry.-->
+
    ![The User role should be able to create, read, update, and delete applications.](./implementing-business-logic/images/02.png)
 
-1. Click _Save_.
+1. Click *Save*.
 
 1. Verify the User role has the desired permissions.
 
    ![All permissions are assigned to the User role after configuration.](./implementing-business-logic/images/03.png)
 
-Clarity also wants to allow only members of the business development team to view submitted applications and fill out evaluations. To achieve this, let's modify the Business Development Manager role, which was created after [deploying the solution](./deploying-the-application.md). This role needs read permissions for Distributor Application entries and permissions to create, read, update, and delete Application Evaluation entries. A user must be assigned to this role to view applications and submit evaluations.
+Clarity also wants to allow members of their business development team to review all applications and fill out evaluations. To achieve this, let's grant the Business Development Manager role the necessary permissions:
 
-1. Navigate back to the Roles menu and select _Business Development Manager_.
+1. Return to the *Roles* overview page and select *Business Development Manager*.
 
-1. Go to the _Define Permissions_ tab, add these permissions, then click _Save_:
+1. Go to the *Define Permissions* tab, add these permissions, and click *Save*:
 
    * Distributor Applications
 
@@ -88,115 +115,122 @@ Clarity also wants to allow only members of the business development team to vie
 
    Notice that Liferay automatically assigns the `Portal: View Control Panel Menu` permission.
 
-1. For test purposes, go to the _Assignees_ tab and assign this role to Douglas Morgan, the Distribution Manager for Clarity.
+1. For test purposes, go to the *Assignees* tab and assign this role to Douglas Morgan, the Distribution Manager for Clarity.
 
-Great! Now Clarity can make sure the business development team's manager can view submitted applications, create evaluations, and approve or deny applications.
+Great! Now Clarity can make sure the business development team's manager can view submitted applications, create evaluations, and approve or deny applications. Next, let's finish setting up Clarity's workflow.
 
-## States
+## Exercise Two: Setting Up the Approval Workflow
 
-After configuring user permissions for accessing object data, Clarity now needs a way to track the progress of a distributor application and trigger additional business logic when application entries reach certain statuses.
+As previously mentioned, Clarity has already implemented a workflow process for reviewing and approving changes made to applications, but this workflow depends on a [microservice client extension](https://learn.liferay.com/web/guest/w/dxp/liferay-development/integrating-microservices) to function properly. Currently, all updates to the *Application State* field are approved automatically. However, the workflow is supposed to require a final manager review before allowing users to set the *Application State* field to `Approved` or `Denied`.
 
-To do this, they leveraged Liferay's custom state field capability by creating a new picklist field called *Application State* to the Distributor Application object definition. This field uses the *Application States* picklist as its set of valid input.
+To accomplish this, let's deploy the client extension and finish configuring the workflow definition in the Liferay UI:
 
-When editing the Distributor Application object in the UI, you can navigate to the _State Manager_ tab and see how the Application State flow is configured.
-
-| Current State | Next State                           |
-|---------------|--------------------------------------|
-| Open          | Under Review, Withdrawn              |
-| Under Review  | Approved, Denied, Withdrawn, On Hold |
-| Approved      | Under Review                         |
-| Denied        | Under Review                         |
-| Withdrawn     | Open                                 |
-| On Hold       | Open, Under Review                   |
-
-![The application states are related to one another.](./implementing-business-logic/images/05.png)
-
-When users update the *Application State* field of a Distributor Application object entry, their picklist options are determined by the state flow table.
-
-## Workflows
-
-Currently, all updates to the *Application State* field are approved automatically, regardless of the current state value. Clarity wants to require final approval from a team manager whenever *Application State* changes to `Approved` or `Denied`.
-
-Workflows can improve task visibility, eliminate bottlenecks in business processes, and reduce the time and resources required to complete tasks. Additional custom business logic can be defined around states with Liferay's workflow functionality.
-
-![Workflows are used to organize business processes.](./implementing-business-logic/images/06.png)
-
-### Exercise 2
-
-Clarity already implemented a workflow process for reviewing and approving changes made to applications, but its main functionality still needs to be set up in order to make it work properly. Let's deploy the `Machine Action` function using [Microservice Client Extensions](https://learn.liferay.com/web/guest/w/dxp/building-applications/client-extensions/microservice-client-extensions) and finish configuring the workflow in Liferay's UI.
-
-1. In your terminal, go to the `[workspace-root]/client-extensions/liferay-clarity-etc-spring-boot/` folder.
+1. Open your terminal and go to the `[workspace-root]/client-extensions/liferay-clarity-etc-spring-boot/` folder.
 
 1. Build and deploy the client extension project into your Liferay instance (see [Deploying the Application](./deploying-the-application.md) to learn how). Make sure the deployment was successful.
 
    !!! important
-       If you're a Liferay Self-Hosted user, navigate to the `liferay-clarity-etc-spring-boot/` project and start the Spring Boot application with this command:
+       If you're a Liferay Self-Hosted user, run this command from the `liferay-clarity-etc-spring-boot/` folder to start the Spring Boot application:
 
-   ```bash
-   ../../gradlew bootRun
-   ```
+       ```bash
+       ../../gradlew bootRun
+       ```
 
-   When the application starts, go to http://localhost:58081/ready. If the application is ready for use, the page says “READY.” See [Microservice Client Extensions](https://learn.liferay.com/web/guest/w/dxp/building-applications/client-extensions/microservice-client-extensions) for more information.
+   <!--TASK: Verify this ^ works-->
 
-1. Go into your Liferay instance and navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Applications_ &rarr; _Process Builder_.
+   When the application starts, go to http://localhost:58081/ready. If the application is ready for use, the page says “READY.”
 
-1. Select the Distribution Manager Approval workflow process.
+1. In your Liferay instance, open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), go to the *Applications* tab, and click *Process Builder*.
+
+1. Select the *Distribution Manager Approval* workflow process.
 
    ![The Distribution Manager Approval workflow displays in the workflows menu.](./implementing-business-logic/images/07.png)
 
-1. Click the _Machine Review_ task.
+1. Click the *Machine Review* task.
 
-1. In the sidebar panel, select _Machine Action_ under Actions.
+1. In the sidebar panel, select *Machine Action* under Actions.
 
-1. Pick the `function#liferay-clarity-etc-spring-boot-workflow-action-application` function in the Type field.
+1. For type, select the `function#liferay-clarity-etc-spring-boot-workflow-action-application` function.
 
    ![You can choose an action's function in the sidebar.](./implementing-business-logic/images/08.png)
 
-1. Click _Update_.
+1. Click *Update*.
 
-Now that the Distribution Manager Approval workflow is fully set up, you can assign it to the Distributor Application object.
+   Now that the Distribution Manager Approval workflow is fully set up, you can enable it for the Distributor Application object.
 
-1. Return to the Process Builder menu and navigate to the _Configuration_ tab.
+1. Return to the *Process Builder* overview page and go to the *Configuration* tab.
 
-1. Finally, click _Edit_ for Distributor Application, select _Distribution Manager Approval_, then click _Save_.
+1. Click *Edit* for Distributor Application, select *Distribution Manager Approval*, and click *Save*.
 
    ![The assigned workflow will be used by the object.](./implementing-business-logic/images/09.png)
 
-### Bonus Exercise 1
+This enables the workflow. Now you can test it by editing an object entry and setting its state field to *Under Review*. This update should be approved automatically by the workflow action. Next, update the state field to `Approved`. The entry's status should be `Pending`. You can then impersonate Douglas Morgan and check for a workflow notification. You can then assign the task to Morgan and approve it. Once finished, the entry's status should be `Approved`.
 
-You’ve set up an approval workflow that requires manager review for the application's entries. You can test its functionality by following these steps:
+<!--TASK: Add a gif
+![]()
+-->
 
-1. Create/edit a Distributor Application entry and change its state to Approved. After that, the entry's status should be Pending.
+## Exercise Four: Setting Up Notifications
 
-1. Impersonate the Douglas Morgan user and check for a workflow notification.
+Currently, Clarity's solution only includes notifications for notifying applicants of changes in their application's status. But they do not have notifications for alerting their business development team of new submissions. Relying on team members to manually check for new submissions does not scale and leaves room for human error, resulting in missed opportunities or poor user experience.
 
-1. Assign the review task to yourself and approve it. The entry's status should be Approved after doing that.
+Here you'll add a notification template and set up an object action for triggering it:
 
-## Notifications
+1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Templates* under Notifications.
 
-While Clarity has defined workflows around state changes, they have no automated notifications for when such events occur. As of now, members of the business development team can only learn of new application submissions by checking the Distributor Application object manually. Similarly, applicants can only learn about their application status if they are informed directly by a business development specialist or manager. This strategy doesn't scale and leaves room for human error, resulting in missed opportunities or poor user experience.
+   The provided solution includes these templates:
 
-To address these issues, you can implement notifications by first creating notification templates and then applying those templates to object entry events (entry creation, entry update, etc.). The template provides the notification content and design, while the object entry event determines the condition to trigger the notification. Notifications can improve visibility in your application by providing real-time updates to users and administrators for object entry events.
+   * Application Received
+   * Application Approved
+   * Application Denied
 
-### Exercise 3
+1. Click *Add* (![Add Button](../../images/icon-add.png)) and select *User Notification*.
 
-In your Liferay instance, navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_, then select _Templates_ under Notifications.
+1. Scroll down to Definition of Terms and use the Entity drop-down menu to select the *Distributor Application* object.
 
-![All notification templates are present after deployment.](./implementing-business-logic/images/10.png)
+   <!--TASK: ![Scroll down to Definition of Terms and select Distributor Application.]() -->
 
-These templates are utilized to define notification actions in the Distributor Application object, which are used to improve visibility for new applications and automate updates for applicants, notifying them when their application is received, approved, or denied.
+   You can use these field references in the template to populate notifications dynamically with entry data. In the General Terms section are terms for referencing fields for the user that triggers the notification action.
 
-If you go to the Actions tab while editing the Distributor Application object, you can notice there are three prebuilt actions for automated notifications.
+1. Enter these values for Basic Info:
 
-* Application Received
-* Application Approved
-* Application Denied
+   | Field       | Value                                                                                               |
+   |:------------|:----------------------------------------------------------------------------------------------------|
+   | Name        | Application Submitted, Admin, User                                                                  |
+   | Description | Sends user notifications to an administrative role whenever a distributor application is submitted. |
 
-Clarity still needs an automated notification action for administrative users that triggers whenever an applicant submits a new application. Let's add a notification action to the Distributor Application.
+   <!--TASK: ![]() -->
 
-1. Navigate to *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) &rarr; *Control Panel* &rarr; *Objects*, then select *Distributor Application*.
+1. Enter these values for Settings:
 
-1. Go to the _Actions_ tab.
+   | Field      | Value                        |
+   |:-----------|:-----------------------------|
+   | Recipients | Role                         |
+   | Role       | Business Development Manager |
+
+   <!--TASK: ![]() -->
+
+1. Enter this value for Content:
+
+   | Field   | Value                                                                                                                                                        |
+   |:--------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------|
+   | Subject | APP-[%DISTRIBUTORAPPLICATION_ID%]: [%DISTRIBUTORAPPLICATION_APPLICANTNAME%] submitted a distributor application for [%DISTRIBUTORAPPLICATION_BUSINESSNAME%]. |
+
+   ![Enter this value for Content.](./adding-notification-templates/images/05.png)
+
+1. Click *Save*.
+
+   Now you can add a notification action to the Distributor Applications object that uses this template.
+
+1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Objects*.
+
+1. Select *Distributor Application* and go to the *Actions* tab.
+
+   The provided solution includes three notification actions:
+
+   * Application Received
+   * Application Approved
+   * Application Denied
 
 1. Click *Add* (![Add Button](../../images/icon-add.png)) to create a new object action.
 
@@ -211,7 +245,7 @@ Clarity still needs an automated notification action for administrative users th
 
    ![Clicking Add opens a sidebar to create a new object action.](./implementing-business-logic/images/11.png)
 
-1. Go to the Action Builder tab and set these values:
+1. Go to the *Action Builder* tab and set these values:
 
    | Field                 | Value                              |
    |-----------------------|------------------------------------|
@@ -222,21 +256,17 @@ Clarity still needs an automated notification action for administrative users th
 
    ![The Action Builder tab is used to set the trigger, condition, and action to be done.](./implementing-business-logic/images/12.png)
 
-1. Click _Save_.
+1. Click *Save*.
 
-After adding and activating the notification actions, they'll be triggered when adding and updating object entries. These notifications can help improve visibility for new applications and keep applicants up to date on the state of their applications.
-
-### Bonus Exercise 2
-
-You've configured a notification that is sent to administrative business users when a new application is submitted. Follow these steps to test your new configured notification functionality:
-
-1. Create a Distributor Application entry.
-
-1. Impersonate the Douglas Morgan user and check for a new notification.
+Now whenever users submit an application, employees with the Business Development Manager role are automatically notified. To test the notification, create another application entry and impersonate Douglas Morgan. You should see a platform notification.
 
 ![A notification is sent to the business manager when an application is submitted.](./implementing-business-logic/images/13.png)
 
-Now that you've learned about implementing business logic in low code applications, let's move on to [Designing User Interfaces](./designing-user-interfaces.md).
+## Conclusion
+
+Congratulations! You've learned about implementing business logic with Liferay objects and client extensions. Now let's move on to designing a user interface for the solution.
+
+Next Up: [Designing User Interfaces](./designing-user-interfaces.md)
 
 ## Additional Resources
 

@@ -44,9 +44,13 @@ This creates a site and redirects you to its configuration page. Let’s take a 
 
 ## Exploring the Site Building UI
 
-Coming Soon!
+Liferay’s site UI is organized into two main sections: Global Menu (![Global Menu](../../images/icon-applications-menu.png)) and Product Menu (![Product Menu](../../images/icon-product-menu.png)).
 
-<!--TASK:Add video providing a brief overview of Liferay's site building UI-->
+Use the Applications Menu to easily manage and control various applications within your Liferay DXP environment. You can also manage your digital commerce platform to meet the challenging and complex needs of your B2B organization by navigating to the Liferay Commerce menu. To configure Liferay DXP at a global level or for specific instances, giving you control over administrative settings, use the Control Panel.
+
+The Product Menu, located on the left side of the screen, provides actions, content, and configurations specific to the current site. Click the Product Menu icon in the application bar to expand or hide it. The menu also indicates the selected site, and allows you to switch sites using the Compass icon. Common site management tasks like adding pages, creating content, managing memberships, and configuring behavior are all accessible through the Product Menu.
+
+   ![Liferay DXP site building UI.](./setting-up-claritys-site/images/02.png)
 
 ## Conclusion
 

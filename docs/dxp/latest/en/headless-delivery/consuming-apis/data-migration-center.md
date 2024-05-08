@@ -130,7 +130,7 @@ Here are the main differences:
    When using the CSV format, see which fields are supported and can be selected for export in the Fields list.
 
    !!! important
-       CSV files currently support these field types: `dateandtime`, `date`, `decimal`, `integer`, `longint`, `longtext`, `precisiondecimal`, `richtext`, `text`, and `picklist`.
+       CSV files currently support these field types: Date, Date and Time, Decimal, Integer, Long Integer, Long Text, Picklist, Precision Decimal, Rich Text, and Text. Object Definitions are not supported.
 
    ![Export only supported fields.](./data-migration-center/images/07.png)
 

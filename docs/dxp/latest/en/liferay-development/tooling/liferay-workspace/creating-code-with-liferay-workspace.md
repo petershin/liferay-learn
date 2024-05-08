@@ -30,9 +30,9 @@ Liferay Workspace is the developer's tool for creating and managing Liferay deve
    blade create -t mvc-portlet -p com.acme.z3x1.portlet -c MyPortlet myproject-web
    ```
 
-    This creates a project using the MVC Portlet template (`-t mvc-portlet`), generates the portlet class in the Java package you specify (`-p com.acme.z3x1.portlet`), specifies the name of the portlet class (`-c MyPortlet`), and names the project `myproject-web`. 
+   This creates a project using the MVC Portlet template (`-t mvc-portlet`), generates the portlet class in the Java package you specify (`-p com.acme.z3x1.portlet`), specifies the name of the portlet class (`-c MyPortlet`), and names the project `myproject-web`. 
 
-### Creating Projects Manually
+## Creating Projects Manually
 
 You don't need Blade CLI to create projects. You can create a project folder manually if you wish: 
 
@@ -54,12 +54,12 @@ You don't need Blade CLI to create projects. You can create a project folder man
 
 To write code to run on Liferay DXP, you must have a Liferay runtime on which to deploy it. Your first task, therefore, after installing Liferay Workspace should be to add a Liferay bundle to your workspace. 
 
-### Using Liferay Workspace with the Liferay CLI Tool
+## Using Liferay Workspace with the Liferay CLI Tool
 
 The [Liferay CLI](../other-tools/liferay-cli-tool.md) tool can be used together with Liferay Workspace. See the Liferay CLI article to learn how to install the tool and generate a project.
 
 !!! note
-    Liferay workspace downloads its own node version (i.e. not necessarily your system’s version). If a different node version is needed, declare it in your build.gradle file.
+    Liferay workspace downloads its own node version (i.e. not necessarily your system’s version). If a different node version is needed, declare it in your `build.gradle` file.
 
 ```gradle
 node {
@@ -97,7 +97,7 @@ You can also create a themes project in Workspace the same way you create it out
    ../gradlew build
    ```
 
-    The above command assumes you're one folder down from the Workspace root; if you've nested your project (perhaps in a `themes` folder), adjust the call to `gradlew` accordingly. This command builds the frontend theme using Liferay's Node Gradle Plugin. 
+   The above command assumes you're one folder down from the Workspace root; if you've nested your project (perhaps in a `themes` folder), adjust the call to `gradlew` accordingly. This command builds the frontend theme using Liferay's Node Gradle Plugin. 
 
 To verify Workspace recognizes your project, use this command to display all the projects: 
 
@@ -111,11 +111,11 @@ Workspace automates the download and setup of a runtime for your code. When you'
 
 1. Find the Liferay release you're targeting. 
 
-    **DXP:** Browse [releases-cdn.liferay.com/dxp](https://releases-cdn.liferay.com/dxp), find the bundle you need, and copy its URL to your clipboard.
+   **DXP:** Browse [releases-cdn.liferay.com/dxp](https://releases-cdn.liferay.com/dxp), find the bundle you need, and copy its URL to your clipboard.
 
-    **CE:** Browse [releases-cdn.liferay.com/portal](https://releases-cdn.liferay.com/portal), find the bundle you need, and copy its URL to your clipboard. 
+   **CE:** Browse [releases-cdn.liferay.com/portal](https://releases-cdn.liferay.com/portal), find the bundle you need, and copy its URL to your clipboard. 
 
-1. When using a more recent versions of *gradle workspace plugins* (v10+), `liferay.workspace.product` will be automatically added to your `gradle.properties` file. If using older versions, open `gradle.properties` from the root folder of your workspace and set the bundle URL property: 
+1. When using a more recent versions of *gradle workspace plugins* (v10+), `liferay.workspace.product` is added automatically to your `gradle.properties` file. If using older versions, open `gradle.properties` from the root folder of your workspace and set the bundle URL property: 
 
    ```properties
    liferay.workspace.bundle.url=[paste the URL from your clipboard]
@@ -140,7 +140,7 @@ Workspace automates the download and setup of a runtime for your code. When you'
    ./gradlew initBundle
    ```
 
-    Or if you prefer Blade, 
+   Or if you prefer Blade, 
 
    ```bash
    blade server init

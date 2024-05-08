@@ -20,7 +20,7 @@ The calendar widget displays a small monthly calendar showing an overview of upc
 
 1. Under the Collaboration category in the Widgets tab, drag the *Calendar* widget to a place on the page.
 
-Two calendars are included by default when the widget is first added to a page: a personal calendar for the current user and a site calendar for the current site. These are displayed in the widget's lower left.
+Two calendars appear by default when the widget is first added to a page: a personal calendar for the current user and a site calendar for the current site. These are displayed in the widget's lower left.
 
 Next to each calendar is a colored box. Click it to show/hide that calendar's events in the main viewing area.
 
@@ -28,13 +28,13 @@ Next to each calendar is a colored box. Click it to show/hide that calendar's ev
 
 ## Adding New Calendars
 
-1. Click on the arrow to the right of the My Calendars header and select *Add Calendar* from the menu. Fill in the *Add Calendar* form.
+1. Click the arrow to the right of the My Calendars header and select *Add Calendar* from the menu. Fill in the *Add Calendar* form.
 
 1. Give the calendar a name and a description.
 
 1. Set a time zone.
 
-1. Pick a color to color code events whenever multiple calendar events are displayed at once.
+1. Pick a color for this calendar's events whenever multiple calendar events are displayed at once.
 
 1. Decide if the calendar should be the user's default, automatically shown whenever the widget is displayed.
 
@@ -42,7 +42,7 @@ Next to each calendar is a colored box. Click it to show/hide that calendar's ev
 
 1. Configure visibility and permissions.
 
-   After the calendar is created, set permissions by clicking on the arrow to the right of the calendar's name &rarr; *Permissions*.
+   After the calendar is created, set permissions by clicking the arrow to the right of the calendar's name &rarr; *Permissions*.
 
    Read [Calendar Permissions Reference](#calendar-permissions-reference) to learn more about each permission.
 
@@ -50,7 +50,7 @@ Next to each calendar is a colored box. Click it to show/hide that calendar's ev
 
 ## Adding Events to a Calendar
 
-1. Click on any day in the main viewing area to open an event creation pop-up. If you've selected the *Day* or *Week* view, you can click on the specific time when your event begins.
+1. Click any day in the main viewing area to open an event creation pop-up. If you've selected the Day or Week view, you can click on the specific time when your event begins.
 
    Alternatively, click *Add Event*.
 
@@ -72,19 +72,19 @@ Next to each calendar is a colored box. Click it to show/hide that calendar's ev
 
 ### Details
 
-In the Details section, you can move the event to another calendar, enter a location, and set permissions for Guests and Site Members.
+Here you can move the event to another calendar, enter a location, and set permissions for Guests and Site Members.
 
 ![The Details section.](./using-the-calendar-widget/images/05.png)
 
 ### Invitations
 
-In the invitations section, add users, sites, or [calendar resources](#creating-calendar-resources) to your event.
+Here, you add users, sites, or [calendar resources](#creating-calendar-resources) to your event.
 
 1. Enter the name of an invitee (user, site, or resource) in the *Invitations* field. Hit *Enter* to add them to the *Pending* column.
 
    An automated [customizable](#customizing-email-notifications) email is sent to invitees who must navigate to the calendar widget to respond. When invitees respond to the invitation, their names move to the Accepted, Declined, or Maybe columns.
 
-1. Check the availability of invitees by clicking the arrow next to their names and selecting *Check Availability*. This displays their calendars (assuming you have permission to view them).
+1. Click the arrow next to invitees' names and select *Check Availability*. This displays invitees' calendars (assuming you have permission to view them).
 
    ![The Invitations section.](./using-the-calendar-widget/images/06.png)
 
@@ -107,7 +107,7 @@ Read [Customize Email Notifications](#customizing-email-notifications) to learn 
 
 ### Related Assets
 
-List an asset (e.g., an agenda or supplementary material for a meeting) as related to your event. Links to related assets are displayed in the Event Details window.
+List an asset (e.g., an agenda or supplementary material for a meeting) as related to your event. Links to related assets appear in the Event Details window.
 
 ![The Related Assets section.](./using-the-calendar-widget/images/09.png)
 
@@ -115,28 +115,28 @@ List an asset (e.g., an agenda or supplementary material for a meeting) as relat
 
 Customize email notifications for event invitations and reminders.
 
-1. From the Calendar widget, click on the arrow next to a calendar and select *Calendar Settings*.
+1. From the Calendar widget, click the arrow next to a calendar and select *Calendar Settings*.
 
    ![Email templates apply to a single calendar and all its events.](./using-the-calendar-widget/images/10.png)
 
-1. Click on the *Notification Templates* tab. Then select either the *Invite Email* or the *Reminder Email* tab.
+1. Click the *Notification Templates* tab. Then select the *Invite Email* or the *Reminder Email* tab.
 
-1. Edit the email as desired. At the bottom of the screen is a glossary that specifies variables for terms that were set when you created the event. Use these variables to refer to event-specific information, such as the event's name, date or location.
+1. Edit the email as desired. A glossary at the bottom of the screen shows variables for terms that were set when you created the event. Use these variables to refer to event-specific information, such as the event's name, date or location.
 
    !!! tip
-      It's a good idea to include a link to the event (use the variable `$EVENT_URL$]`) as users must navigate to the calendar widget to respond.
+       It's a good idea to include a link to the event (use the variable `$EVENT_URL$]`), as users must navigate to the calendar widget to respond.
 
-1. Click *Save*. Now your notifications contain the proper text. The next article covers setting up calendar resources and porting data from one installation to another.
+1. Click *Save*. Now your notifications contain the proper text. 
 
 ## Creating Calendar Resources
 
-With calendar resources, you can invite entities other than people to your events. This is beneficial for finding the availability of important resources your event requires, like a conference room, laptop, or, at The Lunar Resort, the Sasquatch Space Suit used to scare guests out on Lunar hikes.
-
-To add a new calendar resource,
+Use calendar resources, to invite shared resources to your events so those important resources your event requires, like a conference room, laptop, or projector are available for your event.
 
 1. Click on the *Resources* tab and click *New*.
 
-   ![Figure 1: Resources are accessed from the tab menu at the top of the widget.](../../images/calendar-resources.png)
+<!-- This image is missing and not named properly. -Rich -->
+
+   ![Resources are accessed from the tab menu at the top of the widget.](../../images/calendar-resources.png)
 
 1. Fill in the *New Resource* form. Enter a name, give it a description, and choose whether to set it as active.
 
@@ -148,9 +148,9 @@ To add a new calendar resource,
 
 The resource has its calendar that was generated automatically (this is how users can check its availability when creating events). Just as with users, however, resources can have more than one calendar:
 
-1. Go to the widget's *Resources* tab, click ![Actions](../../images/icon-actions.png) next to the resource, and select *View Calendars*.
+1. Go to the widget's *Resources* tab, click *Actions* (![Actions](../../images/icon-actions.png)) next to the resource, and select *View Calendars*.
 
-2. Click *Add Calendar* and continue just as if you were creating a calendar for a user or a site.
+2. Click *Add Calendar* and continue as if you were creating a calendar for a user or a site.
 
 Once a resource is created, invite it to your events just as you would an attendee.
 

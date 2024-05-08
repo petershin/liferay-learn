@@ -10,6 +10,8 @@ taxonomy-category-names:
 
 # Calendar Widget Configuration Reference
 
+<!-- A configuration reference should be just that: a reference. Rather than having steps, it should document what's on all these reference screens so the reader knows what all the options mean. Use lists of definitions like this (https://learn.liferay.com/w/dxp/using-search/search-configuration-reference) or if the forms have tons of options, tables like this (https://learn.liferay.com/w/dxp/process-automation/forms/creating-and-managing-forms/forms-configuration-reference) to explain every option on the forms. And don't ever use bullets for definitions (https://learn.liferay.com/w/reference/style-guide/liferay-conventions#definitions). -Rich -->
+
 Use the Calendar widget configuration options to tailor the display and functionality of your calendar. From choosing the time format and default view to setting the week start day and time zone, users can configure various aspects to suit their preferences.
 
 To configure the Calendar widget,

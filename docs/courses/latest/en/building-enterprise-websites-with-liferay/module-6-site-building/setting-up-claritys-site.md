@@ -44,13 +44,21 @@ This creates a site and redirects you to its configuration page. Let’s take a 
 
 ## Exploring the Site Building UI
 
-Liferay’s site UI is organized into two main sections: Global Menu (![Global Menu](../../images/icon-applications-menu.png)) and Product Menu (![Product Menu](../../images/icon-product-menu.png)).
+Liferay's site building UI offers an intuitive interface for creating and managing your sites, assets, and applications. You can access these features through the Site Menu (![Product Menu](../../images/icon-product-menu.png)) and Global Menu (![Global Menu](../../images/icon-applications-menu.png)).
 
-Use the Applications Menu to easily manage and control various applications within your Liferay DXP environment. You can also manage your digital commerce platform to meet the challenging and complex needs of your B2B organization by navigating to the Liferay Commerce menu. To configure Liferay DXP at a global level or for specific instances, giving you control over administrative settings, use the Control Panel.
+![Access Site Building tools through the Site Menu and Global Menu.](./setting-up-claritys-site/images/02.png)
 
-The Product Menu, located on the left side of the screen, provides actions, content, and configurations specific to the current site. Click the Product Menu icon in the application bar to expand or hide it. The menu also indicates the selected site, and allows you to switch sites using the Compass icon. Common site management tasks like adding pages, creating content, managing memberships, and configuring behavior are all accessible through the Product Menu.
+The Site Menu provides access to a site's applications. Here, you can access Liferay's suite of applications for creating and designing site pages and content. All data for these applications is site scope, meaning other sites cannot access it. From the Site Menu, you can also navigate between sites (![Compass Icon](../../images/icon-compass.png)) and explore the current site's page structure (![Page Structure](../../images/icon-page-tree.png)).
 
-   ![Liferay DXP site building UI.](./setting-up-claritys-site/images/02.png)
+![The Site Menu provides access to site-scoped applications.](./setting-up-claritys-site/images/03.png)
+
+The Global Menu provides access to core Liferay functionalities for your entire Liferay DXP environment. This includes managing users, creating sites, building applications, and more. Available features appear in three tabs: Applications, Commerce, and Control Panel. From here, you can also quickly switch between sites in your Liferay instance.
+
+* **Applications Tab**: Includes applications that relate to relate to sites (e.g., asset libraries, workflows, publications, search).
+* **Commerce Tab**: Includes applications for setting up e-commerce solutions (e.g., catalogs, products, price lists).
+* **Control Panel Tab**: Includes core applications (e.g., sites, users, objects), configuration options, and platform tools.
+
+![The Global Menu provides access to core Liferay functionalities for your entire Liferay DXP environment.](./setting-up-claritys-site/images/04.png)
 
 ## Conclusion
 

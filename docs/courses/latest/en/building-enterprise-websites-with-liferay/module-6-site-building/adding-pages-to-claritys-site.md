@@ -129,6 +129,9 @@ While logged in as Walter Douglas,
    * Blog Author
       * Content Type: Web Content Article > Basic Web Content
 
+   * FAQ Details
+      * Content Type: Web Content Article > Basic Web Content
+
    * Job Opening
       * Content Type: Web Content Article > Basic Web Content
 

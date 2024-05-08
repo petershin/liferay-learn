@@ -134,7 +134,7 @@ This evaluation is automatically related to the selected application. You can co
 
 Congratulations! You've set up the prebuilt Clarity workspace and deployed its client extensions to your Liferay instance. Next, let's explore the solution's data structures and fill in the missing pieces.
 
-Up Next: [Modeling Data Structures](./modeling-data-structures.md)
+Next Up: [Modeling Data Structures](./modeling-data-structures.md)
 
 ## Additional Resources
 

@@ -30,4 +30,4 @@ In addition to Objects, Liferay provides both microservice and frontend client e
 
 Now that we've reviewed Clarity's requirements, you can deploy the custom solution you'll be reviewing and contributing to throughout this module.
 
-Up Next: [Deploying the Application](./deploying-the-application.md)
+Next Up: [Deploying the Application](./deploying-the-application.md)

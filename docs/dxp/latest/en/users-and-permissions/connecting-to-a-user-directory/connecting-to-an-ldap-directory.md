@@ -40,7 +40,9 @@ The easiest way to do use `.config` files is to use the GUI and export the confi
 
 !!! note
     To use `config` files for LDAP server configuration, you must specify the Virtual Instance ID (in the source, the variable name is `companyId`) in the exported configuration file, because servers are defined at the instance scope, not the system scope. To do this, specify the virtual instance ID somewhere in the file like this:
+
     ```companyId=1234```
+
     You can find your Virtual Instance ID in *Control Panel* -> *Configuration* -> *Virtual Instances*.
 
 ## LDAP Server Configuration Reference

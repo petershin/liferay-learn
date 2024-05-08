@@ -33,7 +33,7 @@ Up First: [Clarity's Authentication and SSO Requirements](./module-4-identity-ma
 ::::{grid} 2
 :gutter: 3 3 3 3
 
-:::{grid-item-card}  Clarity's Authentication SSO Requirements
+:::{grid-item-card}  Clarity's Authentication and SSO Requirements
 :link: ./module-4-identity-management-and-sso/claritys-authentication-and-sso-requirements.md
 
 Read about the specific authentication and SSO requirements Clarity has.

@@ -12,11 +12,11 @@ uuid: 5294f291-3bbf-4e59-9c4a-e7358e3f525f
 ---
 # Understanding Pages
 
-Pages display content and applications to users of a site.
+Pages render content and applications for users of a site.
 
 ## Page Sets
 
-If you enable private pages, it leads to the creation of two [page sets](./page-settings/configuring-page-sets.md): public pages and private pages.
+If you enable private pages, two [page sets](./page-settings/configuring-page-sets.md) are created: public pages and private pages.
 
 !!! note
     For Liferay 7.4 U22+ and GA22+, private pages are disabled by default for new installations. See [Enabling Private Pages](#enabling-private-pages) if you want to enable them.
@@ -42,11 +42,11 @@ There are several page types available when you [add a page](../adding-pages/add
 
 ### Content Pages
 
-With content pages, users can build professional pages that can be easily managed and have their content edited in-line. Content pages are primarily built using [page fragments](./page-fragments-and-widgets/using-fragments.md) and widgets.
+With content pages, users can build professional pages that can be managed easily and have their content edited in-line. Content pages are built primarily using [page fragments](./page-fragments-and-widgets/using-fragments.md) and widgets.
 
 ![Content pages can be composed of multiple fragments.](./understanding-pages/images/02.png)
 
-Content pages also has access to additional features and benefits:
+Content pages have additional features and benefits:
 
 - [Personalized and adaptive site experiences](../personalizing-site-experience.md)
 - [A/B testing](../optimizing-sites/ab-testing/ab-testing.md)
@@ -80,22 +80,22 @@ There are other page types, each fulfilling particular use cases. See [Other Pag
 
 ## Global Page Templates
 
-When adding a page, you can also choose a page template. Page templates are pre-set pages with applications already deployed to the page. By default, only Global Templates are available, but additional collections you create also appear as an option.
+When adding a page, you can also choose a page template. Page templates are pre-set pages with applications already deployed to the page. Default templates are Global Templates, but your additional collections appear when you create them. 
 
 | Global Page Template | Description                                                                                                                                                                                                |
 | :------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Search               | Creates a widget page with the following widgets: Search Bar, Suggestions, Site Facet, Type Facet, Tag Facet, Category Facet, Folder Facet, User Facet, Modified Facet, Search Results and Search Options. |
+| Search               | Creates a widget page containing Search Bar, Suggestions, Site Facet, Type Facet, Tag Facet, Category Facet, Folder Facet, User Facet, Modified Facet, Search Results and Search Options. |
 
 See [Creating a Page Template](./adding-pages/creating-a-page-template.md) to learn more about page templates.
 
 ## Child Pages and Page Hierarchy
 
-Pages can also be created in a hierarchical fashion by creating child pages. Child pages are useful if you have multiple pages organized into categories.
+You can create a page hierarchy using child pages. Child pages are useful if you have multiple pages organized into categories.
 
 ![You can add a child page to a top-level page to organize pages hierarchically.](./understanding-pages/images/04.png)
 
 !!! tip
-    You can navigate among pages of a site hierarchy with the Site Map application. A site administrator can configure a root page and a display depth. The display depth of the site map application determines how many levels of nested pages to display.
+    You can navigate among pages in a site hierarchy with the Site Map application. A site administrator can configure a root page and a display depth. The display depth of the site map application determines how many levels of nested pages to display.
 
 ## Enabling Private Pages
 
@@ -107,13 +107,13 @@ By default, new Liferay installations include a release feature flag that preven
 
 1. Go to *Release Feature Flags*.
 
-1. In the Disabled Features dropdown menu, select *Disable Private Pages*.
+1. In the Disabled Features drop-down menu, select *Disable Private Pages*.
 
-    ![Select disable private pages.](./understanding-pages/images/05.png)
+   ![Select disable private pages.](./understanding-pages/images/05.png)
 
 1. Click *Save*.
 
-    If you want to disable private pages again, deselect *Disable Private Pages* and click *Update*.
+   If you want to disable private pages again, deselect *Disable Private Pages* and click *Update*.
 
 ## Related Topics
 

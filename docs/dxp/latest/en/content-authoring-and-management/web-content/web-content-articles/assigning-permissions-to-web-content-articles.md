@@ -14,7 +14,7 @@ With Liferay's permissions framework, you can control which users can create, vi
 
 1. Follow the steps to [create a web content article](./adding-a-basic-web-content-article.md).
 
-1. The Permissions section appears at the bottom-right of the Properties tab (1). Click *More Options* to set permissions for Guests and Site Members. You can also set your article's [visibility](./configuring-visibility-for-web-content-articles.md) by choosing a *Viewable by* option.
+1. The Permissions section appears at the bottom-right of the Properties tab (1). Click *More Options* to set permissions for Guests and Site Members. You can also set your article's [visibility](./adding-a-basic-web-content-article.md#setting-the-web-content-articles-visibility-and-permissions) by choosing a *Viewable by* option.
 
    {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+` Alternatively, you can set permissions before publishing web content using the *Publish With Permissions* option (2). See [Publish With Permissions and Schedule Publications](./adding-a-basic-web-content-article.md#publish-with-permissions-and-schedule-publications) to learn more.
 

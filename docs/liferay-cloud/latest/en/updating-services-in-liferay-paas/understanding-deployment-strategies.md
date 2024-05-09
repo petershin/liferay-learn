@@ -19,7 +19,7 @@ Users expect applications to be available all the time and developers are expect
 | `Recreate`          | Application state entirely renewed at once                 | Downtime length that occurs is dependent on shutdown and boot up duration for the application |
 
 !!! important
-    Deployments defined with the `Recreate` strategy will terminate all the running instances before recreating them with the newer version.
+    Deployments defined with the `Recreate` strategy terminate all the running instances before recreating them with the newer version.
 
 In general, the `RollingUpdate` strategy is our recommended approach. The `Recreate` strategy can be used in non-production environments or in some cases where it might be required (e.g., if you're updating to a version of Liferay DXP that changes the database schema).
 

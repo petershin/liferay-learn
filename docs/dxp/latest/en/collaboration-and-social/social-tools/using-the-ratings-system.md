@@ -65,5 +65,5 @@ From either of these settings menus, find the icon for the chosen asset type und
 
 ## Related Topics
 
-- [Using the Activities Widget](./social-tools/using-the-activities-widget.md)
-- [Using the Contacts Center Widget](./social-tools/using-the-contacts-center-widget.md)
+- [Using the Activities Widget](./using-the-activities-widget.md)
+- [Using the Contacts Center Widget](./using-the-contacts-center-widget.md)

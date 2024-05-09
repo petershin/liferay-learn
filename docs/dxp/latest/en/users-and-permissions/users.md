@@ -18,7 +18,7 @@ Users break down into three general categories:
 
 | User                                                                        | Default Access                                                                                                              | Notes                                                                                                |
 |:----------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------|
-| [Administrator](../../getting-started/introduction-to-the-admin-account.md) | Liferay Admin with full system access.                                                                                      | We *strongly* recommend that users change the password for this account promptly after installation. |
+| [Administrator](../getting-started/introduction-to-the-admin-account.md) | Liferay Admin with full system access.                                                                                      | We *strongly* recommend that users change the password for this account promptly after installation. |
 | Guest                                                                       | Unauthenticated user with view access to publicly accessible pages as well as limited ability to create and add content.    | By default, Guest users can create an account on a Liferay site to view and interact with sites.     |
 | User                                                                        | Authenticated user able to view restricted pages and create content.                                                        | Users get defined default permissions and can be elevated to organization or site administrators.    |
 
@@ -42,7 +42,7 @@ Administrators can add users through the Users and Organizations section of the 
 
 ## Managing User Access
 
-User access is controlled by roles and permissions. Permissions define what a user can and cannot do. Roles are groupings of permissions. Permissions are configured by defining permissions for a role and assigning users to pre-set roles. To learn more about managing access for users, see [Roles and Permissions](../roles-and-permissions.md).
+User access is controlled by roles and permissions. Permissions define what a user can and cannot do. Roles are groupings of permissions. Permissions are configured by defining permissions for a role and assigning users to pre-set roles. To learn more about managing access for users, see [Roles and Permissions](./roles-and-permissions.md).
 
 ## Organizing Users
 
@@ -56,6 +56,6 @@ Liferay has several tools to help you organize and administer users.
 
 ## Related Topics
 
-- [Adding and Managing Users](./adding-and-managing-users.md)
-- [Organizations](../organizations/understanding-organizations.md)
-- [User Groups](../user-groups/creating-and-managing-user-groups.md)
+- [Adding and Managing Users](./users/adding-and-managing-users.md)
+- [Organizations](./organizations/understanding-organizations.md)
+- [User Groups](./user-groups/creating-and-managing-user-groups.md)

@@ -33,7 +33,7 @@ Public pages use the `[web-address]/`**web**`/[site-name]` URL pattern, while pr
 
 ## Page Types
 
-There are several page types available when you [add a page](../adding-pages/adding-a-page-to-a-site.md). The default page type is a content page. You can also create a page based on a [page template](../adding-pages/creating-a-page-template.md).
+There are several page types available when you [add a page](./adding-pages/adding-a-page-to-a-site.md). The default page type is a content page. You can also create a page based on a [page template](./adding-pages/creating-a-page-template.md).
 
 ![You must select a page type when adding pages.](./understanding-pages/images/01.png)
 

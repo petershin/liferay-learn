@@ -15,11 +15,34 @@ taxonomy-category-names:
 
 # Calendar
 
-The Calendar widget stores and shares scheduled events. It's a personal planner for individual users, a shared calendar for an entire site, or both at the same time. It can be used to create multiple calendars for a single site or user, to overlay the events stored in multiple calendars for simultaneous view, to send email reminders to users, and more.
+The Calendar widget stores and shares scheduled events. It's a personal planner for individual users, a shared calendar for an entire site, or both at the same time.
 
-!!! note
-    The calendar supports social activities. Whenever a calendar event is added or updated, a corresponding social activity notification is created. If the event was added or updated in a calendar that the current user has permission to view, the social activity is viewable in the [Activities widget](./social-tools/using-the-activities-widget.md).
+In addition to regular calendar features (i.e., multiple calendars within a site or user profile, shared calendars, email reminders, etc.) Liferay's Calendar offers:
 
-Start by learning how to [use the Calendar widget](./calendar/using-the-calendar-widget.md) and [configure it](./calendar/configuring-the-calendar-widget.md). Then, you can [export/import](./calendar/exporting-importing-calendar-data.md) the calendar data and display calendar event information by [mapping it to display page templates](./calendar/mapping-calendar-event-fields-to-display-page-templates.md) which gives you more options to use the calendar data throughout sites.
+* Event Management: [Create, edit, and delete events](./calendar/using-the-calendar-widget.md) directly from the calendar interface.
 
-<!-- Intro is a good start, but it needs a features list and a screenshot or two. List what the calendar does, so people can see it's a fine replacement for whatever they're currently using, or that they can see themselves using it on an enterprise level. -Rich -->
+   ![Create events using the Calendar widget.](./calendar/images/01.png)
+
+* Drag-and-Drop Functionality: Use the drag-and-drop functionality to reschedule events by simply moving them to a different date or time slot.
+
+* Social Activities: Automatically generate [social activity notifications](./social-tools/using-the-activities-widget.md) when calendar events are added or updated.
+
+   ![The Activities widget integrates with the Calendar widget and displays changes to the calendar.](./calendar/images/02.png)
+
+* User [Permissions](./calendar/using-the-calendar-widget.md#calendar-permissions-reference): Manage who can view, create, edit, or delete events, ensuring data security and privacy.
+
+* [Time Zone](./calendar/configuring-the-calendar-widget.md) Support: Automatically adjust event times based on the user's time zone settings to avoid confusion in global teams.
+
+* Responsive Design: Ensure the calendar widget is accessible and functional across various devices and screen sizes.
+
+* Localization: Localize the event's title and description in several languages.
+
+   ![Localize the title and description for your event.](./calendar/images/03.png)
+
+* Export and Import: [Export and import](./calendar/exporting-importing-calendar-data.md) calendar data.
+
+* Integration: Integrate with other Liferay features and applications, enhancing overall collaboration and productivity within the platform (e.g., you can [map calendar event fields to display page templates](./calendar/mapping-calendar-event-fields-to-display-page-templates.md)).
+
+   ![Map calendar event fields to display page templates.](./calendar/images/04.png)
+
+Ultimately, the Calendar widget provides a robust solution for managing and sharing scheduled events within your organization. Start by [Using the Calendar Widget](./calendar/using-the-calendar-widget.md) and check all of its available features.

@@ -3,23 +3,23 @@ uuid: 9ed9ff58-6195-464f-8361-9b83f3f43194
 ---
 # Clarity's Users and Permissions Requirements
 
-User management is an important part of any organization's IT procedures and policies. Managing users goes beyond just providing view access based on roles and permissions. User management is about determining what permissions users have into things such as application UI functionality, content creation, sensitive information and more. Having good user management is especially critical in a company's lifecycle such a in onboarding or offboarding their employees.
+User management is an important part of any organization's IT procedures and policies. A robust user management system goes beyond just assigning roles. It empowers you to define granular permissions for various actions, including application functionalities, content creation, and access to sensitive information. This ensures only authorized users can perform specific tasks, safeguarding data throughout the employee lifecycle, especially during crucial stages like onboarding and offboarding.
 
 ## Requirements
 
-As a growing organization, Clarity has some processes in place, but there's definitely room for improvement. Let's look a little closer at some of the specific requirements Clarity has for its users.
+As a growing organization, Clarity recognizes the need to refine its existing user management processes. Let's take a closer look at Clarity's specific user management requirements.
 
-### User management that is capable by non-technical team members
+### Enable non-technical users to manage users and permissions
 
-Liferay's robust user management tools come ready to use all from within the Liferay UI. No programming or custom code is required to create and manage users. Even customization such as custom fields or custom roles can be accomplished from the UI. This means that non-technical team members can cover all aspects of managing users without the need for IT staff. Some examples include managing roles and permissions, managing organizations and user groups, and leveraging accounts.
+Liferay provides robust user management tools for performing key tasks through the UI. Examples include creating and managing users, assigning roles and permissions, managing organizations and user groups, and leveraging accounts. You can even add custom fields and roles through the UI. This means Clarity's non-technical team members can cover all aspects of managing users without the need for IT staff.
 
-### Precise permission system that provide Clarity users with the necessary and appropriate platform privileges
+### Use granular permissions to assign users necessary platform privileges
 
-With Liferay's permission system, you can create precise roles with specific permissions. In Liferay, permissions are additive for each role, as opposed to subtractive. This means that users will only have the permissions that you assign and intend for them to have. This way, you ensure that users only have access to the things they need.
+Liferay provides granular control over user permissions. Its multi-level system enables users to define permissions not just for the entire platform, but also for specific sites, organizations, libraries, and assets. Also, Liferay permissions are additive instead of subtractive, so users only have the permissions you explicitly assign them. With these features, Clarity can ensure users only have access to the resources and applications necessary to their responsibilities.
 
 ### Reduce management time and costs through reusable user segments
 
-In Liferay, permissions are not only assignable to roles but also to user groups. If users in a specific group should have the same access and permissions on the platform, it makes sense for them to be grouped together with one set of permissions. Furthermore, user groups can be assigned automatically from user directories, as we saw in the previous module. This saves time and energy because new users who authenticate to Liferay won't need roles or permissions assigned to them, but will automatically receive the appropriate permissions of their user group.
+In Liferay, permissions are not only assignable to roles but also to user groups. If users in a specific group should have the same access and permissions on the platform, it makes sense for them to be grouped together with one set of permissions. Furthermore, user groups can be assigned automatically from user directories, as demonstrated in the previous module. This saves time and energy because new users who authenticate to Liferay don't need roles or permissions assigned to them, but automatically receive the permissions of their user group.
 
 ## Conclusion
 

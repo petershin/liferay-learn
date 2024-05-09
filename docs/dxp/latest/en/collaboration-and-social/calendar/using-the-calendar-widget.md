@@ -169,5 +169,5 @@ Here's a list of calendar permissions:
 
 ## Related Topics
 
-- [Calendar Widget Configuration Reference](./calendar-widget-configuration-reference.md)
+- [Configuring the Calendar Widget](./configuring-the-calendar-widget.md)
 - [Exporting/Importing Calendar Data](./exporting-importing-calendar-data.md)

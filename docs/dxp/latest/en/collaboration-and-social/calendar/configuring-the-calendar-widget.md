@@ -8,9 +8,11 @@ taxonomy-category-names:
 - Liferay SaaS
 ---
 
-# Calendar Widget Configuration Reference
+# Configuring the Calendar Widget
 
 <!-- A configuration reference should be just that: a reference. Rather than having steps, it should document what's on all these reference screens so the reader knows what all the options mean. Use lists of definitions like this (https://learn.liferay.com/w/dxp/using-search/search-configuration-reference) or if the forms have tons of options, tables like this (https://learn.liferay.com/w/dxp/process-automation/forms/creating-and-managing-forms/forms-configuration-reference) to explain every option on the forms. And don't ever use bullets for definitions (https://learn.liferay.com/w/reference/style-guide/liferay-conventions#definitions). -Rich -->
+
+<!-- Thanks! It wasn't looking like a reference, that's true. I think it's better if I use this article to show users how to configure the widget (perform the action instead of having a reference per se), I decided to change its name so it relates more to the action of configuring the widget. - Eric -->
 
 Use the Calendar widget configuration options to tailor the display and functionality of your calendar. From choosing the time format and default view to setting the week start day and time zone, users can configure various aspects to suit their preferences.
 
@@ -22,27 +24,27 @@ To configure the Calendar widget,
 
    To learn more about the Sharing tab, read [Sharing Widgets with Other Sites](../../site-building/creating-pages/page-fragments-and-widgets/using-widgets/configuring-widgets/sharing-widgets-with-other-sites.md).
 
-1. Make your alterations and click *Save*.
+1. Configure your widget and click *Save*.
 
 ## User Settings
 
 From the *User Settings* tab, customize the calendar's default view and settings. Here are the available options:
 
-![Use the User Settings tab to configure your Calendar widget.](./calendar-widget-configuration-reference/images/01.png)
+![Use the User Settings tab to configure your Calendar widget.](./configuring-the-calendar-widget/images/01.png)
 
--  **Time Format:** Choose *Locale*, *AM/PM*, or *24 Hour*.
+-  **Time Format:** Choose *Locale*, *AM/PM*, or *24 Hour* as the default time format.
 
    Locale is a dynamic setting that chooses whether to display the time in AM/PM or a 24-hour format, based on the preferences set by the user's locale. AM/PM displays times such as 8 AM or 11 PM. The 24-hour time format displays times such as 08:00 and 23:00.
 
--  **Default Duration:** Choose an event duration.
+-  **Default Duration:** Sets the event's default duration.
 
    When you add a new event to the calendar, the time you set here specifies how long events last by default.
 
--  **Default View:** Choose *Day*, *Week*, *Month* or *Agenda*.
+-  **Default View:** Choose *Day*, *Week*, *Month*, or *Agenda* as the default view for the calendar.
 
    This sets the default for when the calendar is first displayed, but the view can be changed by clicking the appropriate button at the top-right of the widget.
 
--  **Week Starts On:** Choose *Sunday*, *Monday*, or *Saturday*.
+-  **Week Starts On:** Choose *Sunday*, *Monday*, or *Saturday* as the week's start day.
 
 -  **Time Zone:** Choose a time zone or check the *Use Global Time Zone* box.
 
@@ -56,7 +58,7 @@ From the *User Settings* tab, customize the calendar's default view and settings
 
 From the *Display Settings* tab, set how the Calendar widget is displayed. Here are the available options:
 
-![Use the Display Settings tab to configure how the calendar is displayed.](./calendar-widget-configuration-reference/images/02.png)
+![Use the Display Settings tab to configure how the calendar is displayed.](./configuring-the-calendar-widget/images/02.png)
 
 -  **Display Scheduler Only:** By default, the list of calendars and a mini-calendar view are displayed.
 
@@ -76,7 +78,15 @@ From the *Display Settings* tab, set how the Calendar widget is displayed. Here 
 
 Use the *RSS* tab to enable/disable the RSS subscription and configure the RSS behavior.
 
-![Use the RSS tab to configure RSS settings.](./calendar-widget-configuration-reference/images/03.png)
+![Use the RSS tab to configure RSS settings.](./configuring-the-calendar-widget/images/03.png)
+
+-  **Maximum Items to Display:** Set the maximum number of items to display in the RSS feed. The value ranges from 1 to 100.
+
+-  **Display Style:** Display the Abstract, Full Content, or Title of the event in the RSS feed.
+
+-  **Format:** Use Atom 1.0, RSS 1.0, or RSS 2.0 as the default format.
+
+-  **Time Interval:**  Update the RSS feed every Week, Month, or Year.
 
 ## Related Topics
 

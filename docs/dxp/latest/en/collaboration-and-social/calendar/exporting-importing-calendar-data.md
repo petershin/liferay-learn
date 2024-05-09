@@ -70,4 +70,4 @@ Your imported calendar data is now available for use. Better check it to see wha
 ## Related Topics
 
 - [Using the Calendar Widget](./using-the-calendar-widget.md)
-- [Calendar Widget Configuration Reference](./calendar-widget-configuration-reference.md)
+- [Configuring the Calendar WIdget](./configuring-the-calendar-widget.md)

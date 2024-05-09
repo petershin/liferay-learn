@@ -3,66 +3,73 @@ uuid: cbe102f7-9428-4d96-8d2f-eb9ac8007dfa
 ---
 # Users and Permissions Setup
 
-Before we begin, we need to create some users, roles, and user groups. These will be used in this module and the succeeding modules.
+Let's start by setting up users, roles, and user groups. These will be our foundation for exploring Liferay capabilities throughout this course.
 
-## Creating Clarity Users
+As introduced previously, we'll be following five Clarity personas in the following exercises:
 
-Here are some of the Clarity team members:
+| Screen Name     | Email                                         | First Name | Last Name | Job Title                  |
+|:----------------|:----------------------------------------------|:-----------|:----------|:---------------------------|
+| christiancarter | `christian.carter@clarityvisionsolutions.com` | Christian  | Carter    | Marketing Specialist       |
+| claramurphy     | `clara.murphy@clarityvisionsolutions.com`     | Clara      | Murphy    | Marketing Manager          |
+| harperroberts   | `harper.roberts@clarityvisionsolutions.com`   | Harper     | Roberts   | Human Resources Specialist |
+| ianmiller       | `ian.miller@clarityvisionsolutions.com`       | Ian        | Miller    | IT Manager                 |
+| walterdouglas   | `walter.douglas@clarityvisionsolutions.com`   | Walter     | Douglas   | Web Developer              |
 
-| Screen Name | Email | First Name | Last Name | Job Title |
-|:---|:---|:---|:---|:---|
-| janenewton | jane.newton@clarityvisionsolutions.com | Jane | Newton | Marketing Specialist |
-| claramurphy | clara.murphy@clarityvisionsolutions.com | Clara | Murphy | Marketing Manager |
+<!--TASK: Revisit list; what about module 10's users? -->
 
-<!---
-| ianmiller | ian.miller@clarityvisionsolutions.com | Ian | Miller | IT Manager |
-| walterdouglas | walter.douglas@clarityvisionsolutions.com | Walter | Douglas | Web Developer |
-| christiancarter | christian.carter@clarityvisionsolutions.com | Christian | Carter | Marketing Coordinator |
-| harperroberts | harper.roberts@clarityvisionsolutions.com | Harper | Roberts | Director of Human Resources |
---->
+<!--TASK: ![]() -->
 
-Follow the steps below to create these user accounts:
+## Exercise One: Creating Clarity Users
 
-1. Open the applications menu and navigate to _Control Panel_ &rarr; _Users and Organizations_.
+Follow these steps to create each user account:
 
-1. Click _New_ to create a new user.
+<!--TASK: Add images to the exercise -->
 
-1. Input the user's screen name (e.g. `janenewton`).
+1. Open the _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)), go to the _Control Panel_ tab, and click _Users and Organizations_.
 
-1. Input the user's email address (e.g. `jane.newton@clarityvisionsoltions.com`).
+1. Click _New_.
 
-1. Input the user's first name (e.g. `Jane`).
+1. Input the user's screen name (e.g. `christiancarter`).
 
-1. Input the user's last name (e.g. `Newton`).
+1. Input the user's email address (e.g. `christian.carter@clarityvisionsolutions.com`).
+
+1. Input the user's first name (e.g. `Christian`).
+
+1. Input the user's last name (e.g. `Carter`).
 
 1. Input the user's job title (e.g. `Marketing Specialist`).
 
-1. Click _Save_ and navigate back out to the list of users. Continue making each of the users listed in the table.
+1. Click _Save_ and return to the _Users and Organizations_ overview page.
+
+1. Repeat this process until you have created all five users.
 
 !!! note
-   The users above do not have passwords assigned to them.
+    The users do not yet have passwords assigned to them.
 
-## Creating Clarity Roles
+<!--TASK: Revisit note; add more information-->
 
-In addition to the default roles that ship with Liferay, Clarity needs some custom roles for their team members. Here is a summary of some of the roles:
+## Exercise Two: Creating Clarity Roles
 
-| Type | Title | Description |
-|:---|:---|:---|
-| Regular | Marketing Specialist | Organizational title for a member within the marketing department |
-| Regular | Content Manager | Organizational role for those managing content on Liferay |
+In addition to Liferay's out-of-the-box roles, Clarity needs some custom roles for their team members. Here is a summary of those roles:
 
-<!---
-| Regular | IT Manager | Organizational title for a manager within the IT department |
-| Regular | Web Developer | Organizational title for a front end developer role within the IT Department |
-| Regular | Marketing Coordinator | Organizational title for an individual contributor from the Marketing Team |
-| Site | Site Content Contributor | Site based role for an individual who will be contributing |
---->
+| Type    | Title                    | Description                                                                  |
+|:--------|:-------------------------|:-----------------------------------------------------------------------------|
+| Regular | Marketing Specialist     | Organizational title for a member within the marketing department            |
+| Regular | Content Manager          | Organizational role for those managing content on Liferay                    |
+| Regular | IT Manager               | Organizational title for a manager within the IT department                  |
+| Regular | Web Developer            | Organizational title for a front end developer role within the IT Department |
+| Regular | Marketing Coordinator    | Organizational title for an individual contributor from the Marketing Team   |
+| Site    | Site Content Contributor | Site based role for an individual who will be contributing                   |
 
-Follow the steps below to create these roles:
+<!--TASK: Revisit list; what about module 10's role? -->
 
-1. Open the applications menu and navigate to _Control Panel_ &rarr; _Roles_.
+<!--TASK: Add images to the exercise -->
 
-1. Click _New_ to create a new role.
+Follow these steps to create each role:
+
+1. Open the _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)), go to the _Control Panel_ tab, and click _Roles_.
+
+1. Click _New_.
 
 1. Select the role type (e.g. `Regular`).
 
@@ -70,24 +77,37 @@ Follow the steps below to create these roles:
 
 1. Input the role description (e.g. `Organizational title for a member within the marketing department`).
 
-1. Click _Save_ and navigate back out to the list of roles. Continue making each of the roles listed in the table.
+1. Click _Save_ and return to the _Roles_ overview page.
+
+1. Repeat this process until you have created all six roles.
 
 !!! note
-   The roles above do not yet have any permissions assigned to them. The succeeding lessons will cover assigning permissions to roles.
+   The roles above do not yet have any permissions assigned to them. The following lessons will cover assigning permissions to roles.
 
-## Creating Clarity User Groups
+## Exercise Three: Creating Clarity User Groups
 
-Now let's make a Liferay user group for the marketing department. Follow the steps below to create these user groups:
+Now let's make a Liferay user group for the marketing department.
 
-1. Open the applications menu and navigate to _Control Panel_ &rarr; _Users Groups_.
+| Group Name | Description                                    |
+|:-----------|:-----------------------------------------------|
+| Marketing  | Members of the Marketing department at Clarity |
+| IT         | Members of the IT department at Clarity        |
 
-1. Click _New_ to create a new user group.
+Follow these steps to create each user group:
+
+1. Open the _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)), go to the _Control Panel_ tab, and click _Users Groups_.
+
+1. Click _New_.
 
 1. Input the user group name (e.g. `Marketing`).
 
-1. Input the user group description (e.g. `Members of the IT department at Clarity`).
+1. Input the user group description (e.g. `Members of the Marketing department at Clarity`).
 
-1. Click _Save_. 
+1. Click _Save_.
+
+1. Repeat this process until you have created both user groups.
+
+## Conclusion
 
 Now that we have these users, roles, and user groups set up, let's move on to how the different user management tools can be used in Clarity's use case.
 

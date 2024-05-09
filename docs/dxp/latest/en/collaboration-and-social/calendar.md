@@ -17,32 +17,32 @@ taxonomy-category-names:
 
 The Calendar widget stores and shares scheduled events. It's a personal planner for individual users, a shared calendar for an entire site, or both at the same time.
 
-In addition to regular calendar features (i.e., multiple calendars within a site or user profile, shared calendars, email reminders, etc.) Liferay's Calendar offers:
+In addition to regular calendar features (i.e., multiple calendars within a site or user profile, shared calendars, email reminders, etc.) Liferay's Calendar offers
 
 * Event Management: [Create, edit, and delete events](./calendar/using-the-calendar-widget.md) directly from the calendar interface.
 
-   ![Create events using the Calendar widget.](./calendar/images/01.png)
+  ![Create events using the Calendar widget.](./calendar/images/01.png)
 
-* Drag-and-Drop Functionality: Use the drag-and-drop functionality to reschedule events by simply moving them to a different date or time slot.
+* Drag-and-Drop Functionality: use the drag-and-drop functionality to reschedule events by moving them to a different date or time slot.
 
-* Social Activities: Automatically generate [social activity notifications](./social-tools/using-the-activities-widget.md) when calendar events are added or updated.
+* Social Activities: automatically generate [social activity notifications](./social-tools/using-the-activities-widget.md) when calendar events are added or updated.
 
-   ![The Activities widget integrates with the Calendar widget and displays changes to the calendar.](./calendar/images/02.png)
+  ![The Activities widget integrates with the Calendar widget and displays calendar changes.](./calendar/images/02.png)
 
-* User [Permissions](./calendar/using-the-calendar-widget.md#calendar-permissions-reference): Manage who can view, create, edit, or delete events, ensuring data security and privacy.
+* User [Permissions](./calendar/using-the-calendar-widget.md#calendar-permissions-reference): manage who can view, create, edit, or delete events, ensuring data security and privacy.
 
-* [Time Zone](./calendar/configuring-the-calendar-widget.md) Support: Automatically adjust event times based on the user's time zone settings to avoid confusion in global teams.
+* [Time Zone](./calendar/configuring-the-calendar-widget.md) Support: automatically adjust event times based on the user's time zone settings to avoid confusion in global teams.
 
-* Responsive Design: Ensure the calendar widget is accessible and functional across various devices and screen sizes.
+* Responsive Design: ensure the calendar widget is accessible and functional across various devices and screen sizes.
 
-* Localization: Localize the event's title and description in several languages.
+* Localization: localize the event's title and description in several languages.
 
-   ![Localize the title and description for your event.](./calendar/images/03.png)
+  ![Localize the title and description for your event.](./calendar/images/03.png)
 
-* Export and Import: [Export and import](./calendar/exporting-importing-calendar-data.md) calendar data.
+* Export and Import [Export and import](./calendar/exporting-importing-calendar-data.md) calendar data.
 
-* Integration: Integrate with other Liferay features and applications, enhancing overall collaboration and productivity within the platform (e.g., you can [map calendar event fields to display page templates](./calendar/mapping-calendar-event-fields-to-display-page-templates.md)).
+* Integration: integrate with other Liferay features and applications, enhancing overall collaboration and productivity within the platform (e.g., you can [map calendar event fields to display page templates](./calendar/mapping-calendar-event-fields-to-display-page-templates.md)).
 
-   ![Map calendar event fields to display page templates.](./calendar/images/04.png)
+  ![Map calendar event fields to display page templates.](./calendar/images/04.png)
 
-Ultimately, the Calendar widget provides a robust solution for managing and sharing scheduled events within your organization. Start by [Using the Calendar Widget](./calendar/using-the-calendar-widget.md) and check all of its available features.
+Ultimately, the Calendar widget provides a robust solution for managing and sharing scheduled events within your organization. Start by [Using the Calendar Widget](./calendar/using-the-calendar-widget.md) and check out all of its available features.

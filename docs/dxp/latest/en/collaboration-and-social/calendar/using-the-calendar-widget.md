@@ -136,7 +136,7 @@ Use calendar resources, to invite shared resources to your events so those impor
 
 1. Fill in the *New Resource* form. Enter a name, give it a description, and choose whether to set it as active.
 
-   ![Resources are accessed from the tab menu at the top of the widget.](./using-the-calendar-widget/images/11.png)
+   ![Access resources from the tab menu at the top of the widget.](./using-the-calendar-widget/images/11.png)
 
 1. You can also [tag it and assign it to categories](../../content-authoring-and-management/tags-and-categories.md).
 

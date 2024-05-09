@@ -30,17 +30,21 @@ While building this solution, we'll follow these Clarity personas as they contri
 
 ### IT Personas
 
-**IT Manager**: Ensures efficient operation of IT infrastructure, aligning technology strategy with organizational goals.
+![We'll follow these Clarity IT personas.](./building-clarity-on-liferay/images/06.png)
 
-**Web Developer**: Designs, builds, and maintains Clarity's website, ensuring functionality, security, and performance.
+**IT Manager, Ian Miller**: Ensures efficient operation of IT infrastructure, aligning technology strategy with organizational goals.
+
+**Web Developer, Walter Douglas**: Designs, builds, and maintains Clarity's website, ensuring functionality, security, and performance.
 
 ### Business Personas
 
-**Marketing Content Manager**: Develops and executes content strategies to attract and engage visitors, driving brand awareness and conversions.
+![We'll follow these Clarity Business personas.](./building-clarity-on-liferay/images/07.png)
 
-**Marketing Content Contributor**: Creates high-quality content like blog posts and product descriptions, supporting marketing initiatives.
+**Marketing Manager, Clara Murphy**: Develops and executes content strategies to attract and engage visitors, driving brand awareness and conversions.
 
-**HR Content Contributor**: Develops and maintains career page content and job descriptions, attracting and informing potential candidates.
+**Marketing Specialist, Christian Carter**: Creates high-quality content like blog posts and product descriptions, supporting marketing initiatives.
+
+**HR Specialist, Harper Roberts**: Develops and maintains career page content and job descriptions, attracting and informing potential candidates.
 
 ## Conclusion
 

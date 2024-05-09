@@ -11,7 +11,7 @@ taxonomy-category-names:
 
 {bdg-link-primary}`[Beta Feature](../../../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
 
-With Liferay, you can create objects that integrate with [custom Salesforce objects](https://help.salesforce.com/s/) and use Salesforce as an external storage system. Once integrated, the Liferay object's data is only stored in Salesforce and both systems are automatically updated whenever users add, update, or delete entries in either context.
+With Liferay, you can create objects that integrate with [Salesforce objects](https://help.salesforce.com/s/) and use Salesforce as an external storage system. Once integrated, the Liferay object's data is only stored in Salesforce and both systems are automatically updated whenever users add, update, or delete entries in either context.
 
 Using this integration requires a standard or custom Salesforce object, as well as a Salesforce connected app for Liferay with OAuth enabled. See [Preparing Salesforce](#preparing-salesforce) for more information.
 

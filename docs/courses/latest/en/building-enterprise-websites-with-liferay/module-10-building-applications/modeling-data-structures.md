@@ -3,6 +3,8 @@ uuid: 3cc6f0a9-a820-42f1-94ca-9227c53c98ed
 ---
 # Modeling Data Structures
 
+<!--TASK: Fix image numbering-->
+
 The first step in building an application is to model its data structures. This requires some brainstorming about the types of data entities you want to store, as well as their attributes and relationships. This is accomplished using [Liferay Objects](https://learn.liferay.com/web/guest/w/dxp/building-applications/objects), which is the foundation of Liferay's low-code application development. With it, you can define database tables, implement business logic, integrate with external services, and more, all without writing code.
 
 When created, each object is fully integrated with Liferay's core frameworks, providing a unified experience across the platform and enabling you to leverage Liferay's out-of-the-box capabilities. This means developers can leverage Liferay's built-in functionalities like workflows, notifications, permissions, Headless APIs, and data mapping without the need for additional coding. This significantly reduces development time and effort, allowing them to focus on building unique application features and functionalities.
@@ -59,7 +61,23 @@ The second object needed for this use case is the Application Evaluation. Clarit
 
 ![Both the Distributor Application and Application Evaluation objects store data related to the applicant.](./modeling-data-structures/images/03.png)
 
-### Exercise One: Adding Fields to the Distributor Applications Object
+## Defining Relationships
+
+Defining relationships is key to creating data models that accurately represent real-world entities. They determine how data is connected in your application and capture entity interactions and dependencies. You can define one-to-many and many-to-many relationships between definitions. These relationships add fields or tables to each object for relating their entries, enabling you to access entry data in different object contexts.
+
+One-to-many relationships enable users to relate a single entity of type A to multiple entities of type B. For example, if you were to model a university organization, the University object definition would have a one-to-many relationship with the Student object definition. Each university has multiple students, while each student only has one university.
+
+On the other hand, many-to-many relationships enable users to relate multiple entities of type A to multiples entities of type B, and vice versa. In the university example, you could implement a many-to-many relationship between the Student object and the Professor object, because each student can have multiple professors and each professor can have multiple students.
+
+For Clarity's solution, a single distributor application can have multiple evaluations related to it. But each evaluation can only relate to one application. So they have added a one-to-many relationship between the Distributor Application (one) and Application Evaluation (many) objects.
+
+![A single Distributor Application entry is related to many Application Evaluation entities.](./modeling-data-structures/images/08.png)
+
+<!--TODO: Image above should probably have multiple Application Evaluations to better visualize the one-to-many relationship-->
+
+With the relationship between the object definitions, you can relate individual entries to one another through the Liferay UI or relationship REST APIs.
+
+## Exercise One: Adding Fields to the Distributor Applications Object
 
 <!--TASK: Update steps to use the model builder view.-->
 
@@ -103,7 +121,7 @@ To add the field to the object's layout,
 
 Now the new field appears in the layout when creating entries.
 
-### Exercise Two: Adding Picklist Items
+## Exercise Two: Adding Picklist Items
 
 As mentioned previously, Clarity uses picklists to create predefined options for the applicants to choose from. Currently, the Product Types picklist is empty and does not include any options.
 
@@ -140,22 +158,6 @@ To fix this,
 Once saved, the Distributor Application's `Products of Interest` custom field is automatically updated with the values, since it's related to this picklist. Applicants are now able to select their desired products.
 
 <!--TASK: Improve; this is the first time we've mentioned Products of Interest.-->
-
-## Defining Relationships
-
-Defining relationships is key to creating data models that accurately represent real-world entities. They determine how data is connected in your application and capture entity interactions and dependencies. You can define one-to-many and many-to-many relationships between definitions. These relationships add fields or tables to each object for relating their entries, enabling you to access entry data in different object contexts.
-
-One-to-many relationships enable users to relate a single entity of type A to multiple entities of type B. For example, if you were to model a university organization, the University object definition would have a one-to-many relationship with the Student object definition. Each university has multiple students, while each student only has one university.
-
-On the other hand, many-to-many relationships enable users to relate multiple entities of type A to multiples entities of type B, and vice versa. In the university example, you could implement a many-to-many relationship between the Student object and the Professor object, because each student can have multiple professors and each professor can have multiple students.
-
-For Clarity's solution, a single distributor application can have multiple evaluations related to it. But each evaluation can only relate to one application. So they have added a one-to-many relationship between the Distributor Application (one) and Application Evaluation (many) objects.
-
-![A single Distributor Application entry is related to many Application Evaluation entities.](./modeling-data-structures/images/08.png)
-
-<!--TODO: Image above should probably have multiple Application Evaluations to better visualize the one-to-many relationship-->
-
-With the relationship added between the object definitions, you can relate individual entries to one another through the Liferay UI or relationship REST APIs.
 
 ## Conclusion
 

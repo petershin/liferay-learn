@@ -30,7 +30,7 @@ If an order imported from a CSV file or wishlist contains a discontinued product
 ![A new Replacing column shows the discontinued product replaced.](./replacement-products/images/02.png)
 
 !!! note
-    If you use the quick add-to-cart function to add a discontinued SKU to the mini cart, the replacement SKU gets added automatically. See [Adding Discontinued Products to Cart](../../creating-store-content/liferay-commerce-fragments/using-the-mini-cart-fragment.md#adding-the-mini-cart-fragment-to-a-page)
+    If you use the quick add-to-cart function to add a discontinued SKU to the mini cart, the replacement SKU is added automatically. See [Adding Discontinued Products to Cart](../../creating-store-content/liferay-commerce-fragments/using-the-mini-cart-fragment.md#adding-the-mini-cart-fragment-to-a-page)
 
 <!-- TO BE ADDED ONCE FEATURE IS AVAILABLE
 

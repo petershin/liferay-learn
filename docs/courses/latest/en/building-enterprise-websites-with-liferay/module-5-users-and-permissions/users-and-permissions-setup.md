@@ -17,7 +17,7 @@ Each persona has these details:
 
 | Screen Name     | Email                                         | First Name | Last Name | Job Title                  |
 |:----------------|:----------------------------------------------|:-----------|:----------|:---------------------------|
-| christiancarter | `christian.carter@clarityvisionsolutions.com` | Christian  | Carter    | Marketing Specialist       |
+| christiancarter | `christian.carter@clarityvisionsolutions.com` | Christian  | Carter    | Marketing Coordinator       |
 | claramurphy     | `clara.murphy@clarityvisionsolutions.com`     | Clara      | Murphy    | Marketing Manager          |
 | harperroberts   | `harper.roberts@clarityvisionsolutions.com`   | Harper     | Roberts   | Human Resources Specialist |
 | ianmiller       | `ian.miller@clarityvisionsolutions.com`       | Ian        | Miller    | IT Manager                 |
@@ -41,7 +41,7 @@ Follow these steps to create each user account:
 
 1. Input the user's last name (e.g. `Carter`).
 
-1. Input the user's job title (e.g. `Marketing Specialist`).
+1. Input the user's job title (e.g. `Marketing Coordinator`).
 
 1. Click _Save_ and return to the _Users and Organizations_ overview page.
 
@@ -51,6 +51,8 @@ Follow these steps to create each user account:
     The users do not yet have passwords assigned to them.
 
 <!--TASK: Revisit note; add more information-->
+
+<!--TASK: Add user profile pictures for each user. -->
 
 ## Exercise Two: Creating Clarity Roles
 

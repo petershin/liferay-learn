@@ -192,11 +192,11 @@ To deploy any type of client extension *other than microservices* for Liferay Pa
 
 1. Go to your workspace's `client-extensions/` folder and run
 
-    ```bash
-    ../gradlew clean build
-    ```
+   ```bash
+   ../gradlew clean build
+   ```
     
-    The compiled `.zip` files are created in each project's `dist/` folder. To build one project at a time, run the command from the project's folder.
+   The compiled `.zip` files are created in each project's `dist/` folder. To build one project at a time, run the command from the project's folder.
 
 1. Copy the `.zip` file from the desired project's `dist/` folder into your PaaS project repository's `liferay/configs/[ENV]/osgi/client-extensions/` folder.
 

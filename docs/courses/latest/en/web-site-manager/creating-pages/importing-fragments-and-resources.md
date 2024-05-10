@@ -68,4 +68,4 @@ Next: [add the home page](./adding-the-home-page.md) using these fragments.
 
 * [Default Fragments Reference](https://learn.liferay.com/en/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments/default-fragments-reference)
 * [Managing Fragments](https://learn.liferay.com/en/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments/managing-fragments)
-* [Including Default Resources with Fragments](https://learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/including-default-resources-with-fragments.html)
+* [Including Default Resources with Fragments](https://learn.liferay.com/w/dxp/site-building/developer-guide/developing-page-fragments/including-default-resources-with-fragments)

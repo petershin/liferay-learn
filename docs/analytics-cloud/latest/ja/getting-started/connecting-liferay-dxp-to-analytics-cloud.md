@@ -58,7 +58,7 @@ Liferay DXPをAnalytics Cloudに接続するには、以下の前提条件があ
 
    ![Select an existing property or create a new one.](./connecting-liferay-dxp-to-analytics-cloud/images/03.png)
 
-1. プロパティに割り当てるサイトを選択します。 Commerce_トグルを有効にすると、Commerce [チャネルについて](https://learn.liferay.com/commerce/latest/ja/store-management/channels/introduction-to-channels.html) も割り当てられます。
+1. プロパティに割り当てるサイトを選択します。 Commerce_トグルを有効にすると、Commerce [チャネルについて](https://learn.liferay.com/w/commerce/store-management/channels/introduction-to-channels) も割り当てられます。
 
    一度に1つのプロパティにのみ、同じサイトまたはチャンネルを割り当てることができます。 詳細については、 [Scoping Sites and Individual Using Properties](../workspace-settings/scoping-sites-and-individuals-using-properties.md) を参照のこと。
 

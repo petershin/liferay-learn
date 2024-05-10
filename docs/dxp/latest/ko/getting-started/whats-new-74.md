@@ -25,7 +25,7 @@ Liferay DXP 7.4는 기술 사용자와 비기술 사용자 모두가 디지털 �
 
 ### 콘텐츠 성능 도구의 트래픽 확보 채널
 
-[콘텐츠 성능 도구](../content-authoring-and-management/page-performance-and-accessibility/analyze-content-metrics-using-content-performance-tool.md) 의 트래픽 확보 채널은 [애널리틱 클라우드](https://learn.liferay.com/analytics-cloud/latest/ko/index.html) 데이터를 사용하며 자연 검색 및 유료 검색, 소셜 트래픽 및 추천에 대한 측정을 포함합니다. 채널의 세부정보 보기에는 모든 참조 URL과 도메인이 표시됩니다.
+[콘텐츠 성능 도구](../content-authoring-and-management/page-performance-and-accessibility/analyze-content-metrics-using-content-performance-tool.md) 의 트래픽 확보 채널은 [애널리틱 클라우드](https://learn.liferay.com/w/analytics-cloud/index) 데이터를 사용하며 자연 검색 및 유료 검색, 소셜 트래픽 및 추천에 대한 측정을 포함합니다. 채널의 세부정보 보기에는 모든 참조 URL과 도메인이 표시됩니다.
 
 ![Traffic acquisition channels include search, social and referral data.](./whats-new-74/images/09.png)
 

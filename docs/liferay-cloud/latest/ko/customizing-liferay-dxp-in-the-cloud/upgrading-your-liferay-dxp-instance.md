@@ -3,7 +3,7 @@
 Liferay는 보안 및 버그 수정과 향상된 기능을 포함하는 Liferay DXP의 새로운 마이너 및 메이저 버전을 정기적으로 출시합니다. 새로운 주요 Liferay DXP 버전 증분으로 업그레이드하려면 DXP 데이터베이스를 업그레이드해야 합니다.
 
 ```{note}
-생산 중인 대규모 데이터 세트의 경우 원활한 업그레이드를 수행하기 위한 몇 가지 추가 고려 사항이 있습니다. 예를 들어 맞춤 코드 또는 Marketplace 앱이 제대로 작동하려면 추가 업데이트가 필요할 수 있습니다. 코어 업그레이드에 대한 포괄적인 개요는 [업그레이드 기본 사항](https://learn.liferay.com/dxp/latest/ko/installation-and-upgrades/upgrading-liferay/upgrade-basics.html) 를 참조하세요. .
+생산 중인 대규모 데이터 세트의 경우 원활한 업그레이드를 수행하기 위한 몇 가지 추가 고려 사항이 있습니다. 예를 들어 맞춤 코드 또는 Marketplace 앱이 제대로 작동하려면 추가 업데이트가 필요할 수 있습니다. 코어 업그레이드에 대한 포괄적인 개요는 [업그레이드 기본 사항](https://learn.liferay.com/w/dxp/installation-and-upgrades/upgrading-liferay/upgrade-basics) 를 참조하세요. .
 ```
 
 ```{note}
@@ -110,7 +110,7 @@ Liferay Cloud에서 환경을 업그레이드하려면 업그레이드된 데이
 DXP 번들은 데이터 업그레이드에 사용되는 업그레이드 도구를 제공합니다. 이 도구는 번들 `db_upgrade.sh`에 포함된 스크립트를 통해 호출됩니다.
 
 ```{note}
-데이터베이스 업그레이드 도구는 실행할 때 더 많은 유연성을 위해 미리 구성할 수 있습니다. [데이터베이스 업그레이드 도구 사용](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/upgrading-liferay/upgrade-basics/using-the-database-upgrade-tool.html 참조) ) 고급 사용에 대한 자세한 내용을 보려면
+데이터베이스 업그레이드 도구는 실행할 때 더 많은 유연성을 위해 미리 구성할 수 있습니다. [데이터베이스 업그레이드 도구 사용](https://learn.liferay.com/w/dxp/installation-and-upgrades/upgrading-liferay/upgrade-basics/using-the-database-upgrade-tool 참조) ) 고급 사용에 대한 자세한 내용을 보려면
 ```
 
 `LIFERAY_HOME/tools/portal-tools-db-upgrade-client` 폴더 내에서 명령 프롬프트를 엽니다. 그런 다음 다음 명령을 실행합니다.
@@ -263,6 +263,6 @@ Upgrading the liferay service requires a database upgrade and restoring the life
 
 DXP 업그레이드에 대해 자세히 알아보십시오.
 
-* [업그레이드 기본 사항](https://learn.liferay.com/dxp/latest/ko/installation-and-upgrades/upgrading-liferay/upgrade-basics.html)
+* [업그레이드 기본 사항](https://learn.liferay.com/w/dxp/installation-and-upgrades/upgrading-liferay/upgrade-basics)
 * [DXP 인스턴스를 새 마이너 버전으로 업데이트](./updating-your-dxp-instance-to-a-new-minor-version.md)
-* [데이터베이스 업그레이드 도구 사용](https://learn.liferay.com/dxp/latest/ko/installation-and-upgrades/upgrading-liferay/upgrade-basics/using-the-database-upgrade-tool.html)
+* [데이터베이스 업그레이드 도구 사용](https://learn.liferay.com/w/dxp/installation-and-upgrades/upgrading-liferay/upgrade-basics/using-the-database-upgrade-tool)

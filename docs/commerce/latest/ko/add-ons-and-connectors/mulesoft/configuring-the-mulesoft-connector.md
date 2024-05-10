@@ -6,7 +6,7 @@ MuleSoft에 대한 Liferay의 커넥터는 Liferay의 API를 설명하는 OpenAP
 http://[host]:[port]/o/[headless-api-app-name]/[version]/openapi.json
 ```
 
-이러한 문서는 배포된 RESTful 웹 서비스를 기반으로 하므로 API에 대한 가장 정확한 설명입니다. Liferay API [API 사용](https://learn.liferay.com/dxp/latest/ko/headless-delivery/consuming-apis.html) 에 대해 자세히 알아볼 수 있습니다.
+이러한 문서는 배포된 RESTful 웹 서비스를 기반으로 하므로 API에 대한 가장 정확한 설명입니다. Liferay API [API 사용](https://learn.liferay.com/w/dxp/headless-delivery/consuming-apis) 에 대해 자세히 알아볼 수 있습니다.
 
 OpenAPI 문서 엔드포인트를 지정하면 커넥터가 OpenAPI 문서에 정의된 경로, 경로/쿼리 매개변수 및 엔티티 메타데이터를 자동으로 구성합니다. 커넥터는 Liferay 표준을 따르고 모든 Liferay API를 지원하는 모든 OpenAPI 3.0 문서와 함께 작동합니다.
 
@@ -40,15 +40,15 @@ OpenAPI 문서 엔드포인트를 지정하면 커넥터가 OpenAPI 문서에 �
 
 **OAuth2** : 클라이언트 키와 클라이언트 시크릿을 입력합니다.
 
-프로덕션의 경우 [OAuth 2.0 사용](https://learn.liferay.com/dxp/latest/ko/headless-delivery/using-oauth2.html) 을 통해 사용자를 인증해야 합니다. 기본 인증은 기본 테스트 및 데모용으로만 제공됩니다.
+프로덕션의 경우 [OAuth 2.0 사용](https://learn.liferay.com/w/dxp/headless-delivery/using-oauth2) 을 통해 사용자를 인증해야 합니다. 기본 인증은 기본 테스트 및 데모용으로만 제공됩니다.
 
 Liferay에서 OAuth2를 설정할 때 Client Profile에 대해 **Headless Server** 선택합니다. Liferay는 커넥터에서 사용할 클라이언트 ID(소비자 키) 및 클라이언트 비밀(소비자 비밀)을 생성합니다.
 
 ![OAuth2 구성에서 클라이언트 프로필을 헤드리스 서버로 설정합니다.](./configuring-the-mulesoft-connector/images/02.png)
 
-OAuth2 인증으로 엔드포인트를 사용하려면 필요한 인증 옵션으로 [OAuth 2 범위](https://learn.liferay.com/dxp/latest/ko/headless-delivery/using-oauth2/oauth2-scopes.html) 도 정의해야 합니다(예: `every`, `everything.write`또는 `every.read`).
+OAuth2 인증으로 엔드포인트를 사용하려면 필요한 인증 옵션으로 [OAuth 2 범위](https://learn.liferay.com/w/dxp/headless-delivery/using-oauth2/oauth2-scopes) 도 정의해야 합니다(예: `every`, `everything.write`또는 `every.read`).
 
-자세한 설정 지침은 [OAuth2 애플리케이션 생성](https://learn.liferay.com/dxp/latest/ko/headless-delivery/using-oauth2/creating-oauth2-applications.html) 참조하고, OAuth2를 사용하는 샘플 React 애플리케이션은 [OAuth2를 사용하여 사용자 인증](https://learn.liferay.com/dxp/latest/ko/headless-delivery/using-oauth2/using-oauth2-to-authorize-users.html) 참조하세요.
+자세한 설정 지침은 [OAuth2 애플리케이션 생성](https://learn.liferay.com/w/dxp/headless-delivery/using-oauth2/creating-oauth2-applications) 참조하고, OAuth2를 사용하는 샘플 React 애플리케이션은 [OAuth2를 사용하여 사용자 인증](https://learn.liferay.com/w/dxp/headless-delivery/using-oauth2/using-oauth2-to-authorize-users) 참조하세요.
 
 ### OpenAPI 문서 엔드포인트 지정
 
@@ -85,5 +85,5 @@ XML 구성을 사용하여 이 작업을 수행할 수도 있습니다. `Liferay
 ## 관련 주제
 
 * [노새 흐름 설계](./designing-mule-flows.md)
-* [API 사용](https://learn.liferay.com/dxp/latest/ko/headless-delivery/consuming-apis.html)
-* [OAuth 2.0 사용](https://learn.liferay.com/dxp/latest/ko/headless-delivery/using-oauth2.html)
+* [API 사용](https://learn.liferay.com/w/dxp/headless-delivery/consuming-apis)
+* [OAuth 2.0 사용](https://learn.liferay.com/w/dxp/headless-delivery/using-oauth2)

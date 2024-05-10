@@ -86,7 +86,7 @@ Liferay DXP/Portal 일반 가용성(GA) 릴리스는 소스 코드에서 빌드�
     rootDir="data/document_library"
     ```
 
-1. [커머스](https://learn.liferay.com/commerce/latest/ko/index.html) 을 사용 중이고 릴리스 정보에 Commerce용 데이터베이스 업그레이드가 언급되어 있는 경우 업그레이드를 준비하십시오. 자세한 내용은 [Liferay Commerce 업그레이드](https://learn.liferay.com/commerce/latest/ko/installation-and-upgrades/upgrading-liferay-commerce.html) 업그레이드를 참조하십시오.
+1. [커머스](https://learn.liferay.com/w/commerce/index) 을 사용 중이고 릴리스 정보에 Commerce용 데이터베이스 업그레이드가 언급되어 있는 경우 업그레이드를 준비하십시오. 자세한 내용은 [Liferay Commerce 업그레이드](https://learn.liferay.com/w/commerce/installation-and-upgrades/upgrading-liferay-commerce) 업그레이드를 참조하십시오.
 
 1. 애플리케이션 서버를 종료하십시오.
 

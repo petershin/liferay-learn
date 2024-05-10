@@ -159,5 +159,5 @@ To add a folder:
 ## Related Topics
 
 * [Creating SKUs for Product Variants](./creating-skus-for-product-variants.md)
-* [Adding a Page to a Site](https://learn.liferay.com/dxp/latest/en/site-building/creating-pages/adding-pages/adding-a-page-to-a-site.html)
-* [Adding Widgets to a Page](https://learn.liferay.com/dxp/latest/en/site-building/creating-pages/using-widget-pages/adding-widgets-to-a-page.html)
+* [Adding a Page to a Site](https://learn.liferay.com/w/dxp/site-building/creating-pages/adding-pages/adding-a-page-to-a-site)
+* [Adding Widgets to a Page](https://learn.liferay.com/w/dxp/site-building/creating-pages/using-widget-pages/adding-widgets-to-a-page)

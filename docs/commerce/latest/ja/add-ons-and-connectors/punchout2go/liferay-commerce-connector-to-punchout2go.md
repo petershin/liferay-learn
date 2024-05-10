@@ -86,7 +86,7 @@ PunchOut2Goコネクターは、[チャネル](../../store-management/channels/i
 
 ## パンチアウト購入者ロールの作成
 
-ベストプラクティスとして、ユーザーはパンチアウトを使用するベンダー向けにロールを作成する必要があります。 コマースロールの詳細は、 [Commerce Roles](../../users-and-accounts/roles-and-permissions/commerce-roles-reference.md)を参照してください。 Liferay DXPのロールと権限の詳細は、 [ロールと権限について](https://learn.liferay.com/dxp/latest/ja/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.html) を参照してください。
+ベストプラクティスとして、ユーザーはパンチアウトを使用するベンダー向けにロールを作成する必要があります。 コマースロールの詳細は、 [Commerce Roles](../../users-and-accounts/roles-and-permissions/commerce-roles-reference.md)を参照してください。 Liferay DXPのロールと権限の詳細は、 [ロールと権限について](https://learn.liferay.com/w/dxp/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions) を参照してください。
 
 1. ［**コントロールパネル**］ → ［**ユーザー**］ → ［**ロール**］へ移動します。
 1. ［**サイトロール**］ タブをクリックします。

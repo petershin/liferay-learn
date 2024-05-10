@@ -3,7 +3,7 @@
 다른 서비스와 마찬가지로 사용자 지정 추가 항목을 배포하려면 Git 저장소의 적절한 사이트
 에 구성이나 파일을 추가해야 합니다. 그러나 Liferay 서비스 배포는 다른 서비스 배포와 약간 다릅니다.
 
-Liferay 서비스는 [Liferay 작업 공간이란 무엇입니까?](https://learn.liferay.com/dxp/latest/ko/building-applications/tooling/liferay-workspace/what-is-liferay-workspace.html) 활용하여 [배포 가능한 파일](#deploying-themes-portlets-and-osgi-modules) , [소스 코드](#building-and-deploying-source-code) 등을 추가할 수 있는 더 많은 옵션을 제공합니다. 이는 [CI 빌드](../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md) 에 쉽게 포함되지만 [CLI 도구](../reference/command-line-tool.md) 을 사용하는 경우 Liferay 서비스를 위해 특별히 [추가 단계](#cli-tool-deployment) 필요합니다.
+Liferay 서비스는 [Liferay 작업 공간이란 무엇입니까?](https://learn.liferay.com/w/dxp/building-applications/tooling/liferay-workspace/what-is-liferay-workspace) 활용하여 [배포 가능한 파일](#deploying-themes-portlets-and-osgi-modules) , [소스 코드](#building-and-deploying-source-code) 등을 추가할 수 있는 더 많은 옵션을 제공합니다. 이는 [CI 빌드](../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md) 에 쉽게 포함되지만 [CLI 도구](../reference/command-line-tool.md) 을 사용하는 경우 Liferay 서비스를 위해 특별히 [추가 단계](#cli-tool-deployment) 필요합니다.
 
 ## Liferay DXP Docker 이미지 정의
 
@@ -79,7 +79,7 @@ CI 빌드는 다음 폴더 내에서 소스 코드를 컴파일합니다.
 핫픽스를 적용하려면 Liferay DXP 서비스 디렉터리 내의 `configs/{ENV}/patching/` 폴더에 핫픽스 ZIP 파일을 추가하세요. 이 변경 사항을 배포하면 Liferay DXP 인스턴스에 핫픽스가 적용됩니다.
 
 ```{note}
-대신 Liferay DXP의 새로운 부 버전(예: 새로운 [패치 유형 이해](https://learn.liferay.com/dxp/latest/ko/installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier/understanding-patch-types-for-dxp-7-3-and-earlier.html#service-packs) )으로 업데이트하려면 [DXP 인스턴스를 새로운 부 버전으로 업데이트](./updating-your-dxp-instance-to-a-new-minor-version.md) 참조하세요.
+대신 Liferay DXP의 새로운 부 버전(예: 새로운 [패치 유형 이해](https://learn.liferay.com/w/dxp/installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier/understanding-patch-types-for-dxp-7-3-and-earlier#service-packs) )으로 업데이트하려면 [DXP 인스턴스를 새로운 부 버전으로 업데이트](./updating-your-dxp-instance-to-a-new-minor-version.md) 참조하세요.
 ```
 
 예를 들어 다음과 같은 구조를 사용하여 개발 환경에 핫픽스를 배포할 수 있습니다.

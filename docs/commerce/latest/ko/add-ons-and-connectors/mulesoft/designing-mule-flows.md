@@ -43,7 +43,7 @@
 | 매개변수 이름 | 유형 | 묘사                                                                                                                                                            | 요구하는 |
 |:------- |:-- |:------------------------------------------------------------------------------------------------------------------------------------------------------------- |:---- |
 | 클래스 이름  | 끈  | 내보낸 엔티티의 클래스 이름                                                                                                                                               | 그렇다  |
-| 사이트 ID  | 끈  | [REST 서비스 사용](https://learn.liferay.com/dxp/latest/ko/headless-delivery/consuming-apis/consuming-rest-services.html#identify-the-site-containing-the-data) 쿼리 매개변수 | 부정   |
+| 사이트 ID  | 끈  | [REST 서비스 사용](https://learn.liferay.com/w/dxp/headless-delivery/consuming-apis/consuming-rest-services#identify-the-site-containing-the-data) 쿼리 매개변수 | 부정   |
 | 필드 이름   | 끈  | 내보낸 엔터티 필드의 쉼표로 구분된 목록                                                                                                                                        | 부정   |
 
 이 흐름을 실행하면 다른 애플리케이션으로 변환 및 로드할 준비가 된 JSON 배열이 생성됩니다.

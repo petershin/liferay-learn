@@ -21,7 +21,7 @@ The *Estimated Time to Declare Winner* provides an estimation of the test durati
 
 After you create the test, review the test status by clicking *A/B Testing* (![A/B Test icon](../../../images/icon-ab-testing.png)).
 
-Liferay DXP only shows your test's status and the winner when the test finishes. You can manage the other aspects of your A/B Test in Analytics Cloud. For more information, see [A/B Testing](https://learn.liferay.com/analytics-cloud/latest/en/optimization/a-b-testing.html) in the Analytics Cloud documentation.
+Liferay DXP only shows your test's status and the winner when the test finishes. You can manage the other aspects of your A/B Test in Analytics Cloud. For more information, see [A/B Testing](https://learn.liferay.com/w/analytics-cloud/optimization/a-b-testing) in the Analytics Cloud documentation.
 
 When the A/B Test finishes, you can review the test results and publish the preferred variant. For more information, read [Reviewing A/B Test Results and Publishing Test Variants](./reviewing-ab-test-results-and-publishing-test-variants.md).
 

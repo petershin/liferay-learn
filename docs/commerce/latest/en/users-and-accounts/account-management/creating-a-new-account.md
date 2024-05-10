@@ -13,7 +13,7 @@ taxonomy-category-names:
 There are two ways to create an account: 1) using the _Account Management_ widget and 2) through the _Control Panel_. Access to the _Control Panel_ is typically restricted to those with administrative permissions for the store or installation.
 
 ```{important}
-Starting from DXP 7.4, the Account Management Widget is a part of DXP. See [Account Management Widget](https://learn.liferay.com/dxp/latest/en/users-and-permissions/accounts/account-management-widget.html) for more information. 
+Starting from DXP 7.4, the Account Management Widget is a part of DXP. See [Account Management Widget](https://learn.liferay.com/w/dxp/users-and-permissions/accounts/account-management-widget) for more information. 
 ```
 
 ## Using the Account Management Widget

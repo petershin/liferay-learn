@@ -17,7 +17,7 @@ Individual product view permissions are managed by modifying the channels that t
 
 ## Adding Catalog Management Permissions to an Existing Role
 
-Get started by creating a new custom role or by modifying an existing role to manage Catalogs and Products. This Role will can be configured to have minimum access to system wide functions. To learn more about defining a user permissions, see [Defining Role Permissions](https://learn.liferay.com/dxp/latest/en/users-and-permissions/roles-and-permissions/defining-role-permissions.html).
+Get started by creating a new custom role or by modifying an existing role to manage Catalogs and Products. This Role will can be configured to have minimum access to system wide functions. To learn more about defining a user permissions, see [Defining Role Permissions](https://learn.liferay.com/w/dxp/users-and-permissions/roles-and-permissions/defining-role-permissions).
 
 To define catalog management permissions for an existing role:
 
@@ -66,5 +66,5 @@ The catalog's permissions are now configured.
 
 ## Related Topics
 
-* [Understanding Roles and Permissions](https://learn.liferay.com/dxp/latest/en/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.html)
+* [Understanding Roles and Permissions](https://learn.liferay.com/w/dxp/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions)
 * [Configuring Product Visibility Using Channels](../../store-management/channels/configuring-product-visibility-using-channels.md)

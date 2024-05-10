@@ -14,7 +14,7 @@
 
 데이터베이스가 MySQL 5.7과 호환되는지 확인하십시오. [DBeaver](https://dbeaver.io/) 과 같은 도구를 사용하여 다른 데이터베이스 형식을 MySQL로 변환할 수 있습니다.
 
-데이터 무결성을 보장하기 위해 변환 전후에 데이터베이스 관리자와 조정하십시오. 이전에 [데이터베이스 구성](https://learn.liferay.com/dxp/latest/ko/installation-and-upgrades/installing-liferay/configuring-a-database.html) 하여 변환된 데이터베이스를 테스트합니다. 진행.
+데이터 무결성을 보장하기 위해 변환 전후에 데이터베이스 관리자와 조정하십시오. 이전에 [데이터베이스 구성](https://learn.liferay.com/w/dxp/installation-and-upgrades/installing-liferay/configuring-a-database) 하여 변환된 데이터베이스를 테스트합니다. 진행.
 
 ### 올바른 테이블 대소문자 확인
 
@@ -66,7 +66,7 @@ mysqldump -u##### -p##### --databases --add-drop-database lportal > database.sql
 [파일 스토리지](https://learn.liferay.com/ko/w/dxp/system-administration/file-storage) 는 더 쉽게 대규모로 확장되는 폴더 구조를 사용합니다. 데이터 세트. 장기적으로 문서 라이브러리에 더 많은 파일을 수용하려면 고급 파일 시스템 저장소로 마이그레이션하는 것이 좋으며 모든 프로덕션 환경에서 **필수**입니다.
 ```
 
-문서 라이브러리를 마이그레이션하는 방법에 대한 단계는 [파일 저장소 마이그레이션](https://learn.liferay.com/dxp/latest/ko/system-administration/file-storage/file-store-migration.html) 참조하십시오.
+문서 라이브러리를 마이그레이션하는 방법에 대한 단계는 [파일 저장소 마이그레이션](https://learn.liferay.com/w/dxp/system-administration/file-storage/file-store-migration) 참조하십시오.
 
 ### 변경 사항으로 Jenkins 빌드 생성
 

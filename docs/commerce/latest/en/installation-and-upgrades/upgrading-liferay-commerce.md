@@ -18,7 +18,7 @@ Starting with Liferay Commerce 3.0, Commerce is now bundled with Liferay DXP. To
 After upgrading to 7.4, do *not* deploy the Commerce `LPKG` again. The Commerce 4.0 modules are bundled with 7.4. Deploying the `LPKG` causes conflicts.
 ```
 
-To learn more about the DXP upgrade process, see [Upgrade Basics](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/upgrading-liferay/upgrade-basics.html). Once DXP is upgraded to 7.4, execute a reindex.
+To learn more about the DXP upgrade process, see [Upgrade Basics](https://learn.liferay.com/w/dxp/installation-and-upgrades/upgrading-liferay/upgrade-basics). Once DXP is upgraded to 7.4, execute a reindex.
 
 ### Prerequisite for Upgrading to Liferay Commerce 4.0
 
@@ -68,7 +68,7 @@ To upgrade Liferay Commerce to 2.1.x/2.2.x, you must apply the appropriate DXP f
 Upgrading from 1.1.x to 2.1.x does **not** require an incremental upgrade to 2.0.x.
 ```
 
-For instance, if upgrading to Liferay Commerce 2.0.7 - upgrade Liferay DXP 7.1 to fix pack 16 or above. If you are using Liferay DXP 7.2, you must apply fix pack 2 or 3. To learn about upgrading DXP, see [Upgrade Basics](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/upgrading-liferay/upgrade-basics.html). See the table below to understand the upgrade paths. 
+For instance, if upgrading to Liferay Commerce 2.0.7 - upgrade Liferay DXP 7.1 to fix pack 16 or above. If you are using Liferay DXP 7.2, you must apply fix pack 2 or 3. To learn about upgrading DXP, see [Upgrade Basics](https://learn.liferay.com/w/dxp/installation-and-upgrades/upgrading-liferay/upgrade-basics). See the table below to understand the upgrade paths. 
 
 | Upgrading to           | Required Fix Pack Version             |
 | :--------------------- | :------------------------------------ |
@@ -117,7 +117,7 @@ Once you're running the appropriate fix pack of DXP 7.1/7.2, follow these steps 
     * Commerce Enterprise is available from [Help Center](https://customer.liferay.com/downloads?p_p_id=com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_productAssetCategoryId=118190997&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_fileTypeAssetCategoryId=118191001).
     * Commerce Community is available from the [Liferay Commerce Community Download Page](https://www.liferay.com/downloads-community)
 
-1. Deploy the `LPKG` to the `[Liferay Home]/deploy` folder. To learn more about deploying applications to Liferay DXP, see [Installing Apps](https://learn.liferay.com/dxp/latest/en/system-administration/installing-and-managing-apps/installing-apps/installing-apps.html).
+1. Deploy the `LPKG` to the `[Liferay Home]/deploy` folder. To learn more about deploying applications to Liferay DXP, see [Installing Apps](https://learn.liferay.com/w/dxp/system-administration/installing-and-managing-apps/installing-apps/installing-apps).
 
 1. Verify that the messages similar to those shown below appear in the application server console:
 
@@ -137,7 +137,7 @@ Once you're running the appropriate fix pack of DXP 7.1/7.2, follow these steps 
 
 ### Clearing Stale Data and Verifying the Upgrade Process
 
-1. Delete the `[Liferay Home]/osgi/state` folder. To learn more about OSGi folders, see [Installing Apps](https://learn.liferay.com/dxp/latest/en/system-administration/installing-and-managing-apps/installing-apps/installing-apps.html).
+1. Delete the `[Liferay Home]/osgi/state` folder. To learn more about OSGi folders, see [Installing Apps](https://learn.liferay.com/w/dxp/system-administration/installing-and-managing-apps/installing-apps/installing-apps).
 
 1. Start the application server.
 
@@ -186,5 +186,5 @@ Once reindexing is complete, the upgraded Liferay Commerce instance is ready for
 
 ## Related Topics
 
-* [Installing Apps](https://learn.liferay.com/dxp/latest/en/system-administration/installing-and-managing-apps/installing-apps/installing-apps.html)
+* [Installing Apps](https://learn.liferay.com/w/dxp/system-administration/installing-and-managing-apps/installing-apps/installing-apps)
 * [Liferay Commerce Fix Delivery Method](../get-help/commerce-enterprise-support/liferay-commerce-fix-delivery-method.md)

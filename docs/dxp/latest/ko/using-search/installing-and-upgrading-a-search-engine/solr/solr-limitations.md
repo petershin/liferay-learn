@@ -13,7 +13,7 @@ Elasticsearch 관련 API 및 매핑은 Liferay의 검색 기능에서 활용되�
 Liferay의 Solr 통합에는 제한이 있습니다. 다음 기능을 사용하려면 Elasticsearch가 필요합니다.
 
 * [liferay 개체](../../../building-applications/objects.md)
-* [커머스](https://learn.liferay.com/commerce/latest/ko/index.html)
+* [커머스](https://learn.liferay.com/w/commerce/index)
 * [워크플로 측정항목](../../../process-automation/workflow/using-workflows/using-workflow-metrics.md)
 * [맞춤 필터 검색 위젯](../../search-pages-and-widgets/search-results/filtering-search-results.md)
 * [낮은 수준의 검색 옵션 위젯](../../search-pages-and-widgets/search-results/understanding-low-level-search-options.md)

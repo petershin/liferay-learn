@@ -183,7 +183,7 @@ java -classpath .:* OrderTypes_GET_FromInstance
 |:----------- |:-------------------- |
 | `name:desc` | 내림차순으로 `이름` 로 정렬합니다. |
 
-자세한 내용은 [API 쿼리 매개변수](https://learn.liferay.com/dxp/latest/ko/headless-delivery/consuming-apis/api-query-parameters.html) 참조하세요.
+자세한 내용은 [API 쿼리 매개변수](https://learn.liferay.com/w/dxp/headless-delivery/consuming-apis/api-query-parameters) 참조하세요.
 
 ## 주문 유형 가져오기
 
@@ -293,4 +293,4 @@ java -classpath .:* -DorderTypeId=1234 OrderType_DELETE_ById
    :lines: 8-17
 ```
 
-[REST 서비스 사용](https://learn.liferay.com/dxp/latest/ko/headless-delivery/consuming-apis/consuming-rest-services.html) 은 `OrderType` 서비스와 스키마를 보여주고 각 서비스를 테스트하기 위한 인터페이스를 가지고 있습니다.
+[REST 서비스 사용](https://learn.liferay.com/w/dxp/headless-delivery/consuming-apis/consuming-rest-services) 은 `OrderType` 서비스와 스키마를 보여주고 각 서비스를 테스트하기 위한 인터페이스를 가지고 있습니다.

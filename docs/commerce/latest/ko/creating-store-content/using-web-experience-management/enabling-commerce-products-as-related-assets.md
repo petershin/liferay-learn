@@ -53,4 +53,4 @@ Liferay DXP 7.4+는 상거래 제품을 관련 자산으로 지원하지 않습�
 ## 관련 주제
 
 * [콘텐츠 관계 정의](https://help.liferay.com/hc/articles/360028820532-Defining-Content-Relationships)
-* [기본 웹 콘텐츠 기사 추가](https://learn.liferay.com/dxp/latest/ko/content-authoring-and-management/web-content/web-content-articles/adding-a-basic-web-content-article.html)
+* [기본 웹 콘텐츠 기사 추가](https://learn.liferay.com/w/dxp/content-authoring-and-management/web-content/web-content-articles/adding-a-basic-web-content-article)

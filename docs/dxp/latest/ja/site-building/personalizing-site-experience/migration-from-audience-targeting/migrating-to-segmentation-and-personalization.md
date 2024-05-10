@@ -18,7 +18,7 @@ Liferay 7.2からは、セグメンテーションとパーソナライゼーシ
 - ルールを完全に再実装する必要がある場合は、 [「ユーザーセグメントの作成と管理」](../segmentation/creating-and-managing-user-segments.md)の情報に従ってください。
 - Liferay DXP 7.2以降の新しいパーソナライゼーション機能はさまざまなツールを使用するため、 [表示ウィジェットも移行する](./manually-migrating-from-audience-targeting.md#migrating-display-properties) 必要があります。
 
-最後に、オーディエンスターゲティングで行動ベースの機能を移行する必要があります。 Liferay DXP 7.2以降では、動作ベースのルールはLiferay Analytics Cloudを使用して管理されます。 詳細は、 [セグメント](https://learn.liferay.com/analytics-cloud/latest/ja/people/segments/segments.html) を参照してください。
+最後に、オーディエンスターゲティングで行動ベースの機能を移行する必要があります。 Liferay DXP 7.2以降では、動作ベースのルールはLiferay Analytics Cloudを使用して管理されます。 詳細は、 [セグメント](https://learn.liferay.com/w/analytics-cloud/people/segments/segments) を参照してください。
 
 ## 関連情報
 

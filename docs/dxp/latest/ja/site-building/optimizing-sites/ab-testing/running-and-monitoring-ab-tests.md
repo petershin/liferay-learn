@@ -12,7 +12,7 @@ A/Bテストを実行するときに、次のパラメーターを設定でき�
 
 テストを作成したら、 **A/Bテスト**(![A/B Test icon](../../../images/icon-ab-testing.png)) をクリックして、テストステータスを確認します。
 
-Liferay DXP では、テストが終了したときに、テストのステータスと勝者のみが表示されます。 Analytics CloudでA/Bテストの他の側面を管理できます。 詳細については、Analytics Cloud ドキュメントの [A/Bテスト](https://learn.liferay.com/analytics-cloud/latest/ja/optimization/a-b-testing.html) を参照してください。
+Liferay DXP では、テストが終了したときに、テストのステータスと勝者のみが表示されます。 Analytics CloudでA/Bテストの他の側面を管理できます。 詳細については、Analytics Cloud ドキュメントの [A/Bテスト](https://learn.liferay.com/w/analytics-cloud/optimization/a-b-testing) を参照してください。
 
 A/B テストが終了したら、テスト結果を確認し、好みのバリアントを公開することができます。 詳細は、 [A/Bテスト結果のレビューとテストバリアントの公開](./reviewing-ab-test-results-and-publishing-test-variants.md) を参照してください。
 

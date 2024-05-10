@@ -1,6 +1,6 @@
 # 양식
 
-[양식 소개](https://learn.liferay.com/dxp/latest/ko/process-automation/forms/introduction-to-forms.html) 은 기업을 위한 중요한 직접 데이터 수집 도구입니다. 귀하의 웹 양식이 귀중한 정보를 제공하고 있습니까, 아니면 사용자를 외면하고 있습니까? Analytics Cloud는 중요한 통찰력을 제공합니다.
+[양식 소개](https://learn.liferay.com/w/dxp/process-automation/forms/introduction-to-forms) 은 기업을 위한 중요한 직접 데이터 수집 도구입니다. 귀하의 웹 양식이 귀중한 정보를 제공하고 있습니까, 아니면 사용자를 외면하고 있습니까? Analytics Cloud는 중요한 통찰력을 제공합니다.
 
 ![Forms metrics are presented in a table with submission, view, abandonment, and completion time statistics.](forms/images/01.png)
 

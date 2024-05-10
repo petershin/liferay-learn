@@ -40,7 +40,7 @@ visibility:
 
 ## サイトページ
 
-[ページについて](https://learn.liferay.com/dxp/latest/ja/site-building/creating-pages/understanding-pages/understanding-pages.html) Liferay DXP はユーザーにコンテンツやアプリケーションを表示するために使用される主要な方法です。
+[ページについて](https://learn.liferay.com/w/dxp/site-building/creating-pages/understanding-pages/understanding-pages) Liferay DXP はユーザーにコンテンツやアプリケーションを表示するために使用される主要な方法です。
 
 デモを始める前に、ペルソナやユーザージャーニーなど、見込み客に見てもらう内容を紹介する。 より多くの文脈があれば、デモが始まったときに観客は何を見せられるのかをよりよく理解することができる。 そのためのヒントがある：
 
@@ -91,9 +91,9 @@ Liferayアプリケーションを他の言語にローカライズする必要�
 
 ページとその構成方法についての詳しい情報は、このサイトの別の場所で入手できる：
 
-* [コンテントページの使用](https://learn.liferay.com/dxp/latest/ja/site-building/creating-pages/using-content-pages.html)
-* [Content Page Editor UI Reference](https://learn.liferay.com/dxp/latest/ja/site-building/creating-pages/using-content-pages/content-page-editor-ui-reference.html)
-* [フラグメントの使用](https://learn.liferay.com/dxp/latest/ja/site-building/creating-pages/page-fragments-and-widgets/using-fragments.html)
+* [コンテントページの使用](https://learn.liferay.com/w/dxp/site-building/creating-pages/using-content-pages)
+* [Content Page Editor UI Reference](https://learn.liferay.com/w/dxp/site-building/creating-pages/using-content-pages/content-page-editor-ui-reference)
+* [フラグメントの使用](https://learn.liferay.com/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments)
 
 ### その他のトピック
 

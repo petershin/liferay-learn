@@ -5,7 +5,7 @@
 以下のような場合、Liferay Cloud 環境を VPN に接続する必要があります。
 
 * 自社のプロジェクト要件でVPNを使用する場合
-* あなたの環境を [LDAPディレクトリへの接続](https://learn.liferay.com/dxp/latest/ja/users-and-permissions/connecting-to-a-user-directory/connecting-to-an-ldap-directory.html?highlight=ldap) に接続したい。
+* あなたの環境を [LDAPディレクトリへの接続](https://learn.liferay.com/w/dxp/users-and-permissions/connecting-to-a-user-directory/connecting-to-an-ldap-directory?highlight=ldap) に接続したい。
 * 別のディレクトリサーバーに環境を接続したい場合
 * 他のウェブサービスと相互作用するリモートアプリケーションを使用する必要があります
 

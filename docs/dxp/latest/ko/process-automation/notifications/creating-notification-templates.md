@@ -4,7 +4,7 @@
 
 알림 템플릿을 사용하면 Liferay 서비스에 대한 자동화된 이메일 및 사용자 알림을 디자인할 수 있습니다. 각 템플릿은 보낸 사람, 받는 사람 및 메시지 내용을 식별합니다. 템플릿을 디자인하는 동안 지원되는 엔터티를 검색하고 해당 데이터를 이메일에 동적으로 삽입하는 필드 참조를 추가할 수 있습니다.
 
-현재 알림 템플릿은 [개체 작업](../../building-applications/objects/creating-and-managing-objects/actions/defining-object-actions.md) 만 지원합니다. 그러나 상거래 채널에는 채널 이벤트에 대한 알림 템플릿 기능이 내장되어 있습니다. 자세한 내용은 [이메일 보내기](https://learn.liferay.com/commerce/latest/ko/store-management/sending-emails.html) 참조하세요.
+현재 알림 템플릿은 [개체 작업](../../building-applications/objects/creating-and-managing-objects/actions/defining-object-actions.md) 만 지원합니다. 그러나 상거래 채널에는 채널 이벤트에 대한 알림 템플릿 기능이 내장되어 있습니다. 자세한 내용은 [이메일 보내기](https://learn.liferay.com/w/commerce/store-management/sending-emails) 참조하세요.
 
 !!! important
 이메일 알림을 사용하려면 인스턴스에 [메일 서버](../../installation-and-upgrades/setting-up-liferay/configuring-mail.md) 가 구성되어 있어야 합니다. 일단 구성되면 인스턴스 수준에서 추가 [이메일 알림 설정](../../system-administration/configuring-liferay/virtual-instances/email-settings.md) 에 액세스할 수 있습니다.

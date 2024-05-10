@@ -100,7 +100,7 @@ Your Liferay DXP installation must meet the following fix pack minimum requireme
 
 ## Logged In Users Showing Up Anonymous
 
-When [Syncing Contacts](../getting-started/connecting-liferay-dxp-to-analytics-cloud.md), Analytics Cloud depends on user records existing within Liferay DXP. Therefore if you are using [SSO](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/securing-liferay/configuring-sso.html) or [LDAP](https://learn.liferay.com/dxp/latest/en/users-and-permissions/connecting-to-a-user-directory/connecting-to-an-ldap-directory.html), make sure to import or map all your users to Liferay DXP before syncing contacts with Analytics Cloud.
+When [Syncing Contacts](../getting-started/connecting-liferay-dxp-to-analytics-cloud.md), Analytics Cloud depends on user records existing within Liferay DXP. Therefore if you are using [SSO](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/configuring-sso) or [LDAP](https://learn.liferay.com/w/dxp/users-and-permissions/connecting-to-a-user-directory/connecting-to-an-ldap-directory), make sure to import or map all your users to Liferay DXP before syncing contacts with Analytics Cloud.
 
 ## Syncing Users Taking a Long Time
 

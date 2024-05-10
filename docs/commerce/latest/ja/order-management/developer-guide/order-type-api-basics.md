@@ -183,7 +183,7 @@ java -classpath .:* OrderTypes_GET_FromInstance
 |:----------- |:-------------- |
 | `name:desc` | `名前` で降順に並びます。 |
 
-詳しくは、 [APIクエリパラメータ](https://learn.liferay.com/dxp/latest/ja/headless-delivery/consuming-apis/api-query-parameters.html) をご参照ください。
+詳しくは、 [APIクエリパラメータ](https://learn.liferay.com/w/dxp/headless-delivery/consuming-apis/api-query-parameters) をご参照ください。
 
 ## オーダータイプを取得する
 
@@ -293,4 +293,4 @@ java -classpath .:* -DorderTypeId=1234 OrderType_DELETE_ById
    :lines: 8-17
 ```
 
-[RESTサービスの使用](https://learn.liferay.com/dxp/latest/ja/headless-delivery/consuming-apis/consuming-rest-services.html) では、 `OrderType` のサービスとスキーマを表示し、各サービスをテストするためのインターフェイスを備えています。
+[RESTサービスの使用](https://learn.liferay.com/w/dxp/headless-delivery/consuming-apis/consuming-rest-services) では、 `OrderType` のサービスとスキーマを表示し、各サービスをテストするためのインターフェイスを備えています。

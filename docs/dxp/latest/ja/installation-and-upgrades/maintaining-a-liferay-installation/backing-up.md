@@ -11,7 +11,7 @@ Liferay DXPのバックアップ計画を検討するときは、次の領域を
 * [ソースコード](#source-code)
 
 ```{note}
-Liferay Cloudは、ドキュメントライブラリとLiferay DXPデータベースのバックアップの作成と管理プロセスを自動化し、簡素化します。 Liferay CloudはGitベースのDevOpsパイプラインを使用しているため、Liferayのすべての設定も自動的にバックアップされます。 詳しくは、 [バックアップサービスの概要](https://learn.liferay.com/liferay-cloud/latest/ja/platform-services/backup-service/backup-service-overview.html) をご覧ください。
+Liferay Cloudは、ドキュメントライブラリとLiferay DXPデータベースのバックアップの作成と管理プロセスを自動化し、簡素化します。 Liferay CloudはGitベースのDevOpsパイプラインを使用しているため、Liferayのすべての設定も自動的にバックアップされます。 詳しくは、 [バックアップサービスの概要](https://learn.liferay.com/w/liferay-cloud/platform-services/backup-service/backup-service-overview) をご覧ください。
 ```
 
 ## Liferay Home

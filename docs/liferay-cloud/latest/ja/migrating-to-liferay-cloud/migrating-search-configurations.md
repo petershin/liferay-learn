@@ -6,7 +6,7 @@ Webサーバーの構成がLiferay Cloudにデプロイされたので、次の�
 
 オンプレミス環境でElasticsearchを使用していない場合は、Elasticsearchに移行してから進めてください。
 
-Elasticsearchへの移行は、インストールしてからLiferayのインストールと接続することになります。 詳しくは [Elasticsearchを開始する](https://learn.liferay.com/dxp/latest/ja/using-search/installing-and-upgrading-a-search-engine/elasticsearch/getting-started-with-elasticsearch.html) をご覧ください。
+Elasticsearchへの移行は、インストールしてからLiferayのインストールと接続することになります。 詳しくは [Elasticsearchを開始する](https://learn.liferay.com/w/dxp/using-search/installing-and-upgrading-a-search-engine/elasticsearch/getting-started-with-elasticsearch) をご覧ください。
 
 ```{tip}
 Elasticsearchへの移行についてお困りの場合は、 [Liferay Cloudサポート](https://help.liferay.com/hc/en-us) までお問い合わせください。

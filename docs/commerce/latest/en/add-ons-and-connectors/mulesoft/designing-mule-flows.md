@@ -54,7 +54,7 @@ To configure a batch export operation, select the entity you want to export usin
 | Parameter name | Type   | Description                                                                                                                                                               | Required |
 | :------------- | :----- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :------- |
 | Class name     | String | The class name of the exported entity                                                                                                                                     | Yes      |
-| Site ID        | String | The [siteId](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services.html#identify-the-site-containing-the-data) query parameter | No       |
+| Site ID        | String | The [siteId](https://learn.liferay.com/w/dxp/headless-delivery/consuming-apis/consuming-rest-services#identify-the-site-containing-the-data) query parameter | No       |
 | Field names    | String | Comma separated list of exported entity fields                                                                                                                            | No       |
 
 Executing this flow results in a JSON array that is ready for transformation and loading into another application.

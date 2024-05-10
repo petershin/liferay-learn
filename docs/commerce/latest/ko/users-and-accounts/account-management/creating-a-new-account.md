@@ -3,7 +3,7 @@
 계정을 생성하는 방법은 2가지가 있습니다: 1)**계정 관리** 위젯 사용 및 2)**제어판** . **제어판** 에 대한 액세스는 일반적으로 상점 또는 설치에 대한 관리 권한이 있는 사람으로 제한됩니다.
 
 ```{important}
-DXP 7.4부터 계정 관리 위젯은 DXP의 일부입니다. 자세한 내용은 [계정 관리 위젯](https://learn.liferay.com/dxp/latest/ko/users-and-permissions/accounts/account-management-widget.html) 을 참조하세요. 
+DXP 7.4부터 계정 관리 위젯은 DXP의 일부입니다. 자세한 내용은 [계정 관리 위젯](https://learn.liferay.com/w/dxp/users-and-permissions/accounts/account-management-widget) 을 참조하세요. 
 ```
 
 ## 계정 관리 위젯 사용

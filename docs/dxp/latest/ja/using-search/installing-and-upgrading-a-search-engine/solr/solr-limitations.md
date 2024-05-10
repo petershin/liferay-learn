@@ -13,7 +13,7 @@ Liferayの検索機能には、Elasticsearch固有のAPIとマッピングが活
 LiferayのSolr統合には限界があります。 以下の機能を利用するためには、Elasticsearchが必要です。
 
 * [Liferay オブジェクト](../../../building-applications/objects.md)
-* [Commerce](https://learn.liferay.com/commerce/latest/ja/index.html)
+* [Commerce](https://learn.liferay.com/w/commerce/index)
 * [ワークフロー・メトリクス](../../../process-automation/workflow/using-workflows/using-workflow-metrics.md)
 * [カスタムフィルター検索ウィジェット](../../search-pages-and-widgets/search-results/filtering-search-results.md)
 * [低レベル検索オプション・ウィジェット](../../search-pages-and-widgets/search-results/understanding-low-level-search-options.md)

@@ -27,7 +27,7 @@ Liferay는 통합 알림 도구를 제공하므로 플랫폼 이벤트에 대해
 
 이메일 알림을 사용하려면 인스턴스에 대한 메일 서버를 [구성해야](../installation-and-upgrades/setting-up-liferay/configuring-mail.md). 일단 구성되면 인스턴스 수준에서 추가 [이메일 알림 설정](../system-administration/configuring-liferay/virtual-instances/email-settings.md) 에 액세스할 수 있습니다. Liferay 7.4 U33+/GA33+부터 객체에 대한 이메일 알림을 설계하고 동적으로 채우기 위해 [알림 템플릿](./notifications/creating-notification-templates.md) 을 생성할 수도 있습니다. 자세한 내용은 [알림 작업](../building-applications/objects/creating-and-managing-objects/actions/defining-object-actions.md#notification-actions) 을 참조하십시오.
 
-상거래 컨텍스트에서 채널 이벤트에 대한 알림이 지원됩니다. 자세한 내용은 [Store Emails](https://learn.liferay.com/commerce/latest/en/store-management/sending-emails/store-emails.html) 을 참조하십시오.
+상거래 컨텍스트에서 채널 이벤트에 대한 알림이 지원됩니다. 자세한 내용은 [Store Emails](https://learn.liferay.com/w/commerce/store-management/sending-emails/store-emails) 을 참조하십시오.
 
 ::::{grid} 2
 :gutter: 3 3 3 3

@@ -3,7 +3,7 @@
 店舗でのイベントに応じて、ユーザーに自動的にメール通知が送信されます。 送信するには、まず **Notification Template** を作成する必要があります。 通知テンプレートは、電子メール通知の送信者、トリガー、およびコンテンツを定義します。
 
 ```{note}
-Liferay Commerce の Notification を使用するには、まず Liferay システムのメール設定を行います。 詳しくは、 [メールの設定](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/setting-up-liferay/configuring-mail.html) をご覧ください。
+Liferay Commerce の Notification を使用するには、まず Liferay システムのメール設定を行います。 詳しくは、 [メールの設定](https://learn.liferay.com/w/dxp/installation-and-upgrades/setting-up-liferay/configuring-mail) をご覧ください。
 ```
 
 ## イベントトリガー

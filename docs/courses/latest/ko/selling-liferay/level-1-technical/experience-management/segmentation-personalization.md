@@ -62,8 +62,8 @@ Liferay는 정적 정보와 행동 정보를 모두 사용하여 청중을 분�
 
 개인화 및 세분화에 대한 자세한 내용과 제공된 기능을 사용하는 방법은 이 사이트의 다른 곳에서 확인할 수 있습니다.
 
-* [사용자 세그먼트 생성 및 관리](https://learn.liferay.com/dxp/latest/ko/site-building/personalizing-site-experience/segmentation/creating-and-managing-user-segments.html) 
-* [경험 생성 및 관리](https://learn.liferay.com/dxp/latest/ko/site-building/personalizing-site-experience/experience-personalization/creating-and-managing-experiences.html) 
+* [사용자 세그먼트 생성 및 관리](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience/segmentation/creating-and-managing-user-segments) 
+* [경험 생성 및 관리](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience/experience-personalization/creating-and-managing-experiences) 
 
 ### 세분화 뿐만 아니라
 
@@ -89,6 +89,6 @@ Liferay를 개인화하기 위해 역할 및 권한을 사용할 수 있는 가�
 
 또한 카탈로그와 가격을 개인화할 수 있습니다. 회사가 특정 고객을 위해 맞춤형 제품을 판매하는 경우 제품에 대한 가시성을 [계정 그룹을 사용하여 제품 가시성 구성](https://learn.liferay.com/ko/w/commerce/product-management/creating-and-managing-products/products/configuring-product-visibility-using-account-groups) 할 수 있습니다. 또는 특정 유형의 고객에게만 판매되는 일부 제품(예: 골드 고객에게만 판매하는 일부 프리미엄 서비스)이 있을 수도 있습니다.
 
-Liferay를 사용하면 간단한 구성을 사용하여 제품 목록을 쉽게 개인화할 수 있습니다. [가격표 생성](https://learn.liferay.com/commerce/latest/ko/pricing/creating-a-price-list.html) 과 [프로모션 생성](https://learn.liferay.com/commerce/latest/ko/pricing/promoting-products/creating-a-promotion.html) 고객 또는 고객 그룹별로 구성할 수 있습니다. 이는 Liferay를 통해 조직은 고객이 맞춤형 제품, 가격, 프로모션 및 할인만 볼 수 있음을 확신할 수 있음을 의미합니다.
+Liferay를 사용하면 간단한 구성을 사용하여 제품 목록을 쉽게 개인화할 수 있습니다. [가격표 생성](https://learn.liferay.com/w/commerce/pricing/creating-a-price-list) 과 [프로모션 생성](https://learn.liferay.com/w/commerce/pricing/promoting-products/creating-a-promotion) 고객 또는 고객 그룹별로 구성할 수 있습니다. 이는 Liferay를 통해 조직은 고객이 맞춤형 제품, 가격, 프로모션 및 할인만 볼 수 있음을 확신할 수 있음을 의미합니다.
 
 다음: [콘텐츠 관리 및 분석](./content-management-analytics.md).

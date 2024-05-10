@@ -47,7 +47,7 @@ Analytics Cloud 전체 사이트에 대한 종합적인 보고서를 제공하�
 이 사이트 페이지 데이터 목록을 CSV 파일로 다운로드하려면 **보고서 다운로드** 를 클릭하세요. 자세한 내용은 [보고서 다운로드](./reference/downloading-reports.md) 참조하세요.
 
 ```{note}
-페이지 데이터는 표준 URL을 기반으로 합니다. [표준화](https://moz.com/learn/seo/canonicalization) 또는 [개별 페이지 구성](https://learn.liferay.com/dxp/latest/ko/site-building/creating-pages/page-settings/configuring-individual-pages.html#seo) 에 대해 자세히 알아보세요.
+페이지 데이터는 표준 URL을 기반으로 합니다. [표준화](https://moz.com/learn/seo/canonicalization) 또는 [개별 페이지 구성](https://learn.liferay.com/w/dxp/site-building/creating-pages/page-settings/configuring-individual-pages#seo) 에 대해 자세히 알아보세요.
 ```
 
 단일 페이지에 대한 자세한 측정항목을 보려면 표에서 해당 페이지를 클릭하세요. 자세한 내용은 [페이지 분석](./touchpoints/pages/pages.md) 참조하세요.

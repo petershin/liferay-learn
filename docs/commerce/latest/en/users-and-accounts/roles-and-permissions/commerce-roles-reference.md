@@ -45,7 +45,7 @@ Follow these steps to view and manage permissions associated with a Commerce rol
 
 ## Out-of-the-Box Roles
 
-The following roles are available out-of-the-box with your DXP instance. They are included with default DXP roles, and you can modify them if needed. See [Defining Role Permissions](https://learn.liferay.com/dxp/latest/en/users-and-permissions/roles-and-permissions/defining-role-permissions.html) for more information.
+The following roles are available out-of-the-box with your DXP instance. They are included with default DXP roles, and you can modify them if needed. See [Defining Role Permissions](https://learn.liferay.com/w/dxp/users-and-permissions/roles-and-permissions/defining-role-permissions) for more information.
 
 ### Account Administrator
 
@@ -270,7 +270,7 @@ The operations manager role grants permissions to manage accounts of an account 
 
 ## Custom Roles
 
-The following list includes common custom roles you may want to create for your own Commerce instance. These roles can be created in the same way as other DXP roles. See [Creating and Managing Roles](https://learn.liferay.com/dxp/latest/en/users-and-permissions/roles-and-permissions/creating-and-managing-roles.html) and [Defining Role Permissions](https://learn.liferay.com/dxp/latest/en/users-and-permissions/roles-and-permissions/defining-role-permissions.html) for more information
+The following list includes common custom roles you may want to create for your own Commerce instance. These roles can be created in the same way as other DXP roles. See [Creating and Managing Roles](https://learn.liferay.com/w/dxp/users-and-permissions/roles-and-permissions/creating-and-managing-roles) and [Defining Role Permissions](https://learn.liferay.com/w/dxp/users-and-permissions/roles-and-permissions/defining-role-permissions) for more information
 
 ### Catalog Manager
 
@@ -365,7 +365,7 @@ The sales agent is a regular role in Liferay and assignees are able to manage an
 
 ## Related Topics
 
-* [Understanding Roles and Permissions](https://learn.liferay.com/dxp/latest/en/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.html)
+* [Understanding Roles and Permissions](https://learn.liferay.com/w/dxp/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions)
 * [Order Management Permissions Reference](./order-management-permissions.md)
 * [Inventory Management Permissions Reference](./inventory-management-permissions.md)
 * [Pricing Permissions Reference](./pricing-permissions.md)

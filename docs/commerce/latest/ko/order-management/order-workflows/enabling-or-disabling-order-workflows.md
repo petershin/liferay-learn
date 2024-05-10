@@ -1,6 +1,6 @@
 # 주문 워크플로 활성화 또는 비활성화
 
-[주문 워크플로](./introduction-to-order-workflows.md) 는 활성화된 경우 구매자나 판매자가 주문을 처리하기 전에 [내부적으로 사전 [승인](./approving-or-rejecting-orders-in-order-workflows.md)](../orders/processing-an-order.md)하도록 요구하는 채널별 설정입니다. 워크플로 활성화 방법을 알아보려면 [워크플로 활성화](https://learn.liferay.com/dxp/latest/ko/process-automation/workflow/using-workflows/activating-workflow.html) 을 참조하십시오.
+[주문 워크플로](./introduction-to-order-workflows.md) 는 활성화된 경우 구매자나 판매자가 주문을 처리하기 전에 [내부적으로 사전 [승인](./approving-or-rejecting-orders-in-order-workflows.md)](../orders/processing-an-order.md)하도록 요구하는 채널별 설정입니다. 워크플로 활성화 방법을 알아보려면 [워크플로 활성화](https://learn.liferay.com/w/dxp/process-automation/workflow/using-workflows/activating-workflow) 을 참조하십시오.
 
 이 문서에서는 주문 워크플로를 활성화 및 비활성화하는 방법을 설명합니다.
 
@@ -63,7 +63,7 @@
 
 ## 관련 주제
 
-즉시 사용 가능한 **단일 승인자(버전 1**) 은 사용 가능한 주문 워크플로우입니다. [워크플로 소개](https://learn.liferay.com/dxp/latest/ko/process-automation/workflow/introduction-to-workflow.html) 을 생성한 다음 **주문 워크플로** 탭에서 선택할 수 있습니다.
+즉시 사용 가능한 **단일 승인자(버전 1**) 은 사용 가능한 주문 워크플로우입니다. [워크플로 소개](https://learn.liferay.com/w/dxp/process-automation/workflow/introduction-to-workflow) 을 생성한 다음 **주문 워크플로** 탭에서 선택할 수 있습니다.
 
 * [주문 워크플로 소개](./introduction-to-order-workflows.md)
 * [주문 워크플로우에서 주문 승인 또는 거부](approving-or-rejecting-orders-in-order-workflows.md)

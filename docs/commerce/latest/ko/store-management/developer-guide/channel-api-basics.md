@@ -165,7 +165,7 @@ java -classpath .:* Channels_GET_FromInstance
 | `name:desc`       | 내림차순으로 이름을 기준으로 정렬합니다.          |
 | `siteGroupId:asc` | 오름차순으로 siteGroupId를 기준으로 정렬합니다. |
 
-자세한 내용은 [API 쿼리 매개변수](https://learn.liferay.com/dxp/latest/ko/headless-delivery/consuming-apis/api-query-parameters.html) 참조하세요.
+자세한 내용은 [API 쿼리 매개변수](https://learn.liferay.com/w/dxp/headless-delivery/consuming-apis/api-query-parameters) 참조하세요.
 
 ## 채널 확보
 
@@ -275,4 +275,4 @@ java -classpath .:* -DchannelId=1234 Channel_DELETE_ById
    :lines: 8-17
 ```
 
-[REST 서비스 사용](https://learn.liferay.com/dxp/latest/ko/headless-delivery/consuming-apis/consuming-rest-services.html) 은 `채널` 서비스와 스키마를 보여주고 각 서비스를 테스트하기 위한 인터페이스를 가지고 있습니다.
+[REST 서비스 사용](https://learn.liferay.com/w/dxp/headless-delivery/consuming-apis/consuming-rest-services) 은 `채널` 서비스와 스키마를 보여주고 각 서비스를 테스트하기 위한 인터페이스를 가지고 있습니다.

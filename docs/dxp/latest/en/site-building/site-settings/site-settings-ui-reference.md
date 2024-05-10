@@ -38,7 +38,7 @@ By default, the Commerce area includes the following settings:
 - Payment
 - Shipping
 
-Here you can configure the Commerce settings at the Site scope. For more information about Commerce settings, see [Liferay Commerce Configuration Overview](https://learn.liferay.com/commerce/latest/en/store-management/liferay-commerce-configuration-overview.html).
+Here you can configure the Commerce settings at the Site scope. For more information about Commerce settings, see [Liferay Commerce Configuration Overview](https://learn.liferay.com/w/commerce/store-management/liferay-commerce-configuration-overview).
 
 ![Default Site Settings for Commerce](./site-settings-ui-reference/images/21.png)
 
@@ -92,7 +92,7 @@ By default, Site Configuration includes the Details and Site URL sections.
 
 ### Third Party
 
-Configure the PunchOut2Go Site setting for Liferay Commerce. For more information, see [Liferay Commerce Connector to PunchOut2Go Reference Guide](https://learn.liferay.com/commerce/latest/en/add-ons-and-connectors/liferay-commerce-connector-to-punchout2go-reference-guide.html).
+Configure the PunchOut2Go Site setting for Liferay Commerce. For more information, see [Liferay Commerce Connector to PunchOut2Go Reference Guide](https://learn.liferay.com/w/commerce/add-ons-and-connectors/liferay-commerce-connector-to-punchout2go-reference-guide).
 
 ### Third Party Applications
 
@@ -200,8 +200,8 @@ By default, the Other area includes the following settings:
 | Section | Description |
 | :--- | :--- |
 | Other | Includes custom Site settings you have defined for your Site, if any. For more information, read [Setting and Accessing Configurations](../../liferay-development/core-frameworks/configuration-framework/setting-and-accessing-configurations.md). |
-| Tax | Configure the settings for the Remote Commerce Tax Configuration in Liferay Commerce. For more information, see the [Liferay Commerce](https://learn.liferay.com/commerce/latest/en/index.html) documentation. |
-| category.tax-rate | Configure the settings for the Liferay Commerce Avalara integration. For more information, see the [Liferay Commerce](https://learn.liferay.com/commerce/latest/en/index.html) documentation. |
+| Tax | Configure the settings for the Remote Commerce Tax Configuration in Liferay Commerce. For more information, see the [Liferay Commerce](https://learn.liferay.com/w/commerce/index) documentation. |
+| category.tax-rate | Configure the settings for the Liferay Commerce Avalara integration. For more information, see the [Liferay Commerce](https://learn.liferay.com/w/commerce/index) documentation. |
 
 ## Site Setting UI Reference in Liferay DXP 7.2 and 7.3
 

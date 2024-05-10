@@ -51,7 +51,7 @@ Stagingの設定には2つのオプションがあります： **ローカルラ
 このプロセスを理解すると、効率が向上し、シームレスな公開エクスペリエンスを実現するための事前の計画に役立ちます。 詳細は、[公開プロセスを理解する](./staging/understanding-the-publishing-process.md)を参照してください。
 
 ```{important}
-ステージングは [Commerce](https://learn.liferay.com/commerce/latest/ja/index.html) または[カスタムオブジェクト](../../building-applications/objects.md)をサポートしていません。 パブリッシング処理中、コマースとオブジェクトのエンティティはステージングされません。 
+ステージングは [Commerce](https://learn.liferay.com/w/commerce/index) または[カスタムオブジェクト](../../building-applications/objects.md)をサポートしていません。 パブリッシング処理中、コマースとオブジェクトのエンティティはステージングされません。 
 ```
 
 ```{raw} html

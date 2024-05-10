@@ -113,7 +113,7 @@ To learn more about creating and using notification templates, see [Using Notifi
 
 The category display pages tab shows all category display pages created for your site. You use a [category display page](../../creating-store-content/creating-category-display-pages.md) to display all products tagged in a given category. To work with category display pages, you must create [product categories](../../product-management/creating-and-managing-products/products/organizing-your-catalog-with-product-categories.md) and associate them with the required products.
 
-See [Creating Pages](https://learn.liferay.com/dxp/latest/en/site-building/creating-pages.html) to learn more about creating pages. See [Tags and Categories](https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/tags-and-categories.html) to learn more about creating tags and categories.
+See [Creating Pages](https://learn.liferay.com/w/dxp/site-building/creating-pages) to learn more about creating pages. See [Tags and Categories](https://learn.liferay.com/w/dxp/content-authoring-and-management/tags-and-categories) to learn more about creating tags and categories.
 
 ## Product Display Pages
 
@@ -234,7 +234,7 @@ To learn more about creating and using notification templates, see [Using Notifi
 
 The category display pages tab displays the list of all category display pages created for your site. Using a [category display page](../../creating-store-content/creating-category-display-pages.md), you can us a specific page to display all products tagged in a given category. To work with category display pages, you should first create [product categories](../../product-management/creating-and-managing-products/products/organizing-your-catalog-with-product-categories.md) and associate them with the required products.
 
-See [Creating Pages](https://learn.liferay.com/dxp/latest/en/site-building/creating-pages.html) to learn more about creating pages. See [Tags and Categories](https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/tags-and-categories.html) to learn more about creating tags and categories.
+See [Creating Pages](https://learn.liferay.com/w/dxp/site-building/creating-pages) to learn more about creating pages. See [Tags and Categories](https://learn.liferay.com/w/dxp/content-authoring-and-management/tags-and-categories) to learn more about creating tags and categories.
 
 ### Product Display Pages
 

@@ -9,7 +9,7 @@ toc:
 매장에서 발생하는 다양한 이벤트에 대한 이메일 알림을 보내도록 Liferay를 구성할 수 있습니다. 예를 들어 주문 관리자나 관심 있는 다른 사람에게 주문 세부 정보와 함께 업데이트를 보낼 수 있습니다. 여기에는 주문 ID, 배송 및 청구 주소, 사용한 결제 방법 등이 포함될 수 있습니다. 이렇게 하려면 이메일의 내용과 이벤트 트리거를 결정하는 알림 템플릿을 만들어야 합니다.
 
 ```{note}
-Commerce에서 알림을 사용하려면 먼저 Liferay DXP에 대한 메일 설정을 구성해야 합니다. 자세한 내용은 [메일 구성](https://learn.liferay.com/dxp/latest/ko/installation-and-upgrades/setting-up-liferay/configuring-mail.html) 을 참조하십시오.
+Commerce에서 알림을 사용하려면 먼저 Liferay DXP에 대한 메일 설정을 구성해야 합니다. 자세한 내용은 [메일 구성](https://learn.liferay.com/w/dxp/installation-and-upgrades/setting-up-liferay/configuring-mail) 을 참조하십시오.
 ```
 
 ## 알림 템플릿

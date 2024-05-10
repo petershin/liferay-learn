@@ -10,7 +10,7 @@ Liferay Commerce 3.0より、CommerceはLiferay DXPにバンドルされてい�
 7.4にアップグレードした後は、Commerceの`LPKG`を再度デプロイ*しない*でください。 Commerce 4.0のモジュールは7.4にバンドルされています。  'LPKG'をデプロイすると競合が発生します。
 ```
 
-DXPのアップグレード手順については、 [アップグレードの基本](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/upgrading-liferay/upgrade-basics.html) を参照してください。 DXPが7.4にアップグレードされたら、インデックスの再構築を実行してください。
+DXPのアップグレード手順については、 [アップグレードの基本](https://learn.liferay.com/w/dxp/installation-and-upgrades/upgrading-liferay/upgrade-basics) を参照してください。 DXPが7.4にアップグレードされたら、インデックスの再構築を実行してください。
 
 ### Liferay Commerce 4.0にアップグレードするための前提条件
 
@@ -60,7 +60,7 @@ Liferay Commerceを2.1.x/2.2.xにアップグレードするには、適切なDX
 1.1.x から 2.1.x にアップグレードする場合、2.0.x への増分アップグレードは**必要ありません**。
 ```
 
-例えば、Liferay Commerce 2.0.7にアップグレードする場合、Liferay DXP 7.1をフィックスパック 16以上にアップグレードしてください。 Liferay DXP 7.2を使用している場合、フィックスパック2または3を適用する必要があります。 DXPのアップグレードについては、 [アップグレードの基本](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/upgrading-liferay/upgrade-basics.html) を参照してください。 アップグレードパスを理解するために、以下の表を参照してください。
+例えば、Liferay Commerce 2.0.7にアップグレードする場合、Liferay DXP 7.1をフィックスパック 16以上にアップグレードしてください。 Liferay DXP 7.2を使用している場合、フィックスパック2または3を適用する必要があります。 DXPのアップグレードについては、 [アップグレードの基本](https://learn.liferay.com/w/dxp/installation-and-upgrades/upgrading-liferay/upgrade-basics) を参照してください。 アップグレードパスを理解するために、以下の表を参照してください。
 
 | 以下バージョンへのアップグレード       | 必要なフィックスパックのバージョン                     |
 | :--------------------- | :------------------------------------ |
@@ -110,7 +110,7 @@ DXP 7.1/7.2の適切なフィックスパックを実行したら、以下の手
    * Commerceエンタープライズは [ヘルプセンター](https://customer.liferay.com/downloads?p_p_id=com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_productAssetCategoryId=118190997&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_fileTypeAssetCategoryId=118191001) から入手できます。
    * Commerce Communityは、 [Liferay Commerce Communityダウンロードページ](https://www.liferay.com/downloads-community) から入手できます。
 
-1. `LPKG`を` [Liferay Home]/deploy` フォルダにデプロイします。 Liferay DXP へのアプリケーションのデプロイについては、 [アプリのインストール](https://learn.liferay.com/dxp/latest/ja/system-administration/installing-and-managing-apps/installing-apps/installing-apps.html) .
+1. `LPKG`を` [Liferay Home]/deploy` フォルダにデプロイします。 Liferay DXP へのアプリケーションのデプロイについては、 [アプリのインストール](https://learn.liferay.com/w/dxp/system-administration/installing-and-managing-apps/installing-apps/installing-apps) .
 
 1. 以下に示すようなメッセージがアプリケーションサーバーコンソールに表示されることを確認します。
 
@@ -130,7 +130,7 @@ DXP 7.1/7.2の適切なフィックスパックを実行したら、以下の手
 
 ### 古いデータを消去し、アップグレードプロセスを確認する
 
-1. [Liferay Home]/osgi/state`フォルダを削除します。 OSGiフォルダについて詳しくは、 [アプリのインストール](https://learn.liferay.com/dxp/latest/ja/system-administration/installing-and-managing-apps/installing-apps/installing-apps.html) を参照してください。
+1. [Liferay Home]/osgi/state`フォルダを削除します。 OSGiフォルダについて詳しくは、 [アプリのインストール](https://learn.liferay.com/w/dxp/system-administration/installing-and-managing-apps/installing-apps/installing-apps) を参照してください。
 
 1. アプリケーションサーバーを起動します。
 
@@ -179,5 +179,5 @@ Liferay Commerceインスタンスがアップグレードされました。
 
 ## 関連トピック
 
-* [アプリのインストール](https://learn.liferay.com/dxp/latest/ja/system-administration/installing-and-managing-apps/installing-apps/installing-apps.html)
+* [アプリのインストール](https://learn.liferay.com/w/dxp/system-administration/installing-and-managing-apps/installing-apps/installing-apps)
 * [Liferay Commerceフィックスの提供方法](../get-help/commerce-enterprise-support/liferay-commerce-fix-delivery-method.md)

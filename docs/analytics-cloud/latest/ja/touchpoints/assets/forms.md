@@ -1,6 +1,6 @@
  # フォーム
 
-[フォームの概要](https://learn.liferay.com/dxp/latest/ja/process-automation/forms/introduction-to-forms.html) は、企業にとって重要な直接データ収集ツールである。 あなたのWebフォームは貴重な情報を提供していますか、それともユーザーを遠ざけていますか？ Analytics Cloudは重要なインサイトを提供します。
+[フォームの概要](https://learn.liferay.com/w/dxp/process-automation/forms/introduction-to-forms) は、企業にとって重要な直接データ収集ツールである。 あなたのWebフォームは貴重な情報を提供していますか、それともユーザーを遠ざけていますか？ Analytics Cloudは重要なインサイトを提供します。
 
 ![Forms metrics are presented in a table with submission, view, abandonment, and completion time statistics.](forms/images/01.png)
 

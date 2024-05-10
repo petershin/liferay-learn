@@ -5,7 +5,7 @@
 [Minium Accelerator](../../starting-a-store/using-the-minium-accelerator-to-jump-start-your-b2b-store.md)を使用する場合は、Searchページに ［**Search Bar**］ 、 ［**検索オプション**］ 、 ［**Search Results**］ 、 ［**Type Facet**］ 、 ［**Tag**］ 、［［**カテゴリー**］ 、 ［**サイト**］ 、 ［**フォルダ**］ 、 ［**User**］ 、  そして ［**Modified Facet**］ ウィジェットが含まれています。
 
 ```{note}
-*検索結果*ウィジェットは、Liferayのアダプティブメディアをすぐにサポートします。 詳しくは、 [配信デバイスと画面最適化メディア](https://learn.liferay.com/dxp/latest/ja/content-authoring-and-management/documents-and-media/publishing-and-sharing/serving-device-and-screen-optimized-media.html) を参照してください。
+*検索結果*ウィジェットは、Liferayのアダプティブメディアをすぐにサポートします。 詳しくは、 [配信デバイスと画面最適化メディア](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/publishing-and-sharing/serving-device-and-screen-optimized-media) を参照してください。
 ```
 
 ![Miniumアクセラレータですぐに利用できるページの検索。](./search/images/01.png)

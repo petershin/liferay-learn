@@ -1,6 +1,6 @@
 # 맞춤 주문 규칙 구현
 
-특정 조건을 충족하는 주문에 대해 Liferay에서 주문 규칙을 구성할 수 있습니다. 최소 주문 금액 규칙은 즉시 사용할 수 있습니다. 특정 값 이하의 주문이 체크아웃되는 것을 방지합니다. 새 주문 규칙을 추가하려면 [`COREntryType`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/commerce/commerce-order-rule-api/src/main/java/com/liferay/commerce/order/rule/entry/type/COREntryType.java) 인터페이스를 구현해야 합니다. 자세한 내용은 [상거래 주문 규칙](https://learn.liferay.com/commerce/latest/ko/order-management/order-rules.html) 을 참조하십시오.
+특정 조건을 충족하는 주문에 대해 Liferay에서 주문 규칙을 구성할 수 있습니다. 최소 주문 금액 규칙은 즉시 사용할 수 있습니다. 특정 값 이하의 주문이 체크아웃되는 것을 방지합니다. 새 주문 규칙을 추가하려면 [`COREntryType`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/commerce/commerce-order-rule-api/src/main/java/com/liferay/commerce/order/rule/entry/type/COREntryType.java) 인터페이스를 구현해야 합니다. 자세한 내용은 [상거래 주문 규칙](https://learn.liferay.com/w/commerce/order-management/order-rules) 을 참조하십시오.
 
 ## 사용자 지정 주문 규칙 배포 및 언어 키 추가
 

@@ -149,5 +149,5 @@ BOMウィジェットに図が表示されます。
 ## 関連トピック
 
 * [商品バリアントのSKU作成](./creating-skus-for-product-variants.md)
-* [サイトにページを追加する](https://learn.liferay.com/dxp/latest/ja/site-building/creating-pages/adding-pages/adding-a-page-to-a-site.html)
-* [ページへのウィジェットの追加](https://learn.liferay.com/dxp/latest/ja/site-building/creating-pages/using-widget-pages/adding-widgets-to-a-page.html)
+* [サイトにページを追加する](https://learn.liferay.com/w/dxp/site-building/creating-pages/adding-pages/adding-a-page-to-a-site)
+* [ページへのウィジェットの追加](https://learn.liferay.com/w/dxp/site-building/creating-pages/using-widget-pages/adding-widgets-to-a-page)

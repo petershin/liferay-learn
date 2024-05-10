@@ -52,7 +52,7 @@ Liferay Cloud로 마이그레이션하면 [클러스터링](./customizing-lifera
 
 예를 들어 Git을 처음 사용하는 경우 마이그레이션에 적용하기 전에 [공식 Git 자료](https://git-scm.com/doc) (참조 문서, 명령 치트 시트 등 포함)를 참조하거나 직접 사용 연습을 해보는 것이 좋습니다. Git은 이 마이그레이션 가이드에서 사용하는 것 이상의 기능을 갖춘 강력한 버전 관리 도구입니다.
 
-Liferay Cloud로 마이그레이션하려면 사용자 지정 코드, 모듈 및 테마를 프로젝트에 맞게 특별히 Liferay Workspace로 이동해야 합니다. Liferay Workspace를 처음 사용하는 경우 효과적인 사용 방법 [Liferay 작업 공간이란 무엇입니까?](https://learn.liferay.com/dxp/latest/ko/building-applications/tooling/liferay-workspace/what-is-liferay-workspace.html) 에서도 배울 수 있습니다.
+Liferay Cloud로 마이그레이션하려면 사용자 지정 코드, 모듈 및 테마를 프로젝트에 맞게 특별히 Liferay Workspace로 이동해야 합니다. Liferay Workspace를 처음 사용하는 경우 효과적인 사용 방법 [Liferay 작업 공간이란 무엇입니까?](https://learn.liferay.com/w/dxp/building-applications/tooling/liferay-workspace/what-is-liferay-workspace) 에서도 배울 수 있습니다.
 
 ### 환경 준비
 

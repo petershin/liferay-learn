@@ -58,7 +58,7 @@ Liferay DXP를 Analytics Cloud에 연결하려면 다음과 같은 전제 조건
 
    ![Select an existing property or create a new one.](./connecting-liferay-dxp-to-analytics-cloud/images/03.png)
 
-1. 속성에 할당할 사이트를 선택합니다. **Commerce** 토글을 활성화하면 Commerce [채널 소개](https://learn.liferay.com/commerce/latest/ko/store-management/channels/introduction-to-channels.html) 도 할당됩니다.
+1. 속성에 할당할 사이트를 선택합니다. **Commerce** 토글을 활성화하면 Commerce [채널 소개](https://learn.liferay.com/w/commerce/store-management/channels/introduction-to-channels) 도 할당됩니다.
 
 **필터** 를 클릭하고 보려는 세그먼트를 선택하세요. 세그먼트에 대해 자세히 알아보려면 [세그먼트 만들기](../../people/segments/creating-segments.md)를 참조하세요.
 

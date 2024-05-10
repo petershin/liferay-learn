@@ -140,7 +140,7 @@ q4b9-commerce-tax-engine=Q4B9 Commerce Tax Engine
 this-tax-engine-serves-a-fixed-x-percent-flat-tax-rate=This tax engine serves a fixed {0} percent flat tax rate.
 ```
 
-> 자세한 내용은 [MVC 포틀릿에서 지역화된 메시지 사용](https://learn.liferay.com/dxp/latest/ko/building-applications/developing-a-java-web-application/using-mvc/using-localized-messages-in-an-mvc-portlet.html) 참조하십시오.
+> 자세한 내용은 [MVC 포틀릿에서 지역화된 메시지 사용](https://learn.liferay.com/w/dxp/building-applications/developing-a-java-web-application/using-mvc/using-localized-messages-in-an-mvc-portlet) 참조하십시오.
 
 ## 결론
 
@@ -148,5 +148,5 @@ this-tax-engine-serves-a-fixed-x-percent-flat-tax-rate=This tax engine serves a 
 
 ## 관련 주제
 
-* [MVC 포틀릿에서 지역화된 메시지 사용](https://learn.liferay.com/dxp/latest/ko/building-applications/developing-a-java-web-application/using-mvc/using-localized-messages-in-an-mvc-portlet.html)
+* [MVC 포틀릿에서 지역화된 메시지 사용](https://learn.liferay.com/w/dxp/building-applications/developing-a-java-web-application/using-mvc/using-localized-messages-in-an-mvc-portlet)
 * [세금 계산을 위한 세율 설정](../../pricing/configuring-taxes/setting-rates-for-tax-calculations.md)

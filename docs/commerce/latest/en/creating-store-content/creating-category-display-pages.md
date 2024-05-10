@@ -35,7 +35,7 @@ For Liferay DXP 7.3 and earlier, the Default Category Display Page selection und
 
 In some cases, you may want to display a specific category of products on a page. This can be useful to display products with promotions or offers. To map a specific Category to a Page, follow these steps:
 
-1. Create a new [_Widget Page_](https://learn.liferay.com/dxp/latest/en/site-building/creating-pages/understanding-pages.html#widget-pages) in your store and add the _Category Content_ widget to it along with any other desired Page elements.
+1. Create a new [_Widget Page_](https://learn.liferay.com/w/dxp/site-building/creating-pages/understanding-pages#widget-pages) in your store and add the _Category Content_ widget to it along with any other desired Page elements.
 
 1. Open the _Global Menu_ (![Global Menu](../images/icon-applications-menu.png)) &rarr; Commerce tab &rarr; _Store Management_ &rarr; _Channels_.
 
@@ -59,4 +59,4 @@ This establishes a relationship between the category and the selected Page. Each
 
 ## Related Topics
 
-- [Displaying Categories Using Display Pages](https://learn.liferay.com/dxp/latest/en/site-building/displaying-content/using-display-page-templates/displaying-categories-using-display-pages.html)
+- [Displaying Categories Using Display Pages](https://learn.liferay.com/w/dxp/site-building/displaying-content/using-display-page-templates/displaying-categories-using-display-pages)

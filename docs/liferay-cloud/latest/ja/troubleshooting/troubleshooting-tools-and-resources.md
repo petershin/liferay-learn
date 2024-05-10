@@ -128,7 +128,7 @@ Liferay Cloudの自動ディザスターリカバリー戦略は、同一地域�
 
 ## ヘルプセンター
 
-Liferay Cloud [Liferay Cloud](https://learn.liferay.com/liferay-cloud/latest/ja/index.html) で回答されていない質問がある場合、または問題を報告したい場合は、Liferay [Help Center](https://help.liferay.com/) にサインインしてサブスクリプション専用のリソースを閲覧するか、チケットを送信してください。
+Liferay Cloud [Liferay Cloud](https://learn.liferay.com/w/liferay-cloud/index) で回答されていない質問がある場合、または問題を報告したい場合は、Liferay [Help Center](https://help.liferay.com/) にサインインしてサブスクリプション専用のリソースを閲覧するか、チケットを送信してください。
 
 ![Liferayヘルプセンターのページから、サブスクリプション専用のリソースを閲覧したり、チケットを送信することができます。](./troubleshooting-tools-and-resources/images/08.png)
 

@@ -175,7 +175,7 @@ This API also accepts parameters to filter, paginate, search, and sort the chann
 | `name:desc`       | Sort by name in descending order.       |
 | `siteGroupId:asc` | Sort by siteGroupId in ascending order. |
 
-Read [API Query Parameters](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/api-query-parameters.html) for more information.
+Read [API Query Parameters](https://learn.liferay.com/w/dxp/headless-delivery/consuming-apis/api-query-parameters) for more information.
 
 ## Get a Channel
 
@@ -285,4 +285,4 @@ Code:
    :lines: 8-17
 ```
 
-The [API Explorer](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services.html) shows the `Channel` services and schemas and has an interface to test each service.
+The [API Explorer](https://learn.liferay.com/w/dxp/headless-delivery/consuming-apis/consuming-rest-services) shows the `Channel` services and schemas and has an interface to test each service.

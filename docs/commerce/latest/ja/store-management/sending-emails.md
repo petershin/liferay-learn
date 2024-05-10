@@ -9,7 +9,7 @@ toc:
 Liferayは、あなたのストアで起こるさまざまなイベントに対して、メール通知を送信するように設定できます。 例えば、注文担当者やその他の関係者に、注文の詳細に関する最新情報を送信することができます。 これには、注文ID、配送先住所、請求先住所、使用された支払方法などが含まれることがあります。 これを行うには、電子メールの内容とイベント・トリガーを決定する通知テンプレートを作成する必要があります。
 
 ```{note}
-Commerce で通知を使用するには、まず Liferay DXP のメール設定を行う必要があります。 詳しくは、 [メールの設定](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/setting-up-liferay/configuring-mail.html) をご覧ください。
+Commerce で通知を使用するには、まず Liferay DXP のメール設定を行う必要があります。 詳しくは、 [メールの設定](https://learn.liferay.com/w/dxp/installation-and-upgrades/setting-up-liferay/configuring-mail) をご覧ください。
 ```
 
 ## 通知テンプレート種別

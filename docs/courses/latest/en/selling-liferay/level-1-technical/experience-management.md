@@ -42,7 +42,7 @@ In-order to better understand the different aspects of experience management, th
 
 ## Pages
 
-Demonstrating [pages](https://learn.liferay.com/dxp/latest/en/site-building/creating-pages/understanding-pages.html) and how they are constructed is the logical place to start this section of a demo because pages are the primary method that is used in Liferay DXP to display content and applications to users. 
+Demonstrating [pages](https://learn.liferay.com/w/dxp/site-building/creating-pages/understanding-pages) and how they are constructed is the logical place to start this section of a demo because pages are the primary method that is used in Liferay DXP to display content and applications to users. 
 
 Before starting the demo, introduce what the prospect is going to see, for example personas, user journeys, etc. With more context, the audience can better understand what is being shown to them when the demo begins. Tips for this include:
 
@@ -93,9 +93,9 @@ Finally click the Publish button to make the changes made to the page public.
 
 More information on pages and how they are constructed is available elsewhere on this site:
 
-* [Using Content Pages](https://learn.liferay.com/dxp/latest/en/site-building/creating-pages/using-content-pages.html)
-* [Content Page Editor UI Reference](https://learn.liferay.com/dxp/latest/en/site-building/creating-pages/using-content-pages/content-page-editor-ui-reference.html)
-* [Using Fragments](https://learn.liferay.com/dxp/latest/en/site-building/creating-pages/page-fragments-and-widgets/using-fragments.html)
+* [Using Content Pages](https://learn.liferay.com/w/dxp/site-building/creating-pages/using-content-pages)
+* [Content Page Editor UI Reference](https://learn.liferay.com/w/dxp/site-building/creating-pages/using-content-pages/content-page-editor-ui-reference)
+* [Using Fragments](https://learn.liferay.com/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments)
 
 ### Additional Topics to Cover
 

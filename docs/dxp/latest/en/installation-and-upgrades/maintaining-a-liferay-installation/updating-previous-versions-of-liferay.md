@@ -93,7 +93,7 @@ You're running on the new Liferay update Docker image.
     rootDir="data/document_library"
     ```
 
-1. If you're using [Commerce](https://learn.liferay.com/commerce/latest/en/index.html) and the release notes mention database upgrades for Commerce, prepare to upgrade it. See [Upgrading Liferay Commerce](https://learn.liferay.com/commerce/latest/en/installation-and-upgrades/upgrading-liferay-commerce.html) for details.
+1. If you're using [Commerce](https://learn.liferay.com/w/commerce/index) and the release notes mention database upgrades for Commerce, prepare to upgrade it. See [Upgrading Liferay Commerce](https://learn.liferay.com/w/commerce/installation-and-upgrades/upgrading-liferay-commerce) for details.
 
 1. Shut down your application server.
 

@@ -20,13 +20,13 @@
 
 ![View and configure Analytics Cloud Segments settings.](./segments-admin-settings/images/01.png)
 
-[세그먼트](https://learn.liferay.com/analytics-cloud/latest/ko/people/segments/segments.html) 공통 속성 및 행동을 기반으로 개인을 집계합니다. 이 데이터를 Liferay DXP의 세그먼트와 통합하여 알려진 사용자와 익명 사용자 모두에게 관심 있는 콘텐츠를 제공할 수 있습니다.
+[세그먼트](https://learn.liferay.com/w/analytics-cloud/people/segments/segments) 공통 속성 및 행동을 기반으로 개인을 집계합니다. 이 데이터를 Liferay DXP의 세그먼트와 통합하여 알려진 사용자와 익명 사용자 모두에게 관심 있는 콘텐츠를 제공할 수 있습니다.
 
 **Analytics Cloud Segments** 에서 다음 설정에 액세스할 수 있습니다.
 
 **익명 사용자 세그먼트 캐시 만료 시간** : 익명 세그먼트 캐시가 저장되는 기간에 대한 시간 제한(초)을 설정합니다. 시간이 만료되면 캐시가 지워집니다.
 
-**관심 용어 캐시 만료 시간** : 관심 용어 캐시가 저장되는 기간에 대한 시간 제한(초)을 설정합니다. 시간이 만료되면 캐시가 지워집니다. 자세한 내용은 [관심사 이해](https://learn.liferay.com/analytics-cloud/latest/ko/people/individuals/understanding-interests.html) 참조하세요.
+**관심 용어 캐시 만료 시간** : 관심 용어 캐시가 저장되는 기간에 대한 시간 제한(초)을 설정합니다. 시간이 만료되면 캐시가 지워집니다. 자세한 내용은 [관심사 이해](https://learn.liferay.com/w/analytics-cloud/people/individuals/understanding-interests) 참조하세요.
 
 **업데이트 간격** : Analytics Cloud 세그먼트에서 업데이트를 수신하는 간격(분)을 설정합니다. 이 설정은 시스템 설정에만 나타납니다.
 
@@ -52,5 +52,5 @@
 
 ## 관련 주제
 
-* [세그먼트](https://learn.liferay.com/analytics-cloud/latest/ko/people/segments/segments.html)
+* [세그먼트](https://learn.liferay.com/w/analytics-cloud/people/segments/segments)
 * [세션 속성 어휘](../../../content-authoring-and-management/tags-and-categories/session-property-vocabularies.md)

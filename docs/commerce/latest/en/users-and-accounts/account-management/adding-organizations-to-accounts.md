@@ -67,4 +67,4 @@ The organization has been added to the account using the Control Panel.
 
 * [Accounts Management](../account-management.md)
 * [Account Roles](./account-roles.md)
-* [Adding Users to Organizations](https://learn.liferay.com/dxp/latest/en/users-and-permissions/organizations/adding-users-to-organizations.html)
+* [Adding Users to Organizations](https://learn.liferay.com/w/dxp/users-and-permissions/organizations/adding-users-to-organizations)

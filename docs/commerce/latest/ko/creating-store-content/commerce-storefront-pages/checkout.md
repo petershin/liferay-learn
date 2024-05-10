@@ -35,7 +35,7 @@
 주문이 확인되면 판매자가 주문을 처리할 준비가 된 것입니다. 자세한 내용은 [주문 수명 주기](../../order-management/orders/order-life-cycle.md) 참조하십시오.
 
 ```{note}
-*체크아웃* 위젯은 즉시 사용 가능한 Liferay의 적응형 미디어를 지원합니다. [디바이스 및 화면에 최적화된 미디어 제공](https://learn.liferay.com/dxp/latest/ko/content-authoring-and-management/documents-and-media/publishing-and-sharing/serving-device-and-screen-optimized-media.html) 을 참조하세요.
+*체크아웃* 위젯은 즉시 사용 가능한 Liferay의 적응형 미디어를 지원합니다. [디바이스 및 화면에 최적화된 미디어 제공](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/publishing-and-sharing/serving-device-and-screen-optimized-media) 을 참조하세요.
 ```
 
 ## 관련 주제

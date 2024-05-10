@@ -4,7 +4,7 @@
 
 {bdg-secondary}`Liferay DXP 7.4 U35+`.
 
-Liferay Connector to Salesforceは、 [Talend](https://help.talend.com/home) ジョブデザインとLiferayの [ジョブスケジューラーを使う](https://learn.liferay.com/dxp/latest/ja/building-applications/core-frameworks/job-scheduler-framework/using-job-scheduler.html) を使用して、SalesforceからLiferay DXPにデータをインポートします。 [](https://marketplace.liferay.com/p/liferay-connector-to-salesforce) コネクタをダウンロードして `.lpkg` ファイルとして Liferay インスタンスにデプロイすることができます。 このファイルには、SalesforceのデータフィールドをLiferayのデータフィールドにマッピングするTalendジョブが含まれています。
+Liferay Connector to Salesforceは、 [Talend](https://help.talend.com/home) ジョブデザインとLiferayの [ジョブスケジューラーを使う](https://learn.liferay.com/w/dxp/building-applications/core-frameworks/job-scheduler-framework/using-job-scheduler) を使用して、SalesforceからLiferay DXPにデータをインポートします。 [](https://marketplace.liferay.com/p/liferay-connector-to-salesforce) コネクタをダウンロードして `.lpkg` ファイルとして Liferay インスタンスにデプロイすることができます。 このファイルには、SalesforceのデータフィールドをLiferayのデータフィールドにマッピングするTalendジョブが含まれています。
 
 デプロイされると、Liferayは自動的にTalendの各ジョブに対してディスパッチタスクを作成します。 その後、各タスクを手動で設定・実行したり、ディスパッチを使って特定の間隔で実行するようにスケジュールすることができます。
 
@@ -128,7 +128,7 @@ Salesforceからのデータをフィルタリングして、新しく変更ま�
 
 ## ディスパッチタスクの実行
 
-一度設定したら、 **今すぐ実行** をクリックして各タスクを手動で実行するか、自動的に実行するようにスケジュールすることができます。 詳細は [ジョブスケジューラーを使う](https://learn.liferay.com/dxp/latest/ja/building-applications/core-frameworks/job-scheduler-framework/using-job-scheduler.html) を参照。
+一度設定したら、 **今すぐ実行** をクリックして各タスクを手動で実行するか、自動的に実行するようにスケジュールすることができます。 詳細は [ジョブスケジューラーを使う](https://learn.liferay.com/w/dxp/building-applications/core-frameworks/job-scheduler-framework/using-job-scheduler) を参照。
 
 ```{important}
 これらのタスクを実行すると、リソースを大量に消費し、プラットフォームのパフォーマンスを低下させる可能性があります。 パフォーマンスへの影響を軽減するため、使用頻度の高い時間帯での実行は避けてください。
@@ -137,4 +137,4 @@ Salesforceからのデータをフィルタリングして、新しく変更ま�
 ## 関連トピック
 
 * [Liferay マーケットプレイス](https://marketplace.liferay.com/p/liferay-connector-to-salesforce)
-* [ジョブスケジューラーを使う](https://learn.liferay.com/dxp/latest/ja/building-applications/core-frameworks/job-scheduler-framework/using-job-scheduler.html)
+* [ジョブスケジューラーを使う](https://learn.liferay.com/w/dxp/building-applications/core-frameworks/job-scheduler-framework/using-job-scheduler)

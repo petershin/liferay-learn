@@ -94,12 +94,12 @@ Liferay 7.3 CE GA6 및 Liferay DXP 7.3 GA1부터 Liferay Commerce 3.0은 이제 
 
 Liferay Commerce에서 관리할 수 있는 몇 가지 기능은 다음과 같습니다.
 
-* [새 카탈로그 만들기](https://learn.liferay.com/commerce/latest/ko/product-management/catalogs/creating-a-new-catalog.html)
+* [새 카탈로그 만들기](https://learn.liferay.com/w/commerce/product-management/catalogs/creating-a-new-catalog)
 * [채널 관리](https://learn.liferay.com/ko/w/commerce/store-management/channels/managing-channels)
-* [재고 관리](https://learn.liferay.com/commerce/latest/ko/inventory-management.html)
-* [주문 처리](https://learn.liferay.com/commerce/latest/ko/order-management/orders/processing-an-order.html)
+* [재고 관리](https://learn.liferay.com/w/commerce/inventory-management)
+* [주문 처리](https://learn.liferay.com/w/commerce/order-management/orders/processing-an-order)
 
-Liferay Commerce에 대해 자세히 알아보려면 [라이프레이 커머스 소개](https://learn.liferay.com/commerce/latest/ko/starting-a-store/introduction-to-liferay-commerce.html) 참조하세요.
+Liferay Commerce에 대해 자세히 알아보려면 [라이프레이 커머스 소개](https://learn.liferay.com/w/commerce/starting-a-store/introduction-to-liferay-commerce) 참조하세요.
 
 ### 제어판
 

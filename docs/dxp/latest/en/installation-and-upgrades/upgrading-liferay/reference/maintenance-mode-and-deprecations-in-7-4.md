@@ -52,7 +52,7 @@ Here are the features deprecated in 7.4:
 | Liferay Mobile Device Detection Enterprise | Archived | Deprecated in 7.2. Contact 51Degrees for up-to-date definitions. |
 | Liferay Screens | Removed. Final version released in 7.3. | No direct replacement; however, the mobile SDK and headless APIs support mobile application development. |
 | Liferay Sync Connector and Sync Client | Archived | Deprecated in 7.3. No direct replacement. |
-| Live Users | Bundled | Deprecated in 7.2. Replaced by [Analytics Cloud](https://learn.liferay.com/analytics-cloud/latest/en/index.html) |
+| Live Users | Bundled | Deprecated in 7.2. Replaced by [Analytics Cloud](https://learn.liferay.com/w/analytics-cloud/index) |
 | Mobile SDK | Removed | Replaced by [Headless Delivery](../../../headless-delivery/using-liferay-as-a-headless-platform.md). |
 | NTLM | Archived | Deprecated in 7.2. Replaced by [Kerberos](../../securing-liferay/configuring-sso/authenticating-with-kerberos.md). If you're using NTLM to authenticate Microsoft Windows™ accounts with, switch to using [Kerberos](../../securing-liferay/configuring-sso/authenticating-with-kerberos.md). |
 | OAuth 1.0a | Archived | Deprecated in 7.2. Replaced by Liferay Connector to OAuth 2.0 |

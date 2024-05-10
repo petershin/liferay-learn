@@ -56,7 +56,7 @@ Note, Liferay DXP uses the same URL for a site page regardless of the chosen lan
 To download this list of site page data as a CSV file, click _Download Report_. See [downloading reports](./reference/downloading-reports.md) to learn more.
 
 ```{note}
-Page data is based on canonical URL. Learn more about [canonicalization](https://moz.com/learn/seo/canonicalization) or [how to set a custom canonical URL in DXP](https://learn.liferay.com/dxp/latest/en/site-building/creating-pages/page-settings/configuring-individual-pages.html#seo).
+Page data is based on canonical URL. Learn more about [canonicalization](https://moz.com/learn/seo/canonicalization) or [how to set a custom canonical URL in DXP](https://learn.liferay.com/w/dxp/site-building/creating-pages/page-settings/configuring-individual-pages#seo).
 ```
 
 To view detailed metrics for a single page, click that page in the table. See [Page Analytics](./touchpoints/pages/pages.md) for more information.

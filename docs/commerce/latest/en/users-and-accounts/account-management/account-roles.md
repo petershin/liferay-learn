@@ -32,7 +32,7 @@ See [Commerce Roles Reference](../roles-and-permissions/commerce-roles-reference
 
 If existing Account roles are not sufficient to satisfy your business needs, you can create additional Account roles. You can also add permissions to existing Account roles. Doing this is the same process as creating and editing other types of DXP roles.
 
-See [Creating and Managing Roles](https://learn.liferay.com/dxp/latest/en/users-and-permissions/roles-and-permissions/creating-and-managing-roles.html) and [Defining Role Permissions](https://learn.liferay.com/dxp/latest/en/users-and-permissions/roles-and-permissions/defining-role-permissions.html) for more information.
+See [Creating and Managing Roles](https://learn.liferay.com/w/dxp/users-and-permissions/roles-and-permissions/creating-and-managing-roles) and [Defining Role Permissions](https://learn.liferay.com/w/dxp/users-and-permissions/roles-and-permissions/defining-role-permissions) for more information.
 
 ## Liferay 7.3 and Earlier
 
@@ -54,4 +54,4 @@ Sales agents can access any account within any of their associated organizations
 * [Account Management](../account-management.md)
 * [Creating a New Account](./creating-a-new-account.md)
 * [Creating a New Account Group](./creating-a-new-account-group.md)
-* [Understanding Roles and Permissions](https://learn.liferay.com/dxp/latest/en/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.html)
+* [Understanding Roles and Permissions](https://learn.liferay.com/w/dxp/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions)

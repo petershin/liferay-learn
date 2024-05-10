@@ -41,7 +41,7 @@ To review the A/B Test results and publish your variant,
    When you publish the A/B Test variant, the variant becomes active for all users visiting the Content Page.
    ```
 
-You can click the *View Data in Analytics Cloud* button from the A/B Tests panel to go to the Analytics Cloud dashboard and view other test statistics. For more information, see [A/B Testing Analytics](https://learn.liferay.com/analytics-cloud/latest/en/optimization/a-b-testing.html).
+You can click the *View Data in Analytics Cloud* button from the A/B Tests panel to go to the Analytics Cloud dashboard and view other test statistics. For more information, see [A/B Testing Analytics](https://learn.liferay.com/w/analytics-cloud/optimization/a-b-testing).
 
 ## Related Topics
 

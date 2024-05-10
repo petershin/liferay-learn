@@ -27,7 +27,7 @@ Next, migrate the Audience Targeting custom rules considering the following info
 - If you need to re-implement a rule entirely, follow the information in [Creating and Managing User Segments](../segmentation/creating-and-managing-user-segments.md).
 - You must also [migrate the display widgets](./manually-migrating-from-audience-targeting.md#migrating-display-properties) since the new Personalization features in Liferay DXP 7.2+ use different tools.  
 
-Finally, you must migrate the behavior-based functionality in Audience Targeting. Starting with Liferay DXP 7.2+, behavior-based rules are managed using Liferay Analytics Cloud. For more information, see the [Analytics Cloud documentation](https://learn.liferay.com/analytics-cloud/latest/en/people/segments/segments.html).
+Finally, you must migrate the behavior-based functionality in Audience Targeting. Starting with Liferay DXP 7.2+, behavior-based rules are managed using Liferay Analytics Cloud. For more information, see the [Analytics Cloud documentation](https://learn.liferay.com/w/analytics-cloud/people/segments/segments).
 
 ## Related Information
 

@@ -10,7 +10,7 @@ Liferay Commerce 3.0부터 Commerce는 이제 Liferay DXP와 번들로 제공됩
 7.4로 업그레이드한 후에는 Commerce 'LPKG'를 다시 배포하지 *마세요*. Commerce 4.0 모듈은 7.4와 함께 번들로 제공됩니다. 'LPKG'를 배포하면 충돌이 발생합니다.
 ```
 
-DXP 업그레이드 프로세스에 대해 자세히 알아보려면 [업그레이드 기본 사항](https://learn.liferay.com/dxp/latest/ko/installation-and-upgrades/upgrading-liferay/upgrade-basics.html) 을 참조하세요. DXP가 7.4로 업그레이드되면 재인덱싱을 실행하세요.
+DXP 업그레이드 프로세스에 대해 자세히 알아보려면 [업그레이드 기본 사항](https://learn.liferay.com/w/dxp/installation-and-upgrades/upgrading-liferay/upgrade-basics) 을 참조하세요. DXP가 7.4로 업그레이드되면 재인덱싱을 실행하세요.
 
 ### Liferay Commerce 4.0으로 업그레이드하기 위한 전제 조건
 
@@ -60,7 +60,7 @@ Liferay Commerce를 2.1.x/2.2.x로 업그레이드하려면 적절한 DXP 수정
 1.1.x에서 2.1.x로 업그레이드하는 경우 2.0.x로 점진적인 업그레이드가 **필요하지 않습니다**.
 ```
 
-예를 들어 Liferay Commerce 2.0.7로 업그레이드하는 경우 Liferay DXP 7.1을 수정 팩 16 이상으로 업그레이드하십시오. Liferay DXP 7.2를 사용하는 경우 수정 팩 2 또는 3을 적용해야 합니다. DXP 업그레이드에 대해 알아보려면 [업그레이드 기본 사항](https://learn.liferay.com/dxp/latest/ko/installation-and-upgrades/upgrading-liferay/upgrade-basics.html) 을 참조하세요. 업그레이드 경로를 이해하려면 아래 표를 참조하세요.
+예를 들어 Liferay Commerce 2.0.7로 업그레이드하는 경우 Liferay DXP 7.1을 수정 팩 16 이상으로 업그레이드하십시오. Liferay DXP 7.2를 사용하는 경우 수정 팩 2 또는 3을 적용해야 합니다. DXP 업그레이드에 대해 알아보려면 [업그레이드 기본 사항](https://learn.liferay.com/w/dxp/installation-and-upgrades/upgrading-liferay/upgrade-basics) 을 참조하세요. 업그레이드 경로를 이해하려면 아래 표를 참조하세요.
 
 | 업그레이드 중         | 필수 수정팩 버전                           |
 | :-------------- | :---------------------------------- |
@@ -110,7 +110,7 @@ Fix Pack은 본질적으로 누적되며 이전에 릴리스된 모든 Fix Pack�
    * Commerce Enterprise는 [도움말 센터](https://customer.liferay.com/downloads?p_p_id=com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_productAssetCategoryId=118190997&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_fileTypeAssetCategoryId=118191001) 에서 이용 가능합니다.
    * Commerce Community는 [Liferay Commerce Community 다운로드 페이지에서 이용 가능합니다](https://www.liferay.com/downloads-community) 
 
-1. ` [Liferay Home]/deploy` 폴더에 `LPKG`를 배포합니다. Liferay DXP에 애플리케이션을 배포하는 방법에 대한 자세한 내용은 [앱 설치](https://learn.liferay.com/dxp/latest/ko/system-administration/installing-and-managing-apps/installing-apps/installing-apps.html) .
+1. ` [Liferay Home]/deploy` 폴더에 `LPKG`를 배포합니다. Liferay DXP에 애플리케이션을 배포하는 방법에 대한 자세한 내용은 [앱 설치](https://learn.liferay.com/w/dxp/system-administration/installing-and-managing-apps/installing-apps/installing-apps) .
 
 1. 아래에 표시된 것과 유사한 메시지가 응용 프로그램 서버 콘솔에 나타나는지 확인하십시오.
 
@@ -130,7 +130,7 @@ Fix Pack은 본질적으로 누적되며 이전에 릴리스된 모든 Fix Pack�
 
 ### 오래된 데이터 지우기 및 업그레이드 프로세스 확인
 
-1. ` [Liferay Home]/osgi/state` 폴더를 삭제합니다. OSGi 폴더에 대한 자세한 내용은 [앱 설치](https://learn.liferay.com/dxp/latest/ko/system-administration/installing-and-managing-apps/installing-apps/installing-apps.html) .
+1. ` [Liferay Home]/osgi/state` 폴더를 삭제합니다. OSGi 폴더에 대한 자세한 내용은 [앱 설치](https://learn.liferay.com/w/dxp/system-administration/installing-and-managing-apps/installing-apps/installing-apps) .
 
 1. 애플리케이션 서버를 시작하십시오.
 
@@ -179,5 +179,5 @@ Liferay Commerce 인스턴스가 업그레이드되었습니다.
 
 ## 관련 주제
 
-* [앱 설치](https://learn.liferay.com/dxp/latest/ko/system-administration/installing-and-managing-apps/installing-apps/installing-apps.html)
+* [앱 설치](https://learn.liferay.com/w/dxp/system-administration/installing-and-managing-apps/installing-apps/installing-apps)
 * [Liferay Commerce Fix 전달 방법](../get-help/commerce-enterprise-support/liferay-commerce-fix-delivery-method.md)

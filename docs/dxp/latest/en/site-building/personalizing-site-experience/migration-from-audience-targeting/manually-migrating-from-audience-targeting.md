@@ -21,7 +21,7 @@ For Session attributes that do not have a direct equivalent, use a URL field for
 
 ## Behavior Rules
 
-Starting with Liferay 7.2+, behavior-based rules are managed using Analytics Cloud. For more information, see the [Analytics Cloud documentation](https://learn.liferay.com/analytics-cloud/latest/en/people/segments/segments.html).
+Starting with Liferay 7.2+, behavior-based rules are managed using Analytics Cloud. For more information, see the [Analytics Cloud documentation](https://learn.liferay.com/w/analytics-cloud/people/segments/segments).
 
 ## Migrating Custom Rules
 
@@ -50,4 +50,4 @@ In addition, the [Content Page personalization](../../../site-building/personali
 - [Adding Custom Fields](../../../system-administration/configuring-liferay/adding-custom-fields.md)
 - [Segments Editor UI Reference](../segmentation/segments-editor-ui-reference.md)
 - [Creating Collections](../../../site-building/displaying-content/collections-and-collection-pages/creating-collections.md)
-- [Analytics Cloud Segments](https://learn.liferay.com/analytics-cloud/latest/en/people/segments/segments.html)
+- [Analytics Cloud Segments](https://learn.liferay.com/w/analytics-cloud/people/segments/segments)

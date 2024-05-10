@@ -242,7 +242,7 @@ You can now bulk-transition and/or reassign instances while analyzing the proces
 
 ## Global Menu
 
-A new application drawer houses cross-site applications, such as workflow, forms and [Commerce](https://learn.liferay.com/commerce/latest/en/index.html). 
+A new application drawer houses cross-site applications, such as workflow, forms and [Commerce](https://learn.liferay.com/w/commerce/index). 
 
 ![The Global Menu provides convenient access to cross-site applications.](./whats-new-73/images/29.png)
 

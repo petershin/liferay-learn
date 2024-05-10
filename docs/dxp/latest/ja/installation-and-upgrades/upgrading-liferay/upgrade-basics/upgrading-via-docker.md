@@ -41,7 +41,7 @@ Dockerイメージを使用してアップグレードする手順は次のと�
 
     * `deploy`: Dockerコンテナは、このフォルダからコンテナの自動デプロイ用フォルダにアーティファクトをコピーします。
 
-1. [Commerce](https://learn.liferay.com/commerce/latest/ja/index.html) を使用している場合は、Commerceをアップグレードする準備をしてください。  詳細については、 [Liferay Commerceのアップグレード](https://learn.liferay.com/commerce/latest/ja/installation-and-upgrades/upgrading-liferay-commerce.html) を参照してください。
+1. [Commerce](https://learn.liferay.com/w/commerce/index) を使用している場合は、Commerceをアップグレードする準備をしてください。  詳細については、 [Liferay Commerceのアップグレード](https://learn.liferay.com/w/commerce/installation-and-upgrades/upgrading-liferay-commerce) を参照してください。
 
 1. Liferayデータベースのアップグレードと一緒にマーケットプレイスアプリのデータをアップグレードする場合は、新しいLiferayバージョンの対象となる各アプリの最新バージョンを[ダウンロード](../../../system-administration/installing-and-managing-apps/installing-apps/downloading-apps.md)して、`new-version/deploy`フォルダにコピーします。 それ以外の場合は、 [アップグレード後の考慮事項](./post-upgrade-considerations.md) で説明されているように、データベースのアップグレード後にアプリをインストールし、データをアップグレードできます。
 

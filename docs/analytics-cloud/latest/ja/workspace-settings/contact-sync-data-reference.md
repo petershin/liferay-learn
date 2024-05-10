@@ -8,7 +8,7 @@ Liferay Instance から [Sync Contacts](../getting-started/connecting-liferay-dx
 
 ## カスタムフィールド
 
-[ユーザーへのカスタムフィールドの追加](https://learn.liferay.com/dxp/latest/ja/users-and-permissions/users/adding-custom-fields-to-users.html) ユーザーや組織など、Liferayの多くの資産やリソースを拡張することができます。 以下のカスタムフィールドがシンクされます。
+[ユーザーへのカスタムフィールドの追加](https://learn.liferay.com/w/dxp/users-and-permissions/users/adding-custom-fields-to-users) ユーザーや組織など、Liferayの多くの資産やリソースを拡張することができます。 以下のカスタムフィールドがシンクされます。
 
 | 属性            | 説明                                        |
 |:------------- |:----------------------------------------- |
@@ -20,7 +20,7 @@ Liferay Instance から [Sync Contacts](../getting-started/connecting-liferay-dx
 
 ## 組織
 
-ユーザーは、Liferay の異なる [組織について](https://learn.liferay.com/dxp/latest/ja/users-and-permissions/organizations/understanding-organizations.html) に所属することができます。 組織は、独自のサイトだけでなく、独自のロールやパーミッションを持つことができます。 組織は、親組織の下に子組織を持つことができます。 以下の組織フィールドがシンクされます。
+ユーザーは、Liferay の異なる [組織について](https://learn.liferay.com/w/dxp/users-and-permissions/organizations/understanding-organizations) に所属することができます。 組織は、独自のサイトだけでなく、独自のロールやパーミッションを持つことができます。 組織は、親組織の下に子組織を持つことができます。 以下の組織フィールドがシンクされます。
 
 | 属性                       | 説明                    |
 |:------------------------ |:--------------------- |
@@ -33,7 +33,7 @@ Liferay Instance から [Sync Contacts](../getting-started/connecting-liferay-dx
 
 ## ロール
 
-Liferay では、ユーザーにさまざまな [ロールと権限について](https://learn.liferay.com/dxp/latest/ja/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.html) を与えることができます。 ロールは、異なるレベルの権限を持つように作成・管理することができます。 以下のロールフィールドがシンクされます。
+Liferay では、ユーザーにさまざまな [ロールと権限について](https://learn.liferay.com/w/dxp/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions) を与えることができます。 ロールは、異なるレベルの権限を持つように作成・管理することができます。 以下のロールフィールドがシンクされます。
 
 | 属性        | 説明          |
 |:--------- |:----------- |
@@ -42,7 +42,7 @@ Liferay では、ユーザーにさまざまな [ロールと権限について]
 
 ## チーム
 
- また、ユーザーは [サイトにチームを作成する](https://learn.liferay.com/dxp/latest/ja/site-building/sites/site-membership/creating-teams-for-sites.html) に所属することができます。 ユーザーは、1つのサイト内でチームにまとめられ、サイト固有の機能を発揮します。 以下のチームフィールドが同期されます。
+ また、ユーザーは [サイトにチームを作成する](https://learn.liferay.com/w/dxp/site-building/sites/site-membership/creating-teams-for-sites) に所属することができます。 ユーザーは、1つのサイト内でチームにまとめられ、サイト固有の機能を発揮します。 以下のチームフィールドが同期されます。
 
 | 属性       | 説明        |
 |:-------- |:--------- |
@@ -51,7 +51,7 @@ Liferay では、ユーザーにさまざまな [ロールと権限について]
 
 ## ユーザーグループ
 
-[ユーザーグループの作成と管理](https://learn.liferay.com/dxp/latest/ja/users-and-permissions/user-groups/creating-and-managing-user-groups.html) 特定の目的のためにグループ化された、異なる組織に所属するユーザーのことである。 以下のユーザーグループのフィールドがシンクされます。
+[ユーザーグループの作成と管理](https://learn.liferay.com/w/dxp/users-and-permissions/user-groups/creating-and-managing-user-groups) 特定の目的のためにグループ化された、異なる組織に所属するユーザーのことである。 以下のユーザーグループのフィールドがシンクされます。
 
 | 属性            | 説明             |
 |:------------- |:-------------- |
@@ -60,7 +60,7 @@ Liferay では、ユーザーにさまざまな [ロールと権限について]
 
 ## ユーザーグループサイト
 
-[ユーザーグループ](https://learn.liferay.com/dxp/latest/ja/users-and-permissions/user-groups.html) グループメンバーの個人サイトに追加されるページです。 以下のユーザーグループサイトのフィールドが同期されます。
+[ユーザーグループ](https://learn.liferay.com/w/dxp/users-and-permissions/user-groups) グループメンバーの個人サイトに追加されるページです。 以下のユーザーグループサイトのフィールドが同期されます。
 
 | 属性        | 説明            |
 |:--------- |:------------- |

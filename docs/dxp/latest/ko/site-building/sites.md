@@ -54,4 +54,4 @@ toc:
 
 ## 커머스가 있는 사이트 사용
 
-라이프레이 사이트는 [채널](https://learn.liferay.com/commerce/latest/ko/store-management/channels.html) 과 함께 이커머스 스토어를 생성하는 데 사용됩니다. 각 채널의 사이트 유형(예: B2B, B2C 또는 B2X)에 따라 사이트가 계정과 작동하는 방식이 결정됩니다. 자세한 내용은 [사이트 및 사이트 유형](https://learn.liferay.com/commerce/latest/ko/starting-a-store/sites-and-site-types.html) 을 참조하세요.
+라이프레이 사이트는 [채널](https://learn.liferay.com/w/commerce/store-management/channels) 과 함께 이커머스 스토어를 생성하는 데 사용됩니다. 각 채널의 사이트 유형(예: B2B, B2C 또는 B2X)에 따라 사이트가 계정과 작동하는 방식이 결정됩니다. 자세한 내용은 [사이트 및 사이트 유형](https://learn.liferay.com/w/commerce/starting-a-store/sites-and-site-types) 을 참조하세요.

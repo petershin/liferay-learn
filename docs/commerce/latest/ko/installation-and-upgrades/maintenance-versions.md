@@ -2,9 +2,9 @@
 
 수정팩은 정기적으로 릴리스되며 버그 및 보안 수정사항을 포함합니다. 사용자 정의 코드가 배치된 설치에 수정팩을 설치하는 경우 프로덕션에 설치하기 전에 테스트 환경에서 사용자 정의 코드로 수정팩을 배치하고 테스트하는 것이 좋습니다.
 
-다양한 패치 유형에 대해 알아보려면 [이전 DXP 버전 패치 적용](https://learn.liferay.com/dxp/latest/ko/installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier.html) 및 [패치 유형 이해](https://learn.liferay.com/dxp/latest/ko/installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier/understanding-patch-types-for-dxp-7-3-and-earlier.html) 참조하세요.
+다양한 패치 유형에 대해 알아보려면 [이전 DXP 버전 패치 적용](https://learn.liferay.com/w/dxp/installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier) 및 [패치 유형 이해](https://learn.liferay.com/w/dxp/installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier/understanding-patch-types-for-dxp-7-3-and-earlier) 참조하세요.
 
-패치 적용 방법을 알아보려면 [패치 설치](https://learn.liferay.com/dxp/latest/ko/installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier/installing-patches-for-dxp-7-3-and-earlier.html) 을 참조하십시오.
+패치 적용 방법을 알아보려면 [패치 설치](https://learn.liferay.com/w/dxp/installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier/installing-patches-for-dxp-7-3-and-earlier) 을 참조하십시오.
 
 Liferay Commerce 3.0(오픈 소스) 사용자는 Liferay Portal 7.3의 새 릴리스를 통해 동일한 버그 및 보안 업데이트에 액세스할 수 있습니다.
 

@@ -26,7 +26,7 @@ Liferay DXP 7.3以前のバージョンでは、「チャネル設定」の「�
 
 場合によっては、特定のカテゴリーの商品をあるページに表示させたいことがあるかもしれません。 これは、プロモーションやオファーのある商品を表示するのに便利です。 特定のカテゴリーをページにマッピングするには、以下の手順に従います：
 
-1. 新しい [ページについて](https://learn.liferay.com/dxp/latest/ja/site-building/creating-pages/understanding-pages/understanding-pages.html#widget-pages) を作成し、 **カテゴリーコンテンツ** ウィジェットとその他の必要なページ要素をそこに追加します。
+1. 新しい [ページについて](https://learn.liferay.com/w/dxp/site-building/creating-pages/understanding-pages/understanding-pages#widget-pages) を作成し、 **カテゴリーコンテンツ** ウィジェットとその他の必要なページ要素をそこに追加します。
 
 1. ［**グローバルメニュー**］ (![Global Menu](../images/icon-applications-menu.png))］&rarr; Commerce タブ&rarr; ［**Store Management**］&rarr; ［**チャネル**］をクリックします。
 
@@ -50,4 +50,4 @@ Liferay DXP 7.3以前のバージョンでは、「チャネル設定」の「�
 
 ## 関連トピック
 
-- [表示ページを使用したカテゴリー表示](https://learn.liferay.com/dxp/latest/ja/site-building/displaying-content/using-display-page-templates/displaying-categories-using-display-pages.html)
+- [表示ページを使用したカテゴリー表示](https://learn.liferay.com/w/dxp/site-building/displaying-content/using-display-page-templates/displaying-categories-using-display-pages)

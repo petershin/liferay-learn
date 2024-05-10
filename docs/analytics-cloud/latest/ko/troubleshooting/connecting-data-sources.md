@@ -91,7 +91,7 @@ Liferay DXP 설치는 다음 수정팩 최소 요구 사항을 충족해야 합�
 
 ## 로그인한 사용자가 익명으로 표시됨
 
-[연락처 동기화](../getting-started/connecting-liferay-dxp-to-analytics-cloud.md) 인 경우 Analytics Cloud는 Liferay DXP 내에 존재하는 사용자 기록에 의존합니다. 따라서 [싱글 사인온 구성](https://learn.liferay.com/dxp/latest/ko/installation-and-upgrades/securing-liferay/configuring-sso.html) 또는 [LDAP 디렉토리에 연결](https://learn.liferay.com/dxp/latest/ko/users-and-permissions/connecting-to-a-user-directory/connecting-to-an-ldap-directory.html) 사용하는 경우 Analytics Cloud와 연락처를 동기화하기 전에 모든 사용자를 Liferay DXP로 가져오거나 매핑해야 합니다.
+[연락처 동기화](../getting-started/connecting-liferay-dxp-to-analytics-cloud.md) 인 경우 Analytics Cloud는 Liferay DXP 내에 존재하는 사용자 기록에 의존합니다. 따라서 [싱글 사인온 구성](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/configuring-sso) 또는 [LDAP 디렉토리에 연결](https://learn.liferay.com/w/dxp/users-and-permissions/connecting-to-a-user-directory/connecting-to-an-ldap-directory) 사용하는 경우 Analytics Cloud와 연락처를 동기화하기 전에 모든 사용자를 Liferay DXP로 가져오거나 매핑해야 합니다.
 
 ## 사용자 동기화에 시간이 오래 걸림
 

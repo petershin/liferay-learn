@@ -70,7 +70,7 @@ Liferay DXP를 구독하고 있는 경우 최신 수정 팩으로 업데이트�
 
 ### 상거래 업그레이드 준비
 
-[커머스](https://learn.liferay.com/commerce/latest/ko/index.html) 사용하는 경우 Liferay 데이터베이스를 업그레이드하기 전에 업그레이드를 준비하십시오. 자세한 내용은 [Liferay Commerce 업그레이드](https://learn.liferay.com/commerce/latest/ko/installation-and-upgrades/upgrading-liferay-commerce.html) 참조하십시오.
+[커머스](https://learn.liferay.com/w/commerce/index) 사용하는 경우 Liferay 데이터베이스를 업그레이드하기 전에 업그레이드를 준비하십시오. 자세한 내용은 [Liferay Commerce 업그레이드](https://learn.liferay.com/w/commerce/installation-and-upgrades/upgrading-liferay-commerce) 참조하십시오.
 
 ### Marketplace 앱 업데이트
 

@@ -12,7 +12,7 @@ If required for your development environment, the last stage of migration is to 
 You may need to connect your Liferay Cloud environment to a VPN if:
 
 * Your own project requirements involve the use of a VPN
-* You want to connect your environment to an [LDAP server](https://learn.liferay.com/dxp/latest/en/users-and-permissions/connecting-to-a-user-directory/connecting-to-an-ldap-directory.html?highlight=ldap)
+* You want to connect your environment to an [LDAP server](https://learn.liferay.com/w/dxp/users-and-permissions/connecting-to-a-user-directory/connecting-to-an-ldap-directory?highlight=ldap)
 * You want to connect to environment to another directory server
 * You need to use a remote application that interacts with other web services
 

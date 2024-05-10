@@ -52,7 +52,7 @@ JavaScriptコードを追加する最も簡単な方法は、個々のページ�
 
 1. ［**保存**］ をクリックすると、ページでイベントを追跡する準備が整います。
 
-詳しくは、 [ページ単位での設定](https://learn.liferay.com/dxp/latest/ja/site-building/creating-pages/page-settings/configuring-individual-pages.html) を参照してください。
+詳しくは、 [ページ単位での設定](https://learn.liferay.com/w/dxp/site-building/creating-pages/page-settings/configuring-individual-pages) を参照してください。
 
 ### ページフラグメントの追加
 
@@ -74,7 +74,7 @@ Javascriptのコードを追加するもう一つの方法は、コンテント�
 
 1. フラグメントを追加したいコンテントページに移動します。 ［**編集**］ アイコン（![Edit icon.](../../images/icon-edit.png)）をクリックして、ページエディタを開きます。 先ほど作成したフラグメントを見つけ、自分のページにドラッグします。 ［**Publish**］ をクリックします。
 
-詳細については、 [フラグメントの開発](https://learn.liferay.com/dxp/latest/ja/site-building/developer-guide/developing-page-fragments/developing-fragments-intro.html) を参照してください。
+詳細については、 [フラグメントの開発](https://learn.liferay.com/w/dxp/site-building/developer-guide/developing-page-fragments/developing-fragments-intro) を参照してください。
 
 ### カスタムインプリメンテーションの使用
 

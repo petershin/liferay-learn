@@ -1,6 +1,6 @@
 # カスタム注文ルールの実装
 
-Liferayでは、特定の条件を満たした注文に対して注文ルールを設定することができます。 最少注文金額のルールは、すぐに利用可能です。 特定の値以下の注文のチェックアウトを防ぐことができます。 新しい注文ルールを追加するには、 [`COREntryType`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/commerce/commerce-order-rule-api/src/main/java/com/liferay/commerce/order/rule/entry/type/COREntryType.java) インターフェースを実装する必要があります。 詳しくは、 [コマースの注文ルール](https://learn.liferay.com/commerce/latest/ja/order-management/order-rules.html) をご覧ください。
+Liferayでは、特定の条件を満たした注文に対して注文ルールを設定することができます。 最少注文金額のルールは、すぐに利用可能です。 特定の値以下の注文のチェックアウトを防ぐことができます。 新しい注文ルールを追加するには、 [`COREntryType`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/commerce/commerce-order-rule-api/src/main/java/com/liferay/commerce/order/rule/entry/type/COREntryType.java) インターフェースを実装する必要があります。 詳しくは、 [コマースの注文ルール](https://learn.liferay.com/w/commerce/order-management/order-rules) をご覧ください。
 
 ## カスタム注文ルールのデプロイと言語キーの追加
 

@@ -28,12 +28,12 @@ MiniumまたはSpeedwellアクセラレータを使用している場合は、�
 
 ### ページにウィッシュリストウィジェットを追加する
 
-次の手順に従って、ウィッシュリストウィジェットを [ページについて](https://learn.liferay.com/dxp/latest/ja/site-building/creating-pages/understanding-pages/understanding-pages.html#widget-pages) に追加します。
+次の手順に従って、ウィッシュリストウィジェットを [ページについて](https://learn.liferay.com/w/dxp/site-building/creating-pages/understanding-pages/understanding-pages#widget-pages) に追加します。
 
 1. トップメニューから **追加**（![追加](../images/icon-add-widget.png)）ボタンをクリックします。
 
     ```{important}
-    [ページについて](https://learn.liferay.com/dxp/latest/ja/site-building/creating-pages/understanding-pages/understanding-pages.html#content-pages) を使用している場合、ウィジェットを追加する方法は2つあります。
+    [ページについて](https://learn.liferay.com/w/dxp/site-building/creating-pages/understanding-pages/understanding-pages#content-pages) を使用している場合、ウィジェットを追加する方法は2つあります。
 
     1. トップメニューから*編集* (![Edit](../images/icon-edit-pencil.png))ボタンをクリックし、右側にある*追加* (![Add](../images/icon-add-widget.png))ボタンをクリックします。 残りの手順は上記と同じです。
 

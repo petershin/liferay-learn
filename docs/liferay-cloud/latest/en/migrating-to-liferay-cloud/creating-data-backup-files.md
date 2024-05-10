@@ -21,7 +21,7 @@ Before you create your data backup files, you must arrange a window to freeze th
 
 Make sure your database is compatible with MySQL 5.7. You can use a tool like [DBeaver](https://dbeaver.io/) to convert other database formats to MySQL.
 
-Coordinate with your database administrator before and after the conversion to ensure data integrity. Test the converted database by [connecting it to a local Liferay installation](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/installing-liferay/configuring-a-database.html) before proceeding.
+Coordinate with your database administrator before and after the conversion to ensure data integrity. Test the converted database by [connecting it to a local Liferay installation](https://learn.liferay.com/w/dxp/installation-and-upgrades/installing-liferay/configuring-a-database) before proceeding.
 
 ### Ensuring Correct Table Capitalization
 
@@ -70,10 +70,10 @@ The server creates a compressed database dump file named `database.gz`.
 If your document library is using an file storage method that is not a file system store (such as Amazon S3Store or DBStore), then you must migrate to a file system store before proceeding. You can either use the Simple File System Store or Advanced File System Store.
 
 ```{important}
-The [Advanced File System Store](https://learn.liferay.com/dxp/latest/en/system-administration/file-storage/configuring-file-storage.html) uses a folder structure that more easily scales to large data sets. Migrating to the Advanced File System Store is recommended to accommodate more files in the document library in the long term and is **required** for any production environment.
+The [Advanced File System Store](https://learn.liferay.com/w/dxp/system-administration/file-storage/configuring-file-storage) uses a folder structure that more easily scales to large data sets. Migrating to the Advanced File System Store is recommended to accommodate more files in the document library in the long term and is **required** for any production environment.
 ```
 
-See [File Store Migration](https://learn.liferay.com/dxp/latest/en/system-administration/file-storage/file-store-migration.html) for steps on how to migrate the document library.
+See [File Store Migration](https://learn.liferay.com/w/dxp/system-administration/file-storage/file-store-migration) for steps on how to migrate the document library.
 
 ### Create a Jenkins Build with the Change
 

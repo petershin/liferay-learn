@@ -39,5 +39,5 @@ Liferay Commerceは、Liferayサイトをサイトの種類と組み合わせて
 ## 関連トピック
 
 * [ストア設定の概要](../starting-a-store/store-setup-overview.md)
-* [サイトの構築](https://learn.liferay.com/dxp/latest/ja/site-building.html)
+* [サイトの構築](https://learn.liferay.com/w/dxp/site-building)
 * [アカウント管理](../users-and-accounts/account-management.md)

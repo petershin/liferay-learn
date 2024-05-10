@@ -2,7 +2,7 @@
 
 > **サブスクライバー**
 
-ユーザーセグメントでAnalytics Cloudを使用するには、最初にDXPデータソースをAnalytics Cloudに接続し、ユーザーと分析の同期を有効にする必要があります。 DXPとの接続手順を含むAnalytics Cloudの詳細については、公式の [Analytics Cloud](https://learn.liferay.com/analytics-cloud/latest/ja/index.html) を参照してください。
+ユーザーセグメントでAnalytics Cloudを使用するには、最初にDXPデータソースをAnalytics Cloudに接続し、ユーザーと分析の同期を有効にする必要があります。 DXPとの接続手順を含むAnalytics Cloudの詳細については、公式の [Analytics Cloud](https://learn.liferay.com/w/analytics-cloud/index) を参照してください。
 
 ```{important}
 Analytics Cloudとの同期は即時ではないため、Analytics CloudとLiferay DXPを接続したら、まずユーザーとデータが同期するのを待つ必要があります。 それが完了したら、Analytics Cloudでセグメントを作成して、DXPでデータをキャプチャできます。
@@ -12,7 +12,7 @@ Analytics Cloudとの同期は即時ではないため、Analytics CloudとLifer
 
 次の手順に従って、セグメント分析を取得します。
 
-1. [セグメントの作成](https://learn.liferay.com/analytics-cloud/latest/ja/people/segments/creating-segments.html) します（まだ作成していない場合）。
+1. [セグメントの作成](https://learn.liferay.com/w/analytics-cloud/people/segments/creating-segments) します（まだ作成していない場合）。
 
     ```{note}
     少なくとも1つのメンバーを含むセグメントのみがLiferay DXPと同期されます。 つまり、Analytics Cloudで作成された空のセグメントは、Liferay DXPでは使用できません。

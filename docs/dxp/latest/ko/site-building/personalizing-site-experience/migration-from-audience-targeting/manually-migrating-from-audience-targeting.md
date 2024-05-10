@@ -12,7 +12,7 @@
 
 ## 행동 규칙
 
-Liferay 7.2+부터 행동 기반 규칙은 Analytics Cloud를 사용하여 관리됩니다. 자세한 내용은 [세그먼트](https://learn.liferay.com/analytics-cloud/latest/ko/people/segments/segments.html) 참조하십시오.
+Liferay 7.2+부터 행동 기반 규칙은 Analytics Cloud를 사용하여 관리됩니다. 자세한 내용은 [세그먼트](https://learn.liferay.com/w/analytics-cloud/people/segments/segments) 참조하십시오.
 
 ## 맞춤 규칙 마이그레이션
 
@@ -42,4 +42,4 @@ Liferay 7.2 사용자의 경우 컬렉션은 [콘텐츠 세트](../../../site-bu
 * [사용자 정의 사용자 필드 만들기](../../../users-and-permissions/users/adding-custom-fields-to-users.md)
 * [세그먼트 편집기 UI 참조](../segmentation/segments-editor-ui-reference.md)
 * [컬렉션 만들기](../../../site-building/displaying-content/collections-and-collection-pages/creating-collections.md)
-* [세그먼트](https://learn.liferay.com/analytics-cloud/latest/ko/people/segments/segments.html)
+* [세그먼트](https://learn.liferay.com/w/analytics-cloud/people/segments/segments)

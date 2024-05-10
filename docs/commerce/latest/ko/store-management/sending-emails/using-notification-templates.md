@@ -3,7 +3,7 @@
 전자 메일 알림은 상점의 이벤트를 기반으로 사용자에게 자동으로 전송됩니다. 이를 보내려면 먼저 **알림 템플릿** 을 생성해야 합니다. 알림 템플릿은 이메일 알림의 발신자, 트리거 및 콘텐츠를 정의합니다.
 
 ```{note}
-Liferay Commerce의 알림을 사용하려면 먼저 Liferay 시스템에 대한 메일 설정을 구성하십시오. 자세한 내용은 [메일 구성](https://learn.liferay.com/dxp/latest/ko/installation-and-upgrades/setting-up-liferay/configuring-mail.html) 을 참조하십시오.
+Liferay Commerce의 알림을 사용하려면 먼저 Liferay 시스템에 대한 메일 설정을 구성하십시오. 자세한 내용은 [메일 구성](https://learn.liferay.com/w/dxp/installation-and-upgrades/setting-up-liferay/configuring-mail) 을 참조하십시오.
 ```
 
 ## 이벤트 트리거

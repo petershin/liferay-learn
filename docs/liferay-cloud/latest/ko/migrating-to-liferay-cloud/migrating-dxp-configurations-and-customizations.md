@@ -7,7 +7,7 @@
 먼저 마이그레이션하려는 온프레미스 설치에서 Liferay 구성 파일을 구성합니다. 여기에는 사용 중인 [개의 포털 속성 파일](../customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.md#portal-properties) 이 포함됩니다.
 
 ```{tip}
-Liferay 관련 코드는 [Liferay DXP 작업 영역](https://learn.liferay.com/dxp/latest/en/developing-applications/tooling/liferay_workspace.html) 과 같이 구성된 'liferay' 폴더에 속합니다.
+Liferay 관련 코드는 [Liferay DXP 작업 영역](https://learn.liferay.com/w/dxp/developing-applications/tooling/liferay_workspace) 과 같이 구성된 'liferay' 폴더에 속합니다.
 ```
 
 이전에 복제한 Liferay Cloud 프로젝트 리포지토리에서 [](./matching-dxp-versions.md#clone-the-liferay-cloud-repository) liferay/configs/ `/{ENV}폴더(Liferay Cloud 환경에 해당)로 이동하고` 모든 `
@@ -25,13 +25,13 @@ Liferay 관련 코드는 [Liferay DXP 작업 영역](https://learn.liferay.com/d
 
 ## OSGi 모듈 구성
 
-온프레미스 Liferay 설치에 사용되는 사용자 정의 OSGi 모듈이 있는 경우 모든 [OSGi 서비스 재정의](https://learn.liferay.com/dxp/latest/ko/liferay-internals/extending-liferay/overriding-osgi-services.html) 을 적절한 환경의 `liferay/modules/{ENV}/` 폴더(동일한 작업 공간 폴더 구조 포함)에 넣습니다.
+온프레미스 Liferay 설치에 사용되는 사용자 정의 OSGi 모듈이 있는 경우 모든 [OSGi 서비스 재정의](https://learn.liferay.com/w/dxp/liferay-internals/extending-liferay/overriding-osgi-services) 을 적절한 환경의 `liferay/modules/{ENV}/` 폴더(동일한 작업 공간 폴더 구조 포함)에 넣습니다.
 
 변경 사항이 배포되면 사용자 정의 모듈 코드가 자동으로 컴파일된 다음 `liferay` 서비스 컨테이너의 `$LIFERAY_HOME/deploy/` 폴더에 배포됩니다.
 
 ## 사용자 지정 테마 구성
 
-다음으로 모든 [환경 설정 및 테마 만들기](https://learn.liferay.com/dxp/latest/ko/site-building/site-appearance/themes/theme-development/getting-started/setting-up-an-environment-and-creating-a-theme.html) 의 소스 코드를 해당 환경의 `liferay/themes/{ENV}/` 폴더에 넣습니다.
+다음으로 모든 [환경 설정 및 테마 만들기](https://learn.liferay.com/w/dxp/site-building/site-appearance/themes/theme-development/getting-started/setting-up-an-environment-and-creating-a-theme) 의 소스 코드를 해당 환경의 `liferay/themes/{ENV}/` 폴더에 넣습니다.
 
 변경 사항이 배포되면 사용자 지정 테마가 자동으로 빌드되어 `liferay` 서비스 컨테이너의 `$LIFERAY_HOME/deploy/` 폴더에 배포됩니다.
 

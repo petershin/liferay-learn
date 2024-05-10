@@ -67,7 +67,7 @@ Connecting Liferay DXP to Analytics Cloud has these prerequisites:
 
    ![Select an existing property or create a new one.](./connecting-liferay-dxp-to-analytics-cloud/images/03.png)
 
-1. Select the sites you want to assign to the property. Enable the _Commerce_ toggle to assign Commerce [channels](https://learn.liferay.com/commerce/latest/en/store-management/channels/introduction-to-channels.html) as well.
+1. Select the sites you want to assign to the property. Enable the _Commerce_ toggle to assign Commerce [channels](https://learn.liferay.com/w/commerce/store-management/channels/introduction-to-channels) as well.
 
    You can assign the same site or channel to only one property at a time. See [Scoping Sites and Individuals Using Properties](../workspace-settings/scoping-sites-and-individuals-using-properties.md) for more information.
 

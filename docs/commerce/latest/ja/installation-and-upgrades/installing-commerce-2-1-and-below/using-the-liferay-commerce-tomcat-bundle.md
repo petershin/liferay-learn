@@ -28,5 +28,5 @@ Liferay Commerceバンドルを使用するには、次の手順を実行しま�
 ## 関連トピック
 
 * [インストールの概要](../installation-overview.md)
-* [Liferay-Tomcatバンドルのインストール](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/installing-liferay/installing-a-liferay-tomcat-bundle.html)
+* [Liferay-Tomcatバンドルのインストール](https://learn.liferay.com/w/dxp/installation-and-upgrades/installing-liferay/installing-a-liferay-tomcat-bundle)
 * [Liferay Commerce3.0互換性マトリクス](https://help.liferay.com/hc/ja/articles/360049238151)

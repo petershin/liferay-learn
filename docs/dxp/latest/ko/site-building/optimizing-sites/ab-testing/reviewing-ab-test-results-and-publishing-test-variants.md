@@ -32,7 +32,7 @@ A/B 테스트 결과를 검토하고 변형을 게시하려면
    A/B 테스트 변형을 게시하면 콘텐츠 페이지를 방문하는 모든 사용자에 대해 변형이 활성화됩니다.
    ```
 
-A/B 테스트 패널에서 **Analytics Cloud에서 데이터 보기** 버튼을 클릭하면 Analytics Cloud 대시보드로 이동하여 다른 테스트 통계를 볼 수 있습니다. 자세한 내용은 [A/B 테스팅 분석](https://learn.liferay.com/analytics-cloud/latest/en/optimization/ab-testing.html) 을 참조하세요.
+A/B 테스트 패널에서 **Analytics Cloud에서 데이터 보기** 버튼을 클릭하면 Analytics Cloud 대시보드로 이동하여 다른 테스트 통계를 볼 수 있습니다. 자세한 내용은 [A/B 테스팅 분석](https://learn.liferay.com/w/analytics-cloud/optimization/ab-testing) 을 참조하세요.
 
 ## 관련 주제
 

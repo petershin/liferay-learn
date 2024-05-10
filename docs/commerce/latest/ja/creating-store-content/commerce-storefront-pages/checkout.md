@@ -35,7 +35,7 @@
 注文が確定されると、販売者は注文を処理できる状態になります。 詳細は、[注文ライフサイクル](../../order-management/orders/order-life-cycle.md)を参照してください。
 
 ```{note}
-*チェックアウト*ウィジェットは、Liferayのアダプティブメディアをすぐにサポートします。 詳しくは、 [配信デバイスと画面最適化メディア](https://learn.liferay.com/dxp/latest/ja/content-authoring-and-management/documents-and-media/publishing-and-sharing/serving-device-and-screen-optimized-media.html) を参照してください。
+*チェックアウト*ウィジェットは、Liferayのアダプティブメディアをすぐにサポートします。 詳しくは、 [配信デバイスと画面最適化メディア](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/publishing-and-sharing/serving-device-and-screen-optimized-media) を参照してください。
 ```
 
 ## 関連トピック

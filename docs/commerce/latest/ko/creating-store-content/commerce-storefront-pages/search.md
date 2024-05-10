@@ -5,7 +5,7 @@
 [최소 가속기를 사용하는 경우](../../starting-a-store/using-the-minium-accelerator-to-jump-start-your-b2b-store.md), 검색 페이지에는 **검색 표시줄** , **검색 옵션** , **검색 결과** , **유형 패싯** , **태그** , **범주** , **사이트** , **폴더** , **사용자** 및 **Modified Facet** 위젯.
 
 ```{note}
-*검색 결과* 위젯은 즉시 사용 가능한 Liferay의 적응형 미디어를 지원합니다. [장치 및 화면 최적화 미디어 제공](https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/documents-and-media/publishing-and-sharing/serving-device- and-screen-optimized-media.html) 을 참조하세요.
+*검색 결과* 위젯은 즉시 사용 가능한 Liferay의 적응형 미디어를 지원합니다. [장치 및 화면 최적화 미디어 제공](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/publishing-and-sharing/serving-device- and-screen-optimized-media.html) 을 참조하세요.
 ```
 
 ![Minium 액셀러레이터에서 바로 사용할 수 있는 검색 페이지입니다.](./search/images/01.png)

@@ -16,7 +16,7 @@
 
    ![Search for the Account Selector fragment in the Fragments and Widgets sidebar.](./using-the-account-selector-fragment/images/01.png)
 
-1. フラグメントをページにドラッグ＆ドロップする。 この断片を [アカウント管理ウィジェット](https://learn.liferay.com/dxp/latest/ja/users-and-permissions/accounts/account-management-widget.html) と間違えないでください。
+1. フラグメントをページにドラッグ＆ドロップする。 この断片を [アカウント管理ウィジェット](https://learn.liferay.com/w/dxp/users-and-permissions/accounts/account-management-widget) と間違えないでください。
 
 1. **Publish** をクリックする。
 

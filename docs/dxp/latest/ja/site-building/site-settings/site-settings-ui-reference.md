@@ -29,7 +29,7 @@ Liferay DXP 7.4では、サイト設定アプリケーションが大幅に変�
 - 支払
 - 出荷先
 
-ここでは、サイトスコープでのCommerce設定を行うことができます。 commerceの設定の詳細は、 [Liferay Commerce設定の概要](https://learn.liferay.com/commerce/latest/ja/store-management/liferay-commerce-configuration-overview.html) を参照してください。
+ここでは、サイトスコープでのCommerce設定を行うことができます。 commerceの設定の詳細は、 [Liferay Commerce設定の概要](https://learn.liferay.com/w/commerce/store-management/liferay-commerce-configuration-overview) を参照してください。
 
 ![commerceのデフォルトサイト設定](./site-settings-ui-reference/images/21.png)
 
@@ -83,7 +83,7 @@ Piwikの設定では、スクリプトの開始タグと終了タグを含む完
 
 ### サードパーティー
 
-Liferay CommerceのPunchOut2Go Site設定を行います。 詳細は、 [Liferay Commerce Connector to PunchOut2Goのリファレンスのガイド](https://learn.liferay.com/commerce/latest/en/add-ons-and-connectors/liferay-commerce-connector-to-punchout2go-reference-guide.html) を参照してください。
+Liferay CommerceのPunchOut2Go Site設定を行います。 詳細は、 [Liferay Commerce Connector to PunchOut2Goのリファレンスのガイド](https://learn.liferay.com/w/commerce/add-ons-and-connectors/liferay-commerce-connector-to-punchout2go-reference-guide) を参照してください。
 
 ### サードパーティアプリケーション
 
@@ -199,8 +199,8 @@ Liferay DXPとDocuSignを統合し、電子署名を管理することができ�
 | セクション             | 説明                                                                                                                                                                       |
 |:----------------- |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | その他               | お客様がサイトに定義したカスタムサイト設定があれば、それも含みます。 詳細は、[設定へのアクセス](../../building-applications/core-frameworks/configuration-framework/setting-and-accessing-configurations.md)を参照してください。 |
-| 税                 | Liferay Commerceの「Remote Commerce Tax Configuration」の設定を行います。 詳細は、 [Commerce](https://learn.liferay.com/commerce/latest/ja/index.html) のドキュメントを参照してください。         |
-| category.tax-rate | Liferay Commerce Avalara統合の設定を行います。 詳細は、 [Commerce](https://learn.liferay.com/commerce/latest/ja/index.html) のドキュメントを参照してください。                                   |
+| 税                 | Liferay Commerceの「Remote Commerce Tax Configuration」の設定を行います。 詳細は、 [Commerce](https://learn.liferay.com/w/commerce/index) のドキュメントを参照してください。         |
+| category.tax-rate | Liferay Commerce Avalara統合の設定を行います。 詳細は、 [Commerce](https://learn.liferay.com/w/commerce/index) のドキュメントを参照してください。                                   |
 
 ## Liferay DXP 7.2および7.3のサイト設定UIリファレンス
 

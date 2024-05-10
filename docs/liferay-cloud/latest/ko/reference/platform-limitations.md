@@ -49,7 +49,7 @@ Liferay Cloud 사용을 계획할 때 다음과 같은 일반적인 제한 사�
 
 이러한 제한 사항은 각 Liferay 클라우드 환경에서 [Liferay 서비스](../customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service.md) 에 적용됩니다.
 
-**원격 스테이징** : [원격 라이브 스테이징 구성](https://learn.liferay.com/dxp/latest/ko/site-building/publishing-tools/staging/configuring-remote-live-staging.html) 은 Liferay Cloud에서 사용할 수 없습니다. 로컬 스테이징은 계속 사용할 수 있으며 지원됩니다.
+**원격 스테이징** : [원격 라이브 스테이징 구성](https://learn.liferay.com/w/dxp/site-building/publishing-tools/staging/configuring-remote-live-staging) 은 Liferay Cloud에서 사용할 수 없습니다. 로컬 스테이징은 계속 사용할 수 있으며 지원됩니다.
 
 **자동 크기 조정** : 활성화되면 자동 크기 조정은 기본 최대 10개까지만 새 인스턴스를 추가할 수 있습니다. 최대 100개의 인스턴스까지 서로 다른 최대 인스턴스 수를 구성할 수 있습니다.
 

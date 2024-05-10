@@ -193,7 +193,7 @@ You can paginate, search, and sort the returned order types. See the [`getOrderT
 | :---------- | :---------------------------------- |
 | `name:desc` | Sort by `name` in descending order. |
 
-Read [API Query Parameters](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/api-query-parameters.html) for more information.
+Read [API Query Parameters](https://learn.liferay.com/w/dxp/headless-delivery/consuming-apis/api-query-parameters) for more information.
 
 ## Get an Order Type
 
@@ -303,4 +303,4 @@ Code:
    :lines: 8-17
 ```
 
-The [API Explorer](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services.html) shows the `OrderType` services and schemas and has an interface to test each service.
+The [API Explorer](https://learn.liferay.com/w/dxp/headless-delivery/consuming-apis/consuming-rest-services) shows the `OrderType` services and schemas and has an interface to test each service.

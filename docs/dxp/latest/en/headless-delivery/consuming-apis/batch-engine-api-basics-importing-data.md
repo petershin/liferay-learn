@@ -133,7 +133,7 @@ Here are the command's arguments:
 | `-u "test@liferay.com:learn"`                                                                     | Basic authentication credentials                    |
 
 ```{note}
-Basic authentication is used here for demonstration purposes. For production, you should authorize users via [OAuth2](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2.html). See [Use OAuth2 to authorize users](../using-oauth2/using-oauth2-to-authorize-users.md) for a sample React application that uses Oauth2.
+Basic authentication is used here for demonstration purposes. For production, you should authorize users via [OAuth2](https://learn.liferay.com/w/dxp/headless-delivery/using-oauth2). See [Use OAuth2 to authorize users](../using-oauth2/using-oauth2-to-authorize-users.md) for a sample React application that uses Oauth2.
 ```
 
 The other cURL commands use similar JSON arguments.
@@ -208,7 +208,7 @@ Code:
 
 ## Importing Data to a Site
 
-You can import data to a site by executing the following cURL or Java command. The example imports blog posts to a site. [Find your Site’s ID](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services.html#identify-the-site-containing-the-data) and replace `1234` with it. When using another entity, you must also update the fully qualified class name parameter and the data to import in the cURL script.
+You can import data to a site by executing the following cURL or Java command. The example imports blog posts to a site. [Find your Site’s ID](https://learn.liferay.com/w/dxp/headless-delivery/consuming-apis/consuming-rest-services#identify-the-site-containing-the-data) and replace `1234` with it. When using another entity, you must also update the fully qualified class name parameter and the data to import in the cURL script.
 
 ### ImportTask_POST_ToSite.sh
 
@@ -368,7 +368,7 @@ Code:
    :lines: 11-27
 ```
 
-The [API Explorer](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services.html) lists all of the Headless Batch Engine services and schemas and has an interface to try out each service.
+The [API Explorer](https://learn.liferay.com/w/dxp/headless-delivery/consuming-apis/consuming-rest-services) lists all of the Headless Batch Engine services and schemas and has an interface to try out each service.
 
 ## Related Topics
 

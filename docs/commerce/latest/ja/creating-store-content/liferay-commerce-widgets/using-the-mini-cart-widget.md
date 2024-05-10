@@ -7,7 +7,7 @@ Liferay Commerceには、現在のカートステータスの概要をすばや�
 ```
 
 ```{note}
-*ミニカート*ウィジェットとカスタムミニカートコンポーネントは、Liferayのアダプティブメディアをすぐにサポートします。 詳しくは、 [配信デバイスと画面最適化メディア](https://learn.liferay.com/dxp/latest/ja/content-authoring-and-management/documents-and-media/publishing-and-sharing/serving-device-and-screen-optimized-media.html) を参照してください。
+*ミニカート*ウィジェットとカスタムミニカートコンポーネントは、Liferayのアダプティブメディアをすぐにサポートします。 詳しくは、 [配信デバイスと画面最適化メディア](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/publishing-and-sharing/serving-device-and-screen-optimized-media) を参照してください。
 ```
 
 ## ミニカートウィジェットをページに追加する

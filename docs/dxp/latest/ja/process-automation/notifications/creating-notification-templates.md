@@ -4,7 +4,7 @@
 
 通知テンプレートにより、Liferayサービスの自動化された電子メールやユーザー通知を設計できます。 各テンプレートは、送信者、受信者、メッセージの内容を特定します。 テンプレートをデザインする際に、サポートされているエンティティを検索し、そのデータをメールに動的に挿入するフィールド参照を追加できます。
 
-現在、通知テンプレートは [オブジェクトアクション](../../building-applications/objects/creating-and-managing-objects/actions/defining-object-actions.md) のみをサポートしています。 しかし、コマースチャネルには、チャネルイベントに対する通知テンプレート機能が組み込まれています。 詳しくは [メールを送信する](https://learn.liferay.com/commerce/latest/ja/store-management/sending-emails.html) をご覧ください。
+現在、通知テンプレートは [オブジェクトアクション](../../building-applications/objects/creating-and-managing-objects/actions/defining-object-actions.md) のみをサポートしています。 しかし、コマースチャネルには、チャネルイベントに対する通知テンプレート機能が組み込まれています。 詳しくは [メールを送信する](https://learn.liferay.com/w/commerce/store-management/sending-emails) をご覧ください。
 
 !!! important
     メール通知を使用するには、インスタンスに設定された [メールサーバー](../../installation-and-upgrades/setting-up-liferay/configuring-mail.md) が必要です。 一度構成されると、インスタンス・レベルで追加の [電子メール通知設定](../../system-administration/configuring-liferay/virtual-instances/email-settings.md) にアクセスできます。

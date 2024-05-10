@@ -29,7 +29,7 @@ In addition to these tables and fields, there are other user associated data tha
 
 ## Organizations
 
-Users can belong to different [Organizations](https://learn.liferay.com/dxp/latest/en/users-and-permissions/organizations/understanding-organizations.html) in Liferay. Organizations can have their own sites as well as their own roles and permissions. Organizations can have sub-organizations under a parent organization. The following organization fields are synced:
+Users can belong to different [Organizations](https://learn.liferay.com/w/dxp/users-and-permissions/organizations/understanding-organizations) in Liferay. Organizations can have their own sites as well as their own roles and permissions. Organizations can have sub-organizations under a parent organization. The following organization fields are synced:
 
 | Attribute                | Description                                                                       |
 | :----------------------- | :-------------------------------------------------------------------------------- |
@@ -42,7 +42,7 @@ Users can belong to different [Organizations](https://learn.liferay.com/dxp/late
 
 ## Roles
 
-Users can be given different [Roles](https://learn.liferay.com/dxp/latest/en/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.html) in Liferay. Roles can be created and managed to have different levels of permissions. The following role fields are synced:
+Users can be given different [Roles](https://learn.liferay.com/w/dxp/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions) in Liferay. Roles can be created and managed to have different levels of permissions. The following role fields are synced:
 
 | Attribute | Description                    |
 | :-------- | :----------------------------- |
@@ -51,7 +51,7 @@ Users can be given different [Roles](https://learn.liferay.com/dxp/latest/en/use
 
 ## Teams
 
-Users can also belong to [Teams](https://learn.liferay.com/dxp/latest/en/site-building/sites/site-membership/creating-teams-for-sites.html). Users are brought together into a team within a single site for site-specific functions. The following team fields are synced:
+Users can also belong to [Teams](https://learn.liferay.com/w/dxp/site-building/sites/site-membership/creating-teams-for-sites). Users are brought together into a team within a single site for site-specific functions. The following team fields are synced:
 
 | Attribute | Description                    |
 | :-------- | :----------------------------- |
@@ -60,7 +60,7 @@ Users can also belong to [Teams](https://learn.liferay.com/dxp/latest/en/site-bu
 
 ## User Groups
 
-[User Groups](https://learn.liferay.com/dxp/latest/en/users-and-permissions/user-groups/creating-and-managing-user-groups.html) are users who may be from different organizations, who are grouped together for a specific purpose. The following user group fields are synced:
+[User Groups](https://learn.liferay.com/w/dxp/users-and-permissions/user-groups/creating-and-managing-user-groups) are users who may be from different organizations, who are grouped together for a specific purpose. The following user group fields are synced:
 
 | Attribute     | Description                          |
 | :------------ | :----------------------------------- |
@@ -69,7 +69,7 @@ Users can also belong to [Teams](https://learn.liferay.com/dxp/latest/en/site-bu
 
 ## User Group Sites
 
-[User Group Sites](https://learn.liferay.com/dxp/latest/en/users-and-permissions/user-groups.html) are pages added to group members' personal sites. The following user group sites fields are synced:
+[User Group Sites](https://learn.liferay.com/w/dxp/users-and-permissions/user-groups) are pages added to group members' personal sites. The following user group sites fields are synced:
 
 | Attribute | Description                    |
 | :-------- | :----------------------------- |

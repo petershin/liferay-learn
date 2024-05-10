@@ -95,7 +95,7 @@ liferay
 
 Liferay DXP에는 웹에 콘텐츠를 빌드, 관리 및 배포할 수 있는 강력한 기능이 많이 있습니다. 그러나 이러한 기능 중 일부는 Liferay Cloud에서 사용할 수 없습니다:
 
-* [원격 라이브 스테이징 구성](https://learn.liferay.com/dxp/latest/ko/site-building/publishing-tools/staging/configuring-remote-live-staging.html) 은 현재 Liferay Cloud에서 지원되지 않습니다. 온프레미스 설치에서 Liferay Cloud로 마이그레이션하는 사용자는 스테이징 기능을 계속 사용하려면 로컬 스테이징으로 전환해야 합니다.
+* [원격 라이브 스테이징 구성](https://learn.liferay.com/w/dxp/site-building/publishing-tools/staging/configuring-remote-live-staging) 은 현재 Liferay Cloud에서 지원되지 않습니다. 온프레미스 설치에서 Liferay Cloud로 마이그레이션하는 사용자는 스테이징 기능을 계속 사용하려면 로컬 스테이징으로 전환해야 합니다.
 
 ## 관련 주제
 

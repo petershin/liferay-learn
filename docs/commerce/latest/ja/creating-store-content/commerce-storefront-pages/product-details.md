@@ -15,7 +15,7 @@
 ![［Product Publisher］ウィジェットの設定です。](./product-details/images/02.png)
 
 ```{note}
-*［Product Details］* ウィジェットおよび *［Product Publisher］* ウィジェットは、Liferay のアダプティブメディアをすぐにサポートします。 詳しくは、 [配信デバイスと画面最適化メディア](https://learn.liferay.com/dxp/latest/ja/content-authoring-and-management/documents-and-media/publishing-and-sharing/serving-device-and-screen-optimized-media.html) を参照してください。
+*［Product Details］* ウィジェットおよび *［Product Publisher］* ウィジェットは、Liferay のアダプティブメディアをすぐにサポートします。 詳しくは、 [配信デバイスと画面最適化メディア](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/publishing-and-sharing/serving-device-and-screen-optimized-media) を参照してください。
 ```
 
 ## 関連トピック

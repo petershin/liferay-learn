@@ -48,5 +48,5 @@ Changing a site's type also changes which accounts appear in its Accounts widget
 ## Related Topics
 
 * [Store Setup Overview](../starting-a-store/store-setup-overview.md)
-* [Building a Site](https://learn.liferay.com/dxp/latest/en/site-building.html)
+* [Building a Site](https://learn.liferay.com/w/dxp/site-building)
 * [Account Management](../users-and-accounts/account-management.md)

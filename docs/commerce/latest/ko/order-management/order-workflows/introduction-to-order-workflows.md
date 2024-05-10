@@ -1,6 +1,6 @@
 # 주문 워크플로 소개
 
-**주문 워크플로** 는 활성화된 경우 구매자나 판매자가 주문을 처리하기 전에 [내부적으로 사전 [승인](./approving-or-rejecting-orders-in-order-workflows.md)](../orders/processing-an-order.md)하도록 요구하는 채널별 설정입니다. 일반적인 DXP 작업 흐름에 대해 자세히 알아보려면 [워크플로 소개](https://learn.liferay.com/dxp/latest/ko/process-automation/workflow/introduction-to-workflow.html) 을 참조하십시오.
+**주문 워크플로** 는 활성화된 경우 구매자나 판매자가 주문을 처리하기 전에 [내부적으로 사전 [승인](./approving-or-rejecting-orders-in-order-workflows.md)](../orders/processing-an-order.md)하도록 요구하는 채널별 설정입니다. 일반적인 DXP 작업 흐름에 대해 자세히 알아보려면 [워크플로 소개](https://learn.liferay.com/w/dxp/process-automation/workflow/introduction-to-workflow) 을 참조하십시오.
 
 ![주문 워크플로우는 Liferay Commerce에 통합되어 있습니다.](./introduction-to-order-workflows/images/01.png)
 

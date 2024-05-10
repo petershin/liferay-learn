@@ -10,7 +10,7 @@ taxonomy-category-names:
 ---
 # Introduction to Order Workflows
 
-_Order Workflows_ are a channel-specific setting that, if enabled, require the buyer or seller to give internal prior [approval](./approving-or-rejecting-orders-in-order-workflows.md) for an order before it can be [processed](../orders/processing-an-order.md). To learn more about DXP Workflow in general, see [Introduction to Workflow](https://learn.liferay.com/dxp/latest/en/process-automation/workflow/introduction-to-workflow.html).
+_Order Workflows_ are a channel-specific setting that, if enabled, require the buyer or seller to give internal prior [approval](./approving-or-rejecting-orders-in-order-workflows.md) for an order before it can be [processed](../orders/processing-an-order.md). To learn more about DXP Workflow in general, see [Introduction to Workflow](https://learn.liferay.com/w/dxp/process-automation/workflow/introduction-to-workflow).
 
 ![The Order Workflows are integral in Liferay Commerce.](./introduction-to-order-workflows/images/01.png)
 

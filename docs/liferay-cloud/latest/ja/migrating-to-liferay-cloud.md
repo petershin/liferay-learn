@@ -52,7 +52,7 @@ Liferay Cloud に移行することで、 [クラスタリング](./getting-star
 
 たとえば、Gitを使うのが初めてなら、 [Gitの公式資料](https://git-scm.com/doc) （リファレンス・ドキュメントやコマンド・チートシートなどを含む）を見たり、移行に適用する前に独自に使い方を練習したりするとよいでしょう。 Gitは強力なバージョン管理ツールであり、このマイグレーション・ガイドで使われる以上の機能を備えている。
 
-Liferay Cloudへの移行には、独自のカスタムコード、モジュール、テーマをプロジェクト専用のLiferay Workspaceに移動することも含まれます。 もしLiferay Workspaceを初めて使うのであれば、その効果的な使い方を [Liferay Workspaceの概要](https://learn.liferay.com/dxp/latest/ja/building-applications/tooling/liferay-workspace/what-is-liferay-workspace.html) から学ぶこともできます。
+Liferay Cloudへの移行には、独自のカスタムコード、モジュール、テーマをプロジェクト専用のLiferay Workspaceに移動することも含まれます。 もしLiferay Workspaceを初めて使うのであれば、その効果的な使い方を [Liferay Workspaceの概要](https://learn.liferay.com/w/dxp/building-applications/tooling/liferay-workspace/what-is-liferay-workspace) から学ぶこともできます。
 
 ### 環境を整える
 

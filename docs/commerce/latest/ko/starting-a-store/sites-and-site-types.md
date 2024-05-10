@@ -39,5 +39,5 @@ Liferay Commerce는 사이트 유형과 함께 Liferay 사이트를 사용합니
 ## 관련 주제
 
 * [매장 설정 개요](../starting-a-store/store-setup-overview.md)
-* [사이트 구축](https://learn.liferay.com/dxp/latest/ko/site-building.html)
+* [사이트 구축](https://learn.liferay.com/w/dxp/site-building)
 * [계정 관리](../users-and-accounts/account-management.md)

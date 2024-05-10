@@ -234,7 +234,7 @@ Liferay DXP 7.3では、 [閲覧に関して、サイトメンバーのみとす
 
 ## グローバルメニュー
 
-新しいアプリケーションドロワーには、ワークフロー、フォーム、および [Commerce](https://learn.liferay.com/commerce/latest/ja/index.html) などのクロスサイトアプリケーションが格納されています。
+新しいアプリケーションドロワーには、ワークフロー、フォーム、および [Commerce](https://learn.liferay.com/w/commerce/index) などのクロスサイトアプリケーションが格納されています。
 
 ![The Global Menu provides convenient access to cross-site applications.](./whats-new-73/images/29.png)
 

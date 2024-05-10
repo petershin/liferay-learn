@@ -12,7 +12,7 @@ A/B 테스트를 실행할 때 다음 매개변수를 구성할 수 있습니다
 
 테스트를 생성한 후 **A/B 테스트**(![A/B 테스트 아이콘](../../../images/icon-ab-testing.png))를 클릭하여 테스트 상태를 검토합니다.
 
-Liferay DXP는 테스트 상태와 테스트 완료 시 승자만 표시합니다. Analytics Cloud에서 A/B 테스트의 다른 측면을 관리할 수 있습니다. 자세한 내용은 Analytics Cloud 설명서의 [A/B 테스팅](https://learn.liferay.com/analytics-cloud/latest/en/optimization/ab-testing.html) 을 참조하세요.
+Liferay DXP는 테스트 상태와 테스트 완료 시 승자만 표시합니다. Analytics Cloud에서 A/B 테스트의 다른 측면을 관리할 수 있습니다. 자세한 내용은 Analytics Cloud 설명서의 [A/B 테스팅](https://learn.liferay.com/w/analytics-cloud/optimization/ab-testing) 을 참조하세요.
 
 A/B 테스트가 완료되면 테스트 결과를 검토하고 선호하는 변형을 게시할 수 있습니다. 자세한 내용은 [A/B 테스트 결과 검토 및 테스트 변형 게시](./reviewing-ab-test-results-and-publishing-test-variants.md)를 참조하세요.
 

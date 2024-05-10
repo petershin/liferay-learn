@@ -10,7 +10,7 @@ uuid: 5001f516-6581-4865-a1f8-b4ac590d3771
 ---
 # Blogs
 
-[Blogs entries](https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/blogs/getting-started-with-blogs.html) are important content on websites. They attract readers who return to view new blog posts and interact in discussion.
+[Blogs entries](https://learn.liferay.com/w/dxp/content-authoring-and-management/blogs/getting-started-with-blogs) are important content on websites. They attract readers who return to view new blog posts and interact in discussion.
 
 Analytics Cloud gives you important insights into how engaged readers are with your blog posts.
 

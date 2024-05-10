@@ -40,7 +40,7 @@ visibility:
 
 ## 페이지
 
-페이지는 사용자에게 컨텐츠와 애플리케이션을 표시하기 위해 Liferay DXP에서 사용되는 기본 방법이기 때문에 [페이지 이해](https://learn.liferay.com/dxp/latest/ko/site-building/creating-pages/understanding-pages/understanding-pages.html) 및 구성 방법을 시연하는 것이 데모의 이 섹션을 시작하는 논리적인 사이트입니다.
+페이지는 사용자에게 컨텐츠와 애플리케이션을 표시하기 위해 Liferay DXP에서 사용되는 기본 방법이기 때문에 [페이지 이해](https://learn.liferay.com/w/dxp/site-building/creating-pages/understanding-pages/understanding-pages) 및 구성 방법을 시연하는 것이 데모의 이 섹션을 시작하는 논리적인 사이트입니다.
 
 데모를 시작하기 전에 페르소나, 사용자 여정 등 잠재 고객이 보게 될 내용을 소개하세요. 더 많은 맥락을 통해 청중은 데모가 시작될 때 표시되는 내용을 더 잘 이해할 수 있습니다. 이에 대한 팁은 다음과 같습니다.
 
@@ -91,9 +91,9 @@ Liferay 애플리케이션을 다른 언어로 현지화해야 하는 경우 상
 
 페이지와 페이지 구성 방법에 대한 자세한 내용은 이 사이트의 다른 곳에서 확인할 수 있습니다.
 
-* [콘텐츠 페이지 사용](https://learn.liferay.com/dxp/latest/ko/site-building/creating-pages/using-content-pages.html)
-* [콘텐츠 페이지 편집기 UI 참조](https://learn.liferay.com/dxp/latest/ko/site-building/creating-pages/using-content-pages/content-page-editor-ui-reference.html)
-* [조각 사용](https://learn.liferay.com/dxp/latest/ko/site-building/creating-pages/page-fragments-and-widgets/using-fragments.html)
+* [콘텐츠 페이지 사용](https://learn.liferay.com/w/dxp/site-building/creating-pages/using-content-pages)
+* [콘텐츠 페이지 편집기 UI 참조](https://learn.liferay.com/w/dxp/site-building/creating-pages/using-content-pages/content-page-editor-ui-reference)
+* [조각 사용](https://learn.liferay.com/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments)
 
 ### 다루어야 할 추가 주제
 

@@ -22,7 +22,7 @@ You can use the Cart page to manage the contents of your cart. There are three a
 ![The Mini Cart widget displays the cart's contents and has an Edit Cart button that links to the Commerce Cart widget.](./cart/images/02.png)
 
 ```{note}
-The *Mini Cart* widget supports Liferay's Adaptive Media out-of-the-box. See [Serving Device and Screen Optimized Media](https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/documents-and-media/publishing-and-sharing/serving-device-and-screen-optimized-media.html) for more information.
+The *Mini Cart* widget supports Liferay's Adaptive Media out-of-the-box. See [Serving Device and Screen Optimized Media](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/publishing-and-sharing/serving-device-and-screen-optimized-media) for more information.
 ```
 
 ## Related Topics

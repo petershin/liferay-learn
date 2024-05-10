@@ -106,7 +106,7 @@ Liferay が起動したら
 | `-u "test@liferay.com:learn"`                                                                      | 基本認証の認証情報を入力します。                   |
 
 ```{note}
-ここでは、デモのために基本的な認証を使用しています。 本番環境では、 [OAuth 2.0を使用する](https://learn.liferay.com/dxp/latest/ja/headless-delivery/using-oauth2.html) 経由でユーザーを認証する必要があります。 OAuth2を活用したReactアプリケーションのサンプルは、 [OAuth2によるユーザーの認証](https://learn.liferay.com/dxp/latest/ja/headless-delivery/using-oauth2/using-oauth2-to-authorize-users.html) をご覧ください。
+ここでは、デモのために基本的な認証を使用しています。 本番環境では、 [OAuth 2.0を使用する](https://learn.liferay.com/w/dxp/headless-delivery/using-oauth2) 経由でユーザーを認証する必要があります。 OAuth2を活用したReactアプリケーションのサンプルは、 [OAuth2によるユーザーの認証](https://learn.liferay.com/w/dxp/headless-delivery/using-oauth2/using-oauth2-to-authorize-users) をご覧ください。
 ```
 
 他のcURLコマンドも同様のJSON引数を使用しています。
@@ -195,7 +195,7 @@ java -classpath .:* Options_GET_FromInstance
 | `key:desc`  | キーで降順に並べ替えます。 |
 | `name:desc` | 名前で降順に並べ替えます。 |
 
-詳しくは、 [APIクエリパラメータ](https://learn.liferay.com/dxp/latest/ja/headless-delivery/consuming-apis/api-query-parameters.html) をご参照ください。
+詳しくは、 [APIクエリパラメータ](https://learn.liferay.com/w/dxp/headless-delivery/consuming-apis/api-query-parameters) をご参照ください。
 
 ## オプションの取得
 
@@ -304,4 +304,4 @@ java -classpath .:* -DoptionId=1234 Option_DELETE_ById
    :lines: 8-17
 ```
 
-[RESTサービスの使用](https://learn.liferay.com/dxp/latest/ja/headless-delivery/consuming-apis/consuming-rest-services.html) は、`Option`のサービスやスキーマを表示し、各サービスをテストするためのインターフェースを備えています。
+[RESTサービスの使用](https://learn.liferay.com/w/dxp/headless-delivery/consuming-apis/consuming-rest-services) は、`Option`のサービスやスキーマを表示し、各サービスをテストするためのインターフェースを備えています。

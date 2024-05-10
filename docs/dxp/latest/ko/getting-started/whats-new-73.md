@@ -236,7 +236,7 @@ App Builder 내부에서는 데이터 엔진을 사용하여 애플리케이션�
 
 ## 글로벌 메뉴
 
-새로운 애플리케이션 서랍에는 워크플로, 양식, 상거래 [커머스](https://learn.liferay.com/commerce/latest/ko/index.html) 의 크로스 사이트 애플리케이션이 들어 있습니다.
+새로운 애플리케이션 서랍에는 워크플로, 양식, 상거래 [커머스](https://learn.liferay.com/w/commerce/index) 의 크로스 사이트 애플리케이션이 들어 있습니다.
 
 ![The Global Menu provides convenient access to cross-site applications.](./whats-new-73/images/29.png)
 

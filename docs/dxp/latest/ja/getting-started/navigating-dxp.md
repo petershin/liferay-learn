@@ -94,12 +94,12 @@ Liferay 7.3 CE GA6およびLiferay DXP 7.3 GA1以降、Liferay Commerce 3.0はLi
 
 Liferay Commerceから管理できる機能をいくつか紹介します：
 
-- [新しいカタログを作成する](https://learn.liferay.com/commerce/latest/ja/product-management/catalogs/creating-a-new-catalog.html) 
+- [新しいカタログを作成する](https://learn.liferay.com/w/commerce/product-management/catalogs/creating-a-new-catalog) 
 - [チャネルの管理](https://learn.liferay.com/ja/w/commerce/store-management/channels/managing-channels) 
-- [在庫管理](https://learn.liferay.com/commerce/latest/ja/inventory-management.html) 
-- [注文の処理](https://learn.liferay.com/commerce/latest/ja/order-management/orders/processing-an-order.html) 
+- [在庫管理](https://learn.liferay.com/w/commerce/inventory-management) 
+- [注文の処理](https://learn.liferay.com/w/commerce/order-management/orders/processing-an-order) 
 
-Liferay Commerce の詳細については、 [Liferay Commerceの概要](https://learn.liferay.com/commerce/latest/ja/starting-a-store/introduction-to-liferay-commerce.html) を参照してください。
+Liferay Commerce の詳細については、 [Liferay Commerceの概要](https://learn.liferay.com/w/commerce/starting-a-store/introduction-to-liferay-commerce) を参照してください。
 
 ### コントロールパネル
 

@@ -24,7 +24,7 @@ Only users with the Admin role for the chosen environment can manually restore e
 The *Backups* page of each environment has a list of all recent backups taken (automatically and manually). Restoring a backup to an environment from this page restores the data used by each service, but it does *not* change the build or Docker image that each service is using.
 
 ```{warning}
-The `backup` service version of the backup you're restoring should match the target environment before the restore to ensure it completes successfully. The Liferay [fix pack level](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier.html) should also match to avoid causing errors with a mismatched database schema. If you restore a backup that requires a different build from what is currently deployed in the environment, then [deploy an appropriate build](../../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md) *before* beginning the restore.
+The `backup` service version of the backup you're restoring should match the target environment before the restore to ensure it completes successfully. The Liferay [fix pack level](https://learn.liferay.com/w/dxp/installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier) should also match to avoid causing errors with a mismatched database schema. If you restore a backup that requires a different build from what is currently deployed in the environment, then [deploy an appropriate build](../../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md) *before* beginning the restore.
 ```
 
 Follow these steps to restore an environment from a backup:

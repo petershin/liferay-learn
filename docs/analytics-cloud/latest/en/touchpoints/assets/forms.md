@@ -10,7 +10,7 @@ uuid: ea56f3d5-74f0-4eb3-84b5-0f4d9ef8d4fe
 ---
 # Forms
 
-[Forms](https://learn.liferay.com/dxp/latest/en/process-automation/forms/introduction-to-forms.html) are important direct data gathering tools for enterprises. Are your web forms providing you invaluable information or turning users away? Analytics Cloud gives you important insights.
+[Forms](https://learn.liferay.com/w/dxp/process-automation/forms/introduction-to-forms) are important direct data gathering tools for enterprises. Are your web forms providing you invaluable information or turning users away? Analytics Cloud gives you important insights.
 
 ![Forms metrics are presented in a table with submission, view, abandonment, and completion time statistics.](forms/images/01.png)
 

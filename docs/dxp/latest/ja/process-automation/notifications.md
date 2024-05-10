@@ -27,7 +27,7 @@ Liferayには通知ツールが統合されているため、プラットフォ�
 
 メール通知設定を使用するには、インスタンスの[メールサーバーを設定する](../installation-and-upgrades/setting-up-liferay/configuring-mail.md)必要があります。 設定が完了すると、インスタンスレベルで追加の [メール通知設定](../system-administration/configuring-liferay/virtual-instances/email-settings.md)にアクセスできます。 Liferay 7.4 U33+/GA33+からは、[通知テンプレート](./notifications/creating-notification-templates.md)を作成し、オブジェクトのメール通知設定をデザインして動的に入力することも可能です。 詳しくは、 [Notification Action](../building-applications/objects/creating-and-managing-objects/actions/defining-object-actions.md#notification-actions) をご覧ください。
 
-コマース・コンテキストでは、チャネルイベントに対する通知がサポートされています。 詳しくは、 [メールの保存](https://learn.liferay.com/commerce/latest/ja/store-management/sending-emails/store-emails.html) をご覧ください。
+コマース・コンテキストでは、チャネルイベントに対する通知がサポートされています。 詳しくは、 [メールの保存](https://learn.liferay.com/w/commerce/store-management/sending-emails/store-emails) をご覧ください。
 
 ::::{grid} 2
 :gutter: 3 3 3 3

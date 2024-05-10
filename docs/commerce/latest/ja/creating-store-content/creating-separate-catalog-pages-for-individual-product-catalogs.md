@@ -2,11 +2,11 @@
 
 ストアフロントには、複数のカタログの商品を掲載することができます。 Liferay はカタログに製品を保存し、 **カタログページ** を使ってストアフロントに表示します。 詳しくは、 [カタログページの作成](./creating-a-catalog-page.md) をご覧ください。 カタログごとに異なる種類の商品を掲載することができるため、複数のカタログページを使って差別化することができます。
 
-これを行うには、まず2つ以上のカタログと、少なくとも1つのカタログ・ページが必要です。 次に、既存のカタログページを複製し、両方のページに [カスタムフィルターの例](https://learn.liferay.com/dxp/latest/ja/using-search/search-pages-and-widgets/search-results/custom-filter-examples.html) ウィジェットを追加して、カタログIDで製品をフィルタリングします。
+これを行うには、まず2つ以上のカタログと、少なくとも1つのカタログ・ページが必要です。 次に、既存のカタログページを複製し、両方のページに [カスタムフィルターの例](https://learn.liferay.com/w/dxp/using-search/search-pages-and-widgets/search-results/custom-filter-examples) ウィジェットを追加して、カタログIDで製品をフィルタリングします。
 
 ## 既存のカタログページをコピーする
 
-Liferay DXP 7.4 U22+ と GA22+ では、Minium サイトの Catalog ページをコピーするには、まず [ページについて](https://learn.liferay.com/dxp/latest/ja/site-building/creating-pages/understanding-pages/understanding-pages.html#enabling-private-pages) を有効にする必要があります。 それ以前のバージョンをお使いの場合は、この手順は必要ありません。
+Liferay DXP 7.4 U22+ と GA22+ では、Minium サイトの Catalog ページをコピーするには、まず [ページについて](https://learn.liferay.com/w/dxp/site-building/creating-pages/understanding-pages/understanding-pages#enabling-private-pages) を有効にする必要があります。 それ以前のバージョンをお使いの場合は、この手順は必要ありません。
 
 1. プライベートページがアクティブになったら、 **サイトメニュー**(![Site Menu](../images/icon-product-menu.png)) を開き、 **サイトビルダー** &rarr; **ページ** にアクセスしてください。
 
@@ -58,10 +58,10 @@ Liferay DXP 7.4 U22+ と GA22+ では、Minium サイトの Catalog ページを
 ページには、1つのカタログの商品だけが表示されるはずです。 もう一方のカタログページで、別のカタログを使用して上記の手順を繰り返します。
 
 ```{note}
-また、*Configuration*メニュー内のチェックボックスを使用して、カスタムフィルターを無効化し、不変で不可視にすることができます。 カスタムフィルターは、さまざまなユースケースで利用できます。 詳しくは、 [カスタムフィルターの例](https://learn.liferay.com/dxp/latest/ja/using-search/search-pages-and-widgets/search-results/custom-filter-examples.html) をご覧ください。
+また、*Configuration*メニュー内のチェックボックスを使用して、カスタムフィルターを無効化し、不変で不可視にすることができます。 カスタムフィルターは、さまざまなユースケースで利用できます。 詳しくは、 [カスタムフィルターの例](https://learn.liferay.com/w/dxp/using-search/search-pages-and-widgets/search-results/custom-filter-examples) をご覧ください。
 ```
 
 ## 関連トピック
 
 * [カタログページの作成](./creating-a-catalog-page.md)
-* [カスタムフィルターの例](https://learn.liferay.com/dxp/latest/ja/using-search/search-pages-and-widgets/search-results/custom-filter-examples.html)
+* [カスタムフィルターの例](https://learn.liferay.com/w/dxp/using-search/search-pages-and-widgets/search-results/custom-filter-examples)

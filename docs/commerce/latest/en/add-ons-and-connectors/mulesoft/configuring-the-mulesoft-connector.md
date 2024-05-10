@@ -17,7 +17,7 @@ Liferay's connector to MuleSoft uses OpenAPI 3.0 documents that describe Liferay
 http://[host]:[port]/o/[headless-api-app-name]/[version]/openapi.json
 ```
 
-These documents are based on your deployed RESTful web services, so they are the most accurate descriptions of your APIs. You can learn more about Liferay APIs [here](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis.html).
+These documents are based on your deployed RESTful web services, so they are the most accurate descriptions of your APIs. You can learn more about Liferay APIs [here](https://learn.liferay.com/w/dxp/headless-delivery/consuming-apis).
 
 Once you specify an OpenAPI document endpoint, the connector automatically configures the paths, path/query parameters, and entity metadata defined in the OpenAPI document. The connector works with any OpenAPI 3.0 document that follows Liferay standards and supports all Liferay APIs.
 
@@ -51,15 +51,15 @@ Choose between *Basic* and *OAuth2* authentication methods.
 
 **OAuth2**: Enter a client key and client secret.
 
-For production, you should authorize users via [OAuth2](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2.html). Basic authentication is provided only for basic testing and demonstration.
+For production, you should authorize users via [OAuth2](https://learn.liferay.com/w/dxp/headless-delivery/using-oauth2). Basic authentication is provided only for basic testing and demonstration.
 
 When setting up OAuth2 in Liferay, select *Headless Server* for Client Profile. Liferay generates a client ID (consumer key) and client secret (consumer secret) for use in the connector.
 
 ![Set the Client Profile as Headless Server in the OAuth2 configuration.](./configuring-the-mulesoft-connector/images/02.png)
 
-To use endpoints with OAuth2 authorization, you must also define [scopes](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2/oauth2-scopes.html) with the authorization options you need (e.g., `everything`, `everything.write`, or `everything.read`).
+To use endpoints with OAuth2 authorization, you must also define [scopes](https://learn.liferay.com/w/dxp/headless-delivery/using-oauth2/oauth2-scopes) with the authorization options you need (e.g., `everything`, `everything.write`, or `everything.read`).
 
-See [Creating OAuth2 Applications](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2/creating-oauth2-applications.html) for detailed setup instructions, or [Using OAuth2 to Authorize Users](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2/using-oauth2-to-authorize-users.html) for a sample React application with OAuth2.
+See [Creating OAuth2 Applications](https://learn.liferay.com/w/dxp/headless-delivery/using-oauth2/creating-oauth2-applications) for detailed setup instructions, or [Using OAuth2 to Authorize Users](https://learn.liferay.com/w/dxp/headless-delivery/using-oauth2/using-oauth2-to-authorize-users) for a sample React application with OAuth2.
 
 ### Specify OpenAPI Document Endpoint
 
@@ -96,5 +96,5 @@ Click *Test Connection*. If successful, you can start building flows using the c
 ## Related Topics
 
 * [Designing Mule Flows](./designing-mule-flows.md)
-* [Consuming APIs](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis.html)
-* [Using OAuth2](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2.html)
+* [Consuming APIs](https://learn.liferay.com/w/dxp/headless-delivery/consuming-apis)
+* [Using OAuth2](https://learn.liferay.com/w/dxp/headless-delivery/using-oauth2)

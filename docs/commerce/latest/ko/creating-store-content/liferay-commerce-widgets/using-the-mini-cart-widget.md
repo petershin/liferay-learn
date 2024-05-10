@@ -7,7 +7,7 @@ Mini Cart 위젯은 Minium 및 Speedwell과 같은 액셀러레이터에 있는 
 ```
 
 ```{note}
-*미니 카트* 위젯과 맞춤형 미니 카트 구성 요소는 즉시 사용 가능한 Liferay의 적응형 미디어를 지원합니다. [장치 및 화면 최적화 미디어 제공](https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/documents-and-media/publishing-and-sharing/serving-device- and-screen-optimized-media.html) 을 참조하세요.
+*미니 카트* 위젯과 맞춤형 미니 카트 구성 요소는 즉시 사용 가능한 Liferay의 적응형 미디어를 지원합니다. [장치 및 화면 최적화 미디어 제공](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/publishing-and-sharing/serving-device- and-screen-optimized-media.html) 을 참조하세요.
 ```
 
 ## 페이지에 미니 카트 위젯 추가

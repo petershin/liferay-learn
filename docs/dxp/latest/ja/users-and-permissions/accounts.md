@@ -17,7 +17,7 @@ toc:
 アカウントの種類には、 **ビジネス** 、 **パーソン** 、 **ゲスト** の3種類があります。 ビジネスアカウントでは、1つのアカウントに複数のユーザーを関連付けることができます。 個人タイプのアカウントは、1つのアカウントにしか関連付けられません。 ゲストタイプのアカウントは、登録されていないユーザーがあなたのビジネスやサイトを利用できる手段を与えます。
 
 ```{note}
-アカウントは、もともと [アカウント管理](https://learn.liferay.com/commerce/latest/ja/users-and-accounts/account-management.html) に搭載されていた機能で、現在はLiferay DXP 7.4以上に搭載されています。
+アカウントは、もともと [アカウント管理](https://learn.liferay.com/w/commerce/users-and-accounts/account-management) に搭載されていた機能で、現在はLiferay DXP 7.4以上に搭載されています。
 ```
 
 ## アカウントの作成

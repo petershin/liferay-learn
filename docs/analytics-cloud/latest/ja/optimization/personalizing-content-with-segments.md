@@ -13,4 +13,4 @@ Liferay DXPとAnalytics CloudのSegmentsの比較です。
 | ユーザーIDは1つのDXPサイトからしか取得できません。 | ユーザーIDは複数のDXPサイトから解決されます。         |
 | 限定的で短期的なパーソナライゼーションに最適       | 広範囲で長期的なパーソナライゼーションに適しています。       |
 
-Liferay DXPでのAnalytics Cloudセグメントの使用については、 [ユーザーセグメントの分析を取得する](https://learn.liferay.com/dxp/latest/ja/site-building/personalizing-site-experience/segmentation/getting-analytics-for-user-segments.html) を参照してください。 Liferay DXP のパーソナライズについては、 [サイトエクスペリエンスのパーソナライズ](https://learn.liferay.com/dxp/latest/ja/site-building/personalizing-site-experience.html) を参照してください。
+Liferay DXPでのAnalytics Cloudセグメントの使用については、 [ユーザーセグメントの分析を取得する](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience/segmentation/getting-analytics-for-user-segments) を参照してください。 Liferay DXP のパーソナライズについては、 [サイトエクスペリエンスのパーソナライズ](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience) を参照してください。

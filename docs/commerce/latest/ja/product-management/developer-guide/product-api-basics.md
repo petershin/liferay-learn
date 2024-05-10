@@ -129,7 +129,7 @@
 | `-u "test@liferay.com:learn"`                                                                                                   | 基本的な認証情報                        |
 
 !!! note
-   ここでは、デモのためにベーシック認証を使用しています。 本番環境では、 [OAuth 2.0を使用する](https://learn.liferay.com/dxp/latest/ja/headless-delivery/using-oauth2.html) 経由でユーザーを認可する必要があります。 OAuth2を活用したReactアプリケーションのサンプルは、 [OAuth2によるユーザーの認証](https://learn.liferay.com/dxp/latest/ja/headless-delivery/using-oauth2/using-oauth2-to-authorize-users.html) をご覧ください。
+   ここでは、デモのためにベーシック認証を使用しています。 本番環境では、 [OAuth 2.0を使用する](https://learn.liferay.com/w/dxp/headless-delivery/using-oauth2) 経由でユーザーを認可する必要があります。 OAuth2を活用したReactアプリケーションのサンプルは、 [OAuth2によるユーザーの認証](https://learn.liferay.com/w/dxp/headless-delivery/using-oauth2/using-oauth2-to-authorize-users) をご覧ください。
 
 他のcURLコマンドも同様のJSON引数を使用します。
 
@@ -223,7 +223,7 @@ Liferay インスタンスの `Product` オブジェクトが JSON でリスト�
 | name:asc                      | 名前の昇順で並べ替える                             |
 | createDate:desc,name:desc | 最初にcreateDateの降順でソートし、次にnameの降順でソートします。 |
 
-詳しくは、 [APIクエリパラメータ](https://learn.liferay.com/dxp/latest/ja/headless-delivery/consuming-apis/api-query-parameters.html) をお読みください。
+詳しくは、 [APIクエリパラメータ](https://learn.liferay.com/w/dxp/headless-delivery/consuming-apis/api-query-parameters) をお読みください。
 
 ## 製品を入手する
 
@@ -333,4 +333,4 @@ java -classpath .:* -DproductId=1234 Product_DELETE_ById
    :lines: 8-17
 ```
 
-[RESTサービスの使用](https://learn.liferay.com/dxp/latest/ja/headless-delivery/consuming-apis/consuming-rest-services.html) には、 `Product` の全サービスとスキーマがリストアップされており、各サービスを試用するためのインターフェイスが用意されています。
+[RESTサービスの使用](https://learn.liferay.com/w/dxp/headless-delivery/consuming-apis/consuming-rest-services) には、 `Product` の全サービスとスキーマがリストアップされており、各サービスを試用するためのインターフェイスが用意されています。

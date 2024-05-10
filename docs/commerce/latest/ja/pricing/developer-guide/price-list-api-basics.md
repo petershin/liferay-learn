@@ -112,7 +112,7 @@ Liferayの実行後、
 | `-u "test@liferay.com:learn"`                                                                                       | 基本認証の認証情報を入力します。                   |
 
 ```{note}
-ここでは、デモのために基本的な認証を使用しています。 本番環境では、 [OAuth 2.0を使用する](https://learn.liferay.com/dxp/latest/ja/headless-delivery/using-oauth2.html) 経由でユーザーを認証する必要があります。 OAuth2を使ったReactアプリケーションのサンプルは、 [OAuth2によるユーザーの認証](https://learn.liferay.com/dxp/latest/ja/headless-delivery/using-oauth2/using-oauth2-to-authorize-users.html) をご覧ください。
+ここでは、デモのために基本的な認証を使用しています。 本番環境では、 [OAuth 2.0を使用する](https://learn.liferay.com/w/dxp/headless-delivery/using-oauth2) 経由でユーザーを認証する必要があります。 OAuth2を使ったReactアプリケーションのサンプルは、 [OAuth2によるユーザーの認証](https://learn.liferay.com/w/dxp/headless-delivery/using-oauth2/using-oauth2-to-authorize-users) をご覧ください。
 ```
 
 他のcURLコマンドも同様のJSON引数を使用します。
@@ -212,7 +212,7 @@ java -classpath .:* PriceLists_GET_FromInstance
 | `createDate:desc`           | createDateの降順でソートします。                   |
 | `createDate:desc,type:desc` | 最初にcreateDateの降順でソートし、次にtypeの降順でソートします。 |
 
-詳しくは、 [APIクエリパラメータ](https://learn.liferay.com/dxp/latest/ja/headless-delivery/consuming-apis/api-query-parameters.html) をご参照ください。
+詳しくは、 [APIクエリパラメータ](https://learn.liferay.com/w/dxp/headless-delivery/consuming-apis/api-query-parameters) をご参照ください。
 
 ## 価格表を見る
 
@@ -322,4 +322,4 @@ java -classpath .:* -DpriceListId=1234 PriceList_DELETE_ById
    :lines: 8-17
 ```
 
-[RESTサービスの使用](https://learn.liferay.com/dxp/latest/ja/headless-delivery/consuming-apis/consuming-rest-services.html) では、 `PriceList` のサービスとスキーマが表示され、各サービスをテストするためのインターフェイスを備えています。
+[RESTサービスの使用](https://learn.liferay.com/w/dxp/headless-delivery/consuming-apis/consuming-rest-services) では、 `PriceList` のサービスとスキーマが表示され、各サービスをテストするためのインターフェイスを備えています。

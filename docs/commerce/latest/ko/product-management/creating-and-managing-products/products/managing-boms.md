@@ -149,5 +149,5 @@ BOM 위젯에 다이어그램이 표시됩니다.
 ## 관련 주제
 
 * [제품 변형에 대한 SKU 만들기](./creating-skus-for-product-variants.md)
-* [사이트에 페이지 추가](https://learn.liferay.com/dxp/latest/ko/site-building/creating-pages/adding-pages/adding-a-page-to-a-site.html)
-* [페이지에 위젯 추가](https://learn.liferay.com/dxp/latest/ko/site-building/creating-pages/using-widget-pages/adding-widgets-to-a-page.html)
+* [사이트에 페이지 추가](https://learn.liferay.com/w/dxp/site-building/creating-pages/adding-pages/adding-a-page-to-a-site)
+* [페이지에 위젯 추가](https://learn.liferay.com/w/dxp/site-building/creating-pages/using-widget-pages/adding-widgets-to-a-page)

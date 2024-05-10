@@ -15,8 +15,8 @@ Liferay Commerce 3.0は、Liferay Portal 7.3 CE GA6とLiferay DXP 7.3 GA1がバ�
 
 | インストール方法                                                                                                                             | 目的                                                                                   |
 |:------------------------------------------------------------------------------------------------------------------------------------ |:------------------------------------------------------------------------------------ |
-| [Dockerイメージから始める](https://learn.liferay.com/dxp/latest/ja/getting-started/starting-with-a-docker-image.html#get-started-with-liferay)     | Dockerイメージから始めるのが最も早くLiferay Commerceを使い始められる方法です。                                   |
-| [Liferay-Tomcatバンドルのインストール](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/installing-liferay/installing-a-liferay-tomcat-bundle.html) | Liferay Commerceには、アプリケーションサーバーがあらかじめバンドルされています。 Liferayインストールの実行を開始するための最も一般的な方法です。 |
+| [Dockerイメージから始める](https://learn.liferay.com/w/dxp/getting-started/starting-with-a-docker-image#get-started-with-liferay)     | Dockerイメージから始めるのが最も早くLiferay Commerceを使い始められる方法です。                                   |
+| [Liferay-Tomcatバンドルのインストール](https://learn.liferay.com/w/dxp/installation-and-upgrades/installing-liferay/installing-a-liferay-tomcat-bundle) | Liferay Commerceには、アプリケーションサーバーがあらかじめバンドルされています。 Liferayインストールの実行を開始するための最も一般的な方法です。 |
 
 Liferay Portalのバンドルとイメージには、コマース特有の追加のインストール手順は必要ありません。 コマースの基本機能はアクティベートされており、起動時にすぐに使用することができます。
 

@@ -13,7 +13,7 @@ Now that your web server configurations are deployed to Liferay Cloud, the next 
 
 If you are not using Elasticsearch in your on-premises environment, then migrate to Elasticsearch before proceeding.
 
-Migrating to Elasticsearch involves installing and then connecting your Liferay installation to it. See [Getting Started with Elasticsearch](https://learn.liferay.com/dxp/latest/en/using-search/installing-and-upgrading-a-search-engine/elasticsearch/getting-started-with-elasticsearch.html) for more information.
+Migrating to Elasticsearch involves installing and then connecting your Liferay installation to it. See [Getting Started with Elasticsearch](https://learn.liferay.com/w/dxp/using-search/installing-and-upgrading-a-search-engine/elasticsearch/getting-started-with-elasticsearch) for more information.
 
 ```{tip}
 If you need help with migrating to Elasticsearch, please contact [Liferay Cloud Support](https://help.liferay.com/hc/en-us).

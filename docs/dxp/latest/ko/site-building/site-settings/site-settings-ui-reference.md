@@ -29,7 +29,7 @@ Liferay DXP 7.4부터 사이트 설정 애플리케이션 레이아웃은 인스
 - 결제
 - 선박
 
-여기에서 사이트 범위에서 상거래 설정을 구성할 수 있습니다. 상거래 설정에 대한 자세한 내용은 [Liferay Commerce 구성 개요](https://learn.liferay.com/commerce/latest/ko/store-management/liferay-commerce-configuration-overview.html) 을 참조하십시오.
+여기에서 사이트 범위에서 상거래 설정을 구성할 수 있습니다. 상거래 설정에 대한 자세한 내용은 [Liferay Commerce 구성 개요](https://learn.liferay.com/w/commerce/store-management/liferay-commerce-configuration-overview) 을 참조하십시오.
 
 ![상거래용 기본 사이트 설정](./site-settings-ui-reference/images/21.png)
 
@@ -83,7 +83,7 @@ Piwik 구성에서 스크립트 시작 및 종료 태그를 포함한 전체 스
 
 ### 써드파티
 
-Liferay Commerce에 대한 PunchOut2Go 사이트 설정을 구성합니다. 자세한 내용은 [Liferay Commerce Connector to PunchOut2Go 참조 안내서](https://learn.liferay.com/commerce/latest/en/add-ons-and-connectors/liferay-commerce-connector-to-punchout2go-reference-guide.html) 을 참조하십시오.
+Liferay Commerce에 대한 PunchOut2Go 사이트 설정을 구성합니다. 자세한 내용은 [Liferay Commerce Connector to PunchOut2Go 참조 안내서](https://learn.liferay.com/w/commerce/add-ons-and-connectors/liferay-commerce-connector-to-punchout2go-reference-guide) 을 참조하십시오.
 
 ### 타사 애플리케이션
 
@@ -191,8 +191,8 @@ Liferay DXP를 DocuSign과 통합하여 전자 서명을 관리할 수 있습니
 | 섹션      | 묘사                                                                                                                                                                                   |
 |:------- |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | 기타      | 사이트에 대해 정의한 사용자 정의 사이트 설정(있는 경우)을 포함합니다. 자세한 내용은 [구성 설정 및 액세스](../../building-applications/core-frameworks/configuration-framework/setting-and-accessing-configurations.md)을 참조하십시오. |
-| 세금      | Liferay Commerce에서 원격 상거래 세금 구성에 대한 설정을 구성합니다. 자세한 내용은 [커머스](https://learn.liferay.com/commerce/latest/ko/index.html) 설명서를 참조하십시오.                                      |
-| 카테고리.세율 | Liferay Commerce Avalara 통합에 대한 설정을 구성합니다. 자세한 내용은 [커머스](https://learn.liferay.com/commerce/latest/ko/index.html) 설명서를 참조하십시오.                                          |
+| 세금      | Liferay Commerce에서 원격 상거래 세금 구성에 대한 설정을 구성합니다. 자세한 내용은 [커머스](https://learn.liferay.com/w/commerce/index) 설명서를 참조하십시오.                                      |
+| 카테고리.세율 | Liferay Commerce Avalara 통합에 대한 설정을 구성합니다. 자세한 내용은 [커머스](https://learn.liferay.com/w/commerce/index) 설명서를 참조하십시오.                                          |
 
 ## Liferay DXP 7.2 및 7.3의 사이트 설정 UI 참조
 

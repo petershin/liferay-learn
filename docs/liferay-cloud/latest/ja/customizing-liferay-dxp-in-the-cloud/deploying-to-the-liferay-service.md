@@ -2,7 +2,7 @@
 
 他のサービスと同様に、カスタム追加のデプロイには、設定やファイルをGitリポジトリの適切な場所に追加する必要があります。 しかし、Liferayサービスのデプロイは、他のサービスのデプロイとは若干異なります。
 
-Liferayサービスは、 [Liferay Workspaceの概要](https://learn.liferay.com/dxp/latest/ja/building-applications/tooling/liferay-workspace/what-is-liferay-workspace.html) を利用し、 [配置可能なファイル](#deploying-themes-portlets-and-osgi-modules) 、 [ソースコード](#building-and-deploying-source-code) などを追加するオプションを提供します。 これらは [CIビルド](../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md) に簡単に含まれますが、 [CLIツール](../reference/command-line-tool.md) を使っている場合は、Liferayサービス専用の [追加ステップ](#cli-tool-deployment) がいくつか必要になります。
+Liferayサービスは、 [Liferay Workspaceの概要](https://learn.liferay.com/w/dxp/building-applications/tooling/liferay-workspace/what-is-liferay-workspace) を利用し、 [配置可能なファイル](#deploying-themes-portlets-and-osgi-modules) 、 [ソースコード](#building-and-deploying-source-code) などを追加するオプションを提供します。 これらは [CIビルド](../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md) に簡単に含まれますが、 [CLIツール](../reference/command-line-tool.md) を使っている場合は、Liferayサービス専用の [追加ステップ](#cli-tool-deployment) がいくつか必要になります。
 
 ## Liferay DXP Dockerイメージの定義
 
@@ -78,7 +78,7 @@ CIビルドは、これらのフォルダ内のソースコードをコンパイ
 Hotfixを適用するには、Liferay DXPサービスディレクトリ内の`configs/{ENV}/patching/`フォルダにHotfix ZIPファイルを追加します。 この変更を展開すると、ホットフィックスがLiferay DXPインスタンスに適用されます。
 
 ```{note}
- [DXP インスタンスを新しいマイナーバージョンにアップデートする](./updating-your-dxp-instance-to-a-new-minor-version.md) を参照して、Liferay DXP の新しいマイナーバージョンにアップデートしてください（新しい [パッチタイプについて](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier/understanding-patch-types-for-dxp-7-3-and-earlier.html#service-packs) など）。
+ [DXP インスタンスを新しいマイナーバージョンにアップデートする](./updating-your-dxp-instance-to-a-new-minor-version.md) を参照して、Liferay DXP の新しいマイナーバージョンにアップデートしてください（新しい [パッチタイプについて](https://learn.liferay.com/w/dxp/installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier/understanding-patch-types-for-dxp-7-3-and-earlier#service-packs) など）。
 ```
 
 たとえば、次のような構造を持つホットフィックスを開発環境にデプロイできます：

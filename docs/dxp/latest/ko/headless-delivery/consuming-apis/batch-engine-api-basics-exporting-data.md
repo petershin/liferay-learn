@@ -131,7 +131,7 @@ Liferay의 헤드리스 배치 엔진은 데이터 가져오기 및 내보내기
 | `-u "test@liferay.com:learn"`                                                | 기본 인증 자격 증명              |
 
 ```{note}
-여기서는 데모 목적으로 기본 인증이 사용됩니다. 프로덕션의 경우 [OAuth 2.0 사용](https://learn.liferay.com/dxp/latest/ko/headless-delivery/using-oauth2.html) 을 통해 사용자에게 권한을 부여해야 합니다. Oauth2를 사용하는 샘플 React 애플리케이션은 [OAuth2를 사용하여 사용자 인증](../using-oauth2/using-oauth2-to-authorize-users.md) 참조하세요.
+여기서는 데모 목적으로 기본 인증이 사용됩니다. 프로덕션의 경우 [OAuth 2.0 사용](https://learn.liferay.com/w/dxp/headless-delivery/using-oauth2) 을 통해 사용자에게 권한을 부여해야 합니다. Oauth2를 사용하는 샘플 React 애플리케이션은 [OAuth2를 사용하여 사용자 인증](../using-oauth2/using-oauth2-to-authorize-users.md) 참조하세요.
 ```
 
 ## Java 클래스 검사
@@ -204,7 +204,7 @@ java -classpath .:* -DexportTaskId=1234 ExportTask_GET_ById
 
 ## 사이트에서 데이터 내보내기
 
-다음 cURL 또는 Java 명령을 실행하여 사이트에서 데이터를 내보낼 수 있습니다. 아래 예는 사이트에서 블로그 게시물을 내보냅니다. [REST 서비스 사용](https://learn.liferay.com/dxp/latest/ko/headless-delivery/consuming-apis/consuming-rest-services.html#identify-the-site-containing-the-data) 찾아 '1234'를 바꾸세요. 다른 엔터티를 사용하는 경우 cURL 스크립트에서 정규화된 클래스 이름 매개변수도 업데이트해야 합니다.
+다음 cURL 또는 Java 명령을 실행하여 사이트에서 데이터를 내보낼 수 있습니다. 아래 예는 사이트에서 블로그 게시물을 내보냅니다. [REST 서비스 사용](https://learn.liferay.com/w/dxp/headless-delivery/consuming-apis/consuming-rest-services#identify-the-site-containing-the-data) 찾아 '1234'를 바꾸세요. 다른 엔터티를 사용하는 경우 cURL 스크립트에서 정규화된 클래스 이름 매개변수도 업데이트해야 합니다.
 
 ### ExportTask_POST_ToSite.sh
 
@@ -282,7 +282,7 @@ java -classpath .:* -DexportTaskId=1234 ExportTaskContent_GET_ById
    :lines: 11-27
 ```
 
-[REST 서비스 사용](https://learn.liferay.com/dxp/latest/ko/headless-delivery/consuming-apis/consuming-rest-services.html) 에는 모든 헤드리스 배치 엔진 서비스 및 스키마가 나열되어 있으며 각 서비스를 시험해 볼 수 있는 인터페이스가 있습니다.
+[REST 서비스 사용](https://learn.liferay.com/w/dxp/headless-delivery/consuming-apis/consuming-rest-services) 에는 모든 헤드리스 배치 엔진 서비스 및 스키마가 나열되어 있으며 각 서비스를 시험해 볼 수 있는 인터페이스가 있습니다.
 
 ## 관련 주제
 

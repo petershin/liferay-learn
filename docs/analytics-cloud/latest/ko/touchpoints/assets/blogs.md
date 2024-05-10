@@ -1,6 +1,6 @@
 # 블로그
 
-[블로그 시작하기](https://learn.liferay.com/dxp/latest/ko/content-authoring-and-management/blogs/getting-started-with-blogs.html) 은 웹사이트의 중요한 콘텐츠입니다. 그들은 새로운 블로그 게시물을 보기 위해 다시 돌아오고 토론에 참여하는 독자들을 끌어들입니다.
+[블로그 시작하기](https://learn.liferay.com/w/dxp/content-authoring-and-management/blogs/getting-started-with-blogs) 은 웹사이트의 중요한 콘텐츠입니다. 그들은 새로운 블로그 게시물을 보기 위해 다시 돌아오고 토론에 참여하는 독자들을 끌어들입니다.
 
 Analytics Cloud는 독자가 블로그 게시물에 얼마나 참여하고 있는지에 대한 중요한 통찰력을 제공합니다.
 

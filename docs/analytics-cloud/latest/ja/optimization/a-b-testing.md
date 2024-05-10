@@ -2,7 +2,7 @@
 
 A/Bテストは、コントロールデザイン（つまりオリジナル）に対してバリアントデザインをテストすることで、コンテンツページの効果を評価します。 このプロセスでは、ページのバリアントを作成し、指標（クリック数など）でテストし、最も効果的なバリアントを公開します。 これらのテストは、サイトのユーザーにとって最適なエクスペリエンスを選択するのに役立ちます。
 
-Liferay DXP の [A/Bテスト](https://learn.liferay.com/dxp/latest/ja/site-building/optimizing-sites/ab-testing/ab-testing.html) で、A/B テストの作成とコンテンツページへの設定について詳しく知ることができます。
+Liferay DXP の [A/Bテスト](https://learn.liferay.com/w/dxp/site-building/optimizing-sites/ab-testing/ab-testing) で、A/B テストの作成とコンテンツページへの設定について詳しく知ることができます。
 
 Analytics Cloudは、Liferay DXPで実行されたA/Bテストのすべての結果を追跡します。 テストが作成されると、Analytics Cloudと自動的に同期されます。 A/Bテストを表示するには、左側のメニューから **Test** 。
 

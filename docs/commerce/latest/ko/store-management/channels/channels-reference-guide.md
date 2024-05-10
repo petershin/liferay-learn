@@ -84,7 +84,7 @@ Liferay Commerce는 다양한 이벤트에 의해 트리거되는 이메일 알�
 
 카테고리 표시 페이지 탭에는 상점 사이트에서 작성된 모든 카테고리 표시 페이지 목록이 표시됩니다. **카테고리 디스플레이 페이지** 은 사용자가 지정된 카테고리에 태그가 지정된 모든 제품을 표시하는 특정 DXP 사이트 페이지를 대체할 수 있도록 합니다. 사용자는 먼저 [제품 범주](../../product-management/creating-and-managing-products/products/organizing-your-catalog-with-product-categories.md)를 생성하고 원하는 제품과 연결한 다음 페이지를 생성해야 합니다.
 
-DXP 사이트 페이지 생성에 대한 자세한 내용은 [페이지 만들기](https://learn.liferay.com/dxp/latest/ko/site-building/creating-pages.html) 을 참조하십시오. 일반적으로 태그 및 범주 생성에 대해 자세히 알아보려면 [태그 및 카테고리](https://learn.liferay.com/dxp/latest/ko/content-authoring-and-management/tags-and-categories.html) 을 참조하십시오.
+DXP 사이트 페이지 생성에 대한 자세한 내용은 [페이지 만들기](https://learn.liferay.com/w/dxp/site-building/creating-pages) 을 참조하십시오. 일반적으로 태그 및 범주 생성에 대해 자세히 알아보려면 [태그 및 카테고리](https://learn.liferay.com/w/dxp/content-authoring-and-management/tags-and-categories) 을 참조하십시오.
 
 ## 제품 디스플레이 페이지
 

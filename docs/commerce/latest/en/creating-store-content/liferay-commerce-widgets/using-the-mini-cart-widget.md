@@ -17,7 +17,7 @@ The Mini Cart widget is not the same as the custom mini cart component present i
 ```
 
 ```{note}
-The *Mini Cart* widget and the custom mini cart component supports Liferay's Adaptive Media out-of-the-box. See [Serving Device and Screen Optimized Media](https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/documents-and-media/publishing-and-sharing/serving-device-and-screen-optimized-media.html) for more information.
+The *Mini Cart* widget and the custom mini cart component supports Liferay's Adaptive Media out-of-the-box. See [Serving Device and Screen Optimized Media](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/publishing-and-sharing/serving-device-and-screen-optimized-media) for more information.
 ```
 
 ## Adding the Mini Cart Widget to a Page

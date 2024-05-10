@@ -180,7 +180,7 @@ This API also accepts parameters to filter, paginate, search, and sort the speci
 | `key:desc`  | Sort by key in descending order.  |
 | `title:asc` | Sort by title in ascending order. |
 
-Read [API Query Parameters](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/api-query-parameters.html) for more information.
+Read [API Query Parameters](https://learn.liferay.com/w/dxp/headless-delivery/consuming-apis/api-query-parameters) for more information.
 
 ## Get a Specification
 
@@ -290,4 +290,4 @@ Code:
    :lines: 8-17
 ```
 
-The [API Explorer](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services.html) shows the `Specification` services and schemas and has an interface to test each service.
+The [API Explorer](https://learn.liferay.com/w/dxp/headless-delivery/consuming-apis/consuming-rest-services) shows the `Specification` services and schemas and has an interface to test each service.

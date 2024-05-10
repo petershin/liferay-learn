@@ -7,7 +7,7 @@
 まず、移行したいオンプレミスインストールのLiferayの設定ファイルを整理します。 これには、使用しているポータルのプロパティファイル（ [）](../customizing-liferay-dxp-in-the-cloud/configuring-the-liferay-dxp-service.md#portal-properties) が含まれます。
 
 ```{tip}
-Liferay 固有のコードは `liferay` フォルダに属し、 [Liferay DXP workspace](https://learn.liferay.com/dxp/latest/en/developing-applications/tooling/liferay_workspace.html) のように構成されています。
+Liferay 固有のコードは `liferay` フォルダに属し、 [Liferay DXP workspace](https://learn.liferay.com/w/dxp/developing-applications/tooling/liferay_workspace) のように構成されています。
 ```
 
 [先にクローンした](./matching-dxp-versions.md#clone-the-liferay-cloud-repository) Liferay Cloud プロジェクトリポジトリから`liferay/configs/{ENV}/`フォルダ（Liferay Cloud 環境に対応）に移動し、Liferay [ポータルプロパティ](../customizing-liferay-dxp-in-the-cloud/configuring-the-liferay-dxp-service.md#portal-properties) ファイル（例： `portal-ext.properties`）を各環境フォルダに配置します。
@@ -24,13 +24,13 @@ Liferay 固有のコードは `liferay` フォルダに属し、 [Liferay DXP wo
 
 ## OSGiモジュールの整理
 
-もし、オンプレミスの Liferay インストールに使用するカスタム OSGi モジュールがあるなら、すべての [OSGiサービスのオーバーライドをする](https://learn.liferay.com/dxp/latest/ja/liferay-internals/extending-liferay/overriding-osgi-services.html) を適切な環境の `liferay/modules/{ENV}/` フォルダ（同じワークスペースフォルダ構造を持つ）に置きます。
+もし、オンプレミスの Liferay インストールに使用するカスタム OSGi モジュールがあるなら、すべての [OSGiサービスのオーバーライドをする](https://learn.liferay.com/w/dxp/liferay-internals/extending-liferay/overriding-osgi-services) を適切な環境の `liferay/modules/{ENV}/` フォルダ（同じワークスペースフォルダ構造を持つ）に置きます。
 
 変更がデプロイされると、カスタムモジュールのコードは自動的にコンパイルされ、 `liferay` サービスコンテナの `$LIFERAY_HOME/deploy/` フォルダーにデプロイされます。
 
 ## カスタムテーマの整理
 
-次に、 [環境の設定とテーマの作成](https://learn.liferay.com/dxp/latest/ja/site-building/site-appearance/themes/theme-development/getting-started/setting-up-an-environment-and-creating-a-theme.html) のすべてのソースコードを、適切な環境の `liferay/themes/{ENV}/` フォルダに置きます。
+次に、 [環境の設定とテーマの作成](https://learn.liferay.com/w/dxp/site-building/site-appearance/themes/theme-development/getting-started/setting-up-an-environment-and-creating-a-theme) のすべてのソースコードを、適切な環境の `liferay/themes/{ENV}/` フォルダに置きます。
 
 変更がデプロイされると、カスタムテーマは自動的にビルドされ、 `liferay` サービスコンテナの `$LIFERAY_HOME/deploy/` フォルダにデプロイされます。
 

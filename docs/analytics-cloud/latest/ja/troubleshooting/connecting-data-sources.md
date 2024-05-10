@@ -92,7 +92,7 @@ Liferay DXPのインストールは、以下のフィックスパックの最小
 
 ## ログインしているユーザーが匿名で表示される
 
-[Syncing Contacts](../getting-started/connecting-liferay-dxp-to-analytics-cloud.md) の場合、Analytics CloudはLiferay DXP内に存在するユーザーレコードに依存します。 したがって、 [シングルサインオンの設定](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/securing-liferay/configuring-sso.html) または [LDAPディレクトリへの接続](https://learn.liferay.com/dxp/latest/ja/users-and-permissions/connecting-to-a-user-directory/connecting-to-an-ldap-directory.html) を使用している場合は、Analytics Cloudと連絡先を同期する前に、すべてのユーザーをLiferay DXPに必ずインポートまたはマッピングしてください。
+[Syncing Contacts](../getting-started/connecting-liferay-dxp-to-analytics-cloud.md) の場合、Analytics CloudはLiferay DXP内に存在するユーザーレコードに依存します。 したがって、 [シングルサインオンの設定](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/configuring-sso) または [LDAPディレクトリへの接続](https://learn.liferay.com/w/dxp/users-and-permissions/connecting-to-a-user-directory/connecting-to-an-ldap-directory) を使用している場合は、Analytics Cloudと連絡先を同期する前に、すべてのユーザーをLiferay DXPに必ずインポートまたはマッピングしてください。
 
 ## ユーザーの同期に時間がかかる
 

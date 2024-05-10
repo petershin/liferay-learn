@@ -62,8 +62,8 @@ When selecting an image, be sure to have a proper image ready. Don’t forget to
 
 More information on Personalization and Segmentation and how to use the features provided is available elsewhere on this site:
 
-* [Creating and Managing User Segments](https://learn.liferay.com/dxp/latest/en/site-building/personalizing-site-experience/segmentation/creating-and-managing-user-segments.html)
-* [Creating and Managing Experiences](https://learn.liferay.com/dxp/latest/en/site-building/personalizing-site-experience/experience-personalization/creating-and-managing-experiences.html)
+* [Creating and Managing User Segments](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience/segmentation/creating-and-managing-user-segments)
+* [Creating and Managing Experiences](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience/experience-personalization/creating-and-managing-experiences)
 
 ### Not only Segmentation
 
@@ -89,6 +89,6 @@ This can be useful to promote certain products or content that users are more li
 
 Also Catalogs and Prices can be personalized. If a company sells bespoke products for specific customers, they can [limit visibility for a product](https://learn.liferay.com/en/w/commerce/product-management/creating-and-managing-products/products/configuring-product-visibility-using-account-groups) to a specific customer. Or, they might have some products that are only sold to certain types of customers, for example some premium service they sell only to gold customers. 
 
-Liferay allows the list of products to be presented to be easily personalized using straightforward configuration. [Pricing](https://learn.liferay.com/commerce/latest/en/pricing/creating-a-price-list.html) and [Promotions](https://learn.liferay.com/commerce/latest/en/pricing/promoting-products/creating-a-promotion.html) can be configured per customer or customer group. This means that with Liferay an organization can be sure that a customer will only see the personalized product, prices, promotions, and discounts.
+Liferay allows the list of products to be presented to be easily personalized using straightforward configuration. [Pricing](https://learn.liferay.com/w/commerce/pricing/creating-a-price-list) and [Promotions](https://learn.liferay.com/w/commerce/pricing/promoting-products/creating-a-promotion) can be configured per customer or customer group. This means that with Liferay an organization can be sure that a customer will only see the personalized product, prices, promotions, and discounts.
 
 Next: [Content Management and Analytics](./content-management-analytics.md).

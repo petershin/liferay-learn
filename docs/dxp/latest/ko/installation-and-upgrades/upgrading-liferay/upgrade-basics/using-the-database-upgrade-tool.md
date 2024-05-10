@@ -45,7 +45,7 @@ Liferay 인스턴스에서 분리된 상태에서 데이터베이스를 수정�
     DXP/Portal 7.3+는 검색 인덱싱을 자동으로 비활성화/재활성화합니다.
     ```
 
-1. [커머스](https://learn.liferay.com/commerce/latest/ko/index.html) 를 사용 중인 경우 업그레이드를 준비하세요. 자세한 내용은 [Liferay Commerce 업그레이드](https://learn.liferay.com/commerce/latest/ko/installation-and-upgrades/upgrading-liferay-commerce.html) 를 참조하세요.
+1. [커머스](https://learn.liferay.com/w/commerce/index) 를 사용 중인 경우 업그레이드를 준비하세요. 자세한 내용은 [Liferay Commerce 업그레이드](https://learn.liferay.com/w/commerce/installation-and-upgrades/upgrading-liferay-commerce) 를 참조하세요.
 
 1. Liferay 데이터베이스 업그레이드와 함께 마켓플레이스 앱 데이터를 업그레이드하려면 [에서 새 Liferay 버전이 적용되는 각 앱의 최신 버전을](../../../system-administration/installing-and-managing-apps/installing-apps/downloading-apps.md) 다운로드하여 `[Liferay 홈]/deploy` 폴더에 복사하세요. 그렇지 않으면 데이터베이스 업그레이드 후 앱을 설치하고 [업그레이드 후 고려 사항](./post-upgrade-considerations.md)에 설명된 대로 데이터를 업그레이드할 수 있습니다.
 

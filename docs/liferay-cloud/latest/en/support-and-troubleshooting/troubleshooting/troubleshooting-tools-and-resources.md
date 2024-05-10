@@ -135,7 +135,7 @@ See [Support Access](../liferay-cloud-support/support-access.md) for more inform
 
 ## Help Center
 
-If you have questions not answered by Liferay Cloud [Documentation](https://learn.liferay.com/liferay-cloud/latest/en/index.html) or would like to report an issue, sign in to the Liferay [Help Center](https://help.liferay.com/) to view subscription-only resources or submit a ticket.
+If you have questions not answered by Liferay Cloud [Documentation](https://learn.liferay.com/w/liferay-cloud/index) or would like to report an issue, sign in to the Liferay [Help Center](https://help.liferay.com/) to view subscription-only resources or submit a ticket.
 
 ![View subscription-only resources or submit a ticket via the Liferay Help Center page](./troubleshooting-tools-and-resources/images/08.png)
 

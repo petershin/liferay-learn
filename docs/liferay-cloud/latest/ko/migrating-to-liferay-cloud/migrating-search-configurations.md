@@ -6,7 +6,7 @@
 
 온프레미스 환경에서 Elasticsearch를 사용하지 않는 경우 계속하기 전에 Elasticsearch로 마이그레이션하십시오.
 
-Elasticsearch로 마이그레이션하려면 Liferay 설치를 설치한 다음 여기에 연결해야 합니다. 자세한 내용은 [Elasticsearch 시작하기](https://learn.liferay.com/dxp/latest/ko/using-search/installing-and-upgrading-a-search-engine/elasticsearch/getting-started-with-elasticsearch.html) 을 참조하십시오.
+Elasticsearch로 마이그레이션하려면 Liferay 설치를 설치한 다음 여기에 연결해야 합니다. 자세한 내용은 [Elasticsearch 시작하기](https://learn.liferay.com/w/dxp/using-search/installing-and-upgrading-a-search-engine/elasticsearch/getting-started-with-elasticsearch) 을 참조하십시오.
 
 ```{tip}
 Elasticsearch로 마이그레이션하는 데 도움이 필요한 경우 [Liferay Cloud 지원](https://help.liferay.com/hc/en-us) 에 문의하십시오.

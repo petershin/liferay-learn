@@ -54,7 +54,7 @@ The simplest way to add the JavaScript code is to modify an individual page. Mak
 
 1. Click *Save* and now your page is ready to track events.
 
-To learn more, see [Configuring Individual Pages](https://learn.liferay.com/dxp/latest/en/site-building/creating-pages/page-settings/configuring-individual-pages.html).
+To learn more, see [Configuring Individual Pages](https://learn.liferay.com/w/dxp/site-building/creating-pages/page-settings/configuring-individual-pages).
 
 ## Add A Page Fragment
 
@@ -79,11 +79,11 @@ Another way to add the Javascript code is to create a page fragment that can be 
 !!! note
     Fragments that use the Analytics JavaScript object may break on sites that aren't linked to Analytics Cloud. If you want to use the same fragment across multiple sites, check for the existence of the Analytics object before referencing it.
 
-To learn more, see [Developing Fragments](https://learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/developing-fragments-intro.html).
+To learn more, see [Developing Fragments](https://learn.liferay.com/w/dxp/site-building/developer-guide/developing-page-fragments/developing-fragments-intro).
 
 ## Related Topics
 
 - [Tracking Custom Assets](../assets/tracking-custom-assets.md)
 - [Definitions for Event Attributes](../../workspace-data/definitions/definitions-for-event-attributes.md)
-- [Configuring Individual Pages](https://learn.liferay.com/dxp/latest/en/site-building/creating-pages/page-settings/configuring-individual-pages.html)
-- [Developing Fragments](https://learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/developing-fragments-intro.html)
+- [Configuring Individual Pages](https://learn.liferay.com/w/dxp/site-building/creating-pages/page-settings/configuring-individual-pages)
+- [Developing Fragments](https://learn.liferay.com/w/dxp/site-building/developer-guide/developing-page-fragments/developing-fragments-intro)

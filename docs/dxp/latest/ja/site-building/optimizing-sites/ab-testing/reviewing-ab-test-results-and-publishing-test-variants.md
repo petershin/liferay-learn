@@ -32,7 +32,7 @@ A/Bテストの結果を確認し、バリアントを公開するには、
    A/B テストバリアントをパブリッシュすると、バリアントはコンテンツページを訪れるすべてのユーザーに対してアクティブになります。
    ```
 
-A/Bテストパネルの ［**Analytics Cloudでデータを表示**］ ボタンをクリックして、Analytics Cloudのダッシュボードに移動し、他のテスト統計を表示できます。 詳細は、 [A/Bテスト](https://learn.liferay.com/analytics-cloud/latest/ja/optimization/a-b-testing.html) を参照してください。
+A/Bテストパネルの ［**Analytics Cloudでデータを表示**］ ボタンをクリックして、Analytics Cloudのダッシュボードに移動し、他のテスト統計を表示できます。 詳細は、 [A/Bテスト](https://learn.liferay.com/w/analytics-cloud/optimization/a-b-testing) を参照してください。
 
 ## 関連トピック
 

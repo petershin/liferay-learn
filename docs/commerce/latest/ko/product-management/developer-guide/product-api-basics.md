@@ -129,7 +129,7 @@
 | `-u "test@liferay.com:learn"`                                                                                                   | 기본 인증 자격 증명             |
 
 !!! note
-   여기서는 데모용으로 기본 인증이 사용됩니다. 프로덕션의 경우 [OAuth 2.0 사용](https://learn.liferay.com/dxp/latest/ko/headless-delivery/using-oauth2.html) 을 통해 사용자를 인증해야 합니다. 샘플 React 애플리케이션은 [OAuth2를 사용하여 사용자 인증](https://learn.liferay.com/dxp/latest/ko/headless-delivery/using-oauth2/using-oauth2-to-authorize-users.html) 를 참조하세요. OAuth2를 활용합니다.
+   여기서는 데모용으로 기본 인증이 사용됩니다. 프로덕션의 경우 [OAuth 2.0 사용](https://learn.liferay.com/w/dxp/headless-delivery/using-oauth2) 을 통해 사용자를 인증해야 합니다. 샘플 React 애플리케이션은 [OAuth2를 사용하여 사용자 인증](https://learn.liferay.com/w/dxp/headless-delivery/using-oauth2/using-oauth2-to-authorize-users) 를 참조하세요. OAuth2를 활용합니다.
 
 다른 cURL 명령은 유사한 JSON 인수를 사용합니다.
 
@@ -223,7 +223,7 @@ Liferay 인스턴스의 `Product` 개체가 JSON에 나열됩니다.
 | 이름:asc            | 오름차순으로 이름별로 정렬                                           |
 | 생성날짜:desc,이름:desc | 먼저 내림차순으로 createDate를 기준으로 정렬한 다음 내림차순으로 이름을 기준으로 정렬합니다. |
 
-자세한 내용은 [API 쿼리 매개변수](https://learn.liferay.com/dxp/latest/ko/headless-delivery/consuming-apis/api-query-parameters.html) 을 참조하세요.
+자세한 내용은 [API 쿼리 매개변수](https://learn.liferay.com/w/dxp/headless-delivery/consuming-apis/api-query-parameters) 을 참조하세요.
 
 ## 제품 받기
 
@@ -332,4 +332,4 @@ java -classpath .:* -DproductId=1234 Product_DELETE_ById
    :lines: 8-17
 ```
 
-[REST 서비스 사용](https://learn.liferay.com/dxp/latest/ko/headless-delivery/consuming-apis/consuming-rest-services.html) 은 `제품` 서비스 및 스키마를 모두 나열하고 각 서비스를 시도할 수 있는 인터페이스가 있습니다.
+[REST 서비스 사용](https://learn.liferay.com/w/dxp/headless-delivery/consuming-apis/consuming-rest-services) 은 `제품` 서비스 및 스키마를 모두 나열하고 각 서비스를 시도할 수 있는 인터페이스가 있습니다.

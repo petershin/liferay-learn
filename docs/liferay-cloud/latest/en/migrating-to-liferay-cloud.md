@@ -58,7 +58,7 @@ Once you have these tools installed, you may want to take some time to familiari
 
 For instance, if you are new to Git, then you may want to see the [official Git materials](https://git-scm.com/doc) (including reference documentation, a command cheat sheet, etc.) or practice using it independently before applying it to your migration. Git is a powerful version control tool with capabilities beyond what is used in this migration guide.
 
-Migrating to Liferay Cloud also involves moving your own custom code, modules, and themes into a Liferay Workspace specifically for your project. If you are new to Liferay Workspace, then you may also want to learn how to use it effectively [here](https://learn.liferay.com/dxp/latest/en/building-applications/tooling/liferay-workspace/what-is-liferay-workspace.html).
+Migrating to Liferay Cloud also involves moving your own custom code, modules, and themes into a Liferay Workspace specifically for your project. If you are new to Liferay Workspace, then you may also want to learn how to use it effectively [here](https://learn.liferay.com/w/dxp/building-applications/tooling/liferay-workspace/what-is-liferay-workspace).
 
 ### Prepare the Environment
 

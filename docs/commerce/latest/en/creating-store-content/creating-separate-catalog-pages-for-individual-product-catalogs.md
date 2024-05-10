@@ -11,11 +11,11 @@ taxonomy-category-names:
 
 Your storefront can contain products from multiple catalogs. Liferay stores Products in Catalogs and displays them in your storefront using a *Catalog Page*. See [Creating a Catalog Page](./creating-a-catalog-page.md) for more information. Since different catalogs can contain different kinds of products, you can differentiate them using multiple Catalog Pages.
 
-To do this, you must first have two or more Catalogs, and at least one Catalog page. Then, duplicate the existing Catalog Page and add the [Custom Filter](https://learn.liferay.com/dxp/latest/en/using-search/search-pages-and-widgets/search-results/custom-filter-examples.html) widget on both pages to filter products by the catalog ID.
+To do this, you must first have two or more Catalogs, and at least one Catalog page. Then, duplicate the existing Catalog Page and add the [Custom Filter](https://learn.liferay.com/w/dxp/using-search/search-pages-and-widgets/search-results/custom-filter-examples) widget on both pages to filter products by the catalog ID.
 
 ## Copying an Existing Catalog Page
 
-In Liferay DXP 7.4 U22+ and GA22+, to copy a Catalog Page in the Minium site, you must first [enable Private Pages](https://learn.liferay.com/dxp/latest/en/site-building/creating-pages/understanding-pages.html#enabling-private-pages) for your instance. If you are on an earlier version, this step isn't necessary. 
+In Liferay DXP 7.4 U22+ and GA22+, to copy a Catalog Page in the Minium site, you must first [enable Private Pages](https://learn.liferay.com/w/dxp/site-building/creating-pages/understanding-pages#enabling-private-pages) for your instance. If you are on an earlier version, this step isn't necessary. 
 
 1. Once the Private Pages are active, open the *Site Menu* (![Site Menu](../images/icon-product-menu.png)) and go to *Site Builder* &rarr; *Pages*.
 
@@ -67,10 +67,10 @@ Go back to the Catalog Page:
 You should see products from only one catalog on the page. Repeat the above steps with a different catalog on the other catalog page.
 
 ```{note}
-You can also disable the Custom Filter and make it immutable and invisible using the checkboxes inside the *Configuration* menu. You can use the Custom Filter for a wide range of use cases. See [Custom Filter Examples](https://learn.liferay.com/dxp/latest/en/using-search/search-pages-and-widgets/search-results/custom-filter-examples.html) for more information.
+You can also disable the Custom Filter and make it immutable and invisible using the checkboxes inside the *Configuration* menu. You can use the Custom Filter for a wide range of use cases. See [Custom Filter Examples](https://learn.liferay.com/w/dxp/using-search/search-pages-and-widgets/search-results/custom-filter-examples) for more information.
 ```
 
 ## Related Topics
 
 * [Creating a Catalog Page](./creating-a-catalog-page.md)
-* [Custom Filter Examples](https://learn.liferay.com/dxp/latest/en/using-search/search-pages-and-widgets/search-results/custom-filter-examples.html)
+* [Custom Filter Examples](https://learn.liferay.com/w/dxp/using-search/search-pages-and-widgets/search-results/custom-filter-examples)

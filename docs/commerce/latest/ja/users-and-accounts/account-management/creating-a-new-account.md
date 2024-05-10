@@ -3,7 +3,7 @@
 アカウントを作成するには、1）［**アカウント管理**］ ウィジェットを使用する方法と2）［**コントロールパネル**］ を使用する方法の2つがあります。 **コントロールパネル** へのアクセスは、通常、ストアまたはインストールの管理者権限を持つユーザーに制限されています。
 
 ```{important}
-DXP 7.4以降、アカウント管理ウィジェットはDXPの一部です。 詳細については、 [アカウント管理ウィジェット](https://learn.liferay.com/dxp/latest/ja/users-and-permissions/accounts/account-management-widget.html) を参照してください。 
+DXP 7.4以降、アカウント管理ウィジェットはDXPの一部です。 詳細については、 [アカウント管理ウィジェット](https://learn.liferay.com/w/dxp/users-and-permissions/accounts/account-management-widget) を参照してください。 
 ```
 
 ## アカウント管理ウィジェットを使用する

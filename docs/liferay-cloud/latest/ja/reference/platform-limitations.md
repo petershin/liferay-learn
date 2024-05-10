@@ -49,7 +49,7 @@ Liferay Cloudの利用を計画する際には、これらの一般的な制限�
 
 これらの制限は、各Liferay Cloud環境における [Liferayサービス](../customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service.md) に適用されます。
 
-**リモートステージング** : [リモート本番環境ステージングの設定](https://learn.liferay.com/dxp/latest/ja/site-building/publishing-tools/staging/configuring-remote-live-staging.html) はLiferay Cloudでは利用できません。 ローカルステージングは引き続き利用可能で、サポートされています。
+**リモートステージング** : [リモート本番環境ステージングの設定](https://learn.liferay.com/w/dxp/site-building/publishing-tools/staging/configuring-remote-live-staging) はLiferay Cloudでは利用できません。 ローカルステージングは引き続き利用可能で、サポートされています。
 
 **Auto-scaling** : 有効な場合、オートスケーリングは、デフォルトの最大10までしか新しいインスタンスを追加できない。 最大100個のインスタンスまで、異なる最大数のインスタンスを構成できます。
 

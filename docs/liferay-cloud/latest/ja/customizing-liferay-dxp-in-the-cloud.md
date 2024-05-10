@@ -95,7 +95,7 @@ liferay
 
 Liferay DXPには、コンテンツを構築、管理、Webにデプロイするための強力な機能が多数搭載されています。 しかし、その中にはLiferay Cloudでは利用できない機能もあります。
 
-* [リモート本番環境ステージングの設定](https://learn.liferay.com/dxp/latest/ja/site-building/publishing-tools/staging/configuring-remote-live-staging.html) は、現在Liferay Cloudではサポートされていません。 オンプレミスからLiferay Cloudに移行する場合、ステージング機能を継続して使用するためには、ローカルステージングに変更する必要があります。
+* [リモート本番環境ステージングの設定](https://learn.liferay.com/w/dxp/site-building/publishing-tools/staging/configuring-remote-live-staging) は、現在Liferay Cloudではサポートされていません。 オンプレミスからLiferay Cloudに移行する場合、ステージング機能を継続して使用するためには、ローカルステージングに変更する必要があります。
 
 ## 関連トピック
 

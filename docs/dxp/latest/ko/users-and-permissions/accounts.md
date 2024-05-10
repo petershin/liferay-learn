@@ -17,7 +17,7 @@ toc:
 **비즈니스** , **개인** 및 **게스트** 유형의 세 가지 계정 유형이 있습니다. 비즈니스 계정은 여러 사용자를 계정에 연결할 수 있습니다. 개인 유형 계정에는 연결된 계정이 하나만 있을 수 있습니다. 게스트 유형 계정은 등록되지 않은 사용자가 비즈니스 또는 사이트와 상호 작용할 수 있는 방법을 제공합니다.
 
 ```{note}
-계정은 원래 [계정 관리](https://learn.liferay.com/commerce/latest/ko/users-and-accounts/account-management.html) 에 있는 기능으로 현재 Liferay DXP의 일부입니다. 7.4 이상.
+계정은 원래 [계정 관리](https://learn.liferay.com/w/commerce/users-and-accounts/account-management) 에 있는 기능으로 현재 Liferay DXP의 일부입니다. 7.4 이상.
 ```
 
 ## 계정 만들기

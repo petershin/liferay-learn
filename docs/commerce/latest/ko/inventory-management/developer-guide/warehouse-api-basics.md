@@ -106,7 +106,7 @@ Liferay가 실행되면,
 | `-u "test@liferay.com:learn"`                                                 | 기본 인증 자격 증명을 입력합니다.           |
 
 ```{note}
-여기서는 데모용으로 기본 인증이 사용됩니다. 프로덕션의 경우 [OAuth 2.0 사용](https://learn.liferay.com/dxp/latest/ko/headless-delivery/using-oauth2.html) 을 통해 사용자를 인증해야 합니다. 샘플 React 애플리케이션은 [OAuth2를 사용하여 사용자 인증](https://learn.liferay.com/dxp/latest/ko/headless-delivery/using-oauth2/using-oauth2-to-authorize-users.html) 를 참조하세요. OAuth2를 사용합니다.
+여기서는 데모용으로 기본 인증이 사용됩니다. 프로덕션의 경우 [OAuth 2.0 사용](https://learn.liferay.com/w/dxp/headless-delivery/using-oauth2) 을 통해 사용자를 인증해야 합니다. 샘플 React 애플리케이션은 [OAuth2를 사용하여 사용자 인증](https://learn.liferay.com/w/dxp/headless-delivery/using-oauth2/using-oauth2-to-authorize-users) 를 참조하세요. OAuth2를 사용합니다.
 ```
 
 다른 cURL 명령은 유사한 JSON 인수를 사용합니다.
@@ -203,7 +203,7 @@ java -classpath .:* Warehouses_GET_FromInstance
 | `name:desc`           | 내림차순으로 이름별로 정렬        |
 | `countryISOCode:desc` | 국가 ISO 코드별로 내림차순으로 정렬 |
 
-자세한 내용은 [API 쿼리 매개변수](https://learn.liferay.com/dxp/latest/ko/headless-delivery/consuming-apis/api-query-parameters.html) 참조하세요.
+자세한 내용은 [API 쿼리 매개변수](https://learn.liferay.com/w/dxp/headless-delivery/consuming-apis/api-query-parameters) 참조하세요.
 
 ## 창고 확보
 
@@ -313,4 +313,4 @@ java -classpath .:* -DwarehouseId=1234 Warehouse_DELETE_ById
    :lines: 8-17
 ```
 
-[REST 서비스 사용](https://learn.liferay.com/dxp/latest/ko/headless-delivery/consuming-apis/consuming-rest-services.html) 은 `Warehouse` 서비스 및 스키마를 보여주고 각 서비스를 테스트하기 위한 인터페이스를 가지고 있습니다.
+[REST 서비스 사용](https://learn.liferay.com/w/dxp/headless-delivery/consuming-apis/consuming-rest-services) 은 `Warehouse` 서비스 및 스키마를 보여주고 각 서비스를 테스트하기 위한 인터페이스를 가지고 있습니다.

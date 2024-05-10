@@ -16,7 +16,7 @@ A/B 테스트를 실행하려면 Liferay DXP 인스턴스가 [Liferay DXP를 Ana
 * Liferay DXP 및 Analytics Cloud는 테스트 상태와 변형 결과를 보여줍니다.
 * Analytics Cloud에서 A/B 테스트의 다른 측면(테스트 기록, 통계, 변형 성능 등)을 관리합니다.
 
-Analytics Cloud의 A/B 테스팅 작업에 대한 자세한 내용은 [A/B 테스팅](https://learn.liferay.com/analytics-cloud/latest/en/optimization/ab-testing.html) 을 참조하세요.
+Analytics Cloud의 A/B 테스팅 작업에 대한 자세한 내용은 [A/B 테스팅](https://learn.liferay.com/w/analytics-cloud/optimization/ab-testing) 을 참조하세요.
 
 ## 관련 주제
 

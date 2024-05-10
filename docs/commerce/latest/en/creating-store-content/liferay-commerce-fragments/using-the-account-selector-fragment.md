@@ -26,7 +26,7 @@ The fragment works best when you have the [catalog](../commerce-storefront-pages
 
    ![Search for the Account Selector fragment in the Fragments and Widgets sidebar.](./using-the-account-selector-fragment/images/01.png)
 
-1. Drag and drop the fragment onto the page. Do not mistake this fragment with the [Account Management widget](https://learn.liferay.com/dxp/latest/en/users-and-permissions/accounts/account-management-widget.html).
+1. Drag and drop the fragment onto the page. Do not mistake this fragment with the [Account Management widget](https://learn.liferay.com/w/dxp/users-and-permissions/accounts/account-management-widget).
 
 1. Click _Publish_.
 

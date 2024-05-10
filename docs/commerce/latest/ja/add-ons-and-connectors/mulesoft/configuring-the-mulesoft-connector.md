@@ -6,7 +6,7 @@ Liferay の MuleSoft へのコネクタは、Liferay の API を記述した Ope
 http://[host]:[port]/o/[headless-api-app-name]/[version]/openapi.json
 ```
 
-これらのドキュメントは、デプロイされたRESTful Webサービスに基づいているため、APIを最も正確に記述することができます。 Liferay API の詳細については [APIの使用](https://learn.liferay.com/dxp/latest/ja/headless-delivery/consuming-apis.html) .
+これらのドキュメントは、デプロイされたRESTful Webサービスに基づいているため、APIを最も正確に記述することができます。 Liferay API の詳細については [APIの使用](https://learn.liferay.com/w/dxp/headless-delivery/consuming-apis) .
 
 OpenAPI ドキュメントのエンドポイントを指定すると、OpenAPI ドキュメントで定義されたパス、パス/クエリー パラメーター、およびエンティティ メタデータがコネクタに自動的に設定されます。 このコネクタは、Liferayの標準に従ったOpenAPI 3.0のドキュメントで動作し、すべてのLiferay APIをサポートします。
 
@@ -40,15 +40,15 @@ OpenAPI ドキュメントのエンドポイントを指定すると、OpenAPI �
 
 **OAuth2** : クライアントキーとクライアントシークレットを入力します。
 
-本番環境では、 [OAuth 2.0を使用する](https://learn.liferay.com/dxp/latest/ja/headless-delivery/using-oauth2.html) によってユーザーを認証する必要があります。 基本認証は、基本的なテストとデモンストレーションのためにのみ提供されます。
+本番環境では、 [OAuth 2.0を使用する](https://learn.liferay.com/w/dxp/headless-delivery/using-oauth2) によってユーザーを認証する必要があります。 基本認証は、基本的なテストとデモンストレーションのためにのみ提供されます。
 
 Liferay で OAuth2 を設定する際、Client Profile で **Headless Server** を選択します。 Liferay は、コネクタで使用するためのクライアント ID（コンシューマーキー）とクライアントシークレット（コンシューマーシークレット）を生成します。
 
 ![OAuth2の設定で、Client ProfileをHeadless Serverとして設定します。](./configuring-the-mulesoft-connector/images/02.png)
 
-OAuth2 認証でエンドポイントを使うには、 [OAuth 2のスコープ](https://learn.liferay.com/dxp/latest/ja/headless-delivery/using-oauth2/oauth2-scopes.html) を必要な認証オプションで定義する必要もあります (例: `everything`, `everything.write`, or `everything.read`) 。
+OAuth2 認証でエンドポイントを使うには、 [OAuth 2のスコープ](https://learn.liferay.com/w/dxp/headless-delivery/using-oauth2/oauth2-scopes) を必要な認証オプションで定義する必要もあります (例: `everything`, `everything.write`, or `everything.read`) 。
 
-詳しい設定方法は [OAuth2アプリケーションの作成](https://learn.liferay.com/dxp/latest/ja/headless-delivery/using-oauth2/creating-oauth2-applications.html) を、OAuth2 を使った React アプリケーションのサンプルは [OAuth2によるユーザーの認証](https://learn.liferay.com/dxp/latest/ja/headless-delivery/using-oauth2/using-oauth2-to-authorize-users.html) をご覧ください。
+詳しい設定方法は [OAuth2アプリケーションの作成](https://learn.liferay.com/w/dxp/headless-delivery/using-oauth2/creating-oauth2-applications) を、OAuth2 を使った React アプリケーションのサンプルは [OAuth2によるユーザーの認証](https://learn.liferay.com/w/dxp/headless-delivery/using-oauth2/using-oauth2-to-authorize-users) をご覧ください。
 
 ### OpenAPIドキュメントエンドポイントの指定
 
@@ -85,5 +85,5 @@ http://[host]:[port]/o/headless-commerce-admin-catalog/v1.0/openapi.json
 ## 関連トピック
 
 * [Muleのフローをデザインする](./designing-mule-flows.md)
-* [APIの使用](https://learn.liferay.com/dxp/latest/ja/headless-delivery/consuming-apis.html)
-* [OAuth 2.0を使用する](https://learn.liferay.com/dxp/latest/ja/headless-delivery/using-oauth2.html)
+* [APIの使用](https://learn.liferay.com/w/dxp/headless-delivery/consuming-apis)
+* [OAuth 2.0を使用する](https://learn.liferay.com/w/dxp/headless-delivery/using-oauth2)

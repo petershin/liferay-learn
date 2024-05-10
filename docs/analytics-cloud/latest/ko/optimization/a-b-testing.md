@@ -2,7 +2,7 @@
 
 A/B 테스트는 컨트롤 디자인(즉, 원본)에 대해 변형 디자인을 테스트하여 콘텐츠 페이지의 효율성을 평가합니다. 이 프로세스에는 페이지 변형 생성, 측정항목(예: 클릭수)으로 테스트, 가장 효과적인 변형 게시가 포함됩니다. 이러한 테스트는 사이트 사용자에게 가장 적합한 환경을 선택하는 데 도움이 될 수 있습니다.
 
-Liferay DXP의 [A/B 테스트](https://learn.liferay.com/dxp/latest/ko/site-building/optimizing-sites/ab-testing/ab-testing.html) 에서 A/B 테스트 생성 및 콘텐츠 페이지 구성에 대해 자세히 알아볼 수 있습니다.
+Liferay DXP의 [A/B 테스트](https://learn.liferay.com/w/dxp/site-building/optimizing-sites/ab-testing/ab-testing) 에서 A/B 테스트 생성 및 콘텐츠 페이지 구성에 대해 자세히 알아볼 수 있습니다.
 
 Analytics Cloud는 Liferay DXP에서 실행되는 A/B 테스트의 모든 결과를 추적합니다. 테스트가 생성되면 자동으로 Analytics Cloud와 동기화됩니다. A/B 테스트를 보려면 왼쪽 메뉴에서 **Test** 를 클릭하세요.
 

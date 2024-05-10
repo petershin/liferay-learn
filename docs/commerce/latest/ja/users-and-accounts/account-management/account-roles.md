@@ -24,7 +24,7 @@ Commerceには、すぐに使用できる2つのアカウントロールが含�
 
 既存のアカウントロールだけではビジネスニーズを満たせない場合、アカウントロールを追加で作成することができます。 また、既存のアカウントロールに権限を追加することもできます。 これは、他のタイプのDXPロールの作成・編集と同じプロセスです。
 
-詳細は、 [ロールの作成と管理](https://learn.liferay.com/dxp/latest/ja/users-and-permissions/roles-and-permissions/creating-and-managing-roles.html) と [ロール権限の定義](https://learn.liferay.com/dxp/latest/ja/users-and-permissions/roles-and-permissions/defining-role-permissions.html) を参照してください。
+詳細は、 [ロールの作成と管理](https://learn.liferay.com/w/dxp/users-and-permissions/roles-and-permissions/creating-and-managing-roles) と [ロール権限の定義](https://learn.liferay.com/w/dxp/users-and-permissions/roles-and-permissions/defining-role-permissions) を参照してください。
 
 <a name="liferay-73-and-earlier" />
 
@@ -50,4 +50,4 @@ Commerceには、すぐに使用できる2つのアカウントロールが含�
 * [アカウント管理](../account-management.md)
 * [新規アカウントの作成](./creating-a-new-account.md)
 * [新規アカウントグループの作成](./creating-a-new-account-group.md)
-* [ロールと権限について](https://learn.liferay.com/dxp/latest/ja/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.html)
+* [ロールと権限について](https://learn.liferay.com/w/dxp/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions)

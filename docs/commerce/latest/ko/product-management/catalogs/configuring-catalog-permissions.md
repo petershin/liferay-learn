@@ -8,7 +8,7 @@
 
 ## 기존 역할에 카탈로그 관리 권한 추가
 
-카탈로그 및 제품을 관리하기 위해 새 사용자 정의 역할을 생성하거나 기존 역할을 수정하여 시작하십시오. 이 역할은 시스템 전체 기능에 대한 최소한의 액세스 권한을 갖도록 구성할 수 있습니다. 사용자 권한 정의에 대한 자세한 내용은 [역할 권한 정의](https://learn.liferay.com/dxp/latest/ko/users-and-permissions/roles-and-permissions/defining-role-permissions.html) 참조하십시오.
+카탈로그 및 제품을 관리하기 위해 새 사용자 정의 역할을 생성하거나 기존 역할을 수정하여 시작하십시오. 이 역할은 시스템 전체 기능에 대한 최소한의 액세스 권한을 갖도록 구성할 수 있습니다. 사용자 권한 정의에 대한 자세한 내용은 [역할 권한 정의](https://learn.liferay.com/w/dxp/users-and-permissions/roles-and-permissions/defining-role-permissions) 참조하십시오.
 
 기존 역할에 대한 카탈로그 관리 권한을 정의하려면:
 
@@ -57,5 +57,5 @@
 
 ## 관련 주제
 
-* [역할 및 권한 이해](https://learn.liferay.com/dxp/latest/ko/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.html)
+* [역할 및 권한 이해](https://learn.liferay.com/w/dxp/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions)
 * [채널을 사용하여 제품 가시성 구성](../../store-management/channels/configuring-product-visibility-using-channels.md)

@@ -60,8 +60,8 @@ Liferayは、静的情報と行動情報の両方を使用してオーディエ�
 
 パーソナライゼーションとセグメンテーションの詳細、および提供される機能の使用方法については、本サイトの別の箇所でご覧いただけます：
 
-* [ユーザーセグメントの作成と管理](https://learn.liferay.com/dxp/latest/ja/site-building/personalizing-site-experience/segmentation/creating-and-managing-user-segments.html) 
-* [エクスペリエンスの作成と管理](https://learn.liferay.com/dxp/latest/ja/site-building/personalizing-site-experience/experience-personalization/creating-and-managing-experiences.html) 
+* [ユーザーセグメントの作成と管理](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience/segmentation/creating-and-managing-user-segments) 
+* [エクスペリエンスの作成と管理](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience/experience-personalization/creating-and-managing-experiences) 
 
 ### セグメンテーションだけではない
 
@@ -87,6 +87,6 @@ LiferayをパーソナライズするためにRolesとPermissionsを使う可能
 
 また、カタログや価格もパーソナライズすることができます。 企業が特定の顧客向けにオーダーメイドの製品を販売している場合、 [、特定の顧客に製品](https://learn.liferay.com/en/w/commerce/product-management/creating-and-managing-products/products/configuring-product-visibility-using-account-groups) の可視性を制限することができる。 あるいは、特定のタイプの顧客だけに販売する商品、たとえばゴールド顧客だけに販売するプレミアム・サービスがあるかもしれない。
 
-Liferayは、簡単な設定を使用して、表示する製品リストを簡単にパーソナライズすることができます。 [価格表の作成](https://learn.liferay.com/commerce/latest/ja/pricing/creating-a-price-list.html) および [プロモーションを作成する](https://learn.liferay.com/commerce/latest/ja/pricing/promoting-products/creating-a-promotion.html) は、顧客または顧客グループごとに設定できます。 つまり、Liferayを使えば、顧客はパーソナライズされた製品、価格、プロモーション、割引のみを確実に見ることができる。
+Liferayは、簡単な設定を使用して、表示する製品リストを簡単にパーソナライズすることができます。 [価格表の作成](https://learn.liferay.com/w/commerce/pricing/creating-a-price-list) および [プロモーションを作成する](https://learn.liferay.com/w/commerce/pricing/promoting-products/creating-a-promotion) は、顧客または顧客グループごとに設定できます。 つまり、Liferayを使えば、顧客はパーソナライズされた製品、価格、プロモーション、割引のみを確実に見ることができる。
 
 次へ [コンテンツ管理とアナリティクス](./content-management-analytics.md) .

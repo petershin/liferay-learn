@@ -20,7 +20,7 @@
 
 ## 게스트 체크아웃 인증 페이지 만들기
 
-게스트 체크아웃에는 **게스트 체크아웃 인증** 위젯이 있는 [페이지 만들기](https://learn.liferay.com/dxp/latest/ko/site-building/creating-pages.html) 이 필요합니다. 이 페이지와 위젯을 생성하려면 [채널 설정](../../store-management/channels/channels-reference-guide.md) 에서 Health Check 기능을 사용하십시오.
+게스트 체크아웃에는 **게스트 체크아웃 인증** 위젯이 있는 [페이지 만들기](https://learn.liferay.com/w/dxp/site-building/creating-pages) 이 필요합니다. 이 페이지와 위젯을 생성하려면 [채널 설정](../../store-management/channels/channels-reference-guide.md) 에서 Health Check 기능을 사용하십시오.
 
 **게스트로 계속** 을 클릭하면 고객이 로그인하거나 계정을 만들지 않고도 구매를 완료할 수 있습니다.
 

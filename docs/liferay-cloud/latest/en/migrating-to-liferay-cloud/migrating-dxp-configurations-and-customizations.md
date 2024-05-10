@@ -14,7 +14,7 @@ Now that your database and document library are applied to your Liferay Cloud en
 First, organize the Liferay configuration files from your on-premises installation you want to migrate. This includes any [portal property files](../customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.md#portal-properties) you are using.
 
 ```{tip}
-Liferay-specific code belongs in the `liferay` folder, which is organized like a [Liferay DXP workspace](https://learn.liferay.com/dxp/latest/en/developing-applications/tooling/liferay_workspace.html).
+Liferay-specific code belongs in the `liferay` folder, which is organized like a [Liferay DXP workspace](https://learn.liferay.com/w/dxp/developing-applications/tooling/liferay_workspace).
 ```
 
 In the Liferay Cloud project repository you [cloned previously](./matching-dxp-versions.md#clone-the-liferay-cloud-repository), navigate to the `liferay/configs/[ENV]/` folders (which correspond to your Liferay Cloud environments),
@@ -32,13 +32,13 @@ When the changes are deployed, any portal property files put into the `liferay/c
 
 ## Organize OSGi Modules
 
-If you have custom OSGi modules used for your on-premises Liferay installation, then put all [OSGi module source code](https://learn.liferay.com/dxp/latest/en/liferay-internals/extending-liferay/overriding-osgi-services.html) into the appropriate environment's `liferay/modules/[ENV]/` folder (with the same workspace folder structure).
+If you have custom OSGi modules used for your on-premises Liferay installation, then put all [OSGi module source code](https://learn.liferay.com/w/dxp/liferay-internals/extending-liferay/overriding-osgi-services) into the appropriate environment's `liferay/modules/[ENV]/` folder (with the same workspace folder structure).
 
 When the changes are deployed, custom module code is automatically compiled and then deployed to the `liferay` service container's `$LIFERAY_HOME/deploy/` folder.
 
 ## Organize Custom Themes
 
-Next, put the source code for all of your [custom themes](https://learn.liferay.com/dxp/latest/en/site-building/site-appearance/themes/theme-development/getting-started/setting-up-an-environment-and-creating-a-theme.html) into the appropriate environment's `liferay/themes/[ENV]/` folder.
+Next, put the source code for all of your [custom themes](https://learn.liferay.com/w/dxp/site-building/site-appearance/themes/theme-development/getting-started/setting-up-an-environment-and-creating-a-theme) into the appropriate environment's `liferay/themes/[ENV]/` folder.
 
 When the changes are deployed, custom themes are automatically build and deployed to the `liferay` service container's `$LIFERAY_HOME/deploy/` folder.
 

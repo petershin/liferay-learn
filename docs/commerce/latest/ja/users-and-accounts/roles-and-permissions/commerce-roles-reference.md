@@ -35,7 +35,7 @@ LiferayにはCommerce用の4つのロール [out-of-the-box](#out-of-the-box-rol
 
 ## すぐに使えるロール
 
-以下のロールは、DXPインスタンスですぐに使用できます。 これらはデフォルトのDXPロールに含まれており、必要に応じて変更することができます。 詳しくは [ロール権限の定義](https://learn.liferay.com/dxp/latest/ja/users-and-permissions/roles-and-permissions/defining-role-permissions.html) を参照のこと。
+以下のロールは、DXPインスタンスですぐに使用できます。 これらはデフォルトのDXPロールに含まれており、必要に応じて変更することができます。 詳しくは [ロール権限の定義](https://learn.liferay.com/w/dxp/users-and-permissions/roles-and-permissions/defining-role-permissions) を参照のこと。
 
 ### アカウント管理者
 
@@ -260,7 +260,7 @@ accountsパーミッションは、アカウント管理者がB2B設定でアカ
 
 ## カスタムロール
 
-以下のリストには、自身のCommerceインスタンス用に作成した方がいい一般的なカスタムロールが含まれています。 これらの役割は、他のDXPの役割と同じように作成できます。 詳細は [ロールの作成と管理](https://learn.liferay.com/dxp/latest/ja/users-and-permissions/roles-and-permissions/creating-and-managing-roles.html) および [ロール権限の定義](https://learn.liferay.com/dxp/latest/ja/users-and-permissions/roles-and-permissions/defining-role-permissions.html) を参照してください。
+以下のリストには、自身のCommerceインスタンス用に作成した方がいい一般的なカスタムロールが含まれています。 これらの役割は、他のDXPの役割と同じように作成できます。 詳細は [ロールの作成と管理](https://learn.liferay.com/w/dxp/users-and-permissions/roles-and-permissions/creating-and-managing-roles) および [ロール権限の定義](https://learn.liferay.com/w/dxp/users-and-permissions/roles-and-permissions/defining-role-permissions) を参照してください。
 
 ### カタログマネージャー
 
@@ -355,7 +355,7 @@ accountsパーミッションは、アカウント管理者がB2B設定でアカ
 
 ## 関連トピック
 
-* [ロールと権限について](https://learn.liferay.com/dxp/latest/ja/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.html)
+* [ロールと権限について](https://learn.liferay.com/w/dxp/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions)
 * [注文管理権限リファレンス](./order-management-permissions.md)
 * [インベントリ管理権限リファレンス](./inventory-management-permissions.md)
 * [プライシング・パーミッション リファレンス](./pricing-permissions.md)

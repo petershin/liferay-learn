@@ -46,7 +46,7 @@ Analytics Cloudは、サイト全体の包括的なレポートを提供する [
 このサイトページデータのリストをCSVファイルとしてダウンロードするには、 **Download Report** をクリックしてください。 詳しくは [ダウンロードレポート](./reference/downloading-reports.md) をご覧ください。
 
 ```{note}
-ページデータは正規化URLに基づいています。 [canonicalization](https://moz.com/learn/seo/canonicalization) または [ページ単位での設定](https://learn.liferay.com/dxp/latest/ja/site-building/creating-pages/page-settings/configuring-individual-pages.html#seo) についてはこちらをご覧ください。
+ページデータは正規化URLに基づいています。 [canonicalization](https://moz.com/learn/seo/canonicalization) または [ページ単位での設定](https://learn.liferay.com/w/dxp/site-building/creating-pages/page-settings/configuring-individual-pages#seo) についてはこちらをご覧ください。
 ```
 
 単一ページの詳細なメトリックを表示するには、テーブル内のそのページをクリックします。 詳しくは [Page Analytics](./touchpoints/pages/pages.md) を参照。

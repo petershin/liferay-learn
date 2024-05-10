@@ -24,7 +24,7 @@ In the above image, the _Product Publisher_ widget is configured to display simi
 ![The configuration of the Product Publisher widget.](./product-details/images/02.png)
 
 ```{note}
-The *Product Details* widget and the *Product Publisher* widget support Liferay's Adaptive Media out-of-the-box. See [Serving Device and Screen Optimized Media](https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/documents-and-media/publishing-and-sharing/serving-device-and-screen-optimized-media.html) for more information.
+The *Product Details* widget and the *Product Publisher* widget support Liferay's Adaptive Media out-of-the-box. See [Serving Device and Screen Optimized Media](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/publishing-and-sharing/serving-device-and-screen-optimized-media) for more information.
 ```
 
 ## Related Topics

@@ -44,7 +44,7 @@ As noted above, this page appears only if the buyer's billing address is differe
 When an order is confirmed, the order is ready for processing by the seller. See [Order Life Cycle](../../order-management/orders/order-life-cycle.md) for more information.
 
 ```{note}
-The *Checkout* widget supports Liferay's Adaptive Media out-of-the-box. See [Serving Device and Screen Optimized Media](https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/documents-and-media/publishing-and-sharing/serving-device-and-screen-optimized-media.html) for more information.
+The *Checkout* widget supports Liferay's Adaptive Media out-of-the-box. See [Serving Device and Screen Optimized Media](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/publishing-and-sharing/serving-device-and-screen-optimized-media) for more information.
 ```
 
 ## Related Topics

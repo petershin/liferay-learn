@@ -10,7 +10,7 @@ uuid: 5cc0862d-ae06-4a61-ac47-953fd1e914c3
 
 As with other services, deploying custom additions involves adding your configurations or files to the appropriate locations in your Git repository. However, deploying the Liferay service slightly differs from deploying other services.
 
-The Liferay service makes use of a [Liferay workspace](https://learn.liferay.com/dxp/latest/en/building-applications/tooling/liferay-workspace/what-is-liferay-workspace.html) to give you more options to add [deployable files](#deploying-themes-portlets-and-osgi-modules), [source code](#building-and-deploying-source-code), and more. These are easily included with a [CI build](../../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md), but if you are using the [CLI tool](../../reference/command-line-tool.md), some [extra steps](#cli-tool-deployment) are necessary specifically for the Liferay service.
+The Liferay service makes use of a [Liferay workspace](https://learn.liferay.com/w/dxp/building-applications/tooling/liferay-workspace/what-is-liferay-workspace) to give you more options to add [deployable files](#deploying-themes-portlets-and-osgi-modules), [source code](#building-and-deploying-source-code), and more. These are easily included with a [CI build](../../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md), but if you are using the [CLI tool](../../reference/command-line-tool.md), some [extra steps](#cli-tool-deployment) are necessary specifically for the Liferay service.
 
 ## Defining the Liferay DXP Docker Image
 
@@ -86,7 +86,7 @@ Once deployed, the deployable `.jar` or `.war` files are copied to the `$LIFERAY
 To apply a hotfix, add the hotfix ZIP file to a `configs/[ENV]/patching/` folder within the Liferay DXP service directory. When you deploy this change, the hotfix is applied to the Liferay DXP instance.
 
 ```{note}
-See [Updating Your DXP Instance to a New Minor Version](./updating-your-dxp-instance-to-a-new-minor-version.md) to update to a new minor version of Liferay DXP instead (such as a new [service pack](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier/understanding-patch-types-for-dxp-7-3-and-earlier.html#service-packs)).
+See [Updating Your DXP Instance to a New Minor Version](./updating-your-dxp-instance-to-a-new-minor-version.md) to update to a new minor version of Liferay DXP instead (such as a new [service pack](https://learn.liferay.com/w/dxp/installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier/understanding-patch-types-for-dxp-7-3-and-earlier#service-packs)).
 ```
 
 For example, you can deploy a hotfix to your development environment with a structure like the following:

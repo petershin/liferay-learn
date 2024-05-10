@@ -12,8 +12,8 @@ Liferay Commerce 3.0은 Liferay Portal 7.3 CE GA6 및 Liferay DXP 7.3 GA1과 함
 
 | 설치 방법                                                                                                                              | 목적                                                                              |
 |:---------------------------------------------------------------------------------------------------------------------------------- |:------------------------------------------------------------------------------- |
-| [Docker 이미지로 시작하기](https://learn.liferay.com/dxp/latest/ko/getting-started/starting-with-a-docker-image.html#get-started-with-liferay)       | Docker 이미지로 시작하는 것이 Liferay Commerce 둘러보기를 시작하는 가장 빠른 방법입니다.                    |
-| [Liferay-Tomcat 번들 설치](https://learn.liferay.com/dxp/latest/ko/installation-and-upgrades/installing-liferay/installing-a-liferay-tomcat-bundle.html) | 응용 프로그램 서버와 함께 사전 번들로 제공되는 Liferay Commerce. Liferay 설치 실행을 시작하는 가장 일반적인 방법입니다. |
+| [Docker 이미지로 시작하기](https://learn.liferay.com/w/dxp/getting-started/starting-with-a-docker-image#get-started-with-liferay)       | Docker 이미지로 시작하는 것이 Liferay Commerce 둘러보기를 시작하는 가장 빠른 방법입니다.                    |
+| [Liferay-Tomcat 번들 설치](https://learn.liferay.com/w/dxp/installation-and-upgrades/installing-liferay/installing-a-liferay-tomcat-bundle) | 응용 프로그램 서버와 함께 사전 번들로 제공되는 Liferay Commerce. Liferay 설치 실행을 시작하는 가장 일반적인 방법입니다. |
 
 Liferay Portal 번들 및 이미지에는 상거래 관련 추가 설치 단계가 필요하지 않습니다. 기본 상거래 기능이 활성화되어 시작할 때 즉시 사용할 수 있습니다.
 

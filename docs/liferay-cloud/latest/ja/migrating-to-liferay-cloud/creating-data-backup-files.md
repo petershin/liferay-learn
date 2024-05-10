@@ -14,7 +14,7 @@ Liferay Cloudサポートに連絡せずに次のステップでアップロー�
 
 データベースがMySQL 5.7と互換性があることを確認してください。 [DBeaver](https://dbeaver.io/) のようなツールを使用して、他のデータベース形式を MySQL に変換することができます。
 
-データの整合性を確保するため、変換の前後にデータベース管理者と調整します。 変換したデータベースをテストするには、 [データベースの設定](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/installing-liferay/configuring-a-database.html) に接続してから次に進みます。
+データの整合性を確保するため、変換の前後にデータベース管理者と調整します。 変換したデータベースをテストするには、 [データベースの設定](https://learn.liferay.com/w/dxp/installation-and-upgrades/installing-liferay/configuring-a-database) に接続してから次に進みます。
 
 ### テーブルの正しいキャピタライゼーションの確保
 
@@ -66,7 +66,7 @@ mysqldump -u### -p##### --databases --add-drop-database lportal > database.sql
 [ファイルストレージ](https://learn.liferay.com/ja/w/dxp/system-administration/file-storage) では、より簡単に大規模なデータセットに拡張できるフォルダ構造を採用しています。 アドバンストファイルシステムストアへの移行は、長期的にドキュメントライブラリのより多くのファイルを収容するために推奨されており、あらゆる実稼働環境において**必須**です。
 ```
 
-文書ライブラリを移行する手順については、「 [ファイルストアの移行](https://learn.liferay.com/dxp/latest/ja/system-administration/file-storage/file-store-migration.html) を参照してください。
+文書ライブラリを移行する手順については、「 [ファイルストアの移行](https://learn.liferay.com/w/dxp/system-administration/file-storage/file-store-migration) を参照してください。
 
 ### 変更を伴うJenkinsビルドの作成
 

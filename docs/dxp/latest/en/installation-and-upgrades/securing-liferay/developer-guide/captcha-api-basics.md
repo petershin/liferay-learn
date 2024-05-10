@@ -12,7 +12,7 @@ taxonomy-category-names:
 
 # Captcha API Basics
 
-Liferay provides a headless API to retrieve and submit captchas using the [SimpleCAPTCHA](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/authentication-basics#configuring-captcha-or-recaptcha) engine. Using the `/captcha` endpoint from the [API Explorer](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services.html), you can add captchas in your custom implementations without using a tag library. There are two endpoints:
+Liferay provides a headless API to retrieve and submit captchas using the [SimpleCAPTCHA](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/authentication-basics#configuring-captcha-or-recaptcha) engine. Using the `/captcha` endpoint from the [API Explorer](https://learn.liferay.com/w/dxp/headless-delivery/consuming-apis/consuming-rest-services), you can add captchas in your custom implementations without using a tag library. There are two endpoints:
 
 * `/GET` - Retrieve a Base64 encoded captcha image string and a JWT token for validation
 * `/POST` - Send the answer of the captcha along with the JWT token for verification
@@ -89,7 +89,7 @@ Here are the command's arguments:
 | `--user "test@liferay.com:learn"`                          | Enter basic authentication credentials. |
 
 !!! note
-    Basic authentication is used here for demonstration purposes. For production, you should authorize users via [OAuth2](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2.html). See [Using OAuth2 to Authorize Users](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2/using-oauth2-to-authorize-users.html) for a sample React application using OAuth2.
+    Basic authentication is used here for demonstration purposes. For production, you should authorize users via [OAuth2](https://learn.liferay.com/w/dxp/headless-delivery/using-oauth2). See [Using OAuth2 to Authorize Users](https://learn.liferay.com/w/dxp/headless-delivery/using-oauth2/using-oauth2-to-authorize-users) for a sample React application using OAuth2.
 
 ## Examine the Java Class
 
@@ -203,4 +203,4 @@ If you send the right answer with the same token that was already used, you rece
 
 You get the same response for trying to use a token that's expired.
 
-The [API Explorer](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services.html) shows the `Captcha` services and schemas and has an interface to test each service.
+The [API Explorer](https://learn.liferay.com/w/dxp/headless-delivery/consuming-apis/consuming-rest-services) shows the `Captcha` services and schemas and has an interface to test each service.

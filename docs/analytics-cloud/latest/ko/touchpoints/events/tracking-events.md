@@ -52,7 +52,7 @@ JavaScript 코드를 추가하는 가장 간단한 방법은 개별 페이지를
 
 1. **저장** 을 클릭하면 이제 페이지에서 이벤트를 추적할 준비가 되었습니다.
 
-자세한 내용은 [개별 페이지 구성](https://learn.liferay.com/dxp/latest/ko/site-building/creating-pages/page-settings/configuring-individual-pages.html) 을 참조하십시오.
+자세한 내용은 [개별 페이지 구성](https://learn.liferay.com/w/dxp/site-building/creating-pages/page-settings/configuring-individual-pages) 을 참조하십시오.
 
 ### 페이지 조각 추가
 
@@ -74,7 +74,7 @@ Javascript 코드를 추가하는 또 다른 방법은 콘텐츠 페이지에 �
 
 1. 조각을 추가할 콘텐츠 페이지로 이동합니다. **편집** 아이콘(![Edit icon.](../../images/icon-edit.png))을 클릭하여 페이지 편집기를 엽니다. 방금 만든 조각을 찾아 페이지로 드래그합니다. **게시** 을 클릭합니다.
 
-자세한 내용은 [조각 개발](https://learn.liferay.com/dxp/latest/ko/site-building/developer-guide/developing-page-fragments/developing-fragments-intro.html) 을 참조하십시오.
+자세한 내용은 [조각 개발](https://learn.liferay.com/w/dxp/site-building/developer-guide/developing-page-fragments/developing-fragments-intro) 을 참조하십시오.
 
 ### 사용자 지정 구현 사용
 

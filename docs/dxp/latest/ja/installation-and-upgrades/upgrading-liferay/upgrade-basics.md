@@ -70,7 +70,7 @@ Liferay DXPサブスクリプションをお持ちの場合は、最新のフィ
 
 ### コマースのアップグレードの準備
 
-[Commerce](https://learn.liferay.com/commerce/latest/ja/index.html) を使用している場合は、Liferayデータベースをアップグレードする前にコマースをアップグレードする準備をしてください。  詳細については、 [Liferay Commerceのアップグレード](https://learn.liferay.com/commerce/latest/ja/installation-and-upgrades/upgrading-liferay-commerce.html) を参照してください。
+[Commerce](https://learn.liferay.com/w/commerce/index) を使用している場合は、Liferayデータベースをアップグレードする前にコマースをアップグレードする準備をしてください。  詳細については、 [Liferay Commerceのアップグレード](https://learn.liferay.com/w/commerce/installation-and-upgrades/upgrading-liferay-commerce) を参照してください。
 
 ### マーケットプレイスアプリの更新
 

@@ -62,4 +62,4 @@ Also, configurations at the site level override configurations at the system and
 
 ## Using Sites with Commerce
 
-Liferay sites are used with [channels](https://learn.liferay.com/commerce/latest/en/store-management/channels.html) to create e-commerce storefronts. Each channel's site type (i.e., B2B, B2C, or B2X) determines how the site works with accounts. See [Commerce Site Types](https://learn.liferay.com/commerce/latest/en/starting-a-store/sites-and-site-types.html) for more information.
+Liferay sites are used with [channels](https://learn.liferay.com/w/commerce/store-management/channels) to create e-commerce storefronts. Each channel's site type (i.e., B2B, B2C, or B2X) determines how the site works with accounts. See [Commerce Site Types](https://learn.liferay.com/w/commerce/starting-a-store/sites-and-site-types) for more information.

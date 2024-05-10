@@ -15,7 +15,7 @@
 ![제품 게시자 위젯의 구성입니다.](./product-details/images/02.png)
 
 ```{note}
-*제품 세부 정보* 위젯 및 *제품 게시자* 위젯은 즉시 사용 가능한 Liferay의 적응형 미디어를 지원합니다. [장치 및 화면 최적화 미디어 제공](https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/documents-and-media/publishing-and-sharing/serving-device- and-screen-optimized-media.html) 을 참조하세요.
+*제품 세부 정보* 위젯 및 *제품 게시자* 위젯은 즉시 사용 가능한 Liferay의 적응형 미디어를 지원합니다. [장치 및 화면 최적화 미디어 제공](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/publishing-and-sharing/serving-device- and-screen-optimized-media.html) 을 참조하세요.
 ```
 
 ## 관련 주제

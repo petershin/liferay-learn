@@ -13,4 +13,4 @@ Analytics Cloud와 마찬가지로 Liferay DXP는 세그먼트를 포함할 수 
 | 사용자 ID는 단 하나의 DXP 사이트에서만 제공됩니다. | 사용자 신원은 여러 DXP 사이트에서 확인됩니다.         |
 | 제한된 단기 개인화에 적합                  | 광범위하고 장기적인 개인화에 적합                  |
 
-Liferay DXP에서 Analytics Cloud 세그먼트 사용에 대한 자세한 내용은 [사용자 세그먼트에 대한 분석 얻기](https://learn.liferay.com/dxp/latest/ko/site-building/personalizing-site-experience/segmentation/getting-analytics-for-user-segments.html) 을 참조하십시오. Liferay DXP의 개인화에 대한 정보는 [사이트 경험 개인화](https://learn.liferay.com/dxp/latest/ko/site-building/personalizing-site-experience.html) 을 참조하십시오.
+Liferay DXP에서 Analytics Cloud 세그먼트 사용에 대한 자세한 내용은 [사용자 세그먼트에 대한 분석 얻기](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience/segmentation/getting-analytics-for-user-segments) 을 참조하십시오. Liferay DXP의 개인화에 대한 정보는 [사이트 경험 개인화](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience) 을 참조하십시오.

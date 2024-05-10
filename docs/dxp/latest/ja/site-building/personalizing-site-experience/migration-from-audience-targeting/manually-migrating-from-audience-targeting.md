@@ -12,7 +12,7 @@
 
 ## 動作ルール
 
-Liferay 7.2以降では、動作ベースのルールはAnalytics Cloudを使用して管理されます。 詳細は、 [セグメント](https://learn.liferay.com/analytics-cloud/latest/ja/people/segments/segments.html) を参照してください。
+Liferay 7.2以降では、動作ベースのルールはAnalytics Cloudを使用して管理されます。 詳細は、 [セグメント](https://learn.liferay.com/w/analytics-cloud/people/segments/segments) を参照してください。
 
 ## カスタムルールの移行
 
@@ -42,4 +42,4 @@ Liferay 7.2 のユーザーにとって、コレクションは [コンテンツ
 * [カスタム・ユーザー・フィールドの作成](../../../users-and-permissions/users/adding-custom-fields-to-users.md)
 * [Segments Editor UI リファレンス](../segmentation/segments-editor-ui-reference.md)
 * [コレクションの作成](../../../site-building/displaying-content/collections-and-collection-pages/creating-collections.md)
-* [セグメント](https://learn.liferay.com/analytics-cloud/latest/ja/people/segments/segments.html)
+* [セグメント](https://learn.liferay.com/w/analytics-cloud/people/segments/segments)

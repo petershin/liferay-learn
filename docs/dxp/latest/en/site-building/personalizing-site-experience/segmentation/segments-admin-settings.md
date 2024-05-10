@@ -29,13 +29,13 @@ See [Understanding Configuration Scope](../../../system-administration/configuri
 
 ![View and configure Analytics Cloud Segments settings.](./segments-admin-settings/images/01.png)
 
-[Analytics Cloud segments](https://learn.liferay.com/analytics-cloud/latest/en/people/segments/segments.html) aggregate individuals based on common attributes and behavior. You can integrate this data with Liferay DXP's segments to deliver content of interest to both known and anonymous users.
+[Analytics Cloud segments](https://learn.liferay.com/w/analytics-cloud/people/segments/segments) aggregate individuals based on common attributes and behavior. You can integrate this data with Liferay DXP's segments to deliver content of interest to both known and anonymous users.
 
 You can access these settings under *Analytics Cloud Segments*:
 
 **Anonymous User Segments Cache Expiration Time**: Set a time limit (in seconds) for how long the anonymous segment cache is stored. When the time expires, the cache is cleared.
 
-**Interest Terms Cache Expiration Time**: Set a time limit (in seconds) for how long the interest terms cache is stored. When the time expires, the cache is cleared. See [Understanding Interests](https://learn.liferay.com/analytics-cloud/latest/en/people/individuals/understanding-interests.html) for more information.
+**Interest Terms Cache Expiration Time**: Set a time limit (in seconds) for how long the interest terms cache is stored. When the time expires, the cache is cleared. See [Understanding Interests](https://learn.liferay.com/w/analytics-cloud/people/individuals/understanding-interests) for more information.
 
 **Update Interval**: Set the interval (in minutes) for receiving updates from Analytics Cloud segments. This setting appears only under system settings.
 
@@ -61,5 +61,5 @@ Please be aware of [Configuration Scope](../../../system-administration/configur
 
 ## Related Topics
 
-* [Analytics Cloud Segments](https://learn.liferay.com/analytics-cloud/latest/en/people/segments/segments.html)
+* [Analytics Cloud Segments](https://learn.liferay.com/w/analytics-cloud/people/segments/segments)
 * [Session Property Vocabularies](../../../content-authoring-and-management/tags-and-categories/session-property-vocabularies.md)

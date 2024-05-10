@@ -35,7 +35,7 @@ Liferay에는 Commerce에 대해 [사용](#out-of-the-box-roles) 4가지 역할(
 
 ## 기본 역할
 
-다음 역할은 DXP 인스턴스와 함께 즉시 사용할 수 있습니다. 이는 기본 DXP 역할에 포함되어 있으며 필요한 경우 수정할 수 있습니다. 자세한 내용은 [역할 권한 정의](https://learn.liferay.com/dxp/latest/ko/users-and-permissions/roles-and-permissions/defining-role-permissions.html) 참조하세요.
+다음 역할은 DXP 인스턴스와 함께 즉시 사용할 수 있습니다. 이는 기본 DXP 역할에 포함되어 있으며 필요한 경우 수정할 수 있습니다. 자세한 내용은 [역할 권한 정의](https://learn.liferay.com/w/dxp/users-and-permissions/roles-and-permissions/defining-role-permissions) 참조하세요.
 
 ### 계정 관리자
 
@@ -260,7 +260,7 @@ Liferay에는 Commerce에 대해 [사용](#out-of-the-box-roles) 4가지 역할(
 
 ## 맞춤 역할
 
-다음 목록에는 자신의 Commerce 인스턴스에 대해 생성할 수 있는 일반적인 사용자 정의 역할이 포함되어 있습니다. 이러한 역할은 다른 DXP 역할과 동일한 방식으로 생성될 수 있습니다. 자세한 내용은 [역할 생성 및 관리](https://learn.liferay.com/dxp/latest/ko/users-and-permissions/roles-and-permissions/creating-and-managing-roles.html) 과 [역할 권한 정의](https://learn.liferay.com/dxp/latest/ko/users-and-permissions/roles-and-permissions/defining-role-permissions.html) 참조하세요.
+다음 목록에는 자신의 Commerce 인스턴스에 대해 생성할 수 있는 일반적인 사용자 정의 역할이 포함되어 있습니다. 이러한 역할은 다른 DXP 역할과 동일한 방식으로 생성될 수 있습니다. 자세한 내용은 [역할 생성 및 관리](https://learn.liferay.com/w/dxp/users-and-permissions/roles-and-permissions/creating-and-managing-roles) 과 [역할 권한 정의](https://learn.liferay.com/w/dxp/users-and-permissions/roles-and-permissions/defining-role-permissions) 참조하세요.
 
 ### 카탈로그 관리자
 
@@ -354,7 +354,7 @@ Liferay에는 Commerce에 대해 [사용](#out-of-the-box-roles) 4가지 역할(
 
 ## 관련 주제
 
-* [역할 및 권한 이해](https://learn.liferay.com/dxp/latest/ko/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.html)
+* [역할 및 권한 이해](https://learn.liferay.com/w/dxp/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions)
 * [주문관리 권한 참고](./order-management-permissions.md)
 * [재고관리 권한 참고](./inventory-management-permissions.md)
 * [가격 책정 권한 참조](./pricing-permissions.md)

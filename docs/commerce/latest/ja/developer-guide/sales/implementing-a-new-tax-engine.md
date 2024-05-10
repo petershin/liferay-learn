@@ -140,7 +140,7 @@ q4b9-commerce-tax-engine=Q4B9 Commerce Tax Engine
 this-tax-engine-serves-a-fixed-x-percent-flat-tax-rate=This tax engine serves a fixed {0} percent flat tax rate.
 ```
 
-> 詳しくは、 [MVCポートレットでのローカライズされたメッセージの使用](https://learn.liferay.com/dxp/latest/ja/building-applications/developing-a-java-web-application/using-mvc/using-localized-messages-in-an-mvc-portlet.html) をご覧ください。
+> 詳しくは、 [MVCポートレットでのローカライズされたメッセージの使用](https://learn.liferay.com/w/dxp/building-applications/developing-a-java-web-application/using-mvc/using-localized-messages-in-an-mvc-portlet) をご覧ください。
 
 ## まとめ
 
@@ -148,5 +148,5 @@ this-tax-engine-serves-a-fixed-x-percent-flat-tax-rate=This tax engine serves a 
 
 ## 関連トピック
 
-* [MVCポートレットでのローカライズされたメッセージの使用](https://learn.liferay.com/dxp/latest/ja/building-applications/developing-a-java-web-application/using-mvc/using-localized-messages-in-an-mvc-portlet.html)
+* [MVCポートレットでのローカライズされたメッセージの使用](https://learn.liferay.com/w/dxp/building-applications/developing-a-java-web-application/using-mvc/using-localized-messages-in-an-mvc-portlet)
 * [税計算のためのレート設定](../../pricing/configuring-taxes/setting-rates-for-tax-calculations.md)

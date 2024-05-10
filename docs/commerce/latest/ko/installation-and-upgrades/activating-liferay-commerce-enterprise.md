@@ -44,7 +44,7 @@ enterprise.product.commerce.enabled=false
 LIFERAY_ENTERPRISE_PERIOD_PRODUCT_PERIOD_COMMERCE_PERIOD_ENABLED=false
 ```
 
-자세한 내용은 [컨테이너 구성](https://learn.liferay.com/dxp/latest/ko/installation-and-upgrades/installing-liferay/using-liferay-docker-images/configuring-containers.html#portal-properties) 참조하세요.
+자세한 내용은 [컨테이너 구성](https://learn.liferay.com/w/dxp/installation-and-upgrades/installing-liferay/using-liferay-docker-images/configuring-containers#portal-properties) 참조하세요.
 
 성공하면 상거래 모듈이 더 이상 글로벌 메뉴(![글로벌 메뉴](../images/icon-applications-menu.png))에 표시되지 않습니다.
 
@@ -124,15 +124,15 @@ Liferay 7.3 SP1부터 사용자는 Commerce를 활성화한 후 더 이상 인�
 
 #### DXP 번들에 배포
 
-XML 파일을 DXP 인스턴스의 [Liferay Home](https://learn.liferay.com/dxp/latest/ko/installation-and-upgrades/reference/liferay-home.html) 폴더에 복사합니다. 활성화 키를 처리하는 동안 Liferay는 이 파일을 `${liferay.home}/osgi/modules` 폴더에 재배치하고 `${liferay.home}/data/license` 폴더에 라이센스 파일(`.li`)을 생성합니다. 자세한 내용은 [Liferay DXP 활성화](https://learn.liferay.com/dxp/latest/ko/installation-and-upgrades/setting-up-liferay/activating-liferay-dxp.html) 활성화를 참조하십시오.
+XML 파일을 DXP 인스턴스의 [Liferay Home](https://learn.liferay.com/dxp/latest/ko/installation-and-upgrades/reference/liferay-home.html) 폴더에 복사합니다. 활성화 키를 처리하는 동안 Liferay는 이 파일을 `${liferay.home}/osgi/modules` 폴더에 재배치하고 `${liferay.home}/data/license` 폴더에 라이센스 파일(`.li`)을 생성합니다. 자세한 내용은 [Liferay DXP 활성화](https://learn.liferay.com/w/dxp/installation-and-upgrades/setting-up-liferay/activating-liferay-dxp) 활성화를 참조하십시오.
 
 #### Docker 컨테이너에 배포
 
-XML 파일을 컨테이너의 `/opt/liferay/deploy` 폴더에 복사합니다. 활성화 키를 처리하는 동안 Liferay는 이 파일을 `opt/liferay/osgi/modules` 폴더에 재배치하고 `opt/liferay/data/license` 폴더에 라이센스 파일(`.li`)을 생성합니다. Docker 컨테이너에 파일을 배포하는 방법에 대한 자세한 내용은 [컨테이너에 파일 제공](https://learn.liferay.com/dxp/latest/ko/installation-and-upgrades/installing-liferay/using-liferay-docker-images/providing-files-to-the-container.html?highlight=opt) 참조하세요.
+XML 파일을 컨테이너의 `/opt/liferay/deploy` 폴더에 복사합니다. 활성화 키를 처리하는 동안 Liferay는 이 파일을 `opt/liferay/osgi/modules` 폴더에 재배치하고 `opt/liferay/data/license` 폴더에 라이센스 파일(`.li`)을 생성합니다. Docker 컨테이너에 파일을 배포하는 방법에 대한 자세한 내용은 [컨테이너에 파일 제공](https://learn.liferay.com/w/dxp/installation-and-upgrades/installing-liferay/using-liferay-docker-images/providing-files-to-the-container?highlight=opt) 참조하세요.
 
 #### Liferay Cloud에 배포
 
-프로젝트의 중앙 Git 저장소에 있는 [Liferay 서비스에 배포](https://learn.liferay.com/liferay-cloud/latest/ko/customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/deploying-to-the-liferay-service.html#deploying-licenses) 폴더에 키를 복사하고 변경 사항을 커밋합니다. 그런 다음 Liferay 서비스에 대한 Jenkins 빌드를 트리거하고 이를 원하는 프로젝트 환경에 배포합니다. 환경의 Liferay 서비스에 파일을 배포하는 방법에 대한 자세한 내용은 Liferay Cloud 배포 워크플로 개요 [Liferay 클라우드 배포 워크플로 개요](https://learn.liferay.com/liferay-cloud/latest/ko/updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.html) 참조하세요.
+프로젝트의 중앙 Git 저장소에 있는 [Liferay 서비스에 배포](https://learn.liferay.com/w/liferay-cloud/customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/deploying-to-the-liferay-service#deploying-licenses) 폴더에 키를 복사하고 변경 사항을 커밋합니다. 그런 다음 Liferay 서비스에 대한 Jenkins 빌드를 트리거하고 이를 원하는 프로젝트 환경에 배포합니다. 환경의 Liferay 서비스에 파일을 배포하는 방법에 대한 자세한 내용은 Liferay Cloud 배포 워크플로 개요 [Liferay 클라우드 배포 워크플로 개요](https://learn.liferay.com/w/liferay-cloud/updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow) 참조하세요.
 
 ```{important}
 Liferay Cloud 계약을 통해 Commerce를 구매한 경우 Liferay Cloud 팀이 클라우드 인프라를 통해 활성화 키를 관리하므로 키를 직접 관리할 필요가 없습니다. 그러나 기존 Liferay Cloud 프로젝트에 Commerce를 추가하는 경우 라이센스를 수동으로 배포해야 합니다. 

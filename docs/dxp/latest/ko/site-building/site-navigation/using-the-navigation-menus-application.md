@@ -84,7 +84,7 @@ Liferay 7.3+에서는 사용자 정의 필드를 사용하여 탐색 메뉴(*사
 
 [어휘 탐색 메뉴 요소](./navigation-menu-element-types.md#vocabularies) 은 동적입니다. 하나가 페이지에 표시되면 단일 요소 대신 현재 계층 구조의 모든 범주 및 하위 범주가 추가됩니다. 어휘 내용에 대한 모든 변경 사항은 메뉴에 자동으로 반영됩니다.
 
-동적 어휘 요소를 사용하면 항목 계층을 변경할 때 탐색 메뉴를 빠르고 쉽게 업데이트할 수 있습니다. 예를 들어, 카테고리를 사용하여 [새 카탈로그 만들기](https://learn.liferay.com/commerce/latest/ko/product-management/catalogs/creating-a-new-catalog.html) 의 제품 유형을 표시한 다음 카테고리에 대한 업데이트가 어휘를 사용하여 모든 메뉴를 자동으로 업데이트하도록 할 수 있습니다. 그런 다음 해당 범주에 사용 [디스플레이 페이지](../displaying-content/using-display-page-templates/publishing-content-with-display-pages.md) 따라 범주 변경 사항이 페이지와 탐색 메뉴에 자동으로 반영될 수 있습니다.
+동적 어휘 요소를 사용하면 항목 계층을 변경할 때 탐색 메뉴를 빠르고 쉽게 업데이트할 수 있습니다. 예를 들어, 카테고리를 사용하여 [새 카탈로그 만들기](https://learn.liferay.com/w/commerce/product-management/catalogs/creating-a-new-catalog) 의 제품 유형을 표시한 다음 카테고리에 대한 업데이트가 어휘를 사용하여 모든 메뉴를 자동으로 업데이트하도록 할 수 있습니다. 그런 다음 해당 범주에 사용 [디스플레이 페이지](../displaying-content/using-display-page-templates/publishing-content-with-display-pages.md) 따라 범주 변경 사항이 페이지와 탐색 메뉴에 자동으로 반영될 수 있습니다.
 
 ![Dynamic vocabulary elements automatically update to reflect their hierarchy of categories in your navigation menus.](./using-the-navigation-menus-application/images/09.png)
 

@@ -51,5 +51,5 @@ Liferay DXP 7.4 및 7.3.10 FP1부터 자산 라이브러리에 대한 스테이�
 이 프로세스를 이해하면 효율성이 향상되고 원활한 게시 환경을 달성하기 위해 미리 계획을 세우는 데 도움이 됩니다. 자세한 내용은 [출판 프로세스 이해](./staging/understanding-the-publishing-process.md)를 참조하세요.
 
 ```{important}
-스테이징은 [커머스](https://learn.liferay.com/commerce/latest/ko/index.html) 또는 [사용자 정의 개체](../../building-applications/objects.md)를 지원하지 않습니다. 게시 프로세스 중에 상거래 및 개체의 엔터티가 준비되지 않습니다.
+스테이징은 [커머스](https://learn.liferay.com/w/commerce/index) 또는 [사용자 정의 개체](../../building-applications/objects.md)를 지원하지 않습니다. 게시 프로세스 중에 상거래 및 개체의 엔터티가 준비되지 않습니다.
 ```

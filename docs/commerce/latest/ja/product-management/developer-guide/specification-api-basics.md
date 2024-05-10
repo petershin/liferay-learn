@@ -170,7 +170,7 @@ java -classpath .:* Specifications_GET_FromInstance
 | `key:desc`  | キーで降順に並べます。   |
 | `title:asc` | タイトルの昇順で並べます。 |
 
-詳しくは、 [APIクエリパラメータ](https://learn.liferay.com/dxp/latest/ja/headless-delivery/consuming-apis/api-query-parameters.html) をご参照ください。
+詳しくは、 [APIクエリパラメータ](https://learn.liferay.com/w/dxp/headless-delivery/consuming-apis/api-query-parameters) をご参照ください。
 
 ## 仕様書を入手する
 
@@ -280,4 +280,4 @@ java -classpath .:* -DspecificationId=1234 Specification_DELETE_ById
    :lines: 8-17
 ```
 
-[RESTサービスの使用](https://learn.liferay.com/dxp/latest/ja/headless-delivery/consuming-apis/consuming-rest-services.html) では、 `Specification` のサービスやスキーマが表示され、各サービスをテストするためのインターフェイスが用意されています。
+[RESTサービスの使用](https://learn.liferay.com/w/dxp/headless-delivery/consuming-apis/consuming-rest-services) では、 `Specification` のサービスやスキーマが表示され、各サービスをテストするためのインターフェイスが用意されています。

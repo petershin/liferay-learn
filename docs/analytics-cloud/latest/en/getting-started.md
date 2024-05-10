@@ -30,7 +30,7 @@ Whether you want a bird's-eye view or a ground-level view of your data, Analytic
 
 ## Analytics About Your Site
 
-At a high level, Analytics Cloud reports aggregate data from your entire site in one comprehensive dashboard. As you [Build Sites](https://learn.liferay.com/dxp/latest/en/site-building/getting-started-with-site-building.html) and [Create Pages](https://learn.liferay.com/dxp/latest/en/site-building/creating-pages.html) in Liferay DXP, you'll get a sense of the traffic flow to your site. You can see your most popular pages ranked.
+At a high level, Analytics Cloud reports aggregate data from your entire site in one comprehensive dashboard. As you [Build Sites](https://learn.liferay.com/w/dxp/site-building/getting-started-with-site-building) and [Create Pages](https://learn.liferay.com/w/dxp/site-building/creating-pages) in Liferay DXP, you'll get a sense of the traffic flow to your site. You can see your most popular pages ranked.
 
 ![The site-wide report gives you a bird's-eye view of your site's analytics.](./getting-started/images/01.png)
 

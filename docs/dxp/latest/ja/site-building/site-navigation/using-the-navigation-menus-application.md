@@ -84,7 +84,7 @@ Liferay 7.3+では、カスタムフィールドを使ってナビゲーショ�
 
 [ボキャブラリー・ナビゲーション・メニュー・エレメント](./navigation-menu-element-types.md#vocabularies) は動的です。1つのエレメントがページに表示されると、1つのエレメントではなく、現在の階層にあるすべてのカテゴリーとサブカテゴリーが追加されます。 語彙の内容を変更すると、自動的にメニューに反映される。
 
-ダイナミック・ボキャブラリー・エレメントを使えば、アイテムの階層が変化しても、素早く簡単にナビゲーション・メニューを更新することができます。 例えば、 [新しいカタログを作成する](https://learn.liferay.com/commerce/latest/ja/product-management/catalogs/creating-a-new-catalog.html) の中で、商品のタイプを表すためにカテゴリーを使用することができます。そして、カテゴリーを更新すると、語彙を使用しているすべてのメニューが自動的に更新されます。 そして、それらのカテゴリーに使われている [表示ページ](../displaying-content/using-display-page-templates/publishing-content-with-display-pages.md) に応じて、カテゴリー分けの変更が自動的にページやナビゲーションメニューに反映されることがある。
+ダイナミック・ボキャブラリー・エレメントを使えば、アイテムの階層が変化しても、素早く簡単にナビゲーション・メニューを更新することができます。 例えば、 [新しいカタログを作成する](https://learn.liferay.com/w/commerce/product-management/catalogs/creating-a-new-catalog) の中で、商品のタイプを表すためにカテゴリーを使用することができます。そして、カテゴリーを更新すると、語彙を使用しているすべてのメニューが自動的に更新されます。 そして、それらのカテゴリーに使われている [表示ページ](../displaying-content/using-display-page-templates/publishing-content-with-display-pages.md) に応じて、カテゴリー分けの変更が自動的にページやナビゲーションメニューに反映されることがある。
 
 ![Dynamic vocabulary elements automatically update to reflect their hierarchy of categories in your navigation menus.](./using-the-navigation-menus-application/images/09.png)
 

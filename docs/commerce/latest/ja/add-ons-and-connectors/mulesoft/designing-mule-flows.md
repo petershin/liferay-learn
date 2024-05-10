@@ -43,7 +43,7 @@
 | パラメータ名 | 種類  | 説明                                                                                                                                                             | 必須  |
 |:------ |:--- |:-------------------------------------------------------------------------------------------------------------------------------------------------------------- |:--- |
 | クラス名   | 文字列 | エクスポートされたエンティティのクラス名                                                                                                                                           | はい  |
-| サイトID  | 文字列 | [RESTサービスの使用](https://learn.liferay.com/dxp/latest/ja/headless-delivery/consuming-apis/consuming-rest-services.html#identify-the-site-containing-the-data) クエリパラメータ | いいえ |
+| サイトID  | 文字列 | [RESTサービスの使用](https://learn.liferay.com/w/dxp/headless-delivery/consuming-apis/consuming-rest-services#identify-the-site-containing-the-data) クエリパラメータ | いいえ |
 | フィールド名 | 文字列 | エクスポートされるエンティティフィールドのカンマ区切りリスト                                                                                                                                 | いいえ |
 
 このフローを実行すると、JSON配列が生成され、別のアプリケーションに変換して読み込むことができます。

@@ -16,7 +16,7 @@
 
    ![Search for the Account Selector fragment in the Fragments and Widgets sidebar.](./using-the-account-selector-fragment/images/01.png)
 
-1. 조각을 페이지에 끌어다 놓습니다. 이 조각을 [계정 관리 위젯](https://learn.liferay.com/dxp/latest/ko/users-and-permissions/accounts/account-management-widget.html) 과 혼동하지 마십시오.
+1. 조각을 페이지에 끌어다 놓습니다. 이 조각을 [계정 관리 위젯](https://learn.liferay.com/w/dxp/users-and-permissions/accounts/account-management-widget) 과 혼동하지 마십시오.
 
 1. **게시** 를 클릭하세요.
 

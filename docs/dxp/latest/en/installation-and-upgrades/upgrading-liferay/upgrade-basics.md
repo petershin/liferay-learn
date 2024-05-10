@@ -71,7 +71,7 @@ Keep in mind that any publication you published before upgrading cannot be rever
 
 ### Prepare for Upgrading Commerce
 
-If you're using [Commerce](https://learn.liferay.com/commerce/latest/en/index.html), prepare to upgrade it before upgrading the Liferay database. See [Upgrading Liferay Commerce](https://learn.liferay.com/commerce/latest/en/installation-and-upgrades/upgrading-liferay-commerce.html) for details.
+If you're using [Commerce](https://learn.liferay.com/w/commerce/index), prepare to upgrade it before upgrading the Liferay database. See [Upgrading Liferay Commerce](https://learn.liferay.com/w/commerce/installation-and-upgrades/upgrading-liferay-commerce) for details.
 
 ### Update Marketplace Apps
 

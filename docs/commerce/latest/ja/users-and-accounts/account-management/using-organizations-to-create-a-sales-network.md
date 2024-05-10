@@ -18,7 +18,7 @@ For example, a B2B company can give everyone in their sales network access to th
 <!-- I'm commenting out the following image because I don't think it clearly depicts how to use organizations to model a sales network. First - it would seem that the image states that "Minium" is the company - and then the company has a sub-org named "Italy". And then "Italy" has sub-orgs per region. I don't think real companies organize like that. The correct model (I think) would be - to make it extremely clear how to understand the image: "Minium Corporation" (Parent Org) > Minium Corporation - Italy Sales Department > [Regions]. Or alternatively: Minium Sales Group > Italy Sales Region > [Regions] - something in the naming to make the hierarchy clearer.
 ![Image 01](./using-organizations-to-create-a-sales-network/images/01.png) -->
 
-現実の世界とまったく同じように販売ネットワークとアカウントを編成すると、販売チームのメンバーがLiferay Commerce内を簡単に移動できます。 組織の作成と構造化の詳細は、 [組織の作成と管理](https://learn.liferay.com/dxp/latest/ja/users-and-permissions/organizations/creating-and-managing-organizations.html) を参照してください。
+現実の世界とまったく同じように販売ネットワークとアカウントを編成すると、販売チームのメンバーがLiferay Commerce内を簡単に移動できます。 組織の作成と構造化の詳細は、 [組織の作成と管理](https://learn.liferay.com/w/dxp/users-and-permissions/organizations/creating-and-managing-organizations) を参照してください。
 
 <a name="define-account-management-and-access-with-organization-roles-and-permissions" />
 
@@ -49,8 +49,8 @@ For example, a B2B company can give everyone in their sales network access to th
 
 ## 関連トピック
 
-* [組織の作成と管理](https://learn.liferay.com/dxp/latest/ja/users-and-permissions/organizations/creating-and-managing-organizations.html)
-* [新しい組織種別の追加](https://learn.liferay.com/dxp/latest/ja/users-and-permissions/organizations/adding-a-new-organization-type.html)
+* [組織の作成と管理](https://learn.liferay.com/w/dxp/users-and-permissions/organizations/creating-and-managing-organizations)
+* [新しい組織種別の追加](https://learn.liferay.com/w/dxp/users-and-permissions/organizations/adding-a-new-organization-type)
 * [役割の管理](https://help.liferay.com/hc/ja/articles/360018174371-Managing-Roles)
 * [ロール権限の定義](https://help.liferay.com/hc/ja/articles/360018174391-Defining-Role-Permissions)
 * [アカウントへの組織の追加](./adding-organizations-to-accounts.md)

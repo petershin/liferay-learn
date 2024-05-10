@@ -26,7 +26,7 @@ Liferay DXP 7.3 및 이전 버전의 경우 채널 설정에서 기본 범주 �
 
 경우에 따라 특정 제품 범주를 페이지에 표시해야 할 수 있습니다. 이것은 판촉이나 제안이 있는 제품을 표시하는 데 유용할 수 있습니다. 특정 카테고리를 페이지에 매핑하려면 다음 단계를 따르십시오.
 
-1. 스토어에서 새 [페이지 이해](https://learn.liferay.com/dxp/latest/ko/site-building/creating-pages/understanding-pages/understanding-pages.html#widget-pages) 생성하고 원하는 다른 페이지 요소와 함께 **카테고리 콘텐츠** 위젯을 추가합니다.
+1. 스토어에서 새 [페이지 이해](https://learn.liferay.com/w/dxp/site-building/creating-pages/understanding-pages/understanding-pages#widget-pages) 생성하고 원하는 다른 페이지 요소와 함께 **카테고리 콘텐츠** 위젯을 추가합니다.
 
 1. **글로벌 메뉴 열기**(![Global Menu](../images/icon-applications-menu.png)) &rarr; 상거래 탭 &rarr; **매장 관리** &rarr; **채널** .
 
@@ -50,4 +50,4 @@ Liferay DXP 7.3 및 이전 버전의 경우 채널 설정에서 기본 범주 �
 
 ## 관련 주제
 
-* [표시 페이지를 사용하여 카테고리 표시](https://learn.liferay.com/dxp/latest/ko/site-building/displaying-content/using-display-page-templates/displaying-categories-using-display-pages.html)
+* [표시 페이지를 사용하여 카테고리 표시](https://learn.liferay.com/w/dxp/site-building/displaying-content/using-display-page-templates/displaying-categories-using-display-pages)

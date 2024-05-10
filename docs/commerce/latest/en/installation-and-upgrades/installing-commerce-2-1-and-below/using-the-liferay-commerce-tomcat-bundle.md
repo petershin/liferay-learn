@@ -36,5 +36,5 @@ To use the Liferay Commerce bundle, follow these steps:
 ## Related Topics
 
 * [Installation Overview](../installation-overview.md)
-* [Installing Liferay DXP](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/installing-liferay/installing-a-liferay-tomcat-bundle.html)
+* [Installing Liferay DXP](https://learn.liferay.com/w/dxp/installation-and-upgrades/installing-liferay/installing-a-liferay-tomcat-bundle)
 * [Liferay Commerce 3.0 Compatibility Matrix](https://help.liferay.com/hc/en-us/articles/360049238151)

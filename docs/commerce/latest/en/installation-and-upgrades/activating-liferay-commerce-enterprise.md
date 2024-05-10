@@ -52,7 +52,7 @@ Or use this Docker `env` variable:
 LIFERAY_ENTERPRISE_PERIOD_PRODUCT_PERIOD_COMMERCE_PERIOD_ENABLED=false
 ```
 
-See [Configuring Containers](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/installing-liferay/using-liferay-docker-images/configuring-containers.html#portal-properties) for more information.
+See [Configuring Containers](https://learn.liferay.com/w/dxp/installation-and-upgrades/installing-liferay/using-liferay-docker-images/configuring-containers#portal-properties) for more information.
 
 If successful, the Commerce modules no longer appear in the Global Menu (![Global Menu](../images/icon-applications-menu.png)).
 
@@ -132,15 +132,15 @@ As of Liferay 7.3 SP1, users are no longer required to reindex their instance af
 
 #### Deploying to DXP Bundles
 
-Copy your XML file to the [`${liferay.home}/deploy`](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/reference/liferay-home.html) folder of your DXP instance. While processing the activation key, Liferay relocates this file to the `${liferay.home}/osgi/modules` folder and generates a license file (`.li`) in the `${liferay.home}/data/license` folder. See [Activating Liferay DXP](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/setting-up-liferay/activating-liferay-dxp.html) for more information.
+Copy your XML file to the [`${liferay.home}/deploy`](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/reference/liferay-home.html) folder of your DXP instance. While processing the activation key, Liferay relocates this file to the `${liferay.home}/osgi/modules` folder and generates a license file (`.li`) in the `${liferay.home}/data/license` folder. See [Activating Liferay DXP](https://learn.liferay.com/w/dxp/installation-and-upgrades/setting-up-liferay/activating-liferay-dxp) for more information.
 
 #### Deploying to Docker Containers
 
-Copy your XML file to the container's `/opt/liferay/deploy` folder. While processing the activation key, Liferay relocates this file to the `opt/liferay/osgi/modules` folder, and generates a license file (`.li`) in the `opt/liferay/data/license` folder. See [Providing Files to a Container](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/installing-liferay/using-liferay-docker-images/providing-files-to-the-container.html?highlight=opt) for more information about deploying files to Docker containers.
+Copy your XML file to the container's `/opt/liferay/deploy` folder. While processing the activation key, Liferay relocates this file to the `opt/liferay/osgi/modules` folder, and generates a license file (`.li`) in the `opt/liferay/data/license` folder. See [Providing Files to a Container](https://learn.liferay.com/w/dxp/installation-and-upgrades/installing-liferay/using-liferay-docker-images/providing-files-to-the-container?highlight=opt) for more information about deploying files to Docker containers.
 
 #### Deploying to Liferay Cloud
 
-Copy your key to the [`liferay/configs/{ENV}/deploy`](https://learn.liferay.com/liferay-cloud/latest/en/customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/deploying-to-the-liferay-service.html#deploying-licenses) folder in your project's central Git repository, and commit your changes. Then, trigger a Jenkins build for your Liferay service, and deploy it to the desired project environment. See [Overview of the Liferay Cloud Deployment Workflow](https://learn.liferay.com/liferay-cloud/latest/en/updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.html) for more information about deploying files to an environment's Liferay service.
+Copy your key to the [`liferay/configs/{ENV}/deploy`](https://learn.liferay.com/w/liferay-cloud/customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/deploying-to-the-liferay-service#deploying-licenses) folder in your project's central Git repository, and commit your changes. Then, trigger a Jenkins build for your Liferay service, and deploy it to the desired project environment. See [Overview of the Liferay Cloud Deployment Workflow](https://learn.liferay.com/w/liferay-cloud/updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow) for more information about deploying files to an environment's Liferay service.
 
 ```{important}
 If you've purchased Commerce through a Liferay Cloud contract, then the Liferay Cloud team manages the activation key through the cloud infrastructure, and there is no need to manage the key yourself. However, if you are adding Commerce to an existing Liferay Cloud project, you must deploy the license manually. 

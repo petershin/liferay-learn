@@ -17,7 +17,7 @@ Analytics Cloud에서 생성된 세그먼트는 Liferay DXP와 동기화됩니�
 1. 오른쪽 패널에서 Segment criteria를 화면 중앙의 캔버스로 끌어다 놓습니다. 패널 상단의 선택기 메뉴에는 선택할 수 있는 기준 유형이 표시됩니다.
 
     * **웹 행동:** 사람이 취한 행동(예: 양식 제출, 블로그 보기 등).
-    * **개별 속성:** 개인에게 속한 속성(예: 연령, 국가, 산업 등). 개별 속성 아래에서 DXP 사용자 정의 필드를 선택할 수도 있습니다. [사용자에게 사용자 정의 필드 추가](https://learn.liferay.com/dxp/latest/ko/users-and-permissions/users/adding-custom-fields-to-users.html) 에 대해 자세히 알아보세요.
+    * **개별 속성:** 개인에게 속한 속성(예: 연령, 국가, 산업 등). 개별 속성 아래에서 DXP 사용자 정의 필드를 선택할 수도 있습니다. [사용자에게 사용자 정의 필드 추가](https://learn.liferay.com/w/dxp/users-and-permissions/users/adding-custom-fields-to-users) 에 대해 자세히 알아보세요.
     * **관심사:** 개인의 관심 주제 및 콘텐츠 유형. Analytics Cloud의 관심사에 대한 자세한 내용은 Customer Insights를 참조하십시오.
     * **세션 속성:** 개인의 웹 세션에 속하는 속성(예: 브라우저, 지리적 사이트 등).
     * **조직 속성:** 조직에 속하는 속성(예: 이름, 계층 구조, 유형 등).

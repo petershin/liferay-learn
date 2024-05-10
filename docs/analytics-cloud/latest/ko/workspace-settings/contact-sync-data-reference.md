@@ -8,7 +8,7 @@ Liferay 인스턴스에서 연락처 [연락처 동기화](../getting-started/co
 
 ## 주문 속성
 
-[사용자에게 사용자 정의 필드 추가](https://learn.liferay.com/dxp/latest/ko/users-and-permissions/users/adding-custom-fields-to-users.html) 사용자 또는 조직을 포함하여 많은 Liferay 자산 및 리소스를 확장할 수 있습니다. 다음 사용자 정의 필드가 동기화됩니다.
+[사용자에게 사용자 정의 필드 추가](https://learn.liferay.com/w/dxp/users-and-permissions/users/adding-custom-fields-to-users) 사용자 또는 조직을 포함하여 많은 Liferay 자산 및 리소스를 확장할 수 있습니다. 다음 사용자 정의 필드가 동기화됩니다.
 
 | 속성            | 묘사                                      |
 |:------------- |:--------------------------------------- |
@@ -20,7 +20,7 @@ Liferay 인스턴스에서 연락처 [연락처 동기화](../getting-started/co
 
 ## 조직
 
-사용자는 Liferay에서 다른 [조직 이해](https://learn.liferay.com/dxp/latest/ko/users-and-permissions/organizations/understanding-organizations.html) 에 속할 수 있습니다. 조직은 자체 사이트와 자체 역할 및 권한을 가질 수 있습니다. 조직은 상위 조직 아래에 하위 조직을 가질 수 있습니다. 다음 조직 필드가 동기화됩니다.
+사용자는 Liferay에서 다른 [조직 이해](https://learn.liferay.com/w/dxp/users-and-permissions/organizations/understanding-organizations) 에 속할 수 있습니다. 조직은 자체 사이트와 자체 역할 및 권한을 가질 수 있습니다. 조직은 상위 조직 아래에 하위 조직을 가질 수 있습니다. 다음 조직 필드가 동기화됩니다.
 
 | 속성                       | 묘사                            |
 |:------------------------ |:----------------------------- |
@@ -33,7 +33,7 @@ Liferay 인스턴스에서 연락처 [연락처 동기화](../getting-started/co
 
 ## 역할
 
-사용자는 Liferay에서 다른 [역할 및 권한 이해](https://learn.liferay.com/dxp/latest/ko/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.html) 부여받을 수 있습니다. 다양한 수준의 권한을 갖도록 역할을 만들고 관리할 수 있습니다. 다음 역할 필드가 동기화됩니다.
+사용자는 Liferay에서 다른 [역할 및 권한 이해](https://learn.liferay.com/w/dxp/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions) 부여받을 수 있습니다. 다양한 수준의 권한을 갖도록 역할을 만들고 관리할 수 있습니다. 다음 역할 필드가 동기화됩니다.
 
 | 속성       | 묘사         |
 |:-------- |:---------- |
@@ -42,7 +42,7 @@ Liferay 인스턴스에서 연락처 [연락처 동기화](../getting-started/co
 
 ## 팀
 
- 사용자는 [사이트용 팀 만들기](https://learn.liferay.com/dxp/latest/ko/site-building/sites/site-membership/creating-teams-for-sites.html) 에도 속할 수 있습니다. 사용자는 사이트별 기능을 위해 단일 사이트 내에서 팀으로 모입니다. 다음 팀 필드가 동기화됩니다.
+ 사용자는 [사이트용 팀 만들기](https://learn.liferay.com/w/dxp/site-building/sites/site-membership/creating-teams-for-sites) 에도 속할 수 있습니다. 사용자는 사이트별 기능을 위해 단일 사이트 내에서 팀으로 모입니다. 다음 팀 필드가 동기화됩니다.
 
 | 속성       | 묘사        |
 |:-------- |:--------- |
@@ -51,7 +51,7 @@ Liferay 인스턴스에서 연락처 [연락처 동기화](../getting-started/co
 
 ## 사용자 그룹
 
-[사용자 그룹 생성 및 관리](https://learn.liferay.com/dxp/latest/ko/users-and-permissions/user-groups/creating-and-managing-user-groups.html) 은 특정 목적을 위해 그룹화된 서로 다른 조직의 사용자입니다. 다음 사용자 그룹 필드가 동기화됩니다.
+[사용자 그룹 생성 및 관리](https://learn.liferay.com/w/dxp/users-and-permissions/user-groups/creating-and-managing-user-groups) 은 특정 목적을 위해 그룹화된 서로 다른 조직의 사용자입니다. 다음 사용자 그룹 필드가 동기화됩니다.
 
 | 속성            | 묘사             |
 |:------------- |:-------------- |
@@ -60,7 +60,7 @@ Liferay 인스턴스에서 연락처 [연락처 동기화](../getting-started/co
 
 ## 사용자 그룹 사이트
 
-[사용자 그룹](https://learn.liferay.com/dxp/latest/ko/users-and-permissions/user-groups.html) 그룹 구성원의 개인 사이트에 추가된 페이지입니다. 다음 사용자 그룹 사이트 필드가 동기화됩니다.
+[사용자 그룹](https://learn.liferay.com/w/dxp/users-and-permissions/user-groups) 그룹 구성원의 개인 사이트에 추가된 페이지입니다. 다음 사용자 그룹 사이트 필드가 동기화됩니다.
 
 | 속성        | 묘사          |
 |:--------- |:----------- |

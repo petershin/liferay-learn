@@ -15,7 +15,7 @@ taxonomy-category-names:
 
 {bdg-secondary}`Liferay DXP 7.4 U35+`
 
-The Liferay Connector to Salesforce uses [Talend](https://help.talend.com/home) job designs and Liferay's [Job Scheduler](https://learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/job-scheduler-framework/using-job-scheduler.html) to import data from Salesforce to Liferay DXP. You can [download](https://marketplace.liferay.com/p/liferay-connector-to-salesforce) the connector and deploy it to your Liferay instance as an `.lpkg` file. This file contains Talend jobs that map Salesforce data fields to Liferay data fields.
+The Liferay Connector to Salesforce uses [Talend](https://help.talend.com/home) job designs and Liferay's [Job Scheduler](https://learn.liferay.com/w/dxp/building-applications/core-frameworks/job-scheduler-framework/using-job-scheduler) to import data from Salesforce to Liferay DXP. You can [download](https://marketplace.liferay.com/p/liferay-connector-to-salesforce) the connector and deploy it to your Liferay instance as an `.lpkg` file. This file contains Talend jobs that map Salesforce data fields to Liferay data fields.
 
 Once deployed, Liferay automatically creates job scheduler tasks for each Talend job. You can then configure and run each task manually or schedule them to run at specific intervals via Job Scheduler.
 
@@ -139,7 +139,7 @@ Some default values are only placeholders. Running a job with these values may l
 
 ## Running the Job Scheduler Tasks
 
-Once configured, you can run each task manually by clicking *Run Now*, or schedule them to run automatically. See [Using Job Scheduler](https://learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/job-scheduler-framework/using-job-scheduler.html) for more information.
+Once configured, you can run each task manually by clicking *Run Now*, or schedule them to run automatically. See [Using Job Scheduler](https://learn.liferay.com/w/dxp/building-applications/core-frameworks/job-scheduler-framework/using-job-scheduler) for more information.
 
 ```{important}
 Running these tasks can be resource intensive and degrade platform performance. To reduce performance impact, avoid running them during peak use hours.
@@ -148,4 +148,4 @@ Running these tasks can be resource intensive and degrade platform performance. 
 ## Related Topics
 
 * [Liferay Marketplace](https://marketplace.liferay.com/p/liferay-connector-to-salesforce)
-* [Using Job Scheduler](https://learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/job-scheduler-framework/using-job-scheduler.html)
+* [Using Job Scheduler](https://learn.liferay.com/w/dxp/building-applications/core-frameworks/job-scheduler-framework/using-job-scheduler)

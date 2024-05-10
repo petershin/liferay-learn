@@ -54,4 +54,4 @@ toc:
 
 ## コマース・サイトの利用
 
-Liferayサイトは、 [チャンネル](https://learn.liferay.com/commerce/latest/ja/store-management/channels.html) 、eコマースストアを作成するために使用されます。 各チャネルのサイトタイプ（B2B、B2C、B2Xなど）は、サイトがアカウントとどのように連携するかを決定する。 詳しくは [サイトとサイトのタイプ](https://learn.liferay.com/commerce/latest/ja/starting-a-store/sites-and-site-types.html) をご覧ください。
+Liferayサイトは、 [チャンネル](https://learn.liferay.com/w/commerce/store-management/channels) 、eコマースストアを作成するために使用されます。 各チャネルのサイトタイプ（B2B、B2C、B2Xなど）は、サイトがアカウントとどのように連携するかを決定する。 詳しくは [サイトとサイトのタイプ](https://learn.liferay.com/w/commerce/starting-a-store/sites-and-site-types) をご覧ください。

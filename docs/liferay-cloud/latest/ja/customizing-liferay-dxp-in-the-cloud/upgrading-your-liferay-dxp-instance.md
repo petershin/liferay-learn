@@ -3,7 +3,7 @@
 Liferayは定期的にLiferay DXPの新しいマイナーバージョンとメジャーバージョンをリリースします。 このバージョンには、セキュリティとバグ修正、および拡張機能が含まれています。 Liferay DXPの新しいメジャーバージョンの増分にアップグレードするには、DXPデータベースをアップグレードする必要があります。
 
 ```{note}
-実稼働中の大規模なデータセットの場合、スムーズなアップグレードを行うためには、さらにいくつかの考慮事項があります。 例えば、カスタムコードやマーケットプレイスアプリは、正常に動作し続けるために追加のアップデートが必要な場合があります。 コアアップグレードの包括的な概要については、 [アップグレードの基本](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/upgrading-liferay/upgrade-basics.html) を参照してください。
+実稼働中の大規模なデータセットの場合、スムーズなアップグレードを行うためには、さらにいくつかの考慮事項があります。 例えば、カスタムコードやマーケットプレイスアプリは、正常に動作し続けるために追加のアップデートが必要な場合があります。 コアアップグレードの包括的な概要については、 [アップグレードの基本](https://learn.liferay.com/w/dxp/installation-and-upgrades/upgrading-liferay/upgrade-basics) を参照してください。
 ```
 
 ```{note}
@@ -110,7 +110,7 @@ Liferay Cloudで環境をアップグレードする場合、アップグレー�
 DXPバンドルは、データのアップグレードに使用されるアップグレードツールを提供します。 このツールは、バンドルに含まれるスクリプト `db_upgrade.sh`を介して呼び出されます。
 
 ```{note}
-データベースのアップグレードツールを事前に設定しておくことで、実行時の柔軟性を高めることができます。 高度な使い方については、 [データベースアップグレードツールの使用](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/upgrading-liferay/upgrade-basics/using-the-database-upgrade-tool.html) を参照してください。
+データベースのアップグレードツールを事前に設定しておくことで、実行時の柔軟性を高めることができます。 高度な使い方については、 [データベースアップグレードツールの使用](https://learn.liferay.com/w/dxp/installation-and-upgrades/upgrading-liferay/upgrade-basics/using-the-database-upgrade-tool) を参照してください。
 ```
 
 `LIFERAY_HOME/tools/portal-tools-db-upgrade-client` フォルダ内でコマンドプロンプトを開いてください。 次に、以下のコマンドを実行します：
@@ -264,6 +264,6 @@ Upgrading the liferay service requires a database upgrade and restoring the life
 
 DXPアップグレードの詳細：
 
-* [アップグレードの基本](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/upgrading-liferay/upgrade-basics.html)
+* [アップグレードの基本](https://learn.liferay.com/w/dxp/installation-and-upgrades/upgrading-liferay/upgrade-basics)
 * [DXPインスタンスを新しいマイナーバージョンにアップデートする](./updating-your-dxp-instance-to-a-new-minor-version.md)
-* [データベースアップグレードツールの使用](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/upgrading-liferay/upgrade-basics/using-the-database-upgrade-tool.html)
+* [データベースアップグレードツールの使用](https://learn.liferay.com/w/dxp/installation-and-upgrades/upgrading-liferay/upgrade-basics/using-the-database-upgrade-tool)

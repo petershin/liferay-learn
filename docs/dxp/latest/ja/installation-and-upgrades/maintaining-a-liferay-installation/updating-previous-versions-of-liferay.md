@@ -86,7 +86,7 @@ Liferay DXP/Portal の General Availability (GA) リリースは、ソースコ�
     rootDir="data/document_library"
     ```
 
-1. [Commerce](https://learn.liferay.com/commerce/latest/ja/index.html) を使用していて、リリースノートにCommerceのデータベースのアップグレードが記載されている場合は、アップグレードの準備をしてください。 詳細については、 [Liferay Commerceのアップグレード](https://learn.liferay.com/commerce/latest/ja/installation-and-upgrades/upgrading-liferay-commerce.html) を参照してください。
+1. [Commerce](https://learn.liferay.com/w/commerce/index) を使用していて、リリースノートにCommerceのデータベースのアップグレードが記載されている場合は、アップグレードの準備をしてください。 詳細については、 [Liferay Commerceのアップグレード](https://learn.liferay.com/w/commerce/installation-and-upgrades/upgrading-liferay-commerce) を参照してください。
 
 1. アプリケーションサーバーをシャットダウンします。
 

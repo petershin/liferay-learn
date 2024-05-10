@@ -122,7 +122,7 @@ Here are the command's arguments:
 | `-u "test@liferay.com:learn"`                         | Enter basic authentication credentials. |
 
 ```{note}
-Basic authentication is used here for demonstration purposes. For production, you should authorize users via [OAuth2](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2.html). See [Using OAuth2 to Authorize Users](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2/using-oauth2-to-authorize-users.html) for a sample React application using OAuth2.
+Basic authentication is used here for demonstration purposes. For production, you should authorize users via [OAuth2](https://learn.liferay.com/w/dxp/headless-delivery/using-oauth2). See [Using OAuth2 to Authorize Users](https://learn.liferay.com/w/dxp/headless-delivery/using-oauth2/using-oauth2-to-authorize-users) for a sample React application using OAuth2.
 ```
 
 The other cURL commands use similar JSON arguments.
@@ -222,7 +222,7 @@ The `accountId`, `accountGroupId`, `catalogId`, `channelId`, and `orderTypeId` f
 | `createDate:desc`           | Sort by createDate in descending order.                                          |
 | `createDate:desc,type:desc` | Sort by createDate in descending order first, then by type in descending order.  |
 
-Read [API Query Parameters](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/api-query-parameters.html) for more information.
+Read [API Query Parameters](https://learn.liferay.com/w/dxp/headless-delivery/consuming-apis/api-query-parameters) for more information.
 
 ## Get a Price List
 
@@ -332,4 +332,4 @@ Code:
    :lines: 8-17
 ```
 
-The [API Explorer](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services.html) shows the `PriceList` services and schemas and has an interface to test each service.
+The [API Explorer](https://learn.liferay.com/w/dxp/headless-delivery/consuming-apis/consuming-rest-services) shows the `PriceList` services and schemas and has an interface to test each service.

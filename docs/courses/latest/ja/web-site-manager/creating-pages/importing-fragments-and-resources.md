@@ -65,4 +65,4 @@
 
 * [デフォルトのフラグメントリファレンス](https://learn.liferay.com/ja/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments/default-fragments-reference)
 * [フラグメントの管理](https://learn.liferay.com/ja/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments/managing-fragments)
-* [フラグメントにデフォルトのリソースを含める](https://learn.liferay.com/dxp/latest/ja/site-building/developer-guide/developing-page-fragments/including-default-resources-with-fragments.html)
+* [フラグメントにデフォルトのリソースを含める](https://learn.liferay.com/w/dxp/site-building/developer-guide/developing-page-fragments/including-default-resources-with-fragments)

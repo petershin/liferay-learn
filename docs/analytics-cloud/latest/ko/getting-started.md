@@ -23,7 +23,7 @@ Liferay 애널리틱스 클라우드를 사용하여 누가 사이트를 방문�
 
 ## 사이트 정보 분석
 
-기본적으로 애널리틱스 클라우드는 전체 사이트의 데이터를 하나의 종합 대시보드에 집계하여 보고합니다. [사이트 구축 시작하기](https://learn.liferay.com/dxp/latest/ko/site-building/getting-started-with-site-building.html) 및 [페이지 만들기](https://learn.liferay.com/dxp/latest/ko/site-building/creating-pages.html) 를 수행하면 사이트로 유입되는 트래픽 흐름을 파악할 수 있습니다. 가장 인기 있는 페이지의 순위를 확인할 수 있습니다.
+기본적으로 애널리틱스 클라우드는 전체 사이트의 데이터를 하나의 종합 대시보드에 집계하여 보고합니다. [사이트 구축 시작하기](https://learn.liferay.com/w/dxp/site-building/getting-started-with-site-building) 및 [페이지 만들기](https://learn.liferay.com/w/dxp/site-building/creating-pages) 를 수행하면 사이트로 유입되는 트래픽 흐름을 파악할 수 있습니다. 가장 인기 있는 페이지의 순위를 확인할 수 있습니다.
 
 ![사이트 전체 보고서를 통해 사이트 분석을 한눈에 파악할 수 있습니다.](./getting-started/images/01.png)
 

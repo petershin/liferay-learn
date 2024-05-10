@@ -11,7 +11,7 @@ taxonomy-category-names:
 
 A/B testing evaluates the effectiveness of content pages by testing a variant design against the control design (i.e., the original). This process involves creating a page variant, testing it with a metric (e.g., clicks), and publishing the most effective variant. These tests can help you choose the best experience for your site's users.
 
-You can learn more about creating an A/B test and configuring it for a content page in Liferay DXP's [A/B testing documentation](https://learn.liferay.com/dxp/latest/en/site-building/optimizing-sites/ab-testing/ab-testing.html).
+You can learn more about creating an A/B test and configuring it for a content page in Liferay DXP's [A/B testing documentation](https://learn.liferay.com/w/dxp/site-building/optimizing-sites/ab-testing/ab-testing).
 
 Analytics Cloud tracks all results from A/B tests running in Liferay DXP. When created, tests are synced automatically with Analytics Cloud. To view your A/B tests, click _Test_ in the menu on the left.
 

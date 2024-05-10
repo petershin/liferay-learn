@@ -80,7 +80,7 @@ PunchOut2Go 커넥터는[채널](../../store-management/channels/introduction-to
 
 ## 펀치 아웃 구매자 역할 만들기
 
-모범 사례로 사용자는 Punch Out을 사용하여 공급업체에 대한 역할을 생성해야 합니다. 상거래 역할에 대한 자세한 내용은 [상거래 역할](../../users-and-accounts/roles-and-permissions/commerce-roles-reference.md)을 참조하십시오. DXP의 역할 및 권한에 대한 자세한 내용은 [역할 및 권한 이해]([ロールと権限について](https://learn.liferay.com/dxp/latest/ja/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.html))참조하십시오.
+모범 사례로 사용자는 Punch Out을 사용하여 공급업체에 대한 역할을 생성해야 합니다. 상거래 역할에 대한 자세한 내용은 [상거래 역할](../../users-and-accounts/roles-and-permissions/commerce-roles-reference.md)을 참조하십시오. DXP의 역할 및 권한에 대한 자세한 내용은 [역할 및 권한 이해]([ロールと権限について](https://learn.liferay.com/w/dxp/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions))참조하십시오.
 
 1. _제어판_ → _사용자_ → _역할_로 이동합니다.
 1. _사이트 역할_ 탭을 클릭합니다.

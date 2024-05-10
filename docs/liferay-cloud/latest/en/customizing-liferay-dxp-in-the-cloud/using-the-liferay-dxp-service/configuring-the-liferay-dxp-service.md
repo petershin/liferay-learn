@@ -7,7 +7,7 @@ uuid: 002ecd02-b586-483f-bd07-a378f27d14fd
 ---
 # Configuring the Liferay DXP Service
 
-There are several methods available to configure DXP in Liferay PaaS: through the in [DXP System Settings](https://learn.liferay.com/dxp/latest/en/system-administration/configuring-liferay/system-settings.html) and through the use of [config](https://learn.liferay.com/dxp/latest/en/system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.html) and [property files](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/reference/portal-properties.html). DXP property and configuration files for your Liferay DXP instance in Liferay PaaS are deployed by being placed inside of one of the `configs/` folders in the Liferay DXP service directory in your repository.
+There are several methods available to configure DXP in Liferay PaaS: through the in [DXP System Settings](https://learn.liferay.com/w/dxp/system-administration/configuring-liferay/system-settings) and through the use of [config](https://learn.liferay.com/w/dxp/system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files) and [property files](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/reference/portal-properties.html). DXP property and configuration files for your Liferay DXP instance in Liferay PaaS are deployed by being placed inside of one of the `configs/` folders in the Liferay DXP service directory in your repository.
 
 ```
 liferay

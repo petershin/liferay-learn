@@ -15,7 +15,7 @@ taxonomy-category-names:
 {bdg-secondary}`Liferay DXP 2024.Q1+`
 {bdg-link-primary}`[Beta Feature](../../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
 
-Liferay provides a headless API to perform CRUD operations on SCIM groups to keep their information in sync with your company's applications. SCIM groups are analogous to [user groups](../../../users-and-permissions/user-groups.md) in Liferay. Use the `/scim` endpoint from the [API Explorer](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services.html) to manage SCIM [groups](https://datatracker.ietf.org/doc/html/rfc7643#section-4.2).
+Liferay provides a headless API to perform CRUD operations on SCIM groups to keep their information in sync with your company's applications. SCIM groups are analogous to [user groups](../../../users-and-permissions/user-groups.md) in Liferay. Use the `/scim` endpoint from the [API Explorer](https://learn.liferay.com/w/dxp/headless-delivery/consuming-apis/consuming-rest-services) to manage SCIM [groups](https://datatracker.ietf.org/doc/html/rfc7643#section-4.2).
 
 ## Adding a Group
 
@@ -94,7 +94,7 @@ Here are the command's arguments:
 | `--user "test@liferay.com:learn"`                | Basic authentication credentials                                                     |
 
 !!! note
-    Basic authentication is used here for demonstration purposes. For production, you should authorize users via [OAuth2](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2.html). See [Using OAuth2 to Authorize Users](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2/using-oauth2-to-authorize-users.html) for a sample React application using OAuth2.
+    Basic authentication is used here for demonstration purposes. For production, you should authorize users via [OAuth2](https://learn.liferay.com/w/dxp/headless-delivery/using-oauth2). See [Using OAuth2 to Authorize Users](https://learn.liferay.com/w/dxp/headless-delivery/using-oauth2/using-oauth2-to-authorize-users) for a sample React application using OAuth2.
 
 ## Examine the Java Class
 
@@ -154,7 +154,7 @@ Code:
 
 The `Group` objects of your Liferay instance are listed in JSON.
 
-Read [API Query Parameters](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/api-query-parameters.html) for more information.
+Read [API Query Parameters](https://learn.liferay.com/w/dxp/headless-delivery/consuming-apis/api-query-parameters) for more information.
 
 ## Get a Group
 
@@ -263,7 +263,7 @@ Code:
    :lines: 8-17
 ```
 
-The [API Explorer](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services.html) lists all of the `Group` services and schemas and has an interface to try out each service.
+The [API Explorer](https://learn.liferay.com/w/dxp/headless-delivery/consuming-apis/consuming-rest-services) lists all of the `Group` services and schemas and has an interface to try out each service.
 
 ## Related Topics
 

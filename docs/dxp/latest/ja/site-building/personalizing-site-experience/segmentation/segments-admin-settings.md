@@ -20,13 +20,13 @@
 
 ![View and configure Analytics Cloud Segments settings.](./segments-admin-settings/images/01.png)
 
-[セグメント](https://learn.liferay.com/analytics-cloud/latest/ja/people/segments/segments.html) 共通の属性と行動に基づいて個人を集約。 このデータをLiferay DXPのセグメントと統合することで、既知のユーザーと匿名のユーザーの両方に興味のあるコンテンツを配信することができます。
+[セグメント](https://learn.liferay.com/w/analytics-cloud/people/segments/segments) 共通の属性と行動に基づいて個人を集約。 このデータをLiferay DXPのセグメントと統合することで、既知のユーザーと匿名のユーザーの両方に興味のあるコンテンツを配信することができます。
 
 これらの設定には、 **Analytics Cloud Segments** でアクセスできます：
 
 **匿名ユーザーセグメントキャッシュの有効期限** ：匿名セグメントキャッシュの保存期間（秒）を設定します。 時間が経過すると、キャッシュはクリアされる。
 
-**金利条件キャッシュの有効期限** ：金利条件キャッシュの保存期間（秒）を設定します。 時間が経過すると、キャッシュはクリアされる。 詳しくは [興味のあるトピックの理解](https://learn.liferay.com/analytics-cloud/latest/ja/people/individuals/understanding-interests.html) 。
+**金利条件キャッシュの有効期限** ：金利条件キャッシュの保存期間（秒）を設定します。 時間が経過すると、キャッシュはクリアされる。 詳しくは [興味のあるトピックの理解](https://learn.liferay.com/w/analytics-cloud/people/individuals/understanding-interests) 。
 
 **更新間隔** :Analytics Cloudセグメントからの更新を受信する間隔（分）を設定します。 この設定はシステム設定の下にのみ表示されます。
 
@@ -52,5 +52,5 @@
 
 ## 関連トピック
 
-* [セグメント](https://learn.liferay.com/analytics-cloud/latest/ja/people/segments/segments.html)
+* [セグメント](https://learn.liferay.com/w/analytics-cloud/people/segments/segments)
 * [セッション・プロパティ・ヴォキャブラリー](../../../content-authoring-and-management/tags-and-categories/session-property-vocabularies.md)

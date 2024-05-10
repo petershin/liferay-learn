@@ -57,4 +57,4 @@
 
 * [계정 관리](../account-management.md)
 * [계정 역할](./account-roles.md)
-* [조직에 사용자 추가](https://learn.liferay.com/dxp/latest/ko/users-and-permissions/organizations/adding-users-to-organizations.html)
+* [조직에 사용자 추가](https://learn.liferay.com/w/dxp/users-and-permissions/organizations/adding-users-to-organizations)

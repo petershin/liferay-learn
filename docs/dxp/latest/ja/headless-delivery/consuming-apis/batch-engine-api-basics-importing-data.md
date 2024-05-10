@@ -123,7 +123,7 @@ Liferayのヘッドレスバッチエンジンは、データのインポート�
 | `-u "test@liferay.com:learn"`                                                                     | 基本的な認証情報                        |
 
 ```{note}
-ここでは、デモのために基本的な認証を使用しています。 本番環境では、 [OAuth 2.0を使用する](https://learn.liferay.com/dxp/latest/ja/headless-delivery/using-oauth2.html) を介してユーザーを認証する必要があります。 Oauth2 を使用するサンプル React アプリケーションについては、 [Use OAuth2 to authorize users](../using-oauth2/using-oauth2-to-authorize-users.md) を参照してください。
+ここでは、デモのために基本的な認証を使用しています。 本番環境では、 [OAuth 2.0を使用する](https://learn.liferay.com/w/dxp/headless-delivery/using-oauth2) を介してユーザーを認証する必要があります。 Oauth2 を使用するサンプル React アプリケーションについては、 [Use OAuth2 to authorize users](../using-oauth2/using-oauth2-to-authorize-users.md) を参照してください。
 ```
 
 他のcURLコマンドも同様のJSON引数を使用しています。
@@ -197,7 +197,7 @@ java -classpath .:* -DimportTaskId=1234 ImportTask_GET_ById
 
 ## データをサイトにインポートする
 
-次のcURLまたはJavaコマンドを実行して、サイトにデータをインポートできます。 この例では、ブログの記事をサイトにインポートしています。 [RESTサービスの使用](https://learn.liferay.com/dxp/latest/ja/headless-delivery/consuming-apis/consuming-rest-services.html#identify-the-site-containing-the-data) を探し、`1234`を置き換えてください。 別のエンティティを使用する場合は、cURLスクリプトでインポートする完全修飾クラス名パラメーターとデータも更新する必要があります。
+次のcURLまたはJavaコマンドを実行して、サイトにデータをインポートできます。 この例では、ブログの記事をサイトにインポートしています。 [RESTサービスの使用](https://learn.liferay.com/w/dxp/headless-delivery/consuming-apis/consuming-rest-services#identify-the-site-containing-the-data) を探し、`1234`を置き換えてください。 別のエンティティを使用する場合は、cURLスクリプトでインポートする完全修飾クラス名パラメーターとデータも更新する必要があります。
 
 ### ImportTask_POST_ToSite.sh
 
@@ -357,7 +357,7 @@ java -classpath .:* -DimportTaskId=1234 ImportTaskContent_GET_ById
    :lines: 11-27
 ```
 
-[RESTサービスの使用](https://learn.liferay.com/dxp/latest/ja/headless-delivery/consuming-apis/consuming-rest-services.html) には、ヘッドレスバッチエンジンの全サービスとスキーマが一覧表示され、各サービスを試すためのインターフェースがあります。
+[RESTサービスの使用](https://learn.liferay.com/w/dxp/headless-delivery/consuming-apis/consuming-rest-services) には、ヘッドレスバッチエンジンの全サービスとスキーマが一覧表示され、各サービスを試すためのインターフェースがあります。
 
 ## 関連トピック
 

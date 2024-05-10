@@ -28,12 +28,12 @@ Minium 또는 Speedwell 액셀러레이터를 사용하는 경우 사용자 메�
 
 ### 페이지에 위시리스트 위젯 추가하기
 
-위시리스트 위젯을 [페이지 이해](https://learn.liferay.com/dxp/latest/ko/site-building/creating-pages/understanding-pages/understanding-pages.html#widget-pages) 에 추가하려면 다음 단계를 따르십시오.
+위시리스트 위젯을 [페이지 이해](https://learn.liferay.com/w/dxp/site-building/creating-pages/understanding-pages/understanding-pages#widget-pages) 에 추가하려면 다음 단계를 따르십시오.
 
 1. **추가**(![추가](../images/icon-add-widget.png)) 상단 메뉴에서 버튼을 누릅니다.
 
     ```{important}
-    [페이지 이해](https://learn.liferay.com/dxp/latest/ko/site-building/creating-pages/understanding-pages/understanding-pages.html#content-pages) 를 사용하는 경우 , 위젯을 추가하는 방법에는 두 가지가 있습니다.
+    [페이지 이해](https://learn.liferay.com/w/dxp/site-building/creating-pages/understanding-pages/understanding-pages#content-pages) 를 사용하는 경우 , 위젯을 추가하는 방법에는 두 가지가 있습니다.
 
     1. 상단 메뉴에서 *편집*(![Edit](../images/icon-edit-pencil.png)) 버튼을 클릭하고 *추가*(![Add](../images/icon-add-widget.png) )) 오른쪽의 버튼. 나머지 단계는 위와 동일합니다.
 

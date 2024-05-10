@@ -1,5 +1,6 @@
 ---
 toc:
+- ./module-9-search/claritys-search-requirements.md
 - ./module-9-search/working-with-liferay-search.md
 - ./module-9-search/understanding-and-customizing-search-results-pages.md
 - ./module-9-search/personalizing-search-experiences-with-blueprints.md
@@ -13,16 +14,16 @@ uuid: 361efa0d-1a2f-4527-92bb-b31d62ef0cfb
     * View the [recording](https://learn.liferay.com/web/guest/d/lp1-9-search) from the live webinar of this module.
     * Download the [PDF](https://learn.liferay.com/documents/d/guest/lp1-9-search-pdf) of the presentation used in the live workshop.
 
-Clarity has been busy building out their new website. On top of their products themselves, they’ve added other content such as blog posts and documents. They've also imported some legacy content from their previous system. With all this content, Clarity wants to make sure that their audience is able to find the exact content they are looking for quickly and easily. The backbone of any enterprise website is having search functionality that can support large volumes of data. Fortunately Liferay ships with a robust search solution.
+Clarity has been busy building out their new website. On top of Clarity products, they’ve added other content such as blog posts and web content. They've also imported some legacy content from their previous system. With all this content, Clarity wants to make sure that their audience is able to find the exact content they are looking for quickly and easily. The backbone of any enterprise website is having search functionality that can support large volumes of data. Fortunately Liferay ships with a robust search solution.
 
-In this module you will learn bout:
+In this module you will learn about:
 
 * The specific search requirements Clarity has
 * How Liferay search works in general and its different features
 * How search results pages work and how to customize them
 * How to personalize search experiences with blueprints
 
-Up First: [Working with Liferay search](./module-9-search/working-with-liferay-search.md)
+Up First: [Clarity's Search Requirements](./module-9-search/claritys-search-requirements.md)
 
 ::::{grid} 2
 :gutter: 3 3 3 3

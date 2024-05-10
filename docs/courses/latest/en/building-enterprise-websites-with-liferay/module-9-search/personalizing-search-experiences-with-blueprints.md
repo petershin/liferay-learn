@@ -3,21 +3,21 @@ uuid: 85d7e066-677f-4616-aca4-56555601a228
 ---
 # Personalizing Search Experiences with Blueprints
 
-As we saw in the previous lesson, using search facets is great in providing visitors a way to quickly filter search results. However, search results can be further customized and personalized with the use of search blueprints. In the future, Clarity wants to sell their products directly to consumers. And they want to have a way to customize and control what might be shown at the top of particular search results. For example, they want seasonal products to be boosted in the search results to try to increase sales.
+As we saw in the previous lesson, using search facets is great in providing visitors a way to quickly filter search results. However, Clarity may have more complex search query use cases that require customized search. This can be accomplished with the use of Liferay's search blueprints. The following are two examples that demonstrate the capabilities of search blueprints.
 
 ## Exercise 1: Dynamic Collections with Search Blueprints
 
-One simple way to utilize search blueprints is with collection providers. Every time you create a search blueprint, a collection provider is automatically generated. Then showing the results of the search blueprints is as easy as adding a collection display widget onto a site page. For example, Clarity wants to have a site page that automatically displays a list of upcoming events. A search blueprint can query upcoming events on their calendar to automatically fetch these upcoming events. Follow these steps below to see how this works.
+One simple way to leverage search blueprints is with collection providers. Every time you create a search blueprint, a collection provider is automatically generated. Then, showing the results of the search blueprint is as easy as adding a collection display widget onto a site page. For example, Clarity wants to have a site page that automatically displays a list of upcoming events. A search blueprint can query upcoming events on their calendar to automatically fetch these upcoming events. Follow these steps below to see how this works.
 
 1. Create a site page with a Clarity calendar.
    1. From the product menu, navigate to _Site Builder_ &rarr; _Pages_. 
    1. Click _New_ and select _Page_.
    1. Select _Blank_.
    1. Input _Calendar_ as the name and click _Add_.
-   1. Select _Fragment and Widgets_ in the left menu and select the _Widgets_ tab. Scroll down to the collaboration section and drag a _Calendar_ widget onto the page.
+   1. Select _Fragments and Widgets_ in the left menu and select the _Widgets_ tab. Scroll down to the collaboration section and drag a _Calendar_ widget onto the page. Click _Publish_.
    1. In the list of site pages, find the calendar page you just created, click the options icon and select _View_.
-   1. Click on a date that is before the current date and input `Past Event 1` as the name and click _Save_.
-   1. Click on a date that is after the current data and input `Future Event 1` as the name and click _Save_.
+   1. Click on any date that is before your current date and input `Past Event 1` as the name and click _Save_.
+   1. Click on any date that is after your current data and input `Future Event 1` as the name and click _Save_.
    1. Add one more event after the previous event and input `Future Event 2` as the name as click _Save_.
 
       ![The calendar has one past event and two future events.](./personalizing-search-experiences-with-blueprints/images/01.png)
@@ -69,7 +69,7 @@ One simple way to utilize search blueprints is with collection providers. Every 
 1. Create a future events search blueprint.
    1. Still in the search blueprints application, click on the _Blueprints_ tab. 
    1. Click the add icon to create a new blueprint. Input _Future Events_ as the name and click _Create_.
-   1. In the right menu of query elements, expand the _FILTER_ section and find the _Future Events_ element. Click _Add_ for the element.
+   1. In the right menu of query elements, expand the _FILTER_ section and find the _Future Events_ element you created in the previous step. Click _Add_ for the element.
    1. In the left navigation, click _Query Settings_. Change the searchable type to _Selected Types_. Click _Select Asset Types_ and check _Calendar Event_ and click _Done_.
 
       ![Change the asset type to calendar event.](./personalizing-search-experiences-with-blueprints/images/02.png)
@@ -81,7 +81,7 @@ One simple way to utilize search blueprints is with collection providers. Every 
    1. Click _New_ and select _Page_.
    1. Select _Blank_.
    1. Input _Future Events_ as the name and click _Add_.
-   1. Select _Fragment and Widgets_ in the left menu and select the _Widgets_ tab. In the search bar, search for `collection` and find the collection display widget. Drag the widget onto the page.
+   1. Select _Fragments and Widgets_ in the left menu and select the _Widgets_ tab. In the search bar, search for `collection` and find the collection display widget. Drag the widget onto the page.
    1. In the configuration menu on the right, click the plus button to select a collect provider.
    1. In the new window select the _Collection Providers_ tab. Select the _Future Events_ collection provider.
    1. Under style display, select _Bulleted List_. 
@@ -93,10 +93,10 @@ One simple way to utilize search blueprints is with collection providers. Every 
 
 ## Exercise 2 - Search Blueprints with Custom Fields
 
-Occasionally, businesses need to integrate with other web services. For example, the employee benefits system Clarity utilizes wants to reference Clarity employees based on the registration ID numbers they utilize. In Liferay, a custom field can be added to user accounts to add additional fields. Then Liferay's headless APIs can be used to query this custom field. Follow the steps below to see this in action. 
+Occasionally businesses need to integrate with other web services. For example, the employee benefits system Clarity utilizes wants to reference Clarity employees based on the registration ID numbers the service uses. In Liferay, a custom field can be added to user accounts to add this additional field. Then Liferay's headless APIs can be used to query this custom field. Follow the steps below to see this in action. 
 
 !!! note
-The user account headless APIs cannot filter custom fields directly. Therefore, a search blueprint is leveraged to be able to query for this custom field.
+The user account headless APIs cannot filter for custom fields directly. Therefore, a search blueprint is leveraged to be able to query for this custom field.
 
 1. From the applications menu, navigate to _Control Panel_ &rarr; _Custom Fields_.
 
@@ -113,6 +113,8 @@ The user account headless APIs cannot filter custom fields directly. Therefore, 
 1. In the right menu of query elements, expand the _FILTER_ section and find the _Filter by Exact Terms Match_ element. Click _Add_ for the element.
 
 1. In the _Field_ field, begin typing `RegistrationId` until the autosuggest shows a match for `expando__keyword__custom_fields__RegistrationId_long`. In the _Values_ field, input `${keywords}`. Click _Save_. Take note of ID number of the search blueprint (e.g. `32256`).
+
+   ![Set the field and value for the query element.](./personalizing-search-experiences-with-blueprints/images/04.png)
 
 1. In the applications menu, navigate to _Control Panel_ &rarr; _Instance Settings_. Click _Feature Flags_ and select _Beta_ in the left navigation. Scroll down and enable `Search Headless API (LPS-179669)`. Note, beta features are usually not recommended for production use, but this feature will be available as a full feature Q3 2024.
 
@@ -132,7 +134,9 @@ The user account headless APIs cannot filter custom fields directly. Therefore, 
 
 1. For the _nestedFields_ field input `embedded`. For the _search_ field input `555777`. Click _Execute_. See that Ian Miller's user account information is returned.
 
-   ![The API response returns Ian Miller's user account.](./personalizing-search-experiences-with-blueprints/images/04.png)
+   ![The API response returns Ian Miller's user account.](./personalizing-search-experiences-with-blueprints/images/05.png)
+
+   In this way, Liferay can be set up as a headless system that can be utilized by a third-party service.
 
 ## Conclusion
 

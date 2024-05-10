@@ -7,9 +7,7 @@ Before we talk about searching for Clarity products and site content, let's lear
 
 ## About Liferay Search
 
-As modern businesses generate and store vasts amount of data, the need is ever greater to have tools that can be used to quickly and effectively search and retrieve this data. Having effective search tools means empowering employees, and other site visitors, to be productive and reduce wasted time looking for information.
-
-Fortunately Liferay works in conjunction with [Elasticsearch](https://www.elastic.co/elasticsearch), a best-of-breed search engine built for modern web applications. By leveraging the power of Elastic search, together with its own search infrastructure, Liferay search offers:
+Liferay search works in conjunction with [Elasticsearch](https://www.elastic.co/elasticsearch), a best-of-breed search engine built for modern web applications. By leveraging the power of Elastic search, together with its own search infrastructure, Liferay search offers:
 
 * Comprehensive indexing that supports a wide range of content types (e.g. blogs, documents, web content, etc.)
 * Search facets and search filters
@@ -21,7 +19,7 @@ Let's take a closer look at how some of this works.
 
 ### Search Indexing
 
-Liferay stores its information in a database. However, directly searching database tables can be a time-consuming task. Therefore most Liferay entities utilize a search index. Whenever a Liferay entity is created, a separate entry is also created in the search index by Liferay's indexer framework. Each entry has a collection of fields for that entity. For example, a blog entry might contain index fields for the title, content, tags, etc. This indexing is then used together with Elasticsearch to provide an effective and efficient way to search for data. Some of the Liferay entities that utilize the search index out of the box are:
+Liferay stores its information in a database. However, directly searching database tables can be a time-consuming task. Therefore most of Liferay's entities utilize a search index. Whenever a Liferay entity is created, a separate entry is also created in the search index by Liferay's indexer framework. Each entry has a collection of fields for that entity. For example, a blog entry might contain index fields for the title, content, tags, etc. This index is then used by Elasticsearch to provide an effective and efficient way to search for data. Some of the Liferay entities that utilize the search index out of the box are:
 
 * Blog entries
 * Categories
@@ -41,7 +39,7 @@ Therefore, anytime a search is performed, the query occurs against the search in
 
 Together with Liferay's search index, Elasticsearch provides a powerful and effective way to quickly get search results. These search results can be further refined through the use of facets, sorting, and more.
 
-Search facets are a way to refine search results across specific content and criteria. Out of the box, Liferay offers a collection of different search facets. For example, a type facet could be used by a visitor to quickly filter out blog entries, documents, or site pages. We'll see in the next lesson how category facets can be used by Clarity to filter across their products based on things such as color, fit, and material.
+Search facets are a way to refine search results across specific content and criteria. Out of the box, Liferay offers a collection of different search facets. For example, a type facet could be used by a visitor to quickly filter out blog entries, documents, or site pages. We'll see in the next lesson how category facets can be used by Clarity to filter across their products.
 
 ![Use category facets to refine search results.](./working-with-liferay-search/images/01.png)
 
@@ -65,22 +63,22 @@ We'll work with some of these widgets in the next lesson.
 
 ### Search Blueprints
 
-Blueprints offer the ability to create targeted search results with the use of implicit search criteria. That is, automatically adding search criteria to a search query that is not part of what the user entered. A simple example might be boosting search results based geolocation and prioritizing certain results that are near in proximity to the user's IP address.
+Blueprints offer the ability to create targeted search results with the use of implicit search criteria. That is, automatically adding search criteria to a search query that is not part of what the user entered. A simple example might be boosting search results based on geolocation and prioritizing certain results that are closer in proximity to the user's IP address.
 
 ![Use blueprints to boost the results based on proximity.](./working-with-liferay-search/images/02.png)
 
-Modifying the search query itself typically requires developing custom code, but Blueprints offers this functionality without the need to deploy any code. Customization is done through a UI-based configuration. This makes it simple enough for even non-technical members to utilize blueprints. Some elements that can be configured are:
+Modifying the search query itself typically requires developing custom code, but search blueprints can be configured right from Liferay's UI without the need to deploy any code. This makes it simple enough for even non-technical members to utilize blueprints. Some ways blueprints might be leveraged are:
 
 * Boosting search results based on different criteria
 * Conditional search results based on certain keywords or categories
 * Limiting the search query based on different criteria
 * Hiding certain content and certain results
 
-We'll see a specific example of Clarity utilizing search blueprints in the last lesson.
+We'll see a specific example of Clarity utilizing search blueprints later in this module.
 
 ## Conclusion
 
-Now that you have an initial understanding of Liferay's search functionality, let's dive into Clarity's specific use cases and requirements.
+Now that you have an initial understanding of Liferay's search functionality, let's dive into Clarity's specific use cases.
 
 Next Up: [Understanding and Customizing Search Results Pages](./understanding-and-customizing-search-results-pages.md)
 

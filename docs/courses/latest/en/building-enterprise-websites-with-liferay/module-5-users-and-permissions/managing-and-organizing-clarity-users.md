@@ -3,7 +3,7 @@ uuid: f548210b-6113-4205-ac28-23451ed61e43
 ---
 # Managing and Organizing Clarity Users
 
-The primary concern of user management is controlling access to content and platform features. When done right, users are granted access only to the resources and applications necessary for their responsibilities.So far, Clarity's team members have been created, but their roles and permissions need to be set.
+The primary concern of user management is controlling access to content and platform features. When done right, users are granted access only to the resources and applications necessary for their responsibilities. So far, Clarity's team members have been created, but their roles and permissions need to be set.
 
 At Clarity, each user has different responsibilities in developing the enterprise website. Here, we'll take a closer look at the different types of users involved, their roles, the groups they belong to, and the responsibilities they have for the site. But first, let's review how roles and permissions work.
 
@@ -23,7 +23,7 @@ Roles are collections of permissions that you can assign to multiple users. Each
 
 Liferay provides [out-of-the-box roles](https://learn.liferay.com/en/w/dxp/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions), but you can create custom roles with your choice of permissions to fit your business needs. Then, multiple roles can be assigned to multiple users.
 
-To learn more about user management in general, see official [documentation](https://learn.liferay.com/w/dxp/users-and-permissions).
+To learn more about user management in general, see our official [documentation](https://learn.liferay.com/w/dxp/users-and-permissions).
 
 ## Organizations
 
@@ -35,7 +35,7 @@ See official documentation to learn more about [organizations](https://learn.lif
 
 ## Accounts
 
-Liferay also offer additional tools around accounts. These can be used to model business relationships to help manage external parties. For example, Liferay accounts can model a business to consumer (B2C) context in which a customer is a single user. Accounts can also model a business to business (B2B) context where a customer represents an external company with multiple users. See official documentation to learn more about [accounts](https://learn.liferay.com/w/dxp/users-and-permissions/accounts).
+Liferay also offers additional tools around accounts. These can be used to model business relationships to help manage external parties. For example, Liferay accounts can model a business to consumer (B2C) context in which a customer is a single user. Accounts can also model a business to business (B2B) context where a customer represents an external company with multiple users. See official documentation to learn more about [accounts](https://learn.liferay.com/w/dxp/users-and-permissions/accounts).
 
 ## Structuring Organizations with User Groups
 

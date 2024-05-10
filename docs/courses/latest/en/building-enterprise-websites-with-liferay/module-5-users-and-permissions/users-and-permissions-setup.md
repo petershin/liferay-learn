@@ -3,9 +3,17 @@ uuid: cbe102f7-9428-4d96-8d2f-eb9ac8007dfa
 ---
 # Users and Permissions Setup
 
-Let's start by setting up users, roles, and user groups. These will be our foundation for exploring Liferay capabilities throughout this course.
+In the last module, we saw how Clarity team members can be provisioned through Okta. For companies like Clarity, this method works best. However, for training purposes, you'll create users, roles, and user groups manually.
 
-As introduced previously, we'll be following five Clarity personas in the following exercises:
+As explained previously, we'll be following these five Clarity personas throughout our course exercises:
+
+![We'll be following these five Clarity personas in the subsequent exercises.](./users-and-permissions-setup/images/01.png)
+
+## Exercise One: Creating Clarity Users
+
+Let's start by setting up user accounts for each of Clarity's personas. You'll use these personas to explore Liferay's core capabilities throughout this course.
+
+Each persona has these details:
 
 | Screen Name     | Email                                         | First Name | Last Name | Job Title                  |
 |:----------------|:----------------------------------------------|:-----------|:----------|:---------------------------|
@@ -16,10 +24,6 @@ As introduced previously, we'll be following five Clarity personas in the follow
 | walterdouglas   | `walter.douglas@clarityvisionsolutions.com`   | Walter     | Douglas   | Web Developer              |
 
 <!--TASK: Revisit list; what about module 10's users? -->
-
-<!--TASK: ![]() -->
-
-## Exercise One: Creating Clarity Users
 
 Follow these steps to create each user account:
 

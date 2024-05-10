@@ -187,6 +187,126 @@ Code:
 
 The site's `Document` objects are listed in JSON.
 
+```json
+{
+  "actions": {
+    "updateBatch": {
+      "method": "PUT",
+      "href": "http://localhost:8080/o/headless-delivery/v1.0/documents/batch"
+    },
+    "get": {
+      "method": "GET",
+      "href": "http://localhost:8080/o/headless-delivery/v1.0/sites/1234/documents"
+    },
+    "create": {
+      "method": "POST",
+      "href": "http://localhost:8080/o/headless-delivery/v1.0/sites/1234/documents"
+    },
+    "createBatch": {
+      "method": "POST",
+      "href": "http://localhost:8080/o/headless-delivery/v1.0/sites/1234/documents/batch"
+    },
+    "deleteBatch": {
+      "method": "DELETE",
+      "href": "http://localhost:8080/o/headless-delivery/v1.0/documents/batch"
+    }
+  },
+  "facets": [],
+  "items": [
+    {
+      "actions": {
+        "get-rendered-content-by-display-page": {
+          "method": "GET",
+          "href": "http://localhost:8080/o/headless-delivery/v1.0/documents/32131/rendered-content-by-display-page/{displayPageKey}"
+        },
+        "get": {
+          "method": "GET",
+          "href": "http://localhost:8080/o/headless-delivery/v1.0/documents/32131"
+        },
+        "replace": {
+          "method": "PUT",
+          "href": "http://localhost:8080/o/headless-delivery/v1.0/documents/32131"
+        },
+        "update": {
+          "method": "PATCH",
+          "href": "http://localhost:8080/o/headless-delivery/v1.0/documents/32131"
+        },
+        "delete": {
+          "method": "DELETE",
+          "href": "http://localhost:8080/o/headless-delivery/v1.0/documents/32131"
+        }
+      },
+      "adaptedImages": [
+        {
+          "contentUrl": "/o/adaptive-media/image/32131/Preview-1000x0/seahorse.jpg?t=1715340699885",
+          "height": 1510,
+          "resolutionName": "Preview-1000x0",
+          "sizeInBytes": 127254,
+          "width": 1000
+        },
+        {
+          "contentUrl": "/o/adaptive-media/image/32131/Thumbnail-300x300/seahorse.jpg?t=1715340699885",
+          "height": 300,
+          "resolutionName": "Thumbnail-300x300",
+          "sizeInBytes": 10927,
+          "width": 199
+        }
+      ],
+      "contentUrl": "/documents/1234/0/seahorse.jpg/4be7d2ff-b9ac-a7ab-1081-537536ece7d9?version=1.0&t=1715340699885&download=true",
+      "creator": {
+        "additionalName": "",
+        "contentType": "UserAccount",
+        "familyName": "Test",
+        "givenName": "Test",
+        "id": 20122,
+        "name": "Test Test"
+      },
+      "customFields": [],
+      "dateCreated": "2024-05-10T11:29:14Z",
+      "dateModified": "2024-05-10T11:31:39Z",
+      "description": "",
+      "documentFolderId": 0,
+      "documentType": {
+        "availableLanguages": [],
+        "contentFields": [],
+        "description": "",
+        "name": "Basic Document"
+      },
+      "encodingFormat": "image/jpeg",
+      "externalReferenceCode": "4be7d2ff-b9ac-a7ab-1081-537536ece7d9",
+      "fileExtension": "jpg",
+      "fileName": "seahorse.jpg",
+      "friendlyUrlPath": "seahorse-friendly-url",
+      "id": 32131,
+      "keywords": [],
+      "numberOfComments": 0,
+      "relatedContents": [],
+      "renderedContents": [],
+      "siteId": 1234,
+      "sizeInBytes": 792227,
+      "taxonomyCategoryBriefs": [],
+      "title": "seahorse"
+    }
+  ],
+  "lastPage": 1,
+  "page": 1,
+  "pageSize": 20,
+  "totalCount": 1
+}
+```
+
+From the response, you can extract several pieces of information such as
+
+- A list of actions that can be performed on the document, including getting, updating, replacing, or deleting.
+
+- The document's `contentUrl` for accessing the document content.
+
+- Information about the document's `creator`, including name and ID.
+
+- The `dateCreated` and `dateModified` timestamps that indicate when the document was created and last modified, respectively.
+
+- {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+` The document's [`friendlyUrlPath`](../uploading-and-managing/configuring-document-urls.md) that can be the file's name or a customized value set by the user.
+
 ## Get a Document
 
 You can get a `Document`'s fields by executing the following cURL or Java command. Replace `1234` with the `Document`'s ID.

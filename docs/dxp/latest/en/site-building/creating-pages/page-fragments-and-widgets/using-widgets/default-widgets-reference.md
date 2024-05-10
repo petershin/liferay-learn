@@ -173,9 +173,9 @@ Tool widgets provide widgets to tailor a user's experience.
 | IP Geocoder Sample                                                      | Adds a IP Geocoder Sample widget to display your country code and IP address.                                      |
 | Language Selector                                                       | Adds a Language Selector widget to set the language you see.                                                       |
 | Search                                                                  | Adds a Search widget to provide configurations to tailor queries.                                                  |
-| {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+` Create Account  | Adds a create account widget with a form for users to enter their information to create an account.                |
-| {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+` Forgot Password | Adds a forgot password widget with fields to enter the user's email address and a captcha to reset their password. |
-| {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+` Sign In         | Adds a sign-in widget with fields to enter an email address and password for users to sign in.                     |
+| {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+` Create Account  | Adds a Create Account widget with a form for users to enter their information to create an account.                |
+| {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+` Forgot Password | Adds a Forgot Password widget with fields to enter an email address and a captcha to reset the password. |
+| {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+` Sign In         | Adds a Sign-In widget with fields to enter an email address and password for users to sign in.                     |
 
 ## Wiki
 

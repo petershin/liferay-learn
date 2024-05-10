@@ -7,13 +7,6 @@ Liferay's granular permissions ensure precise control over data and application 
 
 Each permission grants the ability to perform a specific action (e.g., create, delete, update, view) on a particular resource (blog posts, documents, users, applications). So an example of a permission is the ability to update blog posts.
 
-<!--Q: Should we introduce the distinction between Application permissions and Resource permissions, per the Liferay UI?
-
-Application permissions grant access to the published object itself and do not include resource-related permissions.
-
-Resource permissions grant access to view, create, and act on application data. Some of these permissions relate to creating data entries, while others are for performing actions on existing data entries.
--->
-
 ## Exercise One: Fine Tuning Manager Permissions
 
 Coming Soon!

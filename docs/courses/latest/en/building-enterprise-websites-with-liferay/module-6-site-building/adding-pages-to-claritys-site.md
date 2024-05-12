@@ -9,6 +9,8 @@ In this lesson, you’ll use different page types to implement Clarity’s site 
 
 ![Clarity's website development team has produced this site map for their initiative.](./adding-pages-to-claritys-site/images/01.png)
 
+<!--TASK: Update img -->
+
 This site structure includes content pages, display pages, and utility pages.
 
 ## Content Pages
@@ -16,6 +18,8 @@ This site structure includes content pages, display pages, and utility pages.
 Content pages are used to create content-rich, visually engaging experiences. With an intuitive visual editor and drag-and-drop elements, you can quickly design page layouts, display content, and integrate functionality. Personalize content for specific audiences, manage localized translations, and optimize for all devices with the responsive layout editor. When integrated with Analytics Cloud, you can track content performance metrics and conduct A/B testing, creating page variants and track visitor data (e.g., bounce rate, clicks) to continuously improve engagement. Together, these features make content pages ideal for landing pages, marketing campaigns, and any scenario where presentation and user engagement are crucial.
 
 ![Create these pages as content pages.](./adding-pages-to-claritys-site/images/02.png)
+
+<!--TASK: Update img -->
 
 !!! tip “Content Pages vs. Widget Pages”
     Liferay also provides widget pages, but this course focuses on building user experiences with content pages. Content pages provide superior flexibility and integration with Liferay’s latest content and personalization features, including fragments, collections, segmentation, and client extensions. Widget pages do not support these features.
@@ -32,6 +36,8 @@ Display page templates define structures for displaying content at a dedicated U
 
 ![Create these pages as display pages.](./adding-pages-to-claritys-site/images/03.png)
 
+<!--TASK: Update img -->
+
 <!--TASK:
 ### Default Templates
 
@@ -43,6 +49,8 @@ Explain how applying a display page works... we will need to mark the category a
 Utility pages handle specific functions within a site. Currently, you can use them to create your site’s default 404 and 500 error pages. They are designed using the same tools and features as content pages. With them, you can ensure that even the errors returned to users maintain corporate branding while being easily maintained. Each site includes out-of-the-box error pages, which you can use or modify as needed.
 
 ![Create these pages as utility pages.](./adding-pages-to-claritys-site/images/04.png)
+
+<!--TASK: Update img -->
 
 ## Exercise One: Adding Content Pages
 
@@ -75,6 +83,8 @@ While logged in as Walter Douglas,
    * Contact Us
    * About Us
    * Products
+   * Product List
+   * Product Detail
    * Blog
    * FAQ
    * Careers
@@ -86,6 +96,12 @@ While logged in as Walter Douglas,
 1. Drag and drop *Open Positions* onto *Careers* to make it a child of the Careers page.
 
    ![Drag and drop Open Positions onto the Careers page.](./adding-pages-to-claritys-site/images/09.gif)
+
+   <!--TASK: Update Gif -->
+
+1. Repeat this step to create this hierarchy: Products > Product List > Product Detail.
+
+   ![Create this hierarchy](./adding-pages-to-claritys-site/images/10.png)
 
 With these pages in place, create the remaining parts of Clarity's site structure as display page templates.
 
@@ -107,7 +123,7 @@ While logged in as Walter Douglas,
 
 1. For subtype, select *Basic Web Content*.
 
-   ![Add the web content display page template.](./adding-pages-to-claritys-site/images/10.png)
+   ![Add the web content display page template.](./adding-pages-to-claritys-site/images/11.png)
 
 1. Click *Save*.
 
@@ -117,33 +133,29 @@ While logged in as Walter Douglas,
 
 1. Repeat this process for these pages:
 
-   * Product Categories
-      * Content Type: Category
+   <!-- * Product Categories
+      * Content Type: Category -->
 
-   * Product Details
-      * Content Type: Product
+   <!-- * Product Details
+      * Content Type: Product -->
 
-   * Blog Post
-      * Content Type: Web Content Article > Basic Web Content
+   | Name               | Type                | Subtype           |
+   |:-------------------|:--------------------|:------------------|
+   | Blog Post          | Web Content Article | Basic Web Content |
+   | General Info       | Web Content Article | Basic Web Content |
+   | Leadership Profile | Web Content Article | Basic Web Content |
+   | FAQ Detail         | Web Content Article | Basic Web Content |
+   | Job Opening Detail | Web Content Article | Basic Web Content |
 
-   * Blog Author
-      * Content Type: Web Content Article > Basic Web Content
+   ![Create these display page templates.](./adding-pages-to-claritys-site/images/12.png)
 
-   * FAQ Details
-      * Content Type: Web Content Article > Basic Web Content
+1. Click the *Actions* button (![Actions Button](../../images/icon-actions.png)) for General Info and select *Mark as Default*.
 
-   * Job Opening
-      * Content Type: Web Content Article > Basic Web Content
+   ![Mark Product Categories and Product Details as default.](./adding-pages-to-claritys-site/images/13.png)
 
-   ![Create these display page templates.](./adding-pages-to-claritys-site/images/11.png)
+We'll update these templates in Module 7, but for now leave them blank.
 
-1. Click the *Actions* button (![Actions Button](../../images/icon-actions.png)) for Product Categories and select *Mark as Default*. Repeat this step for Product Details.
-
-   ![Mark Product Categories and Product Details as default.](./adding-pages-to-claritys-site/images/12.png)
-
-We'll revisit these templates in Module 7, but for now leave them blank.
-
-Since Liferay sites include 404 and 500 error pages by default, there's no need to create any utility pages, so Clarity's site structure is complete.
+Since Liferay sites include 404 and 500 error pages by default, there's no need to create any utility pages, so Clarity's page structure is complete.
 
 ## Conclusion
 

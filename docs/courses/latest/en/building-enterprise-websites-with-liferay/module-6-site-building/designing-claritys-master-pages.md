@@ -253,6 +253,8 @@ While editing the primary master page,
    | General | Content Display | Block                     |
    | Styles  | Padding         | Spacer 6 (left and right) |
 
+   <!--TASK: Add background color -->
+
    <!--
    5rem = Spacer 6/7?
    -->

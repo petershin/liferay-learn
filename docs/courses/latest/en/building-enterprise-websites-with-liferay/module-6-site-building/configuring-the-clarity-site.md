@@ -83,8 +83,6 @@ Now, let’s configure these site settings. While logged in as Walter Douglas,
 
 1. Click *Save*.
 
-1. Go to the *Site URL* tab.
-
 1. Return to the *Site Settings* page and go to *Localization*.
 
 1. Define custom languages for your site. For now, Clarity only wants to support English (United States), and Spanish (Spain) on their site. Use the left arrow button (![Left Arrow Button](../../images/icon-angle-left.png)) to move all other languages from the Current Column to the Available column.

@@ -29,7 +29,7 @@ To do this,
 
 1. Sign in as Walter Douglas.
 
-   Email: `walterdouglas@clarityvisionsolutions.com`
+   Email: `walter.douglas@clarityvisionsolutions.com`
    Password: `learn`
 
 1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Sites*.

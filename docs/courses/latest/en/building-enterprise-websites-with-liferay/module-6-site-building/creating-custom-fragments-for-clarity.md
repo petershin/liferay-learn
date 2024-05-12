@@ -35,11 +35,13 @@ Clarity wants a fragment set for storing custom master page fragments. While log
 
 1. Click the *Add* button (![Add Button](../../images/icon-plus.png)).
 
-1. For name, enter `Clarity Master Pages`.
+1. For name, enter `Clarity Components`.
 
 1. Click *Save*.
 
-   ![Add the Clarity Master Pages fragment set.](./creating-custom-fragments-for-clarity/images/02.png)
+   ![Add the Clarity Components fragment set.](./creating-custom-fragments-for-clarity/images/02.png)
+
+   <!--TASK: Update Image -->
 
 Now that you have the Clarity fragment set, you can start adding custom fragments to it.
 
@@ -47,11 +49,12 @@ Now that you have the Clarity fragment set, you can start adding custom fragment
 
 When creating a fragment, you can copy and modify existing fragments or start from scratch. You can also create custom fragments by saving container compositions in the page editor. Saving container compositions offers a convenient way to recreate specific arrangements of fragments on other pages. However, you cannot edit compositions via the Fragments Editor UI.
 
-Clarity needs three custom fragments for their master pages:
+Clarity needs two custom fragments for their master pages:
 
 * Log In and User Menu
-* Search Bar
-<!-- * Legal Bar -->
+* Search Button
+
+### Creating the Login and User Menu Fragment
 
 To create the Login and User Menu fragment,
 
@@ -135,18 +138,123 @@ To create the Login and User Menu fragment,
 
 1. Click *Publish*.
 
-<!--TASK: Finish Steps for Search Bar-->
+### Creating the Search Button
+
+1. Click *New*, select Basic Fragment, and click *Next*.
+
+1. Enter `Search Button` and click *Add*.
+
+1. Go to the *Configuration* tab and enter this code:
+
+   ```json
+   {
+      "fieldSets": [
+         {
+            "fields": [
+               {
+                  "dataType": "string",
+                  "defaultValue": "search",
+                  "label": "icon-name",
+                  "name": "iconName",
+                  "type": "text"
+               },
+               {
+                  "dataType": "string",
+                  "defaultValue": "1rem",
+                  "label": "icon-size",
+                  "name": "iconSize",
+                  "type": "select",
+                  "typeOptions": {
+                     "validValues": [
+                        {
+                           "value": "1rem"
+                        },
+                        {
+                           "value": "1.5rem"
+                        },
+                        {
+                           "value": "2rem"
+                        },
+                        {
+                           "value": "2.5rem"
+                        },
+                        {
+                           "value": "3rem"
+                        }
+                     ]
+                  }
+               }
+            ]
+         }
+      ]
+   }
+   ```
+
+1. Return to the *Code* tab and enter copy this into the HTML window:
+
+   ```html
+   <div class="component-button text-break">
+      <a
+         class="btn"
+         data-lfr-editable-id="link"
+         data-lfr-editable-type="link"
+         href="#"
+         id="fragment-${fragmentEntryLinkNamespace}-link"
+      >
+         <span style="font-size: ${configuration.iconSize}">
+            [@clay["icon"] symbol="${configuration.iconName}" /]
+         </span>
+      </a>
+   </div>
+   ```
+
+1. Click *Publish*.
+
+You can now add these fragments to Clarity's master pages. But before you do this, let's import some additional fragments that you'll use throughout the following exercises.
 
 ## Exercise Three: Importing Fragments
 
-Coming Soon!
+Clarity's team has provided some additional fragments and compositions to help us wireframe the rest of their pages.
+
+To use these fragments, you must first import them to your site:
+
+1. Click the *Actions* button (![Actions Button](../../images/icon-actions.png)) for the Clarity Components fragment set and select *Import*.
+
+   ![Click the Actions button for the fragment set and select Import.](./creating-custom-fragments-for-clarity/images/05.png)
+
+1. Click *Select File* and select the `clarity-components.zip` file in the Module 6 exercise resources folder (i.e., `enablement-bootcamp-clarity/exercises/module-6-site-building/clarity-components.zip`).
+
+1. Select *Overwrite Existing Items* and click *Import*.
+
+1. Click *Done* once finished.
+
+1. Click the *Actions* button (![Actions Button](../../images/icon-actions.png)) for Fragment Sets and repeat the above steps to import these zip files from the exercise resources folder:
+
+   * `clarity-page-compositions.zip`
+   * `clarity-display-compositions.zip`
+
+   ![Click the Actions button for the Fragment Sets and select Import.](./creating-custom-fragments-for-clarity/images/06.png)
 
 ## Exercise Four: Adding Custom Fragments to Master Pages
 
-Coming Soon!
+Now that you've added Clarity's custom fragments, you can add them to Clarity's master page templates.
+
+1. Begin editing the *Primary Master Page*.
+
+1. Add these custom fragments:
+
+   | Container           | Fragments                          |
+   |:--------------------|:-----------------------------------|
+   | Header User Actions | Search Button, Login and User Menu |
+
+1. Click *Publish*.
+
+1. Repeat these steps for the *Secondary Master Page* template.
 
 ## Conclusion
 
-Congratulations! You've created and imported custom fragments and compositions for Clarity's pages. Next, you’ll use them to wireframe the content area for each content page, display page, and utility page.
+Congratulations! You've created and imported custom fragments and compositions for Clarity's pages. You've also completed wireframing Clarity's master pages.
+
+Next, you’ll use the fragment compositions to wireframe the content area for each page (content, display, and utility).
 
 Next Up: [Wireframing Clarity’s Pages](./wireframing-claritys-pages.md)

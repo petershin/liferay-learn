@@ -56,14 +56,16 @@ While editing the menu,
 
 1. Drag and drop the pages into this order:
 
-   * About Us
    * Products
+   * About Us
    * Blog
    * FAQ
    * Careers
    * Contact Us
 
    ![Drag and drop the pages to reorder them.](./creating-navigation-menus-for-claritys-master-pages/images/06.gif)
+
+   <!--TASK: Update gif-->
 
 These changes are saved automatically, so the menu is ready for use in the master pages.
 
@@ -117,7 +119,16 @@ Repeat the steps from exercises one and two to create these four menus for the p
 
 **Name**: Footer Products Menu
 
-**Pages**: Eyeglasses, Sunglasses, Contacts, Lenses
+**Menu Items**: Eyeglasses, Sunglasses, Contacts, Lenses
+
+To create this menu, select the URL type for each entry and enter these values:
+
+| Menu Item  | Type | Value                       |
+|:-----------|:-----|:----------------------------|
+| Eyeglasses | URL  | `/web/clarity/g/eyeglasses` |
+| Sunglasses | URL  | `/web/clarity/g/sunglasses` |
+| Contacts   | URL  | `/web/clarity/g/contacts`   |
+| Lenses     | URL  | `/web/clarity/g/lenses`     |
 
 ![Create the footer Products menu.](./creating-navigation-menus-for-claritys-master-pages/images/09.png)
 
@@ -125,10 +136,15 @@ Repeat the steps from exercises one and two to create these four menus for the p
 
 **Name**: Footer About Us Menu
 
-**Pages**: Leadership, Our Impact, Careers
+**Menu Items**: Leadership, Our Impact, Careers
 
-!!! note
-    The Leadership and Our Impact links should direct users to the About Us page. Just add the page twice and use custom names for each menu item.
+The Leadership and Our Impact links should direct users to the About Us page. To do this, just add the page twice and use custom names for each menu item.
+
+| Menu Item  | Type | Value    |
+|:-----------|:-----|:---------|
+| Leadership | Page | About Us |
+| Our Impact | Page | About Us |
+| Contacts   | Page | Careers  |
 
 ![Create the footer About Us menu.](./creating-navigation-menus-for-claritys-master-pages/images/10.png)
 
@@ -136,7 +152,12 @@ Repeat the steps from exercises one and two to create these four menus for the p
 
 **Name**: Footer Resources Menu
 
-**Pages**: Blog, FAQ
+**Menu Items**: Blog, FAQ
+
+| Menu Item | Type | Value |
+|:----------|:-----|:------|
+| Blog      | Page | Blog  |
+| FAQ       | Page | FAQ   |
 
 ![Create the footer Resources menu.](./creating-navigation-menus-for-claritys-master-pages/images/11.png)
 
@@ -144,22 +165,23 @@ Repeat the steps from exercises one and two to create these four menus for the p
 
 **Name**: Footer Get In Touch Menu
 
-**Pages**: Contact Us
+**Menu Items**: Contact Us
+
+| Menu Item  | Type | Value      |
+|:-----------|:-----|:-----------|
+| Contact Us | Page | Contact Us |
 
 ![Create the footer Get In Touch menu.](./creating-navigation-menus-for-claritys-master-pages/images/12.png)
 
-Now that the menus are defined, you can update the existing menu displays in the master pages to use them.
-
-<!--TASK:
 ### Footer Legal Menu
 
 **Name**: Footer Legal Menu
 
-**Pages**: ???
+**Menu Items**: N/A
 
-![Create the footer legal menu.](./creating-navigation-menus-for-claritys-master-pages/images/13.png)
+For now, leave this menu empty. You'll return to it in Module 7.
 
-Now that the menus are defined, you can update the existing menu displays in the master pages to use them. -->
+Now that the menus are defined, you can update the existing menu displays in the master pages to use them.
 
 ## Exercise Five: Updating the Master Pages
 
@@ -173,15 +195,17 @@ When you add a menu display fragment or widget to a page, you can determine whic
 
    ![Set the source to Header Page Menu.](./creating-navigation-menus-for-claritys-master-pages/images/14.gif)
 
+   <!--TASK: Update gif -->
+
 1. Repeat the above process for the menu displays in the footer.
 
 1. Click *Publish Master*.
 
-1. Repeat the above process to update the secondary master page’s menu.
+1. Repeat the above process to update the secondary master page’s menus.
 
 Once finished, navigate to the Home page to see how your changes to the template were automatically applied to the connected pages.
 
-<!--TASK: ![Navigate to the Home page to see how your changes to the template were automatically applied to the connected pages.](./creating-navigation-menus-for-claritys-master-pages/images/14.png)-->
+<!-- TASK: ![Navigate to the Home page to see how your changes to the template were automatically applied to the connected pages.](./creating-navigation-menus-for-claritys-master-pages/images/14.png) -->
 
 ## Conclusion
 

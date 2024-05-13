@@ -7,6 +7,7 @@ taxonomy-category-names:
 - Liferay PaaS
 - Liferay SaaS
 ---
+
 # Using nestedFields to Audit Entry History
 
 {bdg-secondary}`Liferay 7.4 U72+/GA72+`
@@ -15,9 +16,8 @@ When you [enable entry history](../../creating-and-managing-objects/auditing-obj
 
 To get started, [set up](#setting-up-a-liferay-instance) a new Liferay 7.4 instance and [prepare](#preparing-the-sample-code) the provided tutorial code. Then, [run the scripts](#using-the-sample-code) to create entries, update them, and query those changes using the `nestedFields` parameter.
 
-```{important}
-Using REST APIs to view an entry's history requires both the `View` and `Object Entry History` permissions for the entry. See [Permissions Framework Integration](../permissions-framework-integration.md).
-```
+!!! important
+    Using REST APIs to view an entry's history requires both the `View` and `Object Entry History` permissions for the entry. See [Permissions Framework Integration](../permissions-framework-integration.md).
 
 ## Setting Up a Liferay Instance
 
@@ -44,17 +44,17 @@ Next, enable Liferay's persistent audit message processor. Then create and publi
 
 1. [Create](../../creating-and-managing-objects/creating-objects.md#creating-object-drafts) an object draft.
 
-   | Field | Value |
-   | :--- | :--- |
-   | Label | `Able` |
+   | Field        | Value   |
+   |:-------------|:--------|
+   | Label        | `Able`  |
    | Plural Label | `Ables` |
-   | Name | `Able` |
+   | Name         | `Able`  |
 
 1. Add this field to the draft.
 
-   | Label | Field Name | Type | Required |
-   | :--- | :--- | :--- | :--- |
-   | `Name` | `name` | Text | &#10004; |
+   | Label  | Field Name | Type | Required |
+   |:-------|:-----------|:-----|:---------|
+   | `Name` | `name`     | Text | &#10004; |
 
 1. In the Details tab, toggle *Enable Entry History*.
 
@@ -76,9 +76,8 @@ unzip liferay-g4m3.zip
 
 The sample code includes shell scripts for creating, updating, and querying object entries.
 
-```{tip}
-For a complete list of APIs generated for site and company objects, see [Objects Headless Framework Integration](../../understanding-object-integrations/using-custom-object-apis.md). You can view and test custom object APIs via the Liferay API Explorer at `[server]:[port]/o/api` (e.g., `localhost:8080/o/api`). Click *REST Applications* and select an API.
-```
+!!! tip
+    For a complete list of APIs generated for site and company objects, see [Objects Headless Framework Integration](../../understanding-object-integrations/using-custom-object-apis.md). You can view and test custom object APIs via the Liferay API Explorer at `[server]:[port]/o/api` (e.g., `localhost:8080/o/api`). Click *REST Applications* and select an API.
 
 ## Using the Sample Code
 
@@ -293,5 +292,5 @@ These GET requests include the `nestedFields=auditEvents` parameter in their URL
 
 ## Related Topics
 
-* [Auditing Object Events](../../creating-and-managing-objects/auditing-object-events.md)
-* [Using nestedFields to Query Related Entries](./using-nestedfields-to-query-related-entries.md)
+- [Auditing Object Events](../../creating-and-managing-objects/auditing-object-events.md)
+- [Using nestedFields to Query Related Entries](./using-nestedfields-to-query-related-entries.md)

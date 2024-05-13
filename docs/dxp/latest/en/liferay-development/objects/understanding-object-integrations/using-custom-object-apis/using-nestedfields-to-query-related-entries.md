@@ -7,15 +7,15 @@ taxonomy-category-names:
 - Liferay PaaS
 - Liferay SaaS
 ---
+
 # Using nestedFields to Query Related Entries
 
 {bdg-secondary}`Liferay 7.4 U69+/GA69+`
 
 The `nestedFields` parameter causes Liferay to return multiple levels of related object entries in a single GET request. Pass the `nestedFields` parameter with the relationship names to include in the query, separating each relationship with a comma: `nestedFields=[firstObjectRelationship],[secondObjectRelationship]`. If the relationships span multiple levels, set the `nestedFieldsDepth` parameter to the depth you need. You can include up to five levels (e.g., `nestedFieldsDepth=5`).
 
-```{tip}
-The `nestedFields` parameter optimizes your request by retrieving entries with related entries that would otherwise require multiple requests. To return only the related entries, Liferay provides dedicated [relationship APIs](../using-custom-object-apis.md#relationship-rest-apis). See [Using Relationship REST APIs](./using-relationship-rest-apis.md) for an introduction.
-```
+!!! tip
+    The `nestedFields` parameter optimizes your request by retrieving entries with related entries that would otherwise require multiple requests. To return only the related entries, Liferay provides dedicated [relationship APIs](../using-custom-object-apis.md#relationship-rest-apis). See [Using Relationship REST APIs](./using-relationship-rest-apis.md) for an introduction.
 
 To proceed, [set up](#setting-up-a-liferay-instance) a new Liferay 7.4 instance and [prepare](#preparing-the-sample-code) the provided tutorial code. Then [run the scripts](#creating-and-querying-related-object-entries) to create related entries and query them using the `nestedFields` parameter.
 
@@ -34,53 +34,53 @@ Next, create and relate three object definitions.
 
    First Object:
 
-   | Field | Value |
-   | :--- | :--- |
-   | Label | `Able` |
+   | Field        | Value   |
+   |:-------------|:--------|
+   | Label        | `Able`  |
    | Plural Label | `Ables` |
-   | Name | `Able` |
+   | Name         | `Able`  |
 
    Second Object:
 
-   | Field | Value |
-   | :--- | :--- |
-   | Label | `Baker` |
+   | Field        | Value    |
+   |:-------------|:---------|
+   | Label        | `Baker`  |
    | Plural Label | `Bakers` |
-   | Name | `Baker` |
+   | Name         | `Baker`  |
 
    Third Object:
 
-   | Field | Value |
-   | :--- | :--- |
-   | Label | `Charlie` |
+   | Field        | Value      |
+   |:-------------|:-----------|
+   | Label        | `Charlie`  |
    | Plural Label | `Charlies` |
-   | Name | `Charlie` |
+   | Name         | `Charlie`  |
 
 1. Add the `name` text field to each object draft.
 
-   | Label | Field Name | Type | Required |
-   | :--- | :--- | :--- | :--- |
-   | `Name` | `name` | Text | &#10004; |
+   | Label  | Field Name | Type | Required |
+   |:-------|:-----------|:-----|:---------|
+   | `Name` | `name`     | Text | &#10004; |
 
 1. Define the following relationships.
 
    For Able:
 
-   | Label | Relationship Name | Type | Object |
-   | :--- | :--- | :--- | :--- |
-   | `Able to Baker` | `ableToBaker` | One to Many | Baker |
+   | Label           | Relationship Name | Type        | Object |
+   |:----------------|:------------------|:------------|:-------|
+   | `Able to Baker` | `ableToBaker`     | One to Many | Baker  |
 
    For Baker:
 
-   | Label | Relationship Name | Type | Object |
-   | :--- | :--- | :--- | :--- |
-   | `Baker to Charlie` | `bakerToCharlie` | One to Many | Charlie |
+   | Label              | Relationship Name | Type        | Object  |
+   |:-------------------|:------------------|:------------|:--------|
+   | `Baker to Charlie` | `bakerToCharlie`  | One to Many | Charlie |
 
    For Charlie:
 
-   | Label | Relationship Name | Type | Object |
-   | :--- | :--- | :--- | :--- |
-   | `Charlie to Able` | `charlieToAble` | Many to Many | Able |
+   | Label             | Relationship Name | Type         | Object |
+   |:------------------|:------------------|:-------------|:-------|
+   | `Charlie to Able` | `charlieToAble`   | Many to Many | Able   |
 
 1. [Publish](../../creating-and-managing-objects/creating-objects.md#publishing-object-drafts) each object.
 
@@ -100,9 +100,8 @@ unzip liferay-w4s7.zip
 
 The ZIP provides shell scripts that run cURL commands for creating, relating, and querying object entries using REST APIs. This includes two GET commands for querying related entries.
 
-```{tip}
-For a complete list of APIs generated for site and company objects, see [Objects Headless Framework Integration](../using-custom-object-apis.md). You can view and test custom object APIs via the Liferay API Explorer at `[server]:[port]/o/api` (e.g., `localhost:8080/o/api`). Click *REST Applications* and select an API.
-```
+!!! tip
+    For a complete list of APIs generated for site and company objects, see [Objects Headless Framework Integration](../using-custom-object-apis.md). You can view and test custom object APIs via the Liferay API Explorer at `[server]:[port]/o/api` (e.g., `localhost:8080/o/api`). Click *REST Applications* and select an API.
 
 ## Creating and Querying Related Object Entries
 
@@ -448,6 +447,6 @@ For a complete list of APIs generated for site and company objects, see [Objects
 
 ## Related Topics
 
-* [Object API Basics](./object-api-basics.md)
-* [Using Batch APIs](./using-batch-apis.md)
-* [Using Aggregation Terms with REST APIs](./using-aggregation-terms-with-rest-apis.md)
+- [Object API Basics](./object-api-basics.md)
+- [Using Batch APIs](./using-batch-apis.md)
+- [Using Aggregation Terms with REST APIs](./using-aggregation-terms-with-rest-apis.md)

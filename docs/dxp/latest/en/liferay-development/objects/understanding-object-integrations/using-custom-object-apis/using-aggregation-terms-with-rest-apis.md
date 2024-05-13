@@ -7,6 +7,7 @@ taxonomy-category-names:
 - Liferay PaaS
 - Liferay SaaS
 ---
+
 # Using Aggregation Terms with REST APIs
 
 When querying Object entries using REST APIs, you can use an Object's fields as facet criteria for aggregating entry data. To do this, add the `aggregationTerms` parameter to your GET request and specify the data fields you want to use as facet criteria. These criteria can include custom fields, default system fields, or relationship fields. The request response then groups the specified data facets into a single `facets` block.
@@ -26,24 +27,23 @@ Then, follow these steps to [create](../../creating-and-managing-objects/creatin
 
 1. Click the *Add* button (![Add Button](../../../../images/icon-add.png)) and enter these values:
 
-   | Field | Value |
-   | :--- | :--- |
-   | Label | `Able` |
+   | Field        | Value   |
+   |:-------------|:--------|
+   | Label        | `Able`  |
    | Plural Label | `Ables` |
-   | Name | `Able` |
+   | Name         | `Able`  |
 
 1. Select the new *Object* draft, go to the *Fields* tab, and add the following text fields:
 
-   | Label | Field Name | Type | Required |
-   | :--- | :--- | :--- | :--- |
-   | Name | name | Text | &#10004; |
-   | Description | description | Text |  |
+   | Label       | Field Name  | Type | Required |
+   |:------------|:------------|:-----|:---------|
+   | Name        | name        | Text | &#10004; |
+   | Description | description | Text |          |
 
 1. Go to the *Details* tab and click [*Publish*](../../creating-and-managing-objects/creating-objects.md#publishing-object-drafts).
 
-   ```{important}
-   For this tutorial, you must use the above values.
-   ```
+   !!! important
+       For this tutorial, you must use the above values.
 
 Once published, you can access the Object via Headless APIs.
 
@@ -61,10 +61,10 @@ unzip liferay-b3x5.zip
 
 These scripts include the following APIs:
 
-| HTTP Method | HTTP Endpoint | Description |
-| :--- | :--- | :--- |
-| GET | `/` | Returns a complete list of Object entries in a Liferay instance; results can be paginated, filtered, searched, and sorted |
-| POST | `/batch` | Creates multiple Object entries using the details provided in the API call |
+| HTTP Method | HTTP Endpoint | Description                                                                                                               |
+|:------------|:--------------|:--------------------------------------------------------------------------------------------------------------------------|
+| GET         | `/`           | Returns a complete list of Object entries in a Liferay instance; results can be paginated, filtered, searched, and sorted |
+| POST        | `/batch`      | Creates multiple Object entries using the details provided in the API call                                                |
 
 ## Using the Sample Code
 
@@ -163,6 +163,6 @@ This batch GET method includes the `aggregationTerms` URL parameter with two val
 
 ## Related Topics
 
-* [Object API Basics](./object-api-basics.md)
-* [Using Batch APIs](./using-batch-apis.md)
-* [Using nestedFields to Query Related Entries](./using-nestedfields-to-query-related-entries.md)
+- [Object API Basics](./object-api-basics.md)
+- [Using Batch APIs](./using-batch-apis.md)
+- [Using nestedFields to Query Related Entries](./using-nestedfields-to-query-related-entries.md)

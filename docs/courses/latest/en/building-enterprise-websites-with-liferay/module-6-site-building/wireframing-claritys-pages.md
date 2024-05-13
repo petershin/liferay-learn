@@ -7,8 +7,6 @@ With Clarity's master pages complete, you're ready to begin designing the centra
 
 ## Exercise One: Wireframing the Content Pages
 
-___.
-
 1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)), expand *Site Builder*, and click *Pages*.
 
 1. Begin editing each page and add the corresponding composition to it.
@@ -83,8 +81,6 @@ Add the Signin Page fragment composition to the page.
 
 ## Exercise Two: Wireframing the Display Pages
 
-___.
-
 1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)), expand *Design*, and click *Page Templates*.
 
 1. Go to the *Display Page Templates* tab.
@@ -124,8 +120,6 @@ Add the Job Opening Detail Display fragment composition to the page.
 ![]()
 
 ## Exercise Three: Wireframing the Utility Pages
-
-___.
 
 1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)), expand *Site Building*, and click *Pages*.
 

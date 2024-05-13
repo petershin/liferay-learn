@@ -14,6 +14,7 @@ taxonomy-category-names:
 - Liferay PaaS
 - Liferay SaaS
 ---
+
 # Using Custom Object APIs
 
 {bdg-secondary}`Liferay 7.4+`
@@ -95,9 +96,8 @@ Default REST APIs are available for all site-scoped objects.
 | PATCH       | `/{entryId}`                                          | Updates the specified entry; only fields included in the API call are changed                                 |
 | PUT         | `/{entryId}`                                          | Replaces the specified entry's details with those provided in the API call                                    |
 
-```{note}
-For the `scopeKey`, use the proper identifier for the desired data scope (e.g., site ID or user role).
-```
+!!! note
+    For the `scopeKey`, use the proper identifier for the desired data scope (e.g., site ID or user role).
 
 ## Relationship REST APIs
 
@@ -116,9 +116,8 @@ For the HTTP endpoints, replace `relationshipName` with the name of your relatio
 
 For site-scoped objects, the ERC endpoint includes the `/scope/{scopeKey}` prefix (e.g., `/scope/{scopeKey}/by-external-reference-code/{erc}/relationshipName/{relatedERC}`). External reference code endpoints are not available for system objects.
 
-```{tip}
-In addition to the dedicated relationship APIs, you can use the `nestedFields` query parameter with the object's other GET APIs to return an entry with its related entries. When using this parameter, you must provide the name of the relationship you want to include in the output (e.g., `nestedFields=ticketAssignee`). See [Using nestedFields to Query Related Entries](./using-custom-object-apis/using-nestedfields-to-query-related-entries.md) for more information and an introductory tutorial.
-```
+!!! tip
+    In addition to the dedicated relationship APIs, you can use the `nestedFields` query parameter with the object's other GET APIs to return an entry with its related entries. When using this parameter, you must provide the name of the relationship you want to include in the output (e.g., `nestedFields=ticketAssignee`). See [Using nestedFields to Query Related Entries](./using-custom-object-apis/using-nestedfields-to-query-related-entries.md) for more information and an introductory tutorial.
 
 ## Standalone Action REST APIs
 
@@ -133,7 +132,6 @@ When you define standalone actions for a published object, Liferay generates two
 
 For site-scoped objects, the ERC endpoint includes the `/scope/{scopeKey}` prefix (e.g., `/scopes/{scopeKey}/by-external-reference-code/{erc}/object-actions/actionName`).
 
-<!--TASK: uncomment when GraphQL APIs are better supported, 
 ## GraphQL APIs
 
 With the GraphQL APIs, you can both query and mutate object data. All APIs for custom objects are listed under `c` in Liferay's GraphQL schema. You can use Liferay's integrated Graph*i*QL IDE to search object schemas, draft queries, run requests, and more. To access it, go to Liferay's API Explorer at `[server]:[port]/o/api` (e.g., `localhost:8080/o/api`) and click *GraphQL*.
@@ -141,9 +139,8 @@ With the GraphQL APIs, you can both query and mutate object data. All APIs for c
 ![Use Liferay's GraphiQL explorer to search object schemas and run your requests.](./using-custom-object-apis/images/02.png)
 
 See [Consuming GraphQL APIs](../../../headless-delivery/consuming-apis/consuming-graphql-apis.md) for more information.
--->
 
 ## Related Topics
 
-* [Consuming REST Services](../../../headless-delivery/consuming-apis/consuming-rest-services.md)
-<!--TASK: * [Consuming GraphQL APIs](../../../headless-delivery/consuming-apis/consuming-graphql-apis.md) -->
+- [Consuming REST Services](../../../headless-delivery/consuming-apis/consuming-rest-services.md)
+- [Consuming GraphQL APIs](../../../headless-delivery/consuming-apis/consuming-graphql-apis.md)

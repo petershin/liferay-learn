@@ -14,9 +14,8 @@ When you publish an Object, Liferay automatically generates REST APIs for it. Th
 
 Here you'll use cURL commands to perform basic CRUD operations for a custom Object. Before proceeding, [set up](#setting-up-a-liferay-instance) a new Liferay DXP/Portal 7.4 instance and [prepare](#preparing-the-sample-code) the provided tutorial code.
 
-```{tip}
-For a complete list of APIs generated for both Site and Company Objects, see [Object's Headless Framework Integration](../using-custom-object-apis.md). You can view and test custom Object APIs via the Liferay API Explorer at `[server]:[port]/o/api` (e.g., `localhost:8080/o/api`). They are listed under *REST Applications*.
-```
+!!! tip
+    For a complete list of APIs generated for both Site and Company Objects, see [Object's Headless Framework Integration](../using-custom-object-apis.md). You can view and test custom Object APIs via the Liferay API Explorer at `[server]:[port]/o/api` (e.g., `localhost:8080/o/api`). They are listed under *REST Applications*.
 
 ## Setting Up a Liferay Instance
 
@@ -43,9 +42,8 @@ Then, follow these steps to [create](../../creating-and-managing-objects/creatin
 
 1. Go to the _Details_ tab and click _Publish_.
 
-   ```{important}
-   For this tutorial, you must use the above values.
-   ```
+   !!! important
+       For this tutorial, you must use the above values.
 
 [Publishing an Object](../../creating-and-managing-objects/creating-objects.md#publishing-object-drafts) creates and activates a new application for receiving and storing data. You can now access it via Headless APIs.
 
@@ -64,7 +62,7 @@ unzip liferay-v1s4.zip
 These scripts include the following APIs:
 
 | HTTP Method | HTTP Endpoint     | Description                                                                                                               |
-| :---------- | :---------------- | :------------------------------------------------------------------------------------------------------------------------ |
+|:------------|:------------------|:--------------------------------------------------------------------------------------------------------------------------|
 | GET         | `/`               | Returns a complete list of Object entries in a Liferay instance; results can be paginated, filtered, searched, and sorted |
 | POST        | `/`               | Creates a new Object entry using the details provided in the API call                                                     |
 | DELETE      | `/{objectNameId}` | Deletes the specified Object entry and returns a 204 if the operation succeeds                                            |
@@ -187,7 +185,7 @@ You can set and update categories for an object entry by adding the `taxonomyCat
 ```
 
 !!! note
-You must have an existing vocabulary of categories to assign categories to an object entry. See [Defining Categories and Vocabularies for Content](../../../../content-authoring-and-management/tags-and-categories/defining-categories-and-vocabularies-for-content.md) for more information.
+    You must have an existing vocabulary of categories to assign categories to an object entry. See [Defining Categories and Vocabularies for Content](../../../../content-authoring-and-management/tags-and-categories/defining-categories-and-vocabularies-for-content.md) for more information.
 
 After making a GET request for an object entry, you can read its categories in the `taxonomyCategoryBriefs` array, which contains the `taxonomyCategoryId` and `taxonomyCategoryName` for each assigned category.
 

@@ -8,15 +8,15 @@ taxonomy-category-names:
 - Liferay PaaS
 - Liferay SaaS
 ---
+
 # Using Batch APIs
 
 When you publish an Object, Liferay automatically generates REST APIs for it. These include the batch APIs for bulk POST, PUT, and DELETE operations. Here you'll use cURL commands to call these batch APIs for a custom Object.
 
 Before proceeding, [set up](#setting-up-a-liferay-instance) a new Liferay DXP/Portal 7.4 instance and [prepare](#preparing-the-sample-code) the provided tutorial code.
 
-```{tip}
-For a complete list of APIs generated for both Site and Company Objects, see [Object's Headless Framework Integration](../using-custom-object-apis.md). You can view and test custom Object APIs via the Liferay API Explorer at `[server]:[port]/o/api` (e.g., `localhost:8080/o/api`). They appear under *REST Applications*.
-```
+!!! tip
+    For a complete list of APIs generated for both Site and Company Objects, see [Object's Headless Framework Integration](../using-custom-object-apis.md). You can view and test custom Object APIs via the Liferay API Explorer at `[server]:[port]/o/api` (e.g., `localhost:8080/o/api`). They appear under *REST Applications*.
 
 ## Setting Up a Liferay Instance
 
@@ -29,23 +29,22 @@ Then, follow these steps to [create](../../creating-and-managing-objects/creatin
 
 1. Click the *Add* button (![Add Button](../../../../images/icon-add.png)) and enter these values:
 
-   | Field | Value |
-   | :--- | :--- |
-   | Label | `Able` |
+   | Field        | Value   |
+   |:-------------|:--------|
+   | Label        | `Able`  |
    | Plural Label | `Ables` |
-   | Name | `Able` |
+   | Name         | `Able`  |
 
 1. Select the new *Object* draft, go to the *Fields* tab, and add a single text *field*:
 
    | Label | Field Name | Type | Required |
-   | :--- | :--- | :--- | :--- |
-   | Name | name | Text | &#10004; |
+   |:------|:-----------|:-----|:---------|
+   | Name  | name       | Text | &#10004; |
 
 1. Go to the *Details* tab and click *Publish*.
 
-   ```{important}
+   !!! important
    For this tutorial, you must use the above values.
-   ```
 
 [Publishing an Object](../../creating-and-managing-objects/creating-objects.md#publishing-object-drafts) creates and activates a new application for receiving and storing data. You can now access it via Headless APIs.
 
@@ -63,15 +62,14 @@ unzip liferay-t4r3.zip
 
 These scripts include the following batch APIs:
 
-| HTTP Method | HTTP Endpoint | Description |
-| :--- | :--- | :--- |
-| DELETE | `/batch` | Deletes multiple Object entries |
-| POST | `/batch` | Creates multiple Object entries using the details provided in the API call |
-| PUT | `/batch` | Replaces multiple Object entries using the details provided in the API call |
+| HTTP Method | HTTP Endpoint | Description                                                                 |
+|:------------|:--------------|:----------------------------------------------------------------------------|
+| DELETE      | `/batch`      | Deletes multiple Object entries                                             |
+| POST        | `/batch`      | Creates multiple Object entries using the details provided in the API call  |
+| PUT         | `/batch`      | Replaces multiple Object entries using the details provided in the API call |
 
-```{note}
-The GET method is included for demonstration purposes. This returns a complete list of Object entries in a Liferay instance.
-```
+!!! note
+    The GET method is included for demonstration purposes. This returns a complete list of Object entries in a Liferay instance.
 
 ## Calling the Custom Object's APIs
 
@@ -231,6 +229,6 @@ The GET method is included for demonstration purposes. This returns a complete l
 
 ## Related Topics
 
-* [Object API Basics](./object-api-basics.md)
-* [Using nestedFields to Query Related Entries](./using-nestedfields-to-query-related-entries.md)
-* [Using Aggregation Terms with REST APIs](./using-aggregation-terms-with-rest-apis.md)
+- [Object API Basics](./object-api-basics.md)
+- [Using nestedFields to Query Related Entries](./using-nestedfields-to-query-related-entries.md)
+- [Using Aggregation Terms with REST APIs](./using-aggregation-terms-with-rest-apis.md)

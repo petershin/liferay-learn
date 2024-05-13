@@ -7,15 +7,141 @@ With Clarity's master pages complete, you're ready to begin designing the centra
 
 ## Exercise One: Wireframing the Content Pages
 
-Coming Soon!
+___.
+
+1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)), expand *Site Builder*, and click *Pages*.
+
+1. Begin editing each page and add the corresponding composition to it.
+
+1. Click *Publish*.
+
+### Home
+
+Add the Home Page fragment composition to the page.
+
+![]()
+
+### About Us
+
+Add the About Us Page fragment composition to the page.
+
+![]()
+
+### Contact Us
+
+Add the Contact Us Page fragment composition to the page.
+
+![]()
+
+### Products
+
+Add the Products Page fragment composition to the page.
+
+![]()
+
+### Product List
+
+Add the Product List Page fragment composition to the page.
+
+![]()
+
+### Product Detail
+
+Add the Product Detail Page fragment composition to the page.
+
+![]()
+
+### Blog
+
+Add the Blog Page fragment composition to the page.
+
+![]()
+
+### FAQ
+
+Add the FAQ Page fragment composition to the page.
+
+![]()
+
+### Careers
+
+Add the Careers Page fragment composition to the page.
+
+![]()
+
+### Search
+
+Add the Search Page fragment composition to the page.
+
+![]()
+
+### Sign In
+
+Add the Signin Page fragment composition to the page.
+
+![]()
 
 ## Exercise Two: Wireframing the Display Pages
 
-Coming Soon!
+___.
+
+1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)), expand *Design*, and click *Page Templates*.
+
+1. Go to the *Display Page Templates* tab.
+
+1. Begin editing each template and add the corresponding composition to it.
+
+1. Click *Publish*.
+
+### Blog Post
+
+Add the Blog Post Display fragment composition to the page.
+
+![]()
+
+### General Info
+
+Add the General Info Display fragment composition to the page.
+
+![]()
+
+### Leadership Profile
+
+Add the Leadership Profile Display fragment composition to the page.
+
+![]()
+
+### FAQ Detail
+
+Add the FAQ Detail Display fragment composition to the page.
+
+![]()
+
+### Job Opening Detail
+
+Add the Job Opening Detail Display fragment composition to the page.
+
+![]()
 
 ## Exercise Three: Wireframing the Utility Pages
 
-Coming Soon!
+___.
+
+1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)), expand *Site Building*, and click *Pages*.
+
+1. Go to the *Utility Pages* tab.
+
+1. Begin editing each template and add the corresponding composition to it.
+
+1. Click *Publish*.
+
+### 404 Error
+
+![]()
+
+### 500 Error
+
+![]()
 
 ## Conclusion
 

@@ -36,12 +36,12 @@ Start by running Liferay DXP to call its GraphQL APIs.
 
 1. Click the *Docs* link below the button you just clicked. Now you can browse the API.
 
-1. GraphQL separates read and write operations by calling the first a *query* and the second a *mutation*. Since the first thing you want to do is post a blog entry, click *mutation*. A list of the entire API appears.
+1. GraphQL separates read and write operations by calling the first a *query* and the second a *mutation*. Since the first thing you want to do is post a blog entry, click *mutation*. The API list appears.
 
    !!! important
        {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+` Use versioned namespaced GraphQL APIs to avoid naming conflicts between operations from different APIs, enhance readability and maintainability by clearly indicating the source and version of each API operation, and ensure that applications remain compatible with evolving APIs, reducing the risk of compatibility issues and the need for frequent updates.
 
-       Versioned API calls work similarly to non-versioned ones. The only difference is the addition of a namespace level to the query. Throughout this article, you'll see examples using both.
+       Versioned API calls work similarly to non-versioned ones. The only difference is the addition of a namespace level to the query. Examples of both appear below.
 
        While you can use both versioned and non-versioned GraphQL APIs, note that non-versioned APIs are [deprecated](../../installation-and-upgrades/upgrading-liferay/reference/maintenance-mode-and-deprecations-in-7-4.md) and will be removed in the future.
 
@@ -61,7 +61,7 @@ Start by running Liferay DXP to call its GraphQL APIs.
 
     `curl 'http://localhost:8080/o/graphql'  -H "Content-Type: application/json" --data '{"query":"query{ __schema{ queryType{ name fields{ name args{ name } description } } } }","variables":{}}'`
 
-    This URL does not require authentication, but it's quite cumbersome to manage the returned schema. So, it's better to use the included GraphQL client.
+    This URL does not require authentication, but it's quite cumbersome to manage the returned schema. It's better to use the included GraphQL client.
 
 ![The included GraphQL client has a schema documentation browser.](./consuming-graphql-apis/images/02.png)
 

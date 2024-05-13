@@ -258,3 +258,5 @@ Deploy your module to see your new language translation values.
 
 - [Overriding Module Language Translations in Earlier Versions](./overriding-module-language-translations.md)
 - [Changing Translations with Language Override](../../../system-administration/configuring-liferay/changing-translations-with-language-override.md)
+- [Using Localized Messages in an MVC Portlet](../../../liferay-development/building-applications/developing-a-java-web-application/using-mvc/using-localized-messages-in-an-mvc-portlet.md)
+- [Upgrading Language Key Overrides](../../../installation-and-upgrades/upgrading-liferay/upgrading-custom-development/upgrading-language-key-overrides.md)

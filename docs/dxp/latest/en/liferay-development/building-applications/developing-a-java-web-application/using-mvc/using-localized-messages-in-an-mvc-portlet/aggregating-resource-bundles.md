@@ -28,13 +28,12 @@ When working with a module that shares localized messages, the bnd header must s
         com.acme.baker.impl
     ```
 
-The current module's resource bundle is prioritized over those of the listed modules. 
+The current module's resource bundle is prioritized over those of the listed modules.
 
-At build time, Liferay's bnd plugin converts the bnd instruction to `Require-Capability` and `Provide-Capability` parameters automatically. 
+At build time, Liferay's bnd plugin converts the bnd instruction to `Require-Capability` and `Provide-Capability` parameters automatically.
 
-```{note}
-To aggregate resources with Liferay's native modules you must specify the parameters manually. 
-```
+!!! note
+    To aggregate resources with Liferay's native modules you must specify the parameters manually.
 
 ## Reference
 
@@ -53,18 +52,23 @@ bundle.symbolic.name="com.acme.web";resource.bundle.base.name="content.Language"
 service.ranking=1,;servlet.context.name="com.acme.web"
 ```
 
-The example `Provide-Capability` header has two parts: 
+The example `Provide-Capability` header has two parts:
 
-1. `liferay.resource.bundle;resource.bundle.base.name="content.Language"` declares that the module provides a resource bundle whose base name is `content.language`. 
+1. `liferay.resource.bundle;resource.bundle.base.name="content.Language"` declares that the module provides a resource bundle whose base name is `content.language`.
 
 1. The `liferay.resource.bundle;resource.bundle.aggregate=...` directive specifies the list of bundles whose resource bundles are aggregated, the target bundle, the target bundle's resource bundle name, and this service's ranking:
 
-    * `"(bundle.symbolic.name=com.acme.web),(bundle.symbolic.name=com.acme.able.impl),(bundle.symbolic.name=com.acme.baker.impl)"`: The service aggregates resource bundles from bundles `bundle.symbolic.name=com.acme.web` (the current module) with `bundle.symbolic.name=com.acme.able.impl` and `bundle.symbolic.name=com.acme.baker.impl`.
+    - `"(bundle.symbolic.name=com.acme.web),(bundle.symbolic.name=com.acme.able.impl),(bundle.symbolic.name=com.acme.baker.impl)"`: The service aggregates resource bundles from bundles `bundle.symbolic.name=com.acme.web` (the current module) with `bundle.symbolic.name=com.acme.able.impl` and `bundle.symbolic.name=com.acme.baker.impl`.
 
-    Aggregate as many bundles as desired. Listed bundles are prioritized in descending order. 
+    Aggregate as many bundles as desired. Listed bundles are prioritized in descending order.
 
-    * `bundle.symbolic.name=com.acme.web;resource.bundle.base.name="content.Language"`: Override the `com.acme.web` bundle's resource bundle named `content.Language`.
+    - `bundle.symbolic.name=com.acme.web;resource.bundle.base.name="content.Language"`: Override the `com.acme.web` bundle's resource bundle named `content.Language`.
 
-    * `service.ranking=1`: The resource bundle's service ranking is `1`. The OSGi framework applies this service if it outranks all other resource bundle services that target `com.acme.web`'s `content.Language` resource bundle. 
+    - `service.ranking=1`: The resource bundle's service ranking is `1`. The OSGi framework applies this service if it outranks all other resource bundle services that target `com.acme.web`'s `content.Language` resource bundle.
 
-    * `servlet.context.name=com.acme.web`: The target resource bundle is in servlet context `com.acme.web`.
+    - `servlet.context.name=com.acme.web`: The target resource bundle is in servlet context `com.acme.web`.
+
+## Related Topics
+
+- [Localization](../../../../../system-administration/configuring-liferay/virtual-instances/localization.md)
+- [Upgrading Liferay](../../../../../installation-and-upgrades/upgrading-liferay.md)

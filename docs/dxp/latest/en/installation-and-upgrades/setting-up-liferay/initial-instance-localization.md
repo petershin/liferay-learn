@@ -46,7 +46,7 @@ If you have already launched DXP, change the instance's default language and tim
 
 ## Control Panel
 
-A virtual instance's default language and time zone can be modified using the instance's _Localization_ page. See [Configuring a Virtual Instance Localization](../../system-administration/configuring-liferay/virtual-instances/localization.md) for instructions.
+A virtual instance's default language and time zone can be modified using the instance's _Localization_ page. See [Localization](../../system-administration/configuring-liferay/virtual-instances/localization.md) for instructions.
 
 ## Conclusion
 
@@ -54,6 +54,7 @@ You have configured your DXP instance's default language and time zone. If want 
 
 ## Related Topics
 
-- [Configuring a Virtual Instance Localization](../../system-administration/configuring-liferay/virtual-instances/localization.md)
+- [Localization](../../system-administration/configuring-liferay/virtual-instances/localization.md)
+- [Site Localization](../../site-building/site-settings/site-localization.md)
 - [Overriding Global Language Translations with Language Properties](../../liferay-internals/extending-liferay/customizing-localization/overriding-global-language-translations-with-language-properties.md)
 - [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360028746692-Localizing-Your-Application)

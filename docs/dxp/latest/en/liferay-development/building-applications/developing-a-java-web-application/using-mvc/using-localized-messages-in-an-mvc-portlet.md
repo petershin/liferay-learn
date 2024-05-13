@@ -8,7 +8,7 @@ taxonomy-category-names:
 ---
 # Using Localized Messages in an MVC Portlet
 
-Liferay's localization framework is for creating localized messages in your MVC Portlet. 
+Liferay's localization framework is for creating localized messages in your MVC Portlet.
 
 ## Deploy the Sample Code
 
@@ -55,11 +55,11 @@ Then, follow these steps:
 
     ![The example shows locales for Portuguese and Japanese.](./using-localized-messages-in-an-mvc-portlet/images/02.png)
 
-Now you can see how it works. 
+Now you can see how it works.
 
 ## Create the Language Properties File
 
-Create a `Language.properties` file and add it to your module's `src/main/resources/content` folder. In the file define the keys to use in your MVC portlet. 
+Create a `Language.properties` file and add it to your module's `src/main/resources/content` folder. In the file define the keys to use in your MVC portlet.
 
 Language property files for other locales can also be included in the folder. For example, to include language keys for Japanese, add a `Language_ja.properties` file to the folder.
 
@@ -77,13 +77,13 @@ The example project includes a `view.jsp` file with a simple welcome message tha
 <h5><liferay-ui:message key="b6f5-portlet-welcome" /></h5>
 ```
 
-Note that there is an extra `liferay-ui:message` included in the example jsp file: 
+Note that there is an extra `liferay-ui:message` included in the example jsp file:
 
 ```jsp
 <liferay-ui:message key="supercalifragilisticexpialidocious" />
 ```
 
-This demonstrates that if no such key is found in the `Language.properties` file, the label appears instead. 
+This demonstrates that if no such key is found in the `Language.properties` file, the label appears instead.
 
 Learn more about tag libraries in [Liferay Tag Library Reference](https://learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/index.html). Each tag library has a list of attributes that can be passed to the tag.
 
@@ -102,7 +102,7 @@ As you create your custom MVC Portlet, make sure to include the language resourc
 )
 ```
 
-The example project includes this property to use the language resource bundle: 
+The example project includes this property to use the language resource bundle:
 
 ```java
 "javax.portlet.resource-bundle=content.Language"
@@ -113,3 +113,9 @@ The different locales are also defined for every language the portlet supports:
 ```java
 "javax.portlet.supported-locale=en_US,ja,pt_BR"
 ```
+
+## Related Topics
+
+- [Overriding Module Language Translation in Earlier Versions](../../../../liferay-internals/extending-liferay/customizing-localization/overriding-module-language-translations.md)
+- [Site Localization](../../../../site-building/site-settings/site-localization.md)
+- [Localizing Fragment Configuration Fields](../../../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/localizing-fragment-configuration-fields.md)

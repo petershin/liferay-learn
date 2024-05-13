@@ -98,3 +98,4 @@ Note that you can still choose to place some language keys in an individual modu
 ## Related Topics
 
 - [Aggregating Resource Bundles](./aggregating-resource-bundles.md)
+- [Overriding Module Language Translations in Earlier Versions](../../../../../liferay-internals/extending-liferay/customizing-localization/overriding-module-language-translations.md)

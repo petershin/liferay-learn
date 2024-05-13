@@ -14,7 +14,7 @@ taxonomy-category-names:
 !!! note
     Import/Export and filtering functionality in Liferay DXP 7.4 U17/Liferay Portal 7.4 GA17
 
-Use the Language Override tool to override existing translations or add new language keys and translations. Note that these overrides take place at the Instance level of [Configuration Scope](./understanding-configuration-scope.md). For previous Liferay versions, see [Overriding Global Language Translations with Language Properties](../../liferay-internals/extending-liferay/overriding-global-language-translations-with-language-properties.md).
+Use the Language Override tool to override existing translations or add new language keys and translations. Note that these overrides take place at the Instance level of [Configuration Scope](./understanding-configuration-scope.md). For previous Liferay versions, see [Overriding Global Language Translations with Language Properties](../../liferay-internals/extending-liferay/customizing-localization/overriding-global-language-translations-with-language-properties.md).
 
 ## Overriding a Translation
 
@@ -83,3 +83,9 @@ Language overrides can be easily imported or exported with language properties f
 1. To export, click the *Actions* (![Actions icon](../../images/icon-actions.png)) to the left of the Global Menu icon.
 
 1. Select *Export* and a ZIP file containing `Language.properties` files for each language with overrides will begin downloading.
+
+## Related Topics
+
+- [Overriding Global Language Translations with Language Properties](../../liferay-internals/extending-liferay/customizing-localization/overriding-global-language-translations-with-language-properties.md)
+- [Adding a Language](../../liferay-internals/extending-liferay/customizing-localization/adding-a-language.md)
+- [Automatically Generating Translations](../../liferay-internals/extending-liferay/customizing-localization/automatically-generating-translations.md)

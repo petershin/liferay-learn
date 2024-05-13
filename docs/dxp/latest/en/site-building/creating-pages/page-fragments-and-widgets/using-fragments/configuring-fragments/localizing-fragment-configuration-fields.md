@@ -9,12 +9,12 @@ uuid: 1cc044aa-72de-46fe-bfc4-af1ee6f72098
 ---
 # Localizing Fragment Configuration Fields
 
-> Available: Liferay DXP/Portal 7.4+
+{bdg-secondary}`Liferay DXP/Portal 7.4+`
 
 When using Liferay Fragments, you can localize the following Fragment configuration fields to match your target audience's language:
 
-* [Image Description (*alt text*)](#localizing-image-descriptions)
-* [Editable URLs](#localizing-editable-urls)
+- [Image Description (*alt text*)](#localizing-image-descriptions)
+- [Editable URLs](#localizing-editable-urls)
 <!-- * [Collection Filter Label Text](#localizing-collection-filter-label-text) -->
 
 During fragment development, you can use the `localizable` attribute to make a fragment's configuration field localizable. For more information, read the [Fragment Specific Tags and Attributes Reference](../../../../developer-guide/reference/fragments/fragment-specific-tags-reference.md).
@@ -25,9 +25,8 @@ You can add localization in different languages for the image description (also 
 
 ![You can localize the Image Description in the Content Page editor.](./localizing-fragment-configuration-fields/images/01.png)
 
-```{tip}
-Localizable fields show a flag icon next to their Image Descriptions. 
-```
+!!! tip
+    Localizable fields show a flag icon next to their Image Descriptions.
 
 If the Image Description doesn't have a translation, the description shows the default Content Page language.
 
@@ -47,3 +46,4 @@ You can localize links you enter manually and links from a content field. If the
 - [Using Content Pages](../../../using-content-pages.md)
 - [Content Page Editor UI Reference](../../../using-content-pages/content-page-editor-ui-reference.md)
 - [Using Fragments](../../using-fragments.md)
+- [Site Localization](../../../../../site-building/site-settings/site-localization.md)

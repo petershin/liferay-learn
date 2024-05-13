@@ -49,5 +49,6 @@ While enabled, you can use the language selector button to localize the field's 
 
 ## Related Topics
 
-* [Creating Objects](./creating-objects.md)
-* [Understanding Object Integrations](../understanding-object-integrations.md)
+- [Creating Objects](./creating-objects.md)
+- [Understanding Object Integrations](../understanding-object-integrations.md)
+- [Site Localization](../../../site-building/site-settings/site-localization.md)

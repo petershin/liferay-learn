@@ -201,7 +201,9 @@ The example `Provide-Capability` header has two parts:
 
 Search the results for resource bundle aggregate services whose ranking is higher.
 
-## Related Information
+## Related Topics
 
-- [Overriding Global Language Translations with Language Properties](./overriding-global-language-translations-with-language-properties.md)
-- [Changing Translations with Language Override](../../../system-administration/configuring-liferay/changing-translations-with-language-override.md)
+- [Changing Translations with Language Override](../../system-administration/configuring-liferay/changing-translations-with-language-override.md)
+- [Using Localized Messages in an MVC Portlet](../../../liferay-development/building-applications/developing-a-java-web-application/using-mvc/using-localized-messages-in-an-mvc-portlet.md)
+- [Aggregating Resource Bundles](../../../liferay-development/building-applications/developing-a-java-web-application/using-mvc/using-localized-messages-in-an-mvc-portlet/aggregating-resource-bundles.md)
+- [Renamed Language Keys](../../../installation-and-upgrades/upgrading-liferay/reference/renamed-language-keys.md)

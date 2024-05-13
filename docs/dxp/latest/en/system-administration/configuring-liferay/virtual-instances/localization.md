@@ -26,3 +26,5 @@ Use the left and right arrow buttons to move a language from Current (configured
 ## Related Topics
 
 - [Initial Instance Localization](../../../installation-and-upgrades/setting-up-liferay/initial-instance-localization.md)
+- [Site Localization](../../../site-building/site-settings/site-localization.md)
+- [Changing Translations with Language Override](../changing-translations-with-language-override.md)

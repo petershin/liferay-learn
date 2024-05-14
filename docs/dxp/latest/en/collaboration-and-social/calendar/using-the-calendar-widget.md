@@ -163,7 +163,7 @@ Here's a list of calendar permissions:
 | Manage Events      | Grants the ability to manage events. This includes deleting, editing, and updating them. |
 | View Event Details | Grants the ability to view event details by using the View Details button.               |
 | Update             | Grants the ability to access the calendar settings and update general calendar settings. |
-| View               | Grants the ability to view the calendar portlet/widget.                                  |
+| View               | Grants the ability to view the calendar.                                                 |
 
 ## Related Topics
 

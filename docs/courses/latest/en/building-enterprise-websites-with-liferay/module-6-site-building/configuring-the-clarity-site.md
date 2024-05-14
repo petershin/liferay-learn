@@ -55,9 +55,28 @@ Enabling the accessibility menu provides users access to these configurations,
 
 Accessibility is a core principle that should be woven into the design and development of any public site. And just like Clarity offers premium eyewear for all, their website should be equally inclusive. Enabling the accessibility menu is a good start, but we'll revisit this topic throughout the course.
 
-## Exercise: Configuring the Site
+## Exercise One: Adding Users to the Site
 
-Now, let’s configure these site settings. While logged in as Walter Douglas,
+1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Users and Organizations*.
+
+1. Click Walter Douglas to begin editing his profile.
+
+1. Go to the *Memberships* tab, click *Select* for Sites, and select *Clarity Public Enterprise Website*.
+
+1. Click *Save*.
+
+1. Repeat this step for Clarity's other users.
+
+Great! Now the Clarity personas are members of the new site. Next, we'll log in as Walter Douglas, to configure the new site.
+
+## Exercise Two: Configuring the Site
+
+To configure the site settings,
+
+1. Sign in as Walter Douglas.
+
+   Email: `walter.douglas@clarityvisionsolutions.com`
+   Password: `learn`
 
 1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)), expand *Configuration*, and select *Site Settings*.
 

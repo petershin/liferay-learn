@@ -16,9 +16,9 @@ uuid: ce0a8b5e-a09a-49bf-98c5-47ff980b6a7c
 
 You can set your Site's default language. You can also define a Site's enabled languages:
 
-1. In the [Site Settings UI](./site-settings-ui-reference.md#language), click on the Languages tab.
+1. Go to *[Site Settings](./site-settings-ui-reference.md#language)* &rarr; *Localization*.
 
-    ![In the Site settings, click on the Languages tab.](./site-localization/images/01.png)
+    ![In the site settings, click on Localization.](./site-localization/images/01.png)
 
 1. Click *Define a custom default language and additional available languages for this site*.
 
@@ -30,7 +30,7 @@ You can set your Site's default language. You can also define a Site's enabled l
 
     ![Choose which additional languages are enabled](./site-localization/images/03.png)
 
-1. Use the left and right arrow buttons to enable or disable additional languages.
+1. Use the left and right arrow buttons to disable or enable additional languages respectively.
 
 1. Click the *Save* button to save any changes.
 

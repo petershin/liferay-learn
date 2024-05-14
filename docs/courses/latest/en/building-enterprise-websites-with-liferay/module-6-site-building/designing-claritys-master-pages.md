@@ -214,7 +214,6 @@ While editing the master page template,
    |:--------------------|:-------------|
    | Header Branding     | Image        |
    | Header Navigation   | Menu Display |
-   | Header User Actions | N/A          |
 
    Leave the Header User Actions container empty for now, since no out of the box fragments fit Clarity’s designs for the search bar or login button. You’ll create these fragments later.
 

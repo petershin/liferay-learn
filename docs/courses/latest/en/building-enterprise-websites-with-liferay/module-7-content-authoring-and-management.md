@@ -12,10 +12,11 @@ uuid: 995cbe20-0caf-478b-ae3c-edea06211e7c
 In the previous module, you learned about some of the tools, techniques, and best practices for building sites with Liferay. Clarity now has an enterprise marketing website mapped out, styled, and structured, but they don't have any content to populate it. Fortunately, Liferay offers a suite of features for authoring and managing content that you can leverage to bring the site to life. In this module, we'll introduce you to several out-of-the-box capabilities with which you can manage Clarity's content:
 
 - Asset Libraries
-- Web Content Structures, and Templates
-- Forms
+- Web Content Structures and Templates
 - Catalogs, Products, and Channels
 - Tags, Categories, and Collections
+- Building Forms
+- Displaying Content
 - Publications and Workflow
 - Segments, Experiences, and A/B Testing
 

@@ -11,87 +11,69 @@ In the context of content management, digital assets are any files or media you 
 
 Asset libraries declutter digital asset management by providing a collaborative hub for adding, editing, and sharing assets among multiple sites and users. Permissions and version control ensure that assets are accessible by the right people and kept up to date with the latest changes, all while maintaining security and transparency across the organization. Asset libraries can be structured with folders and tags, and they integrate seamlessly with Liferay’s other content management features.
 
-## Exercise One: Creating an Asset Library
-
-Clarity needs a catalog of images approved by the marketing team for the website designers to use in order to make sure they aren't including unauthorized assets in the web pages. Since you now understand what asset libraries are and how they can be used, let's create one for Clarity and add a set of approved images to it.
+## Exercise One: Creating Asset Libraries
 
 1. Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Applications_ &rarr; _Content_ &rarr; _Asset Libraries_.
 
-   ![The Asset Libraries menu can be accessed from the Global Menu.](./managing-claritys-digital-assets/images/02.png)
+1. Click _New_ and enter the name “Clarity Branding and Logo”. Click _Save_.
 
-   <!-- TODO: Update screenshot above. The newer versions of Liferay replace the Add button icon. Instead of being a plus sign, it's now a text with the word "New". The Clarity Site Initializer is, as of now, using an older version. -->
+1. In the asset library configuration page, navigate to _Sites_ in the sidebar menu.
 
-1. Click _New_ to create an asset library, then name it `Marketing Images`.
+1. In _Connected Sites_, click _Add_ and select “Clarity Public Enterprise Website.” 
 
-1. Update these fields in the library's configuration menu:
+1. Navigate to _General_ in the sidebar menu and click _Save_.
 
-   | Field              | Value                                                                            |
-   |:-------------------|:---------------------------------------------------------------------------------|
-   | Description        | List of images that have been approved by marketing for use on public websites. |
-   | Applications       | Disable all, except `Documents and Media`                                        |
-   | Enable Auto Tagging | `disabled`                                                                       |
+1. Return to the _Asset Libraries_ page. Click “Clarity Branding and Logo” to enter the management screen for the new asset library.
 
-   ![An asset library's basic information can be configured in the General page.](./managing-claritys-digital-assets/images/03.png)
+1. Select _Documents and Media_ &rarr; _New_ &rarr; _Multiple Files Upload_. 
 
-1. Click _Save_.
+1. Extract the images from `enablement-bootcamp-clarity/exercises/module-7-content-authoring-and-management/clarity-branding-and-logo.zip`
 
-1. Navigate back to the Asset Libraries menu, then open the library's menu page by selecting `Marketing Images`.
+1. Upload the images and then click _Publish_.
 
-   ![The library's menu can be accessed to make use of its functionalities.](./managing-claritys-digital-assets/images/04.png)
+1. Repeat steps 1-7 to create the following asset libraries. Be sure to upload the images from the corresponding zip file for each asset library.
+   - “Error Pages”
+   - “Leadership Headshots”
+   - “Marketing Assets”
+   - “Product Images”
 
-   Here you can access the library's active applications to create and manage content. You can also enable staging, implement custom workflows, categorize content using tags and categories, and more.
+You should now have five asset libraries of image content with which you can populate Clarity’s web pages.
 
-1. Select the _Documents and Media_ application.
 
-1. Upload some images of your choice into the library.
+## Exercise Two: Adding Clarity’s Logo to the Master Pages
 
-<!-- TODO: Replace above with "Download the sample images and upload them into the library." and add the link to the sample images -->
+1. Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Sites_ &rarr; _Clarity Public Enterprise Website_.
 
-   ![Uploaded images are saved in the library's documents and media application.](./managing-claritys-digital-assets/images/05.png)
+1. Navigate to _Site Menu_ &rarr; _Design_ &rarr; _Page Templates_ &rarr; _Masters_.
 
-Content added to an asset library can be accessed from connected sites and used in multiple scenarios, such as displaying content in fragments, adding it to web articles, and more.
+1. Click “Primary Master Page” to enter the page template editor.
 
-## Exercise Two: Linking Asset Library to Site
+1. In the sidebar menu on the left, select _Browser_.
 
-Having successfully created and populated the Marketing Images library with content (as completed in Exercise 1), the next step is to link it with Clarity's website. This will enable Clarity's website designers to browse and use the library's content in the item selector.
+1. Navigate to _Page Header_ &rarr; _Header Navigation Bar_ &rarr; _Grid_.
 
-Let's connect the asset library to Clarity's main site, then change a blog's cover image using the library's content.
+1. Select the first _Module_ &rarr; _Header Branding_ &rarr; _Image_ &rarr; _image-square_. Note: You can double-click on the _Image_ component in the header to navigate directly to this point.
 
-1. Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Applications_ &rarr; _Content_ &rarr; _Asset Libraries_.
+1. In the menu on the right, click the + sign next to _Image_ to open the image selection window.
 
-1. Click _Actions_ (![Actions](../../images/icon-actions.png)) under Marketing Images and select _Edit_.
+1. Click _Sites and Libraries_ in the breadcrumb menu, then select the _Asset Library_ tab. You should now see the five asset libraries you created in the previous exercise.
 
-1. Go to _Sites_ at the left-side menu.
+1. Select “Clarity Branding and Logo” and then select “logo-name-vector” to add the image to the header.
 
-1. Click _Add_ and select Clarity's site to connect it with the asset library.
+1. In the _Browser_ menu, navigate to _Page Footer_ &rarr; _Footer Branding_ &rarr; _Image_ &rarr; _image-square_.
 
-   ![An asset library can be connected to multiple sites.](./managing-claritys-digital-assets/images/06.png)
+1. Repeat steps 7-9 to add the image named “logo-full-name-vector” to the footer.
 
-1. Navigate back to Clarity website's main page, open the _Product Menu_ (![Product Menu](../../images/icon-product-menu.png)), then go to _Content & Data_ &rarr; _Blogs_.
+1. Select _Publish Master_ to save your changes to the master page template. 
 
-1. Select a blog of your choice and start editing it.
+The header and footer images will now be displayed on all pages that use the Primary Master Page.
 
-1. Click _Change Image_ in the cover image panel.
-
-   ![A blog's cover image can be changed with the item selector.](./managing-claritys-digital-assets/images/07.png)
-
-1. In the item selector, navigate to the _Document and Media_ tab, then use the breadcrumb to go to _Sites and Libraries_.
-
-   ![You can navigate through the item selector to an asset library's menu.](./managing-claritys-digital-assets/images/08.png)
-
-1. Navigate to the _Asset Library_ tab and select _Marketing Images_.
-
-1. Finally, choose an image in the item selector, then click _Publish_ at the bottom of the editing page.
-
-   ![The blog's cover image will be replaced with the chosen option from an asset library.](./managing-claritys-digital-assets/images/09.png)
-
-After completing these steps, the blog's cover image will be replaced with your chosen option from the asset library.
 
 ## Conclusion
 
 This concludes *Managing Clarity’s Digital Assets*. With your asset library in place, you can learn more about creating content from scratch with Liferay.
 
-Next Up: [Creating Content for Clarity’s Pages](./creating-content-for-clarity’s-pages.md)
+Next Up: [Creating Clarity's Web Content](./creating-claritys-web-content.md)
 
 ## Additional Resources
 

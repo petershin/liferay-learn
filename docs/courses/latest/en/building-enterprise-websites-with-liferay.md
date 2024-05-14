@@ -6,7 +6,7 @@ toc:
 - ./building-enterprise-websites-with-liferay/module-4-identity-management-and-sso.md
 - ./building-enterprise-websites-with-liferay/module-5-users-and-permissions.md
 - ./building-enterprise-websites-with-liferay/module-6-site-building.md
-- ./building-enterprise-websites-with-liferay/module-7.md
+- ./building-enterprise-websites-with-liferay/module-7-content-authoring-and-management.md
 - ./building-enterprise-websites-with-liferay/module-8-headless-delivery.md
 - ./building-enterprise-websites-with-liferay/module-9-search.md
 - ./building-enterprise-websites-with-liferay/module-10-building-applications.md
@@ -94,9 +94,9 @@ Learn the fundamentals of building Liferay websites, designing effective page la
 :::
 
 :::{grid-item-card}  Module 7: Content Authoring & Management
-:link: ./building-enterprise-websites-with-liferay/module-7.md
+:link: ./building-enterprise-websites-with-liferay/module-7-content-authoring-and-management.md
 
-Coming Soon
+Learn about Liferay's core features for creating, managing, and displaying content.
 :::
 
 :::{grid-item-card}  Module 8: Headless Delivery

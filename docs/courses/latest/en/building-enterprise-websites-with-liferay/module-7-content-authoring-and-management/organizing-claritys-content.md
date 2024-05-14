@@ -103,9 +103,6 @@ If you were able to categorize your FAQ web content articles successfully, you c
     - “FAQ - Pricing & Ordering”
     - “FAQ - Returns & Exchanges”
 
-## Exercise Four: Tagging Content (BONUS)
-
-<!--TODO: Tags don’t really apply to the FAQ use case, so this might be more of a standalone exercise-->
 
 
 

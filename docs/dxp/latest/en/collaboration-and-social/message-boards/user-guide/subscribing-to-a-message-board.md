@@ -35,4 +35,4 @@ Message Boards can be published as [RSS](https://en.wikipedia.org/wiki/RSS) feed
 ## Related Topics
 
 * [Configuring a Message Boards Category Mailing List](./configuring-a-message-boards-category-mailing-list.md)
-* [Configuring Mail](../../../installation-and-upgrades/setting-up-liferay/configuring-mail.md)
+* [Configuring Mail](https://learn.liferay.com/w/dxp/installation-and-upgrades/setting-up-liferay/configuring-mail)

@@ -9,7 +9,7 @@ taxonomy-category-names:
 ---
 # Managing Notifications and Requests
 
-Users receive notifications and requests if they have subscribed to a blog or message board or are [mentioned](./mentioning-users.md) in a post. They may also be notified if someone sent them a private message, invitation to join a site, or an event reminder. Lastly, users are notified to review content and asset creation when those activities are used with Liferay's built-in [Workflow](../../../process-automation/workflow/introduction-to-workflow.md) capabilities.
+Users receive notifications and requests if they have subscribed to a blog or message board or are [mentioned](./mentioning-users.md) in a post. They may also be notified if someone sent them a private message, invitation to join a site, or an event reminder. Lastly, users are notified to review content and asset creation when those activities are used with Liferay's built-in [Workflow](https://learn.liferay.com/w/dxp/process-automation/workflow/introduction-to-workflow) capabilities.
 
 To access notifications and requests:
 

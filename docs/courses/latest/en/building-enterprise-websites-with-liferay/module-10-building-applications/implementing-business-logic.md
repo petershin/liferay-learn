@@ -270,9 +270,9 @@ Next Up: [Designing User Interfaces](./designing-user-interfaces.md)
 
 ## Additional Resources
 
-* [Client Extensions](https://learn.liferay.com/web/guest/w/dxp/building-applications/client-extensions)
-* [Object Validations](https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/validations)
+* [Client Extensions](https://learn.liferay.com/w/dxp/liferay-development/client-extensions)
+* [Object Validations](https://learn.liferay.com/w/dxp/liferay-development/objects/creating-and-managing-objects/validations)
 * [Roles and Permissions](https://learn.liferay.com/w/dxp/users-and-permissions/roles-and-permissions)
-* [Object States](https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/fields/adding-and-managing-custom-states)
-* [Enabling Workflow for Objects](https://learn.liferay.com/w/dxp/building-applications/objects/enabling-workflows-for-objects)
-* [Object Actions](https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/actions)
+* [Object States](https://learn.liferay.com/w/dxp/liferay-development/objects/creating-and-managing-objects/fields/adding-and-managing-custom-states)
+* [Enabling Workflow for Objects](https://learn.liferay.com/w/dxp/liferay-development/objects/enabling-workflows-for-objects)
+* [Object Actions](https://learn.liferay.com/w/dxp/liferay-development/objects/creating-and-managing-objects/actions)

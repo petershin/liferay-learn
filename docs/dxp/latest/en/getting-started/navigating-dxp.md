@@ -25,7 +25,7 @@ These are some common site building and management activities that can be done i
 - [Adding pages](../site-building/creating-pages/adding-pages/adding-a-page-to-a-site.md)
 - [Creating content](../content-authoring-and-management.md)
 - [Managing site memberships](../site-building/sites/site-membership/adding-members-to-sites.md)
-- [Configuring and optimizing site behavior and functionality](../site-building.html)
+- [Configuring and optimizing site behavior and functionality](../site-building.md)
 
 ## Applications Bar
 
@@ -105,7 +105,7 @@ Beginning in Liferay 7.3 CE GA6 and Liferay DXP 7.3 GA1, Liferay Commerce 3.0 is
 Here are some functions that can be managed from Liferay Commerce:
 
 - [Creating a New Catalog](https://learn.liferay.com/w/commerce/product-management/catalogs/creating-a-new-catalog)
-- [Creating a New Channel](https://learn.liferay.com/w/commerce/starting-a-store/channels/managing-channels)
+- [Creating a New Channel](https://learn.liferay.com/web/guest/w/commerce/store-management/channels/managing-channels)
 - [Manage Inventory](https://learn.liferay.com/w/commerce/inventory-management)
 - [Process Orders](https://learn.liferay.com/w/commerce/order-management/orders/processing-an-order)
 

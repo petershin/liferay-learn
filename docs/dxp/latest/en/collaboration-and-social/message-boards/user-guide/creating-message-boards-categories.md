@@ -28,7 +28,7 @@ The most common way to add a new category is by directly using the _Message Boar
 
     ![Select a display style.](./creating-message-boards-categories/images/04.png)
 
-1. In the _Mailing List_ section, leave the _Active_ toggle to _NO_ to disable a mailing list for the category. If switched to _YES_, fill in the mail server settings. For more information, see the [Setting up Mail](../../../installation-and-upgrades/setting-up-liferay/configuring-mail.md) article.
+1. In the _Mailing List_ section, leave the _Active_ toggle to _NO_ to disable a mailing list for the category. If switched to _YES_, fill in the mail server settings. For more information, see the [Setting up Mail](https://learn.liferay.com/w/dxp/installation-and-upgrades/setting-up-liferay/configuring-mail) article.
 1. Leave the _Allow Anonymous Emails_ toggle to _NO_ to prevent anonymous users from posting to the category. Otherwise, if you want to allow anonymous users to send emails and post to the category, toggle the switch to _YES_.
 
     ![Configure the message board category.](./creating-message-boards-categories/images/02.png)

@@ -83,7 +83,7 @@ Piwik 구성에서 스크립트 시작 및 종료 태그를 포함한 전체 스
 
 ### 써드파티
 
-Liferay Commerce에 대한 PunchOut2Go 사이트 설정을 구성합니다. 자세한 내용은 [Liferay Commerce Connector to PunchOut2Go 참조 안내서](https://learn.liferay.com/w/commerce/add-ons-and-connectors/liferay-commerce-connector-to-punchout2go-reference-guide) 을 참조하십시오.
+Liferay Commerce에 대한 PunchOut2Go 사이트 설정을 구성합니다. 자세한 내용은 [Liferay Commerce Connector to PunchOut2Go 참조 안내서](https://learn.liferay.com/web/guest/w/commerce/add-ons-and-connectors/punchout2go/liferay-commerce-connector-to-punchout2go-reference-guide) 을 참조하십시오.
 
 ### 타사 애플리케이션
 

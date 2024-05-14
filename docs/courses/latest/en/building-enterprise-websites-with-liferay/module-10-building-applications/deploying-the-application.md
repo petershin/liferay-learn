@@ -3,7 +3,7 @@ uuid: 7600c13a-c687-4637-97ca-abac89b05107
 ---
 # Deploying the Application
 <!-- TASK: RENAME ARTICLE TO "Deploying Clarity's Application" or "Setting Up Clarity's Workspace"-->
-Clarity's development team has been working on implementing their distributor onboarding solution. Throughout this process, they've used low-code features like [Objects](https://learn.liferay.com/w/dxp/building-applications/objects), [Picklists](https://learn.liferay.com/w/dxp/building-applications/objects/picklists), and [Workflows](https://learn.liferay.com/w/dxp/process-automation/workflow/). They have also leveraged page builder features to design a dynamic, responsive user interface for their custom application. Additionally, they've created a microservice client extension to help automate their onboarding workflow.
+Clarity's development team has been working on implementing their distributor onboarding solution. Throughout this process, they've used low-code features like [Objects](https://learn.liferay.com/w/dxp/building-applications/objects), [Picklists](https://learn.liferay.com/w/dxp/liferay-development/objects/picklists), and [Workflows](https://learn.liferay.com/w/dxp/process-automation/workflow/). They have also leveraged page builder features to design a dynamic, responsive user interface for their custom application. Additionally, they've created a microservice client extension to help automate their onboarding workflow.
 
 While most parts of the solution are complete, some features remain unfinished. Throughout this module, you'll take on the role of Ian Miller and contribute to Clarity's solution. But before you can do that, let's get your working environment set up.
 
@@ -138,8 +138,8 @@ Next Up: [Modeling Data Structures](./modeling-data-structures.md)
 
 ## Additional Resources
 
-* [Objects](https://learn.liferay.com/en/w/dxp/building-applications/objects)
-* [Picklists](https://learn.liferay.com/w/dxp/building-applications/objects/picklists)
+* [Objects](https://learn.liferay.com/w/dxp/liferay-development/objects)
+* [Picklists](https://learn.liferay.com/w/dxp/liferay-development/objects/picklists)
 * [Liferay Workspace](https://learn.liferay.com/web/guest/w/dxp/building-applications/tooling/liferay-workspace)
-* [Client Extensions](https://learn.liferay.com/w/dxp/building-applications/client-extensions)
+* [Client Extensions](https://learn.liferay.com/w/dxp/liferay-development/client-extensions)
 * [Deploying Client Extensions](https://learn.liferay.com/w/dxp/building-applications/client-extensions/working-with-client-extensions#deploying-to-your-liferay-instance)

@@ -3,8 +3,8 @@ toc:
   - ./understanding-pages/other-page-types.md
   - ./understanding-pages/types-of-utility-pages.md
 taxonomy-category-names:
-- Sites
 - Pages and Composition
+- Sites
 - Liferay Self-Hosted
 - Liferay PaaS
 - Liferay SaaS

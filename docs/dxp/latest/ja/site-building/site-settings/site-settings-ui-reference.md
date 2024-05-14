@@ -83,7 +83,7 @@ Piwikの設定では、スクリプトの開始タグと終了タグを含む完
 
 ### サードパーティー
 
-Liferay CommerceのPunchOut2Go Site設定を行います。 詳細は、 [Liferay Commerce Connector to PunchOut2Goのリファレンスのガイド](https://learn.liferay.com/w/commerce/add-ons-and-connectors/liferay-commerce-connector-to-punchout2go-reference-guide) を参照してください。
+Liferay CommerceのPunchOut2Go Site設定を行います。 詳細は、 [Liferay Commerce Connector to PunchOut2Goのリファレンスのガイド](https://learn.liferay.com/web/guest/w/commerce/add-ons-and-connectors/punchout2go/liferay-commerce-connector-to-punchout2go-reference-guide) を参照してください。
 
 ### サードパーティアプリケーション
 

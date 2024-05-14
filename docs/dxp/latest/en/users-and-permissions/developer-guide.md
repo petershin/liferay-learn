@@ -19,13 +19,13 @@ taxonomy-category-names:
 ---
 # Developer Guide
 
-- [Adding the UAD Framework](./developer-guide/adding-the-uad-framework.md)
-- [Accounts API Basics](./developer-guide/accounts-api-basics.md)
-- [Account Users and Roles APIs](./developer-guide/account-users-and-roles-apis.md)
-- [User Account API Basics](./developer-guide/user-account-api-basics.md)
-- [Organizations API Basics](./developer-guide/organizations-api-basics.md)
-- [Roles API Basics](./developer-guide/roles-api-basics.md)
-- [User Groups API Basics](./developer-guide/user-groups-api-basics.md)
-- [Countries API Basics](./developer-guide/countries-api-basics.md)
-- [Regions API Basics](./developer-guide/regions-api-basics.md)
-- [Postal Address API Basics](./developer-guide/postal-address-api-basics.md)
+- [Adding the UAD Framework](https://learn.liferay.com/w/dxp/users-and-permissions/developer-guide/adding-the-uad-framework)
+- [Accounts API Basics](https://learn.liferay.com/w/dxp/users-and-permissions/developer-guide/accounts-api-basics)
+- [Account Users and Roles APIs](https://learn.liferay.com/w/dxp/users-and-permissions/developer-guide/account-users-and-roles-apis)
+- [User Account API Basics](https://learn.liferay.com/w/dxp/users-and-permissions/developer-guide/user-account-api-basics)
+- [Organizations API Basics](https://learn.liferay.com/w/dxp/users-and-permissions/developer-guide/organizations-api-basics)
+- [Roles API Basics](https://learn.liferay.com/w/dxp/users-and-permissions/developer-guide/roles-api-basics)
+- [User Groups API Basics](https://learn.liferay.com/w/dxp/users-and-permissions/developer-guide/user-groups-api-basics)
+- [Countries API Basics](https://learn.liferay.com/w/dxp/users-and-permissions/developer-guide/countries-api-basics)
+- [Regions API Basics](https://learn.liferay.com/w/dxp/users-and-permissions/developer-guide/regions-api-basics)
+- [Postal Address API Basics](https://learn.liferay.com/w/dxp/users-and-permissions/developer-guide/postal-address-api-basics)

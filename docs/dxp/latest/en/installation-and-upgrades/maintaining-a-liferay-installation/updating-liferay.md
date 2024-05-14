@@ -77,7 +77,7 @@ Liferay Workspace offers configuration management by using environment subfolder
 
       ../configs/dev/tomcat-9.0.56/conf/server.xml 
 
-See [Creating Deployment Environments](../../building-applications/tooling/liferay-workspace/configuring-liferay-workspace.html#creating-deployment-environments) for more information.
+See [Creating Deployment Environments](../../liferay-development/tooling/liferay-workspace/creating-deployment-environments.md) for more information.
 
 Once your environments are set up, you can use a Gradle task to generate a bundle. Use `distBundleZip` or `distBundleTar` to generate a specific bundle for a defined environment. For example: 
 

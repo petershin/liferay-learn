@@ -31,7 +31,7 @@ uuid: 7d1a4e73-0b50-465f-99dc-c531c3f3dd25
 [Configuring Your Github Repository](./getting-started/configuring-your-github-repository.md)
 :::
 
-:::{grid-item-card} Platform
+:::{grid-item-card} Platform Services
 :link: ./platform-services.md
 
 [Backup Service Overview](./platform-services/backup-service/backup-service-overview.md)

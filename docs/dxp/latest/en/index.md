@@ -38,9 +38,9 @@ Welcome to the official documentation for the latest versions (7.3 and 7.4+) of 
 :::{grid-item-card} Site Building
 :link: ./site-building.md
 
-[Adding a Site](./site-building/adding-a-site.md)
-[Understanding Pages](./site-building/understanding-pages.md)
-[Using Content Pages](./site-building/using-content-pages.md)
+[Adding a Site](./site-building/sites/adding-a-site.md)
+[Understanding Pages](./site-building/creating-pages/understanding-pages.md)
+[Using Content Pages](./site-building/creating-pages/using-content-pages.md)
 :::
 
 :::{grid-item-card} Content Authoring and Management

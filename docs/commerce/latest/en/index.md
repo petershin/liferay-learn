@@ -31,11 +31,11 @@ uuid: 7e5ff1c5-105e-4021-8b5f-98b7e12ae3f5
 :::
 
 :::{grid-item-card} Starting a Store
-:link: ./installation-and-upgrades.md
+:link: ./starting-a-store.md
 
-[Introduction to Liferay Commerce](./installation-and-upgrades/installation-overview.md)
-[Activating Liferay Commerce Enterprise](./installation-and-upgrades/activating-liferay-commerce-enterprise.md)
-[Upgrading Liferay Commerce](./installation-and-upgrades/upgrading-liferay-commerce.md)
+[Introduction to Liferay Commerce](./starting-a-store/introduction-to-liferay-commerce.md)
+[Introduction to the Admin Account](./starting-a-store/introduction-to-the-admin-account.md)
+[Store Setup Overview](./starting-a-store/store-setup-overview.md)
 :::
 
 :::{grid-item-card} Product Management

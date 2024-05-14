@@ -43,6 +43,41 @@ By default, the [`portal.properties`](https://github.com/liferay/liferay-portal/
     </servlet-mapping>
     ```
 
+1. Create or modify your `portal-ext.properties` file in your installation's [Liferay Home](../../../installation-and-upgrades/reference/liferay-home.md) folder. Note, this file overrides the enabled default locales defined in the `portal.properties` file. Therefore list all the languages you plan to use in the `portal-ext.properties` file. Define both `locales` and `locales.enabled`. For example:
+
+    ```properties
+    locales=am_ET,ar_SA,fa_IR,en_US,zh_CN,ja_JP
+    locales.enabled=am_ET,ar_SA,fa_IR,en_US,zh_CN,ja_JP
+    ```
+
+1. Add the language keys for your new language. You can do this in three ways:
+
+   - Use the [Language Override tool](#adding-language-keys-with-the-language-override-tool). This is the recommended method of adding new language keys since {bdg-secondary}`Liferay DXP 7.4 U4/Portal 7.4 GA8.`.
+
+   - Use a [language module](#adding-language-keys-with-a-language-module) and write your language keys in a language.properties file. This method offers more control over the language settings such as writing direction and name structure.
+
+   - Generate translations automatically with the [Language Builder tool](./automatically-generating-translations.md). Some translations may not be exact and should be overridden manually with the [Language Override tool](../../../system-administration/configuring-liferay/changing-translations-with-language-override.md).
+
+1. Navigate to *Control Panel* &rarr; *Instance Settings* &rarr; *Localization*. Verify and move the new language to the current languages. Click *Save*.
+
+    ![Save your new language to the list of current languages.](./adding-a-language/images/01.png)
+
+1. Change your default language to the new language and click *Save*. The new language is now used by the Liferay instance.
+
+    ![The sign-in panel is in Amharic.](./adding-a-language/images/02.png)
+
+### Adding Language Keys with the Language Override Tool
+
+1. Navigate to the [Language Override](../../../system-administration/configuring-liferay/changing-translations-with-language-override.md) page.
+
+1. Search for the language key you want to change and click it.
+
+1. Input the value you want to override.
+
+    ![Input translated value under the chosen language](./adding-a-language/images/03.png)
+
+### Adding Language Keys with a Language Module
+
 1. Create your `language.properties` file for your language and use the ISO code in your file name. For example `Language_am.properties` for Amharic:
 
     ```properties
@@ -59,26 +94,11 @@ By default, the [`portal.properties`](https://github.com/liferay/liferay-portal/
 
 1. Create a language module with the `language.properties` file you created and deploy the module to your Liferay installation. See [Overriding Global Language Translations with Language Properties](./overriding-global-language-translations-with-language-properties.md) to see a sample project and specific instructions on creating this module.
 
-1. Create or modify your `portal-ext.properties` file in your installation's [Liferay Home](../../../installation-and-upgrades/reference/liferay-home.md) folder. Note, this file overrides the enabled default locales defined in the `portal.properties` file. Therefore list all the languages you plan to use in the `portal-ext.properties` file. Define both `locales` and `locales.enabled`. For example:
-
-    ```properties
-    locales=am_ET,ar_SA,fa_IR,en_US,zh_CN,ja_JP
-    locales.enabled=am_ET,ar_SA,fa_IR,en_US,zh_CN,ja_JP
-    ```
-
-1. Once the module is deployed, navigate to *Control Panel* &rarr; *Instance Settings* &rarr; *Localization*. Verify and move the new language to the current languages. Click *Save*.
-
-    ![Save your new language to the list of current languages.](./adding-a-language/images/01.png)
-
-1. Change your default language to the new language and click *Save*. The new language is now used by the Liferay instance.
-
-    ![Select and use the new language for your Liferay instance.](./adding-a-language/images/02.png)
-
 ## Changing the Writing Direction
 
 When adding a language that writes from right to left, add the following property to your language properties:
 
-```
+```properties
 lang.dir=rtl
 ```
 
@@ -90,7 +110,7 @@ This might affect the site's CSS in unexpected ways. You can prevent CSS rules f
 }
 ```
 
-You can also use the `.rtl` CSS selector to apply rules exclusively to RTL languages.
+You can also use the `.rtl` CSS selector to apply rules exclusively to RTL languages. For more information on customizing language settings, see [Overriding Global Language Translations with Language Properties](./overriding-global-language-translations-with-language-properties.md)
 
 ## Adding a Flag Icon
 
@@ -135,11 +155,11 @@ The example below adds the Ethiopian flag to represent the Amharic language.
 
 1. Create a new Blank Page and add a Language Selector fragment. Your language has no flag icon.
 
-   ![The created language has no flag.](./adding-a-language/images/03.png)
+   ![The created language has no flag.](./adding-a-language/images/04.png)
 
 1. Add your client extension and publish the page. Your flag now appears on the Language Selector.
 
-   ![The Language Selector shows the icon from your client extension.](./adding-a-language/images/04.png)
+   ![The Language Selector shows the icon from your client extension.](./adding-a-language/images/05.png)
 
 Use this client extension on every page or page template where you want your flag visible. For more information on Theme Sprite Map Client Extensions, see [Using a Theme Sprite Map Client Extension](../../../liferay-development/customizing-liferays-look-and-feel/using-a-theme-spritemap-client-extension.md).
 

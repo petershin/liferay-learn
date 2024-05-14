@@ -117,7 +117,7 @@ While logged in as Walter Douglas,
 
 1. Select *Blank*.
 
-1. For name, enter `Leader Profile`.
+1. For name, enter `Leadership Profile`.
 
 1. For content type, select *Web Content Article*
 
@@ -143,7 +143,6 @@ While logged in as Walter Douglas,
    |:-------------------|:--------------------|:------------------|
    | Blog Post          | Web Content Article | Basic Web Content |
    | General Info       | Web Content Article | Basic Web Content |
-   | Leadership Profile | Web Content Article | Basic Web Content |
    | FAQ Detail         | Web Content Article | Basic Web Content |
    | Job Opening Detail | Web Content Article | Basic Web Content |
 

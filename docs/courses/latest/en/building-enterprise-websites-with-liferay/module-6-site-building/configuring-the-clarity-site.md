@@ -94,6 +94,8 @@ To configure the site settings,
 
 1. Go to the *Site URL* tab.
 
+1. Set the friendly URL to `/clarity`.
+
 1. Set the site’s virtual host for the default language to `www.clarityvisionsolutions.com`.
 
 1. Click the *Add* button (![Add Button](../../images/icon-add.png)) to add an extra virtual host for Spanish with the URL `www.solucionesdeclaridad.com`.

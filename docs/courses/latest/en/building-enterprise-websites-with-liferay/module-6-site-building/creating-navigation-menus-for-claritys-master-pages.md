@@ -123,8 +123,8 @@ Repeat the steps from exercises one and two to create these four menus for the p
 
 To create this menu, select the URL type for each entry and enter these values:
 
-| Menu Item  | Type | Value                       |
-|:-----------|:-----|:----------------------------|
+| Menu Item  | Type | Value                                                 |
+|:-----------|:-----|:------------------------------------------------------|
 | Eyeglasses | URL  | `/web/clarity/g/eyeglasses` |
 | Sunglasses | URL  | `/web/clarity/g/sunglasses` |
 | Contacts   | URL  | `/web/clarity/g/contacts`   |

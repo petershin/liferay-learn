@@ -194,7 +194,9 @@ The example `Provide-Capability` header has two parts:
 !!! note
     If your override isn't showing, use [Gogo shell](../../fundamentals/using-the-gogo-shell.md) to check for competing resource bundle services. It may be that another service outranks yours. To check for competing resource bundle services whose aggregates include `com.liferay.blogs.web`’s resource bundle, for example, execute this Gogo shell command:
 
-        services "(bundle.symbolic.name=com.liferay.blogs.web)"
+    ```shell
+    services "(bundle.symbolic.name=com.liferay.blogs.web)"
+    ```
 
 !!! note
     You can continue to use your language translation override in DXP 7.4+ if the language key name is the same---check the [`/modules/apps/portal-language/portal-language-lang/src/main/resources/content/Language[_xx_XX].properties`](https://github.com/liferay/liferay-portal/tree/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-language/portal-language-lang/src/main/resources/content) file. Optionally, you can simplify your module by removing the `ResourceBundle` class and replacing the `Provide-Capability` header in your `bnd.bnd` file with the header demonstrated in the [Overriding Global Language Translations with Language Properties](./overriding-global-language-translations-with-language-properties.md#declare-the-override-in-the-bnd-file).

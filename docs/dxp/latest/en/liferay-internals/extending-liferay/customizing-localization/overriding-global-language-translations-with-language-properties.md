@@ -117,11 +117,7 @@ Select the translations you want to override. The example module overrides the `
 !!! important
     The values for the language translations you declare override the values for those existing translations. All other existing language translation settings are preserved.
 
-Once you've decided which translations to override, create a language properties file in your module's `src/main/resources/content` folder. Use the file name `Language.properties` to override the default locale's language translations. To override a specific locale's translations, use the language properties file naming convention:
-
-```
-Language[_xx_XX].properties
-```
+Once you've decided which translations to override, create a language properties file in your module's `src/main/resources/content` folder. Use the file name `Language.properties` to override the default locale's language translations. To override a specific locale's translations, use the language properties file naming convention: `Language[_xx_XX].properties`.
 
 For example, if you're overriding Japanese, use `Language_ja.properties`.
 

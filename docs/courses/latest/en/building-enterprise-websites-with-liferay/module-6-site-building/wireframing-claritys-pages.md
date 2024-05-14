@@ -5,6 +5,8 @@ uuid: b50cc8b3-35df-4910-8817-7a72c07b9685
 
 With Clarity's master pages complete, you're ready to begin designing the central content area of each page. This area serves as the primary canvas for creating personalized presentations of Clarity's content. Designing pages structures involves the same tools and page elements as master pages. Here you’ll use the custom fragments and compositions that you imported during the last lesson to wireframe the central content area of Clarity’s pages.
 
+<!-- TASK: Provide breakdowns of each composition and include configuration instructions -->
+
 ## Exercise One: Wireframing the Content Pages
 
 1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)), expand *Site Builder*, and click *Pages*.

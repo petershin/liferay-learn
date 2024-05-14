@@ -70,7 +70,7 @@ FAQ:
 | :--- 		| :--- 		|
 | Rich Text	| Answer 	|
 
-You should now have five web content structures implemented in Clarity’s website.
+You now have five web content structures implemented in Clarity’s website.
 
 ## Exercise Two: Creating Web Content Articles
 
@@ -96,7 +96,7 @@ You should now have five web content structures implemented in Clarity’s websi
 
     - “Do you have retail partners where I can try on your eyewear?” / “Yes, we have partnered with various optical shops where you can try on our eyewear. Please visit our website to find the nearest location.”
 
-You should now have eight FAQ web content articles created from the FAQ web content structure.
+You now have eight FAQ web content articles created from the FAQ web content structure.
 
 ## Conclusion
 
@@ -105,4 +105,3 @@ This concludes *Creating Clarity’s Web Content*. Now let’s take a look at so
 Next Up: [Creating Clarity’s Commerce Content](./creating-claritys-commerce-content.md)
 
 <!-- TODO: Add Additional Resources section. -->
-

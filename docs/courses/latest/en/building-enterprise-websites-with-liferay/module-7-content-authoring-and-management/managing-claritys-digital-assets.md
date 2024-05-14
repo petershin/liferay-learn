@@ -19,7 +19,7 @@ Asset libraries declutter digital asset management by providing a collaborative 
 
 1. In the asset library configuration page, navigate to _Sites_ in the sidebar menu.
 
-1. In _Connected Sites_, click _Add_ and select “Clarity Public Enterprise Website.” 
+1. In _Connected Sites_, click _Add_ and select “Clarity Public Enterprise Website.”
 
 1. Navigate to _General_ in the sidebar menu and click _Save_.
 

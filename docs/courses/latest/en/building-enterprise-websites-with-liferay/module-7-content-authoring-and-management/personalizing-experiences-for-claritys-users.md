@@ -19,7 +19,6 @@ The rule builder uses semantic building blocks, which means you can define segme
 
 Segmentation integrates with Liferay Analytics Cloud, which adds support for long-time behavior and third party data (such as Salesforce). In addition to the visual user interface, you can also use headless APIs to create custom properties for segmentation.
 
-
 Once your segments are defined, they are available for use alongside Liferay's site and content management features.
 
 ## Personalized Experiences

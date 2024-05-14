@@ -45,7 +45,6 @@ These are some of the features that make workflows a critical part of publishing
 
 - Integrate workflows seamlessly with other Liferay features, including headless APIs
 
-
 ## Exercise One: Enabling Publications
 
 <!--TODO: Create a publication for changes to the FAQ page-->

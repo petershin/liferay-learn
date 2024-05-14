@@ -2,7 +2,8 @@
 uuid: e9801e49-14af-43d7-bd38-d90ad513f96c
 ---
 # Creating Clarity’s Commerce Content
-Although they are not yet a B2C enterprise, Clarity wants to leverage some of the capabilities available through Liferay Commerce to create product-specific content. Because the Commerce and DXP codebases have been merged, using these features is easier than ever. While it is feasible to build Clarity's product material using web content structures, Liferay’s commerce features may provide an additional layer of future-proofing to the website. In this section, we'll cover the following commerce features:
+
+Although they are not yet a B2C enterprise, Clarity wants to leverage some of the capabilities available through Liferay Commerce to create product-specific content. While it is feasible to build Clarity's product material using web content structures, Liferay’s commerce features provide an additional layer of future-proofing to the website. In this section, we'll cover the following commerce features:
 
 - Catalogs
 - Products

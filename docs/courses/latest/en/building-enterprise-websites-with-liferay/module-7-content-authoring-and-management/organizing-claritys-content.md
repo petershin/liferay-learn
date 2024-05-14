@@ -1,7 +1,7 @@
 ---
 uuid: bd7bafb9-bd0b-411b-9458-0cb507842c87
 ---
-#  Organizing Clarity’s Content
+# Organizing Clarity’s Content
 
 In the previous section, you learned about the different types of content that Clarity may want to employ for their enterprise marketing website. This section will cover some of the key Liferay features you can use to organize content once it has been created:
 
@@ -17,7 +17,7 @@ Categories themselves are grouped using vocabularies, which can be made public o
 
 ## Tags
 
-Tags are keywords for organizing your assets. While categories provide broader classification based on theme or topic, tags describe more specific information about individual content items. Tags are not hierarchical and cannot be nested within one another. However, because they are not constrained by a vocabulary, tags make it possible to find related assets even if they are different types. 
+Tags are keywords for organizing your assets. While categories provide broader classification based on theme or topic, tags describe more specific information about individual content items. Tags are not hierarchical and cannot be nested within one another. However, because they are not constrained by a vocabulary, tags make it possible to find related assets even if they are different types.
 
 ## Collections
 
@@ -102,9 +102,6 @@ If you were able to categorize your FAQ web content articles successfully, you c
     - “FAQ - Products & Services”
     - “FAQ - Pricing & Ordering”
     - “FAQ - Returns & Exchanges”
-
-
-
 
 This concludes *Organizing Clarity’s Content*.
 

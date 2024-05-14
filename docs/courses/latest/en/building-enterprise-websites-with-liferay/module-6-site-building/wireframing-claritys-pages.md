@@ -21,7 +21,9 @@ With Clarity's master pages complete, you're ready to begin designing the centra
 
 1. While in the Pages application, go to the *Utility Pages* tab.
 
-1. Begin editing each page and add the corresponding Clarity Page Composition fragment to it.
+1. Begin editing each page and remove the default content.
+
+1. Add the corresponding Clarity Page Composition fragment.
 
    ![Add the corresponding Clarity Page Composition fragment to the page.](./wireframing-claritys-pages/images/02.png)
 

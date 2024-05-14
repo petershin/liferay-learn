@@ -17,7 +17,7 @@ With Clarity's master pages complete, you're ready to begin designing the centra
 
 1. Click *Publish*.
 
-## Exercise Three: Wireframing the Utility Pages
+## Exercise Two: Wireframing the Utility Pages
 
 1. While in the Pages application, go to the *Utility Pages* tab.
 
@@ -27,7 +27,7 @@ With Clarity's master pages complete, you're ready to begin designing the centra
 
 1. Click *Publish*.
 
-## Exercise Two: Wireframing the Display Pages
+## Exercise Three: Wireframing the Display Pages
 
 1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)), expand *Design*, and click *Page Templates*.
 

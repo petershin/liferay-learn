@@ -29,7 +29,7 @@ Also, should we use the JavaScript client extension? -->
 
 1. Click *Save*.
 
-## Exercise Two Deploying the Theme CSS Client Extension
+## Exercise Two: Deploying the Theme CSS Client Extension
 
 The Clarity workspace includes a theme CSS client extension for updating theme's styles. To deploy this client extension:
 

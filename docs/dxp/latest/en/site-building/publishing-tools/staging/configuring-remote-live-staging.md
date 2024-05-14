@@ -6,6 +6,7 @@ taxonomy-category-names:
 - Liferay PaaS
 uuid: faa4a458-c7c6-4b61-a08f-37cb58873c58
 ---
+
 # Configuring Remote Live Staging
 
 With Remote Live staging, your staging and live environments are hosted on separate Liferay servers. When enabled, the site or asset library used to configure staging becomes your staging environment, and the remote server becomes your live environment.

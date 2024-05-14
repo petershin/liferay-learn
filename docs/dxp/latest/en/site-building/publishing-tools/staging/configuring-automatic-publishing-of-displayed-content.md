@@ -7,6 +7,7 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: 26a24696-81e4-4f4b-9735-e36eb34de9cd
 ---
+
 # Configuring Automatic Publishing of Displayed Content
 
 {bdg-secondary}`Available 7.4+`
@@ -25,9 +26,8 @@ Follow these steps to configure this Staging behavior:
 
    When disabled, only content included in the publishing process's configuration is published.
 
-   ```{tip}
-   Keep in mind that always republishing displayed content to Live can be unnecessary and slow down publishing.
-   ```
+   !!! tip
+       Keep in mind that always republishing displayed content to Live can be unnecessary and slow down publishing.
 
 1. Click *Save*.
 
@@ -55,6 +55,6 @@ Follow these steps to enable dynamic or manual export for the Asset Publisher wi
 
 ## Related Topics
 
-* [Staging](../staging.md)
-* [Understanding the Publishing Process](./understanding-the-publishing-process.md)
-* [Site Staging UI Reference](./site-staging-ui-reference.md)
+- [Staging](../staging.md)
+- [Understanding the Publishing Process](./understanding-the-publishing-process.md)
+- [Site Staging UI Reference](./site-staging-ui-reference.md)

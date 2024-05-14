@@ -8,6 +8,7 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: 221b8182-7251-4a9a-ac11-2c4a6ca93d20
 ---
+
 # Publishing Single Assets and Widgets
 
 You can publish single assets and widgets when needed without going through the entire publishing process. This is much faster than publishing all content at once.
@@ -27,11 +28,11 @@ Once you confirm, you're directed to a process page where you can see the publis
 Similar to the standard process, single asset publishing includes associated dependencies: images, custom templates, or folders.
 
 !!! note
-   Single asset publishing is not supported for page-scoped content.
+    Single asset publishing is not supported for page-scoped content.
 
 ## Publishing Multiple Assets
 
-1. Select your assets by checking the box. 
+1. Select your assets by checking the box.
 
 1. Click *Actions* (![Actions button](../../../images/icon-actions.png)) in the toolbar above the elements and then click *Publish Selected Elements*
 
@@ -49,29 +50,29 @@ After changing a widget, you can publish the widget by clicking on the *Actions*
 
 ## Verifying Published Content
 
-To verify what was published, you can view a summary of each publication process after it runs. 
+To verify what was published, you can view a summary of each publication process after it runs.
 
-1. Publish a Basic Web Content article to live. 
+1. Publish a Basic Web Content article to live.
 
-`. Click the *Product Menu* (![Product Menu](../../../images/icon-product-menu.png)) and navigate to *Publishing* &rarr; *Staging*.
+1. Click the *Product Menu* (![Product Menu](../../../images/icon-product-menu.png)) and navigate to *Publishing* &rarr; *Staging*.
 
-1. Use the [advanced publish process](./site-staging-ui-reference.md#advanced-publishing) and select the Web Content checkbox. 
+1. Use the [advanced publish process](./site-staging-ui-reference.md#advanced-publishing) and select the Web Content checkbox.
 
-   ![Check the Web Content checkbox.](./publishing-single-assets-and-widgets/images/04.png)                        
+   ![Check the Web Content checkbox.](./publishing-single-assets-and-widgets/images/04.png)
 
 1. Click *Publish to Live*.
 
 1. After the publish process runs, click *Actions* (![Actions button](../../../images/icon-actions.png)) next to the process and select *Summary*.
 
-   ![Clicking on Actions and visualizing the Summary button.](./publishing-single-assets-and-widgets/images/05.png)                       
+   ![Clicking on Actions and visualizing the Summary button.](./publishing-single-assets-and-widgets/images/05.png)
 
-The summary page shows everything published in that process. 
+The summary page shows everything published in that process.
 
-   ![The summary page shows what was published.](./publishing-single-assets-and-widgets/images/06.png) 
+![The summary page shows what was published.](./publishing-single-assets-and-widgets/images/06.png)
 
 ## Related Topics
 
-* [Staging Overview](../staging.md)
-* [Managing Staging Permissions](./managing-staging-permissions.md)
-* [Page Versioning](./page-versioning.md)
-* [Site Staging UI Reference](./site-staging-ui-reference.md)
+- [Staging Overview](../staging.md)
+- [Managing Staging Permissions](./managing-staging-permissions.md)
+- [Page Versioning](./page-versioning.md)
+- [Site Staging UI Reference](./site-staging-ui-reference.md)

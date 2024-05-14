@@ -7,13 +7,14 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: 5733b2c8-4f29-4cd8-8307-7737aed1786d
 ---
+
 # Managing Staging Permissions
 
 With Staging, you can manage User permissions that deal directly with Staging and Page versioning.
 
-* [General Staging Permissions](#general-staging-permissions)
-* [Related Site Permissions](#related-site-permissions)
-* [Individual Variation Permissions](#individual-variation-permissions)
+- [General Staging Permissions](#general-staging-permissions)
+- [Related Site Permissions](#related-site-permissions)
+- [Individual Variation Permissions](#individual-variation-permissions)
 
 ## General Staging Permissions
 
@@ -71,6 +72,6 @@ You can also set permissions for individual variations so certain Users have acc
 
 ## Related Topics
 
-* [Staging Overview](../staging.md)
-* [Page Versioning](./page-versioning.md)
-* [Site Staging UI Reference](./site-staging-ui-reference.md)
+- [Staging Overview](../staging.md)
+- [Page Versioning](./page-versioning.md)
+- [Site Staging UI Reference](./site-staging-ui-reference.md)

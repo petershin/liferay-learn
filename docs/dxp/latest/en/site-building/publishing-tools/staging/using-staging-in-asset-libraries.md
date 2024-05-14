@@ -8,9 +8,10 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: 1c613c9c-ccac-4e1c-8ca5-e9d7657c7e9a
 ---
+
 # Using Staging in Asset Libraries
 
-> Staging is supported for Asset Libraries since Liferay DXP 7.4 and 7.3.10 FP1.
+{bdg-secondary}`Staging is supported for Asset Libraries since Liferay DXP 7.4 and 7.3.10 FP1.`
 
 Liferay's Staging application is a publishing tool for managing changes on DXP. For Asset Libraries, Staging provides a working environment for adding, removing, and editing assets in the Web Content or Documents and Media applications before making those changes live. You can access the Staging application for an Asset Library via its menu page.
 
@@ -18,11 +19,10 @@ Liferay's Staging application is a publishing tool for managing changes on DXP. 
 
 From here, you can enable [Local Live](./configuring-local-live-staging.md) or [Remote Live](./configuring-remote-live-staging.md) Staging for individual Asset Libraries following the same process as you would for a Site. The only difference is that staged content options are limited to the applications enabled for the Asset Library.
 
-```{warning}
-Asset Libraries with Staging enabled can only be connected to Sites that also have Staging enabled. When Staging is enabled for an Asset Library, existing Site connections are automatically removed if the Site doesn't also have Staging enabled.
+!!! warning
+    Asset Libraries with Staging enabled can only be connected to Sites that also have Staging enabled. When Staging is enabled for an Asset Library, existing Site connections are automatically removed if the Site doesn't also have Staging enabled.
 
-Sites with Staging enabled can be connected to Asset Libraries without Staging enabled. However, this is **not** recommended, since it can cause duplicate Site links and prevent the removal of Asset Library connections if Staging is ever enabled for the Asset Library. For this reason, you should only connect staged Sites with staged Asset Libraries.
-```
+    Sites with Staging enabled can be connected to Asset Libraries without Staging enabled. However, this is **not** recommended, since it can cause duplicate Site links and prevent the removal of Asset Library connections if Staging is ever enabled for the Asset Library. For this reason, you should only connect staged Sites with staged Asset Libraries.
 
 Once Staging is enabled for an Asset Library, you can toggle between Live and Staging environments via the Staging bar at the top of the page. While in the Staging environment, you can also access *Publish to Live* to initiate a new publishing process.
 
@@ -34,7 +34,7 @@ When changes are made in the Staging environment, they can then be published all
 
 ## Related Topics
 
-* [Staging Overview](../staging.md)
-* [Asset Libraries Overview](../../../content-authoring-and-management/asset-libraries.md)
-* [Configuring Local Live Staging](./configuring-local-live-staging.md)
-* [Configuring Remote Live Staging](./configuring-remote-live-staging.md)
+- [Staging Overview](../staging.md)
+- [Asset Libraries Overview](../../../content-authoring-and-management/asset-libraries.md)
+- [Configuring Local Live Staging](./configuring-local-live-staging.md)
+- [Configuring Remote Live Staging](./configuring-remote-live-staging.md)

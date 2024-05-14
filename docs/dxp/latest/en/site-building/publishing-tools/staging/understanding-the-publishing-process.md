@@ -7,6 +7,7 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: 3572cd09-2cb0-4688-953d-7a6958b5e756
 ---
+
 # Understanding the Publishing Process
 
 Publishing is the process whereby changes made in the Staging environment are transferred to the Live environment. Understanding this process can improve efficiency and help you plan ahead to achieve a seamless publishing experience.

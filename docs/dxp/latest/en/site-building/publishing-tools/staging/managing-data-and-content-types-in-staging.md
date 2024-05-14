@@ -7,12 +7,13 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: fa9b419d-3b2f-45c7-b641-b6fcbaf0f946
 ---
+
 # Managing Data and Content Types in Staging
 
 Liferay DXP's Staging tool provides ways to manage available application data and content types both during initial configuration and the publishing process. Because there can be so many relationships between applications and types of content, be sure to consider how they reference each other in your database before deciding to stage or unstage any categories.
 
 !!! important
-    Liferay Commerce does not support Staging. During the publishing process, entities from Commerce are not staged. 
+    Liferay Commerce does not support Staging. During the publishing process, entities from Commerce are not staged.
 
 ## Staging Data and Content Types
 
@@ -21,22 +22,22 @@ As part of Staging configuration, you can select which application data and cont
 ![Select which application data and content types are staged.](./managing-data-and-content-types-in-staging/images/01.png)
 When working with Staging, you must think about the applications you're using on your Site and whether they're appropriate to be staged:
 
-* Unstaged data only exists in the Site's live environment. Staged data exists in both environments.
-* Collaborative applications, such as Blogs, Message Boards, and Wikis should not be staged, because posts would not appear on the live Site until you publish.
-* You can only stage Site-scoped content.
-* Page-scoped data can only be staged on published Pages; its data is published with the Page.
-* If you have disabled/removed an application from your Site but it's still selected in your Staging configuration, it's still published and may appear in aggregation apps like Asset Publisher.
-* Asset Publisher on the Staged Site cannot access data from unstaged apps, because their data exists only on the Live Site. If your Asset Publisher's configuration shows data from both staged and unstaged apps, it won't look the same on both your Staged and your Live Sites.
+- Unstaged data only exists in the Site's live environment. Staged data exists in both environments.
+- Collaborative applications, such as Blogs, Message Boards, and Wikis should not be staged, because posts would not appear on the live Site until you publish.
+- You can only stage Site-scoped content.
+- Page-scoped data can only be staged on published Pages; its data is published with the Page.
+- If you have disabled/removed an application from your Site but it's still selected in your Staging configuration, it's still published and may appear in aggregation apps like Asset Publisher.
+- Asset Publisher on the Staged Site cannot access data from unstaged apps, because their data exists only on the Live Site. If your Asset Publisher's configuration shows data from both staged and unstaged apps, it won't look the same on both your Staged and your Live Sites.
 
 **Content Origin for Staged and Unstaged Applications**
 
-| Content Type | Staged | Unstaged | Data Origin Staged | Data Origin Live |
-| :--- | :--- | :--- | :--- | :--- |
-| Collaborative |  | &#10004; | | &#10004; |
-| Site Scoped | &#10004; | |&#10004; |  | 
-| Page Scoped Apps | &#10004;* | | &#10004; | |
-| Unselected Apps in Staging Config | | &#10004; | | &#10004; |
-| Selected Apps in Staging Config | &#10004; | | &#10004; | |
+| Content Type                      | Staged    | Unstaged | Data Origin Staged | Data Origin Live |
+|:----------------------------------|:----------|:---------|:-------------------|:-----------------|
+| Collaborative                     |           | &#10004; |                    | &#10004;         |
+| Site Scoped                       | &#10004;  |          | &#10004;           |                  |
+| Page Scoped Apps                  | &#10004;* |          | &#10004;           |                  |
+| Unselected Apps in Staging Config |           | &#10004; |                    | &#10004;         |
+| Selected Apps in Staging Config   | &#10004;  |          | &#10004;           |                  |
 
 \* *Only published when the Page is published*
 
@@ -82,6 +83,6 @@ The Staging framework gathers deletions (including trashed entities) in a Site. 
 
 ## Related Topics
 
-* [Staging Overview](../staging.md)
-* [Understanding the Publishing Process](./understanding-the-publishing-process.md)
-* [Site Staging UI Reference](./site-staging-ui-reference)
+- [Staging Overview](../staging.md)
+- [Understanding the Publishing Process](./understanding-the-publishing-process.md)
+- [Site Staging UI Reference](./site-staging-ui-reference)

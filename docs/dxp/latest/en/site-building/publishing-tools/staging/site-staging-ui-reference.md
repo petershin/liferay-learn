@@ -7,6 +7,7 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: 1c97241d-4b80-4c13-b7b5-ab2f3fe8fac5
 ---
+
 # Site Staging UI Reference
 
 After enabling Local or Remote Live Staging for your site, most page configuration options are only accessible in your Staging environment. This prevents users from directly editing live pages.
@@ -49,9 +50,8 @@ When you click on *Publish to Live*, a modal window appears with additional opti
 
 **Pages to Publish**: View the number of pages included in your current publish process.
 
-```{note}
+!!! note
 This displays the number of page deletions tracked by the Staging framework. This number counts the page deletions on the Staging site, not how many pages will be deleted on the on the Live site. There can be inconsistency between the number of page deletions to be published and the actual number of pages present on either of the Staging and Live sites.
-```
 
 When ready, click on *Publish to Live* to initiate publishing.
 
@@ -152,7 +152,7 @@ From here, you can disable Staging for your site, or modify your [page versionin
 
 ## Related Topics
 
-* [Staging Overview](../staging.md)
-* [Understanding the Publishing Process](./understanding-the-publishing-process.md)
-* [Page Versioning](./page-versioning.md)
-* [Managing Data and Content Types in Staging](./managing-data-and-content-types-in-staging.md)
+- [Staging Overview](../staging.md)
+- [Understanding the Publishing Process](./understanding-the-publishing-process.md)
+- [Page Versioning](./page-versioning.md)
+- [Managing Data and Content Types in Staging](./managing-data-and-content-types-in-staging.md)

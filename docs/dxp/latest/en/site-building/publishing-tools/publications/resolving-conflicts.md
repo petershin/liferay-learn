@@ -40,13 +40,43 @@ Depending on the [conflict type](#understanding-conflict-types), Publications ma
 !!! warning
     Discarding is permanent and cannot be reversed. Ensure you've saved any changes you want to keep before discarding them from your publication.
 
+## Conflicts on Scheduled Publications
+
+{bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+`
+
+!!! important
+    This feature is currently behind a release feature flag (LPD-11018). Read [Release Feature Flags](../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information.
+
+Scheduled publications are more susceptible to conflicts and errors as they are published in the future, and elements affected by the publication can be altered in production in the meantime.
+
+When that happens, some conflicts or errors may arise. Some conflicts are [handled automatically](#automatically-resolving-conflicts) while others have to be [handled manually](#manually-resolving-conflicts).
+
+Either way, when conflicts or errors arise, a notification is sent out to [users involved in the publication process](./collaborating-on-publications.md) (i.e., publishers, editors, administrators, and owners). This notification provides details about what went wrong and what needs fixing.
+
+To see the notifications, open the *User Administration Menu* and click *Notifications*.
+
+![A notification is sent out whenever scheduled publications run into conflicts or errors.](./resolving-conflicts/images/03.png)
+
+!!! note
+    If the `scheduled-publications-conflict-checks` is set at the [Job Scheduler](../../../liferay-development/core-frameworks/job-scheduler-framework/using-job-scheduler.md), a check is performed periodically to look for potential conflicts for scheduled publications. By default, the cron expression is set to midnight UTC.
+
+    If scheduled publications run into conflicts or errors, users receive notification messages every time the conflict check runs.
+
+In case of conflict errors, users can access a list of conflicts through the notification. In the Conflicts screen, users can solve conflicts that require manual resolution and view which conflicts were resolved automatically.
+
+![With conflict errors, users can see a list of conflicts that need to be resolved manually and a list of conflicts that were resolved automatically.](./resolving-conflicts/images/04.png)
+
+In the event of Java errors unrelated to conflicts, users receive an error message notification whereas owners and system administrators have access to a stack trace of errors for further investigation.
+
+![With java errors that are not related to conflicts, users view an error message whereas owners and system administrators can access a stack trace of errors.](./resolving-conflicts/images/05.png)
+
 ## Understanding Conflict Types
 
 Users can encounter six general types of conflicts: *Duplication*, *Modification*, *Deletion Modification*, *Modification Deletion*, *Missing Requirement*, and *Addition*.
 
 ### Duplication Conflicts
 
-![Publications notifies you to resolve Duplication conflicts.](./resolving-conflicts/images/03.png)
+![Publications notifies you to resolve Duplication conflicts.](./resolving-conflicts/images/06.png)
 
 These conflicts occur when something in production uses the same unique value of a change made in the publication. This can be caused by any type of component that requires a unique value (e.g., a folder, url, role name).
 
@@ -56,7 +86,7 @@ To resolve duplication conflicts, users can either edit the value in their publi
 
 ### Modification Conflicts
 
-![Publications notifies you to resolve Modification conflicts.](./resolving-conflicts/images/04.png)
+![Publications notifies you to resolve Modification conflicts.](./resolving-conflicts/images/07.png)
 
 These conflicts occur when an entity you've modified in a publication is then modified in production (e.g., when an edited Web Content article is moved). While some modification conflicts can be automatically resolved, others require manual resolution.
 
@@ -64,13 +94,13 @@ To resolve modification conflicts, you can edit the conflicting material, discar
 
 ### Deletion Modification and Modification Deletion Conflicts
 
-![Publications notifies you to resolve Deletion Modification and Modification Deletion conflicts.](./resolving-conflicts/images/05.png)
+![Publications notifies you to resolve Deletion Modification and Modification Deletion conflicts.](./resolving-conflicts/images/08.png)
 
 These conflicts occur when an entity is modified in a publication and then deleted in production (Deletion Modification), or vice versa (Modification Deletion). The only provided resolution for this conflict is to discard the publication's conflicting change.
 
 ### Missing Requirement Conflicts
 
-![Publications notifies you to resolve Missing Requirement conflicts.](./resolving-conflicts/images/06.png)
+![Publications notifies you to resolve Missing Requirement conflicts.](./resolving-conflicts/images/09.png)
 
 These conflicts occur when a child entity is created or edited in your publication, while its parent has been removed from production. Examples include deleting a folder from production when your publication adds or modifies a sub-folder.
 
@@ -78,7 +108,7 @@ To resolve Missing Requirement conflicts, you can discard the conflicting change
 
 ### Addition Conflict
 
-![Publications notifies you to resolve Addition conflicts.](./resolving-conflicts/images/07.png)
+![Publications notifies you to resolve Addition conflicts.](./resolving-conflicts/images/10.png)
 
 These conflicts only occur when users attempt to revert a publication including a deletion that has already been reverted. Users cannot revert the same publication twice if it included a deletion, since the system cannot add back what has already been added back.
 

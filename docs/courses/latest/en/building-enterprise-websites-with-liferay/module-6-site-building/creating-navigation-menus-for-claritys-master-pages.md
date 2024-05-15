@@ -144,7 +144,7 @@ The Leadership and Our Impact links should direct users to the About Us page. To
 |:-----------|:-----|:---------|
 | Leadership | Page | About Us |
 | Our Impact | Page | About Us |
-| Contacts   | Page | Careers  |
+| Careers    | Page | Careers  |
 
 ![Create the footer About Us menu.](./creating-navigation-menus-for-claritys-master-pages/images/10.png)
 

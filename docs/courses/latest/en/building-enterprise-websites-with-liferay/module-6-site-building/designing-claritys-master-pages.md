@@ -416,7 +416,7 @@ While editing the primary master page,
 
    ```html
    <p class="mb-0">
-      © 2024 Clarity Vision Solutions, INC.
+      &copy; 2024 Clarity Vision Solutions, INC.
    </p>
    ```
 

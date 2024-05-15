@@ -21,10 +21,10 @@ Publications provides a convenient way to manage changes to your Liferay instanc
 
 If you haven't already created a publication to track changes, see [Creating a Publication](./creating-and-managing-publications.md#creating-a-publication) for more information.
 
-Once created, a publication is automatically updated with changes made to production, provided they don't conflict with changes made in the publication. This ensures you and your team are working on the latest version of production.
+Once created, a publication is updated automatically with changes made to production, provided they don't conflict with changes made in the publication. This ensures you and your team are working on the latest version of production.
 
 !!! important
-    After upgrading your Liferay version, existing publications cannot be changed, published, or reverted. All active publications are marked as out of date and can only be viewed or deleted. Also, the *Revert* option is removed for publications published before your upgrade.
+    After upgrading your Liferay version, existing publications cannot be changed, published, or reverted. All active publications are marked as out of date and can only be viewed or deleted. {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+` But you can move compatible changes to a publication. See [Managing Out-of-date Publications](./creating-and-managing-publications.md#managing-out-of-date-publications) to learn more. Also, the *Revert* option is removed for publications published before your upgrade.
 
 ## Making Changes in a Publication
 

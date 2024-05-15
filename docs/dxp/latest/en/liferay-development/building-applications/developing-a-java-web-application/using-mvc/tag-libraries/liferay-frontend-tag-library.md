@@ -31,7 +31,7 @@ The Liferay Frontend taglib is also available via a macro for your FreeMarker th
 
 The following Frontend UI components are covered in this section:
 
-* [Add Menu](./liferay-frontend-tag-library/liferay-frontend-add-menu.md ./liferay-frontend-tag-library/liferay-frontend-add-menu.md)
+* [Add Menu](./liferay-frontend-tag-library/liferay-frontend-add-menu.md)
 * [Cards](./liferay-frontend-tag-library/liferay-frontend-cards.md)
 * [Info Bar](./liferay-frontend-tag-library/liferay-frontend-info-bar.md)
 * [Management Bar](./liferay-frontend-tag-library/liferay-frontend-management-bar.md)

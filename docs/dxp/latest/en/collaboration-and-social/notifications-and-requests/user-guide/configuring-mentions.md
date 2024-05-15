@@ -54,6 +54,6 @@ Site administrators can enable or disable *Mentions* for a Site.
 
 ## Related Information
 
-- [Site Settings UI Reference](https://learn.liferay.com/w/dxp/site-building/site-settings/site-settings-ui-reference)
+- [Site Settings UI Reference](../../../site-building/site-settings/site-settings-ui-reference.md)
 - [Managing Notifications and Requests](./managing-notifications-and-requests.md)
 - [Mentioning Users](./mentioning-users.md)

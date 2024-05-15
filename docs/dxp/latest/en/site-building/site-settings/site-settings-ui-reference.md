@@ -92,7 +92,7 @@ By default, Site Configuration includes the Details and Site URL sections.
 
 ### Third Party
 
-Configure the PunchOut2Go Site setting for Liferay Commerce. For more information, see [Liferay Commerce Connector to PunchOut2Go Reference Guide](https://learn.liferay.com/web/guest/w/commerce/add-ons-and-connectors/punchout2go/liferay-commerce-connector-to-punchout2go-reference-guide).
+Configure the PunchOut2Go Site setting for Liferay Commerce. For more information, see [Liferay Commerce Connector to PunchOut2Go Reference Guide](../../../../../commerce/latest/en/add-ons-and-connectors/punchout2go/liferay-commerce-connector-to-punchout2go-reference-guide.md).
 
 ### Third Party Applications
 

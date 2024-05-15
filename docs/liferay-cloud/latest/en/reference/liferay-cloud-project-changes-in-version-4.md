@@ -29,13 +29,13 @@ Upgrading to Liferay Cloud Stack version 4 changes every service's Docker image 
 
 ## Project Organization Changes
 
-The biggest change to the repository is that each service's files (including their `LCP.json` file) have been moved to a folder at the root of the repository (e.g., `liferay/` or `webserver/`). You can deploy each of these services individually by navigating into these relocated service folders and using the [CLI tool](./command-line-tool.md). The `lcp` folder is removed and is no longer in the path for any of these services. These folders themselves have been reorganized to resemble a [Liferay workspace structure](https://learn.liferay.com/w/dxp/liferay-development/tooling/liferay-workspace/what-is-liferay-workspace).
+The biggest change to the repository is that each service's files (including their `LCP.json` file) have been moved to a folder at the root of the repository (e.g., `liferay/` or `webserver/`). You can deploy each of these services individually by navigating into these relocated service folders and using the [CLI tool](./command-line-tool.md). The `lcp` folder is removed and is no longer in the path for any of these services. These folders themselves have been reorganized to resemble a [Liferay workspace structure](../../../../dxp/latest/en/liferay-development/tooling/liferay-workspace/what-is-liferay-workspace.md).
 
 Several other files previously at the root of the repository (including `gradle.properties`, `build.gradle`, and `settings.gradle`) have also been moved into the `liferay` service.
 
 ## Liferay Service Changes
 
-The `liferay` service folder now follows the functional structure of a [Liferay Workspace](https://learn.liferay.com/w/dxp/liferay-development/tooling/liferay-workspace/what-is-liferay-workspace).
+The `liferay` service folder now follows the functional structure of a [Liferay Workspace](../../../../dxp/latest/en/liferay-development/tooling/liferay-workspace/what-is-liferay-workspace.md).
 
 All configurations within the `liferay` service now belong in an environment-specific `configs` directory that corresponds to a project's Liferay Cloud environments. Additionally, the `license` folder has been removed; add your licenses into the `deploy` folder instead.
 

@@ -21,7 +21,7 @@ To manage and audit your content across Sites and Asset Libraries, use the [Cont
 
 You can access the Content Performance tool when the following conditions are met:
 
-- The Liferay DXP instance has an active [connection to Liferay Analytics Cloud](https://learn.liferay.com/w/analytics-cloud/getting-started/connecting-liferay-dxp-to-analytics-cloud) and your site is synchronized.
+- The Liferay DXP instance has an active [connection to Liferay Analytics Cloud](../../../../../analytics-cloud/latest/en/getting-started/connecting-liferay-dxp-to-analytics-cloud.md) and your site is synchronized.
 - You have Edit permissions for the Page or content.
 - The content is in a Content Page, Widget Page, or is based on a [Display Page Template](../../site-building/displaying-content/using-display-page-templates/publishing-content-with-display-pages.md).
 

@@ -9,7 +9,7 @@ taxonomy-category-names:
 ---
 # Getting Started with Message Boards
 
-Liferay DXP's Message Boards app is a forum application that can be added to any DXP site page. A Message Board on DXP can be [scoped to a site](https://learn.liferay.com/w/dxp/system-administration/configuring-liferay/understanding-configuration-scope), including a regular site, an organization’s site, or a user's profile site or dashboard site.
+Liferay DXP's Message Boards app is a forum application that can be added to any DXP site page. A Message Board on DXP can be [scoped to a site](../../../system-administration/configuring-liferay/understanding-configuration-scope.md), including a regular site, an organization’s site, or a user's profile site or dashboard site.
 
 ## Adding Message Boards to a Site
 

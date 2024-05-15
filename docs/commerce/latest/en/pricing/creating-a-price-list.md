@@ -20,7 +20,7 @@ To create a new price list,
 1. Enter a *Name*, *Catalog*, and *Currency* for the new price list. You can change the name and currency of a price list at any time, but not the linked catalog.
 
    ```{note}
-   Creating a price list requires your Liferay instance to have at least one [catalog](https://learn.liferay.com/web/guest/w/commerce/product-management/catalogs/creating-a-new-catalog).
+   Creating a price list requires your Liferay instance to have at least one [catalog](../product-management/catalogs/creating-a-new-catalog.md).
    ```
 
 1. Click on *Submit*.

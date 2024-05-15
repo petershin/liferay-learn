@@ -31,7 +31,7 @@ After determining the types of entities required for their solution, Clarity can
 
 ## Adding Attributes
 
-Attributes represent database columns storing specific data types for object definitions (e.g., text, numbers, and files). You define attributes by adding [fields](https://learn.liferay.com/en/w/dxp/building-applications/objects/creating-and-managing-objects/fields) to an object. Additionally, you can create [picklists](https://learn.liferay.com/w/dxp/liferay-development/objects/picklists) and use them with objects to provide users with predefined single-select and multi-select fields.
+Attributes represent database columns storing specific data types for object definitions (e.g., text, numbers, and files). You define attributes by adding [fields](https://learn.liferay.com/en/w/dxp/building-applications/objects/creating-and-managing-objects/fields) to an object. Additionally, you can create [picklists](../../../../../dxp/latest/en/liferay-development/objects/picklists.md) and use them with objects to provide users with predefined single-select and multi-select fields.
 
 <!--TASK: Introduce picklists.-->
 

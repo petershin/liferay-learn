@@ -37,7 +37,7 @@ Users can attach files to forum posts.
     ![Figure 2. Uploading an attachment](./creating-message-boards-threads/images/03.png)
 
 ```{important}
-You can enable automatic antivirus scanning to scan files on upload. For details, please see [Enabling Antivirus Scanning for Uploaded Files](https://learn.liferay.com/w/dxp/system-administration/file-storage/enabling-antivirus-scanning-for-uploaded-files).
+You can enable automatic antivirus scanning to scan files on upload. For details, please see [Enabling Antivirus Scanning for Uploaded Files](../../../system-administration/file-storage/enabling-antivirus-scanning-for-uploaded-files.md).
 ```
 
 ### Using _Tags_ and _Related Assets_ to Organize Threads

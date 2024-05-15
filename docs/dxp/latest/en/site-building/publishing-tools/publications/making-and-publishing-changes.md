@@ -7,6 +7,7 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: 1411549b-f2fd-473e-b4ef-5f67aa7fdb5e
 ---
+
 # Making and Publishing Changes
 
 {bdg-secondary}`Liferay 7.3+`
@@ -15,17 +16,15 @@ Publications provides a convenient way to manage changes to your Liferay instanc
 
 [$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/YNOLwu19oBk
 
-```{note}
-By default, users can only contribute to publications they've created. However, they can invite other users to collaborate on their publications. See [Collaborating on Publications](./collaborating-on-publications.md) for more information.
-```
+!!! note
+    By default, users can only contribute to publications they've created. However, they can invite other users to collaborate on their publications. See [Collaborating on Publications](./collaborating-on-publications.md) for more information.
 
 If you haven't already created a publication to track changes, see [Creating a Publication](./creating-and-managing-publications.md#creating-a-publication) for more information.
 
 Once created, a publication is automatically updated with changes made to production, provided they don't conflict with changes made in the publication. This ensures you and your team are working on the latest version of production.
 
-```{important}
-After upgrading your Liferay version, existing publications cannot be changed, published, or reverted. All active publications are marked as out of date and can only be viewed or deleted. Also, the *Revert* option is removed for publications published before your upgrade.
-```
+!!! important
+    After upgrading your Liferay version, existing publications cannot be changed, published, or reverted. All active publications are marked as out of date and can only be viewed or deleted. Also, the *Revert* option is removed for publications published before your upgrade.
 
 ## Making Changes in a Publication
 
@@ -37,9 +36,8 @@ When you add, edit, or remove assets in a publication, your changes are only vis
 
 While working on a publication, changes made to supported Liferay components are tracked in the publication. This includes changes across multiple sites.
 
-```{important}
-When editing different sites in the same publication, keep in mind that all tracked changes are applied to production when the publication is published.
-```
+!!! important
+    When editing different sites in the same publication, keep in mind that all tracked changes are applied to production when the publication is published.
 
 ### Navigating to Unsupported Applications
 
@@ -163,9 +161,8 @@ Follow these steps to schedule publishing for a later time.
 
 1. If necessary, manually resolve any detected conflicts. Once all conflicts are resolved, you can proceed.
 
-   ```{important}
-   At the time of the publication, DXP performs a second conflict detection to ensure there are no new conflicting changes. The publish fails if DXP detects new conflicts that cannot be automatically resolved. If the conflicts can be resolved automatically, DXP proceeds with publishing.
-   ```
+   !!! important
+       At the time of the publication, DXP performs a second conflict detection to ensure there are no new conflicting changes. The publish fails if DXP detects new conflicts that cannot be automatically resolved. If the conflicts can be resolved automatically, DXP proceeds with publishing.
 
 1. Enter a date and time to determine when the changes are published to production.
 
@@ -195,6 +192,6 @@ Liferay immediately removes the unnecessary data.
 
 ## Related Topics
 
-* [Publications Overview](../publications.md)
-* [Enabling Publications](./enabling-publications.md)
-* [Creating and Managing Publications](./creating-and-managing-publications.md)
+- [Publications Overview](../publications.md)
+- [Enabling Publications](./enabling-publications.md)
+- [Creating and Managing Publications](./creating-and-managing-publications.md)

@@ -17,6 +17,7 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: 8e7e004e-c872-4b7d-af1d-0d2eec5210b1
 ---
+
 # Publications
 
 {bdg-secondary}`Liferay DXP/Portal 7.3+`

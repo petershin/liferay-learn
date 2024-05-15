@@ -7,6 +7,7 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: 441c07d0-8ab3-4a39-82e6-3702dcf45e22
 ---
+
 # Enabling Publications
 
 {bdg-secondary}`Available Liferay 7.3+`

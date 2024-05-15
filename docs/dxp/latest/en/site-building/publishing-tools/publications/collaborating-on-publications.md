@@ -7,6 +7,7 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: e5ba6aa2-4c56-4e68-b515-32f05f9d4e93
 ---
+
 # Collaborating on Publications
 
 {bdg-secondary}`Liferay 7.4+`
@@ -19,8 +20,6 @@ Once users are invited to a publication, you can use the integrated comments fea
 
 ## Inviting Users to a Publication
 
-Follow these steps to invite user to collaborate on a publication.
-
 1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), click the *Applications* tab, and go to *Publications*.
 
 1. Click the *Actions* button (![Actions Button](../../../images/icon-actions.png)) for the desired publication and select *Invite Users*.
@@ -31,9 +30,8 @@ Follow these steps to invite user to collaborate on a publication.
 
    ![In publication Changes page, click the Invite Users button.](./collaborating-on-publications/images/02.png)
 
-   ```{note}
-   This is the only way to invite users to a published publication.
-   ```
+   !!! note
+       This is the only way to invite users to a published publication.
 
 1. Use the drop-down menu to grant *view*, *edit*, *publish*, and *invite* permissions.
 
@@ -53,11 +51,11 @@ Invited users are notified and can begin collaborating on the publication.
 
 Collaborating users can add comments to a publication via its Changes page. Each comment is scoped to the publication in which they're made.
 
-1. Open the *Global Menu* ( ![Global Menu](../../../images/icon-applications-menu.png) ), click the *Applications* tab, and go to *Publications*.
+1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), click the *Applications* tab, and go to *Publications*.
 
 1. Click the desired *publication*.
 
-1. Click the *Comments* button ( ![Comments Button](../../../images/icon-comments-w.png) ).
+1. Click the *Comments* button (![Comments Button](../../../images/icon-comments-w.png)).
 
 1. In the chat window, type your comment, and click *Reply*.
 
@@ -66,8 +64,6 @@ Collaborating users can add comments to a publication via its Changes page. Each
 All collaborating users are notified of your comment and can reply as well.
 
 ## Removing Users from a Publication
-
-Follow these steps to remove a collaborator from a publication.
 
 1. Open the *Invite User* modal window for the desired publication.
 
@@ -83,7 +79,7 @@ Follow these steps to remove a collaborator from a publication.
 
 {bdg-secondary}`Liferay 7.4 2023.Q3+/GA92+`
 
-If you need to share publication changes with people who are not site users, you can enable link sharing for the publication.  
+If you need to share publication changes with people who are not site users, you can enable link sharing for the publication.
 
 1. Click *Actions* (![Actions Button](../../../images/icon-actions.png)) for the desired publication, select *Invite Users*, and go to the *Share Link* tab.
 
@@ -103,6 +99,6 @@ Anyone with the link can view the publication's changes.
 
 ## Related Topics
 
-* [Creating and Managing Publications](./creating-and-managing-publications.md)
-* [Making and Publishing Changes](./making-and-publishing-changes.md)
-* [Resolving Conflicts](./resolving-conflicts.md)
+- [Creating and Managing Publications](./creating-and-managing-publications.md)
+- [Making and Publishing Changes](./making-and-publishing-changes.md)
+- [Resolving Conflicts](./resolving-conflicts.md)

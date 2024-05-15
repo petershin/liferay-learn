@@ -8,6 +8,7 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: 49935b09-39cf-4f23-b8e0-aad6cc621a44
 ---
+
 # Using Workflow with Publications
 
 {bdg-secondary}`7.4 U44+/GA44+`
@@ -32,6 +33,6 @@ Once changes are approved, additional edits to the same entities are tracked as 
 
 ## Related Topics
 
-* [Introduction to Workflow](../../../process-automation/workflow/introduction-to-workflow.md)
-* [Creating and Managing Publications](./creating-and-managing-publications.md)
-* [Collaborating on Publications](./collaborating-on-publications.md)
+- [Introduction to Workflow](../../../process-automation/workflow/introduction-to-workflow.md)
+- [Creating and Managing Publications](./creating-and-managing-publications.md)
+- [Collaborating on Publications](./collaborating-on-publications.md)

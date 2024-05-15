@@ -7,15 +7,15 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: b1426540-9d0f-4387-b7fa-3dc44336cb94
 ---
+
 # Resolving Conflicts
 
 When you begin the publishing process, Liferay performs a compatibility check to determine if there are any conflicts between your publication and production. While some conflicts can be resolved automatically, others require manual resolution. Resolving all conflicts is necessary for publishing changes.
 
 [$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/4w16zEFoP8o
 
-```{note}
-Publishing conflicts only occur when changes are made to production *after* changes have already been made in a publication. This is because each publication is automatically updated with changes made to production, provided those changes don't conflict with changes made in the publication.
-```
+!!! note
+    Publishing conflicts only occur when changes are made to production *after* changes have already been made in a publication. This is because each publication is automatically updated with changes made to production, provided those changes don't conflict with changes made in the publication.
 
 ## Automatically Resolving Conflicts
 
@@ -33,13 +33,12 @@ For some conflicts, Liferay cannot provide an automatic resolution. This means y
 
 Depending on the [conflict type](#understanding-conflict-types), Publications may prompt you to perform one of the following actions.
 
-* **Edit**: This redirects you to the cause of the conflict in the current publication. From there, you can make the changes necessary to resolve the conflict.
+- **Edit**: This redirects you to the cause of the conflict in the current publication. From there, you can make the changes necessary to resolve the conflict.
 
-* **Discard**: This displays a list of all changes that will be discarded. You can then click on *Discard* to permanently remove them from your publication.
+- **Discard**: This displays a list of all changes that will be discarded. You can then click on *Discard* to permanently remove them from your publication.
 
-```{warning}
-Discarding is permanent and cannot be reversed. Ensure you've saved any changes you want to keep before discarding them from your publication.
-```
+!!! warning
+    Discarding is permanent and cannot be reversed. Ensure you've saved any changes you want to keep before discarding them from your publication.
 
 ## Understanding Conflict Types
 
@@ -51,7 +50,7 @@ Users can encounter six general types of conflicts: *Duplication*, *Modification
 
 These conflicts occur when something in production uses the same unique value of a change made in the publication. This can be caused by any type of component that requires a unique value (e.g., a folder, url, role name).
 
-Consider the following example. Suppose you've added a new folder named 'Marketing' to a publication, while a user in production creates a folder using the same name. Since folders in the same repo must have a unique name, attempting to publish your change will result in a duplication conflict.
+Consider the following example. Suppose you've added a new folder named "Marketing" to a publication, while a user in production creates a folder using the same name. Since folders in the same repo must have a unique name, attempting to publish your change will result in a duplication conflict.
 
 To resolve duplication conflicts, users can either edit the value in their publication, or discard their change.
 
@@ -85,6 +84,6 @@ These conflicts only occur when users attempt to revert a publication including 
 
 ## Related Topics
 
-* [Creating and Managing Publications](./creating-and-managing-publications.md)
-* [Making and Publishing Changes](./making-and-publishing-changes.md)
-* [Resolving Conflicts](./resolving-conflicts.md)
+- [Creating and Managing Publications](./creating-and-managing-publications.md)
+- [Making and Publishing Changes](./making-and-publishing-changes.md)
+- [Resolving Conflicts](./resolving-conflicts.md)

@@ -24,7 +24,7 @@ taxonomy-category-names:
 
 1. Drag and drop Segment criteria from the panel on the right to the canvas on the center of the screen. The selector menu at the top of the panel shows you the criteria types you can select:
 
-    - **Web Behaviors:** Actions taken by a person (e.g., submitted a form, viewed a blog, etc.).
+    - **Events:** Actions taken by a person (e.g., submitted a form, viewed a blog, etc.). You can create segments with Liferay's out-of-the-box events as well as your own custom events.
     - **Individual Attributes:** Attributes that belong to a person (e.g., age, country, industry, etc.). Note that DXP custom fields can also be selected under Individual Attributes. Learn more about [adding custom fields to Users in DXP](https://learn.liferay.com/en/w/dxp/system-administration/configuring-liferay/adding-custom-fields).
     - **Interests:** Topics and content types that interest the person. For more information on interests in Analytics Cloud, see Customer Insights.
     - **Session Attributes:** Attributes that belong to a person's web session (e.g., browser, geo-location, etc.).
@@ -97,3 +97,9 @@ When you are finished configuring the segment, click *Save Segment*.
 1. To change or undo your selections, click the *View Added Members* link and click *Undo* for each Individual you want to remove. Alternatively, select each Individual and click the *Undo Changes* button that appears. To remove all Individuals, click *Undo All*.
 
 1. Click *Create* when you're finished.
+
+## Related Topics
+
+- [Tracking Events](../../touchpoints/events/tracking-events.md)
+- [Definitions for Individuals](../../workspace-data/definitions/definitions-for-individuals.md)
+- [Understanding Interests](../individuals/understanding-interests.md)

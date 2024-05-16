@@ -23,7 +23,7 @@ This module introduces the Ideal Customer Profile for Liferay and summarizes the
 This knowledge helps Sellers be better equipped to prospect and to pre-qualify an opportunity or RFI / RFQ successfully.
 
 ```{note}
-* View the [recording](https://learn.liferay.com/web/guest/d/l0-3-ideal-customer-profile) from the live workshop of this module.
+* View the [recording](https://learn.liferay.com/documents/d/guest/l0-3-ideal-customer-profile) from the live workshop of this module.
 * Download the [PDF](https://learn.liferay.com/documents/d/guest/l0-3-ideal-customer-profile-pdf) of the presentation used in the live workshop.
 ```
 

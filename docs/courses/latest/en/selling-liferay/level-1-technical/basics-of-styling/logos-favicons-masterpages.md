@@ -15,7 +15,7 @@ visibility:
 * A Master Page is a page template that allows users to define common elements to every page, such as headers, footers and navigation menus.
 
 ```{note}
-* View the [recording](https://learn.liferay.com/web/guest/d/se1-5-basics-of-styling-in-liferay) from the live workshop of this module.
+* View the [recording](https://learn.liferay.com/documents/d/guest/se1-5-basics-of-styling-in-liferay) from the live workshop of this module.
 * Download the [PDF](https://learn.liferay.com/documents/d/guest/se1-5-basics-of-styling-in-liferay-pdf) of the presentation used in the live workshop.
 ```
 

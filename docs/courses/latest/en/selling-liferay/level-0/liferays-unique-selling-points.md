@@ -27,7 +27,7 @@ This module explains Liferay’s Unique Selling Points, as well as the value the
 While competitors claim to deliver the same value, only Liferay has the unique combination of characteristics and traits that set us apart from those competitors to provide more value to our customers.
 
 ```{note}
-* View the [recording](https://learn.liferay.com/web/guest/d/l0-4-liferays-unique-selling-points) from the live workshop of this module.
+* View the [recording](https://learn.liferay.com/documents/d/guest/l0-4-liferays-unique-selling-points) from the live workshop of this module.
 * Download the [PDF](https://learn.liferay.com/documents/d/guest/l0-4-liferays-unique-selling-points-pdf) of the presentation used in the live workshop.
 ```
 

@@ -13,7 +13,7 @@ visibility:
 * マスターページは、ヘッダー、フッター、ナビゲーションメニューなど、すべてのページに共通する要素を定義できるページテンプレートです。
 
 ```{note}
-* 本モジュールのライブワークショップの [録画](https://learn.liferay.com/web/guest/d/se1-5-basics-of-styling-in-liferay) をご覧ください。
+* 本モジュールのライブワークショップの [録画](https://learn.liferay.com/documents/d/guest/se1-5-basics-of-styling-in-liferay) をご覧ください。
 * 上記ワークショップで使用されたプレゼンテーション資料はこちら [PDF](https://learn.liferay.com/documents/d/guest/se1-5-basics-of-styling-in-liferay-pdf) からダウンロードしてください。
 ```
 

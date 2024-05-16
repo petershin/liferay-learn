@@ -9,7 +9,7 @@ visibility:
 As already noted, all deployment options are possible, but our Sales approach is SaaS-First. But, what does this really mean, and is this always going to be the right option for your customer?
 
 ```{note}
-* View the [recording](https://learn.liferay.com/web/guest/d/l0-2a-liferay-offering) from the live workshop of this module.
+* View the [recording](https://learn.liferay.com/documents/d/guest/l0-2a-liferay-offering) from the live workshop of this module.
 * Download the [PDF](https://learn.liferay.com/documents/d/guest/l0-2a-liferay-offering-pdf) of the presentation used in the live workshop.
 * Download the [Sales Decision Flow](https://learn.liferay.com/documents/d/guest/new-customer-new-project-sales-decision-flow) referred to in this module.
 ```

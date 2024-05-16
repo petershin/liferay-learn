@@ -20,7 +20,7 @@ visibility:
 * Always use a demo with engaging look and feel, even if the use case is not known
 
 ```{note}
-* View the [recording](https://learn.liferay.com/web/guest/d/se1-2-public-pages-experience) from the live workshop of this module.
+* View the [recording](https://learn.liferay.com/documents/d/guest/se1-2-public-pages-experience) from the live workshop of this module.
 * Download the [PDF](https://learn.liferay.com/documents/d/guest/se1-2-public-pages-experience-pdf) of the presentation used in the live workshop.
 ```
 

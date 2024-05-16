@@ -11,7 +11,7 @@ uuid: 392496d0-56ea-44dc-8f5c-2c6ad181284c
 * The section on Partner Portals includes valuable information which can supplement information provided to prospects on Authentication and Single Sign On.
 
 ```{note}
-* View the [recording](https://learn.liferay.com/web/guest/d/se1-9-success-stories-analysis) from the live workshop of this module.
+* View the [recording](https://learn.liferay.com/documents/d/guest/se1-9-success-stories-analysis) from the live workshop of this module.
 * Download the [PDF](https://learn.liferay.com/documents/d/guest/se1-9-success-stories-analysis-pdf) of the presentation used in the live workshop.
 ```
 

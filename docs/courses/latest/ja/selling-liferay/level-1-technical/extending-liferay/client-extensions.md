@@ -13,7 +13,7 @@ visibility:
 * カスタムコードをLiferayのコアから切り離すことで、アップグレードが迅速かつ容易になり、開発者は使い慣れた言語やフレームワークを使用することができます。
 
 ```{note}
-* 本モジュールのライブワークショップの [録画](https://learn.liferay.com/web/guest/d/se1-7-extending-liferay) をご覧ください。
+* 本モジュールのライブワークショップの [録画](https://learn.liferay.com/documents/d/guest/se1-7-extending-liferay) をご覧ください。
 * 上記ワークショップで使用されたプレゼンテーション資料はこちら [PDF](https://learn.liferay.com/documents/d/guest/se1-7-extending-liferay-pdf) からダウンロードしてください。
 ```
 

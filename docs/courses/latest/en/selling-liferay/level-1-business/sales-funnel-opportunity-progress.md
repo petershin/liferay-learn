@@ -34,7 +34,7 @@ This module provides an overview of
 5. What sales ready assets and messages can be used in during this process
 
 ```{note}
-* View the [recording](https://learn.liferay.com/web/guest/d/sa1-5-sales-funnel-and-best-practices-for-opportunity-progress) from the live workshop of this module.
+* View the [recording](https://learn.liferay.com/documents/d/guest/sa1-5-sales-funnel-and-best-practices-for-opportunity-progress) from the live workshop of this module.
 * Download the [PDF](https://learn.liferay.com/documents/d/guest/sa1-5-sales-funnel-and-best-practices-for-opportunity-progress-pdf) of the presentation used in the live workshop.
 ```
 

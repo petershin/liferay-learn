@@ -24,7 +24,7 @@ In the cases where, for a valid reason, Liferay SaaS offering is not appropriate
 With Liferay PaaS, Liferay provides DXP with all of its capabilities included, and as of DXP 7.4 that also includes Commerce and Analytics capabilities. Liferay also provides and manages the Infrastructure, and the Platform Services, but the Customer is still responsible for most other activities such as Upgrades, Updates, Patches, Security Hotfixes, Software Troubleshooting And Application Delivery.
 
 ```{note}
-* View the [recording](https://learn.liferay.com/web/guest/d/sa1-2b-liferay-pricing-paas) from the live workshop of this module.
+* View the [recording](https://learn.liferay.com/documents/d/guest/sa1-2b-liferay-pricing-paas) from the live workshop of this module.
 * Download the [PDF](https://learn.liferay.com/documents/d/guest/sa1-2b-liferay-pricing-paas-pdf) of the presentation used in the live workshop.
 ```
 

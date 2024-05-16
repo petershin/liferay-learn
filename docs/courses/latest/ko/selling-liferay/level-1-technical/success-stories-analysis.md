@@ -34,7 +34,7 @@ visibility:
 이 모듈에서는 데모 자체를 제시하는 것이 아니라 데모를 보완하기 위한 기존 리소스로 성공 사례를 사용하는 방법에 대한 가이드를 제공합니다.
 
 ```{note}
-* 이 모듈의 라이브 워크숍에서 [녹화](https://learn.liferay.com/web/guest/d/se1-9-success-stories-analytic) 를 확인하세요.
+* 이 모듈의 라이브 워크숍에서 [녹화](https://learn.liferay.com/documents/d/guest/se1-9-success-stories-analytic) 를 확인하세요.
 * 라이브 워크숍에 사용된 프레젠테이션의 [PDF](https://learn.liferay.com/documents/d/guest/se1-9-success-stories-analytic-pdf) 를 다운로드하세요.
 ```
 

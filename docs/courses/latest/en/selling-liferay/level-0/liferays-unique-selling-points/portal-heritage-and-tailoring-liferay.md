@@ -22,7 +22,7 @@ Liferay’s portal heritage gives us a unique perspective:
 * Digital agility
 
 ```{note}
-* View the [recording](https://learn.liferay.com/web/guest/d/l0-4-liferays-unique-selling-points) from the live workshop of this module.
+* View the [recording](https://learn.liferay.com/documents/d/guest/l0-4-liferays-unique-selling-points) from the live workshop of this module.
 * Download the [PDF](https://learn.liferay.com/documents/d/guest/l0-4-liferays-unique-selling-points-pdf) of the presentation used in the live workshop.
 ```
 

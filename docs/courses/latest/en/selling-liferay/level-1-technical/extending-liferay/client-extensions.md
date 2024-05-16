@@ -15,7 +15,7 @@ visibility:
 * Decoupling custom code from Liferay’s core ensures quicker and easier upgrades and frees developers to use the languages and frameworks they are familiar with
 
 ```{note}
-* View the [recording](https://learn.liferay.com/web/guest/d/se1-7-extending-liferay) from the live workshop of this module.
+* View the [recording](https://learn.liferay.com/documents/d/guest/se1-7-extending-liferay) from the live workshop of this module.
 * Download the [PDF](https://learn.liferay.com/documents/d/guest/se1-7-extending-liferay-pdf) of the presentation used in the live workshop.
 ```
 

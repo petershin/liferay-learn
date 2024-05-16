@@ -20,7 +20,7 @@ This module provides a high-level introduction to the Liferay Enterprise Service
 Finally, at a very high-level, it covers the role of EULAs (End User License Agreement) in the contracting approach.
 
 ```{note}
-* View the [recording](https://learn.liferay.com/web/guest/d/sa1-7-contracts) from the live workshop of this module.
+* View the [recording](https://learn.liferay.com/documents/d/guest/sa1-7-contracts) from the live workshop of this module.
 * Download the [PDF](https://learn.liferay.com/documents/d/guest/sa1-7-contracts-pdf) of the presentation used in the live workshop.
 ```
 

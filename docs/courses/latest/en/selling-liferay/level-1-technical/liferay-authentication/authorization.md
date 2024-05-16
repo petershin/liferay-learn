@@ -16,7 +16,7 @@ visibility:
 * Strong security is vital as it is the number one consideration in the OWASP top 10.
 
 ```{note}
-* View the [recording](https://learn.liferay.com/web/guest/d/se1-3-liferay-authentication) from the live workshop of this module.
+* View the [recording](https://learn.liferay.com/documents/d/guest/se1-3-liferay-authentication) from the live workshop of this module.
 * Download the [PDF](https://learn.liferay.com/documents/d/guest/se1-3-liferay-authentication-pdf) of the presentation used in the live workshop.
 ```
 

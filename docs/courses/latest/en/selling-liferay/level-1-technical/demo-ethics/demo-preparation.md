@@ -14,7 +14,7 @@ visibility:
 * Additional hints and tips can help prepare Sales Engineers further to be more effective at delivering demos.
 
 ```{note}
-* View the [recording](https://learn.liferay.com/web/guest/d/se1-10-demo-ethics) from the live workshop of this module.
+* View the [recording](https://learn.liferay.com/documents/d/guest/se1-10-demo-ethics) from the live workshop of this module.
 * Download the [PDF](https://learn.liferay.com/documents/d/guest/se1-10-demo-ethics-pdf) of the presentation used in the live workshop.
 ```
 

@@ -15,7 +15,7 @@ visibility:
 * Deployment strategies are not generally discussed during demos, or early-stage sales meetings, but the information learned during these sessions will help to guide the opportunity to one deployment approach or another.
 
 ```{note}
-* View the [recording](https://learn.liferay.com/web/guest/d/se1-8-deployment-strategies) from the live workshop of this module.
+* View the [recording](https://learn.liferay.com/documents/d/guest/se1-8-deployment-strategies) from the live workshop of this module.
 * Download the [PDF](https://learn.liferay.com/documents/d/guest/se1-8-deployment-strategies-pdf) of the presentation used in the live workshop.
 ```
 

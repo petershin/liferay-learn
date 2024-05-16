@@ -13,7 +13,7 @@ visibility:
 * パートナー・ポータルに関するセクションには、認証とシングル・サイン・オンに関する見込み客に提供される情報を補足できる貴重な情報が含まれている。
 
 ```{note}
-* このモジュールのライブ・ワークショップの [録画](https://learn.liferay.com/web/guest/d/se1-9-success-stories-analysis) をご覧ください。
+* このモジュールのライブ・ワークショップの [録画](https://learn.liferay.com/documents/d/guest/se1-9-success-stories-analysis) をご覧ください。
 * ライブ・ワークショップで使用されたプレゼンテーションの [PDF](https://learn.liferay.com/documents/d/guest/se1-9-success-stories-analysis-pdf) をダウンロードしてください。
 ```
 ## その他のソリューション

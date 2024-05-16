@@ -28,7 +28,7 @@ uuid: 7d1a4e73-0b50-465f-99dc-c531c3f3dd25
 
 [Introduction to Liferay Cloud](./getting-started.md)
 [Development Requirements](./getting-started/development-requirements.md)
-[Configuring Your Github Repository](./getting-started/configuring-your-github-repository.md)
+[Configuring Your GitHub Repository](./getting-started/configuring-your-github-repository.md)
 :::
 
 :::{grid-item-card} Platform Services

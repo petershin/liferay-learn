@@ -55,7 +55,7 @@ Here are the features deprecated in 7.3:
 | Polls | Bundled | Replaced by Forms Reports. |
 | Project Template: project-templates-activator | Archived [in GitHub](https://github.com/liferay/liferay-blade-cli/tree/master/extensions) | No replacement. |
 | Project Template: project-templates-freemarker-portlet | Archived [in GitHub](https://github.com/liferay/liferay-blade-cli/tree/master/extensions) | No replacement. |
-| Screens | Github - iOS: [5.2.0](https://github.com/liferay/liferay-screens/releases/tag/5.2.0), Android: [5.1.0](https://github.com/liferay/liferay-screens/releases/tag/5.1.0-android) |  Use the [Mobile SDK](https://help.liferay.com/hc/en-us/articles/360020447511-Mobile-SDK) and the [Headless APIs](../../../headless-delivery/using-liferay-as-a-headless-platform.md). |
+| Screens | GitHub - iOS: [5.2.0](https://github.com/liferay/liferay-screens/releases/tag/5.2.0), Android: [5.1.0](https://github.com/liferay/liferay-screens/releases/tag/5.1.0-android) |  Use the [Mobile SDK](https://help.liferay.com/hc/en-us/articles/360020447511-Mobile-SDK) and the [Headless APIs](../../../headless-delivery/using-liferay-as-a-headless-platform.md). |
 | Search widget (classic) in *Tools* category | Bundled | Deprecated in 7.1. Replaced by the [Search widgets](../../../using-search/search-pages-and-widgets/search-results/search-results.md) in the *Search* category. |
 | SOAP Web Services | Bundled (disabled) | The Axis Servlet (e.g., publishes services to `http://localhost:8080/api/axis/`) can be enabled with this Portal Property setting `axis.servlet.enabled`. Liferay `*SOAP` classes are deprecated. |
 | Theme: Fjord | Archived | No direct replacement. |

@@ -33,7 +33,7 @@ Liferay Cloud has similar prerequisites to [Liferay Workspace](https://help.life
 
 ## Related Topics
 
-* [Configuring Your Github Repository](../getting-started/configuring-your-github-repository.md)
+* [Configuring Your GitHub Repository](../getting-started/configuring-your-github-repository.md)
 * [Configuring Your Bitbucket Repository](./configuring-your-bitbucket-repository.md)
 * [Configuring Your GitLab Repository](./configuring-your-gitlab-repository.md)
 * [Overview of the Liferay Cloud Deployment Workflow](../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md)

@@ -99,7 +99,7 @@ Administrators can configure [alerts](./manage-and-optimize/real-time-alerts.md)
 
 ## Accelerated Development with Built-in CI/CD
 
-With Liferay PaaS, deliver your application faster with a fully-realized CI/CD strategy available out-of-the-box. [Github and Jenkins](./platform-services/continuous-integration.md) integrations allow each new commit or pull request to trigger a build that can be deployed to your [production or non-production environments](./getting-started/understanding-liferay-cloud-environments.md). Each build can tweak your [core Liferay Cloud services](./platform-services.md) or customize Liferay DXP itself.
+With Liferay PaaS, deliver your application faster with a fully-realized CI/CD strategy available out-of-the-box. [GitHub and Jenkins](./platform-services/continuous-integration.md) integrations allow each new commit or pull request to trigger a build that can be deployed to your [production or non-production environments](./getting-started/understanding-liferay-cloud-environments.md). Each build can tweak your [core Liferay Cloud services](./platform-services.md) or customize Liferay DXP itself.
 
 These robust systems enable the creation of fault tolerant processes to meet organizations' unique needs and detect and repair common server problems as they occur. This helps prevent small programming errors from accumulating and causing a server crash.
 
@@ -134,6 +134,6 @@ You can manage client extensions in Liferay SaaS or PaaS from the Liferay Cloud 
 ## Related Topics
 
 * [Development Requirements](./getting-started/development-requirements.md)
-* [Configuring Your Github Repository](./getting-started/configuring-your-github-repository.md)
+* [Configuring Your GitHub Repository](./getting-started/configuring-your-github-repository.md)
 * [Overview of the Liferay Cloud Deployment Workflow](./updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md)
 * [Deploying Changes via the Liferay Cloud Console](./updating-services-in-liferay-paas/deploying-changes-via-the-liferay-cloud-console.md)

@@ -42,7 +42,7 @@ Only volumes in `Deployment` type services may be shared with other services in 
 
 To share a volume:
 
-1. Navigate to the `LCP.json` file in the Github repository for the service (`[ProjectID]/liferay/LCP.json`).
+1. Navigate to the `LCP.json` file in the GitHub repository for the service (`[ProjectID]/liferay/LCP.json`).
 
 1. Enter the following:
      * service's ID
@@ -81,6 +81,6 @@ Volumes persist in your environment even when the services are deleted. You can 
 
 ## Related Topics
 
-* [Configuring Your Github Repository](../getting-started/configuring-your-github-repository.md)
+* [Configuring Your GitHub Repository](../getting-started/configuring-your-github-repository.md)
 * [Configuring via LCP.json](../reference/configuration-via-lcp-json.md)
 * [Understanding Deployment Types](./understanding-deployment-types.md)

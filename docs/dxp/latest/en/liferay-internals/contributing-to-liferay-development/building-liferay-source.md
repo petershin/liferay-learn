@@ -13,7 +13,7 @@ The first step is to ensure you have the tooling installed required to build Lif
 
 ## Building Liferay Portal
 
-The next step is to fork the *liferay-portal* repo from Github and configure the build to use a nightly snapshot bundle.
+The next step is to fork the *liferay-portal* repo from GitHub and configure the build to use a nightly snapshot bundle.
 
 To build Liferay Portal from source, do the following:
 
@@ -23,7 +23,7 @@ To build Liferay Portal from source, do the following:
     git clone https://github.com/liferay/liferay-binaries-cache-2020 --branch master --single-branch --depth 1
     ```
 
-* Fork the liferay-portal repo on Github: https://github.com/liferay/liferay-portal
+* Fork the liferay-portal repo on GitHub: https://github.com/liferay/liferay-portal
 * Clone the forked repo's master branch:
 
     ```
@@ -98,14 +98,14 @@ Create a ticket in JIRA by doing the following:
 * Respond to the Contributor License Agreement displayed by clicking the *Contribute Solution button*.
 * If a ticket already exists for the issue, participate via the existing ticket.
 
-## Github
+## GitHub
 
-Submit your custom changes to Github using the following process:
+Submit your custom changes to GitHub using the following process:
 
 * Commit logical units of work including a reference to your ticket in JIRA. For example: `LPS-83432 Make the example in CONTRIBUTING imperative and concrete`
 * Test your changes thoroughly! Consider the wide variety of operating systems, databases, application servers, and other related technologies Liferay Portal supports. Make sure your changes in one environment don't break something in another environment.
 
-Before pushing your branch to your fork on Github, it's a good idea to rebase on the updated version of upstream/master
+Before pushing your branch to your fork on GitHub, it's a good idea to rebase on the updated version of upstream/master
 
 * Fetch latest commits from master:
 

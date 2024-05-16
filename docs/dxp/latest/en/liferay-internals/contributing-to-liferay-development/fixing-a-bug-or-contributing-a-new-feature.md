@@ -15,7 +15,7 @@ Learn the basic code structure of Liferay Portal to see if you can find where th
 
 Try to fix the bug, rebuild and restart Liferay, and see if you've fixed it! If not, keep iterating until you've fixed it. Try not to touch more code than is absolutely necessary.
 
-Commit the code change to your git repository, and issue a pull request against the main [liferay-portal repo on Github](https://github.com/liferay/liferay-portal).
+Commit the code change to your git repository, and issue a pull request against the main [liferay-portal repo on GitHub](https://github.com/liferay/liferay-portal).
 
 Click Contribute Solution on the bug report on [issues.liferay.com](https://issues.liferay.com/secure/Dashboard.jspa) to document that you fixed it and have recorded the pull request, and congratulate yourself on giving back to our community! For more information, see [Building Liferay Source](./building-liferay-source.md).
 

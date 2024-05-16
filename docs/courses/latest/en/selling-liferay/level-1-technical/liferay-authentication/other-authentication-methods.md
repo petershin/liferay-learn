@@ -31,7 +31,7 @@ _If_ the prospect wants to see authentication to Liferay using an external ID it
 
 In many real-world use cases this is perfectly relevant - where the user selects from a list of providers, but if the prospect’s requirements are for all users to authenticate using a _single_ provider, the out-of-the-box UI might not set the right expectations.
 
-One of Liferay’s Sales Engineers created a simple custom Fragment to provide a button which makes the process seamless. The source-code for this fragment is available in Github [here](https://github.com/lgdd/openid-connect-single-button).
+One of Liferay’s Sales Engineers created a simple custom Fragment to provide a button which makes the process seamless. The source-code for this fragment is available in GitHub [here](https://github.com/lgdd/openid-connect-single-button).
 
 ## SAML, SSO, IDMS
 

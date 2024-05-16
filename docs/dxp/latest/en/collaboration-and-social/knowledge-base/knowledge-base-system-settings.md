@@ -55,7 +55,7 @@ Alternatively, you can enable or disable the article increment priority feature 
 
 ## Source URL Settings
 
-The source URL settings define the source location of Markdown files for import. This should point to a source repository where the files are stored. GitHub is assumed as the default. Once defined, the Knowledge Base displays a button (default label is *Edit on Github*) above each displayed article. Users can click the button to navigate to an article’s source location.
+The source URL settings define the source location of Markdown files for import. This should point to a source repository where the files are stored. GitHub is assumed as the default. Once defined, the Knowledge Base displays a button (default label is *Edit on GitHub*) above each displayed article. Users can click the button to navigate to an article’s source location.
 
 The source URL settings are accessible in the *Knowledge Base Service* section of the Knowledge Base’s System Settings. To enable the source URL, check the *Source URL Enabled* checkbox.
 

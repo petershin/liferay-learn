@@ -20,7 +20,7 @@ taxonomy-category-names:
 
 1. Click the *Edit* icon next to *Unnamed Segment*, and give your segment a name.
 
-    ![Give your new segment a name and begin selecting criteria.](creating-segments/images/01.png)
+    ![Give your new segment a name and begin selecting criteria.](./creating-segments/images/01.png)
 
 1. Drag and drop Segment criteria from the panel on the right to the canvas on the center of the screen. The selector menu at the top of the panel shows you the criteria types you can select:
 
@@ -30,7 +30,7 @@ taxonomy-category-names:
     - **Session Attributes:** Attributes that belong to a person's web session (e.g., browser, geo-location, etc.).
     - **Organization Attributes:** Attributes that belong to an organization (e.g. name, hierarchy, type, etc.).
 
-    ![By default anonymous users are not included in Segments.](creating-segments/images/02.png)
+    ![By default anonymous users are not included in Segments.](./creating-segments/images/02.png)
 
     !!! note
         Anonymous users are excluded from Segments by default. To include them, enable the Include Anonymous toggle. Note, however, that criteria with individual attributes excludes anonymous users regardless of your setting here. Such attributes only apply to known users.
@@ -64,7 +64,7 @@ Each criterion that you add contains fields for customization. The first field i
 
 For example, the `birthDate` criterion's first field is a selector menu containing the options _is before_, _is_, and _is after_. The second field is a date field. You can, therefore, specify a criterion in which only Individuals with a birthday after 31 December 1980 are part of the Segment.
 
-![Individuals with a birthday after 1980 are part of this segment.](creating-segments/images/03.png)
+![Individuals born after 1980 are part of this segment.](./creating-segments/images/03.png)
 
 You can also control the way adjacent criteria interact with each other. For example, if you place criteria next to each other, a small box appears between them with the text `AND`. This means that the two criteria are joined by a logical *And*. Clicking the box changes it to `OR`, which represents a logical *Or*. Selecting *And* narrows the Segment's selection of Individuals; *Or* broadens it.
 
@@ -76,7 +76,11 @@ For example, joining two `birthDate` criteria with the following conditions crea
 
 You can also form subgroups of criteria by dragging and dropping criteria onto each other. An AND/OR box then appears between the subgroup and any adjacent criteria. Together, these tools help you build complex criteria for your Segment.
 
-![These criteria select Millenials interested in Liferay.](creating-segments/images/04.png)
+![These criteria select Millenials using desktops.](./creating-segments/images/04.png)
+
+Using events as criteria offers even more flexibility. For example, you can choose all users who performed the *Add to wish list* event at least once during the last month on a specific asset.
+
+![You can select users who added a specific asset to their wish list and viewed a specific page during the last month.](./creating-segments/images/05.png)
 
 When you are finished configuring the segment, click *Save Segment*.
 
@@ -90,7 +94,7 @@ When you are finished configuring the segment, click *Save Segment*.
 
 1. Click *Add Members* to bring up the Add Members screen, which contains a searchable list of all Individuals.
 
-    ![Select the individuals to add to the segment.](./creating-segments/images/05.png)
+    ![Select the individuals to add to the segment.](./creating-segments/images/06.png)
 
 1. Select the *Individuals* to add to the Segment, then click *Add*.
 

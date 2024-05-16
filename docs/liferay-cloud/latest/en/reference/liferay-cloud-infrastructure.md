@@ -12,9 +12,8 @@ Liferay Cloud is a flexible platform that combines a collection of key component
 
 ![All of the key services and components integrated with Liferay Cloud are shown with their connections here.](./liferay-cloud-infrastructure/images/01.png)
 
-```{note}
-Private cluster subscriptions also include a built-in [Web Application Firewall](../tuning-security-settings/web-application-firewall.md). However, this is [not available with a shared cluster](./platform-limitations.md#security).
-```
+!!! note
+    Private cluster subscriptions support additional security configurations that you can request via [Support tickets](../support-and-troubleshooting/liferay-cloud-support.md#opening-a-support-ticket). However, you must [configure ModSecurity](../tuning-security-settings/web-application-firewall.md) to enable Nginx's firewall capability.
 
 See the following list for a description of the various components.
 

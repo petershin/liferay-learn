@@ -98,9 +98,25 @@ To resolve modification conflicts, you can edit the conflicting material, discar
 
 These conflicts occur when an entity is modified in a publication and then deleted in production (Deletion Modification), or vice versa (Modification Deletion). The only provided resolution for this conflict is to discard the publication's conflicting change.
 
+{bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+` To prevent these conflicts, avoid deleting items modified in a publication by adding the `change.tracking.deletion.protection.enabled=true` property to your [`portal-ext.properties`](../../../installation-and-upgrades/reference/portal-properties.md).
+
+This property blocks the deletion of the item if it's being modified in a publication whether the deletion happens in production, or in another publication.
+
+When attempting to delete an item, an error message is displayed, preventing deletion.
+
+![An error message is shown when users try to delete items modified in a publication.](./resolving-conflicts/images/09.png)
+
+
+!!! important
+    If you are deleting an item that is deleted immediately (e.g., a content page), the deletion is blocked and an error message is shown.
+
+    However, if you are deleting an item that is moved to the [recycle bin](../../../content-authoring-and-management/recycle-bin/using-the-recycle-bin.md) first (e.g., web content articles, blog posts, and documents), the item is moved to the recycle bin and the message is only shown once you delete it from the recycle bin.
+
+    This means that those items  can still generate deletion conflicts even with the protection in place.
+
 ### Missing Requirement Conflicts
 
-![Publications notifies you to resolve Missing Requirement conflicts.](./resolving-conflicts/images/09.png)
+![Publications notifies you to resolve Missing Requirement conflicts.](./resolving-conflicts/images/10.png)
 
 These conflicts occur when a child entity is created or edited in your publication, while its parent has been removed from production. Examples include deleting a folder from production when your publication adds or modifies a sub-folder.
 
@@ -108,7 +124,7 @@ To resolve Missing Requirement conflicts, you can discard the conflicting change
 
 ### Addition Conflict
 
-![Publications notifies you to resolve Addition conflicts.](./resolving-conflicts/images/10.png)
+![Publications notifies you to resolve Addition conflicts.](./resolving-conflicts/images/11.png)
 
 These conflicts only occur when users attempt to revert a publication including a deletion that has already been reverted. Users cannot revert the same publication twice if it included a deletion, since the system cannot add back what has already been added back.
 

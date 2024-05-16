@@ -110,9 +110,9 @@ When attempting to delete an item, an error message is displayed, preventing del
 !!! important
     If you are deleting an item that is deleted immediately (e.g., a content page), the deletion is blocked and an error message is shown.
 
-    However, if you are deleting an item that is moved to the [recycle bin](../../../content-authoring-and-management/recycle-bin/using-the-recycle-bin.md) first (e.g., web content articles, blog posts, and documents), the item is moved to the recycle bin and the message is only shown once you delete it from the recycle bin.
+    However, if you are deleting an item that is moved to the [recycle bin](../../../content-authoring-and-management/recycle-bin/using-the-recycle-bin.md) first (e.g., web content articles, blog posts, and documents), the item is moved to the recycle bin and the message is only shown once you try to delete it from the recycle bin.
 
-    This means that those items  can still generate deletion conflicts even with the protection in place.
+    This means those items can still generate deletion conflicts even with the protection property in place.
 
 ### Missing Requirement Conflicts
 

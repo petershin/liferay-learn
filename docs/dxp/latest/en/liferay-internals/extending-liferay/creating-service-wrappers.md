@@ -51,4 +51,75 @@ Then, follow these steps to deploy the example:
 
 This example outputs a message to the console whenever the `authenticateByEmailAddress` method is called.
 
+## Creating a Service Wrapper Class
+
+1. Choose the service you want to wrap. This example creates a service wrapper for `UserLocalService`, so it extends `UserLocalServiceWrapper`:
+
+    ```{literalinclude} creating-service-wrappers/resources/liferay-j1c2.zip/j1c2-impl/src/main/java/com/acme/j1c2/internal/service/J1C2UserLocalServiceWrapper.java
+        :language: java
+        :lines: 15
+    ```
+
+1. Annotate the class so Liferay knows this is a service wrapper component.
+
+    ```{literalinclude} creating-service-wrappers/resources/liferay-j1c2.zip/j1c2-impl/src/main/java/com/acme/j1c2/internal/service/J1C2UserLocalServiceWrapper.java
+        :language: java
+        :lines: 14
+    ```
+
+1. Create constructor methods for your wrapper matching the constructors for the base wrapper class. The first one will have no arguments, and the second one will receive the service as an argument.
+
+    ```{literalinclude} creating-service-wrappers/resources/liferay-j1c2.zip/j1c2-impl/src/main/java/com/acme/j1c2/internal/service/J1C2UserLocalServiceWrapper.java
+        :language: java
+        :lines: 17-23
+    ```
+
+1. Choose the method you want to override and add your own implementation.
+
+    ```{literalinclude} creating-service-wrappers/resources/liferay-j1c2.zip/j1c2-impl/src/main/java/com/acme/j1c2/internal/service/J1C2UserLocalServiceWrapper.java
+        :language: java
+        :lines: 25-41
+    ```
+
+## Overriding a Method
+
+1. Open the `J1C2UserLocalServiceWrapper` class on your text editor or IDE.
+
+1. Inside the class, create a public method called `getUser`. This will override `UserLocalService`'s `getUser` method. As such, it must pass a `long` as an argument and return a `User`. This method should also throw a `PortalException`. Make sure to add the `@Override` annotation.
+
+    ```java
+    @Override
+    public User getUser(long userId) throws PortalException {
+    }
+    ```
+
+1. Create a similar method to the one in the example so that every time the `getUser` method is called, it outputs a message to the console.
+
+    ```java
+    if (_log.isInfoEnabled()) {
+        _log.info(
+            "Invoking #getUser(long)");
+    }
+    ```
+
+1. You still want `getUser` to be called, so make the method return the results of calling `getUser`'s super method.
+
+    ```java
+    return super.getUser(userId);
+    ```
+
+1. In the end, your method should look like this:
+
+    ```java
+    @Override
+    public User getUser(long userId) throws PortalException {
+        if (_log.isInfoEnabled()) {
+            _log.info(
+                "Invoking #getUser(long)");
+        }
+
+        return super.getUser(userId);
+    }
+    ```
+
 ## Related Topics

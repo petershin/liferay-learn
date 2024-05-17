@@ -6,6 +6,7 @@ toc:
   - ./using-custom-object-apis/using-nestedfields-to-query-related-entries.md
   - ./using-custom-object-apis/using-nestedfields-to-audit-entry-history.md
   - ./using-custom-object-apis/using-aggregation-terms-with-rest-apis.md
+  - ./using-custom-object-apis/using-object-apis-with-base64-formatted-files.md
 uuid: 8db76b2e-6b09-488e-9e76-82d23b028cca
 taxonomy-category-names:
 - Integration
@@ -53,6 +54,10 @@ While the object is active, you can use these APIs to perform basic CRUD operati
 :::{grid-item-card} Using Aggregation Terms with REST APIs
 :link: ./using-custom-object-apis/using-aggregation-terms-with-rest-apis.md
 :::
+
+:::{grid-item-card} Using Object APIs With Base64 Formatted Files
+:link: ./using-custom-object-apis/using-object-apis-with-base64-formatted-files.md
+:::
 ::::
 
 ## Default Company-Scoped REST APIs
@@ -75,9 +80,8 @@ Default REST APIs are available for all company-scoped objects.
 | PATCH       | `/{entryId}`                        | Updates the specified entry; only fields included in the API call are changed                                |
 | PUT         | `/{entryId}`                        | Replaces the specified entry's details with those provided in the API call                                   |
 
-```{note}
-Batch operations are only available for company-scoped objects.
-```
+!!! note
+    Batch operations are only available for company-scoped objects.
 
 ## Default Site-Scoped REST APIs
 

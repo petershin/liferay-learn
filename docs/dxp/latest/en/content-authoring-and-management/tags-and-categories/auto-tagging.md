@@ -14,9 +14,9 @@ uuid: a9274b09-7106-430d-927f-26472612acd4
 
 # Auto-Tagging
 
-<!-- This intro is a good start, but I'd like to see more high level detail. You can make a diagram that shows how it works. You can illustrate your text by showing some sample auto-tagged content. You can mention that it works by making use of one of three services that determine the tags. -Rich -->
-
 Auto-tagging is the process of assigning descriptive tags or labels to digital content automatically without manual intervention. When having multiple content, auto-tagging organizes and groups this content by determining related tags, which is assigned according to attributes, context, or metadata.
+
+![Visualizing Auto-Tagging in Blog Entry](./auto-tagging/auto-tagging/Images/01.png)
 
 Liferay offers the option for automatic tagging assets and images within your work processes, allowing the user to configure it at three levels: *Global*, *Virtual Instance* and *Site*. The user can review and adjust tags to meet the accuracy and validity of their specific requirements. The following articles will teach how to configure and use this functionality.
 

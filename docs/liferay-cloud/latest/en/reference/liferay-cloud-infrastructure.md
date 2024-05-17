@@ -12,10 +12,7 @@ Liferay Cloud is a flexible platform that combines a collection of key component
 
 ![All of the key services and components integrated with Liferay Cloud are shown with their connections here.](./liferay-cloud-infrastructure/images/01.png)
 
-!!! note
-    Private cluster subscriptions support additional security configurations that you can request via [Support tickets](../support-and-troubleshooting/liferay-cloud-support.md#opening-a-support-ticket). However, you must [configure ModSecurity](../tuning-security-settings/web-application-firewall.md) to enable Nginx's firewall capability.
-
-See the following list for a description of the various components.
+Here is description of the various components.
 
 ## Advanced Application Monitoring
 
@@ -45,9 +42,12 @@ Liferay Cloud distributes HTTP(S) traffic across multiple instances. It uses [GK
 
 ## Web Server
 
-An [Nginx](https://www.nginx.com/) web server is used as a gateway to other services within every Liferay Cloud environment. This includes a build-in firewall that provides Layer 7 attack protection, IP protection, and audit logging.
+An [Nginx](https://www.nginx.com/) web server acts as a gateway to other services within every Liferay Cloud environment. It also includes a firewall feature, but you must [configure ModSecurity](../tuning-security-settings/web-application-firewall.md) to enable it.
 
-This server is configurable as one of Liferay Cloud's main services. See the [Web Server Service](../platform-services/web-server-service.md) for more information.
+!!! note
+    Private cluster subscriptions also support additional security configurations that you can request via [Support tickets](../support-and-troubleshooting/liferay-cloud-support.md#opening-a-support-ticket).
+
+The web server is configurable as one of Liferay Cloud's main services. See the [Web Server Service](../platform-services/web-server-service.md) for more information.
 
 ## Liferay DXP
 

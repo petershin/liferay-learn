@@ -38,7 +38,7 @@ Then, follow these steps to deploy the example:
 1. Confirm the deployment in the Liferay Docker container console.
 
     ```bash
-    STARTED com.acme.j1c2.impl_1.0.0 [1630]
+    STARTED com.acme.j1c2.impl_1.0.0 [1439]
     ```
 
 1. Verify the example module's customization. Open your browser to `https://localhost:8080`.
@@ -46,7 +46,7 @@ Then, follow these steps to deploy the example:
 1. Log out of Liferay and log back in. The service wrapper prints this message to the Liferay Docker container console:
 
     ```bash
-    INFO  [http-nio-8080-exec-6][J1C2UserLocalServiceWrapper:34] Invoking #authenticateByEmailAddress(long, String, String, Map, Map, Map)
+    INFO  [http-nio-8080-exec-6][J1C2UserLocalServiceWrapper:33] Invoking #authenticateByEmailAddress(long, String, String, Map, Map, Map)
     ```
 
 This example outputs a message to the console whenever the `authenticateByEmailAddress` method is called.
@@ -93,6 +93,12 @@ This example outputs a message to the console whenever the `authenticateByEmailA
     }
     ```
 
+1. Since this method returns the `User` object, import it at the top of the file.
+
+    ```java
+    import com.liferay.portal.kernel.model.User;
+    ```
+
 1. Create a similar method to the one in the example so that every time the `getUser` method is called, it outputs a message to the console.
 
     ```java
@@ -122,4 +128,28 @@ This example outputs a message to the console whenever the `authenticateByEmailA
     }
     ```
 
+1. Build and deploy your module.
+
+    ```bash
+    ./gradlew build deploy -Ddeploy.docker.container.id=$(docker ps -lq)
+    ```
+
+## Testing Your Service Wrapper
+
+1. Go back to `https://localhost:8080`.
+
+1. Click *My Profile* in the User menu. This will take you to your profile page.
+
+1. When you open your profile page, Liferay calls the `getUser` method a couple times. Check your console for the following message:
+
+```bash
+INFO  [http-nio-8080-exec-4][J1C2UserLocalServiceWrapper:47] Invoking #getUser(long)
+```
+
+Congratulations! You've customized a service's methods using a Liferay service wrapper.
+
 ## Related Topics
+
+- [Using an OSGi Service](../fundamentals/using-an-osgi-service.md)
+- [Using Job Scheduler](../../liferay-development/core-frameworks/job-scheduler-framework/using-job-scheduler.md)
+- [Users](../../users-and-permissions/users.md)

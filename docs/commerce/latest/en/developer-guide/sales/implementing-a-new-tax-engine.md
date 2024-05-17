@@ -149,7 +149,7 @@ q4b9-commerce-tax-engine=Q4B9 Commerce Tax Engine
 this-tax-engine-serves-a-fixed-x-percent-flat-tax-rate=This tax engine serves a fixed {0} percent flat tax rate.
 ```
 
-> See [Localizing Your Application](../../../../../dxp/latest/en/liferay-development/building-applications/developing-a-java-web-application/using-mvc/using-localized-messages-in-an-mvc-portlet.md) for more information.
+> See [Localizing Your Application](https://learn.liferay.com/w/dxp/liferay-development/building-applications/developing-a-java-web-application/using-mvc/using-localized-messages-in-an-mvc-portlet) for more information.
 
 ## Conclusion
 
@@ -157,5 +157,5 @@ Congratulations! You now know the basics for implementing the `CommerceTaxEngine
 
 ## Related Topics
 
-* [Localizing Your Application](../../../../../dxp/latest/en/liferay-development/building-applications/developing-a-java-web-application/using-mvc/using-localized-messages-in-an-mvc-portlet.md)
+* [Localizing Your Application](https://learn.liferay.com/w/dxp/liferay-development/building-applications/developing-a-java-web-application/using-mvc/using-localized-messages-in-an-mvc-portlet)
 * [Setting Rates for Tax Calculations](../../pricing/configuring-taxes/setting-rates-for-tax-calculations.md)

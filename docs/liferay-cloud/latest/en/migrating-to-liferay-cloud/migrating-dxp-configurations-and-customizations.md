@@ -14,7 +14,7 @@ Now that your database and document library are applied to your Liferay Cloud en
 First, organize the Liferay configuration files from your on-premises installation you want to migrate. This includes any [portal property files](../customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.md#portal-properties) you are using.
 
 ```{tip}
-Liferay-specific code belongs in the `liferay` folder, which is organized like a [Liferay DXP workspace](https://learn.liferay.com/w/dxp/developing-applications/tooling/liferay_workspace).
+Liferay-specific code belongs in the `liferay` folder, which is organized like a [Liferay DXP workspace](https://learn.liferay.com/w/dxp/liferay-development/tooling/liferay-workspace).
 ```
 
 In the Liferay Cloud project repository you [cloned previously](./matching-dxp-versions.md#clone-the-liferay-cloud-repository), navigate to the `liferay/configs/[ENV]/` folders (which correspond to your Liferay Cloud environments),

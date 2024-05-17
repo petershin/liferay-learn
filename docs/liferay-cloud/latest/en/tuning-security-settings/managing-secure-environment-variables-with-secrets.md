@@ -8,7 +8,7 @@ uuid: 4ad07a28-aaef-4c25-8909-4a7fb7970455
 ---
 # Managing Secure Environment Variables with Secrets
 
-Secrets allow you to securely store variables for any environment within Liferay Cloud. Whereas any user with permission to view your Liferay Cloud project can view your [environment variables](../reference/defining-environment-variables.md), secrets are only viewable if their role has been given permission to view them.
+Secrets allow you to securely store variables for any environment within Liferay Cloud. Whereas any user with permission to view your Liferay Cloud project can view your [environment variables](https://learn.liferay.com/w/liferay-cloud/reference/defining-environment-variables), secrets are only viewable if their role has been given permission to view them.
 
 ## What is a Secret?
 
@@ -116,5 +116,5 @@ When you deploy the file to your service, the secret variable appears with any o
 
 ## Related Topics
 
-* [Configuration via LCP.json](../reference/configuration-via-lcp-json.md)
-* [Defining Environment Variables](../reference/defining-environment-variables.md)
+* [Configuration via LCP.json](https://learn.liferay.com/w/liferay-cloud/reference/configuration-via-lcp-json)
+* [Defining Environment Variables](https://learn.liferay.com/w/liferay-cloud/reference/defining-environment-variables)

@@ -117,7 +117,7 @@ Once you're running the appropriate fix pack of DXP 7.1/7.2, follow these steps 
     * Commerce Enterprise is available from [Help Center](https://customer.liferay.com/downloads?p_p_id=com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_productAssetCategoryId=118190997&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_fileTypeAssetCategoryId=118191001).
     * Commerce Community is available from the [Liferay Commerce Community Download Page](https://www.liferay.com/downloads-community)
 
-1. Deploy the `LPKG` to the `[Liferay Home]/deploy` folder. To learn more about deploying applications to Liferay DXP, see [Installing Apps](../../../../dxp/latest/en/system-administration/installing-and-managing-apps/installing-apps.md).
+1. Deploy the `LPKG` to the `[Liferay Home]/deploy` folder. To learn more about deploying applications to Liferay DXP, see [Installing Apps](https://learn.liferay.com/w/dxp/system-administration/installing-and-managing-apps/installing-apps).
 
 1. Verify that the messages similar to those shown below appear in the application server console:
 
@@ -137,7 +137,7 @@ Once you're running the appropriate fix pack of DXP 7.1/7.2, follow these steps 
 
 ### Clearing Stale Data and Verifying the Upgrade Process
 
-1. Delete the `[Liferay Home]/osgi/state` folder. To learn more about OSGi folders, see [Installing Apps](../../../../dxp/latest/en/system-administration/installing-and-managing-apps/installing-apps.md).
+1. Delete the `[Liferay Home]/osgi/state` folder. To learn more about OSGi folders, see [Installing Apps](https://learn.liferay.com/w/dxp/system-administration/installing-and-managing-apps/installing-apps).
 
 1. Start the application server.
 
@@ -186,5 +186,5 @@ Once reindexing is complete, the upgraded Liferay Commerce instance is ready for
 
 ## Related Topics
 
-* [Installing Apps](../../../../dxp/latest/en/system-administration/installing-and-managing-apps/installing-apps.md)
+* [Installing Apps](https://learn.liferay.com/w/dxp/system-administration/installing-and-managing-apps/installing-apps)
 * [Liferay Commerce Fix Delivery Method](../get-help/commerce-enterprise-support/liferay-commerce-fix-delivery-method.md)

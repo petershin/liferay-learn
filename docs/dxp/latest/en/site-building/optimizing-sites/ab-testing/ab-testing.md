@@ -17,7 +17,7 @@ Consider the following example. A bank's marketing team creates a Content Page a
 
 ![Using A/B Test to compare the efficiency of two different call-to-action buttons](./ab-testing/images/01.png)
 
-To run A/B Tests, you must have your Liferay DXP instance [connected to Liferay Analytics Cloud](../../../../../../analytics-cloud/latest/en/getting-started/connecting-liferay-dxp-to-analytics-cloud.md). Here's the process:
+To run A/B Tests, you must have your Liferay DXP instance [connected to Liferay Analytics Cloud](https://learn.liferay.com/w/analytics-cloud/getting-started/connecting-liferay-dxp-to-analytics-cloud). Here's the process:
 
 * You create the A/B test in Liferay DXP.
 * The A/B test automatically synchronizes with Analytics Cloud.

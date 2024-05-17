@@ -80,7 +80,7 @@ liferay-sample-commerce-checkout-step-oauth-application-user-agent:
     type: oAuthApplicationUserAgent
 ```
 
-Another important part of the `client-extension.yaml` is in the `liferay-sample-commerce-checkout-step-oauth-application-user-agent` definition. The `serviceAddress` parameter defines where the service runs locally and the `serviceScheme` parameter defines the protocol. The `name` field defines the name of the OAuth application user agent. The `scopes` field defines the access given to the headless API. This section sets up Liferay as the authorization server, so the checkout step you deploy next can invoke the resource server's secure endpoint and send a payload. In the example, the purchase order number entered by the user gets added to the order through Liferay's API. See [OAuth User Agent YAML Configuration Reference](../../../../../dxp/latest/en/liferay-development/configuration-as-code/oauth-user-agent-yaml-configuration-reference.md) for more information.
+Another important part of the `client-extension.yaml` is in the `liferay-sample-commerce-checkout-step-oauth-application-user-agent` definition. The `serviceAddress` parameter defines where the service runs locally and the `serviceScheme` parameter defines the protocol. The `name` field defines the name of the OAuth application user agent. The `scopes` field defines the access given to the headless API. This section sets up Liferay as the authorization server, so the checkout step you deploy next can invoke the resource server's secure endpoint and send a payload. In the example, the purchase order number entered by the user gets added to the order through Liferay's API. See [OAuth User Agent YAML Configuration Reference](https://learn.liferay.com/w/dxp/liferay-development/configuration-as-code/oauth-user-agent-yaml-configuration-reference) for more information.
 
 ## Deploy the Checkout Step Client Extension
 
@@ -231,5 +231,5 @@ Then, it calls the `patch()` method on the `WebClient`, setting the `MediaType` 
 ## Related Topics
 
 * [Using the Shipping Engine Client Extension](./using-the-shipping-engine-client-extension.md)
-* [Using a Microservice Client Extension](../../../../../dxp/latest/en/liferay-development/integrating-microservices/using-a-microservice-client-extension.md)
-* [OAuth User Agent YAML Configuration Reference](../../../../../dxp/latest/en/liferay-development/configuration-as-code/oauth-user-agent-yaml-configuration-reference.md)
+* [Using a Microservice Client Extension](https://learn.liferay.com/w/dxp/liferay-development/integrating-microservices/using-a-microservice-client-extension)
+* [OAuth User Agent YAML Configuration Reference](https://learn.liferay.com/w/dxp/liferay-development/configuration-as-code/oauth-user-agent-yaml-configuration-reference)

@@ -15,7 +15,7 @@ To do this, you must first have two or more Catalogs, and at least one Catalog p
 
 ## Copying an Existing Catalog Page
 
-In Liferay DXP 7.4 U22+ and GA22+, to copy a Catalog Page in the Minium site, you must first [enable Private Pages](../../../../dxp/latest/en/site-building/creating-pages/understanding-pages.md#enabling-private-pages) for your instance. If you are on an earlier version, this step isn't necessary. 
+In Liferay DXP 7.4 U22+ and GA22+, to copy a Catalog Page in the Minium site, you must first [enable Private Pages](https://learn.liferay.com/w/dxp/site-building/creating-pages/understanding-pages#enabling-private-pages) for your instance. If you are on an earlier version, this step isn't necessary. 
 
 1. Once the Private Pages are active, open the *Site Menu* (![Site Menu](../images/icon-product-menu.png)) and go to *Site Builder* &rarr; *Pages*.
 

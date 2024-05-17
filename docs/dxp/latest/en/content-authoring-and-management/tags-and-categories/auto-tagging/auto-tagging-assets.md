@@ -87,6 +87,30 @@ The OpenNLP provider has been configured.
 
 If there are multiple virtual instances on the server, you can override these settings for each instance from *Control Panel* &rarr; *Instance Settings* &rarr; *Assets*.
 
+After changing an asset, you can see the tags displayed while editing it. An example for this is *Blogs Entry*.
+
+1. Follow the previous steps on See [Configuring OpenNLP Text Auto Tagging](#configuring-opennlp-text-auto-tagging) and proceed to the *OpenNLP Text Auto-Tagging* page under *VIRTUAL INSTANCE SCOPE*.
+
+1. Set your *Confidence Threshold* value to `0.01`.
+
+1. In *Enable OpenNLP Text Auto-Tagging For*, select *Blogs Entry*.
+
+   ![Filling out the form for OpenNLP](./auto-tagging-assets/images/05.png)
+
+1. Click *Update*
+
+1. Go to your Home Page and click the *Product Menu* &rarr; *Content and Data* &rarr; *Blogs*.
+
+1. Click *New* and fill your new blog. In the *Content* section, it is recommended an extensive text so the functionality will have more tags to be displayed.
+
+1. Click *Publish* when finished.
+
+1. Click the Options icon (![Click on the options icon to access the Edit button.](../../images/icon-options.png)) and click Edit.
+
+1. Select the *Categorization* field and under *Other Metadata*, you will see your tags displayed.
+
+   ![Seeing auto-tagging on Blogs](./auto-tagging-assets/images/06.png)
+
 ## Related Topics
 
 - [Auto-Tagging Images](./auto-tagging-images.md)

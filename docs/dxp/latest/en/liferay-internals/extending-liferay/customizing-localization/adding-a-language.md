@@ -50,13 +50,11 @@ By default, the [`portal.properties`](https://github.com/liferay/liferay-portal/
     locales.enabled=am_ET,ar_SA,fa_IR,en_US,zh_CN,ja_JP
     ```
 
-1. Add the language keys for your new language. You can do this in three ways:
+1. Add the language keys for your new language. You can do this in two ways:
 
    - Use the [Language Override tool](#adding-language-keys-with-the-language-override-tool). This is the recommended method of adding new language keys since {bdg-secondary}`Liferay DXP 7.4 U4/Portal 7.4 GA8.`.
 
    - Use a [language module](#adding-language-keys-with-a-language-module) and write your language keys in a language.properties file. This method offers more control over the language settings such as writing direction and name structure.
-
-   - Generate translations automatically with the [Language Builder tool](./automatically-generating-translations.md). Some translations may not be exact and should be overridden manually with the [Language Override tool](../../../system-administration/configuring-liferay/changing-translations-with-language-override.md).
 
 1. Navigate to *Control Panel* &rarr; *Instance Settings* &rarr; *Localization*. Verify and move the new language to the current languages. Click *Save*.
 

@@ -3,7 +3,7 @@ uuid: 1c3db0c7-93ae-47c7-abbd-ae2e3e278cb0
 ---
 # Creating Service Wrappers
 
-Introduction
+Service wrappers allow you to override default service methods to add extra functionality. For example, if you add a new field to Liferay's `User` object, you might want it's value to be saved whenever the `addUser` or `updateUser` methods of Liferay's API are called. Liferay's service wrappers provide easy-to-use extension points for customizing Liferay's services.
 
 ## Deploying a Service Wrapper
 

@@ -13,7 +13,7 @@ The users configuration defines the look and feel of the personal menu, the defa
 
 To access the users settings, open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)) and navigate to *Control Panel* &rarr; *Configuration* &rarr; *Instance Settings*, and select the *Users* category under the *PLATFORM* section. 
 
-The Users Instance configuration contains three entries:
+The Users Instance configuration contains several entries:
 
 | Configuration             | Purpose                                                                                                        |
 | :------------------------ | :------------------------------------------------------------------------------------------------------------- |
@@ -32,7 +32,7 @@ The Personal Menu configuration entry specifies whether personal applications us
 
 {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+`
 
-Use this section to specify the limit for file size and image dimensions for user portraits. There is also a toggle to check the image token on user portraits and organization logos before displaying them.
+Use this section to specify the maximum file size and image dimensions allowed for user portraits. There is also a toggle to check the image token on user portraits and organization logos before displaying them.
 
 | Configuration     | Purpose                                                                                                                                                                                                                               |
 | :---------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |

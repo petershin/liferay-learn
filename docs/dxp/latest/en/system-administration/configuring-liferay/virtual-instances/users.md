@@ -18,6 +18,7 @@ The Users Instance configuration contains three entries:
 | Configuration             | Purpose                                                                                                        |
 | :------------------------ | :------------------------------------------------------------------------------------------------------------- |
 | Personal Menu             | Configure the look and feel of personal applications and whether the Personal Menu appears in the Control Menu |
+| User Images               | Configure the limit on user portrait file size and dimensions.                                                 |
 | Default User Associations | Automatically confer membership to some sites, roles, and user groups                                          |
 | Fields                    | Enable and disable some optional fields from the user form                                                     |
 
@@ -30,6 +31,8 @@ The Personal Menu configuration entry specifies whether personal applications us
 ## User Images
 
 {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+`
+
+Use this section to specify the limit for file size and image dimensions for user portraits. There is also a toggle to check the image token on user portraits and organization logos before displaying them.
 
 | Configuration     | Purpose                                                                                                                                                                                                                               |
 | :---------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |

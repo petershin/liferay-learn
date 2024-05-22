@@ -14,14 +14,6 @@ import org.osgi.service.component.annotations.Component;
 @Component(service = ServiceWrapper.class)
 public class J1C2UserLocalServiceWrapper extends UserLocalServiceWrapper {
 
-	public J1C2UserLocalServiceWrapper() {
-		super(null);
-	}
-
-	public J1C2UserLocalServiceWrapper(UserLocalService userLocalService) {
-		super(userLocalService);
-	}
-
 	@Override
 	public int authenticateByEmailAddress(
 			long companyId, String emailAddress, String password,

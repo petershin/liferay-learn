@@ -46,7 +46,7 @@ Then, follow these steps to deploy the example:
 1. Log out of Liferay and log back in. The service wrapper prints this message to the Liferay Docker container console:
 
     ```bash
-    INFO  [http-nio-8080-exec-6][J1C2UserLocalServiceWrapper:33] Invoking #authenticateByEmailAddress(long, String, String, Map, Map, Map)
+    INFO  [http-nio-8080-exec-6][J1C2UserLocalServiceWrapper:25] Invoking #authenticateByEmailAddress(long, String, String, Map, Map, Map)
     ```
 
 This example outputs a message to the console whenever the `authenticateByEmailAddress` method is called.
@@ -67,18 +67,11 @@ This example outputs a message to the console whenever the `authenticateByEmailA
         :lines: 14
     ```
 
-1. Create constructor methods for your wrapper matching the constructors for the base wrapper class. The first one will have no arguments, and the second one will receive the service as an argument.
-
-    ```{literalinclude} creating-service-wrappers/resources/liferay-j1c2.zip/j1c2-impl/src/main/java/com/acme/j1c2/internal/service/J1C2UserLocalServiceWrapper.java
-        :language: java
-        :lines: 17-23
-    ```
-
 1. Choose the method you want to override and add your own implementation.
 
     ```{literalinclude} creating-service-wrappers/resources/liferay-j1c2.zip/j1c2-impl/src/main/java/com/acme/j1c2/internal/service/J1C2UserLocalServiceWrapper.java
         :language: java
-        :lines: 25-41
+        :lines: 17-33
     ```
 
 ## Overriding a Method
@@ -143,7 +136,7 @@ This example outputs a message to the console whenever the `authenticateByEmailA
 1. When you open your profile page, Liferay calls the `getUser` method a couple times. Check your console for the following message:
 
 ```bash
-INFO  [http-nio-8080-exec-4][J1C2UserLocalServiceWrapper:47] Invoking #getUser(long)
+INFO  [http-nio-8080-exec-4][J1C2UserLocalServiceWrapper:39] Invoking #getUser(long)
 ```
 
 Congratulations! You've customized a service's methods using a Liferay service wrapper.

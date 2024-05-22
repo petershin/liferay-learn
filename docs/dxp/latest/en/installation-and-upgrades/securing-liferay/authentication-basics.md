@@ -49,11 +49,11 @@ Regardless of the authentication type, users must always enter a password. You c
 
 1. Navigate to the Control Panel.
 
-1. Click on *Configuration* &rarr; *Instance Settings* &rarr; *Platform* &rarr; *User Authentication*.
+1. Click *Configuration* &rarr; *Instance Settings* &rarr; *Platform* &rarr; *User Authentication*.
 
 1. Choose an option under the *How do users authenticate?* selector.
 
-    ![You can select from three types of authentication.](./authentication-basics/images/03.png)
+   ![You can select from three types of authentication.](./authentication-basics/images/03.png)
 
 ### Configuring Authentication Type Using Properties
 
@@ -71,15 +71,13 @@ The Sign In widget calls the various mechanisms (the portal database, an LDAP se
 
 ### Disabling Guest Account Creation
 
-To prevent guest users from creating new user accounts:
-
 1. Navigate to the Control Panel &rarr; *Configuration* &rarr; *Instance Settings* &rarr; *Platform* &rarr; *User Authentication*.
 
-1. Un-check *Allow strangers to create accounts?*.
+1. Uncheck *Allow strangers to create accounts?*.
 
 1. Click *Save*.
 
-    ![Guests can't create accounts if this box is unchecked.](./authentication-basics/images/04.png)
+   ![Guests can't create accounts if this box is unchecked.](./authentication-basics/images/04.png)
 
 ### Preventing Password Resets
 
@@ -103,10 +101,10 @@ Prevent bots from creating and logging into accounts by enabling CAPTCHA or reCA
 
 1. Navigate to the Control Panel &rarr; *Configuration* &rarr; *System Settings* &rarr; *Security Tools* &rarr; *CAPTCHA*.
 
-    ![CAPTCHA is enabled by default.](./authentication-basics/images/02.png)
+   ![CAPTCHA is enabled by default.](./authentication-basics/images/02.png)
 
-    !!! note
-        By default, *Create Account CAPTCHA* and *Send Password CAPTCHA* are enabled. If necessary, enable Message Boards CAPTCHA.
+   !!! note
+       By default, *Create Account CAPTCHA* and *Send Password CAPTCHA* are enabled. If necessary, enable Message Boards CAPTCHA.
 
 1. Choose a CAPTCHA engine. By default, Simple CAPTCHA is enabled. You can also select Google's reCAPTCHA, which requires you configure the external service separately. If you select reCAPTCHA, supply your public and private key from Google.
 
@@ -115,7 +113,7 @@ Prevent bots from creating and logging into accounts by enabling CAPTCHA or reCA
 1. Click *Save* when finished.
 
 !!! important
-    Since {bdg-secondary}`Liferay DXP 2024.Q1.8/Portal 7.4 GA120`, the Gogo shell and server administration pages (for a site admin) enforce captchas, even if the **Maximum Challenges** field is set to a negative number. These pages won't be available without selecting a captcha engine.
+    Since {bdg-secondary}`Liferay DXP 2024.Q1.8/Portal 7.4 GA120`, the Gogo shell and server administration pages (for a site admin) enforce captchas, even if the **Maximum Challenges** field is set to a negative number. These pages are not available without selecting a captcha engine.
 
     To disable captchas for these pages, add `captcha.enforce.disabled=true` to your `portal-ext.properties` file. You should only do this for testing with Continuous Integration (CI).
 

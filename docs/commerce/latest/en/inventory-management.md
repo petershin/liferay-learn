@@ -68,46 +68,4 @@ Developers interested in creating their own custom low stock action can read [Im
 
 You can configure availability estimates for products that are out of stock. This informs customers when it becomes available again. Read [Availability Estimates](./inventory-management/availability-estimates.md) for more information.
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card}  Setting up Warehouses
-:link: ./inventory-management/setting-up-warehouses.md
-:::
-
-:::{grid-item-card}  Setting Inventory by Warehouse
-:link: ./inventory-management/setting-inventory-by-warehouse.md
-:::
-
-:::{grid-item-card}  Low Stock Action
-:link: ./inventory-management/low-stock-action.md
-:::
-
-:::{grid-item-card}  Availability Estimates
-:link: ./inventory-management/availability-estimates.md
-:::
-
-:::{grid-item-card}  Managing Product Status
-:link: ./inventory-management/managing-product-status.md
-:::
-
-:::{grid-item-card}  Using the Inventory Management System
-:link: ./inventory-management/using-the-inventory-management-system.md
-:::
-
-:::{grid-item-card}  Inventory Management Reference Guide
-:link: ./inventory-management/inventory-management-reference-guide.md
-:::
-
-:::{grid-item-card}  Warehouse Reference Guide
-:link: ./inventory-management/warehouse-reference-guide.md
-:::
-
-:::{grid-item-card}  Product Inventory Configuration Reference Guide
-:link: ./inventory-management/product-inventory-configuration-reference-guide.md
-:::
-
-:::{grid-item-card}  Developer Guide
-:link: ./inventory-management/developer-guide.md
-:::
-::::

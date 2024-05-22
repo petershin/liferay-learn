@@ -63,37 +63,5 @@ Don't know where to start? Start with Customer Portals.
 
 [Let's Go!](./what-challenges-does-liferay-solve-horizontal-solutions/customer-portals.md)
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} Customer Portals
-:link: ./what-challenges-does-liferay-solve-horizontal-solutions/customer-portals.md
-
-:::
-
-:::{grid-item-card} Digital Commerce Sites
-:link: ./what-challenges-does-liferay-solve-horizontal-solutions/digital-commerce-sites.md
-
-:::
-
-:::{grid-item-card} Enterprise Websites
-:link: ./what-challenges-does-liferay-solve-horizontal-solutions/enterprise-websites.md
-
-:::
-
-:::{grid-item-card} Supplier Portals
-:link: ./what-challenges-does-liferay-solve-horizontal-solutions/supplier-portals.md
-
-:::
-
-:::{grid-item-card} Partner Portals
-:link: ./what-challenges-does-liferay-solve-horizontal-solutions/partner-portals.md
-
-:::
-
-:::{grid-item-card} Intranets
-:link: ./what-challenges-does-liferay-solve-horizontal-solutions/intranets.md
-
-:::
-::::
 

@@ -42,48 +42,4 @@ Beyond having a general understanding of and selling Enterprise Software, you sh
 
 Start Level 1 with [Tailored Solution Highlights](./level-1-business/tailored-solution-highlights.md).
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} Tailored Solution Highlights
-:link: ./level-1-business/tailored-solution-highlights.md
-
-Explores the tailored solutions that have been built on Liferay, showcasing flexibility and possibilities with real examples.
-:::
-
-:::{grid-item-card} Outbound Prospecting 101 for Liferay Opportunities
-:link: ./level-1-business/outbound-prospecting.md
-
-Provides best practices for outbound prospecting for Liferay opportunities.
-:::
-
-:::{grid-item-card} Liferay Pricing
-:link: ./level-1-business/liferay-pricing.md
-
-Explains the pricing model for Liferay SaaS, PaaS, and DXP Self-Hosted.
-:::
-
-:::{grid-item-card} Liferay Sales Presentations and How to Master Them
-:link: ./level-1-business/liferay-sales-presentations.md
-
-Outlines the types of sales presentations that are available, along with how and when to use them.
-:::
-
-:::{grid-item-card} Sales Funnel and Best Practices for Opportunity Progress
-:link: ./level-1-business/sales-funnel-opportunity-progress.md
-
-Shows how a Liferay opportunity progresses through the sales funnel and the typical steps in the buyer journey and sales process.
-:::
-
-:::{grid-item-card} Competitive Intelligence - Battlecards
-:link: ./level-1-business/battlecards.md
-
-Reviews the Battlecards that are available for competitive intelligence.
-:::
-
-:::{grid-item-card} Liferay Contracts
-:link: ./level-1-business/liferay-contracts.md
-
-Provides an overview of Liferay’s customer contracting framework.
-:::
-::::

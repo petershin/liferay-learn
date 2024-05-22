@@ -71,26 +71,4 @@ Viewing the perspective of a user segment previews any personalizations for cont
 
 ![You can preview different experiences from the Preview panel.](./personalizing-site-experience/images/05.png)
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} Segmentation
-:link: ./personalizing-site-experience/segmentation.md
-:::
-
-:::{grid-item-card} Experience Personalization
-:link: ./personalizing-site-experience/experience-personalization.md
-:::
-
-:::{grid-item-card} Migration from Audience Targeting
-:link: ./personalizing-site-experience/migration-from-audience-targeting.md
-:::
-
-:::{grid-item-card} Enabling Automated Live Chat Systems
-:link: ./personalizing-site-experience/enabling-automated-live-chat-systems.md
-:::
-
-:::{grid-item-card} Using the Accessibility Menu
-:link: ./personalizing-site-experience/using-the-accessibility-menu.md
-:::
-::::

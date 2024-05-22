@@ -40,48 +40,4 @@ SE(영업 엔지니어)와 같은 영업 프로세스의 다른 역할에도 유
 
 맞춤형 솔루션 [개로 레벨 1 시작 하이라이트](./level-1-business/tailored-solution-highlights.md).
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} 맞춤형 솔루션 하이라이트
-:link: ./level-1-business/tailored-solution-highlights.md
-
-Liferay를 기반으로 구축된 맞춤형 솔루션을 살펴보고 실제 사례를 통해 유연성과 가능성을 보여줍니다.
-:::
-
-:::{grid-item-card} Liferay 기회를 위한 아웃바운드 전망 101
-:link: ./level-1-business/outbound-prospecting.md
-
-Liferay 기회에 대한 아웃바운드 전망에 대한 모범 사례를 제공합니다.
-:::
-
-:::{grid-item-card} Liferay 가격
-:link: ./level-1-business/liferay-pricing.md
-
-Liferay Experience Cloud SaaS, PaaS 및 DXP 셀프 호스팅의 가격 모델을 설명합니다.
-:::
-
-:::{grid-item-card} Liferay 영업 프레젠테이션 및 이를 마스터하는 방법
-:link: ./level-1-business/liferay-sales-presentations.md
-
-사용 가능한 영업 프레젠테이션 유형과 이를 사용하는 방법 및 시기를 간략하게 설명합니다.
-:::
-
-:::{grid-item-card} 기회 진행을 위한 판매 유입 경로 및 모범 사례
-:link: ./level-1-business/sales-funnel-opportunity-progress.md
-
-Liferay 기회가 판매 유입 경로와 구매자 여정 및 판매 프로세스의 일반적인 단계를 통해 어떻게 진행되는지 보여줍니다.
-:::
-
-:::{grid-item-card} 경쟁 정보 - 배틀카드
-:link: ./level-1-business/battlecards.md
-
-경쟁 정보에 사용할 수 있는 전투 카드를 검토합니다.
-:::
-
-:::{grid-item-card} Liferay 계약
-:link: ./level-1-business/liferay-contracts.md
-
-Liferay의 고객 계약 프레임워크에 대한 개요를 제공합니다.
-:::
-::::

@@ -133,19 +133,4 @@ SaaS가 불가능할 수 있는 몇 가지 시나리오가 있습니다.
 
 다음: [Liferay Experience Cloud SaaS](./liferay-pricing/liferay-pricing-saas.md)부터 시작하여 각 가격 모델을 검토합니다.
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} Liferay 가격-SaaS
-:link: ./liferay-pricing/liferay-pricing-saas.md
-
-:::
-:::{grid-item-card} Liferay 가격 - PaaS
-:link: ./liferay-pricing/liferay-pricing-paas.md
-
-:::
-:::{grid-item-card} Liferay 가격 - 자체 호스팅
-:link: ./liferay-pricing/liferay-pricing-self-hosted.md
-
-:::
-::::

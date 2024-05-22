@@ -40,24 +40,4 @@ Liferayラーニングパスでチームを成功に導きましょう！
 
 [レベル0](./selling-liferay/level-0.md) でLiferayの販売方法を学び始めましょう。
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} レベル 0
-:link: ./selling-liferay/level-0.md
-
-レベル0では、Liferayの会社、製品、Liferayが提供する価値について紹介します。
-:::
-
-:::{grid-item-card} レベル1ビジネス
-:link: ./selling-liferay/level-1-business.md
-
-ビジネス営業職のためのレベル1では、Liferayの販売者が見込み客の獲得から取引の成立まで、Liferayの販売を成功させる方法を紹介します。
-:::
-
-:::{grid-item-card} レベル 1 テクニカル
-:link: ./selling-liferay/level-1-technical.md
-
-テクニカルセラーのためのレベル1は、Liferayのデモを準備し、成功させるための基礎を提供します。
-:::
-::::

@@ -21,18 +21,4 @@ Being a member of a site grants users access and abilities beyond an unauthentic
 
 Site roles are created at a global level, but when they're assigned they only provide permissions for the specific site where they were assigned. Since roles are created at a global level, they can't be created by site administrators (since site administrators only have administrator privileges for their sites). Teams, however, let site administrators assign permissions to groups of users within their sites. See [Creating Teams](./site-membership/creating-teams-for-sites.md) for more information.
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} Adding Members to Sites
-:link: ./site-membership/adding-members-to-sites.md
-:::
-
-:::{grid-item-card} Inviting Members to Your Site
-:link: ./site-membership/inviting-members-to-your-site.md
-:::
-
-:::{grid-item-card} Creating Teams for Sites
-:link: ./site-membership/creating-teams-for-sites.md
-:::
-::::

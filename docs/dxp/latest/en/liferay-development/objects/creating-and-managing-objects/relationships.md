@@ -18,14 +18,4 @@ Relationships add fields and tables to object definitions for relating their ent
 
 ![Add relationships to objects.](./relationships/images/01.png)
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} Defining Object Relationships
-:link: ./relationships/defining-object-relationships.md
-:::
-
-:::{grid-item-card} Removing Relationships
-:link: ./relationships/removing-relationships.md
-:::
-::::

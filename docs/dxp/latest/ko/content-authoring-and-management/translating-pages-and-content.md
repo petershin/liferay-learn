@@ -12,26 +12,4 @@ Liferay는 웹 콘텐츠 및 콘텐츠 페이지 경험을 번역하기 위한 �
 
 번역에 사용할 수 있는 언어는 인스턴스의 현지화 설정에 따라 결정됩니다. 자세한 내용은 [초기 인스턴스 현지화](../installation-and-upgrades/setting-up-liferay/initial-instance-localization.md) 및 [가상 인스턴스 현지화](../system-administration/configuring-liferay/virtual-instances/localization.md) 을 참조하십시오.
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} 번역 콘텐츠 페이지
-:link: ./translating-pages-and-content/translating-content-pages.md
-:::
-
-:::{grid-item-card} 번역 웹 콘텐츠
-:link: ./translating-pages-and-content/translating-web-content.md
-:::
-
-:::{grid-item-card} 타사 서비스 사용
-:link: ./translating-pages-and-content/using-third-party-for-translation.md
-:::
-
-:::{grid-item-card} 번역을 위한 워크플로우 활성화
-:link: ./translating-pages-and-content/enabling-workflows-for-translations.md
-:::
-
-:::{grid-item-card} 번역 권한 관리
-:link: ./translating-pages-and-content/managing-translation-permissions.md
-:::
-::::

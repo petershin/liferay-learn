@@ -46,42 +46,4 @@ visibility:
 
 次：[製造業](./what-challenges-does-liferay-solve-industry-solutions/manufacturing.md)
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} 製造業
-:link: ./what-challenges-does-liferay-solve-industry-solutions/manufacturing.md
-
-製造におけるLiferay
-:::
-
-:::{grid-item-card} 財務サービス
-:link: ./what-challenges-does-liferay-solve-industry-solutions/financial-services.md
-
-財務サービスにおけるLiferay
-:::
-
-:::{grid-item-card} 政府および公共部門
-:link: ./what-challenges-does-liferay-solve-industry-solutions/government-and-public-sector.md
-
-政府および公共部門におけるLiferay
-:::
-
-:::{grid-item-card} 保険
-:link: ./what-challenges-does-liferay-solve-industry-solutions/insurance.md
-
-保険におけるLiferay
-:::
-
-:::{grid-item-card} ヘルスケア
-:link: ./what-challenges-does-liferay-solve-industry-solutions/healthcare.md
-
-ヘルスケアにおけるLiferay
-:::
-
-:::{grid-item-card} エネルギー産業および公益事業
-:link: ./what-challenges-does-liferay-solve-industry-solutions/energy-and-utilities.md
-
-エネルギー産業および公益事業におけるLiferay
-:::
-::::

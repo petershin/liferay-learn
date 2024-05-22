@@ -63,22 +63,3 @@ Analytics Cloudとの統合により、機械学習による詳細なデータ�
 
 ![You can preview different experiences from the Preview panel.](./personalizing-site-experience/images/05.png)
 
-::::{grid} 2
-:gutter: 3 3 3 3
-
-:::{grid-item-card} セグメンテーション
-:link: ./personalizing-site-experience/segmentation.md
-:::
-
-:::{grid-item-card} エクスペリエンスのパーソナライゼーション
-:link: ./personalizing-site-experience/experience-personalization.md
-:::
-
-:::{grid-item-card} オーディエンスターゲティングからの移行
-:link: ./personalizing-site-experience/migration-from-audience-targeting.md
-:::
-
-:::{grid-item-card} 自動ライブチャットシステムの有効化
-:link: ./personalizing-site-experience/enabling-automated-live-chat-system.md
-:::
-::::

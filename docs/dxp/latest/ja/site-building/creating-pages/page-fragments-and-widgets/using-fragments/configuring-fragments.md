@@ -44,22 +44,4 @@ Advancedタブには、より高度な、あるいは技術的な設定が含ま
 
 ［リンク］タブでは、ページ要素にURLを手動で追加するか、使用可能なコンテンツ項目から選択することができます。 目的のターゲット（例：自身、親）を指定することもできます。
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} 一般設定リファレンス
-:link: ./configuring-fragments/general-settings-reference.md
-:::
-
-:::{grid-item-card} スタイルリファレンス
-:link: ./configuring-fragments/styles-reference.md
-:::
-
-:::{grid-item-card} フラグメントサブ要素リファレンス
-:link: ./configuring-fragments/fragment-sub-elements-reference.md
-:::
-
-:::{grid-item-card} フラグメント設定フィールドのローカライズ
-:link: ./configuring-fragments/localizing-fragment-configuration-fields.md
-:::
-::::

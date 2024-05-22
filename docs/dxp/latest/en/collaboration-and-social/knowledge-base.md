@@ -29,42 +29,4 @@ Once published, you can use [Knowledge Base widgets](./knowledge-base/knowledge-
 
 Additionally, if you're importing Markdown files and hosting them on a service like GitHub, you can enable [source URLs](./knowledge-base/importing-knowledge-base-articles.md#setting-a-source-url) for imported articles. Once configured, Knowledge Base adds an Edit on GitHub button to each article so users can view the article's Markdown in the source repository.
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} Creating Knowledge Base Articles
-:link: ./knowledge-base/creating-knowledge-base-articles.md
-:::
-
-:::{grid-item-card} Importing Knowledge Base Articles
-:link: ./knowledge-base/importing-knowledge-base-articles.md
-:::
-
-:::{grid-item-card} Managing the Knowledge Base
-:link: ./knowledge-base/managing-the-knowledge-base.md
-:::
-
-:::{grid-item-card} Knowledge Base Templates
-:link: ./knowledge-base/knowledge-base-templates.md
-:::
-
-:::{grid-item-card} Responding to Knowledge Base Feedback
-:link: ./knowledge-base/responding-to-knowledge-base-feedback.md
-:::
-
-:::{grid-item-card} Knowledge Base Display Widget
-:link: ./knowledge-base/knowledge-base-display-widget.md
-:::
-
-:::{grid-item-card} Other Knowledge Base Widgets
-:link: ./knowledge-base/other-knowledge-base-widgets.md
-:::
-
-:::{grid-item-card} Knowledge Base System Settings
-:link: ./knowledge-base/knowledge-base-system-settings.md
-:::
-
-:::{grid-item-card} Developer Guide
-:link: ./knowledge-base/developer-guide.md
-:::
-::::

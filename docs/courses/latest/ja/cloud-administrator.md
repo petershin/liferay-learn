@@ -28,30 +28,4 @@ Delectable Bonsaiのクラウド・プロジェクトで作業を開始。この
 
 LXCでもLXC-SMでも、 [、クラウド・プロジェクト](./cloud-administrator/setting-up-your-cloud-project.md)をセットアップすることから始めよう。
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card}  クラウドプロジェクトの設定
-:link: ./cloud-administrator/setting-up-your-cloud-project.md
-
-LXCまたはLXC-SMでクラウドコンソールを使い始める方法をご紹介します。
-:::
-
-:::{grid-item-card}  LXCへのコードのデプロイ
-:link: ./cloud-administrator/deploying-code-to-liferay-saas.md
-
-LXCでクライアント拡張プロジェクトをデプロイして作業する方法を学びます。
-:::
-
-:::{grid-item-card}  クラウド設定
-:link: ./cloud-administrator/cloud-configuration.md
-
-LXC-SMでサービスとLiferayインスタンスを構成する方法を学びます。
-:::
-
-:::{grid-item-card}  クラウド開発ライフサイクル
-:link: ./cloud-administrator/cloud-development-lifecycle.md
-
-開発者としてLXC-SMのクラウドコンソールを操作する方法を学びます。
-:::
-::::

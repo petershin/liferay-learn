@@ -83,27 +83,4 @@ There are many tools and approaches that you can use for outbound prospecting. E
 
 Start by exploring how to use [Email](./outbound-prospecting/email.md) effectively.
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} Email
-:link: ./outbound-prospecting/email.md
-
-:::
-:::{grid-item-card} Phone
-:link: ./outbound-prospecting/phone.md
-
-:::
-:::{grid-item-card} Data Enrichment
-:link: ./outbound-prospecting/data-enrichment.md
-
-:::
-:::{grid-item-card} Social Media
-:link: ./outbound-prospecting/social-media.md
-
-:::
-:::{grid-item-card} Persistence & Measurement
-:link: ./outbound-prospecting/persistence-measurement.md
-
-:::
-::::

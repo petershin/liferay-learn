@@ -13,14 +13,3 @@ toc:
 
 기본 유효성 검사가 요구 사항을 충족하지 않는 경우 `objectValidationRule` 클라이언트 확장을 사용하여 사용자 정의 유효성 검사를 만들 수 있습니다. 자세한 내용은 [마이크로서비스 클라이언트 확장](../../client-extensions/microservice-client-extensions.md) 참조하세요.
 
-::::{grid} 2
-:gutter: 3 3 3 3
-
-:::{grid-item-card} 필드 유효성 검사 추가
-:link: ./validations/add-field-validations.md
-:::
-
-:::{grid-item-card} 표현식 빌더 검증 참조
-:link: ./validations/expression-builder-validations-reference.md
-:::
-::::

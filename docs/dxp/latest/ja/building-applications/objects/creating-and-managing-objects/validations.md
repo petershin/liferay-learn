@@ -13,14 +13,3 @@ toc:
 
 すぐに使えるバリデーションがニーズに合わない場合は、`objectValidationRule` クライアントエクステンションを使ってカスタムバリデーションを作成することができます。 詳細は [マイクロサービスのクライアント拡張](../../client-extensions/microservice-client-extensions.md) を参照。
 
-::::{grid} 2
-:gutter: 3 3 3 3
-
-:::{grid-item-card} フィールド検証の追加
-:link: ./validations/adding-field-validations.md
-:::
-
-:::{grid-item-card} 式ビルダー検証リファレンス
-:link: ./validations/expression-builder-validations-reference.md
-:::
-::::

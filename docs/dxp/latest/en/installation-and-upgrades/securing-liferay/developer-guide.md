@@ -14,18 +14,4 @@ taxonomy-category-names:
 ---
 # Developer Guide
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card}  Captcha API Basics
-:link: ./developer-guide/captcha-api-basics.md
-:::
-
-:::{grid-item-card}  SCIM User API Basics
-:link: ./developer-guide/scim-user-api-basics.md
-:::
-
-:::{grid-item-card}  SCIM Group API Basics
-:link: ./developer-guide/scim-group-api-basics.md
-:::
-::::

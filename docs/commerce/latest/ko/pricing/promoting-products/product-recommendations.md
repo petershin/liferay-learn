@@ -23,14 +23,4 @@ Liferay는 콘텐츠 및 사용자 기반 제품 추천을 모두 지원합니�
 고객 유사성은 현재 구매 내역에 의해서만 결정됩니다. 두 고객이 동일한 제품을 구매한 경우 유사합니다.
 ```
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} 제품 권장 사항 사용
-:link: ./product-recommendations/using-product-recommendations.md
-:::
-
-:::{grid-item-card} 추천 유형 이해
-:link: ./product-recommendations/understanding-recommendation-types.md
-:::
-::::

@@ -82,35 +82,4 @@ One-by-one, you'll learn each feature and how it is leveraged.
 
 Don't know where to start? [Start with Customer Portals](./tailored-solution-highlights/customer-portals.md).
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} Customer Portals
-:link: ./tailored-solution-highlights/customer-portals.md
-
-:::
-:::{grid-item-card} Digital Commerce Sites
-:link: ./tailored-solution-highlights/digital-commerce-sites.md
-
-:::
-
-:::{grid-item-card} External Websites
-:link: ./tailored-solution-highlights/enterprise-websites.md
-
-:::
-
-:::{grid-item-card} Supplier Portals
-:link: ./tailored-solution-highlights/supplier-portals.md
-
-:::
-
-:::{grid-item-card} Partner Portals
-:link: ./tailored-solution-highlights/partner-portals.md
-
-:::
-
-:::{grid-item-card} Modern Intranets
-:link: ./tailored-solution-highlights/intranets.md
-
-:::
-::::

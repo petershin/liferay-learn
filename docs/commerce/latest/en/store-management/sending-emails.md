@@ -29,18 +29,4 @@ A notification template defines the sender and receiver, the event trigger, and 
 
 The *Notification Queue* tab displays all email notifications for a channel. Each email notification entry shows its sender, recipients, event type, status, and priority. By default, Liferay checks the notification queue every 15 minutes for unsent notifications. See [Configuring the Commerce Notification Queue](./sending-emails/configuring-the-commerce-notification-queue.md) to learn how to configure this behavior.
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card}  Using Notification Templates
-:link: ./sending-emails/using-notification-templates.md
-:::
-
-:::{grid-item-card}  Configuring the Notification Queue
-:link: ./sending-emails/configuring-the-commerce-notification-queue.md
-:::
-
-:::{grid-item-card}  Notification Template Variables Reference Guide
-:link: ./sending-emails/notification-template-variables-reference-guide.md
-:::
-::::

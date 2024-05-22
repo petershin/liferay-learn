@@ -15,22 +15,4 @@ toc:
 
 ![オブジェクトのカスタムビューを設計します。](./views/images/01.png)
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} オブジェクトビューの設計
-:link: ./views/designing-object-views.md
-:::
-
-:::{grid-item-card} テーブルカラムの名前変更
-:link: ./views/renaming-table-columns.md
-:::
-
-:::{grid-item-card} デフォルトの並び順を設定する
-:link: ./views/setting-a-default-sorting.md
-:::
-
-:::{grid-item-card} ビューにフィルタを追加する
-:link: ./views/adding-filters-to-views.md
-:::
-::::

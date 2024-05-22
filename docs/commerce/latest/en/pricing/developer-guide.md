@@ -14,14 +14,4 @@ taxonomy-category-names:
 ---
 # Developer Guide
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} Price List API Basics
-:link: ./developer-guide/price-list-api-basics.md
-:::
-
-:::{grid-item-card} Discount API Basics
-:link: ./developer-guide/discount-api-basics.md
-:::
-::::

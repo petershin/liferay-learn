@@ -88,14 +88,4 @@ A variety of tools are used in developing or extending themes. See these topics 
 * [Blade](../../liferay-development/tooling/blade-cli/generating-projects-with-blade-cli.md)
 * [Developer Tools Overview](../../liferay-development/tooling/developer-tools-overview.md)
 <!-- this may just be a single link to all the tooling section. This section is the result of https://issues.liferay.com/browse/IFI-2289 -->
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} Upgrading a Theme
-:link: ./themes/upgrading-a-theme.md
-:::
-
-:::{grid-item-card} Theme Development
-:link: ./themes/theme-development.md
-:::
-::::

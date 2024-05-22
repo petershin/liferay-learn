@@ -66,18 +66,4 @@ Once rendered, the application is integrated fully into the Liferay page so it c
 * [Creating a Basic Custom Element](./integrating-external-applications/creating-a-basic-custom-element.md)
 * [Front-end Client Extensions Reference](./customizing-liferays-look-and-feel/client-extensions-ui-reference.md)
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card}  Using an IFrame Client Extension
-:link: ./integrating-external-applications/using-an-iframe-client-extension.md
-:::
-
-:::{grid-item-card}  Creating A Basic Custom Element
-:link: ./integrating-external-applications/creating-a-basic-custom-element.md
-:::
-
-:::{grid-item-card}  Using Routes with Custom Elements
-:link: ./integrating-external-applications/using-routes-with-custom-elements.md
-:::
-::::

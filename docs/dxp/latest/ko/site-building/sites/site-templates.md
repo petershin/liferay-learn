@@ -19,22 +19,4 @@ Liferay는 사이트 제작 시 사용할 수 있는 구조와 콘텐츠를 디�
 사이트 템플릿은 주로 여러 사이트의 페이지를 유지 관리하기 위한 것입니다. 여러 사이트에서 웹 콘텐츠 및 기타 자산을 만들고 유지 관리해야 하는 경우 [자산 라이브러리](../../콘텐츠 저작 및 관리/자산 라이브러리/자산 라이브러리 개요.md)를 사용하세요.
 ```
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} 사이트 템플릿 만들기
-:link: ./site-templates/creating-site-templates.md
-:::
-
-:::{grid-item-card} 템플릿 변경 사항 전파하기
-:link: ./site-templates/propagating-template-changes.md
-:::
-
-:::{grid-item-card} 사이트 템플릿 전파 구성
-:link: ./site-templates/configuring-site-template-propagation.md
-:::
-
-:::{grid-item-card} 사이트 템플릿 내보내기 및 가져오기
-:link: ./site-templates/exporting-importing-site-templates.md
-:::
-::::

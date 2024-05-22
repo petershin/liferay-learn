@@ -28,30 +28,4 @@ Liferay Cloud의 플랫폼을 사용하여 메이플 시럽 비즈니스를 위�
 
 LXC로 작업하든 LXC-SM으로 작업하든 [클라우드 프로젝트 설정](./cloud-administrator/setting-up-your-cloud-project.md)으로 시작하세요.
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card}  클라우드 프로젝트 설정
-:link: ./cloud-administrator/setting-up-your-cloud-project.md
-
-LXC 또는 LXC-SM과 함께 Cloud 콘솔을 사용하여 시작하는 방법을 알아보세요.
-:::
-
-:::{grid-item-card}  LXC에 코드 배포
-:link: ./cloud-administrator/deploying-code-to-liferay-saas.md
-
-LXC에서 클라이언트 확장 프로젝트를 배포하고 작업하는 방법을 알아보세요.
-:::
-
-:::{grid-item-card}  클라우드 구성
-:link: ./cloud-administrator/cloud-configuration.md
-
-LXC-SM에서 서비스 및 Liferay 인스턴스를 구성하는 방법을 알아보세요.
-:::
-
-:::{grid-item-card}  클라우드 개발 수명주기
-:link: ./cloud-administrator/cloud-development-lifecycle.md
-
-개발자로서 LXC-SM에서 Cloud 콘솔을 사용하여 작업하는 방법을 알아보세요.
-:::
-::::

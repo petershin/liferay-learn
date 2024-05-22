@@ -24,14 +24,4 @@ You can use order rules to enforce conditions that the buyer must fulfill to con
 
 Now, you can configure order rules by opening the *Global Menu* (![Global Menu icon](../images/icon-applications-menu.png)) and navigating to *Commerce* &rarr; *Order Rules*. There are two order rules available out-of-the-box.
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} Using the Minimum Order Amount Rule
-:link: ./order-rules/using-the-minimum-order-amount-rule.md
-:::
-
-:::{grid-item-card} Using the Products Limit Rule
-:link: ./order-rules/using-the-products-limit-rule.md
-:::
-::::

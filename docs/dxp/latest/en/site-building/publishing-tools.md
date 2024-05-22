@@ -19,18 +19,4 @@ Liferay provides two publishing tools for content creation and site building: Pu
 Presently, Liferay's publishing tools do not support [Commerce applications](https://learn.liferay.com/w/commerce/index) or [custom objects](../liferay-development/objects.md).
 ```
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} Comparing Publishing Tools
-:link: ./publishing-tools/comparing-publishing-tools.md
-:::
-
-:::{grid-item-card} Publications
-:link: ./publishing-tools/publications.md
-:::
-
-:::{grid-item-card} Staging
-:link: ./publishing-tools/staging.md
-:::
-::::

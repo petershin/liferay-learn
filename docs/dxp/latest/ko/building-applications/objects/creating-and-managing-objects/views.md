@@ -15,22 +15,4 @@ toc:
 
 ![개체에 대한 사용자 지정 보기를 디자인합니다.](./views/images/01.png)
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} 개체 보기 디자인
-:link: ./views/designing-object-views.md
-:::
-
-:::{grid-item-card} 테이블 열 이름 바꾸기
-:link: ./views/renaming-table-columns.md
-:::
-
-:::{grid-item-card} 기본 정렬 설정
-:link: ./views/setting-a-default-sorting.md
-:::
-
-:::{grid-item-card} 보기에 필터 추가
-:link: ./views/adding-filters-to-views.md
-:::
-::::

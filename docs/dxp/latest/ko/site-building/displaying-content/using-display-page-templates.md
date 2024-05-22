@@ -40,26 +40,4 @@ toc:
 
 콘텐츠 유형에 생성된 여러 디스플레이 페이지 템플릿이 있는 경우 해당 자산 유형에 대해 사용 가능한 템플릿 [에 대한](./using-display-page-templates/using-multiple-display-page-templates-to-create-multi-step-applications.md) 링크를 생성할 수 있습니다. 표시 페이지에 대한 링크를 매핑할 때 기본 옵션이나 사용 가능한 다른 표시 페이지 템플릿을 선택할 수 있으므로 콘텐츠 표시 방법에 대한 사용자 정의 및 유연성이 향상됩니다.
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} 표시 페이지 템플릿 생성 및 관리
-:link: ./using-display-page-templates/creating-and-managing-display-page-templates.md
-:::
-
-:::{grid-item-card} 디스플레이 페이지를 사용하여 콘텐츠 게시
-:link: ./using-display-page-templates/publishing-content-with-display-pages.md
-:::
-
-:::{grid-item-card} 표시 페이지를 사용하여 카테고리 표시
-:link: ./using-display-page-templates/displaying-categories-using-display-pages.md
-:::
-
-:::{grid-item-card} 표시 페이지를 사용하여 카테고리 표시
-:link: ./using-display-page-templates/using-multiple-display-page-templates-to-create-multi-step-applications.md
-:::
-
-:::{grid-item-card} SEO 및 오픈 그래프 구성
-:link: ./using-display-page-templates/configuring-seo-and-open-graph.md
-:::
-::::

@@ -20,26 +20,3 @@ Adaptive Media는 다음 상거래 위젯을 지원합니다. [수색](https://l
 
 Adaptive Media를 지원하지 않는 레거시 버전에서 최신 DXP 버전으로 업그레이드한 경우 기존 문서 및 미디어 썸네일을 새로운 Adaptive Media 정의 이미지 해상도로 마이그레이션할 수 있습니다. [문서 및 미디어 축소판 마이그레이션](./using-adaptive-media/migrating-documents-and-media-thumbnails.md) 참조하십시오.
 
-::::{grid} 2
-:gutter: 3 3 3 3
-
-:::{grid-item-card} 이미지 해상도 추가
-:link: ./using-adaptive-media/추가-이미지-해상도.md
-:::
-
-:::{grid-item-card} 이미지 해상도 관리
-:link: ./using-adaptive-media/managing-image-solutions.md
-:::
-
-:::{grid-item-card} 사이트 콘텐츠에 적응된 이미지 사용
-:link: ./using-adaptive-media/using-adapted-images-in-site-content.md
-:::
-
-:::{grid-item-card} 문서 및 미디어 축소판 마이그레이션
-:link: ./using-adaptive-media/migating-documents-and-media-thumbnails.md
-:::
-
-:::{grid-item-card} 적응형 미디어 구성 참조
-:link: ./using-adaptive-media/adaptive-media-configuration-reference.md
-:::
-::::

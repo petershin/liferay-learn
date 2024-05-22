@@ -44,24 +44,4 @@ However, this is not a limitation: if you are in Technical or Customer Support, 
 
 Start learning how to Sell Liferay with [Level 0](./selling-liferay/level-0.md).
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} Level 0
-:link: ./selling-liferay/level-0.md
-
-Level 0 introduces you to Liferay: the company, product, and the value Liferay's offerings provide.
-:::
-
-:::{grid-item-card} Level 1 Business
-:link: ./selling-liferay/level-1-business.md
-
-Level 1 for Business Sales Roles shows Liferay sellers how to succeed Selling Liferay, from generating prospects to closing deals.
-:::
-
-:::{grid-item-card} Level 1 Technical
-:link: ./selling-liferay/level-1-technical.md
-
-Level 1 for Technical sellers provides the foundation to prepare and run a successful demo of Liferay.
-:::
-::::

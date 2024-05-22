@@ -84,35 +84,4 @@ Liferayの水平ポータルレガシーは、複数の業界にわたる多く�
 
 まずは、 [カスタマーポータルから始めよう](./tailored-solution-highlights/customer-portals.md).
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} カスタマーポータル
-:link: ./tailored-solution-highlights/customer-portals.md
-
-:::
-:::{grid-item-card} デジタルコマースサイト
-:link: ./tailored-solution-highlights/digital-commerce-sites.md
-
-:::
-
-:::{grid-item-card} 外部Webサイト
-:link: ./tailored-solution-highlights/enterprise-websites.md
-
-:::
-
-:::{grid-item-card} サプライヤーポータル
-:link: ./tailored-solution-highlights/supplier-portals.md
-
-:::
-
-:::{grid-item-card} パートナーポータル
-:link: ./tailored-solution-highlights/partner-portals.md
-
-:::
-
-:::{grid-item-card} 最新の社内ポータル
-:link: ./tailored-solution-highlights/intranets.md
-
-:::
-::::

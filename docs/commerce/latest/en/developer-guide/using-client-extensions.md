@@ -29,34 +29,3 @@ A client extension interfaces with Liferay's APIs. This loose coupling makes cli
 !!! important
     This feature is currently behind a release feature flag. Read [Release Feature Flags](https://learn.liferay.com/web/guest/w/dxp/system-administration/configuring-liferay/feature-flags#release-feature-flags) for more information.
 
-::::{grid} 2
-:gutter: 3 3 3 3
-
-:::{grid-item-card}  Using the Checkout Step Client Extension
-:link: ./using-client-extensions/using-the-checkout-step-client-extension.md
-:::
-
-:::{grid-item-card}  Using the Payment Integration Client Extension
-:link: ./using-client-extensions/using-the-payment-integration-client-extension.md
-:::
-
-:::{grid-item-card}  Using the Stripe Client Extension
-:link: ./using-client-extensions/using-the-stripe-client-extension.md
-:::
-
-:::{grid-item-card}  Using the Shipping Engine Client Extension
-:link: ./using-client-extensions/using-the-shipping-engine-client-extension.md
-:::
-
-:::{grid-item-card}  Checkout Step Client Extension Reference
-:link: ./using-client-extensions/checkout-step-client-extension-reference.md
-:::
-
-:::{grid-item-card}  Payment Integration Client Extension Reference
-:link: ./using-client-extensions/payment-integration-client-extension-reference.md
-:::
-
-:::{grid-item-card}  Shipping Engine Client Extension Reference
-:link: ./using-client-extensions/shipping-engine-client-extension-reference.md
-:::
-::::

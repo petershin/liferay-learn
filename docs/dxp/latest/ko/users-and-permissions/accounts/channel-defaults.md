@@ -28,14 +28,4 @@ toc:
 
 예를 들어 할인 A가 비즈니스 계정의 채널 기본값이지만 주문 유형 X만 할인 A에 적격한 경우 Liferay는 다른 유형의 주문에 할인 A를 적용하지 않습니다. 대신 Liferay는 주문에 적합한 다음 우선 순위 할인을 적용합니다(존재하는 경우). 그러나 자격을 무시하면 Liferay는 자격에 관계없이 모든 계정 주문에 할인 A를 적용합니다.
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card}  채널 기본값 설정
-:link: ./channel-defaults/setting-channel-defaults.md
-:::
-
-:::{grid-item-card}  채널 기본 권한 참조
-:link: ./channel-defaults/channel-defaults-permissions-reference.md
-:::
-::::

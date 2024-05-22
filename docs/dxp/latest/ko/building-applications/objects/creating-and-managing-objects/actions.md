@@ -31,18 +31,4 @@ Groovy 스크립트 작업은 Liferay Experience Cloud 자체 관리형 및 Life
 <!--TASK: When client extensions docs are ready, mention being able to add Action Types and Notification Types.-->
 
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} 객체 작업 정의
-:link: ./actions/defining-object-actions.md
-:::
-
-:::{grid-item-card} 액션 유형 이해하기
-:link: ./actions/understanding-action-types.md
-:::
-
-:::{grid-item-card} 수동 작업 사용
-:link: ./actions/using-manual-actions.md
-:::
-::::

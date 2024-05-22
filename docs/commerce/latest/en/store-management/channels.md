@@ -31,21 +31,7 @@ With multiple channels, you can create more than one Liferay site, each with a u
 * Countries
 * Warehouses
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card}  Managing Channels
-:link: ./channels/managing-channels.md
-:::
-
-:::{grid-item-card}  Configuring Product Visibility Using Channels
-:link: ./channels/configuring-product-visibility-using-channels.md
-:::
-
-:::{grid-item-card}  Channels Reference Guide
-:link: ./channels/channels-reference-guide.md
-:::
-::::
 
 ## Related Topics
 

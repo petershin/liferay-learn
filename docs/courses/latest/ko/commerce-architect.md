@@ -25,16 +25,4 @@ Liferay 관리자 과정에서 사용자, 계정 및 조직을 설정하고 Life
 
 [기본 전제 조건 중 일부를 설정하고 간단한 제품을 만드는 것부터 시작하십시오](./commerce-architect/setting-up-and-creating-products.md) .
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card}  제품 설정 및 생성
-
-매장을 구축하기 전에 필수 상거래 기능 중 일부를 생성하고 구성하는 방법을 알아보세요.
-:::
-
-:::{grid-item-card}  제품 및 SKU 구성
-
-제품 및 SKU를 구성하는 방법을 알아보세요.
-:::
-::::

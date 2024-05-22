@@ -19,26 +19,4 @@ For maximum compatibility with all of Liferay's deployment options, you can comb
 
 Liferay's traditional Java-based development platform hasn't gone anywhere, and you can still build and deploy Java code to Liferay if you are on Liferay PaaS or self-hosted. 
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card}  Building a Custom Ticketing System
-:link: ./building-applications/building-a-custom-ticketing-system.md
-:::
-
-:::{grid-item-card}  Building a Time Off Requester
-:link: ./building-applications/building-a-time-off-requester.md
-:::
-
-:::{grid-item-card}  Using Object Data with React Charts
-:link: ./building-applications/using-object-data-with-react-charts.md
-:::
-
-:::{grid-item-card}  Developing a Java Web Application 
-:link: ./building-applications/developing-a-java-web-application.md
-:::
-
-:::{grid-item-card}  Developing a JavaScript Application 
-:link: ./building-applications/developing-a-javascript-application.md
-:::
-::::

@@ -62,46 +62,4 @@ SKU에 대해 구성된 측정 단위가 있는 경우 재고는 SKU에 대해 �
 
 재고가 없는 제품에 대한 예상 가용성을 구성할 수 있습니다. 다시 사용할 수 있게 되면 이를 고객에게 알립니다. 자세한 내용은 [가용성 추정](./inventory-management/availability-estimates.md)을 읽어보세요.
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card}  창고 설정
-:link: ./inventory-management/setting-up-warehouses.md
-:::
-
-:::{grid-item-card}  창고별 재고 설정
-:link: ./inventory-management/setting-inventory-by-warehouse.md
-:::
-
-:::{grid-item-card}  재고 부족 조치
-:link: ./inventory-management/low-stock-action.md
-:::
-
-:::{grid-item-card}  커머스 주소
-:link: ./inventory-management/availability-estimates.md
-:::
-
-:::{grid-item-card}  제품현황 관리
-:link: ./inventory-management/managing-product-status.md
-:::
-
-:::{grid-item-card}  재고 관리 시스템 사용
-:link: ./inventory-management/using-the-inventory-management-system.md
-:::
-
-:::{grid-item-card}  재고 관리 참조 가이드
-:link: ./inventory-management/inventory-management-reference-guide.md
-:::
-
-:::{grid-item-card}  창고 참조 가이드
-:link: ./inventory-management/warehouse-reference-guide.md
-:::
-
-:::{grid-item-card}  제품 인벤토리 구성 참조 가이드
-:link: ./inventory-management/product-inventory-configuration-reference-guide.md
-:::
-
-:::{grid-item-card}  개발자 가이드
-:link: ./inventory-management/developer-guide.md
-:::
-::::

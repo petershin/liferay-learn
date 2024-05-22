@@ -85,35 +85,4 @@ Liferay의 가장 일반적인 6가지 수평 솔루션에 대해 자세히 알�
 
 어디서부터 시작해야 할지 모르시나요? [고객 포털로 시작](./tailored-solution-highlights/customer-portals.md).
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} 고객 포털
-:link: ./tailored-solution-highlights/customer-portals.md
-
-:::
-:::{grid-item-card} 디지털 상거래 사이트
-:link: ./tailored-solution-highlights/digital-commerce-sites.md
-
-:::
-
-:::{grid-item-card} 외부 웹사이트
-:link: ./tailored-solution-highlights/enterprise-websites.md
-
-:::
-
-:::{grid-item-card} 공급업체 포털
-:link: ./tailored-solution-highlights/supplier-portals.md
-
-:::
-
-:::{grid-item-card} 파트너 포털
-:link: ./tailored-solution-highlights/partner-portals.md
-
-:::
-
-:::{grid-item-card} 최신 인트라넷
-:link: ./tailored-solution-highlights/intranets.md
-
-:::
-::::

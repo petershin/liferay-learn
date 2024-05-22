@@ -48,42 +48,4 @@ Plan to read them all? Start with manufacturing.
 
 [Let's Go!](./what-challenges-does-liferay-solve-industry-solutions/manufacturing.md)
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} Manufacturing
-:link: ./what-challenges-does-liferay-solve-industry-solutions/manufacturing.md
-
-Liferay in Manufacturing
-:::
-
-:::{grid-item-card} Financial Services
-:link: ./what-challenges-does-liferay-solve-industry-solutions/financial-services.md
-
-Liferay in Financial Services
-:::
-
-:::{grid-item-card} Government and Public Sector
-:link: ./what-challenges-does-liferay-solve-industry-solutions/government-and-public-sector.md
-
-Liferay in Government and the Public Sector
-:::
-
-:::{grid-item-card} Insurance
-:link: ./what-challenges-does-liferay-solve-industry-solutions/insurance.md
-
-Liferay in Insurance
-:::
-
-:::{grid-item-card} Healthcare
-:link: ./what-challenges-does-liferay-solve-industry-solutions/healthcare.md
-
-Liferay in Healthcare
-:::
-
-:::{grid-item-card} Energy and Utilities
-:link: ./what-challenges-does-liferay-solve-industry-solutions/energy-and-utilities.md
-
-Liferay in Energy and Utilities
-:::
-::::

@@ -40,35 +40,4 @@ Whatever decision you make, Liferay's platform supports the developer and makes 
 
 To get started, check out the boxes below. For applications, you may want to start with [Objects](liferay-development/objects.md) and [Client Extensions](./liferay-development/client-extensions.md). For customization, [Customizing Liferay's Look and Feel]().
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card}  Customizing Liferay's Look and Feel
-:link: ./liferay-development/customizing-liferays-look-and-feel.md
-:::
-
-:::{grid-item-card}  Integrating External Applications
-:link: ./liferay-development/integrating-external-applications.md
-:::
-
-<!-- :::{grid-item-card}  Configuration As Code  
-:link: ./liferay-development/configuration-as-code.md
-::: -->
-
-:::{grid-item-card}  Building Applications 
-:link: ./liferay-development/building-applications.md
-:::
-
-:::{grid-item-card}  Objects 
-:link: ./liferay-development/objects.md
-:::
-
-:::{grid-item-card}  Client Extensions 
-:link: ./liferay-development/client-extensions.md
-:::
-
-:::{grid-item-card}  Tooling 
-:link: ./liferay-development/tooling.md
-:::
-
-::::

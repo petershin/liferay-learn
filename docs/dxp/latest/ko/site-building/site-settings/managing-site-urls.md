@@ -32,18 +32,4 @@ Liferay 서버에 대한 가상 호스트를 구성하여 도메인 이름(예: 
 
 리디렉션 도구를 사용하여 404 오류로 이어지는 사이트 요청을 추적하고 관리합니다. 활성화되면 Liferay DXP는 각 404 오류를 분류하므로 모든 문제를 평가하고 신속하게 해결할 수 있습니다. 자세한 내용 및 사용 가능한 구성 옵션은 [추적 404 URL](./managing-site-urls/setting-up-redirects-and-404-tracking/tracking-404-urls.md) 참조하십시오.
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} 사이트의 친숙한 URL 구성
-:link: ./managing-site-urls/configuring-your-sites-friendly-url.md
-:::
-
-:::{grid-item-card} 가상 호스트 사이트 URL 구성
-:link: ./managing-site-urls/configuring-virtual-hosts-site-urls.md
-:::
-
-:::{grid-item-card} 리디렉션 및 404 추적 설정
-:link: ./managing-site-urls/setting-up-redirects-and-404-tracking.md
-:::
-::::

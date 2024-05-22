@@ -28,14 +28,3 @@ toc:
 
 例えば、割引Aがビジネスアカウントのチャネルデフォルトであるにもかかわらず、注文タイプXのみが割引Aの対象となる場合、Liferayは異なるタイプの注文に割引Aを適用しない。 代わりに、Liferayは、注文が適格である次善の優先割引が存在する場合、それを適用します。 ただし、適格性を上書きした場合、Liferayは適格性に関係なく、すべてのアカウント注文に割引Aを適用します。
 
-::::{grid} 2
-:gutter: 3 3 3 3
-
-:::{grid-item-card}  チャンネルデフォルトの設定
-:link: ./channel-defaults/setting-channel-defaults.md
-:::
-
-:::{grid-item-card}  チャンネルデフォルトパーミッションリファレンス
-:link: ./channel-defaults/channel-defaults-permissions-reference.md
-:::  
-::::

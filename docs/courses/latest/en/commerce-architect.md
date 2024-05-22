@@ -30,36 +30,4 @@ After setting up your users, accounts, and organizations from the Liferay Admini
 
 Start by [setting up some of the basic prerequisites and creating simple products](./commerce-architect/setting-up-and-creating-products.md). 
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card}  Setting Up and Creating Products
-:link: ./commerce-architect/setting-up-and-creating-products.md
-
-Learn how to create and configure some of the prerequisite Commerce features before building your storefront. 
-:::
-
-:::{grid-item-card}  Configuring Products and SKUs
-:link: ./commerce-architect/configuring-products-and-skus.md
-
-Learn how to configure products and SKUs.
-:::
-
-:::{grid-item-card}  Building the B2C Storefront
-:link: ./commerce-architect/building-the-b2c-storefront.md
-
-Learn how to build the B2C storefront using out-of-the-box widgets and fragments.
-:::
-
-:::{grid-item-card}  Building the B2B Storefront
-:link: ./commerce-architect/building-the-b2b-storefront.md
-
-Learn how to build the B2B storefront using Liferay's fragments and widgets.
-:::
-
-:::{grid-item-card}  Customizing the B2B Experience
-:link: ./commerce-architect/customizing-the-b2b-experience.md
-
-Learn how to use out-of-the-box Liferay features to customize your B2B experience.
-:::
-::::

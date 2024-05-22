@@ -87,23 +87,5 @@ Liferay가 경쟁하고 있는 가장 일반적으로 직면하고 있는 DXP �
 
 [갑시다!](./main-competitors-faced-by-liferay/adobe.md)
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} 어도비
-:link: ./main-competitors-faced-by-liferay/adobe.md
-:::
-
-:::{grid-item-card} 사이트코어
-:link: ./main-competitors-faced-by-liferay/sitecore.md
-:::
-
-:::{grid-item-card} 최적화
-:link: ./main-competitors-faced-by-liferay/optimizely.md
-:::
-
-:::{grid-item-card} 아퀴아
-:link: ./main-competitors-faced-by-liferay/acquia.md
-:::
-::::
 

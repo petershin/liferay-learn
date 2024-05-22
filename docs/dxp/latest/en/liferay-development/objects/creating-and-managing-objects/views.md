@@ -22,22 +22,4 @@ Custom views can only be added to custom objects. They cannot be added to system
 
 ![Design custom views for objects.](./views/images/01.png)
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} Designing Object Views
-:link: ./views/designing-object-views.md
-:::
-
-:::{grid-item-card} Renaming Table Columns
-:link: ./views/renaming-table-columns.md
-:::
-
-:::{grid-item-card} Setting a Default Sorting
-:link: ./views/setting-a-default-sorting.md
-:::
-
-:::{grid-item-card} Adding Filters to Views
-:link: ./views/adding-filters-to-views.md
-:::
-::::

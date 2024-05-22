@@ -39,26 +39,3 @@ toc:
 
 コンテンツタイプに複数の表示ページテンプレートが作成されている場合、 [そのアセットタイプの利用可能なテンプレート](./using-display-page-templates/using-multiple-display-page-templates-to-create-multi-step-applications.md) のいずれかにリンクをマップすることができます。 リンクを表示ページにマッピングする際、デフォルトのオプションまたはその他の表示ページテンプレートを選択することができます。
 
-::::{grid} 2
-:gutter: 3 3 3 3
-
-:::{grid-item-card} 表示ページテンプレートの作成と管理
-:link: ./using-display-page-templates/creating and-managing-display-page-templates.md
-:::
-
-:::{grid-item-card} 表示ページによるコンテンツの公開
-:link: ./using-display-page-templates/publishing-content-with-display-pages.md
-:::
-
-:::{grid-item-card} 表示ページを使用したカテゴリー表示
-:link: ./using-display-page-templates/displaying-categories-using-display-pages.md
-:::
-
-:::{grid-item-card} 複数の表示ページ・テンプレートを使用してマルチステップ・アプリケーションを作成する
-:link: ./using-display-page-templates/using-multiple-display-page-templates-to-create-multi-step-applications.md
-:::
-
-:::{grid-item-card} SEOとOpen Graphの設定
-:link: ./using-display-page-templates/configuring-seo-and-open-graph.md
-:::
-::::

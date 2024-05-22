@@ -12,10 +12,4 @@ taxonomy-category-names:
 ---
 # Developer Guide
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card}  Channel API Basics
-:link: ./developer-guide/channel-api-basics.md
-:::
-::::

@@ -81,27 +81,4 @@ visibility:
 
 [Email](./outbound-prospecting/email.md) 을 효과적으로 사용하는 방법을 탐색하는 것부터 시작하십시오.
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} 이메일
-:link: ./outbound-prospecting/email.md
-
-:::  
-:::{grid-item-card} 전화
-:link: ./outbound-prospecting/phone.md
-
-:::  
-:::{grid-item-card} 데이터 강화
-:link: ./outbound-prospecting/data-enrichment.md
-
-:::  
-:::{grid-item-card} 소셜 미디어
-:link: ./outbound-prospecting/social-media.md
-
-:::  
-:::{grid-item-card} 지속성 & 측정
-:link: ./outbound-prospecting/persistence-measurement.md
-
-:::
-::::

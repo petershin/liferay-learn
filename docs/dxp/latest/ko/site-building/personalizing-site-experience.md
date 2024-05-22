@@ -63,22 +63,4 @@ Analytics Cloud와의 통합은 심층적인 머신 러닝 기반 데이터 분�
 
 ![You can preview different experiences from the Preview panel.](./personalizing-site-experience/images/05.png)
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} 분할
-:link: ./personalizing-site-experience/segmentation.md
-:::
-
-:::{grid-item-card} 개인화 경험
-:link: ./personalizing-site-experience/experience-personalization.md
-:::
-
-:::{grid-item-card} 잠재고객 타겟팅에서 이전
-:link: ./personalizing-site-experience/migration-from-audience-targeting.md
-:::
-
-:::{grid-item-card} 자동화된 라이브 채팅 시스템 활성화
-:link: ./personalizing-site-experience/enabling-automated-live-chat-systems.md
-:::
-::::

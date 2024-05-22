@@ -33,27 +33,7 @@ When finished, you'll have learned how to
 
 Start by [Modeling Data Structures](./application-development/modeling-data-structures.md)!
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} Module One: Modeling Data Structures
-:link: ./application-development/modeling-data-structures.md
-
-Learn how to use Liferay Objects to define and manage custom data structures.
-:::
-
-:::{grid-item-card} Module Two: Implementing Business Logic
-:link: ./application-development/implementing-business-logic.md
-
-Learn how to add validations, notifications, and more to your applications in Liferay DXP.
-:::
-
-:::{grid-item-card} Module Three: Designing User Interfaces
-:link: ./application-development/designing-user-interfaces.md
-
-Learn how to design application interfaces in Liferay DXP.
-:::
-::::
 
 <!--TASK:
 :::{grid-item-card} Module Four: Building a Ticketing System

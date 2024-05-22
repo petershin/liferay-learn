@@ -12,18 +12,4 @@ Liferayは、コンテンツ作成とサイト構築のために2つのパブリ
 現在、Liferayのパブリッシングツールは [Commerce](https://learn.liferay.com/w/commerce/index) や[カスタムオブジェクト](../building-applications/objects.md)をサポートしていません。
 ```
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} パブリッシングツールの比較
-:link: ./publishing-tools/comparing-publishing-tools.md
-:::
-
-:::{grid-item-card} 出版物
-:link: ./publishing-tools/publications.md
-:::
-
-:::{grid-item-card} Staging
-:link: ./publishing-tools/staging.md
-:::  
-::::

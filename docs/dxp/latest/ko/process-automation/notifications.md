@@ -29,18 +29,4 @@ Liferay는 통합 알림 도구를 제공하므로 플랫폼 이벤트에 대해
 
 상거래 컨텍스트에서 채널 이벤트에 대한 알림이 지원됩니다. 자세한 내용은 [Store Emails](https://learn.liferay.com/w/commerce/store-management/sending-emails/store-emails) 을 참조하십시오.
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} 개인 알림 설정
-:link: ./notifications/configuring-personal-notifications.md
-:::
-
-:::{grid-item-card} 알림 템플릿 만들기
-:link: ./notifications/creating-notification-templates.md
-:::
-
-:::{grid-item-card} 알림 대기열 사용
-:link: ./notifications/using-the-notification-queue.md
-:::
-::::

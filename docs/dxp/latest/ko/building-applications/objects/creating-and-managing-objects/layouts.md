@@ -15,14 +15,3 @@ toc:
 
 ![Add layouts to custom objects to define how their fields and relationships appear during entry creation.](./layouts/images/01.png)
 
-::::{grid} 2
-:gutter: 3 3 3 3
-
-:::{grid-item-card} 개체 레이아웃 디자인
-:link: ./layouts/designing-object-layouts.md
-:::
-
-:::{grid-item-card} 필드 탭에 분류 추가
-:link: ./layouts/adding-categorization-to-fields-tabs.md
-:::
-::::

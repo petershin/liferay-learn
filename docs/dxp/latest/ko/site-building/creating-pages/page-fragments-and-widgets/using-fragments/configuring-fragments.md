@@ -44,22 +44,3 @@ toc:
 
 링크 탭에서는 페이지 요소에 URL을 수동으로 추가하거나 사용 가능한 콘텐츠 필드에서 선택할 수 있습니다. 원하는 대상(예: 자기, 부모)을 지정할 수도 있습니다.
 
-::::{grid} 2
-:gutter: 3 3 3 3
-
-:::{grid-item-card} 일반 설정 참조
-:link: ./configuring-fragments/general-settings-reference.md
-:::
-
-:::{grid-item-card} 스타일 참조
-:link: ./configuring-fragments/styles-reference.md
-:::
-
-:::{grid-item-card} 조각 하위 요소 참조
-:link: ./configuring-fragments/fragment-sub-elements-reference.md
-:::
-
-:::{grid-item-card} 조각 구성 필드 지역화
-:link: ./configuring-fragments/localizing-fragment-configuration-fields.md
-:::
-::::

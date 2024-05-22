@@ -13,14 +13,4 @@ taxonomy-category-names:
 ---
 # Liferay Commerce Fragments
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card}  Using the Account Selector Fragment
-:link: ./liferay-commerce-fragments/using-the-account-selector-fragment.md
-:::
-
-:::{grid-item-card}  Using the Mini Cart Fragment
-:link: ./liferay-commerce-fragments/using-the-mini-cart-fragment.md
-:::
-::::

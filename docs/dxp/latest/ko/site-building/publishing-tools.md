@@ -12,18 +12,4 @@ Liferay는 콘텐츠 생성 및 사이트 구축을 위한 두 가지 게시 도
 현재 Liferay의 게시 도구는 [커머스](https://learn.liferay.com/w/commerce/index) 또는 [사용자 정의 객체](../building-applications/objects.md)를 지원하지 않습니다. .
 ```
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} 게시 도구 비교
-:link: ./publishing-tools/comparing-publishing-tools.md
-:::
-
-:::{grid-item-card} 출판물
-:link: ./publishing-tools/publications.md
-:::
-
-:::{grid-item-card} 스테이징
-:link: ./publishing-tools/staging.md
-:::
-::::

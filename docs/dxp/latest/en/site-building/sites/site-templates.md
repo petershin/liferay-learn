@@ -27,22 +27,4 @@ Once you've created a site using a template, you can make changes to the templat
 Site templates are primarily intended for maintaining pages across multiple sites. If you need to create and maintain web content and other assets across sites, use [asset libraries](../../content-authoring-and-management/asset-libraries.md).
 ```
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} Creating Site Templates
-:link: ./site-templates/creating-site-templates.md
-:::
-
-:::{grid-item-card} Propagating Template Changes
-:link: ./site-templates/propagating-template-changes.md
-:::
-
-:::{grid-item-card} Configuring Site Template Propagation
-:link: ./site-templates/configuring-site-template-propagation.md
-:::
-
-:::{grid-item-card} Exporting and Importing Site Templates
-:link: ./site-templates/exporting-importing-site-templates.md
-:::
-::::

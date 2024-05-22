@@ -28,37 +28,7 @@ The path for these headless services follows the `c/[pluralobjectlabel]` naming 
 
 While the object is active, you can use these APIs to perform basic CRUD operations, run complex queries using [aggregation terms](./using-custom-object-apis/using-aggregation-terms-with-rest-apis.md) and [nested fields](./using-custom-object-apis/using-nestedfields-to-query-related-entries.md), trigger standalone actions, manage entry relationships, and more.
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} Object API Basics
-:link: ./using-custom-object-apis/object-api-basics.md
-:::
-
-:::{grid-item-card} Using Batch APIs
-:link: ./using-custom-object-apis/using-batch-apis.md
-:::
-
-:::{grid-item-card} Using Relationship REST APIs
-:link: ./using-custom-object-apis/using-relationship-rest-apis.md
-:::
-
-:::{grid-item-card} Using nestedFields to Query Related Entries
-:link: ./using-custom-object-apis/using-nestedfields-to-query-related-entries.md
-:::
-
-:::{grid-item-card} Using nestedFields to Audit Entry History
-:link: ./using-custom-object-apis/using-nestedfields-to-audit-entry-history.md
-:::
-
-:::{grid-item-card} Using Aggregation Terms with REST APIs
-:link: ./using-custom-object-apis/using-aggregation-terms-with-rest-apis.md
-:::
-
-:::{grid-item-card} Using Object APIs With Base64 Encoded Files
-:link: ./using-custom-object-apis/using-object-apis-with-base64-encoded-files.md
-:::
-::::
 
 ## Default Company-Scoped REST APIs
 

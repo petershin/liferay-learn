@@ -61,36 +61,4 @@ visibility:
 
 次：[カスタマーポータル](./what-challenges-does-liferay-solve-horizontal-solutions/customer-portals.md)
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} カスタマーポータル
-:link: ./what-challenges-does-liferay-solve-horizontal-solutions/customer-portals.md
-
-:::
-
-:::{grid-item-card} デジタルコマースサイト
-:link: ./what-challenges-does-liferay-solve-horizontal-solutions/digital-commerce-sites.md
-
-:::
-
-:::{grid-item-card} 外部Webサイト
-:link: ./what-challenges-does-liferay-solve-horizontal-solutions/enterprise-websites.md
-
-:::
-
-:::{grid-item-card} サプライヤーポータル
-:link: ./what-challenges-does-liferay-solve-horizontal-solutions/supplier-portals.md
-
-:::
-
-:::{grid-item-card} パートナーポータル
-:link: ./what-challenges-does-liferay-solve-horizontal-solutions/partner-portals.md
-
-:::
-
-:::{grid-item-card} 最新の社内ポータル
-:link: ./what-challenges-does-liferay-solve-horizontal-solutions/intranets.md
-
-:::  
-::::

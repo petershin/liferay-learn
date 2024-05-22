@@ -38,18 +38,4 @@ Liferay Objects provides these action types:
 <!--TASK: When client extensions docs are ready, mention being able to add Action Types and Notification Types.-->
 
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} Defining Object Actions
-:link: ./actions/defining-object-actions.md
-:::
-
-:::{grid-item-card} Understanding Action Types
-:link: ./actions/understanding-action-types.md
-:::
-
-:::{grid-item-card} Using Manual Actions
-:link: ./actions/using-manual-actions.md
-:::
-::::

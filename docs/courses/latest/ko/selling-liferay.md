@@ -40,24 +40,4 @@ Liferay 학습 경로를 통해 성공을 위해 팀을 배치하십시오!
 
 [레벨 0](./selling-liferay/level-0.md)로 Liferay 판매 방법을 배우십시오.
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} 레벨 0
-:link: ./판매-liferay/level-0.md
-
-레벨 0에서는 Liferay가 제공하는 회사, 제품 및 가치에 대해 소개합니다.
-:::
-
-:::{grid-item-card} 레벨 1 비즈니스
-:link: ./판매-liferay/level-1-business.md
-
-비즈니스 영업 역할에 대한 레벨 1은 Liferay 판매자에게 잠재 고객 생성부터 거래 성사까지 Liferay 판매를 성공시키는 방법을 보여줍니다.
-:::
-
-:::{grid-item-card} 레벨 1 기술
-:link: ./판매-liferay/level-1-technical.md
-
-기술 판매자를 위한 레벨 1은 Liferay의 성공적인 데모를 준비하고 실행하기 위한 기반을 제공합니다.
-:::
-::::

@@ -24,14 +24,4 @@ Before proceeding, you should be familiar with Mule and Anypoint Studio concepts
 
 For connector prerequisites, see Liferay's [Release Notes](https://github.com/liferay/liferay-etl-mulesoft/blob/master/docs/release-notes.adoc).
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card}  Configuring the Mulesoft Connector
-:link: ./mulesoft/configuring-the-mulesoft-connector.md
-:::
-
-:::{grid-item-card}  Designing Mule Flows
-:link: ./mulesoft/designing-mule-flows.md
-:::
-::::

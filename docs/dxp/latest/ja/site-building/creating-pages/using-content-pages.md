@@ -24,33 +24,4 @@ toc:
 
 はじめるには、 [コンテンツページへの要素の追加](./using-content-pages/adding-elements-to-content-pages.md) を参照してください。
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} コンテンツページへの要素の追加
-:link: ./using-content-pages/adding-elements-to-content-pages.md
-:::
-
-:::{grid-item-card} コンテンツページでのコンテンツ管理
-:link: ./using-content-pages/managing-content-in-content-pages.md
-:::
-
-:::{grid-item-card} フラグメントの使用
-
-* [デフォルトのフラグメントリファレンス](./page-fragments-and-widgets/using-fragments/default-fragments-reference.md)
-* [レイアウト要素の使用](./page-fragments-and-widgets/using-fragments/using-layout-elements.md)
-* [フラグメントの設定](./page-fragments-and-widgets/using-fragments/configuring-fragments.md)
-:::
-
-:::{grid-item-card} コンテントページでのウィジェットの使用
-:link: ./using-content-pages/using-widgets-on-a-content-page.md
-:::
-
-:::{grid-item-card} ページコメントの使用
-:link: ./using-content-pages/using-page-comments.md
-:::
-
-:::{grid-item-card} コンテントページエディタUI リファレンス
-:link: ./using-content-pages/content-page-editor-ui-reference.md
-:::
-::::

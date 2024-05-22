@@ -40,48 +40,4 @@ visibility:
 
 [Tailored Solution Highlights](./level-1-business/tailored-solution-highlights.md)でレベル1をスタート。
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} テーラード・ソリューション・ハイライト
-:link: ./level-1-business/tailored-solution-highlights.md
-
-Liferay上に構築されたオーダーメイドのソリューションを紹介し、柔軟性と可能性を実例で紹介します。
-:::
-
-:::{grid-item-card} アウトバウンドプロスペクティング101 for Liferay opportunities
-:link: ./level-1-business/outbound-prospecting.md
-
-Liferayのビジネスチャンスに向けたアウトバウンドプロスペクティングのベストプラクティスを提供する。
-:::
-
-:::{grid-item-card} Liferay Pricing
-:link: ./level-1-business/liferay-pricing.md
-
-Liferay Experience Cloud SaaS、PaaS、DXP Self-Hostedの価格モデルを説明します。
-:::
-
-:::{grid-item-card} Liferayセールスプレゼンテーションとそのマスター方法
-:link: ./level-1-business/liferay-sales-presentations.md
-
-セールス・プレゼンテーションの種類と、その方法とタイミングについて概説する。
-:::
-
-:::{grid-item-card} セールスファネルと機会進捗のベストプラクティス
-:link: ./level-1-business/sales-funnel-opportunity-progress.md
-
-Liferayのオポチュニティがどのようにセールスファネルを通過していくのか、バイヤージャーニーとセールスプロセスの典型的なステップを示します。
-:::
-
-:::{grid-item-card} 競合情報 - バトルカード
-:link: ./level-1-business/battlecards.md
-
-競合他社の情報を得るために利用可能なバトルカードについてレビューする。
-:::
-
-:::{grid-item-card} Liferay Contracts
-:link: ./level-1-business/liferay-contracts.md
-
-Liferayの顧客契約フレームワークの概要を説明します。
-:::
-::::

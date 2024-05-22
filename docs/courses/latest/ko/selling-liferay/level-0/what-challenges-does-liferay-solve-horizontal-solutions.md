@@ -61,37 +61,5 @@ Liferay가 가장 일반적으로 해결하는 6가지 솔루션에 대해 알�
 
 [갑시다!](./what-challenges-does-liferay-solve-horizontal-solutions/customer-portals.md)
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} 고객 포털
-:link: ./what-challenges-does-liferay-solve-horizontal-solutions/customer-portals.md
-
-:::
-
-:::{grid-item-card} 디지털 상거래 사이트
-:link: ./what-challenges-does-liferay-solve-horizontal-solutions/digital-commerce-sites.md
-
-:::
-
-:::{grid-item-card} 외부 웹사이트
-:link: ./what-challenges-does-liferay-solve-horizontal-solutions/enterprise-websites.md
-
-:::
-
-:::{grid-item-card} 공급업체 포털
-:link: ./what-challenges-does-liferay-solve-horizontal-solutions/supplier-portals.md
-
-:::
-
-:::{grid-item-card} 파트너 포털
-:link: ./what-challenges-does-liferay-solve-horizontal-solutions/partner-portals.md
-
-:::
-
-:::{grid-item-card} 최신 인트라넷
-:link: ./what-challenges-does-liferay-solve-horizontal-solutions/intranets.md
-
-:::
-::::
 

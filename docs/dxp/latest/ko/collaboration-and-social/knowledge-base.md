@@ -22,42 +22,4 @@ toc:
 
 또한 Markdown 파일을 가져오고 GitHub와 같은 서비스에서 호스팅하는 경우 가져온 기사에 대해 소스 URL [소스 URL](./knowledge-base/importing-knowledge-base-articles.md#setting-a-source-url) 활성화할 수 있습니다. 일단 구성되면 Knowledge Base는 각 기사에 Edit on GitHub 버튼을 추가하므로 사용자는 소스 저장소에서 기사의 Markdown을 볼 수 있습니다.
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} 기술 자료 문서 만들기
-:link: ./knowledge-base/creating-knowledge-base-articles.md
-:::
-
-:::{grid-item-card} 기술 자료 문서 가져오기
-:link: ./knowledge-base/importing-knowledge-base-articles.md
-:::
-
-:::{grid-item-card} 기술 자료 관리
-:link: ./knowledge-base/managing-the-knowledge-base.md
-:::
-
-:::{grid-item-card} 지식 베이스 템플릿
-:link: ./knowledge-base/knowledge-base-templates.md
-:::
-
-:::{grid-item-card} 기술 자료 피드백에 응답
-:link: ./knowledge-base/responding-to-knowledge-base-feedback.md
-:::
-
-:::{grid-item-card} 기술 자료 디스플레이 위젯
-:link: ./knowledge-base/knowledge-base-display-widget.md
-:::
-
-:::{grid-item-card} 기타 기술 자료 위젯
-:link: ./knowledge-base/other-knowledge-base-widgets.md
-:::
-
-:::{grid-item-card} 기술 자료 시스템 설정
-:link: ./knowledge-base/knowledge-base-system-settings.md
-:::
-
-:::{grid-item-card} 개발자 가이드
-:link: ./knowledge-base/developer-guide.md
-:::
-::::

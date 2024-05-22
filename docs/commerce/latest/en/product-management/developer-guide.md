@@ -19,34 +19,4 @@ taxonomy-category-names:
 ---
 # Developer Guide
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card}  Catalog API Basics
-:link: ./developer-guide/catalog-api-basics.md
-:::
-
-:::{grid-item-card}  Currency API Basics
-:link: ./developer-guide/currency-api-basics.md
-:::
-
-:::{grid-item-card}  Option API Basics
-:link: ./developer-guide/option-api-basics.md
-:::
-
-:::{grid-item-card}  OptionValue API Basics
-:link: ./developer-guide/option-value-api-basics.md
-:::
-
-:::{grid-item-card}  Product API Basics
-:link: ./developer-guide/product-api-basics.md
-:::
-
-:::{grid-item-card}  Product API - Creating a Product with Multiple SKUs
-:link: ./developer-guide/product-api-creating-a-product-with-multiple-skus.md
-:::
-
-:::{grid-item-card}  Specification API Basics
-:link: ./developer-guide/specification-api-basics.md
-:::
-::::

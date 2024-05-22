@@ -11,14 +11,3 @@ toc:
 
 ![Add relationships to objects.](./relationships/images/01.png)
 
-::::{grid} 2
-:gutter: 3 3 3 3
-
-:::{grid-item-card} 개체 관계 정의
-:link: ./relationships/defining-object-relationships.md
-:::
-
-:::{grid-item-card} 관계 제거
-:link: ./relationships/removing-relationships.md
-:::
-::::

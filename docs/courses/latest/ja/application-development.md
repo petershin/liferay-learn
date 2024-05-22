@@ -32,27 +32,7 @@ Due to recent growth, Delectable Bonsai needs two custom solutions to streamline
 
 Start by [データ構造のモデリング](./application-development/modeling-data-structures.md) ！
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} Module One: Modeling Data Structures
-:link: ./application-development/modeling-data-structures.md
-
-Liferay Objectsを使ってカスタムデータ構造を定義し、管理する方法を学びます。
-:::
-
-:::{grid-item-card} モジュール 2: ビジネスロジックの実装
-:link: ./application-development/implementing-business-logic.md
-
-Liferay DXPでアプリケーションにバリデーションや通知などを追加する方法をご紹介します。
-:::
-
-:::{grid-item-card} モジュール3：ユーザーインターフェースの設計
-:link: ./application-development/designing-user-interfaces.md
-
-Liferay DXPでアプリケーションインターフェースを設計する方法を学びます。
-:::
-::::
 
 <!--TASK:
 :::{grid-item-card} Module Four: Building a Ticketing System

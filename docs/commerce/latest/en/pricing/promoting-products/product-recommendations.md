@@ -31,14 +31,4 @@ There are five types of product recommendations. Each can be used in different S
 Customer similarity is currently determined by their purchase histories only. Two customers are similar if they have both purchased the same product.
 ```
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} Using Product Recommendations
-:link: ./product-recommendations/using-product-recommendations.md
-:::
-
-:::{grid-item-card} Understanding Recommendation Types
-:link: ./product-recommendations/understanding-recommendation-types.md
-:::
-::::

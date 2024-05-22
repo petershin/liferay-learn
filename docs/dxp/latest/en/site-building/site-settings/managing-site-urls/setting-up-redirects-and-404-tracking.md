@@ -38,18 +38,4 @@ Liferay recommends alias redirects in most cases because they are more predictab
 
 In the Redirection application, you can view and manage site requests that result in a 404 error, so you can assess and quickly resolve any issues. For Liferay 7.4+, 404 tracking is disabled by default. Enabling this feature activates the 404 URLs tab in the Redirection application and begins cataloging errors. See [Tracking 404 URLs](./setting-up-redirects-and-404-tracking/tracking-404-urls.md) for more information.
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} Using Alias Redirects
-:link: ./setting-up-redirects-and-404-tracking/using-alias-redirects.md
-:::
-
-:::{grid-item-card} Using Pattern Redirects
-:link: ./setting-up-redirects-and-404-tracking/using-pattern-redirects.md
-:::
-
-:::{grid-item-card} Tracking 404 URLs
-:link: ./setting-up-redirects-and-404-tracking/tracking-404-urls.md
-:::
-::::

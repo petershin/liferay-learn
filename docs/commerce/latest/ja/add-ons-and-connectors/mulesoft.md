@@ -15,14 +15,4 @@ toc:
 
 コネクタの前提条件については、Liferay の [リリースノート](https://github.com/liferay/liferay-etl-mulesoft/blob/master/docs/release-notes.adoc) を参照してください。
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card}  Mulesoft コネクタの設定
-:link: ./mulesoft/configuring-the-mulesoft-connector.md
-:::
-
-:::{grid-item-card}  Muleフローの設計
-:link: ./mulesoft/designing-mule-flows.md
-:::
-::::

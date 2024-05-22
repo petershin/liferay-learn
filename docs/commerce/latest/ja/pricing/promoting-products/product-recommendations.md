@@ -24,14 +24,4 @@ Liferayは、コンテンツベースとユーザーベースの両方の商品�
 お客様の類似性は、現在、購入履歴のみで判断しています。 2人の顧客が同じ商品を購入した場合、2人は類似しています。
 ```
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} 商品推薦の使用
-:link: ./product-recommendations/using-product-recommendations.md
-:::
-
-:::{grid-item-card} 推奨タイプの理解
-:link: ./product-recommendations/understanding-recommendation-types.md
-:::
-::::

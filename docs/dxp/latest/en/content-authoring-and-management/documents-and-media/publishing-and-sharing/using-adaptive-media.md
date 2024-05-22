@@ -27,26 +27,4 @@ Adaptive Media supports these Commerce widgets: [Search Results](https://learn.l
 
 If you have upgraded to the latest DXP version from a legacy version that did not support Adaptive Media, you can migrate existing Documents and Media thumbnails to new Adaptive Media defined Image Resolutions; see [Migrating Documents and Media Thumbnails](./using-adaptive-media/migrating-documents-and-media-thumbnails.md).
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} Adding Image Resolutions
-:link: ./using-adaptive-media/adding-image-resolutions.md
-:::
-
-:::{grid-item-card} Managing Image Resolutions
-:link: ./using-adaptive-media/managing-image-resolutions.md
-:::
-
-:::{grid-item-card} Using Adapted Images in Site Content
-:link: ./using-adaptive-media/using-adapted-images-in-site-content.md
-:::
-
-:::{grid-item-card} Migrating Documents and Media Thumbnails
-:link: ./using-adaptive-media/migrating-documents-and-media-thumbnails.md
-:::
-
-:::{grid-item-card} Adaptive Media Configuration Reference
-:link: ./using-adaptive-media/adaptive-media-configuration-reference.md
-:::
-::::

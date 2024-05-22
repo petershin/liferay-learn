@@ -20,18 +20,4 @@ Commerce で通知を使用するには、まず Liferay DXP のメール設定�
 
 **Notification Queue** タブには、チャネルのすべての電子メール通知が表示されます。 各通知項目には、送信者、受信者、イベントの種類、ステータス、優先度が表示されます。 デフォルトでは、Liferayは15分ごとに未送信の通知を通知キューにチェックします。 この動作の設定方法については、「 [Commerce Notification Queue の設定」](./sending-emails/configuring-the-commerce-notification-queue.md) ）を参照してください。
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card}  通知テンプレートの使用
-:link: ./sending-emails/using-notification-templates.md
-:::
-
-:::{grid-item-card}  通知キューを設定する
-:link: ./sending-emails/configuring-the-commerce-notification-queue.md
-:::
-
-:::{grid-item-card}  通知テンプレート変数リファレンスガイド
-:link: ./sending-emails/notification-template-variables-reference-guide.md
-:::  
-::::

@@ -19,26 +19,4 @@ Liferay provides integrated tools for translating both Web Content and Content P
 
 The languages available for translation are determined by your instance's localization settings. See [Initial Instance Localization](../installation-and-upgrades/setting-up-liferay/initial-instance-localization.md) and [Virtual Instance Localization](../system-administration/configuring-liferay/virtual-instances/localization.md) for more information.
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} Translating Content Pages
-:link: ./translating-pages-and-content/translating-content-pages.md
-:::
-
-:::{grid-item-card} Translating Web Content
-:link: ./translating-pages-and-content/translating-web-content.md
-:::
-
-:::{grid-item-card} Using Third Party Services
-:link: ./translating-pages-and-content/using-third-parties-for-translation.md
-:::
-
-:::{grid-item-card} Enabling Workflows for Translations
-:link: ./translating-pages-and-content/enabling-workflows-for-translations.md
-:::
-
-:::{grid-item-card} Managing Translation Permissions
-:link: ./translating-pages-and-content/managing-translation-permissions.md
-:::
-::::

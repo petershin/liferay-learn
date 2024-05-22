@@ -29,14 +29,3 @@ toc:
 Liferay 7.2에서는 모바일 장치 감지 시 사이트 동작을 제어하는 모바일 장치 규칙을 생성할 수 있습니다. 모바일 장치 규칙 생성에 대한 자세한 내용은 [모바일 장치 규칙 생성](./building-a-responsive-site/creating-mobile-device-rules.md) 을 참조하십시오.
 ```
 
-::::{grid} 2
-:gutter: 3 3 3 3
-
-:::{grid-item-card} 그리드 조각으로 반응형 레이아웃 구축
-:link: ./building-a-responsive-site/building-responsive-layouts-with-the-grid-fragment.md
-:::
-
-:::{grid-item-card} 시뮬레이션 패널 사용
-:link: ./building-a-responsive-site/using-the-simulation-panel.md
-:::
-::::

@@ -28,14 +28,4 @@ To start using suppliers, ensure that you've enabled the feature flag depending 
 
 ![Run the health check for account roles.](./suppliers/images/01.png)
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} Supplier Account
-:link: ./suppliers/supplier-account.md
-:::
-
-:::{grid-item-card} Supplier Role
-:link: ./suppliers/supplier-role.md
-:::
-::::

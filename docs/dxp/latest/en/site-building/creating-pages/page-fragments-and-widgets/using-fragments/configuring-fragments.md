@@ -51,22 +51,4 @@ In the Image Source tab, you can select an element's image, view its resolution,
 
 In the Link tab, you can either manually add a URL to a page element, or select from an available content field. You can also specify the desired target (e.g., self, parent).
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} General Settings Reference
-:link: ./configuring-fragments/general-settings-reference.md
-:::
-
-:::{grid-item-card} Styles Reference
-:link: ./configuring-fragments/styles-reference.md
-:::
-
-:::{grid-item-card} Fragment Sub-Elements Reference
-:link: ./configuring-fragments/fragment-sub-elements-reference.md
-:::
-
-:::{grid-item-card} Localizing Fragment Configuration Fields
-:link: ./configuring-fragments/localizing-fragment-configuration-fields.md
-:::
-::::

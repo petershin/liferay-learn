@@ -13,14 +13,3 @@ Liferayのすぐに使えるサプライヤーアカウントタイプを使え�
 この機能は現在、リリース機能フラグの後ろにある。 詳しくは [ベータ版の機能と機能フラグ](https://learn.liferay.com/web/guest/w/dxp/system-administration/configuring-liferay/feature-flags#release-feature-flags) をお読みください。
 ```
 
-::::{grid} 2
-:gutter: 3 3 3 3
-
-:::{grid-item-card} サプライヤーアカウント
-:link: ./suppliers/supplier-account.md
-:::
-
-:::{grid-item-card} 販売業者ロール
-:link: ./suppliers/supplier-role.md
-:::
-::::

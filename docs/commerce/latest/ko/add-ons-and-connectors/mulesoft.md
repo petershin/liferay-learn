@@ -15,14 +15,4 @@ toc:
 
 커넥터 전제 조건은 Liferay의 [릴리스 노트](https://github.com/liferay/liferay-etl-mulesoft/blob/master/docs/release-notes.adoc) 을 참조하십시오.
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card}  Mulesoft 커넥터 구성
-:link: ./mulesoft/configuring-the-mulesoft-connector.md
-:::  
-
-:::{grid-item-card}  Mule Flow 설계하기
-:link: ./mulesoft/designing-mule-flows.md
-:::
-::::

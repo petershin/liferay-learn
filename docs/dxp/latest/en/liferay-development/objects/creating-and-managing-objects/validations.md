@@ -20,14 +20,4 @@ Object validations set rules for determining valid field inputs. You can define 
 
 If out-of-the-box validations don't meet your needs, you can create custom validations using the `objectValidationRule` client extension. See [Microservice Client Extensions](../../integrating-microservices.md) for more information.
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} Adding Field Validations
-:link: ./validations/adding-field-validations.md
-:::
-
-:::{grid-item-card} Expressions Builder Validations Reference
-:link: ./validations/expression-builder-validations-reference.md
-:::
-::::

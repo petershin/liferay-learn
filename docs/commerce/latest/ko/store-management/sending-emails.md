@@ -20,18 +20,4 @@ Commerce에서 알림을 사용하려면 먼저 Liferay DXP에 대한 메일 설
 
 **알림 대기열** 탭에는 채널에 대한 모든 이메일 알림이 표시됩니다. 각 이메일 알림 항목에는 보낸 사람, 받는 사람, 이벤트 유형, 상태 및 우선 순위가 표시됩니다. 기본적으로 Liferay는 15분마다 알림 대기열에서 보내지 않은 알림을 확인합니다. 이 동작을 구성하는 방법은 [상거래 알림 대기열 구성](./sending-emails/configuring-the-commerce-notification-queue.md) 참조하십시오.
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card}  알림 템플릿 사용
-:link: ./sending-emails/using-notification-templates.md
-:::
-
-:::{grid-item-card}  알림 대기열 구성
-:link: ./sending-emails/configuring-the-commerce-notification-queue.md
-:::
-
-:::{grid-item-card}  알림 템플릿 변수 참조 가이드
-:link: ./sending-emails/notification-template-variables-reference-guide.md
-:::
-::::

@@ -28,37 +28,7 @@ Pages, content, and other application data created on the site-level is scoped t
 Also, configurations at the site level override configurations at the system and instance levels. See [Understanding Configuration Scope](../system-administration/configuring-liferay/understanding-configuration-scope.md) for more information.
 ```
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} Adding a Site
-:link: ./sites/adding-a-site.md
-:::
-
-:::{grid-item-card} Site Templates
-:link: ./sites/site-templates.md
-:::
-
-:::{grid-item-card} Site Hierarchies
-:link: ./sites/site-hierarchies.md
-:::
-
-:::{grid-item-card} Site Membership
-:link: ./sites/site-membership.md
-:::
-
-:::{grid-item-card} Personal Sites
-:link: ./sites/personal-sites.md
-:::
-
-:::{grid-item-card} Exporting/Importing Site Pages and Content
-:link: ./sites/exporting-importing-site-pages-and-content.md
-:::
-
-:::{grid-item-card} Default Site Applications
-:link: ./sites/default-site-applications.md
-:::
-::::
 
 ## Using Sites with Commerce
 

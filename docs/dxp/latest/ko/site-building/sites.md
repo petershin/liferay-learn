@@ -20,37 +20,7 @@ toc:
 또한 사이트 수준의 구성은 시스템 및 인스턴스 수준의 구성을 재정의합니다. 자세한 내용은 [구성 범위 이해](../시스템-관리/라이프웨이 구성하기/구성 범위 이해.md)를 참조하세요.
 ```
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} 사이트 추가하기
-:link: ./sites/adding-a-site.md
-:::
-
-:::{grid-item-card} 사이트 템플릿
-:link: ./sites/site-templates.md
-:::
-
-:::{grid-item-card} 사이트 계층 구조
-:link: ./sites/site-hierarchies.md
-:::
-
-:::{grid-item-card} 사이트 멤버십
-:link: ./sites/site-membership.md
-:::
-
-:::{grid-item-card} 개인 사이트
-:link: ./sites/personal-sites.md
-:::
-
-:::{grid-item-card} 사이트 페이지 및 콘텐츠 내보내기/가져오기
-:link: ./sites/exporting-importing-site-pages-and-content.md
-:::
-
-:::{grid-item-card} 기본 사이트 애플리케이션
-:link: ./sites/default-site-applications.md
-:::
-::::
 
 ## 커머스가 있는 사이트 사용
 

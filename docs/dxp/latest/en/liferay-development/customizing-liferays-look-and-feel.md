@@ -101,43 +101,4 @@ Finally, themes are a traditionally deployed asset to Liferay, which is why they
 
 Read on to learn how to customize Liferay to match your design! 
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card}  Using A Theme Favicon Client Extension
-:link: ./customizing-liferays-look-and-feel/using-a-theme-favicon-client-extension.md
-:::
-
-:::{grid-item-card}  Using A CSS Client Extension
-:link: ./customizing-liferays-look-and-feel/using-a-css-client-extension.md
-:::
-
-:::{grid-item-card}  Using A Theme CSS Client Extension
-:link: ./customizing-liferays-look-and-feel/using-a-theme-css-client-extension.md
-:::
-
-:::{grid-item-card}  Using a JavaScript Client Extension
-:link: ./customizing-liferays-look-and-feel/using-a-javascript-client-extension.md
-:::
-
-:::{grid-item-card}  Using A Theme Spritemap Client Extension
-:link: ./customizing-liferays-look-and-feel/using-a-theme-spritemap-client-extension.md
-:::
-
-:::{grid-item-card}  Using An Editor Config Contributor Client Extension
-:link:  ./customizing-liferays-look-and-feel/using-an-editor-config-contributor-client-extension.md
-:::
-
-:::{grid-item-card}  Using A Custom Filter Client Extension
-:link:  ./customizing-liferays-look-and-feel/using-a-custom-filter-client-extension.md
-:::
-
-:::{grid-item-card}  Front-end Client Extensions UI Reference 
-:link:  ./customizing-liferays-look-and-feel/client-extensions-ui-reference.md
-:::
-
-:::{grid-item-card}  Themes
-:link: ./customizing-liferays-look-and-feel/themes.md
-:::
-
-::::

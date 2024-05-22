@@ -26,34 +26,3 @@ With web content articles, structures, and templates, you can have more control 
 
 In this section, start by [adding a web content article](./web-content-articles/adding-a-basic-web-content-article.md) and learn how to [manage](./web-content-articles/managing-web-content-articles.md), [preview](./web-content-articles/previewing-web-content-articles.md), [filter, and sort](./web-content-articles/filtering-and-sorting-web-content-articles.md) articles.
 
-::::{grid} 2
-:gutter: 3 3 3 3
-
-:::{grid-item-card}  Adding a Basic Web Content Article
-:link: ./web-content-articles/adding-a-basic-web-content-article.md
-:::
-
-:::{grid-item-card}  Previewing Web Content Articles
-:link: ./web-content-articles/previewing-web-content-articles.md
-:::
-
-:::{grid-item-card}  Managing Web Content Articles
-:link: ./web-content-articles/managing-web-content-articles.md
-:::
-
-:::{grid-item-card}  Filtering and Sorting Web Content Articles
-:link: ./web-content-articles/filtering-and-sorting-web-content-articles.md
-:::
-
-:::{grid-item-card}  Using Expiration and Review Dates in Web Content
-:link: ./web-content-articles/using-expiration-and-review-dates-in-web-content.md
-:::
-
-:::{grid-item-card}  Generating Text Content Using AI
-:link: ./web-content-articles/generating-text-content-using-ai.md
-:::
-
-:::{grid-item-card}  Assigning Permissions to Web Content Articles
-:link: ./web-content-articles/assigning-permissions-to-web-content-articles.md
-:::
-::::

@@ -29,30 +29,4 @@ Start working with a cloud project for Delectable Bonsai, a (fake) company that'
 
 Whether you're working with Liferay SaaS or PaaS, get started by [setting up your cloud project](./cloud-administrator/setting-up-your-cloud-project.md).
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card}  Setting Up Your Cloud Project
-:link: ./cloud-administrator/setting-up-your-cloud-project.md
-
-Learn how to get started using the Cloud console with Liferay SaaS or PaaS.
-:::
-
-:::{grid-item-card}  Deploying Code to Liferay SaaS
-:link: ./cloud-administrator/deploying-code-to-liferay-saas.md
-
-Learn how to deploy and work with a client extension project in Liferay SaaS.
-:::
-
-:::{grid-item-card}  Cloud Configuration
-:link: ./cloud-administrator/cloud-configuration.md
-
-Learn how to configure your services and Liferay instance in Liferay PaaS.
-:::
-
-:::{grid-item-card}  Cloud Development Lifecycle
-:link: ./cloud-administrator/cloud-development-lifecycle.md
-
-Learn how to work with the Cloud console in Liferay PaaS as a developer.
-:::
-::::

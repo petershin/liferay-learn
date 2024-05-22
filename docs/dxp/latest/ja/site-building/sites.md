@@ -20,37 +20,7 @@ toc:
 また、サイト・レベルのコンフィギュレーションは、システム・レベルとインスタンス・レベルのコンフィギュレーションをオーバーライドする。 詳しくは [設定スコープについて](../system-administration/configuring-liferay/understanding-configuration-scope.md) を参照してください。
 ```
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} サイトの追加
-:link: ./sites/adding-a-site.md
-:::
-
-:::{grid-item-card} サイトテンプレート
-:link: ./sites/site-templates.md
-:::
-
-:::{grid-item-card} サイト階層
-:link: ./sites/site-hierarchies.md
-:::
-
-:::{grid-item-card} サイトメンバーシップ
-:link: ./sites/site-membership.md
-:::
-
-:::{grid-item-card} 個人サイト
-:link: ./sites/personal-sites.md
-:::
-
-:::{grid-item-card} サイトページとコンテンツのエクスポート/インポート
-:link: ./sites/exporting-importing-site-pages-and-content.md
-:::
-
-:::{grid-item-card} デフォルトサイトアプリケーション
-:link: ./sites/default-site-applications.md
-:::  
-::::
 
 ## コマース・サイトの利用
 

@@ -46,42 +46,4 @@ Liferay가 사용되는 가장 일반적인 6가지 산업에 대한 자세한 �
 
 [갑시다!](./what-challenges-does-liferay-solve-industry-solutions/manufacturing.md)
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} 제조
-:link: ./what-challenges-does-liferay-solve-industry-solutions/manufacturing.md
-
-제조 분야의 Liferay
-:::
-
-:::{grid-item-card} 금융 서비스
-:link: ./what-challenges-does-liferay-solve-industry-solutions/financial-services.md
-
-금융 서비스 분야의 Liferay
-:::
-
-:::{grid-item-card} 정부 및 공공 부문
-:link: ./what-challenges-does-liferay-solve-industry-solutions/government-and-public-sector.md
-
-정부 및 공공 부문의 Liferay
-:::
-
-:::{grid-item-card} 보험
-:link: ./what-challenges-does-liferay-solve-industry-solutions/insurance.md
-
-보험 의 라이프레이
-:::
-
-:::{grid-item-card} 헬스케어
-:link: ./what-challenges-does-liferay-solve-industry-solutions/healthcare.md
-
-헬스케어 분야의 Liferay
-:::
-
-:::{grid-item-card} 에너지 및 유틸리티
-:link: ./what-challenges-does-liferay-solve-industry-solutions/energy-and-utilities.md
-
-에너지 및 유틸리티 분야의 Liferay
-:::
-::::

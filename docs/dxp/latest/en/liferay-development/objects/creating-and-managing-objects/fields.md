@@ -50,42 +50,4 @@ Liferay provides these field types that correspond to specific data types in the
 | Rich Text                                             | Clob                 | Stores text with advanced formatting tools and media elements (e.g., images, videos, audio).                                                                                                                                                                                                                         |
 | Text (*previously String*)                            | String               | Stores simple text values up to 280 characters. You can choose to allow only unique values. After creating the field, you can limit the number of characters allowed.                                                                                                                                                |
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} Adding Fields to Objects
-:link: ./fields/adding-fields-to-objects.md
-:::
-
-:::{grid-item-card} Using Read-Only Fields
-:link: ./fields/using-read-only-fields.md
-:::
-
-:::{grid-item-card} Adding and Managing Custom States
-:link: ./fields/adding-and-managing-custom-states.md
-:::
-
-:::{grid-item-card} Aggregation Fields
-:link: ./fields/aggregation-fields.md
-:::
-
-:::{grid-item-card} Attachment Fields
-:link: ./fields/attachment-fields.md
-:::
-
-:::{grid-item-card} Auto-Increment Fields
-:link: ./fields/auto-increment-fields.md
-:::
-
-:::{grid-item-card} Encrypted Fields
-:link: ./fields/encrypted-fields.md
-:::
-
-:::{grid-item-card} Formula Fields
-:link: ./fields/formula-fields.md
-:::
-
-:::{grid-item-card} Picklist Fields
-:link: ./fields/picklist-fields.md
-:::
-::::

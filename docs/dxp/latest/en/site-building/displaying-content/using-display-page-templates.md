@@ -47,26 +47,4 @@ To achieve this goal, you can create a single display page template that maps yo
 
 If a content type has multiple display page templates created for it, you can [map links to any of the available templates](./using-display-page-templates/using-multiple-display-page-templates-to-create-multi-step-applications.md) for that asset type. When mapping a link to its display page, you can choose the default option or any of the other available display page templates, allowing for greater customization and flexibility in how your content is displayed.
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} Creating and Managing Display Page Templates
-:link: ./using-display-page-templates/creating-and-managing-display-page-templates.md
-:::
-
-:::{grid-item-card} Publishing Content with Display Pages
-:link: ./using-display-page-templates/publishing-content-with-display-pages.md
-:::
-
-:::{grid-item-card} Displaying Categories Using Display Pages
-:link: ./using-display-page-templates/displaying-categories-using-display-pages.md
-:::
-
-:::{grid-item-card} Using Multiple Display Page Templates to Create Multi-Step Applications
-:link: ./using-display-page-templates/using-multiple-display-page-templates-to-create-multi-step-applications.md
-:::
-
-:::{grid-item-card} Configuring SEO and Open Graph
-:link: ./using-display-page-templates/configuring-seo-and-open-graph.md
-:::
-::::

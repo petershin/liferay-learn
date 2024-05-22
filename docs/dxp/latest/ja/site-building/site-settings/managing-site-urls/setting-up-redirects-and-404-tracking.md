@@ -28,18 +28,4 @@ Liferay はほとんどの場合、エイリアスリダイレクトを推奨し
 
 リダイレクションアプリケーションでは、404エラーになるサイトリクエストを表示・管理できるため、問題を評価し、迅速に解決することができます。 Liferay 7.4+では、404トラッキングはデフォルトで無効になっています。 この機能を有効にすると、Redirectionアプリケーションの404 URLタブが有効になり、エラーのカタログ化が開始されます。 詳しくは、 [404 URLの追跡](./setting-up-redirects-and-404-tracking/tracking-404-urls.md) をご覧ください。
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} エイリアスリダイレクトの使用
-:link: ./setting-up-redirects-and-404-tracking/using-alias-redirects.md
-:::
-
-:::{grid-item-card} パターンリダイレクトの使用
-:link: ./setting-up-redirects-and-404-tracking/using-pattern-redirects.md
-:::
-
-:::{grid-item-card} 404 URLのトラッキング
-:link: ./setting-up-redirects-and-404-tracking/tracking-404-urls.md 
-::: 
-::::

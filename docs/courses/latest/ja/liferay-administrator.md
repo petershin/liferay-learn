@@ -28,36 +28,4 @@ Liferayインスタンスはインストールされていますか？ さて、
 
 何を待っているんだい？ Liferay [の設定](./liferay-administrator/configuration.md)を作成することから始めましょう。
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card}  設定
-:link: ./liferay-administrator/configuration.md
-
-Liferay DXPの設定を始める方法をご紹介します。
-:::
-
-:::{grid-item-card}  ユーザー、アカウント、組織
-:link: ./liferay-administrator/users-accounts-organizations
-
-Liferay DXPでユーザー、アカウント、組織をどのように使い、ニーズに合わせて提供できるかをご紹介します。
-:::
-
-:::{grid-item-card}  ユーザーデータ
-:link: ./liferay-administrator/user-data.md
-
-ユーザーデータの管理方法を学ぶ
-:::
-
-:::{grid-item-card}  クラスタリング
-:link: ./liferay-administrator/clustering.md
-
-Liferayクラスタの設定方法を学びます。
-:::
-
-:::{grid-item-card}  セキュリティ
-:link: ./liferay-administrator/security.md
-
-Liferay 環境をセキュアにする方法を学びましょう。
-:::
-::::

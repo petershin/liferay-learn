@@ -24,33 +24,4 @@ toc:
 
 시작하려면 [콘텐츠 페이지에 요소 추가](./using-content-pages/adding-elements-to-content-pages.md)를 참조하세요!
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} 콘텐츠 페이지에 요소 추가
-:link: ./using-content-pages/adding-elements-to-content-pages.md
-:::
-
-:::{grid-item-card} 콘텐츠 페이지의 콘텐츠 관리
-:link: ./using-content-pages/managing-content-in-content-pages.md
-:::
-
-:::{grid-item-card} 조각 사용
-
-* [기본 조각 참조](./page-fragments-and-widgets/using-fragments/default-fragments-reference.md)
-* [레이아웃 요소 사용](./page-fragments-and-widgets/using-fragments/using-layout-elements.md)
-* [조각 구성](./page-fragments-and-widgets/using-fragments/configuring-fragments.md)
-:::
-
-:::{grid-item-card} 콘텐츠 페이지에서 위젯 사용
-:link: ./using-content-pages/using-widgets-on-a-content-page.md
-:::
-
-:::{grid-item-card} 페이지 댓글 사용
-:link: ./using-content-pages/using-page-comments.md
-:::
-
-:::{grid-item-card} 콘텐츠 페이지 편집기 UI 참조
-:link: ./using-content-pages/content-page-editor-ui-reference.md
-:::
-::::

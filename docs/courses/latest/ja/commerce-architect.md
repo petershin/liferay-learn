@@ -25,18 +25,4 @@ Liferay Administratorコースでユーザー、アカウント、組織を設�
 
 [基本的な前提条件をいくつか設定し、簡単な製品を作成することから始める](./commerce-architect/setting-up-and-creating-products.md) 。
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card}  製品の設定と作成
-:link: ./commerce-architect/setting-up-and-creating-products.md
-
-ストアフロントを構築する前に、必要なコマース機能の作成と設定方法をご紹介します。
-:::
-
-:::{grid-item-card}  商品とSKUの設定
-:link: ./commerce-architect/configuring-products-and-skus.md
-
-商品とSKUの設定方法をご紹介します。
-:::
-::::

@@ -87,23 +87,5 @@ Liferayのモジュール式のアーキテクチャには、動的に拡張し�
 
 次：[Adobe社](./main-competitors-faced-by-liferay/adobe.md)
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} Adobe社
-:link: ./main-competitors-faced-by-liferay/adobe.md
-:::
-
-:::{grid-item-card} Sitecore社
-:link: ./main-competitors-faced-by-liferay/sitecore.md
-:::
-
-:::{grid-item-card} Optimizely社
-:link: ./main-competitors-faced-by-liferay/optimizely.md
-:::
-
-:::{grid-item-card} Acquia社
-:link: ./main-competitors-faced-by-liferay/acquia.md
-:::
-::::
 

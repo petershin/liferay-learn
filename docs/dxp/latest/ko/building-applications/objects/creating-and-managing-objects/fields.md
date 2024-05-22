@@ -41,38 +41,4 @@ Liferay는 백엔드의 특정 데이터 유형에 해당하는 다음 필드 �
 | 서식있는 텍스트                                         | 클로브                             | 고급 서식 도구 및 미디어 요소(예: 이미지, 비디오, 오디오)를 사용하여 텍스트를 저장합니다.                                                                                                                                                                              |
 | 텍스트(**이전의 문자열**)                | 끈                               | 최대 280자의 간단한 텍스트 값을 저장합니다. 고유한 값만 허용하도록 선택할 수 있습니다. 필드를 생성한 후 허용되는 문자 수를 제한할 수 있습니다.                                                                                                                                                                  |
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} 객체에 필드 추가
-:link: ./fields/adding-fields-to-objects.md
-:::
-
-:::{grid-item-card} 읽기 전용 필드 사용
-:link: ./fields/using-read-only-fields.md
-:::
-
-:::{grid-item-card} 사용자 정의 상태 추가 및 관리
-:link: ./fields/add-and-managing-custom-states.md
-:::
-
-:::{grid-item-card} 집계 필드
-:link: ./fields/aggregation-fields.md
-:::
-
-:::{grid-item-card} 첨부 파일 필드
-:link: ./fields/attachment-fields.md
-:::
-
-:::{grid-item-card} 암호화된 필드
-:link: ./fields/encrypted-fields.md
-:::
-
-:::{grid-item-card} 수식 필드
-:link: ./fields/formula-fields.md
-:::
-
-:::{grid-item-card} 선택 목록 필드
-:link: ./fields/picklist-fields.md
-:::
-::::

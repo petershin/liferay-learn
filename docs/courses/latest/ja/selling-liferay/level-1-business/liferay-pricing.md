@@ -133,19 +133,4 @@ SaaSであることが不可能なシナリオも考えられる：
 
 [Liferay Experience Cloud SaaS](./liferay-pricing/liferay-pricing-saas.md).
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} Liferay Pricing - SaaS
-:link: ./liferay-pricing/liferay-pricing-saas.md
-
-:::
-::：{grid-item-card} Liferay Pricing - PaaS
-:link: ./liferay-pricing/liferay-pricing-paas.md
-
-:::
-::：{grid-item-card} Liferay Pricing - Self-Hosted
-:link: ./liferay-pricing/liferay-pricing-self-hosted.md
-
-:::
-::::

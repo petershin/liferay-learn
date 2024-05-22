@@ -32,18 +32,4 @@ Liferayサーバーにバーチャルホストを設定し、ドメイン名（�
 
 リダイレクトツールを使用して、404エラーにつながるサイトリクエストを追跡・管理します。 有効にすると、Liferay DXPは各404エラーをカタログ化するので、問題を評価し、迅速に解決することができます。 詳細情報と利用可能な設定オプションについては、[404 URLの追跡](./managing-site-urls/setting-up-redirects-and-404-tracking/tracking-404-urls.md)を参照してください。
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} サイトのフレンドリURLを設定する
-:link: ./managing-site-urls/configuring-your-sites-friendly-url.md
-:::
-
-:::{grid-item-card} バーチャルホストのサイトURLの設定
-:link: ./managing-site-urls/configuring-virtual-hosts-site-urls.md
-:::
-
-:::{grid-item-card} リダイレクトと404追跡の設定
-:link: ./managing-site-urls/setting-up-redirects-and-404-tracking.md
-:::
-::::

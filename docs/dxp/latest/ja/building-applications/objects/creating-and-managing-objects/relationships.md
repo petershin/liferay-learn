@@ -11,14 +11,4 @@ toc:
 
 ![オブジェクトに関連を追加します。](./relationships/images/01.png)
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} オブジェクトリレーションシップの定義
-:link: ./relationships/defining-object-relationships.md
-:::
-
-:::{grid-item-card} 関連の削除
-:link: ./relationships/removing-relationships.md
-:::
-::::

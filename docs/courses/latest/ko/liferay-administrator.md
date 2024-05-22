@@ -28,36 +28,4 @@ Liferay 인스턴스가 설치되어 있습니까? 이제 뭐? LXC, LXC-SM 또�
 
 당신은 무엇을 기다리고 있습니까? Liferay [설정](./liferay-administrator/configuration.md) 을 생성하여 시작하세요.
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card}  구성
-:link: ./liferay-administrator/configuration.md
-
-Liferay DXP 구성을 시작하는 방법을 알아보세요.
-:::
-
-:::{grid-item-card}  사용자, 계정 및 조직
-:link: ./liferay-administrator/users-accounts-organizations
-
-Liferay DXP에서 귀하의 요구 사항을 충족하기 위해 사용자, 계정 및 조직을 어떻게 사용할 수 있는지 알아보세요.
-:::
-
-:::{grid-item-card}  사용자 데이터
-:link: ./liferay-administrator/user-data.md
-
-사용자 데이터를 관리하는 방법을 알아보세요.
-:::
-
-:::{grid-item-card}  클러스터링
-:link: ./liferay-administrator/clustering.md
-
-Liferay 클러스터를 구성하는 방법을 알아보세요.
-:::
-
-:::{grid-item-card}  보안
-:link: ./liferay-administrator/security.md
-
-Liferay 환경을 보호하는 방법을 알아보세요.
-:::
-::::

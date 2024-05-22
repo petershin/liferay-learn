@@ -15,14 +15,4 @@ toc:
 
 ![カスタムオブジェクトにレイアウトを追加し、エントリー作成時のフィールドや関連の表示方法を定義することができます。](./layouts/images/01.png)
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} オブジェクトレイアウトの設計
-:link: ./layouts/designing-object-layouts.md
-:::
-
-:::{grid-item-card} フィールドタブへのカテゴリー設定の追加
-:link: ./layouts/adding-categorization-to-fields-tabs.md
-:::
-::::

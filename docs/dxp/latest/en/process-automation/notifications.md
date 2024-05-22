@@ -36,18 +36,4 @@ To use email notifications, you must [configure a mail server](../installation-a
 
 In the Commerce context, notifications are supported for Channel events. See [Sending Emails](https://learn.liferay.com/w/commerce/store-management/sending-emails) to learn more.
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} Configuring Personal Notifications
-:link: ./notifications/configuring-personal-notifications.md
-:::
-
-:::{grid-item-card} Creating Notification Templates
-:link: ./notifications/creating-notification-templates.md
-:::
-
-:::{grid-item-card} Using the Notification Queue
-:link: ./notifications/using-the-notification-queue.md
-:::
-::::

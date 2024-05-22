@@ -19,37 +19,4 @@ taxonomy-category-names:
 
 # Poshi Layers
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} Functions
-:link: ./poshi-layers/functions.md
-
-Building reliable and reusable functions
-:::
-
-:::{grid-item-card} Paths
-:link: ./poshi-layers/paths.md
-
-Defining Page Objects
-:::
-
-:::{grid-item-card} Macros
-:link: ./poshi-layers/macros.md
-
-Scripting User Interactions
-:::
-
-:::{grid-item-card} Testcases
-:link: ./poshi-layers/testcases.md
-
-Writing User Behaviors
-:::
-
-:::{grid-item-card} Variables
-:link: ./poshi-layers/variables.md
-
-Making paths and macros specific yet reusable
-:::
-
-::::

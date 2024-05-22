@@ -29,36 +29,4 @@ Dive in and begin creating a website for Clarity Vision Solutions, a (fake) comp
 
 What are you waiting for? Start by creating your Liferay [configuration](./liferay-administrator/configuration.md). 
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card}  Configuration
-:link: ./liferay-administrator/configuration.md
-
-Learn how to get started configuring Liferay DXP.
-:::
-
-:::{grid-item-card}  Users, Accounts, and Organizations
-:link: ./liferay-administrator/users-accounts-organizations
-
-Learn how Users, Accounts, and Organizations can be used to deliver for your needs on Liferay DXP.
-:::
-
-:::{grid-item-card}  User Data
-:link: ./liferay-administrator/user-data.md
-
-Learn how to manage user data.
-:::
-
-:::{grid-item-card}  Clustering
-:link: ./liferay-administrator/clustering.md
-
-Learn how to configure a Liferay cluster.
-:::
-
-:::{grid-item-card}  Security
-:link: ./liferay-administrator/security.md
-
-Learn how to secure your Liferay environment.
-:::
-::::

@@ -31,33 +31,4 @@ Finally, with [A/B Testing](../optimizing-sites/ab-testing/ab-testing.md), you c
 
 See [Adding Elements to Content Pages](./using-content-pages/adding-elements-to-content-pages.md) to get started!
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} Adding Elements to Content Pages
-:link: ./using-content-pages/adding-elements-to-content-pages.md
-:::
-
-:::{grid-item-card} Managing Content in Content Pages
-:link: ./using-content-pages/managing-content-in-content-pages.md
-:::
-
-:::{grid-item-card} Using Fragments
-
-* [Default Fragments Reference](./page-fragments-and-widgets/using-fragments/default-fragments-reference.md)
-* [Using Layout Elements](./page-fragments-and-widgets/using-fragments/using-layout-elements.md)
-* [Configuring Fragments](./page-fragments-and-widgets/using-fragments/configuring-fragments.md)
-:::
-
-:::{grid-item-card} Using Widgets on a Content Page
-:link: ./using-content-pages/using-widgets-on-a-content-page.md
-:::
-
-:::{grid-item-card} Using Page Comments
-:link: ./using-content-pages/using-page-comments.md
-:::
-
-:::{grid-item-card} Content Page Editor UI Reference
-:link: ./using-content-pages/content-page-editor-ui-reference.md
-:::
-::::

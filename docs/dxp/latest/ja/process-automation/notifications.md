@@ -29,18 +29,4 @@ Liferayには通知ツールが統合されているため、プラットフォ�
 
 コマース・コンテキストでは、チャネルイベントに対する通知がサポートされています。 詳しくは、 [メールの保存](https://learn.liferay.com/w/commerce/store-management/sending-emails/store-emails) をご覧ください。
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} パーソナル通知の設定
-:link: ./notifications/configuring-personal-notifications.md
-:::
-
-:::{grid-item-card} 通知テンプレートの作成
-:link: ./notifications/creating-notification-templates.md
-:::
-
-:::{grid-item-card} 通知キューを使う
-:link: ./notifications/using-the-notification-queue.md
-:::
-::::

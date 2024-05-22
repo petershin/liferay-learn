@@ -19,22 +19,4 @@ Liferayは、サイト作成時に使用できる構造とコンテンツを設�
 サイトテンプレートは、主に複数のサイトでページを管理するためのものです。 サイト間でウェブコンテンツやその他のアセットを作成・管理する必要がある場合は、[asset libraries](../../content-authoring-and-management/asset-libraries/asset-libraries-overview.md) を使用してください。
 ```
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} サイトテンプレートの作成
-:link: ./site-templates/creating-site-templates.md
-:::
-
-:::{grid-item-card} テンプレートの変更の伝播
-:link: ./site-templates/propagating-template-changes.md
-:::
-
-:::{grid-item-card} サイトテンプレート伝搬の設定
-:link: ./site-templates/configuring-site-template-propagation.md
-:::
-
-:::{grid-item-card} サイトテンプレートのエクスポートとインポート
-:link: ./site-templates/exporting-importing-site-templates.md
-:::
-::::

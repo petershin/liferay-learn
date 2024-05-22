@@ -20,26 +20,4 @@ Adaptive Mediaは以下のコマースウィジェットをサポートしてい
 
 アダプティブメディアをサポートしていないレガシーバージョンから最新のDXPバージョンにアップグレードした場合、既存のドキュメントとメディアのサムネイルを新しいアダプティブメディア定義の画像解像度に移行することができます。 [ドキュメントとメディアのサムネイルの移行](./using-adaptive-media/migrating-documents-and-media-thumbnails.md) を参照してください。
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} 画像解像度の追加
-:link: ./using-adaptive-media/adding-image-resolutions.md
-:::
-
-:::{grid-item-card} 画像解像度の管理
-:link: ./using-adaptive-media/managing-image-resolutions.md
-:::
-
-:::{grid-item-card} サイトコンテンツでの適用された画像の使用
-:link: ./using-adaptive-media/using-adaptted-images-in-site-content.md
-:::
-
-:::{grid-item-card} ドキュメントとメディアサムネイルの移行
-:link: ./using-adaptive-media/migrating-documents-and-media-thumbnails.md
-:::
-
-:::{grid-item-card} アダプティブメディア設定リファレンス
-:link: ./using-adaptive-media/adaptive-media-configuration-reference.md
-:::
-::::

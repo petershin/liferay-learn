@@ -18,18 +18,3 @@ Liferay provides a variety of tools to streamline development and help you deliv
 
 Up First: [Liferay Workspace](./module-2-developer-setup/liferay-workspace.md)
 
-::::{grid} 2
-:gutter: 3 3 3 3
-
-:::{grid-item-card} Liferay Workspace
-:link: ./module-2-developer-setup/liferay-workspace.md
-
-Learn how to set up Liferay Workspace as an environment for Liferay project development.
-:::
-
-:::{grid-item-card} Client Extensions
-:link: ./module-2-developer-setup/client-extensions.md
-
-Learn about Client Extensions and why you should use them.
-:::
-::::

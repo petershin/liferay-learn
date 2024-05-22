@@ -31,18 +31,4 @@ Groovyスクリプトアクションは、Liferay Experience Cloud Self-Managed�
 <!--TASK: When client extensions docs are ready, mention being able to add Action Types and Notification Types.-->
 
 
-::::{grid} 2
-:gutter: 3 3 3 3
 
-:::{grid-item-card} オブジェクトアクションの定義
-:link: ./actions/defining-object-actions.md
-:::
-
-:::{grid-item-card} アクションの種類について
-:link: ./actions/understanding-action-types.md
-:::
-
-:::{grid-item-card} マニュアルアクションの使用
-:link: ./actions/using-manual-actions.md
-:::
-::::

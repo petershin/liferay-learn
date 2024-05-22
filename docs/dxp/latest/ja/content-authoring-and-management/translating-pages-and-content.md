@@ -12,26 +12,4 @@ Liferayは、Webコンテンツとコンテントページの両方のエクス�
 
 翻訳可能な言語は、インスタンスのローカライズ設定により決定されます。 詳しくは、 [初期インスタンスのローカリゼーション](../installation-and-upgrades/setting-up-liferay/initial-instance-localization.md) および [ローカライズ](../system-administration/configuring-liferay/virtual-instances/localization.md) を参照してください。
 
-::::{grid} 2 
-:gutter: 3 3 3 3
 
-:::{grid-item-card} コンテンツページの翻訳
-:link: ./translating-pages-and-content/translating-content-pages.md
-:::
-
-:::{grid-item-card} Webコンテンツの翻訳
-:link: ./translating-pages-and-content/translating-web-content.md
-:::
-
-:::{grid-item-card} サードパーティーサービスの利用
-:link: ./translating-pages-and-content/using-third-parties-for-translation.md
-:::
-
-:::{grid-item-card} 翻訳のワークフローの有効化
-:link: ./translating-pages-and-content/enabling-workflows-for-translations.md
-:::
-
-:::{grid-item-card} 翻訳の権限の管理
-:link: ./translating-pages-and-content/managing-translation-permissions.md
-:::
-::::

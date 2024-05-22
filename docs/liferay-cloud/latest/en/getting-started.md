@@ -1,4 +1,5 @@
 ---
+showChildrenCards: false
 toc:
   - ./getting-started/initial-setup-overview.md
   - ./getting-started/development-requirements.md
@@ -10,10 +11,10 @@ toc:
   - ./getting-started/liferay-saas-go-live-checklist.md
   - ./getting-started/liferay-paas-go-live-checklist.md
 taxonomy-category-names:
-- Cloud
-- Cloud Platform Administration
-- Liferay PaaS
-- Liferay SaaS
+  - Cloud
+  - Cloud Platform Administration
+  - Liferay PaaS
+  - Liferay SaaS
 uuid: 7197d494-7d76-48f5-ab9b-a8efa9441400
 ---
 # Getting Started

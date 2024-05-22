@@ -9,10 +9,10 @@ toc:
   - ./getting-started/changing-your-sites-appearance.md
   - ./getting-started/whats-new-73.md
 taxonomy-category-names:
-- Platform
-- Liferay Self-Hosted
-- Liferay PaaS
-- Liferay SaaS
+  - Platform
+  - Liferay Self-Hosted
+  - Liferay PaaS
+  - Liferay SaaS
 uuid: c96cc8c7-5d35-4e57-8f90-38c90df80816
 ---
 

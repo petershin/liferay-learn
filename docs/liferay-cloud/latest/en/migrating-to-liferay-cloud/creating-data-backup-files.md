@@ -5,6 +5,7 @@ taxonomy-category-names:
 - Liferay PaaS
 uuid: ee3a8169-8408-4c36-afbc-9976f0ef3866
 ---
+
 # Stage 2: Creating Data Backup Files
 
 Now that the Liferay versions match between your on-premises and Liferay Cloud environments, you must prepare the data from your installation for migration. This stage of migration involves creating a database dump, migrating the document library store, and compressing the document library into an archive.
@@ -20,21 +21,21 @@ Before you create your data backup files, you must arrange a window to freeze th
 
 Make sure your database is compatible with PostgreSQL 15. You can use a tool like [pgloader](https://pgloader.io/) to convert other database formats to PostgreSQL. However, you must take care to ensure the created database includes the correct data types and all relevant database objects (tables, indexes, and rules).
 
-You should generally run Liferay with all your custom modules against an empty PostgreSQL 15 database to create the initial schema, and use that as the basis for your database conversion. Then you can move your data into the new database tables with a tool like `pgloader`.
+You should run Liferay with all your custom modules against an empty PostgreSQL 15 database to create the initial schema, and use that as the basis for your database conversion. Then you can move your data into the new database tables with a tool like `pgloader`.
 
 Here are some important considerations when converting your database:
 
-* Liferay tables must all be created in the `public` schema.
+* All Liferay tables must be created in the `public` schema.
 
-* Database columns storing boolean (true/false) data should be created with the `boolean` data type, not using `tinyint` or `smallint`.
+* Create boolean (true/false) database columns data with the `boolean` data type, not `tinyint` or `smallint`.
 
 * If your application uses custom object tables, these tables are not created automatically if you initialize an empty PostgreSQL database. Instead, you must export and import these objects to ensure they're included in the new schema.
 
 * Some object tables for system objects are created using a company ID field in the name. Check these object tables and adjust all of them with a company ID in the name to match your source database's company ID.
 
-* Liferay uses PostgreSQL rules to properly handle large objects in the database. Make sure you include the same rules defined [here](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/com/liferay/portal/dao/db/PostgreSQLDB.java#L44-L59).
+* Liferay uses PostgreSQL rules to handle large objects in the database properly. Make sure you include the same rules defined [here](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/com/liferay/portal/dao/db/PostgreSQLDB.java#L44-L59).
 
-* If you rely on any custom tables not part of Liferay's schema, you must devise a solution to migrate each of those tables specifically.
+* If you rely on custom tables not part of Liferay's schema, you must devise a solution to migrate each of those tables.
 
 * Check your application for any custom logic that leverages proprietary database features (e.g., functions or stored procedures). For example, MySQL database functions like `DAY` or `GROUP_CONCAT` don't work in PostgreSQL, so you must use alternatives.
 
@@ -44,7 +45,7 @@ Coordinate with your database administrator before and after the conversion to e
 
 Database table and column names are case sensitive in Liferay Cloud, and table names must be in Pascal case. If the table names were created in lower case, they're unrecognizable by Liferay Cloud. This can happen with certain operating system and database combinations. For example, MySQL is case-sensitive in Linux by default, but not in Windows or MacOS (where Liferay may generate tables with all lower case names).
 
-Before you create a database dump, ensure that your database's tables have Pascal case capitalization. If not (i.e., they're all in lower case), you must convert them to Pascal case manually or with a script. You must also ensure that any of your own code that references the table names reflects the updated capitalization.
+Before you create a database dump, ensure that your database's tables have Pascal case capitalization. If not (i.e., they're all in lower case), you must convert them to Pascal case manually or with a script. You must also ensure that any of your own code referencing the table names reflects the updated capitalization.
 
 For example, convert these lower case table names:
 
@@ -58,11 +59,12 @@ You can use the [`RENAME TABLE`](https://dev.mysql.com/doc/refman/5.7/en/rename-
 
 ## Create a Database Dump
 
-```{note}
-If you are using Windows (OS), then you need file compression software to execute commands to pack/unpack compressed files. Install [7-zip](https://www.7-zip.org/) or similar file compression software to do this.
-```
+!!! note
+    If you are using Windows (OS), you must install file compression software to execute commands to pack/unpack compressed files. Install [7-zip](https://www.7-zip.org/) or similar file compression software to do this.
 
 Now that the database is in MySQL format, run the following commands on your database server. Replace `#` with the database user and password, respectively, and `lportal` with your database name if necessary.
+
+<!-- I suspect something needs to be changed here, as we don't want the database in MySQL format, right? We want it in PostgreSQL format. -Rich -->
 
 **For Linux and MacOS** (one command):
 
@@ -84,11 +86,10 @@ The server creates a compressed database dump file named `database.gz`.
 
 ## Migrate the Document Library to a File System Store
 
-If your document library is using an file storage method that is not a file system store (such as Amazon S3Store or DBStore), then you must migrate to a file system store before proceeding. You can either use the Simple File System Store or Advanced File System Store.
+If your document library is using an file storage method that is not a file system store (such as Amazon S3Store or DBStore), you must migrate to a file system store before proceeding. You can use the Simple File System Store or Advanced File System Store.
 
-```{important}
-The [Advanced File System Store](https://learn.liferay.com/w/dxp/system-administration/file-storage/configuring-file-storage) uses a folder structure that more easily scales to large data sets. Migrating to the Advanced File System Store is recommended to accommodate more files in the document library in the long term and is **required** for any production environment.
-```
+!!! important
+    The [Advanced File System Store](https://learn.liferay.com/w/dxp/system-administration/file-storage/configuring-file-storage) uses a folder structure that more easily scales to large data sets. Migrating to the Advanced File System Store is recommended to accommodate more files in the document library in the long term and is **required** for any production environment.
 
 See [File Store Migration](https://learn.liferay.com/w/dxp/system-administration/file-storage/file-store-migration) for steps on how to migrate the document library.
 
@@ -126,21 +127,20 @@ Finally, use the [Liferay Cloud Console](https://console.liferay.cloud/) to depl
 
 1. Find the build you created previously in the list, and from the Actions menu, click *Deploy build to*.
 
-    ![Use the build's Actions menu to deploy it.](./creating-data-backup-files/images/01.png)
+   ![Use the build's Actions menu to deploy it.](./creating-data-backup-files/images/01.png)
 
 1. Select the environment to deploy the build to (e.g., `acme-dev`).
 
 1. Read the information below and select the confirmation boxes to confirm the results of the deployment.
 
-    ![Check the checkboxes and deploy the build when ready.](./creating-data-backup-files/images/02.png)
+   ![Check the checkboxes and deploy the build when ready.](./creating-data-backup-files/images/02.png)
 
 1. Click *Deploy Build*.
 
 The build is deployed to your chosen environment, and the change to `portal-ext.properties` is applied when the `liferay` service restarts.
 
-```{important}
-All of your environments on Liferay Cloud must use the same implementation for the document library to allow backups from one environment to work if [restored to the others](../platform-services/backup-service/restoring-data-from-a-backup.md). You should deploy the build to all of your environments to make sure they all correctly use the migrated document library store.
-```
+!!! important
+    All of your environments on Liferay Cloud must use the same implementation for the document library to allow backups from one environment to work if [restored to the others](../platform-services/backup-service/restoring-data-from-a-backup.md). You should deploy the build to all of your environments to make sure they all correctly use the migrated document library store.
 
 ## Compress the Document Library
 

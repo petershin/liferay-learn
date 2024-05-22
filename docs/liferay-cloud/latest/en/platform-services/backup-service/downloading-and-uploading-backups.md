@@ -67,7 +67,7 @@ To upload a backup of your environment to Liferay Cloud, you must have the datab
 
 Creating a database dump requires different commands for PostgreSQL and MySQL databases. See [Creating a Database Dump](./creating-a-database-dump.md) for more steps specific to your type of database.
 
-These steps should dump your database and compress it into a resulting `database.gz` file.
+These steps dump your database and compress it into a resulting `database.gz` file.
 
 ### Creating the Volume File
 

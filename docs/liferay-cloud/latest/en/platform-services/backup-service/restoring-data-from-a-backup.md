@@ -5,6 +5,7 @@ taxonomy-category-names:
 - Liferay PaaS
 uuid: b323c5f9-5ba1-4468-8b8c-5c16c36b3078
 ---
+
 # Restoring Data from a Backup
 
 During project development, there may be times when you need to restore data or roll back the project to an earlier state. Restoring a backup to an environment restores the data for each service, but it does *not* change the build the environment is using.
@@ -37,11 +38,11 @@ Follow these steps to restore an environment from a backup:
 
 1. Click on *Restore to...*
 
-   ![Figure 1: Click on the Actions button, and then click Restore To...](./restoring-data-from-a-backup/images/01.png)
+   ![Click on the Actions button, and then click Restore To...](./restoring-data-from-a-backup/images/01.png)
 
 1. Click the drop-down *Environment* menu, and select the environment you want to restore.
 
-   ![Figure 2: Select the environment you want to restore.](./restoring-data-from-a-backup/images/02.png)
+   ![Select the environment you want to restore.](./restoring-data-from-a-backup/images/02.png)
 
    ```{note}
    Administrators can only restore environments to which they have access.
@@ -51,7 +52,7 @@ Follow these steps to restore an environment from a backup:
 
 1. Click on *Restore to Environment* to start the restore process.
 
-   ![Figure 3: Click all checkboxes to confirm the restore.](./restoring-data-from-a-backup/images/03.png)
+   ![Click all checkboxes to confirm the restore.](./restoring-data-from-a-backup/images/03.png)
 
 During the restore process, the target environment's services will restart.
 
@@ -68,7 +69,7 @@ SQL scripts support these formats:
 
 ### Preparing SQL Scripts for PostgreSQL
 
-Scripts for PostgreSQL only run on the database specified in the secret `lcp-secret-database-name`. Specify tables either without a qualifier or with the public schema (e.g., `update journalarticle` or `update public.journalarticle`).
+Scripts for PostgreSQL only run on the database specified in the secret `lcp-secret-database-name`. Specify tables without a qualifier or with the public schema (e.g., `update journalarticle` or `update public.journalarticle`).
 
 The database user specified in the `lcp-secret-database-user` secret is used to run your scripts with the `psql` command, with these options:
 
@@ -79,7 +80,7 @@ You can see details about the script execution in the backup log, like this exam
 
 ![The backup log includes details about your executed SQL scripts.](./restoring-data-from-a-backup/images/04.png)
 
-Any errors encountered executing your scripts (such as syntax errors) causes the restore process to fail and report the error in the restore log. Here's an example of an error:
+Errors encountered executing your scripts (such as syntax errors) cause the restore process to fail and the error is reported in the restore log. Here's an example of an error:
 
 ![Errors encountered running scripts abort the restore process and include the error messages in the restore log.](./restoring-data-from-a-backup/images/05.png)
 

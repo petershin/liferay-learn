@@ -22,8 +22,6 @@ Before you can use the PostgreSQL client via the Liferay service, you must upgra
 
 ### Prerequisites
 
-Before you can use the PostgreSQL client via the Liferay service, you must upgrade your services to at least these supported image versions:
-
 | **Service**       | **Minimum Supported Image Version** |
 | :---------------- | :---------------------------------- |
 | **Database**      | liferaycloud/database:5.4.0         |
@@ -55,7 +53,7 @@ See the official [PostgreSQL documentation](https://www.postgresql.org/docs/curr
 
 ### Logging in with Read and Write Privileges
 
-The default user can only perform read queries on the database, and cannot manipulate data. This prevents accidental modifications that may corrupt  your services' data.
+The default user can only perform read queries on the database, and cannot manipulate data. This prevents accidental modifications that may corrupt your services' data.
 
 However, if it is *critical* to manipulate data in the database, you can log in using your database credentials by typing this command into the shell (instead of only typing `psql`):
 
@@ -90,11 +88,11 @@ The default user can only perform read queries on the database, and cannot manip
 However, if it is *critical* to manipulate data in the database, you can log in using your database credentials by typing this command into the shell (instead of only typing `mysql`):
 
 ```bash
-mysql -u [LCP_SECRET_DATABASE_USER] -p[LCP_SECRET_DATABASE_PASSWORD]
+mysql -u [LCP_SECRET_DATABASE_USER] -p
 ```
 
-You can find the database name, user name, and password in your `database` service's [secrets](../../tuning-security-settings/managing-secure-environment-variables-with-secrets.md#viewing-and-modifying-an-existing-secret).
+The client prompts you for the password. You can find the database name, user name, and password in your `database` service's [secrets](../../tuning-security-settings/managing-secure-environment-variables-with-secrets.md#viewing-and-modifying-an-existing-secret).
 
-## Related Information
+## Related Topics
 
 * [Database Service](../database-service.md)

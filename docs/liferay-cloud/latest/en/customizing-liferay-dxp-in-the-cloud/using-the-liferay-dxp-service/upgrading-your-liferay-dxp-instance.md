@@ -16,7 +16,7 @@ Liferay periodically releases new minor and major versions of Liferay DXP that i
     To update to new minor versions or service packs, instead see [Updating to a New Version of Liferay DXP](./updating-your-dxp-instance-to-a-new-minor-version.md).
 
 !!! important
-   Upgrading an environment in Liferay PaaS requires restoring an upgraded database, and therefore involves downtime for the Liferay service to restart. Plan ahead for this downtime for production environments.
+    Upgrading an environment in Liferay PaaS requires restoring an upgraded database, and therefore involves downtime for the Liferay service to restart. Plan ahead for this downtime for production environments.
 
 Review the following steps to perform a database upgrade:
 
@@ -47,11 +47,11 @@ Perform the following steps to download a backup (consisting of both the databas
 
 1. Navigate to your production environment, then select _Backups_ from the menu.
 
-    ![Navigate to the Backups page in your production environment.](./upgrading-your-liferay-dxp-instance/images/01.png)
+   ![Navigate to the Backups page in your production environment.](./upgrading-your-liferay-dxp-instance/images/01.png)
 
 1. Choose one of the backups listed and select _Download_ from the Actions menu. Download the data volume and database zip files.
 
-    ![Click each option to download both the data volume and database archives.](./upgrading-your-liferay-dxp-instance/images/02.png)
+   ![Click each option to download both the data volume and database archives.](./upgrading-your-liferay-dxp-instance/images/02.png)
 
 ## Extract and Import the Data
 
@@ -61,7 +61,7 @@ The next step is to extract the data from the downloaded archives and move the d
 
 Perform the following steps to extract the data volume from the backup:
 
-1. Move the downloaded `.tgz` archive of the data volume (named `backup-lfr-<PROJECT_NAME>-prd-<BACKUP_ID>.tgz`) into the `LIFERAY_HOME/data` folder of the Liferay bundle you extracted earlier.
+1. Move the downloaded `.tgz` archive of the data volume (named `backup-lfr-[PROJECT_NAME]-prd-[BACKUP_ID].tgz`) into the `LIFERAY_HOME/data` folder of the Liferay bundle you extracted earlier.
 
 1. Extract the archive by running this command:
 
@@ -71,7 +71,7 @@ Perform the following steps to extract the data volume from the backup:
 
 ### Extract and Import the Database
 
-Open a command prompt at the location of the downloaded database archive (named `backup-db-<PROJECT_NAME>-prd-<BACKUP_ID>.tgz`) and perform the following steps to import it to MySQL:
+Open a command line at the location of the downloaded database archive (named `backup-db-[PROJECT_NAME]-prd-[BACKUP_ID].tgz`) and perform the following steps to import it:
 
 1. Extract the database archive:
 
@@ -79,7 +79,7 @@ Open a command prompt at the location of the downloaded database archive (named 
     tar -xvzf ARCHIVE_NAME.tgz
     ```
 
-1. Use the database client on your local system to create a database to import the data into.
+1. Use the database client on your local system to create a database for the imported data.
 
     **For PostgreSQL**:
 
@@ -90,11 +90,13 @@ Open a command prompt at the location of the downloaded database archive (named 
     **For MySQL** (using the name of the `.sql` dump without the extension as the database name):
 
     ```bash
-    mysql -u root -ppassword
+    mysql -u root -p 
     ```
 
+    Enter the password when prompted.
+
     ```
-    create database DATABASE_NAME;
+    create database DATABASE_NAME character set utf8;
     ```
 
 1. Import the database from the extracted `.sql` dump:
@@ -126,15 +128,15 @@ The database and document library are now in place and ready for you to perform 
 DXP bundles provide an upgrade tool that is used for data upgrades. This tool is invoked through a script included in the bundle, `db_upgrade.sh`.
 
 !!! note
-    The database upgrade tool can be pre-configured for more flexibility when running it. See [Using the Database Upgrade Tool](https://learn.liferay.com/w/dxp/installation-and-upgrades/upgrading-liferay/upgrade-basics/using-the-database-upgrade-tool) for more information on advanced usage.
+    The database upgrade tool can be pre-configured for more flexibility when it runs. See [Using the Database Upgrade Tool](https://learn.liferay.com/w/dxp/installation-and-upgrades/upgrading-liferay/upgrade-basics/using-the-database-upgrade-tool) for more information on advanced usage.
 
-Open a command prompt within your `LIFERAY_HOME/tools/portal-tools-db-upgrade-client` folder. Then, run the following command:
+Open a command line within your `LIFERAY_HOME/tools/portal-tools-db-upgrade-client` folder. Then, run the following command:
 
 ```bash
 db_upgrade.sh -j "-Dfile.encoding=UTF-8 -Duser.timezone=GMT -Xmx2048m" -l "output.log"
 ```
 
-The upgrade tool prompts you for information about your installation before beginning the data upgrade. If you have downloaded a Liferay bundle with Tomcat, then it automatically detects some of the directories as default values. Make sure you choose the appropriate database for your Liferay Cloud environment when prompted.
+The upgrade tool prompts you for information about your installation before beginning the data upgrade. If you downloaded a Liferay bundle with Tomcat, it automatically detects some of the directories as default values. Make sure you choose the appropriate database for your Liferay Cloud environment when prompted.
 
 Here is an example interaction with the upgrade tool entering this information:
 
@@ -180,16 +182,16 @@ Now that your Liferay installation has been upgraded, use the following steps to
 
 ### Compress the Document Library
 
-1. Open a command prompt within your `LIFERAY_HOME/data` folder.
+1. Open a command line within your `LIFERAY_HOME/data` folder.
 
 1. Run the following command to compress your document library into a `.tgz` archive:
 
-    ```bash
-    tar -czvf volume.tgz document_library
-    ```
+   ```bash
+   tar -czvf volume.tgz document_library
+   ```
 
-    !!! important
-        If the data volume you downloaded contained more folders (such as a `license/` folder), add these as additional arguments after `document_library`.
+   !!! important
+       If the data volume you downloaded contained more folders (such as a `license/` folder), add these as additional arguments after `document_library`.
 
 ### Export and Compress the Upgraded Database
 
@@ -207,11 +209,11 @@ Upload the document library and database archives to the `backup` service via th
 
 1. Click *Upload Backup...* near the top of the screen.
 
-    ![Click the Upload Backup button to access the upload page.](./upgrading-your-liferay-dxp-instance/images/03.png)
+   ![Click the Upload Backup button to access the upload page.](./upgrading-your-liferay-dxp-instance/images/03.png)
 
 1. On the Upload Backup page, expand the appropriate environment, and click the `+` icons for both the database and document library to upload them.
 
-    ![Click the icons to upload both the database and document library as .gz archives.](./upgrading-your-liferay-dxp-instance/images/04.png)
+   ![Click the icons to upload both the database and document library as .gz archives.](./upgrading-your-liferay-dxp-instance/images/04.png)
 
 1. When both the database dump and document library are uploaded, click *Initiate Upload*.
 

@@ -51,6 +51,7 @@ Follow the links below for sample API tutorials that include example requests an
 * [Custom Objects Using nestedFields to Query Related Entries](../liferay-development/objects/understanding-object-integrations/using-custom-object-apis/using-nestedfields-to-query-related-entries.md)
 * [Custom Objects Using Relationship REST APIs](../liferay-development/objects/understanding-object-integrations/using-custom-object-apis/using-relationship-rest-apis.md)
 * [Managing Objects with Headless APIs](../liferay-development/objects/creating-and-managing-objects/managing-objects-with-headless-apis.md)
+* [Using Object APIs With Base64 Encoded Files](../liferay-development/objects/understanding-object-integrations/using-custom-object-apis/using-object-apis-with-base64-encoded-files.md)
 
 ## Headless Delivery
 

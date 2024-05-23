@@ -6,7 +6,7 @@ toc:
   - ./using-custom-object-apis/using-nestedfields-to-query-related-entries.md
   - ./using-custom-object-apis/using-nestedfields-to-audit-entry-history.md
   - ./using-custom-object-apis/using-aggregation-terms-with-rest-apis.md
-  - ./using-custom-object-apis/using-object-apis-with-base64-formatted-files.md
+  - ./using-custom-object-apis/using-object-apis-with-base64-encoded-files.md
 uuid: 8db76b2e-6b09-488e-9e76-82d23b028cca
 taxonomy-category-names:
 - Integration
@@ -55,8 +55,8 @@ While the object is active, you can use these APIs to perform basic CRUD operati
 :link: ./using-custom-object-apis/using-aggregation-terms-with-rest-apis.md
 :::
 
-:::{grid-item-card} Using Object APIs With Base64 Formatted Files
-:link: ./using-custom-object-apis/using-object-apis-with-base64-formatted-files.md
+:::{grid-item-card} Using Object APIs With Base64 Encoded Files
+:link: ./using-custom-object-apis/using-object-apis-with-base64-encoded-files.md
 :::
 ::::
 

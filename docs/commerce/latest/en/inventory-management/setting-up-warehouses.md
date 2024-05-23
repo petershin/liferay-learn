@@ -51,7 +51,7 @@ Before creating a warehouse, you must enable the applicable country and region o
 
    Click the *Eligibility* tab, select *Specific Channels*, enter a channel name and click *Select*.
 
-   ![Associate the warehouse to all available channels or specific channels.](./setting-up-warehouses/images/03.png)
+   ![Associate the warehouse to one or more channels.](./setting-up-warehouses/images/03.png)
 
 1. Click *Save*.
 

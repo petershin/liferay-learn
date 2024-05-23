@@ -27,9 +27,9 @@ If you're using Commerce 2.0 or 2.1, the warehouse settings are located in the *
 
 ## Channels
 
-You can set the warehouse to serve all the available channels or select specific ones. To do this, click the *Eligibility* tab and select the *Specific Channels* radio button. Then, search for a channel and click *Select*.
+By default a warehouse doesn't serve any channels. To use a warehouse in a channel, click the *Eligibility* tab and select the *Specific Channels* radio button. Then, search for the channel and click *Select*.
 
-![Set the warehouse to serve all available channels or select specific ones.](./warehouse-reference-guide/images/02.png)
+![Set the warehouse to serve one or more channels.](./warehouse-reference-guide/images/02.png)
 
 ### Liferay DXP 7.4 U46/GA46 and Below
 

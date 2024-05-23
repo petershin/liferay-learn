@@ -24,11 +24,15 @@ taxonomy-category-names:
 
 1. Drag and drop Segment criteria from the panel on the right to the canvas on the center of the screen. The selector menu at the top of the panel shows you the criteria types you can select:
 
-    - **Events:** Actions taken by a person (e.g., submitted a form, viewed a blog, etc.). You can create segments with Liferay's out-of-the-box events as well as your own custom events.
-    - **Individual Attributes:** Attributes that belong to a person (e.g., age, country, industry, etc.). Note that DXP custom fields can also be selected under Individual Attributes. Learn more about [adding custom fields to Users in DXP](https://learn.liferay.com/en/w/dxp/system-administration/configuring-liferay/adding-custom-fields).
-    - **Interests:** Topics and content types that interest the person. For more information on interests in Analytics Cloud, see Customer Insights.
-    - **Session Attributes:** Attributes that belong to a person's web session (e.g., browser, geo-location, etc.).
-    - **Organization Attributes:** Attributes that belong to an organization (e.g. name, hierarchy, type, etc.).
+   **Events:** Actions taken by a person (e.g., submitted a form, viewed a blog, etc.). You can create segments with Liferay's out-of-the-box events as well as your own custom events.
+
+   **Individual Attributes:** Attributes that belong to a person (e.g., age, country, industry, etc.). Note that DXP custom fields can also be selected under Individual Attributes. Learn more about [adding custom fields to Users in DXP](https://learn.liferay.com/en/w/dxp/system-administration/configuring-liferay/adding-custom-fields).
+
+   **Interests:** Topics and content types that interest the person. For more information on interests in Analytics Cloud, see Customer Insights.
+
+   **Session Attributes:** Attributes that belong to a person's web session (e.g., browser, geo-location, etc.).
+
+   **Organization Attributes:** Attributes that belong to an organization (e.g. name, hierarchy, type, etc.).
 
     ![By default anonymous users are not included in Segments.](./creating-segments/images/02.png)
 
@@ -76,7 +80,7 @@ For example, joining two `birthDate` criteria with the following conditions crea
 
 You can also form subgroups of criteria by dragging and dropping criteria onto each other. An AND/OR box then appears between the subgroup and any adjacent criteria. Together, these tools help you build complex criteria for your Segment.
 
-![These criteria select Millenials using desktops.](./creating-segments/images/04.png)
+![These criteria select Millennials using desktops.](./creating-segments/images/04.png)
 
 Using events as criteria offers even more flexibility. For example, you can choose all users who performed the *Add to wish list* event at least once during the last month on a specific asset.
 

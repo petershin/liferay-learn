@@ -55,7 +55,7 @@ Collaborating users can add comments to a publication via its Changes page. Each
 
 1. Click the desired *publication*.
 
-1. Click the *Comments* button (![Comments Button](../../../images/icon-comments-w.png)).
+1. Click *Comments* (![Comments Button](../../../images/icon-comments-w.png)).
 
 1. In the chat window, type your comment, and click *Reply*.
 
@@ -79,7 +79,7 @@ All collaborating users are notified of your comment and can reply as well.
 
 {bdg-secondary}`Liferay 7.4 2023.Q3+/GA92+`
 
-If you need to share publication changes with people who are not site users, you can enable link sharing for the publication.
+If you must share publication changes with people who are not site users, you can enable link sharing for the publication.
 
 1. Click *Actions* (![Actions Button](../../../images/icon-actions.png)) for the desired publication, select *Invite Users*, and go to the *Share Link* tab.
 

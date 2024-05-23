@@ -31,11 +31,11 @@ For some conflicts, Liferay cannot provide an automatic resolution. This means y
 
 ![Edit or discard the publication's conflicting changes.](./resolving-conflicts/images/02.png)
 
-Depending on the [conflict type](#understanding-conflict-types), Publications may prompt you to perform one of the following actions.
+Depending on the [conflict type](#understanding-conflict-types), Publications may prompt you to perform one of two actions.
 
-- **Edit**: This redirects you to the cause of the conflict in the current publication. From there, you can make the changes necessary to resolve the conflict.
+**Edit**: Sends you to the cause of the conflict in the current publication. From there, you can make the changes necessary to resolve the conflict.
 
-- **Discard**: This displays a list of all changes that will be discarded. You can then click on *Discard* to permanently remove them from your publication.
+**Discard**: Displays a preview of changes to be discarded. You can then click *Discard* to remove them from your publication permanently.
 
 !!! warning
     Discarding is permanent and cannot be reversed. Ensure you've saved any changes you want to keep before discarding them from your publication.
@@ -45,30 +45,28 @@ Depending on the [conflict type](#understanding-conflict-types), Publications ma
 {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+`
 
 !!! important
-    This feature is currently behind a release feature flag (LPD-11018). Read [Release Feature Flags](../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information.
+    Currently, this feature is behind a release feature flag (LPD-11018). Read [Release Feature Flags](../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information.
 
-Scheduled publications are more susceptible to conflicts and errors as they are published in the future, and elements affected by the publication can be altered in production in the meantime.
+Scheduled publications are more susceptible to conflicts and errors, because elements in the publication may have been altered by the time they are published. When that happens, conflicts or errors may arise. Liferay tries to handle some conflicts [automatically](#automatically-resolving-conflicts), but sometimes [manual](#manually-resolving-conflicts) intervention is required.
 
-When that happens, some conflicts or errors may arise. Some conflicts are [handled automatically](#automatically-resolving-conflicts) while others have to be [handled manually](#manually-resolving-conflicts).
-
-Either way, when conflicts or errors arise, a notification is sent out to [users involved in the publication process](./collaborating-on-publications.md) (i.e., publishers, editors, administrators, and owners). This notification provides details about what went wrong and what needs fixing.
+Either way, when conflicts or errors arise, a notification is sent to [users involved in the publication process](./collaborating-on-publications.md) (i.e., publishers, editors, administrators, and owners), providing details about what went wrong and what needs fixing.
 
 To see the notifications, open the *User Administration Menu* and click *Notifications*.
 
-![A notification is sent out whenever scheduled publications run into conflicts or errors.](./resolving-conflicts/images/03.png)
+![A notification is sent whenever scheduled publications run into conflicts or errors.](./resolving-conflicts/images/03.png)
 
 !!! note
     If the `scheduled-publications-conflict-checks` is set at the [Job Scheduler](../../../liferay-development/core-frameworks/job-scheduler-framework/using-job-scheduler.md), a check is performed periodically to look for potential conflicts for scheduled publications. By default, the cron expression is set to midnight UTC.
 
-    If scheduled publications run into conflicts or errors, users receive notification messages every time the conflict check runs.
+    If scheduled publications run into conflicts or errors, users receive notification messages whenever the conflict check runs.
 
-In case of conflict errors, users can access a list of conflicts through the notification. In the Conflicts screen, users can solve conflicts that require manual resolution and view which conflicts were resolved automatically.
+Users can access a list of conflicts through the notification. There, users can both see the conflicts that were resolved automatically, and solve conflicts requiring manual resolution. 
 
 ![With conflict errors, users can see a list of conflicts that need to be resolved manually and a list of conflicts that were resolved automatically.](./resolving-conflicts/images/04.png)
 
-In the event of Java errors unrelated to conflicts, users receive an error message notification whereas owners and system administrators have access to a stack trace of errors for further investigation.
+If there are Java errors unrelated to conflicts, users receive an error message notification, and owners and system administrators have access to a stack trace of errors for further investigation.
 
-![With java errors that are not related to conflicts, users view an error message whereas owners and system administrators can access a stack trace of errors.](./resolving-conflicts/images/05.png)
+![With Java errors that are not related to conflicts, users view an error message whereas owners and system administrators can access a stack trace of errors.](./resolving-conflicts/images/05.png)
 
 ## Understanding Conflict Types
 
@@ -100,17 +98,17 @@ These conflicts occur when an entity is modified in a publication and then delet
 
 {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+` To prevent these conflicts, avoid deleting items modified in a publication by adding the `change.tracking.deletion.protection.enabled=true` property to your [`portal-ext.properties`](../../../installation-and-upgrades/reference/portal-properties.md).
 
-This property blocks the deletion of the item if it's being modified in a publication whether the deletion happens in production, or in another publication.
+This property blocks the deletion of the item if it's being modified in a publication, whether the deletion happens in production or in another publication.
 
-When attempting to delete an item, an error message is displayed, preventing deletion.
+When attempting to delete an item, an error message appears, preventing deletion.
 
-![An error message is shown when users try to delete items modified in a publication.](./resolving-conflicts/images/09.png)
+![An error message appears when users try to delete items modified in a publication.](./resolving-conflicts/images/09.png)
 
 
 !!! important
-    If you are deleting an item that is deleted immediately (e.g., a content page), the deletion is blocked and an error message is shown.
+    If you are deleting an item that is deleted immediately (rather than going to the recycle bin), the deletion is blocked and an error message is shown.
 
-    However, if you are deleting an item that is moved to the [recycle bin](../../../content-authoring-and-management/recycle-bin/using-the-recycle-bin.md) first (e.g., web content articles, blog posts, and documents), the item is moved to the recycle bin and the message is only shown once you try to delete it from the recycle bin.
+    However, if you are deleting an item that is moved to the [recycle bin](../../../content-authoring-and-management/recycle-bin/using-the-recycle-bin.md) first (e.g., web content articles, blog posts, and documents), the item is moved to the recycle bin, and the message is only shown once you try to delete it from the recycle bin.
 
     This means those items can still generate deletion conflicts even with the protection property in place.
 

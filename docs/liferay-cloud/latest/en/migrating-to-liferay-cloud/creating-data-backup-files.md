@@ -23,6 +23,9 @@ Make sure your database is compatible with PostgreSQL 15. You can use a tool lik
 
 You should run Liferay with all your custom modules against an empty PostgreSQL 15 database to create the initial schema, and use that as the basis for your database conversion. Then you can move your data into the new database tables with a tool like `pgloader`.
 
+!!! important
+    Ensure that you use correct capitalization for your table names as you convert the database. See [Ensuring Correct Table Capitalization](../platform-services/backup-service/creating-a-database-dump.md#ensuring-correct-table-capitalization) for more information.
+
 Here are some important considerations when converting your database:
 
 * All Liferay tables must be created in the `public` schema.
@@ -41,48 +44,11 @@ Here are some important considerations when converting your database:
 
 Coordinate with your database administrator before and after the conversion to ensure data integrity. Test the converted database by [connecting it to a local Liferay installation](https://learn.liferay.com/w/dxp/installation-and-upgrades/installing-liferay/configuring-a-database) before proceeding.
 
-### Ensuring Correct Table Capitalization
-
-Database table and column names are case sensitive in Liferay Cloud, and table names must be in Pascal case. If the table names were created in lower case, they're unrecognizable by Liferay Cloud. This can happen with certain operating system and database combinations. For example, MySQL is case-sensitive in Linux by default, but not in Windows or MacOS (where Liferay may generate tables with all lower case names).
-
-Before you create a database dump, ensure that your database's tables have Pascal case capitalization. If not (i.e., they're all in lower case), you must convert them to Pascal case manually or with a script. You must also ensure that any of your own code referencing the table names reflects the updated capitalization.
-
-For example, convert these lower case table names:
-
-* *accountentry* &rarr; *AccountEntry*
-
-* *cpdefinition* &rarr; *CPDefinition*
-
-* *trashentry* &rarr; *TrashEntry*
-
-You can use the [`RENAME TABLE`](https://dev.mysql.com/doc/refman/5.7/en/rename-table.html) command in MySQL to change a table's name. Please [submit a Support ticket](https://help.liferay.com) if you need assistance adjusting your table names.
-
 ## Create a Database Dump
 
-!!! note
-    If you are using Windows (OS), you must install file compression software to execute commands to pack/unpack compressed files. Install [7-zip](https://www.7-zip.org/) or similar file compression software to do this.
+Now that the database is in PostgreSQL format, you must create a database dump and compress it to a `.gz` archive to upload it.
 
-Now that the database is in MySQL format, run the following commands on your database server. Replace `#` with the database user and password, respectively, and `lportal` with your database name if necessary.
-
-<!-- I suspect something needs to be changed here, as we don't want the database in MySQL format, right? We want it in PostgreSQL format. -Rich -->
-
-**For Linux and MacOS** (one command):
-
-```bash
-mysqldump -u##### -p##### --databases --add-drop-database lportal | gzip -c | cat > database.gz
-```
-
-**For Windows** (two commands):
-
-```
-mysqldump -u##### -p##### --databases --add-drop-database lportal > database.sql
-```
-
-```
-7za a -tgzip database.gz database.sql
-```
-
-The server creates a compressed database dump file named `database.gz`. 
+Follow [these steps to create the database dump](../platform-services/backup-service/creating-a-database-dump.md#creating-and-compressing-a-postgresql-database-dump). You should have a `database.gz` archive file with the compressed SQL script when you're finished.
 
 ## Migrate the Document Library to a File System Store
 

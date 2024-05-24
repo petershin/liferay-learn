@@ -15,25 +15,25 @@ Many individuals visit your sites. Learning who they are and their activities an
 
 Here's how to view Individual profiles:
 
-1. Click _Individuals_ in the left navigation panel. Click the _Known Individuals_ tab. A listing of individual users appears, so you can page through, search for, and select them to learn more about them.
+1. Click *Individuals* in the left navigation panel. Click the *Known Individuals* tab. A listing of individual users appears, so you can page through, search for, and select them to learn more about them.
 
-   To download this list of individuals as a CSV file, click _Download Report_. See [downloading reports](../../reference/downloading-reports.md) to learn more.
+   To download this list of individuals as a CSV file, click *Download Report*. See [downloading reports](../../reference/downloading-reports.md) to learn more.
 
 1. Select an Individual to view these things about the person:
 
-    * Activities on your sites
-    * Identity details and properties
-    * Topic interests
-    * Segment membership
+    - Activities on your sites
+    - Identity details and properties
+    - Topic interests
+    - Segment membership
 
 ![The Overview tab for Individuals.](individual-profiles/images/01.png)
 
 Each Individual profile has these tabs:
 
-* Overview
-* Details
-* Interests
-* Segments
+- Overview
+- Details
+- Interests
+- Segments
 
 Let's explore them to learn more about people you do business with.
 
@@ -49,7 +49,10 @@ Each session lists out [individual events](../../touchpoints/events.md) that are
 
 The Overview tab also gives you a glimpse of a person's profile data, topics of interest, and associated audience segments. Clicking the *View all* ... link for the Details, Interests, or Segments summary opens its respective tab.
 
-Click on the Details tab to explore an Individual's details.
+To download a detailed list of this individual's events as a CSV file, click *Download Reports*. See [downloading reports](../../reference/downloading-reports.md) to learn more.
+
+!!! note
+    The reports contain the data in the dashboard. If you filter the dashboard using the search bar, the report only contains the filtered results.
 
 ## Details
 
@@ -57,10 +60,14 @@ The Details tab shows all of the person's attributes, the data sources they came
 
 ## Interests
 
-Click on the Interests tab.
-
 Depending on the web pages or assets a user interacts with, Analytics Cloud uses an advanced algorithm to find out what an individual's interests are with your brand. This helps you prepare for conversations with the individual or create campaigns based on the interests. For more information, see [Understanding Interests](./understanding-interests.md).
 
 ## Segments
 
-The Segments tab lists all the Segments the customer belongs to. Read the article on [Segments](../segments/segments.md) to learn more.
+The Segments tab lists all the Segments the customer belongs to. For more information, see [Segments](../segments.md).
+
+## Related Topics
+
+- [Events](../../touchpoints/events.md)
+- [Understanding Interests](./understanding-interests.md)
+- [Segments](../segments.md)

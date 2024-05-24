@@ -39,7 +39,7 @@ To publish only a child page,
 
 1. Make alterations to the page and publish it.
 
-1. Now, visit your page again and click *Publish to Live* to publish the changes you just made into Live.
+1. Visit your page again and click *Publish to Live* to publish the changes you just made into Live.
 
    ![While in Staging mode, publish only alterations made to a child page.](./configuring-page-publishing/images/01.png)
 
@@ -55,10 +55,10 @@ To publish only a child page,
 
 Only the alterations to the selected child pages are published.
 
-{bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+` To manually export a site and select only alterations from the child page,
+{bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+` To export a site manually and select only alterations from the child page,
 
 !!! important
-    This feature is currently behind a release feature flag (LPS-199086). Read [Release Feature Flags](../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information.
+    Currently, this feature is behind a release feature flag (LPS-199086). Read [Release Feature Flags](../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information.
 
 1. With the parent and the child page in place, open the *Site Menu* (![Global Menu](../../../images/icon-product-menu.png)), expand *Publishing*, and select *Export*.
 

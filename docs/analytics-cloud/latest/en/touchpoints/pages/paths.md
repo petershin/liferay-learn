@@ -26,8 +26,13 @@ The right side of the chart displays the top three site pages users went next. T
 
 ## Filtering by Segments
 
-The path analysis data can be filtered by segments.
+The path analysis data can be filtered by segments. Segments that don't have any users who viewed this page are grayed out and disabled.
 
-![The path analysis data can be filtered by segments](./paths/images/02.png)
+![The path analysis data can be filtered by segments.](./paths/images/02.png)
 
-Click _Filter_ and select the segment to view. See [creating segments](../../people/segments/creating-segments.md) to learn more about segments.
+Click *Filter* and select the segment to view. See [creating segments](../../people/segments/creating-segments.md) to learn more about segments.
+
+## Related Topics
+
+- [Understanding Pages](https://learn.liferay.com/web/guest/w/dxp/site-building/creating-pages/understanding-pages)
+- [Segments](../../people/segments.md)

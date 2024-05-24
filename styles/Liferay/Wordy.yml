@@ -1,0 +1,66 @@
+extends: substitution
+message: Omit needless words. Prefer '%s' over '%s'
+ignorecase: true
+action: 
+  name: replace
+swap: 
+  whether or not: whether
+  in actual fact: actually
+  at the time that: when
+  at the time when: when
+  in the affirmative: yes
+  in the negative: no 
+  at the present time: now
+  at this time: now
+  at present: currently
+  due to the fact that: because
+  inasmuch as: because
+  being that: because
+  in excess of: over
+  in regard to: about
+  presently: now
+  previous to: before
+  prior to: before
+  in the process of: remove
+  subsequently: later
+  subsequent to: after
+  take a look: look
+  allow you to: remove
+  directs you to: shows you
+  have the option of: can
+  a majority of: most
+  a number of: many
+  accounted for by the fact that: because
+  as a consequence of: because
+  due to the fact that: because
+  in view of the fact that: because
+  for the reason that: because
+  on account of: because
+  on the basis of: because
+  on the grounds that: because
+  owing to the fact that: because
+  an order of magnitude: ten times 
+  are of the same opinion: agree
+  by means of: by
+  despite the fact that: although
+  during the course of: during
+  fewer in number: fewer
+  for the purpose of: for
+  has the capability of: can
+  having regard to: about
+  if conditions are such that: if
+  in all cases: always
+  in close proximity to: near
+  in connection with: concerning
+  in order to: to
+  in the event that: if
+  it is clear that: clearly
+  it is often the case that: often
+  it is worth pointing out that: note that
+  it may, however, be noted that: but
+  lacked the ability to: could not
+  large numbers of: many
+  prior to: before
+  inside of: in 
+  you'll need to: you must
+  allows you to: lets you

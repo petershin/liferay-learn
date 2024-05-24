@@ -35,29 +35,28 @@ To view the list of Pages with summary data,
 
 Order Pages in ascending or descending order based on any one of the following metrics,
 
-* Total Visitors
-* Total Views
-* Average Time on Page
-* Average Bounce Rate
-* Entrances
-* Exit Rate
+- Total Visitors
+- Total Views
+- Average Time on Page
+- Average Bounce Rate
+- Entrances
+- Exit Rate
 
 The metrics for ordering the Page list are calculated based on the time period selected in the time period menu (at the top-right of the table). The following time periods are available:
 
-* Last 24 hours
-* Last 7 days
-* Last 30 days (default)
-* Last 90 days
-* More Preset Periods (Yesterday, Last 28 days, Last 180 days, Last Year)
-* Custom Range
+- Last 24 hours
+- Last 7 days
+- Last 30 days (default)
+- Last 90 days
+- More Preset Periods (Yesterday, Last 28 days, Last 180 days, Last Year)
+- Custom Range
 
 Note, Liferay DXP uses the same URL for a site page regardless of the chosen language. To have Analytics Cloud track each language as a distinct site page, [enable localized URLs](./troubleshooting/connecting-data-sources.md#enabling-localized-urls-for-site-pages).
 
-To download this list of site page data as a CSV file, click _Download Report_. See [downloading reports](./reference/downloading-reports.md) to learn more.
+To download this list of site page data as a CSV file, click *Download Reports*. See [Downloading Reports](./reference/downloading-reports.md) to learn more.
 
-```{note}
-Page data is based on canonical URL. Learn more about [canonicalization](https://moz.com/learn/seo/canonicalization) or [how to set a custom canonical URL in DXP](https://learn.liferay.com/w/dxp/site-building/creating-pages/page-settings/configuring-individual-pages#seo).
-```
+!!! note
+    Page data is based on canonical URL. Learn more about [canonicalization](https://moz.com/learn/seo/canonicalization) or [how to set a custom canonical URL in DXP](https://learn.liferay.com/w/dxp/site-building/creating-pages/page-settings/configuring-individual-pages#seo).
 
 To view detailed metrics for a single page, click that page in the table. See [Page Analytics](./touchpoints/pages/pages.md) for more information.
 
@@ -75,12 +74,12 @@ To view analytics data on your assets,
 
 To order Assets in ascending or descending order based on any one of the Asset's metrics, click the metric's heading in the table. The metrics differ between Assets. See each Asset's documentation for more information. In addition, you can calculate the metrics over a selected time period by selecting one of the following values from the time period menu (at the top-right of the table):
 
-* Last 24 hours
-* Yesterday
-* Last 7 days
-* Last 28 days
-* Last 30 days (default)
-* Last 90 days
+- Last 24 hours
+- Yesterday
+- Last 7 days
+- Last 28 days
+- Last 30 days (default)
+- Last 90 days
 
 Click an Asset in the list to see more granular detail.
 

@@ -39,7 +39,7 @@ The Overview tab's main area shows membership growth. As a marketer, you might w
 
 The Overview tab also shows the segment's criteria, interests, and distribution. Each one links to more details, or you can click on their respective tabs.
 
-To download this dashboard view as a PDF file, click *Download Report*. See [downloading reports](../../reference/downloading-reports.md) to learn more.
+To download this dashboard view as a PDF file, click *Download Reports*. See [Downloading Reports](../../reference/downloading-reports.md) to learn more.
 
 ### Segment Membership Panel
 

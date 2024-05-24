@@ -16,28 +16,27 @@ To view the dashboard,
 
 1. Click *Sites* in the Touchpoints section of the menu.
 
-1. Click the *Overview* tab (this tab is selected by default when you click sites). 
+1. Click the *Overview* tab (this tab is selected by default when you click sites).
 
 The dashboard contains the following data panels:
 
-* [Site Activities](#site-activities)
-* [Top Pages](#top-pages)
-* [Acquisitions](#acquisitions)
-* [Visitors by Day and Time](#visitors-by-day-and-time)
-* [Search Terms and Interests](#search-terms-and-interests)
-* [Sessions by Location](#sessions-by-location)
-* [Session Technology](#session-technology)
-* [Cohort Analysis](#cohort-analysis)
+- [Site Activities](#site-activities)
+- [Top Pages](#top-pages)
+- [Acquisitions](#acquisitions)
+- [Visitors by Day and Time](#visitors-by-day-and-time)
+- [Search Terms and Interests](#search-terms-and-interests)
+- [Sessions by Location](#sessions-by-location)
+- [Session Technology](#session-technology)
+- [Cohort Analysis](#cohort-analysis)
 
-To download this dashboard view as a PDF file, click _Download Report_. See [downloading reports](../reference/downloading-reports.md) to learn more.
+To download this dashboard view as a PDF file, click *Download Reports*. See [Downloading Reports](../reference/downloading-reports.md) to learn more.
 
 Each panel in the dashboard has a time period selector that recalculates the metrics for the selected time period. The following time periods are available:
 
-```{note}
-Some metrics such as bounce rate, time on page, exits, etc. rely on a visitor’s session end (30 minutes of inactivity or signing out) to be calculated. Therefore analytics data within the last 24 hours is displayed after the end of a session.
-```
+!!! note
+    Some metrics such as bounce rate, time on page, exits, etc. rely on a visitor’s session end (30 minutes of inactivity or signing out) to be calculated. Therefore analytics data within the last 24 hours is displayed after the end of a session.
 
-**Last 24 hours:** Displays data generated over the last 24 hours. 
+**Last 24 hours:** Displays data generated over the last 24 hours.
 
 **Last 7 days:** Displays data generated for the previous seven full days (the current day is excluded), in daily increments.
 
@@ -53,21 +52,21 @@ Some metrics such as bounce rate, time on page, exits, etc. rely on a visitor’
 
 The Site Activities panel presents a summary of how visitors interact with your site. This panel contains the following metrics:
 
-**Unique Visitors:** The total number of individuals identified by a unique `userId` (i.e. user ID). 
+**Unique Visitors:** The total number of individuals identified by a unique `userId` (i.e. user ID).
 
 Visitors to your site are assigned unique `userId`s. When visitors log in with their email address, their analytics data continues to be associated with this `userId`. If the visitor previously logged in and was already assigned a `userId`, the analytics data is instead associated with this previously assigned `userId`.
 
-A new `userId` is assigned if visitors use a different browser, log in with a different email address, or clear their browser cookies. 
+A new `userId` is assigned if visitors use a different browser, log in with a different email address, or clear their browser cookies.
 
 **Sessions per Visitor:** An average of the number of sessions for each unique visitor. A single visitor can open multiple sessions. A session is considered a new session if 30 minutes of inactivity pass since the previous session, or is the start of a new day (i.e. past midnight).
 
 **Session Duration:** The length of time an average session lasts.
 
-**Bounce Rate:** The percentage of sessions in which an individual visits a page on your site but has no further interactions before the session ends. 
+**Bounce Rate:** The percentage of sessions in which an individual visits a page on your site but has no further interactions before the session ends.
 
 ![Site Activities include a visualization of data points over a period of time.](./sites-dashboard/images/01.png)
 
-Clicking each metric changes the visualization in the panel to display the selected metric. 
+Clicking each metric changes the visualization in the panel to display the selected metric.
 
 Note the legend at the bottom right shows a breakdown of the unique visitors between known visitors and anonymous visitors.
 
@@ -87,7 +86,7 @@ To view more detailed page analytics, click *View Pages* at the bottom of the pa
 
 ## Acquisitions
 
-The Acquisitions panel gives a comprehensive overview of how visitors arrive to your site. The data is presented from a high level view (i.e. Channels) down to a granular level (i.e. Referrers). The percentage of sessions shows an actual percentage of each traffic source. Having an understanding at these different levels leads to more informed business decisions. 
+The Acquisitions panel gives a comprehensive overview of how visitors arrive to your site. The data is presented from a high level view (i.e. Channels) down to a granular level (i.e. Referrers). The percentage of sessions shows an actual percentage of each traffic source. Having an understanding at these different levels leads to more informed business decisions.
 
 ![See the different sources of traffic to your site with this Acquisitions panel.](./sites-dashboard/images/03.png)
 
@@ -95,7 +94,7 @@ The Acquisitions panel gives a comprehensive overview of how visitors arrive to 
 
 **Source | Medium:** The source is the starting point of the visitor (e.g. search engine, website, etc.). The medium is a general category for the type of link the traffic came from (e.g. organic, ppc, referral, email, social, etc.). Having this data breakdown is very useful. For example seeing what traffic comes from paid advertising could validate your return on ad spend.
 
-**Referrers:** For traffic that comes from another webpage, the webpage URL is passed along as a referrer from the user's web browser. 
+**Referrers:** For traffic that comes from another webpage, the webpage URL is passed along as a referrer from the user's web browser.
 
 The reporting works best if your marketing campaign uses UTM parameters. UTM parameters allow Analytics Cloud to determine where visitors arrive from (e.g., the specific referrer or ad campaign).
 
@@ -107,13 +106,12 @@ The Visitors by Day and Time panel visualizes the days and times when visitors c
 
 The panel contains a grid with the days of the week on one axis and the time of day on the other axis. Darker cells in the grid indicate heavier site traffic at the corresponding day and time. Tooltips for each cell show the number of visitors for that day and time.
 
-```{note}
-This panel is not affected by the timezone setting but is based on the Analytics Cloud user's timezone.
-```
+!!! note
+    This panel is not affected by the timezone setting but is based on the Analytics Cloud user's timezone.
 
 ## Search Terms and Interests
 
-The Search Terms and Interests panels show your visitors' most common search terms and the topics they're interested in, respectively. Search terms are collected from the search query parameter in your site's URL. Interest topics are derived from the keyword metadata of the pages that visitors view. 
+The Search Terms and Interests panels show your visitors' most common search terms and the topics they're interested in, respectively. Search terms are collected from the search query parameter in your site's URL. Interest topics are derived from the keyword metadata of the pages that visitors view.
 
 The percentage of searches shows what percent of searches contained that search query term in the given time range. The percentage of sessions shows what percent of sessions contained that interest in the given time range.
 
@@ -137,7 +135,7 @@ The Session Technology panel shows the devices, operating systems, and browsers 
 
 ## Cohort Analysis
 
-The Cohort Analysis panel shows a [cohort analysis](https://en.wikipedia.org/wiki/Cohort_analysis) based on visitors from a specific acquisition date (the cohort) and whether they return to your site over a given time period. 
+The Cohort Analysis panel shows a [cohort analysis](https://en.wikipedia.org/wiki/Cohort_analysis) based on visitors from a specific acquisition date (the cohort) and whether they return to your site over a given time period.
 
 ![Identify usage patterns for groups of users over a period of time using Cohort Analysis.](./sites-dashboard/images/08.png)
 

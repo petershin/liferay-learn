@@ -14,14 +14,14 @@ uuid: 81304039-f329-43a0-bfe0-8666f6ae66d3
 
 ![Analytics data for web content can be viewed in a table format.](web-content/images/01.png)
 
-A list of your site's web content articles are presented along with different metrics. To download this data as a CSV file, click _Download Report_. See [downloading reports](../../reference/downloading-reports.md) to learn more.
+A list of your site's web content articles are presented along with different metrics. To download this data as a CSV file, click *Download Reports*. See [Downloading Reports](../../reference/downloading-reports.md) to learn more.
 
 !!! note
     Analytics data for web content is collected through the Web Content Display widget. For information on how to use other types of fragments and widgets to collect data on web content, see [Tracking Custom Assets](./tracking-custom-assets.md)
 
 ## Visitor Behavior
 
-The overview tab of an asset's detail presents several data presentations. To download this dashboard view as a PDF file, click _Download Report_. See [downloading reports](../../reference/downloading-reports.md) to learn more.
+The overview tab of an asset's detail presents several data presentations. To download this dashboard view as a PDF file, click *Download Reports*. See [Downloading Reports](../../reference/downloading-reports.md) to learn more.
 
 The first chart, called visitor behavior, contains one important metric: total views.
 
@@ -65,7 +65,7 @@ View a stacked bar graph of the page's views by operating system (grouped by dev
 
 ![Users can also be viewed by device.](web-content/images/05.png)
 
-Click _Browsers_ to see a donut chart displaying up to the top eight web browsers over the selected time period. If applicable, remaining web browsers are aggregated in the ninth donut segment.
+Click *Browsers* to see a donut chart displaying up to the top eight web browsers over the selected time period. If applicable, remaining web browsers are aggregated in the ninth donut segment.
 
 ## Asset Appears On
 

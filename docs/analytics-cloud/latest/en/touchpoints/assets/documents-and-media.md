@@ -14,14 +14,14 @@ Documents and media files are assets you want site users to look at or download.
 
 ![Analytics data for documents can be viewed in a table format.](documents-and-media/images/01.png)
 
-A list of your site's documents and media appear along with different metrics. To download this data as a CSV file, click _Download Report_. See [downloading reports](../../reference/downloading-reports.md) to learn more.
+A list of your site's documents and media appear along with different metrics. To download this data as a CSV file, click *Download Reports*. See [Downloading Reports](../../reference/downloading-reports.md) to learn more.
 
 !!! note
     Analytics data for documents is collected through the Documents and Media widget. For information on how to use other types of fragments and widgets to collect data on documents, see [Tracking Custom Assets](./tracking-custom-assets.md)
 
 ## Visitor Behavior
 
-The Overview tab of an asset's detail presents several data presentations. To download this dashboard view as a PDF file, click _Download Report_. See [downloading reports](../../reference/downloading-reports.md) to learn more.
+The Overview tab of an asset's detail presents several data presentations. To download this dashboard view as a PDF file, click *Download Reports*. See [Downloading Reports](../../reference/downloading-reports.md) to learn more.
 
 The first chart, called visitor behavior, contains four important metrics:
 
@@ -80,11 +80,11 @@ The map in this panel shows the number of downloads by country in the selected t
 
 ## Views by Technology
 
-View a stacked bar graph of the page's views by operating system (grouped by device type) in the default _Devices_ tab.
+View a stacked bar graph of the page's views by operating system (grouped by device type) in the default *Devices* tab.
 
 ![Users can also be viewed by device.](documents-and-media/images/05.png)
 
-Click _Browsers_ to see a donut chart displaying up to the top eight web browsers over the selected time period. If applicable, remaining web browsers are aggregated in the ninth donut segment.
+Click *Browsers* to see a donut chart displaying up to the top eight web browsers over the selected time period. If applicable, remaining web browsers are aggregated in the ninth donut segment.
 
 ## Asset Appears On
 

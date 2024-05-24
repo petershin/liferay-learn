@@ -12,15 +12,15 @@ uuid: a2b63605-3b0a-4c85-bc9e-4d922cb5e803
 
 Analytics Cloud does the following for pages:
 
-* Registers and tracks pages for analysis the first time the Analytics Cloud client detects a Page interaction.
-* Queries pages on a schedule for up-to-date data.
-* Reports on pages with the metrics described here.
+- Registers and tracks pages for analysis the first time the Analytics Cloud client detects a Page interaction.
+- Queries pages on a schedule for up-to-date data.
+- Reports on pages with the metrics described here.
 
 To view analytics on a specific page,
 
-1. Click _Sites_ in the left navigation menu. Click the _Pages_ tab. A listing of your site's pages appears.
+1. Click *Sites* in the left navigation menu. Click the *Pages* tab. A listing of your site's pages appears.
 
-   To download this list of site pages as a CSV file, click _Download Report_. See [downloading reports](../../reference/downloading-reports.md) to learn more.
+   To download this list of site pages as a CSV file, click *Download Reports*. See [Downloading Reports](../../reference/downloading-reports.md) to learn more.
 
 1. Select a page from the list to see detailed analytics.
 
@@ -44,22 +44,21 @@ All Page data in Analytics Cloud appears for a specified time period. The time p
 
 The Overview tab of a Page's metrics has several data presentations. The first chart, called Visitor Behavior, contains these metrics:
 
-* Unique Visitors
-* Views
-* Bounce Rate
-* Time on Page
-* Entrances
-* Exit Rate
+- Unique Visitors
+- Views
+- Bounce Rate
+- Time on Page
+- Entrances
+- Exit Rate
 
-```{note}
-The Views metric updates immediately Other metrics update after the user's session ends (i.e. 30 minutes of inactivity) or at the end of the day (i.e. 23:59).
-```
+!!! note
+    The Views metric updates immediately Other metrics update after the user's session ends (i.e. 30 minutes of inactivity) or at the end of the day (i.e. 23:59).
 
-Select the time period for the data displayed. Select _Compare to Previous_ to see a second comparison line of the previous time period.
+Select the time period for the data displayed. Select *Compare to Previous* to see a second comparison line of the previous time period.
 
 ![Trends can be identified over selected periods of time.](pages/images/01.png)
 
-To download this dashboard view as a PDF file, click _Download Report_. See [downloading reports](../../reference/downloading-reports.md) to learn more.
+To download this dashboard view as a PDF file, click *Download Reports*. See [Downloading Reports](../../reference/downloading-reports.md) to learn more.
 
 ### Unique Visitors
 
@@ -89,7 +88,7 @@ This metric is calculated like this for each 24 hour period:
 
 ### Entrances
 
-_Entrances_ is the number visitors who arrived at your Site from the page (as opposed to those who started on a different page and clicked through to the page).
+*Entrances* is the number visitors who arrived at your Site from the page (as opposed to those who started on a different page and clicked through to the page).
 
 ### Exit Rate
 
@@ -99,19 +98,18 @@ Exit Rate is the percentage of visitors who interacted with the page (such as sc
 
 The Audience report uses charts to present information about the audience interaction with the Page. It answers these questions:
 
-* How many users are interacting with my content?
-* Of these users, how many are known or anonymous?
-* Of the known users who interacted with my content, how many belong to Analytics Cloud Segments?
-* Of the users in Segments, what are the top 15 segments?
-* Here are the charts in the Audience report:
+- How many users are interacting with my content?
+- Of these users, how many are known or anonymous?
+- Of the known users who interacted with my content, how many belong to Analytics Cloud Segments?
+- Of the users in Segments, what are the top 15 segments?
+- Here are the charts in the Audience report:
 
 **Visitors:** A doughnut chart presents the percentage of total unique visitors who are known or anonymous. The center of the chart shows the total number of unique visitors. Tooltips on each chart section show the number of users for that section (e.g, the number of known or anonymous users).
 
-```{note}
-Individuals are considered known when their email addresses are matched at login with user data synced with Analytics Cloud. When new users register on your site, it may take up to two hours for their data to sync with Analytics Cloud and appear as known individuals.
-```
+!!! note
+    Individuals are considered known when their email addresses are matched at login with user data synced with Analytics Cloud. When new users register on your site, it may take up to two hours for their data to sync with Analytics Cloud and appear as known individuals.
 
-**Segmented Viewers:** A donut chart presents the percentage of known individuals who belong or do not belong to one or more Analytics Cloud Segments. The center of the chart shows the total number of known individuals. Tooltips on each chart section show the number of users for that section (e.g, the number of users belonging to one or more Segments). 
+**Segmented Viewers:** A donut chart presents the percentage of known individuals who belong or do not belong to one or more Analytics Cloud Segments. The center of the chart shows the total number of known individuals. Tooltips on each chart section show the number of users for that section (e.g, the number of users belonging to one or more Segments).
 
 **Viewer Segments:** A bar chart shows the percentage of known individuals that comprise each Segment. The chart shows a bar for each of the top five Segments, and then aggregates the remaining Segments into the last bar. A tooltip on the last bar shows the values for each of the remaining Segments.
 
@@ -134,3 +132,7 @@ Click Web Browser to see a doughnut chart displaying up to the top eight web bro
 ![Learn how many users are distributed across different browser agents.](pages/images/05.png)
 
 After all those fundamental metrics, you're really getting to know your pages. But there's some interesting page data you haven't seen. Discover how people came to the page in the first place. Learn about [Path Analytics](./paths.md) next.
+
+## Related Topics
+
+- [Understanding Pages](https://learn.liferay.com/web/guest/w/dxp/site-building/creating-pages/understanding-pages)

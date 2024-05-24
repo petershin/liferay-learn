@@ -16,14 +16,14 @@ Analytics Cloud gives you important insights into how engaged readers are with y
 
 ![Analytics data for blog entries can be viewed in a table format.](blogs/images/01.png)
 
-A list of your site's blog posts is presented along with different metrics. To download this data as a CSV file, click _Download Report_. See [downloading reports](../../reference/downloading-reports.md) to learn more.
+A list of your site's blog posts is presented along with different metrics. To download this data as a CSV file, click *Download Reports*. See [Downloading Reports](../../reference/downloading-reports.md) to learn more.
 
 !!! note
     Analytics data for blogs is collected through the Blogs widget. For information on how to use other types of fragments and widgets to collect data on blogs, see [Tracking Custom Assets](./tracking-custom-assets.md)
 
 ## Visitor Behavior
 
-Click the name of any blog post to see more detailed analytics. The overview tab of an asset's detail presents several data presentations. To download this dashboard view as a PDF file, click _Download Report_. See [downloading reports](../../reference/downloading-reports.md) to learn more.
+Click the name of any blog post to see more detailed analytics. The overview tab of an asset's detail presents several data presentations. To download this dashboard view as a PDF file, click *Download Reports*. See [Downloading Reports](../../reference/downloading-reports.md) to learn more.
 
 The first chart, called visitor behavior, contains five important metrics:
 
@@ -87,11 +87,11 @@ The map in the Views by Location panel shows the number of views by country in t
 
 ## Views by Technology
 
-View a stacked bar graph of the page's views by operating system (grouped by device type) in the default _Devices_ tab.
+View a stacked bar graph of the page's views by operating system (grouped by device type) in the default *Devices* tab.
 
 ![Users can also be viewed by device.](blogs/images/05.png)
 
-Click _Browsers_ to see a donut chart displaying up to the top eight web browsers over the selected time period. If applicable, remaining web browsers are aggregated in the ninth donut segment.
+Click *Browsers* to see a donut chart displaying up to the top eight web browsers over the selected time period. If applicable, remaining web browsers are aggregated in the ninth donut segment.
 
 ## Asset Appears On
 

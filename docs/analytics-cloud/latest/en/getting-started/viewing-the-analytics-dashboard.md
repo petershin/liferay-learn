@@ -17,24 +17,23 @@ After [syncing data](./connecting-liferay-dxp-to-analytics-cloud.md), Analytics 
 
 For understanding your site's data:
 
-* [Sites Dashboard](../touchpoints/sites-dashboard.md)
-* [Individual Pages](../touchpoints/pages/pages.md) and [Paths](../touchpoints/pages/paths.md)
-* [Assets](../touchpoints/assets.md)
-* [Events Analysis](../touchpoints/events/events-analysis.md)
+- [Sites Dashboard](../touchpoints/sites-dashboard.md)
+- [Individual Pages](../touchpoints/pages/pages.md) and [Paths](../touchpoints/pages/paths.md)
+- [Assets](../touchpoints/assets.md)
+- [Events Analysis](../touchpoints/events/events-analysis.md)
 
 For understanding your audience:
 
-* [Individuals Dashboard](../people/individuals/individuals-dashboard.md)
-* [Individual Profiles](../people/individuals/individual-profiles.md)
-* [Segments](../people/segments/segments.md)
+- [Individuals Dashboard](../people/individuals/individuals-dashboard.md)
+- [Individual Profiles](../people/individuals/individual-profiles.md)
+- [Segments](../people/segments.md)
 
-```{note}
-To explore analytics data based on segments, you must first [Create Segments](../people/segments/creating-segments.md). These are groups of individuals that are aggregated together based on attributes you select.
-```
+!!! note
+   To explore analytics data based on segments, you must first [Create Segments](../people/segments/creating-segments.md). These are groups of individuals that are aggregated together based on attributes you select.
 
 For optimizing site content:
 
-* [A/B Testing](../optimization/a-b-testing.md)
+- [A/B Testing](../optimization/a-b-testing.md)
 
 ## Inviting Others to Your Workspace
 
@@ -44,15 +43,15 @@ See [Managing Users](../workspace-settings/managing-users.md) to learn more abou
 
 ## Configure Settings for Your Workspace
 
-Most of the important settings were configured when you created the workspace. However there are other settings worth reviewing. 
+Most of the important settings were configured when you created the workspace. However there are other settings worth reviewing.
 
-* Data Definitions
-* Data Control and Privacy
-* APIs
-* Workspace Usage Monitoring
-* Workspace Settings
+- Data Definitions
+- Data Control and Privacy
+- APIs
+- Workspace Usage Monitoring
+- Workspace Settings
 
-Analytics data appears once your workspace is connected. For example, you can view site-specific analytics on the [Sites dashboard](../touchpoints/sites-dashboard.md). To see more about your workspace settings, see [Managing Workspaces](../workspace-settings/managing-workspaces.md). 
+Analytics data appears once your workspace is connected. For example, you can view site-specific analytics on the [Sites dashboard](../touchpoints/sites-dashboard.md). To see more about your workspace settings, see [Managing Workspaces](../workspace-settings/managing-workspaces.md).
 
 ## Language Menu Option
 
@@ -65,3 +64,9 @@ The UI for Analytics Cloud currently supports English, Japanese, Portuguese, and
 1. Select the language. Refresh the page. The dashboard and menu are now in the selected language.
 
 Well done! To browse all the available features, options, and configurations for Analytics Cloud, click the *Analytics Cloud* breadcrumb above.
+
+## Related Topics
+
+- [Sites Dashboard](../touchpoints/sites-dashboard.md)
+- [Individuals Dashboard](../people/individuals/individuals-dashboard.md)
+- [A/B Testing](../optimization/a-b-testing.md)

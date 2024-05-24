@@ -17,7 +17,7 @@ Here's how to view Individual profiles:
 
 1. Click *Individuals* in the left navigation panel. Click the *Known Individuals* tab. A listing of individual users appears, so you can page through, search for, and select them to learn more about them.
 
-   To download this list of individuals as a CSV file, click *Download Report*. See [downloading reports](../../reference/downloading-reports.md) to learn more.
+   To download this list of individuals as a CSV file, click *Download Reports*. See [Downloading Reports](../../reference/downloading-reports.md) to learn more.
 
 1. Select an Individual to view these things about the person:
 
@@ -49,7 +49,7 @@ Each session lists out [individual events](../../touchpoints/events.md) that are
 
 The Overview tab also gives you a glimpse of a person's profile data, topics of interest, and associated audience segments. Clicking the *View all* ... link for the Details, Interests, or Segments summary opens its respective tab.
 
-To download a detailed list of this individual's events as a CSV file, click *Download Reports*. See [downloading reports](../../reference/downloading-reports.md) to learn more.
+To download a detailed list of this individual's events as a CSV file, click *Download Reports*. See [Downloading Reports](../../reference/downloading-reports.md) to learn more.
 
 !!! note
     The reports contain the data in the dashboard. If you filter the dashboard using the search bar, the report only contains the filtered results.

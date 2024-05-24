@@ -18,7 +18,7 @@ Downloadable PDF reports are available for these dashboards:
 - [Assets Dashboard for Forms](../touchpoints/assets/forms.md)
 - [Assets Dashboard for Web Content](../touchpoints/assets/web-content.md)
 - [Individuals Dashboard](../people/individuals.md)
-- [Segments Dashboard](../people/segments/segments.md)
+- [Segments Dashboard](../people/segments.md)
 - [Site Page Dashboard](../touchpoints/pages/pages.md)
 - [Sites Dashboard](../touchpoints/sites-dashboard.md)
 
@@ -37,6 +37,6 @@ Each CSV report shows the same information as its respective list (e.g. list of 
 
 ## Downloading a Report
 
-After clicking **Download Reports**, a modal shows up on your screen. This modal contains a list of all reports you can choose to show on the file you'll download. Most dashboards also allow you to select a date range.
+After clicking *Download Reports*, a modal shows up on your screen. This modal contains a list of all reports you can choose to show on the file you'll download. Most dashboards also allow you to select a date range.
 
 ![The modal allows you to choose which reports in which date range to download](./downloading-reports/images/01.png)

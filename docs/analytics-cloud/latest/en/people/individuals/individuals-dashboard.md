@@ -15,29 +15,28 @@ The Individuals dashboard provides a broad range of analytics data about your vi
 
 To view the dashboard,
 
-1. Click _Individuals_ in the People section of the menu.
+1. Click *Individuals* in the People section of the menu.
 
-1. Click the _Overview_ tab (this tab is selected by default when you click Individuals).
+1. Click the *Overview* tab (this tab is selected by default when you click Individuals).
 
 The Individuals dashboard contains the following panels:
 
-* [Current Totals](#current-totals)
-* [Enriched Profiles](#enriched-profiles)
-* [Active Individuals](#active-individuals)
-* [Interests](#interests)
-* [Breakdown](#breakdown)
+- [Current Totals](#current-totals)
+- [Enriched Profiles](#enriched-profiles)
+- [Active Individuals](#active-individuals)
+- [Interests](#interests)
+- [Breakdown](#breakdown)
 
-To download this dashboard view as a PDF file, click _Download Report_. See [downloading reports](../../reference/downloading-reports.md) to learn more.
+To download this dashboard view as a PDF file, click *Download Reports*. See [Downloading Reports](../../reference/downloading-reports.md) to learn more.
 
 ## Current Totals
 
-The Current Totals panel presents the total number of individuals, known and anonymous, that have been tracked by Analytics Cloud. 
+The Current Totals panel presents the total number of individuals, known and anonymous, that have been tracked by Analytics Cloud.
 
 ![The Current Totals panel presents total numbers for visitors to your Site.](./individuals-dashboard/images/01.png)
 
-```{note}
-Individuals are considered known when their email addresses are matched at login with user data synced with Analytics Cloud. When new users register on your site, it may take up to two hours for their data to sync with Analytics Cloud and appear as known individuals.
-```
+!!! note
+    Individuals are considered known when their email addresses are matched at login with user data synced with Analytics Cloud. When new users register on your site, it may take up to two hours for their data to sync with Analytics Cloud and appear as known individuals.
 
 The panel also displays a percentage change in total numbers compared to the previous 30 days.
 
@@ -59,13 +58,13 @@ Choose to visualize the data based on day, week or month. The data can be filter
 
 ## Interests
 
-The Interests panel presents the top 5 most popular topics. 
+The Interests panel presents the top 5 most popular topics.
 
 ![The Interests panel presents a chart of popular topics.](./individuals-dashboard/images/04.png)
 
 The percentage of total individuals for interests shows what percent of individuals are interested in a specific topic. Theses topics are derived from the title, description, and keyword tags of your pages' HTML.
 
-To view the full list of interest topics, click *View All Interests* in the panel. Alternatively, click the Interests tab at the top of the page. 
+To view the full list of interest topics, click *View All Interests* in the panel. Alternatively, click the Interests tab at the top of the page.
 
 To learn more about interests see [Understanding Interests](./understanding-interests.md).
 
@@ -73,24 +72,29 @@ To learn more about interests see [Understanding Interests](./understanding-inte
 
 The Breakdown panel presents distribution information based on selected attributes of individuals. These attributes are available:
 
-* `additionalName`: middle name
-* `birthDate`: birth date
-* `Email`: email address
-* `familyName`: family name
-* `givenName`: given name
-* `jobTitle`: job title
-* `languageId`: preferred language
-* `modifiedDate`: last modified date
-* `screenName`: screen name
+- `additionalName`: middle name
+- `birthDate`: birth date
+- `Email`: email address
+- `familyName`: family name
+- `givenName`: given name
+- `jobTitle`: job title
+- `languageId`: preferred language
+- `modifiedDate`: last modified date
+- `screenName`: screen name
 
 ![The Breakdown panel presents distribution information based on selected attributes.](./individuals-dashboard/images/05.png)
 
 To add a new breakdown,
 
-1. Click the plus sign at the top right of the panel. 
+1. Click the plus sign at the top right of the panel.
 
 1. Use the drop-down menu to select an attribute.
 
-1. Input a name for the breakdown and click _Save_.
+1. Input a name for the breakdown and click *Save*.
 
-To view the breakdown of additional attributes, click *Explore Breakdown*. Alternatively, click the _Distribution_ tab at the top of the page.
+To view the breakdown of additional attributes, click *Explore Breakdown*. Alternatively, click the *Distribution* tab at the top of the page.
+
+## Related Topics
+
+- [Users](https://learn.liferay.com/web/guest/w/dxp/users-and-permissions/users)
+- [Segments](../segments.md)

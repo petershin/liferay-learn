@@ -9,37 +9,37 @@ taxonomy-category-names:
 ---
 # Users
 
-The users configuration defines the look and feel of the personal menu, the default user associations, and the fields that are available when a new user creates an account. 
+You can define the look and feel of the personal menu, the default user associations, and the fields that appear when a new user creates an account. 
 
-To access the users settings, open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)) and navigate to *Control Panel* &rarr; *Configuration* &rarr; *Instance Settings*, and select the *Users* category under the *PLATFORM* section. 
+To access user settings, open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)) and navigate to *Control Panel* &rarr; *Configuration* &rarr; *Instance Settings*, and select the *Users* category under the *PLATFORM* section. 
 
 The Users Instance configuration contains several entries:
 
 | Configuration             | Purpose                                                                                                        |
-| :------------------------ | :------------------------------------------------------------------------------------------------------------- |
+|:--------------------------|:---------------------------------------------------------------------------------------------------------------|
 | Personal Menu             | Configure the look and feel of personal applications and whether the Personal Menu appears in the Control Menu |
 | User Images               | Configure the limit on user portrait file size and dimensions.                                                 |
 | Default User Associations | Automatically confer membership to some sites, roles, and user groups                                          |
-| Fields                    | Enable and disable some optional fields from the user form                                                     |
+| Fields                    | Enable and disable optional fields from the user form                                                          |
 
 ## Personal Menu
 
-The Personal Menu configuration entry specifies whether personal applications use the same look and feel as the current site or if they should use the look and feel of the My Dashboard pages instead. You can also specify whether the personal menu appears in the Control Menu by toggling the *Show in Control Menu* option on and off. 
+The Personal Menu configuration entry specifies whether personal applications use the same look and feel as the current site or if they should use the look and feel of the My Dashboard pages instead. You can also specify whether the Personal Menu appears in the Control Menu by toggling the *Show in Control Menu* option on and off. 
 
-![Configure the personal menu at the instance scope.](./users/images/01.png)
+![Configure the Personal Menu at the instance scope.](./users/images/01.png)
 
 ## User Images
 
 {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+`
 
-Use this section to specify the maximum file size and image dimensions allowed for user portraits. There is also a toggle to check the image token on user portraits and organization logos before displaying them.
+Here, you can specify the maximum file size and image dimensions allowed for user portraits. There is also a toggle to check the image token on user portraits and organization logos before displaying them.
 
 | Configuration     | Purpose                                                                                                                                                                                                                               |
 | :---------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Check Image Token | Enable this to check the image token for user portraits and organization logos before displaying them.                                                                                                                                |
-| Maximum File Size | Specifies the maximum file size for user portraits. A value of 0 indicates no restrictions on the file size. This doesn't override the limit configured in *System Settings* &rarr; *Infrastructure* &rarr; *Upload Servlet Request*. |
-| Maximum Height    | Specifies the maximum height allowed for user portraits. A value of 0 indicates no restrictions on the user portrait dimensions.                                                                                                      |
-| Maximum Width     | Specifies the maximum width allowed for user portraits. A value of 0 indicates no restrictions on the user portrait dimensions.                                                                                                       |
+| Maximum File Size | Specifies the maximum file size for user portraits. A value of `0` indicates no restrictions on the file size. This doesn't override the limit configured in *System Settings* &rarr; *Infrastructure* &rarr; *Upload Servlet Request*. |
+| Maximum Height    | Specifies the maximum height allowed for user portraits. A value of `0` indicates no restrictions on the user portrait dimensions.                                                                                                      |
+| Maximum Width     | Specifies the maximum width allowed for user portraits. A value of `0` indicates no restrictions on the user portrait dimensions.                                                                                                       |
 
 !!! note
     For Liferay DXP 2024.Q1/Portal 7.4 GA112 and earlier, this setting is present under *System Settings* &rarr; *Users*.

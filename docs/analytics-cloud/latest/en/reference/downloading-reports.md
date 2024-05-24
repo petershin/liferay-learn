@@ -33,7 +33,7 @@ Downloadable CSV reports are available for these lists:
 - [Known Individuals List](../people/individuals/individual-profiles.md)
 - [Site Pages List](../touchpoints.md#viewing-page-data)
 
-Each CSV report shows the same information as its respective list (e.g. list of site pages, list of blogs, list of documents and media, etc.)
+Each CSV report shows the same information as its respective list (e.g. list of site pages, list of blogs, list of documents and media, etc.). When you try to download a report with over 10000 entries as a CSV file, the report won't contain data on the remaining entries.
 
 ## Downloading a Report
 

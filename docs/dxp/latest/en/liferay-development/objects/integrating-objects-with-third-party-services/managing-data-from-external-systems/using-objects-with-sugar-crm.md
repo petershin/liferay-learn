@@ -18,7 +18,9 @@ You can create objects that map to [SugarCRM](https://support.sugarcrm.com) obje
 
 ## Preparing SugarCRM
 
-In SugarCRM , you must generate an [OAuth key](https://support.sugarcrm.com/documentation/sugar_versions/14.0/sell/administration_guide/system/#OAuth_Keys) to configure API integration with Liferay. After that you can connect Liferay objects to system or custom objects in SugarCRM.
+In SugarCRM , you must generate an [OAuth key](https://support.sugarcrm.com/documentation/sugar_versions/14.0/sell/administration_guide/system/#OAuth_Keys) to configure API integration with Liferay. After that you can connect Liferay to Sugar CRM.
+
+### Gathering Information to Connect SugarCRM with Liferay
 
 Gather the information Liferay needs to retrieve an access token and connect to your SugarCRM instance using an OAuth password grant:
 
@@ -27,7 +29,17 @@ Gather the information Liferay needs to retrieve an access token and connect to 
 * The Consumer Key to the [generated OAuth Key](https://support.sugarcrm.com/documentation/sugar_versions/14.0/sell/administration_guide/system/#OAuth_Keys_Fields)
 * The user name and password of a [SugarCRM administrative user](https://support.sugarcrm.com/documentation/sugar_versions/14.0/sell/administration_guide/system/#OAuth_Keys_Fields)
 
+After establishing the connection, gather some information about the SugarCRM
+
+### Gathering Information about the SugarCRM Object
+
 Before creating your Liferay object, ensure the SugarCRM object includes all desired fields. Define any missing fields before linking with Liferay object fields.
+
+In addition, use the SugarCRM API to inspect the object and its fields. You must obtain the following information in order to map your Liferay object to your SugarCRM object:
+
+* An [OAuth token](https://support.sugarcrm.com/documentation/sugar_developer/sugar_developer_guide_14.0/integration/web_services/rest_api/#Authentication) to make authenticated requests to the REST API
+* The [GET endpoint of the object](https://support.sugarcrm.com/documentation/sugar_developer/sugar_developer_guide_14.0/integration/web_services/rest_api/endpoints/module_get/#Overview) (known as a module in SugarCRM), to use as the object definition ERC in Liferay
+* Each field's name as returned by the object's GET API endpoint, to use as the ERC in the Liferay object's corresponding fields
 
 ## Configuring Your Liferay Instance
 
@@ -65,8 +77,20 @@ To create a proxy object for storing data in SugarCRM, follow the [usual process
 !!! note
     Currently, the SugarCRM storage type only supports custom [fields](../../creating-and-managing-objects/fields.md), [views](../../creating-and-managing-objects/views.md), and [layouts](../../creating-and-managing-objects/layouts.md).
 
-<!-- How does one know what to put as the ERC? -->
-After creating the object draft, [add fields](../../creating-and-managing-objects/fields/adding-fields-to-objects.md) for each custom field in the SugarCRM object. To prevent data loss, ensure each field corresponds to a field in the SugarCRM object. Then edit each field and add external reference codes that link to the desired SugarCRM fields. For each ERC, use the name of the corresponding custom SugarCRM field (e.g., `Title_c`, `Due_Date__c`).
+While creating the Liferay object draft, edit the ERC to match the last part of the SugarCRM object's REST endpoint resource path. For example, if the endpoint ends with `/Contacts`, you must use `Contacts` as the ERC.
+
+[Add object fields](../../creating-and-managing-objects/fields/adding-fields-to-objects.md) for every field in the SugarCRM object to prevent data loss. ensure each field corresponds to a field in the SugarCRM object. Then edit each field and add external reference codes that link to the desired SugarCRM fields. For each ERC, use the name of the corresponding custom SugarCRM field (e.g., `last_name`, etc.).
+
+You must ensure each Liferay object field's ERC matches the field name returned by the SugarCRM REST API for the corresponding object (known as a module in SugarCRM). For example, a First Name field in the Liferay object must use `first_name` as the ERC to map to the first name in this theoretical SugarCRM object JSON:
+
+```json
+{
+   "name": "Lord Voldermort",
+   "first_name": "Tom",
+   "last_name": "Riddle",
+   "title": "Lord"
+}
+```
 
 ![Use the SugarCRM field name for the external reference code.](./using-objects-with-sugar-crm/images/03.png)
 

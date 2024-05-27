@@ -1,4 +1,5 @@
 ---
+taxonomy-catagory-names:
 - Cloud
 - Cloud Platform Services
 - Liferay PaaS
@@ -110,9 +111,9 @@ The steps shown here compress the MySQL database dump into a `database.gz` file,
     ```bash
     7za a -tgzip database.gz database.sql
     ```
-    
+
     The `--databases` and `--add-drop-database` flags are necessary for backup restoration to work correctly. You can also use the `/backup/download` API to see how the backup service creates its MySQL dump file.
-    
+
 The resulting database dump contains the following code just before the create table statements.
 
 ```sql

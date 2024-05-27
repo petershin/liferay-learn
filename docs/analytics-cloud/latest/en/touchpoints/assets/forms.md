@@ -94,7 +94,7 @@ Click _Browsers_ to see a donut chart displaying up to the top eight web browser
 
 ## Asset Appears On
 
-The asset appears on table includes a page name and URL. Like any page data in Analytics Cloud, only pages that were interacted with in some way by site visitors are tracked and reported. It's important to note that the link doesn't take you to the actual page with the asset on it. Instead, it leads to the page Analytics view of the page. From there you can click the URL to the actual page.
+The Asset Appears On table includes the page name, the URL, the number of submissions, and the number of views on the page. Like any page data in Analytics Cloud, only pages that were interacted with in some way by site visitors are tracked and reported. It's important to note that the link doesn't take you to the actual page with the asset on it. Instead, it leads to the page Analytics view of the page. From there you can click the URL to the actual page.
 
 ![A table lists where the assets appear.](forms/images/07.png)
 

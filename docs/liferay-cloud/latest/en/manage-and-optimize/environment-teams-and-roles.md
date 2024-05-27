@@ -64,7 +64,8 @@ Here is a list of important permissions and which team roles have them:
 | --- | :-: | :-: | :-: | :-: |
 | Inviting/removing members | &#10004; | &#10004; | X | X |
 | Changing members' roles | &#10004; | &#10004; | X | X |
-| Enabling/disabling Support access | &#10004; | &#10004; | X | X |
+| Enabling/disabling support access | &#10004; | &#10004; | X | X |
+| Enabling/disabling shell access | &#10004; | &#10004; | X | X |
 | Deleting an environment | &#10004; | X | X | X |
 | Deleting a service | &#10004; | &#10004; | X | X |
 | Restarting/stopping a service | &#10004; | &#10004; | &#10004; | X |

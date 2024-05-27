@@ -11,16 +11,15 @@ Support Access is an optional setting that expedites troubleshooting by giving L
 
 When Support Access is enabled, Liferay Support engineers have read access to the following information:
 
-* Project console
-* Service logs
-* Control Panel settings
-* The region where the Liferay Cloud services are hosted
-* Team members and their associated roles
-* Members' activities
+- Project console
+- Service logs
+- Control Panel settings
+- The region where the Liferay Cloud services are hosted
+- Team members and their associated roles
+- Members' activities
 
-```{note}
-Support Access **does not** allow Liferay Support engineers to deploy assets or perform write actions in your project.
-```
+!!! note
+    Support Access **does not** allow Liferay Support engineers to deploy assets or perform write actions in your project.
 
 ## Changing the Support Access Setting
 
@@ -28,7 +27,7 @@ Support Access is enabled by default in each environment, but administrators can
 
 Follow these steps to change the Support Access setting:
 
-1. Navigate to *Settings* &rarr; *Support Access*.
+1. Navigate to *Settings* &rarr; *Access*.
 1. Set the toggle switch to your desired setting (*Enabled* or *Disabled*).
 
 ![Administrators can enable or disable Support Access.](./support-access/images/01.png)
@@ -45,6 +44,6 @@ Liferay Cloud also sends an email to all team members when the Support Access se
 
 ## Related Topics
 
-* [Troubleshooting Tools and Resources](../troubleshooting/troubleshooting-tools-and-resources.md)
-* [Help Center](https://help.liferay.com/hc/en-us)
-* [Log Management](../troubleshooting/reading-liferay-cloud-service-logs.md)
+- [Troubleshooting Tools and Resources](../troubleshooting/troubleshooting-tools-and-resources.md)
+- [Help Center](https://help.liferay.com/hc/en-us)
+- [Log Management](../troubleshooting/reading-liferay-cloud-service-logs.md)

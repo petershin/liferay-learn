@@ -11,9 +11,9 @@ Liferay PaaS provides a robust framework for achieving a highly efficient CI/CD 
 
 Although there are multiple paths for deployment, workflows generally follow these three stages:
 
-* [Develop and Configure](#develop-and-configure)
-* [Build and Test](#build-and-test)
-* [Deploy](#deploy)
+- [Develop and Configure](#develop-and-configure)
+- [Build and Test](#build-and-test)
+- [Deploy](#deploy)
 
 ## Develop and Configure
 
@@ -21,24 +21,28 @@ All workflows begin with making changes to your project's Git repository (i.e., 
 
 Configure a service's [LCP.json file](../reference/configuration-via-lcp-json.md), or make environment-specific and project-wide changes to a service via its `configs/` folder. To learn more about each service's configuration options, see their respective documentation:
 
-* [Liferay Service](../customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.md)
-* [Backup Service](../platform-services/backup-service/backup-service-overview.md)
-* [Continuous Integration Service (Jenkins)](../platform-services/continuous-integration.md)
-* [Database Service](../platform-services/database-service.md)
-* [Search Service (Elasticsearch)](../platform-services/search-service.md)
-* [Web Server Service (Nginx)](../platform-services/web-server-service.md)
+- [Liferay Service](../customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.md)
+- [Backup Service](../platform-services/backup-service/backup-service-overview.md)
+- [Continuous Integration Service (Jenkins)](../platform-services/continuous-integration.md)
+- [Database Service](../platform-services/database-service.md)
+- [Search Service (Elasticsearch)](../platform-services/search-service.md)
+- [Web Server Service (Nginx)](../platform-services/web-server-service.md)
 
 ## Build and Test
 
 Depending on the configuration of your project's Git repository, you can trigger automatic CI builds by merging commits into your project's central repository or opening a new pull request with your changes. While this process is automatic, you can modify the CI service in the `infra` environment to include additional pipeline steps, including testing. See [Continuous Integration](../platform-services/continuous-integration.md) for more information.
 
-To access a full history of builds across all project environments, navigate to the *Builds* page in the Liferay Cloud console. Here you can view all builds initiated by either the CI service or CLI tool, along with their general information and status (i.e., pending, passed, or failed).
+To access a full history of builds across all project environments, navigate to the *Builds* page in the Liferay Cloud console. Here you can view all builds initiated by either the CI service or CLI tool, along with their general information and status (i.e., pending, passed, or failed). You can filter builds by date and environment.
 
-![Access builds for your project via the Builds page.](./overview-of-the-liferay-cloud-deployment-workflow/images/01.png)
+![You can filter builds by environment.](./overview-of-the-liferay-cloud-deployment-workflow/images/01.png)
 
 ## Deploy
 
 With Liferay PaaS, there are three ways to deploy services: deploying via the CLI tool (manually), deploying via the Liferay Cloud Management Console (manually), or configuring certain CI builds to deploy automatically.
+
+To access a full history of deployments across all project environments, navigate to the *Deployments* page in the Liferay Cloud console. Here you can view all deployments initiated using any of the three methods, along with their general information. You can filter deployments by date and environment.
+
+![You can filter deployments by date.](./overview-of-the-liferay-cloud-deployment-workflow/images/02.png)
 
 ### Option 1: Deploying Through the Command Line Interface
 
@@ -48,9 +52,8 @@ To do this, log in to the CLI tool in your terminal, and navigate to the folder 
 
 For the deployment to be successful, you must have permissions to deploy to the chosen environment. See [Deploying Changes via the CLI Tool](./deploying-changes-via-the-cli-tool.md) for a walk through of this deployment workflow.
 
-```{important}
-While you can directly deploy backup, CI, database, search, and webserver services, you must first create a gradle build of the Liferay service before running the `lcp deploy` command. See [Deploying to the Liferay Service](../customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/deploying-to-the-liferay-service.md#cli-tool-deployment) for more information.
-```
+!!! important
+    While you can directly deploy backup, CI, database, search, and webserver services, you must first create a gradle build of the Liferay service before running the `lcp deploy` command. See [Deploying to the Liferay Service](../customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/deploying-to-the-liferay-service.md#cli-tool-deployment) for more information.
 
 When you deploy with the CLI tool, you can either deploy all services at once (by running the command from the root directory of your project), or deploy only a single service (by running the command from the directory containing the service's `LCP.json` file). The `liferay` service in particular [requires extra steps](../customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/deploying-to-the-liferay-service.md#cli-tool-deployment) to deploy, so it can build and prepare the files from your project workspace.
 
@@ -60,7 +63,7 @@ The Liferay Cloud console is the primary way for deploying changes to your proje
 
 See [Deploying Changes via the Liferay Cloud Console](./deploying-changes-via-the-liferay-cloud-console.md) for a walk through of the deployment workflow.
 
-![Deploy builds via the Liferay Cloud console.](./overview-of-the-liferay-cloud-deployment-workflow/images/02.png)
+![Deploy builds via the Liferay Cloud console.](./overview-of-the-liferay-cloud-deployment-workflow/images/03.png)
 
 ### Option 3: Automatically Deploying Builds to `dev` Environment
 
@@ -68,7 +71,6 @@ If desired, you can set up your CI service to automatically deploy builds to you
 
 ## Related Topics
 
-* [Understanding Deployment Types](./understanding-deployment-types.md)
-* [Understanding Deployment Strategies](./understanding-deployment-strategies.md)
-* [Deploying Changes via the Liferay Cloud Console](./deploying-changes-via-the-liferay-cloud-console.md)
-* [Deploying Changes via the CLI Tool](./deploying-changes-via-the-cli-tool.md)
+- [Understanding Deployment Types](./understanding-deployment-types.md)
+- [Understanding Deployment Strategies](./understanding-deployment-strategies.md)
+- [Team Activities](../manage-and-optimize/team-activities.md)

@@ -14,7 +14,7 @@ Path analytics identifies how visitors arrive on a site page and where they go n
 
 ## Viewing Page Path Analytics
 
-A page’s path analytics are reported in the Path tab of a page’s screen. The diagram reports the most common traffic sources for the page.
+A page’s path analytics are reported in the Path tab of a page’s screen. The diagram reports the most common traffic sources for the page ordered from most traffic to least traffic. If two sources or two pages have the same amount of traffic, the last one to be visited is displayed on top.
 
 ![The path diagram reports the most common traffic sources for the page.](paths/images/01.png)
 

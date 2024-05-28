@@ -14,6 +14,8 @@ taxonomy-category-names:
 
 With a theme CSS client extension, you can override the current theme's CSS files (`main.css` and `clay.css`) to change the look and feel of a page. Start with a client extension from the [sample workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace).
 
+Beginning with Liferay DXP 7.4 Q2/Portal 7.4 GA120, you can provide a [frontend token definition](../../site-building/site-appearance/style-books/developer-guide/frontend-token-definitions.md) in the theme CSS client extension. Earlier releases required a theme module.
+
 ## Prerequisites
 
 1. Install Java (JDK 8 or JDK 11).

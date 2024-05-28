@@ -12,13 +12,38 @@ uuid: 28fd229f-2eb5-4c12-bc0b-cc33b2a0e859
 
 {bdg-secondary}`Liferay DXP/Portal 7.3+`
 
-Style books have options grouped into categories defined per theme. Each option is defined with a token. The collection of all tokens defined for a theme is a _frontend token definition_.
+<!-- Since you can now do this in a theme css cx (2024Q2/GA120+), we should rework this to be less theme-centered -->
+The visual rules of style books consist of options grouped into categories. For example, in the Buttons category there can be an option called Background Color.
 
-When you assign a theme to your site's pages, the frontend token definition included with that theme is used when creating a style book for the site.
+![The token definition defines the options end users can configure when styling site pages.](./frontend-token-definitions/images/03.png)
 
+Each option is defined with a token. The collection of all tokens defined for a theme is a _frontend token definition_. The frontend token definition is a JSON file, provided by the theme CSS client extension (in a workspace or through the UI), or via the theme in earlier releases.
+
+!!! note
+    Beginning with Liferay DXP 7.4 Q2/Portal 7.4 GA120, you can provide the frontend token definition in a [theme CSS client extension](../../../../liferay-development/customizing-liferays-look-and-feel/using-a-theme-css-client-extension.md). Earlier releases required a theme module.
+
+<!-- Should we say something like, "if you want to hard-code everything except the button background color, your frontend token definition contains just one option"? -->
+
+<!-- Up-front should we talk about how the tokens relate to the CSS vars in the theme css cx? It's currently covered in the last section -->
+
+<!-- Need a diagram or screenshot to make the above clear -->
+
+<!-- Designer creates the token definition, site admin applied it to the site's pages, someone else might create the style book, and then someone else can build the pages using the style book's options. -->
+
+When you apply the theme CSS client extension or assign a theme to your site's pages, the included frontend token definition is used when creating a [style book](../using-a-style-book-to-standardize-site-appearance.md) for the site.
+
+<!-- Maybe keep this section as is for theme info, but make a new one for theme CSS client extensions? -->
 ## Defining Tokens for Your Style Book
 
-Since the frontend token definition is tied to your theme, frontend tokens must correspond to a CSS variable contained within your theme module. Specify the frontend tokens in a `.json` file within your theme module's `src/WEB-INF/` folder, named `frontend-token-definition.json`.
+Each frontend token must correspond to a CSS variable in the theme CSS client extension or theme module. Specify the frontend tokens in a `frontend-token-definition.json` file:
+
+* Theme css client extensions: place the token definition in your client extension project and define the path in the `client-extension.yaml`. For example,
+
+   ```yaml
+   frontendTokenDefinitionJSON: src/frontend-token-definition.json 
+   ```
+
+* Themes: place the token definition file in your theme module's `src/WEB-INF/` folder, named `frontend-token-definition.json`.
 
 ### Frontend Token Categories
 
@@ -132,7 +157,8 @@ Here's an example list of frontend tokens within a frontend token set:
 
 ## Matching CSS Variables to Style Book Tokens
 
-The `frontend-token-definition.json` file containing your frontend token definition must be in the `src/WEB-INF/` folder of your theme module folder. Every frontend token defined in your frontend token definition must represent a style (color, spacing, font, etc.) in the CSS of your theme.
+<!-- theme statement, change-->
+Every frontend token defined in your frontend token definition must represent a style (color, spacing, font, etc.) in the CSS of your theme css client extension or theme.
 
 All styles that your frontend tokens represent must be coded as CSS variables. For example, take this definition of a frontend token (giving an option to configure a font):
 
@@ -165,12 +191,10 @@ body {
 
 The value in the frontend token definition's `mappings` (`font-family-base`) matches the variable name in the CSS. Use two hyphens to precede the CSS variable name (in this example, `--font-family-base`).
 
-```{important}
-If a value for `defaultValue` is included in your frontend token definition, it must match the default value defined in the matching CSS variable definition.
-```
+!!! important
+    If a value for `defaultValue` is included in your frontend token definition, it must match the default value defined in the matching CSS variable definition.
 
 ## Related Topics
 
 - [Using a Style Book to Standardize Site Appearance](../using-a-style-book-to-standardize-site-appearance.md)
-
-<!-- Add link to token definition tutorial when available -->
+- [Using a Theme CSS Client Extension](../../../../liferay-development/customizing-liferays-look-and-feel/using-a-theme-css-client-extension.md)

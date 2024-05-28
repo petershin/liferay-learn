@@ -17,6 +17,7 @@ This `client-extension.yaml` file defines a theme CSS client extension:
 ```yaml
 able-theme-css:
     clayURL: css/clay.css
+    frontendTokenDefinitionJSON: src/frontend-token-definition.json
     mainURL: css/main.css
     name: Able Theme CSS
     type: themeCSS
@@ -26,6 +27,8 @@ The required `mainURL` and `clayURL` properties set the path to the two CSS reso
 
 The CSS in these files is added to the styling already used in your theme. In case of a conflict, the client extension's CSS overrides the styling already on the page.
 
+The `frontendTokenDefinitionJSON` property was added in Liferay DXP 2024.Q2/Portal 7.4 GA120 to enable providing the [frontend token definition](../../../site-building/site-appearance/style-books/developer-guide/frontend-token-definitions.md) file.
+
 [The example workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace/client-extensions/liferay-sample-theme-css-1) includes a complete theme CSS client extension.
 
 ## YAML Properties
@@ -33,9 +36,10 @@ The CSS in these files is added to the styling already used in your theme. In ca
 These properties are specific to theme CSS client extensions:
 
 | Name | Data Type | Description |
-| :--- | :--- | :--- |
-| `clayURL` | URL | (Required) The path to the CSS file representing the `clay.css` file of a Liferay theme. The complete URI is prefixed by the `baseURL` value. |
-| `mainURL` | URL | (Required) The path to the CSS file representing the `main.css` file of a Liferay theme. The complete URI is prefixed by the `baseURL` value. |
+|:-|:-|:-|
+| `clayURL`                     | URL | (Required) The path to the CSS file representing the `clay.css` file of a Liferay theme. The complete URI is prefixed by the `baseURL` value. |
+| `mainURL`                     | URL | (Required) The path to the CSS file representing the `main.css` file of a Liferay theme. The complete URI is prefixed by the `baseURL` value. |
+| `frontendTokenDefinitionJSON` | URL | The path to the `frontend-token-definition.json` file. The complete URI is prefixed by the `baseURL` value. |
 
 See [Frontend Client Extension Properties](../../customizing-liferays-look-and-feel.md#frontend-client-extension-properties) for properties common to all frontend client extensions.
 

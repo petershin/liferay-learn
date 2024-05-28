@@ -12,16 +12,16 @@ uuid: 88364ec4-ce77-4e8b-aa8d-fb5b6bd526c3
 
 {bdg-secondary}`Available 7.3+`
 
-A *Style Book* is a set of visual rules that apply to a Site to provide a consistent experience across its pages. They determine various visual settings on the Site, including spacing between elements (such as widgets), colors, and fonts. Each of these settings applies equally to every page using the Style Book.
+A site's *Style Book* provides visual rules for applying a consistent experience across its pages. They determine various visual settings on the site, including spacing between elements (such as widgets), colors, and fonts. Each of these settings applies equally to every page using the Style Book.
 
-The theme you assign to your Site's Pages determines the categories of settings available to the Style Books for your Site. Developers can customize the categories with new options for configuring Style Books. See [Frontend Token Definitions](./developer-guide/frontend-token-definitions.md) for more information.
+The Theme CSS Client Extension (or theme, in older versions) assigned to the site's pages determines the categories of settings available to the Style Books for your site. Developers can customize the categories with new options for configuring Style Books. See [Frontend Token Definitions](./developer-guide/frontend-token-definitions.md) for more information.
 
 ## Choosing a Style Book for a Page
 
-If you do not choose a specific Style Book for a page, the page uses the Style Book for the [Master Page](../../creating-pages/defining-headers-and-footers/master-page-templates.md). If neither is set, the page uses the default Style Book for the Site.
+If you do not choose a specific Style Book for a page, the page uses the Style Book for the [Master Page](../../creating-pages/defining-headers-and-footers/master-page-templates.md). If neither is set, the page uses the default Style Book for the site.
 
 ```{note}
-From Liferay 7.4 U10+ and GA14+, every Site has at least one Style Book available called *Styles from Theme*. This Style Book uses the token definition defined in the theme, with all of the default values. This Style Book cannot be edited, and it is the default used for the Site if no other Style Book is configured.
+From Liferay 7.4 U10+ and GA14+, every site has at least one Style Book available called *Styles from Theme*. This Style Book uses the token definition defined in the theme, with all of the default values. This Style Book cannot be edited, and it is the default used for the site if no other Style Book is configured.
 ```
 
 Follow these steps to set any page's Style Book:
@@ -52,7 +52,7 @@ The page is published using the new Style Book.
 
    ![Select any of the available categories and customize your Style Book.](./using-a-style-book-to-standardize-site-appearance/images/02.png)
 
-   These options come from the theme being used for your Site. See the [default Classic theme categories](#default-classic-theme-categories) for more information on the categories available for the default Classic theme.
+   These options come from the theme being used for your site. See the [default Classic theme categories](#default-classic-theme-categories) for more information on the categories available for the default Classic theme.
 
 1. Customize any of the provided fields given under the chosen category. Color fields specifically give you [multiple ways to choose a color](#customizing-your-style-book-s-colors).
 
@@ -60,13 +60,13 @@ The page is published using the new Style Book.
 
 The Style Book can now be selected as an option for any page when editing.
 
-To make this Style Book the new default for your Site, open the Actions menu (![Actions icon](../../../images/icon-actions.png)) beside the newly created Style Book and click *Mark as Default*.
+To make this Style Book the new default for your site, open the Actions menu (![Actions icon](../../../images/icon-actions.png)) beside the newly created Style Book and click *Mark as Default*.
 
 ### Previewing a Style Book
 
 {bdg-secondary}`Available 7.4 DXP U9+ or GA13+`
 
-While you are creating or editing a Style Book, you can preview the way it affects the look of various components of your Site, including pages, Page Templates, and Page Fragments.
+While you are creating or editing a Style Book, you can preview the way it affects the look of various components of your site, including pages, Page Templates, and Page Fragments.
 
 Use the two drop-down menus at the top of the screen to select what components to preview. The left drop-down menu determines the overall type to display (pages, Page Templates, Master Page Templates, Display Page Templates, or Page Fragments). The right drop-down menu determines which specific instance of the chosen type to display (or category, if applicable); only the four most recently used options are shown in the right drop-down menu, unless you click *More* from the list.
 
@@ -145,7 +145,7 @@ The colors used for fonts and visual elements defined in your theme are customiz
 ![Change the colors used for displays or UI elements with options under the Color System category.](./using-a-style-book-to-standardize-site-appearance/images/07.png)
 
 ```{note}
-Changing the colors for alert-related elements (such as *Success* or *Warning*) may not affect the color of incoming alerts on your Site because each type of alert may use one of many colors. To fully customize the color of alerts, you must define customizable colors and use them in your own theme's categories.
+Changing the colors for alert-related elements (such as *Success* or *Warning*) may not affect the color of incoming alerts on your site because each type of alert may use one of many colors. To fully customize the color of alerts, you must define customizable colors and use them in your own theme's categories.
 ```
 
 ### Spacing
@@ -160,7 +160,7 @@ When modifying tokens like width, margins, and padding that aren't related to co
 
 ### General
 
-These options modify color and spacing on elements that appear on every page of your Site. For example, the *Body Background* option changes the background color of all pages.
+These options modify color and spacing on elements that appear on every page of your site. For example, the *Body Background* option changes the background color of all pages.
 
 ### Layout
 

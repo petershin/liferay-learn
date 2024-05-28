@@ -1,0 +1,17 @@
+---
+# Suggestion: Must
+#
+# Checks for use of "need to" or "needs to" in sentences. "Must" is preferred as
+# much as possible.
+#
+# Based on Vale rule from GitLab: https://gitlab.com/gitlab-org/gitlab/-/tree/master/doc/.vale/gitlab
+extends: existence
+message: 'Wordy. Use "must" instead: "%s"'
+ignorecase: true
+level: warning
+link: https://learn.liferay.com/w/reference/style-guide/liferay-phraseology#Must
+raw:
+  - "has to( |\n|[[:punct:]])[a-zA-Z]*)"
+  - "have to( |\n|[[:punct:]])[a-zA-Z]*|"
+  - "(need to( |\n|[[:punct:]])[a-zA-Z]*|"
+  - "needs to( |\n|[[:punct:]])[a-zA-Z]*|"

@@ -10,7 +10,7 @@ toc:
 터치포인트는 사용자와 고객이 브랜드와 상호 작용하는 다양한 방식을 반영합니다. Analytics Cloud는 페이지 조회수와 같은 기존 페이지 분석을 포괄적인 사이트, 경로 및 자산별 분석 데이터와 결합한 광범위한 분석 데이터를 제공합니다.
 
 Analytics Cloud 전체 사이트에 대한 종합적인 보고서를 제공하는 [사이트 전체 보고 대시보드](./touchpoints/sites-dashboard.md)를 제공합니다. 이를 통해 시간이 지남에 따라 사이트의 순 방문자 수, 방문자가 액세스하는 페이지, 관심 분야 등을 이해할 수 있습니다. [개별 페이지](./touchpoints/pages/pages.md) 에 대한 분석도 쉽게 볼 수 있습니다. 여기에는 조회수, 방문자 및 이탈률이 포함됩니다. [경로 분석](./touchpoints/pages/paths.md) 방문자가 귀하의 페이지에 어떻게 도착하는지 보여줍니다. 여기에는 사용자가 귀하보다 먼저 방문한 페이지, 사이트
- 및 장치 유형에 대한 정보가 포함됩니다. 또한 많은 Liferay DXP [자산](./touchpoints/assets/assets.md) 의 성능을 추적하여 페이지 수준보다 더 깊이 드릴링하여 사이트 성능을 향상시킬 수 있는 방법을 결정할 수 있습니다. [이벤트 분석](./touchpoints/events/events-analysis.md) 사용하면 개인이 귀하의 사이트를 방문하고 상호 작용하는 방식을 분석할 수 있습니다.
+ 및 장치 유형에 대한 정보가 포함됩니다. 또한 많은 Liferay DXP [자산](./touchpoints/assets.md) 의 성능을 추적하여 페이지 수준보다 더 깊이 드릴링하여 사이트 성능을 향상시킬 수 있는 방법을 결정할 수 있습니다. [이벤트 분석](./touchpoints/events/events-analysis.md) 사용하면 개인이 귀하의 사이트를 방문하고 상호 작용하는 방식을 분석할 수 있습니다.
 
 ![The Touchpoints menu provides access to information about Sites, Pages, and Assets.](./touchpoints/images/01.png)
 
@@ -90,7 +90,7 @@ Analytics Cloud 전체 사이트에 대한 종합적인 보고서를 제공하�
 
 ### 자산
 
-- [자산](./touchpoints/assets/assets.md)
+- [자산](./touchpoints/assets.md)
 - [웹 콘텐츠](./touchpoints/assets/web-content.md)
 - [블로그](./touchpoints/assets/blogs.md)
 - [양식](./touchpoints/assets/forms.md)

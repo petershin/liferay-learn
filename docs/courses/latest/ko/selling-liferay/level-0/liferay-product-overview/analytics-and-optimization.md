@@ -16,7 +16,7 @@ visibility:
 
 ## 자산 분석
 
-* [자산](https://learn.liferay.com/web/guest/w/analytics-cloud/touchpoints/assets/assets)
+* [자산](https://learn.liferay.com/web/guest/w/analytics-cloud/touchpoints/assets)
 * [콘텐츠 성능 도구를 사용하여 콘텐츠 지표 분석](https://learn.liferay.com/w/dxp/content-authoring-and-management/page-performance-and-accessibility/analyze-content-metrics-using-content-performance-tool)
 
 ## 트래픽 및 경로 분석

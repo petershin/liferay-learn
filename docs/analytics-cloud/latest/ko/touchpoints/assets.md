@@ -1,6 +1,6 @@
 ---
 toc:
-  - ./assets/assets.md
+  - ./assets.md
   - ./assets/web-content.md
   - ./assets/blogs.md
   - ./assets/forms.md
@@ -9,7 +9,7 @@ toc:
 ---
 # 자산
 
-* [자산](./assets/assets.md)
+* [자산](./assets.md)
 * [웹 콘텐츠](./assets/web-content.md)
 * [블로그](./assets/blogs.md)
 * [양식](./assets/forms.md)

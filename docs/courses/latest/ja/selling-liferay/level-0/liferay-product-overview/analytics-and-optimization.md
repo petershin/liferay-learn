@@ -16,7 +16,7 @@ visibility:
 
 ## アセットアナリティクス
 
-* [アセット](https://learn.liferay.com/web/guest/w/analytics-cloud/touchpoints/assets/assets)
+* [アセット](https://learn.liferay.com/web/guest/w/analytics-cloud/touchpoints/assets)
 * [コンテンツパフォーマンスツールを使用したコンテンツメトリクスの分析](https://learn.liferay.com/w/dxp/content-authoring-and-management/page-performance-and-accessibility/analyze-content-metrics-using-content-performance-tool)
 
 ## 流入元とパスアナリティクス

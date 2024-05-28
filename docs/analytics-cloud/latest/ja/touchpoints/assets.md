@@ -1,6 +1,6 @@
 ---
 toc:
-  - ./assets/assets.md
+  - ./assets.md
   - ./assets/web-content.md
   - ./assets/blogs.md
   - ./assets/forms.md
@@ -9,7 +9,7 @@ toc:
 ---
 # アセット
 
-- [アセット](./assets/assets.md)
+- [アセット](./assets.md)
 - [Webコンテンツ](./assets/web-content.md)
 - [ブログ](./assets/blogs.md)
 - [フォーム](./assets/forms.md)

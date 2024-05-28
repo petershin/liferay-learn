@@ -1,6 +1,6 @@
 ---
 toc:
-  - ./assets/assets.md
+  - ./assets.md
   - ./assets/web-content.md
   - ./assets/blogs.md
   - ./assets/forms.md

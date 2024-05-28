@@ -7,7 +7,7 @@
 # Based on Vale rule from GitLab: https://gitlab.com/gitlab-org/gitlab/-/tree/master/doc/.vale/gitlab
 extends: existence
 message: 'Use a comma before the last "and" or "or" in a list of four or more items.'
-link: https://learn.liferay.com/w/reference/style-guide/liferay-phraseology#oxford-commas
+link: https://docs.gitlab.com/ee/development/documentation/styleguide.html#punctuation
 level: warning
 raw:
   - '(?:[\w-_` ]+,){2,}(?:[\w-_` ]+) (and |or )'

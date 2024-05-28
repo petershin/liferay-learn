@@ -30,7 +30,7 @@ Analytics Cloud supports these types of assets:
 - [Forms](./forms.md)
 - [Web Content](./tracking-custom-assets.md)
 
-A CSV report is available for each asset type. See [downloading reports](../../reference/downloading-reports.md) to learn more.
+A CSV report is available for each asset type, and a PDF is available for each asset. See [Downloading Reports](../../reference/downloading-reports.md) to learn more.
 
 ![Each Asset has its own table.](assets/images/01.png)
 

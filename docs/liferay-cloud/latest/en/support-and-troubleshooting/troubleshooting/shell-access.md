@@ -14,8 +14,6 @@ The command-line tools in Liferay Cloud contribute to the developer's workflow b
 
 ## Accessing the Shell via the Web Console
 
-Follow these steps to access the shell via the Liferay Cloud web console:
-
 1. Go to your environment page.
 
 1. Click *Services* in the menu on the left.
@@ -25,8 +23,6 @@ Follow these steps to access the shell via the Liferay Cloud web console:
 ![Access the shell via Liferay Cloud's web console.](./shell-access/images/01.png)
 
 ## Accessing the Shell via a Terminal
-
-Follow these steps to access your service's shell via a terminal:
 
 1. [Install the Liferay Cloud command line tool](../../reference/command-line-tool.md) if it's not already installed.
 
@@ -46,7 +42,7 @@ lcp shell -p projectID -s serviceID
 
 For security reasons, shell access for contributors is disabled by default. You can enable shell access in the *Access* tab in the *Settings* page.
 
-![You can enable shell acces in the Settings page.](./shell-access/images/03.png)
+![You can enable shell access in the Settings page.](./shell-access/images/03.png)
 
 ## Shell Limitations
 

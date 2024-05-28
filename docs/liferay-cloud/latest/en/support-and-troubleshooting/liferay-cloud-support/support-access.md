@@ -19,11 +19,11 @@ When Support Access is enabled, Liferay Support engineers have read access to th
 - Members' activities
 
 !!! note
-    Support Access **does not** allow Liferay Support engineers to deploy assets or perform write actions in your project.
+    Support Access **does not** allow Liferay support engineers to deploy assets or perform write actions in your project.
 
 ## Changing the Support Access Setting
 
-Support Access is enabled by default in each environment, but administrators can disable it at any time.
+Support access is enabled by default in each environment, but administrators can disable it at any time.
 
 Follow these steps to change the Support Access setting:
 

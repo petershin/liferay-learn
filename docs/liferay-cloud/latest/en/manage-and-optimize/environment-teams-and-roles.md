@@ -25,11 +25,11 @@ Follow these steps to invite users to your environment:
 
 1. Click on *Send Invite*.
 
-![Figure 1: Invite new team members to an environment from the Team page.](./environment-teams-and-roles/images/01.png)
+![Invite new team members to an environment from the Team page.](./environment-teams-and-roles/images/01.png)
 
 Email invitations grant users access to a single project environment. Invited users must open the invitation email and click *Accept Invite*.
 
-![Figure 2: Click Accept Invite to gain access to the environment](./environment-teams-and-roles/images/02.png)
+![Click Accept Invite to gain access to the environment](./environment-teams-and-roles/images/02.png)
 
 New Liferay Cloud users must create an account, while returning users can *Log in* using their Liferay Cloud credentials.
 
@@ -43,11 +43,11 @@ Current and invited team members appear in separate tabs of the *Members* sectio
 
 From the *Invited* tab, administrators can cancel pending environment invitations.
 
-   ![Figure 3: Cancel pending invitations from the Invited tab using the Actions button.](./environment-teams-and-roles/images/03.png)
+   ![Cancel pending invitations from the Invited tab using the Actions button.](./environment-teams-and-roles/images/03.png)
 
 From the *Current* tab, administrators can change team member roles or remove a member from the environment.
 
-   ![Figure 4: Use the Actions button to manage current team members.](./environment-teams-and-roles/images/04.png)
+   ![Use the Actions button to manage current team members.](./environment-teams-and-roles/images/04.png)
 
 ## Understanding Team Roles
 

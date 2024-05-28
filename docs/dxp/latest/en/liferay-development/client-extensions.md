@@ -38,11 +38,14 @@ You use [Liferay Workspace](./tooling/liferay-workspace/what-is-liferay-workspac
 
 These are the classifications of client extensions:
 
-* [Frontend client extensions](#frontend-client-extensions)
-* [Batch client extensions](#batch-client-extensions)
-* [Configuration client extensions](#configuration-client-extensions)
-* [Microservice client extensions](#microservice-client-extensions)
-* [Batch client extensions](#batch-client-extensions)
+- [Client Extensions](#client-extensions)
+   - [Types of Client Extensions](#types-of-client-extensions)
+      - [Frontend Client Extensions](#frontend-client-extensions)
+      - [Configuration Client Extensions](#configuration-client-extensions)
+      - [Microservice Client Extensions](#microservice-client-extensions)
+      - [Batch Client Extensions](#batch-client-extensions)
+   - [Where to Go From Here](#where-to-go-from-here)
+   - [Related Topics](#related-topics)
 
 ### Frontend Client Extensions
 
@@ -76,7 +79,7 @@ See [Importing and Exporting Data](./importing-exporting-data.md) for more infor
 
 To get a soft, step-by-step tour of how to write client extensions, follow the learning path below, which starts you off with the easiest client extension to implement, and then moves on from there. 
 
-1. [Modifying the Favico](./customizing-liferays-look-and-feel/using-a-theme-favicon-client-extension.md)
+1. [Modifying the Favicon](./customizing-liferays-look-and-feel/using-a-theme-favicon-client-extension.md)
 1. [Adding CSS](./customizing-liferays-look-and-feel/using-a-css-client-extension.md)
 1. [Modifying a Theme](./customizing-liferays-look-and-feel/using-a-theme-css-client-extension.md)
 1. [Adding an iFrame](./integrating-external-applications/using-an-iframe-client-extension.md)

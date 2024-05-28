@@ -1,4 +1,0 @@
-Liferay
-OAuth 2
-API
-OSGi

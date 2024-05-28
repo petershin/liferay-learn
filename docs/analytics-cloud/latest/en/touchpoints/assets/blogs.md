@@ -37,7 +37,7 @@ The first chart, called visitor behavior, contains five important metrics:
 
 ### Views
 
-The views plot shows the trend-line for the number of times a blogs entry was viewed each day (or hour, if yesterday or last 24 hours are selected).
+The views plot shows the trend-line for the number of times a blogs entry was viewed each day (or hour, if yesterday or last 24 hours are selected). You can find more detailed information about this in [Asset Appears On](#asset-appears-on), at the bottom of the page.
 
 ### Reading Time
 
@@ -95,7 +95,7 @@ Click _Browsers_ to see a donut chart displaying up to the top eight web browser
 
 ## Asset Appears On
 
-The Asset Appears On table includes the page name, the URL, and the number of views on the page. Like any page data in Analytics Cloud, only pages site visitors interacted with in some way are tracked and reported. It's important to note that the link doesn't take you to the actual page with the asset on it. Instead, it leads to the page's analytics view. From there you can click the URL to the actual page.
+You can view comprehensive statistics for each asset across various sites and channels where it's published on the Asset Appears On table. It includes the page name, the URL, and the number of views on the page. Like any page data in Analytics Cloud, only pages site visitors interacted with in some way are tracked and reported. It's important to note that the link doesn't take you to the actual page with the asset on it. Instead, it leads to the page's analytics view. From there you can click the URL to the actual page.
 
 ![A table lists where the assets appear.](blogs/images/06.png)
 

@@ -36,13 +36,13 @@ The first chart, called visitor behavior, contains four important metrics:
 
 Submissions counts the number of times the submit button was clicked on a form. It's the gold standard metric for a form, because that's why the form was created in the first place: to collect data entered into the form. If the submit button isn't clicked, you don't get the data you wanted.
 
-The submissions trend line shows the number of times the submit button was clicked each day (or hour, if yesterday or last 24 hours are selected) over the selected time period.
+The submissions trend line shows the number of times the submit button was clicked each day (or hour, if yesterday or last 24 hours are selected) over the selected time period. You can find more detailed information about this in [Asset Appears On](#asset-appears-on), at the bottom of the page.
 
 ### Views
 
 Views is a common metric among all assets (and Pages).
 
-Useful with the time period filter, Views is the number of views for a form in a given period of time. It's not the same as the number of visitors, because it doesn't try to count only unique IP addresses. So over the last 30 days, one visitor (IP address) could come back to the page 100 times. That means there are 100 page views, but only one visitor (assuming the same device was used to access the page each time). However, a unique view isn't logged for a single user unless at least 30 minutes of inactivity on the page passes before the user interacts with the page again.
+Useful with the time period filter, Views is the number of views for a form in a given period of time. It's not the same as the number of visitors, because it doesn't try to count only unique IP addresses. So over the last 30 days, one visitor (IP address) could come back to the page 100 times. That means there are 100 page views, but only one visitor (assuming the same device was used to access the page each time). However, a unique view isn't logged for a single user unless at least 30 minutes of inactivity on the page passes before the user interacts with the page again. You can find more detailed information about this in [Asset Appears On](#asset-appears-on), at the bottom of the page.
 
 ### Abandonment
 
@@ -94,7 +94,7 @@ Click _Browsers_ to see a donut chart displaying up to the top eight web browser
 
 ## Asset Appears On
 
-The Asset Appears On table includes the page name, the URL, the number of submissions, and the number of views on the page. Like any page data in Analytics Cloud, only pages that were interacted with in some way by site visitors are tracked and reported. It's important to note that the link doesn't take you to the actual page with the asset on it. Instead, it leads to the page Analytics view of the page. From there you can click the URL to the actual page.
+You can view comprehensive statistics for each asset across various sites and channels where it's published on the Asset Appears On table. It includes the page name, the URL, the number of submissions, and the number of views on the page. Like any page data in Analytics Cloud, only pages that were interacted with in some way by site visitors are tracked and reported. It's important to note that the link doesn't take you to the actual page with the asset on it. Instead, it leads to the page Analytics view of the page. From there you can click the URL to the actual page.
 
 ![A table lists where the assets appear.](forms/images/07.png)
 

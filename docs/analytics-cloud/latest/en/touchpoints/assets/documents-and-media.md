@@ -34,11 +34,11 @@ The first chart, called visitor behavior, contains four important metrics:
 
 ### Downloads
 
-The Downloads trend-line shows the total number of downloads per day (or hour, if Yesterday or Last 24 Hours are selected) over the selected time period.
+The Downloads trend-line shows the total number of downloads per day (or hour, if Yesterday or Last 24 Hours are selected) over the selected time period. You can find more detailed information about this in [Asset Appears On](#asset-appears-on), at the bottom of the page.
 
 ### Previews
 
-Documents and Media files can be previewed. Even if not ultimately downloaded, previewing shows interaction with the file and is therefore an important metric. The previews trend line shows the total number of previews per day (or hour, if yesterday or last 24 hours are selected) for the selected time period.
+Documents and Media files can be previewed. Even if not ultimately downloaded, previewing shows interaction with the file and is therefore an important metric. The previews trend line shows the total number of previews per day (or hour, if yesterday or last 24 hours are selected) for the selected time period. You can find more detailed information about this in [Asset Appears On](#asset-appears-on), at the bottom of the page.
 
 ### Comments
 
@@ -88,7 +88,7 @@ Click _Browsers_ to see a donut chart displaying up to the top eight web browser
 
 ## Asset Appears On
 
-The Asset Appears On table includes the page name, the URL, the number of downloads, and the number of previews for the page. Like any page data in Analytics Cloud, only pages that were interacted with in some way by site visitors are tracked and reported. It's important to note that the link doesn't take you to the actual page with the asset on it. Instead, it leads to the page analytics view of the page. From there you can click the URL to the actual page.
+You can view comprehensive statistics for each asset across various sites and channels where it's published on the Asset Appears On table. It includes the page name, the URL, the number of downloads, and the number of previews for the page. Like any page data in Analytics Cloud, only pages that were interacted with in some way by site visitors are tracked and reported. It's important to note that the link doesn't take you to the actual page with the asset on it. Instead, it leads to the page analytics view of the page. From there you can click the URL to the actual page.
 
 ![A table lists where the assets appear.](documents-and-media/images/06.png)
 

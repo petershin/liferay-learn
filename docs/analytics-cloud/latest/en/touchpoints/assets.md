@@ -16,7 +16,7 @@ uuid: 5ec4ccb1-4c4e-415d-855e-5c458597f1c3
 ---
 # Assets
 
-Assets are individual pieces of content that exist on site pages in your Liferay Analytics Cloud data sources. In summary, assets are
+Assets are individual pieces of content that exist on site pages in your Liferay Analytics Cloud data sources. Assets are
 
 - Content residing on a page.
 - Registered, tracked, and reported on by Analytics Cloud the first time an interaction is detected by the Analytics Cloud client.

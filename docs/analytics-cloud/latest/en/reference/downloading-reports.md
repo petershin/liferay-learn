@@ -37,6 +37,6 @@ Each CSV report shows the same information as its respective list (e.g. list of 
 
 ## Downloading a Report
 
-After clicking *Download Reports*, a modal shows up on your screen. This modal contains a list of all reports you can choose to show on the file you'll download. Most dashboards also allow you to select a date range.
+After clicking *Download Reports*, a modal appears, containing a list of all possible reports you can publish in the file you'll download, along with a selectable date range. 
 
 ![The modal allows you to choose which reports in which date range to download](./downloading-reports/images/01.png)

@@ -1,15 +1,13 @@
 ---
-# Suggestion: FutureTense
+#  Future Tense
 #
-# Checks for use of future tense in sentences. Present tense is preferred as
+# Don't use future tense if you can help it. Present tense is preferred as
 # much as possible.
-#
-# Based on Vale rule from GitLab: https://gitlab.com/gitlab-org/gitlab/-/tree/master/doc/.vale/gitlab
 extends: existence
-message: 'Avoid using future tense: "%s"'
 ignorecase: true
 level: warning
-link: https://docs.gitlab.com/ee/development/documentation/styleguide.html#language-to-avoid
+link: https://learn.liferay.com/w/reference/style-guide/liferay-phraseology#future-tense
+message: 'Avoid using future tense: "%s"'
 raw:
     - "(going to( |\n|[[:punct:]])[a-zA-Z]*|"
     - "will( |\n|[[:punct:]])[a-zA-Z]*|"

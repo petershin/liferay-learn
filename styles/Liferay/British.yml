@@ -1,8 +1,12 @@
-extends: consistency
-message: "Inconsistent spelling of '%s'"
-level: error
+---
+# Use American spelling instead of British
+action: 
+    name: replace
+extends: substitution
 ignorecase: true
-either:
+level: error
+message: "British spelling of '%s'"
+swap:
     advisor: adviser
     apologise: apologize
     armour: armor

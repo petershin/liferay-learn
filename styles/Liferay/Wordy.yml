@@ -1,8 +1,12 @@
-extends: substitution
-message: Omit needless words. Prefer '%s' over '%s'
-ignorecase: true
+---
+# Wordy Phrases
+# Strunk & White Rule 13: Omit Needless Words. 
+
 action: 
     name: replace
+extends: substitution
+ignorecase: true
+message: Omit needless words. Prefer '%s' over '%s'
 swap: 
     a majority of: most
     a number of: many

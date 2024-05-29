@@ -1,16 +1,12 @@
 ---
-# Warning: SentenceSpacing
+# Sentence Spacing
 #
-# Checks for the following in common content scenarios:
-#
-# - No spaces.
-# - More than one space.
+# Checks for double spaces after sentences.
 #
 # Based on Vale rule from GitLab: https://gitlab.com/gitlab-org/gitlab/-/tree/master/doc/.vale/gitlab
 extends: existence
-message: '"%s" must contain one and only one space.'
-link: https://docs.gitlab.com/ee/development/documentation/styleguide.html#punctuation
 level: warning
+message: '"%s" must contain one and only one space.'
 nonword: true
 tokens:
     - '[a-z][.?!,][A-Z]'

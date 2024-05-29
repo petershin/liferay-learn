@@ -1,8 +1,10 @@
-
+# Just, Simply, Very
+# Extra words. Do not use them in Liferay documentation.
 extends: existence
-message: "Remove '%s'."
 ignorecase: true
 level: error
+link: https://learn.liferay.com/w/reference/style-guide/liferay-phraseology#simply-and-just
+message: "Remove '%s'."
 tokens:
     - just
     - simply

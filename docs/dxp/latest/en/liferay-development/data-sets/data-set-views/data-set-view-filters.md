@@ -30,7 +30,7 @@ While managing data set views, you can define pre-applied filters to be used in 
 
 ## Client Extension Filter
 
-Use Frontend Data Set Filter [client extensions](../../client-extensions.md) or deploy a [client extension from your workspace](../../client-extensions/working-with-client-extensions.md) to customize the filter experience and add new types of filters to your data set view.
+Use a Custom Filter [client extension](../../customizing-liferays-look-and-feel/using-a-custom-filter-client-extension.md) or deploy a [client extension from your workspace](../../client-extensions/working-with-client-extensions.md) to customize the filter experience and add new types of filters to your data set view.
 
 ![You need to have a Frontend Data Set Filter client extension to create the client extension filter.](./data-set-view-filters/images/01.png)
 
@@ -45,8 +45,6 @@ Use Frontend Data Set Filter [client extensions](../../client-extensions.md) or 
 1. Select the *Frontend Data Set Filter* client extension and click *Save*.
 
 ![Create a filter based on a client extension.](./data-set-view-filters/images/02.png)
-
-<!-- I'll add more information about how to use client extensions with data set views as soon as I get some -->
 
 ## Date Range Filter
 

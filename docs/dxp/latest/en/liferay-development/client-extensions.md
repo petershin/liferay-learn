@@ -38,14 +38,11 @@ You use [Liferay Workspace](./tooling/liferay-workspace/what-is-liferay-workspac
 
 These are the classifications of client extensions:
 
-- [Client Extensions](#client-extensions)
-   - [Types of Client Extensions](#types-of-client-extensions)
-      - [Frontend Client Extensions](#frontend-client-extensions)
-      - [Configuration Client Extensions](#configuration-client-extensions)
-      - [Microservice Client Extensions](#microservice-client-extensions)
-      - [Batch Client Extensions](#batch-client-extensions)
-   - [Where to Go From Here](#where-to-go-from-here)
-   - [Related Topics](#related-topics)
+* [Frontend client extensions](#frontend-client-extensions)
+* [Batch client extensions](#batch-client-extensions)
+* [Configuration client extensions](#configuration-client-extensions)
+* [Microservice client extensions](#microservice-client-extensions)
+* [Batch client extensions](#batch-client-extensions)
 
 ### Frontend Client Extensions
 

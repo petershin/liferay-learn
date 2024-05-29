@@ -89,6 +89,12 @@ Specify an Editor Config Contributor client extension in your `client-extension.
 type: editorConfigContributor
 ```
 
+## Custom Filter Client Extensions
+
+{bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+`
+
+[Custom filter client extensions](./customizing-liferays-look-and-feel/using-a-custom-filter-client-extension.md) define JavaScript functions for creating and integrating customizable filter interfaces. These extensions can enhance the user experience by providing tailored filtering capabilities based on OData queries.
+
 ## Themes (PaaS or self-hosted only)
 
 Finally, themes are a traditionally deployed asset to Liferay, which is why they are only available via PaaS or self-hosted platforms. You can define your own complete look and feel with themes. 
@@ -98,7 +104,7 @@ Read on to learn how to customize Liferay to match your design!
 ::::{grid} 2
 :gutter: 3 3 3 3
 
-:::{grid-item-card}  Using A Theme Favico Client Extension
+:::{grid-item-card}  Using A Theme Favicon Client Extension
 :link: ./customizing-liferays-look-and-feel/using-a-theme-favicon-client-extension.md
 :::
 
@@ -120,6 +126,10 @@ Read on to learn how to customize Liferay to match your design!
 
 :::{grid-item-card}  Using An Editor Config Contributor Client Extension
 :link:  ./customizing-liferays-look-and-feel/using-an-editor-config-contributor-client-extension.md
+:::
+
+:::{grid-item-card}  Using A Custom Filter Client Extension
+:link:  ./customizing-liferays-look-and-feel/using-a-custom-filter-client-extension.md
 :::
 
 :::{grid-item-card}  Front-end Client Extensions UI Reference 

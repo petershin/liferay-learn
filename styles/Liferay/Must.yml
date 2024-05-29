@@ -11,7 +11,8 @@ ignorecase: true
 level: warning
 link: https://learn.liferay.com/w/reference/style-guide/liferay-phraseology#Must
 raw:
-  - "has to( |\n|[[:punct:]])[a-zA-Z]*)"
+  - "(has to( |\n|[[:punct:]])[a-zA-Z]*|"
   - "have to( |\n|[[:punct:]])[a-zA-Z]*|"
-  - "(need to( |\n|[[:punct:]])[a-zA-Z]*|"
-  - "needs to( |\n|[[:punct:]])[a-zA-Z]*|"
+  - "need to( |\n|[[:punct:]])[a-zA-Z]*|"
+  - "needs to( |\n|[[:punct:]])[a-zA-Z]*)"
+

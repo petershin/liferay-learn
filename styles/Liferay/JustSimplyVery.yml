@@ -4,6 +4,6 @@ message: "Remove '%s'."
 ignorecase: true
 level: error
 tokens:
-  - just
-  - simply
-  - very
+    - just
+    - simply
+    - very

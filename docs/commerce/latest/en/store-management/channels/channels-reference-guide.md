@@ -148,7 +148,7 @@ By default, a channel is eligible for all accounts. You can control channel elig
 
 ## Punch Out
 
-Enable this to set a punch out URL for your external procurement system. See [PunchOut2Go](../../add-ons-and-connectors/punchout2go.md) for more information.
+Enable this to set a punch out URL for your external procurement system. See [TradeCentric (formerly PunchOut2Go)](../../add-ons-and-connectors/tradecentric-formerly-punchout2go.md) for more information.
 
 ## Commerce 2.1 and Below
 

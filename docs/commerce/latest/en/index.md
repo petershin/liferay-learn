@@ -103,7 +103,7 @@ uuid: 7e5ff1c5-105e-4021-8b5f-98b7e12ae3f5
 :::{grid-item-card} Add-ons and Connectors
 :link: ./add-ons-and-connectors.md
 
-[PunchOut2Go](./add-ons-and-connectors/punchout2go.md)
+[TradeCentric (formerly PunchOut2Go)](./add-ons-and-connectors/tradecentric-formerly-punchout2go.md)
 [Salesforce](./add-ons-and-connectors/salesforce.md)
 [Mulesoft](./add-ons-and-connectors/mulesoft.md)
 :::

@@ -1262,6 +1262,14 @@ modules/apps/commerce/commerce-product-type-virtual-order-service/service.xml)
 - **What Changed**: The `messaging-misc-spring.xml` file is removed.
 - **Reason**: The `messaging-misc-spring.xml` file is no longer used.
 
+**portal.properties**
+[`portal-impl/src/portal.properties`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/portal.properties)
+
+- **Date**: Jan. 4, 2024
+- **Ticket**: [LPS-199540](https://liferay.atlassian.net/browse/LPS-199540)
+- **What Changed**: The `index.permission.filter.search.amplification.factor` property is removed. Instead, if the total amount of time searching is still a concern, regulate it with the new Permission Filtering Time Limit configuration (*Control Panel* &rarr; *System Settings* &rarr; *Search* &rarr; *Default Search Result Permission Filter*).
+- **Reason**: The `index.permission.filter.search.amplification.factor` property did not effectively improve permission filtering, and it only applied on the first search.
+
 **system.properties**
 [`portal-impl/src/system.properties`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/system.properties)
 
@@ -2225,6 +2233,14 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Ticket**: [LPS-201086](https://liferay.atlassian.net/browse/LPS-201086)
 - **What Changed**: The `AuditMessageFactoryUtil` class is removed. The logic has been refactored into `AuditMessageFactory`.
 - **Reason**: The logic was unnecessarily split between classes, so it is now combined into the `AuditMessageFactory` class to simplify the code structure.
+
+**PortletDisplay.java**
+[`portal-kernel/src/com/liferay/portal/kernel/theme/PortletDisplay.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/theme/PortletDisplay.java)
+
+- **Date**: Nov. 20, 2023
+- **Ticket**: [LPS-196539](https://liferay.atlassian.net/browse/LPS-196539)
+- **What Changed**: The `getPortletSetup` method is renamed to `getPortletPreferences`, and the `setPortletSetup` method is renamed to `setPortletPreferences`. Update any references to use the new method names.
+- **Reason**: This change makes the method names consistent with the `PortletPreferences` variable.
 
 **PortletToolbar.java**
 [`portal-kernel/src/com/liferay/portal/kernel/portlet/toolbar/PortletToolbar.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/portlet/toolbar/PortletToolbar.java)

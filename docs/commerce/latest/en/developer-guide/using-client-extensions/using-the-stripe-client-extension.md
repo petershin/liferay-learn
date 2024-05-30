@@ -33,47 +33,10 @@ Liferay provides a client extension that integrates with [Stripe](https://stripe
    unzip -d liferay-stripe-workspace com.liferay.stripe.workspace-latest.zip
    ```
 
-Now you have the tools to start and deploy the client extension(s) to Liferay. 
+Now you have the tools to deploy the client extension to Liferay. 
 
 ```{include} /_snippets/run-liferay-portal.md
 ```
-
-## Examine the Stripe Client Extension
-
-The `client-extensions/liferay-stripe-commerce-payment-integration/client-extension.yaml` file defines the payment integration client extension in the Stripe workspace. There are three important blocks in the `.yaml` file that you must understand:
-
-```yaml
-assemble:
-    - fromTask: bootJar
-```
-
-The `assemble` block specifies that the standalone application/microservice is created with the `bootJar` command. This is available from the [Spring Boot Gradle Plugin](https://docs.spring.io/spring-boot/docs/current/gradle-plugin/reference/htmlsingle/). The application JAR must be included in the LUFFA for deployment in Liferay SaaS.
-
-```yaml
-liferay-stripe-commerce-payment-integration:
-    key: liferay-stripe-commerce-payment-integration
-    name: Liferay Stripe Commerce Payment Integration
-    oAuth2ApplicationExternalReferenceCode: liferay-stripe-commerce-payment-integration-oauth-application-user-agent
-    paymentIntegrationType: 4
-    paymentIntegrationTypeSettings:
-        apiKey: enter your secret key here
-    type: commercePaymentIntegration
-```
-
-The `liferay-stripe-commerce-payment-integration` block contains the key configurations required for a payment integration client extension. The `paymentIntegrationTypeSettings` field contains tke key-value pairs that appear in the configuration menu for the client extension. In this case, it contains a field for the Stripe API key. See [Payment Integration Client Extension YAML Reference](./payment-integration-client-extension-reference.md#payment-integration-client-extension-yaml-reference) for more information on the other fields. 
-
-```yaml
-liferay-stripe-commerce-payment-integration-oauth-application-user-agent:
-    .serviceAddress: localhost:58081
-    .serviceScheme: http
-    name: Liferay Stripe Commerce Payment Integration OAuth Application User Agent
-    scopes:
-        - Liferay.Headless.Admin.Workflow.everything
-        - Liferay.Headless.Commerce.Admin.Order.everything
-    type: oAuthApplicationUserAgent
-```
-
-Another important part of the `client-extension.yaml` is in the `liferay-stripe-commerce-payment-integration-oauth-application-user-agent` definition. The `serviceAddress` parameter defines where the service runs locally, and the `serviceScheme` parameter defines the protocol. The `name` field defines the name of the OAuth application user agent. The `scopes` field defines the access given to the headless API. This section sets up Liferay as the authorization server, so that the payment integration you deploy next can invoke the resource server's secure endpoints and send payloads. See [OAuth User Agent YAML Configuration Reference](https://learn.liferay.com/w/dxp/liferay-development/configuration-as-code/oauth-user-agent-yaml-configuration-reference) for more information.
 
 ## Deploy the Stripe Client Extension
 

@@ -2,6 +2,7 @@
 toc:
   - ./using-client-extensions/using-the-checkout-step-client-extension.md
   - ./using-client-extensions/using-the-payment-integration-client-extension.md
+  - ./using-client-extensions/using-the-stripe-client-extension.md
   - ./using-client-extensions/using-the-shipping-engine-client-extension.md
   - ./using-client-extensions/checkout-step-client-extension-reference.md
   - ./using-client-extensions/payment-integration-client-extension-reference.md
@@ -37,6 +38,10 @@ A client extension interfaces with Liferay's APIs. This loose coupling makes cli
 
 :::{grid-item-card}  Using the Payment Integration Client Extension
 :link: ./using-client-extensions/using-the-payment-integration-client-extension.md
+:::
+
+:::{grid-item-card}  Using the Stripe Client Extension
+:link: ./using-client-extensions/using-the-stripe-client-extension.md
 :::
 
 :::{grid-item-card}  Using the Shipping Engine Client Extension

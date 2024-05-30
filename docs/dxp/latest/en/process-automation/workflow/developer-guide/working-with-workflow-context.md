@@ -29,7 +29,7 @@ There are some important things to be aware of when working with `workflowContex
 - Its second type parameter (the `value` for each attribute) is a `Serializable` because it's stored in the database. This ensures that it's accessible at every step of the workflow.
 
 !!! important
-    As of DXP 2024.Q2/Portal 7.4 GA120, scripting is disabled by default. You can enable it in System Settings &rarr; Script Management (under the Security category).
+    As of DXP 2024.Q3, scripting is disabled by default. You can enable it in System Settings &rarr; Script Management (under the Security category).
 
 To print the workflow context keys and values in any workflow node, you can add a script action like this one:
 ```xml

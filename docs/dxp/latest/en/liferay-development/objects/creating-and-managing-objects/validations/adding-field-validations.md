@@ -60,7 +60,7 @@ To add a validation,
 
    !!! important
        * Groovy script validations are only available for Liferay PaaS and Liferay DXP Self-Hosted.
-       * As of DXP 2024.Q2/Portal 7.4 GA120, scripting is disabled by default. You can enable it in System Settings &rarr; Script Management (under the Security category).
+       * As of DXP 2024.Q3, scripting is disabled by default. You can enable it in System Settings &rarr; Script Management (under the Security category).
 
    To set up composite key validations, go to the *Unique Composite Key* tab and select the fields to use as a composite key. See [Using Composite Key Validations](#using-composite-key-validations) for more information.
 
@@ -87,7 +87,7 @@ While activated, the validation runs for all new object entries and is displayed
 {bdg-primary}`Liferay PaaS and Liferay DXP Self-Hosted`
 
 !!! important
-    As of DXP 2024.Q2/Portal 7.4 GA120, scripting is disabled by default. You can enable it in System Settings &rarr; Script Management (under the Security category).
+    As of DXP 2024.Q3, scripting is disabled by default. You can enable it in System Settings &rarr; Script Management (under the Security category).
 
 Groovy validations support all standard [Groovy Script](https://groovy-lang.org/) capabilities. When defining conditions, you must use the `invalidFields` variable. Liferay only displays the validation error message when `invalidFields` returns `true`.
 

@@ -30,7 +30,7 @@ The workflow designer supports all [workflow node](./workflow-nodes.md) types:
 In addition to the functionality provided by the drag and drop interface, you have the full power of Groovy (a Java-based scripting language) to perform [programmatic actions](./../../developer-guide/using-the-script-engine-in-workflow.md) on assets being moved through your workflows.
 
 !!! important
-    As of DXP 2024.Q2/Portal 7.4 GA120, scripting is disabled by default. You can enable it in System Settings &rarr; Script Management (under the Security category).
+    As of DXP 2024.Q3, scripting is disabled by default. You can enable it in System Settings &rarr; Script Management (under the Security category).
 
 By default, only one workflow definition is installed: the Single Approver Workflow definition. You can see additional examples in the Liferay source code:
 

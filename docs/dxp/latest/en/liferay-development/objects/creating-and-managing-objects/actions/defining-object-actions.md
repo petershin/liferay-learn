@@ -67,7 +67,7 @@ To add an action,
 
    !!! important
        * Groovy script actions are only available for Liferay PaaS and Liferay DXP Self-Hosted.
-       * As of DXP 2024.Q2/Portal 7.4 GA120, scripting is disabled by default. You can enable it in System Settings &rarr; Script Management (under the Security category).
+       * As of DXP 2024.Q3, scripting is disabled by default. You can enable it in System Settings &rarr; Script Management (under the Security category).
 
    See [Understanding Action Types](./understanding-action-types.md#understanding-action-types) for more information.
 

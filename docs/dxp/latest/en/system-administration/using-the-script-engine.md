@@ -25,7 +25,7 @@ In self-hosted or PaaS instances, you can also leverage scripts in multiple appl
 
 ## Enabling Scripting
 
-Beginning in DXP 2024.Q2/Portal 7.4 GA120, scripting is disabled by default in workflow and objects (validations and actions). Administrators won't even see the option for creating or executing scripts in these applications unless permission is granted explicitly by a system-level administrator.
+Beginning in DXP 2024.Q3, scripting is disabled by default in workflow and objects (validations and actions). Administrators won't even see the option for creating or executing scripts in these applications unless permission is granted explicitly by a system-level administrator.
 
 To enable scripting for administrative users of workflow and objects,
 

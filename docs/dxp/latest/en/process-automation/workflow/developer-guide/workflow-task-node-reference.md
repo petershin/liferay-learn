@@ -11,7 +11,7 @@ uuid: e7efd454-e2cb-44e8-949d-8aff5238e78a
 # Workflow Task Node Reference
 
 !!! important
-    As of DXP 2024.Q2/Portal 7.4 GA120, scripting is disabled by default. You can enable it in System Settings &rarr; Script Management (under the Security category).
+    As of DXP 2024.Q3, scripting is disabled by default. You can enable it in System Settings &rarr; Script Management (under the Security category).
 
 Tasks are the part of the workflow where work is done. Tasks must be assigned to users, who review the submitted asset and decide if content from the workflow is acceptable for publication or needs more work.
 

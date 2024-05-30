@@ -41,7 +41,7 @@ To deter distributed denial-of-service (DDoS) attacks and spam submissions, you 
 
 ![After the maximum entries allowed in the configured time period are added, more submissions are not allowed until the set period of time elapses.](./managing-guest-user-entries/images/02.png)
 
-In DXP 2024.Q2+/GA120+, you can also set a time period for the maximum number of allowed guest submissions, so that after the configured duration guest submissions are allowed again. With this you can ensure that you limit the _rate_ of guest entry submissions.
+In DXP 2024.Q3+, you can also set a time period for the maximum number of allowed guest submissions, so that after the configured duration guest submissions are allowed again. With this you can ensure that you limit the _rate_ of guest entry submissions.
 
 **Duration:** Set the time period for which the configured maximum number of guest entries cannot be exceeded.
 

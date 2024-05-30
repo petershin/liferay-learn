@@ -26,9 +26,9 @@ For example, you may need to connect your Liferay Cloud services to directories 
 
 1. Select the connection protocol to use. Here are the supported protocols:
 
-    * [OpenVPN](https://openvpn.net)
+    - [OpenVPN](https://openvpn.net)
 
-    * [IPSec](https://www.cloudflare.com/learning/network-layer/what-is-ipsec/)
+    - [IPSec](https://www.cloudflare.com/learning/network-layer/what-is-ipsec/)
 
     ![Select the protocol to use to connect to a VPN.](./connecting-a-vpn-server-to-liferay-cloud/images/02.png)
 
@@ -36,23 +36,23 @@ For example, you may need to connect your Liferay Cloud services to directories 
 
 1. Fill in the VPN's required fields:
 
-    * **Server**: The server's IP address.
+    - **Server**: The server's IP address.
 
-    * **Port**: The VPN's local port number.
+    - **Port**: The VPN's local port number.
 
-    * **Communication Protocol**: UDP or TCP protocol for the connection.
+    - **Communication Protocol**: UDP or TCP protocol for the connection.
 
-    * **Compression Mode** (OpenVPN only): The compression algorithm to use for transmitted data (if any).
+    - **Compression Mode** (OpenVPN only): The compression algorithm to use for transmitted data (if any).
 
-    * **Authentication Method** (IPSec only): Choose EAP-MSCHAPv2, EAP-TLS, or a pre-shared key for authentication.
+    - **Authentication Method** (IPSec only): Choose EAP-MSCHAPv2, EAP-TLS, or a pre-shared key for authentication.
 
-    * **Account Name**: The administrator's email address.
+    - **Account Name**: The administrator's email address.
 
-    * **Password**: The administrator's password.
+    - **Password**: The administrator's password.
 
-    * **IKE Version**: The VPN's Internet Key Exchange version. This field only appears when _IPSec_ is selected as the protocol. Only _IKEv2_ is supported.
+    - **IKE Version**: The VPN's Internet Key Exchange version. This field only appears when *IPSec* is selected as the protocol. Only *IKEv2* is supported.
 
-    * **CA Certificate**: The certificate code.
+    - **CA Certificate**: The certificate code.
 
 1. If you're using OpenVPN and your VPN requires a valid client certificate, add a TLS certificate and key.
 
@@ -64,11 +64,11 @@ For example, you may need to connect your Liferay Cloud services to directories 
 
 1. Enter one or more port forwarding routes for your VPN connection. Fill in the required fields for each route:
 
-    * **Forwarded Port**: The port number within the Liferay Cloud environment to forward.
+    - **Forwarded Port**: The port number within the Liferay Cloud environment to forward.
 
-    * **Destination IP**: The IP address of the customer network interfacing with the VPN.
+    - **Destination IP**: The IP address of the customer network interfacing with the VPN.
 
-    * **Destination Port**: The port of the customer network interfacing with the VPN.
+    - **Destination Port**: The port of the customer network interfacing with the VPN.
 
     ![Add one or more port forwarding routes before creating the VPN connection.](./connecting-a-vpn-server-to-liferay-cloud/images/04.png)
 
@@ -94,11 +94,11 @@ Navigate to your environment's *Settings* page and then click on the configured 
 
 ### Connecting and Disconnecting the VPN
 
-The VPN details page indicates whether or not the VPN is already connected in the top-right corner. If the VPN is not connected, then click the _Connect_ button to establish the connection.
+The VPN details page indicates whether or not the VPN is already connected in the top-right corner. If the VPN is not connected, then click the *Connect* button to establish the connection.
 
 ![The top-right corner of the details page displays the connection status and gives the Connect or Disconnect options.](./connecting-a-vpn-server-to-liferay-cloud/images/07.png)
 
-The VPN attempts to connect after clicking the button. If the connection fails, then the failed attempt displays in the _Related Activities_ section of the details page.
+The VPN attempts to connect after clicking the button. If the connection fails, then the failed attempt displays in the *Related Activities* section of the details page.
 
 !!! tip
     You can test the connectivity of your services to an IP address manually through your VPN by using the service's [shell](../support-and-troubleshooting/troubleshooting/shell-access.md) to run a command like the following: `curl -v [address]`.
@@ -107,20 +107,20 @@ While the connection is being established, the message "VPN connection attempt i
 
 ![Click the Cancel button on the message pop-up if you need to stop a connection before it is established.](./connecting-a-vpn-server-to-liferay-cloud/images/08.png)
 
-To disconnect the VPN any time after the connection is established, click _Disconnect_ from the top-right Actions menu. This takes you to the _Disconnect VPN_ page.
+To disconnect the VPN any time after the connection is established, click *Disconnect* from the top-right Actions menu. This takes you to the *Disconnect VPN* page.
 
 !!! warning
     Disconnecting the VPN will interrupt communications with any external services with Liferay Cloud.
 
 ![The Disconnect VPN page asks you to confirm the impact of disconnecting before proceeding.](./connecting-a-vpn-server-to-liferay-cloud/images/09.png)
 
-Check the boxes confirming the impact of disconnecting the VPN, and then click _Disconnect VPN_ to immediately disconnect it. Once the VPN is disconnected, the configuration can be changed again.
+Check the boxes confirming the impact of disconnecting the VPN, and then click *Disconnect VPN* to immediately disconnect it. Once the VPN is disconnected, the configuration can be changed again.
 
 ### Editing the Configuration
 
 You can change any details of the VPN configuration (including forwarding ports) after it has been created **as long as the VPN is not currently connected**. If the VPN is connected, then [disconnect it](#connecting-and-disconnecting-the-vpn) before editing the configuration.
 
-To edit the configuration, go to the environment's details page, and then _Edit..._ from the top-right Actions menu. This displays the same screen as creating the VPN configuration for the first time.
+To edit the configuration, go to the environment's details page, and then *Edit...* from the top-right Actions menu. This displays the same screen as creating the VPN configuration for the first time.
 
 ![Click the Edit button from the Actions menu when the VPN is not connected to change the configuration.](./connecting-a-vpn-server-to-liferay-cloud/images/10.png)
 
@@ -140,6 +140,6 @@ The VPN is deleted and can no longer be used for your environment. Add a new VPN
 
 ## Related Topics
 
-* [VPN Integration Overview](./vpn-integration-overview.md)
-* [Configuring a VPN Server](./configuring-a-vpn-server.md)
-* [Shell Access](../support-and-troubleshooting/troubleshooting/shell-access.md)
+- [VPN Integration Overview](./vpn-integration-overview.md)
+- [Configuring a VPN Server](./configuring-a-vpn-server.md)
+- [Shell Access](../support-and-troubleshooting/troubleshooting/shell-access.md)

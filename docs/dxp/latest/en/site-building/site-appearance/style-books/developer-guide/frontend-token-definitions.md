@@ -147,7 +147,6 @@ Here's an example list of frontend tokens within a frontend token set:
 
 ## Matching CSS Variables to Style Book Tokens
 
-<!-- theme statement, change-->
 Every frontend token defined in your frontend token definition must represent a style (color, spacing, font, etc.) in the CSS of your theme css client extension or theme.
 
 All styles that your frontend tokens represent must be coded as CSS variables. For example, take this definition of a frontend token (giving an option to configure a font):

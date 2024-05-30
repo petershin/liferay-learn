@@ -146,7 +146,17 @@ STARTED liferay-sample-theme-css-1_1.0.0
 
 ## Override the Themes on a Page
 
-Configure a page to use your new theme CSS: 
+You can apply the theme CSS client extension to all pages at once. In fact, to provide a frontend token definition using a theme CSS client extension, you must apply the client extension this way:
+
+1. Open *Site Menu* ([Site Menu](../../images/icon-product-menu.png)), expand *Site Builder*, and click _Pages_.
+
+1. Click *Options* ([Options](../../images/icon-options.png)) &rarr; *Configuration*.
+
+1. Scroll down to *Theme CSS Client Extension* and apply it to all pages.
+
+   ![Apply the Theme CSS client extension to all pages at once.](./using-a-theme-css-client-extension/images/03.png)
+
+To configure a single page to use your theme CSS: 
 
 1. On a page, click _Edit_ (![Edit icon](../../images/icon-edit-pencil.png)) at the top.
 

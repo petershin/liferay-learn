@@ -12,12 +12,11 @@ uuid: 28fd229f-2eb5-4c12-bc0b-cc33b2a0e859
 
 {bdg-secondary}`Liferay DXP/Portal 7.3+`
 
-<!-- Since you can now do this in a theme css cx (2024Q2/GA120+), we should rework this to be less theme-centered -->
 The visual rules of style books consist of options grouped into categories. For example, in the Buttons category there can be an option called Background Color.
 
 ![The token definition defines the options end users can configure when styling site pages.](./frontend-token-definitions/images/03.png)
 
-Each option is defined with a token. The collection of all tokens defined for a theme is a _frontend token definition_. The frontend token definition is a JSON file, provided by the theme CSS client extension (in a workspace or through the UI), or via the theme in earlier releases.
+Each option in the style book is defined with a token. The collection of all tokens defined for a theme is a _frontend token definition_. The frontend token definition is a JSON file provided by the theme CSS client extension, or via the theme in earlier releases.
 
 !!! note
     Beginning with Liferay DXP 7.4 Q2/Portal 7.4 GA120, you can provide the frontend token definition in a [theme CSS client extension](../../../../liferay-development/customizing-liferays-look-and-feel/using-a-theme-css-client-extension.md). Earlier releases required a theme module.
@@ -32,7 +31,6 @@ Each option is defined with a token. The collection of all tokens defined for a 
 
 When you apply the theme CSS client extension or assign a theme to your site's pages, the included frontend token definition is used when creating a [style book](../using-a-style-book-to-standardize-site-appearance.md) for the site.
 
-<!-- Maybe keep this section as is for theme info, but make a new one for theme CSS client extensions? -->
 ## Defining Tokens for Your Style Book
 
 Each frontend token must correspond to a CSS variable in the theme CSS client extension or theme module. Specify the frontend tokens in a `frontend-token-definition.json` file:

@@ -38,31 +38,39 @@ All the necessary tools and a JS client extension are included in the sample wor
 
 ## Examine the Client Extension
 
-The JS client extension is in the workspace's `client-extensions/liferay-sample-global-js/` folder. It's defined in the `client-extension.yaml` file:
+The JS client extension is in the workspace's `client-extensions/liferay-sample-global-js-2/` folder. It's defined in the `client-extension.yaml` file:
 
 ```yaml
-liferay-sample-global-js:
-    name: Liferay Sample Global JS
+liferay-sample-global-js-2:
+    name: Liferay Sample Global JS 2
+    scriptElementAttributes:
+        async: true
+        data-attribute: "value"
+        data-senna-track: "permanent"
+        fetchpriority: "low"
     type: globalJS
-    url: global.js
+    url: global.*.js
 ```
 
-The client extension has the ID `liferay-sample-global-js` and contains the key configurations for a JS client extension, including the `type` and the JavaScript file to add. See the [JavaScript YAML configuration reference](./using-a-javascript-client-extension/javascript-yaml-configuration-reference.md) for more information on the properties.
+The client extension has the ID `liferay-sample-global-js-2` and contains the key configurations for a JS client extension, including the script element attributes, the `type`, and the JavaScript file to add. See the [JavaScript YAML configuration reference](./using-a-javascript-client-extension/javascript-yaml-configuration-reference.md) for more information on the properties.
 
-It also contains the `assemble` block:
+!!! note
+    The `scriptElementAttributes` configuration was added in Liferay DXP 2024.Q2/Portal 7.4 GA120.
+
+The YAML file also contains the `assemble` block:
 
 ```yaml
 assemble:
-    - from: assets
+    - from: build/static
       into: static
 ```
 
-This specifies that everything in the `assets/` folder should be included as a static resource in the built client extension `.zip` file. The JavaScript code in a JS client extension is used as a static resource in Liferay.
+This specifies that everything in the `build/static` folder should be included as a static resource in the built client extension `.zip` file. The JavaScript code in a JS client extension is used as a static resource in Liferay.
 
 The `assets/global.js` file contains this line of code:
 
 ```js
-window.alert('Sample Global JS deployed.');
+window.alert('Sample Global JS 2 deployed.');
 ```
 
 An alert box appears with the message when you open the page. Run additional JavaScript by adding to this file.
@@ -91,7 +99,7 @@ To deploy all client extensions in the workspace simultaneously, run the command
 Confirm the deployment in your Liferay instance's console:
 
 ```
-STARTED sample-global-js_1.0.0
+STARTED sample-global-js-2_1.0.0
 ```
 
 Once your client extension is deployed successfully, configure Liferay to use it. 

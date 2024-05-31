@@ -94,7 +94,7 @@ Navigate to your environment's *Settings* page and then click on the configured 
 
 ### Connecting and Disconnecting the VPN
 
-The VPN details page indicates whether or not the VPN is already connected in the top-right corner. If the VPN is not connected, then click the *Connect* button to establish the connection.
+The VPN details page indicates if the VPN is already connected in the top-right corner. If the VPN is not connected, then click the *Connect* button to establish the connection.
 
 ![The top-right corner of the details page displays the connection status and gives the Connect or Disconnect options.](./connecting-a-vpn-server-to-liferay-cloud/images/07.png)
 
@@ -103,14 +103,14 @@ The VPN attempts to connect after clicking the button. If the connection fails, 
 !!! tip
     You can test the connectivity of your services to an IP address manually through your VPN by using the service's [shell](../support-and-troubleshooting/troubleshooting/shell-access.md) to run a command like the following: `curl -v [address]`.
 
-While the connection is being established, the message "VPN connection attempt initiated" appears, and you cannot perform other management operations for your VPN until it completes. If you need to cancel the connection (for example, because an error is causing the connection to hang), then click "Cancel" on the pop-up.
+While the connection is being established, the message "VPN connection attempt initiated" appears, and you cannot perform other management operations for your VPN until it completes. If you must cancel the connection (for example, because an error is causing the connection to hang), then click "Cancel" on the pop-up.
 
-![Click the Cancel button on the message pop-up if you need to stop a connection before it is established.](./connecting-a-vpn-server-to-liferay-cloud/images/08.png)
+![Click the Cancel button on the message pop-up if you must stop a connection before it is established.](./connecting-a-vpn-server-to-liferay-cloud/images/08.png)
 
 To disconnect the VPN any time after the connection is established, click *Disconnect* from the top-right Actions menu. This takes you to the *Disconnect VPN* page.
 
 !!! warning
-    Disconnecting the VPN will interrupt communications with any external services with Liferay Cloud.
+    Disconnecting the VPN interrupts communications with any external services with Liferay Cloud.
 
 ![The Disconnect VPN page asks you to confirm the impact of disconnecting before proceeding.](./connecting-a-vpn-server-to-liferay-cloud/images/09.png)
 

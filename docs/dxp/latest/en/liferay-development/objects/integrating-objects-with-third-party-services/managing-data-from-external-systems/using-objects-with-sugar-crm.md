@@ -7,11 +7,12 @@ taxonomy-category-names:
 - Liferay PaaS
 - Liferay SaaS
 ---
+
 # Using Objects with SugarCRM
 
 {bdg-link-primary}`[Beta Feature](../../../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
 
-You can create objects that map to [SugarCRM](https://support.sugarcrm.com) objects (e.g., [Leads](https://support.sugarcrm.com/knowledge_base/accounts_contacts_leads/)), using SugarCRM as an external storage system. Once integrated, the Liferay object's data is only stored in SugarCRM. Both systems are automatically updated whenever users add, update, or delete entries in either context.
+You can create objects that map to [SugarCRM](https://support.sugarcrm.com) objects (for example, [Leads](https://support.sugarcrm.com/knowledge_base/accounts_contacts_leads/)), using SugarCRM as an external storage system. Once integrated, the Liferay object's data is stored only in SugarCRM. Both systems are updated automatically whenever users add, update, or delete entries in either context.
 
 !!! note
     To use this feature, enable the Proxy Object (LPS-135430) [feature flag](../../../../system-administration/configuring-liferay/feature-flags.md).
@@ -22,7 +23,7 @@ In SugarCRM , you must generate an [OAuth key](https://support.sugarcrm.com/docu
 
 ### Gathering Information to Connect SugarCRM with Liferay
 
-Gather the information Liferay needs to retrieve an access token and connect to your SugarCRM instance using an OAuth password grant:
+Gather the information Liferay requires to retrieve an access token and connect to your SugarCRM instance using an OAuth password grant:
 
 * The URL to your instance's [root API endpoint](https://support.sugarcrm.com/documentation/sugar_developer/sugar_developer_guide_14.0/integration/web_services/rest_api/#How_to_Access_the_REST_Service)
 * The URL to the endpoint for retrieving the [OAuth token](https://support.sugarcrm.com/documentation/sugar_developer/sugar_developer_guide_14.0/integration/web_services/rest_api/#Authentication)
@@ -35,15 +36,13 @@ After establishing the connection, gather some information about the SugarCRM ob
 
 Before creating your Liferay object, ensure the SugarCRM object includes all desired fields. Define any missing fields before linking with Liferay object fields.
 
-In addition, use the SugarCRM API to inspect the object and its fields. You must obtain the following information in order to map your Liferay object to your SugarCRM object:
+In addition, use the SugarCRM API to inspect the object and its fields. You must obtain the following information to map your Liferay object to your SugarCRM object:
 
 * An [OAuth token](https://support.sugarcrm.com/documentation/sugar_developer/sugar_developer_guide_14.0/integration/web_services/rest_api/#Authentication) to make authenticated requests to the REST API
-* The [GET endpoint of the object](https://support.sugarcrm.com/documentation/sugar_developer/sugar_developer_guide_14.0/integration/web_services/rest_api/endpoints/module_get/#Overview) (known as a module in SugarCRM), to use as the object definition ERC in Liferay
+* The [GET endpoint of the object](https://support.sugarcrm.com/documentation/sugar_developer/sugar_developer_guide_14.0/integration/web_services/rest_api/endpoints/module_get/#Overview) (known as a module in SugarCRM), to use as the object definition External Reference Code (ERC) in Liferay
 * Each field's name as returned by the object's GET API endpoint, to use as the ERC in the Liferay object's corresponding fields
 
 ## Configuring Your Liferay Instance
-
-Connect your Liferay instance to SugarCRM:
 
 1. Open the *Global Menu* (![Global Menu](../../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Instance Settings*.
 
@@ -59,9 +58,9 @@ Connect your Liferay instance to SugarCRM:
 
    **Grant Type:** `password`
 
-   **Password:** The password of a user that can authenticate to SugarCRM
+   **Password:** The password of a user with the proper permissions that can authenticate to SugarCRM
 
-   **User Name:** The user name of a user that can authenticate to SugarCRM
+   **User Name:** The user name of a user with the proper permissions that can authenticate to SugarCRM
 
    ![Enter your SugarCRM details.](./using-objects-with-sugar-crm/images/01.png)
 
@@ -84,7 +83,7 @@ You must ensure each Liferay object field's ERC matches the field name returned 
 
 ```json
 {
-   "name": "Lord Voldermort",
+   "name": "Lord Voldemort",
    "first_name": "Tom",
    "last_name": "Riddle",
    "title": "Lord"
@@ -93,7 +92,7 @@ You must ensure each Liferay object field's ERC matches the field name returned 
 
 ![Use the SugarCRM field name for the external reference code.](./using-objects-with-sugar-crm/images/03.png)
 
-Once published, the Liferay object's data is only stored in SugarCRM. Both systems are automatically updated whenever users add, update, or delete entries on either side of the relationship.
+Once published, the Liferay object's data is only stored in SugarCRM. Both systems are updated automatically whenever users add, update, or delete entries on either side of the relationship.
 
 ## Related Topics
 

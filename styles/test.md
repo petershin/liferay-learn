@@ -34,4 +34,4 @@ A majority of studies are too wordy.
 
 This is accounted for by the fact that some think a high word count looks smarter.
 
-I answer in the negative. 
+I answer in the negative.

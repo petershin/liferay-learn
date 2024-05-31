@@ -1,5 +1,3 @@
-# Just, Simply, Very
-# Extra words. Do not use them in Liferay documentation.
 extends: existence
 ignorecase: true
 level: error

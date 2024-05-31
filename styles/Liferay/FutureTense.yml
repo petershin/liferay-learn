@@ -1,8 +1,4 @@
 ---
-#  Future Tense
-#
-# Don't use future tense if you can help it. Present tense is preferred as
-# much as possible.
 extends: existence
 ignorecase: true
 level: warning

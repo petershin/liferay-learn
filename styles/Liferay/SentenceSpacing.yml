@@ -1,9 +1,7 @@
 ---
-# Sentence Spacing
 #
-# Checks for double spaces after sentences.
+# https://gitlab.com/gitlab-org/gitlab/-/tree/master/doc/.vale/gitlab
 #
-# Based on Vale rule from GitLab: https://gitlab.com/gitlab-org/gitlab/-/tree/master/doc/.vale/gitlab
 extends: existence
 level: warning
 message: '"%s" must contain one and only one space.'

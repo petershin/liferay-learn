@@ -1,8 +1,4 @@
 ---
-# Must
-#
-# Don't use "need to" or "needs to" in sentences. "Must" is preferred as
-# much as possible.
 extends: existence
 ignorecase: true
 level: warning
@@ -13,4 +9,3 @@ raw:
     - "have to( |\n|[[:punct:]])[a-zA-Z]*|"
     - "need to( |\n|[[:punct:]])[a-zA-Z]*|"
     - "needs to( |\n|[[:punct:]])[a-zA-Z]*)"
-

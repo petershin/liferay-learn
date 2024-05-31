@@ -1,7 +1,4 @@
 ---
-# Wordy Phrases
-# Strunk & White Rule 13: Omit Needless Words. 
-
 action: 
     name: replace
 extends: substitution

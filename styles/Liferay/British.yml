@@ -1,5 +1,4 @@
 ---
-# Use American spelling instead of British
 action: 
     name: replace
 extends: substitution

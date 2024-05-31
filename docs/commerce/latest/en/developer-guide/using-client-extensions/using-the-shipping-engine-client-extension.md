@@ -79,12 +79,28 @@ Another important part of the `client-extension.yaml` is in the `liferay-sample-
 
 ## Deploy the Shipping Engine Client Extension
 
-1. Go to the sample workspace's `client-extensions/liferay-sample-commerce-shipping-engine` folder.
+1. Go to the sample workspace.
 
 1. Run
 
    ```bash
-   ../../gradlew clean createClientExtensionConfig deploy -Ddeploy.docker.container.id=$(docker ps -lq)
+   ./gradlew initBundle
+   ```
+
+   This downloads a bundle inside the workspace's `/bundles` folder.
+
+1. Go to the `/bundles/tomcat/bin` folder. Run
+
+   ```bash
+   ./catalina run
+   ```
+
+1. Go back to the sample workspace's `/client-extensions/liferay-sample-commerce-shipping-engine` folder.
+
+1. Run
+
+   ```bash
+   ../../gradlew clean createClientExtensionConfig deploy
    ```
 
 1. In Liferay's log, confirm that the client extension deployed and started:

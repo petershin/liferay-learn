@@ -16,7 +16,7 @@ visibility:
 * LiferayのAnalytics機能により、管理者やマーケティング担当者はLiferayサイトのパフォーマンスを把握し、改善を行うことができます。
 
 ```{note}
-* 本モジュールのライブワークショップの [録画](https://learn.liferay.com/documents/d/guest/se1-4-experience-management) をご覧ください。
+* 本モジュールのライブワークショップの [録画](https://learn.liferay.com/web/guest/d/se1-4-experience-management) をご覧ください。
 * 上記ワークショップで使用されたプレゼンテーション資料はこちら [PDF](https://learn.liferay.com/documents/d/guest/se1-4-experience-management-pdf) からダウンロードしてください。
 ```
 

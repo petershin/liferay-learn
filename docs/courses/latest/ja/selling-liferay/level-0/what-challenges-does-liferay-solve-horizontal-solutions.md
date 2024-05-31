@@ -32,7 +32,7 @@ visibility:
 しかし、特に相性の良いソリューションや業界もあり、成功の可能性を最も高めるために、そうしたソリューションや業界に合致する新規事業案件に焦点を当てたいと考えています。
 
 ```{note}
-* 本モジュールのライブワークショップの [録画](https://learn.liferay.com/documents/d/guest/l0-5a-what-challenges-do-we-solve-overview) をご覧ください。
+* 本モジュールのライブワークショップの [録画](https://learn.liferay.com/web/guest/d/l0-5a-what-challenges-do-we-solve-overview) をご覧ください。
 * 上記ワークショップで使用されたプレゼンテーション資料はこちら [PDF](https://learn.liferay.com/ja/c/portal/login) からダウンロードしてください。
 ```
 

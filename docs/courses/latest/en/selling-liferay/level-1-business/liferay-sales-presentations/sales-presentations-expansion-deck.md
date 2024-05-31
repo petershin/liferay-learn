@@ -14,7 +14,7 @@ visibility:
 * Additional Industry and Horizontal Solutions decks are coming soon
 
 ```{note}
-* View the [recording](https://learn.liferay.com/documents/d/guest/sa1-4-liferay-sales-presentations-and-how-to-master-them) from the live workshop of this module.
+* View the [recording](https://learn.liferay.com/web/guest/d/sa1-4-liferay-sales-presentations-and-how-to-master-them) from the live workshop of this module.
 * Download the [PDF](https://learn.liferay.com/documents/d/guest/sa1-4-liferay-sales-presentations-and-how-to-master-them-pdf) of the presentation used in the live workshop.
 ```
 

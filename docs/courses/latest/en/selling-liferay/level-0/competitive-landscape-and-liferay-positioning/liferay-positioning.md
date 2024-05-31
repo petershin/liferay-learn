@@ -24,7 +24,7 @@ Liferay wins when competing on the fundamental differences and respective advant
 As an example, if a vendor sends out a feature-driven RFP to ten vendors, all will provide a response that indicates that all required features are provided. The real question is how does the platform solve their business problem?
 
 ```{note}
-* View the [recording](https://learn.liferay.com/documents/d/guest/l0-6-competitive-landscape-and-liferay-positioning) from the live workshop of this module.
+* View the [recording](https://learn.liferay.com/web/guest/d/l0-6-competitive-landscape-and-liferay-positioning) from the live workshop of this module.
 * Download the [PDF](https://learn.liferay.com/documents/d/guest/l0-6-competitive-landscape-and-liferay-positioning-pdf) of the presentation used in the live workshop.
 ```
 

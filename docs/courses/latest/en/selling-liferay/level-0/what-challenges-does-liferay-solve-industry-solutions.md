@@ -33,7 +33,7 @@ Here, you'll learn about how Liferay can solve common challenges in key industri
 While these are the most common industries, one of the strengths of Liferay is that it can---and has been---used in almost every industry.
 
 ```{note}
-* View the [recording](https://learn.liferay.com/documents/d/guest/l0-5b-what-challenges-do-we-solve-industry-solutions) from the live workshop of this module.
+* View the [recording](https://learn.liferay.com/web/guest/d/l0-5b-what-challenges-do-we-solve-industry-solutions) from the live workshop of this module.
 * Download the [PDF](https://learn.liferay.com/documents/d/guest/l0-5b-what-challenges-do-we-solve-industry-solutions-pdf) of the presentation used in the live workshop.
 ```
 

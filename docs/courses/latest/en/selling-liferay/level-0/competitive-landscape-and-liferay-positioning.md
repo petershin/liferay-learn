@@ -28,7 +28,7 @@ This module focuses on the competitive landscape Liferay is in, and provides det
 After completing this module, you will have a basic understanding of the competitive mix, and understand how to position Liferay to have the best chance of winning.
 
 ```{note}
-* View the [recording](https://learn.liferay.com/documents/d/guest/l0-6-competitive-landscape-and-liferay-positioning) from the live workshop of this module.
+* View the [recording](https://learn.liferay.com/web/guest/d/l0-6-competitive-landscape-and-liferay-positioning) from the live workshop of this module.
 * Download the [PDF](https://learn.liferay.com/documents/d/guest/l0-6-competitive-landscape-and-liferay-positioning-pdf) of the presentation used in the live workshop.
 ```
 

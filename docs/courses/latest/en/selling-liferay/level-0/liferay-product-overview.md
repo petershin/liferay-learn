@@ -30,7 +30,7 @@ It's important to note that, while the product is called "Liferay DXP", the feat
 By the end of this module you will have a high level view of all of the main capabilities areas of Liferay DXP. Don't know where to start? Start by reviewing Liferay DXP's [Content Management System (CMS)](./liferay-product-overview/content-management-system.md) capabilities.
 
 ```{note}
-* View the [recording](https://learn.liferay.com/documents/d/guest/l0-2b-liferay-overview) from the live workshop of this module.
+* View the [recording](https://learn.liferay.com/web/guest/d/l0-2b-liferay-overview) from the live workshop of this module.
 * Download the [PDF](https://learn.liferay.com/documents/d/guest/l0-2b-liferay-overview-pdf) of the presentation used in the live workshop.
 ```
 

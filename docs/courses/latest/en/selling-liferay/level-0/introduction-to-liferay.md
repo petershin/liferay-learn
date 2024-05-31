@@ -31,7 +31,7 @@ This module provides an introduction to Liferay:
 1. Key target solutions and example customers
 
 ```{note}
-* View the [recording](https://learn.liferay.com/documents/d/guest/l0-1-introduction-to-liferay) from the live workshop of this module.
+* View the [recording](https://learn.liferay.com/web/guest/d/l0-1-introduction-to-liferay) from the live workshop of this module.
 * Download the [PDF](https://learn.liferay.com/documents/d/guest/l0-1-introduction-to-liferay-pdf) of the presentation used in the live workshop.
 ```
 

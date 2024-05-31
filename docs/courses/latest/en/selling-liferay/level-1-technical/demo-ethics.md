@@ -34,7 +34,7 @@ It also covers what should _not_ be included, presented, or covered during a dem
 Each section is presented with a series of possible answers to the main question. It should not be difficult to select the right answer, but the wrong answers should also help Sales Engineers to work more effectively to ensure that demos are valuable to the prospect.
 
 ```{note}
-* View the [recording](https://learn.liferay.com/documents/d/guest/se1-10-demo-ethics) from the live workshop of this module.
+* View the [recording](https://learn.liferay.com/web/guest/d/se1-10-demo-ethics) from the live workshop of this module.
 * Download the [PDF](https://learn.liferay.com/documents/d/guest/se1-10-demo-ethics-pdf) of the presentation used in the live workshop.
 ```
 

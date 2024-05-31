@@ -36,7 +36,7 @@ Reviewing the previous modules in this learning path - the series started with w
 This module provides a guide to using the success stories as an existing resource to supplement that demo, rather than being about presenting the demo itself.
 
 ```{note}
-* View the [recording](https://learn.liferay.com/documents/d/guest/se1-9-success-stories-analysis) from the live workshop of this module.
+* View the [recording](https://learn.liferay.com/web/guest/d/se1-9-success-stories-analysis) from the live workshop of this module.
 * Download the [PDF](https://learn.liferay.com/documents/d/guest/se1-9-success-stories-analysis-pdf) of the presentation used in the live workshop.
 ```
 

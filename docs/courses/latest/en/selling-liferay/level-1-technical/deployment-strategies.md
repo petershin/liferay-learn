@@ -27,7 +27,7 @@ This module covers all of the deployment strategies as well as their characteris
 Though deployment strategies may not seem relevant to demoing Liferay, this topic often arises when learning more about the prospect and their needs.
 
 ```{note}
-* View the [recording](https://learn.liferay.com/documents/d/guest/se1-8-deployment-strategies) from the live workshop of this module.
+* View the [recording](https://learn.liferay.com/web/guest/d/se1-8-deployment-strategies) from the live workshop of this module.
 * Download the [PDF](https://learn.liferay.com/documents/d/guest/se1-8-deployment-strategies-pdf) of the presentation used in the live workshop.
 ```
 

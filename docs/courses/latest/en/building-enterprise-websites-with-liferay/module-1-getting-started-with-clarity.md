@@ -10,7 +10,7 @@ uuid: 5492f728-7111-4005-9f35-1397f6bbfd41
 !!! important "Webinar Note"
     This module was presented using slides for a live webinar audience. The formatting, presentation, and examples may differ from what is presented here as part of the course.
 
-    * View the [recording](https://learn.liferay.com/documents/d/guest/lp1-1-getting-started) from the live webinar of this module.
+    * View the [recording](https://learn.liferay.com/web/guest/d/lp1-1-getting-started) from the live webinar of this module.
     * Download the [PDF](https://learn.liferay.com/documents/d/guest/lp1-1-getting-started-pdf) of the presentation used in the live workshop.
 
 ![Clarity Vision Solutions is a fictional B2B manufacturer of eyewear products.](./module-1-getting-started-with-clarity/images/01.png)

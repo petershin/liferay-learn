@@ -21,7 +21,7 @@ visibility:
   * サイズ
 
 ```{note}
-* 本モジュールのライブワークショップの [録画](https://learn.liferay.com/documents/d/guest/se1-1-discovery-call) をご覧ください。
+* 本モジュールのライブワークショップの [録画](https://learn.liferay.com/web/guest/d/se1-1-discovery-call) をご覧ください。
 * 上記ワークショップで使用されたプレゼンテーション資料はこちら [PDF](https://learn.liferay.com/documents/d/guest/se1-1-discovery-call-pdf) からダウンロードしてください。
 ```
 

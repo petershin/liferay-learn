@@ -12,7 +12,7 @@ uuid: 57aef6ee-03e9-4056-abf1-ebdbdb4984e4
 !!! important "Webinar Note"
     This module was presented using slides for a live webinar audience. The formatting, presentation, and examples may differ from what is presented here as part of the course.
 
-    * View the [recording](https://learn.liferay.com/documents/d/guest/lp1-4-identity-management-sso) from the live webinar of this module.
+    * View the [recording](https://learn.liferay.com/web/guest/d/lp1-4-identity-management-sso) from the live webinar of this module.
     * Download the [PDF](https://learn.liferay.com/documents/d/guest/lp1-4-identity-management-sso-pdf) of the presentation used in the live workshop.
 
 Before we can get started with building Clarity’s website, we’ll first need to get logged in and ensure that other content contributors can also get logged in. *Identity Management* (IdM), plays an important role in any enterprise software project, even when building an enterprise website such as Clarity. This may seem counterintuitive, because the main audience of the site will initially be anonymous users browsing public pages. However, there is still a team of Clarity employees that need to log in to the system to create and maintain the content. Additionally, Clarity has some B2B partners with existing user accounts from their previous platform and aims to enable new distributors to create accounts for a more personalized experience.

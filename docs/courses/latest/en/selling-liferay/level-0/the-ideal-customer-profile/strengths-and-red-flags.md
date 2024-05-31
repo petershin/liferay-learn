@@ -24,7 +24,7 @@ To help to summarize this module, there are many needs, buyers, and situations t
 * Portal and Commerce alignment?
 
 ```{note}
-* View the [recording](https://learn.liferay.com/documents/d/guest/l0-3-ideal-customer-profile) from the live workshop of this module.
+* View the [recording](https://learn.liferay.com/web/guest/d/l0-3-ideal-customer-profile) from the live workshop of this module.
 * Download the [PDF](https://learn.liferay.com/documents/d/guest/l0-3-ideal-customer-profile-pdf) of the presentation used in the live workshop.
 ```
 

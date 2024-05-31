@@ -35,7 +35,7 @@ With each horizontal solution appears a key success story to show how different 
 When finished, you'll have discovered several examples of Liferay platform-delivered solutions to inspire endless possibilities with a prospect. You can help paint a picture for the buyer not only of what they need now, but also for the future.
 
 ```{note}
-* View the [recording](https://learn.liferay.com/documents/d/guest/sa1-1-liferay-tailored-solution-highlights) from the live workshop of this module.
+* View the [recording](https://learn.liferay.com/web/guest/d/sa1-1-liferay-tailored-solution-highlights) from the live workshop of this module.
 * Download the [PDF](https://learn.liferay.com/documents/d/guest/sa1-1-liferay-tailored-solution-highlights-pdf) of the presentation used in the live workshop.
 ```
 

@@ -12,7 +12,7 @@ uuid: 9311d48e-997b-4e20-ad75-2a08b9a82e3f
 !!! important "Webinar Note"
     This module was presented using slides for a live webinar audience. The formatting, presentation, and examples may differ from what is presented here as part of the course.
 
-    * View the [recording](https://learn.liferay.com/documents/d/guest/lp1-10-building-applications) from the live webinar of this module.
+    * View the [recording](https://learn.liferay.com/web/guest/d/lp1-10-building-applications) from the live webinar of this module.
     * Download the [PDF](https://learn.liferay.com/documents/d/guest/lp1-10-building-applications-pdf) of the presentation used in the live workshop.
 
 So far, you've learned about using Liferay's out-of-the-box features to build enterprise websites. While these features cover many use cases, unique business needs may require custom applications. Fortunately, Liferay provides extensive tools for building custom applications that seamlessly integrate with Liferay's core frameworks. Using low-code capabilities and client extensions, you can enhance the Liferay platform and streamline critical business processes without modifying its core.

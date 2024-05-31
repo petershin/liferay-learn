@@ -9,7 +9,7 @@ uuid: 1564af7e-387f-4946-b382-fe824655f077
 !!! important "Webinar Note"
     This module was presented using slides for a live webinar audience. The formatting, presentation, and examples may differ from what is presented here as part of the course.
 
-    * View the [recording](https://learn.liferay.com/documents/d/guest/lp1-2-developer-setup) from the live webinar of this module.
+    * View the [recording](https://learn.liferay.com/web/guest/d/lp1-2-developer-setup) from the live webinar of this module.
     * Download the [PDF](https://learn.liferay.com/documents/d/guest/lp1-2-developer-setup-pdf) of the presentation used in the live workshop.
 
 <!--TODO: This introduction will probably need to be updated to transition more smoothly from the last section of Module 1, "Building Clarity on Liferay"-->

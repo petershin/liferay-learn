@@ -15,7 +15,7 @@ visibility:
 * There are multiple tools and steps at each sales process stage
 
 ```{note}
-* View the [recording](https://learn.liferay.com/documents/d/guest/sa1-5-sales-funnel-and-best-practices-for-opportunity-progress) from the live workshop of this module.
+* View the [recording](https://learn.liferay.com/web/guest/d/sa1-5-sales-funnel-and-best-practices-for-opportunity-progress) from the live workshop of this module.
 * Download the [PDF](https://learn.liferay.com/documents/d/guest/sa1-5-sales-funnel-and-best-practices-for-opportunity-progress-pdf) of the presentation used in the live workshop.
 ```
 

@@ -5,6 +5,9 @@ uuid: bcaaeab9-3b46-4a48-8e84-64d84d2c6015
 
 With each new Liferay DXP and Liferay Portal release, a feature may not warrant continued enhancements or may become obsolete. Stopping enhancements for a feature puts it in *Maintenance Mode*.
 
+!!! tip
+    Read [Feature Flags](../../../system-administration/configuring-liferay/feature-flags.md) to learn more about other feature statuses: beta and release feature flags.
+
 **Maintenance Mode:** Supported features with no further enhancements planned
 
 Obsolete features are eventually removed or replaced with newer, improved features. Before dropping support for an obsolete feature, Liferay marks it as *Deprecated*.
@@ -86,3 +89,4 @@ Here are the features moved to Maintenance Mode in 7.4:
 
 - [7.4 Breaking Changes](../../../liferay-internals/reference/7-4-breaking-changes.md)
 - [7.4 Default Setting Changes](./default-setting-changes-in-7-4.md)
+- [Feature Flags](../../../system-administration/configuring-liferay/feature-flags.md)

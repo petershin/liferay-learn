@@ -15,6 +15,9 @@ taxonomy-category-names:
 
 Some features in Liferay are hidden behind *feature flags*. Using feature flags, you have control over new functionality introduced into your Liferay instance. New and experimental features can be adopted and validated more effectively with feature flags.
 
+!!! tip
+    Read [Maintenance Mode and Deprecations in 7.4](../../../system-administration/configuring-liferay/feature-flags.md) to learn more about other feature statuses: maintenance, deprecated, and removed.
+
 To access and manage feature flags, open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and navigate to *Control Panel* &rarr; *Instance Settings*. Click *Feature Flags* under *Platform*. There are three types of feature flags available: 
 
 1. [Beta feature flags](#beta-feature-flags)
@@ -24,9 +27,6 @@ To access and manage feature flags, open the *Global Menu* (![Global Menu](../..
 1. [Dev feature flags](#dev-feature-flags)
 
 ![You can use feature flags to control the visibility of features.](./feature-flags/images/01.png)
-
-<!--  Add image for badge used to denote beta features in product
-Liferay DXP uses a badge to highlight beta features. See below: -->
 
 The documentation for a beta feature includes a badge to set it apart: 
 
@@ -80,9 +80,8 @@ To enable a theoretical dev feature flag with the code `XXX-000000` using an env
 LIFERAY_FEATURE_PERIOD_FLAG_PERIOD__UPPERCASEX__UPPERCASEX__UPPERCASEX__MINUS__NUMBER0__NUMBER0__NUMBER0__NUMBER0__NUMBER0__NUMBER0_=true
 ```
 
-```{warning}
-Never use dev features in production. Instabilities in Liferay are expected side effects of enabling dev feature flags. 
-```
+!!! warning
+    Never use dev features in production. Instabilities in Liferay are expected side effects of enabling dev feature flags. 
 
 ## Out-of-the-Box Beta Features
 
@@ -98,5 +97,5 @@ As of Liferay 2023.Q4, some beta features are enabled out-of-the-box, but are ma
 
 ## Related Topics
 
-* [Semantic Search](../../using-search/liferay-enterprise-search/search-experiences/semantic-search.md)
-* [Beta Features](https://help.liferay.com/hc/en-us/articles/12917247551757-Beta-Features)
+- [Semantic Search](../../using-search/liferay-enterprise-search/search-experiences/semantic-search.md)
+- [Maintenance Mode and Deprecations in 7.4](../../installation-and-upgrades/upgrading-liferay/reference/maintenance-mode-and-deprecations-in-7-4.md)

@@ -10,20 +10,9 @@ uuid: 48c633fe-df2d-4f68-a630-cc85c8d1e33a
 
 # Configuring Asset Auto-Tagging
 
-[Tagging assets](../tagging-content-and-managing-tags.md) is a great way to organize content. Typically, the content creator manually applies tags during creation, but you can configure Liferay to tag content automatically. For example, you can scan an image on upload and apply tags that describe the image's content. 
+[Tagging assets](../tagging-content-and-managing-tags.md) is a great way to organize content. Typically, the content creator manually applies tags during creation, but you can configure Liferay to tag content automatically. For example, you can scan an image on upload and apply tags that describe the image's content.
 
-!!! note
-    Currently, auto-tagging only works for images, text-based documents, text-based web content, and blog entries. See [Auto-Tagging Assets](./auto-tagging-assets.md) and [Auto-Tagging Images](./auto-tagging-images.md) for more information.
-
-Auto-tagging is enabled by default. You can configure it at three levels:
-
-**Global (System Settings)**: Enable or disable auto-tagging for the Liferay server. For auto-tagging to function on any level, it must be enabled globally. At the global level, you can also set a default configuration for all virtual instances. This is not available in Liferay Cloud SaaS. 
-
-**Virtual Instance (Instance Settings)**: Override auto-tagging configurations set at the global level. This setting determines the default configuration for all instance sites.
-
-**Site**: Override auto-tagging configurations set at the global and instance levels.
-
-By default, asset auto-tagging is only triggered when content is created. Beginning with Liferay 7.4 U36/GA36, you can configure virtual instances to allow auto-tag assets on updates as well. See [Virtual Instance Scope Configuration](#virtual-instance-scope-configuration) for more information. 
+By default, asset auto-tagging is only triggered when content is created. Beginning with Liferay 7.4 U36/GA36, you can configure virtual instances to allow auto-tag assets on updates as well. See [Virtual Instance Scope Configuration](#virtual-instance-scope-configuration) for more information.
 
 ## Global Scope Configuration
 

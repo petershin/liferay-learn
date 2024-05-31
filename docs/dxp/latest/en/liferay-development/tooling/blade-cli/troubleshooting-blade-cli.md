@@ -7,13 +7,16 @@ taxonomy-category-names:
 - Liferay PaaS
 - Liferay SaaS
 ---
+
 # Troubleshooting Blade CLI
 
 If Blade CLI isn't working as expected, you may find answers here.
 
 ## The blade command is not available in my CLI
 
-If you used the install script, the path to the `blade` executable must be added to your system `$PATH` variable:
+The Blade CLI installer adds the `blade` command to your path only if you are using the Bash shell in its default configuration, by modifying `.bash_profile`. If your system doesn't use `.bash_profile` or the Bash shell, you must add the command to your path manually. 
+
+If for some reason the installer did not add the command to your `$PATH`, on Bash, you can add it manually like this: 
 
 **macOS**
 
@@ -27,7 +30,7 @@ echo 'export PATH="$PATH:$HOME/Library/PackageManager/bin"' >> ~/.bash_profile
 echo 'export PATH="$PATH:$HOME/jpm/bin"' >> ~/.bash_profile
 ```
 
-If you're using a shell other than `bash`, you must add the path to the `blade` executable manually.
+If you're using a shell other than Bash, you must add the path to the `blade` executable according to that shell's documentation. 
 
 ## I can't update blade
 

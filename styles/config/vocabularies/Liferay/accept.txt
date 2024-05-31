@@ -1,4 +1,6 @@
 API
+JavaScript
+JDKs
 Liferay
-OAuth 2
+OAuth 
 OSGi

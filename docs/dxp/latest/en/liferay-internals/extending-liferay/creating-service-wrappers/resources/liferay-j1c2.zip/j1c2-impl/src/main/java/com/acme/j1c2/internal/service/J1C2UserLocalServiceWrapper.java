@@ -14,24 +14,24 @@ import org.osgi.service.component.annotations.Component;
 @Component(service = ServiceWrapper.class)
 public class J1C2UserLocalServiceWrapper extends UserLocalServiceWrapper {
 
-	@Override
-	public int authenticateByEmailAddress(
-			long companyId, String emailAddress, String password,
-			Map<String, String[]> headerMap, Map<String, String[]> parameterMap,
-			Map<String, Object> resultsMap)
-		throws PortalException {
+    @Override
+    public int authenticateByEmailAddress(
+            long companyId, String emailAddress, String password,
+            Map<String, String[]> headerMap, Map<String, String[]> parameterMap,
+            Map<String, Object> resultsMap)
+        throws PortalException {
 
-		if (_log.isInfoEnabled()) {
-			_log.info(
-				"Invoking #authenticateByEmailAddress(long, String, String, " +
-					"Map, Map, Map)");
-		}
+        if (_log.isInfoEnabled()) {
+            _log.info(
+                "Invoking #authenticateByEmailAddress(long, String, String, " +
+                    "Map, Map, Map)");
+        }
 
-		return super.authenticateByEmailAddress(
-			companyId, emailAddress, password, headerMap, parameterMap,
-			resultsMap);
-	}
+        return super.authenticateByEmailAddress(
+            companyId, emailAddress, password, headerMap, parameterMap,
+            resultsMap);
+    }
 
-	private static final Log _log = LogFactoryUtil.getLog(
-		J1C2UserLocalServiceWrapper.class);
+    private static final Log _log = LogFactoryUtil.getLog(
+        J1C2UserLocalServiceWrapper.class);
 }

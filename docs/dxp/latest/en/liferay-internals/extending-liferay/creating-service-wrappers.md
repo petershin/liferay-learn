@@ -70,6 +70,7 @@ This example prints a message to the console whenever the `authenticateByEmailAd
 1. Choose the method you want to override and add your own implementation.
 
    ```{literalinclude} creating-service-wrappers/resources/liferay-j1c2.zip/j1c2-impl/src/main/java/com/acme/j1c2/internal/service/J1C2UserLocalServiceWrapper.java
+       :dedent: 1
        :language: java
        :lines: 17-33
    ```

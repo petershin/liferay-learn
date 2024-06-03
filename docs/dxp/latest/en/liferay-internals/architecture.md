@@ -71,7 +71,7 @@ The Core provides the component runtime environment for the frameworks, services
 - [Service customizations](./extending-liferay/overriding-osgi-services.md)
 - [Language Keys \(localized messages\)](../liferay-development/building-applications/developing-a-java-web-application/using-mvc/sharing-localized-messages.md)
 - [JavaScript applications \(templates, routers, and resources\)](../liferay-development/building-applications/developing-a-javascript-application/using-react.md)
-- [JSP customizations](./extending-liferay/customizing-jsps.md)
+- [JSP customizations](./extending-liferay/customizing-jsps-with-dynamic-includes.md)
 - [Portlets \(templates, controllers, and resources\)](../liferay-development/building-applications/developing-a-java-web-application/reference/portlets.md)
 - [Portlet filters](./extending-liferay/auditing-portlet-activity-with-a-portlet-filter.md)
 - [Themes](../liferay-development/customizing-liferays-look-and-feel/themes.md)
@@ -106,7 +106,7 @@ The web-based UI makes content and service functionality available in browsers.
 
 The UI helps people do work, [collaborate](../collaboration-and-social/collaboration-and-social-overview.md), and enjoy content. Here's what the UI consists of:
 
-- [DXP application](../site-building/getting-started-with-site-building.md): The web application for managing Portals, Sites, Users, Pages, Widgets, and more. 
+- [DXP application](../site-building/getting-started-with-site-building.md): The web application for managing Portals, Sites, Users, Pages, Widgets, and more.
 
 - [Applications](../liferay-development/building-applications/developing-a-java-web-application.md): Widgets that provide a user interface for services already deployed.
 

@@ -33,7 +33,7 @@ Your new article is created/submitted for [workflow](../../../process-automation
 
 ## Publish With Permissions and Schedule Publications
 
-<!-- Adjust this information once this feature is released. I can merge the sections into one. - Eric -->
+<!-- Adjust this information once this feature is released. I can merge the sections into one or I can use something like before and after 2024.Q2+. - Eric -->
 
 {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+`
 
@@ -127,6 +127,15 @@ When creating or editing a Basic Web Content article, the following options appe
 | **Schedule** | Schedule a date to display or expire the article, if desired. | See [Scheduling Web Content](./using-expiration-and-review-dates-in-web-content.md) for more information. |
 | **Search** | Set whether this article will be indexed for search. | |
 | **Related Assets** | Select any related assets, if desired. | |
+
+!!! important
+    To avoid potential SEO issues or disruptions in searches caused by URL changes, ensure unique friendly URLs for each piece of content and its translations.
+
+    When a duplicate friendly URL is created, a warning message is displayed and a suffix is appended to the friendly URL to maintain uniqueness (e.g., `new-product` becomes `new-product-1`).
+
+    This prevents the same URL from pointing to different content in different languages, especially when the locale prefix is not used in URLs.
+
+<!-- Maybe there should be a translating-web-content-articles.md doc and this admonition could be moved there. Eric -->
 
 !!! note
     Before {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+`, the Permissions option appears in the Properties tab only when first creating an article.

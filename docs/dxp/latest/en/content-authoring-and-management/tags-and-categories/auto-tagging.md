@@ -14,25 +14,23 @@ uuid: a9274b09-7106-430d-927f-26472612acd4
 
 # Auto-Tagging
 
-Auto-tagging is the process of assigning descriptive tags or labels to digital content automatically without manual intervention. When having multiple content, auto-tagging organizes and groups this content by determining related tags, which is assigned according to attributes, context, or metadata.
+If you have a lot of content that's untagged, you can help your users find that content more easily by *auto-tagging* it. Liferay can use a local or cloud-based service to analyze and then automatically assign tags to your content, whether it be text-based or images. Auto-tagging enables faceting your content in search by determining related tags, which makes your content much easier for users to find. 
 
-A user wants to create a blog. It's content will be extensive and there are many different topics that can be grouped and organized. Instead of tagging them manually, you may use the Auto-Tagging providers to spare your time.
+For example, if you have a user with a lot of untagged blog entries, rather than go through all that content and tag it yourself, you can configure an auto-tagging provider to spare your time.
 
-![Visualizing Auto-Tagging in Blog Entry](./auto-tagging/images/01.png)
+![A blog can be analyzed and tags auto-generated. ](./auto-tagging/images/01.png)
 
-Liferay offers the option for automatic tagging assets and images within your work processes, allowing the user to configure it at three levels: *Global*, *Virtual Instance* and *Site*:
+Auto-tagging can be configured at three levels: *Global*, *Virtual Instance*, and *Site*:
 
-**Global (System Settings)**: Enable or disable auto-tagging for the Liferay server. For auto-tagging to function on any level, it must be enabled globally. At the global level, you can also set a default configuration for all virtual instances. This is not available in Liferay Cloud SaaS. 
+**Global (System Settings)**: Enable or disable auto-tagging for the Liferay server. At the global level, you set a default configuration for all virtual instances. This is not available in Liferay Cloud SaaS. 
 
 **Virtual Instance (Instance Settings)**: Override auto-tagging configurations set at the global level. This setting determines the default configuration for all instance sites.
 
 **Site**: Override auto-tagging configurations set at the global and instance levels.
 
-Liferay offers three main providers (*OpenNLP, Google Cloud* and *Microsoft Cognitive Service*) to support the user when working with images, text-based documents, text-based web content, and blog entries. Once enabled, they examine the content begin created and generate the relevant tags.
+Liferay connects to one of three providers (*OpenNLP, Google Cloud*, and *Microsoft Cognitive Service*) to auto-tag images, text-based documents, text-based web content, or blog entries. Choose a provider to examine the content and generate the relevant tags.
 
-![Diagram Showing how the Providers Works](./auto-tagging/images/02.png)
-
-The following articles instructs how to configure and utilize correctly the providers:
+![Auto-tagging connects to a service that analyzes your text or images and returns the tags.](./auto-tagging/images/02.png)
 
 :::{grid-item-card} Configuring Asset Auto-Tagging
 :link: ./auto-tagging/configuring-asset-auto-tagging.md

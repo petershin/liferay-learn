@@ -129,7 +129,7 @@ The Index Status Manager entry has one setting:
 
 The Index Writer Helper entry contains one entry:
 
-**`indexCommitImmediately`**: When *true* (the default), each write request forces the search engine to refresh the index reader, potentially flushing transactions to disk. This may negatively impact search engine performance. The default behavior is to commit immediately for index writing on individual assets (e.g. add blog, update blog) but delay commits for bulk index writing operations (e.g.  index all users, index all form entries) until all entries have been sent to the search engine. Setting this to false changes the behavior for individual index operations, and may cause applications like Asset Publisher to exhibit a delayed response when showing newly added content. See the [Elasticsearch documentation](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/near-real-time.html) for more information.
+**`indexCommitImmediately`**: When *true* (the default), each write request forces the search engine to refresh the index reader, potentially flushing transactions to disk. This may negatively impact search engine performance. The default behavior is to commit immediately for index writing on individual assets (e.g. add blog, update blog) but delay commits for bulk index writing operations (e.g.  index all users, index all form entries) until all entries have been sent to the search engine. Setting this to false changes the behavior for individual index operations, and may cause applications like Asset Publisher to exhibit a delayed response when showing newly added content. See the [Elasticsearch documentation](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/near-real-time.html) for more information.
 
 ### Indexer Registry
 
@@ -259,7 +259,7 @@ Information about the search engine connection(s) is displayed here. For example
 * Cluster Name: LiferayElasticsearchCluster
 * Nodes: 1
 * Node Name: lr-es
-* Node Version: 7.17.14
+* Node Version: 7.17.18
 
 #### Index Actions
 

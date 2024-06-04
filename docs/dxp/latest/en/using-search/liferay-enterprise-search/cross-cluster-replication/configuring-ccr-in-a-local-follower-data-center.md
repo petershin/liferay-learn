@@ -18,7 +18,7 @@ The example configurations are also provided in full in the [CCR configuration r
 The local Elasticsearch cluster must hold follower (replicated; read-only) indexes and acts as the local search engine co-located Liferay DXP nodes can read from.
 
 ```{important}
-**Securing a CCR Installation:** As [stated earlier](./configuring-an-example-ccr-installation-replicating-between-data-centers.md#prerequisite-for-security-configure-authentication-and-encryption) the Elasticsearch clusters should use node certificates signed by the same CA and the security settings of each cluster should match. For other approaches and details, [see Elastic's documentation](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/cross-cluster-configuring.html).
+**Securing a CCR Installation:** As [stated earlier](./configuring-an-example-ccr-installation-replicating-between-data-centers.md#prerequisite-for-security-configure-authentication-and-encryption) the Elasticsearch clusters should use node certificates signed by the same CA and the security settings of each cluster should match. For other approaches and details, [see Elastic's documentation](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/cross-cluster-configuring.html).
 ```
 
 1. Configure its `elasticsearch.yml`:

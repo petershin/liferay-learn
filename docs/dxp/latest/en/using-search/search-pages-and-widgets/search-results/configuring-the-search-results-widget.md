@@ -59,7 +59,7 @@ http://localhost:8080/web/guest/search?q=test&delta=10
 
 **Federated Search Key:** If this widget is participating in a search on a non-default index, enter the key of the alternate search index. If not set, the widget participates in the default search, against the default index (`liferay-[companyId]`). This value is usually the name of an application-defined index. See examples in [Understanding Low Level Search Options](understanding-low-level-search-options.md).
 
-**Fields to Display:** If searching an [alternate index](./understanding-low-level-search-options.md) using the Federated Search Key configuration, specify the fields to search from that index. Fields must be both indexed and [stored](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/mapping-store.html) to appear in the search Results widget.
+**Fields to Display:** If searching an [alternate index](./understanding-low-level-search-options.md) using the Federated Search Key configuration, specify the fields to search from that index. Fields must be both indexed and [stored](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/mapping-store.html) to appear in the search Results widget.
 
 ## Inspecting Search Engine Documents
 

@@ -61,7 +61,7 @@ When you find the field, note its type and if it has sub-fields. Some fields are
 
 ### Accessing Sub-Fields
 
-Elasticsearch can index [multi-fields](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/multi-fields.html), adding sub-field mappings to the main field. Some `text` and `icu_collation_keyword` fields in Liferay are mapped with `keyword` sub-fields and are usable in the Custom Facet. 
+Elasticsearch can index [multi-fields](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/multi-fields.html), adding sub-field mappings to the main field. Some `text` and `icu_collation_keyword` fields in Liferay are mapped with `keyword` sub-fields and are usable in the Custom Facet. 
 
 To use sub-fields in the Custom Facet, use dot notation (e.g., `fieldName.sub_field_name`). Examples include `assetTagNames.raw` and `title_en_US_sortable.keyword_lowercase`. Some [nested fields](#accessing-nested-fields) are mapped this way.
 
@@ -70,7 +70,7 @@ To use sub-fields in the Custom Facet, use dot notation (e.g., `fieldName.sub_fi
 
 ### Using the Search Engine's API
 
-Alternatively, use your search engine's API to browse the mappings. You can access Elasticsearch's field mappings from your terminal using cURL to call the [Get Mapping API](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/indices-get-mapping.html):
+Alternatively, use your search engine's API to browse the mappings. You can access Elasticsearch's field mappings from your terminal using cURL to call the [Get Mapping API](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/indices-get-mapping.html):
 
  ```bash
 curl -X GET "localhost:9200/_mapping?pretty"

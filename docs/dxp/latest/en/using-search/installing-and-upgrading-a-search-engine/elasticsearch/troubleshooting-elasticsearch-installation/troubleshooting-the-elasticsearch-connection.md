@@ -397,7 +397,7 @@ Some further testing can confirm the root cause. Temporarily set `xpack.security
 ```{warning}
 Never leave the SSL verification mode set to `none` in production environments.
 
-Read the [Elasticsearch documentation](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/security-settings.html#transport-tls-ssl-settings) to learn more about the SSL verification mode setting.
+Read the [Elasticsearch documentation](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/security-settings.html#transport-tls-ssl-settings) to learn more about the SSL verification mode setting.
 ```
 
 A similar problem can occur between Liferay and the Elasticsearch nodes. Liferay throws an error like this if the Elasticsearch node certificates were signed by a non-trusted CA (e.g., when using self-signed certificates):
@@ -429,7 +429,7 @@ For example, if you have your CA's certificate (public key) and private key in `
 
 ## PKCS12 Keystore created with newer JDK cannot be opened by JDK 8
 
-Elasticsearch 8 uses the bundled OpenJDK 19 to generate certificates and private keys with the [`elasticsearch-certutil`](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/certutil.html) command. When Liferay runs on JDK 8, it cannot recognize certificates generated with JDK 16 or higher.
+Elasticsearch 8 uses the bundled OpenJDK 19 to generate certificates and private keys with the [`elasticsearch-certutil`](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/certutil.html) command. When Liferay runs on JDK 8, it cannot recognize certificates generated with JDK 16 or higher.
 
 Errors like this can result:
 

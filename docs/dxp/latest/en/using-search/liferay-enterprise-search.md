@@ -20,7 +20,7 @@ A Liferay Enterprise Search (LES) subscription provides access to additional sea
 - [Activating Liferay Enterprise Search](liferay-enterprise-search/activating-liferay-enterprise-search.md)
 
 ```{note}
-LES customers receive a [platinum Elasticsearch license](https://www.elastic.co/subscriptions) from Liferay. There can be a delay between your subscription and receipt of the license, but you can enable a [30-day trial](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/start-trial.html) to work with in the meantime.  
+LES customers receive a [platinum Elasticsearch license](https://www.elastic.co/subscriptions) from Liferay. There can be a delay between your subscription and receipt of the license, but you can enable a [30-day trial](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/start-trial.html) to work with in the meantime.  
 ```
 
 Detailed installation and usage instructions are available in the article for each LES feature, including

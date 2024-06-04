@@ -65,7 +65,7 @@ In the example above, this blog article about a lunar rover does not contain the
 
 Out of the box, Synonyms Sets supports synonyms in [English and Spanish only](#requirements-and-limitations). To add support for other languages use the configuration steps below:
 
-- Create a [custom analyzer](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/analysis-custom-analyzer.html) by re-implementing the default [French](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/analysis-lang-analyzer.html#french-analyzer) analyzer with the necessary changes (including an extra [Synonym graph token filter](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/analysis-synonym-graph-tokenfilter.html) in the pipeline)
+- Create a [custom analyzer](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/analysis-custom-analyzer.html) by re-implementing the default [French](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/analysis-lang-analyzer.html#french-analyzer) analyzer with the necessary changes (including an extra [Synonym graph token filter](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/analysis-synonym-graph-tokenfilter.html) in the pipeline)
 - Add the custom analyzer definition to the index settings, using the Additional Index Configurations of the connector configuration.
 - Apply the custom analyzer on the desired fields by overriding Liferay DXP's default type mappings, using the Override Type Mappings setting of the connector configuration.
 - Reindex to apply the new settings.

@@ -8,7 +8,7 @@ uuid: 2689f0d8-3b60-4a4f-8263-f78337458711
 ---
 # Troubleshooting Cross-Cluster Replication
 
-Known common pitfalls encountered during the CCR setup are covered here, as well as general troubleshooting techniques. For further troubleshooting, look at [Elastic's CCR documentation](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/ccr-overview.html) or visit [Elastic's forum](https://discuss.elastic.co/tag/ccr-cross-cluster-replication).
+Known common pitfalls encountered during the CCR setup are covered here, as well as general troubleshooting techniques. For further troubleshooting, look at [Elastic's CCR documentation](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/ccr-overview.html) or visit [Elastic's forum](https://discuss.elastic.co/tag/ccr-cross-cluster-replication).
 
 ## Investigating Index Replication Issues
 
@@ -53,7 +53,7 @@ You may run into the following error when configuring CCR:
 ElasticsearchSecurityException security_exception current license is non-compliant for [ccr]
 ```
 
-[CCR requires](https://www.elastic.co/subscriptions#scalability-&-resiliency) a Platinum Elasticsearch license. As a LES subscriber you have access to CCR with the license provided to you by Liferay. If you're testing locally, you can start a [trial](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/start-trial.html) on each cluster.
+[CCR requires](https://www.elastic.co/subscriptions#scalability-&-resiliency) a Platinum Elasticsearch license. As a LES subscriber you have access to CCR with the license provided to you by Liferay. If you're testing locally, you can start a [trial](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/start-trial.html) on each cluster.
 
 ## Local DXP Node Doesn't Read from Follower Elasticsearch Cluster
 
@@ -80,7 +80,7 @@ myhostname:9180,ccr
 
 ## Follower Elasticsearch Cluster with Red Status
 
-The follower cluster may go to [red cluster health status](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/cluster-health.html) after you successfully set up a CCR connection and enable CCR on the local DXP node. This can result in errors like this in the follower Elasticsearch node's console:
+The follower cluster may go to [red cluster health status](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/cluster-health.html) after you successfully set up a CCR connection and enable CCR on the local DXP node. This can result in errors like this in the follower Elasticsearch node's console:
 
 ```
 [2021-01-08T15:49:25,405][INFO ][o.e.x.c.a.ShardFollowTasksExecutor] [es-follower-node1] [liferay-0][0] Starting to track leader shard [liferay-0][0]

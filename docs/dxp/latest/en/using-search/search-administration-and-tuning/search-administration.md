@@ -25,7 +25,7 @@ Information about the search engine connection(s) is displayed here. For example
 * Cluster Name: LiferayElasticsearchCluster
 * Nodes: 1
 * Node Name: lr-es
-* Node Version: 7.17.14
+* Node Version: 7.17.18
 
 ## Index Actions
 

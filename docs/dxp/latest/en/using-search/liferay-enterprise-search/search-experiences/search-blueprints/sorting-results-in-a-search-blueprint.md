@@ -21,9 +21,9 @@ Add a [sort configuration](./search-blueprints-configuration-reference.md#sort-c
 ![Enter JSON to sort a blueprint's results.](./sorting-results-in-a-search-blueprint/images/01.png)
 
 !!! important
-    The examples below are simple. A robust sort configuration must consider all scenarios. For example, if a search result document does not contain the sort field, use the [`missing`](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/sort-search-results.html#_missing_values) parameter to configure the sort behavior.
+    The examples below are simple. A robust sort configuration must consider all scenarios. For example, if a search result document does not contain the sort field, use the [`missing`](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/sort-search-results.html#_missing_values) parameter to configure the sort behavior.
 
-    See [Elasticsearch's sorting documentation](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/sort-search-results.html) for more details.
+    See [Elasticsearch's sorting documentation](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/sort-search-results.html) for more details.
 
 ## Search Blueprints and Other Sort Contributors
 

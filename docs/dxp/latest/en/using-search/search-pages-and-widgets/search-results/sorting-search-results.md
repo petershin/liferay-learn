@@ -64,7 +64,7 @@ To access the widget configuration screen, open the widget Options menu (![Optio
 Each Sort option has three settings: _Indexed Field_, _Display Label_, and _Order_.
 
 
-**Indexed Field:** Enter the `fieldName` of the indexed field to sort. Most of the time this is a [keyword](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/keyword.html) field. Other acceptable options are `date` and any [numeric datatype](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/number.html). There's even a way to coerce `text` fields into behaving with the Sort widget (see below). 
+**Indexed Field:** Enter the `fieldName` of the indexed field to sort. Most of the time this is a [keyword](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/keyword.html) field. Other acceptable options are `date` and any [numeric datatype](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/number.html). There's even a way to coerce `text` fields into behaving with the Sort widget (see below). 
 
 **Display Label:** Set the displayed label for the type of sort being configured.
 

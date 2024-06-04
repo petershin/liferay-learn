@@ -22,7 +22,7 @@ Here's example sidecar server output:
   "cluster_name" : "LiferayElasticsearchCluster",
   "cluster_uuid" : "aDsZ5VWTQ96-lT-7WmcoHg",
   "version" : {
-    "number" : "7.17.14",
+    "number" : "7.17.18",
     "build_flavor" : "unknown",
     "build_type" : "unknown",
     "build_hash" : "e3b0c3d3c5c130e1dc6d567d6baef1c73eeb2059",
@@ -49,7 +49,7 @@ See [the troubleshooting section if you encounter errors with the setup](#error-
 You wouldn't run an embedded database like HSQL in production, and you shouldn't run the bundled Elasticsearch server in production either. Instead, run Elasticsearch in remote mode, as a standalone server or cluster of server nodes.
 
 ```{important}
-The search tuning apps [Synonym Sets](../../search-administration-and-tuning/synonym-sets.md) and [Result Rankings](../../search-administration-and-tuning/result-rankings.md) used the search index for primary data storage on Liferay 7.2 and 7.3. No data for these apps was stored in the Liferay database. Therefore, if you have Synonym Sets or Result Rankings configured while using the sidecar or embedded Elasticsearch in Liferay 7.2 and 7.3, switching to a remote Elasticsearch server and reindexing does _not_ restore those configurations. Instead you must manually bring the Synonym Sets and Result Rankings into the remote Elasticsearch cluster. See the [Upgrade Guide](../elasticsearch/upgrading-elasticsearch.md) for details on using Elastic's [Snapshot and Restore](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/snapshot-restore.html) feature to preserve these indexes.
+The search tuning apps [Synonym Sets](../../search-administration-and-tuning/synonym-sets.md) and [Result Rankings](../../search-administration-and-tuning/result-rankings.md) used the search index for primary data storage on Liferay 7.2 and 7.3. No data for these apps was stored in the Liferay database. Therefore, if you have Synonym Sets or Result Rankings configured while using the sidecar or embedded Elasticsearch in Liferay 7.2 and 7.3, switching to a remote Elasticsearch server and reindexing does _not_ restore those configurations. Instead you must manually bring the Synonym Sets and Result Rankings into the remote Elasticsearch cluster. See the [Upgrade Guide](../elasticsearch/upgrading-elasticsearch.md) for details on using Elastic's [Snapshot and Restore](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/snapshot-restore.html) feature to preserve these indexes.
 ```
 
 ## Bundled Elasticsearch Server Use cases

@@ -46,7 +46,7 @@ To enable or disable the Explain option,
 
 1. There's just one boolean field enabled by default: Enable Score Explanation. De-select it to disable the explanation of each result's relevance score.
 
-Under the hood, the Explain option in the Search Insights widget exposes an Elasticsearch API: [Explain](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/search-explain.html). See the Elasticsearch documentation for more details.
+Under the hood, the Explain option in the Search Insights widget exposes an Elasticsearch API: [Explain](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/search-explain.html). See the Elasticsearch documentation for more details.
 
 Here's an abbreviated portion of the response's scoring explanation for the Search Document of the Test Test User when the searched keyword was _test_:
 

@@ -47,7 +47,7 @@ To upgrade an existing Elasticsearch 7 server (or cluster) to Elasticsearch 8,
 
 ## Upgrading Elasticsearch
 
-If you are using a rolling restart-eligible version, doing a [rolling upgrade](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/rolling-upgrades.html) is the recommended way to upgrade your Elasticsearch cluster as it minimizes downtime and eliminates the need to reindex all your data. Otherwise, follow the [full cluster restart upgrade ](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/restart-upgrade.html) guide.
+If you are using a rolling restart-eligible version, doing a [rolling upgrade](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/rolling-upgrades.html) is the recommended way to upgrade your Elasticsearch cluster as it minimizes downtime and eliminates the need to reindex all your data. Otherwise, follow the [full cluster restart upgrade ](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/restart-upgrade.html) guide.
 
 If you've installed a new Elasticsearch server and want to index your pre-upgrade data, most Liferay indexes can be restored by triggering a [reindex](#restart-liferay-and-reindex) from the UI, once the Liferay [database is upgraded](../../../../installation-and-upgrades/upgrading-liferay/upgrade-basics/using-the-database-upgrade-tool.md). However, the Search Tuning (Result Rankings and Synonyms) indexes and any custom indexes not backed by database storage must be restored from a [snapshot of the pre-upgrade indexes](./backing-up-elasticsearch.md#backing-up-and-restoring-search-tuning-indexes-for-liferay-7-2-and-7-3).
 

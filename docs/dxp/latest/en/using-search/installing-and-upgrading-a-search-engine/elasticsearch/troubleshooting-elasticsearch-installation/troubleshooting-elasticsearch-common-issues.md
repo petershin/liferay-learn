@@ -67,7 +67,7 @@ ode_name]SSL configuration [xpack.security.transport.ssl.] relies upon fallback 
 1. 07-16T14:47:05,779][WARN ][o.e.d.c.j.Joda           ] [
 ```
 
-These warnings do not signal any functional issues and can be disabled (see [Deprecation Logging](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/logging.html#deprecation-logging) to learn how).
+These warnings do not signal any functional issues and can be disabled (see [Deprecation Logging](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/logging.html#deprecation-logging) to learn how).
 
 ## Related Topics
 

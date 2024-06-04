@@ -72,7 +72,7 @@ A simple Liferay 7.3+ connector configuration enables production mode (`producti
 1. Place the `.config` file in your `[Liferay Home]/osgi/configs` folder.
 
 ```{tip}
-The connectors contain many configuration settings. See the [Elasticsearch Connector Settings](./elasticsearch-connector-configuration-reference.md) for their definitions. Most of the configurations correspond to settings available in [Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/index.html).
+The connectors contain many configuration settings. See the [Elasticsearch Connector Settings](./elasticsearch-connector-configuration-reference.md) for their definitions. Most of the configurations correspond to settings available in [Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/index.html).
 ```
 
 To refer to Elasticsearch servers by name, map each Elasticsearch server name to its IP address in your DNS or your Liferay server's `/etc/hosts` file.

@@ -25,12 +25,12 @@ Now you can set up X-Pack users.
 
 ## Set Up X-Pack Users
 
-In a system using X-Pack, these [built-in X-Pack users](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/built-in-users.html) are important:
+In a system using X-Pack, these [built-in X-Pack users](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/built-in-users.html) are important:
 
 * `kibana_system`
 * `elastic`
 
-On your Elasticsearch server, use the [`setup-passwords` command](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/setup-passwords.html) to set passwords for them:
+On your Elasticsearch server, use the [`setup-passwords` command](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/setup-passwords.html) to set passwords for them:
 
 ```bash
 ./bin/elasticsearch-setup-passwords interactive
@@ -41,7 +41,7 @@ The configurations shown below assume all passwords are set to *liferay*. Use yo
 ```
 
 ```{note}
-To update a built-in user's password, use Kibana's UI or the [Change Password API](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/security-api-change-password.html).
+To update a built-in user's password, use Kibana's UI or the [Change Password API](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/security-api-change-password.html).
 ```
 
 ## Encrypting Elasticsearch Communication
@@ -50,9 +50,9 @@ Enabling Transport Layer Security (TLS) involves generating node certificates an
 
 ### Generate Node Certificates
 
-[Generate a certificate](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/configuring-tls.html#node-certificates) for each node, or generate a certificate to be used on all nodes and clients---like Liferay. Alternatively, use your certificate authority to obtain node certificates.
+[Generate a certificate](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/configuring-tls.html#node-certificates) for each node, or generate a certificate to be used on all nodes and clients---like Liferay. Alternatively, use your certificate authority to obtain node certificates.
 
-1. Generate X-Pack certificate authority using the X-Pack's [`certutil`](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/certutil.html) command:
+1. Generate X-Pack certificate authority using the X-Pack's [`certutil`](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/certutil.html) command:
 
     ```bash
     ./bin/elasticsearch-certutil ca --ca-dn CN=elastic-ca
@@ -128,7 +128,7 @@ The certificates and keys are ready to use in your Elasticsearch configuration.
 
 ### Configure TLS for Elasticsearch
 
-[Enable TLS](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/configuring-tls.html) on each node via its `[Elasticsearch Home]/config/elasticsearch.yml` file.
+[Enable TLS](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/configuring-tls.html) on each node via its `[Elasticsearch Home]/config/elasticsearch.yml` file.
 
 1. Enable transport layer TLS with these settings in `elasticsearch.yml` for inter-node communication:
 
@@ -353,14 +353,14 @@ Note that these are example values.
 
 These settings work in conjunction with the corresponding XPack settings.
 
-If you're configuring the REST Client connection on Liferay 7.3 or 7.4, use [HTTP layer settings](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/security-settings.html#http-tls-ssl-settings) like these in `elasticsearch.yml`:
+If you're configuring the REST Client connection on Liferay 7.3 or 7.4, use [HTTP layer settings](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/security-settings.html#http-tls-ssl-settings) like these in `elasticsearch.yml`:
 
 ```yaml
 xpack.security.http.ssl.supported_protocols: [ "TLSv1.2" ]
 xpack.security.http.ssl.cipher_suites : TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384,TLS_DHE_RSA_WITH_AES_256_GCM_SHA384,TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256,TLS_DHE_RSA_WITH_AES_128_GCM_SHA256
 ```
 
-If you're configuring the Transport Client on Liferay 7.1 and 7.2, use [transport settings](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/security-settings.html#transport-tls-ssl-settings) like these in `elaticsearch.yml`:
+If you're configuring the Transport Client on Liferay 7.1 and 7.2, use [transport settings](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/security-settings.html#transport-tls-ssl-settings) like these in `elaticsearch.yml`:
 
 ```yaml
 xpack.security.transport.ssl.supported_protocols: [ "TLSv1.2" ]

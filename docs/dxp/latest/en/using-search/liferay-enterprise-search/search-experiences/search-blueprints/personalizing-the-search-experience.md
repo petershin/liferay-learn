@@ -20,7 +20,7 @@ One of the premier use cases for Search Experiences and Search Blueprints is to 
 * Is the user a new user?
 * What [User Segment](../../../../site-building/personalizing-site-experience/segmentation/creating-and-managing-user-segments.md)s is the user part of?
 
-Without a Blueprint tailored for each user's context, the default results are scored based on a query that calculates relevance by how well the text of the searched keywords matches the [tokenized](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/analysis-tokenizers.html) values of indexed documents.
+Without a Blueprint tailored for each user's context, the default results are scored based on a query that calculates relevance by how well the text of the searched keywords matches the [tokenized](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/analysis-tokenizers.html) values of indexed documents.
 
 Personalizing search results increases the chance that users find what's needed for their success. This in turn increases the chance of your site's success, by keeping users engaged with your content. Some examples include
 
@@ -32,7 +32,7 @@ Personalizing search results increases the chance that users find what's needed 
 
 There are several Elements that are especially useful for personalization efforts:
 
-**Boost Proximity:** uses the [ipstack](https://ipstack.com) service to boost search results closer to a user's location, as marked by a [geopoint](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/geo-point.html) field in the document. The [example below](#building-a-blueprint-to-personalize-search-results) shows you how to set up the service and use the Boost Proximity Element.
+**Boost Proximity:** uses the [ipstack](https://ipstack.com) service to boost search results closer to a user's location, as marked by a [geopoint](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/geo-point.html) field in the document. The [example below](#building-a-blueprint-to-personalize-search-results) shows you how to set up the service and use the Boost Proximity Element.
 
 **Boost Contents for the Current Language:** boosts search results with a `defaultLanguageId` field matching the current session's language.
 
@@ -72,7 +72,7 @@ Before configuring the Blueprint, you must obtain an [ipstack key](https://ipsta
 
 ### Configure a Geolocated Asset
 
-A search document must have a [geopoint field](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/geo-point.html) to work with the ipstack service and the Boost Proximity Element. Liferay includes compatible Geolocation fields that you can add as a Custom Field to existing assets:
+A search document must have a [geopoint field](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/geo-point.html) to work with the ipstack service and the Boost Proximity Element. Liferay includes compatible Geolocation fields that you can add as a Custom Field to existing assets:
 
 1. Go to Control Panel &rarr; Custom Fields.
 1. Add a new Custom Field on the Blogs Entry:
@@ -141,4 +141,4 @@ You might need to adjust the Gaussian function that scores documents by proximit
 
 For example, if you specify a boost of 100 for search results geolocated to within 10 km of the user and define a decay factor of 0.5, a result exactly 10 km away from the user receives half of the maximum boost value, so it is boosted by 50. At distances greater than 10 km, the Gaussian function takes over in determining the remaining scores.
 
-See [Elastic's Function Score Query](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/query-dsl-function-score-query.html) documentation for more details.
+See [Elastic's Function Score Query](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/query-dsl-function-score-query.html) documentation for more details.

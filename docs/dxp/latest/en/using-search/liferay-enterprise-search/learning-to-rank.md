@@ -51,7 +51,7 @@ There are some prerequisites for using Learning to Rank to re-score Liferay quer
 
 ## Technical Overview
 
-In a normal search, the user sends a query to the search engine via Liferay DXP's [Search Bar](../getting-started/searching-for-content.md). The order of returned results is dictated by the search engine's [relevance scoring algorithm](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/index-modules-similarity.html#bm25).
+In a normal search, the user sends a query to the search engine via Liferay DXP's [Search Bar](../getting-started/searching-for-content.md). The order of returned results is dictated by the search engine's [relevance scoring algorithm](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/index-modules-similarity.html#bm25).
 
 Here's where Learning to Rank intervenes and makes that process different:
 
@@ -59,7 +59,7 @@ Here's where Learning to Rank intervenes and makes that process different:
 
 1. Liferay sends the query to Elasticsearch and retrieves the first 1000 results as usual, using the search engine's relevance algorithm. 
 
-1. The top 1000 results are not returned as search hits, but are used by Elasticsearch for [re-scoring](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/search-request-body.html#request-body-search-rescore) via the [re-score functionality](https://elasticsearch-learning-to-rank.readthedocs.io/en/latest/searching-with-your-model.html#rescore-top-n-with-sltr).
+1. The top 1000 results are not returned as search hits, but are used by Elasticsearch for [re-scoring](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/search-request-body.html#request-body-search-rescore) via the [re-score functionality](https://elasticsearch-learning-to-rank.readthedocs.io/en/latest/searching-with-your-model.html#rescore-top-n-with-sltr).
 
 1. The results are re-scored by the [SLTR query](https://elasticsearch-learning-to-rank.readthedocs.io/en/latest/searching-with-your-model.html), which includes the keywords and the trained model to use for re-scoring.
 

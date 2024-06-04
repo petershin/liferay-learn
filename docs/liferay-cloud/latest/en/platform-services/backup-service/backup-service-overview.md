@@ -27,14 +27,14 @@ From the Backups page in any environment, you can view backup service informatio
 
 Follow these steps to access the Backups page:
 
-1. Click _Backups_ in the menu on the left from any environment.
+1. Click *Backups* in the menu on the left from any environment.
 
 ![View backup history, create manual backups, and more from the Backups page in any environment.](./backup-service-overview/images/02.png)
 
 From here, you can perform the following tasks:
 
 - **View Backup Info**: You can quickly view backup service information for the chosen environment. This includes the frequency of automated backups, the backup retention period, and time stamp information for the next scheduled backup, the latest created backup, and the oldest retained backup.
-- **View Backup History**: You can view the full list of retained backups in the chosen environment. Each entry shows the backup's name, size, type (`Auto`, `Manual`, or `Uploaded`), and time of creation. A red backup icon indicates a backup has failed. Beside it is a _Backup failed_ message and a link to contact Support.
+- **View Backup History**: You can view the full list of retained backups in the chosen environment. Each entry shows the backup's name, size, type (`Auto`, `Manual`, or `Uploaded`), and time of creation. A red backup icon indicates a backup has failed. Beside it is a *Backup failed* message and a link to contact Support.
 - **Create Manual Backups**: You can manually create a backup of the chosen environment. See [Creating a Manual Backup](#creating-a-manual-backup) for more information.
 
 !!! note
@@ -52,7 +52,7 @@ For more information and instructions on how to perform these actions, see [Down
 
 ## Creating a Manual Backup
 
-To manually back up your environment from the Backups page, click on _Backup Now_. This process can take several minutes or hours depending on the size of your services.
+To manually back up your environment from the Backups page, click on *Backup Now*. This process can take several minutes or hours depending on the size of your services.
 
 Once started, the backup service icon indicates a backup is in progress, and a message appears at the top of the screen. The new backup also appears in the Backup history.
 
@@ -61,7 +61,7 @@ Once started, the backup service icon indicates a backup is in progress, and a m
 !!! warning
     Backups created while data is actively changing on your Liferay instance risk creating inconsistent data. To ensure a completely consistent backup, coordinate with your database administrator to freeze updates while you perform a manual backup.
 
-Clicking _View logs_ redirects you to the Logs page, where you can view the backup stages in real-time. You can also view backup logs in the _Logs_ tab of the backup service's page.
+Clicking *View logs* redirects you to the Logs page, where you can view the backup stages in real-time. You can also view backup logs in the *Logs* tab of the backup service's page.
 
 See [Reading Liferay Cloud Service Logs](../../support-and-troubleshooting/troubleshooting/reading-liferay-cloud-service-logs.md) for more information about viewing service logs.
 
@@ -78,19 +78,19 @@ See [Environment Variables Reference](#environment-variables-reference) for a li
 
 1. Navigate to an environment where the backup service is deployed.
 
-1. Click on _Services_ in the environment menu.
+1. Click on *Services* in the environment menu.
 
-1. Click the _Backup_ service to see the backup service's environment variables.
+1. Click the *Backup* service to see the backup service's environment variables.
 
     ![Navigate to the backup service's variables tab in your environment.](./backup-service-overview/images/06.png)
 
-    You can also access the backup service's page by clicking _Backup_ in the environment's _Overview_ page.
+    You can also access the backup service's page by clicking *Backup* in the environment's *Overview* page.
 
 1. Add variables from the [Environment Variables Reference](#environment-variables-reference) list to configure the backup service.
 
-1. Click _Save Changes_.
+1. Click *Save Changes*.
 
-Apart from regular environment variables, you can also set _Secret_ variables via the Liferay Cloud console. See [Managing Secure Environment Variables with Secrets](../../tuning-security-settings/managing-secure-environment-variables-with-secrets.md) for more information.
+Apart from regular environment variables, you can also set *Secret* variables via the Liferay Cloud console. See [Managing Secure Environment Variables with Secrets](../../tuning-security-settings/managing-secure-environment-variables-with-secrets.md) for more information.
 
 ### Configuring the Backup Service via the Backup `LCP.json` File
 
@@ -126,7 +126,7 @@ There are two ways to configure an automated backup schedule:
 
 ### Configuring the Schedule via the Console
 
-1. From the chosen environment, navigate to the Backup service and click the _Configuration_ tab.
+1. From the chosen environment, navigate to the Backup service and click the *Configuration* tab.
 
     ![Click the Configuration tab to access the backup schedule configuration.](./backup-service-overview/images/07.png)
 
@@ -145,9 +145,9 @@ There are two ways to configure an automated backup schedule:
 
     ![If you choose to create a weekly schedule, you can then select the day of the week and time.](./backup-service-overview/images/08.png)
 
-1. Choose the desired retention period from the _Remove backups older than_ selector.
+1. Choose the desired retention period from the *Remove backups older than* selector.
 
-1. Click _Save changes_.
+1. Click *Save changes*.
 
 The backup service restarts, and the changes are applied when the service has fully restarted.
 
@@ -188,22 +188,24 @@ This `backup/LCP.json` example creates backups every 12 hours (i.e., 00:00 and 1
 
 ## Environment Variables Reference
 
-| Name                                            | Default Value              | Description                                                                                                                                                                                                                                                                    |
-| :---------------------------------------------- | :------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `LCP_BACKUP_CLEANUP_SCHEDULE`                   | 0 1 \* \* \*               | This variable schedules automated cleanups using [cron scheduling syntax](https://crontab.guru/). Cleanups remove all backups that exceed the backup retention period. It must not conflict with `LCP_BACKUP_CREATE_SCHEDULE`.                                                 |
-| `LCP_BACKUP_CREATE_SCHEDULE`                    | `[5-55][0-1] * * *`        | This variable schedules automated backups using [cron scheduling syntax](https://crontab.guru/). It must not conflict with `LCP_BACKUP_CLEANUP_SCHEDULE`. In versions `3.2.1` and above of the backup service, if no value is specified, a random default is created. |
-| `LCP_BACKUP_RESTORE_SCHEDULE`                   | N/A                        | This variable schedules automated restores using [cron scheduling syntax](https://crontab.guru/). Intended for use with [Disaster Recovery environments](../../support-and-troubleshooting/troubleshooting/configuring-cross-region-disaster-recovery.md).                                                 |
-| `LCP_BACKUP_RESTORE_STRATEGY`                   | `OVERWRITE`                | By default, existing instances are taken down immediately. To start a fresh database instance and volume before taking down existing instances, use the `PREPARE_AND_SWAP` strategy.                                                                                           |
-| `LCP_BACKUP_RETENTION_PERIOD`                   | `30`                       | This variable determines which backups are removed during scheduled cleanups. Select the number of days backups are retained before being removed by cleanups. The maximum retention period is 30 days.                                                                        |
-| `LCP_DATABASE_SERVICE`                          | `database`                 | The database service's ID.                                                                                                                                                                                                                                                     |
-| `LCP_DBNAME`                                    | `lportal`                  | The database name.                                                                                                                                                                                                                                                             |
-| `LCP_DEBUG_LOG`                                 | `false`                    | Enables debug logging for the Backup service. Set to `true` or `false`.                                                                                                                                                                                                        |
-| `LCP_GCP_STORAGE_UPLOAD_MAX_RETRIES`            | `6`                        | The maximum amount of times to retry uploading a backup if it fails. After this limit, the upload is aborted and may start over completely (up to two times).                                                                                                                  |
-| `LCP_GCP_STORAGE_UPLOAD_MAX_RETRY_DELAY`        | `64`                       | The delay (in seconds) between each of the retries configured by `LCP_GCP_STORAGE_UPLOAD_MAX_RETRIES`.                                                                                                                                                                        |
-| `LCP_GCP_STORAGE_UPLOAD_RETRY_DELAY_MULTIPLIER` | `3`                        | Multiplies the delay set by `LCP_GCP_STORAGE_UPLOAD_MAX_RETRY_DELAY` on each subsequent retry.                                                                                                                                                                                 |
-| `LCP_GCP_STORAGE_UPLOAD_TIMEOUT`                | `6000`                     | The maximum delay time (in seconds) between backup upload requests (or retries). This sets an upper limit to the amount that `LCP_GCP_STORAGE_UPLOAD_RETRY_DELAY_MULTIPLIER` can increase the delay time.                                                                      |
-| `LCP_MASTER_USER_NAME`                          | `dxpcloud`                 | The master username.                                                                                                                                                                                                                                                           |
-| `LCP_MASTER_USER_PASSWORD`                      | `LCP_PROJECT_MASTER_TOKEN` | The master password.                                                                                                                                                                                                                                                           |
+| Name                                                  | Default Value              | Description                                                                                                                                                                                                                                                                    |
+| :---------------------------------------------------- | :------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `LCP_BACKUP_CLEANUP_SCHEDULE`                         | 0 1 \* \* \*               | This variable schedules automated cleanups using [cron scheduling syntax](https://crontab.guru/). Cleanups remove all backups that exceed the backup retention period. It must not conflict with `LCP_BACKUP_CREATE_SCHEDULE`.                                                 |
+| `LCP_BACKUP_CREATE_SCHEDULE`                          | `[5-55][0-1] * * *`        | This variable schedules automated backups using [cron scheduling syntax](https://crontab.guru/). It must not conflict with `LCP_BACKUP_CLEANUP_SCHEDULE`. In versions `3.2.1` and above of the backup service, if no value is specified, a random default is created.          |
+| `LCP_BACKUP_RESTORE_SCHEDULE`                         | N/A                        | This variable schedules automated restores using [cron scheduling syntax](https://crontab.guru/). Intended for use with [Disaster Recovery environments](../../support-and-troubleshooting/troubleshooting/configuring-cross-region-disaster-recovery.md).                     |
+| `LCP_BACKUP_RESTORE_DL_DOWNLOAD_AND_EXTRACT_STRATEGY` | `download-then-extract`    | This variable determines the download and extract strategy for the document library. Use `download-then-extract` for backups of static data that doesn't change frequently, or `stream-pipeline` for data pipelines with frequent changes that require fast recovery.          |
+| `LCP_BACKUP_RESTORE_STRATEGY`                         | `OVERWRITE`                | By default, existing instances are taken down immediately. To start a fresh database instance and volume before taking down existing instances, use the `PREPARE_AND_SWAP` strategy.                                                                                           |
+| `LCP_BACKUP_RETENTION_PERIOD`                         | `30`                       | This variable determines which backups are removed during scheduled cleanups. Select the number of days backups are retained before being removed by cleanups. The maximum retention period is 30 days.                                                                        |
+| `LCP_DATABASE_SERVICE`                                | `database`                 | The database service's ID.                                                                                                                                                                                                                                                     |
+| `LCP_DBNAME`                                          | `lportal`                  | The database name.                                                                                                                                                                                                                                                             |
+| `LCP_DEBUG_LOG`                                       | `false`                    | Enables debug logging for the Backup service. Set to `true` or `false`.                                                                                                                                                                                                        |
+| `LCP_DOCUMENT_LIBRARY_GCS_TRANSFER_STRATEGY`          | `gsutil`                   | This variable determines the document library transfer strategy. `gsutil` is useful when staying in the Google Cloud Platform, while `rclone` offers greater flexibility for dealing with data across different cloud platforms.                                               |
+| `LCP_GCP_STORAGE_UPLOAD_MAX_RETRIES`                  | `6`                        | The maximum amount of times to retry uploading a backup if it fails. After this limit, the upload is aborted and may start over completely (up to two times).                                                                                                                  |
+| `LCP_GCP_STORAGE_UPLOAD_MAX_RETRY_DELAY`              | `64`                       | The delay (in seconds) between each of the retries configured by `LCP_GCP_STORAGE_UPLOAD_MAX_RETRIES`.                                                                                                                                                                         |
+| `LCP_GCP_STORAGE_UPLOAD_RETRY_DELAY_MULTIPLIER`       | `3`                        | Multiplies the delay set by `LCP_GCP_STORAGE_UPLOAD_MAX_RETRY_DELAY` on each subsequent retry.                                                                                                                                                                                 |
+| `LCP_GCP_STORAGE_UPLOAD_TIMEOUT`                      | `6000`                     | The maximum delay time (in seconds) between backup upload requests (or retries). This sets an upper limit to the amount that `LCP_GCP_STORAGE_UPLOAD_RETRY_DELAY_MULTIPLIER` can increase the delay time.                                                                      |
+| `LCP_MASTER_USER_NAME`                                | `dxpcloud`                 | The master username.                                                                                                                                                                                                                                                           |
+| `LCP_MASTER_USER_PASSWORD`                            | `LCP_PROJECT_MASTER_TOKEN` | The master password.                                                                                                                                                                                                                                                           |
 
 ## Related Topics
 

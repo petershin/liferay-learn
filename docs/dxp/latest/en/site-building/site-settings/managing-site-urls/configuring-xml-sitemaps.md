@@ -32,6 +32,10 @@ To configure your XML sitemap,
 
 1. Click *Select* to include sites from your sitemap.
 
+   You can also include/exclude child sites in the XML sitemap. When selecting a site, the number of child sites is shown below the site's name. Click on it to see the child sites and select them.
+
+   ![Include/exclude child sites.](./configuring-xml-sitemaps/images/02.png)
+
    To exclude a site from your sitemap, click *Remove New Site* (![Remove New Site icon](../../../images/icon-times.png)) next to the added site.
 
    !!! note

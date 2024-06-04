@@ -92,6 +92,8 @@ You can also localize this field using the Language Flag.
 
 Determine whether to include a display page in your `sitemap.xml` file, as well as set its Priority and Change Frequency fields. They inform search engines whether to crawl and index the display page, how it should be prioritized relative to other site pages, and how frequently it is updated.
 
+{bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA126+` Enable/disable child pages indexation on XML maps by checking/unchecking the Include Child Page URLs in the XML Sitemap box. Read [Configuring XML Sitemaps](../../site-settings/managing-site-urls/configuring-xml-sitemaps.md) to learn more.
+
 ![Determine whether to include a display page in your sitemap.xml file, as well as set its priority and change frequency.](./configuring-seo-and-open-graph/images/06.png)
 
 ## Open Graph Settings Reference

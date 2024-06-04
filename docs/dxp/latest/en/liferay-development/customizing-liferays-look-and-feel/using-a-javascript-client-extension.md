@@ -119,6 +119,9 @@ Configure a page in Liferay to use your deployed client extension:
 
    ![Add the JavaScript client extension. It appears in a list depending on whether you added it to the page head or page bottom.](./using-a-javascript-client-extension/images/02.png)
 
+   !!! note
+       If you set the boolean `async` or `defer` attributes in the client extension, you cannot configure this behavior when adding the client extension to a page (see the above screenshot). If you set both `async` and `defer` in the client extension, the `async` attribute is applied while the `defer` attribute is ignored.
+
 1. Click *Save*.
 
 1. Optionally, publish the page so your JavaScript executes on the page outside of Edit mode.

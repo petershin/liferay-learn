@@ -37,7 +37,7 @@ These properties are specific to JavaScript client extensions:
 | Name | Data Type | Description |
 | :--- | :--- | :--- |
 | `url` | URL | (Required) The path to the JavaScript file added to the HEAD of the page when the client extension is enabled. The complete URI is prefixed by the `baseURL` value. |
-| `scriptElementAttributes` | String | Beginning in Liferay DXP 2024.Q2/Portal 7.4 GA120, you can add attributes to the HTML `script` element in `name: "value"` format. |
+| `scriptElementAttributes` | String | Beginning in Liferay DXP 2024.Q2/Portal 7.4 GA120, you can add string and boolean attributes to the HTML `script` element. Use the format `name: "value"` for strings and `name: value` for booleans. |
 
 See [Frontend Client Extension Properties](../../customizing-liferays-look-and-feel.md#frontend-client-extension-properties) for properties common to all frontend client extensions.
 

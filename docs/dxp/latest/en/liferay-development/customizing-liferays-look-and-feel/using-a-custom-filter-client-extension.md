@@ -15,8 +15,6 @@ Custom filter client extensions define JavaScript functions for creating customi
 
 ## Prerequisites
 
-To start developing client extensions,
-
 1. Install Java (JDK 8 or JDK 11).
 
    !!! note
@@ -45,7 +43,7 @@ liferay-sample-fds-filter:
     url: index.*.js
 ```
 
-The client extension has the ID `liferay-sample-fds-filter` and contains the key configurations for a Custom Element client extension, including the `type` and the `url` property that defines the JavaScript resource file's location.
+The client extension has the ID `liferay-sample-fds-filter` and contains the key configurations for a Custom Element client extension, including the `type` and the `url` properties that define the JavaScript resource file's location.
 
 It also contains the `assemble` block:
 
@@ -68,7 +66,7 @@ import type {
 } from '@liferay/js-api/data-set';
 
 // As it's a TypesScript file, declare the structure of the internal data that describes the filter state.
-// In this case, it's the plain odata string the user enters through the filter's UI.
+// In this case, it's the plain OData string the user enters through the filter's UI.
 type FilterData = string;
 
 
@@ -128,6 +126,7 @@ const fdsFilter: FDSFilter<FilterData> = {
 // This object is exported as the default export of the module.
 export default fdsFilter;
 ```
+<!-- Don't describe the code as comments in the code. Describe the code outside the code. Brian will hate this. -Rich -->
 
 Now, deploy the client extension.
 
@@ -163,7 +162,7 @@ Now that your client extension is deployed, check if the filter is working prope
 {bdg-link-primary}`[Beta Feature](../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
 
 !!! important
-   This feature is currently behind a [beta feature flag](../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags) (LPS-164563).
+    Currently, this feature is behind a [beta feature flag](../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags) (LPS-164563).
 
 Start by setting up the environment:
 
@@ -220,7 +219,7 @@ Add the data set view to a content page:
 
 1. In the Fragments and Widgets menu on the left, search for Data Set under fragments. Drag and drop the fragment in your editing area.
 
-1. Click on your fragment. In the General tab on your right, there is a field where you can select a Data Set View. Click Add (![Add icon](../../images/icon-add-app.png)) and select the `Products Data Set View`.
+1. Click on your fragment. In the General tab on your right, there is a field where you can select a Data Set View. Click *Add* (![Add icon](../../images/icon-add-app.png)) and select the *Products Data Set View*.
 
    ![Select the Products Data Set View and display it using the Data Set fragment.](./using-a-custom-filter-client-extension/images/05.png)
 
@@ -234,7 +233,7 @@ Navigate to the page to test the filter:
 
 1. Select the search field, type in `name eq 'Piston'`, and click *Submit*.
 
-   The table should display only the products named "Piston".
+   The table displays only the products named *Piston*.
 
    ![Use OData queries to filter products by name.](./using-a-custom-filter-client-extension/images/06.png)
 

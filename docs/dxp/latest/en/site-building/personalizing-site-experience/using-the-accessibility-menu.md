@@ -26,7 +26,7 @@ When you enable the accessibility menu, the site's users can customize their exp
 
 ## Enabling the Accessibility Menu
 
-You can enable the accessibility menu at the [site or instance scope](../../../system-administration/configuring-liferay/understanding-configuration-scope.md). If you have a self-hosted Liferay you can also enable it at the system scope.
+You can enable the accessibility menu at the [site or instance scope](../../system-administration/configuring-liferay/understanding-configuration-scope.md). If you have a self-hosted Liferay you can also enable it at the system scope.
 
 ![You can enable the accessibility menu in Instance or Site Settings.](./using-the-accessibility-menu/images/07.png)
 

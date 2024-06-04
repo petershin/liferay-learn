@@ -54,7 +54,7 @@ liferay-sample-global-js-2:
 
 The client extension has the ID `liferay-sample-global-js-2` and contains the key configurations for a JS client extension, including the script element attributes, the `type`, and the JavaScript file to add. See the [JavaScript YAML configuration reference](./using-a-javascript-client-extension/javascript-yaml-configuration-reference.md) for more information on the properties.
 
-The optional `scriptElementAttributes` configuration was added in Liferay DXP 2024.Q2/Portal 7.4 GA120. With it you can add boolean and string attributes to the generated `script` HTML element. [Booleans](https://www.w3.org/TR/2008/WD-html5-20080610/semantics.html#boolean) that are `true` appear without a value in the HTML, and do not appear if set to `false`. For example, you can set `foo-boolean: true` in the YAML to generate this HTML: `<script foo-boolean foo-string="bar" ...>...</script>`.
+The optional `scriptElementAttributes` configuration was added in Liferay DXP 2024.Q2/Portal 7.4 GA120. With it you can add Boolean and string attributes to the generated `script` HTML element. [Booleans](https://www.w3.org/TR/2008/WD-html5-20080610/semantics.html#boolean) that are `true` appear without a value in the HTML, and do not appear if set to `false`. For example, you can set `foo-boolean: true` in the YAML to generate this HTML: `<script foo-boolean foo-string="bar" ...>...</script>`.
 
 The YAML file also contains the `assemble` block:
 
@@ -120,7 +120,7 @@ Configure a page in Liferay to use your deployed client extension:
    ![Add the JavaScript client extension. It appears in a list depending on whether you added it to the page head or page bottom.](./using-a-javascript-client-extension/images/02.png)
 
    !!! note
-       If you set the boolean `async` or `defer` attributes in the client extension, you cannot configure this behavior when adding the client extension to a page (see the above screenshot). If you set both `async` and `defer` in the client extension, the `async` attribute is applied while the `defer` attribute is ignored.
+       If you set the Boolean `async` or `defer` attributes in the client extension, you cannot configure this behavior when adding the client extension to a page (see the above screenshot). If you set both `async` and `defer` in the client extension, the `async` attribute is applied, and the `defer` attribute is ignored.
 
 1. Click *Save*.
 

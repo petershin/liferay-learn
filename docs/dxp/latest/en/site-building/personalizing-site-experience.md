@@ -10,6 +10,7 @@ toc:
   - ./personalizing-site-experience/experience-personalization.md
   - ./personalizing-site-experience/migration-from-audience-targeting.md
   - ./personalizing-site-experience/enabling-automated-live-chat-systems.md
+  - ./personalizing-site-experience/using-the-accessibility-menu.md
 uuid: 7ce0d5f8-e933-4eb3-8fe4-7588d0b00244
 ---
 # Personalizing Site Experience
@@ -87,5 +88,9 @@ Viewing the perspective of a user segment previews any personalizations for cont
 
 :::{grid-item-card} Enabling Automated Live Chat Systems
 :link: ./personalizing-site-experience/enabling-automated-live-chat-systems.md
+:::
+
+:::{grid-item-card} Using the Accessibility Menu
+:link: ./personalizing-site-experience/using-the-accessibility-menu.md
 :::
 ::::

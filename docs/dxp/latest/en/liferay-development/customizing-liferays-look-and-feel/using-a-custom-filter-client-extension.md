@@ -55,80 +55,54 @@ assemble:
 
 This specifies that everything in the `build/static` folder should be included as a static resource in the built client extension `.zip` file. The JavaScript files in a client extension are used as static resources in Liferay.
 
-The `src/index.ts` file defines three main JavaScript functions that provide a customizable filter interface: `htmlElementBuilder`, `descriptionBuilder`, and `oDataQueryBuilder`, which are responsible for rendering the filter's UI, describing the filter's state, and building the OData query respectively.
+### Understand the Code
+
+<!-- I'm not sure if this is the best approach, but I decided to eliminate the whole code as I was going to break it down later. I also focused on the functions instead of covering all the code. Eric -->
+
+The `src/index.ts` file defines three main JavaScript functions that provide a customizable filter interface: `descriptionBuilder`, `htmlElementBuilder`, and `oDataQueryBuilder`, which are responsible for describing the filter's state, rendering the filter's UI, and building the OData query respectively.
+
+The `descriptionBuilder()` function takes the filter's internal state (selectedData) and returns it as a human-readable string. Here, it returns the OData query string entered by the user.
 
 ```javascript
-...
-// The filter conforms to the `FDSFilter` interface provided by `@liferay/js-api/data-set`.
-import type {
-	FDSFilter,
-	FDSFilterHTMLElementBuilderArgs,
-} from '@liferay/js-api/data-set';
-
-// As it's a TypesScript file, declare the structure of the internal data that describes the filter state.
-// In this case, it's the plain OData string the user enters through the filter's UI.
-type FilterData = string;
-
-
-// This function takes the filter's internal state (selectedData) and returns it as a human-readable string. Here, it returns the OData query string entered by the user.
 function descriptionBuilder(selectedData: FilterData): string {
 	return selectedData;
 }
+```
 
-// This function renders the UI shown to the user when configuring the filter. It creates an input field for the OData query string, a submit button, and attaches an event handler to the button to update the filter's state using the setFilter callback.
-function htmlElementBuilder({
-	filter,
-	setFilter,
-}: FDSFilterHTMLElementBuilderArgs<FilterData>): HTMLElement {
-	const input = document.createElement('input');
+The `htmlElementBuilder()` function renders the UI shown to the user when configuring the filter. It creates an input field for the OData query string, a submit button, and attaches an event handler to the button to update the filter's state using the setFilter callback.
 
-	// Pre-fills the input with the current filter data if it exists.
-	if (filter.selectedData) {
-		input.value = filter.selectedData;
-	}
+It creates a `div` element, assigns it the class name `dropdown-item`, appends the input field and button to this div, and then returns the div.
 
-	input.className = 'form-control';
-	input.placeholder = 'Search with Odata';
-
-	const button = document.createElement('button');
-
-	button.className = 'btn btn-block btn-secondary btn-sm mt-2';
-	button.innerText = 'Submit';
-	button.onclick = () =>
-		setFilter({
-			selectedData: input.value,
-		});
-
+```javascript
 	const div = document.createElement('div');
-
 	div.className = 'dropdown-item';
 
-	// Appends the input and button to the div container.
 	div.appendChild(input);
 	div.appendChild(button);
 
-	// Returns the complete UI element.
 	return div;
-}
+```
 
-// This function takes the filter's internal state (selectedData) and returns it as the OData query string for filtering the data set.
+The `oDataQueryBuilder()` function takes the filter's internal state (selectedData) and returns it as the OData query string for filtering the data set.
+
+```javascript
 function oDataQueryBuilder(selectedData: FilterData): string {
 	return selectedData;
 }
+```
 
-// An object fdsFilter is created that implements the FDSFilter interface, incorporating the three main functions defined above.
+Then, an object fdsFilter is created that implements the FDSFilter interface, incorporating the three main functions defined above. And this object is exported as the default export of the module.
+```javascript
 const fdsFilter: FDSFilter<FilterData> = {
 	descriptionBuilder,
 	htmlElementBuilder,
 	oDataQueryBuilder,
 };
 
-// This object is exported as the default export of the module.
 export default fdsFilter;
 ```
-<!-- Don't describe the code as comments in the code. Describe the code outside the code. Brian will hate this. -Rich -->
 
-Now, deploy the client extension.
+Now that you understand the code better, deploy the client extension.
 
 ## Deploy the Custom Element Client Extension to Liferay
 

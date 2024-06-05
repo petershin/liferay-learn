@@ -58,6 +58,8 @@ You can use Tab (forward navigation through UI elements) or Shift+Tab (for backw
 
 ## Settings Reference
 
+Guest users' accessibility menu selections are stored locally if they accepted functional cookies in the site. Authenticated users' settings are persisted in the database. If a user's settings have not been saved in the database, local storage is checked before falling back to the default values.
+
 **Underlined Links:** Force an underline effect to increase the visibility of links.
 
 ![Users can force the underlining of all links.](./using-the-accessibility-menu/images/03.png)

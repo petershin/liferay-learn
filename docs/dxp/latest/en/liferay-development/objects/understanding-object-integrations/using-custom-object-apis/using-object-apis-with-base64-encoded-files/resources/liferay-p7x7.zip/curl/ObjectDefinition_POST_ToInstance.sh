@@ -2,7 +2,7 @@ curl \
 	"http://localhost:8080/o/object-admin/v1.0/object-definitions" \
 	--data '{
 		"active": true,
-		"externalReferenceCode": "able",
+		"externalReferenceCode": "ABLE",
 		"label": {
 			"en_US": "Able"
 		},
@@ -11,7 +11,7 @@ curl \
 		"objectFields": [
 			{
 				"businessType": "Attachment",
-				"externalReferenceCode": "users-computer-attachment-1",
+				"externalReferenceCode": "USERS_COMPUTER_ATTACHMENT_1",
 				"indexed": true,
 				"label": {
 					"en_US": "usersComputerAttachment1"
@@ -43,7 +43,7 @@ curl \
 			},
 			{
 				"businessType": "Attachment",
-				"externalReferenceCode": "users-computer-attachment-2",
+				"externalReferenceCode": "USERS_COMPUTER_ATTACHMENT_2",
 				"indexed": true,
 				"label": {
 					"en_US": "usersComputerAttachment2"
@@ -79,7 +79,7 @@ curl \
 			},
 			{
 				"businessType": "Attachment",
-				"externalReferenceCode": "docs-and-media-attachment",
+				"externalReferenceCode": "DOCS_AND_MEDIA_ATTACHMENT",
 				"indexed": true,
 				"label": {
 					"en_US": "docsAndMediaAttachment"

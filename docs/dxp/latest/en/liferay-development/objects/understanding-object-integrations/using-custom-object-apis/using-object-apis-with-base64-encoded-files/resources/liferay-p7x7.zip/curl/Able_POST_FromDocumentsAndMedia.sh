@@ -7,9 +7,9 @@ curl \
 				"externalReferenceCode": "'${1}'",
 				"siteId": "'${2}'"
 			},
-			"name" : "img3.png"
+			"name" : "ImageFromDocumentsAndMedia.png"
 		},
-		"externalReferenceCode" : "docs-and-media-attachment-1"
+		"externalReferenceCode" : "ATTACHMENT_FROM_DOCS_AND_MEDIA"
 	}' \
 	--header "Content-type: application/json" \
 	--request "POST" \

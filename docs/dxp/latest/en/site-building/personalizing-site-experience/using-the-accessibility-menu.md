@@ -17,22 +17,22 @@ Most enhancements to accessibility in Liferay are propagated across the entire p
 
 When you enable the accessibility menu, the site's users can customize their experience with these settings:
 
-| Setting | When enabled... |
-| --- | --- |
-| Underlined Links | Force an underline effect for all links to increase their visibility. |
-| Increased Text Spacing | Increase horizontal spacing between text characters. |
-| Expanded Text | Expand all truncated text. |
-| Reduced Motion | Stop all motion and animations. |
+| Setting                | When enabled...                                                       |
+|------------------------|-----------------------------------------------------------------------|
+| Underlined Links       | Force an underline effect for all links to increase their visibility. |
+| Increased Text Spacing | Increase horizontal spacing between text characters.                  |
+| Expanded Text          | Expand all truncated text.                                            |
+| Reduced Motion         | Stop all motion and animations.                                       |
 
 ## Enabling the Accessibility Menu
 
-You can enable the accessibility menu at the [site or instance scope](../../system-administration/configuring-liferay/understanding-configuration-scope.md). If you have a self-hosted Liferay you can also enable it at the system scope.
+You can enable the accessibility menu at the [site or instance scope](../../system-administration/configuring-liferay/understanding-configuration-scope.md). If you have a self-hosted Liferay, you can also enable it at the system scope.
 
 ![You can enable the accessibility menu in Instance or Site Settings.](./using-the-accessibility-menu/images/07.png)
 
-1. To enable the menu at the site scope, open the Site Menu (![Site Menu](../../images/icon-product-menu.png)) &rarr; Configuration &rarr; Site Settings. 
+1. To enable the menu at the site scope, open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)) &rarr; *Configuration* &rarr; *Site Settings*. 
 
-   To enable the menu at the instance scope, open the Global Menu (![Global Menu](../../images/icon-applications-menu.png)) &rarr; Control Panel &rarr; Instance Settings.
+   To enable the menu at the instance scope, open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) &rarr; *Control Panel* &rarr; *Instance Settings*.
 
 1. Find the Accessibility entry and click *Enable Accessibility Menu*.
 
@@ -40,11 +40,11 @@ You can enable the accessibility menu at the [site or instance scope](../../syst
 
 ## Using the Accessibility Menu
 
-1. Once enabled, refresh the browser window and click the Tab key twice. The option for opening the accessibility menu appears.
+1. Once enabled, refresh the browser window and hit the *Tab* key twice. The option for opening the accessibility menu appears.
 
    ![Click the TAB key twice to activate the accessibility menu.](./using-the-accessibility-menu/images/01.png)
 
-1. Click Enter to open the menu.
+1. Hit *Enter* to open the menu.
 
    ![Toggle the accessibility options in the menu.](./using-the-accessibility-menu/images/02.png)
 
@@ -52,7 +52,7 @@ You can enable the accessibility menu at the [site or instance scope](../../syst
 
    ![You can open the accessibility menu from the user personal menu.](./using-the-accessibility-menu/images/08.png)
 
-1. Toggle the desired options and close the window (click the X or press Esc) when finished.
+1. Toggle the desired options and close the window (click the *X* or press *Esc*) when finished.
 
 You can use Tab (forward navigation through UI elements) or Shift+Tab (for backwards navigation) to return to the menu. You may have to repeat the keystrokes several times depending on where your context is when you begin searching for the accessibility menu.
 

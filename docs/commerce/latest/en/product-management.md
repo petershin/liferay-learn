@@ -14,11 +14,3 @@ taxonomy-category-names:
 - Liferay SaaS
 ---
 # Product Management
-
-```{raw} html
-:file: landingpage_template.html
-```
-
-```{raw} html
-:file: product-management/landing.html
-```

@@ -12,11 +12,3 @@ toc:
   - ./wiki/developer-guide.md
 ---
 # Wikiノード
-
-```{raw} html
-:file: ../landingpage_template.html
-```
-
-```{raw} html
-:file: wiki/landing.html
-```

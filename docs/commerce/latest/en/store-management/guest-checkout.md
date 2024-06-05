@@ -12,11 +12,3 @@ taxonomy-category-names:
 - Liferay SaaS
 ---
 # Guest Checkout
-
-```{raw} html
-:file: ../landingpage_template.html
-```
-
-```{raw} html
-:file: guest-checkout/landing.html
-```

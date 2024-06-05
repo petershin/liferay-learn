@@ -14,11 +14,3 @@ taxonomy-category-names:
 - Liferay SaaS
 ---
 # Add-ons and Connectors
-
-```{raw} html
-:file: landingpage_template.html
-```
-
-```{raw} html
-:file: add-ons-and-connectors/landing.html
-```

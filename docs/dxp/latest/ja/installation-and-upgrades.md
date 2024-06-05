@@ -8,11 +8,3 @@ toc:
 - ./installation-and-upgrades/reference.md
 ---
 # インストールとアップグレード
-
-```{raw} html
-:file: landingpage_template.html
-```
-
-```{raw} html
-:file: installation-and-upgrades/landing.html
-```

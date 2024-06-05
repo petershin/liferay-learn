@@ -6,11 +6,3 @@ toc:
 ---
 
 # カタログ
-
-```{raw} html
-:file: ../landingpage_template.html
-```
-
-```{raw} html
-:file: catalogs/landing.html
-```

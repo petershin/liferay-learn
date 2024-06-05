@@ -8,10 +8,3 @@ taxonomy-category-names:
 - Liferay SaaS
 ---
 # Cache
-
-```{raw} html
-:file: ../../landingpage_template.html
-```
-```{raw} html
-:file: cache/landing.html
-```

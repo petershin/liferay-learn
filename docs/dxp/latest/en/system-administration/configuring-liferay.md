@@ -20,11 +20,3 @@ taxonomy-category-names:
 - Liferay PaaS
 ---
 # Configuring Liferay
-
-```{raw} html
-:file: ../landingpage_template.html
-```
-
-```{raw} html
-:file: configuring-liferay/landing.html
-```

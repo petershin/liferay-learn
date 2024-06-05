@@ -5,11 +5,3 @@ toc:
 ---
 
 # 購読リスト
-
-```{raw} html
-:file: ../landingpage_template.html
-```
-
-```{raw} html
-:file: subscriptions/landing.html
-```

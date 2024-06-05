@@ -20,11 +20,3 @@ taxonomy-category-names:
 - Liferay SaaS
 ---
 # Creating Store Content
-
-```{raw} html
-:file: landingpage_template.html
-```
-
-```{raw} html
-:file: creating-store-content/landing.html
-```

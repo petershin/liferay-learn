@@ -24,14 +24,6 @@ For users interested in adding other shipping methods or carriers, see [Implemen
 
 配送方法は、国または地域によって制限される場合があります。 詳細は、[配送方法の制限の適用](./configuring-shipping-methods/applying-shipping-method-restrictions.md)を参照してください。
 
-```{raw} html
-:file: ../landingpage_template.html
-```
-
-```{raw} html
-:file: configuring-shipping-methods/landing.html
-```
-
 <br></br>
 
 ## 関連トピック

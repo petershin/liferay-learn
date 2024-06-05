@@ -14,11 +14,3 @@ taxonomy-category-names:
 uuid: 75abd1e9-8bae-4a1c-ba68-b6b85a3d6d01
 ---
 # Publishing and Sharing
-
-```{raw} html
-:file: ../../landingpage_template.html
-```
-
-```{raw} html
-:file: publishing-and-sharing/landing.html
-```

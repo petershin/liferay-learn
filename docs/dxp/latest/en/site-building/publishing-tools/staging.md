@@ -59,11 +59,3 @@ Understanding this process can improve efficiency and help you plan ahead to ach
 
 !!! important
     Staging does not support [Commerce applications](https://learn.liferay.com/w/commerce/index) and [custom objects](../../liferay-development/objects.md). During the publishing process, entities from Commerce and objects are not staged. Also, [A/B testing](../optimizing-sites/ab-testing.md) is not supported if staging is enabled.
-
-```{raw} html
-:file: ../../landingpage_template.html
-```
-
-```{raw} html
-:file: staging/landing.html
-```

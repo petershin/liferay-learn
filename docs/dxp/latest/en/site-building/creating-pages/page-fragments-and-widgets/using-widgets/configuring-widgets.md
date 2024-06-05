@@ -18,10 +18,3 @@ uuid: 58aff007-6de2-4db3-8996-883682c4bf5f
 
 Widgets available out-of-the-box with Liferay DXP share several configurable features: look and feel, import/export of widget data, inter-widget communication, and more.
 
-```{raw} html
-:file: ../../../../landingpage_template.html
-```
-
-```{raw} html
-:file: configuring-widgets/landing.html
-```

@@ -5,11 +5,3 @@ toc:
 ---
 
 # 商品の作成と管理
-
-```{raw} html
-:file: ../landingpage_template.html
-```
-
-```{raw} html
-:file: creating-and-managing-products/landing.html
-```

@@ -6,11 +6,3 @@ toc:
   - ./using-web-experience-management/enabling-commerce-products-as-related-assets.md
 ---
 # Web Experience Managementの使用
-
-```{raw} html
-:file: ../landingpage_template.html
-```
-
-```{raw} html
-:file: using-web-experience-management/landing.html
-```

@@ -15,11 +15,3 @@ toc:
 # アプリケーションの構築
 
 自分が知っているツールとフレームワークを使用してLiferay DXP用のすばらしいアプリケーションを構築する方法はたくさんあります。 Liferay DXP 7.4には、コードを記述したりモジュールをデプロイしたりせずにビジネスアプリケーションを作成するために使用できる [オブジェクト](building-applications/objects.md) が導入されています。
-
-```{raw} html
-:file: landingpage_template.html
-```
-
-```{raw} html
-:file: building-applications/landing.html
-```

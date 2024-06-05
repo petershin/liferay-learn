@@ -12,11 +12,3 @@ taxonomy-category-names:
 - Liferay PaaS
 ---
 # Job Scheduler Framework
-
-```{raw} html
-:file: ../../landingpage_template.html
-```
-
-```{raw} html
-:file: job-scheduler-framework/landing.html
-```

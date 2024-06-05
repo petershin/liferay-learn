@@ -14,11 +14,3 @@ taxonomy-category-names:
 - Liferay SaaS
 ---
 # Using Web Experience Management
-
-```{raw} html
-:file: ../landingpage_template.html
-```
-
-```{raw} html
-:file: using-web-experience-management/landing.html
-```

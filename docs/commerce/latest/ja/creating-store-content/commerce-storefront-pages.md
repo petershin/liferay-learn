@@ -13,11 +13,3 @@ toc:
 ---
 
 # Commerce ストアフロントページ
-
-```{raw} html
-:file: ../landingpage_template.html
-```
-
-```{raw} html
-:file: commerce-storefront-pages/landing.html
-```

@@ -9,11 +9,3 @@ toc:
   - ./using-search/search-configuration-reference.md
 ---
 # 検索の利用
-
-```{raw} html
-:file: landingpage_template.html
-```
-
-```{raw} html
-:file: using-search/landing.html
-```

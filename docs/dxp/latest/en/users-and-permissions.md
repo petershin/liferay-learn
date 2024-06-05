@@ -17,11 +17,3 @@ taxonomy-category-names:
 - Liferay PaaS
 ---
 # Users and Permissions
-
-```{raw} html
-:file: landingpage_template.html
-```
-
-```{raw} html
-:file: users-and-permissions/landing.html
-```

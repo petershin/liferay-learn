@@ -12,11 +12,3 @@ taxonomy-category-names:
 - Liferay SaaS
 ---
 # Creating and Managing Products
-
-```{raw} html
-:file: ../landingpage_template.html
-```
-
-```{raw} html
-:file: creating-and-managing-products/landing.html
-```

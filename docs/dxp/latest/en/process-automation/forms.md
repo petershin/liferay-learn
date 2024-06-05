@@ -18,11 +18,3 @@ taxonomy-category-names:
 uuid: f84fd598-9704-4005-9f15-35f6c4bf35a0
 ---
 # Forms
-
-```{raw} html
-:file: ../landingpage_template.html
-```
-
-```{raw} html
-:file: forms/landing.html
-```

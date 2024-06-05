@@ -10,11 +10,3 @@ taxonomy-category-names:
 - Liferay PaaS
 ---
 # Managing Inventory
-
-```{raw} html
-:file: ../landingpage_template.html
-```
-
-```{raw} html
-:file: managing-inventory/landing.html
-```

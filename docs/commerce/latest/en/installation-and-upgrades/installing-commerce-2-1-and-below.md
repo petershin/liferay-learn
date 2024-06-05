@@ -11,11 +11,3 @@ taxonomy-category-names:
 - Liferay PaaS
 ---
 # Installing Commerce 2.1 and Below
-
-```{raw} html
-:file: ../landingpage_template.html
-```
-
-```{raw} html
-:file: installing-commerce-2-1-and-below/landing.html
-```

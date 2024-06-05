@@ -14,11 +14,3 @@ taxonomy-category-names:
 - Liferay PaaS
 ---
 # Sales
-
-```{raw} html
-:file: ../landingpage_template.html
-```
-
-```{raw} html
-:file: sales/landing.html
-```

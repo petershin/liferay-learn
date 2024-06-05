@@ -4,11 +4,3 @@ toc:
 ---
 
 # 在庫管理
-
-```{raw} html
-:file: ../landingpage_template.html
-```
-
-```{raw} html
-:file: managing-inventory/landing.html
-```

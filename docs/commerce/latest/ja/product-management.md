@@ -6,11 +6,3 @@ toc:
 ---
 
 # 商品管理
-
-```{raw} html
-:file: landingpage_template.html
-```
-
-```{raw} html
-:file: product-management/landing.html
-```

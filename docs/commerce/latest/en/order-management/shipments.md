@@ -14,11 +14,3 @@ taxonomy-category-names:
 - Liferay SaaS
 ---
 # Shipments
-
-```{raw} html
-:file: ../landingpage_template.html
-```
-
-```{raw} html
-:file: shipments/landing.html
-```

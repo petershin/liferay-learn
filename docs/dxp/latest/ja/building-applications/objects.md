@@ -32,14 +32,6 @@ Liferay Objectを使用すると、コードを記述したりモジュールを
 
 カスタムアプリケーションの構築を開始するには [オブジェクトの作成](./objects/creating-and-managing-objects/creating-objects.md) を参照し、オブジェクトがLiferayのコアフレームワークをどのように活用するかについて確認するには [オブジェクト統合を理解する](./objects/understanding-object-integrations.md) を参照してください。
 
-```{raw} html
-:file: ../landingpage_template.html
-```
-
-```{raw} html
-:file: objects/landing.html
-```
-
 <!--
 ## Modeling Data Structures
 

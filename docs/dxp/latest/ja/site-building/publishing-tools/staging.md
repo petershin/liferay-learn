@@ -53,11 +53,3 @@ Stagingの設定には2つのオプションがあります： **ローカルラ
 ```{important}
 ステージングは [Commerce](https://learn.liferay.com/w/commerce/index) または[カスタムオブジェクト](../../building-applications/objects.md)をサポートしていません。 パブリッシング処理中、コマースとオブジェクトのエンティティはステージングされません。 
 ```
-
-```{raw} html
-:file: ../../landingpage_template.html
-```
-
-```{raw} html
-:file: staging/landing.html
-```

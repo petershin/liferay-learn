@@ -7,11 +7,3 @@ toc:
   - ./publishing-and-sharing/accessing-documents-with-webdav.md
 ---
 # 公開と共有
-
-```{raw} html
-:file: ../../landingpage_template.html
-```
-
-```{raw} html
-:file: publishing-and-sharing/landing.html
-```

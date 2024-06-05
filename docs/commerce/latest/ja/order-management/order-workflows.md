@@ -6,11 +6,3 @@ toc:
 ---
 
 # 注文ワークフロー
-
-```{raw} html
-:file: ../landingpage_template.html
-```
-
-```{raw} html
-:file: order-workflows/landing.html
-```

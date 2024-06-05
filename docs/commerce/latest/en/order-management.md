@@ -19,11 +19,3 @@ taxonomy-category-names:
 - Liferay SaaS
 ---
 # Order Management
-
-```{raw} html
-:file: landingpage_template.html
-```
-
-```{raw} html
-:file: order-management/landing.html
-```

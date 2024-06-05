@@ -19,11 +19,3 @@ toc:
   - ./products/product-configuration-reference.md
 ---
 # プロダクト
-
-```{raw} html
-:file: ../../landingpage_template.html
-```
-
-```{raw} html
-:file: products/landing.html
-```

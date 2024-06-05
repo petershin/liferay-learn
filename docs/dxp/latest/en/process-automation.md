@@ -11,11 +11,3 @@ taxonomy-category-names:
 uuid: d672893e-8283-4cf6-a53b-59e9ba30bd94
 ---
 # Process Automation
-
-```{raw} html
-:file: ./landingpage_template.html
-```
-
-```{raw} html
-:file: process-automation/landing.html
-```

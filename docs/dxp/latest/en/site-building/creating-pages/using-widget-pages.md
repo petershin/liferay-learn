@@ -14,11 +14,3 @@ uuid: ffee7ddb-76fd-477c-9426-76ca6ab6203c
 # Using Widget Pages
 
 A widget page is a page with a set layout that allows widgets (applications) to be displayed. Widgets can display content or add interactive and dynamic functionality to the page.
-
-```{raw} html
-:file: ../../landingpage_template.html
-```
-
-```{raw} html
-:file: using-widget-pages/landing.html
-```

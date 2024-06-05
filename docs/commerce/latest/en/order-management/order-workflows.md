@@ -13,11 +13,3 @@ taxonomy-category-names:
 - Liferay SaaS
 ---
 # Order Workflows
-
-```{raw} html
-:file: ../landingpage_template.html
-```
-
-```{raw} html
-:file: order-workflows/landing.html
-```

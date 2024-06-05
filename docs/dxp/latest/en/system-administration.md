@@ -16,11 +16,3 @@ taxonomy-category-names:
 - Liferay PaaS
 ---
 # System Administration
-
-```{raw} html
-:file: landingpage_template.html
-```
-
-```{raw} html
-:file: system-administration/landing.html
-```

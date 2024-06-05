@@ -9,11 +9,3 @@ toc:
 - ./creating-pages/page-settings.md
 ---
 # ページの作成
-
-```{raw} html
-:file: ../landingpage_template.html
-```
-
-```{raw} html
-:file: creating-pages/landing.html
-```

@@ -19,11 +19,3 @@ taxonomy-category-names:
 ---
 
 # Store Management
-
-```{raw} html
-:file: landingpage_template.html
-```
-
-```{raw} html
-:file: store-management/landing.html
-```

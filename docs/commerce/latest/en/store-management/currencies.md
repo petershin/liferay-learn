@@ -14,11 +14,3 @@ taxonomy-category-names:
 - Liferay SaaS
 ---
 # Currencies
-
-```{raw} html
-:file: ../landingpage_template.html
-```
-
-```{raw} html
-:file: currencies/landing.html
-```

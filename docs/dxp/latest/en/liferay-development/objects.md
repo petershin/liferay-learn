@@ -39,14 +39,6 @@ With Objects, you can also extend and configure [system services](./objects/crea
 
 See [Creating Objects](./objects/creating-and-managing-objects/creating-objects.md) to get started building custom applications or [Understanding Object Integrations](./objects/understanding-object-integrations.md) to learn more about how Objects leverages Liferay's core frameworks.
 
-```{raw} html
-:file: ../landingpage_template.html
-```
-
-```{raw} html
-:file: objects/landing.html
-```
-
 <!--
 ## Modeling Data Structures
 

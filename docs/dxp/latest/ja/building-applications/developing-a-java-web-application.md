@@ -7,11 +7,3 @@ toc:
 - ./developing-a-java-web-application/reference.md
 ---
 # Java Webアプリケーションの開発
-
-```{raw} html
-   :file: ../landingpage_template.html
-```
-
-```{raw} html
-   :file: developing-a-java-web-application/landing.html
-```

@@ -9,11 +9,3 @@ toc:
 - ./data-frameworks/upgrade-processes.md
 ---
 # データフレームワーク
-
-```{raw} html
-:file: ../landingpage_template.html
-```
-
-```{raw} html
-:file: data-frameworks/landing.html
-```

@@ -17,11 +17,3 @@ taxonomy-category-names:
 ---
 
 # Get Help
-
-```{raw} html
-:file: landingpage_template.html
-```
-
-```{raw} html
-:file: get-help/landing.html
-```

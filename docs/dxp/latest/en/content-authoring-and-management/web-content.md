@@ -13,11 +13,3 @@ taxonomy-category-names:
 uuid: 1b4e41e3-950f-497b-911b-c058157e3c9c
 ---
 # Web Content
-
-```{raw} html
-:file: ../landingpage_template.html
-```
-
-```{raw} html
-:file: web-content/landing.html
-```

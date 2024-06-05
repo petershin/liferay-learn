@@ -15,11 +15,3 @@ taxonomy-category-names:
 uuid: f746c4f8-3070-4739-babf-1377a1c58926
 ---
 # Using Search
-
-```{raw} html
-:file: landingpage_template.html
-```
-
-```{raw} html
-:file: using-search/landing.html
-```

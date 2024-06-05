@@ -5,11 +5,3 @@ toc:
 - ./add-ons-and-connectors/mulesoft.md
 ---
 # アドオンとコネクター
-
-```{raw} html
-:file: landingpage_template.html
-```
-
-```{raw} html
-:file: add-ons-and-connectors/landing.html
-```

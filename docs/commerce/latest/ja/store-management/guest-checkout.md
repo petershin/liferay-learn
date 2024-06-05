@@ -5,11 +5,3 @@ toc:
 ---
 
 # ゲストのチェックアウト
-
-```{raw} html
-:file: ../landingpage_template.html
-```
-
-```{raw} html
-:file: guest-checkout/landing.html
-```

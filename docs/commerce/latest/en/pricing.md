@@ -20,11 +20,3 @@ taxonomy-category-names:
 - Liferay SaaS
 ---
 # Pricing
-
-```{raw} html
-:file: landingpage_template.html
-```
-
-```{raw} html
-:file: pricing/landing.html
-```

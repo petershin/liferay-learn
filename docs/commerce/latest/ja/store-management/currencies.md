@@ -7,11 +7,3 @@ toc:
 ---
 
 # 通貨
-
-```{raw} html
-:file: ../landingpage_template.html
-```
-
-```{raw} html
-:file: currencies/landing.html
-```

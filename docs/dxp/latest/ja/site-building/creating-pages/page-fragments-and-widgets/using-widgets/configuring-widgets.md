@@ -10,11 +10,3 @@ toc:
 # ウィジェットの構成
 
 Liferay DXPですぐに利用できるウィジェットは、ルック＆フィール、ウィジェットデータのインポート/エクスポート、ウィジェット間の通信など、いくつかの設定可能な機能を共有しています。
-
-```{raw} html
-:file: ../../../../landingpage_template.html
-```
-
-```{raw} html
-:file: configuring-widgets/landing.html
-```

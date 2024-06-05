@@ -13,11 +13,3 @@ toc:
   - ./creating-store-content/liferay-commerce-fragments.md
 ---
 # ストアコンテンツの作成
-
-```{raw} html
-:file: landingpage_template.html
-```
-
-```{raw} html
-:file: creating-store-content/landing.html
-```

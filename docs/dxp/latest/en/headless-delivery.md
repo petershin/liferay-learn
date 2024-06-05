@@ -9,11 +9,3 @@ toc:
 uuid: 64b70916-0c1a-437e-ae3c-08a0ed53dcda
 ---
 # Headless Delivery
-
-```{raw} html
-:file: landingpage_template.html
-```
-
-```{raw} html
-:file: headless-delivery/landing.html
-```

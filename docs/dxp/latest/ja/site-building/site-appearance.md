@@ -6,11 +6,3 @@ toc:
 - ./site-appearance/style-books.md
 ---
 # サイトの外観
-
-```{raw} html
-:file: ../landingpage_template.html
-```
-
-```{raw} html
-:file: site-appearance/landing.html
-```

@@ -8,11 +8,3 @@ taxonomy-category-names:
 - Liferay SaaS
 ---
 # Design and Theme
-
-```{raw} html
-:file: ../landingpage_template.html
-```
-
-```{raw} html
-:file: design-and-theme/landing.html
-```

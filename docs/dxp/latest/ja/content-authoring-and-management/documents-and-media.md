@@ -28,11 +28,3 @@ Liferay [Workflow](../process-automation/workflow/using-workflows/activating-wor
 ```{tip}
 ドキュメントとメディアはすべてのサイトで利用でき、[アセットライブラリ](./asset-libraries/asset-libraries-overview.md)で有効にすることが可能です。 サイトにアップロードされたファイルはそのサイトにスコープされており、DXPインスタンス内の他のサイトから容易にアクセスすることはできません。 アセットライブラリにアップロードされたファイルはグローバルに利用可能であり、複数のサイトにリンクしてすぐにアクセスできます。
 ```
-
-```{raw} html
-:file: ../landingpage_template.html
-```
-
-```{raw} html
-:file: documents-and-media/landing.html
-```

@@ -10,11 +10,3 @@ toc:
 - ./installation-and-upgrades/installing-commerce-2-1-and-below.md
 ---
 # インストールとアップグレード
-
-```{raw} html
-:file: landingpage_template.html
-```
-
-```{raw} html
-:file: installation-and-upgrades/landing.html
-```

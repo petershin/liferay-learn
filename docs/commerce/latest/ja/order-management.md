@@ -12,11 +12,3 @@ toc:
   - ./order-management/developer-guide.md
 ---
 # 注文管理
-
-```{raw} html
-:file: landingpage_template.html
-```
-
-```{raw} html
-:file: order-management/landing.html
-```

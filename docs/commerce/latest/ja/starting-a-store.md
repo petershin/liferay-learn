@@ -6,11 +6,3 @@ toc:
   - ./starting-a-store/sites-and-site-types.md
 ---
 # ストアサイトを作成する
-
-```{raw} html
-:file: landingpage_template.html
-```
-
-```{raw} html
-:file: starting-a-store/landing.html
-```

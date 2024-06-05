@@ -30,14 +30,6 @@ For users interested in adding other shipping methods or carriers, see [Implemen
 
 Shipping methods may be restricted by country or region. To learn more, see [Applying Shipping Method Restrictions](./configuring-shipping-methods/applying-shipping-method-restrictions.md).
 
-```{raw} html
-:file: ../landingpage_template.html
-```
-
-```{raw} html
-:file: configuring-shipping-methods/landing.html
-```
-
 <br></br>
 
 ## Related Topics

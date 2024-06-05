@@ -83,11 +83,3 @@ A Standalone or Product Menu application always includes both the form and table
 
 * [Creating an Application with App Builder](./app-builder/creating-a-standard-application.md)
 * [Creating a Workflow Powered Application](./app-builder/creating-a-workflow-powered-application.md)
-
-```{raw} html
-:file: ../../landingpage_template.html
-```
-
-```{raw} html
-:file: app-builder/landing.html
-```

@@ -11,11 +11,3 @@ taxonomy-category-names:
 - Liferay PaaS
 ---
 # Data Integration
-
-```{raw} html
-:file: ../landingpage_template.html
-```
-
-```{raw} html
-:file: data-integration/landing.html
-```

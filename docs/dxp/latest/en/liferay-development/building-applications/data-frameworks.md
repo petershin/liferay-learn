@@ -15,11 +15,3 @@ taxonomy-category-names:
 - Liferay PaaS
 ---
 # Data Frameworks
-
-```{raw} html
-:file: ../../landingpage_template.html
-```
-
-```{raw} html
-:file: data-frameworks/landing.html
-```

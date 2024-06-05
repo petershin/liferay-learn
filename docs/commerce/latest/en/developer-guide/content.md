@@ -11,11 +11,3 @@ taxonomy-category-names:
 - Liferay PaaS
 ---
 # Content
-
-```{raw} html
-:file: ../landingpage_template.html
-```
-
-```{raw} html
-:file: content/landing.html
-```

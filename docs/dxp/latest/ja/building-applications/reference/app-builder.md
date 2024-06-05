@@ -78,11 +78,3 @@ toc:
 
 * [App Builderでアプリケーションを作成する](./app-builder/creating-a-standard-application.md) 
 * [ワークフローを利用したアプリケーションの作成](./app-builder/creating-a-workflow-powered-application.md) 
-
-```{raw} html
-:file: ../../landingpage_template.html
-```
-
-```{raw} html
-:file: app-builder/landing.html
-```

@@ -6,11 +6,3 @@ toc:
 - ./reference/portlet-ids.md
 ---
 # リファレンス
-
-```{raw} html
-:file: ../../landingpage_template.html
-```
-
-```{raw} html
-:file: reference/landing.html
-```

@@ -19,11 +19,3 @@ taxonomy-category-names:
 - Liferay SaaS
 ---
 # Commerce Storefront Pages
-
-```{raw} html
-:file: ../landingpage_template.html
-```
-
-```{raw} html
-:file: commerce-storefront-pages/landing.html
-```

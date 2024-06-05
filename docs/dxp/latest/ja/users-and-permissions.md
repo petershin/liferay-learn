@@ -10,11 +10,3 @@ toc:
 - ./users-and-permissions/developer-guide.md
 ---
 # ユーザーと権限
-
-```{raw} html
-:file: landingpage_template.html
-```
-
-```{raw} html
-:file: users-and-permissions/landing.html
-```

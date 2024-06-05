@@ -9,11 +9,3 @@ toc:
 uuid: ef6191ee-72fe-4584-bb7b-76204506d81f
 ---
 # Upgrading Liferay
-
-```{raw} html
-:file: ../landingpage_template.html
-```
-
-```{raw} html
-:file: upgrading-liferay/landing.html
-```

@@ -10,11 +10,3 @@ toc:
   - '[Open a Ticket](https://liferay-support.zendesk.com/agent/)'
 ---
 # サポート
-
-```{raw} html
-:file: landingpage_template.html
-```
-
-```{raw} html
-:file: get-help/landing.html
-```

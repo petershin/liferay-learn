@@ -10,11 +10,3 @@ taxonomy-category-names:
 - Liferay PaaS
 ---
 # Promotions
-
-```{raw} html
-:file: ../landingpage_template.html
-```
-
-```{raw} html
-:file: promotions/landing.html
-```

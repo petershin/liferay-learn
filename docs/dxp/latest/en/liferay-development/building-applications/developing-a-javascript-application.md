@@ -10,11 +10,3 @@ taxonomy-category-names:
 - Liferay SaaS
 ---
 # Developing a JavaScript Application
-
-```{raw} html
-:file: ../landingpage_template.html
-```
-
-```{raw} html
-:file: developing-a-javascript-application/landing.html
-```

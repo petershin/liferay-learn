@@ -36,11 +36,3 @@ If desired, you can [export](../site-building/sites/exporting-importing-site-pag
 
 !!! tip
     Documents and Media is available in all sites and can be enabled in [Asset Libraries](./asset-libraries.md). Files uploaded to a site are scoped to that site and cannot be readily accessed by other sites in your DXP instance. Files uploaded to an Asset Library are available globally and can be linked to multiple sites for ready access.
-
-```{raw} html
-:file: ../landingpage_template.html
-```
-
-```{raw} html
-:file: documents-and-media/landing.html
-```

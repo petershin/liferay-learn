@@ -8,11 +8,3 @@ toc:
 - ./upgrading-liferay/reference.md
 ---
 # Liferayのアップグレード
-
-```{raw} html
-:file: ../landingpage_template.html
-```
-
-```{raw} html
-:file: upgrading-liferay/landing.html
-```

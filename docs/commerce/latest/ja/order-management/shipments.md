@@ -7,11 +7,3 @@ toc:
 ---
 
 # 出荷
-
-```{raw} html
-:file: ../landingpage_template.html
-```
-
-```{raw} html
-:file: shipments/landing.html
-```

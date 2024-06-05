@@ -27,11 +27,3 @@ toc:
 さらに、パブリケーションはプロセスの透明性が高いため、公開時の競合をより簡単に特定して解決することができます。 また、完全な公開履歴を保持しているので、インスタンスへの変更を確認したり、元に戻したりするのに利用できます。
 
 まずは、 [パブリケーションの有効化](./publications/enabling-publications.md) をご覧ください。
-
-```{raw} html
-:file: ../../landingpage_template.html
-```
-
-```{raw} html
-:file: publications/landing.html
-```

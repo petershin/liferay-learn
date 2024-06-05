@@ -16,11 +16,3 @@ taxonomy-category-names:
 uuid: 2bb5e389-2ced-48e3-b571-11a9b1d920ba
 ---
 # Creating Pages
-
-```{raw} html
-:file: ../landingpage_template.html
-```
-
-```{raw} html
-:file: creating-pages/landing.html
-```

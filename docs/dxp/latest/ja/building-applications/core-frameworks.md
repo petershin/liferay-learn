@@ -8,11 +8,3 @@ toc:
   - ./core-frameworks/servlets.md
 ---
 # コアフレームワーク
-
-```{raw} html
-:file: ../landingpage_template.html
-```
-
-```{raw} html
-:file: core-frameworks/landing.html
-```

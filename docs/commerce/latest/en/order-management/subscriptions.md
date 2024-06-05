@@ -12,11 +12,3 @@ taxonomy-category-names:
 - Liferay SaaS
 ---
 # Subscriptions
-
-```{raw} html
-:file: ../landingpage_template.html
-```
-
-```{raw} html
-:file: subscriptions/landing.html
-```

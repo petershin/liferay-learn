@@ -56,11 +56,3 @@ Additionally, Publications provides a high level of process transparency, so you
 | Wiki                         | &#10004;     |
 
 To get started, see [Enabling Publications](./publications/enabling-publications.md).
-
-```{raw} html
-:file: ../../landingpage_template.html
-```
-
-```{raw} html
-:file: publications/landing.html
-```

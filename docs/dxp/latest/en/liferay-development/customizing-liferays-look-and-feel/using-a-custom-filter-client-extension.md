@@ -61,7 +61,7 @@ This specifies that everything in the `build/static` folder should be included a
 
 The `src/index.ts` file defines three main JavaScript functions that provide a customizable filter interface: `descriptionBuilder`, `htmlElementBuilder`, and `oDataQueryBuilder`, which are responsible for describing the filter's state, rendering the filter's UI, and building the OData query respectively.
 
-The `descriptionBuilder()` function takes the filter's internal state (selectedData) and returns it as a human-readable string. Here, it returns the OData query string entered by the user.
+The `descriptionBuilder()` function takes the filter's internal state (`selectedData`) and returns it as a human-readable string. Here, it returns the OData query string entered by the user.
 
 ```javascript
 function descriptionBuilder(selectedData: FilterData): string {
@@ -69,7 +69,7 @@ function descriptionBuilder(selectedData: FilterData): string {
 }
 ```
 
-The `htmlElementBuilder()` function renders the UI shown to the user when configuring the filter. It creates an input field for the OData query string, a submit button, and attaches an event handler to the button to update the filter's state using the setFilter callback.
+The `htmlElementBuilder()` function renders the UI shown to the user when configuring the filter. It creates an input field for the OData query string, a submit button, and attaches an event handler to the button to update the filter's state using the `setFilter` callback.
 
 It creates a `div` element, assigns it the class name `dropdown-item`, appends the input field and button to this div, and then returns the div.
 
@@ -83,7 +83,7 @@ It creates a `div` element, assigns it the class name `dropdown-item`, appends t
 	return div;
 ```
 
-The `oDataQueryBuilder()` function takes the filter's internal state (selectedData) and returns it as the OData query string for filtering the data set.
+The `oDataQueryBuilder()` function takes the filter's internal state (`selectedData`) and returns it as the OData query string for filtering the data set.
 
 ```javascript
 function oDataQueryBuilder(selectedData: FilterData): string {
@@ -91,7 +91,7 @@ function oDataQueryBuilder(selectedData: FilterData): string {
 }
 ```
 
-Then, an object fdsFilter is created that implements the FDSFilter interface, incorporating the three main functions defined above. And this object is exported as the default export of the module.
+Then, an object `fdsFilter` is created that implements the `FDSFilter` interface, incorporating the three main functions defined above. And this object is exported as the default export of the module.
 ```javascript
 const fdsFilter: FDSFilter<FilterData> = {
 	descriptionBuilder,
@@ -102,7 +102,7 @@ const fdsFilter: FDSFilter<FilterData> = {
 export default fdsFilter;
 ```
 
-Now that you understand the code better, deploy the client extension.
+Now, deploy the client extension.
 
 ## Deploy the Custom Element Client Extension to Liferay
 

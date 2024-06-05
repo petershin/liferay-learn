@@ -5,7 +5,7 @@ taxonomy-category-names:
 - Liferay PaaS
 uuid: 0a8d12de-8c80-4954-bcc1-9f014120e043
 ---
-# Quotas
+# Quotas and Resource Usage
 
 Quotas are the maximum number of resources available for a given Liferay Cloud project. Administrators may configure services and environments to use resources according to project need. (For example, a production environment may be allocated additional CPU cores while a development environment might have fewer cores.)
 

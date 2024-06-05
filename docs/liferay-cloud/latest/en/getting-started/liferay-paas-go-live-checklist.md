@@ -11,25 +11,25 @@ Liferay Cloud is committed to your project's smooth launch. This go-live checkli
 
 These items are *critical* to review before you go live:
 
-* Your [plan quotas](#subscription-plan-quotas)
+- Your [plan quotas](#subscription-plan-quotas)
 
-* Regularly scheduled [backups](#backups)
+- Regularly scheduled [backups](#backups)
 
-* Project performance, including [stress testing](#stress-testing)
+- Project performance, including [stress testing](#stress-testing)
 
-* Any registered [custom domains](#custom-domains)
+- Any registered [custom domains](#custom-domains)
 
-* Correctly configured [auto-scaling](#auto-scaling)
+- Correctly configured [auto-scaling](#auto-scaling)
 
-* [Deploying without downtime](#zero-downtime-deployments)
+- [Deploying without downtime](#zero-downtime-deployments)
 
-* Your [team members](#team-membership) invited and given the proper permissions
+- Your [team members](#team-membership) invited and given the proper permissions
 
 Prioritize these items as you go through this checklist so that your project launch is successful.
 
 ## Reviewing Your Project Architecture
 
-The goal of reviewing your project architecture is to be sure your environment, services, and features are optimized to achieve the end result of what you're building. 
+The goal of reviewing your project architecture is to be sure your environment, services, and features are optimized to achieve the end result of what you're building.
 
 ### Environment Specifications
 
@@ -53,23 +53,23 @@ Deploy test builds to confirm that the Software Development Life Cycle (SDLC) is
 
 Here is more information about the SDLC and how to use it:
 
-* [Overview of the Liferay Cloud Deployment Workflow](../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md)
+- [Overview of the Liferay Cloud Deployment Workflow](../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md)
 
-* [Deploying Changes via the Liferay Cloud Console](../updating-services-in-liferay-paas/deploying-changes-via-the-liferay-cloud-console.md)
+- [Deploying Changes via the Liferay Cloud Console](../updating-services-in-liferay-paas/deploying-changes-via-the-liferay-cloud-console.md)
 
-* [Deploying Changes via the CLI Tool](../updating-services-in-liferay-paas/deploying-changes-via-the-cli-tool.md)
+- [Deploying Changes via the CLI Tool](../updating-services-in-liferay-paas/deploying-changes-via-the-cli-tool.md)
 
-* [Automatically Deploying CI Service Builds](../updating-services-in-liferay-paas/automatically-deploying-ci-service-builds.md)
+- [Automatically Deploying CI Service Builds](../updating-services-in-liferay-paas/automatically-deploying-ci-service-builds.md)
 
 ## Reviewing Your Metrics
 
-Your metrics include items such as the alerts you may receive, your quotas, and your ability to profile your environment. Adjust these properly before going into production. 
+Your metrics include items such as the alerts you may receive, your quotas, and your ability to profile your environment. Adjust these properly before going into production.
 
 ### Subscription Plan Quotas
 
 Deploy to all of your environments to confirm each of their quotas. If you have changed the resource allocation for some services, revert these changes for your production environment before you go live.
 
-See [Quotas](../manage-and-optimize/quotas.md) for more information.
+See [Quotas and Resource Usage](../manage-and-optimize/quotas-and-resource-usage.md) for more information.
 
 ### Dynatrace
 
@@ -85,7 +85,7 @@ Confirm that your project's main contributors also have updated their preference
 
 ## Reviewing Your Continuity Plan
 
-Your continuity plan includes items to ensure your site keeps running in the event of various events. 
+Your continuity plan includes items to ensure your site keeps running in the event of various events.
 
 ### Backups
 
@@ -111,7 +111,7 @@ See [Self-Healing](../support-and-troubleshooting/troubleshooting/self-healing.m
 
 ## Reviewing Your Project's Benchmarks
 
-Your performance benchmarks ensure your site runs as you plan it to run. 
+Your performance benchmarks ensure your site runs as you plan it to run.
 
 ### Performance
 

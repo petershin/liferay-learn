@@ -39,13 +39,11 @@ The number of nodes for your clustering environment is determined by the `scale`
 
 Once the Liferay service has been deployed with the `scale` property set to `1`, then update this value to the desired number of nodes.
 
-```{warning}
-Multiple nodes in a clustered environment may conflict with each other if there are any changes to the database schema (such as when you are installing a patch). When this happens, avoid conflicting schema issues by first changing the scale back to 1 and redeploying the Liferay service. Then, change the scale back to the correct number of nodes and redeploy the service again.
-```
+!!! warning
+    Multiple nodes in a clustered environment may conflict with each other if there are any changes to the database schema (such as when you are installing a patch). When this happens, avoid conflicting schema issues by first changing the scale back to 1 and redeploying the Liferay service. Then, change the scale back to the correct number of nodes and redeploy the service again.
 
-```{note}
-Increasing the number of nodes for your Liferay DXP instance may increase the number of CPU cores allocated to your project. If the increased number of CPU cores exceeds the maximum [quota](../../manage-and-optimize/quotas.md) for your plan, then the deployment may fail.
-```
+!!! note
+    Increasing the number of nodes for your Liferay DXP instance may increase the number of CPU cores allocated to your project. If the increased number of CPU cores exceeds the maximum [quota](../../manage-and-optimize/quotas-and-resource-usage.md) for your plan, then the deployment may fail.
 
 ### Auto-Scaling
 
@@ -76,6 +74,6 @@ Aug 26 09:42:22.779 build-90 [liferay-68b8f6b48d-hdj9t] [dxp] INFO  [Incoming-1,
 
 ## Related Topics
 
-* [Auto-scaling](../../manage-and-optimize/auto-scaling.md)
-* [Introduction to the Liferay DXP Service](../using-the-liferay-dxp-service.md)
-* [Configuring the Liferay DXP Service](./configuring-the-liferay-dxp-service.md)
+- [Auto-scaling](../../manage-and-optimize/auto-scaling.md)
+- [Introduction to the Liferay DXP Service](../using-the-liferay-dxp-service.md)
+- [Configuring the Liferay DXP Service](./configuring-the-liferay-dxp-service.md)

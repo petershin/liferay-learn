@@ -31,26 +31,26 @@ View and manage alerts delivered to your console from the [Alerts page](https://
 
 The Alerts table lists the following alert information:
 
-* **Status**: This column indicates the alert's current state. Each alert is triggered by a specific event. If the event is still happening, its alert status is *Ongoing*. If the event is finished, the alert status is *Resolved*.
+- **Status**: This column indicates the alert's current state. Each alert is triggered by a specific event. If the event is still happening, its alert status is *Ongoing*. If the event is finished, the alert status is *Resolved*.
 
-* **Started at**: This column indicates when the alert began.
+- **Started at**: This column indicates when the alert began.
 
-* **Duration**: This column indicates how long the alert lasted.
+- **Duration**: This column indicates how long the alert lasted.
 
 Filter and manage alerts using the buttons above the table:
 
-* **Unread alerts/All alerts**: View only unread alerts, or all alerts.
+- **Unread alerts/All alerts**: View only unread alerts, or all alerts.
 
-* **All environments/other environments**: Filter alerts by environment.
+- **All environments/other environments**: Filter alerts by environment.
 
-* **Mark all as read**: Mark all alerts as read.
+- **Mark all as read**: Mark all alerts as read.
 
-* **Alerts Preferences**: Go to your alert preferences page.
+- **Alerts Preferences**: Go to your alert preferences page.
 
 ![Real Time Alerts](./real-time-alerts/images/02.png)
 
 ## Related Topics
 
-* [Application Metrics](./application-metrics.md)
-* [Quotas](./quotas.md)
-* [Team Activities](./team-activities.md)
+- [Application Metrics](./application-metrics.md)
+- [Quotas and Resource Usage](./quotas-and-resource-usage.md)
+- [Team Activities](./team-activities.md)

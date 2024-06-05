@@ -32,7 +32,7 @@ By default, event data and inactive anonymous individuals are retained for 13 mo
 1. Click *Change Period* to save.
 
 !!! warning
-    You will permanently lose analytics data that has been recorded over 7 months ago when you make this change.
+    You permanently lose analytics data recorded over 7 months ago when you make this change.
 
 ## Request Log
 
@@ -101,7 +101,7 @@ window['ac_client_disable_tracking'] = true
 !!! important
     You must implement your own logic to persist user consent by using a cookie or by saving and loading from your database. Please make sure that the window variable described above is set before the client page is fully loaded.
 
-Visitors to your site can also choose to enable do not track from their browser. Learn more about the [do not track setting in browsers](https://allaboutdnt.com/). With this enabled no data is sent or collected by Analytics Cloud.
+Some visitors may have enabled do not track from their browser. Learn more about the [do not track setting in browsers](https://allaboutdnt.com/). With this enabled, no data is sent or collected by Analytics Cloud.
 
 ## Related Topics
 

@@ -14,31 +14,31 @@ You can ensure [GDPR compliance](https://gdpr.eu/cookies) for your cookies using
 
 1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), and navigate to *Control Panel* &rarr; *System Settings* &rarr; *Platform* &rarr; *Cookies*. This page configures all sites. If you want to configure cookie settings for a specific site, go to *Control Panel* &rarr; *Instance Settings* &rarr; *Platform* &rarr; *Cookies*.
 
-    ![Ensure GDPR compliance for your cookies through the configuration interface.](./enabling-gdpr-compliance-for-cookies/images/01.png)
+   ![Ensure GDPR compliance for your cookies through the configuration interface.](./enabling-gdpr-compliance-for-cookies/images/01.png)
 
-    There are two checkboxes here: Enabled and Explicit Cookie Consent Mode. Though checked by default, the explicit cookie consent mode doesn't work if the Enabled checkbox is unchecked.
+   There are two checkboxes here: Enabled and Explicit Cookie Consent Mode. Though checked by default, the explicit cookie consent mode doesn't work if the Enabled checkbox is unchecked.
 
 1. To set your handling preference, check the *Enabled* checkbox. With the Explicit Cookie Consent Mode checked, no cookies are set until the user explicitly agrees to cookie usages. If unchecked, all cookies are set until the user opts out of them.
 
     !!! note
-        [Analytics Cloud](https://learn.liferay.com/web/guest/w/analytics-cloud/workspace-data/data-control-and-privacy) uses cookies to gather data. If the first checkbox is left unchecked, cookies are enabled by default and Analytics Cloud can track users. If only the first checkbox is checked, Analytics Cloud tracks users until they opt out of Performance Cookies through the cookie banner. If both boxes are checked, Analytics Cloud won't track users until they accept Performance Cookies in the cookie banner.
+        [Analytics Cloud](https://learn.liferay.com/web/guest/w/analytics-cloud/workspace-data/data-control-and-privacy) uses cookies to gather data. If the first checkbox is left unchecked, cookies are enabled by default, and Analytics Cloud can track users. If only the first checkbox is checked, Analytics Cloud tracks users until they opt out of Performance Cookies through the cookie banner. If both boxes are checked, Analytics Cloud doesn't track users until they accept Performance Cookies in the cookie banner.
 
 1. Click *Save* or *Update*.
 
-    Two new options appear in the left menu: *Banner* and *Consent Panel*.
+   Two new options appear in the left menu: *Banner* and *Consent Panel*.
 
-    ![Two new options appear in the left menu.](./enabling-gdpr-compliance-for-cookies/images/02.png)
+   ![Two new options appear in the left menu.](./enabling-gdpr-compliance-for-cookies/images/02.png)
 
 1. Go to the *Banner* tab and choose your options for the cookie banner (see Banner Options below).
 
-    ![Find customizable options for your cookie banner under the Banner tab.](./enabling-gdpr-compliance-for-cookies/images/03.png)
+   ![Find customizable options for your cookie banner under the Banner tab.](./enabling-gdpr-compliance-for-cookies/images/03.png)
 
 
 1. Click *Save*.
 
 1. Go to the *Consent Panel* tab and choose your options for the consent panel (see Consent Panel Options below).
 
-    ![Find customizable options for the consent panel under the Consent Panel tab.](./enabling-gdpr-compliance-for-cookies/images/04.png)
+   ![Find customizable options for the consent panel under the Consent Panel tab.](./enabling-gdpr-compliance-for-cookies/images/04.png)
 
 1. Click *Save*.
 
@@ -48,7 +48,7 @@ Your cookie policy appears when users log in through a banner. It displays the t
 
 ![The cookie banner appears the first time users visit your site.](./enabling-gdpr-compliance-for-cookies/images/05.png)
 
-**Content**: Add the information included in your cookie policy, like the types of cookies used, their purposes, how users can manage or disable cookies, and any other relevant information regarding data collection, tracking, and user privacy.
+**Content**: Add the relevant information from your cookie policy regarding data collection, tracking, and user privacy. Examples include the types of cookies used, their purposes, how users can manage or disable cookies, and any other relevant information .
 
 **Privacy Policy Link**: Add a link to your site's privacy policy page.
 

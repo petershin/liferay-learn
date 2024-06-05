@@ -102,12 +102,13 @@ To create an object entry with an attachment using the `Upload Directly from the
 
    ```bash
    ...
-   --data '{
-   "externalReferenceCode" : "users-computer-attachment-1",
-   "usersComputerAttachment1" : {
-   "fileBase64" : "iVBORw0KGgoAAAANSUhEUgAAAD0AAAAXCAIAAAA3N9DuAAAAA3NCSVQICAjb4U/...",
-   "name": "img1.png"
-   }...
+	--data-raw '{
+		"externalReferenceCode": "users-computer-attachment-1",
+		"usersComputerAttachment1": {
+			"fileBase64": "iVBO...Jggg==",
+			"name": "img1.png"
+		}
+   ...
    ```
 
    The terminal should display a similar output.
@@ -178,13 +179,13 @@ Execute `Able_POST_FromUsersComputer2.sh` to create an object entry with an atta
 
 To create an object entry with an attachment using the `Upload or Select from Documents and Media Item Selector` Request Files option,
 
-1. Execute `DocumentsAndMedia_POST_Folder.sh` to create the folder to store the uploaded file. Use the site ID as a parameter. In this example, the site ID is `20122`
+1. Execute `DocumentFolder_POST_ToSite.sh` to create the folder to store the uploaded file. Use the site ID as a parameter. In this example, the site ID is `20122`
 
    !!! tip
        Locate the site ID at *Site Menu* (![Site Menu](../../../../images/icon-product-menu.png)) &rarr; *Configuration* &rarr; *Site Settings* &rarr; *Site Configuration* under Platform.
 
    ```bash
-   ./DocumentsAndMedia_POST_Folder.sh [site-id]
+   ./DocumentFolder_POST_ToSite.sh [site-id]
    ```
 
    <!-- I had seen that placeholders are supposed to be added between []. But I found {} around this section (in object-api-basics.md, for example). I decided to keep the [] for now, but which is correct? Eric -->
@@ -236,7 +237,7 @@ To create an object entry with an attachment using the `Upload or Select from Do
       "name" : "able folder",
       "numberOfDocumentFolders" : 0,
       "numberOfDocuments" : 0,
-      "siteId" : 20117,
+      "siteId" : 20122,
       "subscribed" : false
    }
    ```
@@ -250,11 +251,13 @@ To create an object entry with an attachment using the `Upload or Select from Do
    Use the `folder` parameter to add the externalReferenceCode and the siteId where the document will be stored.
 
    ```bash
+   ...
    --data '{...
       "folder": {
-            "externalReferenceCode": "'${1}'",
-            "siteId": "'{2}'"
-      ...},
+         "externalReferenceCode": "'${1}'",
+         "siteId": "'{2}'"
+      },
+   ...
    ```
 
    !!! note
@@ -308,7 +311,7 @@ To create an object entry with an attachment using the `Upload or Select from Do
       "docsAndMediaAttachment" : {
          "id" : 32184,
          "link" : {
-            "href" : "/documents/20117/32182/img3.png/5748562e-a954-4121-41f3-f28e01c8f7a9?version=1.0&t=1716207893037&download=true&objectDefinitionExternalReferenceCode=able&objectEntryExternalReferenceCode=docs-and-media-attachment-1",
+            "href" : "/documents/20122/32182/img3.png/5748562e-a954-4121-41f3-f28e01c8f7a9?version=1.0&t=1716207893037&download=true&objectDefinitionExternalReferenceCode=able&objectEntryExternalReferenceCode=docs-and-media-attachment-1",
             "label" : "img3.png"
          },
          "name" : "img3.png"
@@ -323,7 +326,7 @@ To create an object entry with an attachment using the `Upload or Select from Do
 
 ### Getting a List of All Entries
 
-1. Run `Able_GET_FromCompany.sh` to return a list of all created entries.
+1. Run `Able_GET_FromCompany.sh` to get a list of all entries.
 
    ```bash
    ./Able_GET_FromCompany.sh
@@ -359,10 +362,9 @@ To create an object entry with an attachment using the `Upload or Select from Do
 
 ### Updating an Object Entry With an Attachment
 
-Use a PUT request to replace the details of the specified entry with the details provided in the API call.
+Use a PUT request to replace the entire object entry with the details provided in the API call. In this case, the same structure used to POST the object entry must be used with the PUT request, with alterations to the specific fields you wish to update.
 
-!!! note
-    When updating attachments via PUT or PATCH requests, ensure the structure and content match those used during creation.
+Similarly, although a PATCH request would include only specific fields to be changed in the structure, you must ensure the PATCH structure and content match those used during creation too.
 
 Execute `Able_PUT_ById.sh` to change the external reference code and the name of the file attached to the object entry. Use the object entry ID as a parameter.
 
@@ -434,7 +436,7 @@ The terminal should display a similar output with the folder's ERC and siteId wh
   "docsAndMediaAttachment" : {
     "folder" : {
       "externalReferenceCode" : "able-folder",
-      "siteId" : 20117
+      "siteId" : 20122
     },
 ...
 ```

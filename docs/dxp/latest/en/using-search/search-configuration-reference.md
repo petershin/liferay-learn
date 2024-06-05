@@ -38,6 +38,7 @@ For dedicated coverage of the search widgets, see [Search Pages and Widgets](./g
 
 * Allow Empty Searches: By default, failure to enter a keyword returns no results. Enabling this ensure that _all_ results are returned when no keyword is entered in the Search Bar.
 * Basic Facet Selection: By default, facet counts are recalculated after each facet selection. Enable this to turn off facet recounting.
+* Retain Facet Selections Across Searches: Beginning in Liferay DXP 2024.Q2/Portal 7.4 GA120, previous search facet selections are cleared when a new search is performed. Enable this to retain facet selections for new searches.
 
 **Search Suggestions**: Suggest better queries and spell check queries. See the [Suggestions Configuration Reference](./search-pages-and-widgets/search-results/enabling-search-suggestions.md#suggestions-configuration-reference) for more information.
 

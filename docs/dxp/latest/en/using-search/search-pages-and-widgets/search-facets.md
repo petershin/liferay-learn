@@ -18,8 +18,6 @@ uuid: 90708a47-17a2-49dd-8397-5a7cad01fe35
 ---
 # Search Facets
 
-# Facets
-
 Enter a keyword in the Search Bar and click the Search button. The default search experience redirects to a page with results on the right and a collection of *facets* on the left.
 
 - [Site Facet](search-facets/site-facet.md)
@@ -46,6 +44,18 @@ To look specifically for documents related to Apollo 11, you might also check th
 ![Apollo search results filtered by folder.](./search-facets/images/03.png)
 
 In this way, you can pare down your search results.
+
+When you enter a new search phrase while leaving facets selected, the behavior depends on your Liferay version:
+
+Prior to Liferay DXP 2024.Q2+/Portal 7.4 GA120+, facet selections were retained between searches.
+
+For Liferay DXP 2024.Q2+/Portal 7.4 GA120+, facet selections are cleared by default when a new search term is entered, but the behavior is configurable. To retain facet selections across searches:
+
+1. Add the Search Options widget to the page and click *Options* (![Options](../../images/icon-widget-options.png)).
+1. Click *Retain Facet Selections Across Searches*.
+1. Click *Save*.
+
+![You can choose whether new searches retain or clear previous facet selections.](./search-facets/images/05.png)
 
 ## Multiple Facet Selection
 

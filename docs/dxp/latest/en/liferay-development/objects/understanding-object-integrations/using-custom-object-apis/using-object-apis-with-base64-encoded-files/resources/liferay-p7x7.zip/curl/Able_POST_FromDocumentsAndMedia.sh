@@ -7,7 +7,7 @@ curl \
 				"externalReferenceCode": "'${1}'",
 				"siteId": "'${2}'"
 			},
-			"name" : "ImageFromDocumentsAndMedia.png"
+			"name" : "AttachmentFromDocumentsAndMedia.png"
 		},
 		"externalReferenceCode" : "ATTACHMENT_FROM_DOCS_AND_MEDIA"
 	}' \

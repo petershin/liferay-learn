@@ -64,9 +64,9 @@ liferay-ticket-batch-list-type-definition-oauth-application-headless-server:
 
 Note that the `Liferay.Headless.Admin.List.Type` resource and `Liferay.Headless.Batch.Engine` resource are given full CRUD access.
 
-See [`client-extension.yaml`](https://github.com/liferay/liferay-portal/blob/master/workspaces/liferay-ticket-workspace/client-extensions/liferay-ticket-batch-list-type-definition/client-extension.yaml) for the full definition.
+See [`client-extension.yaml`](https://github.com/liferay/liferay-portal/blob/master/workspaces/liferay-ticket-workspace/client-extensions/liferay-ticket-batch/client-extension.yaml) for the full definition.
 
-The five picklists and their selection items are defined in the JSON file located in the `/batch/` folder of the client extension. See the [`list-type-definition.batch-engine-data.json`](https://github.com/liferay/liferay-portal/blob/master/workspaces/liferay-ticket-workspace/client-extensions/liferay-ticket-batch-list-type-definition/batch/list-type-definition.batch-engine-data.json) file for the full definitions.
+The five picklists and their selection items are defined in the JSON file located in the `/batch/` folder of the client extension. See the [`list-type-definition.batch-engine-data.json`](https://github.com/liferay/liferay-portal/blob/master/workspaces/liferay-ticket-workspace/client-extensions/liferay-ticket-batch/batch/00-list-type-definition.batch-engine-data.json) file for the full definitions.
 
 ## Creating Custom Objects
 
@@ -89,9 +89,9 @@ In Liferay, navigate to _Control Panel_ &rarr; _Objects_. See that a new ticket 
 This `liferay-ticket-batch-object-definition` client extension is also a [batch type](../../importing-exporting-data.md) client extension. The client extension's YAML file is defined in the same way as the 
 `liferay-ticket-batch-list-type-definition` client extension. See [batch YAML Configuration Reference](../../importing-exporting-data/batch-yaml-configuration-reference.md) for an explanation of each property.
 
-See [client-extension.yaml](https://github.com/liferay/liferay-portal/blob/master/workspaces/liferay-ticket-workspace/client-extensions/liferay-ticket-batch-object-definition/client-extension.yaml) for the full definition.
+See [client-extension.yaml](https://github.com/liferay/liferay-portal/blob/master/workspaces/liferay-ticket-workspace/client-extensions/liferay-ticket-batch/client-extension.yaml) for the full definition.
 
-The custom ticket object is defined in the JSON file located in the `/batch/` folder of the client extension. See the [`object-definition.batch-engine-data.json`](https://github.com/liferay/liferay-portal/blob/master/workspaces/liferay-ticket-workspace/client-extensions/liferay-ticket-batch-object-definition/batch/object-definition.batch-engine-data.json) file for the full definition.
+The custom ticket object is defined in the JSON file located in the `/batch/` folder of the client extension. See the [`object-definition.batch-engine-data.json`](https://github.com/liferay/liferay-portal/blob/master/workspaces/liferay-ticket-workspace/client-extensions/liferay-ticket-batch/batch/01-object-definition.batch-engine-data.json) file for the full definition.
 
 ## Generating Ticket Data through APIs
 

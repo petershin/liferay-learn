@@ -95,14 +95,14 @@ Then, follow these steps:
 
 Here's the module overview:
 
-1. `s3z9-able-impl`'s [`MessageBusEventListener`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/MessageBusEventListener.java) implementation listens for destination additions and removals.
+1. `s3z9-able-impl`'s [`MessageBusEventListener`](https://github.com/liferay/liferay-portal/blob/7.4.3.92-ga92/portal-kernel/src/com/liferay/portal/kernel/messaging/MessageBusEventListener.java) implementation listens for destination additions and removals.
 1. `s3z9-baker-impl`'s messaging configurator class adds a destination; `s3z9-able-impl`'s `MessageBusEventListener` implementation receives the added destination notification and logs the event.
-1. `s3z9-charlie-impl`'s [`DestinationEventListener`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationEventListener.java) implementation listens for message listeners registering to or unregistering from the destination.
-1. `s3z9-dog-impl`'s [`MessageListener`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/MessageListener.java) implementation registers to the destination; `s3z9-charlie-impl`'s `DestinationEventListener` implementation receives message listener registration notification and logs the event.
+1. `s3z9-charlie-impl`'s [`DestinationEventListener`](https://github.com/liferay/liferay-portal/blob/7.4.3.92-ga92/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationEventListener.java) implementation listens for message listeners registering to or unregistering from the destination.
+1. `s3z9-dog-impl`'s [`MessageListener`](https://github.com/liferay/liferay-portal/blob/7.4.3.92-ga92/portal-kernel/src/com/liferay/portal/kernel/messaging/MessageListener.java) implementation registers to the destination; `s3z9-charlie-impl`'s `DestinationEventListener` implementation receives message listener registration notification and logs the event.
 
 ## Examine the `MessageBusEventListener`
 
-Message Bus notifies [`MessageBusEventListener`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/MessageBusEventListener.java)s when [`Destination`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/Destination.java)s are added or removed. Here's the example `MessageBusEventListener` implementation:
+Message Bus notifies [`MessageBusEventListener`](https://github.com/liferay/liferay-portal/blob/7.4.3.92-ga92/portal-kernel/src/com/liferay/portal/kernel/messaging/MessageBusEventListener.java)s when [`Destination`](https://github.com/liferay/liferay-portal/blob/7.4.3.92-ga92/portal-kernel/src/com/liferay/portal/kernel/messaging/Destination.java)s are added or removed. Here's the example `MessageBusEventListener` implementation:
 
 ```{literalinclude} ./listening-for-registration-events/resources/liferay-s3z9.zip/s3z9-able-impl/src/main/java/com/acme/s3z9/able/internal/messaging/S3Z9AbleMessageBusEventListener.java
     :language: java
@@ -118,7 +118,7 @@ The [`@Component`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/servic
 
 ## Examine the `DestinationEventListener`
 
-Message Bus notifies a [`DestinationEventListener`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationEventListener.java) when [`MessageListener`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/MessageListener.java)s register to or unregister from the `DestinationEventListener`'s specified destination. Here's the example `DestinationEventListener` implementation:
+Message Bus notifies a [`DestinationEventListener`](https://github.com/liferay/liferay-portal/blob/7.4.3.92-ga92/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationEventListener.java) when [`MessageListener`](https://github.com/liferay/liferay-portal/blob/7.4.3.92-ga92/portal-kernel/src/com/liferay/portal/kernel/messaging/MessageListener.java)s register to or unregister from the `DestinationEventListener`'s specified destination. Here's the example `DestinationEventListener` implementation:
 
 ```{literalinclude} ./listening-for-registration-events/resources/liferay-s3z9.zip/s3z9-charlie-impl/src/main/java/com/acme/s3z9/charlie/internal/messaging/S3Z9CharlieDestinationEventListener.java
     :language: java

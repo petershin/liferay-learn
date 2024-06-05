@@ -1248,7 +1248,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Reason**: This change is needed for object field validation when creating one-to-one or one-to-many relationships.
 
 **ObjectRelationshipImpl.java**
-[`modules/apps/object/object-service/src/main/java/com/liferay/object/model/impl/ObjectRelationshipImpl.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/object/object-service/src/main/java/com/liferay/object/model/impl/ObjectRelationshipImpl.java`)
+[`modules/apps/object/object-service/src/main/java/com/liferay/object/model/impl/ObjectRelationshipImpl.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/object/object-service/src/main/java/com/liferay/object/model/impl/ObjectRelationshipImpl.java)
 
 - **Date**: Nov. 28, 2023
 - **Ticket**: [LPS-196717](https://liferay.atlassian.net/browse/LPS-196717)
@@ -1534,7 +1534,7 @@ modules/apps/site/site-api/src/main/java/com/liferay/site/util/RecentGroupManage
 - **Reason**: The new parameter is needed for the implementation logic.
 
 **RatingsImporter.java**
-[`modules/apps/commerce/commerce-initializer-util/src/main/java/com/liferay/commerce/initializer/util/RatingsImporter.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/commerce/commerce-initializer-util/src/main/java/com/liferay/commerce/initializer/util/RatingsImporter.java)
+modules/apps/commerce/commerce-initializer-util/src/main/java/com/liferay/commerce/initializer/util/RatingsImporter.java
 
 - **Date**: Dec. 7, 2023
 - **Ticket**: [LPS-199636](https://liferay.atlassian.net/browse/LPS-199636)
@@ -1578,7 +1578,7 @@ modules/apps/site/site-api/src/main/java/com/liferay/site/util/RecentGroupManage
 - **Reason**: This change simplifies the schemas.
 
 **CategoryFacetFieldConfiguration.java**
-[`modules/apps/portal-search/portal-search-api/src/main/java/com/liferay/portal/search/configuration/CategoryFacetFieldConfiguration.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/portal-search/portal-search-api/src/main/java/com/liferay/portal/search/configuration/CategoryFacetFieldConfiguration.java)
+`modules/apps/portal-search/portal-search-api/src/main/java/com/liferay/portal/search/configuration/CategoryFacetFieldConfiguration.java`
 
 - **Date**: Dec. 17, 2023
 - **Ticket**: [LPS-203720](https://liferay.atlassian.net/browse/LPS-203720)
@@ -1634,7 +1634,7 @@ modules/apps/site/site-api/src/main/java/com/liferay/site/util/RecentGroupManage
 - **Reason**: The new method implementations make the class easier to use for services because they don't require a `PortletRequest` argument.
 
 **ObjectDefinitionTestUtil.java**
-[`modules/apps/object/object-rest-test-util/src/main/java/com/liferay/object/rest/test/util/ObjectDefinitionTestUtil.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/object/object-rest-test-util/src/main/java/com/liferay/object/rest/test/util/ObjectDefinitionTestUtil.java)
+`modules/apps/object/object-rest-test-util/src/main/java/com/liferay/object/rest/test/util/ObjectDefinitionTestUtil.java`
 
 - **Date**: Dec. 27, 2023
 - **Ticket**: [LPS-204463](https://liferay.atlassian.net/browse/LPS-204463)
@@ -1843,7 +1843,7 @@ modules/apps/commerce/commerce-product-type-virtual-order-service/service.xml)
 - **Reason**: The `arrayClone` method had no usage.
 
 **ObjectGraphUtil.java**
-[`modules/core/petra/petra-reflect/src/main/java/com/liferay/petra/reflect/ObjectGraphUtil.java`](https://github.com/liferay/liferay-portal/blob/master/modules/core/petra/petra-reflect/src/main/java/com/liferay/petra/reflect/ObjectGraphUtil.java)
+`modules/core/petra/petra-reflect/src/main/java/com/liferay/petra/reflect/ObjectGraphUtil.java`
 
 - **Date**: Jan. 25, 2024
 - **Ticket**: [LPD-15179](https://liferay.atlassian.net/browse/LPD-15179)
@@ -2445,7 +2445,7 @@ Property com.liferay.portal.kernel.util.ServiceProxyFactory.timeout is being rem
 - **Reason**: These methods no longer have any usage.
 
 **AssetTagFinder.java**
-[`portal-kernel/src/com/liferay/asset/kernel/service/persistence/AssetTagFinder.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/asset/kernel/service/persistence/AssetTagFinder.java`)
+[`portal-kernel/src/com/liferay/asset/kernel/service/persistence/AssetTagFinder.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/asset/kernel/service/persistence/AssetTagFinder.java)
 
 - **Date**: Nov. 22, 2023
 - **Ticket**: [LPS-202275](https://liferay.atlassian.net/browse/LPS-202275)
@@ -2712,7 +2712,7 @@ Register FriendlyURLNormalizer OSGi service.
 - **Reason**: There are no longer any usages for this method.
 
 **JSONWebServiceActionsManager.java**
-[`portal-kernel/src/com/liferay/portal/kernel/jsonwebservice/JSONWebServiceActionsManager.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/jsonwebservice/JSONWebServiceActionsManager.java)
+[`modules/apps/portal-remote/portal-remote-json-web-service-api/src/main/java/com/liferay/portal/remote/json/web/service/JSONWebServiceActionsManager.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/portal-remote/portal-remote-json-web-service-api/src/main/java/com/liferay/portal/remote/json/web/service/JSONWebServiceActionsManager.java)
 
 - **Date**: Dec. 13, 2023
 - **Ticket**: [LPS-203854](https://liferay.atlassian.net/browse/LPS-203854)
@@ -2720,7 +2720,7 @@ Register FriendlyURLNormalizer OSGi service.
 - **Reason**: Spring bean JSON web service registration is now centralized in `JSONWebServiceTracker`, so there is no longer a need to explicitly register or unregister a `ServletContext`.
 
 **JSONWebServiceActionsManagerUtil.java**
-[`portal-kernel/src/com/liferay/portal/kernel/jsonwebservice/JSONWebServiceActionsManagerUtil.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/jsonwebservice/JSONWebServiceActionsManagerUtil.java)
+[`modules/apps/portal-remote/portal-remote-json-web-service-web/src/main/java/com/liferay/portal/remote/json/web/service/web/internal/helper/JSONWebServiceActionsManagerUtil.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/portal-remote/portal-remote-json-web-service-web/src/main/java/com/liferay/portal/remote/json/web/service/web/internal/helper/JSONWebServiceActionsManagerUtil.java)
 
 - **Date**: Dec. 13, 2023
 - **Ticket**: [LPS-203854](https://liferay.atlassian.net/browse/LPS-203854)
@@ -2914,7 +2914,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Reason**: This change is made to enforce class name consistency.
 
 **WorkflowTaskModelResourcePermission.java**
-[`modules/apps/portal-workflow/portal-workflow-kaleo-runtime-integration-impl/src/main/java/com/liferay/portal/workflow/kaleo/runtime/integration/internal/security/permission/resource/WorkflowTaskModelResourcePermission.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/portal-workflow/portal-workflow-kaleo-runtime-integration-impl/src/main/java/com/liferay/portal/workflow/kaleo/runtime/integration/internal/security/permission/resource/WorkflowTaskModelResourcePermission.java)
+[`modules/apps/portal-workflow/portal-workflow-kaleo-runtime-integration-impl/src/main/java/com/liferay/portal/workflow/kaleo/runtime/integration/internal/security/permission/resource/KaleoTaskModelResourcePermission.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/portal-workflow/portal-workflow-kaleo-runtime-integration-impl/src/main/java/com/liferay/portal/workflow/kaleo/runtime/integration/internal/security/permission/resource/KaleoTaskModelResourcePermission.java)
 
 - **Date**: Oct. 3, 2023
 - **Ticket**: [LPS-197317](https://liferay.atlassian.net/browse/LPS-197317)
@@ -3344,7 +3344,7 @@ Here is a list of changes that break or significantly alter existing functionali
 ### Changes in `osgi-util` classes
 
 **Snapshot.java**
-[`osgi-util/src/main/java/com/liferay/osgi/util/service/Snapshot.java`](https://github.com/liferay/liferay-portal/blob/master/osgi-util/src/main/java/com/liferay/osgi/util/service/Snapshot.java)
+[`osgi-util/src/main/java/com/liferay/osgi/util/service/Snapshot.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/module/service/Snapshot.java)
 
 - **Date**: Sep. 27, 2023
 - **Ticket**: [LPS-196524](https://liferay.atlassian.net/browse/LPS-196524)

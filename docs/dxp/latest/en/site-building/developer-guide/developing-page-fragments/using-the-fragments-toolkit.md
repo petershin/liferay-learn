@@ -461,7 +461,7 @@ There are some alternatives you can use for developing fragments:
    ```
 
    !!! note
-       If you want to import a React component that is not included in Liferay's `importMap`, you can add it by creating an [importMap ClientExtension](https://github.com/liferay/liferay-portal/blob/master/workspaces/liferay-sample-workspace/client-extensions/liferay-sample-etc-frontend/client-extension.yaml).
+       If you want to import a React component that is not included in Liferay's `importMap`, you can add it by creating an [importMap ClientExtension](https://github.com/liferay/liferay-portal/blob/master/workspaces/liferay-sample-workspace/client-extensions/liferay-sample-etc-frontend/client-extension.yaml#L16).
 
    While editing a page, fragments can be rendered multiple times when users interact with them (e.g. while changing the fragment configuration). To ensure the React component is remounted, add a condition to check the layout mode to the first cleanup process. See the example code below:
 

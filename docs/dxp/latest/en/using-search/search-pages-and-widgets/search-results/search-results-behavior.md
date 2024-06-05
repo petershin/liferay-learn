@@ -78,15 +78,18 @@ With [Publications](../../../site-building/publishing-tools/publications.md) ena
 
 A result summary includes the information from a document that the asset's developer felt is most useful to those searching for the asset. Each asset can have different fields included in the summary. For assets with text content, a common summary format includes the title and some of the content, with title displayed first. The asset type always appears on the second line, and a snippet of the content that matches the search term is on the last line. Assets without content fields, like Documents and Media documents, display the description instead.
 
-```{note}
-Users are different. Only the User's full name and the asset type (User) appear in User result summaries.
-```
+!!! note
+    Users are different. Only the User's full name and the asset type (User) appear in User result summaries.
 
 ![For users, only the user's full name appears for summary.](./search-results-behavior/images/03.png)
 
 For assets that contain other assets (Web Content and Documents & Media folders) or whose content is not amenable to display (Dynamic Data List Records and Calendar Events), it makes more sense to display the title, asset type, and description in results summaries. 
 
 ![Document folder showing a description in summary.](./search-results-behavior/images/04.png)
+
+Beginning in Liferay DXP 2024.Q2/Portal 7.4 GA120, the results summary for Documents and Media documents includes a download link for users with the Download permission. In addition, the download link is added to the [widget template](../using-search-widget-display-templates.md) editor's available variables for use in [custom widget display templates](../using-search-widget-display-templates.md).
+
+![Users can download Documents and Media files right from the Search Results widget.](./search-results-behavior/images/15.png)
 
 The asset developer determines which fields are summary-enabled, but there's logic invoked at search time that determines precisely the part of the summary fields to display. For example, a `content` field can have a lot of text, but the summary doesn't show it all. Instead, it shows a relevant snippet of the field's text. If the keyword searched for is present in the summary field, that portion of the field is used in the summary. In addition, the matching keyword is highlighted in the summary.
 

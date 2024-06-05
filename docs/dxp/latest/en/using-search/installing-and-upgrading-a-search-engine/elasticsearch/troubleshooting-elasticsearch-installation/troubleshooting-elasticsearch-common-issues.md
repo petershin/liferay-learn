@@ -69,6 +69,15 @@ ode_name]SSL configuration [xpack.security.transport.ssl.] relies upon fallback 
 
 These warnings do not signal any functional issues and can be disabled (see [Deprecation Logging](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/logging.html#deprecation-logging) to learn how).
 
+## Field Type Errors
+
+If Elasticsearch is allowed to auto-create indexes and a full reindex is performed, in rare cases the Liferay mappings are not created in time for the index recreation. The default Elasticsearch mappings are applied instead, resulting in errors during search execution. This issue was solved for Liferay DXP 2024.Q2+/Portal 7.4 GA120+ by automatically disabling the auto-creation of Liferay's indexes in Elasticsearch.
+
+```
+org.elasticsearch.ElasticsearchStatusException: ElasticsearchStatusException[Elasticsearch exception [type=search_phase_execution_exception, reason=all shards failed]]; nested: ElasticsearchException[Elasticsearch exception [type=illegal_argument_exception, reason=Text fields are not optimised for operations that require per-document field data like aggregations and sorting, so these operations are disabled by default. Please use a keyword field instead. Alternatively, set fielddata=true on [entryClassPK] in order to load field data by uninverting the inverted index. Note that this can use significant memory.]]; nested: ElasticsearchException[Elasticsearch exception [type=illegal_argument_exception, reason=Text fields are not optimised for operations that require per-document field data like aggregations and sorting, so these operations are disabled by default. Please use a keyword field instead. Alternatively, set fielddata=true on [entryClassPK] in order to load field data by uninverting the inverted index. Note that this can use significant memory.]];
+```
+In earlier versions the solution is to disable index auto-creation in Elasticsearch for the `liferay-*` indexes. Set `action.auto_create_index: "-liferay-*"` in the `elasticsearch.yml` or make a PUT request to the [Index API](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/docs-index_.html#index-creation).
+
 ## Related Topics
 
 * [Connecting to Elasticsearch](../connecting-to-elasticsearch.md)

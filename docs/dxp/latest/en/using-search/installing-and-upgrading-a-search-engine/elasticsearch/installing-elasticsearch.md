@@ -91,9 +91,18 @@ transport.port: 9300
 
 # Add security settings below
 xpack.security.enabled: false
+
+# Uncomment for Liferay versions prior to DXP 2024.Q2/Portal GA120. This
+# disables index auto-creation for indexes prefixed with 'liferay-'
+# action.auto_create_index:"-liferay-*
 ```
 
+!!! note
+    Liferay DXP 2024.Q2+/Portal 7.4 GA120+ automatically disables index auto-creation in Elasticsearch for indexes prefixed with `liferay-`.
+
 This cluster called `LiferayElasticsearchCluster` has one node called `es-node1`.
+
+
 
 ```{tip}
 If you are not configuring hosts for a production mode setup, use `localhost` as the host value. Elasticsearch can bind to loopback addresses for HTTP and Transport communication. Along with single node discovery, this means the Elasticsearch server is running in `development mode`.
@@ -122,10 +131,17 @@ transport.port: 9302
 
 # Add security settings below
 xpack.security.enabled: false
+
+# With Liferay versions prior to DXP 2024.Q2/Portal GA120, uncomment to disable
+# index auto-creation for indexes prefixed with 'liferay-'
+# action.auto_create_index:"-liferay-*
 ```
 
-```{tip}
-If you are not configuring hosts for a production mode setup, use `localhost` as the host value. Elasticsearch can bind to loopback addresses for HTTP and Transport communication. This is referred to as `development mode`.
+!!! note
+    Liferay DXP 2024.Q2+/Portal 7.4 GA120+ automatically disables index auto-creation in Elasticsearch for indexes prefixed with `liferay-`.
+
+!!! tip
+    If you are not configuring hosts for a production mode setup, use `localhost` as the host value. Elasticsearch can bind to loopback addresses for HTTP and Transport communication. This is referred to as `development mode`.
 
 Related Elasticsearch Documentation:
 

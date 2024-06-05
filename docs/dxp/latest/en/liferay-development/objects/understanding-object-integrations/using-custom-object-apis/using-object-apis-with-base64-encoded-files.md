@@ -13,13 +13,13 @@ taxonomy-category-names:
 {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+`
 
 !!! important
-   This feature is currently behind a release feature flag (LPS-174455). Read [Release Feature Flags](../../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information.
+   Currently, this feature is behind a release feature flag (LPS-174455). Read [Release Feature Flags](../../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information.
 
-When creating object entries with [attachment fields](../../creating-and-managing-objects/fields/attachment-fields.md) through the REST API, you can generally upload files from your computer or use files uploaded to the [Documents and Media](../../../../content-authoring-and-management/documents-and-media.md) application. Both scenarios require multiple steps.
+When creating object entries with [attachment fields](../../creating-and-managing-objects/fields/attachment-fields.md) through APIs, you can generally upload files from your computer or use files uploaded to the [Documents and Media](../../../../content-authoring-and-management/documents-and-media.md) application. Both scenarios require multiple steps.
 
-You can either upload the document and provide its ID or external reference code (ERC) when posting the object entry via REST API, or you can post the object entry via REST API and attach the file to it later through the UI.
+You can either upload the document and provide its ID or external reference code (ERC) when posting the object entry via API, or you can post the object entry via API and attach the file to it later through the UI.
 
-Alternatively, you can post object entries with attachments in one step by making a POST request and including the Base64-encoded file in the request body.
+Alternatively, you can post object entries with attachments in one step by making a POST request and including a Base64-encoded file in the request body.
 
 Before proceeding, [set up](#setting-up-a-liferay-instance) a new Liferay DXP/Portal 7.4 instance and [prepare](#preparing-the-sample-code) the provided tutorial code.
 
@@ -59,7 +59,7 @@ Follow these steps to [create](../../creating-and-managing-objects/creating-obje
    !!! important
       For this tutorial, you must use the above values.
 
-Once published, you can access the object via Headless APIs.
+Once published, you can access the object via APIs.
 
 ## Preparing the Sample Code
 
@@ -79,8 +79,8 @@ These scripts include the following APIs:
 | :---------- | :---------------- | :------------------------------------------------------------------------------------------------------------------------- |
 | GET         | `/`               | Returns a complete list of object entries in a Liferay instance; results can be paginated, filtered, searched, and sorted. |
 | POST        | `/`               | Creates object entries using the details provided in the API call.                                                         |
-| PUT         | `/{objectNameId}` | Replaces the specified Object entry's details with those provided in the API call                                          |
-| DELETE      | `/{objectNameId}` | Deletes the specified Object entry and returns a 204 if the operation succeeds                                             |
+| PUT         | `/[objectNameId]` | Replaces the specified Object entry's details with those provided in the API call                                          |
+| DELETE      | `/[objectNameId]` | Deletes the specified Object entry and returns a 204 if the operation succeeds                                             |
 
 1. After downloading the sample code, navigate to the `curl` folder in the `liferay-p7x7` project.
 
@@ -103,10 +103,10 @@ To create an object entry with an attachment using the `Upload Directly from the
    ```bash
    ...
 	--data-raw '{
-		"externalReferenceCode": "users-computer-attachment-1",
+		"externalReferenceCode": "ATTACHMENT_FROM_USERS_COMPUTER_1",
 		"usersComputerAttachment1": {
-			"fileBase64": "iVBO...Jggg==",
-			"name": "img1.png"
+			"fileBase64": "iVB0...gg==",
+			"name": "AttachmentFromUsersComputer1.png"
 		}
    ...
    ```
@@ -115,54 +115,54 @@ To create an object entry with an attachment using the `Upload Directly from the
 
    ```bash
    {
-      "actions" : {
-         "permissions" : {
-            "method" : "GET",
-            "href" : "http://localhost:8080/o/c/ables/32250/permissions"
+      "actions": {
+         "permissions": {
+            "method": "GET",
+            "href": "http://localhost:8080/o/c/ables/32268/permissions"
          },
-         "get" : {
-            "method" : "GET",
-            "href" : "http://localhost:8080/o/c/ables/32250"
+         "get": {
+            "method": "GET",
+            "href": "http://localhost:8080/o/c/ables/32268"
          },
-         "replace" : {
-            "method" : "PUT",
-            "href" : "http://localhost:8080/o/c/ables/32250"
+         "replace": {
+            "method": "PUT",
+            "href": "http://localhost:8080/o/c/ables/32268"
          },
-         "update" : {
-            "method" : "PATCH",
-            "href" : "http://localhost:8080/o/c/ables/32250"
+         "update": {
+            "method": "PATCH",
+            "href": "http://localhost:8080/o/c/ables/32268"
          },
-         "delete" : {
-            "method" : "DELETE",
-            "href" : "http://localhost:8080/o/c/ables/32250"
+         "delete": {
+            "method": "DELETE",
+            "href": "http://localhost:8080/o/c/ables/32268"
          }
       },
-      "creator" : {
-         "additionalName" : "",
-         "contentType" : "UserAccount",
-         "familyName" : "Test",
-         "givenName" : "Test",
-         "id" : 20122,
-         "name" : "Test Test"
+      "creator": {
+         "additionalName": "",
+         "contentType": "UserAccount",
+         "familyName": "Test",
+         "givenName": "Test",
+         "id": 20122,
+         "name": "Test Test"
       },
-      "dateCreated" : "2024-05-13T13:58:12Z",
-      "dateModified" : "2024-05-13T13:58:12Z",
-      "externalReferenceCode" : "users-computer-attachment-1",
-      "id" : 32250,
-      "keywords" : [ ],
-      "status" : {
-         "code" : 0,
-         "label" : "approved",
-         "label_i18n" : "Approved"
+      "dateCreated": "2024-06-05T16:37:26Z",
+      "dateModified": "2024-06-05T16:37:26Z",
+      "externalReferenceCode": "ATTACHMENT_FROM_USERS_COMPUTER_1",
+      "id": 32268,
+      "keywords": [],
+      "status": {
+         "code": 0,
+         "label": "approved",
+         "label_i18n": "Approved"
       },
-      "taxonomyCategoryBriefs" : [ ],
-      "usersComputerAttachment1" : {
-         "id" : 32245,
-         "link" : {
-            "href" : "/documents/32242/32244/img1.png/3596b554-ea93-3ce1-29a2-19a72cf4a75e?version=1.0&t=1715608692123&download=true&objectDefinitionExternalReferenceCode=able&objectEntryExternalReferenceCode=users-computer-attachment-1",
-            "label" : "img1.png"
+      "taxonomyCategoryBriefs": [],
+      "usersComputerAttachment1": {
+         "id": 32263,
+         "link": {
+            "href": "/documents/32260/32262/AttachmentFromUsersComputer1.png/f0a02e6a-8eeb-d021-bfdd-82da1afab1cf?version=1.0&t=1717605446526&download=true&objectDefinitionExternalReferenceCode=ABLE&objectEntryExternalReferenceCode=ATTACHMENT_FROM_USERS_COMPUTER_1",
+            "label": "AttachmentFromUsersComputer1.png"
          },
-         "name" : "img1.png"
+         "name": "AttachmentFromUsersComputer1.png"
       }
    }
    ```
@@ -179,7 +179,7 @@ Execute `Able_POST_FromUsersComputer2.sh` to create an object entry with an atta
 
 To create an object entry with an attachment using the `Upload or Select from Documents and Media Item Selector` Request Files option,
 
-1. Execute `DocumentFolder_POST_ToSite.sh` to create the folder to store the uploaded file. Use the site ID as a parameter. In this example, the site ID is `20122`
+1. Execute `DocumentFolder_POST_ToSite.sh` to create the folder to store the uploaded file. Use the site ID as a parameter. In this example, the site ID is `20117`
 
    !!! tip
        Locate the site ID at *Site Menu* (![Site Menu](../../../../images/icon-product-menu.png)) &rarr; *Configuration* &rarr; *Site Settings* &rarr; *Site Configuration* under Platform.
@@ -194,55 +194,55 @@ To create an object entry with an attachment using the `Upload or Select from Do
 
    ```bash
    {
-      "actions" : {
-         "subscribe" : {
-            "method" : "PUT",
-            "href" : "http://localhost:8080/o/headless-delivery/v1.0/document-folders/32023/subscribe"
-         },
-         "unsubscribe" : {
-            "method" : "PUT",
-            "href" : "http://localhost:8080/o/headless-delivery/v1.0/document-folders/32023/unsubscribe"
-         },
-         "get" : {
-            "method" : "GET",
-            "href" : "http://localhost:8080/o/headless-delivery/v1.0/document-folders/32023"
-         },
-         "replace" : {
-            "method" : "PUT",
-            "href" : "http://localhost:8080/o/headless-delivery/v1.0/document-folders/32023"
-         },
-         "update" : {
-            "method" : "PATCH",
-            "href" : "http://localhost:8080/o/headless-delivery/v1.0/document-folders/32023"
-         },
-         "delete" : {
-            "method" : "DELETE",
-            "href" : "http://localhost:8080/o/headless-delivery/v1.0/document-folders/32023"
-         }
+   "actions" : {
+      "subscribe" : {
+         "method" : "PUT",
+         "href" : "http://localhost:8080/o/headless-delivery/v1.0/document-folders/32258/subscribe"
       },
-      "creator" : {
-         "additionalName" : "",
-         "contentType" : "UserAccount",
-         "familyName" : "Test",
-         "givenName" : "Test",
-         "id" : 20122,
-         "name" : "Test Test"
+      "unsubscribe" : {
+         "method" : "PUT",
+         "href" : "http://localhost:8080/o/headless-delivery/v1.0/document-folders/32258/unsubscribe"
       },
-      "customFields" : [ ],
-      "dateCreated" : "2024-05-17T14:08:12Z",
-      "dateModified" : "2024-05-17T14:08:12Z",
-      "description" : "able folder description",
-      "externalReferenceCode" : "able-folder",
-      "id" : 32023,
-      "name" : "able folder",
-      "numberOfDocumentFolders" : 0,
-      "numberOfDocuments" : 0,
-      "siteId" : 20122,
-      "subscribed" : false
+      "get" : {
+         "method" : "GET",
+         "href" : "http://localhost:8080/o/headless-delivery/v1.0/document-folders/32258"
+      },
+      "replace" : {
+         "method" : "PUT",
+         "href" : "http://localhost:8080/o/headless-delivery/v1.0/document-folders/32258"
+      },
+      "update" : {
+         "method" : "PATCH",
+         "href" : "http://localhost:8080/o/headless-delivery/v1.0/document-folders/32258"
+      },
+      "delete" : {
+         "method" : "DELETE",
+         "href" : "http://localhost:8080/o/headless-delivery/v1.0/document-folders/32258"
+      }
+   },
+   "creator" : {
+      "additionalName" : "",
+      "contentType" : "UserAccount",
+      "familyName" : "Test",
+      "givenName" : "Test",
+      "id" : 20122,
+      "name" : "Test Test"
+   },
+   "customFields" : [ ],
+   "dateCreated" : "2024-06-05T16:37:12Z",
+   "dateModified" : "2024-06-05T16:37:12Z",
+   "description" : "This folder stores the attachment files for this exercise.",
+   "externalReferenceCode" : "ABLE_FOLDER",
+   "id" : 32258,
+   "name" : "Able Folder",
+   "numberOfDocumentFolders" : 0,
+   "numberOfDocuments" : 0,
+   "siteId" : 20117,
+   "subscribed" : false
    }
    ```
 
-1. Execute `Able_POST_FromDocumentsAndMedia.sh`. This creates an object entry with a Base64 file attached to it and places it in the recently created folder. Use the folder's ERC and the site ID as parameters. In this example, the ERC is `able-folder` and the site ID is `20122`.
+1. Execute `Able_POST_FromDocumentsAndMedia.sh`. This creates an object entry with a Base64 file attached to it and places it in the recently created folder. Use the folder's ERC and the site ID as parameters. In this example, the ERC is `ABLE_FOLDER` and the site ID is `20117`.
 
    ```bash
    ./Able_POST_FromDocumentsAndMedia.sh [ERC] [site-id]
@@ -252,11 +252,10 @@ To create an object entry with an attachment using the `Upload or Select from Do
 
    ```bash
    ...
-   --data '{...
-      "folder": {
-         "externalReferenceCode": "'${1}'",
-         "siteId": "'{2}'"
-      },
+   "folder": {
+      "externalReferenceCode": "'${1}'",
+      "siteId": "'${2}'"
+   },
    ...
    ```
 
@@ -267,55 +266,55 @@ To create an object entry with an attachment using the `Upload or Select from Do
 
    ```bash
    {
-      "actions" : {
-         "permissions" : {
-            "method" : "GET",
-            "href" : "http://localhost:8080/o/c/ables/32189/permissions"
-         },
-         "get" : {
-            "method" : "GET",
-            "href" : "http://localhost:8080/o/c/ables/32189"
-         },
-         "replace" : {
-            "method" : "PUT",
-            "href" : "http://localhost:8080/o/c/ables/32189"
-         },
-         "update" : {
-            "method" : "PATCH",
-            "href" : "http://localhost:8080/o/c/ables/32189"
-         },
-         "delete" : {
-            "method" : "DELETE",
-            "href" : "http://localhost:8080/o/c/ables/32189"
-         }
+   "actions" : {
+      "permissions" : {
+         "method" : "GET",
+         "href" : "http://localhost:8080/o/c/ables/32337/permissions"
       },
-      "creator" : {
-         "additionalName" : "",
-         "contentType" : "UserAccount",
-         "familyName" : "Test",
-         "givenName" : "Test",
-         "id" : 20122,
-         "name" : "Test Test"
+      "get" : {
+         "method" : "GET",
+         "href" : "http://localhost:8080/o/c/ables/32337"
       },
-      "dateCreated" : "2024-05-20T12:24:53Z",
-      "dateModified" : "2024-05-20T12:24:53Z",
-      "externalReferenceCode" : "docs-and-media-attachment-1",
-      "id" : 32189,
-      "keywords" : [ ],
-      "status" : {
-         "code" : 0,
-         "label" : "approved",
-         "label_i18n" : "Approved"
+      "replace" : {
+         "method" : "PUT",
+         "href" : "http://localhost:8080/o/c/ables/32337"
       },
-      "taxonomyCategoryBriefs" : [ ],
-      "docsAndMediaAttachment" : {
-         "id" : 32184,
-         "link" : {
-            "href" : "/documents/20122/32182/img3.png/5748562e-a954-4121-41f3-f28e01c8f7a9?version=1.0&t=1716207893037&download=true&objectDefinitionExternalReferenceCode=able&objectEntryExternalReferenceCode=docs-and-media-attachment-1",
-            "label" : "img3.png"
-         },
-         "name" : "img3.png"
+      "update" : {
+         "method" : "PATCH",
+         "href" : "http://localhost:8080/o/c/ables/32337"
+      },
+      "delete" : {
+         "method" : "DELETE",
+         "href" : "http://localhost:8080/o/c/ables/32337"
       }
+   },
+   "creator" : {
+      "additionalName" : "",
+      "contentType" : "UserAccount",
+      "familyName" : "Test",
+      "givenName" : "Test",
+      "id" : 20122,
+      "name" : "Test Test"
+   },
+   "dateCreated" : "2024-06-05T16:37:36Z",
+   "dateModified" : "2024-06-05T16:37:36Z",
+   "externalReferenceCode" : "ATTACHMENT_FROM_DOCS_AND_MEDIA",
+   "id" : 32337,
+   "keywords" : [ ],
+   "status" : {
+      "code" : 0,
+      "label" : "approved",
+      "label_i18n" : "Approved"
+   },
+   "taxonomyCategoryBriefs" : [ ],
+   "docsAndMediaAttachment" : {
+      "id" : 32332,
+      "link" : {
+         "href" : "/documents/20119/0/AttachmentFromDocumentsAndMedia.png/bbe75f48-04ce-2967-1721-973655b9a853?version=1.0&t=1717605455991&download=true&objectDefinitionExternalReferenceCode=ABLE&objectEntryExternalReferenceCode=ATTACHMENT_FROM_DOCS_AND_MEDIA",
+         "label" : "AttachmentFromDocumentsAndMedia.png"
+      },
+      "name" : "AttachmentFromDocumentsAndMedia.png"
+   }
    }
    ```
 
@@ -336,25 +335,25 @@ To create an object entry with an attachment using the `Upload or Select from Do
 
    ```bash
    ...
-    "dateCreated" : "2024-05-27T18:15:50Z",
-    "dateModified" : "2024-05-27T18:15:50Z",
-    "externalReferenceCode" : "users-computer-attachment-1",
-    "id" : 32150,
-    "keywords" : [ ],
-    "status" : {
-      "code" : 0,
-      "label" : "approved",
-      "label_i18n" : "Approved"
-    },
-    "taxonomyCategoryBriefs" : [ ],
-    "usersComputerAttachment1" : {
-      "id" : 32145,
-      "link" : {
-        "href" : "/documents/32142/32144/img1.png/5757137a-3416-b16a-1408-4a8b028da99b?version=1.0&t=1716833750419&download=true&objectDefinitionExternalReferenceCode=able&objectEntryExternalReferenceCode=users-computer-attachment-1",
-        "label" : "img1.png"
-      },
-      "name" : "img1.png"
-    }
+   "dateCreated" : "2024-06-05T16:37:26Z",
+   "dateModified" : "2024-06-05T16:37:26Z",
+   "externalReferenceCode" : "ATTACHMENT_FROM_USERS_COMPUTER_1",
+   "id" : 32268,
+   "keywords" : [ ],
+   "status" : {
+   "code" : 0,
+   "label" : "approved",
+   "label_i18n" : "Approved"
+   },
+   "taxonomyCategoryBriefs" : [ ],
+   "usersComputerAttachment1" : {
+   "id" : 32263,
+   "link" : {
+      "href" : "/documents/32260/32262/AttachmentFromUsersComputer1.png/f0a02e6a-8eeb-d021-bfdd-82da1afab1cf?version=1.0&t=1717605446526&download=true&objectDefinitionExternalReferenceCode=ABLE&objectEntryExternalReferenceCode=ATTACHMENT_FROM_USERS_COMPUTER_1",
+      "label" : "AttachmentFromUsersComputer1.png"
+   },
+   "name" : "AttachmentFromUsersComputer1.png"
+   }
    ...
    ```
 
@@ -366,9 +365,11 @@ Use a PUT request to replace the entire object entry with the details provided i
 
 Similarly, although a PATCH request would include only specific fields to be changed in the structure, you must ensure the PATCH structure and content match those used during creation too.
 
-Execute `Able_PUT_ById.sh` to change the external reference code and the name of the file attached to the object entry. Use the object entry ID as a parameter.
+To alter an entry using a PUT request,
 
-In this example, the ID for the `users-computer-attachment-1` entry retrieved in the [GET request](#getting-a-list-of-all-entries) is `32150`.
+1. Execute `Able_PUT_ById.sh` to change the external reference code and the name of the file attached to the object entry. Use the object entry ID as a parameter.
+
+   In this example, the ID for the `ATTACHMENT_FROM_USERS_COMPUTER_1` entry retrieved in the [GET request](#getting-a-list-of-all-entries) is `32268`.
 
    ```bash
    ./Able_PUT_ById.sh [Object-ID]
@@ -376,7 +377,20 @@ In this example, the ID for the `users-computer-attachment-1` entry retrieved in
 
    A response displays the updated information for the object entry. Note that the response contains the address for the file, but it doesn't contain the `fileBase64` encoding by default. See [Getting the Attachment's Content in the Response](#getting-the-attachments-content-in-the-response) to learn more.
 
-The new external reference code is `users-computer-attachment-1-altered` and the new image name is `img1-altered.png`.
+1. The external reference code is now `ATTACHMENT_FROM_USERS_COMPUTER_1_ALTERED` and the image is named `AttachmentFromUsersComputer1Altered.png`.
+
+   ```bash
+   "dateCreated" : "2024-06-05T16:37:26Z",
+   "dateModified" : "2024-06-05T16:38:11Z",
+   "externalReferenceCode" : "ATTACHMENT_FROM_USERS_COMPUTER_1_ALTERED",
+   ...
+      "link" : {
+         "href" : "/documents/32260/32262/AttachmentFromUsersComputer1Altered.png/da5fe5a1-c36c-e016-846e-20720b7469a8?version=1.0&t=1717605491796&download=true&objectDefinitionExternalReferenceCode=ABLE&objectEntryExternalReferenceCode=ATTACHMENT_FROM_USERS_COMPUTER_1_ALTERED",
+         "label" : "AttachmentFromUsersComputer1Altered.png"
+      },
+      "name" : "AttachmentFromUsersComputer1Altered.png"
+   }
+   ```
 
 ### Deleting an Object Entry With an Attachment
 
@@ -392,11 +406,11 @@ The new external reference code is `users-computer-attachment-1-altered` and the
 
 To get the Base64 encoded file in the response, you must request it as a nested field by using the `nestedFields=[fieldName].fileBase64` query parameter. This avoids calculating the Base64 encoding if the user hasn't requested it.
 
-Execute this cURL command in your terminal to get the attachment's content for the entry with the `users-computer-attachment-2` ERC:
+Execute this cURL command in your terminal to get the attachment's content for the entry with the `ATTACHMENT_FROM_USERS_COMPUTER_2` ERC:
 
 ```bash
 curl \
-   "http://localhost:8080/o/c/ables/by-external-reference-code/users-computer-attachment-2?nestedFields=usersComputerAttachment2.fileBase64" \
+   "http://localhost:8080/o/c/ables/by-external-reference-code/ATTACHMENT_FROM_USERS_COMPUTER_2?nestedFields=usersComputerAttachment2.fileBase64" \
    --request "GET" \
    --user "test@liferay.com:learn"
 ```
@@ -405,26 +419,26 @@ The terminal should display a similar output with the Base64 encoded file, its I
 
 ```bash
 ...
-  "usersComputerAttachment2" : {
-    "fileBase64" : "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",
-    "id" : 32165,
-    "link" : {
-      "href" : "/documents/20119/32163/img2.png/03e10146-b049-104f-3a25-3a64f67a9df4?version=1.0&t=1716833775213&download=true&objectDefinitionExternalReferenceCode=able&objectEntryExternalReferenceCode=users-computer-attachment-2",
-      "label" : "img2.png"
-    },
-    "name" : "img2.png"
-  }
+"usersComputerAttachment2" : {
+   "fileBase64" : "iVBORw0KG...kJggg==",
+   "id" : 32283,
+   "link" : {
+   "href" : "/documents/20119/32281/AttachmentFromUsersComputer2.png/266a539c-506c-8273-96d2-15206933b993?version=1.0&t=1717605449655&download=true&objectDefinitionExternalReferenceCode=ABLE&objectEntryExternalReferenceCode=ATTACHMENT_FROM_USERS_COMPUTER_2",
+   "label" : "AttachmentFromUsersComputer2.png"
+   },
+   "name" : "AttachmentFromUsersComputer2.png"
+}
 ```
 
 ### Getting the Attachment's Folder in the Response
 
 To get the folder where the Base64 encoded file is stored in the response, you must request it as a nested field by using the `nestedFields=[fieldName].folder` query parameter. This avoids unnecessary access to data.
 
-Execute this cURL command in your terminal to get the folder for the entry with the `docs-and-media-attachment-1` ERC:
+Execute this cURL command in your terminal to get the folder for the entry with the `ATTACHMENT_FROM_DOCS_AND_MEDIA` ERC:
 
 ```bash
 curl \
-   "http://localhost:8080/o/c/ables/by-external-reference-code/docs-and-media-attachment-1?nestedFields=docsAndMediaAttachment.folder" \
+   "http://localhost:8080/o/c/ables/by-external-reference-code/ATTACHMENT_FROM_DOCS_AND_MEDIA?nestedFields=docsAndMediaAttachment.folder" \
    --request "GET" \
    --user "test@liferay.com:learn"
 ```
@@ -433,11 +447,11 @@ The terminal should display a similar output with the folder's ERC and siteId wh
 
 ```bash
 ...
-  "docsAndMediaAttachment" : {
-    "folder" : {
-      "externalReferenceCode" : "able-folder",
-      "siteId" : 20122
-    },
+"docsAndMediaAttachment" : {
+   "folder" : {
+   "externalReferenceCode" : "ABLE_FOLDER",
+   "siteId" : 20117
+   },
 ...
 ```
 

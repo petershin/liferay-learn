@@ -73,7 +73,7 @@ The recommended length for a page's description is under 155 characters.
 
 {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA126+`
 
-Canonical pages are the preferred version of a web page among multiple versions that have similar or identical content. By selecting a canonical page, you ensure that search engines understand which version of a page is the primary one to index and rank in search results. It also helps prevent dilution of search rankings due to duplicate content and helps users find the most relevant content.
+Canonical pages identify the preferred version of a web page among multiple versions that have similar or identical content. By selecting a canonical page, you ensure that search engines understand which version of a page is the primary one to index and rank in search results. It also helps prevent dilution of search rankings due to duplicate content and helps users find the most relevant content.
 
 Check the *Use Custom Canonical URL* field to customize and localize the canonical URL.
 
@@ -92,7 +92,7 @@ You can also localize this field using the Language Flag.
 
 Determine whether to include a display page in your `sitemap.xml` file, as well as set its Priority and Change Frequency fields. They inform search engines whether to crawl and index the display page, how it should be prioritized relative to other site pages, and how frequently it is updated.
 
-{bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA126+` Enable/disable child pages indexation on XML maps by checking/unchecking the Include Child Page URLs in the XML Sitemap box. Read [Configuring XML Sitemaps](../../site-settings/managing-site-urls/configuring-xml-sitemaps.md) to learn more.
+{bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA126+` Enable/disable indexing child pages on XML maps by checking/unchecking the Include Child Page URLs in the XML Sitemap box. Read [Configuring XML Sitemaps](../../site-settings/managing-site-urls/configuring-xml-sitemaps.md) to learn more.
 
 ![Determine whether to include a display page in your sitemap.xml file, as well as set its priority and change frequency.](./configuring-seo-and-open-graph/images/06.png)
 
@@ -127,7 +127,7 @@ The Description field defines a display page's `og:description` property which d
 
 ### Image
 
-The Image field defines a display page's `og:image` properties, which configures the image displayed for your content in rich previews. In addition to the basic image tag, DXP automatically adds a number of structured properties that determine how your selected image is displayed. The Image field defines the following `<meta>` tags.
+The Image field defines a display page's `og:image` properties, which configures the image displayed for your content in rich previews. In addition to the basic image tag, DXP automatically adds many structured properties that determine how your selected image is displayed. The Image field defines the following `<meta>` tags.
 
 ```html
 <meta property="og:image" content="http://example.com/ogp.jpg" />

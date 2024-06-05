@@ -7,4 +7,4 @@ message: 'Use a comma before the last "and" or "or" in a list.'
 link: https://learn.liferay.com/w/reference/style-guide/liferay-phraseology#oxford-commas
 level: warning
 raw:
-    - '(?:[\w-_` ]+,){1,}(?:[\w-_` ]+) (and |or )'
+    - '(?:[\w-_` ]+,){2,}(?:[\w-_` ]+) (and |or )'

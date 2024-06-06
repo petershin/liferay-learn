@@ -45,7 +45,15 @@ To look specifically for documents related to Apollo 11, you might also check th
 
 In this way, you can pare down your search results.
 
-When you enter a new search phrase while leaving facets selected, the behavior depends on your Liferay version:
+## Facet Selection
+
+Selecting facet terms from different facets produces subtractive filtering (i.e., it uses the AND operator). That is, only results that match all of the filter criteria are returned.
+
+However, selecting terms within an individual facet is additive (i.e., it uses the OR operator). That is, the combined results for each term are returned. For example, if you wanted to filter the search results for both the Apollo 11 folder and Apollo 14 folder, you could check both terms.
+
+![Apollo search results for both folders.](./search-facets/images/04.png)
+
+Whether facet selections are retained or cleared between searches depends on your Liferay version:
 
 Prior to Liferay DXP 2024.Q2+/Portal 7.4 GA120+, facet selections were retained between searches.
 
@@ -56,14 +64,6 @@ For Liferay DXP 2024.Q2+/Portal 7.4 GA120+, facet selections are cleared by defa
 1. Click *Save*.
 
 ![You can choose whether new searches retain or clear previous facet selections.](./search-facets/images/05.png)
-
-## Multiple Facet Selection
-
-As seen in the example above, selecting terms in different facets is subtractive (i.e., it uses the AND operator). That is, only results that match all of the filter criteria are returned.
-
-However, selecting terms within an individual facet is additive (i.e., it uses the OR operator). That is, the combined results for each term are returned. For example, if you wanted to filter the search results for both the Apollo 11 folder and Apollo 14 folder, you could check both terms.
-
-![Apollo search results for both folders.](./search-facets/images/04.png)
 
 ## Facets and Friendly URLs
 

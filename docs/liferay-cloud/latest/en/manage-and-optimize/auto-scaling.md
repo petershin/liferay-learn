@@ -10,13 +10,13 @@ uuid: f5e2b006-daf3-4775-9182-0d9455a63b38
 
 Liferay Cloud's auto-scaling feature automatically creates and destroys instances of the Liferay service as needed to optimize performance. This addresses sudden changes such as increased server traffic, memory leaks, or other issues. By default, this feature is *disabled* in every Liferay Cloud account.
 
-Using this feature, a service can automatically increase (upscale) the number of Liferay DXP instances to a [defined maximum](#setting-the-maximum-number-of-instances) (10 by default), or decrease (downscale) to the number specified in the `scale` property in [`LCP.json`](../reference/configuration-via-lcp-json.md). The `scale` property specifies the minimum number of instances to run:
+Using this feature, a service can automatically increase (upscale) the number of Liferay DXP instances to a [defined maximum](#setting-the-maximum-number-of-additional-instances) (10 by default), or decrease (downscale) to the number specified in the `scale` property in [`LCP.json`](../reference/configuration-via-lcp-json.md). The `scale` property specifies the minimum number of instances to run:
 
 ```json
   "scale": 2,
 ```
 
-Make sure to monitor your application's resource usage (CPU and memory) regularly for applications that require auto-scaling. More insight into your resource requirements helps you more effectively fine-tune your [JVM memory settings](#jvm-memory-configuration) and [auto-scaling behavior](#specifying-target-average-utilization).
+Make sure to monitor your application's [resource usage](./quotas-and-resource-usage.md) (CPU and memory) regularly for applications that require auto-scaling. More insight into your resource requirements helps you more effectively fine-tune your [JVM memory settings](#jvm-memory-configuration) and [auto-scaling behavior](#specifying-target-average-utilization).
 
 ## How Auto-Scaling is Charged
 
@@ -41,12 +41,12 @@ The recommended configuration is to set the `-Xms` flag using 25% of the availab
 Here are some recommended configurations for different levels of memory available to your `liferay` service:
 
 | **Available Memory** | **Recommended LIFERAY_JAVA_OPTS** |
-| :--- | :--- |
-| 8 GB | -Xms2048m -Xmx6144m |
-| 16 GB | -Xms4096m -Xmx12288m |
-| 24 GB | -Xms6144m -Xmx18432m |
-| 32 GB | -Xms8192m -Xmx24576m |
-| 64 GB | -Xms16384m -Xmx49152m |
+| :------------------- | :-------------------------------- |
+| 8 GB                 | -Xms2048m -Xmx6144m               |
+| 16 GB                | -Xms4096m -Xmx12288m              |
+| 24 GB                | -Xms6144m -Xmx18432m              |
+| 32 GB                | -Xms8192m -Xmx24576m              |
+| 64 GB                | -Xms16384m -Xmx49152m             |
 
 !!! note
     The `LIFERAY_JAVA_OPTS` variable may appear with other flags, in addition to `-Xms` and `-Xmx`. If other flags are present, update the environment variable with the memory arguments without removing the others.
@@ -67,7 +67,7 @@ With auto-scaling enabled, Liferay Cloud monitors your service and scales it aut
 
 ### Setting the Maximum Number of Additional Instances
 
-By default, auto-scaling can increase the number of instances for the `liferay` service up to 10. You can, however, override this default to use more instances if necessary. You must make changes in two places to accomplish this. 
+By default, auto-scaling can increase the number of instances for the `liferay` service up to 10. You can, however, override this default to use more instances if necessary. You must make changes in two places to accomplish this.
 
 1. Set the `LCP_HAPROXY_SERVER_TEMPLATE_BACKEND_NUM` [environment variable](../reference/defining-environment-variables.md) in your [web server service](../platform-services/web-server-service.md) to the highest *total* number needed. The `liferay` service may not scale beyond the maximum number of instances defined in `LCP_HAPROXY_SERVER_TEMPLATE_BACKEND_NUM` (10 by default).
 
@@ -92,8 +92,8 @@ Specify the target average utilization in the `autoscale` property of the servic
 
 ```json
 "autoscale": {
-    "cpu": 80,
-    "memory": 90
+  "cpu": 80,
+  "memory": 90
 }
 ```
 
@@ -101,8 +101,8 @@ Balance your target average utilization according to your application's specific
 
 ```json
 "autoscale": {
-    "cpu": 60,
-    "memory": 95
+  "cpu": 60,
+  "memory": 95
 }
 ```
 
@@ -111,3 +111,16 @@ If the `autoscale` property isn't set, the target average utilization defaults t
 ## Auto-scaling and DXP Activation Keys
 
 An activation key is typically required to be deployed and validated to use self-hosted Liferay DXP. On Liferay Cloud when auto-scaling is enabled, the Liferay Cloud team resolves any DXP Activation key issues and adds and removes activation keys as needed.
+
+## Monitoring Scaling
+
+The *Plan and Usage* page contains the project's scaling information. Navigate to the *Scaling* tab. Under *Scaling Summary*, you can see:
+
+- How many environments have extra nodes from auto-scaling
+- How many hours auto-scaling nodes were up during the selected time period
+- The associated cost in USD for the nodes
+
+!!! note
+    The page only displays scaling events that finished before it loaded. Events that have started but haven't returned to the normal values don't appear on the page until they finish.
+
+You can also see a detailed report for the selected time period in *Autoscaling Report*.

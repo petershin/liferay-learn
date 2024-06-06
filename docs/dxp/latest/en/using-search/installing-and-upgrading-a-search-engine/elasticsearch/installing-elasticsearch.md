@@ -98,7 +98,7 @@ xpack.security.enabled: false
 ```
 
 !!! note
-    Liferay DXP 2024.Q2+/Portal 7.4 GA120+ automatically disables index auto-creation in Elasticsearch for indexes prefixed with `liferay-`.
+    Liferay DXP 2024.Q2+/Portal 7.4 GA120+ automatically disables index auto-creation in Elasticsearch for indexes prefixed with `liferay-` and any defined [custom index name prefix](elasticsearch-connector-configuration-reference.md#configuration-properties).
 
 This cluster called `LiferayElasticsearchCluster` has one node called `es-node1`.
 
@@ -138,7 +138,7 @@ xpack.security.enabled: false
 ```
 
 !!! note
-    Liferay DXP 2024.Q2+/Portal 7.4 GA120+ automatically disables index auto-creation in Elasticsearch for indexes prefixed with `liferay-`.
+    Liferay DXP 2024.Q2+/Portal 7.4 GA120+ automatically disables index auto-creation in Elasticsearch for indexes prefixed with `liferay-` and any defined [custom index name prefix](elasticsearch-connector-configuration-reference.md#configuration-properties).
 
 !!! tip
     If you are not configuring hosts for a production mode setup, use `localhost` as the host value. Elasticsearch can bind to loopback addresses for HTTP and Transport communication. This is referred to as `development mode`.

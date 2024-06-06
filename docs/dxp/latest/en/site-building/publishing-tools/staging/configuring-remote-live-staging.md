@@ -44,6 +44,8 @@ If you haven't already, follow these steps to configure your Liferay servers for
 
    If the server has multiple IP addresses, each IP address must be added.
 
+   **For Liferay PaaS**: Enter the other Liferay instance's *cluster IP address*. Find the cluster IP address by navigating to the [Liferay service's shell](https://learn.liferay.com/web/guest/w/liferay-cloud/support-and-troubleshooting/troubleshooting/shell-access) in the Cloud console and running `curl ifconfig.me`.
+
    !!! important
        If you're validating IPv6 addresses, you must configure the app server's JVM to not force the usage of IPv4 addresses. For example, if you're using Tomcat, add the `-Djava.net.preferIPv4Stack=false` attribute in the `$TOMCAT_HOME\bin\setenv.[bat|sh]` file.
 
@@ -90,9 +92,9 @@ Once you've prepared your Liferay servers, follow these steps to set up Remote L
 
 1. Enter the following Remote Live Connection details:
 
-   **Remote Host/IP**: Enter your Remote server's IP address into the *Remote Host/IP* field. This should match the `tunnel.servlet.hosts.allowed` property specified in your `portal-ext.properties` file.
+   **Remote Host/IP**: Enter your Remote server's IP address into the *Remote Host/IP* field (or the cluster IP address, for Liferay PaaS). This should match the `tunnel.servlet.hosts.allowed` property specified in your `portal-ext.properties` file.
 
-   **Remote Port**: Enter the port for your remote DXP instance into the *Remote Port* field.
+   **Remote Port**: Enter the port for your remote DXP instance into the *Remote Port* field. For Liferay PaaS, enter `443` as the port.
 
    **Remote Path Context**: Enter the *Remote Path Context*. This is only required if a non-root portal servlet context path is used on the remote Liferay server. Access to this context must not be blocked by a proxy or firewall.
 

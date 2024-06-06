@@ -22,8 +22,6 @@ Take these general limitations into consideration when planning to use Liferay C
 
 * A private cluster subscription may be needed for more stringent security, compliance, or VPN requirements.
 
-* Remote Staging is not supported on Liferay Cloud.
-
 See the further sections below for more details.
 
 * [All Services](#all-services)
@@ -56,8 +54,6 @@ These limitations apply to every service in a Liferay Cloud environment:
 ## Liferay Service
 
 These limitations apply to the [Liferay service](../customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service.md) in each Liferay Cloud environment:
-
-**Remote Staging**: [Remote Staging](https://learn.liferay.com/w/dxp/site-building/publishing-tools/staging/configuring-remote-live-staging) is not available with Liferay Cloud. Local Staging is still available and supported.
 
 **Auto-scaling**: When enabled, auto-scaling may only add new instances up to a default maximum of 10. You can configure a different maximum number of instances, up to 100 instances.
 

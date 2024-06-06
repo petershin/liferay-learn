@@ -2,6 +2,7 @@
 toc:
   - ./client-extensions/working-with-client-extensions.md
   - ./client-extensions/packaging-client-extensions.md
+  - ./client-extensions/client-extensions-reference.md
 uuid: 33141e0f-9fc0-4bcb-ae34-536c157e0198
 taxonomy-category-names:
 - Development and Tooling
@@ -43,6 +44,8 @@ These are the classifications of client extensions:
 * [Configuration client extensions](#configuration-client-extensions)
 * [Microservice client extensions](#microservice-client-extensions)
 * [Batch client extensions](#batch-client-extensions)
+
+For a complete reference of all types of client extensions, see [Client Extension Reference](./client-extensions/client-extension-reference.md)
 
 ### Frontend Client Extensions
 

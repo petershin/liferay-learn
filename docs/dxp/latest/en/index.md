@@ -97,7 +97,7 @@ Welcome to the official documentation for the latest versions (7.3 and 7.4+) of 
 
 [Building Applications with Objects](./liferay-development/objects.md)
 [Developer Tools Overview](./liferay-development/tooling/developer-tools-overview.md)
-[Installing and Updating Blade CLI](./liferay-development/tooling/blade-cli/installing-and-updating-blade-cli.md)
+[Client Extensions](./liferay-development/client-extensions.md)
 :::
 
 :::{grid-item-card} Liferay Internals
@@ -125,4 +125,4 @@ Welcome to the official documentation for the latest versions (7.3 and 7.4+) of 
 [Setting Up Liferay](./installation-and-upgrades/setting-up-liferay.md)
 [Upgrade Basics](./installation-and-upgrades/upgrading-liferay/upgrade-basics.md)
 :::
-::::
+:::

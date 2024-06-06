@@ -8,7 +8,7 @@ taxonomy-category-names:
 ---
 # Sharing Localized Messages
 
-As you work on an application you might have multiple modules, each of which has its own language keys. Instead of maintaining various language properties files in different places, consolidate them into one place. This example project demonstrates how language keys can be shared across different modules.
+As you work on an application you might have multiple modules, each of which with its own language keys. Instead of maintaining various language properties files in different places, consolidate them into one place. This example project demonstrates how language keys can be shared across different modules.
 
 ## Run the Tutorial Code
 
@@ -45,15 +45,15 @@ Then, follow these steps:
 
 1. Verify that the example module is working. Open your browser to `https://localhost:8080`
 
-1. Add the U8T2 Portlet to a page. You can find the example portlet under Sample Widgets.
+1. Add the U8T2 portlet to a page. You can find the example portlet under Sample Widgets.
 
-    ![Add the U8T2 Portlet to a page.](./sharing-localized-messages/images/01.png)
+   ![Add the U8T2 portlet to a page.](./sharing-localized-messages/images/01.png)
 
-    You see the welcome message header and a list of colors. Note that the language keys for colors come from the shared language keys. The language key `colors` comes from Liferay's global language keys.
+   You see the welcome message header and a list of colors. Note that the language keys for colors come from the shared language keys. The language key `colors` comes from Liferay's global language keys.
 
 1. This example project also includes locales for Portuguese and Japanese. For example, use the language selector to select Brazilian Portuguese or Japanese to see the welcome message and list of colors.
 
-    ![The example shows locales for Portuguese and Japanese.](./sharing-localized-messages/images/02.png)
+   ![The example shows locales for Portuguese and Japanese.](./sharing-localized-messages/images/02.png)
 
 Now it's time to learn how it works.
 
@@ -76,9 +76,9 @@ yellow=Yellow
 
 Language property files for other locales can also be included in the folder. For example, to include language keys for Japanese, add a `Language_ja.properties` file to the folder.
 
-## Add the bnd Instruction
+## Add the Bnd Instruction
 
-For each module that you want to share language keys with, you must specify the resource in the bnd header.
+For each module sharing language keys, you must specify the resource in the `bnd` header.
 
 ```properties
 Bundle-Name: Acme U8T2 Web

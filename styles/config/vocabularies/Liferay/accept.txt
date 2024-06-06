@@ -5,4 +5,6 @@ Liferay
 OAuth 
 OData
 OSGi
+portlet
+servlet
 workspace's

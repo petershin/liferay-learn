@@ -13,7 +13,7 @@ Liferay DXP supports 50 languages out-of-the-box. Each locale has its own [langu
 When you create an application with custom language keys, it's tedious and difficult to translate them for all these different languages. Fortunately, you can use Liferay's Language Builder tool to generate translations automatically. Language Builder generates translations using Microsoft's Translator API.
 
 !!! note
-   The accuracy and correctness of machine translation can vary from language to language. It is up to you on how to make use of these generated translations.
+   The accuracy and correctness of machine translation can vary from language to language. Use them at your own risk. 
 
 ## See the Sample Project
 
@@ -35,10 +35,10 @@ Then, follow these steps:
 1. Open the `gradle.properties` file in the module root folder. Add your Microsoft Translator subscription key:
 
    ```properties
-   microsoft.translator.subscription.key={your unique key}
+   microsoft.translator.subscription.key=[your unique key]
    ```
 
-   Note for Language Builder to work, you need to obtain your own [Microsoft Translator subscription key](https://www.microsoft.com/en-us/translator/business/translator-api/).
+   Note for Language Builder to work, you must obtain your own [Microsoft Translator subscription key](https://www.microsoft.com/en-us/translator/business/translator-api/).
 
 1. From the module root, run Language Builder.
 

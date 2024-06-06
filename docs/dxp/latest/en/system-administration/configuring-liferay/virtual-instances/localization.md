@@ -16,15 +16,15 @@ Use the left and right arrow buttons to move a language from Current (configured
 
 ## Locale Prepend Friendly URL Style
 
-This tab allows you to choose if and how locale acronyms should be prepended to the URLs in your site.
+Here, you can choose if and how locale acronyms should be pre-pended to the URLs in your site.
 
 **Locale is not automatically prepended to a URL.**: Each URL could potentially point to many different languages. For example, the URL `http://localhost:8080/web/guest/home` could be viewed by users in English and Japanese.
 
-**Locale is automatically prepended to a URL when the requested locale is not the default locale.**: Each URL points to just one language, and the locale acronym is ommitted for the default instance language. For example, the URL `http://localhost:8080/web/guest/home` would point to the default language. The URL `http://localhost:8080/zh/web/guest/home` and `http://localhost:8080/zh_CN/web/guest/home` would both point to the Chinese language.
+**Locale is automatically prepended to a URL when the requested locale is not the default locale.**: Each URL points to one language, and the locale acronym is omitted for the default instance language. For example, the URL `http://localhost:8080/web/guest/home` points to the default language. The URL `http://localhost:8080/zh/web/guest/home` and `http://localhost:8080/zh_CN/web/guest/home` both point to the Chinese language.
 
-**Locale is automatically prepended to every URL.**: Each URL points to just one language, and the locale acronym is present for all languages including the default language. For example, if the default language is English, the URL `http://localhost:8080/web/guest/home` would redirect to `http://localhost:8080/en/web/guest/home`.
+**Locale is automatically prepended to every URL.**: Each URL points to one language, and the locale acronym is present for all languages including the default language. For example, if the default language is English, the URL `http://localhost:8080/web/guest/home` redirects to `http://localhost:8080/en/web/guest/home`.
 
-**Locale is automatically prepended to a URL when the requested locale is not the default user locale.**: Each URL points to just one language, and the locale acronym is ommitted for the default user language. In the case of guest users, the behavior is the same as *Locale is automatically prepended to a URL when the requested locale is not the default locale*.
+**Locale is automatically prepended to a URL when the requested locale is not the default user locale.**: Each URL points to one language, and the locale acronym is omitted for the default user language. In the case of guest users, the behavior is the same as *Locale is automatically prepended to a URL when the requested locale is not the default locale*.
 
 ## Time Zone
 

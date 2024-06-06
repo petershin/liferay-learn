@@ -18,17 +18,17 @@ You can set your Site's default language. You can also define a Site's enabled l
 
 1. Go to *[Site Settings](./site-settings-ui-reference.md#language)* &rarr; *Localization*.
 
-    ![In the site settings, click on Localization.](./site-localization/images/01.png)
+   ![In the site settings, click on Localization.](./site-localization/images/01.png)
 
 1. Click *Define a custom default language and additional available languages for this site*.
 
-    ![Click on Define a custom default language and additional available languages for this site.](./site-localization/images/02.png)
+   ![Click on Define a custom default language and additional available languages for this site.](./site-localization/images/02.png)
 
 1. You can change the default language to any language in the list.
 
 1. You can also choose which additional languages are enabled or disabled.
 
-    ![Choose which additional languages are enabled](./site-localization/images/03.png)
+   ![Choose which additional languages are enabled](./site-localization/images/03.png)
 
 1. Use the left and right arrow buttons to disable or enable additional languages respectively.
 
@@ -42,11 +42,11 @@ Some fields have an appended language flag button. These fields can be translate
 
 1. Click the language flag beside the field.
 
-    ![Click the language flag next to the localizable field to enter a new value.](./site-localization/images/05.png)
+   ![Click the language flag next to the localizable field to enter a new value.](./site-localization/images/05.png)
 
 1. Enter the new value in the selected language. The default value is displayed beneath the field for reference.
 
-    ![Enter the new value for the selected language.](./site-localization/images/06.png)
+   ![Enter the new value for the selected language.](./site-localization/images/06.png)
 
 Liferay automatically saves the translation for each language and displays the translated value when that language is selected for the instance. If a translation for the field is not provided, the default instance language's value for that field is displayed.
 

@@ -18,7 +18,7 @@ By default, the [`portal.properties`](https://github.com/liferay/liferay-portal/
 
 1. Take note of the [ISO 3166-1 alpha-2 two-letter country code](https://www.iso.org/iso-3166-country-codes.html) for your language. (e.g. the ISO code for Ethiopia would be `ET`).
 
-1. Modify and replace the `web.xml` file found in your Liferay installation: `[LIFERAY_HOME]/tomcat<version>/webapps/ROOT/WEB-INF/`. Add your new language under the `<web-resource-name`> section. For example,
+1. Modify and replace the `web.xml` file found in your Liferay installation: `[LIFERAY_HOME]/tomcat-[version]/webapps/ROOT/WEB-INF/`. Add your new language under `<web-resource-name>`. For example,
 
     ```xml
     <url-pattern>/am/c/portal/protected</url-pattern>
@@ -26,7 +26,7 @@ By default, the [`portal.properties`](https://github.com/liferay/liferay-portal/
     <url-pattern>/am_ET/c/portal/protected</url-pattern>
     ```
 
-1. Modify and replace the `shielded-container-web.xml` file found in your Liferay installation: `[LIFERAY_HOME]/tomcat<version>/webapps/ROOT/WEB-INF/`. Add your new language under the `<servlet-mapping`> section. For example,
+1. Modify and replace the `shielded-container-web.xml` file found in your Liferay installation: `[LIFERAY_HOME]/tomcat-[version]/webapps/ROOT/WEB-INF/`. Add your new language under `<servlet-mapping>`. For example,
 
     ```xml
     <servlet-mapping>
@@ -54,15 +54,15 @@ By default, the [`portal.properties`](https://github.com/liferay/liferay-portal/
 
    - Use the [Language Override tool](#adding-language-keys-with-the-language-override-tool). This is the recommended method of adding new language keys since {bdg-secondary}`Liferay DXP 7.4 U4/Portal 7.4 GA8.`.
 
-   - Use a [language module](#adding-language-keys-with-a-language-module) and write your language keys in a language.properties file. This method offers more control over the language settings such as writing direction and name structure.
+   - Use a [language module](#adding-language-keys-with-a-language-module) and write your language keys in a `language.properties` file. This method offers more control over the language settings such as directionality and name structure.
 
 1. Navigate to *Control Panel* &rarr; *Instance Settings* &rarr; *Localization*. Verify and move the new language to the current languages. Click *Save*.
 
-    ![Save your new language to the list of current languages.](./adding-a-language/images/01.png)
+   ![Save your new language to the list of current languages.](./adding-a-language/images/01.png)
 
 1. Change your default language to the new language and click *Save*. The new language is now used by the Liferay instance.
 
-    ![The sign-in panel is in Amharic.](./adding-a-language/images/02.png)
+   ![The sign-in panel is in Amharic.](./adding-a-language/images/02.png)
 
 ### Adding Language Keys with the Language Override Tool
 
@@ -70,40 +70,40 @@ By default, the [`portal.properties`](https://github.com/liferay/liferay-portal/
 
 1. Search for the language key you want to change and click it.
 
-1. Input the value you want to override.
+1. Enter the value you want to override.
 
-    ![Input translated value under the chosen language](./adding-a-language/images/03.png)
+   ![Enter the translated value under the chosen language](./adding-a-language/images/03.png)
 
 ### Adding Language Keys with a Language Module
 
 1. Create your `language.properties` file for your language and use the ISO code in your file name. For example `Language_am.properties` for Amharic:
 
-    ```properties
-    create-account=መለያ መፍጠር
-    email-address=የ ኢሜል አድራሻ
-    forgot-password=መክፈቻ ቁልፉን ረሳኽው
-    home=መነሻ ገጽ
-    password=ፕስወርድ
-    powered-by-x=በ {0} የተጎላበተ
-    remember-me=አስታወስከኝ
-    search=የፍለጋ አሞሌ
-    sign-in=ስግን እን
-    ```
+   ```properties
+   create-account=መለያ መፍጠር
+   email-address=የ ኢሜል አድራሻ
+   forgot-password=መክፈቻ ቁልፉን ረሳኽው
+   home=መነሻ ገጽ
+   password=ፕስወርድ
+   powered-by-x=በ {0} የተጎላበተ
+   remember-me=አስታወስከኝ
+   search=የፍለጋ አሞሌ
+   sign-in=ስግን እን
+   ```
 
 1. Create a language module with the `language.properties` file you created and deploy the module to your Liferay installation. See [Overriding Global Language Translations with Language Properties](./overriding-global-language-translations-with-language-properties.md) to see a sample project and specific instructions on creating this module.
 
-## Changing the Writing Direction
+## Changing the Directionality
 
-When adding a language that writes from right to left, add the following property to your language properties:
+When adding a language that writes from right to left, add this property to your language properties:
 
 ```properties
 lang.dir=rtl
 ```
 
-This might affect the site's CSS in unexpected ways. You can prevent CSS rules from transforming (flipping) by placing the `/* @noflip */` decoration to the left of the CSS rule you want to apply it to. This example gives a left margin of `20em` to the `body` no matter the writing direction of the selected language:
+This could affect the site's CSS in unexpected ways. You can prevent CSS rules from transforming (flipping) by placing the `/* @noflip */` decoration to the left of the CSS rule you want to apply it to. This example gives a left margin of `20em` to the `body` no matter the writing direction of the selected language:
 
 ```css
-/* @noflip */ body {
+body {
   margin-left: 20em;
 }
 ```
@@ -165,7 +165,7 @@ Use this client extension on every page or page template where you want your fla
 
 1. Create a theme using Liferay's [theme generator](https://github.com/liferay/liferay-frontend-projects/tree/master/projects/js-themes-toolkit/packages/generator-liferay-theme).
 
-1. Modify `src/images/clay/icons.svg` and add your flag's svg inside a `<symbol>` tag. The `id` should be your language code.
+1. Modify `src/images/clay/icons.svg` and add your flag's SVG inside a `<symbol>` tag. The `id` should be your language code.
 
 1. Update `package.json` to use the appropriate version of each dependency.
 
@@ -179,7 +179,7 @@ Use this client extension on every page or page template where you want your fla
 
 1. Create a theme using Liferay's [theme generator](https://github.com/liferay/liferay-frontend-projects/tree/master/projects/js-themes-toolkit/packages/generator-liferay-theme).
 
-1. Modify `src/images/clay/icons.svg` and add your flag's svg inside a `<symbol>` tag. The `id` should be your language code.
+1. Modify `src/images/clay/icons.svg` and add your flag's SVG inside a `<symbol>` tag. The `id` should be your language code.
 
 1. Update `package.json` to use the appropriate version of each dependency.
 

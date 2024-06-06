@@ -8,11 +8,11 @@ taxonomy-category-names:
 ---
 # Aggregating Resource Bundles
 
-When working with a module that shares localized messages, the bnd header must specify the resource bundles you want to associate with the module. Liferay provides a bnd instruction that automatically specifies the necessary parameters for aggregating the resource bundles.
+When working with a module that shares localized messages, the `bnd` header must specify the resource bundles you want to associate with the module. Liferay provides a `bnd` instruction that automatically specifies the necessary parameters for aggregating the resource bundles.
 
 1. Open the `bnd.bnd` file.
 
-1. Add the `-liferay-aggregate-resource-bundles:` bnd instruction and assign it the bundle symbolic names of modules whose resource bundles you want to aggregate with the current module:
+1. Add the `-liferay-aggregate-resource-bundles:` instruction and assign it the bundle symbolic names of modules whose resource bundles you want to aggregate with the current module:
 
     ```properties
     -liferay-aggregate-resource-bundles: \
@@ -30,10 +30,10 @@ When working with a module that shares localized messages, the bnd header must s
 
 The current module's resource bundle is prioritized over those of the listed modules.
 
-At build time, Liferay's bnd plugin converts the bnd instruction to `Require-Capability` and `Provide-Capability` parameters automatically.
+At build time, Liferay's `bnd` plugin converts the instruction to `Require-Capability` and `Provide-Capability` parameters automatically.
 
 !!! note
-    To aggregate resources with Liferay's native modules you must specify the parameters manually.
+    To aggregate resources with Liferay's native modules, you must specify the parameters manually.
 
 ## Reference
 

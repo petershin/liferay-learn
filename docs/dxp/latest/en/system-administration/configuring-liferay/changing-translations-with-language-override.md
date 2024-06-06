@@ -14,7 +14,7 @@ taxonomy-category-names:
 !!! note
     Import/Export and filtering functionality in Liferay DXP 7.4 U17/Liferay Portal 7.4 GA17
 
-Use the Language Override tool to override existing translations or add new language keys and translations. Note that these overrides take place at the Instance level of [Configuration Scope](./understanding-configuration-scope.md). For previous Liferay versions, see [Overriding Global Language Translations with Language Properties](../../liferay-internals/extending-liferay/customizing-localization/overriding-global-language-translations-with-language-properties.md).
+Liferay's Language Override tool can override existing translations or add new language keys and translations. Note that these overrides take place at the Instance level of [Configuration Scope](./understanding-configuration-scope.md). For previous Liferay versions, see [Overriding Global Language Translations with Language Properties](../../liferay-internals/extending-liferay/customizing-localization/overriding-global-language-translations-with-language-properties.md).
 
 ## Overriding a Translation
 
@@ -22,19 +22,19 @@ Use the Language Override tool to override existing translations or add new lang
 
 1. Use the search bar to find the translation you wish to override. For example, if you want to override `home` found at the top of the Product Menu, search for the term `home`.
 
-    ![Search for the term home in the Language Override UI.](./changing-translations-with-language-override/images/01.png)
+   ![Search for the term home in the Language Override UI.](./changing-translations-with-language-override/images/01.png)
 
-    Note, the search bar searches language keys for the selected locale's translations. Use the locale selector to switch between languages. For example, select `en-US` to search within US English translations.
+   Note, the search bar searches language keys for the selected locale's translations. Use the locale selector to switch between languages. For example, select `en-US` to search within US English translations.
 
 1. Locate and click on the translation. A new window opens. You can also click the *Actions* (![Actions icon](../../images/icon-actions.png)) &rarr; _Edit_ to the right of the translation.
 
 1. Enter a new translation for each language you want to override. Click *Save* at the bottom of the page.
 
-    ![Enter a new translation for each language you want to override.](./changing-translations-with-language-override/images/02.png)
+   ![Enter a new translation for each language you want to override.](./changing-translations-with-language-override/images/02.png)
 
 1. The translation for `home` is now overridden.
 
-    ![The translation for home is now overridden.](./changing-translations-with-language-override/images/03.png)
+   ![The translation for home is now overridden.](./changing-translations-with-language-override/images/03.png)
 
 ## Modifying a Translation Override
 
@@ -42,13 +42,13 @@ Use the Language Override tool to override existing translations or add new lang
 
 1. Use the search bar to find the override you wish to modify. To filter the results for only the translations that have overrides, click *Filter and Order* and select *Any Language*. Or click *Selected Language* to only show overrides within the locale selected.
 
-    Note existing overrides are indicated under each language key. For example, "Languages With Override: en_US, ja_JP".
+   Note existing overrides are indicated under each language key. For example, "Languages With Override: en_US, ja_JP".
 
 1. Select the translation you wish to modify. A new window opens. You can also click the *Actions* (![Actions icon](../../images/icon-actions.png)) &rarr; _Edit_ to the right of the translation.
 
-    If overrides exist, the *Actions* icon (![Actions icon](../../images/icon-actions.png)) also has an option to remove translation overrides. Click *Remove all translation overrides* and click *OK* in the pop-up window to remove all overrides. If an override exists in the locale you have selected, there's an additional option to remove just that locale's translation (e.g. *Remove translation override for en_US* if US English is selected).
+   If overrides exist, the *Actions* icon (![Actions icon](../../images/icon-actions.png)) also has an option to remove translation overrides. Click *Remove all translation overrides* and click *OK* in the pop-up window to remove all overrides. If an override exists in the locale you have selected, there's an additional option to remove only that locale's translation (e.g. *Remove translation override for en_US* if US English is selected).
 
-    ![The Actions icon has an option to remove translation overrides.](./changing-translations-with-language-override/images/04.png)
+   ![The Actions icon has an option to remove translation overrides.](./changing-translations-with-language-override/images/04.png)
 
 1. Enter your changes and click *Save* at the bottom of the page. If you wish to remove all overrides and revert back to the original translations, click *Clear All Overrides*.
 
@@ -62,15 +62,15 @@ Use the Language Override tool to override existing translations or add new lang
 
 ## Importing and Exporting Language Translations
 
-Language overrides can be easily imported or exported with language properties files.
+Language overrides can be imported or exported easily with language properties files.
 
 ### Importing Language Translations
 
 1. To import, click the *Actions* (![Actions icon](../../images/icon-actions.png)) to the left of the Global Menu icon.
 
-1. Select *Import Translations* and a new window will open.
+1. Select *Import Translations* and a new window opens.
 
-    ![Select import translations and a new window will open.](./changing-translations-with-language-override/images/05.png)
+   ![Select import translations and a new window opens.](./changing-translations-with-language-override/images/05.png)
 
 1. Use the drop-down menu to select the language.
 
@@ -82,7 +82,7 @@ Language overrides can be easily imported or exported with language properties f
 
 1. To export, click the *Actions* (![Actions icon](../../images/icon-actions.png)) to the left of the Global Menu icon.
 
-1. Select *Export* and a ZIP file containing `Language.properties` files for each language with overrides will begin downloading.
+1. Select *Export* to download a ZIP file containing `Language.properties` files for each language with overrides. 
 
 ## Related Topics
 

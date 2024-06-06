@@ -45,7 +45,7 @@ The default user icon (with the user initials) can be configured to work for you
 
 `lang.user.default.portrait=initials` sets the type of icon to use for avatars. The default value is *initials*. If set to initials, the next property configures which initials to display, and in what order. Alternatively, specify *image*, which gives you the same non-initials default image shown above.
 
-`lang.user.initials.fields=first-name,last-name` determines which initials appear in the user portrait and in what order. The setting here only matters if `lang.user.default.portrait` is set to *initials*.  Valid values are `first-name`, `middle-name`, `last-name`, with first and last name as the defaults.
+`lang.user.initials.fields=first-name,last-name` determines which initials appear in the user portrait and in what order. The setting here only matters if `lang.user.default.portrait` is set to *initials*. Valid values are `first-name`, `middle-name`, `last-name`, with first and last name as the defaults.
 
 ### Using a Custom Default Profile Image
 
@@ -68,9 +68,8 @@ You can use your own default profile image:
     ```
 
     !!! tip
-        If you use the binary gender field to collect information on users' genders, then you have two default images to override. Set these properties instead:
+        If you use the binary gender field to collect information on users' genders, you have two default images to override. Set these properties instead:
 
-            ::
             image.default.user.female.portrait=image-filename.png
             image.default.user.male.portrait=image-filename.png
 

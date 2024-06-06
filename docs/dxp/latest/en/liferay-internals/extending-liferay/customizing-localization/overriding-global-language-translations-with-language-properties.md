@@ -3,7 +3,7 @@ uuid: 0e974ead-9e19-4ded-8b82-1e63c54fc2fc
 ---
 # Overriding Global Language Translations with Language Properties
 
-Liferay DXP/Portal implements headings, labels, and messages for the default locale and many other locales using language translations. You can override these translations for any of the locales using new language translation values in a module.
+Liferay DXP/Portal implements headings, labels, and messages for many locales using language translations. You can override these translations for any of the locales using new language translation values in a module.
 
 !!! note
     The [Language Override tool](../../../system-administration/configuring-liferay/changing-translations-with-language-override.md) is the recommended approach for overriding language translations. This tool is available in Liferay DXP 7.4 U4 (Update 4) and above or Liferay Portal 7.4 GA8 and above. Continue reading for the previous way.
@@ -67,42 +67,42 @@ Then, follow these steps to deploy the example:
 
 1. Download and unzip the `liferay-i2f4.zip` example project.
 
-    ```bash
-    curl https://resources.learn.liferay.com/dxp/latest/en/liferay-internals/extending-liferay/liferay-i2f4.zip -O
-    ```
+   ```bash
+   curl https://resources.learn.liferay.com/dxp/latest/en/liferay-internals/extending-liferay/liferay-i2f4.zip -O
+   ```
 
-    ```bash
-    unzip liferay-i2f4.zip
-    ```
+   ```bash
+   unzip liferay-i2f4.zip
+   ```
 
 1. Build and deploy the project module.
 
-    ```bash
-    cd liferay-i2f4
-    ```
+   ```bash
+   cd liferay-i2f4
+   ```
 
-    ```bash
-    ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
-    ```
+   ```bash
+   ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
+   ```
 
-    !!! note
-        This command is the same as copying the deployed jars to `/opt/liferay/osgi/modules` on the Docker container.
+   !!! note
+       This command is the same as copying the deployed jars to `/opt/liferay/osgi/modules` on the Docker container.
 
 1. Confirm the deployment in the Liferay Docker container console.
 
-    ```bash
-    STARTED com.acme.i2f4.impl_1.0.0 [3209]
-    ```
+   ```bash
+   STARTED com.acme.i2f4.impl_1.0.0 [3209]
+   ```
 
 1. Verify the example module's customization. Open your browser to `https://localhost:8080`.
 
 1. Click the menu icon (![Menu](../../../images/icon-menu.png)). The home icon label uses the custom language translation value.
 
-    ![The home icon now uses the custom language translation value.](./overriding-global-language-translations-with-language-properties/images/04.png)
+   ![The home icon now uses the custom language translation value.](./overriding-global-language-translations-with-language-properties/images/04.png)
 
 1. The example includes custom language translation values for multiple locales. For example, use the language selector to select Brazilian Portuguese or Japanese to see the customization in that locale. The module overrides language translations for these locales too.
 
-    ![A custom language translation is also used for Brazilian Portuguese and Japanese.](./overriding-global-language-translations-with-language-properties/images/05.png)
+   ![A custom language translation is also used for Brazilian Portuguese and Japanese.](./overriding-global-language-translations-with-language-properties/images/05.png)
 
 Now that you've seen the example, here's how it works.
 
@@ -166,39 +166,39 @@ Here's how to deploy the example:
 
 1. Download and unzip the `liferay-x8f3.zip` example project.
 
-    ```bash
-    curl https://resources.learn.liferay.com/dxp/latest/en/liferay-internals/extending-liferay/liferay-x8f3.zip -O
-    ```
+   ```bash
+   curl https://resources.learn.liferay.com/dxp/latest/en/liferay-internals/extending-liferay/liferay-x8f3.zip -O
+   ```
 
-    ```bash
-    unzip liferay-x8f3.zip
-    ```
+   ```bash
+   unzip liferay-x8f3.zip
+   ```
 
 1. Build and deploy the project module.
 
-    ```bash
-    cd liferay-x8f3
-    ```
+   ```bash
+   cd liferay-x8f3
+   ```
 
-    ```bash
-    ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
-    ```
+   ```bash
+   ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
+   ```
 
 1. Confirm the deployment in the Liferay Docker container console.
 
-    ```bash
-    STARTED com.acme.x8f3.impl_1.0.0 [3209]
-    ```
+   ```bash
+   STARTED com.acme.x8f3.impl_1.0.0 [3209]
+   ```
 
 1. Open your browser to `https://localhost:8080` and sign in.
 
-1. Navigate to a Site page and click the edit icon (![Edit](../../../images/icon-edit.png)). The publish button shows the custom language translation.
+1. Navigate to a page and click the edit icon (![Edit](../../../images/icon-edit.png)). The publish button shows the custom language translation.
 
-    ![The publish button now uses the custom language translation.](./overriding-global-language-translations-with-language-properties/images/06.png)
+   ![The publish button now uses the custom language translation.](./overriding-global-language-translations-with-language-properties/images/06.png)
 
 1. Use the language selector to select Brazilian Portuguese or Japanese to see the custom language translation. The module overrides language translations for each locale you include in the module.
 
-    ![A custom language translation is also used for Brazilian Portuguese and Japanese.](./overriding-global-language-translations-with-language-properties/images/07.png)
+   ![A custom language translation is also used for Brazilian Portuguese and Japanese.](./overriding-global-language-translations-with-language-properties/images/07.png)
 
 Like the 7.4+ example, this module specifies custom values in language translation files. Instead of using metadata (a `bnd.bnd` file header) to declare the override, however, the module uses `ResourceBundle` classes.
 

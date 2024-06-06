@@ -14,7 +14,7 @@ uuid: 28fd229f-2eb5-4c12-bc0b-cc33b2a0e859
 
 The visual rules of style books consist of options grouped into categories. For example, in the Buttons category there can be an option called Background Color.
 
-![The token definition defines the options end users can configure when styling site pages.](./frontend-token-definitions/images/03.png)
+![The frontend token definition defines the options end users can configure when styling site pages.](./frontend-token-definitions/images/03.png)
 
 Each option in the style book is defined with a token. The collection of all tokens defined for a theme is a _frontend token definition_. The frontend token definition is a JSON file provided by the theme CSS client extension, or via the theme in earlier releases.
 
@@ -25,15 +25,15 @@ When you apply the theme CSS client extension or assign a theme to your site's p
 
 ## Defining Tokens for Your Style Book
 
-Each frontend token must correspond to a CSS variable in the theme CSS client extension or theme module. Specify the frontend tokens in a `frontend-token-definition.json` file:
+The frontend token definition is tied to your theme CSS client extension (or theme), so the frontend tokens must correspond to a CSS variable from your provided CSS. Specify the frontend tokens in a `frontend-token-definition.json` file:
 
-* Theme css client extensions: place the token definition in your client extension project and define the path in the `client-extension.yaml`. For example,
+* Theme css client extensions: place the frontend token definition in your client extension project and define the path in the `client-extension.yaml`. For example,
 
    ```yaml
    frontendTokenDefinitionJSON: src/frontend-token-definition.json 
    ```
 
-* Themes: place the token definition file in your theme module's `src/WEB-INF/` folder, named `frontend-token-definition.json`.
+* Themes: place the frontend token definition file in your theme module's `src/WEB-INF/` folder, named `frontend-token-definition.json`.
 
 ### Frontend Token Categories
 
@@ -101,7 +101,7 @@ Define the frontend tokens within each token set's `frontendTokens` field. Here'
 | `type`         | The type of data the frontend token displays. Use `Integer`, `Float`, or `String` to display a text field holding those types of values. Use `Boolean` to display a checkbox. Use `Length` to provide customizable units of measurement (e.g. pixels, ems, percentages).                                                       |
 | `validValues`  | Optional property that lists available options for the User in the UI. This field must contain a nested list of `label` and `value` pairs (`value` is the field's value in CSS). This property cannot be used together with `editorType`. Defining a value for `validValues` makes the input type automatically a select input. |
 
-The JSON schema for token definitions is publicly available in [Liferay's repository](https://github.com/liferay/liferay-portal/blob/master/modules/apps/frontend-token/frontend-token-definition-api/src/main/resources/com/liferay/frontend/token/definition/frontend-token-definition.schema.json).
+The JSON schema for frontend token definitions is publicly available in [Liferay's repository](https://github.com/liferay/liferay-portal/blob/master/modules/apps/frontend-token/frontend-token-definition-api/src/main/resources/com/liferay/frontend/token/definition/frontend-token-definition.schema.json).
 
 Here's an example list of frontend tokens within a frontend token set:
 

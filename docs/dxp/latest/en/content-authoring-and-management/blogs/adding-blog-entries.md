@@ -81,13 +81,13 @@ To relate an asset to the entry,
    !!! warning
       You can't add categories and manually include other elements to the friendly URL using slashes (`/`) at the same time.
 
-      For example, if you attempt to include both the `Appliances` and the `Supplies` categories along with custom elements like `/home/kitchen/blog-entry-title` in the Friendly URL field, you will get an error saying that `The URL title cannot contain slashes and categories.`
+      For example, if you attempt to include both the `Appliances` and the `Supplies` categories along with custom elements like `/home/kitchen/blog-entry-title` in the Friendly URL field, an error appears: `The URL title cannot contain slashes and categories.`
 
       In case of a conflict between URLs, the one using slashes has precedent over the one with categories.
 
 1. Continue configuring the blog entry, publish it, or save it as draft.
 
-Once the blog entry is published, you can display it using a [display page template](#configuring-how-the-entry-is-displayed) and the URL will include the selected categories.
+Once the blog entry is published, you can display it using a [display page template](#configuring-how-the-entry-is-displayed), and the URL includes the selected categories.
 
 ![Once you publish the blog entry, the categories are added to the URL.](./adding-blog-entries/images/03.png)
 
@@ -99,7 +99,7 @@ When customizing friendly URLs, keep these points in mind:
 
 -  If you change the name of a category, the URL is updated automatically.
 
-   While editing a category that is being used in a friendly URL, a message will warn you that `Changes made to the category will impact the associated friendly URL`.
+   While editing a category that is being used in a friendly URL, a message appears: `Changes made to the category will impact the associated friendly URL`.
 
 -  If you delete a category, it's removed automatically from the URL.
 
@@ -118,14 +118,14 @@ When customizing friendly URLs, keep these points in mind:
 
 To configure the blog entry and how it is displayed, expand the *Configuration* and the *Display Page* sections and adjust the following settings,
 
-| Configuration            | Description |
-| :----------------------- | :------------------------------------------------------------------------------------------------------------------------- |
-| Abstract                 | Specify the entry's abstract. By default, the Blogs application uses the first 400 words. *Custom Abstract* prompts for a manual description. |
-| Small Image              | Add a small image to be shown as the entry's thumbnail. |
-| Display Date             | Configure the display date to be used for the entry. |
-| Send Email Entry Updated | Send comments about the entry update. |
+| Configuration            | Description                                                                                                                                                                                                           |
+|:-------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Abstract                 | Specify the entry's abstract. By default, the Blogs application uses the first 400 words. *Custom Abstract* prompts for a manual description.                                                                         |
+| Small Image              | Add a small image to be shown as the entry's thumbnail.                                                                                                                                                               |
+| Display Date             | Configure the display date to be used for the entry.                                                                                                                                                                  |
+| Send Email Entry Updated | Send comments about the entry update.                                                                                                                                                                                 |
 | Allow Pingbacks          | When you include a link to another website's content in your post, and if that website supports pingbacks, it receives a notification or "ping" from your site. Pingbacks use XML-RPC requests to the URL you linked. |
-| Display Page Template    | Select the default [display page template](../../site-building/displaying-content/using-display-page-templates.md), a specific one, or no display page template to display your blog entry. |
+| Display Page Template    | Select the default [display page template](../../site-building/displaying-content/using-display-page-templates.md), a specific one, or no display page template to display your blog entry.                           |
 
 ![When creating a blog entry, use the Configuration panel to control when and where the blog entry appears, and what to use for the entry's abstract.](./adding-blog-entries/images/04.png)
 

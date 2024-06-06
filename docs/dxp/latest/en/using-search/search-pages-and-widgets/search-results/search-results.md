@@ -17,7 +17,7 @@ Multiple factors affect search results:
 * The search widgets used
 * Whether results are post-processed
 
-![The goal of search: return the perfect results to Users searching for content in your site.](./search-results/images/01.png)
+![The goal of search: return the perfect results to users searching for content in your site.](./search-results/images/01.png)
 
 Developers of content types (_assets_ in Liferay DXP) control much about how the asset's information is indexed and how its information is searched and returned in the search results. For further control, an *Indexer Post Processor* can modify an asset's indexing behavior and how search queries are constructed to look up the assets.
 
@@ -46,17 +46,17 @@ Results relevance is configurable:
 
 ## Permissions and Search Results
 
-A search result doesn't appear for a User lacking [permission](../../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md) to view the asset. A logged in User with the Site Administrator Role likely sees more search results than an anonymous guest.
+A search result doesn't appear for a user lacking [permission](../../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md) to view the asset. A logged in user with the Site Administrator Role likely sees more search results than an anonymous guest.
 
 There are two rounds of permissions checks:
 
 * _Pre-filtering_ happens in the search engine's index. It's faster than checking database permissions information, but occasionally the search index can have stale permissions information.
 
-* _Post-filtering_ happens on the results prior to display, to ensure the search engine's index has correct, up-to-date permissions information.
+* _Post-filtering_ happens on the results before display, to ensure the search engine's index has correct, up-to-date permissions information.
 
 ### Pre-filtering
 
-Pre-filtering adds filter clauses to the search query, so searches contain results the current User can view.
+Pre-filtering adds filter clauses to the search query, so searches contain results the current user can view.
 
 You can configure pre-filtering at *Control Panel* &rarr; *Configuration* &rarr; *System Settings* &rarr; *Search* &rarr; *Permission Checker* by controlling the number of search clauses added to queries:
 
@@ -66,7 +66,7 @@ The only reason to limit permissions terms is performance. Users with administra
 
 ### Post-filtering
 
-Post-filtering happens prior to presenting results in the UI. For example, if a User searches for *liferay*, the search engine returns all relevant forum posts. As the Search Results iterates through this list, it performs one last permission check of each post to ensure the User can view the post and its categories. If a User doesn't have permission to view the post, it isn't displayed in the list of search results.
+Post-filtering happens prior to presenting results in the UI. For example, if a user searches for *liferay*, the search engine returns all relevant forum posts. As the Search Results iterates through this list, it performs one last permission check of each post to ensure the user can view the post and its categories. If a user doesn't have permission to view the post, it isn't displayed in the list of search results.
 
 Post-filtering is configurable at *Control Panel* &rarr; *Configuration* &rarr; *System Settings* &rarr; *Search* &rarr; *Default Search Result Permission Filter*. It includes two settings:
 
@@ -85,9 +85,9 @@ In the staged version of the Site, all content---live or staged---is searchable.
 A result summary condenses information from the original asset into an abstract. Asset developers choose what fields are included in the summary. A common summary includes a *title* and some of the *content*, with title displayed first. The asset type always appears on the second line, followed by a snippet of content matching the search term. Assets without content fields, like Documents and Media documents, display the description instead.
 
 !!! note
-    Searching for Users: When you click an asset in the search results, it's displayed in an [Asset Publisher](../../../site-building/displaying-content/using-the-asset-publisher-widget.md) (unless the *View in Context* option is selected in the Search Results widget). Users are different, though. Think of them as invisible assets, not intended for display in the Asset Publisher application.  While Users appear as search results with other indexed assets, when you click one you're taken to the User's profile page. If public personal pages are disabled, clicking on a User from the list of search results shows you a blank page. Only the User's full name and the asset type (User) appear in User result summaries:
+    Searching for users: When you click an asset in the search results, it's displayed in an [Asset Publisher](../../../site-building/displaying-content/using-the-asset-publisher-widget.md) (unless the *View in Context* option is selected in the Search Results widget). Users are different, though. Think of them as invisible assets, not intended for display in the Asset Publisher application.  While users appear as search results with other indexed assets, when you click one you're taken to the user's profile page. If public personal pages are disabled, clicking on a user from the list of search results shows you a blank page. Only the user's full name and the asset type (User) appear in user result summaries:
 
-![User summaries contain only the User's full name.](./search-results/images/03.png)
+![User summaries contain only the user's full name.](./search-results/images/03.png)
 
 For assets containing other assets (Web Content and Documents & Media folders) or whose content is not amenable to display (Dynamic Data List Records and Calendar Events), it makes more sense to display the title, asset type, and description in results summaries:
 
@@ -105,7 +105,7 @@ Search terms appearing in the summary are <mark>highlighted</mark> by default. I
 
 ![Some document summaries have lots of highlights if the search term matches text that appears in the summary.](./search-results/images/05.png)
 
-Highlighting is a helpful visual cue that hints at why the result is returned, but beware: high scoring hits can appear at the top of results without having any highlights in the summary. That's because not all indexed fields appear in the summary. Consider a User named Arthur C. Clarke. He has a searchable email address of *acc@authors.org*. Because Users result summaries only contain their full names, searching for Mr. Clarke by his email address returns the User, but no term is highlighted.
+Highlighting is a helpful visual cue that hints at why the result is returned, but beware: high scoring hits can appear at the top of results without having any highlights in the summary. That's because not all indexed fields appear in the summary. Consider a user named Arthur C. Clarke. He has a searchable email address of *acc@authors.org*. Because users result summaries only contain their full names, searching for Mr. Clarke by his email address returns the user, but no term is highlighted.
 
 ![Results that match the search term won't always have highlights.](./search-results/images/06.png)
 

@@ -8,13 +8,14 @@ taxonomy-category-names:
 - Liferay PaaS
 - Liferay SaaS
 ---
+
 # Using External Reference Codes
 
 {bdg-secondary}Liferay DXP/Portal 7.4+
 
-Many of Liferay's headless API endpoints support an external reference code (ERC). The ERC field is useful in wide range of scenarios. For example, when migrating content into Liferay, you could keep the unique reference IDs from another system in the ERC field. Or use ERCs to have human-readable keys for your site content. For example, Liferay assigns a unique ID for each created blog post, but you could assign human readable keys for easier reference. 
+Many of Liferay's headless API endpoints support an external reference code (ERC). The ERC field is useful in wide range of scenarios. For example, when migrating content into Liferay, you could keep the unique reference IDs from another system in the ERC field. Or use ERCs to have human-readable keys for your site content. For example, Liferay assigns a unique ID for each created blog post, but you could assign human readable keys for easier reference.
 
-Each ERC must be unique, and the same ERC cannot be used with another entity in the same scope. For example, a blog post and a document on the same site cannot have the same ERC. If you try, you'll get a `duplicate entry` error. 
+Each ERC must be unique, and the same ERC cannot be used with another entity in the same scope. For example, a blog post and a document on the same site cannot have the same ERC. If you try, you'll get a `duplicate entry` error.
 
 ## Blog Post ERC Example
 
@@ -85,3 +86,8 @@ Create and access a blog post with an ERC.
    Note, this GET method for blog posts by ERC requires the site ID (e.g. `20119`) and the ERC (e.g. `blog_post_able`).
 
 Check out the [API Explorer](../using-liferay-as-a-headless-platform.md#ways-to-connect) to see the different API endpoints that support external reference codes.
+
+## Related Topics
+
+- [Consuming APIs](../consuming-apis.md)
+- [Managing Objects With Headless APIs](../../liferay-development/objects/creating-and-managing-objects/managing-objects-with-headless-apis.md)

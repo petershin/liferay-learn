@@ -13,7 +13,7 @@ taxonomy-category-names:
 {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+`
 
 !!! important
-   Currently, this feature is behind a release feature flag (LPS-174455). Read [Release Feature Flags](../../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information.
+    Currently, this feature is behind a release feature flag (LPS-174455). Read [Release Feature Flags](../../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information.
 
 When creating object entries with [attachment fields](../../creating-and-managing-objects/fields/attachment-fields.md) through APIs, you can generally upload files from your computer or use files uploaded to the [Documents and Media](../../../../content-authoring-and-management/documents-and-media.md) application. Both scenarios require multiple steps.
 
@@ -48,16 +48,16 @@ Follow these steps to [create](../../creating-and-managing-objects/creating-obje
    | usersComputerAttachment2 | usersComputerAttachment2 | Attachment | `Upload Directly from the User's Computer` (Toggle the `Show Files in Documents and Media` option) |
    | docsAndMediaAttachment   | docsAndMediaAttachment   | Attachment | `Upload or Select from Documents and Media Item Selector`                                          |
 
-   Alternatively, execute `ObjectDefinition_POST_ToInstance.sh` to create the object definition. Afterward, you can access the object definition at Global Menu &rarr; Control Panel &rarr; Objects and continue with the next step.
+   Alternatively, execute `ObjectDefinition_POST_ToInstance.sh` to create the object definition. Afterward, you can access the object definition at *Global Menu* &rarr; *Control Panel* &rarr; *Objects* and continue with the next step.
 
    ```bash
    ./ObjectDefinition_POST_ToInstance.sh
    ```
 
-1. Go to the *Details* tab, select *Company* as the Scope, *Object* under Panel Link, and click [*Publish*](../../creating-and-managing-objects/creating-objects.md#publishing-object-drafts).
+1. In the Details tab, select *Company* as the Scope, *Object* under Panel Link, and click [*Publish*](../../creating-and-managing-objects/creating-objects.md#publishing-object-drafts).
 
    !!! important
-      For this tutorial, you must use the above values.
+       For this tutorial, you must use the above values.
 
 Once published, you can access the object via APIs.
 
@@ -111,7 +111,7 @@ To create an object entry with an attachment using the `Upload Directly from the
    ...
    ```
 
-   The terminal should display a similar output.
+   The terminal shows a similar output.
 
    ```bash
    {
@@ -177,8 +177,6 @@ Execute `Able_POST_FromUsersComputer2.sh` to create an object entry with an atta
 
 ### Posting an Attachment Uploaded or Selected From The Documents and Media Item Selector
 
-To create an object entry with an attachment using the `Upload or Select from Documents and Media Item Selector` Request Files option,
-
 1. Execute `DocumentFolder_POST_ToSite.sh` to create the folder to store the uploaded file. Use the site ID as a parameter. In this example, the site ID is `20117`
 
    !!! tip
@@ -187,8 +185,6 @@ To create an object entry with an attachment using the `Upload or Select from Do
    ```bash
    ./DocumentFolder_POST_ToSite.sh [site-id]
    ```
-
-   <!-- I had seen that placeholders are supposed to be added between []. But I found {} around this section (in object-api-basics.md, for example). I decided to keep the [] for now, but which is correct? Eric -->
 
    The terminal should display a similar output.
 
@@ -248,7 +244,7 @@ To create an object entry with an attachment using the `Upload or Select from Do
    ./Able_POST_FromDocumentsAndMedia.sh [ERC] [site-id]
    ```
 
-   Use the `folder` parameter to add the externalReferenceCode and the siteId where the document will be stored.
+   Use the `folder` parameter to add the `externalReferenceCode` and the `siteId` to store the document. 
 
    ```bash
    ...
@@ -260,7 +256,7 @@ To create an object entry with an attachment using the `Upload or Select from Do
    ```
 
    !!! note
-       If the `siteId` or the `ERC` are not included, null, or empty, the POST request still works and the file is uploaded to the default site's root folder.
+       If the `siteId` or the `ERC` are not included, null, or empty, the POST request still works, and the file is uploaded to the default site's root folder.
 
    The terminal should display a similar output.
 
@@ -319,7 +315,7 @@ To create an object entry with an attachment using the `Upload or Select from Do
    ```
 
    !!! note
-       Uploading a file with the same name as an existing file in the destination folder will result in the new file being renamed with a unique sequential number in parentheses (i.e., `Name (n).extension`).
+       Uploading a file with the same name as an existing file in the destination folder results in the new file being renamed with a unique sequential number in parentheses (i.e., `Name (n).extension`).
 
    Note that the response doesn't contain the `fileBase64` encoding by default. See [Getting the Attachment's Content in the Response](#getting-the-attachments-content-in-the-response) to learn more.
 
@@ -443,7 +439,7 @@ curl \
    --user "test@liferay.com:learn"
 ```
 
-The terminal should display a similar output with the folder's ERC and siteId where it's located.
+The terminal shows a similar output with the folder's `ERC` and `siteId` where it's located.
 
 ```bash
 ...

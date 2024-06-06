@@ -93,7 +93,7 @@ For assets containing other assets (Web Content and Documents & Media folders) o
 
 ![Documents and Media and Web Content folders include titles and descriptions in their summaries.](./search-results/images/04.png)
 
-Beginning in Liferay DXP 2024.Q2/Portal 7.4 GA120, the results summary for Documents and Media documents includes a download link for users with the Download permission. In addition, the download link is added to the [widget template](../using-search-widget-display-templates.md) editor's available variables for use in [custom widget display templates](../using-search-widget-display-templates.md).
+Beginning in Liferay DXP 2024.Q2/Portal 7.4 GA120, users can download Documents and Media documents directly from the search results widget. In all out-of-the-box widget templates, the results summary for Documents and Media documents includes a download link for users with the Download permission. [Custom display templates](../using-search-widget-display-templates.md) must be adjusted to add the download link. The download link is available as a pre-defined variable in the [widget display template](../using-search-widget-display-templates.md) editor.
 
 ![Users can download Documents and Media files right from the Search Results widget.](./search-results/images/07.png)
 

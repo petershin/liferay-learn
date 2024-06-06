@@ -87,6 +87,33 @@ Create and access a blog post with an ERC.
 
 Check out the [API Explorer](../using-liferay-as-a-headless-platform.md#ways-to-connect) to see the different API endpoints that support external reference codes.
 
+## ERC Behavior in API Endpoints
+
+{bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA126+`
+
+Although you can use slashes (`/`) in your ERCs, it may cause unexpected behavior in specific situations when dealing with APIs with ERCs in their endpoint URL paths. Here are some observations to help understand those behaviors:
+
+- In general, you can use slashes or escape them as `%252F`.
+
+   For example. If the ERC is `a/b`, you can use it like `"http://localhost:8080/o/c/objectDefinition/by-external-reference-code/a/b"` or `"http://localhost:8080/o/c/objectDefinition/by-external-reference-code/a%252Fb"`.
+
+- Slashes must be escaped `%252F` whenever they can cause confusion or be misinterpreted as path delimiters in URLs. This misinterpretation can lead to incorrect parsing and unexpected behavior in the API calls.
+
+   For example, in the object relationship PUT endpoint (`http://localhost:8080/o/c/tests/[currentERC]/relationship/[relatedERC]`), failing to escape slashes in the `relatedERC` value can cause the endpoint to misinterpret the path segments.
+
+   Check the table below with different examples. Under `currentERC` and `relatedERC` there are examples of ERCs. The Result column indicates whether the URL will be correctly interpreted. An observation is added to the cases where the URL doesn't work.
+
+   | `currentERC` | `relatedERC` |  Result  | Observation                                        |
+   | :----------- | :----------- | :------: | :------------------------------------------------- |
+   | `a/b`        | `c`          | &#10004; |                                                    |
+   | `a%252Fb`    | `c`          | &#10004; |                                                    |
+   | `a`          | `c/d`        | &#10060; | `currentERC` will include the relationship's name. |
+   | `a`          | `c%252Fd`    | &#10004; |                                                    |
+   | `a/b`        | `c/d`        | &#10060; | `currentERC` will include the relationship's name. |
+   | `a%252Fb`    | `c%252Fd`    | &#10004; |                                                    |
+   | `a%252Fb`    | `c/d`        | &#10060; | `currentERC` will include the relationship's name. |
+   | `a/b`        | `c%252Fd`    | &#10004; |                                                    |
+
 ## Related Topics
 
 - [Consuming APIs](../consuming-apis.md)

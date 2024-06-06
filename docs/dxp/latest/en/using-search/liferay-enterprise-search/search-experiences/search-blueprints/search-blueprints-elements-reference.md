@@ -21,7 +21,7 @@ To see the query configuration JSON for any Element while working in the Bluepri
 
 Each Element can be disabled or enabled in the Blueprint using the toggle switch in the Title Bar of the Blueprint. For a streamlined view of the Elements in the Blueprint, you can collapse the contents of an Element using the Down Arrow Icon (![Down Arrow Icon](../../../../images/icon-angle-down.png)) in the Title Bar of the Element.
 
-Each Element has configuration options, many of which directly correspond to attributes of the query as defined in the Elasticsearch [Query DSL documentation](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/query-dsl.html). Links to specific query types are provided below as appropriate.
+Each Element has configuration options, many of which directly correspond to attributes of the query as defined in the Elasticsearch [Query DSL documentation](https://www.elastic.co/guide/en/elasticsearch/reference/8.13/query-dsl.html). Links to specific query types are provided below as appropriate.
 
 Beginning in Liferay 2024.Q1, elements using asset categories and sites provide a selector instead of a requiring an ID in a basic text field. Retrieving numeric IDs is no longer necessary, but you can continue entering IDs manually if desired.
 
@@ -29,7 +29,7 @@ Beginning in Liferay 2024.Q1, elements using asset categories and sites provide 
 
 ## Boost Some Results
 
-A `boost` configured on an [Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/query-dsl-term-query.html#term-field-params) query adjusts the relevance score of matching results. Values over 1.0 increase the score, while values between 0 and 1.0 decrease it.
+A `boost` configured on an [Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/8.13/query-dsl-term-query.html#term-field-params) query adjusts the relevance score of matching results. Values over 1.0 increase the score, while values between 0 and 1.0 decrease it.
 
 When boosting certain results, the boost value will need tuning to meet your specific needs. Use the [Preview Sidebar](creating-and-managing-search-blueprints.md#testing-a-blueprint-with-the-preview-sidebar)  to inspect how the documents are being scored and to fine-tune your boost values.
 
@@ -44,7 +44,7 @@ Use a Multi-match query to boost results if the search keywords match in the giv
 - Boost: adjust the relevance score of matching results. Because the default value is 1.0, Values over 1.0 increase the score, while values between 0 and 1.0 decrease it.
 - Text to Match: match hardcoded keywords or leave blank to match the user's search keywords.
 
-_External Reference_: See the Elasticsearch [Multi-match](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/query-dsl-multi-match-query.html) query documentation.
+_External Reference_: See the Elasticsearch [Multi-match](https://www.elastic.co/guide/en/elasticsearch/reference/8.13/query-dsl-multi-match-query.html) query documentation.
 
 ### Boost Asset Type
 
@@ -115,7 +115,7 @@ _Example:_ If the version count for a document was `8`, and the default values w
 
 Therefore this document will have a score of about `30` added to it because of this Element.
 
-_External Reference:_ See the Elasticsearch [Function score query](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/query-dsl-function-score-query.html) documentation.
+_External Reference:_ See the Elasticsearch [Function score query](https://www.elastic.co/guide/en/elasticsearch/reference/8.13/query-dsl-function-score-query.html) documentation.
 
 ### Boost Freshness
 
@@ -130,7 +130,7 @@ The Gaussian function used to score documents by their freshness might need to b
 - Scale is added to Offset to determine the number of days (in the past) from now when the relevance of results will equal the Decay parameter.
 - Boost is the beginning numeric value to boost results that are within the defined scale.
 
-_External Reference:_ See the Elasticsearch [Function Score Query](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/query-dsl-function-score-query.html) documentation for more details.
+_External Reference:_ See the Elasticsearch [Function Score Query](https://www.elastic.co/guide/en/elasticsearch/reference/8.13/query-dsl-function-score-query.html) documentation for more details.
 
 ### Boost Longer Contents
 
@@ -146,15 +146,15 @@ You can adjust the Boost, Factor, and Modifier in the Element configuration:
 - Factor is the value to multiply the field value by.
 - Modifier defines the function to use when modifying the field value.
 
-_External Reference:_ See the Elasticsearch [Function Score Query](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/query-dsl-function-score-query.html) documentation for more details.
+_External Reference:_ See the Elasticsearch [Function Score Query](https://www.elastic.co/guide/en/elasticsearch/reference/8.13/query-dsl-function-score-query.html) documentation for more details.
 
 ### Boost Proximity
 
 Boost contents in closer proximity to the search user with a Gaussian function.
 
-The Boost Proximity element uses the [ipstack](https://ipstack.com) service to boost search results closer to a user's location, as marked by a [geopoint](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/geo-point.html) field in the document.
+The Boost Proximity element uses the [ipstack](https://ipstack.com) service to boost search results closer to a user's location, as marked by a [geopoint](https://www.elastic.co/guide/en/elasticsearch/reference/8.13/geo-point.html) field in the document.
 
-A search document must have a [geopoint field](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/geo-point.html) to work with the ipstack service and the Boost Proximity Element. Liferay includes compatible Geolocation fields that you can add as a Custom Field to existing assets.
+A search document must have a [geopoint field](https://www.elastic.co/guide/en/elasticsearch/reference/8.13/geo-point.html) to work with the ipstack service and the Boost Proximity Element. Liferay includes compatible Geolocation fields that you can add as a Custom Field to existing assets.
 
 See [Personalizing the Search Experience](./personalizing-the-search-experience.md) for details on setting up the ipstack service, using a custom geolocation field, and adding the Boost Proximity element to a Blueprint.
 
@@ -166,7 +166,7 @@ Boost contents having at least one of the given tags. Enter multiple tag names u
 
 Boost contents with an exact keyword match to a tag. The search user's keywords are compared with the `assetTagNames.raw` field content (this makes a keyword field out of the `assetTagNames` text field), and if the term query matches in a document, its score is boosted by the configured value.
 
-_External Reference:_ See the Elasticsearch [Term query](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/query-dsl-term-query.html) documentation.
+_External Reference:_ See the Elasticsearch [Term query](https://www.elastic.co/guide/en/elasticsearch/reference/8.13/query-dsl-term-query.html) documentation.
 
 ### Boost Web Contents by Keyword Match
 
@@ -182,13 +182,13 @@ Filter results by matching (using a Terms query) one or multiple terms to a fiel
 
 ![Filter results that have an exact match in a given field.](./search-blueprints-elements-reference/images/09.png)
 
-_External Reference:_ See the [Elasticsearch Terms query](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/query-dsl-terms-query.html) documentation.
+_External Reference:_ See the [Elasticsearch Terms query](https://www.elastic.co/guide/en/elasticsearch/reference/8.13/query-dsl-terms-query.html) documentation.
 
 ### Limit Search to Contents Created Within a Period of Time
 
 Filter results using a Range query. Configure the time range.
 
-_External Reference:_ See the [Elasticsearch Range query](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/query-dsl-range-query.html) documentation.
+_External Reference:_ See the [Elasticsearch Range query](https://www.elastic.co/guide/en/elasticsearch/reference/8.13/query-dsl-range-query.html) documentation.
 
 ### Limit Search to HEAD Version
 
@@ -232,7 +232,7 @@ This Element's functionality overlaps with the [Search Bar's](../../../getting-s
 
 By wrapping a query in a Boolean query with a Must Not occurrence clause, results can be hidden if they match the query.
 
-_External Reference:_ See the [Elasticsearch Boolean query](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/query-dsl-bool-query.html) documentation.
+_External Reference:_ See the [Elasticsearch Boolean query](https://www.elastic.co/guide/en/elasticsearch/reference/8.13/query-dsl-bool-query.html) documentation.
 
 ### Hide by Exact Term Match
 
@@ -272,7 +272,7 @@ For example, to make sure no documents are returned if the title matches the que
 
 ![Paste an Elasticsearch query body into the Element.](./search-blueprints-elements-reference/images/12.png)
 
-_External Reference:_ See the [Elasticsearch Wrapper query](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/query-dsl-wrapper-query.html) documentation.
+_External Reference:_ See the [Elasticsearch Wrapper query](https://www.elastic.co/guide/en/elasticsearch/reference/8.13/query-dsl-wrapper-query.html) documentation.
 
 ### Scheduling Aware
 
@@ -282,7 +282,7 @@ Show only contents with a display date that's not in the future, and do not show
 
 Use Query String query syntax to match one or more fields. Specify the default boolean operator (OR or AND) to use in determining whether all search keywords must match (AND) or only one must match (OR). This Element allows the user to enter more advanced search keyword strings, using boolean operators, wildcards, and more.
 
-_External Reference:_ See the [Elasticsearch Query String query](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/query-dsl-query-string-query.html#query-string-syntax) documentation.
+_External Reference:_ See the [Elasticsearch Query String query](https://www.elastic.co/guide/en/elasticsearch/reference/8.13/query-dsl-query-string-query.html#query-string-syntax) documentation.
 
 ### Staging Aware
 
@@ -295,13 +295,13 @@ Search for a text match over multiple text fields. Match either the search user'
 - Use the Fields configuration to chose which fields to search. Only choose analyzed text fields.
 - The Operator determines if all the analyzed search keywords should appear in each field (AND) or if only one must appear in each field (OR). The exact behavior is influenced by the Match Type.
 - Match Type determines the way the query is handled internally by Elasticsearch: _Most Fields_ is probably the most fundamental, as it creates a Match query for each specified field and combines the scores.
-- Fuzziness sets the behavior around imprecise matching. Setting 0, 1, or 2 directly specifies the [Levenshtein edit distance](https://en.wikipedia.org/wiki/Levenshtein_distance) that's allowed for the query to return a match. AUTO generates the edit distance based on the length of the term being searched. See the [Elasticsearch fuzziness documentation](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/common-options.html#fuzziness) for more information.
-- Minimum Should Match sets the minimum number of clauses that must match for the document to be returned by the search. See [Elasticsearch's minimum_should_match](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/query-dsl-minimum-should-match.html) documentation for more information.
+- Fuzziness sets the behavior around imprecise matching. Setting 0, 1, or 2 directly specifies the [Levenshtein edit distance](https://en.wikipedia.org/wiki/Levenshtein_distance) that's allowed for the query to return a match. AUTO generates the edit distance based on the length of the term being searched. See the [Elasticsearch fuzziness documentation](https://www.elastic.co/guide/en/elasticsearch/reference/8.13/common-options.html#fuzziness) for more information.
+- Minimum Should Match sets the minimum number of clauses that must match for the document to be returned by the search. See [Elasticsearch's minimum_should_match](https://www.elastic.co/guide/en/elasticsearch/reference/8.13/query-dsl-minimum-should-match.html) documentation for more information.
 - Slop is used by the Phrase and Phrase Prefix Match Types. It allows for inexact phrase matching by specifying the number of words that the phrase can be off by and still match. For example, using the Phrase type and a slop of 1, searching for "liferay blogs" could still match a field that contained "liferay dxp blogs".
 - Set the Boost to boost any document that matches the clauses provided by this Element.
 - Se the Text to Match if you want to hardcode the value the query clauses should be matched with. Leave this blank if you just want to search by the user's keywords.
 
-_External Reference:_ See the [Elasticsearch Multi-match query](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/query-dsl-multi-match-query.html) documentation.
+_External Reference:_ See the [Elasticsearch Multi-match query](https://www.elastic.co/guide/en/elasticsearch/reference/8.13/query-dsl-multi-match-query.html) documentation.
 
 ## Related Topics
 

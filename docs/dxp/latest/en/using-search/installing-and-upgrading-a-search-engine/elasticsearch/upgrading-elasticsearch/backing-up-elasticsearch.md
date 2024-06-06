@@ -7,11 +7,11 @@ uuid: 35f429b3-aadb-4c7f-844f-e389410ea935
 ---
 # Backing Up Elasticsearch
 
-[Elasticsearch replicas](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/index-modules.html#index-modules-settings) protect against a node going down, but they won't help you with a catastrophic failure. Only good backup practices can help you then.
+[Elasticsearch replicas](https://www.elastic.co/guide/en/elasticsearch/reference/8.13/index-modules.html#index-modules-settings) protect against a node going down, but they won't help you with a catastrophic failure. Only good backup practices can help you then.
 
 ## Backing Up Indexes Before Upgrading
 
-It's best practice to back up the indexes under all upgrade scenarios, even if the indexed data can be restored by reindexing from Liferay's database. Taking a [snapshot of your app-specific indexes](#backing-up-and-restoring-search-tuning-indexes-for-liferay-7-2-and-7-3) (like Liferay's Search Tuning indexes in Liferay DXP 7.2 and 7.3) is essential if your data is stored only in the search index. The snapshot can be used to restore your previous data (e.g., Synonym Sets and Result Rankings) when you set up a new Elasticsearch server. Make sure to read the Elasticsearch documentation on [snapshot and restore version compatibility](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/snapshot-restore.html#snapshot-restore-version-compatibility) before attempting this approach.
+It's best practice to back up the indexes under all upgrade scenarios, even if the indexed data can be restored by reindexing from Liferay's database. Taking a [snapshot of your app-specific indexes](#backing-up-and-restoring-search-tuning-indexes-for-liferay-7-2-and-7-3) (like Liferay's Search Tuning indexes in Liferay DXP 7.2 and 7.3) is essential if your data is stored only in the search index. The snapshot can be used to restore your previous data (e.g., Synonym Sets and Result Rankings) when you set up a new Elasticsearch server. Make sure to read the Elasticsearch documentation on [snapshot and restore version compatibility](https://www.elastic.co/guide/en/elasticsearch/reference/8.13/snapshot-restore.html#snapshot-restore-version-compatibility) before attempting this approach.
 
 Here are some representative upgrade scenarios:
 
@@ -22,7 +22,7 @@ Here are some representative upgrade scenarios:
 ## Creating Elasticsearch Cluster Backups
 
 ```{tip}
-It's convenient to create and manage snapshots via the [Kibana 7.x UI](https://www.elasticsearch.co/guide/en/kibana/8.12/snapshot-repositories.html).
+It's convenient to create and manage snapshots via the [Kibana 7.x UI](https://www.elasticsearch.co/guide/en/kibana/8.13/snapshot-repositories.html).
 ```
 
 Back up your Elasticsearch cluster and test restoring the backup in three steps: 
@@ -34,12 +34,12 @@ Back up your Elasticsearch cluster and test restoring the backup in three steps:
 1. Restore from the snapshot
 
 ```{note}
-For more detailed information, refer to Elastic's [Elasticsearch administration guide](https://www.elastic.co/guide/en/elasticsearch/guide/master/administration.html), and in particular to the [Snapshot and Restore module](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/snapshot-restore.html).
+For more detailed information, refer to Elastic's [Elasticsearch administration guide](https://www.elastic.co/guide/en/elasticsearch/guide/master/administration.html), and in particular to the [Snapshot and Restore module](https://www.elastic.co/guide/en/elasticsearch/reference/8.13/snapshot-restore.html).
 ```
 
 ### Create a Repository
 
-First [create a repository](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/snapshots-register-repository.html) to store your snapshots. Elasticsearch allows several repository types, including
+First [create a repository](https://www.elastic.co/guide/en/elasticsearch/reference/8.13/snapshots-register-repository.html) to store your snapshots. Elasticsearch allows several repository types, including
 
 * Shared file system, such as a Network File System or NAS
 * Amazon S3
@@ -47,7 +47,7 @@ First [create a repository](https://www.elastic.co/guide/en/elasticsearch/refere
 * Azure Cloud
 * Google Cloud Storage
 
-If you want to store snapshots on a shared file system, first register the path to the shared file system in each node's `elasticsearch.yml` using the [`path.repo` setting](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/snapshots-register-repository.html#snapshots-filesystem-repository). For example,
+If you want to store snapshots on a shared file system, first register the path to the shared file system in each node's `elasticsearch.yml` using the [`path.repo` setting](https://www.elastic.co/guide/en/elasticsearch/reference/8.13/snapshots-register-repository.html#snapshots-filesystem-repository). For example,
 
 ```yaml
 path.repo: ["path/to/shared/file/system/"]
@@ -77,7 +77,7 @@ Now that the repository exists, create a snapshot.
 
 ### Take a Snapshot of the Cluster
 
-The easiest snapshot approach is to create a [snapshot of all the indexes in your cluster](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/snapshots-take-snapshot.html). For example,
+The easiest snapshot approach is to create a [snapshot of all the indexes in your cluster](https://www.elastic.co/guide/en/elasticsearch/reference/8.13/snapshots-take-snapshot.html). For example,
 
 ```bash
 PUT /_snapshot/test_backup/snapshot_1
@@ -166,7 +166,7 @@ Including all indexes in a snapshot can consume a lot of time and storage. If yo
 
 ## Test Restoring from the Snapshot
 
-If a catastrophic failure occurs, what good is a snapshot if you can't [restore your search indexes](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/snapshots-restore-snapshot.html) from it? Use the `_restore` API to restore all the snapshot's indexes:
+If a catastrophic failure occurs, what good is a snapshot if you can't [restore your search indexes](https://www.elastic.co/guide/en/elasticsearch/reference/8.13/snapshots-restore-snapshot.html) from it? Use the `_restore` API to restore all the snapshot's indexes:
 
 ```bash
 POST /_snapshot/test_backup/snapshot_1/_restore
@@ -203,13 +203,13 @@ As with canceling a snapshot process, you can use the `DELETE` command to cancel
 DELETE /restored_liferay-20116index_3
 ```
 
-Nobody likes catastrophic failure on a production system, but Elasticsearch's API for taking snapshots and restoring indexes can help you rest easy knowing that your search cluster can be restored if disaster strikes. For more details and options, read Elastic's [Snapshot and Restore documentation](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/snapshot-restore.html).
+Nobody likes catastrophic failure on a production system, but Elasticsearch's API for taking snapshots and restoring indexes can help you rest easy knowing that your search cluster can be restored if disaster strikes. For more details and options, read Elastic's [Snapshot and Restore documentation](https://www.elastic.co/guide/en/elasticsearch/reference/8.13/snapshot-restore.html).
 
 ## Backing Up and Restoring Search Tuning Indexes for Liferay 7.2 and 7.3
 
 Creating a snapshot of your Elasticsearch indexes is highly recommended, especially for indexes that act as the primary storage format: for example, [Synonym Sets](../../../search-administration-and-tuning/synonym-sets.md) and [Result Rankings](../../../search-administration-and-tuning/result-rankings.md) on Liferay DXP 7.2 and 7.3. There are no records for these applications in the database.
 
-You can use Elasticsearch's [snapshot and restore](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/snapshot-restore.html) feature to back up and restore the Search Tuning indexes.
+You can use Elasticsearch's [snapshot and restore](https://www.elastic.co/guide/en/elasticsearch/reference/8.13/snapshot-restore.html) feature to back up and restore the Search Tuning indexes.
 
 1. Create a folder called `elasticsearch_local_backup` somewhere in the system. Make sure Elasticsearch has read and write access to the folder (e.g., `/path/to/elasticsearch_local_backup`).
 
@@ -219,11 +219,11 @@ You can use Elasticsearch's [snapshot and restore](https://www.elastic.co/guide/
     path.repo: [ "/path/to/elasticsearch_local_backup" ]
     ```
 
-   to the `elasticsearch.yml` for [all master and data nodes](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/snapshots-register-repository.html#snapshots-filesystem-repository) in the Elasticsearch cluster. If you're upgrading Elasticsearch, make sure the path to the snapshot repository is the same in the pre-upgrade and post-upgrade Elasticsearch configurations.
+   to the `elasticsearch.yml` for [all master and data nodes](https://www.elastic.co/guide/en/elasticsearch/reference/8.13/snapshots-register-repository.html#snapshots-filesystem-repository) in the Elasticsearch cluster. If you're upgrading Elasticsearch, make sure the path to the snapshot repository is the same in the pre-upgrade and post-upgrade Elasticsearch configurations.
 
 1. Restart all Elasticsearch nodes.
 
-1. [Register the snapshot repository](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/snapshots-register-repository.html). You can run the following `snapshot` API request (for example through the Dev Tools console in Kibana):
+1. [Register the snapshot repository](https://www.elastic.co/guide/en/elasticsearch/reference/8.13/snapshots-register-repository.html). You can run the following `snapshot` API request (for example through the Dev Tools console in Kibana):
 
     ```json
     PUT /_snapshot/elasticsearch_local_backup
@@ -238,7 +238,7 @@ You can use Elasticsearch's [snapshot and restore](https://www.elastic.co/guide/
 
    If you're upgrading to a new Elasticsearch version, you can use this same command on the post-upgrade Elasticsearch to register the snapshot repository.
 
-1. [Create a snapshot](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/snapshots-take-snapshot.html):
+1. [Create a snapshot](https://www.elastic.co/guide/en/elasticsearch/reference/8.13/snapshots-take-snapshot.html):
 
     ```json
     PUT /_snapshot/elasticsearch_local_backup/snapshot1?wait_for_completion=true
@@ -251,7 +251,7 @@ You can use Elasticsearch's [snapshot and restore](https://www.elastic.co/guide/
 
    If you want to create a snapshot for all Liferay indexes, you can use `"indices": "liferay*,workflow-metrics*"` instead. If you're in an upgrade scenario, it can make sense to take a snapshot of just the indexes that can't be recreated from the database, like the Synonym Sets and Result Rankings indexes in Liferay DXP 7.2 and 7.3.
 
-1. To [restore](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/snapshots-restore-snapshot.html) specific indexes from a snapshot using a different name, run a `restore` API call similar to this:
+1. To [restore](https://www.elastic.co/guide/en/elasticsearch/reference/8.13/snapshots-restore-snapshot.html) specific indexes from a snapshot using a different name, run a `restore` API call similar to this:
 
     ```json
     POST /_snapshot/elasticsearch_local_backup/snapshot1/_restore

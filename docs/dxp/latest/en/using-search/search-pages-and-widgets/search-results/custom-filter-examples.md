@@ -86,7 +86,7 @@ Immediately after creating the second blog post, configure the Custom Filter's F
 
 Search again, and the order of the blogs in Search Results will now show the later blog first (as long as the newer blog was created within the configured time range, and the older blog was not).
 
-See the [Elasticsearch date-math documentation](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/common-options.html#date-math) to understand more about how to specify the ranges.
+See the [Elasticsearch date-math documentation](https://www.elastic.co/guide/en/elasticsearch/reference/8.13/common-options.html#date-math) to understand more about how to specify the ranges.
 
 ### Boosting Matches to Designated Fields
 
@@ -170,7 +170,7 @@ Importantly, the filters by `groupId` declare the `SiteBoolQuery` as the parent 
 
 ## Complex Filter with Query String
 
-Sometimes you can avoid the need for multiple queries (as in the [Filtering by Site ID](#filtering-by-site-id) example), by using the [Query String query](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/query-dsl-query-string-query.html). The below configuration demonstrates how you can use only one Custom Filter widget to constrain the search to
+Sometimes you can avoid the need for multiple queries (as in the [Filtering by Site ID](#filtering-by-site-id) example), by using the [Query String query](https://www.elastic.co/guide/en/elasticsearch/reference/8.13/query-dsl-query-string-query.html). The below configuration demonstrates how you can use only one Custom Filter widget to constrain the search to
 
 - Match Documents and Media files with `pdf` or `jpg` extensions OR
 - Match Web Content Articles
@@ -195,7 +195,7 @@ The Query String query should not be used if the value being passed is coming fr
 
 {bdg-secondary}`Available 7.2 FP10+, 7.3 FP1+, 7.4 (all updates)`
 
-Using a [nested field](../../../liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document) in a Custom Filter configuration requires three Custom Filter widgets on the search page. A [Nested query](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/query-dsl-nested-query.html) that wraps the required child queries is added in one of the widgets: one child query matches the field's name, the other the value.
+Using a [nested field](../../../liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document) in a Custom Filter configuration requires three Custom Filter widgets on the search page. A [Nested query](https://www.elastic.co/guide/en/elasticsearch/reference/8.13/query-dsl-nested-query.html) that wraps the required child queries is added in one of the widgets: one child query matches the field's name, the other the value.
 
 This example demonstrates adding a boost for matches to a certain DDM Structure field.
 

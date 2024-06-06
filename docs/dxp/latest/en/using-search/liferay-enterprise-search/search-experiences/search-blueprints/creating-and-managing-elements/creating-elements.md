@@ -15,7 +15,7 @@ There are a lot of [system Elements that ship with Search Blueprints](../search-
 * [Use the Custom JSON Element](#using-the-custom-json-elements) to create Elements from the Search Blueprints [Query Builder](../creating-and-managing-search-blueprints.md#using-the-query-builder).
 * [Use the Add Element source editor](#using-the-add-element-source-editor) to write Elements using a more robust Element editor, including handy preview functionality and a listing of the predefined template variables in the system. 
 * [Duplicate a system Element](./managing-elements.md) to get a head start on developing your own custom Element.
-* Use the [Paste Any Elasticsearch Query system Element](../search-blueprints-elements-reference.md#paste-any-elasticsearch-query) if you're familiar with using the [Elasticsearch query DSL](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/query-dsl.html) and need to cook up an Element quickly based on an Elasticsearch query.
+* Use the [Paste Any Elasticsearch Query system Element](../search-blueprints-elements-reference.md#paste-any-elasticsearch-query) if you're familiar with using the [Elasticsearch query DSL](https://www.elastic.co/guide/en/elasticsearch/reference/8.13/query-dsl.html) and need to cook up an Element quickly based on an Elasticsearch query.
 
 ## Using the Custom JSON Element
 
@@ -230,7 +230,7 @@ Diving into the `queryEntries` JSON, it can contain the properties `clauses`, `c
 - A `condition` provides a boolean check. If true, the provided clauses are included in the search query; if false, they are left out.
 - Set `enabled` to false (it's true by default) to disable the Element.
 - Add `postFilterClauses` (as an array of `clause` elements). You can add `additive`, `boost`, `content`, `disabled`, `field`, `name`, `occur`, `parent`, `query`, `type`, or `value` properties.
-- Add `rescores` to recalculate the relevance score for results of a query. Specify the `query`, `queryWeight`, `rescoreQueryWeight`, `scoreMode`, and `windowSize`. See the [Elasticsearch documentation](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/filter-search-results.html#rescore) for details.
+- Add `rescores` to recalculate the relevance score for results of a query. Specify the `query`, `queryWeight`, `rescoreQueryWeight`, `scoreMode`, and `windowSize`. See the [Elasticsearch documentation](https://www.elastic.co/guide/en/elasticsearch/reference/8.13/filter-search-results.html#rescore) for details.
 
 The `uiConfiguration` property holds the nested properties `fieldSet` and `field`.
 
@@ -243,7 +243,7 @@ There are several configuration properties you can add for each field in the UI 
 - Set the `type` of the field. Choose from `date`, `fieldMapping`, `fieldMappingList` (a list of the available fields, with their locale and a field boost), `itemSelector`, `json`, `keywords`, `multiselect`, `number`, `select`, `slider`, and `text`
 - Use the `typeOptions` property to configure the options available for each type of field. For example, set the `options` displayed for a select field.
    - `boost` sets a per-field numeric boost value.
-   - `format` determines the [acceptable date format](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/mapping-date-format.html) (e.g., `yyyyMMddHHmmss`).
+   - `format` determines the [acceptable date format](https://www.elastic.co/guide/en/elasticsearch/reference/8.13/mapping-date-format.html) (e.g., `yyyyMMddHHmmss`).
    - `nullable` sets whether a null value can be passed.
    - `options` sets the options of a select field.
    - `required` sets whether the configuration must have a value.

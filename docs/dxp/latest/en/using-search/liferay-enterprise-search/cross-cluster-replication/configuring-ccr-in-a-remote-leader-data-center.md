@@ -57,7 +57,7 @@ In the example setup, the first Elasticsearch cluster to configure is a producti
       ./bin/elasticssearch
       ```
 
-1. If you're just trying this out and don't yet have the proper license, start an [Elasticsearch trial license](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/start-trial.html):
+1. If you're just trying this out and don't yet have the proper license, start an [Elasticsearch trial license](https://www.elastic.co/guide/en/elasticsearch/reference/8.13/start-trial.html):
 
    ```
    POST /_license/start_trial?acknowledge=true

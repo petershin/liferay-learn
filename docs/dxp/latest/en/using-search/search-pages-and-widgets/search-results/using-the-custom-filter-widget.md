@@ -49,21 +49,21 @@ The Query String and Script queries do not require a Filter Field to be set.  Al
 
 To find the fields present in the Liferay DXP index, use [the Field Mappings UI in the Control Panel](#finding-fields).
 
-**Filter Value (text):** For most filters, you must enter a text value here that specifies the text to apply the filter on in the specified field (for example, set a _Match_ query to the text _street_ on the `title_en_US` field). Some Filter Query Types require special notation, as in the case of the [_Regexp_](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/query-dsl-regexp-query.html) query.
+**Filter Value (text):** For most filters, you must enter a text value here that specifies the text to apply the filter on in the specified field (for example, set a _Match_ query to the text _street_ on the `title_en_US` field). Some Filter Query Types require special notation, as in the case of the [_Regexp_](https://www.elastic.co/guide/en/elasticsearch/reference/8.13/query-dsl-regexp-query.html) query.
 
 **Filter Query Type (select list):** Select the query type to filter results by. Available types include Bool, Date Range, Exists, Fuzzy, Match, Match Phrase, Match Phrase Prefix, Multi Match, Prefix, Query String, Regexp, Script, Simple Query String, Term, Wildcard.
 
-To learn more about these queries, visit the [Elasticsearch documentation](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/query-dsl.html).
+To learn more about these queries, visit the [Elasticsearch documentation](https://www.elastic.co/guide/en/elasticsearch/reference/8.13/query-dsl.html).
 
 **Occur (select list):** Set the occurrence type for the query being contributed to the search. Options include Filter, must, must_not, and should.
 
-To understand each type, see the [Elasticsearch documentation](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/query-dsl-bool-query.html).
+To understand each type, see the [Elasticsearch documentation](https://www.elastic.co/guide/en/elasticsearch/reference/8.13/query-dsl-bool-query.html).
 
 **Query Name (text):** Set the name of the contributed query. This is unnecessary unless this filter acts as a parent query to another filter that contributes child clauses; in that case set this filter's Query Name as the child filter's Parent Query Name.  This parent/child behavior is only available for filters of type Bool.
 
 **Parent Query Name (text):** When contributing a child clause to a Bool query, set this to match the Query Name configured in the parent Custom Filter widget. Otherwise, leave it blank.
 
-**Boost (number):** [Boost](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/query-dsl-term-query.html#term-field-params) the score of the results matching this query. Specify any whole or decimal number here that makes sense.
+**Boost (number):** [Boost](https://www.elastic.co/guide/en/elasticsearch/reference/8.13/query-dsl-term-query.html#term-field-params) the score of the results matching this query. Specify any whole or decimal number here that makes sense.
 
 If you always want results matching this at the top, set the Boost value really high (e.g., _1000_).
 
@@ -93,7 +93,7 @@ To find the fields you can filter by in the Custom Filter widget, users with the
 
 {bdg-secondary}`Available 7.2 FP10+, 7.3 FP1+, 7.4+`
 
-Object definition and [web content structure](../../../liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document) fields are indexed as nested fields in Elasticsearch. To filter by a nested field, you must add three Custom Filter widgets to the page. The first widget is for adding the [Elasticsearch `nested` query](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/query-dsl-nested-query.html), while the other two are for defining child queries that match the nested field's name and value. When the final portal query is generated, the `nested` query wraps the child queries.
+Object definition and [web content structure](../../../liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document) fields are indexed as nested fields in Elasticsearch. To filter by a nested field, you must add three Custom Filter widgets to the page. The first widget is for adding the [Elasticsearch `nested` query](https://www.elastic.co/guide/en/elasticsearch/reference/8.13/query-dsl-nested-query.html), while the other two are for defining child queries that match the nested field's name and value. When the final portal query is generated, the `nested` query wraps the child queries.
 
 ```{important}
 If you require custom filters on multiple nested fields in the same page, you must configure separate parameter names for each child query. See [Custom Filter Examples](./custom-filter-examples.md#boosting-matches-to-nested-fields) for an example. 

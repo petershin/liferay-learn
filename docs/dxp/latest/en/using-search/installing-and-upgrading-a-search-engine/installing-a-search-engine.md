@@ -19,7 +19,7 @@ Liferay's [Solr](http://lucene.apache.org/solr) support will receive one more up
 
 ## Java Requirements
 
-* Search engines require the environment variable `JAVA_HOME` or `ES_JAVA_HOME` ([Elasticsearch 8](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/install-elasticsearch.html#jvm-version)). Set it on your search engine host.
+* Search engines require the environment variable `JAVA_HOME` or `ES_JAVA_HOME` ([Elasticsearch 8](https://www.elastic.co/guide/en/elasticsearch/reference/8.13/install-elasticsearch.html#jvm-version)). Set it on your search engine host.
 
 * If you're using Liferay 7.2, Elasticsearch and Liferay must use the same Java version and distribution. Consult the [Elasticsearch compatibility matrix](https://www.elastic.co/support/matrix#matrix_jvm) and [Liferay's Search Engine Compatibility Matrix](https://help.liferay.com/hc/en-us/articles/360016511651) to learn more about supported JDK distributions and versions. You can specify this in Elasticsearch:
 

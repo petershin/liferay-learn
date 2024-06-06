@@ -19,7 +19,7 @@ Each configuration field consists of a single text area that accepts a JSON stri
 
 ## Aggregation Configuration
 
-Configure [Aggregations](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/search-aggregations.html) in the Search Blueprint. Aggregations take the results of a query and group the data into logical sets. Aggregations can be composed to provide complex data summaries.
+Configure [Aggregations](https://www.elastic.co/guide/en/elasticsearch/reference/8.13/search-aggregations.html) in the Search Blueprint. Aggregations take the results of a query and group the data into logical sets. Aggregations can be composed to provide complex data summaries.
 
 Aggregations added in Search Blueprints are applied in addition to those already present in the search request (e.g., from facets).
 
@@ -56,12 +56,12 @@ To add an Aggregation to a Blueprint,
 
 ## Highlight Configuration
 
-Configure [Highlights](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/highlighting.html) in Search Blueprints. If you add a highlight configuration in Search Blueprints, it overrides the default search highlight configuration.
+Configure [Highlights](https://www.elastic.co/guide/en/elasticsearch/reference/8.13/highlighting.html) in Search Blueprints. If you add a highlight configuration in Search Blueprints, it overrides the default search highlight configuration.
 
 To add a Highlight to a Blueprint, 
 
 1. From the Blueprint editor, click the _Configuration_ tab.
-1. Find the Highlight Configuration text area and enter valid JSON. The properties and their possible values are detailed in the [Elasticsearch documentation](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/highlighting.html).
+1. Find the Highlight Configuration text area and enter valid JSON. The properties and their possible values are detailed in the [Elasticsearch documentation](https://www.elastic.co/guide/en/elasticsearch/reference/8.13/highlighting.html).
 
    ```json
    {
@@ -83,7 +83,7 @@ To add a Highlight to a Blueprint,
 
 ## Sort Configuration
 
-Configure [Sorts](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/sort-search-results.html) in Search Blueprints. Sorts added via Search Blueprints are applied in addition to those already in the search request (e.g., from the Sort widget). However, Sorts added in a Search Blueprint are not reflected in the Sort widget's UI or configuration screen.
+Configure [Sorts](https://www.elastic.co/guide/en/elasticsearch/reference/8.13/sort-search-results.html) in Search Blueprints. Sorts added via Search Blueprints are applied in addition to those already in the search request (e.g., from the Sort widget). However, Sorts added in a Search Blueprint are not reflected in the Sort widget's UI or configuration screen.
 
 ```{warning}
 Do not use both the Sort widget and a Blueprint to configure Sorts on a search page. Consistent behavior cannot be guaranteed if you combine Sorts from the Sort widget and a Search Blueprint's Sort Configuration.
@@ -207,7 +207,7 @@ This example adds a new search context attribute that excludes Web Content from 
 This is an advanced feature that is rarely needed. Because no out-of-the-box feature in Liferay's UI responds to this configuration, only custom code can consume the result of this configuration in the search response.
 ```
 
-The Advanced Configuration adds [source includes and excludes](https://www.elastic.co/guide/en/elasticsearch/reference/8.12/mapping-source-field.html#include-exclude) as search request parameters. The `_source` field contains the stored document body that was passed to the index request. This field is not itself indexed. The Advanced Configuration in Blueprints lets you prune the `_source` field by specifying what fields to include or exclude from the field. As it overlaps in functionality and may conflict with the Low Level Search Option widget's _Fields to Return_ configuration, you must not use both approaches in tandem. To add an Advanced configuration to a Blueprint, 
+The Advanced Configuration adds [source includes and excludes](https://www.elastic.co/guide/en/elasticsearch/reference/8.13/mapping-source-field.html#include-exclude) as search request parameters. The `_source` field contains the stored document body that was passed to the index request. This field is not itself indexed. The Advanced Configuration in Blueprints lets you prune the `_source` field by specifying what fields to include or exclude from the field. As it overlaps in functionality and may conflict with the Low Level Search Option widget's _Fields to Return_ configuration, you must not use both approaches in tandem. To add an Advanced configuration to a Blueprint, 
 
 1. From the Blueprint editor, click the _Configuration_ tab.
 1. Find the Advanced Configuration text area and enter the `excludes` and `includes` you need. Wildcards are permitted.

@@ -13,7 +13,7 @@ Liferay's Solr implementation has limitations. Some Liferay features and APIs ca
 
 Elasticsearch-specific APIs and mappings are being leveraged in Liferay's search functionality. Because some of these features are not included in Solr, a lower quality of search results is expected when using Solr as Liferay's search engine.
 
-For example, the language aware sorting behavior in Liferay relies on the collation rules present only because of the [ICU Analysis Plugin from Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/plugins/8.12/analysis-icu-collation-keyword-field.html). When searching in Solr some non-optimal sorting behavior is expected, especially when field values contain diacritical marks.
+For example, the language aware sorting behavior in Liferay relies on the collation rules present only because of the [ICU Analysis Plugin from Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/plugins/8.13/analysis-icu-collation-keyword-field.html). When searching in Solr some non-optimal sorting behavior is expected, especially when field values contain diacritical marks.
 
 ## End-User Feature Limitations 
 

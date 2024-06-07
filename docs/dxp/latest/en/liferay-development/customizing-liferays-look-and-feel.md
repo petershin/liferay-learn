@@ -1,10 +1,11 @@
 ---
-toc: 
+toc:
   - ./customizing-liferays-look-and-feel/using-a-theme-favicon-client-extension.md
   - ./customizing-liferays-look-and-feel/using-a-css-client-extension.md
   - ./customizing-liferays-look-and-feel/using-a-theme-css-client-extension.md
   - ./customizing-liferays-look-and-feel/using-a-javascript-client-extension.md
   - ./customizing-liferays-look-and-feel/using-a-theme-spritemap-client-extension.md
+  - ./customizing-liferays-look-and-feel/using-a-custom-filter-client-extension.md
   - ./customizing-liferays-look-and-feel/using-an-editor-config-contributor-client-extension.md
   - ./customizing-liferays-look-and-feel/client-extensions-ui-reference.md
   - ./customizing-liferays-look-and-feel/themes.md
@@ -19,9 +20,9 @@ uuid: 83d07d42-e42d-4e19-acf4-9856f00441e0
 
 # Customizing Liferay's Look and Feel
 
-One of the easiest ways to get started developing on Liferay's platform is to modify its look and feel. You can change everything from its favicon to its entire design to match your branding. As you determine your requirements for your look and feel, the best approach for customizing Liferay is to determine the minimum effort needed to achieve the desired result. The most compatible way to do this is to use [client extensions](./client-extensions.md). This gives you the most freedom, because you can use any of Liferay's deployment approaches: SaaS, PaaS, or self-hosted. You should be able to achieve what you want with client extensions for all but the most extreme cases. 
+One of the easiest ways to get started developing on Liferay's platform is to modify its look and feel. You can change everything from its favicon to its entire design to match your branding. As you determine your requirements for your look and feel, the best approach for customizing Liferay is to determine the minimum effort needed to achieve the desired result. The most compatible way to do this is to use [client extensions](./client-extensions.md). This gives you the most freedom, because you can use any of Liferay's deployment approaches: SaaS, PaaS, or self-hosted. You should be able to achieve what you want with client extensions for all but the most extreme cases.
 
-Customizations presented here go from simplest to the most complex. 
+Customizations presented here go from simplest to the most complex.
 
 ## Theme Favicon Client Extensions
 
@@ -62,7 +63,7 @@ type: themeCSS
 
 ## JavaScript Client Extensions
 
-The JavaScript client extension adds a JavaScript file you specify to whatever page you want. Your script has access to the DOM and can perform customized actions. 
+The JavaScript client extension adds a JavaScript file you specify to whatever page you want. Your script has access to the DOM and can perform customized actions.
 
 ## Theme Sprite Map Client Extensions
 
@@ -97,8 +98,8 @@ type: editorConfigContributor
 
 ## Themes (PaaS or self-hosted only)
 
-Finally, themes are a traditionally deployed asset to Liferay, which is why they are only available via PaaS or self-hosted platforms. You can define your own complete look and feel with themes. 
+Finally, themes are a traditionally deployed asset to Liferay, which is why they are only available via PaaS or self-hosted platforms. You can define your own complete look and feel with themes.
 
-Read on to learn how to customize Liferay to match your design! 
+Read on to learn how to customize Liferay to match your design!
 
 

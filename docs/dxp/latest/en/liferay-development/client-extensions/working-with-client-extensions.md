@@ -276,7 +276,7 @@ These two environment variables must be provided to client extension processes w
 ## Related Topics
 
 * [Batch Client Extensions](../importing-exporting-data.md)
-* [Configuration Client Extensions](../configuration-as-code.md)
+* [Configuration as Code](../configuration-as-code.md)
 * [Frontend Client Extensions](../customizing-liferays-look-and-feel.md)
 * [Microservice Client Extensions](../integrating-microservices.md)
 * [Packaging Client Extensions](./packaging-client-extensions.md)

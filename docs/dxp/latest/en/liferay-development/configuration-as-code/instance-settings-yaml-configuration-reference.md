@@ -133,7 +133,7 @@ yoke-instance-settings:
 
 Here are all of the PIDs that you can reference in an instance setting client extension, scoped by [virtual instance](#virtual-instance-scoped-pids) or by [site](#site-scoped-pids).
 
-### Virtual Instance Scoped PIDs:
+### Virtual Instance Scoped PIDs
 
 These PIDs allow for the configuration of virtual instance-scoped settings.
 
@@ -241,7 +241,7 @@ I've added a space between .com and /liferay because this was causing a false-po
 - [`com.liferay.segments.asah.connector.internal.configuration.SegmentsAsahCompanyConfiguration`](https://github.com/liferay/liferay-portal/blob/HEAD/modules/dxp/apps/segments/segments-asah-connector/src/main/java/com/liferay/segments/asah/connector/internal/configuration/SegmentsAsahCompanyConfiguration.java)
 - [`com.liferay.sharepoint.rest.repository.internal.configuration.SharepointRepositoryConfiguration`](https://github.com/liferay/liferay-portal/blob/HEAD/modules/dxp/apps/sharepoint-rest/sharepoint-rest-repository/src/main/java/com/liferay/sharepoint/rest/repository/internal/configuration/SharepointRepositoryConfiguration.java)
 
-### Site Scoped PIDs:
+### Site Scoped PIDs
 
 These PIDs allow for the configuration of site-scoped settings.
 
@@ -310,4 +310,4 @@ I've added a space between .com and /liferay because this was causing a false-po
 ## Related Topics
 
 - [Working with Client Extensions](../client-extensions/working-with-client-extensions.md)
-- [Configuration Client Extensions](../configuration-as-code.md)
+- [Configuration as Code](../configuration-as-code.md)

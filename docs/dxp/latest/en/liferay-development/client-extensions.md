@@ -28,10 +28,10 @@ While other Liferay extensions like [OSGi modules](../liferay-internals/fundamen
 
 With client extensions, you can
 
-* Apply [custom JavaScript or CSS](#frontend-client-extensions), while avoiding dependencies on Liferay's code
-* Embed applications hosted remotely into a [custom element](./integrating-external-applications.md) on a Liferay page
-* Apply the same configurations or objects to multiple environments, by [converting them into client extensions](#configuration-client-extensions)
-* Call custom services or [functions](#microservice-client-extensions) running outside of Liferay (e.g., a REST endpoint), using the programming languages or technologies of your choice
+- Apply [custom JavaScript or CSS](#frontend-client-extensions), while avoiding dependencies on Liferay's code
+- Embed applications hosted remotely into a [custom element](./integrating-external-applications.md) on a Liferay page
+- Apply the same configurations or objects to multiple environments, by [converting them into client extensions](#configuration-client-extensions)
+- Call custom services or [functions](#microservice-client-extensions) running outside of Liferay (e.g., a REST endpoint), using the programming languages or technologies of your choice
 
 ## Types of Client Extensions
 
@@ -39,11 +39,10 @@ You use [Liferay Workspace](./tooling/liferay-workspace/what-is-liferay-workspac
 
 These are the classifications of client extensions:
 
-* [Frontend client extensions](#frontend-client-extensions)
-* [Batch client extensions](#batch-client-extensions)
-* [Configuration client extensions](#configuration-client-extensions)
-* [Microservice client extensions](#microservice-client-extensions)
-* [Batch client extensions](#batch-client-extensions)
+- [Frontend client extensions](#frontend-client-extensions)
+- [Configuration client extensions](#configuration-client-extensions)
+- [Microservice client extensions](#microservice-client-extensions)
+- [Batch client extensions](#batch-client-extensions)
 
 For a complete reference of all types of client extensions, see [Client Extension Reference](./client-extensions/client-extension-reference.md)
 
@@ -73,11 +72,11 @@ See [Integrating Microservices](./integrating-microservices.md) for more informa
 
 Batch client extensions provide data entities to your Liferay instance, such as [object definitions](./objects/creating-and-managing-objects/exporting-and-importing-object-definitions.md) or [workflow definitions](../process-automation/workflow/introduction-to-workflow.md). Create batch client extensions by exporting data via the [batch engine framework](../headless-delivery/consuming-apis/batch-engine-api-basics-exporting-data.md).
 
-See [Importing and Exporting Data](./importing-exporting-data.md) for more information on this specific type.
+See [Importing/Exporting Data](./importing-exporting-data.md) for more information on this specific type.
 
 ## Where to Go From Here
 
-To get a soft, step-by-step tour of how to write client extensions, follow the learning path below, which starts you off with the easiest client extension to implement, and then moves on from there. 
+To get a soft, step-by-step tour of how to write client extensions, follow the learning path below, which starts you off with the easiest client extension to implement, and then moves on from there.
 
 1. [Modifying the Favicon](./customizing-liferays-look-and-feel/using-a-theme-favicon-client-extension.md)
 1. [Adding CSS](./customizing-liferays-look-and-feel/using-a-css-client-extension.md)
@@ -86,12 +85,12 @@ To get a soft, step-by-step tour of how to write client extensions, follow the l
 1. [Creating a Basic Custom Element](./integrating-external-applications/creating-a-basic-custom-element.md)
 1. [Routes with Custom Elements](./integrating-external-applications/using-routes-with-custom-elements.md)
 
-When finished with that, you may want to see how to create a full-blown application using objects and client extensions: 
+When finished with that, you may want to see how to create a full-blown application using objects and client extensions:
 
-1. [Building a Time Off Requester](./building-applications/building-a-time-off-requester.md) 
+1. [Building a Time Off Requester](./building-applications/building-a-time-off-requester.md)
 1. [Building a Ticketing Application](./building-applications/building-a-custom-ticketing-system.md)
 
 ## Related Topics
 
-* [Working with Client Extensions](./client-extensions/working-with-client-extensions.md)
-* [Liferay Workspace](./tooling/liferay-workspace/what-is-liferay-workspace.md)
+- [Working with Client Extensions](./client-extensions/working-with-client-extensions.md)
+- [Liferay Workspace](./tooling/liferay-workspace/what-is-liferay-workspace.md)

@@ -99,11 +99,11 @@ See [Managing Objects with Headless APIs](../managing-objects-with-headless-apis
 
 ## Auto-Increment Availability 
 
-Auto-Increment fields were released behind a [release feature flag](../../../system-administration/configuring-liferay/feature-flags.md) in Liferay 7.4 2024.Q1/GA112. They became Generally Available (GA) in 2024.Q2/GA120.
+Auto-Increment fields were released behind a [release feature flag](../../../../system-administration/configuring-liferay/feature-flags.md) in Liferay 7.4 2024.Q1/GA112. They became Generally Available (GA) in 2024.Q2/GA120.
 
 | Liferay Version    | Feature Status                                                                                              | Feature Flag [Label]                         |
 |:-------------------|:------------------------------------------------------------------------------------------------------------|:---------------------------------------------|
-| 2023.Q4<br>GA102   | [Release Feature](../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) | &#10004; [Auto-Increment Field Type for Objects (LPS-196724)] |
+| 2023.Q4<br>GA102   | [Release Feature](../../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) | &#10004; [Auto-Increment Field Type for Objects (LPS-196724)] |
 | 2024.Q1+<br>GA112+ | GA                                                                                                          | &#10008;                                     |
 
 ## Related Topics

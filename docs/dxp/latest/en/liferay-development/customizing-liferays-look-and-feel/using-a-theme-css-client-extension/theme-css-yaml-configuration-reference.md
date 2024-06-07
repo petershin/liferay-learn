@@ -39,7 +39,7 @@ These properties are specific to theme CSS client extensions:
 |:-|:-|:-|
 | `clayURL`                     | URL | (Required) The path to the CSS file representing the `clay.css` file of a Liferay theme. The complete URI is prefixed by the `baseURL` value. |
 | `mainURL`                     | URL | (Required) The path to the CSS file representing the `main.css` file of a Liferay theme. The complete URI is prefixed by the `baseURL` value. |
-| `frontendTokenDefinitionJSON` | String | The path to the `frontend-token-definition.json` file. The complete URI is prefixed by the `baseURL` value. |
+| `frontendTokenDefinitionJSON` | String | The path to the `frontend-token-definition.json` file. At build time, its JSON is injected into the client extension's configuration file. |
 
 See [Frontend Client Extension Properties](../../customizing-liferays-look-and-feel.md#frontend-client-extension-properties) for properties common to all frontend client extensions.
 

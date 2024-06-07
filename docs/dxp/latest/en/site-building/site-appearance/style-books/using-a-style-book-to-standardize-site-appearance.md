@@ -14,7 +14,7 @@ uuid: 88364ec4-ce77-4e8b-aa8d-fb5b6bd526c3
 
 A site's *Style Book* provides visual rules for applying a consistent experience across its pages. They determine various visual settings on the site, including spacing between elements (such as widgets), colors, and fonts. Each of these settings applies equally to every page using the Style Book.
 
-The Theme CSS Client Extension (or theme, in older versions) assigned to the site's pages determines the categories of settings available to the Style Books for your site. Developers can customize the categories with new options for configuring Style Books. See [Frontend Token Definitions](./developer-guide/frontend-token-definitions.md) for more information.
+The theme CSS client extension (or theme, in older versions) assigned to the site's pages determines the categories of settings available to the Style Books for your site. Developers can customize the categories with new options for configuring Style Books. See [Frontend Token Definitions](./developer-guide/frontend-token-definitions.md) for more information.
 
 ## Choosing a Style Book for a Page
 
@@ -118,7 +118,7 @@ In the color picker, existing colors are divided by categories and token sets. Y
 
 ![See a color's token value by hovering the cursor over the color in the color picker.](./using-a-style-book-to-standardize-site-appearance/images/11.png)
 
-Use the search bar to search for a specific color. You may search by [category](./developer-guide/frontend-token-definitions.md#token-categories), [token set](./developer-guide/frontend-token-definitions.md#token-sets), [token value](./developer-guide/frontend-token-definitions.md#token-definitions), or [hex color values](https://www.w3schools.com/html/html_colors_hex.asp).
+Use the search bar to search for a specific color. You may search by [category](./developer-guide/frontend-token-definitions.md#token-categories), [token set](./developer-guide/frontend-token-definitions.md#token-sets), [token value](./developer-guide/frontend-token-definitions.md#defining-frontend-tokens), or [hex color values](https://www.w3schools.com/html/html_colors_hex.asp).
 
 When using the search bar, the search system is not case-sensitive. Also, if a search returns no results, a *No Results Found* message is displayed in the search area.
 

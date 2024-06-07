@@ -25,9 +25,9 @@ When you apply the theme CSS client extension or assign a theme to your site's p
 
 ## Defining Tokens for Your Style Book
 
-The frontend token definition is tied to your theme CSS client extension (or theme), so the frontend tokens must correspond to a CSS variable from your provided CSS. Specify the frontend tokens in a `frontend-token-definition.json` file:
+The frontend token definition is tied to your theme CSS client extension (or theme), so each frontend token must correspond to a CSS variable from your provided CSS. Specify the frontend tokens in a `frontend-token-definition.json` file:
 
-* Theme css client extensions: place the frontend token definition in your client extension project and define the path in the `client-extension.yaml`. For example,
+* Theme CSS client extensions: place the frontend token definition in your client extension project and define the path in the `client-extension.yaml`. For example,
 
    ```yaml
    frontendTokenDefinitionJSON: src/frontend-token-definition.json 
@@ -87,7 +87,7 @@ Define each frontend token set inside a category's `frontendTokenSets` field:
 
 Define a `label` and `name` for each frontend token set just like with each category.
 
-### Token Definitions
+### Defining Frontend Tokens
 
 Define the frontend tokens within each token set's `frontendTokens` field. Here's a list of all the properties you can use for your frontend tokens:
 

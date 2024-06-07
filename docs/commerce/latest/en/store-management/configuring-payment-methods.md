@@ -21,11 +21,11 @@ Payments are processed through a Payment Method. There are three types of paymen
 
 **Offline**: Liferay does not process the payment.
 
-**Online Standard**: Liferay processes the payment entirely. This option is not available out-of-the-box but you can add additional methods using the [payment integration]() client extension or the [payment method]() extension point.
+**Online Standard**: Liferay processes the payment entirely. This option is not available out-of-the-box but you can add additional methods using the [payment integration](../developer-guide/using-client-extensions/using-the-payment-integration-client-extension.md) client extension or the [payment method](../developer-guide/sales/implementing-a-new-payment-method.md) extension point.
 
 **Online Redirect**: Liferay passes information to a third-party payment processor, redirecting the buyer to the processor's website to complete payment.
 
-Liferay ships with four payment methods. Money order is an offline method. Authorize.net, Mercanet, and PayPal redirect buyers to a third-party website. You can add additional methods using the [payment integration]() client extension or the [payment method]() extension point.
+Liferay ships with four payment methods. Money order is an offline method. Authorize.net, Mercanet, and PayPal redirect buyers to a third-party website.
 
 By default, Liferay does **not** store customer payment information. If you want to enable recurring payments or a faster checkout experience, consider using a third-party payment processor to manage sensitive customer payment information. If you must store customer payment information, it is **highly recommended** to implement [PCI DSS](https://www.pcisecuritystandards.org/) compliant practices and policies.
 

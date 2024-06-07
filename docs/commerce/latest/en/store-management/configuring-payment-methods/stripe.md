@@ -7,6 +7,7 @@ taxonomy-category-names:
 - Client Extensions
 - Liferay SaaS
 ---
+
 # Using the Stripe Client Extension
 
 {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+`
@@ -18,7 +19,7 @@ Liferay provides a client extension that integrates with [Stripe](https://stripe
 
 ## Install and Deploy the Stripe Client Extension
 
-1. Go to the [Liferay Marketplace](https://marketplace.liferay.com/) and search for `Liferay Commerce Connector to Stripe`. Do not select the `Old Stripe Connector`.
+1. Go to the [Liferay Marketplace](https://marketplace.liferay.com) and search for `Liferay Commerce Connector to Stripe`. Do not select the `Old Stripe Connector`.
 
 1. Click *Get App*, select your account or create one, and accept the end user license agreement and terms of service.
 
@@ -28,7 +29,7 @@ Liferay provides a client extension that integrates with [Stripe](https://stripe
 
 1. Click *Get App*.
 
-1. Note down the order ID. You must use it to install the app from your Cloud dashboard.
+1. Note the order ID. You must use it to install the app from your Cloud dashboard.
 
 1. Click *Go to Console*.
 
@@ -81,4 +82,4 @@ Liferay provides a client extension that integrates with [Stripe](https://stripe
 ![Go to Stripe and enter your payment details to complete the order.](./using-the-payment-integration-client-extension/images/07.gif)
 
 !!! note
-    The above flow is using Stripe's test mode. Stripe provides numerous test card numbers to replicate different payment scenarios. See [How to use test cards](https://docs.stripe.com/testing#use-test-cards) for more information.
+    The above flow uses Stripe's test mode. Stripe provides numerous test card numbers to replicate different payment scenarios. See [How to use test cards](https://docs.stripe.com/testing#use-test-cards) for more information.

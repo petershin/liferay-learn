@@ -14,7 +14,7 @@ taxonomy-category-names:
 You may want to prevent customers from purchasing products from a specific product group. For instance, a machines manufacturer may want to limit the purchase quantity of large machines to 1 per order. To do this, you can use the Products Limit rule and configure a group of products with their permissible purchase quantity.
 
 !!! important
-    This feature is currently behind a release feature flag. Read [Release Feature Flags](https://learn.liferay.com/web/guest/w/dxp/system-administration/configuring-liferay/feature-flags#release-feature-flags) for more information.
+    The product limits order rule was released behind a [release feature flag](https://learn.liferay.com/web/guest/w/dxp/system-administration/configuring-liferay/feature-flags#release-feature-flags) in Liferay DXP 2024.Q1/Portal 7.4 GA112. It was made Generally Available (GA) in 2024.Q2/GA120.
 
 ## Product Limit Rule Overview
 

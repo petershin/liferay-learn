@@ -85,7 +85,7 @@ Define each frontend token set inside a category's `frontendTokenSets` field:
 }
 ```
 
-Define a `label` and `name` for each frontend token set just like with each category.
+Define a `label` and `name` for each frontend token set like with each category.
 
 ### Defining Frontend Tokens
 

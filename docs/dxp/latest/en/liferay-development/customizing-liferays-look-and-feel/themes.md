@@ -11,14 +11,14 @@ uuid: 1788d12e-c0ca-4300-83af-d39431639940
 ---
 # Themes
 
-Themes customize the default look and feel of your Site. They allow you to define the style and visual identity of your brand or label across your whole Site.
+Themes customize the default look and feel of your site. You can define the style and visual identity of your brand or label across your whole site.
 
 !!! important
     You can use a [theme CSS client extension](./using-a-theme-css-client-extension.md) instead of a theme for most use cases. Theme CSS client extensions are the preferred way to customize the look and feel of Liferay. Always start with a theme CSS client extension, and only use a theme if there's something you cannot accomplish with the client extension.
 
 ## Themes and Site Design
 
-Themes are available and used out-of-the-box on any Site you create. There are also a number of other ways (such as [Style Books](../../site-building/site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md)) to define the look and feel of your Site, but themes provide the most flexibility when you need a fully customized solution.
+Themes are available and used out-of-the-box on any Site you create. There are also many other ways (such as [Style Books](../../site-building/site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md)) to define the look and feel of your Site, but themes provide the most flexibility when you need a fully customized solution.
 
 ![Site Design hierarchy](./themes/images/01.png)
 

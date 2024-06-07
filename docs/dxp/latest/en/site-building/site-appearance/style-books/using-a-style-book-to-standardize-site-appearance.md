@@ -20,9 +20,8 @@ The theme CSS client extension (or theme, in older versions) assigned to the sit
 
 If you do not choose a specific Style Book for a page, the page uses the Style Book for the [Master Page](../../creating-pages/defining-headers-and-footers/master-page-templates.md). If neither is set, the page uses the default Style Book for the site.
 
-```{note}
-From Liferay 7.4 U10+ and GA14+, every site has at least one Style Book available called *Styles from Theme*. This Style Book uses the token definition defined in the theme, with all of the default values. This Style Book cannot be edited, and it is the default used for the site if no other Style Book is configured.
-```
+!!! note
+    From Liferay 7.4 U10+ and GA14+, every site has at least one Style Book available called *Styles from Theme*. This Style Book uses the token definition defined in the theme, with all of the default values. This Style Book cannot be edited, and it is the default used for the site if no other Style Book is configured.
 
 Follow these steps to set any page's Style Book:
 
@@ -144,9 +143,8 @@ The colors used for fonts and visual elements defined in your theme are customiz
 
 ![Change the colors used for displays or UI elements with options under the Color System category.](./using-a-style-book-to-standardize-site-appearance/images/07.png)
 
-```{note}
-Changing the colors for alert-related elements (such as *Success* or *Warning*) may not affect the color of incoming alerts on your site because each type of alert may use one of many colors. To fully customize the color of alerts, you must define customizable colors and use them in your own theme's categories.
-```
+!!! note
+    Changing the colors for alert-related elements (such as *Success* or *Warning*) may not affect the color of incoming alerts on your site because each type of alert may use one of many colors. To fully customize the color of alerts, you must define customizable colors and use them in your own theme's categories.
 
 ### Spacing
 
@@ -154,9 +152,8 @@ Adjust the spacing between the main elements on your pages with the options in t
 
 ![Change the colors used for displays or UI elements with options under the Color System category.](./using-a-style-book-to-standardize-site-appearance/images/08.png)
 
-```{tip}
-When modifying tokens like width, margins, and padding that aren't related to colors, you can choose from a set of predefined units or specify a custom unit. This flexibility allows for more precise control over the styling. Some options include pixels(PX), percentages(%), em width(EM), and root em(REM).
-```
+!!! tip
+    When modifying tokens like width, margins, and padding that aren't related to colors, you can choose from a set of predefined units or specify a custom unit. This flexibility allows for more precise control over the styling. Some options include pixels(PX), percentages(%), em width(EM), and root em(REM).
 
 ### General
 

@@ -14,17 +14,17 @@ When using an Asset Publisher widget, you can configure several display settings
 
 1. Create a [new page](../../creating-pages/adding-pages/adding-a-page-to-a-site.md) or [edit an existing one](../../creating-pages/using-content-pages/adding-elements-to-content-pages.md)
 
-1. While editing the page, look at the Fragments and Widgets tab on the left of the page editor and search for the _Asset Publisher_ widget.
+1. While editing the page, look at the Fragments and Widgets tab on the left of the page editor and search for the *Asset Publisher* widget.
 
-1. Drag and drop the _Asset Publisher_ widget into the editing area.
+1. Drag and drop the *Asset Publisher* widget into the editing area.
 
 1. [Select your assets](./selecting-assets-in-the-asset-publisher-widget.md).
 
-1. Hover over the Asset Publisher and click _Options_ (![Options icon](../../../images/icon-app-options.png)) in the widget's menu &rarr; _Configuration_.
+1. Hover over the Asset Publisher and click *Options* (![Options icon](../../../images/icon-app-options.png)) in the widget's menu &rarr; *Configuration*.
 
 1. Follow the [Asset Publisher Display Configuration Reference](#asset-publisher-display-configuration-reference) and configure your widget.
 
-1. Click _Save_ to apply your display settings.
+1. Click *Save* to apply your display settings.
 
 Now, users can view the Asset Publisher widget displayed in the page as you configured it.
 
@@ -40,7 +40,7 @@ These templates are in every site by default:
 | Table            | instance | Displays the content in an HTML table which can be styled by a theme developer                                                                                                                                                                                                    |
 | Title List       | instance | Displays the content's title as defined by the user who entered it                                                                                                                                                                                                                |
 | Full Content     | instance | Displays the entire content of the entry                                                                                                                                                                                                                                          |
-| Map              | global   | displays [geo-localized assets](../../site-settings/site-content-configurations/configuring-geolocation-for-assets.md) in either a Google Map or an Open Street Map provider. The map provider can be configured in Instance Settings, and Site Settings in the Advanced section. |
+| Map              | global   | Displays [geo-localized assets](../../site-settings/site-content-configurations/configuring-geolocation-for-assets.md) in either a Google Map or an Open Street Map provider. The map provider can be configured in Instance Settings, and Site Settings in the Advanced section. |
 | Rich Summary     | global   | Displays a summary view of each asset along with a Read More link to the article's full content                                                                                                                                                                                   |
 
 These are the remaining settings for the Display Settings section:
@@ -50,10 +50,10 @@ These are the remaining settings for the Display Settings section:
 | Abstract Length            | Select the number of characters to display for abstracts. The default is `200`. Note this option is only available for the Abstracts display template.                                                                                                                                                                                                                                      |
 | Asset Link Behavior        | The default value is View On New Page, which looks for a page where the asset is being displayed (e.g. Content Display widget, Display Page Template, or an Asset Publisher which manually selects the asset). The Show Full Content value displays the full asset in the current Asset Publisher.                                                                                          |
 | Number of Items to Display | The maximum number of assets that can be displayed. If pagination is enabled, this number represents the maximum number of assets that can be displayed per page. If no value is given, the default value is `20`. It is recommended to set the number of assets below `200` to improve performance.                                                                                        |
-| Pagination Type            | The type of UI to display for pagination. Three options are available: _None_ displays no pagination controls; _Simple_ adds Previous and Next buttons for browsing through pages of assets; _Regular_ adds more options and information including First and Last buttons, a drop-down selector for pages, the number of items per page, and the total number of results (assets displayed) |
+| Pagination Type            | The type of UI to display for pagination. Three options are available: *None* displays no pagination controls; *Simple* adds Previous and Next buttons for browsing through pages of assets; *Regular* adds more options and information including First and Last buttons, a drop-down selector for pages, the number of items per page, and the total number of results (assets displayed) |
 
 !!! note
-If two Asset Publishers are on the same page, and one is configured with the Dynamic Asset Selection and View on New Page, and the other with the Manual Asset Selection, clicking on the dynamic Asset Publisher directs users to the manual Asset Publisher, where the asset is being displayed. As a result, users are redirected to the same page.
+    If two Asset Publishers are on the same page, and one is configured with the Dynamic Asset Selection and View on New Page, and the other with the Manual Asset Selection, clicking on the dynamic Asset Publisher directs users to the manual Asset Publisher, where the asset is being displayed. As a result, users are redirected to the same page.
 
     However, when there is only one dynamic Asset Publisher with the View on New Page configuration and the asset is not being displayed anywhere, the Asset Link Behavior changes to Show Full Content, which displays the full asset in the Asset Publisher widget itself.
 
@@ -71,14 +71,14 @@ Many of these options, such as printing, flags, ratings, comments, comment ratin
 | Set as the Default Asset Publisher for This Page                          | The Asset Publisher app is an instanceable app: multiple Asset Publishers can be added to a page and each has an independent configuration. The default Asset Publisher for a page is the one used to display content associated with the page. This setting is not available for Asset Publisher in display page template.                                           |
 | Show only assets with asset publisher widget as its display page template | Display assets that only exist for the specified display page template.                                                                                                                                                                                                                                                                                               |
 | Include tags specified in the URL                                         | Incorporate tags specified in the URL                                                                                                                                                                                                                                                                                                                                 |
-| Enable ...                                                                | Enable/disable these options for displayed assets. The Print option adds a Print link to the full view of an asset. Clicking _Print_ opens a new browser window with a print view of the asset. Enabling flags, related assets, ratings, comments, comment ratings, or social bookmarks add links to the corresponding social features to the full view of the asset. |
+| Enable ...                                                                | Enable/disable these options for displayed assets. The Print option adds a Print link to the full view of an asset. Clicking *Print* opens a new browser window with a print view of the asset. Enabling flags, related assets, ratings, comments, comment ratings, or social bookmarks add links to the corresponding social features to the full view of the asset. |
 | Social Bookmarks                                                          | Specify which social media links to display by moving the bookmark from the Available box to the Current box                                                                                                                                                                                                                                                          |
-| Display Style                                                             | Specify one of two display styles for the selected social media links. _Inline_ shows icons for the selected sites in a line. _Menu_ shows a Share button with a drop-down menu containing selected sites as options.                                                                                                                                                 |
+| Display Style                                                             | Specify one of two display styles for the selected social media links. *Inline* shows icons for the selected sites in a line. *Menu* shows a Share button with a drop-down menu containing selected sites as options.                                                                                                                                                 |
 
 ![There are several options that you can enable.](./configuring-asset-publisher-display-settings/images/02.png)
 
 !!! tip
-An alternate way to add flags, comments, and ratings to a page is through the Page Flags, Page Comments, and Page Ratings applications. Add the applications in the appropriate location near the asset that should have feedback.
+    An alternate way to add flags, comments, and ratings to a page is through the Page Flags, Page Comments, and Page Ratings applications. Add the applications in the appropriate location near the asset that should have feedback.
 
 ### Metadata
 

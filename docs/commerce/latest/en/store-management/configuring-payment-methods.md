@@ -5,6 +5,7 @@ toc:
   - ./configuring-payment-methods/mercanet.md
   - ./configuring-payment-methods/money-orders.md
   - ./configuring-payment-methods/paypal.md
+  - ./configuring-payment-methods/stripe.md
 uuid: aa6382a0-494f-44f7-b444-5f01acd39f7e
 taxonomy-category-names:
 - Commerce
@@ -18,20 +19,40 @@ taxonomy-category-names:
 
 Payments are processed through a Payment Method. There are three types of payment methods:
 
-**Offline**: Liferay Commerce does not process payment.
+**Offline**: Liferay does not process the payment.
 
-**Online Standard**: Payment is processed entirely by Liferay Commerce. This option is not available out-of-the-box but can be customized using the Payment Method extension point.
+**Online Standard**: Liferay processes the payment entirely. This option is not available out-of-the-box but you can add additional methods using the [payment integration]() client extension or the [payment method]() extension point.
 
-**Online Redirect**: Liferay Commerce passes information to a third-party payment processor, redirecting the buyer to the processor's website to complete payment.
+**Online Redirect**: Liferay passes information to a third-party payment processor, redirecting the buyer to the processor's website to complete payment.
 
-Liferay Commerce ships with four payment methods. Money Order is an offline method. Authorize.net, Mercanet, and PayPal redirect buyers to a third-party website. Additional methods can be added using the Payment Method extension point.
+Liferay ships with four payment methods. Money order is an offline method. Authorize.net, Mercanet, and PayPal redirect buyers to a third-party website. You can add additional methods using the [payment integration]() client extension or the [payment method]() extension point.
 
-By default, Liferay Commerce does **not** store customer payment information. Stores with requirements to allow for recurring payments or a faster checkout experience are recommended to use a third-party payment processor to manage sensitive customer payment information. If store administrators are required to store customer payment information, it is **highly recommended** that they implement [PCI DSS](https://www.pcisecuritystandards.org/) compliant practices and policies.
+By default, Liferay does **not** store customer payment information. If you want to enable recurring payments or a faster checkout experience, consider using a third-party payment processor to manage sensitive customer payment information. If you must store customer payment information, it is **highly recommended** to implement [PCI DSS](https://www.pcisecuritystandards.org/) compliant practices and policies.
 
-```{raw} html
-:file: ../landingpage_template.html
-```
+::::{grid} 2
+:gutter: 3 3 3 3
 
-```{raw} html
-:file: configuring-payment-methods/landing.html
-```
+:::{grid-item-card}  Managing Payment Methods
+:link: ./configuring-payment-methods/managing-payment-methods.md
+:::
+
+:::{grid-item-card}  Authorize.net
+:link: ./configuring-payment-methods/authorize-net.md
+:::
+
+:::{grid-item-card}  Mercanet
+:link: ./configuring-payment-methods/mercanet.md
+:::
+
+:::{grid-item-card}  Money Orders
+:link: ./configuring-payment-methods/money-orders.md
+:::
+
+:::{grid-item-card}  PayPal
+:link: ./configuring-payment-methods/paypal.md
+:::
+
+:::{grid-item-card}  Stripe
+:link: ./configuring-payment-methods/stripe.md
+:::
+::::

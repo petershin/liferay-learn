@@ -91,7 +91,7 @@ Check out the [API Explorer](../using-liferay-as-a-headless-platform.md#ways-to-
 
 {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA126+`
 
-Although you can use slashes (`/`) in your ERCs, it may cause unexpected behavior in specific situations when dealing with APIs with ERCs in their endpoint URL paths. Here are some observations to help understand those behaviors:
+Slashes (`/`) are accepted in your ERCs. However, when dealing with APIs that include ERCs in their endpoint URL paths, it's important to understand how they are interpreted to avoid incorrect parsing and unexpected behavior in the API calls. Here are some observations to help understand the use of slashes in ERCs:
 
 - In general, you can use slashes or escape them as `%252F`.
 
@@ -101,18 +101,18 @@ Although you can use slashes (`/`) in your ERCs, it may cause unexpected behavio
 
    For example, in the object relationship PUT endpoint (`http://localhost:8080/o/c/tests/[currentERC]/relationship/[relatedERC]`), failing to escape slashes in the `relatedERC` value can cause the endpoint to misinterpret the path segments.
 
-   Check the table below with different examples. Under `currentERC` and `relatedERC` there are examples of ERCs. The Result column indicates whether the URL will be correctly interpreted. An observation is added to the cases where the URL doesn't work.
+   Check the table below for different examples. Under `currentERC` and `relatedERC` there are examples of ERCs. The Result column indicates whether the URL is interpreted correctly. Misinterpretation occurs when the `currentERC` includes the relationship's name because of how the slash was parsed.
 
-   | `currentERC` | `relatedERC` |  Result  | Observation                                        |
-   | :----------- | :----------- | :------: | :------------------------------------------------- |
-   | `a/b`        | `c`          | &#10004; |                                                    |
-   | `a%252Fb`    | `c`          | &#10004; |                                                    |
-   | `a`          | `c/d`        | &#10060; | `currentERC` will include the relationship's name. |
-   | `a`          | `c%252Fd`    | &#10004; |                                                    |
-   | `a/b`        | `c/d`        | &#10060; | `currentERC` will include the relationship's name. |
-   | `a%252Fb`    | `c%252Fd`    | &#10004; |                                                    |
-   | `a%252Fb`    | `c/d`        | &#10060; | `currentERC` will include the relationship's name. |
-   | `a/b`        | `c%252Fd`    | &#10004; |                                                    |
+   | `currentERC` | `relatedERC` |  Result  |
+   | :----------- | :----------- | :------: |
+   | `a/b`        | `c`          | &#10004; |
+   | `a%252Fb`    | `c`          | &#10004; |
+   | `a`          | `c/d`        | &#10060; |
+   | `a`          | `c%252Fd`    | &#10004; |
+   | `a/b`        | `c/d`        | &#10060; |
+   | `a%252Fb`    | `c%252Fd`    | &#10004; |
+   | `a%252Fb`    | `c/d`        | &#10060; |
+   | `a/b`        | `c%252Fd`    | &#10004; |
 
 ## Related Topics
 

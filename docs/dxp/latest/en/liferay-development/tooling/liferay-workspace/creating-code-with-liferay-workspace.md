@@ -24,13 +24,13 @@ Liferay Workspace is the developer's tool for creating and managing Liferay deve
    blade create -l
    ```
 
-1. Once you've identified the template you want to use, generate your project. For example, to create a MVC Portlet, use this command: 
+1. Once you've identified the template you want to use, generate your project. For example, to create a MVC portlet, use this command: 
 
    ```bash
    blade create -t mvc-portlet -p com.acme.z3x1.portlet -c MyPortlet myproject-web
    ```
 
-   This creates a project using the MVC Portlet template (`-t mvc-portlet`), generates the portlet class in the Java package you specify (`-p com.acme.z3x1.portlet`), specifies the name of the portlet class (`-c MyPortlet`), and names the project `myproject-web`. 
+   This creates a project using the MVC portlet template (`-t mvc-portlet`), generates the portlet class in the Java package you specify (`-p com.acme.z3x1.portlet`), specifies the name of the portlet class (`-c MyPortlet`), and names the project `myproject-web`. 
 
 ## Creating Projects Manually
 
@@ -164,7 +164,7 @@ This calls the Gradle wrapper script in the Workspace root folder and deploys yo
 
 ### Deploying Code to a Liferay Docker Container
 
-If you've already [created a Liferay Docker Container](./configuring-a-liferay-docker-container.md), deploying to it is just as easy as deploying to a local bundle. Run the same Gradle task: 
+If you've already [created a Liferay Docker Container](./configuring-a-liferay-docker-container.md), deploying to it is as easy as deploying to a local bundle. Run the same Gradle task: 
 
 ```bash
 ../gradlew deploy

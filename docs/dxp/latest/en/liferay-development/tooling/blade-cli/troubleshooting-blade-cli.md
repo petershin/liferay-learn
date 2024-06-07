@@ -42,3 +42,7 @@ Using an administrative account, navigate to your `[global folder]/jpm4j` folder
 - `/commands/blade`
 
 Now the newer installation in your user home folder is recognized and available in your CLI.
+
+## I can't use JDK 17 or JDK 21 
+
+These JDKs are supported as of Blade 7.0.0+ and Workspace 10.1.0+. Follow [these instructions](../blade-cli.md#updating-blade-cli) to update your version of Blade, and then update your Workspace. 

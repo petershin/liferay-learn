@@ -9,7 +9,7 @@ taxonomy-category-names:
 ---
 # Creating A Liferay Workspace
 
-You can create a Liferay Workspace manually or with [Blade CLI](../blade-cli/installing-and-updating-blade-cli.md). 
+You can create a Liferay Workspace manually or with [Blade CLI](../blade-cli.md). 
 
 ## Creating a Liferay Workspace Manually
 
@@ -49,7 +49,7 @@ To create a Liferay Workspace manually, you must have [Gradle](https://gradle.or
     liferay.workspace.product=[$LIFERAY_LEARN_PORTAL_WORKSPACE$]
     ```
 
-    This defines the lastest GA of Liferay Portal. You can always get a current list using Blade CLI by typing `blade init -l`. 
+    This defines the latest GA of Liferay Portal. You can always get a current list using Blade CLI by typing `blade init -l`. 
 
 ## Creating a Liferay Workspace with Blade CLI
 

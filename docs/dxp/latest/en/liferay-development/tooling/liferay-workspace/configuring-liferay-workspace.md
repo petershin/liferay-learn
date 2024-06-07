@@ -9,9 +9,8 @@ taxonomy-category-names:
 ---
 # Configuring Liferay Workspace
 
-```{warning}
-Liferay Workspace is simple to use, and you can learn the basics by starting [at the beginning](./what-is-liferay-workspace.md). If you're happily [creating projects](./creating-code-with-liferay-workspace.md), [deploying code](./creating-code-with-liferay-workspace.md#deploying-code-via-liferay-workspace), or [using a Docker container](./configuring-a-liferay-docker-container.md), you may not need the information here. If, however, you want to do a deep dive and learn about all the things Workspace can do, this is the place for you. 
-```
+!!! warning
+    Liferay Workspace is simple to use, and you can learn the basics by starting [at the beginning](../liferay-workspace.md). If you're happily [creating projects](./creating-code-with-liferay-workspace.md), [deploying code](./creating-code-with-liferay-workspace.md#deploying-code-via-liferay-workspace), or [using a Docker container](./configuring-a-liferay-docker-container.md), you may not need the information here. If, however, you want to do a deep dive and learn about all the things Workspace can do, this is the place for you. 
 
 Here are the topics covered: 
 
@@ -51,25 +50,26 @@ liferay.workspace.product=[$LIFERAY_LEARN_PORTAL_WORKSPACE$]
 
 Update the property's value to the version of Liferay for which you're developing code. Your workspace's dependencies are then automatically updated to the new version. 
 
-## Using JDK 11
+## Using JDKs 11, 17, or 21
 
-```{note}
-If you compile under JDK 11, you must run under JDK 11. Make sure your app servers are running JDK 11 before making any changes to Workspace. Note that Liferay's Docker images use JDK 8 by default. To override this, create your Docker image using the `-e JAVA_VERSION=zulu11` environment variable.
-```
+As of {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+`, Liferay supports JDK 17 and 21.
+
+!!! note
+    If you compile under a JDK, you must run under that same JDK. Make sure your app servers are running under the new JDK before making any changes to Workspace. Note that Liferay's Docker images use JDK 8 by default. To override this, create your Docker image using the `-e JAVA_VERSION=zulu11`, `-e JAVA_VERSION=zulu17`, or `-e JAVA_VERSION=zulu21` environment variable.
 
 **Prerequisite:** If you're using an older version of Workspace, you must upgrade two things: 
 
-1. Update Gradle to at least version 6.6.1
-1. Update your Workspace version to at least 3.4.2 (see above for upgrade procedure). 
+1. Update Gradle to version 8.5
+1. Update your Workspace version to at least 10.1.0 (see above for upgrade procedure). 
 
 To upgrade Gradle, edit the `gradle/wrapper/gradle-wrapper.properties` file in your Workspace: 
 
 ```properties
-distributionUrl=https\://services.gradle.org/distributions/gradle-6.6.1-all.zip
 distributionBase=GRADLE_USER_HOME
 distributionPath=wrapper/dists
-zipStorePath=wrapper/dists
+distributionUrl=https\://services.gradle.org/distributions/gradle-8.5-all.zip
 zipStoreBase=GRADLE_USER_HOME
+zipStorePath=wrapper/dists
 ```
 
 If you upgraded your Workspace too, make sure you have the `liferay.workspace.product` property set. Remember, you can always get a current list for this property using Blade CLI by typing `blade init -l`.
@@ -81,7 +81,7 @@ maven {
 	url "http://repository.liferay.com/nexus/content/groups/public"
 }
 ```
-Great! You're now ready to use JDK 11 with your Liferay projects. If you have existing projects, there are additional steps you may need to take. 
+Great! You're now ready to use JDKs newer than Java 8 with your Liferay projects. If you have existing projects, there are additional steps you must take. 
 
 ### Service Builder Projects
 
@@ -96,6 +96,7 @@ tasks.withType(JavaCompile) {
 	targetCompatibility = JavaVersion.VERSION_1_8
 }
 ```
+
 ### JAX-WS Projects
 
 If you have any JAX-WS projects, they require classes from `javax.xml.soap` which were removed from JDK 11. Now you must specify them as a dependency manually: 
@@ -118,7 +119,7 @@ dependencies {
 
 Since any application written on Liferay's platform targets that platform, Liferay has made it easy for you to specify all dependencies in one shot by declaring the version of Liferay and then inheriting other dependencies from Liferay. That way, you don't have the mess shown above. 
 
-Target platform is enabled by default; you don't have to do anything extra to use it. Here's what most dependencies look like now: 
+Target platform is enabled by default; there's nothing extra to do to use it. Here's what most dependencies look like now: 
 
 ```groovy
 dependencies {

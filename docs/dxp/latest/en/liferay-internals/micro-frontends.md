@@ -10,7 +10,7 @@ taxonomy-category-names:
 
 # Micro Frontends
 
-Micro frontends extend the concept of microservices to the frontend side of development. You can build a fully-featured and powerful browser application that uses a microservice architecture to break the application down into smaller parts. Separate teams can then focus on delivering those smaller parts, even using different frameworks. When finished the parts are seamlessly pieced together to create a great user experience. 
+Micro frontends extend the concept of microservices to the frontend side of development. You can build a fully-featured and powerful browser application that uses a microservice architecture to break the application down into smaller parts. Separate teams can then focus on delivering those smaller parts, even using different frameworks. When finished the parts are seamlessly pieced together to create a great user experience.
 
 ![Using Liferay to build a fully-featured and powerful browser application applying Micro Frontends](micro-frontends/images/01.png)
 
@@ -18,15 +18,16 @@ You use [frontend client extensions](../liferay-development/customizing-liferays
 
 One of the available frontend client extensions is the [basic custom element](../liferay-development/integrating-external-applications/creating-a-basic-custom-element.md). Basic custom elements use Liferay's frontend infrastructure to register external, remote applications with the Liferay platform and render them as widgets. This way, users can develop the applications separately, create basic custom elements using client extensions, and add them to a page.
 
-```{note}
-Custom element client extensions can use any technology, regardless of how it’s built, packaged, or hosted.
-```
+!!! note
+    Custom element client extensions can use any technology, regardless of how it’s built, packaged, or hosted.
 
 The cases below illustrate the concept.
 
 ### Case 1: Raylife
 
-[Raylife](https://marketplace.liferay.com/p/liferay-insurance-agent-portal-accelerator#solutions-details-video) is an agent portal solution built on Liferay. It works as an accelerator that can be customized. 
+<!-- Well... I think Raylife was deprecated. So, it may be a good idea to come up with a replacement for this section. Eric -->
+
+Raylife is an agent portal solution built on Liferay. It works as an accelerator that can be customized.
 
 Raylife requires four separate applications: a [React based client extension](../liferay-development/building-applications/developing-a-javascript-application/using-react.md) that displays a list of insurance claims with different fields, fragment blocks that visualize information (they can be replaced by other blocks to show different visualizations), a header, and a side menu bar.
 
@@ -47,3 +48,9 @@ You can [use layout elements](../site-building/creating-pages/page-fragments-and
 Different teams can work on those different applications independently, using whatever frameworks they want. All applications benefit from Liferay's native APIs (headless API or global JavaScript API).
 
 ![A draft that defines the layout of the page with the position of each application/component in the page.](micro-frontends/images/03.png)
+
+## Related Topics
+
+- [Customizing Liferay's Look and Feel](../liferay-development/customizing-liferays-look-and-feel.md)
+- [Using Fragments](../site-building/creating-pages/page-fragments-and-widgets/using-fragments.md)
+- [Using Widgets](../site-building/creating-pages/page-fragments-and-widgets/using-widgets.md)

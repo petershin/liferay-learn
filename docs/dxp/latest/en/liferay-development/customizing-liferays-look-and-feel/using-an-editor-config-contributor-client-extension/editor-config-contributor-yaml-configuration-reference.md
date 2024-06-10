@@ -6,6 +6,7 @@ taxonomy-category-names:
 - Liferay Self-Hosted
 - Liferay SaaS
 ---
+
 # Editor Config Contributor YAML Configuration Reference
 
 {bdg-secondary}`Liferay DXP 2024.Q1+/Portal 7.4 GA112+`
@@ -38,9 +39,9 @@ Client extensions are deployed at the instance level and impact all CKEditor ins
 !!! tip
     By specifying configuration options, you can control which CKEditor instances your extensions affect. If you omit specific configuration options, the extension applies to all CKEditors filtered by the provided criteria. If no options are specified, the extension applies to every CKEditor instance in the DXP environment.
 
-The required URL property points to a JavaScript snippet that should implement a function according to the [TypeScript interfaces outlined in the public API](https://github.com/liferay/liferay-frontend-projects/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/projects/js-toolkit/packages/js-api/editor/index.ts).
+The required URL property points to a JavaScript snippet that should implement a function according to the [TypeScript interfaces outlined in the public API](https://github.com/liferay/liferay-frontend-projects/blob/master/projects/js-toolkit/packages/js-api/editor/index.ts).
 
-[The example workspace](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/workspaces/liferay-sample-workspace/client-extensions/liferay-sample-editor-config-contributor) includes a complete Editor Config Contributor client extension.
+[The example workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace/client-extensions/liferay-sample-editor-config-contributor) includes a complete Editor Config Contributor client extension.
 
 !!! important
     Developers must provide valid configurations when implementing the client extension. The system does not perform any validation checks on these configurations.

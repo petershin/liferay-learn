@@ -6,6 +6,7 @@ taxonomy-category-names:
 - Liferay PaaS
 uuid: 8d257002-3c90-4810-82a1-17ae741c33c4
 ---
+
 # Using the Fragments Toolkit
 
 !!! note
@@ -20,10 +21,10 @@ The Fragments Toolkit helps you develop and manage Fragments locally, using your
 
 The toolkit requires this software:
 
-* [NPM](https://www.npmjs.com/)
-* [NodeJS](https://nodejs.org/)
-* [Yeoman](https://yeoman.io/)
-* [Yarn](https://classic.yarnpkg.com/)
+- [NPM](https://www.npmjs.com/)
+- [NodeJS](https://nodejs.org/)
+- [Yeoman](https://yeoman.io/)
+- [Yarn](https://classic.yarnpkg.com/)
 
 NPM and Yarn are package managers that you'll use to install the toolkit and modules it depends on.
 
@@ -168,7 +169,7 @@ Great! You successfully deployed a Fragment Set.
 
 Each Fragment Set uses this structure:
 
-* `collection.json`: a text file that describes the Fragment Set.
+- `collection.json`: a text file that describes the Fragment Set.
 
    ```json
    {
@@ -177,15 +178,15 @@ Each Fragment Set uses this structure:
    }
    ```
 
-* `language.properties` (optional): language keys defined for the Fragment Set.
+- `language.properties` (optional): language keys defined for the Fragment Set.
 
-* `[fragment-name]/`: a folder containing all of the files for a Fragment.
+- `[fragment-name]/`: a folder containing all of the files for a Fragment.
 
-   * `configuration.json`(optional): a JSON file that defines the Fragment's configuration. See [Adding Configuration Options to Fragments](./adding-configuration-options-to-fragments.md) for more information.
+   - `configuration.json`(optional): a JSON file that defines the Fragment's configuration. See [Adding Configuration Options to Fragments](./adding-configuration-options-to-fragments.md) for more information.
 
-   * `fragment.json`: a JSON file that describes the Fragment. See [Modifying fragment.json](#modifying-fragmentjson) for more information.
+   - `fragment.json`: a JSON file that describes the Fragment. See [Modifying fragment.json](#modifying-fragmentjson) for more information.
 
-* `resources/` (optional): a folder containing any additional images or files the Fragments need. See [Including Default Resources in Fragments](./including-default-resources-with-fragments.md) for more information.
+- `resources/` (optional): a folder containing any additional images or files the Fragments need. See [Including Default Resources in Fragments](./including-default-resources-with-fragments.md) for more information.
 
 You can use the Fragments Toolkit to create projects quickly with this structure.
 
@@ -194,7 +195,7 @@ You can use the Fragments Toolkit to create projects quickly with this structure
 `fragment.json` contains fragment attributes that can be modified to enhance the functionality and usability of fragments.
 
 | Key                    | Description                                                                                                                         |
-|:-----------------------|:------------------------------------------------------------------------------------------------------------------------------------|
+| :--------------------- | :---------------------------------------------------------------------------------------------------------------------------------- |
 | `cssPath`              | Specifies .css, .scss, or .sass files.                                                                                              |
 | `configurationPath`    | Specifies the configuration source for the fragment.                                                                                |
 | `htmlPath`             | Specifies the HTML source for the fragment.                                                                                         |
@@ -205,21 +206,21 @@ You can use the Fragments Toolkit to create projects quickly with this structure
 | `sass {loadPaths:[]}}` | Specifies external dependencies.                                                                                                    |
 
 ```json
-   {
-      "cssPath": "styles.css",
-      "configurationPath": "configuration.json",
-      "htmlPath": "index.html",
-      "jsPath": "main.js",
-      "name": "Fragment name",
-      "type": "[component|react]",
-      "icon": "adjust"
+{
+   "cssPath": "styles.css",
+   "configurationPath": "configuration.json",
+   "htmlPath": "index.html",
+   "jsPath": "main.js",
+   "name": "Fragment name",
+   "type": "[component|react]",
+   "icon": "adjust"
 
-      // This configuration is optional and can be removed
-      "sass": {
-            "loadPaths": [
-               "../../../node_modules"
-            ]
-      }
+   // This configuration is optional and can be removed
+   "sass": {
+         "loadPaths": [
+            "../../../node_modules"
+         ]
+   }
 }
 ```
 
@@ -316,11 +317,11 @@ The Fragment HTML uses the new `data-lfr` editable syntax.
 
 Modify any part of your Fragment.
 
-* HTML (`index.html`)
-* CSS (`styles.css`)
-* JavaScript (`main.js`)
-* Fragment Attributes (`fragment.json`)
-* [Configuration options](./adding-configuration-options-to-fragments.md) (`configuration.json`).
+- HTML (`index.html`)
+- CSS (`styles.css`)
+- JavaScript (`main.js`)
+- Fragment Attributes (`fragment.json`)
+- [Configuration options](./adding-configuration-options-to-fragments.md) (`configuration.json`).
 
 For example, you can build off of the above HTML and use [Clay](https://clayui.com/)'s [Bootstrap](https://getbootstrap.com/)-based components to create Fragment with an attention-getting headline and description, as demonstrated in this `index.html`:
 
@@ -374,10 +375,10 @@ The first `div` element's `class="component-my-jumbotron"` attribute attempts to
 
 Next the `<div class="jumbotron"/>` element wraps the content, applying [Bootstrap](https://getbootstrap.com/)'s jumbotron component. This component makes the content stand out. Here are the content elements:
 
-* `<h1 class="display-4" ...>Editable Jumbotron ...` creates the Fragment's heading. It uses [Bootstrap](https://getbootstrap.com/)'s `display-4` size style. The `data-lfr-editable-` attributes make the heading text [editable](../reference/fragments/fragment-specific-tags-reference.md). The `data-lfr-editable-id="03-text"` attribute identifies the element and the `data-lfr-editable-type="rich-text"` attribute declares the content type.
-* `<p class="lead" ...>Edit this text ...` is the lead body text distinguished by Clay's [`lead`](https://clayui.com/docs/css/content/typography.html#css-lead) style component. The `data-lfr-editable-` attributes make the paragraph editable.
-* The `<hr/>` and next `<p ...` elements produce a horizontal rule and another editable paragraph, respectively.
-* `<a class="btn btn-primary btn-lg" ...` specifies a modifiable link. The `btn-primary` class styles it as a main button and `btn-lg` makes it large. The `href="#"` attribute takes the user to the top of the page when the link is clicked. The `data-lfr-editable-type="link"` attribute makes the link [editable](../reference/fragments/fragment-specific-tags-reference.md).
+- `<h1 class="display-4" ...>Editable Jumbotron ...` creates the Fragment's heading. It uses [Bootstrap](https://getbootstrap.com/)'s `display-4` size style. The `data-lfr-editable-` attributes make the heading text [editable](../reference/fragments/fragment-specific-tags-reference.md). The `data-lfr-editable-id="03-text"` attribute identifies the element and the `data-lfr-editable-type="rich-text"` attribute declares the content type.
+- `<p class="lead" ...>Edit this text ...` is the lead body text distinguished by Clay's [`lead`](https://clayui.com/docs/css/content/typography.html#css-lead) style component. The `data-lfr-editable-` attributes make the paragraph editable.
+- The `<hr/>` and next `<p ...` elements produce a horizontal rule and another editable paragraph, respectively.
+- `<a class="btn btn-primary btn-lg" ...` specifies a modifiable link. The `btn-primary` class styles it as a main button and `btn-lg` makes it large. The `href="#"` attribute takes the user to the top of the page when the link is clicked. The `data-lfr-editable-type="link"` attribute makes the link [editable](../reference/fragments/fragment-specific-tags-reference.md).
 
 You can also include resources in your Fragments. See [Including Default Resources in Fragments](./including-default-resources-with-fragments.md) for more information.
 
@@ -460,7 +461,7 @@ There are some alternatives you can use for developing fragments:
    ```
 
    !!! note
-       If you want to import a React component that is not included in Liferay's `importMap`, you can add it by creating an [importMap ClientExtension](https://github.com/liferay/liferay-portal/blob/master/workspaces/liferay-sample-workspace/client-extensions/liferay-sample-etc-frontend-3/client-extension.yaml#L16).
+       If you want to import a React component that is not included in Liferay's `importMap`, you can add it by creating an [importMap ClientExtension](https://github.com/liferay/liferay-portal/blob/master/workspaces/liferay-sample-workspace/client-extensions/liferay-sample-etc-frontend/client-extension.yaml).
 
    While editing a page, fragments can be rendered multiple times when users interact with them (e.g. while changing the fragment configuration). To ensure the React component is remounted, add a condition to check the layout mode to the first cleanup process. See the example code below:
 

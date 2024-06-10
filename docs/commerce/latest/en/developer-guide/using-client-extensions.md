@@ -2,7 +2,6 @@
 toc:
   - ./using-client-extensions/using-the-checkout-step-client-extension.md
   - ./using-client-extensions/using-the-payment-integration-client-extension.md
-  - ./using-client-extensions/using-the-stripe-client-extension.md
   - ./using-client-extensions/using-the-shipping-engine-client-extension.md
   - ./using-client-extensions/checkout-step-client-extension-reference.md
   - ./using-client-extensions/payment-integration-client-extension-reference.md

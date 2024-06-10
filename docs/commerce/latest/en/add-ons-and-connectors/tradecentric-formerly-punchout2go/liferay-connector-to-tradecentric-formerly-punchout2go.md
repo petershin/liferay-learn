@@ -1,7 +1,7 @@
 ---
 uuid: 7c93ef53-24bd-4b70-a5c2-a1c23dc46f5e
 toc:
-  - ./liferay-connector-to-tradecentric-formerly-punchout2go/liferay-commerce-2-1-liferay-commerce-connector-to-punchout2go.md
+  - ./liferay-connector-to-tradecentric-formerly-punchout2go/liferay-connector-to-tradecentric-formerly-punchout2go.md
 taxonomy-category-names:
 - Commerce
 - Add-ons and Connectors
@@ -61,13 +61,13 @@ Users must enable the punch out access token for the buyer's procurement system 
 
 1. Click *API Authentication* under *Security*.
 
-   ![Select API Authentication to configure the access token.](./liferay-commerce-2-1-liferay-commerce-connector-to-punchout2go/images/01.png)
+   ![Select API Authentication to configure the access token.](./liferay-connector-to-tradecentric-formerly-punchout2go/images/01.png)
 
 1. Click *Auto Login Punch Out Access Token* in the left menu.
 
 1. Check the *Enabled* checkbox.
 
-   ![Enable the auto login access token.](./liferay-commerce-2-1-liferay-commerce-connector-to-punchout2go/images/02.png)
+   ![Enable the auto login access token.](./liferay-connector-to-tradecentric-formerly-punchout2go/images/02.png)
 
 1. Click *Update*.
 
@@ -83,7 +83,7 @@ After enabling the punch out access token, users can configure the punch out acc
 
    * **Access Token Size**:
 
-   ![Configure the validity and size of the access token.](./liferay-commerce-2-1-liferay-commerce-connector-to-punchout2go/images/03.png)
+   ![Configure the validity and size of the access token.](./liferay-connector-to-tradecentric-formerly-punchout2go/images/03.png)
 
 1. Click *Save*.
 
@@ -115,7 +115,7 @@ It is best practice to have a role for vendors using punch out. To learn more ab
 
    * **View Open Orders**
 
-   ![Permissions for a punch out role.](./liferay-commerce-2-1-liferay-commerce-connector-to-punchout2go/images/04.png)
+   ![Permissions for a punch out role.](./liferay-connector-to-tradecentric-formerly-punchout2go/images/04.png)
 
 1. Click *Save*
 
@@ -128,7 +128,7 @@ This creates the new punch out role with the required bare minimum permissions. 
 
 After deploying and configuring the connector, users are redirected to the appropriate procurement system when they click *Submit*.
 
-![Punch out redirects after submitting an order.](./liferay-commerce-2-1-liferay-commerce-connector-to-punchout2go/images/05.png)
+![Punch out redirects after submitting an order.](./liferay-connector-to-tradecentric-formerly-punchout2go/images/05.png)
 
 ## Related Topics
 

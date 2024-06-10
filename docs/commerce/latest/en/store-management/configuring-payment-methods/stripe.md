@@ -33,19 +33,19 @@ Liferay provides a client extension that integrates with [Stripe](https://stripe
 
 1. Click *Go to Console*.
 
-   ![Go to your Liferay Cloud console to install the Marketplace app.](./use-the-stripe-client-extension/images/01.png)
+   ![Go to your Liferay Cloud console to install the Marketplace app.](./stripe/images/01.png)
 
 1. Go to Services, and click *New App*.
 
-   ![Install a new app from the console.](./use-the-stripe-client-extension/images/02.png)
+   ![Install a new app from the console.](./stripe/images/02.png)
 
 1. Enter the order ID from before and complete the installation.
 
-   ![A new marketplace app gets added to the services page.](./use-the-stripe-client-extension/images/03.png)
+   ![A new marketplace app gets added to the services page.](./stripe/images/03.png)
 
 1. Log in as an administrator and verify that the OAuth Application User Agent was added to Liferay. Open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)) and go to *Control Panel* &rarr; *OAuth2 Administration*.
 
-   ![The Liferay Stripe Commerce Payment Integration OAuth Application User Agent is added when you deploy the client extension.](./use-the-stripe-client-extension/images/04.png)
+   ![The Liferay Stripe Commerce Payment Integration OAuth Application User Agent is added when you deploy the client extension.](./stripe/images/04.png)
 
 ## Verifying the Addition of Stripe as a Payment Method
 
@@ -57,7 +57,7 @@ Liferay provides a client extension that integrates with [Stripe](https://stripe
 
 1. Select *Minium Portal* and scroll down to the Payment Methods section. Verify the addition of Stripe as a new payment method here. It is inactive by default.
 
-   ![Verify the addition of Stripe as a new payment method.](./using-the-payment-integration-client-extension/images/05.png)
+   ![Verify the addition of Stripe as a new payment method.](./stripe/images/05.png)
 
 1. Select the new payment integration and activate it using the *Active* toggle.
 
@@ -65,7 +65,7 @@ Liferay provides a client extension that integrates with [Stripe](https://stripe
 
    The configuration tab contains an input field. You must enter an API key that you can obtain from your [Stripe Dashboard](https://dashboard.stripe.com/login).
 
-   ![Enter your Stripe API key to complete the integration.](./using-the-payment-integration-client-extension/images/06.png)
+   ![Enter your Stripe API key to complete the integration.](./stripe/images/06.png)
 
    You can go to the Eligibility tab to select specific order types or payment terms to be eligible for the payment integration. By default, it is eligible for all order types and payment terms.
 
@@ -79,7 +79,7 @@ Liferay provides a client extension that integrates with [Stripe](https://stripe
 
 1. Continue checking out until you reach the order summary page. Click *Continue* to redirect to Stripe. Enter the necessary details and click *Pay*. After confirming payment, you're automatically redirected back to Liferay. Open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)) and go to *Commerce* &rarr; *Payments* to verify the payment’s completion.
 
-![Go to Stripe and enter your payment details to complete the order.](./using-the-payment-integration-client-extension/images/07.gif)
+![Go to Stripe and enter your payment details to complete the order.](./stripe/images/07.gif)
 
 !!! note
     The above flow uses Stripe's test mode. Stripe provides numerous test card numbers to replicate different payment scenarios. See [How to use test cards](https://docs.stripe.com/testing#use-test-cards) for more information.

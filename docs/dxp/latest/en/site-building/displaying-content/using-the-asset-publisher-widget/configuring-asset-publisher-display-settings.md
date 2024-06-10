@@ -18,7 +18,7 @@ When using an Asset Publisher widget, you can configure several display settings
 
 1. Drag and drop the *Asset Publisher* widget into the editing area.
 
-1. [Select your assets](./selecting-assets-in-the-asset-publisher-widget.md).
+1. [Select your assets](./displaying-assets-using-the-asset-publisher-widget.md#selecting-assets-in-the-asset-publisher-widget).
 
 1. Hover over the Asset Publisher and click *Options* (![Options icon](../../../images/icon-app-options.png)) in the widget's menu &rarr; *Configuration*.
 
@@ -92,10 +92,9 @@ The Grouping section specifies dividing the displayed assets into groups. You ca
 
 ![You can separate assets into different groups.](./configuring-asset-publisher-display-settings/images/04.png)
 
-For example, suppose you have a vocabulary called Membership Type with two categories: Premium and Regular. If you group assets by Membership Type, all assets with the Premium category appear in one group and all assets with the Regular category appear in another group. Grouping rules are applied before any [ordering rules](./selecting-assets-in-the-asset-publisher-widget.md#dynamic). The ordering rules are applied separately to each group of assets.
+For example, suppose you have a vocabulary called Membership Type with two categories: Premium and Regular. If you group assets by Membership Type, all assets with the Premium category appear in one group and all assets with the Regular category appear in another group. Grouping rules are applied before any [ordering rules](./displaying-assets-using-the-asset-publisher-widget.md#dynamic). The ordering rules are applied separately to each group of assets.
 
 ## Related Topics
 
 - [Displaying Assets Using the Asset Publisher Widget](./displaying-assets-using-the-asset-publisher-widget.md)
-- [Selecting Assets for the Asset Publisher Widget](./selecting-assets-in-the-asset-publisher-widget.md)
 - [Geo-Localized Assets](../../site-settings/site-content-configurations/configuring-geolocation-for-assets.md)

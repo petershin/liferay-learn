@@ -27,8 +27,7 @@ By default, image auto-tagging is disabled by default. In addition to enabling a
 
 ## Configuring TensorFlow Image Auto-Tagging
 
-1. Click the *Global Menu* &rarr; *Control Panel*
-1. Click *System Settings*.
+1. Open the *Global Menu* and click *System Settings* under Control Panel.
 
    ![Navigate to the System Settings.](./auto-tagging-images/images/02.png)
 
@@ -37,7 +36,9 @@ By default, image auto-tagging is disabled by default. In addition to enabling a
    ![Click on Assets.](./auto-tagging-images/images/03.png)
 
 1. Under *VIRTUAL INSTANCE SCOPE*, click *TensorFlow Image Auto-Tagging*.
+
 1. Fill out the form.
+
 1. Click *Save* when finished.
 
 The form asks for this information:
@@ -50,11 +51,14 @@ The form asks for this information:
 
 ### Optimizing TensorFlow Auto-Tagging Performance
 
-1. Click the *Global Menu* &rarr; *Control Panel*
-1. Click *System Settings*.
+1. Open the *Global Menu* and click *System Settings* under Control Panel.
+
 1. Click *Assets*.
+
 1. Under *SYSTEM SCOPE*, click *TensorFlow Image Auto-Tagging Process*.
+
 1. Fill out the form.
+
 1. Click *Save* to apply the settings.
 
 The form asks for this information:
@@ -69,11 +73,14 @@ The TensorFlow provider has been configured.
 
 ## Configuring Google Cloud Vision
 
-1. Click the *Global Menu* &rarr; *Control Panel*
-1. Click *System Settings*.
+1. Open the *Global Menu* and click *System Settings* under Control Panel.
+
 1. Click *Assets*.
+
 1. Under *VIRTUAL INSTANCE SCOPE*, click *Google Cloud Vision Image Auto-Tagging*.
+
 1. Enter your Google Cloud Vision API Key. For more information, see [Google's documentation on API keys](https://cloud.google.com/docs/authentication/api-keys).
+
 1. Check the *Enabled* box to enable Google Cloud Vision.
 
    ![The Google Cloud Vision provider requires an API key.](./auto-tagging-images/images/06.png)
@@ -82,11 +89,14 @@ The TensorFlow provider has been configured.
 
 ## Configuring Microsoft Cognitive Services
 
-1. Click the *Global Menu* &rarr; *Control Panel*
-1. Click *System Settings*.
+1. Open the *Global Menu* and click *System Settings* under Control Panel.
+
 1. Click *Assets*
+
 1. Under *VIRTUAL INSTANCE SCOPE*, click *Microsoft Cognitive Services Image Auto-Tagging*.
+
 1. Fill out the form.
+
 1. Check the *Enabled* box.
 
     ![The Microsoft Cognitive Services provider requires an API key and an endpoint.](./auto-tagging-images/images/07.png)
@@ -97,7 +107,7 @@ The form asks for this information:
 
 **API Key:** Your [API key](https://azure.microsoft.com/en-us/try/cognitive-services/my-apis/?apiSlug=computer-services) for the Computer Vision API V2.
 
-**API Endpoint:** The endpoint for the [Computer Vision API V2](https://westcentralus.api.cognitive.microsoft.com/vision/v2.0).
+**API Endpoint:** The endpoint for the [Computer Vision API v2.0](https://westus.dev.cognitive.microsoft.com/docs/services/5adf991815e1060e6355ad44/operations/56f91f2e778daf14a499e1fa).
 
 The Microsoft Cognitive Services provider has been configured. For more information, see the [Microsoft Cognitive Services documentation](https://docs.microsoft.com/en-us/azure/cognitive-services/).
 

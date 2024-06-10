@@ -31,22 +31,134 @@ The Asset Publisher widget supports these asset types by default:
 
 The easiest way to configure an Asset Publisher to display the desired assets is to use a [collection](../../../content-authoring-and-management/collections-and-collection-pages.md) that suits your needs. Whether your collection is assigned assets manually or dynamically, the Asset Publisher widget automatically loads assets in the order the collection defines. In Liferay DXP 7.4 U10+ or GA14, Asset Publishers use the collection configuration by default.
 
-![You can configure an Asset Publisher widget to use the Collection, Manual, or Dynamic methods of retrieving assets to display.](./displaying-assets-using-the-asset-publisher-widget/images/01.png)
+## Selecting Assets in the Asset Publisher Widget
 
-You can also configure the Asset Publisher widget's Manual or Dynamic configurations to determine the displayed assets without a collection. Manual selection gives you control over what assets are displayed, but maintaining the list can be tedious if you find yourself updating the list on a regular basis. In this case, it's more convenient to use the Asset Publisher widget to select content dynamically.
+You can configure the Asset Publisher widget to select assets dynamically based on specific criteria, or manually, specifying exactly what assets to display. You can also display assets from [collections](../../../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md).
 
-## Display Options
+!!! note
+    On Liferay 7.2 and below, collections are referred to as [content sets](../../../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md#liferay-dxp-7-2).
 
-The Asset Publisher widget displays assets. It has many [configuration options](./configuring-asset-publisher-display-settings.md) that you can use to adapt the way it displays them. By default, the Asset Publisher displays abstracts (previews) of recently published assets with links to their full views. You can configure the Asset Publisher to display a table of assets, a list of asset titles, or the full content of assets. You can also configure it to display specific assets, and choose how many items to display in a list. You might use Asset Publisher to display chosen content types, recent content, or content by tags and categories.
+1. Create a [new page](../../creating-pages/adding-pages/adding-a-page-to-a-site.md) or [edit an existing one](../../creating-pages/using-content-pages/adding-elements-to-content-pages.md)
 
-## Publishing Mixed Content
+1. While editing the page, look at the Fragments and Widgets tab on the left of the page editor and search for the *Asset Publisher* widget.
 
-Since the Asset Publisher widget publishes assets, it excels at publishing mixed content types like images, documents, blogs, and of course, web content. This helps create a more dynamic website. you can place user-created wiki entries, blog posts, or message board messages in context with your web content.
+1. Drag and drop the *Asset Publisher* widget into the editing area.
 
-![You can publish mixed content types with the Asset Publisher widget.](./displaying-assets-using-the-asset-publisher-widget/images/02.png)
+1. Click *Actions* (![Actions icon.](../../../images/icon-actions.png)) at the top-right corner of the Asset Publisher widget.
+
+   ![Click Actions to access the Asset Publisher configuration options.](./displaying-assets-using-the-asset-publisher-widget/images/01.png)
+
+1. Select *Configuration* to display the Configuration dialog.
+
+   ![You can configure an Asset Publisher widget to use the Collection, Manual, or Dynamic methods of retrieving assets to display.](./displaying-assets-using-the-asset-publisher-widget/images/02.png)
+
+1. Under [Asset Selection](#asset-selection-options), select the assets you want to show in your widget.
+
+1. Under [Display Settings](./configuring-asset-publisher-display-settings.md), configure how to display your content.
+
+1. Under [Subscriptions](./configuring-asset-publisher-subscriptions.md), configure email subscriptions and RSS feed subscriptions.
+
+1. Once you select your assets and configure the widget, click *Save*.
+
+## Asset Selection Options
+
+Assets are selected for display in the Asset Publisher widget using one of these selection methods:
+
+- [Collection](#collection)
+- [Dynamic](#dynamic)
+- [Manual](#manual)
+
+### Collection
+
+Select this option to choose from your previously saved collections or collection providers. To learn more about collections, see [About Collections and Collection Pages](../../../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md).
+
+1. Under Select Collection, click *Select*.
+
+1. Select either the *Collections* or *Collections Providers* tab
+
+1. Choose one of your existing collections or collection providers.
+
+1. Click *Save*.
+
+![Click Select and choose from your saved collections.](./displaying-assets-using-the-asset-publisher-widget/images/03.png)
+
+!!! note
+    Developers can use collection providers to create specific collections with more advanced criteria. To learn more, read the information about [Creating an Information List Provider](https://help.liferay.com/hc/en-us/articles/360029067271-Creating-an-Information-List-Provider) in the [Info Framework](https://help.liferay.com/hc/en-us/articles/360029067251-Introduction-to-The-Info-Framework) developer documentation.
+
+### Dynamic
+
+Using the Dynamic asset selection, you can include assets in the Asset Publisher widget automatically, based on different criteria.
+
+![Define the options for the dynamic asset collection, including Source, Scope, Filter, and Ordering.](./displaying-assets-using-the-asset-publisher-widget/images/04.png)
+
+<!-- update this image -->
+
+1. In the Scope section, choose to display assets from an individual site or other sites.
+
+1. In the Source section, use the Asset Type drop-down menu to select your assets. Select a specific asset type or *Select More Than One* to choose from different types.
+
+   With some options (e.g. Web Content Article and Document) you may need to select a subtype (e.g. Web Content Article Structures and Document Type). You can also choose any subtype or select more than one subtype.
+
+1. In the Filter section, define the rules for the assets in your Asset Publisher widget. You can define rules based on [categories](../../../content-authoring-and-management/tags-and-categories/defining-categories-and-vocabularies-for-content.md), [tags](../../../content-authoring-and-management/tags-and-categories/tagging-content-and-managing-tags.md), or keywords.
+
+   You can choose filters for items such as Contain/Do Not Contain All or Any of the following Categories, Keywords, or Tags and, then specify the categories, keywords, or tags.
+
+1. Include a Custom User Attribute if you have defined one.
+
+   The assets only appear if they match the included custom user profile attributes.
+
+   The Custom User Attribute option within the Asset Publisher widget is deprecated as of `Liferay DXP 2024.Q2+/Portal 7.4 GA126+`. Instead, try [Displaying Content Dinamically Using Experiences](#displaying-content-dinamically-using-experiences).
+
+1. In the Ordering section, choose the presentation order of assets in the Asset Publisher widget.
+
+   Select a primary and a secondary field to order the assets by. You can also choose to order the assets in ascending or descending order.
+
+   !!! warning
+       When selecting web content articles as the asset type and ordering by a localized web content structure field, all assets' field values should be localized when other languages are applied to the site. Only translated assets are ordered when another language is applied.
+
+1. (Optional) Click *Create a collection from this configuration*, enter a title, and click *Save* to save the configuration as a new [collection](../../../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md).
+
+### Manual
+
+Here you can set parameters and manually filter specific assets:
+
+1. In the Scope section, choose to display assets from an individual site or other sites.
+
+1. In the Asset Entries section, use the Select button to filter for specific types of assets.
+
+1. For the type of asset you select, check the assets you want to include.
+
+   ![Here is an example of filtering for basic web content and manually selecting items](./displaying-assets-using-the-asset-publisher-widget/images/05.png)
+
+1. Click *Add*.
+
+1. (Optional) Click *Create a collection from this configuration*, enter a title, and click *Save* to save the configuration as a new [collection](../../../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md).
+
+## Displaying Content Dinamically Using Experiences
+
+<!-- add image or gif -->
+
+Create personalized experiences to groups of users by customizing the content displayed in the Asset Publisher widget for each group. See [Content Page Personalization](../../personalizing-site-experience/experience-personalization/content-page-personalization.md) to learn more about personalizing experiences.
+
+With the Asset Publisher widget and the collections in place, create an [experience](../../personalizing-site-experience/experience-personalization/creating-and-managing-experiences.md) to display content dinamically based on an audience.
+
+1. Open the Select Experience modal by clicking Default next to the language flag on the top left of your page. [Create a new experience](../../personalizing-site-experience/experience-personalization/creating-and-managing-experiences.md) or select an existing one.
+
+   If you have an experience in place, skip the next step.
+
+1. Name the experience, select the target *Audience*, and click *Save*.
+
+   If there's no audience in place, click *New Segment* to create one. Read [Creating Segments](../../personalizing-site-experience/segmentation/creating-and-managing-user-segments.md) to learn more.
+
+   After creating the experience, you'll find it listed in the Select Experience modal.
+
+1. To Arrange the experiences and prioritize the desired one, moving it upwards using the arrows to set it as active.
+
+1. Configure and edit your page, including the Asset Publisher widget and the content displayed in the widget. This version of the page will be displayed when the selected experience is active.
+
+Create multiple experiences to showcase different content variations using the Asset Publisher widget.
 
 ## Related Topics
 
-- [Selecting Assets in the Asset Publisher Widget](./selecting-assets-in-the-asset-publisher-widget.md)
 - [Configuring the Asset Publisher Display Settings](./configuring-asset-publisher-display-settings.md)
 - [Configuring Asset Publisher Subscriptions](./configuring-asset-publisher-subscriptions.md)

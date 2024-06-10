@@ -42,3 +42,8 @@ Set up URL redirects for your sites to avoid 404s and improve user experience. W
 
 Use the Redirection tool to track and manage Site requests leading to 404 errors. When enabled, Liferay DXP catalogs each 404 error, so you can assess and quickly resolve any issues. See [Tracking 404 URLs](./managing-site-urls/setting-up-redirects-and-404-tracking/tracking-404-urls.md) for more information and available configuration options.
 
+## XML Sitemaps
+
+{bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA126+`
+
+[Configure the XML sitemap](./managing-site-urls/configuring-xml-sitemaps.md) to notify search engines of the website's structure, indicating which URLs are available for crawling. With this configuration, you can include or exclude sites, page URLs (e.g., widget, content, panel, collection, and embedded pages), web content URLs, and category URLs from your sitemap.

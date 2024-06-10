@@ -16,7 +16,7 @@ taxonomy-category-names:
 Some features in Liferay are hidden behind *feature flags*. Using feature flags, you have control over new functionality introduced into your Liferay instance. New and experimental features can be adopted and validated more effectively with feature flags.
 
 !!! tip
-    Read [Maintenance Mode and Deprecations in 7.4](../../../system-administration/configuring-liferay/feature-flags.md) to learn more about other feature statuses: maintenance, deprecated, and removed.
+    Read [Maintenance Mode and Deprecations in 7.4](../../installation-and-upgrades/upgrading-liferay/reference/maintenance-mode-and-deprecations-in-7-4.md) to learn more about other feature statuses: maintenance, deprecated, and removed.
 
 To access and manage feature flags, open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and navigate to *Control Panel* &rarr; *Instance Settings*. Click *Feature Flags* under *Platform*. There are three types of feature flags available: 
 

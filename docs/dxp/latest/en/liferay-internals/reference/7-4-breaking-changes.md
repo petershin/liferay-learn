@@ -14,6 +14,1097 @@ Breaking changes changes break or significantly alter existing functionality or 
 
 Read about 7.4 breaking changes from before 2023 Q3 in the [Liferay source code](https://github.com/liferay/liferay-portal/blob/master/readme/BREAKING_CHANGES.markdown).
 
+## 2024 Q2 Release
+
+### Changes in Liferay DXP
+
+Here is a list of changes that break or significantly alter existing functionality within Liferay.
+
+| **Breaking Change**                                               | **Description**                                                                                                                                                                                                                                                              | **References**                                              |
+| :---------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------- |
+| **Commerce Countries Page Removed**                               | The Countries page is removed from the Commerce menu because it's no longer a Commerce-specific feature. Countries are now instead managed via the Countries Management page in the Control Panel.                                                                           | [LPD-15148](https://liferay.atlassian.net/browse/LPD-15148) |
+| **Translating Status for Web Content Articles**                   | Translating any field in a web content article now changes the status to *Translating*. The article is only considered translated once all fields are translated.                                                                                                            | [LPD-6589](https://liferay.atlassian.net/browse/LPD-6589)   |
+| **Confirming Permissions when Publishing Content**                | Users are prompted to confirm permissions for new content when initially published or saved, requiring an extra click. This is not required for updates or subsequent publishes.                                                                                             | [LPD-6769](https://liferay.atlassian.net/browse/LPD-6769)   |
+| **Date Shown in the Mine Content Filter**                         | The *Mine* content filter displays creation dates for content instead of modified dates.                                                                                                                                                                                     | [LPD-6830](https://liferay.atlassian.net/browse/LPD-6830)   |
+| **Date Shown in the Recent Content Filter**                       | The *Recent* content filter displays creation dates for content instead of modified dates.                                                                                                                                                                                   | [LPD-6828](https://liferay.atlassian.net/browse/LPD-6828)   |
+| **Virtual Hosts for Default Sites in Company XML Sitemaps**       | A new SEO menu is added to Instance Settings to select specific sites for the Company, and the default site cannot be removed from the list. If the default site has a Virtual Host defined, it is not added to the company's XML sitemap (though it is in the description). | [LPD-6672](https://liferay.atlassian.net/browse/LPD-6672)   |
+| **Removed Configuration Screens for Utility Pages**               | Configuration screens that are not relevant to utility pages are no longer shown when configuring them. The HTML Title, HTML Description, and SEO Configuration screens are still included.                                                                                  | [LPD-4459](https://liferay.atlassian.net/browse/LPD-4459)   |
+| **Clearing Facet Selections for New Searches**                    | Searching with a new keyword (in the header's search bar or a search bar widget) clears all selected facets. The old behavior of keeping selected facets can be enabled via the *Retain Facet Selections Across Searches* option in the Search Options widget.               | [LPD-19994](https://liferay.atlassian.net/browse/LPD-19994) |
+| **`com.liferay.portal.kernel.util.RemotePreference` API Removed** | The `com.liferay.portal.kernel.util.RemotePreference` APi is removed. Any custom code using the `User.getRemotePreference(String)` or `User.getRemotePreferences()` methods is impacted. Instead, get the necessary cookies from the request to get remote preferences.      | [LPD-20659](https://liferay.atlassian.net/browse/LPD-20659) |
+| **Localizations for Custom Objects**                              | Users can now set the localization for custom objects. Translatable object fields now use the preferred Locale given by the `DTOConverterContext`. Depending on your use case, adjust your code to add or remove the `Accept-Language` header.                               | [LPD-19561](https://liferay.atlassian.net/browse/LPD-19651) |
+
+### Changes in Module Source Code
+
+**CMISRepositoryHandler.java**
+`modules/apps/document-library/document-library-repository-cmis-api/src/main/java/com/liferay/document/library/repository/cmis/CMISRepositoryHandler.java`
+
+- **Date**: Feb. 9, 2024
+- **Ticket**: [LPD-6960](https://liferay.atlassian.net/browse/LPD-6960)
+- **What Changed**: The `addFileEntry(String, long, long, String, String, String, String, String, String, InputStream, long, Date, Date, ServiceContext)` has a new `Date` (`displayDate`) parameter.
+- **Reason**: The new parameter implements the new method in `DocumentRepository`.
+
+**FragmentEntryLocalServiceUtil.java**
+`modules/apps/fragment/fragment-api/src/main/java/com/liferay/fragment/service/FragmentEntryLocalServiceUtil.java`
+
+- **Date**: Feb. 9, 2024
+- **Ticket**: [LPD-16310](https://liferay.atlassian.net/browse/LPD-16310)
+- **What Changed**: The `updateFragmentEntry(long, long, long, String, String, String, String, boolean, String, String, long, int)` method was removed. Instead, use `updateFragmentEntry(long, long, long, String, String, String, String, boolean, String, String, long, boolean, String, int)`.
+- **Reason**: Updating a fragment entry now requires additional parameters.
+
+**FragmentEntryServiceUtil.java**
+`modules/apps/fragment/fragment-api/src/main/java/com/liferay/fragment/service/FragmentEntryServiceUtil.java`
+
+- **Date**: Feb. 9, 2024
+- **Ticket**: [LPD-16310](https://liferay.atlassian.net/browse/LPD-16310)
+- **What Changed**: The `updateFragmentEntry(long, long, String, String, String, String, boolean, String, String, long, int)` method was deleted. Instead, use `updateFragmentEntry(long, long, String, String, String, String, boolean, String, String, long, boolean, String, int)`.
+- **Reason**: Updated a fragment entry now requires additional parameters.
+
+**GroupSearchProvider.java**
+`modules/apps/site/site-api/src/main/java/com/liferay/site/provider/GroupSearchProvider.java`
+
+- **Date**: Feb. 12, 2024
+- **Ticket**: [LPD-17465](https://liferay.atlassian.net/browse/LPD-17465)
+- **What Changed**: The `setResultsAndTotal(List<String>, GroupSearch, PortletRequest)` method has a new `long[]` (`excludedGroupIds`) parameter.
+- **Reason**: This change is necessary to exclude some sites from the site item selector (for example, when the parent site is being changed).
+
+**FriendlyURLSeparatorCompanyConfiguration.java**
+`modules/apps/friendly-url/friendly-url-api/src/main/java/com/liferay/friendly/url/configuration/FriendlyURLSeparatorCompanyConfiguration.java`
+
+- **Date**: Feb. 14, 2024
+- **Ticket**: [LPD-15434](https://liferay.atlassian.net/browse/LPD-15434)
+- **What Changed**: The `friendlyURLSeparators` method is removed. Instead, a new `friendlyURLSeparatorsJSONObjectString` method is added.
+- **Reason**: This change is made to be consistent with the naming pattern in other locations.
+
+**SitemapConfigurationManager.java**
+`modules/apps/site/site-api/src/main/java/com/liferay/site/configuration/manager/SitemapConfigurationManager.java`
+
+- **Date**: Feb. 15, 2024
+- **Ticket**: [LPD-15718](https://liferay.atlassian.net/browse/LPD-15718)
+- **What Changed**: The `saveSitemapCompanyConfiguration` method has a new `long[]` (`companySitemapGroupIds`) parameter. Additionally, the new `getCompanySitemapGroupIds(long)` method is added.
+- **Reason**: This change is necessary to save the group IDs for the company sitemap configuration.
+
+**BatchEngineImportTaskServiceImpl.java**
+`modules/apps/batch-engine/batch-engine-service/src/main/java/com/liferay/batch/engine/service/impl/BatchEngineImportTaskServiceImpl.java`
+
+- **Date**: Feb. 19, 2024
+- **Ticket**: [LPD-15802](https://liferay.atlassian.net/browse/LPD-15802)
+- **What Changed**: The new `addBatchEngineImportTask(String, long, long, long, String, String, byte[], String, String, Map<String, String>, int, String, Map<String, Serializable>, String)`, `addBatchEngineImportTask(String, long, long, long, String, String, byte[], String, String, Map<String, String>, int, String, Map<String, Serializable>, String, BatchEngineTaskItemDelegate<?>)`, `getBatchEngineImportTaskByExternalReferenceCode(String, long)`, and `getBatchEngineImportTasksCount(long)` methods are added.
+- **Reasons**: This change is necessary to ensure only administrators and owners can read exported information.
+
+**BatchEngineImportTaskServiceImpl.java**
+`modules/apps/batch-engine/batch-engine-service/src/main/java/com/liferay/batch/engine/service/impl/BatchEngineImportTaskServiceImpl.java`
+
+- **Date**: Feb. 19, 2024
+- **Ticket**: [LPD-15576](https://liferay.atlassian.net/browse/LPD-15576)
+- **What Changed**: The new `getBatchEngineImportTask(long)` method is added.
+- **Reason**: This change is necessary to retrieve a specific `BatchEngineImportTask` with controlled permissions.
+
+**rest-openapi.yaml**
+`/modules/apps/digital-signature/digital-signature-rest-impl/rest-openapi.yaml`
+
+- **Date**: Feb. 19, 2024
+- **Ticket**: [LPD-15600](https://liferay.atlassian.net/browse/LPD-15600)
+- **What Changed**: The `getSiteDSEnvelopesPage` API has new `String` parameters (for `fromDate`, `keywords`, `order`, and `status`).
+- **Reason**: The additional parameters are necessary to filter `DSEnvelope` objects.
+
+**BatchEngineExportTaskServiceImpl.java**
+`modules/apps/batch-engine/batch-engine-service/src/main/java/com/liferay/batch/engine/service/impl/BatchEngineExportTaskServiceImpl.java`
+
+- **Date**: Feb. 19, 2024
+- **Ticket**: [LPD-15802](https://liferay.atlassian.net/browse/LPD-15802)
+- **What Changed**: The new `addBatchEngineExportTask(String, long, long, String, String, String, String, List<String>, Map<String, Serializable>, String)`, `getBatchEngineExportTaskByExternalReferenceCode(String, long)`, and `getBatchEngineExportTasksCount(long)` methods are added.
+- **Reason**: The new methods are necessary to ensure only administrators and owners can read exported information.
+
+**BatchEngineExportTaskServiceImpl.java**
+`modules/apps/batch-engine/batch-engine-service/src/main/java/com/liferay/batch/engine/service/impl/BatchEngineExportTaskServiceImpl.java`
+
+- **Date**: Feb. 19, 2024
+- **Ticket**: [LPD-15576](https://liferay.atlassian.net/browse/LPD-15576)
+- **What Changed**: The new `getBatchEngineExportTask(long)` method is added.
+- **Reason**: The new method is necessary to retrieve a specific `BatchEngineExportTask` with controlled permissions.
+
+**BatchEngineImportTaskServiceImpl.java**
+`modules/apps/batch-engine/batch-engine-service/src/main/java/com/liferay/batch/engine/service/impl/BatchEngineImportTaskServiceImpl.java`
+
+- **Date**: Feb. 21, 2024
+- **Ticket**: [LPD-15576](https://liferay.atlassian.net/browse/LPD-15576)
+- **What Changed**: The `getBatchEngineImportTaskErrors` method is removed.
+- **Reason**: The `getBatchEngineImportTaskErrors` logic belongs in `BatchEngineImportErrorTaskLocalService` instead.
+
+**APIApplication.java**
+`modules/apps/headless/headless-builder/headless-builder-api/src/main/java/com/liferay/headless/builder/application/APIApplication.java`
+
+- **Date**: Feb. 21, 2024
+- **Ticket**: [LPD-11973](https://liferay.atlassian.net/browse/LPD-11973)
+- **What Changed**: The new `getPropertyType` method is added.
+- **Reason**: This change adds support for API property types.
+
+**CTCollectionResource.java**
+`modules/apps/change-tracking/change-tracking-rest-api/src/main/java/com/liferay/change/tracking/rest/resource/v1_0/CTCollectionResource.java`
+
+- **Date**: Feb. 21, 2024
+- **Ticket**: [LPD-18192](https://liferay.atlassian.net/browse/LPD-18192)
+- **What Changed**: The parameters in `getCTCollectionsPage` and `postCTCollectionsPageExportBatch` are reordered.
+- **Reason**: This change sorts the parameters in a consistent order.
+
+**CTEntryResource.java**
+`modules/apps/change-tracking/change-tracking-rest-api/src/main/java/com/liferay/change/tracking/rest/resource/v1_0/CTEntryResource.java`
+
+- **Date**: Feb. 21, 2024
+- **Ticket**: [LPD-18192](https://liferay.atlassian.net/browse/LPD-18192)
+- **What Changed**: The parameters in `getCtCollectionCTEntriesPage` are reordered.
+- **Reason**: This change sorts the parameters in a consistent order.
+
+**CTProcessReource.java**
+`modules/apps/change-tracking/change-tracking-rest-api/src/main/java/com/liferay/change/tracking/rest/resource/v1_0/CTProcessResource.java`
+
+- **Date**: Feb. 21, 2024
+- **Ticket**: [LPD-18192](https://liferay.atlassian.net/browse/LPD-18192)
+- **What Changed**: The parameters in `getCTProcessesPage` and `postCTProcessesPageExportBatch` are reordered.
+- **Reason**: This change sorts the parameters in a consistent order.
+
+**CTCollectionResource.java**
+`modules/apps/change-tracking/change-tracking-rest-client/src/main/java/com/liferay/change/tracking/rest/client/resource/v1_0/CTCollectionResource.java`
+
+- **Date**: Feb. 21, 2024
+- **Ticket**: [LPD-18192](https://liferay.atlassian.net/browse/LPD-18192)
+- **What Changed**: The parameters in `getCTCollectionsPage`, `getCTCollectionsPageHttpResponse`, `postCTCollectionsPageExportBatch`, and `postCTCollectionsPageExportBatchHttpResponse` in multiple classes contained in `CTCollectionResource` are reordered.
+- **Reason**: This change sorts the parameters in a consistent order.
+
+**CTEntryResource.java**
+`modules/apps/change-tracking/change-tracking-rest-client/src/main/java/com/liferay/change/tracking/rest/client/resource/v1_0/CTEntryResource.java`
+
+- **Date**: Feb. 21, 2024
+- **Ticket**: [LPD-18192](https://liferay.atlassian.net/browse/LPD-18192)
+- **What Changed**: The parameters in `getCtCollectionCTEntriesPage` and `getCtCollectionCTEntriesPageHttpResponse` in multiple classes contained in `CTEntryResource` are reordered.
+- **Reason**: This change sorts the parameters in a consistent order.
+
+**CTProcessResource.java**
+`modules/apps/change-tracking/change-tracking-rest-client/src/main/java/com/liferay/change/tracking/rest/client/resource/v1_0/CTProcessResource.java`
+
+- **Date**: Feb. 21, 2024
+- **Ticket**: [LPD-18192](https://liferay.atlassian.net/browse/LPD-18192)
+- **What Changed**: The parameters in `getCTProcessesPage`, `getCTProcessesPageHttpResponse`, `postCTProcessesPageExportBatch`, and `postCTProcessesPageExportBatchHttpResponse` in multiple classes contained in `CTProcessResource` are reordered.
+- **Reason**: This change sorts the parameters in a consistent order.
+
+**rest-openapi.yaml**
+`modules/apps/change-tracking/change-tracking-rest-impl/rest-openapi.yaml`
+
+- **Date**: Feb. 21, 2024
+- **Ticket**: [LPD-18192](https://liferay.atlassian.net/browse/LPD-18192)
+- **What Changed**: The parameters are reordered for the `getCTCollectionsPage`, `getCtCollectionCTEntriesPage`, and `getCTProcessesPage` APIs.
+- **Reason**: This change sorts the parameters in a consistent order.
+
+**CTCollectionResourceImpl.java**
+`modules/apps/change-tracking/change-tracking-rest-impl/src/main/java/com/liferay/change/tracking/rest/internal/resource/v1_0/CTCollectionResourceImpl.java`
+
+- **Date**: Feb. 21, 2024
+- **Ticket**: [LPD-18192](https://liferay.atlassian.net/browse/LPD-18192)
+- **What Changed**: The parameters in `getCTCollectionsPage` and `postCTCollectionsPageExportBatch` are reordered.
+- **Reason**: This change sorts the parameters in a consistent order.
+
+**CTEntryResourceImpl.java**
+`modules/apps/change-tracking/change-tracking-rest-impl/src/main/java/com/liferay/change/tracking/rest/internal/resource/v1_0/CTEntryResourceImpl.java`
+
+- **Date**: Feb. 21, 2024
+- **Ticket**: [LPD-18192](https://liferay.atlassian.net/browse/LPD-18192)
+- **What Changed**: The parameters in `getCtCollectionCTEntriesPage` are reordered.
+- **Reason**: This change sorts the parameters in a consistent order.
+
+**CTProcessResourceImpl.java**
+`modules/apps/change-tracking/change-tracking-rest-impl/src/main/java/com/liferay/change/tracking/rest/internal/resource/v1_0/CTProcessResourceImpl.java`
+
+- **Date**: Feb. 21, 2024
+- **Ticket**: [LPD-18192](https://liferay.atlassian.net/browse/LPD-18192)
+- **What Changed**: The parameters in `getCTProcessesPage` are reordered.
+- **Reason**: This change sorts the parameters in a consistent order.
+
+**rest-openapi.yaml**
+`modules/apps/commerce/headless/headless-commerce/headless-commerce-admin-catalog-impl/rest-openapi.yaml`
+
+- **Date**: Feb. 21, 2024
+- **Ticket**: [LPD-18192](https://liferay.atlassian.net/browse/LPD-18192)
+- **What Changed**: The parameters are reordered for the `getProductByExternalReferenceCodeRelatedProductsPage` and `getProductIdRelatedProductsPage` APIs.
+- **Reason**: This change sorts the parameters in a consistent order.
+
+**rest-openapi.yaml**
+`modules/apps/commerce/headless/headless-commerce/headless-commerce-admin-inventory-impl/rest-openapi.yaml`
+
+- **Date**: Feb. 21, 2024
+- **Ticket**: [LPD-18192](https://liferay.atlassian.net/browse/LPD-18192)
+- **What Changed**: The parameters are reordered for the `getWarehouseItemsUpdatedPage` API.
+- **Reason**: This change sorts the parameters in a consistent order.
+
+**rest-openapi.yaml**
+`modules/apps/commerce/headless/headless-commerce/headless-commerce-delivery-cart-impl/rest-openapi.yaml`
+
+- **Date**: Feb. 21, 2024
+- **Ticket**: [LPD-18192](https://liferay.atlassian.net/browse/LPD-18192)
+- **What Changed**: The parameters are reordered for the `getCartItemsPage` API.
+- **Reason**: This change sorts the parameters in a consistent order.
+
+**rest-openapi.yaml**
+`modules/apps/commerce/headless/headless-commerce/headless-commerce-delivery-catalog-impl/rest-openapi.yaml`
+
+- **Date**: Feb. 21, 2024
+- **Ticket**: [LPD-18192](https://liferay.atlassian.net/browse/LPD-18192)
+- **What Changed**: The parameters are reordered for the `getChannelProductProductOptionProductOptionValuesPage`, `postChannelProductProductOptionProductOptionValuesPage`, and `getChannelProductRelatedProductsPage` APIs.
+- **Reason**: This change sorts the parameters in a consistent order.
+
+**rest-openapi.yaml**
+`modules/apps/headless/headless-admin-content/headless-admin-content-impl/rest-openapi.yaml`
+
+- **Date**: Feb. 21, 2024
+- **Ticket**: [LPD-18192](https://liferay.atlassian.net/browse/LPD-18192)
+- **What Changed**: The parameters are reordered for the `getSiteDisplayPageTemplatesPage` and `getSiteStructuredContentsPage` APIs.
+- **Reason**: This change sorts the parameters in a consistent order.
+
+**KeywordResource.java**
+`modules/apps/headless/headless-admin-taxonomy/headless-admin-taxonomy-api/src/main/java/com/liferay/headless/admin/taxonomy/resource/v1_0/KeywordResource.java`
+
+- **Date**: Feb. 21, 2024
+- **Ticket**: [LPD-18192](https://liferay.atlassian.net/browse/LPD-18192)
+- **What Changed**: The parameters in `getKeywordsRankedPage` are reordered.
+- **Reason**: This change sorts the parameters in a consistent order.
+
+**KeywordResource.java**
+`modules/apps/headless/headless-admin-taxonomy/headless-admin-taxonomy-client/src/main/java/com/liferay/headless/admin/taxonomy/client/resource/v1_0/KeywordResource.java`
+
+- **Date**: Feb. 21, 2024
+- **Ticket**: [LPD-18192](https://liferay.atlassian.net/browse/LPD-18192)
+- **What Changed**: The parameters in `getKeywordsRankedPage` and `getKeywordsRankedPageHttpResponse` in multiple classes contained in `KeywordResource` are reordered.
+- **Reason**: This change sorts the parameters in a consistent order.
+
+**rest-openapi.yaml**
+`modules/apps/headless/headless-admin-taxonomy/headless-admin-taxonomy-impl/rest-openapi.yaml`
+
+- **Date**: Feb. 21, 2024
+- **Ticket**: [LPD-18192](https://liferay.atlassian.net/browse/LPD-18192)
+- **What Changed**: The parameters are reordered for the `getAssetLibraryKeywordsPage`, `getAssetLibraryTaxonomyVocabulariesPage`, `getKeywordsRankedPage`, `getSiteKeywordsPage`, `getSiteTaxonomyVocabulariesPage`, `getTaxonomyCategoriesRankedPage`, `getTaxonomyCategoryTaxonomyCategoriesPage`, and `getTaxonomyVocabularyTaxonomyCategoriesPage` APIs.
+- **Reason**: This change sorts the parameters in a consistent order.
+
+**KeywordResourceImpl.java**
+`modules/apps/headless/headless-admin-taxonomy/headless-admin-taxonomy-impl/src/main/java/com/liferay/headless/admin/taxonomy/internal/resource/v1_0/KeywordResourceImpl.java`
+
+- **Date**: Feb. 21, 2024
+- **Ticket**: [LPD-18192](https://liferay.atlassian.net/browse/LPD-18192)
+- **What Changed**: The parameters in `getKeywordsRankedPage` are reordered.
+- **Reason**: This change sorts the parameters in a consistent order.
+
+**RoleResource.java**
+`modules/apps/headless/headless-admin-user/headless-admin-user-api/src/main/java/com/liferay/headless/admin/user/resource/v1_0/RoleResource.java`
+
+- **Date**: Feb. 21, 2024
+- **Ticket**: [LPD-18192](https://liferay.atlassian.net/browse/LPD-18192)
+- **What Changed**: The parameters in `getRolesPage` and `postRolesPageExportBatch` are reordered.
+- **Reason**: This change sorts the parameters in a consistent order.
+
+**RoleResource.java**
+`modules/apps/headless/headless-admin-user/headless-admin-user-client/src/main/java/com/liferay/headless/admin/user/client/resource/v1_0/RoleResource.java`
+
+- **Date**: Feb. 21, 2024
+- **Ticket**: [LPD-18192](https://liferay.atlassian.net/browse/LPD-18192)
+- **What Changed**: The parameters in `getRolesPage`, `getRolesPageHttpResponse`, `postRolesPageExportBatch`, and `postRolesPageExportBatchHttpResponse` in multiple classes contained in `RoleResource` are reordered.
+- **Reason**: This change sorts the parameters in a consistent order.
+
+**rest-openapi.yaml**
+`modules/apps/headless/headless-admin-user/headless-admin-user-impl/rest-openapi.yaml`
+
+- **Date**: Feb. 21, 2024
+- **Ticket**: [LPD-18192](https://liferay.atlassian.net/browse/LPD-18192)
+- **What Changed**: The parameters are reordered for the `getAccountAccountRolesByExternalReferenceCodePage`, `getAccountAccountRolesPage`, `getOrganizationsPage`, `getOrganizationChildOrganizationsPage`, `getOrganizationOrganizationsPage`, and `getRolesPage` APIs.
+- **Reason**: This change sorts the parameters in a consistent order.
+
+**RoleResourceImpl.java**
+`modules/apps/headless/headless-admin-user/headless-admin-user-impl/src/main/java/com/liferay/headless/admin/user/internal/resource/v1_0/RoleResourceImpl.java`
+
+- **Date**: Feb. 21, 2024
+- **Ticket**: [LPD-18192](https://liferay.atlassian.net/browse/LPD-18192)
+- **What Changed**: The parameters in `getRolesPage` are reordered.
+- **Reason**: This change sorts the parameters in a consistent order.
+
+**rest-openapi.yaml**
+`modules/apps/headless/headless-admin-workflow/headless-admin-workflow-impl/rest-openapi.yaml`
+
+- **Date**: Feb. 21, 2024
+- **Ticket**: [LPD-18192](https://liferay.atlassian.net/browse/LPD-18192)
+- **What Changed**: The parameters are reordered for the `getWorkflowInstanceWorkflowLogsPage`, `getWorkflowTasksAssignedToRolePage`, and `getWorkflowTaskWorkflowLogsPage` APIs.
+- **Reason**: This change sorts the parameters in a consistent order.
+
+**rest-openapi.yaml**
+`modules/apps/headless/headless-delivery/headless-delivery-impl/rest-openapi.yaml`
+
+- **Date**: Feb. 21, 2024
+- **Ticket**: [LPD-18192](https://liferay.atlassian.net/browse/LPD-18192)
+- **What Changed**: The parameters are reordered for the `getAssetLibraryContentElementsPage`, `getAssetLibraryContentSetByKeyContentSetElementsPage`, `getAssetLibraryContentSetByUuidContentSetElementsPage`, `getAssetLibraryContentStructuresPage`, `getAssetLibraryContentTemplatesPage`, `getAssetLibraryDocumentFoldersPage`, `getAssetLibraryDocumentsPage`, `getAssetLibraryStructuredContentFoldersPage`, `getAssetLibraryStructuredContentsPage`, `getBlogPostingCommentsPage`, `getCommentCommentsPage`, `getContentSetContentSetElementsPage`, `getContentStructureStructuredContentsPage`, `getDocumentFolderDocumentsPage`, `getDocumentFolderDocumentFoldersPage`, `getDocumentCommentsPage`, `getKnowledgeBaseArticleKnowledgeBaseArticlesPage`, `getKnowledgeBaseFolderKnowledgeBaseArticlesPage`, `getKnowledgeBaseFolderKnowledgeBaseFoldersPage`, `getMessageBoardMessageMessageBoardMessagesPage`, `getMessageBoardSectionMessageBoardThreadsPage`, `getMessageBoardSectionMessageBoardSectionsPage`, `getMessageBoardThreadsRankedPage`, `getMessageBoardThreadMessageBoardMessagesPage`, `getSiteBlogPostingImagesPage`, `getSiteBlogPostingsPage`, `getSiteContentElementsPage`, `getSiteContentSetByKeyContentSetElementsPage`, `getSiteContentSetByUuidContentSetElementsPage`, `getSiteContentStructuresPage`, `getSiteContentTemplatesPage`, `getSiteDocumentFoldersPage`, `getSiteDocumentsPage`, `getSiteKnowledgeBaseArticlesPage`, `getSiteKnowledgeBaseFoldersPage`, `getSiteMessageBoardMessagesPage`, `getSiteMessageBoardSectionsPage`, `getSiteMessageBoardThreadsPage`, `getSiteNavigationMenusPage`, `getSiteSitePagesPage`, `getSiteStructuredContentFoldersPage`, `getSiteStructuredContentsPage`, `getSiteWikiNodesPage`, `getStructuredContentFolderStructuredContentFoldersPage`, `getStructuredContentFolderStructuredContentsPage`, `getStructuredContentCommentsPage`, and `getWikiNodeWikiPagesPage` APIs.
+- **Reason**: This change sorts the parameters in a consistent order.
+
+**rest-openapi.yaml**
+`modules/apps/headless/headless-user-notification/headless-user-notification-impl/rest-openapi.yaml`
+
+- **Date**: Feb. 21, 2024
+- **Ticket**: [LPD-18192](https://liferay.atlassian.net/browse/LPD-18192)
+- **What Changed**: The parameters are reordered for the `getMyUserNotificationsPage` and `getUserAccountUserNotificationsPage` APIs.
+- **Reason**: This change sorts the parameters in a consistent order.
+
+**rest-openapi.yaml**
+`modules/apps/object/object-rest-impl/rest-openapi.yaml`
+
+- **Date**: Feb. 21, 2024
+- **Ticket**: [LPD-18192](https://liferay.atlassian.net/browse/LPD-18192)
+- **What Changed**: The parameters are reordered for the `getObjectEntriesPage` and `getScopeScopeKeyPage` APIs.
+- **Reason**: This change sorts the parameters in a consistent order.
+
+**rest-openapi.yaml**
+`modules/apps/portal-search/portal-search-rest-impl/rest-openapi.yaml`
+
+- **Date**: Feb. 21, 2024
+- **Ticket**: [LPD-18192](https://liferay.atlassian.net/browse/LPD-18192)
+- **What Changed**: The parameters are reordered for the `postSearchPage` API.
+- **Reason**: This change sorts the parameters in a consistent order.
+
+**rest-openapi.yaml**
+`modules/dxp/apps/commerce/headless/headless-commerce-machine-learning-impl/rest-openapi.yaml`
+
+- **Date**: Feb. 21, 2024
+- **Ticket**: [LPD-18192](https://liferay.atlassian.net/browse/LPD-18192)
+- **What Changed**: The parameters are reordered for the `getSkuForecastsByMonthlyRevenuePage` API.
+- **Reason**: This change sorts the parameters in a consistent order.
+
+**rest-openapi.yaml**
+`modules/dxp/apps/portal-workflow/portal-workflow-metrics-rest-impl/rest-openapi.yaml`
+
+- **Date**: Feb. 21, 2024
+- **Ticket**: [LPD-18192](https://liferay.atlassian.net/browse/LPD-18192)
+- **What Changed**: The parameters are reordered for the `getProcessMetricsPage`, `getProcessInstancesPage`, `getProcessNodeMetricsPage`, and `getProcessSLAsPage` APIs.
+- **Reason**: This change sorts the parameters in a consistent order.
+
+**rest-openapi.yaml**
+`modules/dxp/apps/search-experiences/search-experiences-rest-impl/rest-openapi.yaml`
+
+- **Date**: Feb. 21, 2024
+- **Ticket**: [LPD-18192](https://liferay.atlassian.net/browse/LPD-18192)
+- **What Changed**: The parameters are reordered for the `postSearch` API.
+- **Reason**: This change sorts the parameters in a consistent order.
+
+**com-fedex-ws**
+`/modules/third-party/com-fedex-ws`
+
+- **Date**: Feb. 22, 2024
+- **Ticket**: [LPD-3475](https://liferay.atlassian.net/browse/LPD-3475)
+- **What Changed**: The `com-fedex-ws` module is removed.
+- **Reason**: The module is removed for security concerns.
+
+**commerce-shipping-engine-fedex**
+`/modules/apps/commerce/commerce-shipping-engine-fedex`
+
+- **Date**: Feb. 22, 2024
+- **Ticket**: [LPD-3475](https://liferay.atlassian.net/browse/LPD-3475)
+- **What Changed**: The `commerce-shipping-engine-fedex` module is removed.
+- **Reason**: The module is removed for security concerns.
+
+**PanelCategoryRegistry.java**
+`modules/apps/application-list/application-list-api/src/main/java/com/liferay/application/list/PanelCategoryRegistry.java`
+
+- **Date**: Feb. 26, 2024
+- **Ticket**: [LPS-196226](https://liferay.atlassian.net/browse/LPS-196226)
+- **What Changed**: The `PanelCategoryRegistry` class is renamed to `PanelCategoryRegistryUtil` and moved to the `com.liferay.application.list.util` package.
+- **Reason**: The `PanelCategoryRegistry` component has its own name as a service.
+
+**CPDefinitionSpecificationOptionValueLocalService.java**
+`modules/apps/commerce/commerce-product-api/src/main/java/com/liferay/commerce/product/service/CPDefinitionSpecificationOptionValueLocalService.java`
+
+- **Date**: Feb. 26, 2024
+- **Ticket**: [LPD-13466](https://liferay.atlassian.net/browse/LPD-13466)
+- **What Changed**: The `addCPDefinitionSpecificationOptionValue` and `updateCPDefinitionSpecificationOptionValue` methods have reordered parameters. Additionally, the `updateCPDefinitionSpecificationOptionValue` method has a new `String` (`key`) parameter.
+- **Reason**: The new parameter is required to create fragments showing product specifications based on a key. The method parameters are reordered to properly sort them.
+
+**BaseDBPartitionTestCase.java**
+`modules/apps/portal/portal-db-partition-test-util/src/main/java/com/liferay/portal/db/partition/test/util/BaseDBPartitionTestCase.java`
+
+- **Date**: Feb. 26, 2024
+- **Ticket**: [LPD-17898](https://liferay.atlassian.net/browse/LPD-17898)
+- **What Changed**: The `enableDBPartition` and `disableDBPartition` methods are removed.
+- **Reason**: Database partition tests are only executed when the database partition is enabled, so these methods are unnecessary.
+
+**AccountEntryEmailConfiguration.java**
+`modules/apps/account/account-api/src/main/java/com/liferay/account/configuration/AccountEntryEmailConfiguration.java`
+
+- **Date**: Feb. 28, 2024
+- **Ticket**: [LPD-4319](https://liferay.atlassian.net/browse/LPD-4319)
+- **What Changed**: The new `invitationEmailSenderEmailAddress` and `invitationEmailSenderName` settings are added.
+- **Reason**: This change is necessary to define specific names or email addresses for users sending invitation emails.
+
+**VirtualCPTypeTestUtil.java**
+`modules/apps/commerce/commerce-product-type-virtual-test-util/src/main/java/com/liferay/commerce/product/type/virtual/test/util/VirtualCPTypeTestUtil.java`
+
+- **Date**: Feb. 29, 2024
+- **Ticket**: [LPD-15104](https://liferay.atlassian.net/browse/LPD-15104)
+- **What Changed**: The `addJournalArticle(long)` method is removed.
+- **Reason**: The method was not used.
+
+**AssetListAssetEntryProvider.java**
+`modules/apps/asset/asset-list-api/src/main/java/com/liferay/asset/list/asset/entry/provider/AssetListAssetEntryProvider.java`
+
+- **Date**: Mar. 1, 2024
+- **Ticket**: [LPD-19219](https://liferay.atlassian.net/browse/LPD-19219)
+- **What Changed**: The `getAssetEntriesCount` method is removed. Additionally, the `getAssetEntries` method now returns an `InfoPage<AssetEntry>` instead of a `List<AssetEntry>`.
+- **Reason**: This change improves the performce of getting asset entry counts and search results.
+
+**SimilarResultsContributor.java**
+`modules/dxp/apps/portal-search-similar-results/portal-search-similar-results-web-spi/src/main/java/com/liferay/portal/search/similar/results/web/spi/contributor/SimilarResultsContributor.java`
+
+- **Date**: Mar. 4, 2024
+- **Ticket**: [LPD-19398](https://liferay.atlassian.net/browse/LPD-19398)
+- **What Changed**: The `SimilarResultsContributor` class is moved to the `portal-search-similar-results-web` module (now `modules/dxp/apps/portal-search-similar-results/portal-search-similar-results-web/src/main/java/com/liferay/portal/search/similar/results/web/internal/contributor/SimilarResultsContributor.java`).
+- **Reason**: The `SimilarResultsContributor` class is only ever implemented or used in the `portal-search-similar-results-web`, and it is not an SPI.
+
+**CommercePaymentEntryRefundType.java**
+`modules/apps/commerce/commerce-payment-api/src/main/java/com/liferay/commerce/payment/entry/CommercePaymentEntryRefundType.java`
+
+- **Date**: Mar. 5, 2024
+- **Ticket**: [LPD-15909](https://liferay.atlassian.net/browse/LPD-15909)
+- **What Changed**: The new `getEnabled` method is added.
+- **Reason**: This change is necessary to manage whether a `CommercePaymentEntryRefundType` is enabled.
+
+**LearnMessageUtil.java**
+`modules/apps/learn/learn-api/src/main/java/com/liferay/learn/LearnMessageUtil.java`
+
+- **Date**: Mar. 6, 2024
+- **Ticket**: [LPD-19760](https://liferay.atlassian.net/browse/LPD-19760)
+- **What Changed**: The `dev` and `off` resources modes are added. If the resource mode is set to `dev`, Learn resources are read from `http://localhost:3062`. If the mode is `on`, they are read from https://s3.amazonaws.com/learn-resources.liferay.com. If the mode is `off`, the Learn tag library is disabled. 
+- **Reason**: This change makes it easier to add new messages to Liferay Learn.
+
+**CPSpecificationOptionLocalService.java**
+`modules/apps/commerce/commerce-product-api/src/main/java/com/liferay/commerce/product/service/CPSpecificationOptionLocalService.java`
+
+- **Date**: Mar. 8, 2024
+- **Ticket**: [LPD-13560](https://liferay.atlassian.net/browse/LPD-13560)
+- **What Changed**: The `addCPSpecificationOption` and `updateCPSpecificationOption` methods have a new `double` (`priority`) parameter.
+- **Reason**: This change is required to sort specifications in the storefront.
+
+**CPSpecificationOptionService.java**
+`modules/apps/commerce/commerce-product-api/src/main/java/com/liferay/commerce/product/service/CPSpecificationOptionService.java`
+
+- **Date**: Mar. 8, 2024
+- **Ticket**: [LPD-13560](https://liferay.atlassian.net/browse/LPD-13560)
+- **What Changed**: The `addCPSpecificationOption` and `updateCPSpecificationOption` methods have a new `double` (`priority`) parameter.
+- **Reason**: This change is required to sort specifications in the storefront.
+
+**FrontendTokenDefinitionRegistry.java**
+`modules/apps/frontend-token/frontend-token-definition-api/src/main/java/com/liferay/frontend/token/definition/FrontendTokenDefinitionRegistry.java`
+
+- **Date**: Mar. 12, 2024
+- **Ticket**: [LPD-7080](https://liferay.atlassian.net/browse/LPD-7080)
+- **What Changed**: The `getFrontendTokenDefinition` method's `String` (`themeId`) parameter is replaced with a new `LayoutSet` parameter.
+- **Reason**: This change is required to retrieve a `FrontendTokenDefinition` added by a theme CSS client extension.
+
+**ObjectStateLocalServiceImpl.java**
+`modules/apps/object/object-service/src/main/java/com/liferay/object/service/impl/ObjectStateLocalServiceImpl.java`
+
+- **Date**: Mar. 14, 2024
+- **Ticket**: [LPD-20078](https://liferay.atlassian.net/browse/LPD-20078)
+- **What Changed**: The new `fetchObjectStateFlowObjectState` method is added.
+- **Reason**: This change is necessary to check whether an object state exists without having to wrap the code in a try-catch block.
+
+**WorkspaceExtension.java**
+`modules/sdk/gradle-plugins-workspace/src/main/java/com/liferay/gradle/plugins/workspace/WorkspaceExtension.java`
+
+- **Date**: Mar. 14, 2024
+- **Ticket**: [LPD-16636](https://liferay.atlassian.net/browse/LPD-16636)
+- **What Changed**: The `getBundleChecksumMD5` and `setBundleChecksumMD5(java.lang.Object)` methods are removed. Instead, use the `getBundleChecksumSHA512` and `setBundleChecksumSHA512(java.lang.Object)` methods. The `getDefaultBundleChecksumMD5`, `getDefaultBundleUrl`, `getProduceInfo`, `getBundleTokenEmailAddress`, `getBundleTokenPassword`, `getBundleTokenPasswordFile`, `isBundleTokenDownload`, `isBundleTokenForce`, `isBundleTokenDownload(java.lang.Object)`, `setBundleTokenEmailAddress(java.lang.Object)`, `setBundleTokenForce(java.lang.Object)`, `setBundleTokenPassword(java.lang.Object)`, and `setBundleTokenPasswordFile(java.lang.Object)` methods and the inner `ProductInfo` class are also removed.
+- **Reason**: Bundles are now instead verified with a checksum using the SHA-512 algorithm. The details of retrieving release info from the product key is now completely internal, so this implementation is no longer useful. Properties that relate to release data using the product key have been removed (though individual details can still be overridden manually in the DSL). Authentication is no longer needed to download bundles.
+
+**BasePortalToolsTask.java**
+`modules/sdk/gradle-plugins/src/main/java/com/liferay/gradle/plugins/task/BasePortalToolsTask.java`
+
+- **Date**: Mar. 15, 2024
+- **Ticket**: [LPD-15162](https://liferay.atlassian.net/browse/LPD-15162)
+- **What Changed**: The `getMain` method is removed.
+- **Reason**: The underlying `JavaExec` class removed the method with Gradle 8.
+
+**LayoutPageTemplateCollectionTreeNodeItemSelectorCriterion.java**
+`modules/apps/layout/layout-page-template-item-selector-api/src/main/java/com/liferay/layout/page/template/item/selector/criterion/LayoutPageTemplateCollectionTreeNodeItemSelectorCriterion.java`
+
+- **Date**: Mar. 25, 2024
+- **Ticket**: [LPD-19160](https://liferay.atlassian.net/browse/LPD-19160)
+- **What Changed**: The `getLayoutPageTemplateCollectionId` method is replaced by the new `getLayoutPageTemplateCollectionIds` method, which returns a `long[]` value. The `setLayoutPageTemplateCollectionId(long)` method is also replaced by the new `setLayoutPageTemplateCollectionIds(long[])` method.
+- **Reason**: This change is necessary to support setting multiple layout page template collection IDs.
+
+**util.js**
+`modules/apps/frontend-js/frontend-js-aui-web/src/main/resources/META-INF/resources/liferay/util.js`
+
+- **Date**: Mar. 28, 2024
+- **Ticket**: [LPD-18840](https://liferay.atlassian.net/browse/LPD-18840)
+- **What Changed**: The `selectEntity` function is no longer provided.
+- **Reason**: The function was no longer used.
+
+**ObjectEntryLocalServiceImpl.java**
+`modules/apps/object/object-service/src/main/java/com/liferay/object/service/impl/ObjectEntryLocalServiceImpl.java`
+
+- **Date**: Mar. 28, 2024
+- **Ticket**: [LPD-19409](https://liferay.atlassian.net/browse/LPD-19409)
+- **What Changed**: The `getValuesList` method replaces the `OrderByExpression[]` parameter with a `Sort[]` parameter.
+- **Reason**: This change is necessary because the expressions must be calculated in the object service layer.
+
+**BaseNotificationType.java**
+`modules/apps/notification/notification-api/src/main/java/com/liferay/notification/type/BaseNotificationType.java`
+
+- **Date**: Mar. 28, 2024
+- **Ticket**: [LPD-20526](https://liferay.atlassian.net/browse/LPD-20526)
+- **What Changed**: The `formatContent` and `formatLocalizedContent` methods is removed.
+- **Reason**: The `formatContent` logic is moved to the `DefaultEmailProvider` class. The `formatLocalizedContent` logic is moved to the `NotificationTypeUtil` class.
+
+**CommercePaymentEntryRefundTypeRegistry.java**
+`modules/apps/commerce/commerce-payment-api/src/main/java/com/liferay/commerce/payment/entry/CommercePaymentEntryRefundTypeRegistry.java`
+
+- **Date**: Mar. 28, 2024
+- **Ticket**: [LPD-15909](https://liferay.atlassian.net/browse/LPD-15909)
+- **What Changed**: The `getCommercePaymentEntryRefundType` and `getCommercePaymentEntryRefundTypes` methods have a new `long` (`companyId`) parameter.
+- **Reason**: This change is necessary to manage different configurations per company.
+
+**AccountListTypeConstants.java**
+`modules/apps/account/account-api/src/main/java/com/liferay/account/constants/AccountListTypeConstants.java`
+
+- **Date**: Mar. 29, 2024
+- **Ticket**: [LPD-18486](https://liferay.atlassian.net/browse/LPD-18486)
+- **What Changed**: The `ACCOUNT_ENTRY_PHONE_TYPE_TOOL_FREE` constant is renamed to `ACCOUNT_ENTRY_PHONE_TYPE_TOLL_FREE`.
+- **Reason**: This change corrects a typo in the constant name.
+
+**DefaultCommerceOrderValidatorImpl.java**
+`modules/apps/commerce/commerce-service/src/main/java/com/liferay/commerce/internal/order/DefaultCommerceOrderValidatorImpl.java`
+
+- **Date**: Mar. 29, 2024
+- **Ticket**: [LPD-3387](https://liferay.atlassian.net/browse/LPD-3387)
+- **What Changed**: `DefaultCommerceOrderValidatorImpl` has a new check for commerce order status.
+- **Reason**: This change requires commerce orders to have the open status to add an order item.
+
+**ObjectDefinitionLocalServiceImpl.java**
+`modules/apps/object/object-service/src/main/java/com/liferay/object/service/impl/ObjectDefinitionLocalServiceImpl.java`
+
+- **Date**: Apr. 3, 2024
+- **Ticket**: [LPD-19574](https://liferay.atlassian.net/browse/LPD-19574)
+- **What Changed**: The `addObjectDefinition` method has a new `long` (`rootObjectDefinitionId`) parameter.
+- **Reason**: This change is necessary to associate `ObjectDefinition` objects with their root object definitions to allow imports.
+
+**InputLocalized.tsx**
+`modules/apps/frontend-js/frontend-js-components-web/src/main/resources/META-INF/resources/forms/input/InputLocalized.tsx`
+
+- **Date**: Apr. 3, 2024
+- **Ticket**: [LPD-1952](https://liferay.atlassian.net/browse/LPD-1952)
+- **What Changed**: `InputLocalized` no longer receives the `disableFlag` property.
+- **Reason**: This change improves the `InputLocalized` component's usability.
+
+**PlacedOrderItemResourceImpl.java**
+`modules/apps/commerce/headless/headless-commerce/headless-commerce-delivery-order-impl/src/main/java/com/liferay/headless/commerce/delivery/order/internal/resource/v1_0/PlacedOrderItemResourceImpl.java`
+
+- **Date**: Apr. 5, 2024
+- **Ticket**: [LPD-20059](https://liferay.atlassian.net/browse/LPD-20059)
+- **What Changed**: The `getPlacedOrderPlacedOrdItemsPage` method has new `String` (`search`) and `Sort[]` (`sorts`) parameters.
+- **Reason**: This change is necessary to allow searches through Placed Order Items to initiate a Return.
+
+**CTDisplayRendererRegistry.java**
+`modules/apps/change-tracking/change-tracking-spi/src/main/java/com/liferay/change/tracking/spi/display/CTDisplayRendererRegistry.java`
+
+- **Date**: Apr. 9, 2024
+- **Ticket**: [LPD-19748](https://liferay.atlassian.net/browse/LPD-19748)
+- **What Changed**: A new `isWorkflowEnabled(CTEntry, T)` generic method is added.
+- **Reason**: This change is required to check whether workflow is enabled for a `CTEntry` object.
+
+**IndexNameBuilder.java**
+`modules/apps/portal-search/portal-search-api/src/main/java/com/liferay/portal/search/index/IndexNameBuilder.java`
+
+- **Date**: Apr. 9, 2024
+- **Ticket**: [LPD-20777](https://liferay.atlassian.net/browse/LPD-20777)
+- **What Changed**: The new `getIndexNamePrefix` method is added.
+- **Reason**: This change is required to identify Liferay indices in the search engine cluster.
+
+**TranslationEntryLocalService.java**
+`modules/apps/translation/translation-api/src/main/java/com/liferay/translation/service/TranslationEntryLocalService.java`
+
+- **Date**: Apr. 13, 2024
+- **Ticket**: [LPD-22843](https://liferay.atlassian.net/browse/LPD-22843)
+- **What Changed**: The `addOrUpdateTranslationEntry` method now has a new `String` (`languageId`) parameter.
+- **Reason**: This change is necessary to correctly perform translations.
+
+**TranslationEntryLocalServiceUtil.java**
+`modules/apps/translation/translation-api/src/main/java/com/liferay/translation/service/TranslationEntryLocalServiceUtil.java`
+
+- **Date**: Apr. 13, 2024
+- **Ticket**: [LPD-22843](https://liferay.atlassian.net/browse/LPD-22843)
+- **What Changed**: The `addOrUpdateTranslationEntry` method now has a new `String` (`languageId`) parameter.
+- **Reason**: This change is necessary to correctly perform translations.
+
+**TranslationEntryLocalServiceWrapper.java**
+`modules/apps/translation/translation-api/src/main/java/com/liferay/translation/service/TranslationEntryLocalServiceWrapper.java`
+
+- **Date**: Apr. 13, 2024
+- **Ticket**: [LPD-22843](https://liferay.atlassian.net/browse/LPD-22843)
+- **What Changed**: The `addOrUpdateTranslationEntry` method now has a new `String` (`languageId`) parameter.
+- **Reason**: This change is necessary to correctly perform translations.
+
+**TranslationEntryService.java**
+`modules/apps/translation/translation-api/src/main/java/com/liferay/translation/service/TranslationEntryService.java`
+
+- **Date**: Apr. 13, 2024
+- **Ticket**: [LPD-22843](https://liferay.atlassian.net/browse/LPD-22843)
+- **What Changed**: The `addOrUpdateTranslationEntry` method now has a new `String` (`languageId`) parameter.
+- **Reason**: This change is necessary to correctly perform translations.
+
+**TranslationEntryServiceUtil.java**
+`modules/apps/translation/translation-api/src/main/java/com/liferay/translation/service/TranslationEntryServiceUtil.java`
+
+- **Date**: Apr. 13, 2024
+- **Ticket**: [LPD-22843](https://liferay.atlassian.net/browse/LPD-22843)
+- **What Changed**: The `addOrUpdateTranslationEntry` method now has a new `String` (`languageId`) parameter.
+- **Reason**: This change is necessary to correctly perform translations.
+
+**TranslationEntryServiceWrapper.java**
+`modules/apps/translation/translation-api/src/main/java/com/liferay/translation/service/TranslationEntryServiceWrapper.java`
+
+- **Date**: Apr. 13, 2024
+- **Ticket**: [LPD-22843](https://liferay.atlassian.net/browse/LPD-22843)
+- **What Changed**: The `addOrUpdateTranslationEntry` method now has a new `String` (`languageId`) parameter.
+- **Reason**: This change is necessary to correctly perform translations.
+
+**CommerceOrderItemQuantityFormatter.java**
+`modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/util/CommerceOrderItemQuantityFormatter.java`
+
+- **Date**: Apr. 17, 2024
+- **Ticket**: [LPD-3472](https://liferay.atlassian.net/browse/LPD-3472)
+- **What Changed**: New methods are added: `format(CommerceOrderItem, Locale)`, `parse(ActionRequest, String)`, and `parse(String, Locale)`.
+- **Reason**: This change is necessary to correctly parse non-US locale inputs for price and quantity.
+
+**CommerceQuantityFormatter.java**
+`modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/util/CommerceQuantityFormatter.java`
+
+- **Date**: Apr. 17, 2024
+- **Ticket**: [LPD-3472](https://liferay.atlassian.net/browse/LPD-3472)
+- **What Changed**: A new `parse(String, Locale)` method is added.
+- **Reason**: This change is necessary to correctly parse non-US locale inputs for price and quantity.
+
+**ObjectEntryDTOConverter.java**
+`modules/apps/object/object-rest-impl/src/main/java/com/liferay/object/rest/internal/dto/v1_0/converter/ObjectEntryDTOConverter.java`
+
+- **Date**: Apr. 17, 2024
+- **Ticket**: [LPD-21413](https://liferay.atlassian.net/browse/LPD-21413)
+- **What Changed**: Translatable object fields now use the preferred `Locale` given by the `DTOConverterContext` instead of the user's configured `languageId`.
+- **Reason**: The new implementation returns the appropriate translatable object field values for the language in the `Accept-Language` header.
+
+**LayoutUtilityPageEntryLocalServiceImpl.java**
+`modules/apps/layout/layout-utility-page-service/src/main/java/com/liferay/layout/utility/page/service/impl/LayoutUtilityPageEntryLocalServiceImpl.java`
+
+- **Date**: Apr. 18, 2024
+- **Ticket**: [LPD-19863](https://liferay.atlassian.net/browse/LPD-19863)
+- **What Changed**: The `addLayoutUtilityPageEntry` methods have new `String` (`friendlyURL`) and `boolean` (`privateLayout`) parameters.
+- **Reason**: This change allows utility pages to be created a public layout.
+
+**COREntryConfiguration.java**
+`modules/apps/commerce/commerce-order-rule-api/src/main/java/com/liferay/commerce/order/rule/configuration/COREntryConfiguration.java`
+
+- **Date**: Apr. 18, 2024
+- **Ticket**: [LPD-23389](https://liferay.atlassian.net/browse/LPD-23389)
+- **What Changed**: The `enabled` method is removed.
+- **Reason**: The `enabled` method was originally introduced as a feature flag.
+
+**MockInfoServiceRegistrationHolder.java**
+`modules/apps/info/info-test-util/src/main/java/com/liferay/info/test/util/MockInfoServiceRegistrationHolder.java`
+
+- **Date**: Apr. 22, 2024
+- **Ticket**: [LPD-23742](https://liferay.atlassian.net/browse/LPD-23742)
+- **What Changed**: The `MockInfoServiceRegistrationHolder` constructor now has new `MockObject` and `Portal` parameters.
+- **Reason**: This change adds display page support to the mock info framework.
+
+**MockObject.java**
+`modules/apps/info/info-test-util/src/main/java/com/liferay/info/test/util/model/MockObject.java`
+
+- **Date**: Apr. 22, 2024
+- **Ticket**: [LPD-23742](https://liferay.atlassian.net/browse/LPD-23742)
+- **What Changed**: A new constructor is added (`MockObject(long, boolean, boolean)`).
+- **Reason**: This change adds permission support to the mock info framework.
+
+**CommerceAddressFormatterImpl.java**
+`modules/apps/commerce/commerce-service/src/main/java/com/liferay/commerce/internal/address/CommerceAddressFormatterImpl.java`
+
+- **Date**: Apr. 22, 2024
+- **Ticket**: [LPD-3491](https://liferay.atlassian.net/browse/LPD-3491)
+- **What Changed**: The `getBasicAddress` and `getDescriptiveAddress` methods have a new `Locale` parameter.
+- **Reason**: This change adds support for localized country names.
+
+**ClientExtensionEntryConstants.java**
+`modules/apps/client-extension/client-extension-api/src/main/java/com/liferay/client/extension/constants/ClientExtensionEntryConstants.java`
+
+- **Date**: Apr. 24, 2024
+- **Ticket**: [LPD-22159](https://liferay.atlassian.net/browse/LPD-22159)
+- **What Changed**: The `TYPE_THEME_JS` constant (for theme JS client extensions) is removed.
+- **Reason**: The theme JS client extension type is not used because it's unnecessary.
+
+**ThemeJSCET.java**
+`modules/apps/client-extension/client-extension-type-api/src/main/java/com/liferay/client/extension/type/ThemeJSCET.java`
+
+- **Date**: Apr. 24, 2024
+- **Ticket**: [LPD-22159](https://liferay.atlassian.net/browse/LPD-22159)
+- **What Changed**: The `ThemeJSCET` class is removed.
+- **Reason**: The theme JS client extension type is not used because it's unnecessary.
+
+**TemplateEntryLocalServiceImpl.java**
+`modules/apps/template/template-service/src/main/java/com/liferay/template/service/impl/TemplateEntryLocalServiceImpl.java`
+
+- **Date**: Apr. 27, 2024
+- **Ticket**: [LPD-24010](https://liferay.atlassian.net/browse/LPD-24010)
+- **What Changed**: The `addTemplateEntry` method has a new `ExternalReferenceCode` parameter.
+- **Reason**: The new parameter adds support for external reference codes in `TemplateEntry` entities.
+
+**FieldPredicateProvider.java**
+`modules/apps/object/object-api/src/main/java/com/liferay/object/odata/filter/expression/field/predicate/provider/FieldPredicateProvider.java`
+
+- **Date**: Apr. 29, 2024
+- **Ticket**: [LPD-22155](https://liferay.atlassian.net/browse/LPD-22155)
+- **What Changed**: The `getContainsPredicate` method has a new `String` parameter (`fieldName`), the `getInPredicate` method has a new `Object` parameter (`left`), and the `getStartsWithPredicate` method has a new `String` parameter (`fieldName`).
+- **Reason**: These parameters are necessary to enable filtering by `MultiselectPicklist` Object fields.
+
+**WorkflowDefinitionConfiguration.java**
+`modules/apps/portal-workflow/portal-workflow-api/src/main/java/com/liferay/portal/workflow/configuration/WorkflowDefinitionConfiguration.java`
+
+- **Date**: Apr. 29, 2024
+- **Ticket**: [LPD-23925](https://liferay.atlassian.net/browse/LPD-23925)
+- **What Changed**: The new `preventNotifyingAncestorSites` method is added.
+- **Reason**: This new method is needed to configure notifications to notify ancestor sites.
+
+**LayoutPageTemplateCollectionServiceImpl.java**
+`modules/apps/layout/layout-page-template-service/src/main/java/com/liferay/layout/page/template/service/impl/LayoutPageTemplateCollectionServiceImpl.java`
+
+- **Date**: Apr. 29, 2024
+- **Ticket**: [LPD-24298](https://liferay.atlassian.net/browse/LPD-24298)
+- **What Changed**: The `addLayoutPageTemplateCollection` method has a new `ExternalReferenceCode` parameter.
+- **Reason**: The new parameter adds support for external reference codes in `LayoutPageTemplateCollection` entities.
+
+**AssetListEntryLocalServiceImpl.java**
+`modules/apps/asset/asset-list-service/src/main/java/com/liferay/asset/list/service/impl/AssetListEntryLocalServiceImpl.java`
+
+- **Date**: Apr. 30, 2024
+- **Ticket**: [LPD-24142](https://liferay.atlassian.net/browse/LPD-24142)
+- **What Changed**: The `addAssetListEntry` method now has a new `ExternalReferenceCode` parameter.
+- **Reason**: The new parameter adds support for external reference codes in `AssetList` entities.
+
+**AccountEntryLocalServiceUtil.java**
+`modules/apps/account/account-api/src/main/java/com/liferay/account/service/AccountEntryLocalServiceUtil.java`
+
+- **Date**: May 1, 2024
+- **Ticket**: [LPD-24745](https://liferay.atlassian.net/browse/LPD-24745)
+- **What Changed**: The `setService` method is removed.
+- **Reason**: The `AccountEntryLocalServiceUtil` class tracks the service via `Snapshot`, so there is no more need to set it explicitly.
+
+### Changes in `portal-impl` Classes
+
+**PortalImpl.java**
+`portal-impl/src/com/liferay/portal/util/PortalImpl.java`
+
+- **Date**: Feb. 22, 2024
+- **Ticket**: [LPD-2110](https://liferay.atlassian.net/browse/LPD-2110)
+- **What Changed**: The `LocalizedFriendlyUrl` method is removed.
+- **Reason**: The code was moved into the `FriendlyURLServlet` class because it's only used for this servlet. 
+
+**portal.properties**
+`portal-impl/src/portal.properties`
+
+- **Date**: Apr. 24, 2024
+- **Ticket**: [LPD-24115](https://liferay.atlassian.net/browse/LPD-24115)
+- **What Changed**: The `transaction.isolation.counter` portal property is removed.
+- **Reason**: The `CounterLocalService` code is refactored to manage transactions directly instead of using an AOP proxy.
+
+**PropsValues.java**
+`portal-impl/src/com/liferay/portal/util/PropsValues.java`
+
+- **Date**: Apr. 24, 2024
+- **Ticket**: [LPD-24115](https://liferay.atlassian.net/browse/LPD-24115)
+- **What Changed**: The `TRANSACTION_ISOLATION_COUNTER` field is removed.
+- **Reason**: The `CounterLocalService` code is refactored to manage transactions directly instead of using an AOP proxy.
+
+**PortalSessionCreator.java**
+`portal-impl/src/com/liferay/portal/servlet/PortalSessionCreator.java`
+
+- **Date**: Apr. 30, 2024
+- **Ticket**: [LPD-24699](https://liferay.atlassian.net/browse/LPD-24699)
+- **What Changed**: The `PortalSessionCreator` class is removed.
+- **Reason**: The logic is from `PortalSessionCreator` is moved into `DependencyManagerSyncUtil`'s `registerSyncCallable` method.
+
+**PortalSessionDestroyer.java**
+`portal-impl/src/com/liferay/portal/servlet/PortalSessionDestroyer.java`
+
+- **Date**: Apr. 30, 2024
+- **Ticket**: [LPD-24699](https://liferay.atlassian.net/browse/LPD-24699)
+- **What Changed**: The `PortalSessionDestroyer` class is removed.
+- **Reason**: The logic is from `PortalSessionCreator` is moved into `DependencyManagerSyncUtil`'s `registerSyncCallable` method.
+
+## Changes in `portal-kernel` Classes
+
+**DLAppLocalService.java**
+`portal-kernel/src/com/liferay/document/library/kernel/service/DLAppLocalService.java`
+
+- **Date**: Feb. 9, 2024
+- **Ticket**: [LPD-6960](https://liferay.atlassian.net/browse/LPD-6960)
+- **What Changed**: The `addFileEntry(String, long, long, long, String, String, byte[], Date, Date, ServiceContext)`, `addFileEntry(String, long, long, long, String, String, String, String, String, String, byte[], Date, Date, ServiceContext)`, `addFileEntry(String, long, long, long, String, String, String, String, String, String, File, Date, Date, ServiceContext)`, and `addFileEntry(String, long, long, long, String, String, String, String, String, String, InputStream, long, Date, Date, ServiceContext)` methods all have a new `Date` (`displayDate`) parameter.
+- **Reason**: The new parameter allows for adding file entries and file versions with display dates.
+
+**DLAppService.java**
+`portal-kernel/src/com/liferay/document/library/kernel/service/DLAppService.java`
+
+- **Date**: Feb. 9, 2024
+- **Ticket**: [LPD-6960](https://liferay.atlassian.net/browse/LPD-6960)
+- **What Changed**: The `addFileEntry(String, long, long, String, String, String, String, String, String, byte[], Date, Date, ServiceContext)`, `addFileEntry(String, long, long, String, String, String, String, String, String, File, Date, Date, ServiceContext)`, and `addFileEntry(String, long, long, String, String, String, String, String, String, InputStream, long, Date, Date, ServiceContext)` methods all have a new `Date` (`displayDate`) parameter.
+- **Reason**: The new parameter allows for adding file entries and file versions with display dates.
+
+**BaseRepositoryImpl.java**
+`portal-kernel/src/com/liferay/portal/kernel/repository/BaseRepositoryImpl.java`
+
+- **Date**: Feb. 9, 2024
+- **Ticket**: [LPD-6960](https://liferay.atlassian.net/browse/LPD-6960)
+- **What Changed**: The `addFileEntry(String, long, long, String, String, String, String, String, String, File, Date, Date, ServiceContext)` and `addFileEntry(String, long, long, String, String, String, String, String, String, InputStream, long, Date, Date, ServiceContext)` methods both have a new `Date` (`displayDate`) parameter.
+- **Reason**: The new parameter allows for adding file entries and file versions with display dates.
+
+**DocumentRepository.java**
+`portal-kernel/src/com/liferay/portal/kernel/repository/DocumentRepository.java`
+
+- **Date**: Feb. 9, 2024
+- **Ticket**: [LPD-6960](https://liferay.atlassian.net/browse/LPD-6960)
+- **What Changed**: The `addFileEntry(String, long, long, String, String, String, String, String, String, File, Date, Date, ServiceContext)` and `addFileEntry(String, long, long, String, String, String, String, String, String, InputStream, long, Date, Date, ServiceContext)` methods both have a new `Date` (`displayDate`) parameter.
+- **Reason**: The new parameter allows for adding file entries and file versions with display dates.
+
+**DLFileEntryLocalService.java**
+`portal-kernel/src/com/liferay/document/library/kernel/service/DLFileEntryLocalService.java`
+
+- **Date**: Feb. 9, 2024
+- **Ticket**: [LPD-6960](https://liferay.atlassian.net/browse/LPD-6960)
+- **What Changed**: The `addFileEntry(String, long, long, long, String, String, String, String, String, String, long, Map<String, DDMFormValues>, File, InputStream, long, Date, Date, ServiceContext)` method has a new `Date` (`displayDate`) parameter.
+- **Reason**: The new parameter allows for adding file entries and file versions with display dates.
+
+**DLFileEntryService.java**
+`portal-kernel/src/com/liferay/document/library/kernel/service/DLFileEntryService.java`
+
+- **Date**: Feb. 9, 2024
+- **Ticket**: [LPD-6960](https://liferay.atlassian.net/browse/LPD-6960)
+- **What Changed**: The `addFileEntry(String, long, long, long, String, String, String, String, String, String, long, Map<String, DDMFormValues>, File, InputStream, long, Date, Date, ServiceContext)` method has a new `Date` (`displayDate`) parameter.
+- **Reason**: The new parameter allows for adding file entries and file versions with display dates.
+
+**DLAppLocalService.java**
+`portal-kernel/src/com/liferay/document/library/kernel/service/DLAppLocalService.java`
+
+- **Date**: Feb. 12, 2024
+- **Ticket**: [LPD-16993](https://liferay.atlassian.net/browse/LPD-16993)
+- **What Changed**: The `updateFileEntry(long, long, String, String, String, String, String, String, DLVersionNumberIncrease, byte[], Date, Date, ServiceContext)`, `updateFileEntry(long, long, String, String, String, String, String, String, DLVersionNumberIncrease, File, Date, Date, ServiceContext)`, and `updateFileEntry(long, long, String, String, String, String, String, String, DLVersionNumberIncrease, InputStream, long, Date, Date, ServiceContext)` methods all have a new `Date` (`displayDate`) parameter.
+- **Reason**: The new parameter allows for updating display dates for file entries and file versions.
+
+**DLAppService.java**
+`portal-kernel/src/com/liferay/document/library/kernel/service/DLAppService.java`
+
+- **Date**: Feb. 12, 2024
+- **Ticket**: [LPD-16993](https://liferay.atlassian.net/browse/LPD-16993)
+- **What Changed**: The `updateFileEntry(long, String, String, String, String, String, String, DLVersionNumberIncrease, byte[], Date, Date, ServiceContext)`, `updateFileEntry(long, String, String, String, String, String, String, DLVersionNumberIncrease, File, Date, Date, ServiceContext)`, `updateFileEntry(long, String, String, String, String, String, String, DLVersionNumberIncrease, InputStream, long, Date, Date, ServiceContext)`, `updateFileEntryAndCheckIn(long, String, String, String, String, String, String, DLVersionNumberIncrease, File, Date, Date, ServiceContext)`, and `updateFileEntryAndCheckIn(long, String, String, String, String, String, String, DLVersionNumberIncrease, InputStream, long, Date, Date, ServiceContext)` methods all have a new `Date` (`displayDate`) parameter.
+- **Reason**: The new parameter allows for updating display dates for file entries and file versions.
+
+**BaseRepositoryImpl.java**
+`portal-kernel/src/com/liferay/portal/kernel/repository/BaseRepositoryImpl.java`
+
+- **Date**: Feb. 12, 2024
+- **Ticket**: [LPD-16993](https://liferay.atlassian.net/browse/LPD-16993)
+- **What Changed**: The `updateFileEntry(long, long, String, String, String, String, String, String, DLVersionNumberIncrease, File, Date, Date, ServiceContext)` and `updateFileEntry(long, long, String, String, String, String, String, String, DLVersionNumberIncrease, InputStream, long, Date, Date, ServiceContext)` methods both have a new `Date` (`displayDate`) parameter.
+- **Reason**: The new parameter allows for updating display dates for file entries and file versions.
+
+**DocumentRepository.java**
+`portal-kernel/src/com/liferay/portal/kernel/repository/DocumentRepository.java`
+
+- **Date**: Feb. 12, 2024
+- **Ticket**: [LPD-16993](https://liferay.atlassian.net/browse/LPD-16993)
+- **What Changed**: The `updateFileEntry(long, long, String, String, String, String, String, String, DLVersionNumberIncrease, File, Date, Date, ServiceContext)` and `updateFileEntry(long, long, String, String, String, String, String, String, DLVersionNumberIncrease, InputStream, long, Date, Date, ServiceContext)` methods both have a new `Date` (`displayDate`) parameter.
+- **Reason**: The new parameter allows for updating display dates for file entries and file versions.
+
+**DLFileEntryLocalService.java**
+`portal-kernel/src/com/liferay/document/library/kernel/service/DLFileEntryLocalService.java`
+
+- **Date**: Feb. 12, 2024
+- **Ticket**: [LPD-16993](https://liferay.atlassian.net/browse/LPD-16993)
+- **What Changed**: The `updateFileEntry(long, long, String, String, String, String, String, String, DLVersionNumberIncrease, long, Map<String, DDMFormValues>, File, InputStream, long, Date, Date, ServiceContext)` method has a new `Date` (`displayDate`) parameter.
+- **Reason**: The new parameter allows for updating display dates for file entries and file versions.
+
+**DLFileEntryService.java**
+`portal-kernel/src/com/liferay/document/library/kernel/service/DLFileEntryService.java`
+
+- **Date**: Feb. 12, 2024
+- **Ticket**: [LPD-16993](https://liferay.atlassian.net/browse/LPD-16993)
+- **What Changed**: The `updateFileEntry(long, String, String, String, String, String, String, DLVersionNumberIncrease, long, Map<String, DDMFormValues>, File, InputStream, long, Date, Date, ServiceContext)` method has a new `Date` (`displayDate`) parameter.
+- **Reason**: The new parameter allows for updating display dates for file entries and file versions.
+
+**PortalUtil.java**
+`portal-kernel/src/com/liferay/portal/kernel/util/PortalUtil.java`
+
+- **Date**: Feb. 22, 2024
+- **Ticket**: [LPD-2110](https://liferay.atlassian.net/browse/LPD-2110)
+- **What Changed**: The `getLocalizedFriendlyURL` method is removed.
+- **Reason**: The `PortalImpl.getLocalizedFriendlyURL` method is also removed, so this method is no longer needed.
+
+**Portal.java**
+`portal-kernel/src/com/liferay/portal/kernel/util/Portal.java`
+
+- **Date**: Feb. 22, 2024
+- **Ticket**: [LPD-2110](https://liferay.atlassian.net/browse/LPD-2110)
+- **What Changed**: The `getLocalizedFriendlyURL` method is removed.
+- **Reason**: The `PortalImpl.getLocalizedFriendlyURL` method is also removed, so this method is no longer needed.
+
+**FileVersion.java**
+`portal-kernel/src/com/liferay/portal/kernel/repository/model/FileVersion.java`
+
+- **Date**: Feb. 28, 2024
+- **Ticket**: [LPD-6962](https://liferay.atlassian.net/browse/LPD-6962)
+- **What Changed**: The new `isScheduled` method is added, which returns a `Date` object.
+- **Reason**: The new method allows for checking whether a `FileVersion`'s status is enabled (`WorkflowConstants.STATUS_SCHEDULED`), if it's not in an external repository.
+
+**RemotePreference.java**
+`portal-kernel/src/com/liferay/portal/kernel/util/RemotePreference.java`
+
+- **Date**: Mar. 16, 2024
+- **Ticket**: [LPD-20659](https://liferay.atlassian.net/browse/LPD-20659)
+- **What Changed**: The `RemotePreference` class is removed.
+- **Reason**: The `RemotePreference` class is not used.
+
+**InfrastructureUtil.java**
+`portal-kernel/src/com/liferay/portal/kernel/util/InfrastructureUtil.java`
+
+- **Date**: Mar. 27, 2024
+- **Ticket**: [LPD-19928](https://liferay.atlassian.net/browse/LPD-19928)
+- **What Changed**: The `getMailSession` method is removed.
+- **Reason**: The `getMailSessionLogic` is moved into `MailServiceImpl`, because it's the only class that uses it.
+
+**BaseTransactionExecutor.java**
+`portal-impl/src/com/liferay/portal/spring/transaction/BaseTransactionExecutor.java`
+
+- **Date**: Apr. 24, 2024
+- **Ticket**: [LPD-24115](https://liferay.atlassian.net/browse/LPD-24115)
+- **What Changed**: The `BaseTransactionExecutor` class is removed.
+- **Reason**: The `BaseTransactionExecutor` class is no longer used.
+
+**CounterTransactionExecutor.java**
+`portal-impl/src/com/liferay/portal/spring/transaction/CounterTransactionExecutor.java`
+
+- **Date**: Apr. 24, 2024
+- **Ticket**: [LPD-24115](https://liferay.atlassian.net/browse/LPD-24115)
+- **What Changed**: The `CounterTransactionExecutor` class is removed.
+- **Reason**: The `CounterTransactionExecutor` class is no longer used.
+
+**DefaultTransactionExecutor.java**
+`portal-impl/src/com/liferay/portal/spring/transaction/DefaultTransactionExecutor.java`
+
+- **Date**: Apr. 24, 2024
+- **Ticket**: [LPD-24115](https://liferay.atlassian.net/browse/LPD-24115)
+- **What Changed**: The `DefaultTransactionExecutor` class no longer extends `BaseTransactionExecutor`. It now implements `TransactionExecutor` itself instead. A new `execute(TransactionAttributeAdapter, UnsafeSupplier<T, Throwable>)` method is added.
+- **Reason**: The `BaseTransactionExecutor` class is removed.
+
+**Isolation.java**
+`portal-kernel/src/com/liferay/portal/kernel/transaction/Isolation.java`
+
+- **Date**: Apr. 24, 2024
+- **Ticket**: [LPD-24115](https://liferay.atlassian.net/browse/LPD-24115)
+- **What Changed**: The `COUNTER` field is removed.
+- Reason**: The `CounterLocalService` code is refactored to manage transactions directly instead of using an AOP proxy.
+
+**TransactionDefinition.java**
+`portal-kernel/src/com/liferay/portal/kernel/transaction/TransactionDefinition.java`
+
+- **Date**: Apr. 24, 2024
+- **Ticket**: [LPD-24115](https://liferay.atlassian.net/browse/LPD-24115)
+- **What Changed**: The `ISOLATION_COUNTER` field is removed.
+- **Reason**: The `CounterLocalService` code is refactored to manage transactions directly instead of using an AOP proxy.
+
+**PropsKeys.java**
+`portal-kernel/src/com/liferay/portal/kernel/util/PropsKeys.java`
+
+- **Date**: Apr. 24, 2024
+- **Ticket**: [LPD-24115](https://liferay.atlassian.net/browse/LPD-24115)
+- **What Changed**: The `TRANSACTION_ISOLATION_COUNTER` field is removed.
+- **Reason**: The `CounterLocalService` code is refactored to manage transactions directly instead of using an AOP proxy.
+
+**HotDeployEvent.java**
+`portal-kernel/src/com/liferay/portal/kernel/deploy/hot/HotDeployEvent.java`
+
+- **Date**: Apr. 30, 2024
+- **Ticket**: [LPD-24699](https://liferay.atlassian.net/browse/LPD-24699)
+- **What Changed**: The `addPortalLifeCycle(PortalLifecycle)` and `flushInits` methods are removed.
+- **Reason**: These methods are no longer used.
+
+**HotDeployUtil.java**
+`portal-kernel/src/com/liferay/portal/kernel/deploy/hot/HotDeployUtil.java`
+
+- **Date**: Apr. 30, 2024
+- **Ticket**: [LPD-24699](https://liferay.atlassian.net/browse/LPD-24699)
+- **What Changed**: The `registerDependentPortalLifecycle(String, PortalLifecycle)` method is removed.
+- **Reason**: This method is no longer used.
+
+**InvokerFilter.java**
+`portal-kernel/src/com/liferay/portal/kernel/servlet/filters/invoker/InvokerFilter.java`
+
+- **Date**: Apr. 30, 2024
+- **Ticket**: [LPD-24699](https://liferay.atlassian.net/browse/LPD-24699)
+- **What Changed**: The `InvokerFilter` class no longer extends `BasePortalLifecycle`.
+- **Reason**: The `PortalLifecycle` API is no longer needed.
+
+**BasePortalLifecycle.java**
+`portal-kernel/src/com/liferay/portal/kernel/util/BasePortalLifecycle.java`
+
+- **Date**: Apr. 30, 2024
+- **Ticket**: [LPD-24699](https://liferay.atlassian.net/browse/LPD-24699)
+- **What Changed**: The `BasePortalLifecycle` class is removed.
+- **Reason**: The `PortalLifecycle` API is no longer needed.
+
+**PortalLifecycle.java**
+`portal-kernel/src/com/liferay/portal/kernel/util/PortalLifecycle.java`
+
+- **Date**: Apr. 30, 2024
+- **Ticket**: [LPD-24699](https://liferay.atlassian.net/browse/LPD-24699)
+- **What Changed**: The `PortalLifecycle` class is removed.
+- **Reason**: The `PortalLifecycle` API is no longer needed.
+
+**PortalLifecycleUtil.java**
+`portal-kernel/src/com/liferay/portal/kernel/util/PortalLifecycleUtil.java`
+
+- **Date**: Apr. 30, 2024
+- **Ticket**: [LPD-24699](https://liferay.atlassian.net/browse/LPD-24699)
+- **What Changed**: The `PortalLifecycleUtil` class is removed.
+- **Reason**: The `PortalLifecycle` API is no longer needed.
+
+**LogContextRegistryUtil.java**
+`portal-kernel/src/com/liferay/portal/kernel/log/LogContextRegistryUtil.java`
+
+- **Date**: Apr. 30, 2024
+- **Ticket**: [LPD-24699](https://liferay.atlassian.net/browse/LPD-24699)
+- **What Changed**: The `LogContextRegistryUtil` class is removed.
+- **Reason**: The logic from `LogContextRegistryUtil` is moved into `Log4jLogContextLogWrapper`.
+
+**ModuleServiceLifecycle.java**
+`portal-kernel/src/com/liferay/portal/kernel/module/framework/ModuleServiceLifecycle.java`
+
+- **Date**: Apr. 30, 2024
+- **Ticket**: [LPD-24699](https://liferay.atlassian.net/browse/LPD-24699)
+- **What Changed**: The `DATABASE_INITIALIZED` and `SPRING_INITIALIZED` fields are removed.
+- **Reason**: These states are no longer used.
+
+### Changes in Taglibs
+
+**InputPermissionsTag.java**
+`util-taglib/src/com/liferay/taglib/ui/InputPermissionsTag.java`
+
+- **Date**: Feb. 20, 2024
+- **Ticket**: [LPD-15184](https://liferay.atlassian.net/browse/LPD-15184)
+- **What Changed**: The `doTag` method now has a new `boolean` (`showAllRoles`) parameter. The new `isShowAllRoles` and `setShowAllRoles(boolean)` methods are also added.
+- **Reason**: The new parameter allows for viewing all roles when configuring permissions.
+
+**JspFactoryServletContainerInitializer.java**
+`util-taglib/src/com/liferay/taglib/servlet/JspFactoryServletContainerInitializer.java`
+
+- **Date**: Apr. 30, 2024
+- **Ticket**: [LPD-24699](https://liferay.atlassian.net/browse/LPD-24699)
+- **What Changed**: The `JspFactoryServletContainerInitializer` class is removed.
+- **Reason**: The `JspFactoryServletContainerInitializer` class is no longer used.
+
 ## 2024 Q1 Release
 
 ### Changes in Liferay DXP

@@ -8,9 +8,7 @@ These instructions and code samples demonstrate removing intermediate Journal Ar
 
 Here are example steps for removing intermediate Journal Article versions:
 
-1. Decide how many of the latest versions to keep.
-
-You must keep the original version and the most recent version, but you may keep additional recent versions too. For example, you may want to keep the two latest versions or just the latest.
+1. Decide how many of the latest versions to keep. You must keep the original version and the most recent version, but you may keep additional recent versions too. For example, you may want to keep the two latest versions or only the latest.
 
 1. Find a method for deleting the entity versions.
 

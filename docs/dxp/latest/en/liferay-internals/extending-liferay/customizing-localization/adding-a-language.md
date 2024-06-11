@@ -20,35 +20,35 @@ By default, the [`portal.properties`](https://github.com/liferay/liferay-portal/
 
 1. Modify and replace the `web.xml` file found in your Liferay installation: `[LIFERAY_HOME]/tomcat-[version]/webapps/ROOT/WEB-INF/`. Add your new language under `<web-resource-name>`. For example,
 
-    ```xml
-    <url-pattern>/am/c/portal/protected</url-pattern>
-    <url-pattern>/am-ET/c/portal/protected</url-pattern>
-    <url-pattern>/am_ET/c/portal/protected</url-pattern>
-    ```
+   ```xml
+   <url-pattern>/am/c/portal/protected</url-pattern>
+   <url-pattern>/am-ET/c/portal/protected</url-pattern>
+   <url-pattern>/am_ET/c/portal/protected</url-pattern>
+   ```
 
 1. Modify and replace the `shielded-container-web.xml` file found in your Liferay installation: `[LIFERAY_HOME]/tomcat-[version]/webapps/ROOT/WEB-INF/`. Add your new language under `<servlet-mapping>`. For example,
 
-    ```xml
-    <servlet-mapping>
-      <servlet-name>I18n Servlet</servlet-name>
-      <url-pattern>/am/*</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-      <servlet-name>I18n Servlet</servlet-name>
-      <url-pattern>/am-ET/*</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-      <servlet-name>I18n Servlet</servlet-name>
-      <url-pattern>/am_ET/*</url-pattern>
-    </servlet-mapping>
-    ```
+   ```xml
+   <servlet-mapping>
+     <servlet-name>I18n Servlet</servlet-name>
+     <url-pattern>/am/*</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+     <servlet-name>I18n Servlet</servlet-name>
+     <url-pattern>/am-ET/*</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+     <servlet-name>I18n Servlet</servlet-name>
+     <url-pattern>/am_ET/*</url-pattern>
+   </servlet-mapping>
+   ```
 
 1. Create or modify your `portal-ext.properties` file in your installation's [Liferay Home](../../../installation-and-upgrades/reference/liferay-home.md) folder. Note, this file overrides the enabled default locales defined in the `portal.properties` file. Therefore list all the languages you plan to use in the `portal-ext.properties` file. Define both `locales` and `locales.enabled`. For example:
 
-    ```properties
-    locales=am_ET,ar_SA,fa_IR,en_US,zh_CN,ja_JP
-    locales.enabled=am_ET,ar_SA,fa_IR,en_US,zh_CN,ja_JP
-    ```
+   ```properties
+   locales=am_ET,ar_SA,fa_IR,en_US,zh_CN,ja_JP
+   locales.enabled=am_ET,ar_SA,fa_IR,en_US,zh_CN,ja_JP
+   ```
 
 1. Add the language keys for your new language. You can do this in two ways:
 
@@ -103,7 +103,7 @@ lang.dir=rtl
 This could affect the site's CSS in unexpected ways. You can prevent CSS rules from transforming (flipping) by placing the `/* @noflip */` decoration to the left of the CSS rule you want to apply it to. This example gives a left margin of `20em` to the `body` no matter the writing direction of the selected language:
 
 ```css
-body {
+/* @noflip */ body {
   margin-left: 20em;
 }
 ```

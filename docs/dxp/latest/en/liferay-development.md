@@ -1,5 +1,4 @@
 ---
-showChildrenCards: false
 toc:
   - ./liferay-development/customizing-liferays-look-and-feel.md
   - ./liferay-development/integrating-external-applications.md

@@ -59,7 +59,7 @@ You can now draft and duplicate [Liferay DXP Experiences](../site-building/perso
 
 ### Documents Now Visible in the Content Dashboard
 
-Documents now appear in the [Content Dashboard](../content-authoring-and-management/content-dashboard/about-the-content-dashboard.md), with new filters based on asset type or MIME type. You can access these filters in the Filter and Order drop-down menu in the Content Dashboard.
+Documents now appear in the [Content Dashboard](../content-authoring-and-management/content-dashboard.md), with new filters based on asset type or MIME type. You can access these filters in the Filter and Order drop-down menu in the Content Dashboard.
 
 ![There are new filters in the Content Dashboard.](./whats-new-74/images/01.png)
 

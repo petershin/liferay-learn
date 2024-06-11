@@ -68,7 +68,7 @@ Asset Libraries aren't limited to web content: you can share any asset type and 
 
 ### Content Dashboard
 
-For those with large databases full of content that may be going unused, Liferay has created the [Content Dashboard](../content-authoring-and-management/content-dashboard/about-the-content-dashboard.md). This is a one-stop-place where content authors can access all the content, not just for a given Site, but for all the Sites and asset libraries in a Liferay instance. To help you navigate such a large amount of content, a comprehensive set of filters provides filter and ordering capabilities for the list of content and an audit graph that helps you easily find and audit the content you need. 
+For those with large databases full of content that may be going unused, Liferay has created the [Content Dashboard](../content-authoring-and-management/content-dashboard.md). This is a one-stop-place where content authors can access all the content, not just for a given Site, but for all the Sites and asset libraries in a Liferay instance. To help you navigate such a large amount of content, a comprehensive set of filters provides filter and ordering capabilities for the list of content and an audit graph that helps you easily find and audit the content you need. 
 
 You can access this content dashboard through Global Menu &rarr; Applications tab.
 

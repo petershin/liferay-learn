@@ -13,7 +13,7 @@ Categories and Tags are two essential tools for helping users find content throu
 
 Using Categories, you can group similar assets and organize your content. For example, you can create a _Success Stories_ Category and group all customer success articles website under this Category. You can also create a hierarchy of Categories. For example, the Success Stories categories can have Finance and Healthcare Subcategories. To start using Categories, see [Defining Categories and Vocabularies for Content](./defining-categories-and-vocabularies-for-content.md).
 
-You can group Categories using Vocabularies, which can be either internal or public. The Marketing department may want to use Categories based on different customer segments, while the Human Resources department may want to use Categories based on the company organization. For more information, see [Vocabulary Visibility](#vocabulary-visibility). Liferay DXP includes [built-in Vocabularies](#default-vocabularies) that you can use to audit your content in the [Content Dashboard](../content-dashboard/about-the-content-dashboard.md).
+You can group Categories using Vocabularies, which can be either internal or public. The Marketing department may want to use Categories based on different customer segments, while the Human Resources department may want to use Categories based on the company organization. For more information, see [Vocabulary Visibility](#vocabulary-visibility). Liferay DXP includes [built-in Vocabularies](#default-vocabularies) that you can use to audit your content in the [Content Dashboard](../content-dashboard.md).
 
 Tags are keywords for organizing your assets. Tags tell visitors of your website what the content is about, so they can find relevant information through search or navigation. For example, a Kitchenware Store might have different tags describing the store items, like _glass_, _clay_, or _dishwasher-safe_. Using these Tags in your content, visitors interested in clay kitchenware can quickly find relevant articles. Tags are not hierarchical, so you cannot group tags inside other tags. To start using Tags, see [Tagging Content and Managing Tags](./tagging-content-and-managing-tags.md).
 
@@ -72,7 +72,7 @@ Before configuring your vocabulary's visibility, consider these things:
 
 > Available: Liferay 7.3+.
 
-In addition to the *Topic* Vocabulary from previous Liferay releases, there are two new vocabularies: *Audience* and *Stage*. These vocabularies are industry standards that Content Authors, Content Strategists, and Marketers can use in combination with the [Content Dashboard](../content-dashboard/about-the-content-dashboard.md) to address common content strategy topics:
+In addition to the *Topic* Vocabulary from previous Liferay releases, there are two new vocabularies: *Audience* and *Stage*. These vocabularies are industry standards that Content Authors, Content Strategists, and Marketers can use in combination with the [Content Dashboard](../content-dashboard.md) to address common content strategy topics:
 
 - Determine content areas with enough content as well as content gaps
 - Audit of existing content
@@ -90,4 +90,4 @@ In previous Liferay versions, the *Topic* vocabulary exists on each Site. For 7.
 
 - [Defining Categories and Vocabularies for Content](./defining-categories-and-vocabularies-for-content.md)
 - [Tagging Content and Managing Tags](./tagging-content-and-managing-tags.md)
-- [Content Dashboard](../content-dashboard/about-the-content-dashboard.md)
+- [Content Dashboard](../content-dashboard.md)

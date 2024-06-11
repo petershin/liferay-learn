@@ -19,7 +19,7 @@ You can use the Content Performance tool to analyze content metrics, like the nu
 Content Performance metrics are only available for the [Default Experience](../../site-building/personalizing-site-experience/experience-personalization/creating-and-managing-experiences.md).
 ```
 
-Access the Content Performance tool using the *View Metrics* (![View Metrics](../../images/icon-analytics.png)) option for your content. You can find this option in the [Applications toolbar](../../getting-started/navigating-dxp.md#applications-bar) and the [Content Dashboard](../content-dashboard/about-the-content-dashboard.md). For more information, see [About the Content Performance Tool](./about-the-content-performance-tool.md).
+Access the Content Performance tool using the *View Metrics* (![View Metrics](../../images/icon-analytics.png)) option for your content. You can find this option in the [Applications toolbar](../../getting-started/navigating-dxp.md#applications-bar) and the [Content Dashboard](../content-dashboard.md). For more information, see [About the Content Performance Tool](./about-the-content-performance-tool.md).
 
 The Content Performance tool contains three different areas:
 
@@ -105,5 +105,5 @@ Keywords are one or more words that people use to find content.
 ## Related Information
 
 - [About the Content Performance Tool](./about-the-content-performance-tool.md)
-- [About the Content Dashboard](../content-dashboard/about-the-content-dashboard.md)
+- [About the Content Dashboard](../content-dashboard.md)
 - [Defining Categories and Vocabularies for Content](../tags-and-categories/defining-categories-and-vocabularies-for-content.md)

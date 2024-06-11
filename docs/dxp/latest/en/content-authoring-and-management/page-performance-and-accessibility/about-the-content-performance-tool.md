@@ -16,7 +16,7 @@ The Content Performance tool is a global application for analyzing performance m
 To learn how to analyze your content performance quantitatively using the Content Performance tool, see [Analyze Content Metrics Using the Content Performance Tool](./analyze-content-metrics-using-content-performance-tool.md).
 
 ```{note}
-To manage and audit your content across Sites and Asset Libraries, use the [Content Dashboard](../content-dashboard/about-the-content-dashboard.md).
+To manage and audit your content across Sites and Asset Libraries, use the [Content Dashboard](../content-dashboard.md).
 ```
 
 You can access the Content Performance tool when the following conditions are met:
@@ -72,5 +72,5 @@ If the Content Performance option is not available, your content does not meet o
 ## Related Information
 
 - [Analyze Content Metrics Using the Content Performance Tool](./analyze-content-metrics-using-content-performance-tool.md)
-- [About the Content Dashboard](../content-dashboard/about-the-content-dashboard.md)
+- [Content Dashboard](../content-dashboard.md)
 - [Defining Categories and Vocabularies for Content](../tags-and-categories/defining-categories-and-vocabularies-for-content.md)

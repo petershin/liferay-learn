@@ -183,6 +183,5 @@ Each version displays the author of the version, the time of its creation, and a
 
 ## Related Topics
 
-- [About the Content Dashboard](./about-the-content-dashboard.md)
 - [About the Content Performance Tool](../page-performance-and-accessibility/about-the-content-performance-tool.md)
 - [Defining Categories and Vocabularies for Content](../tags-and-categories/defining-categories-and-vocabularies-for-content.md)

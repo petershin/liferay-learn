@@ -57,4 +57,5 @@ All metadata is exported from contents and documents, so the `.xls` file contain
 
 ## Related Topics
 
-- [About the Content Dashboard](./about-the-content-dashboard.md)
+- [Content Dashboard](../content-dashboard.md)
+- [Content Dashboard Interface](./content-dashboard-interface.md)

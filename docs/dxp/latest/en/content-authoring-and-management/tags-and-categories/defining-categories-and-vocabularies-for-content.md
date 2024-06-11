@@ -127,5 +127,5 @@ You can create a maximum of 150 Categories for each Vocabulary. But a very large
 
 - [Organizing Content with Categories and Tags](./organizing-content-with-categories-and-tags.md)
 - [Tagging Content and Managing Tags](./tagging-content-and-managing-tags.md)
-- [Content Dashboard](../content-dashboard/about-the-content-dashboard.md)
+- [Content Dashboard](../content-dashboard.md)
 - [Displaying Categories Using Display Pages](../../site-building/displaying-content/using-display-page-templates/displaying-categories-using-display-pages.md)

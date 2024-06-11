@@ -47,7 +47,7 @@ Welcome to the official documentation for the latest versions (7.3 and 7.4+) of 
 :link: ./content-authoring-and-management.md
 
 [Adding a Basic Web Content Article](./content-authoring-and-management/web-content/web-content-articles/adding-a-basic-web-content-article.md)
-[About the Content Dashboard](./content-authoring-and-management/content-dashboard/about-the-content-dashboard.md)
+[Content Dashboard](./content-authoring-and-management/content-dashboard.md)
 [About Collections and Collection Pages](./content-authoring-and-management/collections-and-collection-pages.md)
 [About the Content Performance Tool](./content-authoring-and-management/page-performance-and-accessibility/about-the-content-performance-tool.md)
 :::

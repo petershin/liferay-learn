@@ -41,13 +41,10 @@ You can see different areas on the Content Dashboard page.
 
 ![The Content Dashboard contains several components to put lots of information at your fingertips.](./content-dashboard/images/02.png)
 
-The [Content Audit Tool](./content-dashboard-interface.md#content-audit-tool) (1) is the graphical area at the top of the page. It shows metrics for the vocabularies and categories you define in Liferay. You can include and combine your global vocabularies here, and filter the categories to analyze your data in different ways.
+The [Content Audit Tool](./content-dashboard-interface.md#content-audit-tool) (1) is the graphical area at the top of the page. It shows metrics for the vocabularies and categories you define in Liferay. You can include and combine your global vocabularies here, and filter the categories to analyze your data in different ways. You can also [export and download asset lists](./content-dashboard/exporting-the-assets-list-to-a-spreadsheet.md) for further analysis.
 
 The [Contents List](./content-dashboard-interface.md#contents-list) (2) shows content across all sites and asset libraries. From here, you can sort and filter your information using built-in or custom filters. The Content Audit Tool chart changes dynamically based on the filters that you set.
 
 From the Contents List, you can access the [Content info](./content-dashboard-interface.md#content-info-sidebar) sidebar (3) and the [Content Performance tool](../page-performance-and-accessibility/about-the-content-performance-tool.md). The Information sidebar shows different metadata for each asset, while the Content Performance tool gathers statistics for your content, like the number of views or the traffic acquisition channels.
 
 To learn more about the Content Dashboard interface and how to customize the information for your needs, see the [Content Dashboard Interface](./content-dashboard-interface.md) topic.
-
-- [Content Dashboard Interface](./content-dashboard/content-dashboard-interface.md)
-- [Exporting the Assets List to a Spreadsheet](./content-dashboard/exporting-the-assets-list-to-a-spreadsheet.md)

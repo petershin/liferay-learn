@@ -11,7 +11,7 @@ taxonomy-category-names:
 - Liferay SaaS
 ---
 
-# Configuration Client Extensions
+# Configuration As Code
 
 {bdg-primary}`Liferay Self-Hosted`
 {bdg-primary}`Liferay SaaS`

@@ -7,6 +7,7 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: bda599ab-3cb9-44a5-b346-7faf990a4497
 ---
+
 # Displaying Assets Using the Asset Publisher Widget
 
 As you create web content, remember that pieces of content are assets, just like message board entries and blog posts. The most common type of asset is the [web content](../../../content-authoring-and-management/web-content/web-content-articles/adding-a-basic-web-content-article.md).
@@ -91,8 +92,6 @@ Using the Dynamic asset selection, you can include assets in the Asset Publisher
 
 ![Define the options for the dynamic asset collection, including Source, Scope, Filter, and Ordering.](./displaying-assets-using-the-asset-publisher-widget/images/04.png)
 
-<!-- update this image -->
-
 1. In the Scope section, choose to display assets from an individual site or other sites.
 
 1. In the Source section, use the Asset Type drop-down menu to select your assets. Select a specific asset type or *Select More Than One* to choose from different types.
@@ -103,11 +102,11 @@ Using the Dynamic asset selection, you can include assets in the Asset Publisher
 
    You can choose filters for items such as Contain/Do Not Contain All or Any of the following Categories, Keywords, or Tags and, then specify the categories, keywords, or tags.
 
-1. Include a Custom User Attribute if you have defined one.
+1. Before `Liferay DXP 2024.Q1+/Portal 7.4 GA112+`, include a Custom User Attribute if you have defined one.
 
    The assets only appear if they match the included custom user profile attributes.
 
-   The Custom User Attribute option within the Asset Publisher widget is deprecated as of `Liferay DXP 2024.Q2+/Portal 7.4 GA126+`. Instead, try [Displaying Content Dinamically Using Experiences](#displaying-content-dinamically-using-experiences).
+   The Custom User Attribute option within the Asset Publisher widget is deprecated as of `Liferay DXP 2024.Q1+/Portal 7.4 GA112+`. Instead, try [Displaying Content Dinamically Using Experiences](#displaying-content-dinamically-using-experiences).
 
 1. In the Ordering section, choose the presentation order of assets in the Asset Publisher widget.
 
@@ -136,13 +135,11 @@ Here you can set parameters and manually filter specific assets:
 
 ## Displaying Content Dinamically Using Experiences
 
-<!-- add image or gif -->
+Create personalized experiences for different groups of users by customizing the content displayed in the Asset Publisher widget for each group. See [Content Page Personalization](../../personalizing-site-experience/experience-personalization/content-page-personalization.md) to learn more about personalizing experiences.
 
-Create personalized experiences to groups of users by customizing the content displayed in the Asset Publisher widget for each group. See [Content Page Personalization](../../personalizing-site-experience/experience-personalization/content-page-personalization.md) to learn more about personalizing experiences.
+With the Asset Publisher widget and collections in place, create an [experience](../../personalizing-site-experience/experience-personalization/creating-and-managing-experiences.md) to display content dynamically based on an audience.
 
-With the Asset Publisher widget and the collections in place, create an [experience](../../personalizing-site-experience/experience-personalization/creating-and-managing-experiences.md) to display content dinamically based on an audience.
-
-1. Open the Select Experience modal by clicking Default next to the language flag on the top left of your page. [Create a new experience](../../personalizing-site-experience/experience-personalization/creating-and-managing-experiences.md) or select an existing one.
+1. Open the Select Experience modal by clicking *Default* next to the language flag on the top left of your page. [Create a new experience](../../personalizing-site-experience/experience-personalization/creating-and-managing-experiences.md) or select an existing one.
 
    If you have an experience in place, skip the next step.
 
@@ -150,11 +147,15 @@ With the Asset Publisher widget and the collections in place, create an [experie
 
    If there's no audience in place, click *New Segment* to create one. Read [Creating Segments](../../personalizing-site-experience/segmentation/creating-and-managing-user-segments.md) to learn more.
 
-   After creating the experience, you'll find it listed in the Select Experience modal.
+   After creating the experience, it appears listed in the Select Experience modal.
 
-1. To Arrange the experiences and prioritize the desired one, moving it upwards using the arrows to set it as active.
+1. Arrange the experiences and prioritize the desired one by moving it upwards using the arrows. Activate the experience by moving it above the Default experience. Read [Understanding How Experiences Work](../../personalizing-site-experience/experience-personalization/content-page-personalization.md#understanding-how-experiences-work) to learn more.
 
-1. Configure and edit your page, including the Asset Publisher widget and the content displayed in the widget. This version of the page will be displayed when the selected experience is active.
+1. After selecting an experience, configure and edit the page, including the Asset Publisher widget and the content displayed in the widget. This version of the page is displayed when the selected experience is active.
+
+Below, two experiences have been created: `Content for HR Employees` and `Content for IT Employees`. Each shows different categorized content to different audiences. You can also see the Default experience that shows all available content.
+
+![With two experiences in place, you can show 3 different sets of content.](./displaying-assets-using-the-asset-publisher-widget/images/06.gif)
 
 Create multiple experiences to showcase different content variations using the Asset Publisher widget.
 

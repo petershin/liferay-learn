@@ -7,6 +7,7 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: 63cf5a65-e211-4000-851a-f4bac83af29a
 ---
+
 # Sharing Documents with Other Users
 
 Using DXP's Documents and Media app, users can share files directly with each other.
@@ -35,7 +36,7 @@ To share a file, you must own that file or be an administrator. There are two wa
 
 1. Click on the file to be shared (for example, `speech.txt`).
 
-1. Click the *Info* button to expand the Info Panel.
+1. Click *Info* (![Info button](../../../../images/icon-information.png))to expand the Info Panel.
 
    ![Clicking on the Info button expands the Info Panel where the Share button is located.](./sharing-documents-with-other-users/images/02.png)
 
@@ -45,7 +46,7 @@ To share a file, you must own that file or be an administrator. There are two wa
 
 1. To let receiving users share the file, check the *Allow the document to be shared with other users* box.
 
-1. Select the file permissions to grant to receiving users. Select a file permission to grant to receiving users:
+1. Select the [file permissions](./documents-and-media-permissions-reference.md) to grant to receiving users. Select a file permission to grant to receiving users:
 
    - **Update:** View, comment, and update.
    - **Comments:** View and comment.
@@ -59,15 +60,18 @@ The file has been shared.
 
 ### Share a File Using Site Administration
 
-1. To access Site Administration, open the *Menu* (![Product Menu](../../../../images/icon-menu.png)) and click your site's name.
-1. Click *Content & Data* &rarr; *Documents and Media*.
+1. Open the *Site Menu* (![Product Menu](../../../../images/icon-menu.png)), navigate to *Content & Data*, and select *Documents and Media*.
+
 1. Navigate to the folder where the file to be shared is located (for example, the `HR` folder).
-1. Click the file's *Actions* (![Actions](../../../../images/icon-actions.png)) and select *Share*. 
+
+1. Click the file's *Actions* (![Actions](../../../../images/icon-actions.png)) and select *Share*.
 
    ![Click Actions &rarr; Share.](./sharing-documents-with-other-users/images/04.png)
 
 1. Enter the name or email address of the user you want to share the file with. To share the file with multiple users, enter each user's email address in a comma delimited list.
+
 1. To let receiving users also share the file, select *Allow the document to be shared with other users*.
+
 1. Select the file permissions to grant to receiving users:
 
    - **Update:** View, comment, and update.

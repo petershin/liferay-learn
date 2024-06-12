@@ -17,6 +17,11 @@ Many of Liferay's headless API endpoints support an external reference code (ERC
 
 Each ERC must be unique, and the same ERC cannot be used with another entity in the same scope. For example, a blog post and a document on the same site cannot have the same ERC. If you try, you'll get a `duplicate entry` error.
 
+!!! important
+    When using APIs with ERCs in the endpoint URL paths and the ERC contains slashes (`/`), the slashes must be encoded as `%252F` to prevent parsing errors and unexpected behavior in API calls.
+
+    For example, instead of `"http://localhost:8080/o/c/objectDefinition/by-external-reference-code/a/b"`, use `"http://localhost:8080/o/c/objectDefinition/by-external-reference-code/a%252Fb"`.
+
 ## Blog Post ERC Example
 
 Create and access a blog post with an ERC.
@@ -86,33 +91,6 @@ Create and access a blog post with an ERC.
    Note, this GET method for blog posts by ERC requires the site ID (e.g. `20119`) and the ERC (e.g. `blog_post_able`).
 
 Check out the [API Explorer](../using-liferay-as-a-headless-platform.md#ways-to-connect) to see the different API endpoints that support external reference codes.
-
-## ERC Behavior in API Endpoints
-
-{bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA126+`
-
-Slashes (`/`) are accepted in your ERCs. However, when dealing with APIs that include ERCs in their endpoint URL paths, it's important to understand how they are interpreted to avoid incorrect parsing and unexpected behavior in the API calls. Here are some observations to help understand the use of slashes in ERCs:
-
-- In general, you can use slashes or escape them as `%252F`.
-
-   For example. If the ERC is `a/b`, you can use it like `"http://localhost:8080/o/c/objectDefinition/by-external-reference-code/a/b"` or `"http://localhost:8080/o/c/objectDefinition/by-external-reference-code/a%252Fb"`.
-
-- Slashes must be escaped `%252F` whenever they can cause confusion or be misinterpreted as path delimiters in URLs. This misinterpretation can lead to incorrect parsing and unexpected behavior in the API calls.
-
-   For example, in the object relationship PUT endpoint (`http://localhost:8080/o/c/tests/[currentERC]/relationship/[relatedERC]`), failing to escape slashes in the `relatedERC` value can cause the endpoint to misinterpret the path segments.
-
-   Check the table below for different examples. Under `currentERC` and `relatedERC` there are examples of ERCs. The Result column indicates whether the URL is interpreted correctly. Misinterpretation occurs when the `currentERC` includes the relationship's name because of how the slash was parsed.
-
-   | `currentERC` | `relatedERC` |  Result  |
-   | :----------- | :----------- | :------: |
-   | `a/b`        | `c`          | &#10004; |
-   | `a%252Fb`    | `c`          | &#10004; |
-   | `a`          | `c/d`        | &#10060; |
-   | `a`          | `c%252Fd`    | &#10004; |
-   | `a/b`        | `c/d`        | &#10060; |
-   | `a%252Fb`    | `c%252Fd`    | &#10004; |
-   | `a%252Fb`    | `c/d`        | &#10060; |
-   | `a/b`        | `c%252Fd`    | &#10004; |
 
 ## Related Topics
 

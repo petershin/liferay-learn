@@ -10,7 +10,7 @@ taxonomy-category-names:
 
 # 7.4 Breaking Changes
 
-Breaking changes changes break or significantly alter existing functionality or code structure. Here are all of the breaking changes for Liferay 7.4, starting with the first quarterly release (2023 Q3). As the product changes and improves, we try our best to minimize these disruptions, but sometimes they are unavoidable.
+Breaking changes break or significantly alter existing functionality or code structure. Here are all of the breaking changes for Liferay 7.4, starting with the first quarterly release (2023 Q3). As the product changes and improves, we try our best to minimize these disruptions, but sometimes they are unavoidable.
 
 Read about 7.4 breaking changes from before 2023 Q3 in the [Liferay source code](https://github.com/liferay/liferay-portal/blob/master/readme/BREAKING_CHANGES.markdown).
 
@@ -27,10 +27,10 @@ Here is a list of changes that break or significantly alter existing functionali
 | **Confirming Permissions when Publishing Content**                | Users are prompted to confirm permissions for new content when initially published or saved, requiring an extra click. This is not required for updates or subsequent publishes.                                                                                             | [LPD-6769](https://liferay.atlassian.net/browse/LPD-6769)   |
 | **Date Shown in the Mine Content Filter**                         | The *Mine* content filter displays creation dates for content instead of modified dates.                                                                                                                                                                                     | [LPD-6830](https://liferay.atlassian.net/browse/LPD-6830)   |
 | **Date Shown in the Recent Content Filter**                       | The *Recent* content filter displays creation dates for content instead of modified dates.                                                                                                                                                                                   | [LPD-6828](https://liferay.atlassian.net/browse/LPD-6828)   |
-| **Virtual Hosts for Default Sites in Company XML Sitemaps**       | A new SEO menu is added to Instance Settings to select specific sites for the Company, and the default site cannot be removed from the list. If the default site has a Virtual Host defined, it is not added to the company's XML sitemap (though it is in the description). | [LPD-6672](https://liferay.atlassian.net/browse/LPD-6672)   |
-| **Removed Configuration Screens for Utility Pages**               | Configuration screens that are not relevant to utility pages are no longer shown when configuring them. The HTML Title, HTML Description, and SEO Configuration screens are still included.                                                                                  | [LPD-4459](https://liferay.atlassian.net/browse/LPD-4459)   |
+| **Virtual Hosts for Default Sites in Company XML Sitemaps**       | A new SEO menu is added to Instance Settings to select specific sites for the instance, and the default site cannot be removed from the list. If the default site has a Virtual Host defined, it is not added to the company's XML sitemap (though it is in the description). | [LPD-6672](https://liferay.atlassian.net/browse/LPD-6672)   |
+| **Removed Configuration Screens for Utility Pages**               | Configuration screens not relevant to utility pages no longer appear when configuring them. The HTML Title, HTML Description, and SEO Configuration screens are still included.                                                                                  | [LPD-4459](https://liferay.atlassian.net/browse/LPD-4459)   |
 | **Clearing Facet Selections for New Searches**                    | Searching with a new keyword (in the header's search bar or a search bar widget) clears all selected facets. The old behavior of keeping selected facets can be enabled via the *Retain Facet Selections Across Searches* option in the Search Options widget.               | [LPD-19994](https://liferay.atlassian.net/browse/LPD-19994) |
-| **`com.liferay.portal.kernel.util.RemotePreference` API Removed** | The `com.liferay.portal.kernel.util.RemotePreference` APi is removed. Any custom code using the `User.getRemotePreference(String)` or `User.getRemotePreferences()` methods is impacted. Instead, get the necessary cookies from the request to get remote preferences.      | [LPD-20659](https://liferay.atlassian.net/browse/LPD-20659) |
+| **`com.liferay.portal.kernel.util.RemotePreference` API Removed** | The `com.liferay.portal.kernel.util.RemotePreference` API is removed. Any custom code using the `User.getRemotePreference(String)` or `User.getRemotePreferences()` methods is impacted. Instead, get the necessary cookies from the request to get remote preferences.      | [LPD-20659](https://liferay.atlassian.net/browse/LPD-20659) |
 | **Localizations for Custom Objects**                              | Users can now set the localization for custom objects. Translatable object fields now use the preferred Locale given by the `DTOConverterContext`. Depending on your use case, adjust your code to add or remove the `Accept-Language` header.                               | [LPD-19561](https://liferay.atlassian.net/browse/LPD-19651) |
 
 ### Changes in Module Source Code
@@ -169,7 +169,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Date**: Feb. 21, 2024
 - **Ticket**: [LPD-18192](https://liferay.atlassian.net/browse/LPD-18192)
 - **What Changed**: The parameters in `getCTCollectionsPage`, `getCTCollectionsPageHttpResponse`, `postCTCollectionsPageExportBatch`, and `postCTCollectionsPageExportBatchHttpResponse` in multiple classes contained in `CTCollectionResource` are reordered.
-- **Reason**: This change sorts the parameters in a consistent order.
+- **Reason**: This change sorts the parameters consistently.
 
 **CTEntryResource.java**
 `modules/apps/change-tracking/change-tracking-rest-client/src/main/java/com/liferay/change/tracking/rest/client/resource/v1_0/CTEntryResource.java`
@@ -177,7 +177,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Date**: Feb. 21, 2024
 - **Ticket**: [LPD-18192](https://liferay.atlassian.net/browse/LPD-18192)
 - **What Changed**: The parameters in `getCtCollectionCTEntriesPage` and `getCtCollectionCTEntriesPageHttpResponse` in multiple classes contained in `CTEntryResource` are reordered.
-- **Reason**: This change sorts the parameters in a consistent order.
+- **Reason**: This change sorts the parameters consistently.
 
 **CTProcessResource.java**
 `modules/apps/change-tracking/change-tracking-rest-client/src/main/java/com/liferay/change/tracking/rest/client/resource/v1_0/CTProcessResource.java`
@@ -185,7 +185,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Date**: Feb. 21, 2024
 - **Ticket**: [LPD-18192](https://liferay.atlassian.net/browse/LPD-18192)
 - **What Changed**: The parameters in `getCTProcessesPage`, `getCTProcessesPageHttpResponse`, `postCTProcessesPageExportBatch`, and `postCTProcessesPageExportBatchHttpResponse` in multiple classes contained in `CTProcessResource` are reordered.
-- **Reason**: This change sorts the parameters in a consistent order.
+- **Reason**: This change sorts the parameters consistently.
 
 **rest-openapi.yaml**
 `modules/apps/change-tracking/change-tracking-rest-impl/rest-openapi.yaml`
@@ -193,7 +193,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Date**: Feb. 21, 2024
 - **Ticket**: [LPD-18192](https://liferay.atlassian.net/browse/LPD-18192)
 - **What Changed**: The parameters are reordered for the `getCTCollectionsPage`, `getCtCollectionCTEntriesPage`, and `getCTProcessesPage` APIs.
-- **Reason**: This change sorts the parameters in a consistent order.
+- **Reason**: This change sorts the parameters consistently.
 
 **CTCollectionResourceImpl.java**
 `modules/apps/change-tracking/change-tracking-rest-impl/src/main/java/com/liferay/change/tracking/rest/internal/resource/v1_0/CTCollectionResourceImpl.java`
@@ -201,7 +201,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Date**: Feb. 21, 2024
 - **Ticket**: [LPD-18192](https://liferay.atlassian.net/browse/LPD-18192)
 - **What Changed**: The parameters in `getCTCollectionsPage` and `postCTCollectionsPageExportBatch` are reordered.
-- **Reason**: This change sorts the parameters in a consistent order.
+- **Reason**: This change sorts the parameters consistently.
 
 **CTEntryResourceImpl.java**
 `modules/apps/change-tracking/change-tracking-rest-impl/src/main/java/com/liferay/change/tracking/rest/internal/resource/v1_0/CTEntryResourceImpl.java`
@@ -209,7 +209,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Date**: Feb. 21, 2024
 - **Ticket**: [LPD-18192](https://liferay.atlassian.net/browse/LPD-18192)
 - **What Changed**: The parameters in `getCtCollectionCTEntriesPage` are reordered.
-- **Reason**: This change sorts the parameters in a consistent order.
+- **Reason**: This change sorts the parameters consistently.
 
 **CTProcessResourceImpl.java**
 `modules/apps/change-tracking/change-tracking-rest-impl/src/main/java/com/liferay/change/tracking/rest/internal/resource/v1_0/CTProcessResourceImpl.java`
@@ -217,7 +217,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Date**: Feb. 21, 2024
 - **Ticket**: [LPD-18192](https://liferay.atlassian.net/browse/LPD-18192)
 - **What Changed**: The parameters in `getCTProcessesPage` are reordered.
-- **Reason**: This change sorts the parameters in a consistent order.
+- **Reason**: This change sorts the parameters consistently.
 
 **rest-openapi.yaml**
 `modules/apps/commerce/headless/headless-commerce/headless-commerce-admin-catalog-impl/rest-openapi.yaml`
@@ -225,7 +225,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Date**: Feb. 21, 2024
 - **Ticket**: [LPD-18192](https://liferay.atlassian.net/browse/LPD-18192)
 - **What Changed**: The parameters are reordered for the `getProductByExternalReferenceCodeRelatedProductsPage` and `getProductIdRelatedProductsPage` APIs.
-- **Reason**: This change sorts the parameters in a consistent order.
+- **Reason**: This change sorts the parameters consistently.
 
 **rest-openapi.yaml**
 `modules/apps/commerce/headless/headless-commerce/headless-commerce-admin-inventory-impl/rest-openapi.yaml`
@@ -233,7 +233,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Date**: Feb. 21, 2024
 - **Ticket**: [LPD-18192](https://liferay.atlassian.net/browse/LPD-18192)
 - **What Changed**: The parameters are reordered for the `getWarehouseItemsUpdatedPage` API.
-- **Reason**: This change sorts the parameters in a consistent order.
+- **Reason**: This change sorts the parameters consistently.
 
 **rest-openapi.yaml**
 `modules/apps/commerce/headless/headless-commerce/headless-commerce-delivery-cart-impl/rest-openapi.yaml`
@@ -241,7 +241,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Date**: Feb. 21, 2024
 - **Ticket**: [LPD-18192](https://liferay.atlassian.net/browse/LPD-18192)
 - **What Changed**: The parameters are reordered for the `getCartItemsPage` API.
-- **Reason**: This change sorts the parameters in a consistent order.
+- **Reason**: This change sorts the parameters consistently.
 
 **rest-openapi.yaml**
 `modules/apps/commerce/headless/headless-commerce/headless-commerce-delivery-catalog-impl/rest-openapi.yaml`
@@ -249,7 +249,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Date**: Feb. 21, 2024
 - **Ticket**: [LPD-18192](https://liferay.atlassian.net/browse/LPD-18192)
 - **What Changed**: The parameters are reordered for the `getChannelProductProductOptionProductOptionValuesPage`, `postChannelProductProductOptionProductOptionValuesPage`, and `getChannelProductRelatedProductsPage` APIs.
-- **Reason**: This change sorts the parameters in a consistent order.
+- **Reason**: This change sorts the parameters consistently.
 
 **rest-openapi.yaml**
 `modules/apps/headless/headless-admin-content/headless-admin-content-impl/rest-openapi.yaml`
@@ -257,7 +257,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Date**: Feb. 21, 2024
 - **Ticket**: [LPD-18192](https://liferay.atlassian.net/browse/LPD-18192)
 - **What Changed**: The parameters are reordered for the `getSiteDisplayPageTemplatesPage` and `getSiteStructuredContentsPage` APIs.
-- **Reason**: This change sorts the parameters in a consistent order.
+- **Reason**: This change sorts the parameters consistently.
 
 **KeywordResource.java**
 `modules/apps/headless/headless-admin-taxonomy/headless-admin-taxonomy-api/src/main/java/com/liferay/headless/admin/taxonomy/resource/v1_0/KeywordResource.java`
@@ -265,7 +265,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Date**: Feb. 21, 2024
 - **Ticket**: [LPD-18192](https://liferay.atlassian.net/browse/LPD-18192)
 - **What Changed**: The parameters in `getKeywordsRankedPage` are reordered.
-- **Reason**: This change sorts the parameters in a consistent order.
+- **Reason**: This change sorts the parameters consistently.
 
 **KeywordResource.java**
 `modules/apps/headless/headless-admin-taxonomy/headless-admin-taxonomy-client/src/main/java/com/liferay/headless/admin/taxonomy/client/resource/v1_0/KeywordResource.java`
@@ -273,7 +273,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Date**: Feb. 21, 2024
 - **Ticket**: [LPD-18192](https://liferay.atlassian.net/browse/LPD-18192)
 - **What Changed**: The parameters in `getKeywordsRankedPage` and `getKeywordsRankedPageHttpResponse` in multiple classes contained in `KeywordResource` are reordered.
-- **Reason**: This change sorts the parameters in a consistent order.
+- **Reason**: This change sorts the parameters consistently.
 
 **rest-openapi.yaml**
 `modules/apps/headless/headless-admin-taxonomy/headless-admin-taxonomy-impl/rest-openapi.yaml`
@@ -281,7 +281,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Date**: Feb. 21, 2024
 - **Ticket**: [LPD-18192](https://liferay.atlassian.net/browse/LPD-18192)
 - **What Changed**: The parameters are reordered for the `getAssetLibraryKeywordsPage`, `getAssetLibraryTaxonomyVocabulariesPage`, `getKeywordsRankedPage`, `getSiteKeywordsPage`, `getSiteTaxonomyVocabulariesPage`, `getTaxonomyCategoriesRankedPage`, `getTaxonomyCategoryTaxonomyCategoriesPage`, and `getTaxonomyVocabularyTaxonomyCategoriesPage` APIs.
-- **Reason**: This change sorts the parameters in a consistent order.
+- **Reason**: This change sorts the parameters consistently.
 
 **KeywordResourceImpl.java**
 `modules/apps/headless/headless-admin-taxonomy/headless-admin-taxonomy-impl/src/main/java/com/liferay/headless/admin/taxonomy/internal/resource/v1_0/KeywordResourceImpl.java`
@@ -289,7 +289,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Date**: Feb. 21, 2024
 - **Ticket**: [LPD-18192](https://liferay.atlassian.net/browse/LPD-18192)
 - **What Changed**: The parameters in `getKeywordsRankedPage` are reordered.
-- **Reason**: This change sorts the parameters in a consistent order.
+- **Reason**: This change sorts the parameters consistently.
 
 **RoleResource.java**
 `modules/apps/headless/headless-admin-user/headless-admin-user-api/src/main/java/com/liferay/headless/admin/user/resource/v1_0/RoleResource.java`
@@ -297,7 +297,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Date**: Feb. 21, 2024
 - **Ticket**: [LPD-18192](https://liferay.atlassian.net/browse/LPD-18192)
 - **What Changed**: The parameters in `getRolesPage` and `postRolesPageExportBatch` are reordered.
-- **Reason**: This change sorts the parameters in a consistent order.
+- **Reason**: This change sorts the parameters consistently.
 
 **RoleResource.java**
 `modules/apps/headless/headless-admin-user/headless-admin-user-client/src/main/java/com/liferay/headless/admin/user/client/resource/v1_0/RoleResource.java`
@@ -305,7 +305,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Date**: Feb. 21, 2024
 - **Ticket**: [LPD-18192](https://liferay.atlassian.net/browse/LPD-18192)
 - **What Changed**: The parameters in `getRolesPage`, `getRolesPageHttpResponse`, `postRolesPageExportBatch`, and `postRolesPageExportBatchHttpResponse` in multiple classes contained in `RoleResource` are reordered.
-- **Reason**: This change sorts the parameters in a consistent order.
+- **Reason**: This change sorts the parameters consistently.
 
 **rest-openapi.yaml**
 `modules/apps/headless/headless-admin-user/headless-admin-user-impl/rest-openapi.yaml`
@@ -313,7 +313,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Date**: Feb. 21, 2024
 - **Ticket**: [LPD-18192](https://liferay.atlassian.net/browse/LPD-18192)
 - **What Changed**: The parameters are reordered for the `getAccountAccountRolesByExternalReferenceCodePage`, `getAccountAccountRolesPage`, `getOrganizationsPage`, `getOrganizationChildOrganizationsPage`, `getOrganizationOrganizationsPage`, and `getRolesPage` APIs.
-- **Reason**: This change sorts the parameters in a consistent order.
+- **Reason**: This change sorts the parameters consistently.
 
 **RoleResourceImpl.java**
 `modules/apps/headless/headless-admin-user/headless-admin-user-impl/src/main/java/com/liferay/headless/admin/user/internal/resource/v1_0/RoleResourceImpl.java`
@@ -321,7 +321,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Date**: Feb. 21, 2024
 - **Ticket**: [LPD-18192](https://liferay.atlassian.net/browse/LPD-18192)
 - **What Changed**: The parameters in `getRolesPage` are reordered.
-- **Reason**: This change sorts the parameters in a consistent order.
+- **Reason**: This change sorts the parameters consistently.
 
 **rest-openapi.yaml**
 `modules/apps/headless/headless-admin-workflow/headless-admin-workflow-impl/rest-openapi.yaml`
@@ -329,7 +329,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Date**: Feb. 21, 2024
 - **Ticket**: [LPD-18192](https://liferay.atlassian.net/browse/LPD-18192)
 - **What Changed**: The parameters are reordered for the `getWorkflowInstanceWorkflowLogsPage`, `getWorkflowTasksAssignedToRolePage`, and `getWorkflowTaskWorkflowLogsPage` APIs.
-- **Reason**: This change sorts the parameters in a consistent order.
+- **Reason**: This change sorts the parameters consistently.
 
 **rest-openapi.yaml**
 `modules/apps/headless/headless-delivery/headless-delivery-impl/rest-openapi.yaml`
@@ -337,7 +337,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Date**: Feb. 21, 2024
 - **Ticket**: [LPD-18192](https://liferay.atlassian.net/browse/LPD-18192)
 - **What Changed**: The parameters are reordered for the `getAssetLibraryContentElementsPage`, `getAssetLibraryContentSetByKeyContentSetElementsPage`, `getAssetLibraryContentSetByUuidContentSetElementsPage`, `getAssetLibraryContentStructuresPage`, `getAssetLibraryContentTemplatesPage`, `getAssetLibraryDocumentFoldersPage`, `getAssetLibraryDocumentsPage`, `getAssetLibraryStructuredContentFoldersPage`, `getAssetLibraryStructuredContentsPage`, `getBlogPostingCommentsPage`, `getCommentCommentsPage`, `getContentSetContentSetElementsPage`, `getContentStructureStructuredContentsPage`, `getDocumentFolderDocumentsPage`, `getDocumentFolderDocumentFoldersPage`, `getDocumentCommentsPage`, `getKnowledgeBaseArticleKnowledgeBaseArticlesPage`, `getKnowledgeBaseFolderKnowledgeBaseArticlesPage`, `getKnowledgeBaseFolderKnowledgeBaseFoldersPage`, `getMessageBoardMessageMessageBoardMessagesPage`, `getMessageBoardSectionMessageBoardThreadsPage`, `getMessageBoardSectionMessageBoardSectionsPage`, `getMessageBoardThreadsRankedPage`, `getMessageBoardThreadMessageBoardMessagesPage`, `getSiteBlogPostingImagesPage`, `getSiteBlogPostingsPage`, `getSiteContentElementsPage`, `getSiteContentSetByKeyContentSetElementsPage`, `getSiteContentSetByUuidContentSetElementsPage`, `getSiteContentStructuresPage`, `getSiteContentTemplatesPage`, `getSiteDocumentFoldersPage`, `getSiteDocumentsPage`, `getSiteKnowledgeBaseArticlesPage`, `getSiteKnowledgeBaseFoldersPage`, `getSiteMessageBoardMessagesPage`, `getSiteMessageBoardSectionsPage`, `getSiteMessageBoardThreadsPage`, `getSiteNavigationMenusPage`, `getSiteSitePagesPage`, `getSiteStructuredContentFoldersPage`, `getSiteStructuredContentsPage`, `getSiteWikiNodesPage`, `getStructuredContentFolderStructuredContentFoldersPage`, `getStructuredContentFolderStructuredContentsPage`, `getStructuredContentCommentsPage`, and `getWikiNodeWikiPagesPage` APIs.
-- **Reason**: This change sorts the parameters in a consistent order.
+- **Reason**: This change sorts the parameters consistently.
 
 **rest-openapi.yaml**
 `modules/apps/headless/headless-user-notification/headless-user-notification-impl/rest-openapi.yaml`
@@ -345,7 +345,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Date**: Feb. 21, 2024
 - **Ticket**: [LPD-18192](https://liferay.atlassian.net/browse/LPD-18192)
 - **What Changed**: The parameters are reordered for the `getMyUserNotificationsPage` and `getUserAccountUserNotificationsPage` APIs.
-- **Reason**: This change sorts the parameters in a consistent order.
+- **Reason**: This change sorts the parameters consistently.
 
 **rest-openapi.yaml**
 `modules/apps/object/object-rest-impl/rest-openapi.yaml`
@@ -353,7 +353,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Date**: Feb. 21, 2024
 - **Ticket**: [LPD-18192](https://liferay.atlassian.net/browse/LPD-18192)
 - **What Changed**: The parameters are reordered for the `getObjectEntriesPage` and `getScopeScopeKeyPage` APIs.
-- **Reason**: This change sorts the parameters in a consistent order.
+- **Reason**: This change sorts the parameters consistently.
 
 **rest-openapi.yaml**
 `modules/apps/portal-search/portal-search-rest-impl/rest-openapi.yaml`
@@ -361,7 +361,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Date**: Feb. 21, 2024
 - **Ticket**: [LPD-18192](https://liferay.atlassian.net/browse/LPD-18192)
 - **What Changed**: The parameters are reordered for the `postSearchPage` API.
-- **Reason**: This change sorts the parameters in a consistent order.
+- **Reason**: This change sorts the parameters consistently.
 
 **rest-openapi.yaml**
 `modules/dxp/apps/commerce/headless/headless-commerce-machine-learning-impl/rest-openapi.yaml`
@@ -369,7 +369,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Date**: Feb. 21, 2024
 - **Ticket**: [LPD-18192](https://liferay.atlassian.net/browse/LPD-18192)
 - **What Changed**: The parameters are reordered for the `getSkuForecastsByMonthlyRevenuePage` API.
-- **Reason**: This change sorts the parameters in a consistent order.
+- **Reason**: This change sorts the parameters consistently.
 
 **rest-openapi.yaml**
 `modules/dxp/apps/portal-workflow/portal-workflow-metrics-rest-impl/rest-openapi.yaml`
@@ -377,7 +377,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Date**: Feb. 21, 2024
 - **Ticket**: [LPD-18192](https://liferay.atlassian.net/browse/LPD-18192)
 - **What Changed**: The parameters are reordered for the `getProcessMetricsPage`, `getProcessInstancesPage`, `getProcessNodeMetricsPage`, and `getProcessSLAsPage` APIs.
-- **Reason**: This change sorts the parameters in a consistent order.
+- **Reason**: This change sorts the parameters consistently.
 
 **rest-openapi.yaml**
 `modules/dxp/apps/search-experiences/search-experiences-rest-impl/rest-openapi.yaml`
@@ -385,7 +385,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Date**: Feb. 21, 2024
 - **Ticket**: [LPD-18192](https://liferay.atlassian.net/browse/LPD-18192)
 - **What Changed**: The parameters are reordered for the `postSearch` API.
-- **Reason**: This change sorts the parameters in a consistent order.
+- **Reason**: This change sorts the parameters consistently.
 
 **com-fedex-ws**
 `/modules/third-party/com-fedex-ws`
@@ -417,7 +417,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Date**: Feb. 26, 2024
 - **Ticket**: [LPD-13466](https://liferay.atlassian.net/browse/LPD-13466)
 - **What Changed**: The `addCPDefinitionSpecificationOptionValue` and `updateCPDefinitionSpecificationOptionValue` methods have reordered parameters. Additionally, the `updateCPDefinitionSpecificationOptionValue` method has a new `String` (`key`) parameter.
-- **Reason**: The new parameter is required to create fragments showing product specifications based on a key. The method parameters are reordered to properly sort them.
+- **Reason**: The new parameter is required to create fragments showing product specifications based on a key. The method parameters are reordered to sort them properly.
 
 **BaseDBPartitionTestCase.java**
 `modules/apps/portal/portal-db-partition-test-util/src/main/java/com/liferay/portal/db/partition/test/util/BaseDBPartitionTestCase.java`
@@ -449,7 +449,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Date**: Mar. 1, 2024
 - **Ticket**: [LPD-19219](https://liferay.atlassian.net/browse/LPD-19219)
 - **What Changed**: The `getAssetEntriesCount` method is removed. Additionally, the `getAssetEntries` method now returns an `InfoPage<AssetEntry>` instead of a `List<AssetEntry>`.
-- **Reason**: This change improves the performce of getting asset entry counts and search results.
+- **Reason**: This change improves the performance of getting asset entry counts and search results.
 
 **SimilarResultsContributor.java**
 `modules/dxp/apps/portal-search-similar-results/portal-search-similar-results-web-spi/src/main/java/com/liferay/portal/search/similar/results/web/spi/contributor/SimilarResultsContributor.java`
@@ -624,40 +624,40 @@ Here is a list of changes that break or significantly alter existing functionali
 
 - **Date**: Apr. 13, 2024
 - **Ticket**: [LPD-22843](https://liferay.atlassian.net/browse/LPD-22843)
-- **What Changed**: The `addOrUpdateTranslationEntry` method now has a new `String` (`languageId`) parameter.
-- **Reason**: This change is necessary to correctly perform translations.
+- **What Changed**: The `addOrUpdateTranslationEntry` method has a new `String` (`languageId`) parameter.
+- **Reason**: This change is necessary to perform translations correctly.
 
 **TranslationEntryLocalServiceUtil.java**
 `modules/apps/translation/translation-api/src/main/java/com/liferay/translation/service/TranslationEntryLocalServiceUtil.java`
 
 - **Date**: Apr. 13, 2024
 - **Ticket**: [LPD-22843](https://liferay.atlassian.net/browse/LPD-22843)
-- **What Changed**: The `addOrUpdateTranslationEntry` method now has a new `String` (`languageId`) parameter.
-- **Reason**: This change is necessary to correctly perform translations.
+- **What Changed**: The `addOrUpdateTranslationEntry` method has a new `String` (`languageId`) parameter.
+- **Reason**: This change is necessary to perform translations correctly.
 
 **TranslationEntryLocalServiceWrapper.java**
 `modules/apps/translation/translation-api/src/main/java/com/liferay/translation/service/TranslationEntryLocalServiceWrapper.java`
 
 - **Date**: Apr. 13, 2024
 - **Ticket**: [LPD-22843](https://liferay.atlassian.net/browse/LPD-22843)
-- **What Changed**: The `addOrUpdateTranslationEntry` method now has a new `String` (`languageId`) parameter.
-- **Reason**: This change is necessary to correctly perform translations.
+- **What Changed**: The `addOrUpdateTranslationEntry` method has a new `String` (`languageId`) parameter.
+- **Reason**: This change is necessary to perform translations correctly.
 
 **TranslationEntryService.java**
 `modules/apps/translation/translation-api/src/main/java/com/liferay/translation/service/TranslationEntryService.java`
 
 - **Date**: Apr. 13, 2024
 - **Ticket**: [LPD-22843](https://liferay.atlassian.net/browse/LPD-22843)
-- **What Changed**: The `addOrUpdateTranslationEntry` method now has a new `String` (`languageId`) parameter.
-- **Reason**: This change is necessary to correctly perform translations.
+- **What Changed**: The `addOrUpdateTranslationEntry` method has a new `String` (`languageId`) parameter.
+- **Reason**: This change is necessary to perform translations correctly.
 
 **TranslationEntryServiceUtil.java**
 `modules/apps/translation/translation-api/src/main/java/com/liferay/translation/service/TranslationEntryServiceUtil.java`
 
 - **Date**: Apr. 13, 2024
 - **Ticket**: [LPD-22843](https://liferay.atlassian.net/browse/LPD-22843)
-- **What Changed**: The `addOrUpdateTranslationEntry` method now has a new `String` (`languageId`) parameter.
-- **Reason**: This change is necessary to correctly perform translations.
+- **What Changed**: The `addOrUpdateTranslationEntry` method has a new `String` (`languageId`) parameter.
+- **Reason**: This change is necessary to perform translations correctly.
 
 **TranslationEntryServiceWrapper.java**
 `modules/apps/translation/translation-api/src/main/java/com/liferay/translation/service/TranslationEntryServiceWrapper.java`
@@ -665,7 +665,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Date**: Apr. 13, 2024
 - **Ticket**: [LPD-22843](https://liferay.atlassian.net/browse/LPD-22843)
 - **What Changed**: The `addOrUpdateTranslationEntry` method now has a new `String` (`languageId`) parameter.
-- **Reason**: This change is necessary to correctly perform translations.
+- **Reason**: This change is necessary to perform translations correctly.
 
 **CommerceOrderItemQuantityFormatter.java**
 `modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/util/CommerceOrderItemQuantityFormatter.java`
@@ -673,7 +673,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Date**: Apr. 17, 2024
 - **Ticket**: [LPD-3472](https://liferay.atlassian.net/browse/LPD-3472)
 - **What Changed**: New methods are added: `format(CommerceOrderItem, Locale)`, `parse(ActionRequest, String)`, and `parse(String, Locale)`.
-- **Reason**: This change is necessary to correctly parse non-US locale inputs for price and quantity.
+- **Reason**: This change is necessary to parse non-US locale inputs for price and quantity correctly.
 
 **CommerceQuantityFormatter.java**
 `modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/util/CommerceQuantityFormatter.java`
@@ -681,7 +681,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Date**: Apr. 17, 2024
 - **Ticket**: [LPD-3472](https://liferay.atlassian.net/browse/LPD-3472)
 - **What Changed**: A new `parse(String, Locale)` method is added.
-- **Reason**: This change is necessary to correctly parse non-US locale inputs for price and quantity.
+- **Reason**: This change is necessary to parse non-US locale inputs for price and quantity correctly.
 
 **ObjectEntryDTOConverter.java**
 `modules/apps/object/object-rest-impl/src/main/java/com/liferay/object/rest/internal/dto/v1_0/converter/ObjectEntryDTOConverter.java`
@@ -697,7 +697,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Date**: Apr. 18, 2024
 - **Ticket**: [LPD-19863](https://liferay.atlassian.net/browse/LPD-19863)
 - **What Changed**: The `addLayoutUtilityPageEntry` methods have new `String` (`friendlyURL`) and `boolean` (`privateLayout`) parameters.
-- **Reason**: This change allows utility pages to be created a public layout.
+- **Reason**: This change allows utility pages to be created in a public layout.
 
 **COREntryConfiguration.java**
 `modules/apps/commerce/commerce-order-rule-api/src/main/java/com/liferay/commerce/order/rule/configuration/COREntryConfiguration.java`
@@ -793,7 +793,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Date**: May 1, 2024
 - **Ticket**: [LPD-24745](https://liferay.atlassian.net/browse/LPD-24745)
 - **What Changed**: The `setService` method is removed.
-- **Reason**: The `AccountEntryLocalServiceUtil` class tracks the service via `Snapshot`, so there is no more need to set it explicitly.
+- **Reason**: The `AccountEntryLocalServiceUtil` class tracks the service via `Snapshot`, so setting it explicitly is no longer necessary.
 
 ### Changes in `portal-impl` Classes
 
@@ -827,7 +827,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Date**: Apr. 30, 2024
 - **Ticket**: [LPD-24699](https://liferay.atlassian.net/browse/LPD-24699)
 - **What Changed**: The `PortalSessionCreator` class is removed.
-- **Reason**: The logic is from `PortalSessionCreator` is moved into `DependencyManagerSyncUtil`'s `registerSyncCallable` method.
+- **Reason**: The logic from `PortalSessionCreator` is moved into `DependencyManagerSyncUtil`'s `registerSyncCallable` method.
 
 **PortalSessionDestroyer.java**
 `portal-impl/src/com/liferay/portal/servlet/PortalSessionDestroyer.java`
@@ -835,7 +835,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Date**: Apr. 30, 2024
 - **Ticket**: [LPD-24699](https://liferay.atlassian.net/browse/LPD-24699)
 - **What Changed**: The `PortalSessionDestroyer` class is removed.
-- **Reason**: The logic is from `PortalSessionCreator` is moved into `DependencyManagerSyncUtil`'s `registerSyncCallable` method.
+- **Reason**: The logic from `PortalSessionCreator` is moved into `DependencyManagerSyncUtil`'s `registerSyncCallable` method.
 
 ## Changes in `portal-kernel` Classes
 

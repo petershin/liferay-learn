@@ -11,7 +11,7 @@ uuid: c40b20e9-c296-4beb-9f33-62bb0ef39b9f
 
 # Configuring Caching for Documents and Media
 
-{bdg-secondary}`Liferay 7.4 U21+, GA21+ and 7.3 U23`
+{bdg-secondary}`Liferay 7.3 U23+, Liferay 7.4 U21+, GA21+`
 
 By default, Documents and Media files are not cached by browsers or servers. This is because file visibility generally depends on dynamic properties and configurations (e.g., permissions). However, you can enable and configure caching if desired.
 

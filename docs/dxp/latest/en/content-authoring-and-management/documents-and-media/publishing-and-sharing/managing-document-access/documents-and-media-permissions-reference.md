@@ -36,6 +36,13 @@ General permissions grant access to the Documents and Media application itself a
 | Preferences                                     | N/A                                                                                                                                      |
 | View                                            | View the Documents and Media application page.                                                                                           |
 
+{bdg-secondary}`{bdg-secondary}Liferay DXP 2024.Q3+/Portal 7.4 GA132+` When a document has restricted visibility, the Not Visible to Guest Users icon (![Not Visible to Guest Users icon](../../../../images/icon-password-policies.png)) is displayed next to the document's name in various situations, such as in the Documents and Media application while in List, Table, or Cards view modes,  when editing the document, or when selecting a document to display it on a page.
+
+!!! tip
+    If the Not Visible to Guest Users icon does not appear after managing the view permission for documents in the Documents and Media application, try refreshing your page.
+
+![Use the Not Visible to Guest Users icon to identify which documents have restrictions to their visibility.](./documents-and-media-permissions-reference/images/03.png)
+
 ## Resource Permissions
 
 Resource permissions grant access to view and act on resources in the Documents and Media application. Some of these permissions are for [creating entities](#documents), while others are for acting on existing entities (e.g., [folders](#documents-folder), [documents](#document)).

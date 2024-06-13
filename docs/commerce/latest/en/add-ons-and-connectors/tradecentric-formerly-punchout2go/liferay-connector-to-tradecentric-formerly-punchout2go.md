@@ -1,7 +1,7 @@
 ---
 uuid: 7c93ef53-24bd-4b70-a5c2-a1c23dc46f5e
 toc:
-  - ./liferay-connector-to-tradecentric-formerly-punchout2go/liferay-connector-to-tradecentric-formerly-punchout2go.md
+  - ./liferay-connector-to-tradecentric-formerly-punchout2go/liferay-commerce-2-1-liferay-commerce-connector-to-punchout2go.md
 taxonomy-category-names:
 - Commerce
 - Add-ons and Connectors

@@ -45,7 +45,7 @@ General permissions grant access to the Documents and Media application itself a
 
 ## Resource Permissions
 
-Resource permissions grant access to view and act on resources in the Documents and Media application. Some of these permissions are for [creating entities](#documents), while others are for acting on existing entities (e.g., [folders](#documents-folder), [documents](#document)).
+Resource permissions grant access to view and act on resources in the Documents and Media application. Some of these permissions are for [creating entities](#documents), while others are for acting on existing entities (e.g., [folders](#documents-folder), and [documents](#document)).
 
 ### Documents
 
@@ -79,19 +79,23 @@ Resource permissions grant access to view and act on resources in the Documents 
 ### Document
 
 | Permission        | Description                                                                                                                                                                                                          |
-|:------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| :---------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Add Discussion    | Add comments to documents.                                                                                                                                                                                           |
 | Delete            | Move documents to the recycle bin.                                                                                                                                                                                   |
 | Delete Discussion | Delete comments from documents.                                                                                                                                                                                      |
-| Download          | Download documents.                                                                                                                                                                                                  |
-| Override Checkout | Make changes to documents even when checked out by another user.                                                                                                                                               |
+| Download          | Download and view the actual contents of documents locally. Users with this permission can view the document without needing the "View" permission.                                                                  |
+| Override Checkout | Make changes to documents even when checked out by another user.                                                                                                                                                     |
 | Permissions       | View and modify document permissions.                                                                                                                                                                                |
 | Update            | Edit or move documents.                                                                                                                                                                                              |
 | Update Discussion | Edit document comments.                                                                                                                                                                                              |
 | View              | View documents. Users with this permission can view all document metadata (e.g., title, description, adaptive media images, previews, thumbnails) and anything defined in attached document types and metadata sets. |
 
 !!! important
-    For Liferay 7.4 U75/GA75 and earlier versions, the view permission grants users permission to download assets. For 7.4 U76+/GA76+, Documents and Media includes a separate download permission, so you can manage view and download access separately. When upgrading, Liferay automatically assigns the download permission to all roles with the view permission. By default all users, including unauthenticated users, can download files. If you want to limit download access, you must remove this permission from roles that should not be able to download files.
+    For Liferay 7.4 U75/GA75 and earlier, users could download assets with the View permission. Starting with 7.4 U76/GA76, the Download permission is separate, allowing distinct management of view and download access. During the upgrade, Liferay automatically assigns the download permission to roles with the view permission. By default, all users, including unauthenticated ones, can download files; to limit this, remove the download permission from specific roles.
+
+    With the View permission, users can see a document's metadata and file entry in Liferay but not its actual contents. Conversely, with the Download permission, users can retrieve and view the full document content locally.
+
+    For documents like images, viewing them in a browser requires downloading them to the local device, so users still need the Download permission to view images online. Understanding these distinctions is essential for effective permission management and access control.
 
 ### Shortcut
 

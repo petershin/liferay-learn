@@ -8,6 +8,7 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: 6f717fa5-9cf3-426e-9df3-b59517a62dc7
 ---
+
 # Translating Web Content
 
 {bdg-secondary}`Liferay DXP/Portal 7.3+`
@@ -28,7 +29,7 @@ Use the [translation interface](#manually-translating-web-content-articles-using
 
 ### Manually Translating Web Content Articles Using the Translation Interface
 
-1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)) and navigate to *Content & Data* &rarr; *Web Content*.
+1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)), expand *Content & Data*, and go to *Web Content*.
 
 1. Select the *Web Content* tab. Click *Actions* (![Actions icon](../../images/icon-actions.png)) for the content you want to translate, and select *Translate*.
 

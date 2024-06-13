@@ -7,6 +7,7 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: 807f6b22-c079-41e4-ac6c-38c2bf46e44b
 ---
+
 # Managing Translation Permissions
 
 The required permissions for translating content pages and web content depend on the translation method:
@@ -28,11 +29,11 @@ Translate permissions are language-specific and grant access to the Translate ac
 
 Follow these steps to assign Translate permissions for specific languages:
 
-1. Open the *Global Menu* ( ![Global Menu](../../images/icon-applications-menu.png) ), go to the *Control Panel* tab, and click *Roles*.
+1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Roles*.
 
-1. Click the *Actions* button ( ![Actions Button](../../images/icon-actions.png) ) for the desired role and select *Edit*.
+1. Click *Actions* (![Actions Button](../../images/icon-actions.png)) for the desired role and select *Edit*.
 
-   Alternatively, you can click the *Add* button ( ![Add Button](../../images/icon-add.png) ) to create a new role for translations.
+   Alternatively, you can click the *Add* button (![Add Button](../../images/icon-add.png)) to create a new role for translations.
 
 1. Click the *Define Permissions* tab and go to *Site and Asset Library Administration* &rarr; *Content & Data* &rarr; *Translation Processes* in the permissions sidebar menu.
 

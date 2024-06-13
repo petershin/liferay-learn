@@ -7,21 +7,21 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: 1b4947c4-5862-41d9-87ff-4e8bb5c8837a
 ---
+
 # Using Third Parties for Translation
 
 {bdg-secondary}`Available Liferay 7.4 U15+ and GA15+`
 
-Liferay can integrate with the following service APIs to generate automatic translations of Content Pages and Web Content.
+Liferay can integrate with the following service APIs to generate automatic translations of content pages and web content.
 
-* [Google Cloud Translation](#enabling-google-cloud-translation)
-* [Amazon Translate](#enabling-amazon-translate)
-* [Microsoft Translator](#enabling-microsoft-translator)
+- [Google Cloud Translation](#enabling-google-cloud-translation)
+- [Amazon Translate](#enabling-amazon-translate)
+- [Microsoft Translator](#enabling-microsoft-translator)
 
-To use this feature, you must first set up the translation service you are using and then enable it in Liferay's system settings. Once enabled, you can use the service to [generate translations](#using-automatic-translation) for Content Pages and Web Content.
+To use this feature, you must first set up the translation service you are using and then enable it in Liferay's system settings. Once enabled, you can use the service to [generate translations](#using-automatic-translation) for content pages and web content.
 
-```{important}
-Only one service can be active at a time. If you enable multiple services, the system uses the first one available.
-```
+!!! important
+    Only one service can be active at a time. If you enable multiple services, the system uses the first one available.
 
 ## Enabling Google Cloud Translation
 
@@ -85,19 +85,18 @@ Follow these steps to automatically translate fields:
 
 1. Open the *Pages* or *Web Content* application.
 
-1. Click the *Actions* button (![Actions Button](../../images/icon-actions.png)) for the content or Page you want to translate and select *Translate*.
+1. Click *Actions* (![Actions Button](../../images/icon-actions.png)) for the content or Page you want to translate and select *Translate*.
 
-   ![Open the Web Content translation interface.](./using-third-parties-for-translation/images/04.png)
+   ![Open the web content translation interface.](./using-third-parties-for-translation/images/04.png)
 
 1. Use the language flags to select the *languages* you want to translate.
 
-   ```{note}
-   The languages available for translation are determined by your instance's localization settings. See [Initial Instance Localization](../../installation-and-upgrades/setting-up-liferay/initial-instance-localization.md) and [Virtual Instance Localization](../../system-administration/configuring-liferay/virtual-instances/localization.md) for more information.
-   ```
+   !!! note
+       The languages available for translation are determined by your instance's localization settings. See [Initial Instance Localization](../../installation-and-upgrades/setting-up-liferay/initial-instance-localization.md) and [Virtual Instance Localization](../../system-administration/configuring-liferay/virtual-instances/localization.md) for more information.
 
-1. Click the *Auto Translate* button to translate all Web Content fields into the selected language.
+1. Click the *Auto Translate* button to translate all web content fields into the selected language.
 
-   ![Click the top left Auto Translate button to translate all Web Content fields.](./using-third-parties-for-translation/images/05.png)
+   ![Click the top left Auto Translate button to translate all web content fields.](./using-third-parties-for-translation/images/05.png)
 
    Alternatively, click a field's individual *Auto Translate* button (![Auto Translate Button](../../images/icon-translate.png)) to only translate its text.
 
@@ -107,5 +106,5 @@ Follow these steps to automatically translate fields:
 
 ## Related Topics
 
-* [Translating Web Content](./translating-web-content.md)
-* [Translating Content Pages](./translating-content-pages.md)
+- [Translating Web Content](./translating-web-content.md)
+- [Translating Content Pages](./translating-content-pages.md)

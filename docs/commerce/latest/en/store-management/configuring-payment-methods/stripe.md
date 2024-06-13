@@ -8,7 +8,7 @@ taxonomy-category-names:
 - Liferay SaaS
 ---
 
-# Using the Stripe Client Extension
+# Stripe
 
 {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+`
 
@@ -19,7 +19,7 @@ Liferay provides a client extension that integrates with [Stripe](https://stripe
 
 ## Install and Deploy the Stripe Client Extension
 
-1. Go to the [Liferay Marketplace](https://marketplace.liferay.com) and search for `Liferay Commerce Connector to Stripe`. Do not select the `Old Stripe Connector`.
+1. Go to the [Liferay Marketplace](https://marketplace.liferay.com) and search for `Liferay Commerce Connector to Stripe`.
 
 1. Click *Get App*, select your account or create one, and accept the end user license agreement and terms of service.
 

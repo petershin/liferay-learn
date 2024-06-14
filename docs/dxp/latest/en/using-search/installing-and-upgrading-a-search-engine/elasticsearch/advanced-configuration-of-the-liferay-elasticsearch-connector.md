@@ -54,6 +54,9 @@ Here's an example that shows how to configure [analysis](https://www.elastic.co/
 }
 ```
 
+!!! warning
+    Some index settings are given dedicated properties in the [Elasticsearch Connector](./elasticsearch-connector-configuration-reference.md#configuration-properties). Do not configure the same property in both the dedicated setting and in `additionalIndexConfigurations`.
+
 ### Adding Type Mappings
 
 {bdg-link-warning}`Requires Reindex`

@@ -25,7 +25,7 @@ function check_external_links {
 
 		if [[ "${url}" != *"localhost"* ]] && [[ "${url}" != "https://support.google.com"* ]]
 		then
-			if [[ $(curl -o /dev/null --silent --head --write-out "%{http_code}" "${url}") == "404" ]]
+			if [[ $(curl --head --location --output /dev/null --silent --write-out "%{http_code}" "${url}") == "404" ]]
 			then
 				_MARKDOWN_FILE_NAME=$(echo ${link} | cut -d':' -f1)
 

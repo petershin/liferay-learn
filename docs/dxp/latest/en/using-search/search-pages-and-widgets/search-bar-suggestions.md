@@ -19,9 +19,8 @@ Liferay's Search Bar Suggestions provides _search as you type_ functionality. As
 
 ![As you type, search results appear in a drop-down list.](./search-bar-suggestions/images/01.png)
 
-```{important}
-The search bar must be configured to use the default display template (i.e., [widget template](../../site-building/displaying-content/additional-content-display-options/styling-widgets-with-widget-templates.md)) to work with search bar suggestions.
-```
+!!! important
+    Only the default display template shows search bar suggestions out-of-the-box. Create a [widget template](../../site-building/displaying-content/additional-content-display-options/styling-widgets-with-widget-templates.md) for the [search bar](using-search-widget-display-templates.md) if you need a customized display.
 
 To learn how to use and configure Search Bar Suggestions, see [Configuring Search Bar Suggestions](./search-bar-suggestions/configuring-search-bar-suggestions.md)
 

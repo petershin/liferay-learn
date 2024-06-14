@@ -15,15 +15,9 @@ uuid: 23aa16e5-08ba-4fb6-bd49-a9370017ba3c
 ---
 # Liferay Enterprise Search
 
-A Liferay Enterprise Search (LES) subscription provides access to additional search features beyond what's available out of the box with your Liferay DXP subscription. To see a detailed description of the services and features included with LES on your version of Liferay DXP, refer to the official description of LES in the [Liferay DXP Components resource](https://help.liferay.com/hc/en-us/articles/360014400932). While LES is installed out of the box, a license is required to use its features. The activation article has more details:
+A Liferay Enterprise Search (LES) subscription provides access and support for additional search features. 
 
-- [Activating Liferay Enterprise Search](liferay-enterprise-search/activating-liferay-enterprise-search.md)
-
-```{note}
-LES customers receive a [platinum Elasticsearch license](https://www.elastic.co/subscriptions) from Liferay. There can be a delay between your subscription and receipt of the license, but you can enable a [30-day trial](https://www.elastic.co/guide/en/elasticsearch/reference/8.13/start-trial.html) to work with in the meantime.  
-```
-
-Detailed installation and usage instructions are available in the article for each LES feature, including
+Detailed installation and usage instructions are available in the documentation for each LES feature, including
 
 - [Cross Cluster Replication](liferay-enterprise-search/cross-cluster-replication.md)
 - [Learning to Rank](liferay-enterprise-search/learning-to-rank.md)
@@ -31,9 +25,15 @@ Detailed installation and usage instructions are available in the article for ea
 - [Search Experiences](liferay-enterprise-search/search-experiences.md)
 - [Securing Elasticsearch](installing-and-upgrading-a-search-engine/elasticsearch/securing-elasticsearch.md) [Free without LES for Liferay CE and DXP with Elasticsearch 7] 
 
-```{important}
-Always check the [LES compatibility matrix](https://help.liferay.com/hc/en-us/articles/360016511651#Liferay-Enterprise-Search) for compatibility information.
-```
+To see a detailed description of the services and features included with LES on your version of Liferay DXP, refer to the official description of LES in the [Liferay DXP Components resource](https://help.liferay.com/hc/en-us/articles/360014400932). While LES is installed out of the box in recent Liferay versions, it is unsupported without a subscription. The activation article has more details:
+
+- [Activating Liferay Enterprise Search](liferay-enterprise-search/activating-liferay-enterprise-search.md)
+
+!!! note
+    LES customers receive a [platinum Elasticsearch license](https://www.elastic.co/subscriptions) from Liferay. There can be a delay between your subscription and receipt of the license, but you can enable a [30-day trial](https://www.elastic.co/guide/en/elasticsearch/reference/8.13/start-trial.html) to work with in the meantime.  
+
+!!! important
+    Always check the [LES compatibility matrix](https://help.liferay.com/hc/en-us/articles/360016511651#Liferay-Enterprise-Search) for compatibility information.
 
 ## Cross Cluster Replication
 

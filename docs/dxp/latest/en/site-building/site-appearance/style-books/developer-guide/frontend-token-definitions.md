@@ -19,7 +19,7 @@ The visual rules of style books consist of options grouped into categories. For 
 Each option in the style book is defined with a token. The collection of all tokens defined for a theme is a _frontend token definition_. The frontend token definition is a JSON file provided by the theme CSS client extension, or via the theme in earlier releases.
 
 !!! note
-    Beginning with Liferay DXP 7.4 Q2/Portal 7.4 GA120, you can provide the frontend token definition in a [theme CSS client extension](../../../../liferay-development/customizing-liferays-look-and-feel/using-a-theme-css-client-extension.md) that you [apply to all the site's pages](../../../../liferay-development/customizing-liferays-look-and-feel/using-a-theme-css-client-extension.md#apply-the-theme-css-client-extension-to-a-page). Earlier releases required a theme module.
+    Beginning with Liferay DXP 2024.Q2/Portal 7.4 GA120, you can provide the frontend token definition in a [theme CSS client extension](../../../../liferay-development/customizing-liferays-look-and-feel/using-a-theme-css-client-extension.md) that you [apply to all the site's pages](../../../../liferay-development/customizing-liferays-look-and-feel/using-a-theme-css-client-extension.md#apply-the-theme-css-client-extension-to-a-page). Earlier releases required a theme module.
 
 When you apply the theme CSS client extension or assign a theme to your site's pages, the included frontend token definition is used when creating a [style book](../using-a-style-book-to-standardize-site-appearance.md) for the site.
 

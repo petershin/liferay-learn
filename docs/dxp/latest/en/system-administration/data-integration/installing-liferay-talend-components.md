@@ -45,20 +45,19 @@ Before you can install the Talend components, you must run `mvn clean install` i
 
 This generates a jar bundle file in the following directories/folders:
 
-* `talend-definition/target/`
-* `talend-common/target/`
-* `talend-runtime/target/`
+- `talend-definition/target/`
+- `talend-common/target/`
+- `talend-runtime/target/`
 
 JAR files are also published to these local maven repository folders:
 
-* `$USER_HOME/.m2/repository/com/liferay/com.liferay.talend`
-* `$USER_HOME/.m2/repository/com/liferay/com.liferay.common`
-* `$USER_HOME/.m2/repository/com/liferay/com.liferay.talend.definition`
-* `$USER_HOME/.m2/repository/com/liferay/com.liferay.talend.runtime`
+- `$USER_HOME/.m2/repository/com/liferay/com.liferay.talend`
+- `$USER_HOME/.m2/repository/com/liferay/com.liferay.common`
+- `$USER_HOME/.m2/repository/com/liferay/com.liferay.talend.definition`
+- `$USER_HOME/.m2/repository/com/liferay/com.liferay.talend.runtime`
 
-```{note}
-The Maven build succeeds only if all tests pass. If you encounter errors, execute `mvn clean install -DskipTests` in the `talend-definition`, `talend-common`, and `talend-runtime` sub-folders individually. If all builds are successful, return to `modules/etl/talend` folder and run `mvn clean install`.
-```
+!!! note
+    The Maven build succeeds only if all tests pass. If you encounter errors, execute `mvn clean install -DskipTests` in the `talend-definition`, `talend-common`, and `talend-runtime` sub-folders individually. If all builds are successful, return to `modules/etl/talend` folder and run `mvn clean install`.
 
 ## Registering the Components in Talend Studio
 
@@ -91,16 +90,14 @@ If there are changes in the Liferay components codebase, you can update your com
 
 You must also remove and replace old files and folders:
 
-* Remove the old `.jar` definition file in the `[TOS_ROOT]/plugins folder`.
-* Replace the `com.liferay.talend`, `com.liferay.talend.common`, and `com.liferay.talend.runtime` folders in `[TOS_ROOT]/configuration/.m2/repository/com/liferay/`.
+- Remove the old `.jar` definition file in the `[TOS_ROOT]/plugins folder`.
+- Replace the `com.liferay.talend`, `com.liferay.talend.common`, and `com.liferay.talend.runtime` folders in `[TOS_ROOT]/configuration/.m2/repository/com/liferay/`.
 
 Once the components finish updating, you must update any existing Talend jobs that used the old components. This involves removing the Liferay components from the job and adding them again.
 
-```{note}
-Be sure to document each component's configurations before replacing them. This helps ensure that your job maintains the same functionality as before.
-```
+!!! note
+    Be sure to document each component's configurations before replacing them. This helps ensure that your job maintains the same functionality as before.
 
 ## Related Topics
 
-* [Liferay Talend Components Overview](./liferay-talend-components-overview.md)
-* [Designing Talend Jobs Using Liferay Components](./designing-talend-jobs-using-liferay-talend-components.md)
+- [Liferay Talend Components Overview](./liferay-talend-components-overview.md)

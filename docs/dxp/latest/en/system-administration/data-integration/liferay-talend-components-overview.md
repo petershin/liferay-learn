@@ -30,5 +30,4 @@ With these components, you can create and run complex data flow management proce
 
 ## Related Topics
 
-* [Installing Liferay Talend Components](./installing-liferay-talend-components.md)
-* [Designing Talend Jobs Using Liferay Talend Components](./designing-talend-jobs-using-liferay-talend-components.md)
+- [Installing Liferay Talend Components](./installing-liferay-talend-components.md)

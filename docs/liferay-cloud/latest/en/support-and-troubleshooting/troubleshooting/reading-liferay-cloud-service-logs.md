@@ -113,6 +113,14 @@ To filter by a date range, use the date picker at the top-right corner. You cann
 
 You can also use the search bar to search for specific terms in log messages.
 
+### Viewing Continuous Log Updates
+
+By default, the logs shown on the Logs page only update when you refresh the page or manually update the date range (which includes up to the second the page is loaded by default). Click *Stream* to enable streaming new log messages while you view the Logs page. Any new log messages automatically appear at the bottom.
+
+![Click Stream to switch to streaming mode while viewing logs.](./reading-liferay-cloud-service-logs/images/06.png)
+
+Streaming log messages only stays enabled until the next time you load the page. While streaming is enabled, the controls to [filter by date or type](#searching-and-filtering-logs) are disabled.
+
 ## Accessing Logs via the Terminal
 
 Administrators and developers can also view logs via an OS terminal.

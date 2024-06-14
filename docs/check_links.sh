@@ -25,9 +25,20 @@ function check_external_links {
 
 		if [[ "${url}" != *"localhost"* ]] && [[ "${url}" != "https://support.google.com"* ]]
 		then
+			_MARKDOWN_FILE_NAME=$(echo ${link} | cut -d':' -f1)
+
+			if [[ $(echo ${1} | sed 's,[^a-z], ,g' | wc -w) -eq 3 ]]
+			then
+				local current_dir_name=$(echo ${_MARKDOWN_FILE_NAME} | cut -d'/' -f1-4)
+				if [[ ${checked_dirs} != *${current_dir_name}* ]]
+				then
+					echo "Checking ${current_dir_name}"
+					local checked_dirs+=$(echo "${current_dir_name} ")
+				fi
+			fi
+
 			if [[ $(curl --head --location --output /dev/null --silent --write-out "%{http_code}" "${url}") == "404" ]]
 			then
-				_MARKDOWN_FILE_NAME=$(echo ${link} | cut -d':' -f1)
 
 				_LINK_FILE_NAME=${url}
 

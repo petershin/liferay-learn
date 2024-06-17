@@ -7,17 +7,18 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: 044fab43-2666-4c99-ae59-e5c60fdc7516
 ---
+
 # Site Settings UI Reference
 
 Starting with Liferay DXP 7.4, the Site Settings application layout is consistent with other configuration areas, such as Instance Settings or System Settings.
 
-```{note}
-The Site Settings application changes significantly in Liferay DXP 7.4+. See [Site Settings UI Reference in Liferay DXP 7.2 and 7.3](#site-setting-ui-reference-in-liferay-dxp-7-2-and-7-3) below for information on previous versions.
-```
+!!! note
+    The Site Settings application changes significantly in Liferay DXP 7.4+. See [Site Settings UI Reference in Liferay DXP 7.2 and 7.3](#site-setting-ui-reference-in-liferay-dxp-72-and-73) below for information on previous versions.
 
 ## Accessing the Site Settings Application
 
 1. Go to Site Administration &rarr; *Configuration* &rarr; *Site Settings*.
+
 1. Click on a setting to open its configuration.
 
 You can find the following configuration areas:
@@ -57,9 +58,8 @@ By default, the Platform area includes the following settings:
 
 Use these settings to configure the Google Analytics options for your Site. You can also set the Piwik Analytics tracking code.
 
-```{note}
-In the Piwik configuration, enter the full script code including the script start and end tags.
-```
+!!! note
+    In the Piwik configuration, enter the full script code including the script start and end tags.
 
 If you require a different analytics service, you can add it. See [Adding a New Analytics Service](./adding-a-new-analytics-service.md) for more information and how to add additional fields for different analytics services.
 
@@ -92,7 +92,7 @@ By default, Site Configuration includes the Details and Site URL sections.
 
 ### Third Party
 
-Configure the PunchOut2Go Site setting for Liferay Commerce. For more information, see [Liferay Commerce Connector to PunchOut2Go Reference Guide](https://learn.liferay.com/w/commerce/add-ons-and-connectors/punchout2go/liferay-commerce-connector-to-punchout2go-reference-guide).
+Configure the TradeCentric Site setting for Liferay Commerce. For more information, see [Liferay Commerce Connector to TradeCentric Reference Guide](https://learn.liferay.com/w/commerce/add-ons-and-connectors/tradecentric-formerly-punchout2go/liferay-connector-to-tradecentric-reference-guide).
 
 ### Third Party Applications
 
@@ -139,9 +139,8 @@ You can see the type of configuration for this setting at the Instance scope und
 
 ![Find the type of configuration at the Instance scope under Site Settings Strategy.](./site-settings-ui-reference/images/23.png)
 
-```{note}
-Depending on your configuration at the Instance scope, you may not be able to update the configuration at Site scope. To verify your Instance Configuation, got to the Site Menu → Control Panel → Instance Settings → Content and Data → Click to Chat.
-```
+!!! note
+    Depending on your configuration at the Instance scope, you may not be able to update the configuration at Site scope. To verify your Instance Configuation, got to the Site Menu → Control Panel → Instance Settings → Content and Data → Click to Chat.
 
 ### Community Tools
 
@@ -156,9 +155,8 @@ You can integrate Liferay DXP with DocuSign to manage electronic signatures. The
 
 ![Find the type of configuration at the Instance scope under Site Settings Strategy.](./site-settings-ui-reference/images/24.png)
 
-```{note}
-Depending on your Digital Signature configuration at the Instance scope, you may not be able to update the configuration at Site scope. To verify your Instance Configuation, go to Site Menu → Control Panel → Instance Settings → Content and Data → Digital Signature. 
-```
+!!! note
+    Depending on your Digital Signature configuration at the Instance scope, you may not be able to update the configuration at Site scope. To verify your Instance Configuation, go to Site Menu → Control Panel → Instance Settings → Content and Data → Digital Signature. 
 
 ### Documents and Media
 
@@ -207,16 +205,15 @@ By default, the Other area includes the following settings:
 
 To view a Site's settings, open the Site Menu (![Site Menu](../../images/icon-product-menu.png)) and go to *Configuration* &rarr; *Settings*, where you'll see the following tabs:
 
-* [General](#general)
-* [Social](#social)
-* [Language](#language)
-* [Advanced](#advanced)
+- [General](#general)
+- [Social](#social)
+- [Language](#language)
+- [Advanced](#advanced)
 
 ![Site Settings are organized into four tabs.](./site-settings-ui-reference/images/01.png)
 
-```{note}
-Many of these settings can be localized to provide translations based on a user's locale. See [Introduction to Localization](https://help.liferay.com/hc/en-us/articles/360028746672-Introduction-to-Localization) and [Modifying Localizable Site Fields](./site-localization.md#modifying-localizable-site-fields) for more information.
-```
+!!! note
+    Many of these settings can be localized to provide translations based on a user's locale. See [Introduction to Localization](https://help.liferay.com/hc/en-us/articles/360028746672-Introduction-to-Localization) and [Modifying Localizable Site Fields](./site-localization.md#modifying-localizable-site-fields) for more information.
 
 ### General
 

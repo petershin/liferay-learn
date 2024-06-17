@@ -135,7 +135,12 @@ Here you can set parameters and manually filter specific assets:
 
 ## Displaying Content Dinamically Using Experiences
 
-Create personalized experiences for different groups of users by customizing the content displayed in the Asset Publisher widget for each group. See [Content Page Personalization](../../personalizing-site-experience/experience-personalization/content-page-personalization.md) to learn more about personalizing experiences.
+Once the Asset Publisher widget is ready to display content, you can create personalized experiences for different groups of users by customizing the content displayed in the Asset Publisher widget for each group. See [Content Page Personalization](../../personalizing-site-experience/experience-personalization/content-page-personalization.md) to learn more about personalizing experiences.
+
+<!-- !!! note
+    Before `Liferay DXP 2024.Q1+/Portal 7.4 GA112+`, you could use Custom User Attributes to show customized content to groups of users with matching custom user profile attributes. However, this option was [deprecated](../../../installation-and-upgrades/upgrading-liferay/reference/maintenance-mode-and-deprecations-in-7-4.md) as of `Liferay DXP 2024.Q1+/Portal 7.4 GA112+`.
+
+Replace the step mentioning the custom user attributes for this note once the deprecation is complete. Eric. -->
 
 With the Asset Publisher widget and collections in place, create an [experience](../../personalizing-site-experience/experience-personalization/creating-and-managing-experiences.md) to display content dynamically based on an audience.
 

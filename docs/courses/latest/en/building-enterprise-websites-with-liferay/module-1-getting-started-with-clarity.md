@@ -18,5 +18,3 @@ uuid: 5492f728-7111-4005-9f35-1397f6bbfd41
 This module tells the story of Clarity Vision Solutions, a fictional B2B manufacturer of eyewear products. You will learn about their pain points, how Liferay can help, and the enterprise marketing website you'll build for them.
 
 Up First: [The Clarity Story](./module-1-getting-started-with-clarity/the-clarity-story.md)
-
-

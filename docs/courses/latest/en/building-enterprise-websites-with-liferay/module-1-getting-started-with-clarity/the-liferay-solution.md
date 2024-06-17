@@ -2,13 +2,15 @@
 uuid: 4e517f86-fc12-44c5-89a7-35c9835a91b8
 ---
 # The Liferay Solution
-<!--TASK: Confirm that abstract works on learn-->
+
 !!! abstract
     Liferay can centralize and simplify Clarity's IT infrastructure and empower business team members so they can deliver on their critical success factors.
 
-Liferay DXP provides a complete enterprise-grade platform for building integrated and engaging websites at scale. With it, Clarity can unify their complex technical infrastructure, integrate their systems, and empower non-technical team members. This can help reduce costs and improve time-to-market.
+Liferay DXP provides a complete enterprise-grade platform for building integrated and engaging websites at scale. With it, Clarity can unify their complex technical infrastructure, integrate their systems, and empower non-technical team members. This can help reduce costs and improve time-to-market. <!--ALT: Liferay DXP has many core capabilities that will make it easier for Clarity to create and maintain effective solutions while reducing costs. When paired with Liferay’s enterprise-grade cloud infrastructure, Clarity can centralize and simplify their systems to empower their teams.-->
 
-Here we'll explore Liferay's core capabilities that can help Clarity deliver on their critical success factors.
+![Leverage Liferay's core capabilities to build ](./the-liferay-solution/images/01.png)
+
+Here we'll briefly explore some of Liferay's core capabilities that can help Clarity deliver on their critical success factors.
 
 ## Content Management System (CMS)
 
@@ -30,7 +32,7 @@ Liferay provides Clarity with robust product management features for maintaining
 
 ## Personalization
 
-Clarity can deliver more personalized and relevant content to users by leveraging Liferay's enhanced segmentation, AI-generated recommendations, and A/B testing. By personalizing content and pages based on user attributes, behaviors, and preferences, Clarity can build deeper connections with their audiences. 
+Clarity can deliver more personalized and relevant content to users by leveraging Liferay's enhanced segmentation, AI-generated recommendations, and A/B testing. By personalizing content and pages based on user attributes, behaviors, and preferences, Clarity can build deeper connections with their audiences.
 
 <!--TASK: Insert img ![]() -->
 
@@ -64,10 +66,16 @@ Liferay offers a complete, enterprise-grade cloud infrastructure for optimizing 
 
 <!--TASK: Insert img ![]() -->
 
+## Low-Code
+
+Liferay’s low-code capabilities and extensions empower Clarity to adapt the platform to their needs without incurring the overhead that usually comes with custom applications. Clarity can define data structures, implement business logic, and design intuitive user interfaces without needing to write a single line of code.
+
+<!--TASK: Insert img ![]() -->
+
 ## Conclusion
 
 Liferay DXP's core capabilities make it easier for Clarity to create and maintain effective solutions while reducing costs. When paired with Liferay's enterprise-grade cloud infrastructure, Clarity can centralize and simplify their systems to empower their teams.
 
-Now that you've learned about how Liferay can help Clarity deliver on their critical success factors and overcome their obstacles, let's explore the enterprise website you'll be building throughout this course. 
+Now that you've learned about how Liferay can help Clarity deliver on their critical success factors and overcome their obstacles, let's explore the enterprise website you'll be building throughout this course.
 
-Up Next: [Building Clarity on Liferay](./building-clarity-on-liferay.md)
+Next Up: [Building Clarity on Liferay](./building-clarity-on-liferay.md)

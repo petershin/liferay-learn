@@ -12,7 +12,7 @@ uuid: 1553a9b8-a964-40db-abd2-ee882863bfd9
 
 The Content Dashboard can export a spreadsheet (`.xls` file) of content related metadata for further analysis.
 
-To export the asset list to a spreadsheet follow these steps:
+To export the asset list to a spreadsheet,
 
 1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and navigate to *Applications* &rarr; *Content Dashboard*.
 

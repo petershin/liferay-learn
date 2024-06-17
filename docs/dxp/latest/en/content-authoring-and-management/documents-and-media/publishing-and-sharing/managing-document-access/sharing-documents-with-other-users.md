@@ -16,13 +16,14 @@ You can disable sharing. For instructions on this, see [Enabling and Configuring
 
 When you share, you grant some of your own permissions for that file to the receiving user. There are some important caveats:
 
-- You can only grant View, Comment, or Update permissions. For example, you can't grant Delete or Override Checkout permissions even if you have those permissions on the file.
-- You can only grant permissions you have on the file. For example, you can't grant Update permission if you only have View and Comment permissions on the file.
+- You can only grant View, Comment, or Update permissions, which means you can't grant Delete or Override Checkout permissions even if you have those permissions on the file.
+- You can only grant permissions you have on the file, which means you can't grant Update permission if you only have View and Comment permissions on the file.
 - You must grant at least View permission.
-- Traditional [role-based permissions](../../../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md) always take precedence over sharing permissions. So although sharing can extend permissions, it can't remove those granted via Roles in the portal.
+- Traditional [role-based permissions](../../../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md) always take precedence over sharing permissions. So, although sharing can extend permissions, it can't remove those granted via Roles in the portal.
 - By default, the Guest role has Add Discussion permission. This overlaps with the Comment permission in sharing. Therefore, all users can comment on a file regardless of whether the Comment permission was granted via sharing. You can change this by removing the Add Discussion permission from the Guest role.
 
-Also, note that the receiving user must be part of the same instance, but doesn't have to be a member of the same site.
+!!! note
+    The receiving user must be part of the same instance, but doesn't have to be a member of the same site.
 
 ## Sharing Files in Documents and Media
 
@@ -54,7 +55,7 @@ To share a file, you must own that file or be an administrator. There are two wa
 
    ![Select the permissions to grant to receiving users.](./sharing-documents-with-other-users/images/03.png)
 
-1. Click the *Share* button on the window pane.
+1. Click *Share* on the window pane.
 
 The file has been shared.
 
@@ -98,7 +99,7 @@ You can access files shared with you in three places:
 
 ## Managing Shared Files
 
-After sharing a file, you can un-share it or modify its permissions on a per-user basis. This can only be done by Administrators, the file's owner, or any user with Update permission and permission to share the file. You can take these actions from the file's Info panel in Documents and Media. Follow these steps:
+After sharing a file, you can un-share it or modify its permissions on a per-user basis. This can only be done by Administrators, the file's owner, or any user with Update permission and permission to share the file. You can take these actions from the file's Info panel in Documents and Media:
 
 1. Click the file in Documents and Media, then click *Info* (![Info](../../../../images/icon-information.png)) at the top-right. The file's Info panel slides out from the right.
 

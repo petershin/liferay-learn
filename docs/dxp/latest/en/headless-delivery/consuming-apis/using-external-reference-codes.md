@@ -18,9 +18,7 @@ Many of Liferay's headless API endpoints support an external reference code (ERC
 Each ERC must be unique, and the same ERC cannot be used with another entity in the same scope. For example, a blog post and a document on the same site cannot have the same ERC. If you try, you'll get a `duplicate entry` error.
 
 !!! important
-    When using APIs with ERCs in the endpoint URL paths and the ERC contains slashes (`/`), the slashes must be encoded as `%252F` to prevent parsing errors and unexpected behavior in API calls.
-
-    For example, instead of `"http://localhost:8080/o/c/objectDefinition/by-external-reference-code/a/b"`, use `"http://localhost:8080/o/c/objectDefinition/by-external-reference-code/a%252Fb"`.
+    You must not use [reserved characters](https://www.ibm.com/docs/en/cics-ts/6.x?topic=concepts-reserved-excluded-characters) in URLs or paths provided as inputs in command-line options. This includes using external reference codes with slashes (`/`) in endpoint URLs. See [W3School's HTML URL Encoding Reference](https://www.w3schools.com/tags/ref_urlencode.ASP) to learn more.
 
 ## Blog Post ERC Example
 

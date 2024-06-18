@@ -9,7 +9,7 @@ uuid: 46d35c26-a3bd-4862-bd28-a72a2caea135
 
 The [Elasticsearch connection](./connecting-to-elasticsearch.md) is configured using a [configuration file or via System Settings](./elasticsearch-connector-configuration-reference.md#configuration-files-and-system-settings-entries).
 
-The Elasticsearch connector has a lot of configuration options out of the box; most Elasticsearch settings can be configured by a similarly or identically named Liferay setting (e.g., `httpSSLEnabled`). If you need a special configuration, add the configuration options you need using the [advanced settings](./../elasticsearch/elasticsearch-connector-configuration-reference.md). Most of these special configurations will be adding or overriding settings and mappings. 
+The Elasticsearch connector has a lot of configuration options out of the box; most Elasticsearch settings can be configured by a similarly or identically named Liferay setting (e.g., `httpSSLEnabled`). If you need an Elasticsearch setting without a dedicated Liferay setting, add the configuration options you need using the [advanced settings](./../elasticsearch/elasticsearch-connector-configuration-reference.md). These are most often used for adding or overriding Elasticsearch settings and mappings. 
 
 * [Adding Index Configurations](#adding-index-configurations)
 * [Adding Type Mappings](#adding-type-mappings)
@@ -98,7 +98,7 @@ curl http://localhost:9200/liferay-20116/_mapping?pretty
 
 In the above URL, `liferay-20116` is the index name. Including it indicates that you want to see the mappings that were used to create the index with that name.
 
-See [here](https://www.elastic.co/guide/en/elasticsearch/reference/8.13/mapping-types.html) for more details on Elasticsearch's field datatypes.
+See [here](https://www.elastic.co/guide/en/elasticsearch/reference/8.13/mapping-types.html) for more details on Elasticsearch's field data types.
 
 The above example shows how a `fooName` field might be added to Liferay's type mapping. Because `fooName` is not an existing property in the mapping, it works fine. If you try to override an existing property mapping, index creation fails. Instead use the `overrideTypeMappings` setting to override `properties` in the mapping.
 
@@ -106,7 +106,7 @@ The above example shows how a `fooName` field might be added to Liferay's type m
 
 {bdg-link-warning}`Requires Reindex`
 
-Use `overrideTypeMappings` to override Liferay's default type mappings and exert control over how data is indexed into the [company and system indexes](../../search-administration-and-tuning/elasticsearch-indexes-reference.md). This is an advanced feature that should be used only if strictly necessary. If you set this value, the default mappings in Liferay's source code (for example, `liferay-type-mappings.json`) are ignored entirely, so include the whole mappings definition in this property, not just the segment you're modifying.
+Use `overrideTypeMappings` to override Liferay's default type mappings and exert control over how data is indexed into the [company and system indexes](../../search-administration-and-tuning/elasticsearch-indexes-reference.md). This is an advanced feature that should be used only if strictly necessary. If you set this value, the default mappings in Liferay's source code (for example, `liferay-type-mappings.json`) are ignored entirely, so include the whole mappings definition in this property, not only the segment you're modifying.
 
 To make a modification, find the entire list of the current mappings being used to create the index by navigating to the URL
 
@@ -164,7 +164,7 @@ Use the Additional Configurations (`additionalConfigurations`) field to define e
 
 ## Multi-line YAML Configurations
 
-If you configure the settings from the last section using an OSGi configuration file, you might find yourself needing to write YAML snippets that span multiple lines. The syntax for that is straightforward and just requires appending each line with `\n\`, like this:
+If you configure the settings from the last section using an OSGi configuration file, you might find yourself needing to write YAML snippets that span multiple lines. Append each line with `\n\`, like this:
 
 ```yaml
 additionalConfigurations=\

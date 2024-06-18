@@ -67,6 +67,5 @@ The new Shipping Option has been added and is available during the checkout proc
 ## Related Topics
 
 * [Using the Variable Rate Shipping Method](./using-the-variable-rate-shipping-method.md)
-* [Using FedEx as a Carrier Method](./using-the-fedex-shipping-method.md)
 * [Applying Shipping Method Restrictions](./applying-shipping-method-restrictions.md)
 <!-- * [Implementing a New Shipping Engine](../../developer-guide/sales/implementing-a-new-shipping-engine.md) -->

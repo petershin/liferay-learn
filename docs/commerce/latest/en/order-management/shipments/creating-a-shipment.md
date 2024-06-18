@@ -88,7 +88,7 @@ Once a shipment has been created, there are several further actions an order man
 ### Update the Shipping Status
 
 1. Click the _Details_ tab.
-1. Enter the name of the carrier in the _Carrier_ field (for example: USPS, FedEx, UPS)
+1. Enter the name of the carrier in the _Carrier_ field (for example: USPS, UPS)
 1. Enter the _Tracking Number_.
 1. Select a status from the _Status_ dropdown menu (for example: _Ready to be Shipped_).
 1. Click _Save_.

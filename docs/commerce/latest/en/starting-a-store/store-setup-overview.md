@@ -60,7 +60,7 @@ Liferay Commerce provides support for several third party payment processors and
 
 #### Collecting Applicable Taxes
 
-In order to collect the applicable taxes, Liferay Commerce has the ability to create tax categories and to set tax rates by address or by a fixed rate.
+To collect the applicable taxes, Liferay Commerce has the ability to create tax categories and to set tax rates by address or by a fixed rate.
 
 * [Creating Tax Categories](../pricing/configuring-taxes/creating-tax-categories.md)
 * [Setting Rates for Tax Calculations](../pricing/configuring-taxes/setting-rates-for-tax-calculations.md)
@@ -68,12 +68,11 @@ In order to collect the applicable taxes, Liferay Commerce has the ability to cr
 
 #### Shipping Products
 
-Liferay Commerce has several options to calculate shipping rates. Commerce Enterprise subscribers receive FedEx carrier integration out-of-the-box.
+Liferay Commerce has several options to calculate shipping rates.
 
 * [Shipping Methods](../store-management/configuring-shipping-methods.md)
 * [Variable Rate](../store-management/configuring-shipping-methods/using-the-variable-rate-shipping-method.md)
 * [Flat Rate](../store-management/configuring-shipping-methods/using-the-flat-rate-shipping-method.md)
-* [Using FedEx as a Carrier](../store-management/configuring-shipping-methods/using-the-fedex-shipping-method.md)
 
 ## Creating the Catalog
 

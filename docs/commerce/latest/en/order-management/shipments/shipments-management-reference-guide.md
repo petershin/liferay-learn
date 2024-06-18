@@ -20,7 +20,7 @@ This guide documents all the features in _Shipments Management_ menu. To access 
 | Account | This is the account that placed the order. |
 | Channel | This is the channel (store site) where the order was placed. |
 | Shipment Address | This is the account's shipping address. |
-| Tracking Number | This is the auto-generated track number created by the carrier (FedEx, UPS, DHL, the postal service, and so on) |
+| Tracking Number | This is the auto-generated track number created by the carrier (UPS, DHL, the postal service, and so on) |
 | Create Date | This is the date the shipment was created. |
 | Estimated Shipping Date | This is the estimated date the order will be shipped. |
 | Estimated Delivery Date | This is the estimated delivery date. |

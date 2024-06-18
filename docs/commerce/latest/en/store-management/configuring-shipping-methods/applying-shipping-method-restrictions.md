@@ -10,7 +10,7 @@ taxonomy-category-names:
 ---
 # Applying Shipping Method Restrictions
 
-You may need to apply a shipping restriction for your store to specific countries or regions. This means these countries are not available during the checkout process. These restrictions will apply to all shipping options for a particular shipping method. For example, restrictions applied to the _Flat Rate_ shipping method will not apply to the _Variable Rates_ shipping method.
+Your store may have shipping restrictions to specific countries or regions. This means these countries are not available during the checkout process. These restrictions apply to all shipping options for a particular shipping method. For example, restrictions applied to the _Flat Rate_ shipping method don't apply to the _Variable Rates_ shipping method.
 
 To apply a restriction:
 
@@ -24,10 +24,9 @@ To apply a restriction:
 
     ![Apply a shipping method restriction](./applying-shipping-method-restrictions/images/01.png)
 
-Your store is now restricted from shipping to those countries. Repeat these steps for all the other shipping methods such as _Variable Rate_ and _FedEx_. If you are customizing Liferay Commerce by adding additional carrier shipping methods (UPS, DHL, and so forth) through an extension point, you may want to include the same function to restrict delivery by region.
+Your store is now restricted from shipping to those countries. Repeat these steps for _Variable Rate_. If you are customizing Liferay Commerce by adding additional carrier shipping methods (UPS, DHL, and so forth) through an extension point, you may want to include the same function to restrict delivery by region.
 
 ## Related Topics
 
 * [Using the Flat Rate Shipping Method](./using-the-flat-rate-shipping-method.md)
 * [Variable Rate](./using-the-variable-rate-shipping-method.md)
-* [Using FedEx as a Carrier Method](./using-the-fedex-shipping-method.md)

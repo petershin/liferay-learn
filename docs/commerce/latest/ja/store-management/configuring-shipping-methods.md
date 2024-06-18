@@ -1,6 +1,5 @@
 ---
 toc:
-- ./configuring-shipping-methods/using-the-fedex-shipping-method.md
 - ./configuring-shipping-methods/using-the-flat-rate-shipping-method.md
 - ./configuring-shipping-methods/using-the-variable-rate-shipping-method.md
 - ./configuring-shipping-methods/applying-shipping-method-restrictions.md
@@ -16,7 +15,6 @@ Liferay Commerceは、いくつかの配送方法と配送業者をサポート�
 
 * [可変レート](./configuring-shipping-methods/using-the-variable-rate-shipping-method.md)
 * [一律料金](./configuring-shipping-methods/using-the-flat-rate-shipping-method.md)
-* [FedEx](./configuring-shipping-methods/using-the-fedex-shipping-method.md) （契約者）
 
 
 <!-- Commenting until developer guide is added back

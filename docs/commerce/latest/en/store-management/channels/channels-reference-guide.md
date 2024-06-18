@@ -76,7 +76,7 @@ Use this section to configure [payment methods](../../store-management/configuri
 
 ### Shipping Methods
 
-Use this section to configure the channel's shipment methods. See [flat rate](../../store-management/configuring-shipping-methods/using-the-flat-rate-shipping-method.md), [variable rate](../../store-management/configuring-shipping-methods/using-the-variable-rate-shipping-method.md), and [FedEx](../../store-management/configuring-shipping-methods/using-the-fedex-shipping-method.md) for more information on configuring these shipping methods.
+Use this section to configure the channel's shipment methods. See [flat rate](../../store-management/configuring-shipping-methods/using-the-flat-rate-shipping-method.md) and [variable rate](../../store-management/configuring-shipping-methods/using-the-variable-rate-shipping-method.md) for more information on configuring these shipping methods.
 
 ![Use the shipping methods section to configure shipment methods for your channel.](./channels-reference-guide/images/06.png)
 
@@ -198,7 +198,7 @@ Use this section to configure [payment methods](../../store-management/configuri
 
 #### Shipping Methods
 
-Use this section to configure the channel's shipment methods. See [flat rate](../../store-management/configuring-shipping-methods/using-the-flat-rate-shipping-method.md), [variable rate](../../store-management/configuring-shipping-methods/using-the-variable-rate-shipping-method.md), and [FedEx](../../store-management/configuring-shipping-methods/using-the-fedex-shipping-method.md) for more information on configuring these shipping methods.
+Use this section to configure the channel's shipment methods. See [flat rate](../../store-management/configuring-shipping-methods/using-the-flat-rate-shipping-method.md) and [variable rate](../../store-management/configuring-shipping-methods/using-the-variable-rate-shipping-method.md) for more information on configuring these shipping methods.
 
 ![Use the shipping methods section to configure shipment methods for your channel.](./channels-reference-guide/images/17.png)
 

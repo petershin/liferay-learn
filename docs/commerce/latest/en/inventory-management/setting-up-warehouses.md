@@ -9,7 +9,7 @@ taxonomy-category-names:
 ---
 # Setting Up Warehouses
 
-Warehouses represent physical locations where you store product inventory. To activate a warehouse, you must set its geolocation. The Fedex shipping method uses this geolocation to calculate shipping costs. Read [Using the Fedex Shipping Method](../store-management/configuring-shipping-methods/using-the-fedex-shipping-method.md) for more information. 
+Warehouses represent physical locations where you store product inventory. To activate a warehouse, you must set its geolocation.
 
 You can use a single warehouse to serve multiple channels or serve a single channel with multiple warehouses. When using the *Minium* or *Speedwell* accelerators, three sample warehouses serve one channel.
 

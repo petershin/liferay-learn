@@ -59,12 +59,11 @@ Liferay Commerceは、複数のサードパーティの支払い処理業者に�
 
 #### 商品の出荷
 
-Liferay Commerceには、送料を計算するためのいくつかのオプションがあります。 Commerce Enterpriseのサブスクライバーは、FedExのキャリア統合をすぐに利用できます。
+Liferay Commerceには、送料を計算するためのいくつかのオプションがあります.
 
 * [配送方法](../store-management/configuring-shipping-methods.md)
 * [可変レート](../store-management/configuring-shipping-methods/using-the-variable-rate-shipping-method.md)
 * [一律料金](../store-management/configuring-shipping-methods/using-the-flat-rate-shipping-method.md)
-* [FedExを運送業者として使用する](../store-management/configuring-shipping-methods/using-the-fedex-shipping-method.md)
 
 ## カタログの作成
 

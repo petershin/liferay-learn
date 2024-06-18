@@ -66,7 +66,7 @@ To learn more, see [Using MVC](../../developing-a-java-web-application/using-mvc
 
 ## Examine the JSP File
 
-The `<liferay-theme:defineObjects>` tag is included in the JSP to access the Liferay `User` object. Like many Liferay objects, the `User` object has an inherited `ExpandoBridge` service that includes a way to create (i.e. `addAttribute()`), set (i.e. `setAttribute()`), and get (i.e. `getAttribute()`) custom field values. See the [ExpandoBridge javadocs](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/expando/kernel/model/ExpandoBridge.html) to see all the interfaces's methods. 
+The `<liferay-theme:defineObjects>` tag is included in the JSP to access the Liferay `User` object. Like many Liferay objects, the `User` object has an inherited `ExpandoBridge` service that includes a way to create (i.e. `addAttribute()`), set (i.e. `setAttribute()`), and get (i.e. `getAttribute()`) custom field values. See the [ExpandoBridge javadocs](https://resources.learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/expando/kernel/model/ExpandoBridge.html) to see all the interfaces's methods. 
 
 ```{literalinclude} ./accessing-custom-fields-with-expando/resources/liferay-f5a3.zip/f5a3-web/src/main/resources/META-INF/resources/view.jsp
 :language: jsp

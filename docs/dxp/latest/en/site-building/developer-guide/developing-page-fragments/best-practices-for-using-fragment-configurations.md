@@ -18,7 +18,7 @@ When you are creating page fragments for your site with your own [configurations
 
 Malicious code can be inserted into [text field configurations](../reference/fragments/fragment-configuration-types-reference.md#text-configuration), wreaking havoc for other fragment users. You must escape fragment text values to guard against cross-site scripting (XSS) attacks.
 
-For generic cases, an HTML `escape()` method is available. See the [`HtmlUtil`](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/util/HtmlUtil.html) class for more information.
+For generic cases, an HTML `escape()` method is available. See the [`HtmlUtil`](https://resources.learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/util/HtmlUtil.html) class for more information.
 
 ```html
 <div class="fragment_38816">

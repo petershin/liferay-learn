@@ -153,7 +153,7 @@ The sample project shows a simple example where the `name` field is processed an
 
 1. The exception is set to `null`.
 
-The `processConcurrently()` method has two different signatures. One signature passes a SQL query as the source, as seen in this tutorial example. The other signature passes an array as the source. See the [BaseDBProcess javadocs](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/dao/db/BaseDBProcess.html#processConcurrently-java.lang.String-com.liferay.petra.function.UnsafeFunction-com.liferay.petra.function.UnsafeConsumer-java.lang.String-) to learn more.
+The `processConcurrently()` method has two different signatures. One signature passes a SQL query as the source, as seen in this tutorial example. The other signature passes an array as the source. See the [BaseDBProcess javadocs](https://resources.learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/dao/db/BaseDBProcess.html#processConcurrently-java.lang.String-com.liferay.petra.function.UnsafeFunction-com.liferay.petra.function.UnsafeConsumer-java.lang.String-) to learn more.
 
 ## Related Topics
 

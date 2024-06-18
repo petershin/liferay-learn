@@ -10,7 +10,7 @@ taxonomy-category-names:
 
 Liferay DXP provides injectable portlet artifacts for CDI called Portlet Predefined Beans, as specified by [JSR 362](https://jcp.org/en/jsr/detail?id=362).  There are two types of predefined beans:
 
-* Portlet Request Scoped Beans ([`@PortletRequestScoped`](https://learn.liferay.com/reference/latest/en/portlet-api/javax/portlet/annotations/PortletRequestScoped.html) 
+* Portlet Request Scoped Beans ([`@PortletRequestScoped`](https://resources.learn.liferay.com/reference/latest/en/portlet-api/javax/portlet/annotations/PortletRequestScoped.html) 
 
 * Dependent Scoped Beans ([`@Dependent` scoped](https://docs.oracle.com/javaee/7/api/javax/enterprise/context/Dependent.html))
 

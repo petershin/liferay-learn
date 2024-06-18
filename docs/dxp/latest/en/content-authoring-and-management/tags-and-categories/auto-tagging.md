@@ -32,12 +32,3 @@ Liferay connects to one of three providers (*OpenNLP, Google Cloud*, and *Micros
 
 ![Auto-tagging connects to a service that analyzes your text or images and returns the tags.](./auto-tagging/images/02.png)
 
-:::{grid-item-card} Configuring Asset Auto-Tagging
-:link: ./auto-tagging/configuring-asset-auto-tagging.md
-:::
-:::{grid-item-card} Auto-Tagging Assets
-:link: ./auto-tagging/auto-tagging-assets.md
-:::
-:::{grid-item-card} Auto-Tagging Images
-:link: ./auto-tagging/auto-tagging-images.md
-:::

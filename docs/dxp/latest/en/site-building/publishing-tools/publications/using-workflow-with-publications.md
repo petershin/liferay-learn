@@ -21,15 +21,55 @@ With Publications, changes are scoped to the environment where they are made (i.
 
 When contributors submit changes for approval, the workflow notification includes the environment where the changes were made. Reviewers must then switch to the appropriate environment before viewing and approving the changes.
 
+{bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA132+` Alternatively, the changes can be reviewed through the [Workflow tab while reviewing publication changes](#using-the-workflow-tab-while-reviewing-publication-changes).
+
 ![Workflow notifications indicate the environment where changes were made.](./using-workflow-with-publications/images/02.png)
 
-Reviewers must approve all changes before publishing them to production. Attempting to publish unapproved changes displays an error message.
-
-![Attempting to publish unapproved changes displays an error message.](./using-workflow-with-publications/images/03.png)
+!!! important
+    Reviewers must approve all changes before publishing them to production. Attempting to publish unapproved changes displays an error message.
 
 Once changes are approved, additional edits to the same entities are tracked as separate changes in the publication, each with its own workflow status.
 
-![Additional edits to the same entities are tracked as separate changes in the publication.](./using-workflow-with-publications/images/04.png)
+![Additional edits to the same entities are tracked as separate changes in the publication.](./using-workflow-with-publications/images/03.png)
+
+## Using the Workflow Tab While Reviewing Publication Changes
+
+{bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA132+`
+
+!!! important
+    Currently, this feature is behind a release feature flag (LPD-10703). Read [Release Feature Flags](../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information.
+
+<!-- It's still a dev ff, but LPD-28560 is supposed to change it to release. I'm skipping a step here... Eric -->
+
+An alternative to switching environments before viewing and approving changes is to use the Workflow tab while reviewing changes in publications. Within this tab, you can access information and perform actions such as assigning, approving, and rejecting tasks, similar to using the [Workflow application](../../../process-automation/workflow/using-workflows/reviewing-assets.md).
+
+To access and use the Workflow tab,
+
+1. Click the *Publications* drop-down menu and select *Review Changes*.
+
+1. Select the *Workflow* tab.
+
+   Task-related information is displayed in the tab: The workflow task's status, assignee, name, creation date, due date, usages, comments, and activities.
+
+1. Click *Assign to...* to assign the workflow task to an available user.
+
+1. Click *View Usages* to see where the element is used throughout the site.
+
+1. Click *[number] Comments* to view comments in the workflow task's page.
+
+1. Expand the *Activities* drop-down to view a list of task-related activities.
+
+In addition, you can use the Actions menu to access the following publication and workflow-related actions:
+
+![Use the actions menu to perform workflow-related tasks.](./using-workflow-with-publications/images/04.png)
+
+| Action                       | Description                                                         |
+| :--------------------------- | :------------------------------------------------------------------ |
+| Edit in [Publication's name] | Edit the element in the publication.                                |
+| Approve                      | Approve the workflow task.                                          |
+| Reject                       | Reject the workflow task.                                           |
+| Assign to...                 | Assign the workflow task to an available user.                      |
+| Discard                      | Discard the change. You are redirected to the Discard Changes page. |
 
 ## Related Topics
 

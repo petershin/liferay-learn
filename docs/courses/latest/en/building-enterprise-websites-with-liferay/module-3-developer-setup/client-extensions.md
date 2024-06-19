@@ -69,7 +69,7 @@ Generally speaking, OSGi plugins should only be used if your requirements are no
 
 * **Reduced Learning Curve**: Client extensions reduce the need for specialized Liferay knowledge and empower developers to use their preferred technologies and frameworks.
 
-* **Accelerated Development**: Due to their independence and flexibility, developers can enhance and iterate on client extensions much faster than OSGI Plugins.
+* **Accelerated Development**: Due to their independence and flexibility, developers can enhance and iterate on client extensions much faster than OSGi Plugins.
 
 * **Platform Deployment Support**: Client extensions support all of Liferay's deployment models (i.e., Self-Hosted, Liferay PaaS, and Liferay SaaS).
 
@@ -77,8 +77,8 @@ Client extensions should be your first choice when extending or customizing Life
 
 ## Conclusion
 
-Congratulations! You've completed Module 2: Developer Setup. Throughout this module, you set up a Liferay developer environment and explored the benefits of Liferay workspaces and client extensions.
+Congratulations! You've completed Module 3: Developer Setup. Throughout this module, you set up a Liferay developer environment and explored the benefits of Liferay workspaces and client extensions.
 
-In the next module, you'll learn about Liferay's deployment models.
+In the next module, you'll learn about Liferay's authentication and identity management features.
 
-Next Up: [Module 3: Deploying Liferay](../module-3-deploying-liferay.md)
+Next Up: [Module 4: Identity Management and SSO](../module-4-identity-management-and-sso.md)

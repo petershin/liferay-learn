@@ -61,7 +61,7 @@ The specific process for deploying client extensions depends on your Liferay hos
 !!! note "Deploying to Self-Hosted Instances"
     The following exercise assumes you're using Liferay SaaS. If you're self-hosting, navigate to the `client-extensions/` folder in your workspace and run this command: `../gradlew clean distBundleZip`. Alternatively, you can manually copy the `.zip` file to your server's `[Liferay Home]/osgi/client-extensions/` folder. See [Deploying to Your Liferay Instance](https://learn.liferay.com/w/dxp/liferay-development/client-extensions/working-with-client-extensions) for more information.
 
-Deploying client extensions to a SaaS environment requires the Liferay Cloud CLI tool you installed in [Module 2](../module-2-developer-setup/liferay-workspace.md#prerequisites). To do this,
+Deploying client extensions to a SaaS environment requires the Liferay Cloud CLI tool you installed in [Module 2](../module-3-developer-setup/liferay-workspace.md#prerequisites). To do this,
 
 1. Go to the `liferay-clarity-batch` folder.
 

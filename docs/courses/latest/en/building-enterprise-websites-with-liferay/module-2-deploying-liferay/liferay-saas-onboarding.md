@@ -50,6 +50,6 @@ The metrics and information available in the cloud console include:
 | Team       | List of current members who can access the console.                             |
 | Settings   | Relevant extension environment information.                                     |
 
-Congratulations! You've completed Module 3 - Deploying Liferay.
+Congratulations! You've completed Module 2: Deploying Liferay.
 
 Up Next: [Module 4 - Identity Management and SSO](../module-4-identity-management-and-sso.md)

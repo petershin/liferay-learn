@@ -118,8 +118,6 @@ While building this solution, we'll follow these Clarity personas as they contri
 
 ## Conclusion
 
-Congratulations! You've completed Module 1: Getting Started with Clarity.
+Congratulations! You've completed Module 1: Getting Started with Clarity. Now that we've learned about Clarity and how Liferay can help them overcome their obstacles, let's explore Liferay's deployment options and see which one is best for them.
 
-Now that we've learned about Clarity and how Liferay can help them overcome their obstacles, let's set up your training environment!
-
-Next Up: [Module 2: Developer Setup](../module-2-developer-setup.md)
+Next Up: [Module 2: Deploying Liferay](../module-2-deploying-liferay.md)

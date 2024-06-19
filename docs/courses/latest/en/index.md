@@ -19,8 +19,8 @@ Welcome to Liferay Courses! This set of practical guides will teach you how to b
 :link: ./building-enterprise-websites-with-liferay.md
 
 [Module 1: Getting Started with Clarity](./building-enterprise-websites-with-liferay/module-1-getting-started-with-clarity.md)
-[Module 2: Developer Setup](./building-enterprise-websites-with-liferay/module-2-developer-setup.md)
-[Module 3: Deploying Liferay](./building-enterprise-websites-with-liferay/module-3-deploying-liferay.md)
+[Module 2: Deploying Liferay](./building-enterprise-websites-with-liferay/module-2-deploying-liferay.md)
+[Module 3: Developer Setup](./building-enterprise-websites-with-liferay/module-3-developer-setup.md)
 :::
 
 :::{grid-item-card} Selling Liferay

@@ -3542,3 +3542,233 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Ticket**: [LPS-190994](https://liferay.atlassian.net/browse/LPS-190994)
 - **What Changed**: The scheduler framework no longer supports using an empty cron expression (or interval of `0`) to disable a job. Instead, use the component blacklist to disable specific scheduler components. Check the required class names in the error message shown when using an empty cron expression.
 - **Reason**: If a job should not be bootstrapped, it should not be registered with the scheduler framework.
+
+## Before Quarterly Releases
+
+These breaking changes came before the first quarterly release (2023 Q3).
+
+### Changes in `portal-impl` Classes
+
+**portal.properties**
+`portal-impl/src/portal.properties`
+
+- **Date**: Jan. 10, 2022
+- **Ticket**: [LPS-144693](https://liferay.atlassian.net/browse/LPS-144693)
+- **What Changed**: The `ehcache.socket.so.timeout` and `ehcache.socket.start.port` portal properties are removed.
+- **Reason**: These properties are no longer used.
+
+**portal.properties**
+`portal-impl/src/portal.properties`
+
+- **Date**: Jan. 18, 2022
+- **Ticket**: [LPS-145063](https://liferay.atlassian.net/browse/LPS-145063)
+- **What Changed**: The `verify.patch.levels.disabled` portal property is removed.
+- **Reason**: This property is no longer used.
+
+**portal.properties**
+`portal-impl/src/portal.properties`
+
+- **Date**: Jan. 18, 2022
+- **Ticket**: [LPS-145076](https://liferay.atlassian.net/browse/LPS-145076)
+- **What Changed**: The `auto.deploy.websphere.wsadmin.app.name.suffix` and `auto.deploy.websphere.wsadmin.properties.file.name` portal properties are removed.
+- **Reason**: These properties are no longer used.
+
+**portal.properties**
+`portal-impl/src/portal.properties`
+
+- **Date**: Jan. 25, 2022
+- **Ticket**: [LPS-145769](https://liferay.atlassian.net/browse/LPS-145769)
+- **What Changed**: The `browser.compatibility.ie.versions` portal property is removed.
+- **Reason**: This property is no longer used.
+
+**portal.properties**
+`portal-impl/src/portal.properties`
+
+- **Date**: Jan. 25, 2022
+- **Ticket**: [LPS-145853](https://liferay.atlassian.net/browse/LPS-145853)
+- **What Changed**: The `control.panel.navigation.max.sites` portal property is removed.
+- **Reason**: This property is no longer used.
+
+**portal.properties**
+`portal-impl/src/portal.properties`
+
+- **Date**: Jan. 27, 2022
+- **Ticket**: [LPS-145171](https://liferay.atlassian.net/browse/LPS-145171)
+- **What Changed**: The `wsadmin.py`, `auto.deploy.websphere.wsadmin.app.manager.install.options`, `auto.deploy.websphere.wsadmin.app.manager.list.options`, `auto.deploy.websphere.wsadmin.app.manager.update.options`, and `auto.deploy.websphere.wsadmin.app.manager.query` portal properties are removed.
+- **Reason**: These properties are no longer used.
+
+**wsadmin.py**
+`portal-impl/src/com/liferay/portal/deploy/dependencies/wsadmin.py`
+
+- **Date**: Jan. 27, 2022
+- **Ticket**: [LPS-145171](https://liferay.atlassian.net/browse/LPS-145171)
+- **What Changed**: The `wsadmin.py` file is removed.
+- **Reason**: The file was deprecated and no longer used.
+
+**portal.properties**
+`portal-impl/src/portal.properties`
+
+- **Date**: Jan. 27, 2022
+- **Ticket**: [LPS-145345](https://liferay.atlassian.net/browse/LPS-145345)
+- **What Changed**: The `default.guest.public.layout.column-1`, `default.guest.public.layout.column-2`, `default.guest.public.layout.column-3`, and `default.guest.public.layout.column-4` portal properties are removed.
+- **Reason**: These properties are no longer used.
+
+**portal.properties**
+`portal-impl/src/portal.properties`
+
+- **Date**: Jan. 27, 2022
+- **Ticket**: [LPS-146148](https://liferay.atlassian.net/browse/LPS-146148)
+- **What Changed**: The `control.panel.navigation.max.organizations` portal property is removed.
+- **Reason**: This property is no longer used.
+
+**portal.properties**
+`portal-impl/src/portal.properties`
+
+- **Date**: Jan. 31, 2022
+- **Ticket**: [LPS-145771](https://liferay.atlassian.net/browse/LPS-145771)
+- **What Changed**: The `portlet.url.generate.by.path.enabled` portal property is removed.
+- **Reason**: This property is no longer used.
+
+**portal.properties**
+`portal-impl/src/portal.properties`
+
+- **Date**: Feb. 4, 2022
+- **Ticket**: [LPS-146153](https://liferay.atlassian.net/browse/LPS-146153)
+- **What Changed**: The `layout.comments.enabled` portal property is removed.
+- **Reason**: This property is no longer used.
+
+**portal.properties**
+`portal-impl/src/portal.properties`
+
+- **Date**: Feb. 4, 2022
+- **Ticket**: [LPS-146376](https://liferay.atlassian.net/browse/LPS-146376)
+- **What Changed**: The `editor.wysiwyg.portal-web.docroot.html.portlet.mail.edit.jsp` and `editor.wysiwyg.portal-web.docroot.html.portlet.mail.edit_message.jsp` portal properties are removed.
+- **Reason**: These properties are no longer used.
+
+**portal.properties**
+`portal-impl/src/portal.properties`
+
+- **Date**: Feb. 8, 2022
+- **Ticket**: [LPS-145344](https://liferay.atlassian.net/browse/LPS-145344)
+- **What Changed**: The `verify.patch.levels.disabled` portal property is removed.
+- **Reason**: This property is no longer used.
+
+**portal.properties**
+`portal-impl/src/portal.properties`
+
+- **Date**: Feb. 10, 2022
+- **Ticket**: [LPS-145600](https://liferay.atlassian.net/browse/LPS-145600)
+- **What Changed**: The `multi.value.map.com.liferay.portal.convert.ConvertPermissionAlgorithm.convertResourcePermission` and `multi.value.map.com.liferay.portal.convert.ConvertPermissionAlgorithm.convertRoles` portal properties are removed.
+- **Reason**: These properties are no longer used.
+
+**portal.properties**
+`portal-impl/src/portal.properties`
+
+- **Date**: Feb. 10, 2022
+- **Ticket**: [LPS-145905](https://liferay.atlassian.net/browse/LPS-145905)
+- **What Changed**: The `pop.server.notifications.interval` portal property is removed.
+- **Reason**: This property is no longer used.
+
+**portal.properties**
+`portal-impl/src/portal.properties`
+
+- **Date**: Feb. 17, 2022
+- **Ticket**: [LPS-145571](https://liferay.atlassian.net/browse/LPS-145571)
+- **What Changed**: The `index.with.thread` portal property is removed.
+- **Reason**: This property is no longer used.
+
+**portal.properties**
+`portal-impl/src/portal.properties`
+
+- **Date**: Feb. 17, 2022
+- **Ticket**: [LPS-145595](https://liferay.atlassian.net/browse/LPS-145595)
+- **What Changed**: The `index.dump.compression.enabled` portal property is removed.
+- **Reason**: This property is no longer used.
+
+**portal.properties**
+`portal-impl/src/portal.properties`
+
+- **Date**: Feb. 28, 2022
+- **Ticket**: [LPS-145773](https://liferay.atlassian.net/browse/LPS-145773)
+- **What Changed**: The `users.list.views` portal property is removed.
+- **Reason**: This property is no longer used.
+
+**portal.properties**
+`portal-impl/src/portal.properties`
+
+- **Date**: Feb. 28, 2022
+- **Ticket**: [LPS-145904](https://liferay.atlassian.net/browse/LPS-145904)
+- **What Changed**: The `cluster.link.node.bootup.response.timeout` portal property is removed.
+- **Reason**: This property is no longer used.
+
+**portal.properties**
+`portal-impl/src/portal.properties`
+
+- **Date**: Feb. 28, 2022
+- **Ticket**: [LPS-145907](https://liferay.atlassian.net/browse/LPS-145907)
+- **What Changed**: The `rtl.css.excluded.paths.regexp` portal property is removed.
+- **Reason**: This property is no longer used.
+
+**portal.properties**
+`portal-impl/src/portal.properties`
+
+- **Date**: Feb. 28, 2022
+- **Ticket**: [LPS-145919](https://liferay.atlassian.net/browse/LPS-145919)
+- **What Changed**: The `scripting.jruby.compile.mode` portal property is removed.
+- **Reason**: This property is no longer used.
+
+**portal.properties**
+`portal-impl/src/portal.properties`
+
+- **Date**: Mar. 4, 2022
+- **Ticket**: [LPS-145906](https://liferay.atlassian.net/browse/LPS-145906)
+- **What Changed**: The `rss.publish.to.live.by.default` portal property is removed.
+- **Reason**: This property is no longer used.
+
+**portal.properties**
+`portal-impl/src/portal.properties`
+
+- **Date**: Mar. 4, 2022
+- **Ticket**: [LPS-145920](https://liferay.atlassian.net/browse/LPS-145920)
+- **What Changed**: The `calendar.publish.to.live.by.default` portal property is removed.
+- **Reason**: This property is no longer used.
+
+**portal.properties**
+`portal-impl/src/portal.properties`
+
+- **Date**: Mar. 4, 2022
+- **Ticket**: [LPS-146150](https://liferay.atlassian.net/browse/LPS-146150)
+- **What Changed**: The `zip.file.name.encoding` portal property is removed.
+- **Reason**: This property is no longer used.
+
+**portal.properties**
+`portal-impl/src/portal.properties`
+
+- **Date**: Mar. 4, 2022
+- **Ticket**: [LPS-146151](https://liferay.atlassian.net/browse/LPS-146151)
+- **What Changed**: The `my.sites.display.style` portal property is removed.
+- **Reason**: This property is no longer used.
+
+**portal.properties**
+`portal-impl/src/portal.properties`
+
+- **Date**: Mar. 4, 2022
+- **Ticket**: [LPS-147192](https://liferay.atlassian.net/browse/LPS-147192)
+- **What Changed**: The `asset.categories.properties.default` portal property is removed.
+- **Reason**: This property is no longer used.
+
+**portal.properties**
+`portal-impl/src/portal.properties`
+
+- **Date**: Mar. 9, 2022
+- **Ticket**: [LPS-145921](https://liferay.atlassian.net/browse/LPS-145921)
+- **What Changed**: The `dl.folder.icon.check.count`, `dl.file.entry.open.in.ms.office.manual.check.in.required`, `dl.file.entry.version.policy`, `dl.file.entry.thumbnail.video.frame.percentage`, `dl.file.entry.preview.document.depth`, and `dl.file.entry.preview.auto.create.on.upgrade` portal properties are removed.
+- **Reason**: These properties are no longer used.
+
+**portal.properties**
+`portal-impl/src/portal.properties`
+
+- **Date**: Mar. 18, 2022
+- **Ticket**: [LPS-148110](https://liferay.atlassian.net/browse/LPS-148110)
+- **What Changed**: The `portal.jaas.impl` and `portal.jaas.strict.password` portal properties are removed.
+- **Reason**: These properties are no longer used.

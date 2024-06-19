@@ -1,0 +1,8 @@
+Bundle-Name: Liferay P9Z0 API
+Bundle-SymbolicName: com.liferay.p9z0.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	com.liferay.p9z0.exception,\
+	com.liferay.p9z0.model,\
+	com.liferay.p9z0.service,\
+	com.liferay.p9z0.service.persistence

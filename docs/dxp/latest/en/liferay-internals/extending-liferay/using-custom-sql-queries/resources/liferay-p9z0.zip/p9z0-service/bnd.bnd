@@ -1,0 +1,7 @@
+Bundle-Name: Liferay P9Z0 Service
+Bundle-SymbolicName: com.liferay.p9z0.service
+Bundle-Version: 1.0.0
+Export-Package: com.liferay.p9z0.service.impl
+Liferay-Require-SchemaVersion: 1.0.0
+Liferay-Service: true
+-dsannotations-options: inherit

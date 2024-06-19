@@ -1128,7 +1128,7 @@ Here is a list of changes that break or significantly alter existing functionali
 ### Changes in Module Source Code
 
 **PersonalMenuEntry.java**
-[`modules/apps/product-navigation/product-navigation-personal-menu-api/src/main/java/com/liferay/product/navigation/personal/menu/PersonalMenuEntry.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/product-navigation/product-navigation-personal-menu-api/src/main/java/com/liferay/product/navigation/personal/menu/PersonalMenuEntry.java)
+`modules/apps/product-navigation/product-navigation-personal-menu-api/src/main/java/com/liferay/product/navigation/personal/menu/PersonalMenuEntry.java`
 
 - **Date**: Nov. 6, 2023
 - **Ticket**: [LPS-198527](https://liferay.atlassian.net/browse/LPS-198527)
@@ -1136,7 +1136,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Reason**: This change allows for loading a JS module at run-time by clicking on Personal Menu entries.
 
 **CacheControlConfiguration.java**
-[`modules/apps/document-library/document-library-web/src/main/java/com/liferay/document/library/web/internal/configuration/CacheControlConfiguration.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/document-library/document-library-web/src/main/java/com/liferay/document/library/web/internal/configuration/CacheControlConfiguration.java)
+`modules/apps/document-library/document-library-web/src/main/java/com/liferay/document/library/web/internal/configuration/CacheControlConfiguration.java`
 
 - **Date**: Nov. 6, 2023
 - **Ticket**: [LPS-200359](https://liferay.atlassian.net/browse/LPS-200359)
@@ -1144,7 +1144,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Reason**: This configuration is the new default to improve security.
 
 **BaseAMImageCounter.java**
-[`modules/apps/adaptive-media/adaptive-media-image-api/src/main/java/com/liferay/adaptive/media/image/counter/BaseAMImageCounter.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/adaptive-media/adaptive-media-image-api/src/main/java/com/liferay/adaptive/media/image/counter/BaseAMImageCounter.java)
+`modules/apps/adaptive-media/adaptive-media-image-api/src/main/java/com/liferay/adaptive/media/image/counter/BaseAMImageCounter.java`
 
 - **Date**: Nov. 7, 2023
 - **Ticket**: [LPS-197738](https://liferay.atlassian.net/browse/LPS-197738)
@@ -1152,7 +1152,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Reason**: This class helps implement `AMImageCounter` with common logic implementations.
 
 **BaseAMImageOptimizer.java**
-[`modules/apps/adaptive-media/adaptive-media-image-api/src/main/java/com/liferay/adaptive/media/image/optimizer/BaseAMImageOptimizer.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/adaptive-media/adaptive-media-image-api/src/main/java/com/liferay/adaptive/media/image/optimizer/BaseAMImageOptimizer.java)
+`modules/apps/adaptive-media/adaptive-media-image-api/src/main/java/com/liferay/adaptive/media/image/optimizer/BaseAMImageOptimizer.java`
 
 - **Date**: Nov. 7, 2023
 - **Ticket**: [LPS-197738](https://liferay.atlassian.net/browse/LPS-197738)
@@ -1160,7 +1160,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Reason**: This class helps implement `AMImageOptimizer` with common logic implementations.
 
 **DLFileEntryConfigurationProvider.java**
-[`modules/apps/document-library/document-library-api/src/main/java/com/liferay/document/library/configuration/DLFileEntryConfigurationProvider.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/document-library/document-library-api/src/main/java/com/liferay/document/library/configuration/DLFileEntryConfigurationProvider.java)
+`modules/apps/document-library/document-library-api/src/main/java/com/liferay/document/library/configuration/DLFileEntryConfigurationProvider.java`
 
 - **Date**: Nov. 7, 2023
 - **Ticket**: [LPS-197738](https://liferay.atlassian.net/browse/LPS-197738)
@@ -1200,7 +1200,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Reason**: This functionality is handled by `CPDefinitionLinkTypeRegistry`.
 
 **COREntryType.java**
-[`modules/apps/commerce/commerce-order-rule-api/src/main/java/com/liferay/commerce/order/rule/entry/type/COREntryType.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/commerce/commerce-order-rule-api/src/main/java/com/liferay/commerce/order/rule/entry/type/COREntryType.java)
+`modules/apps/commerce/commerce-order-rule-api/src/main/java/com/liferay/commerce/order/rule/entry/type/COREntryType.java`
 
 - **Date**: Nov. 8, 2023
 - **Ticket**: [COMMERCE-12306](https://liferay.atlassian.net/browse/COMMERCE-12306)
@@ -1208,7 +1208,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Reason**: This change is made to evaluate rules before creating an order.
 
 **CPContentHelper.java**
-[`modules/apps/commerce/commerce-product-content-api/src/main/java/com/liferay/commerce/product/content/helper/CPContentHelper.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/commerce/commerce-product-content-api/src/main/java/com/liferay/commerce/product/content/helper/CPContentHelper.java)
+`modules/apps/commerce/commerce-product-content-api/src/main/java/com/liferay/commerce/product/content/helper/CPContentHelper.java`
 
 - **Date**: Nov. 10, 2023
 - **Ticket**: [COMMERCE-12682](https://liferay.atlassian.net/browse/COMMERCE-12682)
@@ -1216,7 +1216,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Reason**: This change allows for retrieving images with a filter for images that are not allowed in an image gallery.
 
 **AccountConstants.java**
-[`modules/apps/account/account-api/src/main/java/com/liferay/account/constants/AccountConstants.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/account/account-api/src/main/java/com/liferay/account/constants/AccountConstants.java)
+`modules/apps/account/account-api/src/main/java/com/liferay/account/constants/AccountConstants.java`
 
 - **Date**: Nov. 15, 2023
 - **Ticket**: [COMMERCE-12813](https://liferay.atlassian.net/browse/COMMERCE-12813)
@@ -1224,7 +1224,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Reason**: This change allows feature flags to be based on specific Liferay DXP instances.
 
 **SharingDropdownItemFactory.java**
-[`modules/apps/sharing/sharing-api/src/main/java/com/liferay/sharing/display/context/util/SharingDropdownItemFactory.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/sharing/sharing-api/src/main/java/com/liferay/sharing/display/context/util/SharingDropdownItemFactory.java)
+`modules/apps/sharing/sharing-api/src/main/java/com/liferay/sharing/display/context/util/SharingDropdownItemFactory.java`
 
 - **Date**: Nov. 16, 2023
 - **Ticket**: [LPS-200202](https://liferay.atlassian.net/browse/LPS-200202)
@@ -1240,7 +1240,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Reason**: This class is no longer used.
 
 **ObjectFieldLocalServiceImpl.java**
-[`modules/apps/object/object-service/src/main/java/com/liferay/object/service/impl/ObjectFieldLocalServiceImpl.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/object/object-service/src/main/java/com/liferay/object/service/impl/ObjectFieldLocalServiceImpl.java)
+`modules/apps/object/object-service/src/main/java/com/liferay/object/service/impl/ObjectFieldLocalServiceImpl.java`
 
 - **Date**: Nov. 28, 2023
 - **Ticket**: [LPS-196717](https://liferay.atlassian.net/browse/LPS-196717)
@@ -1248,7 +1248,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Reason**: This change is needed for object field validation when creating one-to-one or one-to-many relationships.
 
 **ObjectRelationshipImpl.java**
-[`modules/apps/object/object-service/src/main/java/com/liferay/object/model/impl/ObjectRelationshipImpl.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/object/object-service/src/main/java/com/liferay/object/model/impl/ObjectRelationshipImpl.java)
+`modules/apps/object/object-service/src/main/java/com/liferay/object/model/impl/ObjectRelationshipImpl.java`
 
 - **Date**: Nov. 28, 2023
 - **Ticket**: [LPS-196717](https://liferay.atlassian.net/browse/LPS-196717)
@@ -1256,7 +1256,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Reason**: This change simplifies the logic implementation to allow for more code reuse.
 
 **ObjectRelationshipLocalServiceImpl.java**
-[`modules/apps/object/object-service/src/main/java/com/liferay/object/service/impl/ObjectRelationshipLocalServiceImpl.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/object/object-service/src/main/java/com/liferay/object/service/impl/ObjectRelationshipLocalServiceImpl.java)
+`modules/apps/object/object-service/src/main/java/com/liferay/object/service/impl/ObjectRelationshipLocalServiceImpl.java`
 
 - **Date**: Nov. 28, 2023
 - **Ticket**: [LPS-196717](https://liferay.atlassian.net/browse/LPS-196717)
@@ -1264,7 +1264,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Reason**: This change allows for methods to set properties when creating a one-to-one or one-to-many object relationship.
 
 **ObjectRelationshipServiceImpl.java**
-[`modules/apps/object/object-service/src/main/java/com/liferay/object/service/impl/ObjectRelationshipServiceImpl.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/object/object-service/src/main/java/com/liferay/object/service/impl/ObjectRelationshipServiceImpl.java)
+`modules/apps/object/object-service/src/main/java/com/liferay/object/service/impl/ObjectRelationshipServiceImpl.java`
 
 - **Date**: Nov. 28, 2023
 - **Ticket**: [LPS-196717](https://liferay.atlassian.net/browse/LPS-196717)
@@ -1292,7 +1292,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **What Changed**: The bundle version is increased to `20.0.0`.
 
 **CommercePaymentEntryLocalServiceImpl.java**
-[`modules/apps/commerce/commerce-payment-service/src/main/java/com/liferay/commerce/payment/service/impl/CommercePaymentEntryLocalServiceImpl.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/commerce/commerce-payment-service/src/main/java/com/liferay/commerce/payment/service/impl/CommercePaymentEntryLocalServiceImpl.java)
+`modules/apps/commerce/commerce-payment-service/src/main/java/com/liferay/commerce/payment/service/impl/CommercePaymentEntryLocalServiceImpl.java`
 
 - **Date**: Nov. 30, 2023
 - **Ticket**: [COMMERCE-12384](https://liferay.atlassian.net/browse/COMMERCE-12384)
@@ -1313,7 +1313,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Reason**: The class is being replaced by `BundleManagerUtil`.
 
 **EntityExtensionHandler.java**
-[`modules/apps/portal-vulcan/portal-vulcan-api/src/main/java/com/liferay/portal/vulcan/extension/EntityExtensionHandler.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/portal-vulcan/portal-vulcan-api/src/main/java/com/liferay/portal/vulcan/extension/EntityExtensionHandler.java)
+`modules/apps/portal-vulcan/portal-vulcan-api/src/main/java/com/liferay/portal/vulcan/extension/EntityExtensionHandler.java`
 
 - **Date**: Dec. 1, 2023
 - **Ticket**: [COMMERCE-12980](https://liferay.atlassian.net/browse/COMMERCE-12980)
@@ -1321,7 +1321,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Reason**: This change is required to pass `dtoConverterContext` with the correct user ID when converting the related unmodifiable system objects to DTO.
 
 **ExtensionProvider.java**
-[`modules/apps/portal-vulcan/portal-vulcan-api/src/main/java/com/liferay/portal/vulcan/extension/ExtensionProvider.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/portal-vulcan/portal-vulcan-api/src/main/java/com/liferay/portal/vulcan/extension/ExtensionProvider.java)
+`modules/apps/portal-vulcan/portal-vulcan-api/src/main/java/com/liferay/portal/vulcan/extension/ExtensionProvider.java`
 
 - **Date**: Dec. 1, 2023
 - **Ticket**: [COMMERCE-12980](https://liferay.atlassian.net/browse/COMMERCE-12980)
@@ -1393,7 +1393,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Reason**: The refactoring change is made for clarity and to keep the package name matching the class name. The `register` and `unregister` methods are removed because all out-of-the-box `DLProcessor` objects are now OSGi components.
 
 **CommerceOrderValidator.java**
-[`modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/order/CommerceOrderValidator.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/order/CommerceOrderValidator.java)
+`modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/order/CommerceOrderValidator.java`
 
 - **Date**: Dec. 2, 2023
 - **Ticket**: [COMMERCE-12309](https://liferay.atlassian.net/browse/COMMERCE-12309)
@@ -1401,7 +1401,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Reason**: This change helps with validation of products before they're added to a cart.
 
 **AssetDisplayPageEntry.java**
-[`modules/apps/asset/asset-display-page-api/src/main/java/com/liferay/asset/display/page/model/AssetDisplayPageEntry.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/asset/asset-display-page-api/src/main/java/com/liferay/asset/display/page/model/AssetDisplayPageEntry.java)
+`modules/apps/asset/asset-display-page-api/src/main/java/com/liferay/asset/display/page/model/AssetDisplayPageEntry.java`
 
 - **Date**: Dec. 2, 2023
 - **Ticket**: [LPS-200477](https://liferay.atlassian.net/browse/LPS-200477)
@@ -1409,7 +1409,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Reason**: The `plid` column was temporarily removed from the `AssetDisplayPageEntry` table, so this was added as an alternative method to retrieve the `plid`.
 
 **CommerceAddressService.java**
-[`modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/service/CommerceAddressService.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/service/CommerceAddressService.java)
+`modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/service/CommerceAddressService.java`
 
 - **Date**: Dec. 2, 2023
 - **Ticket**: [COMMERCE-12658](https://liferay.atlassian.net/browse/COMMERCE-12658)
@@ -1417,7 +1417,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Reason**: This change allows addresses to be assigned to specific Commerce channels.
 
 **CommerceShippingEngine.java**
-[`modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/model/CommerceShippingEngine.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/model/CommerceShippingEngine.java)
+`modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/model/CommerceShippingEngine.java`
 
 - **Date**: Dec. 2, 2023
 - **Ticket**: [COMMERCE-12879](https://liferay.atlassian.net/browse/COMMERCE-12879)
@@ -1425,7 +1425,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Reason**: This change allows for managing both standard OSGi components and client extensions.dard osgi components and client extensions
 
 **CETConfiguration.java**
-[`modules/apps/client-extension/client-extension-type-api/src/main/java/com/liferay/client/extension/type/configuration/CETConfiguration.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/client-extension/client-extension-type-api/src/main/java/com/liferay/client/extension/type/configuration/CETConfiguration.java)
+`modules/apps/client-extension/client-extension-type-api/src/main/java/com/liferay/client/extension/type/configuration/CETConfiguration.java`
 
 - **Date**: Dec. 4, 2023
 - **Ticket**: [LPS-202104](https://liferay.atlassian.net/browse/LPS-202104)
@@ -1433,7 +1433,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Reason**: Liferay DXP will use this field for the `${modifiedTimestamp}` variable for client extensions.
 
 **CETFactory.java**
-[`modules/apps/client-extension/client-extension-type-api/src/main/java/com/liferay/client/extension/type/factory/CETFactory.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/client-extension/client-extension-type-api/src/main/java/com/liferay/client/extension/type/factory/CETFactory.java)
+`modules/apps/client-extension/client-extension-type-api/src/main/java/com/liferay/client/extension/type/factory/CETFactory.java`
 
 - **Date**: Dec. 4, 2023
 - **Ticket**: [LPS-202104](https://liferay.atlassian.net/browse/LPS-202104)
@@ -1441,7 +1441,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Reason**: This change is made to make the API easier to understand, maintain, and extend. The new parameter allows for controlling variable substitutions in URL fields.
 
 **CETImplFactory.java**
-[`modules/apps/client-extension/client-extension-type-api/src/main/java/com/liferay/client/extension/type/factory/CETImplFactory.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/client-extension/client-extension-type-api/src/main/java/com/liferay/client/extension/type/factory/CETImplFactory.java)
+`modules/apps/client-extension/client-extension-type-api/src/main/java/com/liferay/client/extension/type/factory/CETImplFactory.java`
 
 - **Date**: Dec. 4, 2023
 - **Ticket**: [LPS-202104](https://liferay.atlassian.net/browse/LPS-202104)
@@ -1449,7 +1449,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Reason**: CET factory implementations are now responsible for constructing specific CET objects. This helps simplify implementation logic.
 
 **CET.java**
-[`modules/apps/client-extension/client-extension-type-api/src/main/java/com/liferay/client/extension/type/CET.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/client-extension/client-extension-type-api/src/main/java/com/liferay/client/extension/type/CET.java)
+`modules/apps/client-extension/client-extension-type-api/src/main/java/com/liferay/client/extension/type/CET.java`
 
 - **Date**: Dec. 4, 2023
 - **Ticket**: [LPS-202104](https://liferay.atlassian.net/browse/LPS-202104)
@@ -1510,7 +1510,7 @@ modules/apps/site/site-api/src/main/java/com/liferay/site/util/RecentGroupManage
 - **Reason**: This change is made to match the class name to the package name.
 
 **APIApplicationPublisher.java**
-[`modules/apps/headless/headless-builder/headless-builder-api/src/main/java/com/liferay/headless/builder/application/publisher/APIApplicationPublisher.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/headless/headless-builder/headless-builder-api/src/main/java/com/liferay/headless/builder/application/publisher/APIApplicationPublisher.java)
+`modules/apps/headless/headless-builder/headless-builder-api/src/main/java/com/liferay/headless/builder/application/publisher/APIApplicationPublisher.java`
 
 - **Date**: Dec. 5, 2023
 - **Ticket**: [LPS-203043](https://liferay.atlassian.net/browse/LPS-203043)
@@ -1518,7 +1518,7 @@ modules/apps/site/site-api/src/main/java/com/liferay/site/util/RecentGroupManage
 - **Reason**: This change encapsulates the logic and potentially avoids intracluster calls.
 
 **SegmentsExperimentLocalServiceImpl.java**
-[`modules/apps/segments/segments-service/src/main/java/com/liferay/segments/service/impl/SegmentsExperimentLocalServiceImpl.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/segments/segments-service/src/main/java/com/liferay/segments/service/impl/SegmentsExperimentLocalServiceImpl.java)
+`modules/apps/segments/segments-service/src/main/java/com/liferay/segments/service/impl/SegmentsExperimentLocalServiceImpl.java`
 
 - **Date**: Dec. 6, 2023
 - **Ticket**: [LRAC-15144](https://liferay.atlassian.net/browse/LRAC-15144)
@@ -1526,7 +1526,7 @@ modules/apps/site/site-api/src/main/java/com/liferay/site/util/RecentGroupManage
 - **Reason**: The new parameter is needed for the implementation logic.
 
 **SegmentsExperimentServiceImpl.java**
-[`modules/apps/segments/segments-service/src/main/java/com/liferay/segments/service/impl/SegmentsExperimentServiceImpl.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/segments/segments-service/src/main/java/com/liferay/segments/service/impl/SegmentsExperimentServiceImpl.java)
+`modules/apps/segments/segments-service/src/main/java/com/liferay/segments/service/impl/SegmentsExperimentServiceImpl.java`
 
 - **Date**: Dec. 6, 2023
 - **Ticket**: [LRAC-15144](https://liferay.atlassian.net/browse/LRAC-15144)
@@ -1534,21 +1534,21 @@ modules/apps/site/site-api/src/main/java/com/liferay/site/util/RecentGroupManage
 - **Reason**: The new parameter is needed for the implementation logic.
 
 **RatingsImporter.java**
-modules/apps/commerce/commerce-initializer-util/src/main/java/com/liferay/commerce/initializer/util/RatingsImporter.java
+`modules/apps/commerce/commerce-initializer-util/src/main/java/com/liferay/commerce/initializer/util/RatingsImporter.java`
 
 - **Date**: Dec. 7, 2023
 - **Ticket**: [LPS-199636](https://liferay.atlassian.net/browse/LPS-199636)
 - **What Changed**: The class is now removed.
 - **Reason**: The class had no usage.
 
-[`modules/apps/cookies/cookies-impl/bnd.bnd`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/cookies/cookies-impl/bnd.bnd)
+`modules/apps/cookies/cookies-impl/bnd.bnd`
 
 - **Date**: Dec. 7, 2023
 - **Ticket**: [LPS-51404](https://liferay.atlassian.net/browse/LPS-51404)
 - **What Changed**: The major version is increased to `6.0.0`.
 
 **ObjectFolderLocalServiceImpl.java**
-[`modules/apps/object/object-service/src/main/java/com/liferay/object/service/impl/ObjectFolderLocalServiceImpl.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/object/object-service/src/main/java/com/liferay/object/service/impl/ObjectFolderLocalServiceImpl.java)
+`modules/apps/object/object-service/src/main/java/com/liferay/object/service/impl/ObjectFolderLocalServiceImpl.java`
 
 - **Date**: Dec. 12, 2023
 - **Ticket**: [LPS-201520](https://liferay.atlassian.net/browse/LPS-201520)
@@ -1556,21 +1556,21 @@ modules/apps/commerce/commerce-initializer-util/src/main/java/com/liferay/commer
 - **Reason**: Each object is able to update the object folder items they are associated with.
 
 **ObjectFolderServiceImpl.java**
-[`modules/apps/object/object-service/src/main/java/com/liferay/object/service/impl/ObjectFolderServiceImpl.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/object/object-service/src/main/java/com/liferay/object/service/impl/ObjectFolderServiceImpl.java)
+`modules/apps/object/object-service/src/main/java/com/liferay/object/service/impl/ObjectFolderServiceImpl.java`
 
 - **Date**: Dec. 12, 2023
 - **Ticket**: [LPS-201520](https://liferay.atlassian.net/browse/LPS-201520)
 - **What Changed**: The `updateObjectFolder(String, long, Map<Locale, String>, List<ObjectFolderItem>)` method has the list of object folder items removed.
 - **Reason**: Each object is able to update the object folder items they are associated with.
 
-[`modules/apps/commerce/commerce-initializer-util/bnd.bnd`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/commerce/commerce-initializer-util/bnd.bnd)
+`modules/apps/commerce/commerce-initializer-util/bnd.bnd`
 
 - **Date**: Dec. 13, 2023
 - **Ticket**: [LPS-199636](https://liferay.atlassian.net/browse/LPS-199636)
 - **What Changed**: The bundle's major version is increased to `9.0.0`.
 
 **rest-openapi.yaml**
-[`modules/apps/captcha/captcha-rest-impl/rest-openapi.yaml`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/captcha/captcha-rest-impl/rest-openapi.yaml)
+`modules/apps/captcha/captcha-rest-impl/rest-openapi.yaml`
 
 - **Date**: Dec. 13, 2023
 - **Ticket**: [LPS-185213](https://liferay.atlassian.net/browse/LPS-185213)
@@ -1586,7 +1586,7 @@ modules/apps/commerce/commerce-initializer-util/src/main/java/com/liferay/commer
 - **Reason**: The `assetVocabularyCategoryIds` field is now used as the aggregation field for the Category Facet.
 
 **DefaultObjectEntryManagerImpl.java**
-[`modules/apps/object/object-rest-impl/src/main/java/com/liferay/object/rest/internal/manager/v1_0/DefaultObjectEntryManagerImpl.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/object/object-rest-impl/src/main/java/com/liferay/object/rest/internal/manager/v1_0/DefaultObjectEntryManagerImpl.java)
+`modules/apps/object/object-rest-impl/src/main/java/com/liferay/object/rest/internal/manager/v1_0/DefaultObjectEntryManagerImpl.java`
 
 - **Date**: Dec. 18, 2023
 - **Ticket**: [LPS-201793](https://liferay.atlassian.net/browse/LPS-201793)
@@ -1594,7 +1594,7 @@ modules/apps/commerce/commerce-initializer-util/src/main/java/com/liferay/commer
 - **Reason**: This change allows the creation of site-scoped, nested object entries.
 
 **CommercePaymentEntryRefundType.java**
-[`modules/apps/commerce/commerce-payment-api/src/main/java/com/liferay/commerce/payment/entry/CommercePaymentEntryRefundType.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/commerce/commerce-payment-api/src/main/java/com/liferay/commerce/payment/entry/CommercePaymentEntryRefundType.java)
+`modules/apps/commerce/commerce-payment-api/src/main/java/com/liferay/commerce/payment/entry/CommercePaymentEntryRefundType.java`
 
 - **Date**: Dec. 19, 2023
 - **Ticket**: [COMMERCE-12943](https://liferay.atlassian.net/browse/COMMERCE-12943)
@@ -1602,7 +1602,7 @@ modules/apps/commerce/commerce-initializer-util/src/main/java/com/liferay/commer
 - **Reason**: This method is necessary to retrieve the name map in the service layer.
 
 **SitemapConfigurationManager.java**
-[`modules/apps/site/site-api/src/main/java/com/liferay/site/configuration/manager/SitemapConfigurationManager.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/site/site-api/src/main/java/com/liferay/site/configuration/manager/SitemapConfigurationManager.java)
+`modules/apps/site/site-api/src/main/java/com/liferay/site/configuration/manager/SitemapConfigurationManager.java`
 
 - **Date**: Dec. 19, 2023
 - **Ticket**: [LPS-203214](https://liferay.atlassian.net/browse/LPS-203214)
@@ -1610,7 +1610,7 @@ modules/apps/commerce/commerce-initializer-util/src/main/java/com/liferay/commer
 - **Reason**: This change is made for clarity since a site configuration is being added.
 
 **StyleBookEntryLocalServiceImpl.java**
-[`modules/apps/style-book/style-book-service/src/main/java/com/liferay/style/book/service/impl/StyleBookEntryLocalServiceImpl.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/style-book/style-book-service/src/main/java/com/liferay/style/book/service/impl/StyleBookEntryLocalServiceImpl.java)
+`modules/apps/style-book/style-book-service/src/main/java/com/liferay/style/book/service/impl/StyleBookEntryLocalServiceImpl.java`
 
 - **Date**: Dec. 19, 2023
 - **Ticket**: [LPS-203973](https://liferay.atlassian.net/browse/LPS-203973)
@@ -1626,7 +1626,7 @@ modules/apps/commerce/commerce-initializer-util/src/main/java/com/liferay/commer
 - **Reason**: This change is needed for other modules to be able to access the interface.
 
 **AssetDisplayPageEntryFormProcessor.java**
-[`modules/apps/asset/asset-display-page-api/src/main/java/com/liferay/asset/display/page/portlet/AssetDisplayPageEntryFormProcessor.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/asset/asset-display-page-api/src/main/java/com/liferay/asset/display/page/portlet/AssetDisplayPageEntryFormProcessor.java)
+`modules/apps/asset/asset-display-page-api/src/main/java/com/liferay/asset/display/page/portlet/AssetDisplayPageEntryFormProcessor.java`
 
 - **Date**: Dec. 20, 2023
 - **Ticket**: [LPS-202905](https://liferay.atlassian.net/browse/LPS-202905)
@@ -1642,7 +1642,7 @@ modules/apps/commerce/commerce-initializer-util/src/main/java/com/liferay/commer
 - **Reason**: The name needs to be specified when publishing an object definition.
 
 **CommercePaymentEntryConstants.java**
-[`modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/constants/CommercePaymentEntryConstants.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/constants/CommercePaymentEntryConstants.java)
+`modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/constants/CommercePaymentEntryConstants.java`
 
 - **Date**: Dec. 28, 2023
 - **Ticket**: [COMMERCE-12755](https://liferay.atlassian.net/browse/COMMERCE-12755)
@@ -1650,7 +1650,7 @@ modules/apps/commerce/commerce-initializer-util/src/main/java/com/liferay/commer
 - **Reason**: The constant was renamed for consistency.
 
 **FragmentWebKeys.java**
-[`modules/apps/fragment/fragment-api/src/main/java/com/liferay/fragment/constants/FragmentWebKeys.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/fragment/fragment-api/src/main/java/com/liferay/fragment/constants/FragmentWebKeys.java)
+`modules/apps/fragment/fragment-api/src/main/java/com/liferay/fragment/constants/FragmentWebKeys.java`
 
 - **Date**: Dec. 30, 2023
 - **Ticket**: [LPS-204724](https://liferay.atlassian.net/browse/LPS-204724)
@@ -1658,7 +1658,7 @@ modules/apps/commerce/commerce-initializer-util/src/main/java/com/liferay/commer
 - **Reason**: This constant is no longer used.
 
 **FragmentPortletRenderer.java**
-[`modules/apps/fragment/fragment-api/src/main/java/com/liferay/fragment/renderer/FragmentPortletRenderer.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/fragment/fragment-api/src/main/java/com/liferay/fragment/renderer/FragmentPortletRenderer.java)
+`modules/apps/fragment/fragment-api/src/main/java/com/liferay/fragment/renderer/FragmentPortletRenderer.java`
         
 - **Date**: Dec. 30, 2023
 - **Ticket**: [LPS-204724](https://liferay.atlassian.net/browse/LPS-204724)
@@ -1666,7 +1666,7 @@ modules/apps/commerce/commerce-initializer-util/src/main/java/com/liferay/commer
 - **Reason**: The `FragmentEntryLink` is removed from the request.
 
 **SegmentsEntryLocalServiceUtil.java**
-[`modules/apps/segments/segments-api/src/main/java/com/liferay/segments/service/SegmentsEntryLocalServiceUtil.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/segments/segments-api/src/main/java/com/liferay/segments/service/SegmentsEntryLocalServiceUtil.java)
+`modules/apps/segments/segments-api/src/main/java/com/liferay/segments/service/SegmentsEntryLocalServiceUtil.java`
 
 - **Date**: Jan. 4, 2024
 - **Ticket**: [LPS-205013](https://liferay.atlassian.net/browse/LPS-205013)
@@ -1674,7 +1674,7 @@ modules/apps/commerce/commerce-initializer-util/src/main/java/com/liferay/commer
 - **Reason**: The API is updated to simplify the implementation logic.
 
 **SegmentsEntryServiceUtil.java**
-[`modules/apps/segments/segments-api/src/main/java/com/liferay/segments/service/SegmentsEntryServiceUtil.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/segments/segments-api/src/main/java/com/liferay/segments/service/SegmentsEntryServiceUtil.java)
+`modules/apps/segments/segments-api/src/main/java/com/liferay/segments/service/SegmentsEntryServiceUtil.java`
 
 - **Date**: Jan. 4, 2024
 - **Ticket**: [LPS-205013](https://liferay.atlassian.net/browse/LPS-205013)
@@ -1682,7 +1682,7 @@ modules/apps/commerce/commerce-initializer-util/src/main/java/com/liferay/commer
 - **Reason**: The API is updated to simplify the implementation logic.
 
 **JournalServiceConfiguration.java**
-[`modules/apps/journal/journal-api/src/main/java/com/liferay/journal/configuration/JournalServiceConfiguration.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/journal/journal-api/src/main/java/com/liferay/journal/configuration/JournalServiceConfiguration.java)
+`modules/apps/journal/journal-api/src/main/java/com/liferay/journal/configuration/JournalServiceConfiguration.java`
 
 - **Date**: Jan. 4, 2024
 - **Ticket**: [LPS-204945](https://liferay.atlassian.net/browse/LPS-204945)
@@ -1690,7 +1690,7 @@ modules/apps/commerce/commerce-initializer-util/src/main/java/com/liferay/commer
 - **Reason**: These methods have no usage and are not considered in other areas of the code.
 
 **AntivirusAsyncStatisticsManager.java**
-[`modules/dxp/apps/antivirus/antivirus-async-store/src/main/java/com/liferay/antivirus/async/store/jmx/AntivirusAsyncStatisticsManager.java`](https://github.com/liferay/liferay-portal/blob/master/modules/dxp/apps/antivirus/antivirus-async-store/src/main/java/com/liferay/antivirus/async/store/jmx/AntivirusAsyncStatisticsManager.java)
+`modules/dxp/apps/antivirus/antivirus-async-store/src/main/java/com/liferay/antivirus/async/store/jmx/AntivirusAsyncStatisticsManager.java`
 
 - **Date**: Jan. 5, 2024
 - **Ticket**: [LPS-202191](https://liferay.atlassian.net/browse/LPS-202191)
@@ -1698,7 +1698,7 @@ modules/apps/commerce/commerce-initializer-util/src/main/java/com/liferay/commer
 - **Reason**: The class was refactored to avoid publishing multiple services.
 
 **LayoutDisplayPageWebKeys.java**
-[`modules/apps/layout/layout-display-page-api/src/main/java/com/liferay/layout/display/page/constants/LayoutDisplayPageWebKeys.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/layout/layout-display-page-api/src/main/java/com/liferay/layout/display/page/constants/LayoutDisplayPageWebKeys.java)
+`modules/apps/layout/layout-display-page-api/src/main/java/com/liferay/layout/display/page/constants/LayoutDisplayPageWebKeys.java`
 
 - **Date**: Jan. 6, 2024
 - **Ticket**: [LPS-204842](https://liferay.atlassian.net/browse/LPS-204842)
@@ -1706,7 +1706,7 @@ modules/apps/commerce/commerce-initializer-util/src/main/java/com/liferay/commer
 - **Reason**: The only usage of this constant was removed.
 
 **Field.java**
-[`modules/apps/portal-vulcan/portal-vulcan-api/src/main/java/com/liferay/portal/vulcan/batch/engine/Field.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/portal-vulcan/portal-vulcan-api/src/main/java/com/liferay/portal/vulcan/batch/engine/Field.java)
+`modules/apps/portal-vulcan/portal-vulcan-api/src/main/java/com/liferay/portal/vulcan/batch/engine/Field.java`
 
 - **Date**: Jan. 7, 2024
 - **Ticket**: [LPS-204467](https://liferay.atlassian.net/browse/LPS-204467)
@@ -1714,7 +1714,7 @@ modules/apps/commerce/commerce-initializer-util/src/main/java/com/liferay/commer
 - **Reason**: This change allows for checking if the batch engine supports a field.
 
 **ContentTransformerHandler.java**
-[`modules/apps/adaptive-media/adaptive-media-content-transformer-api/src/main/java/com/liferay/adaptive/media/content/transformer/ContentTransformerHandler.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/adaptive-media/adaptive-media-content-transformer-api/src/main/java/com/liferay/adaptive/media/content/transformer/ContentTransformerHandler.java)
+`modules/apps/adaptive-media/adaptive-media-content-transformer-api/src/main/java/com/liferay/adaptive/media/content/transformer/ContentTransformerHandler.java`
 
 - **Date**: Jan. 10, 2024
 - **Ticket**: [LPS-203653](https://liferay.atlassian.net/browse/LPS-203653)
@@ -1722,7 +1722,7 @@ modules/apps/commerce/commerce-initializer-util/src/main/java/com/liferay/commer
 - **Reason**: The content types were not used, and the logic supporting it was causing issues.
 
 **ContentTransformer.java**
-[`modules/apps/adaptive-media/adaptive-media-content-transformer-api/src/main/java/com/liferay/adaptive/media/content/transformer/ContentTransformer.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/adaptive-media/adaptive-media-content-transformer-api/src/main/java/com/liferay/adaptive/media/content/transformer/ContentTransformer.java)
+`modules/apps/adaptive-media/adaptive-media-content-transformer-api/src/main/java/com/liferay/adaptive/media/content/transformer/ContentTransformer.java`
 
 - **Date**: Jan. 10, 2024
 - **Ticket**: [LPS-203653](https://liferay.atlassian.net/browse/LPS-203653)
@@ -1730,7 +1730,7 @@ modules/apps/commerce/commerce-initializer-util/src/main/java/com/liferay/commer
 - **Reason**: The content types were not used, and the logic supporting it was causing issues.
 
 **SegmentsCriteriaContributorRegistry.java**
-[`modules/apps/segments/segments-api/src/main/java/com/liferay/segments/criteria/contributor/SegmentsCriteriaContributorRegistry.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/segments/segments-api/src/main/java/com/liferay/segments/criteria/contributor/SegmentsCriteriaContributorRegistry.java)
+`modules/apps/segments/segments-api/src/main/java/com/liferay/segments/criteria/contributor/SegmentsCriteriaContributorRegistry.java`
 
 - **Date**: Jan. 11, 2024
 - **Ticket**: [LPS-205239](https://liferay.atlassian.net/browse/LPS-205239)
@@ -1738,7 +1738,7 @@ modules/apps/commerce/commerce-initializer-util/src/main/java/com/liferay/commer
 - **Reason**: This is an internal registry, and this change simplifies the API. The removed method implementation had no usage.
 
 **SegmentsEntryProviderRegistry.java**
-[`modules/apps/segments/segments-api/src/main/java/com/liferay/segments/provider/SegmentsEntryProviderRegistry.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/segments/segments-api/src/main/java/com/liferay/segments/provider/SegmentsEntryProviderRegistry.java)
+`modules/apps/segments/segments-api/src/main/java/com/liferay/segments/provider/SegmentsEntryProviderRegistry.java`
 
 - **Date**: Jan. 11, 2024
 - **Ticket**: [LPS-205239](https://liferay.atlassian.net/browse/LPS-205239)
@@ -1746,7 +1746,7 @@ modules/apps/commerce/commerce-initializer-util/src/main/java/com/liferay/commer
 - **Reason**: The removed method implementation was deprecated.
 
 **SegmentsEntryRetriever.java**
-[`modules/apps/segments/segments-api/src/main/java/com/liferay/segments/SegmentsEntryRetriever.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/segments/segments-api/src/main/java/com/liferay/segments/SegmentsEntryRetriever.java)
+`modules/apps/segments/segments-api/src/main/java/com/liferay/segments/SegmentsEntryRetriever.java`
 
 - **Date**: Jan. 11, 2024
 - **Ticket**: [LPS-205239](https://liferay.atlassian.net/browse/LPS-205239)
@@ -1754,7 +1754,7 @@ modules/apps/commerce/commerce-initializer-util/src/main/java/com/liferay/commer
 - **Reason**: The removed method implementation was deprecated.
 
 **CommerceMediaResolver.java**
-[`modules/apps/commerce/commerce-media-api/src/main/java/com/liferay/commerce/media/CommerceMediaResolver.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/commerce/commerce-media-api/src/main/java/com/liferay/commerce/media/CommerceMediaResolver.java)
+`modules/apps/commerce/commerce-media-api/src/main/java/com/liferay/commerce/media/CommerceMediaResolver.java`
 
 - **Date**: Jan. 13, 2024
 - **Ticket**: [COMMERCE-12776](https://liferay.atlassian.net/browse/COMMERCE-12776)
@@ -1762,7 +1762,7 @@ modules/apps/commerce/commerce-initializer-util/src/main/java/com/liferay/commer
 - **Reason**: The method must support specifying a file entry to download because you can now download more than one file at a time with an `OrderItem`.
 
 **service.xml**
-[`modules/apps/commerce/commerce-product-type-virtual-service/service.xml`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/commerce/commerce-product-type-virtual-service/service.xml)
+`modules/apps/commerce/commerce-product-type-virtual-service/service.xml`
 
 - **Date**: Jan. 13, 2024
 - **Ticket**: [COMMERCE-12776](https://liferay.atlassian.net/browse/COMMERCE-12776)
@@ -1770,7 +1770,7 @@ modules/apps/commerce/commerce-initializer-util/src/main/java/com/liferay/commer
 - **Reason**: `CPDefinitionVirtualSetting` and `CommerceVirtualOrderItem` must now handle multiple file entries.
 
 **service.xml**
-[`modules/apps/commerce/commerce-product-type-virtual-order-service/service.xml`](
+`modules/apps/commerce/commerce-product-type-virtual-order-service/service.xml`(
 modules/apps/commerce/commerce-product-type-virtual-order-service/service.xml)
 
 - **Date**: Jan. 13, 2024
@@ -1779,7 +1779,7 @@ modules/apps/commerce/commerce-product-type-virtual-order-service/service.xml)
 - **Reason**: `CPDefinitionVirtualSetting` and `CommerceVirtualOrderItem` must now handle multiple file entries.
 
 **CPDefinitionVirtualSettingLocalServiceImpl.java**
-[`modules/apps/commerce/commerce-product-type-virtual-service/src/main/java/com/liferay/commerce/product/type/virtual/service/impl/CPDefinitionVirtualSettingLocalServiceImpl.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/commerce/commerce-product-type-virtual-service/src/main/java/com/liferay/commerce/product/type/virtual/service/impl/CPDefinitionVirtualSettingLocalServiceImpl.java)
+`modules/apps/commerce/commerce-product-type-virtual-service/src/main/java/com/liferay/commerce/product/type/virtual/service/impl/CPDefinitionVirtualSettingLocalServiceImpl.java`
 
 - **Date**: Jan. 13, 2024
 - **Ticket**: [COMMERCE-12776](https://liferay.atlassian.net/browse/COMMERCE-12776)
@@ -1787,7 +1787,7 @@ modules/apps/commerce/commerce-product-type-virtual-order-service/service.xml)
 - **Reason**: `CPDefinitionVirtualSetting` and `CommerceVirtualOrderItem` must now handle multiple file entries. The removed `add` implementations were redundant.
 
 **CommerceVirtualOrderItemLocalServiceImpl.java**
-[`modules/apps/commerce/commerce-product-type-virtual-order-service/src/main/java/com/liferay/commerce/product/type/virtual/order/service/impl/CommerceVirtualOrderItemLocalServiceImpl.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/commerce/commerce-product-type-virtual-order-service/src/main/java/com/liferay/commerce/product/type/virtual/order/service/impl/CommerceVirtualOrderItemLocalServiceImpl.java)
+`modules/apps/commerce/commerce-product-type-virtual-order-service/src/main/java/com/liferay/commerce/product/type/virtual/order/service/impl/CommerceVirtualOrderItemLocalServiceImpl.java`
 
 - **Date**: Jan. 13, 2024
 - **Ticket**: [COMMERCE-12776](https://liferay.atlassian.net/browse/COMMERCE-12776)
@@ -1795,7 +1795,7 @@ modules/apps/commerce/commerce-product-type-virtual-order-service/service.xml)
 - **Reason**: `CPDefinitionVirtualSetting` and `CommerceVirtualOrderItem` must now handle multiple file entries.
 
 **CommerceVirtualOrderItemServiceImpl.java**
-[`modules/apps/commerce/commerce-product-type-virtual-order-service/src/main/java/com/liferay/commerce/product/type/virtual/order/service/impl/CommerceVirtualOrderItemServiceImpl.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/commerce/commerce-product-type-virtual-order-service/src/main/java/com/liferay/commerce/product/type/virtual/order/service/impl/CommerceVirtualOrderItemServiceImpl.java)
+`modules/apps/commerce/commerce-product-type-virtual-order-service/src/main/java/com/liferay/commerce/product/type/virtual/order/service/impl/CommerceVirtualOrderItemServiceImpl.java`
 
 - **Date**: Jan. 13, 2024
 - **Ticket**: [COMMERCE-12776](https://liferay.atlassian.net/browse/COMMERCE-12776)
@@ -1803,7 +1803,7 @@ modules/apps/commerce/commerce-product-type-virtual-order-service/service.xml)
 - **Reason**: `CPDefinitionVirtualSetting` and `CommerceVirtualOrderItem` must now handle multiple file entries.
 
 **CTClosureFactory.java**
-[`modules/apps/change-tracking/change-tracking-api/src/main/java/com/liferay/change/tracking/closure/CTClosureFactory.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/change-tracking/change-tracking-api/src/main/java/com/liferay/change/tracking/closure/CTClosureFactory.java)
+`modules/apps/change-tracking/change-tracking-api/src/main/java/com/liferay/change/tracking/closure/CTClosureFactory.java`
 
 - **Date**: Jan. 16, 2024
 - **Ticket**: [LPS-203903](https://liferay.atlassian.net/browse/LPS-203903)
@@ -1819,7 +1819,7 @@ modules/apps/commerce/commerce-product-type-virtual-order-service/service.xml)
 - **Reason**: The class was deprecated.
 
 **AssetListEntryServiceImpl.java**
-[`modules/apps/asset/asset-list-service/src/main/java/com/liferay/asset/list/service/impl/AssetListEntryServiceImpl.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/asset/asset-list-service/src/main/java/com/liferay/asset/list/service/impl/AssetListEntryServiceImpl.java)
+`modules/apps/asset/asset-list-service/src/main/java/com/liferay/asset/list/service/impl/AssetListEntryServiceImpl.java`
 
 - **Date**: Jan. 22, 2024
 - **Ticket**: [LPS-206304](https://liferay.atlassian.net/browse/LPS-206304)
@@ -1827,7 +1827,7 @@ modules/apps/commerce/commerce-product-type-virtual-order-service/service.xml)
 - **Reason**: This change avoids exposing user IDs to the remote service.
 
 **CommercePaymentMethodGroupRelLocalServiceImpl.java**
-[`modules/apps/commerce/commerce-payment-service/src/main/java/com/liferay/commerce/payment/service/impl/CommercePaymentMethodGroupRelLocalServiceImpl.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/commerce/commerce-payment-service/src/main/java/com/liferay/commerce/payment/service/impl/CommercePaymentMethodGroupRelLocalServiceImpl.java)
+`modules/apps/commerce/commerce-payment-service/src/main/java/com/liferay/commerce/payment/service/impl/CommercePaymentMethodGroupRelLocalServiceImpl.java`
 
 - **Date**: Jan. 24, 2024
 - **Ticket**: [COMMERCE-12385](https://liferay.atlassian.net/browse/COMMERCE-12385)
@@ -1835,7 +1835,7 @@ modules/apps/commerce/commerce-product-type-virtual-order-service/service.xml)
 - **Reason**: The new method implementation is necessary to update a `CommercePaymentMethodGroupRel` object.
 
 **ReflectionUtil.java**
-[`modules/core/petra/petra-reflect/src/main/java/com/liferay/petra/reflect/ReflectionUtil.java`](https://github.com/liferay/liferay-portal/blob/master/modules/core/petra/petra-reflect/src/main/java/com/liferay/petra/reflect/ReflectionUtil.java)
+`modules/core/petra/petra-reflect/src/main/java/com/liferay/petra/reflect/ReflectionUtil.java`
 
 - **Date**: Jan. 25, 2024
 - **Ticket**: [LPD-15179](https://liferay.atlassian.net/browse/LPD-15179)
@@ -1851,7 +1851,7 @@ modules/apps/commerce/commerce-product-type-virtual-order-service/service.xml)
 - **Reason**: The class had no usage.
 
 **SegmentsEntryServiceImpl.java**
-[`modules/apps/segments/segments-service/src/main/java/com/liferay/segments/service/impl/SegmentsEntryServiceImpl.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/segments/segments-service/src/main/java/com/liferay/segments/service/impl/SegmentsEntryServiceImpl.java)
+`modules/apps/segments/segments-service/src/main/java/com/liferay/segments/service/impl/SegmentsEntryServiceImpl.java`
 
 - **Date**: Jan. 30, 2024
 - **Ticket**: [LPS-206170](https://liferay.atlassian.net/browse/LPS-206170)
@@ -1859,7 +1859,7 @@ modules/apps/commerce/commerce-product-type-virtual-order-service/service.xml)
 - **Reason**: The `type` parameter always has the same value, so this change simplifies the API.
 
 **SegmentsEntryLocalServiceImpl.java**
-[`modules/apps/segments/segments-service/src/main/java/com/liferay/segments/service/impl/SegmentsEntryLocalServiceImpl.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/segments/segments-service/src/main/java/com/liferay/segments/service/impl/SegmentsEntryLocalServiceImpl.java)
+`modules/apps/segments/segments-service/src/main/java/com/liferay/segments/service/impl/SegmentsEntryLocalServiceImpl.java`
 
 - **Date**: Jan. 30, 2024
 - **Ticket**: [LPS-206170](https://liferay.atlassian.net/browse/LPS-206170)
@@ -1875,7 +1875,7 @@ modules/apps/commerce/commerce-product-type-virtual-order-service/service.xml)
 - **Reason**: The countries health check implementation did not provide value.
 
 **FragmentEntryLocalServiceUtil.java**
-[`modules/apps/fragment/fragment-api/src/main/java/com/liferay/fragment/service/FragmentEntryLocalServiceUtil.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/fragment/fragment-api/src/main/java/com/liferay/fragment/service/FragmentEntryLocalServiceUtil.java)
+`modules/apps/fragment/fragment-api/src/main/java/com/liferay/fragment/service/FragmentEntryLocalServiceUtil.java`
 
 - **Date**: Feb. 6, 2024
 - **Ticket**: [LPD-16310](https://liferay.atlassian.net/browse/LPD-16310)
@@ -1883,7 +1883,7 @@ modules/apps/commerce/commerce-product-type-virtual-order-service/service.xml)
 - **Reason**: The methods are replaced with new `addFragmentEntry` and `updateFragmentEntry` methods, with updated parameters to improve fragment version logic.
 
 **FragmentEntryServiceUtil.java**
-[`modules/apps/fragment/fragment-api/src/main/java/com/liferay/fragment/service/FragmentEntryServiceUtil.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/fragment/fragment-api/src/main/java/com/liferay/fragment/service/FragmentEntryServiceUtil.java)
+`modules/apps/fragment/fragment-api/src/main/java/com/liferay/fragment/service/FragmentEntryServiceUtil.java`
         
 - **Date**: Feb. 6, 2024
 - **Ticket**: [LPD-16310](https://liferay.atlassian.net/browse/LPD-16310)
@@ -1899,7 +1899,7 @@ modules/apps/commerce/commerce-product-type-virtual-order-service/service.xml)
 - **Reason**: The `GroupSearchProvider` is an internal API class, and the change better aligns with its use case.
 
 **SiteWebKeys.java**
-[`modules/apps/site/site-api/src/main/java/com/liferay/site/constants/SiteWebKeys.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/site/site-api/src/main/java/com/liferay/site/constants/SiteWebKeys.java)
+`modules/apps/site/site-api/src/main/java/com/liferay/site/constants/SiteWebKeys.java`
 
 - **Date**: Feb. 6, 2024
 - **Ticket**: [LPD-16643](https://liferay.atlassian.net/browse/LPD-16643)
@@ -1907,7 +1907,7 @@ modules/apps/commerce/commerce-product-type-virtual-order-service/service.xml)
 - **Reason**: The `GROUP_SEARCH_PROVIDER` was meant for internal use and no longer has any usage.
 
 **ObjectFieldLocalServiceImpl.java**
-[`modules/apps/object/object-service/src/main/java/com/liferay/object/service/impl/ObjectFieldLocalServiceImpl.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/object/object-service/src/main/java/com/liferay/object/service/impl/ObjectFieldLocalServiceImpl.java)
+`modules/apps/object/object-service/src/main/java/com/liferay/object/service/impl/ObjectFieldLocalServiceImpl.java`
 
 - **Date**: Feb. 6, 2024
 - **Ticket**: [LPD-15616](https://liferay.atlassian.net/browse/LPD-15616)
@@ -1915,7 +1915,7 @@ modules/apps/commerce/commerce-product-type-virtual-order-service/service.xml)
 - **Reason**: This change is necessary for object definition validation.
 
 **BatchEngineTaskItemDelegateRegistry.java**
-[`modules/apps/batch-engine/batch-engine-api/src/main/java/com/liferay/batch/engine/BatchEngineTaskItemDelegateRegistry.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/batch-engine/batch-engine-api/src/main/java/com/liferay/batch/engine/BatchEngineTaskItemDelegateRegistry.java)
+`modules/apps/batch-engine/batch-engine-api/src/main/java/com/liferay/batch/engine/BatchEngineTaskItemDelegateRegistry.java`
 
 - **Date**: Feb. 8, 2024
 - **Ticket**: [LPD-15236](https://liferay.atlassian.net/browse/LPD-15236)
@@ -1923,7 +1923,7 @@ modules/apps/commerce/commerce-product-type-virtual-order-service/service.xml)
 - **Reason**: The `BatchEngineTaskItemDelegate` needs a way to be retrieved by company ID.
 
 **ObjectFieldLocalServiceImpl.java**
-[`modules/apps/object/object-service/src/main/java/com/liferay/object/service/impl/ObjectFieldLocalServiceImpl.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/object/object-service/src/main/java/com/liferay/object/service/impl/ObjectFieldLocalServiceImpl.java)
+`modules/apps/object/object-service/src/main/java/com/liferay/object/service/impl/ObjectFieldLocalServiceImpl.java`
 
 - **Date**: Feb. 20, 2024
 - **Ticket**: [LPD-16492](https://liferay.atlassian.net/browse/LPD-16492)
@@ -2193,7 +2193,7 @@ modules/apps/commerce/commerce-product-type-virtual-order-service/service.xml)
 - **Reason**: The Commerce Country portlet is removed.
 
 **PersonalMenuEntry.java**
-[`modules/apps/product-navigation/product-navigation-personal-menu-api/src/main/java/com/liferay/product/navigation/personal/menu/PersonalMenuEntry.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/product-navigation/product-navigation-personal-menu-api/src/main/java/com/liferay/product/navigation/personal/menu/PersonalMenuEntry.java)
+`modules/apps/product-navigation/product-navigation-personal-menu-api/src/main/java/com/liferay/product/navigation/personal/menu/PersonalMenuEntry.java`
 
 - **Date**: Mar. 18, 2024
 - **Ticket**: [LPS-194004](https://liferay.atlassian.net/browse/LPS-194004)
@@ -2211,7 +2211,7 @@ modules/apps/commerce/commerce-product-type-virtual-order-service/service.xml)
 - **Reason**: The code is being consolidated to simplify code structure.
 
 **portal.properties**
-[`portal-impl/src/portal.properties`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/portal.properties)
+`portal-impl/src/portal.properties`
 
 - **Date**: Nov. 7, 2023
 - **Ticket**: [LPS-196123](https://liferay.atlassian.net/browse/LPS-196123)
@@ -2243,7 +2243,7 @@ modules/apps/commerce/commerce-product-type-virtual-order-service/service.xml)
 - **Reason**: This change allows `AudioProcessorImpl` to become an OSGi component.
 
 **DLFileEntryLocalServiceImpl.java**
-[`portal-impl/src/com/liferay/portlet/documentlibrary/service/impl/DLFileEntryLocalServiceImpl.java`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/com/liferay/portlet/documentlibrary/service/impl/DLFileEntryLocalServiceImpl.java)
+`portal-impl/src/com/liferay/portlet/documentlibrary/service/impl/DLFileEntryLocalServiceImpl.java`
 
 - **Date**: Nov. 7, 2023
 - **Ticket**: [LPS-197738](https://liferay.atlassian.net/browse/LPS-197738)
@@ -2251,7 +2251,7 @@ modules/apps/commerce/commerce-product-type-virtual-order-service/service.xml)
 - **Reason**: These methods allow for executing arbitrary code on a long list of file entries without retrieving the entire list first.
 
 **portal.properties**
-[`portal-impl/src/portal.properties`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/portal.properties)
+`portal-impl/src/portal.properties`
 
 - **Date**: Nov. 16, 2023
 - **Ticket**: [LPS-199234](https://liferay.atlassian.net/browse/LPS-199234)
@@ -2259,7 +2259,7 @@ modules/apps/commerce/commerce-product-type-virtual-order-service/service.xml)
 - **Reason**: These configurations are now handled in the UI via site, instance, or system settings, so they do not require adjustments to `portal-ext.properties`.
 
 **AssetTagFinderImpl.java**
-[`portal-impl/src/com/liferay/portlet/asset/service/persistence/impl/AssetTagFinderImpl.java`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/com/liferay/portlet/asset/service/persistence/impl/AssetTagFinderImpl.java)
+`portal-impl/src/com/liferay/portlet/asset/service/persistence/impl/AssetTagFinderImpl.java`
 
 - **Date**: Nov. 20, 2023
 - **Ticket**: [LPS-201547](https://liferay.atlassian.net/browse/LPS-201547)
@@ -2274,7 +2274,7 @@ modules/apps/commerce/commerce-product-type-virtual-order-service/service.xml)
 - **Reason**: The `getTagsSize(long, String)` method was redundant.
 
 **AssetTagServiceImpl.java**
-[`portal-impl/src/com/liferay/portlet/asset/service/impl/AssetTagServiceImpl.java`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/com/liferay/portlet/asset/service/impl/AssetTagServiceImpl.java)
+`portal-impl/src/com/liferay/portlet/asset/service/impl/AssetTagServiceImpl.java`
 
 - **Date**: Nov. 20, 2023
 - **Ticket**: [LPS-201547](https://liferay.atlassian.net/browse/LPS-201547)
@@ -2298,7 +2298,7 @@ modules/apps/commerce/commerce-product-type-virtual-order-service/service.xml)
 - **Reason**: The logic from this class is consolidated into `SiteMembershipPolicyUtil` to simplify the code structure.
 
 **UserLocalServiceImpl.java**
-[`portal-impl/src/com/liferay/portal/service/impl/UserLocalServiceImpl.java`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/com/liferay/portal/service/impl/UserLocalServiceImpl.java)
+`portal-impl/src/com/liferay/portal/service/impl/UserLocalServiceImpl.java`
 
 - **Date**: Nov. 24, 2023
 - **Ticket**: [LPS-201007](https://liferay.atlassian.net/browse/LPS-201007)
@@ -2354,7 +2354,7 @@ modules/apps/commerce/commerce-product-type-virtual-order-service/service.xml)
 - **Reason**: The `messaging-misc-spring.xml` file is no longer used.
 
 **portal.properties**
-[`portal-impl/src/portal.properties`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/portal.properties)
+`portal-impl/src/portal.properties`
 
 - **Date**: Jan. 4, 2024
 - **Ticket**: [LPS-199540](https://liferay.atlassian.net/browse/LPS-199540)
@@ -2362,7 +2362,7 @@ modules/apps/commerce/commerce-product-type-virtual-order-service/service.xml)
 - **Reason**: The `index.permission.filter.search.amplification.factor` property did not effectively improve permission filtering, and it only applied on the first search.
 
 **system.properties**
-[`portal-impl/src/system.properties`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/system.properties)
+`portal-impl/src/system.properties`
 
 - **Date**: Jan. 8, 2024
 - **Ticket**: [LPS-204548](https://liferay.atlassian.net/browse/LPS-204548)
@@ -2371,7 +2371,7 @@ Property com.liferay.portal.kernel.util.ServiceProxyFactory.timeout is being rem
 - **Reason**: This property is only used for the `ServiceProxyFactory` class, which is being removed.
 
 **ServiceBag.java**
-[`portal-impl/src/com/liferay/portal/deploy/hot/ServiceBag.java`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/com/liferay/portal/deploy/hot/ServiceBag.java)
+`portal-impl/src/com/liferay/portal/deploy/hot/ServiceBag.java`
 
 - **Date**: Jan. 10, 2024
 - **Ticket**: [LPS-204273](https://liferay.atlassian.net/browse/LPS-204273)
@@ -2381,7 +2381,7 @@ Property com.liferay.portal.kernel.util.ServiceProxyFactory.timeout is being rem
 ### Changes in `portal-kernel` Classes
 
 **IndexableActionableDynamicQuery.java**
-[`portal-kernel/src/com/liferay/portal/kernel/dao/orm/IndexableActionableDynamicQuery.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/dao/orm/IndexableActionableDynamicQuery.java)
+`portal-kernel/src/com/liferay/portal/kernel/dao/orm/IndexableActionableDynamicQuery.java`
 
 - **Date**: Nov. 6, 2023
 - **Ticket**: [LPS-199958](https://liferay.atlassian.net/browse/LPS-199958)
@@ -2405,7 +2405,7 @@ Property com.liferay.portal.kernel.util.ServiceProxyFactory.timeout is being rem
 - **Reason**: This class is moved into `portal-impl` to simplify the code structure.
 
 **AuditMessageFactory.java**
-[`portal-kernel/src/com/liferay/portal/kernel/audit/AuditMessageFactory.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/audit/AuditMessageFactory.java)
+`portal-kernel/src/com/liferay/portal/kernel/audit/AuditMessageFactory.java`
 
 - **Date**: Nov. 7, 2023
 - **Ticket**: [LPS-201086](https://liferay.atlassian.net/browse/LPS-201086)
@@ -2429,7 +2429,7 @@ Property com.liferay.portal.kernel.util.ServiceProxyFactory.timeout is being rem
 - **Reason**: The class was deprecated and its usages have been replaced by `FacetImpl`.
 
 **AssetTagUtil.java**
-[`portal-kernel/src/com/liferay/asset/kernel/service/persistence/AssetTagUtil.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/asset/kernel/service/persistence/AssetTagUtil.java)
+`portal-kernel/src/com/liferay/asset/kernel/service/persistence/AssetTagUtil.java`
 
 - **Date**: Nov. 21, 2023
 - **Ticket**: [LPS-202248](https://liferay.atlassian.net/browse/LPS-202248)
@@ -2437,7 +2437,7 @@ Property com.liferay.portal.kernel.util.ServiceProxyFactory.timeout is being rem
 - **Reason**: These methods no longer have any usage.
 
 **AssetTagPersistence.java**
-[`portal-kernel/src/com/liferay/asset/kernel/service/persistence/AssetTagPersistence.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/asset/kernel/service/persistence/AssetTagPersistence.java)
+`portal-kernel/src/com/liferay/asset/kernel/service/persistence/AssetTagPersistence.java`
 
 - **Date**: Nov. 21, 2023
 - **Ticket**: [LPS-202248](https://liferay.atlassian.net/browse/LPS-202248)
@@ -2445,7 +2445,7 @@ Property com.liferay.portal.kernel.util.ServiceProxyFactory.timeout is being rem
 - **Reason**: These methods no longer have any usage.
 
 **AssetTagFinder.java**
-[`portal-kernel/src/com/liferay/asset/kernel/service/persistence/AssetTagFinder.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/asset/kernel/service/persistence/AssetTagFinder.java)
+`portal-kernel/src/com/liferay/asset/kernel/service/persistence/AssetTagFinder.java`
 
 - **Date**: Nov. 22, 2023
 - **Ticket**: [LPS-202275](https://liferay.atlassian.net/browse/LPS-202275)
@@ -2453,7 +2453,7 @@ Property com.liferay.portal.kernel.util.ServiceProxyFactory.timeout is being rem
 - **Reason**: This method no longer has any usage.
 
 **AssetTagFinderUtil.java**
-[`portal-kernel/src/com/liferay/asset/kernel/service/persistence/AssetTagFinderUtil.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/asset/kernel/service/persistence/AssetTagFinderUtil.java)
+`portal-kernel/src/com/liferay/asset/kernel/service/persistence/AssetTagFinderUtil.java`
 
 - **Date**: Nov. 22, 2023
 - **Ticket**: [LPS-202275](https://liferay.atlassian.net/browse/LPS-202275)
@@ -2469,7 +2469,7 @@ Property com.liferay.portal.kernel.util.ServiceProxyFactory.timeout is being rem
 - **Reason**: These methods no longer have any usage.
 
 **AssetTagLocalServiceUtil.java**
-[`portal-kernel/src/com/liferay/asset/kernel/service/AssetTagLocalServiceUtil.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/asset/kernel/service/AssetTagLocalServiceUtil.java)
+`portal-kernel/src/com/liferay/asset/kernel/service/AssetTagLocalServiceUtil.java`
 
 - **Date**: Nov. 22, 2023
 - **Ticket**: [LPS-202275](https://liferay.atlassian.net/browse/LPS-202275)
@@ -2517,7 +2517,7 @@ Property com.liferay.portal.kernel.util.ServiceProxyFactory.timeout is being rem
 - **Reason**: This class no longer has any usage.
 
 **WebDAVStorage.java**
-[`portal-kernel/src/com/liferay/portal/kernel/webdav/WebDAVStorage.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/webdav/WebDAVStorage.java)
+`portal-kernel/src/com/liferay/portal/kernel/webdav/WebDAVStorage.java`
 
 - **Date**: Nov. 27, 2023
 - **Ticket**: [LPS-200166](https://liferay.atlassian.net/browse/LPS-200166)
@@ -2541,7 +2541,7 @@ Property com.liferay.portal.kernel.util.ServiceProxyFactory.timeout is being rem
 - **Reason**: The default implementation, `MethodFactoryImpl`, was the only needed implementation, so this class is no longer needed.
 
 **PortletConfigurationIconMenu.java**
-[`portal-kernel/src/com/liferay/portal/kernel/portlet/configuration/icon/PortletConfigurationIconMenu.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/portlet/configuration/icon/PortletConfigurationIconMenu.java)
+`portal-kernel/src/com/liferay/portal/kernel/portlet/configuration/icon/PortletConfigurationIconMenu.java`
 
 - **Date**: Nov. 27, 2023
 - **Ticket**: [LPS-200326](https://liferay.atlassian.net/browse/LPS-200326)
@@ -2696,7 +2696,7 @@ Register FriendlyURLNormalizer OSGi service.
 - **Reason**: This change matches the package name to the class name.
 
 **ModelResourcePermissionFactory.java**
-[`portal-kernel/src/com/liferay/portal/kernel/security/permission/resource/ModelResourcePermissionFactory.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/security/permission/resource/ModelResourcePermissionFactory.java)
+`portal-kernel/src/com/liferay/portal/kernel/security/permission/resource/ModelResourcePermissionFactory.java`
 
 - **Date**: Dec. 12, 2023
 - **Ticket**: [LPS-193174](https://liferay.atlassian.net/browse/LPS-193174)
@@ -2704,7 +2704,7 @@ Register FriendlyURLNormalizer OSGi service.
 - **Reason**: Service model resource permissions are now retrieved via `ModelResourcePermissionRegistryUtil`.
 
 **PortletResourcePermissionFactory.java**
-[`portal-kernel/src/com/liferay/portal/kernel/security/permission/resource/PortletResourcePermissionFactory.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/security/permission/resource/PortletResourcePermissionFactory.java)
+`portal-kernel/src/com/liferay/portal/kernel/security/permission/resource/PortletResourcePermissionFactory.java`
 
 - **Date**: Dec. 12, 2023
 - **Ticket**: [LPS-193174](https://liferay.atlassian.net/browse/LPS-193174)
@@ -2712,7 +2712,7 @@ Register FriendlyURLNormalizer OSGi service.
 - **Reason**: There are no longer any usages for this method.
 
 **JSONWebServiceActionsManager.java**
-[`modules/apps/portal-remote/portal-remote-json-web-service-api/src/main/java/com/liferay/portal/remote/json/web/service/JSONWebServiceActionsManager.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/portal-remote/portal-remote-json-web-service-api/src/main/java/com/liferay/portal/remote/json/web/service/JSONWebServiceActionsManager.java)
+`portal-kernel/src/com/liferay/portal/kernel/jsonwebservice/JSONWebServiceActionsManager.java`
 
 - **Date**: Dec. 13, 2023
 - **Ticket**: [LPS-203854](https://liferay.atlassian.net/browse/LPS-203854)
@@ -2720,7 +2720,7 @@ Register FriendlyURLNormalizer OSGi service.
 - **Reason**: Spring bean JSON web service registration is now centralized in `JSONWebServiceTracker`, so there is no longer a need to explicitly register or unregister a `ServletContext`.
 
 **JSONWebServiceActionsManagerUtil.java**
-[`modules/apps/portal-remote/portal-remote-json-web-service-web/src/main/java/com/liferay/portal/remote/json/web/service/web/internal/helper/JSONWebServiceActionsManagerUtil.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/portal-remote/portal-remote-json-web-service-web/src/main/java/com/liferay/portal/remote/json/web/service/web/internal/helper/JSONWebServiceActionsManagerUtil.java)
+`portal-kernel/src/com/liferay/portal/kernel/jsonwebservice/JSONWebServiceActionsManagerUtil.java`
 
 - **Date**: Dec. 13, 2023
 - **Ticket**: [LPS-203854](https://liferay.atlassian.net/browse/LPS-203854)
@@ -2760,7 +2760,7 @@ Register FriendlyURLNormalizer OSGi service.
 - **Reason**: This class no longer has any usage.
 
 **LayoutSet.java**
-[`portal-kernel/src/com/liferay/portal/kernel/model/LayoutSet.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/model/LayoutSet.java)
+`portal-kernel/src/com/liferay/portal/kernel/model/LayoutSet.java`
 
 - **Date**: Jan. 10, 2024
 - **Ticket**: [LPS-146160](https://liferay.atlassian.net/browse/LPS-146160)
@@ -2768,7 +2768,7 @@ Register FriendlyURLNormalizer OSGi service.
 - **Reason**: This new method allows for identifying if a layout set is actively propagated from a layout set prototype.
 
 **LayoutSetWrapper.java**
-[`portal-kernel/src/com/liferay/portal/kernel/model/LayoutSetWrapper.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/model/LayoutSetWrapper.java)
+`portal-kernel/src/com/liferay/portal/kernel/model/LayoutSetWrapper.java`
 
 - **Date**: Jan. 10, 2024
 - **Ticket**: [LPS-146160](https://liferay.atlassian.net/browse/LPS-146160)
@@ -2776,7 +2776,7 @@ Register FriendlyURLNormalizer OSGi service.
 - **Reason**: This new method allows for identifying if a layout set is actively propagated from a layout set prototype.
 
 **FileEntry.java**
-[`portal-kernel/src/com/liferay/portal/kernel/repository/model/FileEntry.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/repository/model/FileEntry.java)
+`portal-kernel/src/com/liferay/portal/kernel/repository/model/FileEntry.java`
 
 - **Date**: Jan. 29, 2024
 - **Ticket**: [LPD-6958](https://liferay.atlassian.net/browse/LPD-6958)
@@ -2784,7 +2784,7 @@ Register FriendlyURLNormalizer OSGi service.
 - **Reason**: This new method allows for a display date to propogate to file entries in external repositories if they are enabled.
 
 **FileVersion.java**
-[`portal-kernel/src/com/liferay/portal/kernel/repository/model/FileVersion.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/repository/model/FileVersion.java)
+`portal-kernel/src/com/liferay/portal/kernel/repository/model/FileVersion.java`
 
 - **Date**: Jan. 29, 2024
 - **Ticket**: [LPD-6958](https://liferay.atlassian.net/browse/LPD-6958)
@@ -2792,14 +2792,14 @@ Register FriendlyURLNormalizer OSGi service.
 - **Reason**: This new method allows for a display date to propogate to specific file versions in external repositories if they are enabled.
 
 **DLStore.java**
-[`portal-kernel/src/com/liferay/document/library/kernel/store/DLStore.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/document/library/kernel/store/DLStore.java)
+`portal-kernel/src/com/liferay/document/library/kernel/store/DLStore.java`
 
 - **Date**: Jan. 31, 2024
 - **Ticket**: [LPD-15353](https://liferay.atlassian.net/browse/LPD-15353)
 - **What Changed**: The `deleteFile(long, long, String)` has been restored after it was previously removed.
 - **Reason**: This method implementation is useful for deleting a single file.
 
-[`portal-kernel/bnd.bnd`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/bnd.bnd)
+`portal-kernel/bnd.bnd`
 
 - **Date**: Feb. 7, 2024
 - **Ticket**: [LPS-206272](https://liferay.atlassian.net/browse/LPS-206272)
@@ -2849,7 +2849,7 @@ Register FriendlyURLNormalizer OSGi service.
 ### Changes in Taglibs
 
 **liferay-hook_7_4_0.dtd**
-[`definitions/liferay-hook_7_4_0.dtd`](https://github.com/liferay/liferay-portal/blob/master/definitions/liferay-hook_7_4_0.dtd)
+`definitions/liferay-hook_7_4_0.dtd`
 
 - **Date**: Nov. 7, 2023
 - **Ticket**: [LPS-196123](https://liferay.atlassian.net/browse/LPS-196123)
@@ -2857,7 +2857,7 @@ Register FriendlyURLNormalizer OSGi service.
 - **Reason**: This portal property is no longer required because all out-of-the-box implementations of `DLProcessor` are now OSGi services.
 
 **liferay-ui.tld**
-[`util-taglib/src/META-INF/liferay-ui.tld`](https://github.com/liferay/liferay-portal/blob/master/util-taglib/src/META-INF/liferay-ui.tld)
+`util-taglib/src/META-INF/liferay-ui.tld`
 
 - **Date**: Nov. 28, 2023
 - **Ticket**: [LPS-202768](https://liferay.atlassian.net/browse/LPS-202768)
@@ -2898,7 +2898,7 @@ Here is a list of changes that break or significantly alter existing functionali
 ### Changes in Module Source Code
 
 **ExtRepository.java**
-[`modules/apps/document-library/document-library-repository-external-api/src/main/java/com/liferay/document/library/repository/external/ExtRepository.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/document-library/document-library-repository-external-api/src/main/java/com/liferay/document/library/repository/external/ExtRepository.java)
+`modules/apps/document-library/document-library-repository-external-api/src/main/java/com/liferay/document/library/repository/external/ExtRepository.java`
 
 - **Date**: Sep. 29, 2023
 - **Ticket**: [LPS-197315](https://liferay.atlassian.net/browse/LPS-197315)
@@ -2906,7 +2906,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Reason**: The file name is required to create files with a Sharepoint external repository.
 
 **WorkflowTaskResourceImpl.java**
-[`modules/apps/headless/headless-admin-workflow/headless-admin-workflow-impl/src/main/java/com/liferay/headless/admin/workflow/internal/resource/v1_0/WorkflowTaskResourceImpl.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/headless/headless-admin-workflow/headless-admin-workflow-impl/src/main/java/com/liferay/headless/admin/workflow/internal/resource/v1_0/WorkflowTaskResourceImpl.java)
+`modules/apps/headless/headless-admin-workflow/headless-admin-workflow-impl/src/main/java/com/liferay/headless/admin/workflow/internal/resource/v1_0/WorkflowTaskResourceImpl.java`
 
 - **Date**: Oct. 3, 2023
 - **Ticket**: [LPS-197317](https://liferay.atlassian.net/browse/LPS-197317)
@@ -2914,7 +2914,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Reason**: This change is made to enforce class name consistency.
 
 **WorkflowTaskModelResourcePermission.java**
-[`modules/apps/portal-workflow/portal-workflow-kaleo-runtime-integration-impl/src/main/java/com/liferay/portal/workflow/kaleo/runtime/integration/internal/security/permission/resource/KaleoTaskModelResourcePermission.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/portal-workflow/portal-workflow-kaleo-runtime-integration-impl/src/main/java/com/liferay/portal/workflow/kaleo/runtime/integration/internal/security/permission/resource/KaleoTaskModelResourcePermission.java)
+`modules/apps/portal-workflow/portal-workflow-kaleo-runtime-integration-impl/src/main/java/com/liferay/portal/workflow/kaleo/runtime/integration/internal/security/permission/resource/WorkflowTaskModelResourcePermission.java`
 
 - **Date**: Oct. 3, 2023
 - **Ticket**: [LPS-197317](https://liferay.atlassian.net/browse/LPS-197317)
@@ -2930,7 +2930,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Reason**: These taglibs are no longer used in Liferay, and Liferay removed support for soy.
 
 **CommerceShipmentItemLocalService.java**
-[`modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/service/CommerceShipmentItemLocalService.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/service/CommerceShipmentItemLocalService.java)
+`modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/service/CommerceShipmentItemLocalService.java`
 
 - **Date**: Oct. 6, 2023
 - **Ticket**: [COMMERCE-12534](https://liferay.atlassian.net/browse/COMMERCE-12534)
@@ -2938,7 +2938,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Reason**: A `BigDecimal` value is needed for new unit of measurement functionality.
 
 **CommerceShipmentItemService.java**
-[modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/service/CommerceShipmentItemService.java](https://github.com/liferay/liferay-portal/blob/master/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/service/CommerceShipmentItemService.java)
+[modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/service/CommerceShipmentItemService.java]
 
 - **Date**: Oct. 6, 2023
 - **Ticket**: [COMMERCE-12534](https://liferay.atlassian.net/browse/COMMERCE-12534)
@@ -2970,7 +2970,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Reason**: The search registrar bootstrapping style has changed, and this class is no longer used.
 
 **AccountRoleLocalService.java**
-[`modules/apps/account/account-api/src/main/java/com/liferay/account/service/AccountRoleLocalService.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/account/account-api/src/main/java/com/liferay/account/service/AccountRoleLocalService.java)
+`modules/apps/account/account-api/src/main/java/com/liferay/account/service/AccountRoleLocalService.java`
 
 - **Date**: Oct. 17, 2023
 - **Ticket**: [LPS-173628](https://liferay.atlassian.net/browse/LPS-173628)
@@ -2978,7 +2978,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Reason**: The `AddDefaultAccountRolesPortalInstanceLifecycleListener` and `AddDefaultAccountRolesPortletPermissionsPortalInstanceLifecycleListener` classes initialize and check default account roles instead.
 
 **CommerceCheckoutStepHttpHelper.java**
-[`modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/checkout/helper/CommerceCheckoutStepHttpHelper.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/checkout/helper/CommerceCheckoutStepHttpHelper.java)
+`modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/checkout/helper/CommerceCheckoutStepHttpHelper.java`
 
 - **Date**: Oct. 25, 2023
 - **Ticket**: [COMMERCE-12230](https://liferay.atlassian.net/browse/COMMERCE-12230)
@@ -2986,7 +2986,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Reason**: A `CommerceOrder` value is passed as a parameter to help checkout performance.
 
 **PaymentProcessCheckoutStepDisplayContext.java**
-[`modules/apps/commerce/commerce-checkout-web/src/main/java/com/liferay/commerce/checkout/web/internal/display/context/PaymentProcessCheckoutStepDisplayContext.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/commerce/commerce-checkout-web/src/main/java/com/liferay/commerce/checkout/web/internal/display/context/PaymentProcessCheckoutStepDisplayContext.java)
+`modules/apps/commerce/commerce-checkout-web/src/main/java/com/liferay/commerce/checkout/web/internal/display/context/PaymentProcessCheckoutStepDisplayContext.java`
 
 - **Date**: Oct. 25, 2023
 - **Ticket**: [COMMERCE-12230](https://liferay.atlassian.net/browse/COMMERCE-12230)
@@ -2994,7 +2994,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Reason**: A `CommerceOrder` value is passed as a parameter to help checkout performance.
 
 **AssetEntryItemSelectorCriterion.java**
-[`modules/apps/item-selector/item-selector-criteria-api/src/main/java/com/liferay/item/selector/criteria/asset/criterion/AssetEntryItemSelectorCriterion.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/item-selector/item-selector-criteria-api/src/main/java/com/liferay/item/selector/criteria/asset/criterion/AssetEntryItemSelectorCriterion.java)
+`modules/apps/item-selector/item-selector-criteria-api/src/main/java/com/liferay/item/selector/criteria/asset/criterion/AssetEntryItemSelectorCriterion.java`
 
 - **Date**: Oct. 30, 2023
 - **Ticket**: [LPS-197840](https://liferay.atlassian.net/browse/LPS-197840)
@@ -3002,7 +3002,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Reason**: The `scopeGroupType` methods are no longer used.
 
 **BasePreviewBackgroundTaskExecutor.java**
-[`modules/apps/document-library/document-library-preview-api/src/main/java/com/liferay/document/library/preview/background/task/BasePreviewBackgroundTaskExecutor.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/document-library/document-library-preview-api/src/main/java/com/liferay/document/library/preview/background/task/BasePreviewBackgroundTaskExecutor.java)
+`modules/apps/document-library/document-library-preview-api/src/main/java/com/liferay/document/library/preview/background/task/BasePreviewBackgroundTaskExecutor.java`
 
 - **Date**: Oct. 31, 2023
 - **Ticket**: [LPS-195032](https://liferay.atlassian.net/browse/LPS-195032)
@@ -3010,7 +3010,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Reason**: The `DLFileEntryConfigurationProvider` class has been added.
 
 **ExtendedObjectClassDefinition.java**
-[`modules/apps/static/portal-configuration/portal-configuration-metatype-api/src/main/java/com/liferay/portal/configuration/metatype/annotations/ExtendedObjectClassDefinition.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/static/portal-configuration/portal-configuration-metatype-api/src/main/java/com/liferay/portal/configuration/metatype/annotations/ExtendedObjectClassDefinition.java)
+`modules/apps/static/portal-configuration/portal-configuration-metatype-api/src/main/java/com/liferay/portal/configuration/metatype/annotations/ExtendedObjectClassDefinition.java`
 
 - **Date**: Oct. 31, 2023
 - **Ticket**: [LPS-195032](https://liferay.atlassian.net/browse/LPS-195032)
@@ -3018,7 +3018,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Reason**: The new method allows for retrieving a `Scope` object with a String scope value.
 
 **DLFileEntryConfiguration.java**
-[`modules/apps/document-library/document-library-api/src/main/java/com/liferay/document/library/configuration/DLFileEntryConfiguration.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/document-library/document-library-api/src/main/java/com/liferay/document/library/configuration/DLFileEntryConfiguration.java)
+`modules/apps/document-library/document-library-api/src/main/java/com/liferay/document/library/configuration/DLFileEntryConfiguration.java`
 
 - **Date**: Oct. 31, 2023
 - **Ticket**: [LPS-195032](https://liferay.atlassian.net/browse/LPS-195032)
@@ -3026,7 +3026,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Reason**: `PDFPreviewConfiguration` is no longer used.
 
 **DLFileEntryConfigurationProvider.java**
-[`modules/apps/document-library/document-library-api/src/main/java/com/liferay/document/library/configuration/DLFileEntryConfigurationProvider.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/document-library/document-library-api/src/main/java/com/liferay/document/library/configuration/DLFileEntryConfigurationProvider.java)
+`modules/apps/document-library/document-library-api/src/main/java/com/liferay/document/library/configuration/DLFileEntryConfigurationProvider.java`
 
 - **Date**: Oct. 31, 2023
 - **Ticket**: [LPS-195032](https://liferay.atlassian.net/browse/LPS-195032)
@@ -3034,7 +3034,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Reason**: This configuration provider gives easier access to multiple configuration levels (system, instance, and site) for `DLFileEntryConfiguration`.
 
 **DLFileEntryConfigurationConstants.java**
-[`modules/apps/document-library/document-library-api/src/main/java/com/liferay/document/library/constants/DLFileEntryConfigurationConstants.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/document-library/document-library-api/src/main/java/com/liferay/document/library/constants/DLFileEntryConfigurationConstants.java)
+`modules/apps/document-library/document-library-api/src/main/java/com/liferay/document/library/constants/DLFileEntryConfigurationConstants.java`
 
 - **Date**: Oct. 31, 2023
 - **Ticket**: [LPS-195032](https://liferay.atlassian.net/browse/LPS-195032)
@@ -3042,7 +3042,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Reason**: This class defines common values to handle `DLFileEntryConfiguration` attributes.
 
 **DLFileEntryConfigurationException.java**
-[`modules/apps/document-library/document-library-api/src/main/java/com/liferay/document/library/exception/DLFileEntryConfigurationException.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/document-library/document-library-api/src/main/java/com/liferay/document/library/exception/DLFileEntryConfigurationException.java)
+`modules/apps/document-library/document-library-api/src/main/java/com/liferay/document/library/exception/DLFileEntryConfigurationException.java`
 
 - **Date**: Oct. 31, 2023
 - **Ticket**: [LPS-195032](https://liferay.atlassian.net/browse/LPS-195032)
@@ -3050,7 +3050,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Reason**: This Exception is now used when an invalid value is set for `DLFileEntryConfiguration` attributes.
 
 **CPContentHelper.java**
-[`modules/apps/commerce/commerce-product-content-api/src/main/java/com/liferay/commerce/product/content/helper/CPContentHelper.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/commerce/commerce-product-content-api/src/main/java/com/liferay/commerce/product/content/helper/CPContentHelper.java)
+`modules/apps/commerce/commerce-product-content-api/src/main/java/com/liferay/commerce/product/content/helper/CPContentHelper.java`
 
 - **Date**: Nov. 4, 2023
 - **Ticket**: [COMMERCE-12579](https://liferay.atlassian.net/browse/COMMERCE-12579)
@@ -3060,7 +3060,7 @@ Here is a list of changes that break or significantly alter existing functionali
 ### Changes in `portal-impl` Classes
 
 **UserImpl.java**
-[`portal-impl/src/com/liferay/portal/model/impl/UserImpl.java`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/com/liferay/portal/model/impl/UserImpl.java)
+`portal-impl/src/com/liferay/portal/model/impl/UserImpl.java`
 
 - **Date**: Oct. 4, 2023
 - **Ticket**: [LPS-196035](https://liferay.atlassian.net/browse/LPS-196035)
@@ -3068,7 +3068,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Reason**: WebDAV now requires each user to generate a separate password for access, requiring the user to take actions to change their accout settings. The user experience is simplified to use `userId` to compensate, avoiding unexpected WebDAV access rejections.
 
 **portal.properties**
-[`portal-impl/src/portal.properties`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/portal.properties)
+`portal-impl/src/portal.properties`
 
 - **Date**: Oct. 8, 2023
 - **Ticket**: [LPS-189621](https://liferay.atlassian.net/browse/LPS-189621)
@@ -3084,7 +3084,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Reason**: OpenID has been deprecated and Liferay no longer uses it internally.
 
 **PersistedModelLocalServiceRegistryUtil.java**
-[`portal-impl/src/com/liferay/portal/service/PersistedModelLocalServiceRegistryUtil.java`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/com/liferay/portal/service/PersistedModelLocalServiceRegistryUtil.java)
+`portal-impl/src/com/liferay/portal/service/PersistedModelLocalServiceRegistryUtil.java`
 
 - **Date**: Oct. 20, 2023
 - **Ticket**: [LPS-199563](https://liferay.atlassian.net/browse/LPS-199563)
@@ -3092,7 +3092,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Reason**: The class is moved into `portal-impl` to simplify the code structure.
 
 **HttpAuthManagerUtil.java**
-[`portal-impl/src/com/liferay/portal/security/auth/http.HttpAuthManagerUtil.java`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/com/liferay/portal/security/auth/http/HttpAuthManagerUtil.java)
+`portal-impl/src/com/liferay/portal/security/auth/http.HttpAuthManagerUtil.java`
 
 - **Date**: Oct. 21, 2023
 - **Ticket**: [LPS-197376](https://liferay.atlassian.net/browse/LPS-197376)
@@ -3100,7 +3100,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Reason**: The class is moved into `portal-impl` to simplify the code structure.
 
 **ImageToolUtil.java**
-[`portal-impl/src/com/liferay/portal/image/ImageToolUtil.java`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/com/liferay/portal/image/ImageToolUtil.java)\*\*
+`portal-impl/src/com/liferay/portal/image/ImageToolUtil.java`\*\*
 
 - **Date**: Oct. 21, 2023
 - **Ticket**: [LPS-198319](https://liferay.atlassian.net/browse/LPS-198319)
@@ -3116,7 +3116,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Reason**: The class is moved into `portal-impl` to simplify the code structure.
 
 **RoleMembershipPolicyFactoryUtil.java**
-[`portal-kernel/src/com/liferay/portal/kernel/security.membershippolicy.RoleMembershipPolicyFactoryUtil.java`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/com/liferay/portal/security/membershippolicy/RoleMembershipPolicyFactoryUtil.java)
+`portal-kernel/src/com/liferay/portal/kernel/security.membershippolicy.RoleMembershipPolicyFactoryUtil.java`
 
 - **Date**: Oct. 23, 2023
 - **Ticket**: [LPS-199389](https://liferay.atlassian.net/browse/LPS-199389)
@@ -3124,7 +3124,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Reason**: The class is moved into `portal-impl` to simplify the code structure.
 
 **RoleMembershipPolicyUtil.java**
-[`https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/com/liferay/portal/security/membershippolicy/RoleMembershipPolicyUtil.java`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/com/liferay/portal/security/membershippolicy/RoleMembershipPolicyUtil.java)
+`portal-impl/src/com/liferay/portal/security/membershippolicy/RoleMembershipPolicyUtil.java`
 
 - **Date**: Oct. 23, 2023
 - **Ticket**: [LPS-199389](https://liferay.atlassian.net/browse/LPS-199389)
@@ -3132,7 +3132,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Reason**: The class is moved into `portal-impl` to simplify the code structure.
 
 **AuthenticatedSessionManagerUtil.java**
-[`portal-impl/src/com/liferay/portal/security/auth/session/AuthenticatedSessionManagerUtil.java`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/com/liferay/portal/security/auth/session/AuthenticatedSessionManagerUtil.java)
+`portal-impl/src/com/liferay/portal/security/auth/session/AuthenticatedSessionManagerUtil.java`
 
 - **Date**: Oct. 23, 2023
 - **Ticket**: [LPS-199165](https://liferay.atlassian.net/browse/LPS-199165)
@@ -3140,7 +3140,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Reason**: The class is moved into `portal-impl` to simplify the code structure.
 
 **Success.java**
-[`portal-impl/src/com/liferay/portal/xmlrpc/Success.java`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/com/liferay/portal/xmlrpc/Success.java)
+`portal-impl/src/com/liferay/portal/xmlrpc/Success.java`
 
 - **Date**: Oct. 23, 2023
 - **Ticket**: [LPS-199164](https://liferay.atlassian.net/browse/LPS-199164)
@@ -3148,7 +3148,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Reason**: The class is moved into `portal-impl` to simplify the code structure.
 
 **Fault.java**
-[`portal-impl/src/com/liferay/portal/xmlrpc/Fault.java`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/com/liferay/portal/xmlrpc/Fault.java)
+`portal-impl/src/com/liferay/portal/xmlrpc/Fault.java`
 
 - **Date**: Oct. 23, 2023
 - **Ticket**: [LPS-199164](https://liferay.atlassian.net/browse/LPS-199164)
@@ -3156,7 +3156,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Reason**: The class is moved into `portal-impl` to simplify the code structure.
 
 **XmlRpcUtil.java**
-[`portal-impl/src/com/liferay/portal/xmlrpc/XmlRpcUtil.java`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/com/liferay/portal/xmlrpc/XmlRpcUtil.java)
+`portal-impl/src/com/liferay/portal/xmlrpc/XmlRpcUtil.java`
 
 - **Date**: Oct. 23, 2023
 - **Ticket**: [LPS-199164](https://liferay.atlassian.net/browse/LPS-199164)
@@ -3164,7 +3164,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Reason**: The class is moved into `portal-impl` to simplify the code structure.
 
 **StartupHelperUtil.java**
-[`portal-impl/src/com/liferay/portal/events/StartupHelperUtil.java`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/com/liferay/portal/events/StartupHelperUtil.java)
+`portal-impl/src/com/liferay/portal/events/StartupHelperUtil.java`
 
 - **Date**: Nov. 2, 2023
 - **Ticket**: [LPS-200501](https://liferay.atlassian.net/browse/LPS-200501)
@@ -3172,7 +3172,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Reason**: The flag does not accurately reflect the startup status, so the methods are removed to avoid incorrect usage.
 
 **ModelAdapterUtil.java**
-[`portal-impl/src/com/liferay/portal/model/adapter/ModelAdapterUtil.java`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/com/liferay/portal/model/adapter/util/ModelAdapterUtil.java)
+`portal-impl/src/com/liferay/portal/model/adapter/ModelAdapterUtil.java`
 
 - **Date**: Nov. 3, 2023
 - **Ticket**: [LPS-199825](https://liferay.atlassian.net/browse/LPS-199825)
@@ -3278,7 +3278,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Reason**: The class is no longer used.
 
 **TemplateManagerUtil.java**
-[`portal-kernel/src/com/liferay/portal/kernel/template/TemplateManagerUtil.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/template/TemplateManagerUtil.java)
+`portal-kernel/src/com/liferay/portal/kernel/template/TemplateManagerUtil.java`
 
 - **Date**: Oct. 26, 2023
 - **Ticket**: [LPS-200072](https://liferay.atlassian.net/browse/LPS-200072)
@@ -3286,7 +3286,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Reason** These methods are no longer used.
 
 **TemplateManager.java**
-[`portal-kernel/src/com/liferay/portal/kernel/template/TemplateManager.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/template/TemplateManager.java)
+`portal-kernel/src/com/liferay/portal/kernel/template/TemplateManager.java`
 
 - **Date**: Oct. 26, 2023
 - **Ticket**: [LPS-200072](https://liferay.atlassian.net/browse/LPS-200072)
@@ -3310,7 +3310,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Reason**: The class is no longer used.
 
 **AuditMessageFactory.java**
-[`portal-kernel/src/com/liferay/portal/kernel/audit/AuditMessageFactory.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/audit/AuditMessageFactory.java)
+`portal-kernel/src/com/liferay/portal/kernel/audit/AuditMessageFactory.java`
 
 - **Date**: Nov. 7, 2023
 - **Ticket**: [LPS-201086](https://liferay.atlassian.net/browse/LPS-201086)
@@ -3326,7 +3326,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Reason**: The logic was unnecessarily split between classes, so it is now combined into the `AuditMessageFactory` class to simplify the code structure.
 
 **PortletDisplay.java**
-[`portal-kernel/src/com/liferay/portal/kernel/theme/PortletDisplay.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/theme/PortletDisplay.java)
+`portal-kernel/src/com/liferay/portal/kernel/theme/PortletDisplay.java`
 
 - **Date**: Nov. 20, 2023
 - **Ticket**: [LPS-196539](https://liferay.atlassian.net/browse/LPS-196539)
@@ -3334,7 +3334,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Reason**: This change makes the method names consistent with the `PortletPreferences` variable.
 
 **PortletToolbar.java**
-[`portal-kernel/src/com/liferay/portal/kernel/portlet/toolbar/PortletToolbar.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/portlet/toolbar/PortletToolbar.java)
+`portal-kernel/src/com/liferay/portal/kernel/portlet/toolbar/PortletToolbar.java`
 
 - **Date**: Nov. 21, 2023
 - **Ticket**: [LPS-200453](https://liferay.atlassian.net/browse/LPS-200453)
@@ -3344,7 +3344,7 @@ Here is a list of changes that break or significantly alter existing functionali
 ### Changes in `osgi-util` classes
 
 **Snapshot.java**
-[`osgi-util/src/main/java/com/liferay/osgi/util/service/Snapshot.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/module/service/Snapshot.java)
+`osgi-util/src/main/java/com/liferay/osgi/util/service/Snapshot.java`
 
 - **Date**: Sep. 27, 2023
 - **Ticket**: [LPS-196524](https://liferay.atlassian.net/browse/LPS-196524)
@@ -3380,7 +3380,7 @@ Here is a list of changes that break or significantly alter existing functionali
 ### Changes in Module Source Code
 
 **SolrClientManager.java**
-[`modules/apps/portal-search-solr8/portal-search-solr8-impl/src/main/java/com/liferay/portal/search/solr8/internal/connection/SolrClientManager.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/portal-search-solr8/portal-search-solr8-impl/src/main/java/com/liferay/portal/search/solr8/internal/connection/SolrClientManager.java)
+`modules/apps/portal-search-solr8/portal-search-solr8-impl/src/main/java/com/liferay/portal/search/solr8/internal/connection/SolrClientManager.java`
 
 - **Date**: Jul. 4, 2023
 - **Ticket**: [LPS-180691](https://liferay.atlassian.net/browse/LPS-180691)
@@ -3388,7 +3388,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Reason**: Liferay no longer supports extending this class.
 
 **SolrClientFactory.java**
-[`modules/apps/portal-search-solr8/portal-search-solr8-impl/src/main/java/com/liferay/portal/search/solr8/internal/connection/SolrClientFactory.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/portal-search-solr8/portal-search-solr8-impl/src/main/java/com/liferay/portal/search/solr8/internal/connection/SolrClientFactory.java)
+`modules/apps/portal-search-solr8/portal-search-solr8-impl/src/main/java/com/liferay/portal/search/solr8/internal/connection/SolrClientFactory.java`
 
 - **Date**: Jul. 4, 2023
 - **Ticket**: [LPS-180691](https://liferay.atlassian.net/browse/LPS-180691)
@@ -3396,7 +3396,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Reason**: Liferay no longer supports these extension points.
 
 **HttpClientFactory.java**
-[`modules/apps/portal-search-solr8/portal-search-solr8-impl/src/main/java/com/liferay/portal/search/solr8/internal/http/HttpClientFactory.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/portal-search-solr8/portal-search-solr8-impl/src/main/java/com/liferay/portal/search/solr8/internal/http/HttpClientFactory.java)
+`modules/apps/portal-search-solr8/portal-search-solr8-impl/src/main/java/com/liferay/portal/search/solr8/internal/http/HttpClientFactory.java`
 
 - **Date**: Jul. 4, 2023
 - **Ticket**: [LPS-180691](https://liferay.atlassian.net/browse/LPS-180691)
@@ -3414,15 +3414,15 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Reason**: The removed message bus destination is no longer used.
 
 **HookHotDeployListener.java**
-[`portal-impl/src/com/liferay/portal/deploy/hot/HookHotDeployListener.java`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/com/liferay/portal/deploy/hot/HookHotDeployListener.java)
+`portal-impl/src/com/liferay/portal/deploy/hot/HookHotDeployListener.java`
 
 - **Date**: Aug. 17, 2023
 - **Ticket**: [LPS-193926](https://liferay.atlassian.net/browse/LPS-193926)
-- **What Changed**: The `HookHotDeployListener` class no longer supports deploying a [`DLProcessor`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/document/library/kernel/processor/DLProcessor.java) via hook. Instead, convert your `DLProcessor` into an OSGi implementation.
+- **What Changed**: The `HookHotDeployListener` class no longer supports deploying a `DLProcessor` via hook. Instead, convert your `DLProcessor` into an OSGi implementation.
 - **Reason**: This prevents duplicated logic to register `DLProcessor` implementations between `DLProcessorRegistryImpl` and `HookHotDeployListener`.
 
 **portal.properties**
-[`portal-impl/src/portal.properties`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/portal.properties)
+`portal-impl/src/portal.properties`
 
 - **Date**: Sep. 4, 2023
 - **Ticket**: [LPS-194379](https://liferay.atlassian.net/browse/LPS-194379)
@@ -3430,7 +3430,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Reason**: Instance settings can be set specifically per instance and while Liferay is running, so it's more flexible to configure it as an instance setting.
 
 **HookHotDeployListener.java**
-[`portal-impl/src/com/liferay/portal/deploy/hot/HookHotDeployListener.java`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/com/liferay/portal/deploy/hot/HookHotDeployListener.java)
+`portal-impl/src/com/liferay/portal/deploy/hot/HookHotDeployListener.java`
 
 - **Date**: Sep. 4, 2023
 - **Ticket**: [LPS-194350](https://liferay.atlassian.net/browse/LPS-194350)
@@ -3438,7 +3438,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Reason**: OSGi services support more features than deploying external repositories via hook.
 
 **portal.properties**
-[`portal-impl/src/portal.properties`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/portal.properties)
+`portal-impl/src/portal.properties`
 
 - **Date**: Sep. 13, 2023
 - **Ticket**: [LPS-195006](https://liferay.atlassian.net/browse/LPS-195006)
@@ -3448,11 +3448,11 @@ Here is a list of changes that break or significantly alter existing functionali
 ### Changes in `portal-kernel` Classes
 
 **Document.java**
-[`portal-kernel/src/com/liferay/portal/kernel/search/Document.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/search/Document.java)
+`portal-kernel/src/com/liferay/portal/kernel/search/Document.java`
 
 - **Date**: Jul. 7, 2023
 - **Ticket**: [LPS-188914](https://liferay.atlassian.net/browse/LPS-188914)
-- **What Changed**: These `addFile` methods are now deprecated: `addFile(String, byte[], String)`, `addFile(String, File, String)`, `addFile(String, InputStream, String)`, and `addFile(String, InputStream, String, int)`. Update your implementations by using an `InputStream` with the file's data and calling the [`TextExtractor`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/util/TextExtractor.java) class's `extractText` method. Then, call `addFile(String, String)` using the `extractText` call's return value.
+- **What Changed**: These `addFile` methods are now deprecated: `addFile(String, byte[], String)`, `addFile(String, File, String)`, `addFile(String, InputStream, String)`, and `addFile(String, InputStream, String, int)`. Update your implementations by using an `InputStream` with the file's data and calling the `TextExtractor` class's `extractText` method. Then, call `addFile(String, String)` using the `extractText` call's return value.
 - **Reason**: The deprecated `addFile` implementations are no longer used.
 
 **BaseModelPermissionChecker.java**
@@ -3460,11 +3460,11 @@ Here is a list of changes that break or significantly alter existing functionali
 
 - **Date**: Aug. 11, 2023
 - **Ticket**: [LPS-182671](https://liferay.atlassian.net/browse/LPS-182671)
-- **What Changed**: The `BaseModelPermissionChecker` interface is removed. Implement [`ModelResourcePermission`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/security/permission/resource/ModelResourcePermission.java) instead.
+- **What Changed**: The `BaseModelPermissionChecker` interface is removed. Implement `ModelResourcePermission` instead.
 - **Reason**: The interface was deprecated in 7.1 and is no longer used.
 
 **SchedulerEngine.java**
-[`portal-kernel/src/com/liferay/portal/kernel/scheduler/SchedulerEngine.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/scheduler/SchedulerEngine.java)
+`portal-kernel/src/com/liferay/portal/kernel/scheduler/SchedulerEngine.java`
 
 - **Date**: Aug. 24, 2023
 - **Ticket**: [LPS-194314](https://liferay.atlassian.net/browse/LPS-194314)
@@ -3472,7 +3472,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Reason**: The method is not needed because unscheduled jobs should be deleted at the same time.
 
 **SchedulerEngineHelper.java**
-[`portal-kernel/src/com/liferay/portal/kernel/scheduler/SchedulerEngineHelper.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/scheduler/SchedulerEngineHelper.java)
+`portal-kernel/src/com/liferay/portal/kernel/scheduler/SchedulerEngineHelper.java`
 
 - **Date**: Aug. 24, 2023
 - **Ticket**: [LPS-194314](https://liferay.atlassian.net/browse/LPS-194314)
@@ -3480,7 +3480,7 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Reason**: The method is not needed because unscheduled jobs should be deleted at the same time.
 
 **SchedulerEngineHelperUtil.java**
-[`portal-kernel/src/com/liferay/portal/kernel/scheduler/SchedulerEngineHelperUtil.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/scheduler/SchedulerEngineHelperUtil.java)
+`portal-kernel/src/com/liferay/portal/kernel/scheduler/SchedulerEngineHelperUtil.java`
 
 - **Date**: Aug. 24, 2023
 - **Ticket**: [LPS-194314](https://liferay.atlassian.net/browse/LPS-194314)
@@ -3504,11 +3504,11 @@ Here is a list of changes that break or significantly alter existing functionali
 - **Reason**: This listener is no longer used.
 
 **Destination.java**
-[`portal-kernel/src/com/liferay/portal/kernel/messaging/Destination.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/messaging/Destination.java)
+`portal-kernel/src/com/liferay/portal/kernel/messaging/Destination.java`
 
 - **Date**: Sep. 1, 2023
 - **Ticket**: [LPS-194337](https://liferay.atlassian.net/browse/LPS-194337)
-- **What Changed**: These methods are removed: `copyMessageListeners`, `getMessageListenerCount`, `isRegistered`, `register`, `unregister`. The [`MessageListenerRegistry`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/messaging/MessageListenerRegistry.java) interface is added to get message listeners associated with a provided destination name. Update your code by registering a `MessageListener` as an OSGi service, using the `destination.name` property.
+- **What Changed**: These methods are removed: `copyMessageListeners`, `getMessageListenerCount`, `isRegistered`, `register`, `unregister`. The `MessageListenerRegistry` interface is added to get message listeners associated with a provided destination name. Update your code by registering a `MessageListener` as an OSGi service, using the `destination.name` property.
 - **Reason**: This change simplifies the message bus code structure.
 
 **ConfigurationProvider.java**
@@ -3528,7 +3528,7 @@ Here is a list of changes that break or significantly alter existing functionali
 -  **Reason**: This class is being moved to ensure that the `ConfigurationProvider` class is always available to it.
 
 **PortletDisplay.java**
-[`portal-kernel/src/com/liferay/portal/kernel/theme/PortletDisplay.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/theme/PortletDisplay.java)
+`portal-kernel/src/com/liferay/portal/kernel/theme/PortletDisplay.java`
 
 -  **Date**: Sep. 5, 2023
 -  **Ticket**: [LPS-188270](https://liferay.atlassian.net/browse/LPS-188270)
@@ -3536,7 +3536,7 @@ Here is a list of changes that break or significantly alter existing functionali
 -  **Reason**: The `getPortletInstanceConfiguration` method should be handled in `ConfigurationProvider`.
 
 **TriggerConfiguration.java**
-[`portal-kernel/src/com/liferay/portal/kernel/scheduler/TriggerConfiguration.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/scheduler/TriggerConfiguration.java)
+`portal-kernel/src/com/liferay/portal/kernel/scheduler/TriggerConfiguration.java`
 
 - **Date**: Sep. 11, 2023
 - **Ticket**: [LPS-190994](https://liferay.atlassian.net/browse/LPS-190994)

@@ -114,7 +114,7 @@ An activation key is typically required to be deployed and validated to use self
 
 ## Monitoring Scaling
 
-The *Plan and Usage* page contains the project's scaling information. Navigate to the *Scaling* tab. Under *Scaling Summary*, you can see:
+The Plan and Usage page contains the project's scaling information. Navigate to the *Scaling* tab. Under Scaling Summary, you can see
 
 - How many environments have extra nodes from auto-scaling
 - How many hours auto-scaling nodes were up during the selected time period
@@ -123,4 +123,4 @@ The *Plan and Usage* page contains the project's scaling information. Navigate t
 !!! note
     The page only displays scaling events that finished before it loaded. Events that have started but haven't returned to the normal values don't appear on the page until they finish.
 
-You can also see a detailed report for the selected time period in *Autoscaling Report*.
+You can also see a detailed report for the selected time period in *Auto-scaling Report*.

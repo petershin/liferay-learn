@@ -17,7 +17,6 @@ Release notes on the [Liferay Cloud Announcements](https://help.liferay.com/hc/e
 
 ### Web Server Version 6.0.0
 
-* **What Changed**: The container now runs as the `nginx` user, which does not have root-level access. This affects scripts or configurations that require root permissions, which are no longer allowed. Additionally, the `nginx.pid` file is moved from `/var/run/` to `/tmp/`.
-* **Why**: This change prevents possible security issues by limiting the web server container's user to only the necessary permissions. The `nginx.pid` file is moved to ensure continued access with reduced permissions.
-* **Actions Needed**: Update your web server scripts and configurations to ensure they run correctly without root-level access. If you override `nginx.conf`, make sure it does not have a user declaration (since it's no longer required and may disrupt the service), and update all references to the `nginx.pid` file's location.
-
+* **What Changed**: The container now runs as the `nginx` user, which does not have root-level access. This affects scripts or configurations that require root permissions, which are no longer allowed. Additionally, the `nginx.pid` file is moved from `/var/run/` to `/tmp/`, and HAProxy listens on port `8081` instead of `81`.
+* **Why**: This change prevents possible security issues by limiting the web server container's user to only the necessary permissions. The `nginx.pid` file is moved to ensure continued access with reduced permissions. The HAProxy port changed because non-root users cannot listen to ports below a specific range by default.
+* **Actions Needed**: Update your web server scripts and configurations to ensure they run correctly without root-level access. If you override `nginx.conf`, make sure it does not have a user declaration (since it's no longer required and may disrupt the service), and update all references to the `nginx.pid` file's location. If you've customized any logic involving the interaction with HAProxy (e.g., in `liferay.conf` or `nginx.conf`), replace any reference to port `81` with `8081`.

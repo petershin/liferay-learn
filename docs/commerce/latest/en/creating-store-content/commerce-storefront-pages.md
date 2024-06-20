@@ -9,6 +9,7 @@ toc:
   - ./commerce-storefront-pages/pending-orders.md
   - ./commerce-storefront-pages/placed-orders.md
   - ./commerce-storefront-pages/product-details.md
+  - ./commerce-storefront-pages/product-details-using-display-page-template.md
   - ./commerce-storefront-pages/search.md
 uuid: 31069a50-980a-427c-a689-085bf68e6b50
 taxonomy-category-names:

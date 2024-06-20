@@ -70,11 +70,11 @@ Creating a database dump requires different commands for PostgreSQL and MySQL da
 These steps dump your database and compress it into a resulting `database.gz` file.
 
 !!! tip
-    To ignore a database when creating a dump, use the LCP_DUMP_DATABASES_TO_IGNORE variable.
+    To ignore a database when creating a dump, use the `LCP_DUMP_DATABASES_TO_IGNORE` variable.
 
 ### Creating the Volume File
 
-If you are uploading a backup with the [LCP tool](#uploading-backups-via-the-cli-tool), you don't need to create a volume file because the tool automatically compresses your document library's files.
+If you are uploading a backup with the [LCP tool](#uploading-backups-via-the-cli-tool), a volume file is not necessary because the tool automatically compresses your document library's files.
 
 To upload a backup via the Cloud console UI or API, you must compress the document library to upload it.
 

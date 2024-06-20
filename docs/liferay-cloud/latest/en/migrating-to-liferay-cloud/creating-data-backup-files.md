@@ -61,7 +61,7 @@ See [File Store Migration](https://learn.liferay.com/w/dxp/system-administration
 
 ### Create a Jenkins Build with the Change
 
-After your local installation of Liferay is migrated, you must create and deploy a build to your Liferay Cloud environments with the change to `portal-ext.properties`. You do not need to deploy any changes to your environments if you did not need to migrate your document library store.
+After your local installation of Liferay is migrated, you must create and deploy a build to your Liferay Cloud environments with the change to `portal-ext.properties`. You need not deploy changes to your environments if you did not migrate your document library store.
 
 Run Git commands to submit your changes using any terminal with Git installed.
 

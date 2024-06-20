@@ -49,7 +49,7 @@ public class P9Z0EntryLocalServiceImpl extends P9Z0EntryLocalServiceBaseImpl {
 		try {
 			session = p9z0EntryPersistence.openSession();
 
-			String sql = "SELECT * FROM P9Z0_P9Z0Entry WHERE hidden_ = ?";
+			String sql = "select * from P9Z0_P9Z0Entry where hidden_ = ?";
 
 			SQLQuery sqlQuery = session.createSynchronizedSQLQuery(sql);
 

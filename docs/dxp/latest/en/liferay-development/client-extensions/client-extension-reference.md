@@ -6,6 +6,7 @@ taxonomy-category-names:
 - Liferay Self-Hosted
 - Liferay SaaS
 ---
+
 # Client Extension Reference
 
 {bdg-primary}`Liferay Self-Hosted`

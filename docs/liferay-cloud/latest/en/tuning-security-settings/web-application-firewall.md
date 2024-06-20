@@ -15,11 +15,10 @@ Liferay Cloud includes a web application firewall called [ModSecurity](https://g
 
 Liferay Cloud includes additional network security features, including a [private network](../configuring-the-cloud-network/private-network.md), public [load balancer](../configuring-the-cloud-network/load-balancer.md) ([Layer 7](https://www.nginx.com/resources/glossary/layer-7-load-balancing/)), and [CDN](../configuring-the-cloud-network/load-balancer.md#cdn).
 
-![Figure 1: The Web Application Firewall protects against common attacks.](./web-application-firewall/images/01.png)
+![The Web Application Firewall protects against common attacks.](./web-application-firewall/images/01.png)
 
-```{note}
-Custom firewall rules are not available with [shared cluster subscriptions](../reference/platform-limitations.md#security).
-```
+!!! note
+    Custom firewall rules are not available with [shared cluster subscriptions](../reference/platform-limitations.md#security).
 
 ## Enabling ModSecurity
 
@@ -33,9 +32,8 @@ These values are allowed for `LCP_WEBSERVER_MODSECURITY`:
 
 * **DetectionOnly**: enables ModSecurity. Rules are processed, but disruptive actions are not executed (block, deny, drop, allow, proxy, or redirect).
 
-```{tip}
-The `LCP_WEBSERVER_MODSECURITY` environment variable is equivalent to ModSecurity's own [`SecRuleEngine` directive](https://github.com/SpiderLabs/ModSecurity/wiki/Reference-Manual-%28v3.x%29#SecRuleEngine).
-```
+!!! tip
+    The `LCP_WEBSERVER_MODSECURITY` environment variable is equivalent to ModSecurity's own [`SecRuleEngine` directive](https://github.com/SpiderLabs/ModSecurity/wiki/Reference-Manual-%28v3.x%29#SecRuleEngine).
 
 To enable ModSecurity, set the value of `LCP_WEBSERVER_MODSECURITY` to `On` or `DetectionOnly`, then [deploy the change](../updating-services-in-liferay-paas/deploying-changes-via-the-cli-tool.md).
 

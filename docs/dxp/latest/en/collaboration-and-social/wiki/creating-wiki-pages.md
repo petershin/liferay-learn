@@ -10,20 +10,20 @@ taxonomy-category-names:
 
 # Creating Wiki Pages
 
-!!! note
-    You can enable a child Wiki page to inherit its parent's permissions by setting `permissions.propagation.enabled` to `true` in `portal.properties`. This affects only Wiki pages and message board threads; other assets inherit the default resource permission.
-
 The *Wiki* widget starts with a default wiki page called *FrontPage*. Users can edit this page to make their first wiki page.
 
-By default, only authenticated users have the ability to create *Wiki* articles; guests must sign in first.
+By default, only authenticated users can create *Wiki* articles; guests must sign in first.
+
+!!! note
+    Set `permissions.propagation.enabled` to `true` in the `portal-ext.properties` file to have Wiki pages inherit their parent's permissions. This affects only Wiki pages and message board threads; other assets inherit the default resource permission.
 
 ## Creating Content on the *FrontPage*
 
-1. Navigate to the site page where the *Wiki* widget is deployed.
+1. Navigate to the site page where the Wiki widget is deployed.
 
    ![The Wiki Widget with no content](./creating-wiki-pages/images/01.png)
 
-1. To modify the *FrontPage*, click the *This page is empty. Edit it to add some text.* link in the box.
+1. To modify the `FrontPage`, click the *This page is empty. Edit it to add some text.* link in the box.
 
 1. The default text editor uses Creole. To switch the format, expand the *Configuration* section.
 
@@ -48,7 +48,7 @@ Users can attach files to wiki pages.
 
 ### Using Tags and Related Assets to Organize Wiki Pages
 
-Users can add a tag to a page. If searching for content using this tag (for example, *Toyota*), all posts with the *Toyota* will be returned faster.
+Users can add a tag to a page. If searching for content using this tag (for example, *Toyota*), all posts with the *Toyota* are returned faster.
 
 1. Expand the *Categorization* section.
 
@@ -62,27 +62,27 @@ The *FrontPage* article has been created.
 
 ## Creating Child Pages
 
-Once the *FrontPage* Page has been created, users can create a *Child Page*. This creates a simple parent-child hierarchy of wiki pages. A *Wiki Child Page* could have child articles of its own even as it also belongs to a parent page. To create a *Child Page*, click *Add Child Page*.
+Once the `FrontPage` Page has been created, users can create a child page. This creates a parent-child hierarchy of wiki pages. A Wiki child page could have child pages of its own even as it also belongs to a parent page. To create a child page, click *Add Child Page*.
 
 ![Add a child page](./creating-wiki-pages/images/06.png)
 
-It opens the same *Wiki* page editor.
+It opens the same wiki page editor.
 
 ![The Wiki Page editor is the same for all pages at all levels.](./creating-wiki-pages/images/07.png)
 
 ## Creating Other Top Level Pages
 
-As noted above in the *Creating Child Pages*, future wiki pages are created as child pages for organizational purposes. To create another top-level page:
+As noted above, future wiki pages are created as child pages for organizational purposes. To create another top-level page:
 
 1. Click the *All Pages* tab.
 
-1. Mouse over the *Wiki* widget's menu and click *Add Page*.
+1. Mouse over the *Wiki* widgets menu and click *Add Page*.
 
    ![Add another wiki top level page](./creating-wiki-pages/images/04.png)
 
-This opens the same *Wiki* page editor.
+This opens the same Wiki page editor.
 
-A *Wiki* widget can have multiple top-level pages; while the main *Wiki* widget displays only the *FrontPage* wiki page, site content creators can use the [Wiki Display Widget](./using-the-wiki-display-widget.md) to display the other top-level pages.
+A Wiki widget can have multiple top-level pages; while the main Wiki widget displays only the `FrontPage` wiki page, site content creators can use the [Wiki Display Widget](./using-the-wiki-display-widget.md) to display the other top-level pages.
 
 ![Using the Wiki Display Widget to display other top-level pages](./creating-wiki-pages/images/08.png)
 

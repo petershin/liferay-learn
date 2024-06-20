@@ -10,10 +10,10 @@ taxonomy-category-names:
 
 # Creating Message Boards Threads
 
-!!! note
-    You can enable Message Board threads to inherit its parent category's permissions by setting `permissions.propagation.enabled` to true in `portal.properties` file. This feature only applies Message Board threads; newly created threads inherits the default resource permission.
+By default, only authenticated users with the requisite permissions (at minimum, *Add Message*, *Reply to Message*, *Add File*,and *View*) can create threads. See the [Message Boards Permissions Reference](./message-boards-permissions-reference.md) for more information. Administrators can enable the feature to allow guests to post threads.
 
-By default, only authenticated users with the requisite permissions (at minimum, *Add Message*, *Reply to Message*, *Add File*,and *View*) have the ability to create threads. See the [Message Boards Permissions Reference](./message-boards-permissions-reference.md) for more information. Administrators can enable the feature to allow guests to post threads.
+!!! note
+    Set `permissions.propagation.enabled` to `true` in the `portal-ext.properties` file to have Message Board threads inherit their parent category's permissions. This affects only Wiki pages and message board threads; other assets inherit the default resource permission.
 
 ## Posting a New Thread
 
@@ -30,7 +30,7 @@ To create a new thread:
    !!! note
        This field uses the same editor as the Blogs app, except that it uses BBCode instead of HTML. For further instructions, see the documentation on [using the editor](https://help.liferay.com/hc/articles/360018173051-Using-the-Blog-Entry-Editor-).
 
-   ![Figure 1. Creating the first post](./creating-message-boards-threads/images/01.png)
+   ![Creating the first post](./creating-message-boards-threads/images/01.png)
 
 ### Uploading Attachments
 
@@ -40,14 +40,14 @@ Users can attach files to forum posts.
 
 1. Drag and drop a file to upload or use the *Select Files* button to navigate to the file's location.
 
-   ![Figure 2. Uploading an attachment](./creating-message-boards-threads/images/03.png)
+   ![Uploading an attachment](./creating-message-boards-threads/images/03.png)
 
    !!! important
-       You can enable automatic antivirus scanning to scan files on upload. For details, please see [Enabling Antivirus Scanning for Uploaded Files](https://learn.liferay.com/w/dxp/system-administration/file-storage/enabling-antivirus-scanning-for-uploaded-files).
+       You can enable automatic antivirus scanning to scan files on upload. For details, see [Enabling Antivirus Scanning for Uploaded Files](https://learn.liferay.com/w/dxp/system-administration/file-storage/enabling-antivirus-scanning-for-uploaded-files).
 
-### Using *Tags* and *Related Assets* to Organize Threads
+### Using Tags and Related Assets to Organize Threads
 
-Besides using *Categories* to organize the threads, users can add a tag to a forum post. If searching for content using this tag (for example, *Toyota*), all posts with the *Toyota* will be returned faster.
+Besides using categories to organize the threads, users can add a tag to a forum post. If searching for content using this tag (for example, *Toyota*), all posts with the *Toyota* are returned faster.
 
 1. Expand the *Categorization* section.
 
@@ -59,7 +59,7 @@ Message Boards threads can be linked to other existing assets in DXP.
 
 1. To select an existing asset in the portal (e.g., a media file, blog post, etc.) to relate to your thread, expand the *Related Assets* section and use the *Select* button to select that asset.
 
-   ![Figure 3. Adding a Tag and Related Asset](./creating-message-boards-threads/images/04.png)
+   ![Adding a Tag and Related Asset](./creating-message-boards-threads/images/04.png)
 
 ### Set the Thread's Priority
 
@@ -71,11 +71,11 @@ A Message Boards thread can be prioritized as *Urgent*, *Sticky*, or *Announceme
 
 1. Click *Publish*.
 
-The new post has been created. Site administrators have the ability to move this post to another category at a later time.
+The new post has been created. Site administrators can move this post to another category at a later time.
 
 ## Using Threads as Questions
 
-Message Boards Threads can be more than just sharing ideas and opinions. Forum members can turn their post into a question for other site members. The reply that best answers the question can be marked as the answer.
+Message Boards Threads can be more than sharing ideas and opinions. Forum members can turn their post into a question for other site members. The reply that best answers the question can be marked as the answer.
 
 To make a thread post a question:
 
@@ -85,7 +85,7 @@ To make a thread post a question:
 
 1. Check the box for *Mark as a Question*.
 
-   ![Figure 5. Marking a thread as a question](./creating-message-boards-threads/images/05.png)
+   ![Marking a thread as a question](./creating-message-boards-threads/images/05.png)
 
 To select a reply as the answer:
 
@@ -93,7 +93,7 @@ To select a reply as the answer:
 
 1. Click *Mark as an Answer*.
 
-   ![Figure 6. Replies can be marked as an answer to a message board question.](./creating-message-boards-threads/images/02.png)
+   ![Replies can be marked as an answer to a message board question.](./creating-message-boards-threads/images/02.png)
 
 1. Click *Publish* to publish the thread.
 
@@ -101,7 +101,7 @@ To select a reply as the answer:
 
 Click a thread to view it. Messages appear in a threaded view so that replies are aligned under their parent thread. This makes it easy to follow conversations. Thread replies are indented under their parent thread.
 
-![Figure 7: A thread's view displays author information and thread content, for the thread and all replies to the thread.](./creating-message-boards-threads/images/06.png)
+![A thread's view displays author information and thread content, for the thread and all replies to the thread.](./creating-message-boards-threads/images/06.png)
 
 To reply to a message in a thread:
 
@@ -116,8 +116,4 @@ In addition to replying to a message, you can rate it or flag it as objectionabl
 ## Related Topics
 
 - [Creating Message Boards Categories](./creating-message-boards-categories.md)
-
-<!-- Is there a placeholder for an article on "Enabling User Mentions for Collaboration Applications"? This should be link to a placeholder.
-* User can [mention other users](https://help.liferay.com/hc/en-us/articles/360028720892-Mentioning-Users) by entering the `@` character and their user name.
--->
 - [Message Boards Configuration Reference](./message-boards-configuration-reference.md)

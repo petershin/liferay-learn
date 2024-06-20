@@ -34,7 +34,7 @@ List<E4G5Entry> e4g5Entries = E4G5EntryLocalServiceUtil.getE4G5Entries(-1, -1);
 		</table>
 	</c:when>
 	<c:otherwise>
-		<em>There are no E4G5 entries</em>
+		<em>There are no E4G5 entries.</em>
 	</c:otherwise>
 </c:choose>
 
@@ -68,6 +68,7 @@ List<E4G5Entry> e4g5Entries = E4G5EntryLocalServiceUtil.getE4G5Entries(-1, -1);
 <hr />
 
 <h3>Delete a E4G5 Entry</h2>
+	
 <portlet:actionURL name="deleteE4G5Entry" var="deleteE4G5EntryURL" />
 
 <aui:form action="<%= deleteE4G5EntryURL %>">

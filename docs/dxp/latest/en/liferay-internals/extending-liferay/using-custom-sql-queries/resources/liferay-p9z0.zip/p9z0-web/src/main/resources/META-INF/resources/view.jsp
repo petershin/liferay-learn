@@ -34,7 +34,7 @@ List<P9Z0Entry> p9z0Entries = P9Z0EntryLocalServiceUtil.getP9Z0Entries(false);
 		</table>
 	</c:when>
 	<c:otherwise>
-		<em>There are no P9Z0 entries</em>
+		<em>There are no P9Z0 entries.</em>
 	</c:otherwise>
 </c:choose>
 

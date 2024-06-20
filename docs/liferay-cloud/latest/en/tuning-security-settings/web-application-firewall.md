@@ -57,20 +57,24 @@ Attack detection rules are not provided by default. You must provide rules accor
 
 ### OWASP ModSecurity Core Rule Set
 
-The OWASP Foundation's ModSecurity Core Rule Set (CRS) is recommended for use with Liferay Cloud. You can download the OWASP CRS [here](https://coreruleset.org/docs/deployment/install/).
+The OWASP Foundation's ModSecurity Core Rule Set (CRS) is recommended for use with Liferay Cloud.
 
 To add the OWASP CRS to ModSecurity,
 
-1. Unzip the downloaded archive into the repository folder `webserver/configs/[ENV]/modsec/rules/`.
+1. Download the OWASP CRS [here](https://coreruleset.org/docs/deployment/install/).
 
-1. Move `crs-setup.conf.example` to the `webserver/configs/[ENV]/modsec/` folder.
+1. Unzip the downloaded archive into a temporary folder.
+
+1. Copy the `rules/` folder from the download into the repository folder `webserver/configs/[ENV]/modsec/rules/`.
+
+1. From the copied files, move `crs-setup.conf.example` to the `webserver/configs/[ENV]/modsec/` folder.
 
 1. Rename `crs-setup.conf.example` to `crs-setup.conf`.
 
 1. Open the `crs-setup.conf` file and add this to the last line of the file:
 
 ```
-/etc/nginx/modsec/rules/*.conf
+include /etc/nginx/modsec/rules/*.conf
 ```
 
 1. Commit the files to your repository and [deploy the changes](../updating-services-in-liferay-paas/deploying-changes-via-the-cli-tool.md).

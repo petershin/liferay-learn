@@ -34,17 +34,14 @@ See the [Liferay service limitations](../reference/platform-limitations.md#lifer
 The major version of Liferay DXP that you are using is configured within the `LCP.json` file within the `liferay/` folder of your Git repository. Set the major version as the `image` variable using a Docker image name within the `LCP.json` file:
 
 ```
-"image": "liferaycloud/liferay-dxp:7.2-4.0.1"
+"image": "liferaycloud/liferay-dxp:7.4-5.8.1"
 ```
 
 Define the specific service pack and fix pack through the `gradle.properties` file within the same `liferay/` folder. The `liferay.workspace.docker.image.liferay` property defines another Docker image name with this specific fix pack level that is used for the actual deployment:
 
 ```properties
-liferay.workspace.docker.image.liferay=liferay/dxp:7.2.10-sp2-202005120922
+liferay.workspace.docker.image.liferay=liferay/dxp:7.4.13-u122
 ```
-
-!!! note
-    If your Liferay Cloud stack is not yet updated to 4.x.x, then by default, this version is instead located within a `gradle.properties` file at the root of the repository. In this case, define the version with the `liferay.workspace.lcp.liferay.image` property (which does not need to be defined separately from the major version). See [Understanding Service Stack Versions](../reference/understanding-service-stack-versions.md) for more information on checking the version.
 
 You can check the [Services Changelog](https://help.liferay.com/hc/en-us/sections/360006251311-Services-Changelog) for Liferay Cloud to see a reference for each new release. Each new Service update includes Docker images that you can use for your instance. You can also directly check the [DXP tags on Docker Hub](https://hub.docker.com/r/liferay/dxp/tags?page=1) to find the Docker image names to use.
 

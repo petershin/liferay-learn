@@ -50,6 +50,10 @@ The metrics and information available in the cloud console include:
 | Team       | List of current members who can access the console.                             |
 | Settings   | Relevant extension environment information.                                     |
 
-Congratulations! You've completed Module 2: Deploying Liferay.
+## Conclusion
 
-Up Next: [Module 4 - Identity Management and SSO](../module-4-identity-management-and-sso.md)
+Congratulations! You've completed Module 2: Deploying Liferay. Throughout this module you learned about Clarity's deployment requirements, and explored Liferay's deployment options.
+
+In the next module, you'll set up the developer environment you'll use throughout the course.
+
+Up Next: [Module 3: Developer Setup](../module-3-developer-setup.md)

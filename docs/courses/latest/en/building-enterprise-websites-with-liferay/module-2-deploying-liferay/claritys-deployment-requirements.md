@@ -3,7 +3,7 @@ uuid: 136c61f9-106d-45a1-bd10-4b99a1dffae9
 ---
 # Clarity's Deployment Requirements
 
-Choosing the right deployment approach is key to the success of any organization's web-based solutions. This choice can significantly impact a solution's functionality, scalability, and security. Some organizations may require their data and infrastructure to stay in-house for regulatory compliance, necessitating a self-hosted deployment model. Others might prioritize speed and scalability, making Platform-as-a-Service (PaaS) or Software-as-a-Service (SaaS) options more suitable. Ultimately, understanding these diverse needs is important to choosing the best deployment approach for an organization.
+Choosing the right deployment option is key to the success of any organization's web-based solutions. This choice can significantly impact a solution's functionality, scalability, and security. Some organizations may require their data and infrastructure to stay in-house for regulatory compliance, necessitating a self-hosted deployment model. Others might prioritize speed and scalability, making Platform-as-a-Service (PaaS) or Software-as-a-Service (SaaS) options more suitable. Ultimately, understanding these diverse needs is important to choosing the best deployment option for an organization.
 
 ## Requirements
 

@@ -115,7 +115,7 @@ You can also use the search bar to search for specific terms in log messages.
 
 ### Viewing Continuous Log Updates
 
-By default, the logs shown on the Logs page only update when you refresh the page or manually update the date range (which includes up to the second the page is loaded by default). Click *Stream* to enable streaming new log messages while you view the Logs page. Any new log messages automatically appear at the bottom.
+By default, logs on the Logs page only update when you refresh the page or update the date range manually (which includes by default updates up to the second the page is loaded). Click *Stream* to enable streaming new log messages while you view the Logs page. Any new log messages automatically appear at the bottom.
 
 ![Click Stream to switch to streaming mode while viewing logs.](./reading-liferay-cloud-service-logs/images/06.png)
 

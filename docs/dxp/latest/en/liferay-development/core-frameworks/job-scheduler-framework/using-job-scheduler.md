@@ -6,6 +6,7 @@ taxonomy-category-names:
 - Liferay Self-Hosted
 - Liferay PaaS
 ---
+
 # Using Job Scheduler
 
 [Job Scheduler](https://github.com/liferay/liferay-portal/tree/master/modules/apps/dispatch) is a flexible framework built on Liferay's scheduler engine for running and scheduling business logic. This framework uses the `DispatchTaskExecutor` interface to define templates with custom logic that you can use to [create tasks](#adding-a-new-job-scheduler-task) via the Control Panel. You can configure its behavior and execution [schedule](#scheduling-the-job-scheduler-task) after creating the Job Scheduler task.
@@ -14,11 +15,12 @@ taxonomy-category-names:
 
 Job Scheduler provides a convenient UI for viewing and managing all instance [jobs scheduled using the `MessageListener` interface](#viewing-and-managing-scheduled-jobs).
 
-```{note}
-When deciding whether to use Job Scheduler or `MessageListener` to schedule instance jobs, consider the following Job Scheduler benefits.
-Job Scheduler tasks are more flexible than jobs scheduled using `MessageListener`, because you can make changes to the tasks at runtime through the Job Scheduler UI. Changes to `MessageListener` jobs must be coded, compiled, and redeployed. 
-The Job Scheduler UI also provides a more complete overview of each Job Scheduler task's execution properties (e.g., cron expression, start/end date, cluster mode) and execution history. This information is not provided in the UI for `MessageListener` jobs.
-```
+!!! note
+    When deciding whether to use Job Scheduler or `MessageListener` to schedule instance jobs, consider the following Job Scheduler benefits.
+
+    Job Scheduler tasks are more flexible than jobs scheduled using `MessageListener`, because you can make changes to the tasks at runtime through the Job Scheduler UI. Changes to `MessageListener` jobs must be coded, compiled, and redeployed.
+
+    The Job Scheduler UI also provides a more complete overview of each Job Scheduler task's execution properties (e.g., cron expression, start/end date, cluster mode) and execution history. This information is not provided in the UI for `MessageListener` jobs.
 
 ## Adding a New Job Scheduler Task
 
@@ -28,13 +30,12 @@ The Job Scheduler UI also provides a more complete overview of each Job Schedule
 
    Each template is an implementation of the `DispatchTaskExecutor` interface, and each Job Scheduler task is an instance of the selected template. See [Understanding the Job Scheduler Framework](./understanding-the-job-scheduler-framework.md) for more information about how it works.
 
-   ```{note}
-   Liferay DXP provides a variety of Job Scheduler task templates, while Liferay Portal only includes the Talend Job Scheduler Task Executor.
-
-   You can also create your own templates. See [Creating a New Job Scheduler Task Executor](./creating-a-new-job-scheduler-task-executor.md) to learn how.
-   ```
-
    ![Click the Add button and select a Job Scheduler Task Executor template for your task.](./using-job-scheduler/images/02.png)
+
+   !!! note
+       Liferay DXP provides a variety of Job Scheduler task templates, while Liferay Portal only includes the Talend Job Scheduler Task Executor.
+
+       You can also create your own templates. See [Creating a New Job Scheduler Task Executor](./creating-a-new-job-scheduler-task-executor.md) to learn how.
 
 1. Enter a name for the Job Scheduler task.
 
@@ -44,9 +45,8 @@ The Job Scheduler UI also provides a more complete overview of each Job Schedule
 
    All settings added in this way are soft-coded, so you can configure your Job Scheduler tasks without having to edit and redeploy the Executor's code.
 
-   ```{tip}
-   You can create multiple instances of the same Job Scheduler Task Executor and modify their properties and behavior using the settings editor.
-   ```
+   !!! tip
+       You can create multiple instances of the same Job Scheduler Task Executor and modify their properties and behavior using the settings editor.
 
 1. Click *Save* to create a new Job Scheduler task for the selected template.
 
@@ -72,9 +72,9 @@ By default, all Job Scheduler task triggers are inactive at creation. Follow the
 
 **Task Execution Cluster Mode**: Determine whether the Job Scheduler task is run on one or all nodes in a clustered environment.
 
-**Overlap Allowed**: Enable or disable  concurrent execution for the Job Scheduler task. When enabled, new task executions are initiated according to the set schedule, regardless of whether a previous execution is still running.
+**Overlap Allowed**: Enable or disable concurrent execution for the Job Scheduler task. When enabled, new task executions are initiated according to the set schedule, regardless of whether a previous execution is still running.
 
-**Time Zone**: Select a time zone for the execution of the Job Scheduler task. This is independent of the time zone of your Liferay instance. This field is available starting from Liferay DXP 7.4 U35+/GA35+.  
+**Time Zone**: Select a time zone for the execution of the Job Scheduler task. This is independent of the time zone of your Liferay instance. This field is available starting from Liferay DXP 7.4 U35+/GA35+.
 
 **Cron Expression**: Enter a valid Cron expression to determine when the Job Scheduler task is executed.
 
@@ -110,6 +110,6 @@ The Job Scheduler Page's *Scheduled Jobs* tab also lists all jobs scheduled on t
 
 ## Related Topics
 
-* [Job Scheduler UI Reference](./job-scheduler-ui-reference.md)
-* [Understanding the Job Scheduler Framework](./understanding-the-job-scheduler-framework.md)
-* [Creating a New Job Scheduler Task Executor](./creating-a-new-job-scheduler-task-executor.md)
+- [Job Scheduler UI Reference](./job-scheduler-ui-reference.md)
+- [Understanding the Job Scheduler Framework](./understanding-the-job-scheduler-framework.md)
+- [Creating a New Job Scheduler Task Executor](./creating-a-new-job-scheduler-task-executor.md)

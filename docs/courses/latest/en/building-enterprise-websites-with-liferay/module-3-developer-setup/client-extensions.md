@@ -2,7 +2,7 @@
 uuid: 6bab07ab-da1a-4238-ac47-eb4183f4fdb9
 ---
 # Client Extensions
-
+<!--TASK: Rename Article-->
 <!--TASK: Add Abstract-->
 
 Liferay provides extensive out-of-the-box features for building custom solutions, including low-code capabilities that empower users to implement data structures, define complex business logic, and design user interfaces without writing code. While these features offer a high degree of flexibility, there may be times when you need to go beyond OOTB features to customize or extend the Liferay DXP to meet your unique requirements. For these circumstances, Liferay provides [client extensions](https://learn.liferay.com/w/dxp/liferay-development/client-extensions).
@@ -11,7 +11,7 @@ Client extensions are the go to solution for extending Liferay DXP, whether that
 
 You can deploy client extensions to any Liferay environment, including Liferay SaaS, Liferay PaaS, and Liferay Self-Hosted.
 
-<!--IMAGE: diagram of how Client Extensions interface with Liferay-->
+<!--TASK: add diagram of how Client Extensions interface with Liferay-->
 
 Now let’s take a look at the kinds of client extensions that are currently available.
 
@@ -38,7 +38,7 @@ You can group some client extensions in a single project and deploy them togethe
 * Configuration client extensions with frontend client extensions
 * Configuration client extensions with microservice client extensions
 
-<!--IMAGE: diagram showing valid groupings for client extensions may be helpful here-->
+<!--TASK: Add diagram showing valid groupings for client extensions may be helpful here-->
 
 The Clarity workspace for this training includes four client extension projects:
 

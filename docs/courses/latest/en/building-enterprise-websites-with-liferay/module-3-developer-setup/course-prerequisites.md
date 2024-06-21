@@ -3,7 +3,9 @@ uuid: c098e6ef-1ddb-456e-ae41-ee4645f78334
 ---
 # Course Prerequisites
 
-Throughout this course, you'll use a local Liferay environment to implement Clarity's enterprise website. Before moving forward, complete these prerequisites to prepare your system for the following course exercises:
+<!--TASK: Add Abstract-->
+
+Throughout this course, you'll use a local Liferay environment to implement Clarity's enterprise website. Before moving forward, complete these prerequisites to prepare your system for the following exercises:
 
 * [Git](#git)
 * [Java JDK 11](#java-jdk-11)

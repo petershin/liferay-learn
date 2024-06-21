@@ -13,6 +13,9 @@ taxonomy-category-names:
 
 ![Add and manage Job Scheduler tasks via the Job Scheduler page.](./using-job-scheduler/images/01.png)
 
+!!! important
+    Only administrators can view the Job Scheduler application. This means that new roles can't view it, regardless of their assigned permissions, unless they also have the Administrator role.
+
 Job Scheduler provides a convenient UI for viewing and managing all instance [jobs scheduled using the `MessageListener` interface](#viewing-and-managing-scheduled-jobs).
 
 !!! note

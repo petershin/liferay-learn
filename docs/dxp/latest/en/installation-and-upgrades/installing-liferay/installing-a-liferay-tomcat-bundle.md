@@ -9,17 +9,15 @@ taxonomy-category-names:
 
 The Tomcat Bundle includes the Apache Tomcat application server with Liferay DXP/Portal pre-deployed. It's the easiest, fastest way to install Liferay on premises.
 
-```{note}
-If you're using one of the following application servers already, click the name of the one you're using to see instructions for deploying Liferay to it: [Tomcat](./installing-liferay-on-an-application-server/installing-on-tomcat.md), [WildFly](./installing-liferay-on-an-application-server/installing-on-wildfly.md), [JBoss EAP](./installing-liferay-on-an-application-server/installing-on-jboss-eap.md), [WebLogic](./installing-liferay-on-an-application-server/installing-on-weblogic.md), or [WebSphere](./installing-liferay-on-an-application-server/installing-on-websphere.md).
-```
+!!! note
+    If you're using one of the following application servers already, click the name of the one you're using to see instructions for deploying Liferay to it: [Tomcat](./installing-liferay-on-an-application-server/installing-on-tomcat.md), [WildFly](./installing-liferay-on-an-application-server/installing-on-wildfly.md), [JBoss EAP](./installing-liferay-on-an-application-server/installing-on-jboss-eap.md), [WebLogic](./installing-liferay-on-an-application-server/installing-on-weblogic.md), or [WebSphere](./installing-liferay-on-an-application-server/installing-on-websphere.md).
 
-```{note}
-To start an instance fast for touring or demonstration purposes, see [Starting With a Docker Image](../../getting-started/starting-with-a-docker-image.md).
-```
+!!! note
+    To start an instance fast for touring or demonstration purposes, see [Starting With a Docker Image](../../getting-started/starting-with-a-docker-image.md).
 
 ## Prerequisites
 
-A Java JDK 8 or 11 is required. See [the compatibility matrix](https://help.liferay.com/hc/en-us/articles/360049238151) to choose a JDK. See [JVM Configuration](../reference/jvm-configuration.md) for recommended settings.
+As of {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+`, a Java JDK 11, 17, or 21 is required. See [the compatibility matrix](https://help.liferay.com/hc/en-us/articles/360049238151) to choose a JDK. See [JVM Configuration](../reference/jvm-configuration.md) for recommended settings. For earlier version, use JDK 8 or 11.
 
 ## Download
 
@@ -29,10 +27,10 @@ A Java JDK 8 or 11 is required. See [the compatibility matrix](https://help.life
 
 1. Download a Tomcat Bundle:
 
-| File | Description |
-| :--- | :---------- |
-| Tomcat Bundle (`.tar.gz`) | GZipped bundle archive that installs on any OS |
-| Tomcat Bundle (`.7z`) | 7-Zipped bundle archive that installs on any OS |
+| File                      | Description                                     |
+| :------------------------ | :---------------------------------------------- |
+| Tomcat Bundle (`.tar.gz`) | GZipped bundle archive that installs on any OS  |
+| Tomcat Bundle (`.7z`)     | 7-Zipped bundle archive that installs on any OS |
 
 ## Install
 
@@ -42,4 +40,4 @@ Congratulations! You've installed Liferay. It's time to configure a database for
 
 ## Next Steps
 
-* [Configuring a Database](./configuring-a-database.md)
+- [Configuring a Database](./configuring-a-database.md)

@@ -8,6 +8,7 @@ taxonomy-category-names:
 - Liferay PaaS
 - Liferay SaaS
 ---
+
 # API Query Parameters
 
 Whether you consume [REST APIs](./consuming-rest-services.md) or [GraphQL APIs](./consuming-graphql-apis.md), different query parameters are available to help you filter the responses.
@@ -32,92 +33,113 @@ The GraphQL request:
 
 ```graphql
 query {
-	countries {
-	  actions
-		items {
-		   a2
-		   name
-		}
+   countries {
+      actions
+      items {
+         a2
+         name
+      }
       lastPage
       page
       pageSize
       totalCount
-  }
-} 
+   }
+}
 ```
 
 The JSON response:
 
 ```json
 {
-  "actions" : { },
-  "facets" : [ ],
-  "items" : [ {
-    "a2" : "CD",
-    "name" : "democratic-republic-of-congo"
-  }, {
-    "a2" : "ML",
-    "name" : "mali"
-  }, {
-    "a2" : "BV",
-    "name" : "bouvet-island"
-  }, {
-    "a2" : "UY",
-    "name" : "uruguay"
-  }, {
-    "a2" : "SB",
-    "name" : "solomon-islands"
-  }, {
-    "a2" : "LT",
-    "name" : "lithuania"
-  }, {
-    "a2" : "LV",
-    "name" : "latvia"
-  }, {
-    "a2" : "KN",
-    "name" : "st-kitts"
-  }, {
-    "a2" : "MD",
-    "name" : "moldova"
-  }, {
-    "a2" : "IO",
-    "name" : "british-indian-ocean-territory"
-  }, {
-    "a2" : "NP",
-    "name" : "nepal"
-  }, {
-    "a2" : "SC",
-    "name" : "seychelles"
-  }, {
-    "a2" : "PH",
-    "name" : "philippines"
-  }, {
-    "a2" : "AO",
-    "name" : "angola"
-  }, {
-    "a2" : "MT",
-    "name" : "malta"
-  }, {
-    "a2" : "SL",
-    "name" : "sierra-leone"
-  }, {
-    "a2" : "PT",
-    "name" : "portugal"
-  }, {
-    "a2" : "GG",
-    "name" : "guernsey"
-  }, {
-    "a2" : "DM",
-    "name" : "dominica"
-  }, {
-    "a2" : "NF",
-    "name" : "norfolk-island"
-  } ],
-  "lastPage" : 13,
-  "page" : 1,
-  "pageSize" : 20,
-  "totalCount" : 247
-}%             
+   "actions": {},
+   "facets": [],
+   "items": [
+      {
+         "a2": "CD",
+         "name": "democratic-republic-of-congo"
+      },
+      {
+         "a2": "ML",
+         "name": "mali"
+      },
+      {
+         "a2": "BV",
+         "name": "bouvet-island"
+      },
+      {
+         "a2": "UY",
+         "name": "uruguay"
+      },
+      {
+         "a2": "SB",
+         "name": "solomon-islands"
+      },
+      {
+         "a2": "LT",
+         "name": "lithuania"
+      },
+      {
+         "a2": "LV",
+         "name": "latvia"
+      },
+      {
+         "a2": "KN",
+         "name": "st-kitts"
+      },
+      {
+         "a2": "MD",
+         "name": "moldova"
+      },
+      {
+         "a2": "IO",
+         "name": "british-indian-ocean-territory"
+      },
+      {
+         "a2": "NP",
+         "name": "nepal"
+      },
+      {
+         "a2": "SC",
+         "name": "seychelles"
+      },
+      {
+         "a2": "PH",
+         "name": "philippines"
+      },
+      {
+         "a2": "AO",
+         "name": "angola"
+      },
+      {
+         "a2": "MT",
+         "name": "malta"
+      },
+      {
+         "a2": "SL",
+         "name": "sierra-leone"
+      },
+      {
+         "a2": "PT",
+         "name": "portugal"
+      },
+      {
+         "a2": "GG",
+         "name": "guernsey"
+      },
+      {
+         "a2": "DM",
+         "name": "dominica"
+      },
+      {
+         "a2": "NF",
+         "name": "norfolk-island"
+      }
+   ],
+   "lastPage": 13,
+   "page": 1,
+   "pageSize": 20,
+   "totalCount": 247
+}
 ```
 
 ## Filter Parameter
@@ -126,9 +148,8 @@ You can use the `filter` parameter to filter the response for API endpoints. For
 
 Use the [API Explorer](./consuming-rest-services.md) to discover an API's parameters.
 
-```{note}
-Only fields indexed as a keyword support filtering. To find content by text fields, use the [search](#search-parameter) parameter instead.
-```
+!!! note
+    Only fields indexed as a keyword support filtering. To find content by text fields, use the [search](#search-parameter) parameter instead.
 
 ### REST API Example
 
@@ -146,13 +167,13 @@ The GraphQL request:
 
 ```graphql
 query {
-  blogPostings(filter:"headline eq 'Able'",siteKey:"20121")
-	{page
-     items {
-  		articleBody
-  		headline
-  }
-  }
+   blogPostings(filter: "headline eq 'Able'", siteKey: "20121") {
+      page
+      items {
+         articleBody
+         headline
+      }
+   }
 }
 ```
 
@@ -160,63 +181,63 @@ The JSON response:
 
 ```json
 "data": {
-  "blogPostings": {
-    "page": 1,
-    "items": [
+   "blogPostings": {
+      "page": 1,
+      "items": [
       {
-        "articleBody": "<p>Able able able</p>",
-        "headline": "Able"
+         "articleBody": "<p>Able able able</p>",
+         "headline": "Able"
       }
-    ]
-  }
+      ]
+   }
 }
 ```
 
-Various operators can be used for filtering. 
+Various operators can be used for filtering.
 
 **Comparison Operators**
 
-| Operator | Description | Example |
-| :--- | :--- | :--- |
-| `eq` | Equal | `addressLocality eq 'Redmond'` |
-|  | Equal null | `addressLocality eq null` |
-| `ne` | Not equal | `addressLocality ne 'London'` |
-|  | Equal null | `addressLocality ne null` |
-| `gt` | Greater than | `price gt 20` |
-| `ge` | Great than or equal | `price ge 10` |
-| `lt` | Less than | `dateCreated lt 2018-02-13T12:33:12Z` |
-| `le` | Less than or equal | `dateCreated le 2012-05-29T09:13:28Z` |
+| Operator | Description         | Example                               |
+| :------- | :------------------ | :------------------------------------ |
+| `eq`     | Equal               | `addressLocality eq 'Redmond'`        |
+| `eq`     | Equal null          | `addressLocality eq null`             |
+| `ne`     | Not equal           | `addressLocality ne 'London'`         |
+| `ne`     | Not null            | `addressLocality ne null`             |
+| `gt`     | Greater than        | `price gt 20`                         |
+| `ge`     | Great than or equal | `price ge 10`                         |
+| `lt`     | Less than           | `dateCreated lt 2018-02-13T12:33:12Z` |
+| `le`     | Less than or equal  | `dateCreated le 2012-05-29T09:13:28Z` |
 
 **Logical Operators**
 
-| Operator | Description | Example |
-| :--- | :--- | :--- |
-| `and`| Logical and | `price le 200 and price gt 3.5` |
-| `or` | Logical or | `price le 3.5 or price gt 200` |
-| `not` | Logical not | `not (price le 3.5)` |
+| Operator | Description | Example                         |
+| :------- | :---------- | :------------------------------ |
+| `and`    | Logical and | `price le 200 and price gt 3.5` |
+| `or`     | Logical or  | `price le 3.5 or price gt 200`  |
+| `not`    | Logical not | `not (price le 3.5)`            |
 
 The `not` operator needs a space character after it.
 
 **Grouping Operator**
 
-| Operator | Description | Example |
-| :--- | :--- | :--- |
-| `( )` | Precedence grouping | `(price eq 5) or (addressLocality eq 'London')` |
+| Operator | Description         | Example                                         |
+| :------- | :------------------ | :---------------------------------------------- |
+| `( )`    | Precedence grouping | `(price eq 5) or (addressLocality eq 'London')` |
 
 **String Functions**
 
-| Function | Description | Example |
-| :--- | :--- | :--- |
-| `contains` | Contains | `contains(title,'edmon')` |
+| Function     | Description | Example                               |
+| :----------- | :---------- | :------------------------------------ |
+| `contains`   | Contains    | `contains(title,'edmon')`             |
 | `startswith` | Starts with | `startswith(addressLocality, 'Lond')` |
 
 **Lambda Operators**
 
 Lambda operators evaluate a boolean expression on a collection field (e.g, a resource's `keywords`). They must be prepended with a navigation path that identifies a collection.
 
-| Lambda Operator | Description | Example |
-| :--- | :--- | :--- |
-| `any` | Any | `keywords/any(k:contains(k,'news'))` |
+| Lambda Operator | Description | Example                              |
+| :-------------- | :---------- | :----------------------------------- |
+| `any`           | Any         | `keywords/any(k:contains(k,'news'))` |
 
 The `any` operator applies a boolean expression to each collection element and evaluates to `true` if the expression is true for any element.
 
@@ -226,7 +247,7 @@ Syntax examples and other operator combinations are covered in the [OData standa
 
 ## Flatten Parameter
 
-Use this parameter to retrieve items that exist within a hierarchical structure (i.e. parent and child). For example, fetch parent user groups and its child user groups inside of it (e.g. Raylife Global is the parent organization to the different regional Raylife organizations.).
+Use this parameter to retrieve items within a hierarchical structure, such as fetching parent user groups and their respective child user groups. For example, Raylife Global serves as the parent organization for various regional Raylife organizations.
 
 ### REST API Example
 
@@ -244,49 +265,55 @@ The GraphQL request:
 
 ```graphql
 query {
-	organizations (flatten: true) {
-		actions
-		items {
-		   id
-		   name
-		}
-    lastPage
-    page
-    pageSize
-    totalCount
-  }
-} 
+   organizations(flatten: true) {
+      actions
+      items {
+         id
+         name
+      }
+      lastPage
+      page
+      pageSize
+      totalCount
+   }
+}
 ```
 
 The JSON response:
 
 ```json
 {
-  "actions" : {
-   ...
-  },
-  "facets" : [ ],
-  "items" : [ {
-    "id" : "46367",
-    "name" : "Raylife APAC"
-  }, {
-    "id" : "46372",
-    "name" : "Raylife EMEA"
-  }, {
-    "id" : "46377",
-    "name" : "Raylife LATAM"
-  }, {
-    "id" : "46382",
-    "name" : "Raylife NA"
-  }, {
-    "id" : "46616",
-    "name" : "Raylife Global"
-  } ],
-  "lastPage" : 1,
-  "page" : 1,
-  "pageSize" : 20,
-  "totalCount" : 5
-}%       
+   "actions": {
+      // Actions data...
+   },
+   "facets": [],
+   "items": [
+      {
+         "id": "46367",
+         "name": "Raylife APAC"
+      },
+      {
+         "id": "46372",
+         "name": "Raylife EMEA"
+      },
+      {
+         "id": "46377",
+         "name": "Raylife LATAM"
+      },
+      {
+         "id": "46382",
+         "name": "Raylife NA"
+      },
+      {
+         "id": "46616",
+         "name": "Raylife Global"
+      }
+   ],
+   "lastPage": 1,
+   "page": 1,
+   "pageSize": 20,
+   "totalCount": 5
+}
 ```
 
 ## Page and Page Size Parameters
@@ -309,62 +336,73 @@ The GraphQL request:
 
 ```graphql
 query {
-	countries (page: 22, pageSize: 10) {
-	   actions
-		items {
-		   a2
-		   name
-		}
+   countries(page: 22, pageSize: 10) {
+      actions
+      items {
+         a2
+         name
+      }
       lastPage
       page
       pageSize
       totalCount
-  }
-} 
+   }
+}
 ```
 
 The JSON response:
 
 ```json
 {
-  "actions" : { },
-  "facets" : [ ],
-  "items" : [ {
-    "a2" : "KG",
-    "name" : "kyrgyzstan"
-  }, {
-    "a2" : "RE",
-    "name" : "reunion-island"
-  }, {
-    "a2" : "CK",
-    "name" : "cook-islands"
-  }, {
-    "a2" : "ER",
-    "name" : "eritrea"
-  }, {
-    "a2" : "GE",
-    "name" : "georgia"
-  }, {
-    "a2" : "MW",
-    "name" : "malawi"
-  }, {
-    "a2" : "CO",
-    "name" : "colombia"
-  }, {
-    "a2" : "GW",
-    "name" : "guinea-bissau"
-  }, {
-    "a2" : "SN",
-    "name" : "senegal"
-  }, {
-    "a2" : "TW",
-    "name" : "taiwan"
-  } ],
-  "lastPage" : 25,
-  "page" : 22,
-  "pageSize" : 10,
-  "totalCount" : 247
-}%
+   "actions": {},
+   "facets": [],
+   "items": [
+      {
+         "a2": "KG",
+         "name": "kyrgyzstan"
+      },
+      {
+         "a2": "RE",
+         "name": "reunion-island"
+      },
+      {
+         "a2": "CK",
+         "name": "cook-islands"
+      },
+      {
+         "a2": "ER",
+         "name": "eritrea"
+      },
+      {
+         "a2": "GE",
+         "name": "georgia"
+      },
+      {
+         "a2": "MW",
+         "name": "malawi"
+      },
+      {
+         "a2": "CO",
+         "name": "colombia"
+      },
+      {
+         "a2": "GW",
+         "name": "guinea-bissau"
+      },
+      {
+         "a2": "SN",
+         "name": "senegal"
+      },
+      {
+         "a2": "TW",
+         "name": "taiwan"
+      }
+   ],
+   "lastPage": 25,
+   "page": 22,
+   "pageSize": 10,
+   "totalCount": 247
+}
 ```
 
 ## Search Parameter
@@ -387,47 +425,53 @@ The GraphQL request:
 
 ```graphql
 query {
-	countries (search: "united") {
-	   actions
-		items {
-		   a2
-		   name
-		}
+   countries(search: "united") {
+      actions
+      items {
+         a2
+         name
+      }
       lastPage
       page
       pageSize
       totalCount
-  }
-} 
+   }
+}
 ```
 
 The JSON response:
 
 ```json
 {
-  "actions" : { },
-  "facets" : [ ],
-  "items" : [ {
-    "a2" : "GB",
-    "name" : "united-kingdom"
-  }, {
-    "a2" : "US",
-    "name" : "united-states"
-  }, {
-    "a2" : "UM",
-    "name" : "united-states-minor-outlying-islands"
-  }, {
-    "a2" : "VI",
-    "name" : "united-states-virgin-islands"
-  }, {
-    "a2" : "AE",
-    "name" : "united-arab-emirates"
-  } ],
-  "lastPage" : 1,
-  "page" : 1,
-  "pageSize" : 20,
-  "totalCount" : 5
-}%     
+   "actions": {},
+   "facets": [],
+   "items": [
+      {
+         "a2": "GB",
+         "name": "united-kingdom"
+      },
+      {
+         "a2": "US",
+         "name": "united-states"
+      },
+      {
+         "a2": "UM",
+         "name": "united-states-minor-outlying-islands"
+      },
+      {
+         "a2": "VI",
+         "name": "united-states-virgin-islands"
+      },
+      {
+         "a2": "AE",
+         "name": "united-arab-emirates"
+      }
+   ],
+   "lastPage": 1,
+   "page": 1,
+   "pageSize": 20,
+   "totalCount": 5
+}
 ```
 
 ## Sort Parameter
@@ -456,91 +500,116 @@ The GraphQL request:
 
 ```graphql
 query {
-	countries (sort: "name:desc") {
-	   actions
-		items {
-		   a2
-		   name
-		}
+   countries(sort: "name:desc") {
+      actions
+      items {
+         a2
+         name
+      }
       lastPage
       page
       pageSize
       totalCount
-  }
-} 
+   }
+}
 ```
 
 The JSON response:
 
 ```json
 {
-  "actions" : { },
-  "facets" : [ ],
-  "items" : [ {
-    "a2" : "ZW",
-    "name" : "zimbabwe"
-  }, {
-    "a2" : "ZM",
-    "name" : "zambia"
-  }, {
-    "a2" : "YE",
-    "name" : "yemen"
-  }, {
-    "a2" : "WS",
-    "name" : "western-samoa"
-  }, {
-    "a2" : "EH",
-    "name" : "western-sahara"
-  }, {
-    "a2" : "WF",
-    "name" : "wallis-futuna"
-  }, {
-    "a2" : "VN",
-    "name" : "vietnam"
-  }, {
-    "a2" : "VE",
-    "name" : "venezuela"
-  }, {
-    "a2" : "VA",
-    "name" : "vatican-city"
-  }, {
-    "a2" : "VU",
-    "name" : "vanuatu"
-  }, {
-    "a2" : "UZ",
-    "name" : "uzbekistan"
-  }, {
-    "a2" : "UY",
-    "name" : "uruguay"
-  }, {
-    "a2" : "VI",
-    "name" : "united-states-virgin-islands"
-  }, {
-    "a2" : "UM",
-    "name" : "united-states-minor-outlying-islands"
-  }, {
-    "a2" : "US",
-    "name" : "united-states"
-  }, {
-    "a2" : "GB",
-    "name" : "united-kingdom"
-  }, {
-    "a2" : "AE",
-    "name" : "united-arab-emirates"
-  }, {
-    "a2" : "UA",
-    "name" : "ukraine"
-  }, {
-    "a2" : "UG",
-    "name" : "uganda"
-  }, {
-    "a2" : "TV",
-    "name" : "tuvalu"
-  } ],
-  "lastPage" : 13,
-  "page" : 1,
-  "pageSize" : 20,
-  "totalCount" : 247
-}%      
+   "actions": {},
+   "facets": [],
+   "items": [
+      {
+         "a2": "ZW",
+         "name": "zimbabwe"
+      },
+      {
+         "a2": "ZM",
+         "name": "zambia"
+      },
+      {
+         "a2": "YE",
+         "name": "yemen"
+      },
+      {
+         "a2": "WS",
+         "name": "western-samoa"
+      },
+      {
+         "a2": "EH",
+         "name": "western-sahara"
+      },
+      {
+         "a2": "WF",
+         "name": "wallis-futuna"
+      },
+      {
+         "a2": "VN",
+         "name": "vietnam"
+      },
+      {
+         "a2": "VE",
+         "name": "venezuela"
+      },
+      {
+         "a2": "VA",
+         "name": "vatican-city"
+      },
+      {
+         "a2": "VU",
+         "name": "vanuatu"
+      },
+      {
+         "a2": "UZ",
+         "name": "uzbekistan"
+      },
+      {
+         "a2": "UY",
+         "name": "uruguay"
+      },
+      {
+         "a2": "VI",
+         "name": "united-states-virgin-islands"
+      },
+      {
+         "a2": "UM",
+         "name": "united-states-minor-outlying-islands"
+      },
+      {
+         "a2": "US",
+         "name": "united-states"
+      },
+      {
+         "a2": "GB",
+         "name": "united-kingdom"
+      },
+      {
+         "a2": "AE",
+         "name": "united-arab-emirates"
+      },
+      {
+         "a2": "UA",
+         "name": "ukraine"
+      },
+      {
+         "a2": "UG",
+         "name": "uganda"
+      },
+      {
+         "a2": "TV",
+         "name": "tuvalu"
+      }
+   ],
+   "lastPage": 13,
+   "page": 1,
+   "pageSize": 20,
+   "totalCount": 247
+}
 ```
 
+## Related Topics
+
+- [Consuming REST Services](./consuming-rest-services.md)
+- [Consuming GraphQL APIs](./consuming-graphql-apis.md)

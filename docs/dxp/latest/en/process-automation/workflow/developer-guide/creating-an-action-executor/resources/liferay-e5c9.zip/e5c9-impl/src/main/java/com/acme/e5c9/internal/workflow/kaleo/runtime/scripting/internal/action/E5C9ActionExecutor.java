@@ -30,6 +30,7 @@ import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
 
 @Component(
+	immediate = true,
 	property = "com.liferay.portal.workflow.kaleo.runtime.action.executor.language=java",
 	service = ActionExecutor.class
 )

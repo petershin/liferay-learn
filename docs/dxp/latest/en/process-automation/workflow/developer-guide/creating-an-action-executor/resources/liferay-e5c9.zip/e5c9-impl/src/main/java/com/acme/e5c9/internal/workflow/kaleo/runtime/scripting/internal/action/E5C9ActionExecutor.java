@@ -31,7 +31,6 @@ import org.osgi.service.component.annotations.Reference;
 
 @Component(
 	immediate = true,
-	property = "com.liferay.portal.workflow.kaleo.runtime.action.executor.language=java",
 	service = ActionExecutor.class
 )
 public class E5C9ActionExecutor implements ActionExecutor {
@@ -69,7 +68,7 @@ public class E5C9ActionExecutor implements ActionExecutor {
 
 	@Override
 	public String getActionExecutorKey() {
-		return ActionType.UPDATE_STATUS.name();
+		return "java";
 	}
 
 	@Activate

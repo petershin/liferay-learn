@@ -6,6 +6,7 @@ function check_external_links {
 	echo "Checking external links throughout ${1}."
 	echo
 
+	local checked_dir_names
 	local link
 
 	for link in $(ag --file-search-regex "${1}.*\.md|landing\.html" --only-matching "\[.+?\]\(http.*?\)")
@@ -30,16 +31,17 @@ function check_external_links {
 			if [[ $(echo ${1} | sed 's,[^a-z], ,g' | wc -w) -eq 3 ]]
 			then
 				local current_dir_name=$(echo ${_MARKDOWN_FILE_NAME} | cut -d'/' -f1-4)
-				if [[ ${checked_dirs} != *${current_dir_name}* ]]
+
+				if [[ ${checked_dir_names} != *${current_dir_name}* ]]
 				then
-					echo "Checking ${current_dir_name}"
-					local checked_dirs+=$(echo "${current_dir_name} ")
+					echo "Checking ${current_dir_name}."
+
+					checked_dir_names+=$(echo "${current_dir_name} ")
 				fi
 			fi
 
 			if [[ $(curl --head --location --output /dev/null --silent --write-out "%{http_code}" "${url}") == "404" ]]
 			then
-
 				_LINK_FILE_NAME=${url}
 
 				echo_broken_link "404"

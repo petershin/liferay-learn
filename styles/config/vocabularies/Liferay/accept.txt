@@ -1,13 +1,13 @@
 API
 BBCode
 Gradle
-JavaScript
 JDKs
+JavaScript
 Liferay
 OAuth 
 OData
 OSGi
+Talend
 portlet
 servlet
-Talend
 workspace's

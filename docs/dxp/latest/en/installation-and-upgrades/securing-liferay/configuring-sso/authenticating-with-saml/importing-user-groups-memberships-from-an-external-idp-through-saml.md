@@ -10,9 +10,9 @@ taxonomy-category-names:
 ---
 # Importing User Groups' Memberships from an External IdP through SAML
 
-```{warning}
-This feature is currently behind a [dev feature flag](../../../../system-administration/configuring-liferay/feature-flags.md#dev-feature-flags). You must not use this in production. Use it only for testing purposes.
-```
+!!! warning
+    This feature was released behind a [dev feature flag](../../../../system-administration/configuring-liferay/feature-flags.md#dev-feature-flags). It was made Generally Available (GA) in Liferay DXP 2024.Q2/GA120. You must not use this feature in production for earlier versions where it's behind a dev feature flag.
+
 
 You can import users' user group membership from external identity providers (IdPs). This requires only configuring the necessary fields when registering the IdP. The XML structure varies by IdP, so your first step is to find the multi-valued attributes for user groups from your IdP.
 
@@ -77,11 +77,9 @@ Below is the configuration using this structure for importing user groups from a
 
    ![Create a mapping for the user and group attributes.](./importing-user-group-memberships-from-an-external-idp-through-saml/images/02.png)
 
-   ```{note}
-   The instructions above assume that you already have a set of users on Okta belonging to different groups (starting with the prefix `Okta`). Okta recommends using either [keywords or regex](https://support.okta.com/help/s/article/How-to-pass-a-user-s-group-membership-in-a-SAML-Assertion-from-Okta?language=en_US) to define group memberships. These groups are matched by their name with user groups in Liferay. 
-
-   It is mandatory to specify a filter condition or regexp for group attribute statements. The SAML attribute is sent empty if there is no filter condition or regexp. 
-   ```
+   !!! note
+       The instructions above assume that you already have a set of users on Okta belonging to different groups (starting with the prefix `Okta`). Okta recommends using either [keywords or regex](https://support.okta.com/help/s/article/How-to-pass-a-user-s-group-membership-in-a-SAML-Assertion-from-Okta?language=en_US) to define group memberships. These groups are matched by their name with user groups in Liferay. 
+       It is mandatory to specify a filter condition or regexp for group attribute statements. The SAML attribute is sent empty if there is no filter condition or regexp. 
 
 1. Click *Next*.
 
@@ -156,8 +154,6 @@ Now you can go to your Liferay instance and click *Sign In*. This redirects you 
 
    ![The user is added to the Liferay user group after successful login.](./importing-user-group-memberships-from-an-external-idp-through-saml/images/07.png)
 
-```{important}
-Users are assigned automatically to user groups only if they are already present. Ensure that you have user groups in Liferay that correspond to the groups on Okta. If Okta sends the group information and the corresponding user group doesn't exist in Liferay, the attribute is ignored. See [Creating and Managing User Groups](../../../../users-and-permissions/user-groups/creating-and-managing-user-groups.md) to learn how to create and manage user groups. 
-
-If you assign users to other user groups in Liferay after signing in, these memberships are overwritten the next time you log in through the IdP. 
-```
+!!! important
+    Users are assigned automatically to user groups only if they are already present. Ensure that you have user groups in Liferay that correspond to the groups on Okta. If Okta sends the group information and the corresponding user group doesn't exist in Liferay, the attribute is ignored. See [Creating and Managing User Groups](../../../../users-and-permissions/user-groups/creating-and-managing-user-groups.md) to learn how to create and manage user groups. 
+    If you assign users to other user groups in Liferay after signing in, these memberships are overwritten the next time you log in through the IdP. 

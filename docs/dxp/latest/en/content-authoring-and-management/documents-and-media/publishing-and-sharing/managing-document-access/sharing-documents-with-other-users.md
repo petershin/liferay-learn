@@ -23,7 +23,7 @@ When you share, you grant some of your own permissions for that file to the rece
 - By default, the Guest role has Add Discussion permission. This overlaps with the Comment permission in sharing. Therefore, all users can comment on a file regardless of whether the Comment permission was granted via sharing. You can change this by removing the Add Discussion permission from the Guest role.
 
 !!! note
-    The receiving user must be part of the same instance, but doesn't have to be a member of the same site.
+    The receiving user must be part of the same instance, but need not be a member of the same site.
 
 ## Sharing Files in Documents and Media
 

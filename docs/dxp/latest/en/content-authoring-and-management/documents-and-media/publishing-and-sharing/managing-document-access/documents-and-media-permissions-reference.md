@@ -36,7 +36,7 @@ General permissions grant access to the Documents and Media application itself a
 | Preferences                                     | N/A                                                                                                                                      |
 | View                                            | View the Documents and Media application page.                                                                                           |
 
-{bdg-secondary}`{bdg-secondary}Liferay DXP 2024.Q3+/Portal 7.4 GA132+` When a document has restricted visibility, the Not Visible to Guest Users icon (![Not Visible to Guest Users icon](../../../../images/icon-password-policies.png)) is displayed next to the document's name in various situations, such as in the Documents and Media application while in List, Table, or Cards view modes,  when editing the document, or when selecting a document to display it on a page.
+{bdg-secondary}`{bdg-secondary}Liferay DXP 2024.Q3+/Portal 7.4 GA132+` When a document has restricted visibility, the Not Visible to Guest Users icon (![Not Visible to Guest Users icon](../../../../images/icon-password-policies.png)) appears next to the document's name. This happens in contexts such as List, Table, or Cards view modes, when editing the document, or when selecting a document to display it on a page.
 
 !!! tip
     If the Not Visible to Guest Users icon does not appear after managing the view permission for documents in the Documents and Media application, try refreshing your page.
@@ -91,11 +91,11 @@ Resource permissions grant access to view and act on resources in the Documents 
 | View              | View documents. Users with this permission can view all document metadata (e.g., title, description, adaptive media images, previews, thumbnails) and anything defined in attached document types and metadata sets. |
 
 !!! important
-    For Liferay 7.4 U75/GA75 and earlier, users could download assets with the View permission. Starting with 7.4 U76/GA76, the Download permission is separate, allowing distinct management of view and download access. During the upgrade, Liferay automatically assigns the download permission to roles with the view permission. By default, all users, including unauthenticated ones, can download files; to limit this, remove the download permission from specific roles.
+    For Liferay 7.4 U75/GA75 and earlier, users could download assets with the View permission. Starting with 7.4 U76/GA76, there is a separate Download permission for managing view and download access. During the upgrade, Liferay automatically assigns the download permission to roles with the View permission. By default, all users, including unauthenticated ones, can download files; to limit this, remove the download permission from specific roles.
 
-    With the View permission, users can see a document's metadata and file entry in Liferay but not its actual contents. Conversely, with the Download permission, users can retrieve and view the full document content locally.
+    The View permission allows visibility of a document's metadata and file entry in Liferay but not its actual content. Conversely, the Download permission allows retrieving and viewing the full document content locally.
 
-    For documents like images, viewing them in a browser requires downloading them to the local device, so users still need the Download permission to view images online. Understanding these distinctions is essential for effective permission management and access control.
+    For documents like images, viewing them in a browser requires downloading them to the local device, so the Download permission is necessary to view images online. Understanding these distinctions is essential for effective permission management and access control.
 
 ### Shortcut
 

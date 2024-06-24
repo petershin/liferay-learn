@@ -79,7 +79,7 @@ To configure the Site Sharing setting,
 
 1. Click *Save* when finished.
 
-## Related Information
+## Related Topics
 
 - [Sharing Documents with Other Users](./sharing-documents-with-other-users.md)
 - [Site Settings UI Reference](../../../../site-building/site-settings/site-settings-ui-reference.md)

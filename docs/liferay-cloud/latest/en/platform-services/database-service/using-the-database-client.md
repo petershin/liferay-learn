@@ -10,9 +10,8 @@ uuid: fa9c0cd6-ff6b-4672-816a-9d93243dede3
 
 Viewing data in the database is sometimes necessary to troubleshoot an issue with your application or for custom development. In order to access the database, you must use a built-in database client to interface directly with it. This feature is available in up-to-date versions of Liferay Cloud, and it can be accessed in a few short steps.
 
-```{note}
-Only Liferay Cloud users with *Admin* and *Contributor* privileges can make use of the database client.
-```
+!!! note
+    Only Liferay Cloud users with *Admin* and *Contributor* privileges can make use of the database client.
 
 You'll use either the [PostgreSQL client](#postgresql-client) or [MySQL client](#mysql-client), depending on which database your environment uses.
 
@@ -29,19 +28,18 @@ Before you can use the PostgreSQL client via the Liferay service, you must upgra
 | **Liferay (7.3)** | liferaycloud/liferay-dxp:7.3-5.5.0  |
 | **Liferay (7.2)** | liferaycloud/liferay-dxp:7.2-5.5.0  |
 | **Liferay (7.1)** | liferaycloud/liferay-dxp:7.1-5.5.0  |
-| **Liferay (7.0)** | liferaycloud/liferay-dxp:7.0-5.5.0  |
 
 ### Accessing the PostgreSQL Client
 
 1. Log into the Liferay Cloud console.
 
-1. Navigate to the correct environment, and click _Services_:
+1. Navigate to the correct environment, and click *Services*:
 
    ![Navigate to Services to see all services for your environment.](./using-the-database-client/images/01.png)
 
 1. Click on the **liferay** service.
 
-1. Click the _Shell_ tab.
+1. Click the *Shell* tab.
 
 1. Type `psql` into the shell on this screen.
 
@@ -67,11 +65,11 @@ The client prompts you for the password. You can find the database name, user na
 
 1. Log into the Liferay Cloud console.
 
-1. Navigate to the correct environment, and click _Services_:
+1. Navigate to the correct environment, and click *Services*:
 
 1. Click on the **liferay** service.
 
-1. Click the _Shell_ tab.
+1. Click the *Shell* tab.
 
 1. Type `mysql` into the shell on this screen.
 
@@ -95,4 +93,4 @@ The client prompts you for the password. You can find the database name, user na
 
 ## Related Topics
 
-* [Database Service](../database-service.md)
+- [Database Service](../database-service.md)

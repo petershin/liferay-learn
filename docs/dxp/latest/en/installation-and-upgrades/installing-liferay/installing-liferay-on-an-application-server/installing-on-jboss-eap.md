@@ -11,7 +11,7 @@ Installing on JBoss EAP requires installing the DXP WAR, installing dependencies
 
 ## Prerequisites
 
-Liferay DXP requires Java JDK 8 or 11. See [the compatibility matrix](https://help.liferay.com/hc/en-us/articles/360049238151) for further information.
+As of {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+`, Liferay DXP/Portal requires a Java JDK 11, 17, or 21 (prior versions support only JDKs 8 and 11). See [the compatibility matrix](https://help.liferay.com/hc/en-us/articles/360049238151) and [JVM Configuration](../../reference/jvm-configuration.md) for more information.
 
 Download these files from the [Help Center](https://customer.liferay.com/downloads) (subscription) or from [Liferay Community Downloads](https://www.liferay.com/downloads-community):
 
@@ -40,7 +40,7 @@ The installation steps use these terms:
 
 1. The DXP 7.4+ WAR file includes drivers for MariaDB and PostgreSQL. Earlier WARs don't have them. If the 7.4+ WAR doesn't have the driver for the supported database you're using, download your database vendor's JDBC JAR file and place it in the `$JBOSS_HOME/standalone/deployments/ROOT.war/WEB-INF/shielded-container-lib` folder.
 
-    Please see the [compatibility matrix](https://help.liferay.com/hc/en-us/articles/360049238151) for a list of supported databases.
+    See the [compatibility matrix](https://help.liferay.com/hc/en-us/articles/360049238151) for a list of supported databases.
 
 !!! note
     DXP includes a Hypersonic database that is useful for testing purposes. **Do not** use HSQL for production instances.

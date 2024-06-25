@@ -7,6 +7,8 @@ taxonomy-category-names:
 ---
 # Installing on WebSphere
 
+{bdg-secondary}`Liferay DXP 2024.Q1/Portal 7.4 GA119 or below`
+
 Installing Liferay DXP on WebSphere requires installing the DXP WAR, installing dependencies, configuring WebSphere, and starting DXP. You must also configure your database and mail server connections.
 
 > IBM&reg; WebSphere&reg; is a trademark of International Business Machines Corporation, registered in many jurisdictions worldwide.

@@ -11,7 +11,7 @@ Installing on WildFly requires installing the DXP WAR, installing dependencies, 
 
 ## Prerequisites
 
-Liferay DXP requires Java JDK 8 or 11. See [the compatibility matrix](https://help.liferay.com/hc/en-us/articles/360049238151) for further information.
+As of {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+`, Liferay DXP/Portal requires a Java JDK 11, 17, or 21 (prior versions support only JDKs 8 and 11). See [the compatibility matrix](https://help.liferay.com/hc/en-us/articles/360049238151) and [JVM Configuration](../../reference/jvm-configuration.md) for more information.
 
 Download these files from the [Help Center](https://customer.liferay.com/downloads) (subscription) or from [Liferay Community Downloads](https://www.liferay.com/downloads-community). Administrators must download the following:
 

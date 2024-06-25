@@ -62,13 +62,13 @@ A [Style Book](../site-building/site-appearance/style-books/using-a-style-book-t
 
 You can now create [dedicated libraries](../content-authoring-and-management/asset-libraries.md) to organize and reuse your content. Asset libraries make it easier to reuse resources across different Sites. 
 
-Asset Libraries aren't limited to web content: you can share any asset type and connect them to the Sites where they're needed.While creating a page or writing a blog post, content authors can access the connected asset libraries and use images, documents or content stored in them. 
+Asset Libraries aren't limited to web content: you can share any asset type and connect them to the Sites where they're needed. While creating a page or writing a blog post, content authors can access the connected asset libraries and use images, documents, or content stored in them. 
 
 ![Asset Libraries are sharable across Sites and include any asset type.](./whats-new-73/images/06.png)
 
 ### Content Dashboard
 
-For those with large databases full of content that may be going unused, Liferay has created the [Content Dashboard](../content-authoring-and-management/content-dashboard.md). This is a one-stop-place where content authors can access all the content, not just for a given Site, but for all the Sites and asset libraries in a Liferay instance. To help you navigate such a large amount of content, a comprehensive set of filters provides filter and ordering capabilities for the list of content and an audit graph that helps you easily find and audit the content you need. 
+For those with large databases full of content that may be going unused, Liferay has created the [Content Dashboard](../content-authoring-and-management/content-dashboard.md). This is a one-stop-place where content authors can access all the content, not only for a given site but for all the sites and asset libraries in a Liferay instance. To help you navigate such a large amount of content, a comprehensive set of filters provides filter and ordering capabilities for the list of content and an audit graph that helps you easily find and audit the content you need. 
 
 You can access this content dashboard through Global Menu &rarr; Applications tab.
 

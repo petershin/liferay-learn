@@ -15,9 +15,8 @@ The Content Performance tool is a global application for analyzing performance m
 
 To learn how to analyze your content performance quantitatively using the Content Performance tool, see [Analyze Content Metrics Using the Content Performance Tool](./analyze-content-metrics-using-content-performance-tool.md).
 
-```{note}
-To manage and audit your content across Sites and Asset Libraries, use the [Content Dashboard](../content-dashboard.md).
-```
+!!! note
+    To manage and audit your content across Sites and Asset Libraries, use the [Content Dashboard](../content-dashboard.md).
 
 You can access the Content Performance tool when the following conditions are met:
 
@@ -41,9 +40,8 @@ Using a Display Page Template, you can display Web Content, Documents, or Blog e
 1. Click the *Web Content* tab.
 1. For the Web Content you want to review, click the *Actions* (![Actions](../../images/icon-actions.png)) menu and choose *View Content*.
 
-   ```{note}
-   If the *View Content* option is not available, the Web Content is not using a Display Page Template.
-   ```
+   !!! note
+       If the *View Content* option is not available, the Web Content is not using a Display Page Template.
 
    ![Access the Content Performance metrics in Web Content.](./about-the-content-performance-tool/images/04.png)
 
@@ -65,9 +63,8 @@ Using a Display Page Template, you can display Web Content, Documents, or Blog e
 
 ![Access the Content Performance metrics from the Content Dashboard.](./about-the-content-performance-tool/images/05.png)
 
-```{note}
-If the Content Performance option is not available, your content does not meet one or more conditions. See [About the Content Performance Tool](#about-the-content-performance-tool) for more information.
-```
+!!! note
+    If the Content Performance option is not available, your content does not meet one or more conditions. See [About the Content Performance Tool](#about-the-content-performance-tool) for more information.
 
 ## Related Information
 

@@ -41,6 +41,6 @@ The Content Dashboard shows information based on the [categories](./tags-and-cat
 !!! tip
     The Content Audit Tool chart changes dynamically based on the filters that you set.
 
-(3) The Content Info sidebar shows different metadata for each asset, while the Content Performane tool gathers statisstics for your content, like the number of views or the traffic acquisition channels.
+(3) The Content Info sidebar shows different metadata for each asset, while the Content Performance tool gathers statistics such as the view number or traffic acquisition channels.
 
 To learn more about the Content Dashboard interface and how to customize the information for your needs, see the [Content Dashboard Interface](./content-dashboard/content-dashboard-interface.md) topic.

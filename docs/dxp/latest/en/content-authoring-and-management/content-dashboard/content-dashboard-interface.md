@@ -151,7 +151,7 @@ The criteria from different filters is combined using the `and` operator (see ex
 
 ## Content Info Sidebar
 
-The info sidebar provides access to actions and metadata for your selected asset. To open the sidebar, click the *Actions* button (![Actions Button](../../images/icon-actions.png)) for the desired asset and select *Info*. Alternatively, you can hover over the asset and click the *Info* button (![Information Button](../../images/icon-information.png)).
+The info sidebar provides access to actions and metadata for your selected asset. To open the sidebar, click *Actions* (![Actions Button](../../images/icon-actions.png)) for the desired asset and select *Info*. Alternatively, you can hover over the asset and click *Info* (![Information Button](../../images/icon-information.png)).
 
 ![Click the Info button to access the content info sidebar.](./content-dashboard-interface/images/09.png)
 

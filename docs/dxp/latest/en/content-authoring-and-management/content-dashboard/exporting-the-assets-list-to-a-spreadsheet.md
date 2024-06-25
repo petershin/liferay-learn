@@ -24,9 +24,9 @@ While generating the file, *Export XLS* is replaced with a status and a cancel b
 
 When the export process is complete, the status shows the message: *XLS Generated*.
 
-![Once the export process begins, it can be cancelled by clicking Cancel Export.](./exporting-the-assets-list-to-a-spreadsheet/images/02.png)
+![Once the export process begins, it can be canceled by clicking Cancel Export.](./exporting-the-assets-list-to-a-spreadsheet/images/02.png)
 
-Note that navigating away from the page while the `.xls` file is being generated stops the export process. The system prompts the user before leaving the page.
+Note that navigating away from the page while the `.xls` file is being generated stops the export process. The system prompts you before leaving the page.
 
 ![A prompt appears to confirm navigating away from the page while an export is being processed.](./exporting-the-assets-list-to-a-spreadsheet/images/03.png)
 

@@ -15,9 +15,8 @@ uuid: 13f8ecf5-b505-4bf8-a48e-955a22fd3579
 
 You can use the Content Performance tool to analyze content metrics, like the number of views, traffic acquisition channels, or keywords driving people to your Page. In the Content Performance tool, you can view metrics for the URL of the Content Page, Widget Page, or Web Content associated with a [Display Page Template](../../site-building/displaying-content/using-display-page-templates/publishing-content-with-display-pages.md).
 
-```{important}
-Content Performance metrics are only available for the [Default Experience](../../site-building/personalizing-site-experience/experience-personalization/creating-and-managing-experiences.md).
-```
+!!! important
+    Content Performance metrics are only available for the [Default Experience](../../site-building/personalizing-site-experience/experience-personalization/creating-and-managing-experiences.md).
 
 Access the Content Performance tool using the *View Metrics* (![View Metrics](../../images/icon-analytics.png)) option for your content. You can find this option in the [Applications toolbar](../../getting-started/navigating-dxp.md#applications-bar) and the [Content Dashboard](../content-dashboard.md). For more information, see [About the Content Performance Tool](./about-the-content-performance-tool.md).
 
@@ -41,9 +40,8 @@ The top area in the Content Performance tool provides general information about 
 
 The [Engagement](#analyzing-content-engagement) and [Traffic Channels](#analyzing-traffic-channels) areas in the Content Performance tool show statistics for the language selected in the language icon selector. When your content is localized in different languages, you can view metrics for each language.
 
-```{note}
-Even when your content is not translated into a specific language, you may find statistics for that language if users access the content using that language's URL.
-```
+!!! note
+    Even when your content is not translated into a specific language, you may find statistics for that language if users access the content using that language's URL.
 
 ![The top area in the Content Performance tool provides general information about your content.](./analyze-content-metrics-using-content-performance-tool/images/01.png)
 
@@ -64,9 +62,8 @@ This area shows the number of views for the content or Page URL and how this num
 
 By default, the Engagement area shows the total number of views for the content, along with the number of views in the last seven days. You can change this period in the drop-down time selector and analyze trends over time using the backward and forward buttons (![Arrow left](../../images/icon-angle-left.png) ![Arrow right](../../images/icon-angle-right.png)). Hover over any part of the line chart to show views for a specific time.
 
-```{note}
-If the Engagement chart shows a zero value for a certain period, it means that the information could not be collected or analyzed for that period.
-```
+!!! note
+    If the Engagement chart shows a zero value for a certain period, it means that the information could not be collected or analyzed for that period.
 
 ![The Engagement area in the Content Performance tool provides Views information.](./analyze-content-metrics-using-content-performance-tool/images/04.png)
 
@@ -74,13 +71,13 @@ If the Engagement chart shows a zero value for a certain period, it means that t
 
 This part of the Content Performance sidebar provides information about the sources driving web traffic to your content. The sources can be:
 
-| Traffic Channel | Source Description |
-| :--- | :--- |
-| Social | Social networks |
-| Organic | Search engines |
-| Paid | Paid keywords from Google Ads |
-| Referral | Sources other than the search engines and same Page's domain |
-| Direct | Other or unknown sources |
+| Traffic Channel | Source Description                                           |
+|:----------------|:-------------------------------------------------------------|
+| Social          | Social networks                                              |
+| Organic         | Search engines                                               |
+| Paid            | Paid keywords from Google Ads                                |
+| Referral        | Sources other than the search engines and same Page's domain |
+| Direct          | Other or unknown sources                                     |
 
 ![The Search Engines Traffic area in the Content Performance tool provides information about your traffic channels.](./analyze-content-metrics-using-content-performance-tool/images/05.png)
 
@@ -90,17 +87,16 @@ When you click one of the traffic channels (A), you can see extended information
 
 The following table describes the metrics you can find in the Traffic Channels area:
 
-| Label | Description |
-| :--- | :--- |
-| Traffic Volume | The estimated number of visitors to your Page. |
-| Traffic Share | Percentage of traffic your content receives from the traffic source. |
-| Top Referring Social Media | Top ten social media networks driving traffic to your Page. |
-| Top Referring Pages | Top ten referrer Pages driving traffic to your Page. |
-| Top Referring Domains | Top ten referrer domains driving traffic to your Page. |
+| Label                      | Description                                                          |
+|:---------------------------|:---------------------------------------------------------------------|
+| Traffic Volume             | The estimated number of visitors to your Page.                       |
+| Traffic Share              | Percentage of traffic your content receives from the traffic source. |
+| Top Referring Social Media | Top ten social media networks driving traffic to your Page.          |
+| Top Referring Pages        | Top ten referrer Pages driving traffic to your Page.                 |
+| Top Referring Domains      | Top ten referrer domains driving traffic to your Page.               |
 
-```{note}
-Keywords are one or more words that people use to find content.
-```
+!!! note
+    Keywords are one or more words that people use to find content.
 
 ## Related Information
 

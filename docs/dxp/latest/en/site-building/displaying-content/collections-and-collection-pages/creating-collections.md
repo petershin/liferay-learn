@@ -123,7 +123,7 @@ You can create Content Sets through the Content Sets interface in Site Administr
 
 #### Creating a Manual Content Set
 
-To demonstrate the creation of a Manual Content Set, create a Content Set that contains a number of images to be displayed on the Frontpage of the fictitious Space Program website. To prepare for this exercise, upload some appropriate images to *Documents and Media* to use for the Content Set.
+To demonstrate the creation of a Manual Content Set, create a Content Set that contains images to be displayed on the front page of the fictitious Space Program website. To prepare for this exercise, upload some appropriate images to *Documents and Media* to use for the Content Set.
 
 1. Go to *Site Administration* &rarr; *Content & Data* and select *Content Sets*.
 

@@ -10,4 +10,5 @@ OSGi
 Talend
 portlet
 servlet
+widget's
 workspace's

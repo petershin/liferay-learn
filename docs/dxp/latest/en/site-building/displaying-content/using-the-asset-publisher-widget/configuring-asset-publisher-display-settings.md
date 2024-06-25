@@ -30,7 +30,7 @@ Now, users can view the Asset Publisher widget displayed in the page as you conf
 
 ## Asset Publisher Display Configuration Reference
 
-You can customize how assets are presented to users, ensuring they are displayed in the most effective way. Here are the display settings and other configurable options.
+You can customize how assets are presented to users, ensuring they appear in the most effective way. Here are the display settings and other configurable options.
 
 ### Display Settings
 

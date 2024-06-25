@@ -10,7 +10,7 @@ uuid: bda599ab-3cb9-44a5-b346-7faf990a4497
 
 # Displaying Assets Using the Asset Publisher Widget
 
-As you create web content, remember that pieces of content are assets, just like message board entries and blog posts. The most common type of asset is the [web content](../../../content-authoring-and-management/web-content/web-content-articles/adding-a-basic-web-content-article.md).
+As you create web content, remember that pieces of content are assets like message board entries and blog posts. The most common type of asset is the [web content](../../../content-authoring-and-management/web-content/web-content-articles/adding-a-basic-web-content-article.md).
 The Asset Publisher widget supports these asset types by default:
 
 - Blogs Entry
@@ -63,7 +63,7 @@ You can configure the Asset Publisher widget to select assets dynamically based 
 
 ## Asset Selection Options
 
-Assets are selected for display in the Asset Publisher widget using one of these selection methods:
+The Asset Publisher widget uses one of these methods to select assets for display:
 
 - [Collection](#collection)
 - [Dynamic](#dynamic)
@@ -71,11 +71,11 @@ Assets are selected for display in the Asset Publisher widget using one of these
 
 ### Collection
 
-Select this option to choose from your previously saved collections or collection providers. To learn more about collections, see [About Collections and Collection Pages](../../../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md).
+Choose from your previously saved collections or collection providers. To learn more about collections, see [About Collections and Collection Pages](../../../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md).
 
 1. Under Select Collection, click *Select*.
 
-1. Select either the *Collections* or *Collections Providers* tab
+1. Select either the *Collections* or *Collections Providers* tab.
 
 1. Choose one of your existing collections or collection providers.
 
@@ -88,7 +88,7 @@ Select this option to choose from your previously saved collections or collectio
 
 ### Dynamic
 
-Using the Dynamic asset selection, you can include assets in the Asset Publisher widget automatically, based on different criteria.
+Include assets in the Asset Publisher widget automatically based on your choice of criteria.
 
 ![Define the options for the dynamic asset collection, including Source, Scope, Filter, and Ordering.](./displaying-assets-using-the-asset-publisher-widget/images/04.png)
 
@@ -96,7 +96,7 @@ Using the Dynamic asset selection, you can include assets in the Asset Publisher
 
 1. In the Source section, use the Asset Type drop-down menu to select your assets. Select a specific asset type or *Select More Than One* to choose from different types.
 
-   With some options (e.g. Web Content Article and Document) you may need to select a subtype (e.g. Web Content Article Structures and Document Type). You can also choose any subtype or select more than one subtype.
+   With some options (e.g. Web Content Article and Document) selecting a subtype (e.g. Web Content Article Structures and Document Type) is required. You can choose any subtype or select more than one subtype.
 
 1. In the Filter section, define the rules for the assets in your Asset Publisher widget. You can define rules based on [categories](../../../content-authoring-and-management/tags-and-categories/defining-categories-and-vocabularies-for-content.md), [tags](../../../content-authoring-and-management/tags-and-categories/tagging-content-and-managing-tags.md), or keywords.
 
@@ -104,9 +104,9 @@ Using the Dynamic asset selection, you can include assets in the Asset Publisher
 
 1. Before `Liferay DXP 2024.Q1+/Portal 7.4 GA112+`, include a Custom User Attribute if you have defined one.
 
-   The assets only appear if they match the included custom user profile attributes.
+   The assets appear only if they match the included custom user profile attributes.
 
-   The Custom User Attribute option within the Asset Publisher widget is deprecated as of `Liferay DXP 2024.Q1+/Portal 7.4 GA112+`. Instead, try [Displaying Content Dinamically Using Experiences](#displaying-content-dinamically-using-experiences).
+   The Custom User Attribute option within the Asset Publisher widget is deprecated as of `Liferay DXP 2024.Q1+/Portal 7.4 GA112+`. Instead, try [Displaying Content Dynamically Using Experiences](#displaying-content-dinamically-using-experiences).
 
 1. In the Ordering section, choose the presentation order of assets in the Asset Publisher widget.
 
@@ -119,7 +119,7 @@ Using the Dynamic asset selection, you can include assets in the Asset Publisher
 
 ### Manual
 
-Here you can set parameters and manually filter specific assets:
+Set parameters and manually filter specific assets:
 
 1. In the Scope section, choose to display assets from an individual site or other sites.
 
@@ -133,7 +133,7 @@ Here you can set parameters and manually filter specific assets:
 
 1. (Optional) Click *Create a collection from this configuration*, enter a title, and click *Save* to save the configuration as a new [collection](../../../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md).
 
-## Displaying Content Dinamically Using Experiences
+## Displaying Content Dynamically Using Experiences
 
 Once the Asset Publisher widget is ready to display content, you can create personalized experiences for different groups of users by customizing the content displayed in the Asset Publisher widget for each group. See [Content Page Personalization](../../personalizing-site-experience/experience-personalization/content-page-personalization.md) to learn more about personalizing experiences.
 
@@ -152,11 +152,11 @@ With the Asset Publisher widget and collections in place, create an [experience]
 
    If there's no audience in place, click *New Segment* to create one. Read [Creating Segments](../../personalizing-site-experience/segmentation/creating-and-managing-user-segments.md) to learn more.
 
-   After creating the experience, it appears listed in the Select Experience modal.
+   After creating the experience, it appears in the Select Experience modal.
 
 1. Arrange the experiences and prioritize the desired one by moving it upwards using the arrows. Activate the experience by moving it above the Default experience. Read [Understanding How Experiences Work](../../personalizing-site-experience/experience-personalization/content-page-personalization.md#understanding-how-experiences-work) to learn more.
 
-1. After selecting an experience, configure and edit the page, including the Asset Publisher widget and the content displayed in the widget. This version of the page is displayed when the selected experience is active.
+1. After selecting an experience, configure and edit the page, including the Asset Publisher widget and the content displayed in the widget. This version of the page appears when the selected experience is active.
 
 Below, two experiences have been created: `Content for HR Employees` and `Content for IT Employees`. Each shows different categorized content to different audiences. You can also see the Default experience that shows all available content.
 

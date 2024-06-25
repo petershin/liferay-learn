@@ -56,9 +56,9 @@ Enable RSS feed subscriptions for the Asset Publisher:
 
 1. Select *Web Content* under the *Content and Data* heading.
 
-1. Open the *Administration* tab under System Scope, check the *Show Feeds* box. For more information on deprecated apps, see [Maintenance Mode and Deprecations in 7.4](../../../installation-and-upgrades/upgrading-liferay/reference/maintenance-mode-and-deprecations-in-7-4.md).
+1. Open the *Administration* tab under System Scope and check the *Show Feeds* box. For more information on deprecated apps, see [Maintenance Mode and Deprecations in 7.4](../../../installation-and-upgrades/upgrading-liferay/reference/maintenance-mode-and-deprecations-in-7-4.md).
 
-    ![Enable RSS feeds through System Settings.](./configuring-asset-publisher-subscriptions/images/04.png)
+   ![Enable RSS feeds through System Settings.](./configuring-asset-publisher-subscriptions/images/04.png)
 
 1. Navigate back to the Asset Publisher widget, hover over it, click *Options* (![Options](../../../images/icon-app-options.png)) in the widget's menu, and select *Configuration*.
 

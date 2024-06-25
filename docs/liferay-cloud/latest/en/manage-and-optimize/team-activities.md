@@ -26,6 +26,8 @@ Within each environment, activities are organized into two sections: *Builds and
 - **Team Activities**: examples include when environment invitations are sent, and when new members join the environment.
 - **VPN Activities**: examples include when a VPN is created, edited, connected, or disconnected.
 
+![Filter general activities by type.](./team-activities/images/01.png)
+
 Both sections specify the acting team member and the time of the activity.
 
 ## Viewing Environment Activities
@@ -34,7 +36,7 @@ You can view summaries of recent environment activities from the environment *Ov
 
 Toggle between activity types by clicking on the *Builds and Deployments* or *General* tabs.
 
-![View environment activities from the Overview page.](./team-activities/images/01.png)
+![View environment activities from the Overview page.](./team-activities/images/02.png)
 
 View extended records of environment activities from the *Activities* page:
 
@@ -44,7 +46,7 @@ View extended records of environment activities from the *Activities* page:
 
 This page lists all activities that have occurred on the Liferay Cloud instance.
 
-![View extended environment activities from the Activities page.](./team-activities/images/02.png)
+![View extended environment activities from the Activities page.](./team-activities/images/03.png)
 
 !!! note
     You can also view all build and deployment activities from your project environments via the *Builds* and *Deployments* pages. See [Overview of the Liferay Cloud Deployment Workflow](../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md) for more information about these pages.

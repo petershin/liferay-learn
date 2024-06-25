@@ -2,6 +2,7 @@
 toc:
   - ./extending-liferay/creating-a-model-listener.md
   - ./extending-liferay/creating-service-wrappers.md
+  - ./extending-liferay/using-custom-sql-queries.md
   - ./extending-liferay/customizing-jsps-with-dynamic-includes.md
   - ./extending-liferay/customizing-localization.md
   - ./extending-liferay/overriding-osgi-services.md

@@ -203,7 +203,7 @@ By default, the Other area includes the following settings:
 
 ## Site Setting UI Reference in Liferay DXP 7.2 and 7.3
 
-To view a Site's settings, open the Site Menu (![Site Menu](../../images/icon-product-menu.png)) and go to *Configuration* &rarr; *Settings*, where you'll see the following tabs:
+To view a Site's settings, open the Site Menu (![Site Menu](../../images/icon-product-menu.png)) and go to *Configuration* &rarr; *Settings*, to see the following tabs:
 
 - [General](#general)
 - [Social](#social)
@@ -213,7 +213,7 @@ To view a Site's settings, open the Site Menu (![Site Menu](../../images/icon-pr
 ![Site Settings are organized into four tabs.](./site-settings-ui-reference/images/01.png)
 
 !!! note
-    Many of these settings can be localized to provide translations based on a user's locale. See [Introduction to Localization](https://help.liferay.com/hc/en-us/articles/360028746672-Introduction-to-Localization) and [Modifying Localizable Site Fields](./site-localization.md#modifying-localizable-site-fields) for more information.
+    Many of these settings can be localized to provide translations based on a user's locale. See [Initial Instance Localization](../../installation-and-upgrades/setting-up-liferay/initial-instance-localization.md) and [Modifying Localizable Site Fields](./site-localization.md#modifying-localizable-site-fields) for more information.
 
 ### General
 

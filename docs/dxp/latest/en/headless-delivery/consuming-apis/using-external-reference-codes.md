@@ -15,10 +15,10 @@ taxonomy-category-names:
 
 Many of Liferay's headless API endpoints support an external reference code (ERC). The ERC field is useful in wide range of scenarios. For example, when migrating content into Liferay, you could keep the unique reference IDs from another system in the ERC field. Or use ERCs to have human-readable keys for your site content. For example, Liferay assigns a unique ID for each created blog post, but you could assign human readable keys for easier reference.
 
-Each ERC must be unique, and the same ERC cannot be used with another entity in the same scope. For example, a blog post and a document on the same site cannot have the same ERC. If you try, you'll get a `duplicate entry` error.
+Each ERC must be unique, and the same ERC cannot be used with another entity in the same scope. For example, a blog post and a document on the same site cannot have the same ERC. On save, a `duplicate entry` error appears.
 
 !!! important
-    You must not use [reserved characters](https://www.ibm.com/docs/en/cics-ts/6.x?topic=concepts-reserved-excluded-characters) in URLs or paths provided as inputs in command-line options. This includes using external reference codes with slashes (`/`) in endpoint URLs. See [W3School's HTML URL Encoding Reference](https://www.w3schools.com/tags/ref_urlencode.ASP) to learn more.
+    If you use an ERC as a URL parameter, [reserved characters](https://www.w3schools.com/tags/ref_urlencode.ASP) must be encoded. This includes using external reference codes with slashes (`/`) in endpoint URLs.
 
 ## Blog Post ERC Example
 

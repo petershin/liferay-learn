@@ -16,4 +16,6 @@ taxonomy-category-names:
 - Liferay SaaS
 - Liferay PaaS
 ---
+
 # Users and Permissions
+<!--Introduction needed. Markdown removed, since children cards are automatically added.-->

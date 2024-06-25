@@ -12,4 +12,6 @@ taxonomy-category-names:
 - Liferay PaaS
 - Liferay SaaS
 ---
+
 # Configuring Taxes
+<!--Introduction needed. Markdown removed, since children cards are automatically added.-->

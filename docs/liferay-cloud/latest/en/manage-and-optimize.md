@@ -13,18 +13,4 @@ taxonomy-category-names:
 uuid: 08eb56ca-0bb2-4383-8834-693c2a996cec
 ---
 # Manage and Optimize
-
-## Performance and Monitoring
-
-- [Auto-Scaling](./manage-and-optimize/auto-scaling.md)
-- [Application Metrics](./manage-and-optimize/application-metrics.md)
-
-## Managing Usage
-
-- [Real-Time Alerts](./manage-and-optimize/real-time-alerts.md)
-- [Quotas and Resource Usage](./manage-and-optimize/quotas-and-resource-usage.md)
-
-## Account and Team Management
-
-- [Environment Teams and Roles](./manage-and-optimize/environment-teams-and-roles.md)
-- [Team Activities](./manage-and-optimize/team-activities.md)
+<!--Introduction needed. Markdown removed, since children cards are automatically added.-->

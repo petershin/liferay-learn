@@ -11,8 +11,6 @@ taxonomy-category-names:
 - Liferay PaaS
 - Liferay SaaS
 ---
-# Contributing to Liferay Development
 
-* [Fixing a Bug or Contributing a New Feature](./contributing-to-liferay-development/fixing-a-bug-or-contributing-a-new-feature.md)
-* [Building Liferay Source](./contributing-to-liferay-development/building-liferay-source.md)
-* [Organizing the Source](./contributing-to-liferay-development/organizing-the-source.md)
+# Contributing to Liferay Development
+<!--Introduction needed. Markdown removed, since children cards are automatically added.-->

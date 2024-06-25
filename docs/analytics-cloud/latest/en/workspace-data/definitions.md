@@ -12,9 +12,6 @@ taxonomy-category-names:
 - Liferay SaaS
 - Liferay PaaS
 ---
-# Definitions
 
-- [Definitions for Individuals](./definitions/definitions-for-individuals.md)
-- [Definitions for Events](./definitions/definitions-for-events.md)
-- [Definitions for Event Attributes](./definitions/definitions-for-event-attributes.md)
-- [Setting a Search Query](./definitions/setting-a-search-query.md)
+# Definitions
+<!--Introduction needed. Markdown removed, since children cards are automatically added.-->

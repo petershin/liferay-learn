@@ -9,6 +9,6 @@ taxonomy-category-names:
 - Liferay PaaS
 - Liferay SaaS
 ---
-# Alerts and Announcements
 
-* [Sending Alerts and Announcements](./alerts-and-announcements/sending-alerts-and-announcements.md)
+# Alerts and Announcements
+<!--Introduction needed. It is recommended to use the already existing articles. Markdown removed, since children cards are automatically added.-->

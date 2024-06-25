@@ -10,7 +10,6 @@ taxonomy-category-names:
 - Liferay PaaS
 - Liferay SaaS
 ---
-# Questions Application
 
-* [Using the Questions App](./questions-application/using-the-questions-app.md)
-* [Configuring the Questions App](./questions-application/configuring-the-questions-app.md)
+# Questions Application
+<!--Introduction needed. It is recommended to use the already existing articles. Markdown removed, since children cards are automatically added.-->

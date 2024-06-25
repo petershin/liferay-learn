@@ -18,14 +18,6 @@ taxonomy-category-names:
 - Liferay PaaS
 - Liferay SaaS
 ---
-# Consuming APIs
 
-* [Consuming Rest Services](./consuming-apis/consuming-rest-services.md)
-* [Consuming GraphQL Apis](./consuming-apis/consuming-graphql-apis.md)
-* [Data Migration Center](./consuming-apis/data-migration-center.md)
-* [API Query Parameters](./consuming-apis/api-query-parameters.md)
-* [Batch Engine API Basics - Importing Data](./consuming-apis/batch-engine-api-basics-importing-data.md)
-* [Batch Engine API Basics - Exporting Data](./consuming-apis/batch-engine-api-basics-exporting-data.md)
-* [Making Unauthenticated Requests](./consuming-apis/making-unauthenticated-requests.md)
-* [Using External Reference Codes](./consuming-apis/using-external-reference-codes.md)
-* [API Headers Reference](./consuming-apis/api-headers-reference.md)
+# Consuming APIs
+<!--Introduction needed. Markdown removed, since children cards are automatically added.-->

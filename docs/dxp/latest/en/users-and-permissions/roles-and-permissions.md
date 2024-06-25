@@ -15,12 +15,6 @@ taxonomy-category-names:
 - Liferay SaaS
 - Liferay PaaS
 ---
-# Roles and Permissions
 
-- [Understanding Roles and Permissions](./roles-and-permissions/understanding-roles-and-permissions.md)
-- [Creating and Managing Roles](./roles-and-permissions/creating-and-managing-roles.md)
-- [Defining Role Permissions](./roles-and-permissions/defining-role-permissions.md)
-- [Assigning Users to Roles](./roles-and-permissions/assigning-users-to-roles.md)
-- [Assigning Roles to User Segments](./roles-and-permissions/assigning-roles-to-user-segments.md)
-- [Configuring a Password Policy](./roles-and-permissions/configuring-a-password-policy.md)
-- [Default Roles Reference](./roles-and-permissions/default-roles-reference.md)
+# Roles and Permissions
+<!--Introduction needed. It is recommended to use the already existing articles. Markdown removed, since children cards are automatically added.-->

@@ -11,8 +11,6 @@ taxonomy-category-names:
 - Liferay PaaS
 uuid: 72bea17d-f076-44b9-aa36-e243c89e83f0
 ---
-# Events
 
-- [Events Analysis](./events/events-analysis.md)
-- [Tracking Events](./events/tracking-events.md)
-- [Events Descriptions](./events/events-descriptions.md)
+# Events
+<!--Introduction needed. It is recommended to use the already existing articles. Markdown removed, since children cards are automatically added.-->

@@ -11,8 +11,6 @@ taxonomy-category-names:
 - Liferay SaaS
 - Liferay PaaS
 ---
-# Individuals
 
-- [Individuals Dashboard](./individuals/individuals-dashboard.md)
-- [Individual Profiles](./individuals/individual-profiles.md)
-- [Understanding Interests](./individuals/understanding-interests.md)
+# Individuals
+<!--Introduction needed. Markdown removed, since children cards are automatically added.-->

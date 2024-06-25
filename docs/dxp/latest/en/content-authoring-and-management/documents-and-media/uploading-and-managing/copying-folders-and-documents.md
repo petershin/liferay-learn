@@ -7,9 +7,10 @@ taxonomy-category-names:
   - Liferay SaaS
 uuid: b538b1f3-7797-4185-8260-116135c69df4
 ---
+
 # Copying Folders and Documents
 
-{bdg-secondary}`Liferay 7.4 2024.Q1` 
+{bdg-secondary}`Liferay 7.4 2024.Q1`
 
 With Documents and Media, you can copy folders, files, and shortcuts between [sites](../../../site-building/sites.md) and connected [asset libraries](../../asset-libraries.md). This can help accelerate projects by quickly duplicating structures across contexts.
 
@@ -18,10 +19,7 @@ Before copying your content, ensure the destination site or asset library has ac
 !!! note
     File metadata and related entities (e.g., comments, subscriptions) are not copied. To copy documents with their related entities, you must use the site's [export/import](../../../site-building/sites/exporting-importing-site-pages-and-content.md) feature.
 
-Copying content within Documents and Media requires specific permissions:
-
-- View permissions in the origin site or asset library
-- Add permissions in the destination
+Copying content within Documents and Media requires specific permissions: View permissions in the origin site or asset library and Add permissions in the destination.
 
 See [Documents and Media Permissions Reference](../publishing-and-sharing/managing-document-access/documents-and-media-permissions-reference.md#documents) for more information.
 

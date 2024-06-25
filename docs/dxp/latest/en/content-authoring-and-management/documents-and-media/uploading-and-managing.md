@@ -21,7 +21,12 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: b5b19386-5db0-4478-bf64-af9308f5be08
 ---
+
 # Uploading and Managing
+
+Use your Liferay environment to upload and manage digital assets. This section covers topics from the basics of uploading files to advanced management of digital documents and media. Whether you're organizing your files with folders, configuring document URLs, or utilizing advanced features like DocuSign digital signatures, you can find the information you need here.
+
+Use the tools needed to manage your digital assets effectively, ensuring your content is well-organized, accessible, and secure.
 
 - [Uploading Files](./uploading-and-managing/uploading-files.md)
 - [Using Folders](./uploading-and-managing/using-folders.md)

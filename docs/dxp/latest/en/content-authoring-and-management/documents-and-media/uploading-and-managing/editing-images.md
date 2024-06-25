@@ -7,11 +7,12 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: 1ea4d152-3732-45a9-b3ca-bddf38ca983c
 ---
+
 # Editing Images
 
 Liferay's Documents and Media includes a built-in image editor for cropping and rotating images without switching contexts.
 
-To use the image editor, open Documents and Media, click the *Actions* button (![Actions Button](../../../images/icon-actions.png)) for the desired image, and select *Edit Image*.
+To use the image editor, open Documents and Media, click *Actions* (![Actions Button](../../../images/icon-actions.png)) for the desired image, and select *Edit Image*.
 
 ![Click Edit Image to use Documents and Media's image editor.](./editing-images/images/01.png)
 
@@ -35,7 +36,7 @@ When editing an image in Documents and Media, you have these options:
 
 The Documents and Media application comes with a built-in image editor. Edit images right from your browser and apply filters, adjust contrast, or crop.
 
-In the Documents and Media application, locate the image. Click the Options icon (![Options icon](../../../images/icon-options.png)) and select *Edit With Image Editor*. 
+In the Documents and Media application, locate the image. Click the Options icon (![Options icon](../../../images/icon-options.png)) and select *Edit With Image Editor*.
 
 ![The Options icon contains functions for sharing, editing, checking out, or changing permissions for images.](editing-images/images/03.png)
 
@@ -65,9 +66,9 @@ Select from and apply predefined filters to your image.
 
 **Brightness**: Adjusts the amount of light in the image. The default value of 50 is the current brightness. The slider ranges from 0 (completely black) to 100 (completely white).
 
-Once you have made changes to the image in the editor, you can click *Apply* to make the changes to the image. Click the *Cancel* button to cancel the changes. 
+Once you have made changes to the image in the editor, you can click *Apply* to make the changes to the image. Click the *Cancel* button to cancel the changes.
 
-There is also history bar at the top of the image:
+There is also a history bar at the top of the image:
 
 ![The history bar at the top of your image can be used to undo or redo changes.](editing-images/images/06.png)
 
@@ -75,6 +76,6 @@ The history bar can undo, redo, or reset changes that have been made to the imag
 
 ## Related Topics
 
-* [Documents and Media](../../documents-and-media.md)
-* [Uploading Files](./uploading-files.md)
-* [Managing Files](./managing-files.md)
+- [Documents and Media](../../documents-and-media.md)
+- [Uploading Files](./uploading-files.md)
+- [Managing Files](./managing-files.md)

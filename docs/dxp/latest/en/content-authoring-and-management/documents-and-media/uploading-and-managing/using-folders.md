@@ -7,15 +7,16 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: 4e440ea1-b447-4c5f-90e6-09a3ce0bbfcd
 ---
+
 # Using Folders
 
 By default, uploaded files are stored in the Documents and Media root folder (i.e., *Home*), but you can create additional folders to organize and manage your files. Each folder can have its own workflow configuration, so you can define review and approval processes for its files. You can also configure a folder's permissions to ensure only authorized users can access its files.
 
 ## Adding Folders
 
-1. Open the *Documents and Media* application in the desired Site or Asset Library.
+1. Open the *Documents and Media* application in the desired site or asset library.
 
-1. Click the *Add* button (![Add Button](../../../images/icon-add.png)) and select *Folder*.
+1. Click *New* and select *Folder*.
 
    ![Click on the Add button and select Folder.](./using-folders/images/01.png)
 
@@ -33,17 +34,17 @@ Once created, the folder appears in the Documents and Media application. You can
 
 ## Folder Options
 
-Once you have created a folder, you can click its *Actions* button (![Actions Button](../../../images/icon-actions.png)) to access the following options.
+Once you have created a folder, you can click *Actions* (![Actions Button](../../../images/icon-actions.png)) next to the folder to access the following options.
 
-| Action | Description |
-| :--- | :--- |
-| Download | Download the folder as a zip file. |
-| Edit | Edit the folder's name, description, document type restrictions, and workflow. |
-| Move | Move the folder with its files to another folder. |
-| Add Folder | Add a subfolder to the selected folder. |
+| Action              | Description                                                                                   |
+| :------------------ | :-------------------------------------------------------------------------------------------- |
+| Download            | Download the folder as a zip file.                                                            |
+| Edit                | Edit the folder's name, description, document type restrictions, and workflow.                |
+| Move                | Move the folder with its files to another folder.                                             |
+| Add Folder          | Add a subfolder to the selected folder.                                                       |
 | Access from Desktop | View the folder's [WebDAV URL](../publishing-and-sharing/accessing-documents-with-webdav.md). |
-| Permissions | Edit permissions for the folder. |
-| Delete | Move the folder and its files to the Recycle Bin. |
+| Permissions         | Edit permissions for the folder.                                                              |
+| Delete              | Move the folder and its files to the Recycle Bin.                                             |
 
 ![Click the folder's actions button to access the following options.](./using-folders/images/03.png)
 
@@ -61,7 +62,7 @@ If desired, you can configure folder permissions to restrict access to its files
 
 ## Related Topics
 
-* [Using Workflow with Documents and Media](../publishing-and-sharing/using-workflow-with-documents-and-media.md)
-* [Uploading Files](./uploading-files.md)
-* [Publishing Documents](../publishing-and-sharing/publishing-documents.md)
-* [Enabling Xuggler and ImageMagick for previews](../../../system-administration/using-the-server-administration-panel/configuring-external-services.md)
+- [Using Workflow with Documents and Media](../publishing-and-sharing/using-workflow-with-documents-and-media.md)
+- [Uploading Files](./uploading-files.md)
+- [Publishing Documents](../publishing-and-sharing/publishing-documents.md)
+- [Enabling Xuggler and ImageMagick for previews](../../../system-administration/using-the-server-administration-panel/configuring-external-services.md)

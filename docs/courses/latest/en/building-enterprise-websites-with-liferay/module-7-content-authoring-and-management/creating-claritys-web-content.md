@@ -19,89 +19,154 @@ Web content templates provide an extra layer of configuration and customization 
 
 ## Exercise One: Creating Web Content Structures
 
-In this exercise, you’ll build several structures for specific types of web content that Clarity wants to publish. Later in the module, you’ll learn how to display these articles on Clarity’s FAQ page. 
+The training workspace already includes most of the custom web content structures Clarity needs. In this exercise, you'll add the Announcements structure as Christian Carter.
 
-First, let’s create the web content structure for Announcements.
+To do this,
 
-1. Navigate to _Site Menu_ &rarr; _Content & Data_ &rarr; _Web Content_. 
+1. Sign in as Christian Carter.
 
-1. Go to the _Structures_ tab and click the _New_ button to enter the structure builder.
+   * Email: `christian.carter@clarityvisionsolutions.com`
+   * Password: `learn`
 
-1. Edit the title of the structure to “Announcements”.
+1. Open the *Site Menu* (![Site Menu](../images/icon-product-menu.png)), expand *Content & Data*, and select *Web Content*.
 
-1. From the _Builder_ sidebar, drag and drop a _Text_ field into the structure. 
+1. Go to the *Structures* tab and click *New*.
 
-1. With the _Text_ field selected, the sidebar displays configuration options for the field. In the _Basic_ tab, update the _Label_ to “Message”. Make sure _Field Type_ is “Single Line” and _Required Field_ is toggled on.
+1. Enter `Announcements` for the title.
 
-1. Navigate to the _Advanced Tab_ and update _Field Reference_ to “message”. With the configuration for the _Message_ field complete, click the back arrow to return to the _Builder_ sidebar menu.
+1. From the *Builder* sidebar, drag and drop a *Text* field into the structure.
 
-1. Drag and drop another _Text_ field just below the first one, following the visual indicators in the structure building interface. Update the _Label_ to “Link Text” and the _Field Reference_ to “linkText”. Click the back arrow to return to the _Builder_ menu.
+1. Select the *Text* field and configure these options:
 
-1. Drag and drop a _Link to Page_ field on top of the _Link Text_ field, following the visual indicators in the interface. This action should create a _Fields Group_ that contains _Link Text_ and _Link to Page_.
+   | Tab      | Field           | Value       |
+   |:---------|:----------------|:------------|
+   | Basic    | Label           | `Message`   |
+   | Basic    | Required Field  | Yes         |
+   | Advanced | Field Reference | `message`   |
 
-1. Update the _Field Reference_ of _Link to Page_ to “linkPage”. Click _Save_ to publish the _Announcements_ web content structure.
+1. Click the *back arrow* (![Back Arrow](../images/icon-angle-left.png)) to return to the Builder sidebar menu.
 
-1. Repeat steps 2-9 to create the following web content structures with their respective fields:
+1. Drag and drop another *Text* field just below the first one.
 
-Job Listing:
-| Field Type 	| Field Name 	|
-| :--- 		| :--- 		|
-| Rich Text 	| Role Overview 	|
-| Rich Text 	| Key Responsibilities 	|
-| Rich Text 	| Qualifications and Skills	|
+1. Select the *Text* field and configure these options:
 
-Leadership Profile:
-| Field Type 	| Field Name 	|
-| :--- 		| :--- 		|
-| Image	| Image 	|
-| Text 		| Name 	|
-| Text 		| Title 		|
-| Rich Text 	| Bio		|
+   | Tab      | Field           | Value       |
+   |:---------|:----------------|:------------|
+   | Basic    | Label           | `Link Text` |
+   | Basic    | Required Field  | Yes         |
+   | Advanced | Field Reference | `linkText`  |
 
-Article:
-| Field Type 	| Field Name 	|
-| :--- 		| :--- 		|
-| Image	| Image 	|
-| Rich Text	| Headline 	|
-| Rich Text 	| Content	|
+1. Return to the Builder sidebar menu.
 
-FAQ:
-| Field Type 	| Field Name 	|
-| :--- 		| :--- 		|
-| Rich Text	| Answer 	|
+1. Drag and drop a *Link to Page* field on top of the *Link Text* field.
 
-You now have five web content structures implemented in Clarity’s website.
+   This creates a *Fields Group* that contains both *Link Text* and *Link to Page*.
+
+1. Select the *Link to Page* field and configure these options:
+
+   | Tab      | Field           | Value       |
+   |:---------|:----------------|:------------|
+   | Advanced | Field Reference | `linkPage`  |
+
+1. Click *Save*.
+
+![Creating the Announcements web content structure.](./pdf-images/day1/lesson10/01.png)
+
+Users can now create web content articles using the Announcements structure. You should now have eight web content structures implemented in Clarity’s website. Next, you'll create some web content articles.
 
 ## Exercise Two: Creating Web Content Articles
 
-1. Navigate to the _Web Content_ tab. Navigate into the _FAQs_ folder. Select _New_ &rarr; _FAQ_ to enter the _New Web Content_ editor.
+The training workspace already includes some web content articles. However, Clarity also needs some FAQ and announcement articles. Here you'll create them as Christian Carter.
 
-1. Update the title of the FAQ to “What is your return policy?”. Select the Answer field and add the following text: “We offer a 30-day return policy from the date of delivery. Items must be unused and in the same condition that you received them, including all original packaging.”
+To do this,
 
-1. Click _Publish_ to create the new FAQ web content article in the _FAQs_ folder. 
+1. Open the *Site Menu* (![Site Menu](../images/icon-product-menu.png)), expand *Content & Data*, and select *Web Content*.
 
-1. Repeat Steps 7-9 to add more FAQs with the following question/answer pairs. Note that the title of an FAQ web content article is the question itself.
+1. Click *New*, select *Folder*.
 
-    - “Can I become a retail partner?” / “Yes, we are always looking to expand our network of retail partners. If you are interested in stocking our eyewear, please contact our sales team for more information.”
+1. Enter these values:
 
-    - “What payment methods do you accept?” / “We accept various payment methods including credit cards (Visa, Mastercard, American Express), PayPal, and bank transfers.”
+   | Field       | Value                                               |
+   |:------------|:----------------------------------------------------|
+   | Name        | `Announcements`                                     |
+   | Description | `Stores announcement articles for the page header.` |
 
-    - “Do you offer eye exams?” / “Yes, we do. We have qualified optometrists who can conduct comprehensive eye exams to determine your prescription and check for any eye health issues.”
+   **Tip**: It's best practice to organize your web content into folders instead of adding it to the home folder.
 
-    - “Do I have to pay for return shipping?” / “Return shipping costs are the responsibility of the customer unless the item is defective or an error was made on our end.”
+1. Click Save.
 
-    - “How can I place an order?” / “You can place an order through our website. Simply choose the glasses you like, select your prescription and lens type, add the item to your cart, and proceed to checkout.”
+1. Click the *Announcements* folder.
 
-    - “What types of eyewear do you offer?” / “We offer a wide range of eyewear including prescription glasses, sunglasses, and contact lenses. We also have a collection of designer frames to suit different styles and preferences.”
+1. Click *New* and select *Announcements*.
 
-    - “Do you have retail partners where I can try on your eyewear?” / “Yes, we have partnered with various optical shops where you can try on our eyewear. Please visit our website to find the nearest location.”
+1. Enter these values:
 
-You now have eight FAQ web content articles created from the FAQ web content structure.
+   | Field        | Value                                       |
+   |:-------------|:--------------------------------------------|
+   | Title        | `Product Innovations`                       |
+   | Message      | `See Clarity's latest eyewear innovations!` |
+   | Link Text    | `Learn more`                                |
+   | Link to Page | `Products`                                  |
+
+   ![Create Product Innovations web content article.](./pdf-images/day1/lesson10/02.png)
+
+1. Click *Publish*.
+
+   Next, you'll add some missing web content articles.
+
+1. Go to the *Home* web content folder.
+
+1. Go to *FAQ* &rarr; *Retail Partners*.
+
+1. Create these FAQ articles:
+
+   | Title (Question)                                             | Answer                                                                                                                                                                                  |
+   |:-------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+   | Can I become a retail partner?                               | Yes, we are always looking to expand our network of retail partners. If you are interested in stocking our eyewear, please contact our sales team for more information.                 |
+   | Do you have retail partners where I can try on your eyewear? | Yes, we have partnered with various optical shops where you can try on our eyewear. Please visit our website to find the nearest location.                                              |
+   | What types of eyewear do you offer?                          | We offer a wide range of eyewear including prescription glasses, sunglasses, and contact lenses. We also have a collection of designer frames to suit different styles and preferences. |
+
+![Create three FAQ web content article.](./pdf-images/day1/lesson10/03.png)
+
+Great! You should have all the web content Clarity needs for their pages. In later exercises, you'll map some of this content to fragments on Clarity's pages. Next, let's explore how you can create content in Liferay with ChatGPT.
+
+## Exercise Three: Generating Content with ChatGPT
+
+You may have noticed that web content articles include the *AI Creator* button for generating content using ChatGPT. Using this feature requires a valid API key.
+
+Here you'll add a temporary API key to your instance as the Clarity Admin user.
+
+To do this,
+
+1. Sign in as the Clarity Admin user.
+
+   * Username: `admin@clarityvisionsolutions.com`
+   * Password: `learn`
+
+1. Open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Instance Settings*.
+
+1. Click *AI Creator*.
+
+1. Enter the API key provided for this training.
+
+   **Note**: This key is temporary.
+
+1. Ensure *Enable ChatGPT to Create Content* is checked.
+
+1. Click *Save*.
+
+1. Return to Clarity's site, begin creating a web content article, and click the *AI Creator* button to generate content.
+
+![Use the AI Creator tool to generate content.](./pdf-images/day2/lesson11/01.png)
+
+Great! You've used ChatGPT to generate web content articles.
 
 ## Conclusion
 
-This concludes *Creating Clarity’s Web Content*. Now let’s take a look at some of Liferay’s commerce-specific content features.
+This concludes *Creating Clarity’s Web Content*. Now let’s take a look at how you can organize your content in Liferay.
 
-Next Up: [Creating Clarity’s Commerce Content](./creating-claritys-commerce-content.md)
+Next Up: [Organizing Clarity’s Content](./organizing-claritys-content.md)
+
+
 
 <!-- TODO: Add Additional Resources section. -->

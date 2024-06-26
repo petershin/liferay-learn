@@ -13,61 +13,102 @@ Asset libraries declutter digital asset management by providing a collaborative 
 
 ## Exercise One: Creating Asset Libraries
 
-1. Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Applications_ &rarr; _Content_ &rarr; _Asset Libraries_.
+The training workspace already includes multiple libraries for Clarity's assets. Here, you'll create a library for branding assets as Walter Douglas.
 
-1. Click _New_ and enter the name “Clarity Branding and Logo”. Click _Save_.
+To do this,
 
-1. In the asset library configuration page, navigate to _Sites_ in the sidebar menu.
+1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), go to the *Applications* tab, and click *Asset Libraries*.
 
-1. In _Connected Sites_, click _Add_ and select “Clarity Public Enterprise Website.”
+1. Click *New* and enter the name `Clarity Branding and Logo`.
 
-1. Navigate to _General_ in the sidebar menu and click _Save_.
+1. Click *Save*. This creates a library and redirects you to its configuration page.
 
-1. Return to the _Asset Libraries_ page. Click “Clarity Branding and Logo” to enter the management screen for the new asset library.
+   Now you can link the library to Clarity's site.
 
-1. Select _Documents and Media_ &rarr; _New_ &rarr; _Multiple Files Upload_. 
+1. Go to the *Sites* tab in the sidebar menu.
 
-1. Extract the images from `enablement-bootcamp-clarity/exercises/module-7-content-authoring-and-management/clarity-branding-and-logo.zip`
+1. Click *Add* and select *Clarity Public Enterprise Website*.
 
-1. Upload the images and then click _Publish_.
+   This enables users in the site to access content in the asset library. Next, add content to the library.
 
-1. Repeat steps 1-7 to create the following asset libraries. Be sure to upload the images from the corresponding zip file for each asset library.
-   - “Error Pages”
-   - “Leadership Headshots”
-   - “Marketing Assets”
-   - “Product Images”
+   ![Add Clarity Public Enterprise Website to Clarity Branding and Logo asset library.](./pdf-images/day1/lesson9/01.png)
 
-You should now have five asset libraries of image content with which you can populate Clarity’s web pages.
+1. Return to the *Asset Libraries* overview page.
 
+1. Click *Clarity Branding and Logo* to access its applications and begin adding content.
+
+1. Select *Documents and Media*.
+
+1. Click *New* and select *Multiple Files Upload*.
+
+1. Select all images from the `[repository-folder]/exercises/lesson-9/` resources folder.
+
+1. Click *Publish*.
+
+You should now have five asset libraries with images and content that you can use in Clarity's website:
+
+* Clarity Branding and Logo
+* Error Pages
+* Leadership Headshots
+* Marketing Assets
+* Product Images
+
+Next, you'll return to Clarity's master pages and use the imported branding images.
+
+<!--TASK: Add content on library membership. Add Christian Carter (and Clara?) to the Marketing Assets Library.-->
 
 ## Exercise Two: Adding Clarity’s Logo to the Master Pages
 
-1. Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Sites_ &rarr; _Clarity Public Enterprise Website_.
+Clarity's master page templates are mostly complete. However, we still need to add Clarity's logo to the header and footer. Here you'll add these images as Walter Douglas.
 
-1. Navigate to _Site Menu_ &rarr; _Design_ &rarr; _Page Templates_ &rarr; _Masters_.
+To do this,
 
-1. Click “Primary Master Page” to enter the page template editor.
+1. Go to *Clarity Public Enterprise Website*.
 
-1. In the sidebar menu on the left, select _Browser_.
+1. Open the *Site Menu* (![Site Menu](../images/icon-product-menu.png)), expand *Design*, and select *Page Templates*.
 
-1. Navigate to _Page Header_ &rarr; _Header Navigation Bar_ &rarr; _Grid_.
+1. In the Master tab, click *Primary Master Page* to begin editing it.
 
-1. Select the first _Module_ &rarr; _Header Branding_ &rarr; _Image_ &rarr; _image-square_. Note: You can double-click on the _Image_ component in the header to navigate directly to this point.
+1. Double click the header's *Image* fragment.
 
-1. In the menu on the right, click the + sign next to _Image_ to open the image selection window.
+   This selects the fragment's *image-square* sub-element and opens its configuration options.
 
-1. Click _Sites and Libraries_ in the breadcrumb menu, then select the _Asset Library_ tab. You should now see the five asset libraries you created in the previous exercise.
+1. In the configuration side panel, click the *Select Image* button (![Select Image](../images/icon-plus.png)).
 
-1. Select “Clarity Branding and Logo” and then select “logo-name-vector” to add the image to the header.
+1. Click *Sites and Libraries* in the breadcrumb menu.
 
-1. In the _Browser_ menu, navigate to _Page Footer_ &rarr; _Footer Branding_ &rarr; _Image_ &rarr; _image-square_.
+   ![Click Sites and Libraries in the breadcrumb menu.](./pdf-images/day1/lesson9/02.png)
 
-1. Repeat steps 7-9 to add the image named “logo-full-name-vector” to the footer.
+1. Go to the *Asset Library* tab.
 
-1. Select _Publish Master_ to save your changes to the master page template. 
+   You should now see all asset libraries connected to this site.
 
-The header and footer images will now be displayed on all pages that use the Primary Master Page.
+1. Select *Clarity Branding and Logo*.
 
+1. Select `logo-name-vector` to add the image to the header.
+
+   **Tip**: If you're having difficulty finding the image, use the search bar.
+
+1. In the configuration side panel, go to the *Link* tab and configure these settings:
+
+   | Tab  | Setting | Value |
+   |:-----|:--------|:------|
+   | Link | Link    | Page  |
+   | Link | Page    | Home  |
+
+   Now when users click the header image, they're directed to Clarity's Home page.
+
+1. Repeat these steps for the footer image fragment, selecting the `logo-full-name-vector` instead.
+
+1. Click *Publish Master* to save your changes to the master page template.
+
+   All pages using the master page are now automatically updated.
+
+   **Important**: If the image does not update for you, you must clear the Liferay server's cache. To do this, sign in as the Clarity Admin user, open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Server Administration*. Then, click *Execute* for the "Clear content cached across the cluster" operation.
+
+1. Repeat steps 4-10 to update the header image in the *Secondary Master Page* template to use `logo-name-vector`.
+
+Great! So far you've learned how to create asset libraries, import content, and display it in pages. In the next exercise, you'll create a unique web content structure.
 
 ## Conclusion
 

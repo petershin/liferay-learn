@@ -234,6 +234,6 @@ Create a new Widget Template to make the Category Content widget look like the f
 
 This concludes *Creating Clarity’s Commerce Content*.
 
-Next Up: [Organizing Clarity’s Content](./organizing-claritys-content.md)
+Next Up: [Publishing Content with Workflows](./publishing-content-with-workflows.md)
 
 <!-- TODO: Add Additional Resources section. -->

@@ -1,9 +1,8 @@
 ---
 toc:
 - ./module-5-users-and-permissions/claritys-users-and-persmissions-requirements.md
-- ./module-5-users-and-permissions/users-and-permissions-setup.md
-- ./module-5-users-and-permissions/managing-and-organizing-clarity-users.md
-- ./module-5-users-and-permissions/modeling-b2b-relationships-with-liferay-accounts.md
+- ./module-5-users-and-permissions/creating-users-user-groups-and-roles.md
+- ./module-5-users-and-permissions/setting-permissions-and-securing-clarity-content.md
 uuid: 36dd306c-d71e-4606-95c2-da8acea64686
 ---
 # Module 5: Users & Permissions
@@ -19,9 +18,8 @@ In the previous module, we saw Clarity bring over their team members through Okt
 In this module, you will learn:
 
 * The specific users and permissions requirements Clarity has
-* How to do some initial set up for Clarity's team members
-* How to use Liferay’s user management tools and manage permissions
-* How to use Liferay permissions to secure Clarity content
+* How to do some initial set up for Clarity's team members 
+* How to use Liferay’s user management tools to set permissions and secure Clarity content
 
 Up First: [Clarity's Users and Permissions Requirements](./module-5-users-and-permissions/claritys-users-and-permissions-requirements.md)
 
@@ -34,20 +32,14 @@ Up First: [Clarity's Users and Permissions Requirements](./module-5-users-and-pe
 Read about the specific users and permissions requirements Clarity has.
 :::
 
-:::{grid-item-card}  Users and Permissions Setup
-:link: ./module-5-users-and-permissions/users-and-permissions-setup.md
+:::{grid-item-card}  Creating Users, User Groups, and Roles
+:link: ./module-5-users-and-permissions/creating-users-user-groups-and-roles.md
 
 See how to do some initial set up for Clarity's team members.
 :::
 
-:::{grid-item-card}  Managing and Organizing Clarity Users
-:link: ./module-5-users-and-permissions/managing-and-organizing-clarity-users.md
+:::{grid-item-card}  Setting Permissions and Securing Clarity Content
+:link: ./module-5-users-and-permissions/setting-permissions-and-securing-clarity-content.md
 
-Learn how Liferay tools can be used to manage users and assign roles and permissions.
-:::
-
-:::{grid-item-card}  Securing Clarity Content
-:link: ./module-5-users-and-permissions/securing-clarity-content.md
-
-Dive deeper into Liferay permissions to secure Clarity content.
+Learn how Liferay tools can be used to set permissions to secure Clarity content
 :::

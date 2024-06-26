@@ -25,4 +25,4 @@ In Liferay, permissions are not only assignable to roles but also to user groups
 
 Now let's move on to some initial set up we need for Clarity's team members.
 
-Next Up: [Users and Permissions Setup](./users-and-permissions-setup.md)
+Next Up: [Creating Users, User Groups, and Roles](./creating-users-user-groups-and-roles.md)

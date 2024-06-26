@@ -20,6 +20,8 @@ Additionally, when a file expires, it is deactivated and cannot be used or edite
 
 By contrast, when a file requires review, it remains available for use. Reaching the file's review date only triggers user notifications and does not affect the file in any way.
 
+{bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA132+` You can also [schedule the digital asset's publication date and time](#scheduling-the-publication).
+
 ## Enabling Expiration and Review Dates
 
 By default, files are set to never expire or require review. However, you can enable and set expiration and review dates when uploading or editing files.
@@ -70,6 +72,33 @@ When a file expires or requires review, a notification email is sent to the file
 1. Draft the desired notification message.
 
 1. Click *Save* when finished.
+
+## Scheduling The Publication
+
+{bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA132+`
+
+!!! important
+    Currently, this feature is behind a release feature flag (LPD-10701). Read [Release Feature Flags](../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information.
+
+Digital assets are published as soon as they are created. However, you can set a future publication date and time for single or multiple files if you don't want to publish them right away.
+
+Also, if there's a [workflow](../publishing-and-sharing/using-workflow-with-documents-and-media.md) in place, the asset isn't published until the scheduled publication date and time is reached.
+
+To schedule publishing a single file or multiple files,
+
+1. Open the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)), expand *Content & Data*, and go to *Documents and Media*.
+
+1. Click *New* and select *File Upload*. If you want to publish multiple files, select *Multiple Files Upload*.
+
+1. [Upload the file](./uploading-files.md) and configure the document. If you are publishing multiple files, upload the files and select the ones you want to publish.
+
+1. Under Schedule, select a *Publish Date* and *Time*.
+
+   ![Select a publish date and time when uploading a single file.](./using-file-expiration-and-review-dates/images/05.png)
+
+   ![Select a publish date and time when uploading multiple files.](./using-file-expiration-and-review-dates/images/06.png)
+
+Once you click *Publish*, the document is marked as Scheduled in the application. If there's a workflow in place, the asset is only marked as Scheduled after it's approved through the workflow. If the asset isn't approved, it's not published on the scheduled date.
 
 ## Related Topics
 

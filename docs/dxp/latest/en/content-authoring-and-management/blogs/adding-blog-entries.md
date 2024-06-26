@@ -56,7 +56,7 @@ To relate an asset to the entry,
 ### Customizing the Blog Entry's Friendly URL
 
 {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+`
-{bdg-link-primary}`[Beta Feature](../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
+{bdg-link-primary}`[Beta Feature](../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
 
 !!! important
     Currently, this feature is behind a beta feature flag (LPD-11147). Read [Beta Feature Flags](../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags) for more information.

@@ -50,6 +50,4 @@ The examples above use some of the available attributes. See the [info bar](http
 
 ## Related Topics
 
-* [Liferay Frontend Add Menu](./liferay-frontend-add-menu.md)
-* [Liferay Frontend Cards](./liferay-frontend-cards.md)
-* [Liferay Frontend Management Bar](./liferay-frontend-management-bar.md)
+- [Liferay Frontend Cards](./liferay-frontend-cards.md)

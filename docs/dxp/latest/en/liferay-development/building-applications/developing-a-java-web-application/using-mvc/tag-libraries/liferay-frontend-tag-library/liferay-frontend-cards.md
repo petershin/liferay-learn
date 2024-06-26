@@ -156,6 +156,4 @@ The User Vertical card displays user profile selections in the icon view of the 
 
 ## Related Topics
 
-* [Liferay Frontend Add Menu](./liferay-frontend-add-menu.md)
-* [Liferay Frontend Info Bar](./liferay-frontend-info-bar.md)
-* [Liferay Frontend Management Bar](./liferay-frontend-management-bar.md)
+- [Liferay Frontend Info Bar](./liferay-frontend-info-bar.md)

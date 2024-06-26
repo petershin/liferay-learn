@@ -3,9 +3,13 @@ uuid: f548210b-6113-4205-ac28-23451ed61e43
 ---
 # Setting Permissions and Securing Clarity Content
 
-At Clarity, each user has different responsibilities in developing the enterprise website. The primary concern of user management is controlling access to content and platform features. When done right, users are granted access only to the resources and applications necessary for their responsibilities. So far, Clarity's team members have been created, but their roles and permissions need to be set.
+At Clarity, each user has different responsibilities in developing the enterprise website. The primary concern of user management is controlling access to content and platform features. When done right, users are granted access only to the resources and applications necessary for their responsibilities. In Liferay, permissions are assigned to roles instead of individuals. So far, Clarity's team members have been created, but their roles and permissions need to be set.
 
-In Liferay, permissions are assigned to roles instead of individuals. Each permission grants the ability to perform a specific action and falls into one of two categories: application permissions or resource permissions. Application permissions pertain to different parts of Liferay's UI (e.g. visibility to certain sections of the applications menu or control panel). <!--Alt: "Application permissions grant access to an application itself and do not include resource-related permissions."--> On the other hand, resource permissions pertain to the data itself (e.g. read or write privileges for Liferay blogs). <!--Alt: "Resource permissions grant access to view, create, and act on application data. Some of these permissions relate to creating data entries, while others are for performing actions on existing data entries."-->
+In Liferay, there are different kinds of permissions:
+
+* Application Permissions - Access to UI or control user functions (e.g. visibility and access to the *Create* button or the *Delete* button)
+* Top-Level Resource Permissions - Access to a type of data (e.g. read or write privileges for Liferay blogs)
+* Resource Instance Permissions - Level of access to a specific item (e.g. About Us article, or this particular image in the document library, etc.)
 
 Liferay uses an additive permissions model. This means users only inherit permissions explicitly assigned to their role, helping ensure that content stays secure and access is granted only to those who need it.
 

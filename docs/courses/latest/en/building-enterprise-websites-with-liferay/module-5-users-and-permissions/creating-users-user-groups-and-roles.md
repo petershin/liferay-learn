@@ -68,7 +68,7 @@ Great! You've added Christian Carter to Clarity's Liferay instance. Next you'll 
 !!! important **Key Decision**
    Deciding how to group and assign permissions to users is a key decision point as you build out your enterprise website. In this situation, it's recommended to use Liferay user groups to model your organization’s structure on the new site.
 
-In a real-world scenario, organizations like Clarity have hundreds of users, and managing them individually is impossible. To help reduce the burden of user management, Liferay provides user groups for easily assigning roles to related users.
+In a real-world scenario, organizations like Clarity have hundreds of users, and managing them individually is impossible. To help reduce the burden of user management, Liferay provides user groups for easily assigning roles to related users. User groups can also be leveraged for assigning site membership. Instead of assigning individual users to a site, assign user groups.
 
 Clarity needs these user groups:
 

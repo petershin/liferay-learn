@@ -58,9 +58,7 @@ When adding fields to visualization modes, you can select available fields from 
 
 (1) Navigate through the structure's levels and click on the checkbox next to a field to add it to your visualization mode.
 
-(2) Alternatively, you can use the search bar at the top of the modal. Fields related to the search query are highlighted.
-
-To view the entire structure and available fields again, click *`x`* at the end of the search bar or clear the search field.
+(2) Alternatively, you can use the search bar at the top of the modal. Only matching fields are shown, and fields related to the search query are highlighted. To view the entire structure again, clear the search field or click `x` at the end of the search bar.
 
 ![Use the search bar to find fields.](./data-set-view-visualization-modes/images/04.png)
 
@@ -68,7 +66,7 @@ To view the entire structure and available fields again, click *`x`* at the end 
 
 Click *Save* to save the fields and close the modal. To discard changes and close the modal, click *Cancel* or `x` in the top right corner.
 
-Here are some important to keep in mind when adding a field to visualization modes:
+Here are some important details to keep in mind when adding a field to visualization modes:
 
 - Grayed out checkboxes indicate that the field is unavailable for the selected visualization mode.
 
@@ -76,15 +74,17 @@ Here are some important to keep in mind when adding a field to visualization mod
 
 - Users can select fields with complex array information (e.g., an object entry). In the Table visualization mode, these fields can be selected at any level of the tree view. In List/Card visualization modes, only child fields can be selected.
 
-- A complete complex array field is displayed as a stringified JSON object when using the default renderer. The `[]*` notation follows the field's name (e.g., organizationBriefs[]*).
+- A complete complex array field appears as a stringified JSON object when using the default renderer.
+
+   ![A complete complex array field appears as a stringified JSON object when using the default renderer.](./data-set-view-visualization-modes/images/05.png)
 
 <!-- - A cell renderer that displays a user-friendly version for the stringified JSON object can be developed and added as a client extension.
 
 In case a document is added telling users how to do that. Eric  -->
 
-- Fields belonging to a complex array are identified using the `[]` notation between the parent and child fields (e.g., organizationBriefs[]name).
+-  The `[]*` notation follows the complex array field's name (e.g., organizationBriefs[]*). Fields belonging to a complex array are identified using the `[]` notation between the parent and child fields (e.g., organizationBriefs[]name).
 
-![The `[]` notation is used to identify complex array fields and child fields.](./data-set-view-visualization-modes/images/05.png)
+   ![The `[]` notation is used to identify complex array fields and child fields.](./data-set-view-visualization-modes/images/06.png)
 
 ### Editing Fields in a Table
 
@@ -92,7 +92,7 @@ Now you can edit your fields to alter and localize their labels, select a render
 
 To edit a field, click *Actions* (![Actions menu](../../../images/icon-actions.png)) next to the field and select *Edit*.
 
-   ![In the Fields tab, you can change its label and localize it, choose a renderer and mark it as sortable.](./data-set-view-visualization-modes/images/06.png)
+   ![Change the field's label, localize it, choose a renderer, and mark it as sortable.](./data-set-view-visualization-modes/images/07.png)
 
 ### Editing and Localizing Labels
 
@@ -106,7 +106,7 @@ Once you start editing a field, you can change the label and localize it (1).
 
    The localization status label next to the flag changes to `Translated` to indicate that localization was successful.
 
-   ![The localization status label next to the flag changes to `Translated` to indicate that the localization was successful.](./data-set-view-visualization-modes/images/07.png)
+   ![The localization status label next to the flag changes to `Translated` to indicate that the localization was successful.](./data-set-view-visualization-modes/images/08.png)
 
 !!! note
     The localized text appears if users have the respective language applied to their portal.
@@ -120,7 +120,7 @@ A renderer (3) is a structured way to customize how a component appears. You ent
 
 Below on the left, the status, date, and date and time fields have the default renderer applied. On the right, the status, date, and date and time renderers are applied to the respective fields.
 
-![Status, date, and date and time fields without and with renderers applied.](./data-set-view-visualization-modes/images/08.png)
+![Status, date, and date and time fields without and with renderers applied.](./data-set-view-visualization-modes/images/09.png)
 
 <!-- once I have more information about renderers, I'll add a link to another section where I'll explain the types of renderers and what they do or what kind of structure/data/data type they need to work. -->
 
@@ -130,7 +130,7 @@ When a field is marked as sortable, users can sort the elements while using the 
 
 Initially, users can sort entries based on the integer field. However, when the sortable checkbox is unchecked, sorting entries using the integer field as a filter becomes impossible (see below).
 
-![Define the fields as sortable, so users can sort elements when using the data set fragment.](./data-set-view-visualization-modes/images/09.gif)
+![Define the fields as sortable, so users can sort elements when using the data set fragment.](./data-set-view-visualization-modes/images/10.gif)
 
 ## Displaying Data as a List or in Cards
 
@@ -153,11 +153,11 @@ Use the list and cards visualization modes to map fields to the visualization mo
 
 1. Open the *List* or *Cards* tab.
 
-   Both visualization modes are configured similarly; The only difference is how the data is displayed.
+   Both visualization modes are configured similarly; The only difference is how the data appears.
 
 1. To assign a field to an element, click *Add* (![Add icon](../../../images/icon-plus.png)) and select a field.
 
-   The available elements are Title, Description, Image, and Symbol. Note that the image element overrides the symbol element; therefore, you only need to assign one of them.
+   The available elements are Title, Description, Image, and Symbol. Note that the image element overrides the symbol element; therefore, you only assign one of them.
 
    !!! tip
        To use the Symbol element, you must create [a text-type object field](../../objects/creating-and-managing-objects/fields.md) with values that match icon names from the [Clay Icon Reference](https://clayui.com/docs/components/icon.html).
@@ -166,7 +166,7 @@ Use the list and cards visualization modes to map fields to the visualization mo
 
 Below, you can see the same data shown in cards using images and as a list using clay icons as symbols.
 
-![The same data is using the cards visualization mode with images and the list visualization mode with clay icons as symbols.](./data-set-view-visualization-modes/images/10.png)
+![The same data is using the cards visualization mode with images and the list visualization mode with clay icons as symbols.](./data-set-view-visualization-modes/images/11.png)
 
 ## Defining a Default Visualization Mode
 
@@ -187,7 +187,7 @@ You can define a default visualization mode to be shown first once a data set fr
 !!! note
     You can only set a visualization mode as default if it's visible. If you have a default mode and it becomes hidden, the first mode in alphabetical order is selected automatically as the default.
 
-![Set a default visualization mode in the settings tab.](./data-set-view-visualization-modes/images/11.png)
+![Set a default visualization mode in the settings tab.](./data-set-view-visualization-modes/images/12.png)
 
 ## Related Topics
 

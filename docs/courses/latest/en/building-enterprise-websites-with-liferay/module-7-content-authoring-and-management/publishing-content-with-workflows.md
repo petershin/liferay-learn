@@ -57,11 +57,11 @@ To do this,
    * Username: `ian.miller@clarityvisionsolutions.com`
    * Password: `learn`
 
-1. Open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)), go to the *Applications* tab, and click *Publications*.
+1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), go to the *Applications* tab, and click *Publications*.
 
 1. Toggle *Enable Publications* and click *Save*. This redirects to the publications page.
 
-1. Click *Add* (![Add Button](../images/icon-add.png)) to create a new publication.
+1. Click *Add* (![Add Button](../../images/icon-add.png)) to create a new publication.
 
    Alternatively, you can click the *Publications* drop-down menu at the top of the page and select *Create New Publication*.
 
@@ -69,15 +69,15 @@ To do this,
 
 1. Return to *Clarity Public Enterprise Website*.
 
-1. Open the *Site Menu* (![Site Menu](../images/icon-product-menu.png)), expand *Content & Data*, and click *Web Content*.
+1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)), expand *Content & Data*, and click *Web Content*.
 
-1. In the Web Content tab, click *Actions* (![Actions Button](../images/icon-actions.png)) for the Articles folder and select *Edit*.
+1. In the Web Content tab, click *Actions* (![Actions Button](../../images/icon-actions.png)) for the Articles folder and select *Edit*.
 
 1. Navigate to the Structure Restrictions and Workflow section and select *Set the default workflow for the folder’s content (Articles)*.
 
 1. Select the *Single Approver* option and click *Save*.
 
-   ![The Single Approver workflow will be assigned to the Articles folder.](./pdf-images/day2/lesson16/01.png)
+   ![The Single Approver workflow will be assigned to the Articles folder.](./publishing-content-with-workflows/images/01.png)
 
 You have set up a publication for tracking changes to Clarity's article web content, along with a workflow for approving new articles before they are published to the production site.
 
@@ -93,7 +93,7 @@ To do this,
 
 1. Go to the *Publications* application in the Global Menu.
 
-1. Click *Actions* (![Actions Button](../images/icon-actions.png)) for Article Publication and select *Invite Users*.
+1. Click *Actions* (![Actions Button](../../images/icon-actions.png)) for Article Publication and select *Invite Users*.
 
 1. In the Invite Users panel, enter the email `christian.carter@clarityvisionsolutions.com`.
 
@@ -105,7 +105,7 @@ To do this,
    |-------------------------------------------|-----------|
    | `clara.murphy@clarityvisionsolutions.com` | Publisher |
 
-   ![Invite Christian Carter and Clara Murphy to the Article Publication.](./pdf-images/day2/lesson16/02.png)
+   ![Invite Christian Carter and Clara Murphy to the Article Publication.](./publishing-content-with-workflows/images/02.png)
 
 1. Click *Send* and click *OK* when prompted.
 
@@ -131,17 +131,17 @@ To do this,
 
    Note that the publications menu now appears at the top of the page and a new notification for the publication invitation was received.
 
-   ![The publications menu appears and a new notification was received.](./pdf-images/day2/lesson16/03.png)
+   ![The publications menu appears and a new notification was received.](./publishing-content-with-workflows/images/03.png)
 
 1. Click the user profile icon, go to *Notifications*, and select the publications invitation.
 
-   ![The invitation notification appears in the notification queue.](./pdf-images/day2/lesson16/04.png)
+   ![The invitation notification appears in the notification queue.](./publishing-content-with-workflows/images/04.png)
 
    This opens the details menu for the Article Publication.
 
 1. Click the *Publications* drop-down menu at the top of the page, click *Select a Publication*, and choose *Article Publication*.
 
-1. Back in your Clarity website, open the *Site Menu* (![Site Menu](../images/icon-product-menu.png)), expand *Content & Data*, and click *Web Content*.
+1. Back in your Clarity website, open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)), expand *Content & Data*, and click *Web Content*.
 
 1. Click into the *Articles* folder and click *New* &rarr; *Article*.
 
@@ -171,27 +171,27 @@ To do this,
 
    The publications menu now appears at the top of the page and two new notifications for the publication invitation and review request were received.
 
-   ![The invitation and review request notifications appear in the menu.](./pdf-images/day2/lesson16/05.png)
+   ![The invitation and review request notifications appear in the menu.](./publishing-content-with-workflows/images/05.png)
 
 1. Click the *Publications* drop-down menu at the top of the page, click *Select a Publication*, and choose *Article Publication*.
 
 1. Click the *Article Publication* menu at the top of the page and select *Review Changes*. You will be redirected to the publication page with a log of changes.
 
-   Alternatively, you can navigate to *Global Menu* (![Global Menu](../images/icon-applications-menu.png)) &rarr; *Applications* &rarr; *Publications*.
+   Alternatively, you can navigate to *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) &rarr; *Applications* &rarr; *Publications*.
 
 1. Click *Publish* to try and save the changes. This action will fail because the workflow that you implemented as Ian Miller requires an approval before publication.
 
-   ![The action will fail if any changes are pending.](./pdf-images/day2/lesson16/06.png)
+   ![The action will fail if any changes are pending.](./publishing-content-with-workflows/images/06.png)
 
 1. Click the user profile icon and go to *My Workflow Tasks*.
 
 1. Switch to the *Assigned to My Roles* tab to see the pending workflow task.
 
-1. Click *Actions* (![Actions Button](../images/icon-actions.png)) for the workflow task and select *Assign to Me*. You may optionally add a message before confirming the approval.
+1. Click *Actions* (![Actions Button](../../images/icon-actions.png)) for the workflow task and select *Assign to Me*. You may optionally add a message before confirming the approval.
 
 1. Click *Done* in the pop-up window to assign the task to yourself. This redirects you to the *Assigned to Me* tab.
 
-1. Click *Actions* (![Actions Button](../images/icon-actions.png)) again and select *Approve*. You can also add a message before confirming.
+1. Click *Actions* (![Actions Button](../../images/icon-actions.png)) again and select *Approve*. You can also add a message before confirming.
 
 1. Click *Done* to approve the article.
 
@@ -199,7 +199,7 @@ To do this,
 
 1. Click *Publish*, verify there are no conflicts, and click *Publish* again to add the changes to production.
 
-   ![You can publish the publication if there are no conflicts.](./pdf-images/day2/lesson16/07.png)
+   ![You can publish the publication if there are no conflicts.](./publishing-content-with-workflows/images/07.png)
 
 Great! You've successfully used workflow with publications to review and publish a web content article.
 

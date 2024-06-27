@@ -18,7 +18,7 @@ You can set each sub-element's content directly, or you can map them to existing
 
 1. Begin editing Clarity's *Home* page.
 
-1. In the Browser side panel (![Browser](../images/icon-hierarchy.png)), select the *Banner* container.
+1. In the Browser side panel (![Browser](../../images/icon-hierarchy.png)), select the *Banner* container.
 
 1. Select the *Image* fragment in the *Banner* container. Notice that the fragment includes an image-square sub-element.
 
@@ -26,7 +26,7 @@ You can set each sub-element's content directly, or you can map them to existing
 
 1. For Source Selection, select *Mapping*.
 
-1. For Item, click the *Plus* button (![Plus Button](../images/icon-plus.png)).
+1. For Item, click the *Plus* button (![Plus Button](../../images/icon-plus.png)).
 
 1. In the Documents and Media tab, click *Sites and Libraries* in the breadcrumb menu.
 
@@ -36,7 +36,7 @@ You can set each sub-element's content directly, or you can map them to existing
 
 1. Repeat steps 4-9 for the *Image* fragment in the Clarity Solutions Promo container and select the `sunglasses-on-shelves` image named from the Marketing Assets asset library.
 
-1. In the Browser side panel (![Browser](../images/icon-hierarchy.png)), select the *Content Wrapper* container in the Clarity Solutions Promo container.
+1. In the Browser side panel (![Browser](../../images/icon-hierarchy.png)), select the *Content Wrapper* container in the Clarity Solutions Promo container.
 
    Here you'll use a background image instead of an image sub-element.
 
@@ -96,7 +96,7 @@ Here you'll apply what you've learned about web content, collections, and page t
 
 To do this,
 
-1. Open the *Site Menu* (![Site Menu](../images/icon-product-menu.png)), expand *Site Builder*, and select *Collections*.
+1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)), expand *Site Builder*, and select *Collections*.
 
 1. Create a new dynamic collection titled `Announcements`.
 
@@ -106,13 +106,13 @@ To do this,
 
    Now that you've created the collection, let's add it to the Primary Master Page template.
 
-1. Open the *Site Menu* (![Site Menu](../images/icon-product-menu.png)), expand *Design*, and select *Page Templates*.
+1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)), expand *Design*, and select *Page Templates*.
 
 1. Begin editing the *Primary Master Page* template.
 
    **Note**: You may notice the styles applied to the master page are different from those applied in site pages. This is because you've applied the theme and theme CSS client extension to site pages and not to master pages. If desired, you can apply the theme and client extension to the master page directly. Make sure you uncheck all theme properties (i.e. Show Footer, Show Header, etc.).
 
-1. Toggle the *visibility* (![Visibility](../images/icon-preview.png)) of the *Header Announcement Bar* container.
+1. Toggle the *visibility* (![Visibility](../../images/icon-preview.png)) of the *Header Announcement Bar* container.
 
 1. Select the *Header Announcement Bar* container and configure this setting:
 

@@ -44,7 +44,7 @@ Here you'll enable text and image auto-tagging as the Clarity Admin user.
 
 To do this,
 
-1. Open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Instance Settings*.
+1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Instance Settings*.
 
 1. Under Content and Data, click *Assets*.
 
@@ -78,7 +78,7 @@ To do this,
 
    **Tip**: You can double check that all the settings are correct for the Clarity site by going to *Site Menu* &rarr; *Configuration* &rarr; *Site Settings* &rarr; *Assets* and validating that auto tagging is enabled.
 
-1. Go to Clarity's enterprise website, open the *Site Menu* (![Site Menu](../images/icon-product-menu.png)), expand *Content & Data*, and select *Web Content*.
+1. Go to Clarity's enterprise website, open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)), expand *Content & Data*, and select *Web Content*.
 
 1. Go to the *Articles* folder, click *New*, and select *Article*.
 
@@ -102,9 +102,9 @@ To do this,
    * Email: `walter.douglas@clarityvisionsolutions.com`
    * Password: `learn`
 
-1. Open the *Site Menu* (![Site Menu](../images/icon-product-menu.png)), expand *Categorization*, and select *Categories*.
+1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)), expand *Categorization*, and select *Categories*.
 
-1. Click *Add* (![Add](../images/icon-plus.png)) next to *Vocabularies* to create a new vocabulary.
+1. Click *Add* (![Add](../../images/icon-plus.png)) next to *Vocabularies* to create a new vocabulary.
 
 1. Enter these details:
 
@@ -118,7 +118,7 @@ To do this,
    | Subtype                   | FAQ                          |
    | Required                  | No                           |
 
-   ![Choose which asset types the vocabulary will be associated with.](./pdf-images/day2/lesson12/01.png)
+   ![Choose which asset types the vocabulary will be associated with.](./organizing-claritys-content/images/01.png)
 
 1. Click *Save* to create the vocabulary.
 
@@ -147,7 +147,7 @@ To do this,
    * `Pricing & Ordering`
    * `Returns & Exchanges`
 
-   ![Create and use categories according to your content.](./pdf-images/day2/lesson12/02.png)
+   ![Create and use categories according to your content.](./organizing-claritys-content/images/02.png)
 
 1. Challenge: Assign the correct category to each FAQ web content article. The FAQs are sorted into folders corresponding to their categories.
 
@@ -164,7 +164,7 @@ Here you'll add web content articles to a manual collection and map them to Clar
 
 To do this,
 
-1. Open the *Site Menu* (![Site Menu](../images/icon-product-menu.png)), expand *Site Builder*, and select *Collections*.
+1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)), expand *Site Builder*, and select *Collections*.
 
 1. Click *New* and select *Manual Collection*.
 
@@ -192,7 +192,7 @@ To do this,
 
 1. Select the *Collection Display* fragment in the Helpful Articles container.
 
-1. In the configuration side panel, click the *Plus* button (![Plus Button](../images/icon-plus.png)) for Collection and select the *Helpful Articles* collection.
+1. In the configuration side panel, click the *Plus* button (![Plus Button](../../images/icon-plus.png)) for Collection and select the *Helpful Articles* collection.
 
    The fragment now sources its content from the Helpful Articles collection. The provided composition already applies the Clarity Card fragment to the collection display, so that it can be used to render each item. To display article content from the collection, you'll need to map this card's sub-elements to fields in the articles. But before mapping the card's sub-elements to content fields, let's change the collection display's pagination.
 
@@ -240,7 +240,7 @@ Having categorized your FAQ web content articles earlier, here you'll use those 
 
 To do this,
 
-1. Open the *Site Menu* (![Site Menu](../images/icon-product-menu.png)), expand *Site Builder*, and select *Collections*.
+1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)), expand *Site Builder*, and select *Collections*.
 
 1. Click *New* and select *Dynamic Collection*.
 

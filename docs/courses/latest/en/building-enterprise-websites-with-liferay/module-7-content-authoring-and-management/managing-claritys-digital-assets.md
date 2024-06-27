@@ -32,7 +32,7 @@ To do this,
 
    This enables users in the site to access content in the asset library. Next, add content to the library.
 
-   ![Add Clarity Public Enterprise Website to Clarity Branding and Logo asset library.](./pdf-images/day1/lesson9/01.png)
+   ![Add Clarity Public Enterprise Website to Clarity Branding and Logo asset library.](./managing-claritys-digital-assets/images/02.png)
 
 1. Return to the *Asset Libraries* overview page.
 
@@ -67,7 +67,7 @@ To do this,
 
 1. Go to *Clarity Public Enterprise Website*.
 
-1. Open the *Site Menu* (![Site Menu](../images/icon-product-menu.png)), expand *Design*, and select *Page Templates*.
+1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)), expand *Design*, and select *Page Templates*.
 
 1. In the Master tab, click *Primary Master Page* to begin editing it.
 
@@ -75,11 +75,11 @@ To do this,
 
    This selects the fragment's *image-square* sub-element and opens its configuration options.
 
-1. In the configuration side panel, click the *Select Image* button (![Select Image](../images/icon-plus.png)).
+1. In the configuration side panel, click the *Select Image* button (![Select Image](../../images/icon-plus.png)).
 
 1. Click *Sites and Libraries* in the breadcrumb menu.
 
-   ![Click Sites and Libraries in the breadcrumb menu.](./pdf-images/day1/lesson9/02.png)
+   ![Click Sites and Libraries in the breadcrumb menu.](./managing-claritys-digital-assets/images/03.png)
 
 1. Go to the *Asset Library* tab.
 
@@ -106,7 +106,7 @@ To do this,
 
    All pages using the master page are now automatically updated.
 
-   **Important**: If the image does not update for you, you must clear the Liferay server's cache. To do this, sign in as the Clarity Admin user, open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Server Administration*. Then, click *Execute* for the "Clear content cached across the cluster" operation.
+   **Important**: If the image does not update for you, you must clear the Liferay server's cache. To do this, sign in as the Clarity Admin user, open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Server Administration*. Then, click *Execute* for the "Clear content cached across the cluster" operation.
 
 1. Repeat steps 4-10 to update the header image in the *Secondary Master Page* template to use `logo-name-vector`.
 

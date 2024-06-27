@@ -72,7 +72,7 @@ To do this,
 
 1. Assign the role of Distributor to the Distributors User Group.
 
-1. Open the *Site Menu* (![Site Menu](../images/icon-product-menu.png)), expand *People*, and select *Segments*.
+1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)), expand *People*, and select *Segments*.
 
 1. Click *New* to create a segment.
 
@@ -90,13 +90,13 @@ To do this,
 
    We cover both scenarios here: users in the user group and those with the directly assigned Distributor role.
 
-   ![Set the regular role to Distributor and the user group to Distributors.](./pdf-images/day3/lesson21/01.png)
+   ![Set the regular role to Distributor and the user group to Distributors.](./personalizing-experiences-for-claritys-users/images/01.png)
 
 1. Click *View Members* to validate Terrence Wheatley meets the segment condition.
 
 1. Click *Save*.
 
-1. Go to the home page and click *Edit* (![Edit](../images/icon-edit.png)).
+1. Go to the home page and click *Edit* (![Edit](../../images/icon-edit.png)).
 
 1. Click the *Experience* drop down at the top of the page and choose *New Experience*.
 
@@ -118,7 +118,7 @@ To do this,
 
 1. Click *Publish*.
 
-1. You can test the different experiences using the Simulation (![Simulation](../../../../dxp/latest/en/images/icon-simulation.png)) menu.
+1. You can test the different experiences using the Simulation (![Simulation](../../../../../dxp/latest/en/images/icon-simulation.png)) menu.
 
 1. Choose to Preview By Segments. Then, use the Segment dropdown menu to toggle between `Anyone` and `Distributor` and view the corresponding changes in the main window.
 

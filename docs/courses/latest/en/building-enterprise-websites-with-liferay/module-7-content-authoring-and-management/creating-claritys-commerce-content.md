@@ -79,9 +79,9 @@ To do this,
    * **Username**: `ian.miller@clarityvisionsolutions.com`
    * **Password**: `learn`
 
-1. Open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)), go to the *Commerce* tab, and click *Catalogs*.
+1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), go to the *Commerce* tab, and click *Catalogs*.
 
-1. Click *Add* (![Add Button](../images/icon-add.png)).
+1. Click *Add* (![Add Button](../../images/icon-add.png)).
 
 1. Enter the following:
 
@@ -91,7 +91,7 @@ To do this,
    | Default Catalog Language | English (United States) |
    | Currency                 | US Dollar               |
 
-   ![Create a catalog to group related products together.](./pdf-images/day2/lesson14/01.png)
+   ![Create a catalog to group related products together.](./creating-claritys-commerce-content/images/01.png)
 
 1. Click *Submit* to finish creating the catalog.
 
@@ -106,7 +106,7 @@ Here you'll add specifications as Ian Miller, which you'll apply to Clarity's pr
 
 To do this,
 
-1. Open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)), go to the *Commerce* tab, and click *Specifications*.
+1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), go to the *Commerce* tab, and click *Specifications*.
 
 1. Click the *Specification Groups* tab.
 
@@ -164,7 +164,7 @@ To do this,
 
 1. Return to the *Specification Labels* page.
 
-![Create three Product specification labels.](./pdf-images/day2/lesson14/02.png)
+![Create three Product specification labels.](./creating-claritys-commerce-content/images/02.png)
 
 Now that you've added some specifications, you can apply them to products as you create them.
 
@@ -177,9 +177,9 @@ Here you'll add products to Clarity's catalog, apply specifications and more as 
 
 To do this,
 
-1. Open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)), go to the *Commerce* tab, and click *Products*.
+1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), go to the *Commerce* tab, and click *Products*.
 
-1. Click *Add* (![Add Button](../images/icon-add.png)) and select *Simple*.
+1. Click *Add* (![Add Button](../../images/icon-add.png)) and select *Simple*.
 
    **Note**: A simple product is any physical product for which inventory is tracked.
 
@@ -239,7 +239,7 @@ To do this,
 
 1. Go to the *Media* tab.
 
-1. For Images, click *Add* (![Add Button](../images/icon-add.png)) and click *Select File*.
+1. For Images, click *Add* (![Add Button](../../images/icon-add.png)) and click *Select File*.
 
 1. Select the *classic-aviator-sunglasses* image from the Product Images asset library.
 
@@ -252,7 +252,7 @@ To do this,
 
 1. Click *Publish* to save the product image.
 
-   ![Add the image to the product's media.](./pdf-images/day2/lesson14/03.png)
+   ![Add the image to the product's media.](./creating-claritys-commerce-content/images/03.png)
 
    <!--TASK: Add attachment-->
 
@@ -265,7 +265,7 @@ To do this,
    | `AquaComfort Plus Dailies` | N/A            | Contacts   | daily | aquacomfort-plus-dailies |
    | `Single Vision Lenses`     | N/A            | Lenses     | daily | biofinity-toric-lenses   |
 
-   ![Create three Products.](./pdf-images/day2/lesson14/04.png)
+   ![Create three Products.](./creating-claritys-commerce-content/images/04.png)
 
 Great! Now that you've added products, you can set up a channel to display them in Clarity's site.
 
@@ -278,9 +278,9 @@ Here you'll create a channel and link it to Clarity's public enterprise website 
 
 To do this,
 
-1. Open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)), go to the *Commerce* tab, and click *Channels*.
+1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), go to the *Commerce* tab, and click *Channels*.
 
-1. Click *Add* (![Add Button](../images/icon-add.png)).
+1. Click *Add* (![Add Button](../../images/icon-add.png)).
 
 1. Enter the following:
 
@@ -320,15 +320,15 @@ To implement this,
    * Email: `walter.douglas@clarityvisionsolutions.com`
    * Password: `learn`
 
-1. Go to the *Products* page and begin editing it (![Edit Button](../images/icon-edit.png)).
+1. Go to the *Products* page and begin editing it (![Edit Button](../../images/icon-edit.png)).
 
-1. Open the *Fragments and Widgets* tab (![Fragments and Widgets](../images/icon-plus.png)) in the side panel.
+1. Open the *Fragments and Widgets* tab (![Fragments and Widgets](../../images/icon-plus.png)) in the side panel.
 
 1. Go to the *Widgets* tab.
 
 1. Drag and drop the *Commerce Categories Navigation* widget into the Commerce Categories container.
 
-1. Hover over the widget, click the *Actions* button (![Actions Button](../images/icon-actions.png)) in the top right corner of the widget, and select *Configuration*.
+1. Hover over the widget, click the *Actions* button (![Actions Button](../../images/icon-actions.png)) in the top right corner of the widget, and select *Configuration*.
 
 1. For Vocabulary, select *Clarity Products*.
 
@@ -336,13 +336,13 @@ To implement this,
 
 1. Click *Save* and close the window.
 
-   ![The Clarity Products categories should appear after saving.](./pdf-images/day2/lesson14/05.png)
+   ![The Clarity Products categories should appear after saving.](./creating-claritys-commerce-content/images/05.png)
 
 1. Click *Publish* to view the updated page.
 
    Currently, you have a list of categories, but this is a long way from Clarity's designs. The content of this widget is dynamically updated, so it's easier to maintain as new categories are added and old categories are updated or retired. Now let's do something about the design.
 
-1. Open the *Site Menu* (![Site Menu](../images/icon-product-menu.png)), expand *Design*, and select *Templates*.
+1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)), expand *Design*, and select *Templates*.
 
 1. Go to the *Widget Templates* tab.
 
@@ -356,9 +356,9 @@ To implement this,
 
 1. Click *Save*.
 
-1. Return to the *Products* page and begin editing it (![Edit Button](../images/icon-edit.png)).
+1. Return to the *Products* page and begin editing it (![Edit Button](../../images/icon-edit.png)).
 
-1. Hover over the *Commerce Categories Navigation* widget, click the *Actions* button (![Actions Button](../images/icon-actions.png)) in the top right corner of the widget, and select *Configuration*.
+1. Hover over the *Commerce Categories Navigation* widget, click the *Actions* button (![Actions Button](../../images/icon-actions.png)) in the top right corner of the widget, and select *Configuration*.
 
 1. For Display Template, select *Clarity Category Cards*.
 
@@ -366,7 +366,7 @@ To implement this,
 
 1. Click *Publish* to view the page.
 
-![Use a display template for the Clarity Category Cards widget.](./pdf-images/day2/lesson14/06.png)
+![Use a display template for the Clarity Category Cards widget.](./creating-claritys-commerce-content/images/06.png)
 
 Great! You can see we are a lot closer to the final design requested by Clarity. Now that you've finished the Products page, let's complete the Product List page.
 
@@ -380,9 +380,9 @@ To fix this,
 
 1. Go to the *Product List* page.
 
-1. Click *Edit* (![Edit Button](../images/icon-edit.png)) to begin editing the page.
+1. Click *Edit* (![Edit Button](../../images/icon-edit.png)) to begin editing the page.
 
-1. From the *Fragments and Widgets* tab (![Fragments and Widgets](../images/icon-plus.png)), drag and drop the *Category Content* widget just above the Search Results container.
+1. From the *Fragments and Widgets* tab (![Fragments and Widgets](../../images/icon-plus.png)), drag and drop the *Category Content* widget just above the Search Results container.
 
 1. Click *Publish*.
 
@@ -390,7 +390,7 @@ To fix this,
 
    The Category Navigation should be working. However, the Search Results widget is blank, as it has no display template set to it. To fix that, let's create a new template for that widget.
 
-1. Open the *Site Menu* (![Site Menu](../images/icon-product-menu.png)), expand *Design*, and select *Templates*.
+1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)), expand *Design*, and select *Templates*.
 
 1. Go to the *Widget Templates* tab.
 
@@ -406,13 +406,13 @@ To fix this,
 
 1. Click *Save*.
 
-1. Go to the Product List page and begin editing it (![Edit Button](../images/icon-edit.png)).
+1. Go to the Product List page and begin editing it (![Edit Button](../../images/icon-edit.png)).
 
-1. Hover over the Search Results widget, click *Actions* (![Actions Button](../images/icon-actions.png)) in the top right corner of the widget, and select *Configuration*.
+1. Hover over the Search Results widget, click *Actions* (![Actions Button](../../images/icon-actions.png)) in the top right corner of the widget, and select *Configuration*.
 
    **Note**: The Search Results widget should look blank, towards the bottom right side of the layout.
 
-   ![The Search Results widget should look blank.](./pdf-images/day2/lesson14/07.png)
+   ![The Search Results widget should look blank.](./creating-claritys-commerce-content/images/07.png)
 
 1. For Render Selection, select *Use Application Display Template*.
 
@@ -426,7 +426,7 @@ To fix this,
 
 1. Return to the *Products* page and click one of the category cards to confirm it is working properly and you are seeing your new template.
 
-   ![The Search Results widget should now display the products.](./pdf-images/day2/lesson14/08.png)
+   ![The Search Results widget should now display the products.](./creating-claritys-commerce-content/images/08.png)
 
 ### Creating the Product Display Page
 
@@ -438,7 +438,7 @@ To fix this,
 
    This page already includes most of the necessary widgets for displaying products. We're just missing the Product Detail widget to make everything work.
 
-1. From the *Fragments and Widgets* tab (![Fragments and Widgets](../images/icon-plus.png)), drag and drop the *Product Detail* widget above the provided Product Publisher widget.
+1. From the *Fragments and Widgets* tab (![Fragments and Widgets](../../images/icon-plus.png)), drag and drop the *Product Detail* widget above the provided Product Publisher widget.
 
 1. Publish the page.
 

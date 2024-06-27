@@ -29,7 +29,7 @@ To do this,
    * Email: `christian.carter@clarityvisionsolutions.com`
    * Password: `learn`
 
-1. Open the *Site Menu* (![Site Menu](../images/icon-product-menu.png)), expand *Content & Data*, and select *Web Content*.
+1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)), expand *Content & Data*, and select *Web Content*.
 
 1. Go to the *Structures* tab and click *New*.
 
@@ -45,7 +45,7 @@ To do this,
    | Basic    | Required Field  | Yes         |
    | Advanced | Field Reference | `message`   |
 
-1. Click the *back arrow* (![Back Arrow](../images/icon-angle-left.png)) to return to the Builder sidebar menu.
+1. Click the *back arrow* (![Back Arrow](../../images/icon-angle-left.png)) to return to the Builder sidebar menu.
 
 1. Drag and drop another *Text* field just below the first one.
 
@@ -71,7 +71,7 @@ To do this,
 
 1. Click *Save*.
 
-![Creating the Announcements web content structure.](./pdf-images/day1/lesson10/01.png)
+![Creating the Announcements web content structure.](./creating-claritys-web-content/images/01.png)
 
 Users can now create web content articles using the Announcements structure. You should now have eight web content structures implemented in Clarity’s website. Next, you'll create some web content articles.
 
@@ -82,7 +82,7 @@ The training workspace already includes some web content articles. However, Clar
 
 To do this,
 
-1. Open the *Site Menu* (![Site Menu](../images/icon-product-menu.png)), expand *Content & Data*, and select *Web Content*.
+1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)), expand *Content & Data*, and select *Web Content*.
 
 1. Click *New*, select *Folder*.
 
@@ -110,7 +110,7 @@ To do this,
    | Link Text    | `Learn more`                                |
    | Link to Page | `Products`                                  |
 
-   ![Create Product Innovations web content article.](./pdf-images/day1/lesson10/02.png)
+   ![Create Product Innovations web content article.](./creating-claritys-web-content/images/02.png)
 
 1. Click *Publish*.
 
@@ -128,7 +128,7 @@ To do this,
    | Do you have retail partners where I can try on your eyewear? | Yes, we have partnered with various optical shops where you can try on our eyewear. Please visit our website to find the nearest location.                                              |
    | What types of eyewear do you offer?                          | We offer a wide range of eyewear including prescription glasses, sunglasses, and contact lenses. We also have a collection of designer frames to suit different styles and preferences. |
 
-![Create three FAQ web content article.](./pdf-images/day1/lesson10/03.png)
+![Create three FAQ web content article.](./creating-claritys-web-content/images/03.png)
 
 Great! You should have all the web content Clarity needs for their pages. In later exercises, you'll map some of this content to fragments on Clarity's pages. Next, let's explore how you can create content in Liferay with ChatGPT.
 
@@ -146,7 +146,7 @@ To do this,
    * Username: `admin@clarityvisionsolutions.com`
    * Password: `learn`
 
-1. Open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Instance Settings*.
+1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Instance Settings*.
 
 1. Click *AI Creator*.
 
@@ -160,7 +160,7 @@ To do this,
 
 1. Return to Clarity's site, begin creating a web content article, and click the *AI Creator* button to generate content.
 
-![Use the AI Creator tool to generate content.](./pdf-images/day2/lesson11/01.png)
+![Use the AI Creator tool to generate content.](./creating-claritys-web-content/images/04.png)
 
 Great! You've used ChatGPT to generate web content articles.
 

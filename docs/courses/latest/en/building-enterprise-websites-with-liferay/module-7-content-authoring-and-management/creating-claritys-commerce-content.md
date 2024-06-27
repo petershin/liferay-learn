@@ -65,170 +65,390 @@ Once their products and catalogs are configured, Clarity needs to think about ho
 
 While e-commerce isn’t Clarity’s main focus right now, setting up these features will set them up for success in the future.
 
+<!--Exercise 14a-->
+## Exercise: Creating Clarity’s Products Catalog
 
-<!--TODO-->
+A catalog is a group of related products. Liferay catalogs provide a highly flexible way to organize your product offerings in the most sensible way for your business.
 
-## Exercises Coming Soon!
+Here you'll create a catalog for Clarity's products as Ian Miller.
 
-<!--
-## Exercise One: Creating Clarity’s Products Catalog
-Navigate to Application Menu > Commerce > Product Management > Catalogs
-Click the “+” button to add a new catalog
-Enter the following 
-Name: Clarity Eyewear
-Default Catalog Language: (your Language) (for example, English (United States))
-Currency: (your store’s currency) (US Dollar)
-Click Submit to finish creating your catalog
+To do this,
 
-## Exercise Two: Defining Product Specifications
-Creating a Product Specification Group (needed to create a product specification)
-Navigate to Application Menu > Commerce > Product Management > Specifications
-Click Specification Groups
-Click New to add a new specification group
-Enter the following
-Title: Frame Description
-Priority: 10.0
-Key: frame-description
-Click Save to finish creating your product specification group
+1. Sign in as the Ian Miller.
 
-Creating a Product Specification
-Navigate to Application Menu > Commerce > Product Management > Specifications
-Click New to add a new specification
-Enter the following
-Label: Frame Material
-Description: The material the frame is made of.
-Use in Faceted Navigation: True
-Default Specification Group: Frame Description
-Key: frame-material
-Click Save to finish creating your catalog
-Create 2 more specifications with the following attributes:
-Label: Frame Color
-Description: The color of the frame.
-Use in Faceted Navigation: True
-Default Specification Group: Frame Description
-Key: frame-color
-And
-Label: Frame Size
-Description: The size (in default units) of the frame.
-Use in Faceted Navigation: False
-Default Specification Group: Frame Description
-Key: frame-size
+   * **Username**: `ian.miller@clarityvisionsolutions.com`
+   * **Password**: `learn`
 
+1. Open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)), go to the *Commerce* tab, and click *Catalogs*.
 
-## Exercise Three: Creating Products
+1. Click *Add* (![Add Button](../images/icon-add.png)).
 
-Creating a product
-Navigate to Application Menu > Commerce > Product Management > Products
-Click the “+” button and click Simple to create a simple product
-Enter the following:
-Name: Classic Aviator Sunglasses
-Catalog: Clarity Eyewear
-Click Submit to finish creating your product
+1. Enter the following:
 
-Applying product specifications to a product
-Within the detailed product view, find the Add Specifications section. Start typing “frame,” and click “Select” next to each of the Frame Material, Frame Color, and Frame Size specifications
-Scroll down to the Specifications section of the product. Click Frame Material, and enter the following: 
-Value: Metal
-Position: 10
-Repeat step 6 to apply the following values to the other specifications:
-Frame Color:
-Value: Gold
-Position: 20
-Frame Size:
-Value: 54-20
-Position: 30
-Adding Products to Categories
-Find the Public Categories section, and Clarity Products field. Click “Select” and choose Sunglasses
-Click Done to apply the category to this item
-Modifying Product SKU
-Navigate to the SKU tab of the product
-Click “default” to open up the default SKU
-Change the SKU to “classic-aviator-sunglasses”
-Click Publish to save your changes
-Click “classic-aviator-sunglasses” to open up the SKU again
-Click the Price tab in this window
-Click “Add <SKU> to Price List”
-Enter the following
-Price List: Master Base Price List
-Price: 150
-Click Add to save the SKU price
-Adding a Product Image
-Click the Media tab
-Click “Select File”
-In the popup, make sure you are in the Clarity site, and click the Clarity Product Images folder
-Select the Classic Aviator Sunglasses image
-Enter the following
-Title: Classic Aviator Sunglasses
-Priority: 10.0
-Click Publish to save the product image
-Repeat steps 1-24 to create 2 more products, for AquaComfort Plus Dailies and Single Vision Lenses
-AquaComfort Plus Dailies
-Specifications:
-None
-Categories:
-Contacts
-Tags:
-daily
- SKUs:
-aquacomfort-plus-dailies
-Base price: 35
-Image: AquaComfort Plus Dailies
-Single Vision Lenses
-Specifications:
-None
-Categories:
-Lenses
-Tags:
-daily
- SKUs:
-single-vision-lenses
-Base price: 100
-Image: Single Vision Lenses
+   | Field                    | Value                   |
+   |:-------------------------|:------------------------|
+   | Name                     | `Clarity Eyewear`       |
+   | Default Catalog Language | English (United States) |
+   | Currency                 | US Dollar               |
 
-## Exercise Four: Creating a Commerce Channel
+   ![Create a catalog to group related products together.](./pdf-images/day2/lesson14/01.png)
 
-Navigate to Application Menu > Commerce > Store Management > Channels
-Click the “+” button to add a new channel
-Enter the following
-Name: Clarity Bootcamp
-Currency: (your store’s currency) (US Dollar)
-Type: Site
-Click Add to finish creating your channel
-To use a channel to sell products, you must link it to a Liferay site.
-Navigate to Application Menu > Commerce > Store Management > Channels
-Click the Clarity Bootcamp channel you just created
-Click Type
-Click Select Site
-Click Choose next to the Clarity site
-Click Save
-You can link a different site to the channel later as long as the site is not linked to another channel. Note: You can only link one catalog to a site at a time.
+1. Click *Submit* to finish creating the catalog.
 
-## Exercise 5: Setting Up the Product Pages
+Great! Now that you've created the catalog, you can start adding products to it. But first, let's add specifications that you can add to Clarity's products when you create them.
 
-Updating the Product Page
-1.  Navigate to the Product page we previously created http://localhost:8080/web/clarity/products and let’s take a look at the current experience.
-2.  Navigate to the Side Menu > Design > Templates > Widget Templates
-3.  Select New, select More, select Commerce Categories Navigation Template
-4.  Enter Clarity Category Cards as the title and click Save and Continue
-5.  Using the Fields and Elements provided, create a page that iterates through all of the categories in the selected vocabulary, displaying the Name, Description, and Category Image.
-(You can use the provided example as a starting point or for inspiration)
-Copy from https://gist.github.com/jhanda/eb53818541bdce69653f58372a73d8cb
-6.  Navigate back to the Product page http://localhost:8080/web/clarity/products
-7.  Edit the page, then select the Configuration icon on the Commerce Categories Navigation widget.
+<!--Exercise 14b-->
+## Exercise: Defining Product Specifications
 
+Product specifications store information about products, like size, material, and color. To improve organization, you can also save them into specification groups.
 
-Creating the Product Listing Page (PLP)
-As you’ve probably already noticed, while the Commerce Categories Navigation widget looks better and provides us links to each category, the links aren’t working.  That’s because Liferay doesn’t know which page to display for each category
-1.  Navigate to the Product List page (http://localhost:8080/web/clarity/product-list)
-2.  Review the widgets that have already been provided, we just missing one thing.
-3.  Add the Category Content widget to the Banner container at the top of the Body section of the page.
-4.  Publish the page and go back to the Product page and select one of the categories to confirm that it’s working
+Here you'll add specifications as Ian Miller, which you'll apply to Clarity's products in the next exercise.
 
-Product Details Page
+To do this,
 
-Optional PLP Exercise Improving the Category Content
-Create a new Widget Template to make the Category Content widget look like the figma design
--->
+1. Open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)), go to the *Commerce* tab, and click *Specifications*.
+
+1. Click the *Specification Groups* tab.
+
+1. Click *New* to add a new specification group.
+
+1. Enter the following:
+
+   | Field    | Value               |
+   |:---------|:--------------------|
+   | Title    | `Frame Description` |
+   | Priority | `10.0`              |
+   | Key      | `frame-description` |
+
+1. Click *Save* to finish creating your product specification group.
+
+   You can now add product specifications to it.
+
+1. Return to the *Specification Groups* overview and go to the *Specification Labels* tab.
+
+1. Click *New* to add a new specification.
+
+1. Enter the following:
+
+   | Field                       | Value                        |
+   |:----------------------------|:-----------------------------|
+   | Label                       | `Frame Material`             |
+   | Description                 | `The material of the frame.` |
+   | Use in Faceted Navigation   | Yes                          |
+   | Default Specification Group | Frame Description            |
+   | Key                         | `frame-material`             |
+
+1. Click *Save* to finish creating your specification label.
+
+1. Create two more specifications with these values:
+
+   * **Frame Color**
+
+      | Field                       | Value                     |
+      |:----------------------------|:--------------------------|
+      | Label                       | `Frame Color`             |
+      | Description                 | `The color of the frame.` |
+      | Use in Faceted Navigation   | Yes                       |
+      | Default Specification Group | Frame Description         |
+      | Key                         | `frame-color`             |
+
+   * **Frame Size**
+
+      | Field                       | Value                                       |
+      |:----------------------------|:--------------------------------------------|
+      | Label                       | `Frame Size`                                |
+      | Description                 | `The size of the frame (in default units).` |
+      | Use in Faceted Navigation   | No                                          |
+      | Default Specification Group | Frame Description                           |
+      | Key                         | `frame-size`                                |
+
+1. Return to the *Specification Labels* page.
+
+![Create three Product specification labels.](./pdf-images/day2/lesson14/02.png)
+
+Now that you've added some specifications, you can apply them to products as you create them.
+
+<!--Exercise 14c-->
+## Exercise: Creating Products
+
+Products represent the items sold by a company. Like any manufacturer, Clarity has a wide variety of products designed to achieve different goals and target different customer profiles.
+
+Here you'll add products to Clarity's catalog, apply specifications and more as Ian Miller.
+
+To do this,
+
+1. Open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)), go to the *Commerce* tab, and click *Products*.
+
+1. Click *Add* (![Add Button](../images/icon-add.png)) and select *Simple*.
+
+   **Note**: A simple product is any physical product for which inventory is tracked.
+
+1. Enter the following:
+
+   | Field   | Value                        |
+   |:--------|:-----------------------------|
+   | Name    | `Classic Aviator Sunglasses` |
+   | Catalog | Clarity Eyewear              |
+
+1. Click *Submit* to finish creating your product.
+
+   Now you can configure the product. First, add a category to it.
+
+1. In the Categorization section, click *Select* for Clarity Products.
+
+1. Select *Sunglasses* and click *Done* to apply the category to this item.
+
+   Now that the product is categorized, add some specifications.
+
+1. In the Details tab, scroll down and type `Frame` in the Add Specifications field.
+
+   This lists available specifications.
+
+1. Select *Frame Material*, *Frame Color*, and *Frame Size* specifications, and close the modal window.
+
+1. In the Specifications section, click *Frame Material* to begin editing it.
+
+1. Enter the following:
+
+   | Field    | Value   |
+   |:---------|:--------|
+   | Value    | `Metal` |
+   | Position | `10`    |
+
+1. Click *Save*.
+
+1. Repeat steps 7-9 for the other specifications and enter these values:
+
+   * **Frame Color**:
+
+      | Field    | Value  |
+      |:---------|:-------|
+      | Value    | `Gold` |
+      | Position | `20`   |
+
+   * **Frame Size**:
+
+      | Field    | Value   |
+      |:---------|:--------|
+      | Value    | `54-20` |
+      | Position | `30`    |
+
+   Now that your product has specifications, let's add an image for the product.
+
+1. Click *Save as Draft* to save your changes.
+
+1. Go to the *Media* tab.
+
+1. For Images, click *Add* (![Add Button](../images/icon-add.png)) and click *Select File*.
+
+1. Select the *classic-aviator-sunglasses* image from the Product Images asset library.
+
+1. Enter these details for the image:
+
+   | Field    | Value                      |
+   |:---------|:---------------------------|
+   | Title    | Classic Aviator Sunglasses |
+   | Priority | 10.0                       |
+
+1. Click *Publish* to save the product image.
+
+   ![Add the image to the product's media.](./pdf-images/day2/lesson14/03.png)
+
+   <!--TASK: Add attachment-->
+
+1. Click the *Details* tab and click *Publish* to publish the product.
+
+1. Repeat the above steps to create two more products: *AquaComfort Plus Dailies* and *Single Vision Lenses*. Tags should be typed directly into the Tags field in the Details screen.
+
+   | Product                    | Specifications | Categories | Tags  | Image                    |
+   |:---------------------------|:---------------|:-----------|:------|:-------------------------|
+   | `AquaComfort Plus Dailies` | N/A            | Contacts   | daily | aquacomfort-plus-dailies |
+   | `Single Vision Lenses`     | N/A            | Lenses     | daily | biofinity-toric-lenses   |
+
+   ![Create three Products.](./pdf-images/day2/lesson14/04.png)
+
+Great! Now that you've added products, you can set up a channel to display them in Clarity's site.
+
+<!--Exercise 14d-->
+## Exercise: Creating a Commerce Channel
+
+Channels determine the storefront where products are displayed and sold to customers.
+
+Here you'll create a channel and link it to Clarity's public enterprise website as Ian Miller.
+
+To do this,
+
+1. Open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)), go to the *Commerce* tab, and click *Channels*.
+
+1. Click *Add* (![Add Button](../images/icon-add.png)).
+
+1. Enter the following:
+
+   | Field    | Value            |
+   |:---------|:-----------------|
+   | Name     | `Clarity Public` |
+   | Currency | US Dollar        |
+   | Type     | Site             |
+
+1. Click *Add* to finish creating your channel.
+
+   **Note**: To use a channel to sell products, you must link it to a site.
+
+1. Go to the *Type* tab and click *Select Site*.
+
+1. Choose *Clarity Public Enterprise Website*.
+
+1. Click *Save*.
+
+With the channel created, let's return to Clarity's site and finish setting up their product pages.
+
+<!--Exercise 14e-->
+## Exercise: Setting Up the Product Pages
+
+The training workspace includes three pages for displaying Clarity's products: Products, Product List, and Product Details. Each page is already wireframed.
+
+Here you'll finish setting up each page as Walter Douglas.
+
+### Updating the Products Page
+
+The Products page is a marketing page intended to showcase the product categories defined in the *Clarity Products* vocabulary. By selecting a category, users are directed to the *Product List* page where they'll only see products from the selected category.
+
+To implement this,
+
+1. Sign in as Walter Douglas.
+
+   * Email: `walter.douglas@clarityvisionsolutions.com`
+   * Password: `learn`
+
+1. Go to the *Products* page and begin editing it (![Edit Button](../images/icon-edit.png)).
+
+1. Open the *Fragments and Widgets* tab (![Fragments and Widgets](../images/icon-plus.png)) in the side panel.
+
+1. Go to the *Widgets* tab.
+
+1. Drag and drop the *Commerce Categories Navigation* widget into the Commerce Categories container.
+
+1. Hover over the widget, click the *Actions* button (![Actions Button](../images/icon-actions.png)) in the top right corner of the widget, and select *Configuration*.
+
+1. For Vocabulary, select *Clarity Products*.
+
+   **Note**: Do not enable the Use Root Category option.
+
+1. Click *Save* and close the window.
+
+   ![The Clarity Products categories should appear after saving.](./pdf-images/day2/lesson14/05.png)
+
+1. Click *Publish* to view the updated page.
+
+   Currently, you have a list of categories, but this is a long way from Clarity's designs. The content of this widget is dynamically updated, so it's easier to maintain as new categories are added and old categories are updated or retired. Now let's do something about the design.
+
+1. Open the *Site Menu* (![Site Menu](../images/icon-product-menu.png)), expand *Design*, and select *Templates*.
+
+1. Go to the *Widget Templates* tab.
+
+1. Click *New* and select *Commerce Categories Navigation Template*.
+
+1. Enter `Clarity Category Cards` as the template name.
+
+1. From the downloaded course bundle, navigate to the `[repository-folder]/exercises/lesson-14/` folder and open the `commerce-category-navigation-cards.ftl` file on your machine.
+
+1. Copy and paste the contents of this file into the editor.
+
+1. Click *Save*.
+
+1. Return to the *Products* page and begin editing it (![Edit Button](../images/icon-edit.png)).
+
+1. Hover over the *Commerce Categories Navigation* widget, click the *Actions* button (![Actions Button](../images/icon-actions.png)) in the top right corner of the widget, and select *Configuration*.
+
+1. For Display Template, select *Clarity Category Cards*.
+
+1. Click *Save* and close the window.
+
+1. Click *Publish* to view the page.
+
+![Use a display template for the Clarity Category Cards widget.](./pdf-images/day2/lesson14/06.png)
+
+Great! You can see we are a lot closer to the final design requested by Clarity. Now that you've finished the Products page, let's complete the Product List page.
+
+### Creating the Product Listing Page (PLP)
+
+As you’ve probably noticed, while the Commerce Categories Navigation widget looks better and provides us links to each category, the links aren’t working. That’s because Liferay doesn’t know which page to display for each category. For Liferay to recognize a page as a category display page, we can either assign it in the Channel settings or add the Category Content widget to it.
+
+Currently, the Product List page includes most of the necessary widgets to display lists of products, but it's not connected to Liferay's category display feature.
+
+To fix this,
+
+1. Go to the *Product List* page.
+
+1. Click *Edit* (![Edit Button](../images/icon-edit.png)) to begin editing the page.
+
+1. From the *Fragments and Widgets* tab (![Fragments and Widgets](../images/icon-plus.png)), drag and drop the *Category Content* widget just above the Search Results container.
+
+1. Click *Publish*.
+
+1. Return to the *Products* page and click one of the category cards to confirm it is working properly.
+
+   The Category Navigation should be working. However, the Search Results widget is blank, as it has no display template set to it. To fix that, let's create a new template for that widget.
+
+1. Open the *Site Menu* (![Site Menu](../images/icon-product-menu.png)), expand *Design*, and select *Templates*.
+
+1. Go to the *Widget Templates* tab.
+
+1. Click *New* and select *Search Results Template*.
+
+   **Important**: There are two "Search Results Template" options. One is for general search results while the other one is for Commerce products. Try selecting the second option first. If it's the right one, you will see some commerce specific variables in the Elements menu (i.e., *Commerce Product Search Result Display Context* and *Commerce Product Catalog Entries*). If you do not see these variables, try using the other template.
+
+1. Enter `Clarity Search Results Cards` as the template name.
+
+1. From the downloaded course bundle, navigate to the `[repository-folder]/exercises/lesson-14/` folder and open the `commerce-search-results-cards.ftl` file on your machine.
+
+1. Copy and paste the contents of this file into the editor.
+
+1. Click *Save*.
+
+1. Go to the Product List page and begin editing it (![Edit Button](../images/icon-edit.png)).
+
+1. Hover over the Search Results widget, click *Actions* (![Actions Button](../images/icon-actions.png)) in the top right corner of the widget, and select *Configuration*.
+
+   **Note**: The Search Results widget should look blank, towards the bottom right side of the layout.
+
+   ![The Search Results widget should look blank.](./pdf-images/day2/lesson14/07.png)
+
+1. For Render Selection, select *Use Application Display Template*.
+
+1. For *Display Template*, select *Clarity Search Results Cards*.
+
+   **Note**: If you don’t see the template here, return to step 8 and try the other Search Results template.
+
+1. Click *Save* and close the window.
+
+1. Click *Publish*.
+
+1. Return to the *Products* page and click one of the category cards to confirm it is working properly and you are seeing your new template.
+
+   ![The Search Results widget should now display the products.](./pdf-images/day2/lesson14/08.png)
+
+### Creating the Product Display Page
+
+Finally, when you click a product in the Product List page, it doesn't work as expected. This is because Liferay doesn't know which page to use to display product details.
+
+To fix this,
+
+1. Go to the *Product Detail* page.
+
+   This page already includes most of the necessary widgets for displaying products. We're just missing the Product Detail widget to make everything work.
+
+1. From the *Fragments and Widgets* tab (![Fragments and Widgets](../images/icon-plus.png)), drag and drop the *Product Detail* widget above the provided Product Publisher widget.
+
+1. Publish the page.
+
+1. Return to the *Category Display* page and select one of the products to confirm it is working.
+
+We're almost there, but just as before, the out-of-the-box widget doesn't align with our designs.
+
+**Bonus**: As a bonus exercise, repeat the steps from the previous exercise to create a Product Detail widget that matches the Clarity Vision Solutions design.
+
+Congratulations! You've set up Clarity's product pages.
 
 ## Conclusion
 

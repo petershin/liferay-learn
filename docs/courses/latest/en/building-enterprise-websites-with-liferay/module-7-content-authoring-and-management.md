@@ -13,10 +13,9 @@ In the previous module, you learned about some of the tools, techniques, and bes
 
 - Asset Libraries
 - Web Content Structures and Templates
-- Catalogs, Products, and Channels
 - Tags, Categories, and Collections
-- Building Forms
 - Displaying Content
+- Catalogs, Products, and Channels
 - Publications and Workflow
 - Segments, Experiences, and A/B Testing
 

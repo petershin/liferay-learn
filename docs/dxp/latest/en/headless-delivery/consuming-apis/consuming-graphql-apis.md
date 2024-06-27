@@ -19,6 +19,9 @@ Liferay DXP contains [GraphQL](https://graphql.org) APIs for most of its applica
 
 1. [Make the API call using credentials that have access to the data.](#make-the-service-call-using-credentials-with-access-to-the-data)
 
+!!! note
+    Liferay DXP's GraphQL APIs are available at `http://[host]:[port]/o/graphql`.
+
 Start by running Liferay DXP to call its GraphQL APIs.
 
 ```{include} /_snippets/run-liferay-portal.md
@@ -26,9 +29,7 @@ Start by running Liferay DXP to call its GraphQL APIs.
 
 ## Identify the Service to Consume
 
-1. Liferay DXP's GraphQL APIs are available at `http://[host]:[port]/o/graphql`.
-
-   For instance, if you are running Liferay DXP locally on port `8080`, the GraphQL API can be accessed via `http://localhost:8080/o/api`.
+1. Navigate to `http://localhost:8080/o/api`.
 
 1. Click *GraphQL* at the top-right of the screen to open Liferay's [GraphiQL](https://github.com/graphql/graphiql) browser.
 

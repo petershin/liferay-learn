@@ -49,7 +49,7 @@ To access and use the Workflow tab,
 
 1. Select the *Workflow* tab.
 
-   Task-related information is displayed in the tab: The workflow task's status, assignee, name, creation date, due date, usages, comments, and activities.
+   Task-related information appears in the tab: the workflow task's status, assignee, name, creation date, due date, usages, comments, and activities.
 
 1. Click *Assign to...* to assign the workflow task to an available user.
 

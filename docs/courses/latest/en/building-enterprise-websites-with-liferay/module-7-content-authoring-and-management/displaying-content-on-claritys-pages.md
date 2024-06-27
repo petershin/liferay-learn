@@ -3,7 +3,8 @@ uuid: 32bccc07-8763-4a51-86ca-29e16d6aacb5
 ---
 # Displaying Content on Clarity’s Pages
 
-## Exercise One: Mapping Content to Fragments
+<!--Exercise 10c-->
+## Exercise: Mapping Content to Fragments
 
 Many fragments include sub-elements with their own configuration options, which depend on the sub-element’s type. Available types include
 
@@ -61,7 +62,8 @@ You can set each sub-element's content directly, or you can map them to existing
 
 You have now mapped content from Clarity's asset libraries to the image fragments on the Home page.
 
-## Exercise Two: Displaying Content on the FAQ Page
+<!--Exercise 13c-->
+## Exercise: Displaying Content on the FAQ Page
 
 Using what you have learned in the previous exercises, let’s map content to the FAQ page as Walter Douglas.
 
@@ -87,7 +89,8 @@ To do this,
 
 Using collection displays and custom fragments, you have rendered FAQ web content onto Clarity's FAQ page. Next, let's add content to the header announcement bar.
 
-## Exercise Three: Adding Announcements to the Header
+<!--Exercise 13d-->
+## Exercise: Adding Announcements to the Header
 
 Here you'll apply what you've learned about web content, collections, and page templates to add an announcement to Clarity's header bar as Walter Douglas.
 

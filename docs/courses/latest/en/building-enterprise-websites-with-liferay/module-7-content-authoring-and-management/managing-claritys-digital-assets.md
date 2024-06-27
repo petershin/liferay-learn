@@ -11,7 +11,8 @@ In the context of content management, digital assets are any files or media you 
 
 Asset libraries declutter digital asset management by providing a collaborative hub for adding, editing, and sharing assets among multiple sites and users. Permissions and version control ensure that assets are accessible by the right people and kept up to date with the latest changes, all while maintaining security and transparency across the organization. Asset libraries can be structured with folders and tags, and they integrate seamlessly with Liferay’s other content management features.
 
-## Exercise One: Creating Asset Libraries
+<!--Exercise 9a-->
+## Exercise: Creating Asset Libraries
 
 The training workspace already includes multiple libraries for Clarity's assets. Here, you'll create a library for branding assets as Walter Douglas.
 
@@ -57,7 +58,8 @@ Next, you'll return to Clarity's master pages and use the imported branding imag
 
 <!--TASK: Add content on library membership. Add Christian Carter (and Clara?) to the Marketing Assets Library.-->
 
-## Exercise Two: Adding Clarity’s Logo to the Master Pages
+<!--Exercise 9b-->
+## Exercise: Adding Clarity’s Logo to the Master Pages
 
 Clarity's master page templates are mostly complete. However, we still need to add Clarity's logo to the header and footer. Here you'll add these images as Walter Douglas.
 

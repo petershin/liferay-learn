@@ -17,7 +17,8 @@ Web content structures are the building blocks of Liferay content. They determin
 
 Web content templates provide an extra layer of configuration and customization to web content. Templates use the FreeMarker Template Language (FTL) to determine how content is rendered on a page. A template can be linked to a web content structure or even embedded in other templates.
 
-## Exercise One: Creating Web Content Structures
+<!--Exercise 10a-->
+## Exercise: Creating Web Content Structures
 
 The training workspace already includes most of the custom web content structures Clarity needs. In this exercise, you'll add the Announcements structure as Christian Carter.
 
@@ -74,7 +75,8 @@ To do this,
 
 Users can now create web content articles using the Announcements structure. You should now have eight web content structures implemented in Clarity’s website. Next, you'll create some web content articles.
 
-## Exercise Two: Creating Web Content Articles
+<!--Exercise 10b-->
+## Exercise: Creating Web Content Articles
 
 The training workspace already includes some web content articles. However, Clarity also needs some FAQ and announcement articles. Here you'll create them as Christian Carter.
 
@@ -130,7 +132,8 @@ To do this,
 
 Great! You should have all the web content Clarity needs for their pages. In later exercises, you'll map some of this content to fragments on Clarity's pages. Next, let's explore how you can create content in Liferay with ChatGPT.
 
-## Exercise Three: Generating Content with ChatGPT
+<!--Exercise 11a-->
+## Exercise: Generating Content with ChatGPT
 
 You may have noticed that web content articles include the *AI Creator* button for generating content using ChatGPT. Using this feature requires a valid API key.
 
@@ -166,7 +169,5 @@ Great! You've used ChatGPT to generate web content articles.
 This concludes *Creating Clarity’s Web Content*. Now let’s take a look at how you can organize your content in Liferay.
 
 Next Up: [Organizing Clarity’s Content](./organizing-claritys-content.md)
-
-
 
 <!-- TODO: Add Additional Resources section. -->

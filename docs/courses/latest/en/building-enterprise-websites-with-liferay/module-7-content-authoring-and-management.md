@@ -1,4 +1,13 @@
 ---
+toc:
+- ./module-7-content-authoring-and-management/claritys-content-management-requirements.md
+- ./module-7-content-authoring-and-management/managing-claritys-digital-assets.md
+- ./module-7-content-authoring-and-management/creating-claritys-web-content.md
+- ./module-7-content-authoring-and-management/organizing-claritys-content.md
+- ./module-7-content-authoring-and-management/displaying-content-on-claritys-pages.md
+- ./module-7-content-authoring-and-management/creating-claritys-commerce-content.md
+- ./module-7-content-authoring-and-management/publishing-content-with-workflows.md
+- ./module-7-content-authoring-and-management/personalizing-experiences-for-claritys-users.md
 uuid: 995cbe20-0caf-478b-ae3c-edea06211e7c
 ---
 # Module 7: Content Authoring & Management
@@ -22,3 +31,54 @@ In the previous module, you learned about some of the tools, techniques, and bes
 Through the course of the module, you'll learn about the best practices that will help you choose the right tools to address Clarity's specific business requirements. Let’s take a closer look at these requirements.
 
 Up First: [Clarity’s Content Management Requirements](./module-7-content-authoring-and-management/claritys-content-management-requirements.md)
+
+::::{grid} 2
+:gutter: 3 3 3 3
+
+:::{grid-item-card}  Clarity's Content Management Requirements
+:link: ./module-7-content-authoring-and-management/claritys-content-management-requirements.md
+
+Learn about Clarity's content management requirements.
+:::
+
+:::{grid-item-card}  Managing Clarity's Digital Assets
+:link: ./module-7-content-authoring-and-management/managing-claritys-digital-assets.md
+
+Learn how to manage digital assets with asset libraries.
+:::
+
+:::{grid-item-card}  Creating Clarity's Web Content
+:link: ./module-7-content-authoring-and-management/creating-claritys-web-content.md
+
+Learn about web content structures and templates.
+:::
+
+:::{grid-item-card}  Organizing Clarity's Content
+:link: ./module-7-content-authoring-and-management/organizing-claritys-content.md
+
+Learn how to organize content with tags, categories, and collections.
+:::
+
+:::{grid-item-card}  Displaying Content on Clarity's Pages
+:link: ./module-7-content-authoring-and-management/displaying-content-on-claritys-pages.md
+
+Learn how to display content on web pages.
+:::
+
+:::{grid-item-card}  Creating Clarity's Commerce Content
+:link: ./module-7-content-authoring-and-management/creating-claritys-commerce-content.md
+
+Learn about catalogs, products, and channels.
+:::
+
+:::{grid-item-card}  Publishing Content with Workflows
+:link: ./module-7-content-authoring-and-management/publishing-content-with-workflows.md
+
+Learn about publications and workflow.
+:::
+
+:::{grid-item-card}  Personalizing Experiences for Clarity's Users
+:link: ./module-7-content-authoring-and-management/personalizing-experiences-for-claritys-users.md
+
+Learns about segments, experiences, and A/B testing.
+:::

@@ -35,7 +35,8 @@ While categories and tags make your content more accessible to users, you can al
 
     You can easily embed collections into your Liferay pages using dedicated out-of-the-box fragments like *Collection Display*. This streamlines the process of showcasing curated content within your website layout.
 
-## Exercise One: Auto-Tagging Content
+<!--Exercise 11b-->
+## Exercise: Auto-Tagging Content
 
 You can manually tag most Liferay assets, but manually tagging content can be time consuming. Liferay provides auto tagging features and integrations to simplify this process. By default, auto tagging is disabled.
 
@@ -87,7 +88,8 @@ To do this,
 
 1. Begin editing the article. In the right side menu, you should see tags set for the content.
 
-## Exercise Two: Creating a Vocabulary
+<!--Exercise 12a-->
+## Exercise: Creating a Vocabulary
 
 Liferay provides vocabularies for categorizing content, making it easier to find and display the content you need.
 
@@ -122,7 +124,8 @@ To do this,
 
 You now have a vocabulary to contain FAQ categories.
 
-## Exercise Three: Adding Categories to a Vocabulary
+<!--Exercise 12b-->
+## Exercise: Adding Categories to a Vocabulary
 
 After creating a vocabulary, you can add categories and subcategories to establish the desired organizational schema for your content.
 
@@ -152,7 +155,8 @@ To do this,
 
 You have now defined and assigned categories to your FAQ web content.
 
-## Exercise Four: Creating a Manual Collection
+<!--Exercise 13a-->
+## Exercise: Creating a Manual Collection
 
 ILiferay Collections are lists of content items that you can showcase in your site pages. You can group different content types together, making it easier to find and display related items. Each list can be defined manually or dynamically.
 
@@ -229,7 +233,8 @@ To do this,
 
 Great! You created a manual collection and displayed it in Clarity's Home page. Next, you'll learn how to create a dynamic collection.
 
-## Exercise Five: Creating a Dynamic Collection
+<!--Exercise 13b-->
+## Exercise: Creating a Dynamic Collection
 
 Having categorized your FAQ web content articles earlier, here you'll use those categories to build dynamic FAQ collections as Walter Douglas.
 

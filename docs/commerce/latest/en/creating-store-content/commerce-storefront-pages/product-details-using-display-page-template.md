@@ -7,6 +7,7 @@ taxonomy-category-names:
 - Liferay PaaS
 - Liferay SaaS
 ---
+
 # Product Details - Using Display Page Template
 
 Accelerators like Minium and Speedwell have a product details page that uses the product details widget. Instead of using the product details widget on a widget page, you can use a display page template to create the same page. This gives you more flexibility to customize individual elements as well as improve maintainability.
@@ -41,7 +42,7 @@ This creates the new display page template for products and opens it in edit mod
 
 1. Search for the Image Gallery fragment and drag and drop it into the first module.
 
-1. Search for the Heading fragment and drag and drop it in the second module.
+1. Search for the Heading fragment and drag and drop it into the second module.
 
 1. In the Browser tab on your left, find the Heading fragment and rename it to *Product Name*.
 
@@ -51,21 +52,21 @@ This creates the new display page template for products and opens it in edit mod
 
 1. Search for the Availability fragment and drag and drop it below the product name.
 
-1. In the Styles tab on your right, set the Margin Bottom to `3` tokens or `16px`.
+1. In the Styles tab on the right, set the Margin Bottom to `3` tokens or `16px`.
 
 1. Drag and drop a grid fragment below the availability fragment.
 
-1. In the General tab on your right, set the Number of Modules to `2` for the grid.
+1. In the General tab on the right, set the Number of Modules to `2` for the grid.
 
-1. In the Styles tab on your right, set the Margin Bottom to `3` tokens or `16px`.
+1. In the Styles tab on the right, set the Margin Bottom to `3` tokens or `16px`.
 
-1. Resize the grid so that the first module has two columns and the second has the remaining.
+1. Resize the grid so that the first module has two columns and the second has the rest.
 
 1. Drag and drop a paragraph fragment inside the first module.
 
 1. In the Browser tab on your left, find the Paragraph fragment and rename it to *Product Fields*.
 
-1. Edit the paragraph fragment and enter the following:
+1. Edit the paragraph fragment and enter the following content:
 
    ```
    STOCK:

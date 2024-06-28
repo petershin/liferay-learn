@@ -1,24 +1,34 @@
 ---
+toc:
+  - ./troubleshooting/troubleshooting-tools-and-resources.md
+  - ./troubleshooting/reading-liferay-cloud-service-logs.md
+  - ./troubleshooting/shell-access.md
+  - ./troubleshooting/troubleshooting-services.md
+  - ./troubleshooting/disaster-recovery-overview.md
+  - ./troubleshooting/configuring-cross-region-disaster-recovery.md
+  - ./troubleshooting/self-healing.md
+  - ./troubleshooting/liferay-cloud-platform-status.md
+  - ./troubleshooting/creating-thread-and-heap-dumps.md
 taxonomy-category-names:
 - Cloud
 - Cloud Platform Administration
 - Liferay PaaS
-uuid: 265b7264-198d-4640-8c2a-52681e2a7994
+uuid: 5f119685-91e2-497e-8164-f0d184b7a31e
 ---
 # Troubleshooting Tools and Resources
 
 The ability to quickly diagnose and resolve technical issues is vital. Familiarize yourself with the available tools and resources for troubleshooting problems in your Liferay Cloud projects:
 
-* [Application Metrics](#application-metrics)
-* [Real-Time Alerts](#real-time-alerts)
-* [Environment Activities](#environment-activities)
-* [Environment Logs](#environment-logs)
-* [Shell Access](#shell-access)
-* [Self-Healing](#self-healing)
-* [Disaster Recovery](#disaster-recovery)
-* [Liferay Cloud Platform Status](#liferay-cloud-platform-status)
-* [Support Access](#support-access)
-* [Help Center](#help-center)
+- [Application Metrics](#application-metrics)
+- [Real-Time Alerts](#real-time-alerts)
+- [Environment Activities](#environment-activities)
+- [Environment Logs](#environment-logs)
+- [Shell Access](#shell-access)
+- [Self-Healing](#self-healing)
+- [Disaster Recovery](#disaster-recovery)
+- [Liferay Cloud Platform Status](#liferay-cloud-platform-status)
+- [Support Access](#support-access)
+- [Help Center](#help-center)
 
 With these tools and resources, you can track project activities, configure services, resolve technical issues, and more.
 
@@ -63,9 +73,9 @@ Environment logs are crucial for diagnosing and resolving technical issues in a 
 
 Application, status, and build logs are provided for each Liferay Cloud Service:
 
-* **Application Logs**: These logs list runtime information generated after the application is running and accessed by users.
-* **Status Logs**: These logs list orchestration layer information from the Kubernetes cluster.
-* **Build Logs**: These logs list build information generated as the application boots up.
+- **Application Logs**: These logs list runtime information generated after the application is running and accessed by users.
+- **Status Logs**: These logs list orchestration layer information from the Kubernetes cluster.
+- **Build Logs**: These logs list build information generated as the application boots up.
 
 ![View logs via the Logs page in the Liferay Cloud console](./troubleshooting-tools-and-resources/images/04.png)
 
@@ -95,8 +105,8 @@ The self-healing functionality of Liferay Cloud detects if a service or applicat
 
 Liferay Cloud offers two probes used in conjunction to manage applications:
 
-* **Liveness Probe**: This probe indicates whether the service is running.
-* **Readiness Probe**: This probe indicates whether the service is ready to receive requests.
+- **Liveness Probe**: This probe indicates whether the service is running.
+- **Readiness Probe**: This probe indicates whether the service is ready to receive requests.
 
 See [Self-Healing](./self-healing.md) for more information about configuring each probe.
 
@@ -104,7 +114,7 @@ See [Self-Healing](./self-healing.md) for more information about configuring eac
 
 In the event of a disaster, Liferay Cloud offers two strategies for project recovery: Automatic and Cross-Region.
 
-Liferay Cloud's automatic disaster recovery strategy replicates services between three availability zones within the same region. If an availability zone becomes unavailable, the load balancer will automatically route to the remaining availability zones without the need for user action.
+Liferay Cloud's automatic disaster recovery strategy replicates services between three availability zones within the same region. If an availability zone becomes unavailable, the load balancer routes to the remaining availability zones automatically without the need for user action.
 
 However, in a cross-region disaster, user intervention is required. To learn more about cross-region disaster recovery tools and processes, see [Configuring Cross Region Disaster Recovery](./configuring-cross-region-disaster-recovery.md).
 
@@ -151,7 +161,7 @@ When submitting a ticket, please provide information regarding the build images 
 
 ## Related Topics
 
-* [Liferay Cloud Support Overview](https://help.liferay.com/hc/en-us/articles/360030208451-DXP-Cloud-Support-Overview)
-* [Liferay Cloud Knowledge Base](https://help.liferay.com/hc/en-us/categories/360001132872)
-* [Liferay Cloud Announcements](https://help.liferay.com/hc/en-us/categories/360001192512)
-* [Support Access](../liferay-cloud-support/support-access.md)
+- [Liferay Cloud Support Overview](https://help.liferay.com/hc/en-us/articles/360030208451-DXP-Cloud-Support-Overview)
+- [Liferay Cloud Knowledge Base](https://help.liferay.com/hc/en-us/categories/360001132872)
+- [Liferay Cloud Announcements](https://help.liferay.com/hc/en-us/categories/360001192512)
+- [Support Access](../liferay-cloud-support/support-access.md)

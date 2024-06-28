@@ -7,20 +7,20 @@ Your current DXP installation's OSGi configurations (7.0+) and properties (such 
 
 ## Overview
 
-* [Migrating Liferay Home](#migrating-liferay-home)
-* [Updating Settings for the Database Upgrade](#updating-settings-used-by-the-database-upgrade)
-* [Migrating Portal Properties](#migrating-portal-properties)
+- [Migrating Liferay Home](#migrating-liferay-home)
+- [Updating Settings for the Database Upgrade](#updating-settings-used-by-the-database-upgrade)
+- [Migrating Portal Properties](#migrating-portal-properties)
 
 ## Migrating Liferay Home and Application Server Files
 
 1. Merge the [Liferay Home files](../maintaining-a-liferay-installation/backing-up.md#liferay-home) and [application server files](../maintaining-a-liferay-installation/backing-up.md#application-server) that you have added and edited from your [backup](../maintaining-a-liferay-installation/backing-up.md) to your installation. The files may include but are not limited to these:
 
-    * `/license/*`: Activation keys. (Subscription)
-    * `/log/*`: Log files.
-    * `/osgi/configs/*.config`: OSGi configuration files.
-    * `portal-*.properties`: Portal properties files, such as `portal-ext.properties`.
-    * Application server files: Modified scripts and configuration files.
-    * `web.xml`: Portal web application descriptor.
+   - `/license/*`: Activation keys. (Subscription)
+   - `/log/*`: Log files.
+   - `/osgi/configs/*.config`: OSGi configuration files.
+   - `portal-*.properties`: Portal properties files, such as `portal-ext.properties`.
+   - Application server files: Modified scripts and configuration files.
+   - `web.xml`: Portal web application descriptor.
 
 1. Replace the new installation's `[Liferay Home]/data` folder with the `[Liferay Home]/data` folder from your backup.
 
@@ -32,12 +32,11 @@ Upgrade processes in DXP and in some Marketplace apps use portal properties and 
 
 Here are the settings updates DXP upgrade processes require:
 
-* [Database driver](#database-drivers)
-* Document library store implementation name (See [Updating the File Store](./reference/file-store-updates.md#updating-the-store-implementation-class-name))
+- [Database driver](#database-drivers)
+- Document library store implementation name (See [Updating the File Store](./reference/file-store-updates.md#updating-the-store-implementation-class-name))
 
-```{important}
-Check your Marketplace apps and custom code for settings updates they require.
-```
+!!! important
+    Check your Marketplace apps and custom code for settings updates they require.
 
 ### Database Drivers
 
@@ -53,25 +52,24 @@ See the [Database Templates](../reference/database-templates.md) for more driver
 
 ## Migrating Portal Properties
 
-```{important}
-If you've overridden the `locales` [Portal Property](../../installation-and-upgrades/reference/portal-properties.md), override it in the new installation before upgrading. This assures upgrading data for all of your locales.
-```
+!!! important
+    If you've overridden the `locales` [Portal Property](../../installation-and-upgrades/reference/portal-properties.md), override it in the new installation before upgrading. This assures upgrading data for all of your locales.
 
 The properties discussed here can be updated after database upgrade. Migrating properties involves these actions:
 
-* Updating your `liferay.home` property, if you changed it
-* Using [Blade CLI](../../liferay-development/tooling/blade-cli/installing-and-updating-blade-cli.md) to report property changes
-* Converting properties to OSGi configurations
-* Special property migration considerations
+- Updating your `liferay.home` property, if you changed it
+- Using [Blade CLI](../../liferay-development/tooling/blade-cli.md) to report property changes
+- Converting properties to OSGi configurations
+- Special property migration considerations
 
 ### Using Blade CLI to Report Incompatible Properties
 
-The [Blade CLI](../../liferay-development/tooling/blade-cli/installing-and-updating-blade-cli.md) tool's `upgradeProps` command reports changes between portal properties files. The tool reports these types of changes.
+The [Blade CLI](../../liferay-development/tooling/blade-cli.md) tool's `upgradeProps` command reports changes between portal properties files. The tool reports these types of changes.
 
-* Properties that cause exceptions, if not updated.
-* Properties moved to a module `portal.properties` file.
-* Properties moved to OSGi configuration.
-* Properties not found in the new DXP version.
+- Properties that cause exceptions, if not updated.
+- Properties moved to a module `portal.properties` file.
+- Properties moved to OSGi configuration.
+- Properties not found in the new DXP version.
 
 In many cases, the `upgradeProps` command explains the required update or references more information on the property change.
 
@@ -118,9 +116,8 @@ rootDir="{document_library_path}"
 
 Put the `.config` files in a folder called `[Liferay Home]/osgi/configs`.
 
-```{tip}
-The Control Panel's *System Settings* screens (under *Configuration*) manage the OSGi Config Admin values. These screens are the most accurate way to create ``.config`` files. Find the screen that configures the feature you want to configure, click *Save*, and then use the options button to [export the screen's configuration](../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md) to a `.config` file.
-```
+!!! tip
+    The Control Panel's *System Settings* screens (under *Configuration*) manage the OSGi Config Admin values. These screens are the most accurate way to create ``.config`` files. Find the screen that configures the feature you want to configure, click *Save*, and then use the options button to [export the screen's configuration](../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md) to a `.config` file.
 
 ### Special Property Migration Considerations
 
@@ -136,13 +133,12 @@ There are resources for migrating properties related to specific environments, L
 
 1. Liferay's image sprite framework is deprecated as of 7.2 and is disabled by default. The framework requires scanning plugins for image sprites. If you don't use the framework, there's no need for it to scan for images sprites. If you use the framework yourself, enable it by overriding the default `sprite.enabled` portal property (since 7.2) value with the following setting in your [`portal-ext.properties`](../reference/portal-properties.md) file.
 
-    ```properties
-    sprite.enabled=true
-    ```
-
-   ```{note}
-   You can build image sprites using any framework you like and deploy them in your plugins.
+   ```properties
+   sprite.enabled=true
    ```
+
+   !!! note
+       You can build image sprites using any framework you like and deploy them in your plugins.
 
 ## Next Steps
 

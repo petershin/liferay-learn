@@ -10,9 +10,8 @@ taxonomy-category-names:
 
 If you're in a development environment, you can interact with the module framework locally from the command line.
 
-```{warning}
-Gogo shell should only be run from the command line in development environments. In production environments, run Gogo shell in the Control Panel, as demonstrated in [Using the Gogo Shell](../using-the-gogo-shell.md) .
-```
+!!! warning
+    Gogo shell should only be run from the command line in development environments. In production environments, run Gogo shell in the Control Panel, as demonstrated in [Using the Gogo Shell](../using-the-gogo-shell.md) .
 
 ## Prerequisites
 
@@ -24,7 +23,7 @@ include-and-override=portal-developer.properties
 
 ## Executing Commands
 
-You can execute Gogo shell commands using [Blade CLI](../../../liferay-development/tooling/blade-cli/installing-and-updating-blade-cli.md) or a telnet session.
+You can execute Gogo shell commands using [Blade CLI](../../../liferay-development/tooling/blade-cli.md) or a telnet session.
 
 ### Using Blade CLI
 
@@ -50,16 +49,13 @@ You can execute commands in a `telnet` session:
 
 1. When you're done executing commands, execute the `disconnect` command to end the session.
 
-```{warning}
-DO NOT execute the following commands. They stop the module framework.
+!!! warning
+    DO NOT execute the following commands. They stop the module framework.
 
-`close`
-
-`exit`
-
-`shutdown`
-```
+    - `close`
+    - `exit`
+    - `shutdown`
 
 ## Conclusion
 
-Now that you know how to run Gogo shell from the command line, explore the available [Gogo shell commands](./gogo-shell-commands.md). If you need to use Gogo shell in a production environment, please see [Using the Gogo Shell](../using-the-gogo-shell.md).
+Now that you know how to run Gogo shell from the command line, explore the available [Gogo shell commands](./gogo-shell-commands.md). If you need Gogo shell in a production environment, see [Using the Gogo Shell](../using-the-gogo-shell.md).

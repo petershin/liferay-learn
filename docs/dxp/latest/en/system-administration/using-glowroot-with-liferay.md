@@ -24,7 +24,7 @@ Enable Glowroot with the `GLOWROOT_ENABLED` environment variable set to `true`. 
 
 `docker run -e GLOWROOT_ENABLED=true -it -m 8g -p 8080:8080 liferay/dxp:latest`
 
-If using a Tomcat bundle, run Glowroot from the command line. Navigate to your bundle's `$CATALINA_HOME/bin` folder. Then execute `./catalina.sh glowroot run`.
+If using a Tomcat bundle, run Glowroot from the command line. Navigate to your bundle's `$CATALINA_HOME/bin` folder. Then execute `./catalina.sh glowroot run` (or `catalina.bat glowroot run` on Windows).
 
 ## Accessing Glowroot
 

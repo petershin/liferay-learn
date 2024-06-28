@@ -41,7 +41,7 @@ The Overview tab's main area shows membership growth. As a marketer, you might w
 
 The Overview tab also shows the segment's criteria, interests, and distribution. Each one links to more details, or you can click on their respective tabs.
 
-To download this dashboard view as a PDF file, click *Download Reports*. See [Downloading Reports](../../reference/downloading-reports.md) to learn more.
+To download this dashboard view as a PDF file, click *Download Reports*. See [Downloading Reports](../reference/downloading-reports.md) to learn more.
 
 ### Segment Membership Panel
 
@@ -88,7 +88,7 @@ If one of your segment's criteria is a custom event you've deleted, you are aler
 
 ![The missing criteria is replaced with a message](./segments/images/06.png)
 
-To learn more about different segment criteria, see [Creating Segments](./creating-segments.md).
+To learn more about different segment criteria, see [Creating Segments](./segments/creating-segments.md).
 
 ## Membership Tab
 
@@ -118,5 +118,5 @@ You've completed touring segment profiles. Creating segments and analyzing their
 
 ## Related Topics
 
-- [Personalizing Content with Segments](../../optimization/personalizing-content-with-segments.md)
-- [Understanding Interests](../individuals/understanding-interests.md)
+- [Personalizing Content with Segments](../optimization/personalizing-content-with-segments.md)
+- [Understanding Interests](./individuals/understanding-interests.md)

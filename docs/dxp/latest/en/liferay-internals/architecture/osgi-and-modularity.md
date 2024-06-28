@@ -5,15 +5,23 @@ uuid: 0683bfca-d23c-44ff-97ae-a7762a414350
 
 Modularity makes writing software, especially as a team, fun! Here are some benefits to modular development on Liferay:
 
-* Liferay's runtime framework is lightweight, fast, and secure.
-* The framework uses the [OSGi](https://www.osgi.org/resources/what-is-osgi/) standard. If you have experience using OSGi with other projects, you can apply your existing knowledge.
-* Modules publish services to and consume services from a service registry. Service contracts are loosely coupled from service providers and consumers, and the registry manages the contracts automatically.
-* Modules' dependencies are managed automatically by the container, dynamically (no restart required). 
-* The container manages [module life cycles](./module-lifecycle.md) dynamically. Modules can be installed, started, updated, stopped, and uninstalled while Liferay is running, making deployment a snap.
-* Only a module's classes whose packages are explicitly [exported](../fundamentals/exporting-packages.md) are publicly visible; OSGi hides all other classes by default.
-* Modules and packages are [semantically versioned](../fundamentals/semantic-versioning.md) and declare dependencies on specific versions of other packages. This allows two applications that depend on different versions of the same packages to each depend on their own versions of the packages. 
-* Team members can develop, test, and improve modules in parallel.
-* You can use your existing developer tools and environment to develop modules.
+- Liferay's runtime framework is lightweight, fast, and secure.
+
+- The framework uses the [OSGi](https://www.osgi.org/resources/what-is-osgi/) standard. If you have experience using OSGi with other projects, you can apply your existing knowledge.
+
+- Modules publish services to and consume services from a service registry. Service contracts are loosely coupled from service providers and consumers, and the registry manages the contracts automatically.
+
+- Modules' dependencies are managed automatically by the container, dynamically (no restart required). 
+
+- The container manages [module life cycles](./module-lifecycle.md) dynamically. Modules can be installed, started, updated, stopped, and uninstalled while Liferay is running, making deployment a snap.
+
+- Only a module's classes whose packages are explicitly [exported](../fundamentals/exporting-packages.md) are publicly visible; OSGi hides all other classes by default.
+
+- Modules and packages are [semantically versioned](../fundamentals/semantic-versioning.md) and declare dependencies on specific versions of other packages. This allows two applications that depend on different versions of the same packages to each depend on their own versions of the packages. 
+
+- Team members can develop, test, and improve modules in parallel.
+
+- You can use your existing developer tools and environment to develop modules.
 
 There are many benefits to modular software development with OSGi, and we can only scratch the surface here. Once you start developing modules, you might find it hard to go back to developing any other way.
 
@@ -226,10 +234,10 @@ This most basic of examples should make it clear that module-based development i
 
 If you look at a typical application from Liferay's source, you'll generally find at least four modules: 
 
-* API module
-* Service (provider) module
-* Test module
-* Web (consumer) module
+- API module
+- Service (provider) module
+- Test module
+- Web (consumer) module
 
 This is exactly what you'll find for some smaller applications, like the Mentions application that lets users mention other users with the `@username` nomenclature in comments, blogs, or other applications. Larger applications like the Documents and Media library have more modules. In the case of the Documents and Media library, there are separate modules for different document storage backends. In the case of the Wiki, there are separate modules for different Wiki engines. 
 
@@ -239,8 +247,8 @@ Are you excited yet? Are you ready to start developing? Here are some resources 
 
 ## Related Topics
 
-* [OSGi Alliance](https://www.osgi.org/)
-* [Getting started with OSGi at OSGi EnRoute](https://enroute.osgi.org/)
-* [Building Applications](../../liferay-development/building-applications/developing-a-java-web-application.md)
-* [Developer Tools Overview](../../liferay-development/tooling/developer-tools-overview.md)
-* [Starting with a Docker Image](../../getting-started/starting-with-a-docker-image.md)
+- [OSGi Alliance](https://www.osgi.org/)
+- [Getting started with OSGi at OSGi EnRoute](https://enroute.osgi.org/)
+- [Building Applications](../../liferay-development/building-applications/developing-a-java-web-application.md)
+- [Developer Tools](../../liferay-development/tooling.md)
+- [Starting with a Docker Image](../../getting-started/starting-with-a-docker-image.md)

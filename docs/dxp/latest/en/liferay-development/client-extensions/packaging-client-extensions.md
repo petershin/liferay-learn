@@ -34,9 +34,8 @@ This is a LUFFA's structure:
 
 ## `batch`
 
-```{note}
-The `batch` folder is only required by [batch client extension projects](../importing-exporting-data.md).
-```
+!!! note
+    The `batch` folder is only required by [batch client extension projects](../importing-exporting-data.md).
 
 The data entities in a batch client extension are `*.batch-engine-data.json` files inside a `batch/` folder in the built LUFFA. These files can be in any folder structure within the `batch/` folder.
 
@@ -44,17 +43,15 @@ You can place any number of `*.batch-engine-data.json` files under the root leve
 
 ## `*.client-extension-config.json`
 
-```{note}
-At least one `*.client-extension-config.json` file is required in each LUFFA.
-```
+!!! note
+    At least one `*.client-extension-config.json` file is required in each LUFFA.
 
 At the root of the LUFFA are one or more `*.client-extension-config.json` ([OSGi Configuration Resource Format](https://docs.osgi.org/specification/osgi.cmpn/7.0.0/service.configurator.html#d0e131566)) files. They define how your client extensions are structured in the archive. Usually these files are produced during the build process based on your `client-extension.yaml` file's contents. The conversion from YAML to JSON is specified by the [Liferay workspace plugin](https://repo1.maven.org/maven2/com/liferay/com.liferay.gradle.plugins.workspace/), and is not a 1:1 mapping.
 
 ## `Dockerfile`
 
-```{note}
-At least one Dockerfile is required in each LUFFA.
-```
+!!! note
+    At least one Dockerfile is required in each LUFFA.
 
 The build process automatically generates and packages a `Dockerfile` for [batch](../importing-exporting-data.md), [configuration](../configuration-as-code.md), and [frontend](../customizing-liferays-look-and-feel.md) client extensions.
 
@@ -163,9 +160,8 @@ See [Configuration via LCP.json](https://learn.liferay.com/w/liferay-cloud/refer
 
 ## `static`
 
-```{note}
-The `static` directory is only required by [frontend client extension projects](../customizing-liferays-look-and-feel.md).
-```
+!!! note
+    The `static` directory is only required by [frontend client extension projects](../customizing-liferays-look-and-feel.md).
 
 You can place any number of static resource files into the root level `static/` directory in the built LUFFA. Use any folder structure you like within the `static/` folder. These files are ignored if there is no frontend client extension defined in your project's `client-extension.yaml` file.
 
@@ -175,5 +171,5 @@ You can include additional resources in the built LUFFA for your microservice cl
 
 ## Related Topics
 
-* [Working with Client Extensions](./working-with-client-extensions.md)
-* [Liferay Workspace](../tooling/liferay-workspace/what-is-liferay-workspace.md)
+- [Working with Client Extensions](./working-with-client-extensions.md)
+- [Liferay Workspace](../tooling/liferay-workspace.md)

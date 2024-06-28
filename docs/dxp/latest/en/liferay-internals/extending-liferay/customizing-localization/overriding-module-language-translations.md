@@ -152,7 +152,7 @@ The class overrides these methods:
 
 **`getKeys`:** Returns an `Enumeration` of the resource bundle's keys.
 
-Your resource bundle service component redirects the default language translations to your module's language translatio overrides.
+Your resource bundle service component redirects the default language translations to your module's language translation overrides.
 
 **Note:** Module language translation overrides for multiple locales require a separate resource bundle class for each locale. For example, the tutorial code has one for English, Japanese, and Portuguese. Each resource bundle must specify its locale in the `language.id` component property definition and in the language file qualified name parameter. For example, here is what they look like for the Japanese locale.
 
@@ -173,7 +173,7 @@ Resource bundle assignment:
 
 ## Prioritize Your Module's Resource Bundle
 
-For the target module to use your custom language translations, you must specify your resource bundle in the OSGI manifest header. List your module first to prioritize its resource bundle over the target module resource bundle. This aggregates the two resources together. Here's an example of our tutorial module `com.acme.e6u7.impl` prioritizing its resource bundle over the target module `com.liferay.blogs.web`'s resource bundle:
+For the target module to use your custom language translations, you must specify your resource bundle in the OSGi manifest header. List your module first to prioritize its resource bundle over the target module resource bundle. This aggregates the two resources together. Here's an example of our tutorial module `com.acme.e6u7.impl` prioritizing its resource bundle over the target module `com.liferay.blogs.web`'s resource bundle:
 
 ```{literalinclude} ./overriding-module-language-translations/resources/liferay-e6u7.zip/e6u7-impl/bnd.bnd
 :language: properties
@@ -205,7 +205,7 @@ Search the results for resource bundle aggregate services whose ranking is highe
 
 ## Related Topics
 
-- [Changing Translations with Language Override](../../system-administration/configuring-liferay/changing-translations-with-language-override.md)
+- [Changing Translations with Language Override](../../../system-administration/configuring-liferay/changing-translations-with-language-override.md)
 - [Using Localized Messages in an MVC Portlet](../../../liferay-development/building-applications/developing-a-java-web-application/using-mvc/using-localized-messages-in-an-mvc-portlet.md)
 - [Aggregating Resource Bundles](../../../liferay-development/building-applications/developing-a-java-web-application/using-mvc/using-localized-messages-in-an-mvc-portlet/aggregating-resource-bundles.md)
 - [Renamed Language Keys](../../../installation-and-upgrades/upgrading-liferay/reference/renamed-language-keys.md)

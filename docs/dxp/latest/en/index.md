@@ -96,7 +96,7 @@ Welcome to the official documentation for the latest versions (7.3 and 7.4+) of 
 :link: ./liferay-development.md
 
 [Building Applications with Objects](./liferay-development/objects.md)
-[Developer Tools Overview](./liferay-development/tooling/developer-tools-overview.md)
+[Developer Tools Overview](./liferay-development/tooling.md)
 [Client Extensions](./liferay-development/client-extensions.md)
 :::
 

@@ -2,6 +2,8 @@ API
 BBCode
 Gradle
 HAProxy
+Hikari
+JBoss
 JDKs
 JavaScript
 Liferay

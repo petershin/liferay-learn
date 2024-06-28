@@ -44,9 +44,16 @@ When the application server binaries have been installed, start the *Profile Man
 
 1. Click *Create...*, choose *Application Server*, and then click *Next*.
 
-1. Click the *Advanced* profile creation option and then click *Next*. Use the advanced profile to specify the values for settings such as the location of the profile and names of the profile, node and host, to assign specific ports, or to optionally choose whether to deploy the administrative console and sample application and also add web-server definitions for IBM HTTP Server. See the WebSphere documentation for more information about these options.
+1. Click the *Advanced* profile creation option and then click *Next*. Use the advanced profile to specify the values for settings such as 
+   - The location of the profile and names of the profile 
+   - Node and host 
+   - To assign specific ports 
+   - To choose whether to deploy the administrative console and sample application 
+   - To add web-server definitions for IBM HTTP Server 
 
-   ![Figure 1: Choose the Advanced profile option to specify your own settings.](./installing-on-websphere/images/01.png)
+   See the WebSphere documentation for more information about these options.
+
+   ![Choose the Advanced profile option to specify your own settings.](./installing-on-websphere/images/01.png)
 
 1. Check the box *Deploy the administrative console*. This enables a web-based UI for working with the application server. Skip the default applications. (Install these only on a development machine.) Click *Next*.
 
@@ -63,7 +70,7 @@ When the application server binaries have been installed, start the *Profile Man
 
 1. Once the certificates are generated, set a password for the keystore. Click *Next*.
 
-1. You can customize the ports this server profile uses. Be sure to choose ports that are open on the machine. When choosing ports, the wizard automatically detects existing WebSphere installations and if it finds activity, will increment ports by one.
+1. You can customize the ports this server profile uses. Be sure to choose open ports on the machine. When choosing ports, the wizard automatically detects existing WebSphere installations and if it finds activity, increments ports by one.
 
 1. Choose whether to start this profile when the machine starts. Click *Next*.
 
@@ -73,7 +80,7 @@ When the application server binaries have been installed, start the *Profile Man
 
 WebSphere then creates the profile and finishes with a message indicating that the profile was created successfully.
 
-![Figure 2: Example of the settings before creating the profile.](./installing-on-websphere/images/02.png)
+![WebSphere shows a summary of the settings you chose before creating the profile.](./installing-on-websphere/images/02.png)
 
 Lastly, shut down the application server.
 
@@ -108,7 +115,7 @@ As a baseline, add `maximumHeapSize="2560"` inside the `jvmEntries` tag. For exa
 !!! note
     After installing DXP, these configurations (including these JVM options) can be further tuned for improved performance. Please see [Tuning Liferay](../../setting-up-liferay/tuning-liferay.md) and [Tuning Your JVM](../../setting-up-liferay/tuning-your-jvm.md) for more information.
 
-You can set the UTF-8 properties in the `<jvmEntries genericJvmArguments=.../>` attribute in `server.xml`. This is required or else international characters will not be parsed correctly. Increase the maximum and minimum heap sizes there too. Add the following inside the `jvmEntries` tag:
+You can set the UTF-8 properties in the `<jvmEntries genericJvmArguments=.../>` attribute in `server.xml`. This is required, or international characters are not parsed correctly. Increase the maximum and minimum heap sizes there too. Add the following inside the `jvmEntries` tag:
 
 ```xml
 <jvmEntries xmi:id="JavaVirtualMachine_1183122130078" ...genericJvmArguments="-Dfile.encoding=UTF-8 -Djava.locale.providers=JRE,COMPAT,CLDR -Djava.net.preferIPv4Stack=true -Dlog4j2.formatMsgNoLookups=true -Duser.timezone=GMT -Xms6144m -Xmx6144m -XX:MaxNewSize=1536m -XX:MaxMetaspaceSize=768m -XX:MetaspaceSize=768m -XX:NewSize=1536m -XX:SurvivorRatio=7">
@@ -188,7 +195,7 @@ By this point, the following steps should be completed:
 
 When you start Liferay, it installs and starts a default [sidecar](../../../using-search/installing-and-upgrading-a-search-engine/elasticsearch/using-the-sidecar-or-embedded-elasticsearch.md) Elasticsearch server. When installing on WebSphere you should set up a remote Elasticsearch server right from the start. See [Getting Started with Elasticsearch](../../../using-search/installing-and-upgrading-a-search-engine/elasticsearch/getting-started-with-elasticsearch.md).
 
-When Liferay DXP is configured (using `.config` files for the Elasticsearch connctor) and started with Elasticsearch already configured and running, the connection to Elasticsearch is activated.
+When Liferay DXP is configured (using `.config` files for the Elasticsearch connector) and started with Elasticsearch already configured and running, the connection to Elasticsearch is activated.
 
 ### Installing the DXP portlet.jar
 
@@ -253,7 +260,7 @@ If using WebSphere to manage the database connections, follow the instructions b
 
 1. Review the settings and click *Finish*. The final configuration should look like this:
 
-   ![Figure 4: Completed JDBC provider configurations.](./installing-on-websphere/images/04.png)
+   ![Completed JDBC provider configurations.](./installing-on-websphere/images/04.png)
 
 1. Click the new provider configuration when it appears in the table.
 1. Click *Data Sources* under *Additional Properties*.
@@ -270,7 +277,7 @@ If using WebSphere to manage the database connections, follow the instructions b
 
 1. Enter *user* into the search terms and click *Go*.
 
-   ![Figure 5: Modifying data source properties in WebSphere](././installing-on-websphere/images/05.png)
+   ![Modifying data source properties in WebSphere](././installing-on-websphere/images/05.png)
 
 1. Select the *user* property and give it the value of the user name to the database.
 
@@ -317,7 +324,7 @@ If you want to use WebSphere to manage the mail session, follow these steps:
 
 1. Click *Security &rarr; Global Security* and de-select *Use Java 2 security to restrict application access to local resources* if it is selected.
 
-   ![Figure 6: Applying Java security in the Mail Session](./installing-on-websphere/images/06.png)
+   ![Applying Java security in the Mail Session](./installing-on-websphere/images/06.png)
 
 1. Click *Apply*.
 
@@ -331,7 +338,7 @@ Note that it might be necessary to retrieve a SSL certificate from mail server a
 
 ### Verifying WebSphere Mail Provider
 
-To validate that the mail session has been configured correctly, there are a number of ways to test this once the WAR has been deployed, the server has started, and the user has signed in as the system administrator. One quick way to validate is to create a new user with a valid email account. The newly created user should receive an email notification. The logs should display that the SMTP server has been pinged with the correct port number listed.
+To validate that the mail session has been configured correctly, there are many ways to test this once the WAR has been deployed, the server has started, and the user has signed in as the system administrator. One quick way to validate is to create a new user with a valid email account. The newly created user should receive an email notification. The logs should display that the SMTP server has been pinged with the correct port number listed.
 
 ## Enable Cookies for HTTP Sessions
 
@@ -372,7 +379,7 @@ This occurs because DXP cannot use the HTTPS cookie when using HTTP. The end res
 
 1. When DXP has installed, click *Save to Master Configuration*.
 
-   ![Figure 7: Review the deployment options before deploying.](./installing-on-websphere/images/07.png)
+   ![Review the deployment options before deploying.](./installing-on-websphere/images/07.png)
 
 DXP has been installed. There are a few more required steps before starting DXP.
 

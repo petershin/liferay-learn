@@ -17,7 +17,7 @@ The Tomcat Bundle includes the Apache Tomcat application server with Liferay DXP
 
 ## Prerequisites
 
-As of {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+`, a Java JDK 11, 17, or 21 is required. See [the compatibility matrix](https://help.liferay.com/hc/en-us/articles/360049238151) to choose a JDK. See [JVM Configuration](../reference/jvm-configuration.md) for recommended settings. For earlier version, use JDK 8 or 11.
+As of {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+`, a Java JDK 11, 17, or 21 is required. See [the compatibility matrix](https://help.liferay.com/hc/en-us/articles/360049238151) to choose a JDK. See [JVM Configuration](../reference/jvm-configuration.md) for recommended settings. For earlier versions, use JDK 8 or 11.
 
 ## Download
 

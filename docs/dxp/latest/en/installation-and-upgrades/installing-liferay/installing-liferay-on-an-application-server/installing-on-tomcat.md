@@ -24,7 +24,7 @@ No matter how you configure Tomcat, you must also download and install these fil
 - OSGi Dependencies ZIP file
 - Dependencies ZIP file (DXP 7.3 and earlier)
 
-As of {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+`, Liferay DXP/Portal requires a Java JDK 11, 17, or 21 (prior versions support only JDKs 8 and 11).
+As of {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+`, Liferay DXP/Portal requires a Java JDK 11, 17, or 21 (prior versions support JDKs 8 and 11).
 
 !!! note
     See [the compatibility matrix](https://help.liferay.com/hc/en-us/articles/360049238151) for information on supported JDKs, databases, and environments. See [JVM Configuration](../../reference/jvm-configuration.md) for recommended JVM settings.
@@ -39,7 +39,7 @@ The Tomcat server parent folder is [*Liferay Home*](../../reference/liferay-home
 
 ## Installing Dependencies
 
-DXP depends on many JARs included in Liferay-Tomcat bundle. Some of the bundle's JARs are not strictly required but can still be useful. If you're not using a Tomcat bundle, you'll use the *OSGi Dependencies* archive you downloaded and any third-party JAR dependencies as described below.
+DXP depends on many JARs included in Liferay-Tomcat bundle. Some of the bundle's JARs are not strictly required but can still be useful. If you're not using a Tomcat bundle, you must use the *OSGi Dependencies* archive you downloaded and any third-party JAR dependencies as described below.
 
 1. Unzip the OSGi Dependencies ZIP file contents in the `[Liferay Home]/osgi` folder (create this folder if it doesn't exist). Liferay's OSGi runtime depends on these modules.
 
@@ -194,7 +194,7 @@ Continue configuring Tomcat.
    chmod a+x *.sh
    ```
 
-Liferay's Tomcat support JAR is part of the DXP web application. DXP uses the JAR's file scanner. The JAR needs to be in the common class loader for DXP to use it. Provide Catalina access to the file by opening your `$CATALINA_BASE/conf/catalina.properties` file and adding this value to the beginning of the `common.loader` property's comma-separated value list:
+Liferay's Tomcat support JAR is part of the DXP web application. DXP uses the JAR's file scanner. The JAR must be in the common class loader for DXP to use it. Provide Catalina access to the file by opening your `$CATALINA_BASE/conf/catalina.properties` file and adding this value to the beginning of the `common.loader` property's comma-separated value list:
 
 ```properties
 "${catalina.home}/webapps/ROOT/WEB-INF/lib/support-tomcat.jar",

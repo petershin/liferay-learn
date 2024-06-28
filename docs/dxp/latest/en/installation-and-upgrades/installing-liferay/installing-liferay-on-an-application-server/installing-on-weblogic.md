@@ -7,13 +7,13 @@ taxonomy-category-names:
 ---
 # Installing on WebLogic
 
-If you are using WebLogic as your application server, it is *highly recommended* to install DXP to a WebLogic Managed server. A managed server can start and stop DXP quickly and can be converted to a cluster configuration. Here you'll install DXP to a Managed Server.
+If you are using WebLogic as your application server, it is *highly recommended* to install DXP to a WebLogic Managed server. A managed server can start and stop DXP quickly and can be converted to a cluster configuration. 
 
 ## Prerequisites
 
 Configure an Admin Server and a Managed Server following [WebLogic's documentation](http://www.oracle.com/technetwork/middleware/weblogic/documentation/index.html).
 
-As of {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+`, Liferay DXP/Portal requires a Java JDK 11, 17, or 21 (prior versions support only JDKs 8 and 11). See [the compatibility matrix](https://help.liferay.com/hc/en-us/articles/360049238151) to choose a JDK. See [JVM Configuration](../../reference/jvm-configuration.md) for recommended settings.
+As of {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+`, Liferay DXP/Portal requires a Java JDK 11, 17, or 21 (prior versions support JDKs 8 and 11). See [the compatibility matrix](https://help.liferay.com/hc/en-us/articles/360049238151) to choose a JDK. See [JVM Configuration](../../reference/jvm-configuration.md) for recommended settings.
 
 Download these files from the [Help Center](https://customer.liferay.com/downloads) (subscription) or from [Liferay Community Downloads](https://www.liferay.com/downloads-community):
 
@@ -79,7 +79,7 @@ Configure the JVM and other options in a `setUserOverridesLate` WebLogic startup
 
    `JAVA_OPTIONS` sets DXP's UTF-8 requirement, Lucene usage, and Aspect Oriented Programming via AspectJ.
 
-   `JAVA_PROPERTIES` also sets DXP's UTF-8 requirement. TODO use the lowercase one per liferay-portal?
+   `JAVA_PROPERTIES` also sets DXP's UTF-8 requirement. 
 
    !!! important
        DXP requires the application server JVM to use the `GMT` time zone and `UTF-8` file encoding.
@@ -147,7 +147,7 @@ DXP depends on OSGi modules (OSGi Dependencies ZIP) and a database driver.
 
 When you start Liferay, it installs and starts a default [sidecar](../../../using-search/installing-and-upgrading-a-search-engine/elasticsearch/using-the-sidecar-or-embedded-elasticsearch.md) Elasticsearch server. When installing on WebLogic you should set up a remote Elasticsearch server right from the start. See [Getting Started with Elasticsearch](../../../using-search/installing-and-upgrading-a-search-engine/elasticsearch/getting-started-with-elasticsearch.md).
 
-When Liferay DXP is configured (using `.config` files for the Elasticsearch connctor) and started with Elasticsearch already configured and running, the connection to Elasticsearch is activated.
+When Liferay DXP is configured (using `.config` files for the Elasticsearch connector) and started with Elasticsearch already configured and running, the connection to Elasticsearch is activated.
 
 ## Connect to Database
 

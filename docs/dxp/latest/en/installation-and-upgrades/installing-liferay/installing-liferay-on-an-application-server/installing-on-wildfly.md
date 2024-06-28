@@ -11,7 +11,7 @@ Installing on WildFly requires installing the DXP WAR, installing dependencies, 
 
 ## Prerequisites
 
-As of {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+`, Liferay DXP/Portal requires a Java JDK 11, 17, or 21 (prior versions support only JDKs 8 and 11). See [the compatibility matrix](https://help.liferay.com/hc/en-us/articles/360049238151) and [JVM Configuration](../../reference/jvm-configuration.md) for more information.
+As of {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+`, Liferay DXP/Portal requires a Java JDK 11, 17, or 21 (prior versions support JDKs 8 and 11). See [the compatibility matrix](https://help.liferay.com/hc/en-us/articles/360049238151) and [JVM Configuration](../../reference/jvm-configuration.md) for more information.
 
 Download these files from the [Help Center](https://customer.liferay.com/downloads) (subscription) or from [Liferay Community Downloads](https://www.liferay.com/downloads-community). Administrators must download the following:
 
@@ -48,7 +48,7 @@ For DXP 7.3 and earlier, follow these additional steps:
 
 1. Unzip the Dependencies ZIP file to a folder called `$WILDFLY_HOME/modules/com/liferay/portal/main` (create this folder if it doesn't exist).
 
-1. Create a file called `module.xml` in the `$WILDFLY_HOME/modules/com/liferay/portal/main` folder. In the file, declare resource-root elements with paths set to your database vendor's JAR file, the portal module, sand all of its required resources and dependencies:
+1. Create a file called `module.xml` in the `$WILDFLY_HOME/modules/com/liferay/portal/main` folder. In the file, declare resource-root elements with paths set to your database vendor's JAR file, the portal module, and all of its required dependencies:
 
    ```xml
    <?xml version="1.0"?>
@@ -336,7 +336,7 @@ If using WildFly to manage the data source, follow these steps:
    </subsystem>
    ```
 
-1. In a [`portal-ext.properties`](../../reference/portal-properties.md) file in the Liferay Home folder, specify the JNDi data source. For example,
+1. In a [`portal-ext.properties`](../../reference/portal-properties.md) file in the Liferay Home folder, specify the JNDI data source. For example,
 
    ```properties
    jdbc.default.jndi.name=java:jboss/datasources/ExampleDS

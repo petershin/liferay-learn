@@ -24,7 +24,7 @@ Delete files using the Documents and Media application.
 
 1. Check the checkbox for every file you wish to delete.
 
-1. Click the Trash icon (![Trash](../../../images/icon-app-trash.png)) at the top menu bar to *Delete* files.
+1. Click *Trash* (![Trash](../../../images/icon-app-trash.png)) at the top menu bar to Delete files.
 
 ![You can select multiple files and delete them.](deleting-files/images/02.png)
 

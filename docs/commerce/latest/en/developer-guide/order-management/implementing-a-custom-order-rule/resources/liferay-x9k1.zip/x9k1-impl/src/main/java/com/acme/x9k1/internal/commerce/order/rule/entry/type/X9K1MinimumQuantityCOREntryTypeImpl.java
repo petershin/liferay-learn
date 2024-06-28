@@ -5,10 +5,14 @@ import com.acme.x9k1.internal.commerce.order.rule.entry.type.util.X9K1MinimumQua
 import com.liferay.commerce.model.CommerceOrder;
 import com.liferay.commerce.model.CommerceOrderItem;
 import com.liferay.commerce.order.rule.entry.type.COREntryType;
+import com.liferay.commerce.order.rule.entry.type.COREntryTypeItem;
 import com.liferay.commerce.order.rule.model.COREntry;
 import com.liferay.petra.string.StringBundler;
 import com.liferay.portal.kernel.exception.PortalException;
 import com.liferay.portal.kernel.language.LanguageUtil;
+import com.liferay.portal.kernel.util.BigDecimalUtil;
+
+import java.math.BigDecimal;
 
 import java.util.List;
 import java.util.Locale;
@@ -28,11 +32,21 @@ public class X9K1MinimumQuantityCOREntryTypeImpl implements COREntryType {
 	public boolean evaluate(COREntry corEntry, CommerceOrder commerceOrder)
 		throws PortalException {
 
-		if (_getMinimumQuantity(corEntry) > _getOrderQuantity(commerceOrder)) {
+		if (BigDecimalUtil.gt(
+				BigDecimal.valueOf(_getMinimumQuantity(corEntry)),
+				_getOrderQuantity(commerceOrder))) {
+
 			return false;
 		}
 
 		return true;
+	}
+
+	@Override
+	public boolean evaluate(
+		COREntry corEntry, List<COREntryTypeItem> corEntryTypeItems) {
+
+		throw new UnsupportedOperationException();
 	}
 
 	@Override
@@ -44,13 +58,15 @@ public class X9K1MinimumQuantityCOREntryTypeImpl implements COREntryType {
 
 		sb.append("Order quantity is less than the minimum quantity ");
 
-		int minimumQuantity = _getMinimumQuantity(corEntry);
+		Double minimumQuantity = _getMinimumQuantity(corEntry);
 
 		sb.append(minimumQuantity);
 
 		sb.append(". Add ");
 
-		int delta = minimumQuantity - _getOrderQuantity(commerceOrder);
+		Double delta = BigDecimalUtil.subtract(
+			BigDecimal.valueOf(minimumQuantity),
+			_getOrderQuantity(commerceOrder));
 
 		sb.append(delta);
 
@@ -75,18 +91,25 @@ public class X9K1MinimumQuantityCOREntryTypeImpl implements COREntryType {
 		return LanguageUtil.get(locale, "x9k1-minimum-order-quantity");
 	}
 
-	private int _getMinimumQuantity(COREntry corEntry) {
+	@Override
+	public boolean isActive() {
+		return true;
+	}
+
+	private Double _getMinimumQuantity(COREntry corEntry) {
 		return X9K1MinimumQuantityUtil.getMinimumQuantity(corEntry);
 	}
 
-	private int _getOrderQuantity(CommerceOrder commerceOrder) {
-		int orderQuantity = 0;
+	private BigDecimal _getOrderQuantity(CommerceOrder commerceOrder) {
+		BigDecimal orderQuantity = BigDecimal.ZERO;
 
 		List<CommerceOrderItem> commerceOrderItems =
 			commerceOrder.getCommerceOrderItems();
 
 		for (CommerceOrderItem commerceOrderItem : commerceOrderItems) {
-			orderQuantity = orderQuantity + commerceOrderItem.getQuantity();
+			orderQuantity = BigDecimal.valueOf(
+				BigDecimalUtil.add(
+					orderQuantity, commerceOrderItem.getQuantity()));
 		}
 
 		return orderQuantity;

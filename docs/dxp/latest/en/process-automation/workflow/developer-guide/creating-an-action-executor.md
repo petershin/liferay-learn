@@ -66,7 +66,7 @@ Then, follow these steps:
    ```
 
 !!! note
-   For convenience, the `activate` method of the `ActionExecutor` autoloaded a workflow definition called E5C9 Single Approver. This code achieved the same thing as navigating to the Workflow Process Builder and uploading a workflow definition. See [Uploading a New Workflow Definition](../designing-and-managing-workflows/managing-workflows.md#uploading-a-new-workflow-definition).
+   For convenience, the `activate` method of the `ActionExecutor` auto-loaded a workflow definition called E5C9 Single Approver. This code achieved the same thing as navigating to the Workflow Process Builder and uploading a workflow definition. See [Uploading a New Workflow Definition](../designing-and-managing-workflows/managing-workflows.md#uploading-a-new-workflow-definition).
 
 ## Test the Action Executor
 
@@ -98,7 +98,7 @@ If you assign the Single Approver workflow to Blogs Entries, you can see it work
 
 The Acme E5C9 Implementation project extracts the status-setting logic of the Single Approver definition's workflow scripts into its single Java class, `E5C9ActionExecutor`.
 
-In addition to the action executor, the project includes and autoloads a workflow definition called the E5C9 Single Approver, which has the same logic as the default Single Approver but uses the action executor class's logic instead of Groovy scripting directly in the workflow definition.
+In addition to the action executor, the project includes and auto-loads a workflow definition called the E5C9 Single Approver, which has the same logic as the default Single Approver but uses the action executor class's logic instead of Groovy scripting directly in the workflow definition.
 
 ```{literalinclude} ./creating-an-action-executor/resources/liferay-e5c9.zip/e5c9-impl/src/main/resources/com/acme/e5c9/internal/workflow/kaleo/runtime/scripting/internal/action/dependencies/e5c9-workflow-definition.xml
    :dedent: 4

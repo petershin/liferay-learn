@@ -9,9 +9,8 @@ uuid: 8f1f6a94-0db3-4a8a-9f6c-57783ca8ac0e
 ---
 # Tracking Custom Assets
 
-```{note}
-Using [event tracking](../events/tracking-events.md) is the recommended way to track your custom assets.
-```
+!!! note
+    Using [event tracking](../events/tracking-events.md) is the recommended way to track your custom assets.
 
 Liferay Analytics Cloud can detect and analyze built-in Liferay DXP assets like blogs, documents and media, forms, and web content. If you have custom assets on your site and want Analytics Cloud to track them, use HTML attributes. Analytics Cloud's JavaScript plugin detects these HTML attributes, tracks user interaction, and shows the data in their respective asset type dashboards.
 
@@ -33,16 +32,15 @@ The Analytics Cloud JavaScript plugin contains the following events that you can
 
 You must specify the following HTML attributes to enable tracking for your custom assets.
 
-| name | type | description |
-|:--- |:--- |:--- |
-| `data-analytics-asset-action` | preview or download | Preview - sends a preview event. Download - sends a download event. Note, this applies only for documents and media or custom assets.|
-| `data-analytics-asset-id` | string | A unique identifier for each custom asset. The string must not contain spaces. |
-| `data-analytics-asset-title` | string | A title for the custom asset. |
-| `data-analytics-asset-type` | string | The type of asset you wish for Analytics Cloud to track your custom asset as (i.e. `blog`, `document`, `form`, `web-content`, or `custom`) |
+| Name                          | Type                | Description                                                                                                                                 |
+|:----------------------------- |:------------------- |:------------------------------------------------------------------------------------------------------------------------------------------- |
+| `data-analytics-asset-action` | preview or download | Preview - sends a preview event. Download - sends a download event. Note, this applies only for documents and media or custom assets.       |
+| `data-analytics-asset-id`     | string              | A unique identifier for each custom asset. The string must not contain spaces.                                                              |
+| `data-analytics-asset-title`  | string              | A title for the custom asset.                                                                                                               |
+| `data-analytics-asset-type`   | string              | The type of asset you wish for Analytics Cloud to track your custom asset as (i.e. `blog`, `document`, `form`, `web-content`, or `custom`). |
 
-```{note}
-You must add these attributes to each individual asset that you want Analytics Cloud to track. You can, however, use a script to populate the attributes’ values, automating this process for each asset.
-```
+!!! note
+  You must add these attributes to each individual asset that you want Analytics Cloud to track. You can, however, use a script to populate the attributes’ values, automating this process for each asset.
 
 ## Example for Blogs Type
 
@@ -105,7 +103,7 @@ If you want your custom asset to be tracked as a documents and media type asset,
 
 ## Example for Forms Type
 
-If you want your custom asset to be tracked as a forms type asset, use `data-analytics-asset-type="form"` along with the other required html tags: 
+If you want your custom asset to be tracked as a forms type asset, use `data-analytics-asset-type="form"` along with the other required HTML tags: 
 
 ```html
 <form
@@ -158,7 +156,7 @@ If you want your custom asset to be tracked as a web content type asset, use `da
 
 ## Example for Custom Type
 
-The examples above provide [asset analytic reports](assets.md) according to their asset types (e.g. a blog type asset shows blog-related metrics in the dashboard). If you require more flexibility, use the custom type asset. Use `data-analytics-asset-type="custom"` along with the other required HTML tags.
+The examples above provide [asset analytic reports](../assets.md) according to their asset types (e.g. a blog type asset shows blog-related metrics in the dashboard). If you require more flexibility, use the custom type asset. Use `data-analytics-asset-type="custom"` along with the other required HTML tags.
 
 For example, if you want to track a poll in a custom Polls portlet, you might use HTML like this:
 

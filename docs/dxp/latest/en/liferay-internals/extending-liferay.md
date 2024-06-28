@@ -3,7 +3,7 @@ toc:
   - ./extending-liferay/creating-a-model-listener.md
   - ./extending-liferay/creating-service-wrappers.md
   - ./extending-liferay/customizing-jsps-with-dynamic-includes.md
-  - ./extending-liferay/overriding-global-language-translations-with-language-properties.md
+  - ./extending-liferay/customizing-localization.md
   - ./extending-liferay/overriding-osgi-services.md
   - ./extending-liferay/auditing-portlet-activity-with-a-portlet-filter.md
 uuid: 4c36320d-ae31-44e0-a334-1566b16dea02

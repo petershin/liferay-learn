@@ -36,7 +36,7 @@ uuid: 7d1a4e73-0b50-465f-99dc-c531c3f3dd25
 
 [Backup Service Overview](./platform-services/backup-service/backup-service-overview.md)
 [Continuous Integration](./platform-services/continuous-integration.md)
-[Database Service](./platform-services/database-service/database-service.md)
+[Database Service](./platform-services/database-service.md)
 :::
 
 :::{grid-item-card} Updating Services in Liferay PaaS
@@ -67,7 +67,7 @@ uuid: 7d1a4e73-0b50-465f-99dc-c531c3f3dd25
 
 [Configuring the Liferay DXP Service](./customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.md)
 [Migrating from an On-Premises DXP Installation](./migrating-to-liferay-cloud.md)
-[Using the MySQL Client](./customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/using-the-mysql-client.md)
+[Deploying to the Liferay Service](./customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/deploying-to-the-liferay-service.md)
 :::
 
 :::{grid-item-card} Manage and Optimize

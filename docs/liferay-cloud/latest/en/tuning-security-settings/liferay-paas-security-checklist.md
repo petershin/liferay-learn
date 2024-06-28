@@ -120,7 +120,7 @@ Only store secrets in safe, secure locations, and rotate them on fixed intervals
 
 ### Disaster Recovery Master Token
 
-Create your master token as a secret when [configuring your disaster recovery environment](../support-and-troubleshooting/troubleshooting/configuring-cross-region-disaster-recovery.md).
+Create your master token as a secret when [configuring your disaster recovery environment](../support-and-troubleshooting/troubleshooting-tools-and-resources/configuring-cross-region-disaster-recovery.md).
 
 ### Repository Access
 

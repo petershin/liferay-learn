@@ -307,6 +307,6 @@ For Windows 7 and 8, go to *Control Panel* &rarr; *Add or Remove Programs*. In W
 
 ## Related Topics
 
-* [Troubleshooting Tools and Resources](../support-and-troubleshooting/troubleshooting/troubleshooting-tools-and-resources.md)
+* [Troubleshooting Tools and Resources](../support-and-troubleshooting/troubleshooting-tools-and-resources.md)
 * [Deploying Changes Via the CLI Tool](../updating-services-in-liferay-paas/deploying-changes-via-the-cli-tool.md)
 * [Upgrading Your Liferay Cloud Stack](./upgrading-your-liferay-cloud-stack.md)

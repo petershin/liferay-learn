@@ -101,13 +101,13 @@ If you have clustering configured, you should activate and test auto-scaling in 
 
 If you purchased a Disaster Recovery environment, simulate a disaster scenario and verify how fast you can recover the environment in case of a regional outage.
 
-See the [Disaster Recovery Overview](../support-and-troubleshooting/troubleshooting/disaster-recovery-overview.md) for more information.
+See the [Disaster Recovery Overview](../support-and-troubleshooting/troubleshooting-tools-and-resources/disaster-recovery-overview.md) for more information.
 
 ### Zero-Downtime Deployments
 
 Deploy to your environments to verify that they do not cause downtime. If they do, consider adjusting your liveness and readiness probes.
 
-See [Self-Healing](../support-and-troubleshooting/troubleshooting/self-healing.md) for more information.
+See [Self-Healing](../support-and-troubleshooting/troubleshooting-tools-and-resources/self-healing.md) for more information.
 
 ## Reviewing Your Project's Benchmarks
 

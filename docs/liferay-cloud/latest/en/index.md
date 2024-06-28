@@ -81,9 +81,9 @@ uuid: 7d1a4e73-0b50-465f-99dc-c531c3f3dd25
 :::{grid-item-card} Support and Troubleshooting
 :link: ./support-and-troubleshooting.md
 
-[Log Management](./support-and-troubleshooting/troubleshooting/reading-liferay-cloud-service-logs.md)
-[Shell Access](./support-and-troubleshooting/troubleshooting/shell-access.md)
-[Disaster Recovery Overview](./support-and-troubleshooting/troubleshooting/disaster-recovery-overview.md)
+[Log Management](./support-and-troubleshooting/troubleshooting-tools-and-resources/reading-liferay-cloud-service-logs.md)
+[Shell Access](./support-and-troubleshooting/troubleshooting-tools-and-resources/shell-access.md)
+[Disaster Recovery Overview](./support-and-troubleshooting/troubleshooting-tools-and-resources/disaster-recovery-overview.md)
 :::
 
 :::{grid-item-card} Migrating to Liferay Cloud

@@ -62,5 +62,5 @@ Congratulations! You've completed the Liferay Cloud Administrator Course.
 
 ## Related Concepts
 
-* [Shell Access](https://learn.liferay.com/web/guest/w/liferay-cloud/troubleshooting/shell-access)
+* [Shell Access](https://learn.liferay.com/w/liferay-cloud/support-and-troubleshooting/troubleshooting-tools-and-resources-tools-and-resources/shell-access)
 * [Using the MySQL Client](https://learn.liferay.com/web/guest/w/liferay-cloud/customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/using-the-mysql-client)

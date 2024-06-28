@@ -24,9 +24,9 @@ The Liferay SaaS offering empowers customers to focus on business processes and 
 
 ## Cloud Security Assurance
 
-* [Self-Healing](https://learn.liferay.com/w/liferay-cloud/troubleshooting/self-healing)
+* [Self-Healing](https://learn.liferay.com/w/liferay-cloud/support-and-troubleshooting/troubleshooting-tools-and-resources-tools-and-resources/self-healing)
 * [High Availability](https://learn.liferay.com/w/liferay-cloud/reference/upgrading-to-a-high-availability-subscription)
-* [Automated and Cross-Region DR](https://learn.liferay.com/w/liferay-cloud/troubleshooting/disaster-recovery-overview)
+* [Automated and Cross-Region DR](https://learn.liferay.com/w/liferay-cloud/support-and-troubleshooting/troubleshooting-tools-and-resources-tools-and-resources/configuring-cross-region-disaster-recovery)
 
 ## Regular Updates & Security
 

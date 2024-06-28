@@ -24,13 +24,13 @@ Users can access the Liferay Cloud Platform status page via the Liferay Cloud co
 
 The Liferay Cloud Platform status page lists the current status of the following systems:
 
-* Infrastructure Services
-* Database Services
-* Storage Services
-* Monitoring and Logging Services
-* Networking Services
-* Liferay Cloud Console
-* Liferay Cloud API
+- Infrastructure Services
+- Database Services
+- Storage Services
+- Monitoring and Logging Services
+- Networking Services
+- Liferay Cloud Console
+- Liferay Cloud API
 
 ![Figure 2: View the current status of Liferay Cloud Platform systems.](./liferay-cloud-platform-status/images/02.png)
 
@@ -54,5 +54,5 @@ Click on *Subscribe to Updates*, and select the method of notification that is m
 
 ## Related Topics
 
-* [Liferay Cloud Support Overview](https://help.liferay.com/hc/articles/360030208451-DXP-Cloud-Support-Overview)
-* [Troubleshooting Tools and Resources](./troubleshooting-tools-and-resources.md)
+- [Liferay Cloud Support Overview](https://help.liferay.com/hc/articles/360030208451-DXP-Cloud-Support-Overview)
+- [Troubleshooting Tools and Resources](../troubleshooting-tools-and-resources.md)

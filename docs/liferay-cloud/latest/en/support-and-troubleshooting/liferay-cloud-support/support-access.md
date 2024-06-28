@@ -44,6 +44,6 @@ Liferay Cloud also sends an email to all team members when the Support Access se
 
 ## Related Topics
 
-- [Troubleshooting Tools and Resources](../troubleshooting/troubleshooting-tools-and-resources.md)
+- [Troubleshooting Tools and Resources](../troubleshooting-tools-and-resources.md)
 - [Help Center](https://help.liferay.com/hc/en-us)
-- [Log Management](../troubleshooting/reading-liferay-cloud-service-logs.md)
+- [Log Management](../troubleshooting-tools-and-resources/reading-liferay-cloud-service-logs.md)

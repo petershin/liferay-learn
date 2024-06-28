@@ -67,7 +67,7 @@ Once started, the backup service icon indicates a backup is in progress, and a m
 
 Clicking *View logs* redirects you to the Logs page, where you can view the backup stages in real-time. You can also view backup logs in the *Logs* tab of the backup service's page.
 
-See [Reading Liferay Cloud Service Logs](../support-and-troubleshooting/troubleshooting/reading-liferay-cloud-service-logs.md) for more information about viewing service logs.
+See [Reading Liferay Cloud Service Logs](../support-and-troubleshooting/troubleshooting-tools-and-resources/reading-liferay-cloud-service-logs.md) for more information about viewing service logs.
 
 ## Configuring the Backup Service
 
@@ -196,7 +196,7 @@ This `backup/LCP.json` example creates backups every 12 hours (i.e., 00:00 and 1
 |:------------------------------------------------------|:---------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `LCP_BACKUP_CLEANUP_SCHEDULE`                         | 0 1 \* \* \*               | Schedules automated cleanups using [cron scheduling syntax](https://crontab.guru/). Cleanups remove all backups that exceed the backup retention period. It must not conflict with `LCP_BACKUP_CREATE_SCHEDULE`.                                          |
 | `LCP_BACKUP_CREATE_SCHEDULE`                          | `[5-55][0-1] * * *`        | Schedules automated backups using [cron scheduling syntax](https://crontab.guru/). It must not conflict with `LCP_BACKUP_CLEANUP_SCHEDULE`. In versions `3.2.1` and above of the backup service, if no value is specified, a random default is created.        |
-| `LCP_BACKUP_RESTORE_SCHEDULE`                         | N/A                        | Schedules automated restores using [cron scheduling syntax](https://crontab.guru/). Intended for use with [Disaster Recovery environments](../support-and-troubleshooting/troubleshooting/configuring-cross-region-disaster-recovery.md).              |
+| `LCP_BACKUP_RESTORE_SCHEDULE`                         | N/A                        | Schedules automated restores using [cron scheduling syntax](https://crontab.guru/). Intended for use with [Disaster Recovery environments](../support-and-troubleshooting/troubleshooting-tools-and-resources/configuring-cross-region-disaster-recovery.md).              |
 | `LCP_BACKUP_RESTORE_DL_DOWNLOAD_AND_EXTRACT_STRATEGY` | `download-then-extract`    | Determines the download and extract strategy for the document library. Use `download-then-extract` for backups of static data that doesn't change frequently, or `stream-pipeline` for data pipelines with frequent changes that require fast recovery. |
 | `LCP_BACKUP_RETENTION_PERIOD`                         | `30`                       | Determines which backups are removed during scheduled cleanups. Select the number of days backups are retained before being removed by cleanups. The maximum retention period is 30 days.                                                               |
 | `LCP_DATABASE_SERVICE`                                | `database`                 | The database service's ID.                                                                                                                                                                                                                                      |

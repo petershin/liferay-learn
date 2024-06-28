@@ -1,14 +1,13 @@
 ---
 toc:
-  - ./troubleshooting/troubleshooting-tools-and-resources.md
-  - ./troubleshooting/reading-liferay-cloud-service-logs.md
-  - ./troubleshooting/shell-access.md
-  - ./troubleshooting/troubleshooting-services.md
-  - ./troubleshooting/disaster-recovery-overview.md
-  - ./troubleshooting/configuring-cross-region-disaster-recovery.md
-  - ./troubleshooting/self-healing.md
-  - ./troubleshooting/liferay-cloud-platform-status.md
-  - ./troubleshooting/creating-thread-and-heap-dumps.md
+  - ./troubleshooting-tools-and-resources/reading-liferay-cloud-service-logs.md
+  - ./troubleshooting-tools-and-resources/shell-access.md
+  - ./troubleshooting-tools-and-resources/troubleshooting-services.md
+  - ./troubleshooting-tools-and-resources/disaster-recovery-overview.md
+  - ./troubleshooting-tools-and-resources/configuring-cross-region-disaster-recovery.md
+  - ./troubleshooting-tools-and-resources/self-healing.md
+  - ./troubleshooting-tools-and-resources/liferay-cloud-platform-status.md
+  - ./troubleshooting-tools-and-resources/creating-thread-and-heap-dumps.md
 taxonomy-category-names:
 - Cloud
 - Cloud Platform Administration
@@ -43,9 +42,9 @@ Metrics are available for the default Liferay Cloud stack services: Webserver, L
 
 ![View application metrics via the Monitoring page in the Liferay Cloud console](./troubleshooting-tools-and-resources/images/01.png)
 
-Users can also integrate [Dynatrace’s](../../manage-and-optimize/application-metrics.md#advanced-application-metrics-production-only) advanced performance monitoring with production environments.
+Users can also integrate [Dynatrace’s](../manage-and-optimize/application-metrics.md#advanced-application-metrics-production-only) advanced performance monitoring with production environments.
 
-See [Application Metrics](../../manage-and-optimize/application-metrics.md) for more information.
+See [Application Metrics](../manage-and-optimize/application-metrics.md) for more information.
 
 ## Real-Time Alerts
 
@@ -55,7 +54,7 @@ View all environment alerts and set alert preferences via the Liferay Cloud cons
 
 ![View and manage alerts via the Alerts page in the Liferay Cloud console](./troubleshooting-tools-and-resources/images/02.png)
 
-See [Real-Time Alerts](../../manage-and-optimize/real-time-alerts.md) for more information.
+See [Real-Time Alerts](../manage-and-optimize/real-time-alerts.md) for more information.
 
 ## Environment Activities
 
@@ -65,7 +64,7 @@ View the status of builds, deployments, service activities, and more to help tro
 
 ![View environment activities from the Liferay Cloud console](./troubleshooting-tools-and-resources/images/03.png)
 
-See [Team Activities](../../manage-and-optimize/team-activities.md) for more information.
+See [Team Activities](../manage-and-optimize/team-activities.md) for more information.
 
 ## Environment Logs
 
@@ -79,7 +78,7 @@ Application, status, and build logs are provided for each Liferay Cloud Service:
 
 ![View logs via the Logs page in the Liferay Cloud console](./troubleshooting-tools-and-resources/images/04.png)
 
-See [Log Management](./reading-liferay-cloud-service-logs.md) for more information.
+See [Log Management](./troubleshooting-tools-and-resources/reading-liferay-cloud-service-logs.md) for more information.
 
 ## Shell Access
 
@@ -97,7 +96,7 @@ For example, you can run the following command from the `liferay` service's shel
 curl -v [address]
 ```
 
-See [Shell Access](./shell-access.md) for more information.
+See [Shell Access](./troubleshooting-tools-and-resources/shell-access.md) for more information.
 
 ## Self-Healing
 
@@ -108,7 +107,7 @@ Liferay Cloud offers two probes used in conjunction to manage applications:
 - **Liveness Probe**: This probe indicates whether the service is running.
 - **Readiness Probe**: This probe indicates whether the service is ready to receive requests.
 
-See [Self-Healing](./self-healing.md) for more information about configuring each probe.
+See [Self-Healing](./troubleshooting-tools-and-resources/self-healing.md) for more information about configuring each probe.
 
 ## Disaster Recovery
 
@@ -116,9 +115,9 @@ In the event of a disaster, Liferay Cloud offers two strategies for project reco
 
 Liferay Cloud's automatic disaster recovery strategy replicates services between three availability zones within the same region. If an availability zone becomes unavailable, the load balancer routes to the remaining availability zones automatically without the need for user action.
 
-However, in a cross-region disaster, user intervention is required. To learn more about cross-region disaster recovery tools and processes, see [Configuring Cross Region Disaster Recovery](./configuring-cross-region-disaster-recovery.md).
+However, in a cross-region disaster, user intervention is required. To learn more about cross-region disaster recovery tools and processes, see [Configuring Cross Region Disaster Recovery](./troubleshooting-tools-and-resources/configuring-cross-region-disaster-recovery.md).
 
-See [Disaster Recovery Overview](./disaster-recovery-overview.md) to learn more about both disaster recovery strategies.
+See [Disaster Recovery Overview](./troubleshooting-tools-and-resources/disaster-recovery-overview.md) to learn more about both disaster recovery strategies.
 
 ## Liferay Cloud Platform Status
 
@@ -130,7 +129,7 @@ To receive notifications of changes in the Cloud Platform's status, click on *Su
 
 ![View the status of Liferay Cloud Platform systems.](./troubleshooting-tools-and-resources/images/06.png)
 
-See [Liferay Cloud Platform Status](./liferay-cloud-platform-status) for more information.
+See [Liferay Cloud Platform Status](./troubleshooting-tools-and-resources/liferay-cloud-platform-status) for more information.
 
 ## Support Access
 
@@ -140,7 +139,7 @@ By default, Support Access is enabled in each project environment, though admini
 
 ![Environment administrators can enable or disable Support Access in the Settings page](./troubleshooting-tools-and-resources/images/07.png)
 
-See [Support Access](../liferay-cloud-support/support-access.md) for more information.
+See [Support Access](./liferay-cloud-support/support-access.md) for more information.
 
 ## Help Center
 
@@ -164,4 +163,4 @@ When submitting a ticket, please provide information regarding the build images 
 - [Liferay Cloud Support Overview](https://help.liferay.com/hc/en-us/articles/360030208451-DXP-Cloud-Support-Overview)
 - [Liferay Cloud Knowledge Base](https://help.liferay.com/hc/en-us/categories/360001132872)
 - [Liferay Cloud Announcements](https://help.liferay.com/hc/en-us/categories/360001192512)
-- [Support Access](../liferay-cloud-support/support-access.md)
+- [Support Access](./liferay-cloud-support/support-access.md)

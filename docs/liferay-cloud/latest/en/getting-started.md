@@ -108,9 +108,9 @@ These robust systems enable the creation of fault tolerant processes to meet org
 
 ## Application Development Tools
 
-Keep track of application deployments and performance with real-time build and [deployment logs](./support-and-troubleshooting/troubleshooting/reading-liferay-cloud-service-logs.md) for your client extensions. You can also use Liferay Cloud's [command-line tool](./reference/command-line-tool.md#showing-the-service-logs) to view Liferay DXP logs (or other core service logs, with Liferay PaaS).
+Keep track of application deployments and performance with real-time build and [deployment logs](./support-and-troubleshooting/troubleshooting-tools-and-resources/reading-liferay-cloud-service-logs.md) for your client extensions. You can also use Liferay Cloud's [command-line tool](./reference/command-line-tool.md#showing-the-service-logs) to view Liferay DXP logs (or other core service logs, with Liferay PaaS).
 
-Teams can also analyze stack traces and troubleshoot bugs with [client extensions](#customizing-liferay-with-client-extensions) (or, in Liferay PaaS, any core Liferay service) by [accessing a shell](./support-and-troubleshooting/troubleshooting/shell-access.md) via the web console or terminal, and/or by downloading the logs.
+Teams can also analyze stack traces and troubleshoot bugs with [client extensions](#customizing-liferay-with-client-extensions) (or, in Liferay PaaS, any core Liferay service) by [accessing a shell](./support-and-troubleshooting/troubleshooting-tools-and-resources/shell-access.md) via the web console or terminal, and/or by downloading the logs.
 
 ![Real-time build and deployment logs help you solve problems with your applications.](./getting-started/images/06.png)
 

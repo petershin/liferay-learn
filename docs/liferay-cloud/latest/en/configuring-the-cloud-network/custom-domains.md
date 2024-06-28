@@ -84,7 +84,7 @@ Alternatively, you can replace the domains that an environment's service uses by
 ```
 
 !!! important
-    You must define a specific environment for each added custom domain. You cannot use the same custom domain for multiple environments (except for [Disaster Recovery environments](../support-and-troubleshooting/troubleshooting/configuring-cross-region-disaster-recovery.md) in different regions). This is necessary for Liferay Cloud to generate certificates properly and route users to the correct domain.
+    You must define a specific environment for each added custom domain. You cannot use the same custom domain for multiple environments (except for [Disaster Recovery environments](../support-and-troubleshooting/troubleshooting-tools-and-resources/configuring-cross-region-disaster-recovery.md) in different regions). This is necessary for Liferay Cloud to generate certificates properly and route users to the correct domain.
 
 Once a custom domain is added to your service and your changes are deployed, Liferay Cloud handles the routing.
 

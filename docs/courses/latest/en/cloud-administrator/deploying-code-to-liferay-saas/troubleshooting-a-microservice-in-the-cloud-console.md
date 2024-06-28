@@ -164,8 +164,8 @@ Next: [Cloud Configuration](../cloud-configuration.md).
 ## Relevant Concepts
 
 * [Object Action Client Extensions](https://learn.liferay.com/w/dxp/building-applications/client-extensions/microservice-client-extensions#object-action-client-extensions)
-* [Reading Liferay Cloud Service Logs](https://learn.liferay.com/w/liferay-cloud/troubleshooting/reading-liferay-cloud-service-logs)
-* [Shell Access](https://learn.liferay.com/w/liferay-cloud/troubleshooting/shell-access)
-* [Troubleshooting Services](https://learn.liferay.com/w/liferay-cloud/troubleshooting/troubleshooting-services)
-* [Self-Healing](https://learn.liferay.com/w/liferay-cloud/troubleshooting/self-healing)
+* [Reading Liferay Cloud Service Logs](https://learn.liferay.com/w/liferay-cloud/support-and-troubleshooting/troubleshooting-tools-and-resources-tools-and-resources/reading-liferay-cloud-service-logs)
+* [Shell Access](https://learn.liferay.com/w/liferay-cloud/support-and-troubleshooting/troubleshooting-tools-and-resources-tools-and-resources/shell-access)
+* [Troubleshooting Services](https://learn.liferay.com/w/liferay-cloud/support-and-troubleshooting/troubleshooting-tools-and-resources-tools-and-resources/troubleshooting-services)
+* [Self-Healing](https://learn.liferay.com/w/liferay-cloud/support-and-troubleshooting/troubleshooting-tools-and-resources-tools-and-resources/self-healing)
 * [Defining Environment Variables](https://learn.liferay.com/w/liferay-cloud/reference/defining-environment-variables#defining-environment-variables-via-the-liferay-cloud-console)

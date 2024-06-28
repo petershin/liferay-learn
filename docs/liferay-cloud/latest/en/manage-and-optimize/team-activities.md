@@ -55,4 +55,4 @@ This page lists all activities that have occurred on the Liferay Cloud instance.
 
 - [Environment Teams and Roles](./environment-teams-and-roles.md)
 - [Overview of the Liferay Cloud Deployment Workflow](../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md)
-- [Log Management](../support-and-troubleshooting/troubleshooting/reading-liferay-cloud-service-logs.md)
+- [Log Management](../support-and-troubleshooting/troubleshooting-tools-and-resources/reading-liferay-cloud-service-logs.md)

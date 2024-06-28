@@ -21,7 +21,7 @@ The figure below illustrates the module life cycle.
 
 ![This state diagram illustrates the module life cycle.](./module-lifecycle/images/01.png) 
 
-You can manage the life cycle with the [Apache Felix Gogo Shell](../fundamentals/using-the-gogo-shell.md). You can install/uninstall modules and start/stop them. You can update a module and notify dependent modules to use the update. Liferay's tools, including [Liferay Workspace](../../liferay-development/tooling/liferay-workspace/what-is-liferay-workspace.md), [Blade CLI](../../liferay-development/tooling/blade-cli/installing-and-updating-blade-cli.md), and [Liferay Dev Studio](https://liferay.dev/-/ide) offer similar shell commands that use the OSGi Admin API.
+You can manage the life cycle with the [Apache Felix Gogo Shell](../fundamentals/using-the-gogo-shell.md). You can install/uninstall modules and start/stop them. You can update a module and notify dependent modules to use the update. Liferay's tools, including [Liferay Workspace](../../liferay-development/tooling/liferay-workspace.md), [Blade CLI](../../liferay-development/tooling/blade-cli.md), and [Liferay Dev Studio](https://liferay.dev/-/ide) offer similar shell commands that use the OSGi Admin API.
 
 On activating a module, its components are enabled. But only *activated* components can be used. Component activation requires all referenced services be satisfied. That is, all services a component references must be registered. The highest ranked service that matches a reference is bound to the component. When the container finds and binds all the services the component references, it registers the component. It's now ready for activation.
 
@@ -38,15 +38,15 @@ Unless immediate activation is specified, the component's activation is delayed.
 
 Gogo Shell's [Service Component Runtime commands](http://felix.apache.org/documentation/subprojects/apache-felix-service-component-runtime.html#shell-command) let you manage components:
 
-* `scr:list [bundleID]`: Lists the module's (bundle's) components.
+- `scr:list [bundleID]`: Lists the module's (bundle's) components.
 
-* `scr:info [componentID|fullClassName]`: Describes the component, including its status and the services it provides.
+- `scr:info [componentID|fullClassName]`: Describes the component, including its status and the services it provides.
 
-* `scr:enable [componentID|fullClassName]`: Enables the component.
+- `scr:enable [componentID|fullClassName]`: Enables the component.
 
-* `scr:disable [componentID|fullClassName]`: Disables the component. It's disabled on the server (or current server node in a cluster) until the server is restarted.
+- `scr:disable [componentID|fullClassName]`: Disables the component. It's disabled on the server (or current server node in a cluster) until the server is restarted.
 
-Service references are _static_ and _reluctant_ by default. That is, an injected service remains bound to the referencing component until the service is disabled. Alternatively, you can specify *greedy* service policies for references. Every time a higher ranked matching service is registered, the framework unbinds the lower ranked service from the component (whose service policy is greedy) and binds the new service in its place automatically. Here's an [`@Reference`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Reference.html) annotation that uses a greedy policy:
+Service references are *static* and *reluctant* by default. That is, an injected service remains bound to the referencing component until the service is disabled. Alternatively, you can specify *greedy* service policies for references. Every time a higher ranked matching service is registered, the framework unbinds the lower ranked service from the component (whose service policy is greedy) and binds the new service in its place automatically. Here's an [`@Reference`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Reference.html) annotation that uses a greedy policy:
 
 ```java
 @Reference(policyOption = ReferencePolicyOption.GREEDY)
@@ -56,6 +56,6 @@ Use Declarative Services annotations to specify component activation and service
 
 ## Related Topics
 
-* [Module Projects](../fundamentals/module-projects.md)
-* [Gogo Shell Commands](../fundamentals/using-the-gogo-shell/gogo-shell-commands.md)
-* [Liferay Workspace](../../liferay-development/tooling/liferay-workspace/what-is-liferay-workspace.md)
+- [Module Projects](../fundamentals/module-projects.md)
+- [Gogo Shell Commands](../fundamentals/using-the-gogo-shell/gogo-shell-commands.md)
+- [Liferay Workspace](../../liferay-development/tooling/liferay-workspace.md)

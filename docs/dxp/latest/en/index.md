@@ -125,4 +125,4 @@ Welcome to the official documentation for the latest versions (7.3 and 7.4+) of 
 [Setting Up Liferay](./installation-and-upgrades/setting-up-liferay.md)
 [Upgrade Basics](./installation-and-upgrades/upgrading-liferay/upgrade-basics.md)
 :::
-:::
+::::

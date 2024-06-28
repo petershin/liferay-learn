@@ -28,7 +28,7 @@ Installing Blade CLI for Linux and Mac operating systems is a one-line command:
 curl -L https://raw.githubusercontent.com/liferay/liferay-blade-cli/master/cli/installers/local | sh
 ```
 
-After the install completes a `Blade installed successfully` message appears. Open a new command line and type `blade`. If you get a command not found error, you must [add the `blade` command to your path](./troubleshooting-blade-cli.md#the-blade-command-is-not-available-in-my-cli).
+After the install completes a `Blade installed successfully` message appears. Open a new command line and type `blade`. If you get a command not found error, you must [add the `blade` command to your path](./blade-cli/troubleshooting-blade-cli.md#the-blade-command-is-not-available-in-my-cli).
 
 ### Installing from the Graphical Installer
 
@@ -40,7 +40,7 @@ If you're more comfortable with an installer, download the latest [Liferay Proje
 
 1. After the introduction, click *Next*.
 
-1. You can initialize a [Liferay Workspace](./liferay-workspace/what-is-liferay-workspace.md) during the install. Liferay Workspace is an environment (a set of folders) on your system for Liferay projects. Set its location if you wish to initialize it now.
+1. You can initialize a [Liferay Workspace](./liferay-workspace.md) during the install. Liferay Workspace is an environment (a set of folders) on your system for Liferay projects. Set its location if you wish to initialize it now.
 
    ![Liferay Workspace is a set of folders on your file system where you manage Liferay projects.](./blade-cli/images/02.png)
 
@@ -52,7 +52,7 @@ If you're more comfortable with an installer, download the latest [Liferay Proje
 
 1. Click *Next* to install Blade CLI.
 
-On Windows environments, the `blade` command is added to your path automatically on Windows or if you're using `bash` or `zsh` on Mac and Linux. See [Troubleshooting Blade CLI](./troubleshooting-blade-cli.md) for further information.
+On Windows environments, the `blade` command is added to your path automatically on Windows or if you're using `bash` or `zsh` on Mac and Linux. See [Troubleshooting Blade CLI](./blade-cli/troubleshooting-blade-cli.md) for further information.
 
 ## Configuring a Proxy
 

@@ -18,15 +18,15 @@ MAJOR.MINOR.MICRO
 
 Certain events force each tier to increment:
 
-* *MAJOR:* an incompatible, API-breaking change is made
-* *MINOR:* a change that affects only providers of the API, or new backwards-compatible functionality is added
-* *MICRO:* a backwards-compatible bug fix is made
+- *MAJOR:* an incompatible, API-breaking change is made
+- *MINOR:* a change that affects only providers of the API, or new backwards-compatible functionality is added
+- *MICRO:* a backwards-compatible bug fix is made
 
 For more details on semantic versioning, see the official [Semantic Versioning](https://semver.org/) site and [OSGi Alliance's Semantic Versioning](http://www.osgi.org/wp-content/uploads/SemanticVersioning1.pdf) technical whitepaper.
 
 All of Liferay's modules use Semantic Versioning.
 
-Following Semantic Versioning is especially important because DXP is a modular platform containing hundreds of independent OSGi modules. With many independent modules that depend on each other, releasing new package versions can become terrifying without a way of declaring their compatibility. Semantic Versioning's straightforward system and [Liferay tooling](../../liferay-development/tooling/developer-tools-overview.md) help you mange the compatibility of your modules.
+Following Semantic Versioning is especially important because DXP is a modular platform containing hundreds of independent OSGi modules. With many independent modules that depend on each other, releasing new package versions can become terrifying without a way of declaring their compatibility. Semantic Versioning's straightforward system and [Liferay tooling](../../liferay-development/tooling.md) help you mange the compatibility of your modules.
 
 ## Baselining Your Project
 
@@ -37,7 +37,7 @@ You can use Liferay's Baseline Gradle plugin to provide baselining capabilities.
 ./gradlew baseline
 ```
 
-This Baseline Gradle Plugin plugin is not provided in [Liferay Workspace](../../liferay-development/tooling/liferay-workspace/what-is-liferay-workspace.md) by default.
+This Baseline Gradle Plugin plugin is not provided in [Liferay Workspace](../../liferay-development/tooling/liferay-workspace.md) by default.
 
 When you run the `baseline` command, the plugin compares the public exported API of your new module with the latest released non-snapshot module. If there are any changes, it uses the OSGi Semantic Versioning rules to calculate the minimum new version. If your new module has a lower version, it throws errors.
 
@@ -49,8 +49,8 @@ With baselining, your project's Semantic Versioning is as accurate as its API ex
 
 There are two ways to track your project's artifact and dependency versions with Semantic Versioning:
 
-* Range of versions
-* Exact version (one-to-one)
+- Range of versions
+- Exact version (one-to-one)
 
 You should track a range of versions if you intend to build your project for multiple DXP versions and maintain maximum compatibility. In other words, if several package versions work for an app, you can configure the app to use any of them. What's more, Bnd automatically determines the semantically compatible range of each package a module depends on and records the range to the module's manifest.
 
@@ -78,16 +78,15 @@ Tracking a range of versions comes with a price. It's hard to reproduce old buil
 
 Tracking a dependency's exact version is safer, but less flexible. You could be limited to a specific DXP version or locked into APIs that exist only in that specific version. Your module, however, is much easier to test and has less chance for unexpected failures.
 
-```{note}
-When specifying package versions in your `bnd.bnd` file, exact versions are typically specified like this: `version="1.1.2"`. However, this syntax is technically a range; it is interpreted as [1.1.2, ∞). Therefore, if a higher version of the package is available, it's used instead of the version you specified. For these cases, it may be better to specify a version range for compatible versions that have been tested. If you want to specify a true exact match, the syntax is like this: `[1.1.2]`. See the [Version Range](https://osgi.org/specification/osgi.core/7.0.0/framework.module.html#i3189032) section in the OSGi specifications for more info.
+!!! note
+    When specifying package versions in your `bnd.bnd` file, exact versions are typically specified like this: `version="1.1.2"`. However, this syntax is technically a range; it is interpreted as [1.1.2, ∞). Therefore, if a higher version of the package is available, it's used instead of the version you specified. For these cases, it may be better to specify a version range for compatible versions that have been tested. If you want to specify a true exact match, the syntax is like this: `[1.1.2]`. See the [Version Range](https://osgi.org/specification/osgi.core/7.0.0/framework.module.html#i3189032) section in the OSGi specifications for more info.
 
-Gradle uses exact versions when only one version is specified.
-```
+    Gradle uses exact versions when only one version is specified.
 
 You now know the pros and cons for tracking dependencies as a range and as an exact match.
 
 ## Related Topics
 
-* [Importing Packages](./importing-packages.md)
-* [Exporting Packages](./exporting-packages.md)
-* [Configuring Dependencies](./configuring-dependencies.md)
+- [Importing Packages](./importing-packages.md)
+- [Exporting Packages](./exporting-packages.md)
+- [Configuring Dependencies](./configuring-dependencies.md)

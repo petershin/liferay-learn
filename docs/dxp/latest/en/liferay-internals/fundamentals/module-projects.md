@@ -152,10 +152,10 @@ Now that you have installed and activated the module, you can learn how it works
 
 ## How to Configure a Module
 
-* [Set Up the Build Infrastructure](#set-up-the-build-infrastructure)
-* [Write Code](#write-code)
-* [Specify Dependencies](#specify-dependencies)
-* [Specify Metadata](#specify-metadata)
+- [Set Up the Build Infrastructure](#set-up-the-build-infrastructure)
+- [Write Code](#write-code)
+- [Specify Dependencies](#specify-dependencies)
+- [Specify Metadata](#specify-metadata)
 
 ### Set Up the Build Infrastructure
 
@@ -168,7 +168,7 @@ Liferay modules are developed in a Gradle build infrastructure. The following Gr
 | `gradle.properties` | Specifies the Liferay product version |
 | `settings.gradle` | Applies Gradle plugins, including the [Liferay Workspace](../../liferay-development/tooling.md) plugin. |
 
-You can add more modules in new subfolders, like the example project's `k8s2-api` folder, or create them in a new [Liferay Workspace](../../liferay-development/tooling/liferay-workspace/what-is-liferay-workspace.md).
+You can add more modules in new subfolders, like the example project's `k8s2-api` folder, or create them in a new [Liferay Workspace](../../liferay-development/tooling/liferay-workspace.md).
 
 Here's the `k8s2-api` module structure in the context of the project root.
 
@@ -219,9 +219,8 @@ liferay.workspace.product=[$LIFERAY_LEARN_PORTAL_WORKSPACE$]
 
 Lastly, there's no dependency version. That's because Workspace applies the Liferay product API version associated with the release.
 
-```{note}
-Please see [Configuring Dependencies](./configuring-dependencies.md) for more information.
-```
+!!! note
+    Please see [Configuring Dependencies](./configuring-dependencies.md) for more information.
 
 ### Specify Metadata
 
@@ -268,15 +267,14 @@ Now you know what module projects look like, how to build and deploy them, and h
 
 Modules leverage each other's capabilities via APIs like the `Greeter` API. Liferay uses OSGi Services to define, implement, and consume APIS. Next, [APIs as OSGi Services](./apis-as-osgi-services.md) demonstrates *implementing* the `Greeter` API using OSGi services.
 
-```{note}
-For details about the module lifecycle, see [Module Lifecycle](../architecture/module-lifecycle.md).
-```
+!!! note
+    For details about the module lifecycle, see [Module Lifecycle](../architecture/module-lifecycle.md).
 
 ## Related Topics
 
-* [APIs as OSGi Services](./apis-as-osgi-services.md)
-* [Using an OSGi Service](./using-an-osgi-service.md)
-* [Configure Dependencies](./configuring-dependencies.md)
-* [Importing Packages](./importing-packages.md)
-* [Exporting Packages](./exporting-packages.md)
-* [Module Lifecycle](../architecture/module-lifecycle.md)
+- [APIs as OSGi Services](./apis-as-osgi-services.md)
+- [Using an OSGi Service](./using-an-osgi-service.md)
+- [Configure Dependencies](./configuring-dependencies.md)
+- [Importing Packages](./importing-packages.md)
+- [Exporting Packages](./exporting-packages.md)
+- [Module Lifecycle](../architecture/module-lifecycle.md)

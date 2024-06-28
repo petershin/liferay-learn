@@ -9,7 +9,6 @@ uuid: 699aecdd-490f-4386-9a95-1168eff8f1c0
 taxonomy-category-names:
 - Development and Tooling
 - Liferay Self-Hosted
-- Liferay PaaS
 ---
 
 # Using Glowroot with Liferay
@@ -18,7 +17,12 @@ taxonomy-category-names:
 
 Liferay bundles [Glowroot](https://glowroot.org/), the open source Java application monitoring tool. The tool displays helpful statistics about your system (e.g. server requests, errors, etc.) with minimal overhead. Use Glowroot to troubleshoot issues and analyze performance issues.
 
+!!! important
+	If your Liferay instance is clustered and has multiple nodes, Glowroot data may be misleading.
+
 ## Enabling Glowroot
+
+{bdg-primary}`Self-Hosted only`
 
 Enable Glowroot with the `GLOWROOT_ENABLED` environment variable set to `true`. For example,
 

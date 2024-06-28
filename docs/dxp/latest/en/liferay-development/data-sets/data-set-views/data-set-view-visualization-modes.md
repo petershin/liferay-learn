@@ -52,19 +52,19 @@ With the fields in place, you can reorder them by using the drag icon on the lef
 
 ### Adding Fields to Visualization Modes
 
-When adding fields to visualization modes, you can select available fields from a tree structure shown in a modal. Those fields are displayed in your data set view.
+When adding fields to visualization modes, you can select available fields from a tree structure. Those fields appear in your data set view.
 
 ![Select available fields from a tree structure.](./data-set-view-visualization-modes/images/03.png)
 
 (1) Navigate through the structure's levels and click on the checkbox next to a field to add it to your visualization mode.
 
-(2) Alternatively, you can use the search bar at the top of the modal. Only matching fields are shown, and fields related to the search query are highlighted. To view the entire structure again, clear the search field or click `x` at the end of the search bar.
+(2) Alternatively, you can use the search bar at the top. Only matching fields are shown, and fields related to the search query are highlighted. To view the entire structure again, clear the search field or click `x` at the end of the search bar.
 
 ![Use the search bar to find fields.](./data-set-view-visualization-modes/images/04.png)
 
 (3) Click *Deselect All* to clear all selections at once.
 
-Click *Save* to save the fields and close the modal. To discard changes and close the modal, click *Cancel* or `x` in the top right corner.
+Click *Save* to save the fields and close the window. To discard changes and close, click *Cancel* or `x` in the top right corner.
 
 Here are some important details to keep in mind when adding a field to visualization modes:
 
@@ -74,17 +74,17 @@ Here are some important details to keep in mind when adding a field to visualiza
 
 - Users can select fields with complex array information (e.g., an object entry). In the Table visualization mode, these fields can be selected at any level of the tree view. In List/Card visualization modes, only child fields can be selected.
 
-- A complete complex array field appears as a stringified JSON object when using the default renderer.
+- A complete complex array field converts to a JSON object when using the default renderer.
 
-   ![A complete complex array field appears as a stringified JSON object when using the default renderer.](./data-set-view-visualization-modes/images/05.png)
+   ![A complete complex array field converts to a JSON object when using the default renderer.](./data-set-view-visualization-modes/images/05.png)
 
 <!-- - A cell renderer that displays a user-friendly version for the stringified JSON object can be developed and added as a client extension.
 
 In case a document is added telling users how to do that. Eric  -->
 
--  The `[]*` notation follows the complex array field's name (e.g., organizationBriefs[]*). Fields belonging to a complex array are identified using the `[]` notation between the parent and child fields (e.g., organizationBriefs[]name).
+-  The `[]*` notation follows the complex array field's name (e.g., `organizationBriefs[]*`). Fields belonging to a complex array are identified using the `[]` notation between the parent and child fields (e.g., `organizationBriefs[]name`).
 
-   ![The `[]` notation is used to identify complex array fields and child fields.](./data-set-view-visualization-modes/images/06.png)
+   ![The [] notation is used to identify complex array fields and child fields.](./data-set-view-visualization-modes/images/06.png)
 
 ### Editing Fields in a Table
 
@@ -106,7 +106,7 @@ Once you start editing a field, you can change the label and localize it (1).
 
    The localization status label next to the flag changes to `Translated` to indicate that localization was successful.
 
-   ![The localization status label next to the flag changes to `Translated` to indicate that the localization was successful.](./data-set-view-visualization-modes/images/08.png)
+   ![The localization status label next to the flag changes to Translated to indicate that the localization was successful.](./data-set-view-visualization-modes/images/08.png)
 
 !!! note
     The localized text appears if users have the respective language applied to their portal.

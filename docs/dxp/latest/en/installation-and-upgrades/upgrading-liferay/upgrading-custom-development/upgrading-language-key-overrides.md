@@ -15,6 +15,6 @@ To upgrade language key overrides,
 
 ## Related Topics
 
-- [Overriding Global Language Translations with Language Properties](../../../liferay-internals/extending-liferay/overriding-global-language-translations-with-language-properties.md)
+- [Overriding Global Language Translations with Language Properties](../../../liferay-internals/extending-liferay/customizing-localization/overriding-global-language-translations-with-language-properties.md)
 - [Renamed Language Keys](../reference/renamed-language-keys.md)
 - [Upgrading Custom Development](../upgrading-custom-development.md)

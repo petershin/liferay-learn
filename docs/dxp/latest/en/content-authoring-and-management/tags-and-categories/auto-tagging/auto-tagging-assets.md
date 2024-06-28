@@ -105,7 +105,7 @@ After changing an asset, you can see the tags displayed while editing it. An exa
 
 1. Click *Publish* when finished.
 
-1. Click the Options icon (![Click on the options icon to access the Edit button.](../../images/icon-options.png)) and click Edit.
+1. Click the Options icon (![Click on the options icon to access the Edit button.](../../../images/icon-options.png)) and click Edit.
 
 1. Select the *Categorization* field and under *Other Metadata*, your tags appear.
 

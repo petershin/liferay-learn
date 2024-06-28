@@ -2,7 +2,7 @@
 toc:
   - ./client-extensions/working-with-client-extensions.md
   - ./client-extensions/packaging-client-extensions.md
-  - ./client-extensions/client-extensions-reference.md
+  - ./client-extensions/client-extension-reference.md
 uuid: 33141e0f-9fc0-4bcb-ae34-536c157e0198
 taxonomy-category-names:
 - Development and Tooling
@@ -35,7 +35,7 @@ With client extensions, you can
 
 ## Types of Client Extensions
 
-You use [Liferay Workspace](./tooling/liferay-workspace/what-is-liferay-workspace.md) to develop and deploy Client extensions. Client extensions communicate with Liferay via [headless APIs](../headless-delivery/using-liferay-as-a-headless-platform.md).
+You use [Liferay Workspace](./tooling/liferay-workspace.md) to develop and deploy Client extensions. Client extensions communicate with Liferay via [headless APIs](../headless-delivery/using-liferay-as-a-headless-platform.md).
 
 These are the classifications of client extensions:
 
@@ -93,4 +93,4 @@ When finished with that, you may want to see how to create a full-blown applicat
 ## Related Topics
 
 - [Working with Client Extensions](./client-extensions/working-with-client-extensions.md)
-- [Liferay Workspace](./tooling/liferay-workspace/what-is-liferay-workspace.md)
+- [Liferay Workspace](./tooling/liferay-workspace.md)

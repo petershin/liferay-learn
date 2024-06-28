@@ -1,7 +1,7 @@
 ---
 toc:
   - ./tradecentric-formerly-punchout2go/liferay-connector-to-tradecentric-formerly-punchout2go.md
-  - ./tradecentric-formerly-punchout2go/liferay-connector-to-tradecentric-reference-guide.md
+  - ./tradecentric-formerly-punchout2go/liferay-commerce-connector-to-tradecentric-reference-guide.md
 uuid: 017e8b18-038a-4e9c-9de9-33a45c33e6d5
 taxonomy-category-names:
 - Commerce
@@ -22,6 +22,6 @@ taxonomy-category-names:
 :::
 
 :::{grid-item-card}  Liferay Connector to TradeCentric Reference Guide
-:link: ./tradecentric-formerly-punchout2go/liferay-connector-to-tradecentric-reference-guide.md
+:link: ./tradecentric-formerly-punchout2go/liferay-commerce-connector-to-tradecentric-reference-guide.md
 :::
 ::::

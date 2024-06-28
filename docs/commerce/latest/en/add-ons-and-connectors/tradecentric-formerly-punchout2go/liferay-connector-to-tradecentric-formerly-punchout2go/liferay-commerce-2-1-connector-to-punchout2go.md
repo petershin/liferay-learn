@@ -9,7 +9,7 @@ taxonomy-category-names:
 - Liferay PaaS
 - Liferay SaaS
 ---
-# Liferay Commerce Connector to PunchOut2Go
+# Liferay Commerce 2.1 Connector to PunchOut2Go
 
 {bdg-primary}`Subscription`
 
@@ -39,7 +39,7 @@ Once the server finishes restarting, the connector is active and ready for confi
 
 ## Configure the Connector
 
-You can configure the PunchOut2Go connector for each [channel](../../store-management/channels.md). During configuration, you must have the URL of the store's catalog page.
+You can configure the PunchOut2Go connector for each [channel](../../../store-management/channels.md). During configuration, you must have the URL of the store's catalog page.
 
 1. Navigate to the *Control Panel* &rarr; *Commerce* &rarr; *Channels*.
 
@@ -59,13 +59,13 @@ You must enable the punch out access token for the buyer's procurement system to
 
 1. Click *API Authentication* under *Security*.
 
-   ![Select API Authentication to configure the access token.](./liferay-commerce-2-1-liferay-commerce-connector-to-punchout2go/images/01.png)
+   ![Select API Authentication to configure the access token.](./liferay-commerce-2-1-connector-to-punchout2go/images/01.png)
 
 1. Click *Auto Login Punch Out Access Token* in the left menu.
 
 1. Check the *Enabled* checkbox.
 
-   ![Enable the auto login access token.](./liferay-commerce-2-1-liferay-commerce-connector-to-punchout2go/images/02.png)
+   ![Enable the auto login access token.](./liferay-commerce-2-1-connector-to-punchout2go/images/02.png)
 
 1. Click the *Update* button.
 
@@ -81,7 +81,7 @@ After enabling the punch out access token, you can configure the punch out acces
 
    * **Access Token Size**: Sets the size of the token
 
-   ![Configure the validity and size of the access token.](./liferay-commerce-2-1-liferay-commerce-connector-to-punchout2go/images/03.png)
+   ![Configure the validity and size of the access token.](./liferay-commerce-2-1-connector-to-punchout2go/images/03.png)
 
 1. Click *Save*.
 
@@ -109,7 +109,7 @@ It is best practice to have a role for vendors using punch out. To learn more ab
 
    * View Open Orders
 
-   ![Permissions for a punch out role.](./liferay-commerce-2-1-liferay-commerce-connector-to-punchout2go/images/04.png)
+   ![Permissions for a punch out role.](./liferay-commerce-2-1-connector-to-punchout2go/images/04.png)
 
 1. Click *Save*.
 
@@ -119,7 +119,7 @@ This creates the new punch out role with the required bare minimum permissions. 
 
 After deploying and configuring the connector, users are redirected to the appropriate procurement system when they click *Submit*.
 
-![Punch out redirects after submitting an order.](./liferay-commerce-2-1-liferay-commerce-connector-to-punchout2go/images/05.png)
+![Punch out redirects after submitting an order.](./liferay-commerce-2-1-connector-to-punchout2go/images/05.png)
 
 ## Related Topics
 

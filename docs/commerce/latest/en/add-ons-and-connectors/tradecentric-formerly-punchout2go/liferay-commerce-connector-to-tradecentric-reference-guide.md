@@ -28,4 +28,4 @@ There are several configuration terms in TradeCentric (formerly PunchOut2Go).
 
 ## Related Topics
 
-* [Liferay Commerce Connector to TradeCentric (formerly PunchOut2Go)](./liferay-commerce-connector-to-tradecentric-formerly-punchout2go.md)
+* [Liferay Connector to TradeCentric (formerly PunchOut2Go)](./liferay-connector-to-tradecentric-formerly-punchout2go.md)

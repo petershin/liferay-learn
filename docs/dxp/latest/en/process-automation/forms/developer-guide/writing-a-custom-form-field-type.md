@@ -12,21 +12,21 @@ The Forms application contains many highly configurable [field types out-of-the-
 
 ![There are many useful form elements.](./writing-a-custom-form-field-type/images/01.png)
 
-* [Deploy an example project and see how it works](#examine-the-custom-form-field-in-liferay)
-* [Understand the form field's code](#understand-the-form-field-s-code)
-* [Add custom settings to the field](#add-custom-settings-to-the-form-field)
+- [Deploy an example project and see how it works](#examine-the-custom-form-field-in-liferay)
+- [Understand the form field's code](#understand-the-form-field-s-code)
+- [Add custom settings to the field](#add-custom-settings-to-the-form-field)
 
-```{note}
-- **Form field types in other applications:** Forms created with Documents and Media (Metadata Sets), Web Content (Structures), and the Forms application can all consume the same form fields. By default a custom form field is only used in the Forms application. To specify explicitly which applications should enable the form field type, add the component property:
+!!! note
+    Forms created with Documents and Media (Metadata Sets), Web Content (Structures), and the Forms application can all consume the same form fields. By default a custom form field is only used in the Forms application. To specify explicitly which applications should enable the form field type, add the component property:
 
     ```properties
     "ddm.form.field.type.scope=document-library,forms,journal"
     ```
 
-- **Project compatibility:** The example project runs on Liferay 7.4. If you're running Liferay 7.3, the source code is compatible but the [Workspace project](../../../liferay-development/tooling/liferay-workspace/what-is-liferay-workspace.md) must be reconfigured for Liferay 7.3. The steps to do this are included in the instructions below.
+The example project runs on Liferay 7.4. If you're running Liferay 7.3, the source code is compatible but the [Workspace project](../../../liferay-development/tooling/liferay-workspace.md) must be reconfigured for Liferay 7.3. The steps to do this are included in the instructions below.
 
-    If you're running Liferay 7.2, this source code does not run due to a difference in supported frontend frameworks. Please see [Developing a Custom Form Field for Liferay 7.2](./developing-a-custom-form-field-for-liferay-7-2.md) to learn how to adapt the C2P9 Slider code sample for 7.2.
-```
+!!! note
+    If you're running Liferay 7.2, this source code does not run due to a difference in supported frontend frameworks. See [Developing a Custom Form Field for Liferay 7.2](./developing-a-custom-form-field-for-liferay-7-2.md) to learn how to adapt the C2P9 Slider code sample for 7.2.
 
 ## Examine the Custom Form Field in Liferay 
 
@@ -55,15 +55,15 @@ Then, follow these steps:
    ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
    ```
 
-   ```{tip}
-   This command is the same as copying the deployed jars to /opt/liferay/osgi/modules on the Docker container.
-   ```
+   !!! tip
+       This command is the same as copying the deployed jars to /opt/liferay/osgi/modules on the Docker container.
 
-   ```{note}
-   For Liferay 7.3, make these adjustments to the project before deploying it:
-   - In `c2p9-impl/package.json`, change the `devDependencies` reference from `@liferay/portal-7.4` to `@liferay/portal-7.3`.
-   - In `gradle.properties`, change the `liferay.workspace.product` value to `portal-7.3-ga8` (if a Liferay 7.3 version newer than GA8 is available, try to reference it here instead).
-   ```
+   !!! note
+       For Liferay 7.3, make these adjustments to the project before deploying it:
+
+       - In `c2p9-impl/package.json`, change the `devDependencies` reference from `@liferay/portal-7.4` to `@liferay/portal-7.3`.
+
+       - In `gradle.properties`, change the `liferay.workspace.product` value to `portal-7.3-ga8` (if a Liferay 7.3 version newer than GA8 is available, try to reference it here instead).
 
 1. Confirm the deployment in the Liferay Docker container console.
 
@@ -99,7 +99,7 @@ A basic form field contains a Java class and a JavaScript file. In the C2P9 Slid
 
 `ddm.form.field.type.description`: provide the language key for the description text. Make sure the translated value is defined in the `Language.properties` file.
 
-`ddm.form.field.type.display.order`: set an integer or floating point value to determine where the field is displayed in the Form Builder sidebar. Fields with the same value are ordered randomly.
+`ddm.form.field.type.display.order`: set an integer or floating point value to determine where the field appears in the Form Builder sidebar. Fields with the same value are ordered randomly.
 
 `ddm.form.field.type.icon`: decide which icon type to use for your field. Choose any [Clay Icon](https://clayui.com/docs/components/icon.html).
 

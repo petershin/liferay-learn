@@ -11,7 +11,7 @@ taxonomy-category-names:
 
 {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+`
 
-Custom filter client extensions define JavaScript functions for creating customizable filter interfaces. These extensions can be added to [data set views](./data-set-views/data-set-view-filters.md), enhancing the user experience by providing tailored filtering capabilities.
+Custom filter client extensions define JavaScript functions for creating customizable filter interfaces. These extensions can be added to [data set views](../data-sets/data-set-views/data-set-view-filters.md), enhancing the user experience by providing tailored filtering capabilities.
 
 ## Prerequisites
 
@@ -150,7 +150,7 @@ Start by setting up the environment:
 
 Create the data set and the data set view:
 
-1. [Create a Data Set](./creating-data-sets.md) using these settings:
+1. [Create a Data Set](../data-sets/creating-data-sets.md) using these settings:
 
    | Field            | Content                                 |
    | :--------------- | :-------------------------------------- |

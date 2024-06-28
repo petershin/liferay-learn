@@ -13,7 +13,7 @@ Blade CLI exists to create, build, and deploy Liferay projects in Liferay Worksp
 
 ## Creating a Liferay Workspace
 
-Liferay Workspace is a set of folders on your machine where you store projects and DevOps configurations. Liferay Workspaces can be imported into any IDE, because they are Gradle projects. See [Liferay Workspace](../liferay-workspace/what-is-liferay-workspace.md) for further information. To create a Liferay Workspace follow these steps,
+Liferay Workspace is a set of folders on your machine where you store projects and DevOps configurations. Liferay Workspaces can be imported into any IDE, because they are Gradle projects. See [Liferay Workspace](../liferay-workspace.md) for further information. To create a Liferay Workspace follow these steps,
 
 1. In your CLI, navigate to the folder where you want to create a Liferay Workspace.
 
@@ -90,4 +90,4 @@ If you have Liferay projects prior to version 7.0, they are in a Plugins SDK. To
 
 ## Related Topics
 
-[Liferay Workspace](../liferay-workspace/what-is-liferay-workspace.md)
+[Liferay Workspace](../liferay-workspace.md)

@@ -48,13 +48,13 @@ For example, you can [embed widgets in your theme](./themes/theme-development/wo
 
 ### Bundling Resources
 
-Resources may be bundled into your theme or from other sources to bring together many sources of code at once. This allows you to adapt your strategy depending on how you want to deploy different changes.
+Resources may be bundled into your theme or from other sources to bring together many sources of code at once so you can adapt your strategy depending on how you want to deploy different changes.
 
-* [Themelets](./themes/theme-development/bundling-resources/bundling-and-installing-resources-into-your-theme-via-themelets.md) allow you to customize a small number of files, in a modular way that can apply to many themes.
+- [Themelets](./themes/theme-development/bundling-resources/bundling-and-installing-resources-into-your-theme-via-themelets.md) allow the customization of a small number of files, in a modular way that can apply to many themes.
 
-* Theme contributors<!--Add link when available--> allow you to package UI resources and customizations that can be deployed independently of a theme.
+- Theme contributors<!--Add link when available--> allow you to package UI resources and customizations that can be deployed independently of a theme.
 
-* The Resources Importer<!--Add link when available--> uses Site Templates to import files and content necessary to implement a theme.
+- The Resources Importer<!--Add link when available--> uses Site Templates to import files and content necessary to implement a theme.
 
 !!! warning
     The Resources Importer is deprecated as of Liferay DXP 7.1.
@@ -63,11 +63,11 @@ Resources may be bundled into your theme or from other sources to bring together
 
 Themes are also a powerful tool for modifying the behavior of different parts of your Site.
 
-* You can add context variables usable in your [Page Templates](../../site-building/creating-pages/adding-pages/creating-a-page-template.md) so that these templates can hook into the functionality of your theme.
+- You can add context variables usable in your [Page Templates](../../site-building/creating-pages/adding-pages/creating-a-page-template.md) so that these templates can hook into the functionality of your theme.
 
-* You can set variable values<!--Add link when available--> with your theme to influence the behavior of existing functionality in DXP.
+- You can set variable values<!--Add link when available--> with your theme to influence the behavior of existing functionality in DXP.
 
-* You can add [token definitions](../../site-building/site-appearance/style-books/developer-guide/frontend-token-definitions.md) that are used to define categories for styling with [Style Books](../../site-building/site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md).
+- You can add [token definitions](../../site-building/site-appearance/style-books/developer-guide/frontend-token-definitions.md) that are used to define categories for styling with [Style Books](../../site-building/site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md).
 
     !!! note
         Beginning with Liferay DXP 2024.Q2/Portal 7.4 GA120, you can add frontend token definitions in a [theme CSS client extension](./using-a-theme-css-client-extension.md).
@@ -84,8 +84,8 @@ The first step to upgrade your theme is to use the Liferay Theme Generator to ru
 
 A variety of tools are used in developing or extending themes. See these topics for more information:
 
-* Liferay Theme Generator<!--Add link when available-->
-* [Blade](../../liferay-development/tooling/blade-cli/generating-projects-with-blade-cli.md)
-* [Developer Tools Overview](../../liferay-development/tooling/developer-tools-overview.md)
+- Liferay Theme Generator<!--Add link when available-->
+- [Blade](../../liferay-development/tooling/blade-cli/generating-projects-with-blade-cli.md)
+- [Developer Tools](../../liferay-development/tooling.md)
 <!-- this may just be a single link to all the tooling section. This section is the result of https://issues.liferay.com/browse/IFI-2289 -->
 

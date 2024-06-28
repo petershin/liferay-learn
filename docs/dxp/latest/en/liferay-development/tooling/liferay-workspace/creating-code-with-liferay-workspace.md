@@ -14,7 +14,7 @@ Liferay Workspace is the developer's tool for creating and managing Liferay deve
 
 ## Creating Projects
 
-[Blade CLI](../blade-cli/installing-and-updating-blade-cli.md) makes it easy to create projects in Liferay Workspace by providing pre-built project templates. Alternatively, you can create projects manually. 
+[Blade CLI](../blade-cli.md) makes it easy to create projects in Liferay Workspace by providing pre-built project templates. Alternatively, you can create projects manually. 
 
 ### Creating a Project Using Blade CLI
 

@@ -20,7 +20,7 @@ Here you can deploy, test, and inspect a [Gogo Shell command](../../liferay-inte
 
 ## Deploy A Gogo Shell Command with Custom Search Queries
 
-```{include} /_snippets/run-liferay-dxp.md
+```{include} /_snippets/run-liferay-portal.md
 ```
 
 Then, download the project and complete some prerequisites:

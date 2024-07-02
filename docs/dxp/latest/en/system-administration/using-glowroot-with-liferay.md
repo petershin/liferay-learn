@@ -24,6 +24,9 @@ Liferay bundles [Glowroot](https://glowroot.org/), the open source Java applicat
 
 {bdg-primary}`Self-Hosted only`
 
+!!! note
+	To enable Glowroot on Liferay PaaS, see [Enabling Glowroot on PaaS](https://learn.liferay.com/w/liferay-cloud/support-and-troubleshooting/troubleshooting-tools-and-resources/enabling-glowroot-on-paas).
+
 Enable Glowroot with the `GLOWROOT_ENABLED` environment variable set to `true`. For example,
 
 `docker run -e GLOWROOT_ENABLED=true -it -m 8g -p 8080:8080 liferay/dxp:latest`

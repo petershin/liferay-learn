@@ -8,6 +8,7 @@ toc:
   - ./troubleshooting-tools-and-resources/self-healing.md
   - ./troubleshooting-tools-and-resources/liferay-cloud-platform-status.md
   - ./troubleshooting-tools-and-resources/creating-thread-and-heap-dumps.md
+  - ./troubleshooting-tools-and-resources/enabling-glowroot-on-paas.md
 taxonomy-category-names:
 - Cloud
 - Cloud Platform Administration

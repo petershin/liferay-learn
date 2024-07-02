@@ -47,10 +47,6 @@ By default, the CDN is enabled in all environments except `dev` environments. Yo
 
 ![The CDN's status is visible on the Network page.](./load-balancer/images/02.png)
 
-```{note}
-The CDN is not currently supported for the Dubai/Northern UAE region.
-```
-
 ### Clearing the CDN Cache
 
 The CDN improves performance by reducing latency for delivering static content to users. However, it is possible that some of this content is delivered to users before the cache is updated, when the content is no longer valid.
@@ -63,19 +59,18 @@ If it is necessary to clear the CDN cache to force the content to be retrieved a
 
 1. Under the *CDN* section, click *Clear CDN Cache...*
 
-    ![Click the Clear CDN Cache button on the Network page for your environment.](./load-balancer/images/03.png)
+   ![Click the Clear CDN Cache button on the Network page for your environment.](./load-balancer/images/03.png)
 
 1. On the Clear CDN cache page, select all the checkboxes to confirm that you understand the consequences of clearing the cache, and that it applies to all services with CDN enabled.
 
-    ![The Clear CDN cache page.](./load-balancer/images/04.png)
+   ![The Clear CDN cache page.](./load-balancer/images/04.png)
 
 1. Click *Request Cache Clearance*.
 
 The request is sent to clear the cache when you click the button. Allow up to 30 minutes for the cache to be cleared.
 
-```{warning}
-Clearing the CDN cache too frequently can negatively impact server performance, because it can cause a short-term spike in requests to your services that the cache would have served otherwise. Limit clearing the cache to exceptional circumstances to mitigate this impact.
-```
+!!! warning
+    Clearing the CDN cache too frequently can negatively impact server performance, because it can cause a short-term spike in requests to your services that the cache would have served otherwise. Limit clearing the cache to exceptional circumstances to mitigate this impact.
 
 ## Port
 
@@ -126,7 +121,7 @@ Using the `ssl` object in your `LCP.json` file creates a single custom SSL certi
 
 You can also map different SSL certificates to multiple custom domains by using the `certs` property instead of the `ssl` object.
 
-Use the `certs` property in your web server's `LCP.json` file to create a list of certificates that you can use. Group the `key` and `crt` values for each certificate together with the custom domains they will map to:
+Use the `certs` property in your web server's `LCP.json` file to create a list of certificates that you can use. Group the `key` and `crt` values for each certificate together with the custom domains they map to:
 
 ```json
 {
@@ -147,9 +142,8 @@ Use the `certs` property in your web server's `LCP.json` file to create a list o
 }
 ```
 
-```{note}
-Mapping multiple SSL certificates to your custom domains requires adding the `certs` property to the `webserver` service's `LCP.json` file. Adding custom domains through the Liferay Cloud console instead maps all of the custom domains to a single certificate.
-```
+!!! note
+    Mapping multiple SSL certificates to your custom domains requires adding the `certs` property to the `webserver` service's `LCP.json` file. Adding custom domains through the Liferay Cloud console instead maps all of the custom domains to a single certificate.
 
 ### Generating an SSL Certificate
 
@@ -169,13 +163,13 @@ To encode the contents of these files and use them, perform the following steps:
 
 1. Create a new file for both the `key` and `cert` contents:
 
-    ```bash
-    touch originalkeyfile.key
-    ```
+   ```bash
+   touch originalkeyfile.key
+   ```
 
-    ```bash
-    touch originalcertfile.crt
-    ```
+   ```bash
+   touch originalcertfile.crt
+   ```
 
 1. Open the `key` file and copy all of the contents **between and including the begin and end key tags**, and then copy them into the new file created for it (in this example, `originalkeyfile.key`). Save the file.
 
@@ -183,13 +177,13 @@ To encode the contents of these files and use them, perform the following steps:
 
 1. Run the following commands (or use any other preferred encoding method) to convert the files into new files with base64 encoding:
 
-    ```bash
-    openssl base64 -in originalkeyfile.key -out base64keyfile.key
-    ```
+   ```bash
+   openssl base64 -in originalkeyfile.key -out base64keyfile.key
+   ```
 
-    ```bash
-    openssl base64 -in originalcertfile.crt -out base64certfile.crt
-    ```
+   ```bash
+   openssl base64 -in originalcertfile.crt -out base64certfile.crt
+   ```
 
 1. Copy all of the contents from the new, encoded `key` file (in this example, `base64keyfile.key`) and paste them into the `key` variable in your `webserver` service's `LCP.json` file.
 
@@ -197,9 +191,8 @@ To encode the contents of these files and use them, perform the following steps:
 
 The `key` and `cert` values are now encoded and usable in your web server configuration.
 
-```{tip}
-It is possible to include multiple values for the `cert` by concatenating certificates together into a single string, and then encoding the result in base-64 for the `crt` field.
-```
+!!! tip
+    It is possible to include multiple values for the `cert` by concatenating certificates together into a single string, and then encoding the result in base-64 for the `crt` field.
 
 The Network page shows any custom certificates, with a maximum of one per service. For more information, see [Custom Domains](./custom-domains.md).
 
@@ -207,16 +200,16 @@ The Network page shows any custom certificates, with a maximum of one per servic
 
 ## Environment Variables Reference
 
-| Name | Value | Description |
-| :--- | :--- | :--- |
-| `cdn` | false | CDN is disabled by default; can be enabled by setting to `true` |
-| `customDomains` | ["example.com", "www.example.com"] | Name of the custom domain; can list more than one |
-| `targetPort` | 3000 | Port number for the load balancer |
-| `key` | | SSL certificate's key in Base64 format. Group this in an [`ssl`](#adding-custom-ssl-certificates) object, or a [`certs`](#mapping-multiple-ssl-certificates-to-custom-domains) object (to list multiple certificates). |
-| `crt` | | SSL certificate's crt in Base64 format. Group this in an [`ssl`](#adding-custom-ssl-certificates) object, or a [`certs`](#mapping-multiple-ssl-certificates-to-custom-domains) object (to list multiple certificates). |
+| Name            | Value                              | Description                                                                                                                                                                                                            |
+| :-------------- | :--------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `cdn`           | false                              | CDN is disabled by default; can be enabled by setting to `true`                                                                                                                                                        |
+| `customDomains` | ["example.com", "www.example.com"] | Name of the custom domain; can list more than one                                                                                                                                                                      |
+| `targetPort`    | 3000                               | Port number for the load balancer                                                                                                                                                                                      |
+| `key`           | -                                  | SSL certificate's key in Base64 format. Group this in an [`ssl`](#adding-custom-ssl-certificates) object, or a [`certs`](#mapping-multiple-ssl-certificates-to-custom-domains) object (to list multiple certificates). |
+| `crt`           | -                                  | SSL certificate's crt in Base64 format. Group this in an [`ssl`](#adding-custom-ssl-certificates) object, or a [`certs`](#mapping-multiple-ssl-certificates-to-custom-domains) object (to list multiple certificates). |
 
 ## Related Topics
 
-* [Private Network](./private-network.md)
-* [VPN Integration Overview](./vpn-integration-overview.md)
-* [Custom Domains](./custom-domains.md)
+- [Private Network](./private-network.md)
+- [VPN Integration Overview](./vpn-integration-overview.md)
+- [Custom Domains](./custom-domains.md)

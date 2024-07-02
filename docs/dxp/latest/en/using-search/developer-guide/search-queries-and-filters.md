@@ -255,9 +255,15 @@ To create queries for object fields and web content structure fields, you must q
 To create the query with the Liferay search APIs,
 
 ```java
-// HOW DO YOU CREATE THE NESTED QUERY?
+BooleanQuery booleanQuery = queries.booleanQuery();
 
-NestedQuery nestedQuery = _queries.nestedQuery();
+MatchQuery fieldNameQuery = queries.match("ddmFieldArray.ddmFieldName", "ddm__keyword__34698__Text14667665_en_US");
+
+MatchQuery fieldValueQuery = queries.match("ddmFieldArray.ddmFieldValueKeyword_en_US", keywords);
+
+booleanQuery.addMustQueryClauses(fieldNameQuery, fieldValueQuery);
+
+NestedQuery nestedQuery = queries.nested("ddmFieldArray", booleanQuery);
 ```
 
 ## Filtering

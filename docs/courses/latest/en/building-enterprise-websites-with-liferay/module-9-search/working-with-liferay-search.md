@@ -76,6 +76,14 @@ Modifying the search query itself typically requires developing custom code, but
 
 We'll see a specific example of Clarity utilizing search blueprints later in this module.
 
+## Additional Search Capabilities
+
+Liferay offers semantic search, giving you results that go beyond just matching keywords. Semantic search utilizes natural language processing and tries to understand the meaning or intent of the search term. Note, this is currently a beta feature and is available by enabling the feature flag. See [semantic search](https://learn.liferay.com/web/guest/w/dxp/using-search/liferay-enterprise-search/search-experiences/semantic-search) to learn more.
+
+Search results are sorted by the ranking of a relevance score. The higher the relevance score, the higher the ranking in the search results. Scoring is automatically assigned based on Elasticsearch's scoring algorithm. However, an Elasticsearch Learning to Rank plugin can be used with Liferay to prioritize search results based on your specific criteria. See [learning to rank](https://learn.liferay.com/w/dxp/using-search/liferay-enterprise-search/learning-to-rank) to learn more.
+
+Synonym sets can be created in Liferay to add additional coverage for different search terms. For example, visitors to Clarity's website might search for terms such as *eyeglasses* or *sunglasses*, but some might search for synonyms such as *spectacles* or *shades*. Create *Synonym Sets* in Liferay to ensure users find relevant content even if they don't use the exact keywords. See [synonym sets](https://learn.liferay.com/w/dxp/using-search/search-administration-and-tuning/synonym-sets) to learn more.
+
 ## Conclusion
 
 Now that you have an initial understanding of Liferay's search functionality, let's dive into Clarity's specific use cases.

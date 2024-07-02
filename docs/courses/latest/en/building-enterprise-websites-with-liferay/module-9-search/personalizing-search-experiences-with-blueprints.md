@@ -3,7 +3,7 @@ uuid: 85d7e066-677f-4616-aca4-56555601a228
 ---
 # Personalizing Search Experiences with Blueprints
 
-As we saw in the previous lesson, using search facets is great in providing visitors a way to quickly filter search results. However, Clarity may have more complex search query use cases that require customized search. This can be accomplished with the use of Liferay's search blueprints. The following are two examples that demonstrate the capabilities of search blueprints.
+As we saw in the previous lesson, using search facets is great in providing visitors a way to quickly filter search results. However, Clarity has some search use cases that they wish to further customize and personalize. This can be accomplished with the use of Liferay's search blueprints. The following are some examples that demonstrate the capabilities of search blueprints.
 
 ## Exercise: Customizing Search Results with Search Blueprints
 

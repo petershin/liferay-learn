@@ -8,13 +8,10 @@ uuid: 637981f4-8656-4b49-9926-18823840bdf9
 ---
 # Search Queries and Filters
 
-To get sensible results from the [search engine](../installing-and-upgrading-a-search-engine/installing-a-search-engine.md), you must provide a sensible query. Liferay's query APIs are found in the `portal-search-api` module.
-
-*Queries* ask the same yes or no question compute how well a document matches the specified criteria. This is the concept of [relevance scoring](https://www.elastic.co/guide/en/elasticsearch/guide/current/scoring-theory.html). A query might ask _Does the document's content field field contain the words "Liferay", "Content", or "Management", and how relevant is the content of the document to the searched keywords?_
-
+To get sensible results from the [search engine](../installing-and-upgrading-a-search-engine/installing-a-search-engine.md), you must provide a sensible query. Liferay's query APIs are found in the `portal-search-api` module. There aren't separate APIs for filters and queries. To filter instead of querying, construct the query (e.g., `fooQuery`) and add it to the search request, specifying it as a filter using the `SearchRequestBuilder.postFilterQuery(fooQuery)` method.
 *Filters* ask a yes or no question for every search document and do not calculate relevance. A filter might ask _is the status field equal to staging or live?_
 
-There aren't separate APIs for filters and queries. To filter instead of querying, construct the query (e.g., `fooQuery`) and add it to the search request, specifying it as a filter using the `SearchRequestBuilder.postFilterQuery(fooQuery)` method.
+*Queries* ask the same yes or no question compute how well a document matches the specified criteria. This is the concept of [relevance scoring](https://www.elastic.co/guide/en/elasticsearch/guide/current/scoring-theory.html). A query might ask _Does the document's content field field contain the words "Liferay", "Content", or "Management", and how relevant is the content of the document to the searched keywords?_
 
 Here you can deploy, test, and inspect a [Gogo Shell command](../../liferay-internals/fundamentals/using-the-gogo-shell/gogo-shell-commands.md) that queries the [company index](../search-administration-and-tuning/elasticsearch-indexes-reference.md).
 
@@ -226,7 +223,24 @@ private UserLocalService _userLocalService;
 
 ## Implementing Nested Queries
 
-To create queries for object fields and web content structure fields, you must query the field according to its nested structure using a [nested query](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-nested-query.html). Inside it create a boolean query with two clauses that use dot notation: one clause matches the field name, and the other matches the value (e.g., the user's keywords). In Elasticsearch's query syntax it might look like this for a Web Content field: 
+To create queries for object fields, web content structure fields, or document metadata sets, you must query the field according to its nested structure using a [nested query](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-nested-query.html). Inside the query, specify the path (e.g., `ddmFieldArray` for web content and document metadata sets, `nestedFieldArray` for objects) and create a boolean query with two clauses that use dot notation: one clause matches the field name, and the other matches the value (e.g., the user's keywords).
+
+
+### Querying Web Content Structure Fields 
+
+Web content structures and documents and media metadata sets are indexed similarly. A web content structure field is indexed like this:
+
+
+```
+{
+   ddmFieldName=ddm__text__35174__Text25689566_en_US,
+   ddmFieldValueText_en_US_String_sortable=able text,
+   ddmValueFieldName=ddmFieldValueText_en_US,
+   ddmFieldValueText_en_US=Able text
+}
+```
+
+In Elasticsearch's query syntax you might create a query like this for the field: 
 
 ```json
 {
@@ -237,12 +251,12 @@ To create queries for object fields and web content structure fields, you must q
         "must": [
           {
             "match": {
-              "ddmFieldArray.ddmFieldName": "ddm__keyword__34698__Text14667665_en_US"
+              "ddmFieldArray.ddmFieldName": "ddm__text__35174__Text25689566_en_US"
             }
           },
           {
             "match": {
-              "ddmFieldArray.ddmFieldValueKeyword_en_US": "${keywords}"
+              "ddmFieldArray.ddmFieldValueText_en_US": "${keywords}"
             }
           }
         ]
@@ -252,18 +266,77 @@ To create queries for object fields and web content structure fields, you must q
 }
 ```
 
-To create the query with the Liferay search APIs,
+You can create the same query in Liferay's Java search API:
 
 ```java
 BooleanQuery booleanQuery = queries.booleanQuery();
 
-MatchQuery fieldNameQuery = queries.match("ddmFieldArray.ddmFieldName", "ddm__keyword__34698__Text14667665_en_US");
+MatchQuery fieldNameQuery = queries.match("ddmFieldArray.ddmFieldName", "ddm__text__35174__Text25689566_en_US");
 
 MatchQuery fieldValueQuery = queries.match("ddmFieldArray.ddmFieldValueKeyword_en_US", keywords);
 
 booleanQuery.addMustQueryClauses(fieldNameQuery, fieldValueQuery);
 
 NestedQuery nestedQuery = queries.nested("ddmFieldArray", booleanQuery);
+```
+
+### Querying Object Fields
+
+An object's text field is indexed like this:
+
+```
+[
+   {
+      fieldName=fooText,
+      value_en_US=Able Text,
+      valueFieldName=value_en_US
+   },
+   {
+      fieldName=fooText,
+      value_keyword_lowercase=Able Text,
+      valueFieldName=value_keyword_lowercase
+   }
+]
+```
+
+In Elasticsearch's query syntax you might create a query like this for the field: 
+
+```json
+{
+  "nested": {
+    "path": "nestedFieldArray",
+    "query": {
+      "bool": {
+        "must": [
+          {
+            "match": {
+              "nestedFieldArray.fieldName": "fooText"
+            }
+          },
+          {
+            "match": {
+              "nestedFieldArray.value_en_US": "${keywords}"
+            }
+          }
+        ]
+      }
+    }
+  }
+}
+```
+
+You can create the same query in Liferay's Java search API:
+
+```java
+BooleanQuery booleanQuery = queries.booleanQuery();
+
+MatchQuery fieldNameQuery = queries.match("nestedFieldArray.fieldName", "fooText");
+
+MatchQuery fieldValueQuery = queries.match("nestedFieldArray.value_en_US", keywords);
+
+booleanQuery.addMustQueryClauses(fieldNameQuery, fieldValueQuery);
+
+NestedQuery nestedQuery = queries.nested("nestedFieldArray", booleanQuery);
 ```
 
 ## Filtering

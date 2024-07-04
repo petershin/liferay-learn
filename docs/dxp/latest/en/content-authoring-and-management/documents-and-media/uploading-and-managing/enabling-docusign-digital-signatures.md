@@ -54,7 +54,7 @@ Depending on what you chose for your Site Settings Strategy, add your digital ke
 
 1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)) and navigate to *Control Panel* &rarr; *Instance Settings* &rarr; *Digital Signature*.
 
-   For Site Settings, open to the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png.png)) &rarr; *Configuration* &rarr; *Site Settings* &rarr; *Digital Signature*.
+   For Site Settings, open to the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)) &rarr; *Configuration* &rarr; *Site Settings* &rarr; *Digital Signature*.
 
 1. If it's not switched already, switch the toggle to *Enabled*.
 

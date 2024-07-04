@@ -13,8 +13,8 @@ The data model for individuals is defined by the various attributes that get map
 
 To view a list of these attributes, navigate to *Settings* &rarr; *Workspace Data* &rarr; *Definitions* &rarr; *Individuals*.
 
-![A list of attributes is displayed for individuals.](./definitions-for-individuals/images/01.png)
+![A list of attributes appears for individuals.](./definitions-for-individuals/images/01.png)
 
 All the different attributes for individuals are listed. Some attributes may be defined by more than one data source. 
 
-You can choose specific attributes for [creating segments](../../people/segments/creating-segments.md) or [creating a specific breakdown for individuals](../../people/individuals/individuals-dashboard.md#breakdown).
+You can choose specific attributes for [creating segments](../../people/segments/creating-segments.md) or [creating a specific breakdown for individuals](../../people/individuals.md#breakdown).

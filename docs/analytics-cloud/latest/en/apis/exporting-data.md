@@ -9,7 +9,7 @@ uuid: 0ae4dfb4-7b8b-4658-a573-cd97a9a039a3
 ---
 # Exporting Data
 
-Various analytics data can be accessed through the [Sites dashboard](../touchpoints/sites-dashboard.md) and the [Individuals dashboard](../people/individuals/individuals-dashboard.md). Analytics data can also be fetched and exported using Analytics Cloud's APIs. Specifically, you can fetch event data, identity data, individual data, membership data, page data, or segment data.
+Various analytics data can be accessed through the [Sites dashboard](../touchpoints/sites-dashboard.md) and the [Individuals dashboard](../people/individuals.md). Analytics data can also be fetched and exported using Analytics Cloud's APIs. Specifically, you can fetch event data, identity data, individual data, membership data, page data, or segment data.
 
 ## Requesting a Data Export
 
@@ -59,10 +59,9 @@ Various analytics data can be accessed through the [Sites dashboard](../touchpoi
 
    Note, do not use the `-i` include parameter when downloading the ZIP file.
 
-   Requests are handled one at a time. If a second request is made while the first request is still running, you will see a message `"status":"PENDING"` until the first request has finished processing.
+   Requests are handled one at a time. If a second request is made while the first request is still running, the message `"status":"PENDING"` appears until the first request has finished processing.
 
-   The requested data will be available to download for 24 hours. After that time, if the same request is made, it will be processed as a new request.
+   The requested data is made available to download for 24 hours. After that time, if the same request is made, it is processed as a new request.
 
-```{note}
-The data in the downloaded JSON file uses the [JSON Lines](https://jsonlines.org) format, where each line is a valid JSON object. This provides a flexible format that is easy to parse and read, and is supported by various libraries, such as [Jackson](https://github.com/FasterXML/jackson).
-```
+!!! note
+    The data in the downloaded JSON file uses the [JSON Lines](https://jsonlines.org) format, where each line is a valid JSON object. This provides a flexible format that is easy to parse and read, and is supported by various libraries, such as [Jackson](https://github.com/FasterXML/jackson).

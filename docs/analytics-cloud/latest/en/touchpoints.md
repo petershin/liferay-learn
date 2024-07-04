@@ -17,7 +17,7 @@ uuid: bcc57d13-682f-4e91-be8f-126b66328b61
 
 Touchpoints reflect the many different ways your users and customers interact with your brand. Analytics Cloud presents a broad range of analytics data that combines traditional page analytics like page views, with comprehensive site, path, and asset-specific analytics data.
 
-Analytics Cloud presents a [site-wide reporting dashboard](./touchpoints/sites-dashboard.md) that provides a comprehensive report of your entire site. This helps you understand how many unique visitors your site has over time, which pages these visitors access, what their interests are, and more. Analytics for [individual pages](./touchpoints/pages/pages.md) can be easily viewed as well. This includes views, visitors, and bounce rate. [Path analytics](./touchpoints/pages/paths.md) show how visitors arrive at your pages. This includes information on which pages they visit prior to yours, and their location and device type. You can also track the performance of many Liferay DXP [Assets](./touchpoints/assets.md) to drill deeper than the page level to determine how you can improve your site's performance. With [Events Analysis](./touchpoints/events/events-analysis.md), you can analyze how individuals are visiting and interacting with your site.
+Analytics Cloud presents a [site-wide reporting dashboard](./touchpoints/sites-dashboard.md) that provides a comprehensive report of your entire site. This helps you understand how many unique visitors your site has over time, which pages these visitors access, what their interests are, and more. Analytics for [individual pages](./touchpoints/pages.md) can be easily viewed as well. This includes views, visitors, and bounce rate. [Path analytics](./touchpoints/pages/paths.md) show how visitors arrive at your pages. This includes information on which pages they visit prior to yours, and their location and device type. You can also track the performance of many Liferay DXP [Assets](./touchpoints/assets.md) to drill deeper than the page level to determine how you can improve your site's performance. With [Events Analysis](./touchpoints/events.md), you can analyze how individuals are visiting and interacting with your site.
 
 ![The Touchpoints menu provides access to information about Sites, Pages, and Assets.](./touchpoints/images/01.png)
 
@@ -58,7 +58,7 @@ To download this list of site page data as a CSV file, click *Download Reports*.
 !!! note
     Page data is based on canonical URL. Learn more about [canonicalization](https://moz.com/learn/seo/canonicalization) or [how to set a custom canonical URL in DXP](https://learn.liferay.com/w/dxp/site-building/creating-pages/page-settings/configuring-individual-pages#seo).
 
-To view detailed metrics for a single page, click that page in the table. See [Page Analytics](./touchpoints/pages/pages.md) for more information.
+To view detailed metrics for a single page, click that page in the table. See [Page Analytics](./touchpoints/pages.md) for more information.
 
 ![The Visitor Behavior panel shows detailed statistics over a period of time.](./touchpoints/images/03.png)
 
@@ -93,7 +93,7 @@ Remember that there are separate lists for different Asset types. More details o
 
 ### Pages
 
-- [Pages](./touchpoints/pages/pages.md)
+- [Pages](./touchpoints/pages.md)
 - [Paths](./touchpoints/pages/paths.md)
 
 ### Assets
@@ -107,4 +107,4 @@ Remember that there are separate lists for different Asset types. More details o
 
 ### Events
 
-- [Events Analysis](./touchpoints/events/events-analysis.md)
+- [Events Analysis](./touchpoints/events.md)

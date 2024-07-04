@@ -9,7 +9,7 @@ taxonomy-category-names:
 ---
 # Tracking Usage
 
-Analytics Cloud plans are limited by the total amount of [Individuals](../people/individuals/individual-profiles.md) and [Page Views](../touchpoints/pages/pages.md) synced from data sources. When either limit is exceeded, Analytics Cloud users are prompted to upgrade their plans or purchase add-ons to accommodate the additional usage.
+Analytics Cloud plans are limited by the total amount of [Individuals](../people/individuals/individual-profiles.md) and [Page Views](../touchpoints/pages.md) synced from data sources. When either limit is exceeded, Analytics Cloud users are prompted to upgrade their plans or purchase add-ons to accommodate the additional usage.
 
 !!! note
     The Subscription & Usage page updates daily at 12:00 AM UTC.
@@ -43,4 +43,4 @@ Contact your sales representative for further guidance on getting a plan that fi
 ## Related Topics
 
 - [Individual Profiles](../people/individuals/individual-profiles.md)
-- [Pages](../touchpoints/pages/pages.md)
+- [Pages](../touchpoints/pages.md)

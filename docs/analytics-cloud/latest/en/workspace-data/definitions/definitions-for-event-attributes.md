@@ -27,4 +27,4 @@ Event attributes are the metadata that provide context for events. Different att
 
 ## Related Topics
 
-* [Events Analysis](../../touchpoints/events/events-analysis.md)
+- [Events](../../touchpoints/events.md)

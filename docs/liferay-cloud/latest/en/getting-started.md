@@ -23,17 +23,17 @@ Liferay Cloud is a secure and reliable enterprise cloud platform that provides t
 
 There are two Liferay Cloud offerings:
 
-* **Liferay SaaS**: Liferay’s flexible, Digital Experience, Software-as-a-Service offering to create, launch, and optimize digital solutions quickly and conveniently. Updating, patching, and managing Liferay DXP and the other core Liferay Cloud services is part of the package, so you only need to worry about your own [customizations](#customizing-liferay-with-client-extensions).
+- **Liferay SaaS**: Liferay’s flexible, Digital Experience, Software-as-a-Service offering to create, launch, and optimize digital solutions quickly and conveniently. Updating, patching, and managing Liferay DXP and the other core Liferay Cloud services is part of the package, so you only need to worry about your own [customizations](#customizing-liferay-with-client-extensions).
 
-* **Liferay PaaS**: Manage and configure your own Liferay Cloud services to use Liferay DXP in a secure cloud environment. Directly manage and maintain the core Liferay Cloud services in addition to your customizations.
+- **Liferay PaaS**: Manage and configure your own Liferay Cloud services to use Liferay DXP in a secure cloud environment. Directly manage and maintain the core Liferay Cloud services in addition to your customizations.
 
 Worry less and build more with a platform that provides
 
-* [Standards-Compliant Security and Networking Capabilities](#standards-compliant-security-and-networking-capabilities)
-* [Data Recovery and Automated Backups](#data-recovery-and-automated-backups)
-* [Team Management](#team-management)
-* [High Availability, Scalability, and Performance](#high-availability-scalability-and-performance)
-* [Real-Time Alerts](#real-time-alerts)
+- [Standards-Compliant Security and Networking Capabilities](#standards-compliant-security-and-networking-capabilities)
+- [Data Recovery and Automated Backups](#data-recovery-and-automated-backups)
+- [Team Management](#team-management)
+- [High Availability, Scalability, and Performance](#high-availability-scalability-and-performance)
+- [Real-Time Alerts](#real-time-alerts)
 
 All of these features are designed, built, and supported by a dedicated team of Liferay professionals with over a decade of experience running business-critical solutions on Liferay DXP.
 
@@ -43,8 +43,8 @@ Liferay PaaS accelerates application development and deployment by providing a c
 
 Every Liferay PaaS project also comes with
 
-* [Accelerated Development with Built-in CI/CD](#accelerated-development-with-built-in-cicd)
-* [Insightful Monitoring](#insightful-monitoring)
+- [Accelerated Development with Built-in CI/CD](#accelerated-development-with-built-in-cicd)
+- [Insightful Monitoring](#insightful-monitoring)
 
 ## Standards-Compliant Security and Networking Capabilities
 
@@ -64,11 +64,11 @@ With Liferay PaaS, connect a VPN to your cloud services by [configuring and conn
 
 ## Data Recovery and Automated Backups
 
-[Automated backups](./platform-services/backup-service/backup-service-overview.md) ensure that data and documents are protected and ready for restoration in case of data corruption or failure.
+[Automated backups](./platform-services/backup-service.md) ensure that data and documents are protected and ready for restoration in case of data corruption or failure.
 
 With Liferay SaaS, Liferay's team automatically backs up your data on a regular interval. To protect customer data, backups are restricted to [the cloud instance's data region](./reference/liferay-cloud-data-center-locations.md) and is never transported outside of it. Request a manual backup, a backup restore, or a copy of your data by [opening a Support ticket](./support-and-troubleshooting/liferay-cloud-support.md#opening-a-support-ticket).
 
-With Liferay PaaS, you can [fine-tune your automated update schedule](./platform-services/backup-service/backup-service-overview.md#scheduling-automated-backups-and-cleanups) and [restore data from backups](./platform-services/backup-service/restoring-data-from-a-backup.md) yourself when necessary.
+With Liferay PaaS, you can [fine-tune your automated update schedule](./platform-services/backup-service.md#scheduling-automated-backups-and-cleanups) and [restore data from backups](./platform-services/backup-service/restoring-data-from-a-backup.md) yourself when necessary.
 
 ![Liferay Cloud's backup service preserves and protects your data.](./getting-started/images/01.png)
 
@@ -127,14 +127,14 @@ Liferay PaaS delivers [application metrics](./manage-and-optimize/application-me
 
 You can customize your site's features using client extensions, without altering Liferay DXP's code. Client extensions interface with Liferay's API's, promoting flexibility and compatibility with different versions of Liferay.
 
-You can manage client extensions in Liferay SaaS or PaaS from the Liferay Cloud console. Because client extensions are purely a method of customization, you must manage the code yourself (via a [Liferay workspace](https://learn.liferay.com/web/guest/w/dxp/building-applications/tooling/liferay-workspace/what-is-liferay-workspace), and *Liferay cannot guarantee support* for issues that may arise with them.
+You can manage client extensions in Liferay SaaS or PaaS from the Liferay Cloud console. Because client extensions are purely a method of customization, you must manage the code yourself (via a [Liferay workspace](https://learn.liferay.com/web/guest/w/dxp/building-applications/tooling/liferay-workspace/what-is-liferay-workspace)), and *Liferay cannot guarantee support* for issues that may arise with them.
 
 !!! note
     You can deploy as many client extensions as needed up to the resource limit for your subscription plan. You cannot deploy more client extensions if you have already allocated all of your available resources for other services.
 
 ## Related Topics
 
-* [Development Requirements](./getting-started/development-requirements.md)
-* [Configuring Your GitHub Repository](./getting-started/configuring-your-github-repository.md)
-* [Overview of the Liferay Cloud Deployment Workflow](./updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md)
-* [Deploying Changes via the Liferay Cloud Console](./updating-services-in-liferay-paas/deploying-changes-via-the-liferay-cloud-console.md)
+- [Development Requirements](./getting-started/development-requirements.md)
+- [Configuring Your GitHub Repository](./getting-started/configuring-your-github-repository.md)
+- [Overview of the Liferay Cloud Deployment Workflow](./updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md)
+- [Deploying Changes via the Liferay Cloud Console](./updating-services-in-liferay-paas/deploying-changes-via-the-liferay-cloud-console.md)

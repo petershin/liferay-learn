@@ -91,7 +91,7 @@ Your continuity plan includes items to ensure your site keeps running in the eve
 
 Your production environment should take automatic backups on a fixed frequency. Check the frequency to ensure it matches your project's needs.
 
-Additionally, run a manual backup and restore it to your environment to make sure this process is working correctly. See the [Backup Service](../platform-services/backup-service/backup-service-overview.md) and [Restoring an Environment from the Backups Page](../platform-services/backup-service/restoring-data-from-a-backup.md#restoring-an-environment-from-the-backups-page) for more information.
+Additionally, run a manual backup and restore it to your environment to make sure this process is working correctly. See the [Backup Service](../platform-services/backup-service.md) and [Restoring an Environment from the Backups Page](../platform-services/backup-service/restoring-data-from-a-backup.md#restoring-an-environment-from-the-backups-page) for more information.
 
 ### Auto-Scaling
 

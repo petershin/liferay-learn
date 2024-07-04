@@ -62,9 +62,9 @@ curl -o com.liferay.sample.workspace-latest.zip https://repository.liferay.com/n
 
 This `.zip` file includes a workspace with a variety of sample client extensions, including the two needed for this example:
 
-* `liferay-sample-etc-spring-boot`, the microservice client extension project. It also contains an OAuth user agent client extension for authentication.
+- `liferay-sample-etc-spring-boot`, the microservice client extension project. It also contains an OAuth user agent client extension for authentication.
 
-* `liferay-sample-custom-element-2`, a frontend client extension with a custom widget. You'll use this client extension to retrieve data from the microservice in Liferay and demonstrate the successful connection between them.
+- `liferay-sample-custom-element-2`, a frontend client extension with a custom widget. You'll use this client extension to retrieve data from the microservice in Liferay and demonstrate the successful connection between them.
 
 Unzip the workspace and copy the `client-extensions/` folder into your PaaS project repository's `liferay/configs/[ENV]/` folder. Merge it with the existing client extensions folder if you already have one.
 
@@ -143,7 +143,7 @@ Next, create and deploy a new build with your Spring Boot and custom element cli
 
 1. In the Liferay Cloud console, navigate to the *Builds* page.
 
-1. Click *Actions* (![../images/icon-actions.png](Actions icon)) &rarr; *Deploy build to...*
+1. Click *Actions* (![Actions icon](../images/icon-actions.png)) &rarr; *Deploy build to...*
 
    ![Deploy the new build to your UAT environment on the Builds page.](./deploying-microservice-client-extensions-to-liferay-paas/images/01.png)
 

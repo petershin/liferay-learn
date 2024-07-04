@@ -11,9 +11,9 @@ Liferay Cloud provides two ways for customers to take advantage of the Disaster 
 
 Here you'll learn how to recover data manually during a cross-region disaster. These steps are required only when there is a compromise in all three zones in the same geographic region at the same time.
 
-* [Initial Setup](#initial-setup)
-* [During an Incident](#during-an-incident)
-* [Post-incident Recovery](#post-incident-recovery)
+- [Initial Setup](#initial-setup)
+- [During an Incident](#during-an-incident)
+- [Post-incident Recovery](#post-incident-recovery)
 
 ## Initial Setup
 
@@ -35,15 +35,15 @@ To ensure the two environments are connected,
 
 1. In the VPN section, enter this information:
 
-    * **VPN Type**: OpenVPN
-    * **Server Address**: The server address.
-    * **Account Name**: The administrator's email address.
-    * **Password**: The administrator's password.
-    * **Certificate**: The certificate code.
-    * **Forwarding IP**: The forwarding IP address.
-    * **Forwarding Port**: The forwarding port number.
-    * **Local Hostname**: The VPN's hostname.
-    * **Local Port**: The local port number.
+   - **VPN Type**: OpenVPN
+   - **Server Address**: The server address.
+   - **Account Name**: The administrator's email address.
+   - **Password**: The administrator's password.
+   - **Certificate**: The certificate code.
+   - **Forwarding IP**: The forwarding IP address.
+   - **Forwarding Port**: The forwarding port number.
+   - **Local Hostname**: The VPN's hostname.
+   - **Local Port**: The local port number.
 
 1. Click *Connect VPN*.
 
@@ -65,25 +65,24 @@ First, retrieve your production environment's master token (this requires admini
 
 1. Run this command to get the environment's master token:
 
-    ```bash
-    env | grep LCP_PROJECT_MASTER_TOKEN
-    ```
+   ```bash
+   env | grep LCP_PROJECT_MASTER_TOKEN
+   ```
 
     The master token is the hexadecimal ID after the `=` in the result.
 
 Once you have the production environment's master token, set these [environment variables](../../reference/defining-environment-variables.md) in your DR environment:
 
-* **LCP_EXTERNAL_PROJECT_ID**: the production environment's project ID (for example, `acme-prd`)
+- **LCP_EXTERNAL_PROJECT_ID**: the production environment's project ID (for example, `acme-prd`)
 
-* **LCP_BACKUP_RESTORE_SCHEDULE**: a [cron scheduling](https://crontab.guru/) value that defines the frequency of automated backups. See [Scheduling Automated Backups and Cleanups](../../platform-services/backup-service/backup-service-overview.md#scheduling-automated-backups-and-cleanups) for more information.
+- **LCP_BACKUP_RESTORE_SCHEDULE**: a [cron scheduling](https://crontab.guru/) value that defines the frequency of automated backups. See [Scheduling Automated Backups and Cleanups](../../platform-services/backup-service.md#scheduling-automated-backups-and-cleanups) for more information.
 
 Set this value as a [secret](../../tuning-security-settings/managing-secure-environment-variables-with-secrets.md) in your DR environment:
 
-* **LCP_EXTERNAL_PROJECT_MASTER_TOKEN**: your production environment's master token
+- **LCP_EXTERNAL_PROJECT_MASTER_TOKEN**: your production environment's master token
 
-```{warning}
-Set these environment variables in your Disaster Recovery environment, **not** your production environment. Setting these variables in a production environment may result in backups being restored to it unexpectedly.
-```
+!!! warning
+    Set these environment variables in your Disaster Recovery environment, **not** your production environment. Setting these variables in a production environment may result in backups being restored to it unexpectedly.
 
 Saving these variables in your DR environment enables automated restores.
 
@@ -105,7 +104,7 @@ During a cross-region incident, follow these steps:
 
 Since the DR environment becomes the main environment accessible to users for the duration of the incident, your normal database restoration schedule may overwrite data after you switch production over to it.
 
-If you are using the [`LCP_BACKUP_RESTORE_SCHEDULE` environment variable](../../platform-services/backup-service/backup-service-overview.md#environment-variables-reference) to regularly restore data to your DR environment, temporarily disable the restoration schedule by removing the variable. This prevents data created during the incident from being overwritten by a scheduled restore.
+If you are using the [`LCP_BACKUP_RESTORE_SCHEDULE` environment variable](../../platform-services/backup-service.md#environment-variables-reference) to regularly restore data to your DR environment, temporarily disable the restoration schedule by removing the variable. This prevents data created during the incident from being overwritten by a scheduled restore.
 
 Follow these steps to disable the restoration schedule while it is accessible:
 
@@ -113,7 +112,7 @@ Follow these steps to disable the restoration schedule while it is accessible:
 
 1. Click the eye icon to reveal the value for your `LCP_BACKUP_RESTORE_SCHEDULE` variable:
 
-    ![Click the eye icon to reveal the schedule configuration.](./configuring-cross-region-disaster-recovery/images/02.png)
+   ![Click the eye icon to reveal the schedule configuration.](./configuring-cross-region-disaster-recovery/images/02.png)
 
 1. Make a note of the value for `LCP_BACKUP_RESTORE_SCHEDULE` so that you can quickly replace it after the incident.
 
@@ -123,9 +122,8 @@ Follow these steps to disable the restoration schedule while it is accessible:
 
 Next, restore a backup from your Production environment to ensure your DR environment has the most recent updates.
 
-```{important}
-If you were using the `LCP_BACKUP_RESTORE_SCHEDULE` environment variable to regularly restore to your DR environment, you may already have a more recent stable backup restored and ready (depending on your configured frequency). If you had a backup automatically restored more recently, skip manually restoring the backup.
-```
+!!! important
+    If you were using the `LCP_BACKUP_RESTORE_SCHEDULE` environment variable to regularly restore to your DR environment, you may already have a more recent stable backup restored and ready (depending on your configured frequency). If you had a backup automatically restored more recently, skip manually restoring the backup.
 
 Follow these steps to restore the latest stable backup of Production to the DR environment:
 
@@ -133,23 +131,22 @@ Follow these steps to restore the latest stable backup of Production to the DR e
 
 1. Click the tab corresponding to the Production environment.
 
-    ```{note}
-    The Backup History lists the backups in two tabs: one for the DR environment and one for the Production environment.
-    ```
+   !!! note
+       The Backup History lists the backups in two tabs: one for the DR environment and one for the Production environment.
 
 1. Click *Actions* (![Actions](./configuring-cross-region-disaster-recovery/images/03.png)) for the latest stable backup in the Production environment; then select *Restore*.
 
-    ![Restore the latest stable backup from the Production environment to the DR environment.](./configuring-cross-region-disaster-recovery/images/04.png)
+   ![Restore the latest stable backup from the Production environment to the DR environment.](./configuring-cross-region-disaster-recovery/images/04.png)
 
 ### Verify the DR Environment's VPN Status and Reindex
 
 Next, follow these steps to ensure your DR environment is ready for incoming traffic:
 
-1. Verify that your VPN is connected to the DR environment by navigating to the _Settings_ &rarr; _VPN_ page for your DR environment.
+1. Verify that your VPN is connected to the DR environment by navigating to the *Settings* &rarr; *VPN* page for your DR environment.
 
-    ![Check the VPN status for your DR environment to confirm that it is properly connected.](./configuring-cross-region-disaster-recovery/images/05.png)
+   ![Check the VPN status for your DR environment to confirm that it is properly connected.](./configuring-cross-region-disaster-recovery/images/05.png)
 
-    If the appropriate VPN is not connected, set up the connection. See [Connecting a VPN Server to Liferay Cloud](../../configuring-the-cloud-network/connecting-a-vpn-server-to-liferay-cloud.md) for more information.
+   If the appropriate VPN is not connected, set up the connection. See [Connecting a VPN Server to Liferay Cloud](../../configuring-the-cloud-network/connecting-a-vpn-server-to-liferay-cloud.md) for more information.
 
 1. Log onto your DXP instance (using the IP address, since the custom domain does not yet point to the DR environment).
 
@@ -215,9 +212,8 @@ Restore the data from your DR environment back to your normal production environ
 
 1. Click the tab corresponding to the DR environment.
 
-    ```{note}
-    The Backup History lists the backups in two tabs: one for the DR environment and one for the Production environment.
-    ```
+   !!! note
+       The Backup History lists the backups in two tabs: one for the DR environment and one for the Production environment.
 
 1. For the most recent backup (the one you just created), click the *Actions* button (![Actions](./configuring-cross-region-disaster-recovery/images/03.png)) and select *Restore*.
 
@@ -229,7 +225,7 @@ Restore the data from your DR environment back to your normal production environ
 
 Follow these steps to ensure your production environment is ready for incoming traffic:
 
-1. Verify that your VPN is connected to the production environment by navigating to the _Settings_ &rarr; _VPN_ page for your production environment.
+1. Verify that your VPN is connected to the production environment by navigating to the *Settings* &rarr; *VPN* page for your production environment.
 
    If the appropriate VPN is not connected, set up the connection. See [Connecting a VPN Server to Liferay Cloud](../../configuring-the-cloud-network/connecting-a-vpn-server-to-liferay-cloud.md) for more information.
 
@@ -245,23 +241,22 @@ Allow some time for the reindex to complete.
 
 Because the webserver service redirected all traffic to the DR environment during the incident, these settings must be updated again so that all traffic is redirected back to the original Production environment.
 
-1. Navigate to _Services_ on the left menu.
+1. Navigate to *Services* on the left menu.
 
-1. Click on _webserver_ in the list of Services.
+1. Click on *webserver* in the list of Services.
 
-1. Click the _Custom Domains_ tab.
+1. Click the *Custom Domains* tab.
 
    ![Remove the custom domain from the DR environment.](./configuring-cross-region-disaster-recovery/images/10.png)
 
 1. Remove the custom domain from the DR environment.
 
-    ```{warning}
-    Removing the custom domain creates downtime until your Production environment is receiving traffic again.
-    ```
+   !!! warning
+       Removing the custom domain creates downtime until your Production environment is receiving traffic again.
 
 1. Update the DNS records and add the custom domain back to the Production environment. For more information, see [Custom Domains](../../configuring-the-cloud-network/custom-domains.md).
 
-1. Click _Update Custom Domain_.
+1. Click *Update Custom Domain*.
 
 Traffic should now be directed back to the original Production environment. If you do not use automatically scheduled database restores to your DR environment, the disaster recovery process is complete.
 

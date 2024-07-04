@@ -23,11 +23,11 @@ Click on a default event to see the specific attributes that are associated with
 
 The attributes are presented in a list with the following properties:
 
-* Attribute Name
-* Display Name
-* Description
-* Sample Raw Data
-* Data Typecast
+- Attribute Name
+- Display Name
+- Description
+- Sample Raw Data
+- Data Typecast
 
 A sample JavaScript snippet is also provided to serve as a template for defining custom events. Check or uncheck the attributes you need and click the *Copy* button to copy the code snippet.
 
@@ -55,11 +55,11 @@ Click on a custom event to see the specific attributes that are associated with 
 
 The attributes are presented in a list with the following properties:
 
-* Attribute Name
-* Display Name
-* Description
-* Sample Raw Data
-* Data Typecast
+- Attribute Name
+- Display Name
+- Description
+- Sample Raw Data
+- Data Typecast
 
 The image above shows an example of how a custom event might track attributes such as payment type, total amount, and whether autopay was selected.
 
@@ -77,4 +77,4 @@ To block a custom event, from the Custom Events tab check the box next to the ev
 
 ## Related Topics
 
-* [Events Analysis](../../touchpoints/events/events-analysis.md)
+- [Events](../../touchpoints/events.md)

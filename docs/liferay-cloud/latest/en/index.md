@@ -34,7 +34,7 @@ uuid: 7d1a4e73-0b50-465f-99dc-c531c3f3dd25
 :::{grid-item-card} Platform Services
 :link: ./platform-services.md
 
-[Backup Service Overview](./platform-services/backup-service/backup-service-overview.md)
+[Backup Service](./platform-services/backup-service.md)
 [Continuous Integration](./platform-services/continuous-integration.md)
 [Database Service](./platform-services/database-service.md)
 :::

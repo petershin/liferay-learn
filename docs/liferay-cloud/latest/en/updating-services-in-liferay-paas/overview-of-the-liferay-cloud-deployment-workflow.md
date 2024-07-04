@@ -22,7 +22,7 @@ All workflows begin with making changes to your project's Git repository (i.e., 
 Configure a service's [LCP.json file](../reference/configuration-via-lcp-json.md), or make environment-specific and project-wide changes to a service via its `configs/` folder. To learn more about each service's configuration options, see their respective documentation:
 
 - [Liferay Service](../customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.md)
-- [Backup Service](../platform-services/backup-service/backup-service-overview.md)
+- [Backup Service](../platform-services/backup-service.md)
 - [Continuous Integration Service (Jenkins)](../platform-services/continuous-integration.md)
 - [Database Service](../platform-services/database-service.md)
 - [Search Service (Elasticsearch)](../platform-services/search-service.md)

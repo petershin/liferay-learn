@@ -14,19 +14,15 @@ You can also use custom SQL scripts to perform additional updates to a database 
 
 Restoring data from a backup results in downtime for the database service and any services that depend on it (including Liferay). However, if your backup service is at least version `5.x.x`, you can minimize the downtime by changing the default `OVERWRITE` restore behavior to `PREPARE_AND_SWAP`. This starts a separate, fresh database instance and volume and only switches to the new instance when it's ready. Set the [`LCP_BACKUP_RESTORE_STRATEGY` environment variable](./backup-service-overview.md#environment-variables-reference) to `PREPARE_AND_SWAP` to use this strategy.
 
-See [Backup Service](./backup-service-overview.md) and [Downloading and Uploading Backups](./downloading-and-uploading-backups.md) for more information about the Backups page.
-
-```{important}
-Only users with the Admin role for the chosen environment can manually restore environments via the Liferay Cloud console.
-```
+!!! important
+    Only users with the Admin role for the chosen environment can manually restore environments via the Liferay Cloud console.
 
 ## Restoring an Environment from the Backups Page
 
 The *Backups* page of each environment has a list of all recent backups taken (automatically and manually). Restoring a backup to an environment from this page restores the data used by each service, but it does *not* change the build or Docker image that each service is using.
 
-```{warning}
-The `backup` service version of the backup you're restoring should match the target environment before the restore to ensure it completes successfully. The Liferay [fix pack level](https://learn.liferay.com/w/dxp/installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier) should also match to avoid causing errors with a mismatched database schema. If you restore a backup that requires a different build from what is currently deployed in the environment, then [deploy an appropriate build](../../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md) *before* beginning the restore.
-```
+!!! warning
+    The `backup` service version of the backup you're restoring should match the target environment before the restore to ensure it completes successfully. The Liferay [fix pack level](https://learn.liferay.com/w/dxp/installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier) should also match to avoid causing errors with a mismatched database schema. If you restore a backup that requires a different build from what is currently deployed in the environment, then [deploy an appropriate build](../../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md) *before* beginning the restore.
 
 Follow these steps to restore an environment from a backup:
 
@@ -44,9 +40,8 @@ Follow these steps to restore an environment from a backup:
 
    ![Select the environment you want to restore.](./restoring-data-from-a-backup/images/02.png)
 
-   ```{note}
-   Administrators can only restore environments to which they have access.
-   ```
+   !!! note
+      Administrators can only restore environments to which they have access.
 
 1. Click all *checkboxes* that appear below. You must check these boxes to enable the button to initiate the restore.
 
@@ -64,8 +59,8 @@ You can also use custom SQL scripts to perform additional updates to your databa
 
 SQL scripts support these formats:
 
-* `.sql` is used for individual scripts.
-* `.zip`, `.tgz`, or `.gz` are used for multiple scripts within a compressed file.
+- `.sql` is used for individual scripts.
+- `.zip`, `.tgz`, or `.gz` are used for multiple scripts within a compressed file.
 
 ### Preparing SQL Scripts for PostgreSQL
 
@@ -73,8 +68,8 @@ Scripts for PostgreSQL only run on the database specified in the secret `lcp-sec
 
 The database user specified in the `lcp-secret-database-user` secret is used to run your scripts with the `psql` command, with these options:
 
-* `--single-transaction`: Runs all commands within one transaction.
-* `-v ON_ERROR_STOP=1`: Forces all errors encountered to stop executing the script and report the error in the restore process.
+- `--single-transaction`: Runs all commands within one transaction.
+- `-v ON_ERROR_STOP=1`: Forces all errors encountered to stop executing the script and report the error in the restore process.
 
 You can see details about the script execution in the backup log, like this example:
 
@@ -109,6 +104,5 @@ Jun 20 14:46:41.970 build-39 [backup-57488f8b8-rjq4f] Running Script: SanitizeUs
 
 ## Related Topics
 
-* [Backup Service](./backup-service-overview.md)
-* [Downloading and Uploading Backups](./downloading-and-uploading-backups.md)
-* [Database Service](../database-service.md)
+- [Downloading and Uploading Backups](./downloading-and-uploading-backups.md)
+- [Database Service](../database-service.md)

@@ -24,7 +24,7 @@ For understanding your site's data:
 
 For understanding your audience:
 
-- [Individuals Dashboard](../people/individuals/individuals-dashboard.md)
+- [Individuals Dashboard](../people/individuals.md)
 - [Individual Profiles](../people/individuals/individual-profiles.md)
 - [Segments](../people/segments.md)
 
@@ -68,5 +68,5 @@ Well done! To browse all the available features, options, and configurations for
 ## Related Topics
 
 - [Sites Dashboard](../touchpoints/sites-dashboard.md)
-- [Individuals Dashboard](../people/individuals/individuals-dashboard.md)
+- [Individuals](../people/individuals.md)
 - [A/B Testing](../optimization/a-b-testing.md)

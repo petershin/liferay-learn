@@ -18,9 +18,9 @@ After [syncing data](./connecting-liferay-dxp-to-analytics-cloud.md), Analytics 
 For understanding your site's data:
 
 - [Sites Dashboard](../touchpoints/sites-dashboard.md)
-- [Individual Pages](../touchpoints/pages/pages.md) and [Paths](../touchpoints/pages/paths.md)
+- [Individual Pages](../touchpoints/pages.md) and [Paths](../touchpoints/pages/paths.md)
 - [Assets](../touchpoints/assets.md)
-- [Events Analysis](../touchpoints/events/events-analysis.md)
+- [Events Analysis](../touchpoints/events.md)
 
 For understanding your audience:
 

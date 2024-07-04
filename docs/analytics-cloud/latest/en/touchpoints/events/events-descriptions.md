@@ -9,7 +9,7 @@ uuid: 4e116f5d-5b51-4c19-be7e-68530b3d7c0b
 ---
 # Events Descriptions
 
-Below are the various events that can be analyzed in the [events analysis tool](./events-analysis.md).
+Below are the various events that can be analyzed in the events analysis tool.
 
 ## Asset Clicked
 

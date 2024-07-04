@@ -19,7 +19,7 @@ Downloadable PDF reports are available for these dashboards:
 - [Assets Dashboard for Web Content](../touchpoints/assets/web-content.md)
 - [Individuals Dashboard](../people/individuals.md)
 - [Segments Dashboard](../people/segments.md)
-- [Site Page Dashboard](../touchpoints/pages/pages.md)
+- [Site Page Dashboard](../touchpoints/pages.md)
 - [Sites Dashboard](../touchpoints/sites-dashboard.md)
 
 Each PDF report shows the same information as its respective dashboard (e.g. sites dashboard, individuals dashboard, site page dashboard, etc.)

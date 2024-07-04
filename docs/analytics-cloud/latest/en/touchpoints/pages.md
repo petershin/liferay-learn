@@ -23,7 +23,7 @@ To view analytics on a specific page,
 
 1. Click *Sites* in the left navigation menu. Click the *Pages* tab. A listing of your site's pages appears.
 
-   To download this list of site pages as a CSV file, click *Download Reports*. See [Downloading Reports](../../reference/downloading-reports.md) to learn more.
+   To download this list of site pages as a CSV file, click *Download Reports*. See [Downloading Reports](../reference/downloading-reports.md) to learn more.
 
 1. Select a page from the list to see detailed analytics.
 
@@ -59,9 +59,9 @@ The Overview tab of a Page's metrics has several data presentations. The first c
 
 Select the time period for the data displayed. Select *Compare to Previous* to see a second comparison line of the previous time period.
 
-![Trends can be identified over selected periods of time.](pages/images/01.png)
+![Trends can be identified over selected periods of time.](./pages/images/01.png)
 
-To download this dashboard view as a PDF file, click *Download Reports*. See [Downloading Reports](../../reference/downloading-reports.md) to learn more.
+To download this dashboard view as a PDF file, click *Download Reports*. See [Downloading Reports](../reference/downloading-reports.md) to learn more.
 
 ### Unique Visitors
 
@@ -73,7 +73,7 @@ A unique visitor has a unique IP address in Analytics Cloud. Therefore, if the s
 
 Useful with the time period filter, View is the number of views for a page in a given period of time. It's not the same as the number of visitors, because it doesn't try to count only unique IP addresses. Over the last 30 days, one visitor (IP address) could come back to the page 100 times. That means there are 100 page views, but only one visitor (assuming she used the same machine to access the page each time). However, a unique view isn't logged for a single user unless at least 30 minutes of inactivity on the Page passes before the user interacts with the Page again.
 
-Note, Liferay DXP uses the same URL for a site page regardless of the chosen language. To have Analytics Cloud track each language as a distinct site page, [enable localized URLs](../../troubleshooting/connecting-data-sources.md#enabling-localized-urls-for-site-pages).
+Note, Liferay DXP uses the same URL for a site page regardless of the chosen language. To have Analytics Cloud track each language as a distinct site page, [enable localized URLs](../troubleshooting/connecting-data-sources.md#enabling-localized-urls-for-site-pages).
 
 ### Bounce Rate
 
@@ -116,13 +116,13 @@ The Audience report uses charts to present information about the audience intera
 
 **Viewer Segments:** A bar chart shows the percentage of known individuals that comprise each Segment. The chart shows a bar for each of the top five Segments, and then aggregates the remaining Segments into the last bar. A tooltip on the last bar shows the values for each of the remaining Segments.
 
-![Quickly identify and segment users of your site.](pages/images/02.png)
+![Quickly identify and segment users of your site.](./pages/images/02.png)
 
 ## Views by Location
 
 The map in the Views by Location panel shows the number of views by country in the selected time period.
 
-![User locations can be seen by viewing the location panel map.](pages/images/03.png)
+![User locations can be seen by viewing the location panel map.](./pages/images/03.png)
 
 ## Views by Technology
 
@@ -132,9 +132,9 @@ View a stacked bar graph of the Page's views by operating system (grouped by dev
 
 Click Web Browser to see a doughnut chart displaying up to the top eight web browsers over the selected time period. If applicable, remaining web browsers are aggregated in the ninth doughnut segment.
 
-![Learn how many users are distributed across different browser agents.](pages/images/05.png)
+![Learn how many users are distributed across different browser agents.](./pages/images/05.png)
 
-After all those fundamental metrics, you're really getting to know your pages. But there's some interesting page data you haven't seen. Discover how people came to the page in the first place. Learn about [Path Analytics](./paths.md) next.
+After all those fundamental metrics, you're really getting to know your pages. But there's some interesting page data you haven't seen. Discover how people came to the page in the first place. Learn about [Path Analytics](./pages/paths.md) next.
 
 ## Related Topics
 

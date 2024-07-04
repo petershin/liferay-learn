@@ -27,7 +27,7 @@ By combining robust Individual Profiles and flexible Segment building, Analytics
 
 ### Individuals
 
-- [Individuals Dashboard](./people/individuals/individuals-dashboard.md)
+- [Individuals](./people/individuals.md)
 - [Individual Profiles](./people/individuals/individual-profiles.md)
 - [Understanding Interests](./people/individuals/understanding-interests.md)
 

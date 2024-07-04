@@ -251,6 +251,5 @@ curl -X POST \
 
 ## Related Topics
 
-- [Backup Service Overview](./backup-service-overview.md)
 - [Restoring Data from a Backup](./restoring-data-from-a-backup.md)
 - [Database Service](../database-service.md)

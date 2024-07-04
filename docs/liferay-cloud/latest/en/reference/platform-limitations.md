@@ -14,28 +14,28 @@ Liferay Cloud and its services have some notable limitations, depending on your 
 
 Take these general limitations into consideration when planning to use Liferay Cloud:
 
-* Limits apply on the available vCPUs, memory, scaling, network configurations (domains, SSL certificates, and IP addresses), and VPN bandwidth for each service. For instance, each service is limited to a maximum 200 GB RAM. Custom domains are also limited to 50 or 1500, depending on your [web server's configuration](#network-configuration).
+- Limits apply on the available vCPUs, memory, scaling, network configurations (domains, SSL certificates, and IP addresses), and VPN bandwidth for each service. For instance, each service is limited to a maximum 200 GB RAM. Custom domains are also limited to 50 or 1500, depending on your [web server's configuration](#network-configuration).
 
-* Concurrent operations (such as concurrent uploads), build size, concurrent builds, and backups also have limitations.
+- Concurrent operations (such as concurrent uploads), build size, concurrent builds, and backups also have limitations.
 
-* Service downtime may occur due to planned maintenance, most notably for environments using a single instance of the Liferay or Search services.
+- Service downtime may occur due to planned maintenance, most notably for environments using a single instance of the Liferay or Search services.
 
-* A private cluster subscription may be needed for more stringent security, compliance, or VPN requirements.
+- A private cluster subscription may be needed for more stringent security, compliance, or VPN requirements.
 
 See the further sections below for more details.
 
-* [All Services](#all-services)
-* [Liferay Service](#liferay-service)
-* [Database Service](#database-service)
-* [Search Service](#search-service)
-* [Backup Service](#backup-service)
-* [Web Server Service](#web-server-service)
-* [Continuous Integration Service](#continuous-integration-service)
-* [Custom Services](#custom-services)
-* [Security](#security)
-* [File Storage](#file-storage)
-* [Network Configuration](#network-configuration)
-* [VPN](#vpn)
+- [All Services](#all-services)
+- [Liferay Service](#liferay-service)
+- [Database Service](#database-service)
+- [Search Service](#search-service)
+- [Backup Service](#backup-service)
+- [Web Server Service](#web-server-service)
+- [Continuous Integration Service](#continuous-integration-service)
+- [Custom Services](#custom-services)
+- [Security](#security)
+- [File Storage](#file-storage)
+- [Network Configuration](#network-configuration)
+- [VPN](#vpn)
 
 ## All Services
 
@@ -93,19 +93,19 @@ These limitations apply to the [Search service](../platform-services/search-serv
 
 **OS Packages**: Installing additional OS packages for the Search service is not supported.
 
-**Pod Management Policy**: Elasticsearch nodes in a cluster must connect to each other in order to start successfully. For search services with multiple instances, the `podManagementPolicy` value in the service's `LCP.json` file must be set to `parallel` to avoid issues with the service starting up.
+**Pod Management Policy**: Elasticsearch nodes in a cluster must connect to each other to start successfully. For search services with multiple instances, the `podManagementPolicy` value in the service's `LCP.json` file must be set to `parallel` to avoid issues with the service starting up.
 
 ## Backup Service
 
-These limitations apply to the [Backup service](../platform-services/backup-service/backup-service-overview.md) in each Liferay Cloud environment:
+These limitations apply to the [Backup service](../platform-services/backup-service.md) in each Liferay Cloud environment:
 
-**Backup Consistency**: As with any process copying from a database with changing data, consistency between data in the database and document library cannot be guaranteed if a backup is created while updates are occurring. To ensure a completely consistent backup, coordinate with your database administrator to freeze updates while you perform a [manual backup](../platform-services/backup-service/backup-service-overview.md#creating-a-manual-backup).
+**Backup Consistency**: As with any process copying from a database with changing data, consistency between data in the database and document library cannot be guaranteed if a backup is created while updates are occurring. To ensure a completely consistent backup, coordinate with your database administrator to freeze updates while you perform a [manual backup](../platform-services/backup-service.md#creating-a-manual-backup).
 
 **Backup Size**: Before Liferay Cloud version 4.2.0, backups used [ephemeral storage](#file-storage). The size of backups in these versions is limited to the remaining space on a shared ephemeral disk, which may vary.
 
 **Backup Uploads**: Only one backup may be uploaded per minute.
 
-**Concurrent Operations**: Concurrent backup creation, restores, or uploads or not supported. However, concurrent downloads are supported.
+**Concurrent Operations**: Concurrent backup creation, restores, or uploads are not supported. However, concurrent downloads are supported.
 
 **Resource Allocation**: The RAM and number of vCPUs allocated to the Backup service are determined by your subscription plan. The default allocation is 2 vCPUs and 1 GB of RAM for the service.
 
@@ -129,7 +129,7 @@ These limitations apply to the [CI service](../platform-services/continuous-inte
 
 **Resource Allocation**: The RAM and number of vCPUs allocated to the CI service are determined by your subscription plan. The default allocation is 4 vCPUs and 8 GB of RAM for the service.
 
-**Server capacity**: Your subscription plan determines the size of the data volume for the CI server.  The default size is 100 GB.
+**Server capacity**: Your subscription plan determines the size of the data volume for the CI server. The default size is 100 GB.
 
 ### Builds
 

@@ -29,13 +29,13 @@ The Individuals dashboard contains the following panels:
 - [Interests](#interests)
 - [Breakdown](#breakdown)
 
-To download this dashboard view as a PDF file, click *Download Reports*. See [Downloading Reports](../../reference/downloading-reports.md) to learn more.
+To download this dashboard view as a PDF file, click *Download Reports*. See [Downloading Reports](../reference/downloading-reports.md) to learn more.
 
 ## Current Totals
 
 The Current Totals panel presents the total number of individuals, known and anonymous, that have been tracked by Analytics Cloud.
 
-![The Current Totals panel presents total numbers for visitors to your Site.](./individuals-dashboard/images/01.png)
+![The Current Totals panel presents total numbers for visitors to your Site.](./individuals/images/01.png)
 
 !!! note
     Individuals are considered known when their email addresses are matched at login with user data synced with Analytics Cloud. When new users register on your site, it may take up to two hours for their data to sync with Analytics Cloud and appear as known individuals.
@@ -46,15 +46,15 @@ The panel also displays a percentage change in total numbers compared to the pre
 
 The Enriched Profiles panel presents the total number of individuals that have been enriched within the last 30 days.
 
-![The Enriched Profiles panel presents the total number of individuals who have been enriched.](./individuals-dashboard/images/02.png)
+![The Enriched Profiles panel presents the total number of individuals who have been enriched.](./individuals/images/02.png)
 
-An individual is considered enriched any time an attribute is associated with that individual; for example, when you [sync contact data from DXP](../../getting-started/connecting-liferay-dxp-to-analytics-cloud.md).
+An individual is considered enriched any time an attribute is associated with that individual; for example, when you [sync contact data from DXP](../getting-started/connecting-liferay-dxp-to-analytics-cloud.md).
 
 ## Active Individuals
 
 The Active Individuals panel presents information on both known and anonymous individuals who interacted with your Site in the selected period.
 
-![The Active Individuals panel presents a chart of individuals over time who have interacted with the Site.](./individuals-dashboard/images/03.png)
+![The Active Individuals panel presents a chart of individuals over time who have interacted with the Site.](./individuals/images/03.png)
 
 Choose to visualize the data based on day, week or month. The data can be filtered by ranges of time: Last 24 hours, Last 7 days, Last 30 days, Last 90 days. Click *More Preset Periods* to reveal additional time ranges. Click *Custom Range* to filter by a start date and end date of your choice.
 
@@ -62,13 +62,13 @@ Choose to visualize the data based on day, week or month. The data can be filter
 
 The Interests panel presents the top 5 most popular topics.
 
-![The Interests panel presents a chart of popular topics.](./individuals-dashboard/images/04.png)
+![The Interests panel presents a chart of popular topics.](./individuals/images/04.png)
 
 The percentage of total individuals for interests shows what percent of individuals are interested in a specific topic. Theses topics are derived from the title, description, and keyword tags of your pages' HTML.
 
 To view the full list of interest topics, click *View All Interests* in the panel. Alternatively, click the Interests tab at the top of the page.
 
-To learn more about interests see [Understanding Interests](./understanding-interests.md).
+To learn more about interests, see [Understanding Interests](./individuals/understanding-interests.md).
 
 ## Breakdown
 
@@ -84,7 +84,7 @@ The Breakdown panel presents distribution information based on selected attribut
 - `modifiedDate`: last modified date
 - `screenName`: screen name
 
-![The Breakdown panel presents distribution information based on selected attributes.](./individuals-dashboard/images/05.png)
+![The Breakdown panel presents distribution information based on selected attributes.](./individuals/images/05.png)
 
 To add a new breakdown,
 
@@ -99,4 +99,4 @@ To view the breakdown of additional attributes, click *Explore Breakdown*. Alter
 ## Related Topics
 
 - [Users](https://learn.liferay.com/web/guest/w/dxp/users-and-permissions/users)
-- [Segments](../segments.md)
+- [Segments](./segments.md)

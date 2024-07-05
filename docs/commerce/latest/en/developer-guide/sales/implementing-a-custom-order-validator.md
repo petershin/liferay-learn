@@ -86,7 +86,7 @@ public String getKey();
 This method provides a unique identifier for the order validator in the order validator registry. The key fetches the validator from the registry. Reusing a key that is already in use overrides the existing associated validator.
 
 ```java
-public CommerceOrderValidatorResult validate(Locale locale, CommerceOrder commerceOrder, CPInstance cpInstance, int quantity) throws PortalException;
+public CommerceOrderValidatorResult validate(Locale locale, CommerceOrder commerceOrder, CPInstance cpInstance, String json, BigDecimal quantity, boolean child) throws PortalException
 ```
 
 This is one of the two validation methods where you add your custom validation logic. This method is called whenever a customer adds an item to their cart. It does this by returning a `CommerceOrderValidatorResult`, which uses a boolean to signal whether or not the result passes validation. See [CommerceOrderValidatorResult.java](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/order/CommerceOrderValidatorResult.java) for more information.

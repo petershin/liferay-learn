@@ -9,7 +9,7 @@ taxonomy-category-names:
 ---
 # Implementing a Custom Order Rule
 
-You can configure Order Rules in Liferay for orders that meet a specific condition. The Minimum Order Amount rule is available out-of-the-box. It prevents checkout of orders below a specific value. To add a new Order Rule, you must implement the [`COREntryType`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/commerce/commerce-order-rule-api/src/main/java/com/liferay/commerce/order/rule/entry/type/COREntryType.java) interface. See [Order Rules](https://learn.liferay.com/w/commerce/order-management/order-rules) for more information.
+You can configure order rules in Liferay for orders that meet a specific condition. The Minimum Order Amount rule is available out-of-the-box. It prevents checkout of orders below a specific value. To add a new order rule, you must implement the [`COREntryType`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/commerce/commerce-order-rule-api/src/main/java/com/liferay/commerce/order/rule/entry/type/COREntryType.java) interface. See [Order Rules](https://learn.liferay.com/w/commerce/order-management/order-rules) for more information.
 
 ## Deploying the Custom Order Rule and Adding Language Keys
 
@@ -32,9 +32,8 @@ Then, follow these steps:
    ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
    ```
 
-   ```{note}
-   This command is the same as copying the deployed jars to `/opt/liferay/osgi/modules` on the Docker container.
-   ```
+   !!! note
+       This command is the same as copying the deployed jars to `/opt/liferay/osgi/modules` on the Docker container.
 
 1. Confirm the deployment in the Docker container console.
 
@@ -44,14 +43,13 @@ Then, follow these steps:
 
 1. Log in as an administrator, open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)), and click on *Control Panel* &rarr; *Language Override*. Click the _Add_ button (![Add icon](../../images/icon-add.png)) and add the following keys.
 
-   |  Language Key | Value  |
-   |:---|:---|
-   | x9k1-minimum-order-quantity  | X9K1 Minimum Order Quantity  |
-   | minimum-quantity | Minimum Quantity  |
+   | Language Key                | Value                       |
+   | :-------------------------- | :-------------------------- |
+   | x9k1-minimum-order-quantity | X9K1 Minimum Order Quantity |
+   | minimum-quantity            | Minimum Quantity            |
 
-   ```{important}
-   You can add language keys in the Language Override tool for Liferay DXP 7.4 U4+ or Liferay Portal 7.4 GA8+. For previous versions, you must add a `Language.properties` file under `/src/main/resources/content/` with the keys before building and deploying.
-   ```
+   !!! important
+       You can add language keys in the Language Override tool for Liferay DXP 7.4 U4+ or Liferay Portal 7.4 GA8+. For previous versions, you must add a `Language.properties` file under `/src/main/resources/content/` with the keys before building and deploying.
 
 1. Open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)) and click on *Commerce* &rarr; *Order Rules*.
 
@@ -63,15 +61,15 @@ Then, follow these steps:
 
    **Type:** X9K1 Minimum Order Quantity
 
-   ![Enter a name, description, and type for the custom Order Rule.](./implementing-a-custom-order-rule/images/01.png)
+   ![Enter a name, description, and type for the custom order rule.](./implementing-a-custom-order-rule/images/01.png)
 
 1. Click *Submit*.
 
 1. In the *Configuration* section, set the *Minimum Quantity* to _3_.
 
-1. Enable the new Order Rule by clicking on the Active toggle.
+1. Enable the new order rule by clicking on the Active toggle.
 
-   ![Set the minimum quantity to 3 and enable the new Order Rule using the Active toggle.](./implementing-a-custom-order-rule/images/02.png)
+   ![Set the minimum quantity to 3 and enable the new order rule using the Active toggle.](./implementing-a-custom-order-rule/images/02.png)
 
 1. Click *Publish*.
 
@@ -83,9 +81,8 @@ You can see a warning message if the order quantity is less than 3. Checkout is 
 
 ![You can see a warning message if the order quantity is less than 3.](./implementing-a-custom-order-rule/images/03.png)
 
-```{important}
-After activating an Order Rule, it applies to all Accounts, Account Groups, Order Types, and Channels. To control the eligibility, click the Order Rule's *Eligibility* tab and select the appropriate option. 
-```
+!!! important
+    After activating an order rule, it applies to all Accounts, Account Groups, Order Types, and Channels. To control the eligibility, click the order rule's *Eligibility* tab and select the appropriate option. 
 
 ## How the Custom Order Rule Works
 
@@ -108,7 +105,7 @@ This example has nine main steps:
     :lines: 18-26
 ```
 
-You must provide a distinct key for the Order Rule so Liferay Commerce can distinguish it from others in the Order Rule registry. Specifying a key that is already in use overrides the existing associated type. The order determines its sort order in the drop-down. In this case, the order is 1, and it appears as the second item in the drop-down.
+You must provide a distinct key for the order rule so Liferay Commerce can distinguish it from others in the order rule registry. Specifying a key that is already in use overrides the existing associated type. The order determines its sort order in the drop-down. In this case, the order is 1, and it appears as the second item in the drop-down.
 
 ### Review the `COREntryType` interface
 
@@ -118,7 +115,13 @@ Implement the following methods.
 public boolean evaluate(COREntry corEntry, CommerceOrder commerceOrder) throws PortalException;
 ```
 
-This method evaluates the Order Rule and returns true or false depending on whether the condition is met.
+This method evaluates the order rule and returns true or false depending on whether the condition is met.
+
+```java
+public boolean evaluate(COREntry corEntry, List<COREntryTypeItem> corEntryTypeItems)
+```
+
+This method evaluates multiple items to check against the order rule and returns true or false depending on whether the condition is met. This method is not needed for this sample.
 
 ```java
 public String getErrorMessage(COREntry corEntry, CommerceOrder commerceOrder, Locale locale)  throws PortalException;
@@ -130,13 +133,19 @@ If the evaluated method returns false, this method returns a string containing t
 public String getKey();
 ```
 
-This method returns the unique key of the Order Rule. Using an existing key overrides that Order Rule.
+This method returns the unique key of the order rule. Using an existing key overrides that order rule.
+
+```java
+public boolean isActive();
+```
+
+This method returns true to specify that the order rule is active.
 
 ```java
 public String getLabel(Locale locale);
 ```
 
-This method returns the name of the Order Rule as it appears in the UI. This may be a language key or a string.
+This method returns the name of the order rule as it appears in the UI. This may be a language key or a string.
 
 ### Complete the `COREntryType` implementation
 
@@ -146,11 +155,11 @@ This method returns the name of the Order Rule as it appears in the UI. This may
     :dedent: 1
 ```
 
-To complete the Order Rule, you must implement the above methods. There are two utility methods added to get the order quantity and the minimum quantity configured in the Order Rule. The first overridden method is `evaluate()` and it checks if the current order passes the Order Rule or not. It returns true if it does and false otherwise.
+To complete the order rule, you must implement the above methods. There are two utility methods added to get the order quantity and the minimum quantity configured in the order rule. The first overridden method is `evaluate()` and it checks if the current order passes the order rule or not. It returns true if it does and false otherwise.
 
-The second method retrieves the error message for orders that don't satisfy the Order Rule. It returns a String converted from a `StringBuilder` that contains all the terms. The third method returns the unique key, and the last method returns the label that appears on the UI.
+The second method retrieves the error message for orders that don't satisfy the order rule. It returns a String converted from a `StringBuilder` that contains all the terms. The third method returns the unique key, and the last method returns the label that appears on the UI.
 
-There are two additional methods to get the minimum quantity of the Order Rule and the total order quantity. The first method is present in the utility class `X9K1MinimumQuantityUtil`. The second method is `_getOrderQuantity(CommerceOrder commerceOrder)`. It returns the total order quantity as a sum of individual product quantities in the order.
+There are two additional methods to get the minimum quantity of the order rule and the total order quantity. The first method is present in the utility class `X9K1MinimumQuantityUtil`. The second method is `_getOrderQuantity(CommerceOrder commerceOrder)`. It returns the total order quantity as a sum of individual product quantities in the order.
 
 ### Add a display context
 
@@ -159,7 +168,7 @@ There are two additional methods to get the minimum quantity of the Order Rule a
     :lines: 7-19
 ```
 
-The code retrieves the value for the minimum quantity configured for the Order Rule from the display context, which contains a single field of type `COREntry` and it is set using the created Order Rule. The display context has one method to retrieve the minimum quantity configured for the Order Rule and it uses the utility class detailed below.
+The code retrieves the value for the minimum quantity configured for the order rule from the display context, which contains a single field of type `COREntry` and it is set using the created order rule. The display context has one method to retrieve the minimum quantity configured for the order rule and it uses the utility class detailed below.
 
 ### Add a utility class to retrieve the minimum quantity value
 
@@ -168,7 +177,7 @@ The code retrieves the value for the minimum quantity configured for the Order R
     :lines: 8-20
 ```
 
-The `X9K1MinimumQuantityUtil` class retrieves the minimum quantity configured for the Order Rule. It retrieves the value using the property’s name as set in the JSPkey.
+The `X9K1MinimumQuantityUtil` class retrieves the minimum quantity configured for the order rule. It retrieves the value using the property’s name as set in the JSPkey.
 
 ### Annotate the JSP contributor for OSGi Registration
 
@@ -177,7 +186,7 @@ The `X9K1MinimumQuantityUtil` class retrieves the minimum quantity configured fo
     :lines: 18-24
 ```
 
-The `commerce.order.rule.entry.type.jsp.contributor.key` property determines the Order Rule for which the JSP contributor is implemented.
+The `commerce.order.rule.entry.type.jsp.contributor.key` property determines the order rule for which the JSP contributor is implemented.
 
 ### Review the `COREntryTypeJSPContributor` interface
 
@@ -185,7 +194,7 @@ The `commerce.order.rule.entry.type.jsp.contributor.key` property determines the
 public void render(long corEntryId, HttpServletRequest httpServletRequest,HttpServletResponse httpServletResponse) throws Exception;
 ```
 
-The `COREntryTypeJSPContributor` interface contains one method that renders a JSP. The method requires the Order Rule's id and objects of type `HTTPServletRequest` and `HTTPServletResponse` as arguments.
+The `COREntryTypeJSPContributor` interface contains one method that renders a JSP. The method requires the order rule's id and objects of type `HTTPServletRequest` and `HTTPServletResponse` as arguments.
 
 ### Complete the JSP contributor implementation
 
@@ -204,8 +213,8 @@ To complete the JSP Contributor, you must implement the `render()` method. It re
     :lines: 1-27
 ```
 
-The JSP contains one input field to accept the minimum quantity for the Order Rule. It is retrieved through the display context and evaluated inside the custom Order Rule. The display context uses the utility class and fetches the field using the `minimum-quantity` name from the type settings configuration. The `getMinimumQuantity()` method retrieves the existing value if any.
+The JSP contains one input field to accept the minimum quantity for the order rule. It is retrieved through the display context and evaluated inside the custom order rule. The display context uses the utility class and fetches the field using the `minimum-quantity` name from the type settings configuration. The `getMinimumQuantity()` method retrieves the existing value if any.
 
 ## Conclusion
 
-Congratulations! You now know the basics for implementing the `COREntryType` interface and have added a new Order Rule to Liferay Commerce.
+Congratulations! You now know the basics for implementing the `COREntryType` interface and have added a new order rule to Liferay Commerce.

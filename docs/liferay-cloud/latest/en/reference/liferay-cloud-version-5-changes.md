@@ -29,8 +29,6 @@ Liferay Cloud's database and backup services have improved reliability with vers
 
 Restoring data from a backup results in downtime for the database service and any dependent services (including Liferay). However, with backup service version 5.x.x, the restore behavior can first start a separate, fresh database instance and volume, and then switch to the new instance once ready. This minimizes the downtime for your instance.
 
-Set the [`LCP_BACKUP_RESTORE_STRATEGY` environment variable](../platform-services/backup-service.md#environment-variables-reference)'s value to `PREPARE_AND_SWAP` to use this strategy.
-
 ## Backup Upload Retry Configuration
 
-With version 5.x.x, you can fine-tune the number of retries and the delays between them for your backup uploads. See the `LCP_GCP_STORAGE_UPLOAD_*` [Backup service environemnt variables](../platform-services/backup-service.md#environment-variables-reference) for more information.
+With version 5.x.x, you can fine-tune the number of retries and the delays between them for your backup uploads. See the `LCP_GCP_STORAGE_UPLOAD_*` [Backup service environment variables](../platform-services/backup-service.md#environment-variables-reference) for more information.

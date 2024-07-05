@@ -8,11 +8,12 @@ uuid: b323c5f9-5ba1-4468-8b8c-5c16c36b3078
 
 # Restoring Data from a Backup
 
-During project development, there may be times when you need to restore data or roll back the project to an earlier state. Restoring a backup to an environment restores the data for each service, but it does *not* change the build the environment is using.
+During project development, there may be times when you must restore data or roll back the project to an earlier state. Restoring a backup to an environment restores the data for each service, but it does *not* change the build the environment is using.
 
 You can also use custom SQL scripts to perform additional updates to a database as part of the data restore.
 
-Restoring data from a backup results in downtime for the database service and any services that depend on it (including Liferay). However, if your backup service is at least version `5.x.x`, you can minimize the downtime by changing the default `OVERWRITE` restore behavior to `PREPARE_AND_SWAP`. This starts a separate, fresh database instance and volume and only switches to the new instance when it's ready. Set the [`LCP_BACKUP_RESTORE_STRATEGY` environment variable](./backup-service-overview.md#environment-variables-reference) to `PREPARE_AND_SWAP` to use this strategy.
+!!! important
+    If your backup service is older than version 5.x, you may experience some downtime.
 
 !!! important
     Only users with the Admin role for the chosen environment can manually restore environments via the Liferay Cloud console.
@@ -41,7 +42,7 @@ Follow these steps to restore an environment from a backup:
    ![Select the environment you want to restore.](./restoring-data-from-a-backup/images/02.png)
 
    !!! note
-      Administrators can only restore environments to which they have access.
+       Administrators can only restore environments to which they have access.
 
 1. Click all *checkboxes* that appear below. You must check these boxes to enable the button to initiate the restore.
 
@@ -49,7 +50,7 @@ Follow these steps to restore an environment from a backup:
 
    ![Click all checkboxes to confirm the restore.](./restoring-data-from-a-backup/images/03.png)
 
-During the restore process, the target environment's services will restart.
+During the restore process, the target environment's services restart.
 
 You can track the status of the restore in the backup service's *Logs* and the *General* section of the Activities page.
 

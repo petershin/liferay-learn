@@ -42,7 +42,7 @@ From here, you can perform the following tasks:
 - **Create Manual Backups**: You can manually create a backup of the chosen environment. See [Creating a Manual Backup](#creating-a-manual-backup) for more information.
 
 !!! note
-    Backup timestamps are displayed automatically based on your browser location, while backup schedules are based on the UTC±00 time zone.
+    Backup timestamps appear automatically based on your browser location, while backup schedules are based on the UTC±00 time zone.
 
 From the Backups page, environment administrators also have access to the Actions button (⋮) and can download retained backups or restore environments.
 
@@ -198,7 +198,6 @@ This `backup/LCP.json` example creates backups every 12 hours (i.e., 00:00 and 1
 | `LCP_BACKUP_CREATE_SCHEDULE`                          | `[5-55][0-1] * * *`        | Schedules automated backups using [cron scheduling syntax](https://crontab.guru/). It must not conflict with `LCP_BACKUP_CLEANUP_SCHEDULE`. In versions `3.2.1` and above of the backup service, if no value is specified, a random default is created.        |
 | `LCP_BACKUP_RESTORE_SCHEDULE`                         | N/A                        | Schedules automated restores using [cron scheduling syntax](https://crontab.guru/). Intended for use with [Disaster Recovery environments](../support-and-troubleshooting/troubleshooting/configuring-cross-region-disaster-recovery.md).              |
 | `LCP_BACKUP_RESTORE_DL_DOWNLOAD_AND_EXTRACT_STRATEGY` | `download-then-extract`    | Determines the download and extract strategy for the document library. Use `download-then-extract` for backups of static data that doesn't change frequently, or `stream-pipeline` for data pipelines with frequent changes that require fast recovery. |
-| `LCP_BACKUP_RESTORE_STRATEGY`                         | `OVERWRITE`                | Determines the restore strategy. By default, existing instances are taken down immediately. To start a fresh database instance and volume before taking down existing instances, use the `PREPARE_AND_SWAP` strategy.                                          |
 | `LCP_BACKUP_RETENTION_PERIOD`                         | `30`                       | Determines which backups are removed during scheduled cleanups. Select the number of days backups are retained before being removed by cleanups. The maximum retention period is 30 days.                                                               |
 | `LCP_DATABASE_SERVICE`                                | `database`                 | The database service's ID.                                                                                                                                                                                                                                      |
 | `LCP_DBNAME`                                          | `lportal`                  | The database name.                                                                                                                                                                                                                                              |

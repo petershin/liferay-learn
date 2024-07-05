@@ -32,9 +32,9 @@ Review the following steps to perform a database upgrade:
 
 Before beginning the upgrade procedure, satisfy the following prerequisites:
 
-* [A locally available PostgreSQL 15 installation](https://www.postgresql.org/download/), if your Liferay Cloud database uses PostgreSQL.
-* [A locally available MySQL installation](https://dev.mysql.com/doc/mysql-installation-excerpt/5.7/en/), if your Liferay Cloud database uses MySQL.
-* [Downloaded bundle of Liferay DXP](https://customer.liferay.com/en_US/downloads) for the version of DXP you are upgrading to. Extract this bundle to a location of your choosing.
+- [A locally available PostgreSQL 15 installation](https://www.postgresql.org/download/), if your Liferay Cloud database uses PostgreSQL.
+- [A locally available MySQL installation](https://dev.mysql.com/doc/mysql-installation-excerpt/5.7/en/), if your Liferay Cloud database uses MySQL.
+- [Downloaded bundle of Liferay DXP](https://customer.liferay.com/en_US/downloads) for the version of DXP you are upgrading to. Extract this bundle to a location of your choosing.
 
 !!! important
     Download a fresh bundle for the upgrade instead of reusing an old one. Data from previous usage may interfere with the data upgrade.
@@ -65,9 +65,9 @@ Perform the following steps to extract the data volume from the backup:
 
 1. Extract the archive by running this command:
 
-    ```bash
-    tar -xvzf ARCHIVE_NAME.tgz
-    ```
+   ```bash
+   tar -xvzf ARCHIVE_NAME.tgz
+   ```
 
 ### Extract and Import the Database
 
@@ -75,51 +75,51 @@ Open a command line at the location of the downloaded database archive (named `b
 
 1. Extract the database archive:
 
-    ```bash
-    tar -xvzf ARCHIVE_NAME.tgz
-    ```
+   ```bash
+   tar -xvzf ARCHIVE_NAME.tgz
+   ```
 
 1. Use the database client on your local system to create a database for the imported data.
 
-    **For PostgreSQL**:
+   **For PostgreSQL**:
 
-    ```bash
-    psql -U postgres -c "CREATE DATABASE lportal OWNER postgres encoding UTF8 locale='en_US.UTF-8' template=template0"
-    ```
+   ```bash
+   psql -U postgres -c "CREATE DATABASE lportal OWNER postgres encoding UTF8 locale='en_US.UTF-8' template=template0"
+   ```
 
-    **For MySQL** (using the name of the `.sql` dump without the extension as the database name):
+   **For MySQL** (using the name of the `.sql` dump without the extension as the database name):
 
-    ```bash
-    mysql -u root -p 
-    ```
+   ```bash
+   mysql -u root -p 
+   ```
 
-    Enter the password when prompted.
+   Enter the password when prompted.
 
-    ```
-    create database DATABASE_NAME character set utf8;
-    ```
+   ```
+   create database DATABASE_NAME character set utf8;
+   ```
 
 1. Import the database from the extracted `.sql` dump:
 
-    **For PostgreSQL** (replacing the name of your dump file`):
+   **For PostgreSQL** (replacing the name of your dump file`):
 
-    ```bash
-    psql -U postgres lportal -v ON_ERROR_STOP=1 < DATABASE_NAME.sql
-    ```
+   ```bash
+   psql -U postgres lportal -v ON_ERROR_STOP=1 < DATABASE_NAME.sql
+   ```
 
-    **For MySQL**:
+   **For MySQL**:
 
-    ```
-    use DATABASE_NAME;
-    ```
+   ```
+   use DATABASE_NAME;
+   ```
 
-    ```
-    source DATABASE_NAME.sql;
-    ```
+   ```
+   source DATABASE_NAME.sql;
+   ```
 
-    ```
-    exit
-    ```
+   ```
+   exit
+   ```
 
 The database and document library are now in place and ready for you to perform the data upgrade.
 
@@ -228,11 +228,14 @@ You must update the version of the Liferay image your environment uses so that t
 
 Update these locations as needed to reflect the new version of Liferay DXP:
 
-* The `image` property in `liferay/LCP.json`. Check the [Services Changelogs](https://help.liferay.com/hc/en-us/sections/360006251311-Services-Changelog) for an updated image, and make sure the upgraded DXP version matches the version in the image (for example, `7.2` in `liferaycloud/liferay-dxp:7.2-4.0.7`).
+- The `image` property in `liferay/LCP.json`. Check the [Services Changelogs](https://help.liferay.com/hc/en-us/sections/360006251311-Services-Changelog) for an updated image, and make sure the upgraded DXP version matches the version in the image (for example, `7.2` in `liferaycloud/liferay-dxp:7.2-4.0.7`).
 
-* The `liferay.workspace.docker.image.liferay` property in `liferay/gradle.properties`. Check the [Liferay DXP Docker Hub page](https://hub.docker.com/r/liferay/dxp/tags) for an image that matches your upgraded DXP version.
+- The `liferay.workspace.docker.image.liferay` property in `liferay/gradle.properties`. Check the [Liferay DXP Docker Hub page](https://hub.docker.com/r/liferay/dxp/tags) for an image that matches your upgraded DXP version.
 
 When both of these image versions are updated, [deploy the changes](./deploying-to-the-liferay-service.md) to your chosen environment. This prepares the Liferay service for you to restore your uploaded backup.
+
+!!! tip
+    To avoid bugs related to CDN cache, go to *Network* &rarr; *CDN*, and click *Clear CDN Cache*.
 
 ## Restore the Backup
 
@@ -252,8 +255,8 @@ Follow these steps to restore a backup to your chosen environment:
 
 1. Click _Restore to environment_.
 
-    !!! note
-        The chosen environment is unavailable while the the backup is being deployed.
+   !!! note
+       The chosen environment is unavailable while the backup is being deployed.
 
 <!-- I'd also want to know if there is a zero downtime way to do an upgrade - because that's one of the next questions I would ask if I put myself in the shoes of someone trying to run a prod and business critical env. We may not be ready to say anything about that - but just a thought to put in your mind as potentially a future iteration of this - or let's say if we find out that you CAN do a zero downtime upgrade using a DR environment, then we should update this article to say so. An example:
 
@@ -267,6 +270,6 @@ Congratulations! You have upgraded your DXP database to the new version and depl
 
 Learn more about DXP upgrades:
 
-* [Liferay DXP Upgrade Basics](https://learn.liferay.com/w/dxp/installation-and-upgrades/upgrading-liferay/upgrade-basics)
-* [Updating Your DXP Instance to a New Minor Version](./updating-your-dxp-instance-to-a-new-minor-version.md)
-* [Using the Database Upgrade Tool](https://learn.liferay.com/w/dxp/installation-and-upgrades/upgrading-liferay/upgrade-basics/using-the-database-upgrade-tool)
+- [Liferay DXP Upgrade Basics](https://learn.liferay.com/w/dxp/installation-and-upgrades/upgrading-liferay/upgrade-basics)
+- [Updating Your DXP Instance to a New Minor Version](./updating-your-dxp-instance-to-a-new-minor-version.md)
+- [Using the Database Upgrade Tool](https://learn.liferay.com/w/dxp/installation-and-upgrades/upgrading-liferay/upgrade-basics/using-the-database-upgrade-tool)

@@ -92,7 +92,7 @@ Once you've prepared your Liferay servers, follow these steps to set up Remote L
 
 1. Enter the following Remote Live Connection details:
 
-   **Remote Host/IP**: Enter your Remote server's IP address into the *Remote Host/IP* field (or the cluster IP address, for Liferay PaaS). This should match the `tunnel.servlet.hosts.allowed` property specified in your `portal-ext.properties` file.
+   **Remote Host/IP**: Enter your Remote server's IP address into the *Remote Host/IP* field (for Liferay PaaS, use the cluster IP address). This should match the `tunnel.servlet.hosts.allowed` property specified in your `portal-ext.properties` file.
 
    **Remote Port**: Enter the port for your remote DXP instance into the *Remote Port* field. For Liferay PaaS, enter `443` as the port.
 

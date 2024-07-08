@@ -1,5 +1,3 @@
-import com.liferay.headless.delivery.client.dto.v1_0.DocumentFolder;
-import com.liferay.headless.delivery.client.pagination.Page;
 import com.liferay.headless.delivery.client.pagination.Pagination;
 import com.liferay.headless.delivery.client.resource.v1_0.DocumentFolderResource;
 
@@ -18,8 +16,8 @@ public class DocumentFolders_GET_FromAssetLibrary {
 
 		System.out.println(
 			documentFolderResource.getAssetLibraryDocumentFoldersPage(
-				Long.valueOf(System.getProperty("assetLibraryId")), null, null, null, null,
-				Pagination.of(1, 2), null));
+				Long.valueOf(System.getProperty("assetLibraryId")), null, null,
+				null, null, Pagination.of(1, 2), null));
 	}
 
 }

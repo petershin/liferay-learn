@@ -12,7 +12,7 @@ public class DocumentShortcut_GET_ById {
 		DocumentShortcutResource documentShortcutResource =
 			builder.authentication(
 				"test@liferay.com", "learn"
-		).build();
+			).build();
 
 		System.out.println(
 			documentShortcutResource.getDocumentShortcut(

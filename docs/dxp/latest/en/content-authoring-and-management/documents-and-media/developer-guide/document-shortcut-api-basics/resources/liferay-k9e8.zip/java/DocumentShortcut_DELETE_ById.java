@@ -6,11 +6,13 @@ public class DocumentShortcut_DELETE_ById {
 	 * java -classpath .:* -DdocumentShortcutId=1234 DocumentShortcut_DELETE_ById
 	 */
 	public static void main(String[] args) throws Exception {
-		DocumentShortcutResource.Builder builder = DocumentShortcutResource.builder();
+		DocumentShortcutResource.Builder builder =
+			DocumentShortcutResource.builder();
 
-		DocumentShortcutResource documentShortcutResource = builder.authentication(
-			"test@liferay.com", "learn"
-		).build();
+		DocumentShortcutResource documentShortcutResource =
+			builder.authentication(
+				"test@liferay.com", "learn"
+			).build();
 
 		documentShortcutResource.deleteDocumentShortcut(
 			Long.valueOf(System.getProperty("documentShortcutId")));

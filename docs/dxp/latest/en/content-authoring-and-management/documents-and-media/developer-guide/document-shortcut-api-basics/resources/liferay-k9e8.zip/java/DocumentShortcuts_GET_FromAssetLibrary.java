@@ -1,3 +1,4 @@
+import com.liferay.headless.delivery.client.pagination.Pagination;
 import com.liferay.headless.delivery.client.resource.v1_0.DocumentShortcutResource;
 
 public class DocumentShortcuts_GET_FromAssetLibrary {
@@ -12,11 +13,12 @@ public class DocumentShortcuts_GET_FromAssetLibrary {
 		DocumentShortcutResource documentShortcutResource =
 			builder.authentication(
 				"test@liferay.com", "learn"
-		).build();
+			).build();
 
 		System.out.println(
 			documentShortcutResource.getAssetLibraryDocumentShortcutsPage(
-				Long.valueOf(System.getProperty("assetLibraryId")), Pagination.of(1, 2)));
+				Long.valueOf(System.getProperty("assetLibraryId")),
+				Pagination.of(1, 2)));
 	}
 
 }

@@ -2,16 +2,22 @@
 taxonomy-category-names:
 - Search
 - Liferay PaaS
-- Liferay SaaS
+- Liferay Self-Hosted
 - Java Development
 uuid: 637981f4-8656-4b49-9926-18823840bdf9
 ---
 # Search Queries and Filters
 
-To get sensible results from the [search engine](../installing-and-upgrading-a-search-engine/installing-a-search-engine.md), you must provide a sensible query. Liferay's query APIs are found in the `portal-search-api` module. There aren't separate APIs for filters and queries. To filter instead of querying, construct the query (e.g., `fooQuery`) and add it to the search request, specifying it as a filter using the `SearchRequestBuilder.postFilterQuery(fooQuery)` method.
+To get sensible results from the [search engine](../installing-and-upgrading-a-search-engine/installing-a-search-engine.md), you must provide a sensible query. Liferay's query APIs are found in the `portal-search-api` module and are used to construct both queries and filters.
+
 *Filters* ask a yes or no question for every search document and do not calculate relevance. A filter might ask _is the status field equal to staging or live?_
 
-*Queries* ask the same yes or no question compute how well a document matches the specified criteria. This is the concept of [relevance scoring](https://www.elastic.co/guide/en/elasticsearch/guide/current/scoring-theory.html). A query might ask _Does the document's content field field contain the words "Liferay", "Content", or "Management", and how relevant is the content of the document to the searched keywords?_
+*Queries* ask the same yes or no question compute how well a document matches the specified criteria. This is the concept of [relevance scoring](https://www.elastic.co/guide/en/elasticsearch/guide/current/scoring-theory.html). A query might ask _Does the document's content field contain the words "Liferay", "Content", or "Management", and how relevant is the content of the document to the searched keywords?_
+
+To use queries and filters in Liferay, construct the query and then add it to the request as a query or filter:
+
+1. To add a query to the request, construct the query (e.g., `fooQuery`) and add it to the search request with `SearchRequestBuilder.query(fooQuery)`.
+1. To filter instead of querying, construct the query (e.g., `fooQuery`) and add it to the search request with `SearchRequestBuilder.postFilterQuery(fooQuery)`.
 
 Here you can deploy, test, and inspect a [Gogo Shell command](../../liferay-internals/fundamentals/using-the-gogo-shell/gogo-shell-commands.md) that queries the [company index](../search-administration-and-tuning/elasticsearch-indexes-reference.md).
 
@@ -73,7 +79,6 @@ Then, download the project and complete some prerequisites:
 
     The script adds these resources:
 
-    <!-- Could make this a table with the folder ID -->
     - Web Content:
         - Able Content
         - Able Content Folder
@@ -93,7 +98,6 @@ Then, download the project and complete some prerequisites:
 
 1. Open the Global Menu (![Global Menu](../../images/icon-applications-menu.png)), navigate to *Control Panel* &rarr; *Gogo Shell*.
 
-<!--Captcha makes this annoying--new approach? Something with headless? A search service with an OSGi config UI? -->
 1. Enter _b9f3:search able_ and answer the CAPTCHA challenge.
 
 1. Click _Execute_. 
@@ -107,12 +111,8 @@ Then, download the project and complete some prerequisites:
 
 ## Understanding the B9F3 Search Queries
 
-Initialize a `SearchRequestBuilder`. You can use this object to construct the search request you'll later execute.
+Initialize a `SearchRequestBuilder`. You can use this object to construct the search request.
 
-```java
-SearchRequestBuilder searchRequestBuilder =
-    _searchRequestBuilderFactory.builder();
-```
 ```{literalinclude} ./search-queries-and-filters/resources/liferay-b9f3.zip/b9f3-impl/src/main/java/com/acme/b9f3/internal/osgi/commands/B9F3OSGiCommands.java
    :dedent: 2
    :language: java
@@ -121,72 +121,24 @@ SearchRequestBuilder searchRequestBuilder =
 
 Next, populate the `SearchContext` within the request. This sets the entry class names to search and the company ID of the instance to search within. It also sets the keywords to search. These keywords are entered by the user at search time.
 
-<!-- Is this still true? I had this in the 7.2 docs. -->
 !!! note
     You must either set keywords into the search context or enable empty search in the request builder with `searchRequestBuilder.emptySearchEnabled(true);`.
 
-```java
-		searchRequestBuilder.withSearchContext(
-			searchContext -> {
-				searchContext.setCompanyId(_portal.getDefaultCompanyId());
-				searchContext.setEntryClassNames(
-					new String[] {
-						"com.liferay.document.library.kernel.model.DLFileEntry",
-						"com.liferay.document.library.kernel.model.DLFolder",
-						"com.liferay.journal.model.JournalArticle",
-						"com.liferay.journal.model.JournalFolder"
-					});
-				searchContext.setKeywords(keywords);
-			});
-            ```
 ```{literalinclude} ./search-queries-and-filters/resources/liferay-b9f3.zip/b9f3-impl/src/main/java/com/acme/b9f3/internal/osgi/commands/B9F3OSGiCommands.java
    :dedent: 2
    :language: java
    :lines: 35-46
 ```
 
-
 Now fashion the query clauses. This example nests two MUST query clauses inside a boolean query: one clause is a term query for matching the `folderId` field to the value `0`, and the other is for performing a full text match query of the user's search keywords to the localized title field.
 
-```java
-		BooleanQuery booleanQuery = _queries.booleanQuery();
-
-		booleanQuery.addMustQueryClauses(
-			_queries.term(Field.FOLDER_ID, "0"),
-			_queries.match(
-				StringBundler.concat(
-					"localized_", Field.TITLE, StringPool.UNDERLINE,
-					LocaleUtil.US),
-				keywords));
-```
 ```{literalinclude} ./search-queries-and-filters/resources/liferay-b9f3.zip/b9f3-impl/src/main/java/com/acme/b9f3/internal/osgi/commands/B9F3OSGiCommands.java
    :dedent: 2
    :language: java
    :lines: 48-56
 ```
 
-Add the boolean query with its nested clauses to the request, execute the request, then process the response as needed. This just prints the document's `uid` field and its score.
-
-```java
-		SearchRequest searchRequest = searchRequestBuilder.query(
-			booleanQuery
-		).build();
-
-		SearchResponse searchResponse = _searcher.search(searchRequest);
-
-		SearchHits searchHits = searchResponse.getSearchHits();
-
-		for (SearchHit searchHit : searchHits.getSearchHits()) {
-			Document document = searchHit.getDocument();
-
-			String uid = document.getString(Field.UID);
-
-			System.out.println(
-				StringBundler.concat(
-					"Document ", uid, " has a score of ",
-					searchHit.getScore()));
-		}
-```
+Add the boolean query with its nested clauses to the request, execute the request, then process the response as needed. This prints the document's `uid` field and its score.
 
 ```{literalinclude} ./search-queries-and-filters/resources/liferay-b9f3.zip/b9f3-impl/src/main/java/com/acme/b9f3/internal/osgi/commands/B9F3OSGiCommands.java
    :dedent: 2
@@ -196,25 +148,6 @@ Add the boolean query with its nested clauses to the request, execute the reques
 
 These are the Liferay services referenced in the B9F3 code:
 
-```java
-@Reference
-private Portal _portal;
-
-@Reference
-private Queries _queries;
-
-@Reference
-private RoleLocalService _roleLocalService;
-
-@Reference
-private Searcher _searcher;
-
-@Reference
-private SearchRequestBuilderFactory _searchRequestBuilderFactory;
-
-@Reference
-private UserLocalService _userLocalService;
-```
 ```{literalinclude} ./search-queries-and-filters/resources/liferay-b9f3.zip/b9f3-impl/src/main/java/com/acme/b9f3/internal/osgi/commands/B9F3OSGiCommands.java
    :dedent: 1
    :language: java
@@ -354,7 +287,7 @@ searchRequestBuiler.postFilterQuery(termQuery);
 MatchQuery matchQuery = _queries.match(
     StringBundler.concat(
         "localized_", Field.TITLE, StringPool.UNDERLINE,
-            LocaleUtil.US), keywords);
+           LocaleUtil.US), keywords);
 
 searchRequestBuilder.query(matchQuery);
 

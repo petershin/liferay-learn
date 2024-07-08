@@ -1,7 +1,7 @@
 ---
 toc:
 - ./module-4-identity-management-and-sso/claritys-authentication-and-sso-requirements.md
-- ./module-4-identity-management-and-sso/liferay-authentication.md
+- ./module-4-identity-management-and-sso/understanding-liferay-authentication.md
 - ./module-4-identity-management-and-sso/managing-clarity-employees.md
 - ./module-4-identity-management-and-sso/using-okta-for-authentication-and-sso.md
 - ./module-4-identity-management-and-sso/managing-clarity-business-partners-and-guests.md
@@ -51,8 +51,8 @@ Up First: [Clarity's Authentication and SSO Requirements](./module-4-identity-ma
 Learn about Clarity's requirement for user authentication and authorization.
 :::
 
-:::{grid-item-card}  Liferay Authentication
-:link: ./module-4-identity-management-and-sso/liferay-authentication.md
+:::{grid-item-card}  Understanding Liferay Authentication
+:link: ./module-4-identity-management-and-sso/understanding-liferay-authentication.md
 
 Learn the basics of Liferay authentication and identity management.
 :::

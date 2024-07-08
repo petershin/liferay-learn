@@ -1,14 +1,13 @@
 ---
 toc:
-- ./module-4-identity-management-and-sso/claritys-authentication-and-sso-requirements.md
-- ./module-4-identity-management-and-sso/understanding-liferay-authentication.md
-- ./module-4-identity-management-and-sso/managing-clarity-employees.md
-- ./module-4-identity-management-and-sso/using-okta-for-authentication-and-sso.md
-- ./module-4-identity-management-and-sso/managing-clarity-business-partners-and-guests.md
+- ./module-4-identity-management-and-security/claritys-authentication-and-sso-requirements.md
+- ./module-4-identity-management-and-security/understanding-liferay-authentication.md
+- ./module-4-identity-management-and-security/managing-clarity-employees.md
+- ./module-4-identity-management-and-security/using-okta-for-authentication-and-sso.md
+- ./module-4-identity-management-and-security/managing-clarity-business-partners-and-guests.md
 uuid: 57aef6ee-03e9-4056-abf1-ebdbdb4984e4
 ---
-# Module 4: Identity Management & Security
-<!--TASK: Rename File, Folder, and Update Links -->
+# Module 4: Identity Management and Security
 
 !!! important "Webinar Note"
     This module was presented using slides for a live webinar audience. The formatting, presentation, and examples may differ from what is presented here as part of the course.
@@ -40,49 +39,49 @@ After completing this module, you will know how to
 * Streamline role management with user groups.
 * Assign granular permissions to roles to ensure appropriate access to Liferay applications and resources.
 
-Up First: [Clarity's Authentication and SSO Requirements](./module-4-identity-management-and-sso/claritys-authentication-and-sso-requirements.md)
+Up First: [Clarity's Authentication and SSO Requirements](./module-4-identity-management-and-security/claritys-authentication-and-sso-requirements.md)
 
 ::::{grid} 2
 :gutter: 3 3 3 3
 
 :::{grid-item-card}  Clarity's Identity Management Requirements
-:link: ./module-4-identity-management-and-sso/claritys-identity-management-requirements.md
+:link: ./module-4-identity-management-and-security/claritys-identity-management-requirements.md
 
 Learn about Clarity's requirement for user authentication and authorization.
 :::
 
 :::{grid-item-card}  Understanding Liferay Authentication
-:link: ./module-4-identity-management-and-sso/understanding-liferay-authentication.md
+:link: ./module-4-identity-management-and-security/understanding-liferay-authentication.md
 
 Learn the basics of Liferay authentication and identity management.
 :::
 
 :::{grid-item-card}  Managing Clarity Employees
-:link: ./module-4-identity-management-and-sso/managing-clarity-employees.md
+:link: ./module-4-identity-management-and-security/managing-clarity-employees.md
 
 Learn more about the business problems Clarity is seeking to solve for its employees.
 :::
 
 :::{grid-item-card}  Using Okta for Authentication and SSO
-:link: ./module-4-identity-management-and-sso/using-okta-for-authentication-and-sso.md
+:link: ./module-4-identity-management-and-security/using-okta-for-authentication-and-sso.md
 
 Learn about SAML authentication and how to configure Okta single sign-on service with Liferay.
 :::
 
 :::{grid-item-card}  Managing Clarity Business Partners and Guests
-:link: ./module-4-identity-management-and-sso/managing-clarity-business-partners-and-guests.md
+:link: ./module-4-identity-management-and-security/managing-clarity-business-partners-and-guests.md
 
 Finally, learn about different authentication options Clarity could use for its business partners and other users.
 :::
 
 :::{grid-item-card} Creating Users, User Groups, and Roles
-:link: ./module-5-users-and-permissions/creating-users-user-groups-and-roles.md
+:link: ./module-4-identity-management-and-security/creating-users-user-groups-and-roles.md
 
 Learn how to manually create users, user groups and roles for Clarity's team members.
 :::
 
 :::{grid-item-card} Setting Permissions and Securing Clarity Content
-:link: ./module-5-users-and-permissions/setting-permissions-and-securing-clarity-content.md
+:link: ./module-4-identity-management-and-security/setting-permissions-and-securing-clarity-content.md
 
 Learn the fundamentals of assigning permissions to roles to secure Liferay applications and resources.
 :::

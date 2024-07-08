@@ -13,7 +13,7 @@ uuid: b8f8dc79-ca5e-45c8-821f-c52adf5c2e91
 ---
 # Pages
 
-Analytics Cloud does the following for pages:
+For pages, Analytics Cloud 
 
 - Registers and tracks pages for analysis the first time the Analytics Cloud client detects a Page interaction.
 - Queries pages on a schedule for up-to-date data.

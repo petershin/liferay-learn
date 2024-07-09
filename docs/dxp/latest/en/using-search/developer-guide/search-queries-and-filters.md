@@ -16,8 +16,8 @@ To get sensible results from the [search engine](../installing-and-upgrading-a-s
 
 To use queries and filters in Liferay, construct the query and then add it to the request as a query or filter:
 
-1. To add a query to the request, construct the query (e.g., `fooQuery`) and add it to the search request with `SearchRequestBuilder.query(fooQuery)`.
-1. To filter instead of querying, construct the query (e.g., `fooQuery`) and add it to the search request with `SearchRequestBuilder.postFilterQuery(fooQuery)`.
+1. Add a query to the request with `SearchRequestBuilder.query(fooQuery)`.
+1. To filter instead of querying, add it to the search request with `SearchRequestBuilder.postFilterQuery(fooQuery)`.
 
 Here you can deploy, test, and inspect a [Gogo Shell command](../../liferay-internals/fundamentals/using-the-gogo-shell/gogo-shell-commands.md) that queries the [company index](../search-administration-and-tuning/elasticsearch-indexes-reference.md).
 
@@ -56,9 +56,9 @@ Then, download the project and complete some prerequisites:
     STARTED com.acme.b9f3.impl_1.0.0 [1775]
     ```
 
-1. The B9F3 sample includes a shell script you can run to load documents and content into Liferay. First retrieve the default site's ID and the global site's ID from the running Liferay instance. Open a browser and load <http://localhost:8080>.
+1. The B9F3 sample includes a shell script that loads documents and content into Liferay. To run it, first retrieve the default site's ID and the global site's ID from the running Liferay instance.
 
-1. In the default site, open *Site Menu* (![Site Menu](../../images/icon-product-menu.png)) &rarr; *Configuration* &rarr; *Site Settings*.
+   In the default site, open *Site Menu* (![Site Menu](../../images/icon-product-menu.png)) &rarr; *Configuration* &rarr; *Site Settings*.
 
 1. Go to *Site Configuration* and record the Site ID.
 
@@ -66,7 +66,7 @@ Then, download the project and complete some prerequisites:
 
 1. Find and record the Site ID for the Global site.
 
-1. To load a document into Liferay, go to `liferay-b9f3/curl`. 
+1. To run the script, go to `liferay-b9f3/curl` in the terminal. 
 
 1. Run the shell script with the site IDs as arguments:
 
@@ -114,7 +114,7 @@ Then, download the project and complete some prerequisites:
 
 ## Understanding the B9F3 Search Queries
 
-Initialize a `SearchRequestBuilder`. You can use this object to construct the search request.
+First, initialize a `SearchRequestBuilder`. You can use this object to construct the search request.
 
 ```{literalinclude} ./search-queries-and-filters/resources/liferay-b9f3.zip/b9f3-impl/src/main/java/com/acme/b9f3/internal/osgi/commands/B9F3OSGiCommands.java
    :dedent: 2
@@ -149,7 +149,7 @@ Add the boolean query with its nested clauses to the request, execute the reques
    :lines: 58-75
 ```
 
-These are the Liferay services referenced in the B9F3 code:
+These Liferay services are referenced in the B9F3 code:
 
 ```{literalinclude} ./search-queries-and-filters/resources/liferay-b9f3.zip/b9f3-impl/src/main/java/com/acme/b9f3/internal/osgi/commands/B9F3OSGiCommands.java
    :dedent: 1
@@ -161,11 +161,9 @@ These are the Liferay services referenced in the B9F3 code:
 
 To create queries for object fields, web content structure fields, or document metadata sets, you must query the field according to its nested structure using a [nested query](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-nested-query.html). Inside the query, specify the path (e.g., `ddmFieldArray` for web content and document metadata sets, `nestedFieldArray` for objects) and create a boolean query with two clauses that use dot notation: one clause matches the field name, and the other matches the value (e.g., the user's keywords).
 
-
 ### Querying Web Content Structure Fields 
 
 Web content structures and documents and media metadata sets are indexed similarly. A web content structure field is indexed like this:
-
 
 ```
 {
@@ -281,7 +279,6 @@ There's no separate API for filtering. Construct the query as usual and add it t
 
 For example, you can change the B9F3 code to first filter the documents with the `folderId` of `0` and then perform the match query on the keywords and title field:
 
-<!-- First Approach: -->
 ```java
 TermQuery termQuery = _queries.term(Field.FOLDER_ID, "0");
 
@@ -295,24 +292,6 @@ MatchQuery matchQuery = _queries.match(
 searchRequestBuilder.query(matchQuery);
 
 SearchRequest searchRequest = searchRequestBuilder.build();
-```
-<!-- Second Approach: -->
-```java
-BooleanQuery booleanQuery = _queries.booleanQuery();
-
-booleanQuery.addFilterQueryClauses(
-    _queries.term(Field.FOLDER_ID, "0"));
-
-booleanQuery.addMustQueryClauses(
-    _queries.match(
-        StringBundler.concat(
-            "localized_", Field.TITLE, StringPool.UNDERLINE,
-            LocaleUtil.US),
-        keywords));
-
-SearchRequest searchRequest = searchRequestBuilder.query(
-   booleanQuery
-).build();
 ```
 
 ## Related Topics

@@ -35,7 +35,7 @@ Staging provides two types of variations:
 
 Both variation types only affect pages and do not affect your site's content, since all variations in your staging site share the same content. That said, each variation can use and configure the same content or applications in different ways, and each site pages variation can include different pages.
 
-Also, page metadata is not versioned (e.g., layout type, friendly URL). This means changes to metadata are applied to all variations. For example, if a page template is modified, those modifications are propagated to all pages configured to inherit changes from the template.
+Also, page metadata is not versioned (e.g., layout type, friendly URL, and page hierarchy). This means changes to metadata are applied to all variations. For example, if a page template is modified, those modifications are propagated to all pages configured to inherit changes from the template.
 
 !!! important
     Page templates are not recognized by the Staging framework. This means that existing page templates are not viewable or editable on a staged site. If they're created on a staged site, they are lost if staging is disabled.

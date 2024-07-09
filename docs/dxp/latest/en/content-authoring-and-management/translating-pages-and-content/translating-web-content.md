@@ -62,7 +62,7 @@ Use the [translation interface](#manually-translating-web-content-articles-using
 {bdg-secondary}`Liferay DXP 2024.Q1+/Portal 7.4 GA112+`
 
 !!! important
-    The translation status feature is currently behind a release feature flag (LPS-114700). Read [Release Feature Flags](../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information. Other features may differ without this feature flag.
+    Currently, this feature is behind release feature flags (LPS-114700 and LPS-11253). Read [Release Feature Flags](../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information. Other features may differ without these feature flags.
 
 1. Create or start editing web content.
 
@@ -70,21 +70,34 @@ Use the [translation interface](#manually-translating-web-content-articles-using
 
    There are three available statuses: Not Translated, {bdg-secondary}`Liferay DXP 2024.Q2+` Translating, and Translated.
 
-   {bdg-secondary}`Liferay DXP 2024.Q2+` The Translating status indicates two numbers, the number of fields that were translated and the total number of fields. It's presented as a badge next to the selected language. Once all fields are translated, the badge changes to Translated.
+   {bdg-secondary}`Liferay DXP 2024.Q2+` The Translating status shows two numbers: the number of translated fields and the total number of fields. It appears as a badge next to the selected language. Once all fields are translated, the badge changes to Translated.
 
-   {bdg-secondary}`Liferay DXP 2024.Q2+` The title and metadata information (i.e. Description and Friendly URL) count as information that must be translated if you want to completely translate your web content article.
+   {bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA132+` A "The Description will not count as a translatable field" message appears under the fields, distiguishing which fields count as translatable. In the image below, the Title counts as translatable, but the Description and the Friendly URL don't.
+
+   ![Distinguish which fields count as translatable.](./translating-web-content/images/03.png)
 
 !!! tip
     If you didn't define the field as Localizable, the field and its localization are disabled when translating the web content article.
 
 1. Choose a language and translate the fields.
 
+1. (Optional) {bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA132+` While translating fields, display only Translated, Untranslated, or All Fields by clicking on *All Fields* next to the flag icon in the upper left corner and selecting an option.
+
+   ![Display only translated, untranslated, or all fields.](./translating-web-content/images/04.png)
+
+1. (Optional) {bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA132+` If there are fields that don't need translating, but you want to change the translation status to Translated, click *Actions* (![Actions icon](../../images/icon-actions.png)) next to the flag icon in the upper left corner and select *Mark as Translated* (![Mark as Translated icon](../../images/icon-mark-as-translated.png)).
+
+   !!! note
+       Once marked as translated, the status is not reverted even if you undo changes. To reset the translation, click *Actions* (![Actions icon](../../images/icon-actions.png)) next to the flag icon in the upper left corner and select *Reset Translation* (![Reset Translation](../../images/icon-trash.png)).
+
+       Be aware that once you reset the translation, all translated fields are deleted and the action cannot be undone.
+
+   ![Use the Mark as Translated and Reset Translation to change the translation status.](./translating-web-content/images/05.png)
+
 1. Publish or save the article as a draft to save the modifications.
 
 !!! note
     When adding a new repeatable fieldset on a web content article with existing translations, changes to the default content don't propagate to translations automatically. This prevents unintended overwriting of already translated content.
-
-![Translate your web content article while creating/editing it.](./translating-web-content/images/03.gif)
 
 ## Translating Web Content Articles Using Third Party Services
 
@@ -106,11 +119,11 @@ With Liferay, you can export web content for translation as `.xliff` or `.xlf` f
 
 1. Click *Actions* (![Actions icon](../../images/icon-actions.png)) for the content you want to translate and select *Export for Translation*. This opens a modal window for configuring your export.
 
-   ![Select Export for Translation.](./translating-web-content/images/04.png)
+   ![Select Export for Translation.](./translating-web-content/images/06.png)
 
    {bdg-secondary}`Liferay Portal 7.4 GA26+` You can also select multiple articles and click the *Export for Translation* button.
 
-   ![Select multiple articles and click Export for Translation](./translating-web-content/images/05.png)
+   ![Select multiple articles and click Export for Translation](./translating-web-content/images/07.png)
 
 1. Select an export format: *XLIFF 1.2* or *XLIFF 2.0*.
 
@@ -118,7 +131,7 @@ With Liferay, you can export web content for translation as `.xliff` or `.xlf` f
 
 1. Select the languages you want to translate to.
 
-   ![Select the languages you want to translate the content into.](./translating-web-content/images/06.png)
+   ![Select the languages you want to translate the content into.](./translating-web-content/images/08.png)
 
 1. Click *Export*.
 
@@ -130,15 +143,15 @@ Liferay generates a ZIP archive that contains an XLIFF file for each selected la
 
 1. Click *Actions* (![Actions icon](../../images/icon-actions.png)) for the translated web content and select *Import Translation*.
 
-   ![Select Import Translation.](./translating-web-content/images/07.png)
+   ![Select Import Translation.](./translating-web-content/images/09.png)
 
    {bdg-secondary}`Liferay Portal 7.4 GA26+` You can also import translations for multiple articles at once by clicking the *Actions* button (![Actions Button](../../images/icon-actions.png)) in the Application Bar and selecting *Import Translations*.
 
-   ![Upload translations for multiple articles.](./translating-web-content/images/08.png)
+   ![Upload translations for multiple articles.](./translating-web-content/images/10.png)
 
 1. Select the `.xliff`, `.xlf`, and `.zip` files you want to import.
 
-   ![Select the translation files you want to import.](./translating-web-content/images/09.png)
+   ![Select the translation files you want to import.](./translating-web-content/images/11.png)
 
    !!! important
        While Liferay supports importing XLIFF files created using the [Export for Translation](#exporting-content-for-translation) action, it cannot guarantee the successful import of files generated by other means.
@@ -147,11 +160,11 @@ Liferay generates a ZIP archive that contains an XLIFF file for each selected la
 
    If successful, Liferay displays a success message with the imported files. The web content is updated with all changes included in the translation files. If workflow is enabled, this change must be approved as with other content updates.
 
-   ![If successful, Liferay displays a success message with the imported files.](./translating-web-content/images/10.png)
+   ![If successful, Liferay displays a success message with the imported files.](./translating-web-content/images/12.png)
 
    However, if errors occur during import, Liferay notifies you of the failing files and provides a downloadable CSV error report.
 
-   ![If errors occur during import, Liferay notifies you of the failing files and provides a downloadable CSV error report.](./translating-web-content/images/11.png)
+   ![If errors occur during import, Liferay notifies you of the failing files and provides a downloadable CSV error report.](./translating-web-content/images/13.png)
 
 ## Related Topics
 

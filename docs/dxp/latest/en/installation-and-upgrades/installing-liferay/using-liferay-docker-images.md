@@ -7,6 +7,7 @@ toc:
   - ./using-liferay-docker-images/patching-dxp-in-docker.md
   - ./using-liferay-docker-images/running-scripts-in-containers.md
   - ./using-liferay-docker-images/providing-files-to-the-container.md
+  - ./using-liferay-docker-images/maintenance-and-troubleshooting-in-docker.md
   - ./using-liferay-docker-images/upgrading-to-a-new-docker-image.md
   - ./using-liferay-docker-images/docker-image-versions.md
 uuid: 5bcfb2c0-360e-4bf4-826a-5dcea4c8c638

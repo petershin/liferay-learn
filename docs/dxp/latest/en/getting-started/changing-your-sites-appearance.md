@@ -87,7 +87,7 @@ Navigate to the Home page and confirm the background color is now blue.
 
 ## What's Next
 
-Additionally, you can use [style books](../site-building/site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md) to further customize design elements and [master page templates](../site-building/creating-pages/defining-headers-and-footers/master-page-templates.md) to design the header and footer for content pages. See [Site Appearance](../site-building/site-appearance/site-appearance.md) for a complete overview of customizing the look and feel of your site.
+Additionally, you can use [style books](../site-building/site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md) to further customize design elements and [master page templates](../site-building/creating-pages/defining-headers-and-footers/master-page-templates.md) to design the header and footer for content pages. See [Site Appearance](../site-building/site-appearance.md) for a complete overview of customizing the look and feel of your site.
 
 There are many themes available on the [Liferay Marketplace](../system-administration/installing-and-managing-apps/using-marketplace.md) that can be used to quickly achieve a professional look and feel.
 

@@ -7,9 +7,10 @@ taxonomy-category-names:
 - Liferay PaaS
 uuid: dbd1936a-f1ce-4132-9aec-3752784c340b
 ---
+
 # Creating Video Shortcut Providers
 
-> Available for Liferay DXP 7.4+
+{bdg-secondary}`Liferay DXP 7.4+`
 
 By default, Liferay's external video shortcuts support [YouTube](https://github.com/liferay/liferay-portal/blob/master/modules/apps/document-library/document-library-video/src/main/java/com/liferay/document/library/video/internal/video/external/shortcut/provider/YouTubeDLVideoExternalShortcutProvider.java), [Vimeo](https://github.com/liferay/liferay-portal/blob/master/modules/apps/document-library/document-library-video/src/main/java/com/liferay/document/library/video/internal/video/external/shortcut/provider/VimeoDLVideoExternalShortcutProvider.java), [Facebook](https://github.com/liferay/liferay-portal/blob/master/modules/apps/document-library/document-library-video/src/main/java/com/liferay/document/library/video/internal/video/external/shortcut/provider/FacebookDLVideoExternalShortcutProvider.java), and [Twitch](https://github.com/liferay/liferay-portal/blob/master/modules/apps/document-library/document-library-video/src/main/java/com/liferay/document/library/video/internal/video/external/shortcut/provider/TwitchDLVideoExternalShortcutProvider.java). However, you can extend this feature to support other video sources.
 
@@ -19,22 +20,22 @@ Follow these steps to create your own video shortcut provider:
 
 1. [**`DLVideoExternalShortcutProvider`**](https://github.com/liferay/liferay-portal/blob/master/modules/apps/document-library/document-library-api/src/main/java/com/liferay/document/library/video/external/shortcut/provider/DLVideoExternalShortcutProvider.java): Implement the `DLVideoExternalShortcutProvider` interface.
 
-1. **Override the Interface's Method**: Override the interface's `getDLVideoExternalShortcut()` method. This method creates an instance of the [`DLVideoExternalShortcut`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/document-library/document-library-api/src/main/java/com/liferay/document/library/video/external/shortcut/DLVideoExternalShortcut.java) interface and receives a URL String. Ensure your implementation does these things: 
+1. **Override the Interface's Method**: Override the interface's `getDLVideoExternalShortcut()` method. This method creates an instance of the [`DLVideoExternalShortcut`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/document-library/document-library-api/src/main/java/com/liferay/document/library/video/external/shortcut/DLVideoExternalShortcut.java) interface and receives a URL String. Ensure your implementation does these things:
 
-   * Checks if the received URL matches any defined URL patterns.
-   * If the URL doesn't match a pattern, the program should return `null`. Liferay checks other available providers in search of a match.
-   * If the URL matches a pattern, parse the URL, fetch any extra information from the external source, and return a `DLVideoExternalShortcut` instance with the gathered information.
+   - Checks if the received URL matches any defined URL patterns.
+   - If the URL doesn't match a pattern, the program should return `null`. Liferay checks other available providers in search of a match.
+   - If the URL matches a pattern, parse the URL, fetch any extra information from the external source, and return a `DLVideoExternalShortcut` instance with the gathered information.
 
 1. **Override `DLVideoExternalShortcut` Methods**: Override the required methods for the `DLVideoExternalShortcut` instance returned by the `getDLVideoExternalShortcut()` method.
 
-   * `getURL()`: retrieves the original video URL.
-   * `renderHTML()`: embeds the video in the user interface. This typically renders an `iframe` but could also be an HTML video tag anything that renders the video for users.
+   - `getURL()`: retrieves the original video URL.
+   - `renderHTML()`: embeds the video in the user interface. This typically renders an `iframe` but could also be an HTML video tag anything that renders the video for users.
 
-1. Override these optional methods: 
+1. Override these optional methods:
 
-   * `getDescription()`: Use this method to retrieve the original video's description; its default value is `null`.
-   * `getThumbnailURL()`: Use the this method to retrieve the video's thumbnail; its default value is `null`.
-   * `getTitle()`: Use this method to retrieve the original video's title; its default value is `null`.
+   - `getDescription()`: Use this method to retrieve the original video's description; its default value is `null`.
+   - `getThumbnailURL()`: Use the this method to retrieve the video's thumbnail; its default value is `null`.
+   - `getTitle()`: Use this method to retrieve the original video's title; its default value is `null`.
 
 Below is a [sample external video shortcut provider](liferay-g9b6.zip) that demonstrates the minimum requirements for implementing your own. See [existing providers](https://github.com/liferay/liferay-portal/tree/master/modules/apps/document-library/document-library-video/src/main/java/com/liferay/document/library/video/internal/video/external/shortcut/provider) for more complex examples.
 
@@ -74,7 +75,7 @@ Then, follow these steps:
    STARTED com.acme.G9B6.impl-1.0.0 [1356]
    ```
 
-1. Verify the module is working by creating a new external video shortcut<!--TASK: add link once article is merged--> with a short Dailymotion URL (e.g., https://dai.ly/x7szh28).
+1. Verify the module is working by [creating a new external video shortcut](../videos/creating-external-video-shortcuts.md) with a short Dailymotion URL (e.g., https://dai.ly/x7szh28).
 
    If successful, Liferay should recognize Dailymotion as a supported platform.
 
@@ -104,8 +105,8 @@ The provider overrides the interface's `getDLVideoExternalShortcut` method, whic
 
 When the provider returns a `DLVideoExternalShortcut` object, it overrides the object's `getURL()` and `renderHTML()` methods. `getURL()` returns the URL entered by the user. `renderHTML()` receives a `HttpServletRequest` parameter and returns an `iframe` string to be embedded into a Liferay Page or asset. Consider the following example.
 
-Since `getDescription()`, `getThumbnailURL()`, and `getTitle()` are not overridden, `null` is returned. 
+Since `getDescription()`, `getThumbnailURL()`, and `getTitle()` are not overridden, `null` is returned.
 
 ## Related Topics
 
-* [Creating External Video Shortcuts](../videos/creating-external-video-shortcuts.md)
+- [Creating External Video Shortcuts](../videos/creating-external-video-shortcuts.md)

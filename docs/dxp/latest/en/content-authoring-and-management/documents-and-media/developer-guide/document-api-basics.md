@@ -8,9 +8,10 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: 87084148-5102-4d8d-b55c-9efa57a7a2b4
 ---
+
 # Document API Basics
 
-Liferay's headless delivery application provides REST services for [Documents and Media](../../documents-and-media.md) that add documents and folders, list their information, modify them, delete them and more. Here you'll call those services using cURL commands and Java classes.
+Liferay's headless delivery application provides REST services for [Documents and Media](../../documents-and-media.md) that add documents and folders, list their information, modify them, delete them, and more. This guide demonstrates how to call those services using cURL commands and Java classes.
 
 Start with uploading documents using an example cURL command and Java class.
 
@@ -19,7 +20,7 @@ Start with uploading documents using an example cURL command and Java class.
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-When signed in, [retrieve the site's ID](../../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data). You'll use this ID in several service calls.
+When signed in, [retrieve the site's ID](../../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data). Use this ID in several service calls.
 
 Then, follow these steps:
 
@@ -48,7 +49,7 @@ Use a cURL script to upload a file to [Documents and Media](../../documents-and-
 	```
 
    !!! note
-      If your user and password aren't `test@liferay.com` and `test`, respectively, replace those values in the `Document_POST_ToSite.sh` script before running it.
+       If your user and password aren't `test@liferay.com` and `learn`, respectively, replace those values in the `Document_POST_ToSite.sh` script before running it.
 
 The script uploads itself to your site's Documents and Media.
 
@@ -69,7 +70,7 @@ The command response describes the new Documents and Media file in JSON, like th
 
 The response includes the file's description, newly assigned ID, title, and more. Note the `id` value for later commands.
 
-Next you'll use a Java class to upload a file.
+Next, use a Java class to upload a file.
 
 1. Go to the `java` folder and compile the Java source files.
 
@@ -88,7 +89,7 @@ Next you'll use a Java class to upload a file.
    ```
 
    !!! note
-      If your user and password aren't `test@liferay.com` and `test`, respectively, replace those values in the `Document_POST_ToSite.java` file and recompile the class before running it.
+       If your user and password aren't `test@liferay.com` and `test`, respectively, replace those values in the `Document_POST_ToSite.java` file and recompile the class before running it.
 
 The class uploads its source file `Document_POST_ToSite.java` to Documents and Media.
 
@@ -115,11 +116,11 @@ Here are the command's arguments:
 | `-u "test@liferay.com:learn"`                                           | Basic authentication credentials.                                                    |
 
 !!! note
-   Basic authentication is used here for demonstration purposes. For production, you should authorize users via [OAuth 2.0](../../../headless-delivery/using-oauth2.md). See [Using OAuth2 to Authorize Users](../../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md) for a sample React application that uses OAuth2.
+    Basic authentication is used here for demonstration purposes. For production, you should authorize users via [OAuth 2.0](../../../headless-delivery/using-oauth2.md). See [Using OAuth2 to Authorize Users](../../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md) for a sample React application that uses OAuth2.
 
 Other cURL commands for the `Document` and `DocumentFolder` REST services use similar arguments.
 
-Next, you'll see how similar the Java call is.
+Next, see how similar the Java call is.
 
 ## Examine the Java Class
 
@@ -133,21 +134,21 @@ The `Document_POST_ToSite.java` class uploads a file by calling a `headless-deli
 
 This class invokes the REST service using only three lines of code:
 
-| Line (abbreviated)                                                         | Description |
-| :------------------------------------------------------------------------- | :---------- |
-| `DocumentResource.Builder builder = ...`                                   | Gets a `Builder` for generating a `DocumentResource` service instance. |
-| `DocumentResource documentResource = builder.authentication(...).build();` | Specifies basic authentication and generates a `DocumentResource` service instance. |
+| Line (abbreviated)                                                         | Description                                                                                                                                                                                                                                                                            |
+| :------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `DocumentResource.Builder builder = ...`                                   | Gets a `Builder` for generating a `DocumentResource` service instance.                                                                                                                                                                                                                 |
+| `DocumentResource documentResource = builder.authentication(...).build();` | Specifies basic authentication and generates a `DocumentResource` service instance.                                                                                                                                                                                                    |
 | `Document document = documentResource.postSiteDocument(...);`              | Calls the `DocumentResource.postSiteDocument` method, passing in a site ID, a `Document` object to represent the uploaded file, and a hash map that specifies the file to upload. The file is arbitrary--this example uses the local file `Document_POST_ToSite.java` for convenience. |
 
 Note that the project includes the `com.liferay.headless.delivery.client.jar` file as a dependency. You can find client JAR dependency information for all REST applications in the API explorer in your installation at `/o/api`.
 
 !!! note
-   The `main` method's comment demonstrates running the class.
+    The `main` method's comment demonstrates running the class.
 
 The other example Java classes are similar to this one, but call different `DocumentResource` methods.
 
 !!! important
-   See [DocumentResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-delivery/headless-delivery-client/src/main/java/com/liferay/headless/delivery/client/resource/v1_0/DocumentResource.java) for service details.
+    See [DocumentResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-delivery/headless-delivery-client/src/main/java/com/liferay/headless/delivery/client/resource/v1_0/DocumentResource.java) for service details.
 
 Below are examples of calling other `Document` REST services using cURL and Java.
 
@@ -312,7 +313,7 @@ From the response, you can extract several pieces of information such as
 You can get a `Document`'s fields by executing the following cURL or Java command. Replace `1234` with the `Document`'s ID.
 
 !!! tip
-   Use `Documents_GET_FromSite.[java|sh]` to get site `Document` IDs.
+    Use `Documents_GET_FromSite.[java|sh]` to get site `Document` IDs.
 
 ### Document_GET_ById.sh
 
@@ -493,7 +494,7 @@ The Java code above calls `DocumentResource`'s `putDocument` method, passing in 
 The above cURL command and Java class replace `Document` instances with completely new ones that have the new titles "Document_PUT_ById.sh" and "Document_PUT_ById.java", respectively, and have the description "Goo."
 
 !!! warning
-   Unless you want to use the current `Document`'s title, make sure to specify the `title` value you want for the replacement `Document`.
+    Unless you want to use the current `Document`'s title, make sure to specify the `title` value you want for the replacement `Document`.
 
 ![The cURL command replaced the document.](./document-api-basics/images/04.png)
 

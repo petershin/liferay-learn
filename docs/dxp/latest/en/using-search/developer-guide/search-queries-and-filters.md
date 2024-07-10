@@ -8,11 +8,11 @@ uuid: 637981f4-8656-4b49-9926-18823840bdf9
 ---
 # Search Queries and Filters
 
-To get sensible results from the [search engine](../installing-and-upgrading-a-search-engine/installing-a-search-engine.md), you must provide a sensible query. Liferay's query APIs are found in the `portal-search-api` module and are used to construct both queries and filters.
+To get sensible results from the [search engine](../installing-and-upgrading-a-search-engine/installing-a-search-engine.md), you must provide a sensible query. Liferay's query APIs are in the `portal-search-api` module and are used to construct both queries and filters.
 
-*Filters* ask a yes or no question for every search document and do not calculate relevance. A filter might ask _is the status field equal to staging or live?_
+*Filters* ask a yes or no question for every search document and do not calculate relevance. A filter might ask *is the status field equal to staging or live?*
 
-*Queries* ask the same yes or no question compute how well a document matches the specified criteria. This is the concept of [relevance scoring](https://www.elastic.co/guide/en/elasticsearch/guide/current/scoring-theory.html). A query might ask _Does the document's content field contain the words "Liferay", "Content", or "Management", and how relevant is the content of the document to the searched keywords?_
+*Queries* ask the same yes or no question compute how well a document matches the specified criteria. This is the concept of [relevance scoring](https://www.elastic.co/guide/en/elasticsearch/guide/current/scoring-theory.html). A query might ask *Does the document's content field contain the words "Liferay", "Content", or "Management", and how relevant is the content of the document to the searched keywords?*
 
 To use queries and filters in Liferay, construct the query and then add it to the request as a query or filter:
 
@@ -31,7 +31,7 @@ Here you can deploy, test, and inspect a [Gogo Shell command](../../liferay-inte
 
 Then, download the project and complete some prerequisites:
 
-1. Download and unzip the liferay-b9f3 project:
+1. Download and unzip the `liferay-b9f3` project:
 
    ```bash
    curl https://resources.learn.liferay.com/dxp/latest/en/using-search/developer-guide/liferay-b9f3.zip -O
@@ -94,10 +94,7 @@ Then, download the project and complete some prerequisites:
 
 ## Test the B9F3 Search Queries
 
-1. On the locally running Liferay's home page, enter _able_ into the search bar:
-
-
-    Six results appear.
+1. On the locally running Liferay's home page, enter _able_ into the search bar. Six results appear.
 
 1. Open the Global Menu (![Global Menu](../../images/icon-applications-menu.png)), navigate to *Control Panel* &rarr; *Gogo Shell*.
 
@@ -107,10 +104,10 @@ Then, download the project and complete some prerequisites:
 
    ![You can execute the search query from the Gogo shell.](./search-queries-and-filters/images/01.png)
 
-1. Four results appear, all of them root content. Anything nested inside the created folders does not have a `folderId` of `0`, and is not returned. However, the folders themselves are returned, because they are contained in the root folder, and given a `folderId` of `0`.
+1. Four results appear, all of them root content. Anything nested inside the created folders does not have a `folderId` of `0`, and is not returned. However, the folders themselves are returned, because they are contained in the root folder and given a `folderId` of `0`.
 
 !!! tip
-    The root folder in the Documents and Media and Web Content applications have a `folderId` of `0`. You can check the indexed folder ID of each search result by enabling _Display Results in Document Form_ in the Search Results widget. See [Inspecting Search Engine Documents](../search-pages-and-widgets/search-results/configuring-the-search-results-widget.md#inspecting-search-engine-documents) for more information. 
+    The root folder in the Documents and Media and Web Content applications have a `folderId` of `0`. You can check the indexed folder ID of each search result by enabling *Display Results in Document Form* in the Search Results widget. See [Inspecting Search Engine Documents](../search-pages-and-widgets/search-results/configuring-the-search-results-widget.md#inspecting-search-engine-documents) for more information. 
 
 ## Understanding the B9F3 Search Queries
 
@@ -122,7 +119,7 @@ First, initialize a `SearchRequestBuilder`. You can use this object to construct
    :lines: 32-33
 ```
 
-Next, populate the `SearchContext` within the request. This sets the entry class names to search and the company ID of the instance to search within. It also sets the keywords to search. These keywords are entered by the user at search time.
+Next, populate the `SearchContext` within the request. This sets the entry class names to search and the company ID of the instance to be searched. It also sets the keywords to search. These keywords are entered by the user at search time.
 
 !!! note
     You must either set keywords into the search context or enable empty search in the request builder with `searchRequestBuilder.emptySearchEnabled(true);`.
@@ -133,7 +130,7 @@ Next, populate the `SearchContext` within the request. This sets the entry class
    :lines: 35-46
 ```
 
-Now fashion the query clauses. This example nests two MUST query clauses inside a boolean query: one clause is a term query for matching the `folderId` field to the value `0`, and the other is for performing a full text match query of the user's search keywords to the localized title field.
+Now fashion the query clauses. This example nests two MUST query clauses inside a Boolean query: one clause is a term query for matching the `folderId` field to the value `0`, and the other is for performing a full text match query of the user's search keywords to the localized title field.
 
 ```{literalinclude} ./search-queries-and-filters/resources/liferay-b9f3.zip/b9f3-impl/src/main/java/com/acme/b9f3/internal/osgi/commands/B9F3OSGiCommands.java
    :dedent: 2
@@ -141,7 +138,7 @@ Now fashion the query clauses. This example nests two MUST query clauses inside 
    :lines: 48-56
 ```
 
-Add the boolean query with its nested clauses to the request, execute the request, then process the response as needed. This prints the document's `uid` field and its score.
+Add the Boolean query with its nested clauses to the request, execute the request, then process the response as needed. This prints the document's `uid` field and its score.
 
 ```{literalinclude} ./search-queries-and-filters/resources/liferay-b9f3.zip/b9f3-impl/src/main/java/com/acme/b9f3/internal/osgi/commands/B9F3OSGiCommands.java
    :dedent: 2
@@ -159,7 +156,7 @@ These Liferay services are referenced in the B9F3 code:
 
 ## Implementing Nested Queries
 
-To create queries for object fields, web content structure fields, or document metadata sets, you must query the field according to its nested structure using a [nested query](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-nested-query.html). Inside the query, specify the path (e.g., `ddmFieldArray` for web content and document metadata sets, `nestedFieldArray` for objects) and create a boolean query with two clauses that use dot notation: one clause matches the field name, and the other matches the value (e.g., the user's keywords).
+To create queries for object fields, web content structure fields, or document metadata sets, you must query the field according to its nested structure using a [nested query](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-nested-query.html). Inside the query, specify the path (e.g., `ddmFieldArray` for web content and document metadata sets, `nestedFieldArray` for objects) and create a Boolean query with two clauses that use dot notation: one clause matches the field name, and the other matches the value (e.g., the user's keywords).
 
 ### Querying Web Content Structure Fields 
 

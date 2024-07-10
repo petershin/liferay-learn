@@ -7,15 +7,15 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: f75c3e38-f15b-495b-9384-e1ea4a767771
 ---
+
 # Managing Fragments
 
-Liferay DXP provides tools for managing fragments in the Liferay UI. With out-of-the-box tools, you can quickly edit fragment code, export/import fragment sets between sites, and more.
+Liferay DXP provides tools for managing fragments in the Liferay UI. With out-of-the-box tools, you can edit fragment code, export/import fragment sets between sites, and more.
 
-```{tip}
-To share fragments and sets between sites, add them to the Global site or use the export/import actions.
+!!! tip
+    To share fragments and sets between sites, add them to the Global site or use the export/import actions.
 
-You can use the Export/Import actions within the fragment sets and individual page fragments if you have a ZIP file. Alternatively, if you have a LAR file, you can use the Export/Import options in the Options menu located at the Applications Bar.
-```
+    You can use the Export/Import actions within the fragment sets and individual page fragments if you have a ZIP file. Alternatively, if you have a LAR file, you can use the Export/Import options in the Options menu located at the Applications Bar.
 
 ## Managing Fragment Sets
 
@@ -23,11 +23,9 @@ You can use the Export/Import actions within the fragment sets and individual pa
 
 1. Select the desired fragment set.
 
-1. Click the set's *Actions* button (![Actions](../../../../images/icon-actions.png)).
+1. Click *Actions* (![Actions](../../../../images/icon-actions.png)) for the fragment set you want to export and select an action:
 
    ![Click the fragment set's Actions button to access management options.](./managing-fragments/images/01.png)
-
-1. Select an action:
 
    **Edit**: Change the name or description for the fragment set.
 
@@ -37,9 +35,8 @@ You can use the Export/Import actions within the fragment sets and individual pa
 
    **Delete**: Remove the current fragment set and all its contents.
 
-```{tip}
-To export multiple sets, click the Fragment Sets *Actions* button (![Actions](../../../../images/icon-actions.png)) and select *Export*. Then, check the sets you want to export and click *Export*. Each set is downloaded as a separate `.zip` file.
-```
+!!! tip
+    To export multiple sets, click *Actions* (![Actions](../../../../images/icon-actions.png)) for the fragment set you want to export and select *Export*. Then, check the sets you want to export and click *Export*. Each set is downloaded as a separate `.zip` file.
 
 ## Managing Individual Page Fragments
 
@@ -47,35 +44,32 @@ To export multiple sets, click the Fragment Sets *Actions* button (![Actions](..
 
 1. Select the desired fragment set.
 
-1. Click the fragment's *Actions* button (![Actions](../../../../images/icon-actions.png)).
+1. Click *Actions* (![Actions](../../../../images/icon-actions.png)) for the fragment you want to manage and select an action:
 
    ![Click the fragment's Actions button to access fragment management options.](./managing-fragments/images/02.png)
 
-1. Select an action below.
+   **Edit**: Modify the fragment's code or configuration.
 
-**Edit**: Modify the fragment's code or configuration.
+   **Change Thumbnail**: Change the fragment's thumbnail image.
 
-**Change Thumbnail**: Change the fragment's thumbnail image.
+   **Remove Thumbnail**: Remove the fragment's thumbnail image and use the default fragment type icon.
 
-**Remove Thumbnail**: Remove the fragment's thumbnail image and use the default fragment type icon.
+   **Rename**: Change the fragment's name.
 
-**Rename**: Change the fragment's name.
+   **Mark or Unmark as Cacheable**: Mark or unmark the fragment as cacheable. When a fragment is cached, it improves the performance of its pages.
 
-**Mark or Unmark as Cacheable**: Mark or unmark the fragment as cacheable. When a fragment is cached, it improves the performance of its pages.
+   **View Usages**: View the pages where the fragment is used. You can see the page's name, type, version, and the time since the page's last propagation. You can also select a page and propagate it.
 
-**View Usages**: View the pages where the fragment is used. You can see the page's name, type, version, and the time since the page's last propagation. You can also select a page and propagate it.
+   **Export**: Download the fragment as a `.zip` file.
 
-**Export**: Download the fragment as a `.zip` file.
+   **Make a Copy**: Duplicate the fragment. Duplicated fragments share the same name with *(Copy)* appended to the end.
 
-**Make a Copy**: Duplicate the fragment. Duplicated fragments share the same name with *(Copy)* appended to the end.
+   **Move**: Move the fragment to a different fragment set.
 
-**Move**: Move the fragment to a different fragment set.
+   **Delete**: Remove the fragment.
 
-**Delete**: Remove the fragment.
-
-```{important}
-Users cannot edit or copy [saved fragment compositions](./saving-fragment-compositions.md).
-```
+   !!! important
+      Users cannot edit or copy [saved fragment compositions](./saving-fragment-compositions.md).
 
 ## Copying Fragments
 
@@ -85,20 +79,17 @@ Users cannot edit or copy [saved fragment compositions](./saving-fragment-compos
 
 1. Select the desired fragment set.
 
-1. Click the fragment's *Actions* button (![Actions](../../../../images/icon-actions.png)) and select *Copy To*.
+1. Click *Actions* (![Actions](../../../../images/icon-actions.png)) for the fragment you want to copy and select *Copy To*.
 
    ![Click the fragment's Actions button and select Copy To.](./managing-fragments/images/03.png)
 
 1. Select the set where you want to copy the fragment.
 
-```{tip}
-Users cannot edit [default fragments](./default-fragments-reference.md) directly. However, you can copy default fragments into a custom set and edit them there.
-```
+!!! tip
+    Users cannot edit [default fragments](./default-fragments-reference.md) directly. However, you can copy default fragments into a custom set and edit them there.
 
 ## Related Topics
 
-[Using Fragments](../using-fragments.md)
-
-[Configuring Fragments](./configuring-fragments.md)
-
-[Default Fragments Reference](./default-fragments-reference.md)
+- [Using Fragments](../using-fragments.md)
+- [Configuring Fragments](./configuring-fragments.md)
+- [Default Fragments Reference](./default-fragments-reference.md)

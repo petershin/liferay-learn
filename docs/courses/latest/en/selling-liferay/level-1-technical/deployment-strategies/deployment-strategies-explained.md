@@ -27,8 +27,6 @@ With Liferay DXP Self-Hosted, Liferay provides just the DXP software itself - th
 | --- | --- | --- |
 | Products | &#10004; |  |
 | Subscription (Support, Warranty, Indemnity, etc) | &#10004; | |
-| Infrastructure (Uptime w/ SLA) |  | &#10004; |
-| Application Uptime SLA |  | &#10004; |
 | Platform Services (Database, Search, etc) |  | &#10004; |
 | Architecture and High Availability |  | &#10004; |
 | Upgrades |  | &#10004; |
@@ -75,8 +73,7 @@ And, further than that, auto-scaling and High-Availability are available out-of-
 | --- | --- | --- |
 | Products | &#10004; |  |
 | Subscription (Support, Warranty, Indemnity, etc) | &#10004; |  |
-| Infrastructure (Uptime w/ SLA) | &#10004; |  |
-| Application Uptime SLA |  | &#10004; |
+| Infrastructure Uptime SLA | &#10004; |  |
 | Platform Services (Database, Search, etc) | &#10004; |  |
 | Architecture and High Availability | &#10004; |  |
 | Upgrades |  | &#10004; |
@@ -148,7 +145,6 @@ With Liferay SaaS, the Customer can focus on what really matters - creating and 
 | --- | --- | --- |
 | Products | &#10004; |  |
 | Subscription (Support, Warranty, Indemnity, etc) | &#10004; |  |
-| Infrastructure (Uptime w/ SLA) | &#10004; |  |
 | Application Uptime SLA | &#10004; |  |
 | Platform Services (Database, Search, etc) | &#10004; |  |
 | Architecture and High Availability | &#10004; |  |

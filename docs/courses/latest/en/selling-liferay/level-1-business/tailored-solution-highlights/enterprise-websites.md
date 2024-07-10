@@ -5,13 +5,13 @@ visibility:
 - Partner
 ---
 
-# External Websites
+# Enterprise Websites
 
-An external website (or public website) helps drive new opportunities by providing prospects with information about what an organization has to offer. Liferay DXP is well suited for building these types of deeply personalized, omni-channel experiences.
+An enterprise website (or public website) helps drive new opportunities by providing prospects with information about what an organization has to offer. Liferay DXP is well suited for building these types of deeply personalized, omni-channel experiences.
 
-## Key Liferay DXP Capabilities for External Websites
+## Key Liferay DXP Capabilities for Enterprise Websites
 
-For powering an external website, some of the most important capabilities to highlight are
+For powering an enterprise website, some of the most important capabilities to highlight are
 
 * [Sites](https://learn.liferay.com/w/dxp/site-building)
 * [Content Management System (CMS)](https://learn.liferay.com/w/dxp/content-authoring-and-management)
@@ -29,7 +29,7 @@ Of these, two key capability sets are
 
 ## Sites
 
-An external website is one of the major digital assets of an organization that showcases the brand.  Liferay provides state-of-the-art features for creating immersive digital experiences through external websites.
+An enterprise website is one of the major digital assets of an organization that showcases the brand.  Liferay provides state-of-the-art features for creating immersive digital experiences through enterprise websites.
 
 ### Style Books and Master Pages
 

@@ -16,7 +16,7 @@ uuid: fff3c165-26ff-48d7-8937-cdc26f1b0062
   * Configuration
   * Low Code
   * Integrations
-  * Client-Extensions
+  * Client Extensions
 
 ## Background
 

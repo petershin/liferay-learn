@@ -78,8 +78,6 @@ Finally, they must build their solution on DXP.
 | --- | --- | --- |
 | Products | &#10004; |  |
 | Subscription (Support, Warranty, Indemnity, etc) | &#10004; | |
-| Infrastructure (Uptime w/ SLA) |  | &#10004; |
-| Application Uptime SLA |  | &#10004; |
 | Platform Services (Database, Search, etc) |  | &#10004; |
 | Architecture and High Availability |  | &#10004; |
 | Upgrades |  | &#10004; |
@@ -112,8 +110,7 @@ But there are still some time-consuming and relatively low-value activities that
 | --- | --- | --- |
 | Products | &#10004; |  |
 | Subscription (Support, Warranty, Indemnity, etc) | &#10004; |  |
-| Infrastructure (Uptime w/ SLA) | &#10004; |  |
-| Application Uptime SLA |  | &#10004; |
+| Infrastructure Uptime SLA | &#10004; |  |
 | Platform Services (Database, Search, etc) | &#10004; |  |
 | Architecture and High Availability | &#10004; |  |
 | Upgrades |  | &#10004; |
@@ -142,7 +139,6 @@ What is important to note is that although the deployment model is SaaS, this is
 | --- | --- | --- |
 | Products | &#10004; |  |
 | Subscription (Support, Warranty, Indemnity, etc) | &#10004; |  |
-| Infrastructure (Uptime w/ SLA) | &#10004; |  |
 | Application Uptime SLA | &#10004; |  |
 | Platform Services (Database, Search, etc) | &#10004; |  |
 | Architecture and High Availability | &#10004; |  |

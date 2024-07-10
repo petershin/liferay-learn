@@ -19,7 +19,7 @@ The rich product capabilities, low code capabilities and extensibility are well 
 * Digital Commerce
 * Supplier Portals
 * Partner Portals
-* External Websites
+* Enterprise Websites
 * Employee Portals
 
 ## Customer Portals

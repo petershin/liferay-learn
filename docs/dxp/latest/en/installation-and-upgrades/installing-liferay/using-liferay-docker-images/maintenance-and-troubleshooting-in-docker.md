@@ -3,6 +3,7 @@ uuid: a0fa82d8-4d7a-4f6a-bfec-a97106da9baf
 taxonomy-category-names:
 - DXP Self-Hosted Installation, Maintenance, and Administration
 - DXP Configuration
+- Liferay PaaS
 - Liferay Self-Hosted
 ---
 # Maintenance and Troubleshooting in Docker
@@ -70,3 +71,10 @@ The first DXP node creates the lock file and updates it every 30 seconds. If oth
 If `LIFERAY_DOCKER_THREAD_DUMP_INTERVAL_FILE` is not empty, the container starts a separate thread monitoring the file itself. If this file contains a number, the container creates a thread dump to the `LIFERAY_THREAD_DUMPS_DIRECTORY` directory with the delay of the number of seconds written in this file. So if `/opt/liferay/data/sre/thread_dump_interval` is 3, it creates a thread dump every 3 seconds. If the file was not created, it takes less than 60 seconds to notice the change.
 
 This is a useful tool to generate thread dumps on several cluster nodes since the file is on a shared file system. It can be also used to detect startup problems if the file is already created when the container starts up.
+
+## Container Life Cycle Probe
+
+The Liferay Docker container comes with an out-of-the-box life cycle probe. By using `usr/local/bin/probe_container_lifecycle.sh`, the status of the container can be quickly checked without timeouts. the probe only returns true if the container status is live. If the status hasn't been updated for more than 2 minutes, it fails (This might happen if the monitoring thread's check fails).
+
+!!! tip
+    The life cycle probe is recommended if you're using Kubernetes.

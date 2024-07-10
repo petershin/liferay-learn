@@ -9,7 +9,7 @@ function check_external_links {
 	local checked_dir_names
 	local link
 
-	for link in $(rg "\[.+?\]\(http.*?\)" --glob=$(fd --full-path "${1}.*\.md") --only-matching --pcre2 | sort)
+	for link in $(rg "\[.+?\]\(http.*?\)" --glob="${1%/$*}/**/*.md" --only-matching --pcre2 | sort)
 	do
 		local url=$(echo "${link}" | sed 's/.*(\(.*\))/\1/g' )
 

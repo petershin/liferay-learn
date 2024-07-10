@@ -9,7 +9,7 @@ uuid: 1e13195e-4d93-4d50-bc15-910ece4d4e8d
 ---
 # Default Fragments Reference
 
-Liferay provides a variety of fragments out-of-the-box, so you can start building your solution right away. To view available fragments, begin editing a content page or page template. While editing, open the *Fragments and Widgets* tab ( ![Fragments and Widgets](../../../../images/icon-plus.png) ) in the editing sidebar menu.
+Liferay provides many out-of-the-box fragments, so you can start building your solution immediately. To view available fragments, begin editing a content page or page template. While editing, open the *Fragments and Widgets* tab (![Fragments and Widgets](../../../../images/icon-plus.png)) in the editing sidebar menu.
 
 Fragments are organized into the following sets:
 
@@ -28,9 +28,8 @@ Fragments are organized into the following sets:
   - [Navigation Bars](#navigation-bars)
   - [Menu Display](#menu-display)
 
-```{note}
-Available configuration options vary by fragment and fragment sub-element. See [Configuring Fragments](./configuring-fragments.md) for more information.
-```
+!!! note
+    Available configuration options vary by fragment and fragment sub-element. See [Configuring Fragments](./configuring-fragments.md) for more information.
 
 ## Layout Elements
 
@@ -39,31 +38,31 @@ Available configuration options vary by fragment and fragment sub-element. See [
 Layout elements define drop zones for designing page and template layouts. By default, Liferay includes two layout elements: *Container* and *Grid*.
 
 | Fragment                       | Description                                                                                               |
-|:-------------------------------|:----------------------------------------------------------------------------------------------------------|
+| :----------------------------- | :-------------------------------------------------------------------------------------------------------- |
 | Container (previously *Panel*) | Adds a configurable drop zone.                                                                            |
 | Grid (previously *Row*)        | Adds multiple drop zone modules. These modules can be configured and arranged vertically or horizontally. |
 
 ## Basic Components
 
-These are simple design elements that add basic functionality to a page. Examples include buttons, headings, and tabs. With these components, you can build your page piece by piece. DXP includes the following basic components.
+These are simple design elements that add basic functionality to a page. Examples include buttons, headings, and tabs. With these components, you can build your page piece by piece. DXP includes the following basic components:
 
-| Fragment                                | Description                                                                                                                                                                                                                                                                                                                                                         |
-|:----------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Button                                  | Adds a [link element](./configuring-fragments/fragment-sub-elements-reference.md). It can be a Link or an Action type, and you can apply five different button styles: Primary, Secondary, Link, Outline Primary, and Outline Secondary.                                                                                                                            |
-| Card                                    | Adds [image](./configuring-fragments/fragment-sub-elements-reference.md), [rich text](./configuring-fragments/fragment-sub-elements-reference.md), and [link](./configuring-fragments/fragment-sub-elements-reference.md) elements arranged as a display card.                                                                                                      |
-| Date                                    | Adds a field that you can map to custom date fields.                                                                                                                                                                                                                                                                                                                |
-| Drop-down {bdg-secondary}`7.4+`         | Adds a [simple text element](./configuring-fragments/fragment-sub-elements-reference.md) and drop zone. You can drag-and-drop other fragments and widgets into the drop zone to create an advanced drop-down menu.                                                                                                                                                  |
-| External Video {bdg-secondary}`7.4+`    | Embeds an external video in a page or template. Supported video sources include YouTube, Facebook, Twitch, Vimeo, and videos stored in Documents and Media. See [Embedding Videos Into Liferay Assets and Pages](../../../../content-authoring-and-management/documents-and-media/videos/embedding-videos-into-liferay-assets-and-pages.md) for more information.   |
-| HTML                                    | Adds an editable [HTML element](./configuring-fragments/fragment-sub-elements-reference.md). Double-clicking the element opens a modal window where you can edit its content using HTML syntax.                                                                                                                                                                     |
-| Heading                                 | Adds a [simple text element](./configuring-fragments/fragment-sub-elements-reference.md) that can be configured to use H1-H6 heading level.                                                                                                                                                                                                                         |
-| Image                                   | Adds a configurable [image element](./configuring-fragments/fragment-sub-elements-reference.md). When configuring, determine whether to use the image's original size, or adjust it to fit its context.                                                                                                                                                             |
-| Paragraph                               | Adds a [rich text element](./configuring-fragments/fragment-sub-elements-reference.md). When editing, highlight the fragment's text to access additional formatting options.                                                                                                                                                                                        |
-| Separator                               | Adds a horizontal line between page elements. You can configure its spacing and color.                                                                                                                                                                                                                                                                              |
-| Slider                                  | Adds multiple [images](./configuring-fragments/fragment-sub-elements-reference.md) with [rich text](./configuring-fragments/fragment-sub-elements-reference.md) overlay that are grouped into slides. Users can manually cycle through each slide.                                                                                                                  |
-| Social                                  | Adds [image elements](./configuring-fragments/fragment-sub-elements-reference.md) with Facebook, Twitter, and LinkedIn icons, which you can link to pages on each platform.                                                                                                                                                                                         |
-| Spacer                                  | Adds a horizontal blank space between fragments on a page. You can configure its height.                                                                                                                                                                                                                                                                            |
-| Tabs                                    | Adds multiple tabs with [simple text elements](./configuring-fragments/fragment-sub-elements-reference.md) and individual drop zones for adding widgets and other fragments.                                                                                                                                                                                        |
-| Video URL (previously *Video Fragment*) | Embeds a video from YouTube or Documents and Media in a page or template. You can set the video to autoplay, loop, mute, or hide controls. You can also hide video controls from end users. See [Embedding Videos](../../../../content-authoring-and-management/documents-and-media/videos/embedding-videos-into-liferay-assets-and-pages.md) for more information. |
+| Fragment                                | Description                                                                                                                                                                                                                                                                                                              |
+| :-------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Button                                  | Adds a [link element](./configuring-fragments/fragment-sub-elements-reference.md) that can be a Link or an Action type. You can apply five button styles: Primary, Secondary, Link, Outline Primary, and Outline Secondary.                                                                                              |
+| Card                                    | Adds [image](./configuring-fragments/fragment-sub-elements-reference.md), [rich text](./configuring-fragments/fragment-sub-elements-reference.md), and [link](./configuring-fragments/fragment-sub-elements-reference.md) elements arranged as a display card.                                                           |
+| Date                                    | Adds a field that you can map to custom date fields.                                                                                                                                                                                                                                                                     |
+| Drop-down {bdg-secondary}`7.4+`         | Adds a [simple text element](./configuring-fragments/fragment-sub-elements-reference.md) and drop zone. You can drag-and-drop other fragments and widgets into the drop zone to create an advanced drop-down menu.                                                                                                       |
+| External Video {bdg-secondary}`7.4+`    | [Embeds an external video in a page or template](../../../../content-authoring-and-management/documents-and-media/videos/embedding-videos-into-liferay-assets-and-pages.md). Supported video sources include YouTube, Facebook, Twitch, Vimeo, and videos stored in Documents and Media.                                 |
+| HTML                                    | Adds an editable [HTML element](./configuring-fragments/fragment-sub-elements-reference.md). Double-clicking the element opens a modal window where you can edit its content using HTML syntax.                                                                                                                          |
+| Heading                                 | Adds a [simple text element](./configuring-fragments/fragment-sub-elements-reference.md) that can be configured to use H1-H6 heading levels.                                                                                                                                                                             |
+| Image                                   | Adds a configurable [image element](./configuring-fragments/fragment-sub-elements-reference.md). When configuring, determine whether to use the image's original size, or adjust it to fit its context.                                                                                                                  |
+| Paragraph                               | Adds a [rich text element](./configuring-fragments/fragment-sub-elements-reference.md). When editing, highlight the fragment's text to access additional formatting options.                                                                                                                                             |
+| Separator                               | Adds a horizontal line between page elements. You can configure its spacing and color.                                                                                                                                                                                                                                   |
+| Slider                                  | Adds multiple [images](./configuring-fragments/fragment-sub-elements-reference.md) with [rich text](./configuring-fragments/fragment-sub-elements-reference.md) overlay that are grouped into slides. Users can manually cycle through each slide.                                                                       |
+| Social                                  | Adds [image elements](./configuring-fragments/fragment-sub-elements-reference.md) with Facebook, Twitter, and LinkedIn icons, which you can link to pages on each platform.                                                                                                                                              |
+| Spacer                                  | Adds a horizontal blank space between fragments on a page. You can configure its height.                                                                                                                                                                                                                                 |
+| Tabs                                    | Adds multiple tabs with [simple text elements](./configuring-fragments/fragment-sub-elements-reference.md) and individual drop zones for adding widgets and other fragments.                                                                                                                                             |
+| Video URL (previously *Video Fragment*) | [Embeds a video](../../../../content-authoring-and-management/documents-and-media/videos/embedding-videos-into-liferay-assets-and-pages.md) from YouTube or Documents and Media in a page or template. You can set the video to autoplay, loop, mute, or hide controls. You can also hide video controls from end users. |
 
 ## Form Components
 
@@ -96,7 +95,7 @@ Use content display fragments to display site content individually or as part of
 
 | Fragment                           | Description                                                                                                                                                                                                                                                                                                                                                                                                       |
 |:-----------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Collection Display                 | Displays manually and dynamically defined collections, as well as collections defined by a collection provider. You can configure whether the collection is displayed in a grid, or with a list template (i.e., bordered, bulleted, inline, numbered, and unstyled). See [Displaying Collections](../../../displaying-content/collections-and-collection-pages/displaying-collections.md) for more information. |
+| Collection Display                 | Displays manually and dynamically defined collections, as well as collections defined by a collection provider. You can configure whether the collection appears in a grid, or with a list template (i.e., bordered, bulleted, inline, numbered, and unstyled). See [Displaying Collections](../../../displaying-content/collections-and-collection-pages/displaying-collections.md) for more information. |
 | Content Display                    | Displays a single content item from documents and media, web content, blogs, or categories. Available configuration options depend on the selected content type.                                                                                                                                                                                                                                                  |
 | Applied Filters (Available 7.4+)   | Adds an element for displaying and managing filters applied to a collection display.                                                                                                                                                                                                                                                                                                                              |
 | Content Flags                      | Adds an element for flagging a content item.                                                                                                                                                                                                                                                                                                                                                                      |
@@ -122,11 +121,10 @@ Use the mini cart fragment to obtain a detailed overview of your cart. You can u
 
 ## Featured Content
 
-Featured content fragments are complex page elements composed of multiple components. To preview a fragment's layout, switch to *Card View* ( ![Card View](../../../../images/icon-cards2.png) ) in the Fragments and Widgets panel. Liferay includes the following featured content fragments.
+Featured content fragments are complex page elements composed of multiple components. To preview a fragment's layout, switch to *Card View* (![Card View](../../../../images/icon-cards2.png)) in the Fragments and Widgets panel. Liferay includes the following featured content fragments.
 
-```{note}
-For Liferay DXP/Portal 7.3, you can preview layouts by hovering over each fragment's *Information* icon (![Information](../../../../images/icon-information.png)).
-```
+!!! note
+    For Liferay DXP/Portal 7.3, you can preview layouts by hovering over each fragment's *Information* icon (![Information](../../../../images/icon-information.png)).
 
 ### Banners
 
@@ -180,8 +178,6 @@ You can also create a custom menu display fragment with specific markup and desi
 
 ## Related Topics
 
-[Using Content Pages](../../using-content-pages.md)
-
-[Content Page Editor UI Reference](../../using-content-pages/content-page-editor-ui-reference.md)
-
-[Using Fragments](../using-fragments.md)
+- [Using Content Pages](../../using-content-pages.md)
+- [Content Page Editor UI Reference](../../using-content-pages/content-page-editor-ui-reference.md)
+- [Using Fragments](../using-fragments.md)

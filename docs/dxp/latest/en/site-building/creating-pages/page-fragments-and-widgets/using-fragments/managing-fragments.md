@@ -23,7 +23,7 @@ Liferay DXP provides tools for managing fragments in the Liferay UI. With out-of
 
 1. Select the desired fragment set.
 
-1. Click *Actions* (![Actions](../../../../images/icon-actions.png)) for the fragment set you want to export and select an action:
+1. Click *Actions* (![Actions](../../../../images/icon-actions.png)) for the fragment set you want and select an action:
 
    ![Click the fragment set's Actions button to access management options.](./managing-fragments/images/01.png)
 
@@ -44,7 +44,7 @@ Liferay DXP provides tools for managing fragments in the Liferay UI. With out-of
 
 1. Select the desired fragment set.
 
-1. Click *Actions* (![Actions](../../../../images/icon-actions.png)) for the fragment you want to manage and select an action:
+1. Click *Actions* (![Actions](../../../../images/icon-actions.png)) for the fragment you want and select an action:
 
    ![Click the fragment's Actions button to access fragment management options.](./managing-fragments/images/02.png)
 
@@ -79,7 +79,7 @@ Liferay DXP provides tools for managing fragments in the Liferay UI. With out-of
 
 1. Select the desired fragment set.
 
-1. Click *Actions* (![Actions](../../../../images/icon-actions.png)) for the fragment you want to copy and select *Copy To*.
+1. Click *Actions* (![Actions](../../../../images/icon-actions.png)) for the fragment you want and select *Copy To*.
 
    ![Click the fragment's Actions button and select Copy To.](./managing-fragments/images/03.png)
 

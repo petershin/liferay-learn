@@ -13,13 +13,14 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: 3abcc783-379c-4520-81b3-6095bb482a3b
 ---
+
 # Configuring Fragments
 
 You can configure fragments and their sub-elements. Available options can vary, though some are common to all. To view available configuration options, begin editing a page or template and open the *Browser* panel (![Browser](../../../../images/icon-hierarchy.png)) in the sidebar menu. Then click the fragment or sub-element to configure. Available configuration options appear in three tabs: General, Styles, and Advanced.
 
 ![Available configuration options are grouped into three tabs.](./configuring-fragments/images/01.png)
 
-Some configurations are scoped to the specific viewport where they're made, so you can configure fragments for specific devices to ensure page content is displayed in the most suitable way. See [Building a Responsive Site](../../../optimizing-sites/building-a-responsive-site.md) for more information.
+Some configurations are scoped to the specific viewport where they're made, so you can configure fragments for specific devices to ensure page content appears in the most suitable way. See [Building a Responsive Site](../../../optimizing-sites/building-a-responsive-site.md) for more information.is displayed
 
 You can localize some fragment configuration fields. See [Localizing Fragment Configuration Fields](./configuring-fragments/localizing-fragment-configuration-fields.md) for more information.
 
@@ -50,5 +51,3 @@ In the Image Source tab, you can select an element's image, view its resolution,
 ### Link
 
 In the Link tab, you can either manually add a URL to a page element, or select from an available content field. You can also specify the desired target (e.g., self, parent).
-
-

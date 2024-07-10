@@ -11,7 +11,7 @@ uuid: b5f5c2ee-2ab3-4a4e-a4f9-8a1d54edd4cf
 
 # Document Shortcut API Basics
 
-Liferay's headless delivery application provides REST services for [Documents and Media](../../documents-and-media.md) that add document shortcuts to sites or asset libraries, list their information, modify them, delete them, and more. This guide demonstrates how to call those services using cURL commands and Java classes.
+Liferay's headless delivery application provides REST services for [Documents and Media](../../documents-and-media.md) that add document shortcuts to sites or asset libraries, list their information, modify them, delete them, and more. You can call those services using cURL commands and Java classes.
 
 Start by setting up the environment and gathering the necessary information.
 
@@ -41,7 +41,7 @@ Then, follow these steps:
    You need a document's ID to create shortcuts. To get a list of documents in a site and their IDs, execute the `Documents_GET_FromSite.sh` script in the terminal:
 
    !!! important
-      Ensure the email and password specified in the `--user` option match those used in the scripts.
+       Ensure the email and password specified in the `--user` option match those used in the scripts.
 
    ```bash
    Documents_GET_FromSite.sh [site-ID]
@@ -49,7 +49,7 @@ Then, follow these steps:
 
    In the response, find the uploaded document's `ID`. In this example, they're `32078` for `crab.jpg`, `32067` for `shrimp.jpg`, and `32054` for `betta.jpg`.
 
-   ```bash
+   ```json
    ...
    "encodingFormat" : "image/jpeg",
    "externalReferenceCode" : "4581bab6-2186-85f0-e384-dba35a897a95",
@@ -78,7 +78,7 @@ Then, follow these steps:
 
    This returns a list with all folders. If you don't have any, use the "Provided by Liferay" out-of-the-box folder. In this example, the ID is `31637`.
 
-   ```bash
+   ```json
    ...
    "customFields" : [ ],
    "dateCreated" : "2024-06-28T10:28:31Z",
@@ -128,7 +128,7 @@ DocumentShortcut_POST_ToSite.sh [site-ID] [folder-ID] [document-ID]
 
 The terminal shows a similar output.
 
-```bash
+```json
 {
    "actions" : {
       "get" : {
@@ -146,7 +146,7 @@ The terminal shows a similar output.
 }
 ```
 
-In this example, the shortcut for `crab.jpg` is posted into the "Provided by Liferay folder". It's identified with the shortcut icon (![shortcut icon](../../../images/icon-shortcut.png)).
+In this example, the shortcut for `crab.jpg` is posted into the *Provided by Liferay folder*. It's identified with the shortcut icon (![shortcut icon](../../../images/icon-shortcut.png)).
 
 ![Add a document's shortcut to a given folder.](./document-shortcut-api-basics/images/02.png)
 
@@ -182,15 +182,14 @@ The `DocumentShortcut_POST_ToSite.sh` and `DocumentShortcut_POST_ToAssetLibrary.
 Here are the command's arguments:
 
 | Arguments                                                                                  | Description                                                                                                           |
-| :----------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------- |
+|:-------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------|
 | `"http://localhost:8080/o/headless-delivery/v1.0/sites/${1}/document-shortcuts"`           | The REST service endpoint. Your site ID parameter replaces `${1}`.                                                    |
 | `"http://localhost:8080/o/headless-delivery/v1.0/asset-libraries/${1}/document-shortcuts"` | The REST service endpoint. Your asset library ID parameter replaces `${1}`.                                           |
 | `--data-raw`                                                                               | The raw JSON data sent in the request body. `${2}` and `${3}` are placeholders for the folder ID and the document ID. |
 | `--header "accept: application/json"`                                                      | Specifies that the client expects a response in JSON format.                                                          |
 | `--header "Content-type: application/json" \`                                              | The media type ([MIME type](https://en.wikipedia.org/wiki/Media_type)) of the resource sent to the server is JSON.    |
 | `--request "POST"`                                                                         | The HTTP method to invoke at the specified endpoint.                                                                  |
-
-| `--user "test@liferay.com:learn"`                                                | Basic authentication credentials.                                                                                   |
+| `--user "test@liferay.com:learn"`                                                          | Basic authentication credentials.                                                                                     |
 
 !!! note
     Basic authentication is used here for demonstration purposes. For production, you should authorize users via [OAuth 2.0](../../../headless-delivery/using-oauth2.md). See [Using OAuth2 to Authorize Users](../../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md) for a sample React application that uses OAuth2.
@@ -202,7 +201,7 @@ Other cURL commands for the `DocumentShortcut` REST services use similar argumen
 The `DocumentShortcut_POST_ToSite.java` and `DocumentShortcut_POST_ToAssetLibrary.java` classes post shortcuts by calling a `headless-delivery` application REST service.
 
 | Line (abbreviated)                                                                                    | Description                                                                                                                                                                      |
-| :---------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|:------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `DocumentShortcutResource.Builder builder = ...`                                                      | Gets a `Builder` for generating a `DocumentShortcutResource` service instance.                                                                                                   |
 | `DocumentShortcutResource documentShortcutResource = builder.authentication(...).build();`            | Specifies basic authentication and generates a `DocumentShortcutResource` service instance.                                                                                      |
 | `DocumentShortcut documentShortcut = documentShortcutResource.postSiteDocumentShortcut(...);`         | Calls the `DocumentShortcutResource.postSiteDocumentShortcut` method, passing in a site ID and a `DocumentShortcut` object to represent the document shortcut.                   |
@@ -234,7 +233,7 @@ To list document shortcuts from a site, execute the following cURL command or Ja
 
 The terminal shows a similar output.
 
-```bash
+```json
 {
 ...
    "facets" : [ ],
@@ -279,9 +278,9 @@ You can get a specific shortcut by executing the following cURL or Java command.
 ./DocumentShortcut_GET_ById.sh [shortcut-ID]
 ```
 
-If there's no `assetLibraryKey` listed, the shortcut is located in a site.
+If there's no `assetLibraryKey` listed, the shortcut is in a site.
 
-```bash
+```json
 ...
 "dateCreated": "2024-07-05T12:16:17Z",
 "dateModified": "2024-07-05T12:16:17Z",
@@ -295,7 +294,7 @@ If there's no `assetLibraryKey` listed, the shortcut is located in a site.
 
 Conversely, an `assetLibraryKey` field appears in the output when the shortcut is stored in an asset library.
 
-```bash
+```json
 ...
 "assetLibraryKey": "Asset Library",
 "dateCreated": "2024-07-05T12:30:58Z",
@@ -392,7 +391,7 @@ The above cURL command and Java class replace `DocumentShortcut` instances with 
 
 Delete a shortcut by executing the following cURL or Java command. Replace `[shortcut-ID]` with the shortcut's ID.
 
-If the operation is successful, there's a code 204 as response and nothing is returned.
+If the operation is successful, there's a code 204 response and nothing is returned.
 
 ### DocumentShortcut_DELETE_ById.sh
 

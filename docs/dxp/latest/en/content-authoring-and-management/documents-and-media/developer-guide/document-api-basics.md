@@ -11,7 +11,7 @@ uuid: 87084148-5102-4d8d-b55c-9efa57a7a2b4
 
 # Document API Basics
 
-Liferay's headless delivery application provides REST services for [Documents and Media](../../documents-and-media.md) that add documents and folders, list their information, modify them, delete them, and more. This guide demonstrates how to call those services using cURL commands and Java classes.
+Liferay's headless delivery application provides REST services for [Documents and Media](../../documents-and-media.md) that add documents and folders, list their information, modify them, delete them, and more. You can call those services using cURL commands and Java classes.
 
 Start with uploading documents using an example cURL command and Java class.
 
@@ -491,7 +491,7 @@ Code:
 
 The Java code above calls `DocumentResource`'s `putDocument` method, passing in the `Document`'s ID, a `Document` object that includes values for the `Document`'s `description` and `title` fields, and a replacement file to upload.
 
-The above cURL command and Java class replace `Document` instances with completely new ones that have the new titles "Document_PUT_ById.sh" and "Document_PUT_ById.java", respectively, and have the description "Goo."
+The above cURL command and Java class replace `Document` instances with completely new ones that have the new titles `Document_PUT_ById.sh` and `Document_PUT_ById.java`, respectively, and have the description *Goo.*
 
 !!! warning
     Unless you want to use the current `Document`'s title, make sure to specify the `title` value you want for the replacement `Document`.

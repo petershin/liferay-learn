@@ -7,6 +7,7 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: 0d83f307-076c-4253-ad57-71ae68865a93
 ---
+
 # Configuring Structure Fields
 
 You can edit structure fields and their properties:
@@ -17,7 +18,7 @@ You can edit structure fields and their properties:
 
 1. Click the name of the structure you want to modify.
 
-    You can also open the *Actions* Menu ( ![Actions icon](../../../images/icon-actions.png) ) next to the structure and select *Edit*.
+   You can also open the *Actions* Menu ( ![Actions icon](../../../images/icon-actions.png) ) next to the structure and select *Edit*.
 
 1. Add, [remove](#structure-field-options), or reorganize the fields in the structure.
 
@@ -27,9 +28,8 @@ You can edit structure fields and their properties:
 
 ## Configurable Settings
 
-```{important}
-Field settings depend on the type of field. A setting listed below may not apply for a field.
-```
+!!! important
+    Field settings depend on the type of field. A setting listed below may not apply for a field.
 
 **Type:** The type of field placed in the definition. This is not editable but is available to reference from a web content template.
 
@@ -39,11 +39,10 @@ Field settings depend on the type of field. A setting listed below may not apply
 
 **Required:** Whether the user must fill the field to submit content using the web content structure. The default value is No.
 
-**Field Reference:** The variable name used in web content templates for this field. You should enter a descriptive name. A default name is generated automatically. 
+**Field Reference:** The variable name used in web content templates for this field. You should enter a descriptive name. A default name is generated automatically.
 
-```{tip}
-Liferay DXP assigns a random field reference for each new field in the structure. Replace the default value with something more descriptive, so template developers can identify the field to place its data in a web content template or display page.
-```
+!!! tip
+    Liferay DXP assigns a random field reference for each new field in the structure. Replace the default value with something more descriptive, so template developers can identify the field to place its data in a web content template or display page.
 
 **Help Text:** Add a comment to help users understand the field label. The help text works as a subheading for your field to provide additional guidance.
 
@@ -72,6 +71,6 @@ When you hover over a structure field and click *Actions* ( ![Actions button](..
 
 ## Related Information
 
-* [Creating Structures](./creating-structures.md)
-* [Managing Structures](./managing-structures.md)
-* [Web Content Structures](../web-content-structures.md)
+- [Creating Structures](./creating-structures.md)
+- [Managing Structures](./managing-structures.md)
+- [Web Content Structures](../web-content-structures.md)

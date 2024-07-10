@@ -7,15 +7,18 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: ce4f21a1-f104-4587-aaff-2d7af1b10139
 ---
+
 # Creating Structures
 
-Follow these steps to create a structure:
+Create web content structures to seve as building blocks for web content articles and determine the information you can include when writing them.
 
-1. Open the *Site Menu* ( ![Site Menu](../../../images/icon-product-menu.png) ) and navigate to *Content & Data* &rarr; *Web Content*.
+To create a web content structure,
+
+1. Open the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)) and navigate to *Content & Data* &rarr; *Web Content*.
 
 1. Select the *Structures* tab.
 
-1. Click *Add* ( ![Add icon](../../../images/icon-add.png) ) to create a new structure.
+1. Click *Add* (![Add icon](../../../images/icon-add.png)) to create a new structure.
 
 1. Enter the title of your new structure.
 
@@ -27,13 +30,11 @@ Follow these steps to create a structure:
 
 ![When creating a new structure, you can drag fields from the palette and drop them on the canvas.](./creating-structures/images/01.png)
 
-```{warning}
-Due to import/export operations, it's possible to have both a global and a site-scoped structure with the same `structureKey`. If this happens, the site-scoped structure takes precedence, and you can't access the global structure from that site.
-```
+!!! warning
+    Due to import/export operations, it's possible to have both a global and a site-scoped structure with the same `structureKey`. If this happens, the site-scoped structure takes precedence, and you can't access the global structure from that site.
 
-```{tip}
-To discover additional configuration options for web content and structures (e.g., [enable setting a custom structure key](./whats-new-with-web-content-structures-in-7-4.md#setting-the-web-content-structure-key)), look in System Settings &rarr; Content and Data &rarr; Web Content &rarr; Administration.
-```
+!!! tip
+    To discover additional configuration options for web content and structures (e.g., [enable setting a custom structure key](./whats-new-with-web-content-structures-in-7-4.md#setting-the-web-content-structure-key)), look in System Settings &rarr; Content and Data &rarr; Web Content &rarr; Administration.
 
 ## Structure Fields
 
@@ -53,9 +54,8 @@ You can place these fields on a structure:
 
 **Image:** An image selector to include an image from the Documents and Media library or your computer.
 
-```{note}
-If you upload an image from your computer, the image is only available for that particular article.
-```
+!!! note
+    If you upload an image from your computer, the image is only available for that particular article.
 
 **Link to Page:** A selector to include a link to another page in the same site.
 
@@ -86,17 +86,21 @@ You can add a translation for the structure, either while creating it or later.
 ![Manage the translations of a Web Content Structure.](./creating-structures/images/02.png)
 
 1. From the Add or Edit Structure screen, open the language selector by clicking the locale (e.g.,`en-us`), and then select *Manage Translations*.
-1. Click *Add* ( ![Add icon](../../../images/icon-add.png) ) in the Manage Translations modal and choose the language.
+
+1. Click *Add* (![Add icon](../../../images/icon-add.png)) in the Manage Translations modal and choose the language.
+
 1. Click *Done*.
+
 1. Click the default locale again and select the new locale to begin translating.
+
 1. Translate as much of the Structure's text as you'd like, then click *Save*.
 
-To delete a translation, go back to the Manage Translations modal and click *Trash* ( ![Trash icon](../../../images/icon-trash.png) ).
+To delete a translation, go back to the Manage Translations modal and click *Trash* (![Trash icon](../../../images/icon-trash.png)).
 
 To edit a translation, select the translation using the language selector, make any changes, and click *Save*.
 
 ## Related Topics
 
-* [Web Content Structures](../web-content-structures.md)
-* [Configuring Structure Fields](./configuring-structure-fields.md)
-* [Managing Structures](./managing-structures.md)
+- [Web Content Structures](../web-content-structures.md)
+- [Configuring Structure Fields](./configuring-structure-fields.md)
+- [Managing Structures](./managing-structures.md)

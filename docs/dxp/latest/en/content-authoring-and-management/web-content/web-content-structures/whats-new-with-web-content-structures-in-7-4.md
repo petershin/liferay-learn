@@ -7,6 +7,7 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: f69fd720-0df2-4a33-8aeb-ebaa3e0bcfdf
 ---
+
 # What's New with Web Content Structures in 7.4?
 
 As of Liferay 7.4, web content structures have been migrated from using Dynamic Data Mapping (DDM) to Data Engine (DE) as the backend framework for building forms.
@@ -24,21 +25,19 @@ Field types have been added and improved as part of the move to Data Engine:
 - The Grid field is a new field type in web content and documents and media. See [Forms Field Type Reference](../../../process-automation/forms/creating-and-managing-forms/forms-field-types-reference.md) for more information.
 - The HTML field was replaced by the Rich Text field, which includes a convenient tool bar.
 
-```{warning}
-**Boolean field versus Multiple Selection field:** Data Engine did not initially include a Boolean field. Instead, Boolean fields in upgraded structures were migrated to use the Data Engine's Multiple Selection field, using the same label and just one option. Some issues can arise from this, for example if templates were built on structures with Boolean fields. In Liferay 7.4 Update/GA 23, the Boolean field type is added to Data Engine. Upgraded structures after Update 23 successfully convert 7.3 DDM Boolean fields to 7.4 DE Boolean fields in web content structures. If your installation was upgraded before this change, you must manually change these single-option Multiple Selection fields to Boolean fields by editing the affected structures.
-```
+!!! warning
+    **Boolean field versus Multiple Selection field:** Data Engine did not initially include a Boolean field. Instead, Boolean fields in upgraded structures were migrated to use the Data Engine's Multiple Selection field, using the same label and just one option. Some issues can arise from this, for example if templates were built on structures with Boolean fields. In Liferay 7.4 Update/GA 23, the Boolean field type is added to Data Engine. Upgraded structures after Update 23 successfully convert 7.3 DDM Boolean fields to 7.4 DE Boolean fields in web content structures. If your installation was upgraded before this change, you must manually change these single-option Multiple Selection fields to Boolean fields by editing the affected structures.
 
 ## Child Structures are Replaced by Structure Fieldsets
 
 Structures backed by DDM could include child structures that inherited all the parent's fields and settings. This relationship no longer exists in Liferay 7.4 because you can now create fieldsets, with which you can create reusable fieldsets for your structures. Fieldsets improve the editing experience since you can see what the structure looks like as you edit.
 
-```{warning}
-- A fieldset is reusable across multiple structures. Editing it within a single structure causes changes to all the structures at once.
+!!! warning
+    A fieldset is reusable across multiple structures. Editing it within a single structure causes changes to all the structures at once.
 
-- If a fieldset or structure is being used in web content, editing produces a warning to users:
+    If a fieldset or structure is being used in web content, editing produces a warning to users:
 
    ![Be careful editing structures and fieldsets with content references.](./whats-new-with-web-content-structures-in-7-4/images/02.png)
-```
 
 To work with fieldsets,
 
@@ -62,9 +61,8 @@ When you begin creating a new structure, any existing fieldset or structure can 
 
 Structures in DE are represented by JSON (it was XML in DDM). Rather than editing code in the web content structures UI, you can now import and export the structure definition to work with the structure's source JSON locally.
 
-```{warning}
-Be careful working with the JSON structure source as it can be more complicated than it appears at first glance. For example, when adding a field to the structure, you must update both the `dataDefinitionFields` array and the `defaultDataLayout` element.
-```
+!!! warning
+    Be careful working with the JSON structure source as it can be more complicated than it appears at first glance. For example, when adding a field to the structure, you must update both the `dataDefinitionFields` array and the `defaultDataLayout` element.
 
 ### Exporting a Structure's JSON
 
@@ -118,9 +116,9 @@ In addition to columns, use field groups to lock a subset of the structure's fie
 
 ## Setting the Web Content Structure Key
 
-```{warning}
-You can set the structure key manually when creating a new structure (as documented below) or when [importing JSON as a new structure](#importing-a-structures-json-to-create-a-new-structure). You cannot update an existing structure's key, even when [importing and overwriting an existing structure](#importing-a-structures-json-to-overwrite-an-existing-structure).
-```
+!!! warning
+    You can set the structure key manually when creating a new structure (as documented below) or when [importing JSON as a new structure](#importing-a-structures-json-to-create-a-new-structure). You cannot update an existing structure's key, even when [importing and overwriting an existing structure](#importing-a-structures-json-to-overwrite-an-existing-structure).
+
 1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)) and go to the *Control Panel* tab.
 
 1. Go to *Configuration* &rarr; *System Settings* &rarr; *Web Content* (under Content and Data).
@@ -140,6 +138,7 @@ With the new Data Engine-backed structures, the export process strips the struct
 To add a custom structure key to the [exported JSON](#structure-definition-source-changes),
 
 1. Open the exported JSON file (e.g., `Structure_my structure_42153_20220721144913685.json`).
+
 1. Add a `"dataDefinitionKey"` element before the `"dataDefinitionField"` element:
    ```json
    {
@@ -153,3 +152,8 @@ To add a custom structure key to the [exported JSON](#structure-definition-sourc
 1. [Import](#importing-a-structures-json-to-create-a-new-structure) the structure definition file and verify that the key was imported by checking in the Properties tab.
 
    ![The Properties tab shows the structure key, whether it's a custom key or autogenerated by Liferay.](./whats-new-with-web-content-structures-in-7-4/images/07.png)
+
+## Related Topics
+
+- [Web Content Structures](../web-content-structures.md)
+- [Creating Structures](./creating-structures.md)

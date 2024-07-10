@@ -7,18 +7,22 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: 35ccf513-05ef-4bb7-80ec-e12b8a494cf5
 ---
+
 # Managing Structures
 
 You can manage structures from the structures page:
 
-1. Open the *Site Menu* ( ![Site Menu](../../../images/icon-product-menu.png) ) and go to *Content & Data* &rarr; *Web Content*.
+1. Open the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)) and go to *Content & Data* &rarr; *Web Content*.
+
 1. Select the *Structures* tab.
-1. Open the structure's *Actions Menu* ( ![Actions Menu](../../../images/icon-actions.png) ) and select one of the [available actions](#available-actions).
+
+1. Open the structure's *Actions Menu* (![Actions Menu](../../../images/icon-actions.png)) and select one of the [available actions](#available-actions).
+
 1. Click *Save* to apply your changes.
 
 ## Available Actions
 
-You can perform these actions from the structure's Actions Menu ( ![Actions Menu](../../../images/icon-actions.png) ):
+You can perform these actions from the structure's Actions Menu (![Actions Menu](../../../images/icon-actions.png)):
 
 **Edit:** Opens the structure so you can update it. See [Configuring Structure Fields](./configuring-structure-fields.md) for more information.
 
@@ -38,21 +42,20 @@ You can perform these actions from the structure's Actions Menu ( ![Actions Menu
 
 ## Editing Default Values
 
-You can set the default values for a structure's fields. For example, a structure used for confidential memos may want to include the *confidential* tag for all the articles created with that structure, or you may want to make the content of all confidential memos non-searchable. From the Structures page, open the *Actions Menu* ( ![Actions Menu](../../../images/icon-actions.png) ) for the structure and follow these steps:
+You can set the default values for a structure's fields. For example, a structure used for confidential memos may want to include the *confidential* tag for all the articles created with that structure, or you may want to make the content of all confidential memos non-searchable. From the Structures page, open the *Actions Menu* (![Actions Menu](../../../images/icon-actions.png)) for the structure and follow these steps:
 
 1. Choose *Edit Default Values*.
 
 1. In the Structure Default Values page, configure the default values for your fields.
 
-    ```{tip}
-    You can restore the original values of the structure at any time by clicking the *Reset Values* button at the top.
-    ```
+   !!! tip
+       You can restore the original values of the structure at any time by clicking the *Reset Values* button at the top.
 
 1. Click *Save* to apply the changes.
 
 ## Copying an Existing Structure
 
-You can copy an existing structure to create a new one. From the structures page, open the *Actions Menu* ( ![Actions Menu](../../../images/icon-actions.png) ) for the structure and follow these steps:
+You can copy an existing structure to create a new one. From the structures page, open the *Actions Menu* (![Actions Menu](../../../images/icon-actions.png)) for the structure and follow these steps:
 
 1. Choose *Copy*.
 
@@ -62,12 +65,11 @@ You can copy an existing structure to create a new one. From the structures page
 
 1. Click *Copy*.
 
-```{tip}
-Liferay DXP generates a unique ID for the copied structure. The new copy inherits all the attributes from the original structure, including the name. To avoid confusing the copy with the original, use a different name for the copy.
-```
+!!! tip
+    Liferay DXP generates a unique ID for the copied structure. The new copy inherits all the attributes from the original structure, including the name. To avoid confusing the copy with the original, use a different name for the copy.
 
 ## Related Information
 
-* [Creating Structures](./creating-structures.md)
-* [Configuring Structure Fields](./configuring-structure-fields.md)
-* [Assigning Permissions to Web Content Structures and Templates](./assigning-permissions-to-structures-and-templates.md)
+- [Creating Structures](./creating-structures.md)
+- [Configuring Structure Fields](./configuring-structure-fields.md)
+- [Assigning Permissions to Web Content Structures and Templates](./assigning-permissions-to-structures-and-templates.md)

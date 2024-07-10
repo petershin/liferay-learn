@@ -25,4 +25,3 @@ These articles are versatile and can be used for multiple purposes, such as publ
 With web content articles, structures, and templates, you can have more control over the content management and presentation processes within Liferay. It supports a streamlined workflow where content managers can focus on the content itself, while designers can focus on how it looks.
 
 In this section, start by [adding a web content article](./web-content-articles/adding-a-basic-web-content-article.md) and learn how to [manage](./web-content-articles/managing-web-content-articles.md), [preview](./web-content-articles/previewing-web-content-articles.md), [filter, and sort](./web-content-articles/filtering-and-sorting-web-content-articles.md) articles.
-

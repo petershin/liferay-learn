@@ -10,7 +10,7 @@ uuid: e5a69df2-30a5-4dbc-8467-e390dfc35aec
 ---
 # Web Content API Basics
 
-Using the Liferay DXP REST services, you can create and manage structured content on your Site. Structured content is [Web Content](../web-content-articles/adding-a-basic-web-content-article.md) that uses a Web Content Structure. A Structure defines the information, such as author(s), a summary, and the content included in a Web Content Article. Structures ensure that the content includes all the required information. For more information, read [Understanding Web Content Structures](../web-content-structures/understanding-web-content-structures.md).
+Using the Liferay DXP REST services, you can create and manage structured content on your Site. Structured content is [Web Content](../web-content-articles/adding-a-basic-web-content-article.md) that uses a Web Content Structure. A Structure defines the information, such as author(s), a summary, and the content included in a Web Content Article. Structures ensure that the content includes all the required information. For more information, read [Web Content Structures](../web-content-structures.md).
 
 !!! note
    You can use a Structure with a [Web Content Template](../web-content-templates/creating-web-content-templates.md) to render the structured content, but a Template is not required to create structured content.
@@ -562,4 +562,4 @@ When you delete a Web Content Folder using the REST API, the folder and its cont
 
 - [Advanced Web Content API](./advanced-web-content-api.md)
 - [Consuming REST Services](../../../headless-delivery/consuming-apis/consuming-rest-services.md)
-- [Understanding Web Content Structures](../web-content-structures/understanding-web-content-structures.md)
+- [Web Content Structures](../web-content-structures.md)

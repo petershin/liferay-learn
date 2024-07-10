@@ -97,6 +97,6 @@ To edit a translation, select the translation using the language selector, make 
 
 ## Related Topics
 
-* [Understanding Web Content Structures](./understanding-web-content-structures.md)
+* [Web Content Structures](../web-content-structures.md)
 * [Configuring Structure Fields](./configuring-structure-fields.md)
 * [Managing Structures](./managing-structures.md)

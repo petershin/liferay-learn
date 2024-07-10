@@ -10,7 +10,7 @@ uuid: 0e4115ae-4688-439d-a40f-e9399f0f167d
 ---
 # Advanced Web Content API
 
-Using the Liferay DXP REST services, you can create and manage your Site's structured content. Structured content is [Web Content](../web-content-articles/adding-a-basic-web-content-article.md) that uses a Web Content Structure. A Structure defines the information, such as author(s), a summary, and the content included in a Web Content article. Structures ensure that the content includes all the required information. For more information on Structures, read [Understanding Web Content Structures](../web-content-structures/understanding-web-content-structures.md).
+Using the Liferay DXP REST services, you can create and manage your Site's structured content. Structured content is [Web Content](../web-content-articles/adding-a-basic-web-content-article.md) that uses a Web Content Structure. A Structure defines the information, such as author(s), a summary, and the content included in a Web Content article. Structures ensure that the content includes all the required information. For more information on Structures, read [Web Content Structures](../web-content-structures.md).
 
 Here, you'll use a pre-built Liferay DXP Docker image with several [cURL](https://curl.haxx.se/) code samples to learn about Structures and structured content. For an overview of using the REST API in Liferay DXP, see [Consuming REST Services](../../../headless-delivery/consuming-apis/consuming-rest-services.md).
 
@@ -535,7 +535,7 @@ Note: PATCH option information will be included in a follow-up (see LPS-137932).
 
 ## Get the Web Content Article Rendered with a Particular Template
 
-A Web Content article is not linked to a particular Template. The Template defines how the Web Content renders, and you can use different Templates for the same Web Content. For more information, read [Understanding Web Content Structures](../web-content-structures/understanding-web-content-structures.md).
+A Web Content article is not linked to a particular Template. The Template defines how the Web Content renders, and you can use different Templates for the same Web Content. For more information, read [Web Content Structures](../web-content-structures.md).
 
 ```{tip}
 Because a Web Content article is not linked to a particular Template, you cannot specify a Template when you `POST` a new article (the HTTP `POST` method ignores the `renderedContents` section describing the Template.)
@@ -598,4 +598,4 @@ cURL script parameters:
 
 - [Web Content API Basics](./web-content-api-basics.md)
 - [Consuming REST Services](../../../headless-delivery/consuming-apis/consuming-rest-services.md)
-- [Understanding Web Content Structures](../web-content-structures/understanding-web-content-structures.md)
+- [Web Content Structures](../web-content-structures.md)

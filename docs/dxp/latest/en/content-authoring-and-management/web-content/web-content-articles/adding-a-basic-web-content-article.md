@@ -12,7 +12,7 @@ uuid: 89efcf46-c68b-42f1-b33e-f41ba46002f2
 
 When you have a lot of content to publish on your site, Liferay's content management system helps you with practical and essential ways to manage it. Web content articles can be displayed through [widgets](../../../site-building/displaying-content/additional-content-display-options/using-the-web-content-display-widget.md), [fragments](../../../site-building/creating-pages/page-fragments-and-widgets/using-fragments.md), or [display pages](../../../site-building/displaying-content/using-display-page-templates/creating-and-managing-display-page-templates.md). See [Previewing Web Content Articles](./previewing-web-content-articles.md) to learn more.
 
-Each web content article is based on a structure that defines its available fields. Liferay includes the Basic Web Content structure out-of-the-box, but you can create your own. See [Understanding Web Content Structures](../web-content-structures/understanding-web-content-structures.md) for more information.
+Each web content article is based on a structure that defines its available fields. Liferay includes the Basic Web Content structure out-of-the-box, but you can create your own. See [Web Content Structures](../web-content-structures.md) for more information.
 
 ## Creating a Basic Web Content Article
 
@@ -118,7 +118,7 @@ When creating or editing a Basic Web Content article, the following options appe
 
 | Property | Purpose | Additional Notes |
 | :--- | :--- | :--- |
-| **Basic Information** | See basic information about the article including the web content structure it is based on, version and status, ID, and a short editable description. | The structure cannot be edited once the article is created. See [Web Content Structures](../web-content-structures/understanding-web-content-structures.md) for more information. |
+| **Basic Information** | See basic information about the article including the web content structure it is based on, version and status, ID, and a short editable description. | The structure cannot be edited once the article is created. See [Web Content Structures](../web-content-structures.md) for more information. |
 | **Default Template** | Select a default template to display this web content. | See [Creating Web Content Templates](../web-content-templates/creating-web-content-templates.md) for more information. |
 | **Display Page Template** | Select a Display Page Template for this article, if one is desired. | See [Creating and Managing Display Page Templates](../../../site-building/displaying-content/using-display-page-templates/creating-and-managing-display-page-templates.md) for more information. |
 | **Featured Image** | Select a small image to use as the article's thumbnail. | The image can come from a URL, uploaded from your system, or from files located in Documents and Media. |
@@ -143,5 +143,5 @@ When creating or editing a Basic Web Content article, the following options appe
 ## Related Topics
 
 - [Creating and Managing Display Page Templates](../../../site-building/displaying-content/using-display-page-templates/creating-and-managing-display-page-templates.md)
-- [Introduction to Web Content Structures](../web-content-structures/understanding-web-content-structures.md)
+- [Web Content Structures](../web-content-structures.md)
 - [Filtering and Sorting Web Content Articles](./filtering-and-sorting-web-content-articles.md)

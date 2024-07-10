@@ -10,7 +10,7 @@ uuid: 209ff36f-8908-444d-be4b-1d293af9c4ee
 ---
 # Mapping Web Content Templates to Fragments
 <!--TASK: Relocate to section on Web Content Templates, since this is done on the Web Content side. -->
-By default, you can map [web content structure](../../../content-authoring-and-management/web-content/web-content-structures/understanding-web-content-structures.md) fields holding a single value (such as date, numeric, image, number, or text) to fragments. For multi-value fields (such as select from list, radio button, or HTML) you must first render the field using a [web content template](../../../content-authoring-and-management/web-content/web-content-templates/creating-web-content-templates.md); then you can map the template to a fragment.
+By default, you can map [web content structure](../../../content-authoring-and-management/web-content/web-content-structures.md) fields holding a single value (such as date, numeric, image, number, or text) to fragments. For multi-value fields (such as select from list, radio button, or HTML) you must first render the field using a [web content template](../../../content-authoring-and-management/web-content/web-content-templates/creating-web-content-templates.md); then you can map the template to a fragment.
 
 For example, the *Web Content with Audience* structure on this image contains a Content field of *Text* type and an audience field of *Select from List* type:
 
@@ -56,8 +56,6 @@ A web content article is reindexed when it is edited and saved, but content page
 
 ## Related Topics
 
-[Using Fragments](../../../site-building/creating-pages/page-fragments-and-widgets/using-fragments.md)
-
-[Understanding Web Content Structures](../../../content-authoring-and-management/web-content/web-content-structures/understanding-web-content-structures.md)
-
-[Creating Web Content Templates](../../../content-authoring-and-management/web-content/web-content-templates/creating-web-content-templates.md)
+- [Using Fragments](../../../site-building/creating-pages/page-fragments-and-widgets/using-fragments.md)
+- [Web Content Structures](../web-content-structures.md)
+- [Creating Web Content Templates](../../../content-authoring-and-management/web-content/web-content-templates/creating-web-content-templates.md)

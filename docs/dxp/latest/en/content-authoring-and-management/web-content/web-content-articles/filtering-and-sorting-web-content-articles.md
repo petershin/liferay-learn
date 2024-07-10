@@ -121,5 +121,5 @@ Once you use the search bar to search for specific keywords, use these options t
 ## Related Topics
 
 - [Adding a Basic Web Content Article](./adding-a-basic-web-content-article.md)
-- [Understanding Web Content Structures](../web-content-structures/understanding-web-content-structures.md)
+- [Web Content Structures](../web-content-structures.md)
 - [Creating Web Content Templates](../web-content-templates/creating-web-content-templates.md)

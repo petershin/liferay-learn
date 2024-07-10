@@ -74,4 +74,4 @@ When you hover over a structure field and click *Actions* ( ![Actions button](..
 
 * [Creating Structures](./creating-structures.md)
 * [Managing Structures](./managing-structures.md)
-* [Understanding Web Content Structures](./understanding-web-content-structures.md)
+* [Web Content Structures](../web-content-structures.md)

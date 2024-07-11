@@ -88,6 +88,6 @@ Here are the features moved to Maintenance Mode in 7.4:
 
 ## Related Topics
 
-- [7.4 Breaking Changes](../../../liferay-internals/reference/7-4-breaking-changes.md)
+- [7.4 Breaking Changes](../../../liferay-development/liferay-internals/reference/7-4-breaking-changes.md)
 - [7.4 Default Setting Changes](./default-setting-changes-in-7-4.md)
 - [Feature Flags](../../../system-administration/configuring-liferay/feature-flags.md)

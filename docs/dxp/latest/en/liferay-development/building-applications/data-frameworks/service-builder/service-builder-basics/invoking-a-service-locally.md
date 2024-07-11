@@ -35,25 +35,24 @@ Then, follow these steps:
 
 1. Build and deploy the example.
 
-    ```bash
-    cd liferay-t2p5
-    ```
+   ```bash
+   cd liferay-t2p5
+   ```
 
-    ```bash
-    ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
-    ```
+   ```bash
+   ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
+   ```
 
-    ```{note}
-    This command is the same as copying module JARs to `/opt/liferay/osgi/modules` on the Docker container.
-    ```
+   !!! note
+       This command is the same as copying module JARs to `/opt/liferay/osgi/modules` on the Docker container.
 
 1. Confirm the deployment in the Docker container console.
 
-    ```bash
-    STARTED com.acme.t2p5.api_1.0.0
-    STARTED com.acme.t2p5.service_1.0.0
-    STARTED com.acme.t2p5.web_1.0.0
-    ```
+   ```bash
+   STARTED com.acme.t2p5.api_1.0.0
+   STARTED com.acme.t2p5.service_1.0.0
+   STARTED com.acme.t2p5.web_1.0.0
+   ```
 
 1. Add the *T2P5 Portlet* widget from the *Samples* category to a widget page. The T2P5 Portlet appears.
 
@@ -61,9 +60,9 @@ Then, follow these steps:
 
 1. Enter an entry name and description in the text fields and Click *Submit*. For example,
 
-    **Name:** `Trim the Hedges`
+   **Name:** `Trim the Hedges`
 
-    **Description:** `Use hedge clippers to trim the hedges into a nice shape.`
+   **Description:** `Use hedge clippers to trim the hedges into a nice shape.`
 
 ![You've added the T2P5 Portlet to a page.](./invoking-a-service-locally/images/02.png)
 
@@ -83,9 +82,8 @@ The `t2p5-api` module project's `T2P5EntryLocalService` class has a method calle
 
 The `addT2P5Entry` method creates a `T2P5Entry` with the given description and name and persists the entry.
 
-```{note}
-The `t2p5-service` module project's `T2P5EntryLocalServiceImpl` class implements the `T2P5EntryLocalService` interface.
-```
+!!! note
+    The `t2p5-service` module project's `T2P5EntryLocalServiceImpl` class implements the `T2P5EntryLocalService` interface.
 
 The `t2p5-api` module's `bnd.bnd` file declares exports for the `com.acme.t2p5.service` package, `com.acme.t2p5.model` package, and other packages for consumers to use. Here's the `bnd.bnd` file:
 
@@ -97,9 +95,8 @@ The `t2p5-web` module's portlet application depends on the `T2P5EntryLocalServic
 ```{literalinclude} ./invoking-a-service-locally/resources/liferay-t2p5.zip/t2p5-web/build.gradle
 ```
 
-```{note}
-For information on finding artifacts and specifying dependencies, please see [Configuring Dependencies](../../../../../liferay-internals/fundamentals/configuring-dependencies.md).
-```
+!!! note
+    For information on finding artifacts and specifying dependencies, please see [Configuring Dependencies](../../../../liferay-internals/fundamentals/configuring-dependencies.md).
 
 ## Examine the Portlet
 
@@ -114,9 +111,8 @@ The `t2p5-web` module's `T2P5Portlet` class handles requests to add `T2P5Entry` 
 
 The `_t2p5EntryLocalService` field's `@Reference` annotation signals the runtime framework to inject a `T2P5EntryLocalService` component instance into the field.
 
-```{note}
-For more information on using the `@Reference` annotation and acessing services in other ways, see *Dependency Injection* in [Core Frameworks](../../../../core-frameworks.md).
-```
+!!! note
+    For more information on using the `@Reference` annotation and acessing services in other ways, see *Dependency Injection* in [Core Frameworks](../../../../core-frameworks.md).
 
 The `addT2P5Entry` method calls `T2P5EntryLocalService`'s `addT2P5Entry` method, passing in description and name parameters retrieved from the `ActionRequest`.
 
@@ -132,15 +128,15 @@ The `view.jsp` provides a form for adding entries and shows all the current entr
 
 The JSP uses tags from these tag libraries:
 
-* Core JSTL
-* Portlet
-* Liferay's Alloy UI (`aui`)
+- Core JSTL
+- Portlet
+- Liferay's Alloy UI (`aui`)
 
 It imports these classes:
 
-* `T2P5Entry`
-* `T2P5EntryLocalServiceUtil`
-* `java.util.List`
+- `T2P5Entry`
+- `T2P5EntryLocalServiceUtil`
+- `java.util.List`
 
 The page's *Add T2P5 Entry* section provides a form for adding an entry. The `<portlet:defineObjects />` tag makes standard portlet objects available to the template. The `aui` tags use these objects.
 
@@ -148,9 +144,8 @@ The `<portlet:actionURL name="addT2P5Entry" var="addT2P5EntryURL" />` tag maps t
 
 The `<aui:form>` renders text fields for an entry's name and description. On submitting the form, its values are passed along with an `ActionRequest` to the portlet method.
 
-```{note}
-For more information on portlet actions, see [Invoking Actions with MVC Portlet](../../../developing-a-java-web-application/using-mvc/invoking-actions-with-mvc-portlet.md).
-```
+!!! note
+    For more information on portlet actions, see [Invoking Actions with MVC Portlet](../../../developing-a-java-web-application/using-mvc/invoking-actions-with-mvc-portlet.md).
 
 The page's *Entries* section lists all the entries. It gets all the entries by calling `T2P5EntryLocalServiceUtil.getT2P5Entries(-1, -1)` The `-1` min and max range values tell the method to return all the entries.
 
@@ -162,7 +157,7 @@ Now that you know Service Builder basics, you can explore [Defining Entities](..
 
 ## Related Topics
 
-* [Portlets](../../../developing-a-java-web-application/reference/portlets.md)
-* [Using MVC](../../../developing-a-java-web-application/using-mvc.md)
-* [Using a JSP and MVC Portlet](../../../developing-a-java-web-application/using-mvc/using-a-jsp-and-mvc-portlet.md)
-* [MVC Action Command](../../../developing-a-java-web-application/using-mvc/mvc-action-command.md)
+- [Portlets](../../../developing-a-java-web-application/reference/portlets.md)
+- [Using MVC](../../../developing-a-java-web-application/using-mvc.md)
+- [Using a JSP and MVC Portlet](../../../developing-a-java-web-application/using-mvc/using-a-jsp-and-mvc-portlet.md)
+- [MVC Action Command](../../../developing-a-java-web-application/using-mvc/mvc-action-command.md)

@@ -19,29 +19,29 @@ Then, follow these steps:
 
 1. Download and unzip the example.
 
-    ```bash
-    curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/developing-a-java-web-application/using-mvc/liferay-u8t2.zip -O
-    ```
+   ```bash
+   curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/developing-a-java-web-application/using-mvc/liferay-u8t2.zip -O
+   ```
 
-    ```bash
-    unzip liferay-u8t2.zip
-    ```
+   ```bash
+   unzip liferay-u8t2.zip
+   ```
 
 1. From the module root, build and deploy.
 
-    ```bash
-    ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
-    ```
+   ```bash
+   ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
+   ```
 
-    !!! note
-        This command is the same as copying the deployed jars to `/opt/liferay/osgi/modules` on the Docker container.
+   !!! note
+       This command is the same as copying the deployed jars to `/opt/liferay/osgi/modules` on the Docker container.
 
 1. Confirm the deployment in the Liferay Docker container console.
 
-    ```bash
-    STARTED com.acme.u8t2.impl_1.0.0 [1650]
-    STARTED com.acme.u8t2.web_1.0.0 [1651]
-    ```
+   ```bash
+   STARTED com.acme.u8t2.impl_1.0.0 [1650]
+   STARTED com.acme.u8t2.web_1.0.0 [1651]
+   ```
 
 1. Verify that the example module is working. Open your browser to `https://localhost:8080`
 
@@ -98,4 +98,4 @@ Note that you can still choose to place some language keys in an individual modu
 ## Related Topics
 
 - [Aggregating Resource Bundles](./aggregating-resource-bundles.md)
-- [Overriding Module Language Translations in Earlier Versions](../../../../../liferay-internals/extending-liferay/customizing-localization/overriding-module-language-translations.md)
+- [Overriding Module Language Translations in Earlier Versions](../../../../liferay-internals/extending-liferay/customizing-localization/overriding-module-language-translations.md)

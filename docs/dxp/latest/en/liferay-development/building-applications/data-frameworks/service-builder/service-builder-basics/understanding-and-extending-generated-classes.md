@@ -89,12 +89,12 @@ The API classes define the public interface, utilities, and constants.
 | `W9B7EntryModel`               | Base model interface. This interface and its `W9B7EntryModelImpl` implementation serve only as containers for the default property accessors Service Builder generates. Any helper methods and all application logic should be added to `W9B7EntryImpl`.                                                                                                           |
 | `W9B7EntrySoap`                | SOAP model, similar to `W9B7EntryModelImpl`. `W9B7EntrySoap` is serializable; it does not implement `W9B7Entry`.                                                                                                                                                                                                                                                   |
 | `W9B7EntryTable`               | Represents the entity's table.                                                                                                                                                                                                                                                                                                                                     |
-| `W9B7EntryWrapper`             | Wrapper, wraps `W9B7Entry`. This class is there to be extended to [customize the entity](../../../../../liferay-internals/extending-liferay/creating-service-wrappers.md).                                                                                                                                                                                            |
+| `W9B7EntryWrapper`             | Wrapper, wraps `W9B7Entry`. This class is there to be extended to [customize the entity](../../../../liferay-internals/extending-liferay/creating-service-wrappers.md).                                                                                                                                                                                            |
 | `W9B7EntryPersistence`         | Persistence interface that defines CRUD methods for the entity such as `create`, `remove`, `countAll`, `find`, `findAll`, etc.                                                                                                                                                                                                                                     |
-| `W9B7EntryUtil`                | Persistence utility class that wraps `W9B7EntryPersistenceImpl` and provides direct access to the database for CRUD operations. This utility should only be used by the service layer; in your portlet classes, use the `W9B7Entry` class by injecting it with the [`@Reference` annotation](../../../../../liferay-internals/fundamentals/using-an-osgi-service.md). |
+| `W9B7EntryUtil`                | Persistence utility class that wraps `W9B7EntryPersistenceImpl` and provides direct access to the database for CRUD operations. This utility should only be used by the service layer; in your portlet classes, use the `W9B7Entry` class by injecting it with the [`@Reference` annotation](../../../../liferay-internals/fundamentals/using-an-osgi-service.md). |
 | `W9B7EntryLocalService`        | Local service interface.                                                                                                                                                                                                                                                                                                                                           |
 | `W9B7EntryLocalServiceUtil`    | Local service utility class which wraps `W9B7EntryLocalServiceImpl`.                                                                                                                                                                                                                                                                                               |
-| `W9B7EntryLocalServiceWrapper` | Local service wrapper which implements `W9B7EntryLocalService`. This class is there to be extended to [customize the entity's local services](../../../../../liferay-internals/extending-liferay/creating-service-wrappers.md).                                                                                                                                       |
+| `W9B7EntryLocalServiceWrapper` | Local service wrapper which implements `W9B7EntryLocalService`. This class is there to be extended to [customize the entity's local services](../../../../liferay-internals/extending-liferay/creating-service-wrappers.md).                                                                                                                                       |
 
 ## Implementation Classes
 
@@ -185,9 +185,8 @@ Then, follow these steps:
    ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
    ```
 
-   ```{note}
-   This command is the same as copying module JARs to `/opt/liferay/osgi/modules` on the Docker container.
-   ```
+   !!! note
+       This command is the same as copying module JARs to `/opt/liferay/osgi/modules` on the Docker container.
 
 1. Confirm the deployment in the Docker container console.
 
@@ -229,5 +228,5 @@ Now that you understand the Service Builder generated classes and how to add a l
 ## Related Topics
 
 - [Generating Model Persistence and Service Code](./generating-model-persistence-and-service-code.md)
-- [Creating Service Wrappers](../../../../../liferay-internals/extending-liferay/creating-service-wrappers.md)
-- [Using an OSGI Service](../../../../../liferay-internals/fundamentals/using-an-osgi-service.md)
+- [Creating Service Wrappers](../../../../liferay-internals/extending-liferay/creating-service-wrappers.md)
+- [Using an OSGI Service](../../../../liferay-internals/fundamentals/using-an-osgi-service.md)

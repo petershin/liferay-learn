@@ -20,9 +20,8 @@ Model hints define two things:
 
 As Liferay renders your form fields, it customizes the form's input fields based on your configuration.
 
-```{note}
-If you chose Spring as the dependency injector, Service Builder generates a number of XML configuration files in your service module's ``src/main/resources/META-INF`` folder. Service Builder uses most of these files to manage Spring and Hibernate configurations. Don't modify the Spring or Hibernate configuration files; changes to them are overwritten when Service Builder runs. You can however, safely edit the ``portlet-model-hints.xml`` file.
-```
+!!! note
+	If you chose Spring as the dependency injector, Service Builder generates a number of XML configuration files in your service module's ``src/main/resources/META-INF`` folder. Service Builder uses most of these files to manage Spring and Hibernate configurations. Don't modify the Spring or Hibernate configuration files; changes to them are overwritten when Service Builder runs. You can however, safely edit the ``portlet-model-hints.xml`` file.
 
 As an example, consider the [Blogs app service module's](https://github.com/liferay/liferay-portal/blob/master/modules/apps/blogs/blogs-service/src/main/resources/META-INF/portlet-model-hints.xml) model hints file:
 
@@ -95,9 +94,9 @@ The root-level element is `model-hints`. Model entities are represented by `mode
 
 To add hints to a field, add a `hint` child element. For example, you can add a `display-width hint` to specify the pixel width to use in displaying the field. The default pixel width is `350`. To show a `String` field with 50 pixels, you could nest a `hint` element named `display-width` and give it a value of `50`.
 
-To see the effect of a hint on a field, [run Service Builder](../service-builder-basics/generating-model-persistence-and-service-code.md#generate-the-persistence-code) again and [redeploy your module](../../../../../liferay-internals/fundamentals/module-projects.md#deploy-a-simple-module). Note that changing `display-width` doesn't limit the number of characters a user can enter into the `name` field; it only controls the field's width in the input form.
+To see the effect of a hint on a field, [run Service Builder](../service-builder-basics/generating-model-persistence-and-service-code.md#generate-the-persistence-code) again and [redeploy your module](../../../../liferay-internals/fundamentals/module-projects.md#deploy-a-simple-module). Note that changing `display-width` doesn't limit the number of characters a user can enter into the `name` field; it only controls the field's width in the input form.
 
-To configure the maximum size of a model field's database column (i.e., the maximum number of characters that can be saved for the field), use the `max-length` hint. The default `max-length` value is `75` characters. If you want the `name` field to persist up to 100 characters, add a `max-length` hint  to that field:
+To configure the maximum size of a model field's database column (i.e., the maximum number of characters that can be saved for the field), use the `max-length` hint. The default `max-length` value is `75` characters. If you want the `name` field to persist up to 100 characters, add a `max-length` hint to that field:
 
 ```xml
 <field name="name" type="String">
@@ -114,32 +113,30 @@ The following table describes the portlet model hints available for use.
 
 **Model Hint Values and Descriptions**
 
-|      Name       | Value Type | Description | Default |
-|-----------------|:--------|:---------- |:-----|
-| `auto-escape`       | boolean | sets whether text values should be escaped via `HtmlUtil.escape` | true |
-| `autoSize`          | boolean | displays the field in a for scrollable text area | false |
-| `day-nullable`      | boolean | allows the day to be null in a date field | false |
-| `default-value`     | String  | sets the default value of the form field rendered using the aui taglib | (empty String) |
-| `display-height`    | integer | sets the display height of the form field rendered using the aui taglib | 15 |
-| `display-width`     | integer | sets the display width of the form field rendered using the aui taglib | 350 |
-| `editor`            | boolean | sets whether to provide an editor for the input | false |
-| `max-length`        | integer | sets the maximum column size for SQL file generation | 75 |
-| `month-nullable`    | boolean | allows the month to be null in a date field | false |
-| `secret`            | boolean | sets whether to hide the characters input by the user | false |
-| `show-time`         | boolean | sets whether to show the time along with the date | true |
-| `upper-case`        | boolean | converts all characters to upper case | false |
-| `year-nullable`     | boolean | allows a date field's year to be null | false |
-| `year-range-delta`  | integer | specifies the number of years to display from today's date in a date field rendered with the aui taglib | 5 |
-| `year-range-future` | boolean | sets whether to include future dates | true |
-| `year-range-past`   | boolean | sets whether to include past dates | true |
+| Name                | Value Type | Description                                                                                             | Default        |
+| :------------------ | :--------- | :------------------------------------------------------------------------------------------------------ | :------------- |
+| `auto-escape`       | boolean    | sets whether text values should be escaped via `HtmlUtil.escape`                                        | true           |
+| `autoSize`          | boolean    | displays the field in a for scrollable text area                                                        | false          |
+| `day-nullable`      | boolean    | allows the day to be null in a date field                                                               | false          |
+| `default-value`     | String     | sets the default value of the form field rendered using the aui taglib                                  | (empty String) |
+| `display-height`    | integer    | sets the display height of the form field rendered using the aui taglib                                 | 15             |
+| `display-width`     | integer    | sets the display width of the form field rendered using the aui taglib                                  | 350            |
+| `editor`            | boolean    | sets whether to provide an editor for the input                                                         | false          |
+| `max-length`        | integer    | sets the maximum column size for SQL file generation                                                    | 75             |
+| `month-nullable`    | boolean    | allows the month to be null in a date field                                                             | false          |
+| `secret`            | boolean    | sets whether to hide the characters input by the user                                                   | false          |
+| `show-time`         | boolean    | sets whether to show the time along with the date                                                       | true           |
+| `upper-case`        | boolean    | converts all characters to upper case                                                                   | false          |
+| `year-nullable`     | boolean    | allows a date field's year to be null                                                                   | false          |
+| `year-range-delta`  | integer    | specifies the number of years to display from today's date in a date field rendered with the aui taglib | 5              |
+| `year-range-future` | boolean    | sets whether to include future dates                                                                    | true           |
+| `year-range-past`   | boolean    | sets whether to include past dates                                                                      | true           |
 
-```{note}
-The aui taglib is fully supported and not related to AlloyUI (the JavaScript library) that's deprecated.
-```
+!!! note
+	The aui taglib is fully supported and not related to AlloyUI (the JavaScript library) that's deprecated.
 
-```{note}
-You can use a mix of Clay and aui tags in a form. Model hints, however, affect aui tags only.
-```
+!!! note
+	You can use a mix of Clay and aui tags in a form. Model hints, however, affect aui tags only.
 
 Note that Liferay DXP/Portal has its own model hints file [`portal-model-hints.xml`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/META-INF/portal-model-hints.xml). It's in `portal-impl.jar`'s `META-INF` folder. This file contains many hint examples, so you can reference it when creating `portlet-model-hints.xml` files.
 
@@ -187,7 +184,7 @@ You can define `hint-collection` elements inside the `model-hints` root-level el
 </hint-collection>
 ```
 
-You can apply a hint collection to a model field by referencing the hint collection's name. For example, if you define a `SEARCHABLE-DATE` collection like the one above in your `model-hints` element, you can apply it to your model's date field by using a `hint-collection` element that references the  collection by its name:
+You can apply a hint collection to a model field by referencing the hint collection's name. For example, if you define a `SEARCHABLE-DATE` collection like the one above in your `model-hints` element, you can apply it to your model's date field by using a `hint-collection` element that references the collection by its name:
 
 ```xml
 <field name="date" type="Date">

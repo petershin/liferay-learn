@@ -11,13 +11,11 @@ Obsolete features are eventually removed or replaced with newer, better features
 
 **Deprecated:** The feature will be unsupported as early as the next minor version release.
 
-```{important}
-Plan to stop using deprecated features because their support may cease as early as the next minor release.
-```
+!!! important
+    Plan to stop using deprecated features because their support may cease as early as the next minor release.
 
-```{important}
-Please see [Maintenance Mode and Deprecation Policies](https://help.liferay.com/hc/en-us/articles/360015767952-Maintenance-Mode-and-Deprecation) for details.
-```
+!!! important
+    Please see [Maintenance Mode and Deprecation Policies](https://help.liferay.com/hc/en-us/articles/360015767952-Maintenance-Mode-and-Deprecation) for details.
 
 ## Deprecated Feature Availability
 
@@ -67,24 +65,23 @@ Here are the features deprecated in 7.3:
 
 Features deprecated in earlier Liferay versions may also need to be considered, if you are upgrading from an earlier version.
 
-* [7.2 Deprecations and Features Moved to Maintenance Mode](./maintenance-mode-and-deprecations-in-7-2.md)
-* [7.1 Deprecations](https://help.liferay.com/hc/en-us/articles/360018403151-Digital-Experience-Platform-7-1-Deprecated-and-Removed-Items)
-* [7.0 Deprecations](https://help.liferay.com/hc/en-us/articles/360018123832-Digital-Experience-Platform-7-0-Deprecated-and-Removed-Items)
+- [7.2 Deprecations and Features Moved to Maintenance Mode](./maintenance-mode-and-deprecations-in-7-2.md)
+- [7.1 Deprecations](https://help.liferay.com/hc/en-us/articles/360018403151-Digital-Experience-Platform-7-1-Deprecated-and-Removed-Items)
+- [7.0 Deprecations](https://help.liferay.com/hc/en-us/articles/360018123832-Digital-Experience-Platform-7-0-Deprecated-and-Removed-Items)
 
 ## Features Moved to Maintenance Mode in 7.3
 
 Here are the features moved to Maintenance Mode in 7.3:
 
-* Liferay Drools
-* Liferay Mobile Experience: Mobile SDK
-* Liferay Reports
-* Site Templates
+- Liferay Drools
+- Liferay Mobile Experience: Mobile SDK
+- Liferay Reports
+- Site Templates
 
-```{note}
-While Export/Import was previously listed under maintenance mode, Liferay continues to improve the Export/Import application.
-```
+!!! note
+    While Export/Import was previously listed under maintenance mode, Liferay continues to improve the Export/Import application.
 
 ## Related Topics
 
-* [7.3 Breaking Changes](../../../liferay-internals/reference/7-3-breaking-changes.md)
-* [7.3 Default Setting Changes](./default-setting-changes-in-7-3.md)
+- [7.3 Breaking Changes](../../../liferay-development/liferay-internals/reference/7-3-breaking-changes.md)
+- [7.3 Default Setting Changes](./default-setting-changes-in-7-3.md)

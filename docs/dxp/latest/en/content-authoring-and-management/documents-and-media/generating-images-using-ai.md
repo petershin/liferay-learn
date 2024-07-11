@@ -12,9 +12,6 @@ uuid: 61c12f13-b84c-4d35-80a4-cc58f2289cba
 
 {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+`
 
-!!! important
-    ChatGPT integration for Documents and Media is currently behind a release feature flag (LPD-10793). Read [Release Feature Flags](../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information.
-
 The Documents and Media application provides integration with OpenAI's ChatGPT engine using the AI Creator tool. With an OpenAI API key configured for your instance or site, you can use the AI Creator tool and generate images throughout the portal.
 
 ## Enabling AI Creator

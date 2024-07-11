@@ -8,7 +8,7 @@ taxonomy-category-names:
 ---
 # Using Localized Messages in an MVC Portlet
 
-Liferay's localization framework is for creating localized messages in your MVC Portlet.
+Liferay's localization framework is for creating localized messages in your MVC portlet.
 
 ## Deploy the Sample Code
 
@@ -19,40 +19,40 @@ Then, follow these steps:
 
 1. Download and unzip the example.
 
-    ```bash
-    curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/developing-a-java-web-application/using-mvc/liferay-b6f5.zip -O
-    ```
+   ```bash
+   curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/developing-a-java-web-application/using-mvc/liferay-b6f5.zip -O
+   ```
 
-    ```bash
-    unzip liferay-b6f5.zip
-    ```
+   ```bash
+   unzip liferay-b6f5.zip
+   ```
 
 1. From the module root, build and deploy.
 
-    ```bash
-    ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
-    ```
+   ```bash
+   ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
+   ```
 
-    !!! note
-        This command is the same as copying the deployed jars to /opt/liferay/osgi/modules on the Docker container.
+   !!! note
+       This command is the same as copying the deployed jars to /opt/liferay/osgi/modules on the Docker container.
 
 1. Confirm the deployment in the Liferay Docker container console.
 
-    ```bash
-    STARTED com.acme.b6f5.web.0.0 [1009]
-    ```
+   ```bash
+   STARTED com.acme.b6f5.web.0.0 [1009]
+   ```
 
 1. Verify that the example module is working. Open your browser to `https://localhost:8080`
 
 1. Add the B6F5 Portlet to a page. You can find the example portlet under Sample Widgets.
 
-    ![Add the B6F5 Portlet to a page.](./using-localized-messages-in-an-mvc-portlet/images/01.png)
+   ![Add the B6F5 Portlet to a page.](./using-localized-messages-in-an-mvc-portlet/images/01.png)
 
-    You should see the welcome message header from the example.
+   You should see the welcome message header from the example.
 
 1. The example project also includes locales for Portuguese and Japanese. For example, use the language selector to select Brazilian Portuguese or Japanese to see the welcome message.
 
-    ![The example shows locales for Portuguese and Japanese.](./using-localized-messages-in-an-mvc-portlet/images/02.png)
+   ![The example shows locales for Portuguese and Japanese.](./using-localized-messages-in-an-mvc-portlet/images/02.png)
 
 Now you can see how it works.
 
@@ -88,7 +88,7 @@ Learn more about tag libraries in [Liferay Tag Library Reference](https://learn.
 
 ## Add the Component Definition
 
-As you create your custom MVC Portlet, make sure to include the language resource bundle property in the class's `@Component` definition.
+As you create your custom MVC portlet, make sure to include the language resource bundle property in the class's `@Component` definition.
 
 ```java
 @Component(
@@ -115,6 +115,6 @@ The different locales are also defined for every language the portlet supports:
 
 ## Related Topics
 
-- [Overriding Module Language Translation in Earlier Versions](../../../../liferay-internals/extending-liferay/customizing-localization/overriding-module-language-translations.md)
+- [Overriding Module Language Translation in Earlier Versions](../../../liferay-internals/extending-liferay/customizing-localization/overriding-module-language-translations.md)
 - [Site Localization](../../../../site-building/site-settings/site-localization.md)
 - [Localizing Fragment Configuration Fields](../../../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/localizing-fragment-configuration-fields.md)

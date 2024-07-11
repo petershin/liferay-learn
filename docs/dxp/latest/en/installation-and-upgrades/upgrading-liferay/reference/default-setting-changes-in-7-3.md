@@ -91,5 +91,5 @@ Here are the changes from 7.2 to 7.3:
 
 ## Related Topics
 
-* [Default Setting Changes in 7.2](default-setting-changes-in-7-2.md)
-* [7.3 Breaking Changes](../../../liferay-internals/reference/7-3-breaking-changes.md)
+- [Default Setting Changes in 7.2](default-setting-changes-in-7-2.md)
+- [7.3 Breaking Changes](../../../liferay-development/liferay-internals/reference/7-3-breaking-changes.md)

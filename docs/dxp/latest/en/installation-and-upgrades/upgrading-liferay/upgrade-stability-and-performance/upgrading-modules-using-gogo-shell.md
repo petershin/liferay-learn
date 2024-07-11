@@ -11,35 +11,35 @@ If you deploy a module that has a new [data schema minor/major version](https://
 
 Here are the module upgrade topics:
 
-* [Gogo Shell Command Usage](#command-usage)
-* [Listing Modules Ready for Upgrades](#listing-module-ready-for-upgrade)
-* [Troubleshooting Module Dependencies](#troubleshooting-module-dependencies)
-* [Executing Module Upgrades](#executing-module-upgrades)
-* [Checking Upgrade Status](#checking-upgrade-status)
-* [Executing Verify Processes](#executing-verify-processes)
+- [Gogo Shell Command Usage](#command-usage)
+- [Listing Modules Ready for Upgrades](#listing-module-ready-for-upgrade)
+- [Troubleshooting Module Dependencies](#troubleshooting-module-dependencies)
+- [Executing Module Upgrades](#executing-module-upgrades)
+- [Checking Upgrade Status](#checking-upgrade-status)
+- [Executing Verify Processes](#executing-verify-processes)
 
 ## Command Usage
 
-Use the [Gogo Shell portlet](../../../liferay-internals/fundamentals/using-the-gogo-shell.md) to execute module upgrade and verification commands.
+Use the [Gogo Shell portlet](../../../liferay-development/liferay-internals/fundamentals/using-the-gogo-shell.md) to execute module upgrade and verification commands.
 
 Here are the commands:
-
-| Command | Description |
-| :------ | :---------- |
-| `exit` or `quit` | Exits the Gogo shell |
-| `upgrade:help` | Displays upgrade commands |
-| `upgrade:check` | Lists upgrades pending execution because they failed in the past or the module hasn't reached its final version |
-| `upgrade:execute [module_name]` | Executes upgrades for that module |
-| `upgrade:executeAll` | Executes all pending module upgrade processes |
-| `upgrade:list` | Lists all registered upgrades |
-| `upgrade:list [module_name]` | Lists the module's required upgrade steps |
-| `upgrade:list | grep Registered` | Lists registered upgrades and their versions |
-| `verify:help` | Displays verify commands |
-| `verify:check [module_name]` | Lists the latest execution result for the module's verify process |
-| `verify:checkAll` | Lists the latest execution results for all verify processes |
-| `verify:execute [module_name]` | Executes the module's verifier |
-| `verify:executeAll` | Executes all verifiers |
-| `verify:list` | Lists all registered verifiers |
+ 
+| Command                          | Description                                                                                                     |
+| :------------------------------- | :-------------------------------------------------------------------------------------------------------------- |
+| `exit` or `quit`                 | Exits the Gogo shell                                                                                            |
+| `upgrade:help`                   | Displays upgrade commands                                                                                       |
+| `upgrade:check`                  | Lists upgrades pending execution because they failed in the past or the module hasn't reached its final version |
+| `upgrade:execute [module_name]`  | Executes upgrades for that module                                                                               |
+| `upgrade:executeAll`             | Executes all pending module upgrade processes                                                                   |
+| `upgrade:list`                   | Lists all registered upgrades                                                                                   |
+| `upgrade:list [module_name]`     | Lists the module's required upgrade steps                                                                       |
+| `upgrade:list \| grep Registered` | Lists registered upgrades and their versions                                                                   |
+| `verify:help`                    | Displays verify commands                                                                                        |
+| `verify:check [module_name]`     | Lists the latest execution result for the module's verify process                                               |
+| `verify:checkAll`                | Lists the latest execution results for all verify processes                                                     |
+| `verify:execute [module_name]`   | Executes the module's verifier                                                                                  |
+| `verify:executeAll`              | Executes all verifiers                                                                                          |
+| `verify:list`                    | Lists all registered verifiers                                                                                  |
 
 Next, find out each module's availability for upgrade.
 
@@ -77,10 +77,10 @@ An application's upgrade step class names typically reveal their intention. For 
 
 To examine a module's upgrade process better, you can sort the listed upgrade steps mentally or in a text editor. Here's the upgrade step order for a Bookmarks Service module to be upgraded from Liferay Portal 6.2 (the module's database exists) to schema version `1.0.0`: 
 
-* `0.0.1` to `1.0.0-step-3`
-* `0.0.1-step-3` to `1.0.0-step-2`
-* `0.0.1-step-2` to `1.0.0-step-1`
-* `0.0.1-step-1` to `1.0.0`
+- `0.0.1` to `1.0.0-step-3`
+- `0.0.1-step-3` to `1.0.0-step-2`
+- `0.0.1-step-2` to `1.0.0-step-1`
+- `0.0.1-step-1` to `1.0.0`
 
 The overall module upgrade process starts at version `0.0.1` and finishes at version `1.0.0`. The first step starts on the initial version (`0.0.1`) and finishes on the target version's highest step (`step-3`). The last step starts on the target version's lowest step (`step-1`) and finishes on the target version (`1.0.0`). 
 
@@ -134,7 +134,7 @@ The following service(s) are missing:
 
 The `dm wtf` command can also help detect errors in portlet definitions and custom portlet `schemaVersion` fields. 
 
-### Checking the Release_ Table
+### Checking the Release Table
 
 Each module has one `Release_` table record, and the value for its `schemaVersion` field must be `1.0.0` or greater. `1.0.0` is the initial version for Liferay DXP modules, except for those that were previously traditional plugins intended for version 6.2 or earlier.
 
@@ -146,4 +146,4 @@ To check for available verify processes, enter the Gogo shell command `verify:li
 
 ## Related Topics
 
-* [Liferay Commands and Standard Commands Available in Gogo Shell](../../../liferay-internals/fundamentals/using-the-gogo-shell/gogo-shell-commands.md)
+- [Liferay Commands and Standard Commands Available in Gogo Shell](../../../liferay-development/liferay-internals/fundamentals/using-the-gogo-shell/gogo-shell-commands.md)

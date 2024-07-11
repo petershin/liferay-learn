@@ -8,6 +8,7 @@ toc:
   - ./customizing-liferays-look-and-feel/using-a-custom-filter-client-extension.md
   - ./customizing-liferays-look-and-feel/using-an-editor-config-contributor-client-extension.md
   - ./customizing-liferays-look-and-feel/client-extensions-ui-reference.md
+  - ./customizing-liferays-look-and-feel/micro-frontends.md
   - ./customizing-liferays-look-and-feel/themes.md
 taxonomy-category-names:
   - Development and Tooling

@@ -10,7 +10,6 @@ toc:
   - ./users-and-permissions.md
   - ./system-administration.md
   - ./liferay-development.md
-  - ./liferay-internals.md
   - ./headless-delivery.md
   - ./installation-and-upgrades.md
 taxonomy-category-names:
@@ -98,14 +97,6 @@ Welcome to the official documentation for the latest versions (7.3 and 7.4+) of 
 [Building Applications with Objects](./liferay-development/objects.md)
 [Developer Tools Overview](./liferay-development/tooling.md)
 [Client Extensions](./liferay-development/client-extensions.md)
-:::
-
-:::{grid-item-card} Liferay Internals
-:link: ./liferay-internals.md
-
-[Fundamentals](./liferay-internals/fundamentals.md)
-[Architecture](./liferay-internals/architecture.md)
-[Extending Liferay](./liferay-internals/extending-liferay.md)
 :::
 
 :::{grid-item-card} Headless Delivery

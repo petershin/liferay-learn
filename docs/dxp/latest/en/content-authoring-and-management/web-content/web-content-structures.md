@@ -3,6 +3,7 @@ toc:
   - ./web-content-structures/creating-structures.md
   - ./web-content-structures/configuring-structure-fields.md
   - ./web-content-structures/managing-structures.md
+  - ./web-content-structures/mapping-repeatable-fields-to-fragments.md
   - ./web-content-structures/assigning-permissions-to-structures-and-templates.md
   - ./web-content-structures/whats-new-with-web-content-structures-in-7-4.md
 taxonomy-category-names:
@@ -38,4 +39,4 @@ You create a structure by adding elements such as text fields, checkboxes, or mu
 
 You drag and drop the elements into the structure, choosing the elements and order that to fit your business need. Additionally, you can group elements into repeatable blocks.
 
-Display page creators can then [map these fields](../../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#mapping-settings) (including [repeatable fields](./web-content-structures/mapping-web-content-structure-repeatable-fields-to-fragments.md)) to [editable page fragments](../../../site-building/creating-pages/page-fragments-and-widgets/using-fragments.md) to use custom styles and formatting.
+Display page creators can then [map these fields](../../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#mapping-settings) (including [repeatable fields](./web-content-structures/mapping-repeatable-fields-to-fragments.md)) to [editable page fragments](../../../site-building/creating-pages/page-fragments-and-widgets/using-fragments.md) to use custom styles and formatting.

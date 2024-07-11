@@ -41,11 +41,11 @@ Structures backed by DDM could include child structures that inherited all the p
 
 To work with fieldsets,
 
-1. Go to the *Site Menu* ( ![Site Menu](../../../images/icon-product-menu.png) ) and navigate to *Content and Data* &rarr; *Web Content*.
+1. Go to the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)) and navigate to *Content and Data* &rarr; *Web Content*.
 
 1. Select the *Structures* tab.
 
-1. Click *Add* ( ![Add Structure](../../../images/icon-add.png) ) to create a new structure.
+1. Click *New* to create a new structure.
 
 1. In the web content structure form builder view (![Form Builder Icon](../../../images/icon-builder.png)), click the *Fieldsets* tab.
 
@@ -66,19 +66,19 @@ Structures in DE are represented by JSON (it was XML in DDM). Rather than editin
 
 ### Exporting a Structure's JSON
 
-1. Go to the *Site Menu* ( ![Site Menu](../../../images/icon-product-menu.png) ) and navigate to *Content and Data* &rarr; *Web Content*.
+1. Go to the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)) and navigate to *Content and Data* &rarr; *Web Content*.
 
 1. Click the *Structures* tab.
 
 1. If there's no existing structure, [create one](./creating-structures.md) and save it.
 
-1. In the main structures list view, open the structure's *Actions* menu ( ![Actions menu](../../../images/icon-actions.png) ) and click *Export as JSON*.
+1. In the main structures list view, open the structure's *Actions* menu (![Actions menu](../../../images/icon-actions.png)) and click *Export as JSON*.
 
 ### Importing a Structure's JSON to Overwrite an Existing Structure
 
 To overwrite an existing structure's JSON,
 
-1. Go to the *Site Menu* ( ![Site Menu](../../../images/icon-product-menu.png) ) and navigate to *Content and Data* &rarr; *Web Content*.
+1. Go to the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)) and navigate to *Content and Data* &rarr; *Web Content*.
 
 1. Click the *Structures* tab.
 
@@ -94,7 +94,7 @@ To overwrite an existing structure's JSON,
 
 To import a new structure,
 
-1. Go to the *Site Menu* ( ![Site Menu](../../../images/icon-product-menu.png) ) and navigate to *Content and Data* &rarr; *Web Content*.
+1. Go to the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)) and navigate to *Content and Data* &rarr; *Web Content*.
 
 1. Click the *Structures* tab.
 
@@ -125,9 +125,9 @@ In addition to columns, use field groups to lock a subset of the structure's fie
 
 1. Click *Administration*. Uncheck *Autogenerate Structure Key* and click *Update*.
 
-1. Go to the *Site Menu* ( ![Site Menu](../../../images/icon-product-menu.png) ) and navigate to *Content and Data* &rarr; *Web Content*. Open the Structures tab and add a new structure.
+1. Go to the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)) and navigate to *Content and Data* &rarr; *Web Content*. Open the Structures tab and add a new structure.
 
-1. Add a field and name the structure. To set the structure key manually, open the *Properties sidebar* by clicking the configuration icon ( ![Configuration](../../../images/icon-cog3.png) ).
+1. Add a field and name the structure. To set the structure key manually, open the *Properties sidebar* by clicking the configuration icon (![Configuration](../../../images/icon-cog3.png)).
 
 1. Edit the *Structure Key* field, adding your custom value (e.g., `MY_STRUCTURE_KEY`).
 

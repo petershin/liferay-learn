@@ -18,7 +18,7 @@ To create a web content structure,
 
 1. Select the *Structures* tab.
 
-1. Click *Add* (![Add icon](../../../images/icon-add.png)) to create a new structure.
+1. Click *New* to create a new structure.
 
 1. Enter the title of your new structure.
 

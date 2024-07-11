@@ -47,9 +47,6 @@ To copy a page with its permissions,
 
 {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA126+`
 
-!!! important
-    Currently, this feature is behind a release feature flag (LPS-196847). Read [Release Feature Flags](../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information.
-
 1. Open the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)) and navigate to *Site Builder* &rarr; *Pages*.
 
 1. Select the checkbox next to the pages you want to configure.

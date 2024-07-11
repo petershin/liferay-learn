@@ -29,7 +29,7 @@ Improved Name Example:
 | `dynamic-data-lists-lang`   | `if-checked,-the-default-language-of-data-definitions-will-be-changeable`                |
 | `dynamic-data-mapping-lang` | `if-checked,-the-default-language-of-dynamic-data-mapping-structures-will-be-changeable` |
 
-If you extended an affected module and your extension [overrides language translations](../../../liferay-internals/extending-liferay/customizing-localization/overriding-module-language-translations.md), update your language key overrides to use the new names.
+If you extended an affected module and your extension [overrides language translations](../../../liferay-development/liferay-internals/extending-liferay/customizing-localization/overriding-module-language-translations.md), update your language key overrides to use the new names.
 
 ## Language Key Map
 
@@ -125,5 +125,5 @@ Here are the new language key names and the affected modules:
 
 ## Related Topics
 
-- [Overriding Global Language Translations with Language Properties](../../../liferay-internals/extending-liferay/customizing-localization/overriding-global-language-translations-with-language-properties.md)
+- [Overriding Global Language Translations with Language Properties](../../../liferay-development/liferay-internals/extending-liferay/customizing-localization/overriding-global-language-translations-with-language-properties.md)
 - [Using Localized Messages in an MVC Portlet](../../../liferay-development/building-applications/developing-a-java-web-application/using-mvc/using-localized-messages-in-an-mvc-portlet.md)

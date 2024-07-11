@@ -44,9 +44,6 @@ To assign permissions to web content articles after publication,
 
 {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+`
 
-!!! important
-    Currently this feature is behind a release feature flag (LPD-16469). Read [Release Feature Flags](../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information.
-
 1. Open the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)) and navigate to *Content & Data* &rarr; *Web Content*.
 
 1. Select the checkbox next to the web content articles you want to configure.

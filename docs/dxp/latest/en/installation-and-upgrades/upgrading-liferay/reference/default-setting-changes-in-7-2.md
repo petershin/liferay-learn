@@ -149,6 +149,6 @@ The latest [portal properties reference](https://docs.liferay.com/dxp/portal/7.3
 
 ## Related Topics
 
-* [7.2 Breaking Changes](../../../liferay-internals/reference/7-3-breaking-changes.md)
-* [7.1 Breaking Changes](https://help.liferay.com/hc/en-us/articles/360017902892-Breaking-Changes)
-* [7.0 Breaking Changes](https://help.liferay.com/hc/en-us/articles/360017892092-Breaking-Changes)
+- [7.2 Breaking Changes](https://help.liferay.com/hc/en-us/articles/360028832132-Breaking-Changes)
+- [7.1 Breaking Changes](https://help.liferay.com/hc/en-us/articles/360017902892-Breaking-Changes)
+- [7.0 Breaking Changes](https://help.liferay.com/hc/en-us/articles/360017892092-Breaking-Changes)

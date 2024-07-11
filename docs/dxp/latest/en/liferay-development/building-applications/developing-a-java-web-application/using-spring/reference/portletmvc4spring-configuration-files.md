@@ -10,13 +10,13 @@ taxonomy-category-names:
 
 A PortletMVC4Spring application has these descriptors, Spring contexts, and properties files in its `WEB-INF` folder: 
 
-* `web.xml` &rarr; Web application descriptor
-* `portlet.xml` &rarr; Portlet application descriptor
-* `liferay-portlet.xml` &rarr; Liferay-specific portlet descriptor 
-* `liferay-display.xml` &rarr; Liferay-specific display  descriptor 
-* `spring-context/portlet-application-context.xml` &rarr; Portlet application  context
-* `spring-context/portlet/[portlet]-context.xml` &rarr; Portlet context
-* `liferay-plugin-package.properties` &rarr; Packaging descriptor 
+- `web.xml` &rarr; Web application descriptor
+- `portlet.xml` &rarr; Portlet application descriptor
+- `liferay-portlet.xml` &rarr; Liferay-specific portlet descriptor 
+- `liferay-display.xml` &rarr; Liferay-specific display  descriptor 
+- `spring-context/portlet-application-context.xml` &rarr; Portlet application  context
+- `spring-context/portlet/[portlet]-context.xml` &rarr; Portlet context
+- `liferay-plugin-package.properties` &rarr; Packaging descriptor 
 
 Examples of each file are provided and portlet-specific content is highlighted. 
 
@@ -376,7 +376,7 @@ Bundle-Version: 1.0.0
 Import-Package: com.liferay.portal.webserver,com.liferay.portal.kernel.servlet.filters.invoker
 ```
 
-It uses this OSGi metadata header to [import required Java packages](../../../../../liferay-internals/fundamentals/importing-packages.md):
+It uses this OSGi metadata header to [import required Java packages](../../../../liferay-internals/fundamentals/importing-packages.md):
 
 ```properties
 Import-Package: com.liferay.portal.webserver,\
@@ -389,5 +389,5 @@ The [`liferay-plugin-package-[version].dtd` file](https://learn.liferay.com/refe
 
 ## Related Topics  
 
-* [PortletMVC4Spring Annotations](./portletmvc4spring-annotations.md)
-* [Migrating to PortletMVC4Spring \(Help Center\)](https://help.liferay.com/hc/en-us/articles/360030614052-Migrating-to-PortletMVC4Spring)
+- [PortletMVC4Spring Annotations](./portletmvc4spring-annotations.md)
+- [Migrating to PortletMVC4Spring \(Help Center\)](https://help.liferay.com/hc/en-us/articles/360030614052-Migrating-to-PortletMVC4Spring)

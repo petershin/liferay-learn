@@ -11,13 +11,11 @@ Obsolete features are eventually removed or replaced with newer, better features
 
 **Deprecated:** The feature will be unsupported as early as the next minor version release.
 
-```{important}
-Plan to stop using deprecated features because their support may cease as early as the next minor release.
-```
+!!! important
+    Plan to stop using deprecated features because their support may cease as early as the next minor release.
 
-```{important}
-Please see [Maintenance Mode and Deprecation Policies](https://help.liferay.com/hc/en-us/articles/360015767952-Maintenance-Mode-and-Deprecation) for details.
-```
+!!! important
+    Please see [Maintenance Mode and Deprecation Policies](https://help.liferay.com/hc/en-us/articles/360015767952-Maintenance-Mode-and-Deprecation) for details.
 
 ## Deprecated Feature Availability
 
@@ -35,8 +33,8 @@ Deprecated features have different availability:
 
 If you're upgrading from Liferay 7.0 or earlier, examine the deprecations that occurred in the applicable releases:
 
-* [7.1](https://help.liferay.com/hc/en-us/articles/360018403151-Digital-Experience-Platform-7-1-Deprecated-and-Removed-Items)
-* [7.0](https://help.liferay.com/hc/en-us/articles/360018123832-Digital-Experience-Platform-7-0-Deprecated-and-Removed-Items)
+- [7.1](https://help.liferay.com/hc/en-us/articles/360018403151-Digital-Experience-Platform-7-1-Deprecated-and-Removed-Items)
+- [7.0](https://help.liferay.com/hc/en-us/articles/360018123832-Digital-Experience-Platform-7-0-Deprecated-and-Removed-Items)
 
 ## Features Deprecated in 7.2
 
@@ -70,16 +68,14 @@ Here are the features deprecated in 7.2:
 
 Here are the features moved to maintenance mode in 7.2:
 
-* Liferay Connected Services (LCS)
-* Liferay Mobile Experience (Liferay Screens, Liferay Mobile SDK, Liferay Push)
-* Liferay Sync
+- Liferay Connected Services (LCS)
+- Liferay Mobile Experience (Liferay Screens, Liferay Mobile SDK, Liferay Push)
+- Liferay Sync
 
-```{note}
-Liferay continues to improve the Staging application, particularly for Remote Live Staging in scenarios that require content to be created in one environment and consumed in another. See [Publishing Tools](../../../site-building/publishing-tools.md) for more information.
-```
+!!! note
+    Liferay continues to improve the Staging application, particularly for Remote Live Staging in scenarios that require content to be created in one environment and consumed in another. See [Publishing Tools](../../../site-building/publishing-tools.md) for more information.
 
 ## Related Topics
 
-[7.2 Breaking Changes](../../../liferay-internals/reference/7-2-breaking-changes.md)
-
-[7.2 Default Setting Changes](./default-setting-changes-in-7-2.md)
+- [7.2 Breaking Changes](../../../liferay-development/liferay-internals/reference/7-2-breaking-changes.md)
+- [7.2 Default Setting Changes](./default-setting-changes-in-7-2.md)

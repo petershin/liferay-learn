@@ -3,7 +3,7 @@ uuid: a8dd9eb8-f44a-4cc3-8425-1685472c0119
 ---
 # Auditing Portlet Activity with Portlet Filters
 
-Portlet filters intercept requests and responses at the start of each [portlet request processing phase](../../liferay-development/building-applications/developing-a-java-web-application/reference/portlets.md#portlet-phases) so you can add functionality there. This makes them useful for auditing portlet activities during their render, action, event, and resource serving phases.
+Portlet filters intercept requests and responses at the start of each [portlet request processing phase](../../building-applications/developing-a-java-web-application/reference/portlets.md#portlet-phases) so you can add functionality there. This makes them useful for auditing portlet activities during their render, action, event, and resource serving phases.
 
 Follow these steps to create portlet filters for auditing portlet activities:
 
@@ -11,23 +11,22 @@ Follow these steps to create portlet filters for auditing portlet activities:
 
 1. Determine the portlet phase you want to audit and implement the corresponding portlet filter interface from the [`javax.portlet.filter`](http://docs.liferay.com/portlet-api/3.0/javadocs/javax/portlet/filter/package-summary.html) package.
 
-   * Action Phase - [`ActionFilter`](http://docs.liferay.com/portlet-api/3.0/javadocs/javax/portlet/filter/ActionFilter.html)
-   * Event Phase - [`EventFilter`](http://docs.liferay.com/portlet-api/3.0/javadocs/javax/portlet/filter/EventFilter.html)
-   * Render Phase - [`RenderFilter`](http://docs.liferay.com/portlet-api/3.0/javadocs/javax/portlet/filter/RenderFilter.html)
-   * Resource Serving Phase - [`ResourceFilter`](http://docs.liferay.com/portlet-api/3.0/javadocs/javax/portlet/filter/ResourceFilter.html)
+   - Action Phase - [`ActionFilter`](http://docs.liferay.com/portlet-api/3.0/javadocs/javax/portlet/filter/ActionFilter.html)
+   - Event Phase - [`EventFilter`](http://docs.liferay.com/portlet-api/3.0/javadocs/javax/portlet/filter/EventFilter.html)
+   - Render Phase - [`RenderFilter`](http://docs.liferay.com/portlet-api/3.0/javadocs/javax/portlet/filter/RenderFilter.html)
+   - Resource Serving Phase - [`ResourceFilter`](http://docs.liferay.com/portlet-api/3.0/javadocs/javax/portlet/filter/ResourceFilter.html)
 
-   See [Portlets](../../liferay-development/building-applications/developing-a-java-web-application/reference/portlets.md#portlet-phases) for more information about each portlet phase.
+   See [Portlets](../../building-applications/developing-a-java-web-application/reference/portlets.md#portlet-phases) for more information about each portlet phase.
 
 1. Declare the portlet filter a Component within the OSGi framework using the `@Component` annotation and identify it as a `PortletFilter.class` service.
 
-   ```{note}
-   Portlet filters are [OSGi Declarative Service (DS) Components](https://enroute.osgi.org/FAQ/300-declarative-services.html). Filters can also be applied to a portlet using a `portlet.xml` descriptor or a `@PortletLifecycleFilter` annotation. See Portlet 3.0 Specification for details.
-   ```
+   !!! note
+       Portlet filters are [OSGi Declarative Service (DS) Components](https://enroute.osgi.org/FAQ/300-declarative-services.html). Filters can also be applied to a portlet using a `portlet.xml` descriptor or a `@PortletLifecycleFilter` annotation. See Portlet 3.0 Specification for details.
 
 1. Enter the following properties into the `@Component` declaration.
 
-   * `"javax.portlet.name=[portlet_Name]"`: This property sets the filter's target portlet.
-   * `"service.ranking:Integer=100"`: This property sets the filter's ranking, with the higher integers executing first. Ensure the filter starts up at the beginning of the filter chain by assigning it the highest ranking.
+   - `"javax.portlet.name=[portlet_Name]"`: This property sets the filter's target portlet.
+   - `"service.ranking:Integer=100"`: This property sets the filter's ranking, with the higher integers executing first. Ensure the filter starts up at the beginning of the filter chain by assigning it the highest ranking.
 
 1. Override the filter's `doFilter` method to audit the desired aspects of the portlet phase.
 
@@ -43,7 +42,7 @@ Then, follow these step to download, build, and deploy the sample Portlet Filter
 1. Download and unzip the example module.
 
    ```bash
-   curl https://resources.learn.liferay.com/dxp/latest/en/liferay-internals/extending-liferay/liferay-b4k8.zip -O
+   curl https://resources.learn.liferay.com/dxp/latest/en/liferay-development/liferay-internals/extending-liferay/liferay-b4k8.zip -O
    ```
 
    ```bash
@@ -141,11 +140,11 @@ In this code, the filter is first declared an OSGi DS Component and identified a
 
 The portlet filter proceeds to implement the [`RenderFilter`](http://docs.liferay.com/portlet-api/3.0/javadocs/javax/portlet/filter/RenderFilter.html) interface, which extends the [`PortletFilter`](http://docs.liferay.com/portlet-api/3.0/javadocs/javax/portlet/filter/PortletFilter.html) interface. This interface includes three methods (i.e., `init`, `destroy`, `doFilter`) and performs its filtering tasks on both the render request to the Blogs portlet and its response.
 
-* `init`: Called when the portlet filter is first deployed to Liferay and initialized within the portlet container.
+- `init`: Called when the portlet filter is first deployed to Liferay and initialized within the portlet container.
 
-* `destroy`: Called to remove the portlet filter from service.
+- `destroy`: Called to remove the portlet filter from service.
 
-* `doFilter`: Called by the portlet container each time a render request/response pair is passed through the chain due to a client request.
+- `doFilter`: Called by the portlet container each time a render request/response pair is passed through the chain due to a client request.
 
    In this example, `doFilter` audits the Blogs portlet in the following ways:
 
@@ -198,5 +197,5 @@ The portlet filter proceeds to implement the [`RenderFilter`](http://docs.lifera
 
 ## Related Topics
 
-* [Portlets](../../liferay-development/building-applications/developing-a-java-web-application/reference/portlets.md)
+- [Portlets](../../building-applications/developing-a-java-web-application/reference/portlets.md)
 <!--TASK: Add link to Using Portlet Filters article when finished -->

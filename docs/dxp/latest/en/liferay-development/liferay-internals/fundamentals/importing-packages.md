@@ -14,7 +14,7 @@ You often find yourself in a position of needing functionality provided by anoth
 Import-Package: javax.portlet,com.liferay.portal.kernel.util
 ```
 
-Conveniently, [Workspace](../../liferay-development/tooling/liferay-workspace.md)-based module projects automatically detect required packages and add them to the module manifest's package import list. Sometimes, they must be specified manually.
+Conveniently, [Workspace](../../tooling/liferay-workspace.md)-based module projects automatically detect required packages and add them to the module manifest's package import list. Sometimes, they must be specified manually.
 
 There are two different package import scenarios:
 
@@ -25,7 +25,7 @@ Read below to explore how package imports are specified in these scenarios.
 
 ## Automatic Package Imports
 
-[Workspace](../../liferay-development/tooling/liferay-workspace.md)-based projects from the tutorial examples (see [Module Projects](./module-projects.md)) or created using [Blade CLI](../../liferay-development/tooling/blade-cli/generating-projects-with-blade-cli.md) or Liferay Developer Studio use [Bnd](http://bnd.bndtools.org/). A Gradle plugin invokes `Bnd`, which can then read the Gradle dependencies and resolve the imports. When you build the project's JAR, `Bnd` detects the packages the module uses, generates a `META-INF/MANIFEST.MF` file, and assigns the packages to an `Import-Package` header. In that sense, package import is automatic, because you must only define your dependencies in one place: the build script.
+[Workspace](../../tooling/liferay-workspace.md)-based projects from the tutorial examples (see [Module Projects](./module-projects.md)) or created using [Blade CLI](../../tooling/blade-cli/generating-projects-with-blade-cli.md) or Liferay Developer Studio use [Bnd](http://bnd.bndtools.org/). A Gradle plugin invokes `Bnd`, which can then read the Gradle dependencies and resolve the imports. When you build the project's JAR, `Bnd` detects the packages the module uses, generates a `META-INF/MANIFEST.MF` file, and assigns the packages to an `Import-Package` header. In that sense, package import is automatic, because you must only define your dependencies in one place: the build script.
 
 !!! note
     Liferay's project templates use [a third-party Gradle plugin](https://github.com/TomDmitriev/gradle-bundle-plugin) to invoke `Bnd`.
@@ -48,7 +48,7 @@ Import-Package: com.liferay.portal.kernel.service;version="[4.3,5)"
 The build file specifies dependencies. `Bnd` examines the module classpath to import packages the module uses. The examination includes all classes found in the classpath---even those from embedded [third party library JARs](./configuring-dependencies/resolving-third-party-library-package-dependencies.md).
 
 !!! note
-    For a plugin WAR project, Liferay's [WAB Generator](../../liferay-development/reference/deploying-wars-wab-generator.md) detects packages used in the WAR's JSPs, descriptor files, and classes (in `WEB-INF/classes` and embedded JARs). Also the WAB Generator searches the `web.xml`, `liferay-web.xml`, `portlet.xml`, `liferay-portlet.xml`, and `liferay-hook.xml` descriptor files. It adds package imports for classes that are neither found in the plugin's `WEB-INF/classes` folder nor in its embedded JARs.
+    For a plugin WAR project, Liferay's [WAB Generator](../../reference/deploying-wars-wab-generator.md) detects packages used in the WAR's JSPs, descriptor files, and classes (in `WEB-INF/classes` and embedded JARs). Also the WAB Generator searches the `web.xml`, `liferay-web.xml`, `portlet.xml`, `liferay-portlet.xml`, and `liferay-hook.xml` descriptor files. It adds package imports for classes that are neither found in the plugin's `WEB-INF/classes` folder nor in its embedded JARs.
 
 ## Manual Package Imports
 
@@ -78,7 +78,7 @@ Import-Package: [... existing package list,][add the package here]
 
 Packages for Java APIs, such as Java portlet, aren't [semantically versioned](./semantic-versioning.md) but have [Portable Java Contracts](https://docs.osgi.org/reference/portable-java-contracts.html). Each API's contract specifies the JSR it satisfies. Modules that use these APIs must specify requirements on the API contracts. The contract requirement defines the module's relationship with the imported API packages. If the system you're running does *not* provide the exact contract, the module does not resolve. Resolving a missing package is better than handling an incompatibility failure during execution.
 
-[Workspace](../../liferay-development/tooling/liferay-workspace.md)-based projects specify Portable Java Contracts automatically! For example, if your module uses the Java Portlet API and you compile against the Java Portlet 2.0 artifact, a contract requirement for the package is added to your module's manifest.
+[Workspace](../../tooling/liferay-workspace.md)-based projects specify Portable Java Contracts automatically! For example, if your module uses the Java Portlet API and you compile against the Java Portlet 2.0 artifact, a contract requirement for the package is added to your module's manifest.
 
 !!! note
     WAR projects don't use `Bnd` and must specify contracts in their `WEB-INF/liferay-plugin-package.properties` file. For example, here's the specified contract for `JavaPortlet` 2.0: `Import-Package: javax.portlet Require-Capability: osgi.contract;filter:=(&(osgi.contract=JavaPortlet)(version=2.0))`
@@ -88,7 +88,7 @@ Congratulations! Now you can import all kinds of packages for your modules to us
 ## Related Topics
 
 - [Configuring Dependencies](./configuring-dependencies.md)
-- [Blade CLI](../../liferay-development/tooling/blade-cli.md)
-- [Workspace](../../liferay-development/tooling/liferay-workspace.md)
+- [Blade CLI](../../tooling/blade-cli.md)
+- [Workspace](../../tooling/liferay-workspace.md)
 - [Semantic Versioning](./semantic-versioning.md)
-- [Deploying WARs \(WAB Generator\)](../../liferay-development/reference/deploying-wars-wab-generator.md)
+- [Deploying WARs \(WAB Generator\)](../../reference/deploying-wars-wab-generator.md)

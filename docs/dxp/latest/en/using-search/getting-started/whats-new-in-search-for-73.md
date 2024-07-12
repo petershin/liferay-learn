@@ -16,9 +16,8 @@ uuid: 81b9af05-3797-4373-8172-b65d94290ea9
 
 Liferay DXP 7.3 comes with out-of-the-box support for Elasticsearch 7. The minimum required version is 7.9. Refer to the [Search Engine Compatibility Matrix](https://help.liferay.com/hc/en-us/articles/360016511651) for detailed support information.
 
-```{important}
-Elasticsearch 6.x is not supported on Liferay CE/DXP 7.3.
-```
+!!! important
+    Elasticsearch 6.x is not supported on Liferay CE/DXP 7.3.
 
 ### The Elasticsearch 7 Connector is Based on the REST Client
 
@@ -30,7 +29,7 @@ The Elasticsearch 7 connector bundled with DXP 7.3 uses [Elastic's Java REST Cli
 
 > Availability: Liferay 7.3 CE GA4+, Liferay DXP 7.3 GA1+
 
-The functionality of the _Liferay Enterprise Search Security_ (formerly _Liferay Connector to X-Pack Security_)  module is included in the _Liferay Connector to Elasticsearch 7_. All customers on CE/DXP 7.3 can connect securely to their Elasticsearch cluster without a [Liferay Enterprise Search (LES)](https://www.liferay.com/products/dxp/enterprise-search) subscription.
+The functionality of the *Liferay Enterprise Search Security* (formerly *Liferay Connector to X-Pack Security*) module is included in the *Liferay Connector to Elasticsearch 7*. All customers on CE/DXP 7.3 can connect securely to their Elasticsearch cluster without a [Liferay Enterprise Search (LES)](https://www.liferay.com/products/dxp/enterprise-search) subscription.
 
 The [upgrade](../installing-and-upgrading-a-search-engine/elasticsearch/upgrading-elasticsearch.md) guide contains information on moving the encryption configuration into the Elasticsearch 7 connector.
 
@@ -143,20 +142,21 @@ Manually tuning search for optimal results is difficult. Optimizing your search 
 Learning to Rank (LTR) tackles this challenge by applying a machine learning (ML) model to improving search results. The model is trained by 
 
 - selecting "features" (a term for the search factors to consider when the model is trained---e.g., recency, geo-proximity, tags match)
+
 - providing judgment lists (also known as "ground truth") curated either manually (e.g. search experts grading results for a query) or semi-automatically (e.g. measuring user click rate for a query).
 
-Judgment lists are the source of truth that informs and guides the model training. When a user submits a search query, LTR takes the first _x_ number of results (by default the first 1,000 results) returned by the search engine, then re-scores and re-orders those results using the trained model before returning the list to the user.
+Judgment lists are the source of truth that informs and guides the model training. When a user submits a search query, LTR takes the first *x* number of results (by default the first 1,000 results) returned by the search engine, then re-scores and re-orders those results using the trained model before returning the list to the user.
 
 ### LES Applications Renamed
 
 Though not explicitly linked to the Liferay CE/DXP 7.3 release, these apps were renamed to better reflect their functionality and to emphasize their identity as LES apps:
 
-| Functionality | Old App Name | New App Name |
-| :--- | :--- | :--- |
-| Monitoring the Elasticsearch cluster | Liferay Connector to X-Pack Monitoring [Elastic Stack 6.x] | Liferay Enterprise Search Monitoring |
-| Securing the Elasticsearch cluster | Liferay Connector to X-Pack Security [Elastic Stack 6.x] | Liferay Enterprise Search Security |
-| Using machine learning to optimize the search algorithm | Liferay Connector to Elasticsearch Learning to Rank | Liferay Enterprise Search Learning to Rank |
-| Replicating indexes across remote data centers | NA (new app) | Liferay Enterprise Search Cross-Cluster Replication |
+| Functionality                                           | Old App Name                                               | New App Name                                        |
+| :------------------------------------------------------ | :--------------------------------------------------------- | :-------------------------------------------------- |
+| Monitoring the Elasticsearch cluster                    | Liferay Connector to X-Pack Monitoring [Elastic Stack 6.x] | Liferay Enterprise Search Monitoring                |
+| Securing the Elasticsearch cluster                      | Liferay Connector to X-Pack Security [Elastic Stack 6.x]   | Liferay Enterprise Search Security                  |
+| Using machine learning to optimize the search algorithm | Liferay Connector to Elasticsearch Learning to Rank        | Liferay Enterprise Search Learning to Rank          |
+| Replicating indexes across remote data centers          | NA (new app)                                               | Liferay Enterprise Search Cross-Cluster Replication |
 
 ## Development
 
@@ -164,19 +164,19 @@ Though not explicitly linked to the Liferay CE/DXP 7.3 release, these apps were 
 
 > Availability: Liferay CE 7.3 GA6+, Liferay DXP 7.3 GA1+
 
-An Elasticsearch-version agnostic `IndexSettingsContributor` was added ([src code here)](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-search/portal-search-spi/src/main/java/com/liferay/portal/search/spi/settings/IndexSettingsContributor.java):
+An Elasticsearch-version agnostic `IndexSettingsContributor` was added [(src code here)](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-search/portal-search-spi/src/main/java/com/liferay/portal/search/spi/settings/IndexSettingsContributor.java):
 
-* `com.liferay.portal.search.spi.settings.IndexSettingsContributor`
-* `com.liferay.portal.search.spi.settings.IndexSettingsHelper.java`
-* `com.liferay.portal.search.spi.settings.TypeMappingsHelper.java`
+- `com.liferay.portal.search.spi.settings.IndexSettingsContributor`
+- `com.liferay.portal.search.spi.settings.IndexSettingsHelper.java`
+- `com.liferay.portal.search.spi.settings.TypeMappingsHelper.java`
 
 ### A Sidecar Elasticsearch 7 is Bundled
 
 > Availability: Liferay CE 7.3 GA4+, Liferay DXP 7.3 GA1+
 
-A compatible version of Elasticsearch is bundled with the Liferay CE/DXP 7.3+ Tomcat bundles and started simultaneously in a _sidecar_ JVM. This sidecar installation is referred to as _development mode_, and it replaces the previous _embedded_ mode (neither of which are supported for production installations). Sidecar has dedicated properties in the Elasticsearch 7 configuration in the System Settings. By default, it runs on HTTP port 9201. See [Using the Sidecar or Embedded Elasticsearch](../installing-and-upgrading-a-search-engine/elasticsearch/using-the-sidecar-or-embedded-elasticsearch.md) for more information.
+A compatible version of Elasticsearch is bundled with the Liferay CE/DXP 7.3+ Tomcat bundles and started simultaneously in a *sidecar* JVM. This sidecar installation is referred to as *development mode*, and it replaces the previous *embedded* mode (neither of which are supported for production installations). Sidecar has dedicated properties in the Elasticsearch 7 configuration in the System Settings. By default, it runs on HTTP port 9201. See [Using the Sidecar or Embedded Elasticsearch](../installing-and-upgrading-a-search-engine/elasticsearch/using-the-sidecar-or-embedded-elasticsearch.md) for more information.
 
-The sidecar Elasticsearch server is auto-downloaded at first startup. If your  deployment is unable to download the sidecar server, [install Elasticsearch as a remote server](../installing-and-upgrading-a-search-engine/elasticsearch/getting-started-with-elasticsearch.md).
+The sidecar Elasticsearch server is auto-downloaded at first startup. If your deployment is unable to download the sidecar server, [install Elasticsearch as a remote server](../installing-and-upgrading-a-search-engine/elasticsearch/getting-started-with-elasticsearch.md).
 
 ## Upgrading to DXP 7.3
 
@@ -184,4 +184,4 @@ Upgrading from a previous DXP version to 7.3 requires some special steps due to 
 
 ## Related Topics
 
-[7.3 Breaking Changes: DDM Field Indexing](../../liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document)
+- [7.3 Breaking Changes: DDM Field Indexing](../../liferay-development/liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document)

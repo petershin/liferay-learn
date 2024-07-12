@@ -53,7 +53,7 @@ Liferay maintains a GitHub repository of [sample projects](https://github.com/li
    blade samples
    ```
 
-1. Say you want a working example of a [model listener](../../../liferay-internals/extending-liferay/creating-a-model-listener.md). Type this command:
+1. Say you want a working example of a [model listener](../../../liferay-development/liferay-internals/extending-liferay/creating-a-model-listener.md). Type this command:
 
    ```bash
    blade samples model-listener
@@ -90,4 +90,4 @@ If you have Liferay projects prior to version 7.0, they are in a Plugins SDK. To
 
 ## Related Topics
 
-[Liferay Workspace](../liferay-workspace.md)
+- [Liferay Workspace](../liferay-workspace.md)

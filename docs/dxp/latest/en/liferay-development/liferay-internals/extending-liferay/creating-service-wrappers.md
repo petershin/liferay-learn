@@ -15,7 +15,7 @@ Then, follow these steps to deploy the example:
 1. Download and unzip the `liferay-j1c2.zip` example project.
 
    ```bash
-   curl https://resources.learn.liferay.com/dxp/latest/en/liferay-internals/extending-liferay/liferay-j1c2.zip -O
+   curl https://resources.learn.liferay.com/dxp/latest/en/liferay-development/liferay-internals/extending-liferay/liferay-j1c2.zip -O
    ```
 
    ```bash
@@ -79,7 +79,7 @@ This example prints a message to the console whenever the `authenticateByEmailAd
 
 1. Open the `J1C2UserLocalServiceWrapper` class in your text editor or IDE.
 
-1. Inside the class, create a public method called `getUser`. This will override `UserLocalService`'s `getUser` method. As such, it must pass a `long` as an argument and return a `User`. This method should also throw a `PortalException`. Make sure to add the `@Override` annotation.
+1. Inside the class, create a public method called `getUser`. This overrides `UserLocalService`'s `getUser` method. As such, it must pass a `long` as an argument and return a `User`. This method should also throw a `PortalException`. Make sure to add the `@Override` annotation.
 
    ```java
    @Override
@@ -145,5 +145,5 @@ Congratulations! You've customized a service's methods using a Liferay service w
 ## Related Topics
 
 - [Using an OSGi Service](../fundamentals/using-an-osgi-service.md)
-- [Using Job Scheduler](../../liferay-development/core-frameworks/job-scheduler-framework/using-job-scheduler.md)
-- [Users](../../users-and-permissions/users.md)
+- [Using Job Scheduler](../../core-frameworks/job-scheduler-framework/using-job-scheduler.md)
+- [Users](../../../users-and-permissions/users.md)

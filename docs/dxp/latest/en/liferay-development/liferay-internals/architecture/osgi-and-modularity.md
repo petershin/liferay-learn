@@ -48,45 +48,45 @@ Then, follow these steps to deploy the example:
 
 1. Download and unzip `liferay-r9u2.zip`.
 
-    ```bash
-    curl https://resources.learn.liferay.com/dxp/latest/en/liferay-internals/architecture/liferay-r9u2.zip -O
-    ```
+   ```bash
+   curl https://resources.learn.liferay.com/dxp/latest/en/liferay-internals/architecture/liferay-r9u2.zip -O
+   ```
 
-    ```bash
-    unzip liferay-r9u2.zip
-    ```
+   ```bash
+   unzip liferay-r9u2.zip
+   ```
 
 1. Deploy the example modules.
 
-    ```bash
-    cd liferay-r9u2.zip
-    ```
+   ```bash
+   cd liferay-r9u2.zip
+   ```
 
-    ```bash
-    ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
-    ```
+   ```bash
+   ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
+   ```
 
 1. Confirm the deployments in the Docker container console.
 
-    ```
-    STARTED com.acme.r9u2.api_1.0.0
-    STARTED com.acme.r9u2.impl_1.0.0
-    STARTED com.acme.r9u2.osgi.commands_1.0.0
-    ```
+   ```
+   STARTED com.acme.r9u2.api_1.0.0
+   STARTED com.acme.r9u2.impl_1.0.0
+   STARTED com.acme.r9u2.osgi.commands_1.0.0
+   ```
 
 1. Open the [Gogo Shell](../fundamentals/using-the-gogo-shell.md).
 
 1. In the Gogo Shell command field, enter a `r9u2:greet` command to generate a greeting.
 
-    ```groovy
-    r9u2:greet "Captain Kirk"
-    ```
+   ```groovy
+   r9u2:greet "Captain Kirk"
+   ```
 
 1. Confirm the output.
 
-    ```
-    Hello Captain Kirk!
-    ```
+   ```
+   Hello Captain Kirk!
+   ```
 
 The example's client module leverages API and implementation modules to produce the content returned from the `r9u2:greet` Gogo Shell command. Examine each module next.
 
@@ -186,7 +186,7 @@ That's all there is to an implementation module.
 
 ## Client
 
-The consumer or client uses the API that the API module defines and the implementation module implements. Liferay has many different kinds of consumer modules. [Portlets](../../liferay-development/building-applications/developing-a-java-web-application/reference/portlets.md) are the most common consumer module type, but since they are a topic all by themselves, this example stays simple by creating an command for the Apache Felix Gogo shell. Note that consumers can, of course, consume many different APIs to provide functionality. 
+The consumer or client uses the API that the API module defines and the implementation module implements. Liferay has many different kinds of consumer modules. [Portlets](../../building-applications/developing-a-java-web-application/reference/portlets.md) are the most common consumer module type, but since they are a topic all by themselves, this example stays simple by creating an command for the Apache Felix Gogo shell. Note that consumers can, of course, consume many different APIs to provide functionality. 
 
 A consumer module has the same structure as the other module types:
 
@@ -249,6 +249,6 @@ Are you excited yet? Are you ready to start developing? Here are some resources 
 
 - [OSGi Alliance](https://www.osgi.org/)
 - [Getting started with OSGi at OSGi EnRoute](https://enroute.osgi.org/)
-- [Building Applications](../../liferay-development/building-applications/developing-a-java-web-application.md)
-- [Developer Tools](../../liferay-development/tooling.md)
-- [Starting with a Docker Image](../../getting-started/starting-with-a-docker-image.md)
+- [Building Applications](../../building-applications/developing-a-java-web-application.md)
+- [Developer Tools](../../tooling.md)
+- [Starting with a Docker Image](../../../getting-started/starting-with-a-docker-image.md)

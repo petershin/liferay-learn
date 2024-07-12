@@ -62,7 +62,7 @@ Perform these steps to update and deploy changes in your project repository:
 Once you have deployed the changes, the `liferay` service restarts and begins any upgrade steps necessary to complete the update.
 
 !!! tip
-    To avoid bugs related to CDN cache, go to *Network* &rarr; *CDN*, and click *Clear CDN Cache*.
+    To avoid bugs related to outdated content on the CDN cache, go to *Network* &rarr; *CDN*, and click *Clear CDN Cache*.
 
 ## Updating to a New Service Pack with Clustering Enabled
 

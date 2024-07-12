@@ -235,7 +235,7 @@ Update these locations as needed to reflect the new version of Liferay DXP:
 When both of these image versions are updated, [deploy the changes](./deploying-to-the-liferay-service.md) to your chosen environment. This prepares the Liferay service for you to restore your uploaded backup.
 
 !!! tip
-    To avoid bugs related to CDN cache, go to *Network* &rarr; *CDN*, and click *Clear CDN Cache*.
+    To avoid bugs related to outdated content on the CDN cache, go to *Network* &rarr; *CDN*, and click *Clear CDN Cache*.
 
 ## Restore the Backup
 

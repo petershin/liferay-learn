@@ -21,7 +21,7 @@ First, you'll import fragments and images created by their designers to aid in b
 
 1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)), expand *Content & Data*, and click *Documents and Media*.
 
-1. Click *Add*, (![Add](./../../images/icon-add.png)), then click *Multiple Files*.
+1. Click *Add*, (![Add](../../images/icon-add.png)), then click *Multiple Files*.
 
 1. Select all the files in `liferay-q9c4.zip/images` and click *Publish*.
 

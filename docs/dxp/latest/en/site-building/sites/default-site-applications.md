@@ -66,7 +66,7 @@ When you use an application in a site, the application's data is restricted to t
 | :--- | :--- |
 | [Memberships](./site-membership.md) | View and manage site membership for users, organizations, and user groups. |
 | [Teams](./site-membership/creating-teams-for-sites.md) | Create teams for quickly assigning and managing site permissions for users. |
-| [Segments](./../personalizing-site-experience/segmentation/creating-and-managing-user-segments.md) | Create segments for grouping site users based on shared properties (e.g., language, job title).  |
+| [Segments](../personalizing-site-experience/segmentation/creating-and-managing-user-segments.md) | Create segments for grouping site users based on shared properties (e.g., language, job title).  |
 
 ## Configuration
 

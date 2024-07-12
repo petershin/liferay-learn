@@ -108,7 +108,7 @@ If you’re following the example here to search *liferay-0*, search for *dynami
 
 Set up a [Search Page](../working-with-search-pages/search-pages.md) that displays one set of results from Liferay's company index (e.g, `liferay-20098`) and another from some alternate index of interest in [Liferay's Elasticsearch cluster](../../installing-and-upgrading-a-search-engine/elasticsearch.md) (this example uses `liferay-0` for demonstration purposes):
 
-1. Add these widgets to a [new page called _Low Level Search_](./../../../site-building/creating-pages/using-widget-pages/adding-widgets-to-a-page.md): 
+1. Add these widgets to a [new page called _Low Level Search_](../../../site-building/creating-pages/using-widget-pages/adding-widgets-to-a-page.md): 
 
    * One Low Level Search Options
    * Two [Search Bars](../../getting-started/searching-for-content.md#using-the-search-bar)
@@ -116,7 +116,7 @@ Set up a [Search Page](../working-with-search-pages/search-pages.md) that displa
    * One [Custom Filter](./using-the-custom-filter-widget.md)
 
    ```{tip}
-   The 1-2-1 Columns (50/50) [page layout](./../../../site-building/creating-pages/page-settings/configuring-individual-pages.md#page-layout) is convenient for this example.
+   The 1-2-1 Columns (50/50) [page layout](../../../site-building/creating-pages/page-settings/configuring-individual-pages.md#page-layout) is convenient for this example.
    ```
 
 1. Configure the widgets:

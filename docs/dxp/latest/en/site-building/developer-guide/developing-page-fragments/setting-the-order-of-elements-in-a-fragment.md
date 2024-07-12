@@ -25,7 +25,7 @@ Starting with Liferay DXP 7.4, the Slider and Tab Fragments show their elements 
 
 1. Under *Fragment Sets*, click the Set with the Fragment you want to customize.
 
-1. Click on the Slider or Tab Fragment's *Actions* (![Action](./../../../images/icon-actions.png)) button and select *Edit* to open the [Fragments Editor](./using-the-fragments-editor.md).
+1. Click on the Slider or Tab Fragment's *Actions* (![Action](../../../images/icon-actions.png)) button and select *Edit* to open the [Fragments Editor](./using-the-fragments-editor.md).
 
     ![Edit the imported Fragment to open the Fragment Editor.](./setting-the-order-of-elements-in-a-fragment/images/06.png)
 

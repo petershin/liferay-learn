@@ -113,7 +113,7 @@ Here's a snippet of output from the Elasticsearch example:
 
 ## Accessing Custom Fields 
 
-When you create a [Custom Field](./../../../system-administration/configuring-liferay/adding-custom-fields.md) with the setting _Searchable as Keyword_ enabled, the custom field is indexed with the backing asset (Blogs Entries, for example). After reindexing it's also applied to existing entries. The field itself is a text field, named like `expando__keyword__custom_fields__Enabled` (if you name the field _Enabled_ in the Custom Fields UI), but it contains a nested field mapping for creating a separate `raw` keyword field. 
+When you create a [Custom Field](../../../system-administration/configuring-liferay/adding-custom-fields.md) with the setting _Searchable as Keyword_ enabled, the custom field is indexed with the backing asset (Blogs Entries, for example). After reindexing it's also applied to existing entries. The field itself is a text field, named like `expando__keyword__custom_fields__Enabled` (if you name the field _Enabled_ in the Custom Fields UI), but it contains a nested field mapping for creating a separate `raw` keyword field. 
 
 To use the raw field in the Custom Facet, append `.raw` to the Custom Field name in the _Aggregation Field_:
 

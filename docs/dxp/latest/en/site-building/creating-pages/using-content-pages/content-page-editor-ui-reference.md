@@ -45,7 +45,7 @@ The [fragments and widgets](#fragments-and-widgets) and [page design options](#p
 
 ### Edit History
 
-Click *History* ( ![History Button](./../../../images/icon-time.png) ) to view changes made during your current edit session. You can use this history to reserve or restore changes. Alternatively, you can click the Undo and Redo buttons.
+Click *History* ( ![History Button](../../../images/icon-time.png) ) to view changes made during your current edit session. You can use this history to reserve or restore changes. Alternatively, you can click the Undo and Redo buttons.
 
 ![Revert your changes using the Undo, Redo, and History buttons.](./content-page-editor-ui-reference/images/03.png)
 

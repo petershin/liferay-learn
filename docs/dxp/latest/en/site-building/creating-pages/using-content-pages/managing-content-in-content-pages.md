@@ -35,7 +35,7 @@ From here, you can filter content by type (e.g., web content, documents, collect
     * *Add Items*: Add items to the collection.
     * *Permissions*: Edit permissions for the collection by user role.
 
-* Inline Text: Click *Edit* (![Edit button](./../../../images/icon-edit.png)) for the desired text to begin editing it directly in the page or template. This includes both simple and rich text elements from deployed fragments. While editing rich text elements, you can highlight text to access additional formatting options.
+* Inline Text: Click *Edit* (![Edit button](../../../images/icon-edit.png)) for the desired text to begin editing it directly in the page or template. This includes both simple and rich text elements from deployed fragments. While editing rich text elements, you can highlight text to access additional formatting options.
 
 ```{note}
 Editing inline text requires the edit inline content permission.

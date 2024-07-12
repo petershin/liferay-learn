@@ -17,7 +17,7 @@ Grant permission to Create or Edit templates in FreeMarker to trusted users only
 
 ## How to Create a Web Content Template
 
-1. Open the *Site Menu* (![Site Menu](./../../../images/icon-menu.png)), and go to *Content & Data* &rarr; *Web Content*.
+1. Open the *Site Menu* (![Site Menu](../../../images/icon-menu.png)), and go to *Content & Data* &rarr; *Web Content*.
 
 1. Select the *Templates* tab, and click on the *Add button* (![Add Template](../../../images/icon-add.png)) to create a new Web Content Template.
 

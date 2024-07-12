@@ -29,7 +29,7 @@ When used with a `must_not` Occur configuration, the Custom Filter can catch and
 
 ### Excluding Certain Documents and Media Content
 
-Sometimes, you may want to exclude certain types of content from appearing in the Search Results. To exclude Documents and Media file entries that are only present in the system to be added to Web Content, you must first distinguish the particular files to exclude, in a way that they can be identified in the search index. You can tag them with something that declares their purpose (`wconly` perhaps), or you can put them into a dedicated [Documents and Media Folder](./../../../content-authoring-and-management/documents-and-media/uploading-and-managing/using-folders.md). To configure a Custom Filter to exclude a Documents and Media Folder, use these settings:
+Sometimes, you may want to exclude certain types of content from appearing in the Search Results. To exclude Documents and Media file entries that are only present in the system to be added to Web Content, you must first distinguish the particular files to exclude, in a way that they can be identified in the search index. You can tag them with something that declares their purpose (`wconly` perhaps), or you can put them into a dedicated [Documents and Media Folder](../../../content-authoring-and-management/documents-and-media/uploading-and-managing/using-folders.md). To configure a Custom Filter to exclude a Documents and Media Folder, use these settings:
 
 **Filter Query Type:** `Match`
 

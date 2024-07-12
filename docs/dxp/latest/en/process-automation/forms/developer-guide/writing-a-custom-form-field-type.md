@@ -77,7 +77,7 @@ Then, follow these steps:
 
 1. Go to the Forms application in _Site Menu_ &rarr; _Content & Data_ &rarr; _Forms_.
 
-1. Click the *Add* button (![Add](./../../../images/icon-add.png)) to open the Form Builder.
+1. Click the *Add* button (![Add](../../../images/icon-add.png)) to open the Form Builder.
 
 1. Add the _C2P9 Slider_ field to the form.
 

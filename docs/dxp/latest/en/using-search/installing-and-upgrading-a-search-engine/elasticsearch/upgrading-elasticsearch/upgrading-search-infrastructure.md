@@ -9,16 +9,19 @@ uuid: 2256d5d4-29de-4f28-9236-26159c675d8a
 
 While upgrading Liferay, you must account for the search experience when using Elasticsearch. The exact steps depend on your existing search engine installation and Liferay version, but you should start by [backing up your existing indexes](./backing-up-elasticsearch.md).
 
-* See the [Search Engine Compatibility Matrix](https://help.liferay.com/hc/en-us/articles/360016511651): it's always recommended to run the latest supported Elasticsearch version.
-* Beginning in Liferay 7.4, the Liferay Enterprise Search (LES) applications are bundled with Liferay DXP. No additional installation steps are required. See [Activating Liferay Enterprise Search](../../../liferay-enterprise-search/activating-liferay-enterprise-search.md) for more information.
-* If you're already on a supported Elasticsearch version, you can continue using the existing Elasticsearch instance without updating it.
-* Beginning in Liferay 7.4, the Search Tuning (Synonym Sets and Result Rankings) indexes are backed by database tables. If the search engine is connected to Liferay during Liferay's upgrade, the data is propagated to the database for you. If you are setting up a new Elasticsearch instance, you must [backup and restore the search tuning indexes](./backing-up-elasticsearch.md), then run a [Groovy script](#importing-the-search-tuning-indexes-in-7-4) to import the index data manually into the new database tables.
+- See the [Search Engine Compatibility Matrix](https://help.liferay.com/hc/en-us/articles/360016511651): it's always recommended to run the latest supported Elasticsearch version.
+
+- Beginning in Liferay 7.4, the Liferay Enterprise Search (LES) applications are bundled with Liferay DXP. No additional installation steps are required. See [Activating Liferay Enterprise Search](../../../liferay-enterprise-search/activating-liferay-enterprise-search.md) for more information.
+
+- If you're already on a supported Elasticsearch version, you can continue using the existing Elasticsearch instance without updating it.
+
+- Beginning in Liferay 7.4, the Search Tuning (Synonym Sets and Result Rankings) indexes are backed by database tables. If the search engine is connected to Liferay during Liferay's upgrade, the data is propagated to the database for you. If you are setting up a new Elasticsearch instance, you must [backup and restore the search tuning indexes](./backing-up-elasticsearch.md), then run a [Groovy script](#importing-the-search-tuning-indexes-in-7-4) to import the index data manually into the new database tables.
 
 ## Upgrade Steps
 
-```{important}
-[Back up the search indexes](./backing-up-elasticsearch.md) before proceeding with these steps.
-```
+!!! important
+    [Back up the search indexes](./backing-up-elasticsearch.md) before proceeding with these steps.
+
 1. Make sure your system is at least on the minimum supported Elasticsearch version. If it's not, move to the [latest supported Elasticsearch](https://help.liferay.com/hc/en-us/articles/360016511651) by [upgrading.](upgrading-to-elasticsearch-8.md). It's possible to install a new Elasticsearch cluster and connect to the upgraded Liferay, but some data can be lost if the Elasticsearch cluster contained indexes used as primary storage, like the indexes for Liferay's Search Tuning features in Liferay DXP 7.2 and 7.3. See [Backing Up and Restoring Search Tuning Indexes for Liferay 7.2 and 7.3](backing-up-elasticsearch.md#backing-up-and-restoring-search-tuning-indexes-for-liferay-7-2-and-7-3) and [Importing the Search Tuning Indexes in 7.4.](#importing-the-search-tuning-indexes-in-7-4).
 
 1. [Connect Liferay to Elasticsearch](../connecting-to-elasticsearch.md) and configure [Security](../securing-elasticsearch.md).
@@ -45,9 +48,9 @@ Because LES and its apps are bundled with Liferay 7.4, these steps are only requ
 
 Manually test the upgraded search experience to ensure the features you depend on work as expected. If something is not working or is behaving differently than you expect, review the Breaking Changes documentation:
 
-- [Liferay 7.4 Breaking Changes](./../../../../liferay-internals/reference/7-4-breaking-changes.md)
-- [Liferay 7.3 Breaking Changes](./../../../../liferay-internals/reference/7-3-breaking-changes.md)
-- [Liferay 7.2 Breaking Changes](./../../../../liferay-internals/reference/7-2-breaking-changes.md)
+- [Liferay 7.4 Breaking Changes](../../../../liferay-internals/reference/7-4-breaking-changes.md)
+- [Liferay 7.3 Breaking Changes](../../../../liferay-internals/reference/7-3-breaking-changes.md)
+- [Liferay 7.2 Breaking Changes](../../../../liferay-internals/reference/7-2-breaking-changes.md)
 
 ## LES Applications Renamed after Liferay 7.2
 
@@ -65,7 +68,9 @@ The Liferay 7.3 and 7.4 widget and configuration names are identical.
 
 If you're upgrading from Liferay 7.2, the renaming of apps and configurations has these upgrade impacts:
 1. The LES Monitoring widget is now named *Elasticsearch Monitoring*. During startup, a module upgrade step runs, renaming the app when _Liferay Enterprise Search Monitoring_ is deployed. No action is required.
+
 1. The configuration file name changed from `com.liferay.portal.search.elasticsearch6.xpack.monitoring.web.internal.configuration.XPackMonitoringConfiguration.config` to `com.liferay.portal.search.elasticsearch.monitoring.web.internal.configuration.MonitoringConfiguration`. The properties are the same as before. During portal startup, a module upgrade step runs, renaming the configuration. No action is required.
+
 1. The Kibana base path to the monitoring widget changed. You must change the original setting in `kibana.yml`:
 
    ```yaml
@@ -82,8 +87,8 @@ If you're upgrading from Liferay 7.2, the renaming of apps and configurations ha
 
 The following Liferay DXP Search Tuning indexes are in the Elasticsearch cluster: 
 
-* `liferay-[companyId]-search-tuning-rankings`
-* `liferay-[companyId]-search-tuning-synonyms`
+- `liferay-[companyId]-search-tuning-rankings`
+- `liferay-[companyId]-search-tuning-synonyms`
 
 If you were using the search tuning features in the pre-upgrade system, but the search tuning index documents are not present in the post-upgrade cluster, you must first [backup and restore the search tuning indexes](./backing-up-elasticsearch.md) from the pre-upgrade cluster to the post-upgrade cluster, then run a Groovy script to manually import the index data into the new database tables. This can happen if you are connecting to a new Elasticsearch cluster instead of upgrading the pre-upgrade cluster.
 
@@ -131,9 +136,9 @@ To run the Groovy import script,
 
 ## Related Topics
 
-* [Upgrading Elasticsearch](../getting-started-with-elasticsearch.md)
-* [Getting Started with Elasticsearch](../getting-started-with-elasticsearch.md)
-* [Installing Elasticsearch](../installing-elasticsearch.md)
-* [Connecting to Elasticsearch](../connecting-to-elasticsearch.md)
-* [Securing Elasticsearch](../securing-elasticsearch.md)
-* [Upgrading Liferay](../../../../installation-and-upgrades/upgrading-liferay/upgrade-basics.md)
+- [Upgrading Elasticsearch](../getting-started-with-elasticsearch.md)
+- [Getting Started with Elasticsearch](../getting-started-with-elasticsearch.md)
+- [Installing Elasticsearch](../installing-elasticsearch.md)
+- [Connecting to Elasticsearch](../connecting-to-elasticsearch.md)
+- [Securing Elasticsearch](../securing-elasticsearch.md)
+- [Upgrading Liferay](../../../../installation-and-upgrades/upgrading-liferay/upgrade-basics.md)

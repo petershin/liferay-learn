@@ -63,7 +63,7 @@ Categories can contain as many subcategories as you like.
 Follow these steps to add a subcategory to a category:
 
 1. Click the category's name in the list (continuing the example above: **Staff Introductions**).
-1. Click the _Add_ icon (![Add](./../../../images/icon-add.png)) and select _Category_.
+1. Click the _Add_ icon (![Add](../../../images/icon-add.png)) and select _Category_.
 1. Enter a name for the subcategory.
 1. Enter a description for the subcategory.
 1. Although the subcategory inherits the parent category's settings, administrators and content creators can change the values for the subcategory's _Display Style_ and _Mailing List_ options.

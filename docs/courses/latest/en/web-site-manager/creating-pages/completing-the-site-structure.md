@@ -24,7 +24,7 @@ Now that the home page is in place and the master page defines the header and fo
 
    Nothing happens. You deleted the search page, and now the search bar can't function properly.
 
-1. Go back to the pages administration page. Click *Add* (![Add](./../../images/icon-add.png)) &rarr; _Page_. Click the _Global Templates_ item in the menu and then _Search_.
+1. Go back to the pages administration page. Click *Add* (![Add](../../images/icon-add.png)) &rarr; _Page_. Click the _Global Templates_ item in the menu and then _Search_.
 
    ![There's a global page template for search pages.](./completing-the-site-structure/images/02.png)
 
@@ -46,7 +46,7 @@ Now that the home page is in place and the master page defines the header and fo
 
    Consider why this search worked. You added a search bar widget to the master page's header and a search page in the site. How did the search bar know to send you to the search page? It's all in the configuration. The friendly URL of a page named Search defaults to `/search`, and the search bar configuration uses the same value in its Destination Page setting. The search page's friendly URL must match its search bar's Destination Page setting.
 
-1. Now create the important e-commerce storefront page, where site visitors can buy Clarity's products. Go back to Pages Administration. Click *Add* (![Add](./../../images/icon-add.png)) &rarr; _Page_. Select the _Clarity MP_ page template and enter the name _Shop_.
+1. Now create the important e-commerce storefront page, where site visitors can buy Clarity's products. Go back to Pages Administration. Click *Add* (![Add](../../images/icon-add.png)) &rarr; _Page_. Select the _Clarity MP_ page template and enter the name _Shop_.
 
 1. In the content page editor, click _Publish_. The header and footer you defined for Clarity are now in place.
 

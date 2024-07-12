@@ -44,9 +44,9 @@ For [content pages](../site-building/creating-pages/using-content-pages.md) (A),
 | Edit (![Edit](../images/icon-edit.png))                            | Access the page's editor.                                                                                                                                                                                          |
 | Configure Page (![Configure Page](../images/icon-settings.png))    | Access the page's configuration.                                                                                                                                                                                   |
 | Simulation (![Simulation](../images/icon-simulation.png))          | Access preview for different screen sizes and content that users can have on a page.                                                                                                                               |
-| Content Performance (![Performance](../images/icon-analytics.png)) | Opens the [Content Performance tool](./../content-authoring-and-management/page-performance-and-accessibility/about-the-content-performance-tool.md), which helps analyze your content performance quantitatively. |
-| A/B Test (![A/B Test](../images/icon-ab-testing.png))              | Opens the [A/B Testing tool](./../site-building/optimizing-sites/ab-testing/ab-testing.md), which evaluates the effectiveness of content pages by testing a variant design against the current design.             |
-| Page Audit (![Page Audit](../images/icon-information.png))         | Opens the [Page Audit tool](./../content-authoring-and-management/page-performance-and-accessibility/about-the-page-audit-tool.md), which helps users identify performance-related issues.                         |
+| Content Performance (![Performance](../images/icon-analytics.png)) | Opens the [Content Performance tool](../content-authoring-and-management/page-performance-and-accessibility/about-the-content-performance-tool.md), which helps analyze your content performance quantitatively. |
+| A/B Test (![A/B Test](../images/icon-ab-testing.png))              | Opens the [A/B Testing tool](../site-building/optimizing-sites/ab-testing/ab-testing.md), which evaluates the effectiveness of content pages by testing a variant design against the current design.             |
+| Page Audit (![Page Audit](../images/icon-information.png))         | Opens the [Page Audit tool](../content-authoring-and-management/page-performance-and-accessibility/about-the-page-audit-tool.md), which helps users identify performance-related issues.                         |
 
 For [widget pages](../site-building/creating-pages/using-widget-pages/adding-widgets-to-a-page.md) (B), the available options are
 
@@ -56,8 +56,8 @@ For [widget pages](../site-building/creating-pages/using-widget-pages/adding-wid
 | Toggle Controls (![Toggle Controls](../images/icon-preview.png))   | Enable/Disable a widget's controls that pop up when you hover your cursor over them.                                                                                                                               |
 | Add (![Add](../images/icon-plus.png))                              | Access the page's editor.                                                                                                                                                                                          |
 | Simulation (![Simulation](../images/icon-simulation.png))          | Access preview for different screen sizes and content that users can have on a page.                                                                                                                               |
-| Content Performance (![Performance](../images/icon-analytics.png)) | Opens the [Content Performance tool](./../content-authoring-and-management/page-performance-and-accessibility/about-the-content-performance-tool.md), which helps analyze your content performance quantitatively. |
-| Page Audit (![Page Audit](../images/icon-information.png))         | Opens the [Page Audit tool](./../content-authoring-and-management/page-performance-and-accessibility/about-the-page-audit-tool.md), which helps users identify performance-related issues.                         |
+| Content Performance (![Performance](../images/icon-analytics.png)) | Opens the [Content Performance tool](../content-authoring-and-management/page-performance-and-accessibility/about-the-content-performance-tool.md), which helps analyze your content performance quantitatively. |
+| Page Audit (![Page Audit](../images/icon-information.png))         | Opens the [Page Audit tool](../content-authoring-and-management/page-performance-and-accessibility/about-the-page-audit-tool.md), which helps users identify performance-related issues.                         |
 
 !!! note
 The application bar options for content and widget pages depend on your Liferay DXP version. [Content Performance](../content-authoring-and-management/page-performance-and-accessibility/about-the-content-performance-tool.md) is available for content pages starting with Liferay DXP 7.3 and for widget pages starting with Liferay DXP 7.4. Page Audit is available starting with Liferay DXP 7.4, and the Toggle Controls option is available starting with Liferay DXP 7.3.
@@ -122,7 +122,7 @@ Here are some common administrative activities that can be done in the control p
 - [Manage users, permissions, and roles](../users-and-permissions/users/adding-and-managing-users.md)
 - [Change how users login](../installation-and-upgrades/securing-liferay/authentication-basics.md)
 - [Create new sites](../site-building/sites/adding-a-site.md)
-- [Add new custom fields to applications on the site](./../system-administration/configuring-liferay/adding-custom-fields.md)
+- [Add new custom fields to applications on the site](../system-administration/configuring-liferay/adding-custom-fields.md)
 
 ## DXP 7.1 and 7.2
 

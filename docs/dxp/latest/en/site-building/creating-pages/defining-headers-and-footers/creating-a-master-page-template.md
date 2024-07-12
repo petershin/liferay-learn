@@ -17,11 +17,11 @@ Follow these steps to create a master page templates:
 
 1. Open the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)) and navigate to *Design* &rarr; *Page Templates*.
 
-1. Under the Masters tab, click *Add* (![Add](./../../../images/icon-add.png))  to create a new Master Page Template.
+1. Under the Masters tab, click *Add* (![Add](../../../images/icon-add.png))  to create a new Master Page Template.
 
 1. Enter the *Name* of your new master page template.
 
-1. In Fragments and Widgets (![Fragments and Widgets](./../../../images/icon-add-widget.png)) on the sidebar, add fragments for the common elements that you require.
+1. In Fragments and Widgets (![Fragments and Widgets](../../../images/icon-add-widget.png)) on the sidebar, add fragments for the common elements that you require.
 
    ![Add the master page template's common elements from the footers and navigation bars sections.](./creating-a-master-page-template/images/01.png)
 

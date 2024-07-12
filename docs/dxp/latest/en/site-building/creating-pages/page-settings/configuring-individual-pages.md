@@ -15,7 +15,7 @@ To configure a specific page, open the *Site Menu* (![Site Menu](../../../images
 
 ![Click the Actions button for the page you want to customize, and select Configure](./configuring-individual-pages/images/01.png)
 
-Alternatively, you can access general page settings by clicking *Actions* (![Actions button](../../../images/icon-staging-bar-options.png)) &rarr; *Configuration* (![Configuration button](./../../../images/icon-cog.png)) at the top right of the Application Bar.
+Alternatively, you can access general page settings by clicking *Actions* (![Actions button](../../../images/icon-staging-bar-options.png)) &rarr; *Configuration* (![Configuration button](../../../images/icon-cog.png)) at the top right of the Application Bar.
 
 These settings are organized into the following tabs:
 
@@ -45,7 +45,7 @@ Child pages inherit the parent page’s visibility. Also, hidden pages are not d
 
 ### URL
 
-Use the Friendly URL field to set a new URL for a page, or click the *Restore* icon (![Friendly URL Restore icon](./../../../images/icon-restore.png)) to see and restore a previously used URL. See [Configuring Your Page's Friendly URL](./configuring-your-pages-friendly-url.md) for more information.
+Use the Friendly URL field to set a new URL for a page, or click the *Restore* icon (![Friendly URL Restore icon](../../../images/icon-restore.png)) to see and restore a previously used URL. See [Configuring Your Page's Friendly URL](./configuring-your-pages-friendly-url.md) for more information.
 
 Use *Query String* to set default parameters for a page when no other parameters are specified. Query strings offer significant advantages within web content templates. Additionally, you can control page link behavior by using the Target Type field, which has attributes like opening the link in a new tab or within a specific frame.
 
@@ -98,7 +98,7 @@ Here you can quickly and easily change some areas of your page's design system a
 ![Determine the favicon, master page template, style book and icon for your page.](./configuring-individual-pages/images/08.png)
 
 ```{note}
-Content pages also include Master and Style Book settings in the Edit sidebar menu under Page Design Options (![Page Design Options icon](./../../../images/icon-format.png)).
+Content pages also include Master and Style Book settings in the Edit sidebar menu under Page Design Options (![Page Design Options icon](../../../images/icon-format.png)).
 ```
 
 ### Customization
@@ -125,7 +125,7 @@ Access additional settings to customize a page’s content and features.
 
 **Custom Fields**: View and configure the Custom Fields you've defined for site pages. See [Custom Fields](../../../system-administration/configuring-liferay/adding-custom-fields.md) for more information.
 
-**Embedded Widgets**: Access widgets you've embedded in a page using [Web Content Templates](./../../../content-authoring-and-management/web-content/web-content-templates/embedding-widgets-in-templates.md), [Page Fragments](../../developer-guide/developing-page-fragments/developing-fragments-intro.md), or [Themes](../../../liferay-development/customizing-liferays-look-and-feel/themes.md).
+**Embedded Widgets**: Access widgets you've embedded in a page using [Web Content Templates](../../../content-authoring-and-management/web-content/web-content-templates/embedding-widgets-in-templates.md), [Page Fragments](../../developer-guide/developing-page-fragments/developing-fragments-intro.md), or [Themes](../../../liferay-development/customizing-liferays-look-and-feel/themes.md).
 
 **Mobile Device Rules**: Determine whether a page uses its page set's [rules for mobile devices](../../../site-building/optimizing-sites/building-a-responsive-site/creating-mobile-device-rules.md) or is uniquely configured. These rules determine how a page's content renders for different types of mobile devices.
 
@@ -231,6 +231,6 @@ Here you can add custom `<meta>` tags to the `<head>` of a page. These tags are 
 
 ## Related Topics
 
-* [Adding a Page to a Site](./../adding-pages/adding-a-page-to-a-site.md)
+* [Adding a Page to a Site](../adding-pages/adding-a-page-to-a-site.md)
 * [Using Content Pages](../using-content-pages.md)
 * [Configuring Page Sets](./configuring-page-sets.md)

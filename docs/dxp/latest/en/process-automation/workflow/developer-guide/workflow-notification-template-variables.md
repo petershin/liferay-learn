@@ -151,10 +151,10 @@ for Blogs Entries, then submit a new entry for publication:
 | `${unicodeLanguageUtil}`       |          | &#10004;  | [UnicodeLanguageUtil](https://resources.learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/language/UnicodeLanguageUtil.html) |
 | `${expandoRowLocalService}`    |          | &#10004;  | [ExpandoRowLocalService](https://resources.learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/expando/kernel/service/ExpandoRowLocalService.html) |
 | `${auditRouterUtil}`           |          | &#10004;  | [AuditRouterUtil](https://resources.learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/audit/AuditRouterUtil.html) |
-| `${kaleoTaskInstanceToken}`    |          | &#10004;  | [See the documentation on workflow scripting](./../developer-guide/using-the-script-engine-in-workflow.md#predefined-variables) |
+| `${kaleoTaskInstanceToken}`    |          | &#10004;  | [See the documentation on workflow scripting](../developer-guide/using-the-script-engine-in-workflow.md#predefined-variables) |
 | `${accountPermission}`         |          | &#10004;  | [AccountPermission](https://resources.learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/service/permission/AccountPermission.html) |
 | `${httpUtilUnsafe}`            |          | &#10004;  | Like `${httpUtil}`, an instance of [Http](https://resources.learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/util/Http.html), but can be used to access the local network |
-| `${workflowTaskAssignees}`     | &#10004; |          | [See the documentation on workflow scripting](./../developer-guide/using-the-script-engine-in-workflow.md#predefined-variables) |
+| `${workflowTaskAssignees}`     | &#10004; |          | [See the documentation on workflow scripting](../developer-guide/using-the-script-engine-in-workflow.md#predefined-variables) |
 | `${random}`                   |           | &#10004;  | A Java utility for generating [Random](https://docs.oracle.com/javase/8/docs/api/java/util/Random.html) numbers; is deprecated and will be removed in the future |
 | `${rolePermission}`           |           | &#10004;  | [RolePermission](https://resources.learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/service/permission/RolePermission.html) |
 | `${portletPermission}`        |           | &#10004;  | [PortletPermission](https://resources.learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/service/permission/PortletPermission.html) |
@@ -168,10 +168,10 @@ for Blogs Entries, then submit a new entry for publication:
 | `${userGroupPermission}`      |           | &#10004;  | [UserGroupPermission](https://resources.learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/service/permission/UserGroupPermission.html) |
 | `${arrayUtil}`                |           | &#10004;  | [ArrayUtil](https://resources.learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/util/ArrayUtil.html) |
 | `${userName}`                 | &#10004;  |           | The User Name of the last user to intervene in the workflow |
-| `${userId}`                   | &#10004;  |           | The User ID of the last user to intervene in the workflow. [See the Workflow Scripting article to understand the logic.](./../developer-guide/using-the-script-engine-in-workflow.md#predefined-variables) |
+| `${userId}`                   | &#10004;  |           | The User ID of the last user to intervene in the workflow. [See the Workflow Scripting article to understand the logic.](../developer-guide/using-the-script-engine-in-workflow.md#predefined-variables) |
 | `${prefsPropsUtil}`           |           | &#10004;  | [PrefsPropsUtil](https://resources.learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/util/PrefsPropsUtil.html) |
 | `${url}`                      | &#10004;  |           | a URL for certain content types that are displayed on a page (e.g., Blogs Entries, Message Boards Messages, and Wiki Pages |
-| `${kaleoInstanceToken}`       | &#10004;  |           | [See the Workflow Scripting article.](./../developer-guide/using-the-script-engine-in-workflow.md#predefined-variables) |
+| `${kaleoInstanceToken}`       | &#10004;  |           | [See the Workflow Scripting article.](../developer-guide/using-the-script-engine-in-workflow.md#predefined-variables) |
 | `${utilLocator}`              |           | &#10004;  | [UtilLocator](https://resources.learn.liferay.com/reference/latest/en/dxp/javadocs/portal-impl/com/liferay/portal/template/UtilLocator.html) |
 | `${objectUtil}`               |           | &#10004;  | Returns a `new LiferayObjectConstructor()` |
 | `${urlCodec}`                 |           | &#10004;  | [URLCodec](https://resources.learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/util/URLCodec.html) |

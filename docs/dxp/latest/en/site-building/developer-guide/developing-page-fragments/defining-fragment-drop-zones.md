@@ -17,7 +17,7 @@ Follow these steps to define a drop zone:
 
 1. Under Fragment Sets, select the set with the fragment you want to edit.
 
-1. Click the fragment's *Actions* (![Action](./../../../images/icon-actions.png)) button and select *Edit* to open the [Fragments Editor](./using-the-fragments-editor.md).
+1. Click the fragment's *Actions* (![Action](../../../images/icon-actions.png)) button and select *Edit* to open the [Fragments Editor](./using-the-fragments-editor.md).
 
 1. In the HTML code area, add the `<lfr-drop-zone></lfr-drop-zone>` label to define a drop zone within a fragment.
 

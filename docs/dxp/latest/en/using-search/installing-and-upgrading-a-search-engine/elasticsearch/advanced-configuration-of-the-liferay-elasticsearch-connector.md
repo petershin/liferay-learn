@@ -9,7 +9,7 @@ uuid: 46d35c26-a3bd-4862-bd28-a72a2caea135
 
 The [Elasticsearch connection](./connecting-to-elasticsearch.md) is configured using a [configuration file or via System Settings](./elasticsearch-connector-configuration-reference.md#configuration-files-and-system-settings-entries).
 
-The Elasticsearch connector has a lot of configuration options out of the box; most Elasticsearch settings can be configured by a similarly or identically named Liferay setting (e.g., `httpSSLEnabled`). If you need an Elasticsearch setting without a dedicated Liferay setting, add the configuration options you need using the [advanced settings](./../elasticsearch/elasticsearch-connector-configuration-reference.md). These are most often used for adding or overriding Elasticsearch settings and mappings. 
+The Elasticsearch connector has a lot of configuration options out of the box; most Elasticsearch settings can be configured by a similarly or identically named Liferay setting (e.g., `httpSSLEnabled`). If you need an Elasticsearch setting without a dedicated Liferay setting, add the configuration options you need using the [advanced settings](../elasticsearch/elasticsearch-connector-configuration-reference.md). These are most often used for adding or overriding Elasticsearch settings and mappings. 
 
 * [Adding Index Configurations](#adding-index-configurations)
 * [Adding Type Mappings](#adding-type-mappings)

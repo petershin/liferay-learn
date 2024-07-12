@@ -11,11 +11,11 @@ Because Clarity needs their own header and footer design, you'll create a master
 
 1. Open the *Site Menu* (![Product Menu](../../images/icon-product-menu.png)), then click *Design* &rarr; *Page Templates*.
 
-1. Click *Add* (![Add](./../../images/icon-add.png)) and name the page _Clarity MP_.
+1. Click *Add* (![Add](../../images/icon-add.png)) and name the page _Clarity MP_.
 
    The content page editor appears. By default, the page has only one element: a drop zone. Clarity's header and footer should appear above and below the drop zone. 
 
-1. In the Fragments and Widgets (![Fragments and Widgets](./../../images/icon-add-widget.png)) menu on the sidebar, drag _J2B6 Header Composition_ above the drop zone, then drag _J2B6 Footer Composition_ below the drop zone.
+1. In the Fragments and Widgets (![Fragments and Widgets](../../images/icon-add-widget.png)) menu on the sidebar, drag _J2B6 Header Composition_ above the drop zone, then drag _J2B6 Footer Composition_ below the drop zone.
 
    You imported these fragment compositions in the previous step, [Importing Fragments and Resources](./importing-fragments-and-resources.md).
 

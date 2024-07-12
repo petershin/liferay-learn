@@ -117,7 +117,7 @@ There's a corresponding field with the suffix `_sortable`, and of the correct ty
 index.sortable.text.fields=firstName,jobTitle,lastName,name,screenName,title
 ```
 
-All the text fields listed here have a `fieldName_sortable` counterpart created automatically in the index. To add more, copy this property into a [`portal-ext.properties`](./../../../installation-and-upgrades/reference/portal-properties.md) file into your Liferay Home folder, add any new field names you need to sort by, and restart the server.
+All the text fields listed here have a `fieldName_sortable` counterpart created automatically in the index. To add more, copy this property into a [`portal-ext.properties`](../../../installation-and-upgrades/reference/portal-properties.md) file into your Liferay Home folder, add any new field names you need to sort by, and restart the server.
 
 ## Adding New Sort Options
 

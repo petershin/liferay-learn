@@ -17,7 +17,7 @@ To manage a master page template, follow these steps:
 
 1. Select the *Masters* tab.
 
-1. Click *Actions* (![Actions](./../../../images/icon-actions.png)) for a master page template and select one of the options.
+1. Click *Actions* (![Actions](../../../images/icon-actions.png)) for a master page template and select one of the options.
 
    ![Manage the master page template from the masters tab of the page templates application and opening the actions menu.](./managing-master-page-templates/images/01.png)
 
@@ -63,7 +63,7 @@ You can change a page's master page template in the [content page editor](../usi
 
 1. Select the *Masters* tab.
 
-1. Click *Actions* (![Actions](./../../../images/icon-actions.png)) for the master page template you want to configure &rarr; *Edit*.
+1. Click *Actions* (![Actions](../../../images/icon-actions.png)) for the master page template you want to configure &rarr; *Edit*.
 
 1. Click the *Page Design Options* menu (![Page Design Options menu](../../../images/icon-format.png)) &rarr; *More Page Design Options*(![More Page Design Options](../../../images/icon-cog3.png))
 

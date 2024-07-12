@@ -59,9 +59,9 @@ Then, follow these steps:
 
 1. Go to the Forms application in _Site Menu_ &rarr; _Content & Data_ &rarr; _Forms_.
 
-1. Click the *Add* button (![Add](./../../../images/icon-add.png)) to open the Form Builder.
+1. Click the *Add* button (![Add](../../../images/icon-add.png)) to open the Form Builder.
 
-1. In the Form Builder view, click the *Options* button (![Options](./../../../images/icon-options.png)) and open the *Settings* window.
+1. In the Form Builder view, click the *Options* button (![Options](../../../images/icon-options.png)) and open the *Settings* window.
 
 1. Under *Select a Storage Type*, choose the *R2F1 Dynamic Data Mapping Storage Adapter* type and click _Done_.
 
@@ -69,7 +69,7 @@ Then, follow these steps:
 
 1. To verify the form data were persisted, go to the Form's Records:
 
-   From _Site Menu_ &rarr; _Content_ &rarr; _Forms_, click the Form's *Actions* button (![Actions](./../../../images/icon-actions.png)), then _View Entries_.
+   From _Site Menu_ &rarr; _Content_ &rarr; _Forms_, click the Form's *Actions* button (![Actions](../../../images/icon-actions.png)), then _View Entries_.
 
    ![Verify that the form entries were added.](./writing-a-form-storage-adapter/images/02.png)
 
@@ -304,9 +304,9 @@ Now verify that it's working:
 
 1. Go to the Forms application in _Site Menu_ &rarr; _Content_ &rarr; _Forms_.
 
-1. Click the *Add* button ![Add](./../../../images/icon-add.png) to open the Form Builder.
+1. Click the *Add* button ![Add](../../../images/icon-add.png) to open the Form Builder.
 
-1. In the Form Builder view, click the *Options* button (![Options](./../../../images/icon-options.png)) and open the *Settings* window.
+1. In the Form Builder view, click the *Options* button (![Options](../../../images/icon-options.png)) and open the *Settings* window.
 
 1. From the select list field called *Select a Storage Type*, choose the *R2F1 Dynamic Data Mapping Storage Adapter* type and click _Done_.
 

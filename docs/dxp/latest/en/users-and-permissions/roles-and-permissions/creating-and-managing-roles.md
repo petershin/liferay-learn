@@ -69,7 +69,7 @@ If needed, you can export and import roles. However, Liferay only exports compan
 
 To begin an export or import process, 
 
-1. Open the Roles application, click the *Actions* button ![Actions Button](./../../images/icon-actions.png) in the Application Bar, and select *Export/Import*.
+1. Open the Roles application, click the *Actions* button ![Actions Button](../../images/icon-actions.png) in the Application Bar, and select *Export/Import*.
 
    ![Open the Roles application, click the Actions button in the Application Bar, and select Export/Import.](./creating-and-managing-roles/images/04.png)
 

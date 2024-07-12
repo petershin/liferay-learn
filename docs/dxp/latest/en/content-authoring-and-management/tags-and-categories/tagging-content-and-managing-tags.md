@@ -38,7 +38,7 @@ You can manage tags under the Categorization panel in the Site Menu. From here, 
 
 1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)) and navigate to *Categorization* &rarr; *Tags*.
 
-1. To create a new tag, click *Add Tag* (![Add Tag](./../../images/icon-add.png)).
+1. To create a new tag, click *Add Tag* (![Add Tag](../../images/icon-add.png)).
 
 1. Type your new tag and click *Save*.
 
@@ -49,7 +49,7 @@ You can manage tags under the Categorization panel in the Site Menu. From here, 
 
     Also note that the search and autocomplete functions are case-insensitive, displaying all related entries. Conversely, filtering is case-sensitive, showing results only for the specific case selected.
 
-1. To edit an existing tag, click *Actions* (![Actions](./../../images/icon-actions.png)) next to the tag's name and select *Edit*.
+1. To edit an existing tag, click *Actions* (![Actions](../../images/icon-actions.png)) next to the tag's name and select *Edit*.
 
 1. If you want to merge one or more tags,
 

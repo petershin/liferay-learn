@@ -28,7 +28,7 @@ In the General tab, use the _Friendly URL_ field to enter a new URL for the page
 
 ![Use the Friendly URL field to set a page's custom URL.](./configuring-your-pages-friendly-url/images/02.png)
 
-The value entered in this field is appended to its [site URL](./../../site-settings/managing-site-urls/configuring-your-sites-friendly-url.md) and must be unique.
+The value entered in this field is appended to its [site URL](../../site-settings/managing-site-urls/configuring-your-sites-friendly-url.md) and must be unique.
 
 !!! note
 When setting a custom URL, you don't have to maintain the site's page hierarchy. This means a child page does not need to include its Parent as part of its friendly URL.
@@ -51,7 +51,7 @@ From here, you can hover over an old URL to reveal the following options:
 
 ## Related Topics
 
-- [Configuring Your Site's Friendly URL](./../../site-settings/managing-site-urls/configuring-your-sites-friendly-url.md)
+- [Configuring Your Site's Friendly URL](../../site-settings/managing-site-urls/configuring-your-sites-friendly-url.md)
 - [Configuring Individual Pages](./configuring-individual-pages.md)
 
 <!--Include Reference to SEO article when finished.-->

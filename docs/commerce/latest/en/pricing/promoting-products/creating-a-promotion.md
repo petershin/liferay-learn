@@ -60,7 +60,7 @@ You must now configure the new price modifier. Click the entry from the list and
 
 ![Configure the price modifier and activate it.](./creating-a-promotion/images/05.png)
 
-This activates the promotion, and the prices of all products in the catalog are reduced by 20% on the scheduled date. If there are any active discounts available, they are calculated on the reduced price. If you are targeting a promotion at a specific product, use the Entries tab to add an entry and configure its price. You can also configure [Tiered Pricing or Bulk Pricing](./../using-price-tiers.md#bulk-pricing-vs-tier-pricing) for it here. See [Adding Entries](./using-the-promotion-base-list.md#adding-entries) for more information.
+This activates the promotion, and the prices of all products in the catalog are reduced by 20% on the scheduled date. If there are any active discounts available, they are calculated on the reduced price. If you are targeting a promotion at a specific product, use the Entries tab to add an entry and configure its price. You can also configure [Tiered Pricing or Bulk Pricing](../using-price-tiers.md#bulk-pricing-vs-tier-pricing) for it here. See [Adding Entries](./using-the-promotion-base-list.md#adding-entries) for more information.
 
 ![The prices of all products in the catalog are reduced by 20% on the scheduled date](./creating-a-promotion/images/06.png)
 

@@ -56,7 +56,7 @@ Set up txtai to access its APIs. To run txtai in a docker container, see the [tx
    ```
 
    ```{important}
-   [The model you chose](./../semantic-search.md#choosing-a-model) is entered in the embeddings path.
+   [The model you chose](../semantic-search.md#choosing-a-model) is entered in the embeddings path.
    ```
 
 1. From the txtai folder, run

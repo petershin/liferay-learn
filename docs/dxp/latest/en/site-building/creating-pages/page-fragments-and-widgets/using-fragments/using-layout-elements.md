@@ -22,7 +22,7 @@ When you create a new page or template that supports fragments, a default drop z
 * Add a URL or page redirect to a fragment composition
 * Leverage [style books](../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md) to standardize your site appearance
 
-Once you've added a container, you can use the grid fragment to customize content layout for different viewports. See [Building Responsive Layouts with the Grid Fragment](./../../../optimizing-sites/building-a-responsive-site/building-responsive-layouts-with-the-grid-fragment.md) to learn more.
+Once you've added a container, you can use the grid fragment to customize content layout for different viewports. See [Building Responsive Layouts with the Grid Fragment](../../../optimizing-sites/building-a-responsive-site/building-responsive-layouts-with-the-grid-fragment.md) to learn more.
 
 ```{tip}
 When dragging and dropping an element into a container or grid, Liferay highlights the drop zone to indicate where you're placing it. Once added, you can drag and drop elements in the Browser side panel ( ![Browser](../../../../images/icon-hierarchy.png) ) to rearrange them.

@@ -27,7 +27,7 @@ The workflow designer supports all [workflow node](./workflow-nodes.md) types:
 * [State nodes](./workflow-nodes.md#state-nodes)
 * [Task nodes](./creating-workflow-tasks.md)
 
-In addition to the functionality provided by the drag and drop interface, you have the full power of Groovy (a Java-based scripting language) to perform [programmatic actions](./../../developer-guide/using-the-script-engine-in-workflow.md) on assets being moved through your workflows.
+In addition to the functionality provided by the drag and drop interface, you have the full power of Groovy (a Java-based scripting language) to perform [programmatic actions](../../developer-guide/using-the-script-engine-in-workflow.md) on assets being moved through your workflows.
 
 !!! important
     As of DXP 2024.Q3, scripting is disabled by default. You can enable it in System Settings &rarr; Script Management (under the Security category).

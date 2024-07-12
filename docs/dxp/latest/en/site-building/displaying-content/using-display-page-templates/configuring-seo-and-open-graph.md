@@ -23,7 +23,7 @@ Follow these steps to configure SEO and Open Graph settings for a display page t
 
    ![Go to the display page templates tab.](./configuring-seo-and-open-graph/images/01.png)
 
-1. Click *Actions* (![Actions icon](./../../../images/icon-actions.png)) for the desired template and select *Edit*. When editing the template, click *Options* (![Options icon](./../../../images/icon-options.png)) on the application bar and click *Configure* (![Configure icon](../../../images/icon-cog.png)).
+1. Click *Actions* (![Actions icon](../../../images/icon-actions.png)) for the desired template and select *Edit*. When editing the template, click *Options* (![Options icon](../../../images/icon-options.png)) on the application bar and click *Configure* (![Configure icon](../../../images/icon-cog.png)).
 
 1. Go to the [SEO](#seo-settings-reference) or [Open Graph](#open-graph-settings-reference) tab and enter the desired configuration.
 
@@ -156,4 +156,4 @@ By default, this field is unmapped in display page templates. This means the tem
 ## Related Topics
 
 - [Configuring Your Page's Friendly URL](../../creating-pages/page-settings/configuring-your-pages-friendly-url.md)
-- [Configuring Open Graph](./../../site-settings/configuring-open-graph.md)
+- [Configuring Open Graph](../../site-settings/configuring-open-graph.md)

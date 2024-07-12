@@ -370,6 +370,6 @@ xpack.security.transport.ssl.cipher_suites : TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA3
 ## Related Topics
 
 * [Monitoring Elasticsearch](../../liferay-enterprise-search/monitoring-elasticsearch.md)
-* [Cross-Cluster Replication](./../../liferay-enterprise-search/cross-cluster-replication.md)
+* [Cross-Cluster Replication](../../liferay-enterprise-search/cross-cluster-replication.md)
 * [Search Tuning](../../search-administration-and-tuning.md)
 * [Liferay Installation and Upgrades](../../installing-and-upgrading-a-search-engine.md)

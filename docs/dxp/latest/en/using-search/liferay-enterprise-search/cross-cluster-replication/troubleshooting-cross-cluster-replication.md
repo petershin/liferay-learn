@@ -64,7 +64,7 @@ localhost:9080,ccr
 localhost:9180,ccr
 ```
 
-Even if you're not binding the DXP nodes to `localhost`, the internal clustering code continues to identify each node using it, so `localhost` should be the hostname in this property. If you want to use a hostname other than `localhost` to identify DXP nodes internally (including in the CCR configuration) you must set the following [portal properties](./../../../installation-and-upgrades/reference/portal-properties.md) on each DXP node:
+Even if you're not binding the DXP nodes to `localhost`, the internal clustering code continues to identify each node using it, so `localhost` should be the hostname in this property. If you want to use a hostname other than `localhost` to identify DXP nodes internally (including in the CCR configuration) you must set the following [portal properties](../../../installation-and-upgrades/reference/portal-properties.md) on each DXP node:
 
 ```properties
 portal.instance.protocol=http

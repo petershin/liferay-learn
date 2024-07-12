@@ -181,5 +181,5 @@ The picture below shows the display page settings for a web content article with
 
 - [Publishing Content with Display Pages](./publishing-content-with-display-pages.md)
 - [Configuring SEO and Open Graph](./configuring-seo-and-open-graph.md)
-- [Using Content Pages](./../../creating-pages/using-content-pages.md)
+- [Using Content Pages](../../creating-pages/using-content-pages.md)
 - [Adding Elements to Content Pages](../../creating-pages/using-content-pages/adding-elements-to-content-pages.md)

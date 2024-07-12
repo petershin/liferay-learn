@@ -20,7 +20,7 @@ To skip straight to creating Roles and assigning Users, see
 - [Assigning Users to Roles](./assigning-users-to-roles.md)
 
 !!! note
-    [Site Teams](./../../site-building/sites/site-membership/creating-teams-for-sites.md) have a dedicated permissions management User Interface.
+    [Site Teams](../../site-building/sites/site-membership/creating-teams-for-sites.md) have a dedicated permissions management User Interface.
 
 ## Roles and Scope
 
@@ -50,7 +50,7 @@ Roles have scope, so they apply at different levels.
 
 <!-- ripped out row from above table as per LRODCS-8188: | A single Account | Account   | Control Panel &rarr; Accounts &rarr; Accounts (Select Account) &rarr; Roles | Individual Account Members -->
 
-Individual [Users](./../users.md) can be manually assigned to Roles. This method is less efficient than using collections of Users. Users can also be [automatically](../../system-administration/configuring-liferay/virtual-instances.md) assigned to Roles of all scopes through a Virtual Instance Setting called Default User Associations.
+Individual [Users](../users.md) can be manually assigned to Roles. This method is less efficient than using collections of Users. Users can also be [automatically](../../system-administration/configuring-liferay/virtual-instances.md) assigned to Roles of all scopes through a Virtual Instance Setting called Default User Associations.
 
 ### Regular Roles
 
@@ -58,10 +58,10 @@ Instance scoped Roles are called Regular Roles. These Roles grant permissions gl
 
 Several User collections can be assigned to Regular Roles:
 
-- [Organizations](./../organizations/understanding-organizations.md) hold Users of a shared hierarchical level.
-- [User Groups](./../user-groups/creating-and-managing-user-groups.md) hold Users that only share the need to perform the same function.
-- [Sites](./../../site-building/sites/site-membership/adding-members-to-sites.md) hold Users (as Site Members) that might need to perform a certain action.
-- [Segments](./../../site-building/personalizing-site-experience/segmentation/creating-and-managing-user-segments.md) hold Users of a Site that match certain conditions.
+- [Organizations](../organizations/understanding-organizations.md) hold Users of a shared hierarchical level.
+- [User Groups](../user-groups/creating-and-managing-user-groups.md) hold Users that only share the need to perform the same function.
+- [Sites](../../site-building/sites/site-membership/adding-members-to-sites.md) hold Users (as Site Members) that might need to perform a certain action.
+- [Segments](../../site-building/personalizing-site-experience/segmentation/creating-and-managing-user-segments.md) hold Users of a Site that match certain conditions.
 
 ### Organization Roles
 
@@ -77,11 +77,11 @@ Permissions are created by developers of applications. They define actions Users
 
 ### Application Scoped Permissions
 
-Permissions can be granted on each widget instance that's placed on a page in Liferay DXP, and each administrative application in the Site Menu &rarr; Content and Data section. See [Widget Permissions](./../../site-building/creating-pages/page-fragments-and-widgets/using-widgets/configuring-widgets/setting-widget-permissions.md) for details.
+Permissions can be granted on each widget instance that's placed on a page in Liferay DXP, and each administrative application in the Site Menu &rarr; Content and Data section. See [Widget Permissions](../../site-building/creating-pages/page-fragments-and-widgets/using-widgets/configuring-widgets/setting-widget-permissions.md) for details.
 
 ### Asset Scoped Permissions
 
-Asset-level permissions (for instance, permission to edit an individual blog post, or view a folder in the Documents and Media library) are managed from the individual asset, not the Control Panel. See [Widget Permissions](./../../site-building/creating-pages/page-fragments-and-widgets/using-widgets/configuring-widgets/setting-widget-permissions.md) for details.
+Asset-level permissions (for instance, permission to edit an individual blog post, or view a folder in the Documents and Media library) are managed from the individual asset, not the Control Panel. See [Widget Permissions](../../site-building/creating-pages/page-fragments-and-widgets/using-widgets/configuring-widgets/setting-widget-permissions.md) for details.
 
 ## Related Topics
 

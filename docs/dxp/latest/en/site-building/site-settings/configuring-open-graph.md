@@ -67,4 +67,4 @@ To create localized alt descriptions for your Open Graph image, click on the *La
 
 * [Search Engine Optimization](../optimizing-sites.md)
 * [Site Settings UI Reference](./site-settings-ui-reference.md)
-* [Configuring Individual Pages](./../creating-pages/page-settings/configuring-individual-pages.md)
+* [Configuring Individual Pages](../creating-pages/page-settings/configuring-individual-pages.md)

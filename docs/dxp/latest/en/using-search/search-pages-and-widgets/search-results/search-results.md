@@ -40,7 +40,7 @@ The search engine processes and orders results by *relevance*. Relevance is a sc
 Results relevance is configurable:
 
 * [Search Tuning is a brute-force way to customize rankings](../../search-administration-and-tuning.md).
-* [Liferay Enterprise Search's Learning to Rank feature is a machine learning model you can train to return more relevant results.](./../../liferay-enterprise-search.md)
+* [Liferay Enterprise Search's Learning to Rank feature is a machine learning model you can train to return more relevant results.](../../liferay-enterprise-search.md)
 * [The Search Insights widget displays the relevance scoring to reveal why a result appears in a certain position.](../../search-administration-and-tuning.md)
 * [Sort the results by an indexed field to override relevance scoring](./sorting-search-results.md).
 
@@ -76,7 +76,7 @@ Post-filtering is configurable at *Control Panel* &rarr; *Configuration* &rarr; 
 
 ## Search and Staging
 
-With [staging](./../../../site-building/site-settings.md), content is placed first in a preview and testing environment before being published to the live Site. Indexed content is marked so the search API knows if an item is live or not. In the live version of the Site, only live indexed content is searchable.
+With [staging](../../../site-building/site-settings.md), content is placed first in a preview and testing environment before being published to the live Site. Indexed content is marked so the search API knows if an item is live or not. In the live version of the Site, only live indexed content is searchable.
 
 In the staged version of the Site, all content---live or staged---is searchable.
 

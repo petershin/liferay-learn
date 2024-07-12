@@ -44,14 +44,14 @@ Some fields have an appended language flag button. These fields can be translate
 
    ![Click the language flag next to the localizable field to enter a new value.](./site-localization/images/05.png)
 
-1. Enter the new value in the selected language. The default value is displayed beneath the field for reference.
+1. Enter the new value in the selected language. The default value appears beneath the field for reference.
 
    ![Enter the new value for the selected language.](./site-localization/images/06.png)
 
-Liferay automatically saves the translation for each language and displays the translated value when that language is selected for the instance. If a translation for the field is not provided, the default instance language's value for that field is displayed.
+Liferay automatically saves the translation for each language and displays the translated value when that language is selected for the instance. If a translation for the field is not provided, the default instance language's value for that field appears.
 
 ## Related Topics
 
 - [Localization](../../system-administration/configuring-liferay/virtual-instances/localization.md)
 - [Changing Translations with Language Override](../../system-administration/configuring-liferay/changing-translations-with-language-override.md)
-- [Adding a Language](../../liferay-internals/extending-liferay/customizing-localization/adding-a-language.md)
+- [Adding a Language](../../liferay-development/liferay-internals/extending-liferay/customizing-localization/adding-a-language.md)

@@ -14,7 +14,7 @@ taxonomy-category-names:
 !!! note
     Import/Export and filtering functionality in Liferay DXP 7.4 U17/Liferay Portal 7.4 GA17
 
-Liferay's Language Override tool can override existing translations or add new language keys and translations. Note that these overrides take place at the Instance level of [Configuration Scope](./understanding-configuration-scope.md). For previous Liferay versions, see [Overriding Global Language Translations with Language Properties](../../liferay-internals/extending-liferay/customizing-localization/overriding-global-language-translations-with-language-properties.md).
+Liferay's Language Override tool can override existing translations or add new language keys and translations. Note that these overrides take place at the Instance level of [Configuration Scope](./understanding-configuration-scope.md). For previous Liferay versions, see [Overriding Global Language Translations with Language Properties](../../liferay-development/liferay-internals/extending-liferay/customizing-localization/overriding-global-language-translations-with-language-properties.md).
 
 ## Overriding a Translation
 
@@ -86,6 +86,6 @@ Language overrides can be imported or exported easily with language properties f
 
 ## Related Topics
 
-- [Overriding Global Language Translations with Language Properties](../../liferay-internals/extending-liferay/customizing-localization/overriding-global-language-translations-with-language-properties.md)
-- [Adding a Language](../../liferay-internals/extending-liferay/customizing-localization/adding-a-language.md)
-- [Automatically Generating Translations](../../liferay-internals/extending-liferay/customizing-localization/automatically-generating-translations.md)
+- [Overriding Global Language Translations with Language Properties](../../liferay-development/liferay-internals/extending-liferay/customizing-localization/overriding-global-language-translations-with-language-properties.md)
+- [Adding a Language](../../liferay-development/liferay-internals/extending-liferay/customizing-localization/adding-a-language.md)
+- [Generating Translations Automatically](../../liferay-development/liferay-internals/extending-liferay/customizing-localization/generating-translations-automatically.md)

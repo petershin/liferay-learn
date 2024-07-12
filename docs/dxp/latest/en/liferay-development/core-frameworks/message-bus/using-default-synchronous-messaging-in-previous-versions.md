@@ -8,15 +8,13 @@ taxonomy-category-names:
 ---
 # Using Default Synchronous Messaging in Previous Versions
 
-```{important}
-Synchronous messaging was removed and is no longer supported for Liferay DXP 7.4 U49/Liferay Portal 7.4 GA49 and above.
-```
+!!! important
+    Synchronous messaging was removed and is no longer supported for Liferay DXP 7.4 U49/Liferay Portal 7.4 GA49 and above.
 
 In default synchronous messaging, the sender blocks while a Message Bus thread dispatches the message to registered message listeners. The sender unblocks when either a response message is received or the sender thread times out.
 
-```{note}
-The sender unblocks on the *first* response message received.
-```
+!!! note
+    The sender unblocks on the *first* response message received.
 
 You'll send a default synchronous message using an example project. Then you'll modify the example to make the message time out.
 
@@ -32,59 +30,58 @@ Start a new Liferay instance by running
 docker run -it -m 8g -p 8080:8080 liferay/portal:7.4.3.48-ga48
 ```
 
-Sign in to Liferay at <http://localhost:8080>. Use the email address _test@liferay.com_ and the password _test_. When prompted, change the password to _learn_.
+Sign in to Liferay at <http://localhost:8080>. Use the email address *test@liferay.com* and the password *test*. When prompted, change the password to *learn*.
 
 Then, follow these steps:
 
 1. Download and unzip the example.
 
-    ```bash
-    curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/message-bus/liferay-m4q7.zip -O
-    ```
+   ```bash
+   curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/message-bus/liferay-m4q7.zip -O
+   ```
 
-    ```bash
-    unzip liferay-m4q7.zip
-    ```
+   ```bash
+   unzip liferay-m4q7.zip
+   ```
 
 1. Build and deploy the example project modules.
 
-    ```bash
-    cd liferay-m4q7
-    ```
+   ```bash
+   cd liferay-m4q7
+   ```
 
-    ```bash
-    ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
-    ```
+   ```bash
+   ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
+   ```
 
-    ```{note}
-    This command is the same as copying the module JARs to `/opt/liferay/osgi/modules` on the Docker container.
-    ```
+   !!! note
+       This command is the same as copying the module JARs to `/opt/liferay/osgi/modules` on the Docker container.
 
 1. The Docker container console shows module startup.
 
-    ```bash
-    STARTED com.acme.m4q7.able.impl_1.0.0
-    STARTED com.acme.m4q7.baker.impl_1.0.0
-    STARTED com.acme.m4q7.charlie.impl_1.0.0
-    ```
+   ```bash
+   STARTED com.acme.m4q7.able.impl_1.0.0
+   STARTED com.acme.m4q7.baker.impl_1.0.0
+   STARTED com.acme.m4q7.charlie.impl_1.0.0
+   ```
 
 1. Visit the Liferay instance with your browser at `http://localhost:8080` and sign in using your credentials.
 
-1. Open the [Gogo shell](../../../liferay-internals/fundamentals/using-the-gogo-shell.md).
+1. Open the [Gogo shell](../../liferay-internals/fundamentals/using-the-gogo-shell.md).
 
 1. In the Gogo shell command field, enter `m4q7:sendMessage` followed by a message. For example,
 
-    ```groovy
-    m4q7:sendMessage foo
-    ```
+   ```groovy
+   m4q7:sendMessage foo
+   ```
 
 1. Confirm the output looks like this.
 
-    ```
-    INFO  [acme/m4q7_able-2][M4Q7CharlieMessageListener:23] Received message payload foo
-    INFO  [acme/m4q7_baker-2][M4Q7BakerMessageListener:21] Received message payload M4Q7CharlieMessageListener
-    INFO  [pipe-m4q7:sendMessage foo][M4Q7BakerOSGiCommands:28] Response: M4Q7CharlieMessageListener
-    ```
+   ```
+   INFO  [acme/m4q7_able-2][M4Q7CharlieMessageListener:23] Received message payload foo
+   INFO  [acme/m4q7_baker-2][M4Q7BakerMessageListener:21] Received message payload M4Q7CharlieMessageListener
+   INFO  [pipe-m4q7:sendMessage foo][M4Q7BakerOSGiCommands:28] Response: M4Q7CharlieMessageListener
+   ```
 
 At the `acme/m4q7_able` destination, `M4Q7CharlieMessageListener` received the Gogo shell message. At the `acme/m4q7_baker` destination, `M4Q7BakerMessageListener` received the response message from `M4Q7CharlieMessageListener`. Lastly, `M4Q7BakerOSGiCommands`'s `sendMessage` method logged the response object returned from the message sender.
 
@@ -96,9 +93,9 @@ The three example module classes manage destinations, listen for messages, and s
 
 **`m4q7-baker-impl` module:**
 
-* `M4Q7BakerOSGiCommands` sends a message to the `acme/m4q7_able` destination and logs the response.
-* `M4Q7BakerMessagingConfigurator` creates a message destination named `acme/m4q7_baker` and registers it with the Message Bus.
-* `M4Q7BakerMessageListener` listens for messages sent to the `acme/m4q7_baker` destination and logs the message payload.
+- `M4Q7BakerOSGiCommands` sends a message to the `acme/m4q7_able` destination and logs the response.
+- `M4Q7BakerMessagingConfigurator` creates a message destination named `acme/m4q7_baker` and registers it with the Message Bus.
+- `M4Q7BakerMessageListener` listens for messages sent to the `acme/m4q7_baker` destination and logs the message payload.
 
 **`m4q7-charlie-impl` module:** `M4Q7CharlieMessageListener` Listens for messages sent to the `acme/m4q7_able` destination, logs the message payload, and sends a response message to the original message's response destination. 
 
@@ -135,11 +132,10 @@ Both configurators are [`Component`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0
 
 The `_activate(BundleContext)` method uses the [`DestinationFactory`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationFactory.java) and a [`DestinationConfiguration`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationConfiguration.java) to create a *serial* destination. Lastly, the `_activate(BundleContext)` method registers the [`Destination`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/Destination.java) in an OSGi service using the `BundleContext`.
 
-```{warning}
-Only use serial or parallel destinations with default synchronous messaging. You can create them by calling `DestinationConfiguration`'s `createSerialDestinationConfiguration(String)` and `createParallelDestinationConfiguration(String)` methods.
+!!! warning
+    Only use serial or parallel destinations with default synchronous messaging. You can create them by calling `DestinationConfiguration`'s `createSerialDestinationConfiguration(String)` and `createParallelDestinationConfiguration(String)` methods.
 
-Don't use synchronous destinations with default synchronous messaging because they nullify message sender timeouts.
-```
+    Don't use synchronous destinations with default synchronous messaging because they nullify message sender timeouts.
 
 When the configurators deactivate, their `_deactivate()` methods unregister the destination services.
 
@@ -156,9 +152,8 @@ The `m4q7-charlie-impl` module's `M4Q7CharlieMessageListener` class listens for 
 
 When `M4Q7CharlieMessageListener` receives a message, its `receive(Message)` method logs the message payload and sends a response message to the original message's response destination. The method sets the response message payload to the listener class name and sets the response message ID to the original message's response ID.
 
-```{important}
-In default synchronous messaging, response messages must use the original message's response ID *and* must be sent to the response destination.
-```
+!!! important
+    In default synchronous messaging, response messages must use the original message's response ID *and* must be sent to the response destination.
 
 The `m4q7-baker-impl` module's `M4Q7BakerMessageListener` class listens for messages sent to `acme/m4q7_baker`, which is the response destination for `M4Q7BakerOSGiCommands`'s messages. 
 
@@ -182,9 +177,8 @@ The `m4q7-baker-impl` module's `M4Q7BakerOSGiCommands` class provides an OSGi Co
 
 `M4Q7BakerOSGiCommands` is a service `Component` of its own class type. It uses an `@Reference` annotation to inject a `SynchronousMessageSender` that's set to *default* mode (specified by the annotation's `target = "(mode=DEFAULT)"` attribute). 
 
-```{note}
-In *default* mode, the `SynchronousMessageSender`'s `send` method blocks the calling class until a response message is received or until the sender times out.
-```
+!!! note
+    In *default* mode, the `SynchronousMessageSender`'s `send` method blocks the calling class until a response message is received or until the sender times out.
 
 `M4Q7BakerOSGiCommands`'s `@Component` properties define a Gogo shell command function called `sendMessage` in the `m4q7` scope. The command takes an input `String` and maps to `M4Q7BakerOSGiCommands`'s `sendMessage(String)` method.
 
@@ -192,9 +186,8 @@ The `sendMessage(String)` method creates a [`Message`](https://github.com/lifera
 
 The `sendMessage(String)` method sends the message by calling `SynchronousMessageSender`'s `send(String, Message, long)` method, passing in the `"acme/m4q7_able"` destination name, the message instance, and a `10000` millisecond timeout. In default mode, the `SynchronousMessageSender` uses a Message Bus thread to deliver the message to message listeners. Execution blocks in the `M4Q7BakerOSGiCommands` class until a message that has the original message's response ID is received at the `"acme/m4q7_baker"` response destination. When the response is received, execution continues in the `M4Q7BakerOSGiCommands` `sendMessage(String)` method, where it logs the message response. If the timeout expires before a matching response message is received, `SynchronousMessageSender`'s `send(String, Message, long)` method throws a `MessageBusException`.
 
-```{important}
-In default synchronous messaging, response messages must use the original message's response ID *and* must be sent to the response destination.
-```
+!!! important
+    In default synchronous messaging, response messages must use the original message's response ID *and* must be sent to the response destination.
 
 Now that you've seen a message listener reply with a response message, you can test the response timeout.
 
@@ -204,47 +197,47 @@ Here's how to turn off the message response logic to force the timeout.
 
 1. In `M4Q7CharlieMessageListener`'s `receive(Message)` method, comment out the `_messageBus.sendMessage(...)` call.
 
-    ```java
-    @Override
-	public void receive(Message message) {
-		if (_log.isInfoEnabled()) {
-			Object payload = message.getPayload();
+   ```java
+   @Override
+   public void receive(Message message) {
+       if (_log.isInfoEnabled()) {
+           Object payload = message.getPayload();
 
-			_log.info("Received message payload " + payload.toString());
-		}
+           _log.info("Received message payload " + payload.toString());
+       }
 
-		// _messageBus.sendMessage(
-		// 	message.getResponseDestinationName(),
-		// 	new Message() {
-		// 		{
-		// 			setPayload("M4Q7CharlieMessageListener");
-		// 			setResponseId(message.getResponseId());
-		// 		}
-		// 	});
-	}
-    ```
+       // _messageBus.sendMessage(
+       //     message.getResponseDestinationName(),
+       //     new Message() {
+       //         {
+       //             setPayload("M4Q7CharlieMessageListener");
+       //             setResponseId(message.getResponseId());
+       //         }
+       //     });
+   }
+   ```
 
 1. Redeploy the example project.
 
-    ```bash
-    ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
-    ```
+   ```bash
+   ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
+   ```
 
 1. In the Gogo shell command field, enter `m4q7:sendMessage` followed by a message. For example,
 
-    ```groovy
-    m4q7:sendMessage foo
-    ```
+   ```groovy
+   m4q7:sendMessage foo
+   ```
 
 1. Confirm the Gogo shell page looks like this:
 
-    ![Error: No reply received for message.](./using-default-synchronous-messaging/images/01.png)
+   ![Error: No reply received for message.](./using-default-synchronous-messaging/images/01.png)
 
 1. Confirm the message in the Docker console looks like this.
 
-    ```bash
-    INFO  [acme/m4q7_able-2][M4Q7CharlieMessageListener:23] Received message payload foo
-    ```
+   ```bash
+   INFO  [acme/m4q7_able-2][M4Q7CharlieMessageListener:23] Received message payload foo
+   ```
 
 `M4Q7CharlieMessageListener` received the message but never replied to it. The `SynchronousMessageSender` threw a `MessageBusException` that was printed in the Gogo shell page.
 
@@ -258,7 +251,7 @@ If you want to continue processing immediately after sending a message, see [Usi
 
 ## Related Topics
 
-* [Message Bus](../message-bus.md)
-* [Listening for Messages](./listening-for-messages.md)
-* [Using Asynchronous Messaging](./using-asynchronous-messaging.md)
-* [Listening for Registration Events](./listening-for-registration-events.md)
+- [Message Bus](../message-bus.md)
+- [Listening for Messages](./listening-for-messages.md)
+- [Using Asynchronous Messaging](./using-asynchronous-messaging.md)
+- [Listening for Registration Events](./listening-for-registration-events.md)

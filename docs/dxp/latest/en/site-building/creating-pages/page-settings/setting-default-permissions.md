@@ -5,7 +5,7 @@ taxonomy-category-names:
 - Liferay Self-Hosted
 - Liferay PaaS
 - Liferay SaaS
-uuid: 8b9099c6-0666-4218-acc1-2a72b40ae63a
+uuid: 70d28ba5-ecfe-492f-aeaf-e50fc8c69645
 ---
 
 # Setting Default Permissions

@@ -38,13 +38,12 @@ To get started with the Sort widget,
 
 ## Configuring the Sort Widget
 
-```{note}
-The Sort widget's configuration screen is updated in Liferay 7.4 DXP Update 29+/CE GA 29+. For a period of time you can choose to use the older configuration screen by clicking the link _Switch to Classic View_.
+!!! note
+    The Sort widget's configuration screen is updated in Liferay 7.4 DXP Update 29+/CE GA 29+. For a period of time you can choose to use the older configuration screen by clicking the link *Switch to Classic View*.
 
-![Toggle between the classic Sort configuration and the newer, more intuitive configuration screen.](./sorting-search-results/images/03.png)
+    ![Toggle between the classic Sort configuration and the newer, more intuitive configuration screen.](./sorting-search-results/images/03.png)
 
-The option to use the classic configuration view will be removed in a future Update/GA.
-```
+    The option to use the classic configuration view will be removed in a future Update/GA.
 
 From the Sort widget's Configuration screen, you can
 
@@ -55,13 +54,12 @@ From the Sort widget's Configuration screen, you can
 
 ![Users can re-order search results with the Sort widget.](./sorting-search-results/images/04.gif)
 
-```{note}
-Relevance can be turned on or off, but not removed completely. When relevance is enabled, the default search engine behavior is used: results are sorted in descending order of relevance (highest scores first).
-```
+!!! note
+    Relevance can be turned on or off, but not removed completely. When relevance is enabled, the default search engine behavior is used: results are sorted in descending order of relevance (highest scores first).
 
-To access the widget configuration screen, open the widget Options menu (![Options](../../../images/icon-app-options.png)) and click _Configuration_.
+To access the widget configuration screen, open the widget Options menu (![Options](../../../images/icon-app-options.png)) and click *Configuration*.
 
-Each Sort option has three settings: _Indexed Field_, _Display Label_, and _Order_.
+Each Sort option has three settings: *Indexed Field*, *Display Label*, and *Order*.
 
 
 **Indexed Field:** Enter the `fieldName` of the indexed field to sort. Most of the time this is a [keyword](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/keyword.html) field. Other acceptable options are `date` and any [numeric datatype](https://www.elastic.co/guide/en/elasticsearch/reference/8.13/number.html). There's even a way to coerce `text` fields into behaving with the Sort widget (see below). 
@@ -90,13 +88,15 @@ To change the default sort option,
 
 ## Finding Sortable Fields
 
-To find the fields available for use in the Sort widget, Users with the proper permissions can navigate to *Control Panel* &rarr; *Configuration* &rarr; *Search*.  From there, open the Field Mappings tab and browse the mappings for each index.  Scroll to the `properties` section of the mapping and find any `keyword` field, `date` field, or a field with a numeric data type. The `type` field is instructive:
+To find the fields available for use in the Sort widget, Users with the proper permissions can navigate to *Control Panel* &rarr; *Configuration* &rarr; *Search*. From there, open the Field Mappings tab and browse the mappings for each index. Scroll to the `properties` section of the mapping and find any `keyword` field, `date` field, or a field with a numeric data type. The `type` field is instructive:
 
-    "type" : "keyword"
+```
+"type" : "keyword"
 
-    "type" : "date"
+"type" : "date"
 
-    "type" : "long"
+"type" : "long"
+```
 
 If you really must sort by a `text` field, add a new version of the field to the index with the type `keyword`. From the field mappings screen mentioned above, look at the `firstName` field in the index called `liferay-[companyID]`: 
 
@@ -121,13 +121,12 @@ All the text fields listed here have a `fieldName_sortable` counterpart created 
 
 ## Adding New Sort Options
 
-To sort by the new field or an existing field of the proper type, click the _Add Option_ button. 
+To sort by the new field or an existing field of the proper type, click the *Add Option* button. 
 
-```{tip}
-Make sure to use the `fieldName_sortable` version of a text field in the widget configuration. 
-```
+!!! tip
+  Make sure to use the `fieldName_sortable` version of a text field in the widget configuration.
 
-To add a new sort option that's already of the proper data type, use the plus symbol below any option's _Field_ configuration and fill in the fields. The order of options here in the configuration screen matches the order in the select list when configuring the widget for search.
+To add a new sort option that's already of the proper data type, use the plus symbol below any option's *Field* configuration and fill in the fields. The order of options here in the configuration screen matches the order in the select list when configuring the widget for search.
 
 ## Editing and Deleting Sort Options
 
@@ -137,17 +136,17 @@ To delete an existing option, use the trash icon.
 
 ## Controlling the Sort Order in the Classic Configuration
 
-To control the order for the sort option in the Classic configuration, add a plus or minus symbol after the `fieldName`. Look how it's done for the existing sort options labeled _Created_ and _Created (oldest first)_ to understand how it works:
+To control the order for the sort option in the Classic configuration, add a plus or minus symbol after the `fieldName`. Look how it's done for the existing sort options labeled *Created* and *Created (oldest first)* to understand how it works:
 
-**Label:** _Created_
+**Label:** *Created*
 **Field:** `createDate-`
 
-The `-` sign following the field name indicates that the order is _descending_.  Sorting this way brings search results created most recently to the top of the list.
+The `-` sign following the field name indicates that the order is *descending*. Sorting this way brings search results created most recently to the top of the list.
 
-**Label:** _Created (oldest first)_
+**Label:** *Created (oldest first)*
 **Field:** `createDate+`
 
-The `+` sign following the field name indicates that the order is _ascending_.  Sorting this way brings the oldest (by creation date) results to the top of the list.
+The `+` sign following the field name indicates that the order is *ascending*. Sorting this way brings the oldest (by creation date) results to the top of the list.
 
 ## Sorting by Nested Fields
 
@@ -159,21 +158,21 @@ The `+` sign following the field name indicates that the order is _ascending_.  
 
 ```json
 "nestedFieldArray" : [
-   {
-     "fieldName" : "lastAcessed",
-     "valueFieldName" : "value_date",
-     "value_date" : "20230502000000"
-   },
-   {
-     "fieldName" : "immunityType",
-     "valueFieldName" : "value_keyword",
-     "value_keyword" : "diplomatic"
-   },
-   {
-     "fieldName" : "luckyNumber",
-     "valueFieldName" : "value_integer",
-     "value_integer" : "19"
-   }
+  {
+    "fieldName" : "lastAcessed",
+    "valueFieldName" : "value_date",
+    "value_date" : "20230502000000"
+  },
+  {
+    "fieldName" : "immunityType",
+    "valueFieldName" : "value_keyword",
+    "value_keyword" : "diplomatic"
+  },
+  {
+    "fieldName" : "luckyNumber",
+    "valueFieldName" : "value_integer",
+    "value_integer" : "19"
+  }
 ],
 ```
 
@@ -188,31 +187,31 @@ The Sort widget works with keyword, date, and numeric fields. To find web conten
 The documents have a `ddmFieldArray` object with nested content:
 
 ```json
- "ddmFieldArray" : [
-    {
-      "ddmFieldName" : "ddm__keyword__40806__Textb5mx_en_US",
-      "ddmValueFieldName" : "ddmFieldValueKeyword_en_US",
-      "ddmFieldValueKeyword_en_US_String_sortable" : "some text has been entered",
-      "ddmFieldValueKeyword_en_US" : "some text has been entered"
-    },
-    {
-      "ddmFieldName" : "ddm__keyword__40806__Selectjdw0_en_US",
-      "ddmValueFieldName" : "ddmFieldValueKeyword_en_US",
-      "ddmFieldValueKeyword_en_US_String_sortable" : "option 3",
-      "ddmFieldValueKeyword_en_US" : "value 3"
-    },
-    {
-      "ddmFieldName" : "ddm__keyword__40806__Boolean15cg_en_US",
-      "ddmValueFieldName" : "ddmFieldValueKeyword_en_US",
-      "ddmFieldValueKeyword_en_US" : "true",
-      "ddmFieldValueKeyword_en_US_String_sortable" : "true"
-    }
-  ],
+"ddmFieldArray" : [
+  {
+    "ddmFieldName" : "ddm__keyword__40806__Textb5mx_en_US",
+    "ddmValueFieldName" : "ddmFieldValueKeyword_en_US",
+    "ddmFieldValueKeyword_en_US_String_sortable" : "some text has been entered",
+    "ddmFieldValueKeyword_en_US" : "some text has been entered"
+  },
+  {
+    "ddmFieldName" : "ddm__keyword__40806__Selectjdw0_en_US",
+    "ddmValueFieldName" : "ddmFieldValueKeyword_en_US",
+    "ddmFieldValueKeyword_en_US_String_sortable" : "option 3",
+    "ddmFieldValueKeyword_en_US" : "value 3"
+  },
+  {
+    "ddmFieldName" : "ddm__keyword__40806__Boolean15cg_en_US",
+    "ddmValueFieldName" : "ddmFieldValueKeyword_en_US",
+    "ddmFieldValueKeyword_en_US" : "true",
+    "ddmFieldValueKeyword_en_US_String_sortable" : "true"
+  }
+],
 ```
 
 To use one of these fields in a Sort configuration, enter the `ddmFieldName` value (e.g., `ddm__keyword__40806__Testb5mx_en_US`) as the Indexed Field setting.
 
-Depending on your version, [nested field storage](../../../liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document) may be enabled by default for Elasticsearch:
+Depending on your version, [nested field storage](../../../liferay-development/liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document) may be enabled by default for Elasticsearch:
 
 | Liferay Version  | Nested Field Enabled by Default |
 | :--------------- | :------- |
@@ -220,10 +219,10 @@ Depending on your version, [nested field storage](../../../liferay-internals/ref
 | 7.3 all updates  | &#10004; |
 | DXP 7.2 SP3/FP8+ | &#10008; |
 
-To change the behavior, use the _Enable Legacy Dynamic Data Mapping Index Fields_ setting in System Settings &rarr; Dynamic Data Mapping Indexer.
+To change the behavior, use the *Enable Legacy Dynamic Data Mapping Index Fields* setting in System Settings &rarr; Dynamic Data Mapping Indexer.
 
 ## Related Topics
 
-* [Sorting Results in a Search Blueprint](../../liferay-enterprise-search/search-experiences/search-blueprints/sorting-results-in-a-search-blueprint.md)
-* [Search Results Behavior](search-results-behavior.md)
-* [Working with Search Pages](../working-with-search-pages.md)
+- [Sorting Results in a Search Blueprint](../../liferay-enterprise-search/search-experiences/search-blueprints/sorting-results-in-a-search-blueprint.md)
+- [Search Results Behavior](search-results-behavior.md)
+- [Working with Search Pages](../working-with-search-pages.md)

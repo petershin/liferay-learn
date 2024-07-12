@@ -13,7 +13,7 @@ The Custom Facet is unique among the out-of-the-box search facets. Rather than g
 
 ## Configuring the Custom Facet
 
-1. Click _Add_ (![Add icon](../../../images/icon-add-app.png)) at the top of the page.
+1. Click *Add* (![Add icon](../../../images/icon-add-app.png)) at the top of the page.
 
 1. Locate the Custom Facet and drag it to the collection of facets on the left. The Custom Facet is found under the Search section of widgets.
 
@@ -43,7 +43,7 @@ Advanced Configuration contains additional options:
 
 **Order Terms By:** For Liferay 7.4 U60+/GA60+, you can choose the facet term sorting strategy: Term Frequency Descending (default) or Term Frequency Ascending. The default sorting orders facet terms from most matches to least.
 
-**Display Frequencies:** Choose whether or not to display the term frequencies.
+**Display Frequencies:** Choose whether to display the term frequencies.
 
 **Federated Search Key:** Enter the key of an alternate Search this widget is participating on. If not set, this widget participates on the default search. This value is typically the name of an application-defined index.
 
@@ -113,9 +113,9 @@ Here's a snippet of output from the Elasticsearch example:
 
 ## Accessing Custom Fields 
 
-When you create a [Custom Field](../../../system-administration/configuring-liferay/adding-custom-fields.md) with the setting _Searchable as Keyword_ enabled, the custom field is indexed with the backing asset (Blogs Entries, for example). After reindexing it's also applied to existing entries. The field itself is a text field, named like `expando__keyword__custom_fields__Enabled` (if you name the field _Enabled_ in the Custom Fields UI), but it contains a nested field mapping for creating a separate `raw` keyword field. 
+When you create a [Custom Field](../../../system-administration/configuring-liferay/adding-custom-fields.md) with the setting *Searchable as Keyword* enabled, the custom field is indexed with the backing asset (Blogs Entries, for example). After reindexing it's also applied to existing entries. The field itself is a text field, named like `expando__keyword__custom_fields__Enabled` (if you name the field *Enabled* in the Custom Fields UI), but it contains a nested field mapping for creating a separate `raw` keyword field. 
 
-To use the raw field in the Custom Facet, append `.raw` to the Custom Field name in the _Aggregation Field_:
+To use the raw field in the Custom Facet, append `.raw` to the Custom Field name in the *Aggregation Field*:
 
 `expando__keyword__custom_fields__Enabled.raw`
  
@@ -217,7 +217,7 @@ For example, you can sort by the `lastAccessed` date field in the nested array a
 
 ### Using Web Content Structure Fields in the Custom Facet
 
-To find [nested web content structure (DDM) fields](../../../liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document) in existing documents in the index, use the [Display Results in Document Form](../search-results/configuring-the-search-results-widget#inspecting-search-engine-documents) setting in the Search Results widget.
+To find [nested web content structure (DDM) fields](../../../liferay-development/liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document) in existing documents in the index, use the [Display Results in Document Form](../search-results/configuring-the-search-results-widget#inspecting-search-engine-documents) setting in the Search Results widget.
 
 The document has a `ddmFieldArray` field with nested content:
 
@@ -246,18 +246,18 @@ The document has a `ddmFieldArray` field with nested content:
 
 To use one of these fields in a Custom Facet, enter the `ddmFieldName` value (e.g., `ddm__keyword__40806__Testb5mx_en_US`) in the widget's Aggregation Field.
 
-Depending on your version, [nested field storage for DDM fields](../../../liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document) may be enabled by default for Elasticsearch:
+Depending on your version, [nested field storage for DDM fields](../../../liferay-development/liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document) may be enabled by default for Elasticsearch:
 
 | Liferay Version  | Nested Field Enabled by Default |
-| :--------------- | :------- |
-| 7.4 all updates  | &#10004; |
-| 7.3 all updates  | &#10004; |
-| DXP 7.2 SP3/FP8+ | &#10008; |
+| :--------------- | :------------------------------ |
+| 7.4 all updates  | &#10004;                        |
+| 7.3 all updates  | &#10004;                        |
+| DXP 7.2 SP3/FP8+ | &#10008;                        |
 
-To change the behavior, use the _Enable Legacy Dynamic Data Mapping Index Fields_ setting in System Settings &rarr; Dynamic Data Mapping Indexer.
+To change the behavior, use the *Enable Legacy Dynamic Data Mapping Index Fields* setting in System Settings &rarr; Dynamic Data Mapping Indexer.
 
 ## Related Topics
 
-* [Searching for Content](../../getting-started/searching-for-content.md)
-* [Search Administration](../../search-administration-and-tuning/search-administration.md)
-* [Using the Custom Filter Widget](../search-results/using-the-custom-filter-widget.md)
+- [Searching for Content](../../getting-started/searching-for-content.md)
+- [Search Administration](../../search-administration-and-tuning/search-administration.md)
+- [Using the Custom Filter Widget](../search-results/using-the-custom-filter-widget.md)

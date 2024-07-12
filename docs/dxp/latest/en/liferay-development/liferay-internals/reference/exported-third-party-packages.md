@@ -53,25 +53,25 @@ Here's how to make sure a project has required packages at compile time but reli
 
 1. Check if packages your project requires are listed in `com.liferay.portal.bootstrap` module's export manifest. There are two ways to check:
 
-    **Bnd Source File:** If you have a copy of the Liferay source code, examine the `modules/core/portal-bootstrap/system.packages.extra.bnd` file's `Export-Package` declaration. It shows the exported packages in the user-friendly format shown above. Liferay generates the `com.liferay.portal.bootstrap` module's `META-INF/system.packages.extra.mf` file based on this `.bnd` file.
+   **Bnd Source File:** If you have a copy of the Liferay source code, examine the `modules/core/portal-bootstrap/system.packages.extra.bnd` file's `Export-Package` declaration. It shows the exported packages in the user-friendly format shown above. Liferay generates the `com.liferay.portal.bootstrap` module's `META-INF/system.packages.extra.mf` file based on this `.bnd` file.
 
-    **JAR Manifest:** The `META-INF/system.packages.extra.mf` file in `[Liferay Home]/osgi/core/com.liferay.portal.bootstrap.jar` declares the exported packages. The JAR is conveniently found in the Liferay installation but the manifest file's `Export-Package` declaration format is less user-friendly.
+   **JAR Manifest:** The `META-INF/system.packages.extra.mf` file in `[Liferay Home]/osgi/core/com.liferay.portal.bootstrap.jar` declares the exported packages. The JAR is conveniently found in the Liferay installation but the manifest file's `Export-Package` declaration format is less user-friendly.
 
 1. If your project uses any of the provided third party packages, add the compile time artifacts as dependencies using the `providedCompile` Gradle scope. Artifacts in the `providedCompile` scope are available at compile time but excluded from the generated JAR.
 
-    For example, if your project uses Spring Bean packages, specify the following artifact dependency in the `providedCompile` scope.
+   For example, if your project uses Spring Bean packages, specify the following artifact dependency in the `providedCompile` scope.
 
-    ```groovy
-    dependencies {
-        providedCompile group: "org.springframework", name: "spring-bean", version: "4.1.9"
-        ...
-    }
-    ```
+   ```groovy
+   dependencies {
+       providedCompile group: "org.springframework", name: "spring-bean", version: "4.1.9"
+       ...
+   }
+   ```
 
 Now you can safely leverage Liferay's exported third party packages!
 
 ## Related Topics
 
-* [Configuring Dependencies](../fundamentals/configuring-dependencies.md)
-* [JARs Excluded from WABs](../../liferay-development/reference/jars-excluded-from-wabs.md)
-* [Resolving Third Party Library Package Dependencies](../fundamentals/configuring-dependencies/resolving-third-party-library-package-dependencies.md)
+- [Configuring Dependencies](../fundamentals/configuring-dependencies.md)
+- [JARs Excluded from WABs](../../reference/jars-excluded-from-wabs.md)
+- [Resolving Third Party Library Package Dependencies](../fundamentals/configuring-dependencies/resolving-third-party-library-package-dependencies.md)

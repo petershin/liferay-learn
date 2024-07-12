@@ -18,7 +18,7 @@ Then, follow these steps:
 1. Download and unzip [Customizing JSPs with Dynamic Includes](./liferay-n3q9.zip).
 
    ```bash
-   curl https://resources.learn.liferay.com/dxp/latest/en/liferay-internals/extending-liferay/customizing-jsps/liferay-n3q9.zip -O
+   curl https://resources.learn.liferay.com/dxp/latest/en/liferay-development/liferay-internals/extending-liferay/customizing-jsps/liferay-n3q9.zip -O
    ```
 
    ```bash
@@ -43,7 +43,7 @@ Then, follow these steps:
 
 1. Verify that the example module works. Open your browser to `https://localhost:8080`.
 
-1. Navigate to a Site page and click the Edit icon (![Edit icon](../../images/icon-edit.png)). Add the N3Q9 Baker Portlet to the page. The widget can be found under Sample widgets.
+1. Navigate to a Site page and click the Edit icon (![Edit icon](../../../images/icon-edit.png)). Add the N3Q9 Baker Portlet to the page. The widget can be found under Sample widgets.
 
    ![Add the N3Q9 Baker Portlet to a Site page.](./customizing-jsps-with-dynamic-includes/images/01.png)
 
@@ -83,8 +83,8 @@ Add the `liferay-util:dynamic-include` tag where you want the dynamic include to
 
 Make sure the dynamic include `key` matches the target set in the `register()` method above.
 
-See [Using a JSP and MVC Portlet](../../liferay-development/building-applications/developing-a-java-web-application/using-mvc/using-a-jsp-and-mvc-portlet.md) to learn more about JSPs and portlets.
+See [Using a JSP and MVC Portlet](../../building-applications/developing-a-java-web-application/using-mvc/using-a-jsp-and-mvc-portlet.md) to learn more about JSPs and portlets.
 
 ## Related Topics
 
-- [Using a JSP and MVC Portlet](../../liferay-development/building-applications/developing-a-java-web-application/using-mvc/using-a-jsp-and-mvc-portlet.md)
+- [Using a JSP and MVC Portlet](../../../liferay-development/building-applications/developing-a-java-web-application/using-mvc/using-a-jsp-and-mvc-portlet.md)

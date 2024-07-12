@@ -16,42 +16,42 @@ You must satisfy all dependencies to compile and deploy a module successfully. A
 
 1. [Declare a `dependencies` set](https://docs.gradle.org/current/userguide/declaring_dependencies.html), if one doesn't already exist.
 
-    ```groovy
-    dependencies {
-    }
-    ```
+   ```groovy
+   dependencies {
+   }
+   ```
 
 1. If your module requires packages from Liferay, OSGi, or Bnd, add a `compileOnly` dependency on the Liferay Portal API.
 
-    ```groovy
-    dependencies {
-        compileOnly group: "com.liferay.portal", name: "release.portal.api"
-    }
-    ```
+   ```groovy
+   dependencies {
+       compileOnly group: "com.liferay.portal", name: "release.portal.api"
+   }
+   ```
 
 1. If your module doesn't compile or deploy, find an artifact that provides the packages you need and add a `compileInclude` dependency on the artifact.
 
-    ```groovy
-    dependencies {
-        compileOnly group: "com.liferay.portal", name: "release.portal.api",
-        compileInclude group: 'com.google.guava', name: 'guava', version: '19.0'
-    }
-    ```
+   ```groovy
+   dependencies {
+       compileOnly group: "com.liferay.portal", name: "release.portal.api",
+       compileInclude group: 'com.google.guava', name: 'guava', version: '19.0'
+   }
+   ```
 
 1. Deploy your module and check for unsatisfied package dependencies by using [Gogo Shell commands](../using-the-gogo-shell.md) or browsing the logs.
 
 1. If you have unsatisfied dependencies, resolve them:
 
-    **For module dependencies,** deploy the needed modules. Please see [Installing and Managing Apps](../../../system-administration/installing-and-managing-apps/installing-apps.md) for more information.
+   **For module dependencies,** deploy the needed modules. Please see [Installing and Managing Apps](../../../../system-administration/installing-and-managing-apps/installing-apps.md) for more information.
 
-    **For library dependencies,** follow the instructions at [Resolving Third Party Library Dependencies](./resolving-third-party-library-package-dependencies.md).
+   **For library dependencies,** follow the instructions at [Resolving Third Party Library Dependencies](./resolving-third-party-library-package-dependencies.md).
 
 Nice! Specifying dependencies is a skill you can depend on!
 
 ## Related Topics
 
-* [Finding Artifacts](./finding-artifacts.md)
-* [Importing Packages](../importing-packages.md)
-* [Exporting Packages](../exporting-packages.md)
-* [Resolving Third Party Library Package Dependencies](./resolving-third-party-library-package-dependencies.md)
-* [Deploying WARs \(WAB Generator\)](../../../liferay-development/reference/deploying-wars-wab-generator.md)
+- [Finding Artifacts](./finding-artifacts.md)
+- [Importing Packages](../importing-packages.md)
+- [Exporting Packages](../exporting-packages.md)
+- [Resolving Third Party Library Package Dependencies](./resolving-third-party-library-package-dependencies.md)
+- [Deploying WARs \(WAB Generator\)](../../../reference/deploying-wars-wab-generator.md)

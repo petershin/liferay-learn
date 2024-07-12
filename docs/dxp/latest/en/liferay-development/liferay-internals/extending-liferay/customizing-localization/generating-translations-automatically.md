@@ -6,7 +6,7 @@ taxonomy-category-names:
 - Liferay Self-Hosted
 - Liferay PaaS
 ---
-# Automatically Generating Translations
+# Generating Translations Automatically
 
 Liferay DXP supports 50 languages out-of-the-box. Each locale has its own [language properties file](https://github.com/liferay/liferay-portal/tree/master/modules/apps/portal-language/portal-language-lang/src/main/resources/content) containing keys for its language.
 
@@ -50,7 +50,7 @@ Then, follow these steps:
 
 1. Navigate to the module's `src/main/resources/content` folder to view the translated properties files.
 
-  ![The properties files are found in the src/main/resources/content folder.](./automatically-generating-translations/images/01.png)
+  ![The properties files are found in the src/main/resources/content folder.](./generating-translations-automatically/images/01.png)
 
 ## Adding Your Language Keys
 

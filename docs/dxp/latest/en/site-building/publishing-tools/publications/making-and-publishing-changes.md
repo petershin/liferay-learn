@@ -41,8 +41,6 @@ While working on a publication, changes made to supported Liferay components are
 
 ### Navigating to Unsupported Applications
 
-{bdg-link-primary}`[Release Feature](../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags)`
-
 {bdg-secondary}`Liferay 7.4 2023.Q3+/GA92+`
 
 If you navigate to an application that does not support Publications, Liferay indicates that changes in the application cannot be saved to a publication.
@@ -65,7 +63,7 @@ If parallel publications include compatible changes, they can be published witho
 
 ### Conflicting Changes
 
-If parallel publications include incompatible changes and one of the publications is applied to production first, then the other publication will encounter publishing conflicts. These conflicts can also be caused when production is updated directly. See [Resolving Conflicts](./resolving-conflicts.md) for more information on this process.
+If parallel publications include incompatible changes and one of the publications is applied to production first, then the other publication displays publishing conflicts. These conflicts can also be caused when production is updated directly. See [Resolving Conflicts](./resolving-conflicts.md) for more information on this process.
 
 ## Reviewing Publication Changes
 
@@ -73,7 +71,7 @@ Before publishing, you can review a publication's tracked changes to ensure it o
 
 ![Open the Publications drop-down menu and select Review Changes.](./making-and-publishing-changes/images/04.png)
 
-Alternatively, you can review any publication's tracked changes via the Publications application. Simply navigate to the *Ongoing* tab, click on the *Actions* button ( ![Actions button](../../../images/icon-actions.png) ) for the desired Publication, and select *Review Changes*.
+Alternatively, you can review any publication's tracked changes via the Publications application. Navigate to the *Ongoing* tab, click on the *Actions* button (![Actions button](../../../images/icon-actions.png)) for the desired Publication, and select *Review Changes*.
 
 When reviewing changes, all tracked changes appear in a list that you can order by User, Site, Title, Type, Status, Change Type, or Last Modified.
 
@@ -86,8 +84,6 @@ During review, you can select a change to view more details and access additiona
 ![Select a change to view more details and access additional actions.](./making-and-publishing-changes/images/06.png)
 
 ### Previewing Changes to Pages
-
-{bdg-link-primary}`[Release Feature](../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags)`
 
 {bdg-secondary}`Liferay 7.4 2023.Q3+/GA92+`
 
@@ -105,13 +101,13 @@ Once selected, you can view each page version individually or select Split View 
 
 ### Moving Changes Between Publications
 
-{bdg-link-primary}`[Beta Feature](../../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
+{bdg-link-primary}`[Release Feature](../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags)  LPS-171364`
 
 {bdg-secondary}`Liferay 7.4 2023.Q3+/GA92+`
 
 While reviewing changes, you can move them to different publications. This provides greater flexibility when managing content:
 
-1. Click the *Actions* button ( ![Actions Button](../../../images/icon-actions.png) ) for the desired change and select *Move Changes*.
+1. Click the *Actions* button (![Actions Button](../../../images/icon-actions.png)) for the desired change and select *Move Changes*.
 
    ![Click the Actions button for the desired change and select Move changes.](./making-and-publishing-changes/images/10.png)
 
@@ -123,7 +119,7 @@ This moves the change into the selected publication along with its children. It 
 
 ## Publishing Your Changes
 
-When you've finished making your changes, you can publish them immediately or schedule them to be published at a later time. Once published, a publication is listed in the *History* tab of the Publications application. This maintains a clear audit trail that you can use review and revert site changes when needed. See [Reverting Changes](./reverting-changes.md) for more information.
+When you've finished making your changes, you can publish them immediately or schedule them to be published at a later time. Once published, a publication appears in the *History* tab of the Publications application. This maintains a clear audit trail that you can use review and revert site changes when needed. See [Reverting Changes](./reverting-changes.md) for more information.
 
 When you begin the publishing process, Liferay performs a compatibility check to determine if there are any conflicts between the publication and production. If there are conflicts, DXP notifies you. While some conflicts are resolved automatically, others require manual resolution. Resolving all conflicts is necessary for publishing changes. See [Resolving Conflicts](./resolving-conflicts.md) for more information.
 

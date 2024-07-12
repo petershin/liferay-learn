@@ -22,10 +22,10 @@ The WAB Generator detects packages referenced in the plugin WAR's JSPs, descript
 
 To import a package that is referenced only in the following types of locations, you must add an `Import-Package` OSGi header to the plugin's `WEB-INF/liferay-plugin-package.properties` file and add the package to that header's list of values:
 
-* Unrecognized descriptor file
-* Custom or unrecognized descriptor element or attribute
-* Reflection code
-* Class loader code
+- Unrecognized descriptor file
+- Custom or unrecognized descriptor element or attribute
+- Reflection code
+- Class loader code
 
 ## WAR versus WAB Structure
 
@@ -33,45 +33,44 @@ The WAB folder structure and WAR folder structure differ. Consider the following
 
 **WAR**
 
-* `my-war-portlet`
-    * `src`
-        * `main`
-            * `java`
-            * `webapp`
-                * `WEB-INF`
-                    * `classes`
-                    * `lib`
-                    * `resources`
-                    * `views`
-                    * `liferay-display.xml`
-                    * `liferay-plugin-package.properties`
-                    * `liferay-portlet.xml`
-                    * `portlet.xml`
-                    * `web.xml`
+- `my-war-portlet`
+    - `src`
+        - `main`
+            - `java`
+            - `webapp`
+                - `WEB-INF`
+                    - `classes`
+                    - `lib`
+                    - `resources`
+                    - `views`
+                    - `liferay-display.xml`
+                    - `liferay-plugin-package.properties`
+                    - `liferay-portlet.xml`
+                    - `portlet.xml`
+                    - `web.xml`
 
 When a WAR-style portlet is deployed to Liferay and processed by the WAB Generator, the portlet's folder structure is transformed.
 
 **WAB**
 
-* `my-war-portlet-that-is-now-a-wab`
-    * `META-INF`
-        * `MANIFEST.MF`
-    * `WEB-INF`
-        * `classes`
-        * `lib`
-        * `resources`
-        * `views`
-        * `liferay-display.xml`
-        * `liferay-plugin-package.properties`
-        * `liferay-portlet.xml`
-        * `portlet.xml`
-        * `web.xml`
+- `my-war-portlet-that-is-now-a-wab`
+    - `META-INF`
+        - `MANIFEST.MF`
+    - `WEB-INF`
+        - `classes`
+        - `lib`
+        - `resources`
+        - `views`
+        - `liferay-display.xml`
+        - `liferay-plugin-package.properties`
+        - `liferay-portlet.xml`
+        - `portlet.xml`
+        - `web.xml`
 
 The major difference is the addition of the `META-INF/MANIFEST.MF` file. The WAB Generator automatically generates an OSGi-ready manifest file. If you want to affect the content of the manifest file, you can place Bnd directives and OSGi headers directly into your plugin's `liferay-plugin-package.properties` file.
 
-```{note}
-A generated WAB cannot use a manually added `bnd.bnd` file or a build-time plugin (e.g., `bnd-maven-plugin`).
-```
+!!! note
+    A generated WAB cannot use a manually added `bnd.bnd` file or a build-time plugin (e.g., `bnd-maven-plugin`).
 
 ## Deploying a WAR
 
@@ -86,12 +85,12 @@ module.framework.web.generator.generated.wabs.store=true
 module.framework.web.generator.generated.wabs.store.dir=${module.framework.base.dir}/wabs
 ```
 
-These properties instruct the WAB generator to store generated WABs in your installation's `osgi/wabs/` folder. The generated WABs have the same structure as the example WAB structure above. The [Module Framework Web Application Bundles](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Module%20Framework%20Web%20Application%20Bundles) properties section explains more details.
+These properties instruct the WAB generator to store generated WABs in your installation's `osgi/wabs/` folder. The generated WABs have the same structure as the example WAB structure above. The [Module Framework Web Application Bundles](https://resources.learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Module%20Framework%20Web%20Application%20Bundles) properties section explains more details.
 
 Awesome! You can deploy your WAR plugin as a WAB and you know how to save a copy of the WAB to examine it!
 
 ## Related Topics
 
-* [JARs Excluded from WABs](./jars-excluded-from-wabs.md)
-* [Resolving Third Party Library Package Dependencies](../../liferay-internals/fundamentals/configuring-dependencies/resolving-third-party-library-package-dependencies.md)
-* [Module Lifecycle](../../liferay-internals/architecture/module-lifecycle.md)
+- [JARs Excluded from WABs](./jars-excluded-from-wabs.md)
+- [Resolving Third Party Library Package Dependencies](../../liferay-development/liferay-internals/fundamentals/configuring-dependencies/resolving-third-party-library-package-dependencies.md)
+- [Module Lifecycle](../../liferay-development/liferay-internals/architecture/module-lifecycle.md)

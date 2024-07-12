@@ -35,9 +35,8 @@ Then, follow these steps:
    ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
    ```
 
-   ```{note}
-      This command is the same as copying the deployed jars to /opt/liferay/osgi/modules on the Docker container.
-   ```
+   !!! note
+       This command is the same as copying the deployed jars to /opt/liferay/osgi/modules on the Docker container.
 
 1. Confirm the deployment in the Liferay Docker container console.
 
@@ -105,9 +104,9 @@ This tutorial assumes that you have a working application that you created using
 
 1. Next, specify the data fields to anonymize. This is done with the use of two attributes:
 
-   * The `uad-anonymize-field-name=[fieldName]` attribute indicates a field whose value is replaced by that of the anonymous user in the UAD auto-anonymization process. For example, setting `uad-anonymize-field-name=fullName` would replace the value of that field with the full name of the anonymous user. See [Configuring the Anonymous User](../managing-user-data/configuring-the-anonymous-user.md) to learn more about the anonymous user.
+   - The `uad-anonymize-field-name=[fieldName]` attribute indicates a field whose value is replaced by that of the anonymous user in the UAD auto-anonymization process. For example, setting `uad-anonymize-field-name=fullName` would replace the value of that field with the full name of the anonymous user. See [Configuring the Anonymous User](../managing-user-data/configuring-the-anonymous-user.md) to learn more about the anonymous user.
 
-   * The `uad-nonanonymizable="true"` attribute indicates data that is not automatically anonymized but must be reviewed by an administrator.
+   - The `uad-nonanonymizable="true"` attribute indicates data that is not automatically anonymized but must be reviewed by an administrator.
 
    ```{literalinclude} ./adding-the-uad-framework/resources/liferay-h6d2.zip/h6d2-service/service.xml
    :dedent: 2
@@ -123,7 +122,7 @@ This tutorial assumes that you have a working application that you created using
    ```{literalinclude} ./adding-the-uad-framework/resources/liferay-h6d2.zip/h6d2-uad/bnd.bnd
    ```
 
-   Make sure to include the `-dsannotations-options: inherit` annotation. OSGi service component classes inherit [OSGi declarative services](../../liferay-internals/fundamentals/module-projects.md) annotations from their class hierarchy.
+   Make sure to include the `-dsannotations-options: inherit` annotation. OSGi service component classes inherit [OSGi declarative services](../../liferay-development/liferay-internals/fundamentals/module-projects.md) annotations from their class hierarchy.
 
 1. Create a `build.gradle` file for the module.
 

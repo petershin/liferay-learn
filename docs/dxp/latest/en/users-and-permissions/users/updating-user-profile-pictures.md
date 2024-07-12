@@ -16,7 +16,9 @@ Users have profile pictures. Administrative Users can upload images in the Edit 
 To update a User profile picture follow these steps:
 
 1. Click *My Profile* in the User menu or if you're an administrator, go to *Control Panel* &rarr; *Users and Organizations* and find the User that needs a profile picture.
+
 1. Click the *Change* button under the generic profile picture.
+
 1. Select an image from your computer, crop it (if necessary), and then click *Done*.
 
 ![Upload images for user avatars in the Edit User form.](./updating-user-profile-pictures/images/01.png)
@@ -32,7 +34,9 @@ If no image is explicitly uploaded for a User's profile picture, a default User 
 ### Disable the Use of Initials for the Default User Profile Image
 
 1. Navigate to *Control Panel* &rarr; *Configuration* &rarr; *System Settings*.
+
 1. In the Platform section, click *Users* &rarr; *User Images*.
+
 1. De-select *Use Initials for Default User Portrait*.
 
 ![If you disable the default initials-based profile picture, this icon is used instead.](./updating-user-profile-pictures/images/03.png)
@@ -41,7 +45,7 @@ Now, instead of the default icon, the icon is a generic silhouette.
 
 ### Changing the Order of Initials in the Default User Profile Image
 
-The default user icon (with the user initials) can be configured to work for your locale. These settings are configured in a [Language Settings module](../../liferay-internals/extending-liferay/customizing-localization/overriding-global-language-translations-with-language-properties.md).
+The default user icon (with the user initials) can be configured to work for your locale. These settings are configured in a [Language Settings module](../../liferay-development/liferay-internals/extending-liferay/customizing-localization/overriding-global-language-translations-with-language-properties.md).
 
 `lang.user.default.portrait=initials` sets the type of icon to use for avatars. The default value is *initials*. If set to initials, the next property configures which initials to display, and in what order. Alternatively, specify *image*, which gives you the same non-initials default image shown above.
 
@@ -57,20 +61,20 @@ You can use your own default profile image:
 
 1. Set the following property in a [`portal-ext.properties`](../../installation-and-upgrades/reference/portal-properties.md) file:
 
-    ```properties
-    image.default.user.portrait=image-filename-here.png
-    ```
+   ```properties
+   image.default.user.portrait=image-filename-here.png
+   ```
 
-    This overrides the value of this portal property:
+   This overrides the value of this portal property:
 
-    ```properties
-    image.default.user.portrait=com/liferay/portal/dependencies/user_portrait.png
-    ```
+   ```properties
+   image.default.user.portrait=com/liferay/portal/dependencies/user_portrait.png
+   ```
 
-    !!! tip
-        If you use the binary gender field to collect information on users' genders, you have two default images to override. Set these properties instead:
+   !!! tip
+       If you use the binary gender field to collect information on users' genders, you have two default images to override. Set these properties instead:
 
-            image.default.user.female.portrait=image-filename.png
+           image.default.user.female.portrait=image-filename.png
             image.default.user.male.portrait=image-filename.png
 
 1. Restart the application server.
@@ -78,4 +82,4 @@ You can use your own default profile image:
 ## Related Topics
 
 - [Accounts](../accounts.md)
-- [Overriding Global Language Translations with Language Properties](../../liferay-internals/extending-liferay/customizing-localization/overriding-global-language-translations-with-language-properties.md)
+- [Overriding Global Language Translations with Language Properties](../../liferay-development/liferay-internals/extending-liferay/customizing-localization/overriding-global-language-translations-with-language-properties.md)

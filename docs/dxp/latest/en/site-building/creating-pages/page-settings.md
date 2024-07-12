@@ -4,6 +4,7 @@ toc:
   - ./page-settings/configuring-individual-pages.md
   - ./page-settings/configuring-your-pages-friendly-url.md
   - ./page-settings/configuring-locked-pages.md
+  - ./page-settings/setting-default-permissions.md
   - ./page-settings/updating-page-permissions.md
 taxonomy-category-names:
 - Sites

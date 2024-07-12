@@ -43,7 +43,7 @@ By default, the [`portal.properties`](https://github.com/liferay/liferay-portal/
    </servlet-mapping>
    ```
 
-1. Create or modify your `portal-ext.properties` file in your installation's [Liferay Home](../../../installation-and-upgrades/reference/liferay-home.md) folder. Note, this file overrides the enabled default locales defined in the `portal.properties` file. Therefore list all the languages you plan to use in the `portal-ext.properties` file. Define both `locales` and `locales.enabled`. For example:
+1. Create or modify your `portal-ext.properties` file in your installation's [Liferay Home](../../../../installation-and-upgrades/reference/liferay-home.md) folder. Note, this file overrides the enabled default locales defined in the `portal.properties` file. Therefore list all the languages you plan to use in the `portal-ext.properties` file. Define both `locales` and `locales.enabled`. For example:
 
    ```properties
    locales=am_ET,ar_SA,fa_IR,en_US,zh_CN,ja_JP
@@ -66,7 +66,7 @@ By default, the [`portal.properties`](https://github.com/liferay/liferay-portal/
 
 ### Adding Language Keys with the Language Override Tool
 
-1. Navigate to the [Language Override](../../../system-administration/configuring-liferay/changing-translations-with-language-override.md) page.
+1. Navigate to the [Language Override](../../../../system-administration/configuring-liferay/changing-translations-with-language-override.md) page.
 
 1. Search for the language key you want to change and click it.
 
@@ -145,7 +145,7 @@ The example below adds the Ethiopian flag to represent the Amharic language.
 
 {bdg-secondary}`Liferay 7.4`
 
-1. Create a [theme sprite map client extension](../../../liferay-development/customizing-liferays-look-and-feel/using-a-theme-spritemap-client-extension.md).
+1. Create a [theme sprite map client extension](../../../customizing-liferays-look-and-feel/using-a-theme-spritemap-client-extension.md).
 
 1. In your `spritemap.svg`, add your flag's SVG inside a `<symbol>` tag. The `id` should be your language code.
 
@@ -159,7 +159,7 @@ The example below adds the Ethiopian flag to represent the Amharic language.
 
    ![The Language Selector shows the icon from your client extension.](./adding-a-language/images/05.png)
 
-Use this client extension on every page or page template where you want your flag visible. For more information on Theme Sprite Map Client Extensions, see [Using a Theme Sprite Map Client Extension](../../../liferay-development/customizing-liferays-look-and-feel/using-a-theme-spritemap-client-extension.md).
+Use this client extension on every page or page template where you want your flag visible. For more information on Theme Sprite Map Client Extensions, see [Using a Theme Sprite Map Client Extension](../../../customizing-liferays-look-and-feel/using-a-theme-spritemap-client-extension.md).
 
 ### Adding a Flag Icon to User Pages Using a Classic Theme
 
@@ -173,7 +173,7 @@ Use this client extension on every page or page template where you want your fla
 
 1. Run `gulp deploy` on your root module directory.
 
-1. Add your theme to all pages or page templates where you want your flag icon. For more information on themes, see [Themes](../../../liferay-development/customizing-liferays-look-and-feel/themes.md).
+1. Add your theme to all pages or page templates where you want your flag icon. For more information on themes, see [Themes](../../../customizing-liferays-look-and-feel/themes.md).
 
 ### Adding a Flag Icon to Admin Pages Using an Admin Theme
 
@@ -189,11 +189,11 @@ Use this client extension on every page or page template where you want your fla
 
 1. Refresh your page to apply the new changes.
 
-For more information on themes, see [Themes](../../../liferay-development/customizing-liferays-look-and-feel/themes.md).
+For more information on themes, see [Themes](../../../customizing-liferays-look-and-feel/themes.md).
 
 ## Related Topics
 
-- [Site Localization](../../../site-building/site-settings/site-localization.md)
-- [Using a Theme Sprite Map Client Extension](../../../liferay-development/customizing-liferays-look-and-feel/using-a-theme-spritemap-client-extension.md)
-- [Setting Up an Environment and Creating a Theme](../../../liferay-development/customizing-liferays-look-and-feel/themes/theme-development/setting-up-an-environment-and-creating-a-theme.md)
-- [Upgrading Language Key Overrides](../../../installation-and-upgrades/upgrading-liferay/upgrading-custom-development/upgrading-language-key-overrides.md)
+- [Site Localization](../../../../site-building/site-settings/site-localization.md)
+- [Using a Theme Sprite Map Client Extension](../../../customizing-liferays-look-and-feel/using-a-theme-spritemap-client-extension.md)
+- [Setting Up an Environment and Creating a Theme](../../../customizing-liferays-look-and-feel/themes/theme-development/setting-up-an-environment-and-creating-a-theme.md)
+- [Upgrading Language Key Overrides](../../../../installation-and-upgrades/upgrading-liferay/upgrading-custom-development/upgrading-language-key-overrides.md)

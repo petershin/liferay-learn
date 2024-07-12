@@ -6,11 +6,11 @@ uuid: 0e974ead-9e19-4ded-8b82-1e63c54fc2fc
 Liferay DXP/Portal implements headings, labels, and messages for many locales using language translations. You can override these translations for any of the locales using new language translation values in a module.
 
 !!! note
-    The [Language Override tool](../../../system-administration/configuring-liferay/changing-translations-with-language-override.md) is the recommended approach for overriding language translations. This tool is available in Liferay DXP 7.4 U4 (Update 4) and above or Liferay Portal 7.4 GA8 and above. Continue reading for the previous way.
+    The [Language Override tool](../../../../system-administration/configuring-liferay/changing-translations-with-language-override.md) is the recommended approach for overriding language translations. This tool is available in Liferay DXP 7.4 U4 (Update 4) and above or Liferay Portal 7.4 GA8 and above. Continue reading for the previous way.
 
 ## Examining the Global Language Translations
 
-The global language translations are in the source code and the [DXP/Portal bundle](../../../installation-and-upgrades/installing-liferay.md).
+The global language translations are in the source code and the [DXP/Portal bundle](../../../../installation-and-upgrades/installing-liferay.md).
 
 In the source:
 
@@ -96,7 +96,7 @@ Then, follow these steps to deploy the example:
 
 1. Verify the example module's customization. Open your browser to `https://localhost:8080`.
 
-1. Click the menu icon (![Menu](../../../images/icon-menu.png)). The home icon label uses the custom language translation value.
+1. Click the menu icon (![Menu](../../../../images/icon-menu.png)). The home icon label uses the custom language translation value.
 
    ![The home icon now uses the custom language translation value.](./overriding-global-language-translations-with-language-properties/images/04.png)
 
@@ -192,7 +192,7 @@ Here's how to deploy the example:
 
 1. Open your browser to `https://localhost:8080` and sign in.
 
-1. Navigate to a page and click the edit icon (![Edit](../../../images/icon-edit.png)). The publish button shows the custom language translation.
+1. Navigate to a page and click the edit icon (![Edit](../../../../images/icon-edit.png)). The publish button shows the custom language translation.
 
    ![The publish button now uses the custom language translation.](./overriding-global-language-translations-with-language-properties/images/06.png)
 
@@ -253,6 +253,6 @@ Deploy your module to see your new language translation values.
 ## Related Topics
 
 - [Overriding Module Language Translations in Earlier Versions](./overriding-module-language-translations.md)
-- [Changing Translations with Language Override](../../../system-administration/configuring-liferay/changing-translations-with-language-override.md)
-- [Using Localized Messages in an MVC Portlet](../../../liferay-development/building-applications/developing-a-java-web-application/using-mvc/using-localized-messages-in-an-mvc-portlet.md)
-- [Upgrading Language Key Overrides](../../../installation-and-upgrades/upgrading-liferay/upgrading-custom-development/upgrading-language-key-overrides.md)
+- [Changing Translations with Language Override](../../../../system-administration/configuring-liferay/changing-translations-with-language-override.md)
+- [Using Localized Messages in an MVC Portlet](../../../building-applications/developing-a-java-web-application/using-mvc/using-localized-messages-in-an-mvc-portlet.md)
+- [Upgrading Language Key Overrides](../../../../installation-and-upgrades/upgrading-liferay/upgrading-custom-development/upgrading-language-key-overrides.md)

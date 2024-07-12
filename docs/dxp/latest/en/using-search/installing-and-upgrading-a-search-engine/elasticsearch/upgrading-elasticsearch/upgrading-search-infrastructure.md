@@ -48,9 +48,9 @@ Because LES and its apps are bundled with Liferay 7.4, these steps are only requ
 
 Manually test the upgraded search experience to ensure the features you depend on work as expected. If something is not working or is behaving differently than you expect, review the Breaking Changes documentation:
 
-- [Liferay 7.4 Breaking Changes](../../../../liferay-internals/reference/7-4-breaking-changes.md)
-- [Liferay 7.3 Breaking Changes](../../../../liferay-internals/reference/7-3-breaking-changes.md)
-- [Liferay 7.2 Breaking Changes](../../../../liferay-internals/reference/7-2-breaking-changes.md)
+- [Liferay 7.4 Breaking Changes](../../../../liferay-development/liferay-internals/reference/7-4-breaking-changes.md)
+- [Liferay 7.3 Breaking Changes](../../../../liferay-development/liferay-internals/reference/7-3-breaking-changes.md)
+- [Liferay 7.2 Breaking Changes](../../../../liferay-development/liferay-internals/reference/7-2-breaking-changes.md)
 
 ## LES Applications Renamed after Liferay 7.2
 

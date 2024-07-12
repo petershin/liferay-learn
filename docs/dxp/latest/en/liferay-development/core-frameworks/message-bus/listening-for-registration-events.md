@@ -30,74 +30,77 @@ Then, follow these steps:
 
 1. Download and unzip the example.
 
-    ```bash
-    curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/message-bus/liferay-s3z9.zip -O
-    ```
+   ```bash
+   curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/message-bus/liferay-s3z9.zip -O
+   ```
 
-    ```bash
-    unzip liferay-s3z9.zip
-    ```
+   ```bash
+   unzip liferay-s3z9.zip
+   ```
 
 1. Launch the Message Bus event listener by deploying the `s3z9-able-impl` module.
 
-    ```bash
-    cd liferay-s3z9/s3z9-able-impl
-    ```
+   ```bash
+   cd liferay-s3z9/s3z9-able-impl
+   ```
 
-    ```bash
-    ../gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
-    ```
+   ```bash
+   ../gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
+   ```
 
-    !!! note
-        This command is the same as copying the module JAR to `/opt/liferay/osgi/modules` on the Docker container.
+   !!! note
+       This command is the same as copying the module JAR to `/opt/liferay/osgi/modules` on the Docker container.
 
 1. Add a destination by deploying the `s3z9-baker-impl` module.
 
-    ```bash
-    cd ../s3z9-baker-impl
-    ```
+   ```bash
+   cd ../s3z9-baker-impl
+   ```
 
-    ```bash
-    ../gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
-    ```
+   ```bash
+   ../gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
+   ```
 
 1. The Docker container console shows `S3Z9AbleMessageBusEventListener`'s response to the newly added destination.
 
-    ```bash
-    [main][S3Z9AbleMessageBusEventListener:17] Destination added acme/s3z9_baker
-    ```
+   ```bash
+   [main][S3Z9AbleMessageBusEventListener:17] Destination added acme/s3z9_baker
+   ```
 
 1. Launch the destination event listener by deploying the `s3z9-charlie-impl` module.
 
-    ```bash
-    cd ../s3z9-charlie-impl
-    ```
+   ```bash
+   cd ../s3z9-charlie-impl
+   ```
 
-    ```bash
-    ../gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
-    ```
+   ```bash
+   ../gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
+   ```
 
 1. Register a message listener to the destination by deploying the `s3z9-dog-impl` module.
 
-    ```bash
-    cd ../s3z9-dog-impl
-    ```
+   ```bash
+   cd ../s3z9-dog-impl
+   ```
 
-    ```bash
-    ../gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
-    ```
+   ```bash
+   ../gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
+   ```
 
 1. The Docker container console shows `S3Z9CharlieDestinationEventListener`'s response to the newly registered message listener.
 
-    ```bash
-    [S3Z9CharlieDestinationEventListener:23] Registered message listener to acme/s3z9_baker
-    ```
+   ```bash
+   [S3Z9CharlieDestinationEventListener:23] Registered message listener to acme/s3z9_baker
+   ```
 
 Here's the module overview:
 
 1. `s3z9-able-impl`'s [`MessageBusEventListener`](https://github.com/liferay/liferay-portal/blob/7.4.3.92-ga92/portal-kernel/src/com/liferay/portal/kernel/messaging/MessageBusEventListener.java) implementation listens for destination additions and removals.
+
 1. `s3z9-baker-impl`'s messaging configurator class adds a destination; `s3z9-able-impl`'s `MessageBusEventListener` implementation receives the added destination notification and logs the event.
+
 1. `s3z9-charlie-impl`'s [`DestinationEventListener`](https://github.com/liferay/liferay-portal/blob/7.4.3.92-ga92/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationEventListener.java) implementation listens for message listeners registering to or unregistering from the destination.
+
 1. `s3z9-dog-impl`'s [`MessageListener`](https://github.com/liferay/liferay-portal/blob/7.4.3.92-ga92/portal-kernel/src/com/liferay/portal/kernel/messaging/MessageListener.java) implementation registers to the destination; `s3z9-charlie-impl`'s `DestinationEventListener` implementation receives message listener registration notification and logs the event.
 
 ## Examine the `MessageBusEventListener`
@@ -128,6 +131,7 @@ Message Bus notifies a [`DestinationEventListener`](https://github.com/liferay/l
 The `@Component` annotation's `property = "destination.name=acme/s3z9_baker"` and `service = MessageBusEventListener.class` attributes signal the runtime framework to register `S3Z9CharlieDestinationEventListener` as a `DestinationEventListener` for the `acme/s3z9_baker` destination. The implementation overrides `DestinationEventListener`'s two methods:
 
 - `messageListenerRegistered(String destinationName, MessageListener messageListener)` responds to a new message listener registered to the destination.
+
 - `messageListenerUnregistered(String destinationName, MessageListener messageListener)` responds to a new message listener unregistered from the destination.
 
 `S3Z9CharlieDestinationEventListener`'s method implementations log the message listener registration events.
@@ -140,40 +144,40 @@ You can unregister the example message listener and remove the example destinati
 
 1. Visit the Liferay instance with your browser at `http://localhost:8080` and sign in using your credentials.
 
-1. Open the [Gogo shell](../../../liferay-internals/fundamentals/using-the-gogo-shell.md).
+1. Open the [Gogo shell](../../liferay-internals/fundamentals/using-the-gogo-shell.md).
 
 1. List the example modules by entering this command in the Gogo shell command field:
 
-    ```bash
-    lb | grep S3Z9
-    ```
+   ```bash
+   lb | grep S3Z9
+   ```
 
-    The start of each line includes the corresponding module's ID number.
+   The start of each line includes the corresponding module's ID number.
 
-    ```bash
-    1839|Active     |   10|Acme S3Z9 Able Implementation (1.0.0)|1.0.0
-    1840|Active     |   10|Acme S3Z9 Baker Implementation (1.0.0)|1.0.0
-    1841|Active     |   10|Acme S3Z9 Charlie Implementation (1.0.0)|1.0.0
-    1842|Active     |   10|Acme S3Z9 Dog Implementation (1.0.0)|1.0.0
-    ```
+   ```bash
+   1839|Active     |   10|Acme S3Z9 Able Implementation (1.0.0)|1.0.0
+   1840|Active     |   10|Acme S3Z9 Baker Implementation (1.0.0)|1.0.0
+   1841|Active     |   10|Acme S3Z9 Charlie Implementation (1.0.0)|1.0.0
+   1842|Active     |   10|Acme S3Z9 Dog Implementation (1.0.0)|1.0.0
+   ```
 
 1. Stop the message listener's module by entering the following Gogo shell command, replacing the number with your module's ID:
 
-    ```bash
-    stop 1842
-    ```
+   ```bash
+   stop 1842
+   ```
 
 1. Confirm the destination event listener's logged response to the message listener unregistration.
 
-    ```bash
-    [S3Z9CharlieDestinationEventListener:33] Unregistered message listener from acme/s3z9_baker
-    ```
+   ```bash
+   [S3Z9CharlieDestinationEventListener:33] Unregistered message listener from acme/s3z9_baker
+   ```
 
 1. Stop the destination's module by entering the following Gogo shell command, replacing the number with your module's ID:
 
-    ```bash
-    stop 1840
-    ```
+   ```bash
+   stop 1840
+   ```
 
 Congratulations! You've triggered all of the message bus event listener and destination event listener events.
 

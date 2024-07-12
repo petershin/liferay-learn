@@ -4,7 +4,7 @@ uuid: 4d839db3-cb3a-4d88-852e-2c866358fa06
 # Overriding Module Language Translations in Earlier Versions
 
 !!! important
-    For Liferay DXP 7.4 U4 (Update 4) and above or Liferay Portal 7.4 GA8 and above, the [Language Override tool](../../../system-administration/configuring-liferay/changing-translations-with-language-override.md) is the recommended approach. If you're working with Liferay DXP/Portal 7.4+, please follow the instructions for [Overriding Global Language Translations with Language Properties](./overriding-global-language-translations-with-language-properties.md).
+    For Liferay DXP 7.4 U4 (Update 4) and above or Liferay Portal 7.4 GA8 and above, the [Language Override tool](../../../../system-administration/configuring-liferay/changing-translations-with-language-override.md) is the recommended approach. If you're working with Liferay DXP/Portal 7.4+, please follow the instructions for [Overriding Global Language Translations with Language Properties](./overriding-global-language-translations-with-language-properties.md).
 
 Overriding Liferay application specific language translations in earlier versions is similar to overriding global language translations in earlier versions but there are additional steps.
 
@@ -82,7 +82,7 @@ Then, follow these steps:
 1. Download and unzip `liferay-e6u7.zip`.
 
     ```bash
-    curl https://resources.learn.liferay.com/dxp/latest/en/liferay-internals/extending-liferay/liferay-e6u7.zip -O
+    curl https://resources.learn.liferay.com/dxp/latest/en/liferay-development/liferay-internals/extending-liferay/liferay-e6u7.zip -O
     ```
 
     ```bash
@@ -108,7 +108,7 @@ Then, follow these steps:
     STARTED com.acme.e6u7.impl_1.0.0 [1650]
     ```
 
-1. Navigate to *Content & Data* &rarr; *Blogs*. Move your cursor over the add icon (![Add](../../../images/icon-add.png)). The message now shows the custom language translation.
+1. Navigate to *Content & Data* &rarr; *Blogs*. Move your cursor over the add icon (![Add](../../../../images/icon-add.png)). The message now shows the custom language translation.
 
     ![The custom language translation is now being used.](./overriding-module-language-translations/images/01.png)
 
@@ -186,10 +186,13 @@ The example `Provide-Capability` header has two parts:
 
 1. The `liferay.resource.bundle;resource.bundle.aggregate:String=...` directive specifies the list of bundles with resource bundles to aggregate, the target bundle, the target bundle's resource bundle name, and this service's ranking:
 
-    - `"(bundle.symbolic.name=com.acme.e6u7.impl),(bundle.symbolic.name=com.liferay.blogs.web)"`: The service aggregates resource bundles from bundles `com.acme.e6u7.impl` and `com.liferay.blogs.web`. Aggregate as many bundles as desired. Listed bundles are prioritized in descending order.
-    - `bundle.symbolic.name=com.liferay.blogs.web;resource.bundle.base.name="content.Language"`: Override the `com.liferay.blogs.web` bundle's resource bundle named `content.Language`.
-    - `service.ranking:Long="2"`: The resource bundle's service ranking is `2`. The OSGi framework applies this service if it outranks all other resource bundle services that target `com.liferay.blogs.web`'s `content.Language` resource bundle.
-    - `servlet.context.name=blogs-web`: The target resource bundle is in servlet context `blogs-web`.
+   - `"(bundle.symbolic.name=com.acme.e6u7.impl),(bundle.symbolic.name=com.liferay.blogs.web)"`: The service aggregates resource bundles from bundles `com.acme.e6u7.impl` and `com.liferay.blogs.web`. Aggregate as many bundles as desired. Listed bundles are prioritized in descending order.
+
+   - `bundle.symbolic.name=com.liferay.blogs.web;resource.bundle.base.name="content.Language"`: Override the `com.liferay.blogs.web` bundle's resource bundle named `content.Language`.
+
+   - `service.ranking:Long="2"`: The resource bundle's service ranking is `2`. The OSGi framework applies this service if it outranks all other resource bundle services that target `com.liferay.blogs.web`'s `content.Language` resource bundle.
+
+   - `servlet.context.name=blogs-web`: The target resource bundle is in servlet context `blogs-web`.
 
 !!! note
     If your override isn't showing, use [Gogo shell](../../fundamentals/using-the-gogo-shell.md) to check for competing resource bundle services. It may be that another service outranks yours. To check for competing resource bundle services whose aggregates include `com.liferay.blogs.web`’s resource bundle, for example, execute this Gogo shell command:
@@ -205,7 +208,7 @@ Search the results for resource bundle aggregate services whose ranking is highe
 
 ## Related Topics
 
-- [Changing Translations with Language Override](../../../system-administration/configuring-liferay/changing-translations-with-language-override.md)
-- [Using Localized Messages in an MVC Portlet](../../../liferay-development/building-applications/developing-a-java-web-application/using-mvc/using-localized-messages-in-an-mvc-portlet.md)
-- [Aggregating Resource Bundles](../../../liferay-development/building-applications/developing-a-java-web-application/using-mvc/using-localized-messages-in-an-mvc-portlet/aggregating-resource-bundles.md)
-- [Renamed Language Keys](../../../installation-and-upgrades/upgrading-liferay/reference/renamed-language-keys.md)
+- [Changing Translations with Language Override](../../../../system-administration/configuring-liferay/changing-translations-with-language-override.md)
+- [Using Localized Messages in an MVC Portlet](../../../building-applications/developing-a-java-web-application/using-mvc/using-localized-messages-in-an-mvc-portlet.md)
+- [Aggregating Resource Bundles](../../../building-applications/developing-a-java-web-application/using-mvc/using-localized-messages-in-an-mvc-portlet/aggregating-resource-bundles.md)
+- [Renamed Language Keys](../../../../installation-and-upgrades/upgrading-liferay/reference/renamed-language-keys.md)

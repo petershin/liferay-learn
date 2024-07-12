@@ -29,53 +29,53 @@ Then, follow these steps:
 
 1. Download and unzip the example.
 
-    ```bash
-    curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/message-bus/liferay-x6n5.zip -O
-    ```
+   ```bash
+   curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/message-bus/liferay-x6n5.zip -O
+   ```
 
-    ```bash
-    unzip liferay-x6n5.zip
-    ```
+   ```bash
+   unzip liferay-x6n5.zip
+   ```
 
 1. Build and deploy the example project modules.
 
-    ```bash
-    cd liferay-x6n5
-    ```
+   ```bash
+   cd liferay-x6n5
+   ```
 
-    ```bash
-    ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
-    ```
+   ```bash
+   ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
+   ```
 
-    !!! note
-        This command is the same as copying the module JARs to `/opt/liferay/osgi/modules` on the Docker container.
+   !!! note
+       This command is the same as copying the module JARs to `/opt/liferay/osgi/modules` on the Docker container.
 
 1. The Docker container console shows that the modules started.
 
-    ```bash
-    STARTED com.acme.x6n5.able.impl_1.0.0
-    STARTED com.acme.x6n5.baker.impl_1.0.0
-    STARTED com.acme.x6n5.charlie.impl_1.0.0
-    STARTED com.acme.x6n5.dog.impl_1.0.0
-    ```
+   ```bash
+   STARTED com.acme.x6n5.able.impl_1.0.0
+   STARTED com.acme.x6n5.baker.impl_1.0.0
+   STARTED com.acme.x6n5.charlie.impl_1.0.0
+   STARTED com.acme.x6n5.dog.impl_1.0.0
+   ```
 
 1. Visit the Liferay instance with your browser at `http://localhost:8080` and sign in using your credentials.
 
-1. Open the [Gogo Shell](../../../liferay-internals/fundamentals/using-the-gogo-shell.md).
+1. Open the [Gogo Shell](../../liferay-internals/fundamentals/using-the-gogo-shell.md).
 
 1. In the Gogo Shell command field, enter `x6n5:sendMessage` followed by a message. For example,
 
-    ```groovy
-    x6n5:sendMessage foo
-    ```
+   ```groovy
+   x6n5:sendMessage foo
+   ```
 
 1. Confirm the output looks like this.
 
-    ```
+   ```
    INFO  [pipe-x6n5:sendMessage foo][X6N5DogMessageListener:21] Received message payload foo
    INFO  [pipe-x6n5:sendMessage foo][X6N5CharlieMessageListener:21] Received message payload foo
    INFO  [pipe-x6n5:sendMessage foo][X6N5BakerOSGiCommands:28] Response: X6N5CharlieMessageListener
-    ```
+   ```
 
 The thread blocks in the message sender (i.e., `X6N5BakerOSGiCommands`) when it sends the message. After processing the message in `X6N5CharlieMessageListener` and `X6N5DogMessageListener`, the thread continues in the message sender.
 
@@ -85,17 +85,19 @@ The four example modules have one class. On class manages the destination, anoth
 
 Example Classes:
 
-| Class | Module | Description |
-| :---- | :----- | :---------- |
-| `X6N5AbleMessagingConfigurator` | `x6n5-able-impl` | Creates a message destination named `acme/x6n5_able` and registers it with the Message Bus. |
-| `X6N5BakerOSGiCommands` | `x6n5-baker-impl` | Sends a message to the `acme/x6n5_able` destination and logs the response. |
-| `X6N5CharlieMessageListener` | `x6n5-charlie-impl` | Listens for messages sent to the `acme/x6n5_able` destination. It logs the message payload and sets a response on the message. |
-| `X6N5DogMessageListener` | `x6n5-dog-impl` |Listens for messages sent to the `acme/x6n5_able` destination. It logs the message payload and sets a response on the message. |
+| Class                           | Module              | Description                                                                                                                    |
+| :------------------------------ | :------------------ | :----------------------------------------------------------------------------------------------------------------------------- |
+| `X6N5AbleMessagingConfigurator` | `x6n5-able-impl`    | Creates a message destination named `acme/x6n5_able` and registers it with the Message Bus.                                    |
+| `X6N5BakerOSGiCommands`         | `x6n5-baker-impl`   | Sends a message to the `acme/x6n5_able` destination and logs the response.                                                     |
+| `X6N5CharlieMessageListener`    | `x6n5-charlie-impl` | Listens for messages sent to the `acme/x6n5_able` destination. It logs the message payload and sets a response on the message. |
+| `X6N5DogMessageListener`        | `x6n5-dog-impl`     | Listens for messages sent to the `acme/x6n5_able` destination. It logs the message payload and sets a response on the message. |
 
 Here's the event flow:
 
 1. When a user executes the `x6n5:sendMessage` Gogo shell command, `X6N5BakerOSGiCommands` sends the command arguments in a message payload to the `acme/x6n5_able` destination.
+
 1. The current thread processes message reception for each listener (i.e., `X6N5CharlieMessageListener` and `X6N5DogMessageListener`) in succession. The listeners log the message payload and set a response on the message. The response from the latest listener processed supersedes previous responses.
+
 1. Processing returns to `X6N5BakerOSGiCommands`, where it logs the message response.
 
 Now you can examine each class, starting with the destination configurator.

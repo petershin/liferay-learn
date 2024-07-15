@@ -12,7 +12,7 @@ uuid: 70d28ba5-ecfe-492f-aeaf-e50fc8c69645
 
 {bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA132+`
 
-With the new default permissions setting, you can define a set of default permissions for Liferay pages. This setting is available at the instance and site levels. To configure the same defaults for all sites in your instance, you can use the instance level configuration. If you want to set defaults for specific sites, you can do so at the site level.
+You can define a set of default permissions for Liferay pages. The default permissions setting is available at both instance and site scopes. Use the instance scope to configure defaults for all sites in your instance. To affect a single site, set defaults at the site scope.
 
 To configure permissions at the instance level,
 
@@ -29,7 +29,7 @@ To configure permissions at the instance level,
    ![Check the permissions you require.](./setting-default-permissions/images/02.png)
 
    !!! note
-       The selected permissions don't get auto-saved. Ensure to click *Save* after selecting the required permissions.
+       The selected permissions aren't auto-saved. Ensure you click *Save* after selecting the required permissions.
 
 1. Go to your site, open the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)), and go to *Site Builder* &rarr; *Pages*.
 
@@ -41,7 +41,7 @@ To configure permissions at the instance level,
 
 1. Click *Publish*.
 
-1. Now, click *Actions* (![Actions](../../../images/icon-actions.png)) next to the newly created page and select *Permissions*.
+1. Click *Actions* (![Actions](../../../images/icon-actions.png)) next to the newly created page and select *Permissions*.
 
 1. Verify that the permissions configured at the instance level appear here.
 
@@ -49,7 +49,7 @@ To configure permissions at the instance level,
 
 ## Setting Default Permissions at the Site Level 
 
-Default permissions at the site level take precedence over default permissions at the instance level. To do this,
+Default permissions at the site level take precedence over default permissions at the instance level. 
 
 1. Go to the appropriate site, open the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)), and go to *Configuration* &rarr; *Site Settings*.
 
@@ -71,7 +71,7 @@ Default permissions at the site level take precedence over default permissions a
 
 1. Click *Publish*.
 
-1. Now, click *Actions* (![Actions](../../../images/icon-actions.png)) next to the newly created page and select *Permissions*.
+1. Click *Actions* (![Actions](../../../images/icon-actions.png)) next to the newly created page and select *Permissions*.
 
 1. Verify that the permissions configured at the site level overrides the defaults configured at the instance level.
 

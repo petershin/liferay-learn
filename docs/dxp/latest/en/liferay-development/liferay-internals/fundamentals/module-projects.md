@@ -72,7 +72,7 @@ Then, follow these steps:
 1. Download and unzip the example.
 
     ```bash
-    curl https://resources.learn.liferay.com/dxp/latest/en/liferay-internals/fundamentals/liferay-k8s2.zip -O
+    curl https://resources.learn.liferay.com/dxp/latest/en/liferay-development/liferay-internals/fundamentals/liferay-k8s2.zip -O
     ```
 
     ```bash
@@ -161,14 +161,14 @@ Now that you have installed and activated the module, you can learn how it works
 
 Liferay modules are developed in a Gradle build infrastructure. The following Gradle files are in the project's root folder.
 
-| File | Description |
-| :--- | :---------- |
-| `gradle/` | Contains a Gradle wrapper |
-| `gradlew[.bat]`  | Invokes the Gradle wrapper to execute tasks |
-| `gradle.properties` | Specifies the Liferay product version |
-| `settings.gradle` | Applies Gradle plugins, including the [Liferay Workspace](../../liferay-development/tooling.md) plugin. |
+| File                | Description                                                                         |
+| :------------------ | :---------------------------------------------------------------------------------- |
+| `gradle/`           | Contains a Gradle wrapper                                                           |
+| `gradlew[.bat]`     | Invokes the Gradle wrapper to execute tasks                                         |
+| `gradle.properties` | Specifies the Liferay product version                                               |
+| `settings.gradle`   | Applies Gradle plugins, including the [Liferay Workspace](../../tooling.md) plugin. |
 
-You can add more modules in new subfolders, like the example project's `k8s2-api` folder, or create them in a new [Liferay Workspace](../../liferay-development/tooling/liferay-workspace.md).
+You can add more modules in new subfolders, like the example project's `k8s2-api` folder, or create them in a new [Liferay Workspace](../../tooling/liferay-workspace.md).
 
 Here's the `k8s2-api` module structure in the context of the project root.
 

@@ -12,8 +12,3 @@ taxonomy-category-names:
 - Liferay PaaS
 ---
 # Customizing Localization
-
-- [Adding a Language](./customizing-localization/adding-a-language.md)
-- [Overriding Global Language Translations with Language Properties](./customizing-localization/overriding-global-language-translations-with-language-properties.md)
-- [Overriding Module Language Translations in Earlier Versions](./customizing-localization/overriding-module-language-translations.md)
-- [Generating Translations Automatically](./customizing-localization/automatically-generating-translations.md)

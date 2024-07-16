@@ -58,7 +58,7 @@ Here are the steps for reactivating DXP with your new key:
 
 1. Stop the application server.
 
-1. Delete the *contents* of your `[Liferay Home]/data/license` folder but preserve the folder.
+1. Delete the contents of your `[Liferay Home]/data/license` folder but preserve the folder.
 
 1. Remove all `activation-key-[...].xml` files from your `[Liferay Home]/osgi/modules` folder.
 

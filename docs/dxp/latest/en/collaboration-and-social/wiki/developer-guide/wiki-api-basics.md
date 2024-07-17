@@ -9,7 +9,7 @@ taxonomy-category-names:
 ---
 # Wiki API Basics
 
-Liferay's Headless Delivery application provides REST services for the [Wiki](../getting-started-with-wikis.md) application. With these services, you can add Wiki nodes and pages, list their information, modify their content, or remove them altogether. Here you'll call those services using cURL commands and Java classes.
+Liferay's Headless Delivery application provides REST services for the [Wiki](../../wiki.md) application. With these services, you can add Wiki nodes and pages, list their information, modify their content, or remove them altogether. Here you'll call those services using cURL commands and Java classes.
 
 ## Preparing Tutorial Resources
 

@@ -11,6 +11,7 @@ toc:
   - ./liferay-development/tooling.md
   - ./headless-delivery/apis-with-rest-builder.md
   - ./liferay-development/core-frameworks.md
+  - ./liferay-development/liferay-internals.md
   - ./liferay-development/data-sets.md
   - ./liferay-development/reference.md
   - ./liferay-development/reference/app-builder.md

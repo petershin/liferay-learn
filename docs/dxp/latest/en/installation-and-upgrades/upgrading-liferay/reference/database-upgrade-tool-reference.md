@@ -4,7 +4,7 @@ uuid: 8d057d63-5edc-481f-b55d-ccfa3cb388fa
 # Database Upgrade Tool Reference
 
 !!! important
-    As of Liferay 7.4 U82/GA82 and above, the `db_upgrade.sh` file has been renamed to `db_upgrade_client.sh`.
+    Before {bdg-secondary}`Liferay 7.4 U82/GA82`, the `db_upgrade_client.sh` file was named `db_upgrade.sh`.
 
 Here's an overview of Liferay's upgrade tool. 
 

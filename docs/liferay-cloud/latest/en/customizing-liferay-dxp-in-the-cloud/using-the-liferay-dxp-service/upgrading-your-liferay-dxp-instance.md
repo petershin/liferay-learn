@@ -45,11 +45,11 @@ Perform the following steps to download a backup (consisting of both the databas
 
 1. Log in to the [Cloud console](https://console.liferay.cloud/login).
 
-1. Navigate to your production environment, then select _Backups_ from the menu.
+1. Navigate to your production environment, then select *Backups* from the menu.
 
    ![Navigate to the Backups page in your production environment.](./upgrading-your-liferay-dxp-instance/images/01.png)
 
-1. Choose one of the backups listed and select _Download_ from the Actions menu. Download the data volume and database zip files.
+1. Choose one of the backups listed and select *Download* from the Actions menu. Download the data volume and database zip files.
 
    ![Click each option to download both the data volume and database archives.](./upgrading-your-liferay-dxp-instance/images/02.png)
 
@@ -125,7 +125,10 @@ The database and document library are now in place and ready for you to perform 
 
 ## Perform the Data Upgrade
 
-DXP bundles provide an upgrade tool that is used for data upgrades. This tool is invoked through a script included in the bundle, `db_upgrade.sh`.
+!!! important
+    Before {bdg-secondary}`Liferay 7.4 U82/GA82`, the `db_upgrade_client.sh` file was named `db_upgrade.sh`.
+
+DXP bundles provide an upgrade tool that is used for data upgrades. This tool is invoked through a script included in the bundle, `db_upgrade_client.sh`.
 
 !!! note
     The database upgrade tool can be pre-configured for more flexibility when it runs. See [Using the Database Upgrade Tool](https://learn.liferay.com/w/dxp/installation-and-upgrades/upgrading-liferay/upgrade-basics/using-the-database-upgrade-tool) for more information on advanced usage.
@@ -133,7 +136,7 @@ DXP bundles provide an upgrade tool that is used for data upgrades. This tool is
 Open a command line within your `LIFERAY_HOME/tools/portal-tools-db-upgrade-client` folder. Then, run the following command:
 
 ```bash
-db_upgrade.sh -j "-Dfile.encoding=UTF-8 -Duser.timezone=GMT -Xmx2048m" -l "output.log"
+db_upgrade_client.sh -j "-Dfile.encoding=UTF-8 -Duser.timezone=GMT -Xmx2048m" -l "output.log"
 ```
 
 The upgrade tool prompts you for information about your installation before beginning the data upgrade. If you downloaded a Liferay bundle with Tomcat, it automatically detects some of the directories as default values. Make sure you choose the appropriate database for your Liferay Cloud environment when prompted.
@@ -243,9 +246,9 @@ Follow these steps to restore a backup to your chosen environment:
 
 1. Log into the Liferay Cloud console, if you are not already logged in.
 
-1. Navigate to the environment [you uploaded your backup to](#upload-the-document-library-and-database), then click _Backups_ from the side menu.
+1. Navigate to the environment [you uploaded your backup to](#upload-the-document-library-and-database), then click *Backups* from the side menu.
 
-1. Choose a backup from the list, and then click _Restore to_ from the Actions menu for that backup.
+1. Choose a backup from the list, and then click *Restore to* from the Actions menu for that backup.
 
     ![Select Restore to... from the Actions menu for the uploaded backup.](./upgrading-your-liferay-dxp-instance/images/05.png)
 
@@ -253,7 +256,7 @@ Follow these steps to restore a backup to your chosen environment:
 
     ![Select an environment to deploy the backup to.](./upgrading-your-liferay-dxp-instance/images/06.png)
 
-1. Click _Restore to environment_.
+1. Click *Restore to environment*.
 
    !!! note
        The chosen environment is unavailable while the backup is being deployed.

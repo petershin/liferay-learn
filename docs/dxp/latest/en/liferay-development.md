@@ -39,5 +39,3 @@ If, however, you must make a customization or build an application that cannot b
 Whatever decision you make, Liferay's platform supports the developer and makes it easier and faster to get your application done. From point-and-click tools to CLI utilities, from a full-blown IDE to creating an object-based application in your browser, from headless APIs integrating with front-end frameworks to deployable applications based on Java standards, Liferay empowers developers of all stripes to create sites that look, feel, and perform exactly the way they want them to. 
 
 To get started, check out the boxes below. For applications, you may want to start with [Objects](liferay-development/objects.md) and [Client Extensions](./liferay-development/client-extensions.md). For customization, [Customizing Liferay's Look and Feel]().
-
-

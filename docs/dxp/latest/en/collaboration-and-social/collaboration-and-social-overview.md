@@ -25,7 +25,7 @@ The Message Boards app is a platform for content-rich discussions and provides t
 
 ![The Message Boards app is fantastic for facilitating discussions.](./collaboration-and-social-overview/images/01.png)
 
-To begin using the Message Board app to build a forum, see [Getting Started with Message Boards](./message-boards/user-guide/getting-started-with-message-boards.md).
+To begin using the Message Board app to build a forum, see [Message Boards](./message-boards.md).
 
 ## Wiki
 

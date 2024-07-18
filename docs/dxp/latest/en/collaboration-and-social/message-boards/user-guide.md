@@ -1,6 +1,5 @@
 ---
 toc:
-  - ./user-guide/getting-started-with-message-boards.md
   - ./user-guide/creating-message-boards-categories.md
   - ./user-guide/creating-message-boards-threads.md
   - ./user-guide/moderating-message-boards.md
@@ -20,7 +19,7 @@ taxonomy-category-names:
 ---
 # User Guide
 
-* [Getting Started with Message Boards](./user-guide/getting-started-with-message-boards.md)
+* [Message Boards](../../collaboration-and-social/message-boards.md)
 * [Creating Message Boards Categories](./user-guide/creating-message-boards-categories.md)
 * [Creating Message Boards Threads](./user-guide/creating-message-boards-threads.md)
 * [Moderating Message Boards](./user-guide/moderating-message-boards.md)

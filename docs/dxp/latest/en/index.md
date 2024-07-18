@@ -70,7 +70,7 @@ Welcome to the official documentation for the latest versions (7.3 and 7.4+) of 
 :::{grid-item-card} Collaboration and Social
 :link: ./collaboration-and-social.md
 
-[Getting Started with Message Boards](./collaboration-and-social/message-boards/user-guide/getting-started-with-message-boards.md)
+[Message Boards](./collaboration-and-social/message-boards.md)
 [Using Social Tools](./collaboration-and-social/social-tools.md)
 [Mentioning Users](./collaboration-and-social/notifications-and-requests/user-guide/mentioning-users.md)
 :::

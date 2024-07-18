@@ -9,7 +9,7 @@ uuid: 73b29e35-51d6-4fd0-822a-62a1fa316430
 ---
 # Adding Widgets to a Page
 
-Widgets are applications. They can be simple and only used to [display content](../../displaying-content.md), or they can be full-featured collaboration applications, like the [Message Boards widget](../../../collaboration-and-social/message-boards/user-guide/getting-started-with-message-boards.md).
+Widgets are applications. They can be simple and only used to [display content](../../displaying-content.md), or they can be full-featured collaboration applications, like the [Message Boards widget](../../../collaboration-and-social/message-boards.md).
 
 ```{note}
 Widgets are rendered according to [render-weight](https://resources.learn.liferay.com/reference/latest/en/dxp/definitions/liferay-portlet-app_7_4_0.dtd.html#render-weight) on widget pages.

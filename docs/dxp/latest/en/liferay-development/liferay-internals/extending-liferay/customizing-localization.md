@@ -12,3 +12,5 @@ taxonomy-category-names:
 - Liferay PaaS
 ---
 # Customizing Localization
+
+Liferay ships with 55 translations, making it ideal for deployments all over the world. Sometimes, however, you must modify a translation or provide a new one. Here you can learn how to add a language, override translations, and generate new translations using a translation service. 

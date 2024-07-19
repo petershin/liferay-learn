@@ -35,7 +35,7 @@ Using a *Message Boards Admin* role and a user *Jane Slaughter* as an example, h
 1. Assign the role to the user collection: *Message Boards Administrators &rarr; Message Boards Admin Role.*
 1. Assign users to the user collection: *Jane Slaughter &rarr; Message Boards Administrators.*
 
-The conceptual diagram below shows how the user inherits the necessary permissions in Liferay DXP's roles and permissions system. Only one fully-wired role assignment is displayed here (for the user who becomes a Message Boards Administrator), but you can see how drawing new arrows would link the user with permissions via other user collections and role assignments.
+The conceptual diagram below shows how the user inherits the necessary permissions in Liferay's roles and permissions system. Only one fully-wired role assignment appears here (for the user who becomes a Message Boards Administrator), but you can see how drawing new arrows would link the user with permissions via other user collections and role assignments.
 
 ![Roles exist to link permissions efficiently with users.](./understanding-roles-and-permissions/images/02.png)
 
@@ -54,7 +54,7 @@ Individual [users](./../users.md) can be manually assigned to roles. This method
 
 ### Regular Roles
 
-Instance scoped roles are called regular roles. These roles grant permissions globally, or throughout the [virtual instance](../../system-administration/configuring-liferay/virtual-instances.md).
+Instance-scoped roles are called regular roles. These roles grant permissions globally, or throughout the [virtual instance](../../system-administration/configuring-liferay/virtual-instances.md).
 
 Several user collections can be assigned to regular roles:
 
@@ -65,7 +65,7 @@ Several user collections can be assigned to regular roles:
 
 ### Organization Roles
 
-Organization scoped roles are called organization roles. Permissions for organization roles are defined at the global level and are applied to one specific [organization](../../users-and-permissions/organizations/understanding-organizations.md). users are added to organizations individually and are assigned to organization roles individually.
+Organization-scoped roles are called organization roles. Permissions for organization roles are defined at the global level and are applied to one specific [organization](../../users-and-permissions/organizations/understanding-organizations.md). users are added to organizations individually and are assigned to organization roles individually.
 
 ### Site Roles
 
@@ -73,7 +73,7 @@ Site scoped roles are called site roles. Permissions for site roles are defined 
 
 ## Permissions
 
-Permissions are created by developers of applications. They define actions users can perform or how much access a user has to a particular asset.
+Permissions are created by developers of applications. They define actions users can perform or what functions users are allowed to perform on a particular asset.
 
 ### Application Scoped Permissions
 

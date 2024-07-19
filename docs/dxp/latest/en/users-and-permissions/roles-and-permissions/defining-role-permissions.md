@@ -66,7 +66,7 @@ Now the user group manager role has all the permissions necessary for adding use
 
 There are several categories of permissions:
 
-**Control Panel:** Portal administrators can access the entire control panel section from the Global Menu. Control Panel permissions affect whether and how the control panel appears to different role users. For example, you can fine-tune whether a role grants view access to various applications in the control panel, or get more granular and only grant access to an application's configuration actions.
+**Control Panel:** Portal administrators can access the entire control panel section from the Global Menu. Control Panel permissions affect whether and how the control panel appears to different role users. For example, you can fine-tune whether a role grants view access to various applications in the control panel or get more granular and only grant access to an application's configuration actions.
 
 **Commerce:** Commerce permissions affect whether and how the Commerce menu appears to different role users when they open the Global Menu. For example, a supplier can only access channels and catalogs when they access the Commerce section from the Global Menu whereas an administrator can view all the options.
 

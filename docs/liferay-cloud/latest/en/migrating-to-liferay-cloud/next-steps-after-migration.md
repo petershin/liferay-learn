@@ -43,7 +43,7 @@ See [Custom Domains](../configuring-the-cloud-network/custom-domains.md) for mor
 
 By default, Liferay Cloud mitigates downtime from service outages by providing [automatic disaster recovery](../support-and-troubleshooting/troubleshooting-tools-and-resources/disaster-recovery-overview.md#automatic-disaster-recovery-strategy) within the same region. However, in the event of a disaster causing an outage in the area servicing your Liferay Cloud environments, you should also consider using a fall-back environment (or Disaster Recovery environment) to minimize downtime for Users on your production instance.
 
-[Configure a Diaster Recovery environment](../support-and-troubleshooting/troubleshooting-tools-and-resources/configuring-cross-region-disaster-recovery.md) to maintain the most robust possible protection from unplanned downtime. Learn more about automatic and cross-region Disaster Recovery [here](../support-and-troubleshooting/troubleshooting-tools-and-resources/disaster-recovery-overview.md).
+[Configure a Disaster Recovery environment](../support-and-troubleshooting/troubleshooting-tools-and-resources/configuring-cross-region-disaster-recovery.md) to maintain the most robust possible protection from unplanned downtime. Learn more about automatic and cross-region Disaster Recovery [here](../support-and-troubleshooting/troubleshooting-tools-and-resources/disaster-recovery-overview.md).
 
 !!! important
     To set up a Disaster Recovery environment, you must have purchased a separate environment for it as part of your subscription.

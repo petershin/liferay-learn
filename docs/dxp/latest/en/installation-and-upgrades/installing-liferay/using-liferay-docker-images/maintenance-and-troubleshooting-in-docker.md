@@ -10,20 +10,20 @@ taxonomy-category-names:
 
 The Liferay Docker container has tools for maintenance and troubleshooting out-of-the-box. The following table contains information on some useful environment variables. You can find more information on them throughout the article.
 
-| Environment variable                     | Default value                                | Purpose                                                                       |
-| :--------------------------------------- | :------------------------------------------- | :---------------------------------------------------------------------------- |
-| LIFERAY_CONTAINER_STARTUP_LOCK_ENABLED   | false                                        | Set to `true` to avoid 2 nodes starting up at the same time. |
-| LIFERAY_CONTAINER_STARTUP_LOCK_FILE      | `/opt/liferay/data/liferay-startup-lock`     | The location where the lock file should be created. |
-| LIFERAY_CONTAINER_STATUS_ENABLED         | false                                        | Set to `true` to create a thread to continually check the container status. |
-| LIFERAY_CONTAINER_STATUS_REQUEST_CONTENT | -                                            |  |
-| LIFERAY_CONTAINER_STATUS_REQUEST_TIMEOUT | 10                                           | The number of seconds between each request.                                   |
-| LIFERAY_CONTAINER_STATUS_REQUEST_URL     | http://localhost:8080/c/portal/robots        | The thread checks the HTTP response to the URL set here.                      |
-| LIFERAY_DOCKER_THREAD_DUMP_INTERVAL_FILE | `/opt/liferay/data/sre/thread_dump_interval` |  |
-| LIFERAY_THREAD_DUMPS_DIRECTORY           | `/opt/liferay/data/sre/thread_dumps`         |  |
+| Environment variable                     | Default value                                | Purpose                                                                              |
+| :--------------------------------------- | :------------------------------------------- | :----------------------------------------------------------------------------------- |
+| LIFERAY_CONTAINER_STARTUP_LOCK_ENABLED   | false                                        | Set to `true` to avoid 2 nodes starting up at the same time.                         |
+| LIFERAY_CONTAINER_STARTUP_LOCK_FILE      | `/opt/liferay/data/liferay-startup-lock`     | The location where the lock file should be created.                                  |
+| LIFERAY_CONTAINER_STATUS_ENABLED         | false                                        | Set to `true` to create a thread to continually check the container status.          |
+| LIFERAY_CONTAINER_STATUS_REQUEST_CONTENT | ""                                           | The status is only `live` if the content returned from the URL contains this string. |
+| LIFERAY_CONTAINER_STATUS_REQUEST_TIMEOUT | 10                                           | Requests wait this many seconds for a response before failing.                       |
+| LIFERAY_CONTAINER_STATUS_REQUEST_URL     | http://localhost:8080/c/portal/robots        | The thread checks the HTTP response to the URL set here.                             |
+| LIFERAY_DOCKER_THREAD_DUMP_INTERVAL_FILE | `/opt/liferay/data/sre/thread_dump_interval` | This file contains the number of seconds between each generated thread dump.         |
+| LIFERAY_THREAD_DUMPS_DIRECTORY           | `/opt/liferay/data/sre/thread_dumps`         | The location where the thread dump file should be created.                           |
 
 Here is a list of useful scripts that can be found inside the container:
 
-- **generate_database_report.sh**: Generates a database report HTML file which contains information about tables which can cause performance issues (e.g. templates) or about locks and the status of the server.
+- **generate_database_report.sh**: Generates a database report HTML file which contains information about tables which can cause performance issues (e.g. templates) or about locks and the status of the database server.
 
 - **generate_heap_dump.sh**: Generates a heap dump. Use `-h` to learn about the parameters.
 
@@ -59,18 +59,21 @@ If the Liferay service's status changed from live to fail, thread dumps are crea
 
 ## Startup Lock
 
+!!! important
+    You must enable and properly configure the container status settings before enabling startup lock.
+
 To avoid 2 Liferay DXP nodes starting up at the same time, there’s a simple mechanism which uses a shared file system between the nodes to signal that one node is starting up. To leverage this feature, set `LIFERAY_CONTAINER_STARTUP_LOCK_ENABLED` environment variable to `true`. This creates a lock file in the path set in `LIFERAY_CONTAINER_STARTUP_LOCK_FILE`.
 
 !!! important
-    You must enable and properly configure the container status settings before enabling startup lock.
+    Startup lock is only available if the file location is on a shared file system.
 
 The first DXP node creates the lock file and updates it every 30 seconds. If other nodes see this file, they wait for it to be removed before starting up. The file content is the host name of the node which is actively starting up. If the file isn't touched for over 2 minutes, the next node to try to start up does it normally and overrides the contents of the file.
 
 ## Creating Thread Dumps Intervals
 
-If `LIFERAY_DOCKER_THREAD_DUMP_INTERVAL_FILE` is not empty, the container starts a separate thread monitoring the file itself. If this file contains a number, the container creates a thread dump to the `LIFERAY_THREAD_DUMPS_DIRECTORY` directory with the delay of the number of seconds written in this file. So if `/opt/liferay/data/sre/thread_dump_interval` is 3, it creates a thread dump every 3 seconds. If the file was not created, it takes less than 60 seconds to notice the change.
+The `LIFERAY_DOCKER_THREAD_DUMP_INTERVAL_FILE` variable should be a valid path to a file. Write a number to this file to set the interval of seconds between thread dumps or leave it empty to turn this feature off. The thread dumps are created in the `LIFERAY_THREAD_DUMPS_DIRECTORY` directory. So if `/opt/liferay/data/sre/thread_dump_interval` is 3, it creates a thread dump every 3 seconds.
 
-This is a useful tool to generate thread dumps on several cluster nodes since the file is on a shared file system. It can be also used to detect startup problems if the file is already created when the container starts up.
+This is a useful tool to generate thread dumps on several cluster nodes if the file is on a shared file system. It can be also used to detect startup problems if the file is already created when the container starts up.
 
 ## Container Life Cycle Probe
 

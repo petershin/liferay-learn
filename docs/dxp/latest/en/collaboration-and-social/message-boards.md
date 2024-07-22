@@ -23,16 +23,16 @@ The fastest way to begin using the *Message Boards* app is to deploy the widget 
 
 1. Navigate to the site and page desired (e.g. *Forum Page*).
 
-    ![New Forum Page](./images/03.png)
+    ![New Forum Page](./message-boards/images/03.png)
 
 1. Click the *Add* button.
 1. Click *Widgets* then *Collaboration* to expand the menu.
 
-    ![Adding the Message Boards Widget to using the Add Application menu.](./images/06.png)
+    ![Adding the Message Boards Widget to using the Add Application menu.](./message-boards/images/06.png)
 
 1. Drag and drop the *Message Boards* widget to the desired location on the page.
 
-    ![Deploying the Message Boards app to the forum page.](./images/04.png)
+    ![Deploying the Message Boards app to the forum page.](./message-boards/images/04.png)
 
 Site members are able to create forum posts using the *Message Boards* widget. Note that there can be only one *Message Boards* widget per page.
 

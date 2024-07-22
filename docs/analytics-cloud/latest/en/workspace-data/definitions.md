@@ -14,4 +14,5 @@ taxonomy-category-names:
 ---
 
 # Definitions
-<!--Introduction needed. Markdown removed, since children cards are automatically added.-->
+
+In Analytics Cloud, you can manage how data is modeled and defined. You can view and manage the data models of [individuals](./definitions/definitions-for-individuals.md), [events](./definitions/definitions-for-events.md), [event attributes](./definitions/definitions-for-event-attributes.md), and [search queries](./definitions/setting-a-search-query.md).

@@ -18,7 +18,7 @@ In settings view, and manage the data sources that sync with Analytics Cloud. Cl
 
 Manage [API](./workspace-data/managing-api-access.md) access by creating or revoking access tokens.
 
-Manage how [data is modeled and defined](./workspace-data/definitions.md) for individuals, search, and interests.
+Manage how [data is modeled and defined](./workspace-data/definitions.md) for events, individuals, search, and interests.
 
 Manage the [data and privacy](./workspace-data/data-control-and-privacy.md) of individuals.
 

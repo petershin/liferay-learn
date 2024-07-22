@@ -21,6 +21,17 @@ Only changes to a template's pages and page elements are propagated to connected
 
 For this reason, site templates are primarily intended for maintaining pages across multiple sites. If you must create and maintain web content and other assets across sites, use [asset libraries](../../../content-authoring-and-management/asset-libraries.md).
 
+It's important to note that automatic propagation does note applies to certain content elements within Site Templates. The following section explores scenarios where changes might not apply automatically:
+
+**Master Pages**: If a user edits the Master Page directly on a connected site, that edit breaks the connection between the Site Template's Master Page and the connected site's Master Page. Also, if the user disconnects, future changes made to the Site Template's Master Page is not propagate to that specific connected site because it's no longer referencing the Site Template version.
+
+**Page Templates**: Edits made directly to a Page Template within the Site Template do not automatically propagate to connected sites. Since Page Templates define the layout structure, changes impact how content is arranged, not the content itself. These layout changes must to be applied to each page that uses the template.
+
+**Display Page Templates**: Similar to Page Templates, edits made to Display Page Templates within the Site Template do not propagate automatically to connected sites. Any changes to a Display Page Template must be manually applied to the corresponding page types on connected sites.
+
+**Utility Pages**: If you update a Utility Page in the Site Template, you must to manually integrate those changes into the relevant pages on connected sites that utilize the Utility Page.
+
+
 ## Enabling and Disabling Propagation
 
 When [creating a template](./creating-site-templates.md), you determine whether to enable or disable automatic propagation, but you can change this setting at any time.
@@ -43,7 +54,7 @@ Follow these steps to enable or disable propagation after template creation:
 
    ![If Propagation is disabled, click Ready for Propagation.](./propagating-template-changes/images/03.png)
 
-Alternatively, you can enable or disable automatic propagation via the site templates application page. Just click *Actions* (![Actions Button](../../../images/icon-actions.png)) for the desired template and select *Disable Propagation* or *Ready for Propagation*.
+Alternatively, you can enable or disable automatic propagation via the site templates application page. Click *Actions* (![Actions Button](../../../images/icon-actions.png)) for the desired template and select *Disable Propagation* or *Ready for Propagation*.
 
 ![Click the Actions button for the desired site template and select Disable Propagation or Ready for Propagation.](./propagating-template-changes/images/04.png)
 
@@ -55,9 +66,9 @@ Follow these steps to discard changes to a site page and resync it with its temp
 
 1. Navigate to the site page.
 
-1. Click the *Aditional Information* icon (![Information](../../../images/icon-control-menu-information.png)) in the Application bar.
+1. Click the *Additional Information* icon (![Information](../../../images/icon-control-menu-information.png)) in the Application bar.
 
-   ![Click the Aditional Information icon and select Reset Changes.](./propagating-template-changes/images/05.png)
+   ![Click the Additional Information icon and select Reset Changes.](./propagating-template-changes/images/05.png)
 
 1. Click *Reset Changes*.
 

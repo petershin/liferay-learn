@@ -10,7 +10,7 @@ taxonomy-category-names:
 ---
 # Using a Theme Sprite Map Client Extension
 
-{bdg-secondary}`Liferay 7.4+`
+{bdg-secondary}`Liferay 7.4 2023.Q4+/GA100+`
 
 With a theme sprite map client extension, you can override the default [Clay](https://clayui.com/docs/components/icon.html) sprite map used for icons on a page. Start with the [sample workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace) to build and deploy your client extension.
 
@@ -139,10 +139,6 @@ STARTED liferay-sample-theme-spritemap-1_1.0.0
 ```
 
 ## Use the New Sprite Map on a Page
-
-```{note}
-The theme sprite map client extension is currently behind a [release feature flag](../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags). You must enable the feature flag before start using it.
-```
 
 Configure a page to use your deployed client extension:
 

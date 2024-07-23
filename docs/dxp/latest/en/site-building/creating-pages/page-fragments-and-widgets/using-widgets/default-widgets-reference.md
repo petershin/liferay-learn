@@ -109,8 +109,8 @@ News widgets display messages to users, RSS feeds, and recently created content.
 
 | Widget         | Description                                                                                                                                                                                                                   |
 | :------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Alerts         | Adds an [Alerts widget](../../../../collaboration-and-social/alerts-and-announcements/sending-alerts-and-announcements.md#creating-alerts-and-announcements) to display high-priority information with a red *Important* tag. |
-| Announcements  | Adds an [Announcements widget](../../../../collaboration-and-social/alerts-and-announcements/sending-alerts-and-announcements.md#creating-alerts-and-announcements) to display information without a red *Important* tag.     |
+| Alerts         | Adds an [Alerts widget](../../../../collaboration-and-social/alerts-and-announcements.md#creating-alerts-and-announcements) to display high-priority information with a red *Important* tag. |
+| Announcements  | Adds an [Announcements widget](../../../../collaboration-and-social/alerts-and-announcements.md#creating-alerts-and-announcements) to display information without a red *Important* tag.     |
 | Recent Content | Adds a Recent Content widget showing the most recently created assets.                                                                                                                                                        |
 | RSS Publisher  | Adds a RSS Publisher widget showing posts from RSS feeds.                                                                                                                                                                     |
 

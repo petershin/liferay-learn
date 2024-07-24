@@ -40,9 +40,11 @@ For example, you may need to connect your Liferay Cloud services to directories 
 
     - **Port**: The VPN's local port number.
 
-    - **Communication Protocol**: UDP or TCP protocol for the connection.
+    - **Communication Protocol**: (OpenVPN only) UDP or TCP protocol for the connection.
 
     - **Compression Mode** (OpenVPN only): The compression algorithm to use for transmitted data (if any).
+
+    - **IKE Version**: (IPSec only) The VPN's Internet Key Exchange version. This field only appears when *IPSec* is selected as the protocol. Only *IKEv2* is supported.
 
     - **Authentication Method** (IPSec only): Choose EAP-MSCHAPv2, EAP-TLS, or a pre-shared key for authentication.
 
@@ -50,9 +52,12 @@ For example, you may need to connect your Liferay Cloud services to directories 
 
     - **Password**: The administrator's password.
 
-    - **IKE Version**: The VPN's Internet Key Exchange version. This field only appears when *IPSec* is selected as the protocol. Only *IKEv2* is supported.
+    - **CA Certificate**, **Server Certificate** and **Client Certificate**: The certificate code.
 
-    - **CA Certificate**: The certificate code.
+    - **Pre-shared Key**: (IPSec + Preshared-Key only) The pre-shared key used to authenticate the connection.
+
+    !!! tip
+        It's good practice to periodically update your PSK (pre-shared key). You can generate new PSKs or revoke existing ones in the VPN details page.
 
 1. If you're using OpenVPN and your VPN requires a valid client certificate, add a TLS certificate and key.
 

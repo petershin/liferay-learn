@@ -20,44 +20,44 @@ For example, you may need to connect your Liferay Cloud services to directories 
 
 1. Click *Create New VPN*.
 
-    ![Click Create New VPN from your environment's Settings page.](./connecting-a-vpn-server-to-liferay-cloud/images/01.png)
+   ![Click Create New VPN from your environment's Settings page.](./connecting-a-vpn-server-to-liferay-cloud/images/01.png)
 
 1. Enter a name for the VPN connection and (optionally) a description.
 
 1. Select the connection protocol to use. Here are the supported protocols:
 
-    - [OpenVPN](https://openvpn.net)
+   - [OpenVPN](https://openvpn.net)
 
-    - [IPSec](https://www.cloudflare.com/learning/network-layer/what-is-ipsec/)
+   - [IPSec](https://www.cloudflare.com/learning/network-layer/what-is-ipsec/)
 
-    ![Select the protocol to use to connect to a VPN.](./connecting-a-vpn-server-to-liferay-cloud/images/02.png)
+   ![Select the protocol to use to connect to a VPN.](./connecting-a-vpn-server-to-liferay-cloud/images/02.png)
 
-    Selecting a protocol reveals the required fields to connect with it below.
+   Selecting a protocol reveals the required fields to connect with it below.
 
 1. Fill in the VPN's required fields:
 
-    - **Server**: The server's IP address.
+   - **Server**: The server's IP address.
 
-    - **Port**: The VPN's local port number.
+   - **Port**: The VPN's local port number.
 
-    - **Communication Protocol**: (OpenVPN only) UDP or TCP protocol for the connection.
+   - **Communication Protocol**: (OpenVPN only) UDP or TCP protocol for the connection.
 
-    - **Compression Mode** (OpenVPN only): The compression algorithm to use for transmitted data (if any).
+   - **Compression Mode** (OpenVPN only): The compression algorithm to use for transmitted data (if any).
 
-    - **IKE Version**: (IPSec only) The VPN's Internet Key Exchange version. This field only appears when *IPSec* is selected as the protocol. Only *IKEv2* is supported.
+   - **IKE Version**: (IPSec only) The VPN's Internet Key Exchange version. This field only appears when *IPSec* is selected as the protocol. Only *IKEv2* is supported.
 
-    - **Authentication Method** (IPSec only): Choose EAP-MSCHAPv2, EAP-TLS, or a pre-shared key for authentication.
+   - **Authentication Method** (IPSec only): Choose EAP-MSCHAPv2, EAP-TLS, or a pre-shared key for authentication.
 
-    - **Account Name**: The administrator's email address.
+   - **Account Name**: The administrator's email address.
 
-    - **Password**: The administrator's password.
+   - **Password**: The administrator's password.
 
-    - **CA Certificate**, **Server Certificate** and **Client Certificate**: The certificate code.
+   - **CA Certificate**, **Server Certificate** and **Client Certificate**: The certificate code.
 
-    - **Pre-shared Key**: (IPSec + Preshared-Key only) The pre-shared key used to authenticate the connection.
+   - **Pre-shared Key**: (IPSec + Preshared-Key only) The pre-shared key created by your VPN server. 
 
-    !!! tip
-        It's good practice to periodically update your PSK (pre-shared key). You can generate new PSKs or revoke existing ones in the VPN details page.
+   !!! tip
+       It's good practice to periodically update your PSK (pre-shared key). You can generate new PSKs or revoke existing ones in the VPN details page.
 
 1. If you're using OpenVPN and your VPN requires a valid client certificate, add a TLS certificate and key.
 
@@ -65,20 +65,20 @@ For example, you may need to connect your Liferay Cloud services to directories 
 
 1. (Optional) Select an auto hash function used to generate an HMAC signature for data authenticity and the encryption algorithm used. The default values are `SHA256` and `AES-256-CBC`, respectively.
 
-    ![Change the auto hash function and encryption cipher to the desired algorithms while you're setting up your VPN connection.](./connecting-a-vpn-server-to-liferay-cloud/images/03.png)
+   ![Change the auto hash function and encryption cipher to the desired algorithms while you're setting up your VPN connection.](./connecting-a-vpn-server-to-liferay-cloud/images/03.png)
 
 1. Enter one or more port forwarding routes for your VPN connection. Fill in the required fields for each route:
 
-    - **Forwarded Port**: The port number within the Liferay Cloud environment to forward.
+   - **Forwarded Port**: The port number within the Liferay Cloud environment to forward.
 
-    - **Destination IP**: The IP address of the customer network interfacing with the VPN.
+   - **Destination IP**: The IP address of the customer network interfacing with the VPN.
 
-    - **Destination Port**: The port of the customer network interfacing with the VPN.
+   - **Destination Port**: The port of the customer network interfacing with the VPN.
 
-    ![Add one or more port forwarding routes before creating the VPN connection.](./connecting-a-vpn-server-to-liferay-cloud/images/04.png)
+   ![Add one or more port forwarding routes before creating the VPN connection.](./connecting-a-vpn-server-to-liferay-cloud/images/04.png)
 
-    !!! tip
-        Add more port forwarding routes by clicking the + icon on the right side. Remove added routes by clicking the Trash icon beside the existing route.
+   !!! tip
+       Add more port forwarding routes by clicking the + icon on the right side. Remove added routes by clicking the Trash icon beside the existing route.
 
 1. Click *Create VPN*.
 
@@ -137,7 +137,7 @@ You can completely remove a VPN configuration by using the *Delete VPN* option.
 
 1. On the Delete VPN page, check the checkbox to confirm the deletion. More checkboxes appear to confirm the effects if the VPN is connected at the time.
 
-    ![The Delete VPN page.](./connecting-a-vpn-server-to-liferay-cloud/images/11.png)
+   ![The Delete VPN page.](./connecting-a-vpn-server-to-liferay-cloud/images/11.png)
 
 1. Click Delete VPN at the bottom of the page.
 

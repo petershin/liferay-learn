@@ -192,30 +192,30 @@ Code:
    :lines: 11-22
 ```
 
-All the users from your instance are listed in the JSON response.
+All the users from your instance appear in the JSON response.
 
 ### Filtering, Paginating, Searching, and Sorting Orders
 
 Users returned by this API can be filtered, paginated, searched, and sorted. See the [`getUserAccountsPage`](https://github.com/liferay-content-solutions/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-user/headless-admin-user-client/src/main/java/com/liferay/headless/admin/user/client/resource/v1_0/UserAccountResource.java#L272-L275) method for more information. Use the following `UserAccount` fields to filter, search, and sort the results:
 
-* keywords
-* roleNames
-* userGroupRoleNames
-* birthDate
-* dateCreated
-* dateModified
-* lastLoginDate
-* organizationIds
-* roleIds
-* userGroupIds
+* `keywords`
+* `roleNames`
+* `userGroupRoleNames`
+* `birthDate`
+* `dateCreated`
+* `dateModified`
+* `lastLoginDate`
+* `organizationIds`
+* `roleIds`
+* `userGroupIds`
 * {bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA132+` status
-* alternateName
-* screenName
-* emailAddress
-* familyName
-* givenName
-* jobTitle
-* name
+* `alternateName`
+* `screenName`
+* `emailAddress`
+* `familyName`
+* `givenName`
+* `jobTitle`
+* `name`
 
 | Filter Query                     | Description                                                                                  |
 | :------------------------------- | :------------------------------------------------------------------------------------------- |

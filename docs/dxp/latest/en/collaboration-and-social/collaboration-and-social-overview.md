@@ -29,7 +29,7 @@ To begin using the Message Board app to build a forum, see [Getting Started with
 
 ## Wiki
 
-DXP includes a full-featured Wiki application that provides a rich writing environment, article versioning, and support for multiple wiki nodes. Wikis in DXP are completely integrated with the portal's [user management](https://help.liferay.com/hc/articles/360029131931-Introduction-to-Managing-Users), [tagging](https://help.liferay.com/hc/articles/360028820472-Tagging-Content), and [security](https://help.liferay.com/hc/articles/360028711192-Introduction-to-Securing-Liferay-DXP) features.
+DXP includes a full-featured Wiki application that provides a rich writing environment, article versioning, and support for multiple wiki nodes. Wikis in DXP are completely integrated with the portal's [User Management](../../../../analytics-cloud/latest/en/workspace-settings/managing-users.md), [Tagging](../content-authoring-and-management/tags-and-categories.md), and [Security](../../../../courses/latest/en/liferay-administrator/security.md) features.
 
 ![The Wiki widget displays your wiki on a site page.](./collaboration-and-social-overview/images/02.png)
 
@@ -58,6 +58,6 @@ Once the user has been invited, they can confirm or ignore the request.
 
 ## Knowledge Base
 
-The _Knowledge Base_ app can be used to display professional product documentation or form complete books or guides. Content writers can use multiple formats, including markdown. Furthermore, Knowledge Base are integrated with the [workflow engine](https://help.liferay.com/hc/articles/360028721732-Introduction-to-Workflow) so content editors can review and approve articles before publication.
+The _Knowledge Base_ app can be used to display professional product documentation or form complete books or guides. Content writers can use multiple formats, including markdown. Furthermore, Knowledge Base are integrated with the [Workflow Engine](../process-automation/workflow/introduction-to-workflow.md) so content editors can review and approve articles before publication.
 
 ![The Knowledge Base widget can also be used to publish articles.](./collaboration-and-social-overview/images/06.png)

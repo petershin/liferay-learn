@@ -252,6 +252,26 @@ lcp deploy -r <remote-id>
 
 See [Deploying Changes via the CLI Tool](../updating-services-in-liferay-paas/deploying-changes-via-the-cli-tool.md) for more information.
 
+## Downloading Files from a Service
+
+Use the `files download` command to directly download files from the Liferay service. The files must be in the Liferay service's persistent storage directory (`/mnt/persistent-storage/`).
+
+For example:
+
+```bash
+lcp deploy --prefix path/to/files --dest destination
+```
+
+This command downloads all files from your Liferay service's `/mnt/persistent-storage/path/to/files/` directory into a `destination/` folder.
+
+Change the number of files downloading at once (by default 100) with the `--concurrency` flag.
+
+For example, this command downloads all files from the `/mnt/persistent-storage/path/to/files/` directory into the current working directory, up to 600 files at a time.
+
+```bash
+lcp deploy --prefix path/to/files --concurency 600
+```
+
 ## Accessing a Service's Shell
 
 To access a service container's shell, run this command:

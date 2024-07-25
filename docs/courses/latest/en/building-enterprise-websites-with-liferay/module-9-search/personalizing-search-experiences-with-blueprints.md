@@ -258,6 +258,8 @@ Next, you'll learn how you can use Liferay Objects to build forms.
 
 ## Conclusion
 
-Congratulations! You've completed Module 9 - Search.
+Congratulations! You've completed Module 9 - Search. Throughout this module, you learned about working with the various tools and features Liferay Search offers. 
 
-[Back to Building Enterprise Websites with Liferay](../../building-enterprise-websites-with-liferay.md)
+In the next module, you'll learn about building applications in Liferay.
+
+Up Next: [Module 10 - Building Applications](../module-10-building-applications.md)

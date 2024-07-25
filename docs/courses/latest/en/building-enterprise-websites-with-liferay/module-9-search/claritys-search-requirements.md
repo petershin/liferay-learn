@@ -19,6 +19,6 @@ Clarity does not want to relive the challenges they had with their legacy system
 
 ## Conclusion
 
-Now that you understand Clarity's search requirements, let's first take some to understand what Liferay search is and how it works.
+Now that you understand Clarity's search requirements, let's first dive into what Liferay search is and how it works.
 
-Next Up: [Working with Liferay search](./module-9-search/working-with-liferay-search.md)
+Next Up: [Working with Liferay search](./working-with-liferay-search.md)

@@ -7,7 +7,7 @@ Before we talk about searching for Clarity products and site content, let's lear
 
 ## About Liferay Search
 
-Liferay search works in conjunction with [Elasticsearch](https://www.elastic.co/elasticsearch), a best-of-breed search engine built for modern web applications. By leveraging the power of Elastic search, together with its own search infrastructure, Liferay search offers:
+Liferay search works in conjunction with [Elasticsearch](https://www.elastic.co/elasticsearch), a best-of-breed search engine built for modern web applications. By leveraging the power of Elasticsearch, together with its own search infrastructure, Liferay search offers:
 
 * Comprehensive indexing that supports a wide range of content types (e.g. blogs, documents, web content, etc.)
 * Search facets and search filters
@@ -22,22 +22,17 @@ Let's take a closer look at how some of this works.
 Liferay stores its information in a database. However, directly searching database tables can be a time-consuming task. Therefore most of Liferay's entities utilize a search index. Whenever a Liferay entity is created, a separate entry is also created in the search index by Liferay's indexer framework. Each entry has a collection of fields for that entity. For example, a blog entry might contain index fields for the title, content, tags, etc. This index is then used by Elasticsearch to provide an effective and efficient way to search for data. Some of the Liferay entities that utilize the search index out of the box are:
 
 * Blog entries
-* Categories
+* Categories and tags
 * Documents and media
-* Knowledge base articles
-* Message board messages and thread
 * Objects
-* Organizations
-* Users
-* Tags
+* Users and organizations
 * Web content articles
-* Wiki pages
 
 Therefore, anytime a search is performed, the query occurs against the search index and not the database tables of each asset. The results of the query are then referenced back to the original assets when the search results are displayed to the user.
 
 ### Refining Search
 
-Together with Liferay's search index, Elasticsearch provides a powerful and effective way to quickly get search results. These search results can be further refined through the use of facets, sorting, and more.
+Together with Liferay's search index, Elasticsearch provides a powerful and effective way to quickly get search results. These search results can be further refined through the use of facets, sorting, and custom search parameters.
 
 Search facets are a way to refine search results across specific content and criteria. Out of the box, Liferay offers a collection of different search facets. For example, a type facet could be used by a visitor to quickly filter out blog entries, documents, or site pages. We'll see in the next lesson how category facets can be used by Clarity to filter across their products.
 

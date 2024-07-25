@@ -48,8 +48,8 @@ If your path includes upgrading to Liferay Portal 6.2, follow the [Liferay Porta
 
 Features and configuration defaults may change in new versions of Liferay. See the reference section or the following articles for the most recent deprecations and changes to features and to settings:
 
-- [Maintenance Mode and Deprecations](./reference/maintenance-mode-and-deprecations-in-7-3.md)
-- [Default Setting Changes](./reference/default-setting-changes-in-7-3.md)
+- [Maintenance Mode and Deprecations](./reference/maintenance-mode-and-deprecations-in-7-4.md)
+- [Default Setting Changes](./reference/default-setting-changes-in-7-4.md)
 
 ### Request an Upgrade Patch (Subscription)
 

@@ -30,9 +30,9 @@ To do this,
    * Email: `walter.douglas@clarityvisionsolutions.com`
    * Password: `learn`
 
-1. Go to Clarity's *Open Positions* page and click *Edit* (![Edit Button](../../images/icon-edit.png)).
+1. Go to Clarity's *Open Positions* page and click *Edit* (![Edit Button](../images/icon-edit.png)).
 
-1. Open the *Fragments and Widgets* tab (![Fragments and Widgets](../../images/icon-plus.png)) in the side panel.
+1. Open the *Fragments and Widgets* tab (![Fragments and Widgets](../images/icon-plus.png)) in the side panel.
 
 1. Go to the *Widgets* tab.
 
@@ -48,11 +48,11 @@ To do this,
 
 1. From the *Fragments and Widgets* menu, drag and drop a *Type Facet* widget into the grid's left dropzone.
 
-1. Hover over the widget, click *Actions* (![Actions Button](../../images/icon-actions.png)) in the top right corner of the widget, and select *Configuration*.
+1. Hover over the widget, click *Actions* (![Actions Button](../images/icon-actions.png)) in the top right corner of the widget, and select *Configuration*.
 
-1. Use the right arrow button (![Right Arrow Button](../../images/icon-angle-right.png)) to remove all asset types except for Web Content Article.
+1. Use the right arrow button (![Right Arrow Button](../images/icon-angle-right.png)) to remove all asset types except for Web Content Article.
 
-   ![Configure the asset type to only include web content articles.](./understanding-and-customizing-search-results-pages/images/01.png)
+   ![Configure the asset type to only include web content articles.](./pdf-images/day2/lesson17/01.png)
 
    This ensures that only web content articles appear in search results.
 
@@ -60,11 +60,11 @@ To do this,
 
 1. From the *Fragments and Widgets* menu, drag and drop three *Category Facet* widgets into the left dropzone of the grid fragment, under the type facet widget.
 
-1. Hover over the first Category Facet widget, click the *Actions* button (![Actions Button](../../images/icon-actions.png)) in the top right corner of the widget, and select *Configuration*.
+1. Hover over the first Category Facet widget, click the *Actions* button (![Actions Button](../images/icon-actions.png)) in the top right corner of the widget, and select *Configuration*.
 
 1. For Display Template, select the *Clarity Search Category* template.
 
-   ![You can select a display template for the category facet.](./understanding-and-customizing-search-results-pages/images/02.png)
+   ![You can select a display template for the category facet.](./pdf-images/day2/lesson17/02.png)
 
 1. For Category Parameter Name, enter a unique value (e.g., `category-region`). 
 
@@ -74,7 +74,7 @@ To do this,
 
 1. Expand the *Clarity Enterprise Website* vocabularies and select the *Region* vocabulary.
 
-   ![The widget will only show the categories from the Region vocabulary.](./understanding-and-customizing-search-results-pages/images/03.png)
+   ![The widget will only show the categories from the Region vocabulary.](./pdf-images/day2/lesson17/03.png)
 
 1. Click *Save* and close the window.
 
@@ -90,7 +90,7 @@ To do this,
 
 1. From the *Fragments and Widgets* menu, drag and drop a *Search Options* widget below the grid fragment in the *Search Results and Options* container.
 
-1. Hover over the Search Options widget, click *Actions* (![Actions Button](../../images/icon-actions.png)) in the top right corner of the widget, and select *Configuration*.
+1. Hover over the Search Options widget, click *Actions* (![Actions Button](../images/icon-actions.png)) in the top right corner of the widget, and select *Configuration*.
 
 1. Check *Allow Empty Searches*.
 
@@ -98,11 +98,11 @@ To do this,
 
 1. Click *Publish*.
 
-   ![You can now search for open job positions.](./understanding-and-customizing-search-results-pages/images/04.png)
+   ![You can now search for open job positions.](./pdf-images/day2/lesson17/04.png)
 
    Finally, let's update the *Explore Open Positions* button in the Careers page to link to the Open Positions page.
 
-1. Go to the *Careers* page and begin editing it (![Edit Button](../../images/icon-edit.png)).
+1. Go to the *Careers* page and begin editing it (![Edit Button](../images/icon-edit.png)).
 
 1. Double click the banner's *Explore Open Positions* button to open the configuration side panel for the button's link element.
 
@@ -119,7 +119,7 @@ Now that you've added search functionality to Clarity's open positions page, sit
 
 Next, you'll apply these search concepts to Clarity's product pages.
 
-## Exercise 17: Adding Search Capabilities to Product Pages
+## Exercise: Adding Search Capabilities to Product Pages
 
 <!-- ## Exercise 17b: Adding Search Capabilities to Product Pages -->
 
@@ -129,13 +129,13 @@ To do this,
 
 1. Go to Clarity's *Product List* page. Most of the page is already built with different search widgets.
 
-   ![The product list page is made up of different widgets.](./understanding-and-customizing-search-results-pages/images/05.png)
+   ![The product list page is made up of different widgets.](./pdf-images/day2/lesson17/05.png)
 
    The left side module is made up of a search bar widget, a specification facet widget, and an option facet widget. The right side module is made up of a sort widget and a search results widget. Note that the search results widget under the commerce category of widgets is different from the search results widget under the search category of widgets. Only the commerce-related widget returns products.
 
    Below these two modules, there is a search options widget. If you inspect the configuration of this widget, you will see that *Allow Empty Searches* is enabled. This setting is enabled so that all available assets are shown without any search queries.
 
-1. In the top menubar, click *Edit* (![Edit Button](../../images/icon-edit.png)).
+1. In the top menubar, click *Edit* (![Edit Button](../images/icon-edit.png)).
 
    The page is still missing a category facet widget that would allow visitors to filter by the different types of Clarity products. Let's go ahead and add that widget.
 
@@ -149,7 +149,7 @@ To do this,
 
 1. Click *Publish*.
 
-   ![Use the category facet widget to filter by product category.](./understanding-and-customizing-search-results-pages/images/06.png)
+   ![Use the category facet widget to filter by product category.](./pdf-images/day2/lesson17/06.png)
 
 Great! You've included a category facet widget on the Product List page, allowing customers to filter their search results by product category.
 
@@ -167,11 +167,11 @@ Here you'll further limit the search results to only display Job Listings web co
 
 To do this,
 
-1. Go to Clarity's *Open Positions* page and click *Edit* (![Edit Button](../../images/icon-edit.png)).
+1. Go to Clarity's *Open Positions* page and click *Edit* (![Edit Button](../images/icon-edit.png)).
 
 1. From the *Fragments and Widgets* menu, drag and drop a *Custom Filter* widget below the grid fragment in the *Search Results and Options* container.
 
-1. Hover over the Custom Filter widget, click *Actions* (![Actions Button](../../images/icon-actions.png)) in the top right corner of the widget, and select *Configuration*.
+1. Hover over the Custom Filter widget, click *Actions* (![Actions Button](../images/icon-actions.png)) in the top right corner of the widget, and select *Configuration*.
 
 1. Enter these values:
 
@@ -185,7 +185,7 @@ To do this,
 
 1. Publish the page. You should only see Job Listings displayed in the Search Results.
 
-   ![The Custom Filter widget limits the results to only display Job Listings.](./understanding-and-customizing-search-results-pages/images/07.png)
+   ![The Custom Filter widget limits the results to only display Job Listings.](./pdf-images/day2/lesson17/07.png)
 
 Great! You've set a custom filter widget that limits the search results to only display Job Listings web content in the Open Positions page.
 

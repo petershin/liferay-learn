@@ -22,11 +22,11 @@ To do this,
    * Username: `admin@clarityvisionsolutions.com`
    * Password: `learn`
 
-1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)), expand *Content and Data*, and select *Web Content*.
+1. Open the *Site Menu* (![Site Menu](../images/icon-product-menu.png)), expand *Content and Data*, and select *Web Content*.
 
 1. Click on the *Structures* tab and click *Job Listing*. In the very right, click the *Properties* (![Properties](../images/icon-cog3.png)) icon. Take note of the Structure Key ID (i.e. 34060).
 
-1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), navigate to *Applications* &rarr; *Blueprints*.
+1. Open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)), navigate to *Applications* &rarr; *Blueprints*.
 
 1. Click the add button to add a new search blueprint. Enter `Job Listings Last 60 Days` as the title and click *Create*.
 
@@ -34,7 +34,7 @@ To do this,
 
 1. In the *Field* field, enter `ddmStructureKey`. In the *Values* field, enter the Structure Key ID of the job listing web content structure (e.g. 34060).
 
-   ![Add the filter by exact terms match element to the search blueprint.](./personalizing-search-experiences-with-blueprints/images/01.png)
+   ![Add the filter by exact terms match element to the search blueprint.](./pdf-images/day2/lesson18/01.png)
 
 1. In the left navigation, click *Query Settings*.
 
@@ -44,7 +44,7 @@ To do this,
 
 1. In the top menu, click *Preview* to preview the Search Blueprint in action. For example, search for the term `Developer` to see developer related results.
 
-1. Click *Add* (![Add Button](../../images/icon-add.png)) to add another query element above the first one.
+1. Click *Add* (![Add Button](../images/icon-add.png)) to add another query element above the first one.
 
 1. Expand the *CUSTOM* section and find the *Custom JSON Element* element. Click *Add* for the element.
 
@@ -52,7 +52,7 @@ To do this,
 
 1. Replace the sample code in the JSON Text Area with the data from the file.
 
-   ![Add a custom element with the JSON snippet.](./personalizing-search-experiences-with-blueprints/images/02.png)
+   ![Add a custom element with the JSON snippet.](./pdf-images/day2/lesson18/02.png)
 
 1. In the top menu, click *Preview* to preview the Search Blueprint in action. For example, search for the term `Developer` to see developer related results. In the custom JSON element try editing the logic by changing `now-60d` to `now-1d`. Try another preview search.
 
@@ -60,11 +60,11 @@ To do this,
 
 Edit the Open Positions Page to use the search blueprints.
 
-1. Navigate to the *Open Positions* page (i.e. *Careers* &rarr; *Open Positions*). In the top menubar, click the edit page (![Edit Button](../../images/icon-edit.png)) icon.
+1. Navigate to the *Open Positions* page (i.e. *Careers* &rarr; *Open Positions*). In the top menubar, click the edit page (![Edit Button](../images/icon-edit.png)) icon.
 
 1. From the *Fragments and Widgets* menu, drag and drop a *Blueprints Options* widget to the bottom of the page below the *Search Options* widget.
 
-1. Click the *Actions* menu (![Actions](../../images/icon-actions.png)) and select *Configuration*. Click *Select* to choose a search blueprint.
+1. Click the *Actions* menu (![Actions](../images/icon-actions.png)) and select *Configuration*. Click *Select* to choose a search blueprint.
 
 1. Click *Select* for the *Job Listings Last 60 Days* blueprint. Click *Save* and close the window.
 
@@ -90,7 +90,7 @@ One simple way to leverage search blueprints is with collection providers. Every
 
 1. Create a site page with a calendar widget.
 
-   1. From the Site Menu (![Site Menu](../../images/icon-product-menu.png)), navigate to *Site Builder* &rarr; *Pages*.
+   1. From the Site Menu (![Site Menu](../images/icon-product-menu.png)), navigate to *Site Builder* &rarr; *Pages*.
 
    1. Click *New* and select *Page*.
 
@@ -108,11 +108,11 @@ One simple way to leverage search blueprints is with collection providers. Every
 
    1. Add one more event after Future Event 1 and enter `Future Event 2` as the name and click *Save*.
 
-      ![The calendar has one past event and two future events.](./personalizing-search-experiences-with-blueprints/images/03.png)
+      ![The calendar has one past event and two future events.](./pdf-images/day2/lesson18/03.png)
 
 1. Enable the Collections with Search Blueprints feature flag.
 
-   1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), navigate to *Control Panel* &rarr; *Instance Settings*.
+   1. Open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)), navigate to *Control Panel* &rarr; *Instance Settings*.
 
    1. Click *Feature Flags* and select *Beta* in the left navigation. Enable `Collections with Search Blueprints (LPS-129412)`.
 
@@ -140,13 +140,13 @@ One simple way to leverage search blueprints is with collection providers. Every
 
    1. In the left navigation, click *Query Settings*. Change the searchable type to *Selected Types*. Click *Select Asset Types* and check *Calendar Event* and click *Done*.
 
-      ![Change the asset type to calendar event.](./personalizing-search-experiences-with-blueprints/images/04.png)
+      ![Change the asset type to calendar event.](./pdf-images/day2/lesson18/04.png)
 
    1. Click *Save* for the blueprint.
 
 1. Create a future events site page with a collection provider.
 
-   1. From the Site Menu (![Site Menu](../../images/icon-product-menu.png)), navigate to *Site Builder* &rarr; *Pages*.
+   1. From the Site Menu (![Site Menu](../images/icon-product-menu.png)), navigate to *Site Builder* &rarr; *Pages*.
 
    1. Click *New* and select *Page*.
 
@@ -156,7 +156,7 @@ One simple way to leverage search blueprints is with collection providers. Every
 
    1. Select *Fragments and Widgets* in the left menu and select the *Fragments* tab. In the search bar, search for `collection` and find the *Collection Display* fragment. Drag the fragment onto the page.
 
-   1. Click on the *Collection Display* fragment you just added. In the configuration menu on the right, click *Select Collection* (![Select Collection](../../images/icon-plus.png)).
+   1. Click on the *Collection Display* fragment you just added. In the configuration menu on the right, click *Select Collection* (![Select Collection](../images/icon-plus.png)).
 
    1. In the new window select the *Collection Providers* tab. Select the *Future Events* collection provider.
 
@@ -164,7 +164,7 @@ One simple way to leverage search blueprints is with collection providers. Every
 
    1. Click *Publish*.
 
-      ![The collection display shows the future events.](./personalizing-search-experiences-with-blueprints/images/05.png)
+      ![The collection display shows the future events.](./pdf-images/day2/lesson18/05.png)
 
       The search blueprint automatically provides a collection of future events.
 
@@ -201,7 +201,7 @@ Occasionally businesses need to integrate with other web services. For example, 
 
 1. From the Global Menu, navigate to *Applications* &rarr; *Blueprints*.
 
-1. Click *Add* (![Add Button](../../images/icon-add.png)) to begin creating a search blueprint.
+1. Click *Add* (![Add Button](../images/icon-add.png)) to begin creating a search blueprint.
 
 1. For title, enter `RegistrationId` and click *Create*.
 
@@ -214,7 +214,7 @@ Occasionally businesses need to integrate with other web services. For example, 
    | Field  | `expando__keyword__custom_fields__RegistrationId_long` |
    | Values | `${keywords}`                                          |
 
-   ![Set the field and value for the query element.](./personalizing-search-experiences-with-blueprints/images/06.png)
+   ![Set the field and value for the query element.](./pdf-images/day2/lesson18/06.png)
 
 1. Click *Save* and take note of ID number of the search blueprint (e.g. `32256`).
 
@@ -246,7 +246,7 @@ Occasionally businesses need to integrate with other web services. For example, 
 
 1. Verify this returns Ian Miller's user information.
 
-   ![The API response returns Ian Miller's user account.](./personalizing-search-experiences-with-blueprints/images/07.png)
+   ![The API response returns Ian Miller's user account.](./pdf-images/day2/lesson18/07.png)
 
    In this way, Liferay can be set up as a headless system that can be utilized by a third-party service.
 

@@ -30,14 +30,14 @@ Preparation and planning may be of little consequence for small, casual installa
 
 ### Review Available Upgrade Paths
 
-Look up your current Liferay DXP/Portal version in this table to determine your installation upgrade path.
+Use the table below to determine your upgrade path, based on your version of Liferay.
 
 | Upgrade Path                                                                  | Description                                                  |
 | :---------------------------------------------------------------------------- | :----------------------------------------------------------- |
 | Liferay Portal 6.1+ &rarr; DXP 7.4                                            |                                                              |
 | Liferay Portal 5.x and 6.0.x &rarr; Liferay Portal 6.2 &rarr; Liferay DXP 7.4 | Support life ended for Liferay Portal 5.0, 5.1, 5.2, and 6.0 |
 
-If you're upgrading Liferay Portal to a new GA for the same minor version (for example, upgrading from 7.3 GA1 to GA2) and there are no data schema changes, you can start using the new GA immediately. If the schema changed, a startup message reports the new data schema version that you must [upgrade your database to](#executing-the-database-upgrade)--invoking an upgrade with a [Docker image](./upgrade-basics/upgrading-via-docker.md) is easiest.
+If you're upgrading Liferay Portal to a new GA for the same minor version (for example, upgrading from 7.3 GA1 to GA2) and there are no data schema changes, you can start using the new GA immediately. If the schema changed, a startup message reports the new data schema version that you must [upgrade your database to](#executing-the-database-upgrade)---invoking an upgrade with a [Docker image](./upgrade-basics/upgrading-via-docker.md) is easiest.
 
 If your path includes upgrading to Liferay Portal 6.2, follow the [Liferay Portal 6.2 upgrade instructions](https://help.liferay.com/hc/en-us/articles/360017903232-Upgrading-Liferay) first.
 

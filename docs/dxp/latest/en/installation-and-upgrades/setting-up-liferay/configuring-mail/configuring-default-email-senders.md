@@ -9,9 +9,14 @@ taxonomy-category-names:
 ---
 # Configuring Default Email Senders
 
-By default, emails sent by Liferay DXP use the name and email address as the default admin user. This behavior can be configured for each of the different email types. To change the default email sender for most applications, follow these steps:
+By default, emails sent by Liferay DXP use the name and email address as the default admin user. This behavior can be configured for each of the different email types. Some applications don't use the default email sender, and you must configure their email senders independently. You can configure email senders through the UI or through their individual [portal properties](#using-portal-properties-to-override-the-default-email-sender-for-a-specific-application).
 
-1. Open the *Product Menu* and navigate to the *Control Panel* &rarr; *Configuration* &rarr; *Instance Settings*.
+!!! note
+    Default values for these applications' email senders are set in the [portal properties](#using-portal-properties-to-configure-the-default-email-sender).
+
+## Changing the Default Email Sender
+
+1. Open the *Global Menu* and navigate to the *Control Panel* &rarr; *Configuration* &rarr; *Instance Settings*.
 
    ![Locating the Email configuration option in the Instance Settings menu.](./configuring-default-email-senders/images/01.png)
 
@@ -28,26 +33,7 @@ By default, emails sent by Liferay DXP use the name and email address as the def
 
 1. Click *Save*.
 
-You can also configure the applications that use the default email sender through their individual [portal properties](#using-portal-properties-to-override-the-default-email-sender-for-a-specific-application).
-
-## Changing the Email Sender for Specific Components
-
-Some applications don't use the default email sender and you must configure their email sender independently:
-
-- [Web Content](#changing-the-email-sender-for-web-content)
-- [Knowledge Base](#changing-the-email-sender-for-knowledge-base)
-- [Wiki](#changing-the-email-sender-for-wiki)
-- [Bookmarks](#changing-the-email-sender-for-bookmarks)
-- [Comments](#changing-the-email-sender-for-comments)
-- [Flags](#changing-the-email-sender-for-flags)
-- [Reports](#changing-the-email-sender-for-reports)
-- [Multi-Factor Authentication](#changing-the-email-sender-for-multi-factor-authentication)
-- [Announcements](#changing-the-email-sender-for-announcements)
-
-!!! note
-    The default values for these applications' email senders before configuration are the ones set in the [portal properties](#using-portal-properties-to-configure-the-default-email-sender).
-
-### Changing the Email Sender for Web Content
+## Changing the Email Sender for Web Content
 
 1. Navigate to *Control Panel* &rarr; *Instance Settings* &rarr; *Web Content*.
 
@@ -57,7 +43,7 @@ Some applications don't use the default email sender and you must configure thei
 
 1. Scroll down to the bottom of the page and click *Save*.
 
-### Changing the Email Sender for Knowledge Base
+## Changing the Email Sender for Knowledge Base
 
 1. Navigate to *Control Panel* &rarr; *Instance Settings* &rarr; *Knowledge Base*.
 
@@ -65,7 +51,7 @@ Some applications don't use the default email sender and you must configure thei
 
 1. Scroll down to the bottom of the page and click *Save*.
 
-### Changing the Email Sender for Wiki
+## Changing the Email Sender for Wiki
 
 1. Navigate to *Control Panel* &rarr; *Instance Settings* &rarr; *Wiki*.
 
@@ -73,7 +59,7 @@ Some applications don't use the default email sender and you must configure thei
 
 1. Scroll down to the bottom of the page and click *Save*.
 
-### Changing the Email Sender for Bookmarks
+## Changing the Email Sender for Bookmarks
 
 1. Navigate to *Control Panel* &rarr; *Instance Settings* &rarr; *Community Tools*.
 
@@ -83,7 +69,7 @@ Some applications don't use the default email sender and you must configure thei
 
 1. Scroll down to the bottom of the page and click *Save*.
 
-### Changing the Email Sender for Comments
+## Changing the Email Sender for Comments
 
 1. Navigate to *Control Panel* &rarr; *Instance Settings* &rarr; *Comments*.
 
@@ -91,7 +77,7 @@ Some applications don't use the default email sender and you must configure thei
 
 1. Scroll down to the bottom of the page and click *Save*.
 
-### Changing the Email Sender for Flags
+## Changing the Email Sender for Flags
 
 1. Navigate to *Control Panel* &rarr; *Instance Settings* &rarr; *Community Tools*.
 
@@ -99,7 +85,7 @@ Some applications don't use the default email sender and you must configure thei
 
 1. Scroll down to the bottom of the page and click *Save*.
 
-### Changing the Email Sender for Reports
+## Changing the Email Sender for Reports
 
 1. Navigate to *Control Panel* &rarr; *Instance Settings* &rarr; *Reports*.
 
@@ -107,7 +93,7 @@ Some applications don't use the default email sender and you must configure thei
 
 1. Scroll down to the bottom of the page and click *Save*.
 
-### Changing the Email Sender for Multi-Factor Authentication
+## Changing the Email Sender for Multi-Factor Authentication
 
 1. Navigate to *Control Panel* &rarr; *Instance Settings* &rarr; *Comments*.
 
@@ -125,7 +111,7 @@ admin.email.from.address=test@domain.invalid
 ```
 
 !!! important
-    If you've changed one of the email senders using the UI, changing the portal property does not override it.
+    Once you change an email sender via the UI, you can no longer modify it through `portal-ext.properties`. 
 
 ## Using Portal Properties to Override the Default Email Sender for a Specific Application
 
@@ -145,7 +131,7 @@ blogs.email.from.address=
 | Sites            | `sites.email.from.name`          | `sites.email.from.address`          |
 | Workflow         | `workflow.email.from.name`       | `workflow.email.from.address`       |
 
-### Changing the Email Sender for Announcements
+## Changing the Email Sender for Announcements
 
 Announcements don't use the default email sender. To configure the sender name and address for announcement emails you must use a `portal-ext.properties` file. Replace the following property values with your own:
 

@@ -35,9 +35,6 @@ You can use a client extension to add a new shipping engine to Liferay. This cli
 
 Now you have the tools to start and deploy the client extension(s) to Liferay. 
 
-```{include} /_snippets/run-liferay-portal.md
-```
-
 ## Examine the Shipping Engine Client Extension
 
 The `client-extensions/liferay-sample-commerce-shipping-engine/client-extension.yaml` file defines the shipping engine client extension in the sample workspace. There are three important blocks in the `.yaml` file that you must understand:

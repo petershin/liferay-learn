@@ -35,9 +35,6 @@ You can use a client extension to integrate with a new payment method in Liferay
 
 Now you have the tools to start and deploy the client extension(s) to Liferay. 
 
-```{include} /_snippets/run-liferay-portal.md
-```
-
 ## Examine the Payment Integration Client Extension
 
 The `client-extensions/liferay-sample-commerce-payment-integration/client-extension.yaml` file defines the payment integration client extension in the sample workspace. There are three important blocks in the `.yaml` file that you must understand:

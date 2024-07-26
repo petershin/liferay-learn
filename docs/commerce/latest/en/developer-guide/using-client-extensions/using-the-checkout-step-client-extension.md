@@ -40,9 +40,6 @@ To start developing client extensions,
 
 Now you have the tools to start and deploy the client extension(s) to Liferay. 
 
-```{include} /_snippets/run-liferay-portal.md
-```
-
 ## Examine the Checkout Step Client Extension
 
 The `client-extensions/liferay-sample-commerce-checkout-step/client-extension.yaml` file defines the checkout step client extension in the sample workspace. There are three important blocks in the `.yaml` file that you must understand:

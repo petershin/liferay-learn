@@ -14,3 +14,5 @@ taxonomy-category-names:
 - Liferay SaaS
 ---
 # Liferay Internals
+
+Liferay is a complex open-source platform built on several key technologies and architectural principles. Liferay is written mostly in Java and built on the OSGi framework, which provides a modular architecture for developing and deploying software. Through OSGi, each module is developed and deployed independently. This means you can install, update, or remove different modules/components independently and dynamically. Liferay uses a relational database to store its data. It has its own data model and abstraction layer to interact with the database.

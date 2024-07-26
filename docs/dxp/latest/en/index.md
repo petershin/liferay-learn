@@ -97,6 +97,7 @@ Welcome to the official documentation for the latest versions (7.3 and 7.4+) of 
 [Building Applications with Objects](./liferay-development/objects.md)
 [Developer Tools Overview](./liferay-development/tooling.md)
 [Client Extensions](./liferay-development/client-extensions.md)
+[Liferay Internals](./liferay-development/liferay-internals.md)
 :::
 
 :::{grid-item-card} Headless Delivery

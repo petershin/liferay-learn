@@ -5,7 +5,7 @@ toc:
   - ./objects/using-fragments-to-build-forms.md
   - ./objects/deploying-object-widgets-to-sites.md
   - ./objects/displaying-object-entries.md
-  - ./objects/displaying-object-entries-with-collection-providers.md
+  - ./objects/displaying-object-entries/displaying-object-entries-with-collection-providers.md
   - ./objects/enabling-workflows-for-objects.md
   - ./objects/picklists.md
   - ./objects/understanding-object-integrations.md

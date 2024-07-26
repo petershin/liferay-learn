@@ -21,16 +21,13 @@ Only changes to a template's pages and page elements are propagated to connected
 
 For this reason, site templates are primarily intended for maintaining pages across multiple sites. If you must create and maintain web content and other assets across sites, use [asset libraries](../../../content-authoring-and-management/asset-libraries.md).
 
-It's important to note that automatic propagation does note applies to certain content elements within Site Templates. The following section explores scenarios where changes might not apply automatically:
+It's important to note that automatic propagation does not apply to some page types in some situations.
 
-**Master Pages**: If a user edits the Master Page directly on a connected site, that edit breaks the connection between the Site Template's Master Page and the connected site's Master Page. Also, if the user disconnects, future changes made to the Site Template's Master Page is not propagate to that specific connected site because it's no longer referencing the Site Template version.
+**Master Pages**: If you directly edit the master page on a connected site, that edit breaks the connection between the site template's master page and the connected site's master page. Once that connection is broken, future changes made to the site template's master page do not propagate to the site. If you don't want users breaking this connection, use permissions to restrict their ability to edit the master page. 
 
-**Page Templates**: Edits made directly to a Page Template within the Site Template do not automatically propagate to connected sites. Since Page Templates define the layout structure, changes impact how content is arranged, not the content itself. These layout changes must to be applied to each page that uses the template.
+**Page Templates and Display Page Templates**: Edits to these templates within the site template do not propagate to connected sites. Changes to page or display page templates must be applied manually to the corresponding page types on connected sites.
 
-**Display Page Templates**: Similar to Page Templates, edits made to Display Page Templates within the Site Template do not propagate automatically to connected sites. Any changes to a Display Page Template must be manually applied to the corresponding page types on connected sites.
-
-**Utility Pages**: If you update a Utility Page in the Site Template, you must to manually integrate those changes into the relevant pages on connected sites that utilize the Utility Page.
-
+**Utility Pages**: If you update a utility page in the site template, you must manually integrate those changes.
 
 ## Enabling and Disabling Propagation
 
@@ -62,7 +59,7 @@ Alternatively, you can enable or disable automatic propagation via the site temp
 
 If you make changes to a site page inherited from a template, it is disconnected from the template's page and is not automatically propagated. To reconnect the site page to the template, you must discard your changes to the site page.
 
-Follow these steps to discard changes to a site page and resync it with its template:
+Follow these steps to discard changes to a site page and re-sync it with its template:
 
 1. Navigate to the site page.
 

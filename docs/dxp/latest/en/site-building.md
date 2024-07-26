@@ -1,5 +1,4 @@
 ---
-showChildrenCards: false
 toc:
   - ./site-building/getting-started-with-site-building.md
   - ./site-building/sites.md

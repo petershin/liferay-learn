@@ -11,11 +11,9 @@ taxonomy-category-names:
 
 # Alerts and Announcements
 
-## Sending Alerts and Announcements
-
 Use the Alerts or the Announcements widgets to broadcast important information.
 
-Alerts are for high-priority information (e.g. planned downtime alerts, security alerts, etc.) and come with a red *Important* tag. Conversely, Announcements are for all other information you might want to broadcast.
+Alerts are for high-priority information (e.g. planned downtime alerts, security alerts, etc.) and appear with a red *Important* tag. Conversely, Announcements are for all other information you might want to broadcast.
 
 !!! tip
     You can set the announcement's priority to Important to display the red *Important* tag in the message.
@@ -41,7 +39,7 @@ Administrators can create and manage announcements and alerts through the Announ
 
 Open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)), select the *Applications* tab, and click *Announcements and Alerts* under Communication.
 
-In the application, select the *Announcements* or the *Alerts* tab (1) to create (2), view (3), select and delete multiple entries (4), filter by site or role (5), sort entries (6), or use the actions menu (7) to edit and delete announcements or alerts.
+In the application, select the *Announcements* or the *Alerts* tab (1) to create (2), view (3), select, and delete multiple entries (4), filter by site or role (5), sort entries (6), or use the actions menu (7) to edit and delete announcements or alerts.
 
 Another way to create, display, and manage alerts and announcements is by using widgets:
 

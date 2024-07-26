@@ -13,7 +13,7 @@ taxonomy-category-names:
 
 # Questions Application
 
-> Available: Liferay DXP/Portal 7.3+
+{bdg-secondary}`Available: Liferay DXP/Portal 7.3+`
 
 The Questions app is a new UI of the Message Boards application, focused on presenting a question-and-answer format. The Questions app allows the creation of:
 

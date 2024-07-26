@@ -77,7 +77,7 @@ These limitations apply to Dynatrace:
 
 These limitations apply to the [Database service](../platform-services/database-service.md) in each Liferay Cloud environment:
 
-**Database Size**: The size limit for a database is normally 4 CPU cores, 15 GB of memory and 100 GB of disk storage. You can increase these limits with add-ons to your subscription.
+**Database Size**: The size limit for a database container is 4 CPU cores, 15 GB of memory and 100 GB of disk storage. You can increase these limits with add-ons to your subscription.
 
 **Downtime**: Database maintenance may cause downtime every few months. This downtime usually lasts about two minutes. This may not come with a notification in advance. You can set a [preferred maintenance window](../platform-services/database-service.md#database-maintenance-window-variables) to mitigate the impact of downtime.
 

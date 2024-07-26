@@ -30,7 +30,7 @@ When the changes are deployed, any portal property files put into the `liferay/c
 
 ## Organize OSGi Modules
 
-If you have custom OSGi modules used for your on-premises Liferay installation, then put all [OSGi module source code](https://learn.liferay.com/w/dxp/liferay-internals/extending-liferay/overriding-osgi-services) into the `liferay/modules/` folder (with the same workspace folder structure).
+If you have custom OSGi modules used for your self-hosted Liferay installation, put all [OSGi module source code](https://learn.liferay.com/w/dxp/liferay-internals/extending-liferay/overriding-osgi-services) into the `liferay/modules/` folder (with the same workspace folder structure).
 
 When the changes are deployed, custom module code is automatically compiled and then deployed to the `liferay` service container's `$LIFERAY_HOME/deploy/` folder.
 

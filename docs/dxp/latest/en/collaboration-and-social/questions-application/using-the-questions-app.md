@@ -9,16 +9,6 @@ taxonomy-category-names:
 ---
 # Using the Questions App
 
-> Available: Liferay DXP/Portal 7.3+
-
-The Questions app is a new UI of the Message Boards application, focused on presenting a question and answer format. The Questions app allows the creation of,
-
-**Topics:** Themes where questions are categorized
-**Questions:** A question inside the app
-**Answers:** An answer to a specific question
-
-When questions are created, Tags can also be used to help others find relevant content.
-
 ## Adding a Questions App to a Site
 
 To add the Questions app to a Site,

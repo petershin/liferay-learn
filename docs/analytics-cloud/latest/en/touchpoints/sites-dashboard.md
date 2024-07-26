@@ -117,7 +117,7 @@ The percentage of searches shows what percent of searches contained that search 
 
 ![Commonly used search terms are presented over a period time.](./sites-dashboard/images/05.png)
 
-Note that the Search Terms panel is based on the search query parameters that can be customized in settings.
+Note that the Search Terms panel is based on the search query parameters that can be customized in settings. To view the full list of interest topics, click *All Search Terms* at the bottom of the panel. Alternatively, click the *Search Terms* tab at the top of the screen.
 
 To view the full list of interest topics, click *All Interests* at the bottom of the panel. Alternatively, click the *Interests* tab at the top of the screen.
 

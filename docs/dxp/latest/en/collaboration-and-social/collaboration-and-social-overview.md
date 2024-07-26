@@ -29,7 +29,7 @@ To begin using the Message Board app to build a forum, see [Getting Started with
 
 ## Wiki
 
-DXP includes a full-featured Wiki application that provides a rich writing environment, article versioning, and support for multiple wiki nodes. Wikis in DXP are completely integrated with the portal's [User Management](../../../../analytics-cloud/latest/en/workspace-settings/managing-users.md), [Tagging](../content-authoring-and-management/tags-and-categories.md), and [Security](../../../../courses/latest/en/liferay-administrator/security.md) features.
+DXP includes a full-featured Wiki application that provides a rich writing environment, article versioning, and support for multiple wiki nodes. Wikis in DXP are completely integrated with the portal's [User Management](../users-and-permissions/users.md), [Tagging](../content-authoring-and-management/tags-and-categories.md), and [Permissions](../users-and-permissions/roles-and-permissions.md) features.
 
 ![The Wiki widget displays your wiki on a site page.](./collaboration-and-social-overview/images/02.png)
 

@@ -13,9 +13,8 @@ taxonomy-category-names:
 
 Email notifications are sent automatically to users based on events in the store. To send them, you must first create a *Notification Template*. Notification templates define the sender, trigger, and content of an email notification.
 
-```{note}
-To use Liferay Commerce's Notifications, first configure mail settings for your Liferay system. See [Configuring Mail](https://learn.liferay.com/w/dxp/installation-and-upgrades/setting-up-liferay/configuring-mail) for more information.
-```
+!!! note
+    To use notifications in Commerce, first configure mail settings for your Liferay system. See [Configuring Mail](https://learn.liferay.com/w/dxp/installation-and-upgrades/setting-up-liferay/configuring-mail) for more information.
 
 ## Event Triggers
 
@@ -54,7 +53,7 @@ Every notification template has a type that determines the channel event that tr
 
 1. Under Email Settings, enter the *sender* and *recipients* for the notification.
 
-   You can use template variables to populate these fields automatically using data from the triggering event. See [Notification Template Variables Reference Guide](./notification-template-variables-reference-guide.md) for more information.
+   You can use template variables to populate these fields automatically using data from the triggering event. See [Notification Template Variables Reference Guide](./notification-template-variables-reference-guide.md) for more information. If required, you can also specify the actual email addresses to send the notification to.
 
    ![Enter the sender and recipients for the email.](./using-notification-templates/images/03.png)
 

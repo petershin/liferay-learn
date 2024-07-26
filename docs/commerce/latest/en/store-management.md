@@ -19,3 +19,5 @@ taxonomy-category-names:
 ---
 
 # Store Management
+
+Learn how to create and manage channels, configure countries and regions, add shipping and payment methods to your store, and more.

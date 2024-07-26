@@ -82,11 +82,6 @@ Note that Documents and Media folders and Web Content folders can be added to a 
     !!! tip
         You can add multiple rules to your Filter clicking on the Add button. The final content in the Dynamic Collection is the result of adding all the rules.
 
-    **Content Recommendation:** Enable this option to display content based on user behavior.
-
-    !!! note
-        The Content Recommendation option is available when you connect the DXP instance to Analytics Cloud and synchronize the content.
-
    **Ordering:** Items in the collection appear using the order criteria you define here.
 
 1. Click *Save*.

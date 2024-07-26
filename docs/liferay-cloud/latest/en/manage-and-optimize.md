@@ -14,10 +14,10 @@ uuid: 08eb56ca-0bb2-4383-8834-693c2a996cec
 ---
 # Manage and Optimize
 
-Liferay Cloud offers tools to help you better manage your project. You can invite members to your team and grant them different permissions with [roles](./manage-and-optimize/environment-teams-and-roles.md).
+Liferay Cloud offers numerous tools to help you efficiently manage your project. Invite members to your team and grant them different permissions with [roles](./manage-and-optimize/environment-teams-and-roles.md).
 
-Liferay Cloud also offers plenty of tools to track and monitor your project's resouce usage. You can [view real-time data on each service's metrics](./manage-and-optimize/application-metrics.md), [receive alerts on unexpected behaviors](./manage-and-optimize/real-time-alerts.md), and [keep track of what other members of the team have been doing](./manage-and-optimize/team-activities.md).
+Liferay Cloud also offers tools to track and monitor your project's resource usage. You can [view real-time data on each service's performance](./manage-and-optimize/application-metrics.md), [receive alerts on unexpected behaviors](./manage-and-optimize/real-time-alerts.md), and [keep track of what your team members are doing](./manage-and-optimize/team-activities.md).
 
-To optimize the Liferay service's performance, Liferay Cloud has the option to [scale automatically](./manage-and-optimize/auto-scaling.md) to meet traffic demands while conserving resources.
+To optimize the Liferay service's performance, Liferay Cloud can [scale automatically](./manage-and-optimize/auto-scaling.md) to meet traffic demands while conserving resources.
 
-These tools help you ensure your project runs efficiently within the [quotas](./manage-and-optimize/quotas-and-resource-usage.md) set by your subscription.
+These tools help ensure your project runs efficiently within the [quotas](./manage-and-optimize/quotas-and-resource-usage.md) set by your subscription.

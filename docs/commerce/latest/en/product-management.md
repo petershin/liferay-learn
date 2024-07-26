@@ -14,3 +14,5 @@ taxonomy-category-names:
 - Liferay SaaS
 ---
 # Product Management
+
+With Liferay's product management capabilities, you can manage multiple product catalogs, create products of different types with multiple SKUs, create and manage product bundles, sell subscriptions for your products, and much more.

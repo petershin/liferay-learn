@@ -13,7 +13,7 @@ taxonomy-category-names:
 ---
 # File Storage
 
-All files uploaded to Liferay DXP are stored in the instance's designated file store. This includes files uploaded using [Documents and Media](../content-authoring-and-management/documents-and-media.md), as well as those uploaded using applications that support file attachments (e.g., [Message Boards](../collaboration-and-social/collaboration-and-social-overview.md)). The file store can be hosted on the local machine, on a network mounted file system, in a database, or in the cloud.
+All files uploaded to Liferay DXP are stored in the instance's designated file store. This includes files uploaded using [Documents and Media](../content-authoring-and-management/documents-and-media.md), as well as those uploaded using applications that support file attachments (e.g., [Message Boards](../collaboration-and-social.md)). The file store can be hosted on the local machine, on a network mounted file system, in a database, or in the cloud.
 
 ```{important}
 If you are going to production, we highly recommend reviewing the various File Store configuration options and choosing the one that best fits your needs, **before** going live. Doing so can avoid painful file store migrations later in a project's life.

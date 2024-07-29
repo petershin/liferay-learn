@@ -104,7 +104,7 @@ The web-based UI makes content and service functionality available in browsers.
 
 ## UI
 
-The UI helps people do work, [collaborate](../../collaboration-and-social/collaboration-and-social-overview.md), and enjoy content. Here's what the UI consists of:
+The UI helps people do work, [collaborate](../../collaboration-and-social.md), and enjoy content. Here's what the UI consists of:
 
 - [DXP application](../../site-building/getting-started-with-site-building.md): The web application for managing Portals, Sites, Users, Pages, Widgets, and more.
 

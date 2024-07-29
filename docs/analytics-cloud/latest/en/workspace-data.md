@@ -23,16 +23,3 @@ Manage how [data is modeled and defined](./workspace-data/definitions.md) for ev
 Manage the [data and privacy](./workspace-data/data-control-and-privacy.md) of individuals.
 
 View and [manage the different data sources](./workspace-data/managing-data-sources.md) that are connected to your workspace.
-
-## Next Steps
-
-- [Managing API Access](./workspace-data/managing-api-access.md)
-- [Data Control and Privacy](./workspace-data/data-control-and-privacy.md)
-- [Managing Data Sources](./workspace-data/managing-data-sources.md)
-
-### Definitions
-
-- [Definitions for Individuals](./workspace-data/definitions/definitions-for-individuals.md)
-- [Definitions for Events](./workspace-data/definitions/definitions-for-events.md)
-- [Definitions for Event Attributes](./workspace-data/definitions/definitions-for-event-attributes.md)
-- [Setting a Search Query](./workspace-data/definitions/setting-a-search-query.md)

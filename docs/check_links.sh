@@ -2,6 +2,31 @@
 
 source ../_common.sh
 
+function check_curl_commands {
+	echo "Checking curl commands throughout ${1}."
+	echo
+
+	local link
+
+	for link in $(rg "^\s*curl\ http[^\s]*\.zip" --glob="*.md" --only-matching ${1})
+	do
+		local url=$(echo "${link}" | cut -d ':' -f2- | sed 's,.*curl\ ,,g')
+
+		_MARKDOWN_FILE_NAME=$(echo ${link} | cut -d':' -f1)
+
+		curl "${url}" --output temp.zip --silent
+
+		if [[ $(file --mime-type temp.zip) != *"application/zip" ]]
+		then
+			_LINK_FILE_NAME=${url}
+
+			echo_broken_link "404"
+		fi
+
+		rm temp.zip
+	done
+}
+
 function check_external_links {
 	echo "Checking external links throughout ${1}."
 	echo
@@ -9,7 +34,7 @@ function check_external_links {
 	local checked_dir_names
 	local link
 
-	for link in $(rg "\[.+?\]\(http.*?\)" --glob="${1%/$*}/**/*.md" --only-matching --pcre2 | sort)
+	for link in $(rg "\[.+?\]\(http.*?\)" --glob="*.md" --only-matching --pcre2 ${1} | sort)
 	do
 		local url=$(echo "${link}" | sed 's/.*(\(.*\))/\1/g' )
 
@@ -228,6 +253,7 @@ function main {
 	then
 		echo "Usage: ${0} dxp/latest/en"
 		echo
+		echo "    --cmd=curl (optional): Check links in curl commands and report 404 responses"
 		echo "    --cmd=ext (optional): Check absolute links and report 404 responses"
 		echo "    --cmd=fix (optional): Attempt to fix broken relative links"
 
@@ -268,6 +294,9 @@ function main {
 
 			popd > /dev/null
 		done
+	elif [[ ${2} == "--cmd=curl" ]]
+	then
+		check_curl_commands ${@}
 	elif [[ ${2} == "--cmd=ext" ]]
 	then
 		check_external_links ${@}

@@ -8,9 +8,9 @@ function check_curl_commands {
 
 	local link
 
-	for link in $(rg "^\s*curl\ http[^\s]*\.zip" --glob="*.md" --only-matching ${1})
+	for link in $(rg "^\s*curl.*http[^\s]*zip" --glob="*.md" --only-matching ${1})
 	do
-		local url=$(echo "${link}" | cut -d ':' -f2- | sed 's,.*curl\ ,,g')
+		local url=$(echo "${link}" | cut -d ':' -f2- | sed 's,.*curl.*\(http.*zip\),\1,g' | sed 's,\\,,g')
 
 		_MARKDOWN_FILE_NAME=$(echo ${link} | cut -d':' -f1)
 

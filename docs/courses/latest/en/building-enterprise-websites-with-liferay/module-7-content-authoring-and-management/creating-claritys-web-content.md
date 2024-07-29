@@ -3,17 +3,13 @@ uuid: d304bf82-c70f-4470-ac61-8d41bf737851
 ---
 # Creating Clarity's Web Content
 
-As we mentioned in the module introduction, *Content Management* is a broad term that can apply to a range of feature sets in the data lifecycle. We're going to focus specifically on the bread-and-butter Liferay features used to create content for web pages.
+As we mentioned in the module introduction, *Content Management* is a broad term that can apply to a range of feature sets in the data lifecycle. We're going to focus specifically on the bread-and-butter Liferay features used to create content for web pages. Using structures and templates, you can build and display articles of web content through content pages, display pages, widgets, or fragments, which you learned about in the previous module. Web content articles are dynamic, versatile assets, in large part because they are made up of web content structures. 
 
-## Web Content
-
-Liferay’s web content interface is a core part of the platform’s functionality. Using structures and templates, you can build and display articles of web content through content pages, display pages, widgets, or fragments, which you learned about in the previous module. Web content articles are dynamic, versatile assets, in large part because they are made up of web content structures. 
-
-### Structures
+## Structures
 
 Web content structures are the building blocks of Liferay content. They determine what kinds of information you need to provide for a given web content article. Structures allow you to enforce a format for your content using a straightforward drag-and-drop interface with several types of fields. A single structure can be reused in multiple places, reducing effort for writers, editors, and designers alike. Liferay includes a Basic Web Content structure out of the box, but you can tailor your own structures to your specific needs.
 
-### Templates
+## Templates
 
 Web content templates provide an extra layer of configuration and customization to web content. Templates use the FreeMarker Template Language (FTL) to determine how content is rendered on a page. A template can be linked to a web content structure or even embedded in other templates.
 
@@ -130,14 +126,73 @@ To do this,
 
 ![Create three FAQ web content article.](./creating-claritys-web-content/images/03.png)
 
-Great! You should have all the web content Clarity needs for their pages. In later exercises, you'll map some of this content to fragments on Clarity's pages. Next, let's explore how you can create content in Liferay with ChatGPT.
+Great! You should have all the web content Clarity needs for their pages. Next, you'll map some of this content to fragments on Clarity's pages.
+
+<!--Exercise 10c-->
+## Exercise: Mapping Content to Fragments
+
+Many fragments include sub-elements with their own configuration options, which depend on the sub-element’s type. Available types include
+
+* Simple Text Element
+* Rich Text Element
+* Link Element
+* HTML Element
+* Image Element
+
+You can set each sub-element's content directly, or you can map them to existing content items so that they update dynamically. Here you'll map some image elements in the Home page to asset library images as Walter Douglas.
+
+1. Begin editing Clarity's *Home* page.
+
+1. In the Browser side panel (![Browser](../../images/icon-hierarchy.png)), select the *Banner* container.
+
+1. Select the *Image* fragment in the *Banner* container. Notice that the fragment includes an image-square sub-element.
+
+1. Select the fragment's *image-square* sub-element to access its mapping options.
+
+1. For Source Selection, select *Mapping*.
+
+1. For Item, click the *Plus* button (![Plus Button](../../images/icon-plus.png)).
+
+1. In the Documents and Media tab, click *Sites and Libraries* in the breadcrumb menu.
+
+1. Go to the *Asset Library* tab, select *Marketing Assets*, and select the image named `home-banner-narrow-no-background`.
+
+1. For Field, select *File URL*. The image should appear in the Home page banner.
+
+1. Repeat steps 4-9 for the *Image* fragment in the Clarity Solutions Promo container and select the `sunglasses-on-shelves` image named from the Marketing Assets asset library.
+
+1. In the Browser side panel (![Browser](../../images/icon-hierarchy.png)), select the *Content Wrapper* container in the Clarity Solutions Promo container.
+
+   Here you'll use a background image instead of an image sub-element.
+
+1. In the configuration side panel, go to the *Styles* tab.
+
+1. Under Background, set Image Source to *Mapping* and select the `gradient-overlay` image from the Marketing Assets asset library.
+
+1. For Field, select *File URL*. The texture should overlay the gradient promotion.
+
+1. Repeat steps 13-15 for the *Distributor Promo* container and select the `home-promotion` image from the Marketing Assets asset library.
+
+   Once you've finished, you may notice that the image dimensions don't match Clarity's design. Let's fix this.
+
+1. Select the *Banner Content* container and configure this setting:
+
+   | Tab     | Setting         | Value       |
+   |:--------|:----------------|:------------|
+   | General | Container Width | Fixed Width |
+
+1. Repeat this step for *Content Container* and *Clarity Solutions Promo*.
+
+   Now the contents of these containers should be fixed and the dimensions should better resemble Clarity's designs.
+
+You have now mapped content from Clarity's asset libraries to the image fragments on the Home page.  Next, let's explore how you can create content in Liferay with ChatGPT.
 
 <!--Exercise 11a-->
-## Exercise: Generating Content with ChatGPT
+## Exercise: Generating Content with ChatGPT (Optional)
 
 You may have noticed that web content articles include the *AI Creator* button for generating content using ChatGPT. Using this feature requires a valid API key.
 
-Here you'll add a temporary API key to your instance as the Clarity Admin user.
+Here you'll add an API key to your instance as the Clarity Admin user so that you can generate content.
 
 To do this,
 
@@ -150,9 +205,9 @@ To do this,
 
 1. Click *AI Creator*.
 
-1. Enter the API key provided for this training.
+1. Enter your API key.
 
-   **Note**: This key is temporary.
+   **Note**: Bootcamp participants are provided a temporary key.
 
 1. Ensure *Enable ChatGPT to Create Content* is checked.
 

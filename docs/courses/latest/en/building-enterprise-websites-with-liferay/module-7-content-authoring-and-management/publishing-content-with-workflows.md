@@ -7,8 +7,6 @@ In the previous sections, you learned about the tools Liferay provides for manag
 
 ## Publishing Tools
 
-<!--TODO: Touch on staging a little bit more  -->
-
 While traditional staging with Liferay can address basic requirements, publications is an advanced and flexible solution for collaborative content management with granular control over publishing. Rather than duplicating content and maintaining two separate datasets, publications work with versioned records. Sets of changes are grouped into a publication. Each publication exists independently and can be permissioned with role-based access control. These are some of the features of publications that satisfy Clarity's business requirements:
 
 - Version control system that allows branching, merging, and tracking changes
@@ -21,7 +19,7 @@ While traditional staging with Liferay can address basic requirements, publicati
 
 - Reliable rollback when human error occurs and reversion is necessary.
 
-Publications are ideal when there are frequent changes involving multiple departments that must be published at different times. For their enterprise marketing website, Clarity chooses publications over staging as their collaboration and publishing solution.
+Publications are ideal when there are frequent changes involving multiple departments that must be published at different times. Publications is almost always the recommended tool for most solutions. Certain governance standards require any changes to be approved before they are made in a production environment; in this specific scenarios, staging is the appropriate choice. For their enterprise marketing website, Clarity chooses publications over staging as their collaboration and publishing solution.
 
 ## Workflows
 
@@ -207,6 +205,6 @@ Great! You've successfully used workflow with publications to review and publish
 
 This concludes *Publishing Content with Workflows*.
 
-Up Next: [Personalizing Experiences for Clarity’s Users](./personalizing-experiences-for-claritys-users.md)
+Up Next: [Understanding Users with Analytics Cloud](./understanding-users-with-analytics-cloud.md)
 
 <!-- TODO: Add Additional Resources section. -->

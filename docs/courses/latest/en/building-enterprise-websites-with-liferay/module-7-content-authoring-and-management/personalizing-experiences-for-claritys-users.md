@@ -3,7 +3,9 @@ uuid: 625dac83-df1c-4da9-93ba-49fba8fd955d
 ---
 # Personalizing Experiences for Clarity’s Users
 
-As a Digital Experience Platform, Liferay provides out-of-the-box features that can be used to personalize experiences for users. We briefly touched on this earlier in the module when we discussed personalizing collections. This article will dive further into the suite of features that Clarity can use to develop focused experiences for their users. We will cover the following topics:
+A great website experience can help keep Clarity's visitors engaged and ultimately lead to more sales. Liferay provides different tools to help you understand who your customers are and optimize your site to increase engagement. Clarity can use these tools in combination with Analytics Cloud to personalize the user experience.
+
+This article will dive further into the suite of features that Clarity can use to develop focused experiences for their users. We will cover the following topics:
 
 - Segmentation management
 - Personalized experiences
@@ -31,9 +33,9 @@ Sometimes, we have more than one idea on how to serve a certain audience, but we
 
 ## A/B Testing
 
-With A/B testing, you can determine the most effective version of your content by testing variations on different sets of users. The majority of users will see the current content and design of your page, while a select group sees an alternative. You can then test the performance of the current version and the variant to determine which performs better for a given goal, such as bounce rate or click-through.
+With A/B testing, you can make two variants of a site page and compare the click rate or bounce rate of the two pages. Some visitors will see one variant, while another group will see an alternative. You can test the performance of the two variants and determine which is better for your customers.
 
-Liferay provides a simple UI for non-technical users to administer A/B tests with granular control over the test configuration and criteria. The tests are automatically synchronized with Liferay Analytics Cloud, which will provide you with test history, statistics, variant performance benchmarks, and more.
+The tight integration between Liferay DXP and Analytics Cloud means setting up A/B tests, tracking results, and publishing variants is simple. Liferay provides a UI for non-technical users to administer A/B tests with granular control over the test configuration and criteria. The tests are automatically synchronized with Liferay Analytics Cloud, which will provide you with test history, statistics, variant performance benchmarks, and more.
 
 In the short term, Clarity can use this feature to determine the best content and click-through path for driving distributors to complete the application process. In the long term, considering their plans for B2C, they can use A/B tests to determine the best promotions or product discovery routes to help customers go from interest to purchase as efficiently as possible. These are a few ways in which A/B testing can help you optimize your business.
 

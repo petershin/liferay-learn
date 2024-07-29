@@ -4,9 +4,9 @@ toc:
 - ./module-7-content-authoring-and-management/managing-claritys-digital-assets.md
 - ./module-7-content-authoring-and-management/creating-claritys-web-content.md
 - ./module-7-content-authoring-and-management/organizing-claritys-content.md
-- ./module-7-content-authoring-and-management/displaying-content-on-claritys-pages.md
 - ./module-7-content-authoring-and-management/creating-claritys-commerce-content.md
 - ./module-7-content-authoring-and-management/publishing-content-with-workflows.md
+- ./module-7-content-authoring-and-management/understanding-users-with-analytics-cloud.md
 - ./module-7-content-authoring-and-management/personalizing-experiences-for-claritys-users.md
 uuid: 995cbe20-0caf-478b-ae3c-edea06211e7c
 ---
@@ -18,17 +18,17 @@ uuid: 995cbe20-0caf-478b-ae3c-edea06211e7c
     * View the [recording](https://learn.liferay.com/web/guest/d/lp1-7-content-authoring-management) from the live webinar of this module.
     * Download the [PDF](https://learn.liferay.com/documents/d/guest/lp1-7-content-authoring-management-pdf) of the presentation used in the live workshop.
 
-In the previous module, you learned about some of the tools, techniques, and best practices for building sites with Liferay. Clarity now has an enterprise marketing website mapped out, styled, and structured, but they don't have any content to populate it. Fortunately, Liferay offers a suite of features for authoring and managing content that you can leverage to bring the site to life. In this module, we'll introduce you to several out-of-the-box capabilities with which you can manage Clarity's content:
+In the previous module, you learned about some of the tools, techniques, and best practices for building sites with Liferay. Now that Clarity has an enterprise marketing website mapped out, styled, and structured, they need content to populate it. Fortunately, Liferay offers a suite of features for authoring and managing content that you can leverage to bring the site to life. In this module, we'll introduce you to several out-of-the-box capabilities with which you can manage Clarity's content:
 
 - Asset Libraries
 - Web Content Structures and Templates
 - Tags, Categories, and Collections
-- Displaying Content
 - Catalogs, Products, and Channels
 - Publications and Workflow
+- Analytics Cloud
 - Segments, Experiences, and A/B Testing
 
-Through the course of the module, you'll learn about the best practices that will help you choose the right tools to address Clarity's specific business requirements. Let’s take a closer look at these requirements.
+Through the course of the module, you'll learn about the best practices for addressing Clarity's specific business needs. Let’s take a closer look at these requirements.
 
 Up First: [Clarity’s Content Management Requirements](./module-7-content-authoring-and-management/claritys-content-management-requirements.md)
 
@@ -59,12 +59,6 @@ Learn about web content structures and templates.
 Learn how to organize content with tags, categories, and collections.
 :::
 
-:::{grid-item-card}  Displaying Content on Clarity's Pages
-:link: ./module-7-content-authoring-and-management/displaying-content-on-claritys-pages.md
-
-Learn how to display content on web pages.
-:::
-
 :::{grid-item-card}  Creating Clarity's Commerce Content
 :link: ./module-7-content-authoring-and-management/creating-claritys-commerce-content.md
 
@@ -75,6 +69,12 @@ Learn about catalogs, products, and channels.
 :link: ./module-7-content-authoring-and-management/publishing-content-with-workflows.md
 
 Learn about publications and workflow.
+:::
+
+:::{grid-item-card}  Understanding Users with Analytics Cloud
+:link: ./module-7-content-authoring-and-management/understanding-users-with-analytics-cloud.md
+
+Learn about Liferay's analytics cloud.
 :::
 
 :::{grid-item-card}  Personalizing Experiences for Clarity's Users

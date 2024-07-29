@@ -15,9 +15,11 @@ You can use categories to group assets with similar content or information. Cate
 
 Categories themselves are grouped using vocabularies, which can be made public or private. A vocabulary defines the type of asset for the categories it contains. For example, the Blog Posts vocabulary contains four categories: Innovation, Fashion, Technology, and Health. These categories can only be applied to blog posts. Liferay includes some basic vocabularies out of the box and allows you to create your own.
 
+Together, categories and vocabularies form a taxonomy, a structured classification system for content. Implementing a robust taxonomy is critical for effectively managing content in Liferay.
+
 ## Tags
 
-Tags are keywords for organizing your assets. While categories provide broader classification based on theme or topic, tags describe more specific information about individual content items. Tags are not hierarchical and cannot be nested within one another. However, because they are not constrained by a vocabulary, tags make it possible to find related assets even if they are different types.
+Tags are keywords for organizing your assets. While categories provide broader classification based on theme or topic, tags describe more specific information about individual content items. Tags are not hierarchical and cannot be nested within one another. However, because they are not constrained by a vocabulary, tags make it possible to find related assets even if they are different types. Both administrators and regular users can create tags for content.
 
 ## Collections
 
@@ -266,12 +268,123 @@ To do this,
 
    For each collection, filter results using its corresponding category.
 
-You now have four FAQ collections. Later, you'll use them to display content in Clarity's FAQ page.
+You now have four FAQ collections. Next, you'll use them to display content in Clarity's FAQ page.
+
+<!--Exercise 13c-->
+## Exercise: Displaying Content on the FAQ Page
+
+Using what you have learned in the previous exercises, let’s map content to the FAQ page as Walter Douglas.
+
+To do this,
+
+1. Begin editing the FAQ page.
+
+1. Double click the *Image* fragment to configure its image-square sub-element.
+
+1. Set the image to `glasses-vertical-banner-with-text-lg` from the Marketing Assets library.
+
+1. The block on the right contains a page title and four FAQ Section compositions. Each FAQ Section contains a heading and a Collection Display fragment. Each Collection Display contains a custom fragment called FAQ Question and Answer Pair. First map the collection displays to the FAQ collections you built earlier. Make sure each collection corresponds to the heading for that section.
+
+1. For Pagination, select *None*.
+
+1. Check *Display All Collection Items*.
+
+1. Map the correct fields for each FAQ Question and Answer Pair so that the content renders properly in the collection displays.
+
+1. Map the collection display in Promoted Articles to the Helpful Articles collection.
+
+1. Click *Publish* to save your changes to the FAQ page.
+
+Using collection displays and custom fragments, you have rendered FAQ web content onto Clarity's FAQ page. Next, let's add content to the header announcement bar.
+
+<!--Exercise 13d-->
+## Exercise: Adding Announcements to the Header
+
+Here you'll apply what you've learned about web content, collections, and page templates to add an announcement to Clarity's header bar as Walter Douglas.
+
+To do this,
+
+1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)), expand *Site Builder*, and select *Collections*.
+
+1. Create a new dynamic collection titled `Announcements`.
+
+1. In the collection configuration menu, set item type to *Web Content Article* and item subtype to *Announcements*.
+
+1. Click *Save* to publish the collection.
+
+   Now that you've created the collection, let's add it to the Primary Master Page template.
+
+1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)), expand *Design*, and select *Page Templates*.
+
+1. Begin editing the *Primary Master Page* template.
+
+   **Note**: You may notice the styles applied to the master page are different from those applied in site pages. This is because you've applied the theme and theme CSS client extension to site pages and not to master pages. If desired, you can apply the theme and client extension to the master page directly. Make sure you uncheck all theme properties (i.e. Show Footer, Show Header, etc.).
+
+1. Toggle the *visibility* (![Visibility](../../images/icon-preview.png)) of the *Header Announcement Bar* container.
+
+1. Select the *Header Announcement Bar* container and configure this setting:
+
+   | Tab    | Field              | Value                 |
+   |:-------|:-------------------|:----------------------|
+   | Styles | Background > Color | *Color Brand Primary* |
+
+1. Add a *Collection Display* fragment to the container, select it, and configure these settings:
+
+   | Tab     | Field                              | Value           |
+   |:--------|:-----------------------------------|:----------------|
+   | General | Collection                         | *Announcements* |
+   | General | Pagination                         | *None*          |
+   | General | Maximum Number of Items to Display | *1*             |
+
+1. Add a *Container* fragment to the collection display, rename it `Announcement` and configure these settings:
+
+   | Tab     | Field           | Value      |
+   |:--------|:----------------|:-----------|
+   | General | Content Display | *Flex Row* |
+   | General | Align Items     | *Center*   |
+   | General | Justify Content | *Center*   |
+
+1. Add a *Paragraph* fragment to the container, select it, and configure these settings:
+
+   | Tab    | Field        | Value             |
+   |:-------|:-------------|:------------------|
+   | Styles | Text > Color | *Color Neutral 0* |
+
+   **Note**: Choosing *Color Neutral 0* selects a color value defined in the theme's style book.
+
+1. Select the paragraph's *element-text* sub-element and configure this setting:
+
+   | Tab     | Field | Value     |
+   |:--------|:------|:----------|
+   | Mapping | Field | *Message* |
+
+1. Add a *Clarity Button* fragment to Announcement container after the paragraph, select it, and configure these settings:
+
+   | Tab     | Field    | Value        |
+   |:--------|:---------|:-------------|
+   | General | Type     | *Borderless* |
+   | General | Style    | *Primary*    |
+   | General | Size     | *Small*      |
+   | General | Inverted | *Yes*        |
+
+1. Select the button's *link* sub-element and configure these settings:
+
+   | Tab     | Field | Value          |
+   |:--------|:------|:---------------|
+   | Mapping | Field | *Link Text*    |
+   | Link    | Link  | *Mapped URL*   |
+   | Link    | Field | *Link to Page* |
+
+1. Adjust the margins and padding for the announcement bar elements until you are satisfied with it.
+
+1. Click *Publish Master* to save your changes.
+
+The Header Announcement Bar is now visible on all pages that use the Primary Master Page template. Next, let's use Liferay's Commerce features to create Clarity's products catalog.
 
 ## Conclusion
 
 This concludes *Organizing Clarity’s Content*.
 
-Next Up: [Displaying Content on Clarity’s Pages](./displaying-content-on-claritys-pages.md)
+Next Up: [Creating Clarity’s Commerce Content](./creating-claritys-commerce-content.md)
 
 <!-- TODO: Add Additional Resources section. -->

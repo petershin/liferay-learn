@@ -20,7 +20,7 @@ taxonomy-category-names:
 
 1. Click the *Edit* icon next to *Unnamed Segment*, and give your segment a name.
 
-    ![Give your new segment a name and begin selecting criteria.](./creating-segments/images/01.png)
+   ![Give your new segment a name and begin selecting criteria.](./creating-segments/images/01.png)
 
 1. Drag and drop Segment criteria from the panel on the right to the canvas on the center of the screen. The selector menu at the top of the panel shows you the criteria types you can select:
 
@@ -34,17 +34,19 @@ taxonomy-category-names:
 
    **Organization Attributes:** Attributes that belong to an organization (e.g. name, hierarchy, type, etc.).
 
-    ![By default anonymous users are not included in Segments.](./creating-segments/images/02.png)
+   ![By default anonymous users are not included in Segments.](./creating-segments/images/02.png)
 
-    !!! note
-        Anonymous users are excluded from Segments by default. To include them, enable the Include Anonymous toggle. Note, however, that criteria with individual attributes excludes anonymous users regardless of your setting here. Such attributes only apply to known users.
+   !!! note
+       Anonymous users are excluded from Segments by default. To include them, enable the Include Anonymous toggle. Note, however, that criteria with individual attributes excludes anonymous users regardless of your setting here. Such attributes only apply to known users.
 
 ### Creating Criteria
 
 The criteria creation canvas is flexible. Once added to the canvas, you can move, delete, or duplicate any criterion:
 
 - **To move:** Click and drag the criterion using the vertical dots ![Drag icon.](../../images/icon-drag.png) on its left.
+
 - **To delete:** Click the criterion's trash icon ![Delete icon.](../../images/icon-delete.png). Alternatively, you can click the criterion's *Actions* icon ![Actions icon.](../../images/icon-actions.png) and select *Delete*.
+
 - **To duplicate:** Click the criterion's *Actions* icon ![Actions icon.](../../images/icon-actions.png) and select *Duplicate*.
 
 Each criterion that you add contains fields for customization. The first field is typically a selector menu where you specify a condition for any remaining fields. The condition's values depend on the data type for the remaining fields. Here are some common condition values:
@@ -98,7 +100,7 @@ When you are finished configuring the segment, click *Save Segment*.
 
 1. Click *Add Members* to bring up the Add Members screen, which contains a searchable list of all Individuals.
 
-    ![Select the individuals to add to the segment.](./creating-segments/images/06.png)
+   ![Select the individuals to add to the segment.](./creating-segments/images/06.png)
 
 1. Select the *Individuals* to add to the Segment, then click *Add*.
 
@@ -109,5 +111,5 @@ When you are finished configuring the segment, click *Save Segment*.
 ## Related Topics
 
 - [Tracking Events](../../touchpoints/events/tracking-events.md)
-- [Definitions for Individuals](../../workspace-data/definitions/definitions-for-individuals.md)
+- [Definitions](../../workspace-data/definitions.md)
 - [Understanding Interests](../individuals/understanding-interests.md)

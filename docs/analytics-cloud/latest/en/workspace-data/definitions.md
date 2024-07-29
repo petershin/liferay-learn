@@ -10,11 +10,9 @@ taxonomy-category-names:
 
 # Definitions
 
-In Analytics Cloud, you can manage how data is modeled and defined. You can view and manage the data models of [individuals](./definitions/definitions-for-individuals.md), [events](./definitions/definitions-for-events.md), [event attributes](./definitions/definitions-for-event-attributes.md), and [search queries](./definitions/setting-a-search-query.md).
-
 ## Individuals
 
-The data model for individuals is defined by the various attributes that get mapped when contact data is [synced from DXP](../../getting-started/connecting-liferay-dxp-to-analytics-cloud.md).
+The data model for individuals is defined by the various attributes that get mapped when contact data is [synced from DXP](../getting-started/connecting-liferay-dxp-to-analytics-cloud.md).
 
 To view a list of these attributes, navigate to *Settings* &rarr; *Workspace Data* &rarr; *Definitions* &rarr; *Individuals*.
 
@@ -22,7 +20,7 @@ To view a list of these attributes, navigate to *Settings* &rarr; *Workspace Dat
 
 All the different attributes for individuals are listed. Some attributes may be defined by more than one data source. 
 
-You can choose specific attributes for [creating segments](../../people/segments/creating-segments.md) or [creating a specific breakdown for individuals](../../people/individuals.md#breakdown).
+You can choose specific attributes for [creating segments](../people/segments/creating-segments.md) or [creating a specific breakdown for individuals](../people/individuals.md#breakdown).
 
 ## Events
 
@@ -32,7 +30,7 @@ Analytics Cloud tracks default and custom events that occur on your DXP instance
 
 ### Default Events
 
-There are several default events that can be analyzed as soon as you have [connected your DXP instance to Analytics Cloud](../../getting-started/connecting-liferay-dxp-to-analytics-cloud.md). Click on the *Default Events* tab to see all the events that are available out of the box.
+There are several default events that can be analyzed as soon as you have [connected your DXP instance to Analytics Cloud](../getting-started/connecting-liferay-dxp-to-analytics-cloud.md). Click on the *Default Events* tab to see all the events that are available out of the box.
 
 Click on a default event to see the specific attributes that are associated with that event.
 
@@ -52,15 +50,15 @@ A sample JavaScript snippet is also provided to serve as a template for defining
 
 You can choose to hide or show specific events. Hiding an event removes the option from the Events Analysis tool and hides the visibility of the data. Different events are used to calculate different metrics. Choose to hide or show events based on your business needs. 
 
-To hide an event, locate the specific event and click the *Hide* icon (![Hide icon](../../images/icon-hide.png)) on the right of the event name. Click *Hide* in the pop-up window to confirm your decision.
+To hide an event, locate the specific event and click the *Hide* icon (![Hide icon](../images/icon-hide.png)) on the right of the event name. Click *Hide* in the pop-up window to confirm your decision.
 
-To unhide an event, locate the specific event and click the *Show* icon (![Show icon](../../images/icon-show.png)) on the right of the event name.
+To unhide an event, locate the specific event and click the *Show* icon (![Show icon](../images/icon-show.png)) on the right of the event name.
 
 Note, only administrators can hide or show events.
 
 ### Custom Events
 
-Custom events are a useful way to define and track events that are specific to your business needs. For example, you might track a form on your site that customers use to make payments. Once the specific event is defined and configured on your site, Analytics Cloud collects data for the event. See [Tracking Events](../../touchpoints/events/tracking-events.md) to learn more.
+Custom events are a useful way to define and track events that are specific to your business needs. For example, you might track a form on your site that customers use to make payments. Once the specific event is defined and configured on your site, Analytics Cloud collects data for the event. See [Tracking Events](../touchpoints/events/tracking-events.md) to learn more.
 
 Click on the *Custom Events* tab to see all the events that have been defined and are being tracked. Note that there is a limit of 100 custom events that can be tracked at any given time. 
 
@@ -86,11 +84,11 @@ Click the *Edit* button to edit the Display Name or Description of the custom ev
 
 Analytics Cloud currently supports up to 100 custom events. Additional custom events beyond 100 are automatically added to the Block List. Any custom event that is in this block list is an event that is not tracked or processed by Analytics Cloud. To see the list of blocked events, click *Block List* under the Custom Events tab.
 
-To unblock a custom event from the Block List, check the box next to the event and click *Unblock Events*. Or click the unblock icon (![unblock icon](../../images/icon-unblock.png)) to the right of the event name.
+To unblock a custom event from the Block List, check the box next to the event and click *Unblock Events*. Or click the unblock icon (![unblock icon](../images/icon-unblock.png)) to the right of the event name.
 
 ![Select a custom event and click Unblock Events.](./definitions/images/05.png)
 
-To block a custom event, from the Custom Events tab check the box next to the event and click *Block Events*. Or click the block icon (![block icon](../../images/icon-block.png)) to the right of the event name.
+To block a custom event, from the Custom Events tab check the box next to the event and click *Block Events*. Or click the block icon (![block icon](../images/icon-block.png)) to the right of the event name.
 
 ## Event Attributes
 
@@ -116,4 +114,4 @@ The search query parameter can vary from site to site. For example, a URL might 
 
 ![Add up to five search query parameters.](./definitions/images/09.png)
 
-Navigate to *Settings* &rarr; *Workspace Data* &rarr; *Definitions* &rarr; *Search*. Enter the parameter into the text field. Click *+* to add additional parameters. Click the trash icon (![trash icon](../../images/icon-delete.png)) to delete a parameter.
+Navigate to *Settings* &rarr; *Workspace Data* &rarr; *Definitions* &rarr; *Search*. Enter the parameter into the text field. Click *+* to add additional parameters. Click the trash icon (![trash icon](../images/icon-delete.png)) to delete a parameter.

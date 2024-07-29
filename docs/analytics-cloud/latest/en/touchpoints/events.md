@@ -23,7 +23,7 @@ As individuals visit and interact with your site, Analytics Cloud tracks these e
 
    ![Select an event to analyze.](./events/images/01.png)
 
-   The Default events are already tracked by Analytics Cloud. The Custom events are events that you have defined and set up. See [Definitions for Events](../workspace-data/definitions/definitions-for-events.md) to learn more.
+   The Default events are already tracked by Analytics Cloud. The Custom events are events that you have defined and set up. See [Definitions for Events](../workspace-data/definitions.md) to learn more.
 
    Hover over a specific event in the drop-down list to see the event's description. Click the *Pencil* icon (![Pencil](../images/icon-edit.png)) to edit the description.
 
@@ -31,7 +31,7 @@ As individuals visit and interact with your site, Analytics Cloud tracks these e
 
    ![Select breakdowns for your event.](./events/images/02.png)
 
-   Up to three attributes can be selected in the Breakdown row. Note that each type of event is made up of different attributes. Global attributes are attributes that are collected for all types of events. See [Event Attributes](../workspace-data/definitions/definitions-for-event-attributes.md) to learn more.
+   Up to three attributes can be selected in the Breakdown row. Note that each type of event is made up of different attributes. Global attributes are attributes that are collected for all types of events. See [Event Attributes](../workspace-data/definitions.md) to learn more.
 
    Hover over a specific attribute in the drop-down list to see the attribute's description and data typecast. Click the *Pencil* icon (![Pencil](../images/icon-edit.png)) to edit the description or data typecast.
 
@@ -49,9 +49,8 @@ As individuals visit and interact with your site, Analytics Cloud tracks these e
 
 1. To remove a filter, breakdown, or analysis, click the close icon (![Close](../images/icon-close.png)) next to the property you wish to change. Then make new selections.
 
-1. To save the event analysis for future viewing, give it a name and click the *Save Analysis* button. The analysis will be available in the event analysis tool for future viewing.
+1. To save the event analysis for future viewing, give it a name and click the *Save Analysis* button. The analysis is made available in the event analysis tool for future viewing.
 
 ## Related Topics
 
-- [Definitions for Events](../workspace-data/definitions/definitions-for-events.md)
-- [Definitions for Event Attributes](../workspace-data/definitions/definitions-for-event-attributes.md)
+- [Definitions](../workspace-data/definitions.md)

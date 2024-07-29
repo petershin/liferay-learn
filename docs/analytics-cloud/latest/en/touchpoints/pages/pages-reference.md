@@ -10,7 +10,7 @@ uuid: 205b2902-3139-4f3d-bfb7-6cf80aec57e6
 ---
 # Pages Reference
 
-The data displayed for [Page Analytics](../pages.md) is based on [Default Events](../../workspace-data/definitions/definitions-for-events.md#default-events) and [Event Attributes](../../workspace-data/definitions/definitions-for-event-attributes.md). The following events and event attributes are related to pages:
+The data displayed for [Page Analytics](../pages.md) is based on [Default Events and Event Attributes](../../workspace-data/definitions.md). The following events and event attributes are related to pages:
 
 ## Page Events
 

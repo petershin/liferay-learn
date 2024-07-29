@@ -30,7 +30,7 @@ Analytics.track("Add to Cart Click",{
 });
 ```
 
-Analytics Cloud automatically tries to detect and cast the datatype based on the first data collected for that attribute. Make changes to the typecast if necessary in [Definitions for Event Attributes](../../workspace-data/definitions/definitions-for-event-attributes.md) found in the settings page of Analytics Cloud. In addition to the attributes you specify, there are [global attributes](../../workspace-data/definitions/definitions-for-event-attributes.md) that are associated automatically with all events. The following data typecasts can be set for attributes:
+Analytics Cloud automatically tries to detect and cast the datatype based on the first data collected for that attribute. Make changes to the typecast if necessary in [Definitions for Event Attributes](../../workspace-data/definitions.md) found in the settings page of Analytics Cloud. In addition to the attributes you specify, there are [global attributes](../../workspace-data/definitions.md) that are associated automatically with all events. The following data typecasts can be set for attributes:
 
 | Attribute Type | Description                                                    |
 | :------------- | :------------------------------------------------------------- |
@@ -84,6 +84,6 @@ To learn more, see [Developing Fragments](https://learn.liferay.com/w/dxp/site-b
 ## Related Topics
 
 - [Tracking Custom Assets](../assets/tracking-custom-assets.md)
-- [Definitions for Event Attributes](../../workspace-data/definitions/definitions-for-event-attributes.md)
+- [Definitions for Event Attributes](../../workspace-data/definitions.md)
 - [Configuring Individual Pages](https://learn.liferay.com/w/dxp/site-building/creating-pages/page-settings/configuring-individual-pages)
 - [Developing Fragments](https://learn.liferay.com/w/dxp/site-building/developer-guide/developing-page-fragments/developing-fragments-intro)

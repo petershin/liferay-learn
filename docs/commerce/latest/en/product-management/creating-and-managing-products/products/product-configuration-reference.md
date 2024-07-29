@@ -16,56 +16,56 @@ Using a product's configuration page, you can add additional metadata, media, at
 
 Configure the following settings from the Product Detail's tab:
 
-* Details (Catalog, Name, Short Description, and Full Description)
-* SEO (Friendly URL, Meta Title, Meta Description, Meta Keywords)
-* Categorization (Public Categories, Tags)
-* Schedule (Published, Display Date, Expiration Date, Never Expire)
-* Specifications
+- Details (Catalog, Name, Short Description, and Full Description)
+- SEO (Friendly URL, Meta Title, Meta Description, Meta Keywords)
+- Categorization (Public Categories, Tags)
+- Schedule (Published, Display Date, Expiration Date, Never Expire)
+- Specifications
 
 ![View and configure product details.](./product-configuration-reference/images/01.png)
 
 ### General Product Details
 
-| Field             | Description                                                              |
-| :---------------- | :----------------------------------------------------------------------- |
-| Catalog           | The catalog associated with the product (this association is permanent). |
-| Name              | The name of the product.                                                 |
-| Short Description | A short description of the product.                                      |
-| Full Description  | A more detailed description of the product.                              |
+| Field             | Description                                                             |
+|:------------------|:------------------------------------------------------------------------|
+| Catalog           | The catalog associated with the product (this association is permanent) |
+| Name              | The name of the product                                                 |
+| Short Description | A short description of the product                                      |
+| Full Description  | A more detailed description of the product                              |
 
 ### SEO
 
-| Field            | Description                                           |
-| :--------------- | :---------------------------------------------------- |
-| Friendly URL     | The product's friendly URL.                           |
-| Meta Title       | The product's title to help search engines locate it. |
-| Meta Description | The product's description used by search engines.     |
-| Meta Keyword     | The product's Keywords used by search engines.        |
+| Field            | Description                                          |
+|:-----------------|:-----------------------------------------------------|
+| Friendly URL     | The product's friendly URL                           |
+| Meta Title       | The product's title to help search engines locate it |
+| Meta Description | The product's description used by search engines     |
+| Meta Keyword     | The product's Keywords used by search engines        |
 
 ### Categorization
 
-| Field             | Description                                            |
-| :---------------- | :----------------------------------------------------- |
-| Public Categories | Select from global categories to apply to the product. |
-| Tags              | Select from global tags to apply to the product.       |
+| Field             | Description                                           |
+|:------------------|:------------------------------------------------------|
+| Public Categories | Select from global categories to apply to the product |
+| Tags              | Select from global tags to apply to the product       |
 
 ### Schedule
 
-| Field           | Description                                                                                                                                                                         |
-| :-------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Published       | Check this to ensure that the product is visible and available for sale.                                                                                                            |
-| Display Date    | The date when the product is first available for sale.                                                                                                                              |
-| Expiration Date | The date when the product expires. (only if *Never Expire* is unchecked). Note that this is not the product's expiry date. It removes the product from the available ones for sale. |
-| Never Expire    | Check this to schedule a product for expiration.                                                                                                                                    |
+| Field           | Description                                                                                                                                     |
+|:----------------|:------------------------------------------------------------------------------------------------------------------------------------------------|
+| Published       | Check this to ensure that the product is visible and available for sale.                                                                        |
+| Display Date    | The date when the product is first available for sale                                                                                           |
+| Expiration Date | The date when the product becomes unavailable for sale (only if *Never Expire* is unchecked). Note that this is not the product's expiry date. |
+| Never Expire    | Check this to schedule a product for expiration.                                                                                                |
 
 ### Specifications
 
-| Field    | Description                                                     |
-| :------- | :-------------------------------------------------------------- |
-| Label    | The specification's name.                                       |
-| Value    | The specification's value.                                      |
-| Group    | Links the specification to another specification group.         |
-| Position | Determines the display order, beginning with the lowest number. |
+| Field    | Description                                                    |
+|:---------|:---------------------------------------------------------------|
+| Label    | The specification's name                                       |
+| Value    | The specification's value                                      |
+| Group    | Links the specification to another specification group         |
+| Position | Determines the display order, beginning with the lowest number |
 
 ## Options
 
@@ -74,8 +74,8 @@ Product options provide a convenient way to add custom fields to your products. 
 ![Adding product variants using product options.](./product-configuration-reference/images/02.png)
 
 | Field       | Description                                                                             |
-| :---------- | :-------------------------------------------------------------------------------------- |
-| Add Options | Create new options or applying existing options to the product.             |
+|:------------|:----------------------------------------------------------------------------------------|
+| Add Options | Create new options or applying existing options to the product.                         |
 | Options     | List of options added to the product. Select an Option to edit its settings and values. |
 
 ## SKUs
@@ -158,7 +158,7 @@ This section contains additional configuration options for the product. There ar
 | Display Stock Quantity   | Activate this toggle to display the product's stock quantity on the product details page.                                                                                                    |
 | Maximum Order Quantity   | Set the maximum order quantity for the product.                                                                                                                                              |
 | Minimum Order Quantity   | Set the minimum order quantity for the product.                                                                                                                                              |
-| Multiple Order Quantity  | Set the allowed multiples that a customer can purchase. If you set the value to `3`, then the customer can purchase only `3` units of the product or other multiples of `3` (`6`, `9`, etc). |
+| Multiple Order Quantity  | Set the allowed multiples a customer can purchase. If you set the value to `3`, the customer can purchase only `3` units of the product or other multiples of `3` (`6`, `9`, etc). |
 | Allowed Order Quantities | Set the allowed order quantities that a customer can purchase. You must enter values separated by a command (`,`).                                                                           |
 
 ## Grouped (for Grouped Products)

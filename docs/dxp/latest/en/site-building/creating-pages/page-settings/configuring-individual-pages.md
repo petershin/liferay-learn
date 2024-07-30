@@ -19,15 +19,14 @@ Alternatively, you can access general page settings by clicking *Actions* (![Act
 
 These settings are organized into the following tabs:
 
-* [General](#general)
-* [Design](#design)
-* [SEO](#seo)
-* [Open Graph](#open-graph)
-* [Custom Meta Tags](#custom-meta-tags)
+- [General](#general)
+- [Design](#design)
+- [SEO](#seo)
+- [Open Graph](#open-graph)
+- [Custom Meta Tags](#custom-meta-tags)
 
-```{note}
-Many of these settings can be localized to provide translations based on a user's locale. See [Initial Instance Localization](../../../installation-and-upgrades/setting-up-liferay/initial-instance-localization.md) and [Modifying Localizable Site Fields](../../site-settings/site-localization.md#modifying-localizable-site-fields) for more information.
-```
+!!! note
+    Many of these settings can be localized to provide translations based on a user's locale. See [Initial Instance Localization](../../../installation-and-upgrades/setting-up-liferay/initial-instance-localization.md) and [Modifying Localizable Site Fields](../../site-settings/site-localization.md#modifying-localizable-site-fields) for more information.
 
 ## General
 
@@ -39,9 +38,8 @@ Use the name field to set a page's title used for site navigation and displayed 
 
 ![Use the name field to set the page's title and check the checkbox to hide it from menu display.](./configuring-individual-pages/images/02.png)
 
-```{note}
-Child pages inherit the parent page’s visibility. Also, hidden pages are not displayed on the default navigation menu, but can be displayed on any other created navigation menu.
-```
+!!! note
+    Child pages inherit the parent page’s visibility. Also, hidden pages are not displayed on the default navigation menu, but can be displayed on any other created navigation menu.
 
 ### URL
 
@@ -51,9 +49,8 @@ Use *Query String* to set default parameters for a page when no other parameters
 
 ![Use the Friendly URL field to set a page's custom URL.](./configuring-individual-pages/images/03.png)
 
-```{tip}
-While a page's name and friendly URL are initially defined together at page creation, they are configured independently afterwards. It is best practice to update them together so that they match.
-```
+!!! tip
+    While a page's name and friendly URL are initially defined together at page creation, they are configured independently afterwards. It is best practice to update them together so that they match.
 
 ### Page Layout
 
@@ -97,9 +94,8 @@ Here you can quickly and easily change some areas of your page's design system a
 
 ![Determine the favicon, master page template, style book and icon for your page.](./configuring-individual-pages/images/08.png)
 
-```{note}
-Content pages also include Master and Style Book settings in the Edit sidebar menu under Page Design Options (![Page Design Options icon](../../../images/icon-format.png)).
-```
+!!! note
+    Content pages also include Master and Style Book settings in the Edit sidebar menu under Page Design Options (![Page Design Options icon](../../../images/icon-format.png)).
 
 ### Customization
 
@@ -115,9 +111,8 @@ You can also access a CSS and JavaScript editors where you can add custom code t
 
 ![Use CSS and JavaScript editors to add custom code to the page](./configuring-individual-pages/images/09.png)
 
-```{tip}
-If your site's theme uses JavaScript, it's best to add custom JavaScript code to the theme rather than an individual page or page set. This ensures your site's JavaScript code remains in one place. If your theme does not use JavaScript, place all of your site's JavaScript code here.
-```
+!!! tip
+    If your site's theme uses JavaScript, it's best to add custom JavaScript code to the theme rather than an individual page or page set. This ensures your site's JavaScript code remains in one place. If your theme does not use JavaScript, place all of your site's JavaScript code here.
 
 ### Advanced Settings
 
@@ -129,9 +124,8 @@ Access additional settings to customize a page’s content and features.
 
 **Mobile Device Rules**: Determine whether a page uses its page set's [rules for mobile devices](../../../site-building/optimizing-sites/building-a-responsive-site/creating-mobile-device-rules.md) or is uniquely configured. These rules determine how a page's content renders for different types of mobile devices.
 
-```{note}
-The *Custom Fields* and *Embedded Widget* sections only appear once you've created custom fields and embedded widgets in a page.
-```
+!!! note
+    The *Custom Fields* and *Embedded Widget* sections only appear once you've created custom fields and embedded widgets in a page.
 
 ## SEO
 
@@ -151,11 +145,10 @@ Set a custom canonical URL for a page. Custom URLs configured in this manner tak
 
 ### Keywords
 
-List words that people are likely to use when searching for your page's content. These keywords contribute to your page's ranking.
+List words that people are likely to use when searching for your page's content. These keywords contribute to your page's ranking. Separate the keywords into different lines or split them into a comma-separated list.
 
-```{tip}
-Use keywords often throughout your page's content, including titles, headings, descriptions, paragraphs, and image alt text.
-```
+!!! tip
+    Use keywords often throughout your page's content, including titles, headings, descriptions, paragraphs, and image alt text.
 
 ![Set the page's HTML title, description, custom canonical URL and keywords to improve your page's ranking in Search Engine Results Pages (SERP)](./configuring-individual-pages/images/10.png)
 
@@ -193,21 +186,20 @@ Use the drop-down menu to inform tools crawling and indexing your site how frequ
 
 In the *Open Graph* tab, you can use Open Graph `<meta>` tags to define a page's metadata and create engaging representations of your content. Values defined here override default values defined at the [site](../../site-settings/configuring-open-graph.md) level.
 
-```{note}
-Open Graph `<meta>` tags are only included in page headers to unauthenticated users. They are not included when the user is logged in.
-```
+!!! note
+    Open Graph `<meta>` tags are only included in page headers to unauthenticated users. They are not included when the user is logged in.
 
 ### Image
 
 Use the image field to define the following Open Graph `<meta>` properties for a page:
 
-   ```html
-   <meta property="og:image" content="http://example.com/ogp.jpg" />
-   <meta property="og:image:secure_url" content="https://secure.example.com/ogp.jpg" />
-   <meta property="og:image:type" content="image/jpeg" />
-   <meta property="og:image:width" content="400" />
-   <meta property="og:image:height" content="300" />
-   ```
+```html
+<meta property="og:image" content="http://example.com/ogp.jpg" />
+<meta property="og:image:secure_url" content="https://secure.example.com/ogp.jpg" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="400" />
+<meta property="og:image:height" content="300" />
+```
 
 ### Image Alt Description
 
@@ -231,6 +223,6 @@ Here you can add custom `<meta>` tags to the `<head>` of a page. These tags are 
 
 ## Related Topics
 
-* [Adding a Page to a Site](../adding-pages/adding-a-page-to-a-site.md)
-* [Using Content Pages](../using-content-pages.md)
-* [Configuring Page Sets](./configuring-page-sets.md)
+- [Adding a Page to a Site](../adding-pages/adding-a-page-to-a-site.md)
+- [Using Content Pages](../using-content-pages.md)
+- [Configuring Page Sets](./configuring-page-sets.md)

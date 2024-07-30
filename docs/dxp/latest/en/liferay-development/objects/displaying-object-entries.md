@@ -9,7 +9,7 @@ taxonomy-category-names:
 - Liferay PaaS
 - Liferay SaaS
 ---
-# Displaying Object Entries: Lists, Details, and Forms
+# Displaying Object Entries
 
 {bdg-secondary}`Liferay 7.4+`
 
@@ -18,13 +18,6 @@ You can display object entries dynamically with Liferay's page building features
 ![You can use collections and display page templates for object displays.](./displaying-object-entries/images/10.png)
 
 Collections, display pages and form containers offer the most flexibility and are recommended. However, other display methods are available:
-
-Views: 
-
-Add Entry
-Edit entry
-List entries
-Show Entry details
 
 | Object Entry Display Feature | Description | Object Entry View |
 | :--------------------------- | :-------------------- | :---------- |
@@ -86,8 +79,6 @@ Follow these steps:
 
    ![Click the Actions button for the template and select Mark as Default.](./displaying-object-entries/images/03.png)
 
-<!-- It may be more important to show the option to map a fragment link to the page, either with the Default mapping or to the Page -->
-
 ### Enabling Comments
 
 1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Objects*.
@@ -100,7 +91,7 @@ Follow these steps:
 
 ## Creating Information Templates for Objects
 
-Information templates let you template objects with FreeMarker, like web content templates allow for web content articles.
+With information templates, you can use FreeMarker to template objects.
 
 1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)) and go to *Design* &rarr; *Templates* &rarr; *Information Templates*.
 
@@ -139,6 +130,6 @@ Since objects are integrated with the info framework, you can add object entries
 ## Related Topics
 
 * [Creating Objects](./creating-and-managing-objects/creating-objects.md)
-* [Displaying Object Entries with Collection Providers](./displaying-object-entries/displaying-object-entries-with-collection-providers.md)
+* [Displaying Object Entries with Collections](./displaying-object-entries/displaying-object-entries-with-collection-providers.md)
 * [About Collections and Collection Pages](../../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md)
 * [Using Display Page Templates](../../site-building/displaying-content/using-display-page-templates.md)

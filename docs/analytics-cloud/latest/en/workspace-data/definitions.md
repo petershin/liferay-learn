@@ -115,3 +115,9 @@ The search query parameter can vary from site to site. For example, a URL might 
 ![Add up to five search query parameters.](./definitions/images/09.png)
 
 Navigate to *Settings* &rarr; *Workspace Data* &rarr; *Definitions* &rarr; *Search*. Enter the parameter into the text field. Click *+* to add additional parameters. Click the trash icon (![trash icon](../images/icon-delete.png)) to delete a parameter.
+
+## Related Topics
+
+- [Connecting Liferay DXP to Analytics Cloud](../getting-started/connecting-liferay-dxp-to-analytics-cloud.md)
+- [Creating Segments](../people/segments/creating-segments.md)
+- [Tracking Events](../touchpoints/events/tracking-events.md)

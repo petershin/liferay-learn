@@ -3,7 +3,7 @@ uuid: 1f1df919-03ad-4743-a53f-120bdd93e56e
 ---
 # Publishing Content with Workflows
 
-In the previous sections, you learned about the tools Liferay provides for managing digital assets and web content, and you put some of them to use in enhancing Clarity's enterprise marketing website. However, Clarity's recent growth means that managing this website is no longer an isolated project for a small team or an individual. Rather, it is a complex undertaking that spans multiple departments and internal stakeholders within the organization. As such, Clarity needs standardized approval processes and means for publishing an increasing volume of content and collaborating among its disparate teams.
+In the previous sections, you learned about the tools Liferay provides for managing digital assets and web content, and you put some of them to use in enhancing Clarity's enterprise marketing website. However, Clarity's recent growth means that managing this website is no longer an isolated project for a small team or an individual. Rather, it is a complex undertaking that spans multiple departments and internal stakeholders within the organization. As such, Clarity needs standardized approval processes and means for publishing an increasing volume of content and collaborating among its disparate teams. In this article, you'll learn about the features in Liferay that you can use to manage the publication and approval cycle.
 
 ## Publishing Tools
 
@@ -19,7 +19,7 @@ While traditional staging with Liferay can address basic requirements, publicati
 
 - Reliable rollback when human error occurs and reversion is necessary.
 
-Publications are ideal when there are frequent changes involving multiple departments that must be published at different times. Publications is almost always the recommended tool for most solutions. Certain governance standards require any changes to be approved before they are made in a production environment; in this specific scenarios, staging is the appropriate choice. For their enterprise marketing website, Clarity chooses publications over staging as their collaboration and publishing solution.
+Publications are ideal when there are frequent changes involving multiple departments that must be published at different times. Publications is almost always the recommended tool for most solutions. Certain governance standards require any changes to be approved before they are made in a production environment; in this specific scenario, staging is the appropriate choice. For their enterprise marketing website, Clarity chooses publications over staging as their collaboration and publishing solution.
 
 ## Workflows
 

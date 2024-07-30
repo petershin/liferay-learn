@@ -23,6 +23,8 @@ Tags are keywords for organizing your assets. While categories provide broader c
 
 ## Collections
 
+<!--TODO: Consider moving Collections content into its own article-->
+
 While categories and tags make your content more accessible to users, you can also leverage them as site building tools. Collections bridge the gap between categorization and page design, allowing you to
 
 - Group diverse content

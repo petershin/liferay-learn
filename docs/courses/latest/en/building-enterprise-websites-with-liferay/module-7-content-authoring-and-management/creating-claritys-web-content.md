@@ -5,6 +5,8 @@ uuid: d304bf82-c70f-4470-ac61-8d41bf737851
 
 As we mentioned in the module introduction, *Content Management* is a broad term that can apply to a range of feature sets in the data lifecycle. We're going to focus specifically on the bread-and-butter Liferay features used to create content for web pages. Using structures and templates, you can build and display articles of web content through content pages, display pages, widgets, or fragments, which you learned about in the previous module. Web content articles are dynamic, versatile assets, in large part because they are made up of web content structures. 
 
+<!--TODO: Consider including more content that compares use cases for Fragments vs Web Content; this would align more closely with the bootcamp slides-->
+
 ## Structures
 
 Web content structures are the building blocks of Liferay content. They determine what kinds of information you need to provide for a given web content article. Structures allow you to enforce a format for your content using a straightforward drag-and-drop interface with several types of fields. A single structure can be reused in multiple places, reducing effort for writers, editors, and designers alike. Liferay includes a Basic Web Content structure out of the box, but you can tailor your own structures to your specific needs.

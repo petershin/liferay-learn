@@ -49,6 +49,8 @@ Like any manufacturer, Clarity has variants of their products designed to achiev
 
 While Clarity could model all of these product types and attributes with web content structures, Liferay commerce provides an intuitive solution that you can implement with ease.
 
+<!--TODO: Consider adding content for Product Listing and Product Display pages-->
+
 ## Channels
 
 Once their products and catalogs are configured, Clarity needs to think about how they will display their products to customer and website visitors. Channels are the storefront where products are displayed and sold to customers. They come with several useful features:

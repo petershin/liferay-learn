@@ -13,9 +13,8 @@ Upon receiving a Liferay Cloud onboarding email, you're provisioned a GitHub rep
 
 1. Integrate their private repository with the Jenkins (CI) service in Liferay Cloud using a Webhook.
 
-```{note}
-If you are using an organization account, you must have administrative privileges to transfer the repository to the organization. The repository's administrators *are not necessarily the same* as your project's administrators in the Cloud console.
-```
+!!! note
+    If you are using an organization account, you must have administrative privileges to transfer the repository to the organization. The repository's administrators *are not necessarily the same* as your project's administrators in the Cloud console.
 
 ## Transferring the Repository
 
@@ -43,19 +42,19 @@ Now you must integrate your new repository with the Jenkins service in Liferay C
 
 1. Leave the *Secret* field blank and ensure that *Enable SSL verification* is selected.
 
-    ![Figure 1: Specify the payload URL and content type, and enable SSL verification.](./configuring-your-github-repository/images/01.png)
+   ![Figure 1: Specify the payload URL and content type, and enable SSL verification.](./configuring-your-github-repository/images/01.png)
 
 1. Under *Which events would you like to trigger this webhook?*, select *Let me select individual events*. A list of events then appears.
 
 1. Select *Pushes* and *Pull Requests* from the list of events.
 
-    ![Figure 2: You need to select individual events for this webhook.](./configuring-your-github-repository/images/02.png)
+   ![Figure 2: You need to select individual events for this webhook.](./configuring-your-github-repository/images/02.png)
 
-    ![Figure 3: Select Pushes, and Pull Requests.](./configuring-your-github-repository/images/03.png)
+   ![Figure 3: Select Pushes, and Pull Requests.](./configuring-your-github-repository/images/03.png)
 
 1. Make sure *Active* is selected, then click *Add webhook*.
 
-    ![Figure 4: Set the webhook to Active and finish creating it.](./configuring-your-github-repository/images/04.png)
+   ![Figure 4: Set the webhook to Active and finish creating it.](./configuring-your-github-repository/images/04.png)
 
 ### Setting Environment Variables
 
@@ -67,12 +66,12 @@ Set these environment variables in the Jenkins service to point to your new repo
 
 1. Configure the following environment variables:
 
-| Name | Value |
-| :--- | :--- |
-| `LCP_CI_SCM_PROVIDER` | github  |
-| `LCP_CI_SCM_REPOSITORY_OWNER` | [repo_owner] |
-| `LCP_CI_SCM_REPOSITORY_NAME` | [repo_name] |
-| `LCP_CI_SCM_TOKEN` | [access_token] |
+| Name                          | Value          |
+| :---------------------------- | :------------- |
+| `LCP_CI_SCM_PROVIDER`         | github         |
+| `LCP_CI_SCM_REPOSITORY_OWNER` | [repo_owner]   |
+| `LCP_CI_SCM_REPOSITORY_NAME`  | [repo_name]    |
+| `LCP_CI_SCM_TOKEN`            | [access_token] |
 
 For the `LCP_CI_SCM_TOKEN` value, use the personal access token created for your GitHub organization. For instructions on creating and accessing this token, see [GitHub's documentation](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line).
 
@@ -80,23 +79,20 @@ The personal access token created must have all of the scope permissions under *
 
 ![Check the correct permissions to ensure that the PAT can be used successfully.](./configuring-your-github-repository/images/05.png)
 
-```{note}
-If you are using an organization account with SAML single sign-on authentication, then you must take additional steps to authorize your access token. See [GitHub's official documentation](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/authorizing-a-personal-access-token-for-use-with-saml-single-sign-on) for more information.
-```
+!!! note
+    If you are using an organization account with SAML single sign-on authentication, then you must take additional steps to authorize your access token. See [GitHub's official documentation](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/authorizing-a-personal-access-token-for-use-with-saml-single-sign-on) for more information.
 
 After updating these environment variables, the Jenkins service will restart. Any pushed branches and pull requests in the new repository now trigger builds.
 
-```{note}
-Jenkins versions prior to `2.222.1-3.2.0` use the environment variables `GITHUB_REPOSITORY` and `GITHUB_TOKEN` instead. To use the `LCP_CI_SCM_*` environment variables, ensure you are running Jenkins `2.222.1-3.2.0` or higher.
-```
+!!! note
+    Jenkins versions prior to `2.222.1-3.2.0` use the environment variables `GITHUB_REPOSITORY` and `GITHUB_TOKEN` instead. To use the `LCP_CI_SCM_*` environment variables, ensure you are running Jenkins `2.222.1-3.2.0` or higher.
 
 ### Personal Access Token Usage
 
 The personal access token referenced by the `LCP_CI_SCM_TOKEN` value is needed for Liferay Cloud to integrate with your repository.
 
-```{warning}
-If the personal access token belongs to a personal user account and that user is removed from the organization, all builds will fail to complete. Instead, use an account specifically belonging to the organization. See [GitHub's official documentation](https://docs.github.com/en/actions/learn-github-actions/security-hardening-for-github-actions#considering-cross-repository-access) for more information.
-```
+!!! warning
+    If the personal access token belongs to a personal user account and that user is removed from the organization, all builds will fail to complete. Instead, use an account specifically belonging to the organization. See [GitHub's official documentation](https://docs.github.com/en/actions/learn-github-actions/security-hardening-for-github-actions#considering-cross-repository-access) for more information.
 
 By default, the GitHub organization's [Personal Access Token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token) must also have the `admin:repo_hook` permissions in order for the CI service to successfully integrate using the default web hook.
 
@@ -108,7 +104,7 @@ Removing these permissions from the web hook improves security by minimizing acc
 
 ## Verifying Builds
 
-Pushed branches and pull requests trigger builds that you can see or deploy from the _Builds_ tab in the Liferay Cloud Console. After setting up integration with the Jenkins service, a good next step is to verify these builds, to ensure that the integration was successful.
+Pushed branches and pull requests trigger builds that you can see or deploy from the *Builds* tab in the Liferay Cloud Console. After setting up integration with the Jenkins service, a good next step is to verify these builds, to ensure that the integration was successful.
 
 ### Verifying Builds from Pushed Branches
 
@@ -116,19 +112,19 @@ Verify that new Git pushes trigger Jenkins builds:
 
 1. Make a change to the repository (like adding a file), then commit it to the branch:
 
-    ```bash
-    git commit -m "Add file to test builds"
-    ```
+   ```bash
+   git commit -m "Add file to test builds"
+   ```
 
 1. Push the branch up to GitHub:
 
-    ```bash
-    git push origin branch-name
-    ```
+   ```bash
+   git push origin branch-name
+   ```
 
-1. Navigate to the _Builds_ page in the Liferay Cloud Console.
+1. Navigate to the *Builds* page in the Liferay Cloud Console.
 
-1. Verify that the build displays for the pushed branch on the _Builds_ page.
+1. Verify that the build displays for the pushed branch on the *Builds* page.
 
 ### Verifying Builds from Pull Requests
 
@@ -138,7 +134,7 @@ Verify that new pull requests trigger Jenkins builds:
 
 1. Verify that a new build is created for the pull request.
 
-1. Navigate to the _Builds_ page in the Liferay Cloud Console.
+1. Navigate to the *Builds* page in the Liferay Cloud Console.
 
 1. Click the links for the branch and commit in the appropriate build.
 
@@ -146,5 +142,6 @@ Verify that new pull requests trigger Jenkins builds:
 
 ## Related Topics
 
-* [Configuring Your BitBucket Repository](./configuring-your-bitbucket-repository.md)
-* [Configuring Your GitLab Repository](./configuring-your-gitlab-repository.md)
+- [Configuring Your BitBucket Repository](./configuring-your-bitbucket-repository.md)
+- [Configuring Your GitLab Repository](./configuring-your-gitlab-repository.md)
+- [Configuring Your Azure Repository](./configuring-your-azure-repository.md)

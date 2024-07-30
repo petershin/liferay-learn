@@ -6,6 +6,7 @@ toc:
   - ./getting-started/configuring-your-github-repository.md
   - ./getting-started/configuring-your-bitbucket-repository.md
   - ./getting-started/configuring-your-gitlab-repository.md
+  - ./getting-started/configuring-your-azure-repository.md
   - ./getting-started/logging-into-your-liferay-cloud-services.md
   - ./getting-started/understanding-liferay-cloud-environments.md
   - ./getting-started/liferay-saas-go-live-checklist.md

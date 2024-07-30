@@ -14,9 +14,8 @@ Upon receiving a Liferay Cloud onboarding email, you're provisioned a GitHub rep
 
 The provisioned repository will be on GitHub, but you can transfer it to a GitLab repository as of version 3.2.0 of the Jenkins service. This must be done with administrative access to the GitLab repository.
 
-```{note}
-The repository's administrators *are not necessarily the same* as your project's administrators in the Cloud console.
-```
+!!! note
+    The repository's administrators *are not necessarily the same* as your project's administrators in the Cloud console.
 
 ## Preparing the Jenkins Service
 
@@ -28,19 +27,19 @@ First, create a new GitLab repository:
 
 1. Go to [GitLab](https://gitlab.com).
 
-1. Click _New project_.
+1. Click *New project*.
 
-    ![Click New project to begin creating a new GitLab repository.](./configuring-your-gitlab-repository/images/01.png)
+   ![Click New project to begin creating a new GitLab repository.](./configuring-your-gitlab-repository/images/01.png)
 
 1. Provide a project slug (the repository name in the url).
 
-    ![Fill in the details for your new repository.](./configuring-your-gitlab-repository/images/02.png)
+   ![Fill in the details for your new repository.](./configuring-your-gitlab-repository/images/02.png)
 
 1. Configure the visibility level to private (free users have unlimited private repositories).
 
-1. Ensure _Initialize repository with a README_ is unchecked.
+1. Ensure *Initialize repository with a README* is unchecked.
 
-1. Click _Create project_.
+1. Click *Create project*.
 
 ## Transferring from GitHub to GitLab
 
@@ -48,19 +47,18 @@ Follow these steps to transfer the provisioned GitHub repository to your own Git
 
 1. Clone the provisioned GitHub repository locally:
 
-    ```git clone git@github.com:dxpcloud/example.git```
+   ```git clone git@github.com:dxpcloud/example.git```
 
-    ```{note}
-    If you have already cloned the repository for work with another provider, then you can skip this step and work within the same clone.
-    ```
+   !!! note
+       If you have already cloned the repository for work with another provider, then you can skip this step and work within the same clone.
 
 1. Add a new Git remote and point to GitLab:
 
-    ```git remote add gitlab git@gitlab.com:USERNAME/REPOSITORYNAME.git```
+   ```git remote add gitlab git@gitlab.com:USERNAME/REPOSITORYNAME.git```
 
 1. Push the cloned repository to the new remote repository:
 
-    ```git push gitlab master```
+   ```git push gitlab master```
 
 If you need help creating, cloning, and pushing repositories, see [GitLab's documentation](https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html).
 
@@ -70,17 +68,17 @@ Next, create an access token that will be used by the Webhook to trigger Jenkins
 
 1. Navigate to the [personal access tokens page](https://gitlab.com/profile/personal_access_tokens).
 
-    ![Create a personal access token for GitLab, which cannot be accessed again later.](./configuring-your-gitlab-repository/images/03.png)
+   ![Create a personal access token for GitLab, which cannot be accessed again later.](./configuring-your-gitlab-repository/images/03.png)
 
 1. Provide a name and an expiration date for this access token.
 
 1. Configure the access token to have the following permissions:
 
-    * api
-    * read_repository
-    * write_repository
+   - api
+   - read_repository
+   - write_repository
 
-1. Click _Create personal access token_.
+1. Click *Create personal access token*.
 
 1. Copy your access token and save it somewhere (you won't see it again otherwise).
 
@@ -90,16 +88,16 @@ Lastly, set environment variables in the Jenkins service's to point to your new 
 
 1. Log in to the Liferay Cloud Console and navigate to your Jenkins service in the `infra` environment.
 
-1. Navigate to the _Environment Variables_ tab.
+1. Navigate to the *Environment Variables* tab.
 
 1. Configure the following environment variables:
 
-| Name | Value |
-| :--- | :--- |
-| `LCP_CI_SCM_PROVIDER` | gitlab  |
-| `LCP_CI_SCM_REPOSITORY_OWNER` | [repo_owner] |
-| `LCP_CI_SCM_REPOSITORY_NAME` | [repo_name] |
-| `LCP_CI_SCM_TOKEN` | [access_token] |
+| Name                          | Value          |
+| :---------------------------- | :------------- |
+| `LCP_CI_SCM_PROVIDER`         | gitlab         |
+| `LCP_CI_SCM_REPOSITORY_OWNER` | [repo_owner]   |
+| `LCP_CI_SCM_REPOSITORY_NAME`  | [repo_name]    |
+| `LCP_CI_SCM_TOKEN`            | [access_token] |
 
 After updating these environment variables, the Jenkins service restarts. Any pushed branches and pull requests in your new repository trigger builds.
 
@@ -107,8 +105,8 @@ After updating these environment variables, the Jenkins service restarts. Any pu
 
 To use a private GitLab server, you must set an additional environment variable in your Jenkins service:
 
-| Name | Value |
-| :--- | :--- |
+| Name                     | Value              |
+| :----------------------- | :----------------- |
 | `LCP_CI_SCM_SERVER_HOST` | [private host URL] |
 
 Set the `LCP_CI_SCM_SERVER_HOST` variable to the base URL of your private GitLab server (for example, `http://private.gitlab.server.com/`). This sets the server URL that CI uses to retrieve your code base when generating builds and linking to your repository's branches. By default, CI uses `https://gitlab.com/` as the base URL for GitLab.
@@ -119,23 +117,23 @@ Liferay Cloud's Jenkins service creates a webhook for your selected git SCM prov
 
 1. Navigate to your GitLab repository.
 
-1. Navigate to _Settings_ and select _Webhooks_.
+1. Navigate to *Settings* and select *Webhooks*.
 
-1. Under _Project Hooks_, verify the created webhook is listed.
+1. Under *Project Hooks*, verify the created webhook is listed.
 
-1. Click the _Edit_ button for the CI webhook.
+1. Click the *Edit* button for the CI webhook.
 
-    ![Edit the webhook that has been automatically created for your repository.](./configuring-your-gitlab-repository/images/04.png)
+   ![Edit the webhook that has been automatically created for your repository.](./configuring-your-gitlab-repository/images/04.png)
 
-1. Uncheck _Tags push events_ and _Comments_.
+1. Uncheck *Tags push events* and *Comments*.
 
-1. Check _Enable SSL verification_.
+1. Check *Enable SSL verification*.
 
-1. Click _Save changes_.
+1. Click *Save changes*.
 
 ## Verifying Builds
 
-Pushed branches and merge requests (GitLab's equivalent of pull requests) trigger builds that you can see or deploy from the _Builds_ tab in the Liferay Cloud Console. After setting up integration with the Jenkins service, a good next step is to verify these builds, to ensure that the integration was successful.
+Pushed branches and merge requests (GitLab's equivalent of pull requests) trigger builds that you can see or deploy from the *Builds* tab in the Liferay Cloud Console. After setting up integration with the Jenkins service, a good next step is to verify these builds, to ensure that the integration was successful.
 
 ### Verifying Builds from Pushed Branches
 
@@ -143,19 +141,19 @@ Verify that new Git pushes trigger Jenkins builds:
 
 1. Make a change to the repository (like adding a file), then commit it to the branch:
 
-    ```bash
-    git commit -m "Add file to test builds"
-    ```
+   ```bash
+   git commit -m "Add file to test builds"
+   ```
 
 1. Push the branch up to GitLab:
 
-    ```bash
-    git push gitlab branch-name
-    ```
+   ```bash
+   git push gitlab branch-name
+   ```
 
-1. Navigate to the _Builds_ page in the Liferay Cloud Console.
+1. Navigate to the *Builds* page in the Liferay Cloud Console.
 
-1. Verify that the build displays for the pushed branch on the _Builds_ page.
+1. Verify that the build displays for the pushed branch on the *Builds* page.
 
 ### Verifying Builds from Merge Requests
 
@@ -165,15 +163,16 @@ Verify that new merge requests trigger Jenkins builds:
 
 1. Verify that a new build is created for the merge request.
 
-1. Navigate to the _Builds_ page in the Liferay Cloud Console.
+1. Navigate to the *Builds* page in the Liferay Cloud Console.
 
 1. Click the links for the branch and commit in the appropriate build.
 
-    ![Check the links for the branch and commit for your build, on the Builds page.](./configuring-your-gitlab-repository/images/05.png)
+   ![Check the links for the branch and commit for your build, on the Builds page.](./configuring-your-gitlab-repository/images/05.png)
 
 1. Verify that the links redirect to the correct GitLab pages.
 
 ## Related Topics
 
-* [Configuring Your BitBucket Repository](./configuring-your-bitbucket-repository.md)
-* [Configuring Your GitHub Repository](./configuring-your-github-repository.md)
+- [Configuring Your GitHub Repository](./configuring-your-github-repository.md)
+- [Configuring Your BitBucket Repository](./configuring-your-bitbucket-repository.md)
+- [Configuring Your Azure Repository](./configuring-your-azure-repository.md)

@@ -8,9 +8,9 @@ uuid: 820c2c07-28b8-4a9c-9d09-a4225f8eda65
 ---
 # Connecting a VPN Server to Liferay Cloud
 
-You can use Liferay Cloud's VPN feature to connect your Liferay Cloud services to external services on private networks. This allows you to operate an external system with the Cloud environment as though they exist within the same network.
+You can use Liferay Cloud's VPN feature to connect your Liferay Cloud services to external services on private networks, so you can operate an external system with the Cloud environment as though they exist within the same network.
 
-For example, you may need to connect your Liferay Cloud services to directories or applications that are only accessible on a company VPN. You'll learn how to do this here.
+For example, you can connect your Liferay Cloud services to directories or applications that are only accessible on a company VPN. 
 
 ## Creating a VPN Configuration
 
@@ -57,7 +57,7 @@ For example, you may need to connect your Liferay Cloud services to directories 
    - **Pre-shared Key**: (IPSec + Preshared-Key only) The pre-shared key created by your VPN server. 
 
    !!! tip
-       It's good practice to periodically update your PSK (pre-shared key). You can generate new PSKs or revoke existing ones in the VPN details page.
+       It's good practice to update your PSK (pre-shared key) periodically. You can generate new PSKs or revoke existing ones in the VPN details page.
 
 1. If you're using OpenVPN and your VPN requires a valid client certificate, add a TLS certificate and key.
 

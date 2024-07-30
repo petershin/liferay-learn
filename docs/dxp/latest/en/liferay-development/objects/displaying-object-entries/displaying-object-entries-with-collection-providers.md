@@ -9,7 +9,6 @@ taxonomy-category-names:
 - Liferay SaaS
 ---
 # Displaying Object Entries with Collections
-<!-- change to # Displaying Object Entries with Collections and add coverage of Manual and Dynamic Collections, plus the limitation that they can't be used with instance-scoped collections -->
 
 {bdg-secondary}`Liferay 7.4 U77+/GA77+`
 
@@ -19,7 +18,7 @@ When you publish an object definition, Liferay creates a [collection provider](.
     Instance-scoped objects cannot be used in manual or dynamic collections. With Liferay DXP you can use Search Blueprints and its collection provider to achieve most use cases. See [Collections with Search Blueprints](../../../using-search/liferay-enterprise-search/search-experiences/search-blueprints/collections-with-search-blueprints.md) for more information.
 <!-- Since it's now about collections, is there stuff we should cover related to Manual and Dynamic Collections and/or the Blueprints Collection Provider? -->
 <!-- ### Using Objects in Manual and Dynamic Collections -->
-## Using an Object's Collection Provider
+## Using an Object Collection
 
 1. Create a new [content page](../../../site-building/creating-pages/using-content-pages.md) or [display page template](../../../site-building/displaying-content/using-display-page-templates/creating-and-managing-display-page-templates.md). Alternatively, begin editing ( ![Edit Button](../../../images/icon-edit-pencil.png) ) an existing one.
 
@@ -32,7 +31,7 @@ When you publish an object definition, Liferay creates a [collection provider](.
 
    ![Select the fragment and click Select Collection.](./displaying-object-entries-with-collection-providers/images/01.png)
 
-1. In the modal window, click the *Collection Providers* tab and select the *object's provider*.
+1. In the modal window, select a collection or click the *Collection Providers* tab and select the object's provider.
 
    ![In the Collection Providers tab, select the object's provider.](./displaying-object-entries-with-collection-providers/images/02.png)
 
@@ -46,7 +45,7 @@ When you publish an object definition, Liferay creates a [collection provider](.
 
    ![Select the Filters to apply.](./displaying-object-entries-with-collection-providers/images/04.png)
 
-After selecting the desired provider, use additional fragment options to determine how Object entries appear, including *List Style* and *Pagination*.
+After selecting the desired collection, use additional fragment options to determine how Object entries appear, including *List Style* and *Pagination*.
 
 ## Mapping Fragments to Object Fields
 

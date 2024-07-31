@@ -2,7 +2,6 @@
 uuid: 439f9636-f431-4d6a-ad6c-3cad78e92803
 ---
 # Clarity's Identity Management Requirements
-<!--TASK: Rename File -->
 
 As Clarity's business grows, so does the complexity of managing user access and security. A robust Identity Management (IdM) solution with Single Sign-On (SSO) capabilities is crucial to ensure secure access for various user groups while maintaining a smooth user experience. Here we'll review Clarity's specific IdM requirements for strengthening security, simplifying user access management, and complying with data privacy regulations.
 
@@ -16,7 +15,7 @@ Let's take a look at Clarity's authentication and SSO requirements.
 
 Like many organizations, Clarity is already using an SSO solution to grant access to organization applications and services. To reduce cost and improve user experience, Clarity wants to continue using their existing solutions. With support for leading IdM and SSO services and protocols, Liferay can facilitate this integration and remove the need for additional login credentials.
 
-![Liferay supports these IdM and SSO services.](./claritys-authentication-and-sso-requirements/images/01.png)
+![Liferay supports these IdM and SSO services.](./claritys-identity-management-requirements/images/01.png)
 
 ### Provide alternative forms of identity management and authentication for different sets of users
 

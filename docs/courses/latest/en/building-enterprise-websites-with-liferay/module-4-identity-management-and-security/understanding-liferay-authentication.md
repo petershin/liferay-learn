@@ -11,7 +11,7 @@ Liferay DXP offers a range of authentication options. By default, Liferay's logi
 
 ![Liferay supports a wide range of third-party identity management and single sign-on solutions.](./understanding-liferay-authentication/images/01.png)
 
-For example, Liferay can easily be configured to integrate with popular LDAP directories such as Microsoft Active Directory or OpenLDAP. While for SSO, you can configure a connection to popular SSO providers such as Okta, PingFederate, and Siteminder. With these possibilities in mind, let's consider which strategy is best for companies like Clarity Vision Solutions.
+For example, Liferay can be configured to integrate with popular LDAP directories such as Microsoft Active Directory or OpenLDAP. While for SSO, you can configure a connection to popular SSO providers such as Okta, PingFederate, and Siteminder. With these possibilities in mind, let's consider which strategy is best for companies like Clarity Vision Solutions.
 
 <!--TASK: Add diagrams and explanations for each authentication model, highlighting where Liferay fits in (e.g., Liferay Only, External Service Only, Combination). -->
 
@@ -50,9 +50,11 @@ Before exploring how Clarity can set up Okta, let's cover Liferay DXP's default 
 
 ## Liferay DXP's Default Authentication
 
-By default, all new Liferay DXP environments begin with a single admin user. This is true for all deployment options, including SaaS, PaaS, and Self-Hosted. However, the credentials for this user depend on your deployment. For Liferay SaaS, login credentials are emailed to the project's initial administrator(s) during the provisioning process. However, for Liferay PaaS and Self-Hosted deployments, the default administrator email address is `test@liferay.com` and the default password is `test`.
+By default, all new Liferay DXP environments use basic authentication and begin with a single admin user. This is true for all deployment options, including SaaS, PaaS, and Self-Hosted. However, the credentials for this user depend on your deployment.
 
-<!--TASK: Add img-->
+![By default, all new Liferay DXP environments use basic authentication and begin with a single admin user.](./understanding-liferay-authentication/images/02.png)
+
+For Liferay SaaS, login credentials are emailed to the project's initial administrator(s) during the provisioning process. However, for Liferay PaaS and Self-Hosted deployments, the default administrator email address is `test@liferay.com` and the default password is `test`.
 
 !!! note 
     Liferay PaaS and Self-Hosted administrators can modify this default behavior using [portal properties](https://learn.liferay.com/w/dxp/installation-and-upgrades/reference/portal-properties).
@@ -62,10 +64,12 @@ So when you start up a new Liferay DXP environment, your first order of business
 * **Email**: `admin@clarityvisionsolutions.com`
 * **Password**: `learn`
 
+![The default administrator credentials for the training workspace have been updated.](./understanding-liferay-authentication/images/03.png)
+
 Liferay DXP's default login method relies on the Sign In widget. This widget uses the database to authenticate users. After logging in, you can begin setting up an alternative authentication method.
 
 ## Conclusion
 
 Liferay's flexible features empower organizations to tailor their identity management strategy to their specific needs. Now that you have a general understanding of Liferay's flexible authentication features, let's explore Liferay's compatibility with third-party services for authentication and SSO.
 
-Next Up: [Using Third-Party Services for Authentication and SSO]()
+Next Up: [Using Third-Party Services for Authentication and SSO](./using-third-party-services-for-authentication-and-sso.md)

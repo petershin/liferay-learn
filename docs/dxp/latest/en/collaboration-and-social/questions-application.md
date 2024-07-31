@@ -15,6 +15,8 @@ taxonomy-category-names:
 
 {bdg-secondary}`Available: Liferay DXP/Portal 7.3+`
 
+<!-- Hey Gabriel, when you see a badge formatted like the above, it means it was created before we had the current badge syntax. Please convert this to the current badge syntax whenever you see it. I'm sending this back to you because of that, because I've corrected these before. I'm not convinced you're looking at my wordsmithing commits when stuff gets merged, because you still let these through. You should be reviewing those commits even when I don't send you writing feedback, because you'll see the kinds of things I catch (and thus avoid them in the future). -Rich -->
+
 The Questions app is a new UI of the Message Boards application, focused on presenting a question-and-answer format. The Questions app allows the creation of:
 
 **Topics:** Themes where questions are categorized

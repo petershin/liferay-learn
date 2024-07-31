@@ -11,10 +11,13 @@ taxonomy-category-names:
 ---
 # Using Notification Templates
 
-Email notifications are sent automatically to users based on events in the store. To send them, you must first create a *Notification Template*. Notification templates define the sender, trigger, and content of an email notification.
+Email notifications are sent automatically to users based on events in the store. To send them, you must first create a *Notification Template*. Notification templates under a channel define the sender, recipient, trigger, and content of an email notification.
+
+!!! important
+    The preferred way to set up notifications is by creating a notification template and then using it in an object action. See [Notification Template](https://learn.liferay.com/w/dxp/process-automation/notifications/creating-notification-templates) and [Defining Object Actions](https://learn.liferay.com/w/dxp/liferay-development/objects/creating-and-managing-objects/actions/defining-object-actions) for more information. The following instructions specify how to create a notification template at the channel level.
 
 !!! note
-    To use notifications in Commerce, first configure mail settings for your Liferay system. See [Configuring Mail](https://learn.liferay.com/w/dxp/installation-and-upgrades/setting-up-liferay/configuring-mail) for more information.
+    To use notifications, first configure mail settings for your Liferay system. See [Configuring Mail](https://learn.liferay.com/w/dxp/installation-and-upgrades/setting-up-liferay/configuring-mail) for more information.
 
 ## Event Triggers
 
@@ -35,11 +38,11 @@ Every notification template has a type that determines the channel event that tr
 
 ## Creating a Notification Template
 
-1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and navigate to *Control Panel* &rarr; *Commerce* &rarr; *Channels*.
+1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Channels*.
 
-1. Select a *channel* and go to the *Notification Templates* tab.
+1. Select a *channel* and go to *Notification Templates*.
 
-   ![Select a channel and go to the Notification Templates tab.](./using-notification-templates/images/01.png)
+   ![Select a channel and go to Notification Templates.](./using-notification-templates/images/01.png)
 
 1. Click *Add* (![Add Button](../../images/icon-add.png)).
 
@@ -69,7 +72,7 @@ While enabled, the notification template automatically sends emails when trigger
 
 ## Viewing Email Notifications of an Order
 
-Email notifications related to an order are tracked. To view them, open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and navigate to *Control Panel* &rarr; *Commerce* &rarr; *Orders*. Select an order and click the *Emails* tab. See [Order Information](../../order-management/orders/order-information.md) to learn more.
+Email notifications related to an order are tracked. To view them, open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Orders*. Select an order and click the *Emails* tab. See [Order Information](../../order-management/orders/order-information.md) to learn more.
 
 ![You can view the triggered notification under the Emails tab of an order.](./using-notification-templates/images/05.png)
 

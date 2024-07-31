@@ -4,6 +4,7 @@ toc:
   - ./clustering-for-high-availability/database-configuration-for-cluster-nodes.md
   - ./clustering-for-high-availability/configuring-cluster-link.md
   - ./clustering-for-high-availability/configuring-unicast-over-tcp.md
+  - ./clustering-for-high-availability/enabling-session-replication-on-tomcat.md
 uuid: e38676bb-0c00-45cb-a1ff-37038f7ad701
 taxonomy-category-names:
 - Platform
@@ -33,9 +34,8 @@ Here is what's required to create an effectively functional DXP cluster.
 
 1. [Cluster Link configured to enable communication and cache replication across all nodes](./clustering-for-high-availability/configuring-cluster-link.md)
 
-```{note}
-To ensure there are no concurrency issues and that the master node is selected correctly, start your nodes sequentially.
-```
+!!! note
+    To ensure there are no concurrency issues and that the master node is selected correctly, start your nodes sequentially.
 
 After you've configured your DXP cluster, you can deploy applications to it and continue improving user experiences. Please see [Maintaining Clustered Installations](../maintaining-a-liferay-installation/maintaining-clustered-installations.md) for more information.
 
@@ -43,6 +43,5 @@ After you've configured your DXP cluster, you can deploy applications to it and 
 
 Creating a cluster by way of example is a great first step in understanding DXP clustering. Start with [Example: Creating a Simple DXP Cluster](./clustering-for-high-availability/example-creating-a-simple-dxp-cluster.md) to learn more. Then address the [Clustering Requirements](#clustering-requirements) listed above.
 
-```{note}
-This documentation describes DXP-specific cluster configuration without getting into specific implementations of third party software, such as Java EE application servers, HTTP servers, and load balancers. Please consult the documentation for those components to configure them. Before creating a DXP cluster, make sure your OS is not defining the hostname of your system to the local network at 127.0.0.1.
-```
+!!! note
+    This documentation describes DXP-specific cluster configuration without getting into specific implementations of third party software, such as Java EE application servers, HTTP servers, and load balancers. Please consult the documentation for those components to configure them. Before creating a DXP cluster, make sure your OS is not defining the hostname of your system to the local network at 127.0.0.1

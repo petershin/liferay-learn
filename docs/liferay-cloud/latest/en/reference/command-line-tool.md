@@ -23,6 +23,7 @@ You can run the `-v` or `--verbose` option at the end of any `lcp` command to se
 * [Listing Projects or Services](#listing-projects-or-services)
 * [Restarting a Service](#restarting-a-service)
 * [Deploying to Your Liferay Cloud Environment](#deploying-to-your-liferay-cloud-environment)
+* [Downloading Files from the Liferay Service](#downloading-files-from-the-liferay-service)
 * [Accessing a Service's Shell](#accessing-a-services-shell)
 * [Uninstalling Version 3 of the CLI Tool](#uninstalling-version-3-of-the-cli-tool)
 
@@ -252,14 +253,14 @@ lcp deploy -r <remote-id>
 
 See [Deploying Changes via the CLI Tool](../updating-services-in-liferay-paas/deploying-changes-via-the-cli-tool.md) for more information.
 
-## Downloading Files from a Service
+## Downloading Files from the Liferay Service
 
 Use the `files download` command to directly download files from the Liferay service. The files must be in the Liferay service's persistent storage directory (`/mnt/persistent-storage/`).
 
 For example:
 
 ```bash
-lcp deploy --prefix path/to/files --dest destination
+lcp files download --prefix path/to/files --dest destination
 ```
 
 This command downloads all files from your Liferay service's `/mnt/persistent-storage/path/to/files/` directory into a `destination/` folder.
@@ -269,8 +270,10 @@ Change the number of files downloading at once (by default 100) with the `--conc
 For example, this command downloads all files from the `/mnt/persistent-storage/path/to/files/` directory into the current working directory, up to 600 files at a time.
 
 ```bash
-lcp deploy --prefix path/to/files --concurency 600
+lcp files download --prefix path/to/files --concurency 600
 ```
+
+See all of the available command options by running `lcp files download --help`.
 
 ## Accessing a Service's Shell
 

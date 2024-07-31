@@ -5,7 +5,7 @@ uuid: 6bab07ab-da1a-4238-ac47-eb4183f4fdb9
 <!--TASK: Rename Article-->
 <!--TASK: Add Abstract-->
 
-Liferay provides extensive out-of-the-box features for building custom solutions, including low-code capabilities that empower users to implement data structures, define complex business logic, and design user interfaces without writing code. While these features offer a high degree of flexibility, there may be times when you need to go beyond OOTB features to customize or extend the Liferay DXP to meet your unique requirements. For these circumstances, Liferay provides [client extensions](https://learn.liferay.com/w/dxp/liferay-development/client-extensions).
+Liferay provides extensive out-of-the-box features for building custom solutions, including low-code capabilities that empower users to implement data structures, define complex business logic, and design user interfaces without writing code. While these features offer a high degree of flexibility, there may be times when you need to go beyond OOTB features to customize or extend Liferay DXP to meet your unique requirements. For these circumstances, Liferay provides [client extensions](https://learn.liferay.com/w/dxp/liferay-development/client-extensions).
 
 Client extensions are the go to solution for extending Liferay DXP, whether that's modifying its look and feel or adding custom functions. Essentially, client extensions are platform customizations that live outside the Liferay portal container. Unlike [OSGi plugins](../liferay-internals/fundamentals/module-projects.md) and [themes](./customizing-liferays-look-and-feel/themes.md) that modify or add functionality to Liferay itself, client extensions interface only with Liferay's APIs. This loose coupling makes them more flexible and easier to apply to environments after an upgrade, since they depend only on APIs that rarely change between versions. You can also create client extensions using whatever programming languages or technologies you wish, because they run outside of Liferay and integrate with objects, with no extra code required to connect them.
 
@@ -51,7 +51,7 @@ You'll use these client extensions throughout the course.
 
 ## Client Extensions vs Traditional OSGi Plugins
 
-Traditionally, extending Liferay relies on creating and deploying custom OSGi plugins. These plugins are written in Java and can interact with Liferay's core services. While this method provides a powerful and comprehensive way to extend Liferay's functionalities, it has notable drawbacks.
+Traditionally, extending Liferay required creating and deploying custom OSGi plugins. These plugins are written in Java and can interact with Liferay's core services. While this method provides a powerful and comprehensive way to extend Liferay's functionalities, it has notable drawbacks.
 
 * **Specialized Resources**: OSGi plugins require developers with Liferay expertise to build them safely and properly, which limits the pool of developer resources.
 

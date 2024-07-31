@@ -23,7 +23,7 @@ git version
 !!! note
     If you're on Windows, use Command Prompt, PowerShell, or BASH to execute terminal commands.
 
-If it is installed, this should return the version of your git installation. For example,
+This returns the version of your git installation. For example,
 
 ```log
 git version 2.45.2
@@ -44,13 +44,15 @@ Once you've installed Java JDK 11, open a terminal window and run this command t
 java -version
 ```
 
-If it is ready, the JDK version should appear. For example,
+The JDK version appears. For example,
 
 ```log
 openjdk version "11.0.19" 2023-04-18 LTS
 OpenJDK Runtime Environment Zulu11.64+19-CA (build 11.0.19+7-LTS)
 OpenJDK 64-Bit Server VM Zulu11.64+19-CA (build 11.0.19+7-LTS, mixed mode)
 ```
+
+If it does not, you may need to perform additional troubleshooting steps that are beyond the scope of this course. Please see the relevant Java JDK installation documentation for your system.
 
 ## JMeter
 
@@ -59,7 +61,7 @@ Later in this course, you'll use JMeter to perform load testing on Clarity's ent
 * [apache-jmeter-5.6.3.tgz](https://dlcdn.apache.org//jmeter/binaries/apache-jmeter-5.6.3.tgz)
 * [apache-jmeter-5.6.3.zip](https://dlcdn.apache.org//jmeter/binaries/apache-jmeter-5.6.3.zip)
 
-Then follow the steps for your OS to start running JMeter.
+Then follow the steps for your OS to validate the JMeter installation.
 
 ### Unix-Based OS
 
@@ -75,15 +77,19 @@ Then follow the steps for your OS to start running JMeter.
    ./jmeter
    ```
 
+<!-- screenshot of running jmeter -->
+
 ### Windows OS
 
 1. Go to the extracted `apache-jmeter-5.6.3/bin/` folder.
 
 1. Double-click the `ApacheJMeter.jar` file to execute it.
 
+<!-- note that windows users who's JDK install, for whatever reason, did not associate the JDK with the .jar filetype - they will need to run in their terminal application `java -jar ApacheJMeter.jar` -->
+
 ## Liferay CLI Tools (Optional)
 
-Liferay provides two command-line tools (Blade CLI and Liferay Cloud CLI) to empower users to perform essential lifecycle operations without the need of a graphical user interface. For this course, they are optional. Though keep in mind, if you're working with Liferay SaaS and plan to create client extensions, the Liferay Cloud CLI tool is necessary.
+Liferay provides two command-line tools (Blade CLI and Liferay Cloud CLI) to empower users to perform essential lifecycle operations without the need of a graphical user interface. For this course, they are optional. Though if you're working with Liferay SaaS and plan to create client extensions, the Liferay Cloud CLI tool is necessary.
 
 ### Blade CLI
 
@@ -101,7 +107,7 @@ It should return the CLI's version:
 blade version 6.0.0.202404102137
 ```
 
-If the output indicates there is a newer version, please run this command to update it:
+If the output indicates there is a newer version, run this command to update it:
 
 ```bash
 blade update
@@ -112,7 +118,7 @@ blade update
 
 ### Liferay Cloud CLI
 
-The Liferay Cloud CLI tool is for managing instances without using the Liferay Cloud Console UI. This versatile tool can provides support for almost all management functions, though its primary uses are
+The Liferay Cloud CLI tool is for managing instances without using the Liferay Cloud Console UI. This versatile tool provides support for almost all management functions, though its primary uses are
 
 * Project and Service Management
 * Deployment and Updates

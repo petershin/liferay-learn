@@ -20,7 +20,7 @@ In today's digital market, businesses need to provide users with engaging, perso
 
 Liferay DXP provides a comprehensive environment for business teams and developers to efficiently build enterprise websites at scale. With low-code capabilities and a user-friendly editor, Liferay's flexible platform simplifies and optimizes site development. You can also leverage Liferay to unify your technical infrastructure and enable seamless integration with existing systems.
 
-![Liferay's flexible and robust DXP provides the tools for optimizes site development.](./building-enterprise-websites-with-liferay/images/01.png)
+![Liferay's flexible and robust DXP provides the tools for optimizing site development.](./building-enterprise-websites-with-liferay/images/01.png)
 
 <!--TASK: Replace temp img.-->
 

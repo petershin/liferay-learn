@@ -10,7 +10,7 @@ After learning about the benefits of Liferay DXP and the value of Liferay SaaS, 
 Liferay SaaS provisioning begins with an initial outreach by a Liferay provisioning team. The team will collect information from you about:
 
 * Desired Liferay project name
-* Desired data server location 
+* Desired data server location
 * Who to include in the Liferay environment email invitation
 
 Once the provisioning team has this information, they will prepare your Liferay SaaS environments.
@@ -33,7 +33,7 @@ Note, to ensure the security and privacy of individual tenants, certain DXP feat
 
 ## The Cloud Administration Console
 
-The Liferay cloud console is both the place to deploy your client extensions, as well as the place to monitor your client extensions. Clarity can log in to the cloud console and monitor activities of any of their custom client extensions.
+The Liferay cloud console is both the place to deploy your client extensions, as well as the place to monitor your client extensions. Clarity can log in to the cloud console and monitor activities of any of their deployed client extensions.
 
 ![Login to the Liferay cloud console.](./liferay-saas-onboarding/images/03.png)
 

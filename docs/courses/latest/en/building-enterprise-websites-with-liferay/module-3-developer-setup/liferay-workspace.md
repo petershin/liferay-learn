@@ -6,7 +6,7 @@ uuid: a4730247-c6d1-49b6-b8e5-4f2c6616e585
 
 <!--TASK: Add Abstract-->
 
-Liferay Workspaces are specialized development environments that serve as the foundation for Liferay projects. They streamline the entire project lifecycle for developers by providing tools for creating, building, deploying, and testing your projects. Each workspace supports both Gradle (default) and Maven, and you can seamlessly create and manage your workspace using popular IDEs like Eclipse and IntelliJ IDEA. Workspaces work hand-in-hand with Liferay's CLI tools: *Blade CLI* for managing workspaces and projects, and the *Liferay Cloud CLI* for managing Cloud services and deploying client extensions to the Cloud Platform. See [Liferay Workspaces](https://learn.liferay.com/web/guest/w/dxp/building-applications/tooling/liferay-workspace) to learn more.
+Liferay Workspaces are specialized development environments that serve as the foundation for Liferay projects. They streamline the entire project lifecycle for developers by providing tools for creating, building, deploying, and testing your projects. Each workspace supports Gradle (default) and Maven, and you can seamlessly create and manage your workspace using popular IDEs like Eclipse and IntelliJ IDEA. Workspaces work hand-in-hand with Liferay's CLI tools: *Blade CLI* for managing workspaces and projects, and the *Liferay Cloud CLI* for managing Cloud services and deploying client extensions to the Cloud Platform. See [Liferay Workspaces](https://learn.liferay.com/web/guest/w/dxp/building-applications/tooling/liferay-workspace) to learn more.
 
 Typically, projects have a one-to-one relationship with a workspace and can include a wide variety of elements, such as client extensions, plugins, and fragments.
 
@@ -47,7 +47,7 @@ To do this,
    This saves a copy of the project in your current terminal directory.
 
    !!! important
-       If you've cloned the repo previously, ensure your workspace is up to date  by running `git pull origin main`.
+       If you've cloned the repo previously, ensure your workspace is up to date by running `git pull origin main`.
 
 1. Go to the workspace's root folder in your terminal:
 
@@ -61,7 +61,7 @@ To do this,
    blade server init
    ```
 
-   This downloads and builds dependencies for running Liferay, including the Liferay server.
+   This downloads and builds dependencies for running Liferay, including the Liferay Tomcat server.
 
    If you don't have Blade installed, run the correct `gradlew` command for your OS:
 
@@ -96,6 +96,9 @@ To do this,
       ```bash
       .\bundles\tomcat\bin\catalina.bat run
       ```
+
+   !!! tip
+       Wait until you see `org.apache.catalina.startup.Catalina.start Server startup in [x] milliseconds` to indicate startup completion.
 
 1. When finished, access your Liferay DXP instance by going to `localhost:8080` in your browser.
 

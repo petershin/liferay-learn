@@ -8,7 +8,7 @@ uuid: 4e517f86-fc12-44c5-89a7-35c9835a91b8
 
 Liferay DXP provides a complete enterprise-grade platform for building integrated and engaging websites at scale. With it, Clarity can unify their complex technical infrastructure, integrate their systems, and empower non-technical team members. This can help reduce costs and improve time-to-market. <!--ALT: Liferay DXP has many core capabilities that will make it easier for Clarity to create and maintain effective solutions while reducing costs. When paired with Liferay’s enterprise-grade cloud infrastructure, Clarity can centralize and simplify their systems to empower their teams.-->
 
-![Leverage Liferay's core capabilities to build ](./the-liferay-solution/images/01.png)
+![Leverage Liferay's core capabilities to build solutions.](./the-liferay-solution/images/01.png)
 
 Here we'll briefly explore some of Liferay's core capabilities that can help Clarity deliver on their critical success factors.
 

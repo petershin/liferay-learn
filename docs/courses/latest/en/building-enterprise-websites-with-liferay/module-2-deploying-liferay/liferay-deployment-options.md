@@ -48,7 +48,7 @@ Furthermore, with Liferay PaaS, Liferay's cloud infrastructure includes features
 
 Learn more about the Liferay PaaS and working with its cloud infrastructure tools in the [Liferay Cloud documentation](https://learn.liferay.com/web/guest/w/liferay-cloud/index).
 
-While Liferay PaaS takes care of the cloud infrastructure and core platform updates, you'll still need to handle Liferay DXP upgrades, patch implementation, and security hotfix application. All of this maintenance and management can still represent a hefty overhead that Clarity is not interested in.
+While Liferay PaaS takes care of the cloud infrastructure and core platform updates, you'll still need to handle Liferay DXP upgrades, patch implementation, and security hotfix application. All of this maintenance and management represents overhead that Clarity is not interested in.
 
 Finally, let's evaluate Liferay SaaS.
 
@@ -75,6 +75,9 @@ Client extension environments are also provided for custom development and custo
 With Liferay SaaS, backups and upgrades are fully managed and done for you. There is no need to update your environment or patch previous releases. You can rest assured that your Liferay application is always up-to-date with the latest releases.
 
 <!--TASK: Add?
+
+Also consider adding a reference to https://www.liferay.com/free-trial/pre-built-trial
+
 ## Liferay SaaS First
 
 Liferay SaaS empowers customer to rapidly deploy a secure digital platform with minimal IT resources, allowing customer to focus on core business initiatives.

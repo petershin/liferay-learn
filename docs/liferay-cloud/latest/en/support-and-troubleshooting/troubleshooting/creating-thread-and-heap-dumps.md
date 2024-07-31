@@ -7,7 +7,7 @@ uuid: 87fc3b35-c7e9-4adb-b7c3-4807b1c7215c
 ---
 # Creating Thread and Heap Dumps
 
-When you are experiencing issues with your `liferay` service's performance, you may need to take thread or heap dumps to help you or Liferay Cloud Support optimize your instance or troubleshoot problems.
+When you are experiencing issues with your Liferay service's performance, you may need to take thread or heap dumps to help you or Liferay Cloud Support optimize your instance or troubleshoot problems.
 
 Follow these steps to generate thread or heap dumps for troubleshooting:
 
@@ -15,7 +15,7 @@ Follow these steps to generate thread or heap dumps for troubleshooting:
 
 1. [Run the script from the Liferay service shell](#run-the-script-from-the-liferay-service-shell)
 
-1. [Download the dumps via a backup](#download-the-dumps-via-a-backup)
+1. [Download the dumps via the CLI tool](#download-the-dumps-via-the-cli-tool)
 
 1. [Delete the dumps when you are done](#delete-the-dumps-when-you-are-done)
 
@@ -23,7 +23,7 @@ The next section provides example scripts that you can run to generate thread or
 
 ## Choose a Script to Generate the Dumps
 
-Whether you are generating thread or heap dumps, you can run a script through the `liferay` service's [shell](shell-access.md) to make them available to download via backups.
+Whether you are generating thread or heap dumps, you can run a script through the Liferay service's [shell](shell-access.md) to make them available to download via backups.
 
 ### Thread Dump Creation Script
 
@@ -34,7 +34,7 @@ You can use this script to generate thread dumps for your Liferay instance in an
 ```
 #!/bin/bash
 
-TARGET_THREAD_DUMP_FOLDER=${TARGET_THREAD_DUMP_FOLDER:-/opt/liferay/data/thread_dumps}
+TARGET_THREAD_DUMP_FOLDER=${TARGET_THREAD_DUMP_FOLDER:-/mnt/persistent-storage/thread_dumps}
 
 mkdir -p "${TARGET_THREAD_DUMP_FOLDER}"
 
@@ -74,11 +74,11 @@ echo "[Liferay Cloud] Take thread dumps"
 main
 ```
 
-This script creates a new folder in your `liferay` service's `$LIFERAY_HOME/data/` folder (named `thread_dumps/` by default), and then it creates multiple timestamped subfolders that each contain a set of thread dumps. By default, it creates *four subfolders* with timestamps about 60 seconds apart, and fills each subfolder with *six thread dumps* about 10 seconds apart. Thread dumps are created with the [jstack utility](https://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/tooldescr016.html).
+This script creates a new folder in your Liferay service's persistent storage folder (named `thread_dumps/` by default), and then it creates multiple timestamped subfolders that each contain a set of thread dumps. By default, it creates *four subfolders* with timestamps about 60 seconds apart, and fills each subfolder with *six thread dumps* about 10 seconds apart. Thread dumps are created with the [jstack utility](https://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/tooldescr016.html).
 
 You can make multiple edits to alter this behavior:
 
-* You can change the name of the directory that thread dumps are saved to by changing `thread_dumps/` at the end of the path on the first line. However, *you must keep the folder inside the `data/` directory* for it to be accessible via backups.
+* You can change the name of the directory that thread dumps are saved to by changing `thread_dumps/` at the end of the path on the first line. However, *you must keep the folder inside the `/mnt/persistent-storage/` directory* for it to be accessible via the CLI tool.
 
 * You can change the number of iterations in the `main` function's loop to change the number of sets created. You can make the same change in the `take_thread_group` function to change the number of thread dumps per set.
 
@@ -93,7 +93,7 @@ You can use this script to generate a heap dump for your Liferay instance in any
 ```
 #!/bin/bash
 
-TARGET_HEAP_DUMP_FOLDER=${TARGET_HEAP_DUMP_FOLDER:-/opt/liferay/data/heap_dumps}
+TARGET_HEAP_DUMP_FOLDER=${TARGET_HEAP_DUMP_FOLDER:-/mnt/persistent-storage/heap_dumps}
 
 mkdir -p "${TARGET_HEAP_DUMP_FOLDER}"
 
@@ -122,13 +122,13 @@ main() {
 main
 ```
 
-This script creates a new folder in your `liferay` service's `$LIFERAY_HOME/data/` folder (named `heap_dumps/` by default), and then it creates a timestamped subfolder that contains a single, new heap dump. The heap dump is created with the [jmap utility](https://docs.oracle.com/javase/7/docs/technotes/tools/share/jmap.html).
+This script creates a new folder in your Liferay service's persistent storage folder (named `heap_dumps/` by default), and then it creates a timestamped subfolder that contains a single, new heap dump. The heap dump is created with the [jmap utility](https://docs.oracle.com/javase/7/docs/technotes/tools/share/jmap.html).
 
-You can change the name of the directory that thread dumps are saved to by changing `heap_dumps/` at the end of the path on the first line. However, *you must keep the folder inside the `data/` folder* for it to be accessible via backups.
+You can change the name of the directory that thread dumps are saved to by changing `heap_dumps/` at the end of the path on the first line. However, *you must keep the folder inside the `/mnt/persistent-storage/` folder* for it to be accessible via the CLI tool.
 
 ## Run the Script from the Liferay Service Shell
 
-Once you have a script to use, you must deploy it and run it from the `liferay` service's shell in the Liferay Cloud console.
+Once you have a script to use, you must deploy it and run it from the Liferay service's shell in the Liferay Cloud console.
 
 ### Save the Script to Your Project Repository
 
@@ -158,11 +158,11 @@ Once you have the script saved into a subfolder in `liferay/configs/[ENV]/`, you
 
 1. Follow the steps outlined in [Overview of the Liferay Cloud Deployment Workflow](../../updating-services-in-liferay-paas/overview-of-the-liferay-cloud-deployment-workflow.md) to deploy the script to the appropriate environment.
 
-1. In the Liferay Cloud console, navigate to the `liferay` service page in the appropriate environment.
+1. In the Liferay Cloud console, navigate to the Liferay service page in the appropriate environment.
 
 1. Click the *Shell* tab.
 
-    ![Access the liferay service shell to run the script.](./creating-thread-and-heap-dumps/images/01.png)
+    ![Access the Liferay service shell to run the script.](./creating-thread-and-heap-dumps/images/01.png)
 
     The script you deployed to this environment is in the file system accessible through this shell.
 
@@ -194,32 +194,40 @@ Once you have the script saved into a subfolder in `liferay/configs/[ENV]/`, you
     The heap dump script provided [in this section](#heap-dump-creation-script) only generates one heap dump. If you need multiple heap dumps to analyze memory usage at different times, then you must run the script again at those times.
     ```
 
-When the script has finished running, the thread or heap dump(s) are saved into timestamped subfolders available within `$LIFERAY_HOME/data`. Next, you must download the dumps via a backup to retrieve them locally.
+When the script has finished running, the thread or heap dump(s) are saved into timestamped subfolders available within `/mnt/persistent-storage/`. Next, you must download the dumps via the CLI tool to retrieve them locally.
 
-## Download the Dumps via a Backup
+## Download the Dumps via the CLI Tool
 
-Obtain the thread or heap dump(s) by downloading them with a backup of your `data` volume. You must first create a backup after the dumps are generated.
+Obtain the thread or heap dump(s) by downloading them with the CLI tool's [`lcp files download` command](../../reference/command-line-tool.md#downloading-files-from-a-service).
 
-1. Navigate to the *Backups* screen for the same environment, via the link on the left side of the screen.
+1. From your command prompt, run the `lcp files download` command to retrieve the dumps. For example, run this command to retrieve all heap dumps from the `heap_dumps/` subfolder to a `~/tmp/` destination folder:
 
-1. On the Backups page, click *Backup Now*.
+    ```bash
+    lcp files download --prefix heap_dumps --dest ~/data/tmp
+    ```
 
-    ![Click Backup Now to manually create a backup for the chosen environment.](./creating-thread-and-heap-dumps/images/02.png)
+1. Follow the tool's instructions to authenticate (if you aren't already) and select the environment to download from.
 
-1. Once the backup is created, click the Actions menu for the new backup and click *Download*, and then choose the download link named `backup-lfr-<PROJECT_NAME>-<ENV>-<TIMESTAMP>.tgz` to download the `data` volume.
+    ```bash
+    Please select a project from the list below:
+    #      Project                              Status              
+    1      myproject-prd                        Ready               
+    2      myproject-infra                      Ready               
+    3      myproject-uat                        Ready                
 
-    ![Choose the correct link to download the data volume.](./creating-thread-and-heap-dumps/images/03.png)
+    ? Type a number (#) or project name:
+    ```
 
-A download begins containing a backup of the `data` volume. The dumps are contained within the subfolder that the script specified (e.g., `thread_dumps/` or `heap_dumps/`).
+The tool begins downloading the dumps from the folder you specified.
 
 ## Delete the Dumps When You are Done
 
-The thread and/or heap dumps that you generate may take up significant space in your Liferay service's `data` volume, especially if you run the scripts multiple times. Remember to delete the dumps from your environment when you do not need them anymore to avoid wasting memory in your `data` volume. Use the Liferay service shell in the Liferay Cloud console to delete the dumps.
+The thread and/or heap dumps that you generate may take up significant space in your Liferay service's persistent storage space, especially if you run the scripts multiple times. Remember to delete the dumps from your environment when you do not need them anymore to avoid wasting memory. Use the Liferay service shell in the Liferay Cloud console to delete the dumps.
 
 For example, run these commands from the Liferay Cloud console to delete one set of thread dumps:
 
 ```bash
-cd data/thread_dumps/
+cd mnt/persistent-storage/
 ```
 
 ```bash

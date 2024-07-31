@@ -71,6 +71,9 @@ The following variables are only available in Liferay DXP 2024.Q3+/Portal 7.4 GA
 | [%COMMERCEORDER_SHIPPING_ADDRESS_STREET1%]      | Shipping address street 1           |
 | [%COMMERCEORDER_ORDER_ITEMS%]                   | A table listing all the order items |
 
+!!! important
+    These new variables are under a release feature flag. Read [Release Feature Flags](https://learn.liferay.com/web/guest/w/dxp/system-administration/configuring-liferay/feature-flags#release-feature-flags) for more information.
+
 ## Notification Template Variables (Channel)
 
 For notification templates created under a channel, select a notification template *Type* to view its variables. This determines which channel events trigger the notification.

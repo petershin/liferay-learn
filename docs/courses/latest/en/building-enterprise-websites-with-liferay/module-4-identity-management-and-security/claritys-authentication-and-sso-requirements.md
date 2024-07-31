@@ -12,9 +12,9 @@ Identity management (IdM) and single sign-on (SSO) requirements vary significant
 
 Let's take a look at Clarity's authentication and SSO requirements.
 
-### Seamlessly integrate Liferay with their existing SSO solution (i.e. Okta)
+### Seamlessly integrate Liferay with their existing SSO solution
 
-Like many organizations, Clarity is already using an SSO solution to grant access to organization applications and services. To reduce cost and improve user experience, Clarity want to continue using their existing solutions. With support for leading IdM and SSO services and protocols, Liferay can facilitate this integration and remove the need for additional login credentials.
+Like many organizations, Clarity is already using an SSO solution to grant access to organization applications and services. To reduce cost and improve user experience, Clarity wants to continue using their existing solutions. With support for leading IdM and SSO services and protocols, Liferay can facilitate this integration and remove the need for additional login credentials.
 
 ![Liferay supports these IdM and SSO services.](./claritys-authentication-and-sso-requirements/images/01.png)
 
@@ -26,9 +26,9 @@ In addition to supporting integration with external systems, Liferay also provid
 
 Liferay can seamlessly integrate with various user directories. This means Clarity can sync user groups from their existing solutions to streamline user management and permissions in Liferay. We'll explore this in a later module.
 
-## User Management and Authorization Requirements
+## Authorization and User Management Requirements
 
-User management is an important part of any organization's IT procedures and policies. A robust user management system goes beyond just assigning roles. It empowers you to define granular permissions for various actions, including application functionalities, content creation, and access to sensitive information. This ensures only authorized users can perform specific tasks, safeguarding data throughout the employee lifecycle, especially during crucial stages like onboarding and offboarding.
+User management is an important part of any organization's IT procedures and policies. A robust user management system goes beyond just assigning roles. It empowers you to define granular permissions for platform actions, including application functionalities, content creation, and access to sensitive information. This ensures only authorized users can perform specific tasks, safeguarding data throughout the employee lifecycle, especially during crucial stages like onboarding and offboarding.
 
 Let's take a closer look at Clarity's specific user management requirements.
 
@@ -42,7 +42,7 @@ Liferay provides granular control over user permissions. Its multi-level system 
 
 ### Reduce management time and costs through reusable user segments
 
-In Liferay, permissions are not only assignable to roles but also to user groups. If users in a specific group should have the same access and permissions on the platform, it makes sense for them to be grouped together with one set of permissions. Furthermore, user groups can be assigned automatically from user directories, as demonstrated in the previous module. This saves time and energy because new users who authenticate to Liferay don't need roles or permissions assigned to them, but automatically receive the permissions of their user group.
+In Liferay, permissions are not only assignable to roles but also to user groups. If users in a specific group should have the same access and permissions on the platform, it makes sense for them to be grouped together with one set of permissions. Furthermore, user groups can be assigned automatically from user directories, as demonstrated in the previous module. This saves time and energy because new users who authenticate to Liferay don't need roles or permissions assigned to them individually, but automatically receive the permissions of their user group.
 
 ## Conclusion
 

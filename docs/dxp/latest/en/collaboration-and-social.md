@@ -20,7 +20,7 @@ taxonomy-category-names:
 
 Liferay DXP empowers users to build robust communities with flexible, social, and extensible collaborative applications.
 
-Out-of-the-box features include:
+Out-of-the-box features include
 
 - [Message Boards](#message-boards)
 - [Wiki](#wiki)
@@ -38,7 +38,7 @@ To begin using the Message Board app to build a forum, see [Message Boards](./co
 
 ## Wiki
 
-DXP includes a full-featured Wiki application that provides a rich writing environment, article versioning, and support for multiple wiki nodes. Wikis in DXP are completely integrated with the portal's [User Management](./users-and-permissions/users.md), [Tagging](./content-authoring-and-management/tags-and-categories.md), and [Permissions](./users-and-permissions/roles-and-permissions.md) features.
+DXP includes a full-featured Wiki application that provides a rich writing environment, article versioning, and support for multiple wiki nodes. Wikis in DXP are integrated with the portal's [User Management](./users-and-permissions/users.md), [Tagging](./content-authoring-and-management/tags-and-categories.md), and [Permissions](./users-and-permissions/roles-and-permissions.md) features.
 
 ![The Wiki widget displays your wiki on a site page.](./collaboration-and-social/images/02.png)
 

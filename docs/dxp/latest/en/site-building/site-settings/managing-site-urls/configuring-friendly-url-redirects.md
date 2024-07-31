@@ -16,6 +16,9 @@ When you update friendly URLs for pages, blogs, and documents, Liferay automatic
 
 By default friendly URL redirects are temporary (302), but you can configure them to be permanent (301) if needed. You can also determine whether Liferay displays a message when users are redirected to a different friendly URL.
 
+!!! warning
+    Make sure your URLs are consistently correct (e.g., instead of `https://example.com/product/item1/`, it should be `https://example.com/product/item1`. The URL should not end with a `/`.)
+
 To configure friendly URL redirects,
 
 1. Open the _Global Menu_ (![Global Menu](../../../images/icon-applications-menu.png)) and go to _Control Panel_ &rarr; _System Settings_ &rarr; _Pages_ &rarr; _Friendly URL Redirection_.
@@ -33,7 +36,7 @@ To configure friendly URL redirects,
    **Temporary**: Use a 302 code to inform search engines and other tools accessing your site that the requested resource has temporarily moved. A 302 code is useful when you want to conduct A/B testing or redirect traffic while fixing a problem, without impacting your site ranking. Liferay uses 302 codes by default.
 
    !!! important
-   Setting redirects to temporary after making them permanent can have unintended consequences. In some cases, users who previously received a permanent redirect may not be able to reach the original URL again. For this reason, use permanent redirects with care.
+       Setting redirects to temporary after making them permanent can have unintended consequences. In some cases, users who previously received a permanent redirect may not be able to reach the original URL again. For this reason, use permanent redirects with care.
 
 1. Click _Save_.
 

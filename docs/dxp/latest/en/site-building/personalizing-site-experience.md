@@ -13,15 +13,15 @@ toc:
   - ./personalizing-site-experience/using-the-accessibility-menu.md
 uuid: 7ce0d5f8-e933-4eb3-8fe4-7588d0b00244
 ---
+
 # Personalizing Site Experience
 
 Liferay DXP provides powerful tools out-of-the-box for understanding and delivering personalized experiences to users.
 
 For example, you can create [user segments](./personalizing-site-experience/segmentation/creating-and-managing-user-segments.md) and map them to different [experiences](./personalizing-site-experience/experience-personalization/creating-and-managing-experiences.md). With experiences in place, [personalize collections](./personalizing-site-experience/experience-personalization/personalizing-collections.md) and customize the way the content or the [pages](./personalizing-site-experience/experience-personalization/content-page-personalization.md) that users see. 
 
-```{tip}
-When a user belongs to multiple segments, you can [prioritize a certain personalized variation](./personalizing-site-experience/experience-personalization/personalizing-collections.md#creating-personalized-variations) or [combine collection entries from all segments](./personalizing-site-experience/experience-personalization/personalizing-collections.md#combining-collection-entries-from-all-segments).
-```
+!!! tip
+    When a user belongs to multiple segments, you can [prioritize a certain personalized variation](./personalizing-site-experience/experience-personalization/personalizing-collections.md#creating-personalized-variations) or [combine collection entries from all segments](./personalizing-site-experience/experience-personalization/personalizing-collections.md#combining-collection-entries-from-all-segments).
 
 ## Segmentation
 
@@ -31,9 +31,9 @@ Using the Segment Builder, you can group similar users by user profile attribute
 
 See [Creating and Managing a Segment](./personalizing-site-experience/segmentation/creating-and-managing-user-segments.md) to get started.
 
-```{note}
-You can assign roles to user segments. See [Assigning Roles to User Segments](../users-and-permissions/roles-and-permissions/assigning-roles-to-user-segments.md) for more information.
-```
+!!! note
+    You can assign roles to user segments. See [Assigning Roles to User Segments](../users-and-permissions/roles-and-permissions/assigning-roles-to-user-segments.md) for more information.
+
 
 ### Tracking Behavior of User Segments with Liferay Analytics Cloud
 
@@ -59,9 +59,8 @@ Content page personalization dynamically changes the page layout and content bas
 
 ![You can personalize content sets to display assets for specific user segments.](./personalizing-site-experience/images/04.png)
 
-```{note}
-Collections are named Content Sets in Liferay DXP 7.2.
-```
+!!! note
+    Collections are named Content Sets in Liferay DXP 7.2.
 
 ### Previewing User Experiences
 
@@ -70,5 +69,3 @@ You can preview the different experiences that users can have on a page by click
 Viewing the perspective of a user segment previews any personalizations for content pages or content sets for that User Segment.
 
 ![You can preview different experiences from the Preview panel.](./personalizing-site-experience/images/05.png)
-
-

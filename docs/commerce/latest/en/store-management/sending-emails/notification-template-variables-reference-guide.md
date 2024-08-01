@@ -72,7 +72,7 @@ The following variables are only available in Liferay DXP 2024.Q3+/Portal 7.4 GA
 | [%COMMERCEORDER_ORDER_ITEMS%]                   | A table listing all the order items |
 
 !!! important
-    These new variables are under a release feature flag. Read [Release Feature Flags](https://learn.liferay.com/web/guest/w/dxp/system-administration/configuring-liferay/feature-flags#release-feature-flags) for more information.
+    These new variables are behind a release feature flag. Read [Release Feature Flags](https://learn.liferay.com/web/guest/w/dxp/system-administration/configuring-liferay/feature-flags#release-feature-flags) for more information.
 
 ## Notification Template Variables (Channel)
 

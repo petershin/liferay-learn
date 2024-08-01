@@ -125,4 +125,4 @@ With Liferay, you can create multiple roles, define specific privileges or permi
 
 Now that you've reviewed the features and best practices for implementing effective authorization strategies in Liferay, let's put these concepts into practice by creating users and user groups for Clarity's enterprise website solution.
 
-Next Up: [Setting Up Clarity's Users and User Groups](./setting-up-claritys-users-and-user-groups.md)
+Next Up: [Setting Up Clarity's Users and Groups](./setting-up-claritys-users-and-groups.md)

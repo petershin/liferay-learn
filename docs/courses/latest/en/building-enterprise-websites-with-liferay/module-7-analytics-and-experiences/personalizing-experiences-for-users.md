@@ -1,7 +1,7 @@
 ---
 uuid: 625dac83-df1c-4da9-93ba-49fba8fd955d
 ---
-# Personalizing Experiences for Clarity’s Users
+# Personalizing Experiences for Users
 
 A great website experience can help keep Clarity's visitors engaged and ultimately lead to more sales. Liferay provides different tools to help you understand who your customers are and optimize your site to increase engagement. Clarity can use these tools in combination with Analytics Cloud to personalize the user experience.
 
@@ -128,7 +128,7 @@ To do this,
 
 ## Conclusion
 
-Congratulations! You have now completed *Module 7: Content Authoring and Management*.
+Congratulations! You have now completed *Module 7: Analytics and Experiences*.
 
 [Back to Building Enterprise Websites with Liferay](../../building-enterprise-websites-with-liferay.md)
 

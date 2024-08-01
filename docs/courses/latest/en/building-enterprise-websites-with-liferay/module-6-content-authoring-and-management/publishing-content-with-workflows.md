@@ -205,6 +205,6 @@ Great! You've successfully used workflow with publications to review and publish
 
 This concludes *Publishing Content with Workflows*.
 
-Up Next: [Understanding Users with Analytics Cloud](./understanding-users-with-analytics-cloud.md)
+Up Next: [Building Forms with Objects](./building-forms-with-objects.md)
 
 <!-- TODO: Add Additional Resources section. -->

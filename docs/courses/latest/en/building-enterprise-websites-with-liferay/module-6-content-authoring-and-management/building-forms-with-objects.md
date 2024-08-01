@@ -1,0 +1,228 @@
+---
+uuid: 1645bc8e-0a29-4cd2-bd52-4072ff7b39ce
+---
+# Building Forms with Objects
+
+
+
+<!--Exercise 19a-->
+## Exercise: Creating an Object Definition
+
+Clarity wants to create a user-friendly contact form to streamline communication with non-employees users. Liferay Objects provides the tools to build and seamlessly integrate this form with their Contact Us page.
+
+<!-- TASK: This exercise is using Clarity Admin due to Walter Douglas missing permissions in the baseline. Clarity Admin will be replaced by Walter Douglas after it's fixed. -->
+
+Here you'll create the `Contact Us` object and configure its fields for storing relevant information as the Clarity Admin user.
+
+To do this,
+
+1. Sign in as the Clarity Admin user.
+
+   * Username: `admin@clarityvisionsolutions.com`
+   * Password: `learn`
+
+1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Objects*.
+
+1. Click *Add* (![Add Button](../../images/icon-add.png)).
+
+1. Enter these details:
+
+   | Field        | Value      |
+   |:-------------|:-----------|
+   | Label        | Contact Us |
+   | Plural Label | Contact Us |
+   | Object Name  | ContactUs  |
+
+1. Click *Save*.
+
+   This creates a draft object definition with some default system fields. You can now configure the definition to determine how its data is stored and which features you want to enable.
+
+1. From the Objects overview page, begin editing the *Contact Us* object definition.
+
+1. In the Details tab, configure these settings:
+
+   | Field                                                   | Value          |
+   |:--------------------------------------------------------|:---------------|
+   | Scope > Scope                                           | Site           |
+   | Scope > Panel Link                                      | Content & Data |
+   | Configuration > Show Widget in Page Builder             | False          |
+   | Configuration > Enable Entry History in Audit Framework | True           |
+
+1. Click *Save*.
+
+   Now that you’ve configured the object definition, you can add custom fields to determine the type of information you want to gather with the form.
+
+1. Go to the *Fields* tab.
+
+1. Click *Add* (![Add Button](../../images/icon-add.png)), enter these details, and click *Save*:
+
+   | Field                     | Value      |
+   |:--------------------------|:-----------|
+   | Label                     | Full Name  |
+   | Field Name                | `fullName` |
+   | Type                      | Text       |
+   | Mandatory                 | Yes        |
+   | Accept Unique Values Only | No         |
+
+1. Repeat the previous step to create the remaining fields:
+
+   | Label             | Field Name        | Type      | Mandatory | Unique Values Only |
+   |:------------------|:------------------|:----------|:----------|:-------------------|
+   | Email Address     | `emailAddress`    | Text      | Yes       | No                 |
+   | Phone             | `phone`           | Text      | Yes       | No                 |
+   | State or Province | `stateOrProvince` | Text      | No        | No                 |
+   | City              | `city`            | Text      | No        | No                 |
+   | Comment           | `comment`         | Long Text | No        | N/A                |
+
+1. Return to the *Details* tab and click *Publish*.
+
+   This creates the database tables for storing form submissions.
+
+Next, you'll add the form to Clarity's Contact Us page.
+
+<!--Exercise 19b-->
+## Exercise: Building the Form
+
+<!-- TASK: This exercise is using Clarity Admin due to Walter Douglas missing permissions in the baseline. Clarity Admin will be replaced by Walter Douglas after it's fixed. -->
+
+Liferay Objects generates a basic user interface automatically, but you can design and add forms to Clarity’s pages.
+
+Previously, you added and wireframed the Contact Us page. Here you’ll add the form to the page as the Clarity Admin user.
+
+To do this,
+
+1. Go to Clarity’s public enterprise website and begin editing the *Contact Us* page.
+
+1. Drag and drop a *form container* fragment into the Contact Form container.
+
+1. Click the drop-down menu and select the *Contact Us* object.
+
+   This populates the form with fields from the object automatically.
+
+1. Select the form container and configure these settings:
+
+   | Tab             | Setting       | Value                |
+   |:----------------|:--------------|:---------------------|
+   | General > Frame | Width         | 400px                |
+   | Styles          | Padding       | Spacer 4 (all sides) |
+   | Styles          | Background    | #FFFFFF              |
+   | Styles          | Border Radius | 15px                 |
+
+1. Drag and drop the field fragments into this order:
+
+   * Full Name
+   * Email Address
+   * Phone
+   * State or Province
+   * City
+   * Comment
+
+1. Select each of these field fragments and configure this setting:
+
+   | Tab    | Setting | Value             |
+   |:-------|:--------|:------------------|
+   | Styles | Padding | Spacer 3 (bottom) |
+
+1. Click *Publish*.
+
+   ![You can fill out the Contact Us form after publishing the page.](./building-forms-with-objects/images/01.png)
+
+1. Test the form by submitting an entry.
+
+1. Go to *Site Menu* (![Site Menu](../../images/icon-product-menu.png)), expand *Content & Data*, and click *Contact Us*. The entry you created should appear here.
+
+   ![The Contact Us entry appears in the menu.](./building-forms-with-objects/images/02.png)
+
+Great! You've fully set up the Contact Us page and made it available for Clarity's users.
+
+Next, you can learn how to create a multi-step form or move to the next lesson to learn about Liferay Client extensions and how you can use them to add styling and functionality to your Liferay instance.
+
+<!--Exercise 19c-->
+## Exercise: Creating a Multi-Step Form (Bonus)
+
+<!-- TASK: This exercise is using Clarity Admin due to Walter Douglas missing permissions in the baseline. Clarity Admin will be replaced by Walter Douglas after it's fixed. -->
+
+Using objects, form fragments, and display page templates, you can develop multi-step forms to allow users to fill a form in different display pages, which are connected to the same object entry.
+
+Here you'll create a display page for the second step and link the Contact Us form container to it as the Clarity Admin user.
+
+To do this,
+
+1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Objects*.
+
+1. Begin editing the *Contact Us* object definition.
+
+1. In the Details tab, configure this setting:
+
+   | Field                                                | Value |
+   |:-----------------------------------------------------|:------|
+   | Configuration > Allow Users to Save Entries as Draft | True  |
+
+   **Note**: When creating a multi-step form using objects, you must enable draft mode for the object definition.
+
+1. Click *Save*.
+
+1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)), expand *Design*, and click *Page Templates*.
+
+1. Go to the *Display Page Templates* tab and click *New*.
+
+1. Select the *Primary Master Page* template.
+
+1. Enter `Contact Us - Step 2` for the name and select *Contact Us* for content type.
+
+1. Click *Save*.
+
+1. Drag and drop the *Contact Us Page* fragment composition into the template.
+
+1. Repeat steps 2-5 from Exercise 19b to create the form.
+
+1. Select the form container and configure these settings:
+
+   | Tab     | Setting                                  | Value      |
+   |:--------|:-----------------------------------------|:-----------|
+   | General | Success Interaction                      | Go to Page |
+   | General | Page                                     | Home       |
+   | General | Show Notification when Form is Submitted | Yes        |
+
+   ![You can configure the form to redirect to another page when submitted.](./building-forms-with-objects/images/03.png)
+
+1. Click *Publish*.
+
+1. Return to the *Contact Us* page and begin editing it.
+
+1. Select the form container and configure these settings:
+
+   | Tab     | Setting             | Value                    |
+   |:--------|:--------------------|:-------------------------|
+   | General | Success Interaction | Go to Entry Display Page |
+   | General | Display Page        | Contact Us - Step 2      |
+
+1. Remove these fields from the container:
+
+   * State or Province
+   * City
+   * Comment
+
+1. Select the *Submit Button* fragment and configure this setting:
+
+   | Tab     | Setting                | Value |
+   |:--------|:-----------------------|:------|
+   | General | Submitted Entry Status | Draft |
+
+   **Note**: Now when users click this button, Liferay saves their entry as a draft and directs them to the next step to complete the form.
+
+1. Double-click the *Submit Button* fragment to edit its text and enter `Next`.
+
+1. Click *Publish*.
+
+   ![The form will redirect to its second step when clicking Next.](./building-forms-with-objects/images/04.png)
+
+1. Test out the form.
+
+Great! Now you've created a multi-step form using objects, form fragments, and display page templates.
+
+## Conclusion
+
+Congratulations! You have now completed *Module 6: Content Authoring and Management*.
+
+[Back to Building Enterprise Websites with Liferay](../../building-enterprise-websites-with-liferay.md)

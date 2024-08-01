@@ -78,4 +78,4 @@ Analytics Cloud helps you learn what's important to your visitors so you can del
 
 <!-- Link to Analytics Cloud demo video -->
 
-Up Next: [Personalizing Experiences for Clarity's Users](./personalizing-experiences-for-claritys-users.md)
+Up Next: [Personalizing Experiences for Users](./personalizing-experiences-for-users.md)

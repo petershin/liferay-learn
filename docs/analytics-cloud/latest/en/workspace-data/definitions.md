@@ -10,6 +10,13 @@ taxonomy-category-names:
 
 # Definitions
 
+There are four types of definitions: 
+
+- Individuals: attributes of individuals accessing your site
+- Events: default and custom actions that happen on your site
+- Event Attributes: metadata that provides context for events
+- Search Query Parameters: URL parameters for search
+
 ## Individuals
 
 The data model for individuals is defined by the various attributes that get mapped when contact data is [synced from DXP](../getting-started/connecting-liferay-dxp-to-analytics-cloud.md).
@@ -18,7 +25,7 @@ To view a list of these attributes, navigate to *Settings* &rarr; *Workspace Dat
 
 ![A list of attributes appears for individuals.](./definitions/images/01.png)
 
-All the different attributes for individuals are listed. Some attributes may be defined by more than one data source. 
+All the different attributes for individuals appear here. Some attributes may be defined by more than one data source. 
 
 You can choose specific attributes for [creating segments](../people/segments/creating-segments.md) or [creating a specific breakdown for individuals](../people/individuals.md#breakdown).
 
@@ -108,7 +115,7 @@ Event attributes are the metadata that provide context for events. Different att
 
    The following data typecasts are available: Boolean, Date, Duration, Number, and String. Analytics Cloud automatically tries to detect and cast the datatype based on the first data collected for that attribute. Make changes to the typecast if necessary.
 
-## Search Queries
+## Search Query Parameters
 
 The search query parameter can vary from site to site. For example, a URL might look like `www.example.com/?s=test` where `s` is the parameter, or `www.example.com/?search=test` where `search` is the parameter. You can define up to five search query parameters in settings.
 

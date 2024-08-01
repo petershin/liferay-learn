@@ -8,6 +8,7 @@ toc:
   - ./products/units-of-measure.md
   - ./products/product-images.md
   - ./products/specifications.md
+  - ./products/using-specifications-with-picklists.md
   - ./products/product-attachments.md
   - ./products/creating-a-new-product-category.md
   - ./products/enabling-subscriptions-for-a-product.md

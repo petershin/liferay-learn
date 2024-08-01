@@ -29,7 +29,7 @@ These containers are standard Docker containers that can be started and stopped 
 The containers listens on port `8080` and starts like all Docker containers.
 
 !!! warning
-    As of {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+` Liferay's Docker images still use JDK 8 by default and have not been updated with JDK 17 or 21. Create your Docker image using the `-e JAVA_VERSION=zulu11` <!-- , `-e JAVA_VERSION=zulu17`, or `-e JAVA_VERSION=zulu21` --> environment variable to use a supported JDK. Docker images are planned to be updated in the 2024.Q3 release. 
+    As of Liferay DXP 2024.Q2+/Portal 7.4 GA120+, Liferay's Docker images still use JDK 8 by default and have not been updated with JDK 17 or 21. Create your Docker image using the `-e JAVA_VERSION=zulu11` environment variable to use a supported JDK. Docker images are planned to be updated in the 2024.Q3 release. 
 
 1. [Run a container](https://docs.docker.com/engine/reference/commandline/run/) that maps a host port (e.g., `8080`) to the container's `8080` port.
 

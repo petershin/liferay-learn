@@ -47,6 +47,9 @@ Specification data consists of groups, labels, and values. This makes it easier 
 
 This only creates the label. You must assign it to a product to set values to a specification.
 
+!!! note
+    You can also link picklists to specifications. See [Using Specifications with Picklists](./using-specifications-with-picklists.md) for more information.
+
 ## Specification Groups
 
 1. Open the _Global Menu_ (![Global Menu icon](../../../images/icon-applications-menu.png)) and navigate to _Commerce_ &rarr; _Specifications_.

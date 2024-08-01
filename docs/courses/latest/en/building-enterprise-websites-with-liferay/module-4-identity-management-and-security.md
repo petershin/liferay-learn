@@ -4,7 +4,6 @@ toc:
 - ./module-4-identity-management-and-security/understanding-liferay-authentication.md
 - ./module-4-identity-management-and-security/using-third-party-services-for-authentication-and-sso.md
 - ./module-4-identity-management-and-security/understanding-liferay-authorization-and-user-management.md
-- ./module-4-identity-management-and-security/designing-role-architectures.md
 - ./module-4-identity-management-and-security/setting-up-claritys-users-and-groups.md
 - ./module-4-identity-management-and-security/creating-roles-and-assigning-roles-to-claritys-users.md
 uuid: 57aef6ee-03e9-4056-abf1-ebdbdb4984e4
@@ -73,13 +72,7 @@ Learn about Liferay's support for external authentication services and how Clari
 :::{grid-item-card}  Understanding Liferay Authorization and User Management
 :link: ./module-4-identity-management-and-security/understanding-liferay-authorization-and-user-management.md
 
-Learn the basics of Liferay authorization and identity management.
-:::
-
-:::{grid-item-card} Designing Role Architectures
-:link: ./module-4-identity-management-and-security/designing-role-architectures.md
-
-Learn best practices for designing a role architecture for enterprise websites.
+Learn the basics of Liferay authorization and user management, as well as best practices for designing a role architecture for enterprise websites.
 :::
 
 :::{grid-item-card} Setting Up Clarity's Users and Groups

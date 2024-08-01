@@ -52,10 +52,10 @@ Update the property's value to the version of Liferay for which you're developin
 
 ## Using JDKs 11, 17, or 21
 
-As of {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+`, Liferay supports JDK 17 and 21.
+As of {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+`, Liferay supports JDK 17 and 21. JDK 8 is out of support, and JDK 11 is deprecated. 
 
 !!! note
-    If you compile under a JDK, you must run under that same JDK. Make sure your app servers are running under the new JDK before making any changes to Workspace. Note that Liferay's Docker images use JDK 8 by default. To override this, create your Docker image using the `-e JAVA_VERSION=zulu11`, `-e JAVA_VERSION=zulu17`, or `-e JAVA_VERSION=zulu21` environment variable.
+    If you compile under a JDK, you must run under that same JDK. Make sure your app servers are running under the new JDK before making any changes to Workspace. Note that Liferay's Docker images still use JDK 8 by default and have not been updated with JDK 17 or 21. Create your Docker image using the `-e JAVA_VERSION=zulu11` <!-- , `-e JAVA_VERSION=zulu17`, or `-e JAVA_VERSION=zulu21` --> environment variable to use a supported JDK.
 
 **Prerequisite:** If you're using an older version of Workspace, you must upgrade two things: 
 

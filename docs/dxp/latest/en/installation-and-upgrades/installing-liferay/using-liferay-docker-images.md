@@ -28,10 +28,13 @@ These containers are standard Docker containers that can be started and stopped 
 
 The containers listens on port `8080` and starts like all Docker containers.
 
+!!! warning
+    As of {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+` Liferay's Docker images still use JDK 8 by default and have not been updated with JDK 17 or 21. Create your Docker image using the `-e JAVA_VERSION=zulu11` <!-- , `-e JAVA_VERSION=zulu17`, or `-e JAVA_VERSION=zulu21` --> environment variable to use a supported JDK. Docker images are planned to be updated in the 2024.Q3 release. 
+
 1. [Run a container](https://docs.docker.com/engine/reference/commandline/run/) that maps a host port (e.g., `8080`) to the container's `8080` port.
 
     ```bash
-    docker run -it -m 8g -p 8080:8080 [$LIFERAY_LEARN_PORTAL_DOCKER_IMAGE$]
+    docker run -it -m 8g -p 8080:8080 -e JAVA_VERSION=zulu11 [$LIFERAY_LEARN_PORTAL_DOCKER_IMAGE$]
     ```
 
     The container runs and prints log messages, including this Tomcat startup completion message:
@@ -40,9 +43,8 @@ The containers listens on port `8080` and starts like all Docker containers.
     INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [xx,xxx] milliseconds
     ```
 
-    ```{note}
-    Memory, CPUs, and other Docker container resources are configurable. The `-m 8g` command arguments above set the container's memory limit to eight gigabytes. See the [Docker runtime options](https://docs.docker.com/config/containers/resource_constraints/) for details.
-    ```
+    !!! note
+        Memory, CPUs, and other Docker container resources are configurable. The `-m 8g` command arguments above set the container's memory limit to eight gigabytes. See the [Docker runtime options](https://docs.docker.com/config/containers/resource_constraints/) for details.
 
 1. Sign in to Liferay at `<http://localhost:8080>` using the email address _test@liferay.com_ and the password _test_. 
 
@@ -50,15 +52,13 @@ The containers listens on port `8080` and starts like all Docker containers.
 
     ![Change your password upon first login.](./using-liferay-docker-images/images/01.png)
 
-```{warning}
-In a production environment, you should not use the default admin account. Instead, [create admin accounts](../../getting-started/introduction-to-the-admin-account.md#creating-a-new-admin-user) specific to your business. 
-```
+!!! warning
+    In a production environment, you should not use the default admin account. Instead, [create admin accounts](../../getting-started/introduction-to-the-admin-account.md#creating-a-new-admin-user) specific to your business. 
 
 Liferay is ready to use.
 
-```{note}
-`docker container ls` lists each running container, including its ID and name. `docker container ls -a` lists all of your containers, including ones that aren't running.
-```
+!!! note
+    `docker container ls` lists each running container, including its ID and name. `docker container ls -a` lists all of your containers, including ones that aren't running.
 
 ## Viewing Logs
 
@@ -99,23 +99,20 @@ The containers can be restarted like all Docker containers.
 docker start [container]
 ```
 
-```{warning}
-When a container is restarted, its entry point runs again (Please see [Container Lifecycle and API](./using-liferay-docker-images/container-lifecycle-and-api.md#lifecycle)). Make sure any [scripts you're executing](./using-liferay-docker-images/running-scripts-in-containers.md) via the entry point can run again safely.
-```
+!!! warning
+    When a container is restarted, its entry point runs again (Please see [Container Life cycle and API](./using-liferay-docker-images/container-lifecycle-and-api.md#lifecycle)). Make sure any [scripts you're executing](./using-liferay-docker-images/running-scripts-in-containers.md) via the entry point can run again safely.
 
-```{tip}
-Run `docker container ls -a` to look up your container's name or ID.
-```
+!!! tip
+    Run `docker container ls -a` to look up your container's name or ID.
 
 Now you know the basics of starting, stopping, and monitoring a Liferay container.
 
-## What's Next
+## Related Topics
 
-If you want to know what the container entry point does and learn the container's API, see the [Container Lifecycle and API](./using-liferay-docker-images/container-lifecycle-and-api.md). If you want to start using the containers, exercise one of the following use cases:
-
-* [Configuring Containers](./using-liferay-docker-images/configuring-containers.md)
-* [Installing Apps and Other Artifacts to Containers](./using-liferay-docker-images/installing-apps-and-other-artifacts-to-containers.md)
-* [Patching DXP in Docker](./using-liferay-docker-images/patching-dxp-in-docker.md)
-* [Providing Files to the Container](./using-liferay-docker-images/providing-files-to-the-container.md)
-* [Upgrading to a New Docker Image](./using-liferay-docker-images/upgrading-to-a-new-docker-image.md)
-* [Docker Image Versions](./using-liferay-docker-images/docker-image-versions.md)
+- [Configuring Containers](./using-liferay-docker-images/configuring-containers.md)
+- [Installing Apps and Other Artifacts to Containers](./using-liferay-docker-images/installing-apps-and-other-artifacts-to-containers.md)
+- [Patching DXP in Docker](./using-liferay-docker-images/patching-dxp-in-docker.md)
+- [Providing Files to the Container](./using-liferay-docker-images/providing-files-to-the-container.md)
+- [Upgrading to a New Docker Image](./using-liferay-docker-images/upgrading-to-a-new-docker-image.md)
+- [Docker Image Versions](./using-liferay-docker-images/docker-image-versions.md)
+- [Container Life Cycle and API](./using-liferay-docker-images/container-lifecycle-and-api.md)

@@ -79,6 +79,6 @@ Client extensions should be your first choice when extending or customizing Life
 
 Congratulations! You've completed Module 3: Developer Setup. Throughout this module, you set up a Liferay developer environment and explored the benefits of Liferay workspaces and client extensions.
 
-In the next module, you'll learn about Liferay's authentication and identity management features.
+In the next module, you'll learn about Liferay's identity management features.
 
-Next Up: [Module 4: Identity Management and SSO](../module-4-identity-management-and-sso.md)
+Next Up: [Module 4: Security and Identity Management](../module-4-security-and-identity-management.md)

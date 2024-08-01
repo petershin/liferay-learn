@@ -1,11 +1,11 @@
 ---
 toc:
-- ./module-4-identity-management-and-security/claritys-identity-management-requirements.md
-- ./module-4-identity-management-and-security/understanding-liferay-authentication.md
-- ./module-4-identity-management-and-security/using-third-party-services-for-authentication-and-sso.md
-- ./module-4-identity-management-and-security/understanding-liferay-authorization-and-user-management.md
-- ./module-4-identity-management-and-security/setting-up-claritys-users-and-groups.md
-- ./module-4-identity-management-and-security/creating-roles-and-assigning-roles-to-claritys-users.md
+- ./module-4-security-and-identity-management/claritys-identity-management-requirements.md
+- ./module-4-security-and-identity-management/understanding-liferay-authentication.md
+- ./module-4-security-and-identity-management/using-third-party-services-for-authentication-and-sso.md
+- ./module-4-security-and-identity-management/understanding-liferay-authorization-and-user-management.md
+- ./module-4-security-and-identity-management/setting-up-claritys-users-and-groups.md
+- ./module-4-security-and-identity-management/creating-and-assigning-roles-to-claritys-users.md
 uuid: 57aef6ee-03e9-4056-abf1-ebdbdb4984e4
 ---
 # Module 4: Security and Identity Management
@@ -46,43 +46,43 @@ After completing this module, you will know how to
 * Assign granular permissions to roles to ensure appropriate access to Liferay applications and resources.
 * Streamline role management with user groups.
 
-Up First: [Clarity's Identity Management Requirements](./module-4-identity-management-and-security/claritys-identity-management-requirements.md)
+Up First: [Clarity's Identity Management Requirements](./module-4-security-and-identity-management/claritys-identity-management-requirements.md)
 
 ::::{grid} 2
 :gutter: 3 3 3 3
 
 :::{grid-item-card}  Clarity's Identity Management Requirements
-:link: ./module-4-identity-management-and-security/claritys-identity-management-requirements.md
+:link: ./module-4-security-and-identity-management/claritys-identity-management-requirements.md
 
 Learn about Clarity's requirement for user authentication and authorization.
 :::
 
 :::{grid-item-card}  Understanding Liferay Authentication
-:link: ./module-4-identity-management-and-security/understanding-liferay-authentication.md
+:link: ./module-4-security-and-identity-management/understanding-liferay-authentication.md
 
 Learn the basics of Liferay authentication.
 :::
 
 :::{grid-item-card}  Using Third-Party Services for Authentication and SSO
-:link: ./module-4-identity-management-and-security/using-third-party-services-for-authentication-and-sso.md
+:link: ./module-4-security-and-identity-management/using-third-party-services-for-authentication-and-sso.md
 
 Learn about Liferay's support for external authentication services and how Clarity can leverage an Identity Provider like Okta for authentication and SSO.
 :::
 
 :::{grid-item-card}  Understanding Liferay Authorization and User Management
-:link: ./module-4-identity-management-and-security/understanding-liferay-authorization-and-user-management.md
+:link: ./module-4-security-and-identity-management/understanding-liferay-authorization-and-user-management.md
 
 Learn the basics of Liferay authorization and user management, as well as best practices for designing a role architecture for enterprise websites.
 :::
 
 :::{grid-item-card} Setting Up Clarity's Users and Groups
-:link: ./module-4-identity-management-and-security/setting-up-claritys-users-and-groups.md
+:link: ./module-4-security-and-identity-management/setting-up-claritys-users-and-groups.md
 
 Learn the fundamentals of manually creating users and user groups.
 :::
 
 :::{grid-item-card} Creating and Assigning Roles to Clarity's Users
-:link: ./module-4-identity-management-and-security/creating-roles-and-assigning-roles-to-claritys-users.md
+:link: ./module-4-security-and-identity-management/creating-and-assigning-roles-to-claritys-users.md
 
 Learn the fundamentals of creating and assigning roles to secure Liferay applications and resources.
 :::

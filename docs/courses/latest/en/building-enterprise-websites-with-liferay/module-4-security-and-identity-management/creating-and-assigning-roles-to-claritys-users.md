@@ -241,6 +241,8 @@ To do this,
 
 ## Conclusion
 
-Great! For now, you've finished setting up Clarity's users, user groups, and roles. Next, we'll turn our attention to building Clarity's website.
+Congratulation! You've completed Module 4: Security and Identity Management. Throughout this module, you've learned best practices for authenticating and authorizing users in Liferay DXP. You also finished setting up Clarity's users, user groups, and roles for their public enterprise website. 
+
+In the next module, you'll learn about building sites with Liferay.
 
 Next Up: [Module 5: Site Building](../module-5-site-building.md)

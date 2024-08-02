@@ -68,7 +68,7 @@ You can copy an existing structure to create a new one. From the structures page
 !!! tip
     Liferay DXP generates a unique ID for the copied structure. The new copy inherits all the attributes from the original structure, including the name. To avoid confusing the copy with the original, use a different name for the copy.
 
-## Related Information
+## Related Topics
 
 - [Creating Structures](./creating-structures.md)
 - [Configuring Structure Fields](./configuring-structure-fields.md)

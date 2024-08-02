@@ -69,7 +69,7 @@ When you hover over a structure field and click *Actions* ( ![Actions button](..
 * **Duplicate:** Duplicates the field and all its settings and iterates the Name to avoid conflicts.
 * **Delete:** Removes the field from the structure.
 
-## Related Information
+## Related Topics
 
 - [Creating Structures](./creating-structures.md)
 - [Managing Structures](./managing-structures.md)

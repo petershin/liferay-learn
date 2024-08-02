@@ -16,13 +16,11 @@ uuid: 5bd46464-470f-4431-af10-3ff5cbbe4206
 
 {bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA132+`
 
-Create dynamic and flexible content displays by integrating repeatable fields within web content structures and articles into elements added to pages. This process involves designing web content structures with repeatable fields, creating articles based on those structures, mapping those fields to fragments, and displaying the content on pages.
-
-Start by [creating a web content structure with repeatable fields](#creating-a-web-content-structure-with-repeatable-fields).
+When creating fields on web content structures, you can make them [repeatable](../../../content-authoring-and-management/web-content/web-content-structures/configuring-structure-fields.md#configurable-settings). You can then map these fields to fragments and publish them on a page. This is a great way to publish structured content that follows a pattern, such as a FAQ, a job listing, or in the example below, an employee directory.
 
 ## Creating a Web Content Structure With Repeatable Fields
 
-In this example, create a structure with a repeatable fields group to store basic information about employees in a fictional software company.
+This example creates a structure with a repeatable fields group to store basic information about employees in a fictional software company.
 
 1. Open the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)), expand *Content & Data*, and go to *Web Content*.
 
@@ -70,7 +68,7 @@ Create a display page template and map the repeatable fields of the `Software En
 
 1. Select the *Display Page Templates* tab and click *New*. Select a Master Page.
 
-1. Name it `Software Engineers List`, select *Web Content Article* as the Content Type, and *Employee Info* as the Subtype. Click *Save*.
+1. Name it `Software Engineers List`. Select *Web Content Article* as the Content Type and *Employee Info* as the Subtype. Click *Save*.
 
 1. In the Fragments and Widgets sidebar, look for the *Collection Display* fragment and drag and drop it into the page.
 
@@ -99,7 +97,7 @@ Create a display page template and map the repeatable fields of the `Software En
 
    ![Add a margin to the last Heading fragment to help visualizing the blocks.](./mapping-repeatable-fields-to-fragments/images/09.png)
 
-1. Preview the display page template by clicking *None* at the top right corner &rarr; *Select Other Item* &rarr; `Software Engineers`.
+1. Preview the display page template by clicking *None* &rarr; *Select Other Item* &rarr; `Software Engineers` at the top right corner.
 
    ![Select a web content article to preview the display page template.](./mapping-repeatable-fields-to-fragments/images/10.png)
 

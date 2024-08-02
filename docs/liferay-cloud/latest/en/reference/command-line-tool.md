@@ -11,9 +11,8 @@ uuid: 2c706859-b73d-41ec-a5a2-b6ca6d3c367c
 
 The CLI tool can be used to view and manage your Liferay Cloud services. Once installed, you can run `lcp --help` in your terminal to view available actions.
 
-```{tip}
-You can run the `-v` or `--verbose` option at the end of any `lcp` command to see extra logging and information. Run the `--help` flag at the end of any `lcp` command to see the available flags you can use with it.
-```
+!!! tip
+    You can run the `-v` or `--verbose` option at the end of any `lcp` command to see extra logging and information. Run the `--help` flag at the end of any `lcp` command to see the available flags you can use with it.
 
 * [Installing the CLI Tool](#installing-the-cli-tool)
 * [Upgrading the CLI Tool from Version 2 to 3](#upgrading-the-cli-tool-from-version-2-to-3)
@@ -47,9 +46,8 @@ Download the latest version of the [Windows installer](https://cdn.liferay.cloud
 
 You must first uninstall your current version before you can install and use version 3. This prevent conflicts with the same binary name.
 
-```{important}
-These instructions are specific to uninstalling CLI version 2 and are **not** the same as those for [uninstalling version 3 of the CLI tool](#uninstalling-version-3-of-the-cli-tool).
-```
+!!! important
+    These instructions are specific to uninstalling CLI version 2 and are **not** the same as those for [uninstalling version 3 of the CLI tool](#uninstalling-version-3-of-the-cli-tool).
 
 ### Uninstalling Version 2 on MacOS or Linux
 
@@ -255,9 +253,9 @@ See [Deploying Changes via the CLI Tool](../updating-services-in-liferay-paas/de
 
 ## Downloading Files from the Liferay Service
 
-Use the `files download` command to directly download files from the Liferay service. The files must be in the Liferay service's persistent storage directory (`/mnt/persistent-storage/`).
+Use the `files download` command to download files from the Liferay service. The files must be in the Liferay service's persistent storage directory (`/mnt/persistent-storage/`).
 
-For example:
+For example,
 
 ```bash
 lcp files download --prefix path/to/files --dest destination
@@ -265,9 +263,9 @@ lcp files download --prefix path/to/files --dest destination
 
 This command downloads all files from your Liferay service's `/mnt/persistent-storage/path/to/files/` directory into a `destination/` folder.
 
-Change the number of files downloading at once (by default 100) with the `--concurrency` flag.
+Change the number of files downloading in parallel (by default 100) with the `--concurrency` flag.
 
-For example, this command downloads all files from the `/mnt/persistent-storage/path/to/files/` directory into the current working directory, up to 600 files at a time.
+For example, the command below downloads all files from the `/mnt/persistent-storage/path/to/files/` directory into the current working directory, up to 600 files at a time.
 
 ```bash
 lcp files download --prefix path/to/files --concurency 600

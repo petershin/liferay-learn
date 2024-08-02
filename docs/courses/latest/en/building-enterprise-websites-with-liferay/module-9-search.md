@@ -18,7 +18,6 @@ Clarity has been busy building out their new website. On top of Clarity products
 
 In this module you will learn about:
 
-* The specific search requirements Clarity has
 * How Liferay search works in general and its different features
 * How search results pages work and how to customize them
 * How to personalize search experiences with blueprints

@@ -8,18 +8,33 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: 5870418b-597c-4930-9bf5-b92373c9b811
 ---
+
 # Configuring Geolocation for Assets
+
+Geolocated assets are digital assets that include geographical data, allowing them to be displayed on maps or to be filtered based on location. You can use geolocation data to display a list of local events, nearby facilities, or region-specific news articles.
+
+To enable geolocation for assets,
 
 <!-- This article could use an introductory paragraph that answers: what geolocated assets are - IDEALLY we present a screenshot of an asset being displayed in liferay that shows geolocation data included. This gives the reader a sense of what this article is helping them accomplish. -->
 
-1. Open the Product Menu and go to *Configuration* &rarr; *Settings* (previously *Site Settings*).
-1. Select the *Advanced* tab and scroll down to the *Maps* sub-heading and expand it.
-1. Click the radio button for the maps API provider you want to use when displaying your geolocalized assets and optionally provide an API key if applicable.
+<!-- I tested it but I couldn't make it work. So, I still can't show an image of it working. I just updated the page for now. Eric. -->
 
-    ![You can configure geolocation for your Site's assets from the Site's Advanced settings.](./configuring-geolocation-for-assets/images/01.png)
+1. Open the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)) and go to *Configuration* &rarr; *Site Settings*.
 
-    ![You can optionally provide an API key for Google Maps.](./configuring-geolocation-for-assets/images/02.png)
+1. Under Platform, click *Maps*.
+
+1. On the Google Places option on the left, you can add a Google Places API Key.
+
+   ![You can configure geolocation for your site's assets.](./configuring-geolocation-for-assets/images/01.png)
+
+1. On the Maps option, Select the maps API provider you want to use when displaying your geolocated assets. There are two available options: OpenStreetMap and Google Maps.
+
+   ![Select a maps API provider to use when displaying geolocated assets.](./configuring-geolocation-for-assets/images/02.png)
 
 1. Scroll down and click *Save* to apply the changes.
 
-[Geolocalized assets](../../../content-authoring-and-management/tags-and-categories/geolocating-assets.md) can be displayed for documents, web content articles, DDL records, etc.
+[Geolocated assets](../../../content-authoring-and-management/tags-and-categories/geolocating-assets.md) can be displayed for documents, web content articles, DDL records, etc.
+
+## Related Topics
+
+- [Site Content Configurations](../site-content-configurations.md)

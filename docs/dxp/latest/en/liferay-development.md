@@ -13,6 +13,7 @@ toc:
   - ./liferay-development/core-frameworks.md
   - ./liferay-development/liferay-internals.md
   - ./liferay-development/data-sets.md
+  - ./liferay-development/marketplace.md
   - ./liferay-development/reference.md
   - ./liferay-development/reference/app-builder.md
 uuid: c7a717b4-ea54-4ca6-a16a-51f3e0f47d24
@@ -32,7 +33,7 @@ Liferay's development platform makes developers faster and more efficient by pro
 
 1. Developing full-blown applications that take advantage of Liferay's user management, security, and other features
 
-Most people want to do some amount of both those things. How you go about it depends on how you're deploying Liferay and what you're building. You should start with Liferay's low/no code options, that use such technology as [headless APIs](./headless-delivery/consuming-apis.md), [Objects](liferay-development/objects.md), and various kinds of [Client Extensions](./liferay-development/client-extensions.md). These are preferred because they're compatible in both Liferay Cloud and self-hosted scenarios, and they make upgrading easier by integrating only with public APIs that are unlikely to change. 
+Most people want to do some amount of both those things. How you go about it depends on how you're deploying Liferay and what you're building. You should start with Liferay's low/no code options, that use such technology as [headless APIs](./headless-delivery/consuming-apis.md), [Objects](liferay-development/objects.md), and various kinds of [Client Extensions](./liferay-development/client-extensions.md). These are preferred because they're compatible in both Liferay Cloud and self-hosted scenarios, and they make upgrading easier by integrating only with public APIs that are unlikely to change. There's also the option to use apps from the [Marketplace]() that may already perform the same functionality you're looking for.
 
 If, however, you must make a customization or build an application that cannot be done with those technologies, and you're self-hosted or on Liferay PaaS, you can follow a traditional development model by deploying code to Liferay itself to extend its functionality, customize its look and feel, or build an entirely new application. In this scenario, upgrades can be more challenging, as you have access to internal, Java-based Liferay APIs that could change from version to version. 
 

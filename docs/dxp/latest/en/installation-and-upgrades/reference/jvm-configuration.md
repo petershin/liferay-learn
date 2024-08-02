@@ -19,7 +19,6 @@ As of {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+`, Liferay DXP/Porta
 | :--------------- | :---------------------------------------- | :------- | :---------- |
 | File Encoding    | `-Dfile.encoding=UTF8`                    | Yes      | DXP requires UTF-8 file encoding to support internationalization. |
 | Timezone         | `-Duser.timezone=GMT`                     | Yes      | DXP uses the GMT timezone for all dates. |
-| Four-digit Years | `-Djava.locale.providers=JRE,COMPAT,CLDR` | No       | On JDK 11, 17, and 21, this setting displays four-digit years. Since JDK 9, the Unicode Common Locale Data Repository (CLDR) is the default locales provider. CLDR does not provide years in a four-digit format (see [LPS-87191](https://issues.liferay.com/browse/LPS-87191)). This setting works around the issue by using JDK 8's default locales provider. |
 | Heap Size        | `-Xms2560m -Xmx2560m`                     | No       | The default minimum and maximum size can be adjusted to suit your needs, but you should set the same minimum (`-Xms`) and maximum (`-Xmx`) size to prevent the JVM from making dynamic adjustments. |
 | Log4j            | `-Dlog4j2.formatMsgNoLookups=true`        | Yes*     | Log4j versions prior to 2.15.0 are subject to a remote code execution (RCE) vulnerability via the LDAP JNDI parser. See [LPS-143663](https://issues.liferay.com/browse/LPS-143663) for details. \*Liferay DXP 7.4 GA1 and Liferay PORTAL 7.4 GA1 - GA3 require this setting to resolve the security vulnerability. |
 
@@ -60,7 +59,7 @@ These warnings are caused by a known issue ([LPS-87421](https://issues.liferay.c
 Here is a Tomcat `setenv.sh` script that demonstrates some of the JVM options mentioned above:
 
 ```properties
-CATALINA_OPTS="$CATALINA_OPTS -Dfile.encoding=UTF-8 -Djava.locale.providers=JRE,COMPAT,CLDR -Djava.net.preferIPv4Stack=true -Duser.timezone=GMT -Xms2560m -Xmx2560m -XX:MaxNewSize=1536m -XX:MaxMetaspaceSize=768m -XX:MetaspaceSize=768m -XX:NewSize=1536m -XX:SurvivorRatio=7"
+CATALINA_OPTS="$CATALINA_OPTS -Dfile.encoding=UTF-8 -Djava.net.preferIPv4Stack=true -Duser.timezone=GMT -Xms2560m -Xmx2560m -XX:MaxNewSize=1536m -XX:MaxMetaspaceSize=768m -XX:MetaspaceSize=768m -XX:NewSize=1536m -XX:SurvivorRatio=7"
 CATALINA_OPTS="$CATALINA_OPTS --add-opens=java.base/java.io=ALL-UNNAMED"
 CATALINA_OPTS="$CATALINA_OPTS --add-opens=java.base/java.lang.reflect=ALL-UNNAMED"
 ```

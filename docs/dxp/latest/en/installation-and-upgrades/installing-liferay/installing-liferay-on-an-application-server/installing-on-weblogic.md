@@ -69,7 +69,7 @@ Configure the JVM and other options in a `setUserOverridesLate` WebLogic startup
 
    ```bash
    export DERBY_FLAG="false"
-   export JAVA_OPTIONS="${JAVA_OPTIONS} -Dfile.encoding=UTF-8 -Djava.locale.providers=JRE,COMPAT,CLDR -Djava.net.preferIPv4Stack=true -Dlog4j2.formatMsgNoLookups=true -Duser.timezone=GMT -da:org.apache.lucene... -da:org.aspectj..."
+   export JAVA_OPTIONS="${JAVA_OPTIONS} -Dfile.encoding=UTF-8 -Djava.net.preferIPv4Stack=true -Dlog4j2.formatMsgNoLookups=true -Duser.timezone=GMT -da:org.apache.lucene... -da:org.aspectj..."
    export JAVA_PROPERTIES="-Dfile.encoding=UTF-8 ${JAVA_PROPERTIES} ${CLUSTER_PROPERTIES}"
    export MW_HOME="[place your WebLogic Server folder path here]"
    export USER_MEM_ARGS="-Xms2560m -Xmx2560m -XX:MaxNewSize=1536m -XX:MaxMetaspaceSize=768m -XX:MetaspaceSize=768m -XX:NewSize=1536m -XX:SurvivorRatio=7"
@@ -79,7 +79,7 @@ Configure the JVM and other options in a `setUserOverridesLate` WebLogic startup
 
    `JAVA_OPTIONS` sets DXP's UTF-8 requirement, Lucene usage, and Aspect Oriented Programming via AspectJ.
 
-   `JAVA_PROPERTIES` also sets DXP's UTF-8 requirement. 
+   `JAVA_PROPERTIES` also sets DXP's UTF-8 requirement.
 
    !!! important
        DXP requires the application server JVM to use the `GMT` time zone and `UTF-8` file encoding.
@@ -107,7 +107,6 @@ The Java options and memory arguments are explained below.
 | Option                                    | Explanation                                                                                                                       |
 | :---------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------- |
 | `-Dfile.encoding=UTF-8`                   | DXP requires UTF-8 file encoding.                                                                                                 |
-| `-Djava.locale.providers=JRE,COMPAT,CLDR` | This is required for displaying four-digit dates on JDK 11.                                                                       |
 | `-Djava.net.preferIPv4Stack=true`         | Prefers an IPv4 stack over IPv6.                                                                                                  |
 | `-Dlog4j2.formatMsgNoLookups=true`        | Resolves a remote code execution (RCE) vulnerability. See [LPS-143663](https://issues.liferay.com/browse/LPS-143663) for details. |
 | `-Duser.timezone=GMT`                     | DXP requires the application server JVM to use the GMT time zone.                                                                 |

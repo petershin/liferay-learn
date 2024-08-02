@@ -118,7 +118,7 @@ As a baseline, add `maximumHeapSize="2560"` inside the `jvmEntries` tag. For exa
 You can set the UTF-8 properties in the `<jvmEntries genericJvmArguments=.../>` attribute in `server.xml`. This is required, or international characters are not parsed correctly. Increase the maximum and minimum heap sizes there too. Add the following inside the `jvmEntries` tag:
 
 ```xml
-<jvmEntries xmi:id="JavaVirtualMachine_1183122130078" ...genericJvmArguments="-Dfile.encoding=UTF-8 -Djava.locale.providers=JRE,COMPAT,CLDR -Djava.net.preferIPv4Stack=true -Dlog4j2.formatMsgNoLookups=true -Duser.timezone=GMT -Xms6144m -Xmx6144m -XX:MaxNewSize=1536m -XX:MaxMetaspaceSize=768m -XX:MetaspaceSize=768m -XX:NewSize=1536m -XX:SurvivorRatio=7">
+<jvmEntries xmi:id="JavaVirtualMachine_1183122130078" ...genericJvmArguments="-Dfile.encoding=UTF-8 -Djava.net.preferIPv4Stack=true -Dlog4j2.formatMsgNoLookups=true -Duser.timezone=GMT -Xms6144m -Xmx6144m -XX:MaxNewSize=1536m -XX:MaxMetaspaceSize=768m -XX:MetaspaceSize=768m -XX:NewSize=1536m -XX:SurvivorRatio=7">
 ```
 
 !!! important
@@ -131,7 +131,6 @@ The Java options and memory arguments are explained below.
 | Option                                    | Explanation                                                                                                                       |
 | :---------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------- |
 | `-Dfile.encoding=UTF-8`                   | DXP requires UTF-8 file encoding.                                                                                                 |
-| `-Djava.locale.providers=JRE,COMPAT,CLDR` | This is required for displaying four-digit dates on JDK 11.                                                                       |
 | `-Djava.net.preferIPv4Stack=true`         | Prefers an IPv4 stack over IPv6.                                                                                                  |
 | `-Dlog4j2.formatMsgNoLookups=true`        | Resolves a remote code execution (RCE) vulnerability. See [LPS-143663](https://issues.liferay.com/browse/LPS-143663) for details. |
 | `-Duser.timezone=GMT`                     | DXP requires the application server JVM to use the GMT time zone.                                                                 |

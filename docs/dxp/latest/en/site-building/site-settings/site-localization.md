@@ -52,9 +52,9 @@ Liferay automatically saves the translation for each language and displays the t
 
 ## Locale Prepend Friendly URL Style
 
-Locale Prepend Friendly URL Style configures the website's content management system or web server to recognize language codes in URLs and serve the appropriate content properly. Take the following URL as example: `example.com/en/about`. The language identifier is placed in the URL before the rest of the path.
+Locale Prepend Friendly URL Style configures the website's content management system or web server to recognize language codes in URLs and serve the appropriate content. For example, in `example.com/en/about` the language identifier appears in the URL before the rest of the path.
 
-Locale Prepend Friendly URL Style helps search engines understand the language of the content, improving search engine rankings for users searching in a specific language.
+Locale Prepend Friendly URL Style helps search engines determine the content's language, improving search engine rankings for users of that language.
 
 ![Access the Locale Prepend Friendly URL Style Page.](./site-localization/images/07.png)
 
@@ -64,21 +64,29 @@ Locale Prepend Friendly URL Style helps search engines understand the language o
 
 1. Click *Locale Prepend Friendly URL Style*.
 
-Once you click the selector, you find the following options:
+Once you click the selector, these options appear:
 
-**Locale is automatically prepended to a URL when the requested locale is not the default user locale**: It is selected by default. The default user locale is set English (en), and a user from France visits the "About" page. Instead of the URL being `example.com/about`, it is automatically changed to `example.com/fr/about`.
+**Locale is automatically prepended to a URL when the requested locale is not the default user locale** (default value): The default user locale is set English (en). For guests or those using the default locale, the URL `example.com/about` is preserved without adding a locale prefix. If a user from France visits the About page. The URL changes from `example.com/about` to `example.com/fr/about` automatically.
 
-**Locale is not automatically prepended to a URL**: The default user is set to English (en), and a user from France visits the "About" page. The URL remains as `example.com/about` without any automatic addition of a locale prefix.
+**Locale is not automatically prepended to a URL**: The default user locale is set to English (en), and a user from France visits the About page. The URL `example.com/about` is preserved without adding a locale prefix.
 
-**Locale is automatically prepended to a URL when the requested locale is not the default locale**: The default user is set to English (en), and a user from France visits the "About" page. Instead of the URL being `example.com/about`, it is changed to `example.com/es/about`, indicating that the French version of the "About" page is being accessed.
+**Locale is automatically prepended to a URL when the requested locale is not the default locale**: The default user is set to English (en), and a user from France visits the About page. Instead of the URL being `example.com/about`, it is changed to `example.com/es/about`, indicating that the French version of the About page is being accessed.
 
-**Locale is automatically prepended to every URL**: The default user is set to English (en), and a user from France visits the "About" page. Instead of the URL being `example.com/about`, it's automatically changed to `example.com/en/about`, indicating that the English version of the "About" page is being accessed. In the same way, if a user from France (fr) visits the same "About" page, the URL would automatically become `example.com/fr/about`, displaying the French version of the page.
+<!-- The above definition doesn't make sense. If the default user is set to English, and somebody from France accesses the page, why would it switch to Spanish? Also, you need to determine what the difference is between the first option and this one. The only difference in the name of the option is the word "user." I verified this is indeed what's in the user interface, which is clear as mud (that's an English expression to indicate it's not clear). 
+
+Can you get clarification from the Product team on what these options mean? Otherwise, I wordsmithed everything, and this PR would be ready except for this.
+
+-Rich 
+
+-->
+
+**Locale is automatically prepended to every URL**: The default user locale is set to English (en). For guests or those using the default locale, the URL `example.com/about` changes to `example.com/en/about` automatically, showing the default locale. If a user from France (fr) visits the page, the URL changes to `example.com/fr/about` automatically, showing the chosen locale.
 
 1. Select the option that meets your needs. Click *Save* once done.
 
 !!! warning
-    Make sure your URLs are consistently correct (e.g., instead of `https://example.com/product/item1/`, it should be `https://example.com/product/item1`. The URL should not end with a `/`.)
-
+    Make sure your URLs don't have a trailing slash (e.g instead of `https://example.com/product/item1/`, use `https://example.com/product/item1`). 
+    
 ## Related Topics
 
 - [Localization](../../system-administration/configuring-liferay/virtual-instances/localization.md)

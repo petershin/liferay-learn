@@ -15,7 +15,7 @@ uuid: ce0a8b5e-a09a-49bf-98c5-47ff980b6a7c
 
 ## Configuring Site Languages
 
-You can set your Site's default language. You can also define a Site's enabled languages:
+You can set your site's default language. You can also define a site's enabled languages:
 
 1. Go to *[Site Settings](./site-settings-ui-reference.md#language)* &rarr; *Localization*.
 

@@ -10,30 +10,30 @@ uuid: c85f3045-c786-448a-aef9-2388660b7397
 
 # Configuring Open Graph
 
-{bdg-secondary}`Available: Liferay DXP/Portal 7.3+`
+{bdg-secondary}`Liferay DXP/Portal 7.3+`
 
-[Open Graph](https://ogp.me/) is an Internet protocol that standardizes previews of Site content when shared in application contexts that support it, such as Facebook, Slack, and Twitter. It does this by embedding structured data in page headers as `<meta>` tags, similar to [RDFa](https://en.wikipedia.org/wiki/RDFa).
+[Open Graph](https://ogp.me/) is an Internet protocol that standardizes previews of site content when shared in application contexts that support it, such as Facebook, Slack, and Twitter. It does this by embedding structured data in page headers as `<meta>` tags, similar to [RDFa](https://en.wikipedia.org/wiki/RDFa).
 
-By default, Open Graph `<meta>` tags are embedded in all public Liferay Pages, but you can disable this behavior at the Site level if desired. In Site settings, you can also set default `og:image` properties. These values are used for all Pages, unless they're overridden at the [Page](../creating-pages/page-settings/configuring-individual-pages.md#open-graph) or [Display Page](../displaying-content/using-display-page-templates/configuring-seo-and-open-graph.md) level.
+By default, Open Graph `<meta>` tags are embedded in all public Liferay pages, but you can disable this behavior at the site level if desired. In site settings, you can also set default `og:image` properties. These values are used for all pages, unless they're overridden at the [page](../creating-pages/page-settings/configuring-individual-pages.md#open-graph) or [display page](../displaying-content/using-display-page-templates/configuring-seo-and-open-graph.md) level.
 
 !!! note
     Custom `<meta>` tags are only included in page headers for unauthenticated users. They are not included when the user is logged in.
 
-Follow these steps to configure Open Graph for your Site:
+To configure Open Graph for your site,
 
 1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)) and go to *Configuration* &rarr; *Settings* (previously *Site Settings*).
 
 1. Scroll down to the *Open Graph* sub-heading and expand it.
 
-1. Check/uncheck the *Enable Open Graph* setting to enable/disable Open Graph for your Site.
+1. Check/uncheck the *Enable Open Graph* setting to enable/disable Open Graph for your site.
 
-   ![Enable or disable embedded Open Graph tags in your Site's Pages.](./configuring-open-graph/images/01.png)
+   ![Enable or disable embedded Open Graph tags in your site's pages.](./configuring-open-graph/images/01.png)
 
-1. (Optional) Use the *Image* and *Image Alt Description* fields to set default `og:image` properties for the Site's Pages.
+1. (Optional) Use the *Image* and *Image Alt Description* fields to set default `og:image` properties for the site's pages.
 
-   These values are overridden by [Page](../creating-pages/page-settings/configuring-individual-pages.md#open-graph) and [Display Page](../displaying-content/using-display-page-templates/configuring-seo-and-open-graph.md) configurations.
+   These values are overridden by [page](../creating-pages/page-settings/configuring-individual-pages.md#open-graph) and [display page](../displaying-content/using-display-page-templates/configuring-seo-and-open-graph.md) configurations.
 
-   ![Define the default og:image and og:image:alt properties used for your Site.](./configuring-open-graph/images/02.png)
+   ![Define the default og:image and og:image:alt properties used for your site.](./configuring-open-graph/images/02.png)
 
 1. Preview your default `og:image` configuration.
 
@@ -45,7 +45,7 @@ Follow these steps to configure Open Graph for your Site:
 
 ## Analyzing the `og:image` Properties
 
-When you select an image, DXP automatically adds a number of structured properties that determine how your selected image is displayed. The Image field defines the following `<meta>` tags.
+When you select an image, DXP automatically adds structured properties that determine how your selected image appears. The Image field defines the following `<meta>` tags.
 
 ```html
 <meta property="og:image" content="http://example.com/ogp.jpg" />
@@ -55,7 +55,7 @@ When you select an image, DXP automatically adds a number of structured properti
 <meta property="og:image:height" content="300" />
 ```
 
-When you enter text into the Image Alt Description field, you determine the default text read by screen readers for your selected image.
+When you enter text into the `Image Alt Description` field, you determine the default text read by screen readers for your selected image.
 
 To create localized alt descriptions for your Open Graph image, click on the *Language Flag* button and select the language you want to set. Values entered here define the default `og:image:alt` tag.
 

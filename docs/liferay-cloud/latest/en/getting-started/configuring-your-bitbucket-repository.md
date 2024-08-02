@@ -17,7 +17,7 @@ The provisioned repository will be on GitHub, but you can transfer it to a BitBu
 !!! note
     The repository's administrators *are not necessarily the same* as your project's administrators in the Cloud console.
 
-## Preparing the Jenkins service
+## Preparing the Jenkins Service
 
 If you've customized your Jenkinsfile, follow this guide to [extend the default Jenkinsfile](../platform-services/continuous-integration.md#extending-the-default-jenkinsfile).
 
@@ -100,7 +100,7 @@ On [the Bitbucket website](https://bitbucket.org), click *Repository settings* &
 
 ![The default branch types (and prefixes) for a Bitbucket repository are bugfix/, feature/, hotfix/, and release/.](./configuring-your-bitbucket-repository/images/05.png)
 
-## Connecting BitBucket to Your Jenkins service
+## Connecting BitBucket to Your Jenkins Service
 
 Lastly, set environment variables in the Jenkins service's to point to your new repository:
 

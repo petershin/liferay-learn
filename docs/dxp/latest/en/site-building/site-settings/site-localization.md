@@ -66,19 +66,11 @@ Locale Prepend Friendly URL Style helps search engines determine the content's l
 
 Once you click the selector, these options appear:
 
-**Locale is automatically prepended to a URL when the requested locale is not the default user locale** (default value): The default user locale is set English (en). For guests or those using the default locale, the URL `example.com/about` is preserved without adding a locale prefix. If a user from France visits the About page. The URL changes from `example.com/about` to `example.com/fr/about` automatically.
+**Locale is automatically prepended to a URL when the requested locale is not the default user locale** (default value): The default user locale is set English (en). For guests or those using the default locale, the URL `example.com/about` is preserved without adding a locale prefix. If a user from France visits the About page. The URL changes from `example.com/about` to `example.com/fr/about` automatically. The URL only changes if the user's preferred language is different from what they are requesting, focusing on the individual user's settings.
 
 **Locale is not automatically prepended to a URL**: The default user locale is set to English (en), and a user from France visits the About page. The URL `example.com/about` is preserved without adding a locale prefix.
 
-**Locale is automatically prepended to a URL when the requested locale is not the default locale**: The default user is set to English (en), and a user from France visits the About page. Instead of the URL being `example.com/about`, it is changed to `example.com/es/about`, indicating that the French version of the About page is being accessed.
-
-<!-- The above definition doesn't make sense. If the default user is set to English, and somebody from France accesses the page, why would it switch to Spanish? Also, you need to determine what the difference is between the first option and this one. The only difference in the name of the option is the word "user." I verified this is indeed what's in the user interface, which is clear as mud (that's an English expression to indicate it's not clear). 
-
-Can you get clarification from the Product team on what these options mean? Otherwise, I wordsmithed everything, and this PR would be ready except for this.
-
--Rich 
-
--->
+**Locale is automatically prepended to a URL when the requested locale is not the default locale**: The default user is set to English (en), and a user from France visits the About page. Instead of the URL being `example.com/about`, it is changed to `example.com/fr/about`, indicating that the French version of the About page is being accessed. The URL changes if the requested language differs from the website's set default, regardless of individual user preferences, focusing on the website's default language.
 
 **Locale is automatically prepended to every URL**: The default user locale is set to English (en). For guests or those using the default locale, the URL `example.com/about` changes to `example.com/en/about` automatically, showing the default locale. If a user from France (fr) visits the page, the URL changes to `example.com/fr/about` automatically, showing the chosen locale.
 

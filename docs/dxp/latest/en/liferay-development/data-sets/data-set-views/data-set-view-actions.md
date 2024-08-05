@@ -14,9 +14,9 @@ taxonomy-category-names:
 
 While managing data set views, define actions to be used in the data set fragment. There are two types of actions: item and creation.
 
-Use *Item Actions* to perform actions on items in the data set. 
+Use *Item Actions* to perform actions on items in the data set.
 
-Use *Creation Actions* to add new data. 
+Use *Creation Actions* to add new data.
 
 Begin by [adding an action to the data set view](#adding-actions-to-the-data-set-view) and configure it as an [item or creation action](#configuring-item-and-creation-actions).
 
@@ -138,7 +138,7 @@ To create a link action,
 
 1. Under Action Behavior, select *Link* as the Type.
 
-1. Specify the URL for redirecting the user.
+1. [Specify the URL for redirecting the user](#specifying-the-url-for-redirecting-the-user).
 
 1. (Optional) Enter a *Headless Action Key*. With the Action key, administrators can associate an action to a headless endpoint (e.g. GET, POST, and DELETE).
 
@@ -167,7 +167,7 @@ To create a modal action,
 
 1. Enter a *Title* for your modal.
 
-1. Specify the URL.
+1. [Specify the URL for redirecting the user](#specifying-the-url-for-redirecting-the-user).
 
 1. (Optional) Enter a *Headless Action Key*. With the Action key, administrators can associate an action to a headless endpoint (e.g. GET, POST, and DELETE).
 
@@ -192,7 +192,7 @@ To create a side panel action,
 
 1. Enter a *Title* for your Side Panel.
 
-1. Specify the URL for redirecting the user.
+1. [Specify the URL for redirecting the user](#specifying-the-url-for-redirecting-the-user).
 
 1. (Optional) Enter a Headless Action Key. With the Action key, administrators can associate an action to a headless endpoint (e.g. GET, POST, and DELETE).
 
@@ -231,6 +231,54 @@ To create status messages for [async](#async-action) and [headless](#headless-ac
 
 !!! tip
     Confirmation and status messages can be localized. Read [Editing and Localizing Labels](./data-set-view-visualization-modes.md#editing-and-localizing-labels) to learn more.
+
+### Specifying the URL for Redirecting the User
+
+{bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA132+`
+
+When configuring link, side panel, and modal actions, it’s essential to specify the correct URL for redirection after an action is completed. By including specific parameters in the URL, you can ensure users are redirected to the desired page once the action is complete.
+
+With Link actions,
+
+Use the `backURL`, `_backURL`, or `_redirect` parameters to specify where users should be redirected after completing the action:
+
+- The `backURL` and the `_backURL` parameters function similarly, with `_backURL` being used for compatibility or legacy reasons. Both parameters define the URL where users return after the action is completed.
+
+   Here are some examples:
+
+   `http://localhost:8080/group/control_panel/manage?p_p_id=com_liferay_object_web_internal_object_definitions_portlet_ObjectDefinitionsPortlet_33058&(...)_backURL=http%3A%2F%2Flocalhost%3A8080%2Fcontent-page`
+
+   Users click on a link action and are directed to the `ObjectDefinitionsPortlet_33058` to create an object entry. After completing the action and returning to the object definition page, they are redirected back to `http://localhost:8080/content-page`.
+
+   `http://localhost:8080/group/control_panel/manage?p_p_id=com_liferay_users_admin_web_portlet_UsersAdminPortlet&(...)edit_user&backURL=http%3A%2F%2Flocalhost%3A8080%2Fuser-management-page`
+
+   Users are taken to the Edit User page and the `backURL` parameter points at `http://localhost:8080/user-management-page`.
+
+- The `_redirect` parameter specifies an alternative URL for redirection and takes precedence over `backURL` and `_backURL` if all are present. It's used when an explicit redirect is required instead of returning to a previous page.
+
+   Here is an example:
+
+   `http://localhost:8080/group/control_panel/manage?p_p_id=com_liferay_journal_web_portlet_JournalPortlet(...)_com_liferay_journal_web_portlet_JournalPortlet_redirect=http%3A%2F%2Flocalhost%3A8080%2Fcontent-page`
+
+   Users manage web content and, after completing the action, are redirected to `http://localhost:8080/content-page`.
+
+- If no redirection parameters are provided but a `p_p_id` parameter is present, the system infers redirection from the `p_p_id` and uses the current URL as the value. This way, users are returned to the data set view page after the action is complete.
+
+- If no parameters are provided, no redirection occurs after the action is complete.
+
+With Side Panel and Modal actions,
+
+Redirection is unnecessary since these components open over the current page. Adding a `Title` field to these actions displays a bar with the title and a close button at the top of the component, allowing users to close it and return to the current page.
+
+![A Side Panel action with a title and a URL without a title.](./data-set-view-actions/images/10.png)
+
+If the Side Panel or Modal action points to a URL that already includes a title, adding one in the action configuration is unnecessary. The existing title from the target URL appears along with a close button. Adding another title in the action configuration results in two overlapping bars.
+
+![A Modal action and a URL with titles.](./data-set-view-actions/images/11.png)
+
+If neither the action nor the URL includes a title, nothing appears.
+
+![Without any titles, nothing appears.](./data-set-view-actions/images/12.png)
 
 ## Related Topics
 

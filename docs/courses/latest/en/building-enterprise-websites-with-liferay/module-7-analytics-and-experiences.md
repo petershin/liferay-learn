@@ -9,6 +9,8 @@ uuid: b23dfac8-d7e6-4885-818d-d2936dea6b83
 
 <!--TASK: Write intro material-->
 
+- Analytics Cloud
+- Segments, Experiences, and A/B Testing
 
 Up First: [Clarity’s Analytics and Experiences Requirements](./module-7-analytics-and-experiences/claritys-analytics-and-experiences-requirements.md)
 

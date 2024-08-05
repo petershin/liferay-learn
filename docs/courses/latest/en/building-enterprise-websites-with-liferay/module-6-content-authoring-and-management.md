@@ -26,8 +26,7 @@ In the previous module, you learned about some of the tools, techniques, and bes
 - Tags, Categories, and Collections
 - Catalogs, Products, and Channels
 - Publications and Workflow
-- Analytics Cloud
-- Segments, Experiences, and A/B Testing
+- Forms and Objects
 
 Through the course of the module, you'll learn about the best practices for addressing Clarity's specific business needs. Let’s take a closer look at these requirements.
 

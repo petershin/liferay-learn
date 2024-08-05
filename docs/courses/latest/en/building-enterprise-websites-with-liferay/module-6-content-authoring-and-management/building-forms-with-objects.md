@@ -3,12 +3,20 @@ uuid: 1645bc8e-0a29-4cd2-bd52-4072ff7b39ce
 ---
 # Building Forms with Objects
 
+Most digital experience solutions require the development of custom business functions that drive user interaction and engagement. Clarity wants a very common example of this type of business function: a Contact Us form that will collect data from site visitors and make that data available to the appropriate internal users. Traditionally, even a straightforward process like this requires a significant time investment from a development team to produce and iterate on code that will be expensive to maintain. To avoid the pain points of traditional development, Clarity wants to leverage Liferay Objects to build a Contact Us form without touching a single line of code.
 
+## Objects
+
+With Liferay Objects, you can define the schema of your data models with specific attributes, create relationships between objects, and implement logic to determine how objects should behave. Objects allow you to iterate rapidly without the need to write or deploy code, which translates directly to increased business agility. Liferay provides a centralized interface to define, manage, and store application data from custom structures, allowing you to provide end users with tailored, streamlined experiences.
+
+One of the true strengths of objects is their integration with Liferay's core frameworks and functionalities, such as permissions, security, workflows, and more. This creates a cohesive user experience where your custom-built solutions feel and act like native parts of the Liferay platform.  Not only does this let you achieve faster time to value, but it also means that any Liferay practitioner can maintain your solution, eliminating the need for technical developer resources.
+
+Now, you can try out objects for yourself in the following exercises.
 
 <!--Exercise 19a-->
 ## Exercise: Creating an Object Definition
 
-Clarity wants to create a user-friendly contact form to streamline communication with non-employees users. Liferay Objects provides the tools to build and seamlessly integrate this form with their Contact Us page.
+Clarity wants to create a user-friendly contact form to streamline communication with non-employee users. Liferay Objects provides the tools to build and seamlessly integrate this form with their Contact Us page.
 
 <!-- TASK: This exercise is using Clarity Admin due to Walter Douglas missing permissions in the baseline. Clarity Admin will be replaced by Walter Douglas after it's fixed. -->
 
@@ -135,7 +143,7 @@ To do this,
 
 Great! You've fully set up the Contact Us page and made it available for Clarity's users.
 
-Next, you can learn how to create a multi-step form or move to the next lesson to learn about Liferay Client extensions and how you can use them to add styling and functionality to your Liferay instance.
+Next, you can learn how to create a multi-step form or move on to the next lesson to learn about Liferay's capabilities for analytics and personalized user experiences.
 
 <!--Exercise 19c-->
 ## Exercise: Creating a Multi-Step Form (Bonus)

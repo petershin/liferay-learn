@@ -12,7 +12,7 @@ uuid: 5d8d254a-1f19-450c-9b59-2c0b677888ae
 
 {bdg-secondary}`Liferay DXP/Portal 7.4+`
 
-[Fragments](../using-fragments.md) can be used to assemble [content pages](../../using-content-pages.md) with a variety of layouts and information. Starting with Liferay DXP 7.4, you can configure the Fragments' visibility based on a user's screen size. For instance, a fragment can be hidden for a page rendered from a computer while visible from the same page on a smartphone.
+[Fragments](../using-fragments.md) can be used to assemble [content pages](../../using-content-pages.md) with a variety of layouts and information. Starting with Liferay DXP 7.4, you can configure a fragment's visibility based on a user's screen size. For instance, a fragment can be hidden for a page rendered from a computer while visible from the same page on a smartphone.
 
 You configure the fragment visibility for each screen size from the [content page editor](../../using-content-pages/content-page-editor-ui-reference.md), using the viewport controls on the top of the page editor.
 
@@ -74,23 +74,23 @@ You can change the fragment visibility on your content pages in three ways:
 
 ## Example: Using Fragment Visibility
 
-Consider this example. Your insurance company wants to promote a new mobile app with which customers can manage their insurance policies. You want to promote this app when users access your page from a smartphone. In this case, you can create a promotional banner for your new smartphone app and make this banner visible only on the Smartphone viewports:
+Consider this example. Your insurance company wants to promote a new mobile app customers can use to manage their insurance policies. You want to promote this app when users access your page from a smartphone. In this case, you can create a promotional banner for your new smartphone app and make this banner visible only on the smartphone viewports:
 
-1. From the default Desktop viewport, add a new fragment with your promotional text for the smartphone app.
+1. From the default desktop viewport, add a new fragment with your promotional text for the smartphone app.
 
 1. Hide the fragment with your promotional text. The fragment is now hidden in all viewports.
 
-1. Click the *Landscape Phone* viewport. Changes on this viewport affect the Portrait Phone viewport as well.
+1. Click the *Landscape Phone* viewport. Changes on this viewport affect the portrait phone viewport as well.
 
 1. [Change the fragment visibility](#changing-fragment-visibility) to unhide your promotional text in the Phone viewports.
 
-1. Click on the different viewports to see the effect. The promotional text is now available in the Landscape Phone and Portrait Phone viewports only.
+1. Click on the different viewports to see the effect. The promotional text is now available in the landscape phone and portrait phone viewports only.
 
 The following video illustrates this example:
 
 ![Changing a fragment's visibility for a specific viewport in the content page editor.](./configuring-fragment-visibility/images/06.gif)
 
-To restore the default viewport visibility, click on the viewport and click the Restore Default (![Restore Default](../../../../images/icon-restore.png)) button under the fragment Styles area:
+To restore the default viewport visibility, click on the viewport and click the *Restore Default* (![Restore Default](../../../../images/icon-restore.png)) button under the fragment Styles area:
 
 ![Restore the default viewport fragment visibility using the Restore Default button.](./configuring-fragment-visibility/images/07.png)
 

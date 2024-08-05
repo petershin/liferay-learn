@@ -13,5 +13,6 @@ OSGi
 Talend
 portlet
 servlet
+viewport
 widget's
 workspace's

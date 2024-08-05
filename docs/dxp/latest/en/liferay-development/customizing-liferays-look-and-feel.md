@@ -7,6 +7,7 @@ toc:
   - ./customizing-liferays-look-and-feel/using-a-theme-spritemap-client-extension.md
   - ./customizing-liferays-look-and-feel/using-a-custom-filter-client-extension.md
   - ./customizing-liferays-look-and-feel/using-an-editor-config-contributor-client-extension.md
+  - ./customizing-liferays-look-and-feel/using-an-fds-cell-renderer-client-extension.md
   - ./customizing-liferays-look-and-feel/client-extensions-ui-reference.md
   - ./customizing-liferays-look-and-feel/micro-frontends.md
   - ./customizing-liferays-look-and-feel/themes.md
@@ -90,6 +91,23 @@ Specify an Editor Config Contributor client extension in your `client-extension.
 ```yaml
 type: editorConfigContributor
 ```
+
+## FDS Cell Renderer Client Extensions
+
+{bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+`
+
+FDS cell renderer client extensions allow you to use your own code to determine how information from [data sets](./data-sets.md) is displayed. They must implement this renderer logic as a function that uses a single value provided by Liferay.
+
+!!! note
+    The FDS cell renderer client extension is currently behind a [beta feature flag](../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags). You must enable the feature flag before you start using it.
+
+Specify an FDS cell renderer client extension in your `client-extension.yaml` file:
+
+```yaml
+type: fdsCellRenderer
+```
+
+See [Using an FDS Cell Renderer Client Extension](./customizing-liferays-look-and-feel/using-an-fds-cell-renderer-client-extension.md) to get started.
 
 ## Custom Filter Client Extensions
 

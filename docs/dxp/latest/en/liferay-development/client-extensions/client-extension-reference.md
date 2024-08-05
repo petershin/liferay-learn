@@ -33,7 +33,7 @@ You can find code examples for all types of client extensions in [liferay-portal
 
 - [FDS Filter Client Extension](../customizing-liferays-look-and-feel/using-a-custom-filter-client-extension.md)
 
-- FDS Cell Renderer Client Extension (see [example code](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace/client-extensions/liferay-sample-fds-cell-renderer))
+- [FDS Cell Renderer Client Extension](../customizing-liferays-look-and-feel/using-an-fds-cell-renderer-client-extension.md)
 
 - [Editor Config Contributor Client Extension](../customizing-liferays-look-and-feel/using-an-editor-config-contributor-client-extension.md)
 

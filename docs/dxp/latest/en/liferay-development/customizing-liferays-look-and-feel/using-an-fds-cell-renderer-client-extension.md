@@ -1,4 +1,6 @@
 ---
+toc:
+  - ./using-an-fds-cell-renderer-client-extension/fds-cell-renderer-yaml-reference.md
 taxonomy-category-names:
 - Development and Tooling
 - Frontend Client Extensions

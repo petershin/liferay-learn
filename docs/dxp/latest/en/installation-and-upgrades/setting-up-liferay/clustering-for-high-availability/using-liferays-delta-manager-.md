@@ -6,19 +6,13 @@ taxonomy-category-names:
 - Liferay Self-Hosted
 ---
 
-## Enabling Session Replication on Tomcat
+## Using Liferay's DeltaManager for Improved Session Replication Performance
 
-To ensure user session data is synchronized across all Tomcat instances in the cluster, Liferay uses session replication. That way, if one instance fails, user sessions are not lost as they are replicated to other nodes in the cluster. If you are using a DXP cluster, you must configure Tomcat to use Liferay's implementation of `DeltaManager` for improved performance.
-
-## Prerequisites
-
-For session replication to work, all session attributes must implement `java.io.Serializable`. Also, session replication only applies to user sessions within the same URL. This is because session state is tracked by a domain-specific cookie.
-
-For the full benefits of session replication, there must be a load balancer that redirects the traffic to the nodes. For information on how to set up a load balancer, see [Apache's documentation](https://tomcat.apache.org/tomcat-9.0-doc/cluster-howto.html).
+To ensure user session data is synchronized across all instances in the cluster, Liferay supports session replication. That way, if one instance fails, user sessions are not lost as they are replicated to other nodes in the cluster. If you are using a DXP cluster, you can configure Tomcat to use Liferay's implementation of `DeltaManager` for improved performance.
 
 ## Setting Up Session Replication
 
-1. Replace <Cluster className="org.apache.catalina.ha.tcp.SimpleTcpCluster" /> with the following lines in Liferay Home's `conf/server.xml`:
+1. Replace `<Cluster className="org.apache.catalina.ha.tcp.SimpleTcpCluster" />` with the following lines in Liferay Home's `conf/server.xml`:
 
    ```xml
    <Cluster className="org.apache.catalina.ha.tcp.SimpleTcpCluster">
@@ -59,6 +53,12 @@ For the full benefits of session replication, there must be a load balancer that
 1. Repeat steps 1-3 for each other node. Be sure to define the cluster settings in `portal-ext.properties`; set the same database connections such that all nodes point to the same database.
 
 1. Start servers sequentially. Cluster nodes cannot be started simultaneously because the process takes time to determine which node is the master node.
+
+## Other Optimizations
+
+For session replication to work, all session attributes must implement `java.io.Serializable`. Also, session replication only applies to user sessions within the same URL. This is because session state is tracked by a domain-specific cookie. For the full benefits of session replication, a load balancer is recommended to redirect traffic to the nodes.
+
+If you define any custom cluster valves, you must also define the `<ReplicationValve>` in the `<Cluster>` element.
 
 ## Related Topics
 

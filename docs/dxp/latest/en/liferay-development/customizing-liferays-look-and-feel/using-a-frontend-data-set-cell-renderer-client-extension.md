@@ -124,9 +124,9 @@ Now that your custom data set cell renderer is deployed, create and populate a d
 
 Create a data set that uses your client extension to render cells.
 
-1. In your running Liferay instance, navigate to the Applications Menu (![Applications Menu](../../icon-applications-menu.png)) &rarr; *Control Panel* &rarr; *Data Sets*.
+1. In your running Liferay instance, navigate to the Applications Menu (![Applications Menu](../../images/icon-applications-menu.png)) &rarr; *Control Panel* &rarr; *Data Sets*.
 
-1. Click Add (![Add icon](../../icon-add.png)) to add a new data set.
+1. Click Add (![Add icon](../../images/icon-add.png)) to add a new data set.
 
 1. Fill in the New Data Set form with these values:
 
@@ -150,7 +150,7 @@ Create a data set that uses your client extension to render cells.
 
 1. Click the *Visualization Modes* tab.
 
-1. With the *Table* view selected, click Add (![Add icon](../../icon-add.png)).
+1. With the *Table* view selected, click Add (![Add icon](../../images/icon-add.png)).
 
 1. Select the `emailAddress`, `familyName`, and `givenName` fields and click *Save*.
 
@@ -158,7 +158,7 @@ Create a data set that uses your client extension to render cells.
 
     The `givenName` and `familyName` fields represent the user's first and last name, respectively.
 
-1. On the `familyName` row, click Actions (![Actions icon](../../icon-actions.png)) &rarr; *Edit*.
+1. On the `familyName` row, click Actions (![Actions icon](../../images/icon-actions.png)) &rarr; *Edit*.
 
 1. From the *Renderer* drop-down menu, select *Liferay Sample Frontend Data Set Cell Renderer*.
 
@@ -166,7 +166,7 @@ Create a data set that uses your client extension to render cells.
 
 1. Click *Save*.
 
-1. On the `givenName` row, click Actions (![Actions icon](../../icon-actions.png)) &rarr; *Edit*.
+1. On the `givenName` row, click Actions (![Actions icon](../../images/icon-actions.png)) &rarr; *Edit*.
 
 1. From the *Renderer* drop-down menu, select *Liferay Sample Frontend Data Set Cell Renderer*.
 
@@ -180,9 +180,9 @@ Now you have a data set uses your new client extension to render users' first an
 
 Next, add a user for the data set to display.
 
-1. Navigate to the Applications Menu (![Applications](../../icon-applications-menu.png)) &rarr; *Control Panel* &rarr; *Users and Organizations*.
+1. Navigate to the Applications Menu (![Applications](../../images/icon-applications-menu.png)) &rarr; *Control Panel* &rarr; *Users and Organizations*.
 
-1. Click *Add* (![Add icon](../../icon-add.png)).
+1. Click *Add* (![Add icon](../../images/icon-add.png)).
 
 1. Fill in the user form's required fields with these values:
 

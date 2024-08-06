@@ -15,7 +15,7 @@ By default, Liferay DXP uses the *Sign In* widget to authenticate users.
 !!! note
     The Sign In widget appears on the default home page at `http[s]://[server-name:port]/web/guest/home`. If the Sign In widget is unavailable on any page, it can be accessed directly via its URL: `http[s]://[server-name:port]/c/portal/login`.
 
-![The default Liferay home page](./authentication-basics/images/01.png)
+![The default Liferay home page.](./authentication-basics/images/01.png)
 
 You can configure other methods of authenticating users and/or applications:
 
@@ -27,6 +27,23 @@ You can configure other methods of authenticating users and/or applications:
 - [OAuth 2.0](../../headless-delivery/using-oauth2.md)
 
 [Authentication Verifiers](./securing-web-services/using-authentication-verifiers.md) can manage authentication for remote applications, and [Authentication Pipelines](../../liferay-development/building-applications.md) define the ways users are validated by one or several systems.
+
+## Sign In Widget Configuration
+
+To access the configuration menu for the sign in widget,
+
+1. Open the page that contains the sign in widget in edit mode and click *Actions* (![Actions](../../images/icon-actions.png)) &rarr; *Configuration*.
+
+1. You can configure several options here.
+
+   - Authentication Type - See [Authentication Types](#authentication-types) for more information.
+   - Email From - Set the name and email address for the sender of system-generated emails (includes the password reset notification email).
+   - Password Reset Notification - Set the subject and contents of the password reset notification email.
+
+1. Click *Save* to apply a new configuration.
+
+!!! note
+    Starting from Liferay DXP 2024.Q3/GA132, both the *Email From* and *Password Reset Notification* settings have been removed from the sign in widget through a [beta feature flag](../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags). They are now available at the instance level. To access these settings, open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and go to *Control Panel* &rarr; *Instance Settings* &rarr; *Email*. You can find the *Email Sender* and *Password Reset Notification* settings here.
 
 ## Authentication Types
 

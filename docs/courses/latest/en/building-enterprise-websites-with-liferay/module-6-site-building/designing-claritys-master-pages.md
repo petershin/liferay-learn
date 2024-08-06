@@ -5,7 +5,7 @@ uuid: a25d0376-c05f-4040-a2d5-3ecf7e79eb49
 
 The first step in designing pages is to determine their fundamental structure. In Liferay, this means designing master page templates. Built with the same tools and elements as pages, these templates establish the fundamental layout inherited by all pages that use them. This includes a header, footer, and central content area. The content area determines the body of the page that users can edit when building pages from the template, while anything outside this central area cannot be edited, ensuring consistency across the site. Furthermore, edits made to the master template automatically propagate to connected pages, streamlining maintenance.
 
-Given their site designs, Clarity needs two master page templates: a primary template that includes a detailed header and footer, and a secondary template with a simplified header and footer. Before creating and wireframing the master pages, let’s review Clarity’s designs.
+Given their site designs, Clarity needs two master page templates: a primary template that includes a detailed header and footer, and a secondary template with a simplified header and footer. Before proceeding, let’s review Clarity’s designs.
 
 ## Primary Master Page
 
@@ -60,17 +60,17 @@ The secondary footer is the same as the third row of the primary footer and does
 
 ## Page Building Elements
 
-To build these designs, you’ll primarily use fragments. As previously explained, Liferay fragments are reusable building blocks for constructing pages. They are essentially flexible page elements made of HTML, CSS, and JavaScript that you can drag and drop into pages.
+To build these designs, you’ll primarily use fragments. Liferay fragments are reusable building blocks for constructing pages. They are essentially flexible page elements made of HTML, CSS, and JavaScript that you can drag and drop into pages.
 
 Some fragments are layout elements that define drop zones within pages and templates. These include Containers, which define a single `<div>`, and Grids, which can define any number of `<div>`s in rows and columns. Other fragments are components that add text, images, buttons, menus, forms, and more to your page. You can go to [Default Fragments Reference](https://learn.liferay.com/web/guest/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments/default-fragments-reference) for a complete list of Liferay's out-of-the-box fragments.
 
 ![Access available pages elements in the Fragments and Widgets side panel.](./designing-claritys-master-pages/images/05.png)
 
-Once added to a page, you configure each fragment’s styling and behavior. For example, when you add a container to a page, you can determine the container’s display behavior (`block`, `flex`), spacing (`margin`, `padding`), dimensions (`width`, `height`), background, and more. You can go to [Configuring Fragments](https://learn.liferay.com/web/guest/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments) for a list of available configuration options.
+Once added to a page, you can configure each fragment’s styling and behavior. For example, when you add a container to a page, you can determine the container’s display behavior (`block`, `flex`), spacing (`margin`, `padding`), dimensions (`width`, `height`), background, and more. See [Configuring Fragments](https://learn.liferay.com/web/guest/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments) for a list of available configuration options.
 
 ![Access configuration and styling options in the Configurations side panel.](./designing-claritys-master-pages/images/06.png)
 
-We’ll revisit these configurations later in this module. But for now, let’s use these page elements to wireframe the primary and secondary master page templates.
+We’ll revisit these configurations later in this module. But for now, let’s use these page elements to finish wireframing Clarity's primary and secondary master page templates.
 
 ## Exercise: Designing Clarity's Master Pages
 

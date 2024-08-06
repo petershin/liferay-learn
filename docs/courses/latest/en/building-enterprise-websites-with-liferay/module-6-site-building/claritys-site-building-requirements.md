@@ -58,6 +58,6 @@ Clarity can integrate analytics tools to provide insights into website traffic, 
 
 ## Conclusion
 
-Now that we've explored Clarity's site building requirements, we can use them to focus and guide our contributions to the Clarity website. In the next lesson, we’ll set up the version of the site we’ll use throughout the following exercises.
+Now that we've explored Clarity's site building requirements, we can use them to focus and guide our contributions to the Clarity website. In the next lesson, we’ll learn about creating sites and explore the Liferay DXP user interface.
 
 Next Up: [Setting Up Clarity’s Site](./setting-up-claritys-site.md)

@@ -11,7 +11,7 @@ Liferay DXP includes the fragments editor UI for creating and managing fragments
 
 When creating a fragment, you can copy and modify existing fragments or start from scratch. You can also create custom fragments by saving container compositions in the page editor. Saving container compositions offers a convenient way to recreate specific arrangements of fragments on other pages. However, you cannot edit compositions via the Fragments Editor UI.
 
-Here you'll use the Fragments Editor UI to create and import Clarity's custom fragments.
+Here you'll use the Fragments Editor UI to create and import custom fragments for Clarity's site.
 
 !!! tip “When to Use Custom Fragments”
     Liferay recommends using out-of-the-box fragments and configuration options whenever possible. When you do need custom fragments, Liferay recommends leveraging available style tokens to simplify fragment code, which promotes design consistency across your website elements and improved maintainability.
@@ -156,6 +156,8 @@ To do this,
 1. Click *Publish*.
 
 1. Repeat this process until you've finished adding the page compositions to the other pages.
+
+Now Clarity's pages are wireframed and ready for content.
 
 ## Conclusion
 

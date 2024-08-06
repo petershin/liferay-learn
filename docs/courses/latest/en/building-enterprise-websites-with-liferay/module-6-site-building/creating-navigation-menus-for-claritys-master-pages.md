@@ -7,13 +7,11 @@ Navigation is an integral part of designing a clear and intuitive user experienc
 
 ![Clarity’s header and footer designs include multiple navigation menus.](./creating-navigation-menus-for-claritys-master-pages/images/01.png)
 
-As seen in the previous exercises, Clarity’s header and footer designs include multiple navigation menus. When wireframing the master pages, you used the default menu, which includes all site content pages. Now it is time to create custom menus that only include the desired pages. Then you can update the master pages to use them instead of the default menu.
+As seen in the previous exercises, Clarity’s header and footer designs include multiple navigation menus. When designing the master pages, you used the default menu, which includes all site content pages. Now it is time to create custom menus that only include the desired pages. Then you can update the master pages to use them instead of the default menu.
 
 ## Exercise: Creating Navigation Menus
 
 <!-- Exercise 7a -->
-
-Navigation is an integral part of designing a clear and intuitive user experience. In Liferay, setting up navigation involves creating menus and then adding them to pages using widgets or fragments.
 
 Most of the custom navigation menus that Clarity needs are provided in the training workspace. However, they still need a menu for their page header that only includes these pages: Products, About Us, Blog, FAQ, Careers, and Contact Us.
 
@@ -110,8 +108,6 @@ To do this,
 Once finished, navigate to the Home page to see how your changes to the template were automatically applied to the connected pages.
 
 ![Navigate to the Home page to see the changes on the template applied to the connected pages.](./creating-navigation-menus-for-claritys-master-pages/images/08.png)
-
-Clarity's master pages are nearly done. Now they just need a custom Search Button fragment to add to the header.
 
 ## Conclusion
 

@@ -3,7 +3,7 @@ uuid: bd76284b-3b05-4f26-93ca-8ae3eac7bb97
 ---
 # Configuring the Clarity Site
 
-With your local copy of Clarity's website up and running, it’s time to configure it! Clarity's public enterprise website aims to be accessible by all, engaging the full spectrum of their global audiences. This lesson covers critical settings like membership types, localization, and accessibility. By configuring these elements, you'll ensure Clarity's website is inclusive and user-friendly for everyone who visits.
+With your local copy of Clarity's public enterprise website, it’s time to configure it! Clarity's website aims to be accessible by all, engaging the full spectrum of their global audiences. This lesson covers critical settings like membership types, localization, and accessibility. By configuring these elements, you'll ensure Clarity's website is inclusive and user-friendly for everyone who visits.
 
 ![Configure the public enterprise website.](./configuring-the-clarity-site/images/01.png)
 
@@ -211,6 +211,6 @@ Now when users visit `http://localhost:8080/` and log out or log in, they're dir
 
 ## Conclusion
 
-Congratulations! You’ve created and configured the Clarity site to ensure it is public and accessible to Clarity’s global audience. Next you’ll add pages to Clarity’s site.
+Congratulations! You’ve configured Clarity's enterprise website to ensure it is public and accessible to Clarity’s global audience. Next you’ll add some pages to Clarity’s site.
 
 Next Up: [Adding Pages to Clarity's Site](./adding-pages-to-claritys-site.md)

@@ -5,7 +5,7 @@ uuid: 981d3547-2524-4c8f-bb75-4d7306842509
 
 Pages are the fundamental building blocks of website structures. Each page is a canvas for designing engaging layouts with content (e.g., text, images, videos) and interactive elements (e.g., forms, widgets). Liferay's WYSIWYG editor and drag-and-drop elements provide an intuitive and user-friendly experience, so you can implement your vision without writing code. For advanced use cases, you can also create custom page elements using HTML, CSS, and JavaScript. To help you implement your solution, Liferay provides a variety of page types.
 
-In this lesson, you’ll use different page types to implement Clarity’s site map introduced in the first module:
+In this lesson, you’ll use different page types to finish implementing Clarity’s site map:
 
 ![Clarity's website development team has produced this site map for their initiative.](./adding-pages-to-claritys-site/images/01.png)
 
@@ -20,9 +20,7 @@ Content pages are used to create content-rich, visually engaging experiences. Wi
 <!--TASK: Update img -->
 
 !!! tip “Content Pages vs. Widget Pages”
-    Liferay also provides widget pages, but this course focuses on building user experiences with content pages. Content pages provide superior flexibility and integration with Liferay’s latest content and personalization features, including fragments, collections, segmentation, and client extensions. Widget pages do not support these features.
-
-<!--TASK: Clarify that if you're working in an existing site with widget pages, you can convert them to content pages. -->
+    Liferay also provides widget pages, but this course focuses on building user experiences with content pages. Content pages provide superior flexibility and integration with Liferay’s latest content and personalization features, including fragments, collections, segmentation, and client extensions. Widget pages do not support these features. If you're working on an existing site with widget pages, you can convert them to content pages. See [Converting Widget Pages to Content Pages](https://learn.liferay.com/w/dxp/site-building/creating-pages/using-widget-pages/converting-widget-pages-to-content-pages) for more information.
 
 <!--TASK:
 ### Parent and Child Pages
@@ -150,6 +148,6 @@ Since Liferay sites include 404 and 500 error pages by default, there's no need 
 
 ## Conclusion
 
-Congratulations! You’ve laid the foundational page structure for Clarity’s site. Next, you’ll take these blank pages and start designing their layout. But before that, let's take a moment to review some core concepts for Liferay page design.
+Congratulations! You’ve finished the foundational page structure for Clarity’s site. Next, you’ll take these blank pages and start designing their layout. But before that, let's take a moment to review some core concepts for Liferay page design.
 
 Next Up: [Understanding Page Design](./understanding-page-design.md)

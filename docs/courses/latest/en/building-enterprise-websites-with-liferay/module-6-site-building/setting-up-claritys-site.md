@@ -5,10 +5,10 @@ uuid: 212a45ee-0ca2-4397-8de5-636f24d28e27
 
 Liferay sites are customizable spaces for building personalized digital experiences. Each site includes applications for creating content, designing pages, and more. With these features, you can bring your custom solutions to life, whether intranets, public sites, customer portals, or e-commerce storefronts. In fact, you can leverage Liferay's multi-site capabilities to create multiple such sites in the same Liferay instance. This flexibility empowers you to build solutions tailored to your needs.
 
-After setting up their users, Clarity's IT team is ready to start building their public enterprise website. Here you’ll join the team as Walter Douglas, a Clarity web developer, to help implement Clarity’s site architecture. In this lesson, you'll create the site from scratch and familiarize yourself with the Liferay site builder interface. <!--TASK: Add transition to section on templates and initializers.-->
+In this lesson, you'll create a site from scratch and familiarize yourself with the Liferay site builder interface. <!--TASK: Add transition to section on templates and initializers.-->
 
 !!! note
-    In a real world scenario, site contributors would work in a shared Liferay DXP environment. However, for training purposes, you’ll work in a local instance to create your own copy of a site.
+    In a real world scenario, site contributors would work in a shared Liferay DXP environment. However, for training purposes, you’ll work in a local instance to finish your own copy of the site.
 
 ## Using Templates and Initializers
 
@@ -75,6 +75,6 @@ The Global Menu provides access to core Liferay functionalities for your entire 
 
 ## Conclusion
 
-Congratulations! In this lesson, you've set up your blank copy of the Clarity site and familiarized yourself with Liferay's site builder UI. The next step is to configure the newly created site.
+Congratulations! In this lesson, you've explored options for creating Liferay sites and familiarized yourself with Liferay's site builder UI. The next step is to configure Clarity's website.
 
 Next Up: [Configuring the Clarity Site](./configuring-the-clarity-site.md)

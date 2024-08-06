@@ -107,6 +107,6 @@ When configuring individual page elements, you can apply custom styling in the S
 
 ## Conclusion
 
-Congratulations! You’ve explored the different parts of Liferay page design. Next, let’s get started with creating custom master page templates for the Clarity site.
+Congratulations! You’ve explored the different parts of Liferay page design. Next, let’s finish designing Clarity's custom master page templates.
 
 Next Up: [Designing Clarity’s Master Pages](./designing-claritys-master-pages.md)

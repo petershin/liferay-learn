@@ -32,6 +32,9 @@ You can customize the look and feel of the sign-in page as you would for a conte
 !!! note
     Changes to the sign-in utility page do not affect the sign-in portlet.
 
+!!! important
+    Starting from Liferay DXP 2024.Q3/GA132, both the *Email From* and *Password Reset Notification* settings have been removed from the sign in widget through a [beta feature flag](../../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags). They are now available at the instance level. To access these settings, open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and go to *Control Panel* &rarr; *Instance Settings* &rarr; *Email*. You can find the *Email Sender* and *Password Reset Notification* settings here.
+
 ## Create Account
 
 {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+`
@@ -53,6 +56,9 @@ The Forgot Password utility page contains the Forgot Password widget found under
 ![Create a forgot password utility page to override the one at the system-level.](./types-of-utility-pages/images/04.png)
 
 You can customize the look and feel of the Forgot Password page as you would for a content page. You can also create multiple create account utility pages per site, but you can use only one as the default.
+
+!!! important
+    Starting from Liferay DXP 2024.Q3/GA132, if you have enabled OpenID Connect or Facebook Connect, both these links don't appear on the sign-in, create account, or forgot password widgets when used on a utility page.
 
 !!! important
     Currently, the sign-in, create account, and forgot password utility pages are behind a beta feature flag. See [Beta Feature Flags](../../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags) for more information.

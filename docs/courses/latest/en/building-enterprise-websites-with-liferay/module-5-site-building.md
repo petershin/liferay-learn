@@ -1,17 +1,17 @@
 ---
 toc:
-- ./module-6-site-building/claritys-site-building-requirements.md
-- ./module-6-site-building/setting-up-claritys-site.md
-- ./module-6-site-building/configuring-the-clarity-site.md
-- ./module-6-site-building/adding-pages-to-claritys-site.md
-- ./module-6-site-building/understanding-page-design.md
-- ./module-6-site-building/designing-claritys-master-pages.md
-- ./module-6-site-building/creating-navigation-menus-for-claritys-master-pages.md
-- ./module-6-site-building/creating-custom-fragments-for-clarity.md
-- ./module-6-site-building/applying-claritys-brand-styling.md
+- ./module-5-site-building/claritys-site-building-requirements.md
+- ./module-5-site-building/setting-up-claritys-site.md
+- ./module-5-site-building/configuring-the-clarity-site.md
+- ./module-5-site-building/adding-pages-to-claritys-site.md
+- ./module-5-site-building/understanding-page-design.md
+- ./module-5-site-building/designing-claritys-master-pages.md
+- ./module-5-site-building/creating-navigation-menus-for-claritys-master-pages.md
+- ./module-5-site-building/creating-custom-fragments-for-clarity.md
+- ./module-5-site-building/applying-claritys-brand-styling.md
 uuid: b46186fd-6e49-4418-9b6f-b04710b36e4d
 ---
-# Module 6: Site Building
+# Module 5: Site Building
 
 !!! important "Webinar Note"
     This module was presented using slides for a live webinar audience. The formatting, presentation, and examples may differ from what is presented here as part of the course.
@@ -23,7 +23,7 @@ In the previous modules, we've seen how Clarity can leverage Liferay's user mana
 
 Throughout this module, you'll take on different Clarity personas and experience how Liferay's intuitive interface empowers them to implement site architecture, styling, and page design with speed and ease.
 
-![Build Clarity’s enterprise website.](./module-6-site-building/images/01.png)
+![Build Clarity’s enterprise website.](./module-5-site-building/images/01.png)
 
 In this module, you will learn how to:
 
@@ -38,4 +38,4 @@ In this module, you will learn how to:
 
 Before you start working on the Clarity site, let’s review some of their site building requirements to help focus and guide our lessons and exercises.
 
-Up First: [Clarity’s Site Building Requirements](./module-6-site-building/claritys-site-building-requirements.md)
+Up First: [Clarity’s Site Building Requirements](./module-5-site-building/claritys-site-building-requirements.md)

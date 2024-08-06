@@ -106,6 +106,6 @@ You can now explore Clarity's site to see how applying the theme has updated the
 
 ## Conclusion
 
-Congratulations, you've completed Module 6: Site Building. Throughout this module, you've finished setting up Clarity's site architecture and styling. Next, you'll learn about content authoring and management.
+Congratulations, you've completed Module 5: Site Building. Throughout this module, you've finished setting up Clarity's site architecture and styling. Next, you'll learn about content authoring and management.
 
 Up Next: [Module 7: Content Authoring and Management](../../module-7-content-authoring-and-management.md)

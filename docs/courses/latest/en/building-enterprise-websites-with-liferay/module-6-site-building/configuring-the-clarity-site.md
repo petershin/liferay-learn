@@ -55,40 +55,74 @@ Enabling the accessibility menu provides users access to these configurations,
 
 Accessibility is a core principle that should be woven into the design and development of any public site. And just like Clarity offers premium eyewear for all, their website should be equally inclusive. Enabling the accessibility menu is a good start, but we'll revisit this topic throughout the course.
 
-## Exercise One: Adding Users to the Site
+## Exercise: Adding Users to a Site
 
-1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Users and Organizations*.
+<!-- Exercise 4b -->
 
-1. Click Walter Douglas to begin editing his profile.
+By default, when you create a public site, all unauthenticated visitors can view its public pages and content. For authenticated site members, you can grant additional privileges using site-scoped roles. While most users in your training workspace are already members of the enterprise website, Christian Carter and Harper Robert are not.
 
-1. Go to the *Memberships* tab, click *Select* for Sites, and select *Clarity Public Enterprise Website*.
+Here you'll add them to the site as Ian Miller.
 
-1. Click *Save*.
+To do this,
 
-1. Repeat this step for Clarity's other users.
+1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and select *Clarity Public Enterprise Website* in the right panel.
 
-Great! Now the Clarity personas are members of the new site. Next, we'll log in as Walter Douglas, to configure the new site.
+1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)), expand *People*, and select *Memberships*.
 
-## Exercise Two: Configuring the Site
+1. Click *New*.
 
-To configure the site settings,
+1. Select *Christian Carter* and *Harper Roberts*.
 
-1. Sign in as Walter Douglas.
+1. Click *Done*.
 
-   Email: `walter.douglas@clarityvisionsolutions.com`
-   Password: `learn`
+   Great! Now both users are members of the site and you can assign site roles to them.
+
+   ![Now all 5 Clarity's personas are members of the site.](./configuring-the-clarity-site/images/03.png)
+
+1. Click *Actions* (![Actions Button](../../images/icon-actions.png)) for Christian Carter and select *Assign Roles*.
+
+1. Select the *Site Content Contributor* role and click *Done*.
+
+   This enables Christian Carter to make contributions to the Clarity's website content.
+
+1. Repeat steps 6-7 to assign the Site Content Contributor role to Harper Roberts as well.
+
+   <!--TASK: Fix bootcamp step.-->
+
+Next, you'll begin configuring Clarity's enterprise website to ensure it is public and accessible to their target audience.
+
+<!-- Great! Now the Clarity personas are members of the new site. Next, we'll log in as Walter Douglas, to configure the new site. -->
+
+## Exercise: Configuring the Site
+
+<!-- Exercise 4c -->
+
+As mentioned previously, the purpose of Clarity's site is to increase brand awareness, showcase their products, and convert visitors to customers. To this end, Clarity wants to
+
+* Allow guest users to freely register as site members.
+* Set their site's virtual host.
+* Configure their language settings.
+* Enable Liferay's OOTB accessibility tools.
+
+Here you'll configure these settings as Clarity's IT Manager, Ian Miller.
+
+To do this,
+
+1. Ensure you're in the *Clarity Public Enterprise Website*.
 
 1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)), expand *Configuration*, and select *Site Settings*.
+
+   ![Go to Site Settings to configure the site.](./configuring-the-clarity-site/images/04.png)
 
 1. Go to *Site Configuration* &rarr; *Details*.
 
 1. Add this description:
 
-   > Distribute Clarity, See Success: Join our network and offer your customers premium eyewear solutions backed by sustainable innovation and market expertise.
+   > Elevate Your Brand with Premium Eyewear: Discover premium craftsmanship, innovative lenses, and designs that help your brand stand out.
 
-1. Set membership type to *Open*. This allows guests to freely become site members.
+1. Set membership type to *Open*. This allows guests to freely become site members and access the site's public pages and content.
 
-   ![Set the site’s membership type to Open.](./configuring-the-clarity-site/images/03.png)
+   ![Set the site’s membership type to Open.](./configuring-the-clarity-site/images/05.png)
 
 1. Click *Save*.
 
@@ -96,19 +130,35 @@ To configure the site settings,
 
 1. Set the friendly URL to `/clarity`.
 
+   This URL is used by site pages and is appended to `http://localhost:8080/web`.
+
 1. Set the site’s virtual host for the default language to `www.clarityvisionsolutions.com`.
 
-1. Click the *Add* button (![Add Button](../../images/icon-add.png)) to add an extra virtual host for Spanish with the URL `www.solucionesdeclaridad.com`.
+   Setting the virtual host connects a domain name (e.g., `www.helloworld.com`) to a site.
 
-   ![Add a virtual host for Spanish.](./configuring-the-clarity-site/images/04.png)
+   !!! note
+       Before setting the virtual host in Liferay, you must contact your provider and set the DNS name to point to the IP address for your Liferay DXP instance.
+
+1. Click *Add* (![Add Button](../../images/icon-add.png)) to add an extra virtual host for Spanish with the URL `www.solucionesdeclaridad.com`.
+
+   This way their Spanish speaking audience can access the site using a localized domain name.
+
+   ![Add a virtual host for Spanish.](./configuring-the-clarity-site/images/06.png)
 
 1. Click *Save*.
 
 1. Return to the *Site Settings* page and go to *Localization*.
 
-1. Define custom languages for your site. For now, Clarity only wants to support English (United States), and Spanish (Spain) on their site. Use the left arrow button (![Left Arrow Button](../../images/icon-angle-left.png)) to move all other languages from the Current Column to the Available column.
+1. Click *Define a custom default language* and use the *left arrow* button (![Left Arrow Button](../../images/icon-caret-left.png)) to remove all languages except for English and Spanish.
 
-   ![Define a custom language configuration.](./configuring-the-clarity-site/images/05.png)
+   <!-- TASK: Add icon -->
+
+   For now, Clarity only wants to support English (United States) and Spanish (Spain) for content localization on their site.
+
+   ![Define a custom language configuration.](./configuring-the-clarity-site/images/07.png)
+
+   !!! tip
+       To select multiple languages at a time, hold the CTRL key.
 
 1. Click *Save*.
 
@@ -116,11 +166,48 @@ To configure the site settings,
 
 1. Check the box to enable the accessibility menu.
 
-   ![Enable the accessibility menu.](./configuring-the-clarity-site/images/06.png)
+   This means users can press Tab twice and hit Enter to access a menu for configuring their accessibility settings.
 
-1. Click *Save*. Now users can press Tab twice and hit Enter to access the menu and configure their accessibility settings.
+   ![Enable the accessibility menu for the website.](./configuring-the-clarity-site/images/08.png)
 
-Together, these configurations help Clarity’s enterprise website fulfill its intended purpose: promoting their products to their international audience. Liferay provides many other site configurations, including cookie handling, session timeouts, and SEO. We’ll revisit these settings in this module, but for now, let’s move on to implementing Clarity’s site hierarchy.
+1. Click *Save*.
+
+Together, these configurations help Clarity’s enterprise website fulfill its intended purpose: promoting their products to their international audience. Liferay provides many other site configurations, including cookie handling, session timeouts, and SEO. For now, these configurations satisfy Clarity's basic needs.
+
+Before moving further, let's update the default home page and landing page for Clarity's instance.
+
+### Configuring the Instance's Default Home and Landing Pages
+
+Currently, when you visit `http://localhost:8080/`, you're directed to the Clarity Vision Solutions site, instead of Clarity Public Enterprise Website. Here you'll update the default home and landing pages for your instance as the Clarity Admin user.
+
+To do this,
+
+1. Sign in as the Clarity Admin user:
+
+   * Username: `admin@clarityvisionsolutions.com`
+   * Password: `learn`
+
+1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Instance Settings*.
+
+1. Under Platform, click *Instance Configuration* and go to the *General*  tab.
+
+1. For Home URL, enter `/web/clarity`.
+
+   This sets the default page displayed when you access `http://localhost:8080/`.
+
+1. For Default Landing Page, enter `/web/clarity`.
+
+   This specifies the default page to which users are redirected after logging in.
+
+1. For Default Logout Page, enter `/web/clarity`.
+
+   This defines the default page to which users are redirected after signing out.
+
+   ![Configure the URLs for each navigation field.](./configuring-the-clarity-site/images/09.png)
+
+1. Click *Save*.
+
+Now when users visit `http://localhost:8080/` and log out or log in, they're directed to the home page for Clarity's public enterprise website.
 
 ## Conclusion
 

@@ -21,21 +21,39 @@ Liferay also provides site initializers for quickly duplicating site structures,
 
 Currently, Clarity is only focused on creating a single public site. But if they ever want to provide partners with a white labeling service that allows them to spin up their own “Clarity Sites” with their own branding, site templates could help simplify and accelerate provisioning.
 
-## Exercise: Creating the Site
+## Exercise: Creating a Site
 
-Now, it's your turn to step into the role of Walter Douglas and start building the site!
+<!-- Exercise 4a -->
+
+The training workspace includes a prebuilt site, Clarity Public Enterprise Website. However, to see what the site creation process looks like, let's create a new test site as Ian Miller.
 
 To do this,
 
-1. While logged in as Clarity's admin user, open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Sites*.
+1. Sign in as Ian Miller, Clarity's IT manager.
 
-1. Click *New* and select *Blank Site*.
+   * Username: `ian.miller@clarityvisionsolutions.com`
+   * Password: `learn`
 
-1. Enter *Clarity Public Enterprise Website* for name and click *Add*.
+   !!! note
+       So far we've used Clarity's administrator user, which has complete control over the Liferay instance. In practice, it's best to limit the use of such high-level accounts to ensure optimal security.
 
-   ![Name the site Clarity Public Enterprise Website and click Add.](./setting-up-claritys-site/images/01.png)
+1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Sites*.
 
-This creates a site and redirects you to its configuration page. Let’s take a quick tour to familiarize ourselves with Liferay's site building UI.
+1. Click *New*.
+
+   Here you can select from available templates and initializers.
+
+1. Select the *Blank Site* template.
+
+1. Enter `Clarity Distributor Portal` for name.
+
+1. Click *Add*.
+
+   This creates a new empty site and redirects you to its configuration page.
+
+Clarity could use the new site to build a channel for selling products to their distributors. But for this course, we'll focus on optimizing Clarity's public enterprise website.
+
+Next, you'll learn about site membership and how you can grant users site specific roles. But before that, let's take a quick tour to familiarize ourselves with Liferay's site building UI.
 
 ## Exploring the Site Building UI
 

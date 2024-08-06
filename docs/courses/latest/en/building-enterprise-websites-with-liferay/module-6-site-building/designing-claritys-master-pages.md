@@ -72,57 +72,36 @@ Once added to a page, you configure each fragment’s styling and behavior. For 
 
 We’ll revisit these configurations later in this module. But for now, let’s use these page elements to wireframe the primary and secondary master page templates.
 
-## Exercise One: Creating the Primary Master Page
+## Exercise: Designing Clarity's Master Pages
 
-To begin, create the primary master page template for Clarity’s public pages.
+<!-- Exercise 6c -->
 
-While logged in as Walter Douglas,
+In Liferay, designing page headers and footers involves creating master page templates. These templates are designed using the same tools and elements as pages.
+
+The training workspace provides the *Primary Master Page* template. While this template includes the footer, it does not include a header. Here you'll add the header as Walter Douglas.
+
+To do this,
 
 1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)), expand *Design*, and click *Page Templates*.
 
-1. In the Masters tab, click *New*.
+1. In the Masters tab, click the *Primary Master Page* template to begin editing it.
 
-1. For name, enter `Primary Master Page` and click *Save*.
+1. Open the *Fragments and Widgets* tab (![Fragments and Widgets](../../images/icon-plus.png)) in the side panel.
 
-   ![Create the Primary Master Page.](./designing-claritys-master-pages/images/07.png)
+1. Add a container to the top of the template. This container is for the page header.
 
-This creates a blank template and directs you to its edit page so you can begin designing it.
-
-## Exercise Two: Wireframing the Header and Footer
-
-Now that the blank template exists, let’s begin wireframing it. A website wireframe is a basic blueprint, focusing on layout and functionality, before integrating styling and content. By default, each master page includes a Drop Zone element. This represents the central content area of a page that is editable to page designers once the template is applied. Here you’ll wireframe the header and footer for the primary master page.
-
-### Creating the Primary Header
-
-While editing the master page template,
-
-1. Open the *Fragments and Widgets* tab (![Fragments and Widgets Tab](../../images/icon-plus.png)) in the side panel.
-
-1. Add three separate containers to the template. These are for the three major areas of the page (i.e., the header, body, and footer).
-
-   !!! tip
+   !!! note
        When designing a page, it’s recommended to always put elements into their own containers. This can help provide more control over styling.
 
-   ![Add three separate containers to the template.](./designing-claritys-master-pages/images/08.png)
+1. Go to the *Browser* tab in the side panel (![Browser Tab](../../images/icon-hierarchy.png)), double-click the name of the container and rename it `Page Header`.
 
-   <!--Q: Should I add a tip about duplicating fragments by pressing ctrl+d? -->
+   !!! note
+       Naming fragments adds a custom `data-name` attribute to the `<div>` that you can use in your JavaScript and CSS. This can help bring clarity to complex page structures and provide more control over your site.
 
-1. Go to the *Browser* tab (![Browser Tab](../../images/icon-hierarchy.png)) in the side panel, double-click the name of each container and rename them `Page Header`, `Page Body`, and `Page Footer`.
-
-   !!! tip
-       Naming fragments adds a custom `data-name` attribute to the `<div>` that you can use in your JavaScript and CSS. This can help bring clarity to complex page structures and provide more control over your site. <!--IMPROVE-->
-
-   ![Rename the containers Page Header, Page Body, and Page Footer.](./designing-claritys-master-pages/images/09.png)
-
-1. Drag and drop the *Drop Zone* element into the Page Body container.
-
-1. Select each container and configure this setting:
-
-   | Tab     | Setting         | Value       |
-   |:--------|:----------------|:------------|
-   | General | Container Width | Fixed Width |
-
-   ![Set the containers to Fixed Width.](./designing-claritys-master-pages/images/10.png)
+   <!--
+   !!! note
+       By default, containers and grids automatically adjust to the size of their content, like the Header Navigation container adjusted to the dimensions of the menu display fragment.
+   -->
 
 1. Add two separate containers to the Page Header container and name them `Header Announcement Bar` and `Header Navigation Bar`.
 
@@ -130,47 +109,50 @@ While editing the master page template,
 
    * **Header Navigation Bar**: This container is for essential elements, including Clarity's logo, main navigation menu, search bar, and user menu.
 
-   ![Add two separate containers to the Page Header container and name them Header Announcement Bar and Header Navigation Bar.](./designing-claritys-master-pages/images/11.png)
+   !!! tip
+       To duplicate a page element while editing, press CTRL + D.
 
-1. Select the *Header Announcement Bar* and configure these settings:
+   ![Add two containers in the Page Header container.](./designing-claritys-master-pages/images/07.png)
 
-   | Tab     | Setting          | Value                     |
-   |:--------|:-----------------|:--------------------------|
-   | General | Content Display  | Flex Row                  |
-   | General | Align Items      | Center                    |
-   | General | Justify Content  | Center                    |
-   | Styles  | Padding          | Spacer 3 (top and bottom) |
-   | Styles  | Background Color | Primary                   |
+1. Select the *Header Announcement Bar* and configure these settings in the configuration side panel:
 
-   <!--
-   1rem = Spacer 3
-   -->
+   | Tab     | Setting           | Value                     |
+   |:--------|:------------------|:--------------------------|
+   | General | Content Display   | Flex Row                  |
+   | General | Align Items       | Center                    |
+   | General | Justify Content   | Center                    |
+   | Styles  | Spacing > Padding | Spacer 2 (top and bottom) |
 
-   For now, leave this container empty and toggle its visibility (![View Button](../../images/icon-preview.png)); you’ll revisit it in Module 7.
+   ![Configure the container's settings in the configuration side panel.](./designing-claritys-master-pages/images/08.png)
+
+   !!! note
+       Use the green boxes to add padding. This adds space between the container and its contents.
+
+   You'll see these settings take effect when you add page elements to the container.
+
+   For now, leave this container empty and toggle its visibility (![Visibility Icon](../../images/icon-preview.png)); you’ll revisit it in a later exercise.
 
 1. Select the *Header Navigation Bar* container and configure these settings:
 
-   | Tab     | Setting         | Value                                                    |
-   |:--------|:----------------|:---------------------------------------------------------|
-   | General | Content Display | Block                                                    |
-   | Styles  | Padding         | Spacer 3 (top and bottom) <br> Spacer 6 (left and right) |
+   | Tab     | Setting           | Value                                                    |
+   |:--------|:------------------|:---------------------------------------------------------|
+   | General | Container Width   | Fixed Width                                              |
+   | Styles  | Spacing > Padding | Spacer 3 (top and bottom) <br> Spacer 6 (left and right) |
 
-   <!--
-   1rem = Spacer 3
-   5rem = Spacer 6/7?
-   -->
+   ![Add padding to Header Navigation Bar.](./designing-claritys-master-pages/images/09.png)
 
-   ![Adding padding to Header Navigation Bar.](./designing-claritys-master-pages/images/12.png)
+1. Add a *Grid* element to the Header Navigation Bar container.
 
-1. Add a grid element to the Header Navigation Bar container and widen the center module by dragging the dividers outward one space on each side.
+1. Widen the center module by dragging the dividers outward one space on each side.
 
-   ![Add a grid to the Header Navigation Bar and widen the center module.](./designing-claritys-master-pages/images/13.gif)
+   ![Widen the center module by dragging the dividers outward one space on each side.](./designing-claritys-master-pages/images/10.png)
 
 1. Select the grid and configure these settings:
 
-   | Tab     | Setting            | Value  |
-   |:--------|:-------------------|:-------|
-   | General | Vertical Alignment | Middle |
+   | Tab     | Setting            | Value   |
+   |:--------|:-------------------|:--------|
+   | General | Vertical Alignment | Middle  |
+   | General | Overflow           | Visible |
 
 1. Add a container to each grid area and name them Header Branding, Header Navigation, and Header User Actions.
 
@@ -180,16 +162,14 @@ While editing the master page template,
 
    * **Header User Actions**: This container is for the search bar and user login/menu.
 
-   ![Add a container to each grid area and name them Header Branding, Header Navigation, and Header User Actions.](./designing-claritys-master-pages/images/14.png)
-
-   <!--TASK: UPDATE IMAGE -->
+   ![Add a container to each grid area and name them Header Branding, Header Navigation, and Header User Actions.](./designing-claritys-master-pages/images/11.png)
 
 1. Select the *Header Branding* container and configure these settings:
 
    | Tab     | Setting         | Value    |
    |:--------|:----------------|:---------|
    | General | Content Display | Flex Row |
-   | General | Align Items     | Start    |
+   | General | Align Items     | Center   |
    | General | Justify Content | Start    |
 
 1. Select the *Header Navigation* container and configure these settings:
@@ -205,237 +185,35 @@ While editing the master page template,
    | Tab     | Setting         | Value    |
    |:--------|:----------------|:---------|
    | General | Content Display | Flex Row |
-   | General | Align Items     | End      |
+   | General | Align Items     | Center   |
    | General | Justify Content | End      |
 
 1. Add these fragments to the containers:
 
-   | Container           | Fragment     |
-   |:--------------------|:-------------|
-   | Header Branding     | Image        |
-   | Header Navigation   | Menu Display |
+   | Container           | Fragment            |
+   |:--------------------|:--------------------|
+   | Header Branding     | Image               |
+   | Header Navigation   | Menu Display        |
+   | Header User Actions | Login and User Menu |
 
-   Leave the Header User Actions container empty for now, since no out of the box fragments fit Clarity’s designs for the search bar or login button. You’ll create these fragments later.
+   !!! note
+       The "Login and User Menu" fragment is a custom fragment provided in the Clarity Components fragment set. In a later lesson, you'll create a custom fragment for the header's search button.
 
-   ![Add these fragments to their respective containers.](./designing-claritys-master-pages/images/15.png)
+![Add and configure these page elements to finish wireframing the master page's header.](./designing-claritys-master-pages/images/12.png)
 
-Great! You've started defining the structure for Clarity's master page template.
+For now, this completes the wireframing for the primary master page. You'll revisit it again in the following lessons to update its menus and add both the search bar and login button. Next, you'll configure the template's allowed fragments.
 
-The size of the navigation bar and the contents of the menu don't match Clarity's designs, but these issues will be resolved in future lessons. For now, move on to creating Clarity's primary footer.
+## Exercise: Configuring Allowed Fragments
 
-!!! note
-    By default, containers and grids automatically adjust to the size of their content, like the Header Navigation container adjusted to the dimensions of the menu display fragment.
-
-### Creating the Primary Footer
-
-While editing the primary master page,
-
-1. Add containers and grids to the Page Footer container to create this structure:
-
-   * Page Footer
-      * Footer Branding
-      * Footer Navigation
-         * Grid
-      * Footer Legal
-        * Grid
-
-   ![Add containers and grids to the Page Footer container to create this structure.](./designing-claritys-master-pages/images/16.png)
-
-   <!-- TASK: Update img -->
-
-1. Select these layout elements and configure these settings:
-
-   **Page Footer**
-
-   | Tab     | Setting         | Value                     |
-   |:--------|:----------------|:--------------------------|
-   | General | Content Display | Block                     |
-   | Styles  | Padding         | Spacer 6 (left and right) |
-
-   <!--TASK: Add background color -->
-
-   <!--
-   5rem = Spacer 6/7?
-   -->
-
-   **Footer Branding**
-
-   | Tab     | Setting         | Value                     |
-   |:--------|:----------------|:--------------------------|
-   | General | Content Display | Flex Row                  |
-   | General | Align Items     | Center                    |
-   | General | Justify Content | Center                    |
-   | Styles  | Padding         | Spacer 5 (top and bottom) |
-
-   <!--
-   3rem = Spacer 5
-   -->
-
-   **Footer Navigation**
-
-   | Tab     | Setting         | Value             |
-   |:--------|:----------------|:------------------|
-   | General | Content Display | Block             |
-   | Styles  | Padding         | Spacer 4 (bottom) |
-
-   <!--
-   2rem = Spacer 4?
-   -->
-
-   **Footer Navigation > Grid**
-
-   | Tab     | Setting            | Value |
-   |:--------|:-------------------|:------|
-   | General | Number of Modules  | 4     |
-   | General | Show Gutter        | No    |
-   | General | Vertical Alignment | Top   |
-
-   **Footer Legal**
-
-   | Tab     | Setting         | Value                     |
-   |:--------|:----------------|:--------------------------|
-   | General | Content Display | Flex Row                  |
-   | General | Align Items     | Center                    |
-   | General | Justify Content | Center                    |
-   | Styles  | Padding         | Spacer 4 (top and bottom) |
-
-   **Footer Legal > Grid**
-
-   | Tab     | Setting            | Value  |
-   |:--------|:-------------------|:-------|
-   | General | Number of Modules  | 2      |
-   | General | Show Gutter        | Yes    |
-   | General | Vertical Alignment | Middle |
-
-1. Add a container to each area of the Footer Navigation grid and name them Products Navigation, About Us Navigation, Resources Navigation, and Get In Touch Navigation.
-
-   Each container is for footer navigation menus.
-
-   ![Add a container to each grid area and name them Products Navigation, About Us Navigation, Resources Navigation, and Get In Touch Navigation.](./designing-claritys-master-pages/images/17.png)
-
-1. Select each of these containers and configure the following settings:
-
-   **Products Navigation**
-
-   | Tab     | Setting         | Value                                                    |
-   |:--------|:----------------|:---------------------------------------------------------|
-   | General | Content Display | Block                                                    |
-   | Styles  | Padding         | Spacer 3 (top and bottom) <br> Spacer 4 (left and right) |
-   | Styles  | Margin          | Spacer 2 (right)                                         |
-
-   <!--
-   2rem = Spacer 4?
-   1.5rem = Spacer 3?
-   1.25rem = Spacer 2?
-   -->
-
-   **About Us Navigation**
-
-   | Tab     | Setting         | Value                                                    |
-   |:--------|:----------------|:---------------------------------------------------------|
-   | General | Content Display | Block                                                    |
-   | Styles  | Padding         | Spacer 3 (top and bottom) <br> Spacer 4 (left and right) |
-   | Styles  | Margin          | Spacer 2 (left and right)                                |
-
-   <!--
-   2rem = Spacer 4?
-   1.5rem = Spacer 3?
-   1.25rem = Spacer 2?
-   -->
-
-   **Resources Navigation**
-
-   | Tab     | Setting         | Value                                                    |
-   |:--------|:----------------|:---------------------------------------------------------|
-   | General | Content Display | Block                                                    |
-   | Styles  | Padding         | Spacer 3 (top and bottom) <br> Spacer 4 (left and right) |
-   | Styles  | Margin          | Spacer 2 (left and right)                                |
-
-   <!--
-   2rem = Spacer 4?
-   1.5rem = Spacer 3?
-   1.25rem = Spacer 2?
-   -->
-
-   **Get In Touch Navigation**
-
-   | Tab     | Setting         | Value                                                    |
-   |:--------|:----------------|:---------------------------------------------------------|
-   | General | Content Display | Block                                                    |
-   | Styles  | Padding         | Spacer 3 (top and bottom) <br> Spacer 4 (left and right) |
-   | Styles  | Margin          | Spacer 2 (left)                                          |
-
-   <!--
-   2rem = Spacer 4?
-   1.5rem = Spacer 3?
-   1.25rem = Spacer 2?
-   -->
-
-1. Add a container to each area of the Footer Legal grid and name them Copyright and Legal Links.
-
-1. Select each of these containers and configure the following settings:
-
-   **Copyright**
-
-   | Tab     | Setting         | Value    |
-   |:--------|:----------------|:---------|
-   | General | Content Display | Flex Row |
-   | General | Align Items     | End      |
-   | General | Justify Content | End      |
-
-   **Legal Links**
-
-   | Tab     | Setting         | Value    |
-   |:--------|:----------------|:---------|
-   | General | Content Display | Flex Row |
-   | General | Align Items     | Start    |
-   | General | Justify Content | Start    |
-
-1. Add these fragments to the footer containers:
-
-   | Container               | Fragments                         |
-   |:------------------------|:----------------------------------|
-   | Footer Branding         | Image                             |
-   | Products Navigation     | Heading, Menu Display             |
-   | About Us Navigation     | Heading, Menu Display             |
-   | Resources Navigation    | Heading, Menu Display             |
-   | Get In Touch Navigation | Heading, Menu Display             |
-   | Footer Legal            | HTML (left), Menu Display (right) |
-
-   <!-- For now, leave the Footer Legal container empty. You'll add a custom fragment to it in a later lesson. -->
-
-   <!--TASK: UPDATE FOOTER LEGAL-->
-
-   ![Add these fragments to the footer containers.](./designing-claritys-master-pages/images/18.png)
-
-   <!--TASK: UPDATE IMAGE -->
-
-1. Double click the headings to update their text to Products, About Us, Resources, and Get In Touch.
-
-1. Double click the HTML element and replace its content with this:
-
-   ```html
-   <p class="mb-0">
-      &copy; 2024 Clarity Vision Solutions, INC.
-   </p>
-   ```
-
-1. Select all of the Page Footer menu displays and configure these settings:
-
-   | Tab     | Setting       | Value   |
-   |:--------|:--------------|:--------|
-   | General | Display Style | Stacked |
-   | General | Sublevels     | 0       |
-
-For now, this completes the wireframing for the primary master page. You'll revisit it again in the following lessons to update its menus and add both the search bar and login button. Now you can configure the template's allowed fragments.
-
-## Exercise Three: Configuring Allowed Fragments
+<!-- Exercise 6d -->
 
 When editing a master page template, you can configure which fragments are allowed in pages that use the template. This helps ensure consistent design and prevents users from adding incorrect elements to pages that use the template.
 
-While editing the master page template,
+To ensure users only add the appropriate fragments to pages with the Primary Master Page template, Clarity wants to limit the available fragments. Here you'll configure the allowed fragments for the Primary Master Page template as Walter Douglas.
 
-1. Click *Configured Allowed Fragments*.
+To do this,
+
+1. While editing the Primary Master Page template, click *Configure Allowed Fragments* in the Page Body container.
 
 1. Uncheck these fragments to prevent users from adding them to pages using the template:
 
@@ -446,63 +224,83 @@ While editing the master page template,
    * Knowledge Base Navigation (fragment)
    * Product (fragment set)
 
-   ![Uncheck these fragments to prevent users from adding them to pages using the template.](./designing-claritys-master-pages/images/19.png)
+   ![Uncheck these fragments to prevent users from adding them to pages using the template.](./designing-claritys-master-pages/images/13.png)
 
 1. Click *Save*.
 
 1. Click *Publish Master*.
 
+1. Click *Ok* in the popup stating:
+
+   > Changes made to this master are going to be propagated to all page templates, display page templates, and pages using it. Are you sure you want to proceed?
+
 Now when the template is applied to a page, users can only add the allowed fragments to the page. But before we apply the template to any pages, let’s create the secondary master page that Clarity wants to use for their sign in and utility pages.
 
-## Exercise Four: Creating and Wireframing the Secondary Master Page
+## Exercise: Creating a Secondary Master Page
 
-Since the secondary master page is a simplified version of the primary master page, you can copy it and subtract the elements you don’t want.
+<!-- Exercise 6e -->
 
-While in the Masters tab of the Page Templates application,
+Clarity needs a simplified master page for pages that shouldn't include the announcement banner and detailed footer. Here you'll create that template as Walter Douglas.
 
-1. Click the *Action* button for the primary master page and select *Make a Copy* &rarr; *Master Page*.
+To do this,
 
-   ![Copy the master page template.](./designing-claritys-master-pages/images/20.png)
+1. While in the Masters tab of the Page Templates application, click *Actions* (![Actions Button](../../images/icon-actions.png)) for the Primary Master Page and select *Make a Copy* &rarr; *Master Page*.
 
-1. Click the *Action* button ![Actions Button](../../images/icon-actions.png) for the copy and select *Rename*.
+   ![Make a copy of the Primary Master Page template.](./designing-claritys-master-pages/images/14.png)
+
+1. Click *Actions* (![Actions Button](../../images/icon-actions.png)) for the copy and select *Rename*.
 
 1. Enter `Secondary Master Page` and click *Save*.
 
-1. Begin editing the template and remove these containers along with their contents:
+1. Begin editing the template and remove these containers:
 
    * Header Announcement Bar
    * Footer Branding
    * Footer Navigation
 
-   ![Remove the unneeded containers and their contents.](./designing-claritys-master-pages/images/21.png)
+   ![Remove Header Announcement Bar, Footer Branding and Footer Navigation containers from the Primary Master Page template.](./designing-claritys-master-pages/images/15.png)
 
 1. Click *Publish Master*.
 
-You can now apply both master pages to their respective pages.
+Great! Clarity now has both a primary and secondary master page template. You can now apply both master pages to their respective pages.
 
-## Exercise Five: Applying the Master Pages
+## Exercise: Applying the Master Pages
 
-After creating a page, you can always update its master page. To do this,
+<!-- Exercise 6f -->
 
-1. Begin editing a content page, display page, or utility page.
+When you create a content page or display page template, you must select a master page. While most pages in your training workspace already use the correct master page, several pages do not.
 
-1. Go to the *Page Design Options* tab (![Page Design Options Tab](../../images/icon-format.png)) in the left side panel.
+Here you'll configure these pages assigning them the correct master page as Walter Douglas.
 
-1. Select the appropriate *master page*:
+To do this,
 
-   * Apply the primary master page to these pages.
-      * Content Pages: About Us, Blog, Careers, Contact Us, FAQ, Home, Open Positions, Product Detail, Product List, Products, Search
-      * Display Pages: Blog Post, FAQ Detail, General Info, Job Opening Detail, Leadership Profile
+1. Begin editing one of these pages.
 
-   * Apply the secondary master page to these pages.
-      * Content Pages: Sign In
-      * Utility Pages: 404, 500
+   * Home (Content Page)
+   * Sign In (Content Page)
+   * 404 Error (Utility Page)
+   * 500 Error (Utility Page)
+   * Leadership Profile (Display Page Template)
 
-   ![Apply the appropriate master page template.](./designing-claritys-master-pages/images/22.png)
+   To access the utility pages, open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)), expand *Site Builder*, click *Pages*, and go to the *Utility Pages* tab.
+
+   To access the display page template, open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)), expand *Design*, click *Page Templates* and go to the *Display Page Templates* tab.
+
+1. Go to the *Page Design Options* tab (![Page Design Options](../../images/icon-format.png)) in the left side panel.
+
+1. Select the appropriate *master page*.
+
+   * **Home**: Primary Master Page
+   * **Sign In**: Secondary Master Page
+   * **404 Error**: Secondary Master Page
+   * **500 Error**: Secondary Master Page
+   * **Leadership Profile**: Secondary Master Page
+
+   ![Apply the appropriate master page template.](./designing-claritys-master-pages/images/16.png)
 
 1. Click *Publish*.
 
-1. Repeat this process, editing each content page, display page, and utility page.
+1. Repeat this process until you've finished applying the master pages.
 
 Once finished, each page should be linked to the correct master page template. Now any changes made to the templates are automatically applied to each page using it.
 

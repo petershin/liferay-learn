@@ -97,6 +97,8 @@ Together, these client extensions can provide frontend resources to site pages f
 !!! note “Themes vs. Frontend Client Extensions”
     For site styling, leverage frontend client extensions with master pages and style books. By externalizing customizations, client extensions reduce upgrade risks and complexity associated with custom themes. Additionally, this approach is compatible with all deployment options (Self-Hosted, PaaS, SaaS).
 
+<!--TASK: Note additional client extensions, note token definitions-->
+
 ### Individual Page Element Styles
 
 When configuring individual page elements, you can apply custom styling in the Styles tab. Here, you can enter values directly, or use available stylebook tokens. Additionally, you can apply custom CSS to individual page elements in the Advanced tab. Together, these configurations provide a convenient way to override styling for individual instances of an element without affecting others of the same type. Applying styles in this way is similar to inline styling, though with the convenience of Liferay’s visual page editor.

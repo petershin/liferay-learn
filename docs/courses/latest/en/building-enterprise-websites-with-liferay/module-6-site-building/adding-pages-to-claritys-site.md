@@ -9,8 +9,6 @@ In this lesson, you’ll use different page types to implement Clarity’s site 
 
 ![Clarity's website development team has produced this site map for their initiative.](./adding-pages-to-claritys-site/images/01.png)
 
-<!--TASK: Update img -->
-
 This site structure includes content pages, display pages, and utility pages.
 
 ## Content Pages
@@ -23,6 +21,8 @@ Content pages are used to create content-rich, visually engaging experiences. Wi
 
 !!! tip “Content Pages vs. Widget Pages”
     Liferay also provides widget pages, but this course focuses on building user experiences with content pages. Content pages provide superior flexibility and integration with Liferay’s latest content and personalization features, including fragments, collections, segmentation, and client extensions. Widget pages do not support these features.
+
+<!--TASK: Clarify that if you're working in an existing site with widget pages, you can convert them to content pages. -->
 
 <!--TASK:
 ### Parent and Child Pages
@@ -52,64 +52,68 @@ Utility pages handle specific functions within a site. Currently, you can use th
 
 <!--TASK: Update img -->
 
-## Exercise One: Adding Content Pages
+## Exercise: Adding Content Pages
 
-While logged in as Walter Douglas,
+<!-- Exercise 6a -->
+
+The training workspace includes most of the pages Clarity needs for their site hierarchy, but it is missing the *FAQ* content page and the *Leadership Profile* display page.
+
+Here you'll add the missing content page as Clarity's web developer, Walter Douglas.
+
+To add the FAQ content page,
+
+1. Sign in as Walter Douglas.
+
+   * Email: `walter.douglas@clarityvisionsolutions.com`
+   * Password: `learn`
+
+   !!! note
+       As a web developer, Walter Douglas has the site administrator role and perform most actions within the enterprise website.
 
 1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)), expand *Site Builder*, and click *Pages*.
 
 1. In the Static Pages tab, click *New* and select *Page*.
 
-   ![Add a page.](./adding-pages-to-claritys-site/images/05.png)
+   ![Add a page in the Clarity website.](./adding-pages-to-claritys-site/images/05.png)
 
-1. Select the *Blank* template.
+1. Select the *Primary Master Page* template.
 
    !!! note
-       This applies a basic header and footer to an empty content page.
+       This applies an incomplete template provided by the training workspace. You'll complete this template in later exercises.
 
-   ![Select the Blank template.](./adding-pages-to-claritys-site/images/06.png)
+   ![Select the Primary Master Page template to set the page's default layout.](./adding-pages-to-claritys-site/images/06.png)
 
-1. For name, enter `Home` and click *Add*.
+1. For name, enter `FAQ` and click *Add*.
 
    This creates a blank content page and directs you to Liferay’s page editor UI. Here you can access all page building tools and configuration options.
 
-1. Leave the page blank and click *Publish*.
+   <!--TASK: Assess whether users should add the FAQ to a navigation menu here instead of later.-->
 
-   ![Leave the page blank and click Publish.](./adding-pages-to-claritys-site/images/07.png)
+1. For now, leave the page blank and click *Publish*.
 
-1. Repeat this process for these pages:
+   This is the final content page that Clarity needs for their site structure. But they need to reorganize some pages to create the desired hierarchy.
 
-   * Sign In
-   * Contact Us
-   * About Us
-   * Products
-   * Product List
-   * Product Detail
-   * Blog
-   * FAQ
-   * Careers
-   * Open Positions
-   * Search
+1. Drag and drop *Product Detail* onto *Product List* and then drag and drop *Product List* onto *Products*.
 
-   ![Add these content pages.](./adding-pages-to-claritys-site/images/08.png)
+   This creates a hierarchical relationship between these pages.
 
-1. Drag and drop *Open Positions* onto *Careers* to make it a child of the Careers page.
+   ![Create a hierarchical relationship between Clarity's product pages.](./adding-pages-to-claritys-site/images/07.png)
 
-   ![Drag and drop Open Positions onto the Careers page.](./adding-pages-to-claritys-site/images/09.gif)
+1. Drag and drop *Open Positions* onto *Careers*.
 
-   <!--TASK: Update Gif -->
+With these pages in place, let's create the final part of Clarity's site structure: a display page for their leadership profiles.
 
-1. Repeat this step to create this hierarchy: Products > Product List > Product Detail.
+## Exercise: Adding Display Page Templates
 
-   ![Create this hierarchy](./adding-pages-to-claritys-site/images/10.png)
+<!-- Exercise 6b -->
 
-With these pages in place, create the remaining parts of Clarity's site structure as display page templates.
+Display page templates define structures for displaying content at a dedicated URL. When you create or upload content items, Liferay generates a unique friendly URL for accessing it. However, you can only use this URL to view the content if you create one of these templates for displaying it. Display pages are built using the same UI and features as content pages.
 
-## Exercise Two: Adding Display Page Templates
+The training workspace includes all necessary display pages except for the *Leadership Profile* template. Here you'll add this missing template as Walter Douglas.
 
-While logged in as Walter Douglas,
+To do this,
 
-1. Open the *Site Menu*, expand *Design*, and click *Page Templates*.
+1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)), expand *Design*, and click *Page Templates*.
 
 1. Go to the *Display Page Templates* tab.
 
@@ -117,42 +121,30 @@ While logged in as Walter Douglas,
 
 1. Select *Blank*.
 
-1. For name, enter `Leadership Profile`.
+1. For Name, enter `Leadership Profile`.
 
-1. For content type, select *Web Content Article*
+1. For Content Type, select *Web Content Article*.
 
-1. For subtype, select *Basic Web Content*.
+1. For Subtype, select *Leadership Profile*.
 
-   ![Add the web content display page template.](./adding-pages-to-claritys-site/images/11.png)
+   !!! note
+       The Leadership Profile type was provided by the training workspace. You'll learn more about web content types in a later lesson.
+
+   ![Create a Leadership Profile display page template.](./adding-pages-to-claritys-site/images/08.png)
 
 1. Click *Save*.
 
    This creates a blank display page template that’s linked to the selected content type. Each template has the same page building tools and configuration options as content pages.
 
-1. Click *Publish*.
+1. For now, leave the template blank and click *Publish*.
 
-1. Repeat this process for these pages:
+1. Click *Actions* (![Actions Button](../../images/icon-actions.png)) for the Leadership Profile template and select *Mark as Default*.
 
-   <!-- * Product Categories
-      * Content Type: Category -->
+   This ensures leadership profile articles use this template.
 
-   <!-- * Product Details
-      * Content Type: Product -->
+   ![Mark the Leadership Profile display page template as default.](./adding-pages-to-claritys-site/images/09.png)
 
-   | Name               | Type                | Subtype           |
-   |:-------------------|:--------------------|:------------------|
-   | Blog Post          | Web Content Article | Basic Web Content |
-   | General Info       | Web Content Article | Basic Web Content |
-   | FAQ Detail         | Web Content Article | Basic Web Content |
-   | Job Opening Detail | Web Content Article | Basic Web Content |
-
-   ![Create these display page templates.](./adding-pages-to-claritys-site/images/12.png)
-
-1. Click the *Actions* button (![Actions Button](../../images/icon-actions.png)) for General Info and select *Mark as Default*.
-
-   ![Mark Product Categories and Product Details as default.](./adding-pages-to-claritys-site/images/13.png)
-
-We'll update these templates in Module 7, but for now leave them blank.
+For now, we'll leave this template blank, but we'll revisit it in a later exercise. With Clarity's page structure complete, let's finish designing the header for Clarity's pages.
 
 Since Liferay sites include 404 and 500 error pages by default, there's no need to create any utility pages, so Clarity's page structure is complete.
 

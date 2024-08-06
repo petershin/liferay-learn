@@ -11,8 +11,9 @@ OAuth
 OData
 OSGi
 Talend
-portlet
-servlet
+[Pp]icklist
+[Pp]ortlet
+[Ss]ervlet
 viewport
 widget's
 workspace's

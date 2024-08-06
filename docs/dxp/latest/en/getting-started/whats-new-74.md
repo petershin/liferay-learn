@@ -223,19 +223,18 @@ There is also a full backwards compatibility: the existing behavior is maintaine
 
 ### Click to Chat Integration
 
-An out-of-the-box [integration with a number of chat platforms](../site-building/personalizing-site-experience/enabling-automated-live-chat-systems.md) is available.  Enabling the integration under Instance Settings enables users to chat with representatives at their own convenience.  Please note that a separate subscription with the chat provider is required. The following chat providers are available for OOTB integration:
+An out-of-the-box [integration with a number of chat platforms](../site-building/personalizing-site-experience/enabling-automated-live-chat-systems.md) is available. Enabling the integration under Instance Settings enables users to chat with representatives at their own convenience. Please note that a separate subscription with the chat provider is required. The following chat providers are available for OOTB integration:
 
-* Chatwoot
-* Crisp
-* Hubspot
-* JivoChat
-* LiveChat
-* LivePerson
-* Smartsupp
-* Tawk.to
-* Tidio
-* Zendesk
+- Chatwoot
+- Crisp
+- Hubspot
+- JivoChat
+- LivePerson
+- Smartsupp
+- Tawk.to
+- Tidio
+- Zendesk
 
 ### DocuSign Integration
 
-An out-of-the-box [integration with DocuSign](../content-authoring-and-management/documents-and-media/uploading-and-managing/enabling-docusign-digital-signatures.md) is available. Enabling the integration under Instance Settings enables users to send Digital Signature Envelopes with documents to DocuSign from Documents and Media and the Digital Signature module in the Control Panel.  Users can view previously sent Digital Signature Envelopes to see their status and download signed documents. A separate subscription with DocuSign is required.
+An out-of-the-box [integration with DocuSign](../content-authoring-and-management/documents-and-media/uploading-and-managing/enabling-docusign-digital-signatures.md) is available. Enabling the integration under Instance Settings enables users to send Digital Signature Envelopes with documents to DocuSign from Documents and Media and the Digital Signature module in the Control Panel. Users can view previously sent Digital Signature Envelopes to see their status and download signed documents. A separate subscription with DocuSign is required.

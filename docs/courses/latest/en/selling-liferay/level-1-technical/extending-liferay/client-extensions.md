@@ -1,6 +1,6 @@
 ---
 uuid: 38169381-8595-42a3-9dba-48e7b5ced927
-visibility: 
+visibility:
 - Employee
 - Partner
 ---
@@ -9,15 +9,14 @@ visibility:
 
 **At a Glance**
 
-* Extending Liferay is a crucial aspect of leveraging the platform's full potential
-* By customizing Liferay with specific business needs in mind, digital experiences tailored to the needs of users can be created
-* Client Extensions provide a new way to extend Liferay that is loosely-coupled to the platform core
-* Loosely-coupling custom code ensures quicker and easier upgrades and frees developers to use the languages and frameworks they are familiar with
+- Extending Liferay is a crucial aspect of leveraging the platform's full potential
+- By customizing Liferay with specific business needs in mind, digital experiences tailored to the needs of users can be created
+- Client Extensions provide a new way to extend Liferay that is loosely-coupled to the platform core
+- Loosely-coupling custom code ensures quicker and easier upgrades and frees developers to use the languages and frameworks they are familiar with
 
-```{note}
-* View the [recording](https://learn.liferay.com/web/guest/d/se1-7-extending-liferay) from the live workshop of this module.
-* Download the [PDF](https://learn.liferay.com/documents/d/guest/se1-7-extending-liferay-pdf) of the presentation used in the live workshop.
-```
+!!! note
+    - View the [recording](https://learn.liferay.com/web/guest/d/se1-7-extending-liferay) from the live workshop of this module.
+    - Download the [PDF](https://learn.liferay.com/documents/d/guest/se1-7-extending-liferay-pdf) of the presentation used in the live workshop.
 
 ## Extending Liferay - Client Extensions (Code)
 
@@ -33,9 +32,9 @@ It is important to also mention that Liferay DXP is updated on a Quarterly basis
 
 Advantages of this loosely coupled approach include:
 
-* Loosely-coupling customizations, configurations, and extensions from Liferay DXP means that Liferay is able to release new updates much faster and streamline the delivery
-* Instead of waiting a year or more for new features and capabilities, Liferay provides quarterly releases of Liferay DXP
-* Not only does this accelerate time-to-market with new improvements and features, Partners and Liferay’s Customer Success teams have the ability to stay engaged with customers more frequently, promoting and incorporating new capabilities into their customers’ solutions
+- Loosely-coupling customizations, configurations, and extensions from Liferay DXP means that Liferay is able to release new updates much faster and streamline the delivery
+- Instead of waiting a year or more for new features and capabilities, Liferay provides quarterly releases of Liferay DXP
+- Not only does this accelerate time-to-market with new improvements and features, Partners and Liferay’s Customer Success teams can stay engaged with customers more frequently, promoting and incorporating new capabilities into their customers’ solutions
 
 **Loosely-coupled Customizations**
 
@@ -45,11 +44,11 @@ Loosely-coupling customizations from also results in less issues with the overal
 
 Partners will play a critical role in helping customers:
 
-* Create SDLC for extensions
-* Low code development
-* Code for backend services or frontend development
-* Performance of these custom solutions
-* Maintaining the customization, where required
+- Create SDLC for extensions
+- Low code development
+- Code for backend services or frontend development
+- Performance of these custom solutions
+- Maintaining the customization, where required
 
 Another thing to note here is, Client Extensions can live anywhere. Customers or partners can choose to deploy Client Extensions in their own infrastructure, if they like.
 
@@ -57,7 +56,7 @@ Another thing to note here is, Client Extensions can live anywhere. Customers or
 
 This new approach also creates additional business opportunities for Liferay partners. Whereas in the past, partners had to build new versions of their applications with every new version of Liferay.
 
-With Client Extensions clean separation can be established since APIs are consistent across updates. Partners can not only save time on updating existing solutions, but also accelerate time-to-market for new business opportunities like connectors, solutions, and more. 
+With Client Extensions clean separation can be established since APIs are consistent across updates. Partners can not only save time on updating existing solutions, but also accelerate time-to-market for new business opportunities like connectors, solutions, and more.
 
 ## How to talk about extending Liferay in demos
 
@@ -73,9 +72,9 @@ This also gives our Customers and Partners a competitive advantage because they 
 
 ## Additional Information
 
-* [Fragments](https://learn.liferay.com/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments), [Publication](https://learn.liferay.com/w/dxp/site-building/publishing-tools/publications), [Themes](https://learn.liferay.com/w/dxp/site-building/site-appearance/themes) & [StyleBooks](https://learn.liferay.com/web/guest/w/dxp/site-building/site-appearance/style-books)
-* [Forms](https://learn.liferay.com/w/analytics-cloud/touchpoints/assets/forms), [Workflow](https://learn.liferay.com/w/dxp/process-automation/workflow), [Collections](https://learn.liferay.com/w/dxp/content-authoring-and-management/collections-and-collection-pages), [Objects](https://learn.liferay.com/w/dxp/building-applications/objects)
-* [Open Office](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/devops/enabling-openoffice-libreoffice-integration), [O365](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/devops/enabling-document-creation-and-editing-with-microsoft-office-365), [Google Drive](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/devops/google-drive-integration), [Live Chat](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience/enabling-automated-live-chat-systems/getting-a-chat-provider-account-id/livechat), [DocuSign](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/uploading-and-managing/enabling-docusign-digital-signatures), [Talend](https://learn.liferay.com/w/dxp/system-administration/data-integration/liferay-talend-components-overview), [Mulesoft](https://learn.liferay.com/web/guest/w/commerce/add-ons-and-connectors/mulesoft), [SAP Connector](https://marketplace.liferay.com/p/sap-business-objects-connector), [Headless](https://learn.liferay.com/w/dxp/headless-delivery)
-* [Client Extensions](https://learn.liferay.com/w/dxp/building-applications/client-extensions)
+- [Fragments](https://learn.liferay.com/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments), [Publication](https://learn.liferay.com/w/dxp/site-building/publishing-tools/publications), [Themes](https://learn.liferay.com/w/dxp/site-building/site-appearance/themes) & [StyleBooks](https://learn.liferay.com/web/guest/w/dxp/site-building/site-appearance/style-books)
+- [Forms](https://learn.liferay.com/w/analytics-cloud/touchpoints/assets/forms), [Workflow](https://learn.liferay.com/w/dxp/process-automation/workflow), [Collections](https://learn.liferay.com/w/dxp/content-authoring-and-management/collections-and-collection-pages), [Objects](https://learn.liferay.com/w/dxp/building-applications/objects)
+- [Open Office](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/devops/enabling-openoffice-libreoffice-integration), [O365](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/devops/enabling-document-creation-and-editing-with-microsoft-office-365), [Google Drive](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/devops/google-drive-integration), [DocuSign](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/uploading-and-managing/enabling-docusign-digital-signatures), [Talend](https://learn.liferay.com/w/dxp/system-administration/data-integration/liferay-talend-components-overview), [Mulesoft](https://learn.liferay.com/web/guest/w/commerce/add-ons-and-connectors/mulesoft), [SAP Connector](https://marketplace.liferay.com/p/sap-business-objects-connector), [Headless](https://learn.liferay.com/w/dxp/headless-delivery)
+- [Client Extensions](https://learn.liferay.com/w/dxp/building-applications/client-extensions)
 
 Congratulations, that’s the end of this module, next learn about [Deployment Strategies](../deployment-strategies.md) for Liferay.

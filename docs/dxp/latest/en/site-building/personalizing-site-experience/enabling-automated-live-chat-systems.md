@@ -12,7 +12,7 @@ uuid: eaf9a214-8e50-4e0e-a818-e96a21098e2e
 
 {bdg-secondary}`Liferay 7.4+`
 
-Liferay now offers integration with several live support chat platforms. Enabling this integration adds a chat window to sites on your Liferay instance and can be used to enable improved support and site experience for your users.
+Liferay now offers integration with many live support chat platforms. Enabling this integration adds a chat window to sites on your Liferay instance and can be used to enable improved support and site experience for your users.
 
 ## Enabling Click To Chat
 
@@ -32,11 +32,11 @@ Liferay now offers integration with several live support chat platforms. Enablin
 
    ![Choose your Site Settings Strategy option.](./enabling-automated-live-chat-systems/images/05.png)
 
-   **Always Inherit**: Click To Chat is enabled for all sites on the instance and ignores configurations made in Site Settings.
+  **Always Inherit**: Click To Chat is enabled for all sites on the instance and ignores configurations made in Site Settings.
 
-   **Always Override**: Configuration for Click to Chat configured in Site Settings always takes priority over configurations made in Instance Settings.
+  **Always Override**: Configuration for Click to Chat configured in Site Settings always takes priority over configurations made in Instance Settings.
 
-   **Inherit or Override**: Sites inherit configuration from Instance Settings, unless configured otherwise in the site's Site Settings.
+  **Inherit or Override**: Sites inherit configuration from Instance Settings, unless configured otherwise in the site's Site Settings.
 
 1. Select your chat provider and enter the [Account ID or token](#getting-the-chat-provider-account-id-or-token) given to you by your Chat Provider.
 
@@ -50,7 +50,7 @@ Click To Chat integration with your live chat provider is now configured.
 
 ## Getting The Chat Provider Account ID or Token
 
-Each provider requires a two step process to enable the feature: 
+Each provider requires a two step process to enable the feature:
 
 1. Find your Account ID.
 
@@ -79,6 +79,6 @@ You can grab keys from these supported providers:
 
 - [Tidio](https://help.tidio.com/hc/en-us/articles/5389680306844-Install-Tidio-on-Site123), under *Installation*.
 
-- [Zendesk Web Widgets Classic](https://developer.zendesk.com/documentation/classic-web-widget-sdks/web-widget/quickstart-tutorials/web-widget-javascript-apis/), under *Adding the Web Widget (Classic) on your web page*. The Account ID is the portion of the snippet after `...snippet.js?key=`. 
+- [Zendesk Web Widgets Classic](https://developer.zendesk.com/documentation/classic-web-widget-sdks/web-widget/quickstart-tutorials/web-widget-javascript-apis/), under *Adding the Web Widget (Classic) on your web page*. The Account ID is the portion of the snippet after `...snippet.js?key=`.
 
 - Zendesk Web Widgets is the same as in the Classic version. You can find the [Key ID and Secret key](https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/web/enabling_auth_visitors/#generating-a-signing-key) under *Generating a signing key*.

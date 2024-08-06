@@ -9,7 +9,7 @@ taxonomy-category-names:
 uuid: badfa636-ff2c-49b2-9cea-2038e148b86a
 ---
 
-## Using the Breadcrumb Widget 
+# Using the Breadcrumb Widget 
 
 This widget provides a way to navigate to related pages or sites through links.
 

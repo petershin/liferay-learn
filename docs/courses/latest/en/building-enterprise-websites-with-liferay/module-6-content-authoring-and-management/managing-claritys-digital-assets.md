@@ -3,7 +3,7 @@ uuid: 52ff56f2-e984-4800-b390-5abb125c6a5d
 ---
 # Managing Clarity’s Digital Assets
 
-In the context of content management, digital assets are any files or media you can use to enrich your content. As a general requirement, enterprise websites need a comprehensive plan that outlines how the organization's staff users will store, manage, and use its digital assets. Without an asset management infrastructure, Clarity's web developers and content creators will struggle to maintain and leverage their digital assets effectively. This article focuses on the asset library, a Liferay feature that Clarity can use to manage their digital assets with low technical effort.
+In the context of content management, digital assets are any files or media you can use to enrich your content. As a general requirement, enterprise websites need a comprehensive plan that outlines how the organization's staff users will store, manage, and use its digital assets. Without an asset management infrastructure, Clarity's web developers and content creators will struggle to maintain and leverage their digital assets effectively. This article focuses on Asset Libraries, a Liferay feature that Clarity can use to manage their digital assets with low technical effort.
 
 ## Asset Libraries
 

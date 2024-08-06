@@ -7,7 +7,7 @@ Most digital experience solutions require the development of custom business fun
 
 ## Objects
 
-With Liferay Objects, you can define the schema of your data models with specific attributes, create relationships between objects, and implement logic to determine how objects should behave. Objects allow you to iterate rapidly without the need to write or deploy code, which translates directly to increased business agility. Liferay provides a centralized interface to define, manage, and store application data from custom structures, allowing you to provide end users with tailored, streamlined experiences.
+With Liferay Objects, you can define the schema of your data models with specific attributes, create relationships between objects, and implement logic to determine how objects should behave. You can use objects to iterate rapidly without the need to write or deploy code, which translates directly to increased business agility. Liferay comes with a centralized interface to define, manage, and store application data from custom structures, so that you can provide end users with tailored, streamlined experiences.
 
 One of the true strengths of objects is their integration with Liferay's core frameworks and functionalities, such as permissions, security, workflows, and more. This creates a cohesive user experience where your custom-built solutions feel and act like native parts of the Liferay platform.  Not only does this let you achieve faster time to value, but it also means that any Liferay practitioner can maintain your solution, eliminating the need for technical developer resources.
 

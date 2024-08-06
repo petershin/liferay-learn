@@ -17,9 +17,9 @@ Clarity aims to gather in-depth metrics about their website and make them access
 
 Clarity wants to create a detailed picture of their target audiences by sorting users into different groups based on shared attributes, behaviors, and interests. They also want to create, manage, and track these groups dynamically, without requiring technical knowledge. With this understanding of their target audiences, Clarity can create effective marketing strategies and plan audience-focused content.
 
-### Create personalized experiences to specific segmented user groups
+### Deliver personalized experiences to different user segments
 
-After gathering website analytics and defining their target audiences, Clarity plans to create personalized user experiences by tailoring custom pages and page variants for targeted groups of individuals according to their needs. For example, Clarity wants to deliver a custom experience to their business distributors. By following this approach, Clarity can increase user engagement and satisfaction.
+After gathering website analytics and defining their target audiences, Clarity plans to create personalized user experiences by tailoring custom pages and page variants for targeted groups of individuals according to their needs. They need to produce dynamic experiences based on demographics, location, and other definable rules. By following this approach, Clarity can increase user engagement and satisfaction.
 
 ## Conclusion
 

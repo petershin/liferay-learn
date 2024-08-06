@@ -92,7 +92,7 @@ To do this,
 
    We cover both scenarios here: users in the user group and those with the directly assigned Distributor role.
 
-   ![Set the regular role to Distributor and the user group to Distributors.](./personalizing-experiences-for-claritys-users/images/01.png)
+   ![Set the regular role to Distributor and the user group to Distributors.](./personalizing-experiences-for-users/images/01.png)
 
 1. Click *View Members* to validate Terrence Wheatley meets the segment condition.
 

@@ -35,9 +35,7 @@ While Clarity isn’t a business-to-consumer enterprise yet, they know they will
 
 As their enterprise continues to scale, Clarity’s ideal solution needs a robust system for versioning, approving, and collaborating on content. This system supports compliance with corporate governance models along with automated approval workflows for publishing content.
 
-### Deliver personalized user experiences to different audience segments
-
-Clarity intends to devote significant resources to optimize how their users interact with their marketing content. To do this, they need a solution that allows them to build dynamic, targeted content experiences based on demographics, location, and other defined rulesets.
+<!--TASK: Add a requirement related to building forms with objects. Emphasize users interacting with site to fill out forms (e.g., the Contact Us form)-->
 
 ## Conclusion
 

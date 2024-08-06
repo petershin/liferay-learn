@@ -113,30 +113,30 @@ Channels have six types of notification templates for order events:
 
 1. Order Completed
 
-| Variable                          | Description                                    |
-| :-------------------------------- | :--------------------------------------------- |
-| [%ORDER_ITEMS%]                   | A table listing all items in the order         |
-| [%ORDER_SHIPPING_ADDRESS%]        | Order's shipping address                       |
-| [%ORDER_BILLING_ADDRESS%]         | Order's billing address                        |
-| [%ORDER_ID%]                      | Order ID                                       |
-| [%ORDER_TOTAL%]                   | Order's total excluding tax                    |
-| [%ORDER_DATE%]                    | Date when the order was placed                 |
-| [%ORDER_CURRENCY_SYMBOL%]         | Currency symbol of the order (Example: $, £)   |
-| [%ORDER_SHIPPING_WITH_TAX_TOTAL%] | Order's total shipping cost including tax      |
-| [%ORDER_EXTERNAL_REFERENCE_CODE%] | Order's external reference code                |
-| [%ORDER_URL%]                     | Order's URL                                    |
-| [%PAYMENT_TERMS_DESCRIPTION%]     | Payment terms attached to the order            |
-| [%ORDER_PAYMENT_METHOD%]          | Order's payment method                         |
-| [%ORDER_TAX_TOTAL%]               | Total tax for the order                        |
-| [%ORDER_WITH_TAX_TOTAL%]          | Total amount for the order including tax       |
-| [%ORDER_CREATOR_USER_FIRST_NAME%] | First name of the user who created the order  |
-| [%ORDER_SHIPPING_OPTION%]         | Order's shipping option                        |
-| [%ORDER_CREATOR_USER_LAST_NAME%]  | Last name of the user who created the order   |
-| [%DELIVERY_TERMS_DESCRIPTION%]    | Delivery terms attached to the order           |
-| [%ORDER_CREATOR%]                 | User who created the order                    |
-| [%ORDER_CURRENCY_CODE%]           | Currency code of the order (Example: USD, GBP) |
-| [%ORDER_CREATOR_USER_TITLE%]      | Title of the user who created the order       |
-| [%ORDER_SHIPPING_TOTAL%]          | Order's total shipping cost excluding tax      |
+ | Variable                          | Description                                    |
+ |:----------------------------------|:-----------------------------------------------|
+ | [%ORDER_ITEMS%]                   | A table listing all items in the order         |
+ | [%ORDER_SHIPPING_ADDRESS%]        | Order's shipping address                       |
+ | [%ORDER_BILLING_ADDRESS%]         | Order's billing address                        |
+ | [%ORDER_ID%]                      | Order ID                                       |
+ | [%ORDER_TOTAL%]                   | Order's total excluding tax                    |
+ | [%ORDER_DATE%]                    | Date when the order was placed                 |
+ | [%ORDER_CURRENCY_SYMBOL%]         | Currency symbol of the order (Example: $, £)   |
+ | [%ORDER_SHIPPING_WITH_TAX_TOTAL%] | Order's total shipping cost including tax      |
+ | [%ORDER_EXTERNAL_REFERENCE_CODE%] | Order's external reference code                |
+ | [%ORDER_URL%]                     | Order's URL                                    |
+ | [%PAYMENT_TERMS_DESCRIPTION%]     | Payment terms attached to the order            |
+ | [%ORDER_PAYMENT_METHOD%]          | Order's payment method                         |
+ | [%ORDER_TAX_TOTAL%]               | Total tax for the order                        |
+ | [%ORDER_WITH_TAX_TOTAL%]          | Total amount for the order including tax       |
+ | [%ORDER_CREATOR_USER_FIRST_NAME%] | First name of the user who created the order   |
+ | [%ORDER_SHIPPING_OPTION%]         | Order's shipping option                        |
+ | [%ORDER_CREATOR_USER_LAST_NAME%]  | Last name of the user who created the order    |
+ | [%DELIVERY_TERMS_DESCRIPTION%]    | Delivery terms attached to the order           |
+ | [%ORDER_CREATOR%]                 | User who created the order                     |
+ | [%ORDER_CURRENCY_CODE%]           | Currency code of the order (Example: USD, GBP) |
+ | [%ORDER_CREATOR_USER_TITLE%]      | Title of the user who created the order        |
+ | [%ORDER_SHIPPING_TOTAL%]          | Order's total shipping cost excluding tax      |
 
 ### Subscription Based Notification Template Types
 
@@ -152,11 +152,11 @@ Channels have four types of notification templates for subscription events:
 
 1. Subscription Canceled
 
-| Variable          | Description                 |
-| :---------------- | :-------------------------- |
-| [%PRODUCT_NAME%]  | Product Name                |
-| [%ORDER_CREATOR%] | User who created the order |
-| [%ORDER_ID%]      | Order ID                    |
+ | Variable          | Description                |
+ |:------------------|:---------------------------|
+ | [%PRODUCT_NAME%]  | Product Name               |
+ | [%ORDER_CREATOR%] | User who created the order |
+ | [%ORDER_ID%]      | Order ID                   |
 
 ## Related Topics
 

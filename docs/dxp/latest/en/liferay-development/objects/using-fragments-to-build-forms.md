@@ -7,6 +7,7 @@ taxonomy-category-names:
 - Liferay PaaS
 - Liferay SaaS
 ---
+
 # Using Fragments to Build Forms
 
 {bdg-secondary}`Liferay 7.4 2023.Q3+/GA92+`
@@ -21,11 +22,10 @@ To build forms in content pages,
 * Make mandatory form fragments visible.
 * Include a visible submit button in the form container.
 
-```{note}
-When mapping an object to a Form Container fragment, a submit button is generated. You can map its text using [mapping settings](../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#mapping-settings).
+!!! note
+    When mapping an object to a Form Container fragment, a submit button is generated. You can map its text using [mapping settings](../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#mapping-settings).
 
-To create a button with [link settings](../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#link-settings) for redirection, add `type="button"` to the button fragment.
-```
+    To create a button with [link settings](../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#link-settings) for redirection, add `type="button"` to the button fragment.
 
 By default, Liferay includes the [Form Components](../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/default-fragments-reference.md#form-components) fragment set, but you can create your own. See [Creating Form Fragments](../../site-building/developer-guide/developing-page-fragments/creating-form-fragments.md) for more information.
 
@@ -55,17 +55,15 @@ In addition, form fragments can only be used with [custom objects](../objects/cr
 
 1. Configure the fragments. Form fragments include both [standard](../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments.md) and [unique](../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/general-settings-reference.md#form-fragment-options) configuration options.
 
-   ```{note}
-   Form fragment configuration options become available after mapping the fragment to an object field.
-   ```
+   !!! note
+       Form fragment configuration options become available after mapping the fragment to an object field.
 
    ![Configure the form fragments.](./using-fragments-to-build-forms/images/03.png)
 
 1. {bdg-link-primary}`[Beta Feature](../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)` (Optional) If draft mode is enabled for the object, configure the Submitted Entry Status for the form's submit button: *Approved* or *Draft*.
 
-   ```{important}
-   When using form fragments to update entries in a display page, you cannot change an entry's status from approved to draft.
-   ```
+   !!! important
+       When using form fragments to update entries in a display page, you cannot change an entry's status from approved to draft.
 
    ![Configure the Submitted Entry Status for the form's submit button.](./using-fragments-to-build-forms/images/04.png)
 
@@ -76,7 +74,7 @@ In addition, form fragments can only be used with [custom objects](../objects/cr
 Each form fragment can support one or more object field types. The default form components support these fields.
 
 | Form Fragment    | Object Field Types                                |
-|:-----------------|:--------------------------------------------------|
+| :--------------- | :------------------------------------------------ |
 | CAPTCHA          | N/A                                               |
 | Checkbox         | Boolean                                           |
 | Date             | Date                                              |
@@ -89,9 +87,8 @@ Each form fragment can support one or more object field types. The default form 
 | Text Input       | Text, Long Text                                   |
 | Textarea         | Text, Long Text                                   |
 
-```{tip}
-If categorization is enabled for the object, you can use the Tags and Categories form fragments to add metadata to object entries.
-```
+!!! tip
+    If categorization is enabled for the object, you can use the Tags and Categories form fragments to add metadata to object entries.
 
 ## Related Topics
 

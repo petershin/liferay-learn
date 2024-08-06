@@ -23,7 +23,7 @@ Using the new *Contact* tab on an account, you can add contact details related t
 * Social Network
 
 !!! important
-    Currently, this feature is behind a release feature flag. Read [Release Feature Flags](../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information.
+    This feature was released behind a [release feature flag](../../system-administration/configuring-liferay/feature-flags#release-feature-flags) in Liferay DXP 2024.Q2/Portal 7.4 GA120. It was made Generally Available (GA) in 2024.Q3/GA132.
 
 1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and navigate to *Control Panel* &rarr; *Accounts*.
 

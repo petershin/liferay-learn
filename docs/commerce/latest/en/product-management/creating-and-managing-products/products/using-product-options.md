@@ -114,7 +114,7 @@ You can add as many generic values to the option as needed.
     After adding values, you cannot change the option type. You can use this type as an SKU contributor, and only one option can be selected when buying a product. The date/time values shown in the storefront use the user's locale. If the user doesn't have a locale, it uses the site's locale.
 
 !!! important
-    Currently, this feature is behind a release feature flag. Read [Release Feature Flags](../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information.
+    This feature was released behind a [release feature flag](https://learn.liferay.com/web/guest/w/dxp/system-administration/configuring-liferay/feature-flags#release-feature-flags) in Liferay DXP 2024.Q2/Portal 7.4 GA120. It was made Generally Available (GA) in 2024.Q3/GA132.
 
 ## Applying an Option Template to a Product
 

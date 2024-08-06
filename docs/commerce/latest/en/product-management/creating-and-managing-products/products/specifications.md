@@ -87,13 +87,16 @@ Specification groups and labels are scoped to a catalog. After creating them, yo
 
 1. To set its value, click on the label or click _Actions_ (![Actions icon](../../../images/icon-actions.png)) and select _Edit_. Enter values in the form to set a specification value.
 
-   | Field                                                       | Description                                                                                                                                                           |
-   | :---------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-   | Value                                                       | Value assigned to the specification.                                                                                                                                  |
-   | Group                                                       | Assign the label to a group.                                                                                                                                |
-   | {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+` Key | Default key to identify the specification value uniquely. Use this to display the specification in a display page template using the  Product Specification fragment. |
-   | Priority                                                    | Establishes the order to display the specification groups with smaller numbers going first.                                                                           |
+   | Field                                                       | Description                                                                                                                                                          |
+   | :---------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+   | Value                                                       | Value assigned to the specification.                                                                                                                                 |
+   | Group                                                       | Assign the label to a group.                                                                                                                                         |
+   | {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+` Key | Default key to identify the specification value uniquely. Use this to display the specification in a display page template using the Product Specification fragment. |
+   | Priority                                                    | Establishes the order to display the specification groups with smaller numbers going first.                                                                          |
 
 ![Enter values in the form to set a specification value.](./specifications/images/06.png)
+
+!!! important
+    The key field for a specification value was released behind a [release feature flag](https://learn.liferay.com/web/guest/w/dxp/system-administration/configuring-liferay/feature-flags#release-feature-flags) in Liferay DXP 2024.Q2/Portal 7.4 GA120. It was made Generally Available (GA) in 2024.Q3/GA132.
 
 You can also override the specification group that was selected when the label was created. When editing the label to assign a value, you can choose any group from the _Group_ drop-down box. This change applies only to the current product and has no effect on other products that use the same label.

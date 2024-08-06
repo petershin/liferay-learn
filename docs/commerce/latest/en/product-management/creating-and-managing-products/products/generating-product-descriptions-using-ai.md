@@ -15,7 +15,7 @@ uuid: 9b08b64f-12a7-4aa6-b3be-060e43bfabd5
 You can now use generative AI to add product descriptions. To start using the AI Creator tool, you must add an API key to authenticate your access to ChatGPT. See [Generating Text Content Using AI](https://learn.liferay.com/web/guest/w/dxp/content-authoring-and-management/web-content/web-content-articles/generating-text-content-using-ai) for more information.
 
 !!! important
-    Currently, this feature is behind a release feature flag. Read [Release Feature Flags](https://learn.liferay.com/web/guest/w/dxp/system-administration/configuring-liferay/feature-flags#release-feature-flags) for more information.
+    This feature was released behind a [release feature flag](https://learn.liferay.com/web/guest/w/dxp/system-administration/configuring-liferay/feature-flags#release-feature-flags) in Liferay DXP 2024.Q2/Portal 7.4 GA120. It was made Generally Available (GA) in 2024.Q3/GA132.
 
 After adding the API key,
 

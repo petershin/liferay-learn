@@ -31,9 +31,9 @@ You can find code examples for all types of client extensions in [liferay-portal
 
 - [Theme Sprite Map Client Extension](../customizing-liferays-look-and-feel/using-a-theme-spritemap-client-extension.md)
 
-- [FDS Filter Client Extension](../customizing-liferays-look-and-feel/using-a-custom-filter-client-extension.md)
+- [Frontend Data Set Filter Client Extension](../customizing-liferays-look-and-feel/using-a-custom-filter-client-extension.md)
 
-- [FDS Cell Renderer Client Extension](../customizing-liferays-look-and-feel/using-an-fds-cell-renderer-client-extension.md)
+- [Frontend Data Set Cell Renderer Client Extension](../customizing-liferays-look-and-feel/using-a-frontend-data-set-cell-renderer-client-extension.md)
 
 - [Editor Config Contributor Client Extension](../customizing-liferays-look-and-feel/using-an-editor-config-contributor-client-extension.md)
 

@@ -6,13 +6,13 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: f5869542-8a90-4269-9f8d-c9a9ca67ac46
 ---
-# FDS Cell Renderer YAML Reference
+# Frontend Data Set Cell Renderer YAML Reference
 
-You can define an FDS cell renderer client extension with a `client-extension.yaml` file.
+You can define a frontend data set cell renderer client extension with a `client-extension.yaml` file.
 
 ## Usage Details
 
-The `client-extension.yaml` file defines a FDS cell renderer client extension:
+The `client-extension.yaml` file defines a frontend data set cell renderer client extension:
 
 ```yaml
 assemble:

@@ -7,6 +7,7 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: f271b7fd-93dd-4692-acce-35d1d8ed2973
 ---
+
 # Configuring Individual Pages
 
 You can configure individual pages to meet your needs. All changes made in this way are scoped to the selected page.
@@ -218,6 +219,9 @@ Preview your page's Open Graph configuration. This section displays how your pag
 ## Custom Meta Tags
 
 Here you can add custom `<meta>` tags to the `<head>` of a page. These tags are only visible in a page's HTML source code and are used to describe a page's data and determine how that data is displayed in different contexts, such as search engine results and social media posts. Each tag is defined using property and content attributes.
+
+!!! note
+    Open Graph `<meta>` tags are only included in page headers to unauthenticated users. They are not included when the user is logged in.
 
 ![Add custom meta tags to a page's head using the Property and Content fields.](./configuring-individual-pages/images/15.png)
 

@@ -7,17 +7,17 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: c85f3045-c786-448a-aef9-2388660b7397
 ---
+
 # Configuring Open Graph
 
-> Available: Liferay DXP/Portal 7.3+
+{bdg-secondary}`Available: Liferay DXP/Portal 7.3+`
 
 [Open Graph](https://ogp.me/) is an Internet protocol that standardizes previews of Site content when shared in application contexts that support it, such as Facebook, Slack, and Twitter. It does this by embedding structured data in page headers as `<meta>` tags, similar to [RDFa](https://en.wikipedia.org/wiki/RDFa).
 
 By default, Open Graph `<meta>` tags are embedded in all public Liferay Pages, but you can disable this behavior at the Site level if desired. In Site settings, you can also set default `og:image` properties. These values are used for all Pages, unless they're overridden at the [Page](../creating-pages/page-settings/configuring-individual-pages.md#open-graph) or [Display Page](../displaying-content/using-display-page-templates/configuring-seo-and-open-graph.md) level.
 
-```{note}
-Open Graph `<meta>` tags are only included in page headers to unauthenticated users. They are not included when the user is logged in.
-```
+!!! note
+    Open Graph `<meta>` tags are only included in page headers to unauthenticated users. They are not included when the user is logged in.
 
 Follow these steps to configure Open Graph for your Site:
 
@@ -65,6 +65,6 @@ To create localized alt descriptions for your Open Graph image, click on the *La
 
 ## Related Topics
 
-* [Search Engine Optimization](../optimizing-sites.md)
-* [Site Settings UI Reference](./site-settings-ui-reference.md)
-* [Configuring Individual Pages](../creating-pages/page-settings/configuring-individual-pages.md)
+- [Search Engine Optimization](../optimizing-sites.md)
+- [Site Settings UI Reference](./site-settings-ui-reference.md)
+- [Configuring Individual Pages](../creating-pages/page-settings/configuring-individual-pages.md)

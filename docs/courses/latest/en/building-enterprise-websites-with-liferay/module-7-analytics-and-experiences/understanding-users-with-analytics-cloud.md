@@ -3,25 +3,25 @@ uuid: 01ee46ea-81d1-4b66-ad3a-21a929369b1e
 ---
 # Understanding Users with Analytics Cloud
 
-Understanding who your visitors are and how they interact with your site is a crucial part of any business. Fortunately, Analytics Cloud comes with Liferay DXP. Analytic Cloud is a cloud-based SaaS tool that works together with your Liferay DXP instance. It aggregates your visitor data and presents useful metrics such as visitor count, session length, interests, and more. Use the traffic insights from Analytics Cloud to continue to optimize and improve your website. Follow a continuous loop to measure, understand, and optimize.
+Understanding who your visitors are and how they interact with your site is a crucial part of any business. Fortunately, Liferay DXP comes with Analytics Cloud, a cloud-based SaaS tool that aggregates your visitor data and presents useful metrics such as visitor count, session length, interests, and more. Use the traffic insights from Analytics Cloud to iterate on your site in a continuous loop built around the following principles:
 
 * **Measure:** See how your site pages and site content is performing.
 * **Understand:** Use the analytics data to understand your audience better and what they are interested in.
 * **Optimize:** Make informed decisions to optimize your site and deliver more relevant content.
 
-There's a wide range of analytics data that is tracked by Analytics Cloud. The metrics can be grouped into two categories:
+Analytics Cloud tracks a variety of metrics that can be grouped into two categories:
 
 * **User Data:** Analytics data about individual visitors as well as segments on how they are interacting with your site.
 * **Site Content Data:** Analytics data about your different site pages as well as different assets on the site pages.
 
 ## User Data
 
-Analytics Cloud shows you different metrics about the visitors that come to your site. For example,
+Analytics Cloud shows you different metrics about the visitors that come to your site, such as
 
-* Total number of individuals (both known and anonymous) in the last 30 days
+* The total number of individuals (both known and anonymous) in the last 30 days
 * The change across time of the number of individuals interacting with your site
-* Most popular interest topics
-* Visitor distribution info across different attributes (e.g. date of birth)
+* The most popular interest topics
+* The distribution of users across different attributes (e.g., date of birth)
 
 ![The individuals dashboard shows different metrics about your visitors](./understanding-users-with-analytics-cloud/images/01.png)
 
@@ -29,16 +29,11 @@ Known visitors are individuals who are logged in to your Liferay DXP instance. A
 
 * Recent interaction history, including a detailed site activity stream
 * Most popular interest topics
-* Any segments the individual belongs to
+* Any segments to which the individual belongs
 
 ![The known individuals dashboard gives a detailed look at each individual.](./understanding-users-with-analytics-cloud/images/02.png)
 
-User data also includes segment analytics. Segments are groupings of individuals you define based on shared attributes such as geography, industry, shared interest topics, and more. Track different metrics for the different segments that visit your site. For example,
-
-* Total number of individuals in a segment across time
-* Percentage of individuals in the segment who have interacted with your site recently
-* Most popular interest topics of the segment
-* Distribution info across different attributes (e.g. individual's home country)
+User data also includes segment analytics. Segments are groupings of individuals you define based on shared attributes such as geography, industry, shared interest topics, and more. The same metrics you track for individual users can be tracked for the different segments that visit your site.
 
 ![Segment analytics shows data about different groupings of individuals.](./understanding-users-with-analytics-cloud/images/03.png)
 
@@ -74,8 +69,8 @@ With Analytics Cloud, you get detailed analytics even on how individual Liferay 
 
 ## Conclusion
 
-Analytics Cloud helps you learn what's important to your visitors so you can deliver improved content and optimized site experiences. See [getting started with Analytics Cloud](https://learn.liferay.com/w/analytics-cloud/getting-started) to learn more.
+Analytics Cloud helps you learn what's important to your visitors so you can deliver improved content and optimized site experiences. See [Getting Started with Analytics Cloud](https://learn.liferay.com/w/analytics-cloud/getting-started) to learn more.
 
-<!-- Link to Analytics Cloud demo video -->
+<!--TASK: Link to Analytics Cloud demo video -->
 
 Up Next: [Personalizing Experiences for Users](./personalizing-experiences-for-users.md)

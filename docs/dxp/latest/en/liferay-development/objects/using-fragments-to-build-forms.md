@@ -45,27 +45,33 @@ In addition, form fragments can only be used with [custom objects](../objects/cr
 
    ![Add the form container and map it to an object.](./using-fragments-to-build-forms/images/01.png)
 
+   {bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA132+` In the modal window that opens, select the fields and related fields to display in the form. See [Handling Object Relationships Within Form Container Fragments](#handling-object-relationships-within-form-container-fragments) to learn more about managing related fields in form fragments.
+
 1. Remove non-mandatory fields that you don't want in the form.
+
+   {bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA132+` To manage available and related fields, click the *Form Container* fragment and use the *Manage Form Fields* button located in the General tab on the right under Content Type.
+
+   ![Use the Manage Form Fields button to manage available form fields and related fields.](./using-fragments-to-build-forms/images/02.png)
 
 1. Drag and drop form fragments to reorganize them. By default, form elements are organized alphabetically.
 
 1. (Optional) Add basic fragments to the form container. You can use basic components (e.g., grids, separators, paragraphs, images) to provide structure and style to your form container.
 
-   ![Add basic fragments to the form container and reorganize your page elements to create the desired structure.](./using-fragments-to-build-forms/images/02.png)
+   ![Add basic fragments to the form container and reorganize your page elements to create the desired structure.](./using-fragments-to-build-forms/images/03.png)
 
 1. Configure the fragments. Form fragments include both [standard](../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments.md) and [unique](../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/general-settings-reference.md#form-fragment-options) configuration options.
 
    !!! note
        Form fragment configuration options become available after mapping the fragment to an object field.
 
-   ![Configure the form fragments.](./using-fragments-to-build-forms/images/03.png)
+   ![Configure the form fragments.](./using-fragments-to-build-forms/images/04.png)
 
 1. {bdg-link-primary}`[Beta Feature](../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)` (Optional) If draft mode is enabled for the object, configure the Submitted Entry Status for the form's submit button: *Approved* or *Draft*.
 
    !!! important
        When using form fragments to update entries in a display page, you cannot change an entry's status from approved to draft.
 
-   ![Configure the Submitted Entry Status for the form's submit button.](./using-fragments-to-build-forms/images/04.png)
+   ![Configure the Submitted Entry Status for the form's submit button.](./using-fragments-to-build-forms/images/05.png)
 
 1. Click *Publish* when finished.
 
@@ -89,6 +95,38 @@ Each form fragment can support one or more object field types. The default form 
 
 !!! tip
     If categorization is enabled for the object, you can use the Tags and Categories form fragments to add metadata to object entries.
+
+## Handling Object Relationships Within Form Container Fragments
+
+{bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA132+`
+
+!!! important
+    Currently, this feature is behind a release feature flag (LPD-20213). Read [Release Feature Flags](../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information.
+
+Manage [relationships](./creating-and-managing-objects/relationships.md) between objects and handle related data directly from Form Container fragments in content pages or display page templates.
+
+To manage object relationships within form fragments,
+
+1. Create a [content page](../../site-building/creating-pages/adding-pages/adding-a-page-to-a-site.md) or a [display page template](../../site-building/displaying-content/using-display-page-templates/creating-and-managing-display-page-templates.md).
+
+1. Add a [Form Container fragment to the page](#creating-a-form)
+
+1. Once you select an object in a Form Container fragment, a modal window opens displaying available fields, including related fields, as selectable options. Select one or more fields and click *Save* to populate the form.
+
+   In this example, the Employee Profile and Car objects have a one-to-many relationship, where each employee can be associated with multiple cars. When generating the form, you can select and combine fields from both objects to capture all the necessary information.
+
+   ![Select fields to display in the form container fragment.](./using-fragments-to-build-forms/images/06.png)
+
+   !!! tip
+       You can also [create multi-step applications](../../site-building/displaying-content/using-display-page-templates/using-multiple-display-page-templates-to-create-multi-step-applications.md) where users can navigate through different steps, such as entering employee details, assigning a car, and confirming the entries.
+
+1. After selecting the fields, manage them by clicking the *Form Container* fragment and using the Manage Form Fields button located in the General tab on the right under Content Type.
+
+   ![Use the Manage Form Fields button to manage available form fields and related fields.](./using-fragments-to-build-forms/images/02.png)
+
+1. Alternatively, select a text or picklist field and set the Source and Field options on the right to manage those fields manually.
+
+   ![Manage text and picklist fields individually.](./using-fragments-to-build-forms/images/07.png)
 
 ## Related Topics
 

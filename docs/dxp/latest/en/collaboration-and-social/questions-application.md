@@ -15,9 +15,7 @@ taxonomy-category-names:
 
 {bdg-secondary}`Available: Liferay DXP/Portal 7.3+`
 
-<!-- Hey Gabriel, when you see a badge formatted like the above, it means it was created before we had the current badge syntax. Please convert this to the current badge syntax whenever you see it. I'm sending this back to you because of that, because I've corrected these before. I'm not convinced you're looking at my wordsmithing commits when stuff gets merged, because you still let these through. You should be reviewing those commits even when I don't send you writing feedback, because you'll see the kinds of things I catch (and thus avoid them in the future). -Rich -->
-
-The Questions app is a new UI of the Message Boards application, focused on presenting a question-and-answer format. The Questions app allows the creation of:
+The Questions app is a new UI "skin" for the Message Boards application, focused on presenting a question-and-answer format. With the Questions app, you and your users can create
 
 **Topics:** Themes where questions are categorized
 
@@ -25,20 +23,10 @@ The Questions app is a new UI of the Message Boards application, focused on pres
 
 **Answers:** An answer to a specific question
 
-![Using page with Questions Widget](./questions-application/images/01.png)
+![The questions application shows Message Boards threads in a question and answer fashion.](./questions-application/images/01.png)
 
-Liferay offers this application to enable knowledge sharing, problem-solving, and community interaction in the platform. The app includes features such as voting, commenting, and subscribing to topics or questions for a better user experience, improving search functionality, and motivating user collaboration.
+Liferay offers this application to enable knowledge sharing, problem-solving, and community interaction in the platform. Features such as voting, commenting, subscribing to topics/questions, improving search functionality, and motivating user collaboration help communities to collaborate effectively and share knowledge.
 
-When questions are created, tags can also help others find relevant content. By using tags, the user can better manage by reducing duplicated inquiries and streamline content moderation by providing a clear framework for managing and organizing questions.
+Questions can be tagged, which helps others find relevant content. 
 
-The user also has the power to [Configure the Questions App](../collaboration-and-social/questions-application/configuring-the-questions-app.md) so it can be adapted to specific needs and preferences. Here are some ways that the app can be customized:
-
-**Topic Display Style**: Topics can be displayed as cards or as a list.
-
-**Limiting Topic Display**: Questions default display behavior is to show all Topics. You can opt to only display certain topics by configuring a Root Topic.
-
-**Managing App Permissions**: You can give or limit privileges to specific users and roles.
-
-**Redirecting Guest Users to Login**: Guest users are redirected to a login page when they try to click *Ask Question*.
-
-**Creating a Service Access Policy to Allow Guest Viewers**: It is possible to set up permissions for external applications or services to access the Questions app.
+Read [Using the Questions App](./questions-application/using-the-questions-app.md) to learn how to get started! 

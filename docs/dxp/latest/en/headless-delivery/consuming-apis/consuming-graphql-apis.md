@@ -55,7 +55,8 @@ Start by running Liferay DXP to call its GraphQL APIs.
       ): BlogPosting
    ```
 
-   {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+` Or you can find it under the `headlessDelivery_v1_0`/`MutationHeadlessDelivery_v1_0` namespace.
+   {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+`
+   Or you can find it under the `headlessDelivery_v1_0`/`MutationHeadlessDelivery_v1_0` namespace.
 
 !!! note
     You can also discover your local installation's APIs by requesting the schema directly:
@@ -143,7 +144,8 @@ query {
 }
 ```
 
-{bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+` Or you can add the `headlessDelivery_v1_0` namespace and write the query like this:
+{bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+`
+Or you can add the `headlessDelivery_v1_0` namespace and write the query like this:
 
 ```graphql
 query {
@@ -213,7 +215,8 @@ Now you'll post a blog entry.
    }
    ```
 
-   {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+` Or you can add the `headlessDelivery_v1_0` namespace and write the query like this:
+   {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+`
+   Or you can add the `headlessDelivery_v1_0` namespace and write the query like this:
 
    ```graphql
    mutation CreateBlog($blog: InputBlogPosting) {
@@ -283,7 +286,8 @@ query {
 }
 ```
 
-{bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+` Or you can add the `headlessDelivery_v1_0` namespace and write the query like this:
+{bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+`
+Or you can add the `headlessDelivery_v1_0` namespace and write the query like this:
 
 ```graphql
 query {
@@ -354,7 +358,8 @@ query {
 }
 ```
 
-{bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+` Or you can add the `headlessDelivery_v1_0` namespace and write the query like this:
+{bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+`
+Or you can add the `headlessDelivery_v1_0` namespace and write the query like this:
 
 ```graphql
 query {
@@ -400,7 +405,8 @@ mutation {
 }
 ```
 
-{bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+` Or you can add the `headlessDelivery_v1_0` namespace and write the query like this:
+{bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+`
+Or you can add the `headlessDelivery_v1_0` namespace and write the query like this:
 
 ```graphql
 mutation {

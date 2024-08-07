@@ -8,7 +8,7 @@ uuid: e2f145ad-3da7-43cf-9ecb-cd5c6f8131ed
 ---
 # Platform Limitations
 
-Liferay Cloud and its services have some notable limitations, depending on your subscription level. Limitations with Liferay Cloud's infrastructure may change over time. 
+Liferay Cloud and its services have some notable limitations, depending on your subscription level. Limitations with Liferay Cloud's infrastructure may change over time.
 
 ## Overview
 
@@ -67,7 +67,7 @@ These limitations apply to the [Liferay service](../customizing-liferay-dxp-in-t
 
 These limitations apply to Dynatrace:
 
-**Dynatrace Metrics Discrepancy**: Dynatrace metrics do not match the metrics shown in the Liferay Cloud Console. This is because Dynatrace displays metrics for the JVM process, while the console metrics measure the entire container hosting the JVM.
+**Dynatrace Metrics Discrepancy**: Dynatrace metrics do not match the metrics shown in the Liferay Cloud console. This is because Dynatrace collects process-level metrics directly from the host using its agent-based monitoring, while the console metrics measure the pod-level resource quotas and limits within Kubernetes. So both may have graphs with different metrics for the same resources (e.g. CPU) and they are both correct for different contexts within the application.
 
 **Streaming Liferay Logs**: Liferay logs cannot be streamed to Dynatrace logs.
 
@@ -200,4 +200,3 @@ These limitations apply if you have connected a [VPN server](../configuring-the-
 **Extending On-Premises Networks:** Cloud Interconnect or Express Route dedicated connections from an on-premises network are not supported. This applies to connections made directly or via partner providers, and with shared or private clusters.
 
 **Two-Factor Authentication**: Using two-factor authentication within your Cloud VPN (OpenVPN or IPSec) is not supported.
-

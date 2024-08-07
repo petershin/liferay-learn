@@ -43,9 +43,9 @@ Users can view allocated resources from the Liferay Cloud console.
 
 ## Advanced Application Metrics (Production Only)
 
-With Liferay Cloud, you can integrate [Dynatrace's](https://www.dynatrace.com/) advanced performance monitoring with your production environments.
+With Liferay Cloud, you can integrate [Dynatrace's](https://www.dynatrace.com/) advanced performance monitoring with your production environments. Dynatrace provides more granular process-level details, which can be useful for in-depth performance analysis.
 
-See the [Dynatrace limitations](../reference/platform-limitations.md#dynatrace) for more information.
+Both Dynatrace and the console show real-time data. However, Liferay Cloud's built-in monitoring uses Kubernetes data based on pod-level resource quotas; Dynatrace doesn't gather Kubernetes-specific metrics, so Dynatrace metrics might differ from the metrics in the Liferay Cloud console. See the [Dynatrace limitations](../reference/platform-limitations.md#dynatrace) for more information on these graph discrepancies and other limitations.
 
 ### Integrating Dynatrace with Production Environments
 

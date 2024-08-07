@@ -52,9 +52,8 @@ In this example, the promotion reduces the price of all products in the catalog 
 
 1. Click *Submit*.
 
-```{note}
-You need not set an expiration date for the price modifier if you have already set an expiration date for the promotion itself.
-```
+!!! note
+    You need not set an expiration date for the price modifier if you have already set an expiration date for the promotion itself.
 
 You must now configure the new price modifier. Click the entry from the list and enter the percentage amount as -20. Then activate it using the *Active* toggle. After that, click *Save* and click *Publish*. See [Price Modifiers Reference](./promotions-reference.md#price-modifiers-reference) for more information.
 

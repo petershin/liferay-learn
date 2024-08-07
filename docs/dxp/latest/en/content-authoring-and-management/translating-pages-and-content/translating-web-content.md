@@ -65,7 +65,9 @@ Use the [translation interface](#manually-translating-web-content-articles-using
     Currently, this feature is behind release feature flags (LPS-114700 and LPD-11253). Read [Release Feature Flags](../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information. Other features may differ without these feature flags.
 
 !!! note
-    (**Breaking Change**) {bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA132+` Content is no longer classified as `Translated` based only on the title. Now, it's marked as `Translating` when any field is translated. It's considered translated only when all fields are translated.
+    {bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA132+` 
+
+    (**Breaking Change**) Content is no longer classified as `Translated` based only on the title. Now, it's marked as `Translating` when any field is translated. It's considered translated only when all fields are translated.
 
 1. Create or start editing web content.
 

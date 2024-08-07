@@ -13,7 +13,7 @@ uuid: f2b9e469-c8cc-44ca-a7e6-cff4d6dbe2b4
 
 {bdg-secondary}`Liferay 7.4 U15+ and GA15+`
 
-Liferay provides integrated tools for translating *content pages*, so you can create engaging, localized experiences for your global users. With these tools, you can manually translate content page experiences or import translations as XLIFF files.
+Liferay provides integrated tools for translating *content pages*, so you can create engaging, localized experiences for your global users. With these tools, you can translate content page experiences manually or import translations from XLIFF files.
 
 !!! important
     When translating a content page, users can only translate a page's name and inline fragment text (e.g. HTML, Header, etc.). They cannot translate widgets or mapped fragment fields.
@@ -26,9 +26,9 @@ If desired, you can [enable a custom workflow](./enabling-workflows-for-translat
 ## Manually Translating Content Pages
 
 !!! note
-    To manually translate content page experiences, users must have either *View* and *Update* permissions for content pages or Translation permissions for one or more languages. See [Managing Translation Permissions](./managing-translation-permissions.md) for more information.
+    To translate content page experiences manually, users must have either *View* and *Update* permissions for content pages or Translation permissions for one or more languages. See [Managing Translation Permissions](./managing-translation-permissions.md) for more information.
 
-Follow these steps to manually translate content page experiences:
+Follow these steps to translate content page experiences manually:
 
 1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)), expand *Site Builder*, and go to *Pages*.
 

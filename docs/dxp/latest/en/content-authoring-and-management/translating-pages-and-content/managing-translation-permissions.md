@@ -33,7 +33,7 @@ Follow these steps to assign Translate permissions for specific languages:
 
 1. Click *Actions* (![Actions Button](../../images/icon-actions.png)) for the desired role and select *Edit*.
 
-   Alternatively, you can click the *Add* button (![Add Button](../../images/icon-add.png)) to create a new role for translations.
+   Alternatively, you can click *Add* (![Add Button](../../images/icon-add.png)) to create a new role for translations.
 
 1. Click the *Define Permissions* tab and go to *Site and Asset Library Administration* &rarr; *Content & Data* &rarr; *Translation Processes* in the permissions sidebar menu.
 

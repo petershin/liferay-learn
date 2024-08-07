@@ -1,7 +1,7 @@
 ---
 toc:
 - ./module-9-search/claritys-search-requirements.md
-- ./module-9-search/working-with-liferay-search.md
+- ./module-9-search/understanding-liferay-search.md
 - ./module-9-search/understanding-and-customizing-search-results-pages.md
 - ./module-9-search/personalizing-search-experiences-with-blueprints.md
 uuid: 361efa0d-1a2f-4527-92bb-b31d62ef0cfb

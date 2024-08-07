@@ -2,8 +2,9 @@
 uuid: 72084c2f-05ad-459b-9b80-be97e89d5214
 ---
 # Clarity's Content Management Requirements
+<!--TASK: Reconsider article name.-->
 
-*Content Management* is a broad term used to describe the lifecycle of managing data. In the case of Liferay's digital experiences, this includes the features you use to
+*Content Management* encompasses the lifecycle of managing data within a platform. In Liferay DXP, this includes features you use to
 
 - Capture, modify, and retrieve the data
 - Govern, publish, and deliver the data as content
@@ -13,7 +14,7 @@ An effective content management system ensures that information is easy to find,
 
 Behind the scenes, a content management system streamlines content creation with an intuitive user interface, saves time and resources with automated approval workflows, and facilitates collaboration with version control and transparent knowledge sharing. All of these features empower non-technical users to manage content efficiently and minimize dependence on IT.
 
-A well-organized content library allows organizations to personalize content for specific audience segments, creating targeted campaigns that align with marketing and sales goals. It can be easily scaled to accommodate new information and evolving business needs. Investing in content management can help organizations improve communication, increase operational efficiency, and foster stronger relationships with their customers.
+A well-organized content library enables organizations to personalize content for specific audience segments, creating targeted campaigns that align with marketing and sales goals. It can easily scale to accommodate new information and evolving business needs. Investing in content management can help organizations improve communication, increase operational efficiency, and foster stronger relationships with their customers.
 
 ## Requirements
 
@@ -21,7 +22,7 @@ Let's review Clarity's specific content management requirements.
 
 ### Manage reusable digital assets with low technical effort
 
-Clarity wants their digital asset management solution to be accessible to marketing, sales, and legal personnel in addition to IT staff. Employees should be able to create, organize, share, and permission assets with a straightforward interface that integrates with other content management features. 
+Clarity wants their digital asset management solution to grant access to marketing, sales, and legal personnel in addition to IT staff. Employees should be able to create, organize, share, and permission assets with a straightforward interface that integrates with other content management features. 
 
 ### Produce website content with well-defined structures that accelerate development without limiting creativity
 

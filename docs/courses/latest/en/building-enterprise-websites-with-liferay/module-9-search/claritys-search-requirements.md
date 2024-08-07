@@ -11,7 +11,7 @@ Clarity already has various content on their site, such as eyewear products, blo
 
 ### Configurable search pages for non-technical team members
 
-Clarity needs a solution that is easy to use to quickly create and manage search pages. Liferay provides different search widgets including various search facet widgets out-of-the-box. This means creating search pages is as easy as dragging and dropping different widgets onto a site page. Even custom facets are available without any programming or custom code. This empowers Clarity team members to create the search pages they need without specialized IT help. Also, adding these elements to a search page ensures that site visitors have the means to further refine search results. Visitors can utilize filters, facets, as well as keyword operators to drill down and find the data they are looking for.
+Clarity needs a solution that is easy to use to quickly create and manage search results pages. Liferay provides different search widgets, including various search facet widgets, out-of-the-box. This means creating search results pages is as easy as dragging and dropping different widgets onto a site page. Even custom facets are available without any programming or custom code. This empowers Clarity team members to create the search pages they need without specialized IT help. Also, adding these elements to a search page ensures that site visitors have the means to further refine search results. Visitors can then utilize filters, facets, as well as keyword operators to drill down and find the data they are looking for.
 
 ### Search that is customizable and extensible
 
@@ -23,11 +23,11 @@ Clarity understands the importance of search and making sure their customers and
 
 ### Enable Searching Content Stored in Other Systems
 
-Not all of Clarity's data that needs to be searched exists in Liferay. Clarity has different legacy systems that still contain valuable data that they may want customers or business partners to be able to access. By default, Liferay Search works in conjunction with Liferay's indexing framework. However, it is possible to configure Liferay Search to search different search indexes through the use of low level search. In this way, Clarity has options to still provide search access to other data on legacy systems.
+Not all of Clarity's data that needs to be searched exists in Liferay yet. Clarity has different legacy systems that still contain valuable data that they may want customers or business partners to be able to access. By default, Liferay Search works in conjunction with Liferay's indexing framework. However, Liferay Search can be configured to access external search indexes using low level search, enabling Clarity to maintain search access to data on their legacy systems.
 
 ### Deliver Personalized Search Results for Users to see Different Results
 
-Just like the content itself, Clarity knows that search results are better when they are personalized based on the user that performs the search. Liferay's Search Blueprints makes it possible to customize search results based on criteria such as roles, user segments, whether a user is new or is a guest, etc. Personalizing the search results in turn means Clarity can keep users engaged with their content.
+Just like the content itself, Clarity knows that search results are better when they are personalized based on the user that performs the search. Segmentation in Liferay enables different page experiences based on user profiles, including the ability to display customized search pages or search results for specific user segments. Liferay's Search Blueprints makes it possible to customize search results based on criteria such as roles, user segments, whether a user is new or is a guest, etc. Personalizing the search results in turn means Clarity can keep users engaged with their content.
 
 ## Conclusion
 

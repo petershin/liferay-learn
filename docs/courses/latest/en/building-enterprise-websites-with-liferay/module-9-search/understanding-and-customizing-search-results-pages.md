@@ -5,7 +5,7 @@ uuid: 40f88570-abf4-44ab-af8c-1374bde0e20d
 
 Clarity wants to have site visitors be able to search for content and find content quickly and easily. This can be accomplished by creating good navigation and leveraging Liferay's search features. For example, a customer looking for a pair of eyeglasses or sunglasses should be able to navigate the site to find the type of product they are looking for. The user might search by keyword or they might use search categories to filter through the list of products. Navigating Clarity's site should match the visitor's expectation for good user experience.
 
-At the same time, configuring the look and layout of search results pages should be quick and easy. Fortunately, you don't need a development background to create search results pages. Liferay provides various components and search widgets to empower Liferay users to easily design pages and search experiences right from the UI.
+At the same time, configuring the look and layout of search results pages should be quick and easy to accomplish. Fortunately, you don't need a development background to create search results pages. Liferay provides various components and search widgets to empower Liferay users to easily design pages and search experiences right from the UI.
 
 Typically, a search results page will contain at a minimum:
 

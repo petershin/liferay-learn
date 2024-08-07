@@ -30,7 +30,7 @@ Up First: [Clarity's Search Requirements](./module-9-search/claritys-search-requ
 :::{grid-item-card}  Clarity's Search Requirements
 :link: ./module-9-search/claritys-search-requirements.md
 
-Reach about the specific search requirements Clarity has.
+Learn about the specific search requirements Clarity has.
 :::
 
 :::{grid-item-card}  Working with Liferay Search

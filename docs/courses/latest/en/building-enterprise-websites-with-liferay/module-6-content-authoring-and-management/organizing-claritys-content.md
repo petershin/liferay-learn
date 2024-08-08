@@ -3,7 +3,9 @@ uuid: bd7bafb9-bd0b-411b-9458-0cb507842c87
 ---
 # Organizing Clarity’s Content
 
-In the previous section, you learned about the different types of content that Clarity may want to employ for their enterprise marketing website. This section will cover some of the key Liferay features you can use to organize content once it has been created:
+<!--TASK: Reasset article organization; currently it combines 'Organizing' and 'Displaying' content-->
+
+In the previous section, you learned about the different types of content that Clarity wants to employ for their enterprise marketing website. This section covers some of the key Liferay features you can use to organize content once created:
 
 - Categories
 - Tags
@@ -13,34 +15,48 @@ In the previous section, you learned about the different types of content that C
 
 You can use categories to group assets with similar content or information. Categories support hierarchical organization of your content with nesting and subcategories so that you can classify your content in as much or as little detail as you wish. This makes it easier for users to find relevant information through search or navigation.
 
-Categories themselves are grouped using vocabularies, which can be made public or private. A vocabulary defines the type of asset for the categories it contains. For example, the Blog Posts vocabulary contains four categories: Innovation, Fashion, Technology, and Health. These categories can only be applied to blog posts. Liferay includes some basic vocabularies out of the box and allows you to create your own.
+Categories themselves are grouped into vocabularies, which can be public or private. A vocabulary defines the type of asset for the categories it contains. For example, Clarity's Blog Posts vocabulary contains four categories: Innovation, Fashion, Technology, and Health. Content creators can only apply these categories to blog posts. Liferay includes some basic vocabularies out of the box, but you can create your own.
 
 Together, categories and vocabularies form a taxonomy, a structured classification system for content. Implementing a robust taxonomy is critical for effectively managing content in Liferay.
+
+<!--TASK: See following comment-->
 
 ## Tags
 
 Tags are keywords for organizing your assets. While categories provide broader classification based on theme or topic, tags describe more specific information about individual content items. Tags are not hierarchical and cannot be nested within one another. However, because they are not constrained by a vocabulary, tags make it possible to find related assets even if they are different types. Both administrators and regular users can create tags for content.
 
+<!--TASK: Add a section that clearly differentiates Categories and Tags while noting the use cases they're designed to solve. The above notes that tags are flat and unstructured, while categories are hierarchical and structured. It also hints that tags are typically applied by users, while categories are defined and managed by administrators. But we need to articulate the purpose as well: Tags facilitate flexible, user-driven organization, while categories provide a formal, top-down structure.
+
+As I understand it:
+* Use tags when you need flexible, user-driven organization for highlighting general keywords in content for search purposes.
+* Use categories when you need a formal, top-down structure that you can use as part of your site's structure (e.g., navigation, display pages, etc.) and to better enforce content governance.
+-->
+
 ## Collections
 
 <!--TODO: Consider moving Collections content into its own article-->
 
-While categories and tags make your content more accessible to users, you can also leverage them as site building tools. Collections bridge the gap between categorization and page design, allowing you to
+While categories and tags make your content more accessible to users, you can also leverage them as site building tools. Collections bridge the gap between categorization and page design, enabling you to
 
-- Group diverse content
+- **Group Diverse Content**: You can create collections to bring together different content types, like blog posts, documents, web content articles, and custom object entries, under a single theme or category. Grouping can be done manually or dynamically: hand pick individual items or define selection criteria to choose items on the fly.
 
-    You can create collections to bring together different content types, like blog posts, documents, web content articles, and custom object entries, under a single theme or category. Grouping can be done manually or dynamically: hand pick individual items or define selection criteria to choose items on the fly.
+- **Filter and Personalize Content**: You can define specific criteria, such as tags, categories, or publication dates, to filter and display only relevant items within a collection. This enables you to personalize the content experience for different user groups.
 
-- Filter and personalize content
+- **Simplify Content Presentation**: You can easily embed collections into your Liferay pages using dedicated out-of-the-box fragments like *Collection Display*. This streamlines the process of showcasing curated content within website layouts.
 
-    You can define specific criteria, such as tags, categories, or publication dates, to filter and display only relevant items within a collection. This allows you to personalize the content experience for different user groups.
+<!--TASK: Add section to this or another article that compares collections and asset publishers.
 
-- Simplify content presentation
+Asset Publishers have been part of the product for many years and is arguably one of the most widely used out of the box widgets. Asset Publishers combine the three concepts of selection criteria, display, and user interactive functionality in the widget’s configuration screen. Collections Collections decouple the logic for display and function from the selection criteria and provide integration with many of the richer content creator capabilities that are part of more recent versions of the product. With collections, display and user interactive functionality is handled by fragments and widgets.
 
-    You can easily embed collections into your Liferay pages using dedicated out-of-the-box fragments like *Collection Display*. This streamlines the process of showcasing curated content within your website layout.
+Asset Publishers are self-contained, meaning everything to do with them from the selection criteria to the way the results should be rendered is stored with the instance itself. Asset Publishers support Freemarker driven Widget Templates, which offer a tremendous amount of flexibility and control. For these complex templating scenarios, the Asset Publisher is best. With that said, Asset Publishers can be configured to use collections, so even if you have the complex templating needs, you should still use a Collection to feed the data into the Asset Publisher.
 
-<!--Exercise 11b-->
+Collections provide a centralized way to manage groups of content for rendering in site pages, while asset publishers are instance based. Since collections only focus on providing the criteria for selecting assets, they support the “separation of concerns.” You can take a single collection and use it multiple times as a “data source” for separate rendering components. Furthermore, changes to the collection are propagated to everywhere the collection is used. Also, while you can manually configure the selection criteria for collections, there are also Liferay features that auto-generate collection providers. For example, both Objects and Search Blueprints can generate collection providers so you can use lists of results from these features to select which content is rendered. Perhaps most importantly, collections support personalization. You can create variations on a collection, making it possible for you to create a single collection and a single page for rendering that collection, but have the content shift based on the user’s segment.
+
+Use Collections for asset selection, even if you still need an Asset Publisher for complex templating.
+-->
+
 ## Exercise: Auto-Tagging Content
+<!--Exercise 11b-->
 
 You can manually tag most Liferay assets, but manually tagging content can be time consuming. Liferay provides auto tagging features and integrations to simplify this process. By default, auto tagging is disabled.
 
@@ -58,7 +74,8 @@ To do this,
 
 1. Set the max number of tags to `3`.
 
-   **Note**: Leaving the field blank disables auto-tagging. Setting the value to 0 removes any auto limit.
+   !!! note
+       Leaving the field blank disables auto-tagging. Setting the value to `0` removes any auto limit.
 
 1. Click *Update*.
 
@@ -70,7 +87,8 @@ To do this,
 
    If the drop-down menu does not appear, enter `com.liferay.journal.model.JournalArticle`.
 
-   **Note**: You can also click the plus button to enable OpenNLP auto tagging for additional types of text content (i.e., blog entries = `com.liferay.blogs.model.BlogsEntry`; documents = `com.liferay.document.library.kernel.model.DLFileEntry`).
+   !!! note
+       You can also click the plus button to enable OpenNLP auto tagging for additional types of text content (i.e., blog entries = `com.liferay.blogs.model.BlogsEntry`; documents = `com.liferay.document.library.kernel.model.DLFileEntry`).
 
 1. Click *Update*.
 
@@ -80,7 +98,8 @@ To do this,
 
 1. Click *Update*.
 
-   **Tip**: You can double check that all the settings are correct for the Clarity site by going to *Site Menu* &rarr; *Configuration* &rarr; *Site Settings* &rarr; *Assets* and validating that auto tagging is enabled.
+   !!! tip
+       You can double check that all the settings are correct for the Clarity site by going to *Site Menu* &rarr; *Configuration* &rarr; *Site Settings* &rarr; *Assets* and validating that auto tagging is enabled.
 
 1. Go to Clarity's enterprise website, open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)), expand *Content & Data*, and select *Web Content*.
 
@@ -92,8 +111,8 @@ To do this,
 
 1. Begin editing the article. In the right side menu, you should see tags set for the content.
 
-<!--Exercise 12a-->
 ## Exercise: Creating a Vocabulary
+<!--Exercise 12a-->
 
 Liferay provides vocabularies for categorizing content, making it easier to find and display the content you need.
 
@@ -128,8 +147,8 @@ To do this,
 
 You now have a vocabulary to contain FAQ categories.
 
-<!--Exercise 12b-->
 ## Exercise: Adding Categories to a Vocabulary
+<!--Exercise 12b-->
 
 After creating a vocabulary, you can add categories and subcategories to establish the desired organizational schema for your content.
 
@@ -157,10 +176,12 @@ To do this,
 
    **Hint:** Look in the Properties sidebar for each FAQ.
 
+   <!--TASK: Reassess how the challenge is incorporated. -->
+
 You have now defined and assigned categories to your FAQ web content.
 
-<!--Exercise 13a-->
 ## Exercise: Creating a Manual Collection
+<!--Exercise 13a-->
 
 ILiferay Collections are lists of content items that you can showcase in your site pages. You can group different content types together, making it easier to find and display related items. Each list can be defined manually or dynamically.
 
@@ -237,8 +258,8 @@ To do this,
 
 Great! You created a manual collection and displayed it in Clarity's Home page. Next, you'll learn how to create a dynamic collection.
 
-<!--Exercise 13b-->
 ## Exercise: Creating a Dynamic Collection
+<!--Exercise 13b-->
 
 Having categorized your FAQ web content articles earlier, here you'll use those categories to build dynamic FAQ collections as Walter Douglas.
 
@@ -272,8 +293,8 @@ To do this,
 
 You now have four FAQ collections. Next, you'll use them to display content in Clarity's FAQ page.
 
-<!--Exercise 13c-->
 ## Exercise: Displaying Content on the FAQ Page
+<!--Exercise 13c-->
 
 Using what you have learned in the previous exercises, let’s map content to the FAQ page as Walter Douglas.
 
@@ -299,8 +320,8 @@ To do this,
 
 Using collection displays and custom fragments, you have rendered FAQ web content onto Clarity's FAQ page. Next, let's add content to the header announcement bar.
 
-<!--Exercise 13d-->
 ## Exercise: Adding Announcements to the Header
+<!--Exercise 13d-->
 
 Here you'll apply what you've learned about web content, collections, and page templates to add an announcement to Clarity's header bar as Walter Douglas.
 
@@ -320,7 +341,8 @@ To do this,
 
 1. Begin editing the *Primary Master Page* template.
 
-   **Note**: You may notice the styles applied to the master page are different from those applied in site pages. This is because you've applied the theme and theme CSS client extension to site pages and not to master pages. If desired, you can apply the theme and client extension to the master page directly. Make sure you uncheck all theme properties (i.e. Show Footer, Show Header, etc.).
+   !!! note
+       You may notice the styles applied to the master page are different from those applied in site pages. This is because you've applied the theme and theme CSS client extension to site pages and not to master pages. If desired, you can apply the theme and client extension to the master page directly. Make sure you uncheck all theme properties (i.e. Show Footer, Show Header, etc.).
 
 1. Toggle the *visibility* (![Visibility](../../images/icon-preview.png)) of the *Header Announcement Bar* container.
 
@@ -352,7 +374,8 @@ To do this,
    |:-------|:-------------|:------------------|
    | Styles | Text > Color | *Color Neutral 0* |
 
-   **Note**: Choosing *Color Neutral 0* selects a color value defined in the theme's style book.
+   !!! note
+       Choosing *Color Neutral 0* selects a color value defined in the theme's style book.
 
 1. Select the paragraph's *element-text* sub-element and configure this setting:
 
@@ -381,11 +404,11 @@ To do this,
 
 1. Click *Publish Master* to save your changes.
 
-The Header Announcement Bar is now visible on all pages that use the Primary Master Page template. Next, let's use Liferay's Commerce features to create Clarity's products catalog.
+The Header Announcement Bar is now visible on all pages that use the Primary Master Page template.
 
 ## Conclusion
 
-This concludes *Organizing Clarity’s Content*.
+Great! You've used categories and collections to help organize and display Clarity's content. Next, let's explore how Clarity can leverage Liferay's Commerce features to create content for their products catalog.
 
 Next Up: [Creating Clarity’s Commerce Content](./creating-claritys-commerce-content.md)
 

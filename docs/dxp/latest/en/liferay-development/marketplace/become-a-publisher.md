@@ -1,6 +1,4 @@
 ---
-toc:
-  - ./marketplace/become-a-publisher.md
 uuid: 6af4a6cd-c2b3-4a05-b310-e89f1dba5d82
 taxonomy-category-names:
 - Platform
@@ -38,6 +36,10 @@ Once submitted, a Marketplace administrator reviews your application and makes a
 
 After getting the approval for the publisher account, go to Marketplace and sign in. After signing in, open the Dashboard dropdown and select *Publisher*.
 
-This page displays a list of your published apps. To publish an app, click *New App*.
+This page displays a list of your published apps. To publish an app, click *New App*. See [Publishing Apps in Marketplace](./publishing-apps-in-marketplace.md) for more information.
 
 ![Go to your dashboard to publish a new app.](./become-a-publisher/images/04.png)
+
+## Related Topics
+
+* [Publishing Apps in Marketplace](./publishing-apps-in-marketplace.md)

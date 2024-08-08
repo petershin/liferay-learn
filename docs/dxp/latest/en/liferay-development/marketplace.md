@@ -1,6 +1,7 @@
 ---
 toc:
   - ./marketplace/become-a-publisher.md
+  - ./marketplace/publishing-apps-in-marketplace.md
 uuid: 1a9e675b-cec5-484f-822d-6e7d67012b47
 taxonomy-category-names:
 - Platform
@@ -14,10 +15,9 @@ Liferay's new Marketplace is a platform where you find, download, and share apps
 
 ![Visit the new Marketplace to find, download, and share apps.](./marketplace/images/01.png)
 
-To start using Marketplace, sign up for a Liferay account, or sign in to your existing account. There are two kinds of apps you can install from the Marketplace.
+To start using Marketplace, sign up for a Liferay account, or sign in to your existing account. There are two kinds of apps you can publish on the Marketplace.
 
-<!-- TASK - To add later once we have articles on installations
-* DXP Apps - These apps are provided as an `.lpkg` and runs on Liferay Self-Hosted and Liferay PaaS.
-* Cloud Apps - These apps are provided as a [LUFFA](https://learn.liferay.com/w/dxp/building-applications/client-extensions/packaging-client-extensions) and run on Liferay SaaS. -->
+* DXP Apps
+* Cloud Apps
 
-To publish apps on the Marketplace, you must [become a publisher](./marketplace/become-a-publisher.md).
+To publish apps on the Marketplace, you must [become a publisher](./marketplace/become-a-publisher.md). Once you're a publisher, see [Publishing Apps in Marketplace](./marketplace/publishing-apps-in-marketplace.md) for more information on how to publish apps.

@@ -2,21 +2,43 @@
 uuid: d304bf82-c70f-4470-ac61-8d41bf737851
 ---
 # Creating Clarity's Web Content
+<!-- TASK: Reconsider article title and scope; the exercises include steps for 'displaying' content. -->
 
-As we mentioned in the module introduction, *Content Management* is a broad term that can apply to a range of feature sets in the data lifecycle. We're going to focus specifically on the bread-and-butter Liferay features used to create content for web pages. Using structures and templates, you can build and display articles of web content through content pages, display pages, widgets, or fragments, which you learned about in the previous module. Web content articles are dynamic, versatile assets, in large part because they are made up of web content structures. 
+*Content Management* is a broad term that can apply to a range of feature sets in the data lifecycle. We're going to focus specifically on the bread-and-butter Liferay features used to create content for web pages. Using structures and templates, you can build and display articles of web content through content pages, display pages, widgets, or fragments, which you learned about in the previous module. Web content articles are dynamic, versatile assets, in large part because they are made up of web content structures. 
 
-<!--TODO: Consider including more content that compares use cases for Fragments vs Web Content; this would align more closely with the bootcamp slides-->
+<!--TASK: At this point of the course, it is not clear that Web Content is an application in Liferay--to the uninitiated, it sounds like a generic term. The same is true for 'structures' and 'templates'. I'd suggest revising the above paragraph for clarity and focus. For example:
 
-## Structures
+"Liferay's Web Content application is a tool for creating and managing content. With it, users can define structures for different types of content and then design templates for rendering them in site pages. You can also render content items by mapping their fields to page fragments. Clarity..."
+-->
 
-Web content structures are the building blocks of Liferay content. They determine what kinds of information you need to provide for a given web content article. Structures allow you to enforce a format for your content using a straightforward drag-and-drop interface with several types of fields. A single structure can be reused in multiple places, reducing effort for writers, editors, and designers alike. Liferay includes a Basic Web Content structure out of the box, but you can tailor your own structures to your specific needs.
+## Web Content Structures
 
-## Templates
+Web content structures define generic content types. Each structure determines the fields available to creators when creating content items (e.g., title, body, image). Liferay includes a Basic Web Content structure out of the box, but you can create your own.
 
-Web content templates provide an extra layer of configuration and customization to web content. Templates use the FreeMarker Template Language (FTL) to determine how content is rendered on a page. A template can be linked to a web content structure or even embedded in other templates.
+Clarity Vision Solutions needs these types of web content for their enterprise website:
 
-<!--Exercise 10a-->
+* Announcement
+* Blog Post
+* FAQ
+* Helpful Article
+* Job Listing
+* Leadership Profile
+* Legal Article
+
+Using these custom structures, Clarity can enforce a consistent format for content across their site, reducing effort for writers, editors, and designers alike.
+
+## Web Content Templates
+
+Once you've defined a structure, you can create a template for it. Web content templates use FreeMarker (FTL) to determine how specific types of content items render in site pages. This means different types of web content can have different visual presentations, providing designers with an extra layer of configuration and customization.
+
+<!--TASK: Add note that recommends using fragments; Also suggest a principle that avoids FreeMarker abuse: When possible, use fragments; and if you must use FreeMarker, avoid adding logic. -->
+
+<!--TASK: Add a section or note that compares when to use web content vs. manually entering inline fragment text-->
+
+<!--TASK: Add section on AI, or relocate exercise to separate article on AI (I recommended the latter)-->
+
 ## Exercise: Creating Web Content Structures
+<!--Exercise 10a-->
 
 The training workspace already includes most of the custom web content structures Clarity needs. In this exercise, you'll add the Announcements structure as Christian Carter.
 
@@ -73,8 +95,8 @@ To do this,
 
 Users can now create web content articles using the Announcements structure. You should now have eight web content structures implemented in Clarity’s website. Next, you'll create some web content articles.
 
-<!--Exercise 10b-->
 ## Exercise: Creating Web Content Articles
+<!--Exercise 10b-->
 
 The training workspace already includes some web content articles. However, Clarity also needs some FAQ and announcement articles. Here you'll create them as Christian Carter.
 
@@ -130,8 +152,8 @@ To do this,
 
 Great! You should have all the web content Clarity needs for their pages. Next, you'll map some of this content to fragments on Clarity's pages.
 
-<!--Exercise 10c-->
 ## Exercise: Mapping Content to Fragments
+<!--Exercise 10c-->
 
 Many fragments include sub-elements with their own configuration options, which depend on the sub-element’s type. Available types include
 
@@ -189,8 +211,8 @@ You can set each sub-element's content directly, or you can map them to existing
 
 You have now mapped content from Clarity's asset libraries to the image fragments on the Home page.  Next, let's explore how you can create content in Liferay with ChatGPT.
 
-<!--Exercise 11a-->
 ## Exercise: Generating Content with ChatGPT (Optional)
+<!--Exercise 11a-->
 
 You may have noticed that web content articles include the *AI Creator* button for generating content using ChatGPT. Using this feature requires a valid API key.
 
@@ -209,7 +231,8 @@ To do this,
 
 1. Enter your API key.
 
-   **Note**: Bootcamp participants are provided a temporary key.
+   !!! note
+       Bootcamp participants are provided a temporary key.
 
 1. Ensure *Enable ChatGPT to Create Content* is checked.
 
@@ -224,6 +247,8 @@ Great! You've used ChatGPT to generate web content articles.
 ## Conclusion
 
 This concludes *Creating Clarity’s Web Content*. Now let’s take a look at how you can organize your content in Liferay.
+
+<!--TASK: Revise conclusion to avoid "This concludes Creating Clarity’s Web Content." Recap the article's core concepts/exercises. Apply to other articles.-->
 
 Next Up: [Organizing Clarity’s Content](./organizing-claritys-content.md)
 

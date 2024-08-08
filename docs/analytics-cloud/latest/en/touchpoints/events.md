@@ -37,7 +37,7 @@ As individuals visit and interact with your site, Analytics Cloud tracks these e
 
    ![Select a different time period or compare to previous data.](./events/images/03.png)
 
-   Note that there are three tabs (Total, Unique, and Average) to view the breakdown of the event. The Total tab shows the total number of events triggered by all users. The Unique tab shows the total number of unique users who triggered the event. The Average tab shows the average number of events per user.
+   There are three tabs (Total, Unique, and Average) to view the breakdown of the event. The Total tab shows the total number of events triggered by all users. The Unique tab shows the total number of unique users who triggered the event. The Average tab shows the average number of events per user.
 
 1. To remove a filter, breakdown, or analysis, click the close icon (![Close](../images/icon-close.png)) next to the property you wish to change. Then make new selections.
 
@@ -45,13 +45,9 @@ As individuals visit and interact with your site, Analytics Cloud tracks these e
 
 ## Breakdowns and Filters
 
-Up to three attributes can be selected in the Breakdown row. Note that each type of event is made up of different attributes. Global attributes are attributes that are collected for all types of events. See [Event Attributes](../workspace-data/definitions.md) to learn more.
+You can select up to three attributes in the Breakdown row and as many as you need in the Filter row. There are two types of attributes to choose from: [event attributes](../workspace-data/definitions.md#event-attributes) and [individual attributes](../workspace-data/definitions.md#individuals). Each type of event is made of global attributes which are used for every type of event and attributes unique to itself. You can use the event's attributes and the attributes of the individuals that triggered the event for your analysis. The drop-down list shows all available attributes that can be used for filtering. The events analysis tool gives the flexibility to filter by attributes that are both related or unrelated to the events and breakdowns selected.
 
-Hover over a specific attribute in the drop-down list to see the attribute's description and data typecast. Click the *Pencil* icon (![Pencil](../images/icon-edit.png)) to edit the description or data typecast.
-
-Analytics Cloud automatically tries to detect and cast the datatype based on the first data collected for that attribute. Data is cast as either boolean, date, duration, number, or string. The data typecast determines the parameters available for filtering the analysis. For example, selecting an attribute that has a date typecast has filtering options such as a before or after time period. Date, duration, and number typecasts also have a grouping feature to group the data by a set number. For example, a date typecast enables grouping the data by day, month, or year.
-
-The drop-down list shows all available attributes that can be used for filtering. The events analysis tool gives the flexibility to filter by attributes that are both related or unrelated to the events and breakdowns selected.
+Hover over a specific attribute in the drop-down list to see the attribute's description and data typecast. Click the *Pencil* icon (![Pencil](../images/icon-edit.png)) to edit the description or data typecast. Analytics Cloud automatically tries to detect and cast the datatype based on the first data collected for that attribute. Data is cast as boolean, date, duration, number, or string. The data typecast determines the parameters available for filtering the analysis. For example, selecting an attribute that has a date typecast has filtering options such as a before or after time period. Date, duration, and number typecasts also have a grouping feature to group the data by a set number. For example, a date typecast enables grouping the data by day, month, or year.
 
 ![For date, duration, and number, select how to group the data.](./events/images/04.png)
 

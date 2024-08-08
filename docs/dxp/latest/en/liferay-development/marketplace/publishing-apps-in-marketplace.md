@@ -8,25 +8,30 @@ taxonomy-category-names:
 ---
 # Publishing Apps in Marketplace
 
-The Liferay Marketplace contains both DXP apps (for Liferay PaaS and Liferay Self-Hosted) and Cloud apps (for Liferay SaaS). As a publisher, you may want to publish your DXP apps on the Marketplace. The process of publishing a DXP app differs slightly. If you haven't signed up to become a publisher, see [Become a Publisher](./become-a-publisher.md) for more information.
+The Liferay Marketplace contains both Cloud apps (for Liferay SaaS, PaaS, and self-hosted) and DXP apps (for Liferay PaaS and Liferay Self-Hosted). As a publisher, you may want to publish your DXP apps on the Marketplace. The process of publishing a DXP app differs slightly from that of Cloud apps. If you haven't signed up to become a publisher, see [Become a Publisher](./become-a-publisher.md) for more information.
 
 After becoming a publisher,
 
+<!-- I think the procedure below should be split into two sections: Publishing A Cloud Application and Publishing A DXP Application. Then you avoid all this "For Cloud apps, do this" and "For DXP apps, do that." Also, there are too many screenshots here. You don't need to show the forms unless there's something confusing about them. I would get rid of them all, and include maybe only one that highlights the steps at a high level that appear in the sidebar: Profile, Build, Storefront, Version, Pricing, Support, and Submit. 
+
+A reference section below the text can explain the fields in the form. 
+
+-Rich
+
+-->
 1. Log in to your Liferay account at [marketplace.liferay.com](https://marketplace.liferay.com/).
 
-1. Open the *Dashboard* dropdown and select *Publisher*.
+1. Open the *Dashboard* drop-down and select *Publisher*.
 
 1. Click *New App*.
 
    In the new page that appears, you can download the Liferay Publisher License Agreement. Ensure that you've gone through it fully before continuing.
 
-   ![Ensure that you've gone through the Liferay Publisher License Agreement fully before continuing](./publishing-apps-in-the-marketplace/images/01.png)
-
 1. Click *Continue*.
 
-1. In the Profile step, Enter a name and description for your app. You must also choose one or more categories and tags.
+1. In the Profile step, enter a name and description for your app. You must also choose one or more categories and tags.
 
-   ![Enter a name, description, and choose one or more categories and tags.](./publishing-apps-in-the-marketplace/images/02.png)
+   ![Enter a name, description, and choose categories/tags.](./publishing-apps-in-the-marketplace/images/02.png)
 
 1. In the Build step, you can choose whether the app is cloud compatible. Choose *No* for a DXP app and *Yes* for a Cloud app. This opens up more options for configuring your app.
 
@@ -50,7 +55,7 @@ After becoming a publisher,
 
 1. In the Pricing step, select if the app is *Free* or *Paid*. For paid apps, ensure that you're a business and that you've entered payment information on your Marketplace profile.
 
-   ![Select whether the app is free or paid.](./publishing-apps-in-the-marketplace/images/04.png)
+   ![Select whether the app is free or paid.](./publishing-apps-in-the-marketplace/images/05.png)
 
 1. In the Licensing step, select if the app comes with a *Perpetual License* or a *Subscription License*. In the section below, choose whether you provide a 30-day free trial. For free apps, there's no option for a subscription license or a 30-day trial.
 

@@ -1,0 +1,17 @@
+---
+action: 
+    name: replace
+extends: substitution
+ignorecase: true
+level: error
+message: "Bad terminology. Use %s instead."
+swap:
+    back-end: backend
+    dropdown: drop-down
+    Freemarker: FreeMarker
+    front-end: frontend
+    openapi: OpenAPI 
+    out of the box: out-of-the-box
+    re-index: reindex 
+    RESTBuilder: REST Builder 
+    ServiceBuilder: Service Builder 

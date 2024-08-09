@@ -73,8 +73,6 @@ You can grab keys from these supported providers:
 
 - [Jivochat](https://www.jivochat.com/help/installation/find-code.html), in the *"How to find the HTML code to install on your website"* section.
 
-- [LiveChat](https://www.livechat.com/help/direct-chat-link/), in the *"Get your chat page link"* section.
-
 - [LivePerson](https://knowledge.liveperson.com/troubleshooting-find-your-account-number.html), in the *"Find your account number"* section.
 
 - [Smartsupp](https://docs.smartsupp.com/chat-box/configuration/#sub-domains-integration), in the *"Configuration"* section.

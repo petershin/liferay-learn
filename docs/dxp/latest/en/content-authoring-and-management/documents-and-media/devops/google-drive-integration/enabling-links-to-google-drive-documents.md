@@ -9,23 +9,19 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: be520f97-0b53-4a85-af0f-20585e0920b7
 ---
+
 # Enabling Links to Google Drive Documents
 
 Liferay provides a Marketplace plugin for integrating Documents and Media with Google Drive. When enabled, you can create shortcuts to your Google Drive files that enable you to view and manage them via Documents and Media. This plugin is available for both [Liferay Portal CE](https://web.liferay.com/marketplace/-/mp/application/105847499) and [Liferay DXP](https://web.liferay.com/marketplace/-/mp/application/98011653) systems. See [Installing Apps](../../../../system-administration/installing-and-managing-apps/installing-apps.md) for how to install the Liferay Plugin for Google Drive.
 
 After installing the plugin, you must set up your Google project and configure Liferay's Documents and Media application.
 
-```{important}
-The Liferay Plugin for Google Drive is a Labs application available for Liferay CE Portal and Liferay DXP. Labs apps are experimental and not supported by Liferay. They're released to accelerate the availability of useful and cutting-edge features. This status may change without notice. Use Labs apps at your own discretion.
-```
-
 ## Setting Up Your Google Project
 
 Enabling the Liferay plugin requires an active Google Project with both the Google Drive API and Google Picker API enabled. The Google Drive API allows users to view and edit Google files (i.e., Docs, Sheets, and Slides) in their native editors. The Picker API allows users to view and select from digital assets (e.g., photos, videos, documents) stored in Google Drive when uploading files to Documents and Media. If you haven't created a Project yet, see [Creating a Google Project](https://support.google.com/googleapi/answer/6251787?hl=en&ref_topic=7014522). Otherwise, see [Enabling APIs](https://support.google.com/googleapi/answer/6158841) to learn how to enable the Picker API for your project.
 
-```{note}
-If desired, you can enable the creation and editing of Google documents via Documents and Media apart from the Liferay Plugin for Google Drive. See [Enabling Document Creation and Editing with Google Drive](./enabling-document-creation-and-editing-with-google-drive.md) for more information.
-```
+!!! note
+    If desired, you can enable the creation and editing of Google documents via Documents and Media apart from the Liferay Plugin for Google Drive. See [Enabling Document Creation and Editing with Google Drive](./enabling-document-creation-and-editing-with-google-drive.md) for more information.
 
 After enabling Google Picker API for your Project, [generate an API Key](https://support.google.com/googleapi/answer/6158862) for the Picker API, and [set up OAuth 2](https://support.google.com/cloud/answer/6158849). Setting up OAuth 2 includes configuring an OAuth consent screen, generating OAuth 2 credentials, and adding the Liferay request URI to the list of Authorized JavaScript Origins. When generating OAuth 2 credentials, ensure you've selected *Web application* for the application type.
 
@@ -49,9 +45,8 @@ Follow these steps to configure the Documents and Media application.
 
 Once enabled, users can create Documents and Media shortcuts to Google assets.
 
-```{note}
-To disable this feature, click on the *Actions* button for Google Drive and select *Reset Default Values*.
-```
+!!! note
+    To disable this feature, click on the *Actions* button for Google Drive and select *Reset Default Values*.
 
 ## Creating Google Drive Shortcuts
 
@@ -81,5 +76,5 @@ Once published, the Google Drive file can now be accessed and used in Liferay vi
 
 ## Related Topics
 
-* [Enabling Document Creation and Editing with Google Drive](./enabling-document-creation-and-editing-with-google-drive.md)
-* [Linking to Files on Google Drive](../../uploading-and-managing/linking-to-files-on-google-drive.md)
+- [Enabling Document Creation and Editing with Google Drive](./enabling-document-creation-and-editing-with-google-drive.md)
+- [Linking to Files on Google Drive](../../uploading-and-managing/linking-to-files-on-google-drive.md)

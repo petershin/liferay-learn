@@ -1,6 +1,4 @@
 ---
-toc:
-  - ./enabling-automated-live-chat-systems/getting-a-chat-provider-account-id.md
 taxonomy-category-names:
 - Personalization
 - Live Chat
@@ -9,6 +7,7 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: eaf9a214-8e50-4e0e-a818-e96a21098e2e
 ---
+
 # Enabling Automated Live Chat Systems
 
 {bdg-secondary}`Liferay 7.4+`
@@ -53,16 +52,37 @@ Click To Chat integration with your live chat provider is now configured.
 
 ## Getting The Chat Provider Account ID or Token
 
-If you are unsure how to get the Account ID or Token for your chat provider see the following articles for available Chat Providers:
+After [Enabling Click To Chat](#enabling-click-to-chat) and choosing you provider, you must connect to them by following a two-step process:
 
-* [Chatwoot](./enabling-automated-live-chat-systems/getting-a-chat-provider-account-id/chatwoot.md)
-* [Crisp](./enabling-automated-live-chat-systems/getting-a-chat-provider-account-id/crisp.md)
-* [Hubspot](./enabling-automated-live-chat-systems/getting-a-chat-provider-account-id/hubspot.md)
-* [Intercom](./enabling-automated-live-chat-systems/getting-a-chat-provider-account-id/intercom.md)
-* [Jivochat](./enabling-automated-live-chat-systems/getting-a-chat-provider-account-id/jivochat.md)
-* [LiveChat](./enabling-automated-live-chat-systems/getting-a-chat-provider-account-id/livechat.md)
-* [LivePerson](./enabling-automated-live-chat-systems/getting-a-chat-provider-account-id/liveperson.md)
-* [Smartsupp](./enabling-automated-live-chat-systems/getting-a-chat-provider-account-id/smartsupp.md)
-* [Tawk.to](./enabling-automated-live-chat-systems/getting-a-chat-provider-account-id/tawk-to.md)
-* [Tidio](./enabling-automated-live-chat-systems/getting-a-chat-provider-account-id/tidio.md)
-* [Zendesk](./enabling-automated-live-chat-systems/getting-a-chat-provider-account-id/zendesk.md)
+1. Find your Account ID.
+
+1. Copy and paste it into the *Chat Provider Account ID* field.
+
+   !!! note
+       Unlike *Zendesk Web Widgets Classic*, *Zendesk Web Widgets* requires an Key ID and a Secret Key.
+
+You can grab keys from these supported providers:
+
+- [Chatwoot](https://www.chatwoot.com/docs/product/channels/api/create-channel), in the *"Create a contact"* section.
+
+- [Crisp](https://help.crisp.chat/en/article/where-can-i-find-my-website-id-1ylqx1s/), in the *"How to find the WebsiteID?"* section.
+
+- [Hubspot](https://knowledge.hubspot.com/integrations/use-hubspots-integration-with-netsuite), in the *"Locate your NetSuite Account ID, Access Token ID and Access Token Secret"* section.
+
+- Intercom: You can find your account ID by looking at the URL. Your account ID is between `/apps` and `/home` in the URL. If the URL is `https://app.intercom.com/a/apps/abcdefg1/home`, after `/apps` the sequence of letters and numbers is your ID. In this example, Intercom's Account ID is `abcdefg1`.
+
+- [Jivochat](https://www.jivochat.com/help/installation/find-code.html), in the *"How to find the HTML code to install on your website"* section.
+
+- [LiveChat](https://www.livechat.com/help/direct-chat-link/), in the *"Get your chat page link"* section.
+
+- [LivePerson](https://knowledge.liveperson.com/troubleshooting-find-your-account-number.html), in the *"Find your account number"* section.
+
+- [Smartsupp](https://docs.smartsupp.com/chat-box/configuration/#sub-domains-integration), in the *"Configuration"* section.
+
+- [Tawk.to](https://help.tawk.to/article/direct-chat-link), in the *"Here’s how to find the Direct Chat Link:"* section.
+
+- [Tidio](https://help.tidio.com/hc/en-us/articles/5389680306844-Install-Tidio-on-Site123), in the *"Installation"* section.
+
+- [Zendesk Web Widgets Classic](https://developer.zendesk.com/documentation/classic-web-widget-sdks/web-widget/quickstart-tutorials/web-widget-javascript-apis/), in the *"Adding the Web Widget (Classic) on your web page"* section. The Account ID is the portion of the snippet after `...snippet.js?key=`. 
+
+- Zendesk Web Widgets: You get your Account ID in the same way you get it in the Classic version. You can find the [Key ID and Secret key](https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/web/enabling_auth_visitors/#generating-a-signing-key) in the *"Generating a signing key"* section.

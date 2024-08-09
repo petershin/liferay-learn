@@ -6,13 +6,16 @@ taxonomy-category-names:
 - Liferay PaaS
 uuid: 1f809dd9-0c27-43e0-9223-c5d27949fab0
 ---
+
 # Enabling Glowroot on PaaS
 
-Glowroot is included with Liferay since {bdg-secondary}`Liferay DXP 7.4-u100`. By default, it is inside `/opt/liferay/glowroot`. The steps to enable Glowroot differ based on your storage solution.
+{bdg-secondary}`Liferay DXP 7.4-u100+` 
+
+Glowroot is included with Liferay in the `/opt/liferay/glowroot` folder. The steps to enable Glowroot differ based on your storage solution.
 
 ## Enabling Glowroot with SFS
 
-1. To persist configuration changes, move Glowroot to `/opt/liferay/data`, as such:
+1. To persist configuration changes, move Glowroot to `/opt/liferay/data`:
 
    ```bash
    mv /opt/liferay/glowroot /opt/liferay/data/
@@ -39,7 +42,7 @@ Glowroot is included with Liferay since {bdg-secondary}`Liferay DXP 7.4-u100`. B
 
 ## Enabling Glowroot with GCS
 
-1. To persist configuration changes, move Glowroot to `/opt/liferay/data/license`, as such:
+1. To persist configuration changes, move Glowroot to `/opt/liferay/data/license`:
 
    ```bash
    mv /opt/liferay/glowroot /opt/liferay/data/license/
@@ -70,8 +73,7 @@ Glowroot is included with Liferay since {bdg-secondary}`Liferay DXP 7.4-u100`. B
 
 1. Append `/o/glowroot` to the end of the site's URL. For example, if the site's URL is `https://webserver-acme-dev.lfr.cloud`, navigate to `https://webserver-acme-dev.lfr.cloud/o/glowroot`.
 
-!!! tip
-    For more security, create an Administrator user with a username and secure password. Then, delete the anonymous user.
+1. Create an Administrator user with a username and secure password. Then delete the anonymous user.
 
 ## Related Topics
 

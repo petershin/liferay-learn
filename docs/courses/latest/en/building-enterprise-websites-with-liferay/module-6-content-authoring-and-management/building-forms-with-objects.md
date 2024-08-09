@@ -2,8 +2,11 @@
 uuid: 1645bc8e-0a29-4cd2-bd52-4072ff7b39ce
 ---
 # Building Forms with Objects
+<!--TASK: Consider naming article 'Building Business Forms'-->
 
-Most digital experience solutions require the development of custom business functions that drive user interaction and engagement. Clarity wants a very common example of this type of business function: a Contact Us form that will collect data from site visitors and make that data available to the appropriate internal users. Traditionally, even a straightforward process like this requires a significant time investment from a development team to produce and iterate on code that will be expensive to maintain. To avoid the pain points of traditional development, Clarity wants to leverage Liferay Objects to build a Contact Us form without touching a single line of code.
+Most digital experience solutions require the development of custom business functions that drive user interaction and engagement. Clarity wants a very common example of this type of business function: a Contact Us form that will collect data from site visitors and make that data available to the appropriate internal users. Traditionally, even a straightforward process like this requires a significant time investment from a development team to produce and iterate on code that will be expensive to maintain. To avoid the pain points of traditional development, Clarity wants to leverage Liferay Objects and fragments to build a Contact Us form without touching a single line of code.
+
+<!--TASK: Reframe intro to focus on forms as a type of content, not as a developer activity. Forms are a type of content that gathers valuable information, enables interactions, and fosters engagement. In Liferay, you can build forms using Liferay objects and page fragments.-->
 
 ## Objects
 
@@ -11,10 +14,12 @@ With Liferay Objects, you can define the schema of your data models with specifi
 
 One of the true strengths of objects is their integration with Liferay's core frameworks and functionalities, such as permissions, security, workflows, and more. This creates a cohesive user experience where your custom-built solutions feel and act like native parts of the Liferay platform.  Not only does this let you achieve faster time to value, but it also means that any Liferay practitioner can maintain your solution, eliminating the need for technical developer resources.
 
-Now, you can try out objects for yourself in the following exercises.
+<!--TASK: Reframe above Objects overview to focus on Objects as a way to build business forms (whether simple or complex)-->
 
-<!--Exercise 19a-->
+<!--TASK: Add H2 on form fragments.-->
+
 ## Exercise: Creating an Object Definition
+<!--Exercise 19a-->
 
 Clarity wants to create a user-friendly contact form to streamline communication with non-employee users. Liferay Objects provides the tools to build and seamlessly integrate this form with their Contact Us page.
 
@@ -88,8 +93,8 @@ To do this,
 
 Next, you'll add the form to Clarity's Contact Us page.
 
-<!--Exercise 19b-->
 ## Exercise: Building the Form
+<!--Exercise 19b-->
 
 <!-- TASK: This exercise is using Clarity Admin due to Walter Douglas missing permissions in the baseline. Clarity Admin will be replaced by Walter Douglas after it's fixed. -->
 
@@ -145,12 +150,12 @@ Great! You've fully set up the Contact Us page and made it available for Clarity
 
 Next, you can learn how to create a multi-step form or move on to the next lesson to learn about Liferay's capabilities for analytics and personalized user experiences.
 
-<!--Exercise 19c-->
 ## Exercise: Creating a Multi-Step Form (Bonus)
+<!--Exercise 19c-->
 
 <!-- TASK: This exercise is using Clarity Admin due to Walter Douglas missing permissions in the baseline. Clarity Admin will be replaced by Walter Douglas after it's fixed. -->
 
-Using objects, form fragments, and display page templates, you can develop multi-step forms to allow users to fill a form in different display pages, which are connected to the same object entry.
+Using objects, form fragments, and display page templates, you can develop multi-step forms to enable users to fill a form in different display pages, which are connected to the same object entry.
 
 Here you'll create a display page for the second step and link the Contact Us form container to it as the Clarity Admin user.
 
@@ -227,10 +232,12 @@ To do this,
 
 1. Test out the form.
 
-Great! Now you've created a multi-step form using objects, form fragments, and display page templates.
+Great! You've created a multi-step form using objects, form fragments, and display page templates.
 
 ## Conclusion
 
-Congratulations! You have now completed *Module 6: Content Authoring and Management*.
+Congratulations! You've completed *Module 6: Content Authoring and Management*. Throughout this module, you've learned best practices for creating, storing, organizing, and displaying content in Liferay DXP. You also learned about setting up publishing workflows for facilitating and streamlining content collaboration.
 
-[Back to Building Enterprise Websites with Liferay](../../building-enterprise-websites-with-liferay.md)
+In the next module, you'll learn about using Liferay analytics and personalization features to create and improve user experiences.
+
+[Module 7: Analytics and Personalization](../module-7-analytics-and-personalization.md)

@@ -3,15 +3,17 @@ uuid: e9801e49-14af-43d7-bd38-d90ad513f96c
 ---
 # Creating Clarity’s Commerce Content
 
-Although they are not yet a B2C enterprise, Clarity wants to leverage some of the capabilities available through Liferay Commerce to create product-specific content. While it is feasible to build Clarity's product material using web content structures, Liferay’s commerce features provide an additional layer of future-proofing to the website. In this section, we'll cover the following commerce features:
+Although they are not yet building an e-commerce storefront, Clarity wants to leverage some Liferay commerce capabilities to create product content. While it is feasible to build Clarity's product material using web content structures, Liferay’s commerce features provide an additional layer of future-proofing to the website. In this section, we'll cover the following commerce features:
 
 - Catalogs
 - Products
 - Channels
 
+<!-- TASK: Make a separate article for understanding Liferay Commerce and how to leverage their features as content; then have separate articles for different exercises, since this article is over 2700 words. -->
+
 ## Catalogs
 
-A catalog is a group of related products. Liferay catalogs provide a highly flexible way to organize your product offerings in the most sensible way for your business. There is no limit to the number of catalogs you can create, although maintenance effort should be a factor in how many you choose to have. Catalogs also allow you to define permissions for the products they contain, so that different product teams can manage different product groupings.
+A catalog is a group of related products. Liferay catalogs provide a highly flexible way to organize your product offerings in the most sensible way for your business. There is no limit to the number of catalogs you can create, although maintenance effort should be a factor in how many you choose to have. Catalogs also enable you to define permissions for the products they contain, so that different product teams can manage different product groupings.
 
 In addition, catalogs capture important commerce attributes like language, currency, and price lists, along with a placeholder image for products without an associated image. As useful as catalogs are, they are just empty containers without the products to populate them. Let's take a look at products next.
 
@@ -19,21 +21,13 @@ In addition, catalogs capture important commerce attributes like language, curre
 
 Like any manufacturer, Clarity has variants of their products designed to achieve different goals and target different customer profiles. Liferay Commerce supports four product types out of the box:
 
-- Simple Product
+- **Simple Product**: Any physical product for which inventory is tracked.
 
-    Any physical product for which inventory is tracked.
+- **Virtual Product**: Any non-tangible product, such as music files, electronic publications, services, and warranties.
 
-- Virtual Product
+- **Grouped Product**: Two or more products from a Catalog that are packaged together and sold as a single item. Grouped products are tracked in your inventory and can contain simple products, virtual products, or other grouped products.
 
-    Any non-tangible product, such as music files, electronic publications, services, and warranties.
-
-- Grouped Product
-
-    Two or more products from a Catalog that are packaged together and sold as a single item. Grouped products are tracked in your inventory and can contain simple products, virtual products, or other grouped products.
-
-- Shop by Diagram
-
-    Component parts belonging to a Bill of Materials (BOM) diagram that references products in the store.
+- **Shop by Diagram**: Component parts belonging to a Bill of Materials (BOM) diagram that references products in the store.
 
  Products offer more than just a predefined type of content--they offer many additional features that together create a first-class commerce experience with minimal effort:
 
@@ -67,8 +61,8 @@ Once their products and catalogs are configured, Clarity needs to think about ho
 
 While e-commerce isn’t Clarity’s main focus right now, setting up these features will set them up for success in the future.
 
-<!--Exercise 14a-->
 ## Exercise: Creating Clarity’s Products Catalog
+<!--Exercise 14a-->
 
 A catalog is a group of related products. Liferay catalogs provide a highly flexible way to organize your product offerings in the most sensible way for your business.
 
@@ -99,8 +93,8 @@ To do this,
 
 Great! Now that you've created the catalog, you can start adding products to it. But first, let's add specifications that you can add to Clarity's products when you create them.
 
-<!--Exercise 14b-->
 ## Exercise: Defining Product Specifications
+<!--Exercise 14b-->
 
 Product specifications store information about products, like size, material, and color. To improve organization, you can also save them into specification groups.
 
@@ -170,8 +164,8 @@ To do this,
 
 Now that you've added some specifications, you can apply them to products as you create them.
 
-<!--Exercise 14c-->
 ## Exercise: Creating Products
+<!--Exercise 14c-->
 
 Products represent the items sold by a company. Like any manufacturer, Clarity has a wide variety of products designed to achieve different goals and target different customer profiles.
 
@@ -183,7 +177,8 @@ To do this,
 
 1. Click *Add* (![Add Button](../../images/icon-add.png)) and select *Simple*.
 
-   **Note**: A simple product is any physical product for which inventory is tracked.
+   !!! note
+       A simple product is any physical product for which inventory is tracked.
 
 1. Enter the following:
 
@@ -271,8 +266,8 @@ To do this,
 
 Great! Now that you've added products, you can set up a channel to display them in Clarity's site.
 
-<!--Exercise 14d-->
 ## Exercise: Creating a Commerce Channel
+<!--Exercise 14d-->
 
 Channels determine the storefront where products are displayed and sold to customers.
 
@@ -294,7 +289,8 @@ To do this,
 
 1. Click *Add* to finish creating your channel.
 
-   **Note**: To use a channel to sell products, you must link it to a site.
+   !!! note
+       To use a channel to sell products, you must link it to a site.
 
 1. Go to the *Type* tab and click *Select Site*.
 
@@ -304,8 +300,8 @@ To do this,
 
 With the channel created, let's return to Clarity's site and finish setting up their product pages.
 
-<!--Exercise 14e-->
 ## Exercise: Setting Up the Product Pages
+<!--Exercise 14e-->
 
 The training workspace includes three pages for displaying Clarity's products: Products, Product List, and Product Details. Each page is already wireframed.
 
@@ -334,7 +330,8 @@ To implement this,
 
 1. For Vocabulary, select *Clarity Products*.
 
-   **Note**: Do not enable the Use Root Category option.
+   !!! note
+       Do not enable the Use Root Category option.
 
 1. Click *Save* and close the window.
 
@@ -398,7 +395,8 @@ To fix this,
 
 1. Click *New* and select *Search Results Template*.
 
-   **Important**: There are two "Search Results Template" options. One is for general search results while the other one is for Commerce products. Try selecting the second option first. If it's the right one, you will see some commerce specific variables in the Elements menu (i.e., *Commerce Product Search Result Display Context* and *Commerce Product Catalog Entries*). If you do not see these variables, try using the other template.
+   !!! important
+       There are two "Search Results Template" options. One is for general search results while the other one is for Commerce products. Try selecting the second option first. If it's the right one, you will see some commerce specific variables in the Elements menu (i.e., *Commerce Product Search Result Display Context* and *Commerce Product Catalog Entries*). If you do not see these variables, try using the other template.
 
 1. Enter `Clarity Search Results Cards` as the template name.
 
@@ -412,7 +410,8 @@ To fix this,
 
 1. Hover over the Search Results widget, click *Actions* (![Actions Button](../../images/icon-actions.png)) in the top right corner of the widget, and select *Configuration*.
 
-   **Note**: The Search Results widget should look blank, towards the bottom right side of the layout.
+   !!! note
+       The Search Results widget should look blank, towards the bottom right side of the layout.
 
    ![The Search Results widget should look blank.](./creating-claritys-commerce-content/images/07.png)
 
@@ -420,7 +419,8 @@ To fix this,
 
 1. For *Display Template*, select *Clarity Search Results Cards*.
 
-   **Note**: If you don’t see the template here, return to step 8 and try the other Search Results template.
+   !!! note
+       If you don’t see the template here, return to step 8 and try the other Search Results template.
 
 1. Click *Save* and close the window.
 
@@ -450,11 +450,11 @@ We're almost there, but just as before, the out-of-the-box widget doesn't align 
 
 **Bonus**: As a bonus exercise, repeat the steps from the previous exercise to create a Product Detail widget that matches the Clarity Vision Solutions design.
 
-Congratulations! You've set up Clarity's product pages.
+<!--TASK: Change how the bonus exercise is incorporated-->
 
 ## Conclusion
 
-This concludes *Creating Clarity’s Commerce Content*.
+Congratulations! You've finished setting up Clarity's product pages. Next, lest's explore how Clarity can set up publishing workflows in Liferay DXP.
 
 Next Up: [Publishing Content with Workflows](./publishing-content-with-workflows.md)
 

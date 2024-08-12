@@ -49,9 +49,9 @@ Liferay provides a client extension that integrates with [UPS](https://www.ups.c
 
 1. Select the new shipping engine and activate it using the *Active* toggle.
 
-1. Click *Save*. A new tab, *Configuration*, appears for the shipping method.
+1. Click *Save*. A new *Configuration* tab appears for the shipping method.
 
-   The configuration tab contains an input field. You must the following few key-value pairs for the shipping method to work correctly.
+   The configuration tab contains an input field. You must add the following few key-value pairs for the shipping method to work correctly.
 
    ```
    clientId=<CLIENT_ID>
@@ -68,7 +68,7 @@ Liferay provides a client extension that integrates with [UPS](https://www.ups.c
    simpleRateCode=
    ```
 
-   Replace `<CLIENT_ID>` and `<CLIENT_SECRET>` with the appropriate values from your UPS Developer Dashboard. For valid values of other fields, see below:
+   Replace `<CLIENT_ID>` and `<CLIENT_SECRET>` with the appropriate values from your UPS Developer Dashboard. For valid values of other fields, see links below:
 
    * [dimensionsUnitOfMeasurementCode](https://developer.ups.com/api/reference?loc=en_US#operation/Rate!path=RateRequest/Shipment/Package/Dimensions/UnitOfMeasurement&t=request)
    * [packageWeightUnitOfMeasurementCode](https://developer.ups.com/api/reference?loc=en_US#operation/Rate!path=RateRequest/Shipment/Package/DimWeight/UnitOfMeasurement&t=request)

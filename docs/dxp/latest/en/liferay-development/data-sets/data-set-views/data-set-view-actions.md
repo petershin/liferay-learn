@@ -120,7 +120,7 @@ To create a headless action,
 
 1. Under Action Behavior, select *Headless* as the Type.
 
-1. Enter a *Headless Action Key*. With the key, administrators can associate an action to a headless endpoint. 
+1. Enter a *Headless Action Key*. With the key, administrators can associate an action to a headless endpoint.
 
 1. (Optional) [Set *Confirmation* and *Status Messages*](#setting-confirmation-and-status-messages) for your headless action.
 
@@ -138,7 +138,10 @@ To create a link action,
 
 1. Under Action Behavior, select *Link* as the Type.
 
-1. [Specify the URL for redirecting the user](#specifying-the-url-for-redirecting-the-user).
+1. Specify the URL to which the user should be taken.
+
+!!! note
+    When you set a URL in a link action, the Data Set component automatically adds `redirect` and `backURL` parameters, with the `backURL` parameter set to the URL of the page where the Data Set is located. If you can't navigate back to the Data Set from the destination page, ensure that the destination page handles the parameters correctly.
 
 1. (Optional) Enter a *Headless Action Key*. With the Action key, administrators can associate an action to a headless endpoint (e.g. GET, POST, and DELETE).
 
@@ -152,9 +155,9 @@ Once configured, users are directed to the designated URL upon clicking the acti
 
 ### Modal Action
 
-Modal actions send users to a specified URL that is rendered in a modal window. You can use modal actions as item or creation actions, but remember that only item actions include confirmation messages.
+Modal actions send users to a specified URL that is rendered in a modal. You can use modal actions as item or creation actions, but remember that only item actions include confirmation messages.
 
-![Use the modal action to redirect users to a specified URL and render its content in a modal window.](./data-set-view-actions/images/07.png)
+![Use the modal action to redirect users to a specified URL and render its content in a modal.](./data-set-view-actions/images/07.png)
 
 !!! important
     When using a Modal action, make sure the destination URL works well inside a modal.
@@ -165,9 +168,9 @@ To create a modal action,
 
 1. Select a *Variant* for your modal: Full Screen, Large, or Small.
 
-1. Enter a *Title* for your modal.
+1. [Enter a *Title* for your modal](#using-titles-with-modal-and-side-panel-actions).
 
-1. [Specify the URL for redirecting the user](#specifying-the-url-for-redirecting-the-user).
+1. Specify the URL to which the user should be taken.
 
 1. (Optional) Enter a *Headless Action Key*. With the Action key, administrators can associate an action to a headless endpoint (e.g. GET, POST, and DELETE).
 
@@ -190,9 +193,9 @@ To create a side panel action,
 
 1. Under the Action Behavior section, select *Side Panel* as the Type.
 
-1. Enter a *Title* for your Side Panel.
+1. [Enter a *Title* for your side panel](#using-titles-with-modal-and-side-panel-actions).
 
-1. [Specify the URL for redirecting the user](#specifying-the-url-for-redirecting-the-user).
+1. Specify the URL to which the user should be taken.
 
 1. (Optional) Enter a Headless Action Key. With the Action key, administrators can associate an action to a headless endpoint (e.g. GET, POST, and DELETE).
 
@@ -232,43 +235,11 @@ To create status messages for [async](#async-action) and [headless](#headless-ac
 !!! tip
     Confirmation and status messages can be localized. Read [Editing and Localizing Labels](./data-set-view-visualization-modes.md#editing-and-localizing-labels) to learn more.
 
-### Specifying the URL for Redirecting the User
+### Using Titles with Modal and Side Panel Actions
 
 {bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA132+`
 
-When configuring link, side panel, and modal actions, it’s essential to specify the correct URL for redirection after an action is completed. By including specific parameters in the URL, you can ensure users are redirected to the desired page once the action is complete.
-
-With Link actions,
-
-Use the `backURL`, `_backURL`, or `_redirect` parameters to specify where users should be redirected after completing the action:
-
-- The `backURL` and the `_backURL` parameters function similarly, with `_backURL` being used for compatibility or legacy reasons. Both parameters define the URL where users return after the action is completed.
-
-   Here are some examples:
-
-   `http://localhost:8080/group/control_panel/manage?p_p_id=com_liferay_object_web_internal_object_definitions_portlet_ObjectDefinitionsPortlet_33058&(...)_backURL=http%3A%2F%2Flocalhost%3A8080%2Fcontent-page`
-
-   Users click on a link action and are directed to the `ObjectDefinitionsPortlet_33058` to create an object entry. After completing the action and returning to the object definition page, they are redirected back to `http://localhost:8080/content-page`.
-
-   `http://localhost:8080/group/control_panel/manage?p_p_id=com_liferay_users_admin_web_portlet_UsersAdminPortlet&(...)edit_user&backURL=http%3A%2F%2Flocalhost%3A8080%2Fuser-management-page`
-
-   Users are taken to the Edit User page and the `backURL` parameter points at `http://localhost:8080/user-management-page`.
-
-- The `_redirect` parameter specifies an alternative URL for redirection and takes precedence over `backURL` and `_backURL` if all are present. It's used when an explicit redirect is required instead of returning to a previous page.
-
-   Here is an example:
-
-   `http://localhost:8080/group/control_panel/manage?p_p_id=com_liferay_journal_web_portlet_JournalPortlet(...)_com_liferay_journal_web_portlet_JournalPortlet_redirect=http%3A%2F%2Flocalhost%3A8080%2Fcontent-page`
-
-   Users manage web content and, after completing the action, are redirected to `http://localhost:8080/content-page`.
-
-- If no redirection parameters are provided but a `p_p_id` parameter is present, the system infers redirection from the `p_p_id` and uses the current URL as the value. This way, users are returned to the data set view page after the action is complete.
-
-- If no parameters are provided, no redirection occurs after the action is complete.
-
-With Side Panel and Modal actions,
-
-Redirection is unnecessary since these components open over the current page. Adding a `Title` field to these actions displays a bar with the title and a close button at the top of the component, allowing users to close it and return to the current page.
+Side Panel and Modal actions open on top of the current page, allowing users to interact with the content without navigating away. When you add a `Title` field to these actions, a bar with the title and a close button appears at the top of the component. Users can close the modal/side panel and return to the original page.
 
 ![A Side Panel action with a title and a URL without a title.](./data-set-view-actions/images/10.png)
 

@@ -36,14 +36,14 @@ To access the configuration menu for the sign in widget,
 
 1. You can configure several options here.
 
-   - Authentication Type - See [Authentication Types](#authentication-types) for more information.
-   - Email From - Set the name and email address for the sender of system-generated emails (includes the password reset notification email).
-   - Password Reset Notification - Set the subject and contents of the password reset notification email.
+   - **Authentication Type:** See [Authentication Types](#authentication-types) for more information.
+   - **Email From:** Set the name and email address for the sender of system-generated emails (includes the password reset notification email).
+   - **Password Reset Notification:** Set the subject and contents of the password reset notification email.
 
 1. Click *Save* to apply a new configuration.
 
 !!! note
-    Starting from Liferay DXP 2024.Q3/GA132, both the *Email From* and *Password Reset Notification* settings have been removed from the sign in widget through a [beta feature flag](../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags). They are now available at the instance level. To access these settings, open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and go to *Control Panel* &rarr; *Instance Settings* &rarr; *Email*. You can find the *Email Sender* and *Password Reset Notification* settings here.
+    Starting from Liferay DXP 2024.Q3/GA132, the *Email From* and *Password Reset Notification* settings were removed from the sign in widget through a [beta feature flag](../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags). They are now available at the instance level. To access these settings, open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and go to *Control Panel* &rarr; *Instance Settings* &rarr; *Email*. You can find the *Email Sender* and *Password Reset Notification* settings here.
 
 ## Authentication Types
 

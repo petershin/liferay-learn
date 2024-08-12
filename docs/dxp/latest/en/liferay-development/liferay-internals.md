@@ -19,11 +19,11 @@ Liferay is a complex open-source platform built on several key technologies and 
 
 ## Architecture
 
-Liferay's architecture features a robust core that manages portal operations and configurations. The service layer handles essential functions such as content management, user roles, and system integration through modular, reusable services. The user interface (UI) is centered around portlets for dynamic content and functionality, customizable themes and layouts for visual design, and tools for rich content management and personalization. Together, these components create a flexible, scalable platform suited for various enterprise applications, ensuring seamless integration and user experience. For more information, see [Architecture](./liferay-internals/architecture.md).
+  Liferay's architecture features a robust core that manages portal operations and configurations. The service layer handles essential functions such as content management, user roles, and system integration through modular, reusable services. The user interface (UI) uses portlets for dynamic content and functionality, customizable themes and layouts for visual design, and a framework called Clay that provides a consistent experience language. Together, these components create a flexible, scalable platform suited for various enterprise applications, ensuring seamless integration and user experience. For more information, see [Architecture](./liferay-internals/architecture.md).
 
 ## Extending Liferay
 
-Liferay code is highly customizable. If your project requires a new feature to be added or a change in the behavior of a component in the portal, it's possible to adapt the code to your needs. For more information on how to add, override, or modify services and languages, see [Extending Liferay](./liferay-internals/extending-liferay.md).
+Liferay code is highly customizable. If your project requires a new feature to be added or a change in the behavior of a component in the portal, you can adapt the code to your needs. For more information on how to add, override, or modify services and languages, see [Extending Liferay](./liferay-internals/extending-liferay.md).
 
 ## Contributing to Liferay Development
 

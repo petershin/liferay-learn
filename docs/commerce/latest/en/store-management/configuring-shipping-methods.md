@@ -2,6 +2,7 @@
 toc:
   - ./configuring-shipping-methods/using-the-flat-rate-shipping-method.md
   - ./configuring-shipping-methods/using-the-variable-rate-shipping-method.md
+  - ./configuring-shipping-methods/using-the-ups-shipping-method.md
   - ./configuring-shipping-methods/applying-shipping-method-restrictions.md
   - ./configuring-shipping-methods/measurement-units.md
   - ./configuring-shipping-methods/shipping-method-reference.md
@@ -16,19 +17,9 @@ taxonomy-category-names:
 ---
 # Configuring Shipping Methods
 
-Liferay supports several shipping methods and carriers. Before choosing any shipping method, verify the [Measurement Units](./configuring-shipping-methods/measurement-units.md) that the store uses.
+Liferay supports two shipping methods out-of-the-box, [Flat Rate](./configuring-shipping-methods/using-the-flat-rate-shipping-method.md) and [Variable Rate](./configuring-shipping-methods/using-the-variable-rate-shipping-method.md). Before choosing any shipping method, verify the [Measurement Units](./configuring-shipping-methods/measurement-units.md) that the store uses. Shipping methods may be restricted by country or region. To learn more, see [Applying Shipping Method Restrictions](./configuring-shipping-methods/applying-shipping-method-restrictions.md). 
 
-Here are several shipping methods:
-
-* [Variable Rate](./configuring-shipping-methods/using-the-variable-rate-shipping-method.md)
-* [Flat Rate](./configuring-shipping-methods/using-the-flat-rate-shipping-method.md)
-
-<!-- Commenting until developer guide is added back
-For users interested in adding other shipping methods or carriers, see [Implementing a New Shipping Engine](../developer-guide/sales/implementing-a-new-shipping-engine.md). -->
-
-Shipping methods may be restricted by country or region. To learn more, see [Applying Shipping Method Restrictions](./configuring-shipping-methods/applying-shipping-method-restrictions.md).
-
-<br></br>
+For users interested in adding other shipping methods or carriers, see [Using the Shipping Engine Client Extension](../developer-guide/using-client-extensions/using-the-shipping-engine-client-extension.md).
 
 ## Related Topics
 

@@ -1,12 +1,11 @@
 ---
 toc:
-- ./module-7-analytics-and-experiences/claritys-analytics-and-experiences-requirements.md
-- ./module-7-analytics-and-experiences/understanding-users-with-analytics-cloud.md
-- ./module-7-analytics-and-experiences/personalizing-experiences-for-users.md
+- ./module-7-analytics-and-personalization/claritys-analytics-and-experiences-requirements.md
+- ./module-7-analytics-and-personalization/understanding-users-with-analytics-cloud.md
+- ./module-7-analytics-and-personalization/personalizing-experiences-for-users.md
 uuid: b23dfac8-d7e6-4885-818d-d2936dea6b83
 ---
-# Module 7: Analytics and Experiences
-<!-- TASK: Rename to "Analytics and Personalization"-->
+# Module 7: Analytics and Personalization
 
 So far you've learned how to manage users, build an enterprise website architecture, and create content. While Clarity now has a viable marketing solution, this is just the starting point. A digitally minded organization needs to be analytics-driven to continually measure and optimize its performance. This means Clarity's site creators, designers, and administrators must be empowered to leverage data as a part of their everyday workflow. With Liferay's Analytics Cloud, Clarity can do just that.
 
@@ -23,25 +22,25 @@ In this module, you'll learn about the following Liferay features:
 
 <!--TASK: Turn this list into learning objectives.-->
 
-Up First: [Clarity’s Analytics and Experiences Requirements](./module-7-analytics-and-experiences/claritys-analytics-and-experiences-requirements.md)
+Up First: [Clarity’s Analytics and Experiences Requirements](./module-7-analytics-and-personalization/claritys-analytics-and-experiences-requirements.md)
 
 ::::{grid} 2
 :gutter: 3 3 3 3
 
 :::{grid-item-card}  Clarity's Analytics and Experiences Requirements
-:link: ./module-7-analytics-and-experiences/claritys-analytics-and-experiences-requirements.md
+:link: ./module-7-analytics-and-personalization/claritys-analytics-and-experiences-requirements.md
 
 Learn about Clarity's requirements for analytics and user experiences.
 :::
 
 :::{grid-item-card}  Understanding Users with Analytics Cloud
-:link: ./module-7-analytics-and-experiences/understanding-users-with-analytics-cloud.md
+:link: ./module-7-analytics-and-personalization/understanding-users-with-analytics-cloud.md
 
 Learn about Liferay's analytics cloud.
 :::
 
 :::{grid-item-card}  Personalizing Experiences for Users
-:link: ./module-7-analytics-and-experiences/personalizing-experiences-for-users.md
+:link: ./module-7-analytics-and-personalization/personalizing-experiences-for-users.md
 
 Learn about segments, experiences, and A/B testing.
 :::

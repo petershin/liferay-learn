@@ -133,7 +133,7 @@ To do this,
 
 ## Conclusion
 
-Congratulations! You have now completed *Module 7: Analytics and Experiences*. Throughout this module you've learned how you can leverage Liferay analytics and personalization features to improve user experience.
+Congratulations! You've completed *Module 7: Analytics and Personalization*. Throughout this module you've learned how you can leverage Liferay analytics and personalization features to improve user experience.
 
 In the next module, you'll learn about using headless APIs to interact with Liferay applications and resources.
 

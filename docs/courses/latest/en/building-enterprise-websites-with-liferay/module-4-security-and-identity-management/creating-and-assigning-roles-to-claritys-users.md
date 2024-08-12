@@ -11,7 +11,7 @@ Liferay employs a role-based access control (RBAC) model to manage user permissi
 
 Each Clarity persona belongs to different teams with different responsibilities. You can use Liferay roles to model this structure. A role is a list of permissions that empower users to perform specific actions within the Liferay instance.
 
-While Clarity can leverage many of Liferay's OOTB roles, they also want these custom roles:
+While Clarity can leverage many of Liferay's out-of-the-box roles, they also want these custom roles:
 
 | Type    | Title                    | Description                                                         |
 |:--------|:-------------------------|:--------------------------------------------------------------------|

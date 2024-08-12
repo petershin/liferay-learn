@@ -103,7 +103,7 @@ The foundation for a successful role architecture lies in understanding your org
 
 ### Identify Responsibilities and Necessary Permissions
 
-Effectively designing a role architecture begins with a thorough understanding of your organization's structure and user responsibilities. Analyze  each responsibility to determine the actions they need to perform. By identifying these core functions, you can establish a solid foundation for creating roles and identifying their necessary permissions.
+Effectively designing a role architecture begins with a thorough understanding of your organization's structure and user responsibilities. Analyze each responsibility to determine the actions they need to perform. By identifying these core functions, you can establish a solid foundation for creating roles and identifying their necessary permissions.
 
 ### Define Roles for Discrete Responsibilities
 

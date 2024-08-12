@@ -56,7 +56,7 @@ By default, all new Liferay DXP environments use basic authentication and begin 
 
 For Liferay SaaS, login credentials are emailed to the project's initial administrator(s) during the provisioning process. However, for Liferay PaaS and Self-Hosted deployments, the default administrator email address is `test@liferay.com` and the default password is `test`.
 
-!!! note 
+!!! note
     Liferay PaaS and Self-Hosted administrators can modify this default behavior using [portal properties](https://learn.liferay.com/w/dxp/installation-and-upgrades/reference/portal-properties).
 
 So when you start up a new Liferay DXP environment, your first order of business should be to change the admin user's credentials. The default administrator credentials for the training workspace have already been updated: 

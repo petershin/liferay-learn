@@ -76,3 +76,6 @@ Default permissions at the site level take precedence over default permissions a
 1. Verify that the permissions configured at the site level overrides the defaults configured at the instance level.
 
 ![Verify that the permissions configured at the site level appear here.](./setting-default-permissions/images/05.png)
+
+!!! important
+    This feature is currently behind a release feature flag (LPD-21265). Read [Release Feature Flags](../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information.

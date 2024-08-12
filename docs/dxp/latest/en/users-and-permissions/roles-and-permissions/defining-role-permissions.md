@@ -72,7 +72,10 @@ There are several categories of permissions:
 
 **Applications Menu:** The Applications Menu permissions affect whether and how the Applications menu appears to different role users when they open the Global Menu.
 
-{bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA132+` **Objects:**__** After creating and publishing a custom object, it appears under the Objects section. You can then set both resource and application permissions related to the object for the role user by selecting it from the left menu. Only objects without a parent and a set panel link appear under the Objects section. If you've chosen a panel link, the object appears under the corresponding section.
+{bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA132+` **Objects:** After creating and publishing a custom object, it appears under the Objects section. You can then set both resource and application permissions related to the object for the role user by selecting it from the left menu. Only objects without a parent and a set panel link appear under the Objects section. If you've chosen a panel link, the object appears under the corresponding section.
+
+!!! important
+    This feature is currently behind a release feature flag (LPD-19843). Read [Release Feature Flags](../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information.
 
 **Site and Asset Library Administration:** Site administrators can access the site administration tools belonging to the site administration category. The permissions in the Site and Asset Library Administration &rarr; Applications categories govern the content that can be created by applications such as the wiki and message boards. If you pick one of the applications from this list, you see options for defining permissions on its content. For example, if you pick message boards, you see permissions for creating categories and threads or deleting and moving topics.
 

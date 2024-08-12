@@ -218,10 +218,10 @@ Preview your page's Open Graph configuration. This section displays how your pag
 
 ## Custom Meta Tags
 
-Here you can add custom `<meta>` tags to the `<head>` of a page. These tags are only visible in a page's HTML source code and are used to describe a page's data and determine how that data is displayed in different contexts, such as search engine results and social media posts. Each tag is defined using property and content attributes.
+Here you can add custom `<meta>` tags to the `<head>` of a page. These tags are only visible in a page's HTML source code and are used to describe a page's data and determine how that data appears in different contexts, such as search engine results and social media posts. Each tag is defined using property and content attributes.
 
 !!! note
-    Open Graph `<meta>` tags are only included in page headers to unauthenticated users. They are not included when the user is logged in.
+    Custom `<meta>` tags are only included in page headers for unauthenticated users. They are not included when the user is logged in.
 
 ![Add custom meta tags to a page's head using the Property and Content fields.](./configuring-individual-pages/images/15.png)
 

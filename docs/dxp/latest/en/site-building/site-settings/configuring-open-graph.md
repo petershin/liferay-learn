@@ -17,7 +17,7 @@ uuid: c85f3045-c786-448a-aef9-2388660b7397
 By default, Open Graph `<meta>` tags are embedded in all public Liferay Pages, but you can disable this behavior at the Site level if desired. In Site settings, you can also set default `og:image` properties. These values are used for all Pages, unless they're overridden at the [Page](../creating-pages/page-settings/configuring-individual-pages.md#open-graph) or [Display Page](../displaying-content/using-display-page-templates/configuring-seo-and-open-graph.md) level.
 
 !!! note
-    Open Graph `<meta>` tags are only included in page headers to unauthenticated users. They are not included when the user is logged in.
+    Custom `<meta>` tags are only included in page headers for unauthenticated users. They are not included when the user is logged in.
 
 Follow these steps to configure Open Graph for your Site:
 

@@ -11,7 +11,7 @@ With this in mind, let's review Clarity's requirements for analytics and persona
 
 ### Generate detailed website reports through an intuitive user interface
 
-Clarity aims to gather in-depth metrics about their website and make them accessible through a user-friendly interface. This will enable both IT staff and non-technical employees to digest the data and optimize their solution. Clarity can streamline website performance assessment and fine-tune planning to achieve successful business value.
+Clarity aims to gather in-depth metrics about their website and make them accessible through a user-friendly interface. This would enable both IT staff and non-technical employees to digest the data and optimize their solution. Clarity can streamline website performance assessment and fine-tune planning.
 
 ### Define and manage user segments based on common user activities
 
@@ -23,6 +23,6 @@ After gathering website analytics and defining their target audiences, Clarity p
 
 ## Conclusion
 
-Now that you've reviewed Clarity's requirements for leveraging website analytics to understand users and deliver personalized experiences, let's learn more about how Liferay can satisfy their needs.
+Now that you've reviewed Clarity's analytics and personalization requirements, let's learn more about how Liferay Analytics Cloud can satisfy them.
 
 Next Up: [Understanding Users with Analytics Cloud](./understanding-users-with-analytics-cloud.md)

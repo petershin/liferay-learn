@@ -3,9 +3,9 @@ uuid: 625dac83-df1c-4da9-93ba-49fba8fd955d
 ---
 # Personalizing Experiences for Users
 
-A great website experience can help keep Clarity's visitors engaged and ultimately lead to more sales. Liferay provides different tools to help you understand who your customers are and optimize your site to increase engagement. Clarity can use these tools in combination with Analytics Cloud to personalize the user experience.
+Personalized website experiences can help keep Clarity's visitors engaged and ultimately lead to more sales. Liferay provides different tools to help you understand who your customers are and optimize your site to increase engagement. Clarity can use these tools in combination with Analytics Cloud.
 
-This article will dive further into the suite of features that Clarity can use to develop focused experiences for their users. We will cover the following topics:
+This article the following suite of features:
 
 - Segmentation management
 - Personalized experiences
@@ -13,34 +13,39 @@ This article will dive further into the suite of features that Clarity can use t
 
 ## Segmentation Management
 
-The first thing you need to do to provide personalization is identify your user segments. Clarity already understands their segments, so now they just need to tell Liferay about them using the Segmentation Management feature. Liferay has a powerful visual rule builder that you can use to create audience segments based on user and organization attributes, as well as session properties and custom fields.
+The first step towards personalization is identifying your user segments. Once identified, you can create these segments in Liferay using Liferay's intuitive rule builder that defines segments based on
+   
+   * User
+   * Organization Attributes
+   * Session Properties
+   * Custom Fields.
 
 <!--IMAGE: screenshots of rule builder UI-->
 
-The rule builder uses semantic building blocks, which means you can define segments by constructing a "sentence" that describes the criteria. There are several predefined segmentation rules that you can use, and Liferay also supports the creation of custom fields that you can build rules around. You can also build new segments by combining existing segments, enabling more specific, focused user experiences.
+This rule builder uses semantic building blocks, meaning you can define segments by constructing sentences that describe the criteria. There are several predefined segmentation rules that you can use, and Liferay also supports the creation of custom fields that you can build rules around. You can also build new segments by combining existing segments, enabling more specific, focused user experiences.
 
-Segmentation integrates with Liferay Analytics Cloud, which adds support for long-time behavior and third party data (such as Salesforce). In addition to the visual user interface, you can also use headless APIs to create custom properties for segmentation.
+Segmentation integrates with Liferay Analytics Cloud, which adds support for long-time behavior and third party data (e.g., Salesforce). In addition to the visual user interface, you can also use headless APIs to create custom properties for segmentation.
 
-Once your segments are defined, they are available for use alongside Liferay's site and content management features.
+Once your segments are defined, they are available for use alongside Liferay's page and content management features.
 
 ## Personalized Experiences
 
-You can personalize pages for different user segments by creating a Liferay Experience for each segment. This allows you to only show elements and content that are relevant to that segment. You can personalize almost any element of a page, from images and text to fragments and navigation. Additionally, you can create rules that cater to specific breakpoints, such as screen size.
+When designing pages, you can create page variations for different segments. In Liferay, these variations are called experiences. This enables you to customize displays that are more relevant to each group. In fact, you can personalize almost any element of a page, from images and text to fragments and navigation. Additionally, you can create rules that cater to specific breakpoints, such as screen size.
 
 Creating experiences out of segments is an intuitive, non-intrusive part of the site building and content management interfaces that Liferay provides.
 
-Sometimes, we have more than one idea on how to serve a certain audience, but we aren't sure which option is best. This is where A/B testing comes into play.
+Sometimes, we have more than one idea on how to engage a certain audience, but we aren't sure which option is best. This is where A/B testing comes into play.
 
 ## A/B Testing
 
-With A/B testing, you can make two variants of a site page and compare the click rate or bounce rate of the two pages. Some visitors will see one variant, while another group will see an alternative. You can test the performance of the two variants and determine which is better for your customers.
+With A/B testing, you can make two variants of a site page and compare the click rate or bounce rate of the two pages. Some visitors see one version, while another group sees the alternative. You can test the performance of the two variants and determine which is better for your customers.
 
-The tight integration between Liferay DXP and Analytics Cloud means setting up A/B tests, tracking results, and publishing variants is simple. Liferay provides a UI for non-technical users to administer A/B tests with granular control over the test configuration and criteria. The tests are automatically synchronized with Liferay Analytics Cloud, which will provide you with test history, statistics, variant performance benchmarks, and more.
+The tight integration between Liferay DXP and Analytics Cloud means setting up A/B tests, tracking results, and publishing variants is simple. Liferay provides a UI for non-technical users to administer A/B tests with granular control over the test configuration and criteria. The tests are automatically synchronized with Liferay Analytics Cloud, which provides you with test history, statistics, variant performance benchmarks, and more.
 
 In the short term, Clarity can use this feature to determine the best content and click-through path for driving distributors to complete the application process. In the long term, considering their plans for B2C, they can use A/B tests to determine the best promotions or product discovery routes to help customers go from interest to purchase as efficiently as possible. These are a few ways in which A/B testing can help you optimize your business.
 
-<!--Exercise 21a-->
 ## Exercise: Tailoring Experiences by User Group and Role
+<!--Exercise 21a-->
 
 Segmentation involves grouping website visitors and users into categories based on shared characteristics or behaviors. Segmenting your audience allows you to tailor the website experience, delivering more relevant content and ultimately boosting engagement.
 
@@ -128,7 +133,9 @@ To do this,
 
 ## Conclusion
 
-Congratulations! You have now completed *Module 7: Analytics and Experiences*.
+Congratulations! You have now completed *Module 7: Analytics and Experiences*. Throughout this module you've learned how you can leverage Liferay analytics and personalization features to improve user experience.
+
+In the next module, you'll learn about using headless APIs to interact with Liferay applications and resources.
 
 [Back to Building Enterprise Websites with Liferay](../../building-enterprise-websites-with-liferay.md)
 

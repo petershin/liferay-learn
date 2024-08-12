@@ -7,7 +7,7 @@ Liferay Search is a core capability of Liferay that enables users to find inform
 
 ## Liferay Search at a High-level
 
-At the heart of Liferay Search is [Elasticsearch](https://www.elastic.co/elasticsearch), a powerful open-source search engine. Elasticsearch serves as the backbone for indexing, storing, and retrieving vast amounts of search data with remarkable speed and scalability. Liferay indexes a wide array of content types, including documents, web content articles, and blog posts. Once indexed, this data becomes accessible through the search engine, which is responsible for processing user queries, ranking results based on relevance, and delivering the most pertinent information. 
+At the heart of Liferay Search is [Elasticsearch](https://www.elastic.co/elasticsearch), a powerful open-source search engine. Elasticsearch serves as the backbone for indexing, storing, and retrieving vast amounts of search data with remarkable speed and scalability. Liferay indexes a wide array of content types, including documents, web content articles, and blog posts. Once indexed, this data becomes accessible through the search engine, which is responsible for processing user queries, ranking results based on relevance, and delivering the most pertinent information.
 
 !!! note "Using Alternative Search Engines"
   Liferay search is API driven, which means you can use alternative search engine implementations. While Elasticsearch provides the best search experience, industry standards may require an alternative search engine (e.g., SOLR).
@@ -40,7 +40,7 @@ To change the default configuration settings, navigate to *Global Menu* &rarr; *
 * and much more
 
 !!! note Changing System Settings
-  Access to system settings is not available in Liferay SaaS. Discuss any specific search configuration requirements with you Liferay SaaS team.
+  Access to system settings is not available in Liferay SaaS. Discuss any specific search configuration requirements with Liferay Support team.
 
 Other administrative tasks are also available such as reindexing to refresh parts of your search index or overriding any search field mappings within a search index. To access these task, navigate to *Global Menu* &rarr; *Control Panel* &rarr; *Search*.
 
@@ -60,7 +60,7 @@ Finally, the search bar itself also serves as a filter with its auto-suggestion 
 
 ## Customizing Search Results Pages
 
-As we saw in previous exercises, site pages can quickly be built with the use of out-of-the-box widgets, search results pages can be crafted in the same manner. Liferay offers many search widgets that can be dragged and dropped onto a site page to quickly create a customized search results page. This makes it easy for even non-technical team members to create search pages effortlessly. Liferay even provides search page templates to use without needing to create a page from scratch.
+Similar to how we created site pages using pre-built widgets in previous exercises, search results pages can be created in the same way. Liferay offers many search widgets that can be dragged and dropped onto a site page to quickly create a customized search results page. This makes it easy for even non-technical team members to create search pages effortlessly. Liferay even provides search page templates to use without needing to create a page from scratch.
 
 Some of the available search widgets are:
 

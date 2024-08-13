@@ -30,9 +30,9 @@ While managing data set views, you can define pre-applied filters to be used in 
 
 ## Client Extension Filter
 
-Use a Custom Filter [client extension](../../customizing-liferays-look-and-feel/using-a-custom-filter-client-extension.md) or deploy a [client extension from your workspace](../../client-extensions/working-with-client-extensions.md) to customize the filter experience and add new types of filters to your data set view.
+Use a [custom filter client extension](../../customizing-liferays-look-and-feel/using-a-custom-filter-client-extension.md) or deploy a [client extension from your workspace](../../client-extensions/working-with-client-extensions.md) to customize the filter experience and add new types of filters to your data set view.
 
-![You need to have a Frontend Data Set Filter client extension to create the client extension filter.](./data-set-view-filters/images/01.png)
+![You must have a Frontend Data Set Filter client extension to create the client extension filter.](./data-set-view-filters/images/01.png)
 
 1. Choose *Client Extension* when adding a new filter.
 
@@ -60,35 +60,48 @@ Use date-type fields to pre-filter the displayed entries.
 
 1. (Optional) Set *From* and *To* dates to pre-filter the entries, and the filter shows entries within the specified range.
 
-   You can set just one of the two dates.
-
 1. Click *Save*.
 
 ![Create a filter based on a date field.](./data-set-view-filters/images/03.png)
 
 ## Selection Filter
 
-Use picklist options as parameters for the filter.
+Use API REST endpoints or picklist options as parameters for the filter.
 
-1. Choose *Selection* when adding a new filter.
+Start by choosing *Selection* when adding a new filter.
+
+   The Selection filter has three sections: Configuration, Filter Source, and Filter Option.
+
+Under Configuration,
 
 1. Fill in the *Name* of the filter and, optionally, [localize](./data-set-view-visualization-modes.md#editing-and-localizing-labels) it.
 
 1. Select the *Field* by which you want to filter the entries.
 
-1. Choose a picklist to associate with the filter.
+Under Filter Source,
 
-1. Determine if users can select multiple or single values.
+1. Configure the *Filter Source* to determine the values offered in the filter. Choose an Object Picklist or an {bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA132+` API REST Application to associate with the filter.
+
+   - With Object Picklists, choose a picklist to associate with the filter.
+
+      ![Selecting an API REST Application as the source.](./data-set-view-filters/images/04.png)
+
+   - {bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA132+` With API REST Applications, select a *REST Application*, *REST Schema*, *REST Endpoint*, *Item Key*, and *Item Label*.
+
+      !!! tip
+         The Item Key and Item Label define how the API response is managed. Since APIs can return a wide range of data, specifying these fields is crucial for proper integration and data handling.
+
+      ![Selecting an Object Picklist as the source.](./data-set-view-filters/images/05.png)
+
+Under Filter Options,
 
 1. Preselect values for the filter.
 
    If you choose the Single selection option, you can only preselect one value.
 
-1. Decide to include or exclude entries based on the filter parameters.
+1. Determine if users can select multiple or single values.
 
 1. Click *Save*.
-
-![Create a filter based on picklist options.](./data-set-view-filters/images/04.png)
 
 ## Related Topics
 

@@ -7,7 +7,7 @@ toc:
 - ./building-enterprise-websites-with-liferay/module-5-site-building.md
 - ./building-enterprise-websites-with-liferay/module-6-content-authoring-and-management.md
 - ./building-enterprise-websites-with-liferay/module-7-analytics-and-personalization.md
-- ./building-enterprise-websites-with-liferay/module-8-headless-delivery.md
+- ./building-enterprise-websites-with-liferay/module-8-headless-apis.md
 - ./building-enterprise-websites-with-liferay/module-9-search.md
 - ./building-enterprise-websites-with-liferay/module-10-building-applications.md
 - ./building-enterprise-websites-with-liferay/module-11.md

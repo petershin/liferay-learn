@@ -23,7 +23,7 @@ If you installed the new Liferay release on an application server, create a `[Li
 | Liferay Portal             | Go to the [*Downloads* page](https://www.liferay.com/downloads-community). In the *Liferay Portal* downloads menu, select *Other files* and click *Download*. The latest Liferay Portal release assets GitHub page appears. Click on `liferay-ce-portal-tools-[version].zip`. |
 
 ## Setting Up a New Installation
- 
+
 1. Replace the new Liferay installation's `[Liferay Home]/data` folder with the `[Liferay Home]/data` folder from your [backup](../../maintaining-a-liferay-installation/backing-up.md).
 
 1. Copy your DXP activation key (Subscription) and your [OSGi configuration files](../../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md) from your [backup](../../maintaining-a-liferay-installation/backing-up.md#liferay-home) to the new installation.
@@ -60,7 +60,7 @@ If you installed the new Liferay release on an application server, create a `[Li
 
 1. Use your database vendor's recommended JDBC driver. If you're using MySQL, for example, set `jdbc.default.driverClassName=com.mysql.cj.jdbc.Driver` in your [`portal-ext.properties`](../../reference/portal-properties.md) file and replace the MySQL JDBC driver JAR your app server uses. See [Database Drivers](../migrating-configurations-and-properties.md#database-drivers) for more details.
 
-   You can configure the upgrade by answering the upgrade tool prompts or by [using upgrade properties files](../reference/database-upgrade-tool-reference.md#manual-configuration). 
+   You can configure the upgrade by answering the upgrade tool prompts or by [using upgrade properties files](../reference/database-upgrade-tool-reference.md#manual-configuration).
 
    !!! note
        If you're [upgrading to a new Liferay Docker image](../../installing-liferay/using-liferay-docker-images/upgrading-to-a-new-docker-image.md), make sure to specify your database connection using [Portal Properties](../../reference/portal-properties.md) files instead of Docker env variables. The [Portal Properties reference](https://docs.liferay.com/dxp/portal/7.3-latest/propertiesdoc/portal.properties.html) lists Portal Properties that correspond with each Liferay Env variable.
@@ -153,7 +153,7 @@ Now that the database upgrade is complete, test it.
 
    - `/license/*`: Activation keys. (Subscription)
    - `/log/*`: Log files.
-   - `/osgi/configs/*.config`: OSGi configuration files.
+   - `/osgi/configs/*.config`: OSGi configuration files. (Only copy your custom configuration files. Let Liferay override the defaults.)
    - `portal-*.properties`: Portal properties files, such as `portal-ext.properties`.
    - Application server files: Modified scripts and configuration files.
    - `web.xml`: Portal web application descriptor.

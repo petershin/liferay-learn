@@ -56,7 +56,7 @@ Here are the steps for upgrading with a Docker image:
 
     * `/log/*`: Log files.
 
-    * `/osgi/configs/*.config`: [OSGi configuration files](../../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md).
+    * `/osgi/configs/*.config`: [OSGi configuration files](../../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md). (Only copy your custom configuration files. Let Liferay override the defaults.)
 
     * `portal-*.properties`: [Portal properties](../../reference/portal-properties.md) files, such as `portal-ext.properties`.
 
@@ -95,8 +95,8 @@ Here are the steps for upgrading with a Docker image:
 
     The `-v new-version:/mnt/liferay` arguments bind mount the host's `new-version` folder to the container's `/mnt/liferay` folder. Please see [Providing Files to the Container](../../installing-liferay/using-liferay-docker-images/providing-files-to-the-container.md) for more information on the mapping files to the container's Liferay Home.
 
-    The parameter `-e LIFERAY_UPGRADE_PERIOD_DATABASE_PERIOD_AUTO_PERIOD_RUN=true` triggers the database upgrade to run automatically at startup. 
-    
+    The parameter `-e LIFERAY_UPGRADE_PERIOD_DATABASE_PERIOD_AUTO_PERIOD_RUN=true` triggers the database upgrade to run automatically at startup.
+
     Optionally, the [upgrade report](../reference/upgrade-report.md) can be enabled with the parameter `-e LIFERAY_UPGRADE_PERIOD_REPORT_PERIOD_ENABLED=true` and the [upgrade log context](../reference/upgrade-log-context.md) can be enabled with the parameter `LIFERAY_UPGRADE_PERIOD_LOG_PERIOD_CONTEXT_PERIOD_ENABLED=true`. Use the parameter `LIFERAY_UPGRADE_PERIOD_REPORT_PERIOD_DIR={your_directory}` to define an output directory for the upgrade report. If none is set, `Liferay_Home/reports` is the default report directory.
 
 2. In the console or log, confirm successful database upgrade and server startup. Upgrade messages report starting and completing each upgrade process. A message like this one indicates server startup completion:

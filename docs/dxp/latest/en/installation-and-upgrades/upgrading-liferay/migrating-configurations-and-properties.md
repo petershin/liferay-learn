@@ -17,7 +17,7 @@ Your current DXP installation's OSGi configurations (7.0+) and properties (such 
 
    - `/license/*`: Activation keys. (Subscription)
    - `/log/*`: Log files.
-   - `/osgi/configs/*.config`: OSGi configuration files.
+   - `/osgi/configs/*.config`: OSGi configuration files. (Only copy your custom configuration files. Let Liferay override the defaults.)
    - `portal-*.properties`: Portal properties files, such as `portal-ext.properties`.
    - Application server files: Modified scripts and configuration files.
    - `web.xml`: Portal web application descriptor.

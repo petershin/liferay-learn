@@ -87,13 +87,8 @@ Now deploy the client extension.
 
 ## Deploy the Data Set Cell Renderer
 
-Start a new Liferay instance by running
-
-```bash
-docker run -it -m 8g -p 8080:8080 liferay/portal:7.4.3.120-ga120
+```{include} /_snippets/run-liferay-portal.md
 ```
-
-Sign in to Liferay at `http://localhost:8080`. Use the email address `test@liferay.com` and the password `test`. When prompted, change the password to `learn`.
 
 Once Liferay starts, run this command from the client extension's folder in the sample worksapce:
 

@@ -55,11 +55,15 @@ The Data Set View application is divided into tabs:
 
    You can apply customized filters using [Client Extensions](../client-extensions.md), use date-type fields and show entries within a given period, or configure [Picklists](../objects/picklists.md) as the source of the options for the filter.
 
-- Sorting tab: set default sorting rules that are applied to the entries once the user visits a page with a Data Set fragment.
+   ![In the Filters tab, provide filters to your data set view.](./data-set-views/images/04.png)
 
-   Sort entries using a specific field as a criterion and in ascending or descending order.
+- Sorting tab: set default sorting options that are applied to the entries once the user visits a page with a Data Set fragment.
+
+   Sort entries using a specific field as a criterion and in ascending or descending order. You can also set a default sorting option.
 
    You can also select multiple fields. The first field serves as the primary criterion for sorting the entries. If there are entries with the same value in the first field, the second field is used as the secondary criterion for sorting.
+
+   ![In the Sorting tab, set default sorting rules that are applied to the entries once the user visits a page with a Data Set fragment.](./data-set-views/images/05.png)
 
 - {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+` [Actions](./data-set-views/data-set-view-actions.md) tab: create actions linked to the elements in the data set.
 

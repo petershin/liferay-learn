@@ -186,7 +186,7 @@ Create the data set and the data set view:
    ![Add the Liferay Sample FDS Filter client extension to the data set view.](./using-a-custom-filter-client-extension/images/04.png)
 
    !!! tip
-       For this filter to be effective across different "Filter By" fields, ensure the custom filter client extension is coded to handle different field names dynamically. This allows the filter to be applied generically without creating separate filters for each field.
+       To ensure the filter works across different "Filter By" fields, the custom filter client extension should be coded to handle various field names dynamically. Since the selected field in "Filter By" is accessible from the code, the filter can be applied generically, eliminating the need to create separate client extensions for each field.
 
 Add the data set view to a content page:
 

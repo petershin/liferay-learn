@@ -57,9 +57,9 @@ The Data Set View application is divided into tabs:
 
    ![In the Filters tab, provide filters to your data set view.](./data-set-views/images/04.png)
 
-- Sorting tab: set default sorting options that are applied to the entries once the user visits a page with a Data Set fragment.
+- {bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA132+` [Sorting](./data-set-views/data-set-view-sorting.md) tab: set sorting options that are applied to the entries once the user visits a page with a Data Set fragment. You can also set a default sorting option.
 
-   Sort entries using a specific field as a criterion and in ascending or descending order. You can also set a default sorting option.
+   Sort entries using a specific field as a criterion and in ascending or descending order.
 
    You can also select multiple fields. The first field serves as the primary criterion for sorting the entries. If there are entries with the same value in the first field, the second field is used as the secondary criterion for sorting.
 

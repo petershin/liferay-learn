@@ -9,62 +9,32 @@ uuid: 1f809dd9-0c27-43e0-9223-c5d27949fab0
 
 # Enabling Glowroot on PaaS
 
-{bdg-secondary}`Liferay DXP 7.4-u100+` 
+{bdg-secondary}`Liferay DXP 2023.Q4+/Portal 7.4 GA100+`
 
-Glowroot is included with Liferay in the `/opt/liferay/glowroot` folder. The steps to enable Glowroot differ based on your storage solution.
+Glowroot is included with Liferay in the `/opt/liferay/glowroot` folder.
 
-## Enabling Glowroot with SFS
+If you're running Liferay in a clustered environment, enable Glowroot with JVM options:
 
-1. To persist configuration changes, move Glowroot to `/opt/liferay/data`:
+```json
+"env": {
+  "LIFERAY_JVM_OPTS": "-javaagent:/opt/liferay/glowroot/glowroot.jar -Dglowroot.enabled=true"
+}
+```
+
+If your Liferay instance is not clustered, you can persist Glowroot data. To enable Glowroot and persist its data, follow these steps:
+
+1. Create a directory to store this data in `/mnt/persistent-storage`:
 
    ```bash
-   mv /opt/liferay/glowroot /opt/liferay/data/
+   mkdir /mnt/persistent-storage/glowroot-data
    ```
 
-1. Configure the data directory with the following JVM option:
+1. Enable Glowroot and configure the data directory with JVM options:
 
    ```json
    "env": {
-     "LIFERAY_JVM_OPTS": "-javaagent:/opt/liferay/data/glowroot/glowroot.jar -Dglowroot.data.dir=/opt/liferay/data/glowroot-data"
+     "LIFERAY_JVM_OPTS": "-javaagent:/opt/liferay/glowroot/glowroot.jar -Dglowroot.data.dir=/mnt/persistent-storage/glowroot-data -Dglowroot.enabled=true"
    }
-   ```
-
-1. Enable port 4000 for internal Glowroot UI access:
-
-   ```json
-   "ports": [
-     {
-       "port": 4000,
-       "external": false
-     }
-   ]
-   ```
-
-## Enabling Glowroot with GCS
-
-1. To persist configuration changes, move Glowroot to `/opt/liferay/data/license`:
-
-   ```bash
-   mv /opt/liferay/glowroot /opt/liferay/data/license/
-   ```
-
-1. Configure the data directory with the following JVM option:
-
-   ```json
-   "env": {
-     "LIFERAY_JVM_OPTS": "-javaagent:/opt/liferay/data/license/glowroot/glowroot.jar -Dglowroot.data.dir=/opt/liferay/data/license/glowroot-data"
-   }
-   ```
-
-1. Enable port 4000 for internal Glowroot UI access:
-
-   ```json
-   "ports": [
-     {
-       "port": 4000,
-       "external": false
-     }
-   ]
    ```
 
 ## Accessing Glowroot

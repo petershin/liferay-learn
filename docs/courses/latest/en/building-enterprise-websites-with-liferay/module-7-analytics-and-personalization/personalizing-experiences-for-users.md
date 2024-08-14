@@ -115,8 +115,9 @@ To do this,
 
 1. Use the up arrow on the Distributor row to position the segment above the Default item so that the Distributor entry shows first.
 
-   *Note:* The experience order determines their priority. Internally, Liferay checks the segments a user belongs to and uses the match with the highest priority.
-
+   !!! note 
+       The experience order determines their priority. Internally, Liferay checks the segments a user belongs to and uses the match with the highest priority.
+   
    Once the Distributor role is re-positioned, the label on the record should now read Active.
 
 1. Modify the title text in the Banner to say `Welcome Back! Elevate Your Inventory with Premium Eyewear`.

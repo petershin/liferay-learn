@@ -3,9 +3,9 @@ uuid: 34c05341-ace7-439e-8708-50a4d7f12905
 ---
 # Clarity's Headless API Requirements
 
-Liferay provides a suite of headless APIs that allow RESTful interaction with Liferay DXP resources. A headless application separates the presentation layer from the other functional components of a given software platform. This decoupling allows for the use of back-end services while implementing a user interface with any framework of your choosing. You can use headless APIs to consume Liferay content and perform the same kinds of actions that are available in the Liferay portal web interface. Headless APIs are also essential for translating data into a machine-readable format for other web applications, migrating data between systems, and other integration scenarios.
+Liferay provides a suite of headless APIs that enable RESTful interaction with Liferay DXP resources. A headless application separates the presentation layer from other functional components of a given software platform. This decoupling enables the use of backend services while implementing a user interface with any framework of your choosing. You can use headless APIs to consume Liferay content and perform the same kinds of actions that are available in the Liferay portal web interface. Headless APIs are also essential for translating data into a machine-readable format for other web applications, migrating data between systems, and other integration scenarios.
 
-Liferay's headless APIs follow the OpenAPI specification, a standard for REST interfaces, that makes it easy to consume APIs with any application that can make web calls. These APIs respond with JSON content by default and also support XML natively. They provide a secure, versatile interface for transferring data securely between Liferay and external systems.
+Liferay's headless APIs follow the OpenAPI specification that makes it easy to consume APIs with any application that can make web calls. These APIs respond with JSON content by default and also support XML natively. They provide a secure, versatile interface for transferring data securely between Liferay and external systems.
 
 ## Requirements
 
@@ -22,5 +22,7 @@ As Clarity gets up and running with Liferay, they hope to implement some custom 
 ### Secure data transfer
 
 While the headless APIs offer convenient access to and from Liferay's database, Clarity does not want this convenience to come at the expense of security. Fortunately, Liferay's headless platform comes with industry standard methods of authorization such as HTTPS and OAuth 2.0 for secure communication. 
+
+<!--TASK: Add conclusion-->
 
 Up Next: [Working with the Headless Platform](./working-with-the-headless-platform.md)

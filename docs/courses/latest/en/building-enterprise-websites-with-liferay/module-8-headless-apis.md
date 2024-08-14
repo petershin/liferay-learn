@@ -14,13 +14,11 @@ uuid: a0a8f5b4-c8ff-4008-9cd8-0fcd6417f269
     * View the [recording](https://learn.liferay.com/web/guest/d/lp1-8-headless-apis) from the live webinar of this module.
     * Download the [PDF](https://learn.liferay.com/documents/d/guest/lp1-8-headless-apis-pdf) of the presentation used in the live workshop.
 
-In the previous two modules, you learned about building site pages and creating site content with Liferay in the context of Clarity's enterprise marketing website. Because creating new content requires significant effort, Clarity wants to import some of the existing content from their previous portal application so they can get up and running faster. Migrating legacy content is one of many use cases that can be addressed with Liferay's Headless APIs.
+In the previous modules, you learned about building site pages and creating site content with Liferay in the context of Clarity's enterprise marketing website. Because creating new content requires significant effort, Clarity wants to import some of the existing content from their previous portal application so they can get up and running faster. Migrating legacy content is one of many use cases solved by Liferay's Headless APIs.
 
-In this module, you will learn about Liferay's Headless API capabilities and how you can leverage them in your software integrations. We will cover the following topics:
+In this module, you'll learn about Liferay's Headless API capabilities and how you can leverage them in your software integrations.
 
-- See the different capabilities offered by the headless platform
-- Look at different ways to secure the headless platform
-- See the headless platform in action for Clarity
+<!--TASK: Add module learning objectives-->
 
 Up First: [Clarity's Headless API Requirements](./module-8-headless-apis/claritys-headless-api-requirements.md)
 

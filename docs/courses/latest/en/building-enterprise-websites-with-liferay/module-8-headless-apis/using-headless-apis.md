@@ -3,11 +3,11 @@ uuid: 34c05341-ace7-439e-8708-50a4d7f12905
 ---
 # Using Headless APIs
 
-Clarity has a few different use cases to leverage Liferay's headless platform. One of the needs they have is utilizing the headless APIs to import content from their legacy systems. Another need they have is to leverage headless APIs to import Clarity products from their Product Information Management system (PMI). Follow the exercises below to see Liferay's headless platform in action.
+Clarity wants to use leverage Liferay's headless APIs to import content from their legacy systems. They also want to leverage headless APIs to import Clarity products from their Product Information Management system (PMI).
 
-## Exercise: Connecting to Headless APIs using the API Explorer
+## Exercise: Connecting to Headless APIs Using the API Explorer
 
-<!-- ## Exercise 15a: Connecting to Headless APIs using the API Explorer -->
+<!--Exercise 15a-->
 
 Let's see how headless APIs can be used by interacting with it through Liferay's API Explorer. Here you'll add a new blog post as Walter Douglas.
 
@@ -78,7 +78,7 @@ To do this,
 
 ## Exercise: Using Headless APIs to Batch Import Web Content
 
-<!-- ## Exercise 15b: Using Headless APIs to Batch Import Web Content -->
+<!--Exercise 15b-->
 
 Clarity wants to import three legacy web articles from their old portal into their new enterprise website. Here you'll add them using Liferay's Headless APIs as Walter Douglas.
 
@@ -106,7 +106,7 @@ To do this,
 
 ## Exercise: Using Headless APIs to Batch Import Products
 
-<!-- ## Exercise 15c: Using Headless APIs to Batch Import Products -->
+<!--Exercise 15c-->
 
 Similarly to the previous exercise, you'll use REST APIs to import Clarity's legacy products as Ian Miller.
 
@@ -149,7 +149,7 @@ To do this,
 
 ## Exercise: Using Headless to Import Taxonomy Categories
 
-<!-- ## Exercise 15d: Using Headless to Import Taxonomy Categories -->
+<!--Exercise 15d-->
 
 As a multinational company, Clarity has many business locations around the globe. To better support recruitment efforts, Clarity needs to define categories that they can apply to job openings for each office location. Some categories already exist, but others are still missing.
 
@@ -200,8 +200,8 @@ To do this,
 
 ## Conclusion
 
-Congratulations, you've completed Module 8: Headless APIs. Throughout this module, you've seen different use cases for using Headless APIs and how a company like Clarity might leverage them.
+Congratulations, you've completed *Module 8: Headless APIs*. Throughout this module, you've seen different use cases for using Headless APIs and how a company like Clarity can leverage them to migrate existing data.
 
-Let's move on to the next module where you'll delve into Liferay' search tools and capabilities.
+Next, let's explore how Clarity can leverage Liferay's search tools and capabilities to improve user experience.
 
 Up Next: [Module 9: Search](../module-9-search.md)

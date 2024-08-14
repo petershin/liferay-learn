@@ -16,7 +16,7 @@ To use the base promotion list,
 
 1. Open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)) and go to *Commerce* &rarr; *Catalogs*.
 
-   ![Click on Catalogs and create a new catalog for your products.](./using-the-promotion-base-list/images/01.png)
+   ![Click on Catalogs and create a new catalog for your products.](./using-the-base-promotion-list/images/01.png)
 
 1. Click *Add* (![Add icon](../../images/icon-add.png)) and enter the following information.
 
@@ -26,7 +26,7 @@ To use the base promotion list,
 
    **Currency:** US Dollar
 
-   ![Enter a name, default catalog language, and currency for the new catalog.](./using-the-promotion-base-list/images/02.png)
+   ![Enter a name, default catalog language, and currency for the new catalog.](./using-the-base-promotion-list/images/02.png)
 
 1. Click *Submit*.
 
@@ -40,13 +40,13 @@ The base promotion list automatically adds all products in the corresponding cat
 
 1. You can enter a promotion price, expiration date, and configure [bulk or tiered pricing](../using-price-tiers.md#bulk-pricing-vs-tier-pricing) for the SKU.
 
-   ![You can enter a promotion price, expiration date, and configure bulk or tiered pricing for the SKU.](./using-the-promotion-base-list/images/03.png)
+   ![You can enter a promotion price, expiration date, and configure bulk or tiered pricing for the SKU.](./using-the-base-promotion-list/images/03.png)
 
 1. Click *Save*.
 
 You can also use the Override Discount toggle to give the promotion price precedence over any active discounts. See the comparison between a promotion overriding a 20% discount and without it.
 
-![You can use the Override Discount toggle in the promotion's configuration to override any active discounts.](./using-the-promotion-base-list/images/04.png)
+![You can use the Override Discount toggle in the promotion's configuration to override any active discounts.](./using-the-base-promotion-list/images/04.png)
 
 !!! important
     Setting a SKU's price to `0` in a promotion list specifies the absence of a promotion price.

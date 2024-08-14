@@ -96,10 +96,10 @@ type: editorConfigContributor
 
 {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+`
 
-Frontend data set cell renderer client extensions allow you to use your own code to determine how information from [data sets](./data-sets.md) is displayed. They must implement this renderer logic as a function that uses a single value provided by Liferay.
+You can use Frontend data set cell renderer client extensions to determine how information from [data sets](./data-sets.md) appears. Renderer logic is implemented as a function that uses a single value provided by Liferay.
 
 !!! note
-    The frontend data set cell renderer client extension is currently behind a [beta feature flag](../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags). You must enable the feature flag before you start using it.
+    Currently, the frontend data set cell renderer client extension is behind a [beta feature flag](../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags). You must enable the feature flag before you start using it.
 
 Specify a frontend data set cell renderer client extension in your `client-extension.yaml` file:
 

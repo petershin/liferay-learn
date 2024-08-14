@@ -14,11 +14,11 @@ This article the following suite of features:
 ## Segmentation Management
 
 The first step towards personalization is identifying your user segments. Once identified, you can create these segments in Liferay using Liferay's intuitive rule builder that defines segments based on
-   
-   * User
-   * Organization Attributes
-   * Session Properties
-   * Custom Fields.
+
+- User
+- Organization Attributes
+- Session Properties
+- Custom Fields
 
 <!--IMAGE: screenshots of rule builder UI-->
 
@@ -55,8 +55,8 @@ To do this,
 
 1. Sign in as the Clarity Admin user.
 
-   * Email: `admin@clarityvisionsolutions.com`
-   * Password: `learn`
+   - Email: `admin@clarityvisionsolutions.com`
+   - Password: `learn`
 
 1. Add a new user with the following attributes.
 
@@ -115,7 +115,7 @@ To do this,
 
 1. Use the up arrow on the Distributor row to position the segment above the Default item so that the Distributor entry shows first.
 
-   **Note:** The experience order determines their priority. Internally, Liferay checks the segments a user belongs to and uses the match with the highest priority.
+   *Note:* The experience order determines their priority. Internally, Liferay checks the segments a user belongs to and uses the match with the highest priority.
 
    Once the Distributor role is re-positioned, the label on the record should now read Active.
 

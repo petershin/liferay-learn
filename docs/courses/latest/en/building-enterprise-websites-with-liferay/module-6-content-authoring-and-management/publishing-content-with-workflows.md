@@ -12,7 +12,7 @@ Here you'll learn how teams can use Liferay's publishing tools and workflow to e
 
 Liferay provides two publishing tools for content creation and site building: Staging and Publications. With each tool, you can edit sites and content in a working environment without affecting end users. However, these tools achieve this in different ways, using different frameworks that have varying integration with other Liferay features.
 
-## Staging 
+## Staging
 
 Liferay Staging provides a shared working environment for making changes to individual sites and asset libraries before publishing these changes to your live environment. When enabled, Liferay creates a separate copy of the original site or library and hosts them on either the same server ([Local Live](https://learn.liferay.com/w/dxp/site-building/publishing-tools/staging/configuring-local-live-staging)) or on separate servers ([Remote Live](https://learn.liferay.com/w/dxp/site-building/publishing-tools/staging/configuring-remote-live-staging)).
 

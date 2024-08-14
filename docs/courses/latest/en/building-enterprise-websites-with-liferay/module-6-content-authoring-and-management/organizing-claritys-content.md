@@ -3,7 +3,7 @@ uuid: bd7bafb9-bd0b-411b-9458-0cb507842c87
 ---
 # Organizing Clarity’s Content
 
-<!--TASK: Reasset article organization; currently it combines 'Organizing' and 'Displaying' content-->
+<!--TASK: Reassess article organization; currently it combines 'Organizing' and 'Displaying' content-->
 
 In the previous section, you learned about the different types of content that Clarity wants to employ for their enterprise marketing website. This section covers some of the key Liferay features you can use to organize content once created:
 

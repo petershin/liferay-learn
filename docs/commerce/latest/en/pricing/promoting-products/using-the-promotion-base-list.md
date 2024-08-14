@@ -8,9 +8,9 @@ taxonomy-category-names:
 - Liferay PaaS
 - Liferay SaaS
 ---
-# Using the Promotion Base List
+# Using the Base Promotion List
 
-When you create a new catalog, a new *Promotion Base List* is automatically created. You cannot control the eligibility or add any price modifiers for a base promotion list. You can only use it to add specific entries that you want to target with a promotional price.
+When you create a new catalog, a new *Base Promotion List* is created automatically. You cannot control the eligibility or add any price modifiers for a base promotion list. You can only use it to add specific entries that you want to target with a promotional price.
 
 To use the base promotion list,
 
@@ -38,7 +38,7 @@ The base promotion list automatically adds all products in the corresponding cat
 
 1. Search for an SKU in the Entries section and click on it.
 
-1. You can enter a promotion Price, expiration date, and configure [bulk or tiered pricing](../using-price-tiers.md#bulk-pricing-vs-tier-pricing) for the SKU.
+1. You can enter a promotion price, expiration date, and configure [bulk or tiered pricing](../using-price-tiers.md#bulk-pricing-vs-tier-pricing) for the SKU.
 
    ![You can enter a promotion price, expiration date, and configure bulk or tiered pricing for the SKU.](./using-the-promotion-base-list/images/03.png)
 
@@ -52,7 +52,7 @@ You can also use the Override Discount toggle to give the promotion price preced
     Setting a SKU's price to `0` in a promotion list specifies the absence of a promotion price.
 
 !!! note
-    Another way to target an SKU with a promotion price is by opening the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)) and going to *Commerce* &rarr; *Products*. Find and select the product and click the *SKUs* tab. Select the SKU you want to target and set a Promotion Price for it. Click *Publish*. This sets the price of the SKU in the Base Promotion List. Prior to Liferay DXP 7.4 U42/GA42, Promotion Price was called Sale Price.
+    Another way to target an SKU with a promotion price is by opening the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)) and going to *Commerce* &rarr; *Products*. Find and select the product and click the *SKUs* tab. Select the SKU you want to target and set a promotion price for it. Click *Publish*. This sets the price of the SKU in the Base Promotion List. Before Liferay DXP 7.4 U42/GA42, promotion price was called sale price.
 
 ## Related Topics
 

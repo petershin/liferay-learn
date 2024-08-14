@@ -15,7 +15,7 @@ You can create *Promotions* in Liferay to offer promotional pricing to all custo
 ![A promotion showing difference between a product's list price and its promotion price](./introduction-to-promotions/images/01.png)
 
 !!! note
-    Prior to Liferay DXP 7.4 U42/GA42, Promotion Price was called Sale Price.
+    Before Liferay DXP 7.4 U42/GA42, Promotion Price was called Sale Price.
 
 ## Eligibility
 

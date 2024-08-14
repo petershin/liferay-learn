@@ -57,8 +57,6 @@ This specifies that everything in the `build/static` folder should be included a
 
 ### Understand the Code
 
-<!-- I'm not sure if this is the best approach, but I decided to eliminate the whole code as I was going to break it down later. I also focused on the functions instead of covering all the code. Eric -->
-
 The `src/index.ts` file defines three main JavaScript functions that provide a customizable filter interface: `descriptionBuilder`, `htmlElementBuilder`, and `oDataQueryBuilder`, which are responsible for describing the filter's state, rendering the filter's UI, and building the OData query respectively.
 
 The `descriptionBuilder()` function takes the filter's internal state (`selectedData`) and returns it as a human-readable string. Here, it returns the OData query string entered by the user.
@@ -186,6 +184,9 @@ Create the data set and the data set view:
    | Client Extension | `Liferay Sample FDS Filter` |
 
    ![Add the Liferay Sample FDS Filter client extension to the data set view.](./using-a-custom-filter-client-extension/images/04.png)
+
+   !!! tip
+       For this filter to be effective across different "Filter By" fields, ensure the custom filter client extension is coded to handle different field names dynamically. This allows the filter to be applied generically without creating separate filters for each field.
 
 Add the data set view to a content page:
 

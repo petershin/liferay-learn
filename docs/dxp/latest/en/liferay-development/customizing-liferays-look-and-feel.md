@@ -8,6 +8,7 @@ toc:
   - ./customizing-liferays-look-and-feel/using-a-frontend-data-set-filter-client-extension.md
   - ./customizing-liferays-look-and-feel/using-an-editor-config-contributor-client-extension.md
   - ./customizing-liferays-look-and-feel/using-a-frontend-data-set-cell-renderer-client-extension.md
+  - ./customizing-liferays-look-and-feel/using-a-javascript-import-map-entry-client-extension.md
   - ./customizing-liferays-look-and-feel/client-extensions-ui-reference.md
   - ./customizing-liferays-look-and-feel/micro-frontends.md
   - ./customizing-liferays-look-and-feel/themes.md
@@ -119,6 +120,18 @@ Specify a frontend data set cell renderer client extension in your `client-exten
 
 ```yaml
 type: fdsFilter
+```
+
+## JavaScript Import Map Entry Client Extensions
+
+{bdg-secondary}`Liferay 7.4 2023.Q1+/GA92+`
+
+[JavaScript import map entry client extensions](./customizing-liferays-look-and-feel/using-a-javascript-import-map-entry-client-extension.md) export JavaScript code or resources using a bare specifier, so that any page in Liferay can access them via an [import map](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script/type/importmap).
+
+Specify a JavaScript import map entry client extension in your `client-extension.yaml` file:
+
+```yaml
+type: jsImportMapsEntry
 ```
 
 ## Themes (PaaS or self-hosted only)

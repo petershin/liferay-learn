@@ -3,27 +3,27 @@ uuid: a2d82789-314e-4fb9-b2cf-14c180c8844e
 ---
 # Clarity's Search Requirements
 
-As modern businesses generate and store vasts amount of data, the need is ever greater to have tools that can be used to quickly and effectively search and retrieve this data. Having effective search tools means empowering employees and other site visitors, to be productive and reduce time looking for information.
+Modern businesses generate and store vasts amount of data. This makes an effective enterprise search solution essential for efficient knowledge management. Through the strategic implementation of robust search capabilities, you can empower organization to efficiently access, manage, and leverage their data while optimizing user experience and increasing productivity.
 
 ## Requirements
 
-Clarity already has various content on their site, such as eyewear products, blog posts, and web content. As their business continues to grow, they want to be assured that Liferay's search capabilities can scale with them.
+Clarity already has various content on their site, such as products and blog posts. As their business continues to grow, they want to be assured that Liferay's search capabilities can scale with them.
 
 ### Configurable search pages for non-technical team members
 
-Clarity needs a solution that is easy to use to quickly create and manage search results pages. Liferay provides different search widgets, including various search facet widgets, out-of-the-box. This means creating search results pages is as easy as dragging and dropping different widgets onto a site page. Even custom facets are available without any programming or custom code. This empowers Clarity team members to create the search pages they need without specialized IT help. Also, adding these elements to a search page ensures that site visitors have the means to further refine search results. Visitors can then utilize filters, facets, as well as keyword operators to drill down and find the data they are looking for.
+Clarity needs a solution that is easy to use to quickly create and manage search pages. Liferay provides different search widgets, including various search facet widgets, out-of-the-box. This means creating search pages is as easy as dragging and dropping different widgets onto a site page. Even custom facets are available without any programming or custom code. This empowers Clarity team members to create the search pages they need without specialized IT help. Also, adding these elements to a search page ensures that site visitors have the means to further refine search results. Visitors can then utilize filters, facets, as well as keyword operators to drill down and find the data they are looking for.
 
 ### Search that is customizable and extensible
 
-Clarity does not want to relive the challenges they had with their legacy systems and querying data. As the amount of their data grows, Clarity wants a search solution that is fast and accurate and is also capable of integrating with other systems. On top of its already robust search tools, Liferay's search blueprints give the possibility for further search customization thereby future proofing Clarity's search needs. Liferay's headless APIs also provide the potential for integration with third-party services and the option to use Liferay as a headless content management system.
+Clarity does not want to relive the challenges they had with their legacy systems and querying data. As their data grows, Clarity wants a search solution that is fast and accurate and is also capable of integrating with other systems. On top of its already robust search tools, Liferay's search blueprints provide extensive search customization. Liferay's headless APIs also provide the potential for integration with third-party services and the option to use Liferay as a headless content management system.
 
 ### Enabling a Self-service Platform
 
-Clarity understands the importance of search and making sure their customers and business partners get the answers they need without having to pick up the phone or contact customer service. As Clarity continues to expand their website, in addition to products and blog posts, they plan to add product documentation, manuals, troubleshooting guides, etc. Fortunately Liferay search can search across a wide variety of assets, including document files and PDFs. The data or information visitors are looking for is just a search click away.
+Clarity understands the importance of search and making sure their customers and business partners get the answers they need without having to contact customer service. As Clarity continues to expand their website, in addition to products and blog posts, they plan to add product documentation, manuals, troubleshooting guides, etc. Fortunately Liferay search can search across a wide variety of assets, including document files and PDFs. The data or information visitors are looking for is just a search click away.
 
 ### Enable Searching Content Stored in Other Systems
 
-Not all of Clarity's data that needs to be searched exists in Liferay yet. Clarity has different legacy systems that still contain valuable data that they may want customers or business partners to be able to access. By default, Liferay Search works in conjunction with Liferay's indexing framework. However, Liferay Search can be configured to access external search indexes using low level search, enabling Clarity to maintain search access to data on their legacy systems.
+Not all of Clarity's data that needs to be searched exists in Liferay yet. Clarity has different legacy systems that still contain valuable data that they may want customers or business partners to be able to access. You can configure Liferay search to access external search indexes using low-level search, enabling Clarity to maintain search access to data on their legacy systems.
 
 ### Deliver Personalized Search Results for Users to see Different Results
 

@@ -27,7 +27,7 @@ You can model each of these data entities as *object definitions*. An object def
 !!! note "Object Definition vs. Object Entry"
     Object definitions specify types of data entities, while object entries are instances of those data entities.
 
-![Object entries are individual instances of an object definition.](./using-objects-for-custom-solutions/images/01.png)
+![Object entries are individual instances of an object definition.](./building-custom-solutions-with-objects/images/01.png)
 
 After determining the types of entities required for their solution, Clarity can start adding attributes to the object definitions.
 
@@ -37,7 +37,7 @@ Attributes represent database columns storing specific data types for object def
 
 <!--TASK: Introduce picklists.-->
 
-![An object definition can have multiple fields to store information according to its type.](./using-objects-for-custom-solutions/images/02.png)
+![An object definition can have multiple fields to store information according to its type.](./building-custom-solutions-with-objects/images/02.png)
 
 For Clarity's use case, each Distributor Application entry should store the necessary business information for verifying each applicant's identity and credit for Know Your Customer (KYC) best practices and compliance with Anti-Money Laundering (AML) laws. As such, the Distributor Application object contains fields for collecting both applicant information (e.g., name and phone number) and business details (e.g., license and proof of insurance). Additionally, Clarity wants to assess the relative value of each prospective distributor. So they've added picklist fields to collect the following information:
 
@@ -61,7 +61,7 @@ The second object needed for this use case is the Application Evaluation. Clarit
 
 <!--TASK: Maybe reevaluate how this information is presented. It feels strange to list only the picklists for distributor application while listing all of the fields for the application evaluation object.-->
 
-![Both the Distributor Application and Application Evaluation objects store data related to the applicant.](./using-objects-for-custom-solutions/images/03.png)
+![Both the Distributor Application and Application Evaluation objects store data related to the applicant.](./building-custom-solutions-with-objects/images/03.png)
 
 ### Defining Relationships
 
@@ -73,7 +73,7 @@ On the other hand, many-to-many relationships enable users to relate multiple en
 
 For Clarity's solution, a single distributor application can have multiple evaluations related to it, but each evaluation can only relate to a single application. So they have added a one-to-many relationship between the Distributor Application (one) and Application Evaluation (many) objects.
 
-![A single Distributor Application entry is related to many Application Evaluation entities.](./using-objects-for-custom-solutions/images/04.png)
+![A single Distributor Application entry is related to many Application Evaluation entities.](./building-custom-solutions-with-objects/images/04.png)
 
 <!--TODO: Image above should probably have multiple Application Evaluations to better visualize the one-to-many relationship-->
 
@@ -89,7 +89,7 @@ Data integrity is crucial for effective business operations. With Liferay, you c
 
 When using validations, you can select from out-of-the-box options or define your own through the UI. For advanced use cases, you can also use the Object Validation Rule client extension. Once defined, Liferay checks field values on entry submission and displays an error message for invalid input.
 
-![Liferay uses validation rules to check field values upon entry submission.](./using-objects-for-custom-solutions/images/05.png)
+![Liferay uses validation rules to check field values upon entry submission.](./building-custom-solutions-with-objects/images/05.png)
 
 <!--TASK: ![]() -->
 
@@ -105,7 +105,7 @@ User roles do not come with objects permissions by default, so you must manually
 
 Workflows are approval processes for data entities in your solution. You can create custom workflows to improve task visibility, eliminate bottlenecks in business processes, and reduce the time and resources required to complete tasks.
 
-![Workflows are used to organize business processes.](./using-objects-for-custom-solutions/images/06.png)
+![Workflows are used to organize business processes.](./building-custom-solutions-with-objects/images/06.png)
 
 In addition to workflows, you can use picklists to define custom state fields with their own flow. This is helpful when you need to assign multiple states to an object entry at the same time. For example, Clarity wants to track the evaluation state of applications independently from their workflow status. To implement this, Clarity leveraged Liferay picklists with objects to define custom states for entries. They then defined a flow for valid state field transitions in the *State Manager* tab.
 
@@ -118,7 +118,7 @@ In addition to workflows, you can use picklists to define custom state fields wi
 | Withdrawn     | Open                                 |
 | On Hold       | Open, Under Review                   |
 
-![The application states are related to one another.](./using-objects-for-custom-solutions/images/07.png)
+![The application states are related to one another.](./building-custom-solutions-with-objects/images/07.png)
 
 After setting this up, Clarity can use the field with validations and actions to add business logic for different states. They also can use the field alongside workflow statuses to define more complex review and approval processes. In a later exercise, you'll finish setting up Clarity's workflow for Distributor Applications.
 

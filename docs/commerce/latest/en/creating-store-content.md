@@ -8,7 +8,6 @@ toc:
   - ./creating-store-content/using-wish-lists.md
   - ./creating-store-content/commerce-storefront-pages.md
   - ./creating-store-content/using-web-experience-management.md
-  - ./creating-store-content/design-and-theme.md
   - ./creating-store-content/liferay-commerce-widgets.md
   - ./creating-store-content/liferay-commerce-fragments.md
 uuid: 57fa1243-f803-4529-8e17-6563feb72128

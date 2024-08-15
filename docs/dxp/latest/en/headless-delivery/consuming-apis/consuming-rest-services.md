@@ -42,6 +42,61 @@ APIs are divided into several categories. This example uses the `BlogPosting` se
 
 ![The schema browser makes it convenient to find and call the service you want. ](./consuming-rest-services/images/01.png)
 
+## REST Context Paths for Root Models
+
+{bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA132+`
+
+When using object definitions related to modifiable system objects that are part of a root model, the REST context path includes the path of the root model. This means that the API endpoint reflects the hierarchical relationship between the root model and its descendant objects. This hierarchical approach helps in organizing and accessing related API endpoints efficiently.
+
+Examples:
+
+-  With a prefix (`headless-builder`):
+
+   API Application is the root model and API Endpoint is its descendant. So, the REST context paths are:
+
+   For APIApplication: `/headless-builder/application`.
+
+   For APIEndpoint: `/headless-builder/applications/endpoints`.
+
+   !!! note
+       The prefix indicates the category or module in which the object definitions are organized. These prefixes help in logically grouping related API endpoints.
+
+-  Without a prefix:
+
+   CommerceReturn is the root model and CommerceReturnItem is its descendant. So, the REST context paths are:
+
+   For CommerceReturn: `/commerce-returns`.
+
+   For CommerceReturnItem: `/commerce-returns/commerce-return/items`.
+
+Here's a table with modifiable system objects and their paths for reference. Use this information to understand how to construct REST context paths when working with modifiable system objects.
+
+| Object Definition          | REST Context Path                            |
+| -------------------------- | -------------------------------------------- |
+| APIApplication             | `/headless-builder/applications`             |
+| APIEndpoint                | `/headless-builder/endpoints`                |
+| APIFilter                  | `/headless-builder/filters`                  |
+| APIProperty                | `/headless-builder/properties`               |
+| APISchema                  | `/headless-builder/schemas`                  |
+| APISort                    | `/headless-builder/sorts`                    |
+| Bookmark                   | `/bookmarks`                                 |
+| CommerceReturn             | `/commerce-returns`                          |
+| CommerceReturnItem         | `/commerce-return-items`                     |
+| FDSAction                  | `/data-set-manager/actions`                  |
+| FDSCardsSection            | `/data-set-manager/cards-sections`           |
+| FDSClientExtensionFilter   | `/data-set-manager/client-extension-filters` |
+| FDSDateFilter              | `/data-set-manager/date-filters`             |
+| FDSDynamicFilter           | `/data-set-manager/dynamic-filters`          |
+| FDSEntry                   | `/data-set-manager/entries`                  |
+| FDSField                   | `/data-set-manager/fields`                   |
+| FDSListSection             | `/data-set-manager/list-sections`            |
+| FDSSort                    | `/data-set-manager/sorts`                    |
+| FDSView                    | `/data-set-manager/views`                    |
+| FunctionalCookieEntry      | `/functional-cookies-entries`                |
+| NecessaryCookieEntry       | `/necessary-cookies-entries`                 |
+| PerformanceCookieEntry     | `/performance-cookies-entries`               |
+| PersonalizationCookieEntry | `/personalization-cookies-entries`           |
+
 ## Identify the Site Containing the Data
 
 Now you must find the default Site ID:

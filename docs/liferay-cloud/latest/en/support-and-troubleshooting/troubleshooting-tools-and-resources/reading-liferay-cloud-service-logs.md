@@ -78,7 +78,22 @@ These are the only components of the `instance ID` for stateful set type service
 
 - An iterating (non-random) **node ID**: in this example, `0`. This ID remains the same even after deploying new versions of the service.
 
-The entire instance ID for stateful set type services always remains the same for each node of the service. This allows you to reliably use the same instance ID to identify the node in a cluster with the same [volume](../../updating-services-in-liferay-paas/configuring-persistent-file-storage-volumes.md), even after the service has been redeployed.
+The entire instance ID for stateful set type services always remains the same for each node of the service. You can reliably use the same instance ID to identify the node in a cluster with the same [volume](../../updating-services-in-liferay-paas/configuring-persistent-file-storage-volumes.md), even after the service has been redeployed.
+
+## Log Levels
+
+Liferay Cloud service logs are divided into six levels of increasing severity, with number values associated with them:
+
+| **Log Level** | **Priority Value** |
+| :------------ | :----------------: |
+| `TRACE`       | 100                |
+| `DEBUG`       | 200                |
+| `INFO`        | 300                |
+| `WARN`        | 400                |
+| `ERROR`       | 500                |
+| `FATAL`       | 600                |
+
+You can set the log level for the [backup service](../../platform-services/backup-service.md) and [database service](../../platform-services/database-service.md) using the `LCP_SERVICE_LOG_LEVEL` [environment variable](../../reference/defining-environment-variables.md). The service's messages are shown if their priority value is equal to or higher than the service's configured log level. You can set this environment variable using the log level's name (e.g., `DEBUG`) or with a numerical value (for example, setting the value to `0` to guarantee all messages are shown, or `601` to suppress all of these message types).
 
 ## Accessing Logs via the Liferay Cloud Console
 

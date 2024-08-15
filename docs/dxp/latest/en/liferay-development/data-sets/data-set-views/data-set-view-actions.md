@@ -138,10 +138,10 @@ To create a link action,
 
 1. Under Action Behavior, select *Link* as the Type.
 
-1. Specify the URL to which the user should be taken.
+1. Specify the URL.
 
 !!! note
-    When you set a URL in a link action, the Data Set component automatically adds `redirect` and `backURL` parameters, with the `backURL` parameter set to the URL of the page where the Data Set is located. If you can't navigate back to the Data Set from the destination page, ensure that the destination page handles the parameters correctly.
+    When you set a URL in a link action, the Data Set component automatically adds `redirect` and `backURL` parameters, with the `backURL` parameter set to the URL of the Data Set's page. If you can't navigate back to the Data Set from the destination page, ensure that the destination page handles the parameters correctly.
 
 1. (Optional) Enter a *Headless Action Key*. With the Action key, administrators can associate an action to a headless endpoint (e.g. GET, POST, and DELETE).
 
@@ -168,9 +168,9 @@ To create a modal action,
 
 1. Select a *Variant* for your modal: Full Screen, Large, or Small.
 
-1. [Enter a *Title* for your modal](#using-titles-with-modal-and-side-panel-actions).
+1. [Enter a *Title* for your modal.](#using-titles-with-modal-and-side-panel-actions).
 
-1. Specify the URL to which the user should be taken.
+1. Specify the URL.
 
 1. (Optional) Enter a *Headless Action Key*. With the Action key, administrators can associate an action to a headless endpoint (e.g. GET, POST, and DELETE).
 
@@ -235,11 +235,11 @@ To create status messages for [async](#async-action) and [headless](#headless-ac
 !!! tip
     Confirmation and status messages can be localized. Read [Editing and Localizing Labels](./data-set-view-visualization-modes.md#editing-and-localizing-labels) to learn more.
 
-### Using Titles with Modal and Side Panel Actions
+## Using Titles with Modal and Side Panel Actions
 
 {bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA132+`
 
-Side Panel and Modal actions open on top of the current page, allowing users to interact with the content without navigating away. When you add a `Title` field to these actions, a bar with the title and a close button appears at the top of the component. Users can close the modal/side panel and return to the original page.
+Side Panel and Modal actions open on top of the current page, so users can interact with the content without navigating away. When you add a `Title` field to these actions, a bar with the title and a close button appears at the top of the component. Users can close the modal/side panel and return to the original page.
 
 ![A Side Panel action with a title and a URL without a title.](./data-set-view-actions/images/10.png)
 

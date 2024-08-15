@@ -31,11 +31,11 @@ Liferay provides a client extension that integrates with [UPS](https://www.ups.c
 
 1. Click *Go to Console*.
 
-1. Go to Services, and click *New App*.
+1. Go to Services and click *New App*.
 
 1. Enter the order ID from before and complete the installation.
 
-1. Log in as an administrator and verify that the OAuth Application User Agent was added to Liferay. Open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)) and go to *Control Panel* &rarr; *OAuth2 Administration*. Verify the addition of a new entry called Liferay UPS Commerce Shipping Engine OAuth Application User Agent.
+1. Log in as an administrator and verify that the OAuth Application User Agent was added to Liferay. Open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)) and go to *Control Panel* &rarr; *OAuth2 Administration*. Verify the creation of a new entry called Liferay UPS Commerce Shipping Engine OAuth Application User Agent.
 
 ## Verifying the Addition of UPS as a Shipping Method
 
@@ -43,9 +43,9 @@ Liferay provides a client extension that integrates with [UPS](https://www.ups.c
 
 1. Add a new Minium site.
 
-1. Now, open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)) and go to *Commerce* → *Channels*.
+1. Open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)) and go to *Commerce* → *Channels*.
 
-1. Select *Minium Portal* and scroll down to the Shipping Methods section. Verify the addition of UPS as a new shipping method here. It is inactive by default.
+1. Select *Minium Portal* and scroll down to the Shipping Methods section. Verify the creation of UPS as a new shipping method here. It is inactive by default.
 
 1. Select the new shipping engine and activate it using the *Active* toggle.
 
@@ -54,8 +54,8 @@ Liferay provides a client extension that integrates with [UPS](https://www.ups.c
    The configuration tab contains an input field. You must add the following few key-value pairs for the shipping method to work correctly.
 
    ```
-   clientId=<CLIENT_ID>
-   clientSecret=<CLIENT_SECRET>
+   clientId=[CLIENT_ID]
+   clientSecret=[CLIENT_SECRET]
    dimensionsUnitOfMeasurementCode=
    packageWeightUnitOfMeasurementCode=
    packagingTypeCode=
@@ -68,13 +68,13 @@ Liferay provides a client extension that integrates with [UPS](https://www.ups.c
    simpleRateCode=
    ```
 
-   Replace `<CLIENT_ID>` and `<CLIENT_SECRET>` with the appropriate values from your UPS Developer Dashboard. For valid values of other fields, see links below:
+   Replace `[CLIENT_ID]` and `[CLIENT_SECRET]` with the appropriate values from your UPS Developer Dashboard. For valid values of other fields, see links below:
 
-   * [dimensionsUnitOfMeasurementCode](https://developer.ups.com/api/reference?loc=en_US#operation/Rate!path=RateRequest/Shipment/Package/Dimensions/UnitOfMeasurement&t=request)
-   * [packageWeightUnitOfMeasurementCode](https://developer.ups.com/api/reference?loc=en_US#operation/Rate!path=RateRequest/Shipment/Package/DimWeight/UnitOfMeasurement&t=request)
-   * [packagingTypeCode](https://developer.ups.com/api/reference?loc=en_US#operation/Rate!path=RateRequest/Shipment/Package/PackagingType/Code&t=request)
-   * [ratingCodes](https://developer.ups.com/api/reference?loc=en_US#operation/Rate!path=RateRequest/Shipment/Service/Code&t=request)
-   * [simpleRateCode](https://developer.ups.com/api/reference?loc=en_US#operation/Rate!path=RateRequest/Shipment/Package/SimpleRate/Code&t=request)
+   - [`dimensionsUnitOfMeasurementCode`](https://developer.ups.com/api/reference?loc=en_US#operation/Rate!path=RateRequest/Shipment/Package/Dimensions/UnitOfMeasurement&t=request)
+   - [`packageWeightUnitOfMeasurementCode`](https://developer.ups.com/api/reference?loc=en_US#operation/Rate!path=RateRequest/Shipment/Package/DimWeight/UnitOfMeasurement&t=request)
+   - [`packagingTypeCode`](https://developer.ups.com/api/reference?loc=en_US#operation/Rate!path=RateRequest/Shipment/Package/PackagingType/Code&t=request)
+   - [`ratingCodes`](https://developer.ups.com/api/reference?loc=en_US#operation/Rate!path=RateRequest/Shipment/Service/Code&t=request)
+   - [`simpleRateCode`](https://developer.ups.com/api/reference?loc=en_US#operation/Rate!path=RateRequest/Shipment/Package/SimpleRate/Code&t=request)
 
 1. Click *Save*.
 
@@ -82,10 +82,10 @@ Liferay provides a client extension that integrates with [UPS](https://www.ups.c
 
 1. Add a few items to your cart.
 
-1. Open the mini cart and click Submit. This starts the checkout flow.
+1. Open the mini cart and click *Submit*. This starts the checkout flow.
 
 ![The shipping options from UPS appear during checkout.](./using-the-ups-shipping-method/images/01.png)
 
-Continue checking out until you reach the shipping method page. You can see the addition of UPS shipping options on this page. Select the method of your choice and continue checking out.
+Continue checking out until you reach the shipping method page. You can see the UPS shipping options on this page. Select the method of your choice and continue checking out.
 
 See [Getting Started with UPS APIs](https://developer.ups.com/get-started?loc=en_US) for more information on setting up your UPS Developer account.

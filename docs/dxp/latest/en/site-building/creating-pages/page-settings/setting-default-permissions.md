@@ -78,4 +78,4 @@ Default permissions at the site level take precedence over default permissions a
 ![Verify that the permissions configured at the site level appear here.](./setting-default-permissions/images/05.png)
 
 !!! important
-    This feature is currently behind a release feature flag (LPD-21265). Read [Release Feature Flags](../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information.
+    Currently, this feature is behind a release feature flag (LPD-21265). Read [Release Feature Flags](../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information.

@@ -5,11 +5,11 @@ uuid: 7600c13a-c687-4637-97ca-abac89b05107
 
 <!--TASK: Fix image numbering-->
 
-Objects are the foundation of building low-code solutions with Liferay. With objects, you can model data structures and implement business logic for those structures without writing a single line of code. When created, each object fully integrates with Liferay's core frameworks to create a unified experience across the platform. This means you can leverage Liferay's out-of-the-box capabilities like workflows, notifications, permissions, Headless APIs, and data mapping with objects, so that your custom solutions feel native to the Liferay experience. Objects not only reduce development time and effort significantly, but also empower non-technical business users to actively participate in the development process. Furthermore, because objects also work hand-in-hand with client extensions, you don't sacrifice any of the flexibility that you expect in a modern developer tool.
+Objects are the foundation of building low-code solutions with Liferay. With objects, you can model data structures and implement business logic for those structures without writing a single line of code. When created, each object is fully integrated with Liferay's core frameworks to create a unified experience across the platform. This means you can leverage Liferay's out-of-the-box capabilities like workflows, notifications, permissions, Headless APIs, and data mapping with objects, so that your custom solutions feel native to the Liferay experience. Objects not only reduce development time and effort significantly, but also empower non-technical business users to actively participate in the development process. Furthermore, because objects also work hand-in-hand with client extensions, you don't sacrifice any of the flexibility that you expect in modern developer tools.
 
 <!--[TODO: Update with Design ticket] IMAGE: Diagram showing how Objects fit into the Liferay ecosystem and integrate with the various core frameworks -- headless APIs, Job Scheduler, Workflows, Forms, etc. -->
 
-In this article, we discuss best practices for working with Liferay Objects, first for modeling data structures and then for implementing business logic, in the context of Clarity's custom solution for onboarding distributors. You will apply these concepts later on as you complete exercises for setting up the distributor solution.
+Here we'll discuss best practices for working with Liferay Objects in the context of Clarity's custom solution for onboarding distributors. Then you'll apply these concepts in subsequent lessons as you set up Clarity's distributor solution.
 
 ## Modeling Data Structures
 

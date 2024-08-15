@@ -7,10 +7,10 @@ Clarity's development team has been working on implementing their distributor on
 
 While most parts of the solution are complete, some features remain unfinished. In the following exercises, you will
 
-- Set up and deploy the pre-built solution with a batch client extension.
-- Test the solution by creating Distributor Application and Application Evaluation entries.
-- Add additional fields and picklist items to the Distributor Application object.
-- Assign the appropriate permissions to the Distributor Application object.
+* Set up and deploy the pre-built solution with a batch client extension.
+* Test the solution by creating Distributor Application and Application Evaluation entries.
+* Add additional fields and picklist items to the Distributor Application object.
+* Assign the appropriate permissions to the Distributor Application object.
 
 These exercises demonstrate the powerful functionality and granular control you can achieve by using objects and client extensions together.
 

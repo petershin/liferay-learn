@@ -1,137 +1,204 @@
 ---
 uuid: 3cc6f0a9-a820-42f1-94ca-9227c53c98ed
 ---
-# Modeling Data Structures
+# Setting Up Clarity's Distributor Solution
 
-<!--TASK: Fix image numbering-->
+Clarity's development team has been working on implementing their distributor onboarding solution. In addition to using objects and client extensions, they have also leveraged page builder features to design a dynamic, responsive user interface for their custom application. 
 
-The first step in building an application is to model its data structures. This requires some brainstorming about the types of data entities you want to store, as well as their attributes and relationships. This is accomplished using [Liferay Objects](https://learn.liferay.com/web/guest/w/dxp/building-applications/objects), which is the foundation of Liferay's low-code application development. With it, you can define database tables, implement business logic, integrate with external services, and more, all without writing code.
+While most parts of the solution are complete, some features remain unfinished. In the following exercises, you will
 
-When created, each object is fully integrated with Liferay's core frameworks, providing a unified experience across the platform and enabling you to leverage Liferay's out-of-the-box capabilities. This means developers can leverage Liferay's built-in functionalities like workflows, notifications, permissions, Headless APIs, and data mapping without the need for additional coding. This significantly reduces development time and effort, allowing them to focus on building unique application features and functionalities.
+- Set up and deploy the pre-built solution with a batch client extension.
+- Test the solution by creating Distributor Application and Application Evaluation entries.
+- Add additional fields and picklist items to the Distributor Application object.
+- Assign the appropriate permissions to the Distributor Application object.
 
-<!--[TODO: Update with Design ticket] IMAGE: Diagram showing how Objects fit into the Liferay ecosystem and integrate with the various core frameworks -- headless APIs, Job Scheduler, Workflows, Forms, etc. -->
+These exercises demonstrate the powerful functionality and granular control you can achieve by using objects and client extensions together.
 
-Now let's see how Clarity can leverage these capabilities in their distributor onboarding solution. The first step is to identify the types of data entities required for their solution.
+## Exercise: Setting Up and Deploying the Distributor Application
+<!--Exercise 20d-->
 
-## Identifying Data Entities
+The training workspace includes a batch client extension for quickly setting up two object definitions and their related picklists. The specific process for deploying client extensions depends on your Liferay hosting model (i.e., Self-Hosted, PaaS, or SaaS). However, in all cases, you must add the compiled `.zip` file to the Liferay server's `[Liferay Home]/osgi/client-extensions/` folder. Here you'll deploy the batch client extensions and explore what they include as the Clarity Admin user.
 
-Clarity must store and manage two types of data entities for their distributor onboarding flow:
+1. In your training workspace, go to the `[repository-root]/client-extensions/liferay-clarity-batch/` folder.
 
-* Applications submitted by prospective distributors (Distributor Applications)
-* Internal evaluations of these applications (Application Evaluations)
+1. Run this command to build and deploy the client extension:
 
-You can model each of these data entities as *object definitions*. An object definition is essentially a blueprint. It defines the structure and properties of the data stored by your solution. Each definition includes a standard set of system fields along with configuration options for modifying their general details, behavior, data scope, and available features. When published, Liferay creates a database table for storing the definition's *entries*.
+   ```bash
+   blade gw clean deploy
+   ```
 
-!!! note "Object Definition vs. Object Entry"
-    Object definitions specify types of data entities, while object entries are instances of those data entities.
+   Or use Gradle Wrapper:
 
-![Object entries are individual instances of an object definition.](./modeling-data-structures/images/01.png)
+   ```bash
+   ../../gradlew clean deploy
+   ```
 
-After determining the types of entities required for their solution, Clarity can start adding their attributes.
+1. Verify the command executes successfully.
 
-## Adding Attributes
+   Two new object definitions and their picklists were added to your Liferay instance. Let's explore them.
 
-Attributes represent database columns storing specific data types for object definitions (e.g., text, numbers, and files). You define attributes by adding [fields](https://learn.liferay.com/en/w/dxp/building-applications/objects/creating-and-managing-objects/fields) to an object. Additionally, you can create [picklists](https://learn.liferay.com/w/dxp/liferay-development/objects/picklists) and use them with objects to provide users with predefined single-select and multi-select fields.
+1. While logged in as the Clarity Admin user, open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Picklists*.
 
-<!--TASK: Introduce picklists.-->
+   Picklists are predefined lists of items that you can use for single select and multi-select fields in object definitions. Here are picklists imported by the batch client extension:
 
-![An object definition can have multiple fields to store information according to its type.](./modeling-data-structures/images/02.png)
+   * D4B8 Annual Purchase Volumes
+   * D4B8 Application States
+   * D4B8 Assessment Scores
+   * D4B8 Business Types
+   * D4B8 Decisions
+   * D4B8 Distribution Channels
+   * D4B8 Distribution Regions
+   * D4B8 Order Types
+   * D4B8 Product Labels
+   * D4B8 Product Types
+   * D4B8 Recommendations
 
-For Clarity's use case, each Distributor Application entry should store the necessary business information for verifying each applicant's identity and credit for Know Your Customer (KYC) best practices and compliance with Anti-Money Laundering (AML) laws. As such, the Distributor Application object contains fields for the applicant's name, title, email, and phone number, along with a *Comments* field for the applicant to write a message. <!--TASK: ^ This list doesn't satisfy the AML/KYC comment.--> Additionally, Clarity wants to collect information for assessing the relative value of each prospective distributor. So they've added picklist fields for collecting this information:
+   ![Picklists for the object definitions.](./setting-up-claritys-distributor-solution/images/01.png)
 
-* Business Type
-* Distribution Regions
-* Distribution Channels
-* Order Types
-* Product Types
-* Annual Purchase Volume
-* Product Labels
+1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), go to *Control Panel*, and click *Objects*.
 
-The second object needed for this use case is the Application Evaluation. Clarity employees would use this object to evaluate incoming distributor applications, so it should store notes and recommendations made during the review process. The Application Evaluation object definition contains the following custom fields:
+   Here you'll see two new object definitions imported by the batch client extension:
 
-* Business Name (text)
-* Assessment Score (picklist)
-* Attachment (file)
-* Decision (picklist)
-* Interview Notes (text)
-* Recommendations (picklist)
-* Recommendation Comments (text)
+   * D4B8 Distributor Application
+   * D4B8 Application Evaluation
 
-<!--TASK: Maybe reevaluate how this information is presented. It feels strange to list only the picklists for distributor application while listing all of the fields for the application evaluation object.-->
+   ![Picklists for the object definitions.](./setting-up-claritys-distributor-solution/images/02.png)
 
-![Both the Distributor Application and Application Evaluation objects store data related to the applicant.](./modeling-data-structures/images/03.png)
+   As we're adding more object definitions, let's add a folder for organizing our objects and place the D4B8 objects into it.
 
-## Defining Relationships
+1. Click *Add* (![Add Folder Button](../../images/icon-plus.png)) for Object Folders.
 
-Defining relationships is key to creating data models that accurately represent real-world entities. They determine how data is connected in your application and capture entity interactions and dependencies. You can define one-to-many and many-to-many relationships between definitions. These relationships add fields or tables to each object for relating their entries, enabling you to access entry data in different object contexts.
+1. For label, enter `Distributor Applications`.
 
-One-to-many relationships enable users to relate a single entity of type A to multiple entities of type B. For example, if you were to model a university organization, the University object definition would have a one-to-many relationship with the Student object definition. Each university has multiple students, while each student only has one university.
+1. Click *Create Folder*.
 
-On the other hand, many-to-many relationships enable users to relate multiple entities of type A to multiples entities of type B, and vice versa. In the university example, you could implement a many-to-many relationship between the Student object and the Professor object, because each student can have multiple professors and each professor can have multiple students.
+   ![Create a new object folder.](./setting-up-claritys-distributor-solution/images/03.png)
 
-For Clarity's solution, a single distributor application can have multiple evaluations related to it. But each evaluation can only relate to one application. So they have added a one-to-many relationship between the Distributor Application (one) and Application Evaluation (many) objects.
+1. Click *View in Model Builder*.
 
-![A single Distributor Application entry is related to many Application Evaluation entities.](./modeling-data-structures/images/08.png)
+   The Objects Model Builder is a graphical interface that displays each object definition as a card and visualizes relationships between them. With it, you can create, manage, and extend data models in the Objects application and quickly configure definitions, fields, and relationships.
 
-<!--TODO: Image above should probably have multiple Application Evaluations to better visualize the one-to-many relationship-->
+1. In the left side panel, click *Actions* (![Actions menu](../../images/icon-actions.png)) for D4B8 Distributor Application and select *Move to Current Folder*.
 
-With the relationship between the object definitions, you can relate individual entries to one another through the Liferay UI or relationship REST APIs.
+   ![Move the D4B8 Distributor Application object definition to the new folder.](./setting-up-claritys-distributor-solution/images/04.png)
 
-## Exercise One: Adding Fields to the Distributor Applications Object
+1. Repeat this step for D4B8 Application Evaluation.
 
-<!--TASK: Update steps to use the model builder view.-->
+1. Drag and and drop the cards to reposition them and better see their relationship.
 
-The Distributor Applications object contains a number of custom fields, but Clarity needs one that can be used by the applicant to describe other brands that they offer.
+## Exercise: Testing the Distributor Application
+<!--Exercise 20e-->
 
-To add this field,
+In the following lessons, you'll learn more about these objects and how they're configured. Here you'll create and review a Distributor Application entry as the Clarity Admin user.
+
+To do this,
+
+1. Sign in as the Clarity Admin user.
+
+   * Email: `admin@clarityvisionsolutions.com`
+   * Password: `learn`
+
+1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and go to the *Control Panel* tab. Both D4B8 Application Evaluations and D4B8 Distributor Applications should appear in the Object category.
+
+   ![The Control Panel now shows the Application Evaluations and Distributor Applications menus.](./setting-up-claritys-distributor-solution/images/05.png)
+
+1. Open *D4B8 Distributor Applications*.
+
+1. Click *Add* (![Add Button](../../images/icon-add.png)) to create an entry.
+
+1. Fill out the required fields and click *Save*.
+
+   **Note**: You must enter a business name. We'll use this value with client extensions in a later exercise.
+
+1. Return to the Distributor Applications overview page and verify your entry appears in the table.
+
+   ![The created application entry is displayed in the Distributor Application menu.](./setting-up-claritys-distributor-solution/images/06.png)
+
+   Now you can create an evaluation for this entry.
+
+1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *D4B8 Application Evaluations*.
+
+1. Click *Add D4B8 Application Evaluation* to create an evaluation for the application.
+
+   <!--TASK: Why isn't this `*Add* (![Add Button](../../images/icon-add.png))`-->
+
+1. In the Application to Evaluations field, select the application you created. It is identified by the Business Name field.
+
+   <!--TASK: Update the definition to use the Business Name instead of the ID.-->
+
+1. Fill out the evaluation form and click *Save*.
+
+1. Return to the Application Evaluations overview page and verify the entry appears in the table.
+
+   ![The evaluation entry appears in the Application Evaluations menu.](./setting-up-claritys-distributor-solution/images/07.png)
+
+   This evaluation is automatically related to the selected application. You can confirm these entries are related by returning to *Distributor Applications* overview page, selecting the application, and going to the *Evaluation Notes* tab.
+
+   ![The Evaluation Notes tab displays evaluations related to the application.](./setting-up-claritys-distributor-solution/images/08.png)
+
+## Exercise: Adding Fields to the Distributor Applications Object
+<!--Exercise 20f-->
+
+The Distributor Applications object already contains a bunch of custom fields, but Clarity needs one for applicants to list other brands they offer. Here you'll add a field to the Distributor Applications Object as the Clarity Admin user.
+
+To do this,
 
 1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Objects*.
 
-1. Select the *Distributor Application* and go to the *Fields* tab.
+1. Click the *Distributor Applications* folder.
 
-1. Click *Add* (![Add Button](../../images/icon-add.png)) to create a new custom field, enter these values, and click *Save*:
+1. Click *View in Model Builder*.
 
-   | Field                    | Value                        |
-   |:-------------------------|:-----------------------------|
-   | Label                    | Other Brands Offered         |
-   | Field Name               | `businessOtherBrandsOffered` |
-   | Type                     | Long Text                    |
-   | Enable Entry Translation | False                        |
-   | Mandatory                | False                        |
+1. Look for the *D4B8 Distributor Application* object, click *Add Field or Relationship*, then select *Add Field*.
 
-   ![Clicking Add opens a panel to create a new custom field.](./modeling-data-structures/images/04.png)
+1. Enter these values and click *Save*:
+
+   | Field                    | Value                         |
+   |:-------------------------|:------------------------------|
+   | Label                    | Business Other Brands Offered |
+   | Field Name               | `businessOtherBrandsOffered`  |
+   | Type                     | Long Text                     |
+   | Enable Entry Translation | False                         |
+   | Mandatory                | False                         |
+
+   ![Clicking Add opens a panel to create a new custom field.](./setting-up-claritys-distributor-solution/images/09.png)
 
 Each saved field is added immediately to the object and automatically appears in its default layout when creating entries. However, the Distributor Application object has a custom layout that must be modified to include the new field.
 
 To add the field to the object's layout,
 
-1. Go to the *Layouts* tab and click *Main Layout*.
+1. Click *Actions* (![Actions Button](../../images/icon-actions.png)) for D4B8 Distributor Application and select *Edit in Page View*.
+
+1. When prompted, select *Open Page View*.
+
+1. Go to the *Layouts* tab and click *Application Layout*.
 
 1. Go to the *Layout* tab.
 
-1. Find the Business Details block under the Application tab, then click *Add Field*.
+1. Find the Business Details block and click *Add Field*.
 
-   ![The Business Details can be found under the Application tab.](./modeling-data-structures/images/05.png)
+   ![The Business Details can be found under the Application tab.](./setting-up-claritys-distributor-solution/images/10.png)
 
-1. Select *Other Brands Offered* as an option, choose the single column box for the field size, and click *Save*.
+1. Select *Business Other Brands Offered* as an option, choose the single column box for the field size, and click *Save*.
 
-   ![Clicking Add Field opens a panel to include a field to the block.](./modeling-data-structures/images/06.png)
+   ![Clicking Add Field opens a panel to include a field to the block.](./setting-up-claritys-distributor-solution/images/11.png)
 
-1. Click *Save*.
+1. Click *Save* at the bottom of the panel.
 
 Now the new field appears in the layout when creating entries.
 
-## Exercise Two: Adding Picklist Items
+## Exercise: Adding Picklist Items
+<!--Exercise 20g-->
 
-As mentioned previously, Clarity uses picklists to create predefined options for the applicants to choose from. Currently, the Product Types picklist is empty and does not include any options.
+Clarity uses picklists to create predefined options for the applicants to choose from. Currently, the Product Types picklist is empty and does not include any options. Here you'll add items to the picklist as the Clarity Admin user.
 
-To fix this,
+To do this,
 
 1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Picklists*
 
-1. Select *Product Types*.
+1. Select *D4B8 Product Types*.
 
-1. Click *Add* (![Add Button](../../images/icon-add.png)) and create these items:
+1. Click *Add*  and create these items:
 
    | Name       | Key        |
    |:-----------|:-----------|
@@ -141,7 +208,7 @@ To fix this,
    | Contacts   | contacts   |
    | Other      | other      |
 
-1. Edit each item and set their ERCs to these values:
+1. Click each item and replace their External Reference Code with these values:
 
    | Name       | External Reference Code |
    |:-----------|:------------------------|
@@ -151,19 +218,90 @@ To fix this,
    | Contacts   | PRODUCT_TYPE_CONTACTS   |
    | Other      | PRODUCT_TYPE_OTHER      |
 
-   ![All picklists should appear after adding them.](./modeling-data-structures/images/07.png)
+   ![All picklists should appear after adding them.](./setting-up-claritys-distributor-solution/images/12.png)
 
 1. Click *Save*.
 
-Once saved, the Distributor Application's `Products of Interest` custom field is automatically updated with the values, since it's related to this picklist. Applicants are now able to select their desired products.
+Once saved, the Distributor Application's `Products of Interest` custom field is updated with the selected picklist values. This allows applicants to choose their desired products from the updated list.
 
 <!--TASK: Improve; this is the first time we've mentioned Products of Interest.-->
 
+## Exercise: Assigning Object Permissions
+<!--Exercise 20h-->
+
+Clarity wants to allow all authenticated users to submit distributor applications. Here you'll grant the default *User* role permission to access Distributor Applications and add entries as the Clarity Admin user.
+
+To do this,
+
+1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Roles*.
+
+1. Select the *User* role and go to the *Define Permissions* tab.
+
+1. In the left menu, go to *Control Panel* &rarr; *Object* &rarr; *D4B8 Distributor Applications*.
+
+1. Add these permissions:
+
+   | Permission                                                             |
+   |:-----------------------------------------------------------------------|
+   | Application Permissions: View                                          |
+   | Resource Permissions > D4B8 Distributor Applications: Add Object Entry |
+   | Resource Permissions > D4B8 Distributor Application: Delete            |
+   | Resource Permissions > D4B8 Distributor Application: Update            |
+
+   <!--TASK: Confirm whether the delete and update permissions are necessary. I suspect they are not necessary, since entry creators are assigned the entry 'owner' role, which allows them to update for delete the entry.-->
+
+   ![The User role should be able to create, read, update, and delete applications.](./setting-up-claritys-distributor-solution/images/13.png)
+
+1. Click *Save*.
+
+1. Verify the User role has the desired permissions.
+
+   ![All permissions are assigned to the User role after configuration.](./setting-up-claritys-distributor-solution/images/14.png)
+
+   Clarity also wants to allow members of their business development team to review all applications and fill out evaluations. To achieve this, let's grant the Business Development Manager role the necessary permissions.
+
+1. Return to the *Roles* overview page and select *D4B8 Business Development Manager*.
+
+1. Go to the *Define Permissions* tab.
+
+1. In the left menu, go to *Control Panel* &rarr; *Object* &rarr; *D4B8 Distributor Applications*.
+
+1. Add these permissions, and click *Save*:
+
+   * D4B8 Distributor Applications
+
+     | Permission                                                  |
+     |-------------------------------------------------------------|
+     | Application Permissions: Access in Control Panel            |
+     | Application Permissions: View                               |
+     | Resource Permissions > D4B8 Distributor Application: Update |
+     | Resource Permissions > D4B8 Distributor Application: View   |
+
+   * D4B8 Application Evaluations
+
+     | Permission                                                            |
+     |-----------------------------------------------------------------------|
+     | Application Permissions: Access in Control Panel                      |
+     | Application Permissions: View                                         |
+     | Resource Permissions > D4B8 Application Evaluations: Add Object Entry |
+     | Resource Permissions > D4B8 Application Evaluation: Add Discussion    |
+     | Resource Permissions > D4B8 Application Evaluation: Delete            |
+     | Resource Permissions > D4B8 Application Evaluation: Delete Discussion |
+     | Resource Permissions > D4B8 Application Evaluation: Update            |
+     | Resource Permissions > D4B8 Application Evaluation: Update Discussion |
+     | Resource Permissions > D4B8 Application Evaluation: View              |
+
+   ![All permissions are assigned to the Business Development Manager Role after configuration.](./setting-up-claritys-distributor-solution/images/15.png)
+
+1. For test purposes, go to the *Assignees* tab and assign this role to Harper Roberts.
+
+Great! Now Clarity can make sure the business development team's manager can view submitted applications, create evaluations, and approve or deny applications. Next, let's finish setting up Clarity's workflow.
+
 ## Conclusion
 
-Congratulations! You've helped to finish modeling Clarity's data structures. Next, let's begin implementing business logic.
+Congratulations! You've deployed and tested Clarity's custom solution, modified its objects, and assigned them the appropriate permissions. Next, let's add some more business logic to fully integrate the solution with the Liferay platform.
 
-Next Up: [Implementing Business Logic](./implementing-business-logic.md).
+Next Up: [Adding Business Logic to Clarity's Solution](./adding-business-logic-to-claritys-solution.md).
 
 ## Additional Resources
 

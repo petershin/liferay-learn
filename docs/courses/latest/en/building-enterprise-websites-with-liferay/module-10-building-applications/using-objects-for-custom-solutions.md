@@ -1,140 +1,140 @@
 ---
 uuid: 7600c13a-c687-4637-97ca-abac89b05107
 ---
-# Deploying the Application
-<!-- TASK: RENAME ARTICLE TO "Deploying Clarity's Application" or "Setting Up Clarity's Workspace"-->
-Clarity's development team has been working on implementing their distributor onboarding solution. Throughout this process, they've used low-code features like [Objects](https://learn.liferay.com/w/dxp/building-applications/objects), [Picklists](https://learn.liferay.com/w/dxp/liferay-development/objects/picklists), and [Workflows](https://learn.liferay.com/w/dxp/process-automation/workflow/). They have also leveraged page builder features to design a dynamic, responsive user interface for their custom application. Additionally, they've created a microservice client extension to help automate their onboarding workflow.
+# Using Objects for Custom Solutions
 
-While most parts of the solution are complete, some features remain unfinished. Throughout this module, you'll take on the role of Ian Miller and contribute to Clarity's solution. But before you can do that, let's get your working environment set up.
+<!--TASK: Fix image numbering-->
 
-Here you'll learn how to:
+Objects are the foundation of building low-code solutions with Liferay. With objects, you can model data structures and implement business logic for those structures without writing a single line of code. When created, each object fully integrates with Liferay's core frameworks to create a unified experience across the platform. This means you can leverage Liferay's out-of-the-box capabilities like workflows, notifications, permissions, Headless APIs, and data mapping with objects, so that your custom solutions feel native to the Liferay experience. Objects not only reduce development time and effort significantly, but also empower non-technical business users to actively participate in the development process. Furthermore, because objects also work hand-in-hand with client extensions, you don't sacrifice any of the flexibility that you expect in a modern developer tool.
 
-* Set up the Clarity workspace
-* Build and deploy the solution using client extensions
-* Test the solution in Liferay's UI
+<!--[TODO: Update with Design ticket] IMAGE: Diagram showing how Objects fit into the Liferay ecosystem and integrate with the various core frameworks -- headless APIs, Job Scheduler, Workflows, Forms, etc. -->
 
-## Exercise One: Setting Up the Clarity Workspace
+In this article, we discuss best practices for working with Liferay Objects, first for modeling data structures and then for implementing business logic, in the context of Clarity's custom solution for onboarding distributors. You will apply these concepts later on as you complete exercises for setting up the distributor solution.
 
-The Clarity workspace is available in the [liferay-portal](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-clarity-workspace) repo.
+## Modeling Data Structures
 
-To set it up locally,
+The first step in building a custom solution is to model its data structures. This requires some brainstorming about the types of data entities you want to store, as well as their attributes and relationships.
 
-1. Download and unzip the workspace in a folder of your choice using these commands:
+### Identifying Data Entities
 
-   ```bash
-   curl -o com.liferay.sample.workspace-latest.zip https://repository.liferay.com/nexus/service/local/artifact/maven/content\?r\=liferay-public-releases\&g\=com.liferay.workspace\&a\=com.liferay.clarity.workspace\&\v\=LATEST\&p\=zip
-   ```
+Clarity must store and manage two types of data entities for their distributor onboarding flow:
 
-   ```bash
-   unzip com.liferay.sample.workspace-latest.zip
-   ```
+* Applications submitted by prospective distributors (Distributor Applications)
+* Internal evaluations of these applications (Application Evaluations)
 
-1. After extracting the workspace, go to the `client-extensions/` folder.
+You can model each of these data entities as *object definitions*. An object definition is a blueprint that defines the structure and properties of the data stored by your solution. Each object definition includes a standard set of system fields along with configuration options for modifying general details, behavior, data scope, and available actions. Once you publish an object definition, Liferay creates a database table for storing the definition's *entries*.
 
-   ```bash
-   cd [workspace-root]/client-extensions/
-   ```
+!!! note "Object Definition vs. Object Entry"
+    Object definitions specify types of data entities, while object entries are instances of those data entities.
 
-1. Run this command to build the client extensions:
+![Object entries are individual instances of an object definition.](./using-objects-for-custom-solutions/images/01.png)
 
-   ```bash
-   ../gradlew clean build
-   ```
+After determining the types of entities required for their solution, Clarity can start adding attributes to the object definitions.
 
-The compiled `.zip` files appear in each project's `dist/` folder.
+### Adding Attributes
 
-```bash
-[project-name]
-├── batch
-├── build
-├── dist
-│   └── [project-name].zip
-└── client-extension.yaml
-```
+Attributes represent database columns storing specific data types for object definitions (e.g., text, numbers, and files). You define attributes by adding [fields](https://learn.liferay.com/en/w/dxp/building-applications/objects/creating-and-managing-objects/fields) to an object. Additionally, you can create [picklists](https://learn.liferay.com/w/dxp/liferay-development/objects/picklists) and use them with objects to provide users with predefined single-select and multi-select fields.
 
-Now that the client extensions are ready, you can deploy them to your Liferay instance.
+<!--TASK: Introduce picklists.-->
 
-## Exercise Two: Deploying the Client Extensions
+![An object definition can have multiple fields to store information according to its type.](./using-objects-for-custom-solutions/images/02.png)
 
-The specific process for deploying client extensions depends on your Liferay hosting model (i.e., Self-Hosted, PaaS, or SaaS). However, in all cases, you must add the compiled `.zip` file to the Liferay server's `[Liferay Home]/osgi/client-extensions/` folder.
+For Clarity's use case, each Distributor Application entry should store the necessary business information for verifying each applicant's identity and credit for Know Your Customer (KYC) best practices and compliance with Anti-Money Laundering (AML) laws. As such, the Distributor Application object contains fields for collecting both applicant information (e.g., name and phone number) and business details (e.g., license and proof of insurance). Additionally, Clarity wants to assess the relative value of each prospective distributor. So they've added picklist fields to collect the following information:
 
-!!! note "Deploying to Self-Hosted Instances"
-    The following exercise assumes you're using Liferay SaaS. If you're self-hosting, navigate to the `client-extensions/` folder in your workspace and run this command: `../gradlew clean distBundleZip`. Alternatively, you can manually copy the `.zip` file to your server's `[Liferay Home]/osgi/client-extensions/` folder. See [Deploying to Your Liferay Instance](https://learn.liferay.com/w/dxp/liferay-development/client-extensions/working-with-client-extensions) for more information.
+* Annual Purchase Volume
+* Business Type
+* Distribution Channels
+* Distribution Regions
+* Order Types
+* Product Labels
+* Product Types
 
-Deploying client extensions to a SaaS environment requires the Liferay Cloud CLI tool you installed in [Module 2](../module-3-developer-setup/liferay-workspace.md#prerequisites). To do this,
+The second object needed for this use case is the Application Evaluation. Clarity employees would use this object to evaluate incoming distributor applications, so it should store notes and recommendations made during the review process. The Application Evaluation object definition contains the following custom fields:
 
-1. Go to the `liferay-clarity-batch` folder.
+* Assessment Score (picklist)
+* Attachment (file)
+* Business Name (text)
+* Decision (picklist)
+* Interview Notes (text)
+* Recommendations (picklist)
+* Recommendation Comments (text)
 
-   ```bash
-   cd liferay-clarity-batch/
-   ```
+<!--TASK: Maybe reevaluate how this information is presented. It feels strange to list only the picklists for distributor application while listing all of the fields for the application evaluation object.-->
 
-1. Run this command to deploy the compiled `.zip`:
+![Both the Distributor Application and Application Evaluation objects store data related to the applicant.](./using-objects-for-custom-solutions/images/03.png)
 
-   ```bash
-   lcp deploy --ext [path-to-zip-file]
-   ```
+### Defining Relationships
 
-   <!--TASK: Add the file path ^ -->
+Defining relationships between your data models ensures that they represent real-world entities accurately. Relationships determine how data is connected in your solution and capture entity interactions and dependencies. You can define one-to-many and many-to-many relationships between object definitions in Liferay. These relationships add fields or tables to each object so that you can access entry data in different object contexts.
 
-1. When prompted, select the desired project environment.
+One-to-many relationships enable users to relate a single entity of type A to multiple entities of type B. For example, if you were to model a university organization, the University object definition would have a one-to-many relationship with the Student object definition. Each university has multiple students, while each student only has one university.
 
-   ![The command returns a list of available projects to deploy the extension.](./deploying-the-application/images/01.png)
+On the other hand, many-to-many relationships enable users to relate multiple entities of type A to multiples entities of type B, and vice versa. In the university example, you could implement a many-to-many relationship between the Student object and the Professor object, because each student can have multiple professors and each professor can have multiple students.
 
-1. Once finished, open the [Cloud Console](https://console.liferay.cloud/) and go into the target environment's _Services_ menu. Make sure the `liferayclaritybatch`'s service status shows `ready`.
+For Clarity's solution, a single distributor application can have multiple evaluations related to it, but each evaluation can only relate to a single application. So they have added a one-to-many relationship between the Distributor Application (one) and Application Evaluation (many) objects.
 
-<!--Q: Just the liferayclaritybatch service? What about the microservice client extension?-->
+![A single Distributor Application entry is related to many Application Evaluation entities.](./using-objects-for-custom-solutions/images/04.png)
 
-Now that you've deployed the solution's client extensions, all the necessary components are available in your Liferay instance. Let's verify this by testing the solution.
+<!--TODO: Image above should probably have multiple Application Evaluations to better visualize the one-to-many relationship-->
 
-### Exercise Three: Testing the Distributor Application
+Once you've defined the relationship between object definitions, you can relate individual entries to one another through the Liferay UI or relationship REST APIs.
 
-The solution includes two Liferay objects: the Distributor Application object and the Application Evaluation object. In the following lessons, you'll learn more about these objects and how they're configured. For now, let's create and review a Distributor Application entry.
+## Implementing Business Logic
 
-To do this,
+Business logic refers to the rules and processes that determine how a solution behaves within Liferay DXP. Implementing business logic effectively can streamline operations, improve efficiency, and promote consistency across your organization. Here we'll explore how Clarity can leverage Liferay's features to add business logic to their distributor onboarding solution.
 
-1. Sign in as Ian Miller.
+### Validating Fields
 
-   * Email: `ianmiller@clarityvisionsolutions.com`
-   * Password: `learn`
+Data integrity is crucial for effective business operations. With Liferay, you can set object validations to enforce rules on user input to prevent errors and ensure your application is collecting the data you want. This minimizes the need for manual corrections and makes your data more consistent and reliable (e.g., valid email formats and phone number patterns).
 
-1. Open the _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) and go to the _Control Panel_ tab. Application Evaluations and Distributor Applications should appear in the Object category.
+When using validations, you can select from out-of-the-box options or define your own through the UI. For advanced use cases, you can also use the Object Validation Rule client extension. Once defined, Liferay checks field values on entry submission and displays an error message for invalid input.
 
-   ![The Control Panel now shows the Application Evaluations and Distributor Applications menus.](./deploying-the-application/images/02.png)
+![Liferay uses validation rules to check field values upon entry submission.](./using-objects-for-custom-solutions/images/05.png)
 
-1. Open _Distributor Applications_.
+<!--TASK: ![]() -->
 
-1. Click _Add_ (![Add Button](../../images/icon-add.png)) to create an entry.
+### Managing Data Access
 
-1. Fill out the form with any information, then click _Save_.
+Managing access to data with account membership and role permissions is critical for data privacy and security. Since Liferay Objects are integrated with the permissions framework, you can use roles and permissions to manage access to Distributor Applications and Application Evaluations. This helps Clarity ensure that only authenticated users can submit applications and a limited number of employees can review submissions.
 
-1. Return to the Distributor Applications overview page and verify your entry appears in the table.
+<!--TASK: ![]() -->
 
-   ![The created application entry is displayed in the Distributor Application menu.](./deploying-the-application/images/03.png)
+User roles do not come with objects permissions by default, so you must manually grant access to objects and their entries. When you deploy Clarity's distributor onboarding solution in a later exercise, you will also assign the appropriate permissions to the business role for reviewing applications.
 
-   Now you can create an evaluation for this entry.
+### Defining Workflows
 
-1. Open the _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)), go to the _Control Panel_ tab, and click _Application Evaluations_.
+Workflows are approval processes for data entities in your solution. You can create custom workflows to improve task visibility, eliminate bottlenecks in business processes, and reduce the time and resources required to complete tasks.
 
-1. Click _Add_ (![Add Button](../../images/icon-add.png)) to create an evaluation for the application.
+![Workflows are used to organize business processes.](./using-objects-for-custom-solutions/images/06.png)
 
-1. In the Application to Evaluations field, select the application you created. It is identified by the Business Name field.
+In addition to workflows, you can use picklists to define custom state fields with their own flow. This is helpful when you need to assign multiple states to an object entry at the same time. For example, Clarity wants to track the evaluation state of applications independently from their workflow status. To implement this, Clarity leveraged Liferay picklists with objects to define custom states for entries. They then defined a flow for valid state field transitions in the *State Manager* tab.
 
-1. Fill out the evaluation form with any information, then click _Save_.
+| Current State | Next State                           |
+|---------------|--------------------------------------|
+| Open          | Under Review, Withdrawn              |
+| Under Review  | Approved, Denied, Withdrawn, On Hold |
+| Approved      | Under Review                         |
+| Denied        | Under Review                         |
+| Withdrawn     | Open                                 |
+| On Hold       | Open, Under Review                   |
 
-1. Return to the Application Evaluations overview page and verify the entry appears in the table.
+![The application states are related to one another.](./using-objects-for-custom-solutions/images/07.png)
 
-   ![The evaluation entry appears in the Application Evaluations menu.](./deploying-the-application/images/04.png)
+After setting this up, Clarity can use the field with validations and actions to add business logic for different states. They also can use the field alongside workflow statuses to define more complex review and approval processes. In a later exercise, you'll finish setting up Clarity's workflow for Distributor Applications.
 
-This evaluation is automatically related to the selected application. You can confirm this relationship between them by returning to _Distributor Applications_ overview page, selecting the application, and going to the _Evaluation Notes_ tab.
+### Automating Notifications
 
-   ![The Evaluation Notes tab displays evaluations related to the application.](./deploying-the-application/images/05.png)
+Notifications improve visibility in your application by providing real-time updates to users and system administrators for object events. This involves creating notification templates and then using those templates with object actions. The template provides the notification content and design, while the object action determines the trigger and conditions for sending the notification (e.g., at object creation, at object update).
+
+<!--TASK: ![]()-->
+
+Currently, Clarity's onboarding solution includes three automated notifications that inform applicants when their applications are received, approved, or rejected. In a later exercise, you'll add another notification for informing Clarity's business development team of new submissions.
 
 ## Conclusion
 
-Congratulations! You've set up the prebuilt Clarity workspace and deployed its client extensions to your Liferay instance. Next, let's explore the solution's data structures and fill in the missing pieces.
+Congratulations! You've learned about best practices for modeling data structures and implementing business logic with Liferay Objects. Now you can apply this knowledge by completing some exercises for Clarity's custom distributor solution.
 
-Next Up: [Modeling Data Structures](./modeling-data-structures.md)
+Next Up: [Setting Up Clarity's Distributor Solution](./setting-up-claritys-distributor-solution.md)
 
 ## Additional Resources
 

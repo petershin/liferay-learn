@@ -8,7 +8,7 @@ uuid: 9a008a3e-9fa7-45ad-9200-d4b40bf628a2
 
 # Creating a Database Dump
 
-Liferay's backup service allows you to [upload a backup](./downloading-and-uploading-backups.md) using a snapshot comprised of two compressed files, containing the document library and database dump, respectively. To upload data from a local Liferay instance's database, you must be able to create a dump to upload. This is required for [migrating to Liferay Cloud](../../migrating-to-liferay-cloud.md) and [Liferay upgrades](../../customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/upgrading-your-liferay-dxp-instance.md).
+[Uploading a backup](./downloading-and-uploading-backups.md) to Liferay Cloud's backup service requires a snapshot comprised of two compressed files, containing the document library and database dump, respectively. To upload data from a local Liferay instance's database, you must be able to create a dump to upload. This is required for [migrating to Liferay Cloud](../../migrating-to-liferay-cloud.md) and [Liferay upgrades](../../customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/upgrading-your-liferay-dxp-instance.md).
 
 !!! note
     The backup service only supports backing up and restoring one database (the database set via the `lcp-secret-database-name` secret, usually `lportal`). Compressing and uploading multiple databases is not supported.
@@ -114,7 +114,7 @@ The steps shown here compress the MySQL database dump into a `database.gz` file,
 
     The `--databases` and `--add-drop-database` flags are necessary for backup restoration to work correctly. You can also use the `/backup/download` API to see how the backup service creates its MySQL dump file.
 
-The resulting database dump contains the following code just before the create table statements.
+The resulting database dump contains the following code before the `create table` statements.
 
 ```sql
 --

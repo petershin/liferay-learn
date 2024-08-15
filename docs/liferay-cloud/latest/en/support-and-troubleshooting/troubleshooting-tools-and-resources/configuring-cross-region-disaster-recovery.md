@@ -75,7 +75,7 @@ Once you have the production environment's master token, set these [environment 
 
 - **LCP_EXTERNAL_PROJECT_ID**: the production environment's project ID (for example, `acme-prd`)
 
-- **LCP_BACKUP_RESTORE_SCHEDULE**: a [cron scheduling](https://crontab.guru/) value that defines the frequency of automated backups. See [Scheduling Automated Backups and Cleanups](../../platform-services/backup-service.md#scheduling-automated-backups-and-cleanups) for more information.
+- **LCP_BACKUP_RESTORE_SCHEDULE**: a [cron scheduling](https://crontab.guru/) value that defines the frequency of automatically restoring backups from the `prd` environment to the Disaster Recovery environment. See [Scheduling Automated Backups and Cleanups](../../platform-services/backup-service.md#scheduling-automated-backups-and-cleanups) for more information.
 
 Set this value as a [secret](../../tuning-security-settings/managing-secure-environment-variables-with-secrets.md) in your DR environment:
 
@@ -172,7 +172,7 @@ The web server service's custom domain in the DR environment must match the orig
 
 This causes all traffic to go to the DR environment.
 
-![For the webserver service, configure the DR environment's custom domains to match those of the Production environment.](./configuring-cross-region-disaster-recovery/images/07.png)
+![For the web server service, configure the DR environment's custom domains to match those of the Production environment.](./configuring-cross-region-disaster-recovery/images/07.png)
 
 ## Post-incident Recovery
 
@@ -215,7 +215,7 @@ Restore the data from your DR environment back to your normal production environ
    !!! note
        The Backup History lists the backups in two tabs: one for the DR environment and one for the Production environment.
 
-1. For the most recent backup (the one you just created), click the *Actions* button (![Actions](./configuring-cross-region-disaster-recovery/images/03.png)) and select *Restore*.
+1. For the most recent backup (that you created previously), click the *Actions* button (![Actions](./configuring-cross-region-disaster-recovery/images/03.png)) and select *Restore*.
 
 1. Select the Production environment and click *Deploy Build*.
 
@@ -239,7 +239,7 @@ Allow some time for the reindex to complete.
 
 ### Restore Server Custom Traffic to Production
 
-Because the webserver service redirected all traffic to the DR environment during the incident, these settings must be updated again so that all traffic is redirected back to the original Production environment.
+Because the web server service redirected all traffic to the DR environment during the incident, these settings must be updated again so that all traffic is redirected back to the original Production environment.
 
 1. Navigate to *Services* on the left menu.
 

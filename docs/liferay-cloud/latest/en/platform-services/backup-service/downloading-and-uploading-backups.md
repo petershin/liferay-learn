@@ -57,7 +57,7 @@ lcp backup upload --project [Project name] --environment [Environment] --doclib 
 
 You must [create and compress a database dump](#creating-the-database-file) to a `.gz` archive to upload it.
 
-You can also add the `--concurrency` flag with a number of streams to upload in parallel (up to 10,000).
+You can also add the `--concurrency` flag with the number of streams to upload in parallel (up to 10,000).
 
 ## Preparing the Database and Document Library for Upload
 

@@ -90,7 +90,7 @@ Now you can embed fragments in the new Collection Display and map them to fields
 ## Related Topics
 
 * [Creating Objects](../creating-and-managing-objects/creating-objects.md)
-* [Displaying Object Entires](../displaying-object-entries.md)
+* [Displaying Object Entries](../displaying-object-entries.md)
 * [About Collections and Collection Pages](../../../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md)
 * [Collection Providers](../../../site-building/displaying-content/collections-and-collection-pages/collection-providers.md)
 * [Defining Object Relationships](../creating-and-managing-objects/relationships/defining-object-relationships.md)

@@ -111,7 +111,7 @@ To manage object relationships within form fragments,
 
 1. Add a [Form Container fragment to the page](#creating-a-form)
 
-1. Once you select an object in a Form Container fragment, a modal window opens displaying available fields, including related fields, as selectable options. Select one or more fields and click *Save* to populate the form.
+1. Once you select an object in a Form Container fragment, a window opens displaying available fields, including related fields, as selectable options. Select one or more fields and click *Save* to populate the form.
 
    In this example, the Employee Profile and Car objects have a one-to-many relationship, where each employee can be associated with multiple cars. When generating the form, you can select and combine fields from both objects to capture all the necessary information.
 

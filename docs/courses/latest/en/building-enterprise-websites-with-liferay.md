@@ -9,7 +9,7 @@ toc:
 - ./building-enterprise-websites-with-liferay/module-7-analytics-and-personalization.md
 - ./building-enterprise-websites-with-liferay/module-8-headless-apis.md
 - ./building-enterprise-websites-with-liferay/module-9-search.md
-- ./building-enterprise-websites-with-liferay/module-10-building-applications.md
+- ./building-enterprise-websites-with-liferay/module-10-customizing-liferay-dxp.md
 - ./building-enterprise-websites-with-liferay/module-11.md
 - ./building-enterprise-websites-with-liferay/module-12.md
 uuid: 28bfc1dd-8a55-4377-aa3a-e5fdd9da55fb

@@ -2,7 +2,7 @@
 toc:
 - ./module-10-customizing-liferay-dxp/claritys-customization-requirements.md
 - ./module-10-customizing-liferay-dxp/customizing-claritys-front-end.md
-- ./module-10-customizing-liferay-dxp/using-objects-for-custom-solutions.md
+- ./module-10-customizing-liferay-dxp/building-custom-solutions-with-objects.md
 - ./module-10-customizing-liferay-dxp/setting-up-claritys-distributor-solution.md
 - ./module-10-customizing-liferay-dxp/adding-business-logic-to-claritys-solution.md
 uuid: 9311d48e-997b-4e20-ad75-2a08b9a82e3f
@@ -41,8 +41,8 @@ Learn about Clarity's requirements for customizing Liferay DXP.
 Learn how to customize Clarity's website with frontend client extensions.
 :::
 
-:::{grid-item-card}  Using Objects for Custom Solutions
-:link: ./module-10-customizing-liferay-dxp/using-objects-for-custom-solutions.md
+:::{grid-item-card}  Building Custom Solutions with Objects
+:link: ./module-10-customizing-liferay-dxp/building-custom-solutions-with-objects.md
 
 Learn about best practices for building custom functionality with Liferay Objects.
 :::

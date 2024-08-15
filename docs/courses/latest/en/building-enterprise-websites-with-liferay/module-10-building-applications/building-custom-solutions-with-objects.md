@@ -1,7 +1,7 @@
 ---
 uuid: 7600c13a-c687-4637-97ca-abac89b05107
 ---
-# Using Objects for Custom Solutions
+# Building Custom Solutions with Objects
 
 <!--TASK: Fix image numbering-->
 

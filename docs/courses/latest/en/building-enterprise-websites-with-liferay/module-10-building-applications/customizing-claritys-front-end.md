@@ -178,4 +178,4 @@ To do this,
 
 Congratulations! You have modified, deployed, and created your own frontend client extensions to change Clarity's appearance. Next, we'll dive into objects and how you can use them together with client extensions to customize Liferay even further.
 
-Next Up: [Using Objects for Custom Solutions](./using-objects-for-custom-solutions.md)
+Next Up: [Building Custom Solutions with Objects](./building-custom-solutions-with-objects.md)

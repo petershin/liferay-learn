@@ -7,6 +7,7 @@ taxonomy-category-names:
 - Liferay PaaS
 - Liferay SaaS
 ---
+
 # Data Migration Center
 
 {bdg-secondary}`Liferay DXP 2023.Q4+/Portal 7.4 GA102+`
@@ -149,7 +150,7 @@ Here are the main differences:
 
 -  {bdg-secondary}`Liferay DXP 2024.Q1+/Portal 7.4 GA112+` You can import object entries from comma-separated values (CSV) files.
 
-   Add a CSV file and configure whether it has headers. 
+   Add a CSV file and configure whether it has headers.
 
    Define the CSV separator---a character used to separate individual fields within a CSV file. Typically, this is a comma, but you can use different characters like semicolons or pipes.
 

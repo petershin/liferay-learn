@@ -41,34 +41,34 @@ Create and access a blog post with an ERC.
 
    ```bash
    ...
-     "alternativeHeadline" : "",
-     "articleBody" : "Foo",
-     "creator" : {
-       "additionalName" : "",
-       "contentType" : "UserAccount",
-       "familyName" : "Test",
-       "givenName" : "Test",
-       "id" : 20123,
-       "name" : "Test Test"
-     },
-     "customFields" : [ ],
-     "dateCreated" : "2023-09-21T21:21:48Z",
-     "dateModified" : "2023-09-21T21:21:48Z",
-     "datePublished" : "2023-09-21T21:21:00Z",
-     "description" : "Foo",
-     "encodingFormat" : "text/html",
-     "externalReferenceCode" : "blog_post_able",
-     "friendlyUrlPath" : "able",
-     "headline" : "Able",
-     "id" : 42617,
-     "keywords" : [ ],
-     "numberOfComments" : 0,
-     "relatedContents" : [ ],
-     "renderedContents" : [ ],
-     "siteId" : 20119,
-     "taxonomyCategoryBriefs" : [ ]
+      "alternativeHeadline" : "",
+      "articleBody" : "Foo",
+      "creator" : {
+         "additionalName" : "",
+         "contentType" : "UserAccount",
+         "familyName" : "Test",
+         "givenName" : "Test",
+         "id" : 20123,
+         "name" : "Test Test"
+      },
+      "customFields" : [ ],
+      "dateCreated" : "2023-09-21T21:21:48Z",
+      "dateModified" : "2023-09-21T21:21:48Z",
+      "datePublished" : "2023-09-21T21:21:00Z",
+      "description" : "Foo",
+      "encodingFormat" : "text/html",
+      "externalReferenceCode" : "blog_post_able",
+      "friendlyUrlPath" : "able",
+      "headline" : "Able",
+      "id" : 42617,
+      "keywords" : [ ],
+      "numberOfComments" : 0,
+      "relatedContents" : [ ],
+      "renderedContents" : [ ],
+      "siteId" : 20119,
+      "taxonomyCategoryBriefs" : [ ]
    ...
-      ```
+   ```
 
 1. This blog post can now be referenced by its ID or its ERC. For example, fetch the blog post by its ID:
 

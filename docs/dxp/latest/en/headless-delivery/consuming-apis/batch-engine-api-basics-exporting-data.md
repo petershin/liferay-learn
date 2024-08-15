@@ -8,6 +8,7 @@ taxonomy-category-names:
 - Liferay PaaS
 - Liferay SaaS
 ---
+
 # Batch Engine API Basics - Exporting Data
 
 Liferay's Headless Batch Engine provides REST APIs to import and export data. Call these services to export data from Liferay.
@@ -43,21 +44,21 @@ Then, follow these steps:
 
    ```json
    {
-     "className" : "com.liferay.headless.admin.user.dto.v1_0.Account",
-     "contentType" : "JSON",
-     "errorMessage" : "",
-     "executeStatus" : "INITIAL",
-     "externalReferenceCode" : "6c5286a2-aa28-175b-041e-eacca4a54d3b",
-     "id" : 1234,
-     "processedItemsCount" : 0,
-     "totalItemsCount" : 0
+      "className" : "com.liferay.headless.admin.user.dto.v1_0.Account",
+      "contentType" : "JSON",
+      "errorMessage" : "",
+      "executeStatus" : "INITIAL",
+      "externalReferenceCode" : "6c5286a2-aa28-175b-041e-eacca4a54d3b",
+      "id" : 1234,
+      "processedItemsCount" : 0,
+      "totalItemsCount" : 0
    }
    ```
 
-   ```{important}
-   `jsont` is the required format for `*.batch-engine-dat.json` files when using in conjunction with batch client extensions. 
-   
-   When using `json` or `jsonl` as the output format, all fields are exported by default. To specify fields, you must provide an additional query parameter (`fieldNames`) with the fields you want to export. Each field must be separated by a comma (,). When using `csv` as the export format, this is a mandatory query parameter.
+   !!! important
+       `jsont` is the required format for `*.batch-engine-dat.json` files when using in conjunction with batch client extensions.
+
+       When using `json` or `jsonl` as the output format, all fields are exported by default. To specify fields, you must provide an additional query parameter (`fieldNames`) with the fields you want to export. Each field must be separated by a comma (,). When using `csv` as the export format, this is a mandatory query parameter.
    ```
 
 1. The current `executeStatus` is `INITIAL`. It denotes the submission of a task to the Batch Engine. You must wait until this is `COMPLETED` to download the data. On the command line, execute the `ExportTask_GET_ById.sh` script and replace `1234` with the ID of your export task.
@@ -68,16 +69,16 @@ Then, follow these steps:
 
    ```json
    {
-     "className" : "com.liferay.headless.admin.user.dto.v1_0.Account",
-     "contentType" : "JSON",
-     "endTime" : "2022-10-19T14:13:58Z",
-     "errorMessage" : "",
-     "executeStatus" : "COMPLETED",
-     "externalReferenceCode" : "6c5286a2-aa28-175b-041e-eacca4a54d3b",
-     "id" : 1234,
-     "processedItemsCount" : 8,
-     "startTime" : "2022-10-19T14:13:58Z",
-     "totalItemsCount" : 8
+      "className" : "com.liferay.headless.admin.user.dto.v1_0.Account",
+      "contentType" : "JSON",
+      "endTime" : "2022-10-19T14:13:58Z",
+      "errorMessage" : "",
+      "executeStatus" : "COMPLETED",
+      "externalReferenceCode" : "6c5286a2-aa28-175b-041e-eacca4a54d3b",
+      "id" : 1234,
+      "processedItemsCount" : 8,
+      "startTime" : "2022-10-19T14:13:58Z",
+      "totalItemsCount" : 8
    }
    ```
 
@@ -140,9 +141,8 @@ Here are the command's arguments:
 | `"http://localhost:8080/o/headless-batch-engine/v1.0/export-task/${1}/${2}"` | The REST service endpoint                           |
 | `-u "test@liferay.com:learn"`                                                | Basic authentication credentials                    |
 
-```{note}
-Basic authentication is used here for demonstration purposes. For production, you should authorize users via [OAuth2](https://learn.liferay.com/w/dxp/headless-delivery/using-oauth2). See [Using OAuth2 to Authorize Users](../using-oauth2/using-oauth2-to-authorize-users.md) for a sample React application that uses Oauth2.
-```
+!!! note
+    Basic authentication is used here for demonstration purposes. For production, you should authorize users via [OAuth2](https://learn.liferay.com/w/dxp/headless-delivery/using-oauth2). See [Using OAuth2 to Authorize Users](../using-oauth2/using-oauth2-to-authorize-users.md) for a sample React application that uses Oauth2.
 
 ## Examine the Java Class
 
@@ -164,15 +164,13 @@ This class invokes the REST service using only three lines of code:
 
 Note that the project includes the `com.liferay.headless.batch.engine.client.jar` file as a dependency. You can find client JAR dependency information for all REST applications in the API explorer in your installation at `/o/api`.
 
-```{note}
-The `main` method's comment demonstrates running the class.
-```
+!!! note
+    The `main` method's comment demonstrates running the class.
 
 The other example Java classes are similar to this one, but call different `ExportTaskResource` methods.
 
-```{important}
-See [ExportTaskResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-batch-engine/headless-batch-engine-client/src/main/java/com/liferay/headless/batch/engine/client/resource/v1_0/ExportTaskResource.java) for service details.
-```
+!!! important
+    See [ExportTaskResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-batch-engine/headless-batch-engine-client/src/main/java/com/liferay/headless/batch/engine/client/resource/v1_0/ExportTaskResource.java) for service details.
 
 Below are examples of calling other Batch Engine export REST services using cURL and Java.
 
@@ -238,7 +236,7 @@ Run the `ExportTask_POST_ToSite` class. Replace `1234` with your site's ID and `
 java -classpath .:* -DsiteId=1234 -DclassName=able ExportTask_POST_ToSite
 ```
 
-For example, export `BlogPosting` data: 
+For example, export `BlogPosting` data:
 
 ```bash
 java -classpath .:* -DsiteId=1234 -DclassName=com.liferay.headless.delivery.dto.v1_0.BlogPosting ExportTask_POST_ToSite
@@ -252,9 +250,8 @@ Code:
    :lines: 9-23
 ```
 
-```{note}
-The second parameter is `json` and denotes the output format of the exported data. You can also use `jsonl` and `csv` here. If using CSV, it is mandatory to specify the fields you want to export as a comma separated string and pass it as the fifth parameter in the `exportTaskResource.postExportTask()` method.
-```
+!!! note
+    The second parameter is `json` and denotes the output format of the exported data. You can also use `jsonl` and `csv` here. If using CSV, it is mandatory to specify the fields you want to export as a comma separated string and pass it as the fifth parameter in the `exportTaskResource.postExportTask()` method.
 
 The JSON response displays information of the newly created export task. Note the `id` to keep track of its `executeStatus`. Once completed, you can execute `ExportTaskContent_GET_ById.[java|sh]` with the export task ID to download the data.
 
@@ -296,5 +293,5 @@ The [API Explorer](https://learn.liferay.com/w/dxp/headless-delivery/consuming-a
 
 ## Related Topics
 
-* [Batch Engine API Basics - Importing Data](./batch-engine-api-basics-importing-data.md)
-* [Data Migration Center](./data-migration-center.md)
+- [Batch Engine API Basics - Importing Data](./batch-engine-api-basics-importing-data.md)
+- [Data Migration Center](./data-migration-center.md)

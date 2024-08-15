@@ -53,4 +53,4 @@ With *External Reference Codes* (ERCs), you have easy data synchronization and m
 
 When interacting with external systems or databases through APIs, ERCs can serve as unique identifiers for records, facilitating data synchronization and mapping.
 
-In short, Liferay offers a full set of tools for working with its data outside its user interface. Read on to learn more. 
+In short, Liferay offers a full set of tools for working with its data outside its user interface. Read on to learn more.

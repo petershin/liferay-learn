@@ -35,7 +35,7 @@ Start by running Liferay DXP to call its GraphQL APIs.
 
    ![Access Liferay's GraphiQL through the API Explorer.](./consuming-graphql-apis/images/01.png)
 
-1. Click the *Docs* link below the button you just clicked. Now you can browse the API.
+1. Click the *Docs* link below the button you clicked. Now you can browse the API.
 
 1. GraphQL separates read and write operations by calling the first a *query* and the second a *mutation*. Since the first thing you want to do is post a blog entry, click *mutation*. The API list appears.
 
@@ -83,7 +83,7 @@ The Site ID appears at the top of the Details section. It's an integer, like `20
 
 ## Make the Service Call using Credentials with Access to the Data
 
-Now you have everything you need to make the call. All web services must be accessed using credentials that have access to the data you're requesting. The included GraphQL client authenticates using your browser. If you plan to write a standalone client, you should authorize users via [OAuth2](../using-oauth2.md).
+Now you have everything needed to make the call. All web services must be accessed using credentials that grant access to the data you're requesting. The included GraphQL client authenticates through your browser. If you plan to write a standalone client, you should authorize users via [OAuth2](../using-oauth2.md).
 
 !!! important
     During development, it's much easier to use Basic Auth, which passes credential data in the URL. Since this is insecure, *never use this method for production.*
@@ -172,7 +172,7 @@ query {
 }
 ```
 
-Click the play button to run it, and you'll see there aren't any blog entries:
+Click the play button to run it, and verify that there aren't any blog entries:
 
 ```json
 {
@@ -185,7 +185,7 @@ Click the play button to run it, and you'll see there aren't any blog entries:
 }
 ```
 
-Now you'll post a blog entry.
+Now, post a blog entry.
 
 ### Posting a Blog Entry
 
@@ -346,7 +346,7 @@ blogPosting(
 ): BlogPosting
 ```
 
-Since the query above revealed your Blog post's ID, you can retrieve just the post you want:
+Since the query above revealed your Blog post's ID, you can retrieve only the post you want:
 
 ```graphql
 query {

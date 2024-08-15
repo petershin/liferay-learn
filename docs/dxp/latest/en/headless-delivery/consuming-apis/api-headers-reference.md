@@ -8,6 +8,7 @@ taxonomy-category-names:
 - Liferay PaaS
 - Liferay SaaS
 ---
+
 # API Headers Reference
 
 API headers are components of HTTP requests that provide essential information to the server about the client's request and how the server should handle it.
@@ -73,7 +74,7 @@ curl \
     {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+` Use the `Accept-Language` header with both Rest API and GraphQL to return values in the selected language when dealing with custom [objects](../../liferay-development/objects.md).
 
 !!! warning
-    {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+` When the "Enable Entry Translation" option is turned off for a custom object's field, it means the field doesn't support translation into multiple languages. If you store a value for a specific language other than the default one and you query for the field without specifying the language, you'll get an empty response. That's because the default language value isn't used automatically as a fallback when you query for a different language. Instead, the response only includes values stored for the language you've queried.
+    {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+` When the "Enable Entry Translation" option is turned off for a custom object's field, it means the field doesn't support translation into multiple languages. If you store a value for a specific language other than the default one and you query for the field without specifying the language, the response is empty. That's because the default language value isn't used automatically as a fallback when you query for a different language. Instead, the response only includes values stored for the language you've queried.
 
 ## X-Accept-All-Languages
 

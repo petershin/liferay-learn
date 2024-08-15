@@ -8,6 +8,7 @@ taxonomy-category-names:
 - Liferay PaaS
 - Liferay SaaS
 ---
+
 # Batch Engine API Basics - Importing Data
 
 Liferay's Headless Batch Engine provides REST APIs to import and export data. Call these services to import data to Liferay.
@@ -43,18 +44,18 @@ Then follow these steps:
 
    ```json
    {
-     "className" : "com.liferay.headless.admin.user.dto.v1_0.Account",
-     "contentType" : "JSON",
-     "errorMessage" : "",
-     "executeStatus" : "INITIAL",
-     "externalReferenceCode" : "4a6ab4b0-12cc-e8e3-fc1a-4726ebc09df2",
-     "failedItems" : [ ],
-     "id" : 1234,
-     "importStrategy" : "ON_ERROR_FAIL",
-     "operation" : "CREATE",
-     "processedItemsCount" : 0,
-     "startTime" : "2022-10-19T14:19:43Z",
-     "totalItemsCount" : 0
+      "className" : "com.liferay.headless.admin.user.dto.v1_0.Account",
+      "contentType" : "JSON",
+      "errorMessage" : "",
+      "executeStatus" : "INITIAL",
+      "externalReferenceCode" : "4a6ab4b0-12cc-e8e3-fc1a-4726ebc09df2",
+      "failedItems" : [ ],
+      "id" : 1234,
+      "importStrategy" : "ON_ERROR_FAIL",
+      "operation" : "CREATE",
+      "processedItemsCount" : 0,
+      "startTime" : "2022-10-19T14:19:43Z",
+      "totalItemsCount" : 0
    }
    ```
 
@@ -66,19 +67,19 @@ Then follow these steps:
 
    ```json
    {
-     "className" : "com.liferay.headless.admin.user.dto.v1_0.Account",
-     "contentType" : "JSON",
-     "endTime" : "2022-10-19T12:18:59Z",
-     "errorMessage" : "",
-     "executeStatus" : "COMPLETED",
-     "externalReferenceCode" : "7d256faa-9b7e-9589-e85c-3a72f68b8f08",
-     "failedItems" : [ ],
-     "id" : 1234,
-     "importStrategy" : "ON_ERROR_FAIL",
-     "operation" : "CREATE",
-     "processedItemsCount" : 2,
-     "startTime" : "2022-10-19T12:18:58Z",
-     "totalItemsCount" : 2
+      "className" : "com.liferay.headless.admin.user.dto.v1_0.Account",
+      "contentType" : "JSON",
+      "endTime" : "2022-10-19T12:18:59Z",
+      "errorMessage" : "",
+      "executeStatus" : "COMPLETED",
+      "externalReferenceCode" : "7d256faa-9b7e-9589-e85c-3a72f68b8f08",
+      "failedItems" : [ ],
+      "id" : 1234,
+      "importStrategy" : "ON_ERROR_FAIL",
+      "operation" : "CREATE",
+      "processedItemsCount" : 2,
+      "startTime" : "2022-10-19T12:18:58Z",
+      "totalItemsCount" : 2
    }
    ```
 
@@ -100,7 +101,7 @@ Then follow these steps:
    java -classpath .:* -DclassName=able -Ddata=baker ImportTask_POST_ToInstance
    ```
 
-   For example, import `Account` data: 
+   For example, import `Account` data:
 
    ```bash
    java -classpath .:* -DclassName=com.liferay.headless.admin.user.dto.v1_0.Account -Ddata="[{\"name\": \"Able\", \"type\": \"business\"}, {\"name\": \"Baker\", \"type\": \"guest\"}]" ImportTask_POST_ToInstance
@@ -132,9 +133,8 @@ Here are the command's arguments:
 | `-d "[{\"name\": \"Able\", \"type\": \"business\"}, {\"name\": \"Baker\", \"type\": \"guest\"}]"` | The data you are requesting to post                 |
 | `-u "test@liferay.com:learn"`                                                                     | Basic authentication credentials                    |
 
-```{note}
-Basic authentication is used here for demonstration purposes. For production, you should authorize users via [OAuth2](https://learn.liferay.com/w/dxp/headless-delivery/using-oauth2). See [Use OAuth2 to authorize users](../using-oauth2/using-oauth2-to-authorize-users.md) for a sample React application that uses Oauth2.
-```
+!!! note
+    Basic authentication is used here for demonstration purposes. For production, you should authorize users via [OAuth2](https://learn.liferay.com/w/dxp/headless-delivery/using-oauth2). See [Use OAuth2 to authorize users](../using-oauth2/using-oauth2-to-authorize-users.md) for a sample React application that uses Oauth2.
 
 The other cURL commands use similar JSON arguments.
 
@@ -158,15 +158,13 @@ This class invokes the REST service using only three lines of code:
 
 Note that the project includes the `com.liferay.headless.batch.engine.client.jar` file as a dependency. You can find client JAR dependency information for all REST applications in the API explorer in your installation at `/o/api`.
 
-```{note}
-The `main` method's comment demonstrates running the class.
-```
+!!! note
+    The `main` method's comment demonstrates running the class.
 
 The other example Java classes are similar to this one, but call different `ImportTaskResource` methods.
 
-```{important}
-See [ImportTaskResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-batch-engine/headless-batch-engine-client/src/main/java/com/liferay/headless/batch/engine/client/resource/v1_0/ImportTaskResource.java) for service details.
-```
+!!! important
+    See [ImportTaskResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-batch-engine/headless-batch-engine-client/src/main/java/com/liferay/headless/batch/engine/client/resource/v1_0/ImportTaskResource.java) for service details.
 
 Below are examples of calling other Batch Engine import REST services using cURL and Java.
 
@@ -234,7 +232,7 @@ Command:
 java -classpath .:* -DsiteId=1234 -DclassName=able -Ddata=baker ImportTask_POST_ToSite
 ```
 
-For example, import `BlogPosting` data: 
+For example, import `BlogPosting` data:
 
 ```bash
 java -classpath .:* -DsiteId=1234 -DclassName=com.liferay.headless.delivery.dto.v1_0.BlogPosting -Ddata="[{\"articleBody\": \"Foo\", \"headline\": \"Able\"}, {\"articleBody\": \"Bar\", \"headline\": \"Baker\"}]" ImportTask_POST_ToSite
@@ -278,7 +276,7 @@ Command:
 java -classpath .:* -DclassName=able -Ddata=baker ImportTask_PUT_ById
 ```
 
-For instance, if you want to overwrite existing `Account` data, replace `1234` and `5678` with the IDs of the existing Accounts: 
+For instance, if you want to overwrite existing `Account` data, replace `1234` and `5678` with the IDs of the existing Accounts:
 
 ```bash
 java -classpath .:* -DclassName=com.liferay.headless.admin.user.dto.v1_0.Account -Ddata="[{\"id\" :1234, \"name\": \"Bar\", \"type\": \"business\"}, {\"id\": 5678, \"name\": \"Goo\", \"type\": \"guest\"}]" ImportTask_PUT_ById
@@ -320,7 +318,7 @@ Command:
 java -classpath .:* -DclassName=able -Ddata=baker ImportTask_DELETE_ById
 ```
 
-For instance, if you want to delete `Account` data, replace `1234` and `5678` with the IDs of the existing accounts: 
+For instance, if you want to delete `Account` data, replace `1234` and `5678` with the IDs of the existing accounts:
 
 ```bash
 java -classpath .:* -DclassName=com.liferay.headless.admin.user.dto.v1_0.Account -Ddata="[{\"id\": 1234}, {\"id\": 5678}]" ImportTask_DELETE_ById
@@ -372,5 +370,5 @@ The [API Explorer](https://learn.liferay.com/w/dxp/headless-delivery/consuming-a
 
 ## Related Topics
 
-* [Batch Engine API Basics - Exporting Data](./batch-engine-api-basics-exporting-data.md)
-* [Data Migration Center](./data-migration-center.md)
+- [Batch Engine API Basics - Exporting Data](./batch-engine-api-basics-exporting-data.md)
+- [Data Migration Center](./data-migration-center.md)

@@ -59,7 +59,7 @@ To fill in the URL,
 
 1. To make the URL more universal, you can start by finding and deleting the initial address (`http://localhost:8080`).
 
-   This guarantees that the action will work even if the site's address is altered.
+   This guarantees that the action works even if the site's address is altered.
 
 1. You can also find and delete the authentication token `p_p_auth%3DYH1QvqK9&p_p_auth=YH1QvqK9`.
 
@@ -67,7 +67,7 @@ To fill in the URL,
 
 1. To parameterize your URL, find the `fileEntryId` value in your URL. Replace it with a parameter used in the headless API to refer to the document. In this case, `id`.
 
-   The value for the `fileEntryId` will be different in your instance.
+   The value for the `fileEntryId` is different in your instance.
 
    If you are not sure which values you should use, access your [API explorer](../../../headless-delivery/consuming-apis/consuming-rest-services.md) and look for the parameters used in your REST application.
 
@@ -103,7 +103,7 @@ To fill in the URL,
 
    In this case, the action keys are `get`, `replace`, `update`, and `delete`.
 
-   Since users will edit the document, you should use the PUT method and its activation key (`replace`). Add the key to the Headless Action Key field and ensure that the user has the required permissions for that action.
+   Since users edit the document, you should use the PUT method and its activation key (`replace`). Add the key to the Headless Action Key field and ensure that the user has the required permissions for that action.
 
 1. In this case, there is no need for a Confirmation Message, so click *Save*.
 

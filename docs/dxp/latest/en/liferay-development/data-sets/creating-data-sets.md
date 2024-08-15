@@ -13,7 +13,7 @@ taxonomy-category-names:
 {bdg-link-primary}`[Beta Feature](../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
 
 !!! important
-   This feature is currently behind a [beta feature flag](../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags) (LPS-164563).
+    This feature is currently behind a [beta feature flag](../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags) (LPS-164563).
 
 You can create data sets from different resources available through Liferay Headless APIs. Use data sets to create and manage [data set views](./data-set-views.md) and customize how you display your data set.
 

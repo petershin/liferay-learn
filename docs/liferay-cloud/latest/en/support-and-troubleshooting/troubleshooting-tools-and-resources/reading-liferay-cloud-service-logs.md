@@ -93,7 +93,7 @@ Liferay Cloud service logs are divided into six levels of increasing severity, w
 | `ERROR`       | 500                |
 | `FATAL`       | 600                |
 
-You can set the log level for the [backup service](../../platform-services/backup-service.md) and [database service](../../platform-services/database-service.md) using the `LCP_SERVICE_LOG_LEVEL` [environment variable](../../reference/defining-environment-variables.md). The service's messages are shown if their priority value is equal to or higher than the service's configured log level. You can set this environment variable using the log level's name (e.g., `DEBUG`) or with a numerical value (for example, setting the value to `0` to guarantee all messages are shown, or `601` to suppress all of these message types).
+You can set the log level for the [backup service](../../platform-services/backup-service.md) and [database service](../../platform-services/database-service.md) using the `LCP_SERVICE_LOG_LEVEL` [environment variable](../../reference/defining-environment-variables.md). The service's messages appear if their priority value is equal to or higher than the service's configured log level. You can set this environment variable using the log level's name (e.g., `DEBUG`) or with a numerical value (for example, setting the value to `0` to guarantee all messages are shown, or `601` to suppress all of these message types).
 
 ## Accessing Logs via the Liferay Cloud Console
 

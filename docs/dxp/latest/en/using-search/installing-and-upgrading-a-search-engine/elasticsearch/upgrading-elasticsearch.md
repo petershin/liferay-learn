@@ -12,7 +12,7 @@ uuid: 74ea186e-bea7-4e10-aecc-67069682aeac
 ---
 # Upgrading Elasticsearch
 
-Liferay supports Elasticsearch 8. The [compatibility matrix](https://help.liferay.com/hc/en-us/sections/360002103292-Compatibility-Matrix) provides the latest support details.
+Liferay supports Elasticsearch 8. The [compatibility matrix](https://help.liferay.com/hc/en-us/articles/360016511651-Search-Engine-Compatibility-Matrix) provides the latest support details.
 
 !!! warning 
     Solr is in [maintenance mode](../../../installation-and-upgrades/upgrading-liferay/reference/maintenance-mode-and-deprecations-in-7-4.md#features-moved-to-maintenance-mode-in-74) in Liferay 7.4.

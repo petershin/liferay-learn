@@ -21,7 +21,7 @@ uuid: fc80c177-a89d-4dd5-8dac-b6fde330ad3f
 Elasticsearch is the highly scalable, full-text search engine Liferay uses by default. Elasticsearch is bundled with Liferay for non-production purposes. In production, Liferay requires Elasticsearch running on a separate remote server.
 
 ```{important}
-Always check the [compatibility matrix](https://help.liferay.com/hc/en-us/sections/360002103292-Compatibility-Matrix) for the Elasticsearch version and server configuration compatible with your Liferay version.
+Always check the [compatibility matrix](https://help.liferay.com/hc/en-us/articles/360016511651-Search-Engine-Compatibility-Matrix) for the Elasticsearch version and server configuration compatible with your Liferay version.
 ```
 
 ```{important}

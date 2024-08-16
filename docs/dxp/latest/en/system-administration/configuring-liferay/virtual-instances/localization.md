@@ -16,15 +16,28 @@ Use the left and right arrow buttons to move a language from Current (configured
 
 ## Locale Prepend Friendly URL Style
 
-Here, you can choose if and how locale acronyms should be pre-pended to the URLs in your site.
+The Locale Prepend Friendly URL Style configuration controls how locale prefixes are applied to URLs, indicating the content's language. This setting assists users and search engines in navigating and understanding localized content.
 
-**Locale is not automatically prepended to a URL.**: Each URL could potentially point to many different languages. For example, the URL `http://localhost:8080/web/guest/home` could be viewed by users in English and Japanese.
+![Access the Locale Prepend Friendly URL Style Page.](./site-localization/images/07.png)
 
-**Locale is automatically prepended to a URL when the requested locale is not the default locale.**: Each URL points to one language, and the locale acronym is omitted for the default instance language. For example, the URL `http://localhost:8080/web/guest/home` points to the default language. The URL `http://localhost:8080/zh/web/guest/home` and `http://localhost:8080/zh_CN/web/guest/home` both point to the Chinese language.
+1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Instance Settings*.
 
-**Locale is automatically prepended to every URL.**: Each URL points to one language, and the locale acronym is present for all languages including the default language. For example, if the default language is English, the URL `http://localhost:8080/web/guest/home` redirects to `http://localhost:8080/en/web/guest/home`.
+1. Under *Platform*, click *Localization*.
 
-**Locale is automatically prepended to a URL when the requested locale is not the default user locale.**: Each URL points to one language, and the locale acronym is omitted for the default user language. In the case of guest users, the behavior is the same as *Locale is automatically prepended to a URL when the requested locale is not the default locale*.
+1. Under Virtual Instance Scope, select the *Locale Prepend Friendly URL Style* option on the left and choose one of these options:
+
+   **Locale is automatically prepended to a URL when the requested locale is not the default user locale** (default): Adds the locale prefix to the URL only if the requested locale differs from the user's preferred locale, as set in their profile. If the requested locale matches the user's preferred locale, no locale prefix is added.
+
+   **Locale is automatically prepended to a URL when the requested locale is not the default locale**: Adds the locale prefix to the URL whenever the requested locale differs from th every URL**: Adds the locale prefix to all URLs, regardless of the en if the user's preferred locale matches the requested locale, the locale prefix is added if that locale is different from the site's default.
+
+   **Locale is not automatically prepended to a URL**: The URL does not include a locale prefix, regardless of the user's preferred locale or the site's default locale. The URL structure remains consistent without any locale information.
+
+   **Locale is automatically prepended to every URL**: Adds the locale prefix to all URLs, regardless of the user's preferred locale or the site's default locale. Every URL includes the locale information, even if the requested locale matches the default locale.
+
+1. Click *Save*.
+
+!!! warning
+    Make sure your URLs don't have a trailing slash (e.g instead of `https://example.com/product/item1/`, use `https://example.com/product/item1`).
 
 ## Time Zone
 

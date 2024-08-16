@@ -28,7 +28,7 @@ These tools help ensure your project runs efficiently within the [quotas](./mana
 
 ## Team Management
 
-Liferay Cloud allows collaboration in projects through teams so more people can manage and contribute to your projects as necessary. Invite members to your team and grant them different permissions with [roles](./manage-and-optimize/environment-teams-and-roles.md).
+With Liferay Cloud, you can collaborate in projects with your team to distribute the work as necessary. Invite members to your team and grant them different permissions with [roles](./manage-and-optimize/environment-teams-and-roles.md).
 
 ![Invite members to your team and grant them different permissions with roles.](./manage-and-optimize/environment-teams-and-roles/images/01.png)
 
@@ -36,7 +36,7 @@ Liferay Cloud keeps track of everything collaborators do and displays a [history
 
 ![Keep track of what your team members are doing.](./manage-and-optimize/team-activities/images/01.png)
 
-Here, you can find a list of all kinds of events in a given environment, including:
+Here, you can find a list of all kinds of events in a given environment, including
 
 - **Backup Activities**: examples include when automated or manual backups start, and whether they succeed.
 - **Scaling Activities**: examples include when auto-scaling is enabled or disabled, and when the Liferay service is scaled up or down.

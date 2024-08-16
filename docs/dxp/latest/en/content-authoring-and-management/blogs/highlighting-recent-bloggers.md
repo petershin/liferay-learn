@@ -7,6 +7,7 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: 4c3af2fb-8fbb-4355-82d5-9788ed9503cd
 ---
+
 # Highlighting Recent Bloggers
 
 You can use the *Recent Bloggers* widget to highlight the work of your most recent blog authors. This widget lists each recent author's name, profile picture, and number of posts.
@@ -33,6 +34,6 @@ Embed the widget instance as a widget on any website, Facebook, Netvibes, or as 
 
 ## Scope
 
-Specify the blog instance the widget displays: the current site's blog (default), the global blog, or the page's blog.
+Specify the blog instance the widget displays: the current site's blog (default), the aggregate blog, or the page's blog.
 
 When you’re finished setting the options, click *Save*. Then close the dialog box.

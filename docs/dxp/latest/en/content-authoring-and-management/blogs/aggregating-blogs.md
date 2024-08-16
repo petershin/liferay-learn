@@ -7,6 +7,7 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: 64517334-c722-4110-ad54-a5c67b95a3f4
 ---
+
 # Aggregating Blogs
 
 The Blogs Aggregator widget publishes blogs entries from multiple blog sources. 
@@ -49,7 +50,7 @@ Use the options here to embed the widget instance as a widget on any website, Fa
 
 ## Scope
 
-Specify the blog instance the widget displays: the current Site's blog (default), the global blog, or the page's blog. 
+Specify the blog instance the widget displays: the current Site's blog (default), the aggregate blog, or the page's blog.
 
 ## Conclusion
 

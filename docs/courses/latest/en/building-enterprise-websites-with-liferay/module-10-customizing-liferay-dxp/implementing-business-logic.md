@@ -15,17 +15,11 @@ When using validations, you can select from out-of-the-box options or define you
 
 ![Liferay uses validation rules to check field values upon entry submission.](./implementing-business-logic/images/01.png)
 
-<!--TASK: ![]() -->
-
-## Managing Data Access
-
-Managing access to data with account membership and role permissions is critical for data privacy and security. Since Liferay Objects are integrated with the permissions framework, you can use roles and permissions to manage access to Distributor Applications and Application Evaluations. This helps Clarity ensure that only authenticated users can submit applications and a limited number of employees can review submissions.
-
-<!--TASK: ![]() -->
-
-User roles do not come with objects permissions by default, so you must manually grant access to objects and their entries. When you deploy Clarity's distributor onboarding solution in a later exercise, you will also assign the appropriate permissions to the business role for reviewing applications.
+Clarity’s Distributor Application object already includes the validations they need. To view them, open the Objects application, begin editing the Distributor Application object, and go to the Validations tab.
 
 ## Defining Workflows
+
+<!-- TASK: Mention the workflow action client extensions here. -->
 
 Workflows are approval processes for data entities in your solution. You can create custom workflows to improve task visibility, eliminate bottlenecks in business processes, and reduce the time and resources required to complete tasks.
 
@@ -48,11 +42,15 @@ After setting this up, Clarity can use the field with validations and actions to
 
 ## Automating Notifications
 
+<!-- TASK: Mention the notification client extension here. -->
+
 Notifications improve visibility in your application by providing real-time updates to users and system administrators for object events. This involves creating notification templates and then using those templates with object actions. The template provides the notification content and design, while the object action determines the trigger and conditions for sending the notification (e.g., at object creation, at object update).
 
 <!--TASK: ![]()-->
 
 Currently, Clarity's onboarding solution includes three automated notifications that inform applicants when their applications are received, approved, or rejected. In a later exercise, you'll add another notification for informing Clarity's business development team of new submissions.
+
+<!--TASK: Add section that encompasses other advanced types of business logic (e.g., automating account creation using the object action client extension)-->
 
 ## Conclusion
 

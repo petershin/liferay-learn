@@ -3,7 +3,7 @@ uuid: b283ea94-6a1c-497b-8bfd-e9fd5aade789
 ---
 # Adding Business Logic to Clarity's Solution
 
-While you have Clarity's custom distributor onboarding solution up and running, it requires additional work to integrate fully with Liferay DXP. In the following exercises, you will 
+While you have Clarity's custom distributor onboarding solution up and running, some business logic remains unfinished. In these exercises, you will 
 
 * Enable an approval workflow for Distributor Applications with a microservice client extension.
 * Set up an object action to automate account creation.

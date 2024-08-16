@@ -5,13 +5,15 @@ uuid: 7600c13a-c687-4637-97ca-abac89b05107
 
 <!--TASK: improve intro-->
 
-Objects are the foundation of building low-code solutions with Liferay. With objects, you can model data structures and implement business logic for those structures without writing a single line of code. When created, each object is fully integrated with Liferay's core frameworks to create a unified experience across the platform. This means you can leverage Liferay's out-of-the-box capabilities like workflows, notifications, permissions, Headless APIs, and data mapping with objects, so that your custom solutions feel native to the Liferay experience. Objects not only reduce development time and effort significantly, but also empower non-technical business users to actively participate in the development process. Furthermore, because objects also work hand-in-hand with client extensions, you don't sacrifice any of the flexibility that you expect in modern developer tools.
+Objects are the foundation of building low-code solutions with Liferay. With objects, you can model data structures and implement business logic for those structures without writing a single line of code. When created, each object is fully integrated with Liferay's core frameworks to create a unified experience across the platform. This means you can leverage Liferay's out-of-the-box capabilities like workflows, notifications, permissions, Headless APIs, and data mapping with objects, so that your custom solutions feel native to the Liferay experience.
 
-<!--[TODO: Update with Design ticket] IMAGE: Diagram showing how Objects fit into the Liferay ecosystem and integrate with the various core frameworks -- headless APIs, Job Scheduler, Workflows, Forms, etc. -->
+Objects not only reduce development time and effort significantly, but also empower non-technical business users to actively participate in the development process. Furthermore, because objects also work hand-in-hand with client extensions, you don't sacrifice any of the flexibility that you expect in modern developer tools.
+
+<!--TASK: Add diagram for modeling 'data structures'-->
 
 Here we'll discuss best practices for working with Liferay Objects in the context of Clarity's custom solution for onboarding distributors. Then you'll apply these concepts in subsequent lessons as you set up Clarity's distributor solution.
 
-The first step in building a custom solution is to model its data structures. This requires some brainstorming about the types of data entities you want to store, as well as their attributes and relationships.
+The first step in building a custom solution is to model its data structure. This requires some brainstorming about the types of data entities you want to store, as well as their attributes and relationships.
 
 ## Identifying Data Entities
 
@@ -77,17 +79,25 @@ For Clarity's solution, a single distributor application can have multiple evalu
 
 Once you've defined the relationship between object definitions, you can relate individual entries to one another through the Liferay UI or relationship REST APIs.
 
-## Using the Model Builder UI
+## Managing Data Access
 
-Coming Soon!
+Managing access to data with account membership and role permissions is critical for data privacy and security. Since Liferay Objects are integrated with the permissions framework, you can use roles and permissions to manage access to Distributor Applications and Application Evaluations. This helps Clarity ensure that only authenticated users can submit applications and a limited number of employees can review submissions.
 
-<!--TASK: write section-->
+<!--TASK: ![]() -->
+
+User roles do not come with objects permissions by default, so you must manually grant access to objects and their entries. When you deploy Clarity's distributor onboarding solution in a later exercise, you will also assign the appropriate permissions to the business role for reviewing applications.
 
 ## Moving Data Structures between Environments
 
 Coming Soon!
 
 <!--TASK: write section. import/export, batch client extensions-->
+
+## Exploring the Model Builder UI
+
+Coming Soon!
+
+<!--TASK: write section; reconsider placement-->
 
 ## Conclusion
 

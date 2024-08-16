@@ -13,8 +13,10 @@ While most parts of the solution are complete, some features remain unfinished. 
 * Assign the appropriate permissions to the Distributor Application object.
 
 These exercises demonstrate the powerful functionality and granular control you can achieve by using objects and client extensions together.
+ 
+<!--TASK: Reconsider order and grouping of exercises. Maybe keep 20d, 20e in this article and move 20f-20h to a new article that focuses on adding columns to the data structure. Also, maybe move this setting up article before Modeling Data Structures-->
 
-## Exercise: Setting Up and Deploying the Distributor Application
+## Exercise: Deploying Clarity's Distributor Solution
 <!--Exercise 20d-->
 
 The training workspace includes a batch client extension for quickly setting up two object definitions and their related picklists. The specific process for deploying client extensions depends on your Liferay hosting model (i.e., Self-Hosted, PaaS, or SaaS). However, in all cases, you must add the compiled `.zip` file to the Liferay server's `[Liferay Home]/osgi/client-extensions/` folder. Here you'll deploy the batch client extensions and explore what they include as the Clarity Admin user.
@@ -86,7 +88,7 @@ The training workspace includes a batch client extension for quickly setting up 
 
 1. Drag and and drop the cards to reposition them and better see their relationship.
 
-## Exercise: Testing the Distributor Application
+## Exercise: Testing the Distributor Solution
 <!--Exercise 20e-->
 
 In the following lessons, you'll learn more about these objects and how they're configured. Here you'll create and review a Distributor Application entry as the Clarity Admin user.
@@ -295,7 +297,7 @@ To do this,
 
 1. For test purposes, go to the *Assignees* tab and assign this role to Harper Roberts.
 
-Great! Now Clarity can make sure the business development team's manager can view submitted applications, create evaluations, and approve or deny applications. Next, let's finish setting up Clarity's workflow.
+Great! Now Clarity can make sure the business development team's manager can view submitted applications, create evaluations, and approve or deny applications.
 
 ## Conclusion
 

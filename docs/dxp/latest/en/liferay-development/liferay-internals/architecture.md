@@ -73,7 +73,7 @@ The Core provides the component runtime environment for the frameworks, services
 - [JavaScript applications \(templates, routers, and resources\)](../building-applications/developing-a-javascript-application/using-react.md)
 - [JSP customizations](./extending-liferay/customizing-jsps-with-dynamic-includes.md)
 - [Portlets \(templates, controllers, and resources\)](../building-applications/developing-a-java-web-application/reference/portlets.md)
-- [Portlet filters](./extending-liferay/auditing-portlet-activity-with-a-portlet-filter.md)
+- [Portlet filters](./extending-liferay/using-portlet-filters.md)
 - [Themes](../customizing-liferays-look-and-feel/themes.md)
 
 The following figure shows these component types in the runtime environment.

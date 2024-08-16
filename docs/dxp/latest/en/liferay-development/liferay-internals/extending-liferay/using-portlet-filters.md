@@ -1,15 +1,15 @@
 ---
 uuid: a8dd9eb8-f44a-4cc3-8425-1685472c0119
 ---
-# Auditing Portlet Activity with Portlet Filters
+# Using Portlet Filters
 
-Portlet filters intercept requests and responses at the start of each [portlet request processing phase](../../building-applications/developing-a-java-web-application/reference/portlets.md#portlet-phases) so you can add functionality there. This makes them useful for auditing portlet activities during their render, action, event, and resource serving phases.
+Portlet filters intercept requests and responses at the start of each [portlet request processing phase](../../building-applications/developing-a-java-web-application/reference/portlets.md#portlet-phases) so you can add functionality there. This makes them useful for auditing portlet activities, transforming content, adding or modifying request and response attributes, suspending portlet phases to get user inputs, and more.
 
-Follow these steps to create portlet filters for auditing portlet activities:
+Follow these steps to create portlet filters:
 
 1. Identify the target portlet by its full name (e.g., `com_liferay_blogs_web_portlet_BlogsPortlet`).
 
-1. Determine the portlet phase you want to audit and implement the corresponding portlet filter interface from the [`javax.portlet.filter`](http://docs.liferay.com/portlet-api/3.0/javadocs/javax/portlet/filter/package-summary.html) package.
+1. Determine the portlet phase you want to intercept and implement the corresponding portlet filter interface from the [`javax.portlet.filter`](http://docs.liferay.com/portlet-api/3.0/javadocs/javax/portlet/filter/package-summary.html) package.
 
    - Action Phase - [`ActionFilter`](http://docs.liferay.com/portlet-api/3.0/javadocs/javax/portlet/filter/ActionFilter.html)
    - Event Phase - [`EventFilter`](http://docs.liferay.com/portlet-api/3.0/javadocs/javax/portlet/filter/EventFilter.html)
@@ -21,23 +21,23 @@ Follow these steps to create portlet filters for auditing portlet activities:
 1. Declare the portlet filter a Component within the OSGi framework using the `@Component` annotation and identify it as a `PortletFilter.class` service.
 
    !!! note
-       Portlet filters are [OSGi Declarative Service (DS) Components](https://enroute.osgi.org/FAQ/300-declarative-services.html). Filters can also be applied to a portlet using a `portlet.xml` descriptor or a `@PortletLifecycleFilter` annotation. See Portlet 3.0 Specification for details.
+       Portlet filters are [OSGi Declarative Service (DS) Components](https://enroute.osgi.org/FAQ/300-declarative-services.html). Filters can also be applied to a portlet using a `portlet.xml` descriptor or a `@PortletLifecycleFilter` annotation.
 
 1. Enter the following properties into the `@Component` declaration.
 
-   - `"javax.portlet.name=[portlet_Name]"`: This property sets the filter's target portlet.
-   - `"service.ranking:Integer=100"`: This property sets the filter's ranking, with the higher integers executing first. Ensure the filter starts up at the beginning of the filter chain by assigning it the highest ranking.
+   - `"javax.portlet.name=[portlet_name]"`: This property sets the filter's target portlet.
+   - `"service.ranking:Integer=[priority]"`: This property sets the filter's ranking, with the higher integers executing first. Ensure the filter starts up at the beginning of the filter chain by assigning it the highest ranking.
 
-1. Override the filter's `doFilter` method to audit the desired aspects of the portlet phase.
+1. Override the filter's `doFilter` method to add the desired functionality.
 
 The following example uses a `RenderFilter` to audit the render phase for the Blogs portlet.
 
-## Deploy the Sample Portlet Filter
+## Deploying the Sample Portlet Filter
 
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Then, follow these step to download, build, and deploy the sample Portlet Filter to the new docker container:
+Then, follow these steps to download, build, and deploy the sample Portlet Filter to the new docker container:
 
 1. Download and unzip the example module.
 
@@ -77,7 +77,7 @@ Then, follow these step to download, build, and deploy the sample Portlet Filter
    WARN [http-nio-8080-exec-10][B4K8PortletFilter:54] Blogs portlet rendered in 0 ms with an average of 1 ms out of 2 renders.
    ```
 
-## Sample Render Filter Code
+## Auditing a Portlet's Render Phase with a Portlet Filter
 
 The provided sample filter targets the Blogs portlet and audits its render phase using the `RenderFilter` interface.
 
@@ -198,4 +198,3 @@ The portlet filter proceeds to implement the [`RenderFilter`](http://docs.lifera
 ## Related Topics
 
 - [Portlets](../../building-applications/developing-a-java-web-application/reference/portlets.md)
-<!--TASK: Add link to Using Portlet Filters article when finished -->

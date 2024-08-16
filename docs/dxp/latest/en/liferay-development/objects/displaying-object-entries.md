@@ -9,6 +9,7 @@ taxonomy-category-names:
 - Liferay PaaS
 - Liferay SaaS
 ---
+
 # Displaying Object Entries
 
 {bdg-secondary}`Liferay 7.4+`
@@ -42,8 +43,6 @@ Together, these integrations enable users to leverage Liferay's WYSIWYG page bui
 
 When created, each object entry is assigned automatically a dedicated friendly URL that uses the following pattern: `server-address/l/objectEntryId` (e.g., `https://mysite.com/l/44337`). To view an entry at its URL, you must first create a Display Page Template for the object.
 
-Follow these steps:
-
 1. Open the *Site Menu* (![Site Menu](../../images/icon-menu.png)), expand *Design*, and go to *Page Templates*.
 
 1. Click the *Display Page Templates* tab.
@@ -66,9 +65,8 @@ Follow these steps:
 
 1. Add the Page Comments widget so end users can comment on entry display pages.
 
-   ```{note}
-   You must enable comments for the object definition. Otherwise, the widget is hidden in the display page.
-   ```
+   !!! note
+       You must enable comments for the object definition. Otherwise, the widget is hidden in the display page.
 
 1. When finished, click *Publish*.
 

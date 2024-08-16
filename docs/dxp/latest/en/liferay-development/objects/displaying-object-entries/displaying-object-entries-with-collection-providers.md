@@ -15,15 +15,15 @@ taxonomy-category-names:
 When you publish an object definition, Liferay creates a [collection provider](../../../site-building/displaying-content/collections-and-collection-pages/collection-providers.md) for it. For site-scoped objects, you can also [create manual or dynamic collections](../../../site-building/displaying-content/collections-and-collection-pages/creating-collections.md) for the object. You can use these collections with the [Collection Display fragment](../../../site-building/displaying-content/collections-and-collection-pages/displaying-collections.md#adding-a-collection-display-fragment-to-a-page) and [collection pages](../../../site-building/displaying-content/collections-and-collection-pages/displaying-collections.md#displaying-collections-on-a-collection-page) to display object entries. Objects support all collection display features, including filtering, styling, and display options.
 
 !!! important
-    * Instance-scoped objects cannot be used in manual or dynamic collections. With Liferay DXP you can use Search Blueprints and its collection provider to achieve most use cases. See [Collections with Search Blueprints](../../../using-search/liferay-enterprise-search/search-experiences/search-blueprints/collections-with-search-blueprints.md) for more information.
-    * Draft entries cannot be displayed in collections. Object entries must first be published.
+    - Instance-scoped objects cannot be used in manual or dynamic collections. With Liferay DXP you can use Search Blueprints and its collection provider to achieve most use cases. See [Collections with Search Blueprints](../../../using-search/liferay-enterprise-search/search-experiences/search-blueprints/collections-with-search-blueprints.md) for more information.
+    - Draft entries cannot be displayed in collections. Object entries must first be published.
 
 ## Using an Object Collection
 
 1. Create a new [content page](../../../site-building/creating-pages/using-content-pages.md) or [display page template](../../../site-building/displaying-content/using-display-page-templates/creating-and-managing-display-page-templates.md). Alternatively, begin editing ( ![Edit Button](../../../images/icon-edit-pencil.png) ) an existing one.
 
-   !!!note
-      You can also create a collection page using the collection provider. See [Collections and Collection Pages](../../../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md) for more information.
+   !!! note
+       You can also create a collection page using the collection provider. See [Collections and Collection Pages](../../../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md) for more information.
 
 1. Drag and drop the *Collection Display* fragment into the page or template from the Fragments and Widgets (![Fragments and Widgets](../../../images/icon-plus.png)) sidebar.
 
@@ -35,7 +35,7 @@ When you publish an object definition, Liferay creates a [collection provider](.
 
    ![In the Collection Providers tab, select the object's provider.](./displaying-object-entries-with-collection-providers/images/02.png)
 
-1. (Optional) Filter the displayed object entries. You can filter by any picklist or boolean fields in the object:
+1. (Optional) Filter the displayed object entries. You can filter by any picklist or Boolean fields in the object:
 
    Click *Collection Options* (![Collection Options Button](../../../images/icon-actions.png)) and select *Filter Collection*.
 
@@ -89,8 +89,8 @@ Now you can embed fragments in the new Collection Display and map them to fields
 
 ## Related Topics
 
-* [Creating Objects](../creating-and-managing-objects/creating-objects.md)
-* [Displaying Object Entries](../displaying-object-entries.md)
-* [About Collections and Collection Pages](../../../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md)
-* [Collection Providers](../../../site-building/displaying-content/collections-and-collection-pages/collection-providers.md)
-* [Defining Object Relationships](../creating-and-managing-objects/relationships/defining-object-relationships.md)
+- [Creating Objects](../creating-and-managing-objects/creating-objects.md)
+- [Displaying Object Entries](../displaying-object-entries.md)
+- [About Collections and Collection Pages](../../../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md)
+- [Collection Providers](../../../site-building/displaying-content/collections-and-collection-pages/collection-providers.md)
+- [Defining Object Relationships](../creating-and-managing-objects/relationships/defining-object-relationships.md)

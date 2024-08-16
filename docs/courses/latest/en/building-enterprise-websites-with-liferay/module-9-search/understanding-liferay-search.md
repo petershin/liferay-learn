@@ -3,14 +3,14 @@ uuid: 0f70c846-c4b4-47b6-9f77-f957c81b20b7
 ---
 # Understanding Liferay Search
 
-Liferay Search is a core capability of Liferay that enables users to find information efficiently and effectively. Liferay Search leverages a robust search engine and indexing framework to provide seamless search experiences. Let's delve deeper into the core components and architecture of Liferay Search.
+Liferay Search is a powerful tool that enables users to efficiently find information within a Liferay portal. It leverages the capabilities of a robust search engine to index and retrieve content, providing a seamless search experience for end-users. Let's delve deeper into the core components and architecture of Liferay Search.
 
 ## Liferay Search at a High-level
 
-At the heart of Liferay Search is [Elasticsearch](https://www.elastic.co/elasticsearch), a powerful open-source search engine. Elasticsearch serves as the backbone for indexing, storing, and retrieving vast amounts of search data with remarkable speed and scalability. Liferay indexes a wide array of content types, including documents, web content articles, and blog posts. Once indexed, this data becomes accessible through the search engine, which is responsible for processing user queries, ranking results based on relevance, and delivering the most pertinent information.
+At the heart of Liferay's default search capabilities is [Elasticsearch](https://www.elastic.co/elasticsearch), a powerful open-source search and analytics engine. This technology serves as the backbone for indexing, storing, and retrieving vast amounts of search data with remarkable speed and scalability. The process of transforming content into a searchable format is known as indexing. Liferay indexes a wide array of content types, including documents, web content articles, and blog posts. Once indexed, this data becomes accessible through the search engine, which is responsible for processing user queries, ranking results based on relevance, and delivering the most pertinent information.
 
 !!! note "Using Alternative Search Engines"
-  Liferay search is API driven, which means you can use alternative search engine implementations. While Elasticsearch provides the best search experience, industry standards may require an alternative search engine (e.g., SOLR).
+  Liferay search is API driven, which means you can use alternative search engine implementations. While Elasticsearch provides the best search experience, industry standards may require an alternative search engine.
 
 Beyond these core components, Liferay offers a rich set of tools for refining search results, including faceting, sorting, filtering, and autocomplete. Additionally, it provides extensive capabilities for customizing search experiences through Liferay's page builder features and a variety of search widgets. Personalization of search results is achieved through the use of blueprints and segmentation, tailoring search results to individual user preferences and behaviors.
 

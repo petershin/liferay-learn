@@ -1,10 +1,13 @@
 ---
 toc:
 - ./module-10-customizing-liferay-dxp/claritys-customization-requirements.md
+- ./module-10-customizing-liferay-dxp/understanding-liferay-customization.md
 - ./module-10-customizing-liferay-dxp/customizing-claritys-front-end.md
-- ./module-10-customizing-liferay-dxp/building-custom-solutions-with-objects.md
+- ./module-10-customizing-liferay-dxp/modeling-and-managing-data-structures.md
 - ./module-10-customizing-liferay-dxp/setting-up-claritys-distributor-solution.md
+- ./module-10-customizing-liferay-dxp/implementing-business-logic.md
 - ./module-10-customizing-liferay-dxp/adding-business-logic-to-claritys-solution.md
+- ./module-10-customizing-liferay-dxp/designing-user-interfaces.md
 uuid: 9311d48e-997b-4e20-ad75-2a08b9a82e3f
 ---
 # Module 10: Customizing Liferay DXP

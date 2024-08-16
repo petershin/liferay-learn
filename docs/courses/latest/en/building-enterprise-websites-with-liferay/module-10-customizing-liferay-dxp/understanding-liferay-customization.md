@@ -5,6 +5,7 @@ uuid: 26be27f7-44e3-4797-82c6-d5334dcfc555
 
 Coming Soon!
 
+Up Next: [Customizing Clarity's Front End](./customizing-claritys-front-end.md)
 <!--
 CX material:
 

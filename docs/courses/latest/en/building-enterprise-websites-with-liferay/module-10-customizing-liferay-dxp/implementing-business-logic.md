@@ -56,6 +56,6 @@ Currently, Clarity's onboarding solution includes three automated notifications 
 
 ## Conclusion
 
-<!--TASK: write conclusion-->
+Congratulations! You've learned about the types of business logic you can implement for custom solutions in Liferay and how this implementation can improve the platform experience. Next, you'll apply what you've learned to add business logic to Clarity's distributor solution. 
 
 Up Next: [Adding Business Logic to Clarity's Solution](./adding-business-logic-to-claritys-solution.md)

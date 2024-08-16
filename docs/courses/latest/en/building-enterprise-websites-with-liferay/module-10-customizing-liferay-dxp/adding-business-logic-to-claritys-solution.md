@@ -211,7 +211,7 @@ Now whenever users submit an application, employees with the Business Developmen
 
 Congratulations! You've successfully enabled an approval workflow, automated account creation, and configured notifications for Clarity's distributor solution, integrating it further with Liferay DXP. The last step in customization is designing user interfaces.
 
-[Designing User Interfaces](./designing-user-interfaces.md)
+Up Next: [Designing User Interfaces](./designing-user-interfaces.md)
 
 ## Additional Resources
 

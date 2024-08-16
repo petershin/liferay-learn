@@ -166,6 +166,6 @@ To do this,
 
 ## Conclusion
 
-Congratulations! You have created, modified, and deployed your own frontend client extensions. Next, we'll explore objects and how you can use them with client extensions to build custom solutions.
+Congratulations! You have created, modified, and deployed your own frontend client extensions. Next, we'll explore the tools you can use to model and manage data structure in Liferay.
 
 Next Up: [Modeling and Managing Data Structures](./modeling-and-managing-data-structures.md)

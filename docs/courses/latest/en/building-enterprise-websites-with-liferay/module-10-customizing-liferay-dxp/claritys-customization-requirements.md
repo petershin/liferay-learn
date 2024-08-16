@@ -27,6 +27,6 @@ Clarity wants to develop custom components in common programming languages (e.g.
 
 ## Conclusion
 
-By addressing these requirements, Liferay can empower Clarity to build custom solutions efficiently and effectively, without compromising on quality or developer experience. Now that we've reviewed Clarity's requirements, let's take a closer look at client extensions.
+By addressing these requirements, Liferay can empower Clarity to build custom solutions efficiently and effectively, without compromising on quality or developer experience. Now that we've reviewed Clarity's requirements, let's take a closer look at what it means to customize Liferay.
 
-Next Up: [Customizing Clarity's Front End](./customizing-claritys-front-end.md)
+Next Up: [Understanding Liferay Customization](./understanding-liferay-customization.md)

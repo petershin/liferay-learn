@@ -299,9 +299,9 @@ Great! Now Clarity can make sure the business development team's manager can vie
 
 ## Conclusion
 
-Congratulations! You've deployed and tested Clarity's custom solution, modified its objects, and assigned them the appropriate permissions. Next, let's add some more business logic to fully integrate the solution with the Liferay platform.
+Congratulations! You've deployed and tested Clarity's custom solution, modified its objects, and assigned them the appropriate permissions. Next, you'll learn more about implementing business logic to fully integrate a custom solution with the Liferay platform.
 
-Next Up: [Adding Business Logic to Clarity's Solution](./adding-business-logic-to-claritys-solution.md).
+Next Up: [Implementing Business Logic](./implementing-business-logic.md).
 
 ## Additional Resources
 

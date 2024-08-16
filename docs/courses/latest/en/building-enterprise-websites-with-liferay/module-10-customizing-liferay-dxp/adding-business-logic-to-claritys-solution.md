@@ -209,9 +209,9 @@ Now whenever users submit an application, employees with the Business Developmen
 
 ## Conclusion
 
-Congratulations! You've completed Module 10: Customizing Liferay DXP. Throughout this module, you've learned best practices for customizing the Liferay platform with objects and client extensions. You put these best practices into action by setting up Clarity's custom solution for onboarding distributors and implementing business logic to integrate it with Liferay's out-of-the-box capabilities.
+Congratulations! You've successfully enabled an approval workflow, automated account creation, and configured notifications for Clarity's distributor solution, integrating it further with Liferay DXP. The last step in customization is designing user interfaces.
 
-[Back to Building Enterprise Websites with Liferay](../../building-enterprise-websites-with-liferay.md)
+[Designing User Interfaces](./designing-user-interfaces.md)
 
 ## Additional Resources
 

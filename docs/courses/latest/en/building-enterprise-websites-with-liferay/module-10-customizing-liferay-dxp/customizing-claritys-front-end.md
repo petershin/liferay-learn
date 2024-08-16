@@ -3,20 +3,14 @@ uuid: 671475f7-dd3a-4909-b98c-3cb3ec93b4e2
 ---
 # Customizing Clarity's Front End
 
-<!--TASK: Create a separate conceptual article for Client Extensions-->
+<!--TASK: improve intro-->
+Now let's apply what you've learned to make some changes to Clarity's appearance. Here you'll use frontend client extensions to 
 
-Client extensions transform Liferay customization, whether Liferay SaaS, PaaS, or Self-Hosted. Unlike custom OSGi plugins that are woven into the Liferay portal fabric, client extensions operate independently, interacting with the platform via well-defined APIs. This decoupling ensures that custom solutions remain intact even as the platform undergoes updates, significantly reducing maintenance overhead. On the other hand, a buggy or broken client extension won't disrupt Liferay's core out-of-the-box functionality. Additionally, since client extensions are language and framework agnostic, they free developers to use their preferred technologies and follow their own development cycle. 
+* Modify the current theme CSS
+* Update the website favicon
+* Add a CSS resource to a page
 
-Beyond development efficiency, client extensions improve application performance and scalability. By selectively applying extensions to specific pages or components, organizations can optimize resource utilization and enhance user experience. Client extensions make customization more agile, adaptable, and future-proof. Their ability to coexist with out-of-the-box features solidifies client extensions as the preferred method for building custom solutions with Liferay.
-
-There are four types of client extensions you can implement with Liferay:
-
-* Frontend client extensions provide resources that affect Liferay's presentation layer.
-* Batch client extensions provide data entities to your Liferay instance via headless batch endpoints.
-* Microservice client extensions are external applications that execute actions triggered by events in your Liferay instance.
-* Configuration client extensions configure settings for your Liferay instance.
-
-In this article, you'll work with several frontend client extensions that customize Clarity's appearance. Later in this module, you'll use batch and microservice client extensions to set up a custom distributor onboarding solution for Clarity.
+These exercises showcase the versatility and accessibility of frontend client extensions.
 
 ## Exercise: Modifying a Theme Client Extension
 <!--Exercise 20a-->
@@ -174,4 +168,4 @@ To do this,
 
 Congratulations! You have created, modified, and deployed your own frontend client extensions. Next, we'll explore objects and how you can use them with client extensions to build custom solutions.
 
-Next Up: [Building Custom Solutions with Objects](./building-custom-solutions-with-objects.md)
+Next Up: [Modeling and Managing Data Structures](./modeling-and-managing-data-structures.md)

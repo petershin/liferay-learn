@@ -12,7 +12,7 @@ At the heart of Liferay's default search capabilities is [Elasticsearch](https:/
 !!! note "Using Alternative Search Engines"
   Liferay search is API driven, which means you can use alternative search engine implementations. While Elasticsearch provides the best search experience, industry standards may require an alternative search engine.
 
-Beyond these core components, Liferay offers a rich set of tools for refining search results, including faceting, sorting, filtering, and autocomplete. Additionally, it provides extensive capabilities for customizing search experiences through Liferay's page builder features and a variety of search widgets. Personalization of search results is achieved through the use of blueprints and segmentation, tailoring search results to individual user preferences and behaviors.
+Beyond basic search features like faceting, sorting, and filtering, Liferay offers powerful tools to enhance user experience. Blueprints enable low-code customization of search experience, allowing manipulation of search queries, filters, sorts, and more. Additionally, personalization of search results can be achieved through the use of segmentation and search widgets, tailoring search results to individual user preferences and behaviors.
 
 ## Search Architecture Overview
 
@@ -24,29 +24,28 @@ Liferay stores its information in a database. However, searching database tables
 * Objects
 * Web content articles
 
-Therefore, anytime a search is performed, the query occurs against the search index and not the database tables of each asset. The results of the query are then referenced back to the original assets when the search results are displayed to the user. Even with very large data sets, because Liferay leverages multiple internal indexes, Liferay search is able to ensure fast search results.
+Therefore, when a search is performed, the query is executed against the search index, which is optimized for handling large datasets. The results of the query are then referenced back to the original assets when the search results are displayed to the user.
 
 ## Search Configuration and Administration
 
-By default, Liferay Search is ready to use right out of the box without any additional configuration. However, if you have a specific use case that requires something different from the default behavior, configuration settings are accessible under Liferay's system settings.
+By default, Liferay Search is ready to use right out of the box. However, to customize search behavior, many configuration options are available. These options can be adjusted at the page level using search widgets, at the site level, or at the instance's Control Panel. Make changes to areas such as,
 
-![Different options are available to configure Liferay Search.](./understanding-liferay-search/images/01.png)
+* Content filtering, by limiting search results to specific content types.
+* Search blueprint application, by applying any existing Search Blueprint to the page and search suggestions.
+* Widget customization, by creating reusable search widget templates at the site or global level.
+* System-wide adjustments, by performing index maintenance tasks like reindexing and inspecting the field mappings.
+* Index management, by inspecting and modifying index mappings for a better control over search behavior.
 
-To change the default configuration settings, navigate to *Global Menu* &rarr; *Control Panel* &rarr; *System Settings* &rarr; *Search*. Make changes to areas such as,
-
-* Default Keyword Query
-* Default Search Result Permission Filter
-* Index Query Preprocessor
-* and much more
+<!-- I'm not sure if we want the "Changing System Settings" admonition here, but I won't remove it rn -->
 
 !!! note Changing System Settings
   Access to system settings is not available in Liferay SaaS. Discuss any specific search configuration requirements with Liferay Support team.
 
-Other administrative tasks are also available such as reindexing to refresh parts of your search index or overriding any search field mappings within a search index. To access these task, navigate to *Global Menu* &rarr; *Control Panel* &rarr; *Search*.
+You can also adjust low-level settings, such as search engine connections and field mappings, within the System Settings, which includes search framework and engine configurations.
 
 ## Refining Search Results
 
-Together with Liferay's search index, Elasticsearch provides a powerful and effective way to quickly get search results. These search results can be further refined through the use of facets, sorting, or custom filters.
+Liferay's search index, powered by Elasticsearch, provides a powerful and effective way to quickly get search results. These search results can be further refined using facets, sorting, or custom filters.
 
 Search facets are a way to refine search results across specific content and criteria. Out of the box, Liferay offers a collection of different search facets. For example, a type facet could be used to quickly filter out blog entries, documents, or site pages. We'll see in the next lesson how category facets can be used by Clarity to filter across their products.
 
@@ -65,7 +64,7 @@ Similar to how we created site pages using pre-built widgets in previous exercis
 Some of the available search widgets are:
 
 * Various types of search facets
-* Results preview 
+* Results preview
 * Similar results
 * Sort
 * Suggestions

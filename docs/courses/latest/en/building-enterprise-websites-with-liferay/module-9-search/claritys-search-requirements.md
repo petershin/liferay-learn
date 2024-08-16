@@ -19,7 +19,7 @@ Clarity does not want to relive the challenges they had with their legacy system
 
 ### Enabling a Self-service Platform
 
-Clarity understands the importance of search and making sure their customers and business partners get the answers they need without having to contact customer service. As Clarity continues to expand their website, in addition to products and blog posts, they plan to add product documentation, manuals, troubleshooting guides, etc. Fortunately Liferay search can search across a wide variety of assets, including document files and PDFs. The data or information visitors are looking for is just a search click away.
+Clarity understands the importance of both robust search functionality and efficient self-service options to ensure customers and business partners can find answers independently. As Clarity continues to expand their website, in addition to products and blog posts, they plan to add product documentation, manuals, troubleshooting guides, etc. Fortunately Liferay search can search across a wide variety of assets, including document files and PDFs. The data or information visitors are looking for is just a search click away.
 
 ### Enable Searching Content Stored in Other Systems
 
@@ -27,7 +27,7 @@ Not all of Clarity's data that needs to be searched exists in Liferay yet. Clari
 
 ### Deliver Personalized Search Results for Users to see Different Results
 
-Just like the content itself, Clarity knows that search results are better when they are personalized based on the user that performs the search. Segmentation in Liferay enables different page experiences based on user profiles, including the ability to display customized search pages or search results for specific user segments. Liferay's Search Blueprints makes it possible to customize search results based on criteria such as roles, user segments, whether a user is new or is a guest, etc. Personalizing the search results in turn means Clarity can keep users engaged with their content.
+Just like the content itself, Clarity knows that search results are better when they are personalized based on the user that performs the search. Segmentation in Liferay enables different page experiences based on user profiles, while Search Blueprints offer granular control over search results. In the upcoming lessons, we'll delve into how Clarity can leverage these features to deliver highly relevant search results and keep users engaged with their content.
 
 ## Conclusion
 

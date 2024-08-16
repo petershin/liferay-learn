@@ -3,9 +3,9 @@ uuid: 40f88570-abf4-44ab-af8c-1374bde0e20d
 ---
 # Understanding and Customizing Search Results Pages
 
-Clarity wants to have site visitors be able to search for content and find content quickly and easily. This can be accomplished by creating good navigation and leveraging Liferay's search features. For example, a customer looking for a pair of eyeglasses or sunglasses should be able to navigate the site to find the type of product they are looking for. The user might search by keyword or they might use search categories to filter through the list of products. Navigating Clarity's site should match the visitor's expectation for good user experience.
+Clarity wants to have site visitors be able to search for content and find content quickly and easily. This is accomplished by creating good navigation and leveraging Liferay's search features. For example, a customer looking for a pair of eyeglasses or sunglasses should be able to navigate the site to find the type of product they are looking for. The user might search by keyword or they might use search categories to filter through the list of products. Navigating Clarity's site should match the visitor's expectation for good user experience.
 
-At the same time, configuring the look and layout of search results pages should be quick and easy to accomplish. Fortunately, you don't need a development background to create search results pages. Liferay provides various components and search widgets to empower Liferay users to easily design pages and search experiences right from the UI.
+At the same time, configuring the look and layout of search results pages should be quick and easy. Fortunately, no development background is required. Liferay provides various out-of-the-box components and search widgets to empower Liferay users to easily design pages and search experiences right from the UI.
 
 Typically, a search results page will contain at a minimum:
 
@@ -13,7 +13,7 @@ Typically, a search results page will contain at a minimum:
 * **Search Facets:** The various criteria in which results can be filtered (e.g. asset type, categories, tags, etc.)
 * **Search Results:** The actual results returned by the search query
 
-Follow the exercises below to see how the different search components are set up and used in Clarity's website. 
+Follow the exercises below to see how the different search components are set up and used in Clarity's website.
 
 ## Exercise: Adding Search Capabilities to the Job Listings Page
 
@@ -123,6 +123,10 @@ Next, you'll apply these search concepts to Clarity's product pages.
 
 <!-- ## Exercise 17b: Adding Search Capabilities to Product Pages -->
 
+<!-- Feedback from Russ: "One important thing to cover with product search pages: I think products are global/instance scoped and so you need to set the search bar widget to search the Everything scope to see products in a site's search page.
+
+If you do mention that perhaps you could also sneak in a mention that instance scoped objects need to be searched this way too." https://github.com/JamesAGarcia/liferay-learn/pull/212#discussion_r1718547047 -->
+
 Here you'll take a closer look at the product list page to understand the different Liferay search widgets and how to configure them as Walter Douglas.
 
 To do this,
@@ -158,6 +162,8 @@ Next, let's finish configuring the Open Positions page to only display Job Listi
 ## Exercise: Filtering Results with Custom Filters
 
 <!-- ## Exercise 17c: Filtering Results with Custom Filters -->
+
+<!-- Feedback from Russ: "Results aren't sorted by filters. I know it's not wordsmithed yet but let's make sure we're clear about facets, filters, and sorts, and the widgets that contribute them." https://github.com/JamesAGarcia/liferay-learn/pull/212#discussion_r1718582792 -->
 
 As previously discussed, search results can be sorted by different filters such as content type (e.g. blogs, web content, etc.) or keyword categories (e.g. different categories found in the FAQ section.). In addition, you can arrange them with custom filters that sorts results against almost any indexed attribute in your content, such as a Web Content Structure.
 

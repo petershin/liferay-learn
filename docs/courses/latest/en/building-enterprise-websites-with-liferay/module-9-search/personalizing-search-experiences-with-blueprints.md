@@ -3,9 +3,9 @@ uuid: 85d7e066-677f-4616-aca4-56555601a228
 ---
 # Personalizing Search Experiences with Blueprints
 
-As we saw in the previous lesson, using search facets is great in providing visitors a way to quickly filter search results. However, Clarity has some search use cases that they wish to further customize and personalize. This can be accomplished with the use of Liferay's Search Blueprints. 
+As we saw in the previous lesson, using search facets is great in providing visitors a way to quickly filter search results. However, Clarity has some search use cases that they wish to further customize and personalize. Liferay's Search Blueprints provide the necessary tools to meet Clarity's customization needs.
 
-Use Blueprints to define implicit search criteria that can be added to any user's search query to help enhance the search experience. Blueprints offers a UI-based configuration experience where search criteria can be set simply by dragging and dropping elements. Use Blueprints to boost, filter, or even hide specific search results. You can apply a different Blueprint to each search results page, or Blueprints can even be leveraged with headless APIs.
+Use Blueprints to define implicit search criteria that can be added to any user's search query to help enhance the search experience. Blueprints offers a UI-based configuration experience where search criteria is set by dragging and dropping elements. Use Blueprints to boost, filter, or even hide specific search results. You can apply a different Blueprint to each search results page, or Blueprints can even be leveraged with headless APIs.
 
 Complete the following exercises to better understand the capabilities of Search Blueprints.
 
@@ -256,14 +256,10 @@ Occasionally businesses need to integrate with other web services. For example, 
 
 You've used a custom registration ID field with search blueprints to retrieve user information.
 
-Congratulations! You've completed all exercises for day two of Building Enterprise Websites.
-
-Next, you'll learn how you can use Liferay Objects to build forms.
-
 ## Conclusion
 
-Congratulations! You've completed Module 9 - Search. Throughout this module, you learned about working with the various tools and features Liferay Search offers. 
+Congratulations! You've completed Module 9 - Search. Throughout this module, you learned about working with the various tools and features Liferay Search offers.
 
-In the next module, you'll learn about building applications in Liferay.
+In the next module, you'll learn how you can use Liferay Objects to customize Liferay DXP.
 
-Up Next: [Module 10 - Building Applications](../module-10-building-applications.md)
+Up Next: [Module 10 - Customizing Liferay DXP](../module-10-customizing-liferay-dxp.md)

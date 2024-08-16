@@ -13,7 +13,7 @@ Data integrity is crucial for effective business operations. With Liferay, you c
 
 When using validations, you can select from out-of-the-box options or define your own through the UI. For advanced use cases, you can also use the Object Validation Rule client extension. Once defined, Liferay checks field values on entry submission and displays an error message for invalid input.
 
-![Liferay uses validation rules to check field values upon entry submission.](./building-custom-solutions-with-objects/images/05.png)
+![Liferay uses validation rules to check field values upon entry submission.](./implementing-business-logic/images/01.png)
 
 <!--TASK: ![]() -->
 
@@ -29,7 +29,7 @@ User roles do not come with objects permissions by default, so you must manually
 
 Workflows are approval processes for data entities in your solution. You can create custom workflows to improve task visibility, eliminate bottlenecks in business processes, and reduce the time and resources required to complete tasks.
 
-![Workflows are used to organize business processes.](./building-custom-solutions-with-objects/images/06.png)
+![Workflows are used to organize business processes.](./implementing-business-logic/images/02.png)
 
 In addition to workflows, you can use picklists to define custom state fields with their own flow. This is helpful when you need to assign multiple states to an object entry at the same time. For example, Clarity wants to track the evaluation state of applications independently from their workflow status. To implement this, Clarity leveraged Liferay picklists with objects to define custom states for entries. They then defined a flow for valid state field transitions in the *State Manager* tab.
 
@@ -42,7 +42,7 @@ In addition to workflows, you can use picklists to define custom state fields wi
 | Withdrawn     | Open                                 |
 | On Hold       | Open, Under Review                   |
 
-![The application states are related to one another.](./building-custom-solutions-with-objects/images/07.png)
+![The application states are related to one another.](./implementing-business-logic/images/03.png)
 
 After setting this up, Clarity can use the field with validations and actions to add business logic for different states. They also can use the field alongside workflow statuses to define more complex review and approval processes. In a later exercise, you'll finish setting up Clarity's workflow for Distributor Applications.
 

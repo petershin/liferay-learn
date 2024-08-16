@@ -25,7 +25,7 @@ You can model each of these data entities as *object definitions*. An object def
 !!! note "Object Definition vs. Object Entry"
     Object definitions specify types of data entities, while object entries are instances of those data entities.
 
-![Object entries are individual instances of an object definition.](./building-custom-solutions-with-objects/images/01.png)
+![Object entries are individual instances of an object definition.](./modeling-and-managing-data-structures/images/01.png)
 
 After determining the types of entities required for their solution, Clarity can start adding attributes to the object definitions.
 
@@ -35,7 +35,7 @@ Attributes represent database columns storing specific data types for object def
 
 <!--TASK: Introduce picklists.-->
 
-![An object definition can have multiple fields to store information according to its type.](./building-custom-solutions-with-objects/images/02.png)
+![An object definition can have multiple fields to store information according to its type.](./modeling-and-managing-data-structures/images/02.png)
 
 For Clarity's use case, each Distributor Application entry should store the necessary business information for verifying each applicant's identity and credit for Know Your Customer (KYC) best practices and compliance with Anti-Money Laundering (AML) laws. As such, the Distributor Application object contains fields for collecting both applicant information (e.g., name and phone number) and business details (e.g., license and proof of insurance). Additionally, Clarity wants to assess the relative value of each prospective distributor. So they've added picklist fields to collect the following information:
 
@@ -59,7 +59,7 @@ The second object needed for this use case is the Application Evaluation. Clarit
 
 <!--TASK: Maybe reevaluate how this information is presented. It feels strange to list only the picklists for distributor application while listing all of the fields for the application evaluation object.-->
 
-![Both the Distributor Application and Application Evaluation objects store data related to the applicant.](./building-custom-solutions-with-objects/images/03.png)
+![Both the Distributor Application and Application Evaluation objects store data related to the applicant.](./modeling-and-managing-data-structures/images/03.png)
 
 ## Defining Relationships
 
@@ -71,7 +71,7 @@ On the other hand, many-to-many relationships enable users to relate multiple en
 
 For Clarity's solution, a single distributor application can have multiple evaluations related to it, but each evaluation can only relate to a single application. So they have added a one-to-many relationship between the Distributor Application (one) and Application Evaluation (many) objects.
 
-![A single Distributor Application entry is related to many Application Evaluation entities.](./building-custom-solutions-with-objects/images/04.png)
+![A single Distributor Application entry is related to many Application Evaluation entities.](./modeling-and-managing-data-structures/images/04.png)
 
 <!--TODO: Image above should probably have multiple Application Evaluations to better visualize the one-to-many relationship-->
 

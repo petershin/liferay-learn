@@ -33,7 +33,7 @@ The Asset Publisher widget supports these asset types by default:
 The easiest way to configure an Asset Publisher to display the desired assets is to use a [collection](../../../content-authoring-and-management/collections-and-collection-pages.md) that suits your needs. Whether your collection is assigned assets manually or dynamically, the Asset Publisher widget automatically loads assets in the order the collection defines. In Liferay DXP 7.4 U10+ or GA14, Asset Publishers use the collection configuration by default.
 
 !!! warning
-    Instance Scoped Objects can't be displayed with Asset Publisher.
+    Asset Publisher can't display instance-scoped objects.
 
 ## Selecting Assets in the Asset Publisher Widget
 

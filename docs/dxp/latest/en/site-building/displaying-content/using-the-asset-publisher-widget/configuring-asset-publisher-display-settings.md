@@ -29,7 +29,7 @@ When using an Asset Publisher widget, you can configure several display settings
 Now, users can view the Asset Publisher widget displayed in the page as you configured it.
 
 !!! warning
-    Instance Scoped Objects can't be displayed with Asset Publisher.
+    Asset Publisher can't display instance-scoped objects.
 
 ## Asset Publisher Display Configuration Reference
 

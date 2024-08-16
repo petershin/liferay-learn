@@ -50,35 +50,6 @@ Some fields have an appended language flag button. These fields can be translate
 
 Liferay automatically saves the translation for each language and displays the translated value when that language is selected for the instance. If a translation for the field is not provided, the default instance language's value for that field appears.
 
-## Locale Prepend Friendly URL Style
-
-Locale Prepend Friendly URL Style configures the website's content management system or web server to recognize language codes in URLs and serve the appropriate content. For example, in `example.com/en/about` the language identifier appears in the URL before the rest of the path.
-
-Locale Prepend Friendly URL Style helps search engines determine the content's language, improving search engine rankings for users of that language.
-
-![Access the Locale Prepend Friendly URL Style Page.](./site-localization/images/07.png)
-
-1. Open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Instance Settings*.
-
-1. Under *Platform*, click *Localization*.
-
-1. Click *Locale Prepend Friendly URL Style*.
-
-Once you click the selector, these options appear:
-
-**Locale is automatically prepended to a URL when the requested locale is not the default user locale** (default value): The default user locale is set English (en). For guests or those using the default locale, the URL `example.com/about` is preserved without adding a locale prefix. If a user from France visits the About page, the URL changes from `example.com/about` to whatever the user's preferred language is, as set in the user's profile. If the user's language is `fr`, the URL changes to `example.com/fr/about`. If the user is in France but speaks Spanish and has `es` set in his profile, the URL changes to `example.com/es/about`. 
-
-**Locale is not automatically prepended to a URL**: The default user locale is set to English (en), and a user from France visits the About page. The URL `example.com/about` is preserved without adding a locale prefix.
-
-**Locale is automatically prepended to a URL when the requested locale is not the default locale**: The default user is set to English (en), and a user from France visits the About page. The URL `example.com/about` is changed to `example.com/fr/about`, if the requested language differs from the website's set default, regardless of individual user preferences.
-
-**Locale is automatically prepended to every URL**: The default user locale is set to English (en). For guests or those using the default locale, the URL `example.com/about` changes to `example.com/en/about` automatically, showing the default locale. If a user from France (fr) visits the page, the URL changes to `example.com/fr/about` automatically, showing the chosen locale.
-
-1. Select the option that meets your needs. Click *Save* once done.
-
-!!! warning
-    Make sure your URLs don't have a trailing slash (e.g instead of `https://example.com/product/item1/`, use `https://example.com/product/item1`). 
-    
 ## Related Topics
 
 - [Localization](../../system-administration/configuring-liferay/virtual-instances/localization.md)

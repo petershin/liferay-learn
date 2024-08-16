@@ -10,7 +10,7 @@ taxonomy-category-names:
 ---
 # Catalog
 
-The Catalog page is the primary way for users to browse, search, and select Channel Products. Both the Minium and Speedwell accelerators include the following widgets in their Catalog pages:
+The catalog page is the primary way for users to browse, search, and select products. Both the Minium and Speedwell accelerators include the following widgets in their catalog pages:
 
 * Search Bar
 * Options Facets
@@ -19,9 +19,12 @@ The Catalog page is the primary way for users to browse, search, and select Chan
 * Sort
 * Search Results
 
-![Minium demo catalog](./catalog/images/01.png)
+![Catalog page in the Minium accelerator.](./catalog/images/01.png)
 
 To learn more about these widgets, see [Widget Reference](../liferay-commerce-widgets/widget-reference.md).
+
+!!! note
+    Apart from the search bar on the catalog page, there's also a global search bar at the top of every page in accelerators like Minium and Speedwell. You can use it to search for products, orders, accounts, and even retrieve orders by the order creator's email address.
 
 ## Related Topics
 

@@ -20,3 +20,5 @@ taxonomy-category-names:
 - Liferay SaaS
 ---
 # Commerce Storefront Pages
+
+Learn about the different pages that a commerce storefront uses in Liferay. These pages are available out-of-the-box in accelerators like Minium and Speedwell. If you don't want to use an accelerator, you can create these pages from scratch or edit the pages from the accelerator to fit your needs.

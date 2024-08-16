@@ -34,18 +34,16 @@ Begin by [adding an action to the data set view](#adding-actions-to-the-data-set
 
 Under the Display Options section, you can find general settings common to all actions.
 
-![Fill in the Label, localize it, and select an icon for your action.](./data-set-view-actions/images/01.png)
-
 1. Fill in the Label and, optionally, [localize](./data-set-view-visualization-modes.md#editing-and-localizing-labels) it.
 
 1. (Optional) Choose an icon to show in your Data Set fragment.
 
-   <!-- Choose from a list of out-of-the-box icons or type in the name of an icon registered through the SVG sprite map client extension. The custom icon requires configuring the client extension. - This is to be added once the article about this client extension is on. Eric -->
+   <!-- Choose from a list of out-of-the-box icons or type in the name of an icon registered through the SVG sprite map client extension. The custom icon requires configuring the client extension. - This is to be added once the article about this client extension is on. Eric -->|
 
    !!! tip
        When an item has a single action, its label appears as text inside a button component if no icon is selected. If multiple actions exist, an action menu icon (![Action Menu icon](../../../images/icon-actions.png)) appears, revealing available actions on click.
 
-![Use the action's label as text inside a button component or select an icon to show in your Data Set fragment instead.](./data-set-view-actions/images/02.png)
+   ![Use the action's label as text inside a button component or select an icon to show in your Data Set fragment instead.](./data-set-view-actions/images/01.png)
 
 Under the Action Behavior section, select the action type. You can find specific configurations for each action you choose. See [Configuring Item and Creation Actions](#configuring-item-and-creation-actions) to learn more about each action type.
 
@@ -93,8 +91,6 @@ Before creating actions for your data set, review the [General Observations](#ge
 
 Async actions operate behind the scenes, allowing complex or time-consuming operations to be carried out in the background while users continue interacting with the application.
 
-![Available options for the Async type.](./data-set-view-actions/images/03.png)
-
 To create an async action,
 
 1. Under Action Behavior, select *Async* as the Type.
@@ -114,8 +110,6 @@ Once configured, use the async action to invoke and execute the selected method.
 
 Headless actions are controlled via a *Headless Action Key*, which determines the specific permissions and functionalities that can be executed through the API. For example, a headless action with the key *delete* would allow an API to carry out a deletion operation on a specific resource.
 
-![Available options for the Headless type.](./data-set-view-actions/images/04.png)
-
 To create a headless action,
 
 1. Under Action Behavior, select *Headless* as the Type.
@@ -131,8 +125,6 @@ Once configured, use the headless action to initiate and manage the associated A
 Link actions direct users to a specified URL. They can be used both as item actions, which facilitate operations such as deleting, modifying, or viewing details of data set items, and as creation actions to add new items to the data set.
 
 The primary distinction is the specific purpose of the URL and whether you can set a confirmation message, which is only available for item actions.
-
-![Use the Link action to redirect users to a specified URL.](./data-set-view-actions/images/05.png)
 
 To create a link action,
 
@@ -153,11 +145,11 @@ To create a link action,
 
 Once configured, users are directed to the designated URL upon clicking the action button or icon.
 
+![Use the Link action to redirect users to a specified URL.](./data-set-view-actions/images/02.png)
+
 ### Modal Action
 
 Modal actions send users to a specified URL that is rendered in a modal. You can use modal actions as item or creation actions, but remember that only item actions include confirmation messages.
-
-![Use the modal action to redirect users to a specified URL and render its content in a modal.](./data-set-view-actions/images/07.png)
 
 !!! important
     When using a Modal action, make sure the destination URL works well inside a modal.
@@ -180,11 +172,11 @@ To create a modal action,
 
 Once configured, users are directed to the chosen URL rendered in a modal when they click the action button or icon.
 
+![Use the modal action to redirect users to a specified URL and render its content in a modal.](./data-set-view-actions/images/03.png)
+
 ### Side Panel Action
 
 Side Panel actions send users to a specified URL that is rendered in a side panel. You can use side panel actions as item or creation actions, but remember that only item actions include confirmation messages.
-
-![Use the Side Panel action to redirect users to a specified URL and render its content in a Side Panel.](./data-set-view-actions/images/08.png)
 
 !!! important
     When using a Side Panel action, make sure the destination URL works well inside a side panel.
@@ -205,11 +197,11 @@ To create a side panel action,
 
 Once configured, users are directed to the chosen URL rendered in a side panel when they click the action button or icon.
 
+![Use the Side Panel action to redirect users to a specified URL and render its content in a Side Panel.](./data-set-view-actions/images/04.png)
+
 ### Setting Confirmation and Status Messages
 
 You can display confirmation or success/failure messages before executing an action.
-
-![Use confirmation and status messages to warn and notify users.](./data-set-view-actions/images/09.png)
 
 !!! tip
     Both fields are optional. If the confirmation message is empty, no message appears, and the action is performed immediately. Similarly, if the status message is left empty, a generic success or error message appears.
@@ -241,15 +233,9 @@ To create status messages for [async](#async-action) and [headless](#headless-ac
 
 Side Panel and Modal actions open on top of the current page, so users can interact with the content without navigating away. When you add a `Title` field to these actions, a bar with the title and a close button appears at the top of the component. Users can close the modal/side panel and return to the original page.
 
-![A Side Panel action with a title and a URL without a title.](./data-set-view-actions/images/10.png)
-
 If the Side Panel or Modal action points to a URL that already includes a title, adding one in the action configuration is unnecessary. The existing title from the target URL appears along with a close button. Adding another title in the action configuration results in two overlapping bars.
 
-![A Modal action and a URL with titles.](./data-set-view-actions/images/11.png)
-
 If neither the action nor the URL includes a title, nothing appears.
-
-![Without any titles, nothing appears.](./data-set-view-actions/images/12.png)
 
 ## Related Topics
 

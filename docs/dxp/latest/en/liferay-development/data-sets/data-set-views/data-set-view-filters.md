@@ -88,10 +88,10 @@ Under Filter Source,
 
    - {bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA132+` With API REST Applications, select a *REST Application*, *REST Schema*, *REST Endpoint*, *Item Key*, and *Item Label*.
 
-      !!! tip
+     !!! tip
          The Item Key and Item Label define which fields of the API response are used to build the filter. The Item Key constructs the OData object as a filter parameter, and the Item Label displays the values in the filter UI. Since APIs can return a wide range of data, specifying these fields is crucial for proper integration and data handling.
 
-      ![Selecting an Object Picklist as the source.](./data-set-view-filters/images/05.png)
+     ![Selecting an Object Picklist as the source.](./data-set-view-filters/images/05.png)
 
 Under Filter Options,
 

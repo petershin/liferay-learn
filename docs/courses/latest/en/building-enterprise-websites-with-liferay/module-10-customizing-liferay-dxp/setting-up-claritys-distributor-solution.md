@@ -13,7 +13,7 @@ While most parts of the solution are complete, some features remain unfinished. 
 * Assign the appropriate permissions to the Distributor Application object.
 
 These exercises demonstrate the powerful functionality and granular control you can achieve by using objects and client extensions together.
- 
+
 <!--TASK: Reconsider order and grouping of exercises. Maybe keep 20d, 20e in this article and move 20f-20h to a new article that focuses on adding columns to the data structure. Also, maybe move this setting up article before Modeling Data Structures-->
 
 ## Exercise: Deploying Clarity's Distributor Solution
@@ -141,7 +141,7 @@ To do this,
 ## Exercise: Adding Fields to the Distributor Applications Object
 <!--Exercise 20f-->
 
-The Distributor Applications object already contains a bunch of custom fields, but Clarity needs one for applicants to list other brands they offer. Here you'll add a field to the Distributor Applications Object as the Clarity Admin user.
+The Distributor Applications object already contains several custom fields, but Clarity needs one for applicants to list other brands they offer. Here you'll add a field to the Distributor Applications Object as the Clarity Admin user.
 
 To do this,
 

@@ -4,7 +4,7 @@ uuid: 671475f7-dd3a-4909-b98c-3cb3ec93b4e2
 # Customizing Clarity's Front End
 
 <!--TASK: improve intro-->
-Now let's apply what you've learned to make some changes to Clarity's site appearance. Here you'll use frontend client extensions to 
+Now let's apply what you've learned to make some changes to Clarity's site appearance. Here you'll use frontend client extensions to
 
 * Modify the current theme CSS
 * Update the website favicon

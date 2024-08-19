@@ -41,8 +41,6 @@ By default, the commerce area includes the following settings:
 
 Here you can configure the commerce settings at the site scope. For more information about commerce settings, see [Liferay Commerce Configuration Overview](https://learn.liferay.com/w/commerce/store-management/liferay-commerce-configuration-overview).
 
-![Default Site Settings for Commerce](./site-settings-ui-reference/images/02.png)
-
 ## Platform
 
 By default, the Platform area includes the following settings:
@@ -64,8 +62,6 @@ If you require a different analytics service, you can add it. See [Adding a New 
 ### Localization
 
 Here you can choose whether to use the installation's default language options or define your own for the site. For more information on setting your site's language options, read [Site Localization](../site-settings/site-localization.md).
-
-![Use the localization settings to set your site language options.](./site-settings-ui-reference/images/03.png)
 
 ### Site Configuration
 
@@ -109,6 +105,24 @@ By default, the Users section includes the Default User Associations setting, wh
 
 Configure whether instance and site names appear in the HTML title to control how your site information appears in browser tabs and search engine results. Read [Configuring SEO and OpenGraph](../displaying-content/using-display-page-templates/configuring-seo-and-open-graph.md) to learn more about other SEO configuration options.
 
+By default, the instance and site names are included in the HTML Title. You can exclude the instance and/or the site names and display only the page name in the HTML title.
+
+In this example, the page is called `Advanced Home Security Systems`, the instance is `omniconsumerproducts.com`, and the site is `Products Site`.
+
+```html
+<!-- (Default) Page, site, and instance names -->
+<title>Advanced Home Security Systems - Products Site - omniconsumerproducts.com</title>
+
+<!-- Page and site names -->
+<title>Advanced Home Security Systems - Products Site</title>
+
+<!-- Page and instance names -->
+<title>Advanced Home Security Systems - omniconsumerproducts.com</title>
+
+<!-- Only the page name -->
+<title>Advanced Home Security Systems</title>
+```
+
 ## Content and Data
 
 By default, the Content and Data area includes the following settings:
@@ -139,7 +153,7 @@ You can integrate Liferay DXP with live support chat platforms. The configuratio
 
 You can see the type of configuration for this setting at the instance scope under the Site Settings Strategy text:
 
-![Find the type of configuration at the Instance scope under Site Settings Strategy.](./site-settings-ui-reference/images/04.png)
+![Find the type of configuration at the Instance scope under Site Settings Strategy.](./site-settings-ui-reference/images/02.png)
 
 !!! note
     Depending on your configuration at the instance scope, you may not be able to update the configuration at site scope. To verify your instance configuration, got to the Site Menu &rarr; Control Panel &rarr; Instance Settings &rarr; Content and Data &rarr; Click to Chat.
@@ -153,9 +167,7 @@ You can see the type of configuration for this setting at the instance scope und
 
 ### Digital Signature
 
-You can integrate Liferay DXP with DocuSign to manage electronic signatures. The configuration at site scope depends on the Digital Signature configuration at instance scope. You can check the instance configuration under the Site Settings Strategy text:
-
-![Find the type of configuration at the Instance scope under Site Settings Strategy.](./site-settings-ui-reference/images/05.png)
+You can integrate Liferay DXP with DocuSign to manage electronic signatures. The configuration at site scope depends on the Digital Signature configuration at instance scope.
 
 !!! note
     Depending on your Digital Signature configuration at the instance scope, you may not be able to update the configuration at site scope. To verify your instance configuration, go to Site Menu &rarr; Control Panel &rarr; Instance Settings &rarr; Content and Data &rarr; Digital Signature.
@@ -168,7 +180,7 @@ When enabled, a user with view permission can browse the site's document library
 
 Using this option, you can enable automatic moderation of user messages on message boards after a predefined number of messages.
 
-![Configure automatic moderation of message boards.](./site-settings-ui-reference/images/06.png)
+![Configure automatic moderation of message boards.](./site-settings-ui-reference/images/03.png)
 
 ### Pages
 
@@ -212,7 +224,7 @@ To view a Site's settings, open the *Site Menu* (![Site Menu](../../images/icon-
 - [Language](#language)
 - [Advanced](#advanced)
 
-![Site Settings are organized into four tabs.](./site-settings-ui-reference/images/07.png)
+![Site Settings are organized into four tabs.](./site-settings-ui-reference/images/04.png)
 
 !!! note
     Many of these settings can be localized to provide translations based on a user's locale. See [Initial Instance Localization](../../installation-and-upgrades/setting-up-liferay/initial-instance-localization.md) and [Modifying Localizable Site Fields](./site-localization.md#modifying-localizable-site-fields) for more information.
@@ -225,7 +237,7 @@ General settings range from core configuration, like a site's membership Type, t
 
 **Site ID**: A unique number automatically generated for a Site at its creation. This ID is permanent and cannot be changed.
 
-**Name**: Set a site's title using the *Name* field. This title is displayed in the browser's title bar as well as the header for each site page. You can also localize a site's name via the *Language Flag* button.
+**Name**: Set a site's title using the *Name* field. This title appears in the browser's title bar as well as the header for each site page. You can also localize a site's name via the *Language Flag* button.
 
 **Description**: Use the *Description* field to explain a site's purpose. You can also localize a site's description via the *Language Flag* button.
 
@@ -243,8 +255,6 @@ General settings range from core configuration, like a site's membership Type, t
 
 View a site's Public and Private Pages, if any exist, and enable or disable the propagation of changes from the selected site template. If they don't exist, a site Templates selector appears for creating pages with a template.
 
-![In the Pages section, you can view a Site's Public and Private Pages.](./site-settings-ui-reference/images/08.png)
-
 ### Custom Fields
 
 View and configure any custom fields you've defined for your pages. With these fields, you can set page metadata, such as author, date of creation, and geolocation. This section only appears once you've configured custom fields for your site. See [Custom Fields](../../system-administration/configuring-liferay/adding-custom-fields.md) for more information.
@@ -259,8 +269,6 @@ Use Categories and Tags to categorize a site's content so users can more easily 
 
 **Public and Private Virtual Host**: Set public and private virtual hosts to map to a site's public and private Pages. See [Configuring Virtual Hosts Site URLs](./managing-site-urls/configuring-virtual-hosts-site-urls.md) for more information.
 
-![In the Site URL section, you can configure your site's friendly URL, as well as virtual hosts for your public and private pages.](./site-settings-ui-reference/images/09.png)
-
 #### Documents and Media
 
 Determine whether to enable Directory Indexing for a site. When enabled, a User with view permission can browse the site's document library files and folders.
@@ -268,8 +276,6 @@ Determine whether to enable Directory Indexing for a site. When enabled, a User 
 #### Site Template
 
 If you created your site using a *Site Template*, it's displayed here, along with whether the template allows Users to modify pages that inherit it. See [Site Templates](../sites/site-templates.md) for more information.
-
-![View your page's selected template.](./site-settings-ui-reference/images/10.png)
 
 #### Open Graph
 
@@ -289,8 +295,6 @@ If you created your site using a *Site Template*, it's displayed here, along wit
 
 See [Configuring Open Graph](./configuring-open-graph.md) to learn more.
 
-![You can enable or disable Open Graph, define image meta tags, and see an image preview.](./site-settings-ui-reference/images/11.png)
-
 #### Sharing
 
 Determine whether to enable document sharing between site users. When enabled, users can share items with one another. See [Sharing Documents with Other users](../../content-authoring-and-management/documents-and-media/publishing-and-sharing/managing-document-access/sharing-documents-with-other-users.md) for more information.
@@ -307,8 +311,6 @@ Here you can manage the social interactions between users on a site.
 
 Here you can select the type of ratings used for the following Site applications: Comments, Knowledge Base, Blogs, Wiki, Message Boards, Web Content, and Documents and Media. See [Configuring Content Ratings Types](./site-content-configurations/configuring-content-rating-type.md) for more information.
 
-![You can select the type of ratings used for Site applications.](./site-settings-ui-reference/images/12.png)
-
 #### Mentions
 
 Determine whether to allow users to mention other users in Site applications. See [Mentioning Users](../../collaboration-and-social/notifications-and-requests/user-guide/configuring-mentions.md) for more information.
@@ -316,8 +318,6 @@ Determine whether to allow users to mention other users in Site applications. Se
 ### Language
 
 Here you can choose whether to use the installation's default language options, or define your own for a Site.
-
-![You can update language options through the Languages tab of Site Settings.](./site-settings-ui-reference/images/13.png)
 
 ### Advanced
 
@@ -327,33 +327,23 @@ Here you can configure additional settings, including analytics services, conten
 
 Select the roles and teams that new site members are assigned to by default. See [Configuring Role and Team Defaults for Site Members](./site-users/configuring-role-and-team-defaults-for-site-members.md) for more information.
 
-![You can select the roles and teams that new site members are assigned to by default.](./site-settings-ui-reference/images/14.png)
-
 #### Analytics
 
 Use the provided fields to set a site's Google Analytics ID and configure additional Google Analytics options. You can also set the Piwik Analytics tracking code for a site by entering the full script code, including script start and end tags.
 
 If you require a different analytics service, you can add it. See [Adding a New Analytics Service](./adding-a-new-analytics-service.md) for more information and how to add additional fields for different analytics services.
 
-![In the Analytics section, you can configure a site's analytic services.](./site-settings-ui-reference/images/15.png)
-
 #### Maps
 
 Select which maps API provider to use when displaying geolocated assets in your Site. Geolocated assets can be displayed for documents, web content articles, DDL records, and more. See [Geolocating Assets](./site-content-configurations/configuring-geolocation-for-assets.md) for more information.
-
-![You can select the maps API provider used for site geolocation.](./site-settings-ui-reference/images/16.png)
 
 #### Recycle Bin
 
 Determine whether to enable the recycle bin for a site. You can specify the number of minutes an asset remains in the recycle bin before being automatically deleted. By default, the max age for recycled items is 43200 minutes (i.e., 30 days). See [Configuring the Asset Recycle Bin for Sites](./site-content-configurations/configuring-the-asset-recycle-bin-for-sites.md) for more information.
 
-![You can configure a site's recycle bin.](./site-settings-ui-reference/images/17.png)
-
 #### Content Sharing
 
 Determine whether child sites can display content from this site, including structures, templates, categories, widget templates, and more. Disabling this option immediately revokes content sharing from all child sites. See [Managing Content Sharing Across Sites](./site-content-configurations/managing-content-sharing-across-sites.md) for more information.
-
-![You can determine whether child sites can display content from this site.](./site-settings-ui-reference/images/18.png)
 
 ## Related Topics
 

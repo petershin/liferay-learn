@@ -19,7 +19,7 @@ Clarity does not want to relive the challenges they had with their legacy system
 
 ### Enabling a Self-service Platform
 
-Clarity understands the importance of both robust search functionality and efficient self-service options to ensure customers and business partners can find answers independently. As Clarity continues to expand their website, in addition to products and blog posts, they plan to add product documentation, manuals, troubleshooting guides, etc. Fortunately Liferay search can search across a wide variety of assets, including document files and PDFs. The data or information visitors are looking for is just a search click away.
+Clarity recognizes the need for robust search capabilities to enable effective self-service. As Clarity continues to develop their website, so does their content. With Liferay search, they can empower users to find information independently, whether products,  job listings, blog posts, legal documents, or white papers.
 
 ### Enable Searching Content Stored in Other Systems
 

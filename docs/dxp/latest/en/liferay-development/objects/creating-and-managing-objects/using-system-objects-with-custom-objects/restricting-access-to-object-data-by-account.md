@@ -24,12 +24,15 @@ To restrict object entries by account, your custom object must have an active [r
 ![Restrict access to custom object entries by account.](./restricting-access-to-object-data-by-account/images/01.png)
 
 !!! important
-   - You can only configure account restriction for draft objects. After [publishing](../creating-objects.md#publishing-object-drafts), these settings cannot be changed.
-   - For Liferay DXP 2024.Q1+/Liferay Portal 7.4 GA112+, the entries of account restricted objects appear in search results if the search user has the `Accounts > Account Entry: View` permission in an account- or regular-scoped role. See [Searching for Content](../../../../using-search/getting-started/searching-for-content.md#searching-for-liferay-objects) for details.
+    For Liferay DXP 2024.Q1+/Liferay Portal 7.4 GA112+, the entries of account restricted objects appear in search results if the search user has the `Accounts > Account Entry: View` permission in an account- or regular-scoped role. See [Searching for Content](../../../../using-search/getting-started/searching-for-content.md#searching-for-liferay-objects) for details.
 
-To set up account restriction,
+## Enabling Account Restriction
+
+You can enable account restriction in draft or published object definitions. If you enable it for an object that already has data (i.e., the object is published and entries for it exist), the earlier entries are not related to any account and may be accessible only to administrative users with permission to see all the object's data.
 
 1. Open the *Global Menu* (![Global Menu](../../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Objects*.
+
+1. If you're just testing this out, add a test object definition and publish it.
 
 1. Begin editing the Account system object.
 
@@ -45,7 +48,21 @@ To set up account restriction,
 
 1. Click *Save*.
 
-This makes the account relationship field mandatory, so users must select an account when creating entries. Available account options are determined by each user's permissions. See [Account Restriction and User Roles](#account-restriction-and-user-roles) for guidance on configuring role permissions while account restriction is enabled. After entry creation, the selected account becomes the entry's owner and cannot be changed.
+With account restriction enabled, the account relationship field is mandatory. Users must select an account when creating entries. Available account options are determined by each user's permissions. See [Account Restriction and User Roles](#account-restriction-and-user-roles) for guidance on configuring role permissions while account restriction is enabled. After entry creation, the selected account becomes the entry's owner and cannot be changed.
+
+## Disabling Account Restriction
+
+To disable account restriction you must delete the relationship that enabled it:
+
+1. Edit the Account system object: open the *Global Menu* (![Global Menu](../../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Objects*, then click *Account*.
+
+1. Open _Relationships_.
+
+1. Click *Actions* (![Actions](../../../../images/icon-actions.png)) &rarr; *Delete*.
+
+   ![Delete the relationship to disable account restriction.](./restricting-access-to-object-data-by-account/images/04.png)
+
+1. Confirm the relationship name and click *Delete*.
 
 ## Account Restriction and User Roles
 

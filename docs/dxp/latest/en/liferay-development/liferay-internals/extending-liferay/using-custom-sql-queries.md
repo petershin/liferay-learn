@@ -53,8 +53,51 @@ Then, follow these steps to deploy the example:
 
 1. Add another entry with a different name and description. This time, check *Hidden*. The new entry doesn't appear under P9Z0 Entries.
 
-This example uses custom SQL to only retrieve entries with a specified value in the database (`_hidden = false`).
+This example uses custom SQL to only retrieve entries with a specified value in the database (`hidden_ = false`).
 
 ## Adding Custom SQL to the Code
 
+1. Open `P9Z0EntryLocalServiceImpl.java`. The code for the custom SQL request is defined in the `getEntries` method.
+
+   ```{literalinclude} using-custom-sql-queries/resources/liferay-p9z0.zip/p9z0-service/src/main/java/com/liferay/p9z0/service/impl/P9ZEntryLocalServiceImpl.java
+      :dedent: 1
+      :language: java
+      :lines: 46-72
+   ```
+
+1. Store your SQL query in a string, replacing any variable values with a `?`.
+
+   ```{literalinclude} using-custom-sql-queries/resources/liferay-p9z0.zip/p9z0-service/src/main/java/com/liferay/p9z0/service/impl/P9ZEntryLocalServiceImpl.java
+      :dedent: 2
+      :language: java
+      :lines: 52
+   ```
+
+1. Create a `SQLQuery` object. Liferay uses this object to handle SQL queries. The `SQLQuery` object is created by the session to avoid issues in a clustered environment. Use the `addEntity` method to define the class of the object your query will return.
+
+   ```{literalinclude} using-custom-sql-queries/resources/liferay-p9z0.zip/p9z0-service/src/main/java/com/liferay/p9z0/service/impl/P9ZEntryLocalServiceImpl.java
+      :dedent: 2
+      :language: java
+      :lines: 54-56
+   ```
+
+1. If you used the `?` placeholder in the string, create a `QueryPos` object from the `SQLQuery`. Add the values you wish to replace in the order they appear on the string. This example only uses one.
+
+   ```{literalinclude} using-custom-sql-queries/resources/liferay-p9z0.zip/p9z0-service/src/main/java/com/liferay/p9z0/service/impl/P9ZEntryLocalServiceImpl.java
+      :dedent: 2
+      :language: java
+      :lines: 58-60
+   ```
+
+1. `QueryUtil` executes the query in the database. The `list` method is used to make `GET` calls and returns a list of the values in the response.
+
+   ```{literalinclude} using-custom-sql-queries/resources/liferay-p9z0.zip/p9z0-service/src/main/java/com/liferay/p9z0/service/impl/P9ZEntryLocalServiceImpl.java
+      :dedent: 2
+      :language: java
+      :lines: 62-64
+   ```
+
 ## Related Topics
+
+- [Business Logic with Service Builder](../../building-applications/data-frameworks/service-builder/business-logic-with-service-builder.md)
+- [Module Projects](../fundamentals/module-projects.md)

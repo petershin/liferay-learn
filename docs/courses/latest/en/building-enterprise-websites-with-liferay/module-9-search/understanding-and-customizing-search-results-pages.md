@@ -3,7 +3,7 @@ uuid: 40f88570-abf4-44ab-af8c-1374bde0e20d
 ---
 # Understanding and Customizing Search Results Pages
 
-Clarity wants to have site visitors be able to search for content and find content quickly and easily. This is accomplished by creating good navigation and leveraging Liferay's search features. For example, a customer looking for a pair of eyeglasses or sunglasses should be able to navigate the site to find the type of product they are looking for. The user might search by keyword or they might use search categories to filter through the list of products. Navigating Clarity's site should match the visitor's expectation for good user experience.
+Clarity wants site visitors to be able to search for and find content quickly and easily. This is accomplished by creating good navigation and leveraging Liferay's search features. For example, a customer looking for a pair of eyeglasses or sunglasses should be able to navigate the site to find the type of product they are looking for. The user might search by keyword or use search categories to filter through the list of products. Navigating Clarity's site should match the visitor's expectation for good user experience.
 
 At the same time, configuring the look and layout of search results pages should be quick and easy. Fortunately, no development background is required. Liferay provides various out-of-the-box components and search widgets to empower Liferay users to easily design pages and search experiences right from the UI.
 
@@ -195,10 +195,8 @@ To do this,
 
 Great! You've set a custom filter widget that limits the search results to only display Job Listings web content in the Open Positions page.
 
-Next, you'll learn how to use Search Blueprints as another method for customizing search results.
-
 ## Conclusion
 
-Great job! Visitor's to Clarity's site now have a clear and simple way to search for content and filter through different Clarity products and content. Next, we'll turn our attention to Liferay blueprints to bring personalization and further customization to the search experience.
+Great job! Visitors to Clarity's site now have a clear and simple way to search for and filter through different products and content. Next, we'll turn our attention to Liferay blueprints to bring personalization and further customization to the search experience.
 
 Next Up: [Personalizing search experiences with blueprints](./personalizing-search-experiences-with-blueprints.md)

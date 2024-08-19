@@ -5,7 +5,7 @@ uuid: 85d7e066-677f-4616-aca4-56555601a228
 
 As we saw in the previous lesson, using search facets is great in providing visitors a way to quickly filter search results. However, Clarity has some search use cases that they wish to further customize and personalize. Liferay's Search Blueprints provide the necessary tools to meet Clarity's customization needs.
 
-Use Blueprints to define implicit search criteria that can be added to any user's search query to help enhance the search experience. Blueprints offers a UI-based configuration experience where search criteria is set by dragging and dropping elements. Use Blueprints to boost, filter, or even hide specific search results. You can apply a different Blueprint to each search results page, or Blueprints can even be leveraged with headless APIs.
+Use Blueprints to define implicit search criteria that can be added to any user's search query to help enhance the search experience. Blueprints offers a UI-based configuration experience where search criteria is set by dragging and dropping elements. Use Blueprints to boost, filter, or even hide specific search results. Apply a different Blueprint to each search results page, or leverage your Blueprints with headless APIs.
 
 Complete the following exercises to better understand the capabilities of Search Blueprints.
 

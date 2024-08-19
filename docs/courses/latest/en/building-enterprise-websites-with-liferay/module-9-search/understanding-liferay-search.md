@@ -3,20 +3,20 @@ uuid: 0f70c846-c4b4-47b6-9f77-f957c81b20b7
 ---
 # Understanding Liferay Search
 
-Liferay Search is a powerful tool that enables users to efficiently find information within a Liferay portal. It leverages the capabilities of a robust search engine to index and retrieve content, providing a seamless search experience for end-users. Let's delve deeper into the core components and architecture of Liferay Search.
+Liferay search is a powerful tool that enables users to efficiently find information within a Liferay portal. It leverages the capabilities of a robust search engine to index and retrieve content, providing a seamless search experience for end-users. Let's delve deeper into the core components and architecture of Liferay search.
+
+<!--TASK: Add diagram(s) to this article.-->
 
 ## Liferay Search at a High-level
 
-At the heart of Liferay's default search capabilities is [Elasticsearch](https://www.elastic.co/elasticsearch), a powerful open-source search and analytics engine. This technology serves as the backbone for indexing, storing, and retrieving vast amounts of search data with remarkable speed and scalability. The process of transforming content into a searchable format is known as indexing. Liferay indexes a wide array of content types, including documents, web content articles, and blog posts. Once indexed, this data becomes accessible through the search engine, which is responsible for processing user queries, ranking results based on relevance, and delivering the most pertinent information.
+By default, Liferay search leverages [Elasticsearch](https://www.elastic.co/elasticsearch), a powerful open-source search and analytics engine. This technology serves as the backbone for indexing, storing, and retrieving data efficiently at scale.
 
 !!! note "Using Alternative Search Engines"
   Liferay search is API driven, which means you can use alternative search engine implementations. While Elasticsearch provides the best search experience, some industries or use cases may require using an alternative search engine.
 
-Beyond basic search features like faceting, sorting, and filtering, Liferay offers powerful tools to enhance user experience. Blueprints enable low-code customization of search experience, allowing manipulation of search queries, filters, sorts, and more. Additionally, personalization of search results can be achieved through the use of segmentation and search widgets, tailoring search results to individual user preferences and behaviors.
+Liferay stores its information in a database, but searching database tables directly can be time-consuming. To optimize performance, Liferay indexes content, such as documents and web articles, converting everything into a searchable format. Additionally Liferay uses dedicated search indexes for many of its entities to store searchable fields relevant for each type (e.g., title, content, tags). This enables the search engine to efficiently and effectively process user queries, rank results, and return relevant information without directly querying the database.
 
-## Search Architecture Overview
-
-Liferay stores its information in a database. However, searching database tables directly can be a time-consuming task. Therefore most of Liferay's entities utilize a search index. Whenever a Liferay entity is created, a separate entry is also created in the search index by Liferay's indexer framework. Each entry has a collection of fields for that entity. For example, a blog entry might contain index fields for the title, content, tags, etc. This index is then used by Elasticsearch to provide an effective and efficient way to search for data. Some of the Liferay entities that use the search index out-of-the-box include:
+Key Liferay entities with dedicated search indexes include:
 
 * Blog entries
 * Categories and tags
@@ -24,33 +24,17 @@ Liferay stores its information in a database. However, searching database tables
 * Objects
 * Web content articles
 
-Therefore, when a search is performed, the query is executed against the search index, which is optimized for handling large datasets. The results of the query are then referenced back to the original assets when the search results are displayed to the user.
+Liferay search is ready to use right out of the box. However, you have the flexibility to fine-tune your search experience with extensive configuration options in the Liferay UI. You can apply these adjustments at the page, site, or instance level, providing granular control over how search functions across your platform. You can also perform administrative tasks, such as reindexing, search engine connections, and more.
 
-## Search Configuration and Administration
-
-By default, Liferay Search is ready to use right out of the box. However, to customize search behavior, many configuration options are available. These options can be adjusted at the page level using search widgets, at the site level, or at the instance's Control Panel. Make changes to areas such as,
-
-* Content filtering, by limiting search results to specific content types.
-* Search blueprint application, by applying any existing Search Blueprint to the page and search suggestions.
-* Widget customization, by creating reusable search widget templates at the site or global level.
-* System-wide adjustments, by performing index maintenance tasks like reindexing and inspecting the field mappings for a better control over search behavior.
-
-<!-- I'm not sure if we want the "Changing System Settings" admonition here, but I won't remove it rn -->
-
-!!! note Changing System Settings
-  Access to system settings is not available in Liferay SaaS. Discuss any specific search configuration requirements with Liferay Support team.
-
-You can also adjust low-level settings, such as search engine connections and field mappings, within the System Settings, which includes search framework and engine configurations.
+Liferay also offers a rich set of tools for refining search results, including faceting, sorting, filtering, and autocomplete. Liferay Blueprints offer a low-code way to customize the search experience, empowering advanced customization without coding. Additionally, you can leverage blueprints with segmentation and search widgets to personalize search results, tailoring experiences to individual user preferences and behaviors.
 
 ## Refining Search Results
 
-Liferay's search index, powered by Elasticsearch, provides a powerful and effective way to quickly get search results. These search results can be further refined using facets, sorting, or custom filters.
-
-Search facets refine search results across specific content and criteria. Out of the box, Liferay offers a collection of different search facets. For example, a type facet could be used to quickly filter out blog entries, documents, or site pages. We'll see in the next lesson how category facets can be used by Clarity to filter across their products.
+Liferay search results can be refined using facets, sorting, or custom filters. Search facets narrow down results by specific criteria, such as content type and categories. Out of the box, Liferay offers a collection of search facets, and we'll see how Clarity can use them in the following lessons.
 
 ![Use category facets to refine search results.](./understanding-liferay-search/images/02.png)
 
-Sorting is another way to refine search results. By default, search results are sorted by relevance, a score calculated by Elasticsearch's algorithms. However, users can also sort alphabetically by title or user, chronologically by creation or modified date, or by other sorting strategy that meets their needs.
+Sorting also refines search results by reordering items. By default, search results are sorted by relevance, a score calculated by Elasticsearch's algorithms, but you can also sort alphabetically, chronologically, or by other criteria.
 
 The search bar itself also serves as a filter with its auto-suggestion functionality. As a user begins typing a search term, the search engine begins processing the query and suggests possible relevant results.
 
@@ -58,17 +42,11 @@ Finally, custom filters are available to exclude specific content, such as certa
 
 ## Customizing Search Results Pages
 
-Similar to how we created site pages using pre-built widgets in previous exercises, search results pages can be created in the same way. Liferay offers many search widgets that can be dragged and dropped onto a site page to quickly create a customized search results page. This enables non-technical team members to create search pages effortlessly. Liferay even provides search page templates to use without needing to create a page from scratch.
+Search pages are created using Liferay's intuitive drag-and-drop page builder. With a rich library of search widgets,  you can quickly add advanced search functionality to your pages, including facets, sorting options, and suggestions. This empowers even non-technical team members to create search pages effortlessly.
 
-Some of the available search widgets are:
+<!--TASK: Add Img-->
 
-* Various types of search facets
-* Results preview
-* Similar results
-* Sort
-* Suggestions
-
-We also saw in a previous module that segmentation can be used to deliver personalized pages to different segments. This could also be leveraged for search results pages. For example, you could present one search results page for most visitors, while offering a different search results page with additional search widgets for Clarity distributors. Furthermore, the search results itself can also be personalized based on segments, or other criteria, with Search Blueprints.
+With Liferay's segmentation capabilities, you can create unique search experiences for different user groups. Imagine presenting one search results page for general visitors, and another, enriched with additional search widgets and tailored content, for Clarity distributors. Going further, Liferay Blueprints enable you to personalize the search results themselves. Based on user segments, behaviors, or other criteria, you can dynamically adjust what content appears at the top of the list, ensuring each user sees the most relevant information first.
 
 ## Search Blueprints
 
@@ -87,11 +65,11 @@ We'll see a specific example of Clarity utilizing search blueprints later in thi
 
 ## Other Advanced Search Options
 
-Liferay offers semantic search, giving you results that go beyond just matching keywords. Semantic search utilizes natural language processing and tries to understand the meaning or intent of the search term. Note, this is currently a beta feature and is available by enabling the feature flag. See [semantic search](https://learn.liferay.com/web/guest/w/dxp/using-search/liferay-enterprise-search/search-experiences/semantic-search) to learn more.
+Liferay offers semantic search, generating results that go beyond matching keywords. Semantic search utilizes natural language processing and tries to understand the meaning or intent of the search term. Note, this is currently a beta feature and is available by enabling the feature flag. See [semantic search](https://learn.liferay.com/web/guest/w/dxp/using-search/liferay-enterprise-search/search-experiences/semantic-search) to learn more.
 
-Search results are sorted by the ranking of a relevance score automatically assigned by Elasticsearch. The higher the relevance score, the higher the ranking in the search results. However, an Elasticsearch Learning to Rank plugin can be used with Liferay to prioritize search results based on your specific criteria. See [learning to rank](https://learn.liferay.com/w/dxp/using-search/liferay-enterprise-search/learning-to-rank) to learn more.
+By default, search results are sorted by the relevance score assigned by Elasticsearch. The higher the relevance score, the higher the ranking in the search results. However, you can use an Elasticsearch Learning to Rank plugin with Liferay to prioritize search results based on your specific criteria. See [learning to rank](https://learn.liferay.com/w/dxp/using-search/liferay-enterprise-search/learning-to-rank) to learn more.
 
-Synonym sets can be created in Liferay to add additional coverage for different search terms. For example, visitors to Clarity's website might search for terms such as *eyeglasses* or *sunglasses*, but some might search for synonyms such as *spectacles* or *shades*. Create synonym sets in Liferay to ensure users find relevant content regardless of their exact keywords. See [synonym sets](https://learn.liferay.com/w/dxp/using-search/search-administration-and-tuning/synonym-sets) to learn more.
+Finally, you can create synonym sets in Liferay to add additional coverage for different search terms. For example, visitors to Clarity's website might search for terms such as *eyeglasses* or *sunglasses*, but some might search for synonyms such as *spectacles* or *shades*. Create synonym sets in Liferay to ensure users find relevant content regardless of their exact keywords. See [synonym sets](https://learn.liferay.com/w/dxp/using-search/search-administration-and-tuning/synonym-sets) to learn more.
 
 ## Conclusion
 

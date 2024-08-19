@@ -36,6 +36,10 @@ The latest bug fixes, feature updates, and security protections are applied auto
 
 * [Scale solution capacity automatically for effective responses under peak utilization](https://learn.liferay.com/w/liferay-cloud/manage-and-optimize/auto-scaling)
 
+## Plans and Usage
+
+* The Plans and Usage dashboard provides immediate visibility into resource utilization across all environments, ensuring customers understand their usage.
+
 ## Service Layer
 
 * [Platform Services](https://learn.liferay.com/w/liferay-cloud/platform-services)

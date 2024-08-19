@@ -26,6 +26,7 @@ Manage users while ensuring data compliance and the security of your digital env
 
 ## Personal Data Management
 
+* [Cookie Management](https://learn.liferay.com/web/guest/w/dxp/users-and-permissions/managing-user-data/managing-third-party-cookies)
 * [GDPR rights to Data Portability and Right to be Forgotten are supported](https://learn.liferay.com/w/dxp/users-and-permissions/managing-user-data)
 
 Next: [Cloud](./cloud.md).

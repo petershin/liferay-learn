@@ -16,10 +16,13 @@ Liferay DXP's Digital Asset Management (DAM) system can be used by your business
 * [Storage for documents, images, videos](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media)
 * Integration with [Google](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/devops/google-drive-integration), [Microsoft](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/devops/sharepoint-integration)
 
-## Custom Metadata
+## AI Image Generation
 
-* [Metadata Sets](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/uploading-and-managing/managing-metadata/defining-document-types)
-* [Document Types](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/uploading-and-managing/managing-metadata/defining-metadata-sets)
+* [Generate images with OpenAI integration](https://learn.liferay.com/web/guest/w/dxp/content-authoring-and-management/documents-and-media/generating-images-using-ai)
+
+## Custom Metadata & Document Types
+
+* [Align documents with business functions](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/uploading-and-managing/managing-metadata)
 
 ## Asset Libraries
 
@@ -27,8 +30,8 @@ Liferay DXP's Digital Asset Management (DAM) system can be used by your business
 
 ## Taxonomies
 
-* [Structured categories](https://learn.liferay.com/w/dxp/content-authoring-and-management/tags-and-categories/organizing-content-with-categories-and-tags)
-* [Ad-hoc tags](https://learn.liferay.com/w/dxp/content-authoring-and-management/tags-and-categories/tagging-content-and-managing-tags)
+* [Categories](https://learn.liferay.com/w/dxp/content-authoring-and-management/tags-and-categories/organizing-content-with-categories-and-tags)
+* [Tags](https://learn.liferay.com/w/dxp/content-authoring-and-management/tags-and-categories/tagging-content-and-managing-tags)
 * [ML-based Auto-tagging](https://learn.liferay.com/w/dxp/content-authoring-and-management/tags-and-categories/auto-tagging/configuring-asset-auto-tagging)
 
 ## Adaptive Media

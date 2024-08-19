@@ -58,7 +58,7 @@ Sites include Design Systems and Experience Management capabilities, which work 
 
 ## A/B Testing
 
-* [Test experiences' effectiveness with messages combinations, layouts, etc.](https://learn.liferay.com/w/dxp/site-building/optimizing-sites/ab-testing/ab-testing)
+* [Improve effectiveness of Experiences and Collections by testing which combination of messages, layouts, CTAs work most effectively](https://learn.liferay.com/w/dxp/site-building/optimizing-sites/ab-testing/ab-testing)
 
 
 Next: [Integration](./integration.md)

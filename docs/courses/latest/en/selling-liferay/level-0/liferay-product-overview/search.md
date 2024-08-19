@@ -23,7 +23,7 @@ With Liferay DXP, you can build digital experiences with dynamic navigation, cat
 
 ## Search Suggestions
 
-* [Suggestions based on popular search terms, previously entered queries, or relevant content](https://learn.liferay.com/w/dxp/using-search/search-pages-and-widgets/search-results/enabling-search-suggestions)
+* [Based on popular search terms, previous queries, relevant content, and semantic search](https://learn.liferay.com/w/dxp/using-search/search-pages-and-widgets/search-results/enabling-search-suggestions)
 
 ## Personalized Search
 

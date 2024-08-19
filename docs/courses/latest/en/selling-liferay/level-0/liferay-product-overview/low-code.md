@@ -13,11 +13,11 @@ Liferay’s Low-Code capabilities make it possible for non-developers to quickly
 
 ## Objects
 
-* [Use Objects to visually build Business Applications, layouts, notifications triggers, etc.](https://learn.liferay.com/w/dxp/building-applications/objects)
+* [Use Objects to visually build Business Applications, layouts, define actions, trigger notifications, etc.](https://learn.liferay.com/w/dxp/building-applications/objects)
 
 ## Object Data Model
 
-* [Contruct data model for business applications](https://learn.liferay.com/en/w/dxp/building-applications/objects/creating-and-managing-objects)
+* [Construct data model for business applications](https://learn.liferay.com/en/w/dxp/building-applications/objects/creating-and-managing-objects)
 
 ## Object Relationships
 
@@ -25,7 +25,11 @@ Liferay’s Low-Code capabilities make it possible for non-developers to quickly
 
 ## Object Actions & Notifications
 
-* [Define operations triggered manually or automatically by certain conditions](https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/actions)
+* [Define operations, like notifications, triggered manually or automatically by certain conditions](https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/actions)
+
+## Data Set Display
+
+* [Render results of Headless API calls with no code.](https://learn.liferay.com/w/dxp/liferay-development/data-sets)
 
 ## Headless APIs
 
@@ -33,7 +37,11 @@ Liferay’s Low-Code capabilities make it possible for non-developers to quickly
 
 ## System Objects
 
-* [Manage and extend system objects like User, Product, etc.](https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/extending-system-objects)
+* [Manage system objects like User, Product, etc.](https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/extending-system-objects)
+
+## API Builder
+
+* [No-code creation & management of Object APIs](https://learn.liferay.com/web/guest/w/dxp/headless-delivery/api-builder)
 
 ## Object Proxy
 

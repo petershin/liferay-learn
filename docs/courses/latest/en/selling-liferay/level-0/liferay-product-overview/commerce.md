@@ -14,11 +14,14 @@ With digital commerce capabilities designed to support complex ordering workflow
 ## Product Catalogs
 
 * [Product Specifications](https://learn.liferay.com/w/commerce/product-management/creating-and-managing-products/products/specifications)
-* [Shop-by Diagrams](https://learn.liferay.com/w/commerce/product-management/creating-and-managing-products/product-types/shop-by-diagram)
 * [Product Images](https://learn.liferay.com/w/commerce/product-management/creating-and-managing-products/products/product-images)
 * [Promotions](https://learn.liferay.com/w/commerce/pricing/promoting-products/introduction-to-promotions) and [Discounts](https://learn.liferay.com/w/commerce/pricing/promoting-products/introduction-to-discounts)
 * [Subscriptions](https://learn.liferay.com/w/commerce/order-management/subscriptions)
 * [ERP/PIM Integration](https://learn.liferay.com/w/commerce/add-ons-and-connectors)
+
+## Generative AI
+
+* [Generate Product descriptions](https://learn.liferay.com/web/guest/w/commerce/product-management/creating-and-managing-products/products/generating-product-descriptions-using-ai) & images with AI
 
 ## Inventory Management
 
@@ -32,6 +35,7 @@ With digital commerce capabilities designed to support complex ordering workflow
 * [Guest Checkout](https://learn.liferay.com/w/commerce/store-management/guest-checkout/guest-checkout-overview)
 * [Approval Workflows](https://learn.liferay.com/w/commerce/order-management/order-workflows/approving-or-rejecting-orders-in-order-workflows)
 * [Payment Gateway Integrations](https://learn.liferay.com/w/commerce/store-management/configuring-payment-methods)
+* [Refunds](https://learn.liferay.com/w/commerce/payment-management/refunds)
 
 ## Multi-level Selling
 

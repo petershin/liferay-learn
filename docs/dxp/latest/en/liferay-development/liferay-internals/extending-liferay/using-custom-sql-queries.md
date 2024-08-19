@@ -47,6 +47,8 @@ Then, follow these steps to deploy the example:
 
 1. Add the P9Z0 Portlet to a page. You can find the example portlet under Sample in Widgets.
 
+   ![Add the P9Z0 portlet to a page.](./using-custom-sql-queries/images/01.png)
+
 1. Add an entry by entering a name and a description. Leave *Hidden* unchecked. Click *Add*, and the new entry appears under P9Z0 Entries.
 
 1. Add another entry with a different name and description. This time, check *Hidden*. The new entry doesn't appear under P9Z0 Entries.
@@ -56,7 +58,3 @@ This example uses custom SQL to only retrieve entries with a specified value in 
 ## Adding Custom SQL to the Code
 
 ## Related Topics
-
-- [Using an OSGi Service](../fundamentals/using-an-osgi-service.md)
-- [Using Job Scheduler](../../liferay-development/core-frameworks/job-scheduler-framework/using-job-scheduler.md)
-- [Users](../../users-and-permissions/users.md)

@@ -33,8 +33,7 @@ By default, Liferay Search is ready to use right out of the box. However, to cus
 * Content filtering, by limiting search results to specific content types.
 * Search blueprint application, by applying any existing Search Blueprint to the page and search suggestions.
 * Widget customization, by creating reusable search widget templates at the site or global level.
-* System-wide adjustments, by performing index maintenance tasks like reindexing and inspecting the field mappings.
-* Index management, by inspecting and modifying index mappings for a better control over search behavior.
+* System-wide adjustments, by performing index maintenance tasks like reindexing and inspecting the field mappings for a better control over search behavior.
 
 <!-- I'm not sure if we want the "Changing System Settings" admonition here, but I won't remove it rn -->
 

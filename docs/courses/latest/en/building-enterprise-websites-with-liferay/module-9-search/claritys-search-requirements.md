@@ -3,7 +3,7 @@ uuid: a2d82789-314e-4fb9-b2cf-14c180c8844e
 ---
 # Clarity's Search Requirements
 
-Modern businesses generate and store vasts amount of data. This makes an effective enterprise search solution essential for efficient knowledge management. Through the strategic implementation of robust search capabilities, you can empower organization to efficiently access, manage, and leverage their data while optimizing user experience and increasing productivity.
+Modern businesses generate and store vasts amount of data. This makes an effective enterprise search solution essential for efficient knowledge management. Through the strategic implementation of robust search capabilities, you can empower organizations to efficiently access, manage, and leverage their data while optimizing user experience and increasing productivity.
 
 ## Requirements
 

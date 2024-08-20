@@ -89,15 +89,20 @@ User roles do not come with objects permissions by default, so you must manually
 
 ## Moving Data Structures between Environments
 
-Coming Soon!
-
-<!--TASK: write section. import/export, batch client extensions-->
+If you want to import or export data from Liferay, you use batch client extensions. They work with Liferay's batch engine framework to provide data entities to your Liferay instance. You can use the Export/Import Center via the Global Menu ![](../../images/icon-applications-menu.png) to export data from one instance, add it to a batch client extension, and then deploy the client extension to import the data into a different Liferay instance.
+You can export any type of data supported by the batch engine framework from your Liferay instance, including object definitions and workflow definitions.
 
 ## Exploring the Model Builder UI
 
-Coming Soon!
+Liferay provides the Model Builder UI for designing complex object structures. This graphical tool displays each object definition as a card and visualizes relationships between object definitions. With it, you can create, manage, and extend data models in the Objects application and quickly configure definitions, fields, and relationships.
 
-<!--TASK: write section; reconsider placement-->
+![Model Builder UI](./modeling-and-managing-data-structures/images/05.png)
+
+To access the Model Builder view, open the Global Menu ![](../../images/icon-applications-menu.png), go to the *Control Panel* tab, and click *Objects*. Go to the desired object folder and click *View in Model Builder*.
+
+![Go to the desired object folder and click View in Model Builder.](./modeling-and-managing-data-structures/images/06.png)
+
+From here you can create, edit, and manage object definitions. The Model Builder view is great for quickly configuring multiple object definitions and their attributes. It is especially helpful for visualizing and managing object relationships.
 
 ## Conclusion
 

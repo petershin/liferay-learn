@@ -62,7 +62,7 @@ Liferay’s suite of content management tools includes the ability to create and
 
 <!-- To keep up with their rapid growth, Clarity is always looking for talent who aligns with their company values and can deliver real-world results. Their current site doesn’t provide a mechanism for advertising open positions or allowing interested parties to submit resumes. Instead, they have had to work with a third party recruiter. This has proven to be a costly alternative, since Clarity has hired a new employee almost every week for more than 2 years. -->
 
-To reduce these recruitment costs, Clarity wants a dedicated Careers page where they can advertise open positions with the future goal of allowing candidates to submit resumes. This page should provide a simple “search” based experience with multiple filters so that interested parties can browse open positions without wading through irrelevant data. Additionally, they want to build a database of candidates that they can reference as needs arise.
+To reduce recruitment costs, Clarity wants a dedicated Careers page where they can advertise open positions with the future goal of allowing candidates to submit resumes. This page should provide a simple “search” based experience with multiple filters so that interested parties can browse open positions without wading through irrelevant data. Additionally, they want to build a database of candidates that they can reference as needs arise.
 
 Finally, they want to include analytics for understanding how many users visit the page, what the engagement rate is, and which locations candidates are most interested in.
 

@@ -1,7 +1,9 @@
 ---
 toc:
+  - ./themes/setting-up-an-environment-and-creating-a-theme.md
+  - ./themes/embedding-widgets-using-templates.md
   - ./themes/upgrading-a-theme.md
-  - ./themes/theme-development.md
+  - ./themes/bundling-resources.md
 taxonomy-category-names:
 - Sites
 - Themes
@@ -9,6 +11,7 @@ taxonomy-category-names:
 - Liferay PaaS
 uuid: 1788d12e-c0ca-4300-83af-d39431639940
 ---
+
 # Themes
 
 Themes customize the default look and feel of your site. You can define the style and visual identity of your brand or label across your whole site.
@@ -41,7 +44,7 @@ You can also configure a custom [Frontend Token Definition](../../site-building/
 
 Themes are also a complement to [Page Templates](../../site-building/creating-pages/adding-pages/creating-a-page-template.md) or [Master Page Templates](../../site-building/creating-pages/defining-headers-and-footers/master-page-templates.md) for designing a template for your Site's pages. It can be used in conjunction with these other methods, which add on top of the design from your theme.
 
-For example, you can [embed widgets in your theme](./themes/theme-development/working-with-templates/embedding-widgets-via-templates.md) to make them a permanent fixture of your Site's pages.
+For example, you can [embed widgets in your theme](./themes/theme-development/working-with-templates/embedding-widgets-using-templates.md) to make them a permanent fixture of your Site's pages.
 
 !!! note
     You can also create templates for your pages using [Master Pages](../../site-building/creating-pages/defining-headers-and-footers/master-page-templates.md) or [Page Templates](../../site-building/creating-pages/adding-pages/creating-a-page-template.md).

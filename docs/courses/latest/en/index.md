@@ -10,7 +10,7 @@ uuid: 79dff06d-5aef-4fba-bf17-edbb16e2ed5a
 Welcome to Liferay Courses! This set of practical guides will teach you how to build fantastic solutions with Liferay using hands-on examples, practical explanations, and references to our official documentation. Start your journey to become a _Certified Liferay Practitioner_!
 
 !!! important
-    We are bringing new content and a brand new new design and approach to Liferay Courses and Certification in 2024. Keep an eye on this page as we continue to evolve and develop content to help you learn to use Liferay to its full potential!
+    Liferay's first major new course of content is now live! The Building Enterprise Websites with Liferay represents the newest and most up-to-date baseline for understanding how to build solutions with Liferay DXP. This course takes learners through practical requirements, connects those requirements to Liferay concepts, and then provides step-by-step guidance for implementing a sample site. We have more plans to further enhance both the content of learn.liferay.com, this course, and of course many more courses to come!
 
 ::::{grid} 2
 :gutter: 3 3 3 3

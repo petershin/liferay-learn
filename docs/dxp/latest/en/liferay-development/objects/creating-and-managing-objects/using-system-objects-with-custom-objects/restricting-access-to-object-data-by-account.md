@@ -28,11 +28,11 @@ To restrict object entries by account, your custom object must have an active [r
 
 ## Enabling Account Restriction
 
-You can enable account restriction in draft or published object definitions. If you enable it for an object that already has data (i.e., the object is published and entries for it exist), the earlier entries are not related to any account and may be accessible only to administrative users with permission to see all the object's data.
+You can enable account restriction in draft or published object definitions. If you enable it for a published object that already has object entries, the earlier entries are not related to any account and may be accessible only to administrative users with permission to see all the object's data.
 
 1. Open the *Global Menu* (![Global Menu](../../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Objects*.
 
-1. If you're just testing this out, add a test object definition and publish it.
+1. If you're testing this feature, add an object definition and publish it.
 
 1. Begin editing the Account system object.
 

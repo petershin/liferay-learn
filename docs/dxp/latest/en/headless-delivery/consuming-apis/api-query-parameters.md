@@ -609,6 +609,95 @@ The JSON response:
 }
 ```
 
+### Sorting by Related Object Data
+
+{bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA132+`
+
+The Object API supports sorting entries using fields from related objects, enhancing flexibility in data retrieval.
+
+This functionality is available for custom objects with one-to-many relationships and supports various field types, including Text, Long Text, Date, Date and Time, Integer, Long Integer, Decimal, Precision Decimal, Boolean, and Picklist.
+
+System fields such as Author, Create Date, External Reference Code, ID, Modified Date, and Status are also supported.
+
+The sorting syntax for related objects follows this pattern:
+
+```
+sort=relatedRelationship/fieldName:asc
+```
+
+You can also sort by fields from multiple related objects by chaining relationships:
+
+```
+sort=relatedRelationship1/relatedRelationship2/fieldName:desc
+```
+
+Suppose you have a custom object Student that has a one-to-many relationship with another custom object University. To sort students by the University Name in ascending order, you can use the following command:
+
+```bash
+curl \
+	"http://localhost:8080/o/c/students?sort=universityEnrolled/universityName:asc" \
+	--header "accept: application/json" \
+	--user "test@liferay.com:learn"
+```
+
+In this command, `universityEnrolled` is the related relationship representing the university associated with each student. `universityName` is the field in the University object by which you want to sort the Student entries. `:asc` specifies that the sorting should be in ascending order.
+
+The JSON response should look like this:
+
+```json
+{
+...
+    "taxonomyCategoryBriefs" : [ ],
+    "universityEnrolledERC" : "029520e6-d34d-5140-9bc5-b81f5ae29f9d",
+    "r_universityEnrolled_c_universityId" : 31963,
+    "r_universityEnrolled_c_universityERC" : "029520e6-d34d-5140-9bc5-b81f5ae29f9d",
+    "studentName" : "August"
+...
+    "taxonomyCategoryBriefs" : [ ],
+    "universityEnrolledERC" : "62e78f42-1596-8f11-beb5-4b34e719b8a9",
+    "r_universityEnrolled_c_universityId" : 31955,
+    "r_universityEnrolled_c_universityERC" : "62e78f42-1596-8f11-beb5-4b34e719b8a9",
+    "studentName" : "Nathaly"
+...
+    "taxonomyCategoryBriefs" : [ ],
+    "universityEnrolledERC" : "62e78f42-1596-8f11-beb5-4b34e719b8a9",
+    "r_universityEnrolled_c_universityId" : 31955,
+    "r_universityEnrolled_c_universityERC" : "62e78f42-1596-8f11-beb5-4b34e719b8a9",
+    "studentName" : "Luke"
+...
+    "taxonomyCategoryBriefs" : [ ],
+    "universityEnrolledERC" : "d29da38c-1adf-4aba-1129-463d8f4e6b50",
+    "r_universityEnrolled_c_universityId" : 31961,
+    "r_universityEnrolled_c_universityERC" : "d29da38c-1adf-4aba-1129-463d8f4e6b50",
+    "studentName" : "Peter"
+...
+    "taxonomyCategoryBriefs" : [ ],
+    "universityEnrolledERC" : "d0ce2764-6804-8de8-ff9f-4b199867dc4f",
+    "r_universityEnrolled_c_universityId" : 31957,
+    "r_universityEnrolled_c_universityERC" : "d0ce2764-6804-8de8-ff9f-4b199867dc4f",
+    "studentName" : "Larissa"
+...
+    "taxonomyCategoryBriefs" : [ ],
+    "universityEnrolledERC" : "2ff3dc43-a871-8eed-6204-5c7ef0302e7a",
+    "r_universityEnrolled_c_universityId" : 31959,
+    "r_universityEnrolled_c_universityERC" : "2ff3dc43-a871-8eed-6204-5c7ef0302e7a",
+    "studentName" : "Manu"
+...
+}
+```
+
+In this case, the `universityName` field is not included in the response. Instead, `r_universityEnrolled_c_universityId` is used to reference the universities. The corresponsing university IDs and names are as follows:
+
+| universityId | universityName |
+| :----------- | :------------- |
+| 31963        | Caltech        |
+| 31955        | Harvard        |
+| 31961        | MIT            |
+| 31957        | Oxford         |
+| 31959        | Stanford       |
+
+Given this mapping, the student entries are successfully returned in alphabetical order based on the associated university names.
+
 ## Related Topics
 
 - [Consuming REST Services](./consuming-rest-services.md)

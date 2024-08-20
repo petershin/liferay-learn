@@ -21,13 +21,49 @@ The provisioned repository will be on GitHub, but you can transfer it to a GitLa
 
 If you've customized your Jenkinsfile, follow this guide to [extend the default Jenkinsfile](../platform-services/continuous-integration.md#extending-the-default-jenkinsfile).
 
-## Creating an Azure Repository
+## Importing from GitHub to Azure
 
+1. Go to [Azure DevOps](https://dev.azure.com/).
 
+1. Click *New project*.
 
-## Transferring from GitHub to Azure
+   ![Click New project to begin creating a new Azure repository.](./configuring-your-azure-repository/images/01.png)
+
+1. Provide a name for the project.
+
+1. Ensure the visibility is set to private.
+
+1. Click *Repos* in the side navigation.
+
+1. Click *Import* under *Import a repository*.
+
+   ![Click Inport to open the import modal.](./configuring-your-azure-repository/images/02.png)
+
+1. Insert the GitHub repository's URL into *Clone URL*.
+
+1. Select *Requires Authentication*.
+
+   ![Import the GitHub repository using the import modal.](./configuring-your-azure-repository/images/03.png)
+
+1. Fill out the Username and Password/PAT fields and click *Import*.
+
+If you need help creating, cloning, and pushing repositories, see [Azure's documentation](https://learn.microsoft.com/en-us/azure/devops/user-guide/code-with-git?toc=%2Fazure%2Fdevops%2Fget-started%2Ftoc.json&view=azure-devops).
 
 ## Generating Access Tokens for Azure
+
+Next, create an access token that will be used by the Webhook to trigger Jenkins builds:
+
+1. Navigate to the personal access tokens page.
+
+   ![Create a personal access token for GitLab, which cannot be accessed again later.](./configuring-your-azure-repository/images/04.png)
+
+1. Click *New Token*.
+
+1. Provide a name and an expiration date for this token.
+
+1. Configure the access token to have the following permissions:
+
+   - ****:
 
 ## Connecting Azure to Your Jenkins Service
 

@@ -11,7 +11,7 @@ The Liferay Database Upgrade Tool is a client program for upgrading Liferay DXP 
 !!! important
     If you're upgrading from 6.2 or earlier, update your file store configuration. See the [Updating the File Store](../reference/file-store-updates.md) for more information.
 
-Modifying a database while it's detached from your Liferay instance allows you to [tune the database for upgrade operations](../upgrade-stability-and-performance/database-tuning-for-upgrades.md), [prune unnecessary data](../upgrade-stability-and-performance/database-tuning-for-upgrades.md) (e.g., unneeded versions of Web Content, Documents, and more) to improve upgrade performance, and resolve upgrade issues. These activities are especially important for upgrading DXP and any large, critical Portal environments safely and as quickly as possible. After you've accounted for tuning and pruning the database and completing relevant tasks described in [Upgrade Basics](../upgrade-basics.md), you're ready to setup up the new installation and upgrade the database using the upgrade tool.
+You can [tune the database for upgrade operations](../upgrade-stability-and-performance/database-tuning-for-upgrades.md), [prune unnecessary data](../upgrade-stability-and-performance/database-tuning-for-upgrades.md) (e.g., unneeded versions of Web Content, Documents, and more) to improve upgrade performance, and resolve upgrade issues by modifying the database while it's detached from your Liferay instance. These activities are especially important for upgrading DXP and any large, critical Portal environments safely and as quickly as possible. After you've accounted for tuning and pruning the database and completing relevant tasks described in [Upgrade Basics](../upgrade-basics.md), you're ready to setup up the new installation and upgrade the database using the upgrade tool.
 
 If you're [upgrading to a new Liferay Docker image](../../installing-liferay/using-liferay-docker-images/upgrading-to-a-new-docker-image.md) and want to use the upgrade tool, use it from a [Liferay Tomcat Bundle](../../installing-liferay/installing-a-liferay-tomcat-bundle.md) of the new Liferay version. The tool is in the bundle's `tools/portal-tools-db-upgrade-client` folder.
 
@@ -110,7 +110,7 @@ Here's how to upgrade your database with the upgrade tool:
 
    The command above executes the upgrade tool with the same JVM options recommended for the application server. File encoding (`UTF-8`), time zone (`GMT`), country, language, and memory settings (`-Xmx value`) should all match your application server's settings. For databases with over 10 GB of data, allocate additional memory using the `-Xmx` option.
 
-   If you haven't configured the upgrade using the [upgrade properties files](../reference/database-upgrade-tool-reference.md#manual-configuration), the upgrade tool prompts you for configuration values and shows default values in parentheses. Here's an example interaction:
+   If you haven't configured the upgrade using the [upgrade properties files](../reference/database-upgrade-tool-reference.md#manual-configuration), the upgrade tool prompts you for some configuration values and shows default values in parentheses. Here's an example interaction:
 
    ```
    Please enter your application server (tomcat):
@@ -136,6 +136,9 @@ Here's how to upgrade your database with the upgrade tool:
    If you want to use the default value shown in a prompt, press enter.
 
    After configuration completes, the upgrade starts. The tool logs each upgrade process start and completion.
+
+   !!! important
+       The upgrade tool only prompts you for a few configurations. Many that might be important for your application must be set in the [upgrade properties file](../reference/database-upgrade-tool-reference.md#manual-configuration) (e.g. `dl.store.impl` and `module.framework.base.dir`). It's best practice to copy all properties in `portal-ext.properties` over to `portal-upgrade-ext.properties`.
 
 1. After the upgrade completes, check the [upgrade report](../reference/upgrade-report.md) for any database upgrade failures, errors, or warnings. You can use [Gogo Shell commands](../upgrade-stability-and-performance/upgrading-modules-using-gogo-shell.md) to troubleshoot issues and finish the upgrade.
 

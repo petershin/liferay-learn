@@ -66,7 +66,7 @@ To do this,
 
    ![You can select a display template for the category facet.](./understanding-and-customizing-search-results-pages/images/02.png)
 
-1. For Category Parameter Name, enter a unique value (e.g., `category-region`). 
+1. For Category Parameter Name, enter a unique value (e.g., `category-region`).
 
    **Note**: Each Category Facet widget must have a unique parameter name to function as expected.
 

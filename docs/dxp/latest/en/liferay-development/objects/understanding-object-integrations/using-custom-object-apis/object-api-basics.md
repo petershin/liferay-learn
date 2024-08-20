@@ -12,10 +12,10 @@ taxonomy-category-names:
 
 When you publish an Object, Liferay automatically generates REST APIs for it. These APIs differ for Company and Site scoped Objects, but they all use the `c/[pluralobjectlabel]` naming pattern (e.g., `c/timeoffrequests`). You can use these APIs to create, access, update, and remove Object entries.
 
-Here you'll use cURL commands to perform basic CRUD operations for a custom Object. Before proceeding, [set up](#setting-up-a-liferay-instance) a new Liferay DXP/Portal 7.4 instance and [prepare](#preparing-the-sample-code) the provided tutorial code.
+In this example, use cURL commands to perform basic CRUD operations for a custom Object. Before proceeding, [set up](#setting-up-a-liferay-instance) a new Liferay DXP/Portal 7.4 instance and [prepare](#preparing-the-sample-code) the provided tutorial code.
 
 !!! tip
-    For a complete list of APIs generated for both Site and Company Objects, see [Object's Headless Framework Integration](../using-custom-object-apis.md). You can view and test custom Object APIs via the Liferay API Explorer at `[server]:[port]/o/api` (e.g., `localhost:8080/o/api`). They are listed under *REST Applications*.
+    For a complete list of APIs generated for both Site and Company Objects, see [Object's Headless Framework Integration](../using-custom-object-apis.md). You can view and test custom Object APIs via the Liferay API Explorer at `[server]:[port]/o/api` (e.g., `localhost:8080/o/api`). They appear under *REST Applications*.
 
 ## Setting Up a Liferay Instance
 
@@ -204,9 +204,15 @@ After making a GET request for an object entry, you can read its categories in t
 
 You can filter object entries by `keywords` and `taxonomyCategoryIds` following the rules described in [API Query Parameters](../../../../headless-delivery/consuming-apis/api-query-parameters.md). Example filter strings may look like these:
 
-- `keywords/any(k:k in ('tag1','tag2'))` will retrieve all object entries tagged with `tag1` or `tag2`.
+- `keywords/any(k:k in ('tag1','tag2'))` retrieves all object entries tagged with `tag1` or `tag2`.
 
-- `taxonomyCategoryIds/any(k:k in (1234,5678))` will retrieve all entries linked to the category with ID `1234` or `5678`.
+- `taxonomyCategoryIds/any(k:k in (1234,5678))` retrieves all entries linked to the category with ID `1234` or `5678`.
+
+You can sort object entries by fields from related objects using the syntax described in [API Query Parameters](../../../../headless-delivery/consuming-apis/api-query-parameters.md#sorting-by-related-object-data). Example sorting strings may look like these:
+
+- `sort=relatedRelationship/fieldName:asc` sorts the entries based on a field from a directly related object in ascending order.
+
+- `sort=relatedRelationship1/relatedRelationship1/fieldName:desc` sorts the entries based on a field from a nested related object in descending order.
 
 ## Related Topics
 

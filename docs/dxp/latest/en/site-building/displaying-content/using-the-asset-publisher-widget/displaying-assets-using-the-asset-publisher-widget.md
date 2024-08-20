@@ -128,6 +128,9 @@ Set parameters and manually filter specific assets:
 
 1. In the Asset Entries section, use the Select button to filter for specific types of assets.
 
+!!! warning
+       When selecting a basic web content, only approved and scheduled appear in the list.
+
 1. For the type of asset you select, check the assets you want to include.
 
    ![Here is an example of filtering for basic web content and manually selecting items](./displaying-assets-using-the-asset-publisher-widget/images/05.png)

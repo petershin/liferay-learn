@@ -74,9 +74,9 @@ The major difference is the addition of the `META-INF/MANIFEST.MF` file. The WAB
 
 ## Deploying a WAR
 
-To deploy a WAB based on your WAR plugin, copy your WAR plugin to your Liferay instance's `deploy/` folder in your  [`[Liferay Home]`](../../installation-and-upgrades/reference/liferay-home.md).
+To deploy a WAB based on your WAR plugin, copy your WAR plugin to your Liferay instance's `deploy/` folder in your  [`[Liferay Home]`](../../installation-and-upgrades/reference/liferay-home.md). The WAB is created in the directory determined by the `module.framework.war.dir` property (`osgi/war` by default).
 
-## Saving a Copy of the WAB
+## Saving the Generated WAB
 
 Optionally, save the WAB to a local folder. This gives you the opportunity to inspect the generated WAB. To store generated WABs, add the following [portal properties](../../installation-and-upgrades/reference/portal-properties.md) to a `[Liferay Home]/portal-ext.properties` file. Then restart the Liferay server:
 
@@ -87,7 +87,13 @@ module.framework.web.generator.generated.wabs.store.dir=${module.framework.base.
 
 These properties instruct the WAB generator to store generated WABs in your installation's `osgi/wabs/` folder. The generated WABs have the same structure as the example WAB structure above. The [Module Framework Web Application Bundles](https://resources.learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Module%20Framework%20Web%20Application%20Bundles) properties section explains more details.
 
-Awesome! You can deploy your WAR plugin as a WAB and you know how to save a copy of the WAB to examine it!
+## Destroying a WAB
+
+Liferay destroys all WABs automatically when the portal or the OSGi framework are shut down.
+
+To destroy a WAB that hasn't been deployed, delete the file in the `deploy/` folder. To avoid issues, Liferay waits 60 seconds to destroy the WAB if it is being deployed. You can change this timeout in *Control Panel* &rarr; *Configuration* &rarr; *System Settings* &rarr; *Module Container* &rarr; *WAB Extender*. Set the timeout in milliseconds (e.g. `120000`).
+
+To destroy a WAB that's already been deployed, delete the file in the folder where your Liferay instance stores WARs (this is set by the `module.framework.war.dir` property).
 
 ## Related Topics
 

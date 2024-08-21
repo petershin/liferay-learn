@@ -11,9 +11,11 @@ Objects provide a low-code approach to modeling data structures and implementing
 
 With objects, you can define the schema of your data models with specific attributes, create relationships between objects, and implement logic to determine how objects should behave. You can use objects to iterate rapidly without the need to write or deploy code, which translates directly to increased business agility. Liferay comes with a centralized interface to define, manage, and store application data from custom structures, so that you can provide end users with tailored, streamlined experiences.
 
-One of the true strengths of objects is their integration with Liferay's core frameworks and functionalities, such as permissions, security, workflows, and more. Liferay automatically generates headless APIs for custom objects, enabling you to connect and synchronize your objects with external systems. You can govern objects with workflows, secure them with Liferay's permissions framework, and display them with fragments, templates, and widgets. Objects are just as suitable for simpler use cases like forms, which you explored in Module 6, as they are for more complex solutions like the distributor application you will work on later in this module.
+<!--TASK: Add Diagram-->
 
-This integration creates a cohesive user experience where your custom-built solutions feel and act like native parts of the Liferay platform. Not only can you achieve faster time to value, but any Liferay practitioner can maintain your solution, eliminating the reliance on technical developer resources. Objects are one of the most versatile features in the Liferay toolkit and a critical part of any custom solution.
+One of the true strengths of objects is their integration with Liferay's core frameworks and functionalities, such as permissions, security, workflows, and more. You can govern objects with workflows, secure them with Liferay's permissions framework, and display them with fragments, templates, and widgets. This integration creates a cohesive user experience where your custom-built solutions feel and act like native parts of the Liferay platform. Also Liferay automatically generates headless APIs for custom objects, enabling you to connect and synchronize your objects with external systems. 
+
+Objects are just as suitable for simpler use cases like forms, as they are for more complex solutions like the distributor application you'll work on later in this module. As such, Objects is one of the most versatile and powerful features in the Liferay toolkit and a critical part of custom solutions. Not only can you achieve faster time to value, but any Liferay practitioner can maintain your solution, eliminating the reliance on technical developer resources. 
 
 ## Client Extensions
 
@@ -27,6 +29,8 @@ There are four types of client extensions you can implement with Liferay:
 * Batch client extensions provide data entities to your Liferay instance via headless batch endpoints.
 * Microservice client extensions are external applications that execute actions triggered by events in your Liferay instance.
 * Configuration client extensions configure settings for your Liferay instance.
+
+<!-- TASK: Add Diagram-->
 
 As you progress through this module, you'll employ several different types of client extensions to customize the Clarity solution.
 

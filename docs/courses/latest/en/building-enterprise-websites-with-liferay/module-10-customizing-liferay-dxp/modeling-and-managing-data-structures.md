@@ -85,7 +85,8 @@ Managing access to data with account membership and role permissions is critical
 
 User roles do not come with objects permissions by default, so you must manually grant access to objects and their entries. When you deploy Clarity's distributor onboarding solution in a later exercise, you will also assign the appropriate permissions to the business role for reviewing applications.
 
-<!--
+<!-- TODO: Uncomment out when the Data Migration Center is out of beta.
+
 ## Moving Data Structures between Environments
 
 If you want to migrate custom data structures between environments, you can export and import object definitions as JSON files. These files include the definition’s complete schema such as its configurations, fields, actions, and relationships. You can then use these files to create batch client extensions for importing the structure into Liferay instances.

@@ -90,13 +90,13 @@ Open a command line at the location of the downloaded database archive (named `b
    **For MySQL** (using the name of the `.sql` dump without the extension as the database name):
 
    ```bash
-   mysql -u root -p 
+   mysql -u root -p
    ```
 
    Enter the password when prompted.
 
-   ```
-   create database DATABASE_NAME character set utf8;
+   ```sql
+   create database DATABASE_NAME default character set utf8mb4 collate utf8mb4_unicode_ci;
    ```
 
 1. Import the database from the extracted `.sql` dump:
@@ -263,7 +263,7 @@ Follow these steps to restore a backup to your chosen environment:
 
 <!-- I'd also want to know if there is a zero downtime way to do an upgrade - because that's one of the next questions I would ask if I put myself in the shoes of someone trying to run a prod and business critical env. We may not be ready to say anything about that - but just a thought to put in your mind as potentially a future iteration of this - or let's say if we find out that you CAN do a zero downtime upgrade using a DR environment, then we should update this article to say so. An example:
 
-Upgrading the liferay service requires a database upgrade and restoring the liferay service using the upgraded database. The process of restoring the upgraded database from backup requires some downtime and we recommend testing your upgrade on the DEV or UAT environments first. Zero downtime upgrades are possible using a DR environment. 
+Upgrading the liferay service requires a database upgrade and restoring the liferay service using the upgraded database. The process of restoring the upgraded database from backup requires some downtime and we recommend testing your upgrade on the DEV or UAT environments first. Zero downtime upgrades are possible using a DR environment.
 
 -->
 

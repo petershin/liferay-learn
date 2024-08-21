@@ -276,7 +276,7 @@ It's time to create the persistence layer and services by deploying the generate
    Create a database for DXP.
 
    ```sql
-   create database dxp_db character set utf8;
+   create database dxp_db default character set utf8 collate utf8mb4_unicode_ci;
    ```
 
    End your database session.

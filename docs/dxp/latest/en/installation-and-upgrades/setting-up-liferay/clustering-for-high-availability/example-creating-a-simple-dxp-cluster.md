@@ -54,7 +54,7 @@ Create the database server and DXP database:
    Create a database for DXP.
 
    ```sql
-   create database dxp_db character set utf8;
+   create database dxp_db default character set utf8mb4 collate utf8mb4_unicode_ci;
    ```
 
    End your database session.

@@ -75,8 +75,6 @@ For Clarity's solution, a single distributor application can have multiple evalu
 
 ![A single Distributor Application entry is related to many Application Evaluation entities.](./modeling-and-managing-data-structures/images/04.png)
 
-<!--TODO: Image above should probably have multiple Application Evaluations to better visualize the one-to-many relationship-->
-
 Once you've defined the relationship between object definitions, you can relate individual entries to one another through the Liferay UI or relationship REST APIs.
 
 ## Managing Data Access
@@ -87,22 +85,28 @@ Managing access to data with account membership and role permissions is critical
 
 User roles do not come with objects permissions by default, so you must manually grant access to objects and their entries. When you deploy Clarity's distributor onboarding solution in a later exercise, you will also assign the appropriate permissions to the business role for reviewing applications.
 
+<!--
 ## Moving Data Structures between Environments
 
-If you want to import or export data from Liferay, you use batch client extensions. They work with Liferay's batch engine framework to provide data entities to your Liferay instance. You can use the Export/Import Center via the Global Menu ![](../../images/icon-applications-menu.png) to export data from one instance, add it to a batch client extension, and then deploy the client extension to import the data into a different Liferay instance.
-You can export any type of data supported by the batch engine framework from your Liferay instance, including object definitions and workflow definitions.
+If you want to migrate custom data structures between environments, you can export and import object definitions as JSON files. These files include the definition’s complete schema such as its configurations, fields, actions, and relationships. You can then use these files to create batch client extensions for importing the structure into Liferay instances.
+
+!!! note
+    To use the batch client extension for object definitions, you must export the definition using Liferay's Data Migration Center as a JSONT file. This feature is currently in beta.
+-->
 
 ## Exploring the Model Builder UI
 
-Liferay provides the Model Builder UI for designing complex object structures. This graphical tool displays each object definition as a card and visualizes relationships between object definitions. With it, you can create, manage, and extend data models in the Objects application and quickly configure definitions, fields, and relationships.
+Liferay provides the model builder UI for designing complex object structures. This graphical tool displays each object definition as a card and visualizes relationships between object definitions. With it, you can create, manage, and extend data models in the Objects application and quickly configure definitions, fields, and relationships.
 
-![Model Builder UI](./modeling-and-managing-data-structures/images/05.png)
+![Use the model builder UI to design complex object structures.](./modeling-and-managing-data-structures/images/05.png)
 
-To access the Model Builder view, open the Global Menu ![](../../images/icon-applications-menu.png), go to the *Control Panel* tab, and click *Objects*. Go to the desired object folder and click *View in Model Builder*.
+To access the Model Builder view, open the Objects application and click *View in Model Builder*.
 
 ![Go to the desired object folder and click View in Model Builder.](./modeling-and-managing-data-structures/images/06.png)
 
-From here you can create, edit, and manage object definitions. The Model Builder view is great for quickly configuring multiple object definitions and their attributes. It is especially helpful for visualizing and managing object relationships.
+Streamline your object management with this visual editor. Create, edit, and organize object definitions with ease. It is especially helpful for visualizing and managing intricate object relationships.
+
+<!--TASK: Adapt into a UI reference/demo similar to the Page Builder UI overview.-->
 
 ## Conclusion
 

@@ -57,14 +57,19 @@ For example, you can embed a button in a Collection Display fragment mapped to a
 
 ## Mapping Fragments to Related Object Fields
 
-!!! important
-    Mapping fragment elements to related object fields is behind a release feature flag. Read [Release Feature Flags](../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information.
+From a Collection Display fragment showing the parent objects in a [one-to-many relationship](../creating-and-managing-objects/relationships/defining-object-relationships.md), you can map fragment elements to fields of the child objects. Use a Collection Display fragment for the parent object's Collection Provider, then nest another Collection Display fragment inside it, and use a [related items collection provider](../../../site-building/displaying-content/collections-and-collection-pages/collection-providers.md#related-items-collections-providers) to form the new collection based on the relationship.
 
-If the mapped object is on the child side of a [one-to-many relationship](../creating-and-managing-objects/relationships/defining-object-relationships.md), you can map fragment elements to fields in the parent object. The embedded Collection Display fragment uses a unique [related items collection provider](../../../site-building/displaying-content/collections-and-collection-pages/collection-providers.md#related-items-collections-providers) to form the new collection.
+![You can display related objects in collections.](./displaying-object-entries-with-collection-providers/images/09.gif)
 
-For example, if a `City` object (child) is related to a `Country` object (parent), you can map fragments to fields in the `Country` object.
+For example, in a one-to-many relationship of Country to Cities, you can map a fragment to display city names in a Collection Display of the parent Country object.
 
-To map fragments to a related object's fields,
+Key points:
+
+* Configure the top level Collection Display to use the parent object's Collection Provider.
+* Configure the nested Collection Display to use the Related Item Collection Provider generated for the one-to-many relationship.
+* In both Collection Display fragments, choose the Grid display style and add fragments mapped to their respective object fields.
+
+To map fragments to a related object's fields in the Collection Display,
 
 1. Use the Object's collection provider with a Collection Display fragment.
 

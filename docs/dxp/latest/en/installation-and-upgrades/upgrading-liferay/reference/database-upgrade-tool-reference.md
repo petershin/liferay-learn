@@ -4,9 +4,9 @@ uuid: 8d057d63-5edc-481f-b55d-ccfa3cb388fa
 # Database Upgrade Tool Reference
 
 !!! important
-    Before {bdg-secondary}`Liferay 7.4 U82/GA82`, the `db_upgrade_client.sh` file was named `db_upgrade.sh`.
+    Before Liferay 7.4 U82/GA82, the `db_upgrade_client.sh` file was called `db_upgrade.sh`.
 
-Here's an overview of Liferay's upgrade tool. 
+Here's an overview of Liferay's upgrade tool.
 
 Start the upgrade tool using the `db_upgrade_client.sh` script in the `[LIFERAY_HOME]/tools/portal-tools-db-upgrade-client` folder (`db_upgrade_client.bat` on Windows).
 

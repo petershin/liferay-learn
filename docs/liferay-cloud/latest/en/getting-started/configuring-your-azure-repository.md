@@ -47,6 +47,21 @@ If you've customized your Jenkinsfile, follow this guide to [extend the default 
 
 1. Fill out the Username and Password/PAT fields and click *Import*.
 
+1. In the terminal, clone the provisioned GitHub repository locally:
+
+   ```git clone git@github.com:dxpcloud/example.git```
+
+   !!! note
+       If you have already cloned the repository for work with another provider, then you can skip this step and work within the same clone.
+
+1. Add a new Git remote and point to Azure:
+
+   ```git remote add azure ORGANIZATION@dev.azure.com:ORGANIZATION/PROJECTNAME/_git/PROJECTNAME```
+
+1. Push the cloned repository to the new remote repository:
+
+   ```git push azure master```
+
 If you need help creating, cloning, and pushing repositories, see [Azure's documentation](https://learn.microsoft.com/en-us/azure/devops/user-guide/code-with-git?toc=%2Fazure%2Fdevops%2Fget-started%2Ftoc.json&view=azure-devops).
 
 ## Generating Access Tokens for Azure
@@ -66,6 +81,23 @@ Next, create an access token that will be used by the Webhook to trigger Jenkins
    - ****:
 
 ## Connecting Azure to Your Jenkins Service
+
+Lastly, set environment variables in the Jenkins service's to point to your new repository:
+
+1. Log in to the Liferay Cloud Console and navigate to your Jenkins service in the `infra` environment.
+
+1. Navigate to the *Environment Variables* tab.
+
+1. Configure the following environment variables:
+
+| Name                          | Value          |
+| :---------------------------- | :------------- |
+| `LCP_CI_SCM_PROVIDER`         | azure-devops   |
+| `LCP_CI_SCM_REPOSITORY_OWNER` | [repo_owner]   |
+| `LCP_CI_SCM_REPOSITORY_NAME`  | [repo_name]    |
+| `LCP_CI_SCM_TOKEN`            | [access_token] |
+
+After updating these environment variables, the Jenkins service restarts. Any pushed branches and pull requests in your new repository trigger builds.
 
 ## Connecting to a Private Azure Server
 

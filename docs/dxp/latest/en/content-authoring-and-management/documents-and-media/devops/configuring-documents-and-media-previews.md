@@ -8,6 +8,7 @@ taxonomy-category-names:
 - Liferay PaaS
 uuid: e1c9c81a-e2a8-492a-b61e-f3eb7b4c6d52
 ---
+
 # Configuring Documents and Media Previews
 
 {bdg-secondary}`Liferay 7.4 U84+/GA84+`
@@ -16,21 +17,19 @@ By default, Liferay uses [PDFBox](https://pdfbox.apache.org) to generate preview
 
 However, since PDFBox only supports a limited number of file types, Liferay also provides integration with third-party services to support additional file types. These services can be used to generate high quality file previews more quickly for more of your files.
 
-```{important}
-To use third-party services to generate previews, you must first install them on the server running your Liferay instance. 
-```
+!!! important
+    To use third-party services to generate previews, you must first install them on the server running your Liferay instance. 
 
 Liferay currently supports integration with these services:
 
-* [LibreOffice](http://www.libreoffice.org) or [OpenOffice](http://www.openoffice.org): These programs can be used in server mode to generate thumbnails and previews for supported file types (`.pdf`, `.docx`, `.odt`, `.ppt`, `.odp`, etc.). You can also use them to convert documents and view them in your browser. See [Enabling OpenOffice/LibreOffice Integration](./enabling-openoffice-libreoffice-integration.md) to learn more.
+- [LibreOffice](http://www.libreoffice.org) or [OpenOffice](http://www.openoffice.org): These programs can be used in server mode to generate thumbnails and previews for supported file types (`.docx`, `.odt`, `.ppt`, `.odp`, etc.). You can also use them to convert documents and view them in your browser. See [Enabling OpenOffice/LibreOffice Integration](./enabling-openoffice-libreoffice-integration.md) to learn more.
 
-* [ImageMagick](http://www.imagemagick.org) (also requires [Ghostscript](http://www.ghostscript.com)): These programs provide fast, high-quality previews and conversions for image files. See [Enabling ImageMagick and Ghostscript](../../../system-administration/using-the-server-administration-panel/configuring-external-services.md#enabling-imagemagick-and-ghostscript) for more information.
+- [ImageMagick](http://www.imagemagick.org) (also requires [Ghostscript](http://www.ghostscript.com)): These programs provide fast, high-quality previews and conversions for image files. See [Enabling ImageMagick and Ghostscript](../../../system-administration/using-the-server-administration-panel/configuring-external-services.md#enabling-imagemagick-and-ghostscript) for more information.
 
-* [FFmpeg](http://ffmpeg.org/): This program provides support for audio and video files. In addition to generating file previews, you can play multimedia in your browser's native HTML 5 player. See [Enabling FFmpeg for Audio and Video Previews](./enabling-ffmpeg-for-audio-and-video-previews.md) for more information.
+- [FFmpeg](http://ffmpeg.org/): This program provides support for audio and video files. In addition to generating file previews, you can play multimedia in your browser's native HTML 5 player. See [Enabling FFmpeg for Audio and Video Previews](./enabling-ffmpeg-for-audio-and-video-previews.md) for more information.
 
-   ```{note}
-   Liferay 7.3.x and earlier versions use [Xuggler](http://www.xuggle.com/xuggler) for generating audio and video previews. See [Enabling Xuggler](../../../system-administration/using-the-server-administration-panel/configuring-external-services.md#enabling-xuggler) for more information.
-   ```
+   !!! note
+       Liferay 7.3.x and earlier versions use [Xuggler](http://www.xuggle.com/xuggler) for generating audio and video previews. See [Enabling Xuggler](../../../system-administration/using-the-server-administration-panel/configuring-external-services.md#enabling-xuggler) for more information.
 
 With these services installed and configured, Documents and Media can provide in-application previews of most file types.
 
@@ -62,6 +61,6 @@ This process does not affect Adaptive Media previews and thumbnails for image fi
 
 ## Related Topics
 
-* [Managing Files](../uploading-and-managing/managing-files.md)
-* [Documents and Media UI Reference](../documents-and-media-ui-reference.md)
-* [Enabling OpenOffice/LibreOffice Integration](./enabling-openoffice-libreoffice-integration.md)
+- [Managing Files](../uploading-and-managing/managing-files.md)
+- [Documents and Media UI Reference](../documents-and-media-ui-reference.md)
+- [Enabling OpenOffice/LibreOffice Integration](./enabling-openoffice-libreoffice-integration.md)

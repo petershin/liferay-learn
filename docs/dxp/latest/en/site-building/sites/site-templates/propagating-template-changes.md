@@ -15,6 +15,8 @@ When site template propagation is enabled, you can make changes to the template'
 !!! note
     By default, propagation is triggered for each connected site individually, when it is first visited by a user after changes are made. However, you can configure your system to also trigger propagation to connected sites simultaneously whenever users toggle a template to *Ready for Propagation*. See [Configuring Site Template Propagation](./configuring-site-template-propagation.md) for more information.
 
+    {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA126+` When visiting a site page, if the site is not up to date with the latest site template, propagation runs in the background. Users see the previous version of the site template while the update occurs.
+
 ## Which Template Changes are Propagated?
 
 Only changes to a template's pages and page elements are propagated to connected sites. This includes newly created pages as well as any changes to fragments and widgets in existing pages. Other application data is only copied at initial site creation; subsequent changes are not automatically propagated.

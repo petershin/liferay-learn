@@ -15,6 +15,9 @@ By default, site template changes are propagated automatically to a connected si
 
 To enable manual propagation, use the Trigger Propagation setting. When enabled, clicking the [Ready for Propagation](./propagating-template-changes.md#enabling-and-disabling-propagation) button in the site template editor triggers propagation to all connected sites. Enabling this setting does not stop the automatic propagation of template changes that occurs when users visit connected sites.
 
+!!! note
+    {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA126+` When visiting a site page, if the site is not up to date with the latest site template, propagation runs in the background. Users see the previous version of the site template while the update occurs.
+
 !!! important
     Automatic propagation can be resource intensive, depending the scope of changes made to a template.
 

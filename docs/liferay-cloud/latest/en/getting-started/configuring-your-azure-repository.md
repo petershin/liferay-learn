@@ -76,9 +76,9 @@ Next, create an access token that will be used by the Webhook to trigger Jenkins
 
 1. Provide a name and an expiration date for this token.
 
-1. Configure the access token to have the following permissions:
+1. Configure the access token to have the following permission:
 
-   - ****:
+   - **Code**: Read
 
 ## Connecting Azure to Your Jenkins Service
 
@@ -99,9 +99,25 @@ Lastly, set environment variables in the Jenkins service's to point to your new 
 
 After updating these environment variables, the Jenkins service restarts. Any pushed branches and pull requests in your new repository trigger builds.
 
-## Connecting to a Private Azure Server
-
 ## Verifying Builds
+
+Pushed branches trigger builds that you can see or deploy from the *Builds* tab in the Liferay Cloud Console. After setting up integration with the Jenkins service, a good next step is to verify these builds, to ensure that the integration was successful. Verify that new Git pushes trigger Jenkins builds:
+
+1. Make a change to the repository (like adding a file), then commit it to the branch:
+
+   ```bash
+   git commit -m "Add file to test builds"
+   ```
+
+1. Push the branch up to Azure DevOps:
+
+   ```bash
+   git push azure branch-name
+   ```
+
+1. Navigate to the *Builds* page in the Liferay Cloud Console.
+
+1. Verify that the build displays for the pushed branch on the *Builds* page.
 
 ## Related Topics
 

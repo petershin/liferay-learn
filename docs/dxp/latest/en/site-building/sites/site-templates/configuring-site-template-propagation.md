@@ -6,15 +6,17 @@ taxonomy-category-names:
 - Liferay PaaS
 uuid: 630e4176-d453-436c-978a-0f1fad059614
 ---
+
 # Configuring Site Template Propagation
 
 {bdg-secondary}`Liferay 7.4 U23+/GA23+`
 
-By default, site template changes are propagated automatically to a connected site when a user visits the site after the template is updated. However, you can configure an additional manual trigger that propagates to all connected sites simultaneously. To enable manual propagation, use the Trigger Propagation setting. When enabled, clicking the [Ready for Propagation](./propagating-template-changes.md#enabling-and-disabling-propagation) button in the site template editor triggers propagation to all connected sites. Enabling this setting does not stop the automatic propagation of template changes that occurs when users visit connected sites.
+By default, site template changes are propagated automatically to a connected site when a user visits the site after the template is updated. However, you can configure an additional manual trigger that propagates to all connected sites simultaneously.
 
-```{important}
-Automatic propagation can be resource intensive, depending the scope of changes made to a template.
-```
+To enable manual propagation, use the Trigger Propagation setting. When enabled, clicking the [Ready for Propagation](./propagating-template-changes.md#enabling-and-disabling-propagation) button in the site template editor triggers propagation to all connected sites. Enabling this setting does not stop the automatic propagation of template changes that occurs when users visit connected sites.
+
+!!! important
+    Automatic propagation can be resource intensive, depending the scope of changes made to a template.
 
 To configure site template propagation,
 
@@ -36,5 +38,5 @@ If propagation is disabled for a site template, enabling propagation immediately
 
 ## Related Topics
 
-* [Site Templates](../site-templates.md)
-* [Propagating Template Changes](./propagating-template-changes.md)
+- [Site Templates](../site-templates.md)
+- [Propagating Template Changes](./propagating-template-changes.md)

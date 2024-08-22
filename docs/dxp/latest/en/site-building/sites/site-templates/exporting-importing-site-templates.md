@@ -7,13 +7,12 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: d800b7b8-5466-48fc-9f71-a3848e99e50c
 ---
+
 # Exporting/Importing Site Templates
 
 You can export and import site templates to share them between Liferay installations.
 
 ## Exporting Individual Site Templates
-
-Follow these steps to export a site template:
 
 1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), go to the *Control Panel*, and click *Site Templates*.
 
@@ -39,8 +38,6 @@ Once finished, click the *Download* button (![Download Button](../../../images/i
 
 ## Importing Individual Site Templates
 
-Follow these steps to import a site template:
-
 1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), go to the *Control Panel*, and click *Site Templates*.
 
 1. [Create](./creating-site-templates.md) a site template.
@@ -65,8 +62,6 @@ Once complete, you can use the imported site template to [create sites](../addin
 
 ## Bulk Export/Import
 
-If needed, follow these steps to perform bulk export/import operations for site templates:
-
 1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), go to the *Control Panel*, and click *Site Templates*.
 
 1. Click *Options* (![Options Icon](../../../images/icon-options.png)) in the Application Bar and select *Export/Import*.
@@ -85,6 +80,6 @@ If needed, follow these steps to perform bulk export/import operations for site 
 
 ## Related Topics
 
-* [Site Templates](../site-templates.md)
-* [Creating Site Templates](./creating-site-templates.md)
-* [Exporting and Importing Site Pages and Content](../exporting-importing-site-pages-and-content.md)
+- [Site Templates](../site-templates.md)
+- [Creating Site Templates](./creating-site-templates.md)
+- [Exporting and Importing Site Pages and Content](../exporting-importing-site-pages-and-content.md)

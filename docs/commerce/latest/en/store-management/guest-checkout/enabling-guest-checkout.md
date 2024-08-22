@@ -10,69 +10,57 @@ taxonomy-category-names:
 ---
 # Enabling Guest Checkout
 
-Guest checkout functionality can be enabled on a per-[channel](../channels.md) basis and allows users to submit orders without a registered account on the site.
+You can enable guest checkout on a per-[channel](./channels.md) basis and allowing users to submit orders without a registered account on the site. To enable guest checkout,
 
-To enable Guest Checkout:
+1. Open the _Global Menu_ (![Applications Menu icon](../../images/icon-applications-menu.png)) and navigate to _Commerce_ &rarr; _Channels_.
 
-1. Navigate to the _Global Menu_ &rarr; _Commerce_.
-2. Click _Channels_ under _Store Management_.
+1. Select the channel linked to your site.
 
-    ![Access Commerce settings in the Global Commerce menu.](./enabling-guest-checkout/images/04.png)
+1. Under the Orders section, enable _Guest Checkout_ toggle.
 
-3. Click on the desired channel (for example _Everest Portal_).
-4. On the _General_ tab's _Orders_ section, slide the _Guest Checkout_ toggle to Enabled.
-5. Click _Save_.
+1. Click _Save_.
 
-    ![Enable Guest Checkout](./enabling-guest-checkout/images/01.png)
+Guest customers can now add items to the cart and proceed to checkout without logging in. After clicking _Submit_, there's an option to enter their email address during the checkout process.
 
-Guest Checkout has been enabled.
-
-Guest customers can now add items to the cart and proceed to checkout without logging in. After clicking _Submit_, they will see the Email Address field during the checkout process.
-
-![The email address field appears in the initial checkout process.](./enabling-guest-checkout/images/03.png)
+![The email address field appears in the initial checkout process.](./enabling-guest-checkout/images/01.png)
 
 ## Adding the Continuing as Guest Option
 
-To allow customers to continue their checkout process as a Guest user, you can create a separate authentication page where guest customers have several checkout options.
+For customers to continue their checkout process as a guest user, you can create a separate authentication page where they have several checkout options.
 
-* They can sign in if they have an account. They can view all their account information, including past orders.
-* They can create a new account if they are a new customer.
-* They can continue as a Guest, entering only the data necessary to complete the transaction. They can register later or log in now to make future orders more easily.
+* Customers can sign in if they have an account. They can view all their account information, including past orders.
+* Customers can create a new account if they are a new to your site.
+* Customers can continue as a guest, entering only the data necessary to complete the transaction. They can register later or log in to order faster.
 
-![Customers have a choice of signing in or continuing as Guest.](./enabling-guest-checkout/images/05.png)
+![Customers have the choice to sign in or continue as a guest.](./enabling-guest-checkout/images/02.png)
 
-Follow the steps below to generate this authentication page:
+To generate this authentication page:
 
-1. Navigate to the _Global Menu_ &rarr; _Commerce_.
-1. Click _Channels_ under _Store Management_.
+1. Open the _Global Menu_ (![Applications Menu icon](../../images/icon-applications-menu.png)) and navigate to _Commerce_ &rarr; _Channels_.
 
-    ![Access Commerce settings in the Global Commerce menu.](./enabling-guest-checkout/images/04.png)
+1. Select the channel linked to your site.
 
-1. Click on the desired channel (for example _Everest Portal_).
-1. On the General tab's Health Checks section, click _Fix Issue_ next to Guest Checkout Authentication. This creates a new authentication page with an option to sign in as Guest.
+1. On the General tab's Health Checks section, click _Fix Issue_ next to Guest Checkout Authentication. This creates a new authentication page with an option to sign in or continue as a guest.
 
-    ![Access Commerce settings in the Global Commerce menu.](./enabling-guest-checkout/images/02.png)
+    ![Run the health check to add the guest authentication page.](./enabling-guest-checkout/images/03.png)
 
-1. Click Save again when finished.
+1. Click _Save_.
+
+If this authentication page doesn't exist, guests are redirected to the page with the _Checkout_ widget.
 
 ## Commerce 2.1 and Below
 
 To enable Guest Checkout:
 
 1. Navigate to the _Control Panel_ &rarr; _Commerce_ &rarr; _Channels_.
+
 1. Click on the desired channel.
+
 1. On the _General_ tab's _Orders_ section, slide the _Guest Checkout_ toggle to Enabled.
+
 1. Click _Save_.
 
-    ![Enable Guest Checkout](./enabling-guest-checkout/images/01.png)
-
-Guest Checkout has been enabled.
-
-Guest customers can now add items to the cart and proceed to checkout without logging in. After clicking _Submit_, they will see the Email Address field during the checkout process.
-
-![The email address field appears in the initial checkout process.](./enabling-guest-checkout/images/03.png)
-
-They must enter their contact information including a valid email address before continuing.
+Guest customers can now add items to the cart and proceed to checkout without logging in. After clicking _Submit_, there's an option to enter their email address during the checkout process.
 
 ## Related Topics
 

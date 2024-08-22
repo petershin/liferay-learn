@@ -16,20 +16,12 @@ taxonomy-category-names:
 ---
 # Product Types
 
-Commerce Catalogs provides four out-of-the-box Product types: Simple, Grouped, Virtual and Diagram.
+Commerce Catalogs provides four out-of-the-box product types: Simple, Grouped, Virtual, and Diagram.
 
-**[Simple Product](./product-types/creating-a-simple-product.md)**: Any physical product for which inventory is tracked.
+**[Simple product](./product-types/creating-a-simple-product.md)**: Any physical product for which inventory is tracked.
 
-**[Grouped Product](./product-types/creating-a-grouped-product.md)**: Two or more Products from the Catalog that are packaged together and sold as a single item. Grouped Products are tracked in your inventory and can contain Simple Products, other Grouped Products, or Virtual Products.
+**[Grouped product](./product-types/creating-a-grouped-product.md)**: Two or more products from the Catalog that are packaged together and sold as a single item. Grouped products are tracked in your inventory and can contain simple products, other grouped products, or virtual products.
 
-**[Virtual Products](./product-types/creating-a-virtual-product.md)**: Any non-tangible Product, such as music files, electronic publications, services, and warranties.
+**[Virtual products](./product-types/creating-a-virtual-product.md)**: Any non-tangible product, such as music files, electronic publications, services, and warranties.
 
 **[Shop by Diagram](./product-types/shop-by-diagram.md)**: These are component parts belonging to a Bill of Materials (BOM) diagram that reference products in the store.
-
-## Related Topics
-
-* [Creating a Simple Product](./product-types/creating-a-simple-product.md)
-* [Creating a Grouped Product](./product-types/creating-a-grouped-product.md)
-* [Creating a Virtual Product](./product-types/creating-a-virtual-product.md)
-* [Virtual Product Reference](./product-types/virtual-product-reference.md)
-* [Shop by Diagram](./product-types/shop-by-diagram.md)

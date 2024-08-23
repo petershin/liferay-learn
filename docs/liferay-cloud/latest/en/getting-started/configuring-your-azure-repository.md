@@ -10,7 +10,6 @@ uuid: 2bb866ab-12f8-45ee-bc20-5ea889744925
 Upon receiving a Liferay Cloud onboarding email, you're provisioned a GitHub repository hosted in the `dxpcloud` organization. This repository is a template for a team's separate private Liferay Cloud development repository and is typically removed after 10 business days. Users must:
 
 1. Transfer the provisioned repository to their own private repository.
-1. Integrate their private repository with the Jenkins (CI) service in Liferay Cloud using a Webhook.
 
 The provisioned repository will be on GitHub, but you can transfer it to a GitLab repository as of version 3.2.0 of the Jenkins service. This must be done with administrative access to the GitLab repository.
 
@@ -97,7 +96,7 @@ Lastly, set environment variables in the Jenkins service's to point to your new 
 | `LCP_CI_SCM_REPOSITORY_NAME`  | [repo_name]    |
 | `LCP_CI_SCM_TOKEN`            | [access_token] |
 
-After updating these environment variables, the Jenkins service restarts. Any pushed branches and pull requests in your new repository trigger builds.
+After updating these environment variables, the Jenkins service restarts. Jenkins checks the repository every 5 minutes and triggers builds for pushed branches.
 
 ## Verifying Builds
 
@@ -117,7 +116,7 @@ Pushed branches trigger builds that you can see or deploy from the *Builds* tab 
 
 1. Navigate to the *Builds* page in the Liferay Cloud Console.
 
-1. Verify that the build displays for the pushed branch on the *Builds* page.
+1. Verify that the build displays for the pushed branch on the *Builds* page. This might take up to 5 minutes.
 
 ## Related Topics
 

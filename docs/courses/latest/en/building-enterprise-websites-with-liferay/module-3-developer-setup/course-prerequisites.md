@@ -3,13 +3,10 @@ uuid: c098e6ef-1ddb-456e-ae41-ee4645f78334
 ---
 # Course Prerequisites
 
-<!--TASK: Add Abstract-->
-
 Throughout this course, you'll use a local Liferay environment to implement Clarity's enterprise website. Before moving forward, complete these prerequisites to prepare your system for the following exercises:
 
 * [Git](#git)
 * [Java JDK 11](#java-jdk-11)
-* [JMeter](#jmeter)
 * [Liferay CLI Tools (Optional)](#liferay-cli-tools-optional)
 
 ## Git
@@ -53,39 +50,6 @@ OpenJDK 64-Bit Server VM Zulu11.64+19-CA (build 11.0.19+7-LTS, mixed mode)
 ```
 
 If it does not, you may need to perform additional troubleshooting steps that are beyond the scope of this course. Please see the relevant Java JDK installation documentation for your system.
-
-## JMeter
-
-Later in this course, you'll use JMeter to perform load testing on Clarity's enterprise website. In preparation for this exercise, please download and extract the JMeter package:
-
-* [apache-jmeter-5.6.3.tgz](https://dlcdn.apache.org//jmeter/binaries/apache-jmeter-5.6.3.tgz)
-* [apache-jmeter-5.6.3.zip](https://dlcdn.apache.org//jmeter/binaries/apache-jmeter-5.6.3.zip)
-
-Then follow the steps for your OS to validate the JMeter installation.
-
-### Unix-Based OS
-
-1. In a terminal window, go to the extracted `apache-jmeter-5.6.3/bin/` folder.
-
-   ```bash
-   cd apache-jmeter-5.6.3/bin/
-   ```
-
-1. Run this command:
-
-   ```bash
-   ./jmeter
-   ```
-
-<!-- screenshot of running jmeter -->
-
-### Windows OS
-
-1. Go to the extracted `apache-jmeter-5.6.3/bin/` folder.
-
-1. Double-click the `ApacheJMeter.jar` file to execute it.
-
-<!-- note that windows users who's JDK install, for whatever reason, did not associate the JDK with the .jar filetype - they will need to run in their terminal application `java -jar ApacheJMeter.jar` -->
 
 ## Liferay CLI Tools (Optional)
 

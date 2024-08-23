@@ -11,6 +11,8 @@ uuid: d304bf82-c70f-4470-ac61-8d41bf737851
 "Liferay's Web Content application is a tool for creating and managing content. With it, users can define structures for different types of content and then design templates for rendering them in site pages. You can also render content items by mapping their fields to page fragments. Clarity..."
 -->
 
+<!--TASK: Add note or section that explains there are other applications besides Web Content... but that Web Content can really address most use cases.-->
+
 ## Web Content Structures
 
 Web content structures define generic content types. Each structure determines the fields available to creators when creating content items (e.g., title, body, image). Liferay includes a Basic Web Content structure out of the box, but you can create your own.

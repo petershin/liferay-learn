@@ -4,8 +4,6 @@ uuid: a4730247-c6d1-49b6-b8e5-4f2c6616e585
 # Liferay Workspace
 <!--TASK: Rename Article-->
 
-<!--TASK: Add Abstract-->
-
 Liferay Workspaces are specialized development environments that serve as the foundation for Liferay projects. They streamline the entire project lifecycle for developers by providing tools for creating, building, deploying, and testing your projects. Each workspace supports Gradle (default) and Maven, and you can seamlessly create and manage your workspace using popular IDEs like Eclipse and IntelliJ IDEA. Workspaces work hand-in-hand with Liferay's CLI tools: *Blade CLI* for managing workspaces and projects, and the *Liferay Cloud CLI* for managing Cloud services and deploying client extensions to the Cloud Platform. See [Liferay Workspaces](https://learn.liferay.com/web/guest/w/dxp/building-applications/tooling/liferay-workspace) to learn more.
 
 Typically, projects have a one-to-one relationship with a workspace and can include a wide variety of elements, such as client extensions, plugins, and fragments.

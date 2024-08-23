@@ -3,8 +3,6 @@ uuid: 5a6706c2-05f9-4d7c-8b41-a8f69516694d
 ---
 # Liferay Deployment Options
 
-<!--TASK: Add Abstract-->
-
 Before developing custom solutions with Liferay DXP, the first step is to select a deployment option. This decision determines your hosting and management strategy. Liferay offers three deployment models, each with its own advantages and considerations: Liferay SaaS, Liferay PaaS, and Liferay Self-Hosted.
 
 ![Liferay offers three deployment options: Liferay SaaS, Liferay PaaS, and Liferay Self-Hosted](./liferay-deployment-options/images/01.png)

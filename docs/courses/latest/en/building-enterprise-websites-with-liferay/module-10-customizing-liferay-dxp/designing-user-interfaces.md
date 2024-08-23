@@ -7,7 +7,7 @@ Designing user interfaces for applications is integral to creating intuitive and
 
 Here we'll explore how Clarity can implement custom designs for their international distributor application.
 
-## Forms Pages
+## Form Pages
 
 Currently, Clarity’s distributor application solution uses object layouts for creating entries. While this display is serviceable for administrative users, they have limited customization options. To create forms for end-users, you should leverage Liferay's page builder features, including form fragments. These forms can be simple, single step forms or complex multi-step forms. 
 

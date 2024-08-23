@@ -39,10 +39,9 @@ The version of each service is defined in the `image` property, within each serv
 In this example, the `image` property's value has a name ending in `5.0.0`, indicating that the service stack is at version 5.x.x.
 
 !!! tip
-    Upgrading your service stack to version `5.x.x` is recommended for access to the latest improvements. See [Upgrading Your Liferay Cloud Stack](./upgrading-your-liferay-cloud-stack.md) for steps on performing the upgrade.
+    Upgrading your service stack to version `5.x.x` is recommended for access to the latest improvements.
 
 ## Related Topics
 
 - [Liferay Cloud Project Changes in Version 5](./liferay-cloud-version-5-changes.md)
 - [Liferay Cloud Project Changes in Version 4](./liferay-cloud-project-changes-in-version-4.md)
-- [Upgrading Your Liferay Cloud Stack](./upgrading-your-liferay-cloud-stack.md)

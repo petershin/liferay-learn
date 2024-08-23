@@ -101,7 +101,6 @@ uuid: 7d1a4e73-0b50-465f-99dc-c531c3f3dd25
 [Configuration via LCP.json](./reference/configuration-via-lcp-json.md)
 [Breaking Changes](./reference/breaking-changes.md)
 [Upgrading to a High Availability Subscription](./reference/upgrading-to-a-high-availability-subscription.md)
-[Upgrading Your Liferay Cloud Stack](./reference/upgrading-your-liferay-cloud-stack.md)
 [Liferay Cloud Project Changes in Version 4](./reference/liferay-cloud-project-changes-in-version-4.md)
 :::
 ::::

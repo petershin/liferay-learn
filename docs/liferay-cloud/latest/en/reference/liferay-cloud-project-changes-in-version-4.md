@@ -12,14 +12,14 @@ Several changes are made between version 3.x and 4.x of the Liferay Cloud stack,
 
 **Contents:**
 
-* [Changes to Docker Image Definitions](#changes-to-docker-image-definitions)
-* [Project Organization Changes](#project-organization-changes)
-* [Liferay Service Changes](#liferay-service-changes)
-* [Search Service Changes](#search-service-changes)
-* [CI Service Changes](#ci-service-changes)
-* [Webserver Service Changes](#webserver-service-changes)
-* [Backup Service Changes](#backup-service-changes)
-* [Known Limitations](#known-limitations)
+- [Changes to Docker Image Definitions](#changes-to-docker-image-definitions)
+- [Project Organization Changes](#project-organization-changes)
+- [Liferay Service Changes](#liferay-service-changes)
+- [Search Service Changes](#search-service-changes)
+- [CI Service Changes](#ci-service-changes)
+- [Webserver Service Changes](#webserver-service-changes)
+- [Backup Service Changes](#backup-service-changes)
+- [Known Limitations](#known-limitations)
 
 ## Changes to Docker Image Definitions
 
@@ -41,18 +41,17 @@ All configurations within the `liferay` service now belong in an environment-spe
 
 The following table summarizes the new organization of your `liferay` service configurations:
 
-| **Files** | **Location in 3.x** | **Location in 4.x** |
-| :--- | :--- | :--- |
-| Files for deployment | lcp/liferay/deploy/[ENV]/ | liferay/configs/[ENV]/deploy/ |
-| OSGi configuration files (.cfg or .config) | lcp/liferay/config/[ENV]/ | liferay/configs/[ENV]/osgi/configs/ |
-| Other configuration overrides | lcp/liferay/config/[ENV]/ | liferay/configs/[ENV]/ |
-| Custom shell scripts | lcp/liferay/script/[ENV]/ | liferay/configs/[ENV]/scripts/ |
-| Hotfixes and patching tools | lcp/liferay/hotfix/[ENV]/ | liferay/configs/[ENV]/patching/ |
-| Licenses | lcp/liferay/license/[ENV]/ | lcp/configs/[ENV]/deploy/ |
+| **Files**                                  | **Location in 3.x**        | **Location in 4.x**                 |
+| :----------------------------------------- | :------------------------- | :---------------------------------- |
+| Files for deployment                       | lcp/liferay/deploy/[ENV]/  | liferay/configs/[ENV]/deploy/       |
+| OSGi configuration files (.cfg or .config) | lcp/liferay/config/[ENV]/  | liferay/configs/[ENV]/osgi/configs/ |
+| Other configuration overrides              | lcp/liferay/config/[ENV]/  | liferay/configs/[ENV]/              |
+| Custom shell scripts                       | lcp/liferay/script/[ENV]/  | liferay/configs/[ENV]/scripts/      |
+| Hotfixes and patching tools                | lcp/liferay/hotfix/[ENV]/  | liferay/configs/[ENV]/patching/     |
+| Licenses                                   | lcp/liferay/license/[ENV]/ | lcp/configs/[ENV]/deploy/           |
 
-```{note}
-Files within the `configs/[ENV]/` directory are copied as overrides into the `LIFERAY_HOME` directory in the Liferay container in Liferay Cloud.
-```
+!!! note
+    Files within the `configs/[ENV]/` directory are copied as overrides into the `LIFERAY_HOME` directory in the Liferay container in Liferay Cloud.
 
 Instead of directly committing hotfixes to the repository, a new CI service environment variable is now available to automatically add when deploying the Liferay service. See [Installing Hotfixes with an Environment Variable](#installing-hotfixes-with-an-environment-variable) for more information.
 
@@ -64,15 +63,14 @@ Scripts placed in `liferay/configs/[ENV]/scripts/` will now be run as the `lifer
 
 All configurations within the `search` service now belong in an environment-specific `configs` directory. See the following table for the new organization of your `search` service configuration:
 
-| **Files** | **Location in 3.x** | **Location in 4.x** |
-| :--- | :--- | :--- |
-| Elasticsearch configurations | lcp/search/config/[ENV]/ | search/configs/[ENV]/config/ |
-| Custom shell scripts | lcp/search/script/[ENV]/ | search/configs/[ENV]/scripts/ |
+| **Files**                           | **Location in 3.x**       | **Location in 4.x**           |
+| :---------------------------------- | :------------------------ | :---------------------------- |
+| Elasticsearch configurations        | lcp/search/config/[ENV]/  | search/configs/[ENV]/config/  |
+| Custom shell scripts                | lcp/search/script/[ENV]/  | search/configs/[ENV]/scripts/ |
 | Elasticsearch license (.json) files | lcp/search/license/[ENV]/ | search/configs/[ENV]/license/ |
 
-```{note}
-Files in `search/configs/[ENV]/` are copied as overrides into `usr/shared/elasticsearch/` in the Search container in Liferay Cloud. For example, configurations in `search/configs/[ENV]/config/`, such as `elasticsearch.yml`, are copied into `usr/shared/elasticsearch/config/` and override existing defaults.
-```
+!!! note
+    Files in `search/configs/[ENV]/` are copied as overrides into `usr/shared/elasticsearch/` in the Search container in Liferay Cloud. For example, configurations in `search/configs/[ENV]/config/`, such as `elasticsearch.yml`, are copied into `usr/shared/elasticsearch/config/` and override existing defaults.
 
 ### Elasticsearch Plugins
 
@@ -109,33 +107,35 @@ All configurations within the `webserver` service now belong in an environment-s
 
 See the following table for the new organization of your `webserver` service configuration:
 
-| **File** | **Location in 3.x** | **Location in 4.x** |
-| :--- | :--- | :--- |
-| Webserver configurations | lcp/webserver/config/[ENV]/ | webserver/configs/[ENV]/conf.d/ |
-| Custom scripts | lcp/webserver/script/[ENV]/ | webserver/configs/[ENV]/scripts/ |
-| Static content | lcp/webserver/deploy/[ENV]/ | webserver/configs/[ENV]/public/ |
+| **File**                 | **Location in 3.x**         | **Location in 4.x**              |
+| :----------------------- | :-------------------------- | :------------------------------- |
+| Webserver configurations | lcp/webserver/config/[ENV]/ | webserver/configs/[ENV]/conf.d/  |
+| Custom scripts           | lcp/webserver/script/[ENV]/ | webserver/configs/[ENV]/scripts/ |
+| Static content           | lcp/webserver/deploy/[ENV]/ | webserver/configs/[ENV]/public/  |
 
-```{note}
-Files in `/webserver/configs/[ENV]/` are copied as overrides into `/etc/nginx/` in the webserver container in Liferay Cloud. Files in `/webserver/configs/[ENV]/public/` are copied as overrides into `var/www/html/`.
-```
+!!! note
+    Files in `/webserver/configs/[ENV]/` are copied as overrides into `/etc/nginx/` in the webserver container in Liferay Cloud. Files in `/webserver/configs/[ENV]/public/` are copied as overrides into `var/www/html/`.
 
 ### Webserver Configuration Overrides
 
 You can customize the root location for the `webserver` service by adding a `liferay.conf` file into `webserver/configs/[ENV]/conf.d/`. This will override the default `liferay.conf` available in the `webserver` service image's container. Access the shell in the Liferay Cloud Console to see the default `liferay.conf` file as a reference when customizing the root location.
 
-```{warning}
-Do not customize the root location using a file name other than `liferay.conf`, so that this file specifically overrides the default `liferay.conf`. Otherwise, both files may exist together in the container and two root locations may be found, causing an error.
+!!! warning
+    Do not customize the root location using a file name other than `liferay.conf`, so that this file specifically overrides the default `liferay.conf`. Otherwise, both files may exist together in the container and two root locations may be found, causing an error.
 
 Other file names are instead used to define additional locations for your webserver.
+Other file names are instead used to define additional locations for your webserver.
+```
+    Other file names are instead used to define additional locations for your webserver.
 ```
 
 You can also override the default NGINX configuration by adding an `nginx.conf` file into `webserver/configs/[ENV]/`. You can use this to further define the webserver's behavior. See the [official NGINX documentation](https://docs.nginx.com/nginx/admin-guide/basic-functionality/managing-configuration-files/) for more information.
 
 ### Configuring the Public Directory
 
-If you wish to add custom static content, then place these files in `webserver/configs/[ENV]/public/`. Liferay Cloud will look for this public folder and copy all files inside of it to `/var/www/html`.
+To add custom static content, place these files in `webserver/configs/[ENV]/public/`. Liferay Cloud looks for this public folder and copies all files in it to `/var/www/html`.
 
-You will need to add additional locations within your `conf.d` folder to configure the public folder. For example, to add a `.html` file (such as `index.html`) to a new `webserver/configs/[ENV]/public/static` folder, add a unique `.conf` configuration file to `webserver/configs/[ENV]/conf.d` with the following content:
+You must add additional locations within your `conf.d` folder to configure the public folder. For example, to add a `.html` file (such as `index.html`) to a new `webserver/configs/[ENV]/public/static` folder, add a unique `.conf` configuration file to `webserver/configs/[ENV]/conf.d` with the following content:
 
 ```apacheconf
 location /static/ {
@@ -147,8 +147,8 @@ location /static/ {
 
 All configurations within the `backup` service now belong in an environment-specific `configs` directory. This mainly pertains to custom SQL scripts:
 
-| **File** | **Location in 3.x** | **Location in 4.x** |
-| :--- | :--- | :--- |
+| **File**           | **Location in 3.x**      | **Location in 4.x**           |
+| :----------------- | :----------------------- | :---------------------------- |
 | Custom SQL scripts | lcp/backup/script/[ENV]/ | backup/configs/[ENV]/scripts/ |
 
 All `.sql` scripts deployed to the `backup` service are executed automatically after a backup restore process completes, and the environment that is being restored to executes the scripts from its own `backup` service. You can also compress large `.sql` files, or multiple `.sql` files, in `.tgz`, `.gz`, or `.zip` format and place them in this directory.
@@ -161,4 +161,4 @@ You can test changes in a local environment, and then migrate them to Liferay Cl
 
 ## Related Topics
 
-* [Upgrading Your Liferay Cloud Stack](./upgrading-your-liferay-cloud-stack.md)
+- [Liferay Cloud Version 5 Changes](./liferay-cloud-version-5-changes.md)

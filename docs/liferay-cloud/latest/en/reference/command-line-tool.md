@@ -14,17 +14,17 @@ The CLI tool can be used to view and manage your Liferay Cloud services. Once in
 !!! tip
     You can run the `-v` or `--verbose` option at the end of any `lcp` command to see extra logging and information. Run the `--help` flag at the end of any `lcp` command to see the available flags you can use with it.
 
-* [Installing the CLI Tool](#installing-the-cli-tool)
-* [Upgrading the CLI Tool from Version 2 to 3](#upgrading-the-cli-tool-from-version-2-to-3)
-* [Configuring the CLI Remote](#configuring-the-cli-remote)
-* [Showing the Service Logs](#showing-the-service-logs)
-* [Changing the Number of Service Instances](#changing-the-number-of-service-instances)
-* [Listing Projects or Services](#listing-projects-or-services)
-* [Restarting a Service](#restarting-a-service)
-* [Deploying to Your Liferay Cloud Environment](#deploying-to-your-liferay-cloud-environment)
-* [Downloading Files from the Liferay Service](#downloading-files-from-the-liferay-service)
-* [Accessing a Service's Shell](#accessing-a-services-shell)
-* [Uninstalling Version 3 of the CLI Tool](#uninstalling-version-3-of-the-cli-tool)
+- [Installing the CLI Tool](#installing-the-cli-tool)
+- [Upgrading the CLI Tool from Version 2 to 3](#upgrading-the-cli-tool-from-version-2-to-3)
+- [Configuring the CLI Remote](#configuring-the-cli-remote)
+- [Showing the Service Logs](#showing-the-service-logs)
+- [Changing the Number of Service Instances](#changing-the-number-of-service-instances)
+- [Listing Projects or Services](#listing-projects-or-services)
+- [Restarting a Service](#restarting-a-service)
+- [Deploying to Your Liferay Cloud Environment](#deploying-to-your-liferay-cloud-environment)
+- [Downloading Files from the Liferay Service](#downloading-files-from-the-liferay-service)
+- [Accessing a Service's Shell](#accessing-a-services-shell)
+- [Uninstalling Version 3 of the CLI Tool](#uninstalling-version-3-of-the-cli-tool)
 
 ## Installing the CLI Tool
 
@@ -307,6 +307,5 @@ For Windows 7 and 8, go to *Control Panel* &rarr; *Add or Remove Programs*. In W
 
 ## Related Topics
 
-* [Troubleshooting Tools and Resources](../support-and-troubleshooting/troubleshooting-tools-and-resources.md)
-* [Deploying Changes Via the CLI Tool](../updating-services-in-liferay-paas/deploying-changes-via-the-cli-tool.md)
-* [Upgrading Your Liferay Cloud Stack](./upgrading-your-liferay-cloud-stack.md)
+- [Troubleshooting Tools and Resources](../support-and-troubleshooting/troubleshooting-tools-and-resources.md)
+- [Deploying Changes Via the CLI Tool](../updating-services-in-liferay-paas/deploying-changes-via-the-cli-tool.md)

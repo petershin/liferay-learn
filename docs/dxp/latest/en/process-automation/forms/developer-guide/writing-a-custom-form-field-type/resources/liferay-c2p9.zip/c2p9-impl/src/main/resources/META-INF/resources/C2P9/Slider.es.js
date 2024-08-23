@@ -2,14 +2,14 @@ import {ReactFieldBase as FieldBase} from 'dynamic-data-mapping-form-field-type'
 import React, {useState} from 'react';
 
 export default function Slider({
-								   label,
-								   name,
-								   onChange,
-								   predefinedValue,
-								   readOnly,
-								   value,
-								   ...otherProps
-							   }) {
+	label,
+	name,
+	onChange,
+	predefinedValue,
+	readOnly,
+	value,
+	...otherProps
+	}) {
 	const [currentValue, setCurrentValue] = useState(
 		value ? value : predefinedValue
 	);

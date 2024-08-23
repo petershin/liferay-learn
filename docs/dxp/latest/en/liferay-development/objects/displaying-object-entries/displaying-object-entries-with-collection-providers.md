@@ -57,16 +57,18 @@ For example, you can embed a button in a Collection Display fragment mapped to a
 
 ## Mapping Fragments to Related Object Fields
 
-From a Collection Display fragment showing the parent objects in a [one-to-many relationship](../creating-and-managing-objects/relationships/defining-object-relationships.md), you can map fragment elements to fields of the child objects. Use a Collection Display fragment for the parent object's Collection Provider, then nest another Collection Display fragment inside it, and use a [related items collection provider](../../../site-building/displaying-content/collections-and-collection-pages/collection-providers.md#related-items-collections-providers) to form the new collection based on the relationship.
+You can display [related object entries](../creating-and-managing-objects/relationships/defining-object-relationships.md) with collection providers using a hierarchy of [Collection Display fragments](../../../site-building/displaying-content/collections-and-collection-pages/displaying-collections.md#adding-a-collection-display-fragment-to-a-page). The top-level Collection Display uses the parent object's Collection Provider, while the nested Collection Display uses a special relationship collection provider for relating each parent to its child objects.
+
+The relationship collection provider is called a [Related Items Collection Provider](../../../site-building/displaying-content/collections-and-collection-pages/collection-providers.md#related-items-collection-providers) and is available for the parent object of one-to-many relationships and both objects in many-to-many relationships.
 
 ![You can display related objects in collections.](./displaying-object-entries-with-collection-providers/images/09.gif)
 
-For example, in a one-to-many relationship of Country to Cities, you can map a fragment to display city names in a Collection Display of the parent Country object.
+For example, in a one-to-many relationship of Country to Cities, you can map a fragment to the city name field in a Collection Display of the parent Country object.
 
 Key points:
 
 * Configure the top level Collection Display to use the parent object's Collection Provider.
-* Configure the nested Collection Display to use the Related Item Collection Provider generated for the one-to-many relationship.
+* Configure the nested Collection Display to use the Related Item Collection Provider generated for the relationship.
 * In both Collection Display fragments, choose the Grid display style and add fragments mapped to their respective object fields.
 
 To map fragments to a related object's fields in the Collection Display,

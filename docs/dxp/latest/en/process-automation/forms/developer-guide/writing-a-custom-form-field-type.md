@@ -132,9 +132,9 @@ The `isCustomDDMFormFieldType` is used internally. Return `true` if you're retur
    :lines: 33-36
 ```
 
-`Slider.es.js` provides the JavaScript logic for the field. Two components are defined in the file; `Main` and `Slider`. 
+`Slider.es.js` provides the JavaScript logic for the field. One component is defined in the file; `Slider`. 
 
-The import statements bring in functionality from Liferay's base form field, `dynamic-data-mapping-form-field-type`. These are called later using the declared variables `FieldBase` and `useSyncValue`.
+The import statements bring in functionality from Liferay's base form field, `dynamic-data-mapping-form-field-type`. This allows wrapping the input in the `FieldBase` component to give the custom slider style and structure consistent with Liferay's fields.
 
 ```{literalinclude} ./writing-a-custom-form-field-type/resources/liferay-c2p9.zip/c2p9-impl/src/main/resources/META-INF/resources/C2P9/Slider.es.js
    :dedent: 0
@@ -142,22 +142,22 @@ The import statements bring in functionality from Liferay's base form field, `dy
    :lines: 1-2
 ```
 
-The `const Slider =` block defines the field: it's instantiated with the parameters `name`, `onChange`, `predefinedValue`, `readOnly`, and `value`. 
+The `export default function Slider ({...` block defines the field: it's instantiated with the parameters `label` `name`, `onChange`, `predefinedValue`, `readOnly`, and `value`. 
 
 ```{literalinclude} ./writing-a-custom-form-field-type/resources/liferay-c2p9.zip/c2p9-impl/src/main/resources/META-INF/resources/C2P9/Slider.es.js
    :dedent: 0
    :language: js
-   :lines: 5-17
+   :lines: 4-15
 ```
 
 The values for these parameters, along with some others, define the HTML `<input>` tag for the form field. Importantly, the `max` and `min` values that the user can select are hard coded right now. You'll [change this later](#add-custom-settings-to-the-form-field). The field's `value` is defined using a ternary operator: if a value is entered, use it. Otherwise use the predefined value.
 
-The `Main` component is exported at the end of the file; it includes the `Slider` as a child element of the imported `FieldBase`. The `onChange` function gets the slider's position/value each time the event is detected (each time the slider is dragged to a new value).
+Whenever the user drags the slider, the `onInput` event listener fires, setting the current value of the slider and calling the `onChange` function to alert the parent component of the change.
 
 ```{literalinclude} ./writing-a-custom-form-field-type/resources/liferay-c2p9.zip/c2p9-impl/src/main/resources/META-INF/resources/C2P9/Slider.es.js
    :dedent: 0
    :language: js
-   :lines: 19-55
+   :lines: 31-34
 ```
 
 ## Add Custom Settings to the Form Field

@@ -49,38 +49,40 @@ After selecting the desired collection, use additional fragment options to deter
 
 When you select an object for a Collection Display fragment, the object is set as its mapping source. When you add fragments to the collection display, you can map their [sub-elements](../../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md) to object fields to create flexible page displays for individual object entries. This is true for collection pages as well.
 
-For example, you can embed a heading in a collection display fragment and configure it to display the name of each item in the collection. You can even map fragments to relationship fields.
+For example, you can embed a heading in a collection display fragment and configure it to display the name of each item in the collection. If working with an object on the child side of a one-to-many relationship, you can also map fragments to fields of the related parent object.
 
 ![Map fragment sub-elements in Collection Display fragments to object fields.](./displaying-object-entries-with-collection-providers/images/05.png)
 
+You can display related object entries from a relationship table with the relationship collection provider that's generated for each relationship table.
+
 ## Relationship Collection Providers
 
-You can display [related object entries](../creating-and-managing-objects/relationships/defining-object-relationships.md) with collection providers using nested [Collection Display fragments](../../../site-building/displaying-content/collections-and-collection-pages/displaying-collections.md#adding-a-collection-display-fragment-to-a-page). The top-level collection display uses the parent object's collection provider, while the nested collection display uses a special relationship collection provider for relating each parent to its child objects.
+You can display [related object entries from relationship tables](../creating-and-managing-objects/relationships/defining-object-relationships.md) with collection providers using nested [collection display fragments](../../../site-building/displaying-content/collections-and-collection-pages/displaying-collections.md#adding-a-collection-display-fragment-to-a-page). The top-level collection display uses the parent object's collection provider, while the nested collection display uses a special relationship collection provider for relating each parent to its child objects.
 
-The relationship collection provider is called a [Related Items Collection Provider](../../../site-building/displaying-content/collections-and-collection-pages/collection-providers.md#related-items-collection-providers) and is available for the parent object of one-to-many relationships and both objects in many-to-many relationships.
+The relationship collection provider is called a [Related Items Collection Provider](../../../site-building/displaying-content/collections-and-collection-pages/collection-providers.md#related-items-collection-providers) and is available for the parent object of one-to-many relationships and both objects in many-to-many relationships. This collection provider only appears in nested collection display fragments for objects with relationship tables.
 
 ![You can display related objects in collections.](./displaying-object-entries-with-collection-providers/images/09.gif)
 
-For example, in a one-to-many relationship of Country to Cities, you can map a fragment to the city name field in a Collection Display of the parent Country object.
+For example, with a one-to-many relationship of Country to Cities, you can show countries with their child cities by mapping a fragment to the city name field in a nested collection display.
 
-Key points:
+This is the general procedure for configuring nested collection display fragments:
 
-* Configure the top level Collection Display to use the parent object's Collection Provider.
-* Configure the nested Collection Display to use the Related Item Collection Provider generated for the relationship.
-* In both Collection Display fragments, choose the Grid display style and add fragments mapped to their respective object fields.
+* Configure the top level collection display to use the parent object's collection provider.
+* Configure the nested collection display to use the related item collection provider generated for the relationship table data.
+* In both collection display fragments, choose the grid display style and add fragments mapped to their respective object fields.
 
-To map fragments to a related object's fields in the Collection Display,
+To map fragments to a related object's fields in the collection display,
 
-1. Use the Object's collection provider with a Collection Display fragment.
+1. Use the object's collection provider with a collection display fragment.
 
-1. Embed another Collection Display fragment within the initial Collection Display.
+1. Embed another collection display fragment within the initial collection display, as its collection item.
 
    !!! tip
        Using the *Browser* tab in the page edit menu can help you position the fragment more precisely within the page hierarchy.
 
    ![Use the Browser tab to help properly embed the Collection Display fragment.](./displaying-object-entries-with-collection-providers/images/06.png)
 
-1. Click *Select Collection* in the new Collection Display fragment's configuration options.
+1. Click *Select Collection* in the new collection display fragment's configuration options.
 
 1. Click the *Related Items Collection Providers* tab.
 
@@ -88,7 +90,7 @@ To map fragments to a related object's fields in the Collection Display,
 
    ![Select the relationship that you created with between the displayed object and another object type.](./displaying-object-entries-with-collection-providers/images/07.png)
 
-Now you can embed fragments in the new Collection Display and map them to fields in the related object.
+Now you can embed fragments in the new collection display and map them to fields in the related object.
 
 ![Map fragment sub-elements to fields in parent objects.](./displaying-object-entries-with-collection-providers/images/08.png)
 

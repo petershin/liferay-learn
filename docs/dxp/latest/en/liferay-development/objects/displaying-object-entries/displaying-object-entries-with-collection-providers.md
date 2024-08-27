@@ -47,17 +47,15 @@ When you publish an object definition, Liferay creates a [collection provider](.
 
 After selecting the desired collection, use additional fragment options to determine how Object entries appear, including *List Style* and *Pagination*.
 
-## Mapping Fragments to Object Fields
+When you select an object for a Collection Display fragment, the object is set as its mapping source. When you add fragments to the collection display, you can map their [sub-elements](../../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md) to object fields to create flexible page displays for individual object entries. This is true for collection pages as well.
 
-When you select an object for a Collection Display fragment, the object is set as its mapping source. Now you can add fragments to it and map their [sub-elements](../../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md) to object fields to create flexible page displays for individual object entries. This is true for collection pages as well.
-
-For example, you can embed a button in a Collection Display fragment mapped to an object and then configure the button's link to display the name of each item in the collection.
+For example, you can embed a heading in a collection display fragment and configure it to display the name of each item in the collection. You can even map fragments to relationship fields.
 
 ![Map fragment sub-elements in Collection Display fragments to object fields.](./displaying-object-entries-with-collection-providers/images/05.png)
 
-## Mapping Fragments to Related Object Fields
+## Relationship Collection Providers
 
-You can display [related object entries](../creating-and-managing-objects/relationships/defining-object-relationships.md) with collection providers using a hierarchy of [Collection Display fragments](../../../site-building/displaying-content/collections-and-collection-pages/displaying-collections.md#adding-a-collection-display-fragment-to-a-page). The top-level Collection Display uses the parent object's Collection Provider, while the nested Collection Display uses a special relationship collection provider for relating each parent to its child objects.
+You can display [related object entries](../creating-and-managing-objects/relationships/defining-object-relationships.md) with collection providers using nested [Collection Display fragments](../../../site-building/displaying-content/collections-and-collection-pages/displaying-collections.md#adding-a-collection-display-fragment-to-a-page). The top-level collection display uses the parent object's collection provider, while the nested collection display uses a special relationship collection provider for relating each parent to its child objects.
 
 The relationship collection provider is called a [Related Items Collection Provider](../../../site-building/displaying-content/collections-and-collection-pages/collection-providers.md#related-items-collection-providers) and is available for the parent object of one-to-many relationships and both objects in many-to-many relationships.
 

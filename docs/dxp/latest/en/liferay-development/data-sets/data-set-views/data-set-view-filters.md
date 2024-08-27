@@ -30,7 +30,7 @@ While managing data set views, you can define pre-applied filters to be used in 
 
 ## Client Extension Filter
 
-Use a [custom filter client extension](../../customizing-liferays-look-and-feel/using-a-custom-filter-client-extension.md) or deploy a [client extension from your workspace](../../client-extensions/working-with-client-extensions.md) to customize the filter experience and add new types of filters to your data set view.
+Use a [custom filter client extension](../../customizing-liferays-look-and-feel/using-a-frontend-data-set-filter-client-extension.md) or deploy a [client extension from your workspace](../../client-extensions/working-with-client-extensions.md) to customize the filter experience and add new types of filters to your data set view.
 
 ![You must have a Frontend Data Set Filter client extension to create the client extension filter.](./data-set-view-filters/images/01.png)
 

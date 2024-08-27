@@ -5,7 +5,7 @@ toc:
   - ./customizing-liferays-look-and-feel/using-a-theme-css-client-extension.md
   - ./customizing-liferays-look-and-feel/using-a-javascript-client-extension.md
   - ./customizing-liferays-look-and-feel/using-a-theme-spritemap-client-extension.md
-  - ./customizing-liferays-look-and-feel/using-a-custom-filter-client-extension.md
+  - ./customizing-liferays-look-and-feel/using-a-frontend-data-set-filter-client-extension.md
   - ./customizing-liferays-look-and-feel/using-an-editor-config-contributor-client-extension.md
   - ./customizing-liferays-look-and-feel/using-a-frontend-data-set-cell-renderer-client-extension.md
   - ./customizing-liferays-look-and-feel/client-extensions-ui-reference.md
@@ -109,11 +109,17 @@ type: fdsCellRenderer
 
 See [Using a Frontend Data Set Cell Renderer Client Extension](./customizing-liferays-look-and-feel/using-a-frontend-data-set-cell-renderer-client-extension.md) to get started.
 
-## Custom Filter Client Extensions
+## Frontend Data Set Filter Client Extensions
 
 {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+`
 
-[Custom filter client extensions](./customizing-liferays-look-and-feel/using-a-custom-filter-client-extension.md) define JavaScript functions for creating and integrating customizable filter interfaces. These extensions can enhance the user experience by providing tailored filtering capabilities based on OData queries.
+[Frontend data set filter client extensions](./customizing-liferays-look-and-feel/using-a-frontend-data-set-filter-client-extension.md) define JavaScript functions for creating and integrating customizable filter interfaces. These extensions can enhance the user experience by providing tailored filtering capabilities based on OData queries.
+
+Specify a frontend data set cell renderer client extension in your `client-extension.yaml` file:
+
+```yaml
+type: fdsFilter
+```
 
 ## Themes (PaaS or self-hosted only)
 

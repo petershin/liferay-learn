@@ -7,11 +7,11 @@ taxonomy-category-names:
 - Liferay SaaS
 ---
 
-# Using a Custom Filter Client Extension
+# Using a Frontend Data Set Filter Client Extension
 
 {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+`
 
-Custom filter client extensions define JavaScript functions for creating customizable filter interfaces. These extensions can be added to [data set views](../data-sets/data-set-views/data-set-view-filters.md), enhancing the user experience by providing tailored filtering capabilities.
+Frontend data set filter client extensions define JavaScript functions for creating customizable filter interfaces. Add these extensions to [data set views](../data-sets/data-set-views/data-set-view-filters.md) to enhance the user experience by providing tailored filtering capabilities.
 
 ## Prerequisites
 
@@ -30,11 +30,11 @@ Custom filter client extensions define JavaScript functions for creating customi
    unzip com.liferay.sample.workspace-latest.zip
    ```
 
-Now you have the tools to deploy your first custom filter client extension.
+Now you have the tools to deploy your first custom filter via a client extension.
 
-## Examine and Modify the Custom Filter Client Extension
+## Examine and Modify the Custom Filter
 
-The custom filter client extension is in the sample workspace's `client-extensions/liferay-sample-fds-filter/` folder. It's defined in the `client-extension.yaml` file:
+The frontend data set filter client extension is in the sample workspace's `client-extensions/liferay-sample-fds-filter/` folder. It's defined in the `client-extension.yaml` file:
 
 ```yaml
 liferay-sample-fds-filter:
@@ -129,7 +129,7 @@ STARTED liferaysamplecustomelement1_7.4.13
 
 Now that your client extension is deployed, check if the filter is working properly.
 
-## Add the Custom Filter Client Extension to a Data Set View
+## Add the Custom Filter to a Data Set View
 
 {bdg-link-primary}`[Beta Feature](../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
 
@@ -144,7 +144,7 @@ Start by setting up the environment:
 
    This populates the database with products to be displayed in the data set view.
 
-   ![Create a site based on the Minium template.](./using-a-custom-filter-client-extension/images/01.png)
+   ![Create a site based on the Minium template.](./using-a-frontend-data-set-filter-client-extension/images/01.png)
 
 Create the data set and the data set view:
 
@@ -157,7 +157,7 @@ Create the data set and the data set view:
    | REST Schema      | `Product`                               |
    | REST Endpoint    | `/v1.0/products`                        |
 
-   ![Create a data set to display products.](./using-a-custom-filter-client-extension/images/02.png)
+   ![Create a data set to display products.](./using-a-frontend-data-set-filter-client-extension/images/02.png)
 
 1. [Create a Data Set View](../data-sets/data-set-views.md#creating-data-set-views), name it `Products Data Set View`, and click *Save*.
 
@@ -171,7 +171,7 @@ Create the data set and the data set view:
 
    This adds the three fields to the table visualization mode displayed in the data set view.
 
-   ![Add the `catalogId`, `id`, and `name` fields to the table visualization mode.](./using-a-custom-filter-client-extension/images/03.png)
+   ![Add the `catalogId`, `id`, and `name` fields to the table visualization mode.](./using-a-frontend-data-set-filter-client-extension/images/03.png)
 
 1. Select the *Filters* tab.
 
@@ -183,10 +183,10 @@ Create the data set and the data set view:
    | Filter By        | `name`                      |
    | Client Extension | `Liferay Sample FDS Filter` |
 
-   ![Add the Liferay Sample FDS Filter client extension to the data set view.](./using-a-custom-filter-client-extension/images/04.png)
+   ![Add the Liferay Sample FDS Filter client extension to the data set view.](./using-a-frontend-data-set-filter-client-extension/images/04.png)
 
    !!! tip
-       To ensure the filter works across different "Filter By" fields, the custom filter client extension should be coded to handle various field names dynamically. Since the selected field in "Filter By" is accessible from the code, the filter can be applied generically, eliminating the need to create separate client extensions for each field.
+       To ensure the filter works across different "Filter By" fields, the frontend data set filter client extension should be coded to handle various field names dynamically. Since the selected field in "Filter By" is accessible from the code, the filter can be applied generically, eliminating the need to create separate client extensions for each field.
 
 Add the data set view to a content page:
 
@@ -196,7 +196,7 @@ Add the data set view to a content page:
 
 1. Click on your fragment. In the General tab on your right, there is a field where you can select a Data Set View. Click *Add* (![Add icon](../../images/icon-add-app.png)) and select the *Products Data Set View*.
 
-   ![Select the Products Data Set View and display it using the Data Set fragment.](./using-a-custom-filter-client-extension/images/05.png)
+   ![Select the Products Data Set View and display it using the Data Set fragment.](./using-a-frontend-data-set-filter-client-extension/images/05.png)
 
 1. Publish the page.
 
@@ -210,9 +210,9 @@ Navigate to the page to test the filter:
 
    The table displays only the products named *Piston*.
 
-   ![Use OData queries to filter products by name.](./using-a-custom-filter-client-extension/images/06.png)
+   ![Use OData queries to filter products by name.](./using-a-frontend-data-set-filter-client-extension/images/06.png)
 
-You have successfully deployed and used a custom filter client extension in Liferay. Next, try [using data set view actions](../data-sets/data-set-views/using-data-set-view-actions.md) and customize your data set even further.
+You have successfully deployed and used a frontend data set filter client extension in Liferay. Next, try [using data set view actions](../data-sets/data-set-views/using-data-set-view-actions.md) and customize your data set even further.
 
 ## Related Topics
 

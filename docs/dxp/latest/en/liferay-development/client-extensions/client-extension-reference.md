@@ -31,7 +31,7 @@ You can find code examples for all types of client extensions in [liferay-portal
 
 - [Theme Sprite Map Client Extension](../customizing-liferays-look-and-feel/using-a-theme-spritemap-client-extension.md)
 
-- [Frontend Data Set Filter Client Extension](../customizing-liferays-look-and-feel/using-a-custom-filter-client-extension.md)
+- [Frontend Data Set Filter Client Extension](../customizing-liferays-look-and-feel/using-a-frontend-data-set-filter-client-extension.md)
 
 - [Frontend Data Set Cell Renderer Client Extension](../customizing-liferays-look-and-feel/using-a-frontend-data-set-cell-renderer-client-extension.md)
 

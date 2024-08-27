@@ -20,14 +20,20 @@ Liferay DXP's Staging tool provides ways to manage available application data an
 As part of Staging configuration, you can select which application data and content types are staged. If staged, the selected data and content is managed by your Staging environment, along with all contained entities, and it may not be possible to edit them directly in Live.
 
 ![Select which application data and content types are staged.](./managing-data-and-content-types-in-staging/images/01.png)
-When working with Staging, you must think about the applications you're using on your Site and whether they're appropriate to be staged:
 
-- Unstaged data only exists in the Site's live environment. Staged data exists in both environments.
-- Collaborative applications, such as Blogs, Message Boards, and Wikis should not be staged, because posts would not appear on the live Site until you publish.
-- You can only stage Site-scoped content.
-- Page-scoped data can only be staged on published Pages; its data is published with the Page.
-- If you have disabled/removed an application from your Site but it's still selected in your Staging configuration, it's still published and may appear in aggregation apps like Asset Publisher.
-- Asset Publisher on the Staged Site cannot access data from unstaged apps, because their data exists only on the Live Site. If your Asset Publisher's configuration shows data from both staged and unstaged apps, it won't look the same on both your Staged and your Live Sites.
+When working with Staging, you must think about the applications you're using on your site and whether they're appropriate to be staged:
+
+- Unstaged data only exists in the site's Live environment. Staged data exists in both environments.
+
+- Collaborative applications, such as Blogs, Message Boards, and Wikis should not be staged, because posts would not appear on the live site until you publish.
+
+- You can only stage site-scoped content.
+
+- Page-scoped data can only be staged on published pages; its data is published with the page.
+
+- If you have disabled/removed an application from your site but it's still selected in your Staging configuration, it's still published and may appear in aggregation apps like Asset Publisher.
+
+- Asset Publisher on the staged site cannot access data from unstaged apps, because their data exists only on the live site. If your Asset Publisher configuration shows data from both staged and unstaged apps, it doesn't look the same on both your staged and live sites.
 
 **Content Origin for Staged and Unstaged Applications**
 
@@ -42,7 +48,7 @@ When working with Staging, you must think about the applications you're using on
 \* *Only published when the Page is published*
 
 !!! important
-    After configuration, users can't change whether or not an application data or content type is staged. This is because staging and unstaging this data and content could cause inconsistencies between Staging and Live environments. To change these settings, you must turn staging off and re-enable it with your new configuration.
+    After configuration, users can't change if an application data or content type is staged. This is because staging and unstaging this data and content could cause inconsistencies between Staging and Live environments. To change these settings, you must turn staging off and re-enable it with your new configuration.
 
 
 ## Publishing Data and Content Types
@@ -56,6 +62,10 @@ Here, you can exclude some data and content types during publishing or export to
 !!! warning
     Selecting *All* or *Date Range* can make the publishing process take a long time, especially if you have many versions. Instead, publish small incremental changes to avoid large publishing processes that can take a long time to execute.
 
+Click *Change* next to each content type to manage the items and settings included for that type, such as *version history*, *vocabularies*, *previews and thumbnails*, and the *referenced content behavior*
+
+   Choose *Include Always* to always include the referenced content, or *Include If Modified* to include it only when it has been modified.
+
 ### Version History
 
 Web content tends to be updated frequently, which can result in a high number of versions and lengthy publishing times. You can choose to not publish the *Version History*. If you disable this, only the last approved version of each web content article is published to Live. This can significantly speed up the publishing process.
@@ -64,22 +74,22 @@ By default, Version History is selected for publishing, so you must manually dis
 
 ### Previews and Thumbnails
 
-Previews and thumbnails are generated automatically for documents. However, if your Site contains a large number of images or documents, it may be best to disable this feature to increase your publishing speed and limit the amount of disk space used.
+Previews and thumbnails are generated automatically for documents. However, if your site contains a large number of images or documents, it may be best to disable this feature to increase your publishing speed and limit the amount of disk space used.
 
-Whether you'll want to publish file previews and thumbnails depends on your environment. Publishing them is a heavy operation, and if you're using remote staging, you must also transfer the LAR file over the network. If you decide to generate previews on the Live Site, understand that this could take some time, since it's a CPU- intensive operation.
+Whether you want to publish file previews and thumbnails depends on your environment. Publishing them is a heavy operation, and if you're using remote staging, you must also transfer the LAR file over the network. If you decide to generate previews on the live site, understand that this could take some time, since it's a CPU-intensive operation.
 
 ### Vocabularies
 
-When working within a Site, you can select vocabularies from both the current Site as well as the global Site. While this doesn't pose an issue when creating content, it can cause issues when publishing.
+When working within a site, you can select vocabularies from both the current site as well as the global site. While this doesn't pose an issue when creating content, it can cause issues when publishing.
 
-For environments that use both global and local vocabularies, note that global vocabularies must be published to the Live Site through global Site Staging. One way to avoid vocabulary confusion is to keep all vocabularies local or global. If both must be used, you can resolve the issue by ensuring that dependencies (e.g., categories and vocabularies) are published before publishing the Site that depends on them, whether the dependencies are local or global.
+For environments that use both global and local vocabularies, note that global vocabularies must be published to the live site through global site staging. One way to avoid vocabulary confusion is to keep all vocabularies local or global. If both must be used, you can resolve the issue by ensuring that dependencies (e.g., categories and vocabularies) are published before publishing the site that depends on them, whether the dependencies are local or global.
 
 !!! note
-    Assets like tags, categories, structures, templates, widget templates, document types, and dynamic data lists can also be shared by a parent to its child Sites. In this case, ensure that the parent's dependencies are published before the Site in question.
+    Assets like tags, categories, structures, templates, widget templates, document types, and dynamic data lists can also be shared by a parent to its child sites. In this case, ensure that the parent's dependencies are published before the site in question.
 
 ### Deletions
 
-The Staging framework gathers deletions (including trashed entities) in a Site. These deletions can be published to clean up the Live Site. If you plan to process it later, or if it's not a problem to have lingering data on Live, this can be turned off as well to save execution time during the process.
+The Staging framework gathers deletions (including trashed entities) in a site. These deletions can be published to clean up the live site. If you plan to process it later, or if it's not a problem to have lingering data on Live, this can be turned off as well to save execution time during the process.
 
 ## Related Topics
 

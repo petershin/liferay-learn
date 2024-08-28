@@ -55,7 +55,7 @@ This statement captures the unique values that Liferay has demonstrated for year
 
 At times, this customization ability has been both a benefit and a challenge. It provides complete flexibility, but can create a burden for teams tasked with maintaining and upgrading the platform.
 
-Recently, Liferay has focused on developing the platform with a wide range of out-of-the-box features, low-code capabilities, and ways to extend the platform without customizing the core. With these featrues the platform can be tailored to customers’ unique and complex needs, to create any solution or application.
+Recently, Liferay has focused on developing the platform with a wide range of out-of-the-box features, low-code capabilities, and ways to extend the platform without customizing the core. With these features the platform can be tailored to customers’ unique and complex needs, to create any solution or application.
 
 Or in other words, to deliver solutions that customize the digital experience, not the platform. Liferay is well positioned to do that because of our organic innovation, open source portal heritage and our unparalleled ease of customization.
 

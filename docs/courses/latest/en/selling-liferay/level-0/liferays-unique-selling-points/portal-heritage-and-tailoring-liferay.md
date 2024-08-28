@@ -14,10 +14,10 @@ visibility:
 
 The DXP landscape consists of a majority of vendors who started out as content management systems providers and others who came from a CRM or ERP background. Liferay differs by having a strong horizontal portal heritage.
 
-Liferay’s portal heritage gives us a unique perspective: 
+Liferay’s portal heritage gives us a unique perspective:
 
 * Strong Integration
-* Customer relationship focus
+* Personalization & Authentication
 * Secure data handling
 * Digital agility
 
@@ -34,9 +34,9 @@ Portal-heritage platforms like Liferay excel at integrating backend and legacy s
 
 For example, customer data locked in a CRM or company’s marketing automation tool can be unified and shared easily through a portal-heritage DXP. This saves businesses and customers time and effort and helps companies better understand and support their target audience.
 
-## Long-term Customer Relationships Focus
+## Long-term Personalization & Authentication
 
-Portals connect businesses to target audiences through secure interfaces. Personalization provides users with the content and capabilities that they need. CMS technology traditionally focuses on serving content to anonymous prospects and can struggle with these authenticated experiences.
+While traditional CMS technology focuses on serving content to anonymous prospects, portals are designed to foster personalized connections between businesses and their target audiences. By providing secure interfaces and tailored experiences, portals enable companies to build lasting relationships and meet the specific needs of each individual user.
 
 ## Secure Data Handling Capabilities
 
@@ -44,11 +44,11 @@ Unlike CMSs, portals support large numbers of users and flows of information, of
 
 ## Digital Agility
 
-As highlighted by Gartner, portals can be used as a common architectural framework. Companies can build a website and quickly reuse the framework they have created to build more touchpoints. This can ensure that all their digital presences are uniform in functionality and appearance and saves time and money by avoiding a rebuild from scratch. 
+As highlighted by Gartner, portals can be used as a common architectural framework. Companies can build a website and quickly reuse the framework they have created to build more touchpoints. This can ensure that all their digital presences are uniform in functionality and appearance and saves time and money by avoiding a rebuild from scratch.
 
 By turning a portal-heritage digital experience platform into a solutions factory, customers can quickly advance their digital strategies while maintaining control over the quality of individual experiences.
 
-## Easy to Customize
+## Unparalleled Customizability
 
 Liferay is recognized as the most flexible and extensible DXP available.
 

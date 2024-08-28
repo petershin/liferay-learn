@@ -50,16 +50,20 @@ Community contribution helps Liferay with
 
 Open source collaboration extends and amplifies the capabilities of Liferay’s own employees.
 
-## Solving Issues
+## Power of Community
 
-Early adopters in the community help our QA department identify issues faster. Sometimes early adopters provide fixes to issues, which benefits all users of the platform, whether community users, or enterprise subscribers.
+Early adopters in the community help our Product Team identify issues faster. Global community fuels ideas, helps identify issues faster, and amplifies the capabilities of Liferay employees.
 
-## Product Ideas
+## Enterprise-grade Open Source
 
-Liferay’s documentation is improved through community blog posts along with capability discussions in message boards. Community feature requests and product ideas also extend the reach of our own Product Management department and validate existing or under-development features.
+Liferay’s documentation is improved through community blog posts along with capability discussions in message boards. Subscription services sold by Liferay for the free DXP software provide support and security enterprise customers need.
 
-## Security
+## Avoid Vendor Lock-in
 
-Liferay DXP’s source code is publicly available. This provides greater transparency to our customers compared to just taking our word that it is secure. Customers, or 3rd party experts employed by them, can examine the source code themselves and can be more confident than they could with a proprietary solution.
+Liferay DXP’s source code is publicly available. This provides greater transparency, security and autonomy to our customers compared to just taking our word that it is secure. Customers, or 3rd party experts employed by them, can examine the source code themselves and can be more confident than they could with a proprietary solution.
 
-Next: [Liferay’s portal heritage and evolution in extension approaches](./portal-heritage-and-tailoring-liferay.md). 
+## Result
+
+Liferay's deeply rooted open source culture ensures autonomy, transparency and cost-effectiveness.
+
+Next: [Liferay’s portal heritage and evolution in extension approaches](./portal-heritage-and-tailoring-liferay.md).

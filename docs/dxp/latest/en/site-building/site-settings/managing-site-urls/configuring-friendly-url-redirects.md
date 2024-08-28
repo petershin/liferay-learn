@@ -17,7 +17,7 @@ When you update friendly URLs for pages, blogs, and documents, Liferay automatic
 By default friendly URL redirects are temporary (302), but you can configure them to be permanent (301) if needed. You can also determine whether Liferay displays a message when users are redirected to a different friendly URL.
 
 !!! warning
-    Make sure your URLs don't have a trailing slash (e.g instead of `https://example.com/product/item1/`, use `https://example.com/product/item1`). 
+    Make sure your URLs don't have a trailing slash. For example, instead of `https://example.com/product/item1/`, use `https://example.com/product/item1`. 
 
 To configure friendly URL redirects,
 

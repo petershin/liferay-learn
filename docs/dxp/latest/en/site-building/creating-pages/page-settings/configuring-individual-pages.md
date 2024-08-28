@@ -47,7 +47,7 @@ Use the name field to set a page's title used for site navigation and displayed 
 Use the Friendly URL field to set a new URL for a page, or click the *Restore* icon (![Friendly URL Restore icon](../../../images/icon-restore.png)) to see and restore a previously used URL. See [Configuring Your Page's Friendly URL](./configuring-your-pages-friendly-url.md) for more information.
 
 !!! warning
-    Make sure your URLs don't have a trailing slash (e.g instead of `https://example.com/product/item1/`, use `https://example.com/product/item1`). 
+    Make sure your URLs don't have a trailing slash. For example, instead of `https://example.com/product/item1/`, use `https://example.com/product/item1`. 
 
 Use *Query String* to set default parameters for a page when no other parameters are specified. Query strings offer significant advantages within web content templates. Additionally, you can control page link behavior by using the Target Type field, which has attributes like opening the link in a new tab or within a specific frame.
 

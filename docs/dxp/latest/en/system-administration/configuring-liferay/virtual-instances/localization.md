@@ -26,9 +26,9 @@ The Locale Prepend Friendly URL Style configuration controls how locale prefixes
 
 1. Under Virtual Instance Scope, select the *Locale Prepend Friendly URL Style* option on the left and choose one of these options:
 
-   **Locale is automatically prepended to a URL when the requested locale is not the default user locale** (default): Adds the locale prefix to the URL only if the requested locale differs from the user's preferred locale, as set in their profile. If the requested locale matches the user's preferred locale, no locale prefix is added.
+   **Locale is automatically prepended to a URL when the requested locale is not the default user locale** (default): Adds the locale prefix to the URL only if the requested locale differs from the preferred locale set in the logged-in user's profile. If the requested locale matches the user's preferred locale, no locale prefix is added.
 
-   **Locale is automatically prepended to a URL when the requested locale is not the default locale**: Adds the locale prefix to the URL whenever the requested locale differs from th every URL**: Adds the locale prefix to all URLs, regardless of the en if the user's preferred locale matches the requested locale, the locale prefix is added if that locale is different from the site's default.
+   **Locale is automatically prepended to a URL when the requested locale is not the default locale**: Adds the locale prefix to the URL whenever the requested locale differs from the site's default locale, regardless of the user's preferred locale. Even if the user's preferred locale matches the requested locale, the locale prefix is added if that locale is different from the site's default.
 
    **Locale is not automatically prepended to a URL**: The URL does not include a locale prefix, regardless of the user's preferred locale or the site's default locale. The URL structure remains consistent without any locale information.
 

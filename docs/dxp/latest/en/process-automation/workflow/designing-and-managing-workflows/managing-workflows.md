@@ -49,6 +49,17 @@ To upload a new definition:
 
 The newly added definition is ready to be used as a workflow process.
 
+## Task Assignee Notifications and Site Membership
+
+{bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA132+`
+
+When workflow tasks are assigned to site roles and assignees are notified, by default role users in any parent sites are notified, along with child site role users. In some situations this can lead to parent site members receiving notifications for workflow tasks they cannot resolve, because they are not members of the child site. To make notifications follow Liferay's site permission inheritance and only notify site roles that have explicit access to the content and site in question,
+
+1. Navigate to Control Panel &rarr; System Settings &rarr; Workflow &rarr; Workflow Definition.
+1. Check the box for the setting _Notifications must honor site membership rules._
+
+![You can make workflow notifications follow site membership rules.](./managing-workflows/images/07.png)
+
 ## Editing a Workflow Definition
 
 To edit a workflow:

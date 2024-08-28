@@ -18,7 +18,7 @@ By default, Liferay uses [PDFBox](https://pdfbox.apache.org) to generate preview
 However, since PDFBox only supports a limited number of file types, Liferay also provides integration with third-party services to support additional file types. These services can be used to generate high quality file previews more quickly for more of your files.
 
 !!! important
-    To use third-party services to generate previews, you must first install them on the server running your Liferay instance. 
+    To use third-party services to generate previews, you must first install them on the server running your Liferay instance.
 
 Liferay currently supports integration with these services:
 
@@ -43,9 +43,9 @@ Once you've enabled third-party services, Liferay automatically uses them to gen
 
 To generate them for image files, you can use Adaptive Media. See [Managing Image Resolutions](../publishing-and-sharing/using-adaptive-media/managing-image-resolutions.md) for more information.
 
-For audio, video, PDF, and OpenOffice files, you can regenerate previews and thumbnails via the Server Administration application: 
+For audio, video, PDF, and OpenOffice files, you can regenerate previews and thumbnails via the Server Administration application:
 
-1. Open the *Global Menu* ( ![Global Menu](../../../images/icon-applications-menu.png) ), go to the *Control Panel* tab, and click *System Administration*.
+1. Open the *Global Menu* ( ![Global Menu](../../../images/icon-applications-menu.png) ), go to the *Control Panel* tab, and click *Server Administration*.
 
 1. Go to the *Resources* tab.
 

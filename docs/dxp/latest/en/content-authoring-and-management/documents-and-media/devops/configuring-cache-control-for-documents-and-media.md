@@ -37,7 +37,7 @@ Follow these steps to configure caching for your Liferay system or instance:
 1. (Optional) Enter a list of MIME types to exclude from caching (e.g., `application/pdf`, `image/jpeg`, `video/mp4`).
 
    !!! tip
-       If you have MIME types that are frequently updated, you can disable caching for that type to ensure the latest version of the file is displayed to users.
+       If you have MIME types that are frequently updated, you can disable caching for that type to ensure the latest version of the file appears to users.
 
 1. Click *Save*.
 

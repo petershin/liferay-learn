@@ -8,13 +8,13 @@ taxonomy-category-names:
 - Liferay PaaS
 uuid: 1c2204f6-6176-4b25-96f7-357d793a489a
 ---
+
 # Enabling FFmpeg for Audio and Video Previews
 
 Documents and Media provides integration with the [FFmpeg](http://ffmpeg.org/) multimedia framework for generating audio and video file previews. To use this integration, you must first install FFmpeg on your server. If you're working in a clustered environment, FFmpeg must be installed on each node.
 
-```{note}
-Previously, Liferay used Xuggler to generate video and audio previews. However, the Xuggler library is currently unmaintained. As of Liferay 7.4, users are advised to use FFmpeg for generating previews.
-```
+!!! note
+    Previously, Liferay used Xuggler to generate video and audio previews. However, the Xuggler library is currently unmaintained. As of Liferay 7.4, users are advised to use FFmpeg for generating previews.
 
 Once installed, follow these steps to configure Documents and Media to use FFmpeg:
 
@@ -34,5 +34,5 @@ Once configured, audio and video previews are automatically generated for audio 
 
 ## Related Topics
 
-* [Managing Files](../uploading-and-managing/managing-files.md)
-* [Configuring Documents and Media Previews](./configuring-documents-and-media-previews.md)
+- [Managing Files](../uploading-and-managing/managing-files.md)
+- [Configuring Documents and Media Previews](./configuring-documents-and-media-previews.md)

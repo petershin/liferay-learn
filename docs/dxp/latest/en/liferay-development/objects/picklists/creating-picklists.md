@@ -39,9 +39,6 @@ To create a picklist,
 
    ![Enter a name and key, and then click Save.](./creating-picklists/images/03.png)
 
-   !!! note
-       Beginning in Liferay DXP 2024.Q3/Portal 7.4 GA132, you can capitalize picklist keys. This allows you to ...
-
 1. Click *Save*. The picklist updates immediately with the new item and generates an external reference code (ERC) for it.
 
    You can click the list item to localize its name or edit its ERC, but you cannot change its key. You can remove items at any time.

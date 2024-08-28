@@ -79,7 +79,16 @@ You can deactivate an action from its Basic Info tab. Toggle the *Active* switch
 
 ![Toggle the Active switch to deactivate the action.](./defining-object-actions/images/05.png)
 
+## Sending Translated Email Notifications to Guest Users
+
+{bdg-secondary}`Liferay DXP 2024.Q3+/Portal  7.4 GA132+`
+
+By default, [email notification templates](../../../../process-automation/notifications/creating-notification-templates.md) are sent to guest users in the instance's language. To instead let Liferay detect the user's preferred language and send email notifications in that language, enable *Send email notifications in the guest user's preferred language* while configuring the object action. When enabled, the language the guest user submits object entries in is also the language used in [email notification templates](../../../../process-automation/notifications/creating-notification-templates.md). If no translation is available, the instance language is used as a fallback.
+
+![Send email notifications to guest users in their preferred language.](./defining-object-actions/images/06.png)
+
 ## Related Topics
 
 * [Creating Objects](../creating-objects.md)
 * [Understanding Action Types](./understanding-action-types.md)
+* [Creating Notification Templates](../../../../process-automation/notifications/creating-notification-templates.md)

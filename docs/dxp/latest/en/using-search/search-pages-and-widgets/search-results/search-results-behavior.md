@@ -136,7 +136,7 @@ In Liferay 7.4 GA25+/U25+, you can also search for widget pages (by title only).
 
 ## Returning Objects in Search Results
 
-Liferay 7.4 includes [Liferay Objects](../../../liferay-development/objects.md), a GUI-driven application-building framework. Fields of each Object's definition can be declared searchable; Object Entries (the records submitted by the application's users) [can then be queried](../../getting-started/searching-for-content.md#searching-for-liferay-objects) and returned in the Search Results widget.
+You can configure each [object definition](../../../liferay-development/objects.md) to be searchable with the Enable Indexed Search setting in its Details tab. If enabled, you can also configure [each field](../../../liferay-development/objects/creating-and-managing-objects/fields/adding-fields-to-objects.md) as searchable; object entries [can then be queried](../../getting-started/searching-for-content.md#searching-for-liferay-objects) and returned in the Search Results widget.
 
 ![A title and a content summary are displayed for Object Entries.](./search-results-behavior/images/13.png)
 

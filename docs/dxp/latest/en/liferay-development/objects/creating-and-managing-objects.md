@@ -34,4 +34,11 @@ Liferay Objects provides a convenient UI for [creating](./creating-and-managing-
 !!! note 
     System objects are default Liferay applications integrated with the objects framework, while custom objects are definitions created and published by a user.
 
+## Searching for Objects
 
+You can use two configurations in the objects application to exert control over searching for objects: 
+
+1. Enable or disable search for an object definition's entries using the Enable Indexed Search configuration in its Details tab.
+1. If the object is indexed for searching, configure the searchability of [each field](./creating-and-managing-objects/fields/adding-fields-to-objects.md).
+
+See [Searching for Liferay Objects](../../using-search/getting-started/searching-for-content.md#searching-for-liferay-objects) for more information.

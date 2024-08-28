@@ -130,14 +130,13 @@ If [Search Bar Suggestions](../search-pages-and-widgets/search-bar-suggestions.m
 
 ## Searching for Liferay Objects
 
-Liferay 7.4 includes [Liferay Objects](../../liferay-development/objects.md), a GUI-driven application-building framework. Fields of each Object's definition can be declared searchable; Object Entries (the records submitted by the application's users) can then be queried and returned in the Search Results widget. 
+You can configure each [object definition](../../../liferay-development/objects.md) to be searchable with the Enable Indexed Search setting in its Details tab. If enabled, you can also configure [each field](../../../liferay-development/objects/creating-and-managing-objects/fields/adding-fields-to-objects.md) as searchable; object entries [can then be queried](../../getting-started/searching-for-content.md#searching-for-liferay-objects) and returned in the Search Results widget.
 
-```{important}
-The scope of the Object determines how it must be searched:
+!!! important
+    The scope of the Object determines how it must be searched:
 
-* If the scope of the Object is Company, the Object's Entries are only searched when the Search Bar is configured to search Everything.
-* If the scope of the Object is Site, the Object's Entries can be searched when the Search bar is configured to search in This Site.
-```
+    * If the scope of the Object is Company, the Object's Entries are only searched when the Search Bar is configured to search Everything.
+    * If the scope of the Object is Site, the Object's Entries can be searched when the Search bar is configured to search in This Site.
 
 The Type Facet and the Search Results widget support searching for Liferay Objects in the following manner:
 

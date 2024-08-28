@@ -32,7 +32,7 @@ Configure a service's [LCP.json file](../reference/configuration-via-lcp-json.md
 
 Depending on the configuration of your project's Git repository, you can trigger automatic CI builds by merging commits into your project's central repository or opening a new pull request with your changes. While this process is automatic, you can modify the CI service in the `infra` environment to include additional pipeline steps, including testing. See [Continuous Integration](../platform-services/continuous-integration.md) for more information.
 
-To access a full history of builds across all project environments, navigate to the *Builds* page in the Liferay Cloud console. Here you can view all builds initiated by either the CI service or CLI tool, along with their general information and status (i.e., pending, passed, or failed). You can filter builds by date and environment.
+To access a full history of builds across all project environments, navigate to the *Builds* page in the Liferay Cloud console. Here you can view all builds initiated by either the CI service or CLI tool, along with their general information and status (i.e., pending, passed, or failed). You can filter builds by date and environment. You can also search for builds using the build ID or the hash of the latest git commit in the build.
 
 ![You can filter builds by environment.](./overview-of-the-liferay-cloud-deployment-workflow/images/01.png)
 
@@ -40,7 +40,7 @@ To access a full history of builds across all project environments, navigate to 
 
 With Liferay PaaS, there are three ways to deploy services: deploying via the CLI tool (manually), deploying via the Liferay Cloud Management Console (manually), or configuring certain CI builds to deploy automatically.
 
-To access a full history of deployments across all project environments, navigate to the *Deployments* page in the Liferay Cloud console. Here you can view all deployments initiated using any of the three methods, along with their general information. You can filter deployments by date and environment.
+To access a full history of deployments across all project environments, navigate to the *Deployments* page in the Liferay Cloud console. Here you can view all deployments initiated using any of the three methods, along with their general information. You can filter deployments by date and environment. You can also search for deployments using the build ID or the hash of the latest git commit in the build.
 
 ![You can filter deployments by date.](./overview-of-the-liferay-cloud-deployment-workflow/images/02.png)
 

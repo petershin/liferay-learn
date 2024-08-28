@@ -56,7 +56,7 @@ While creating/editing a web content article, you can view and set the web conte
 
 1. Click *Publish*.
 
-![Set the web content article's visibility and permissions and schedule its publication before publishing/submitting it for workflow.](./adding-a-basic-web-content-article/images/02.gif)
+![Set the web content article's visibility and permissions and schedule its publication before publishing/submitting it for workflow.](./adding-a-basic-web-content-article/images/02.png)
 
 To set the web content article's visibility and permissions before {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+`,
 
@@ -80,7 +80,7 @@ Once you publish your web content article, it becomes accessible to any user wit
 
 ![Set permissions in the editing page or through the web content application.](./adding-a-basic-web-content-article/images/04.png)
 
-{bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+` When an article has restricted visibility, the Not Visible to Guest Users icon (![Not Visible to Guest Users icon](../../../images/icon-password-policies.png)) is displayed next to the article's name in various situations, such as in the web content article application while in List or Table view modes,  when editing the article, or when selecting an article for a web content display fragment.
+{bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+` When an article has restricted visibility, the Not Visible to Guest Users icon (![Not Visible to Guest Users icon](../../../images/icon-password-policies.png)) appears next to the article's name in various situations, such as in the web content article application while in List or Table view modes, when editing the article, or when selecting an article for a web content display fragment.
 
 !!! tip
     If the Not Visible to Guest Users icon does not appear after managing the view permission for web content articles in the web content article application, try refreshing your page.
@@ -101,7 +101,7 @@ Once you publish your web content article, it becomes accessible to any user wit
 
 The web content article is now tagged as scheduled, and you can see the selected date and time by hovering over the `?` icon next to the item.
 
-![Schedule your web content article's publication.](./adding-a-basic-web-content-article/images/06.gif)
+![Schedule your web content article's publication.](./adding-a-basic-web-content-article/images/06.png)
 
 Once the publication is scheduled, you can reschedule it by editing and setting a different time.
 
@@ -125,7 +125,7 @@ When creating or editing a Basic Web Content article, the following options appe
 | **Categorization** | Set any public or private categories, tags, or priority for the article. | See [Tagging Content](../../tags-and-categories/tagging-content-and-managing-tags.md) and [Organizing Content with Categories and Tags](../../tags-and-categories/organizing-content-with-categories-and-tags.md) for more information. |
 | **Friendly URL** | Set a custom friendly URL for this article. | |
 | **Schedule** | Schedule a date to display or expire the article, if desired. | See [Scheduling Web Content](./using-expiration-and-review-dates-in-web-content.md) for more information. |
-| **Search** | Set whether this article will be indexed for search. | |
+| **Search** | Set if this article is indexed for search. | |
 | **Related Assets** | Select any related assets, if desired. | |
 
 !!! important

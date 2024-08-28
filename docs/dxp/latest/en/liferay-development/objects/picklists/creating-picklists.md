@@ -35,9 +35,12 @@ To create a picklist,
 
    **Name**: Determines the item's display name and can be localized after creation.
 
-   **Key**: Determines the standard value understood by applications in the backend and uses camel case.
+   **Key**: Determines the standard value understood by applications in the backend. The key can contain only letters and numbers.
 
    ![Enter a name and key, and then click Save.](./creating-picklists/images/03.png)
+
+   !!! note
+       Beginning in Liferay DXP 2024.Q3/Portal 7.4 GA132, you can capitalize picklist keys. This allows you to ...
 
 1. Click *Save*. The picklist updates immediately with the new item and generates an external reference code (ERC) for it.
 

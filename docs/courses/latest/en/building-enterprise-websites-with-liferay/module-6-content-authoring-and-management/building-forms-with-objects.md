@@ -4,17 +4,27 @@ uuid: 1645bc8e-0a29-4cd2-bd52-4072ff7b39ce
 # Building Forms with Objects
 <!--TASK: Consider naming article 'Building Business Forms'-->
 
-Most digital experience solutions require the development of custom business functions that drive user interaction and engagement. Clarity wants a very common example of this type of business function: a Contact Us form that will collect data from site visitors and make that data available to the appropriate internal users. Traditionally, even a straightforward process like this requires a significant time investment from a development team to produce and iterate on code that will be expensive to maintain. To avoid the pain points of traditional development, Clarity wants to leverage Liferay Objects and fragments to build a Contact Us form without touching a single line of code.
+Business forms play a crucial role in digital experience solutions for several reasons:
 
-<!--TASK: Reframe intro to focus on forms as a type of content, not as a developer activity. Forms are a type of content that gathers valuable information, enables interactions, and fosters engagement. In Liferay, you can build forms using Liferay objects and page fragments.-->
+* **Data Collection**: Forms are the primary tool for collecting essential information from users. Whether it's customer inquiries, feedback, registrations, or purchase orders, forms provide a structured way to gather data that can be used for analysis, decision-making, and improving user experiences.
+
+* **User Interaction**: Forms facilitate direct interaction between users and digital platforms. They allow users to actively engage with the content, providing feedback, making requests, or completing transactions. This interaction is essential for building relationships and understanding user needs.
+
+* **Workflow Automation**: Forms can be integrated into automated workflows, streamlining processes and reducing manual effort. For example, a contact form can trigger a notification to a sales representative, or an online order form can initiate the fulfillment process.
+
+* **Analytics**: Analyzing form data provides valuable insights into user behavior, demographics, and preferences. This information can be used to optimize website design, improve marketing campaigns, and enhance overall customer satisfaction.
+
+* **Personalization**: By collecting user data through forms, businesses can personalize the digital experience. This can involve tailoring content, recommendations, or offers based on individual preferences and behaviors.
+
+* **Compliance and Regulation**: Forms can be used to collect necessary information for compliance with various regulations such as data privacy laws (e.g., GDPR, CCPA). They can ensure that businesses are collecting and handling data in accordance with legal requirements.
+
+By effectively designing and implementing business forms, organizations can create more engaging, efficient, and user-centric digital experiences. Clarity wants a very common type of business form: a Contact Us form that will collect data from site visitors and make that data available to the appropriate internal users. Traditionally, even a straightforward process like this requires a significant time investment from a development team to produce and iterate on code that will be expensive to maintain. To avoid the pain points of traditional development, Clarity wants to leverage Liferay Objects and page fragments to build a Contact Us form without touching a single line of code.
 
 ## Objects
 
-With Liferay Objects, you can define the schema of your data models with specific attributes, create relationships between objects, and implement logic to determine how objects should behave. You can use objects to iterate rapidly without the need to write or deploy code, which translates directly to increased business agility. Liferay comes with a centralized interface to define, manage, and store application data from custom structures, so that you can provide end users with tailored, streamlined experiences.
+With Liferay Objects, you can define the schema of your data models with specific attributes, create relationships between objects, and implement business logic to determine how objects should behave. You can use objects to iterate rapidly without the need to write or deploy code, which translates directly to increased business agility. Because of this, objects are perfect for building business forms, whether they are simple or complex. You can define fields for the data you want to collect, enforce input validations for those fields, and automatically perform certain actions when a form is submitted.
 
-One of the true strengths of objects is their integration with Liferay's core frameworks and functionalities, such as permissions, security, workflows, and more. This creates a cohesive user experience where your custom-built solutions feel and act like native parts of the Liferay platform.  Not only does this let you achieve faster time to value, but it also means that any Liferay practitioner can maintain your solution, eliminating the need for technical developer resources.
-
-<!--TASK: Reframe above Objects overview to focus on Objects as a way to build business forms (whether simple or complex)-->
+One of the true strengths of objects is their integration with Liferay's core frameworks and functionalities, such as permissions, security, workflows, analytics, and more. This creates a cohesive user experience where your business forms feel and act like native parts of the Liferay platform. Not only does this let you achieve faster time to value, but it also means that any Liferay practitioner can maintain your forms, eliminating the need for technical developer resources.
 
 <!--TASK: Add H2 on form fragments.-->
 

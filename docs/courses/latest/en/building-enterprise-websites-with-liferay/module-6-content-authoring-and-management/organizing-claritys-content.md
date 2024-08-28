@@ -5,13 +5,18 @@ uuid: bd7bafb9-bd0b-411b-9458-0cb507842c87
 
 <!--TASK: Reassess article organization; currently it combines 'Organizing' and 'Displaying' content-->
 
-In the previous section, you learned about the different types of content that Clarity wants to employ for their enterprise marketing website. This section covers some of the key Liferay features you can use to organize content once created:
+In the previous section, you learned about the different types of content that Clarity wants to employ for their enterprise marketing website. This section covers some of the key Liferay features you can use to organize and display content:
 
 - Categories
 - Tags
+- Asset Publishers
 - Collections
 
-## Categories
+## Categories and Tags
+
+Both categories and tags are vital tools for organizing content in Liferay. Categories are rigid and hierarchical, while tags are flat and freeform. Use categories when you need a formal, top-down structure that integrates with your site's architecture (e.g., navigation and display pages) and helps you enforce content standards and requirements. Use tags when you need flexible, user-driven organization to highlight keywords and enhance your site's search experience. Often, as in Clarity's case, your solution will require a combination of the two features.
+
+### Categories
 
 You can use categories to group assets with similar content or information. Categories support hierarchical organization of your content with nesting and subcategories so that you can classify your content in as much or as little detail as you wish. This makes it easier for users to find relevant information through search or navigation.
 
@@ -19,41 +24,31 @@ Categories themselves are grouped into vocabularies, which can be public or priv
 
 Together, categories and vocabularies form a taxonomy, a structured classification system for content. Implementing a robust taxonomy is critical for effectively managing content in Liferay.
 
-<!--TASK: See following comment-->
-
-## Tags
+### Tags
 
 Tags are keywords for organizing your assets. While categories provide broader classification based on theme or topic, tags describe more specific information about individual content items. Tags are not hierarchical and cannot be nested within one another. However, because they are not constrained by a vocabulary, tags make it possible to find related assets even if they are different types. Both administrators and regular users can create tags for content.
 
-<!--TASK: Add a section that clearly differentiates Categories and Tags while noting the use cases they're designed to solve. The above notes that tags are flat and unstructured, while categories are hierarchical and structured. It also hints that tags are typically applied by users, while categories are defined and managed by administrators. But we need to articulate the purpose as well: Tags facilitate flexible, user-driven organization, while categories provide a formal, top-down structure.
+## Asset Publishers and Collections
 
-As I understand it:
-* Use tags when you need flexible, user-driven organization for highlighting general keywords in content for search purposes.
-* Use categories when you need a formal, top-down structure that you can use as part of your site's structure (e.g., navigation, display pages, etc.) and to better enforce content governance.
--->
+<!--TASK: Consider moving Asset Publishers and Collections content into its own article-->
 
-## Collections
+While categories and tags make your content more accessible to users, you can also leverage them as site building tools with Asset Publishers and Collections, two Liferay features for displaying organized web content.
 
-<!--TODO: Consider moving Collections content into its own article-->
+### Asset Publishers
 
-While categories and tags make your content more accessible to users, you can also leverage them as site building tools. Collections bridge the gap between categorization and page design, enabling you to
+Asset Publishers have been part of the product for many years and are among the most widely used out-of-the-box widgets. They are self-contained, which means that you configure the selection criteria, display settings, and user interactive functionality all within a single widget instance. Asset Publishers support FreeMarker driven Widget Templates, which offer highly granular control and a tremendous amount of flexibility. This makes Asset Publishers best suited for use cases with complex templating needs.
 
-- **Group Diverse Content**: You can create collections to bring together different content types, like blog posts, documents, web content articles, and custom object entries, under a single theme or category. Grouping can be done manually or dynamically: hand pick individual items or define selection criteria to choose items on the fly.
+### Collections
 
-- **Filter and Personalize Content**: You can define specific criteria, such as tags, categories, or publication dates, to filter and display only relevant items within a collection. This enables you to personalize the content experience for different user groups.
+Collections focus only on defining the criteria for selecting assets, leaving display settings and user interactive functionality to be handled by fragments and widgets. This decoupling makes Collections a much more centralized feature for managing groups of content than instance-based Asset Publishers. You can use a single collection multiple times as a data source for separate rendering components, and changes to a collection are propagated to everywhere the collection is used. Collections bridge the gap between categorization and page design because they integrate with many of the richer content capabilities available in newer version of Liferay DXP. With Collections, you can:
 
-- **Simplify Content Presentation**: You can easily embed collections into your Liferay pages using dedicated out-of-the-box fragments like *Collection Display*. This streamlines the process of showcasing curated content within website layouts.
+* **Group Diverse Content**: You can create collections to bring together different content types, like blog posts, documents, web content articles, and custom object entries, under a single theme or category. Grouping can be done manually or dynamically: hand pick individual items or define selection criteria to choose items on the fly. Other Liferay features like Objects and Search Blueprints can generate collection providers, which you can use to render lists of results.
 
-<!--TASK: Add section to this or another article that compares collections and asset publishers.
+* **Filter and Personalize Content**: You can define specific criteria, such as tags, categories, or publication dates, to filter and display only relevant items within a collection. This enables you to personalize the content experience for different user groups.
 
-Asset Publishers have been part of the product for many years and is arguably one of the most widely used out of the box widgets. Asset Publishers combine the three concepts of selection criteria, display, and user interactive functionality in the widget’s configuration screen. Collections Collections decouple the logic for display and function from the selection criteria and provide integration with many of the richer content creator capabilities that are part of more recent versions of the product. With collections, display and user interactive functionality is handled by fragments and widgets.
+* **Simplify Content Presentation**: You can easily embed collections into your Liferay pages using dedicated out-of-the-box fragments like *Collection Display*. This streamlines the process of showcasing curated content within website layouts. Even if you require the complex templating functionality of Asset Publishers, you should still use a collection as the data source for your asset publisher. 
 
-Asset Publishers are self-contained, meaning everything to do with them from the selection criteria to the way the results should be rendered is stored with the instance itself. Asset Publishers support Freemarker driven Widget Templates, which offer a tremendous amount of flexibility and control. For these complex templating scenarios, the Asset Publisher is best. With that said, Asset Publishers can be configured to use collections, so even if you have the complex templating needs, you should still use a Collection to feed the data into the Asset Publisher.
-
-Collections provide a centralized way to manage groups of content for rendering in site pages, while asset publishers are instance based. Since collections only focus on providing the criteria for selecting assets, they support the “separation of concerns.” You can take a single collection and use it multiple times as a “data source” for separate rendering components. Furthermore, changes to the collection are propagated to everywhere the collection is used. Also, while you can manually configure the selection criteria for collections, there are also Liferay features that auto-generate collection providers. For example, both Objects and Search Blueprints can generate collection providers so you can use lists of results from these features to select which content is rendered. Perhaps most importantly, collections support personalization. You can create variations on a collection, making it possible for you to create a single collection and a single page for rendering that collection, but have the content shift based on the user’s segment.
-
-Use Collections for asset selection, even if you still need an Asset Publisher for complex templating.
--->
+For all these reasons, Collections are the recommended feature for selecting assets for display in Liferay, and the feature Clarity will be using to display their organized web content.
 
 ## Exercise: Auto-Tagging Content
 <!--Exercise 11b-->

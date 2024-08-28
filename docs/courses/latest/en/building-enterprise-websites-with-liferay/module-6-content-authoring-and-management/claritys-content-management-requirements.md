@@ -36,7 +36,9 @@ While Clarity isn’t a business-to-consumer enterprise yet, they know they will
 
 As their enterprise continues to scale, Clarity’s ideal solution needs a robust system for versioning, approving, and collaborating on content. This system supports compliance with corporate governance models along with automated approval workflows for publishing content.
 
-<!--TASK: Add a requirement related to building forms with objects. Emphasize users interacting with site to fill out forms (e.g., the Contact Us form)-->
+### Increase user interaction with custom business forms
+
+Clarity wants to build business forms (e.g., a Contact Us form) that users can fill out, not only to collect data but also to increase interaction and engagement with the website.
 
 ## Conclusion
 

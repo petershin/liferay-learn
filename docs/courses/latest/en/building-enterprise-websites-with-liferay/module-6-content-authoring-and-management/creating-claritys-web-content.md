@@ -4,14 +4,9 @@ uuid: d304bf82-c70f-4470-ac61-8d41bf737851
 # Creating Clarity's Web Content
 <!-- TASK: Reconsider article title and scope; the exercises include steps for 'displaying' content. -->
 
-*Content Management* is a broad term that can apply to a range of feature sets in the data lifecycle. We're going to focus specifically on the bread-and-butter Liferay features used to create content for web pages. Using structures and templates, you can build and display articles of web content through content pages, display pages, widgets, or fragments, which you learned about in the previous module. Web content articles are dynamic, versatile assets, in large part because they are made up of web content structures. 
+*Content Management* is a broad term that can apply to a range of feature sets in the data lifecycle. We're going to focus specifically on Liferay's Web Content application, a tool for creating and managing content. With it, users can define structures for different types of content and then design templates for rendering them in site pages. You can also render content items by mapping their fields directly to page fragments. 
 
-<!--TASK: At this point of the course, it is not clear that Web Content is an application in Liferay--to the uninitiated, it sounds like a generic term. The same is true for 'structures' and 'templates'. I'd suggest revising the above paragraph for clarity and focus. For example:
-
-"Liferay's Web Content application is a tool for creating and managing content. With it, users can define structures for different types of content and then design templates for rendering them in site pages. You can also render content items by mapping their fields to page fragments. Clarity..."
--->
-
-<!--TASK: Add note or section that explains there are other applications besides Web Content... but that Web Content can really address most use cases.-->
+While Liferay provides other applications for creating content, you can really address most use cases with the Web Content application. Clarity has chosen to use Web Content for the flexibility of implementing custom structures and the efficiency of rendering content with fragments and templates. With Web Content, Clarity can rapidly produce dynamic, versatile assets without limiting the creativity of their writers and editors. 
 
 ## Web Content Structures
 
@@ -33,7 +28,8 @@ Using these custom structures, Clarity can enforce a consistent format for conte
 
 Once you've defined a structure, you can create a template for it. Web content templates use FreeMarker (FTL) to determine how specific types of content items render in site pages. This means different types of web content can have different visual presentations, providing designers with an extra layer of configuration and customization.
 
-<!--TASK: Add note that recommends using fragments; Also suggest a principle that avoids FreeMarker abuse: When possible, use fragments; and if you must use FreeMarker, avoid adding logic. -->
+!!! caution
+   While FreeMarker is a powerful tool in the right hands, it can produce unexpected behavior if you aren't sure how to use it. Stick to rendering web content with fragments whenever possible, and if you must use FreeMarker, avoid adding your own logic.
 
 <!--TASK: Add a section or note that compares when to use web content vs. manually entering inline fragment text-->
 
@@ -248,9 +244,7 @@ Great! You've used ChatGPT to generate web content articles.
 
 ## Conclusion
 
-This concludes *Creating Clarity’s Web Content*. Now let’s take a look at how you can organize your content in Liferay.
-
-<!--TASK: Revise conclusion to avoid "This concludes Creating Clarity’s Web Content." Recap the article's core concepts/exercises. Apply to other articles.-->
+Great! You've learned about creating structured content with Liferay's Web Content application and mapping content for display with fragments. Now let’s take a look at how you can organize your content in Liferay.
 
 Next Up: [Organizing Clarity’s Content](./organizing-claritys-content.md)
 

@@ -17,16 +17,19 @@ uuid: 995cbe20-0caf-478b-ae3c-edea06211e7c
     * View the [recording](https://learn.liferay.com/web/guest/d/lp1-7-content-authoring-management) from the live webinar of this module.
     * Download the [PDF](https://learn.liferay.com/documents/d/guest/lp1-7-content-authoring-management-pdf) of the presentation used in the live workshop.
 
-In the previous module, you learned about some of the tools, techniques, and best practices for building sites with Liferay. Now that Clarity has an enterprise marketing website structured and styled, they need content to populate it. Fortunately, Liferay offers a suite of features for authoring and managing content that you can leverage to bring the site to life. In this module, we'll introduce you to several out-of-the-box capabilities with which you can manage Clarity's content:
+In the previous module, you learned about some of the tools, techniques, and best practices for building sites with Liferay. Now that Clarity has an enterprise marketing website structured and styled, they need content to populate it. Fortunately, Liferay offers a suite of features for authoring and managing content that you can leverage to bring the site to life. 
 
-<!--TODO: Update list of capabilities with more detail, description, actionable learning goals. Consider adding AI features here as well.-->
+In this module, you will learn how to:
 
-- Asset Libraries
-- Web Content Structures and Templates
-- Tags, Categories, and Collections
-- Catalogs, Products, and Channels
-- Publications and Workflow
-- Forms and Objects
+* Create and store digital assets that you can use anywhere in your Liferay instance
+* Build structured, templated web content to enforce consistent standards across your website
+* Organize your content by groups and keywords to make it more accessible
+* Leverage Liferay's powerful commerce features to create product-related content
+* Track, review, and collaborate on site changes before they go to production
+* Implement approval processes to improve visibility and efficiency in the content creation cycle
+* Build business forms to collect user data and drive engagement
+
+<!--TASK: Consider adding AI features here as well.-->
 
 Throughout this module, you'll learn best practices for creating and managing content for enterprise websites. First, let's take a closer look at Clarity's content requirements.
 

@@ -8,34 +8,7 @@ taxonomy-category-names:
 ---
 # Maintenance and Troubleshooting in Docker
 
-The Liferay Docker container has tools for maintenance and troubleshooting out-of-the-box. You can set various environment variables to modify settings that help you troubleshoot. One of these reports the status of the container; you can check this status to see its state. If you have more than one node, you can set a startup lock to ensure nodes start one by one. You can set an interval at which thread dumps are made, and you can probe the container's life cycle. 
-
-Read on to learn about each of these troubleshooting tools. 
-
-## Useful Container Variables and Scripts
-
-The following table describes some useful environment variables. 
-
- | Environment variable                     | Default value                                | Purpose                                                                              |
- |:-----------------------------------------|:---------------------------------------------|:-------------------------------------------------------------------------------------|
- | LIFERAY_CONTAINER_STARTUP_LOCK_ENABLED   | false                                        | Set to `true` to avoid two nodes starting up at the same time.                       |
- | LIFERAY_CONTAINER_STARTUP_LOCK_FILE      | `/opt/liferay/data/liferay-startup-lock`     | The location where the lock file should be created.                                  |
- | LIFERAY_CONTAINER_STATUS_ENABLED         | false                                        | Set to `true` to create a thread to continually check the container status.          |
- | LIFERAY_CONTAINER_STATUS_REQUEST_CONTENT | ""                                           | The status is only `live` if the content returned from the URL contains this string. |
- | LIFERAY_CONTAINER_STATUS_REQUEST_TIMEOUT | 10                                           | Requests wait this many seconds for a response before failing.                       |
- | LIFERAY_CONTAINER_STATUS_REQUEST_URL     | http://localhost:8080/c/portal/robots        | The thread checks the HTTP response to the URL set here.                             |
- | LIFERAY_DOCKER_THREAD_DUMP_INTERVAL_FILE | `/opt/liferay/data/sre/thread_dump_interval` | This file contains the number of seconds between each generated thread dump.         |
- | LIFERAY_THREAD_DUMPS_DIRECTORY           | `/opt/liferay/data/sre/thread_dumps`         | The location where the thread dump file should be created.                           |
-
-Here is a list of useful scripts that can be found inside the container:
-
-- **generate_database_report.sh**: Generates a database report HTML file which contains information about tables which can cause performance issues (e.g. templates) or about locks and the status of the database server.
-
-- **generate_heap_dump.sh**: Generates a heap dump. Use `-h` to learn about the parameters.
-
-- **generate_thread_dump.sh**: Generates thread dumps at the set interval. By default it creates 20 thread dumps with 3 second delays. Use `-h` to learn about the parameters.
-
-- **inspect_document_library.sh**: Generates a report with information on the document library's storage. See [Help Center](https://help.liferay.com/hc/en-us/articles/16529765923085-How-to-find-out-what-s-using-the-space-in-our-Document-Library-on-Liferay-PaaS) to learn more.
+The Liferay Docker container has tools for maintenance and troubleshooting out-of-the-box. You can set various environment variables to modify settings that help you troubleshoot. One of these reports the status of the container; you can check this status to see its state. If you have more than one node, you can set a startup lock to ensure nodes start one by one. You can set an interval at which thread dumps are made, and you can probe the container's life cycle.
 
 ## Checking the Container Status
 
@@ -81,9 +54,37 @@ The `LIFERAY_DOCKER_THREAD_DUMP_INTERVAL_FILE` variable should be a valid path t
 
 This is a useful tool to generate thread dumps on several cluster nodes if the file is on a shared file system. It can be also used to detect startup problems if the file is already created when the container starts.
 
-## Container Life Cycle Probe
+## Out-of-the-Box Container Scripts
 
-The Liferay Docker container comes with an out-of-the-box life cycle probe. By using `usr/local/bin/probe_container_lifecycle.sh`, the status of the container can be quickly checked without timeouts. The probe only returns true if the container status is live. If the status hasn't been updated for more than two minutes, it fails (this might happen if the monitoring thread's check fails).
+Here is a list of useful scripts that can be found inside the container:
 
-!!! tip
-    The life cycle probe is recommended if you're using Kubernetes.
+- **generate_database_report.sh**: Generates a database report HTML file which contains information about tables which can cause performance issues (e.g. templates) or about locks and the status of the database server.
+
+- **generate_heap_dump.sh**: Generates a heap dump. Use `-h` to learn about the parameters.
+
+- **generate_thread_dump.sh**: Generates thread dumps at the set interval. By default it creates 20 thread dumps with 3 second delays. Use `-h` to learn about the parameters.
+
+- **inspect_document_library.sh**: Generates a report with information on the document library's storage. See [Help Center](https://help.liferay.com/hc/en-us/articles/16529765923085-How-to-find-out-what-s-using-the-space-in-our-Document-Library-on-Liferay-PaaS) to learn more.
+
+- **probe_container_lifecycle.sh**: Checks the status of the container quickly and without timeouts. The probe only returns true if the container status is live. If the status hasn't been updated for more than two minutes, it fails (this might happen if the monitoring thread's check fails).
+
+  !!! tip
+      The life cycle probe is recommended if you're using Kubernetes.
+
+These commands generate a file for their output when they are run. Execute them in `opt/liferay/data` to store their output files in an appropriate location. You can execute these commands by running them directly (e.g. `probe_container_lifecycle.sh`), or run them in the background using `nohup` (e.g. `nohup inspect_document_library.sh &`). This is recommended as the scripts take time to create the reports.
+
+!!! note
+    If you run a script using `nohup`, it outputs it's results in a `nohup.out` file.
+
+## Environment Variable Reference
+
+ | Environment variable                     | Default value                                | Purpose                                                                              |
+ |:-----------------------------------------|:---------------------------------------------|:-------------------------------------------------------------------------------------|
+ | LIFERAY_CONTAINER_STARTUP_LOCK_ENABLED   | false                                        | Set to `true` to avoid two nodes starting up at the same time.                       |
+ | LIFERAY_CONTAINER_STARTUP_LOCK_FILE      | `/opt/liferay/data/liferay-startup-lock`     | The location where the lock file should be created.                                  |
+ | LIFERAY_CONTAINER_STATUS_ENABLED         | false                                        | Set to `true` to create a thread to continually check the container status.          |
+ | LIFERAY_CONTAINER_STATUS_REQUEST_CONTENT | ""                                           | The status is only `live` if the content returned from the URL contains this string. |
+ | LIFERAY_CONTAINER_STATUS_REQUEST_TIMEOUT | 10                                           | Requests wait this many seconds for a response before failing.                       |
+ | LIFERAY_CONTAINER_STATUS_REQUEST_URL     | http://localhost:8080/c/portal/robots        | The thread checks the HTTP response to the URL set here.                             |
+ | LIFERAY_DOCKER_THREAD_DUMP_INTERVAL_FILE | `/opt/liferay/data/sre/thread_dump_interval` | This file contains the number of seconds between each generated thread dump.         |
+ | LIFERAY_THREAD_DUMPS_DIRECTORY           | `/opt/liferay/data/sre/thread_dumps`         | The location where the thread dump file should be created.                           |

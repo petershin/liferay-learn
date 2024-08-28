@@ -12,7 +12,7 @@ uuid: b1426540-9d0f-4387-b7fa-3dc44336cb94
 
 When you begin the publishing process, Liferay performs a compatibility check to determine if there are any conflicts between your publication and production. While some conflicts can be resolved automatically, others require manual resolution. Resolving all conflicts is necessary for publishing changes.
 
-[$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/4w16zEFoP8o
+<!-- [$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/4w16zEFoP8o -->
 
 !!! note
     Publishing conflicts only occur when changes are made to production *after* changes have already been made in a publication. This is because each publication is automatically updated with changes made to production, provided those changes don't conflict with changes made in the publication.
@@ -21,9 +21,9 @@ When you begin the publishing process, Liferay performs a compatibility check to
 
 For some conflicts, Liferay can provide an automatic resolution. Essentially, an automatic resolution is a pre-configured solution to certain kinds of conflicts, so you can publish your changes without further action. These solutions may include adding, modifying, or removing content from the current publication, or replacing the version of content in production with your publication's version.
 
-When an automatic solution is available, you'll be notified during publishing. You can then click on *View* to review the solution's details. To implement an automatic solution, simply click on *Publish*.
+When an automatic solution is available, you are notified during publishing. You can then click on *View* to review the solution's details. To implement an automatic solution, simply click on *Publish*.
 
-![To implement an automatic solution, simply click on Publish.](./resolving-conflicts/images/01.png)
+![To implement an automatic solution, click on Publish.](./resolving-conflicts/images/01.png)
 
 ## Manually Resolving Conflicts
 
@@ -60,9 +60,9 @@ To see the notifications, open the *User Administration Menu* and click *Notific
 
     If scheduled publications run into conflicts or errors, users receive notification messages whenever the conflict check runs.
 
-Users can access a list of conflicts through the notification. There, users can both see the conflicts that were resolved automatically, and solve conflicts requiring manual resolution. 
+Users can access a list of conflicts through the notification. There, users can both see the conflicts that were resolved automatically, and solve conflicts requiring manual resolution.
 
-![With conflict errors, users can see a list of conflicts that need to be resolved manually and a list of conflicts that were resolved automatically.](./resolving-conflicts/images/04.png)
+![With conflict errors, users can see a list of conflicts that must be resolved manually and a list of conflicts that were resolved automatically.](./resolving-conflicts/images/04.png)
 
 If there are Java errors unrelated to conflicts, users receive an error message notification, and owners and system administrators have access to a stack trace of errors for further investigation.
 
@@ -78,7 +78,7 @@ Users can encounter six general types of conflicts: *Duplication*, *Modification
 
 These conflicts occur when something in production uses the same unique value of a change made in the publication. This can be caused by any type of component that requires a unique value (e.g., a folder, url, role name).
 
-Consider the following example. Suppose you've added a new folder named "Marketing" to a publication, while a user in production creates a folder using the same name. Since folders in the same repo must have a unique name, attempting to publish your change will result in a duplication conflict.
+Consider the following example. Suppose you've added a new folder named "Marketing" to a publication, while a user in production creates a folder using the same name. Since folders in the same repo must have a unique name, attempting to publish your change results in a duplication conflict.
 
 To resolve duplication conflicts, users can either edit the value in their publication, or discard their change.
 

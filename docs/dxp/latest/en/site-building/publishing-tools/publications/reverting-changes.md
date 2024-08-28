@@ -12,7 +12,7 @@ uuid: 32c58f12-9408-4ccd-bd8f-5c100c0e99e6
 
 Liferay Publications maintains a history of all published changes. You can use this publishing history to easily create publications that revert earlier changes to production. While reverting a publication, you can also make additional changes.
 
-[$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/1o6lDhV3AnM
+<!-- [$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/1o6lDhV3AnM -->
 
 !!! important
     After upgrading your Liferay version, you cannot revert publications published before your upgrade. The *Revert* option is removed for these publications.

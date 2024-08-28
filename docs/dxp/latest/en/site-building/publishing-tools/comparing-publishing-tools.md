@@ -7,11 +7,12 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: 3f178831-336f-42d9-9d64-cc360c7b1211
 ---
+
 # Comparing Publishing Tools
 
 Liferay provides two publishing tools for content creation and site building: Publications and Staging. Publications is recommended over Staging in nearly all use cases because it provides a superior collaboration experience and greater integration with other Liferay features. The one exception is if you need to host your working and production environments on separate servers. For this you must use Remote Live staging.
 
-[$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/xPVWyMrTa3k
+<!-- [$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/xPVWyMrTa3k -->
 
 ## Publications
 
@@ -25,9 +26,8 @@ During the publishing process, Liferay checks for conflicts with production and 
 
 Together, these features provide a superior editing and collaboration experience. See [Enabling Publications](./publications/enabling-publications.md) to set up Publications for your instance.
 
-```{important}
-Beginning with Liferay 7.4 U44/GA44, Publications is fully integrated with [Workflow](../../process-automation/workflow.md), so you can enable workflows for entities tracked by Publications.
-```
+!!! important
+    Beginning with Liferay 7.4 U44/GA44, Publications is fully integrated with [Workflow](../../process-automation/workflow.md), so you can enable workflows for entities tracked by Publications.
 
 ## Staging
 
@@ -39,9 +39,8 @@ All changes are site- or asset library-scoped. Within the site or asset library,
 
 While Publications is recommended over Staging, Remote Live staging is necessary if you use a multi-tier architecture for your deployment model or have different security requirements for your working and production environments. This is because Publications does not currently offer a remote option. In all other use cases, use Publications.
 
-```{important}
-If you must use Staging, you should enable it at the beginning of development. When enabled, Staging immediately begins copying data between your environments, which can cause errors if a lot of data already exists. Staging works best by publishing data frequently in small blocks. Publishing changes incrementally helps avoid publishing errors.
-```
+!!! important
+    If you must use Staging, you should enable it at the beginning of development. When enabled, Staging immediately begins copying data between your environments, which can cause errors if a lot of data already exists. Staging works best by publishing data frequently in small blocks. Publishing changes incrementally helps avoid publishing errors.
 
 ## Feature Comparison
 
@@ -87,12 +86,11 @@ Liferay's publishing tools support the following types of pages and content:
 | Widget Pages                 | &#10004;     | &#10004; |
 | Wiki                         | &#10004;     | &#10004; |
 
-```{important}
-Content pages do not support Staging's [page variations](./staging/page-versioning.md) feature.
-```
+!!! important
+    Content pages do not support Staging's [page variations](./staging/page-versioning.md) feature.
 
 ## Related Topics
 
-* [Publishing Tools](../publishing-tools.md)
-* [Publications](./publications.md)
-* [Staging](./staging.md)
+- [Publishing Tools](../publishing-tools.md)
+- [Publications](./publications.md)
+- [Staging](./staging.md)

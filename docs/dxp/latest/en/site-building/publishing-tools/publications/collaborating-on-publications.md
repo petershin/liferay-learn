@@ -14,7 +14,7 @@ uuid: e5ba6aa2-4c56-4e68-b515-32f05f9d4e93
 
 By default, a publication can only be accessed by its creator. However, publication creators can invite other users to view, edit, and publish their publications. Users can be added to any ongoing, scheduled, and published publications.
 
-[$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/n790hDkDenI
+<!-- [$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/n790hDkDenI -->
 
 Once users are invited to a publication, you can use the integrated comments feature to facilitate collaboration between contributors.
 

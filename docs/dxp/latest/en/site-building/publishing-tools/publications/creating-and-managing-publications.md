@@ -14,7 +14,7 @@ uuid: 065ba9d2-8610-4dc8-b8d8-0f68dadda5d5
 
 With Publications, users can create instance-scoped blocks of changes. Because each publication is instance-scoped, they can be accessed anywhere in the Liferay UI and include changes from multiple Sites. By default, users can only view and manage publications they've created. However, users can invite each other to collaborate on their publications. See [Collaborating on Publications](./collaborating-on-publications.md) for more information.
 
-[$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/QifaRHHuoX8
+<!-- [$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/QifaRHHuoX8 -->
 
 Once Publications is [enabled](./enabling-publications.md), you can create, edit, publish, or remove a publication via the Publications application page or the Publications drop-down menu.
 
@@ -78,7 +78,7 @@ From here, you can click a publication's Actions button ( ![Actions button](../.
 
 ## Managing Scheduled Publications
 
-In the *Schedule* tab, you can view a table of all scheduled publications that you have permission to view. By default, scheduled publications are listed by *Name*, though you can order them by modified date or when each publication is scheduled for Publishing.
+In the *Schedule* tab, you can view a table of all scheduled publications that you have permission to view. By default, scheduled publications appear by *Name*, though you can order them by modified date or when each publication is scheduled for Publishing.
 
 ![The Schedule tab lists all scheduled publications for your instance.](./creating-and-managing-publications/images/04.png)
 
@@ -117,7 +117,7 @@ To move changes to a new publication,
 
 1. Select the target publication at the bottom of the page and click *Move Changes* to complete the process.
 
-   ![Review the changes and select a publication to which the changes will be moved.](./creating-and-managing-publications/images/06.png)
+   ![Review the changes and select a publication to which the changes are moved.](./creating-and-managing-publications/images/06.png)
 
 The changes are moved to the target publication, and you can now schedule/publish it.
 
@@ -130,7 +130,7 @@ In the *History* tab, you can view a table of all published publications for the
 From here, you can click *Revert* for a publication to automatically create a new publication that reverts its changes. You can also make additional changes to your DXP instance as part of your Revert publication. See [Reverting Changes](./reverting-changes.md) for more information.
 
 !!! note
-    While all published publications on an instance are listed in the History tab, only publication owners and collaborators can view the publication's list of changes or revert it.
+    While all published publications on an instance appear in the History tab, only publication owners and collaborators can view the publication's list of changes or revert it.
 
 ## Related Topics
 

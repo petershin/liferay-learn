@@ -37,7 +37,7 @@ Liferay provides a client extension that integrates with [Adyen](https://www.ady
 
 1. Enter the order ID from before and complete the installation.
 
-1. Log in as an administrator and verify that the OAuth Application User Agent and OAuth Application Headless Servers were added to Liferay. Open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)) and go to *Control Panel* &rarr; *OAuth2 Administration*.
+1. Log in as an administrator and verify that the OAuth Application User Agent and two OAuth Application Headless Servers were added to Liferay. Open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)) and go to *Control Panel* &rarr; *OAuth2 Administration*.
 
    ![An OAuth Application User Agent and two OAuth Application Headless Servers are added when you deploy the client extension.](./adyen/images/01.png)
 

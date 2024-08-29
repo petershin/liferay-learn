@@ -138,6 +138,6 @@ Congratulations! You've completed *Module 7: Analytics and Personalization*. Thr
 
 In the next module, you'll learn about using headless APIs to interact with Liferay applications and resources.
 
-[Back to Building Enterprise Websites with Liferay](../../building-enterprise-websites-with-liferay.md)
+Up Next: [Module 8: Headless APIs](../module-8-headless-apis.md)
 
 <!-- TODO: Add Additional Resources section. -->

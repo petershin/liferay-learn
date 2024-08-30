@@ -6,6 +6,7 @@ taxonomy-category-names:
 - Liferay Self-Hosted
 - Liferay SaaS
 ---
+
 # Client Extensions UI Reference
 
 Liferay's [widget client extensions](./client-extensions-ui-reference.md#widget-client-extensions) (custom element and iframe) register applications with Liferay, adding them as widgets to site pages. Additionally, you can style your pages without deploying a new theme by creating [styling client extensions](./client-extensions-ui-reference.md#styling-client-extensions).
@@ -38,9 +39,6 @@ See [Configuring Client Extensions in `client-extension.yaml`](../client-extensi
 ## Export/Import Frontend Client Extensions Configured From the UI
 
 {bdg-secondary}`Liferay DXP 2024.Q1+/Portal 7.4 GA112+`
-
-!!! important
-    This feature is currently behind a release feature flag (LPS-182184). Read [Release Feature Flags](../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information.
 
 You can Export/Import frontend client extensions that were configured from the UI while maintaining the external reference code and references created when the client extension was used in a page.
 

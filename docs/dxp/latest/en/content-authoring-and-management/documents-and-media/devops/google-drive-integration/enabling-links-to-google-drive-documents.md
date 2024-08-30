@@ -12,7 +12,7 @@ uuid: be520f97-0b53-4a85-af0f-20585e0920b7
 
 # Enabling Links to Google Drive Documents
 
-Liferay provides a full support in Documents and Media with Google Drive. When enabled, you can create shortcuts to your Google Drive files that enable you to view and manage them via Documents and Media.
+Liferay supports Google Drive in Documents and Media. When enabled, you can create shortcuts to your Google Drive files that enable you to view and manage them via Documents and Media.
 
 To use this functionality in Liferay DXP 7.4, you must set up your Google project and configure Liferay's Documents and Media application. For older versions, you must first access Liferay's Marketplace plugins that are available for both [Liferay Portal CE](https://web.liferay.com/marketplace/-/mp/application/105847499) and [Liferay DXP](https://web.liferay.com/marketplace/-/mp/application/98011653) systems. See [Installing Apps](../../../../system-administration/installing-and-managing-apps/installing-apps.md) for how to install the Liferay Plugin for Google Drive.
 

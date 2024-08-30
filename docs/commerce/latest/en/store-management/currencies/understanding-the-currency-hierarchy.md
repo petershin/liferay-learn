@@ -20,7 +20,7 @@ For example, consider a US-based business with three channels, one for US custom
 
 ![The product's base price gets converted to its appropriate channel currency.](./understanding-the-currency-hierarchy/images/01.png)
 
-In this example, the USD prices are converted to EUR and GBP and stored in the EU and UK channels. These stored prices are then used for the channel's connected site. This ensures that European customers and UK customers see the correct prices when browsing the EU or UK channel's site, while US customers accessing the US channel's site, see USD prices. When orders are created, each channel uses its stored prices in the appropriate currency.
+In this example, the USD prices are converted to EUR and GBP and stored in the EU and UK channels. These stored prices are then used for the channel's connected site. This ensures that European customers and UK customers see the correct prices when browsing the EU or UK channel's site, while US customers accessing the US channel's site see USD prices. When orders are created, each channel uses its stored prices in the appropriate currency.
 
 !!! note
     You can view available currencies by opening the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)) and navigating to *Commerce* &rarr; *Currencies* Here you can edit, prioritize, add/remove, and activate/deactivate currencies. See [Currencies Reference](./currencies-reference.md) and [Adding a New Currency](./adding-a-new-currency.md) for more information.

@@ -17,11 +17,11 @@ uuid: 47e6759b-9bcb-432b-9707-129c368e99c5
 
 # Optimizing Sites
 
-From having top-tier SEO to understanding and acting on your site's content to building a site that is accessible to all types of users, Liferay provides tools to help you understand site issues and take action.
+From having top-tier SEO, to understanding and acting on your site's content, to building a site that is accessible to all types of users, Liferay provides tools to help you understand site issues and take action.
 
 ## Search Engine Optimization
 
-Use Liferay's SEO tools to enhance your site's visibility in search engine results. Configure [HTML titles, meta tags, and canonical URLs, manage robots.txt files](./displaying-content/using-display-page-templates/configuring-seo-and-open-graph.md), configure [XML sitemaps](./site-settings/managing-site-urls/configuring-xml-sitemaps.md), and integrate social media meta tags like [Open Graph](./site-settings/configuring-open-graph.md).
+You can use Liferay's SEO tools to enhance your site's visibility in search engine results. Configure [HTML titles, meta tags, and canonical URLs, manage robots.txt files](./displaying-content/using-display-page-templates/configuring-seo-and-open-graph.md), configure [XML sitemaps](./site-settings/managing-site-urls/configuring-xml-sitemaps.md), and integrate social media meta tags like [Open Graph](./site-settings/configuring-open-graph.md).
 
 ## Page Performance and Accessibility
 
@@ -35,4 +35,4 @@ Using [A/B testing tools](./optimizing-sites/ab-testing.md), you can experiment 
 
 ## Building a Responsive Site
 
-With Liferay, [building a responsive site](./optimizing-sites/building-a-responsive-site.md) that adapts to various devices and screen sizes is straightforward. Although Liferay uses responsive design by default, you can add more granular control to the content layout by [using the grid fragment in content pages](./optimizing-sites/building-a-responsive-site/building-responsive-layouts-with-the-grid-fragment.md). You can also use the [simulation panel](./optimizing-sites/building-a-responsive-site/using-the-simulation-panel.md) to ensure your site provides a seamless user experience across desktops, tablets, and mobile devices, improving engagement and satisfaction.
+Liferay provides tools that make it easier to [build a responsive site](./optimizing-sites/building-a-responsive-site.md) that adapts to various devices and screen sizes. You can add more granular control to Liferay's default responsive design by [using the grid fragment in content pages](./optimizing-sites/building-a-responsive-site/building-responsive-layouts-with-the-grid-fragment.md). You can also use the [simulation panel](./optimizing-sites/building-a-responsive-site/using-the-simulation-panel.md) to ensure your site provides a seamless user experience across desktops, tablets, and mobile devices, improving engagement and satisfaction.

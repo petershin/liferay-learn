@@ -10,11 +10,11 @@ uuid: 90e51a81-18ae-42b7-aa08-e802b6618597
 
 # Configuring Hreflang Meta Data
 
-Hreflang tags are HTML attributes used to identify the language and geographic region targeted by alternative versions of a site page. In some cases, these attributes can help search engines serve the correct version of a page to users and contribute to SEO. By default, Liferay DXP populates page hreflang meta data with all available languages in the site.
+Hreflang tags are HTML attributes used to identify the language and geographic region targeted by alternative versions of a page. In some cases, these attributes can help search engines serve the correct version of a page to users and contribute to SEO. By default, Liferay DXP populates page hreflang meta data with all available languages in the site.
 
-Beginning with Liferay 7.4+ DXP/Portal, you can configure this behavior to only generate hreflang meta data for languages with translated content in a page. This can be [configured at both the instance and site levels](../../system-administration/configuring-liferay/understanding-configuration-scope.md).
+Beginning with Liferay 7.4+, you can configure this behavior to generate hreflang meta data only for languages with translated content in a page. This can be [configured at both the instance and site levels](../../system-administration/configuring-liferay/understanding-configuration-scope.md).
 
-When hreflangs are limited in this way, Liferay's behavior can vary depending on page type.
+When hreflangs are limited in this way, Liferay's behavior can vary depending on page type:
 
 - **Widget Pages**: Languages used to translate a widget page's name are added to the hreflang tags.
 
@@ -30,7 +30,7 @@ When hreflangs are limited in this way, Liferay's behavior can vary depending on
 
 1. Click *Save*.
 
-When enabled, hreflang meta data is only generated for languages with translated content in a Page. When disabled, Page hreflang tags are populated with all available languages in a site.
+When enabled, hreflang metadata is only generated for languages with translated content in a page. When disabled, page hreflang tags are populated with all available languages in a site.
 
 ## Configuring Hreflang Behavior for All Sites in an Instance
 
@@ -55,7 +55,7 @@ When enabled, hreflang meta data is only generated for languages with translated
 
 1. Check/Uncheck *Enable Only Translated Hreflangs*.
 
-   This configuration only affects Pages in the current site.
+   This configuration only affects pages in the current site.
 
    ![Enable or disable the hreflang behavior for a site's pages.](./configuring-hreflang-meta-data/images/03.png)
 

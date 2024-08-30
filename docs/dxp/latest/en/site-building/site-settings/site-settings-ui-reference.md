@@ -94,7 +94,7 @@ By default, the Maps Application includes the Maps and Google Places sections. R
 
 | Section               | Description                                                                                                                                                                                                                                                                                                                  |
 | :-------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Maps                  | Select which maps API provider to use when displaying geo-localized assets in your Site. Geo-localized assets can be displayed for documents, web content articles, DDL records, and more. See [Geo-locating Assets](../../content-authoring-and-management/tags-and-categories/geolocating-assets.md) for more information. |
+| Maps                  | Select the maps API provider to use when displaying geo-localized assets in your site. Geo-localized assets can be displayed for documents, web content articles, DDL records, and more. See [Geo-locating Assets](../../content-authoring-and-management/tags-and-categories/geolocating-assets.md) for more information. |
 | Google Places API Key | Set the Google Places API Key.                                                                                                                                                                                                                                                                                               |
 
 ### Users
@@ -105,7 +105,7 @@ By default, the Users section includes the Default User Associations setting, wh
 
 Configure whether instance and site names appear in the HTML title to control how your site information appears in browser tabs and search engine results. Read [Configuring SEO and OpenGraph](../displaying-content/using-display-page-templates/configuring-seo-and-open-graph.md) to learn more about other SEO configuration options.
 
-By default, the instance and site names are included in the HTML Title. You can exclude the instance and/or the site names and display only the page name in the HTML title.
+By default, the instance and site names are included in the HTML title. You can exclude the instance and/or the site names and display only the page name in the HTML title.
 
 In this example, the page is called `Advanced Home Security Systems`, the instance is `omniconsumerproducts.com`, and the site is `Products Site`.
 
@@ -231,7 +231,7 @@ To view a Site's settings, open the *Site Menu* (![Site Menu](../../images/icon-
 
 ### General
 
-General settings range from core configuration, like a site's membership Type, to finer details like documents and media indexing options. The tab's content is organized into the following subsections: Details, Pages, Categorization, Site URL, Documents and Media, Open Graph, Asset Auto Tagging, Sharing, and Custom Fields.
+General settings range from core configuration, like a site's membership type, to finer details like documents and media indexing options. The tab's content is organized into the following subsections: Details, Pages, Categorization, Site URL, Documents and Media, Open Graph, Asset Auto Tagging, Sharing, and Custom Fields.
 
 #### Details
 
@@ -313,7 +313,7 @@ Here you can select the type of ratings used for the following Site applications
 
 #### Mentions
 
-Determine whether to allow users to mention other users in Site applications. See [Mentioning Users](../../collaboration-and-social/notifications-and-requests/user-guide/configuring-mentions.md) for more information.
+Determine whether to allow users to mention other users in site applications. See [Mentioning Users](../../collaboration-and-social/notifications-and-requests/user-guide/configuring-mentions.md) for more information.
 
 ### Language
 
@@ -335,7 +335,7 @@ If you require a different analytics service, you can add it. See [Adding a New 
 
 #### Maps
 
-Select which maps API provider to use when displaying geolocated assets in your Site. Geolocated assets can be displayed for documents, web content articles, DDL records, and more. See [Geolocating Assets](./site-content-configurations/configuring-geolocation-for-assets.md) for more information.
+Select which maps API provider to use when displaying geolocated assets in your site. Geolocated assets can be displayed for documents, web content articles, DDL records, and more. See [Geolocating Assets](./site-content-configurations/configuring-geolocation-for-assets.md) for more information.
 
 #### Recycle Bin
 

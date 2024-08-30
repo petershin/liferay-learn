@@ -11,7 +11,7 @@ uuid: 5870418b-597c-4930-9bf5-b92373c9b811
 
 # Configuring Geolocation for Assets
 
-Geolocated assets are digital assets that include geographical data, allowing them to be displayed on maps or to be filtered based on location. You can use geolocation data to display a list of local events, nearby facilities, or region-specific news articles.
+Geolocated assets include geographical data, allowing them to be displayed on maps or filtered based on location. You can use geolocation data to display a list of local events, nearby facilities, or region-specific news articles.
 
 To enable geolocation for assets,
 

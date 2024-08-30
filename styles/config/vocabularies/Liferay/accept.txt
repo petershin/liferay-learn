@@ -11,10 +11,12 @@ Liferay
 OAuth 
 OData
 OSGi
+Piwik
 Talend
 [Pp]icklist
 [Pp]ortlet
 [Ss]ervlet
+hreflang
 viewport
 widget's
 workspace's

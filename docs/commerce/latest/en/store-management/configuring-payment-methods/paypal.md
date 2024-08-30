@@ -49,16 +49,17 @@ To use [subscriptions](../../order-management/subscriptions/managing-subscriptio
 
 1. In the Mode drop-down, select _Live_ if it's a live site or _Sandbox_ if it's a test environment.
 
-1. {bdg-secondary}`Liferay DXP 7.4 U3+/GA7+` In the Request Details drop-down, select _Request Details Full_ or _Request Details Minimal_.
+1. {bdg-secondary}`Liferay DXP 7.4 U3+/GA7+` In the Request Details drop-down, select _Request Details Full_ or _Request Details Minimal_ (see below).
 
-   * Request Details Full - Sends a complete request required for the payment contract mapped to PayPal's [`PurchaseUnitRequest`](https://github.com/paypal/Checkout-Java-SDK/blob/develop/checkout-sdk/src/main/java/com/paypal/orders/PurchaseUnitRequest.java).
-   * Request Details Minimal - Sends a minimal request required for the payment contract mapped to PayPal's [`PurchaseUnitRequest`](https://github.com/paypal/Checkout-Java-SDK/blob/develop/checkout-sdk/src/main/java/com/paypal/orders/PurchaseUnitRequest.java).
-
-1. In the _Payment Attempts Max Count_ field, enter the number of attempts to make payment on a subscription before cancelling the subscription.
-
-   * For more information, read PayPal's [Reattempt failed recurring payments with Subscribe buttons](https://developer.paypal.com/docs/paypal-payments-standard/integration-guide/reattempt-failed-payment/) article.
+1. In the _Payment Attempts Max Count_ field, enter the number of attempts to make payment on a subscription before canceling the subscription.
 
 1. Click _Save_.
+
+**Request Details Full:** Sends a complete request required for the payment contract mapped to PayPal's [`PurchaseUnitRequest`](https://github.com/paypal/Checkout-Java-SDK/blob/develop/checkout-sdk/src/main/java/com/paypal/orders/PurchaseUnitRequest.java).
+
+**Request Details Minimal:** Sends a minimal request required for the payment contract mapped to PayPal's [`PurchaseUnitRequest`](https://github.com/paypal/Checkout-Java-SDK/blob/develop/checkout-sdk/src/main/java/com/paypal/orders/PurchaseUnitRequest.java).
+
+* For more information, read PayPal's [Reattempt failed recurring payments with Subscribe buttons](https://developer.paypal.com/docs/paypal-payments-standard/integration-guide/reattempt-failed-payment/) article.
 
 ## Related Topics
 

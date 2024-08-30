@@ -13,6 +13,7 @@ swap:
     centre: center
     cheque: check
     cancelled: canceled
+    cancelling: canceling
     colour: color
     customise: customize
     decentralise: decentralize

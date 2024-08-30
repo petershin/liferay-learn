@@ -55,7 +55,7 @@ For notification templates assigned as an object action to the Commerce Order ob
 | [%COMMERCEORDER_BILLING_ADDRESS_STREET3%]        | Billing address street 3                                                                    |
 | [%SALES_AGENT%]                                  | Sales Agent associated with the account                                                     |
 
-The following variables are only available in Liferay DXP 2024.Q3+/Portal 7.4 GA132+.
+The following variables are only available in Liferay DXP 2024.Q3+/Portal 7.4 GA125+.
 
 | Variable                                        | Description                         |
 | :---------------------------------------------- | :---------------------------------- |

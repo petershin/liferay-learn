@@ -208,7 +208,7 @@ Users returned by this API can be filtered, paginated, searched, and sorted. See
 * `organizationIds`
 * `roleIds`
 * `userGroupIds`
-* {bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA132+` status
+* {bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA125+` status
 * `alternateName`
 * `screenName`
 * `emailAddress`

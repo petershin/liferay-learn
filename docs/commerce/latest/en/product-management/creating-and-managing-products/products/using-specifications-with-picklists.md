@@ -10,7 +10,7 @@ taxonomy-category-names:
 ---
 # Using Specifications with Picklists
 
-{bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA132+`
+{bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA125+`
 
 You can now use [picklists](https://learn.liferay.com/w/dxp/liferay-development/objects/picklists) to define specification values and link them to a specification template to use with products. There are two ways to create a picklist:
 

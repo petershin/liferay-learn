@@ -72,7 +72,7 @@ There are several categories of permissions:
 
 **Applications Menu:** The Applications Menu permissions affect whether and how the Applications menu appears to different role users when they open the Global Menu.
 
-{bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA132+` **Objects:** After creating and publishing a custom object, it appears under the Objects section. You can then set both resource and application permissions related to the object for the role user by selecting it from the left menu. Only objects without a parent and a set panel link appear under the Objects section. If you've chosen a panel link, the object appears under the corresponding section.
+{bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA125+` **Objects:** After creating and publishing a custom object, it appears under the Objects section. You can then set both resource and application permissions related to the object for the role user by selecting it from the left menu. Only objects without a parent and a set panel link appear under the Objects section. If you've chosen a panel link, the object appears under the corresponding section.
 
 !!! important
     Currently, this feature is behind a release feature flag (LPD-19843). Read [Release Feature Flags](../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information.

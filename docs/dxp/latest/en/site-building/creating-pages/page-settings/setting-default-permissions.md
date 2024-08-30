@@ -10,7 +10,7 @@ uuid: 70d28ba5-ecfe-492f-aeaf-e50fc8c69645
 
 # Setting Default Permissions
 
-{bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA132+`
+{bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA125+`
 
 You can define a set of default permissions for Liferay pages. The default permissions setting is available at both instance and site scopes. Use the instance scope to configure defaults for all sites in your instance. To affect a single site, set defaults at the site scope.
 

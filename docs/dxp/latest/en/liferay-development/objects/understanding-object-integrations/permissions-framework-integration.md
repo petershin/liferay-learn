@@ -15,7 +15,7 @@ Published objects are integrated automatically with Liferay's permissions framew
 
 By default, custom object permissions are not assigned to user roles automatically. This is to prevent the accidental exposure of object data. To grant access, manually assign object permissions to the desired roles.
 
-When defining role permissions, active objects appear according to their scope and panel link. Before Liferay DXP 2024.Q3/Portal 7.4 GA132, custom objects did not appear in the Roles UI without a set panel link. Starting from Liferay DXP 2024.Q3+/Portal 7.4 GA132+, all active custom objects without a parent appear under a new *Objects* section in the Roles UI even without a panel link.
+When defining role permissions, active objects appear according to their scope and panel link. Before Liferay DXP 2024.Q3/Portal 7.4 GA125, custom objects did not appear in the Roles UI without a set panel link. Starting from Liferay DXP 2024.Q3+/Portal 7.4 GA125+, all active custom objects without a parent appear under a new *Objects* section in the Roles UI even without a panel link.
 
 [Account restricted objects](../creating-and-managing-objects/using-system-objects-with-custom-objects/restricting-access-to-object-data-by-account.md) must also have Show Widget enabled.
 

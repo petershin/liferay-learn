@@ -8,7 +8,7 @@ taxonomy-category-names:
 ---
 # Using the UPS Shipping Method
 
-{bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA132+`
+{bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA125+`
 
 Liferay provides a client extension that integrates with [UPS](https://www.ups.com/). It uses the shipping engine client extension as a base. See [Configuring Shipping Methods](https://learn.liferay.com/w/commerce/store-management/configuring-shipping-methods) to read more about the shipping methods available out-of-the-box with Liferay.
 

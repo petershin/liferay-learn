@@ -8,7 +8,7 @@ taxonomy-category-names:
 ---
 # Publishing Solutions in Marketplace
 
-The Liferay Marketplace contains business solutions from partners that you can use to improve productivity and reduce your time to market. Currently, only existing Liferay partners can publish a solution.
+The Liferay Marketplace contains business solutions you can use to improve productivity and reduce your time to market. Currently, only existing Liferay partners can publish a solution.
 
 If you're an existing partner and wish to publish solutions, see [Become a Publisher](./become-a-publisher.md) for more information.
 
@@ -30,7 +30,7 @@ The publishing process for solutions involves a 7-step process.
 
 ## Publishing a Solution
 
-1. Log in to your Liferay account at [marketplace.liferay.com](https://marketplace.liferay.com/).
+1. Log into your Liferay account at [marketplace.liferay.com](https://marketplace.liferay.com/).
 
 1. Open the *Dashboard* drop-down and select *Publisher*.
 
@@ -42,17 +42,17 @@ The publishing process for solutions involves a 7-step process.
 
 1. Enter a name and description for your solution. You must also choose one or more categories and tags. Click *Continue*.
 
-1. Now, customize the solution page's header. You must enter a title and description. In the section below, you can choose to upload up to 5 images or embed a video from a URL. Click *Continue*.
+1. Now, customize the solution page's header. You must enter a title and description. In the section below, you can choose to upload up to five images or embed a video from a URL. Click *Continue*.
 
 1. Next, customize the solution page's content. You must add a minimum of 2 blocks. To add a block, click *Add Content Block*. There are three types of content blocks: *Text Block*, *Text & Images Block*, and *Text & Videos Block*.
 
-   1. **Text Block** - You can enter a title and description.
+   1. **Text Block:** You can enter a title and description.
 
-   1. **Text & Images Block** - You can enter a title, description, and upload up to 5 images.
+   1. **Text & Images Block:** You can enter a title, description, and upload up to five images.
 
-   1. **Text & Videos Block** - You can enter a title, description, and a video URL.
+   1. **Text & Videos Block:** You can enter a title, description, and a video URL.
 
-   You can rearrange blocks by clicking the up (![Move Up icon](../../images/icon-move-up.png)) or down (![Move Down icon](../../images/icon-move-down.png)) arrows. To minimize a block, click the *Down* (![Down](../../images/icon-angle-down.png)) button. You can also click *Actions* (![Actions icon](../../images/icon-actions.png)) to move a block up, down, to the top, to the bottom, or delete it.
+   You can rearrange blocks by clicking up (![Move Up icon](../../images/icon-move-up.png)) or down (![Move Down icon](../../images/icon-move-down.png)). To minimize a block, click *Down* (![Down](../../images/icon-angle-down.png)). You can also click *Actions* (![Actions icon](../../images/icon-actions.png)) to move a block up, down, to the top, to the bottom, or delete it.
 
 1. Click *Continue*.
 

@@ -8,7 +8,7 @@ taxonomy-category-names:
 ---
 # Become a Publisher
 
-To publish apps on the Marketplace, you must have a Liferay account with additional publisher permissions. It is free to become a publisher, but you must submit a form with relevant details on Liferay Marketplace. If you haven't created an account on Marketplace already, visit [Liferay Marketplace](https://marketplace.liferay.com), open the *Account* drop-down, and select [Create An Account](https://login.liferay.com/signin/register). 
+To publish apps and solutions on the Marketplace, you must have a Liferay account with additional publisher permissions. It is free to become a publisher, but you must submit a form with relevant details on Liferay Marketplace. To publish solutions, you should also be an existing Liferay partner. If you haven't created an account on Marketplace already, visit [Liferay Marketplace](https://marketplace.liferay.com), open the *Account* drop-down, and select [Create An Account](https://login.liferay.com/signin/register).
 
 Once created,
 
@@ -20,13 +20,20 @@ Once created,
 
 1. Click *Request Account*.
 
-1. Fill in your first name, last name, phone number, email address, and enter a description. If you're requesting the account on behalf of a business, enter the business name.
+1. Fill in your first name, last name, and phone number.
+
+1. Then, choose the type of your publisher account. It can be *App Publisher*, *Solution Publisher*, or both.
+
+1. Enter an email address and description. If you're requesting the account on behalf of a business, enter the business name.
 
 1. Click *Continue*.
 
 1. Verify the details in the confirmation page and click *Request Account*.
 
 Once submitted, a Marketplace administrator reviews your application and makes a decision. If approved, you'll get an invitation to join your company's account as a publisher. If your company doesn't have an existing account, you're added as a publisher to a new account.
+
+!!! note
+    Only existing partners can open a publisher account of type Solution Publisher.
 
 ## Publisher Dashboard
 

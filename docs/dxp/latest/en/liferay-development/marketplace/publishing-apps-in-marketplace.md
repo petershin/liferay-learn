@@ -14,7 +14,7 @@ The Liferay Marketplace contains both Cloud apps (for Liferay SaaS, PaaS, and se
 
 The publishing process for both Cloud and DXP applications involves a 9-step process.
 
-![You must follow a 9-step process to publish your app.](./publishing-apps-in-the-marketplace/images/01.png)
+![You must follow a 9-step process to publish your app.](./publishing-apps-in-marketplace/images/01.png)
 
  | Step       | Description                                                                                                                                                         |
  |:-----------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -66,7 +66,7 @@ The publishing process for both Cloud and DXP applications involves a 9-step pro
 
    For paid apps, you can select a license type and then enter the unit price for a license. You can also set price tiers for multiple quantities if needed. Once done, click *Continue*.
 
-   ![Set the unit price for your app's license.](./publishing-apps-in-the-marketplace/images/02.png)
+   ![Set the unit price for your app's license.](./publishing-apps-in-marketplace/images/02.png)
 
 1. Enter the following optional details and click *Continue*.
 

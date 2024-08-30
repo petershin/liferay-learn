@@ -52,7 +52,7 @@ With account restriction enabled, the account relationship field is mandatory. U
 
 ## Disabling Account Restriction
 
-To disable account restriction you must delete the relationship that enabled it:
+To disable account restriction, you must delete the relationship that enabled it:
 
 1. Edit the Account system object: open the *Global Menu* (![Global Menu](../../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Objects*, then click *Account*.
 

@@ -306,39 +306,22 @@ The frontend requires updates to the `Slider.es.js` to support user-entered min 
 1. Update the JavaScript component in `Slider.es.js`, removing the hard coded min and max values and instead allowing for the user to enter their values. The full file contents appear below:
 
    ```javascript
-   import {FieldBase} from 'dynamic-data-mapping-form-field-type/FieldBase/ReactFieldBase.es';
-   import {useSyncValue} from 'dynamic-data-mapping-form-field-type/hooks/useSyncValue.es';
-   import React from 'react';
-   
-   const Slider = ({max, min, name, onChange, predefinedValue, readOnly, value}) => (
-      <input
-         className="ddm-field-slider form-control slider"
-         disabled={readOnly}
-         id="myRange"
-         max={max}
-         min={min}
-         name={name}
-         onInput={onChange}
-         type="range"
-         value={value ? value : predefinedValue}
-      />
-   );
-   
-   const Main = ({
+   import {ReactFieldBase as FieldBase} from 'dynamic-data-mapping-form-field-type';
+   import React, {useState} from 'react';
+
+   export default function Slider({
       label,
-      max,
-      min,
       name,
       onChange,
       predefinedValue,
       readOnly,
       value,
       ...otherProps
-   }) => {
-      const [currentValue, setCurrentValue] = useSyncValue(
+      }) {
+      const [currentValue, setCurrentValue] = useState(
          value ? value : predefinedValue
       );
-   
+
       return (
          <FieldBase
             label={label}
@@ -346,25 +329,23 @@ The frontend requires updates to the `Slider.es.js` to support user-entered min 
             predefinedValue={predefinedValue}
             {...otherProps}
          >
-            <Slider
-               max={max}
-               min={min}
+            <input
+               className="ddm-field-slider form-control slider"
+               disabled={readOnly}
+               id="myRange"
+               max={100}
+               min={1}
                name={name}
-               onChange={(event) => {
+               onInput={(event) => {
                   setCurrentValue(event.target.value);
                   onChange(event);
                }}
-               predefinedValue={predefinedValue}
-               readOnly={readOnly}
-               value={currentValue}
+               type="range"
+               value={currentValue ? currentValue : predefinedValue}
             />
          </FieldBase>
       );
    };
-   
-   Main.displayName = 'Slider';
-   
-   export default Main;
    ```
 
 1. Redeploy the form field module. Once it's processed (STOPPED &rarr; STARTED in the console), restart Liferay:

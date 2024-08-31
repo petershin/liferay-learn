@@ -47,7 +47,7 @@ Liferay provides a client extension that integrates with [Adyen](https://www.ady
 
 1. Add a new Minium site.
 
-1. Now, open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)) and go to *Commerce* &rarr; *Channels*.
+1. Open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)) and go to *Commerce* &rarr; *Channels*.
 
 1. Select *Minium Portal* and scroll down to the Payment Methods section. Verify the addition of Adyen as a new payment method here. It is inactive by default.
 

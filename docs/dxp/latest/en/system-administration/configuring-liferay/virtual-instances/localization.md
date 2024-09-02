@@ -18,9 +18,9 @@ Use the left and right arrow buttons to move a language from Current (configured
 
 The Locale Prepend Friendly URL Style configuration controls how locale prefixes are applied to URLs, indicating the content's language. This setting assists users and search engines in navigating and understanding localized content.
 
-![Access the Locale Prepend Friendly URL Style Page.](./site-localization/images/07.png)
+![Access the Locale Prepend Friendly URL Style Page.](./localization/images/02.png)
 
-1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Instance Settings*.
+1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Instance Settings*.
 
 1. Under *Platform*, click *Localization*.
 

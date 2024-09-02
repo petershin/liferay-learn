@@ -14,7 +14,9 @@ taxonomy-category-names:
 Liferay DXP contains REST services for most of its applications. These services are fully [OpenAPI](https://app.swaggerhub.com/apis/liferayinc/headless-delivery) compliant. Here, learn how to consume them. This takes only three steps:
 
 1. Identify the service you wish to consume.
+
 1. Identify the site containing the data you need.
+
 1. Make the service call using credentials that have access to the data.
 
 This example uses Docker image with a fresh install of Liferay DXP.
@@ -107,7 +109,7 @@ Now you must find the default Site ID:
 
 1. Find the Site identifier under Site ID.
 
-   ![Identify the Site Id under the Site Settings and Site Configuration option.](./consuming-rest-services/images/03.png)
+   ![Identify the Site Id under the Site Settings and Site Configuration option.](./consuming-rest-services/images/02.png)
 
 ## Make the Service Call Using Credentials with Access to the Data
 
@@ -165,7 +167,7 @@ First, post a blog entry.
 
 You can use the schema browser to learn how to post a blog entry.
 
-![The schema for any service is published on your Liferay DXP instance.](./consuming-rest-services/images/02.png)
+![The schema for any service is published on your Liferay DXP instance.](./consuming-rest-services/images/03.png)
 
 1. Go back to your browser tab containing the schema browser. On the right side, click the `BlogPosting` entry to display its schema (see above). This shows the whole data structure for a `BlogPosting`, but there are only two required fields:
 

@@ -36,16 +36,11 @@ While managing data set views, you can set default sorting rules that are applie
 
 1. Check "Use as Default Sorting" to set it as the default sorting option.
 
-   !!! note
-       When multiple sorting options are marked as default, only the most recently marked option is used as the default.
-
 1. (Optional) Use the *drag icon* (![Drag icon](../../../images/icon-drag.png)) to reorder the sorting options.
 
    ![Use the drag icon to reorder the sorting options.](./data-set-view-sorting/images/02.png)
 
-Once the sorting options are configured, you can see them in a Data Set fragment.
-
-The default sorting option appears at the top, and the data set is sorted automatically using this option.
+Once the sorting options are configured, you can see them in a Data Set fragment where the data set is sorted automatically using the default sorting option.
 
 Open *the Order dropdown* to choose other sorting options and specify whether the items are ordered in ascending or descending order.
 

@@ -59,9 +59,6 @@ The Data Set View application is divided into tabs:
 
    Sort entries using a specific field as a criterion and in ascending or descending order.
 
-   <!-- You can also select multiple fields. The first field serves as the primary criterion for sorting the entries. If there are entries with the same value in the first field, the second field is used as the secondary criterion for sorting. -->
-   <!-- It seems like this information is no longer true. I'll just confirm it. Eric -->
-
 - {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+` [Actions](./data-set-views/data-set-view-actions.md) tab: create actions linked to the elements in the data set.
 
    With *Item Actions*, you can perform many actions related to items in the data set, depending on the specific needs and context of the data. For example, if a data set item represents a user, possible actions include activating/deactivating it or impersonating it. Similarly, for a web content item, actions could include expiring content or viewing its history and usage.

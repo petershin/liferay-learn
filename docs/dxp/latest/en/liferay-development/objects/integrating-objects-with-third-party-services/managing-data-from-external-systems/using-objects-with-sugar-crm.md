@@ -19,7 +19,7 @@ You can create objects that map to [SugarCRM](https://support.sugarcrm.com) obje
 
 ## Preparing SugarCRM
 
-In SugarCRM , you must generate an [OAuth key](https://support.sugarcrm.com/documentation/sugar_versions/14.0/sell/administration_guide/system/#OAuth_Keys) to configure API integration with Liferay. After that you can connect Liferay to SugarCRM.
+In SugarCRM, you must generate an [OAuth key](https://support.sugarcrm.com/documentation/sugar_versions/14.0/sell/administration_guide/system/#OAuth_Keys) to configure API integration with Liferay. After that, you can connect Liferay to SugarCRM.
 
 !!! important
     Liferay uses [OAuth2](../../../../headless-delivery/using-oauth2.md). When generating the OAuth key in SugarCRM, choose _OAuth 2.0_ in the OAuth Version field.

@@ -169,3 +169,10 @@ To do this,
 Congratulations! You have created, modified, and deployed your own frontend client extensions. Next, we'll explore the tools you can use to model and manage data structure in Liferay.
 
 Next Up: [Modeling and Managing Data Structures](./modeling-and-managing-data-structures.md)
+
+## Additional Resources
+
+See our documentation to learn more about frontend client extensions:
+
+* [Client Extensions](https://learn.liferay.com/web/guest/w/dxp/liferay-development/client-extensions)
+* [Customizing Liferay’s Look and Feel](https://learn.liferay.com/web/guest/w/dxp/liferay-development/customizing-liferays-look-and-feel)

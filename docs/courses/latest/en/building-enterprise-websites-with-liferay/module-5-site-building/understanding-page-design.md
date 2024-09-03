@@ -110,3 +110,14 @@ When configuring individual page elements, you can apply custom styling in the S
 Congratulations! You’ve explored the different parts of Liferay page design. Next, let’s finish designing Clarity's custom master page templates.
 
 Next Up: [Designing Clarity’s Master Pages](./designing-claritys-master-pages.md)
+
+## Additional Resources
+
+See our documentation to learn more about Liferay's page design features:
+
+* [Using Content Pages](https://learn.liferay.com/w/dxp/site-building/creating-pages/using-content-pages)
+* [Page Fragments and Widgets](https://learn.liferay.com/web/guest/w/dxp/site-building/creating-pages/page-fragments-and-widgets)
+* [Using the Navigation Menus Application](https://learn.liferay.com/web/guest/w/dxp/site-building/site-navigation/using-the-navigation-menus-application)
+* [Master Page Templates](https://learn.liferay.com/w/dxp/site-building/creating-pages/defining-headers-and-footers/master-page-templates)
+* [Site Appearance](https://learn.liferay.com/w/dxp/site-building/site-appearance)
+* [Customizing Liferay's Look and Feel](https://learn.liferay.com/w/dxp/liferay-development/customizing-liferays-look-and-feel)

@@ -70,3 +70,10 @@ With Analytics Cloud, you get detailed analytics even on how individual Liferay 
 Analytics Cloud helps you discover what's important to your visitors so you can deliver improved content and optimized site experiences. Next you'll learn about Liferay segmentation and personalization features.
 
 Up Next: [Personalizing Experiences for Users](./personalizing-experiences-for-users.md)
+
+## Additional Resources
+
+See our documentation to learn more about Analytics Cloud's capabilities:
+
+* [Getting Started with Analytics Cloud](https://learn.liferay.com/w/analytics-cloud/getting-started)
+* [Viewing the Analytics Dashboard](https://learn.liferay.com/w/analytics-cloud/getting-started/viewing-the-analytics-dashboard)

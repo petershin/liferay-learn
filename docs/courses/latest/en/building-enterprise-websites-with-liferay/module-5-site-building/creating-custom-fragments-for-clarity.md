@@ -166,3 +166,10 @@ Congratulations! You've created and imported custom fragments and compositions f
 Next, you’ll apply Clarity's styling to finish setting up the site before moving on to managing and displaying Clarity's content in Module 7.
 
 Next Up: [Applying Clarity's Brand Styling](./applying-claritys-brand-styling.md)
+
+## Additional Resources
+
+See our documentation to learn more about creating and managing Liferay Fragments:
+
+* [Using Fragments](https://learn.liferay.com/web/guest/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments)
+* [Page Fragment Editor Interface Reference](https://learn.liferay.com/web/guest/w/dxp/site-building/developer-guide/reference/fragments/page-fragment-editor-interface-reference)

@@ -117,8 +117,10 @@ Up Next: [Setting Up Clarity's Distributor Solution](./setting-up-claritys-distr
 
 ## Additional Resources
 
-* [Objects](https://learn.liferay.com/w/dxp/liferay-development/objects)
+See our documentation to learn more about Liferay Objects' capabilities for modeling data structures:
+
+* [Creating and Managing Objects](https://learn.liferay.com/w/dxp/liferay-development/objects/creating-and-managing-objects)
 * [Picklists](https://learn.liferay.com/w/dxp/liferay-development/objects/picklists)
-* [Liferay Workspace](https://learn.liferay.com/web/guest/w/dxp/building-applications/tooling/liferay-workspace)
-* [Client Extensions](https://learn.liferay.com/w/dxp/liferay-development/building-applications/client-extensions)
-* [Deploying Client Extensions](https://learn.liferay.com/w/dxp/building-applications/client-extensions/working-with-client-extensions#deploying-to-your-liferay-instance)
+* [Object Relationships](https://learn.liferay.com/w/dxp/liferay-development/objects/creating-and-managing-objects/relationships)
+* [Objects Application Permissions](https://learn.liferay.com/w/dxp/liferay-development/objects/objects-application-permissions)
+* [Using the Objects Model Builder](https://learn.liferay.com/w/dxp/liferay-development/objects/creating-and-managing-objects/using-the-objects-model-builder)

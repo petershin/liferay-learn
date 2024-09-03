@@ -140,4 +140,11 @@ In the next module, you'll learn about using headless APIs to interact with Life
 
 Up Next: [Module 8: Headless APIs](../module-8-headless-apis.md)
 
-<!-- TODO: Add Additional Resources section. -->
+## Additional Resources
+
+See our documentation to learn more about Analytics Cloud's capabilities:
+
+* [Personalizing Site Experience](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience)
+* [Segmentation](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience/segmentation)
+* [Experience Personalization](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience/experience-personalization)
+* [A/B Testing](https://learn.liferay.com/w/dxp/site-building/optimizing-sites/ab-testing/ab-testing)

@@ -458,4 +458,11 @@ Congratulations! You've finished setting up Clarity's product pages. Next, lest'
 
 Next Up: [Publishing Content with Workflows](./publishing-content-with-workflows.md)
 
-<!-- TODO: Add Additional Resources section. -->
+## Additional Resources
+
+See our documentation to learn more about using Liferay Commerce for product content creation:
+
+* [Introduction to Liferay Commerce](https://learn.liferay.com/w/commerce/starting-a-store/introduction-to-liferay-commerce)
+* [Catalogs](https://learn.liferay.com/w/commerce/product-management/catalogs)
+* [Creating and Managing Products](https://learn.liferay.com/w/commerce/product-management/creating-and-managing-products)
+* [Channels](https://learn.liferay.com/web/guest/w/commerce/store-management/channels)

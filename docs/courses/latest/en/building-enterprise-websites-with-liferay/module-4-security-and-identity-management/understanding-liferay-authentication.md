@@ -73,3 +73,10 @@ Liferay DXP's default login method relies on the Sign In widget. This widget use
 Liferay's flexible features empower organizations to tailor their identity management strategy to their specific needs. Now that you have a general understanding of Liferay's flexible authentication features, let's explore Liferay's compatibility with third-party services for authentication and SSO.
 
 Next Up: [Using Third-Party Services for Authentication and SSO](./using-third-party-services-for-authentication-and-sso.md)
+
+## Additional Resources
+
+See our documentation to learn more about Liferay's authentication features and their various options:
+
+* [Authentication Basics](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/authentication-basics)
+* [User Authentication](https://learn.liferay.com/w/dxp/system-administration/configuring-liferay/virtual-instances/user-authentication)

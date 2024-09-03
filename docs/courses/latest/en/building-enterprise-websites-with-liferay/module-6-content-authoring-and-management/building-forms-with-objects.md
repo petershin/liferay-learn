@@ -241,3 +241,10 @@ Congratulations! You've completed *Module 6: Content Authoring and Management*. 
 In the next module, you'll learn about using Liferay analytics and personalization features to create and improve user experiences.
 
 [Module 7: Analytics and Personalization](../module-7-analytics-and-personalization.md)
+
+## Additional Resources
+
+See our documentation to learn more about Liferay Objects:
+
+* [Objects](https://learn.liferay.com/w/dxp/liferay-development/objects)
+* [Using Fragments to Build Forms](https://learn.liferay.com/w/dxp/liferay-development/objects/using-fragments-to-build-forms)

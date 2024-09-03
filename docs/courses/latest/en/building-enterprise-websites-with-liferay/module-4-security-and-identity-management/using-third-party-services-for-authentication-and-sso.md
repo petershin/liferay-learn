@@ -78,5 +78,5 @@ See our documentation to learn more about configuring SSO with other identity ma
 
 * [Configuring Single Sign-On](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/configuring-sso)
 * [Connecting a User Directory](https://learn.liferay.com/w/dxp/users-and-permissions/connecting-to-a-user-directory/connecting-to-an-ldap-directory)
-* [Configuring Liferay Authentication With Okta Using OpenId Connect](https://learn.liferay.com/web/guest/w/dxp/installation-and-upgrades/securing-liferay/configuring-sso/configuring-liferay-authentication-with-okta-using-openid-connect)
+* [Integrate Okta with Liferay DXP using OpenID Connect](https://learn.liferay.com/w/integrate-okta-with-liferay-dxp-using-openid-connect-1)
 * [Configuring Liferay Authentication With Auth0 Using OpenId Connect](https://learn.liferay.com/web/guest/w/dxp/installation-and-upgrades/securing-liferay/configuring-sso/configuring-liferay-authentication-with-auth0-using-openid-connect)

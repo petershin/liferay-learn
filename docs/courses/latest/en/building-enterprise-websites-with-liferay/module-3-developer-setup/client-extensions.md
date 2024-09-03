@@ -81,3 +81,11 @@ Congratulations! You've completed Module 3: Developer Setup. Throughout this mod
 In the next module, you'll learn about Liferay's identity management features.
 
 Next Up: [Module 4: Security and Identity Management](../module-4-security-and-identity-management.md)
+
+## Additional Resources
+
+See our documentation to learn more about Client Extensions:
+
+* [Client Extensions](https://learn.liferay.com/w/dxp/liferay-development/client-extensions)
+* [Types of Client Extensions](https://learn.liferay.com/w/dxp/liferay-development/client-extensions#types-of-client-extensions)
+* [Client Extension Reference](https://learn.liferay.com/w/dxp/liferay-development/client-extensions/client-extension-reference)

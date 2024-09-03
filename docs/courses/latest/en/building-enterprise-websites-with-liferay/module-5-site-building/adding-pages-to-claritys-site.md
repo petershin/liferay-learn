@@ -151,3 +151,12 @@ Since Liferay sites include 404 and 500 error pages by default, there's no need 
 Congratulations! You’ve finished the foundational page structure for Clarity’s site. Next, you’ll take these blank pages and start designing their layout. But before that, let's take a moment to review some core concepts for Liferay page design.
 
 Next Up: [Understanding Page Design](./understanding-page-design.md)
+
+## Additional Resources
+
+See our documentation to learn more about Liferay pages:
+
+* [Understanding Pages](https://learn.liferay.com/w/dxp/site-building/creating-pages/understanding-pages)
+* [Using Content Pages](https://learn.liferay.com/w/dxp/site-building/creating-pages/using-content-pages)
+* [Managing Page Hierarchies](https://learn.liferay.com/w/dxp/site-building/site-navigation/managing-page-hierarchies)
+* [Using Display Page Templates](https://learn.liferay.com/w/dxp/site-building/displaying-content/using-display-page-templates)

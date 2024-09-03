@@ -307,8 +307,10 @@ Next Up: [Implementing Business Logic](./implementing-business-logic.md).
 
 ## Additional Resources
 
-* [Objects](https://learn.liferay.com/en/w/dxp/building-applications/objects)
-* [Picklists](https://learn.liferay.com/w/dxp/liferay-development/objects/picklists)
+See our documentation to learn more about object definitions and client extensions:
+
+* [Importing/Exporting Data](https://learn.liferay.com/w/dxp/liferay-development/importing-exporting-data)
 * [Creating and Managing Objects](https://learn.liferay.com/web/guest/w/dxp/building-applications/objects/creating-and-managing-objects)
 * [Object Fields](https://learn.liferay.com/web/guest/w/dxp/building-applications/objects/creating-and-managing-objects/fields)
-* [Object Relationships](https://learn.liferay.com/web/guest/w/dxp/building-applications/objects/creating-and-managing-objects/relationships)
+* [Picklists](https://learn.liferay.com/w/dxp/liferay-development/objects/picklists)
+* [Objects Application Permissions](https://learn.liferay.com/w/dxp/liferay-development/objects/objects-application-permissions)

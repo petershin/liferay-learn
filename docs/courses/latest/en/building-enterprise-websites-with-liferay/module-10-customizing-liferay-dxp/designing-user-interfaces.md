@@ -36,3 +36,11 @@ Now Clarity needs a way to display individual entries. This display should enabl
 Congratulations! You've completed *Module 10: Customizing Liferay DXP*. Throughout this module, you've learned best practices for customizing the Liferay platform with objects and client extensions. You put these best practices into action by setting up Clarity's custom solution for onboarding distributors and implementing business logic to integrate it with Liferay's out-of-the-box capabilities.
 
 Next Up: [Course Conclusion](../conclusion.md)
+
+## Additional Resources
+
+See our documentation to learn more about desiging user interfaces for your custom solutions:
+
+* [Using Fragments to Build Forms](https://learn.liferay.com/w/dxp/liferay-development/objects/using-fragments-to-build-forms)
+* [Using Display Page Templates](https://learn.liferay.com/w/dxp/site-building/displaying-content/using-display-page-templates)
+* [Page Fragments and Widgets](htthttps://learn.liferay.com/w/dxp/site-building/creating-pages/page-fragments-and-widgets)

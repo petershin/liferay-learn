@@ -214,3 +214,12 @@ Now when users visit `http://localhost:8080/` and log out or log in, they're dir
 Congratulations! You’ve configured Clarity's enterprise website to ensure it is public and accessible to Clarity’s global audience. Next you’ll add some pages to Clarity’s site.
 
 Next Up: [Adding Pages to Clarity's Site](./adding-pages-to-claritys-site.md)
+
+## Additional Resources
+
+See our documentation to learn more about the various configuration options for setting up your site:
+
+* [Site Settings](https://learn.liferay.com/w/dxp/site-building/site-settings)
+* [Site Membership](https://learn.liferay.com/w/dxp/site-building/sites/site-membership)
+* [Using the Accessibility Menu](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience/using-the-accessibility-menu)
+* [Managing Site URLs](https://learn.liferay.com/w/dxp/site-building/site-settings/managing-site-urls)

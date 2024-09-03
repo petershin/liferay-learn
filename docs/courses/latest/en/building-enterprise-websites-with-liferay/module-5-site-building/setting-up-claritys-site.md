@@ -78,3 +78,11 @@ The Global Menu provides access to core Liferay functionalities for your entire 
 Congratulations! In this lesson, you've explored options for creating Liferay sites and familiarized yourself with Liferay's site builder UI. The next step is to configure Clarity's website.
 
 Next Up: [Configuring the Clarity Site](./configuring-the-clarity-site.md)
+
+## Additional Resources
+
+See our documentation to learn more about Liferay's site building and management features:
+
+* [Getting Started with Site Building](https://learn.liferay.com/w/dxp/site-building/getting-started-with-site-building)
+* [Sites](https://learn.liferay.com/w/dxp/site-building/sites)
+* [Site Templates](https://learn.liferay.com/w/dxp/site-building/sites/site-templates)

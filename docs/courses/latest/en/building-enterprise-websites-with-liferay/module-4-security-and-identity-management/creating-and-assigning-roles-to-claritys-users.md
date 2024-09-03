@@ -246,3 +246,10 @@ Congratulation! You've completed Module 4: Security and Identity Management. Thr
 In the next module, you'll learn about building sites with Liferay.
 
 Next Up: [Module 5: Site Building](../module-5-site-building.md)
+
+### Additional Resources
+
+See our documentation to learn more about managing roles and permissions in Liferay:
+
+* [Understanding Roles and Permissions](https://learn.liferay.com/w/dxp/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions)
+* [Creating and Managing User Groups](https://learn.liferay.com/w/dxp/users-and-permissions/user-groups/creating-and-managing-user-groups)

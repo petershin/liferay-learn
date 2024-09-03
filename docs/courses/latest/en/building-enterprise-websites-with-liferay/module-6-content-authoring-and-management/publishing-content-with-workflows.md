@@ -221,4 +221,9 @@ Great! You've successfully used workflow with publications to review and publish
 
 Up Next: [Building Forms with Objects](./building-forms-with-objects.md)
 
-<!-- TODO: Add Additional Resources section. -->
+## Additional Resources
+
+See our documentation to learn more about Liferay's publishing tools and the workflow application:
+
+* [Publishing Tools](https://learn.liferay.com/w/dxp/site-building/publishing-tools)
+* [Workflow](https://learn.liferay.com/web/guest/w/dxp/process-automation/workflow)

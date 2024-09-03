@@ -254,4 +254,9 @@ This concludes *Creating Clarity’s Web Content*. Now let’s take a look at ho
 
 Next Up: [Organizing Clarity’s Content](./organizing-claritys-content.md)
 
-<!-- TODO: Add Additional Resources section. -->
+## Additional Resources
+
+See our documentation to learn more about Liferay's Web Content application and its content management features:
+
+* [Web Content](https://learn.liferay.com/web/guest/w/dxp/content-authoring-and-management/web-content)
+* [Mapping and Linking Fragment Elements](https://learn.liferay.com/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments/mapping-and-linking-fragment-elements)

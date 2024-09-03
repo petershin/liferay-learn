@@ -4,7 +4,7 @@ uuid: a4730247-c6d1-49b6-b8e5-4f2c6616e585
 # Liferay Workspace
 <!--TASK: Rename Article-->
 
-Liferay Workspaces are specialized development environments that serve as the foundation for Liferay projects. They streamline the entire project lifecycle for developers by providing tools for creating, building, deploying, and testing your projects. Each workspace supports Gradle (default) and Maven, and you can seamlessly create and manage your workspace using popular IDEs like Eclipse and IntelliJ IDEA. Workspaces work hand-in-hand with Liferay's CLI tools: *Blade CLI* for managing workspaces and projects, and the *Liferay Cloud CLI* for managing Cloud services and deploying client extensions to the Cloud Platform. See [Liferay Workspaces](https://learn.liferay.com/web/guest/w/dxp/building-applications/tooling/liferay-workspace) to learn more.
+Liferay Workspaces are specialized development environments that serve as the foundation for Liferay projects. They streamline the entire project lifecycle for developers by providing tools for creating, building, deploying, and testing your projects. Each workspace supports Gradle (default) and Maven, and you can seamlessly create and manage your workspace using popular IDEs like Eclipse and IntelliJ IDEA. Workspaces work hand-in-hand with Liferay's CLI tools: *Blade CLI* for managing workspaces and projects, and the *Liferay Cloud CLI* for managing Cloud services and deploying client extensions to the Cloud Platform.
 
 Typically, projects have a one-to-one relationship with a workspace and can include a wide variety of elements, such as client extensions, plugins, and fragments.
 
@@ -180,3 +180,11 @@ To do this,
 Great! Now you're ready to start contributing to Clarity's enterprise website! But before moving on, let's explore client extensions and better understand how they relate to Liferay workspaces.
 
 Up Next: [Client Extensions](./client-extensions.md)
+
+## Additional Resources
+
+See our documentation to learn more about Liferay Workspaces and our development tools:
+
+* [Liferay Workspace](https://learn.liferay.com/web/guest/w/dxp/building-applications/tooling/liferay-workspace)
+* [Creating A Liferay Workspace](https://learn.liferay.com/w/dxp/liferay-development/tooling/liferay-workspace/creating-a-liferay-workspace)
+* [Blade CLI](https://learn.liferay.com/w/dxp/liferay-development/tooling/blade-cli)

@@ -114,3 +114,11 @@ Once finished, navigate to the Home page to see how your changes to the template
 Congratulations! You’ve finished setting up the navigation menus for Clarity’s master pages. Next you'll create custom fragments to finish Clarity's page headers.
 
 Next Up: [Creating Custom Fragments for Clarity](./creating-custom-fragments-for-clarity.md)
+
+## Additional Resources
+
+See our documentation to learn more about creating and displaying custom navigation menus in Liferay:
+
+* [Using the Navigation Menus Application](https://learn.liferay.com/web/guest/w/dxp/site-building/site-navigation/using-the-navigation-menus-application)
+* [Navigation Menu Element Types](https://learn.liferay.com/w/dxp/site-building/site-navigation/navigation-menu-element-types)
+* [Configuring Menu Displays](https://learn.liferay.com/w/dxp/site-building/site-navigation/configuring-menu-displays)

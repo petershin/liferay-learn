@@ -57,3 +57,10 @@ Congratulations! You've completed Module 2: Deploying Liferay. Throughout this m
 In the next module, you'll set up the developer environment you'll use throughout the course.
 
 Up Next: [Module 3: Developer Setup](../module-3-developer-setup.md)
+
+## Additional Resources
+
+See our documentation to learn more about Liferay Cloud:
+
+* [Getting Started with Liferay Cloud](https://learn.liferay.com/w/liferay-cloud/getting-started)
+* [Initial Setup Overview for Liferay Cloud](https://learn.liferay.com/w/liferay-cloud/getting-started/initial-setup-overview)

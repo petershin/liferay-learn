@@ -200,3 +200,12 @@ Great! You've set a custom filter widget that limits the search results to only 
 Great job! Visitors to Clarity's site now have a clear and simple way to search for and filter through different products and content. Next, we'll turn our attention to Liferay blueprints to bring personalization and further customization to the search experience.
 
 Next Up: [Personalizing search experiences with blueprints](./personalizing-search-experiences-with-blueprints.md)
+
+## Additional Resources
+
+See our documentation to learn more about leveraging Liferay's search features to create effective search pages:
+
+* [Working with Search Pages](https://learn.liferay.com/w/dxp/using-search/search-pages-and-widgets/working-with-search-pages)
+* [Search Results](https://learn.liferay.com/w/dxp/using-search/search-pages-and-widgets/search-results)
+* [Search Facets](https://learn.liferay.com/w/dxp/using-search/search-pages-and-widgets/search-facets)
+* [Search Blueprints](https://learn.liferay.com/w/dxp/using-search/liferay-enterprise-search/search-experiences/search-blueprints)

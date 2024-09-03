@@ -263,3 +263,11 @@ Congratulations! You've completed Module 9 - Search. Throughout this module, you
 In the next module, you'll learn how you can use Liferay Objects to customize Liferay DXP.
 
 Up Next: [Module 10 - Customizing Liferay DXP](../module-10-customizing-liferay-dxp.md)
+
+## Additional Resources
+
+See our documentation to learn more about how to tailor search experiences using search blueprints:
+
+* [Search Blueprints](https://learn.liferay.com/w/dxp/using-search/liferay-enterprise-search/search-experiences/search-blueprints)
+* [Collections with Search Blueprints](https://learn.liferay.com/w/dxp/using-search/liferay-enterprise-search/search-experiences/search-blueprints/collections-with-search-blueprints)
+* [Adding Custom Fields](https://learn.liferay.com/web/guest/w/dxp/system-administration/configuring-liferay/adding-custom-fields)

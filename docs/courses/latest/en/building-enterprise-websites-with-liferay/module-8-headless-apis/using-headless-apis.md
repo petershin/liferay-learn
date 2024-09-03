@@ -205,3 +205,11 @@ Congratulations, you've completed *Module 8: Headless APIs*. Throughout this mod
 Next, let's explore how Clarity can leverage Liferay's search tools and capabilities to improve user experience.
 
 Up Next: [Module 9: Search](../module-9-search.md)
+
+## Additional Resources
+
+See our documentation to learn how to optimize your use of Liferay's headless APIs:
+
+* [Consuming APIs](https://learn.liferay.com/w/dxp/headless-delivery/consuming-apis)
+* [Consuming REST Services](https://learn.liferay.com/w/dxp/headless-delivery/consuming-apis/consuming-rest-services)
+* [Batch Engine API Basics - Importing Data](https://learn.liferay.com/w/dxp/headless-delivery/consuming-apis/batch-engine-api-basics-importing-data)

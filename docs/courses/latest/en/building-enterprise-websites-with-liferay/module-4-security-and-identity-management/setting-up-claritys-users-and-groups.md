@@ -122,3 +122,10 @@ To do this,
 Great! Now any roles assigned to the Marketing user group are automatically assigned to all team members. Next, you'll learn how to define and assign custom roles for Clarity.
 
 Next Up: [Creating and Assigning Roles to Clarity's Users](./creating-and-assigning-roles-to-claritys-users.md)
+
+## Additional Resources
+
+See our documentation to learn more about users and user groups:
+
+* [Users](https://learn.liferay.com/w/dxp/users-and-permissions/users)
+* [Creating and Managing User Groups](https://learn.liferay.com/w/dxp/users-and-permissions/user-groups/creating-and-managing-user-groups#creating-and-managing-user-groups)

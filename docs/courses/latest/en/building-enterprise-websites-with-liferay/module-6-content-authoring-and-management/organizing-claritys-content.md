@@ -412,4 +412,9 @@ Great! You've used categories and collections to help organize and display Clari
 
 Next Up: [Creating Clarity’s Commerce Content](./creating-claritys-commerce-content.md)
 
-<!-- TODO: Add Additional Resources section. -->
+## Additional Resources
+
+See our documentation to learn more about Liferay's content organization features:
+
+* [Tags and Categories](https://learn.liferay.com/w/dxp/content-authoring-and-management/tags-and-categories)
+* [Using Collections](https://learn.liferay.com/w/dxp/site-building/displaying-content/using-collections)

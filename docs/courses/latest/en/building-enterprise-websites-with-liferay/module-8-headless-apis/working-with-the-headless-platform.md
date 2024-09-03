@@ -88,3 +88,11 @@ Fortunately, Liferay's out-of-the-box APIs satisfy Clarity's business needs. Nex
 <!--TASK: Add Conclusion-->
 
 Up Next: [Headless Security](./headless-security.md)
+
+## Additional Resources
+
+See our documentation to learn more about Liferay's headless APIs:
+
+* [Headless Delivery](https://learn.liferay.com/w/dxp/headless-delivery)
+* [Using Liferay as a Headless Platform](https://learn.liferay.com/w/dxp/headless-delivery/using-liferay-as-a-headless-platform)
+* [Consuming APIs](https://learn.liferay.com/w/dxp/headless-delivery/consuming-apis)

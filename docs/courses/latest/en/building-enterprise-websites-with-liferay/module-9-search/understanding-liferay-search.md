@@ -79,9 +79,7 @@ Next Up: [Understanding and Customizing Search Results Pages](./understanding-an
 
 ## Additional Resources
 
-See our documentation to learn about working with search in Liferay.
+See our documentation to learn more about Liferay's search capabilities:
 
-* [Working with Search Pages](https://learn.liferay.com/w/dxp/using-search/search-pages-and-widgets/working-with-search-pages)
-* [Search Results](https://learn.liferay.com/w/dxp/using-search/search-pages-and-widgets/search-results)
-* [Search Facets](https://learn.liferay.com/w/dxp/using-search/search-pages-and-widgets/search-facets)
-* [Search Blueprints](https://learn.liferay.com/w/dxp/using-search/liferay-enterprise-search/search-experiences/search-blueprints)
+* [Search Overview](https://learn.liferay.com/w/dxp/using-search/getting-started/search-overview)
+* [Searching for Content](https://learn.liferay.com/w/dxp/using-search/getting-started/searching-for-content)

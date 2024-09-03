@@ -39,3 +39,10 @@ As you progress through this module, you'll employ several different types of cl
 Congratulations! You have learned about customizing Liferay with objects and client extensions. While they are powerful on their own, both features benefit from being used together in custom solutions. You can leverage the fully integrated nature of objects along with the flexibility of client extensions to achieve faster time-to-market, reduce development costs, and deliver exceptional digital experiences. 
 
 Up Next: [Customizing Clarity's Front End](./customizing-claritys-front-end.md)
+
+## Additional Resources
+
+See our documentation to learn more about Liferay's customization features:
+
+* [Objects](https://learn.liferay.com/w/dxp/liferay-development/objects)
+* [Client Extensions](https://learn.liferay.com/web/guest/w/dxp/liferay-development/client-extensions)

@@ -215,9 +215,10 @@ Up Next: [Designing User Interfaces](./designing-user-interfaces.md)
 
 ## Additional Resources
 
-* [Client Extensions](https://learn.liferay.com/w/dxp/liferay-development/client-extensions)
-* [Object Validations](https://learn.liferay.com/w/dxp/liferay-development/objects/creating-and-managing-objects/validations)
-* [Roles and Permissions](https://learn.liferay.com/w/dxp/users-and-permissions/roles-and-permissions)
-* [Object States](https://learn.liferay.com/w/dxp/liferay-development/objects/creating-and-managing-objects/fields/adding-and-managing-custom-states)
+See our documentation to learn more about leveraging Liferay's capabilities for integrating business logic into your custom solutions:
+
+* [Integrating Microservices](https://learn.liferay.com/web/guest/w/dxp/liferay-development/integrating-microservices)
 * [Enabling Workflow for Objects](https://learn.liferay.com/w/dxp/liferay-development/objects/enabling-workflows-for-objects)
+* [Adding and Managing Custom States](https://learn.liferay.com/w/dxp/liferay-development/objects/creating-and-managing-objects/fields/adding-and-managing-custom-states)
 * [Object Actions](https://learn.liferay.com/w/dxp/liferay-development/objects/creating-and-managing-objects/actions)
+* [Notifications](https://learn.liferay.com/w/dxp/process-automation/notifications)

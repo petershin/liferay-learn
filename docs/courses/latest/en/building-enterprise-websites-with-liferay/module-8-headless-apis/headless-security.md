@@ -38,3 +38,10 @@ See [Setting Service Access Policies](https://learn.liferay.com/w/dxp/installati
 Security is paramount when using APIs to move data in or out of Liferay. Now that we've explored how Liferay's headless APIs are secured and authorized, let's take a look at how Clarity can use them to import content.
 
 Up Next: [Using Headless APIs](./using-headless-apis.md)
+
+## Additional Resources
+
+See our documentation to learn more about ensuring robust headless security with Liferay's APIs:
+
+* [Using OAuth 2.0](https://learn.liferay.com/w/dxp/headless-delivery/using-oauth2)
+* [Making Unauthenticated Requests](https://learn.liferay.com/w/dxp/headless-delivery/consuming-apis/making-unauthenticated-requests)

@@ -14,7 +14,7 @@ You can [search for content](../../getting-started/searching-for-content.md) fro
 !!! note
     In the beta release of the headless search API, the endpoint was at `/portal-search-api`. Beginning in Liferay 2024.Q3/Portal 7.4 GA125, the endpoint is moved to `/search`. The endpoint is backwards compatible, so existing calls to `/portal-search-api` will continue to work.
 
-### Searching for Sample Content
+## Searching for Sample Content
 
 Follow these steps to generate and search for sample content. The commands below work with basic authentication and assume that you are running Liferay locally at <http://localhost:8080>, using an administrator with the email `test@liferay.com` and the password `learn`.
 
@@ -287,3 +287,6 @@ To enable guest access to the API, [create a new service access policy](../../..
 | Method Name | `postSearchPage` |
 
 ## Related Topics
+
+* [Searching for Content](../../getting-started/searching-for-content.md)
+* [Headless Delivery](../../../headless-delivery.md)

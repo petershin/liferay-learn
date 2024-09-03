@@ -15,11 +15,12 @@ You can return suggestions with the headless API using the `/suggestions` endpoi
 
 
 Here's an example request made using cURL:
+
 ```bash
 curl \
 	-H "Content-Type: application/json" \
 	-X POST \
-  "http://localhost:8080/o/portal-search-rest/v1.0/suggestions?currentURL=http%3A%2F%2Flocalhost%3A8080&destinationFriendlyURL=http%3A%2F%2Flocalhost%3A8080%2Fweb%2Fguest%2Fsearch&plid=4&search=able" \
+  "http://localhost:8080/o/portal-search-rest/v1.0/suggestions?currentURL=http://localhost:8080&destinationFriendlyURL=http://localhost:8080/web/guest/search&plid=4&search=able" \
   --data-raw '[ { "attributes": {}, "contributorName": "basic", "displayGroupName": "search", "size": 5 } ]' \
 	-u "test@liferay.com:learn"
 ```

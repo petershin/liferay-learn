@@ -68,6 +68,8 @@ These scripts include the following APIs:
 | DELETE      | `/{objectNameId}` | Deletes the specified Object entry and returns a 204 if the operation succeeds                                            |
 | GET         | `/{objectNameId}` | Returns details for the specified Object entry                                                                            |
 | PUT         | `/{objectNameId}` | Replaces the specified Object entry's details with those provided in the API call                                         |
+| GET         | `/{objectNameId}/permissions` | Returns details for the specified Object entry permissions                                                                            |
+| PUT         | `/{objectNameId}/permissions` | Replaces the specified Object entry permission details with those provided in the API call                                         |
 
 ## Calling the Custom Object's APIs
 
@@ -161,6 +163,95 @@ The following are examples of the tutorial's cURL commands.
 ```{literalinclude} ./object-api-basics/resources/liferay-v1s4.zip/curl/Able_PUT_ById.sh
 :language: bash
 ```
+
+## Managing Object Permissions
+
+Use the Object APIs to read and update permissions for object entries. See [Objects Application Permissions](../../objects-application-permissions.md) for more information.
+
+1. Execute `Able_GET_Permissions` to retrieve a list of Object entry permissions.
+
+   ```bash
+   ./Able_GET_Permissions.sh {entry-id}
+   ```
+
+   This example returns permissions for all roles. To retrieve permissions for a specific role, use the `roleNames` query parameter.
+
+   ```bash
+   curl \
+      "http://localhost:8080/o/c/ables/${1}/permissions?roleNames=Site Member" \
+      --user "test@liferay.com:learn"
+   ```
+
+   In this example, the only role is Owner, and its permissions are: Delete, Permissions, Update, and View.
+
+   ```json
+   {
+      "actions": {
+         "get": {
+            "method": "GET",
+            "href": "http://localhost:8080/o/c/ables/41969/permissions"
+         },
+         "replace": {
+            "method": "PUT",
+            "href": "http://localhost:8080/o/c/ables/41969/permissions"
+         }
+      },
+      "facets": [],
+      "items": [
+         {
+            "actionIds": [
+            "DELETE",
+            "PERMISSIONS",
+            "UPDATE",
+            "VIEW"
+            ],
+            "roleName": "Owner"
+         }
+      ],
+      "lastPage": 1,
+      "page": 1,
+      "pageSize": 1,
+      "totalCount": 1
+   }
+   ```
+
+1. Execute `Able_PUT_Permissions` with the entry ID as a parameter to replace the entry's details with those provided in the API call.
+
+   ```bash
+   ./Able_PUT_Permissions.sh {entry-id}
+   ```
+
+   The Update permission was removed from the Owner role.
+
+   ```json
+   {
+      "actions": {
+         "get": {
+            "method": "GET",
+            "href": "http://localhost:8080/o/c/ables/41969/permissions"
+         },
+         "replace": {
+            "method": "PUT",
+            "href": "http://localhost:8080/o/c/ables/41969/permissions"
+         }
+      },
+      "facets": [],
+      "items": [
+         {
+            "actionIds": [
+            "DELETE",
+            "PERMISSIONS",
+            "VIEW"
+            ],
+            "roleName": "Owner"
+         }
+      ],
+      "lastPage": 1,
+      "page": 1,
+      "pageSize": 1,
+      "totalCount": 1
+   }
+   ```
 
 ## Managing Object Tags and Categories
 

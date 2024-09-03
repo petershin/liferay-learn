@@ -14,11 +14,13 @@ Environment logs are crucial for diagnosing and resolving technical issues in a 
 
 Liferay Cloud provides three types of logs for environment services:
 
-- **Build Logs**: These logs list build information generated as the application boots up. Examples of build information include: when Docker images are pulled from the registry, when deploys are in progress, and when builds are successful.
+- **Application Logs**: Runtime information generated after the application is running and accessed by users.
 
-- **Status Logs**: These logs list orchestration layer information from the Kubernetes cluster. Examples of status information include: when images are successfully pulled, when containers are created and started, and when readiness or liveness probes fail.
+- **Build Logs**: Build information generated as the application boots up. Examples include: when Docker images are pulled from the registry, when deploys are in progress, and when builds are successful.
 
-- **Application Logs**: These logs list runtime information generated after the application is running and accessed by users.
+- **Status Logs**: Orchestration layer information from the Kubernetes cluster. Examples include: when images are successfully pulled, when containers are created and started, and when readiness or liveness probes fail.
+
+- **VPN Logs**: VPN server information. Examples include: TODO
 
 ## Log Structure
 
@@ -36,17 +38,11 @@ Additionally, these components are always present in any log message in Liferay 
 
 - The **timestamp**: in this example, `Jun 29 10:07:46.585`.
 
-- The **build ID**: in this example, `build-214`. This corresponds to the build that the currently deployed version of the service corresponds to. You can match this build ID to the list of builds shown in your project's _Builds_ page.
+- The **build ID**: in this example, `build-214`. This corresponds to the build that the currently deployed version of the service corresponds to. You can match this build ID to the list of builds shown in your project's *Builds* page.
 
 - The **instance ID**: in this example, `[webserver-699bf65bfb-4w8pl]`. This is used to identify which instance of a service a message is related to.
 
-The instance ID associated with a log message corresponds to one of the instances of your service.
-
-From the Logs page, you can see (and filter by) all active instances of a service (such as `liferay`) by filtering to it and then clicking the Instance drop-down menu:
-
-![Click on the instances drop-down menu to see all of the instances.](./reading-liferay-cloud-service-logs/images/01.png)
-
-The format of the instance ID depends on what deployment type (deployment or stateful set) the service is configured as. See [Understanding Deployment Types](../../updating-services-in-liferay-paas/understanding-deployment-types.md) for more information.
+The instance ID associated with a log message corresponds to one of the instances of your service. The format of the instance ID depends on what deployment type (deployment or stateful set) the service is configured as. See [Understanding Deployment Types](../../updating-services-in-liferay-paas/understanding-deployment-types.md) for more information.
 
 ### Instance ID for Deployment Type Logs
 
@@ -101,27 +97,29 @@ Follow these steps to access environment service logs via the Liferay Cloud cons
 
 1. Navigate to a project environment.
 
-1. Click on _Logs_ in the environment menu.
+1. Click on *Logs* in the environment menu.
 
-View application, status, and build logs across all environment services or [filter results](#searching-and-filtering-logs) using the drop-down menus.
+View application, status, build, and VPN logs across all environment services or [filter results](#searching-and-filtering-logs) using the drop-down menus.
 
-To download logs, click the _Download Logs_ button.
+To download logs, click the *Download Logs* button.
 
-![View environment logs form the Logs page.](./reading-liferay-cloud-service-logs/images/02.png)
+![Download logs by clicking the Download Logs button.](./reading-liferay-cloud-service-logs/images/01.png)
 
 You can also use the drop-down menu at the top-right corner to select which information to display as a column for each log message.
 
-![Select which information columns to display from the drop-down menu.](./reading-liferay-cloud-service-logs/images/03.png)
+![Select which information columns to display from the drop-down menu.](./reading-liferay-cloud-service-logs/images/02.png)
+
+The log inspector contains detailed breakdowns of each log. To open the log inspector, click the button that appears when hovering over the log.
 
 ### Searching and Filtering Logs
 
-You can filter by [type](#log-types) or by service on the Logs page. If you filter logs by a service, another drop-down menu appears for filtering by a specific node.
+You can filter by [type](#log-types), by date, or by service and instance on the Logs page. To filter by service or by the specific instance of a service, use the Filter button.
 
-![Use the drop-down menus to filter by type, service, and service instance.](./reading-liferay-cloud-service-logs/images/04.png)
+![Use the drop-down menus to filter by type, service, and service instance.](./reading-liferay-cloud-service-logs/images/03.png)
 
 To filter by a date range, use the date picker at the top-right corner. You cannot choose a date that [no longer has valid logs](../../reference/platform-limitations.md#all-services).
 
-![Use the date picker to see logs from a specific date range.](./reading-liferay-cloud-service-logs/images/05.png)
+![Use the date picker to see logs from a specific date range.](./reading-liferay-cloud-service-logs/images/04.png)
 
 !!! tip
     Click *Jump to now* to see the latest log messages when you've selected a date range. The end of your selected date range changes to the current time.
@@ -130,9 +128,9 @@ You can also use the search bar to search for specific terms in log messages.
 
 ### Viewing Continuous Log Updates
 
-By default, logs on the Logs page only update when you refresh the page or update the date range manually (which includes by default updates up to the second the page is loaded). Click *Stream* to enable streaming new log messages while you view the Logs page. Any new log messages automatically appear at the bottom.
+By default, logs on the Logs page only update when you refresh the page or update the date range manually (which includes updates up to the second the page is loaded). Click *Stream* to enable streaming new log messages while you view the Logs page. Any new log messages automatically appear at the bottom.
 
-![Click Stream to switch to streaming mode while viewing logs.](./reading-liferay-cloud-service-logs/images/06.png)
+![Click Stream to switch to streaming mode while viewing logs.](./reading-liferay-cloud-service-logs/images/05.png)
 
 Streaming log messages only stays enabled until the next time you load the page. While streaming is enabled, the controls to [filter by date or type](#searching-and-filtering-logs) are disabled.
 

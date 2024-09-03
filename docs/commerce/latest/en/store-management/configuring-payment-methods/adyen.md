@@ -1,5 +1,5 @@
 ---
-uuid: 5b426154-d64f-4cdf-8a50-a240267218da
+uuid: 920e1423-7076-46bf-a605-4d47a70864ea
 taxonomy-category-names:
 - Commerce
 - Storefronts
@@ -57,7 +57,7 @@ Liferay provides a client extension that integrates with [Adyen](https://www.ady
 
    You can go to the Eligibility tab to select specific order types or payment terms to be eligible for the payment integration. By default, it is eligible for all order types and payment terms.
 
-   The configuration tab contains an input field that accepts key-value pairs that you can find from your [Adyen Customer Area](https://ca-test.adyen.com/). 
+   The configuration tab contains an input field that accepts key-value pairs that you can find from your [Adyen Customer Area](https://ca-test.adyen.com/).
 
    ![Enter the key-value pairs from your Adyen Dashboard to complete the integration.](./adyen/images/02.png)
 

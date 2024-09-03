@@ -37,12 +37,12 @@ LIFERAY_FEATURE_PERIOD_FLAG_PERIOD__UPPERCASEL__UPPERCASEP__UPPERCASES__MINUS__N
 
 ## Search Headless API Availability
 
-The search headless API was released behind a [beta feature flag](../../../system-administration/configuring-liferay/feature-flags.md) in Liferay 7.4 U88/GA88. It was moved to a release feature flag in Liferay DXP 2024.Q3/Portal GA125.
+The search headless API was released behind a [beta feature flag](../../system-administration/configuring-liferay/feature-flags.md) in Liferay 7.4 U88/GA88. It was moved to a release feature flag in Liferay DXP 2024.Q3/Portal GA125.
 
 | Liferay Version    | Feature Status                                                                                              | Feature Flag [Label]                         |
 |:-------------------|:------------------------------------------------------------------------------------------------------------|:---------------------------------------------|
-| DXP 7.4 U88<br>Portal 7.4 GA88   | [Beta Feature](../../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags) | &#10004; [Search Headless API (LPS-179669)] |
-| DXP 2024.Q3+<br>Portal 7.4 GA125+ |  [Release Feature](../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags)                                                                                                         | &#10004; [Search Headless API (LPS-179669)]                                     |
+| DXP 7.4 U88<br>Portal 7.4 GA88   | [Beta Feature](../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags) | &#10004; [Search Headless API (LPS-179669)] |
+| DXP 2024.Q3+<br>Portal 7.4 GA125+ |  [Release Feature](../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags)                                                                                                         | &#10004; [Search Headless API (LPS-179669)]                                     |
 
 ## Related Topics
 

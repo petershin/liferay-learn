@@ -11,7 +11,7 @@ uuid: e421b21c-2c47-4d72-84ec-c89b0f1c40ab
 
 {bdg-secondary}`DXP 2024.Q3+/Portal GA125+`
 
-You can return suggestions with the headless API using the `/suggestions` endpoint. This endpoint is used by Liferay's [Search Bar Suggestions](../search-pages-and-widgets/search-bar-suggestions.md) feature. There are two suggestions contributors available: the `basic` contributor for returning suggestions based on Liferay's standard indexer based search, and the `sxpBlueprint` contributor for returning suggestions based on a [search blueprint](../search-pages-and-widgets/search-bar-suggestions/search-bar-suggestions-blueprints.md).
+You can return suggestions with the headless API using the `/suggestions` endpoint. This endpoint is used by Liferay's [Search Bar Suggestions](../../search-pages-and-widgets/search-bar-suggestions.md) feature. There are two suggestions contributors available: the `basic` contributor for returning suggestions based on Liferay's standard indexer based search, and the `sxpBlueprint` contributor for returning suggestions based on a [search blueprint](../../search-pages-and-widgets/search-bar-suggestions/search-bar-suggestions-blueprints.md).
 
 
 Here's an example request made using cURL:
@@ -24,7 +24,7 @@ curl \
 	-u "test@liferay.com:learn"
 ```
 
-You can configure the service access policy or disable the suggestions endpoint entirely. See [Configuring Search Bar Suggestions](../search-pages-and-widgets/search-bar-suggestions/configuring-search-bar-suggestions.md) for more information.
+You can configure the service access policy or disable the suggestions endpoint entirely. See [Configuring Search Bar Suggestions](../../search-pages-and-widgets/search-bar-suggestions/configuring-search-bar-suggestions.md) for more information.
 
 ## Suggestions Query Parameters
 
@@ -62,10 +62,10 @@ The available suggestions request attributes are for configuring a search bluepr
 
 | Property | Description |
 | :--- | :--- |
-| DXP Only<br />`search.experiences.blueprint.external.reference.code` | (Preferred) Set a [search blueprint](../liferay-enterprise-search/search-experiences/search-blueprints.md) to control the search query and configuration. |
-| DXP Only<br />`search.experiences.blueprint.id` | Set a [search blueprint](../liferay-enterprise-search/search-experiences/search-blueprints.md) to control the search query and configuration.|
-| DXP Only<br />`search.experiences.ip.address` | Set automatically. Only use this to test blueprints [with geolocation](../liferay-enterprise-search/search-experiences/search-blueprints/personalizing-the-search-experience.md#building-a-blueprint-to-personalize-search-results) configured, to simulate different locations. |
-| DXP Only<br />`search.experiences.scope.group.id` | Set this when your blueprint uses an [element](../liferay-enterprise-search/search-experiences/search-blueprints/search-blueprints-elements-reference.md) that requires it: Limit Search to the Current Site, Boost Contents in a Category for a User Segment, or Staging Aware. |
+| DXP Only<br />`search.experiences.blueprint.external.reference.code` | (Preferred) Set a [search blueprint](../../liferay-enterprise-search/search-experiences/search-blueprints.md) to control the search query and configuration. |
+| DXP Only<br />`search.experiences.blueprint.id` | Set a [search blueprint](../../liferay-enterprise-search/search-experiences/search-blueprints.md) to control the search query and configuration.|
+| DXP Only<br />`search.experiences.ip.address` | Set automatically. Only use this to test blueprints [with geolocation](../../liferay-enterprise-search/search-experiences/search-blueprints/personalizing-the-search-experience.md#building-a-blueprint-to-personalize-search-results) configured, to simulate different locations. |
+| DXP Only<br />`search.experiences.scope.group.id` | Set this when your blueprint uses an [element](../../liferay-enterprise-search/search-experiences/search-blueprints/search-blueprints-elements-reference.md) that requires it: Limit Search to the Current Site, Boost Contents in a Category for a User Segment, or Staging Aware. |
 
 ## Related Topics
 

@@ -9,7 +9,7 @@ uuid: a40fe992-790a-45d0-a115-cac2e012e8cf
 ---
 # Search API
 
-You can [search for content](../../using-search/getting-started/searching-for-content.md) from a Liferay search page, but you can also use the `search` API endpoint. If you're running Liferay locally, while logged in you can visit <http://localhost:8080/o/api?endpoint=http://localhost:8080/o/search/v1.0/openapi.json> to explore the API.
+You can [search for content](../../getting-started/searching-for-content.md) from a Liferay search page, but you can also use the `search` API endpoint. If you're running Liferay locally, while logged in you can visit <http://localhost:8080/o/api?endpoint=http://localhost:8080/o/search/v1.0/openapi.json> to explore the API.
 
 !!! note
     In the beta release of the headless search API, the endpoint was at `/portal-search-api`. Beginning in Liferay 2024.Q3/Portal 7.4 GA125, the endpoint is moved to `/search`. The endpoint is backwards compatible, so existing calls to `/portal-search-api` will continue to work.
@@ -18,7 +18,7 @@ You can [search for content](../../using-search/getting-started/searching-for-co
 
 Follow these steps to generate and search for sample content. The commands below work with basic authentication and assume that you are running Liferay locally at <http://localhost:8080>, using an administrator with the email `test@liferay.com` and the password `learn`.
 
-1. Locate your [site ID](../../site-building/site-settings/site-settings-ui-reference.md#site-configuration) or retrieve it with the following command: 
+1. Locate your [site ID](../../../site-building/site-settings/site-settings-ui-reference.md#site-configuration) or retrieve it with the following command: 
 
    ```bash
    curl \
@@ -148,9 +148,9 @@ Query parameters can be used to further filter the results.
 | `sort` | Sort by ascending or descending order. |
 
 !!! warning
-    [Search Blueprints](../liferay-enterprise-search/search-experiences/search-blueprints.md) can also add sort configurations to the search page. Make sure you understand [how these blueprint-added sorts](../liferay-enterprise-search/search-experiences/search-blueprints/sorting-results-in-a-search-blueprint.md#search-blueprints-versus-the-headless-api) interact with the `sort` parameter if you plan to use both.
+    [Search Blueprints](../../liferay-enterprise-search/search-experiences/search-blueprints.md) can also add sort configurations to the search page. Make sure you understand [how these blueprint-added sorts](../../liferay-enterprise-search/search-experiences/search-blueprints/sorting-results-in-a-search-blueprint.md#search-blueprints-versus-the-headless-api) interact with the `sort` parameter if you plan to use both.
 
-See [API Query Parameters](../../headless-delivery/consuming-apis/api-query-parameters.md) for more information.
+See [API Query Parameters](../../../headless-delivery/consuming-apis/api-query-parameters.md) for more information.
 
 ### Search Request Body
 
@@ -180,10 +180,10 @@ You can set these `attributes` into the request:
 | Property | Description |
 | :--- | :--- |
 | `search.empty.search` | Set this to true to return results even if the `search` parameter is omitted from the request. |
-| DXP Only<br />`search.experiences.blueprint.external.reference.code` | (Preferred) Set a [search blueprint](../liferay-enterprise-search/search-experiences/search-blueprints.md) to control the search query and configuration. |
-| DXP Only<br />`search.experiences.blueprint.id` | Set a [search blueprint](../liferay-enterprise-search/search-experiences/search-blueprints.md) to control the search query and configuration.|
-| DXP Only<br />`search.experiences.ip.address` | Set automatically. Only use this to test blueprints [with geolocation](../liferay-enterprise-search/search-experiences/search-blueprints/personalizing-the-search-experience.md#building-a-blueprint-to-personalize-search-results) configured, to simulate different locations. |
-| DXP Only<br />`search.experiences.scope.group.id` | Set this when your blueprint uses an [element](../liferay-enterprise-search/search-experiences/search-blueprints/search-blueprints-elements-reference.md) that requires it: Limit Search to the Current Site, Boost Contents in a Category for a User Segment, or Staging Aware. |
+| DXP Only<br />`search.experiences.blueprint.external.reference.code` | (Preferred) Set a [search blueprint](../../liferay-enterprise-search/search-experiences/search-blueprints.md) to control the search query and configuration. |
+| DXP Only<br />`search.experiences.blueprint.id` | Set a [search blueprint](../../liferay-enterprise-search/search-experiences/search-blueprints.md) to control the search query and configuration.|
+| DXP Only<br />`search.experiences.ip.address` | Set automatically. Only use this to test blueprints [with geolocation](../../liferay-enterprise-search/search-experiences/search-blueprints/personalizing-the-search-experience.md#building-a-blueprint-to-personalize-search-results) configured, to simulate different locations. |
+| DXP Only<br />`search.experiences.scope.group.id` | Set this when your blueprint uses an [element](../../liferay-enterprise-search/search-experiences/search-blueprints/search-blueprints-elements-reference.md) that requires it: Limit Search to the Current Site, Boost Contents in a Category for a User Segment, or Staging Aware. |
 
 #### Adding Facet Configurations to the Request
 
@@ -237,9 +237,9 @@ For example, here's a `date-range` facet's `ranges` attribute:
 
 ### Aggregations and Search Facets in the Response
 
-You can see [aggregations](ES) and [search facets](../search-pages-and-widgets/search-facets.md) in the API response. To see aggregations,
+You can see [aggregations](ES) and [search facets](../../search-pages-and-widgets/search-facets.md) in the API response. To see aggregations,
 
-1. Add [aggregations to a search blueprint](../liferay-enterprise-search/search-experiences/search-blueprints/search-blueprints-configuration-reference.md#aggregation-configuration).
+1. Add [aggregations to a search blueprint](../../liferay-enterprise-search/search-experiences/search-blueprints/search-blueprints-configuration-reference.md#aggregation-configuration).
 1. Set the attribute `search.experiences.blueprint.external.reference.code` in you search request.
 
 Search facets are returned if you add a [facet configuration](#adding-facet-configurations-to-the-request) to the request. For example, this request body asks for a tag facet:
@@ -275,7 +275,7 @@ In the response, the returned search facet looks like this:
 
 ## Enabling Guest Access to the Search API
 
-To enable guest access to the API, [create a new service access policy](../../installation-and-upgrades/securing-liferay/securing-web-services/setting-service-access-policies.md#creating-a-service-access-policy) as follows:
+To enable guest access to the API, [create a new service access policy](../../../installation-and-upgrades/securing-liferay/securing-web-services/setting-service-access-policies.md#creating-a-service-access-policy) as follows:
 
 | Field | Entry |
 | :--- | :--- |

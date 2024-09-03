@@ -146,16 +146,6 @@ Use these terms to access information about the current user triggering the noti
 | Current User ID            | `[%CURRENT_USER_ID%]`            |
 | Current User Suffix        | `[%CURRENT_USER_SUFFIX%]`        |
 
-## Roles and Notification Recipients
-
-!!! note
-    Beginning in Liferay DXP 20243.Q3/Portal 7.4 GA132, you can set account, organization, or regular roles as the email notification recipient.
-
-User notifications are only sent to the user if they have permission to view the entry.
-
-Email notifications to roles are sent whether the role users have permission to view the entry or not. Therefore, when notifying a role you must confirm that the role's users can at least view the entry. There are some behaviors to note when notifying roles:
-
-Read [Permissions Framework Integration](../../liferay-development/objects/understanding-object-integrations/permissions-framework-integration.md) and [Restricting Access to Object Data by Account](../../liferay-development/objects/creating-and-managing-objects/using-system-objects-with-custom-objects/restricting-access-to-object-data-by-account.md) for more details on objects and permission.
 
 ## Related Topics
 

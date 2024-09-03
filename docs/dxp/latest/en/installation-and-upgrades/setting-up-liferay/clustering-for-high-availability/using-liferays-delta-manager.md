@@ -6,7 +6,7 @@ taxonomy-category-names:
 - Liferay Self-Hosted
 ---
 
-## Using Liferay's Delta Manager for Improved Session Replication Performance
+# Using Liferay's Delta Manager for Improved Session Replication Performance
 
 To ensure user session data is synchronized across all instances in the cluster, Liferay supports session replication. That way, if one instance fails, user sessions are not lost as they are replicated to other nodes in the cluster. If you are using a DXP cluster on Tomcat, you can use Liferay's implementation of `DeltaManager` for improved performance.
 

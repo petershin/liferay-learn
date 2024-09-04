@@ -54,50 +54,52 @@ Examples:
 
 -  With a prefix (`headless-builder`):
 
-   API Application is the root model and API Endpoint is its descendant. So, the REST context paths are:
+   API Application is the root model and API Endpoint is its descendant, making the REST endpoints
 
-   For APIApplication: `/headless-builder/application`.
+   For `APIApplication`: `/headless-builder/application`.
 
-   For APIEndpoint: `/headless-builder/applications/endpoints`.
+   For `APIEndpoint`: `/headless-builder/applications/endpoints`.
 
    !!! note
        The prefix indicates the category or module in which the object definitions are organized. These prefixes help in logically grouping related API endpoints.
 
+       <!-- I don't understand from this what the prefix is or where it comes from. Can developers just make up a prefix, or does it come from somewhere? If it indicates the category or module where the object definitions are organized, where can developers find these categories or module names? -Rich -->
+
 -  Without a prefix:
 
-   CommerceReturn is the root model and CommerceReturnItem is its descendant. So, the REST context paths are:
+   `CommerceReturn` is the root model and `CommerceReturnItem` is its descendant, making the REST endpoints
 
-   For CommerceReturn: `/commerce-returns`.
+   For `CommerceReturn`: `/commerce-returns`.
 
-   For CommerceReturnItem: `/commerce-returns/commerce-return/items`.
+   For `CommerceReturnItem`: `/commerce-returns/commerce-return/items`.
 
-Here's a table with modifiable system objects and their paths for reference. Use this information to understand how to construct REST context paths when working with modifiable system objects.
+The table below shows modifiable system objects and their paths for reference. Use this information to understand how to construct REST context paths when working with modifiable system objects.
 
-| Object Definition          | REST Context Path                            |
-| -------------------------- | -------------------------------------------- |
-| APIApplication             | `/headless-builder/applications`             |
-| APIEndpoint                | `/headless-builder/endpoints`                |
-| APIFilter                  | `/headless-builder/filters`                  |
-| APIProperty                | `/headless-builder/properties`               |
-| APISchema                  | `/headless-builder/schemas`                  |
-| APISort                    | `/headless-builder/sorts`                    |
-| Bookmark                   | `/bookmarks`                                 |
-| CommerceReturn             | `/commerce-returns`                          |
-| CommerceReturnItem         | `/commerce-return-items`                     |
-| FDSAction                  | `/data-set-manager/actions`                  |
-| FDSCardsSection            | `/data-set-manager/cards-sections`           |
-| FDSClientExtensionFilter   | `/data-set-manager/client-extension-filters` |
-| FDSDateFilter              | `/data-set-manager/date-filters`             |
-| FDSDynamicFilter           | `/data-set-manager/dynamic-filters`          |
-| FDSEntry                   | `/data-set-manager/entries`                  |
-| FDSField                   | `/data-set-manager/fields`                   |
-| FDSListSection             | `/data-set-manager/list-sections`            |
-| FDSSort                    | `/data-set-manager/sorts`                    |
-| FDSView                    | `/data-set-manager/views`                    |
-| FunctionalCookieEntry      | `/functional-cookies-entries`                |
-| NecessaryCookieEntry       | `/necessary-cookies-entries`                 |
-| PerformanceCookieEntry     | `/performance-cookies-entries`               |
-| PersonalizationCookieEntry | `/personalization-cookies-entries`           |
+ | Object Definition            | REST Context Path                            |
+ |------------------------------|----------------------------------------------|
+ | `APIApplication`             | `/headless-builder/applications`             |
+ | `APIEndpoint`                | `/headless-builder/endpoints`                |
+ | `APIFilter`                  | `/headless-builder/filters`                  |
+ | `APIProperty`                | `/headless-builder/properties`               |
+ | `APISchema`                  | `/headless-builder/schemas`                  |
+ | `APISort`                    | `/headless-builder/sorts`                    |
+ | `Bookmark`                   | `/bookmarks`                                 |
+ | `CommerceReturn`             | `/commerce-returns`                          |
+ | `CommerceReturnItem`         | `/commerce-return-items`                     |
+ | `FDSAction`                  | `/data-set-manager/actions`                  |
+ | `FDSCardsSection`            | `/data-set-manager/cards-sections`           |
+ | `FDSClientExtensionFilter`   | `/data-set-manager/client-extension-filters` |
+ | `FDSDateFilter`              | `/data-set-manager/date-filters`             |
+ | `FDSDynamicFilter`           | `/data-set-manager/dynamic-filters`          |
+ | `FDSEntry`                   | `/data-set-manager/entries`                  |
+ | `FDSField`                   | `/data-set-manager/fields`                   |
+ | `FDSListSection`             | `/data-set-manager/list-sections`            |
+ | `FDSSort`                    | `/data-set-manager/sorts`                    |
+ | `FDSView`                    | `/data-set-manager/views`                    |
+ | `FunctionalCookieEntry`      | `/functional-cookies-entries`                |
+ | `NecessaryCookieEntry`       | `/necessary-cookies-entries`                 |
+ | `PerformanceCookieEntry`     | `/performance-cookies-entries`               |
+ | `PersonalizationCookieEntry` | `/personalization-cookies-entries`           |
 
 ## Identify the Site Containing the Data
 

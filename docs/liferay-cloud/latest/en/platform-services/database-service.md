@@ -11,11 +11,14 @@ uuid: f7f6cc00-f0b7-4f30-9599-96cd842e7d18
 ---
 # Database Service
 
-The database service is a distributed, relational database that simplifies the setup, operation, and scaling of your applications. It's a private service inside your application environment. It can only communicate with your other services, not the public internet. The database in Liferay Cloud has case-sensitive table and column names.
+The database service is a proxy in Liferay Cloud to the Cloud SQL service in the Google Cloud Platform where the database itself resides. The database service provides tools for managing and monitoring the Cloud SQL instances. It simplifies the setup, operation, and scaling of your applications. It's a private service inside your application environment and it can only communicate with your other services, not the public internet. The database in Liferay Cloud has case-sensitive table and column names.
 
 ![The database service is one of several services available in Liferay Cloud.](./database-service/images/01.png)
 
 See the [Database service limitations](../reference/platform-limitations.md#database-service) section for more information.
+
+!!! important
+    The resources consumed by the database service in Liferay Cloud are separate from the resources consumed on Cloud SQL.
 
 ## Core Database Settings and User Management Variables
 

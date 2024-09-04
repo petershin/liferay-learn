@@ -3,7 +3,7 @@ uuid: 87c9589b-586d-4c50-984b-5c3cd1b0d32d
 ---
 # Displaying Clarity's Content
 
-While categories and tags make your content more accessible to users, you can also leverage them as site building tools with Asset Publishers and Collections, two Liferay features for displaying organized web content.
+In the previous lesson, you learned how to organize Clarity's content to make it more accessible to users. Here you'll learn how to display that content with Asset Publishers and Collections.
 
 ## Asset Publishers
 
@@ -17,14 +17,14 @@ Collections focus only on defining the criteria for selecting assets, leaving di
 
 * **Filter and Personalize Content**: You can define specific criteria, such as tags, categories, or publication dates, to filter and display only relevant items within a collection. This enables you to personalize the content experience for different user groups.
 
-* **Simplify Content Presentation**: You can easily embed collections into your Liferay pages using dedicated out-of-the-box fragments like *Collection Display*. This streamlines the process of showcasing curated content within website layouts. Even if you require the complex templating functionality of Asset Publishers, you should still use a collection as the data source for your asset publisher. 
+* **Simplify Content Presentation**: You can easily embed collections into your Liferay pages using dedicated out-of-the-box fragments like *Collection Display*. This streamlines the process of showcasing curated content within website layouts. 
 
-For all these reasons, Collections are the recommended feature for selecting assets for display in Liferay, and the feature Clarity will be using to display their organized web content.
+For all these reasons, Collections are the recommended feature for selecting assets for display in Liferay. You should always use Collections for asset selection, even if you need an Asset Publisher for complex templating. Doing so will future-proof your solution and lay the groundwork for you to leverage newer capabilities like segmented data.
 
 ## Exercise: Creating a Manual Collection
 <!--Exercise 13a-->
 
-ILiferay Collections are lists of content items that you can showcase in your site pages. You can group different content types together, making it easier to find and display related items. Each list can be defined manually or dynamically.
+Liferay Collections are lists of content items that you can showcase in your site pages. You can group different content types together, making it easier to find and display related items. Each list can be defined manually or dynamically.
 
 Here you'll add web content articles to a manual collection and map them to Clarity's home page as Walter Douglas.
 
@@ -249,3 +249,8 @@ The Header Announcement Bar is now visible on all pages that use the Primary Mas
 
 ## Conclusion
 
+Great! You've used both manual and dynamic collections to display content on Clarity's website. Next, let's explore how Clarity can leverage Liferay's Commerce features to create content for their products catalog.
+
+Next Up: [Creating Clarity’s Commerce Content](./creating-claritys-commerce-content.md)
+
+<!-- TODO: Add Additional Resources section. -->

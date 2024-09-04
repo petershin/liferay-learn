@@ -9,9 +9,7 @@ uuid: d304bf82-c70f-4470-ac61-8d41bf737851
 !!! note
     While Liferay provides other applications for creating content, you can address most use cases for an enterprise website with the Web Content application.
 
-Clarity has chosen to use Web Content for the flexibility of implementing custom structures and the efficiency of rendering content with fragments and templates. With Web Content, Clarity can rapidly produce dynamic, versatile assets without limiting the creativity of their writers and editors.
-
-<!--TASK: Avoid "Clarity has chosen." Instead frame it as "For Clarity's use case" or "Clarity can." We just want to highlight how the feature is a good fit for their solution.-->
+Clarity can use Web Content for the flexibility of implementing custom structures and the efficiency of rendering content with fragments and templates. With Web Content, Clarity can rapidly produce dynamic, versatile assets without limiting the creativity of their writers and editors.
 
 ## Web Content Structures
 

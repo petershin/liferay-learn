@@ -146,9 +146,9 @@ You have now defined and assigned categories to your FAQ web content.
 
 ## Conclusion
 
-Great! You've used categories and collections to help organize and display Clarity's content. Next, let's explore how Clarity can leverage Liferay's Commerce features to create content for their products catalog.
+Great! You've used tags and categories to organize Clarity's content. Next, let's learn how to display Clarity's content with collections.
 
-Next Up: [Creating Clarity’s Commerce Content](./creating-claritys-commerce-content.md)
+Next Up: [Displaying Clarity's Content](./displaying-claritys-content.md)
 
 ## Additional Resources
 

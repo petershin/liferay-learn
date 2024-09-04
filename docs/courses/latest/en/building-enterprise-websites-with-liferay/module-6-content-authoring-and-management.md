@@ -21,7 +21,7 @@ In the previous module, you learned about some of the tools, techniques, and bes
 
 By the end of this module, you'll know how to:
 
-* Create store, and leverage digital assets across your Liferay instance
+* Create, store, and leverage digital assets across your Liferay instance
 * Build content structures and templates to enforce consistent standards
 * Organize your content using tags, categories, and collections
 * Leverage commerce features to create product-related content

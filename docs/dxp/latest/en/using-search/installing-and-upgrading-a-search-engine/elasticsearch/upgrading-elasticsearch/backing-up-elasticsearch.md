@@ -21,10 +21,6 @@ Here are some representative upgrade scenarios:
 
 ## Creating Elasticsearch Cluster Backups
 
-```{tip}
-It's convenient to create and manage snapshots via the [Kibana 7.x UI](https://www.elasticsearch.co/guide/en/kibana/8.13/snapshot-repositories.html).
-```
-
 Back up your Elasticsearch cluster and test restoring the backup in three steps: 
 
 1. Create a repository

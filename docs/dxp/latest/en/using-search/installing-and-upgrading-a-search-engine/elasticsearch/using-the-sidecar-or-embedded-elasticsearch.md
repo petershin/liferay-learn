@@ -9,7 +9,7 @@ uuid: fd689e2a-cd82-4749-ac09-9df12cee519a
 
 The Liferay Tomcat bundles installed via a ZIP file or Docker image include an Elasticsearch node that starts with Liferay. The node in Liferay 7.3+ and 7.4+ runs in a separate JVM as a sidecar server and the node in Liferay 7.2 is embedded in the Liferay server.
 
-The Elasticsearch server is accessible at these URLs:
+If you're running Liferay locally, the Elasticsearch server is accessible at these URLs:
 
 * <http://localhost:9201> on Liferay 7.3+ and 7.4+
 * <http://localhost:9200> on Liferay 7.2
@@ -22,7 +22,7 @@ Here's example sidecar server output:
   "cluster_name" : "LiferayElasticsearchCluster",
   "cluster_uuid" : "aDsZ5VWTQ96-lT-7WmcoHg",
   "version" : {
-    "number" : "7.17.18",
+    "number" : "[VERSION]",
     "build_flavor" : "unknown",
     "build_type" : "unknown",
     "build_hash" : "e3b0c3d3c5c130e1dc6d567d6baef1c73eeb2059",
@@ -36,21 +36,27 @@ Here's example sidecar server output:
 }
 ```
 
+In addition, the Liferay log prints information about the running sidecar server. For example,
+
+```bash
+2024-08-28 14:27:30.450 INFO  [SystemExecutorServiceUtil-12][Sidecar:100] Sidecar Elasticsearch [VERSION] liferay_sidecar started at 127.0.0.1:9201
+```
+
+The sidecar version is updated regularly. To check the version without a running Liferay, see the [`sidecar.version` file](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-search-elasticsearch7/portal-search-elasticsearch7-impl/src/main/resources/META-INF/sidecar/sidecar.version) in the Liferay source code. Replace the git tag (i.e., [$LIFERAY_LEARN_PORTAL_GIT_TAG$]) to match your version.
+
 While the bundled Elasticsearch servers are convenient for development and testing, neither is suitable for production. 
 
-```{note}
-While it's not a supported production configuration, installing Kibana to monitor the bundled Elasticsearch server is useful during development and testing. 
-- On Liferay 7.3, install the [OSS only Kibana build](https://www.elastic.co/downloads/kibana-oss).
-- On Liferay DXP 7.4 U17+ and Liferay Portal 7.4 GA17+, install the free version of [Kibana](https://www.elastic.co/downloads/past-releases#kibana).
+!!! note
+    While it's not a supported production configuration, installing Kibana to monitor the bundled Elasticsearch server is useful during development and testing. 
+       - On Liferay 7.3, install the [OSS only Kibana build](https://www.elastic.co/downloads/kibana-oss).
+       - On Liferay DXP 7.4 U17+ and Liferay Portal 7.4 GA17+, install the free version of [Kibana](https://www.elastic.co/downloads/past-releases#kibana).
 
-See [the troubleshooting section if you encounter errors with the setup](#error-connecting-to-the-sidecar-elasticsearch-from-kibana).
-```
+    See [the troubleshooting section if you encounter errors with the setup](#error-connecting-to-the-sidecar-elasticsearch-from-kibana).
 
 You wouldn't run an embedded database like HSQL in production, and you shouldn't run the bundled Elasticsearch server in production either. Instead, run Elasticsearch in remote mode, as a standalone server or cluster of server nodes.
 
-```{important}
-The search tuning apps [Synonym Sets](../../search-administration-and-tuning/synonym-sets.md) and [Result Rankings](../../search-administration-and-tuning/result-rankings.md) used the search index for primary data storage on Liferay 7.2 and 7.3. No data for these apps was stored in the Liferay database. Therefore, if you have Synonym Sets or Result Rankings configured while using the sidecar or embedded Elasticsearch in Liferay 7.2 and 7.3, switching to a remote Elasticsearch server and reindexing does _not_ restore those configurations. Instead you must manually bring the Synonym Sets and Result Rankings into the remote Elasticsearch cluster. See the [Upgrade Guide](../elasticsearch/upgrading-elasticsearch.md) for details on using Elastic's [Snapshot and Restore](https://www.elastic.co/guide/en/elasticsearch/reference/8.13/snapshot-restore.html) feature to preserve these indexes.
-```
+!!! important
+    The search tuning apps [Synonym Sets](../../search-administration-and-tuning/synonym-sets.md) and [Result Rankings](../../search-administration-and-tuning/result-rankings.md) used the search index for primary data storage on Liferay 7.2 and 7.3. No data for these apps was stored in the Liferay database. Therefore, if you have Synonym Sets or Result Rankings configured while using the sidecar or embedded Elasticsearch in Liferay 7.2 and 7.3, switching to a remote Elasticsearch server and reindexing does _not_ restore those configurations. Instead you must manually bring the Synonym Sets and Result Rankings into the remote Elasticsearch cluster. See the [Upgrade Guide](../elasticsearch/upgrading-elasticsearch.md) for details on using Elastic's [Snapshot and Restore](https://www.elastic.co/guide/en/elasticsearch/reference/8.13/snapshot-restore.html) feature to preserve these indexes.
 
 ## Bundled Elasticsearch Server Use cases
 
@@ -65,9 +71,7 @@ Here are common uses for the default Elasticsearch server (sidecar and embedded)
 
 An Elasticsearch sidecar server is included with the Tomcat bundles and Docker images in Liferay 7.4 (DXP and Portal), Liferay DXP 7.3, and Liferay Portal 7.3 GA4+. There are some key differences if you're installing the Liferay WAR onto any supported application server.
 
-```{note}
 In the table below, the notation _7.3+_ includes Liferay 7.4 (DXP and Portal).
-```
 
 | Liferay DXP Flavor       | Default Elasticsearch | Pre-Installed | Requires Manual Intervention |
 | :--- | :--- | :--- | :--- |
@@ -84,9 +88,8 @@ If you downloaded a bundle for an application server besides Tomcat, when you st
 
 Installation instructions for Liferay on the [WebSphere](../../../installation-and-upgrades/installing-liferay/installing-liferay-on-an-application-server/installing-on-websphere.md) and [Weblogic](../../../installation-and-upgrades/installing-liferay/installing-liferay-on-an-application-server/installing-on-weblogic.md) application servers include directions for manually providing the Elasticsearch archives required for the sidecar server to be initialized.
 
-```{important}
-The bundled Elasticsearch server is useful for development and testing purposes and must not be used in production. See [Installing Elasticsearch](./getting-started-with-elasticsearch.md) to learn about installing a remote search engine.
-```
+!!! important
+    The bundled Elasticsearch server is useful for development and testing purposes and must not be used in production. See [Installing Elasticsearch](./getting-started-with-elasticsearch.md) to learn about installing a remote search engine.
 
 ## Embedded Versus Sidecar
 

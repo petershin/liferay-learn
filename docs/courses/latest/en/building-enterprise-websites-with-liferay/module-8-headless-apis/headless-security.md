@@ -41,7 +41,7 @@ Up Next: [Using Headless APIs](./using-headless-apis.md)
 
 ## Additional Resources
 
-See our documentation to learn more about ensuring robust headless security with Liferay's APIs:
+See official documentation to learn more about using Liferay's APIs securely:
 
 * [Using OAuth 2.0](https://learn.liferay.com/w/dxp/headless-delivery/using-oauth2)
 * [Making Unauthenticated Requests](https://learn.liferay.com/w/dxp/headless-delivery/consuming-apis/making-unauthenticated-requests)

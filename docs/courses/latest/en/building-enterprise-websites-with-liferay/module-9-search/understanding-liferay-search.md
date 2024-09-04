@@ -79,7 +79,7 @@ Next Up: [Understanding and Customizing Search Results Pages](./understanding-an
 
 ## Additional Resources
 
-See our documentation to learn more about Liferay's search capabilities:
+See official documentation to learn more about Liferay's search capabilities:
 
 * [Search Overview](https://learn.liferay.com/w/dxp/using-search/getting-started/search-overview)
 * [Searching for Content](https://learn.liferay.com/w/dxp/using-search/getting-started/searching-for-content)

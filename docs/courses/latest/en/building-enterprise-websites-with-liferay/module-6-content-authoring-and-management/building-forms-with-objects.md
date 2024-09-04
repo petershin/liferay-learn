@@ -244,7 +244,7 @@ In the next module, you'll learn about using Liferay analytics and personalizati
 
 ## Additional Resources
 
-See our documentation to learn more about Liferay Objects:
+See official documentation to learn more about Liferay objects:
 
 * [Objects](https://learn.liferay.com/w/dxp/liferay-development/objects)
 * [Using Fragments to Build Forms](https://learn.liferay.com/w/dxp/liferay-development/objects/using-fragments-to-build-forms)

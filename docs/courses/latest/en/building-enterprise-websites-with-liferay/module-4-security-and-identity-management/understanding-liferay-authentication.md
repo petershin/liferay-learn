@@ -76,7 +76,7 @@ Next Up: [Using Third-Party Services for Authentication and SSO](./using-third-p
 
 ## Additional Resources
 
-See our documentation to learn more about Liferay's authentication features and their various options:
+See official documentation to learn more about Liferay's authentication features and configuration options:
 
 * [Authentication Basics](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/authentication-basics)
 * [User Authentication](https://learn.liferay.com/w/dxp/system-administration/configuring-liferay/virtual-instances/user-authentication)

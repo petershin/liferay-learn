@@ -91,7 +91,7 @@ Up Next: [Headless Security](./headless-security.md)
 
 ## Additional Resources
 
-See our documentation to learn more about Liferay's headless APIs:
+See official documentation to learn more about Liferay's headless framework:
 
 * [Headless Delivery](https://learn.liferay.com/w/dxp/headless-delivery)
 * [Using Liferay as a Headless Platform](https://learn.liferay.com/w/dxp/headless-delivery/using-liferay-as-a-headless-platform)

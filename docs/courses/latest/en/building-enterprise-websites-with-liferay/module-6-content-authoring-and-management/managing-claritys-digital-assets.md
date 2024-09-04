@@ -136,7 +136,7 @@ Next Up: [Creating Clarity's Web Content](./creating-claritys-web-content.md)
 
 ## Additional Resources
 
-See our documentation to learn more about Liferay's digital asset management features:
+See official documentation to learn more about Liferay's digital asset management features:
 
 * [Asset Libraries](https://learn.liferay.com/web/guest/w/dxp/content-authoring-and-management/asset-libraries)
 * [Documents and Media](https://learn.liferay.com/web/guest/w/dxp/content-authoring-and-management/documents-and-media)

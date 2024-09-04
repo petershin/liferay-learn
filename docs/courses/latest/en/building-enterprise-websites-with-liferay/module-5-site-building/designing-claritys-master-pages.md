@@ -312,7 +312,7 @@ Next Up: [Creating Navigation Menus for Clarity’s Master Pages](./creating-nav
 
 ## Additional Resources
 
-See our documentation to learn more about designing and building page templates:
+See official documentation to learn more about designing and building page templates:
 
 * [Master Page Templates](https://learn.liferay.com/w/dxp/site-building/creating-pages/defining-headers-and-footers/master-page-templates)
 * [Content Page Editor UI Reference](https://learn.liferay.com/w/dxp/site-building/creating-pages/using-content-pages/content-page-editor-ui-reference)

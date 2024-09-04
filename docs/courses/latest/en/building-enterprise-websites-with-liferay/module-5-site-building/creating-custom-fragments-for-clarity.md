@@ -169,7 +169,7 @@ Next Up: [Applying Clarity's Brand Styling](./applying-claritys-brand-styling.md
 
 ## Additional Resources
 
-See our documentation to learn more about creating and managing Liferay Fragments:
+See official documentation to learn more about creating and managing Liferay fragments:
 
 * [Using Fragments](https://learn.liferay.com/web/guest/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments)
 * [Page Fragment Editor Interface Reference](https://learn.liferay.com/web/guest/w/dxp/site-building/developer-guide/reference/fragments/page-fragment-editor-interface-reference)

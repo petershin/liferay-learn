@@ -183,7 +183,7 @@ Up Next: [Client Extensions](./client-extensions.md)
 
 ## Additional Resources
 
-See our documentation to learn more about Liferay Workspaces and our development tools:
+See official documentation to learn more about Liferay workspaces and development tools:
 
 * [Liferay Workspace](https://learn.liferay.com/web/guest/w/dxp/building-applications/tooling/liferay-workspace)
 * [Creating A Liferay Workspace](https://learn.liferay.com/w/dxp/liferay-development/tooling/liferay-workspace/creating-a-liferay-workspace)

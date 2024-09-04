@@ -142,7 +142,7 @@ Up Next: [Module 8: Headless APIs](../module-8-headless-apis.md)
 
 ## Additional Resources
 
-See our documentation to learn more about Analytics Cloud's capabilities:
+See official documentation to learn more about personalization and segmentation:
 
 * [Personalizing Site Experience](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience)
 * [Segmentation](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience/segmentation)

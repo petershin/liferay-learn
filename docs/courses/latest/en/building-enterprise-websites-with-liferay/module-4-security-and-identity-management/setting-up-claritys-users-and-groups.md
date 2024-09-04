@@ -125,7 +125,7 @@ Next Up: [Creating and Assigning Roles to Clarity's Users](./creating-and-assign
 
 ## Additional Resources
 
-See our documentation to learn more about users and user groups:
+See official documentation to learn more about users and user groups:
 
 * [Users](https://learn.liferay.com/w/dxp/users-and-permissions/users)
 * [Creating and Managing User Groups](https://learn.liferay.com/w/dxp/users-and-permissions/user-groups/creating-and-managing-user-groups#creating-and-managing-user-groups)

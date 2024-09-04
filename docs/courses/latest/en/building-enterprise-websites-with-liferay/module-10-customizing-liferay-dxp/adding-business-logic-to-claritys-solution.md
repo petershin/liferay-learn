@@ -215,7 +215,7 @@ Up Next: [Designing User Interfaces](./designing-user-interfaces.md)
 
 ## Additional Resources
 
-See our documentation to learn more about leveraging Liferay's capabilities for integrating business logic into your custom solutions:
+See official documentation to learn more about adding business logic to custom solutions:
 
 * [Integrating Microservices](https://learn.liferay.com/web/guest/w/dxp/liferay-development/integrating-microservices)
 * [Enabling Workflow for Objects](https://learn.liferay.com/w/dxp/liferay-development/objects/enabling-workflows-for-objects)

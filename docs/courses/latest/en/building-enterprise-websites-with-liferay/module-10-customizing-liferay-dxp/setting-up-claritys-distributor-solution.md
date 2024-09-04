@@ -307,7 +307,7 @@ Next Up: [Implementing Business Logic](./implementing-business-logic.md).
 
 ## Additional Resources
 
-See our documentation to learn more about object definitions and client extensions:
+See official documentation to learn more about using client extensions to migrate object definitions:
 
 * [Importing/Exporting Data](https://learn.liferay.com/w/dxp/liferay-development/importing-exporting-data)
 * [Creating and Managing Objects](https://learn.liferay.com/web/guest/w/dxp/building-applications/objects/creating-and-managing-objects)

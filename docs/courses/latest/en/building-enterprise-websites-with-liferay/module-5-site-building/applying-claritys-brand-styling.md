@@ -112,7 +112,7 @@ Up Next: [Module 6: Content Authoring & Management](../module-6-content-authorin
 
 ## Additional Resources
 
-See our documentation to learn more about Liferay's custom site appearance features:
+See official documentation to learn more about customizing site appearance:
 
 * [Site Appearance](https://learn.liferay.com/w/dxp/site-building/site-appearance)
 * [Changing Your Site’s Appearance](https://learn.liferay.com/web/guest/w/dxp/getting-started/changing-your-sites-appearance)

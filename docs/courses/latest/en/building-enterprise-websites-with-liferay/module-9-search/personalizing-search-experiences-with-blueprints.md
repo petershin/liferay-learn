@@ -266,7 +266,7 @@ Up Next: [Module 10 - Customizing Liferay DXP](../module-10-customizing-liferay-
 
 ## Additional Resources
 
-See our documentation to learn more about how to tailor search experiences using search blueprints:
+See official documentation to learn more about using search blueprints to tailor search experiences:
 
 * [Search Blueprints](https://learn.liferay.com/w/dxp/using-search/liferay-enterprise-search/search-experiences/search-blueprints)
 * [Collections with Search Blueprints](https://learn.liferay.com/w/dxp/using-search/liferay-enterprise-search/search-experiences/search-blueprints/collections-with-search-blueprints)

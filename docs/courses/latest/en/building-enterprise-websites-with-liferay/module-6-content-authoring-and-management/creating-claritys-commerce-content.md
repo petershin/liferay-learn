@@ -460,7 +460,7 @@ Next Up: [Publishing Content with Workflows](./publishing-content-with-workflows
 
 ## Additional Resources
 
-See our documentation to learn more about using Liferay Commerce for product content creation:
+See official documentation to learn more about using Liferay Commerce features:
 
 * [Introduction to Liferay Commerce](https://learn.liferay.com/w/commerce/starting-a-store/introduction-to-liferay-commerce)
 * [Catalogs](https://learn.liferay.com/w/commerce/product-management/catalogs)

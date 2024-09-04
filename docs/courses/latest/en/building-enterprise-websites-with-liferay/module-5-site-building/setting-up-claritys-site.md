@@ -81,7 +81,7 @@ Next Up: [Configuring the Clarity Site](./configuring-the-clarity-site.md)
 
 ## Additional Resources
 
-See our documentation to learn more about Liferay's site building and management features:
+See official documentation to learn more about Liferay's site building and management features:
 
 * [Getting Started with Site Building](https://learn.liferay.com/w/dxp/site-building/getting-started-with-site-building)
 * [Sites](https://learn.liferay.com/w/dxp/site-building/sites)

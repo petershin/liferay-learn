@@ -60,7 +60,7 @@ Up Next: [Adding Business Logic to Clarity's Solution](./adding-business-logic-t
 
 ## Additional Resources
 
-See our documentation to learn more about leveraging Liferay's capabilities for integrating business logic into your custom solutions:
+See official documentation to learn more about adding business logic to custom solutions:
 
 * [Object Validations](https://learn.liferay.com/w/dxp/liferay-development/objects/creating-and-managing-objects/validations)
 * [Workflow](https://learn.liferay.com/w/dxp/process-automation/workflow)

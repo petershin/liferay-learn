@@ -39,7 +39,7 @@ Next Up: [Course Conclusion](../conclusion.md)
 
 ## Additional Resources
 
-See our documentation to learn more about desiging user interfaces for your custom solutions:
+See official documentation to learn more about designing user interfaces for custom solutions:
 
 * [Using Fragments to Build Forms](https://learn.liferay.com/w/dxp/liferay-development/objects/using-fragments-to-build-forms)
 * [Using Display Page Templates](https://learn.liferay.com/w/dxp/site-building/displaying-content/using-display-page-templates)

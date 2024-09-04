@@ -73,7 +73,7 @@ Up Next: [Personalizing Experiences for Users](./personalizing-experiences-for-u
 
 ## Additional Resources
 
-See our documentation to learn more about Analytics Cloud's capabilities:
+See official documentation to learn more about Analytics Cloud:
 
 * [Getting Started with Analytics Cloud](https://learn.liferay.com/w/analytics-cloud/getting-started)
 * [Viewing the Analytics Dashboard](https://learn.liferay.com/w/analytics-cloud/getting-started/viewing-the-analytics-dashboard)

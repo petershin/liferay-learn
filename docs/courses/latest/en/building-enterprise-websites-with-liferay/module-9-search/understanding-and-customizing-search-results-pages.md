@@ -203,7 +203,7 @@ Next Up: [Personalizing search experiences with blueprints](./personalizing-sear
 
 ## Additional Resources
 
-See our documentation to learn more about leveraging Liferay's search features to create effective search pages:
+See official documentation to learn more about creating effective search pages:
 
 * [Working with Search Pages](https://learn.liferay.com/w/dxp/using-search/search-pages-and-widgets/working-with-search-pages)
 * [Search Results](https://learn.liferay.com/w/dxp/using-search/search-pages-and-widgets/search-results)

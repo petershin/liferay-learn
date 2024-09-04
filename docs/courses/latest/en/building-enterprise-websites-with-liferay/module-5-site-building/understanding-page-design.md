@@ -113,7 +113,7 @@ Next Up: [Designing Clarity’s Master Pages](./designing-claritys-master-pages.
 
 ## Additional Resources
 
-See our documentation to learn more about Liferay's page design features:
+See official documentation to learn more about Liferay's page design features:
 
 * [Using Content Pages](https://learn.liferay.com/w/dxp/site-building/creating-pages/using-content-pages)
 * [Page Fragments and Widgets](https://learn.liferay.com/web/guest/w/dxp/site-building/creating-pages/page-fragments-and-widgets)

@@ -74,7 +74,7 @@ Next Up: [Understanding Liferay Authorization and User Management](./understandi
 
 ## Additional Resources
 
-See our documentation to learn more about configuring SSO with other identity management solutions or integrating user directories with Liferay:
+See official documentation to learn more about setting up authentication, SSO, and user directories with Liferay:
 
 * [Configuring Single Sign-On](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/configuring-sso)
 * [Connecting a User Directory](https://learn.liferay.com/w/dxp/users-and-permissions/connecting-to-a-user-directory/connecting-to-an-ldap-directory)

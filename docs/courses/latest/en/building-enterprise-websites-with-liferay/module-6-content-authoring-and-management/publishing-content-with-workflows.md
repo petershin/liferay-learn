@@ -223,7 +223,7 @@ Up Next: [Building Forms with Objects](./building-forms-with-objects.md)
 
 ## Additional Resources
 
-See our documentation to learn more about Liferay's publishing tools and the workflow application:
+See official documentation to learn more about Liferay's publishing tools:
 
 * [Publishing Tools](https://learn.liferay.com/w/dxp/site-building/publishing-tools)
 * [Workflow](https://learn.liferay.com/web/guest/w/dxp/process-automation/workflow)

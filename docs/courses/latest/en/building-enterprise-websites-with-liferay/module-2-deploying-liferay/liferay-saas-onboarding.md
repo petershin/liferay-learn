@@ -60,7 +60,7 @@ Up Next: [Module 3: Developer Setup](../module-3-developer-setup.md)
 
 ## Additional Resources
 
-See our documentation to learn more about Liferay Cloud:
+See official documentation to learn more about Liferay Cloud:
 
 * [Getting Started with Liferay Cloud](https://learn.liferay.com/w/liferay-cloud/getting-started)
 * [Initial Setup Overview for Liferay Cloud](https://learn.liferay.com/w/liferay-cloud/getting-started/initial-setup-overview)

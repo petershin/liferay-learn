@@ -249,7 +249,7 @@ Next Up: [Module 5: Site Building](../module-5-site-building.md)
 
 ### Additional Resources
 
-See our documentation to learn more about managing roles and permissions in Liferay:
+See official documentation to learn more about managing roles and permissions:
 
 * [Understanding Roles and Permissions](https://learn.liferay.com/w/dxp/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions)
 * [Creating and Managing User Groups](https://learn.liferay.com/w/dxp/users-and-permissions/user-groups/creating-and-managing-user-groups)

@@ -117,7 +117,7 @@ Up Next: [Setting Up Clarity's Distributor Solution](./setting-up-claritys-distr
 
 ## Additional Resources
 
-See our documentation to learn more about Liferay Objects' capabilities for modeling data structures:
+See official documentation to learn more about modeling data structures with Liferay Objects:
 
 * [Creating and Managing Objects](https://learn.liferay.com/w/dxp/liferay-development/objects/creating-and-managing-objects)
 * [Picklists](https://learn.liferay.com/w/dxp/liferay-development/objects/picklists)

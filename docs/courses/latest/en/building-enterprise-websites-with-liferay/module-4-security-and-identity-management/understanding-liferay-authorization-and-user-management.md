@@ -129,7 +129,7 @@ Next Up: [Setting Up Clarity's Users and Groups](./setting-up-claritys-users-and
 
 ## Additional Resources
 
-See our documentation to learn more about Liferay's authorization and user management features:
+See official documentation to learn more about Liferay's authorization and user management features:
 
 * [Users](https://learn.liferay.com/w/dxp/users-and-permissions/users)
 * [Understanding Roles and Permissions](https://learn.liferay.com/w/dxp/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions)

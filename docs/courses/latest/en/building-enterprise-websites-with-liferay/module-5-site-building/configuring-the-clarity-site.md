@@ -217,7 +217,7 @@ Next Up: [Adding Pages to Clarity's Site](./adding-pages-to-claritys-site.md)
 
 ## Additional Resources
 
-See our documentation to learn more about the various configuration options for setting up your site:
+See official documentation to learn more about site configuration options:
 
 * [Site Settings](https://learn.liferay.com/w/dxp/site-building/site-settings)
 * [Site Membership](https://learn.liferay.com/w/dxp/site-building/sites/site-membership)

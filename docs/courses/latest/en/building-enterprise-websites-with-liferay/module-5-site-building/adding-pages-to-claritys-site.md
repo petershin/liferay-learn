@@ -154,7 +154,7 @@ Next Up: [Understanding Page Design](./understanding-page-design.md)
 
 ## Additional Resources
 
-See our documentation to learn more about Liferay pages:
+See official documentation to learn more about site pages:
 
 * [Understanding Pages](https://learn.liferay.com/w/dxp/site-building/creating-pages/understanding-pages)
 * [Using Content Pages](https://learn.liferay.com/w/dxp/site-building/creating-pages/using-content-pages)

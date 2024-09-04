@@ -84,7 +84,7 @@ Next Up: [Module 4: Security and Identity Management](../module-4-security-and-i
 
 ## Additional Resources
 
-See our documentation to learn more about Client Extensions:
+See official documentation to learn more about client extensions:
 
 * [Client Extensions](https://learn.liferay.com/w/dxp/liferay-development/client-extensions)
 * [Types of Client Extensions](https://learn.liferay.com/w/dxp/liferay-development/client-extensions#types-of-client-extensions)

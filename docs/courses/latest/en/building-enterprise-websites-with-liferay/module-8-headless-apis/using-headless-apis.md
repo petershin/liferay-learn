@@ -208,7 +208,7 @@ Up Next: [Module 9: Search](../module-9-search.md)
 
 ## Additional Resources
 
-See our documentation to learn how to optimize your use of Liferay's headless APIs:
+See official documentation to learn more about using Liferay's headless APIs:
 
 * [Consuming APIs](https://learn.liferay.com/w/dxp/headless-delivery/consuming-apis)
 * [Consuming REST Services](https://learn.liferay.com/w/dxp/headless-delivery/consuming-apis/consuming-rest-services)

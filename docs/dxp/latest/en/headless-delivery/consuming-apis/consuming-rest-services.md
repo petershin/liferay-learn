@@ -48,7 +48,7 @@ APIs are divided into several categories. This example uses the `BlogPosting` se
 
 {bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA132+`
 
-When using object definitions related to modifiable system objects that are part of a root model, the REST context path includes the path of the root model. This means that the API endpoint reflects the hierarchical relationship between the root model and its descendant objects. This hierarchical approach helps in organizing and accessing related API endpoints efficiently.
+When using object definitions related to modifiable system objects within a root model, the REST context path includes the root model's path, reflecting the hierarchical relationship and organizing API endpoints efficiently.
 
 Examples:
 

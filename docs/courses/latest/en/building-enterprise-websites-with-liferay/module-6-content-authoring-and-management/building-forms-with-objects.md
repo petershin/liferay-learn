@@ -4,19 +4,7 @@ uuid: 1645bc8e-0a29-4cd2-bd52-4072ff7b39ce
 # Building Forms with Objects
 <!--TASK: Consider naming article 'Building Business Forms'-->
 
-Business forms play a crucial role in digital experience solutions for several reasons:
-
-* **Data Collection**: Forms are the primary tool for collecting essential information from users. Whether it's customer inquiries, feedback, registrations, or purchase orders, forms provide a structured way to gather data that can be used for analysis, decision-making, and improving user experiences.
-
-* **User Interaction**: Forms facilitate direct interaction between users and digital platforms. They allow users to actively engage with the content, providing feedback, making requests, or completing transactions. This interaction is essential for building relationships and understanding user needs.
-
-* **Workflow Automation**: Forms can be integrated into automated workflows, streamlining processes and reducing manual effort. For example, a contact form can trigger a notification to a sales representative, or an online order form can initiate the fulfillment process.
-
-* **Analytics**: Analyzing form data provides valuable insights into user behavior, demographics, and preferences. This information can be used to optimize website design, improve marketing campaigns, and enhance overall customer satisfaction.
-
-* **Personalization**: By collecting user data through forms, businesses can personalize the digital experience. This can involve tailoring content, recommendations, or offers based on individual preferences and behaviors.
-
-* **Compliance and Regulation**: Forms can be used to collect necessary information for compliance with various regulations such as data privacy laws (e.g., GDPR, CCPA). They can ensure that businesses are collecting and handling data in accordance with legal requirements.
+Business forms are essential components of digital experience solutions. They serve as the primary means for collecting user data, facilitating direct user interactions, and enabling workflow automation. Analysis of form data provides valuable insights into user behavior and preferences, which can be leveraged for personalization and optimizing digital experiences. Moreover, well-implemented forms ensure businesses adhere to compliance and regulatory requirements by collecting necessary user information responsibly.
 
 By effectively designing and implementing business forms, organizations can create more engaging, efficient, and user-centric digital experiences. Clarity wants a very common type of business form: a Contact Us form that will collect data from site visitors and make that data available to the appropriate internal users. Traditionally, even a straightforward process like this requires a significant time investment from a development team to produce and iterate on code that will be expensive to maintain. To avoid the pain points of traditional development, Clarity wants to leverage Liferay Objects and page fragments to build a Contact Us form without touching a single line of code.
 

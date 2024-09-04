@@ -6,7 +6,12 @@ uuid: d304bf82-c70f-4470-ac61-8d41bf737851
 
 *Content Management* is a broad term that can apply to a range of feature sets in the data lifecycle. We're going to focus specifically on Liferay's Web Content application, a tool for creating and managing content. With it, users can define structures for different types of content and then design templates for rendering them in site pages. You can also render content items by mapping their fields directly to page fragments. 
 
-While Liferay provides other applications for creating content, you can really address most use cases with the Web Content application. Clarity has chosen to use Web Content for the flexibility of implementing custom structures and the efficiency of rendering content with fragments and templates. With Web Content, Clarity can rapidly produce dynamic, versatile assets without limiting the creativity of their writers and editors. 
+!!! note
+    While Liferay provides other applications for creating content, you can address most use cases for an enterprise website with the Web Content application.
+
+Clarity has chosen to use Web Content for the flexibility of implementing custom structures and the efficiency of rendering content with fragments and templates. With Web Content, Clarity can rapidly produce dynamic, versatile assets without limiting the creativity of their writers and editors.
+
+<!--TASK: Avoid "Clarity has chosen." Instead frame it as "For Clarity's use case" or "Clarity can." We just want to highlight how the feature is a good fit for their solution.-->
 
 ## Web Content Structures
 

@@ -30,7 +30,7 @@ Tags are keywords for organizing your assets. While categories provide broader c
 
 ## Asset Publishers and Collections
 
-<!--TASK: Consider moving Asset Publishers and Collections content into its own article-->
+<!--TASK: Move Asset Publishers and Collections content into a separate article. The new article should focus on displaying Clarity's content. Also, Collections should be THE go-to feature for content selection.-->
 
 While categories and tags make your content more accessible to users, you can also leverage them as site building tools with Asset Publishers and Collections, two Liferay features for displaying organized web content.
 

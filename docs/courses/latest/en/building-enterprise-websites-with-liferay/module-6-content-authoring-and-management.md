@@ -19,13 +19,13 @@ uuid: 995cbe20-0caf-478b-ae3c-edea06211e7c
 
 In the previous module, you learned about some of the tools, techniques, and best practices for building sites with Liferay. Now that Clarity has an enterprise marketing website structured and styled, they need content to populate it. Fortunately, Liferay offers a suite of features for authoring and managing content that you can leverage to bring the site to life. 
 
-In this module, you will learn how to:
+By the end of this module, you'll know how to:
 
-* Create and store digital assets that you can use anywhere in your Liferay instance
-* Build structured, templated web content to enforce consistent standards across your website
-* Organize your content by groups and keywords to make it more accessible
-* Leverage Liferay's powerful commerce features to create product-related content
-* Track, review, and collaborate on site changes before they go to production
+* Create store, and leverage digital assets across your Liferay instance
+* Build content structures and templates to enforce consistent standards
+* Organize your content using tags, categories, and collections
+* Leverage commerce features to create product-related content
+* Track, review, and collaborate on changes before they go to production
 * Implement approval processes to improve visibility and efficiency in the content creation cycle
 * Build business forms to collect user data and drive engagement
 

@@ -13,7 +13,7 @@ taxonomy-category-names:
 
 # Managing Object Entries Using GraphQL
 
-Use GraphQL to manage custom object entries in Liferay efficiently. This API framework simplifies data interaction and serves as an alternative to [REST APIs]((./object-api-basics.md)). With GraphQL, you can query specific data, reduce network requests, and improve application performance.
+You can use GraphQL to manage custom object entries in Liferay efficiently. This API framework simplifies data interaction and serves as an alternative to [REST APIs]((./object-api-basics.md)). With GraphQL, you can query specific data, reduce network requests, and improve application performance.
 
 Read [Consuming GraphQL APIs](../../../../headless-delivery/consuming-apis/consuming-graphql-apis.md) to learn more about GraphQL in Liferay.
 
@@ -22,11 +22,11 @@ Read [Consuming GraphQL APIs](../../../../headless-delivery/consuming-apis/consu
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Then, follow these steps to [create](../../creating-and-managing-objects/creating-objects.md) a basic Object for this tutorial:
+Then, follow these steps to [create](../../creating-and-managing-objects/creating-objects.md) a basic object for this tutorial:
 
 1. Open the *Global Menu* (![Global Menu](../../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Objects*.
 
-1. Click the *Add* button (![Add Button](../../../../images/icon-add.png)) and enter these values:
+1. Click *Add* (![Add Button](../../../../images/icon-add.png)) and enter these values:
 
    | Field        | Value                 |
    | :----------- | :-------------------- |
@@ -46,12 +46,12 @@ Then, follow these steps to [create](../../creating-and-managing-objects/creatin
 
 1. Go back to the *Details* tab, select *Object* under Scope &rarr; Panel Link, and click *Publish*.
 
-   The object definition is located under Object in the Global Menu. You can use the application to check if the entries are created correctly.
+   The object definition appears under Object in the Global Menu. You can use the application to check if the entries are created correctly.
 
    !!! important
        For this tutorial, use the values provided above.
 
-[Publishing an Object](../../creating-and-managing-objects/creating-objects.md#publishing-object-drafts) creates and activates a new application for receiving and storing data. You can now access it via Headless APIs. All APIs for custom objects appear under `c` in Liferay's GraphQL schema.
+[Publishing an Object](../../creating-and-managing-objects/creating-objects.md#publishing-object-drafts) creates and activates a new application for receiving and storing data. You can now access it via headless APIs. All APIs for custom objects appear under `c` in Liferay's GraphQL schema.
 
 You can use Liferay’s integrated GraphiQL IDE to search object schemas, draft queries, run requests, and more. To access it, go to Liferay’s API Explorer at `[server]:[port]/o/api` (e.g., `localhost:8080/o/api`) and click *GraphQL*.
 
@@ -105,7 +105,7 @@ Use the `create` mutation to post custom object entries. In this example, add a 
 
 1. Run your query by clicking the play button at the top (3).
 
-The object entry you added now appears in the GraphQL client's right pane (4). Liferay DXP returns a JSON representation of your object entry that contains the fields you requested in the mutation and the entry's ID:
+The object entry you added now appears in the GraphQL client's right pane (4). Liferay returns a JSON representation of your object entry containing the fields you requested in the mutation and the entry's ID:
 
 ```json
 {
@@ -136,11 +136,11 @@ curl \
 !!! important
     During development, it's much easier to use Basic Auth, which passes credential data in the URL. Since this is insecure, never use this method for production.
 
-### Posting Entries with a Draft Status
+## Posting Entries with a Draft Status
 
 {bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA132+`
 
-You can also post an object entry while setting its status. This example demonstrates how to add a new entry to the "Event Announcement" object with a draft status.
+You can also post an object entry while setting its status. This example demonstrates how to add a new entry to the *Event Announcement* object with a draft status.
 
 1. Construct the GraphQL query based on the schema documentation and place it in the query area at the top left window of the GraphQL client.
 
@@ -240,7 +240,7 @@ Click the play button to run it, and see available entries:
 }
 ```
 
-### Getting a Single Custom Object Entry
+## Getting a Single Custom Object Entry
 
 To retrieve a single entry, use the entry's ID:
 
@@ -274,7 +274,7 @@ Paste this into the query area at the top left window of the client and click th
 }
 ```
 
-### Getting Localized Content
+## Getting Localized Content
 
 {bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA132+`
 

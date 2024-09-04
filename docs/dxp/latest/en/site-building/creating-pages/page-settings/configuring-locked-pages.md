@@ -7,6 +7,7 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: 71e441a1-8c7c-468f-a758-b4e1cb9d185d
 ---
+
 # Configuring Locked Pages
 {bdg-secondary}`Liferay DXP 2023.Q3+/Portal 7.4 GA92+`
 
@@ -50,7 +51,7 @@ If a user leaves a page open in Edit mode for a long time without making changes
 
 1. Toggle *Allow Automatic Unlocking Process*.
 
-   If you want to disable the feature, turn the feature off.
+   If you want to disable the feature, turn it off.
 
 1. Set a *Time Without Autosave* in minutes.
 

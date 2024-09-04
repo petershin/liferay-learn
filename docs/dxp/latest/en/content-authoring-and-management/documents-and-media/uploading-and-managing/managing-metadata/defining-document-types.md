@@ -12,12 +12,27 @@ uuid: 4e674e72-10be-403f-a38d-3fb01d5bd7d3
 
 In Liferay, Document Types are templates used for uploading files and categorizing them in Documents and Media. These templates are created using metadata fields and provide additional, searchable information for uploaded files.
 
-!!! tip
-    Default document types are generated when you first start a virtual instance or create a new company. To prevent their creation in future instances or companies, navigate to *Control Panel* &rarr; *System Settings* &rarr; *Documents and Media*, uncheck *Add Default Structures*, and click *Save*.
+## Default Document Types
 
-    This setting only applies to new instances or companies created thereafter.
+Default document types are generated when you first start a virtual instance or create a new company. To prevent their creation in future instances or companies,
 
-To define a custom Document Type,
+1. Open the *Product Menu* (![Product Menu](../../../../images/icon-applications-menu.png)), navigate to *Control Panel*, and click *System Settings*.
+
+1. Click *Documents and Media* under Content and Data.
+
+1. Under Service, uncheck *Add Default Structures* and click *Save*.
+
+This setting only applies to new instances or companies created thereafter. To prevent the creation of default document types at startup,
+
+1. Create a config file named `com.liferay.document.library.configuration.DLConfiguration.config`.
+
+1. Add `addDefaultStructures=B"false"` to the file and save it.
+
+1. Place the file in the `osgi/configs` directory within your Liferay bundle before starting the server.
+
+If the process is successful, the *Add Default Structures* option should be unchecked upon startup and no default document types are created.
+
+## Defining a Custom Document Type
 
 1. Navigate to the Documents and Media application in a site or asset library.
 

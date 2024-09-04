@@ -135,17 +135,14 @@ The default settings are usually enough. If you're sure you must tweak this beha
 
 1. Use **Search Framework Indexer Clauses** to disable all Liferay's indexers from contributing clauses to the search. The only reason to disable all indexers is to build a search query from scratch, disabling all Query Contributors and Searchable Assets as well.
 
-1. Use the **Search Framework Query Contributors** section to remove certain contributors from participating in the search. Disable certain clause contributors if you want to override them using your own Blueprints configuration, or disable all clauses to completely override Liferay's search behavior, disabling Liferay's Indexers and Searchable Types as well.
+1. Use the **Search Framework Query Contributors** section to disable all or certain contributors from participating in the search. Disable certain clause contributors if you want to override them using your own Blueprints configuration, or disable all clauses to completely override Liferay's search behavior, disabling Liferay's Indexers and Searchable Types as well.
 
-```{important}
-* Even when you disable all Indexers and Query Contributors, certain mandatory clauses are always added by Liferay's search framework. Therefore, you're never truly building a query from scratch with Blueprints.
+!!! important
+    * Even when you disable all Indexers and Query Contributors, certain mandatory clauses are always added by Liferay's search framework. Therefore, you're never truly building a query from scratch with Blueprints.
+    * Liferay's Indexer framework was refactored in Liferay 7.2. Some of Liferay's core assets, like Web Content Articles and Folders, have not been updated to the new pattern. This has an impact on Search Blueprints because there are no Query Contributors for these assets. Therefore, the standard clauses for the assets are always added to the search query when Liferay Indexer Clauses is enabled. Therefore, a complete override of the Web Content Article's clauses is not possible. You can, however, tweak the search behavior of these assets by layering more clauses on top (boosting certain clause matches, for example).
+    * Due to internal limitations, you must choose to enable or disable all of Liferay's `Indexer`s. The other clause contributors can be managed more flexibly: choose to include all, none, or any subset of contributors you wish.
 
-* Liferay's Indexer framework was refactored in Liferay 7.2. Some of Liferay's core assets, like Web Content Articles and Folders, have not been updated to the new pattern. This has an impact on Search Blueprints because there are no Query Contributors for these assets. Therefore, the standard clauses for the assets are always added to the search query when Liferay Indexer Clauses is enabled. Therefore, a complete override of the Web Content Article's clauses is not possible. You can, however, tweak the search behavior of these assets by layering more clauses on top (boosting certain clause matches, for example).
-
-* Due to internal limitations, you must choose to enable or disable all of Liferay's `Indexer`s. The other clause contributors can be managed more flexibly: choose to include all, none, or any subset of contributors you wish.
-
-![Disable certain clause contributors or all indexers from contributing clauses to the search query.](./creating-and-managing-search-blueprints/images/08.png)
-```
+    ![Disable certain clause contributors or all indexers from contributing clauses to the search query.](./creating-and-managing-search-blueprints/images/08.png)
 
 When you edit the clause contributors or indexer behavior, make sure to save the Blueprint.
 

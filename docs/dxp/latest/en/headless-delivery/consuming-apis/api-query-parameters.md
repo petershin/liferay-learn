@@ -615,7 +615,7 @@ The JSON response:
 
 The Object API supports sorting entries using fields from related objects, enhancing flexibility in data retrieval.
 
-This functionality is available for custom objects with one-to-many relationships and supports various field types, including Text, Long Text, Date, Date and Time, Integer, Long Integer, Decimal, Precision Decimal, Boolean, and Picklist.
+This functionality is available for custom objects with one-to-many and many-to-one relationships and supports various field types, including Text, Long Text, Date, Date and Time, Integer, Long Integer, Decimal, Precision Decimal, Boolean, and Picklist.
 
 System fields such as Author, Create Date, External Reference Code, ID, Modified Date, and Status are also supported.
 
@@ -631,7 +631,7 @@ You can also sort by fields from multiple related objects by chaining relationsh
 sort=relatedRelationship1/relatedRelationship2/fieldName:desc
 ```
 
-Suppose you have a custom object Student that has a one-to-many relationship with another custom object University. To sort students by the University Name in ascending order, you can use the following command:
+Suppose you have a custom object Student that has a many-to-one relationship with another custom object University. To sort students by the University Name in ascending order, you can use the following command:
 
 ```bash
 curl \
@@ -686,7 +686,7 @@ The JSON response should look like this:
 }
 ```
 
-In this case, the `universityName` field is not included in the response. Instead, `r_universityEnrolled_c_universityId` is used to reference the universities. The corresponsing university IDs and names are as follows:
+Although the `universityName` field isn't returned, the entries are sorted alphabetically based on the mapped `r_universityEnrolled_c_universityId` values, which correspond to the university names:
 
 | universityId | universityName |
 | :----------- | :------------- |
@@ -695,8 +695,6 @@ In this case, the `universityName` field is not included in the response. Instea
 | 31961        | MIT            |
 | 31957        | Oxford         |
 | 31959        | Stanford       |
-
-Given this mapping, the student entries are successfully returned in alphabetical order based on the associated university names.
 
 ## Related Topics
 

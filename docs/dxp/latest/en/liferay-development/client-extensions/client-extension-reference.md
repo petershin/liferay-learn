@@ -27,7 +27,7 @@ You can find code examples for all types of client extensions in [liferay-portal
 
 - [Global JavaScript Client Extension](../customizing-liferays-look-and-feel/using-a-javascript-client-extension.md)
 
-- [JavaScript Import Map Entry Client Extension](../customizing-liferays-look-and-feel/using-a-javascript-import-map-entry-client-extension.md)
+- [JavaScript Import Map Entry Client Extension](../customizing-liferays-look-and-feel/bundling-resources-in-a-javascript-import-map-entry-client-extension.md)
 
 - [Theme Sprite Map Client Extension](../customizing-liferays-look-and-feel/using-a-theme-spritemap-client-extension.md)
 

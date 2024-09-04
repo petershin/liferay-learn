@@ -1,6 +1,6 @@
 ---
 toc:
-  - ./using-a-javascript-import-map-entry-client-extension/javascript-import-map-entry-yaml-configuration-reference.md
+  - ./bundling-resources-in-a-javascript-import-map-entry-client-extension/javascript-import-map-entry-yaml-configuration-reference.md
 taxonomy-category-names:
 - Development and Tooling
 - Frontend Client Extensions
@@ -8,11 +8,13 @@ taxonomy-category-names:
 - Liferay SaaS
 uuid: 751942b6-8d8b-4658-b4d4-9a835cd7144e
 ---
-# Using a JavaScript Import Map Entry Client Extension
+# Bundling Resources in a JavaScript Import Map Entry Client Extension
 
 {bdg-secondary}`Liferay 7.4 2023.Q1+/GA92+`
 
-You can use JavaScript import map entry client extensions to make JavaScript code or resources available to any page rendered in a Liferay instance. Define and export code in the client extension with a specifier that the [import map](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script/type/importmap) in Liferay provides to anything that imports it. For example, you can bundle a library like [jQuery](https://jquery.com/) into the client extension, and then import it into a fragment's code to use it.
+JavaScript import map entry client extensions make JavaScript code or resources available to any page rendered in a Liferay instance. When you need to include JavaScript code or resouces from multiple locations, you can bundle them in one client extension in your Liferay workspace.
+
+Define and export code in the client extension with a specifier that the [import map](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script/type/importmap) in Liferay provides to anything that imports it. For example, you can bundle a library like [jQuery](https://jquery.com/) into the client extension, and then import it into a fragment's code to use it.
 
 Start making JavaScript import map entry client extensions with one from the [sample workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace).
 
@@ -35,7 +37,7 @@ To start developing client extensions,
     unzip com.liferay.sample.workspace-latest.zip
     ```
 
-Now you have the tools to deploy your first JavaScript import map entry client extension.
+Now you have the tools to deploy a client extension bundling multiple JavaScript resources.
 
 ## Examine and Add to the JavaScript Exports
 
@@ -112,7 +114,7 @@ Now that you have imported a new entry into the JavaScript import map, create a 
 
 1. Click *Add* (![Add icon](../../images/icon-duplicate.png)) to add a new fragment set.
 
-    ![Add a new fragment set so that you can add a fragment to use your client extension.](./using-a-javascript-import-map-entry-client-extension/images/01.png)
+    ![Add a new fragment set so that you can add a fragment to use your client extension.](./bundling-resources-in-a-javascript-import-map-entry-client-extension/images/01.png)
 
 1. Enter `FS` as the name and click *Save*.
 
@@ -134,7 +136,7 @@ Now that you have imported a new entry into the JavaScript import map, create a 
 
     The text appears in the preview panel in the lower-right corner.
 
-    ![The preview panel shows the text contained in your fragment's HTML.](./using-a-javascript-import-map-entry-client-extension/images/02.png)
+    ![The preview panel shows the text contained in your fragment's HTML.](./bundling-resources-in-a-javascript-import-map-entry-client-extension/images/02.png)
 
 1. Click into the *JavaScript* editor and add this code to import from your client extension:
 
@@ -150,7 +152,7 @@ Now that you have imported a new entry into the JavaScript import map, create a 
 
     The text now appears in the preview panel with a 4-pixel wide, blue outline.
 
-    ![The fragment's JavaScript uses your client extension to use two functions to define and add a blue border to the text.](./using-a-javascript-map-entry-client-extension/images/03.png)
+    ![The fragment's JavaScript uses your client extension to use two functions to define and add a blue border to the tebundling-resources-in./using-a-javascript-map-entry-client-extension/images/03.png)
 
     !!! tip
         If the outline does not appear correctly, make sure the `div` element's class name in the HTML editor (e.g., `fragment_1`) matches the code you copied into the JavaScript editor.

@@ -36,9 +36,10 @@ Liferay Objects provides a convenient UI for [creating](./creating-and-managing-
 
 ## Searching for Objects
 
-You can use two configurations in the objects application to exert control over searching for object entries: 
+You can use two configurations in the Objects application to exert control over searching for object entries: 
 
 1. Enable or disable search for an object definition's entries using the Enable Indexed Search configuration in its Details tab.
-1. If the object is indexed for searching, configure the searchability of [each field](./creating-and-managing-objects/fields/adding-fields-to-objects.md).
+
+1. If the object is indexed for searching, configure the [each field's](./creating-and-managing-objects/fields/adding-fields-to-objects.md) search behavior.
 
 See [Searching for Liferay Objects](../../using-search/getting-started/searching-for-content.md#searching-for-liferay-objects) for more information.

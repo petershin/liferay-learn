@@ -136,9 +136,9 @@ In Liferay 7.4 GA25+/U25+, you can also search for widget pages (by title only).
 
 ## Returning Objects in Search Results
 
-You can configure each [object definition](../../../liferay-development/objects.md) to be searchable with the Enable Indexed Search setting in its Details tab. If enabled, you can also configure [each field](../../../liferay-development/objects/creating-and-managing-objects/fields/adding-fields-to-objects.md) as searchable; object entries [can then be queried](../../getting-started/searching-for-content.md#searching-for-liferay-objects) and returned in the Search Results widget.
+You can enable each [object definition](../../../liferay-development/objects.md) to be searchable by selecting Enable Indexed Search setting in its Details tab. If enabled, you can also configure [each field](../../../liferay-development/objects/creating-and-managing-objects/fields/adding-fields-to-objects.md) as searchable; object entries [can then be queried](../../getting-started/searching-for-content.md#searching-for-liferay-objects) and returned in the Search Results widget.
 
-![A title and a content summary are displayed for Object Entries.](./search-results-behavior/images/13.png)
+![A title and a content summary appear for Object entries.](./search-results-behavior/images/13.png)
 
 For Liferay 7.4 U64+/GA64+, clicking an object entry in search results redirects to the entry's [display page](../../../liferay-development/objects/displaying-object-entries.md#creating-display-page-templates-for-objects) to provide a detailed view of the result. If a display page template does not exist for the object, a default layout is used. Click the back arrow in the entry detail view to return to the search page.
 

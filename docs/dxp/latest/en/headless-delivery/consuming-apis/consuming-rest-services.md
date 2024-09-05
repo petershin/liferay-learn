@@ -52,22 +52,29 @@ When using object definitions related to modifiable system objects within a root
 
 Examples:
 
--  With a prefix (`headless-builder`):
+-  With a prefix:
 
-   API Application is the root model and API Endpoint is its descendant, making the REST endpoints
+   In some cases, REST context paths use a prefix to group related API endpoints under a common namespace. This prefix typically reflects the system's module or functional area. For example, the `headless-builder` prefix is used for API Builder functionalities, and `headless-commerce-admin` for Commerce-related functionalities.
+
+   To view API details, access Liferay API Explorer at `[server]:[port]/o/api` (e.g. http://localhost:8080/o/api). Or, use the following cURL command:
+
+   ```bash
+   curl \
+      "http://localhost:8080/o/api" \
+      --user "test@liferay.com:learn"
+   ```
+
+   For example, `APIApplication` is the root model and `APIEndpoint` is its descendant, making the REST endpoints
 
    For `APIApplication`: `/headless-builder/application`.
 
    For `APIEndpoint`: `/headless-builder/applications/endpoints`.
 
-   !!! note
-       The prefix indicates the category or module in which the object definitions are organized. These prefixes help in logically grouping related API endpoints.
-
-       <!-- I don't understand from this what the prefix is or where it comes from. Can developers just make up a prefix, or does it come from somewhere? If it indicates the category or module where the object definitions are organized, where can developers find these categories or module names? -Rich -->
-
 -  Without a prefix:
 
-   `CommerceReturn` is the root model and `CommerceReturnItem` is its descendant, making the REST endpoints
+   Some REST API endpoints are not grouped under a specific namespace and therefore don't use prefixes.
+
+   For example, `CommerceReturn` is the root model and `CommerceReturnItem` is its descendant, making the REST endpoints
 
    For `CommerceReturn`: `/commerce-returns`.
 
@@ -88,10 +95,7 @@ The table below shows modifiable system objects and their paths for reference. U
  | `CommerceReturnItem`         | `/commerce-return-items`                     |
  | `FDSAction`                  | `/data-set-manager/actions`                  |
  | `FDSCardsSection`            | `/data-set-manager/cards-sections`           |
- | `FDSClientExtensionFilter`   | `/data-set-manager/client-extension-filters` |
- | `FDSDateFilter`              | `/data-set-manager/date-filters`             |
- | `FDSDynamicFilter`           | `/data-set-manager/dynamic-filters`          |
- | `FDSEntry`                   | `/data-set-manager/entries`                  |
+ | `FDSClientExtensionFilter`   | `/data-set-manager/client-extension-APIEndpoint              | `/data-set-manager/entries`                  |
  | `FDSField`                   | `/data-set-manager/fields`                   |
  | `FDSListSection`             | `/data-set-manager/list-sections`            |
  | `FDSSort`                    | `/data-set-manager/sorts`                    |

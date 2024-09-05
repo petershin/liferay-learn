@@ -186,59 +186,58 @@ The form field's settings are defined in the `DDMTypeSettings` class, which also
    
    @DDMForm
    @DDMFormLayout(
-      paginationMode = com.liferay.dynamic.data.mapping.model.DDMFormLayout.TABBED_MODE,
-      value = {
-         @DDMFormLayoutPage(
-            title = "%basic",
-            value = {
-               @DDMFormLayoutRow(
-                  {
-                     @DDMFormLayoutColumn(
-                        size = 12,
-                        value = {
-                           "label", "predefinedValue", "required", "tip"
-                        }
-                     )
-                  }
-               )
-            }
-         ),
-         @DDMFormLayoutPage(
-            title = "%advanced",
-            value = {
-               @DDMFormLayoutRow(
-                  {
-                     @DDMFormLayoutColumn(
-                        size = 12,
-                        value = {
-                           "dataType", "min", "max", "name", "showLabel",
-                           "repeatable", "type", "validation",
-                           "visibilityExpression"
-                        }
-                     )
-                  }
-               )
-            }
-         )
-      }
+       paginationMode = com.liferay.dynamic.data.mapping.model.DDMFormLayout.TABBED_MODE,
+       value = {
+           @DDMFormLayoutPage(
+               title = "%basic",
+               value = {
+                   @DDMFormLayoutRow(
+                       {
+                           @DDMFormLayoutColumn(
+                               size = 12,
+                               value = {
+                                   "label", "predefinedValue", "required", "tip"
+                               }
+                           )
+                       }
+                   )
+               }
+           ),
+           @DDMFormLayoutPage(
+               title = "%advanced",
+               value = {
+                   @DDMFormLayoutRow(
+                       {
+                           @DDMFormLayoutColumn(
+                               size = 12,
+                               value = {
+                                   "dataType", "min", "max", "name", "showLabel",
+                                   "repeatable", "type", "validation",
+                                   "visibilityExpression"
+                               }
+                           )
+                       }
+                   )
+               }
+           )
+       }
    )
    public interface C2P9DDMFormFieldTypeSettings
-      extends DefaultDDMFormFieldTypeSettings {
+       extends DefaultDDMFormFieldTypeSettings {
    
-      @DDMFormField(
-         label = "%max-value",
-         properties = "placeholder=%enter-the-top-limit-of-the-range",
-         type = "numeric"
-      )
-      public String max();
+       @DDMFormField(
+           label = "%max-value",
+           properties = "placeholder=%enter-the-top-limit-of-the-range",
+           type = "numeric"
+       )
+       public String max();
    
-      @DDMFormField(
-         label = "%min-value",
-         properties = "placeholder=%enter-the-bottom-limit-of-the-range",
-         type = "numeric"
-      )
-      public String min();
-   
+       @DDMFormField(
+           label = "%min-value",
+           properties = "placeholder=%enter-the-bottom-limit-of-the-range",
+           type = "numeric"
+       )
+       public String min();
    }
    ```
 
@@ -281,24 +280,24 @@ The frontend requires updates to the `Slider.es.js` to support user-entered min 
    import org.osgi.service.component.annotations.Component;
    
    @Component(
-     property = "ddm.form.field.type.name=c2p9-slider",
-     service = DDMFormFieldTemplateContextContributor.class
+       property = "ddm.form.field.type.name=c2p9-slider",
+       service = DDMFormFieldTemplateContextContributor.class
    )
    public class C2P9DDMFormFieldTemplateContextContributor
-     implements DDMFormFieldTemplateContextContributor {
+       implements DDMFormFieldTemplateContextContributor {
    
-     @Override
-     public Map<String, Object> getParameters(
-        DDMFormField ddmFormField,
-        DDMFormFieldRenderingContext ddmFormFieldRenderingContext) {
+       @Override
+       public Map<String, Object> getParameters(
+           DDMFormField ddmFormField,
+           DDMFormFieldRenderingContext ddmFormFieldRenderingContext) {
    
-        Map<String, Object> parameters = new HashMap<>();
+           Map<String, Object> parameters = new HashMap<>();
    
-        parameters.put("max", (String)ddmFormField.getProperty("max"));
-        parameters.put("min", (String)ddmFormField.getProperty("min"));
+           parameters.put("max", (String)ddmFormField.getProperty("max"));
+           parameters.put("min", (String)ddmFormField.getProperty("min"));
    
-        return parameters;
-     }
+           return parameters;
+       }
    
    }
    ```
@@ -311,13 +310,15 @@ The frontend requires updates to the `Slider.es.js` to support user-entered min 
 
    export default function Slider({
       label,
+      max,
+      min,
       name,
       onChange,
       predefinedValue,
       readOnly,
       value,
       ...otherProps
-      }) {
+   }) {
       const [currentValue, setCurrentValue] = useState(
          value ? value : predefinedValue
       );
@@ -333,8 +334,8 @@ The frontend requires updates to the `Slider.es.js` to support user-entered min 
                className="ddm-field-slider form-control slider"
                disabled={readOnly}
                id="myRange"
-               max={100}
-               min={1}
+               max={max}
+               min={min}
                name={name}
                onInput={(event) => {
                   setCurrentValue(event.target.value);

@@ -20,7 +20,7 @@ Liferay Cloud provides three types of logs for environment services:
 
 - **Status Logs**: Orchestration layer information from the Kubernetes cluster. Examples include: when images are successfully pulled, when containers are created and started, and when readiness or liveness probes fail.
 
-- **VPN Logs**: VPN server information. Examples include: TODO
+- **VPN Logs**: VPN server information. Examples include: when a VPN connection fails, when a certificate is invalid or expired, and when the connection times out.
 
 ## Log Structure
 

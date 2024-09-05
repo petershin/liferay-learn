@@ -49,17 +49,20 @@ Client URL (cURL) is a simple command line tool for transferring data, most comm
         -H "Authorization: Bearer d5571ff781dc555415c478872f0755c773fa159"
     ```
 
-### Postman
+### Third Party API Services
 
-Postman is a popular application for API testing. You can use its GUI to create and save various API calls for exploring Liferay's endpoints. Additionally, you can organize API tests with workspaces and folder, collaborate on tests with other users, and store request and response artifacts for future testing. 
+There are a variety of third party applications you can use to test Liferay endpoints. These tools provide GUIs with which you can
 
-<!--TASK: Consider making this point more generic, "Using Third Party Services"-->
+* Create and save various API calls
+* Organize API tests with workspaces and folders
+* Collaborate on tests with other users
+* Store request and response artifacts for future testing
+
+Liferay's headless APIs conform to standard REST requirements, so they are compatible with any widely used third party API testing service.
 
 ## Creating Custom APIs
 
-Liferay not only provides ways to interact with its out-of-the-box headless APIs, but also empowers you to define your own API endpoints.
-
-<!-- The ability to create and customize APIs is a critical feature for organizations building integrated solutions with Liferay. -->
+Liferay not only provides ways to interact with its out-of-the-box headless APIs, but also empowers you to define your own API endpoints. The ability to create and customize APIs is a critical feature for organizations building integrated solutions with Liferay.
 
 ### REST Builder
 
@@ -67,11 +70,13 @@ Rest Builder is a code generation tool that uses the OpenAPI specification. REST
 
 However, since REST Builder requires deploying OSGi modules, this method is not available on Liferay SaaS. Furthermore, for Liferay PaaS and Self Hosted, you should only use REST Builder when you must align with external systems or you need APIs that combine data from multiple sources. In many cases, you can use Liferay Objects with API Builder and client extensions to satisfy requirements.
 
-<!--TASK: Add Section on Liferay Objects and how you can create headless endpoints. Then, in the following section, Clarify that the API Builder works with Objects. -->
+### Liferay Object APIs
+
+In Module 6, you learned about using Liferay Objects to build business forms. There we highlighted that one of the strengths of Objects is their integration with Liferay's core frameworks and features. One of these features is the headless platform: when you publish an Object, Liferay automatically generates standard REST endpoints for interacting with the object and its data. While the object is active, you can use these APIs to perform basic CRUD operations, run complex queries with aggregation terms and nested fields, trigger standalone actions, and manage object relationships.
 
 ### API Builder
 
-Liferay's API Builder is a UI-based approach to API creation that simplifies the creation of custom API applications for object definitions. With it, you can
+Liferay's API Builder is a UI-based approach to API creation that simplifies the creation of custom API applications for Liferay Objects. With it, you can
 
 * Define and manage the API schema and endpoint via the user-friendly interface.
 * Specify input parameters, retrieve type, scope, path, description, and schema.
@@ -85,7 +90,9 @@ See [API Builder](https://learn.liferay.com/w/dxp/headless-delivery/api-builder)
 
 Fortunately, Liferay's out-of-the-box APIs satisfy Clarity's business needs. Next, let's learn about how Clarity can leverage these APIs securely.
 
-<!--TASK: Add Conclusion-->
+## Conclusion
+
+Great! You've learned about using Liferay's headless platform to call, test, and create REST APIs. Next, let's understand how to secure headless API calls.
 
 Up Next: [Headless Security](./headless-security.md)
 

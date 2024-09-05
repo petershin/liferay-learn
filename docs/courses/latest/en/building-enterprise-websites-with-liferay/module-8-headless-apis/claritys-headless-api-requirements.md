@@ -23,6 +23,8 @@ As Clarity gets up and running with Liferay, they hope to implement some custom 
 
 While the headless APIs offer convenient access to and from Liferay's database, Clarity does not want this convenience to come at the expense of security. Fortunately, Liferay's headless platform comes with industry standard methods of authorization such as HTTPS and OAuth 2.0 for secure communication. 
 
-<!--TASK: Add conclusion-->
+## Conclusion
+
+Great! You've learned about Clarity's headless API requirements. Now let's take a closer look at Liferay's headless platform.
 
 Up Next: [Working with the Headless Platform](./working-with-the-headless-platform.md)

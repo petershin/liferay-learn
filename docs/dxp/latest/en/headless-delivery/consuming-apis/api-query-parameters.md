@@ -615,7 +615,7 @@ The JSON response:
 
 The Object API supports sorting entries using fields from related objects, enhancing flexibility in data retrieval.
 
-This functionality is available for custom objects with one-to-many and many-to-one relationships and supports various field types, including Text, Long Text, Date, Date and Time, Integer, Long Integer, Decimal, Precision Decimal, Boolean, and Picklist.
+You can do this with custom objects having one-to-many and many-to-one relationships. Sorting can be done on various field types, including Text, Long Text, Date, Date and Time, Integer, Long Integer, Decimal, Precision Decimal, Boolean, and Picklist.
 
 System fields such as Author, Create Date, External Reference Code, ID, Modified Date, and Status are also supported.
 
@@ -631,7 +631,7 @@ You can also sort by fields from multiple related objects by chaining relationsh
 sort=relatedRelationship1/relatedRelationship2/fieldName:desc
 ```
 
-Suppose you have a custom object Student that has a many-to-one relationship with another custom object University. To sort students by the University Name in ascending order, you can use the following command:
+Suppose you have a custom object `Student` that has a many-to-one relationship with another custom object `University`. To sort students by the `universityName` in ascending order, you can use the following command:
 
 ```bash
 curl \
@@ -640,7 +640,7 @@ curl \
 	--user "test@liferay.com:learn"
 ```
 
-In this command, `universityEnrolled` is the related relationship representing the university associated with each student. `universityName` is the field in the University object by which you want to sort the Student entries. `:asc` specifies that the sorting should be in ascending order.
+In this command, `universityEnrolled` is the relationship representing the university associated with each student. `universityName` is the field in the `University` object by which you want to sort the Student entries. `:asc` specifies that the sorting should be in ascending order.
 
 The JSON response should look like this:
 

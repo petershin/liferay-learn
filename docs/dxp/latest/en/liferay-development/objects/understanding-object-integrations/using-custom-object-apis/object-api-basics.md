@@ -12,10 +12,10 @@ taxonomy-category-names:
 
 When you publish an Object, Liferay automatically generates REST APIs for it. These APIs differ for Company and Site scoped Objects, but they all use the `c/[pluralobjectlabel]` naming pattern (e.g., `c/timeoffrequests`). You can use these APIs to create, access, update, and remove Object entries.
 
-In this example, use cURL commands to perform basic CRUD operations for a custom Object. Before proceeding, [set up](#setting-up-a-liferay-instance) a new Liferay DXP/Portal 7.4 instance and [prepare](#preparing-the-sample-code) the provided tutorial code.
+Here you'll use cURL commands to perform basic CRUD operations for a custom Object. Before proceeding, [set up](#setting-up-a-liferay-instance) a new Liferay DXP/Portal 7.4 instance and [prepare](#preparing-the-sample-code) the provided tutorial code.
 
 !!! tip
-    For a complete list of APIs generated for both Site and Company Objects, see [Object's Headless Framework Integration](../using-custom-object-apis.md). You can view and test custom Object APIs via the Liferay API Explorer at `[server]:[port]/o/api` (e.g., `localhost:8080/o/api`). They appear under *REST Applications*.
+    For a complete list of APIs generated for both `Site` and `Company` objects, see [Object's Headless Framework Integration](../using-custom-object-apis.md). You can view and test custom object APIs via the Liferay API Explorer at `[server]:[port]/o/api` (e.g., `localhost:8080/o/api`). They appear under *REST Applications*.
 
 ## Setting Up a Liferay Instance
 
@@ -63,12 +63,12 @@ These scripts include the following APIs:
 
 | HTTP Method | HTTP Endpoint     | Description                                                                                                               |
 |:------------|:------------------|:--------------------------------------------------------------------------------------------------------------------------|
-| GET         | `/`               | Returns a complete list of Object entries in a Liferay instance; results can be paginated, filtered, searched, and sorted |
-| POST        | `/`               | Creates a new Object entry using the details provided in the API call                                                     |
-| DELETE      | `/{objectNameId}` | Deletes the specified Object entry and returns a 204 if the operation succeeds                                            |
-| GET         | `/{objectNameId}` | Returns details for the specified Object entry                                                                            |
-| PUT         | `/{objectNameId}` | Replaces the specified Object entry's details with those provided in the API call                                         |
-| GET         | `/{objectNameId}/permissions` | Returns details for the specified Object entry permissions                                                                            |
+| GET         | `/`               | Returns a complete list of object entries in a Liferay instance; results can be paginated, filtered, searched, and sorted |
+| POST        | `/`               | Creates a new object entry using the details provided in the API call                                                     |
+| DELETE      | `/{objectNameId}` | Deletes the specified object entry and returns a 204 if the operation succeeds                                            |
+| GET         | `/{objectNameId}` | Returns details for the specified object entry                                                                            |
+| PUT         | `/{objectNameId}` | Replaces the specified object entry's details with those provided in the API call                                         |
+| GET         | `/{objectNameId}/permissions` | Returns details for the specified object entry permissions                                                                            |
 | PUT         | `/{objectNameId}/permissions` | Replaces the specified Object entry permission details with those provided in the API call                                         |
 
 ## Calling the Custom Object's APIs
@@ -166,9 +166,9 @@ The following are examples of the tutorial's cURL commands.
 
 ## Managing Object Permissions
 
-Use the Object APIs to read and update permissions for object entries. See [Objects Application Permissions](../../objects-application-permissions.md) for more information.
+Use the object APIs to read and update permissions for object entries. See [Objects Application Permissions](../../objects-application-permissions.md) for more information.
 
-1. Execute `Able_GET_Permissions` to retrieve a list of Object entry permissions.
+1. Execute `Able_GET_Permissions` to retrieve a list of object entry permissions.
 
    ```bash
    ./Able_GET_Permissions.sh {entry-id}
@@ -182,7 +182,7 @@ Use the Object APIs to read and update permissions for object entries. See [Obje
       --user "test@liferay.com:learn"
    ```
 
-   In this example, the only role is Owner, and its permissions are: Delete, Permissions, Update, and View.
+   In this example, the only role is *Owner*, and its permissions are: Delete, Permissions, Update, and View.
 
    ```json
    {

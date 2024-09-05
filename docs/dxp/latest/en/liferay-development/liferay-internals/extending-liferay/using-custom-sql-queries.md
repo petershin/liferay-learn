@@ -3,9 +3,9 @@ uuid: f8da5df3-56ab-4185-a9ee-27bcecdde03b
 ---
 # Using Custom SQL Queries
 
-Service Builder creates finder methods that retrieve entities by their attributes (their column values). When you add a column as a parameter for the finder in your `service.xml` file and run Service Builder, it generates the finder method in your persistence layer and adds methods to your service layer that invokes the finder. If your queries are simple enough, you can use Dynamic Query to access Liferay's database. If you want to do something more complicated (like JOINs), you can write your own custom SQL queries.
+Service Builder creates finder methods that retrieve entities by their attributes (their column values). When you add a column as a parameter for the finder in your `service.xml` file and run Service Builder, it generates the finder method in your persistence layer and adds methods to your service layer that invoke the finder. If your queries are simple enough, you can use Dynamic Query to access Liferay's database. If you want to do something more complicated (like JOINs), you can write your own custom SQL queries.
 
-## Deploying an Example
+## Deploy an Example
 
 ```{include} /_snippets/run-liferay-portal.md
 ```
@@ -53,7 +53,7 @@ Then, follow these steps to deploy the example:
 
 1. Add another entry with a different name and description. This time, check *Hidden*. The new entry doesn't appear under P9Z0 Entries.
 
-This example uses custom SQL to only retrieve entries with a specified value in the database (`hidden_ = false`).
+This example uses custom SQL to retrieve only entries with a specified value in the database (`hidden_ = false`).
 
 ## Adding Custom SQL to the Code
 
@@ -73,7 +73,7 @@ This example uses custom SQL to only retrieve entries with a specified value in 
       :lines: 52
    ```
 
-1. Create a `SQLQuery` object. Liferay uses this object to handle SQL queries. The `SQLQuery` object is created by the session to avoid issues in a clustered environment. Use the `addEntity` method to define the class of the object your query will return.
+1. Create an `SQLQuery` object. Liferay uses this object to handle SQL queries. The session creates an `SQLQuery` object to avoid issues in a clustered environment. Use the `addEntity` method to define the class of the object your query returns.
 
    ```{literalinclude} using-custom-sql-queries/resources/liferay-p9z0.zip/p9z0-service/src/main/java/com/liferay/p9z0/service/impl/P9ZEntryLocalServiceImpl.java
       :dedent: 2
@@ -81,7 +81,7 @@ This example uses custom SQL to only retrieve entries with a specified value in 
       :lines: 54-56
    ```
 
-1. If you used the `?` placeholder in the string, create a `QueryPos` object from the `SQLQuery`. Add the values you wish to replace in the order they appear on the string. This example only uses one.
+1. If you used the `?` placeholder in the string, create a `QueryPos` object from the `SQLQuery`. Add the values to be replaced in the order they appear on the string. This example only uses one.
 
    ```{literalinclude} using-custom-sql-queries/resources/liferay-p9z0.zip/p9z0-service/src/main/java/com/liferay/p9z0/service/impl/P9ZEntryLocalServiceImpl.java
       :dedent: 2

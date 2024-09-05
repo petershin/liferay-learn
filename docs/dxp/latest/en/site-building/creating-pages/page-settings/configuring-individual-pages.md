@@ -96,7 +96,7 @@ Here you can quickly and easily change some areas of your page's design system a
 
 **Icon**: Choose an icon to display along with page's name in the site's navigation menus.
 
-![Determine the favicon, master page template, style book and icon for your page.](./configuring-individual-pages/images/08.png)
+![Determine the favicon, master page template, style book, and icon for your page.](./configuring-individual-pages/images/08.png)
 
 !!! note
     Content pages also include Master and Style Book settings in the Edit sidebar menu under Page Design Options (![Page Design Options icon](../../../images/icon-format.png)).
@@ -154,7 +154,7 @@ List words that people are likely to use when searching for your page's content.
 !!! tip
     Use keywords often throughout your page's content, including titles, headings, descriptions, paragraphs, and image alt text.
 
-![Set the page's HTML title, description, custom canonical URL and keywords to improve your page's ranking in Search Engine Results Pages (SERP)](./configuring-individual-pages/images/10.png)
+![Set the page's HTML title, description, custom canonical URL, and keywords to improve your page's ranking in Search Engine Results Pages (SERP)](./configuring-individual-pages/images/10.png)
 
 ### Preview
 

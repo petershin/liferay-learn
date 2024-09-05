@@ -47,9 +47,12 @@ To configure permissions at the instance level,
 
 ![Verify that the permissions configured at the instance level appear here.](./setting-default-permissions/images/03.png)
 
-## Setting Default Permissions at the Site Level 
+## Setting Default Permissions at the Site Level
 
-Default permissions at the site level take precedence over default permissions at the instance level. 
+!!! important
+    Currently, this feature is behind a release feature flag (LPD-21265). Read [Release Feature Flags](../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information.
+
+Default permissions at the site level take precedence over default permissions at the instance level.
 
 1. Go to the appropriate site, open the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)), and go to *Configuration* &rarr; *Site Settings*.
 
@@ -77,5 +80,7 @@ Default permissions at the site level take precedence over default permissions a
 
 ![Verify that the permissions configured at the site level appear here.](./setting-default-permissions/images/05.png)
 
-!!! important
-    Currently, this feature is behind a release feature flag (LPD-21265). Read [Release Feature Flags](../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information.
+## Related Topics
+
+- [Page Settings](../page-settings.md)
+- [Updating Page Permissions](./updating-page-permissions.md)

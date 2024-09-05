@@ -1,4 +1,6 @@
 ---
+toc:
+- ./using-search-widget-display-templates/search-results-widget-template-reference.md
 taxonomy-category-names:
 - Search
 - Search Pages and Widgets

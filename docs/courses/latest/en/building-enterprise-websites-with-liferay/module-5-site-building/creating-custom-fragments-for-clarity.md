@@ -7,7 +7,7 @@ Liferay offers a wide range of out-of-the-box fragments and configurations to he
 
 <!--TASK: ![Create custom fragments to reuse in pages and templates.](./creating-custom-fragments-for-clarity/images/01.png) -->
 
-Liferay DXP includes the fragments editor UI for creating and managing fragments in your site. You can also export fragment sets to work locally and them import them back into Liferay. You can also instantiate a React component in a fragment using static JS imports. Additionally, you can export fragment sets and work on them locally, using your preferred tools. Then, once your local work is complete, you can import the set back into Liferay. Furthermore, you can instantiate React components within your page fragments using static JavaScript imports, expanding the range of functionalities you can integrate into your custom fragments.
+Liferay DXP includes the fragments editor UI for creating and managing fragments in your site. Additionally, you can export fragment sets and work on them locally, using your preferred tools. Then, once your local work is complete, you can import the set back into Liferay. Furthermore, you can instantiate React components within your page fragments using static JavaScript imports, expanding the range of functionalities you can integrate into your custom fragments.
 
 When creating a fragment, you can copy and modify existing fragments or start from scratch. You can also create custom fragments by saving container compositions in the page editor. Saving container compositions offers a convenient way to recreate specific arrangements of fragments on other pages. However, you cannot edit compositions via the Fragments Editor UI.
 

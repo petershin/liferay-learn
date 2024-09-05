@@ -152,7 +152,7 @@ The `export default function Slider ({...` block defines the field: it's instant
 
 The values for these parameters, along with some others, define the HTML `<input>` tag for the form field. Importantly, the `max` and `min` values that the user can select are hard coded right now. You'll [change this later](#add-custom-settings-to-the-form-field). The field's `value` is defined using a ternary operator: if a value is entered, use it. Otherwise use the predefined value.
 
-Whenever the user drags the slider, the `onInput` event listener fires, setting the current value of the slider and calling the `onChange` function to alert the parent component of the change.
+When the user drags the slider, the `onInput` event listener fires, setting the current value of the slider and calling the `onChange` function to alert the parent component of the change.
 
 ```{literalinclude} ./writing-a-custom-form-field-type/resources/liferay-c2p9.zip/c2p9-impl/src/main/resources/META-INF/resources/C2P9/Slider.es.js
    :dedent: 0

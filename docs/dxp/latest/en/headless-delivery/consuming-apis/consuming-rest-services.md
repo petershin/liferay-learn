@@ -48,23 +48,21 @@ APIs are divided into several categories. This example uses the `BlogPosting` se
 
 {bdg-secondary}`Liferay DXP 2024.Q3+/Portal 7.4 GA132+`
 
-When using object definitions related to modifiable system objects within a root model, the REST context path includes the root model's path, reflecting the hierarchical relationship and organizing API endpoints efficiently.
+When working with object definitions related to modifiable system objects, the REST context path includes the root model’s path. This reflects the hierarchical relationship between models and helps organize API endpoints efficiently.
 
-Examples:
+Note that some root models are grouped under a common namespace and must be preceded by a prefix representing that namespace. This prefix typically reflects the module or functional area of the system.
+
+For example, the `APIApplication` root model is part of the [API Builder](../api-builder.md) component. All of its endpoints are found under the `headless-builder` prefix. Similarly, Commerce-related functionalities are under the `headless-commerce-admin` prefix.
+
+You can find this information using [Liferay's API Explorer](#identify-the-service-to-consume). Click on *Rest Applications* (1) in the top-right corner. The REST applications appear with their corresponding paths, including prefixes if applicable (2). You can confirm the path under Servers (3).
+
+![Use Liferay's API Explorer to find the information you need. ](./consuming-rest-services/images/02.png)
+
+Example context paths:
 
 -  With a prefix:
 
-   In some cases, REST context paths use a prefix to group related API endpoints under a common namespace. This prefix typically reflects the system's module or functional area. For example, the `headless-builder` prefix is used for API Builder functionalities, and `headless-commerce-admin` for Commerce-related functionalities.
-
-   To view API details, access Liferay API Explorer at `[server]:[port]/o/api` (e.g. http://localhost:8080/o/api). Or, use the following cURL command:
-
-   ```bash
-   curl \
-      "http://localhost:8080/o/api" \
-      --user "test@liferay.com:learn"
-   ```
-
-   For example, `APIApplication` is the root model and `APIEndpoint` is its descendant, making the REST endpoints
+   `APIApplication` is the root model and `APIEndpoint` is its descendant, making the REST endpoints
 
    For `APIApplication`: `/headless-builder/application`.
 
@@ -72,7 +70,7 @@ Examples:
 
 -  Without a prefix:
 
-   Some REST API endpoints are not grouped under a specific namespace and therefore don't use prefixes.
+   Some REST API endpoints are not grouped under a namespace and therefore don't use prefixes.
 
    For example, `CommerceReturn` is the root model and `CommerceReturnItem` is its descendant, making the REST endpoints
 
@@ -80,7 +78,7 @@ Examples:
 
    For `CommerceReturnItem`: `/commerce-returns/commerce-return/items`.
 
-The table below shows modifiable system objects and their paths for reference. Use this information to understand how to construct REST context paths when working with modifiable system objects.
+The table below lists modifiable system objects and their corresponding REST context paths. Use this information to understand how to construct REST context paths when working with modifiable system objects.
 
  | Object Definition            | REST Context Path                            |
  |------------------------------|----------------------------------------------|
@@ -95,7 +93,10 @@ The table below shows modifiable system objects and their paths for reference. U
  | `CommerceReturnItem`         | `/commerce-return-items`                     |
  | `FDSAction`                  | `/data-set-manager/actions`                  |
  | `FDSCardsSection`            | `/data-set-manager/cards-sections`           |
- | `FDSClientExtensionFilter`   | `/data-set-manager/client-extension-APIEndpoint              | `/data-set-manager/entries`                  |
+ | `FDSClientExtensionFilter`   | `/data-set-manager/client-extension-filters` |
+ | `FDSDateFilter`              | `/data-set-manager/date-filters`             |
+ | `FDSDynamicFilter`           | `/data-set-manager/dynamic-filters`          |
+ | `FDSEntry`                   | `/data-set-manager/entries`                  |
  | `FDSField`                   | `/data-set-manager/fields`                   |
  | `FDSListSection`             | `/data-set-manager/list-sections`            |
  | `FDSSort`                    | `/data-set-manager/sorts`                    |
@@ -115,7 +116,7 @@ Now you must find the default Site ID:
 
 1. Find the Site identifier under Site ID.
 
-   ![Identify the Site Id under the Site Settings and Site Configuration option.](./consuming-rest-services/images/02.png)
+   ![Identify the Site Id under the Site Settings and Site Configuration option.](./consuming-rest-services/images/03.png)
 
 ## Make the Service Call Using Credentials with Access to the Data
 
@@ -173,7 +174,7 @@ First, post a blog entry.
 
 You can use the schema browser to learn how to post a blog entry.
 
-![The schema for any service is published on your Liferay DXP instance.](./consuming-rest-services/images/03.png)
+![The schema for any service is published on your Liferay DXP instance.](./consuming-rest-services/images/04.png)
 
 1. Go back to your browser tab containing the schema browser. On the right side, click the `BlogPosting` entry to display its schema (see above). This shows the whole data structure for a `BlogPosting`, but there are only two required fields:
 

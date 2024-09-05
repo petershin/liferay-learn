@@ -38,7 +38,7 @@ Here's example sidecar server output:
 
 In addition, the Liferay log prints information about the running sidecar server. For example,
 
-```bash
+```log
 2024-08-28 14:27:30.450 INFO  [SystemExecutorServiceUtil-12][Sidecar:100] Sidecar Elasticsearch [VERSION] liferay_sidecar started at 127.0.0.1:9201
 ```
 

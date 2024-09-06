@@ -16,6 +16,9 @@ You can set friendly URLs for each of your site's pages. These URLs make it easy
 
 When you create a site page, a friendly URL is generated to match the page's name automatically, though you can change it at any time. Liferay also maintains a history of previously used URLs for a page to prevent broken links and provide an easy way to revert changes.
 
+!!! note
+    Friendly URLs are normalized automatically for web standards. Special characters like spaces and symbols are replaced with dashes (`-`) or encoded (e.g., `%20` for spaces). For example, `/exciting-new-items-for-summer-2024!-best-deals@50%off` is normalized to `/exciting-new-items-for-summer-2024-best-deals-50-off`.
+
 ## Changing a Page's Friendly URL
 
 To change a page's friendly URL, open the *Product Menu* and go to *Site Builder* &rarr; *Pages*. Then click *Actions* (![Actions button](../../../images/icon-staging-bar-options.png)) for the page you want to customize and select *Configure*.

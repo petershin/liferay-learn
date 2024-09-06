@@ -11,16 +11,15 @@ uuid: e421b21c-2c47-4d72-84ec-c89b0f1c40ab
 
 {bdg-secondary}`DXP 2024.Q3+/Portal GA125+`
 
-You can return suggestions with the headless API using the `/suggestions` endpoint. This endpoint is used by Liferay's [Search Bar Suggestions](../../search-pages-and-widgets/search-bar-suggestions.md) feature. There are two suggestions contributors available: the `basic` contributor for returning suggestions based on Liferay's standard indexer based search, and the `sxpBlueprint` contributor for returning suggestions based on a [search blueprint](../../search-pages-and-widgets/search-bar-suggestions/search-bar-suggestions-blueprints.md).
+You can return suggestions with the headless API using the `/suggestions` endpoint. This endpoint is used by Liferay's [Search Bar Suggestions](../../search-pages-and-widgets/search-bar-suggestions.md) feature. There are two primary suggestions contributors available: the `basic` contributor for returning suggestions based on Liferay's standard indexer based search, and the `sxpBlueprint` contributor for returning suggestions based on a [search blueprint](../../search-pages-and-widgets/search-bar-suggestions/search-bar-suggestions-blueprints.md).
 
-
-Here's an example request made using cURL:
+Here's an example search request for the term _able_, made using cURL:
 
 ```bash
 curl \
 	-H "Content-Type: application/json" \
 	-X POST \
-  "http://localhost:8080/o/portal-search-rest/v1.0/suggestions?currentURL=http://localhost:8080&destinationFriendlyURL=http://localhost:8080/web/guest/search&plid=4&search=able" \
+  "http://localhost:8080/o/portal-search-rest/v1.0/suggestions?currentURL=http://localhost:8080&destinationFriendlyURL=http://localhost:8080/web/guest/search&plid=1&search=able" \
   --data-raw '[ { "attributes": {}, "contributorName": "basic", "displayGroupName": "search", "size": 5 } ]' \
 	-u "test@liferay.com:learn"
 ```
@@ -31,11 +30,11 @@ You can configure the service access policy or disable the suggestions endpoint 
 
 | Parameter | Notes |
 | :--- | :--- |
-| `currentURL` | :--- |
-| `destinationFriendlyURL` | :--- |
-| `plid` | Set the portal layout ID that identifies a page across virtual instances. |
-| `scope` | Specify a list of sites (by ID or ERC) to search. You can mix IDs and ERCs in the same request. |
-| `search` | Search by keyword(s). |
+| `currentURL` | (Required) Provide the URL to your Liferay instance. |
+| `destinationFriendlyURL` | (Required) Set the search page's friendly URL. |
+| `plid` | Set the portal layout ID that identifies a page across virtual instances. Usually you can specify `1`, the default home page's `plid`. |
+| `scope` | Specify a list of sites (by ID or ERC) to search. You can mix IDs and ERCs in the same request. If not specified, the whole instance is searched (e.g., company scoped objects are searched). |
+| `search` | (Required) Search by keyword(s). |
 
 ## Suggestions Request Body
 
@@ -43,7 +42,7 @@ You can configure the service access policy or disable the suggestions endpoint 
 | :--- | :--- |
 | `attributes` | Set available search context attributes to configure a search blueprint or enable empty search. See [Available Search Request Attributes for details](#available-search-request-attributes). |
 | `contributorName` | Set the contributor that provides the search query (`basic` or `sxpBlueprint`). |
-| `displayGroupName` | Se the language key to use as a heading in the UI. | 
+| `displayGroupName` | Set the language key to use as a heading in the UI. | 
 | `size` | Set the maximum number of results to return from the endpoint. |
 
 To search with a blueprint, you can use this request body syntax:

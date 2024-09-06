@@ -29,18 +29,20 @@ You can also find your project ID by navigating to your client extensions enviro
 
 ![You can find your project ID from the URL in your client extensions environment.](./liferay-saas-go-live-checklist/images/01.png)
 
-!!! note
-    Some DNS providers do not offer CNAME records to base domain names. In those cases, try to use the *ALIAS* record. Otherwise, please notify Support on the [ticket you created](#inform-liferay-cloud-support).
+If your DNS provider does not offer CNAME records to base domain names, try using the *ALIAS* record. If an alias is also not available, try using an A record connected to the appropriate IP address. Then, update the virtual host name in the portal's site configuration. Ifyou run into problems, notify Support on the [ticket you created](#inform-liferay-cloud-support).
+
+!!! important
+    Using a CNAME record is strongly recommended. A records are connected to a specific IP address. This might cause problems for [disaster recovery](../support-and-troubleshooting/troubleshooting-tools-and-resources/disaster-recovery-overview.md).
 
 ## Create Custom SSL Certificates (Optional)
 
 If you are creating a custom SSL certificate, keep these considerations in mind:
 
-* The SSL certificate must also contain the intermediate certificates.
+- The SSL certificate must also contain the intermediate certificates.
 
-* When sending an SSL certificate to Liferay Cloud Support, upload it in a `.zip` file secured with a password, and share the password in a secure channel. Use the Large File Uploader tool instead of uploading it as a normal attachment.
+- When sending an SSL certificate to Liferay Cloud Support, upload it in a `.zip` file secured with a password, and share the password in a secure channel. Use the Large File Uploader tool instead of uploading it as a normal attachment.
 
-* To avoid service interruption when your SSL certificate expires, provide Liferay Cloud Support with the new certificate *before the last maintenance window before the expiration*. You can provide the new certificate on a Support ticket.
+- To avoid service interruption when your SSL certificate expires, provide Liferay Cloud Support with the new certificate *before the last maintenance window before the expiration*. You can provide the new certificate on a Support ticket.
 
 ## Adjust TTL when Transferring Your Domains
 

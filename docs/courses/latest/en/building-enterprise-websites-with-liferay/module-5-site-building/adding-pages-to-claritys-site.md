@@ -54,7 +54,11 @@ Utility pages handle specific functions within a site. Currently, you can use th
 
 <!-- Exercise 6a -->
 
-The training workspace includes most of the pages Clarity needs for their site hierarchy, but it is missing the *FAQ* content page and the *Leadership Profile* display page.
+As previously mentioned, Clarity wants to implement this page hierarchy for their enterprise website:
+
+![Clarity wants to implement this page hierarchy for their enterprise website.](./adding-pages-to-claritys-site/images/05.png)
+
+Some parts of this structure should be implemented as content pages, while others should be display pages or utility pages. The training workspace includes most of these pages, though it is missing the *FAQ* content page and the *Leadership Profile* display page.
 
 Here you'll add the missing content page as Clarity's web developer, Walter Douglas.
 
@@ -72,20 +76,20 @@ To add the FAQ content page,
 
 1. In the Static Pages tab, click *New* and select *Page*.
 
-   ![Add a page in the Clarity website.](./adding-pages-to-claritys-site/images/05.png)
+   ![Add a page in the Clarity website.](./adding-pages-to-claritys-site/images/06.png)
 
 1. Select the *Primary Master Page* template.
 
    !!! note
        This applies an incomplete template provided by the training workspace. You'll complete this template in later exercises.
 
-   ![Select the Primary Master Page template to set the page's default layout.](./adding-pages-to-claritys-site/images/06.png)
+   ![Select the Primary Master Page template to set the page's default layout.](./adding-pages-to-claritys-site/images/07.png)
 
 1. For name, enter `FAQ` and click *Add*.
 
    This creates a blank content page and directs you to Liferay’s page editor UI. Here you can access all page building tools and configuration options.
 
-   <!--TASK: Assess whether users should add the FAQ to a navigation menu here instead of later.-->
+   <!--TASK: Assess whether users should add the FAQ to the Resources navigation menu here instead of later.-->
 
 1. For now, leave the page blank and click *Publish*.
 
@@ -95,7 +99,7 @@ To add the FAQ content page,
 
    This creates a hierarchical relationship between these pages.
 
-   ![Create a hierarchical relationship between Clarity's product pages.](./adding-pages-to-claritys-site/images/07.png)
+   ![Create a hierarchical relationship between Clarity's product pages.](./adding-pages-to-claritys-site/images/08.png)
 
 1. Drag and drop *Open Positions* onto *Careers*.
 
@@ -126,9 +130,9 @@ To do this,
 1. For Subtype, select *Leadership Profile*.
 
    !!! note
-       The Leadership Profile type was provided by the training workspace. You'll learn more about web content types in a later lesson.
+       The Leadership Profile subtype was provided by the training workspace. You'll learn more about web content types in a later lesson.
 
-   ![Create a Leadership Profile display page template.](./adding-pages-to-claritys-site/images/08.png)
+   ![Create a Leadership Profile display page template.](./adding-pages-to-claritys-site/images/09.png)
 
 1. Click *Save*.
 
@@ -140,11 +144,9 @@ To do this,
 
    This ensures leadership profile articles use this template.
 
-   ![Mark the Leadership Profile display page template as default.](./adding-pages-to-claritys-site/images/09.png)
+   ![Mark the Leadership Profile display page template as default.](./adding-pages-to-claritys-site/images/10.png)
 
 For now, we'll leave this template blank, but we'll revisit it in a later exercise. With Clarity's page structure complete, let's finish designing the header for Clarity's pages.
-
-Since Liferay sites include 404 and 500 error pages by default, there's no need to create any utility pages, so Clarity's page structure is complete.
 
 ## Conclusion
 

@@ -33,18 +33,13 @@ Propagation.
 
 Page fragments are reusable drag-and-drop elements for designing page layouts, displaying content, building forms, and more. They are built using HTML, CSS, and JavaScript and can provide both structure and functionality to pages. Liferay provides a variety of fragments out-of-the-box, but you can develop your own.
 
-The training workspace includes a set of custom fragments called Clarity components. While this set includes most of what Clarity needs, they still need a custom Search Button fragment. Here you'll create it as Walter Douglas.
-
-<!--TASK: Update Bootcamp Exercise. -->
+The training workspace includes a set of custom fragments called Clarity components. While this fragment includes most of what Clarity needs, they still need a custom Search Button fragment. Here you'll create it as Walter Douglas.
 
 To do this,
 
 1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)), expand *Design*, and click *Fragments*.
 
 1. Under Fragment Sets, click *Clarity Components*.
-
-   !!! note
-       Liferay organizes fragments into sets to improve management and create an additional level of resource control. These sets can group fragments by functionality, team, or any other relevant characteristic. You can also add resources to fragment sets, making them accessible only to fragments within that set.
 
 1. Click *New*, select *Basic Fragment*, and click *Next*.
 

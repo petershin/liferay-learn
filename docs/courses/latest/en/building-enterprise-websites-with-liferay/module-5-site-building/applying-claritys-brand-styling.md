@@ -35,9 +35,18 @@ To do this,
 
    ![Select the Dialect theme.](./applying-claritys-brand-styling/images/01.png)
 
+   !!! note
+      Themes determine the baseline look and feel for your website, including color schemes, typography, spacing, and other styling options. They serve as the starting point for additional configurations that you can make using style books and frontend client extensions.
+
 1. Under Basic Settings, click *Select Favicon* (![Select Favicon](../../images/icon-change.png)) and add the `clarity-favicon.svg` file found in the `[repository-folder]/exercises/lesson-8/` folder.
 
+   !!! note 
+      Favicons are images used to identify sites in browser tabs.
+
 1. Click *Change Logo* (![Change Logo](../../images/icon-change.png)) and select the `clarity-logo-c.png` file.
+
+   !!! note 
+      The logo determines the image used to identify the site in the Liferay UI.
 
    ![Update the favicon and logo.](./applying-claritys-brand-styling/images/02.png)
 
@@ -68,7 +77,7 @@ To deploy Clarity's theme CSS client extension:
    **Unix-based systems**:
 
    ```bash
-   ../../../../gradlew clean deploy
+   ../../gradlew clean deploy
    ```
 
    **Windows**:

@@ -41,7 +41,7 @@ Once you've defined a structure, you can create a template for it. Web content t
 ## Exercise: Creating Web Content Structures
 <!--Exercise 10a-->
 
-The training workspace already includes most of the custom web content structures Clarity needs. In this exercise, you'll add the Announcements structure as Christian Carter.
+The training workspace includes most of the custom web content structures Clarity needs. Here you'll add the Announcements structure as Christian Carter.
 
 To do this,
 
@@ -50,7 +50,9 @@ To do this,
    * Email: `christian.carter@clarityvisionsolutions.com`
    * Password: `learn`
 
-1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)), expand *Content & Data*, and select *Web Content*.
+1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), go to the *Applications* tab, and click *Asset Libraries*.
+
+1. Select the *Marketing Assets* library and *Web Content*.
 
 1. Go to the *Structures* tab and click *New*.
 
@@ -60,11 +62,11 @@ To do this,
 
 1. Select the *Text* field and configure these options:
 
-   | Tab      | Field           | Value       |
-   |:---------|:----------------|:------------|
-   | Basic    | Label           | `Message`   |
-   | Basic    | Required Field  | Yes         |
-   | Advanced | Field Reference | `message`   |
+   | Tab      | Field           | Value     |
+   |:---------|:----------------|:----------|
+   | Basic    | Label           | `Message` |
+   | Basic    | Required Field  | Yes       |
+   | Advanced | Field Reference | `message` |
 
 1. Click the *back arrow* (![Back Arrow](../../images/icon-angle-left.png)) to return to the Builder sidebar menu.
 
@@ -86,24 +88,26 @@ To do this,
 
 1. Select the *Link to Page* field and configure these options:
 
-   | Tab      | Field           | Value       |
-   |:---------|:----------------|:------------|
-   | Advanced | Field Reference | `linkPage`  |
+   | Tab      | Field           | Value      |
+   |:---------|:----------------|:-----------|
+   | Advanced | Field Reference | `linkPage` |
 
 1. Click *Save*.
 
-![Creating the Announcements web content structure.](./creating-claritys-web-content/images/01.png)
+![Create the Announcements web content structure.](./creating-claritys-web-content/images/01.png)
 
-Users can now create web content articles using the Announcements structure. You should now have eight web content structures implemented in Clarity’s website. Next, you'll create some web content articles.
+Users can now create web content articles using the Announcements structure. Next, you'll create some web content articles.
 
 ## Exercise: Creating Web Content Articles
 <!--Exercise 10b-->
 
-The training workspace already includes some web content articles. However, Clarity also needs some FAQ and announcement articles. Here you'll create them as Christian Carter.
+The training workspace includes some web content articles. However, Clarity also needs some FAQ and announcement articles. Here you'll create them as Christian Carter.
 
 To do this,
 
-1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)), expand *Content & Data*, and select *Web Content*.
+1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), go to the *Applications* tab, and click *Asset Libraries*.
+
+1. Select the *Marketing Assets* library and click *Web Content*.
 
 1. Click *New*, select *Folder*.
 
@@ -114,9 +118,10 @@ To do this,
    | Name        | `Announcements`                                     |
    | Description | `Stores announcement articles for the page header.` |
 
-   **Tip**: It's best practice to organize your web content into folders instead of adding it to the home folder.
+   !!! tip 
+      It's best practice to organize your web content into folders instead of adding it to the home folder.
 
-1. Click Save.
+1. Click *Save*.
 
 1. Click the *Announcements* folder.
 
@@ -129,17 +134,20 @@ To do this,
    | Title        | `Product Innovations`                       |
    | Message      | `See Clarity's latest eyewear innovations!` |
    | Link Text    | `Learn more`                                |
-   | Link to Page | `Products`                                  |
+   | Link to Page | Products                                    |
 
-   ![Create Product Innovations web content article.](./creating-claritys-web-content/images/02.png)
+   !!! note 
+      When selecting the page, click the *Sites and Libraries* in the breadcrumb menu and select *Clarity Public Enterprise Website*.
+
+   ![Create the Product Innovations web content article.](./creating-claritys-web-content/images/02.png)
 
 1. Click *Publish*.
 
    Next, you'll add some missing web content articles.
 
-1. Go to the *Home* web content folder.
+1. Click *Web Content* in the breadcrumb menu.
 
-1. Go to *FAQ* &rarr; *Retail Partners*.
+1. Go to *FAQ* folder &rarr; *Retail Partners* subfolder.
 
 1. Create these FAQ articles:
 
@@ -149,9 +157,9 @@ To do this,
    | Do you have retail partners where I can try on your eyewear? | Yes, we have partnered with various optical shops where you can try on our eyewear. Please visit our website to find the nearest location.                                              |
    | What types of eyewear do you offer?                          | We offer a wide range of eyewear including prescription glasses, sunglasses, and contact lenses. We also have a collection of designer frames to suit different styles and preferences. |
 
-![Create three FAQ web content article.](./creating-claritys-web-content/images/03.png)
+![Create three FAQ web content articles.](./creating-claritys-web-content/images/03.png)
 
-Great! You should have all the web content Clarity needs for their pages. Next, you'll map some of this content to fragments on Clarity's pages.
+Great! You should have all the web content Clarity needs for their pages. Next, you'll map content to fragments on Clarity's pages.
 
 ## Exercise: Mapping Content to Fragments
 <!--Exercise 10c-->
@@ -166,7 +174,16 @@ Many fragments include sub-elements with their own configuration options, which 
 
 You can set each sub-element's content directly, or you can map them to existing content items so that they update dynamically. Here you'll map some image elements in the Home page to asset library images as Walter Douglas.
 
+To do this,
+
+1. Sign in as Walter Douglas.
+
+   * Email: `walter.douglas@clarityvisionsolutions.com`
+   * Password: `learn`
+
 1. Begin editing Clarity's *Home* page.
+
+   <!--TASK: Improve the following instructions.-->
 
 1. In the Browser side panel (![Browser](../../images/icon-hierarchy.png)), select the *Banner* container.
 
@@ -174,17 +191,23 @@ You can set each sub-element's content directly, or you can map them to existing
 
 1. Select the fragment's *image-square* sub-element to access its mapping options.
 
+   ![Select the image-square sub-element under the Banner's Image fragment.](./creating-claritys-web-content/images/04.png)
+
 1. For Source Selection, select *Mapping*.
 
-1. For Item, click the *Plus* button (![Plus Button](../../images/icon-plus.png)).
+1. For Item, click *Select Item* (![Select Item Button](../../images/icon-plus.png)).
 
-1. In the Documents and Media tab, click *Sites and Libraries* in the breadcrumb menu.
+1. Go to the *Documents and Media* tab and click *Sites and Libraries* in the breadcrumb menu.
+
+   ![Go to the Documents and Media tab and use the breadcrumb menu.](./creating-claritys-web-content/images/05.png)
 
 1. Go to the *Asset Library* tab, select *Marketing Assets*, and select the image named `home-banner-narrow-no-background`.
 
 1. For Field, select *File URL*. The image should appear in the Home page banner.
 
-1. Repeat steps 4-9 for the *Image* fragment in the Clarity Solutions Promo container and select the `sunglasses-on-shelves` image named from the Marketing Assets asset library.
+   ![Map the image to display it in the fragment.](./creating-claritys-web-content/images/06.png)
+
+1. Repeat steps 4-9 for the *Image* fragment in the Clarity Solutions Promo container and select the `sunglasses-on-shelves` image from the Marketing Assets asset library.
 
 1. In the Browser side panel (![Browser](../../images/icon-hierarchy.png)), select the *Content Wrapper* container in the Clarity Solutions Promo container.
 
@@ -196,9 +219,11 @@ You can set each sub-element's content directly, or you can map them to existing
 
 1. For Field, select *File URL*. The texture should overlay the gradient promotion.
 
-1. Repeat steps 13-15 for the *Distributor Promo* container and select the `home-promotion` image from the Marketing Assets asset library.
+   ![Map the image to use it as the fragment's background.](./creating-claritys-web-content/images/07.png)
 
-   Once you've finished, you may notice that the image dimensions don't match Clarity's design. Let's fix this.
+1. Repeat steps 12-14 for the *Distributor Promo* container and select the `home-promotion` image from the Marketing Assets asset library.
+
+   Once you've finished, you may notice that the image dimensions don't match [Clarity's Home page design](https://www.figma.com/design/vLkKooAPBSwVzQ8QDqJ7NM/Clarity---Public-Enterprise-Website?node-id=1-3449&t=kMamr3HMnej3CvB0-1). Let's fix this.
 
 1. Select the *Banner Content* container and configure this setting:
 
@@ -206,11 +231,23 @@ You can set each sub-element's content directly, or you can map them to existing
    |:--------|:----------------|:------------|
    | General | Container Width | Fixed Width |
 
-1. Repeat this step for *Content Container* and *Clarity Solutions Promo*.
+   ![Set the Banner Content container's width setting to Fixed Width.](./creating-claritys-web-content/images/08.png)
+
+1. Repeat the previous step for these containers
+
+   * *Clarity Solutions Promo*
+   * *Content Container* (under See the Difference)
+   * *Helpful Articles*
+
+   ![Set the containers' width setting to Fixed Width.](./creating-claritys-web-content/images/09.png)
 
    Now the contents of these containers should be fixed and the dimensions should better resemble Clarity's designs.
 
-You have now mapped content from Clarity's asset libraries to the image fragments on the Home page.  Next, let's explore how you can create content in Liferay with ChatGPT.
+You have now mapped content from Clarity's asset libraries to the image fragments on their Home page. In later lessons, you'll map content fields to additional types of fragment sub-elements. But for now, you've completed all exercises for day one of Building Enterprise Websites!
+
+![Navigate to the home page, and confirm every field is mapped correctly.](./creating-claritys-web-content/images/10.png)
+
+Next, you'll learn about how you can use AI to assist in content creation and tagging.
 
 ## Exercise: Generating Content with ChatGPT (Optional)
 <!--Exercise 11a-->
@@ -241,7 +278,7 @@ To do this,
 
 1. Return to Clarity's site, begin creating a web content article, and click the *AI Creator* button to generate content.
 
-![Use the AI Creator tool to generate content.](./creating-claritys-web-content/images/04.png)
+![Use the AI Creator tool to generate content.](./creating-claritys-web-content/images/11.png)
 
 Great! You've used ChatGPT to generate web content articles.
 

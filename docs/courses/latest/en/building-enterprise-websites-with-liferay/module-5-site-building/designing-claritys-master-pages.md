@@ -82,13 +82,13 @@ The training workspace provides the *Primary Master Page* template. While this t
 
 To do this,
 
-1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)), expand *Design*, and click *Page Templates*.
+1. While in the Page Templates application, go to the *Masters* tab.
 
-1. In the Masters tab, click the *Primary Master Page* template to begin editing it.
+1. Click the *Primary Master Page* template to begin editing it.
 
-1. Open the *Fragments and Widgets* tab (![Fragments and Widgets](../../images/icon-plus.png)) in the side panel.
+1. Open the *Fragments and Widgets* tab (![Fragments and Widgets](../../images/icon-plus.png)) in the left side panel.
 
-1. Add a container to the top of the template. This container is for the page header.
+1. Drag and drop a *Container* fragment to the top of the template. This container is for the page header.
 
    !!! note
        When designing a page, it’s recommended to always put elements into their own containers. This can help provide more control over styling.
@@ -98,10 +98,7 @@ To do this,
    !!! note
        Naming fragments adds a custom `data-name` attribute to the `<div>` that you can use in your JavaScript and CSS. This can help bring clarity to complex page structures and provide more control over your site.
 
-   <!--
-   !!! note
-       By default, containers and grids automatically adjust to the size of their content, like the Header Navigation container adjusted to the dimensions of the menu display fragment.
-   -->
+   <!-- **Note**: By default, containers and grids automatically adjust to the size of their content, like the Header Navigation container adjusted to the dimensions of the menu display fragment. -->
 
 1. Add two separate containers to the Page Header container and name them `Header Announcement Bar` and `Header Navigation Bar`.
 
@@ -112,7 +109,7 @@ To do this,
    !!! tip
        To duplicate a page element while editing, press CTRL + D.
 
-   ![Add two containers in the Page Header container.](./designing-claritys-master-pages/images/07.png)
+   ![Add two containers in the Page Header container.](./pdf-images/day1/lesson6/07.png)
 
 1. Select the *Header Announcement Bar* and configure these settings in the configuration side panel:
 
@@ -222,7 +219,7 @@ To do this,
    * Footers (fragment set)
    * Navigation Bars (fragment set)
    * Knowledge Base Navigation (fragment)
-   * Product (fragment set)
+   * Add to Cart (fragment)
 
    ![Uncheck these fragments to prevent users from adding them to pages using the template.](./designing-claritys-master-pages/images/13.png)
 
@@ -278,11 +275,12 @@ To do this,
 
    * Home (Content Page)
    * Sign In (Content Page)
-   * 404 Error (Utility Page)
-   * 500 Error (Utility Page)
    * Leadership Profile (Display Page Template)
 
-   To access the utility pages, open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)), expand *Site Builder*, click *Pages*, and go to the *Utility Pages* tab.
+   <!-- * 404 Error (Utility Page)
+   * 500 Error (Utility Page) -->
+
+   <!-- To access the utility pages, open the *Site Menu* (![Site Menu](../images/icon-product-menu.png)), expand *Site Builder*, click *Pages*, and go to the *Utility Pages* tab. -->
 
    To access the display page template, open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)), expand *Design*, click *Page Templates* and go to the *Display Page Templates* tab.
 
@@ -292,9 +290,10 @@ To do this,
 
    * **Home**: Primary Master Page
    * **Sign In**: Secondary Master Page
-   * **404 Error**: Secondary Master Page
-   * **500 Error**: Secondary Master Page
    * **Leadership Profile**: Secondary Master Page
+
+   <!-- * **404 Error**: Secondary Master Page
+   * **500 Error**: Secondary Master Page -->
 
    ![Apply the appropriate master page template.](./designing-claritys-master-pages/images/16.png)
 
@@ -303,6 +302,8 @@ To do this,
 1. Repeat this process until you've finished applying the master pages.
 
 Once finished, each page should be linked to the correct master page template. Now any changes made to the templates are automatically applied to each page using it.
+
+Next, you’ll create custom navigation menus and use them for these master page templates so they only include the desired pages.
 
 ## Conclusion
 

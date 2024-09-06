@@ -82,7 +82,7 @@ To do this,
 
    Clarity needs all Marketing Coordinators to have access to assets in the team's asset library.
 
-1. Return to the Clarity Admin tab, go to the *Roles* application and click the *Marketing Coordinator* role to begin editing as the Clarity Admin user.
+1. Return to the Clarity Admin tab, go to the *Roles* application, and click the *Marketing Coordinator* role to begin editing it.
 
 1. Go to the *Define Permissions* tab.
 
@@ -108,19 +108,68 @@ To do this,
 
 1. Refresh the tab where you're impersonating Christian Carter.
 
-   Notice that he can now access the Asset Libraries application in the Global Menu.
+   Now he can access the Asset Libraries application in the Global Menu (![Global Menu](../../images/icon-applications-menu.png)).
 
    ![Christian Carter can now access the Asset Libraries application in the Global Menu.](./creating-and-assigning-roles-to-claritys-users/images/07.png)
 
-   Marketing Coordinators also need to access files in the Documents and Media application.
+1. Go to the *Asset Libraries* application.
+
+   Although Christian Carter can access the application, he cannot view or access any libraries included in the bootcamp workspace: 
+   
+   * Error Pages
+   * HR
+   * Leadership
+   * Legal
+   * Marketing Assets
+   * Product Images
+   
+   Since Christian Carter and other marketing team members need access to the Marketing Assets library, let's grant grant them membership using the Marketing user group.
 
 1. Return to the Clarity Admin tab.
 
+1. In the Global Menu, go to *Asset Libraries* and click *Marketing Assets*.
+
+1. Click *Memberships* and go to the *User Groups* tab.
+
+1. Click *New*.
+
+1. Select *Marketing* and click *Done*.
+
+   ![Select the Marketing user group in the Marketing Assets's membership application](./creating-and-assigning-roles-to-claritys-users/images/08.png)
+
+1. Refresh the tab where you're impersonating Christian Carter.
+
+   Now he can access the Marketing Assets library, but he still cannot access the library's applications or data.
+
+   To solve this, let's assign the default Asset Library Administrator role to the Marketing user group.
+
+1. Return to the Clarity Admin tab.
+
+1. Click *Actions* (![Actions Button](../../images/icon-actions.png)) for the Marketing user group and select *Assign Roles*.
+
+   ![Click Actions for the Marketing user group and select Assign Roles.](./creating-and-assigning-roles-to-claritys-users/images/09.png)
+
+   Here you can select from available asset library roles. These roles grant permissions for individual libraries.
+
+1. Select the *Asset Library Administrator* role and click *Done*.
+
+1. Refresh the tab where you're impersonating Christian Carter.
+
+   Now he can access the library's applications.
+
+   ![Now Christian Carter can access the library's applications.](./creating-and-assigning-roles-to-claritys-users/images/10.png)
+
+   Although Christian Carter can access the library's applications, he doesn't have the application permissions necessary for fulfilling his responsibilities (e.g., uploading documents, editing articles).
+
+   Let's add these permissions to the Marketing Coordinator role.
+
+1. Return to the Clarity Admin tab, go to the *Roles* application, and click the *Marketing Coordinator* role to begin editing it.
+
+1. Go to the *Define Permissions* tab.
+
 1. In the left menu, go to *Site and Asset Library Administration* &rarr; *Content & Data* &rarr; *Documents and Media*.
-
-   **Note**: If you search "Documents and Media" two options appear with the same name. Select the option under Content & Data.
-
-   ![Assign Documents and Media permissions to the Marketing Coordinator role.](./creating-and-assigning-roles-to-claritys-users/images/08.png)
+ 
+   **Note**: If you search "Documents and Media," two options appear with the same name. Select the option under Content & Data.
 
 1. Select these permissions:
 
@@ -128,24 +177,54 @@ To do this,
    |:----------------------------------------|:------------------------------------------------|
    | General Permissions                     | Access in Site and Asset Library Administration |
    | General Permissions                     | View                                            |
+   | Resource Permissions > Documents        | Add Document                                    |
+   | Resource Permissions > Documents        | Add Folder                                      |
+   | Resource Permissions > Documents        | Update                                          |
    | Resource Permissions > Documents        | View                                            |
    | Resource Permissions > Documents Folder | View                                            |
 
 1. Click *Save*.
 
+1. In the left menu, go to *Site and Asset Library Administration* &rarr; *Content & Data* &rarr; *Web Content*.
+
+   **Note**: If you search "Web Content," two options appear with the same name. Select the option under Content & Data.
+
+1. Select these permissions:
+
+   | Section                                      | Permission                                      |
+   |:---------------------------------------------|:------------------------------------------------|
+   | General Permissions                          | Access in Site and Asset Library Administration |
+   | General Permissions                          | View                                            |
+   | Resource Permissions > Web Content           | Add Folder                                      |
+   | Resource Permissions > Web Content           | Add Structure                                   |
+   | Resource Permissions > Web Content           | Add Template                                    |
+   | Resource Permissions > Web Content           | Add Web Content                                 |
+   | Resource Permissions > Web Content           | Update                                          |
+   | Resource Permissions > Web Content           | View                                            |
+   | Resource Permissions > Web Content Article   | Update                                          |
+   | Resource Permissions > Web Content Structure | View                                            |
+   | Resource Permissions > Web Content Template  | View                                            |
+
+1. Click *Save*.
+
+1. In the left menu, go to *Site and Asset Library Administration* &rarr;  *Categorization* &rarr; *Categories*.
+
+1. Select these permissions:
+
+   | Section                                 | Permission     |
+   |:----------------------------------------|:---------------|
+   | Resource Permissions > Asset Categories | Add Category   |
+   | Resource Permissions > Asset Categories | Add Vocabulary |
+
 1. Refresh the tab where you're impersonating Christian Carter.
 
-   Notice that he can now access the Documents and Media application in the Site Menu.
-
-   ![Christian Carter can now access the Documents and Media application in the Site Menu.](./creating-and-assigning-roles-to-claritys-users/images/09.png)
-
-   Marketing Coordinators also need the ability to update pages.
+   He can now perform all content actions necessary for his responsibilities (e.g., create and edit web content). Next, marketing coordinators need the ability to update site pages.
 
 1. Return to the Clarity Admin tab.
 
-1. In the left menu, go to *Site and Asset Library Administration* &rarr; *Site Builder* &rarr; *Pages*.
+1. In the left menu, go to *Site and Asset Library Administration* &rarr; *Site Builder* &rarr; *Pages*. 
 
-   ![Assign Page permissions to the Marketing Coordinator role.](./creating-and-assigning-roles-to-claritys-users/images/10.png)
+   ![Assign Page permissions to the Marketing Coordinator role.](./creating-and-assigning-roles-to-claritys-users/images/11.png)
 
 1. Select this permission.
 
@@ -159,9 +238,9 @@ To do this,
 
    Notice that he can now access edit tools for site pages.
 
-   ![Christian Carter can now access edit tools for site pages.](./creating-and-assigning-roles-to-claritys-users/images/11.png)
+   ![Christian Carter can now access edit tools for site pages.](./creating-and-assigning-roles-to-claritys-users/images/12.png)
 
-Well done! Now all members of the Marketing user group have the correct base permissions. Clarity can assign additional roles to individual users or user groups to grant the ability to access more data or perform other actions.
+Well done! Now all members of the Marketing user group have the correct base permissions. By assigning additional roles, Clarity can ensure they have access to the applications and data they need.
 
 Next, you can opt to learn more about roles and user permissions by creating a manager role. Otherwise, you can move to Lesson 4 and explore how to create and configure sites.
 
@@ -215,7 +294,7 @@ To do this,
 
 1. Click *Actions* (![Actions Button](../../images/icon-actions.png)) for the Marketing user group and select *Permissions*.
 
-   ![Select Permissions in the Actions menu for the Marketing user group.](./creating-and-assigning-roles-to-claritys-users/images/12.png)          
+   ![Select Permissions in the Actions menu for the Marketing user group.](./creating-and-assigning-roles-to-claritys-users/images/13.png)          
 
 1. For the Marketing Manager role, select these permissions and click *Save*:
 
@@ -225,7 +304,7 @@ To do this,
    | Marketing Manager | View Members   |
    | Marketing Manager | View           |
 
-   ![Give view and add members permissions to the marketing manager role.](./creating-and-assigning-roles-to-claritys-users/images/13.png)
+   ![Give view and add members permissions to the marketing manager role.](./creating-and-assigning-roles-to-claritys-users/images/14.png)
 
 1. Go to the *Users and Organizations* application in the Global Menu.
 
@@ -233,7 +312,7 @@ To do this,
 
    Clara should see the Marketing user group. She should also be able to view members of the user group and add new members to the group.
 
-   ![Clara can add other Clarity users to the marketing user group.](./creating-and-assigning-roles-to-claritys-users/images/14.png)
+   ![Clara can add other Clarity users to the marketing user group.](./creating-and-assigning-roles-to-claritys-users/images/15.png)
 
    **Note**: This is just an example of the types of permissions you can assign to manager roles.
 

@@ -25,7 +25,7 @@ Currently, Clarity is only focused on creating a single public site. But if they
 
 <!-- Exercise 4a -->
 
-The training workspace includes a prebuilt site, Clarity Public Enterprise Website. However, to see what the site creation process looks like, let's create a new test site as Ian Miller.
+When you create a site, you can start from scratch or select from available templates and initializers. The training workspace includes a prebuilt site, Clarity Public Enterprise Website. However, to see what the site creation process looks like, let's create a new test site as Ian Miller.
 
 To do this,
 
@@ -35,7 +35,7 @@ To do this,
    * Password: `learn`
 
    !!! note
-       So far we've used Clarity's administrator user, which has complete control over the Liferay instance. In practice, it's best to limit the use of such high-level accounts to ensure optimal security.
+        So far we've used Clarity's administrator user, which has complete control over the Liferay instance. In practice, it's best to limit the use of such high-level accounts to ensure optimal security.
 
 1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Sites*.
 
@@ -51,9 +51,9 @@ To do this,
 
    This creates a new empty site and redirects you to its configuration page.
 
-Clarity could use the new site to build a channel for selling products to their distributors. But for this course, we'll focus on optimizing Clarity's public enterprise website.
+Clarity could use this site to build a channel for selling products to their distributors. But for this course, we'll focus on optimizing the *Clarity Public Enterprise Website*.
 
-Next, you'll learn about site membership and how you can grant users site specific roles. But before that, let's take a quick tour to familiarize ourselves with Liferay's site building UI.
+Next, you'll learn about site membership and how you can grant users site specific roles.
 
 ## Exploring the Site Building UI
 

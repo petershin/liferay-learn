@@ -87,8 +87,6 @@ To do this,
 
 1. Repeat steps 6-7 to assign the Site Content Contributor role to Harper Roberts as well.
 
-   <!--TASK: Fix bootcamp step.-->
-
 Next, you'll begin configuring Clarity's enterprise website to ensure it is public and accessible to their target audience.
 
 <!-- Great! Now the Clarity personas are members of the new site. Next, we'll log in as Walter Douglas, to configure the new site. -->
@@ -151,14 +149,12 @@ To do this,
 
 1. Click *Define a custom default language* and use the *left arrow* button (![Left Arrow Button](../../images/icon-caret-left.png)) to remove all languages except for English and Spanish.
 
-   <!-- TASK: Add icon -->
-
    For now, Clarity only wants to support English (United States) and Spanish (Spain) for content localization on their site.
-
-   ![Define a custom language configuration.](./configuring-the-clarity-site/images/07.png)
 
    !!! tip
        To select multiple languages at a time, hold the CTRL key.
+
+   ![Define a custom language configuration.](./configuring-the-clarity-site/images/07.png)
 
 1. Click *Save*.
 
@@ -178,7 +174,7 @@ Before moving further, let's update the default home page and landing page for C
 
 ### Configuring the Instance's Default Home and Landing Pages
 
-Currently, when you visit `http://localhost:8080/`, you're directed to the Clarity Vision Solutions site, instead of Clarity Public Enterprise Website. Here you'll update the default home and landing pages for your instance as the Clarity Admin user.
+Currently, when you visit `http://localhost:8080/`, you're directed to the default Clarity Vision Solutions site, instead of Clarity Public Enterprise Website. Here you'll update the default home and landing pages for your instance as the Clarity Admin user.
 
 To do this,
 

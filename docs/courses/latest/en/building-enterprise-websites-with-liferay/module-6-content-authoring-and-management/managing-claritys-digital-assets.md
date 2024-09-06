@@ -42,9 +42,9 @@ To do this,
 
 1. Click *Add* and select *Clarity Public Enterprise Website*.
 
-   This enables users in the site to access content in the asset library. Next, add content to the library.
-
    ![Add Clarity Public Enterprise Website to Clarity Branding and Logo asset library.](./managing-claritys-digital-assets/images/02.png)
+
+   This enables users in the site to access content in the asset library. Next, add content to the library.
 
 1. Return to the *Asset Libraries* overview page.
 
@@ -58,19 +58,19 @@ To do this,
 
 1. Click *Publish*.
 
-You should now have five asset libraries with images and content that you can use in Clarity's website:
+After completing this exercise, you should have seven asset libraries with images and content that you can use in Clarity's website:
 
 * Clarity Branding and Logo
 * Error Pages
-* Leadership Headshots
+* HR
+* Leadership
+* Legal
 * Marketing Assets
 * Product Images
 
 ![Go to the Asset Libraries overview page and confirm you have five asset libraries.](./managing-claritys-digital-assets/images/03.png)
 
 Next, you'll return to Clarity's master pages and use the imported branding images.
-
-<!--TASK: Add content on library membership. Add Christian Carter (and Clara?) to the Marketing Assets Library.-->
 
 ## Exercise: Adding Clarity’s Logo to the Master Pages
 <!--Exercise 9b-->
@@ -89,7 +89,7 @@ To do this,
 
    This selects the fragment's *image-square* sub-element and opens its configuration options.
 
-1. In the configuration side panel, click the *Select Image* button (![Select Image](../../images/icon-plus.png)).
+1. In the configuration side panel, click *Select Image* (![Select Image Button](../../images/icon-plus.png)).
 
 1. Click *Sites and Libraries* in the breadcrumb menu.
 
@@ -106,7 +106,7 @@ To do this,
    !!! tip
        If you're having difficulty finding the image, use the search bar.
 
-1. In the configuration side panel, go to the *Link* tab and configure these settings:
+1. In the configuration side panel, go to the *Link* tab and configure these settings for the image-square element:
 
    | Tab  | Setting | Value |
    |:-----|:--------|:------|

@@ -66,7 +66,7 @@ As you begin using Liferay in Liferay Cloud, familiarize yourself with the avail
 
 - **Alerts** can notify you in real-time when your services are running into problems with resource limitations, when they have scaled the number of instances up or down, and when they are experiencing other problems. [Configure your status alerts](../manage-and-optimize/real-time-alerts.md) to fit your needs so that you are aware of these events.
 
-- **Auto-scaling** automatically adjusts the number of instances of your Liferay service as needed to accommodate User traffic. [Configure auto-scaling](../manage-and-optimize/auto-scaling.md) to take advantage of this optimization.
+- **Auto-scaling** automatically adjusts the number of instances of your Liferay service as needed to accommodate User traffic. [Configure auto-scaling](../manage-and-optimize/scaling-the-liferay-service.md) to take advantage of this optimization.
 
 - View the [**service popover**](../manage-and-optimize/application-metrics.md#service-popover) and [**Monitoring screen**](../manage-and-optimize/application-metrics.md#extended-application-metrics) to view details about your services and their resource usage. See [Application Metrics](../manage-and-optimize/application-metrics.md) for more information about monitoring your services' performance.
 

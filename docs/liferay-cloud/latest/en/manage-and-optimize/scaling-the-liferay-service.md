@@ -6,7 +6,7 @@ taxonomy-category-names:
 - Liferay PaaS
 uuid: f5e2b006-daf3-4775-9182-0d9455a63b38
 ---
-# Auto-scaling
+# Scaling the Liferay Service
 
 Liferay Cloud's auto-scaling feature automatically creates and destroys instances of the Liferay service as needed to optimize performance. This addresses sudden changes such as increased server traffic, memory leaks, or other issues. By default, this feature is *disabled* in every Liferay Cloud account.
 
@@ -63,7 +63,7 @@ Follow these steps to enable or disable auto-scaling in the Liferay Cloud Consol
 
 With auto-scaling enabled, Liferay Cloud monitors your service and scales it automatically according to the threshold you define.
 
-![Enable or disable auto-scaling from your service's Scale tab.](./auto-scaling/images/01.png)
+![Enable or disable auto-scaling from your service's Scale tab.](./scaling-the-liferay-service/images/01.png)
 
 ### Setting the Maximum Number of Additional Instances
 

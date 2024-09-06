@@ -46,4 +46,4 @@ Liferay Cloud supports all official Liferay images, services, and features provi
 
 ## How is auto-scaling charged?
 
-Auto-scaling incurs an additional charge per hour, based on how many additional instances are used. See [How Auto-Scaling is Charged](../../manage-and-optimize/auto-scaling.md#how-auto-scaling-is-charged) for more information.
+Auto-scaling incurs an additional charge per hour, based on how many additional instances are used. See [How Auto-Scaling is Charged](../../manage-and-optimize/scaling-the-liferay-service.md#how-auto-scaling-is-charged) for more information.

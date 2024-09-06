@@ -95,7 +95,7 @@ Additionally, run a manual backup and restore it to your environment to make sur
 
 ### Auto-Scaling
 
-If you have clustering configured, you should activate and test auto-scaling in your environment before going live. See [Auto-Scaling](../manage-and-optimize/auto-scaling.md) for more information.
+If you have clustering configured, you should activate and test auto-scaling in your environment before going live. See [Scaling the Liferay Service](../manage-and-optimize/scaling-the-liferay-service.md) for more information.
 
 ### Disaster Recovery
 

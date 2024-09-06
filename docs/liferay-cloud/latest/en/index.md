@@ -73,7 +73,7 @@ uuid: 7d1a4e73-0b50-465f-99dc-c531c3f3dd25
 :::{grid-item-card} Manage and Optimize
 :link: ./manage-and-optimize.md
 
-[Auto-Scaling](./manage-and-optimize/auto-scaling.md)
+[Scaling the Liferay Service](./manage-and-optimize/scaling-the-liferay-service.md)
 [Real-Time Alerts](./manage-and-optimize/real-time-alerts.md)
 [Environment Teams & Roles](./manage-and-optimize/environment-teams-and-roles.md)
 :::

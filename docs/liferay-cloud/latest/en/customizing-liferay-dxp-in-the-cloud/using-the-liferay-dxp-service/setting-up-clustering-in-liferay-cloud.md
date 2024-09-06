@@ -47,7 +47,7 @@ Once the Liferay service has been deployed with the `scale` property set to `1`,
 
 ### Auto-Scaling
 
-Auto-scaling works together with the `scale` attribute in `LCP.json`. If auto-scaling is enabled, then the `scale` property will determine the initial number of instances. The number of instances will then increase according to demand. See [Auto-scaling](../../manage-and-optimize/auto-scaling.md) for more information.
+Auto-scaling works together with the `scale` attribute in `LCP.json`. If auto-scaling is enabled, then the `scale` property will determine the initial number of instances. The number of instances will then increase according to demand. See [Scaling the Liferay Service](../../manage-and-optimize/scaling-the-liferay-service.md) for more information.
 
 ## Add Clustering Portal Properties
 
@@ -74,6 +74,6 @@ Aug 26 09:42:22.779 build-90 [liferay-68b8f6b48d-hdj9t] [dxp] INFO  [Incoming-1,
 
 ## Related Topics
 
-- [Auto-scaling](../../manage-and-optimize/auto-scaling.md)
+- [Scaling the Liferay Service](../../manage-and-optimize/scaling-the-liferay-service.md)
 - [Introduction to the Liferay DXP Service](../using-the-liferay-dxp-service.md)
 - [Configuring the Liferay DXP Service](./configuring-the-liferay-dxp-service.md)

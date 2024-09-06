@@ -1,6 +1,6 @@
 ---
 toc:
-  - ./manage-and-optimize/auto-scaling.md
+  - ./manage-and-optimize/scaling-the-liferay-service.md
   - ./manage-and-optimize/application-metrics.md
   - ./manage-and-optimize/real-time-alerts.md
   - ./manage-and-optimize/quotas-and-resource-usage.md
@@ -22,7 +22,7 @@ The Liferay Cloud dashboard has built-in tools to help you track and monitor you
 
 ![You can view real-time data on each service's performance.](./manage-and-optimize/application-metrics/images/01.png)
 
-To optimize the Liferay service's performance, Liferay Cloud can [scale automatically](./manage-and-optimize/auto-scaling.md) to meet traffic demands while conserving resources.
+To optimize the Liferay service's performance, Liferay Cloud can [scale automatically](./manage-and-optimize/scaling-the-liferay-service.md) to meet traffic demands while conserving resources.
 
 These tools help ensure your project runs efficiently within the [quotas](./manage-and-optimize/quotas-and-resource-usage.md) set by your subscription.
 

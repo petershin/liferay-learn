@@ -25,7 +25,7 @@ Reaching any of the resource quotas for a project doesn't affect the production 
 - Memory per Service
 - Storage per Environment
 
-Resource allocations for the above can be configured in each service's `lcp.json` file. See [Configuration via LCP.json](../reference/configuration-via-lcp-json.md). When [Auto-scaling](./auto-scaling.md) is enabled, reaching certain thresholds do not count against pre-determined quotas.
+Resource allocations for the above can be configured in each service's `lcp.json` file. See [Configuration via LCP.json](../reference/configuration-via-lcp-json.md). When [auto-scaling](./scaling-the-liferay-service.md) is enabled, reaching certain thresholds do not count against pre-determined quotas.
 
 ## Monitoring Resource Usage
 

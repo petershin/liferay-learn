@@ -87,9 +87,9 @@ Liferay Cloud databases are configured with Multi-Availability Zone (Multi-AZ) e
 
 [Clustering](./customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/setting-up-clustering-in-liferay-cloud.md) and [load-balancing](./configuring-the-cloud-network/load-balancer.md) deliver highly available, zero-downtime deployments to ensure that mission-critical sites stay online. Liferay Cloud delivers data through a multi-region architecture to ensure high availability.
 
-[Auto-scaling](./manage-and-optimize/auto-scaling.md) ensures that bandwidth and computing capacity is dynamically added to maintain steady performance through unexpected traffic spikes. Similarly, unneeded resources can be scaled down during periods of lower activity. Teams receive automatic notifications and email alerts regarding instance usage so they can manage resources with confidence.
+[Auto-scaling](./manage-and-optimize/scaling-the-liferay-service.md) ensures that bandwidth and computing capacity is dynamically added to maintain steady performance through unexpected traffic spikes. Similarly, unneeded resources can be scaled down during periods of lower activity. Teams receive automatic notifications and email alerts regarding instance usage so they can manage resources with confidence.
 
-With Liferay SaaS, these features function automatically within the storage and CPU limits of your subscription plan. With Liferay PaaS, you must [configure clustering](./customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/setting-up-clustering-in-liferay-cloud.md) and [auto-scaling](./manage-and-optimize/auto-scaling.md#managing-auto-scaling) yourself.
+With Liferay SaaS, these features function automatically within the storage and CPU limits of your subscription plan. With Liferay PaaS, you must [configure clustering](./customizing-liferay-dxp-in-the-cloud/using-the-liferay-dxp-service/setting-up-clustering-in-liferay-cloud.md) and [auto-scaling](./manage-and-optimize/scaling-the-liferay-service.md#managing-auto-scaling) yourself.
 
 ![Auto-scale your servers to meet demand.](./getting-started/images/03.png)
 

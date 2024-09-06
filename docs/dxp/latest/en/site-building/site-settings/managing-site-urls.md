@@ -28,7 +28,7 @@ Configure virtual hosts for your Liferay server to connect domain names (e.g., `
 Define friendly URLs to help users quickly access your sites. Each friendly URL on your Liferay server must be unique and is appended to `https://[server:port]/web` (e.g., `https://localhost:8080/web/hello-world/`). See [Configuring Your Site's Friendly URL](./managing-site-urls/configuring-your-sites-friendly-url.md) for more information.
 
 !!! note
-     You can also configure friendly URLs for [pages](../creating-pages/page-settings/configuring-your-pages-friendly-url.md), [URL separators](./managing-site-urls/configuring-friendly-url-separators.md), and [documents]((../../content-authoring-and-management/documents-and-media/uploading-and-managing/configuring-document-urls.md)).
+    You can also configure friendly URLs for [pages](../creating-pages/page-settings/configuring-your-pages-friendly-url.md), [URL separators](./managing-site-urls/configuring-friendly-url-separators.md), and [documents]((../../content-authoring-and-management/documents-and-media/uploading-and-managing/configuring-document-urls.md)).
 
 ## Site Redirects
 
@@ -47,12 +47,3 @@ Use the Redirection tool to track and manage site requests leading to 404 errors
 {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA126+`
 
 [Configure the XML sitemap](./managing-site-urls/configuring-xml-sitemaps.md) to notify search engines of the website's structure, indicating which URLs are available for crawling. With this configuration, you can include or exclude sites, page URLs (e.g., widget, content, panel, collection, and embedded pages), web content URLs, and category URLs from your sitemap.
-
-## Related Topics
-
-- [Configuring Virtual Hosts Site URLs](./managing-site-urls/configuring-virtual-hosts-site-urls.md)
-- [Configuring Your Site's Friendly URL](./managing-site-urls/configuring-your-sites-friendly-url.md)
-- [Using Alias Redirects](./managing-site-urls/setting-up-redirects-and-404-tracking/using-alias-redirects.md)
-- [Using Pattern Redirects](./managing-site-urls/setting-up-redirects-and-404-tracking/using-pattern-redirects.md)
-- [Tracking 404 URLs](./managing-site-urls/setting-up-redirects-and-404-tracking/tracking-404-urls.md)
-- [Configure the XML sitemap](./managing-site-urls/configuring-xml-sitemaps.md)

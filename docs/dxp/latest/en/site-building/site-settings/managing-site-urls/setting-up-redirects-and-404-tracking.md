@@ -16,9 +16,9 @@ uuid: 19c713cc-87be-41e6-ba6d-fc23ee75ad82
 
 {bdg-secondary}`7.4 U48+/GA48+`
 
-Maintaining URL integrity is important for any site. Liferay's _Redirection_ tool provides a convenient and integrated way to manage HTTP redirects and track 404 errors for individual sites. Use it to avoid and fix broken links, improving both user experience and site SEO.
+Maintaining URL integrity is important for any site. Liferay's *Redirection* tool provides a convenient and integrated way to manage HTTP redirects and track 404 errors for individual sites. Use it to avoid and fix broken links, improving both user experience and site SEO.
 
-To access the application, open the _Site Menu_ (![Site Menu](../../../images/icon-product-menu.png)) and go to _Configuration_ &rarr; _Redirection_.
+To access the application, open the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)) and go to *Configuration* &rarr; *Redirection*.
 
 ![Go to the Redirection page in the Site Menu.](./setting-up-redirects-and-404-tracking/images/01.png)
 
@@ -38,4 +38,8 @@ Liferay recommends alias redirects in most cases because they are more predictab
 
 In the Redirection application, you can view and manage site requests that result in a 404 error, so you can assess and quickly resolve any issues. For Liferay 7.4+, 404 tracking is disabled by default. Enabling this feature activates the 404 URLs tab in the Redirection application and begins cataloging errors. See [Tracking 404 URLs](./setting-up-redirects-and-404-tracking/tracking-404-urls.md) for more information.
 
+## Related Topics
 
+- [Using Alias Redirects](./setting-up-redirects-and-404-tracking/using-alias-redirects.md)
+- [Using Pattern Redirects](./setting-up-redirects-and-404-tracking/using-pattern-redirects.md)
+- [Configuring Friendly URL Redirects](./configuring-friendly-url-redirects.md)

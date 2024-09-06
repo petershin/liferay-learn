@@ -17,19 +17,19 @@ When you update friendly URLs for pages, blogs, and documents, Liferay automatic
 By default friendly URL redirects are temporary (302), but you can configure them to be permanent (301) if needed. You can also determine whether Liferay displays a message when users are redirected to a different friendly URL.
 
 !!! warning
-    Make sure your URLs don't have a trailing slash. For example, instead of `https://example.com/product/item1/`, use `https://example.com/product/item1`. 
+    Make sure your URLs don't have a trailing slash. For example, instead of `https://example.com/product/item1/`, use `https://example.com/product/item1`.
 
 To configure friendly URL redirects,
 
-1. Open the _Global Menu_ (![Global Menu](../../../images/icon-applications-menu.png)) and go to _Control Panel_ &rarr; _System Settings_ &rarr; _Pages_ &rarr; _Friendly URL Redirection_.
+1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)) and go to *Control Panel* &rarr; *System Settings* &rarr; *Pages* &rarr; *Friendly URL Redirection*.
 
    Alternatively, you can configure these settings under Instance Settings.
 
    ![Navigate to the Friendly URL Redirection settings.](./configuring-friendly-url-redirects/images/01.png)
 
-1. Enable or disable _Show Alternative Layout Friendly URL Message_ to determine if Liferay displays a message whenever users are redirected to a different friendly URL.
+1. Enable or disable *Show Alternative Layout Friendly URL Message* to determine if Liferay displays a message whenever users are redirected to a different friendly URL.
 
-1. Set the Redirection Type to _Temporary_ or _Permanent_.
+1. Set the Redirection Type to *Temporary* or *Permanent*.
 
    **Permanent**: Use a 301 code to inform search engines and other tools accessing your site that the requested resource has been permanently relocated. Search engines replace the old URL with the new destination in search results, and browsers cache the new destination for an indeterminate amount of time. A 301 code should be used only when you intend to use the destination URL indefinitely. This improves SEO and helps avoid unintended caching.
 
@@ -38,7 +38,7 @@ To configure friendly URL redirects,
    !!! important
        Setting redirects to temporary after making them permanent can have unintended consequences. In some cases, users who previously received a permanent redirect may not be able to reach the original URL again. For this reason, use permanent redirects with care.
 
-1. Click _Save_.
+1. Click *Save*.
 
 ## Related Topics
 

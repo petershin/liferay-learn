@@ -65,7 +65,7 @@ You can configure the Asset Publisher widget to select assets dynamically based 
 1. Once you select your assets and configure the widget, click *Save*.
 
 !!! note
-    While you can set permissions for asset publishers, you cannot directly control which roles see the "Add" icon. To achieve this level of permission, customization is required.
+    While you can set permissions for asset publishers, you cannot directly control which roles see the *Add* icon. To achieve this level of permission, customization is required.
 
 ## Asset Selection Options
 

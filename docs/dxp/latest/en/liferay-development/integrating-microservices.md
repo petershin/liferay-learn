@@ -52,8 +52,8 @@ Once deployed, these client extensions appear as options when adding validations
 ![These client extensions appear as options when adding validations to an object definition.](./integrating-microservices/images/01.png)
 
 !!! note
-    * Beginning in Liferay DXP 2024.Q3/Portal 7.4 GA132, you can add validation rules for system objects.
-    * Validation messages for system objects may not be displayed in their native UI. However, the validations run as expected.
+    - Beginning in Liferay DXP 2024.Q3/Portal 7.4 GA132, you can add validation rules for system objects.
+    - Validation messages for system objects may not be displayed in their native UI. However, the validations run as expected.
 
 You can scope the validation rule to specific object definitions using the `allowedObjectDefinitionNames` property. See [Object Validation Rule YAML Configuration Reference](./integrating-microservices/object-validation-rule-yaml-configuration-reference.md) for more information about the client extension's properties. When processing the object entry POST request from Liferay, refer to each allowed object definition's entry schema in the headless API explorer. Find the endpoint of interest and use its Schema browser to understand the entity's JSON.
 

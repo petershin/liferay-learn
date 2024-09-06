@@ -28,22 +28,22 @@ You can configure the service access policy or disable the suggestions endpoint 
 
 ## Suggestions Query Parameters
 
-| Parameter | Notes |
-| :--- | :--- |
-| `currentURL` | (Required) Provide the URL to your Liferay instance. |
-| `destinationFriendlyURL` | (Required) Set the search page's friendly URL. |
-| `plid` | Set the portal layout ID that identifies a page across virtual instances. Usually you can specify `1`, the default home page's `plid`. |
-| `scope` | Specify a list of sites (by ID or ERC) to search. You can mix IDs and ERCs in the same request. If not specified, the whole instance is searched (e.g., company scoped objects are searched). |
-| `search` | (Required) Search by keyword(s). |
+ | Parameter                | Notes                                                                                                                                                                                         |
+ |:-------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+ | `currentURL`             | (Required) Provide the URL to your Liferay instance.                                                                                                                                          |
+ | `destinationFriendlyURL` | (Required) Set the search page's friendly URL.                                                                                                                                                |
+ | `plid`                   | Set the portal layout ID that identifies a page across virtual instances. Usually you can specify `1`, the default home page's `plid`.                                                        |
+ | `scope`                  | Specify a list of sites (by ID or ERC) to search. You can mix IDs and ERCs in the same request. If not specified, the whole instance is searched (e.g., company scoped objects are searched). |
+ | `search`                 | (Required) Search by keyword(s).                                                                                                                                                              |
 
 ## Suggestions Request Body
 
-| Property | Description |
-| :--- | :--- |
-| `attributes` | Set available search context attributes to configure a search blueprint or enable empty search. See [Available Search Request Attributes for details](#available-search-request-attributes). |
-| `contributorName` | Set the contributor that provides the search query (`basic` or `sxpBlueprint`). |
-| `displayGroupName` | Set the language key to use as a heading in the UI. | 
-| `size` | Set the maximum number of results to return from the endpoint. |
+ | Property           | Description                                                                                                                                                                                  |
+ |:-------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+ | `attributes`       | Set available search context attributes to configure a search blueprint or enable empty search. See [Available Search Request Attributes for details](#available-search-request-attributes). |
+ | `contributorName`  | Set the contributor that provides the search query (`basic` or `sxpBlueprint`).                                                                                                              |
+ | `displayGroupName` | Set the language key to use as a heading in the UI.                                                                                                                                          |
+ | `size`             | Set the maximum number of results to return from the endpoint.                                                                                                                               |
 
 To search with a blueprint, you can use this request body syntax:
 
@@ -60,15 +60,15 @@ To search with a blueprint, you can use this request body syntax:
 
 The available suggestions request attributes are for configuring a search blueprint. Always use the `sxpBlueprint` contributor with these attributes.
 
-| Property | Description |
-| :--- | :--- |
-| DXP Only<br />`search.experiences.blueprint.external.reference.code` | (Preferred) Set a [search blueprint](../../liferay-enterprise-search/search-experiences/search-blueprints.md) to control the search query and configuration. |
-| DXP Only<br />`search.experiences.blueprint.id` | Set a [search blueprint](../../liferay-enterprise-search/search-experiences/search-blueprints.md) to control the search query and configuration.|
-| DXP Only<br />`search.experiences.ip.address` | Set automatically. Only use this to test blueprints [with geolocation](../../liferay-enterprise-search/search-experiences/search-blueprints/personalizing-the-search-experience.md#building-a-blueprint-to-personalize-search-results) configured, to simulate different locations. |
-| DXP Only<br />`search.experiences.scope.group.id` | Set this when your blueprint uses an [element](../../liferay-enterprise-search/search-experiences/search-blueprints/search-blueprints-elements-reference.md) that requires it: Limit Search to the Current Site, Boost Contents in a Category for a User Segment, or Staging Aware. |
+  | Property                                                             | Description                                                                                                                                                                                                                                                                           |
+  |:---------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+  | DXP Only<br />`search.experiences.blueprint.external.reference.code` | (Preferred) Set a [search blueprint](../../liferay-enterprise-search/search-experiences/search-blueprints.md) to control the search query and configuration.                                                                                                                          |
+  | DXP Only<br />`search.experiences.blueprint.id`                      | Set a [search blueprint](../../liferay-enterprise-search/search-experiences/search-blueprints.md) to control the search query and configuration.                                                                                                                                      |
+  | DXP Only<br />`search.experiences.ip.address`                        | Set automatically. Only use this to test blueprints [with geolocation](../../liferay-enterprise-search/search-experiences/search-blueprints/personalizing-the-search-experience.md#building-a-blueprint-to-personalize-search-results) configured to simulate different locations.    |
+  | DXP Only<br />`search.experiences.scope.group.id`                    | Set this when your blueprint uses an [element](../../liferay-enterprise-search/search-experiences/search-blueprints/search-blueprints-elements-reference.md) that requires it: Limit Search to the Current Site, Boost Contents in a Category for a User Segment, or Staging Aware. |
 
 ## Related Topics
 
-* [Searching for Content](../../getting-started/searching-for-content.md)
-* [Headless Delivery](../../../headless-delivery.md)
-* [Search Bar Suggestions](../../search-pages-and-widgets/search-bar-suggestions.md)
+- [Searching for Content](../../getting-started/searching-for-content.md)
+- [Headless Delivery](../../../headless-delivery.md)
+- [Search Bar Suggestions](../../search-pages-and-widgets/search-bar-suggestions.md)

@@ -3,23 +3,23 @@ uuid: 87c9589b-586d-4c50-984b-5c3cd1b0d32d
 ---
 # Displaying Clarity's Content
 
-In the previous lesson, you learned how to organize Clarity's content to make it more accessible to users. Here you'll learn how to display that content with Asset Publishers and Collections.
-
-## Asset Publishers
-
-Asset Publishers have been part of the product for many years and are among the most widely used out-of-the-box widgets. They are self-contained, which means that you configure the selection criteria, display settings, and user interactive functionality all within a single widget instance. Asset Publishers support FreeMarker driven Widget Templates, which offer highly granular control and a tremendous amount of flexibility. This makes Asset Publishers best suited for use cases with complex templating needs.
+Effectively showcasing content is crucial for engaging users and improving content visibility. Whether it's blog posts, news articles, or related media, organizing and presenting these elements in a cohesive manner can significantly enhance the user experience. One way to achieve this is using Liferay Collections. Building on the previous lesson about content organization, you'll learn how to leverage collections to display sets of content for Clarity.
 
 ## Collections
 
-Collections focus only on defining the criteria for selecting assets, leaving display settings and user interactive functionality to be handled by fragments and widgets. This decoupling makes Collections a much more centralized feature for managing groups of content than instance-based Asset Publishers. You can use a single collection multiple times as a data source for separate rendering components, and changes to a collection are propagated to everywhere the collection is used. Collections bridge the gap between categorization and page design because they integrate with many of the richer content capabilities available in newer version of Liferay DXP. With Collections, you can:
+Collections define sets of content for rendering in site pages. Once defined, you can use the collection multiple times as the data source for fragments and widgets. Any changes to a collection automatically propagate to page elements using the collection. By decoupling asset selection from rendering, collections provide a centralized place for managing groups of content. Collections provide the following benefits:
 
-* **Group Diverse Content**: You can create collections to bring together different content types, like blog posts, documents, web content articles, and custom object entries, under a single theme or category. Grouping can be done manually or dynamically: hand pick individual items or define selection criteria to choose items on the fly. Other Liferay features like Objects and Search Blueprints can generate collection providers, which you can use to render lists of results.
+* **Group Diverse Content**: You can create collections to bring together different content types, like blog posts, documents, web content articles, and custom object entries, under a single theme or category. Group content items manually or dynamically by either selecting individual items or defining selection criteria for choosing items automatically.
 
 * **Filter and Personalize Content**: You can define specific criteria, such as tags, categories, or publication dates, to filter and display only relevant items within a collection. This enables you to personalize the content experience for different user groups.
 
 * **Simplify Content Presentation**: You can easily embed collections into your Liferay pages using dedicated out-of-the-box fragments like *Collection Display*. This streamlines the process of showcasing curated content within website layouts. 
 
-For all these reasons, Collections are the recommended feature for selecting assets for display in Liferay. You should always use Collections for asset selection, even if you need an Asset Publisher for complex templating. Doing so will future-proof your solution and lay the groundwork for you to leverage newer capabilities like segmented data.
+For most use cases, you should use fragments to render collection items, but you can use the asset publisher widget with FreeMarker templates for use cases that require complex templating.
+
+## Asset Publishers and Collections
+
+In addition to fragments, you can use the Asset Publisher widget to render collections in site pages. Asset publishers are self-contained widgets, meaning each instance includes its selection criteria, display settings, and user interactive functionality. Though you can define an asset publisher's select criteria without collections, this approach creates overhead, requiring users to manage each widget's data source individually, even if they use the same selection criteria. For this reason, you should always use collections for asset selection. Doing this helps future-proof your solution while laying the groundwork for leveraging capabilities like segmented data.
 
 ## Exercise: Creating a Manual Collection
 <!--Exercise 13a-->

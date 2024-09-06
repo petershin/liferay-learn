@@ -132,16 +132,6 @@ Make the following modifications to `$WILDFLY_HOME/standalone/configuration/stan
    <deployment-scanner deployment-timeout="600" path="deployments" relative-to="jboss.server.base.dir" scan-interval="5000" runtime-failure-causes-rollback="${jboss.deployment.scanner.rollback.on.failure:false}"/>
    ```
 
-1. Add Liferay's JAAS security domain to the `<subsystem xmlns="urn:jboss:domain:security:2.0">`'s `<security-domains>` element. Here is the domain code to add:
-
-   ```xml
-   <security-domain name="PortalRealm">
-       <authentication>
-           <login-module code="com.liferay.portal.security.jaas.PortalLoginModule" flag="required" />
-       </authentication>
-   </security-domain>
-   ```
-
 1. Comment out the welcome content elements from the `<subsystem xmlns="urn:jboss:domain:undertow:12.0" ...>` element. For example,
 
    ```xml
@@ -195,7 +185,7 @@ Make the following edits to your `standalone.conf` script.
 1. Add this Java options setting at the end of the file:
 
    ```bash
-   JAVA_OPTS="$JAVA_OPTS -Dfile.encoding=UTF-8 -Djava.net.preferIPv4Stack=true -Dlog4j2.formatMsgNoLookups=true -Duser.timezone=GMT -Xms2560m -Xmx2560m -XX:MaxNewSize=1536m -XX:MaxMetaspaceSize=768m -XX:MetaspaceSize=768m -XX:NewSize=1536m -XX:SurvivorRatio=7"
+   JAVA_OPTS="$JAVA_OPTS -Dfile.encoding=UTF-8 -Djava.net.preferIPv4Stack=true -Dlog4j2.formatMsgNoLookups=true -Duser.timezone=GMT -Xms2560m -Xmx2560m -XX:MaxNewSize=1536m -XX:NewSize=1536m -XX:SurvivorRatio=7 --add-opens=java.base/java.net=ALL-UNNAMED"
    ```
 
 The Java options and memory arguments are explained below.

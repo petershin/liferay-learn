@@ -18,7 +18,8 @@ A third type of validation is available as of Liferay DXP 2024.Q1+/GA112+: [Comp
 ![Create validations for custom and system object fields.](./adding-field-validations/images/01.png)
 
 !!! note
-    If out-of-the-box validations don't meet your needs, you can create custom validations using the `objectValidationRule` client extension. See [Microservice Client Extensions](../../../integrating-microservices.md) for more information.
+    * If out-of-the-box validations don't meet your needs, you can create custom validations using the `objectValidationRule` client extension. See [Microservice Client Extensions](../../../integrating-microservices.md) for more information.
+    * Validation messages for system objects may not be displayed in their native UI. However, the validations run as expected.
 
 To add a validation,
 

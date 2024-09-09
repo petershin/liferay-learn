@@ -42,7 +42,7 @@ Finally, custom filters are available for adding query clauses to Liferay's main
 
 Search pages are created using Liferay's intuitive drag-and-drop page builder. With a rich library of search widgets, you can quickly add advanced search functionality to your pages, including facets, sorting options, and suggestions. This empowers even non-technical team members to create search pages effortlessly.
 
-<!--TASK: Add Img-->
+![Create search pages using Liferay's page builder and advanced search functionalities.](./understanding-liferay-search/images/03.png)
 
 With Liferay's segmentation capabilities, you can create unique search experiences for different user groups. Imagine presenting one search results page for general visitors, and another, enriched with additional search widgets and tailored content, for Clarity distributors. Going further, Liferay Blueprints enable you to personalize the search results themselves. Based on user segments, behaviors, or other criteria, you can dynamically adjust what content appears at the top of the list, ensuring each user sees the most relevant information first.
 
@@ -50,7 +50,7 @@ With Liferay's segmentation capabilities, you can create unique search experienc
 
 A search blueprint is a Swiss army knife for search experience customization in Liferay. From adding static filter criteria to the search query (like with custom filters) to adding new search request parameters that are consumed in the Blueprint to dynamically change something about the search, you can do it with a blueprint. You can even provide context-aware search: boost search results based on geolocation and prioritize results that are closer in proximity to the user's location.
 
-![Use blueprints to boost the results based on proximity.](./understanding-liferay-search/images/03.png)
+![Use blueprints to boost the results based on proximity.](./understanding-liferay-search/images/04.png)
 
 Liferay has many out-of-the-box query elements you can use when building your blueprints, but you can craft your own with JSON for ultimate flexibility. Modifying the search query itself typically requires developing custom code, but search blueprints can be configured right from Liferay's UI without the need to deploy any code. This makes it simple enough for even non-technical users to utilize blueprints. Some ways blueprints might be leveraged are:
 

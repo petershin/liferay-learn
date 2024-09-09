@@ -17,7 +17,7 @@ Liferay provides three different types of site membership: open, restricted, and
 
 * Private: Site administrators must explicitly invite and add users for them to join the site.
 
-<!--TASK: ![Determine the site’s membership type.]()-->
+![Determine the site’s membership type.](./configuring-the-clarity-site/images/02.png)
 
 Should site membership be completely open, require review, or only allow users to join by the invitation of site administrators? Membership type provides the first level of security. With it, you can set a baseline for user access to site content, since you can restrict data access to only site members.
 
@@ -27,13 +27,13 @@ Since Clarity's website is a public enterprise website, it should be open and ac
 
 In addition to site membership, Clarity wants to explore how to reach their global audience. Liferay provides robust localization features for creating websites that speak the language of your users. From configuring available site languages to localizing site URLs, you can help ensure Clarity's messages resonate with their international visitors. By default, every site uses the languages enabled at the instance level, but Clarity wants to limit the languages available in their site.
 
-<!--TASK: ![Manage available site languages.]()-->
+![Manage available site languages.](./configuring-the-clarity-site/images/03.png)
 
 ## Virtual Host
 
 Setting the virtual host connects a domain name (e.g., `www.helloworld.com`) to a site. This can be a full domain or a subdomain (e.g., `partners.helloworld.com`), so you can differentiate between multiple sites on the same Liferay DXP server. Before setting the virtual host in Liferay, you must contact your provider and set the DNS name to point to the IP address for your Liferay DXP instance.
 
-<!--TASK: ![Set the site’s virtual hosts.]()-->
+![Set the site’s virtual hosts.](./configuring-the-clarity-site/images/04.png)
 
 Clarity wants to set their site’s virtual host to `www.clarityvisionsolutions.com`. They also want to set a virtual host for Spanish (`www.solucionesdeclaridad.com`) to better engage their international audience.
 
@@ -41,7 +41,7 @@ Clarity wants to set their site’s virtual host to `www.clarityvisionsolutions.
 
 Site accessibility is essential for ensuring everyone can access and interact with your website. Liferay provides the accessibility menu to make it easier for users to enable some accessibility properties. Once enabled, users can access the menu by pressing Tab twice and then pressing Enter.
 
-![Press Tab twice and hit Enter to access the accessibility menu.](./configuring-the-clarity-site/images/02.png)
+![Press Tab twice and hit Enter to access the accessibility menu.](./configuring-the-clarity-site/images/05.png)
 
 Enabling the accessibility menu provides users access to these configurations,
 
@@ -77,7 +77,7 @@ To do this,
 
    Great! Now both users are members of the site and you can assign site roles to them.
 
-   ![Now all 5 Clarity's personas are members of the site.](./configuring-the-clarity-site/images/03.png)
+   ![Now all 5 Clarity's personas are members of the site.](./configuring-the-clarity-site/images/06.png)
 
 1. Click *Actions* (![Actions Button](../../images/icon-actions.png)) for Christian Carter and select *Assign Roles*.
 
@@ -110,7 +110,7 @@ To do this,
 
 1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)), expand *Configuration*, and select *Site Settings*.
 
-   ![Go to Site Settings to configure the site.](./configuring-the-clarity-site/images/04.png)
+   ![Go to Site Settings to configure the site.](./configuring-the-clarity-site/images/07.png)
 
 1. Go to *Site Configuration* &rarr; *Details*.
 
@@ -120,7 +120,7 @@ To do this,
 
 1. Set membership type to *Open*. This allows guests to freely become site members and access the site's public pages and content.
 
-   ![Set the site’s membership type to Open.](./configuring-the-clarity-site/images/05.png)
+   ![Set the site’s membership type to Open.](./configuring-the-clarity-site/images/08.png)
 
 1. Click *Save*.
 
@@ -141,7 +141,7 @@ To do this,
 
    This way their Spanish speaking audience can access the site using a localized domain name.
 
-   ![Add a virtual host for Spanish.](./configuring-the-clarity-site/images/06.png)
+   ![Add a virtual host for Spanish.](./configuring-the-clarity-site/images/09.png)
 
 1. Click *Save*.
 
@@ -154,7 +154,7 @@ To do this,
    !!! tip
        To select multiple languages at a time, hold the CTRL key.
 
-   ![Define a custom language configuration.](./configuring-the-clarity-site/images/07.png)
+   ![Define a custom language configuration.](./configuring-the-clarity-site/images/10.png)
 
 1. Click *Save*.
 
@@ -164,7 +164,7 @@ To do this,
 
    This means users can press Tab twice and hit Enter to access a menu for configuring their accessibility settings.
 
-   ![Enable the accessibility menu for the website.](./configuring-the-clarity-site/images/08.png)
+   ![Enable the accessibility menu for the website.](./configuring-the-clarity-site/images/11.png)
 
 1. Click *Save*.
 
@@ -199,7 +199,7 @@ To do this,
 
    This defines the default page to which users are redirected after signing out.
 
-   ![Configure the URLs for each navigation field.](./configuring-the-clarity-site/images/09.png)
+   ![Configure the URLs for each navigation field.](./configuring-the-clarity-site/images/12.png)
 
 1. Click *Save*.
 

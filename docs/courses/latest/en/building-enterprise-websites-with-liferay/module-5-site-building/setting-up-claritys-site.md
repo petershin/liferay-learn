@@ -14,6 +14,8 @@ In this lesson, you'll create a site from scratch and familiarize yourself with 
 
 When creating a Liferay site, you can start from scratch, or create a site template. With site templates, you can create pages, add menus, configure widgets, create taxonomies--basically anything you can do when creating a site. You can then use that template to create multiple sites with the same basic elements. This is a great way to ensure all sites begin with the same boilerplate and follow consistent standards (e.g., accessibility). Also, since templates are designed using Liferay’s intuitive interface, they are accessible to non-technical users.
 
+![You can create a site from scratch or with a site template.](./setting-up-claritys-site/images/01.png)
+
 Liferay also provides site initializers for quickly duplicating site structures, content, and more. These powerful tools offer everything a site template can, with the added benefit of leveraging Liferay's API. This grants you the ability to break free from the limitations of the site itself, enabling advanced functionalities like user and role management. However, unlike site templates, site initializers currently lack the ability to propagate changes to multiple, generated sites. Also, they are more complex and require technical knowledge.
 
 !!! note “Site Templates vs. Site Initializers”

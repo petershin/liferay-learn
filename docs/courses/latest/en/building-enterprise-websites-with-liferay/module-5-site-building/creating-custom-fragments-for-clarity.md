@@ -9,6 +9,8 @@ Liferay offers a wide range of out-of-the-box fragments and configurations to he
 
 Liferay DXP includes the fragments editor UI for creating and managing fragments in your site. Additionally, you can export fragment sets and work on them locally, using your preferred tools. Then, once your local work is complete, you can import the set back into Liferay. Furthermore, you can instantiate React components within your page fragments using static JavaScript imports, expanding the range of functionalities you can integrate into your custom fragments.
 
+![Use the fragments editor UI to create and manage fragments in your site.](./creating-custom-fragments-for-clarity/images/02.png)
+
 When creating a fragment, you can copy and modify existing fragments or start from scratch. You can also create custom fragments by saving container compositions in the page editor. Saving container compositions offers a convenient way to recreate specific arrangements of fragments on other pages. However, you cannot edit compositions via the Fragments Editor UI.
 
 Here you'll use the Fragments Editor UI to create and import custom fragments for Clarity's site.
@@ -47,13 +49,13 @@ To do this,
 
 1. Go to the *Configuration* tab and copy the contents of the `search-button-configuration.json` file into the editor. This file is in the `[repository-folder]/exercises/lesson-8/` folder.
 
-   ![Copy and paste the JSON configuration into the editor.](./creating-custom-fragments-for-clarity/images/02.png)
+   ![Copy and paste the JSON configuration into the editor.](./creating-custom-fragments-for-clarity/images/03.png)
 
    This defines two configuration options for the fragment: `iconName` and `iconSize`. You can reference these options in the fragment's code.
 
 1. Return to the *Code* tab and replace the contents of the HTML window with the contents of the `search-button.ftl` file. This file is also in the `[repository-folder]/exercises/lesson-8/` folder.
 
-   ![Replace the contents of the HTML window.](./creating-custom-fragments-for-clarity/images/03.png)
+   ![Replace the contents of the HTML window.](./creating-custom-fragments-for-clarity/images/04.png)
 
    Notice this includes references to the configuration options you defined in the previous step: `${configuration.iconSize}` and `${configuration.iconName}`. This way you can configure the icon's name and size when you add the fragment to a page.
 
@@ -73,7 +75,7 @@ While in the Fragments application,
 
 1. Click *Actions* (![Actions Button](../../images/icon-actions.png)) for the fragment set and select *Import*.
 
-   ![Import the compositions to Clarity Page Compositions fragment set.](./creating-custom-fragments-for-clarity/images/04.png)
+   ![Import the compositions to Clarity Page Compositions fragment set.](./creating-custom-fragments-for-clarity/images/05.png)
 
 1. Click *Select File*, navigate to the `[repository-folder]/exercises/lesson-8/` folder in the training workspace, and select `page-composition-faq.zip` file.
 
@@ -104,7 +106,7 @@ To do this,
 
 1. Add the *Search Button* fragment to the Header User Actions container.
 
-   ![Add the Search Button fragment to the Header User Actions container.](./creating-custom-fragments-for-clarity/images/05.png)
+   ![Add the Search Button fragment to the Header User Actions container.](./creating-custom-fragments-for-clarity/images/06.png)
 
 1. In the Browser side panel (![Browser Tab](../../images/icon-hierarchy.png)), select the *link* sub-element for the Search Button fragment.
 
@@ -146,7 +148,7 @@ To do this,
    !!! note
        For the Home page, remove its default content before adding the fragment composition.
 
-   ![Drag and drop the corresponding fragment composition into the page's central content area.](./creating-custom-fragments-for-clarity/images/06.png)
+   ![Drag and drop the corresponding fragment composition into the page's central content area.](./creating-custom-fragments-for-clarity/images/07.png)
 
 1. Click *Publish*.
 

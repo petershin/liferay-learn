@@ -35,13 +35,14 @@ Specification data consists of groups, labels, and values. This makes it easier 
 
 1. To add a new specification label, click _New_.
 
-   | Field                       | Description                                    |
-   | :-------------------------- | :--------------------------------------------- |
-   | Label                       | Display name of the label.                     |
-   | Description                 | Description of the label.                      |
-   | Use in Faceted Navigation   | Enable to use the label in faceted navigation. |
-   | Default Specification Group | Choose a group to associate this label with.   |
-   | Key                         | Unique identifier for the label.               |
+   | Field                                                            | Description                                                                                     |
+   | :--------------------------------------------------------------- | :---------------------------------------------------------------------------------------------- |
+   | Label                                                            | Display name of the label.                                                                      |
+   | Description                                                      | Description of the label.                                                                       |
+   | Use in Faceted Navigation                                        | Enable to use the label in faceted navigation.                                                  |
+   | Default Specification Group                                      | Choose a group to associate this label with.                                                    |
+   | Key                                                              | Unique identifier for the label.                                                                |
+   | {bdg-secondary}`Liferay DXP 2024.Q2+/Portal 7.4 GA120+` Priority | Enter a number to adjust the display order of specification labels in the Specifications facet. |
 
 ![Use the provided form to create a specification label.](./specifications/images/02.png)
 
@@ -67,7 +68,7 @@ This only creates the label. You must assign it to a product to set values to a 
    | Priority    | Order to display the specification groups with smaller numbers displayed first. |
    | Key         | Unique identifier for the group.                                                |
 
-![To create a specification group, enter a title, description, priority and key in the form provided.](./specifications/images/04.png)
+![To create a specification group, enter a title, description, priority, and key in the form provided.](./specifications/images/04.png)
 
 ## Specification Values
 

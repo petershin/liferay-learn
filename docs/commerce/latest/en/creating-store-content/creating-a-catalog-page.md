@@ -22,7 +22,7 @@ The [catalog](./commerce-storefront-pages/catalog.md) page is a customer's entry
 
 To learn more about these widgets, see [Widget Reference](./liferay-commerce-widgets/widget-reference.md).
 
-![The catalog page is a customer's entrypoint to your company's product portfolio](./creating-a-catalog-page/images/99.png)
+![The catalog page is a customer's entrypoint to your company's product portfolio](./creating-a-catalog-page/images/01.png)
 
 ## Prerequisites
 

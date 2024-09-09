@@ -182,9 +182,11 @@ System objects have their own default fields, though there is some overlap with 
 
 ## Using Composite Key Validations
 
-{bdg-secondary}`Liferay DXP 2024.Q1+/GA112+`
+{bdg-link-secondary}`Liferay DXP 2024.Q1+/GA112+ ([Release Feature Flag](../../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags))`
 
-To add composite key validation to your object, first enable its release feature flag. Go to *Global Menu* (![Global Menu](../../../../images/icon-applications-menu.png)) &rarr; *Control Panel* &rarr; *Instance Settings* &rarr; *Feature Flags*. Open the *Release* section and enable *Improve Field Validations (LPS-187854)*.
+{bdg-secondary}`Liferay DXP 2024.Q3+/GA125+ (Generally Available)`
+
+If your version of Liferay requires it, first enable the release feature flag for composite key validation. Go to *Global Menu* (![Global Menu](../../../../images/icon-applications-menu.png)) &rarr; *Control Panel* &rarr; *Instance Settings* &rarr; *Feature Flags*. Open the *Release* section and enable *Improve Field Validations (LPS-187854)*.
 
 Some data models and applications require unique composite keys. For example, an orders object can require that each combination of customer ID and order date are unique in the system. Once enforced, this composite key can be used to look up and work with unique order entries. The Unique Composite Key validation ensures that a combination of fields is unique in the scope of the object. Site-scoped objects can have unique composite keys in the site, while instance-scoped objects can have unique composite keys throughout the instance.
 

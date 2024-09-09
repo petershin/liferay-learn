@@ -85,7 +85,7 @@ Confirm that your project's main contributors also have updated their preference
 
 ## Reviewing Your Continuity Plan
 
-Your continuity plan includes items to ensure your site keeps running in the event of various events.
+Your continuity plan includes items to ensure your site keeps running through various events.
 
 ### Backups
 
@@ -143,6 +143,10 @@ See [Environment Teams and Roles](../manage-and-optimize/environment-teams-and-r
 ### VPN Configuration
 
 If you've configured a VPN, confirm that the connection is working as expected. See the [VPN Integration Overview](../configuring-the-cloud-network/vpn-integration-overview.md) for more information.
+
+### Database Maintenance Window
+
+Configure a database maintenance window and set it to off-peak hours. Database maintenance occus once every few months and may lead to database connectivity failures for up to two minutes. See [Database Maintenance Window Variables](../platform-services/database-service.md#database-maintenance-window-variables) for more information.
 
 ## Additional Consideration
 
